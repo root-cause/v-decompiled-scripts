@@ -44001,8 +44001,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 	{
 		case 0:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1435919172;
-			uParam1->f_110 = 1435919172;
+			uParam1->f_109 = joaat("SCRIPT_TASK_ANY");
+			uParam1->f_110 = joaat("SCRIPT_TASK_ANY");
 			func_275(uParam1);
 			uParam1->f_118 = 0;
 			return 0;
@@ -44010,8 +44010,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 1:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = -982327190;
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
 			func_275(uParam1);
 			uParam1->f_118 = 0;
 			return 1;
@@ -44019,8 +44019,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 2:
 			*uParam1 = { Global_98552[0 /*109*/] };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = -982327190;
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
 			func_275(uParam1);
 			uParam1->f_118 = Global_100140[0];
 			return 1;
@@ -44028,8 +44028,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 3:
 			*uParam1 = { Global_98552[1 /*109*/] };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = -982327190;
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
 			func_275(uParam1);
 			uParam1->f_118 = Global_100140[1];
 			return 1;
@@ -44037,8 +44037,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 4:
 			*uParam1 = { Global_98552[2 /*109*/] };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = -982327190;
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
 			func_275(uParam1);
 			uParam1->f_118 = Global_100140[2];
 			return 1;
@@ -44046,8 +44046,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 5:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = -982327190;
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
 			func_275(uParam1);
 			uParam1->f_118 = Global_100140[Param0.f_3];
 			return 1;
@@ -44055,8 +44055,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 6:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = -982327190;
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
 			func_275(uParam1);
 			uParam1->f_118 = Global_100140[Param0.f_3];
 			return 1;
@@ -44064,8 +44064,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 7:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = -982327190;
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
 			func_275(uParam1);
 			uParam1->f_118 = Global_100140[Param0.f_3];
 			return 1;
@@ -44075,8 +44075,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 9:
 		case 10:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 936589729;
-			uParam1->f_110 = 936589729;
+			uParam1->f_109 = joaat("SCRIPT_TASK_USE_MOBILE_PHONE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_USE_MOBILE_PHONE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44084,8 +44084,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 11:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44093,8 +44093,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 14:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44102,8 +44102,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 13:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44111,8 +44111,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 15:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44120,8 +44120,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 54:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 2106541073;
-			uParam1->f_110 = 2106541073;
+			uParam1->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44129,8 +44129,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 55:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 936589729;
-			uParam1->f_110 = 936589729;
+			uParam1->f_109 = joaat("SCRIPT_TASK_USE_MOBILE_PHONE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_USE_MOBILE_PHONE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44138,8 +44138,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 56:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44147,8 +44147,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 57:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 2106541073;
-			uParam1->f_110 = 2106541073;
+			uParam1->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44156,17 +44156,17 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 12:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = 451360105;
-			func_274(uParam1, 144, -982327190, -982327190, 0f, 0f, 0f, 0f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_LEAVE_VEHICLE");
+			func_274(uParam1, 144, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_STAND_STILL"), 0f, 0f, 0f, 0f);
 			uParam1->f_118 = 2;
 			return 1;
 			break;
 		
 		case 16:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44174,8 +44174,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 17:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44183,8 +44183,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 18:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44192,8 +44192,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 19:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44201,8 +44201,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 20:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44210,8 +44210,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 22:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44219,8 +44219,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 74:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44228,8 +44228,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 67:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = -982327190;
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44237,8 +44237,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 58:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44246,8 +44246,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 59:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44255,8 +44255,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 60:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44264,8 +44264,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 25:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 2106541073;
-			uParam1->f_110 = 2106541073;
+			uParam1->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44273,8 +44273,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 26:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 2106541073;
-			uParam1->f_110 = 2106541073;
+			uParam1->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44282,8 +44282,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 27:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 2106541073;
-			uParam1->f_110 = 2106541073;
+			uParam1->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44291,8 +44291,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 28:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44300,8 +44300,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 38:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44309,8 +44309,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 40:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44321,8 +44321,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 44:
 		case 45:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1959848946;
-			uParam1->f_110 = -1959848946;
+			uParam1->f_109 = joaat("SCRIPT_TASK_PUT_PED_DIRECTLY_INTO_COVER");
+			uParam1->f_110 = joaat("SCRIPT_TASK_PUT_PED_DIRECTLY_INTO_COVER");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44330,8 +44330,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 47:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44339,8 +44339,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 49:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44348,8 +44348,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 48:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = -1794415470;
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_ENTER_VEHICLE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44357,8 +44357,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 50:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44366,8 +44366,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 51:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 2106541073;
-			uParam1->f_110 = 2106541073;
+			uParam1->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44375,8 +44375,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 52:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44384,8 +44384,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 66:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44393,8 +44393,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 61:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44402,8 +44402,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 62:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44411,8 +44411,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 63:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 2106541073;
-			uParam1->f_110 = 2106541073;
+			uParam1->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44420,8 +44420,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 69:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 2106541073;
-			uParam1->f_110 = 2106541073;
+			uParam1->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44429,8 +44429,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 64:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44438,8 +44438,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 65:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 2106541073;
-			uParam1->f_110 = 2106541073;
+			uParam1->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44447,8 +44447,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 234:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44456,8 +44456,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 316:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44465,8 +44465,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 315:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44474,17 +44474,17 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 75:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -235832601;
-			uParam1->f_110 = -235832601;
-			func_274(uParam1, 30, -982327190, -982327190, 0f, 0f, 0f, 0f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
+			func_274(uParam1, 30, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_STAND_STILL"), 0f, 0f, 0f, 0f);
 			uParam1->f_118 = 2;
 			return 1;
 			break;
 		
 		case 76:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -235832601;
-			uParam1->f_110 = -235832601;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44492,18 +44492,18 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 77:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 17, 1785177548, 1785177548, -0.7035f, -0.0282f, 0f, 0f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -0.7035f, -0.0282f, 0f, 0f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 78:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 17, 1785177548, 1785177548, -3.03f, -0.72f, 0.08f, 168f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -3.03f, -0.72f, 0.08f, 168f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
@@ -44511,9 +44511,9 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 79:
 		case 80:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 17, -2017877118, -2017877118, Vector(2.6407f, 8.164f, -14.1564f) + Vector(-1f, 0.03f, -2.16f), (-66f + -56f));
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 17, joaat("SCRIPT_TASK_PLAY_ANIM"), joaat("SCRIPT_TASK_PLAY_ANIM"), Vector(2.6407f, 8.164f, -14.1564f) + Vector(-1f, 0.03f, -2.16f), (-66f + -56f));
 			if (Param0.f_2 == 80)
 			{
 				func_275(uParam1);
@@ -44524,8 +44524,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 124:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44533,8 +44533,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 82:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44542,8 +44542,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 84:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44551,8 +44551,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 83:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44560,8 +44560,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 85:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44569,8 +44569,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 291:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44578,8 +44578,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 86:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44587,8 +44587,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 87:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44596,8 +44596,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 88:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44607,8 +44607,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 90:
 		case 127:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44620,8 +44620,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 104:
 		case 81:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			if (Param0.f_2 == 92)
@@ -44642,11 +44642,11 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 94:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			if (Param0.f_2 == 94)
 			{
-				func_274(uParam1, 17, 1785177548, 1785177548, -1.71f, 1.05f, 0f, -138f);
+				func_274(uParam1, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -1.71f, 1.05f, 0f, -138f);
 			}
 			uParam1->f_118 = 1;
 			return 1;
@@ -44654,8 +44654,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 95:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44663,8 +44663,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 96:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 2106541073;
-			uParam1->f_110 = 2106541073;
+			uParam1->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44672,8 +44672,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 134:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44682,8 +44682,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 108:
 		case 109:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44699,8 +44699,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 138:
 		case 139:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44717,8 +44717,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 148:
 		case 149:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44726,17 +44726,17 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 150:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 20, 1785177548, 1785177548, 0.98f, 0.8017f, -0.42f, -180f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 20, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0.98f, 0.8017f, -0.42f, -180f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 118:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44744,8 +44744,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 119:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44753,8 +44753,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 120:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44762,8 +44762,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 114:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44773,8 +44773,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 106:
 		case 107:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = -2017877118;
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_PLAY_ANIM");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44782,53 +44782,53 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 98:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 17, 1785177548, 1785177548, 0f, 0f, 0f, 0f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0f, 0f, 0f, 0f);
 			uParam1->f_118 = 2;
 			return 1;
 			break;
 		
 		case 99:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = -982327190;
-			func_274(uParam1, 15, -982327190, 451360105, 0f, 0f, 0f, 0f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
+			func_274(uParam1, 15, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_LEAVE_VEHICLE"), 0f, 0f, 0f, 0f);
 			uParam1->f_118 = 2;
 			return 1;
 			break;
 		
 		case 100:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = -982327190;
-			func_274(uParam1, 15, -982327190, 451360105, 0f, 0f, 0f, 0f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
+			func_274(uParam1, 15, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_LEAVE_VEHICLE"), 0f, 0f, 0f, 0f);
 			uParam1->f_118 = 2;
 			return 1;
 			break;
 		
 		case 101:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = -982327190;
-			func_274(uParam1, 14, -982327190, 451360105, 0f, 0f, 0f, 0f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
+			func_274(uParam1, 14, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_LEAVE_VEHICLE"), 0f, 0f, 0f, 0f);
 			uParam1->f_118 = 2;
 			return 1;
 			break;
 		
 		case 102:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = -982327190;
-			func_274(uParam1, 14, -982327190, 451360105, 0f, 0f, 0f, 0f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
+			func_274(uParam1, 14, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_LEAVE_VEHICLE"), 0f, 0f, 0f, 0f);
 			uParam1->f_118 = 2;
 			return 1;
 			break;
 		
 		case 103:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44836,8 +44836,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 121:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44845,17 +44845,17 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 122:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 17, 1785177548, 1785177548, -2.04f, -0.15f, 0f, 14.4f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -2.04f, -0.15f, 0f, 14.4f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 125:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44867,8 +44867,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 97:
 		case 162:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44877,8 +44877,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 110:
 		case 111:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44887,8 +44887,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 131:
 		case 132:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44896,8 +44896,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 126:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44905,8 +44905,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 128:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44914,8 +44914,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 129:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44923,8 +44923,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 130:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -44932,8 +44932,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 133:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -44941,26 +44941,26 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 151:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 17, 1785177548, 1785177548, -1.71f, 1.05f, 0f, -138f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -1.71f, 1.05f, 0f, -138f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 152:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 17, 1785177548, 1785177548, 1.1779f, 2.4276f, 0f, 162.1022f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1.1779f, 2.4276f, 0f, 162.1022f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 153:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			uParam1->f_118 = 1;
 			func_275(uParam1);
 			return 1;
@@ -44968,8 +44968,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 154:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			uParam1->f_118 = 1;
 			func_275(uParam1);
 			return 1;
@@ -44977,26 +44977,26 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 155:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 17, 1785177548, 1785177548, MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), 0f, MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f));
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), 0f, MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f));
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 156:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 14, 1785177548, 1785177548, 0.3427f, 1.1592f, 1.0351f, 139.912f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 14, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0.3427f, 1.1592f, 1.0351f, 139.912f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 157:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45004,17 +45004,17 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 158:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 144, 1785177548, 1785177548, MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), 0f, MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f));
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), 0f, MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f));
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 159:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			uParam1->f_118 = 1;
 			func_275(uParam1);
 			return 1;
@@ -45022,8 +45022,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 160:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			uParam1->f_118 = 1;
 			func_275(uParam1);
 			return 1;
@@ -45031,8 +45031,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 161:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45040,17 +45040,17 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 163:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 17, 1785177548, 1785177548, -3.03f, -0.72f, 0.08f, 168f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -3.03f, -0.72f, 0.08f, 168f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 164:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			uParam1->f_118 = 1;
 			func_275(uParam1);
 			return 1;
@@ -45058,8 +45058,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 165:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45067,8 +45067,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 166:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -45076,17 +45076,17 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 167:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 14, -982327190, 1785177548, -0.8472f, 0.155f, 0f, 152.556f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 14, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -0.8472f, 0.155f, 0f, 152.556f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 168:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45094,44 +45094,44 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 169:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 14, 1785177548, 1785177548, -0.3577f, -0.8968f, -0.0003f, 0f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 14, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -0.3577f, -0.8968f, -0.0003f, 0f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 170:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 17, 1785177548, 1785177548, 0f, 0f, 0f, 0f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0f, 0f, 0f, 0f);
 			uParam1->f_118 = 2;
 			return 1;
 			break;
 		
 		case 171:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 14, 1785177548, 1785177548, 0f, 0f, 0f, 0f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 14, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0f, 0f, 0f, 0f);
 			uParam1->f_118 = 2;
 			return 1;
 			break;
 		
 		case 172:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 15, 1785177548, 1785177548, 0f, 0f, 0f, 0f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 15, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0f, 0f, 0f, 0f);
 			uParam1->f_118 = 2;
 			return 1;
 			break;
 		
 		case 173:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -235832601;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45139,8 +45139,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 174:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = -982327190;
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
 			func_275(uParam1);
 			uParam1->f_118 = 0;
 			return 1;
@@ -45151,8 +45151,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 175:
 		case 176:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			uParam1->f_118 = 1;
 			func_275(uParam1);
 			return 1;
@@ -45160,8 +45160,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 177:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			uParam1->f_118 = 1;
 			func_275(uParam1);
 			return 1;
@@ -45169,8 +45169,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 178:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			uParam1->f_118 = 1;
 			func_275(uParam1);
 			return 1;
@@ -45179,8 +45179,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 179:
 		case 180:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			uParam1->f_118 = 1;
 			func_275(uParam1);
 			return 1;
@@ -45190,8 +45190,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 182:
 		case 183:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			uParam1->f_118 = 1;
 			func_275(uParam1);
 			return 1;
@@ -45199,9 +45199,9 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 192:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 144, 1785177548, 1785177548, 1f, 1f, 0f, 0f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1f, 1f, 0f, 0f);
 			uParam1->f_118 = 1;
 			if (Global_3)
 			{
@@ -45212,9 +45212,9 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 193:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 144, -982327190, 1785177548, 4.2943f, -6.7858f, 0f, -133.5332f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 144, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 4.2943f, -6.7858f, 0f, -133.5332f);
 			uParam1->f_118 = 1;
 			if (Global_3)
 			{
@@ -45225,8 +45225,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 194:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -2017877118;
-			uParam1->f_110 = -2017877118;
+			uParam1->f_109 = joaat("SCRIPT_TASK_PLAY_ANIM");
+			uParam1->f_110 = joaat("SCRIPT_TASK_PLAY_ANIM");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			if (Global_3)
@@ -45238,8 +45238,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 195:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -2017877118;
-			uParam1->f_110 = -2017877118;
+			uParam1->f_109 = joaat("SCRIPT_TASK_PLAY_ANIM");
+			uParam1->f_110 = joaat("SCRIPT_TASK_PLAY_ANIM");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			if (Global_3)
@@ -45252,8 +45252,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 198:
 		case 199:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45261,8 +45261,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 200:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45270,8 +45270,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 201:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45279,8 +45279,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 202:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45289,8 +45289,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 184:
 		case 185:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45298,8 +45298,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 186:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45307,8 +45307,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 187:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45316,8 +45316,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 188:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45325,8 +45325,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 189:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45334,8 +45334,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 190:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45343,8 +45343,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 191:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45352,17 +45352,17 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 196:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 43, 1785177548, 1785177548, MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), 0f, MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f));
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 43, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), 0f, MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f));
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 197:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45374,9 +45374,9 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 204:
 		case 205:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 144, 1785177548, 1785177548, 3.4381f, -0.8269f, 0f, -87.6612f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 3.4381f, -0.8269f, 0f, -87.6612f);
 			if (Param0.f_2 != 205)
 			{
 				uParam1->f_112 = { 3.4381f, -0.8269f, 0f };
@@ -45391,8 +45391,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 209:
 		case 210:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -45400,8 +45400,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 24:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -45412,8 +45412,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 216:
 		case 217:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45422,8 +45422,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 212:
 		case 214:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45432,18 +45432,18 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 215:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 144, 1785177548, 1785177548, 3.4381f, -0.8269f, 0f, -87.6612f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 3.4381f, -0.8269f, 0f, -87.6612f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 221:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 144, 1785177548, 1785177548, -0.7949f, -0.508f, 0f, 0f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -0.7949f, -0.508f, 0f, 0f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
@@ -45452,8 +45452,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 223:
 		case 224:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45465,8 +45465,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 229:
 		case 230:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			uParam1->f_118 = 1;
 			func_275(uParam1);
 			return 1;
@@ -45474,44 +45474,44 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 218:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 19, 1785177548, 1785177548, 1.29f, 1.41f, 0f, 57.52f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 19, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1.29f, 1.41f, 0f, 57.52f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 219:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 19, 1785177548, 1785177548, 1.29f, 1.41f, 0f, 57.52f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 19, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1.29f, 1.41f, 0f, 57.52f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 220:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 19, 1785177548, 1785177548, 0.5504f, -0.2322f, 0f, -9.9741f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 19, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0.5504f, -0.2322f, 0f, -9.9741f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 225:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 19, 1785177548, 1785177548, 1.23f, 0.6f, -1f, 34.56f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 19, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1.23f, 0.6f, -1f, 34.56f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 231:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = -982327190;
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
 			func_275(uParam1);
 			uParam1->f_118 = 0;
 			return 1;
@@ -45520,8 +45520,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 232:
 		case 233:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45529,8 +45529,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 235:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45538,26 +45538,26 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 236:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 144, 1785177548, 1785177548, 1.5033f, 1.2118f, 0f, -78.0449f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1.5033f, 1.2118f, 0f, -78.0449f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 237:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 144, 1785177548, 1785177548, 1.5033f, 1.2118f, 0f, -78.0449f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1.5033f, 1.2118f, 0f, -78.0449f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 238:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45565,8 +45565,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 239:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45576,8 +45576,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 241:
 		case 242:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -2017877118;
-			uParam1->f_110 = -2017877118;
+			uParam1->f_109 = joaat("SCRIPT_TASK_PLAY_ANIM");
+			uParam1->f_110 = joaat("SCRIPT_TASK_PLAY_ANIM");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45586,8 +45586,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 273:
 		case 274:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45595,8 +45595,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 245:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45607,8 +45607,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 252:
 		case 253:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45616,8 +45616,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 243:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45625,8 +45625,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 244:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45634,8 +45634,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 271:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			uParam1->f_118 = 1;
 			func_275(uParam1);
 			return 1;
@@ -45643,8 +45643,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 280:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			uParam1->f_118 = 1;
 			func_275(uParam1);
 			return 1;
@@ -45658,8 +45658,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 269:
 		case 270:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -2017877118;
-			uParam1->f_110 = -2017877118;
+			uParam1->f_109 = joaat("SCRIPT_TASK_PLAY_ANIM");
+			uParam1->f_110 = joaat("SCRIPT_TASK_PLAY_ANIM");
 			uParam1->f_118 = 1;
 			func_275(uParam1);
 			if (Param0.f_2 == 265)
@@ -45672,19 +45672,19 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 			}
 			if (Param0.f_2 == 267)
 			{
-				func_274(uParam1, 144, -982327190, 2106541073, -2.4166f, -0.15f, 0f, -148.7555f);
+				func_274(uParam1, 144, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD"), -2.4166f, -0.15f, 0f, -148.7555f);
 			}
 			if (Param0.f_2 == 266)
 			{
-				func_274(uParam1, 144, 2106541073, 2106541073, -5.7915f, -11.0439f, 0.67f, -72.589f);
+				func_274(uParam1, 144, joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD"), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD"), -5.7915f, -11.0439f, 0.67f, -72.589f);
 			}
 			return 1;
 			break;
 		
 		case 246:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45692,8 +45692,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 247:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45701,8 +45701,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 263:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45710,8 +45710,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 278:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45719,8 +45719,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 279:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -2017877118;
-			uParam1->f_110 = -2017877118;
+			uParam1->f_109 = joaat("SCRIPT_TASK_PLAY_ANIM");
+			uParam1->f_110 = joaat("SCRIPT_TASK_PLAY_ANIM");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45728,8 +45728,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 264:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45737,8 +45737,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 255:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45746,18 +45746,18 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 248:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 144, 1785177548, 1785177548, MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), 0f, MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f));
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), 0f, MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f));
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 249:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 144, 1785177548, 1785177548, MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), 0f, MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f));
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), 0f, MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f));
 			uParam1->f_118 = 1;
 			return 1;
 			break;
@@ -45767,8 +45767,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 283:
 		case 284:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -235832601;
-			uParam1->f_110 = -235832601;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -45778,8 +45778,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 276:
 		case 277:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -235832601;
-			uParam1->f_110 = -235832601;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
@@ -45787,8 +45787,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 254:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45796,8 +45796,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 285:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45807,8 +45807,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 257:
 		case 258:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = -982327190;
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45816,8 +45816,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 259:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45826,8 +45826,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 260:
 		case 261:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = -982327190;
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45835,8 +45835,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 286:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45844,8 +45844,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 287:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45853,8 +45853,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 288:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45862,26 +45862,26 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 262:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 144, 1785177548, 1785177548, 0f, 0f, 0f, 0f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0f, 0f, 0f, 0f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 289:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 144, -2017877118, -2017877118, -3.264f, -14.7895f, 14.1815f, -0.6311f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 144, joaat("SCRIPT_TASK_PLAY_ANIM"), joaat("SCRIPT_TASK_PLAY_ANIM"), -3.264f, -14.7895f, 14.1815f, -0.6311f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 290:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45890,9 +45890,9 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 292:
 		case 295:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 32, 1785177548, 1785177548, 0f, 0f, 0f, 0f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 32, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0f, 0f, 0f, 0f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
@@ -45900,18 +45900,18 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 293:
 		case 294:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 32, 1785177548, 1785177548, 0f, 0f, 0f, 0f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 32, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0f, 0f, 0f, 0f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 299:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 32, 1785177548, 1785177548, 0.24f, 0.33f, -0.5f, -11.88f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 32, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0.24f, 0.33f, -0.5f, -11.88f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
@@ -45921,44 +45921,44 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 302:
 		case 303:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 32, 1785177548, 1785177548, 0.24f, 0.33f, -0.5f, -11.88f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 32, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0.24f, 0.33f, -0.5f, -11.88f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 296:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 32, 1785177548, 1785177548, 1.41f, 1.35f, 0f, 168f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 32, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1.41f, 1.35f, 0f, 168f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 297:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 32, 1785177548, 1785177548, 1.7491f, 0.6423f, 0f, 166.479f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 32, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1.7491f, 0.6423f, 0f, 166.479f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 298:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
-			func_274(uParam1, 32, 1785177548, 1785177548, 0.72f, -0.69f, 0f, 172.44f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_274(uParam1, 32, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0.72f, -0.69f, 0f, 172.44f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 304:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45966,8 +45966,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 305:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -2017877118;
-			uParam1->f_110 = -2017877118;
+			uParam1->f_109 = joaat("SCRIPT_TASK_PLAY_ANIM");
+			uParam1->f_110 = joaat("SCRIPT_TASK_PLAY_ANIM");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45977,8 +45977,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		case 307:
 		case 308:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = -982327190;
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45986,8 +45986,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 309:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -982327190;
-			uParam1->f_110 = -982327190;
+			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -45995,8 +45995,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 310:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -46004,8 +46004,8 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 311:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1785177548;
-			uParam1->f_110 = 1785177548;
+			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			func_275(uParam1);
 			uParam1->f_118 = 1;
 			return 1;
@@ -46013,17 +46013,17 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 312:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 1630799643;
-			uParam1->f_110 = 1630799643;
-			func_274(uParam1, 144, 474215631, -1519143300, -9.5443f, -3.191f, -0.3f, 180f);
+			uParam1->f_109 = joaat("SCRIPT_TASK_AIM_GUN_AT_ENTITY");
+			uParam1->f_110 = joaat("SCRIPT_TASK_AIM_GUN_AT_ENTITY");
+			func_274(uParam1, 144, joaat("SCRIPT_TASK_COWER"), joaat("SCRIPT_TASK_HANDS_UP"), -9.5443f, -3.191f, -0.3f, 180f);
 			uParam1->f_118 = 1;
 			return 1;
 			break;
 		
 		case 313:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = 2106541073;
-			uParam1->f_110 = -982327190;
+			uParam1->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
 			func_275(uParam1);
 			uParam1->f_118 = 0;
 			return 1;
@@ -46031,16 +46031,16 @@ int func_273(struct<109> Param0, var uParam1)//Position - 0x34D62
 		
 		case 314:
 			*uParam1 = { Param0 };
-			uParam1->f_109 = -1817882002;
-			uParam1->f_110 = -1817882002;
+			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 			func_275(uParam1);
 			uParam1->f_118 = 2;
 			return 1;
 			break;
 	}
 	*uParam1 = { Param0 };
-	uParam1->f_109 = 1435919172;
-	uParam1->f_110 = 1435919172;
+	uParam1->f_109 = joaat("SCRIPT_TASK_ANY");
+	uParam1->f_110 = joaat("SCRIPT_TASK_ANY");
 	func_275(uParam1);
 	uParam1->f_118 = 0;
 	return 0;
@@ -46057,7 +46057,7 @@ void func_274(var uParam0, int iParam1, int iParam2, int iParam3, struct<3> Para
 
 void func_275(var uParam0)//Position - 0x38108
 {
-	func_274(uParam0, 145, 1435919172, 1435919172, 0f, 0f, 0f, 0f);
+	func_274(uParam0, 145, joaat("SCRIPT_TASK_ANY"), joaat("SCRIPT_TASK_ANY"), 0f, 0f, 0f, 0f);
 }
 
 int func_276(int iParam0)//Position - 0x38126
@@ -124223,7 +124223,7 @@ int func_701(int iParam0, float fParam1, int iParam2)//Position - 0x9A8B0
 			else if (iParam2 == 1)
 			{
 				iVar0 = 0;
-				if (!func_707(PLAYER::PLAYER_PED_ID(), -828834893))
+				if (!func_707(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")))
 				{
 					TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
 				}

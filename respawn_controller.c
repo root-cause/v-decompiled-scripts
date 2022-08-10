@@ -5671,9 +5671,9 @@ int func_104(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 				fVar7 = CAM::GET_FINAL_RENDERED_CAM_FOV();
 				if (uParam0->f_17 > 0 || iParam6 != 0)
 				{
-					uParam0->f_3 = CAM::CREATE_CAMERA(1775630800, false);
+					uParam0->f_3 = CAM::CREATE_CAMERA(joaat("TIMED_SPLINE_CAMERA"), false);
 				}
-				uParam0->f_1 = CAM::CREATE_CAMERA(26379945, true);
+				uParam0->f_1 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 				if (bParam1)
 				{
 					CAM::ATTACH_CAM_TO_ENTITY(uParam0->f_1, uParam0->f_5, Var1, true);
@@ -5684,7 +5684,7 @@ int func_104(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 				}
 				CAM::SET_CAM_ROT(uParam0->f_1, Var2, 2);
 				CAM::SET_CAM_FOV(uParam0->f_1, fVar7);
-				uParam0->f_2 = CAM::CREATE_CAMERA(26379945, true);
+				uParam0->f_2 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 				if (bParam1 && !bParam4)
 				{
 					CAM::ATTACH_CAM_TO_ENTITY(uParam0->f_2, uParam0->f_5, Var1 + Var6 * Vector(uParam0->f_12, uParam0->f_12, uParam0->f_12), true);
@@ -5697,7 +5697,7 @@ int func_104(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 				CAM::SET_CAM_FOV(uParam0->f_2, fVar7);
 				if (uParam0->f_17 > 0 && iParam6 == 0)
 				{
-					uParam0->f_4 = CAM::CREATE_CAMERA(26379945, true);
+					uParam0->f_4 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 					if (bParam1 && !bParam4)
 					{
 						CAM::ATTACH_CAM_TO_ENTITY(uParam0->f_4, uParam0->f_5, Var1 + Var6 * Vector(uParam0->f_12, uParam0->f_12, uParam0->f_12) * Vector(uParam0->f_13, uParam0->f_13, uParam0->f_13), true);

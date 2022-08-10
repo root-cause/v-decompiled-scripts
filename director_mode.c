@@ -17620,7 +17620,7 @@ int func_249()//Position - 0x14EAA
 	
 	if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 1785177548);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"));
 		if (!iVar0 == 7)
 		{
 			return 1;
@@ -17978,7 +17978,7 @@ int func_266(int iParam0)//Position - 0x154A6
 {
 	int iVar0;
 	
-	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, 242628503);
+	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"));
 	if (iVar0 == 7)
 	{
 		return 1;
@@ -21299,10 +21299,10 @@ void func_342(var uParam0, int iParam1, bool bParam2, float fParam3, bool bParam
 	{
 		TASK::TASK_CLEAR_LOOK_AT(uParam0->f_122);
 	}
-	iVar13 = TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_122, -1146898486);
+	iVar13 = TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_122, joaat("SCRIPT_TASK_WANDER_STANDARD"));
 	if (iVar13 == 7)
 	{
-		iVar13 = TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_122, -258271821);
+		iVar13 = TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_122, joaat("SCRIPT_TASK_VEHICLE_DRIVE_WANDER"));
 	}
 	if (((uParam0->f_103 == 3 && !bParam5) && !bParam6) && !bParam7)
 	{
@@ -125105,7 +125105,7 @@ void func_856()//Position - 0x9B087
 	
 	if (!iLocal_473)
 	{
-		if (HUD::GET_CURRENT_FRONTEND_MENU_VERSION() == -2060115030)
+		if (HUD::GET_CURRENT_FRONTEND_MENU_VERSION() == joaat("FE_MENU_VERSION_EMPTY_NO_BACKGROUND"))
 		{
 			Var0[0 /*13*/] = { func_781() };
 			if (NETWORK::NETWORK_IS_SIGNED_ONLINE())
@@ -141359,7 +141359,7 @@ int func_1039(int iParam0, int iParam1)//Position - 0xAF1AF
 
 int func_1040(int iParam0, int iParam1, int iParam2)//Position - 0xAF58E
 {
-	if (!func_1041() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_1041() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}
@@ -151579,7 +151579,7 @@ void func_1242()//Position - 0xBD459
 	Global_112334 = 0;
 	Global_112335 = 0;
 	Global_112333 = 0;
-	HUD::ACTIVATE_FRONTEND_MENU(-2060115030, false, -1);
+	HUD::ACTIVATE_FRONTEND_MENU(joaat("FE_MENU_VERSION_EMPTY_NO_BACKGROUND"), false, -1);
 	AUDIO::SET_AUDIO_FLAG("LoadMPData", true);
 	iVar0 = 0;
 	while (!AUDIO::_HAS_MULTIPLAYER_AUDIO_DATA_LOADED() && iVar0 < 500)

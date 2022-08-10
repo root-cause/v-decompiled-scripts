@@ -1025,9 +1025,9 @@ int func_16(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4,
 				fVar7 = CAM::GET_FINAL_RENDERED_CAM_FOV();
 				if (uParam0->f_17 > 0 || iParam6 != 0)
 				{
-					uParam0->f_3 = CAM::CREATE_CAMERA(1775630800, false);
+					uParam0->f_3 = CAM::CREATE_CAMERA(joaat("TIMED_SPLINE_CAMERA"), false);
 				}
-				uParam0->f_1 = CAM::CREATE_CAMERA(26379945, true);
+				uParam0->f_1 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 				if (bParam1)
 				{
 					CAM::ATTACH_CAM_TO_ENTITY(uParam0->f_1, uParam0->f_5, Var1, true);
@@ -1038,7 +1038,7 @@ int func_16(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4,
 				}
 				CAM::SET_CAM_ROT(uParam0->f_1, Var2, 2);
 				CAM::SET_CAM_FOV(uParam0->f_1, fVar7);
-				uParam0->f_2 = CAM::CREATE_CAMERA(26379945, true);
+				uParam0->f_2 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 				if (bParam1 && !bParam4)
 				{
 					CAM::ATTACH_CAM_TO_ENTITY(uParam0->f_2, uParam0->f_5, Var1 + Var6 * Vector(uParam0->f_12, uParam0->f_12, uParam0->f_12), true);
@@ -1051,7 +1051,7 @@ int func_16(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4,
 				CAM::SET_CAM_FOV(uParam0->f_2, fVar7);
 				if (uParam0->f_17 > 0 && iParam6 == 0)
 				{
-					uParam0->f_4 = CAM::CREATE_CAMERA(26379945, true);
+					uParam0->f_4 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 					if (bParam1 && !bParam4)
 					{
 						CAM::ATTACH_CAM_TO_ENTITY(uParam0->f_4, uParam0->f_5, Var1 + Var6 * Vector(uParam0->f_12, uParam0->f_12, uParam0->f_12) * Vector(uParam0->f_13, uParam0->f_13, uParam0->f_13), true);
@@ -2945,7 +2945,7 @@ int func_95(int iParam0)//Position - 0x3321
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;
@@ -3324,11 +3324,11 @@ int func_110(int iParam0)//Position - 0x38FD
 	{
 		return 0;
 	}
-	if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, -2017877118) != 7)
+	if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_PLAY_ANIM")) != 7)
 	{
 		return 0;
 	}
-	if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, 1785177548) != 7)
+	if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE")) != 7)
 	{
 		return 0;
 	}
@@ -3637,7 +3637,7 @@ void func_121()//Position - 0x3C1D
 	}
 	if ((Global_44024[iLocal_54 /*5*/].f_3 >= 10 || Global_44024[iLocal_54 /*5*/].f_4 >= 15) || BitTest(Global_44241, 9))
 	{
-		if (TASK::GET_SCRIPT_TASK_STATUS(Local_43.f_1, 1785177548) == 1 && !BitTest(Global_1946250.f_3, 27))
+		if (TASK::GET_SCRIPT_TASK_STATUS(Local_43.f_1, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE")) == 1 && !BitTest(Global_1946250.f_3, 27))
 		{
 			return;
 		}
@@ -4444,7 +4444,7 @@ void func_144()//Position - 0x4C9D
 	{
 		return;
 	}
-	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 355471868);
+	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT"));
 	if (!iVar0 == 7)
 	{
 		Local_51.f_3 = SYSTEM::TIMERA() + 1000;
@@ -4572,7 +4572,7 @@ void func_147()//Position - 0x4D9C
 	}
 	if (!bLocal_46)
 	{
-		iVar3 = TASK::GET_SCRIPT_TASK_STATUS(Local_43.f_1, -1794415470);
+		iVar3 = TASK::GET_SCRIPT_TASK_STATUS(Local_43.f_1, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar3 == 7)
 		{
 			if (!PED::IS_PED_IN_ANY_VEHICLE(Local_43.f_1, false))

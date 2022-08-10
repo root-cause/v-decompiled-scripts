@@ -815,7 +815,7 @@ void __EntryFunction__()//Position - 0x0
 				}
 				if (!CAM::DOES_CAM_EXIST(iLocal_205) && !iLocal_590)
 				{
-					iLocal_205 = CAM::CREATE_CAMERA(964613260, false);
+					iLocal_205 = CAM::CREATE_CAMERA(joaat("DEFAULT_ANIMATED_CAMERA"), false);
 				}
 				if (((func_465(PLAYER::PLAYER_PED_ID(), func_466(), 1) < 1.55f && !func_464(0)) && !iLocal_590) || ((func_516(Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_267.f_32) && func_463(PLAYER::PLAYER_PED_ID()) < 10) && !Global_1940653))
 				{
@@ -998,7 +998,7 @@ void __EntryFunction__()//Position - 0x0
 					TASK::CLEAR_PED_TASKS(PLAYER::PLAYER_PED_ID());
 					iLocal_87 = 0;
 				}
-				if ((((iLocal_567 && func_366(1, 0, 1)) && iLocal_565 < MISC::GET_GAME_TIMER()) && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 713668775) != 1) && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 2106541073) != 1)
+				if ((((iLocal_567 && func_366(1, 0, 1)) && iLocal_565 < MISC::GET_GAME_TIMER()) && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1) && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD")) != 1)
 				{
 					func_320(iLocal_81, 1, 2, 0, ScriptParam_596.f_4);
 					func_312(1, 1, 0, 0, 0, 0, 0);

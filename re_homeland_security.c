@@ -537,7 +537,7 @@ void __EntryFunction__()//Position - 0x0
 												iLocal_85 = 1;
 											}
 										}
-										else if ((((!ENTITY::IS_ENTITY_PLAYING_ANIM(iLocal_58, "random@homelandsecurity", "idle_girl", 3) && !ENTITY::IS_ENTITY_PLAYING_ANIM(iLocal_58, "random@homelandsecurity", "idle_to_knees_girl", 1)) && !ENTITY::IS_ENTITY_PLAYING_ANIM(iLocal_58, "random@homelandsecurity", "knees_loop_girl", 1)) && TASK::GET_SCRIPT_TASK_STATUS(iLocal_58, 474215631) != 0) && TASK::GET_SCRIPT_TASK_STATUS(iLocal_58, 474215631) != 1)
+										else if ((((!ENTITY::IS_ENTITY_PLAYING_ANIM(iLocal_58, "random@homelandsecurity", "idle_girl", 3) && !ENTITY::IS_ENTITY_PLAYING_ANIM(iLocal_58, "random@homelandsecurity", "idle_to_knees_girl", 1)) && !ENTITY::IS_ENTITY_PLAYING_ANIM(iLocal_58, "random@homelandsecurity", "knees_loop_girl", 1)) && TASK::GET_SCRIPT_TASK_STATUS(iLocal_58, joaat("SCRIPT_TASK_COWER")) != 0) && TASK::GET_SCRIPT_TASK_STATUS(iLocal_58, joaat("SCRIPT_TASK_COWER")) != 1)
 										{
 											iLocal_85 = 0;
 										}
@@ -4526,7 +4526,7 @@ void func_118()//Position - 0x4987
 	}
 	else if (!PED::IS_PED_INJURED(iLocal_50[1]))
 	{
-		if (((!ENTITY::IS_ENTITY_PLAYING_ANIM(iLocal_50[1], "random@homelandsecurity", "idle_cop_ground", 3) && !ENTITY::IS_ENTITY_PLAYING_ANIM(iLocal_50[1], "random@homelandsecurity", "idle_to_stand_cop_ground", 1)) && TASK::GET_SCRIPT_TASK_STATUS(iLocal_50[1], 780511057) != 0) && TASK::GET_SCRIPT_TASK_STATUS(iLocal_50[1], 780511057) != 1)
+		if (((!ENTITY::IS_ENTITY_PLAYING_ANIM(iLocal_50[1], "random@homelandsecurity", "idle_cop_ground", 3) && !ENTITY::IS_ENTITY_PLAYING_ANIM(iLocal_50[1], "random@homelandsecurity", "idle_to_stand_cop_ground", 1)) && TASK::GET_SCRIPT_TASK_STATUS(iLocal_50[1], joaat("SCRIPT_TASK_COMBAT")) != 0) && TASK::GET_SCRIPT_TASK_STATUS(iLocal_50[1], joaat("SCRIPT_TASK_COMBAT")) != 1)
 		{
 			iLocal_78 = 1;
 		}
@@ -5054,7 +5054,7 @@ void func_127()//Position - 0x4E33
 					{
 						if (!PED::IS_PED_INJURED(iLocal_58))
 						{
-							if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_50[1], 1785177548) != 1)
+							if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_50[1], joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE")) != 1)
 							{
 								TASK::OPEN_SEQUENCE_TASK(&iLocal_102);
 								TASK::TASK_CLEAR_LOOK_AT(0);
@@ -5066,7 +5066,7 @@ void func_127()//Position - 0x4E33
 								TASK::CLEAR_SEQUENCE_TASK(&iLocal_102);
 							}
 						}
-						else if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_50[1], 1785177548) != 1)
+						else if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_50[1], joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE")) != 1)
 						{
 							TASK::OPEN_SEQUENCE_TASK(&iLocal_102);
 							TASK::TASK_CLEAR_LOOK_AT(0);
@@ -5079,7 +5079,7 @@ void func_127()//Position - 0x4E33
 					}
 					if (!PED::IS_PED_INJURED(iLocal_58))
 					{
-						if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_58, 1785177548) != 1)
+						if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_58, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE")) != 1)
 						{
 							TASK::TASK_SEEK_COVER_FROM_PED(iLocal_58, PLAYER::PLAYER_PED_ID(), -1, false);
 							PED::SET_PED_KEEP_TASK(iLocal_58, true);

@@ -10985,7 +10985,7 @@ int func_254(int iParam0, int iParam1)//Position - 0xCB52
 
 int func_255(int iParam0, int iParam1, int iParam2)//Position - 0xCF31
 {
-	if (!func_256() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_256() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}
@@ -21295,7 +21295,7 @@ int func_441(int iParam0, int iParam1, bool bParam2, bool bParam3)//Position - 0
 			iVar0 = VEHICLE::GET_LAST_PED_IN_VEHICLE_SEAT(iParam0, iParam1);
 			if (!ENTITY::IS_ENTITY_DEAD(iVar0, false))
 			{
-				if (TASK::GET_SCRIPT_TASK_STATUS(iVar0, 451360105) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iVar0, -828834893) == 1)
+				if (TASK::GET_SCRIPT_TASK_STATUS(iVar0, joaat("SCRIPT_TASK_LEAVE_VEHICLE")) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iVar0, joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")) == 1)
 				{
 					if (SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(iParam0, false), ENTITY::GET_ENTITY_COORDS(iVar0, false)) < 10f)
 					{
@@ -28986,7 +28986,7 @@ void func_759()//Position - 0x29404
 	{
 		if (bVar0)
 		{
-			iLocal_547[bLocal_548] = GRAPHICS::_ADD_PETROL_DECAL_2(Var1, 5f, 5f, 1f);
+			iLocal_547[bLocal_548] = GRAPHICS::_ADD_OIL_DECAL(Var1, 5f, 5f, 1f);
 		}
 		else
 		{
@@ -38778,7 +38778,7 @@ int func_1188(int iParam0, bool bParam1, bool bParam2, int iParam3, bool bParam4
 				TASK::CLEAR_PED_TASKS_IMMEDIATELY(PLAYER::PLAYER_PED_ID());
 				Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_215 = 4;
 			}
-			else if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), -1794415470) == 7)
+			else if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_ENTER_VEHICLE")) == 7)
 			{
 				if (ENTITY::DOES_ENTITY_EXIST(Global_2667225.f_45.f_173) && VEHICLE::IS_VEHICLE_DRIVEABLE(Global_2667225.f_45.f_173, false))
 				{
@@ -103017,7 +103017,7 @@ int func_1438(int iParam0, int iParam1, bool bParam2)//Position - 0x8263D
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;
@@ -131438,7 +131438,7 @@ int func_1847(int iParam0)//Position - 0xA8272
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;
@@ -140500,7 +140500,7 @@ void func_1955()//Position - 0xB3043
 			Global_1957702 = 1;
 			func_543(60);
 		}
-		else if (func_200(2048, -1, 0) > 0 && PED::_0x65671A4FB8218930(iLocal_496))
+		else if (func_200(2048, -1, 0) > 0 && PED::_GET_PED_DIES_IN_WATER(iLocal_496))
 		{
 			PLAYER::_SET_PLAYER_UNDERWATER_TIME_REMAINING(iLocal_494, 100f);
 			PED::SET_PED_DIES_IN_WATER(iLocal_496, false);
@@ -151411,7 +151411,7 @@ int func_2347(int iParam0, struct<3> Param1, float fParam2)//Position - 0xBEB38
 		case 4:
 			if (func_2350(Local_499, Param1) > 0.01f || !func_2349(ENTITY::GET_ENTITY_HEADING(iLocal_496), fParam2, 5f))
 			{
-				if (!func_2348(iLocal_496, 2106541073, 1))
+				if (!func_2348(iLocal_496, joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD"), 1))
 				{
 					TASK::TASK_GO_STRAIGHT_TO_COORD(iLocal_496, Param1, 1f, -1, fParam2, 0.01f);
 				}
@@ -151432,7 +151432,7 @@ int func_2347(int iParam0, struct<3> Param1, float fParam2)//Position - 0xBEB38
 		case 5:
 			if (!func_2349(ENTITY::GET_ENTITY_HEADING(iLocal_496), fParam2, 5f))
 			{
-				if (!func_2348(iLocal_496, 1920390111, 1))
+				if (!func_2348(iLocal_496, joaat("SCRIPT_TASK_ACHIEVE_HEADING"), 1))
 				{
 					TASK::TASK_ACHIEVE_HEADING(iLocal_496, fParam2, 0);
 				}
@@ -151453,7 +151453,7 @@ int func_2347(int iParam0, struct<3> Param1, float fParam2)//Position - 0xBEB38
 		case 6:
 			if (func_2350(Local_499, Param1) > 0.01f || !func_2349(ENTITY::GET_ENTITY_HEADING(iLocal_496), fParam2, 2f))
 			{
-				if (!func_2348(iLocal_496, 1045468327, 1))
+				if (!func_2348(iLocal_496, joaat("SCRIPT_TASK_PED_SLIDE_TO_COORD"), 1))
 				{
 					TASK::TASK_PED_SLIDE_TO_COORD(iLocal_496, Param1, fParam2, 0.75f);
 				}
@@ -151467,7 +151467,7 @@ int func_2347(int iParam0, struct<3> Param1, float fParam2)//Position - 0xBEB38
 			break;
 		
 		case 7:
-			if (((func_2348(iLocal_496, 713668775, 1) || func_2348(iLocal_496, 2106541073, 1)) || func_2348(iLocal_496, 1920390111, 1)) || func_2348(iLocal_496, 1045468327, 1))
+			if (((func_2348(iLocal_496, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD"), 1) || func_2348(iLocal_496, joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD"), 1)) || func_2348(iLocal_496, joaat("SCRIPT_TASK_ACHIEVE_HEADING"), 1)) || func_2348(iLocal_496, joaat("SCRIPT_TASK_PED_SLIDE_TO_COORD"), 1))
 			{
 				return 0;
 			}
@@ -164755,12 +164755,12 @@ void func_2953(int iParam0, int iParam1)//Position - 0xCDA74
 			{
 				if (func_2958(iParam0) != -1f && func_2957(iParam1, Var0, 1) > func_2958(iParam0))
 				{
-					if (!func_2348(iParam1, 713668775, 1))
+					if (!func_2348(iParam1, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD"), 1))
 					{
 						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam1, Var0, 2f, 20000, func_2958(iParam0), 4, 40000f);
 					}
 				}
-				else if (!func_2348(iParam1, -1388855549, 1))
+				else if (!func_2348(iParam1, joaat("SCRIPT_TASK_THROW_PROJECTILE"), 1))
 				{
 					WEAPON::GIVE_WEAPON_TO_PED(iParam1, func_2956(iParam0), func_2955(iParam0), true, true);
 					WEAPON::SET_CURRENT_PED_WEAPON(iParam1, func_2956(iParam0), true);
@@ -164857,7 +164857,7 @@ void func_2961(int iParam0, int iParam1)//Position - 0xCDC78
 	struct<3> Var0;
 	float fVar1;
 	
-	if (!func_2348(iParam1, -507416935, 1) && !PED::IS_PED_IN_COVER(iParam1, false))
+	if (!func_2348(iParam1, joaat("SCRIPT_TASK_STAY_IN_COVER"), 1) && !PED::IS_PED_IN_COVER(iParam1, false))
 	{
 		if (func_645(Local_538.f_22[iParam0 /*24*/]))
 		{
@@ -164919,7 +164919,7 @@ void func_2964(int iParam0, int iParam1)//Position - 0xCDD44
 		Stack.Push(iParam0);
 		Call_Loc(Local_213.f_160.f_2.f_106);
 		iVar1 = StackVal;
-		if (!func_2348(iParam1, -1273030092, 1) || TASK::GET_ACTIVE_VEHICLE_MISSION_TYPE(iVar0) != iVar1)
+		if (!func_2348(iParam1, joaat("SCRIPT_TASK_VEHICLE_MISSION"), 1) || TASK::GET_ACTIVE_VEHICLE_MISSION_TYPE(iVar0) != iVar1)
 		{
 			if (func_645(Local_538.f_22[iParam0 /*24*/]))
 			{
@@ -165120,7 +165120,7 @@ void func_2970(int iParam0, int iParam1)//Position - 0xCE1DF
 	if (NETWORK::NETWORK_DOES_ENTITY_EXIST_WITH_NETWORK_ID(Local_538.f_743[Local_195.f_38.f_1[iParam0 /*21*/].f_8 /*8*/]))
 	{
 		iVar0 = NETWORK::NET_TO_VEH(Local_538.f_743[Local_195.f_38.f_1[iParam0 /*21*/].f_8 /*8*/]);
-		if (!func_2348(iParam1, -1273030092, 1) || TASK::GET_ACTIVE_VEHICLE_MISSION_TYPE(iVar0) != 19)
+		if (!func_2348(iParam1, joaat("SCRIPT_TASK_VEHICLE_MISSION"), 1) || TASK::GET_ACTIVE_VEHICLE_MISSION_TYPE(iVar0) != 19)
 		{
 			if (func_645(Local_538.f_22[iParam0 /*24*/]))
 			{
@@ -165202,13 +165202,13 @@ void func_2976(int iParam0, int iParam1, bool bParam2)//Position - 0xCE3AE
 {
 	int iVar0;
 	
-	if (!((func_2348(iParam1, -1146898486, 1) || func_2348(iParam1, 923520851, 1)) || func_2348(iParam1, -730893740, 1)))
+	if (!((func_2348(iParam1, joaat("SCRIPT_TASK_WANDER_STANDARD"), 1) || func_2348(iParam1, joaat("SCRIPT_TASK_WANDER_IN_AREA"), 1)) || func_2348(iParam1, joaat("SCRIPT_TASK_WANDER_SPECIFIC"), 1)))
 	{
 		if (func_645(Local_538.f_22[iParam0 /*24*/]))
 		{
 			if (bParam2)
 			{
-				iVar0 = -730893740;
+				iVar0 = joaat("SCRIPT_TASK_WANDER_SPECIFIC");
 			}
 			else
 			{
@@ -165218,7 +165218,7 @@ void func_2976(int iParam0, int iParam1, bool bParam2)//Position - 0xCE3AE
 			}
 			switch (iVar0)
 			{
-				case -1146898486:
+				case joaat("SCRIPT_TASK_WANDER_STANDARD"):
 					Stack.Push(iParam1);
 					Stack.Push(iParam0);
 					Call_Loc(Local_213.f_160.f_2.f_114.f_1);
@@ -165227,7 +165227,7 @@ void func_2976(int iParam0, int iParam1, bool bParam2)//Position - 0xCE3AE
 					TASK::TASK_WANDER_STANDARD(StackVal, StackVal, StackVal);
 					break;
 				
-				case 923520851:
+				case joaat("SCRIPT_TASK_WANDER_IN_AREA"):
 					Stack.Push((Local_213.f_160.f_2.f_114.f_3 != 0 && Local_213.f_160.f_2.f_114.f_4 != 0));
 					Stack.Push(iParam0);
 					Call_Loc(Local_213.f_160.f_2.f_114.f_3);
@@ -165249,7 +165249,7 @@ void func_2976(int iParam0, int iParam1, bool bParam2)//Position - 0xCE3AE
 					}
 					break;
 				
-				case -730893740:
+				case joaat("SCRIPT_TASK_WANDER_SPECIFIC"):
 					Stack.Push((Local_213.f_160.f_2.f_114.f_7 != 0 && Local_213.f_160.f_2.f_114.f_8 != 0));
 					Stack.Push(iParam0);
 					Call_Loc(Local_213.f_160.f_2.f_114.f_7);
@@ -165286,7 +165286,7 @@ void func_2978(int iParam0, int iParam1)//Position - 0xCE581
 	if (NETWORK::NETWORK_DOES_ENTITY_EXIST_WITH_NETWORK_ID(Local_538.f_743[Local_195.f_38.f_1[iParam0 /*21*/].f_8 /*8*/]))
 	{
 		iVar0 = NETWORK::NET_TO_VEH(Local_538.f_743[Local_195.f_38.f_1[iParam0 /*21*/].f_8 /*8*/]);
-		if (!func_2348(iParam1, -1273030092, 1) || TASK::GET_ACTIVE_VEHICLE_MISSION_TYPE(iVar0) != 4)
+		if (!func_2348(iParam1, joaat("SCRIPT_TASK_VEHICLE_MISSION"), 1) || TASK::GET_ACTIVE_VEHICLE_MISSION_TYPE(iVar0) != 4)
 		{
 			if (func_645(Local_538.f_22[iParam0 /*24*/]))
 			{
@@ -165423,7 +165423,7 @@ void func_2986(int iParam0, int iParam1)//Position - 0xCE8A9
 	
 	if (func_645(Local_538.f_22[iParam0 /*24*/]))
 	{
-		if (func_2348(iParam1, 1306903184, 1))
+		if (func_2348(iParam1, joaat("SCRIPT_TASK_GO_TO_COORD_ANY_MEANS_EXTRA_PARAMS_WITH_CRUISE_SPEED"), 1))
 		{
 			if (Local_538.f_22[iParam0 /*24*/].f_6 != Local_538.f_22[iParam0 /*24*/].f_5 && !PED::IS_PED_RUNNING_RAGDOLL_TASK(iParam1))
 			{
@@ -165736,7 +165736,7 @@ void func_2999(int iParam0, int iParam1)//Position - 0xCEDB4
 						}
 					}
 				}
-				else if ((iVar1 && TASK::GET_SCRIPT_TASK_STATUS(iParam1, -1794415470) != 1) && TASK::GET_SCRIPT_TASK_STATUS(iParam1, -1794415470) != 0)
+				else if ((iVar1 && TASK::GET_SCRIPT_TASK_STATUS(iParam1, joaat("SCRIPT_TASK_ENTER_VEHICLE")) != 1) && TASK::GET_SCRIPT_TASK_STATUS(iParam1, joaat("SCRIPT_TASK_ENTER_VEHICLE")) != 0)
 				{
 					TASK::TASK_ENTER_VEHICLE(iParam1, iVar0, -1, -1, 2f, 9, 0);
 				}
@@ -165810,7 +165810,7 @@ void func_3004(int iParam0, int iParam1)//Position - 0xCEFE7
 						TASK::TASK_VEHICLE_MISSION(iParam1, iVar0, 0, 1, func_3006(iParam0), func_3005(iParam0), -1f, -1f, false);
 					}
 				}
-				else if (TASK::GET_SCRIPT_TASK_STATUS(iParam1, -1794415470) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iParam1, -1794415470) != 0)
+				else if (TASK::GET_SCRIPT_TASK_STATUS(iParam1, joaat("SCRIPT_TASK_ENTER_VEHICLE")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iParam1, joaat("SCRIPT_TASK_ENTER_VEHICLE")) != 0)
 				{
 					TASK::TASK_ENTER_VEHICLE(iParam1, iVar0, -1, -1, 2f, 9, 0);
 				}
@@ -165926,7 +165926,7 @@ void func_3012(int iParam0, int iParam1)//Position - 0xCF221
 
 void func_3013(int iParam0, int iParam1)//Position - 0xCF278
 {
-	if (!func_2348(iParam1, -1519143300, 1) && func_645(Local_538.f_22[iParam0 /*24*/]))
+	if (!func_2348(iParam1, joaat("SCRIPT_TASK_HANDS_UP"), 1) && func_645(Local_538.f_22[iParam0 /*24*/]))
 	{
 		Stack.Push(iParam0);
 		Stack.Push(iParam1);
@@ -166035,7 +166035,7 @@ void func_3020(int iParam0, int iParam1)//Position - 0xCF511
 	struct<4> Var1;
 	int iVar2;
 	
-	if (!func_2348(iParam1, -1253019028, 1) && func_645(Local_538.f_22[iParam0 /*24*/]))
+	if (!func_2348(iParam1, joaat("SCRIPT_TASK_PATROL"), 1) && func_645(Local_538.f_22[iParam0 /*24*/]))
 	{
 		iVar0 = func_3026(iParam0);
 		if (iVar0 != -1)
@@ -166045,7 +166045,7 @@ void func_3020(int iParam0, int iParam1)//Position - 0xCF511
 				Var1 = { func_3024(iVar0) };
 				TASK::TASK_PATROL(iParam1, &Var1, func_3023(iVar0), func_3022(iVar0), true);
 			}
-			else if (!func_2348(iParam1, 2106541073, 1))
+			else if (!func_2348(iParam1, joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD"), 1))
 			{
 				iVar2 = 0;
 				while (iVar2 < Local_195.f_1623)
@@ -166138,7 +166138,7 @@ int func_3026(int iParam0)//Position - 0xCF6C2
 
 void func_3027(int iParam0, int iParam1)//Position - 0xCF6F6
 {
-	if (!func_2348(iParam1, 1920390111, 1) && func_645(Local_538.f_22[iParam0 /*24*/]))
+	if (!func_2348(iParam1, joaat("SCRIPT_TASK_ACHIEVE_HEADING"), 1) && func_645(Local_538.f_22[iParam0 /*24*/]))
 	{
 		TASK::TASK_ACHIEVE_HEADING(iParam1, func_3028(iParam0), 0);
 	}
@@ -166171,7 +166171,7 @@ void func_3029(int iParam0, int iParam1)//Position - 0xCF75B
 				iVar0 = NETWORK::NET_TO_VEH(Local_538.f_743[Local_195.f_38.f_1[iParam0 /*21*/].f_8 /*8*/]);
 				if (VEHICLE::IS_VEHICLE_DRIVEABLE(iVar0, false))
 				{
-					if (!func_2348(iParam1, -1794415470, 1) || PED::GET_VEHICLE_PED_IS_ENTERING(iParam1) != iVar0)
+					if (!func_2348(iParam1, joaat("SCRIPT_TASK_ENTER_VEHICLE"), 1) || PED::GET_VEHICLE_PED_IS_ENTERING(iParam1) != iVar0)
 					{
 						TASK::CLEAR_PED_TASKS(iParam1);
 						TASK::TASK_ENTER_VEHICLE(iParam1, iVar0, -1, Local_195.f_38.f_1[iParam0 /*21*/].f_9, func_3033(iParam0), 1, 0);
@@ -166179,7 +166179,7 @@ void func_3029(int iParam0, int iParam1)//Position - 0xCF75B
 				}
 			}
 		}
-		else if (!func_2348(iParam1, 713668775, 1))
+		else if (!func_2348(iParam1, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD"), 1))
 		{
 			Var1 = { func_3032(iParam0) };
 			PED::SET_PED_COMBAT_ATTRIBUTES(iParam1, 1, false);
@@ -166241,10 +166241,10 @@ void func_3034(int iParam0, int iParam1)//Position - 0xCF900
 	
 	if (func_645(Local_538.f_22[iParam0 /*24*/]))
 	{
-		iVar0 = -1824940423;
+		iVar0 = joaat("SCRIPT_TASK_GO_TO_COORD_ANY_MEANS");
 		if (func_3035(iParam0))
 		{
-			iVar0 = 713668775;
+			iVar0 = joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD");
 		}
 		if (!func_2348(iParam1, iVar0, 1))
 		{
@@ -166253,11 +166253,11 @@ void func_3034(int iParam0, int iParam1)//Position - 0xCF900
 			PED::SET_PED_COMBAT_ATTRIBUTES(iParam1, 3, true);
 			switch (iVar0)
 			{
-				case 713668775:
+				case joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD"):
 					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam1, Var1, func_3033(iParam0), func_3031(), 0.25f, 4096, func_3030(iParam0));
 					break;
 				
-				case -1824940423:
+				case joaat("SCRIPT_TASK_GO_TO_COORD_ANY_MEANS"):
 					TASK::TASK_GO_TO_COORD_ANY_MEANS(iParam1, Var1, func_3033(iParam0), 0, false, 786603, -1f);
 					break;
 				}
@@ -166281,7 +166281,7 @@ void func_3036(int iParam0, int iParam1)//Position - 0xCF9D1
 	int iVar0;
 	int iVar1;
 	
-	if (!func_2348(iParam1, 780511057, 1))
+	if (!func_2348(iParam1, joaat("SCRIPT_TASK_COMBAT"), 1))
 	{
 		if (func_3041(iParam0, &iVar0))
 		{
@@ -166333,7 +166333,7 @@ void func_3038(int iParam0, int iParam1)//Position - 0xCFA65
 		{
 			PED::SET_PED_COMBAT_ATTRIBUTES(iParam1, 52, true);
 			PED::SET_PED_COMBAT_ATTRIBUTES(iParam1, 53, true);
-			PED::SET_PED_FIRING_PATTERN(iParam1, -1857128337);
+			PED::SET_PED_FIRING_PATTERN(iParam1, joaat("FIRING_PATTERN_BURST_FIRE_HELI"));
 			PED::SET_PED_COMBAT_ATTRIBUTES(iParam1, 89, true);
 		}
 	}
@@ -166557,7 +166557,7 @@ void func_3049(int iParam0, int iParam1)//Position - 0xCFE56
 			{
 				if (func_645(Local_538.f_22[iParam0 /*24*/]))
 				{
-					if (!func_2348(iParam1, -1794415470, 1) || PED::GET_VEHICLE_PED_IS_ENTERING(iParam1) != iVar2)
+					if (!func_2348(iParam1, joaat("SCRIPT_TASK_ENTER_VEHICLE"), 1) || PED::GET_VEHICLE_PED_IS_ENTERING(iParam1) != iVar2)
 					{
 						Stack.Push(iParam1);
 						Call_Loc(Local_213.f_160.f_2.f_5.f_5);
@@ -166577,7 +166577,7 @@ void func_3049(int iParam0, int iParam1)//Position - 0xCFE56
 			}
 			else if (PED::IS_PED_IN_ANY_HELI(iParam1))
 			{
-				if (!func_2348(iParam1, -1273030092, 1))
+				if (!func_2348(iParam1, joaat("SCRIPT_TASK_VEHICLE_MISSION"), 1))
 				{
 					if (func_645(Local_538.f_22[iParam0 /*24*/]))
 					{
@@ -166610,7 +166610,7 @@ void func_3049(int iParam0, int iParam1)//Position - 0xCFE56
 			}
 			else if (PED::IS_PED_IN_ANY_PLANE(iParam1))
 			{
-				if (!func_2348(iParam1, -1273030092, 1))
+				if (!func_2348(iParam1, joaat("SCRIPT_TASK_VEHICLE_MISSION"), 1))
 				{
 					if (func_645(Local_538.f_22[iParam0 /*24*/]))
 					{
@@ -166824,9 +166824,9 @@ int func_3059(int iParam0)//Position - 0xD0517
 {
 	if (func_3056(iParam0))
 	{
-		return 1306903184;
+		return joaat("SCRIPT_TASK_GO_TO_COORD_ANY_MEANS_EXTRA_PARAMS_WITH_CRUISE_SPEED");
 	}
-	return -1817882002;
+	return joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
 }
 
 int func_3060(int iParam0)//Position - 0xD0535
@@ -166946,7 +166946,7 @@ void func_3070(int iParam0, int iParam1)//Position - 0xD06FD
 	
 	if (Local_213.f_160.f_2.f_23 != 0)
 	{
-		if (!func_2348(iParam1, 167901368, 1))
+		if (!func_2348(iParam1, joaat("SCRIPT_TASK_SHOOT_AT_ENTITY"), 1))
 		{
 			Stack.Push(iParam0);
 			Stack.Push(iParam1);
@@ -166973,7 +166973,7 @@ void func_3071(int iParam0, int iParam1)//Position - 0xD0775
 	
 	if (Local_213.f_160.f_2.f_22 != 0)
 	{
-		if (!func_2348(iParam1, 1630799643, 1))
+		if (!func_2348(iParam1, joaat("SCRIPT_TASK_AIM_GUN_AT_ENTITY"), 1))
 		{
 			Stack.Push(iParam0);
 			Call_Loc(Local_213.f_160.f_2.f_22);
@@ -166994,7 +166994,7 @@ void func_3072(int iParam0, int iParam1)//Position - 0xD07E1
 {
 	if (Local_213.f_160.f_2.f_21 != 0)
 	{
-		if (!func_2348(iParam1, 1237250926, 1))
+		if (!func_2348(iParam1, joaat("SCRIPT_TASK_AIM_GUN_AT_COORD"), 1))
 		{
 			if (func_645(Local_538.f_22[iParam0 /*24*/]))
 			{
@@ -167010,7 +167010,7 @@ void func_3072(int iParam0, int iParam1)//Position - 0xD07E1
 
 void func_3073(int iParam0, int iParam1)//Position - 0xD0834
 {
-	if (!func_2348(iParam1, 1120685857, 1))
+	if (!func_2348(iParam1, joaat("SCRIPT_TASK_COMBAT_HATED_TARGETS_IN_AREA"), 1))
 	{
 		if (func_645(Local_538.f_22[iParam0 /*24*/]))
 		{
@@ -167039,7 +167039,7 @@ void func_3074(int iParam0, int iParam1)//Position - 0xD0895
 	Stack.Push(iParam0);
 	Call_Loc(Local_213.f_160.f_2.f_15.f_1);
 	sVar1 = StackVal;
-	if ((!func_2348(iParam1, -2017877118, 1) && !MISC::IS_STRING_NULL_OR_EMPTY(sVar0)) || !ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, sVar0, sVar1, 1))
+	if ((!func_2348(iParam1, joaat("SCRIPT_TASK_PLAY_ANIM"), 1) && !MISC::IS_STRING_NULL_OR_EMPTY(sVar0)) || !ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, sVar0, sVar1, 1))
 	{
 		STREAMING::REQUEST_ANIM_DICT(sVar0);
 		if (STREAMING::HAS_ANIM_DICT_LOADED(sVar0) && !MISC::IS_STRING_NULL_OR_EMPTY(sVar1))
@@ -167066,7 +167066,7 @@ void func_3075(int iParam0, int iParam1)//Position - 0xD093B
 	{
 		if (func_645(Local_538.f_22[iParam0 /*24*/]))
 		{
-			if (!func_2348(iParam1, -272084098, 1))
+			if (!func_2348(iParam1, joaat("SCRIPT_TASK_VEHICLE_PARK"), 1))
 			{
 				TASK::TASK_VEHICLE_PARK(iParam1, PED::GET_VEHICLE_PED_IS_IN(iParam1, false), ENTITY::GET_ENTITY_COORDS(iParam1, true), ENTITY::GET_ENTITY_HEADING(iParam1), 1, 10f, false);
 			}
@@ -167080,7 +167080,7 @@ void func_3076(int iParam0, int iParam1)//Position - 0xD0991
 	{
 		if (func_645(Local_538.f_22[iParam0 /*24*/]))
 		{
-			if (!func_2348(iParam1, -828834893, 1))
+			if (!func_2348(iParam1, joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE"), 1))
 			{
 				TASK::TASK_LEAVE_ANY_VEHICLE(iParam1, func_3078(iParam0), func_3077(iParam0));
 			}
@@ -167126,7 +167126,7 @@ void func_3079(int iParam0, int iParam1)//Position - 0xD0A26
 				{
 					if (VEHICLE::IS_VEHICLE_DRIVEABLE(iVar0, false))
 					{
-						if (!func_2348(iParam1, -1794415470, 1) || PED::GET_VEHICLE_PED_IS_ENTERING(iParam1) != iVar0)
+						if (!func_2348(iParam1, joaat("SCRIPT_TASK_ENTER_VEHICLE"), 1) || PED::GET_VEHICLE_PED_IS_ENTERING(iParam1) != iVar0)
 						{
 							iVar2 = -1;
 							if (Local_213.f_160.f_2.f_5.f_2 != 0)
@@ -167205,7 +167205,7 @@ void func_3081(int iParam0, int iParam1)//Position - 0xD0BDE
 {
 	if (func_645(Local_538.f_22[iParam0 /*24*/]))
 	{
-		if (!func_2348(iParam1, 474215631, 1))
+		if (!func_2348(iParam1, joaat("SCRIPT_TASK_COWER"), 1))
 		{
 			TASK::TASK_COWER(iParam1, -1);
 		}
@@ -167238,7 +167238,7 @@ void func_3083(int iParam0, int iParam1)//Position - 0xD0C71
 		Call_Loc(Local_213.f_160.f_2);
 		if (func_3085(StackVal, StackVal))
 		{
-			if (!func_2348(iParam1, -1098463898, 1) && func_645(Local_538.f_22[iParam0 /*24*/]))
+			if (!func_2348(iParam1, joaat("SCRIPT_TASK_START_SCENARIO_AT_POSITION"), 1) && func_645(Local_538.f_22[iParam0 /*24*/]))
 			{
 				Stack.Push(iParam1);
 				Stack.Push(iParam0);
@@ -167250,7 +167250,7 @@ void func_3083(int iParam0, int iParam1)//Position - 0xD0C71
 				TASK::TASK_START_SCENARIO_AT_POSITION(StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, 0, true, true);
 			}
 		}
-		else if (!func_2348(iParam1, 993674639, 1) && func_645(Local_538.f_22[iParam0 /*24*/]))
+		else if (!func_2348(iParam1, joaat("SCRIPT_TASK_START_SCENARIO_IN_PLACE"), 1) && func_645(Local_538.f_22[iParam0 /*24*/]))
 		{
 			Stack.Push(iParam1);
 			Stack.Push(iParam0);
@@ -167259,7 +167259,7 @@ void func_3083(int iParam0, int iParam1)//Position - 0xD0C71
 		}
 		if (func_3084(iParam0))
 		{
-			if (func_2348(iParam1, -1098463898, 1) || func_2348(iParam1, 993674639, 1))
+			if (func_2348(iParam1, joaat("SCRIPT_TASK_START_SCENARIO_AT_POSITION"), 1) || func_2348(iParam1, joaat("SCRIPT_TASK_START_SCENARIO_IN_PLACE"), 1))
 			{
 				if (NETWORK::NETWORK_HAS_CONTROL_OF_NETWORK_ID(Local_538.f_22[iParam0 /*24*/]))
 				{
@@ -168722,7 +168722,7 @@ float func_3196(var uParam0)//Position - 0xD2695
 
 bool func_3197(var uParam0)//Position - 0xD26A2
 {
-	return !func_2348(iLocal_496, -2017877118, 1);
+	return !func_2348(iLocal_496, joaat("SCRIPT_TASK_PLAY_ANIM"), 1);
 }
 
 char* func_3198(var uParam0)//Position - 0xD26B8
@@ -169241,7 +169241,7 @@ float func_3258(var uParam0)//Position - 0xD2D5B
 
 int func_3259(var uParam0)//Position - 0xD2D68
 {
-	return -1146898486;
+	return joaat("SCRIPT_TASK_WANDER_STANDARD");
 }
 
 int func_3260(var uParam0, var uParam1)//Position - 0xD2D75

@@ -17333,7 +17333,7 @@ void func_494(int iParam0)//Position - 0x1487E
 									{
 										if (func_515(iLocal_71) && !PED::IS_PED_HANGING_ON_TO_VEHICLE(PLAYER::GET_PLAYER_PED(iLocal_71)))
 										{
-											if (!func_514(iVar0, -1794415470))
+											if (!func_514(iVar0, joaat("SCRIPT_TASK_ENTER_VEHICLE")))
 											{
 												if (func_513(iVar0))
 												{
@@ -17353,11 +17353,11 @@ void func_494(int iParam0)//Position - 0x1487E
 										}
 										else if (!(PED::IS_PED_JACKING(iVar0) && PED::GET_JACK_TARGET(iVar0) == PLAYER::GET_PLAYER_PED(iLocal_71)) && !PED::IS_PED_IN_ANY_VEHICLE(iVar0, true))
 										{
-											if (func_514(iVar0, -1794415470))
+											if (func_514(iVar0, joaat("SCRIPT_TASK_ENTER_VEHICLE")))
 											{
 												TASK::CLEAR_PED_TASKS(iVar0);
 											}
-											if (!func_514(iVar0, 1227113341))
+											if (!func_514(iVar0, joaat("SCRIPT_TASK_GO_TO_ENTITY")))
 											{
 												if (func_513(iVar0))
 												{
@@ -17470,7 +17470,7 @@ void func_494(int iParam0)//Position - 0x1487E
 								{
 									if ((PED::IS_PED_IN_ANY_VEHICLE(iVar0, true) || PED::IS_PED_JACKING(iVar0)) && !BitTest(Local_63.f_2, 10))
 									{
-										if (!func_514(iVar0, -258271821) && !func_514(iVar0, -1273030092))
+										if (!func_514(iVar0, joaat("SCRIPT_TASK_VEHICLE_DRIVE_WANDER")) && !func_514(iVar0, joaat("SCRIPT_TASK_VEHICLE_MISSION")))
 										{
 											if (PED::IS_PED_SITTING_IN_ANY_VEHICLE(iVar0))
 											{
@@ -17504,7 +17504,7 @@ void func_494(int iParam0)//Position - 0x1487E
 											}
 										}
 									}
-									else if (!func_514(iVar0, 1805844857))
+									else if (!func_514(iVar0, joaat("SCRIPT_TASK_SMART_FLEE_PED")))
 									{
 										if (func_6(iLocal_71, 1, 1))
 										{

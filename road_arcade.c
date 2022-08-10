@@ -4225,7 +4225,7 @@ int func_46(int iParam0)//Position - 0x3715
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;
@@ -79517,7 +79517,7 @@ void func_454(int* iParam0, int iParam1)//Position - 0x5DF9D
 	
 	if (!CAM::DOES_CAM_EXIST(iParam0->f_39))
 	{
-		iParam0->f_39 = CAM::CREATE_CAMERA(26379945, true);
+		iParam0->f_39 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 		iParam0->f_29 = 0f;
 		iParam0->f_30 = 0f;
 		iParam0->f_31 = 0f;

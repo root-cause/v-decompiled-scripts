@@ -133,7 +133,7 @@ void __EntryFunction__()//Position - 0x0
 					break;
 				
 				case 2:
-					if (!func_4(iLocal_42, 1805844857) && !PED::IS_PED_FLEEING(iLocal_42))
+					if (!func_4(iLocal_42, joaat("SCRIPT_TASK_SMART_FLEE_PED")) && !PED::IS_PED_FLEEING(iLocal_42))
 					{
 						if (!ENTITY::IS_ENTITY_PLAYING_ANIM(iLocal_42, func_11(), func_3(), 3))
 						{
@@ -210,7 +210,7 @@ int func_5(int iParam0, int iParam1, int iParam2)//Position - 0x289
 					*iParam2 = PED::CREATE_SYNCHRONIZED_SCENE(2727.4f, 4145.56f, 43.68f, 0f, 0f, -92.17f, 2);
 					PED::SET_SYNCHRONIZED_SCENE_LOOPED(*iParam2, false);
 					PED::SET_SYNCHRONIZED_SCENE_HOLD_LAST_FRAME(*iParam2, false);
-					if (func_4(*iParam0, 1785177548))
+					if (func_4(*iParam0, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE")))
 					{
 						ENTITY::STOP_SYNCHRONIZED_ENTITY_ANIM(*iParam0, -1000f, true);
 					}

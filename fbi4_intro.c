@@ -5061,7 +5061,7 @@ int func_87(int iParam0, int iParam1)//Position - 0x61D1
 
 bool func_88()//Position - 0x6650
 {
-	return DLC::IS_DLC_PRESENT(1199590110);
+	return DLC::IS_DLC_PRESENT(joaat("mpsum2"));
 }
 
 bool func_89()//Position - 0x6661
@@ -8746,7 +8746,7 @@ int func_132(int iParam0, int iParam1)//Position - 0xB656
 
 int func_133(int iParam0, int iParam1, int iParam2)//Position - 0xB73B
 {
-	if (!func_134() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_134() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}
@@ -103130,7 +103130,7 @@ int func_578(int iParam0, float fParam1, int iParam2)//Position - 0x7AF53
 			else if (iParam2 == 1)
 			{
 				iVar0 = 0;
-				if (!func_581(PLAYER::PLAYER_PED_ID(), -828834893))
+				if (!func_581(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")))
 				{
 					TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
 				}

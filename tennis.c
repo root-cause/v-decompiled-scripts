@@ -11909,12 +11909,12 @@ void func_202(var uParam0, var uParam1, var uParam2, var uParam3, int iParam4, i
 					Var5 = { CAM::GET_CAM_ROT(uParam0->f_3, 2) };
 					CAM::DESTROY_CAM(uParam0->f_3, false);
 				}
-				uParam0->f_3 = CAM::CREATE_CAMERA(964613260, false);
+				uParam0->f_3 = CAM::CREATE_CAMERA(joaat("DEFAULT_ANIMATED_CAMERA"), false);
 				if (CAM::DOES_CAM_EXIST(uParam0->f_2))
 				{
 					CAM::DESTROY_CAM(uParam0->f_2, false);
 				}
-				uParam0->f_2 = CAM::CREATE_CAMERA(26379945, false);
+				uParam0->f_2 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), false);
 				GRAPHICS::ANIMPOSTFX_STOP("MinigameTransitionIn");
 				GRAPHICS::ANIMPOSTFX_PLAY("MinigameTransitionOut", 0, false);
 				HUD::DISPLAY_RADAR(false);
@@ -16546,7 +16546,7 @@ void func_345(var uParam0, var uParam1, int iParam2)//Position - 0x187B4
 	{
 		CAM::DESTROY_CAM(uParam1->f_3, false);
 	}
-	uParam1->f_3 = CAM::CREATE_CAMERA(26379945, true);
+	uParam1->f_3 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 	CAM::SET_CAM_PARAMS(uParam1->f_3, Var1, Var3, 30f, 0, 1, 1, 2);
 	CAM::SET_CAM_PARAMS(uParam1->f_3, Var2, Var3, 30f, 3500, 1, 1, 2);
 	CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
@@ -17567,7 +17567,7 @@ void func_388(var uParam0, int iParam1, int iParam2, var uParam3, var uParam4)//
 					*iParam1 = SYSTEM::ROUND((Var0.f_0 * 128f));
 					*iParam2 = SYSTEM::ROUND((Var0.f_1 * 128f));
 				}
-				else if ((ENTITY::IS_ENTITY_AT_COORD(uParam0->f_32, func_400(&(uParam0->f_4)), Var2, false, true, 0) || TASK::GET_SCRIPT_TASK_STATUS(func_1170(uParam0), 2106541073) == 7) && !func_367(&(uParam0->f_4), 256))
+				else if ((ENTITY::IS_ENTITY_AT_COORD(uParam0->f_32, func_400(&(uParam0->f_4)), Var2, false, true, 0) || TASK::GET_SCRIPT_TASK_STATUS(func_1170(uParam0), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD")) == 7) && !func_367(&(uParam0->f_4), 256))
 				{
 					func_360(&(uParam0->f_4), 0);
 					func_350(&(uParam0->f_4), 4);
@@ -17639,7 +17639,7 @@ void func_388(var uParam0, int iParam1, int iParam2, var uParam3, var uParam4)//
 					*iParam1 = SYSTEM::ROUND((Var0.f_0 * 128f));
 					*iParam2 = SYSTEM::ROUND((Var0.f_1 * 128f));
 				}
-				else if (SYSTEM::VDIST2(uParam0->f_37, Var1) <= (0f * 0f) || TASK::GET_SCRIPT_TASK_STATUS(func_1170(uParam0), 2106541073) == 7)
+				else if (SYSTEM::VDIST2(uParam0->f_37, Var1) <= (0f * 0f) || TASK::GET_SCRIPT_TASK_STATUS(func_1170(uParam0), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD")) == 7)
 				{
 					func_360(&(uParam0->f_4), 2);
 					func_350(&(uParam0->f_4), 4);
@@ -18916,7 +18916,7 @@ void func_444(var uParam0, var uParam1, var uParam2, int iParam3)//Position - 0x
 {
 	bool bVar0;
 	
-	if ((((((func_471(func_903(uParam1)) && func_903(uParam1) > 5) && func_903(uParam1) < 22) && func_903(uParam1) != 21) && func_903(uParam1) != 24) && uParam0->f_1657 != 1) && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 2106541073) == 7)
+	if ((((((func_471(func_903(uParam1)) && func_903(uParam1) > 5) && func_903(uParam1) < 22) && func_903(uParam1) != 21) && func_903(uParam1) != 24) && uParam0->f_1657 != 1) && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD")) == 7)
 	{
 		if (func_903(uParam1) == 6 && func_201(uParam2->f_28.f_137, 1073741824))
 		{
@@ -21057,7 +21057,7 @@ int func_507(var uParam0, var uParam1, var uParam2, var uParam3, int iParam4, in
 	PED::SET_PED_DENSITY_MULTIPLIER_THIS_FRAME(0f);
 	if (!CAM::DOES_CAM_EXIST(uParam0->f_3))
 	{
-		uParam0->f_3 = CAM::CREATE_CAMERA(26379945, false);
+		uParam0->f_3 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), false);
 	}
 	fVar11 = MISC::GET_HEADING_FROM_VECTOR_2D(uParam1->f_189.f_49, uParam1->f_189.f_49.f_1);
 	func_492();
@@ -54559,7 +54559,7 @@ void func_780(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4, v
 				func_365(uParam0[func_47(uParam1) /*94*/], &(uParam0->f_247));
 				func_213(&(uParam0->f_247), 4);
 			}
-			if (func_47(uParam1) != iParam3 && TASK::GET_SCRIPT_TASK_STATUS(func_1170(uParam0[iParam3 /*94*/]), 242628503) == 7)
+			if (func_47(uParam1) != iParam3 && TASK::GET_SCRIPT_TASK_STATUS(func_1170(uParam0[iParam3 /*94*/]), joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 7)
 			{
 				func_343(uParam0->f_1657, 1);
 				func_385(uParam0[iParam3 /*94*/], uParam0, func_57(uParam1), iParam3, 0, 0);
@@ -54717,7 +54717,7 @@ int func_787(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, bo
 	iVar0 = 1;
 	iVar1 = func_1170(uParam0[iParam1 /*94*/]);
 	iVar2 = func_1170(uParam0[iParam2 /*94*/]);
-	if (!PED::IS_PED_INJURED(iVar1) && TASK::GET_SCRIPT_TASK_STATUS(iVar1, 242628503) != 7)
+	if (!PED::IS_PED_INJURED(iVar1) && TASK::GET_SCRIPT_TASK_STATUS(iVar1, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 7)
 	{
 		if (ENTITY::IS_ENTITY_PLAYING_ANIM(iVar1, "mini@tennis", "idle_2_serve", 3))
 		{
@@ -54749,7 +54749,7 @@ int func_787(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, bo
 		}
 	}
 	bVar3 = (((iParam2 != iParam3 && iParam6 >= (func_354(uParam0[iParam2 /*94*/]) - 1)) && iVar0) && 1);
-	if (!PED::IS_PED_INJURED(iVar2) && (TASK::GET_SCRIPT_TASK_STATUS(iVar2, 242628503) != 7 && !bVar3))
+	if (!PED::IS_PED_INJURED(iVar2) && (TASK::GET_SCRIPT_TASK_STATUS(iVar2, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 7 && !bVar3))
 	{
 		if (ENTITY::IS_ENTITY_PLAYING_ANIM(iVar2, "mini@tennis", "idle_2_serve", 3))
 		{
@@ -54760,7 +54760,7 @@ int func_787(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, bo
 		}
 		iVar0 = 0;
 	}
-	else if (((!PED::IS_PED_INJURED(iVar2) && ((bParam5 || iParam4 == 4) || iParam4 == 1)) && !func_191(uParam0[iParam2 /*94*/], 8192)) && TASK::GET_SCRIPT_TASK_STATUS(iVar2, 242628503) == 7)
+	else if (((!PED::IS_PED_INJURED(iVar2) && ((bParam5 || iParam4 == 4) || iParam4 == 1)) && !func_191(uParam0[iParam2 /*94*/], 8192)) && TASK::GET_SCRIPT_TASK_STATUS(iVar2, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 7)
 	{
 		if (iParam2 == iParam3)
 		{
@@ -54925,7 +54925,7 @@ void func_796(var uParam0, var uParam1)//Position - 0x4645F
 	
 	if (!func_191(uParam0, 2048) && func_797(uParam0->f_37, uParam1))
 	{
-		if (TASK::GET_SCRIPT_TASK_STATUS(func_1170(uParam0), 713668775) != 1 && TASK::GET_SCRIPT_TASK_STATUS(func_1170(uParam0), 242628503) != 1)
+		if (TASK::GET_SCRIPT_TASK_STATUS(func_1170(uParam0), joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(func_1170(uParam0), joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1)
 		{
 			Var0 = { uParam0->f_37 - uParam1->f_29 * Vector(0.93f, 0.93f, 0.93f) };
 			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_1170(uParam0), uParam1->f_29 + Var0, 2f, 20000, 0.25f, false, 40000f);
@@ -54933,7 +54933,7 @@ void func_796(var uParam0, var uParam1)//Position - 0x4645F
 			func_603("FAR_FROM_COURT", -1);
 		}
 	}
-	else if (func_191(uParam0, 2048) && TASK::GET_SCRIPT_TASK_STATUS(func_1170(uParam0), 713668775) != 1)
+	else if (func_191(uParam0, 2048) && TASK::GET_SCRIPT_TASK_STATUS(func_1170(uParam0), joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1)
 	{
 		func_362(uParam0, 2048);
 	}
@@ -55653,7 +55653,7 @@ void func_825(var uParam0, var uParam1)//Position - 0x47748
 
 int func_826(var uParam0, int iParam1, int iParam2, int iParam3, bool bParam4)//Position - 0x477FE
 {
-	if (!PED::IS_PED_INJURED(func_1170(uParam0[iParam1 /*94*/])) && TASK::GET_SCRIPT_TASK_STATUS(func_1170(uParam0[iParam1 /*94*/]), 242628503) != 7)
+	if (!PED::IS_PED_INJURED(func_1170(uParam0[iParam1 /*94*/])) && TASK::GET_SCRIPT_TASK_STATUS(func_1170(uParam0[iParam1 /*94*/]), joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 7)
 	{
 		return 0;
 	}
@@ -55727,11 +55727,11 @@ void func_831(var uParam0, var uParam1, var uParam2, var uParam3)//Position - 0x
 	
 	iVar0 = func_47(uParam1);
 	iVar1 = (1 - iVar0);
-	if (!PED::IS_PED_INJURED(func_1170(uParam0[iVar0 /*94*/])) && TASK::GET_SCRIPT_TASK_STATUS(func_1170(uParam0[iVar0 /*94*/]), 242628503) == 1)
+	if (!PED::IS_PED_INJURED(func_1170(uParam0[iVar0 /*94*/])) && TASK::GET_SCRIPT_TASK_STATUS(func_1170(uParam0[iVar0 /*94*/]), joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 1)
 	{
 		*uParam2 = TASK::GET_SEQUENCE_PROGRESS(func_1170(uParam0[iVar0 /*94*/]));
 	}
-	if (!PED::IS_PED_INJURED(func_1170(uParam0[iVar1 /*94*/])) && TASK::GET_SCRIPT_TASK_STATUS(func_1170(uParam0[iVar1 /*94*/]), 242628503) == 1)
+	if (!PED::IS_PED_INJURED(func_1170(uParam0[iVar1 /*94*/])) && TASK::GET_SCRIPT_TASK_STATUS(func_1170(uParam0[iVar1 /*94*/]), joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 1)
 	{
 		*uParam3 = TASK::GET_SEQUENCE_PROGRESS(func_1170(uParam0[iVar1 /*94*/]));
 	}
@@ -55829,7 +55829,7 @@ void func_835(var uParam0, var uParam1)//Position - 0x47C6E
 	Var4 = { uParam0->f_189.f_29 };
 	if (!CAM::DOES_CAM_EXIST(uParam1->f_3))
 	{
-		uParam1->f_3 = CAM::CREATE_CAMERA(26379945, false);
+		uParam1->f_3 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), false);
 	}
 	if (CAM::IS_CAM_SHAKING(uParam1->f_3))
 	{
@@ -60351,15 +60351,15 @@ int func_927()//Position - 0x4EA8C
 void func_928(var uParam0, var uParam1, var uParam2, int iParam3)//Position - 0x4EA9D
 {
 	func_210(uParam1, func_859(&(uParam0->f_189)));
-	*uParam2 = CAM::CREATE_CAMERA(26379945, false);
+	*uParam2 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), false);
 	func_209(uParam0, uParam1, iParam3);
-	uParam2->f_1 = CAM::CREATE_CAMERA(26379945, false);
+	uParam2->f_1 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), false);
 	func_206(uParam0, uParam1, iParam3);
-	uParam2->f_2 = CAM::CREATE_CAMERA(26379945, false);
+	uParam2->f_2 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), false);
 	func_929(uParam0, *uParam2, iParam3);
 	if (!CAM::DOES_CAM_EXIST(uParam2->f_3))
 	{
-		uParam2->f_3 = CAM::CREATE_CAMERA(26379945, false);
+		uParam2->f_3 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), false);
 	}
 	func_438(uParam2, 0, 0);
 	if (uParam0->f_1657 == 2 || func_912(4))

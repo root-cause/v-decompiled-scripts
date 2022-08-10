@@ -46070,7 +46070,7 @@ int func_328(int iParam0, int iParam1)//Position - 0x3C00D
 
 bool func_329()//Position - 0x3C48C
 {
-	return DLC::IS_DLC_PRESENT(1199590110);
+	return DLC::IS_DLC_PRESENT(joaat("mpsum2"));
 }
 
 bool func_330()//Position - 0x3C49D
@@ -107122,7 +107122,7 @@ int func_612(int iParam0, int iParam1)//Position - 0x8485D
 
 int func_613(int iParam0, int iParam1, int iParam2)//Position - 0x84942
 {
-	if (!func_614() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_614() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}
@@ -108943,7 +108943,7 @@ void func_661()//Position - 0x86EB6
 		{
 			if (ENTITY::IS_ENTITY_ON_SCREEN(Local_71.f_17[iLocal_202]))
 			{
-				if (TASK::GET_SCRIPT_TASK_STATUS(Local_71.f_17[iLocal_202], -1146898486) != 1)
+				if (TASK::GET_SCRIPT_TASK_STATUS(Local_71.f_17[iLocal_202], joaat("SCRIPT_TASK_WANDER_STANDARD")) != 1)
 				{
 					TASK::TASK_WANDER_STANDARD(Local_71.f_17[iLocal_202], 40000f, 0);
 				}
@@ -109158,7 +109158,7 @@ void func_665()//Position - 0x8722B
 			{
 				if (!ENTITY::IS_ENTITY_DEAD(Global_100366[iLocal_201], false))
 				{
-					if (TASK::GET_SCRIPT_TASK_STATUS(Global_100366[iLocal_201], -1146898486) != 1 && TASK::GET_SCRIPT_TASK_STATUS(Global_100366[iLocal_201], -251125078) != 1)
+					if (TASK::GET_SCRIPT_TASK_STATUS(Global_100366[iLocal_201], joaat("SCRIPT_TASK_WANDER_STANDARD")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(Global_100366[iLocal_201], -251125078) != 1)
 					{
 						TASK::TASK_WANDER_STANDARD(Global_100366[iLocal_201], 40000f, 0);
 					}

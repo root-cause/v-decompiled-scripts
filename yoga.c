@@ -1420,7 +1420,7 @@ int func_9(int iParam0)//Position - 0x96A
 				PED::SET_FORCE_FOOTSTEP_UPDATE(PLAYER::PLAYER_PED_ID(), true);
 				TASK::TASK_SYNCHRONIZED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_173, "mini@yoga", "outro_1", 1000f, -1000f, 0, 0, 1000f, 0);
 				PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(PLAYER::PLAYER_PED_ID(), false, false);
-				iLocal_171 = CAM::CREATE_CAMERA(964613260, true);
+				iLocal_171 = CAM::CREATE_CAMERA(joaat("DEFAULT_ANIMATED_CAMERA"), true);
 				CAM::PLAY_SYNCHRONIZED_CAM_ANIM(iLocal_171, iLocal_173, "outro_1_cam", "mini@yoga");
 				HUD::DISPLAY_HUD(false);
 				HUD::DISPLAY_RADAR(false);
@@ -1503,7 +1503,7 @@ int func_9(int iParam0)//Position - 0x96A
 				func_12(&Local_148, 1);
 				if (PED::GET_SYNCHRONIZED_SCENE_PHASE(iLocal_174) >= 0.95f)
 				{
-					if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 1785177548) == 1)
+					if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE")) == 1)
 					{
 						TASK::CLEAR_PED_TASKS(PLAYER::PLAYER_PED_ID());
 					}
@@ -86833,7 +86833,7 @@ int func_324(int iParam0)//Position - 0x63252
 		case 0:
 			if (!CAM::DOES_CAM_EXIST(iLocal_170))
 			{
-				iLocal_170 = CAM::CREATE_CAMERA(26379945, true);
+				iLocal_170 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 				if (iLocal_88 == 0)
 				{
 					CAM::SET_CAM_PARAMS(iLocal_170, -782.8024f, 187.4389f, 73.32661f, -3.540541f, 0f, 99.79994f, 39.35555f, 0, 1, 1, 2);
@@ -87304,7 +87304,7 @@ int func_332(int iParam0, int iParam1)//Position - 0x63C27
 {
 	if (!PED::IS_PED_INJURED(iParam0))
 	{
-		if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, 242628503) == 1)
+		if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 1)
 		{
 			if (iParam1 < 2)
 			{
@@ -89483,7 +89483,7 @@ void func_368(var uParam0)//Position - 0x67D9A
 				{
 					if (!CAM::DOES_CAM_EXIST(iLocal_58))
 					{
-						iLocal_58 = CAM::CREATE_CAMERA(26379945, false);
+						iLocal_58 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), false);
 					}
 					if (CAM::DOES_CAM_EXIST(iLocal_58))
 					{
@@ -89546,7 +89546,7 @@ int func_369(int iParam0)//Position - 0x67F3A
 		case 0:
 			if (!CAM::DOES_CAM_EXIST(iLocal_170))
 			{
-				iLocal_170 = CAM::CREATE_CAMERA(26379945, true);
+				iLocal_170 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 				if (iLocal_88 == 0)
 				{
 					CAM::SET_CAM_PARAMS(iLocal_170, -782.8024f, 187.4389f, 73.32661f, -3.540541f, 0f, 99.79994f, 39.35555f, 0, 1, 1, 2);
@@ -89611,7 +89611,7 @@ int func_370(int iParam0)//Position - 0x68100
 		case 0:
 			if (!CAM::DOES_CAM_EXIST(iLocal_170))
 			{
-				iLocal_170 = CAM::CREATE_CAMERA(26379945, true);
+				iLocal_170 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 				if (iLocal_88 == 0)
 				{
 					CAM::SET_CAM_PARAMS(iLocal_170, -782.8024f, 187.4389f, 73.32661f, -3.540541f, 0f, 99.79994f, 39.35555f, 0, 1, 1, 2);
@@ -89730,7 +89730,7 @@ int func_371(int iParam0)//Position - 0x683A5
 				TASK::TASK_SYNCHRONIZED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_172, "mini@yoga", "intro", 1000f, -1000f, 0, 0, 1000f, 0);
 				PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(PLAYER::PLAYER_PED_ID(), false, false);
 				CAM::DESTROY_ALL_CAMS(false);
-				iLocal_171 = CAM::CREATE_CAMERA(964613260, true);
+				iLocal_171 = CAM::CREATE_CAMERA(joaat("DEFAULT_ANIMATED_CAMERA"), true);
 				CAM::PLAY_SYNCHRONIZED_CAM_ANIM(iLocal_171, iLocal_172, "intro_cam", "mini@yoga");
 				HUD::CLEAR_HELP(true);
 				HUD::CLEAR_PRINTS();
@@ -89816,12 +89816,12 @@ int func_371(int iParam0)//Position - 0x683A5
 			{
 				if (iLocal_88 == 0)
 				{
-					iLocal_170 = CAM::CREATE_CAMERA(26379945, true);
+					iLocal_170 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 					CAM::SET_CAM_PARAMS(iLocal_170, -782.8024f, 187.4389f, 73.32661f, -3.540541f, 0f, 99.79994f, 39.35555f, 0, 1, 1, 2);
 				}
 				else if (iLocal_88 == 1)
 				{
-					iLocal_170 = CAM::CREATE_CAMERA(26379945, true);
+					iLocal_170 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 					CAM::SET_CAM_PARAMS(iLocal_170, 2870.826f, 5943.485f, 356.9121f, 11.16632f, 0.034383f, 76.03407f, 39.35555f, 0, 1, 1, 2);
 				}
 				CAM::DESTROY_CAM(iLocal_171, false);

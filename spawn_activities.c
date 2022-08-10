@@ -272,7 +272,7 @@ int func_1()//Position - 0x11F
 					break;
 				
 				case 1:
-					if ((func_37() || !func_35(-258271821)) || func_36())
+					if ((func_37() || !func_35(joaat("SCRIPT_TASK_VEHICLE_DRIVE_WANDER"))) || func_36())
 					{
 						if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 						{
@@ -288,7 +288,7 @@ int func_1()//Position - 0x11F
 					break;
 				
 				case 2:
-					if ((func_37() || !func_35(-1146898486)) || func_36())
+					if ((func_37() || !func_35(joaat("SCRIPT_TASK_WANDER_STANDARD"))) || func_36())
 					{
 						TASK::CLEAR_PED_TASKS(PLAYER::PLAYER_PED_ID());
 						iLocal_117 = 0;
@@ -1463,7 +1463,7 @@ int func_23(int iParam0)//Position - 0x178B
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;
@@ -1677,7 +1677,7 @@ int func_34()//Position - 0x19FA
 		{
 			iLocal_119 = PED::CREATE_SYNCHRONIZED_SCENE(Global_2667225.f_597, ENTITY::GET_ENTITY_ROTATION(PLAYER::PLAYER_PED_ID(), 2), 2);
 		}
-		iLocal_112 = CAM::CREATE_CAMERA(964613260, true);
+		iLocal_112 = CAM::CREATE_CAMERA(joaat("DEFAULT_ANIMATED_CAMERA"), true);
 		TASK::TASK_SYNCHRONIZED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_119, "switch@michael@smoking2", "exit", 1000f, -1000f, 1, 0, 1000f, 0);
 		PED::SET_SYNCHRONIZED_SCENE_HOLD_LAST_FRAME(iLocal_119, true);
 		PED::SET_SYNCHRONIZED_SCENE_LOOPED(iLocal_119, true);
@@ -3039,7 +3039,7 @@ void func_84()//Position - 0x3051
 								iLocal_119 = NETWORK::NETWORK_CREATE_SYNCHRONISED_SCENE(Var0, Var1, 2, true, false, 1f, 0f, 1f);
 								NETWORK::NETWORK_ADD_PED_TO_SYNCHRONISED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_119, func_5(), "action", 1000f, -2f, 13, 16, 2f, 0);
 								NETWORK::NETWORK_START_SYNCHRONISED_SCENE(iLocal_119);
-								iLocal_112 = CAM::CREATE_CAMERA(964613260, true);
+								iLocal_112 = CAM::CREATE_CAMERA(joaat("DEFAULT_ANIMATED_CAMERA"), true);
 								CAM::PLAY_CAM_ANIM(iLocal_112, "action_camera", func_5(), Var0, Var1, false, 2);
 								CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
 								Global_2671449.f_16 = 1;

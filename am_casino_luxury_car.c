@@ -7155,7 +7155,7 @@ int func_92(int iParam0, int iParam1)//Position - 0x8EF2
 
 int func_93(int iParam0, int iParam1, int iParam2)//Position - 0x92D1
 {
-	if (!func_94() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_94() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}

@@ -118429,7 +118429,7 @@ int func_1012(int iParam0)//Position - 0x927B1
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;
@@ -123468,7 +123468,7 @@ void func_1146()//Position - 0x98A0F
 
 void func_1147(var uParam0, struct<3> Param1, struct<3> Param2, float fParam3)//Position - 0x98A52
 {
-	*uParam0 = CAM::CREATE_CAMERA(26379945, true);
+	*uParam0 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 	CAM::SET_CAM_PARAMS(*uParam0, Param1, Param2, fParam3, 0, 1, 1, 2);
 	CAM::SHAKE_CAM(*uParam0, "HAND_SHAKE", 0.25f);
 	CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
@@ -131558,7 +131558,7 @@ int func_1403(int iParam0, int iParam1)//Position - 0xA36A0
 			return 1;
 		}
 	}
-	if (HUD::IS_PAUSE_MENU_ACTIVE() && HUD::GET_CURRENT_FRONTEND_MENU_VERSION() != -2060115030)
+	if (HUD::IS_PAUSE_MENU_ACTIVE() && HUD::GET_CURRENT_FRONTEND_MENU_VERSION() != joaat("FE_MENU_VERSION_EMPTY_NO_BACKGROUND"))
 	{
 		if ((!func_602() && !func_863()) && ENTITY::IS_ENTITY_VISIBLE(PLAYER::PLAYER_PED_ID()))
 		{
@@ -138868,7 +138868,7 @@ void func_1556(int iParam0, struct<3> Param1)//Position - 0xACFE5
 			{
 				WEAPON::SET_CURRENT_PED_WEAPON(iParam0, joaat("weapon_molotov"), true);
 			}
-			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, 242628503) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iParam0, 242628503) != 0)
+			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 0)
 			{
 				TASK::OPEN_SEQUENCE_TASK(&iVar2);
 				TASK::TASK_STAND_STILL(0, MISC::GET_RANDOM_INT_IN_RANGE(1000, 6000));
@@ -138893,12 +138893,12 @@ void func_1556(int iParam0, struct<3> Param1)//Position - 0xACFE5
 				TASK::CLEAR_SEQUENCE_TASK(&iVar2);
 			}
 		}
-		else if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, -653332088) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iParam0, -653332088) != 0)
+		else if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_SHOOT_AT_COORD")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_SHOOT_AT_COORD")) != 0)
 		{
 			TASK::TASK_SHOOT_AT_COORD(iParam0, Param1, -1, joaat("FIRING_PATTERN_BURST_FIRE"));
 		}
 	}
-	else if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, -982327190) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iParam0, -982327190) != 0)
+	else if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_STAND_STILL")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_STAND_STILL")) != 0)
 	{
 		TASK::TASK_STAND_STILL(iParam0, -1);
 	}

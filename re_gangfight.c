@@ -638,7 +638,7 @@ void func_9()//Position - 0x6CF
 							{
 								if (!bLocal_51)
 								{
-									TASK::TASK_DRIVE_BY(iLocal_59[iVar0], PLAYER::PLAYER_PED_ID(), 0, 0f, 0f, 0f, 150f, 100, true, -753768974);
+									TASK::TASK_DRIVE_BY(iLocal_59[iVar0], PLAYER::PLAYER_PED_ID(), 0, 0f, 0f, 0f, 150f, 100, true, joaat("FIRING_PATTERN_BURST_FIRE_DRIVEBY"));
 								}
 								else
 								{

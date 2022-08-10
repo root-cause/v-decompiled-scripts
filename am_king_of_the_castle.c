@@ -21518,14 +21518,14 @@ void func_681()//Position - 0x19424
 	{
 		if (func_219(PLAYER::PLAYER_ID()))
 		{
-			if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(1344549371))
+			if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("DisableSpectateScript")))
 			{
-				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(1344549371);
+				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("DisableSpectateScript"));
 			}
 		}
-		else if (HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(1344549371))
+		else if (HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("DisableSpectateScript")))
 		{
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1344549371);
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DisableSpectateScript"));
 		}
 	}
 	if (BitTest(Global_1836844.f_1, 9))
@@ -22766,9 +22766,9 @@ void func_731(int iParam0, bool bParam1, int iParam2)//Position - 0x1AB28
 		func_738();
 		func_737();
 	}
-	if (HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(1344549371))
+	if (HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("DisableSpectateScript")))
 	{
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1344549371);
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DisableSpectateScript"));
 	}
 	if (!bParam1 || uVar0)
 	{

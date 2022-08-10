@@ -563,7 +563,7 @@ void func_1()//Position - 0x345
 			ENTITY::PLAY_SYNCHRONIZED_ENTITY_ANIM(func_32(), iLocal_332, func_31(0), sLocal_341, 1000f, -4f, 0, 1000f);
 			if (CAM::GET_FOLLOW_PED_CAM_VIEW_MODE() != 4)
 			{
-				iLocal_329 = CAM::CREATE_CAMERA(26379945, false);
+				iLocal_329 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), false);
 				if (CAM::DOES_CAM_EXIST(iLocal_329))
 				{
 					CAM::SET_CAM_PARAMS(iLocal_329, Local_335[0 /*3*/], Local_336[0 /*3*/], 45f, 0, 1, 1, 2);
@@ -2885,7 +2885,7 @@ void func_58()//Position - 0x2DAF
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 			func_367(1);
 			PAD::DISABLE_CONTROL_ACTION(0, 0, true);
-			if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 713668775) == 7)
+			if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) == 7)
 			{
 				func_363();
 				GRAPHICS::CASCADE_SHADOWS_ENABLE_ENTITY_TRACKER(true);
@@ -88615,7 +88615,7 @@ int func_374(int iParam0)//Position - 0x65A43
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;

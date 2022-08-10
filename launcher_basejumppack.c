@@ -1331,8 +1331,8 @@ void func_27(bool bParam0)//Position - 0xF0C
 		{
 			OBJECT::DELETE_OBJECT(&iLocal_255);
 		}
-		iVar2 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, func_34(iLocal_82), func_33(iLocal_82), func_32(iLocal_82), true, 2);
-		iVar3 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, func_31(iLocal_82), func_30(iLocal_82), func_29(iLocal_82), false, 2);
+		iVar2 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), func_34(iLocal_82), func_33(iLocal_82), func_32(iLocal_82), true, 2);
+		iVar3 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), func_31(iLocal_82), func_30(iLocal_82), func_29(iLocal_82), false, 2);
 		CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
 		CAM::SHAKE_SCRIPT_GLOBAL("HAND_SHAKE", 0.2f);
 		func_25(&iVar0);

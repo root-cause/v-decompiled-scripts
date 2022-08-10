@@ -2527,7 +2527,7 @@ void func_60()//Position - 0x2BC0
 					{
 						WEAPON::GIVE_WEAPON_TO_PED(iLocal_218, joaat("weapon_microsmg"), 200, true, true);
 						WEAPON::SET_CURRENT_PED_WEAPON(iLocal_218, joaat("weapon_microsmg"), true);
-						TASK::TASK_DRIVE_BY(iLocal_218, PLAYER::PLAYER_PED_ID(), 0, 0f, 0f, 0f, 200f, 50, false, -753768974);
+						TASK::TASK_DRIVE_BY(iLocal_218, PLAYER::PLAYER_PED_ID(), 0, 0f, 0f, 0f, 200f, 50, false, joaat("FIRING_PATTERN_BURST_FIRE_DRIVEBY"));
 					}
 					if (!PED::IS_PED_INJURED(iLocal_219))
 					{
@@ -2536,7 +2536,7 @@ void func_60()//Position - 0x2BC0
 							PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_219, false);
 							WEAPON::GIVE_WEAPON_TO_PED(iLocal_219, joaat("weapon_microsmg"), 200, true, true);
 							WEAPON::SET_CURRENT_PED_WEAPON(iLocal_219, joaat("weapon_microsmg"), true);
-							TASK::TASK_DRIVE_BY(iLocal_219, PLAYER::PLAYER_PED_ID(), 0, 0f, 0f, 0f, 200f, 50, false, -753768974);
+							TASK::TASK_DRIVE_BY(iLocal_219, PLAYER::PLAYER_PED_ID(), 0, 0f, 0f, 0f, 200f, 50, false, joaat("FIRING_PATTERN_BURST_FIRE_DRIVEBY"));
 						}
 					}
 					bLocal_48 = true;
@@ -2553,7 +2553,7 @@ void func_60()//Position - 0x2BC0
 						PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_218, false);
 						WEAPON::GIVE_WEAPON_TO_PED(iLocal_218, joaat("weapon_microsmg"), 200, true, true);
 						WEAPON::SET_CURRENT_PED_WEAPON(iLocal_218, joaat("weapon_microsmg"), true);
-						TASK::TASK_DRIVE_BY(iLocal_218, PLAYER::PLAYER_PED_ID(), 0, 0f, 0f, 0f, 200f, 50, false, -753768974);
+						TASK::TASK_DRIVE_BY(iLocal_218, PLAYER::PLAYER_PED_ID(), 0, 0f, 0f, 0f, 200f, 50, false, joaat("FIRING_PATTERN_BURST_FIRE_DRIVEBY"));
 						bLocal_48 = true;
 						iLocal_254 = 1;
 					}
@@ -2567,7 +2567,7 @@ void func_60()//Position - 0x2BC0
 							PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_219, false);
 							WEAPON::GIVE_WEAPON_TO_PED(iLocal_219, joaat("weapon_microsmg"), 200, true, true);
 							WEAPON::SET_CURRENT_PED_WEAPON(iLocal_219, joaat("weapon_microsmg"), true);
-							TASK::TASK_DRIVE_BY(iLocal_219, PLAYER::PLAYER_PED_ID(), 0, 0f, 0f, 0f, 200f, 50, false, -753768974);
+							TASK::TASK_DRIVE_BY(iLocal_219, PLAYER::PLAYER_PED_ID(), 0, 0f, 0f, 0f, 200f, 50, false, joaat("FIRING_PATTERN_BURST_FIRE_DRIVEBY"));
 							bLocal_48 = true;
 							iLocal_254 = 1;
 						}
@@ -2592,7 +2592,7 @@ void func_60()//Position - 0x2BC0
 								PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_218, false);
 								WEAPON::GIVE_WEAPON_TO_PED(iLocal_218, joaat("weapon_microsmg"), 200, true, true);
 								WEAPON::SET_CURRENT_PED_WEAPON(iLocal_218, joaat("weapon_microsmg"), true);
-								TASK::TASK_DRIVE_BY(iLocal_218, PLAYER::PLAYER_PED_ID(), 0, 0f, 0f, 0f, 200f, 50, false, -753768974);
+								TASK::TASK_DRIVE_BY(iLocal_218, PLAYER::PLAYER_PED_ID(), 0, 0f, 0f, 0f, 200f, 50, false, joaat("FIRING_PATTERN_BURST_FIRE_DRIVEBY"));
 								bLocal_48 = true;
 								iLocal_254 = 1;
 							}
@@ -2605,7 +2605,7 @@ void func_60()//Position - 0x2BC0
 							PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_219, false);
 							WEAPON::GIVE_WEAPON_TO_PED(iLocal_219, joaat("weapon_microsmg"), 200, true, true);
 							WEAPON::SET_CURRENT_PED_WEAPON(iLocal_219, joaat("weapon_microsmg"), true);
-							TASK::TASK_DRIVE_BY(iLocal_219, PLAYER::PLAYER_PED_ID(), 0, 0f, 0f, 0f, 200f, 50, false, -753768974);
+							TASK::TASK_DRIVE_BY(iLocal_219, PLAYER::PLAYER_PED_ID(), 0, 0f, 0f, 0f, 200f, 50, false, joaat("FIRING_PATTERN_BURST_FIRE_DRIVEBY"));
 							bLocal_48 = true;
 							iLocal_254 = 1;
 						}
@@ -2623,7 +2623,7 @@ void func_60()//Position - 0x2BC0
 						{
 							WEAPON::GIVE_WEAPON_TO_PED(iLocal_218, joaat("weapon_microsmg"), 200, true, true);
 							WEAPON::SET_CURRENT_PED_WEAPON(iLocal_218, joaat("weapon_microsmg"), true);
-							TASK::TASK_DRIVE_BY(iLocal_218, PLAYER::PLAYER_PED_ID(), 0, 0f, 0f, 0f, 200f, 50, false, -753768974);
+							TASK::TASK_DRIVE_BY(iLocal_218, PLAYER::PLAYER_PED_ID(), 0, 0f, 0f, 0f, 200f, 50, false, joaat("FIRING_PATTERN_BURST_FIRE_DRIVEBY"));
 							bLocal_48 = true;
 							iLocal_254 = 1;
 						}
@@ -2635,7 +2635,7 @@ void func_60()//Position - 0x2BC0
 					{
 						WEAPON::GIVE_WEAPON_TO_PED(iLocal_219, joaat("weapon_microsmg"), 200, true, true);
 						WEAPON::SET_CURRENT_PED_WEAPON(iLocal_219, joaat("weapon_microsmg"), true);
-						TASK::TASK_DRIVE_BY(iLocal_219, PLAYER::PLAYER_PED_ID(), 0, 0f, 0f, 0f, 200f, 50, false, -753768974);
+						TASK::TASK_DRIVE_BY(iLocal_219, PLAYER::PLAYER_PED_ID(), 0, 0f, 0f, 0f, 200f, 50, false, joaat("FIRING_PATTERN_BURST_FIRE_DRIVEBY"));
 						bLocal_48 = true;
 						iLocal_254 = 1;
 					}

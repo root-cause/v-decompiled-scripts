@@ -9389,7 +9389,7 @@ void func_148()//Position - 0xA3C1
 					break;
 				
 				case 2:
-					if ((ENTITY::IS_ENTITY_AT_COORD(Local_69[iVar0 /*17*/], Local_69[iVar0 /*17*/].f_11, 0.5f, 0.5f, 1f, false, false, 0) || func_149(fVar3, fVar4)) || TASK::GET_SCRIPT_TASK_STATUS(Local_69[iVar0 /*17*/], 242628503) == 7)
+					if ((ENTITY::IS_ENTITY_AT_COORD(Local_69[iVar0 /*17*/], Local_69[iVar0 /*17*/].f_11, 0.5f, 0.5f, 1f, false, false, 0) || func_149(fVar3, fVar4)) || TASK::GET_SCRIPT_TASK_STATUS(Local_69[iVar0 /*17*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 7)
 					{
 						func_154(iVar0);
 					}
@@ -22458,7 +22458,7 @@ int func_340(int iParam0, int iParam1)//Position - 0x1C22A
 
 bool func_341()//Position - 0x1C6A9
 {
-	return DLC::IS_DLC_PRESENT(1199590110);
+	return DLC::IS_DLC_PRESENT(joaat("mpsum2"));
 }
 
 bool func_342()//Position - 0x1C6BA
@@ -25807,7 +25807,7 @@ int func_378(int iParam0, int iParam1)//Position - 0x210DB
 
 int func_379(int iParam0, int iParam1, int iParam2)//Position - 0x211C0
 {
-	if (!func_380() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_380() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}
@@ -127820,7 +127820,7 @@ void func_987(var uParam0, int iParam1)//Position - 0x9B4B5
 		func_989(uParam0, iParam1);
 		fVar0 = uParam0->f_10[iParam1 /*57*/].f_21;
 	}
-	uParam0->f_10[iParam1 /*57*/].f_1 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, uParam0->f_10[iParam1 /*57*/].f_6, uParam0->f_10[iParam1 /*57*/].f_9, fVar0, true, 2);
+	uParam0->f_10[iParam1 /*57*/].f_1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), uParam0->f_10[iParam1 /*57*/].f_6, uParam0->f_10[iParam1 /*57*/].f_9, fVar0, true, 2);
 	iVar20 = uParam0->f_10[iParam1 /*57*/].f_1;
 	if (CAM::DOES_CAM_EXIST(uParam0->f_10[iParam1 /*57*/].f_1))
 	{

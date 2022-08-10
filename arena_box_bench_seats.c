@@ -566,7 +566,7 @@ int func_9(int iParam0)//Position - 0x7AE
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;
@@ -1681,7 +1681,7 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 			}
 			func_119(uParam0, &sVar0);
 			func_117(uParam0, &sVar1, 0);
-			iVar7 = TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 2106541073);
+			iVar7 = TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD"));
 			Var8 = { PED::GET_ANIM_INITIAL_OFFSET_ROTATION(&sVar0, &sVar1, func_116(uParam0), func_115(uParam0), 0f, 2) };
 			fVar9 = Var8.f_2;
 			if (((iVar7 != 1 && iVar7 != 0) || func_101(ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()), fVar9, 5f)) || func_34(&(uParam0->f_281), 14))
@@ -1839,7 +1839,7 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 				}
 			}
 			iVar17 = NETWORK::NETWORK_GET_LOCAL_SCENE_FROM_NETWORK_ID(uParam0->f_281.f_1);
-			iVar18 = TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 1785177548);
+			iVar18 = TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"));
 			if (iVar18 == 0 || iVar18 == 1)
 			{
 				if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(iVar17))

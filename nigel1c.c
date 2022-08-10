@@ -32968,7 +32968,7 @@ void func_240()//Position - 0x22E00
 				break;
 			
 			case 4:
-				if ((TASK::GET_SCRIPT_TASK_STATUS(Local_444.f_1, 242628503) != 1 && VEHICLE::IS_VEHICLE_SEAT_FREE(Local_444.f_0, -1, false)) && !PED::IS_PED_FLEEING(Local_444.f_1))
+				if ((TASK::GET_SCRIPT_TASK_STATUS(Local_444.f_1, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && VEHICLE::IS_VEHICLE_SEAT_FREE(Local_444.f_0, -1, false)) && !PED::IS_PED_FLEEING(Local_444.f_1))
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_617);
 					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(Local_444.f_0, -2f, 2f, 0f), 2f, 20000, 0.25f, false, 40000f);
@@ -42920,7 +42920,7 @@ int func_391(int iParam0, int iParam1)//Position - 0x31C29
 
 bool func_392()//Position - 0x320A8
 {
-	return DLC::IS_DLC_PRESENT(1199590110);
+	return DLC::IS_DLC_PRESENT(joaat("mpsum2"));
 }
 
 bool func_393()//Position - 0x320B9
@@ -46471,7 +46471,7 @@ int func_431(int iParam0, int iParam1)//Position - 0x36E9C
 
 int func_432(int iParam0, int iParam1, int iParam2)//Position - 0x36F81
 {
-	if (!func_433() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_433() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}

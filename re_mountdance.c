@@ -251,7 +251,7 @@ void __EntryFunction__()//Position - 0x0
 				break;
 			
 			case 6:
-				if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_91, 713668775) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iLocal_91, 713668775) != 0)
+				if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_91, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iLocal_91, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 0)
 				{
 					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_91, false);
 					if (iLocal_93 == 1)

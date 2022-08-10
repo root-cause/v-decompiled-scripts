@@ -38344,7 +38344,7 @@ int func_260(int iParam0)//Position - 0x325C5
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;
@@ -40752,11 +40752,11 @@ void func_314(int iParam0, bool bParam1, int iParam2, int iParam3)//Position - 0
 					}
 					if (Global_100493.f_1392)
 					{
-						MONEY::_0x7E2F4E8F44CAF4E0(true);
+						MONEY::_NETWORK_SPENT_SALES_DISPLAY(true);
 					}
 					else
 					{
-						MONEY::_0x7E2F4E8F44CAF4E0(false);
+						MONEY::_NETWORK_SPENT_SALES_DISPLAY(false);
 					}
 					if (iParam2 == 1 && Global_100493.f_1389 == -61829581)
 					{
@@ -167581,7 +167581,7 @@ void func_1242()//Position - 0xC949C
 			{
 				if (!func_1265(ENTITY::GET_ENTITY_HEADING(Local_120.f_12), Local_120.f_12.f_15, 45f))
 				{
-					if (TASK::GET_SCRIPT_TASK_STATUS(Local_120.f_12, 1920390111) != 1 && TASK::GET_SCRIPT_TASK_STATUS(Local_120.f_12, 1920390111) != 0)
+					if (TASK::GET_SCRIPT_TASK_STATUS(Local_120.f_12, joaat("SCRIPT_TASK_ACHIEVE_HEADING")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(Local_120.f_12, joaat("SCRIPT_TASK_ACHIEVE_HEADING")) != 0)
 					{
 						TASK::TASK_ACHIEVE_HEADING(Local_120.f_12, Local_120.f_12.f_15, 0);
 					}
@@ -167669,7 +167669,7 @@ void func_1242()//Position - 0xC949C
 							}
 							else if (!bVar0)
 							{
-								if (TASK::GET_SCRIPT_TASK_STATUS(Local_120.f_12, 242628503) != 1 && TASK::GET_SCRIPT_TASK_STATUS(Local_120.f_12, 242628503) != 0)
+								if (TASK::GET_SCRIPT_TASK_STATUS(Local_120.f_12, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(Local_120.f_12, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 0)
 								{
 									TASK::TASK_PERFORM_SEQUENCE(Local_120.f_12, iLocal_105);
 								}

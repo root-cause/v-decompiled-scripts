@@ -36166,7 +36166,7 @@ int func_277(int iParam0, float fParam1, int iParam2)//Position - 0x2922E
 			else if (iParam2 == 1)
 			{
 				iVar0 = 0;
-				if (!func_281(PLAYER::PLAYER_PED_ID(), -828834893))
+				if (!func_281(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")))
 				{
 					TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
 				}
@@ -36987,7 +36987,7 @@ void func_294()//Position - 0x2A454
 		{
 			if (func_282(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false), 10.5f, 1, 1056964608, 0, 1, 0))
 			{
-				if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), -828834893) != 1)
+				if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")) != 1)
 				{
 					TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
 				}
@@ -41672,7 +41672,7 @@ int func_377(int iParam0, int iParam1)//Position - 0x2FF8E
 
 bool func_378()//Position - 0x30464
 {
-	return DLC::IS_DLC_PRESENT(1199590110);
+	return DLC::IS_DLC_PRESENT(joaat("mpsum2"));
 }
 
 bool func_379()//Position - 0x30475
@@ -45223,7 +45223,7 @@ int func_417(int iParam0, int iParam1)//Position - 0x3524A
 
 int func_418(int iParam0, int iParam1, int iParam2)//Position - 0x3532F
 {
-	if (!func_419() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_419() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}

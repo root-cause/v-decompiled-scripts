@@ -2120,7 +2120,7 @@ void func_47()//Position - 0x24C7
 	HUD::SET_TEXT_RENDER_ID(iLocal_176);
 	GRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(4);
 	GRAPHICS::SET_SCRIPT_GFX_DRAW_BEHIND_PAUSEMENU(true);
-	if (GRAPHICS::_IS_TV_PLAYLIST_ITEM_PLAYING(80996397))
+	if (GRAPHICS::_IS_TV_PLAYLIST_ITEM_PLAYING(joaat("MOVIE_ARTHOUSE")))
 	{
 		GRAPHICS::DRAW_TV_CHANNEL(0.5f, 0.5f, 0.7375f, 1f, 0f, 255, 255, 255, 255);
 	}
@@ -3000,7 +3000,7 @@ int func_62(int iParam0, bool bParam1, bool bParam2, int iParam3, bool bParam4, 
 				TASK::CLEAR_PED_TASKS_IMMEDIATELY(PLAYER::PLAYER_PED_ID());
 				Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_215 = 4;
 			}
-			else if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), -1794415470) == 7)
+			else if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_ENTER_VEHICLE")) == 7)
 			{
 				if (ENTITY::DOES_ENTITY_EXIST(Global_2667225.f_45.f_173) && VEHICLE::IS_VEHICLE_DRIVEABLE(Global_2667225.f_45.f_173, false))
 				{
@@ -67991,7 +67991,7 @@ int func_347(int iParam0, int iParam1, bool bParam2)//Position - 0x51AA6
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;
@@ -86704,7 +86704,7 @@ int func_486(int iParam0, int iParam1)//Position - 0x675E7
 
 int func_487(int iParam0, int iParam1, int iParam2)//Position - 0x679C6
 {
-	if (!func_488() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_488() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}
@@ -96698,7 +96698,7 @@ int func_678(int iParam0, int iParam1, bool bParam2, bool bParam3)//Position - 0
 			iVar0 = VEHICLE::GET_LAST_PED_IN_VEHICLE_SEAT(iParam0, iParam1);
 			if (!ENTITY::IS_ENTITY_DEAD(iVar0, false))
 			{
-				if (TASK::GET_SCRIPT_TASK_STATUS(iVar0, 451360105) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iVar0, -828834893) == 1)
+				if (TASK::GET_SCRIPT_TASK_STATUS(iVar0, joaat("SCRIPT_TASK_LEAVE_VEHICLE")) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iVar0, joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")) == 1)
 				{
 					if (SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(iParam0, false), ENTITY::GET_ENTITY_COORDS(iVar0, false)) < 10f)
 					{
@@ -116677,7 +116677,7 @@ int func_1119(int iParam0)//Position - 0x96C3A
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;

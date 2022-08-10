@@ -5332,7 +5332,7 @@ int func_103(int iParam0, int iParam1)//Position - 0x665E
 
 bool func_104()//Position - 0x6ADD
 {
-	return DLC::IS_DLC_PRESENT(1199590110);
+	return DLC::IS_DLC_PRESENT(joaat("mpsum2"));
 }
 
 bool func_105()//Position - 0x6AEE
@@ -9017,7 +9017,7 @@ int func_148(int iParam0, int iParam1)//Position - 0xBAE5
 
 int func_149(int iParam0, int iParam1, int iParam2)//Position - 0xBBCA
 {
-	if (!func_150() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_150() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}
@@ -12134,7 +12134,7 @@ void func_239()//Position - 0xFF7B
 			}
 			else if (func_241(iVar1) && ENTITY::DOES_ENTITY_BELONG_TO_THIS_SCRIPT(iVar1, true))
 			{
-				if (TASK::GET_SCRIPT_TASK_STATUS(iVar1, -1273030092) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iVar1, -1273030092) != 0)
+				if (TASK::GET_SCRIPT_TASK_STATUS(iVar1, joaat("SCRIPT_TASK_VEHICLE_MISSION")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iVar1, joaat("SCRIPT_TASK_VEHICLE_MISSION")) != 0)
 				{
 					TASK::TASK_VEHICLE_MISSION_COORS_TARGET(iVar1, PED::GET_VEHICLE_PED_IS_IN(iVar1, false), Local_108, 4, 20f, 786469, 2f, 10f, true);
 				}

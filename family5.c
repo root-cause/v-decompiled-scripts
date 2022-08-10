@@ -92915,7 +92915,7 @@ int func_415(int iParam0)//Position - 0x6C396
 					TASK::TASK_SYNCHRONIZED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_511, "missfam5_blackout", "vomit", 1000f, -2f, 0, 0, 1000f, 0);
 					PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(PLAYER::PLAYER_PED_ID(), false, false);
 					CAM::DESTROY_ALL_CAMS(false);
-					iLocal_495 = CAM::CREATE_CAMERA(964613260, true);
+					iLocal_495 = CAM::CREATE_CAMERA(joaat("DEFAULT_ANIMATED_CAMERA"), true);
 					CAM::PLAY_SYNCHRONIZED_CAM_ANIM(iLocal_495, iLocal_511, "vomit_cam", "missfam5_blackout");
 					HUD::DISPLAY_HUD(false);
 					HUD::DISPLAY_RADAR(false);
@@ -94573,7 +94573,7 @@ int func_455(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 									{
 										PED::REMOVE_PED_FROM_GROUP(iParam0->f_17[iVar0]);
 									}
-									if (TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], -1794415470) == 7 && !func_470(iParam0->f_17[iVar0], iParam0->f_21))
+									if (TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], joaat("SCRIPT_TASK_ENTER_VEHICLE")) == 7 && !func_470(iParam0->f_17[iVar0], iParam0->f_21))
 									{
 										if (!PED::IS_PED_RAGDOLL(iParam0->f_17[iVar0]) && !TASK::IS_PED_GETTING_UP(iParam0->f_17[iVar0]))
 										{
@@ -94852,7 +94852,7 @@ int func_455(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 							{
 								if (((!PED::IS_PED_RAGDOLL(iParam0->f_17[iVar0]) && !TASK::IS_PED_GETTING_UP(iParam0->f_17[iVar0])) && !PED::IS_PED_JUMPING_OUT_OF_VEHICLE(iParam0->f_17[iVar0])) && !PED::IS_PED_GETTING_INTO_A_VEHICLE(iParam0->f_17[iVar0]))
 								{
-									iVar11 = TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], -1794415470);
+									iVar11 = TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 									if (iVar11 == 7)
 									{
 										TASK::CLEAR_PED_TASKS(iParam0->f_17[iVar0]);
@@ -94910,7 +94910,7 @@ int func_455(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 										{
 											if (func_438(iParam0->f_17[iVar0]))
 											{
-												iVar11 = TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], 451360105);
+												iVar11 = TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], joaat("SCRIPT_TASK_LEAVE_VEHICLE"));
 												if (iVar11 == 7)
 												{
 													TASK::TASK_LEAVE_ANY_VEHICLE(iParam0->f_17[iVar0], 0, 0);
@@ -94928,7 +94928,7 @@ int func_455(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 											PED::REMOVE_PED_FROM_GROUP(iParam0->f_17[iVar0]);
 										}
 									}
-									iVar11 = TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], -1794415470);
+									iVar11 = TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 									if (iVar11 == 7 && !func_470(iParam0->f_17[iVar0], iParam10))
 									{
 										if (((((!PED::IS_PED_JUMPING_OUT_OF_VEHICLE(iParam0->f_17[iVar0]) && !PED::IS_PED_JUMPING_OUT_OF_VEHICLE(PLAYER::PLAYER_PED_ID())) && !func_460(iParam0->f_17[iVar0], 2f)) && !PED::IS_PED_RAGDOLL(iParam0->f_17[iVar0])) && !TASK::IS_PED_GETTING_UP(iParam0->f_17[iVar0])) && !FIRE::IS_ENTITY_ON_FIRE(iParam10))
@@ -94956,7 +94956,7 @@ int func_455(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 								{
 									if (!PED::IS_PED_RAGDOLL(iParam0->f_17[iVar0]) && !TASK::IS_PED_GETTING_UP(iParam0->f_17[iVar0]))
 									{
-										iVar11 = TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], -1794415470);
+										iVar11 = TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 										if (iVar11 == 7)
 										{
 											TASK::CLEAR_PED_TASKS(iParam0->f_17[iVar0]);
@@ -97009,7 +97009,7 @@ int func_510(int iParam0)//Position - 0x71712
 							TASK::TASK_SYNCHRONIZED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_512, "missfam5_flying", "falling_to_skydive", 1000f, -1000f, 0, 0, 1000f, 0);
 							PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(PLAYER::PLAYER_PED_ID(), true, false);
 							CAM::DESTROY_ALL_CAMS(false);
-							iLocal_497 = CAM::CREATE_CAMERA(964613260, true);
+							iLocal_497 = CAM::CREATE_CAMERA(joaat("DEFAULT_ANIMATED_CAMERA"), true);
 							CAM::PLAY_SYNCHRONIZED_CAM_ANIM(iLocal_497, iLocal_512, "falling_to_skydive_cam", "missfam5_flying");
 							CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
 						}
@@ -97105,7 +97105,7 @@ int func_510(int iParam0)//Position - 0x71712
 			}
 			if (iLocal_535 == 1)
 			{
-				iLocal_496 = CAM::CREATE_CAMERA(26379945, true);
+				iLocal_496 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 				CAM::SET_CAM_PARAMS(iLocal_496, -967.5765f, 309.46f, 65.55226f, -89.49915f, 0.013776f, 37.20456f, 40f, 0, 1, 1, 2);
 				CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
 				*iParam0++;
@@ -97459,7 +97459,7 @@ int func_517(int iParam0)//Position - 0x71FCE
 						TASK::TASK_SYNCHRONIZED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_512, "missfam5_flying", "falling_to_skydive", 1000f, -1000f, 0, 0, 1000f, 0);
 						PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(PLAYER::PLAYER_PED_ID(), false, false);
 						CAM::DESTROY_ALL_CAMS(false);
-						iLocal_497 = CAM::CREATE_CAMERA(964613260, true);
+						iLocal_497 = CAM::CREATE_CAMERA(joaat("DEFAULT_ANIMATED_CAMERA"), true);
 						CAM::PLAY_SYNCHRONIZED_CAM_ANIM(iLocal_497, iLocal_512, "falling_to_skydive_cam", "missfam5_flying");
 						CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
 					}
@@ -97624,7 +97624,7 @@ int func_520(int iParam0)//Position - 0x7249F
 									iLocal_513 = PED::CREATE_SYNCHRONIZED_SCENE(0f, 0f, 0f, 0f, 0f, 0f, 2);
 									PED::ATTACH_SYNCHRONIZED_SCENE_TO_ENTITY(iLocal_513, Local_157.f_0, 0);
 									CAM::DESTROY_ALL_CAMS(false);
-									iLocal_495 = CAM::CREATE_CAMERA(964613260, true);
+									iLocal_495 = CAM::CREATE_CAMERA(joaat("DEFAULT_ANIMATED_CAMERA"), true);
 									CAM::PLAY_SYNCHRONIZED_CAM_ANIM(iLocal_495, iLocal_513, "Push_Michael_Out_Cam", "missfam5mcs_6");
 									HUD::DISPLAY_HUD(false);
 									HUD::DISPLAY_RADAR(false);
@@ -97856,7 +97856,7 @@ int func_520(int iParam0)//Position - 0x7249F
 				{
 					if (!CAM::DOES_CAM_EXIST(iLocal_496))
 					{
-						iLocal_496 = CAM::CREATE_CAMERA(26379945, false);
+						iLocal_496 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), false);
 						CAM::SET_CAM_PARAMS(iLocal_496, -20.19449f, -219.7964f, 37.58039f, -81.94504f, -1.126925f, -11.82833f, 29f, 0, 1, 1, 2);
 					}
 					if (PED::GET_SYNCHRONIZED_SCENE_PHASE(iLocal_513) >= 0.99f)
@@ -99152,7 +99152,7 @@ int func_556(int iParam0)//Position - 0x743AC
 						iLocal_514 = PED::CREATE_SYNCHRONIZED_SCENE(ENTITY::GET_ENTITY_COORDS(Local_157.f_0, true), ENTITY::GET_ENTITY_ROTATION(Local_157.f_0, 2), 2);
 						PED::SET_SYNCHRONIZED_SCENE_HOLD_LAST_FRAME(iLocal_514, true);
 						CAM::DESTROY_ALL_CAMS(false);
-						iLocal_495 = CAM::CREATE_CAMERA(964613260, true);
+						iLocal_495 = CAM::CREATE_CAMERA(joaat("DEFAULT_ANIMATED_CAMERA"), true);
 						CAM::PLAY_SYNCHRONIZED_CAM_ANIM(iLocal_495, iLocal_514, "leadout_cam", "missfam5leadinoutmcs_5");
 						VEHICLE::SET_VEHICLE_DOOR_LATCHED(Local_157.f_0, 1, true, true, false);
 						ENTITY::PLAY_ENTITY_ANIM(Local_157.f_0, "leadout_car_door", "missfam5leadinoutmcs_5", 1000f, false, false, false, 0f, 262144);
@@ -100056,7 +100056,7 @@ int func_578(int iParam0)//Position - 0x75977
 				TASK::ASSISTED_MOVEMENT_REQUEST_ROUTE("f5_jimmy1");
 			}
 			VEHICLE::REQUEST_VEHICLE_ASSET(func_388(0, 0), 3);
-			if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 242628503) == 1)
+			if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 1)
 			{
 				if (iLocal_301 == 0)
 				{
@@ -100639,14 +100639,14 @@ void func_588(var uParam0)//Position - 0x76715
 				PED::SET_PED_CONFIG_FLAG(Local_146.f_0, 104, true);
 				if (VEHICLE::IS_VEHICLE_DRIVEABLE(Local_157.f_0, false))
 				{
-					if (TASK::GET_SCRIPT_TASK_STATUS(Local_146.f_0, -1794415470) != 1)
+					if (TASK::GET_SCRIPT_TASK_STATUS(Local_146.f_0, joaat("SCRIPT_TASK_ENTER_VEHICLE")) != 1)
 					{
 						func_352(Local_146.f_0, -805.4584f, 174.9825f, 75.7407f, 336.1902f, 0, 0, 0);
 						TASK::TASK_ENTER_VEHICLE(Local_146.f_0, Local_157.f_0, 60000, 0, 1f, 1, 0);
 						PED::FORCE_PED_MOTION_STATE(Local_146.f_0, joaat("MotionState_Walk"), false, 0, false);
 						if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 						{
-							if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 242628503) != 1)
+							if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1)
 							{
 								PED::SET_PED_STEALTH_MOVEMENT(PLAYER::PLAYER_PED_ID(), false, 0);
 								PED::SET_PED_USING_ACTION_MODE(PLAYER::PLAYER_PED_ID(), false, -1, 0);
@@ -100678,7 +100678,7 @@ void func_588(var uParam0)//Position - 0x76715
 						PED::SET_PED_RESET_FLAG(Local_146.f_0, 60, true);
 						if (PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_157.f_0, false) || PED::IS_PED_GETTING_INTO_A_VEHICLE(PLAYER::PLAYER_PED_ID()))
 						{
-							if (TASK::GET_SCRIPT_TASK_STATUS(Local_146.f_0, -1794415470) != 1)
+							if (TASK::GET_SCRIPT_TASK_STATUS(Local_146.f_0, joaat("SCRIPT_TASK_ENTER_VEHICLE")) != 1)
 							{
 								TASK::TASK_ENTER_VEHICLE(Local_146.f_0, Local_157.f_0, 60000, 0, 2f, 1, 0);
 							}
@@ -101948,7 +101948,7 @@ int func_615(int iParam0)//Position - 0x78D28
 			PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), false, 0);
 			if (!CAM::DOES_CAM_EXIST(iLocal_495))
 			{
-				iLocal_495 = CAM::CREATE_CAMERA(26379945, true);
+				iLocal_495 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 				CAM::SET_CAM_PARAMS(iLocal_495, Local_118, Local_120, fLocal_122, 0, 1, 1, 2);
 				CAM::SET_CAM_PARAMS(iLocal_495, Local_119, Local_121, fLocal_123, 25000, 1, 1, 2);
 				CAM::SHAKE_CAM(iLocal_495, "HAND_SHAKE", 0.125f);
@@ -102517,7 +102517,7 @@ int func_622(int iParam0, int iParam1)//Position - 0x799E8
 {
 	if (!PED::IS_PED_INJURED(iParam0))
 	{
-		if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, 242628503) == 1)
+		if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 1)
 		{
 			if (iParam1 < 2)
 			{
@@ -104957,7 +104957,7 @@ void func_658(struct<8> Param0, var uParam1, var uParam2, var uParam3, var uPara
 		case 4:
 			if (!CAM::DOES_CAM_EXIST(iLocal_77))
 			{
-				iLocal_77 = CAM::CREATE_CAMERA(26379945, true);
+				iLocal_77 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 				CAM::SHAKE_CAM(iLocal_77, "HAND_SHAKE", 0.1f);
 				CAM::SET_CAM_PARAMS(iLocal_77, Local_61[iParam50 /*3*/], Local_62[iParam50 /*3*/], fLocal_63[iParam50], 0, 1, 1, 2);
 				ENTITY::SET_ENTITY_VISIBLE(Param0.f_0, false, false);
@@ -105149,7 +105149,7 @@ int func_662(int iParam0)//Position - 0x7E29A
 			{
 				if (!CAM::DOES_CAM_EXIST(iLocal_495))
 				{
-					iLocal_495 = CAM::CREATE_CAMERA(26379945, true);
+					iLocal_495 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 					CAM::SET_CAM_PARAMS(iLocal_495, Local_118, Local_120, fLocal_122, 0, 1, 1, 2);
 					CAM::SHAKE_CAM(iLocal_495, "HAND_SHAKE", 0.125f);
 					CAM::SET_CAM_FAR_CLIP(iLocal_495, 500f);
@@ -105259,7 +105259,7 @@ int func_663(int iParam0)//Position - 0x7E719
 			PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), false, 0);
 			if (!CAM::DOES_CAM_EXIST(iLocal_495))
 			{
-				iLocal_495 = CAM::CREATE_CAMERA(26379945, true);
+				iLocal_495 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 				CAM::SET_CAM_PARAMS(iLocal_495, Local_112, Local_114, fLocal_116, 0, 1, 1, 2);
 				CAM::SET_CAM_PARAMS(iLocal_495, Local_113, Local_115, fLocal_117, 25000, 1, 1, 2);
 				CAM::SHAKE_CAM(iLocal_495, "HAND_SHAKE", 0.125f);
@@ -105497,7 +105497,7 @@ int func_664(int iParam0)//Position - 0x7EC26
 			{
 				if (!CAM::DOES_CAM_EXIST(iLocal_495))
 				{
-					iLocal_495 = CAM::CREATE_CAMERA(26379945, true);
+					iLocal_495 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 					CAM::SET_CAM_PARAMS(iLocal_495, Local_112, Local_114, fLocal_116, 0, 1, 1, 2);
 					CAM::SHAKE_CAM(iLocal_495, "HAND_SHAKE", 0.125f);
 					CAM::SET_CAM_FAR_CLIP(iLocal_495, 500f);
@@ -105599,7 +105599,7 @@ int func_665(int iParam0)//Position - 0x7F07F
 			PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), false, 0);
 			if (!CAM::DOES_CAM_EXIST(iLocal_495))
 			{
-				iLocal_495 = CAM::CREATE_CAMERA(26379945, true);
+				iLocal_495 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 				CAM::SET_CAM_PARAMS(iLocal_495, Local_106, Local_108, fLocal_110, 0, 1, 1, 2);
 				CAM::SET_CAM_PARAMS(iLocal_495, Local_107, Local_109, fLocal_111, 25000, 1, 1, 2);
 				CAM::SHAKE_CAM(iLocal_495, "HAND_SHAKE", 0.125f);
@@ -105960,7 +105960,7 @@ int func_666(int iParam0)//Position - 0x7F586
 			{
 				if (!CAM::DOES_CAM_EXIST(iLocal_495))
 				{
-					iLocal_495 = CAM::CREATE_CAMERA(26379945, true);
+					iLocal_495 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 					CAM::SET_CAM_PARAMS(iLocal_495, Local_106, Local_108, fLocal_110, 0, 1, 1, 2);
 					CAM::SHAKE_CAM(iLocal_495, "HAND_SHAKE", 0.125f);
 					CAM::SET_CAM_FAR_CLIP(iLocal_495, 500f);
@@ -109908,7 +109908,7 @@ int func_740(var uParam0)//Position - 0x8453B
 		case 0:
 			if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 			{
-				if ((TASK::GET_IS_TASK_ACTIVE(PLAYER::PLAYER_PED_ID(), 2) || TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 451360105) == 1) || TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), -828834893) == 1)
+				if ((TASK::GET_IS_TASK_ACTIVE(PLAYER::PLAYER_PED_ID(), 2) || TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_VEHICLE")) == 1) || TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")) == 1)
 				{
 					if (!PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 					{
@@ -109977,7 +109977,7 @@ int func_740(var uParam0)//Position - 0x8453B
 				ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(Local_223.f_0);
 				ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(Local_232.f_0);
 				CAM::DESTROY_ALL_CAMS(false);
-				iLocal_495 = CAM::CREATE_CAMERA(964613260, true);
+				iLocal_495 = CAM::CREATE_CAMERA(joaat("DEFAULT_ANIMATED_CAMERA"), true);
 				CAM::PLAY_SYNCHRONIZED_CAM_ANIM(iLocal_495, iLocal_515, "fam5_intro_cam", "missfam2mcs_intp1");
 				HUD::DISPLAY_HUD(false);
 				HUD::DISPLAY_RADAR(false);
@@ -111275,7 +111275,7 @@ int func_741(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 								}
 								if (!CAM::DOES_CAM_EXIST(iLocal_495))
 								{
-									iLocal_495 = CAM::CREATE_CAMERA(26379945, true);
+									iLocal_495 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 									CAM::SET_CAM_PARAMS(iLocal_495, -782.8024f, 187.4389f, 73.32661f, -3.540541f, 0f, 99.79994f, 39.3555f, 0, 1, 1, 2);
 									CAM::SHAKE_CAM(iLocal_495, "HAND_SHAKE", 0.125f);
 									CAM::SET_CAM_FAR_CLIP(iLocal_495, 500f);
@@ -114214,7 +114214,7 @@ int func_770(int iParam0, int iParam1)//Position - 0x8A8E5
 
 bool func_771()//Position - 0x8AD64
 {
-	return DLC::IS_DLC_PRESENT(1199590110);
+	return DLC::IS_DLC_PRESENT(joaat("mpsum2"));
 }
 
 bool func_772()//Position - 0x8AD75
@@ -114918,7 +114918,7 @@ int func_791(int iParam0, int iParam1)//Position - 0x8BB11
 
 int func_792(int iParam0, int iParam1, int iParam2)//Position - 0x8BBF6
 {
-	if (!func_793() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_793() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}

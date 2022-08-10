@@ -1686,9 +1686,9 @@ void __EntryFunction__()//Position - 0x0
 			{
 				if (HUD::GET_PAUSE_MENU_STATE() == 15)
 				{
-					if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(1344549371))
+					if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("DisableSpectateScript")))
 					{
-						HUD::PAUSE_MENU_ACTIVATE_CONTEXT(1344549371);
+						HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("DisableSpectateScript"));
 					}
 				}
 			}
@@ -3036,7 +3036,7 @@ void __EntryFunction__()//Position - 0x0
 							break;
 						
 						case 1:
-							if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()) && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 242628503) == 7)
+							if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()) && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 7)
 							{
 								iVar30 = 0;
 							}
@@ -7963,7 +7963,7 @@ int func_124(int* iParam0, var uParam1, var uParam2, bool bParam3, int iParam4)/
 						{
 							if (!CAM::DOES_CAM_EXIST(*uParam1))
 							{
-								*uParam1 = CAM::CREATE_CAMERA(26379945, true);
+								*uParam1 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 							}
 							CAM::STOP_CAM_POINTING(*uParam1);
 							if (!func_88(PLAYER::PLAYER_ID()) && !PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
@@ -10376,7 +10376,7 @@ int func_162(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0xC
 		}
 		if (!CAM::DOES_CAM_EXIST(*uParam1))
 		{
-			*uParam1 = CAM::CREATE_CAMERA(26379945, true);
+			*uParam1 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 		}
 		CAM::STOP_CAM_POINTING(*uParam1);
 		CAM::SET_CAM_COORD(*uParam1, Var1);
@@ -51166,33 +51166,33 @@ void func_454(int iParam0, var uParam1, bool bParam2)//Position - 0x3A704
 		case 0:
 			if (bParam2)
 			{
-				*uParam1 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1118.088f, -3159.119f, -36.3843f, -3.1143f, 0f, 45.6699f, 47.0142f, false, 2);
+				*uParam1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1118.088f, -3159.119f, -36.3843f, -3.1143f, 0f, 45.6699f, 47.0142f, false, 2);
 			}
 			else
 			{
-				*uParam1 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1118.082f, -3158.723f, -36.3498f, -5.6008f, 0f, 45.8057f, 47.0142f, false, 2);
+				*uParam1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1118.082f, -3158.723f, -36.3498f, -5.6008f, 0f, 45.8057f, 47.0142f, false, 2);
 			}
 			break;
 		
 		case 1:
 			if (bParam2)
 			{
-				*uParam1 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1002.847f, -3164.953f, -33.4244f, -3.567f, 0f, 112.2157f, 40.3693f, false, 2);
+				*uParam1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1002.847f, -3164.953f, -33.4244f, -3.567f, 0f, 112.2157f, 40.3693f, false, 2);
 			}
 			else
 			{
-				*uParam1 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1002.333f, -3164.718f, -33.4356f, -1.6441f, 0f, 122.4329f, 40.3693f, false, 2);
+				*uParam1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1002.333f, -3164.718f, -33.4356f, -1.6441f, 0f, 122.4329f, 40.3693f, false, 2);
 			}
 			break;
 		
 		case 2:
 			if (bParam2)
 			{
-				*uParam1 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 2710.467f, -359.8044f, -54.4121f, -3.567f, 0f, 112.2157f, 40.3693f, false, 2);
+				*uParam1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 2710.467f, -359.8044f, -54.4121f, -3.567f, 0f, 112.2157f, 40.3693f, false, 2);
 			}
 			else
 			{
-				*uParam1 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 2709.953f, -359.5693f, -54.4233f, -1.6441f, 0f, 122.4329f, 40.3693f, false, 2);
+				*uParam1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 2709.953f, -359.5693f, -54.4233f, -1.6441f, 0f, 122.4329f, 40.3693f, false, 2);
 			}
 			break;
 	}
@@ -64367,15 +64367,15 @@ void func_705(struct<3> Param0, float fParam1)//Position - 0x4909F
 	Var5 = { 0.8351f, -0.0048f, (fParam1 - 186.5073f) };
 	Var15 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Param0, fParam1, Var16) };
 	Var6 = { 0.8351f, -0.0048f, (fParam1 - 186.5073f) };
-	iLocal_191 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, Var2, fVar7, false, 2);
-	iLocal_192 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var1, Var3, fVar7, false, 2);
-	iLocal_193 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var4, Var5, 65f, false, 2);
-	iLocal_194 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var15, Var6, 65f, false, 2);
-	iLocal_195 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 0f, 0f, 0f, 0f, 0f, 0f, 65f, false, 2);
-	iLocal_196 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 0f, 0f, 0f, 0f, 0f, 0f, 65f, false, 2);
-	iLocal_198 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 0f, 0f, 0f, 0f, 0f, 0f, 65f, false, 2);
-	iLocal_199 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 0f, 0f, 0f, 0f, 0f, 0f, 65f, false, 2);
-	iLocal_197 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1996.235f, 3048.456f, 48.0237f, -3.4831f, 0.0223f, 60.6925f, 38.1f, false, 2);
+	iLocal_191 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, Var2, fVar7, false, 2);
+	iLocal_192 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var1, Var3, fVar7, false, 2);
+	iLocal_193 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var4, Var5, 65f, false, 2);
+	iLocal_194 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var15, Var6, 65f, false, 2);
+	iLocal_195 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 0f, 0f, 0f, 0f, 0f, 0f, 65f, false, 2);
+	iLocal_196 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 0f, 0f, 0f, 0f, 0f, 0f, 65f, false, 2);
+	iLocal_198 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 0f, 0f, 0f, 0f, 0f, 0f, 65f, false, 2);
+	iLocal_199 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 0f, 0f, 0f, 0f, 0f, 0f, 65f, false, 2);
+	iLocal_197 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1996.235f, 3048.456f, 48.0237f, -3.4831f, 0.0223f, 60.6925f, 38.1f, false, 2);
 	CAM::SET_CAM_FOV(iLocal_193, 43.35f);
 	CAM::SET_CAM_FOV(iLocal_194, 42.35f);
 	CAM::SHAKE_CAM(iLocal_193, "HAND_SHAKE", 0.1f);
@@ -64727,7 +64727,7 @@ int func_711(int iParam0)//Position - 0x4985C
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;

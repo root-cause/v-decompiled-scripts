@@ -2453,7 +2453,7 @@ void func_8(var uParam0)//Position - 0x260
 			func_26(uParam0);
 			func_41(uParam0, &sVar0);
 			func_40(uParam0, &sVar1);
-			iVar6 = TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 2106541073);
+			iVar6 = TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD"));
 			Var7 = { PED::GET_ANIM_INITIAL_OFFSET_ROTATION(&sVar0, &sVar1, func_39(uParam0), func_38(uParam0), 0f, 2) };
 			fVar8 = Var7.f_2;
 			if ((iVar6 != 1 && iVar6 != 0) || func_25(ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()), fVar8, 2f))
@@ -2531,7 +2531,7 @@ void func_8(var uParam0)//Position - 0x260
 		
 		case 8:
 			iVar10 = NETWORK::NETWORK_GET_LOCAL_SCENE_FROM_NETWORK_ID(uParam0->f_8);
-			iVar11 = TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 1785177548);
+			iVar11 = TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"));
 			if (iVar11 == 0 || iVar11 == 1)
 			{
 				if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(iVar10))

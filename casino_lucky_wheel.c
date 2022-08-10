@@ -1064,11 +1064,11 @@ int func_45(int iParam0, var uParam1)//Position - 0xE3C
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = -850297695;
+			iVar0 = joaat("GTAO_CASINO_SLOTS");
 			break;
 		
 		case 1:
-			iVar0 = 1316161270;
+			iVar0 = joaat("GTAO_CASINO_BLACKJACK");
 			break;
 		
 		case 2:
@@ -1076,15 +1076,15 @@ int func_45(int iParam0, var uParam1)//Position - 0xE3C
 			break;
 		
 		case 5:
-			iVar0 = 1045499606;
+			iVar0 = joaat("GTAO_CASINO_INSIDETRACK");
 			break;
 		
 		case 3:
-			iVar0 = 1697066635;
+			iVar0 = joaat("GTAO_CASINO_ROULETTE");
 			break;
 		
 		case 4:
-			iVar0 = 1144169546;
+			iVar0 = joaat("GTAO_CASINO_LUCKYWHEEL");
 			break;
 	}
 	if (!MONEY::_NETWORK_CASINO_CAN_USE_GAMBLING_TYPE(iVar0))
@@ -1457,7 +1457,7 @@ void func_74(int iParam0)//Position - 0x1400
 					MISC::SET_BIT(&(Local_112.f_1), 1);
 				}
 			}
-			else if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 713668775) != 1 && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 713668775) != 0)
+			else if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 0)
 			{
 				if (BitTest(Local_112.f_1, 1))
 				{
@@ -1465,7 +1465,7 @@ void func_74(int iParam0)//Position - 0x1400
 				}
 			}
 		}
-		else if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 713668775) != 1 && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 713668775) != 0)
+		else if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 0)
 		{
 			if (BitTest(Local_112.f_1, 1))
 			{
@@ -1473,7 +1473,7 @@ void func_74(int iParam0)//Position - 0x1400
 			}
 		}
 	}
-	else if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 713668775) != 1 && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 713668775) != 0)
+	else if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 0)
 	{
 		if (BitTest(Local_112.f_1, 1))
 		{
@@ -1599,7 +1599,7 @@ int func_84()//Position - 0x17A0
 	}
 	if (Local_112.f_45 == 4)
 	{
-		if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 2106541073) != 1 && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 2106541073) != 0)
+		if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD")) != 0)
 		{
 			return 1;
 		}
@@ -2685,7 +2685,7 @@ int func_119(int iParam0)//Position - 0x2AD0
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;
@@ -58463,7 +58463,7 @@ void func_835()//Position - 0x4123F
 			STREAMING::REQUEST_ANIM_DICT(Local_112.f_23);
 			if (STREAMING::HAS_ANIM_DICT_LOADED(Local_112.f_23))
 			{
-				if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 2106541073) != 1 && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 2106541073) != 0)
+				if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD")) != 0)
 				{
 					TASK::TASK_GO_STRAIGHT_TO_COORD(PLAYER::PLAYER_PED_ID(), func_816(1), 1f, 5000, func_811(1), 0.001f);
 					func_71(&(Local_112.f_31), 0, 0);
@@ -58666,7 +58666,7 @@ bool func_846(int iParam0)//Position - 0x41647
 
 void func_847(var uParam0)//Position - 0x41658
 {
-	if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 2106541073) != 1)
+	if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD")) != 1)
 	{
 		if (PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID()))
 		{

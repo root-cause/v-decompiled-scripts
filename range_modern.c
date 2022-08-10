@@ -111650,7 +111650,7 @@ int func_844(var uParam0, var uParam1, var uParam2)//Position - 0x8BCB6
 		PED::CLEAR_PED_PROP(iLocal_67, 0);
 		return 1;
 	}
-	if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_67, 242628503) != 1)
+	if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_67, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1)
 	{
 		if (uParam0->f_22 == 0)
 		{

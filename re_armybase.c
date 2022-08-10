@@ -800,7 +800,7 @@ void func_4()//Position - 0x950
 		{
 			if (!iLocal_243 && iLocal_244)
 			{
-				if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_226[0], 242628503) != 1)
+				if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_226[0], joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1)
 				{
 					TASK::CLEAR_PED_TASKS(iLocal_226[0]);
 					TASK::CLEAR_SEQUENCE_TASK(&iLocal_256);
@@ -821,7 +821,7 @@ void func_4()//Position - 0x950
 		{
 			if (!iLocal_245 && iLocal_246)
 			{
-				if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_226[1], 242628503) != 1)
+				if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_226[1], joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1)
 				{
 					TASK::CLEAR_PED_TASKS(iLocal_226[1]);
 					TASK::CLEAR_SEQUENCE_TASK(&iLocal_257);
@@ -891,7 +891,7 @@ void func_4()//Position - 0x950
 						{
 							if (!ENTITY::IS_ENTITY_DEAD(iLocal_226[0], false))
 							{
-								if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_226[0], 1227113341) != 1)
+								if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_226[0], joaat("SCRIPT_TASK_GO_TO_ENTITY")) != 1)
 								{
 									TASK::TASK_AIM_GUN_AT_ENTITY(iLocal_226[0], PLAYER::PLAYER_PED_ID(), -1, false);
 									if (func_9(&uLocal_50, "ARMYAUD", "ARMY_WRN1a", 9, 0, 0, 0))
@@ -919,7 +919,7 @@ void func_4()//Position - 0x950
 			{
 				if (PED::IS_PED_SHOOTING(PLAYER::PLAYER_PED_ID()) || (PLAYER::IS_PLAYER_FREE_AIMING_AT_ENTITY(PLAYER::PLAYER_ID(), iLocal_226[0]) || PLAYER::IS_PLAYER_TARGETTING_ENTITY(PLAYER::PLAYER_ID(), iLocal_226[0])))
 				{
-					if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_226[0], 167901368) != 1)
+					if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_226[0], joaat("SCRIPT_TASK_SHOOT_AT_ENTITY")) != 1)
 					{
 						TASK::TASK_SHOOT_AT_ENTITY(iLocal_226[0], PLAYER::PLAYER_PED_ID(), -1, 0);
 						if (PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID()) < 5)
@@ -985,7 +985,7 @@ void func_4()//Position - 0x950
 						{
 							if (!ENTITY::IS_ENTITY_DEAD(iLocal_226[1], false))
 							{
-								if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_226[1], 1227113341) != 1)
+								if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_226[1], joaat("SCRIPT_TASK_GO_TO_ENTITY")) != 1)
 								{
 									TASK::TASK_AIM_GUN_AT_ENTITY(iLocal_226[1], PLAYER::PLAYER_PED_ID(), -1, false);
 									if (func_9(&uLocal_50, "ARMYAUD", "ARMY_WRN2a", 9, 0, 0, 0))
@@ -1013,7 +1013,7 @@ void func_4()//Position - 0x950
 			{
 				if (PED::IS_PED_SHOOTING(PLAYER::PLAYER_PED_ID()) || (PLAYER::IS_PLAYER_FREE_AIMING_AT_ENTITY(PLAYER::PLAYER_ID(), iLocal_226[1]) || PLAYER::IS_PLAYER_TARGETTING_ENTITY(PLAYER::PLAYER_ID(), iLocal_226[1])))
 				{
-					if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_226[1], 167901368) != 1)
+					if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_226[1], joaat("SCRIPT_TASK_SHOOT_AT_ENTITY")) != 1)
 					{
 						TASK::TASK_SHOOT_AT_ENTITY(iLocal_226[1], PLAYER::PLAYER_PED_ID(), -1, 0);
 						if (PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID()) < 5)
@@ -2093,7 +2093,7 @@ void func_43()//Position - 0x23FB
 			{
 				if (ENTITY::DOES_ENTITY_EXIST(iLocal_265[iVar1]) && !ENTITY::IS_ENTITY_DEAD(iLocal_265[iVar1], false))
 				{
-					if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_265[iVar1], -1817882002) != 1)
+					if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_265[iVar1], joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD")) != 1)
 					{
 						PED::SET_PED_COMBAT_ATTRIBUTES(iLocal_265[iVar1], 1, false);
 					}

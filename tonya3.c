@@ -39922,7 +39922,7 @@ int func_307(int iParam0, int iParam1, char* sParam2)//Position - 0x2CEDC
 						func_313(&iLocal_485);
 						if (!ENTITY::IS_ENTITY_DEAD(Local_605[iParam1 /*20*/], false))
 						{
-							if (TASK::GET_SCRIPT_TASK_STATUS(Local_605[iParam1 /*20*/], -875674219) != 1)
+							if (TASK::GET_SCRIPT_TASK_STATUS(Local_605[iParam1 /*20*/], joaat("SCRIPT_TASK_TURN_PED_TO_FACE_ENTITY")) != 1)
 							{
 								TASK::TASK_TURN_PED_TO_FACE_ENTITY(Local_605[iParam1 /*20*/], PLAYER::PLAYER_PED_ID(), -1);
 							}
@@ -40060,7 +40060,7 @@ int func_307(int iParam0, int iParam1, char* sParam2)//Position - 0x2CEDC
 				}
 				if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("tonya4")) == 1)
 				{
-					if (TASK::GET_SCRIPT_TASK_STATUS(Local_605[0 /*20*/], -1794415470) != 1)
+					if (TASK::GET_SCRIPT_TASK_STATUS(Local_605[0 /*20*/], joaat("SCRIPT_TASK_ENTER_VEHICLE")) != 1)
 					{
 						TASK::TASK_ENTER_VEHICLE(Local_605[iParam1 /*20*/], iLocal_714, -1, 0, 2f, 1048577, 0);
 					}
@@ -52380,7 +52380,7 @@ int func_507()//Position - 0x3E6D4
 					{
 						if (!func_530())
 						{
-							if (TASK::GET_SCRIPT_TASK_STATUS(Local_605[0 /*20*/], 242628503) == 1)
+							if (TASK::GET_SCRIPT_TASK_STATUS(Local_605[0 /*20*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 1)
 							{
 								if (TASK::GET_SEQUENCE_PROGRESS(Local_605[0 /*20*/]) == 2)
 								{
@@ -52619,7 +52619,7 @@ int func_510()//Position - 0x3F0C8
 			{
 				if (!ENTITY::IS_ENTITY_DEAD(Local_605[0 /*20*/], false))
 				{
-					if (TASK::GET_SCRIPT_TASK_STATUS(Local_605[0 /*20*/], -875674219) != 1)
+					if (TASK::GET_SCRIPT_TASK_STATUS(Local_605[0 /*20*/], joaat("SCRIPT_TASK_TURN_PED_TO_FACE_ENTITY")) != 1)
 					{
 						TASK::TASK_TURN_PED_TO_FACE_ENTITY(Local_605[0 /*20*/], Local_605[0 /*20*/].f_1, 0);
 					}
@@ -55923,7 +55923,7 @@ int func_575(int iParam0, int iParam1)//Position - 0x4420B
 
 int func_576(int iParam0, int iParam1, int iParam2)//Position - 0x445EA
 {
-	if (!func_577() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_577() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}

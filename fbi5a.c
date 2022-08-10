@@ -91019,7 +91019,7 @@ void func_376()//Position - 0x64AEF
 			}
 			if (!ENTITY::IS_ENTITY_AT_COORD(Local_59.f_0, 3564.671f, 3691.803f, 27.123f, 1.5f, 1.5f, 2f, false, true, 0))
 			{
-				if (func_384(Local_59.f_0, 242628503, -2, 1))
+				if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 					TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD(0, 3564.671f, 3691.803f, 27.123f, 3568.74f, 3694.13f, 28.91f, 2f, false, 0.5f, 4f, true, 0, false, joaat("FIRING_PATTERN_FULL_AUTO"));
@@ -91085,7 +91085,7 @@ void func_376()//Position - 0x64AEF
 		case 7:
 			if (!PED::IS_PED_IN_COVER(Local_59.f_0, false))
 			{
-				if (func_384(Local_59.f_0, 242628503, -2, 1))
+				if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 				{
 					TASK::CLEAR_PED_TASKS(Local_59.f_0);
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
@@ -91131,7 +91131,7 @@ void func_376()//Position - 0x64AEF
 		case 9:
 			if (!ENTITY::IS_ENTITY_AT_COORD(Local_59.f_0, 3587.516f, 3682.903f, 26.6235f, 1.5f, 1.5f, 2f, false, true, 0))
 			{
-				if (func_384(Local_59.f_0, 242628503, -2, 1))
+				if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 				{
 					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_59.f_0, true);
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
@@ -91167,7 +91167,7 @@ void func_376()//Position - 0x64AEF
 		case 11:
 			if (!ENTITY::IS_ENTITY_AT_COORD(Local_59.f_0, 3595.519f, 3684.045f, 26.6235f, 1.5f, 1.5f, 2f, false, true, 0))
 			{
-				if (func_384(Local_59.f_0, 242628503, -2, 1))
+				if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 					TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD(0, 3595.519f, 3684.045f, 26.6235f, 3596.63f, 3688.09f, 29.44f, 2f, false, 0.5f, 4f, true, 0, false, joaat("FIRING_PATTERN_FULL_AUTO"));
@@ -91177,7 +91177,7 @@ void func_376()//Position - 0x64AEF
 					TASK::CLEAR_SEQUENCE_TASK(&iLocal_672);
 				}
 			}
-			else if (func_384(Local_59.f_0, 242628503, -2, 1))
+			else if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 			{
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 				TASK::TASK_AIM_GUN_AT_COORD(0, 3596.63f, 3688.09f, 29.44f, 7000, false, false);
@@ -91204,7 +91204,7 @@ void func_376()//Position - 0x64AEF
 		case 12:
 			if (!ENTITY::IS_ENTITY_AT_COORD(Local_59.f_0, 3590.458f, 3693.081f, 27.8234f, 1.5f, 1.5f, 2f, false, true, 0))
 			{
-				if (func_384(Local_59.f_0, 242628503, -2, 1))
+				if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 				{
 					TASK::CLEAR_PED_TASKS(Local_59.f_0);
 					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_59.f_0, true);
@@ -91262,7 +91262,7 @@ void func_376()//Position - 0x64AEF
 				}
 				else if (!ENTITY::IS_ENTITY_AT_COORD(Local_59.f_0, 3595.5f, 3716.6f, 29.7f, 1f, 1f, 2f, false, true, 0))
 				{
-					if (func_384(Local_59.f_0, 242628503, 1, 1))
+					if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1))
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 						TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD(0, 3595.5f, 3716.6f, 29.7f, 3596.2f, 3725.1f, 29.8f, 2f, false, 0.5f, 0.5f, true, 512, false, joaat("FIRING_PATTERN_FULL_AUTO"));
@@ -91278,7 +91278,7 @@ void func_376()//Position - 0x64AEF
 			{
 				if (!ENTITY::IS_ENTITY_AT_COORD(Local_59.f_0, Local_59.f_9, 0.5f, 0.5f, 1.6f, false, true, 0))
 				{
-					if (func_384(Local_59.f_0, 242628503, 1, 1))
+					if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1))
 					{
 						PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_59.f_0, true);
 						TASK::CLEAR_PED_TASKS(Local_59.f_0);
@@ -91518,7 +91518,7 @@ void func_376()//Position - 0x64AEF
 		case 21:
 			if (!ENTITY::IS_ENTITY_AT_COORD(Local_59.f_0, 3619.311f, 3734.525f, 27.6895f, 1f, 1f, 2f, false, true, 0))
 			{
-				if (func_384(Local_59.f_0, 242628503, -2, 1))
+				if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 					TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD(0, 3619.311f, 3734.525f, 27.6895f, 3630.2f, 3751.8f, 30.3f, 2f, false, 0.5f, 0.5f, true, 0, false, joaat("FIRING_PATTERN_FULL_AUTO"));
@@ -91527,7 +91527,7 @@ void func_376()//Position - 0x64AEF
 					TASK::CLEAR_SEQUENCE_TASK(&iLocal_672);
 				}
 			}
-			else if (func_384(Local_59.f_0, 242628503, -2, 1))
+			else if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 			{
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 				TASK::TASK_AIM_GUN_AT_COORD(0, 3630.2f, 3751.8f, 30.3f, 7000, false, false);
@@ -91550,7 +91550,7 @@ void func_376()//Position - 0x64AEF
 		case 102:
 			if (!ENTITY::IS_ENTITY_AT_COORD(Local_59.f_0, 3629.755f, 3746.942f, 27.6062f, 1f, 1f, 1.6f, false, true, 0))
 			{
-				if (func_384(Local_59.f_0, 242628503, 1, 1))
+				if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1))
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 3629.755f, 3746.942f, 27.6062f, -1f, 20000, 0.25f, false, 40000f);
@@ -91593,7 +91593,7 @@ int func_377(int iParam0, var uParam1, int iParam2, struct<3> Param3, struct<3> 
 		{
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(*iParam0, false);
 			PED::SET_PED_SPHERE_DEFENSIVE_AREA(*iParam0, Param4, fParam5, false, false);
-			if (TASK::GET_SCRIPT_TASK_STATUS(*iParam0, -1442466670) != 1)
+			if (TASK::GET_SCRIPT_TASK_STATUS(*iParam0, joaat("SCRIPT_TASK_COMBAT_HATED_TARGETS_AROUND_PED")) != 1)
 			{
 				TASK::TASK_COMBAT_HATED_TARGETS_AROUND_PED(*iParam0, 100f, 0);
 			}
@@ -91640,7 +91640,7 @@ void func_379(int iParam0, var uParam1, struct<3> Param2, struct<3> Param3, int 
 			Param2 = { Param2 };
 			if (!ENTITY::IS_ENTITY_AT_COORD(*iParam0, Param2, 0.5f, 0.5f, 1.6f, false, true, 0))
 			{
-				if (func_384(*iParam0, 242628503, 1, 1))
+				if (func_384(*iParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1))
 				{
 					if (ENTITY::DOES_ENTITY_EXIST(iParam4))
 					{
@@ -91695,13 +91695,13 @@ int func_380(int iParam0, int iParam1, int iParam2, struct<3> Param3, int iParam
 			}
 			if (ENTITY::IS_ENTITY_AT_COORD(*iParam1, Param3, 1.5f, 1.5f, 2f, false, true, 0))
 			{
-				if ((((!PED::IS_PED_IN_COVER(*iParam1, false) && !PED::IS_PED_GOING_INTO_COVER(*iParam1)) && TASK::GET_SCRIPT_TASK_STATUS(*iParam1, -1959848946) != 1) && TASK::GET_SCRIPT_TASK_STATUS(*iParam1, -1716541277) != 1) && TASK::GET_SCRIPT_TASK_STATUS(*iParam1, 1812035420) != 1)
+				if ((((!PED::IS_PED_IN_COVER(*iParam1, false) && !PED::IS_PED_GOING_INTO_COVER(*iParam1)) && TASK::GET_SCRIPT_TASK_STATUS(*iParam1, joaat("SCRIPT_TASK_PUT_PED_DIRECTLY_INTO_COVER")) != 1) && TASK::GET_SCRIPT_TASK_STATUS(*iParam1, joaat("SCRIPT_TASK_SEEK_COVER_TO_COVER_POINT")) != 1) && TASK::GET_SCRIPT_TASK_STATUS(*iParam1, joaat("SCRIPT_TASK_SEEK_COVER_TO_COORDS")) != 1)
 				{
 					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(*iParam1, true);
 					TASK::TASK_PUT_PED_DIRECTLY_INTO_COVER(*iParam1, Param3, -1, false, fParam6, false, false, iParam4, true);
 				}
 			}
-			else if (TASK::GET_SCRIPT_TASK_STATUS(*iParam1, 713668775) != 1)
+			else if (TASK::GET_SCRIPT_TASK_STATUS(*iParam1, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1)
 			{
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(*iParam1, true);
 				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*iParam1, Param3, 2f, -1, 0.2f, false, 40000f);
@@ -91879,7 +91879,7 @@ void func_387()//Position - 0x66A18
 		case 3:
 			if (!ENTITY::IS_ENTITY_AT_COORD(Local_55.f_0, 3566.532f, 3697.667f, 27.123f, 1.5f, 1.5f, 2f, false, true, 0))
 			{
-				if (func_384(Local_55.f_0, 242628503, 1, 1))
+				if (func_384(Local_55.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1))
 				{
 					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_55.f_0, true);
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
@@ -91928,7 +91928,7 @@ void func_387()//Position - 0x66A18
 			}
 			if (!ENTITY::IS_ENTITY_AT_COORD(Local_55.f_0, 3583.783f, 3688.108f, 26.1239f, 1.5f, 1.5f, 2f, false, true, 0))
 			{
-				if (func_384(Local_55.f_0, 242628503, -2, 1))
+				if (func_384(Local_55.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 					TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD(0, 3583.783f, 3688.108f, 26.1239f, 3593.15f, 3684.12f, 28.59f, 2f, false, 0.5f, 4f, true, 0, false, joaat("FIRING_PATTERN_FULL_AUTO"));
@@ -92138,7 +92138,7 @@ void func_387()//Position - 0x66A18
 						TASK::TASK_COMBAT_HATED_TARGETS_AROUND_PED(Local_55.f_0, 100f, 0);
 						iLocal_541 = 14;
 					}
-					else if (func_384(Local_55.f_0, 242628503, -2, 1))
+					else if (func_384(Local_55.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_55.f_9, 2f, -1, 0.5f, false, 40000f);
@@ -92301,7 +92301,7 @@ void func_387()//Position - 0x66A18
 			}
 			else if (!ENTITY::IS_ENTITY_AT_COORD(Local_55.f_0, 3604.569f, 3721.459f, 28.6896f, 1f, 1f, 2f, false, true, 0))
 			{
-				if (func_384(Local_55.f_0, 242628503, 1, 1))
+				if (func_384(Local_55.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1))
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 					TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD(0, 3604.569f, 3721.459f, 28.6896f, 3601.8f, 3719.5f, 30.7f, 2f, false, 0.5f, 0.5f, false, 0, false, joaat("FIRING_PATTERN_FULL_AUTO"));
@@ -92418,7 +92418,7 @@ void func_387()//Position - 0x66A18
 					func_343("fbi5a_dcome", 1);
 				}
 			}
-			if (func_384(Local_55.f_0, 242628503, -2, 1))
+			if (func_384(Local_55.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 			{
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_55.f_0, false);
 				PED::SET_PED_SPHERE_DEFENSIVE_AREA(Local_55.f_0, 3610.781f, 3729.353f, 28.6908f, 1f, false, false);
@@ -92448,7 +92448,7 @@ void func_387()//Position - 0x66A18
 		case 22:
 			if (!ENTITY::IS_ENTITY_AT_COORD(Local_55.f_0, 3626.235f, 3762.163f, 27.6171f, 1.5f, 1.5f, 2f, false, true, 0))
 			{
-				if (func_384(Local_55.f_0, 242628503, -2, 1))
+				if (func_384(Local_55.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 					TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD(0, 3626.235f, 3762.163f, 27.6171f, 3609.5f, 3800.3f, 30.9f, 2f, false, 0.5f, 0.5f, true, 0, false, joaat("FIRING_PATTERN_FULL_AUTO"));
@@ -92457,7 +92457,7 @@ void func_387()//Position - 0x66A18
 					TASK::CLEAR_SEQUENCE_TASK(&iLocal_672);
 				}
 			}
-			else if (func_384(Local_55.f_0, 242628503, -2, 1))
+			else if (func_384(Local_55.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 			{
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 				TASK::TASK_AIM_GUN_AT_COORD(0, 3610.1f, 3765.7f, 29.8f, 5000, false, false);
@@ -92481,7 +92481,7 @@ void func_387()//Position - 0x66A18
 			STREAMING::REQUEST_ANIM_DICT("missfbi5ig_34");
 			if (!ENTITY::IS_ENTITY_AT_COORD(Local_55.f_0, 3626.235f, 3762.163f, 27.6171f, 1.5f, 1.5f, 2f, false, true, 0))
 			{
-				if (func_384(Local_55.f_0, 242628503, 1, 1))
+				if (func_384(Local_55.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1))
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 3626.235f, 3762.163f, 27.6171f, 2f, -1, 0.25f, false, 40000f);
@@ -92510,7 +92510,7 @@ void func_387()//Position - 0x66A18
 		case 52:
 			if (!ENTITY::IS_ENTITY_AT_COORD(Local_55.f_0, 3626.916f, 3749.378f, 27.571f, 1.5f, 1.5f, 2f, false, true, 0))
 			{
-				if (func_384(Local_55.f_0, 242628503, 1, 1))
+				if (func_384(Local_55.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1))
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 					TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_ENTITY(0, 3626.916f, 3749.378f, 27.571f, Local_408.f_0, 2f, false, 0.5f, 4f, true, 0, false, joaat("FIRING_PATTERN_FULL_AUTO"), 20000);
@@ -92535,7 +92535,7 @@ void func_387()//Position - 0x66A18
 		case 53:
 			if (!ENTITY::IS_ENTITY_AT_COORD(Local_55.f_0, 3618.872f, 3774.863f, 27.58f, 1.5f, 1.5f, 2f, false, true, 0))
 			{
-				if (func_384(Local_55.f_0, 242628503, 1, 1))
+				if (func_384(Local_55.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1))
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 					TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD(0, 3618.872f, 3774.863f, 27.5867f, 3555.7f, 3783.3f, 31.6f, 2f, false, 0.5f, 1f, true, 0, false, joaat("FIRING_PATTERN_FULL_AUTO"));
@@ -103164,7 +103164,7 @@ int func_584(int* iParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 									{
 										PED::REMOVE_PED_FROM_GROUP(iParam0->f_17[iVar0]);
 									}
-									if (TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], -1794415470) == 7 && !func_599(iParam0->f_17[iVar0], iParam0->f_21))
+									if (TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], joaat("SCRIPT_TASK_ENTER_VEHICLE")) == 7 && !func_599(iParam0->f_17[iVar0], iParam0->f_21))
 									{
 										if (!PED::IS_PED_RAGDOLL(iParam0->f_17[iVar0]) && !TASK::IS_PED_GETTING_UP(iParam0->f_17[iVar0]))
 										{
@@ -103443,7 +103443,7 @@ int func_584(int* iParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 							{
 								if (((!PED::IS_PED_RAGDOLL(iParam0->f_17[iVar0]) && !TASK::IS_PED_GETTING_UP(iParam0->f_17[iVar0])) && !PED::IS_PED_JUMPING_OUT_OF_VEHICLE(iParam0->f_17[iVar0])) && !PED::IS_PED_GETTING_INTO_A_VEHICLE(iParam0->f_17[iVar0]))
 								{
-									iVar11 = TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], -1794415470);
+									iVar11 = TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 									if (iVar11 == 7)
 									{
 										TASK::CLEAR_PED_TASKS(iParam0->f_17[iVar0]);
@@ -103501,7 +103501,7 @@ int func_584(int* iParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 										{
 											if (func_571(iParam0->f_17[iVar0]))
 											{
-												iVar11 = TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], 451360105);
+												iVar11 = TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], joaat("SCRIPT_TASK_LEAVE_VEHICLE"));
 												if (iVar11 == 7)
 												{
 													TASK::TASK_LEAVE_ANY_VEHICLE(iParam0->f_17[iVar0], 0, 0);
@@ -103519,7 +103519,7 @@ int func_584(int* iParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 											PED::REMOVE_PED_FROM_GROUP(iParam0->f_17[iVar0]);
 										}
 									}
-									iVar11 = TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], -1794415470);
+									iVar11 = TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 									if (iVar11 == 7 && !func_599(iParam0->f_17[iVar0], iParam10))
 									{
 										if (((((!PED::IS_PED_JUMPING_OUT_OF_VEHICLE(iParam0->f_17[iVar0]) && !PED::IS_PED_JUMPING_OUT_OF_VEHICLE(PLAYER::PLAYER_PED_ID())) && !func_589(iParam0->f_17[iVar0], 2f)) && !PED::IS_PED_RAGDOLL(iParam0->f_17[iVar0])) && !TASK::IS_PED_GETTING_UP(iParam0->f_17[iVar0])) && !FIRE::IS_ENTITY_ON_FIRE(iParam10))
@@ -103547,7 +103547,7 @@ int func_584(int* iParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 								{
 									if (!PED::IS_PED_RAGDOLL(iParam0->f_17[iVar0]) && !TASK::IS_PED_GETTING_UP(iParam0->f_17[iVar0]))
 									{
-										iVar11 = TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], -1794415470);
+										iVar11 = TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 										if (iVar11 == 7)
 										{
 											TASK::CLEAR_PED_TASKS(iParam0->f_17[iVar0]);
@@ -109300,9 +109300,9 @@ int func_686(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 				fVar7 = CAM::GET_FINAL_RENDERED_CAM_FOV();
 				if (uParam0->f_17 > 0 || iParam6 != 0)
 				{
-					uParam0->f_3 = CAM::CREATE_CAMERA(1775630800, false);
+					uParam0->f_3 = CAM::CREATE_CAMERA(joaat("TIMED_SPLINE_CAMERA"), false);
 				}
-				uParam0->f_1 = CAM::CREATE_CAMERA(26379945, true);
+				uParam0->f_1 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 				if (bParam1)
 				{
 					CAM::ATTACH_CAM_TO_ENTITY(uParam0->f_1, uParam0->f_5, Var1, true);
@@ -109313,7 +109313,7 @@ int func_686(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 				}
 				CAM::SET_CAM_ROT(uParam0->f_1, Var2, 2);
 				CAM::SET_CAM_FOV(uParam0->f_1, fVar7);
-				uParam0->f_2 = CAM::CREATE_CAMERA(26379945, true);
+				uParam0->f_2 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 				if (bParam1 && !bParam4)
 				{
 					CAM::ATTACH_CAM_TO_ENTITY(uParam0->f_2, uParam0->f_5, Var1 + Var6 * Vector(uParam0->f_12, uParam0->f_12, uParam0->f_12), true);
@@ -109326,7 +109326,7 @@ int func_686(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 				CAM::SET_CAM_FOV(uParam0->f_2, fVar7);
 				if (uParam0->f_17 > 0 && iParam6 == 0)
 				{
-					uParam0->f_4 = CAM::CREATE_CAMERA(26379945, true);
+					uParam0->f_4 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 					if (bParam1 && !bParam4)
 					{
 						CAM::ATTACH_CAM_TO_ENTITY(uParam0->f_4, uParam0->f_5, Var1 + Var6 * Vector(uParam0->f_12, uParam0->f_12, uParam0->f_12) * Vector(uParam0->f_13, uParam0->f_13, uParam0->f_13), true);
@@ -110771,7 +110771,7 @@ void func_720(var uParam0, int iParam1)//Position - 0x81F76
 		func_722(uParam0, iParam1);
 		fVar0 = uParam0->f_10[iParam1 /*57*/].f_21;
 	}
-	uParam0->f_10[iParam1 /*57*/].f_1 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, uParam0->f_10[iParam1 /*57*/].f_6, uParam0->f_10[iParam1 /*57*/].f_9, fVar0, true, 2);
+	uParam0->f_10[iParam1 /*57*/].f_1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), uParam0->f_10[iParam1 /*57*/].f_6, uParam0->f_10[iParam1 /*57*/].f_9, fVar0, true, 2);
 	iVar20 = uParam0->f_10[iParam1 /*57*/].f_1;
 	if (CAM::DOES_CAM_EXIST(uParam0->f_10[iParam1 /*57*/].f_1))
 	{
@@ -113738,7 +113738,7 @@ int func_758(int iParam0, int iParam1)//Position - 0x86A27
 
 bool func_759()//Position - 0x86EA6
 {
-	return DLC::IS_DLC_PRESENT(1199590110);
+	return DLC::IS_DLC_PRESENT(joaat("mpsum2"));
 }
 
 bool func_760()//Position - 0x86EB7
@@ -117026,7 +117026,7 @@ int func_792(int iParam0, int iParam1)//Position - 0x8B806
 
 int func_793(int iParam0, int iParam1, int iParam2)//Position - 0x8B8EB
 {
-	if (!func_794() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_794() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}
@@ -117522,7 +117522,7 @@ void func_805()//Position - 0x8C66C
 				STREAMING::REQUEST_ANIM_DICT("missfbi5ig_34");
 				if (!ENTITY::IS_ENTITY_AT_COORD(uLocal_677[1], 1740.163f, 3279.473f, 40.0934f, 1.5f, 1.5f, 2f, false, true, 0))
 				{
-					if (func_384(uLocal_677[1], 242628503, -2, 1))
+					if (func_384(uLocal_677[1], joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1740.163f, 3279.473f, 40.0934f, 2f, -1, 0.25f, false, 40000f);
@@ -117549,7 +117549,7 @@ void func_805()//Position - 0x8C66C
 			case 1:
 				if (!ENTITY::IS_ENTITY_AT_COORD(uLocal_677[1], 1741.138f, 3289.123f, 40.1094f, 1.5f, 1.5f, 2f, false, true, 0))
 				{
-					if (func_384(uLocal_677[1], 242628503, 1, 1))
+					if (func_384(uLocal_677[1], joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1))
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1741.138f, 3289.123f, 40.1094f, 2f, -1, 0.25f, false, 40000f);
@@ -117560,7 +117560,7 @@ void func_805()//Position - 0x8C66C
 				}
 				else if (!PED::IS_PED_FACING_PED(uLocal_677[1], PLAYER::PLAYER_PED_ID(), 40f))
 				{
-					if (func_384(uLocal_677[1], 242628503, -2, 1))
+					if (func_384(uLocal_677[1], joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 						TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, PLAYER::PLAYER_PED_ID(), 0);
@@ -117575,7 +117575,7 @@ void func_805()//Position - 0x8C66C
 					{
 						if (!PED::IS_PED_RAGDOLL(uLocal_677[1]))
 						{
-							if (func_384(uLocal_677[1], -2017877118, -2, 0))
+							if (func_384(uLocal_677[1], joaat("SCRIPT_TASK_PLAY_ANIM"), -2, 0))
 							{
 								TASK::TASK_PLAY_ANIM(uLocal_677[1], "missfbi5ig_34", "direct_heli_a_dave", 4f, -8f, -1, 0, 0f, false, false, false);
 								iLocal_520 = MISC::GET_GAME_TIMER();
@@ -120674,7 +120674,7 @@ void func_858()//Position - 0x918B1
 {
 	if (!ENTITY::IS_ENTITY_AT_COORD(uLocal_677[0], 3625.945f, 3757.519f, 27.5157f, 1.5f, 1.5f, 1.6f, false, true, 0))
 	{
-		if (func_384(uLocal_677[0], 242628503, 1, 1))
+		if (func_384(uLocal_677[0], joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1))
 		{
 			TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 			TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_ENTITY(0, 3625.945f, 3757.519f, 27.5157f, Local_408.f_0, 1f, false, 0.5f, 0.5f, true, 0, false, joaat("FIRING_PATTERN_FULL_AUTO"), 20000);
@@ -122929,7 +122929,7 @@ void func_888()//Position - 0x94ED6
 						case 33:
 							if (!ENTITY::IS_ENTITY_AT_COORD(Local_64[iVar0 /*25*/], Local_64[iVar0 /*25*/].f_9, 1.5f, 1.5f, 2f, false, true, 0))
 							{
-								if (func_384(Local_64[iVar0 /*25*/], 242628503, -2, 1))
+								if (func_384(Local_64[iVar0 /*25*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 								{
 									TASK::CLEAR_PED_TASKS(Local_64[iVar0 /*25*/]);
 									TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
@@ -122990,7 +122990,7 @@ void func_888()//Position - 0x94ED6
 						case 22:
 							if (!ENTITY::IS_ENTITY_AT_COORD(Local_64[iVar0 /*25*/], Local_64[iVar0 /*25*/].f_9, 1.5f, 1.5f, 2f, false, true, 0))
 							{
-								if (func_384(Local_64[iVar0 /*25*/], 242628503, -2, 1))
+								if (func_384(Local_64[iVar0 /*25*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 								{
 									TASK::CLEAR_PED_TASKS(Local_64[iVar0 /*25*/]);
 									TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
@@ -123234,7 +123234,7 @@ void func_888()//Position - 0x94ED6
 						case 22:
 							if (!ENTITY::IS_ENTITY_AT_COORD(Local_64[iVar0 /*25*/], Local_64[iVar0 /*25*/].f_9, 1.5f, 1.5f, 2f, false, true, 0))
 							{
-								if (func_384(Local_64[iVar0 /*25*/], 242628503, -2, 1))
+								if (func_384(Local_64[iVar0 /*25*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 								{
 									TASK::CLEAR_PED_TASKS(Local_64[iVar0 /*25*/]);
 									PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_64[iVar0 /*25*/], true);
@@ -123506,7 +123506,7 @@ void func_891()//Position - 0x96A52
 						}
 						if (!ENTITY::IS_ENTITY_AT_COORD(Local_65[5 /*25*/], Local_65[5 /*25*/].f_9, 0.5f, 0.5f, 2f, false, true, 0) || !ENTITY::IS_ENTITY_PLAYING_ANIM(Local_65[5 /*25*/], "missfbi5ig_21", "hands_up_anxious_scientist", 3))
 						{
-							if (func_384(Local_65[5 /*25*/], 242628503, 1, 1))
+							if (func_384(Local_65[5 /*25*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1))
 							{
 								TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_65[5 /*25*/].f_9, 1f, -1, 0.1f, false, Local_65[5 /*25*/].f_6.f_2);
@@ -123798,7 +123798,7 @@ void func_894()//Position - 0x97435
 						}
 						if (!ENTITY::IS_ENTITY_AT_COORD(Local_65[4 /*25*/], Local_65[4 /*25*/].f_9, 0.5f, 0.5f, 2f, false, true, 0) || !ENTITY::IS_ENTITY_PLAYING_ANIM(Local_65[4 /*25*/], "missfbi5ig_22", "hands_up_anxious_scientist", 3))
 						{
-							if (func_384(Local_65[4 /*25*/], 242628503, 1, 1))
+							if (func_384(Local_65[4 /*25*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1))
 							{
 								TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_65[4 /*25*/].f_9, 1f, -1, 0.1f, false, Local_65[4 /*25*/].f_6.f_2);
@@ -124596,7 +124596,7 @@ void func_904()//Position - 0x98B70
 					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iLocal_570[15], 4, false, true);
 					Local_619 = { 3558.898f, 3677.85f, 27.125f };
 					Local_620 = { 0f, 0f, 170f };
-					iLocal_649 = CAM::CREATE_CAMERA(964613260, true);
+					iLocal_649 = CAM::CREATE_CAMERA(joaat("DEFAULT_ANIMATED_CAMERA"), true);
 					CAM::PLAY_CAM_ANIM(iLocal_649, "take_chemical_cam", "missfbi5ig_22", Local_619, Local_620, false, 2);
 					CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
 					RECORDING::_0x48621C9FCA3EBD28(4);
@@ -125021,7 +125021,7 @@ void func_910()//Position - 0x99CEB
 				PED::SET_PED_RESET_FLAG(Local_63[2 /*25*/], 60, true);
 				if (!ENTITY::IS_ENTITY_AT_COORD(Local_63[2 /*25*/], Local_63[2 /*25*/].f_9, 1.5f, 1.5f, 2f, false, true, 0))
 				{
-					if (func_384(Local_63[2 /*25*/], 242628503, -2, 1))
+					if (func_384(Local_63[2 /*25*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_63[2 /*25*/].f_9, 1f, -1, 0.25f, false, 40000f);
@@ -125148,7 +125148,7 @@ void func_912()//Position - 0x9A240
 				PED::SET_PED_RESET_FLAG(Local_63[1 /*25*/], 60, true);
 				if (!ENTITY::IS_ENTITY_AT_COORD(Local_63[1 /*25*/], Local_63[1 /*25*/].f_9, 1.5f, 1.5f, 2f, false, true, 0))
 				{
-					if (func_384(Local_63[1 /*25*/], 242628503, -2, 1))
+					if (func_384(Local_63[1 /*25*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_63[1 /*25*/].f_9, 1f, -1, 0.25f, false, 40000f);
@@ -125462,7 +125462,7 @@ void func_916(var uParam0, struct<3> Param1)//Position - 0x9AD55
 					TASK::TASK_PLAY_ANIM(*uParam0, "ped", "handsup_base", 1000f, -8f, -1, 49, 0f, false, false, false);
 				}
 			}
-			if (func_384(*uParam0, 242628503, -2, 1))
+			if (func_384(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 			{
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Param1, 1f, -1, 0.25f, false, 40000f);
@@ -125697,7 +125697,7 @@ void func_921()//Position - 0x9B584
 				}
 				if (!ENTITY::IS_ENTITY_AT_COORD(Local_59.f_0, 3531.968f, 3673.769f, 27.1211f, 0.5f, 0.5f, 2f, false, true, 0))
 				{
-					if (func_384(Local_59.f_0, 242628503, 1, 1))
+					if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1))
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 						TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD(0, 3531.968f, 3673.769f, 27.1211f, 3530.1f, 3662.7f, 28.6f, 1f, false, 0.2f, 0.2f, true, 512, false, joaat("FIRING_PATTERN_FULL_AUTO"));
@@ -125762,7 +125762,7 @@ void func_921()//Position - 0x9B584
 				}
 				if (!ENTITY::IS_ENTITY_AT_COORD(Local_59.f_0, 3528.656f, 3661.377f, 27.1219f, 0.5f, 0.5f, 2f, false, true, 0))
 				{
-					if (func_384(Local_59.f_0, 242628503, 1, 1) || iLocal_471)
+					if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1) || iLocal_471)
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 						TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD(0, 3528.656f, 3661.377f, 27.1219f, 3532.4f, 3664.6f, 28.9f, 1f, false, 0.2f, 0.2f, true, 512, false, joaat("FIRING_PATTERN_FULL_AUTO"));
@@ -125890,7 +125890,7 @@ void func_921()//Position - 0x9B584
 					{
 						if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_63[2 /*25*/], 3545.086f, 3646.993f, 27.122f, 3544.545f, 3643.939f, 30.122f, 1.2f, false, true, 0))
 						{
-							if (func_384(Local_59.f_0, 167901368, -2, 1))
+							if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_SHOOT_AT_ENTITY"), -2, 1))
 							{
 								TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 								TASK::TASK_SHOOT_AT_ENTITY(0, Local_63[2 /*25*/], 3000, 0);
@@ -125907,7 +125907,7 @@ void func_921()//Position - 0x9B584
 					{
 						if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_63[1 /*25*/], 3545.086f, 3646.993f, 27.122f, 3544.545f, 3643.939f, 30.122f, 1.2f, false, true, 0))
 						{
-							if (func_384(Local_59.f_0, 167901368, -2, 1))
+							if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_SHOOT_AT_ENTITY"), -2, 1))
 							{
 								TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 								TASK::TASK_SHOOT_AT_ENTITY(0, Local_63[1 /*25*/], 3000, 0);
@@ -125922,7 +125922,7 @@ void func_921()//Position - 0x9B584
 				{
 					if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_63[1 /*25*/], 3545.086f, 3646.993f, 27.122f, 3544.545f, 3643.939f, 30.122f, 1.2f, false, true, 0))
 					{
-						if (func_384(Local_59.f_0, 167901368, -2, 1))
+						if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_SHOOT_AT_ENTITY"), -2, 1))
 						{
 							TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 							TASK::TASK_SHOOT_AT_ENTITY(0, Local_63[1 /*25*/], 3000, 0);
@@ -125936,7 +125936,7 @@ void func_921()//Position - 0x9B584
 				{
 					if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_63[2 /*25*/], 3545.086f, 3646.993f, 27.122f, 3544.545f, 3643.939f, 30.122f, 1.2f, false, true, 0))
 					{
-						if (func_384(Local_59.f_0, 167901368, -2, 1))
+						if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_SHOOT_AT_ENTITY"), -2, 1))
 						{
 							TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 							TASK::TASK_SHOOT_AT_ENTITY(0, Local_63[2 /*25*/], 3000, 0);
@@ -125985,7 +125985,7 @@ void func_921()//Position - 0x9B584
 				}
 				if (!ENTITY::IS_ENTITY_AT_COORD(Local_59.f_0, 3551.909f, 3663.259f, 27.1219f, 0.5f, 0.5f, 2f, false, true, 0))
 				{
-					if (func_384(Local_59.f_0, 242628503, 1, 1))
+					if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1))
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 						TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD(0, 3551.909f, 3663.259f, 27.1219f, 3532.4f, 3664.6f, 28.9f, 1f, false, 0.2f, 0.2f, true, 512, false, joaat("FIRING_PATTERN_FULL_AUTO"));
@@ -126120,7 +126120,7 @@ void func_921()//Position - 0x9B584
 			{
 				if (!ENTITY::IS_ENTITY_AT_COORD(Local_59.f_0, PED::GET_ANIM_INITIAL_OFFSET_POSITION("missfbi5ig_21", "holdup_hallway_saw_steve_steve", 3558.898f, 3677.85f, 27.125f, 0f, 0f, 170f, 1f, 2), 0.5f, 0.5f, 1.5f, false, true, 0))
 				{
-					if (func_384(Local_59.f_0, 242628503, 1, 1) || !iLocal_462[0])
+					if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1) || !iLocal_462[0])
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 						TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_ENTITY(0, PED::GET_ANIM_INITIAL_OFFSET_POSITION("missfbi5ig_21", "holdup_hallway_saw_steve_steve", 3558.898f, 3677.85f, 27.125f, 0f, 0f, 170f, 1f, 2), Local_65[5 /*25*/], 1f, false, 0.2f, 0.2f, true, 0, false, joaat("FIRING_PATTERN_FULL_AUTO"), 20000);
@@ -126131,7 +126131,7 @@ void func_921()//Position - 0x9B584
 						iLocal_462[0] = 1;
 					}
 				}
-				else if (func_384(Local_59.f_0, 242628503, -2, 1) || !iLocal_462[0])
+				else if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1) || !iLocal_462[0])
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 					TASK::TASK_AIM_GUN_AT_ENTITY(0, Local_65[5 /*25*/], -1, false);
@@ -126145,7 +126145,7 @@ void func_921()//Position - 0x9B584
 			{
 				if (!ENTITY::IS_ENTITY_AT_COORD(Local_59.f_0, PED::GET_ANIM_INITIAL_OFFSET_POSITION("missfbi5ig_21", "holdup_hallway_saw_steve_steve", 3558.898f, 3677.85f, 27.125f, 0f, 0f, 170f, 1f, 2), 0.5f, 0.5f, 1.5f, false, true, 0))
 				{
-					if (func_384(Local_59.f_0, 242628503, 1, 1) || !iLocal_462[1])
+					if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1) || !iLocal_462[1])
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 						TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_ENTITY(0, PED::GET_ANIM_INITIAL_OFFSET_POSITION("missfbi5ig_21", "holdup_hallway_saw_steve_steve", 3558.898f, 3677.85f, 27.125f, 0f, 0f, 170f, 1f, 2), Local_65[4 /*25*/], 1f, false, 0.2f, 0.2f, true, 0, false, joaat("FIRING_PATTERN_FULL_AUTO"), 20000);
@@ -126156,7 +126156,7 @@ void func_921()//Position - 0x9B584
 						iLocal_462[1] = 1;
 					}
 				}
-				else if (func_384(Local_59.f_0, 242628503, -2, 1) || !iLocal_462[1])
+				else if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1) || !iLocal_462[1])
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 					TASK::TASK_AIM_GUN_AT_ENTITY(0, Local_65[4 /*25*/], -1, false);
@@ -126166,7 +126166,7 @@ void func_921()//Position - 0x9B584
 					iLocal_462[1] = 1;
 				}
 			}
-			else if (func_384(Local_59.f_0, 242628503, 1, 1) || !iLocal_462[2])
+			else if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1) || !iLocal_462[2])
 			{
 				if (!ENTITY::IS_ENTITY_AT_COORD(Local_59.f_0, PED::GET_ANIM_INITIAL_OFFSET_POSITION("missfbi5ig_21", "holdup_hallway_saw_steve_steve", 3558.898f, 3677.85f, 27.125f, 0f, 0f, 170f, 1f, 2), 0.5f, 0.5f, 1.5f, false, true, 0))
 				{
@@ -126178,7 +126178,7 @@ void func_921()//Position - 0x9B584
 					TASK::CLEAR_SEQUENCE_TASK(&iLocal_672);
 					iLocal_462[2] = 1;
 				}
-				else if (func_384(Local_59.f_0, 242628503, -2, 1) || !iLocal_462[2])
+				else if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1) || !iLocal_462[2])
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 					TASK::TASK_AIM_GUN_AT_COORD(0, 3553.9f, 3668.7f, 28.8f, -1, false, false);
@@ -126232,7 +126232,7 @@ void func_922()//Position - 0x9CAAB
 				}
 				if (!ENTITY::IS_ENTITY_AT_COORD(Local_55.f_0, 3531.119f, 3667.406f, 27.1217f, 0.5f, 0.5f, 2f, false, true, 0))
 				{
-					if (func_384(Local_55.f_0, 242628503, 1, 1))
+					if (func_384(Local_55.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1))
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 						TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD(0, 3531.119f, 3667.406f, 27.1217f, 3535.4f, 3664f, 28.5f, 1f, false, 0.2f, 0.2f, true, 512, false, joaat("FIRING_PATTERN_FULL_AUTO"));
@@ -126348,7 +126348,7 @@ void func_922()//Position - 0x9CAAB
 			}
 			if (!ENTITY::IS_ENTITY_AT_COORD(Local_55.f_0, Local_55.f_9, 0.5f, 0.5f, 2f, false, true, 0))
 			{
-				if (func_384(Local_55.f_0, 242628503, -2, 1))
+				if (func_384(Local_55.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 					TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD(0, Local_55.f_9, 3548.18f, 3646.84f, 28.92f, 2f, false, 0.2f, 0.2f, true, 512, false, joaat("FIRING_PATTERN_FULL_AUTO"));
@@ -126384,7 +126384,7 @@ void func_922()//Position - 0x9CAAB
 		case 7:
 			if (!ENTITY::IS_ENTITY_AT_COORD(Local_55.f_0, Local_55.f_9, 0.1f, 0.1f, 2f, false, true, 0))
 			{
-				if (func_384(Local_55.f_0, 242628503, -2, 1))
+				if (func_384(Local_55.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 					TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD(0, Local_55.f_9, 3548.18f, 3646.84f, 28.92f, 2f, false, 0.2f, 0.2f, true, 512, false, joaat("FIRING_PATTERN_FULL_AUTO"));
@@ -126436,7 +126436,7 @@ void func_922()//Position - 0x9CAAB
 				Local_55.f_6 = { PED::GET_ANIM_INITIAL_OFFSET_POSITION("missfbi5ig_20a", "run_through_door_dave", Local_619, Local_620, 0f, 2) };
 				if (!ENTITY::IS_ENTITY_AT_COORD(Local_55.f_0, Local_55.f_9, 0.1f, 0.1f, 2f, false, true, 0))
 				{
-					if (func_384(Local_55.f_0, 713668775, -2, 0))
+					if (func_384(Local_55.f_0, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD"), -2, 0))
 					{
 						PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_55.f_0, true);
 						TASK::CLEAR_PED_TASKS(Local_55.f_0);
@@ -126643,7 +126643,7 @@ void func_922()//Position - 0x9CAAB
 			{
 				if (!ENTITY::IS_ENTITY_AT_COORD(Local_55.f_0, PED::GET_ANIM_INITIAL_OFFSET_POSITION("missfbi5ig_22", "aim_scientist_walkout_dave", 3558.898f, 3677.85f, 27.125f, 0f, 0f, 170f, 1f, 2), 0.5f, 0.5f, 1.5f, false, true, 0))
 				{
-					if (func_384(Local_55.f_0, 242628503, 1, 1) || !iLocal_463[0])
+					if (func_384(Local_55.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1) || !iLocal_463[0])
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 						TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_ENTITY(0, PED::GET_ANIM_INITIAL_OFFSET_POSITION("missfbi5ig_22", "aim_scientist_walkout_dave", 3558.898f, 3677.85f, 27.125f, 0f, 0f, 170f, 1f, 2), Local_65[4 /*25*/], 1f, false, 0.2f, 0.2f, true, 512, false, joaat("FIRING_PATTERN_FULL_AUTO"), 20000);
@@ -126654,7 +126654,7 @@ void func_922()//Position - 0x9CAAB
 						iLocal_463[0] = 1;
 					}
 				}
-				else if (func_384(Local_55.f_0, 242628503, -2, 1) || !iLocal_463[0])
+				else if (func_384(Local_55.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1) || !iLocal_463[0])
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 					TASK::TASK_AIM_GUN_AT_ENTITY(0, Local_65[4 /*25*/], -1, false);
@@ -126669,7 +126669,7 @@ void func_922()//Position - 0x9CAAB
 			{
 				if (!ENTITY::IS_ENTITY_AT_COORD(Local_55.f_0, PED::GET_ANIM_INITIAL_OFFSET_POSITION("missfbi5ig_22", "aim_scientist_walkout_dave", 3558.898f, 3677.85f, 27.125f, 0f, 0f, 170f, 1f, 2), 0.5f, 0.5f, 1.5f, false, true, 0))
 				{
-					if (func_384(Local_55.f_0, 242628503, 1, 1) || !iLocal_463[1])
+					if (func_384(Local_55.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1) || !iLocal_463[1])
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 						TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_ENTITY(0, PED::GET_ANIM_INITIAL_OFFSET_POSITION("missfbi5ig_22", "aim_scientist_walkout_dave", 3558.898f, 3677.85f, 27.125f, 0f, 0f, 170f, 1f, 2), Local_65[5 /*25*/], 1f, false, 0.2f, 0.2f, true, 0, false, joaat("FIRING_PATTERN_FULL_AUTO"), 20000);
@@ -126680,7 +126680,7 @@ void func_922()//Position - 0x9CAAB
 						iLocal_463[1] = 1;
 					}
 				}
-				else if (func_384(Local_55.f_0, 242628503, -2, 1) || !iLocal_463[1])
+				else if (func_384(Local_55.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1) || !iLocal_463[1])
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 					TASK::TASK_AIM_GUN_AT_ENTITY(0, Local_65[5 /*25*/], -1, false);
@@ -126690,7 +126690,7 @@ void func_922()//Position - 0x9CAAB
 					iLocal_463[1] = 1;
 				}
 			}
-			else if (func_384(Local_55.f_0, 242628503, 1, 1) || !iLocal_463[2])
+			else if (func_384(Local_55.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1) || !iLocal_463[2])
 			{
 				if (!ENTITY::IS_ENTITY_AT_COORD(Local_55.f_0, PED::GET_ANIM_INITIAL_OFFSET_POSITION("missfbi5ig_22", "aim_scientist_walkout_dave", 3558.898f, 3677.85f, 27.125f, 0f, 0f, 170f, 1f, 2), 0.5f, 0.5f, 1.5f, false, true, 0))
 				{
@@ -126702,7 +126702,7 @@ void func_922()//Position - 0x9CAAB
 					TASK::CLEAR_SEQUENCE_TASK(&iLocal_672);
 					iLocal_463[2] = 1;
 				}
-				else if (func_384(Local_55.f_0, 242628503, -2, 1) || !iLocal_462[2])
+				else if (func_384(Local_55.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1) || !iLocal_462[2])
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 					TASK::TASK_AIM_GUN_AT_COORD(0, 3553.9f, 3668.7f, 28.8f, -1, false, false);
@@ -127920,7 +127920,7 @@ void func_937()//Position - 0x9FD7B
 					Local_63[0 /*25*/].f_6 = { PED::GET_ANIM_INITIAL_OFFSET_ROTATION("missfbi5ig_5", "holdup_sec_loop_labped", 3538.97f, 3673.487f, 20f, 0f, 0f, -9.4f, 0f, 2) };
 					if (!ENTITY::IS_ENTITY_AT_COORD(Local_63[0 /*25*/], Local_63[0 /*25*/].f_3, 0.5f, 0.5f, 1.6f, false, true, 0) || !ENTITY::IS_ENTITY_PLAYING_ANIM(Local_63[0 /*25*/], "missfbi5ig_5", "holdup_sec_loop_labped", 3))
 					{
-						if (func_384(Local_63[0 /*25*/], 242628503, 1, 1))
+						if (func_384(Local_63[0 /*25*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1))
 						{
 							TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_63[0 /*25*/].f_3, 1f, 20000, 0.05f, 512, Local_63[0 /*25*/].f_6.f_2);
@@ -128150,7 +128150,7 @@ void func_940()//Position - 0xA052E
 						Local_65[1 /*25*/].f_3 = { PED::GET_ANIM_INITIAL_OFFSET_POSITION("missfbi5ig_10", "lift_holdup_loop_labped", Local_619, Local_620, 1f, 2) };
 						if (!ENTITY::IS_ENTITY_AT_COORD(Local_65[1 /*25*/], Local_65[1 /*25*/].f_3, 0.75f, 0.75f, 1.6f, false, true, 0))
 						{
-							if (func_384(Local_65[1 /*25*/], 242628503, -2, 1))
+							if (func_384(Local_65[1 /*25*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 							{
 								TASK::TASK_LOOK_AT_ENTITY(Local_65[1 /*25*/], PLAYER::PLAYER_PED_ID(), -1, 2048, 2);
 								TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
@@ -128163,7 +128163,7 @@ void func_940()//Position - 0xA052E
 						}
 						else if (!PED::IS_PED_FACING_PED(Local_65[1 /*25*/], PLAYER::PLAYER_PED_ID(), 50f))
 						{
-							if (func_384(Local_65[1 /*25*/], 242628503, -2, 1))
+							if (func_384(Local_65[1 /*25*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 							{
 								TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 								TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, PLAYER::PLAYER_PED_ID(), 0);
@@ -128552,7 +128552,7 @@ void func_945()//Position - 0xA1113
 						}
 						if (!ENTITY::IS_ENTITY_AT_COORD(Local_65[0 /*25*/], Local_65[0 /*25*/].f_9, 0.5f, 0.5f, 1.6f, false, true, 0) || !ENTITY::IS_ENTITY_PLAYING_ANIM(Local_65[0 /*25*/], "missfbi5ig_2", "holdup_scient_loop_labped", 3))
 						{
-							if (func_384(Local_65[0 /*25*/], 242628503, 1, 1))
+							if (func_384(Local_65[0 /*25*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1))
 							{
 								TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_65[0 /*25*/].f_9, 1f, -1, 0.05f, 4608, Local_65[0 /*25*/].f_6.f_2);
@@ -128622,7 +128622,7 @@ void func_946()//Position - 0xA1608
 			func_379(&Local_59, &(Local_59.f_15), Local_59.f_9, 3523.1f, 36.94f, 21.6f, Local_65[0 /*25*/], 1065353216, 1);
 			if (PED::IS_PED_INJURED(Local_65[0 /*25*/]))
 			{
-				if ((!PED::IS_SYNCHRONIZED_SCENE_RUNNING(Local_59.f_15) && STREAMING::HAS_ANIM_DICT_LOADED("missfbi5ig_5")) && func_384(Local_59.f_0, 242628503, 1, 1))
+				if ((!PED::IS_SYNCHRONIZED_SCENE_RUNNING(Local_59.f_15) && STREAMING::HAS_ANIM_DICT_LOADED("missfbi5ig_5")) && func_384(Local_59.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1))
 				{
 					Local_619 = { 3538.97f, 3673.487f, 19.992f };
 					Local_620 = { 0f, 0f, -9.4f };
@@ -128637,7 +128637,7 @@ void func_946()//Position - 0xA1608
 			{
 				if (!PED::IS_SYNCHRONIZED_SCENE_RUNNING(Local_59.f_15))
 				{
-					if (func_384(Local_59.f_0, 242628503, -2, 1))
+					if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 						TASK::TASK_SHOOT_AT_ENTITY(0, Local_65[0 /*25*/], 1500, 0);
@@ -128909,7 +128909,7 @@ void func_947()//Position - 0xA1BAD
 			STREAMING::REQUEST_ANIM_DICT("missfbi5ig_11");
 			if (!ENTITY::IS_ENTITY_AT_COORD(Local_55.f_0, PED::GET_ANIM_INITIAL_OFFSET_POSITION("missfbi5ig_10", "lift_holdup_dave", 3538.97f, 3673.487f, 19.992f, 0f, 0f, -9.4f, 1f, 2), 0.5f, 0.5f, 1.6f, false, true, 0))
 			{
-				if (func_384(Local_55.f_0, 242628503, 1, 1))
+				if (func_384(Local_55.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1))
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 					TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD(0, PED::GET_ANIM_INITIAL_OFFSET_POSITION("missfbi5ig_10", "lift_holdup_dave", 3538.97f, 3673.487f, 19.992f, 0f, 0f, -9.4f, 1f, 2), 3540.4f, 3673.4f, 21.2f, 1f, false, 0.1f, 0.1f, true, 0, false, joaat("FIRING_PATTERN_FULL_AUTO"));
@@ -128932,7 +128932,7 @@ void func_947()//Position - 0xA1BAD
 		case 22:
 			if (!ENTITY::IS_ENTITY_AT_COORD(Local_55.f_0, PED::GET_ANIM_INITIAL_OFFSET_POSITION("missfbi5ig_11", "enter_lift_dave", 3538.97f, 3673.487f, 19.992f, 0f, 0f, -9.4f, 1f, 2), 0.5f, 0.5f, 1.6f, false, true, 0))
 			{
-				if (func_384(Local_55.f_0, 242628503, 1, 1))
+				if (func_384(Local_55.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1, 1))
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 					TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD(0, PED::GET_ANIM_INITIAL_OFFSET_POSITION("missfbi5ig_11", "enter_lift_dave", 3538.97f, 3673.487f, 19.992f, 0f, 0f, -9.4f, 1f, 2), 3540.4f, 3673.4f, 21.2f, 1f, false, 0.1f, 0.1f, true, 0, false, joaat("FIRING_PATTERN_FULL_AUTO"));
@@ -129939,7 +129939,7 @@ void func_956()//Position - 0xA4183
 				iLocal_651 = HUD::ADD_BLIP_FOR_COORD(Local_613);
 			}
 		}
-		if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 242628503) == 1)
+		if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 1)
 		{
 			iVar4 = 28;
 			func_836(&uVar0, &iVar1, &uVar2, &iVar3, 0);
@@ -130321,7 +130321,7 @@ void func_961()//Position - 0xA489C
 						case 0:
 							if (!ENTITY::IS_ENTITY_AT_COORD(iVar5, 3531.2f, 3717.17f, 19f, 2f, 2f, 2.6f, false, true, 0))
 							{
-								if (func_384(iVar5, 242628503, -2, 1))
+								if (func_384(iVar5, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 								{
 									TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 									TASK::TASK_GO_STRAIGHT_TO_COORD(0, 3531.2f, 3717.17f, 19f, 2f, -1, 40000f, 0.5f);
@@ -130332,9 +130332,9 @@ void func_961()//Position - 0xA489C
 							}
 							else if (!PED::IS_PED_FACING_PED(iVar5, PLAYER::PLAYER_PED_ID(), 40f))
 							{
-								if (func_384(iVar5, 242628503, -2, 1))
+								if (func_384(iVar5, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 								{
-									if (func_384(iVar5, -875674219, -2, 0))
+									if (func_384(iVar5, joaat("SCRIPT_TASK_TURN_PED_TO_FACE_ENTITY"), -2, 0))
 									{
 										TASK::TASK_TURN_PED_TO_FACE_ENTITY(iVar5, PLAYER::PLAYER_PED_ID(), 0);
 									}
@@ -130345,7 +130345,7 @@ void func_961()//Position - 0xA489C
 						case 1:
 							if (!ENTITY::IS_ENTITY_AT_COORD(iVar5, 3528.4f, 3715.4f, 19f, 2f, 2f, 2.6f, false, true, 0))
 							{
-								if (func_384(iVar5, 242628503, -2, 1))
+								if (func_384(iVar5, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 								{
 									TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 									TASK::TASK_GO_STRAIGHT_TO_COORD(0, 3528.4f, 3715.4f, 19f, 2f, -1, 40000f, 0.5f);
@@ -130356,9 +130356,9 @@ void func_961()//Position - 0xA489C
 							}
 							else if (!PED::IS_PED_FACING_PED(iVar5, PLAYER::PLAYER_PED_ID(), 40f))
 							{
-								if (func_384(iVar5, 242628503, -2, 1))
+								if (func_384(iVar5, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 								{
-									if (func_384(iVar5, -875674219, -2, 0))
+									if (func_384(iVar5, joaat("SCRIPT_TASK_TURN_PED_TO_FACE_ENTITY"), -2, 0))
 									{
 										TASK::TASK_TURN_PED_TO_FACE_ENTITY(iVar5, PLAYER::PLAYER_PED_ID(), 0);
 									}
@@ -131526,7 +131526,7 @@ void func_977()//Position - 0xA6DE9
 		{
 			iLocal_54 = 2;
 		}
-		if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 242628503) == 1)
+		if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 1)
 		{
 			iVar5 = 28;
 			func_836(&uVar1, &iVar2, &uVar3, &iVar4, 0);
@@ -131551,7 +131551,7 @@ void func_977()//Position - 0xA6DE9
 				}
 				if (!ENTITY::IS_ENTITY_AT_COORD(Local_55.f_0, Local_55.f_9, 1f, 1f, 2f, false, true, 0))
 				{
-					if (func_384(Local_55.f_0, 242628503, -2, 1))
+					if (func_384(Local_55.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 					{
 						TASK::CLEAR_PED_TASKS(Local_55.f_0);
 						PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_55.f_0, true);
@@ -131564,7 +131564,7 @@ void func_977()//Position - 0xA6DE9
 				}
 				else if (!func_978(Local_55.f_0, 146.4602f, 20f))
 				{
-					if (func_384(Local_55.f_0, 242628503, -2, 1))
+					if (func_384(Local_55.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 						TASK::TASK_ACHIEVE_HEADING(0, 146.4602f, 0);
@@ -131582,7 +131582,7 @@ void func_977()//Position - 0xA6DE9
 				}
 				if (!ENTITY::IS_ENTITY_AT_COORD(Local_59.f_0, Local_59.f_9, 1f, 1f, 2f, false, true, 0))
 				{
-					if (func_384(Local_59.f_0, 242628503, -2, 1))
+					if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 					{
 						TASK::CLEAR_PED_TASKS(Local_59.f_0);
 						PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_59.f_0, true);
@@ -131595,7 +131595,7 @@ void func_977()//Position - 0xA6DE9
 				}
 				else if (!func_978(Local_59.f_0, 146.4602f, 20f))
 				{
-					if (func_384(Local_59.f_0, 242628503, -2, 1))
+					if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 						TASK::TASK_ACHIEVE_HEADING(0, 146.4602f, 0);
@@ -131887,7 +131887,7 @@ void func_983()//Position - 0xA73D5
 		}
 		else if (((PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_548) && ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), "missheistchem2", "Boat_Dive_Exit_Player", 3)) && PED::GET_SYNCHRONIZED_SCENE_PHASE(iLocal_548) >= 0.7f) || !PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_548))
 		{
-			if (func_384(Local_59.f_0, 242628503, -2, 1))
+			if (func_384(Local_59.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), -2, 1))
 			{
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_672);
 				TASK::TASK_FORCE_MOTION_STATE(0, joaat("MotionState_Diving_Swim"), false);

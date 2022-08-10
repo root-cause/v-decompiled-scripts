@@ -34478,7 +34478,7 @@ int func_226(int iParam0, float fParam1, int iParam2)//Position - 0x272B9
 			else if (iParam2 == 1)
 			{
 				iVar0 = 0;
-				if (!func_232(PLAYER::PLAYER_PED_ID(), -828834893))
+				if (!func_232(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")))
 				{
 					TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
 				}

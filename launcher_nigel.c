@@ -7634,7 +7634,7 @@ void func_149()//Position - 0xAED3
 		{
 			if (func_150(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false), 10.5f, 1, 1056964608, 0, 1, 0))
 			{
-				if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), -828834893) != 1)
+				if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")) != 1)
 				{
 					TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
 				}
@@ -14759,7 +14759,7 @@ void func_314(var uParam0)//Position - 0x157F4
 	{
 		if (func_128(uParam0->f_28[1]))
 		{
-			if (func_315(uParam0->f_28[1], 1785177548))
+			if (func_315(uParam0->f_28[1], joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE")))
 			{
 				TASK::CLEAR_PED_TASKS(uParam0->f_28[1]);
 			}
@@ -14786,7 +14786,7 @@ void func_316(var uParam0)//Position - 0x15878
 	{
 		if (func_128(uParam0->f_28[0]))
 		{
-			if (func_315(uParam0->f_28[0], 1785177548))
+			if (func_315(uParam0->f_28[0], joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE")))
 			{
 				TASK::CLEAR_PED_TASKS(uParam0->f_28[0]);
 			}
@@ -14794,7 +14794,7 @@ void func_316(var uParam0)//Position - 0x15878
 		}
 		if (func_128(uParam0->f_28[1]))
 		{
-			if (func_315(uParam0->f_28[1], 1785177548))
+			if (func_315(uParam0->f_28[1], joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE")))
 			{
 				TASK::CLEAR_PED_TASKS(uParam0->f_28[1]);
 			}

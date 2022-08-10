@@ -2869,7 +2869,7 @@ void func_74()//Position - 0x2B7C
 				{
 					PED::REMOVE_PED_FROM_GROUP(iLocal_51);
 				}
-				if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_51, 1227113341) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iLocal_51, 1227113341) != 0)
+				if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_51, joaat("SCRIPT_TASK_GO_TO_ENTITY")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iLocal_51, joaat("SCRIPT_TASK_GO_TO_ENTITY")) != 0)
 				{
 					TASK::TASK_GO_TO_ENTITY(iLocal_51, PLAYER::PLAYER_PED_ID(), -1, 6f, 2f, 2f, 0);
 				}
@@ -2896,7 +2896,7 @@ void func_74()//Position - 0x2B7C
 			else
 			{
 				iLocal_89 = 0;
-				if (((TASK::GET_SCRIPT_TASK_STATUS(iLocal_51, 1227113341) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iLocal_51, 1227113341) == 0) || TASK::GET_SCRIPT_TASK_STATUS(iLocal_51, 242628503) == 1) || TASK::GET_SCRIPT_TASK_STATUS(iLocal_51, 242628503) == 0)
+				if (((TASK::GET_SCRIPT_TASK_STATUS(iLocal_51, joaat("SCRIPT_TASK_GO_TO_ENTITY")) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iLocal_51, joaat("SCRIPT_TASK_GO_TO_ENTITY")) == 0) || TASK::GET_SCRIPT_TASK_STATUS(iLocal_51, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 1) || TASK::GET_SCRIPT_TASK_STATUS(iLocal_51, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 0)
 				{
 					TASK::CLEAR_PED_TASKS(iLocal_51);
 					if (!PED::IS_PED_IN_GROUP(iLocal_51))
@@ -2908,7 +2908,7 @@ void func_74()//Position - 0x2B7C
 				}
 			}
 		}
-		else if (((!PED::IS_PED_IN_GROUP(iLocal_51) && !PED::IS_PED_IN_ANY_VEHICLE(iLocal_51, false)) && TASK::GET_SCRIPT_TASK_STATUS(iLocal_51, 242628503) != 1) && TASK::GET_SCRIPT_TASK_STATUS(iLocal_51, 242628503) != 0)
+		else if (((!PED::IS_PED_IN_GROUP(iLocal_51) && !PED::IS_PED_IN_ANY_VEHICLE(iLocal_51, false)) && TASK::GET_SCRIPT_TASK_STATUS(iLocal_51, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1) && TASK::GET_SCRIPT_TASK_STATUS(iLocal_51, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 0)
 		{
 			PED::SET_PED_AS_GROUP_MEMBER(iLocal_51, func_73());
 			PED::SET_PED_NEVER_LEAVES_GROUP(iLocal_51, true);
@@ -3886,7 +3886,7 @@ void func_95()//Position - 0x3889
 						}
 						if (bLocal_82 && !PED::IS_PED_INJURED(iLocal_51))
 						{
-							if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_51, 242628503) == 7 || SYSTEM::TIMERA() > 12000)
+							if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_51, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 7 || SYSTEM::TIMERA() > 12000)
 							{
 								Local_59 = { Local_63 };
 								Local_60 = { Local_64 };

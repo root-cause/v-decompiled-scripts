@@ -2288,7 +2288,7 @@ void func_57()//Position - 0x2205
 						{
 							if (PED::IS_PED_IN_ANY_VEHICLE(iLocal_63[iVar0], false))
 							{
-								TASK::TASK_DRIVE_BY(iLocal_63[iVar0], PLAYER::PLAYER_PED_ID(), 0, 0f, 0f, 0f, 1000f, 60, true, -753768974);
+								TASK::TASK_DRIVE_BY(iLocal_63[iVar0], PLAYER::PLAYER_PED_ID(), 0, 0f, 0f, 0f, 1000f, 60, true, joaat("FIRING_PATTERN_BURST_FIRE_DRIVEBY"));
 								PED::SET_PED_KEEP_TASK(iLocal_63[iVar0], true);
 							}
 						}
@@ -2312,7 +2312,7 @@ void func_57()//Position - 0x2205
 							{
 								if (PED::IS_PED_IN_ANY_VEHICLE(iLocal_63[iVar0], false))
 								{
-									TASK::TASK_DRIVE_BY(iLocal_63[iVar0], PLAYER::PLAYER_PED_ID(), 0, 0f, 0f, 0f, 1000f, 60, true, -753768974);
+									TASK::TASK_DRIVE_BY(iLocal_63[iVar0], PLAYER::PLAYER_PED_ID(), 0, 0f, 0f, 0f, 1000f, 60, true, joaat("FIRING_PATTERN_BURST_FIRE_DRIVEBY"));
 									PED::SET_PED_KEEP_TASK(iLocal_63[iVar0], true);
 								}
 							}
@@ -2331,7 +2331,7 @@ void func_57()//Position - 0x2205
 			{
 				if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false) && !iLocal_59[iVar0])
 				{
-					if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_63[iVar0], 579380604) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iLocal_63[iVar0], 579380604) != 0)
+					if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_63[iVar0], joaat("SCRIPT_TASK_VEHICLE_CHASE")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iLocal_63[iVar0], joaat("SCRIPT_TASK_VEHICLE_CHASE")) != 0)
 					{
 						TASK::CLEAR_PED_TASKS(iLocal_63[iVar0]);
 						if (!ENTITY::IS_ENTITY_DEAD(iLocal_64[iVar0], false))
@@ -2914,7 +2914,7 @@ int func_72()//Position - 0x2DA8
 						PED::SET_PED_COMBAT_ATTRIBUTES(iLocal_63[iVar2], 1, true);
 						PED::SET_PED_COMBAT_ATTRIBUTES(iLocal_63[iVar2], 52, true);
 						PED::SET_PED_ACCURACY(iLocal_63[iVar2], 5);
-						PED::SET_PED_FIRING_PATTERN(iLocal_63[iVar2], 1566631136);
+						PED::SET_PED_FIRING_PATTERN(iLocal_63[iVar2], joaat("FIRING_PATTERN_SINGLE_SHOT"));
 						PED::SET_PED_SHOOT_RATE(iLocal_63[iVar2], MISC::GET_RANDOM_INT_IN_RANGE(50, 100));
 						PED::SET_PED_CAN_BE_KNOCKED_OFF_VEHICLE(iLocal_63[iVar2], 1);
 						PED::SET_PED_CONFIG_FLAG(iLocal_63[iVar2], 42, true);

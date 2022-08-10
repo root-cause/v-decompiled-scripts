@@ -416,7 +416,7 @@ int func_3(int* iParam0)//Position - 0x12C
 		{
 			if (FIRE::IS_ENTITY_ON_FIRE(*iParam0))
 			{
-				if (TASK::GET_SCRIPT_TASK_STATUS(*iParam0, 1805844857) != 1)
+				if (TASK::GET_SCRIPT_TASK_STATUS(*iParam0, joaat("SCRIPT_TASK_SMART_FLEE_PED")) != 1)
 				{
 					TASK::STOP_ANIM_PLAYBACK(*iParam0, 0, false);
 				}
@@ -552,7 +552,7 @@ int func_3(int* iParam0)//Position - 0x12C
 					return 0;
 				}
 				func_7(*iParam0);
-				if (TASK::GET_SCRIPT_TASK_STATUS(*iParam0, 713668775) != 1)
+				if (TASK::GET_SCRIPT_TASK_STATUS(*iParam0, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1)
 				{
 					if (SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(*iParam0, true), Local_264 + Local_266) < (fLocal_267 * fLocal_267))
 					{
@@ -674,7 +674,7 @@ int func_3(int* iParam0)//Position - 0x12C
 				{
 					return 0;
 				}
-				if (TASK::GET_SCRIPT_TASK_STATUS(*iParam0, 1805844857) != 1)
+				if (TASK::GET_SCRIPT_TASK_STATUS(*iParam0, joaat("SCRIPT_TASK_SMART_FLEE_PED")) != 1)
 				{
 					TASK::TASK_SMART_FLEE_PED(*iParam0, PLAYER::PLAYER_PED_ID(), 50f, 20000, true, false);
 					return 1;

@@ -2974,7 +2974,7 @@ void func_67()//Position - 0x3593
 			case 2:
 				if (!CAM::DOES_CAM_EXIST(iLocal_118))
 				{
-					iLocal_118 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 0f, 0f, 0f, 0f, 0f, 0f, 50f, false, 2);
+					iLocal_118 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 0f, 0f, 0f, 0f, 0f, 0f, 50f, false, 2);
 				}
 				func_179(iLocal_80, Local_66.f_486.f_6, Local_66.f_486.f_9.f_2, &(Local_66.f_102), &(Local_66.f_102.f_3), &uVar6);
 				CAM::SET_CAM_COORD(iLocal_118, Local_66.f_102);
@@ -9181,7 +9181,7 @@ void func_197()//Position - 0xC108
 				TASK::TASK_PERFORM_SEQUENCE(PLAYER::PLAYER_PED_ID(), iLocal_78);
 				if (!CAM::DOES_CAM_EXIST(iLocal_102))
 				{
-					iLocal_102 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 0f, 0f, 0f, 0f, 0f, 0f, 50f, false, 2);
+					iLocal_102 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 0f, 0f, 0f, 0f, 0f, 0f, 50f, false, 2);
 				}
 				CAM::ATTACH_CAM_TO_ENTITY(iLocal_102, PLAYER::PLAYER_PED_ID(), -0.1878f, 3.0635f, 0.68f, true);
 				CAM::POINT_CAM_AT_ENTITY(iLocal_102, PLAYER::PLAYER_PED_ID(), -0.0129f, 0.0927f, 0.3008f, true);
@@ -9198,7 +9198,7 @@ void func_197()//Position - 0xC108
 			{
 				if (!CAM::DOES_CAM_EXIST(iLocal_103))
 				{
-					iLocal_103 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 0f, 0f, 0f, 0f, 0f, 0f, 50f, false, 2);
+					iLocal_103 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 0f, 0f, 0f, 0f, 0f, 0f, 50f, false, 2);
 				}
 				CAM::ATTACH_CAM_TO_ENTITY(iLocal_103, PLAYER::PLAYER_PED_ID(), -1.0346f, 2.9183f, 0.68f, true);
 				CAM::POINT_CAM_AT_ENTITY(iLocal_103, PLAYER::PLAYER_PED_ID(), -0.0574f, 0.1074f, 0.3008f, true);

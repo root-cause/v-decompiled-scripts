@@ -3520,7 +3520,7 @@ int func_93(int iParam0)//Position - 0x34EB
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;
@@ -6936,7 +6936,7 @@ int func_172(int iParam0, int iParam1)//Position - 0x74C8
 
 bool func_173()//Position - 0x7947
 {
-	return DLC::IS_DLC_PRESENT(1199590110);
+	return DLC::IS_DLC_PRESENT(joaat("mpsum2"));
 }
 
 bool func_174()//Position - 0x7958

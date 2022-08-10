@@ -7477,7 +7477,7 @@ void func_134(int iParam0)//Position - 0x94C8
 			case 7:
 				if (func_154(7))
 				{
-					if (!PED::IS_PED_IN_COMBAT(Local_47[iParam0 /*5*/], PLAYER::PLAYER_PED_ID()) && !func_135(Local_47[iParam0 /*5*/], 579380604, 1))
+					if (!PED::IS_PED_IN_COMBAT(Local_47[iParam0 /*5*/], PLAYER::PLAYER_PED_ID()) && !func_135(Local_47[iParam0 /*5*/], joaat("SCRIPT_TASK_VEHICLE_CHASE"), 1))
 					{
 						TASK::TASK_COMBAT_PED(Local_47[iParam0 /*5*/], PLAYER::PLAYER_PED_ID(), 0, 16);
 					}

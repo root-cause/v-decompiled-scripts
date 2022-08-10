@@ -810,7 +810,7 @@ void __EntryFunction__()//Position - 0x0
 										{
 											iLocal_47 = 5;
 										}
-										if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_60, 242628503) == 7)
+										if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_60, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 7)
 										{
 											TASK::OPEN_SEQUENCE_TASK(&iLocal_103);
 											TASK::TASK_LOOK_AT_ENTITY(0, iLocal_61, 5000, 0, 2);
@@ -828,7 +828,7 @@ void __EntryFunction__()//Position - 0x0
 										func_160();
 										if (!ENTITY::IS_ENTITY_DEAD(iLocal_60, false))
 										{
-											if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_60, 242628503) == 7)
+											if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_60, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 7)
 											{
 												TASK::OPEN_SEQUENCE_TASK(&iLocal_103);
 												TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, iLocal_61, 0);
@@ -1101,7 +1101,7 @@ void __EntryFunction__()//Position - 0x0
 						{
 							if (bLocal_80 == 3)
 							{
-								if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_61, 1805844857) != 1)
+								if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_61, joaat("SCRIPT_TASK_SMART_FLEE_PED")) != 1)
 								{
 									TASK::CLEAR_PED_SECONDARY_TASK(iLocal_61);
 									TASK::TASK_SMART_FLEE_PED(iLocal_61, iLocal_60, 200f, -1, false, false);
@@ -1109,7 +1109,7 @@ void __EntryFunction__()//Position - 0x0
 									iLocal_124 = 1;
 								}
 							}
-							else if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_61, 1805844857) != 1)
+							else if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_61, joaat("SCRIPT_TASK_SMART_FLEE_PED")) != 1)
 							{
 								TASK::CLEAR_PED_SECONDARY_TASK(iLocal_61);
 								TASK::TASK_SMART_FLEE_PED(iLocal_61, PLAYER::PLAYER_PED_ID(), 200f, -1, false, false);
@@ -3131,7 +3131,7 @@ void func_59()//Position - 0x2820
 								}
 							}
 						}
-						else if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_60, 242628503) == 7)
+						else if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_60, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 7)
 						{
 							TASK::CLEAR_PED_TASKS(iLocal_60);
 							TASK::OPEN_SEQUENCE_TASK(&iLocal_103);
@@ -4682,7 +4682,7 @@ void func_98()//Position - 0x4AE2
 {
 	int iVar0;
 	
-	iVar0 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(PLAYER::PLAYER_PED_ID(), 0.5f, -1f, 0.5f), 0f, 0f, ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()), 65f, true, 2);
+	iVar0 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(PLAYER::PLAYER_PED_ID(), 0.5f, -1f, 0.5f), 0f, 0f, ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()), 65f, true, 2);
 	CAM::SET_CAM_ACTIVE(iVar0, true);
 }
 
@@ -6670,7 +6670,7 @@ void func_163()//Position - 0x6E2B
 			{
 				if (ENTITY::IS_ENTITY_AT_ENTITY(PLAYER::PLAYER_PED_ID(), iLocal_60, 7f, 7f, 7f, false, true, 0))
 				{
-					if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_60, 242628503) == 1)
+					if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_60, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 1)
 					{
 						if (TASK::GET_SEQUENCE_PROGRESS(iLocal_60) == iLocal_138)
 						{
@@ -6913,7 +6913,7 @@ void func_167()//Position - 0x717C
 						break;
 					
 					case 1:
-						if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_61, 242628503) == 7)
+						if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_61, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 7)
 						{
 							Local_626 = { OBJECT::GET_PICKUP_COORDS(iLocal_151) - Vector(0f, 0f, 0.75f) };
 							if (OBJECT::DOES_PICKUP_OBJECT_EXIST(iLocal_151))
@@ -9189,7 +9189,7 @@ void func_209()//Position - 0xA94E
 		{
 			if (func_194())
 			{
-				if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_60, 242628503) == 7 || TASK::GET_SCRIPT_TASK_STATUS(iLocal_60, 474215631) == 7)
+				if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_60, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 7 || TASK::GET_SCRIPT_TASK_STATUS(iLocal_60, joaat("SCRIPT_TASK_COWER")) == 7)
 				{
 					if (AUDIO::IS_SCRIPTED_CONVERSATION_ONGOING())
 					{
@@ -11189,7 +11189,7 @@ void func_278()//Position - 0xD440
 			if (!PED::IS_PED_INJURED(iLocal_60))
 			{
 				PED::SET_PED_CAN_BE_TARGETTED(iLocal_60, true);
-				if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_60, -1146898486) == 7 && TASK::GET_SCRIPT_TASK_STATUS(iLocal_60, 242628503) == 7)
+				if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_60, joaat("SCRIPT_TASK_WANDER_STANDARD")) == 7 && TASK::GET_SCRIPT_TASK_STATUS(iLocal_60, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 7)
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_103);
 					if (PED::IS_PED_DUCKING(iLocal_60))

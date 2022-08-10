@@ -1279,9 +1279,9 @@ void func_6(bool bParam0)//Position - 0x375
 				{
 					if (BitTest(Local_70[Local_68.f_2[bParam0 /*23*/].f_2 /*44*/].f_4.f_2, 21))
 					{
-						if (!func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), -272084098, 1))
+						if (!func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), joaat("SCRIPT_TASK_VEHICLE_PARK"), 1))
 						{
-							if (!func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), -1817882002, 1))
+							if (!func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD"), 1))
 							{
 								if (VEHICLE::IS_VEHICLE_STOPPED(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/])))
 								{
@@ -1456,7 +1456,7 @@ void func_7(bool bParam0, bool bParam1)//Position - 0x9B6
 							{
 								if (!PED::IS_PED_INJURED(iVar2))
 								{
-									if (!func_9(iVar2, -828834893, 1) && !func_9(iVar2, 451360105, 1))
+									if (!func_9(iVar2, joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE"), 1) && !func_9(iVar2, joaat("SCRIPT_TASK_LEAVE_VEHICLE"), 1))
 									{
 										if (bParam1)
 										{
@@ -1485,7 +1485,7 @@ int func_8(bool bParam0)//Position - 0xABC
 		if (ENTITY::IS_ENTITY_AT_COORD(NETWORK::NET_TO_ENT(Local_68.f_2[bParam0 /*23*/]), Local_70[Local_68.f_2[bParam0 /*23*/].f_3 /*44*/].f_4.f_30, 45f, 45f, 20f, false, true, 0) || BitTest(Local_70[Local_68.f_2[bParam0 /*23*/].f_3 /*44*/].f_4.f_2, 20))
 		{
 			MISC::SET_BIT(&(Local_70[Local_68.f_2[bParam0 /*23*/].f_3 /*44*/].f_4.f_2), 20);
-			if (TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), 242628503) == 7)
+			if (TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 7)
 			{
 				return 1;
 			}
@@ -8129,7 +8129,7 @@ void func_195(bool bParam0)//Position - 0x8E8D
 								TASK::TASK_VEHICLE_DRIVE_TO_COORD(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/]), Local_70[Local_68.f_2[bParam0 /*23*/].f_2 /*44*/].f_4.f_26, 12f, 0, ENTITY::GET_ENTITY_MODEL(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/])), iVar1, (45f - 20f), 20f);
 							}
 						}
-						else if (!func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), -1817882002, 1))
+						else if (!func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD"), 1))
 						{
 							iVar1 = iLocal_95;
 							TASK::TASK_VEHICLE_DRIVE_TO_COORD(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/]), Local_70[Local_68.f_2[bParam0 /*23*/].f_2 /*44*/].f_4.f_26, 12f, 0, ENTITY::GET_ENTITY_MODEL(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/])), iVar1, (45f - 20f), 20f);
@@ -8179,7 +8179,7 @@ void func_195(bool bParam0)//Position - 0x8E8D
 						}
 						else if (!VEHICLE::IS_VEHICLE_STOPPED(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/])))
 						{
-							if (!func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), -1273030092, 1) || TASK::GET_ACTIVE_VEHICLE_MISSION_TYPE(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/])) != 5)
+							if (!func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), joaat("SCRIPT_TASK_VEHICLE_MISSION"), 1) || TASK::GET_ACTIVE_VEHICLE_MISSION_TYPE(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/])) != 5)
 							{
 								MISC::CLEAR_BIT(&(Local_70[Local_68.f_2[bParam0 /*23*/].f_2 /*44*/].f_4.f_2), 22);
 							}
@@ -8194,7 +8194,7 @@ void func_195(bool bParam0)//Position - 0x8E8D
 						Local_70[Local_68.f_2[bParam0 /*23*/].f_3 /*44*/].f_4.f_33 = 0f;
 						Local_70[Local_68.f_2[bParam0 /*23*/].f_3 /*44*/].f_4.f_34 = -1;
 					}
-					if (func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), -1273030092, 1))
+					if (func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), joaat("SCRIPT_TASK_VEHICLE_MISSION"), 1))
 					{
 						func_115(bParam0, 0, 0);
 					}
@@ -8213,7 +8213,7 @@ void func_195(bool bParam0)//Position - 0x8E8D
 						{
 							if (!VEHICLE::IS_VEHICLE_STOPPED(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/])))
 							{
-								if (!func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), -1273030092, 1))
+								if (!func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), joaat("SCRIPT_TASK_VEHICLE_MISSION"), 1))
 								{
 									TASK::TASK_VEHICLE_MISSION_COORS_TARGET(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/]), Var4, 5, 5f, 1076627627, -1f, 1f, true);
 								}
@@ -8271,7 +8271,7 @@ void func_195(bool bParam0)//Position - 0x8E8D
 						{
 							if (!func_8(bParam0))
 							{
-								if (!func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), 242628503, 1))
+								if (!func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1))
 								{
 									fVar2 = 15f;
 									iVar1 = iLocal_95;
@@ -8307,7 +8307,7 @@ void func_195(bool bParam0)//Position - 0x8E8D
 					{
 						if (!BitTest(Local_70[Local_68.f_2[bParam0 /*23*/].f_3 /*44*/].f_4.f_2, 24))
 						{
-							if (!func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), 242628503, 1))
+							if (!func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1))
 							{
 								TASK::TASK_VEHICLE_MISSION_COORS_TARGET(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/]), ENTITY::GET_ENTITY_COORDS(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/]), true), 5, 5f, 1076627627, -1f, 1f, true);
 								iLocal_814 = 1;
@@ -8318,7 +8318,7 @@ void func_195(bool bParam0)//Position - 0x8E8D
 						{
 							if (!VEHICLE::IS_VEHICLE_STOPPED(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/])))
 							{
-								if (!func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), -1273030092, 1) || TASK::GET_ACTIVE_VEHICLE_MISSION_TYPE(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/])) != 5)
+								if (!func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), joaat("SCRIPT_TASK_VEHICLE_MISSION"), 1) || TASK::GET_ACTIVE_VEHICLE_MISSION_TYPE(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/])) != 5)
 								{
 									MISC::CLEAR_BIT(&(Local_70[Local_68.f_2[bParam0 /*23*/].f_3 /*44*/].f_4.f_2), 24);
 								}
@@ -8348,7 +8348,7 @@ void func_195(bool bParam0)//Position - 0x8E8D
 						{
 							if (!BitTest(Local_70[Local_68.f_2[bParam0 /*23*/].f_3 /*44*/].f_4.f_2, 25))
 							{
-								if (!func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), -1273030092, 1) || TASK::GET_ACTIVE_VEHICLE_MISSION_TYPE(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/])) != 5)
+								if (!func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), joaat("SCRIPT_TASK_VEHICLE_MISSION"), 1) || TASK::GET_ACTIVE_VEHICLE_MISSION_TYPE(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/])) != 5)
 								{
 									func_115(bParam0, 1, 1);
 									TASK::TASK_VEHICLE_PARK(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/]), ENTITY::GET_ENTITY_COORDS(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), true), ENTITY::GET_ENTITY_HEADING(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1)), 3, 60f, false);
@@ -8374,7 +8374,7 @@ void func_195(bool bParam0)//Position - 0x8E8D
 					{
 						ENTITY::SET_ENTITY_ANIM_SPEED(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), "ODDJOBS@TAXI@DRIVER", "leanover_exit", 1.2f);
 					}
-					else if (!func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), -1273030092, 1))
+					else if (!func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), joaat("SCRIPT_TASK_VEHICLE_MISSION"), 1))
 					{
 						TASK::TASK_VEHICLE_MISSION_COORS_TARGET(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/]), ENTITY::GET_ENTITY_COORDS(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/]), true), 8, 12f, 786599, 400f, -1f, false);
 					}
@@ -8398,7 +8398,7 @@ void func_195(bool bParam0)//Position - 0x8E8D
 					PED::SET_PED_CONFIG_FLAG(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), 251, false);
 					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), false);
 					VEHICLE::_0xBE5C1255A1830FF5(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/]), false);
-					if (((!PED::IS_PED_FLEEING(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1)) && !func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), 1805844857, 1)) && !func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), -251125078, 1)) && TASK::GET_ACTIVE_VEHICLE_MISSION_TYPE(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/])) != 8)
+					if (((!PED::IS_PED_FLEEING(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1)) && !func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), joaat("SCRIPT_TASK_SMART_FLEE_PED"), 1)) && !func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), -251125078, 1)) && TASK::GET_ACTIVE_VEHICLE_MISSION_TYPE(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/])) != 8)
 					{
 						if (Local_68.f_2[bParam0 /*23*/].f_7 == 10)
 						{

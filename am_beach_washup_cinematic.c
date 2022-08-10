@@ -367,7 +367,7 @@ void func_19(var uParam0)//Position - 0x499
 	NETWORK::NETWORK_START_SYNCHRONISED_SCENE(uParam0->f_5);
 	PED::SET_FACIAL_IDLE_ANIM_OVERRIDE(PLAYER::PLAYER_PED_ID(), "HS4F_IG25_BEACH", 0);
 	PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(PLAYER::PLAYER_PED_ID(), false, false);
-	uParam0->f_6 = CAM::CREATE_CAMERA(964613260, true);
+	uParam0->f_6 = CAM::CREATE_CAMERA(joaat("DEFAULT_ANIMATED_CAMERA"), true);
 	CAM::PLAY_CAM_ANIM(uParam0->f_6, "action_camera", sVar0, uParam0->f_1, 0f, 0f, uParam0->f_4, false, 2);
 	CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
 	STREAMING::REMOVE_ANIM_DICT(sVar0);

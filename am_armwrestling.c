@@ -8284,7 +8284,7 @@ int func_134(int* iParam0, var uParam1, var uParam2, bool bParam3, int iParam4)/
 						{
 							if (!CAM::DOES_CAM_EXIST(*uParam1))
 							{
-								*uParam1 = CAM::CREATE_CAMERA(26379945, true);
+								*uParam1 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 							}
 							CAM::STOP_CAM_POINTING(*uParam1);
 							if (!func_57(PLAYER::PLAYER_ID()) && !PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
@@ -10133,7 +10133,7 @@ int func_163(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0xB
 		}
 		if (!CAM::DOES_CAM_EXIST(*uParam1))
 		{
-			*uParam1 = CAM::CREATE_CAMERA(26379945, true);
+			*uParam1 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 		}
 		CAM::STOP_CAM_POINTING(*uParam1);
 		CAM::SET_CAM_COORD(*uParam1, Var1);
@@ -114224,40 +114224,40 @@ void func_858(var uParam0, var* uParam1, struct<3> Param2, int iParam3)//Positio
 	
 	func_1425(&uVar2, &fVar3, iParam3, 0);
 	Var0 = { PED::GET_PED_BONE_COORDS(PLAYER::PLAYER_PED_ID(), 31086, 0f, 0f, 0f) };
-	func_860(uParam0, 4, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+	func_860(uParam0, 4, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 	CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 4), PLAYER::PLAYER_PED_ID(), -0.8117f, -0.124f, 0.0094f, true);
 	CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 4), PLAYER::PLAYER_PED_ID(), 1.5073f, 1.6429f, 0.717f, true);
 	CAM::SET_CAM_FOV(func_859(uParam0, 4), 31f);
 	Var0 = { PED::GET_PED_BONE_COORDS(PLAYER::PLAYER_PED_ID(), 31086, 0f, 0f, 0f) };
-	func_860(uParam0, 5, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+	func_860(uParam0, 5, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 	CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 5), PLAYER::PLAYER_PED_ID(), -0.8117f, -0.124f, 0.0094f, true);
 	CAM::POINT_CAM_AT_PED_BONE(func_859(uParam0, 5), PLAYER::PLAYER_PED_ID(), 57005, 0f, 0f, 0f, true);
 	CAM::SET_CAM_FOV(func_859(uParam0, 5), 25f);
-	func_860(uParam0, 6, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+	func_860(uParam0, 6, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 	CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 6), PLAYER::PLAYER_PED_ID(), 1.0567f, 1.3191f, 0.0094f, true);
 	CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 6), PLAYER::PLAYER_PED_ID(), -1.2622f, -0.4479f, 0.717f, true);
 	CAM::SET_CAM_FOV(func_859(uParam0, 6), 31f);
-	func_860(uParam0, 7, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+	func_860(uParam0, 7, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 	CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 7), PLAYER::PLAYER_PED_ID(), 1.0567f, 1.3191f, 0.0094f, true);
 	CAM::POINT_CAM_AT_PED_BONE(func_859(uParam0, 7), PLAYER::PLAYER_PED_ID(), 57005, 0f, 0f, 0f, true);
 	CAM::SET_CAM_FOV(func_859(uParam0, 7), 25f);
-	func_860(uParam0, 3, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+	func_860(uParam0, 3, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 	CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 3), PLAYER::PLAYER_PED_ID(), -0.8117f, -0.124f, 0.0094f, true);
 	CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 3), PLAYER::PLAYER_PED_ID(), 1.5073f, 1.6429f, 0.717f, true);
 	CAM::SET_CAM_FOV(func_859(uParam0, 3), 31f);
-	func_860(uParam0, 10, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+	func_860(uParam0, 10, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 	CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 10), PLAYER::PLAYER_PED_ID(), 1.5696f, 1.9379f, 0.3037f, true);
 	CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 10), PLAYER::PLAYER_PED_ID(), -0.035f, -0.5969f, 0.298f, true);
 	CAM::SET_CAM_FOV(func_859(uParam0, 10), 22.6468f);
-	func_860(uParam0, 11, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+	func_860(uParam0, 11, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 	CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 11), PLAYER::PLAYER_PED_ID(), 1.4163f, 1.8001f, 0.3026f, true);
 	CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 11), PLAYER::PLAYER_PED_ID(), -0.1936f, -0.7299f, 0.3842f, true);
 	CAM::SET_CAM_FOV(func_859(uParam0, 11), 22.6468f);
-	func_860(uParam0, 12, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+	func_860(uParam0, 12, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 	CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 12), PLAYER::PLAYER_PED_ID(), -0.4185f, -1.6043f, 0.7408f, true);
 	CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 12), PLAYER::PLAYER_PED_ID(), 0.3602f, 1.2691f, 0.37f, true);
 	CAM::SET_CAM_FOV(func_859(uParam0, 12), 28.9663f);
-	func_860(uParam0, 13, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+	func_860(uParam0, 13, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 	CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 13), PLAYER::PLAYER_PED_ID(), 0.64f, -1.6043f, 0.7408f, true);
 	CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 13), PLAYER::PLAYER_PED_ID(), 0.3602f, 1.2691f, 0.37f, true);
 	CAM::SET_CAM_FOV(func_859(uParam0, 13), 28.9663f);
@@ -114269,7 +114269,7 @@ void func_858(var uParam0, var* uParam1, struct<3> Param2, int iParam3)//Positio
 			{
 				Var0 = { 976.7533f, -1838.241f, 37.2514f };
 				Var1 = { 976.2316f, -1837.518f, 36.2f };
-				func_860(uParam0, 0, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+				func_860(uParam0, 0, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 				CAM::POINT_CAM_AT_PED_BONE(func_859(uParam0, 0), PLAYER::PLAYER_PED_ID(), 11816, 0f, 0f, 0f, true);
 				CAM::POINT_CAM_AT_COORD(func_859(uParam0, 0), Var1);
 				CAM::SET_CAM_FOV(func_859(uParam0, 0), 60f);
@@ -114278,7 +114278,7 @@ void func_858(var uParam0, var* uParam1, struct<3> Param2, int iParam3)//Positio
 			{
 				Var0 = { 976.74f, -1837.142f, 37.2514f };
 				Var1 = { 977.3871f, -1837.849f, 36.2f };
-				func_860(uParam0, 0, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+				func_860(uParam0, 0, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 				CAM::POINT_CAM_AT_PED_BONE(func_859(uParam0, 0), PLAYER::PLAYER_PED_ID(), 11816, 0f, 0f, 0f, true);
 				CAM::POINT_CAM_AT_COORD(func_859(uParam0, 0), Var1);
 				CAM::SET_CAM_FOV(func_859(uParam0, 0), 60f);
@@ -114287,44 +114287,44 @@ void func_858(var uParam0, var* uParam1, struct<3> Param2, int iParam3)//Positio
 		else
 		{
 			Var0 = { 0f, 0f, 0f };
-			func_860(uParam0, 2, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+			func_860(uParam0, 2, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 			CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 2), PLAYER::PLAYER_PED_ID(), 2.0842f, 0.2951f, 0.9273f, true);
 			CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 2), PLAYER::PLAYER_PED_ID(), -0.8339f, 0.5439f, 0.2771f, true);
 			CAM::SET_CAM_FOV(func_859(uParam0, 2), 35f);
 			if (iParam3 != 11)
 			{
-				func_860(uParam0, 0, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+				func_860(uParam0, 0, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 				CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 0), PLAYER::PLAYER_PED_ID(), -0.8815f, 3.8539f, 0.3045f, true);
 				CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 0), PLAYER::PLAYER_PED_ID(), 0.1708f, 1.0511f, 0.1121f, true);
 				CAM::SET_CAM_FOV(func_859(uParam0, 0), 30.5f);
-				func_860(uParam0, 1, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+				func_860(uParam0, 1, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 				CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 1), PLAYER::PLAYER_PED_ID(), -0.9304f, 3.3154f, 0.2977f, true);
 				CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 1), PLAYER::PLAYER_PED_ID(), 0.124f, 0.5073f, 0.2389f, true);
 				CAM::SET_CAM_FOV(func_859(uParam0, 1), 30.5f);
-				func_860(uParam0, 8, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+				func_860(uParam0, 8, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 				CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 8), PLAYER::PLAYER_PED_ID(), 1.3417f, 3.3647f, 0.3018f, true);
 				CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 8), PLAYER::PLAYER_PED_ID(), -0.0414f, 0.7025f, 0.2903f, true);
 				CAM::SET_CAM_FOV(func_859(uParam0, 8), 30.5f);
-				func_860(uParam0, 9, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+				func_860(uParam0, 9, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 				CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 9), PLAYER::PLAYER_PED_ID(), 1.2236f, 3.0157f, 0.3004f, true);
 				CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 9), PLAYER::PLAYER_PED_ID(), -0.2143f, 0.3829f, 0.2889f, true);
 				CAM::SET_CAM_FOV(func_859(uParam0, 9), 30.5f);
 			}
 			else
 			{
-				func_860(uParam0, 0, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+				func_860(uParam0, 0, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 				CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 0), PLAYER::PLAYER_PED_ID(), -0.8635f, 3.4227f, 0.2789f, true);
 				CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 0), PLAYER::PLAYER_PED_ID(), 0.1889f, 0.6196f, 0.0888f, true);
 				CAM::SET_CAM_FOV(func_859(uParam0, 0), 30.5f);
-				func_860(uParam0, 1, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+				func_860(uParam0, 1, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 				CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 1), PLAYER::PLAYER_PED_ID(), -0.8257f, 3.3223f, 0.2721f, true);
 				CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 1), PLAYER::PLAYER_PED_ID(), 0.2268f, 0.5192f, 0.082f, true);
 				CAM::SET_CAM_FOV(func_859(uParam0, 1), 30.5f);
-				func_860(uParam0, 8, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+				func_860(uParam0, 8, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 				CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 8), PLAYER::PLAYER_PED_ID(), 1.1558f, 3.0005f, 0.3003f, true);
 				CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 8), PLAYER::PLAYER_PED_ID(), -0.2296f, 0.3398f, 0.2888f, true);
 				CAM::SET_CAM_FOV(func_859(uParam0, 8), 30.5f);
-				func_860(uParam0, 9, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+				func_860(uParam0, 9, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 				CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 9), PLAYER::PLAYER_PED_ID(), 1.1483f, 2.9904f, 0.3002f, true);
 				CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 9), PLAYER::PLAYER_PED_ID(), -0.2356f, 0.3288f, 0.2887f, true);
 				CAM::SET_CAM_FOV(func_859(uParam0, 9), 30.5f);
@@ -120857,40 +120857,40 @@ void func_1037(var uParam0, var uParam1, struct<3> Param2, int iParam3, int iPar
 	
 	func_1425(&uVar2, &fVar3, iParam3, 0);
 	Var0 = { PED::GET_PED_BONE_COORDS(PLAYER::PLAYER_PED_ID(), 31086, 0f, 0f, 0f) };
-	func_860(uParam0, 4, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+	func_860(uParam0, 4, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 	CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 4), iParam4, -0.8117f, -0.124f, 0.0094f, true);
 	CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 4), iParam4, 1.5073f, 1.6429f, 0.717f, true);
 	CAM::SET_CAM_FOV(func_859(uParam0, 4), 31f);
 	Var0 = { PED::GET_PED_BONE_COORDS(PLAYER::PLAYER_PED_ID(), 31086, 0f, 0f, 0f) };
-	func_860(uParam0, 5, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+	func_860(uParam0, 5, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 	CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 5), iParam4, -0.8117f, -0.124f, 0.0094f, true);
 	CAM::POINT_CAM_AT_PED_BONE(func_859(uParam0, 5), iParam4, 57005, 0f, 0f, 0f, true);
 	CAM::SET_CAM_FOV(func_859(uParam0, 5), 25f);
-	func_860(uParam0, 6, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+	func_860(uParam0, 6, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 	CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 6), iParam4, 1.0567f, 1.3191f, 0.0094f, true);
 	CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 6), iParam4, -1.2622f, -0.4479f, 0.717f, true);
 	CAM::SET_CAM_FOV(func_859(uParam0, 6), 31f);
-	func_860(uParam0, 7, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+	func_860(uParam0, 7, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 	CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 7), iParam4, 1.0567f, 1.3191f, 0.0094f, true);
 	CAM::POINT_CAM_AT_PED_BONE(func_859(uParam0, 7), iParam4, 57005, 0f, 0f, 0f, true);
 	CAM::SET_CAM_FOV(func_859(uParam0, 7), 25f);
-	func_860(uParam0, 3, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+	func_860(uParam0, 3, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 	CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 3), iParam4, -0.8117f, -0.124f, 0.0094f, true);
 	CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 3), iParam4, 1.5073f, 1.6429f, 0.717f, true);
 	CAM::SET_CAM_FOV(func_859(uParam0, 3), 31f);
-	func_860(uParam0, 10, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+	func_860(uParam0, 10, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 	CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 10), iParam4, 1.5696f, 1.9379f, 0.3037f, true);
 	CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 10), iParam4, -0.035f, -0.5969f, 0.298f, true);
 	CAM::SET_CAM_FOV(func_859(uParam0, 10), 22.6468f);
-	func_860(uParam0, 11, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+	func_860(uParam0, 11, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 	CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 11), iParam4, 1.4163f, 1.8001f, 0.3026f, true);
 	CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 11), iParam4, -0.1936f, -0.7299f, 0.3842f, true);
 	CAM::SET_CAM_FOV(func_859(uParam0, 11), 22.6468f);
-	func_860(uParam0, 12, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+	func_860(uParam0, 12, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 	CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 12), iParam4, -0.4185f, -1.6043f, 0.7408f, true);
 	CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 12), iParam4, 0.3602f, 1.2691f, 0.37f, true);
 	CAM::SET_CAM_FOV(func_859(uParam0, 12), 28.9663f);
-	func_860(uParam0, 13, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+	func_860(uParam0, 13, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 	CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 13), iParam4, 0.64f, -1.6043f, 0.7408f, true);
 	CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 13), PLAYER::PLAYER_PED_ID(), 0.3602f, 1.2691f, 0.37f, true);
 	CAM::SET_CAM_FOV(func_859(uParam0, 13), 28.9663f);
@@ -120902,7 +120902,7 @@ void func_1037(var uParam0, var uParam1, struct<3> Param2, int iParam3, int iPar
 			{
 				Var0 = { 976.7533f, -1838.241f, 37.2514f };
 				Var1 = { 976.2316f, -1837.518f, 36.2f };
-				func_860(uParam0, 0, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+				func_860(uParam0, 0, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 				CAM::POINT_CAM_AT_PED_BONE(func_859(uParam0, 0), PLAYER::PLAYER_PED_ID(), 11816, 0f, 0f, 0f, true);
 				CAM::POINT_CAM_AT_COORD(func_859(uParam0, 0), Var1);
 				CAM::SET_CAM_FOV(func_859(uParam0, 0), 60f);
@@ -120911,7 +120911,7 @@ void func_1037(var uParam0, var uParam1, struct<3> Param2, int iParam3, int iPar
 			{
 				Var0 = { 976.74f, -1837.142f, 37.2514f };
 				Var1 = { 977.3871f, -1837.849f, 36.2f };
-				func_860(uParam0, 0, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+				func_860(uParam0, 0, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 				CAM::POINT_CAM_AT_PED_BONE(func_859(uParam0, 0), PLAYER::PLAYER_PED_ID(), 11816, 0f, 0f, 0f, true);
 				CAM::POINT_CAM_AT_COORD(func_859(uParam0, 0), Var1);
 				CAM::SET_CAM_FOV(func_859(uParam0, 0), 60f);
@@ -120920,44 +120920,44 @@ void func_1037(var uParam0, var uParam1, struct<3> Param2, int iParam3, int iPar
 		else
 		{
 			Var0 = { 0f, 0f, 0f };
-			func_860(uParam0, 2, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+			func_860(uParam0, 2, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 			CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 2), iParam4, 2.0842f, 0.2951f, 0.9273f, true);
 			CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 2), iParam4, -0.8339f, 0.5439f, 0.2771f, true);
 			CAM::SET_CAM_FOV(func_859(uParam0, 2), 35f);
 			if (iParam3 != 11)
 			{
-				func_860(uParam0, 0, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+				func_860(uParam0, 0, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 				CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 0), iParam4, -0.8815f, 3.8539f, 0.3045f, true);
 				CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 0), iParam4, 0.1708f, 1.0511f, 0.1121f, true);
 				CAM::SET_CAM_FOV(func_859(uParam0, 0), 30.5f);
-				func_860(uParam0, 1, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+				func_860(uParam0, 1, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 				CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 1), iParam4, -0.9304f, 3.3154f, 0.2977f, true);
 				CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 1), iParam4, 0.124f, 0.5073f, 0.2389f, true);
 				CAM::SET_CAM_FOV(func_859(uParam0, 1), 30.5f);
-				func_860(uParam0, 8, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+				func_860(uParam0, 8, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 				CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 8), iParam4, 1.3417f, 3.3647f, 0.3018f, true);
 				CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 8), iParam4, -0.0414f, 0.7025f, 0.2903f, true);
 				CAM::SET_CAM_FOV(func_859(uParam0, 8), 30.5f);
-				func_860(uParam0, 9, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+				func_860(uParam0, 9, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 				CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 9), iParam4, 1.2236f, 3.0157f, 0.3004f, true);
 				CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 9), iParam4, -0.2143f, 0.3829f, 0.2889f, true);
 				CAM::SET_CAM_FOV(func_859(uParam0, 9), 30.5f);
 			}
 			else
 			{
-				func_860(uParam0, 0, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+				func_860(uParam0, 0, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 				CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 0), iParam4, -0.8635f, 3.4227f, 0.2789f, true);
 				CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 0), iParam4, 0.1889f, 0.6196f, 0.0888f, true);
 				CAM::SET_CAM_FOV(func_859(uParam0, 0), 30.5f);
-				func_860(uParam0, 1, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+				func_860(uParam0, 1, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 				CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 1), iParam4, -0.8257f, 3.3223f, 0.2721f, true);
 				CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 1), iParam4, 0.2268f, 0.5192f, 0.082f, true);
 				CAM::SET_CAM_FOV(func_859(uParam0, 1), 30.5f);
-				func_860(uParam0, 8, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+				func_860(uParam0, 8, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 				CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 8), iParam4, 1.1558f, 3.0005f, 0.3003f, true);
 				CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 8), iParam4, -0.2296f, 0.3398f, 0.2888f, true);
 				CAM::SET_CAM_FOV(func_859(uParam0, 8), 30.5f);
-				func_860(uParam0, 9, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, 0f, 0f, 0f, 65f, false, 2), 1);
+				func_860(uParam0, 9, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, 0f, 0f, 0f, 65f, false, 2), 1);
 				CAM::ATTACH_CAM_TO_ENTITY(func_859(uParam0, 9), iParam4, 1.1483f, 2.9904f, 0.3002f, true);
 				CAM::POINT_CAM_AT_ENTITY(func_859(uParam0, 9), iParam4, -0.2356f, 0.3288f, 0.2887f, true);
 				CAM::SET_CAM_FOV(func_859(uParam0, 9), 30.5f);
@@ -122149,7 +122149,7 @@ int func_1115(int iParam0)//Position - 0x8FD45
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;

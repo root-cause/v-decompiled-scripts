@@ -34545,9 +34545,9 @@ void func_218()//Position - 0x26CA7
 				if (STREAMING::IS_NEW_LOAD_SCENE_LOADED())
 				{
 					STREAMING::NEW_LOAD_SCENE_STOP();
-					iLocal_264 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1966.059f, 2861.493f, 50.10657f, 5.965983f, 0f, -30.2506f, 50f, false, 2);
+					iLocal_264 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1966.059f, 2861.493f, 50.10657f, 5.965983f, 0f, -30.2506f, 50f, false, 2);
 					CAM::SET_CAM_ACTIVE(iLocal_264, true);
-					iLocal_265 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1970.629f, 2872.505f, 49.44081f, 5.712656f, 0f, -160.9523f, 50f, false, 2);
+					iLocal_265 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1970.629f, 2872.505f, 49.44081f, 5.712656f, 0f, -160.9523f, 50f, false, 2);
 					CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
 				}
 			}
@@ -34584,7 +34584,7 @@ void func_218()//Position - 0x26CA7
 						}
 						else if (func_217(PLAYER::PLAYER_PED_ID()))
 						{
-							if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), -2017877118) == 1)
+							if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_PLAY_ANIM")) == 1)
 							{
 								PED::SET_PED_TO_RAGDOLL(PLAYER::PLAYER_PED_ID(), 16000, 16000, 0, true, true, false);
 								ENTITY::APPLY_FORCE_TO_ENTITY(PLAYER::PLAYER_PED_ID(), 2, 0f, -5f, 2f, 0f, 0.5f, 0f, 3, true, true, true, false, true);
@@ -36427,7 +36427,7 @@ int func_284(int iParam0, float fParam1, int iParam2)//Position - 0x28FE9
 			else if (iParam2 == 1)
 			{
 				iVar0 = 0;
-				if (!func_288(PLAYER::PLAYER_PED_ID(), -828834893))
+				if (!func_288(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")))
 				{
 					TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
 				}
@@ -36601,7 +36601,7 @@ void func_292()//Position - 0x2934D
 		{
 			if (func_289(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false), 10.5f, 1, 1056964608, 0, 1, 0))
 			{
-				if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), -828834893) != 1)
+				if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")) != 1)
 				{
 					TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
 				}

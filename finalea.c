@@ -5531,7 +5531,7 @@ int func_52(int iParam0, int iParam1)//Position - 0x496E
 
 bool func_53()//Position - 0x4DED
 {
-	return DLC::IS_DLC_PRESENT(1199590110);
+	return DLC::IS_DLC_PRESENT(joaat("mpsum2"));
 }
 
 bool func_54()//Position - 0x4DFE
@@ -9216,7 +9216,7 @@ int func_97(int iParam0, int iParam1)//Position - 0x9DF5
 
 int func_98(int iParam0, int iParam1, int iParam2)//Position - 0x9EDA
 {
-	if (!func_99() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_99() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}
@@ -44280,7 +44280,7 @@ void func_342()//Position - 0x31A91
 	{
 		func_232(0);
 	}
-	func_419(-1794415470);
+	func_419(joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 	if (ENTITY::DOES_ENTITY_EXIST(Local_227[1 /*2*/]) && ENTITY::DOES_ENTITY_EXIST(Local_227[2 /*2*/]))
 	{
 		if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(Local_227[1 /*2*/]))
@@ -46350,7 +46350,7 @@ void func_383(int iParam0, float fParam1, bool bParam2)//Position - 0x340B8
 							iVar1 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iLocal_182[iVar0], -1, false);
 							if (!PED::IS_PED_INJURED(iVar1))
 							{
-								iVar14 = TASK::GET_SCRIPT_TASK_STATUS(iVar1, 242628503);
+								iVar14 = TASK::GET_SCRIPT_TASK_STATUS(iVar1, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"));
 								if (iVar14 == 7)
 								{
 									fVar7 = ENTITY::GET_ENTITY_SPEED(iLocal_182[iVar0]);

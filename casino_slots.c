@@ -1365,7 +1365,7 @@ int func_21(int iParam0)//Position - 0x1091
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;
@@ -7879,11 +7879,11 @@ int func_216(int iParam0, var uParam1)//Position - 0x89C9
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = -850297695;
+			iVar0 = joaat("GTAO_CASINO_SLOTS");
 			break;
 		
 		case 1:
-			iVar0 = 1316161270;
+			iVar0 = joaat("GTAO_CASINO_BLACKJACK");
 			break;
 		
 		case 2:
@@ -7891,15 +7891,15 @@ int func_216(int iParam0, var uParam1)//Position - 0x89C9
 			break;
 		
 		case 5:
-			iVar0 = 1045499606;
+			iVar0 = joaat("GTAO_CASINO_INSIDETRACK");
 			break;
 		
 		case 3:
-			iVar0 = 1697066635;
+			iVar0 = joaat("GTAO_CASINO_ROULETTE");
 			break;
 		
 		case 4:
-			iVar0 = 1144169546;
+			iVar0 = joaat("GTAO_CASINO_LUCKYWHEEL");
 			break;
 	}
 	if (!MONEY::_NETWORK_CASINO_CAN_USE_GAMBLING_TYPE(iVar0))
@@ -11744,7 +11744,7 @@ int func_281()//Position - 0xE883
 			{
 				MISC::SET_BIT(&uLocal_217, 26);
 			}
-			if ((((!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()) && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 713668775) != 1) && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 713668775) != 0) && !TASK::IS_PED_WALKING(PLAYER::PLAYER_PED_ID())) || (BitTest(uLocal_217, 26) && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 713668775) != 0))
+			if ((((!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()) && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1) && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 0) && !TASK::IS_PED_WALKING(PLAYER::PLAYER_PED_ID())) || (BitTest(uLocal_217, 26) && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 0))
 			{
 				if (CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(0) == 1 || CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(0) == 2)
 				{

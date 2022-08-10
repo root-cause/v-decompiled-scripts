@@ -9897,8 +9897,8 @@ void func_1()//Position - 0x319
 											TASK::TASK_HELI_MISSION(PLAYER::PLAYER_PED_ID(), iLocal_125[0], 0, 0, Var3, 4, 30f, 0f, fVar7, iVar8, 20, -1f, 0);
 										}
 									}
-									iLocal_151 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, CAM::GET_FINAL_RENDERED_CAM_COORD(), CAM::GET_FINAL_RENDERED_CAM_ROT(2), CAM::GET_FINAL_RENDERED_CAM_FOV(), true, 2);
-									iLocal_152 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var5, CAM::GET_FINAL_RENDERED_CAM_ROT(2), CAM::GET_FINAL_RENDERED_CAM_FOV(), false, 2);
+									iLocal_151 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), CAM::GET_FINAL_RENDERED_CAM_COORD(), CAM::GET_FINAL_RENDERED_CAM_ROT(2), CAM::GET_FINAL_RENDERED_CAM_FOV(), true, 2);
+									iLocal_152 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var5, CAM::GET_FINAL_RENDERED_CAM_ROT(2), CAM::GET_FINAL_RENDERED_CAM_FOV(), false, 2);
 									CAM::SHAKE_CAM(iLocal_151, "HAND_SHAKE", 0.2f);
 									CAM::SHAKE_CAM(iLocal_152, "HAND_SHAKE", 0.2f);
 									CAM::POINT_CAM_AT_COORD(iLocal_152, Var4);
@@ -107089,7 +107089,7 @@ void func_500()//Position - 0x71C92
 			else
 			{
 				iVar15 = 0;
-				if (TASK::GET_SCRIPT_TASK_STATUS(func_726(), 2104565373) != 7)
+				if (TASK::GET_SCRIPT_TASK_STATUS(func_726(), joaat("SCRIPT_TASK_DRIVE_BY")) != 7)
 				{
 					iVar15 = 1;
 				}
@@ -107182,7 +107182,7 @@ void func_500()//Position - 0x71C92
 					fVar18 = fLocal_9434;
 					fVar19 = 0f;
 				}
-				if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 2104565373) != 7 || !bLocal_376)
+				if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_DRIVE_BY")) != 7 || !bLocal_376)
 				{
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(fVar18);
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(fVar19, 1f);
@@ -107499,15 +107499,15 @@ int func_507(int iParam0, bool bParam1, bool bParam2, int iParam3, int iParam4)/
 				case 6:
 					if (!Local_90.f_15)
 					{
-						func_610(180543640);
-						Local_90[0] = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, Var1, 35f, true, 2);
+						func_610(joaat("DEFAULT_SPLINE_CAMERA"));
+						Local_90[0] = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, Var1, 35f, true, 2);
 						CAM::ADD_CAM_SPLINE_NODE_USING_CAMERA(Local_90.f_9, Local_90[0], 0, 3);
 						CAM::SET_CAM_MOTION_BLUR_STRENGTH(Local_90[0], 0.2f);
 						Var4 = { func_609(Var0, Var2, 0.008f) };
-						Local_90[1] = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var4, Var1, 35f, true, 2);
+						Local_90[1] = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var4, Var1, 35f, true, 2);
 						CAM::ADD_CAM_SPLINE_NODE_USING_CAMERA(Local_90.f_9, Local_90[1], 400, 2);
 						CAM::SET_CAM_MOTION_BLUR_STRENGTH(Local_90[1], 0.4f);
-						Local_90[2] = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var2, Var3, 35f, true, 2);
+						Local_90[2] = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var2, Var3, 35f, true, 2);
 						CAM::ADD_CAM_SPLINE_NODE_USING_CAMERA(Local_90.f_9, Local_90[2], 1000, 2);
 						CAM::SET_CAM_MOTION_BLUR_STRENGTH(Local_90[2], 0.8f);
 						CAM::SET_CAM_SPLINE_SMOOTHING_STYLE(Local_90.f_9, 1);
@@ -107522,7 +107522,7 @@ int func_507(int iParam0, bool bParam1, bool bParam2, int iParam3, int iParam4)/
 				case 5:
 					if (!Local_90.f_15 && !iLocal_371)
 					{
-						func_610(180543640);
+						func_610(joaat("DEFAULT_SPLINE_CAMERA"));
 						func_607(&iLocal_714, iLocal_123, 1, 0.2f, 500, 500, 200, 300, 1045220557);
 						func_606(&iLocal_714, 0f, 0f, 5f);
 						Var5 = { CAM::GET_FINAL_RENDERED_CAM_ROT(2) };
@@ -107530,16 +107530,16 @@ int func_507(int iParam0, bool bParam1, bool bParam2, int iParam3, int iParam4)/
 						{
 							Var5.f_2 = (Var5.f_2 - 360f);
 						}
-						Local_90[0] = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, CAM::GET_FINAL_RENDERED_CAM_COORD(), Var5, CAM::GET_FINAL_RENDERED_CAM_FOV(), true, 2);
+						Local_90[0] = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), CAM::GET_FINAL_RENDERED_CAM_COORD(), Var5, CAM::GET_FINAL_RENDERED_CAM_FOV(), true, 2);
 						CAM::ADD_CAM_SPLINE_NODE_USING_CAMERA(Local_90.f_9, Local_90[0], 0, 2);
 						CAM::SET_CAM_MOTION_BLUR_STRENGTH(Local_90[0], 0.5f);
 						Var7 = { func_609(Var5, Local_733, 0.6f) };
 						Var7.f_1 = Local_733.f_1;
 						Var6 = { func_609(CAM::GET_FINAL_RENDERED_CAM_COORD(), Local_732, 0.1f) };
-						Local_90[1] = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var6, Var7, CAM::GET_FINAL_RENDERED_CAM_FOV(), true, 2);
+						Local_90[1] = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var6, Var7, CAM::GET_FINAL_RENDERED_CAM_FOV(), true, 2);
 						CAM::ADD_CAM_SPLINE_NODE_USING_CAMERA(Local_90.f_9, Local_90[1], 600, 2);
 						CAM::SET_CAM_MOTION_BLUR_STRENGTH(Local_90[1], 0.8f);
-						Local_90[3] = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Local_732, Local_733, 35f, true, 2);
+						Local_90[3] = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Local_732, Local_733, 35f, true, 2);
 						CAM::ADD_CAM_SPLINE_NODE_USING_CAMERA(Local_90.f_9, Local_90[3], 900, 2);
 						CAM::SET_CAM_MOTION_BLUR_STRENGTH(Local_90[3], 1f);
 						CAM::SET_CAM_SPLINE_SMOOTHING_STYLE(Local_90.f_9, 1);
@@ -107553,7 +107553,7 @@ int func_507(int iParam0, bool bParam1, bool bParam2, int iParam3, int iParam4)/
 				case 1:
 					if (!Local_90.f_15)
 					{
-						func_610(180543640);
+						func_610(joaat("DEFAULT_SPLINE_CAMERA"));
 						iLocal_739 = 2;
 						if (CAM::_0xEAF0FA793D05C592())
 						{
@@ -107581,7 +107581,7 @@ int func_507(int iParam0, bool bParam1, bool bParam2, int iParam3, int iParam4)/
 				case 2:
 					if (!Local_90.f_15)
 					{
-						func_610(180543640);
+						func_610(joaat("DEFAULT_SPLINE_CAMERA"));
 						iLocal_739 = 2;
 						if (CAM::_0xEAF0FA793D05C592())
 						{
@@ -107609,7 +107609,7 @@ int func_507(int iParam0, bool bParam1, bool bParam2, int iParam3, int iParam4)/
 				case 3:
 					if (!Local_90.f_15)
 					{
-						func_610(1775630800);
+						func_610(joaat("TIMED_SPLINE_CAMERA"));
 						if (CAM::_0xEAF0FA793D05C592())
 						{
 							if (PLAYER::PLAYER_PED_ID() == func_726())
@@ -107672,7 +107672,7 @@ int func_507(int iParam0, bool bParam1, bool bParam2, int iParam3, int iParam4)/
 				case 4:
 					if (!Local_90.f_15)
 					{
-						func_610(1775630800);
+						func_610(joaat("TIMED_SPLINE_CAMERA"));
 						if (CAM::_0xEAF0FA793D05C592())
 						{
 							if (iParam0 == 0)
@@ -107885,9 +107885,9 @@ int func_509(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 				fVar7 = CAM::GET_FINAL_RENDERED_CAM_FOV();
 				if (iParam0->f_17 > 0 || iParam6 != 0)
 				{
-					iParam0->f_3 = CAM::CREATE_CAMERA(1775630800, false);
+					iParam0->f_3 = CAM::CREATE_CAMERA(joaat("TIMED_SPLINE_CAMERA"), false);
 				}
-				iParam0->f_1 = CAM::CREATE_CAMERA(26379945, true);
+				iParam0->f_1 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 				if (bParam1)
 				{
 					CAM::ATTACH_CAM_TO_ENTITY(iParam0->f_1, iParam0->f_5, Var1, true);
@@ -107898,7 +107898,7 @@ int func_509(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 				}
 				CAM::SET_CAM_ROT(iParam0->f_1, Var2, 2);
 				CAM::SET_CAM_FOV(iParam0->f_1, fVar7);
-				iParam0->f_2 = CAM::CREATE_CAMERA(26379945, true);
+				iParam0->f_2 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 				if (bParam1 && !bParam4)
 				{
 					CAM::ATTACH_CAM_TO_ENTITY(iParam0->f_2, iParam0->f_5, Var1 + Var6 * Vector(iParam0->f_12, iParam0->f_12, iParam0->f_12), true);
@@ -107911,7 +107911,7 @@ int func_509(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 				CAM::SET_CAM_FOV(iParam0->f_2, fVar7);
 				if (iParam0->f_17 > 0 && iParam6 == 0)
 				{
-					iParam0->f_4 = CAM::CREATE_CAMERA(26379945, true);
+					iParam0->f_4 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 					if (bParam1 && !bParam4)
 					{
 						CAM::ATTACH_CAM_TO_ENTITY(iParam0->f_4, iParam0->f_5, Var1 + Var6 * Vector(iParam0->f_12, iParam0->f_12, iParam0->f_12) * Vector(iParam0->f_13, iParam0->f_13, iParam0->f_13), true);
@@ -110201,7 +110201,7 @@ void func_567(var uParam0, int iParam1)//Position - 0x76437
 		func_569(uParam0, iParam1);
 		fVar0 = uParam0->f_10[iParam1 /*57*/].f_21;
 	}
-	uParam0->f_10[iParam1 /*57*/].f_1 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, uParam0->f_10[iParam1 /*57*/].f_6, uParam0->f_10[iParam1 /*57*/].f_9, fVar0, true, 2);
+	uParam0->f_10[iParam1 /*57*/].f_1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), uParam0->f_10[iParam1 /*57*/].f_6, uParam0->f_10[iParam1 /*57*/].f_9, fVar0, true, 2);
 	iVar20 = uParam0->f_10[iParam1 /*57*/].f_1;
 	if (CAM::DOES_CAM_EXIST(uParam0->f_10[iParam1 /*57*/].f_1))
 	{
@@ -111061,7 +111061,7 @@ int func_584(var uParam0, bool bParam1)//Position - 0x78388
 				}
 				if (CAM::GET_CAM_SPLINE_PHASE(uParam0->f_1) > fLocal_9431)
 				{
-					if (!func_588(func_723(), -2017877118, 1))
+					if (!func_588(func_723(), joaat("SCRIPT_TASK_PLAY_ANIM"), 1))
 					{
 						TASK::CLEAR_PED_TASKS_IMMEDIATELY(func_723());
 						TASK::TASK_PLAY_ANIM(func_723(), func_586(21), "ig_7_m_door_f_sniping_franklin", 1000f, -1000f, -1, 2, 0.55f, false, false, false);
@@ -111333,7 +111333,7 @@ int func_591(var uParam0, bool bParam1)//Position - 0x78A12
 			{
 				TASK::CLEAR_PED_TASKS(func_726());
 			}
-			if (!func_588(func_723(), -2017877118, 1))
+			if (!func_588(func_723(), joaat("SCRIPT_TASK_PLAY_ANIM"), 1))
 			{
 				TASK::CLEAR_PED_TASKS_IMMEDIATELY(func_723());
 				TASK::TASK_PLAY_ANIM(func_723(), func_586(21), "ig_7_m_door_f_sniping_franklin", 1000f, -1000f, -1, 131072, 0.85f, false, 2, false);
@@ -111380,7 +111380,7 @@ int func_591(var uParam0, bool bParam1)//Position - 0x78A12
 				}
 				if (iLocal_740 == 2 || bLocal_376)
 				{
-					if (!func_588(func_726(), 2104565373, 1) || bLocal_376)
+					if (!func_588(func_726(), joaat("SCRIPT_TASK_DRIVE_BY"), 1) || bLocal_376)
 					{
 						if (!bLocal_376)
 						{
@@ -111392,7 +111392,7 @@ int func_591(var uParam0, bool bParam1)//Position - 0x78A12
 						Var4.f_2 = 0f;
 						Var4 = { func_546(Var4, 150f) };
 						Var1 = { Var2 + Var4 };
-						TASK::TASK_DRIVE_BY(func_726(), 0, 0, Var1, 10000f, 0, false, 1566631136);
+						TASK::TASK_DRIVE_BY(func_726(), 0, 0, Var1, 10000f, 0, false, joaat("FIRING_PATTERN_SINGLE_SHOT"));
 					}
 				}
 				if (CAM::GET_CAM_SPLINE_PHASE(uParam0->f_1) >= 1f)
@@ -111588,7 +111588,7 @@ int func_593(var uParam0, bool bParam1)//Position - 0x78DF5
 				{
 					if (!PED::IS_PED_INJURED(func_726()))
 					{
-						if (!func_588(func_726(), 2104565373, 1))
+						if (!func_588(func_726(), joaat("SCRIPT_TASK_DRIVE_BY"), 1))
 						{
 							Var2 = { ENTITY::GET_ENTITY_COORDS(iLocal_125[0], true) };
 							Var3 = { ENTITY::GET_ENTITY_FORWARD_VECTOR(iLocal_125[0]) };
@@ -111596,7 +111596,7 @@ int func_593(var uParam0, bool bParam1)//Position - 0x78DF5
 							Var4.f_2 = 0f;
 							Var4 = { func_546(Var4, 150f) };
 							Var1 = { Var2 + Var4 };
-							TASK::TASK_DRIVE_BY(func_726(), 0, 0, Var1, 10000f, 0, false, 1566631136);
+							TASK::TASK_DRIVE_BY(func_726(), 0, 0, Var1, 10000f, 0, false, joaat("FIRING_PATTERN_SINGLE_SHOT"));
 						}
 					}
 					if (CAM::GET_CAM_SPLINE_PHASE(uParam0->f_1) >= 1f && func_456() == 0)
@@ -116294,7 +116294,7 @@ void func_633()//Position - 0x830D2
 			{
 				if (iLocal_126[iVar1] != iLocal_129)
 				{
-					TASK::TASK_DRIVE_BY(iLocal_46[0], 0, iLocal_126[iVar1], 0f, 0f, 0f, 1000f, 100, false, -753768974);
+					TASK::TASK_DRIVE_BY(iLocal_46[0], 0, iLocal_126[iVar1], 0f, 0f, 0f, 1000f, 100, false, joaat("FIRING_PATTERN_BURST_FIRE_DRIVEBY"));
 					iLocal_129 = iLocal_126[iVar1];
 				}
 				iLocal_432 = MISC::GET_GAME_TIMER() + 2000;
@@ -119503,7 +119503,7 @@ int func_688(int iParam0, int iParam1)//Position - 0x87590
 
 int func_689(int iParam0, int iParam1, int iParam2)//Position - 0x8796F
 {
-	if (!func_690() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_690() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}
@@ -136412,7 +136412,7 @@ int func_902(int iParam0, int iParam1)//Position - 0xA05A1
 
 bool func_903()//Position - 0xA0A20
 {
-	return DLC::IS_DLC_PRESENT(1199590110);
+	return DLC::IS_DLC_PRESENT(joaat("mpsum2"));
 }
 
 bool func_904()//Position - 0xA0A31
@@ -138321,11 +138321,11 @@ void func_967(int iParam0)//Position - 0xA2CBF
 			{
 				if (iParam0 < 2)
 				{
-					TASK::TASK_DRIVE_BY(iLocal_121[iVar0], iVar1, 0, 0f, 0f, 0f, 1000f, 100, false, -753768974);
+					TASK::TASK_DRIVE_BY(iLocal_121[iVar0], iVar1, 0, 0f, 0f, 0f, 1000f, 100, false, joaat("FIRING_PATTERN_BURST_FIRE_DRIVEBY"));
 				}
 				else
 				{
-					TASK::TASK_DRIVE_BY(iLocal_121[iVar0], iVar2, 0, 0f, 0f, 0f, 1000f, 100, false, -753768974);
+					TASK::TASK_DRIVE_BY(iLocal_121[iVar0], iVar2, 0, 0f, 0f, 0f, 1000f, 100, false, joaat("FIRING_PATTERN_BURST_FIRE_DRIVEBY"));
 				}
 			}
 			iVar0++;
@@ -140013,7 +140013,7 @@ void func_979()//Position - 0xA3822
 							}
 						}
 						Var21 = { ENTITY::GET_ENTITY_COORDS(iLocal_120[iVar0], true) };
-						if ((WEAPON::HAS_ENTITY_BEEN_DAMAGED_BY_WEAPON(iLocal_120[iVar0], func_725(4), 0) || (WEAPON::HAS_ENTITY_BEEN_DAMAGED_BY_WEAPON(iLocal_120[iVar0], func_725(0), 0) && TASK::GET_SCRIPT_TASK_STATUS(iLocal_120[iVar0], 1785177548) == 1)) || (PED::IS_PED_RAGDOLL(iLocal_120[iVar0]) && ((Var21.f_1 >= -619.2f || Var21.f_1 <= -624.1f) || Var21.f_0 >= 124.3f)))
+						if ((WEAPON::HAS_ENTITY_BEEN_DAMAGED_BY_WEAPON(iLocal_120[iVar0], func_725(4), 0) || (WEAPON::HAS_ENTITY_BEEN_DAMAGED_BY_WEAPON(iLocal_120[iVar0], func_725(0), 0) && TASK::GET_SCRIPT_TASK_STATUS(iLocal_120[iVar0], joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE")) == 1)) || (PED::IS_PED_RAGDOLL(iLocal_120[iVar0]) && ((Var21.f_1 >= -619.2f || Var21.f_1 <= -624.1f) || Var21.f_0 >= 124.3f)))
 						{
 							PED::APPLY_DAMAGE_TO_PED(iLocal_120[iVar0], 1000, false, 0);
 						}
@@ -141649,7 +141649,7 @@ void func_1003(int iParam0)//Position - 0xA6CA8
 	{
 		if (!PED::IS_PED_INJURED(iLocal_119[iVar0]))
 		{
-			if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_119[iVar0], 1630799643) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iLocal_119[iVar0], 1237250926) == 1)
+			if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_119[iVar0], joaat("SCRIPT_TASK_AIM_GUN_AT_ENTITY")) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iLocal_119[iVar0], joaat("SCRIPT_TASK_AIM_GUN_AT_COORD")) == 1)
 			{
 				bVar1 = false;
 				iVar6 = 3000;
@@ -142216,7 +142216,7 @@ void func_1010()//Position - 0xA76F7
 						{
 							if ((iLocal_334 || iVar0 != 5) && !ENTITY::IS_ENTITY_AT_COORD(iLocal_120[iVar0], 125.4221f, -620.2075f, 205.1072f, 1f, 1f, 1f, false, false, 0))
 							{
-								if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_120[iVar0], 1785177548) == 7 || ENTITY::IS_ENTITY_IN_AREA(iLocal_120[iVar0], 117.8963f, -623.7828f, 205.0469f, 123.4269f, -621.7179f, 205.0468f, false, false, 0))
+								if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_120[iVar0], joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE")) == 7 || ENTITY::IS_ENTITY_IN_AREA(iLocal_120[iVar0], 117.8963f, -623.7828f, 205.0469f, 123.4269f, -621.7179f, 205.0468f, false, false, 0))
 								{
 									iVar1 = iVar0;
 									fVar2 = fVar3;
@@ -144207,14 +144207,14 @@ void func_1021()//Position - 0xA9F2C
 		func_6(&iLocal_152);
 		func_508();
 		iLocal_152 = CAM::CREATE_CAMERA(1665938388, false);
-		Local_90[0] = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, CAM::GET_FINAL_RENDERED_CAM_COORD(), CAM::GET_FINAL_RENDERED_CAM_ROT(2), CAM::GET_FINAL_RENDERED_CAM_FOV(), true, 2);
+		Local_90[0] = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), CAM::GET_FINAL_RENDERED_CAM_COORD(), CAM::GET_FINAL_RENDERED_CAM_ROT(2), CAM::GET_FINAL_RENDERED_CAM_FOV(), true, 2);
 		CAM::ADD_CAM_SPLINE_NODE_USING_CAMERA(iLocal_152, Local_90[0], 0, 2);
 		CAM::SET_CAM_MOTION_BLUR_STRENGTH(Local_90[0], 0.5f);
 		Var1 = { func_609(CAM::GET_FINAL_RENDERED_CAM_COORD(), Local_732, 0.1f) };
-		Local_90[1] = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var1, CAM::GET_FINAL_RENDERED_CAM_ROT(2), CAM::GET_FINAL_RENDERED_CAM_FOV(), true, 2);
+		Local_90[1] = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var1, CAM::GET_FINAL_RENDERED_CAM_ROT(2), CAM::GET_FINAL_RENDERED_CAM_FOV(), true, 2);
 		CAM::ADD_CAM_SPLINE_NODE_USING_CAMERA(iLocal_152, Local_90[1], 1200, 3);
 		CAM::SET_CAM_MOTION_BLUR_STRENGTH(Local_90[1], 0.8f);
-		Local_90[3] = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Local_732, Local_733, fVar0, true, 2);
+		Local_90[3] = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Local_732, Local_733, fVar0, true, 2);
 		CAM::ADD_CAM_SPLINE_NODE_USING_CAMERA(iLocal_152, Local_90[3], 900, 2);
 		CAM::SET_CAM_MOTION_BLUR_STRENGTH(Local_90[3], 1f);
 		CAM::SET_CAM_SPLINE_DURATION(iLocal_152, 1000);
@@ -146788,7 +146788,7 @@ void func_1062()//Position - 0xAC1F1
 					}
 					else if (!iLocal_360)
 					{
-						if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 713668775) == 7)
+						if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) == 7)
 						{
 							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), 1372.63f, -2073.262f, 50.99822f, 1f, -1, 5f, true, 40000f);
 							iLocal_360 = 1;

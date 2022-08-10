@@ -1644,7 +1644,7 @@ void func_5(var uParam0, int iParam1, int iParam2, int iParam3, float fParam4, f
 	}
 	if ((!PED::IS_PED_INJURED(iParam1) && !ENTITY::IS_ENTITY_DEAD(iParam2, false)) && !PED::IS_PED_INJURED(iParam3))
 	{
-		if (((TASK::GET_SCRIPT_TASK_STATUS(iParam1, -1273030092) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iParam1, -1273030092) != 0) || iParam3 != uParam0->f_4) || iVar0)
+		if (((TASK::GET_SCRIPT_TASK_STATUS(iParam1, joaat("SCRIPT_TASK_VEHICLE_MISSION")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iParam1, joaat("SCRIPT_TASK_VEHICLE_MISSION")) != 0) || iParam3 != uParam0->f_4) || iVar0)
 		{
 			if (iParam3 != uParam0->f_4)
 			{
@@ -61966,7 +61966,7 @@ int func_737(int iParam0)//Position - 0x3D7B6
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;
@@ -62378,14 +62378,14 @@ void func_762(int iParam0, struct<3> Param1, var uParam2, float fParam3, float f
 	{
 		if (func_41(PLAYER::PLAYER_ID()) || func_800(PLAYER::PLAYER_ID()))
 		{
-			if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(1344549371))
+			if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("DisableSpectateScript")))
 			{
-				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(1344549371);
+				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("DisableSpectateScript"));
 			}
 		}
-		else if (HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(1344549371))
+		else if (HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("DisableSpectateScript")))
 		{
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1344549371);
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DisableSpectateScript"));
 		}
 	}
 	if (fVar0 < fParam3)
@@ -64790,9 +64790,9 @@ void func_824(int iParam0, bool bParam1, int iParam2)//Position - 0x40C54
 		func_836();
 		func_835();
 	}
-	if (HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(1344549371))
+	if (HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("DisableSpectateScript")))
 	{
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1344549371);
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DisableSpectateScript"));
 	}
 	if (!bParam1 || uVar0)
 	{
@@ -86460,14 +86460,14 @@ void func_1236()//Position - 0x5BC9E
 	{
 		if (func_42(PLAYER::PLAYER_ID()))
 		{
-			if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(1344549371))
+			if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("DisableSpectateScript")))
 			{
-				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(1344549371);
+				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("DisableSpectateScript"));
 			}
 		}
-		else if (HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(1344549371))
+		else if (HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("DisableSpectateScript")))
 		{
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1344549371);
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DisableSpectateScript"));
 		}
 	}
 	if (BitTest(Global_1836844.f_1, 9))

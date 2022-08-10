@@ -2921,7 +2921,7 @@ void func_106()//Position - 0x3776
 		{
 			if (!CAM::DOES_CAM_EXIST(Local_65.f_0))
 			{
-				Local_65.f_0 = CAM::CREATE_CAMERA(26379945, true);
+				Local_65.f_0 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 				MISC::SET_BIT(&(Local_65.f_60), 2);
 				func_41();
 				MISC::CLEAR_BIT(&(Local_65.f_60), 2);

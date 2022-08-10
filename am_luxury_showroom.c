@@ -57092,7 +57092,7 @@ int func_360(int iParam0, int iParam1)//Position - 0x42DCC
 
 bool func_361()//Position - 0x4324B
 {
-	return DLC::IS_DLC_PRESENT(1199590110);
+	return DLC::IS_DLC_PRESENT(joaat("mpsum2"));
 }
 
 bool func_362()//Position - 0x4325C
@@ -94344,7 +94344,7 @@ int func_649(int iParam0, int iParam1)//Position - 0x6F317
 
 int func_650(int iParam0, int iParam1, int iParam2)//Position - 0x6F3FC
 {
-	if (!func_304() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_304() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}
@@ -95389,7 +95389,7 @@ int func_668(int iParam0)//Position - 0x704CF
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;
@@ -95787,7 +95787,7 @@ void func_690(int iParam0)//Position - 0x70902
 	}
 	if (!CAM::DOES_CAM_EXIST(Local_164.f_506))
 	{
-		Local_164.f_506 = CAM::CREATE_CAMERA(26379945, true);
+		Local_164.f_506 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 		CAM::SHAKE_CAM(Local_164.f_506, "HAND_SHAKE", fVar15);
 		fVar22 = (ENTITY::GET_ENTITY_HEADING(iParam0) + fVar10);
 		fVar22 = func_704(fVar22);
@@ -95814,7 +95814,7 @@ void func_690(int iParam0)//Position - 0x70902
 	}
 	if (!CAM::DOES_CAM_EXIST(Local_164.f_506.f_1))
 	{
-		Local_164.f_506.f_1 = CAM::CREATE_CAMERA(26379945, false);
+		Local_164.f_506.f_1 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), false);
 		CAM::SET_CAM_USE_SHALLOW_DOF_MODE(Local_164.f_506.f_1, true);
 		CAM::SET_CAM_NEAR_DOF(Local_164.f_506.f_1, fVar11);
 		CAM::SET_CAM_FAR_DOF(Local_164.f_506.f_1, fVar12);

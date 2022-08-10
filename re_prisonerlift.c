@@ -817,9 +817,9 @@ void __EntryFunction__()//Position - 0x0
 															func_69();
 														}
 													}
-													else if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_64, -1794415470) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iLocal_64, -1794415470) != 0)
+													else if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_64, joaat("SCRIPT_TASK_ENTER_VEHICLE")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iLocal_64, joaat("SCRIPT_TASK_ENTER_VEHICLE")) != 0)
 													{
-														if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_64, 780511057) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iLocal_64, 780511057) != 0)
+														if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_64, joaat("SCRIPT_TASK_COMBAT")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iLocal_64, joaat("SCRIPT_TASK_COMBAT")) != 0)
 														{
 														}
 														else
@@ -933,7 +933,7 @@ void __EntryFunction__()//Position - 0x0
 													func_92();
 												}
 											}
-											else if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_64, 242628503) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iLocal_64, 242628503) != 0)
+											else if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_64, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iLocal_64, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 0)
 											{
 												iLocal_53 = 11;
 											}
@@ -1139,7 +1139,7 @@ void func_8()//Position - 0x1255
 		{
 			if (!func_94())
 			{
-				if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_64, 1227113341) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iLocal_64, 1227113341) != 0)
+				if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_64, joaat("SCRIPT_TASK_GO_TO_ENTITY")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iLocal_64, joaat("SCRIPT_TASK_GO_TO_ENTITY")) != 0)
 				{
 					TASK::TASK_GO_TO_ENTITY(iLocal_64, PLAYER::PLAYER_PED_ID(), -1, 6f, 2f, 2f, 0);
 				}
@@ -1166,7 +1166,7 @@ void func_8()//Position - 0x1255
 			else
 			{
 				iLocal_95 = 0;
-				if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_64, 1227113341) == 1 && TASK::GET_SCRIPT_TASK_STATUS(iLocal_64, 1227113341) == 0)
+				if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_64, joaat("SCRIPT_TASK_GO_TO_ENTITY")) == 1 && TASK::GET_SCRIPT_TASK_STATUS(iLocal_64, joaat("SCRIPT_TASK_GO_TO_ENTITY")) == 0)
 				{
 					TASK::CLEAR_PED_TASKS(iLocal_64);
 				}

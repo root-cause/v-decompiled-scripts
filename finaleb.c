@@ -2247,7 +2247,7 @@ void func_28()//Position - 0x814
 			}
 			if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY("Michael", 0))
 			{
-				iLocal_244 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 2686.664f, 1578.053f, 23.6635f, 39.7643f, -17.7609f, -90.867f, 22.6486f, false, 2);
+				iLocal_244 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 2686.664f, 1578.053f, 23.6635f, 39.7643f, -17.7609f, -90.867f, 22.6486f, false, 2);
 				CAM::SET_CAM_ACTIVE(iLocal_244, true);
 				CAM::SHAKE_CAM(iLocal_244, "HAND_SHAKE", 0.8f);
 				func_60(0, 2726.221f, 1579.399f, 91.7594f, 1, 0, 1, 1, 3000, 0, 1);
@@ -9713,7 +9713,7 @@ void func_165()//Position - 0xB14E
 		{
 			ENTITY::SET_ENTITY_VISIBLE(func_67(), false, false);
 			ENTITY::FREEZE_ENTITY_POSITION(func_67(), false);
-			if (!func_166(func_67(), 713668775, 1))
+			if (!func_166(func_67(), joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD"), 1))
 			{
 				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_67(), 2729.568f, 1579.289f, 65.5428f, 2f, 20000, 0.25f, false, 40000f);
 			}
@@ -10506,7 +10506,7 @@ void func_178()//Position - 0xC373
 						if (func_179(func_67()))
 						{
 							ENTITY::FREEZE_ENTITY_POSITION(func_67(), false);
-							if (!func_166(func_67(), -1758697641, 1))
+							if (!func_166(func_67(), joaat("SCRIPT_TASK_GO_TO_COORD_WHILE_AIMING_AT_ENTITY"), 1))
 							{
 								TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_ENTITY(func_67(), 2729.18f, 1578.21f, 65.54f, func_58(), 3f, true, 2f, 4f, true, 0, false, joaat("FIRING_PATTERN_FULL_AUTO"), 20000);
 							}
@@ -11029,7 +11029,7 @@ void func_187()//Position - 0xCD20
 		case 7:
 			if (ENTITY::IS_ENTITY_AT_COORD(func_67(), 2735.772f, 1576.932f, 51.6f, 1.5f, 1.5f, 2f, false, true, 0))
 			{
-				iLocal_244 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 2738.052f, 1574.118f, 51.0774f, -7.4845f, 0.9834f, 28.0021f, 67.1294f, false, 2);
+				iLocal_244 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 2738.052f, 1574.118f, 51.0774f, -7.4845f, 0.9834f, 28.0021f, 67.1294f, false, 2);
 				CAM::SET_CAM_ACTIVE(iLocal_244, true);
 				CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
 				CAM::SHAKE_CAM(iLocal_244, "HAND_SHAKE", 0.6f);
@@ -97890,7 +97890,7 @@ void func_521()//Position - 0x72021
 			break;
 		
 		case 7:
-			func_522(713668775);
+			func_522(joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD"));
 			if (ENTITY::IS_ENTITY_AT_COORD(func_58(), 2769.123f, 1566.615f, 38.5209f, 1f, 1f, 2f, false, true, 0))
 			{
 				iLocal_288 = MISC::GET_GAME_TIMER();
@@ -98078,7 +98078,7 @@ void func_527()//Position - 0x7291B
 			VEHICLE::SET_VEHICLE_FIXED(Local_50[1 /*2*/]);
 			RECORDING::_0x293220DA1B46CEBC(3f, 10f, 4);
 			func_62(0);
-			iLocal_244 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 2701.965f, 1596.563f, 32.7892f, -1.3076f, 0.0972f, 109.9187f, 32f, false, 2);
+			iLocal_244 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 2701.965f, 1596.563f, 32.7892f, -1.3076f, 0.0972f, 109.9187f, 32f, false, 2);
 			CAM::SET_CAM_ACTIVE(iLocal_244, true);
 			CAM::SHAKE_CAM(iLocal_244, "HAND_SHAKE", 0.4f);
 			CAM::SET_CAM_PARAMS(iLocal_244, 2701.943f, 1596.604f, 33.0893f, -3.5782f, 0.0972f, 113.5868f, 32f, 12000, 1, 1, 2);
@@ -98158,9 +98158,9 @@ void func_527()//Position - 0x7291B
 			break;
 		
 		case 2:
-			func_522(1785177548);
-			func_522(-2017877118);
-			func_522(-875674219);
+			func_522(joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"));
+			func_522(joaat("SCRIPT_TASK_PLAY_ANIM"));
+			func_522(joaat("SCRIPT_TASK_TURN_PED_TO_FACE_ENTITY"));
 			if (AUDIO::IS_AUDIO_SCENE_ACTIVE("FIN_2_MICHAEL_ESCAPE_SCENE"))
 			{
 				AUDIO::STOP_AUDIO_SCENE("FIN_2_MICHAEL_ESCAPE_SCENE");
@@ -98172,7 +98172,7 @@ void func_527()//Position - 0x7291B
 			if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_260) && PED::GET_SYNCHRONIZED_SCENE_PHASE(iLocal_260) >= 1f)
 			{
 				func_182(3);
-				if ((func_166(func_58(), 1785177548, 1) || func_166(func_58(), -2017877118, 1)) || func_166(func_58(), -875674219, 1))
+				if ((func_166(func_58(), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1) || func_166(func_58(), joaat("SCRIPT_TASK_PLAY_ANIM"), 1)) || func_166(func_58(), joaat("SCRIPT_TASK_TURN_PED_TO_FACE_ENTITY"), 1))
 				{
 					TASK::CLEAR_PED_TASKS(func_58());
 				}
@@ -103033,7 +103033,7 @@ int func_598(int iParam0, int iParam1)//Position - 0x79894
 
 bool func_599()//Position - 0x79D13
 {
-	return DLC::IS_DLC_PRESENT(1199590110);
+	return DLC::IS_DLC_PRESENT(joaat("mpsum2"));
 }
 
 bool func_600()//Position - 0x79D24
@@ -106321,7 +106321,7 @@ int func_632(int iParam0, int iParam1)//Position - 0x7E66F
 
 int func_633(int iParam0, int iParam1, int iParam2)//Position - 0x7E754
 {
-	if (!func_634() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_634() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}

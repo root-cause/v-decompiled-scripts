@@ -68403,7 +68403,7 @@ void func_1162()//Position - 0x4B727
 				}
 				else
 				{
-					MONEY::_0x2CEB0E0BC2A77C05(0, 0, 1, iVar2);
+					MONEY::_NETWORK_SPENT_GUNRUNNING_CONTACT_SERVICE(0, 0, 1, iVar2);
 				}
 				func_1163(iVar0, 0, 0);
 				func_1(Local_122.f_1, "SM2AGAU", "SM2AG_PC_3A", &Local_166, 0);
@@ -68462,7 +68462,7 @@ void func_1164()//Position - 0x4B853
 				}
 				else
 				{
-					MONEY::_0x02D24A35A9CC3503(0, 0, 1, iVar2, iVar3);
+					MONEY::_NETWORK_SPENT_VEHICLE_REQUESTED(0, 0, 1, iVar2, iVar3);
 				}
 				func_1165(iVar0, 0, 0);
 				func_1(Local_122.f_1, "SM2TOAU", "SM2TO_PC_3A", &Local_166, 0);

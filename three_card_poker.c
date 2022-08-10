@@ -5809,7 +5809,7 @@ void func_91()//Position - 0xA193
 			break;
 		
 		case 7:
-			if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()) && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 2106541073) != 0)
+			if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()) && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD")) != 0)
 			{
 				Local_152.f_24 = NETWORK::NETWORK_CREATE_SYNCHRONISED_SCENE(func_361(Local_152.f_18), func_233(Local_152.f_18), 2, true, false, 1f, 0f, 1f);
 				NETWORK::NETWORK_ADD_PED_TO_SYNCHRONISED_SCENE(PLAYER::PLAYER_PED_ID(), Local_152.f_24, func_232(), func_231(Local_152.f_21), 2f, -2f, 13, 16, 2f, 0);
@@ -5888,7 +5888,7 @@ void func_91()//Position - 0xA193
 			{
 				AUDIO::STOP_AUDIO_SCENE("DLC_VW_Casino_Table_Games");
 			}
-			if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 1785177548) == 1)
+			if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE")) == 1)
 			{
 				func_229(&(Local_151[PLAYER::PLAYER_ID() /*9*/]), func_94());
 				Var7 = { PAD::GET_CONTROL_NORMAL(2, 218), PAD::GET_CONTROL_NORMAL(2, 219), 0f };
@@ -12203,7 +12203,7 @@ void func_211()//Position - 0x153B6
 		}
 		if (!CAM::DOES_CAM_EXIST(Local_152.f_13))
 		{
-			Local_152.f_13 = CAM::CREATE_CAMERA(26379945, true);
+			Local_152.f_13 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 			CAM::SET_CAM_PARAMS(Local_152.f_13, func_223(Local_151[PLAYER::PLAYER_ID() /*9*/].f_1, Local_151[PLAYER::PLAYER_ID() /*9*/].f_2, bLocal_170), func_222(Local_151[PLAYER::PLAYER_ID() /*9*/].f_1, Local_151[PLAYER::PLAYER_ID() /*9*/].f_2, bLocal_170), func_221(bLocal_170), 0, 1, 1, 2);
 			CAM::SHAKE_CAM(Local_152.f_13, "HAND_SHAKE", 0.03f);
 			CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
@@ -16231,7 +16231,7 @@ int func_306(int iParam0)//Position - 0x1B489
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;
@@ -16685,11 +16685,11 @@ int func_338(int iParam0, var uParam1)//Position - 0x1BBE7
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = -850297695;
+			iVar0 = joaat("GTAO_CASINO_SLOTS");
 			break;
 		
 		case 1:
-			iVar0 = 1316161270;
+			iVar0 = joaat("GTAO_CASINO_BLACKJACK");
 			break;
 		
 		case 2:
@@ -16697,15 +16697,15 @@ int func_338(int iParam0, var uParam1)//Position - 0x1BBE7
 			break;
 		
 		case 5:
-			iVar0 = 1045499606;
+			iVar0 = joaat("GTAO_CASINO_INSIDETRACK");
 			break;
 		
 		case 3:
-			iVar0 = 1697066635;
+			iVar0 = joaat("GTAO_CASINO_ROULETTE");
 			break;
 		
 		case 4:
-			iVar0 = 1144169546;
+			iVar0 = joaat("GTAO_CASINO_LUCKYWHEEL");
 			break;
 	}
 	if (!MONEY::_NETWORK_CASINO_CAN_USE_GAMBLING_TYPE(iVar0))

@@ -36978,7 +36978,7 @@ int func_272(int iParam0, float fParam1, int iParam2)//Position - 0x2A00A
 			else if (iParam2 == 1)
 			{
 				iVar0 = 0;
-				if (!func_276(PLAYER::PLAYER_PED_ID(), -828834893))
+				if (!func_276(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")))
 				{
 					TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
 				}
@@ -37152,7 +37152,7 @@ void func_280()//Position - 0x2A36E
 		{
 			if (func_277(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false), 10.5f, 1, 1056964608, 0, 1, 0))
 			{
-				if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), -828834893) != 1)
+				if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")) != 1)
 				{
 					TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
 				}

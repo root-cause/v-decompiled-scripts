@@ -927,7 +927,7 @@ int func_6(int iParam0, int iParam1, bool bParam2, bool bParam3)//Position - 0x5
 			iVar0 = VEHICLE::GET_LAST_PED_IN_VEHICLE_SEAT(iParam0, iParam1);
 			if (!ENTITY::IS_ENTITY_DEAD(iVar0, false))
 			{
-				if (TASK::GET_SCRIPT_TASK_STATUS(iVar0, 451360105) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iVar0, -828834893) == 1)
+				if (TASK::GET_SCRIPT_TASK_STATUS(iVar0, joaat("SCRIPT_TASK_LEAVE_VEHICLE")) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iVar0, joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")) == 1)
 				{
 					if (SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(iParam0, false), ENTITY::GET_ENTITY_COORDS(iVar0, false)) < 10f)
 					{
@@ -4541,7 +4541,7 @@ int func_75(bool bParam0)//Position - 0x6C7A
 									PED::SET_PED_SHOOT_RATE(NETWORK::NET_TO_PED(Local_91.f_48[(bParam0 * 4 + iVar6)]), 50);
 									PED::SET_PED_COMBAT_ATTRIBUTES(NETWORK::NET_TO_PED(Local_91.f_48[(bParam0 * 4 + iVar6)]), 52, true);
 									PED::SET_PED_COMBAT_ATTRIBUTES(NETWORK::NET_TO_PED(Local_91.f_48[(bParam0 * 4 + iVar6)]), 53, true);
-									PED::SET_PED_FIRING_PATTERN(NETWORK::NET_TO_PED(Local_91.f_48[(bParam0 * 4 + iVar6)]), -1857128337);
+									PED::SET_PED_FIRING_PATTERN(NETWORK::NET_TO_PED(Local_91.f_48[(bParam0 * 4 + iVar6)]), joaat("FIRING_PATTERN_BURST_FIRE_HELI"));
 								}
 								fVar0 = Global_262145.f_11826;
 								fVar1 = Global_262145.f_11827;
@@ -29829,7 +29829,7 @@ void func_762()//Position - 0x24295
 								iVar1 = ENTITY::GET_ENTITY_MODEL(iVar2);
 								if (VEHICLE::IS_THIS_MODEL_A_HELI(iVar1))
 								{
-									if (TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_48[bVar0]), -1273030092) != 1 && TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_48[bVar0]), -1273030092) != 0)
+									if (TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_48[bVar0]), joaat("SCRIPT_TASK_VEHICLE_MISSION")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_48[bVar0]), joaat("SCRIPT_TASK_VEHICLE_MISSION")) != 0)
 									{
 										if (VEHICLE::GET_PED_IN_VEHICLE_SEAT(iVar2, -1, false) == NETWORK::NET_TO_PED(Local_91.f_48[bVar0]))
 										{
@@ -29856,7 +29856,7 @@ void func_762()//Position - 0x24295
 										iVar11 = 1;
 										iVar10 = (bVar0 / 4);
 									}
-									if ((TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_48[bVar0]), -1273030092) != 1 && TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_48[bVar0]), -1273030092) != 0) || ((iVar11 && iVar10 < 5) && iLocal_97[iVar10] != Local_91.f_110[iVar10]))
+									if ((TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_48[bVar0]), joaat("SCRIPT_TASK_VEHICLE_MISSION")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_48[bVar0]), joaat("SCRIPT_TASK_VEHICLE_MISSION")) != 0) || ((iVar11 && iVar10 < 5) && iLocal_97[iVar10] != Local_91.f_110[iVar10]))
 									{
 										if (VEHICLE::GET_PED_IN_VEHICLE_SEAT(iVar2, -1, false) == NETWORK::NET_TO_PED(Local_91.f_48[bVar0]))
 										{
@@ -29881,7 +29881,7 @@ void func_762()//Position - 0x24295
 										}
 									}
 								}
-								else if (((TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_48[bVar0]), -1273030092) != 1 && TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_48[bVar0]), -1273030092) != 0) && TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_48[bVar0]), 1306903184) != 0) && TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_48[bVar0]), 1306903184) != 1)
+								else if (((TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_48[bVar0]), joaat("SCRIPT_TASK_VEHICLE_MISSION")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_48[bVar0]), joaat("SCRIPT_TASK_VEHICLE_MISSION")) != 0) && TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_48[bVar0]), joaat("SCRIPT_TASK_GO_TO_COORD_ANY_MEANS_EXTRA_PARAMS_WITH_CRUISE_SPEED")) != 0) && TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_48[bVar0]), joaat("SCRIPT_TASK_GO_TO_COORD_ANY_MEANS_EXTRA_PARAMS_WITH_CRUISE_SPEED")) != 1)
 								{
 									if (VEHICLE::GET_PED_IN_VEHICLE_SEAT(iVar2, -1, false) == NETWORK::NET_TO_PED(Local_91.f_48[bVar0]))
 									{
@@ -29913,7 +29913,7 @@ void func_762()//Position - 0x24295
 						{
 							if (!func_23())
 							{
-								if (TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_48[bVar0]), -1442466670) != 1 && TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_48[bVar0]), -1442466670) != 0)
+								if (TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_48[bVar0]), joaat("SCRIPT_TASK_COMBAT_HATED_TARGETS_AROUND_PED")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_48[bVar0]), joaat("SCRIPT_TASK_COMBAT_HATED_TARGETS_AROUND_PED")) != 0)
 								{
 									if (PED::IS_PED_IN_ANY_VEHICLE(NETWORK::NET_TO_PED(Local_91.f_48[bVar0]), false))
 									{
@@ -30802,14 +30802,14 @@ void func_777()//Position - 0x25493
 	{
 		if (func_240(PLAYER::PLAYER_ID()))
 		{
-			if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(1344549371))
+			if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("DisableSpectateScript")))
 			{
-				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(1344549371);
+				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("DisableSpectateScript"));
 			}
 		}
-		else if (HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(1344549371))
+		else if (HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("DisableSpectateScript")))
 		{
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1344549371);
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DisableSpectateScript"));
 		}
 	}
 	if (BitTest(Global_1836844.f_1, 9))
@@ -31895,9 +31895,9 @@ void func_817(int iParam0, bool bParam1, int iParam2)//Position - 0x2698D
 		func_557();
 		func_823();
 	}
-	if (HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(1344549371))
+	if (HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("DisableSpectateScript")))
 	{
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1344549371);
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DisableSpectateScript"));
 	}
 	if (!bParam1 || uVar0)
 	{

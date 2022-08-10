@@ -75685,7 +75685,7 @@ int func_915(int iParam0, bool bParam1, bool bParam2, int iParam3, bool bParam4,
 				TASK::CLEAR_PED_TASKS_IMMEDIATELY(PLAYER::PLAYER_PED_ID());
 				Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_215 = 4;
 			}
-			else if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), -1794415470) == 7)
+			else if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_ENTER_VEHICLE")) == 7)
 			{
 				if (ENTITY::DOES_ENTITY_EXIST(Global_2667225.f_45.f_173) && VEHICLE::IS_VEHICLE_DRIVEABLE(Global_2667225.f_45.f_173, false))
 				{
@@ -110976,7 +110976,7 @@ int func_1121(int iParam0, int iParam1, bool bParam2)//Position - 0x88278
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;
@@ -129136,7 +129136,7 @@ int func_1246(int iParam0, int iParam1)//Position - 0x9D8CC
 
 int func_1247(int iParam0, int iParam1, int iParam2)//Position - 0x9DCAB
 {
-	if (!func_1248() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_1248() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}
@@ -133194,7 +133194,7 @@ int func_1322(int iParam0, int iParam1, bool bParam2, bool bParam3)//Position - 
 			iVar0 = VEHICLE::GET_LAST_PED_IN_VEHICLE_SEAT(iParam0, iParam1);
 			if (!ENTITY::IS_ENTITY_DEAD(iVar0, false))
 			{
-				if (TASK::GET_SCRIPT_TASK_STATUS(iVar0, 451360105) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iVar0, -828834893) == 1)
+				if (TASK::GET_SCRIPT_TASK_STATUS(iVar0, joaat("SCRIPT_TASK_LEAVE_VEHICLE")) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iVar0, joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")) == 1)
 				{
 					if (SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(iParam0, false), ENTITY::GET_ENTITY_COORDS(iVar0, false)) < 10f)
 					{
@@ -153576,7 +153576,7 @@ void func_1802()//Position - 0xC0C77
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()) && !ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
 		{
-			if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 451360105) != 0 && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 451360105) != 1)
+			if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_VEHICLE")) != 0 && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_VEHICLE")) != 1)
 			{
 				if (func_1696(1))
 				{
@@ -165124,7 +165124,7 @@ void func_2202()//Position - 0xCD93F
 						}
 						if (!ENTITY::IS_ENTITY_DEAD(iVar0, false))
 						{
-							if (TASK::GET_SCRIPT_TASK_STATUS(iVar0, -1273030092) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iVar0, -1273030092) != 0)
+							if (TASK::GET_SCRIPT_TASK_STATUS(iVar0, joaat("SCRIPT_TASK_VEHICLE_MISSION")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iVar0, joaat("SCRIPT_TASK_VEHICLE_MISSION")) != 0)
 							{
 								if (NETWORK::NETWORK_HAS_CONTROL_OF_NETWORK_ID(Local_157.f_400[bVar4 /*8*/]) || (!NETWORK::IS_NETWORK_ID_OWNED_BY_PARTICIPANT(Local_157.f_400[bVar4 /*8*/]) && NETWORK::NETWORK_IS_HOST_OF_THIS_SCRIPT()))
 								{
@@ -165162,7 +165162,7 @@ void func_2202()//Position - 0xCD93F
 											{
 												if (func_1645(iVar3) && func_1645(func_40(Local_157.f_591)))
 												{
-													TASK::TASK_DRIVE_BY(iVar0, 0, func_40(Local_157.f_591), 0f, 0f, 0f, -1f, 30, true, -753768974);
+													TASK::TASK_DRIVE_BY(iVar0, 0, func_40(Local_157.f_591), 0f, 0f, 0f, -1f, 30, true, joaat("FIRING_PATTERN_BURST_FIRE_DRIVEBY"));
 												}
 											}
 										}
@@ -165179,7 +165179,7 @@ void func_2202()//Position - 0xCD93F
 						iVar0 = func_197(bVar4);
 						if (!ENTITY::IS_ENTITY_DEAD(iVar0, false))
 						{
-							if (TASK::GET_SCRIPT_TASK_STATUS(iVar0, -1273030092) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iVar0, -1273030092) != 0)
+							if (TASK::GET_SCRIPT_TASK_STATUS(iVar0, joaat("SCRIPT_TASK_VEHICLE_MISSION")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iVar0, joaat("SCRIPT_TASK_VEHICLE_MISSION")) != 0)
 							{
 								if (NETWORK::NETWORK_HAS_CONTROL_OF_NETWORK_ID(Local_157.f_400[bVar4 /*8*/]) || (!NETWORK::IS_NETWORK_ID_OWNED_BY_PARTICIPANT(Local_157.f_400[bVar4 /*8*/]) && NETWORK::NETWORK_IS_HOST_OF_THIS_SCRIPT()))
 								{
@@ -165219,7 +165219,7 @@ void func_2202()//Position - 0xCD93F
 						{
 							if (func_269())
 							{
-								if (TASK::GET_SCRIPT_TASK_STATUS(iVar0, 1120685857) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iVar0, 1120685857) != 0)
+								if (TASK::GET_SCRIPT_TASK_STATUS(iVar0, joaat("SCRIPT_TASK_COMBAT_HATED_TARGETS_IN_AREA")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iVar0, joaat("SCRIPT_TASK_COMBAT_HATED_TARGETS_IN_AREA")) != 0)
 								{
 									if (NETWORK::NETWORK_HAS_CONTROL_OF_NETWORK_ID(Local_157.f_400[bVar4 /*8*/]) || (!NETWORK::IS_NETWORK_ID_OWNED_BY_PARTICIPANT(Local_157.f_400[bVar4 /*8*/]) && NETWORK::NETWORK_IS_HOST_OF_THIS_SCRIPT()))
 									{
@@ -165233,7 +165233,7 @@ void func_2202()//Position - 0xCD93F
 							}
 							else if ((func_384() || func_11()) || func_12())
 							{
-								if (TASK::GET_SCRIPT_TASK_STATUS(iVar0, 1120685857) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iVar0, 1120685857) != 0)
+								if (TASK::GET_SCRIPT_TASK_STATUS(iVar0, joaat("SCRIPT_TASK_COMBAT_HATED_TARGETS_IN_AREA")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iVar0, joaat("SCRIPT_TASK_COMBAT_HATED_TARGETS_IN_AREA")) != 0)
 								{
 									if (NETWORK::NETWORK_HAS_CONTROL_OF_NETWORK_ID(Local_157.f_400[bVar4 /*8*/]) || (!NETWORK::IS_NETWORK_ID_OWNED_BY_PARTICIPANT(Local_157.f_400[bVar4 /*8*/]) && NETWORK::NETWORK_IS_HOST_OF_THIS_SCRIPT()))
 									{
@@ -165245,7 +165245,7 @@ void func_2202()//Position - 0xCD93F
 									}
 								}
 							}
-							else if (TASK::GET_SCRIPT_TASK_STATUS(iVar0, -1442466670) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iVar0, -1442466670) != 0)
+							else if (TASK::GET_SCRIPT_TASK_STATUS(iVar0, joaat("SCRIPT_TASK_COMBAT_HATED_TARGETS_AROUND_PED")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iVar0, joaat("SCRIPT_TASK_COMBAT_HATED_TARGETS_AROUND_PED")) != 0)
 							{
 								if (NETWORK::NETWORK_HAS_CONTROL_OF_NETWORK_ID(Local_157.f_400[bVar4 /*8*/]) || (!NETWORK::IS_NETWORK_ID_OWNED_BY_PARTICIPANT(Local_157.f_400[bVar4 /*8*/]) && NETWORK::NETWORK_IS_HOST_OF_THIS_SCRIPT()))
 								{
@@ -165266,7 +165266,7 @@ void func_2202()//Position - 0xCD93F
 						iVar0 = func_197(bVar4);
 						if (!ENTITY::IS_ENTITY_DEAD(iVar0, false))
 						{
-							if (TASK::GET_SCRIPT_TASK_STATUS(iVar0, -828834893) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iVar0, -828834893) != 0)
+							if (TASK::GET_SCRIPT_TASK_STATUS(iVar0, joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iVar0, joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")) != 0)
 							{
 								if (NETWORK::NETWORK_HAS_CONTROL_OF_NETWORK_ID(Local_157.f_400[bVar4 /*8*/]) || (!NETWORK::IS_NETWORK_ID_OWNED_BY_PARTICIPANT(Local_157.f_400[bVar4 /*8*/]) && NETWORK::NETWORK_IS_HOST_OF_THIS_SCRIPT()))
 								{
@@ -165469,7 +165469,7 @@ void func_2203(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam
 				{
 					if (VEHICLE::GET_PED_IN_VEHICLE_SEAT(iVar3, -1, false) != iParam0)
 					{
-						PED::SET_PED_FIRING_PATTERN(iParam0, -1857128337);
+						PED::SET_PED_FIRING_PATTERN(iParam0, joaat("FIRING_PATTERN_BURST_FIRE_HELI"));
 					}
 				}
 				if (iVar2 == joaat("buzzard"))

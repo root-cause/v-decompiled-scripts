@@ -446,7 +446,7 @@ void func_2()//Position - 0x465
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(iLocal_39))
 		{
-			if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_38, 993674639) == 1)
+			if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_38, joaat("SCRIPT_TASK_START_SCENARIO_IN_PLACE")) == 1)
 			{
 				OBJECT::DELETE_OBJECT(&iLocal_39);
 			}
@@ -1032,7 +1032,7 @@ int func_27()//Position - 0xDEB
 				ENTITY::DETACH_ENTITY(iLocal_39, true, true);
 			}
 			AUDIO::STOP_SCRIPTED_CONVERSATION(false);
-			if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_38, 1805844857) != 1)
+			if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_38, joaat("SCRIPT_TASK_SMART_FLEE_PED")) != 1)
 			{
 				PED::SET_PED_KEEP_TASK(iLocal_38, true);
 				TASK::TASK_SMART_FLEE_PED(iLocal_38, PLAYER::PLAYER_PED_ID(), 1000f, -1, false, false);
@@ -1069,7 +1069,7 @@ int func_28()//Position - 0xE6C
 			func_30();
 			if (!func_29(Local_49))
 			{
-				if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_38, 713668775) != 1)
+				if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_38, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1)
 				{
 					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_38, Local_49, 1f, -1, 0.25f, false, fLocal_50);
 					PED::SET_PED_KEEP_TASK(iLocal_38, true);

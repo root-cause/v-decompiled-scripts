@@ -13754,13 +13754,13 @@ void func_246(int* iParam0)//Position - 0xF135
 	{
 		if (!PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 		{
-			if ((TASK::GET_SCRIPT_TASK_STATUS(*iParam0, 1805844857) != 1 && TASK::GET_SCRIPT_TASK_STATUS(*iParam0, -1824940423) != 1) && TASK::GET_SCRIPT_TASK_STATUS(*iParam0, 242628503) != 1)
+			if ((TASK::GET_SCRIPT_TASK_STATUS(*iParam0, joaat("SCRIPT_TASK_SMART_FLEE_PED")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(*iParam0, joaat("SCRIPT_TASK_GO_TO_COORD_ANY_MEANS")) != 1) && TASK::GET_SCRIPT_TASK_STATUS(*iParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1)
 			{
 				TASK::TASK_SMART_FLEE_PED(*iParam0, PLAYER::PLAYER_PED_ID(), 500f, -1, false, false);
 			}
 			PED::SET_PED_MAX_MOVE_BLEND_RATIO(*iParam0, 2f);
 		}
-		else if (((TASK::GET_SCRIPT_TASK_STATUS(*iParam0, 1805844857) != 1 && TASK::GET_SCRIPT_TASK_STATUS(*iParam0, 1805844857) != 0) && TASK::GET_SCRIPT_TASK_STATUS(*iParam0, 242628503) != 1) && TASK::GET_SCRIPT_TASK_STATUS(*iParam0, 242628503) != 0)
+		else if (((TASK::GET_SCRIPT_TASK_STATUS(*iParam0, joaat("SCRIPT_TASK_SMART_FLEE_PED")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(*iParam0, joaat("SCRIPT_TASK_SMART_FLEE_PED")) != 0) && TASK::GET_SCRIPT_TASK_STATUS(*iParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1) && TASK::GET_SCRIPT_TASK_STATUS(*iParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 0)
 		{
 			TASK::TASK_SMART_FLEE_PED(*iParam0, PLAYER::PLAYER_PED_ID(), 500f, -1, false, false);
 		}
@@ -14767,7 +14767,7 @@ void func_278(int iParam0, int iParam1, var uParam2)//Position - 0x1031E
 			{
 				if (!TASK::IS_WAYPOINT_PLAYBACK_GOING_ON_FOR_VEHICLE(iParam1))
 				{
-					if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, 451360105) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iParam0, 451360105) != 0)
+					if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_LEAVE_VEHICLE")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_LEAVE_VEHICLE")) != 0)
 					{
 						TASK::TASK_LEAVE_VEHICLE(iParam0, iParam1, 0);
 					}
@@ -14778,14 +14778,14 @@ void func_278(int iParam0, int iParam1, var uParam2)//Position - 0x1031E
 				}
 				if (func_280(&(uParam2->f_8)))
 				{
-					if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, 451360105) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iParam0, 451360105) != 0)
+					if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_LEAVE_VEHICLE")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_LEAVE_VEHICLE")) != 0)
 					{
 						TASK::TASK_LEAVE_VEHICLE(iParam0, iParam1, 0);
 					}
 				}
 				func_247(uParam2, 0);
 			}
-			else if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, 713668775) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470) != 1)
+			else if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE")) != 1)
 			{
 				func_279(iParam0);
 			}
@@ -14803,7 +14803,7 @@ void func_279(int iParam0)//Position - 0x103FC
 	
 	if (!ENTITY::IS_ENTITY_DEAD(iParam0, false))
 	{
-		if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, 242628503) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iParam0, 242628503) != 0)
+		if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 0)
 		{
 			if (func_234(iParam0, Local_1444, 1) <= 50f)
 			{
@@ -14927,7 +14927,7 @@ void func_282()//Position - 0x106C1
 	{
 		if (func_238(iLocal_1502, 0, &uLocal_120, &uLocal_131, 0, 0, 0, 1, 1))
 		{
-			if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_1502, 1805844857) != 1)
+			if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_1502, joaat("SCRIPT_TASK_SMART_FLEE_PED")) != 1)
 			{
 				TASK::CLEAR_PED_TASKS(iLocal_1502);
 				TASK::TASK_SMART_FLEE_PED(iLocal_1502, PLAYER::PLAYER_PED_ID(), 1000f, -1, false, false);
@@ -15648,7 +15648,7 @@ void func_308(var uParam0, bool bParam1)//Position - 0x11459
 				}
 				if (!CAM::DOES_CAM_EXIST(iLocal_140))
 				{
-					iLocal_140 = CAM::CREATE_CAMERA(26379945, false);
+					iLocal_140 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), false);
 					CAM::SET_CAM_CONTROLS_MINI_MAP_HEADING(iLocal_140, true);
 					if (func_277("ASS_HELP_02"))
 					{
@@ -15960,7 +15960,7 @@ void func_311(var uParam0, var uParam1, int iParam2)//Position - 0x11B5F
 						Local_1448 = { 4.8718f, 0f, -144.4729f };
 					}
 				}
-				iLocal_1468 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Local_1447, Local_1448, 65f, false, 2);
+				iLocal_1468 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Local_1447, Local_1448, 65f, false, 2);
 				CAM::SET_CAM_FOV(iLocal_1468, 38f);
 				CAM::SET_CAM_ACTIVE(iLocal_1468, true);
 				if (!bLocal_1388)
@@ -16664,11 +16664,11 @@ void func_326(var uParam0)//Position - 0x13185
 {
 	if (!CAM::DOES_CAM_EXIST(iLocal_1468))
 	{
-		iLocal_1468 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, CAM::GET_FINAL_RENDERED_CAM_COORD(), CAM::GET_FINAL_RENDERED_CAM_ROT(2), 35f, false, 2);
+		iLocal_1468 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), CAM::GET_FINAL_RENDERED_CAM_COORD(), CAM::GET_FINAL_RENDERED_CAM_ROT(2), 35f, false, 2);
 	}
 	if (!CAM::DOES_CAM_EXIST(iLocal_1469))
 	{
-		iLocal_1469 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, CAM::GET_FINAL_RENDERED_CAM_COORD(), CAM::GET_FINAL_RENDERED_CAM_ROT(2), 34f, false, 2);
+		iLocal_1469 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), CAM::GET_FINAL_RENDERED_CAM_COORD(), CAM::GET_FINAL_RENDERED_CAM_ROT(2), 34f, false, 2);
 	}
 	if (VEHICLE::IS_VEHICLE_DRIVEABLE(uParam0->f_1, false) && !ENTITY::IS_ENTITY_DEAD(uParam0->f_1, false))
 	{
@@ -24328,8 +24328,8 @@ void func_474(var uParam0)//Position - 0x1F0E1
 					ENTITY::PLAY_SYNCHRONIZED_ENTITY_ANIM(iLocal_1353, iLocal_1377, "ass_bus_call_phone", "oddjobs@assassinate@bus@call", 1000f, -2f, 0, 1000f);
 					if (!CAM::DOES_CAM_EXIST(iLocal_1354))
 					{
-						iLocal_1355 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Local_1362, Local_1363, 36f, true, 2);
-						iLocal_1354 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Local_1364, Local_1365, 36f, false, 2);
+						iLocal_1355 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Local_1362, Local_1363, 36f, true, 2);
+						iLocal_1354 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Local_1364, Local_1365, 36f, false, 2);
 						CAM::SET_CAM_ACTIVE_WITH_INTERP(iLocal_1354, iLocal_1355, 2500, 1, 1);
 						CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
 						CAM::SHAKE_CAM(iLocal_1354, "HAND_SHAKE", 0.2f);
@@ -26329,7 +26329,7 @@ int func_516(int iParam0, int iParam1)//Position - 0x21963
 
 int func_517(int iParam0, int iParam1, int iParam2)//Position - 0x21D42
 {
-	if (!func_518() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_518() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}

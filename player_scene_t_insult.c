@@ -1190,7 +1190,7 @@ void func_26(int iParam0, int iParam1)//Position - 0xAF9
 						PED::SET_PED_AS_GROUP_MEMBER(iLocal_233[iParam1], iLocal_238);
 					}
 				}
-				if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, 713668775) != 1)
+				if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1)
 				{
 					if (fLocal_248[iParam1] == 0f)
 					{
@@ -1234,7 +1234,7 @@ void func_26(int iParam0, int iParam1)//Position - 0xAF9
 				break;
 			
 			case 4:
-				if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, 1805844857) != 1)
+				if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_SMART_FLEE_PED")) != 1)
 				{
 					iLocal_234[iParam1] = 1;
 				}

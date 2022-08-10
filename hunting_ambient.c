@@ -10652,7 +10652,7 @@ int func_216()//Position - 0xD20C
 				Var1 = { ENTITY::GET_ENTITY_ROTATION(iLocal_351, 2) };
 				iLocal_360 = PED::CREATE_SYNCHRONIZED_SCENE(Var0, Var1, 2);
 				PED::SET_SYNCHRONIZED_SCENE_HOLD_LAST_FRAME(iLocal_360, false);
-				iLocal_361 = CAM::CREATE_CAMERA(964613260, false);
+				iLocal_361 = CAM::CREATE_CAMERA(joaat("DEFAULT_ANIMATED_CAMERA"), false);
 				CAM::PLAY_SYNCHRONIZED_CAM_ANIM(iLocal_361, iLocal_360, "_Trevor_cam", "oddjobs@hunterOutro");
 				TASK::TASK_SYNCHRONIZED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_360, "oddjobs@hunterOutro", "_Trevor", 1000f, -2f, 0, 0, 1000f, 0);
 				PED::SET_FORCE_FOOTSTEP_UPDATE(PLAYER::PLAYER_PED_ID(), true);
@@ -99881,7 +99881,7 @@ void func_580(int* iParam0, int iParam1)//Position - 0x7711B
 				func_48(&(iParam0->f_1));
 				func_599(iParam0);
 			}
-			else if (TASK::GET_SCRIPT_TASK_STATUS(*iParam0, -982327190) == 7 && TASK::GET_SCRIPT_TASK_STATUS(*iParam0, -2017877118) == 7)
+			else if (TASK::GET_SCRIPT_TASK_STATUS(*iParam0, joaat("SCRIPT_TASK_STAND_STILL")) == 7 && TASK::GET_SCRIPT_TASK_STATUS(*iParam0, joaat("SCRIPT_TASK_PLAY_ANIM")) == 7)
 			{
 				func_599(iParam0);
 				iParam0->f_12 = 8;
@@ -106438,7 +106438,7 @@ void func_750(int iParam0)//Position - 0x7F38D
 					if ((MISC::GET_GAME_TIMER() > Local_53[iParam0 /*36*/].f_23 && func_611(Var4)) && SYSTEM::VDIST2(Var4, ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true)) < 10000f)
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iVar5);
-						if (TASK::GET_SCRIPT_TASK_STATUS(Local_53[iParam0 /*36*/], 242628503) == 1)
+						if (TASK::GET_SCRIPT_TASK_STATUS(Local_53[iParam0 /*36*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 1)
 						{
 							TASK::TASK_PLAY_ANIM(0, "creatures@deer@amb@world_deer_grazing@exit", "exit", 4f, -8f, -1, 0, 0f, false, false, false);
 						}
@@ -106616,7 +106616,7 @@ void func_750(int iParam0)//Position - 0x7F38D
 			{
 				if (!Local_53[iParam0 /*36*/].f_9)
 				{
-					if (TASK::GET_SCRIPT_TASK_STATUS(Local_53[iParam0 /*36*/], 242628503) == 7 || TASK::GET_SCRIPT_TASK_STATUS(Local_53[iParam0 /*36*/], 242628503) != 1)
+					if (TASK::GET_SCRIPT_TASK_STATUS(Local_53[iParam0 /*36*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 7 || TASK::GET_SCRIPT_TASK_STATUS(Local_53[iParam0 /*36*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1)
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iVar6);
 						TASK::TASK_PLAY_ANIM(0, "creatures@deer@amb@world_deer_grazing@enter", "enter", 8f, -8f, -1, 0, 0f, false, false, false);
@@ -106660,7 +106660,7 @@ void func_750(int iParam0)//Position - 0x7F38D
 			{
 				if (!Local_53[iParam0 /*36*/].f_9)
 				{
-					if (TASK::GET_SCRIPT_TASK_STATUS(Local_53[iParam0 /*36*/], 242628503) == 7 || TASK::GET_SCRIPT_TASK_STATUS(Local_53[iParam0 /*36*/], 242628503) != 1)
+					if (TASK::GET_SCRIPT_TASK_STATUS(Local_53[iParam0 /*36*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 7 || TASK::GET_SCRIPT_TASK_STATUS(Local_53[iParam0 /*36*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1)
 					{
 						if (MISC::GET_GAME_TIMER() > Local_53[iParam0 /*36*/].f_24)
 						{

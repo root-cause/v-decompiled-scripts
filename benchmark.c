@@ -817,7 +817,7 @@ void func_25()//Position - 0xAC4
 		if (func_21(iVar0) && iVar0 != iLocal_77)
 		{
 			iVar1 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iVar0, -1, false);
-			if ((func_541(iVar1) && !func_27(iVar1, 1805844857)) && !func_26(ENTITY::GET_ENTITY_MODEL(iVar1)))
+			if ((func_541(iVar1) && !func_27(iVar1, joaat("SCRIPT_TASK_SMART_FLEE_PED"))) && !func_26(ENTITY::GET_ENTITY_MODEL(iVar1)))
 			{
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iVar1, true);
 				PED::SET_PED_FLEE_ATTRIBUTES(iVar1, 2, true);
@@ -868,7 +868,7 @@ void func_29()//Position - 0xBEC
 {
 	if (((!CAM::DOES_CAM_EXIST(iLocal_99) && func_541(iLocal_77)) && func_541(iLocal_97)) && func_17(iLocal_77, iLocal_97, 1) < 30f)
 	{
-		iLocal_99 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, -503.5369f, 261.8961f, 88.6503f, -0.1443f, 0f, 103.3085f, 50f, true, 2);
+		iLocal_99 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), -503.5369f, 261.8961f, 88.6503f, -0.1443f, 0f, 103.3085f, 50f, true, 2);
 		CAM::SHAKE_CAM(iLocal_99, "HAND_SHAKE", 0.5f);
 		CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
 		CAM::SET_CINEMATIC_MODE_ACTIVE(false);
@@ -1021,7 +1021,7 @@ void func_35()//Position - 0xE8B
 		else
 		{
 			func_34();
-			if (!func_27(iLocal_82[0], -1794415470))
+			if (!func_27(iLocal_82[0], joaat("SCRIPT_TASK_ENTER_VEHICLE")))
 			{
 				TASK::TASK_ENTER_VEHICLE(iLocal_82[0], iLocal_77, 20000, 0, 1f, 1, 0);
 			}
@@ -1065,8 +1065,8 @@ void func_38()//Position - 0xFF6
 {
 	if (!CAM::DOES_CAM_EXIST(iLocal_107))
 	{
-		iLocal_107 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, CAM::GET_FINAL_RENDERED_CAM_COORD(), CAM::GET_FINAL_RENDERED_CAM_ROT(2), CAM::GET_FINAL_RENDERED_CAM_FOV(), false, 2);
-		iLocal_108 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 295.1843f, 168.9212f, 111.301f, -43.0954f, 0f, 1.3863f, CAM::GET_FINAL_RENDERED_CAM_FOV(), false, 2);
+		iLocal_107 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), CAM::GET_FINAL_RENDERED_CAM_COORD(), CAM::GET_FINAL_RENDERED_CAM_ROT(2), CAM::GET_FINAL_RENDERED_CAM_FOV(), false, 2);
+		iLocal_108 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 295.1843f, 168.9212f, 111.301f, -43.0954f, 0f, 1.3863f, CAM::GET_FINAL_RENDERED_CAM_FOV(), false, 2);
 		CAM::SET_CAM_ACTIVE_WITH_INTERP(iLocal_108, iLocal_107, iLocal_70, 1, 1);
 		CAM::RENDER_SCRIPT_CAMS(true, false, 3000, false, false, 0);
 		iLocal_71 = MISC::GET_GAME_TIMER();

@@ -35068,12 +35068,12 @@ void func_232()//Position - 0x275BE
 				{
 					PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), false, 512);
 				}
-				iLocal_311[0] = CAM::CREATE_CAMERA(26379945, true);
+				iLocal_311[0] = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 				CAM::SET_CAM_FOV(iLocal_311[0], 25.3209f);
 				CAM::ATTACH_CAM_TO_ENTITY(iLocal_311[0], Local_314.f_0, -3.4384f, 42.1476f, 0.1772f, true);
 				CAM::POINT_CAM_AT_ENTITY(iLocal_311[0], Local_314.f_0, -2.9318f, 39.1938f, 0.3114f, true);
 				CAM::SHAKE_CAM(iLocal_311[0], "HAND_SHAKE", 0.166f);
-				iLocal_311[1] = CAM::CREATE_CAMERA(26379945, true);
+				iLocal_311[1] = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 				CAM::SET_CAM_FOV(iLocal_311[1], 25.3209f);
 				CAM::ATTACH_CAM_TO_ENTITY(iLocal_311[1], Local_314.f_0, -3.6622f, 13.9852f, -0.5222f, true);
 				CAM::POINT_CAM_AT_ENTITY(iLocal_311[1], Local_314.f_0, -2.2737f, 11.3714f, -0.0324f, true);
@@ -35123,11 +35123,11 @@ void func_232()//Position - 0x275BE
 			{
 				if (func_238(Local_314.f_0))
 				{
-					iLocal_311[2] = CAM::CREATE_CAMERA(26379945, true);
+					iLocal_311[2] = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 					CAM::SET_CAM_FOV(iLocal_311[2], 38.4841f);
 					CAM::SET_CAM_COORD(iLocal_311[2], ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(Local_314.f_0, -0.1473f, -9.8601f, 5.1181f));
 					CAM::POINT_CAM_AT_COORD(iLocal_311[2], ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(Local_314.f_0, -0.1893f, -6.9636f, 4.3379f));
-					iLocal_311[3] = CAM::CREATE_CAMERA(26379945, true);
+					iLocal_311[3] = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 					CAM::SET_CAM_FOV(iLocal_311[3], 38.4841f);
 					CAM::SET_CAM_COORD(iLocal_311[3], ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(Local_314.f_0, -0.1892f, -9.8601f, 6.0113f));
 					CAM::POINT_CAM_AT_COORD(iLocal_311[3], ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(Local_314.f_0, -0.2225f, -7.1434f, 5.779f));
@@ -48741,7 +48741,7 @@ int func_481(int iParam0, float fParam1, int iParam2)//Position - 0x3A032
 			else if (iParam2 == 1)
 			{
 				iVar0 = 0;
-				if (!func_484(PLAYER::PLAYER_PED_ID(), -828834893))
+				if (!func_484(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")))
 				{
 					TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
 				}
@@ -48956,7 +48956,7 @@ void func_491()//Position - 0x3A446
 		{
 			if (func_486(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false), 10.5f, 1, 1056964608, 0, 1, 0))
 			{
-				if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), -828834893) != 1)
+				if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")) != 1)
 				{
 					TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
 				}

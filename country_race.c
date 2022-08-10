@@ -5383,8 +5383,8 @@ void func_60()//Position - 0x67A8
 			break;
 		
 		case 1:
-			iLocal_361 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1954.776f, 3149.146f, 47.0701f, 4.9054f, -0.0416f, -158.4057f, 52.4461f, false, 2);
-			iLocal_362 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1954.776f, 3150.146f, 47.0701f, 4.9054f, -0.0416f, -158.4057f, 52.4461f, false, 2);
+			iLocal_361 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1954.776f, 3149.146f, 47.0701f, 4.9054f, -0.0416f, -158.4057f, 52.4461f, false, 2);
+			iLocal_362 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1954.776f, 3150.146f, 47.0701f, 4.9054f, -0.0416f, -158.4057f, 52.4461f, false, 2);
 			CAM::SET_CAM_ACTIVE(iLocal_361, true);
 			CAM::SET_CAM_ACTIVE_WITH_INTERP(iLocal_362, iLocal_361, 2000, 0, 1);
 			switch (func_42())
@@ -5421,7 +5421,7 @@ void func_60()//Position - 0x67A8
 				if (!CAM::IS_CAM_INTERPOLATING(iLocal_362))
 				{
 					CAM::DESTROY_CAM(iLocal_361, false);
-					iLocal_361 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1954.776f, 3149.146f, 47.0701f, 89.5011f, -0.0416f, -158.4057f, 30f, false, 2);
+					iLocal_361 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1954.776f, 3149.146f, 47.0701f, 89.5011f, -0.0416f, -158.4057f, 30f, false, 2);
 					CAM::SET_CAM_ACTIVE_WITH_INTERP(iLocal_361, iLocal_362, 600, 1, 1);
 					CAM::SET_CAM_MOTION_BLUR_STRENGTH(iLocal_361, 1f);
 					TASK::CLEAR_PED_TASKS(PLAYER::PLAYER_PED_ID());
@@ -5501,9 +5501,9 @@ void func_60()//Position - 0x67A8
 		
 		case 4:
 			CAM::DESTROY_ALL_CAMS(false);
-			iLocal_361 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1971.382f, 3108.135f, 47.2013f, 89.4758f, 0.0478f, 53.1639f, 53.3742f, false, 2);
+			iLocal_361 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1971.382f, 3108.135f, 47.2013f, 89.4758f, 0.0478f, 53.1639f, 53.3742f, false, 2);
 			CAM::SET_CAM_ACTIVE(iLocal_361, true);
-			iLocal_362 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1971.382f, 3108.135f, 47.2013f, 0.4758f, 0.0478f, 53.1639f, 53.3742f, false, 2);
+			iLocal_362 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1971.382f, 3108.135f, 47.2013f, 0.4758f, 0.0478f, 53.1639f, 53.3742f, false, 2);
 			CAM::SET_CAM_ACTIVE_WITH_INTERP(iLocal_362, iLocal_361, 600, 1, 1);
 			GRAPHICS::ANIMPOSTFX_STOP("MinigameTransitionIn");
 			AUDIO::PLAY_SOUND_FRONTEND(-1, "Short_Transition_Out", "PLAYER_SWITCH_CUSTOM_SOUNDSET", true);
@@ -5525,7 +5525,7 @@ void func_60()//Position - 0x67A8
 				if (!CAM::IS_CAM_INTERPOLATING(iLocal_362))
 				{
 					CAM::DESTROY_CAM(iLocal_361, false);
-					iLocal_361 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1971.637f, 3108.429f, 47.201f, 0.1839f, 0.0478f, 40.5043f, 40f, false, 2);
+					iLocal_361 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1971.637f, 3108.429f, 47.201f, 0.1839f, 0.0478f, 40.5043f, 40f, false, 2);
 					CAM::SET_CAM_ACTIVE_WITH_INTERP(iLocal_361, iLocal_362, 5000, 1, 1);
 					CAM::SHAKE_CAM(iLocal_361, "HAND_SHAKE", 1f);
 					SYSTEM::SETTIMERA(0);
@@ -5574,9 +5574,9 @@ void func_60()//Position - 0x67A8
 		
 		case 10:
 			CAM::DESTROY_ALL_CAMS(false);
-			iLocal_361 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1953.31f, 3139.005f, 48.1762f, 89.5003f, -0.0032f, 52.2429f, 25.3742f, false, 2);
+			iLocal_361 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1953.31f, 3139.005f, 48.1762f, 89.5003f, -0.0032f, 52.2429f, 25.3742f, false, 2);
 			CAM::SET_CAM_ACTIVE(iLocal_361, true);
-			iLocal_362 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1953.31f, 3139.005f, 48.1762f, -7.3963f, -0.0058f, 52.1179f, 45f, false, 2);
+			iLocal_362 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1953.31f, 3139.005f, 48.1762f, -7.3963f, -0.0058f, 52.1179f, 45f, false, 2);
 			CAM::SET_CAM_ACTIVE_WITH_INTERP(iLocal_362, iLocal_361, 800, 1, 1);
 			GRAPHICS::ANIMPOSTFX_STOP("MinigameTransitionIn");
 			AUDIO::PLAY_SOUND_FRONTEND(-1, "Short_Transition_Out", "PLAYER_SWITCH_CUSTOM_SOUNDSET", true);
@@ -17832,8 +17832,8 @@ int func_268()//Position - 0x18186
 			if (SYSTEM::TIMERA() > 6000)
 			{
 				CAM::DESTROY_ALL_CAMS(false);
-				iLocal_361 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1960.154f, 3125.919f, 47.8242f, -2.4987f, 0.0002f, -95.2875f, 25f, false, 2);
-				iLocal_362 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1963.017f, 3129.43f, 47.481f, -3.0689f, 0.0002f, -114.3019f, 25f, false, 2);
+				iLocal_361 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1960.154f, 3125.919f, 47.8242f, -2.4987f, 0.0002f, -95.2875f, 25f, false, 2);
+				iLocal_362 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1963.017f, 3129.43f, 47.481f, -3.0689f, 0.0002f, -114.3019f, 25f, false, 2);
 				CAM::SET_CAM_ACTIVE(iLocal_361, true);
 				CAM::SET_CAM_ACTIVE_WITH_INTERP(iLocal_362, iLocal_361, 7000, 0, 1);
 				CAM::SHAKE_CAM(iLocal_361, "HAND_SHAKE", 0.1f);
@@ -17846,7 +17846,7 @@ int func_268()//Position - 0x18186
 		case 4:
 			if (SYSTEM::TIMERA() > 4900)
 			{
-				if (func_271(PLAYER::PLAYER_PED_ID(), -1817882002, 1))
+				if (func_271(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD"), 1))
 				{
 					TASK::CLEAR_PED_TASKS(PLAYER::PLAYER_PED_ID());
 					if (func_8(iLocal_365))
@@ -17861,8 +17861,8 @@ int func_268()//Position - 0x18186
 				CAM::DESTROY_ALL_CAMS(false);
 				CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
 				CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
-				iLocal_361 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1990.664f, 3113.482f, 47.1558f, 0.8047f, 0.0484f, 56.7722f, 50f, true, 2);
-				iLocal_362 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, CAM::GET_GAMEPLAY_CAM_COORD(), CAM::GET_GAMEPLAY_CAM_ROT(2), CAM::GET_GAMEPLAY_CAM_FOV(), false, 2);
+				iLocal_361 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1990.664f, 3113.482f, 47.1558f, 0.8047f, 0.0484f, 56.7722f, 50f, true, 2);
+				iLocal_362 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), CAM::GET_GAMEPLAY_CAM_COORD(), CAM::GET_GAMEPLAY_CAM_ROT(2), CAM::GET_GAMEPLAY_CAM_FOV(), false, 2);
 				CAM::SET_CAM_ACTIVE_WITH_INTERP(iLocal_362, iLocal_361, 4000, 3, 1);
 				SYSTEM::SETTIMERA(0);
 				iLocal_111++;
@@ -18717,7 +18717,7 @@ void func_295(int iParam0)//Position - 0x198EC
 			if ((!PED::IS_PED_IN_COMBAT((*iParam0)[iVar0 /*50*/], 0) && !PED::IS_PED_FLEEING((*iParam0)[iVar0 /*50*/])) && !PED::IS_PED_RAGDOLL((*iParam0)[iVar0 /*50*/]))
 			{
 				PED::SET_IK_TARGET((*iParam0)[iVar0 /*50*/], 1, PLAYER::PLAYER_PED_ID(), 0, 0f, 0f, 0f, 0, -1, -1);
-				if (!func_271((*iParam0)[iVar0 /*50*/], 242628503, 1))
+				if (!func_271((*iParam0)[iVar0 /*50*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1))
 				{
 					TASK::OPEN_SEQUENCE_TASK(&((iParam0[iVar0 /*50*/])->f_2));
 					TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, PLAYER::PLAYER_PED_ID(), 2000);
@@ -19097,7 +19097,7 @@ void func_302(var uParam0, struct<20> Param1, bool bParam2)//Position - 0x19EEB
 				}
 				else if (bParam2)
 				{
-					if (!func_271(*uParam0, 242628503, 1))
+					if (!func_271(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1))
 					{
 						TASK::OPEN_SEQUENCE_TASK(&(uParam0->f_2));
 						TASK::TASK_PAUSE(0, MISC::GET_RANDOM_INT_IN_RANGE(200, 500));
@@ -19164,7 +19164,7 @@ void func_302(var uParam0, struct<20> Param1, bool bParam2)//Position - 0x19EEB
 					default:
 						if (Local_46.f_5)
 						{
-							if (!func_271(*uParam0, 242628503, 1))
+							if (!func_271(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1))
 							{
 								TASK::OPEN_SEQUENCE_TASK(&(uParam0->f_2));
 								TASK::TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING(0, uParam0->f_5, Local_47.f_64, 786468, 0, 540, -1, uParam0->f_17.f_1, true, 2f);
@@ -19189,7 +19189,7 @@ void func_302(var uParam0, struct<20> Param1, bool bParam2)//Position - 0x19EEB
 								uParam0->f_17.f_4++;
 							}
 						}
-						else if (!func_271(*uParam0, 242628503, 1) && !func_271(*uParam0, -1817882002, 1))
+						else if (!func_271(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1) && !func_271(*uParam0, joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD"), 1))
 						{
 							TASK::TASK_VEHICLE_DRIVE_TO_COORD(*uParam0, uParam0->f_5, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(*uParam0, 0f, 100f, 0f), 40f, 0, uParam0->f_5.f_2, 786468, 20f, 9999f);
 						}

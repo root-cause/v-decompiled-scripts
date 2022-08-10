@@ -561,7 +561,7 @@ void func_1()//Position - 0x313
 			}
 			if (CAM::GET_FOLLOW_PED_CAM_VIEW_MODE() != 4)
 			{
-				iLocal_325 = CAM::CREATE_CAMERA(26379945, false);
+				iLocal_325 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), false);
 			}
 			else
 			{
@@ -3020,7 +3020,7 @@ void func_69()//Position - 0x30D3
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 			func_364(1);
 			PAD::DISABLE_CONTROL_ACTION(0, 0, true);
-			if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 713668775) == 7)
+			if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) == 7)
 			{
 				func_360();
 				iLocal_327 = PED::CREATE_SYNCHRONIZED_SCENE(Local_340, Local_341, 2);
@@ -88471,7 +88471,7 @@ int func_371(int iParam0)//Position - 0x65531
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;

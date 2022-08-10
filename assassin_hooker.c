@@ -7035,7 +7035,7 @@ void func_141(int* iParam0, int* iParam1)//Position - 0x67C9
 		}
 		if (iLocal_1344 >= 3 && iLocal_1344 < 7)
 		{
-			if (iLocal_1344 == 4 || (!ENTITY::IS_ENTITY_DEAD(iParam0->f_7, false) && TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_7, -1794415470) == 1))
+			if (iLocal_1344 == 4 || (!ENTITY::IS_ENTITY_DEAD(iParam0->f_7, false) && TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_7, joaat("SCRIPT_TASK_ENTER_VEHICLE")) == 1))
 			{
 				if (func_118(&iLocal_1473))
 				{
@@ -7084,7 +7084,7 @@ void func_141(int* iParam0, int* iParam1)//Position - 0x67C9
 					func_212(*iParam0);
 					if (!PED::IS_PED_INJURED(iParam0->f_7))
 					{
-						if (TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_7, 242628503) != 1)
+						if (TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_7, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1)
 						{
 							func_228(iParam0->f_7);
 						}
@@ -7365,20 +7365,20 @@ void func_141(int* iParam0, int* iParam1)//Position - 0x67C9
 				}
 			}
 			func_187(iParam0);
-			if (TASK::GET_SCRIPT_TASK_STATUS(*iParam0, -235832601) == 7)
+			if (TASK::GET_SCRIPT_TASK_STATUS(*iParam0, joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING")) == 7)
 			{
 				iLocal_1417 = 0;
 				iLocal_1392 = 1;
 				if (!ENTITY::IS_ENTITY_DEAD(iParam0->f_7, false) && !ENTITY::IS_ENTITY_DEAD(*iParam0, false))
 				{
-					if (TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_7, 150319005) != 1)
+					if (TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_7, joaat("SCRIPT_TASK_LOOK_AT_ENTITY")) != 1)
 					{
 						TASK::TASK_LOOK_AT_ENTITY(iParam0->f_7, *iParam0, -1, 2048, 4);
 					}
 				}
 				if (!ENTITY::IS_ENTITY_DEAD(iParam0->f_7, false) && !ENTITY::IS_ENTITY_DEAD(*iParam0, false))
 				{
-					if (TASK::GET_SCRIPT_TASK_STATUS(*iParam0, 150319005) != 1)
+					if (TASK::GET_SCRIPT_TASK_STATUS(*iParam0, joaat("SCRIPT_TASK_LOOK_AT_ENTITY")) != 1)
 					{
 						TASK::TASK_LOOK_AT_ENTITY(*iParam0, iParam0->f_7, -1, 2048, 4);
 					}
@@ -7502,7 +7502,7 @@ void func_141(int* iParam0, int* iParam1)//Position - 0x67C9
 							}
 							if (!PED::IS_PED_INJURED(iParam0->f_7))
 							{
-								if (TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_7, 242628503) != 1)
+								if (TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_7, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1)
 								{
 									func_228(iParam0->f_7);
 								}
@@ -7510,7 +7510,7 @@ void func_141(int* iParam0, int* iParam1)//Position - 0x67C9
 						}
 					}
 				}
-				else if (TASK::GET_SCRIPT_TASK_STATUS(*iParam0, 242628503) != 1 && TASK::GET_SCRIPT_TASK_STATUS(*iParam0, 242628503) != 0)
+				else if (TASK::GET_SCRIPT_TASK_STATUS(*iParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(*iParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 0)
 				{
 					VEHICLE::SET_VEHICLE_DOORS_LOCKED(iParam0->f_1, 1);
 					func_212(*iParam0);
@@ -7528,20 +7528,20 @@ void func_141(int* iParam0, int* iParam1)//Position - 0x67C9
 					Var3 = { ENTITY::GET_ENTITY_COORDS(*iParam0, true) };
 					if (PED::IS_COP_PED_IN_AREA_3D((Var3.f_0 - 30f), (Var3.f_1 - 30f), (Var3.f_2 - 30f), (Var3.f_0 + 30f), (Var3.f_1 + 30f), (Var3.f_2 + 30f)))
 					{
-						if (TASK::GET_SCRIPT_TASK_STATUS(*iParam0, 1805844857) != 1)
+						if (TASK::GET_SCRIPT_TASK_STATUS(*iParam0, joaat("SCRIPT_TASK_SMART_FLEE_PED")) != 1)
 						{
 							TASK::TASK_SMART_FLEE_PED(*iParam0, PLAYER::PLAYER_PED_ID(), 500f, -1, false, false);
 						}
 					}
 					else if (func_239(*iParam0, 1) <= 10f && PED::IS_PED_IN_COMBAT(PLAYER::PLAYER_PED_ID(), *iParam0))
 					{
-						if (TASK::GET_SCRIPT_TASK_STATUS(*iParam0, 1805844857) != 1)
+						if (TASK::GET_SCRIPT_TASK_STATUS(*iParam0, joaat("SCRIPT_TASK_SMART_FLEE_PED")) != 1)
 						{
 							TASK::TASK_SMART_FLEE_PED(*iParam0, PLAYER::PLAYER_PED_ID(), 500f, -1, false, false);
 						}
 					}
 				}
-				else if (TASK::GET_SCRIPT_TASK_STATUS(*iParam0, 1805844857) != 1)
+				else if (TASK::GET_SCRIPT_TASK_STATUS(*iParam0, joaat("SCRIPT_TASK_SMART_FLEE_PED")) != 1)
 				{
 					TASK::TASK_SMART_FLEE_PED(*iParam0, PLAYER::PLAYER_PED_ID(), 500f, -1, false, false);
 				}
@@ -8598,7 +8598,7 @@ void func_172(var uParam0)//Position - 0x87FC
 				{
 					if (!CAM::DOES_CAM_EXIST(iLocal_138))
 					{
-						iLocal_138 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, -470.1433f, -1720.113f, 18.597f, -1.0803f, 0f, -80.8725f, 35f, false, 2);
+						iLocal_138 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), -470.1433f, -1720.113f, 18.597f, -1.0803f, 0f, -80.8725f, 35f, false, 2);
 					}
 					if (!CAM::IS_CAM_ACTIVE(iLocal_138))
 					{
@@ -8922,14 +8922,14 @@ void func_182(int iParam0, int iParam1, int* iParam2)//Position - 0x8F1F
 {
 	if (!ENTITY::IS_ENTITY_DEAD(iParam0, false) && !ENTITY::IS_ENTITY_DEAD(iParam1, false))
 	{
-		if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, 150319005) != 1)
+		if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_LOOK_AT_ENTITY")) != 1)
 		{
 			TASK::TASK_LOOK_AT_ENTITY(iParam0, iParam1, -1, 2048, 4);
 		}
 	}
 	if (!ENTITY::IS_ENTITY_DEAD(iParam0, false) && !ENTITY::IS_ENTITY_DEAD(iParam1, false))
 	{
-		if (TASK::GET_SCRIPT_TASK_STATUS(iParam1, 150319005) != 1)
+		if (TASK::GET_SCRIPT_TASK_STATUS(iParam1, joaat("SCRIPT_TASK_LOOK_AT_ENTITY")) != 1)
 		{
 			TASK::TASK_LOOK_AT_ENTITY(iParam1, iParam0, -1, 2048, 4);
 		}
@@ -9449,7 +9449,7 @@ void func_197(int* iParam0)//Position - 0x9951
 						{
 							if (!func_198())
 							{
-								if (TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_9, -2017877118) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_9, -2017877118) != 0)
+								if (TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_9, joaat("SCRIPT_TASK_PLAY_ANIM")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_9, joaat("SCRIPT_TASK_PLAY_ANIM")) != 0)
 								{
 									TASK::CLEAR_PED_TASKS(iParam0->f_9);
 									TASK::TASK_LOOK_AT_ENTITY(iParam0->f_7, iParam0->f_10, -1, 2048, 4);
@@ -9516,7 +9516,7 @@ void func_197(int* iParam0)//Position - 0x9951
 					{
 						if (!PED::IS_PED_INJURED(iParam0->f_9))
 						{
-							if (TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_9, -258271821) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_9, -258271821) != 0)
+							if (TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_9, joaat("SCRIPT_TASK_VEHICLE_DRIVE_WANDER")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_9, joaat("SCRIPT_TASK_VEHICLE_DRIVE_WANDER")) != 0)
 							{
 								TASK::TASK_VEHICLE_DRIVE_WANDER(iParam0->f_9, iParam0->f_10, 6f, 786597);
 							}
@@ -10673,7 +10673,7 @@ void func_231(var uParam0)//Position - 0xB3BE
 			{
 				if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
 				{
-					if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 150319005) == 1)
+					if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LOOK_AT_ENTITY")) == 1)
 					{
 						TASK::TASK_CLEAR_LOOK_AT(PLAYER::PLAYER_PED_ID());
 					}
@@ -10766,7 +10766,7 @@ void func_233(var uParam0)//Position - 0xB4DC
 			{
 				if (!PED::IS_PED_INJURED(iLocal_966))
 				{
-					if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_966, 150319005) != 1)
+					if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_966, joaat("SCRIPT_TASK_LOOK_AT_ENTITY")) != 1)
 					{
 						TASK::TASK_LOOK_AT_ENTITY(iLocal_966, Local_982.f_7, 5000, 2048, 4);
 						func_274(&(uParam0->f_16), 5, iLocal_966, "KerbCrawler", 0, 1);
@@ -19153,7 +19153,7 @@ void func_392(var uParam0)//Position - 0x174EC
 					ENTITY::PLAY_SYNCHRONIZED_ENTITY_ANIM(iLocal_1347, iLocal_1369, "ass_call_vice_phone", "oddjobs@assassinate@vice@call", 1000f, -2f, 0, 1000f);
 					if (!CAM::DOES_CAM_EXIST(iLocal_1348))
 					{
-						iLocal_1348 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Local_1355, Local_1356, 31.3943f, true, 2);
+						iLocal_1348 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Local_1355, Local_1356, 31.3943f, true, 2);
 						CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
 						CAM::SHAKE_CAM(iLocal_1348, "HAND_SHAKE", 0.2f);
 					}
@@ -25054,7 +25054,7 @@ int func_473(int iParam0, int iParam1)//Position - 0x1FCC9
 
 int func_474(int iParam0, int iParam1, int iParam2)//Position - 0x200A9
 {
-	if (!func_475() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_475() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}

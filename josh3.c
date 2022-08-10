@@ -2799,7 +2799,7 @@ void func_12(int* iParam0, bool bParam1, int iParam2, int iParam3)//Position - 0
 
 void func_13()//Position - 0x48ED
 {
-	if ((func_16(iLocal_395) && !func_14(iLocal_395, -1146898486)) && !func_14(iLocal_395, 1805844857))
+	if ((func_16(iLocal_395) && !func_14(iLocal_395, joaat("SCRIPT_TASK_WANDER_STANDARD"))) && !func_14(iLocal_395, joaat("SCRIPT_TASK_SMART_FLEE_PED")))
 	{
 		PED::SET_PED_KEEP_TASK(iLocal_395, true);
 		TASK::TASK_WANDER_STANDARD(iLocal_395, 40000f, 0);
@@ -48347,7 +48347,7 @@ int func_481(int iParam0, float fParam1, int iParam2)//Position - 0x3A177
 			else if (iParam2 == 1)
 			{
 				iVar0 = 0;
-				if (!func_14(PLAYER::PLAYER_PED_ID(), -828834893))
+				if (!func_14(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")))
 				{
 					TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
 				}
@@ -54640,7 +54640,7 @@ int func_598(int iParam0, int iParam1)//Position - 0x426ED
 
 int func_599(int iParam0, int iParam1, int iParam2)//Position - 0x42ACC
 {
-	if (!func_600() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_600() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}

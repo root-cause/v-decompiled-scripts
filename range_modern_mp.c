@@ -417,7 +417,7 @@ void __EntryFunction__()//Position - 0x0
 	if (func_1443())
 	{
 		func_1442(&(Local_195[iVar9 /*80*/]), 2048);
-		Var7[iVar9 /*593*/].f_13 = CAM::CREATE_CAMERA(26379945, false);
+		Var7[iVar9 /*593*/].f_13 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), false);
 	}
 	else
 	{
@@ -93082,7 +93082,7 @@ int func_561(int iParam0)//Position - 0x6B772
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;
@@ -93392,7 +93392,7 @@ int func_568(int* iParam0, var uParam1, var uParam2, bool bParam3, int iParam4)/
 						{
 							if (!CAM::DOES_CAM_EXIST(*uParam1))
 							{
-								*uParam1 = CAM::CREATE_CAMERA(26379945, true);
+								*uParam1 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 							}
 							CAM::STOP_CAM_POINTING(*uParam1);
 							if (!func_494(PLAYER::PLAYER_ID()) && !PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
@@ -95290,7 +95290,7 @@ int func_599(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x6
 		}
 		if (!CAM::DOES_CAM_EXIST(*uParam1))
 		{
-			*uParam1 = CAM::CREATE_CAMERA(26379945, true);
+			*uParam1 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 		}
 		CAM::STOP_CAM_POINTING(*uParam1);
 		CAM::SET_CAM_COORD(*uParam1, Var1);

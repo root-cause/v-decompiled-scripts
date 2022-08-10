@@ -7165,7 +7165,7 @@ int func_93(int iParam0, int iParam1)//Position - 0x93F0
 
 int func_94(int iParam0, int iParam1, int iParam2)//Position - 0x97CF
 {
-	if (!func_95() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_95() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}
@@ -15226,7 +15226,7 @@ void func_245()//Position - 0x1469A
 								if (iLocal_106 == 0)
 								{
 									WEAPON::SET_CURRENT_PED_VEHICLE_WEAPON(iLocal_31[0], joaat("vehicle_weapon_space_rocket"));
-									PED::SET_PED_FIRING_PATTERN(iLocal_31[0], -1857128337);
+									PED::SET_PED_FIRING_PATTERN(iLocal_31[0], joaat("FIRING_PATTERN_BURST_FIRE_HELI"));
 									iLocal_105 = 0;
 									iLocal_106 = 1;
 								}
@@ -15234,7 +15234,7 @@ void func_245()//Position - 0x1469A
 							else if (iLocal_105 == 0)
 							{
 								WEAPON::SET_CURRENT_PED_VEHICLE_WEAPON(iLocal_31[0], joaat("vehicle_weapon_player_buzzard"));
-								PED::SET_PED_FIRING_PATTERN(iLocal_31[0], 1566631136);
+								PED::SET_PED_FIRING_PATTERN(iLocal_31[0], joaat("FIRING_PATTERN_SINGLE_SHOT"));
 								iLocal_106 = 0;
 								iLocal_105 = 1;
 							}

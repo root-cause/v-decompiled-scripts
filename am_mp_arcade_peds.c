@@ -331,7 +331,7 @@ void func_11()//Position - 0x47B
 	{
 		if (func_137(&(Local_47[iVar0 /*22*/]), iVar0))
 		{
-			if (ENTITY::DOES_ENTITY_EXIST(Local_47[iVar0 /*22*/]) && (TASK::GET_SCRIPT_TASK_STATUS(Local_47[iVar0 /*22*/], 242628503) == 1 || TASK::GET_SCRIPT_TASK_STATUS(Local_47[iVar0 /*22*/], 1785177548) == 1))
+			if (ENTITY::DOES_ENTITY_EXIST(Local_47[iVar0 /*22*/]) && (TASK::GET_SCRIPT_TASK_STATUS(Local_47[iVar0 /*22*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 1 || TASK::GET_SCRIPT_TASK_STATUS(Local_47[iVar0 /*22*/], joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE")) == 1))
 			{
 				if (!BitTest(Local_47[iVar0 /*22*/].f_5, 1))
 				{
@@ -584,7 +584,7 @@ void func_26()//Position - 0x8CD
 		iVar0 = 0;
 		while (iVar0 < func_138())
 		{
-			if ((((((ENTITY::DOES_ENTITY_EXIST(Local_47[iVar0 /*22*/]) && (TASK::GET_SCRIPT_TASK_STATUS(Local_47[iVar0 /*22*/], 242628503) == 1 || TASK::GET_SCRIPT_TASK_STATUS(Local_47[iVar0 /*22*/], 1785177548) == 1)) || Local_47[iVar0 /*22*/].f_17) || Local_47[iVar0 /*22*/].f_9 > Local_55.f_1) || ((Local_47.f_390 && !Local_47[iVar0 /*22*/].f_18) && !Global_1579061)) || ((!Local_47.f_390 && Local_47[iVar0 /*22*/].f_18) && !Global_1579061)) || (!func_27(iVar0) && Local_47.f_391))
+			if ((((((ENTITY::DOES_ENTITY_EXIST(Local_47[iVar0 /*22*/]) && (TASK::GET_SCRIPT_TASK_STATUS(Local_47[iVar0 /*22*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 1 || TASK::GET_SCRIPT_TASK_STATUS(Local_47[iVar0 /*22*/], joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE")) == 1)) || Local_47[iVar0 /*22*/].f_17) || Local_47[iVar0 /*22*/].f_9 > Local_55.f_1) || ((Local_47.f_390 && !Local_47[iVar0 /*22*/].f_18) && !Global_1579061)) || ((!Local_47.f_390 && Local_47[iVar0 /*22*/].f_18) && !Global_1579061)) || (!func_27(iVar0) && Local_47.f_391))
 			{
 				iVar1++;
 			}
@@ -2687,7 +2687,7 @@ void func_87(var uParam0)//Position - 0x2A1A
 	}
 	else
 	{
-		iVar3 = TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503);
+		iVar3 = TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"));
 		if (iVar3 != 0 && iVar3 != 1)
 		{
 			if (STREAMING::HAS_ANIM_DICT_LOADED(sVar0))
@@ -2867,7 +2867,7 @@ void func_92(var uParam0)//Position - 0x2D2B
 	}
 	else
 	{
-		iVar3 = TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 1785177548);
+		iVar3 = TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"));
 		if ((iVar3 != 0 && iVar3 != 1) || PED::GET_SYNCHRONIZED_SCENE_PHASE(uParam0->f_10) >= 1f)
 		{
 			iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(0, func_93(uParam0->f_8));

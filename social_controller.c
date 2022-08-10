@@ -30432,7 +30432,7 @@ int func_428(int iParam0, int iParam1)//Position - 0x2026E
 
 bool func_429()//Position - 0x206ED
 {
-	return DLC::IS_DLC_PRESENT(1199590110);
+	return DLC::IS_DLC_PRESENT(joaat("mpsum2"));
 }
 
 bool func_430()//Position - 0x206FE

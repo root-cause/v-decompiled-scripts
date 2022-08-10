@@ -95378,7 +95378,7 @@ void func_535(int* iParam0, int iParam1)//Position - 0x6E830
 		{
 			func_554(iParam0, iVar0);
 		}
-		else if ((!func_553(&(iParam0->f_1735[iVar0 /*206*/]), 2) && func_557(iParam0, &(iParam0->f_1735[iVar0 /*206*/]))) && TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_1735[iVar0 /*206*/].f_8, -2017877118) == 1)
+		else if ((!func_553(&(iParam0->f_1735[iVar0 /*206*/]), 2) && func_557(iParam0, &(iParam0->f_1735[iVar0 /*206*/]))) && TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_1735[iVar0 /*206*/].f_8, joaat("SCRIPT_TASK_PLAY_ANIM")) == 1)
 		{
 			TASK::SET_ANIM_RATE(iParam0->f_1735[iVar0 /*206*/].f_8, MISC::GET_RANDOM_FLOAT_IN_RANGE(1f, 2.5f), 0, false);
 			func_552(&(iParam0->f_1735[iVar0 /*206*/]), 2);
@@ -95551,11 +95551,11 @@ void func_541(var uParam0, int iParam1)//Position - 0x6ECF5
 	}
 	if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_1735[iParam1 /*206*/].f_9, false))
 	{
-		if (!func_553(&(uParam0->f_1735[iParam1 /*206*/]), 8) || (!PED::IS_PED_IN_ANY_VEHICLE(uParam0->f_1735[iParam1 /*206*/].f_8, true) && TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_1735[iParam1 /*206*/].f_8, 242628503) != 1))
+		if (!func_553(&(uParam0->f_1735[iParam1 /*206*/]), 8) || (!PED::IS_PED_IN_ANY_VEHICLE(uParam0->f_1735[iParam1 /*206*/].f_8, true) && TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_1735[iParam1 /*206*/].f_8, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1))
 		{
 			func_543(uParam0, iParam1);
 		}
-		else if (TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_1735[iParam1 /*206*/].f_8, -235832601) == 1)
+		else if (TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_1735[iParam1 /*206*/].f_8, joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING")) == 1)
 		{
 			PED::SET_DRIVER_RACING_MODIFIER(uParam0->f_1735[iParam1 /*206*/].f_8, 1f);
 			VEHICLE::SET_VEHICLE_IS_RACING(uParam0->f_1735[iParam1 /*206*/].f_9, true);
@@ -96130,7 +96130,7 @@ int func_567(int* iParam0)//Position - 0x6FD25
 	bool bVar4;
 	float fVar5;
 	
-	if (iParam0->f_26[iParam0->f_1735[0 /*206*/].f_11 /*14*/].f_11 != 6 || TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_1735[0 /*206*/].f_8, 1435919172) == 1)
+	if (iParam0->f_26[iParam0->f_1735[0 /*206*/].f_11 /*14*/].f_11 != 6 || TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_1735[0 /*206*/].f_8, joaat("SCRIPT_TASK_ANY")) == 1)
 	{
 		return 0;
 	}
@@ -98312,7 +98312,7 @@ void func_626(int iParam0)//Position - 0x746A0
 	}
 	if (!CAM::DOES_CAM_EXIST(iLocal_359))
 	{
-		iLocal_359 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var2, Var3, 30f, false, 2);
+		iLocal_359 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var2, Var3, 30f, false, 2);
 		CAM::ATTACH_CAM_TO_ENTITY(iLocal_359, *iParam0, Var1, false);
 		CAM::POINT_CAM_AT_ENTITY(iLocal_359, PLAYER::PLAYER_PED_ID(), 0f, 0f, 0f, true);
 	}
@@ -102392,7 +102392,7 @@ void func_720(int* iParam0, var uParam1)//Position - 0x7A25E
 	{
 		return;
 	}
-	if (!PED::IS_PED_IN_ANY_VEHICLE(uParam1->f_8, true) && TASK::GET_SCRIPT_TASK_STATUS(uParam1->f_8, 242628503) != 1)
+	if (!PED::IS_PED_IN_ANY_VEHICLE(uParam1->f_8, true) && TASK::GET_SCRIPT_TASK_STATUS(uParam1->f_8, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1)
 	{
 		Var0 = { ENTITY::GET_ENTITY_COORDS(uParam1->f_9, true) };
 		Var1 = { ENTITY::GET_ENTITY_COORDS(uParam1->f_8, true) - Var0 * Vector(0.15f, 0.15f, 0.15f) };
@@ -115491,7 +115491,7 @@ void func_933()//Position - 0x8DF63
 		Var1 = { CAM::GET_CAM_COORD(iLocal_1091) };
 		Var2 = { CAM::GET_CAM_ROT(iLocal_1091, 2) };
 	}
-	iLocal_1098 = CAM::CREATE_CAMERA(26379945, false);
+	iLocal_1098 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), false);
 	CAM::SET_CAM_COORD(iLocal_1098, Var1);
 	CAM::SET_CAM_ROT(iLocal_1098, Var2, 2);
 	CAM::SET_CAM_FOV(iLocal_1098, 30f);
@@ -116334,7 +116334,7 @@ void func_982(var uParam0, int iParam1)//Position - 0x8F3D2
 	}
 	if (func_557(uParam0, &(uParam0->f_1735[iParam1 /*206*/])) && iParam1 != 0)
 	{
-		if (!TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_1735[iParam1 /*206*/].f_8, -2017877118) == 1 && !TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_1735[iParam1 /*206*/].f_8, 713668775) == 1)
+		if (!TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_1735[iParam1 /*206*/].f_8, joaat("SCRIPT_TASK_PLAY_ANIM")) == 1 && !TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_1735[iParam1 /*206*/].f_8, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) == 1)
 		{
 			if (uParam0->f_1735[iParam1 /*206*/].f_12 == 1)
 			{
@@ -117076,7 +117076,7 @@ void func_1004(struct<3> Param0, var uParam1, float fParam2, var uParam3, int iP
 				{
 					CAM::DESTROY_CAM(iLocal_1098, false);
 				}
-				iLocal_1098 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var11, Var12, 50f, false, 2);
+				iLocal_1098 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var11, Var12, 50f, false, 2);
 				CAM::SET_CAM_ACTIVE(iLocal_1098, true);
 				if (ENTITY::DOES_ENTITY_EXIST(Local_51.f_220))
 				{
@@ -117332,8 +117332,8 @@ void func_1004(struct<3> Param0, var uParam1, float fParam2, var uParam3, int iP
 						CAM::DESTROY_CAM(iLocal_1098, false);
 					}
 					CAM::SHAKE_SCRIPT_GLOBAL("WOBBLY_SHAKE", 0.0002f);
-					iLocal_1092 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Local_1101, Local_1103, 35f, false, 2);
-					iLocal_1098 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Local_1102, Local_1104, 35f, false, 2);
+					iLocal_1092 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Local_1101, Local_1103, 35f, false, 2);
+					iLocal_1098 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Local_1102, Local_1104, 35f, false, 2);
 					func_1018(18);
 				}
 			}
@@ -117372,8 +117372,8 @@ void func_1004(struct<3> Param0, var uParam1, float fParam2, var uParam3, int iP
 				{
 					CAM::DESTROY_CAM(iLocal_1093, false);
 				}
-				iLocal_1093 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Local_1106, Local_1108, 20.7f, false, 2);
-				iLocal_1092 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Local_1105, Local_1107, 20.7f, false, 2);
+				iLocal_1093 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Local_1106, Local_1108, 20.7f, false, 2);
+				iLocal_1092 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Local_1105, Local_1107, 20.7f, false, 2);
 				func_1018(20);
 			}
 			break;
@@ -117397,7 +117397,7 @@ void func_1004(struct<3> Param0, var uParam1, float fParam2, var uParam3, int iP
 				{
 					CAM::DESTROY_CAM(iLocal_1092, false);
 				}
-				iLocal_1092 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var1, Var3, 20.7f, false, 2);
+				iLocal_1092 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var1, Var3, 20.7f, false, 2);
 				func_1018(22);
 			}
 			func_686(uParam1);
@@ -118293,35 +118293,35 @@ void func_1019()//Position - 0x92263
 		case 1:
 			if (!CAM::DOES_CAM_EXIST(iLocal_1092))
 			{
-				iLocal_1092 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 2405.776f, 4282.395f, 35.6522f, -1.3334f, 0f, 95.4363f, 30.3f, false, 2);
+				iLocal_1092 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 2405.776f, 4282.395f, 35.6522f, -1.3334f, 0f, 95.4363f, 30.3f, false, 2);
 			}
 			if (!CAM::DOES_CAM_EXIST(iLocal_1093))
 			{
-				iLocal_1093 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 2405.582f, 4280.512f, 33.9315f, 5.2742f, 0f, 91.9419f, 50f, false, 2);
+				iLocal_1093 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 2405.582f, 4280.512f, 33.9315f, 5.2742f, 0f, 91.9419f, 50f, false, 2);
 			}
 			if (!CAM::DOES_CAM_EXIST(iLocal_1094))
 			{
-				iLocal_1094 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 2386.636f, 4295.478f, 32.2856f, -1.1846f, 0.6029f, -150.5774f, 24.0182f, false, 2);
+				iLocal_1094 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 2386.636f, 4295.478f, 32.2856f, -1.1846f, 0.6029f, -150.5774f, 24.0182f, false, 2);
 			}
 			if (!CAM::DOES_CAM_EXIST(iLocal_1095))
 			{
-				iLocal_1095 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 2386.85f, 4295.096f, 32.2766f, -1.1846f, 0.6029f, -150.5774f, 24.0182f, false, 2);
+				iLocal_1095 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 2386.85f, 4295.096f, 32.2766f, -1.1846f, 0.6029f, -150.5774f, 24.0182f, false, 2);
 			}
 			if (!CAM::DOES_CAM_EXIST(iLocal_1096))
 			{
-				iLocal_1096 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 2403.025f, 4281.165f, 33.5233f, -5.6822f, 0f, 95.0976f, 50f, false, 2);
+				iLocal_1096 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 2403.025f, 4281.165f, 33.5233f, -5.6822f, 0f, 95.0976f, 50f, false, 2);
 			}
 			if (!CAM::DOES_CAM_EXIST(iLocal_1097))
 			{
-				iLocal_1097 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 2402.975f, 4281.742f, 33.5233f, -5.6822f, 0f, 95.0976f, 50f, false, 2);
+				iLocal_1097 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 2402.975f, 4281.742f, 33.5233f, -5.6822f, 0f, 95.0976f, 50f, false, 2);
 			}
 			if (!CAM::DOES_CAM_EXIST(iLocal_1099))
 			{
-				iLocal_1099 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 2398.089f, 4282.638f, 33.2085f, -6.7472f, 0f, 99.2434f, 40.01f, false, 2);
+				iLocal_1099 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 2398.089f, 4282.638f, 33.2085f, -6.7472f, 0f, 99.2434f, 40.01f, false, 2);
 			}
 			if (!CAM::DOES_CAM_EXIST(iLocal_1100))
 			{
-				iLocal_1100 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 2397.45f, 4282.561f, 33.1346f, -5.617f, 0f, 98.3052f, 40.01f, false, 2);
+				iLocal_1100 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 2397.45f, 4282.561f, 33.1346f, -5.617f, 0f, 98.3052f, 40.01f, false, 2);
 			}
 			Local_1101 = { 2389.727f, 4251.562f, 40.2787f };
 			Local_1103 = { -20.559f, 0.6028f, -3.2381f };
@@ -118333,42 +118333,42 @@ void func_1019()//Position - 0x92263
 			Local_1108 = { 2.0511f, 0f, 3.2264f };
 			if (!CAM::DOES_CAM_EXIST(iLocal_1098))
 			{
-				iLocal_1098 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Local_1101, Local_1103, 50f, false, 2);
+				iLocal_1098 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Local_1101, Local_1103, 50f, false, 2);
 			}
 			break;
 		
 		case 0:
 			if (!CAM::DOES_CAM_EXIST(iLocal_1092))
 			{
-				iLocal_1092 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, -1260.5f, -2048.5f, 15.4f, 16.4f, 0f, 45.2f, 30.3f, false, 2);
+				iLocal_1092 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), -1260.5f, -2048.5f, 15.4f, 16.4f, 0f, 45.2f, 30.3f, false, 2);
 			}
 			if (!CAM::DOES_CAM_EXIST(iLocal_1093))
 			{
-				iLocal_1093 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, -1261.45f, -2047.355f, 7.0256f, -2.7528f, 0.0163f, 45.8717f, 50f, false, 2);
+				iLocal_1093 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), -1261.45f, -2047.355f, 7.0256f, -2.7528f, 0.0163f, 45.8717f, 50f, false, 2);
 			}
 			if (!CAM::DOES_CAM_EXIST(iLocal_1094))
 			{
-				iLocal_1094 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, -1261.422f, -2022.132f, 3.0495f, 5.1381f, 0f, 147.5967f, 33.6646f, false, 2);
+				iLocal_1094 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), -1261.422f, -2022.132f, 3.0495f, 5.1381f, 0f, 147.5967f, 33.6646f, false, 2);
 			}
 			if (!CAM::DOES_CAM_EXIST(iLocal_1095))
 			{
-				iLocal_1095 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, -1261.781f, -2022.698f, 3.1098f, 5.1381f, 0f, 147.5967f, 33.6646f, false, 2);
+				iLocal_1095 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), -1261.781f, -2022.698f, 3.1098f, 5.1381f, 0f, 147.5967f, 33.6646f, false, 2);
 			}
 			if (!CAM::DOES_CAM_EXIST(iLocal_1096))
 			{
-				iLocal_1096 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, -1266.98f, -2046.6f, 4.84f, -5.35f, 0f, 10.12f, 25.11f, false, 2);
+				iLocal_1096 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), -1266.98f, -2046.6f, 4.84f, -5.35f, 0f, 10.12f, 25.11f, false, 2);
 			}
 			if (!CAM::DOES_CAM_EXIST(iLocal_1097))
 			{
-				iLocal_1097 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, -1266.49f, -2046.57f, 4.84f, -5.35f, 0f, 12.21f, 25.11f, false, 2);
+				iLocal_1097 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), -1266.49f, -2046.57f, 4.84f, -5.35f, 0f, 12.21f, 25.11f, false, 2);
 			}
 			if (!CAM::DOES_CAM_EXIST(iLocal_1099))
 			{
-				iLocal_1099 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, -1265.701f, -2041.568f, 4.6619f, -5.0125f, 0f, 50.3428f, 40.0349f, false, 2);
+				iLocal_1099 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), -1265.701f, -2041.568f, 4.6619f, -5.0125f, 0f, 50.3428f, 40.0349f, false, 2);
 			}
 			if (!CAM::DOES_CAM_EXIST(iLocal_1100))
 			{
-				iLocal_1100 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, -1266.161f, -2041.19f, 4.6097f, -5.0125f, 0f, 50.3428f, 40.0349f, false, 2);
+				iLocal_1100 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), -1266.161f, -2041.19f, 4.6097f, -5.0125f, 0f, 50.3428f, 40.0349f, false, 2);
 			}
 			Local_1101 = { -1300f, -2059.4f, 12.3f };
 			Local_1103 = { -16.4f, 0f, -52.8f };
@@ -118380,42 +118380,42 @@ void func_1019()//Position - 0x92263
 			Local_1108 = { -2.3f, 0f, -56.3f };
 			if (!CAM::DOES_CAM_EXIST(iLocal_1098))
 			{
-				iLocal_1098 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Local_1101, Local_1103, 50f, false, 2);
+				iLocal_1098 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Local_1101, Local_1103, 50f, false, 2);
 			}
 			break;
 		
 		case 2:
 			if (!CAM::DOES_CAM_EXIST(iLocal_1092))
 			{
-				iLocal_1092 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1589.068f, 3834.821f, 54.2202f, 5.3341f, -0.0003f, 71.4501f, 50f, false, 2);
+				iLocal_1092 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1589.068f, 3834.821f, 54.2202f, 5.3341f, -0.0003f, 71.4501f, 50f, false, 2);
 			}
 			if (!CAM::DOES_CAM_EXIST(iLocal_1093))
 			{
-				iLocal_1093 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1590.123f, 3820.216f, 34.9406f, 5.1632f, 0f, 36.9737f, 50f, false, 2);
+				iLocal_1093 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1590.123f, 3820.216f, 34.9406f, 5.1632f, 0f, 36.9737f, 50f, false, 2);
 			}
 			if (!CAM::DOES_CAM_EXIST(iLocal_1094))
 			{
-				iLocal_1094 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1566.333f, 3823.054f, 32.711f, -1.062f, 0f, -63.9708f, 32.5918f, false, 2);
+				iLocal_1094 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1566.333f, 3823.054f, 32.711f, -1.062f, 0f, -63.9708f, 32.5918f, false, 2);
 			}
 			if (!CAM::DOES_CAM_EXIST(iLocal_1095))
 			{
-				iLocal_1095 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1567.128f, 3823.441f, 32.6946f, -1.062f, 0f, -63.9708f, 32.5918f, false, 2);
+				iLocal_1095 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1567.128f, 3823.441f, 32.6946f, -1.062f, 0f, -63.9708f, 32.5918f, false, 2);
 			}
 			if (!CAM::DOES_CAM_EXIST(iLocal_1096))
 			{
-				iLocal_1096 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1585.411f, 3832.321f, 33.276f, 6.1917f, 0f, -152.8082f, 28.6127f, false, 2);
+				iLocal_1096 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1585.411f, 3832.321f, 33.276f, 6.1917f, 0f, -152.8082f, 28.6127f, false, 2);
 			}
 			if (!CAM::DOES_CAM_EXIST(iLocal_1097))
 			{
-				iLocal_1097 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1585.703f, 3831.754f, 33.346f, 6.7344f, 0f, -152.8082f, 28.6127f, false, 2);
+				iLocal_1097 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1585.703f, 3831.754f, 33.346f, 6.7344f, 0f, -152.8082f, 28.6127f, false, 2);
 			}
 			if (!CAM::DOES_CAM_EXIST(iLocal_1099))
 			{
-				iLocal_1099 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1589.515f, 3827.824f, 34.0188f, -5.4725f, 0f, 51.0998f, 40.0333f, false, 2);
+				iLocal_1099 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1589.515f, 3827.824f, 34.0188f, -5.4725f, 0f, 51.0998f, 40.0333f, false, 2);
 			}
 			if (!CAM::DOES_CAM_EXIST(iLocal_1100))
 			{
-				iLocal_1100 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1588.853f, 3828.359f, 33.9373f, -5.4725f, 0f, 51.0998f, 40.0333f, false, 2);
+				iLocal_1100 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1588.853f, 3828.359f, 33.9373f, -5.4725f, 0f, 51.0998f, 40.0333f, false, 2);
 			}
 			break;
 	}
@@ -120540,33 +120540,33 @@ void func_1098()//Position - 0x96BC3
 		case 1:
 			if (!CAM::DOES_CAM_EXIST(iLocal_361))
 			{
-				iLocal_361 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1764.244f, 3888.219f, 80.1004f, 6.3875f, 0f, 46.1461f, 50f, false, 2);
+				iLocal_361 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1764.244f, 3888.219f, 80.1004f, 6.3875f, 0f, 46.1461f, 50f, false, 2);
 			}
 			if (!CAM::DOES_CAM_EXIST(iLocal_362))
 			{
-				iLocal_362 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1764.244f, 3888.219f, 80.1004f, 6.3875f, 0f, -16.5562f, 50f, false, 2);
+				iLocal_362 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1764.244f, 3888.219f, 80.1004f, 6.3875f, 0f, -16.5562f, 50f, false, 2);
 			}
 			break;
 		
 		case 0:
 			if (!CAM::DOES_CAM_EXIST(iLocal_361))
 			{
-				iLocal_361 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, -1334.537f, -1034.428f, 37.556f, 8.4473f, 0f, 99.2059f, 50f, false, 2);
+				iLocal_361 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), -1334.537f, -1034.428f, 37.556f, 8.4473f, 0f, 99.2059f, 50f, false, 2);
 			}
 			if (!CAM::DOES_CAM_EXIST(iLocal_362))
 			{
-				iLocal_362 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, -1334.537f, -1034.428f, 37.556f, 8.4473f, 0f, 49.8388f, 50f, false, 2);
+				iLocal_362 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), -1334.537f, -1034.428f, 37.556f, 8.4473f, 0f, 49.8388f, 50f, false, 2);
 			}
 			break;
 		
 		case 2:
 			if (!CAM::DOES_CAM_EXIST(iLocal_361))
 			{
-				iLocal_361 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, -2301.418f, 495.3127f, 224.8627f, 6.532f, 0f, -132.4508f, 50f, false, 2);
+				iLocal_361 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), -2301.418f, 495.3127f, 224.8627f, 6.532f, 0f, -132.4508f, 50f, false, 2);
 			}
 			if (!CAM::DOES_CAM_EXIST(iLocal_362))
 			{
-				iLocal_362 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, -2301.418f, 495.3127f, 224.8627f, 6.532f, 0f, 169.8684f, 50f, false, 2);
+				iLocal_362 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), -2301.418f, 495.3127f, 224.8627f, 6.532f, 0f, 169.8684f, 50f, false, 2);
 			}
 			break;
 	}
@@ -120581,7 +120581,7 @@ void func_1099()//Position - 0x96D3E
 	Var1 = { 0f, 0f, 0f };
 	if (!CAM::DOES_CAM_EXIST(iLocal_360))
 	{
-		iLocal_360 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, Var1, 50f, false, 2);
+		iLocal_360 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, Var1, 50f, false, 2);
 		CAM::ATTACH_CAM_TO_ENTITY(iLocal_360, PLAYER::PLAYER_PED_ID(), -2.4646f, 2.427f, 1.3f, true);
 		CAM::POINT_CAM_AT_ENTITY(iLocal_360, PLAYER::PLAYER_PED_ID(), 0.0606f, -0.04f, 0.0745f, false);
 		CAM::SET_CAM_FOV(iLocal_360, 50f);

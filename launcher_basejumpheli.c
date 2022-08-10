@@ -3867,14 +3867,14 @@ void func_53()//Position - 0x57F3
 			{
 				func_67(0, 0, 1);
 				func_60(1);
-				iLocal_252 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, func_59(iLocal_81), func_58(iLocal_81), func_57(iLocal_81), false, 2);
+				iLocal_252 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), func_59(iLocal_81), func_58(iLocal_81), func_57(iLocal_81), false, 2);
 				CAM::SET_CAM_ACTIVE(iLocal_252, true);
 				CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
 				CAM::SHAKE_CAM(iLocal_252, "HAND_SHAKE", 0.07f);
 			}
 			if (VEHICLE::IS_VEHICLE_DRIVEABLE(Local_247.f_0, false))
 			{
-				iVar0 = TASK::GET_SCRIPT_TASK_STATUS(Local_247.f_3, -1273030092);
+				iVar0 = TASK::GET_SCRIPT_TASK_STATUS(Local_247.f_3, joaat("SCRIPT_TASK_VEHICLE_MISSION"));
 				if (iVar0 != 0 && iVar0 != 1)
 				{
 					PED::SET_PED_CONFIG_FLAG(Local_247.f_3, 134, true);
@@ -3985,7 +3985,7 @@ void func_53()//Position - 0x57F3
 			}
 			iLocal_250 = 0;
 		}
-		if ((!PED::IS_PED_INJURED(Local_247.f_3) && TASK::GET_SCRIPT_TASK_STATUS(Local_247.f_3, -982327190) != 0) && TASK::GET_SCRIPT_TASK_STATUS(Local_247.f_3, -982327190) != 1)
+		if ((!PED::IS_PED_INJURED(Local_247.f_3) && TASK::GET_SCRIPT_TASK_STATUS(Local_247.f_3, joaat("SCRIPT_TASK_STAND_STILL")) != 0) && TASK::GET_SCRIPT_TASK_STATUS(Local_247.f_3, joaat("SCRIPT_TASK_STAND_STILL")) != 1)
 		{
 			TASK::TASK_STAND_STILL(Local_247.f_3, -1);
 		}

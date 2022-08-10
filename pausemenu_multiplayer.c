@@ -981,18 +981,18 @@ void __EntryFunction__()//Position - 0x0
 		func_1609();
 		func_1608();
 		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(2091424182);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(995898030);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1433313072);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1096198329);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(696733436);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-333138447);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1871331138);
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylistPick"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylistDrop"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DeletePlaylist"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylist"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("StartHeadToHead"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("RScrollUpDown"));
 		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(874957556);
 		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(817402210);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(337714004);
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("HIDE_ACCEPTBUTTON"));
 		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("PageLeft"));
 		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("PageRight"));
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1836191705);
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("PurchaseAvailable"));
 		MISC::CLEAR_BIT(&uLocal_729, 8);
 		if (HUD::IS_WARNING_MESSAGE_ACTIVE())
 		{
@@ -5595,7 +5595,7 @@ void func_118(bool bParam0)//Position - 0x5A5F
 	{
 		if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 		{
-			if ((PED::IS_PED_GETTING_INTO_A_VEHICLE(PLAYER::PLAYER_PED_ID()) || TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), -1794415470) == 1) || TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), -1794415470) == 0)
+			if ((PED::IS_PED_GETTING_INTO_A_VEHICLE(PLAYER::PLAYER_PED_ID()) || TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_ENTER_VEHICLE")) == 1) || TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_ENTER_VEHICLE")) == 0)
 			{
 				TASK::CLEAR_PED_TASKS(PLAYER::PLAYER_PED_ID());
 			}
@@ -6821,7 +6821,7 @@ int func_200(int iParam0)//Position - 0x70DC
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;
@@ -11888,11 +11888,11 @@ int func_360(int iParam0, var uParam1)//Position - 0xC95B
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = -850297695;
+			iVar0 = joaat("GTAO_CASINO_SLOTS");
 			break;
 		
 		case 1:
-			iVar0 = 1316161270;
+			iVar0 = joaat("GTAO_CASINO_BLACKJACK");
 			break;
 		
 		case 2:
@@ -11900,15 +11900,15 @@ int func_360(int iParam0, var uParam1)//Position - 0xC95B
 			break;
 		
 		case 5:
-			iVar0 = 1045499606;
+			iVar0 = joaat("GTAO_CASINO_INSIDETRACK");
 			break;
 		
 		case 3:
-			iVar0 = 1697066635;
+			iVar0 = joaat("GTAO_CASINO_ROULETTE");
 			break;
 		
 		case 4:
-			iVar0 = 1144169546;
+			iVar0 = joaat("GTAO_CASINO_LUCKYWHEEL");
 			break;
 	}
 	if (!MONEY::_NETWORK_CASINO_CAN_USE_GAMBLING_TYPE(iVar0))
@@ -11933,9 +11933,9 @@ void func_362(int iParam0)//Position - 0xC9F1
 	{
 		if (iParam0 == 18)
 		{
-			if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(-1770673475))
+			if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("SupressSelectPM")))
 			{
-				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1770673475);
+				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 				HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 			}
 		}
@@ -25121,7 +25121,7 @@ void func_580()//Position - 0x1F110
 					func_288(1);
 					if (iLocal_788[2] == iLocal_197)
 					{
-						HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(456298020);
+						HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("RemoveBookmark"));
 						func_582(&Global_1036842, 1, 1, 0);
 						func_583(&Local_508, 1, 1);
 						func_581(&Global_1031312, 1, 1, 1, 0, 0);
@@ -25129,28 +25129,28 @@ void func_580()//Position - 0x1F110
 					}
 					else if (iLocal_788[2] == iLocal_191)
 					{
-						HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(456298020);
+						HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("RemoveBookmark"));
 						func_583(&Local_247, 1, 1);
 						func_581(&Global_1031312, 1, 1, 1, 0, 0);
 						func_583(&Local_563, 1, 1);
 					}
 					else if (iLocal_788[2] == iLocal_194)
 					{
-						HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(456298020);
+						HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("RemoveBookmark"));
 						func_583(&Local_673, 1, 1);
 						func_581(&Global_1031312, 1, 1, 1, 0, 0);
 						func_583(&Local_563, 1, 1);
 					}
 					else if (iLocal_788[2] == iLocal_195)
 					{
-						HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(456298020);
+						HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("RemoveBookmark"));
 						func_583(&Local_673, 1, 1);
 						func_581(&Global_1031312, 1, 1, 1, 0, 0);
 						func_583(&Local_563, 1, 1);
 					}
 					else
 					{
-						HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1096198329);
+						HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DeletePlaylist"));
 						func_582(&Global_1036842, 1, 1, 0);
 						func_583(&Local_508, 1, 1);
 						func_581(&Global_1031312, 1, 1, 1, 0, 0);
@@ -25300,8 +25300,8 @@ void func_585()//Position - 0x1F81B
 		if (NETWORK::UGC_SET_BOOKMARKED(&(Global_1036842.f_33[iLocal_238 /*88*/]), true, func_501(0)))
 		{
 			func_1394(1);
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1860370728);
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(456298020);
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("BookmarkJob"));
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("RemoveBookmark"));
 			HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 		}
 	}
@@ -25310,8 +25310,8 @@ void func_585()//Position - 0x1F81B
 		if (NETWORK::UGC_SET_BOOKMARKED(&(Global_794709.f_4[iLocal_238 /*88*/]), true, func_501(0)))
 		{
 			func_1394(1);
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1860370728);
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(456298020);
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("BookmarkJob"));
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("RemoveBookmark"));
 			HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 		}
 	}
@@ -25320,8 +25320,8 @@ void func_585()//Position - 0x1F81B
 		if (NETWORK::UGC_SET_BOOKMARKED(&(Global_1009429.f_604[iLocal_238 /*88*/]), true, func_501(0)))
 		{
 			func_1394(1);
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1860370728);
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(456298020);
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("BookmarkJob"));
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("RemoveBookmark"));
 			HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 		}
 	}
@@ -25330,8 +25330,8 @@ void func_585()//Position - 0x1F81B
 		if (NETWORK::UGC_SET_BOOKMARKED(&(Global_1009429.f_604[iLocal_238 /*88*/]), true, func_501(0)))
 		{
 			func_1394(1);
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1860370728);
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(456298020);
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("BookmarkJob"));
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("RemoveBookmark"));
 			HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 		}
 	}
@@ -25409,9 +25409,9 @@ void func_586()//Position - 0x1F92A
 					func_1426(1);
 					func_1394(1);
 					HUD::RELEASE_CONTROL_OF_FRONTEND();
-					HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(831272562);
-					HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1096198329);
-					HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(696733436);
+					HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SetCrewChallenge"));
+					HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DeletePlaylist"));
+					HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylist"));
 					HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 					func_583(&Local_357, 1, 1);
 					MISC::SET_BIT(&uLocal_811, 0);
@@ -25509,9 +25509,9 @@ void func_588()//Position - 0x1FB46
 					func_1426(1);
 					func_1394(1);
 					HUD::RELEASE_CONTROL_OF_FRONTEND();
-					HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(831272562);
-					HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1096198329);
-					HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(696733436);
+					HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SetCrewChallenge"));
+					HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DeletePlaylist"));
+					HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylist"));
 					HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 					func_583(&Local_247, 1, 1);
 					MISC::SET_BIT(&uLocal_811, 0);
@@ -25857,9 +25857,9 @@ int func_594(var uParam0, int* iParam1, var uParam2)//Position - 0x2038F
 						*uParam0 = 2;
 						return 0;
 					}
-					if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(-1770673475))
+					if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("SupressSelectPM")))
 					{
-						HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1770673475);
+						HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 						HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 					}
 					if (SOCIALCLUB::SC_PROFANITY_GET_CHECK_IS_VALID(*iParam1))
@@ -25938,11 +25938,11 @@ void func_595()//Position - 0x205DE
 	}
 	if (!BitTest(uLocal_729, 4))
 	{
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(696733436);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1433313072);
-		HUD::PAUSE_MENU_ACTIVATE_CONTEXT(995898030);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(831272562);
-		HUD::PAUSE_MENU_ACTIVATE_CONTEXT(1096198329);
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylist"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylistDrop"));
+		HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("EditPlaylistPick"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SetCrewChallenge"));
+		HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("DeletePlaylist"));
 		HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 		if (BitTest(uLocal_729, 1))
 		{
@@ -26065,8 +26065,8 @@ void func_595()//Position - 0x205DE
 			if (!BitTest(uLocal_729, 3))
 			{
 				AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(995898030);
-				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(1433313072);
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylistPick"));
+				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("EditPlaylistDrop"));
 				HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 				MISC::SET_BIT(&uLocal_729, 3);
 				func_1428(0);
@@ -26077,8 +26077,8 @@ void func_595()//Position - 0x205DE
 			else
 			{
 				AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1433313072);
-				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(995898030);
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylistDrop"));
+				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("EditPlaylistPick"));
 				HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 				MISC::CLEAR_BIT(&uLocal_729, 3);
 				func_1428(0);
@@ -26133,8 +26133,8 @@ void func_595()//Position - 0x205DE
 				iVar7++;
 			}
 			iLocal_238 = iLocal_798;
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1433313072);
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(995898030);
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylistDrop"));
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("EditPlaylistPick"));
 			HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 			MISC::CLEAR_BIT(&uLocal_729, 3);
 			func_1428(0);
@@ -26216,17 +26216,17 @@ void func_595()//Position - 0x205DE
 		iLocal_238 = iLocal_239;
 		func_1607();
 		func_1394(1);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(995898030);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1433313072);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1096198329);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(696733436);
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylistPick"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylistDrop"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DeletePlaylist"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylist"));
 		if (iLocal_788[1] == 1)
 		{
 			if (iLocal_787 == 3)
 			{
 				if (func_596(0, 0))
 				{
-					HUD::PAUSE_MENU_ACTIVATE_CONTEXT(696733436);
+					HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("EditPlaylist"));
 				}
 			}
 		}
@@ -29432,7 +29432,7 @@ void func_649()//Position - 0x239DD
 							func_289();
 							func_1611(-1, 0);
 							func_288(0);
-							HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1836191705);
+							HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("PurchaseAvailable"));
 						}
 						else
 						{
@@ -29462,7 +29462,7 @@ void func_649()//Position - 0x239DD
 								{
 									if (iLocal_787 == 3)
 									{
-										HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(696733436);
+										HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylist"));
 										HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 									}
 								}
@@ -29499,11 +29499,11 @@ void func_649()//Position - 0x239DD
 				func_1376();
 				func_1375();
 				func_1374();
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-333138447);
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1096198329);
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(696733436);
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1871331138);
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1770673475);
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("StartHeadToHead"));
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DeletePlaylist"));
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylist"));
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("RScrollUpDown"));
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("PageLeft"));
 				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("PageRight"));
 				HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
@@ -29681,23 +29681,23 @@ void func_649()//Position - 0x239DD
 			if (bVar7)
 			{
 				func_1608();
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-333138447);
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1096198329);
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(696733436);
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1871331138);
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("StartHeadToHead"));
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DeletePlaylist"));
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylist"));
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("RScrollUpDown"));
 				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("PageLeft"));
 				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("PageRight"));
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1860370728);
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(456298020);
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1836191705);
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("BookmarkJob"));
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("RemoveBookmark"));
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("PurchaseAvailable"));
 			}
 			if ((((func_363() != 0 && iLocal_788[0] != 1) && iLocal_788[0] != 10) || (iLocal_238 == 18 && iLocal_788[0] == 13)) || (iLocal_788[1] == 6 && iLocal_787 == 3))
 			{
-				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1770673475);
+				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 			}
 			else
 			{
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1770673475);
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 			}
 			if (((iLocal_788[0] == 12 && !func_367()) && func_1325(12)) && !NETWORK::IS_COMMERCE_STORE_OPEN())
 			{
@@ -29822,22 +29822,22 @@ void func_649()//Position - 0x239DD
 							if (bVar14)
 							{
 								func_1608();
-								HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-333138447);
-								HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1096198329);
-								HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(696733436);
-								HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1871331138);
+								HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("StartHeadToHead"));
+								HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DeletePlaylist"));
+								HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylist"));
+								HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("RScrollUpDown"));
 								HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("PageLeft"));
 								HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("PageRight"));
-								HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1860370728);
-								HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(456298020);
+								HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("BookmarkJob"));
+								HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("RemoveBookmark"));
 							}
 							if ((((func_363() != 0 && iLocal_788[0] != 1) && iLocal_788[0] != 10) || (iLocal_238 == 18 && iLocal_788[0] == 13)) || (iLocal_788[1] == 6 && iLocal_787 == 3))
 							{
-								HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1770673475);
+								HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 							}
 							else
 							{
-								HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1770673475);
+								HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 							}
 							HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 						}
@@ -30358,13 +30358,13 @@ int func_654()//Position - 0x259D8
 								{
 									if (Global_1036842.f_2762[iLocal_238])
 									{
-										HUD::PAUSE_MENU_ACTIVATE_CONTEXT(456298020);
-										HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1860370728);
+										HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("RemoveBookmark"));
+										HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("BookmarkJob"));
 									}
 									else
 									{
-										HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(456298020);
-										HUD::PAUSE_MENU_ACTIVATE_CONTEXT(1860370728);
+										HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("RemoveBookmark"));
+										HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("BookmarkJob"));
 									}
 								}
 								HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
@@ -30384,13 +30384,13 @@ int func_654()//Position - 0x259D8
 								{
 									if (Global_794709.f_177589[iLocal_238 /*13*/].f_7)
 									{
-										HUD::PAUSE_MENU_ACTIVATE_CONTEXT(456298020);
-										HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1860370728);
+										HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("RemoveBookmark"));
+										HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("BookmarkJob"));
 									}
 									else
 									{
-										HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(456298020);
-										HUD::PAUSE_MENU_ACTIVATE_CONTEXT(1860370728);
+										HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("RemoveBookmark"));
+										HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("BookmarkJob"));
 									}
 								}
 								HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
@@ -30410,13 +30410,13 @@ int func_654()//Position - 0x259D8
 								{
 									if (Global_1009429.f_9405[iLocal_238 /*13*/].f_7)
 									{
-										HUD::PAUSE_MENU_ACTIVATE_CONTEXT(456298020);
-										HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1860370728);
+										HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("RemoveBookmark"));
+										HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("BookmarkJob"));
 									}
 									else
 									{
-										HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(456298020);
-										HUD::PAUSE_MENU_ACTIVATE_CONTEXT(1860370728);
+										HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("RemoveBookmark"));
+										HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("BookmarkJob"));
 									}
 								}
 								HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
@@ -30436,13 +30436,13 @@ int func_654()//Position - 0x259D8
 								{
 									if (Global_1009429.f_9405[iLocal_238 /*13*/].f_7)
 									{
-										HUD::PAUSE_MENU_ACTIVATE_CONTEXT(456298020);
-										HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1860370728);
+										HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("RemoveBookmark"));
+										HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("BookmarkJob"));
 									}
 									else
 									{
-										HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(456298020);
-										HUD::PAUSE_MENU_ACTIVATE_CONTEXT(1860370728);
+										HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("RemoveBookmark"));
+										HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("BookmarkJob"));
 									}
 								}
 								HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
@@ -31348,11 +31348,11 @@ void func_678()//Position - 0x27A62
 			func_1376();
 			func_1375();
 			func_1374();
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-333138447);
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1096198329);
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(696733436);
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1871331138);
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1770673475);
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("StartHeadToHead"));
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DeletePlaylist"));
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylist"));
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("RScrollUpDown"));
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 			HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 		}
 	}
@@ -31489,12 +31489,12 @@ void func_679()//Position - 0x27E5B
 			}
 			if (bVar0)
 			{
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1770673475);
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 				HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 			}
 			else
 			{
-				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1770673475);
+				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 				HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 			}
 		}
@@ -32287,18 +32287,18 @@ int func_681(int iParam0, var uParam1)//Position - 0x28F81
 			{
 				if (iLocal_840)
 				{
-					HUD::PAUSE_MENU_ACTIVATE_CONTEXT(1096198329);
+					HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("DeletePlaylist"));
 					if (func_596(0, 0))
 					{
-						HUD::PAUSE_MENU_ACTIVATE_CONTEXT(696733436);
+						HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("EditPlaylist"));
 					}
 					sVar5 = "PM_PL_MY_AL";
 					iVar0 = 1;
 				}
 				else
 				{
-					HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1096198329);
-					HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(696733436);
+					HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DeletePlaylist"));
+					HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylist"));
 				}
 			}
 			break;
@@ -32316,8 +32316,8 @@ int func_681(int iParam0, var uParam1)//Position - 0x28F81
 			}
 			if (func_1377())
 			{
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1096198329);
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(696733436);
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DeletePlaylist"));
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylist"));
 				sVar5 = "PM_PL_BM_AL";
 				iVar0 = 1;
 			}
@@ -32336,8 +32336,8 @@ int func_681(int iParam0, var uParam1)//Position - 0x28F81
 			}
 			if (func_1379())
 			{
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1096198329);
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(696733436);
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DeletePlaylist"));
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylist"));
 				iVar0 = 1;
 			}
 			break;
@@ -32355,8 +32355,8 @@ int func_681(int iParam0, var uParam1)//Position - 0x28F81
 			}
 			if (func_1378())
 			{
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1096198329);
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(696733436);
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DeletePlaylist"));
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylist"));
 				iVar0 = 1;
 			}
 			break;
@@ -32714,65 +32714,65 @@ void func_687()//Position - 0x297CD
 	
 	if (func_374(&uLocal_807, 0) == 0)
 	{
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1770673475);
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 	}
 	switch (iLocal_788[1])
 	{
 		case 0:
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(1096198329);
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("DeletePlaylist"));
 			if (func_596(0, 0))
 			{
-				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(696733436);
+				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("EditPlaylist"));
 			}
 			if (func_209())
 			{
 				if (!BitTest(Global_1051704.f_938, iLocal_788[2]))
 				{
-					HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1770673475);
+					HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 				}
 			}
 			if (iLocal_842)
 			{
-				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1770673475);
+				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 			}
 			if (!Global_262145.f_4764 || uVar0)
 			{
 				if (((BitTest(Global_1051704.f_937, iLocal_788[2]) && MONEY::NETWORK_GET_VC_WALLET_BALANCE(-1) >= 1000) && func_153()) && !func_209())
 				{
-					HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-333138447);
+					HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("StartHeadToHead"));
 				}
 				else
 				{
-					HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-333138447);
+					HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("StartHeadToHead"));
 				}
 			}
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(1096198329);
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("DeletePlaylist"));
 			if (func_596(0, 0))
 			{
-				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(696733436);
+				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("EditPlaylist"));
 			}
 			HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 			break;
 		
 		case 2:
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(1096198329);
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(696733436);
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("DeletePlaylist"));
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylist"));
 			if (func_209())
 			{
 				if (!BitTest(Global_1051704.f_938, iLocal_788[2]))
 				{
-					HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1770673475);
+					HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 				}
 			}
 			if (!Global_262145.f_4764 || uVar0)
 			{
 				if (((BitTest(Global_1052643.f_937, iLocal_788[2]) && MONEY::NETWORK_GET_VC_WALLET_BALANCE(-1) >= 1000) && func_153()) && !func_209())
 				{
-					HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-333138447);
+					HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("StartHeadToHead"));
 				}
 				else
 				{
-					HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-333138447);
+					HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("StartHeadToHead"));
 				}
 			}
 			HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
@@ -32780,24 +32780,24 @@ void func_687()//Position - 0x297CD
 		
 		case 3:
 		case 7:
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1096198329);
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(696733436);
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DeletePlaylist"));
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylist"));
 			if (func_209())
 			{
 				if (!BitTest(Global_1051704.f_938, iLocal_788[2]))
 				{
-					HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1770673475);
+					HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 				}
 			}
 			if (!Global_262145.f_4764 || uVar0)
 			{
 				if (((BitTest(Global_1054521.f_1865, iLocal_788[2]) && MONEY::NETWORK_GET_VC_WALLET_BALANCE(-1) >= 1000) && func_153()) && !func_209())
 				{
-					HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-333138447);
+					HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("StartHeadToHead"));
 				}
 				else
 				{
-					HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-333138447);
+					HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("StartHeadToHead"));
 				}
 			}
 			HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
@@ -72093,8 +72093,8 @@ int func_1078(int iParam0, var uParam1)//Position - 0x76EC1
 			}
 			if (func_1377())
 			{
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1096198329);
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(696733436);
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DeletePlaylist"));
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylist"));
 				sVar5 = "PM_PL_BM_AL";
 				iVar0 = 1;
 			}
@@ -72114,8 +72114,8 @@ int func_1078(int iParam0, var uParam1)//Position - 0x76EC1
 			}
 			if (func_1379())
 			{
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1096198329);
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(696733436);
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DeletePlaylist"));
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylist"));
 				iVar0 = 1;
 			}
 			break;
@@ -72134,8 +72134,8 @@ int func_1078(int iParam0, var uParam1)//Position - 0x76EC1
 			}
 			if (func_1378())
 			{
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1096198329);
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(696733436);
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DeletePlaylist"));
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylist"));
 				iVar0 = 1;
 			}
 			break;
@@ -72174,7 +72174,7 @@ int func_1078(int iParam0, var uParam1)//Position - 0x76EC1
 					bVar2 = false;
 					if (PAD::IS_CONTROL_JUST_RELEASED(2, 202) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 					{
-						HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1770673475);
+						HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 						HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 						iLocal_787 = (iLocal_787 - 1);
 						func_1426(0);
@@ -72851,7 +72851,7 @@ int func_1094()//Position - 0x77ED7
 	
 	if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 1785177548);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"));
 		if (!iVar0 == 7)
 		{
 			return 1;
@@ -74557,7 +74557,7 @@ void func_1151()//Position - 0x79BA8
 void func_1152(int iParam0)//Position - 0x79D39
 {
 	func_357(1297, iParam0, -1, 1, 0);
-	NETWORK::_0xAA6D5451DC3448B6(MISC::GET_HASH_KEY(func_1153(iParam0)));
+	NETWORK::_NETWORK_SET_CURRENT_SPAWN_SETTING(MISC::GET_HASH_KEY(func_1153(iParam0)));
 }
 
 char* func_1153(int iParam0)//Position - 0x79D5B
@@ -76373,7 +76373,7 @@ void func_1196()//Position - 0x7BBFB
 			func_1376();
 			if (iLocal_814 > 0)
 			{
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1770673475);
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 			}
 			func_603(1, "PM_LTS_ALL", "");
 		}
@@ -76384,7 +76384,7 @@ void func_1196()//Position - 0x7BBFB
 			func_1376();
 			if (iLocal_814 > 0)
 			{
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1770673475);
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 			}
 			func_603(1, "PM_MIS_ALL", "");
 		}
@@ -76395,7 +76395,7 @@ void func_1196()//Position - 0x7BBFB
 			func_1376();
 			if (iLocal_814 > 0)
 			{
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1770673475);
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 			}
 			func_603(1, "PM_VS_ALL", "");
 		}
@@ -76406,7 +76406,7 @@ void func_1196()//Position - 0x7BBFB
 			func_1376();
 			if (iLocal_814 > 0)
 			{
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1770673475);
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 			}
 			func_603(1, "PM_NEW_VS_ALL", "");
 		}
@@ -76417,7 +76417,7 @@ void func_1196()//Position - 0x7BBFB
 			func_1376();
 			if (iLocal_814 > 0)
 			{
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1770673475);
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 			}
 			func_603(1, "PM_BJ_ALL", "");
 		}
@@ -76428,7 +76428,7 @@ void func_1196()//Position - 0x7BBFB
 			func_1376();
 			if (iLocal_814 > 0)
 			{
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1770673475);
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 			}
 			func_603(1, "PM_SV_ALL", "");
 		}
@@ -76439,7 +76439,7 @@ void func_1196()//Position - 0x7BBFB
 			func_1376();
 			if (iLocal_814 > 0)
 			{
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1770673475);
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 			}
 			func_603(1, "PM_ARENA_ALL", "");
 			func_1198();
@@ -76451,7 +76451,7 @@ void func_1196()//Position - 0x7BBFB
 			func_1376();
 			if (iLocal_814 > 0)
 			{
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1770673475);
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 			}
 			func_603(1, "PM_KOTH_ALL", "");
 		}
@@ -76462,35 +76462,35 @@ void func_1197()//Position - 0x7BFEA
 {
 	if (!HUD::IS_WARNING_MESSAGE_ACTIVE())
 	{
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-425332077);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1915739746);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-766890582);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-2038513889);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-2088988373);
-		HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1770673475);
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToGTACaptures"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToHoldCaptures"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToRaidCaptures"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToContendCaptures"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToAllCaptures"));
+		HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 		if ((((((iLocal_788[2] == iLocal_194 && BitTest(uLocal_244, 21)) || (iLocal_788[2] == iLocal_195 && BitTest(uLocal_245, 0))) || iLocal_788[2] == iLocal_191) || (iLocal_788[2] == iLocal_192 && iLocal_812 > 0)) || (iLocal_788[2] == iLocal_193 && iLocal_813 > 0)) || (iLocal_788[0] == 4 && iLocal_788[1] == 1))
 		{
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1770673475);
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 		}
 		if (iLocal_820 == 0)
 		{
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-425332077);
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("CycleToGTACaptures"));
 		}
 		else if (iLocal_820 == 1)
 		{
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(1915739746);
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("CycleToHoldCaptures"));
 		}
 		else if (iLocal_820 == 2)
 		{
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-766890582);
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("CycleToRaidCaptures"));
 		}
 		else if (iLocal_820 == 3)
 		{
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-2038513889);
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("CycleToContendCaptures"));
 		}
 		else if (iLocal_820 == 4)
 		{
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-2088988373);
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("CycleToAllCaptures"));
 		}
 		HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 	}
@@ -76500,16 +76500,16 @@ void func_1198()//Position - 0x7C12A
 {
 	if (!HUD::IS_WARNING_MESSAGE_ACTIVE())
 	{
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1807542936);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1102633593);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(919133346);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1900677516);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1850576684);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-321370552);
-		HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1770673475);
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToAllRaces"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToLandRaces"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToBikeRaces"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToWaterRaces"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToAirRaces"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToStuntRaces"));
+		HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 		if ((((((iLocal_788[2] == iLocal_194 && BitTest(uLocal_244, 21)) || (iLocal_788[2] == iLocal_195 && BitTest(uLocal_245, 0))) || iLocal_788[2] == iLocal_191) || (iLocal_788[2] == iLocal_192 && iLocal_812 > 0)) || (iLocal_788[2] == iLocal_193 && iLocal_813 > 0)) || (iLocal_788[0] == 4 && iLocal_788[1] == 1))
 		{
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1770673475);
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 		}
 		HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 	}
@@ -76521,55 +76521,55 @@ void func_1199()//Position - 0x7C213
 	
 	if (!HUD::IS_WARNING_MESSAGE_ACTIVE())
 	{
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1807542936);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1102633593);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(919133346);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1900677516);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1850576684);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-321370552);
-		HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1770673475);
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToAllRaces"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToLandRaces"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToBikeRaces"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToWaterRaces"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToAirRaces"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToStuntRaces"));
+		HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 		if ((((((iLocal_788[2] == iLocal_194 && BitTest(uLocal_244, 21)) || (iLocal_788[2] == iLocal_195 && BitTest(uLocal_245, 0))) || iLocal_788[2] == iLocal_191) || (iLocal_788[2] == iLocal_192 && iLocal_812 > 0)) || (iLocal_788[2] == iLocal_193 && iLocal_813 > 0)) || (iLocal_788[0] == 4 && iLocal_788[1] == 1))
 		{
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1770673475);
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 		}
 		if (iLocal_819 == 0)
 		{
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(1102633593);
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("CycleToLandRaces"));
 		}
 		else if (iLocal_819 == 1)
 		{
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(919133346);
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("CycleToBikeRaces"));
 		}
 		else if (iLocal_819 == 2)
 		{
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(1900677516);
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("CycleToWaterRaces"));
 		}
 		else if (iLocal_819 == 3)
 		{
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1850576684);
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("CycleToAirRaces"));
 		}
 		else if (iLocal_819 == 4)
 		{
 			if (Global_262145.f_48 && uVar0)
 			{
-				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-321370552);
+				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("CycleToStuntRaces"));
 			}
 			else
 			{
-				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1807542936);
+				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("CycleToAllRaces"));
 			}
 		}
 		else if (iLocal_819 == 5)
 		{
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1807542936);
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("CycleToAllRaces"));
 		}
 		else if (iLocal_819 == 6)
 		{
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(1271262928);
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("CycleToTargetAssaultRaces"));
 		}
 		else if (iLocal_819 == 7)
 		{
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1807542936);
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("CycleToAllRaces"));
 		}
 		HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 	}
@@ -76579,34 +76579,34 @@ void func_1200()//Position - 0x7C3AD
 {
 	if (!HUD::IS_WARNING_MESSAGE_ACTIVE())
 	{
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-2000051874);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-2120926504);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-2118980947);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1379291144);
-		HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1770673475);
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToAllDeathmatches"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToDeathmatches"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToTeamDeathmatches"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToVehicleDeathmatches"));
+		HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 		if ((((((iLocal_788[2] == iLocal_194 && BitTest(uLocal_244, 21)) || (iLocal_788[2] == iLocal_195 && BitTest(uLocal_245, 0))) || iLocal_788[2] == iLocal_191) || (iLocal_788[2] == iLocal_192 && iLocal_812 > 0)) || (iLocal_788[2] == iLocal_193 && iLocal_813 > 0)) || (iLocal_788[0] == 4 && iLocal_788[1] == 1))
 		{
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1770673475);
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 		}
 		if (iLocal_818 == 0)
 		{
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-2120926504);
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("CycleToDeathmatches"));
 		}
 		else if (iLocal_818 == 1)
 		{
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-2118980947);
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("CycleToTeamDeathmatches"));
 		}
 		else if (iLocal_818 == 2)
 		{
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1379291144);
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("CycleToVehicleDeathmatches"));
 		}
 		else if (iLocal_818 == 3)
 		{
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-2000051874);
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("CycleToAllDeathmatches"));
 		}
 		else if (iLocal_818 == 4)
 		{
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-2000051874);
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("CycleToAllDeathmatches"));
 		}
 		HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 	}
@@ -77906,17 +77906,17 @@ void func_1239()//Position - 0x7EC5C
 {
 	if (!HUD::IS_WARNING_MESSAGE_ACTIVE())
 	{
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1807542936);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1102633593);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(919133346);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1900677516);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1850576684);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-321370552);
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1271262928);
-		HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1770673475);
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToAllRaces"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToLandRaces"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToBikeRaces"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToWaterRaces"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToAirRaces"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToStuntRaces"));
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToTargetAssaultRaces"));
+		HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 		if ((((((iLocal_788[2] == iLocal_194 && BitTest(uLocal_244, 21)) || (iLocal_788[2] == iLocal_195 && BitTest(uLocal_245, 0))) || iLocal_788[2] == iLocal_191) || (iLocal_788[2] == iLocal_192 && iLocal_812 > 0)) || (iLocal_788[2] == iLocal_193 && iLocal_813 > 0)) || (iLocal_788[0] == 4 && iLocal_788[1] == 1))
 		{
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1770673475);
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 		}
 		HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 	}
@@ -80704,13 +80704,13 @@ int func_1324()//Position - 0x826DA
 									{
 										if (func_355())
 										{
-											HUD::PAUSE_MENU_ACTIVATE_CONTEXT(696733436);
+											HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("EditPlaylist"));
 											HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 										}
 									}
 									else
 									{
-										HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(696733436);
+										HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("EditPlaylist"));
 										HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 									}
 								}
@@ -82412,7 +82412,7 @@ void func_1369()//Position - 0x849D7
 					{
 						if (func_1600() == 2)
 						{
-							HUD::PAUSE_MENU_ACTIVATE_CONTEXT(1096198329);
+							HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("DeletePlaylist"));
 						}
 					}
 				}
@@ -82496,35 +82496,35 @@ void func_1373(int iParam0, int iParam1)//Position - 0x84AF5
 
 void func_1374()//Position - 0x84B4A
 {
-	HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1770673475);
-	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-425332077);
-	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1915739746);
-	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-766890582);
-	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-2038513889);
-	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-2088988373);
+	HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("SupressSelectPM"));
+	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToGTACaptures"));
+	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToHoldCaptures"));
+	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToRaidCaptures"));
+	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToContendCaptures"));
+	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToAllCaptures"));
 	HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 }
 
 void func_1375()//Position - 0x84B8D
 {
-	HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1770673475);
-	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1807542936);
-	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1102633593);
-	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(919133346);
-	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1900677516);
-	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1850576684);
-	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-321370552);
-	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1271262928);
+	HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("SupressSelectPM"));
+	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToAllRaces"));
+	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToLandRaces"));
+	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToBikeRaces"));
+	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToWaterRaces"));
+	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToAirRaces"));
+	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToStuntRaces"));
+	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToTargetAssaultRaces"));
 	HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 }
 
 void func_1376()//Position - 0x84BE2
 {
-	HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1770673475);
-	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-2000051874);
-	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-2120926504);
-	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-2118980947);
-	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1379291144);
+	HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("SupressSelectPM"));
+	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToAllDeathmatches"));
+	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToDeathmatches"));
+	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToTeamDeathmatches"));
+	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToVehicleDeathmatches"));
 	HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 }
 
@@ -82598,7 +82598,7 @@ void func_1385()//Position - 0x84CD8
 		if (iVar0 == 42)
 		{
 			HUD::TAKE_CONTROL_OF_FRONTEND();
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1770673475);
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 			if (((iLocal_788[0] == 12 && !func_367()) && func_1325(12)) && !NETWORK::IS_COMMERCE_STORE_OPEN())
 			{
 			}
@@ -82844,7 +82844,7 @@ void func_1390()//Position - 0x84FF8
 		}
 		else if (!BitTest(uLocal_729, 0))
 		{
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1770673475);
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 			HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 			func_284(1, 0, 3, "HUD_CONNT", "PM_DOPROT", 0, "", "", -1, 0, 0);
 			MISC::SET_BIT(&uLocal_729, 0);
@@ -82865,9 +82865,9 @@ void func_1390()//Position - 0x84FF8
 				{
 					func_284(1, 0, 3, "PM_LAUNCH", "PM_DOPROT", 0, "", "", -1, 0, 0);
 					MISC::SET_BIT(&uLocal_729, 0);
-					if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(337714004))
+					if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("HIDE_ACCEPTBUTTON")))
 					{
-						HUD::PAUSE_MENU_ACTIVATE_CONTEXT(337714004);
+						HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("HIDE_ACCEPTBUTTON"));
 						HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 					}
 				}
@@ -82877,9 +82877,9 @@ void func_1390()//Position - 0x84FF8
 					{
 						func_284(1, 0, 3, "HUD_LOADSCR_D", "PM_DOPROT", 0, "", "", -1, 0, 0);
 						MISC::SET_BIT(&uLocal_729, 0);
-						if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(337714004))
+						if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("HIDE_ACCEPTBUTTON")))
 						{
-							HUD::PAUSE_MENU_ACTIVATE_CONTEXT(337714004);
+							HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("HIDE_ACCEPTBUTTON"));
 							HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 						}
 					}
@@ -82887,9 +82887,9 @@ void func_1390()//Position - 0x84FF8
 					{
 						func_284(1, 0, 3, "HUD_LOADMAIN", "PM_DOPROT", 0, "", "", -1, 0, 0);
 						MISC::SET_BIT(&uLocal_729, 0);
-						if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(337714004))
+						if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("HIDE_ACCEPTBUTTON")))
 						{
-							HUD::PAUSE_MENU_ACTIVATE_CONTEXT(337714004);
+							HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("HIDE_ACCEPTBUTTON"));
 							HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 						}
 					}
@@ -82898,9 +82898,9 @@ void func_1390()//Position - 0x84FF8
 				{
 					func_284(1, 0, 3, "PM_DOPROB", "PM_DOPROT", 0, "", "", -1, 0, 0);
 					MISC::SET_BIT(&uLocal_729, 0);
-					if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(337714004))
+					if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("HIDE_ACCEPTBUTTON")))
 					{
-						HUD::PAUSE_MENU_ACTIVATE_CONTEXT(337714004);
+						HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("HIDE_ACCEPTBUTTON"));
 						HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 					}
 				}
@@ -82909,9 +82909,9 @@ void func_1390()//Position - 0x84FF8
 			{
 				func_284(1, 0, 3, "PM_DOPROB", "PM_DOPROT", 0, "", "", -1, 0, 0);
 				MISC::SET_BIT(&uLocal_729, 0);
-				if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(337714004))
+				if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("HIDE_ACCEPTBUTTON")))
 				{
-					HUD::PAUSE_MENU_ACTIVATE_CONTEXT(337714004);
+					HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("HIDE_ACCEPTBUTTON"));
 					HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 				}
 			}
@@ -82922,9 +82922,9 @@ void func_1390()//Position - 0x84FF8
 			{
 				func_284(1, 0, 3, "HUD_LOADSCR_D", "PM_DOPROT", 0, "", "", -1, 0, 0);
 				MISC::SET_BIT(&uLocal_729, 0);
-				if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(337714004))
+				if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("HIDE_ACCEPTBUTTON")))
 				{
-					HUD::PAUSE_MENU_ACTIVATE_CONTEXT(337714004);
+					HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("HIDE_ACCEPTBUTTON"));
 					HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 				}
 			}
@@ -82934,9 +82934,9 @@ void func_1390()//Position - 0x84FF8
 				{
 					func_284(1, 0, 3, "HUD_LOADMAIN", "PM_DOPROT", 0, "", "", -1, 0, 0);
 					MISC::SET_BIT(&uLocal_729, 0);
-					if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(337714004))
+					if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("HIDE_ACCEPTBUTTON")))
 					{
-						HUD::PAUSE_MENU_ACTIVATE_CONTEXT(337714004);
+						HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("HIDE_ACCEPTBUTTON"));
 						HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 					}
 				}
@@ -82944,9 +82944,9 @@ void func_1390()//Position - 0x84FF8
 				{
 					func_284(1, 0, 3, "HUD_LOADMAIN", "PM_DOPROT", 0, "", "", -1, 0, 0);
 					MISC::SET_BIT(&uLocal_729, 0);
-					if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(337714004))
+					if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("HIDE_ACCEPTBUTTON")))
 					{
-						HUD::PAUSE_MENU_ACTIVATE_CONTEXT(337714004);
+						HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("HIDE_ACCEPTBUTTON"));
 						HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 					}
 				}
@@ -82955,9 +82955,9 @@ void func_1390()//Position - 0x84FF8
 			{
 				func_284(1, 0, 3, "PM_DOPROB", "PM_DOPROT", 0, "", "", -1, 0, 0);
 				MISC::SET_BIT(&uLocal_729, 0);
-				if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(337714004))
+				if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("HIDE_ACCEPTBUTTON")))
 				{
-					HUD::PAUSE_MENU_ACTIVATE_CONTEXT(337714004);
+					HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("HIDE_ACCEPTBUTTON"));
 					HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 				}
 			}
@@ -82966,9 +82966,9 @@ void func_1390()//Position - 0x84FF8
 		{
 			func_284(1, 0, 3, "PM_DOPROB", "PM_DOPROT", 0, "", "", -1, 0, 0);
 			MISC::SET_BIT(&uLocal_729, 0);
-			if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(337714004))
+			if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("HIDE_ACCEPTBUTTON")))
 			{
-				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(337714004);
+				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("HIDE_ACCEPTBUTTON"));
 				HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 			}
 		}
@@ -82980,13 +82980,13 @@ void func_1390()//Position - 0x84FF8
 			sVar1 = func_1391(func_1431());
 			func_284(1, 0, 3, sVar1, "PM_DOPROT", 0, "", "", -1, 0, 0);
 			MISC::SET_BIT(&uLocal_729, 0);
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1770673475);
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 			HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 		}
 	}
-	if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(337714004))
+	if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("HIDE_ACCEPTBUTTON")))
 	{
-		HUD::PAUSE_MENU_ACTIVATE_CONTEXT(337714004);
+		HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("HIDE_ACCEPTBUTTON"));
 		HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 	}
 }
@@ -83230,7 +83230,7 @@ void func_1397(int iParam0)//Position - 0x85835
 			func_1610(1);
 			func_1610(2);
 			func_284(1, 0, 3, "HUD_NOCONNECT", "PM_DOPROT", 0, "", "", -1, 0, 0);
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1770673475);
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 			HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 			MISC::SET_BIT(&uLocal_729, 0);
 		}
@@ -83275,14 +83275,14 @@ void func_1397(int iParam0)//Position - 0x85835
 			func_1610(0);
 			func_1610(1);
 			func_1610(2);
-			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1770673475);
+			HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 			HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 			if (func_1395())
 			{
 				if (NETWORK::NETWORK_IS_CABLE_CONNECTED())
 				{
 					func_284(1, 0, 3, "NOT_CONNECTED", "PM_DOPROT", 0, "", "", -1, 0, 0);
-					HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1770673475);
+					HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 					HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 				}
 				else
@@ -83318,9 +83318,9 @@ void func_1397(int iParam0)//Position - 0x85835
 			func_1610(2);
 			func_284(1, 0, 3, "PM_DOPROB", "PM_DOPROT", 0, "", "", -1, 0, 0);
 			MISC::SET_BIT(&uLocal_729, 0);
-			if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(337714004))
+			if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("HIDE_ACCEPTBUTTON")))
 			{
-				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(337714004);
+				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("HIDE_ACCEPTBUTTON"));
 				HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 			}
 		}
@@ -85119,10 +85119,10 @@ void func_1408()//Position - 0x894A6
 	if (!HUD::IS_WARNING_MESSAGE_ACTIVE())
 	{
 		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1869643752);
-		HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1770673475);
+		HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 		if ((((((iLocal_788[2] == iLocal_194 && BitTest(uLocal_244, 21)) || (iLocal_788[2] == iLocal_195 && BitTest(uLocal_245, 0))) || iLocal_788[2] == iLocal_191) || (iLocal_788[2] == iLocal_192 && iLocal_812 > 0)) || (iLocal_788[2] == iLocal_193 && iLocal_813 > 0)) || (iLocal_788[0] == 4 && iLocal_788[1] == 1))
 		{
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1770673475);
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 		}
 		HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 	}
@@ -121939,15 +121939,15 @@ void func_1607()//Position - 0xAE614
 
 void func_1608()//Position - 0xAE642
 {
-	HUD::PAUSE_MENU_ACTIVATE_CONTEXT(-1770673475);
+	HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(2091424182);
-	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-838429768);
-	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-2060181601);
-	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(825369579);
-	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-587464286);
-	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(-1814102551);
-	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(811566148);
-	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1172448649);
+	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToFriendChallenges"));
+	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToBookmarkedChallenges"));
+	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToRockstarChallenges"));
+	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToRecentChallenges"));
+	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToTopChallenges"));
+	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToMyChallenges"));
+	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToCrewChallenges"));
 	HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
 }
 
@@ -121987,7 +121987,7 @@ void func_1614(bool bParam0)//Position - 0xAE6FF
 	{
 		if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 		{
-			if ((PED::IS_PED_GETTING_INTO_A_VEHICLE(PLAYER::PLAYER_PED_ID()) || TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), -1794415470) == 1) || TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), -1794415470) == 0)
+			if ((PED::IS_PED_GETTING_INTO_A_VEHICLE(PLAYER::PLAYER_PED_ID()) || TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_ENTER_VEHICLE")) == 1) || TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_ENTER_VEHICLE")) == 0)
 			{
 				TASK::CLEAR_PED_TASKS(PLAYER::PLAYER_PED_ID());
 			}

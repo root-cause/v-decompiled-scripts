@@ -97403,7 +97403,7 @@ int func_490(int iParam0, int iParam1)//Position - 0x72319
 
 bool func_491()//Position - 0x72798
 {
-	return DLC::IS_DLC_PRESENT(1199590110);
+	return DLC::IS_DLC_PRESENT(joaat("mpsum2"));
 }
 
 bool func_492()//Position - 0x727A9
@@ -100696,7 +100696,7 @@ int func_525(int iParam0, int iParam1)//Position - 0x7710C
 
 int func_526(int iParam0, int iParam1, int iParam2)//Position - 0x771F1
 {
-	if (!func_527() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_527() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}
@@ -111085,7 +111085,7 @@ void func_616(var uParam0, var uParam1)//Position - 0x8726E
 		{
 			if (!CAM::DOES_CAM_EXIST(*uParam0))
 			{
-				*uParam0 = CAM::CREATE_CAMERA(26379945, true);
+				*uParam0 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 				CAM::SET_CAM_COORD(*uParam0, 10f, 10f, 10f);
 				CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
 			}

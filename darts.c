@@ -519,7 +519,7 @@ void __EntryFunction__()//Position - 0x0
 					{
 						Local_207 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(Var0.f_243, 0.7792f, -1.138f, 0.1814f) };
 						Local_208 = { -7.9947f, 0f, (Var0.f_243.f_4 + 36.19176f) };
-						iLocal_84 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Local_207, Local_208, 65f, false, 2);
+						iLocal_84 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Local_207, Local_208, 65f, false, 2);
 						CAM::SET_CAM_FOV(iLocal_84, 30f);
 					}
 					func_465();
@@ -714,7 +714,7 @@ void __EntryFunction__()//Position - 0x0
 						func_445(Var0.f_243.f_4, Var2, &uVar26, &ScriptParam_228);
 						func_444(&Var4, sLocal_219, sLocal_220);
 						TASK::CLEAR_PED_TASKS(iLocal_138[1]);
-						iLocal_174 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 0f, 0f, 0f, 0f, 0f, 0f, 65f, false, 2);
+						iLocal_174 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 0f, 0f, 0f, 0f, 0f, 0f, 65f, false, 2);
 						if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 						{
 							PED::FORCE_PED_MOTION_STATE(PLAYER::PLAYER_PED_ID(), joaat("MotionState_Idle"), false, 0, false);
@@ -17410,7 +17410,7 @@ void func_313(struct<3> Param0)//Position - 0x19250
 	struct<3> Var0;
 	
 	Var0 = { -5.5606f, -0.0106f, -131.6781f };
-	iLocal_87 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Param0, Var0, 65f, false, 2);
+	iLocal_87 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Param0, Var0, 65f, false, 2);
 	CAM::SET_CAM_ACTIVE_WITH_INTERP(iLocal_87, iLocal_75, 2000, 1, 1);
 }
 
@@ -23448,15 +23448,15 @@ void func_466(struct<3> Param0, float fParam1)//Position - 0x2198E
 	Var5 = { 0.8351f, -0.0048f, (fParam1 - 186.5073f) };
 	Var15 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Param0, fParam1, Var16) };
 	Var6 = { 0.8351f, -0.0048f, (fParam1 - 186.5073f) };
-	iLocal_75 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, Var2, fVar7, false, 2);
-	iLocal_76 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var1, Var3, fVar7, false, 2);
-	iLocal_77 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var4, Var5, 65f, false, 2);
-	iLocal_78 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var15, Var6, 65f, false, 2);
-	iLocal_79 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 0f, 0f, 0f, 0f, 0f, 0f, 65f, false, 2);
-	iLocal_80 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 0f, 0f, 0f, 0f, 0f, 0f, 65f, false, 2);
-	iLocal_82 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 0f, 0f, 0f, 0f, 0f, 0f, 65f, false, 2);
-	iLocal_83 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 0f, 0f, 0f, 0f, 0f, 0f, 65f, false, 2);
-	iLocal_81 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 1996.235f, 3048.456f, 48.0237f, -3.4831f, 0.0223f, 60.6925f, 38.1f, false, 2);
+	iLocal_75 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, Var2, fVar7, false, 2);
+	iLocal_76 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var1, Var3, fVar7, false, 2);
+	iLocal_77 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var4, Var5, 65f, false, 2);
+	iLocal_78 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var15, Var6, 65f, false, 2);
+	iLocal_79 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 0f, 0f, 0f, 0f, 0f, 0f, 65f, false, 2);
+	iLocal_80 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 0f, 0f, 0f, 0f, 0f, 0f, 65f, false, 2);
+	iLocal_82 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 0f, 0f, 0f, 0f, 0f, 0f, 65f, false, 2);
+	iLocal_83 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 0f, 0f, 0f, 0f, 0f, 0f, 65f, false, 2);
+	iLocal_81 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1996.235f, 3048.456f, 48.0237f, -3.4831f, 0.0223f, 60.6925f, 38.1f, false, 2);
 	CAM::SET_CAM_FOV(iLocal_77, 43.35f);
 	CAM::SET_CAM_FOV(iLocal_78, 42.35f);
 	CAM::SHAKE_CAM(iLocal_77, "HAND_SHAKE", 0.1f);

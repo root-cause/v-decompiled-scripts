@@ -1262,7 +1262,7 @@ void func_22()//Position - 0xEDE
 			PAD::DISABLE_CONTROL_ACTION(0, 0, true);
 			if (CAM::GET_FOLLOW_PED_CAM_VIEW_MODE() != 4)
 			{
-				iLocal_323 = CAM::CREATE_CAMERA(26379945, false);
+				iLocal_323 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), false);
 				if (Global_32020[0 /*11*/].f_2)
 				{
 					CAM::SET_CAM_PARAMS(iLocal_323, Local_340, Local_341, fLocal_342, 0, 1, 1, 2);

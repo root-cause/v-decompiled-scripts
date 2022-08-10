@@ -57,7 +57,7 @@ void func_1()//Position - 0x4F
 		if (!Global_96936)
 		{
 			ENTITY::SET_ENTITY_AS_MISSION_ENTITY(iLocal_20, true, true);
-			if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_20, 1435919172) != 7)
+			if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_20, joaat("SCRIPT_TASK_ANY")) != 7)
 			{
 				TASK::CLEAR_PED_TASKS(iLocal_20);
 			}

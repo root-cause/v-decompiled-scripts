@@ -614,7 +614,7 @@ void func_2()//Position - 0x30E
 				PED::SET_PED_DESIRED_HEADING(PLAYER::PLAYER_PED_ID(), func_16(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), ENTITY::GET_ENTITY_COORDS(iLocal_41, true)));
 				PED::SET_PED_RESET_FLAG(PLAYER::PLAYER_PED_ID(), 69, true);
 			}
-			if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 2106541073) != 1)
+			if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD")) != 1)
 			{
 				MISC::CLEAR_BIT(&uLocal_321, 0);
 				iLocal_327 = NETWORK::NETWORK_CREATE_SYNCHRONISED_SCENE(Local_338, Local_339, 2, false, false, 1f, 0f, 1f);
@@ -1412,7 +1412,7 @@ int func_31(int iParam0)//Position - 0x13CC
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;

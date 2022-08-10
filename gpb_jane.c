@@ -684,7 +684,7 @@ void __EntryFunction__()//Position - 0x0
 			
 			case 6:
 				GRAPHICS::DRAW_DEBUG_TEXT_2D("WAIT_MOVE_BACK_TO_INITIAL_POSITION", 0.02f, 0.25f, 0f, 0, 0, 255, 255);
-				if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_208, 713668775) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iLocal_208, 713668775) != 0)
+				if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_208, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iLocal_208, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 0)
 				{
 					GRAPHICS::DRAW_DEBUG_TEXT_2D("WAIT_MOVE_BACK_TO_INITIAL_POSITION TASK_PLAY_ANIM", 0.02f, 0.26f, 0f, 0, 0, 255, 255);
 					TASK::TASK_PLAY_ANIM(iLocal_208, &cLocal_243, "idle_intro", 4f, -4f, -1, 0, 0f, false, false, false);
@@ -2308,7 +2308,7 @@ int func_61()//Position - 0x24F4
 
 int func_62()//Position - 0x2516
 {
-	if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_208, -2017877118) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iLocal_208, -2017877118) != 0)
+	if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_208, joaat("SCRIPT_TASK_PLAY_ANIM")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iLocal_208, joaat("SCRIPT_TASK_PLAY_ANIM")) != 0)
 	{
 		return 0;
 	}

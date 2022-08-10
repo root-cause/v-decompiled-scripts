@@ -7429,7 +7429,7 @@ int func_80(int iParam0, int iParam1)//Position - 0xA673
 
 bool func_81()//Position - 0xAAF2
 {
-	return DLC::IS_DLC_PRESENT(1199590110);
+	return DLC::IS_DLC_PRESENT(joaat("mpsum2"));
 }
 
 bool func_82()//Position - 0xAB03
@@ -8133,7 +8133,7 @@ int func_101(int iParam0, int iParam1)//Position - 0xB89D
 
 int func_102(int iParam0, int iParam1, int iParam2)//Position - 0xB982
 {
-	if (!func_103() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_103() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}

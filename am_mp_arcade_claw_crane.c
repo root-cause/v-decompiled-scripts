@@ -77455,7 +77455,7 @@ int func_452(int iParam0)//Position - 0x5CE56
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;
@@ -78386,7 +78386,7 @@ void func_495(int* iParam0, int iParam1)//Position - 0x5E2C0
 	
 	if (!CAM::DOES_CAM_EXIST(iParam0->f_39))
 	{
-		iParam0->f_39 = CAM::CREATE_CAMERA(26379945, true);
+		iParam0->f_39 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 		iParam0->f_29 = 0f;
 		iParam0->f_30 = 0f;
 		iParam0->f_31 = 0f;
@@ -85025,7 +85025,7 @@ int func_645()//Position - 0x65CA5
 	{
 		return 0;
 	}
-	if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 2106541073) == 0 || TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 2106541073) == 1)
+	if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD")) == 0 || TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD")) == 1)
 	{
 		return 0;
 	}

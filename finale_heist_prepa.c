@@ -2598,7 +2598,7 @@ void func_77()//Position - 0x27D8
 	while (iVar0 <= 2)
 	{
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_289[iVar0 /*22*/], false);
-		if (!func_78(Local_289[iVar0 /*22*/], -1098463898))
+		if (!func_78(Local_289[iVar0 /*22*/], joaat("SCRIPT_TASK_START_SCENARIO_AT_POSITION")))
 		{
 			switch (iVar0)
 			{
@@ -3556,7 +3556,7 @@ int func_109(int iParam0, int iParam1)//Position - 0x397C
 			break;
 		
 		case 1:
-			if (!func_78(iParam1, 713668775))
+			if (!func_78(iParam1, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")))
 			{
 				TASK::TASK_CLIMB(iParam1, false);
 				iLocal_43[iParam0] = 2;
@@ -3564,7 +3564,7 @@ int func_109(int iParam0, int iParam1)//Position - 0x397C
 			break;
 		
 		case 2:
-			if (!func_78(iParam1, -1207763510))
+			if (!func_78(iParam1, joaat("SCRIPT_TASK_CLIMB")))
 			{
 				iLocal_43[iParam0] = 4;
 			}
@@ -3860,7 +3860,7 @@ void func_120(int iParam0)//Position - 0x3F99
 			{
 				if (MISC::GET_GAME_TIMER() - Local_289[iParam0 /*22*/].f_14) > MISC::GET_RANDOM_INT_IN_RANGE(1000, 1500)
 				{
-					if (!func_78(Local_289[iParam0 /*22*/], -875674219))
+					if (!func_78(Local_289[iParam0 /*22*/], joaat("SCRIPT_TASK_TURN_PED_TO_FACE_ENTITY")))
 					{
 						PED::SET_PED_SHOULD_PLAY_IMMEDIATE_SCENARIO_EXIT(Local_289[iParam0 /*22*/]);
 						TASK::TASK_TURN_PED_TO_FACE_ENTITY(Local_289[iParam0 /*22*/], PLAYER::PLAYER_PED_ID(), 0);
@@ -4005,9 +4005,9 @@ void func_120(int iParam0)//Position - 0x3F99
 					{
 						PLAYER::_0xBC9490CA15AEA8FB(PLAYER::PLAYER_ID());
 					}
-					if ((func_78(Local_289[iParam0 /*22*/], -2128726980) || func_78(Local_289[iParam0 /*22*/], -982327190)) && PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID()) < 2)
+					if ((func_78(Local_289[iParam0 /*22*/], joaat("SCRIPT_TASK_INVALID")) || func_78(Local_289[iParam0 /*22*/], joaat("SCRIPT_TASK_STAND_STILL"))) && PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID()) < 2)
 					{
-						if (!func_78(Local_289[iParam0 /*22*/], 1392476864))
+						if (!func_78(Local_289[iParam0 /*22*/], joaat("SCRIPT_TASK_ARREST_PED")))
 						{
 							TASK::TASK_ARREST_PED(Local_289[iParam0 /*22*/], PLAYER::PLAYER_PED_ID());
 						}
@@ -4165,11 +4165,11 @@ void func_127(int iParam0)//Position - 0x4597
 	{
 		if (func_380(Local_289[iParam0 /*22*/]))
 		{
-			if (func_78(Local_289[iParam0 /*22*/], 242628503) || PED::IS_PED_RUNNING_MOBILE_PHONE_TASK(Local_289[iParam0 /*22*/]))
+			if (func_78(Local_289[iParam0 /*22*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) || PED::IS_PED_RUNNING_MOBILE_PHONE_TASK(Local_289[iParam0 /*22*/]))
 			{
 				TASK::CLEAR_PED_TASKS(Local_289[iParam0 /*22*/]);
 			}
-			else if (func_78(Local_289[iParam0 /*22*/], -1098463898) || func_78(Local_289[iParam0 /*22*/], 993674639))
+			else if (func_78(Local_289[iParam0 /*22*/], joaat("SCRIPT_TASK_START_SCENARIO_AT_POSITION")) || func_78(Local_289[iParam0 /*22*/], joaat("SCRIPT_TASK_START_SCENARIO_IN_PLACE")))
 			{
 				PED::SET_PED_SHOULD_PLAY_IMMEDIATE_SCENARIO_EXIT(Local_289[iParam0 /*22*/]);
 			}
@@ -4293,7 +4293,7 @@ void func_134(int iParam0)//Position - 0x4858
 {
 	int iVar0;
 	
-	if (Local_289[iParam0 /*22*/].f_18 != 1 && !func_78(Local_289[iParam0 /*22*/], 242628503))
+	if (Local_289[iParam0 /*22*/].f_18 != 1 && !func_78(Local_289[iParam0 /*22*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE")))
 	{
 		TASK::CLEAR_PED_TASKS(Local_289[iParam0 /*22*/]);
 		PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_289[iParam0 /*22*/], iLocal_292);
@@ -5617,7 +5617,7 @@ void func_177(int iParam0, int iParam1, int iParam2)//Position - 0x5F0F
 				}
 			}
 		}
-		if (!func_78(Local_289[iParam0 /*22*/], -875674219))
+		if (!func_78(Local_289[iParam0 /*22*/], joaat("SCRIPT_TASK_TURN_PED_TO_FACE_ENTITY")))
 		{
 			PED::SET_PED_SHOULD_PLAY_IMMEDIATE_SCENARIO_EXIT(Local_289[iParam0 /*22*/]);
 			TASK::TASK_TURN_PED_TO_FACE_ENTITY(Local_289[iParam0 /*22*/], PLAYER::PLAYER_PED_ID(), 0);
@@ -5862,7 +5862,7 @@ void func_183(int iParam0, int iParam1, bool bParam2)//Position - 0x6564
 			return;
 		}
 	}
-	if (!func_78(Local_289[iParam0 /*22*/], -875674219))
+	if (!func_78(Local_289[iParam0 /*22*/], joaat("SCRIPT_TASK_TURN_PED_TO_FACE_ENTITY")))
 	{
 		PED::SET_PED_SHOULD_PLAY_IMMEDIATE_SCENARIO_EXIT(Local_289[iParam0 /*22*/]);
 		TASK::TASK_TURN_PED_TO_FACE_ENTITY(Local_289[iParam0 /*22*/], PLAYER::PLAYER_PED_ID(), 0);
@@ -6575,7 +6575,7 @@ void func_198(int iParam0)//Position - 0x72BD
 			if (MISC::GET_GAME_TIMER() - Local_289[iParam0 /*22*/].f_14) > MISC::GET_RANDOM_INT_IN_RANGE(2500, 3000)
 			{
 				fVar1 = PLAYER::GET_PLAYER_CURRENT_STEALTH_NOISE(PLAYER::PLAYER_ID());
-				if (((fVar1 < 12f && !Local_289[iParam0 /*22*/].f_16) && !BitTest(Local_289[iParam0 /*22*/].f_15, 10)) && !func_78(Local_289[iParam0 /*22*/], -875674219))
+				if (((fVar1 < 12f && !Local_289[iParam0 /*22*/].f_16) && !BitTest(Local_289[iParam0 /*22*/].f_15, 10)) && !func_78(Local_289[iParam0 /*22*/], joaat("SCRIPT_TASK_TURN_PED_TO_FACE_ENTITY")))
 				{
 					MISC::CLEAR_BIT(&(Local_289[iParam0 /*22*/].f_15), 11);
 				}

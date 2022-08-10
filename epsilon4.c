@@ -37571,7 +37571,7 @@ int func_281(int iParam0, float fParam1, int iParam2)//Position - 0x2A798
 			else if (iParam2 == 1)
 			{
 				iVar0 = 0;
-				if (!func_287(PLAYER::PLAYER_PED_ID(), -828834893))
+				if (!func_287(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")))
 				{
 					TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
 				}
@@ -40038,14 +40038,14 @@ void func_328(var uParam0)//Position - 0x2DB56
 			{
 				if (!uParam0->f_7)
 				{
-					if (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 713668775) == 7)
+					if (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) == 7)
 					{
 						func_405("Eps reached marker! (follow nav to coord)");
 						uParam0->f_1 = 2;
 						uParam0->f_2 = 0;
 					}
 				}
-				else if (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 2106541073) == 7)
+				else if (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD")) == 7)
 				{
 					func_405("Eps reached marker! (go straight to coord)");
 					uParam0->f_7 = 0;
@@ -40102,7 +40102,7 @@ void func_328(var uParam0)//Position - 0x2DB56
 			}
 			else if (uParam0->f_2 == 1)
 			{
-				if (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) == 7)
+				if (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 7)
 				{
 					Local_296[uParam0->f_3 /*6*/].f_5 = 0;
 					uParam0->f_3 = -1;
@@ -40187,7 +40187,7 @@ void func_328(var uParam0)//Position - 0x2DB56
 					else
 					{
 						iLocal_418 = MISC::GET_GAME_TIMER();
-						if (!func_287(*uParam0, 242628503))
+						if (!func_287(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")))
 						{
 							iLocal_280 = 0;
 						}
@@ -42358,7 +42358,7 @@ void func_403()//Position - 0x30CB5
 		{
 			if (func_288(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false), 10.5f, 1, 1056964608, 0, 1, 0))
 			{
-				if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), -828834893) != 1)
+				if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")) != 1)
 				{
 					TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
 				}

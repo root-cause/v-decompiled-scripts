@@ -11755,7 +11755,7 @@ void func_177(int iParam0)//Position - 0xD454
 				{
 					if (!PED::IS_PED_INJURED(iLocal_1481))
 					{
-						if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(iLocal_1481, PLAYER::PLAYER_PED_ID(), true) || TASK::GET_SCRIPT_TASK_STATUS(iLocal_1481, 1785177548) == 2)
+						if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(iLocal_1481, PLAYER::PLAYER_PED_ID(), true) || TASK::GET_SCRIPT_TASK_STATUS(iLocal_1481, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE")) == 2)
 						{
 							iVar4 = 1;
 						}
@@ -11767,7 +11767,7 @@ void func_177(int iParam0)//Position - 0xD454
 					{
 						iVar4 = 1;
 					}
-					else if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_1371[6 /*14*/], PLAYER::PLAYER_PED_ID(), true) || TASK::GET_SCRIPT_TASK_STATUS(Local_1371[6 /*14*/], 993674639) == 2)
+					else if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_1371[6 /*14*/], PLAYER::PLAYER_PED_ID(), true) || TASK::GET_SCRIPT_TASK_STATUS(Local_1371[6 /*14*/], joaat("SCRIPT_TASK_START_SCENARIO_IN_PLACE")) == 2)
 					{
 						iVar4 = 1;
 					}
@@ -11778,7 +11778,7 @@ void func_177(int iParam0)//Position - 0xD454
 					{
 						iVar4 = 1;
 					}
-					else if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_1371[7 /*14*/], PLAYER::PLAYER_PED_ID(), true) || TASK::GET_SCRIPT_TASK_STATUS(Local_1371[7 /*14*/], 993674639) == 2)
+					else if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_1371[7 /*14*/], PLAYER::PLAYER_PED_ID(), true) || TASK::GET_SCRIPT_TASK_STATUS(Local_1371[7 /*14*/], joaat("SCRIPT_TASK_START_SCENARIO_IN_PLACE")) == 2)
 					{
 						iVar4 = 1;
 					}
@@ -11789,7 +11789,7 @@ void func_177(int iParam0)//Position - 0xD454
 					{
 						iVar4 = 1;
 					}
-					else if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_1371[8 /*14*/], PLAYER::PLAYER_PED_ID(), true) || TASK::GET_SCRIPT_TASK_STATUS(Local_1371[8 /*14*/], 993674639) == 2)
+					else if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_1371[8 /*14*/], PLAYER::PLAYER_PED_ID(), true) || TASK::GET_SCRIPT_TASK_STATUS(Local_1371[8 /*14*/], joaat("SCRIPT_TASK_START_SCENARIO_IN_PLACE")) == 2)
 					{
 						iVar4 = 1;
 					}
@@ -13951,7 +13951,7 @@ int func_205(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 									{
 										PED::REMOVE_PED_FROM_GROUP(uParam0->f_17[iVar0]);
 									}
-									if (TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_17[iVar0], -1794415470) == 7 && !func_221(uParam0->f_17[iVar0], uParam0->f_21))
+									if (TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_17[iVar0], joaat("SCRIPT_TASK_ENTER_VEHICLE")) == 7 && !func_221(uParam0->f_17[iVar0], uParam0->f_21))
 									{
 										if (!PED::IS_PED_RAGDOLL(uParam0->f_17[iVar0]) && !TASK::IS_PED_GETTING_UP(uParam0->f_17[iVar0]))
 										{
@@ -14230,7 +14230,7 @@ int func_205(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 							{
 								if (((!PED::IS_PED_RAGDOLL(uParam0->f_17[iVar0]) && !TASK::IS_PED_GETTING_UP(uParam0->f_17[iVar0])) && !PED::IS_PED_JUMPING_OUT_OF_VEHICLE(uParam0->f_17[iVar0])) && !PED::IS_PED_GETTING_INTO_A_VEHICLE(uParam0->f_17[iVar0]))
 								{
-									iVar11 = TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_17[iVar0], -1794415470);
+									iVar11 = TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_17[iVar0], joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 									if (iVar11 == 7)
 									{
 										TASK::CLEAR_PED_TASKS(uParam0->f_17[iVar0]);
@@ -14288,7 +14288,7 @@ int func_205(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 										{
 											if (func_189(uParam0->f_17[iVar0]))
 											{
-												iVar11 = TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_17[iVar0], 451360105);
+												iVar11 = TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_17[iVar0], joaat("SCRIPT_TASK_LEAVE_VEHICLE"));
 												if (iVar11 == 7)
 												{
 													TASK::TASK_LEAVE_ANY_VEHICLE(uParam0->f_17[iVar0], 0, 0);
@@ -14306,7 +14306,7 @@ int func_205(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 											PED::REMOVE_PED_FROM_GROUP(uParam0->f_17[iVar0]);
 										}
 									}
-									iVar11 = TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_17[iVar0], -1794415470);
+									iVar11 = TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_17[iVar0], joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 									if (iVar11 == 7 && !func_221(uParam0->f_17[iVar0], iParam10))
 									{
 										if (((((!PED::IS_PED_JUMPING_OUT_OF_VEHICLE(uParam0->f_17[iVar0]) && !PED::IS_PED_JUMPING_OUT_OF_VEHICLE(PLAYER::PLAYER_PED_ID())) && !func_210(uParam0->f_17[iVar0], 2f)) && !PED::IS_PED_RAGDOLL(uParam0->f_17[iVar0])) && !TASK::IS_PED_GETTING_UP(uParam0->f_17[iVar0])) && !FIRE::IS_ENTITY_ON_FIRE(iParam10))
@@ -14334,7 +14334,7 @@ int func_205(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 								{
 									if (!PED::IS_PED_RAGDOLL(uParam0->f_17[iVar0]) && !TASK::IS_PED_GETTING_UP(uParam0->f_17[iVar0]))
 									{
-										iVar11 = TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_17[iVar0], -1794415470);
+										iVar11 = TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_17[iVar0], joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 										if (iVar11 == 7)
 										{
 											TASK::CLEAR_PED_TASKS(uParam0->f_17[iVar0]);
@@ -15925,11 +15925,11 @@ void func_257(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 								break;
 							
 							case 1:
-								if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), -1794415470) == 7 || TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), -1794415470) == 2)
+								if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_ENTER_VEHICLE")) == 7 || TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_ENTER_VEHICLE")) == 2)
 								{
 									TASK::TASK_ENTER_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_1372[0 /*2*/], 20000, 0, 2f, 262144, 0);
 								}
-								if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), -1794415470) == 1)
+								if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_ENTER_VEHICLE")) == 1)
 								{
 									if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true))
 									{
@@ -16187,7 +16187,7 @@ void func_257(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 								case 2:
 									if (PED::IS_PED_IN_ANY_VEHICLE(Local_1371[4 /*14*/], false) || PED::IS_PED_SITTING_IN_ANY_VEHICLE(Local_1371[4 /*14*/]))
 									{
-										if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[4 /*14*/], -828834893) == 7)
+										if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[4 /*14*/], joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")) == 7)
 										{
 											TASK::TASK_LEAVE_ANY_VEHICLE(Local_1371[4 /*14*/], 0, 0);
 										}
@@ -16198,12 +16198,12 @@ void func_257(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 										{
 											if (MISC::ABSF(func_498(Local_1371[4 /*14*/], PLAYER::PLAYER_PED_ID())) > 45f)
 											{
-												if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[4 /*14*/], -875674219) != 1)
+												if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[4 /*14*/], joaat("SCRIPT_TASK_TURN_PED_TO_FACE_ENTITY")) != 1)
 												{
 													TASK::TASK_TURN_PED_TO_FACE_ENTITY(Local_1371[4 /*14*/], PLAYER::PLAYER_PED_ID(), 2000);
 												}
 											}
-											else if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[4 /*14*/], 242628503) == 7 && TASK::GET_SCRIPT_TASK_STATUS(Local_1371[4 /*14*/], -875674219) == 7)
+											else if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[4 /*14*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 7 && TASK::GET_SCRIPT_TASK_STATUS(Local_1371[4 /*14*/], joaat("SCRIPT_TASK_TURN_PED_TO_FACE_ENTITY")) == 7)
 											{
 												func_548();
 												TASK::TASK_LOOK_AT_ENTITY(0, PLAYER::PLAYER_PED_ID(), 5000, 0, 2);
@@ -16242,7 +16242,7 @@ void func_257(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 							case 1:
 								if (!PED::IS_PED_INJURED(Local_1371[4 /*14*/]) && VEHICLE::IS_VEHICLE_DRIVEABLE(Local_1372[0 /*2*/], false))
 								{
-									if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[4 /*14*/], 1226471469) == 1)
+									if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[4 /*14*/], joaat("SCRIPT_TASK_GENERAL_SWEEP")) == 1)
 									{
 										TASK::UPDATE_TASK_SWEEP_AIM_ENTITY(Local_1371[4 /*14*/], Local_1372[0 /*2*/]);
 									}
@@ -16880,7 +16880,7 @@ void func_257(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 							case 1:
 								if (!PED::IS_PED_INJURED(Local_1371[4 /*14*/]))
 								{
-									if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[4 /*14*/], 242628503) == 7)
+									if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[4 /*14*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 7)
 									{
 										Local_1610[iParam0 /*10*/].f_7 = (MISC::GET_GAME_TIMER() + MISC::GET_RANDOM_INT_IN_RANGE(500, 2500));
 										Local_1610[iParam0 /*10*/].f_6++;
@@ -16988,7 +16988,7 @@ void func_257(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 									break;
 								
 								case 1:
-									if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[4 /*14*/], 242628503) == 1)
+									if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[4 /*14*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 1)
 									{
 										if (TASK::GET_SEQUENCE_PROGRESS(Local_1371[4 /*14*/]) >= 1)
 										{
@@ -17013,7 +17013,7 @@ void func_257(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 									break;
 								
 								case 1:
-									if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[4 /*14*/], 242628503) == 7)
+									if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[4 /*14*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 7)
 									{
 										Local_1610[iParam0 /*10*/].f_3 = 1;
 									}
@@ -17043,7 +17043,7 @@ void func_257(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 										}
 										Local_1610[iParam0 /*10*/].f_3 = 1;
 									}
-									else if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[4 /*14*/], 713668775) == 7)
+									else if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[4 /*14*/], joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) == 7)
 									{
 									}
 									break;
@@ -17069,7 +17069,7 @@ void func_257(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 									break;
 								
 								case 1:
-									if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[4 /*14*/], 242628503) == 1)
+									if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[4 /*14*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 1)
 									{
 										if (TASK::GET_SEQUENCE_PROGRESS(Local_1371[4 /*14*/]) >= 1)
 										{
@@ -17094,7 +17094,7 @@ void func_257(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 									break;
 								
 								case 1:
-									if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[4 /*14*/], 242628503) == 7)
+									if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[4 /*14*/], joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 7)
 									{
 										Local_1610[iParam0 /*10*/].f_3 = 1;
 									}
@@ -17482,7 +17482,7 @@ void func_257(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 									break;
 								
 								case 2:
-									if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[3 /*14*/], -2017877118) == 7 || TASK::GET_SCRIPT_TASK_STATUS(Local_1371[3 /*14*/], -2017877118) == 2)
+									if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[3 /*14*/], joaat("SCRIPT_TASK_PLAY_ANIM")) == 7 || TASK::GET_SCRIPT_TASK_STATUS(Local_1371[3 /*14*/], joaat("SCRIPT_TASK_PLAY_ANIM")) == 2)
 									{
 										Local_1610[iParam0 /*10*/].f_3 = 1;
 									}
@@ -18417,9 +18417,9 @@ int func_268(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 				fVar7 = CAM::GET_FINAL_RENDERED_CAM_FOV();
 				if (uParam0->f_17 > 0 || iParam6 != 0)
 				{
-					uParam0->f_3 = CAM::CREATE_CAMERA(1775630800, false);
+					uParam0->f_3 = CAM::CREATE_CAMERA(joaat("TIMED_SPLINE_CAMERA"), false);
 				}
-				uParam0->f_1 = CAM::CREATE_CAMERA(26379945, true);
+				uParam0->f_1 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 				if (bParam1)
 				{
 					CAM::ATTACH_CAM_TO_ENTITY(uParam0->f_1, uParam0->f_5, Var1, true);
@@ -18430,7 +18430,7 @@ int func_268(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 				}
 				CAM::SET_CAM_ROT(uParam0->f_1, Var2, 2);
 				CAM::SET_CAM_FOV(uParam0->f_1, fVar7);
-				uParam0->f_2 = CAM::CREATE_CAMERA(26379945, true);
+				uParam0->f_2 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 				if (bParam1 && !bParam4)
 				{
 					CAM::ATTACH_CAM_TO_ENTITY(uParam0->f_2, uParam0->f_5, Var1 + Var6 * Vector(uParam0->f_12, uParam0->f_12, uParam0->f_12), true);
@@ -18443,7 +18443,7 @@ int func_268(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 				CAM::SET_CAM_FOV(uParam0->f_2, fVar7);
 				if (uParam0->f_17 > 0 && iParam6 == 0)
 				{
-					uParam0->f_4 = CAM::CREATE_CAMERA(26379945, true);
+					uParam0->f_4 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), true);
 					if (bParam1 && !bParam4)
 					{
 						CAM::ATTACH_CAM_TO_ENTITY(uParam0->f_4, uParam0->f_5, Var1 + Var6 * Vector(uParam0->f_12, uParam0->f_12, uParam0->f_12) * Vector(uParam0->f_13, uParam0->f_13, uParam0->f_13), true);
@@ -19314,7 +19314,7 @@ void func_289(var uParam0, int iParam1)//Position - 0x19792
 		func_291(uParam0, iParam1);
 		fVar0 = uParam0->f_10[iParam1 /*57*/].f_21;
 	}
-	uParam0->f_10[iParam1 /*57*/].f_1 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, uParam0->f_10[iParam1 /*57*/].f_6, uParam0->f_10[iParam1 /*57*/].f_9, fVar0, true, 2);
+	uParam0->f_10[iParam1 /*57*/].f_1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), uParam0->f_10[iParam1 /*57*/].f_6, uParam0->f_10[iParam1 /*57*/].f_9, fVar0, true, 2);
 	iVar20 = uParam0->f_10[iParam1 /*57*/].f_1;
 	if (CAM::DOES_CAM_EXIST(uParam0->f_10[iParam1 /*57*/].f_1))
 	{
@@ -51849,7 +51849,7 @@ int func_456(int iParam0, int iParam1)//Position - 0x3E2BC
 
 bool func_457()//Position - 0x3E73B
 {
-	return DLC::IS_DLC_PRESENT(1199590110);
+	return DLC::IS_DLC_PRESENT(joaat("mpsum2"));
 }
 
 bool func_458()//Position - 0x3E74C
@@ -55198,7 +55198,7 @@ int func_494(int iParam0, int iParam1)//Position - 0x43178
 
 int func_495(int iParam0, int iParam1, int iParam2)//Position - 0x4325D
 {
-	if (!func_496() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_496() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}
@@ -58596,7 +58596,7 @@ void func_550(int iParam0, int iParam1)//Position - 0x468A4
 				case 104:
 					if (!PED::IS_PED_INJURED(Local_1371[3 /*14*/]))
 					{
-						if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[3 /*14*/], 1785177548) == 2)
+						if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[3 /*14*/], joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE")) == 2)
 						{
 							Local_1606[iVar3 /*7*/].f_2 = 1;
 						}
@@ -130521,7 +130521,7 @@ void func_963(int iParam0, bool bParam1)//Position - 0xA1365
 											}
 											Local_1390[iVar0 /*6*/].f_2++;
 										}
-										else if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[3 /*14*/], 1435919172) == 1)
+										else if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[3 /*14*/], joaat("SCRIPT_TASK_ANY")) == 1)
 										{
 											TASK::CLEAR_PED_TASKS_IMMEDIATELY(Local_1371[3 /*14*/]);
 										}
@@ -131516,7 +131516,7 @@ void func_963(int iParam0, bool bParam1)//Position - 0xA1365
 								case 5:
 									if (!PED::IS_PED_INJURED(Local_1371[15 /*14*/]))
 									{
-										if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[15 /*14*/], 936589729) == 7)
+										if (TASK::GET_SCRIPT_TASK_STATUS(Local_1371[15 /*14*/], joaat("SCRIPT_TASK_USE_MOBILE_PHONE")) == 7)
 										{
 											TASK::TASK_START_SCENARIO_IN_PLACE(Local_1371[15 /*14*/], "WORLD_HUMAN_STAND_MOBILE", 0, false);
 											Local_1390[iVar0 /*6*/].f_2 = 6;

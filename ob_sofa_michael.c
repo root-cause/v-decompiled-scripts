@@ -2508,11 +2508,11 @@ void func_51()//Position - 0x3074
 		case 1:
 			if (!CAM::DOES_CAM_EXIST(iLocal_325))
 			{
-				iLocal_325 = CAM::CREATE_CAMERA(26379945, false);
+				iLocal_325 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), false);
 			}
 			if (!CAM::DOES_CAM_EXIST(iLocal_326))
 			{
-				iLocal_326 = CAM::CREATE_CAMERA(26379945, false);
+				iLocal_326 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), false);
 			}
 			if (CAM::DOES_CAM_EXIST(iLocal_325) && CAM::DOES_CAM_EXIST(iLocal_326))
 			{

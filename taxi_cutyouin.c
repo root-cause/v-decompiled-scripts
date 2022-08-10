@@ -773,7 +773,7 @@ void func_9()//Position - 0x391
 					{
 						func_175(&Local_231, Local_246);
 					}
-					else if (TASK::GET_SCRIPT_TASK_STATUS(Local_231.f_3, 451360105) == 7)
+					else if (TASK::GET_SCRIPT_TASK_STATUS(Local_231.f_3, joaat("SCRIPT_TASK_LEAVE_VEHICLE")) == 7)
 					{
 						TASK::CLEAR_SEQUENCE_TASK(&iLocal_245);
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_245);
@@ -3884,13 +3884,13 @@ int func_108(var uParam0, bool bParam1)//Position - 0x49F4
 			{
 				if (func_111(uParam0, 2097152))
 				{
-					if (TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_3, 451360105) == 7)
+					if (TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_3, joaat("SCRIPT_TASK_LEAVE_VEHICLE")) == 7)
 					{
 						return 1;
 					}
 				}
 			}
-			else if (TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_3, 451360105) == 7)
+			else if (TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_3, joaat("SCRIPT_TASK_LEAVE_VEHICLE")) == 7)
 			{
 				return 1;
 			}
@@ -5019,7 +5019,7 @@ void func_167()//Position - 0x5E2B
 			
 			case 5:
 				func_168(&Local_231, 6);
-				if (TASK::GET_SCRIPT_TASK_STATUS(Local_231.f_3, 242628503) != 7)
+				if (TASK::GET_SCRIPT_TASK_STATUS(Local_231.f_3, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 7)
 				{
 					TASK::CLEAR_SEQUENCE_TASK(&iLocal_245);
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_245);
@@ -6081,7 +6081,7 @@ int func_216(var uParam0, bool bParam1, float fParam2)//Position - 0x7527
 			{
 				PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), true, 0);
 			}
-			if (TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_3, 2106541073) == 1 || TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_3, 2106541073) == 0)
+			if (TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_3, joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD")) == 1 || TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_3, joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD")) == 0)
 			{
 				TASK::CLEAR_PED_TASKS_IMMEDIATELY(uParam0->f_3);
 				uParam0->f_48 = 0;
@@ -6130,7 +6130,7 @@ int func_216(var uParam0, bool bParam1, float fParam2)//Position - 0x7527
 				switch (uParam0->f_48)
 				{
 					case 0:
-						if (TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_3, 242628503) != 1 || ((func_166(PLAYER::PLAYER_PED_ID(), uParam0->f_3, 1) < 20f && func_182(uParam0->f_3, uParam0->f_11, 1) <= 28f) && func_182(uParam0->f_4, uParam0->f_11, 1) <= 28f))
+						if (TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_3, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 || ((func_166(PLAYER::PLAYER_PED_ID(), uParam0->f_3, 1) < 20f && func_182(uParam0->f_3, uParam0->f_11, 1) <= 28f) && func_182(uParam0->f_4, uParam0->f_11, 1) <= 28f))
 						{
 							if (func_234(uParam0, fParam2))
 							{
@@ -6195,7 +6195,7 @@ int func_216(var uParam0, bool bParam1, float fParam2)//Position - 0x7527
 							{
 								TASK::CLEAR_PED_TASKS(uParam0->f_3);
 							}
-							else if (((TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_3, 242628503) != 1 && TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_3, 242628503) != 0) && TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_3, 242628503) != 7) && func_237(uParam0, uParam0->f_3) > 8f)
+							else if (((TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_3, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_3, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 0) && TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_3, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 7) && func_237(uParam0, uParam0->f_3) > 8f)
 							{
 								TASK::CLEAR_SEQUENCE_TASK(&(uParam0->f_243));
 								TASK::OPEN_SEQUENCE_TASK(&(uParam0->f_243));
@@ -6459,7 +6459,7 @@ int func_217(var uParam0)//Position - 0x7A3A
 				{
 					return 1;
 				}
-				else if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), -1794415470) != 1 && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), -1794415470) != 0)
+				else if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_ENTER_VEHICLE")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_ENTER_VEHICLE")) != 0)
 				{
 					TASK::TASK_ENTER_VEHICLE(uParam0->f_3, uParam0->f_4, 20000, uParam0->f_7, uParam0->f_6, 1, 0);
 				}
@@ -6522,7 +6522,7 @@ void func_221(var uParam0, struct<3> Param1, struct<3> Param2, float fParam3)//P
 {
 	if (!CAM::DOES_CAM_EXIST(*uParam0))
 	{
-		*uParam0 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Param1, Param2, fParam3, false, 2);
+		*uParam0 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Param1, Param2, fParam3, false, 2);
 	}
 }
 
@@ -6668,7 +6668,7 @@ void func_229(var uParam0)//Position - 0x8209
 		{
 			if (func_165(uParam0->f_3, 1) > 30f || func_230(uParam0))
 			{
-				if (TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_3, -1794415470) == 1 || TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_3, 242628503) == 1)
+				if (TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_3, joaat("SCRIPT_TASK_ENTER_VEHICLE")) == 1 || TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_3, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 1)
 				{
 					TASK::CLEAR_SEQUENCE_TASK(&iVar0);
 					TASK::OPEN_SEQUENCE_TASK(&iVar0);
@@ -6883,7 +6883,7 @@ int func_234(var uParam0, float fParam1)//Position - 0x8528
 					}
 				}
 			}
-			else if (TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_3, 242628503) != 1 && TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_3, 242628503) != 0)
+			else if (TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_3, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_3, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 0)
 			{
 				TASK::CLEAR_SEQUENCE_TASK(&(uParam0->f_243));
 				TASK::OPEN_SEQUENCE_TASK(&(uParam0->f_243));

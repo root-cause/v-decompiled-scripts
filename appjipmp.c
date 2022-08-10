@@ -294,7 +294,7 @@ void __EntryFunction__()//Position - 0x0
 			{
 				if (Global_262145.f_33608)
 				{
-					NETWORK::_0x023782EFC70585EE();
+					NETWORK::_NETWORK_BAIL_TRANSITION_QUICKMATCH();
 				}
 				if (bVar0)
 				{
@@ -1415,7 +1415,7 @@ int func_13(int iParam0)//Position - 0x1565
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;

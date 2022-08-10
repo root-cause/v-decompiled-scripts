@@ -2532,14 +2532,14 @@ void func_79(int iParam0, struct<3> Param1, var uParam2, float fParam3, float fP
 	{
 		if (func_125(PLAYER::PLAYER_ID()) || func_123(PLAYER::PLAYER_ID()))
 		{
-			if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(1344549371))
+			if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("DisableSpectateScript")))
 			{
-				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(1344549371);
+				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("DisableSpectateScript"));
 			}
 		}
-		else if (HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(1344549371))
+		else if (HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("DisableSpectateScript")))
 		{
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1344549371);
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DisableSpectateScript"));
 		}
 	}
 	if (fVar0 < fParam3)
@@ -75020,7 +75020,7 @@ void func_925()//Position - 0x4F0D1
 							{
 								if (PED::IS_PED_SITTING_IN_VEHICLE(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), NETWORK::NET_TO_VEH(Local_91.f_2[bVar0 /*26*/].f_2)))
 								{
-									if (TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), -258271821) != 1 && TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), -258271821) != 0)
+									if (TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), joaat("SCRIPT_TASK_VEHICLE_DRIVE_WANDER")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), joaat("SCRIPT_TASK_VEHICLE_DRIVE_WANDER")) != 0)
 									{
 										TASK::TASK_VEHICLE_DRIVE_WANDER(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), NETWORK::NET_TO_VEH(Local_91.f_2[bVar0 /*26*/].f_2), 20f, 786603);
 									}
@@ -75044,7 +75044,7 @@ void func_925()//Position - 0x4F0D1
 								{
 									if (PED::IS_PED_SITTING_IN_VEHICLE(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), NETWORK::NET_TO_VEH(Local_91.f_2[bVar0 /*26*/].f_2)))
 									{
-										if ((TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), -258271821) != 1 && TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), -258271821) != 0) || BitTest(Local_91.f_108, bVar0))
+										if ((TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), joaat("SCRIPT_TASK_VEHICLE_DRIVE_WANDER")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), joaat("SCRIPT_TASK_VEHICLE_DRIVE_WANDER")) != 0) || BitTest(Local_91.f_108, bVar0))
 										{
 											TASK::TASK_VEHICLE_DRIVE_WANDER(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), NETWORK::NET_TO_VEH(Local_91.f_2[bVar0 /*26*/].f_2), 30f, 786469);
 											if (BitTest(Local_91.f_108, bVar0))
@@ -75065,7 +75065,7 @@ void func_925()//Position - 0x4F0D1
 				{
 					if (!func_14(Local_91.f_2[bVar0 /*26*/].f_1))
 					{
-						if (TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), -828834893) != 1 && TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), -828834893) != 0)
+						if (TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")) != 0)
 						{
 							if (func_934(Local_91.f_2[bVar0 /*26*/].f_1))
 							{
@@ -75086,7 +75086,7 @@ void func_925()//Position - 0x4F0D1
 					{
 						if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 						{
-							if (TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), -1146898486) != 1 && TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), -1146898486) != 0)
+							if (TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), joaat("SCRIPT_TASK_WANDER_STANDARD")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), joaat("SCRIPT_TASK_WANDER_STANDARD")) != 0)
 							{
 								if (func_934(Local_91.f_2[bVar0 /*26*/].f_1))
 								{
@@ -75108,7 +75108,7 @@ void func_925()//Position - 0x4F0D1
 					{
 						if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 						{
-							if (TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), 1805844857) != 1 && TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), 1805844857) != 0)
+							if (TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), joaat("SCRIPT_TASK_SMART_FLEE_PED")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), joaat("SCRIPT_TASK_SMART_FLEE_PED")) != 0)
 							{
 								if (func_934(Local_91.f_2[bVar0 /*26*/].f_1))
 								{
@@ -75136,7 +75136,7 @@ void func_925()//Position - 0x4F0D1
 						{
 							PED::SET_PED_RESET_FLAG(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), 187, true);
 						}
-						iVar3 = TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), -1442466670);
+						iVar3 = TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), joaat("SCRIPT_TASK_COMBAT_HATED_TARGETS_AROUND_PED"));
 						if (iVar3 != 1 && iVar3 != 0)
 						{
 							if (func_934(Local_91.f_2[bVar0 /*26*/].f_1))
@@ -75161,7 +75161,7 @@ void func_925()//Position - 0x4F0D1
 						{
 							PED::SET_PED_RESET_FLAG(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), 187, true);
 						}
-						iVar3 = TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), 1910705116);
+						iVar3 = TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), joaat("SCRIPT_TASK_SEEK_COVER_FROM_PED"));
 						if (iVar3 != 1 && iVar3 != 0)
 						{
 							if (func_934(Local_91.f_2[bVar0 /*26*/].f_1))
@@ -75187,7 +75187,7 @@ void func_925()//Position - 0x4F0D1
 				{
 					if (!func_14(Local_91.f_2[bVar0 /*26*/].f_1))
 					{
-						iVar3 = TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), 993674639);
+						iVar3 = TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), joaat("SCRIPT_TASK_START_SCENARIO_IN_PLACE"));
 						if (iVar3 != 1 && iVar3 != 0)
 						{
 							if (func_934(Local_91.f_2[bVar0 /*26*/].f_1))
@@ -75219,7 +75219,7 @@ void func_925()//Position - 0x4F0D1
 					{
 						if (!func_14(Local_91.f_2[bVar0 /*26*/].f_3[iVar1]))
 						{
-							iVar3 = TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_3[iVar1]), 993674639);
+							iVar3 = TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_3[iVar1]), joaat("SCRIPT_TASK_START_SCENARIO_IN_PLACE"));
 							if (iVar3 != 1 && iVar3 != 0)
 							{
 								if (func_934(Local_91.f_2[bVar0 /*26*/].f_3[iVar1]))
@@ -75239,7 +75239,7 @@ void func_925()//Position - 0x4F0D1
 					{
 						if (!func_14(Local_91.f_2[bVar0 /*26*/].f_3[iVar1]))
 						{
-							iVar3 = TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_3[iVar1]), -1442466670);
+							iVar3 = TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_3[iVar1]), joaat("SCRIPT_TASK_COMBAT_HATED_TARGETS_AROUND_PED"));
 							if (iVar3 != 1 && iVar3 != 0)
 							{
 								if (func_934(Local_91.f_2[bVar0 /*26*/].f_3[iVar1]))
@@ -75260,7 +75260,7 @@ void func_925()//Position - 0x4F0D1
 					{
 						if (!func_14(Local_91.f_2[bVar0 /*26*/].f_3[iVar1]))
 						{
-							iVar3 = TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_3[iVar1]), -1442466670);
+							iVar3 = TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_3[iVar1]), joaat("SCRIPT_TASK_COMBAT_HATED_TARGETS_AROUND_PED"));
 							if (iVar3 != 1 && iVar3 != 0)
 							{
 								if (func_934(Local_91.f_2[bVar0 /*26*/].f_3[iVar1]))
@@ -75283,7 +75283,7 @@ void func_925()//Position - 0x4F0D1
 						{
 							if (PED::IS_PED_SITTING_IN_ANY_VEHICLE(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_3[iVar1])))
 							{
-								iVar3 = TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_3[iVar1]), -828834893);
+								iVar3 = TASK::GET_SCRIPT_TASK_STATUS(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_3[iVar1]), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE"));
 								if (iVar3 != 1 && iVar3 != 0)
 								{
 									if (func_934(Local_91.f_2[bVar0 /*26*/].f_3[iVar1]))

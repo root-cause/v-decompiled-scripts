@@ -570,12 +570,12 @@ void func_3()//Position - 0x39F
 						}
 					}
 				}
-				if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_299, -1519143300) != 1)
+				if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_299, joaat("SCRIPT_TASK_HANDS_UP")) != 1)
 				{
 					TASK::TASK_HANDS_UP(iLocal_299, -1, 0, -1, false);
 				}
 			}
-			else if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_299, -1519143300) == 1)
+			else if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_299, joaat("SCRIPT_TASK_HANDS_UP")) == 1)
 			{
 				TASK::CLEAR_PED_TASKS(iLocal_299);
 			}
@@ -47414,7 +47414,7 @@ int func_460(int iParam0, int iParam1)//Position - 0x375A1
 
 bool func_461()//Position - 0x37A20
 {
-	return DLC::IS_DLC_PRESENT(1199590110);
+	return DLC::IS_DLC_PRESENT(joaat("mpsum2"));
 }
 
 bool func_462()//Position - 0x37A31
@@ -48371,7 +48371,7 @@ int func_487(int iParam0, int iParam1)//Position - 0x38E0A
 
 int func_488(int iParam0, int iParam1, int iParam2)//Position - 0x38EEF
 {
-	if (!func_489() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_489() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}

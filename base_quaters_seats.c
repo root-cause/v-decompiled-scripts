@@ -377,11 +377,11 @@ void func_11(var uParam0)//Position - 0x219
 			func_40(uParam0, &sVar1);
 			if (Var2.f_0 == 3)
 			{
-				iVar6 = TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 1920390111);
+				iVar6 = TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_ACHIEVE_HEADING"));
 			}
 			else
 			{
-				iVar6 = TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 2106541073);
+				iVar6 = TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD"));
 			}
 			if (iVar6 != 1 && iVar6 != 0)
 			{

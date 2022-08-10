@@ -36846,7 +36846,7 @@ void func_261()//Position - 0x29449
 							{
 								if (!PED::IS_PED_IN_VEHICLE(Local_315[1 /*9*/], Local_312[0 /*6*/], false))
 								{
-									if (TASK::GET_SCRIPT_TASK_STATUS(Local_315[1 /*9*/], -1794415470) != 1)
+									if (TASK::GET_SCRIPT_TASK_STATUS(Local_315[1 /*9*/], joaat("SCRIPT_TASK_ENTER_VEHICLE")) != 1)
 									{
 										TASK::TASK_ENTER_VEHICLE(Local_315[1 /*9*/], Local_312[0 /*6*/], -1, 0, 2f, 1, 0);
 									}
@@ -36855,7 +36855,7 @@ void func_261()//Position - 0x29449
 						}
 						else if (!PED::IS_PED_IN_VEHICLE(Local_315[1 /*9*/], Local_312[0 /*6*/], false))
 						{
-							if (TASK::GET_SCRIPT_TASK_STATUS(Local_315[1 /*9*/], -1794415470) != 1)
+							if (TASK::GET_SCRIPT_TASK_STATUS(Local_315[1 /*9*/], joaat("SCRIPT_TASK_ENTER_VEHICLE")) != 1)
 							{
 								TASK::TASK_ENTER_VEHICLE(Local_315[1 /*9*/], Local_312[0 /*6*/], -1, 0, 2f, 1, 0);
 							}
@@ -39705,7 +39705,7 @@ int func_335(int iParam0, float fParam1, int iParam2)//Position - 0x2D44F
 			else if (iParam2 == 1)
 			{
 				iVar0 = 0;
-				if (!func_339(PLAYER::PLAYER_PED_ID(), -828834893))
+				if (!func_339(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")))
 				{
 					TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
 				}
@@ -47972,7 +47972,7 @@ void func_480(int iParam0, float fParam1, bool bParam2)//Position - 0x37A11
 							iVar1 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iLocal_170[iVar0], -1, false);
 							if (!PED::IS_PED_INJURED(iVar1))
 							{
-								iVar14 = TASK::GET_SCRIPT_TASK_STATUS(iVar1, 242628503);
+								iVar14 = TASK::GET_SCRIPT_TASK_STATUS(iVar1, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"));
 								if (iVar14 == 7)
 								{
 									fVar7 = ENTITY::GET_ENTITY_SPEED(iLocal_170[iVar0]);
@@ -54358,7 +54358,7 @@ int func_570(int iParam0, int iParam1)//Position - 0x4142E
 
 bool func_571()//Position - 0x418AD
 {
-	return DLC::IS_DLC_PRESENT(1199590110);
+	return DLC::IS_DLC_PRESENT(joaat("mpsum2"));
 }
 
 bool func_572()//Position - 0x418BE
@@ -57697,7 +57697,7 @@ int func_606(int iParam0, int iParam1)//Position - 0x462BE
 
 int func_607(int iParam0, int iParam1, int iParam2)//Position - 0x463A3
 {
-	if (!func_608() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_608() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}

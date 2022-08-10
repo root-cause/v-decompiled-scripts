@@ -817,7 +817,7 @@ void __EntryFunction__()//Position - 0x0
 														{
 															if (PED::IS_PED_IN_ANY_VEHICLE(iLocal_66[iVar3], false) && !PED::IS_PED_INJURED(iLocal_115))
 															{
-																TASK::TASK_DRIVE_BY(iLocal_66[iVar3], PLAYER::PLAYER_PED_ID(), 0, 0.3f, 0.7f, 1.9f, -1f, 15, false, -753768974);
+																TASK::TASK_DRIVE_BY(iLocal_66[iVar3], PLAYER::PLAYER_PED_ID(), 0, 0.3f, 0.7f, 1.9f, -1f, 15, false, joaat("FIRING_PATTERN_BURST_FIRE_DRIVEBY"));
 																iLocal_80[iVar3] = 1;
 															}
 															else if (!HUD::DOES_BLIP_EXIST(iLocal_121))

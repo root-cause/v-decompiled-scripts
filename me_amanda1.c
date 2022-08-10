@@ -1752,7 +1752,7 @@ void func_36()//Position - 0x1A50
 				}
 				if (PED::IS_PED_IN_ANY_VEHICLE(iLocal_296, false) && func_8(iVar0))
 				{
-					if (!func_52(iLocal_296, -828834893))
+					if (!func_52(iLocal_296, joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")))
 					{
 						if (VEHICLE::IS_VEHICLE_STOPPED(iVar0))
 						{
@@ -31578,7 +31578,7 @@ void func_197()//Position - 0x210A2
 				}
 				if (PED::IS_PED_IN_ANY_VEHICLE(iLocal_296, false) && func_8(iVar0))
 				{
-					if (!func_52(iLocal_296, 242628503))
+					if (!func_52(iLocal_296, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")))
 					{
 						if (VEHICLE::IS_VEHICLE_STOPPED(iVar0))
 						{
@@ -33745,7 +33745,7 @@ int func_268(int iParam0)//Position - 0x240CE
 
 void func_269()//Position - 0x24105
 {
-	if (func_546(iLocal_306) && !func_52(iLocal_306, 1805844857))
+	if (func_546(iLocal_306) && !func_52(iLocal_306, joaat("SCRIPT_TASK_SMART_FLEE_PED")))
 	{
 		if ((func_271(iLocal_306, 1090519040, 1097859072) || PED::IS_PED_SHOOTING(PLAYER::PLAYER_PED_ID())) || (func_546(iLocal_302) && PED::IS_PED_SHOOTING(iLocal_302)))
 		{
@@ -33775,7 +33775,7 @@ void func_270(bool bParam0)//Position - 0x241AF
 				TASK::TASK_ARREST_PED(iLocal_302, PLAYER::PLAYER_PED_ID());
 			}
 		}
-		else if (!func_52(iLocal_302, 1392476864))
+		else if (!func_52(iLocal_302, joaat("SCRIPT_TASK_ARREST_PED")))
 		{
 			TASK::TASK_ARREST_PED(iLocal_302, PLAYER::PLAYER_PED_ID());
 		}
@@ -34093,14 +34093,14 @@ void func_282()//Position - 0x2483F
 				ENTITY::FREEZE_ENTITY_POSITION(iLocal_298, false);
 				if ((func_8(iVar0) && PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), iVar0, false)) && VEHICLE::IS_VEHICLE_SEAT_FREE(iVar0, 0, false))
 				{
-					if (!func_52(iLocal_296, -1794415470))
+					if (!func_52(iLocal_296, joaat("SCRIPT_TASK_ENTER_VEHICLE")))
 					{
 						TASK::TASK_ENTER_VEHICLE(iLocal_296, iVar0, 20000, 0, 3f, 1, 0);
 					}
 				}
 				else if (func_219(iLocal_296, PLAYER::PLAYER_PED_ID()) > 10f)
 				{
-					if (!func_52(iLocal_296, 1227113341))
+					if (!func_52(iLocal_296, joaat("SCRIPT_TASK_GO_TO_ENTITY")))
 					{
 						TASK::TASK_GO_TO_ENTITY(iLocal_296, PLAYER::PLAYER_PED_ID(), 20000, 7f, 2f, 2f, 0);
 					}
@@ -34563,7 +34563,7 @@ void func_298()//Position - 0x251B0
 			iLocal_332 = -1;
 			if ((((func_546(iLocal_302) && !FIRE::IS_ENTITY_ON_FIRE(iLocal_302)) && !TASK::IS_PED_GETTING_UP(iLocal_302)) && !PED::IS_PED_PRONE(iLocal_302)) && !PED::IS_PED_RAGDOLL(iLocal_302))
 			{
-				if (!func_52(iLocal_302, 1392476864))
+				if (!func_52(iLocal_302, joaat("SCRIPT_TASK_ARREST_PED")))
 				{
 					if (ENTITY::IS_ENTITY_PLAYING_ANIM(iLocal_302, sLocal_277, sLocal_228, 2) || ENTITY::IS_ENTITY_PLAYING_ANIM(iLocal_302, sLocal_277, sLocal_232, 2))
 					{
@@ -34763,7 +34763,7 @@ void func_303()//Position - 0x25640
 				{
 					ENTITY::STOP_SYNCHRONIZED_ENTITY_ANIM(iLocal_302, -8f, true);
 				}
-				if (!PED::IS_PED_IN_COMBAT(iLocal_302, 0) && !func_52(iLocal_302, 1392476864))
+				if (!PED::IS_PED_IN_COMBAT(iLocal_302, 0) && !func_52(iLocal_302, joaat("SCRIPT_TASK_ARREST_PED")))
 				{
 					func_238();
 					PED::SET_PED_CAN_SWITCH_WEAPON(iLocal_302, true);
@@ -35150,7 +35150,7 @@ void func_311()//Position - 0x263CE
 		if (PED::IS_PED_IN_VEHICLE(iLocal_302, iLocal_298, false))
 		{
 			ENTITY::FREEZE_ENTITY_POSITION(iLocal_298, false);
-			if (func_52(iLocal_302, -258271821))
+			if (func_52(iLocal_302, joaat("SCRIPT_TASK_VEHICLE_DRIVE_WANDER")))
 			{
 				if (MISC::GET_GAME_TIMER() > iLocal_286)
 				{
@@ -48563,7 +48563,7 @@ int func_486(int iParam0, int iParam1)//Position - 0x39AE6
 
 bool func_487()//Position - 0x39F65
 {
-	return DLC::IS_DLC_PRESENT(1199590110);
+	return DLC::IS_DLC_PRESENT(joaat("mpsum2"));
 }
 
 bool func_488()//Position - 0x39F76
@@ -49267,7 +49267,7 @@ int func_507(int iParam0, int iParam1)//Position - 0x3AD10
 
 int func_508(int iParam0, int iParam1, int iParam2)//Position - 0x3ADF5
 {
-	if (!func_509() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_509() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}

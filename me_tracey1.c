@@ -42521,7 +42521,7 @@ int func_392(int iParam0, int iParam1)//Position - 0x2FB1F
 
 int func_393(int iParam0, int iParam1, int iParam2)//Position - 0x2FEFE
 {
-	if (!func_394() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_394() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}
@@ -51921,7 +51921,7 @@ int func_535(int iParam0, int iParam1)//Position - 0x3D171
 
 bool func_536()//Position - 0x3D5F0
 {
-	return DLC::IS_DLC_PRESENT(1199590110);
+	return DLC::IS_DLC_PRESENT(joaat("mpsum2"));
 }
 
 bool func_537()//Position - 0x3D601

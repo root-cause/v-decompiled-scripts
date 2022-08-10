@@ -46784,7 +46784,7 @@ void func_491()//Position - 0x32004
 			{
 				GRAPHICS::SET_TV_CHANNEL(1);
 			}
-			if (GRAPHICS::_IS_TV_PLAYLIST_ITEM_PLAYING(1278133276))
+			if (GRAPHICS::_IS_TV_PLAYLIST_ITEM_PLAYING(joaat("END_OF_MOVIE_MARKER2")))
 			{
 				func_501(func_502(), &sVar2);
 				GRAPHICS::SET_TV_CHANNEL_PLAYLIST(1, &sVar2, true);
@@ -47931,7 +47931,7 @@ int func_544(int iParam0)//Position - 0x332E7
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;

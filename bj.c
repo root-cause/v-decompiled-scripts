@@ -1801,7 +1801,7 @@ void __EntryFunction__()//Position - 0x0
 							{
 								Var115 = { -819.7591f, -1512.229f, 0.1336f };
 							}
-							if (TASK::GET_SCRIPT_TASK_STATUS(iVar43, -1273030092) != 1)
+							if (TASK::GET_SCRIPT_TASK_STATUS(iVar43, joaat("SCRIPT_TASK_VEHICLE_MISSION")) != 1)
 							{
 								if (bVar13 == 5)
 								{
@@ -1862,7 +1862,7 @@ void __EntryFunction__()//Position - 0x0
 				}
 				if (ENTITY::DOES_ENTITY_EXIST(iVar43) && !ENTITY::IS_ENTITY_DEAD(iVar43, false))
 				{
-					if (TASK::GET_SCRIPT_TASK_STATUS(iVar43, -982327190) != 0 && TASK::GET_SCRIPT_TASK_STATUS(iVar43, -982327190) != 1)
+					if (TASK::GET_SCRIPT_TASK_STATUS(iVar43, joaat("SCRIPT_TASK_STAND_STILL")) != 0 && TASK::GET_SCRIPT_TASK_STATUS(iVar43, joaat("SCRIPT_TASK_STAND_STILL")) != 1)
 					{
 						TASK::CLEAR_PED_TASKS(iVar43);
 						TASK::TASK_STAND_STILL(iVar43, -1);
@@ -25871,7 +25871,7 @@ void func_477(var uParam0, var uParam1, bool bParam2, bool bParam3)//Position - 
 	fVar2 = func_483(uParam1);
 	if (!CAM::DOES_CAM_EXIST(func_433(uParam0, 0)))
 	{
-		func_482(uParam0, 0, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, Var1, 65f, false, 2), 1);
+		func_482(uParam0, 0, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, Var1, 65f, false, 2), 1);
 	}
 	else
 	{
@@ -25891,7 +25891,7 @@ void func_477(var uParam0, var uParam1, bool bParam2, bool bParam3)//Position - 
 	fVar2 = func_478(uParam1);
 	if (!CAM::DOES_CAM_EXIST(func_433(uParam0, 1)))
 	{
-		func_482(uParam0, 1, CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var0, Var1, 65f, false, 2), 1);
+		func_482(uParam0, 1, CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, Var1, 65f, false, 2), 1);
 	}
 	else
 	{

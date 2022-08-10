@@ -36193,7 +36193,7 @@ int func_263(int iParam0, float fParam1, int iParam2)//Position - 0x28EBC
 			else if (iParam2 == 1)
 			{
 				iVar0 = 0;
-				if (!func_266(PLAYER::PLAYER_PED_ID(), -828834893))
+				if (!func_266(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")))
 				{
 					TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
 				}
@@ -36354,7 +36354,7 @@ void func_270()//Position - 0x2920C
 {
 	if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 	{
-		if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 713668775) == 1)
+		if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) == 1)
 		{
 			if (((((((PAD::IS_CONTROL_PRESSED(0, 30) || PAD::IS_CONTROL_PRESSED(0, 31)) || PAD::IS_CONTROL_PRESSED(0, 23)) || PAD::IS_CONTROL_PRESSED(0, 21)) || PAD::IS_CONTROL_PRESSED(0, 22)) || (func_282() && PAD::IS_CONTROL_PRESSED(0, 1))) || (func_282() && PAD::IS_CONTROL_PRESSED(0, 2))) || (func_282() && PAD::IS_CONTROL_PRESSED(0, 32)))
 			{
@@ -36494,7 +36494,7 @@ void func_271()//Position - 0x2954A
 {
 	if (func_320(Local_91.f_0))
 	{
-		if (TASK::GET_SCRIPT_TASK_STATUS(Local_91.f_0, 242628503) != 1)
+		if (TASK::GET_SCRIPT_TASK_STATUS(Local_91.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1)
 		{
 			TASK::TASK_PERFORM_SEQUENCE(Local_91.f_0, iLocal_95);
 		}
@@ -36842,7 +36842,7 @@ void func_284()//Position - 0x29B44
 	}
 	if (func_320(Local_91.f_0))
 	{
-		if (TASK::GET_SCRIPT_TASK_STATUS(Local_91.f_0, 242628503) != 1)
+		if (TASK::GET_SCRIPT_TASK_STATUS(Local_91.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1)
 		{
 			TASK::OPEN_SEQUENCE_TASK(&iLocal_95);
 			TASK::TASK_PLAY_ANIM(0, "rcmextreme4", "idle", 8f, -8f, -1, 0, 0f, false, false, false);
@@ -37157,7 +37157,7 @@ int func_296(int iParam0, float fParam1, int iParam2)//Position - 0x2A3B1
 			else if (iParam2 == 1)
 			{
 				iVar0 = 0;
-				if (!func_266(PLAYER::PLAYER_PED_ID(), -828834893))
+				if (!func_266(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")))
 				{
 					TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
 				}

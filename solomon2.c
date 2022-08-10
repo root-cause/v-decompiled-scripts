@@ -31179,7 +31179,7 @@ int func_184(int iParam0, float fParam1, int iParam2)//Position - 0x20B08
 			else if (iParam2 == 1)
 			{
 				iVar0 = 0;
-				if (!func_187(PLAYER::PLAYER_PED_ID(), -828834893))
+				if (!func_187(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")))
 				{
 					TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
 				}
@@ -35026,7 +35026,7 @@ int func_240()//Position - 0x265FB
 			break;
 		
 		case 1:
-			iLocal_208 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, -1017f, -483.5f, 40.7f, 49.6f, 0f, -78.9f, 50f, false, 2);
+			iLocal_208 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), -1017f, -483.5f, 40.7f, 49.6f, 0f, -78.9f, 50f, false, 2);
 			CAM::SHAKE_CAM(iLocal_208, "hand_shake", 0.5f);
 			CAM::SET_CAM_ACTIVE(iLocal_208, true);
 			CAM::RENDER_SCRIPT_CAMS(true, true, 3500, true, true, 0);
@@ -42898,7 +42898,7 @@ void func_388()//Position - 0x31048
 		switch (iLocal_95)
 		{
 			case 1:
-				if (!func_187(Local_230.f_0, 2104565373))
+				if (!func_187(Local_230.f_0, joaat("SCRIPT_TASK_DRIVE_BY")))
 				{
 					iLocal_95 = 2;
 				}
@@ -42914,7 +42914,7 @@ void func_388()//Position - 0x31048
 				}
 				else if (func_384(Local_230.f_0, PLAYER::PLAYER_PED_ID(), 20f, 1))
 				{
-					TASK::TASK_DRIVE_BY(Local_230.f_0, PLAYER::PLAYER_PED_ID(), 0, Local_209, 35f, 65, false, -753768974);
+					TASK::TASK_DRIVE_BY(Local_230.f_0, PLAYER::PLAYER_PED_ID(), 0, Local_209, 35f, 65, false, joaat("FIRING_PATTERN_BURST_FIRE_DRIVEBY"));
 				}
 				break;
 			
@@ -43077,7 +43077,7 @@ void func_392()//Position - 0x312ED
 				break;
 			
 			case 5:
-				if (PED::IS_PED_IN_ANY_VEHICLE(Local_229.f_0, false) && !func_187(Local_229.f_0, -828834893))
+				if (PED::IS_PED_IN_ANY_VEHICLE(Local_229.f_0, false) && !func_187(Local_229.f_0, joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")))
 				{
 					TASK::TASK_LEAVE_ANY_VEHICLE(Local_229.f_0, 0, 0);
 				}
@@ -43180,7 +43180,7 @@ void func_396(int iParam0, bool bParam1)//Position - 0x3165C
 {
 	if (func_460(iParam0))
 	{
-		if (!func_187(iParam0, 1805844857))
+		if (!func_187(iParam0, joaat("SCRIPT_TASK_SMART_FLEE_PED")))
 		{
 			ENTITY::FREEZE_ENTITY_POSITION(iParam0, false);
 			if (bParam1)

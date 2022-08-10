@@ -384,7 +384,7 @@ void func_1()//Position - 0x11F
 					}
 					else if (func_17(iLocal_58))
 					{
-						if (!func_2(iLocal_58, 1805844857))
+						if (!func_2(iLocal_58, joaat("SCRIPT_TASK_SMART_FLEE_PED")))
 						{
 							if (!PED::IS_PED_FLEEING(iLocal_58))
 							{
@@ -537,7 +537,7 @@ int func_10()//Position - 0x476
 					iLocal_50 = PED::CREATE_SYNCHRONIZED_SCENE(2727.4f, 4145.56f, 43.68f, 0f, 0f, -92.17f, 2);
 					PED::SET_SYNCHRONIZED_SCENE_LOOPED(iLocal_50, false);
 					PED::SET_SYNCHRONIZED_SCENE_HOLD_LAST_FRAME(iLocal_50, false);
-					if (func_2(iLocal_58, 1785177548))
+					if (func_2(iLocal_58, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE")))
 					{
 						ENTITY::STOP_SYNCHRONIZED_ENTITY_ANIM(iLocal_58, -1000f, true);
 					}
@@ -41046,7 +41046,7 @@ int func_347(int iParam0, float fParam1, int iParam2)//Position - 0x30064
 			else if (iParam2 == 1)
 			{
 				iVar0 = 0;
-				if (!func_2(PLAYER::PLAYER_PED_ID(), -828834893))
+				if (!func_2(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")))
 				{
 					TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
 				}
@@ -41259,7 +41259,7 @@ void func_356()//Position - 0x3050D
 		{
 			if (func_350(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false), 10.5f, 1, 1056964608, 0, 1, 0))
 			{
-				if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), -828834893) != 1)
+				if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")) != 1)
 				{
 					TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
 				}
@@ -44577,7 +44577,7 @@ int func_400(int iParam0, int iParam1)//Position - 0x34B79
 
 bool func_401()//Position - 0x34FF8
 {
-	return DLC::IS_DLC_PRESENT(1199590110);
+	return DLC::IS_DLC_PRESENT(joaat("mpsum2"));
 }
 
 bool func_402()//Position - 0x35009
@@ -45281,7 +45281,7 @@ int func_421(int iParam0, int iParam1)//Position - 0x35DA5
 
 int func_422(int iParam0, int iParam1, int iParam2)//Position - 0x35E8A
 {
-	if (!func_423() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_423() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}

@@ -95373,7 +95373,7 @@ void func_478()//Position - 0x6EAF2
 		}
 		if (!PED::IS_PED_INJURED(uLocal_194[0]))
 		{
-			if (TASK::GET_SCRIPT_TASK_STATUS(uLocal_194[0], 713668775) != 1)
+			if (TASK::GET_SCRIPT_TASK_STATUS(uLocal_194[0], joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1)
 			{
 				if (SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(uLocal_194[0], true), -587.9527f, 5181.299f, 94.6509f) > 4f && !MISC::IS_AREA_OCCUPIED(Vector(94.6509f, 5181.299f, -587.9527f) - Vector(1f, 1f, 1f), Vector(94.6509f, 5181.299f, -587.9527f) + Vector(1f, 1f, 1f), false, true, false, false, false, 0, false))
 				{
@@ -95386,7 +95386,7 @@ void func_478()//Position - 0x6EAF2
 		}
 		if (!PED::IS_PED_INJURED(uLocal_194[2]))
 		{
-			if (TASK::GET_SCRIPT_TASK_STATUS(uLocal_194[2], 713668775) != 1)
+			if (TASK::GET_SCRIPT_TASK_STATUS(uLocal_194[2], joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1)
 			{
 				if (SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(uLocal_194[2], true), -575.8129f, 5271.753f, 69.2686f) > 4f && !MISC::IS_AREA_OCCUPIED(Vector(69.2686f, 5271.753f, -575.8129f) - Vector(1f, 0.5f, 0.5f), Vector(69.2686f, 5271.753f, -575.8129f) + Vector(1f, 0.5f, 0.5f), false, true, false, false, false, 0, false))
 				{
@@ -96431,7 +96431,7 @@ void func_483()//Position - 0x6FCCB
 								{
 									if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_289[iVar0 /*21*/], PLAYER::PLAYER_PED_ID(), true) || SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(Local_289[iVar0 /*21*/], true), Var2) < 10f)
 									{
-										if (TASK::GET_SCRIPT_TASK_STATUS(Local_289[iVar0 /*21*/], -1442466670) != 1)
+										if (TASK::GET_SCRIPT_TASK_STATUS(Local_289[iVar0 /*21*/], joaat("SCRIPT_TASK_COMBAT_HATED_TARGETS_AROUND_PED")) != 1)
 										{
 											TASK::TASK_COMBAT_HATED_TARGETS_AROUND_PED(Local_289[iVar0 /*21*/], 200f, 0);
 											PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_289[iVar0 /*21*/], false);
@@ -97050,7 +97050,7 @@ void func_500()//Position - 0x72505
 	else if (!PED::IS_PED_INJURED(Local_267.f_0))
 	{
 		Var3 = { ENTITY::GET_ENTITY_COORDS(Local_267.f_0, true) };
-		bVar5 = (PED::IS_PED_IN_COMBAT(Local_267.f_0, 0) || TASK::GET_SCRIPT_TASK_STATUS(Local_267.f_0, -1442466670) == 1);
+		bVar5 = (PED::IS_PED_IN_COMBAT(Local_267.f_0, 0) || TASK::GET_SCRIPT_TASK_STATUS(Local_267.f_0, joaat("SCRIPT_TASK_COMBAT_HATED_TARGETS_AROUND_PED")) == 1);
 		if (!PED::IS_PED_INJURED(uLocal_194[1]))
 		{
 			Var8 = { Local_264.f_11 };
@@ -97256,7 +97256,7 @@ void func_500()//Position - 0x72505
 					}
 				}
 				fVar6 = SYSTEM::VDIST2(Var3, Local_267.f_11);
-				if (Local_267.f_7 || (TASK::GET_SCRIPT_TASK_STATUS(Local_267.f_0, 242628503) != 1 && (fVar6 > 4f || !bVar5)))
+				if (Local_267.f_7 || (TASK::GET_SCRIPT_TASK_STATUS(Local_267.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar6 > 4f || !bVar5)))
 				{
 					PED::SET_PED_SPHERE_DEFENSIVE_AREA(Local_267.f_0, Local_267.f_11, 2f, true, false);
 					TASK::OPEN_SEQUENCE_TASK(&iVar7);
@@ -97297,7 +97297,7 @@ void func_500()//Position - 0x72505
 					}
 				}
 				fVar6 = SYSTEM::VDIST2(Var3, Local_267.f_11);
-				if (Local_267.f_7 || (TASK::GET_SCRIPT_TASK_STATUS(Local_267.f_0, 242628503) != 1 && (fVar6 > 4f || !bVar5)))
+				if (Local_267.f_7 || (TASK::GET_SCRIPT_TASK_STATUS(Local_267.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar6 > 4f || !bVar5)))
 				{
 					PED::SET_PED_SPHERE_DEFENSIVE_AREA(Local_267.f_0, Local_267.f_11, 2f, true, false);
 					TASK::OPEN_SEQUENCE_TASK(&iVar7);
@@ -97385,7 +97385,7 @@ void func_500()//Position - 0x72505
 					}
 				}
 				fVar6 = SYSTEM::VDIST2(Var3, Local_267.f_11);
-				if (Local_267.f_7 || (TASK::GET_SCRIPT_TASK_STATUS(Local_267.f_0, 242628503) != 1 && (fVar6 > 4f || !bVar5)))
+				if (Local_267.f_7 || (TASK::GET_SCRIPT_TASK_STATUS(Local_267.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar6 > 4f || !bVar5)))
 				{
 					PED::SET_PED_SPHERE_DEFENSIVE_AREA(Local_267.f_0, Local_267.f_11, 2f, true, false);
 					TASK::OPEN_SEQUENCE_TASK(&iVar7);
@@ -97457,7 +97457,7 @@ void func_500()//Position - 0x72505
 					}
 				}
 				fVar6 = SYSTEM::VDIST2(Var3, Local_267.f_11);
-				if (Local_267.f_7 || (TASK::GET_SCRIPT_TASK_STATUS(Local_267.f_0, 242628503) != 1 && (fVar6 > 4f || !bVar5)))
+				if (Local_267.f_7 || (TASK::GET_SCRIPT_TASK_STATUS(Local_267.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar6 > 4f || !bVar5)))
 				{
 					PED::SET_PED_SPHERE_DEFENSIVE_AREA(Local_267.f_0, Local_267.f_11, 2f, true, false);
 					TASK::OPEN_SEQUENCE_TASK(&iVar7);
@@ -97503,7 +97503,7 @@ void func_500()//Position - 0x72505
 					}
 				}
 				fVar6 = SYSTEM::VDIST2(Var3, Local_267.f_11);
-				if (Local_267.f_7 || (TASK::GET_SCRIPT_TASK_STATUS(Local_267.f_0, 242628503) != 1 && (fVar6 > 4f || !bVar5)))
+				if (Local_267.f_7 || (TASK::GET_SCRIPT_TASK_STATUS(Local_267.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar6 > 4f || !bVar5)))
 				{
 					PED::SET_PED_SPHERE_DEFENSIVE_AREA(Local_267.f_0, Local_267.f_11, 2f, true, false);
 					TASK::OPEN_SEQUENCE_TASK(&iVar7);
@@ -97567,7 +97567,7 @@ void func_500()//Position - 0x72505
 			
 			case 57:
 				fVar6 = SYSTEM::VDIST2(Var3, Local_267.f_11);
-				if (Local_267.f_7 || (TASK::GET_SCRIPT_TASK_STATUS(Local_267.f_0, 242628503) != 1 && (fVar6 > 4f || !bVar5)))
+				if (Local_267.f_7 || (TASK::GET_SCRIPT_TASK_STATUS(Local_267.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar6 > 4f || !bVar5)))
 				{
 					PED::SET_PED_SPHERE_DEFENSIVE_AREA(Local_267.f_0, Local_267.f_11, 2f, true, false);
 					TASK::OPEN_SEQUENCE_TASK(&iVar7);
@@ -99850,7 +99850,7 @@ int func_560(int* iParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 									{
 										PED::REMOVE_PED_FROM_GROUP(iParam0->f_17[iVar0]);
 									}
-									if (TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], -1794415470) == 7 && !func_575(iParam0->f_17[iVar0], iParam0->f_21))
+									if (TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], joaat("SCRIPT_TASK_ENTER_VEHICLE")) == 7 && !func_575(iParam0->f_17[iVar0], iParam0->f_21))
 									{
 										if (!PED::IS_PED_RAGDOLL(iParam0->f_17[iVar0]) && !TASK::IS_PED_GETTING_UP(iParam0->f_17[iVar0]))
 										{
@@ -100129,7 +100129,7 @@ int func_560(int* iParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 							{
 								if (((!PED::IS_PED_RAGDOLL(iParam0->f_17[iVar0]) && !TASK::IS_PED_GETTING_UP(iParam0->f_17[iVar0])) && !PED::IS_PED_JUMPING_OUT_OF_VEHICLE(iParam0->f_17[iVar0])) && !PED::IS_PED_GETTING_INTO_A_VEHICLE(iParam0->f_17[iVar0]))
 								{
-									iVar11 = TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], -1794415470);
+									iVar11 = TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 									if (iVar11 == 7)
 									{
 										TASK::CLEAR_PED_TASKS(iParam0->f_17[iVar0]);
@@ -100187,7 +100187,7 @@ int func_560(int* iParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 										{
 											if (func_550(iParam0->f_17[iVar0]))
 											{
-												iVar11 = TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], 451360105);
+												iVar11 = TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], joaat("SCRIPT_TASK_LEAVE_VEHICLE"));
 												if (iVar11 == 7)
 												{
 													TASK::TASK_LEAVE_ANY_VEHICLE(iParam0->f_17[iVar0], 0, 0);
@@ -100205,7 +100205,7 @@ int func_560(int* iParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 											PED::REMOVE_PED_FROM_GROUP(iParam0->f_17[iVar0]);
 										}
 									}
-									iVar11 = TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], -1794415470);
+									iVar11 = TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 									if (iVar11 == 7 && !func_575(iParam0->f_17[iVar0], iParam10))
 									{
 										if (((((!PED::IS_PED_JUMPING_OUT_OF_VEHICLE(iParam0->f_17[iVar0]) && !PED::IS_PED_JUMPING_OUT_OF_VEHICLE(PLAYER::PLAYER_PED_ID())) && !func_565(iParam0->f_17[iVar0], 2f)) && !PED::IS_PED_RAGDOLL(iParam0->f_17[iVar0])) && !TASK::IS_PED_GETTING_UP(iParam0->f_17[iVar0])) && !FIRE::IS_ENTITY_ON_FIRE(iParam10))
@@ -100233,7 +100233,7 @@ int func_560(int* iParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 								{
 									if (!PED::IS_PED_RAGDOLL(iParam0->f_17[iVar0]) && !TASK::IS_PED_GETTING_UP(iParam0->f_17[iVar0]))
 									{
-										iVar11 = TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], -1794415470);
+										iVar11 = TASK::GET_SCRIPT_TASK_STATUS(iParam0->f_17[iVar0], joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 										if (iVar11 == 7)
 										{
 											TASK::CLEAR_PED_TASKS(iParam0->f_17[iVar0]);
@@ -113122,7 +113122,7 @@ int func_707(int iParam0, int iParam1)//Position - 0x8C347
 
 int func_708(int iParam0, int iParam1, int iParam2)//Position - 0x8C726
 {
-	if (!func_709() && VEHICLE::_0x00834EAC4A96E010(iParam0, iParam1, iParam2))
+	if (!func_709() && VEHICLE::_IS_VEHICLE_MOD_HSW_EXCLUSIVE(iParam0, iParam1, iParam2))
 	{
 		return 1;
 	}
@@ -116138,7 +116138,7 @@ int func_752(int iParam0, int iParam1)//Position - 0x90803
 
 bool func_753()//Position - 0x90C82
 {
-	return DLC::IS_DLC_PRESENT(1199590110);
+	return DLC::IS_DLC_PRESENT(joaat("mpsum2"));
 }
 
 bool func_754()//Position - 0x90C93
@@ -118111,7 +118111,7 @@ void func_817()//Position - 0x93683
 				func_822(&(uLocal_194[1]), &Local_264);
 			}
 			Var2 = { ENTITY::GET_ENTITY_COORDS(uLocal_194[1], true) };
-			if (TASK::GET_SCRIPT_TASK_STATUS(uLocal_194[1], 242628503) == 1 && !PED::IS_PED_IN_COMBAT(uLocal_194[1], 0))
+			if (TASK::GET_SCRIPT_TASK_STATUS(uLocal_194[1], joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 1 && !PED::IS_PED_IN_COMBAT(uLocal_194[1], 0))
 			{
 				iLocal_118 = MISC::GET_GAME_TIMER();
 			}
@@ -118214,7 +118214,7 @@ void func_817()//Position - 0x93683
 				func_822(&(uLocal_194[2]), &Local_258);
 			}
 			Var4 = { ENTITY::GET_ENTITY_COORDS(uLocal_194[2], true) };
-			if (TASK::GET_SCRIPT_TASK_STATUS(uLocal_194[2], 242628503) == 1 && !PED::IS_PED_IN_COMBAT(uLocal_194[2], 0))
+			if (TASK::GET_SCRIPT_TASK_STATUS(uLocal_194[2], joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 1 && !PED::IS_PED_IN_COMBAT(uLocal_194[2], 0))
 			{
 				iLocal_119 = MISC::GET_GAME_TIMER();
 			}
@@ -118355,7 +118355,7 @@ void func_819(var uParam0, var uParam1)//Position - 0x93CF6
 	{
 		Var0 = { ENTITY::GET_ENTITY_COORDS(*uParam0, true) };
 		bVar2 = false;
-		bVar3 = (PED::IS_PED_IN_COMBAT(*uParam0, 0) || TASK::GET_SCRIPT_TASK_STATUS(*uParam0, -1442466670) == 1);
+		bVar3 = (PED::IS_PED_IN_COMBAT(*uParam0, 0) || TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_COMBAT_HATED_TARGETS_AROUND_PED")) == 1);
 		if (*uParam0 == uLocal_194[2])
 		{
 			Var5 = { Local_264.f_11 };
@@ -118478,7 +118478,7 @@ void func_819(var uParam0, var uParam1)//Position - 0x93CF6
 					}
 				}
 				fVar1 = SYSTEM::VDIST2(Var0, uParam1->f_11);
-				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) != 1 && (fVar1 > 4f || !bVar3)))
+				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar1 > 4f || !bVar3)))
 				{
 					if (!func_505(Var6[0 /*3*/], uParam1->f_11, 1056964608, 0) && !func_505(Var7[0 /*3*/], uParam1->f_11, 1056964608, 0))
 					{
@@ -118533,7 +118533,7 @@ void func_819(var uParam0, var uParam1)//Position - 0x93CF6
 					}
 				}
 				fVar1 = SYSTEM::VDIST2(Var0, uParam1->f_11);
-				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) != 1 && (fVar1 > 4f || !bVar3)))
+				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar1 > 4f || !bVar3)))
 				{
 					if (func_505(uParam1->f_11, Var6[1 /*3*/], 1056964608, 0))
 					{
@@ -118624,7 +118624,7 @@ void func_819(var uParam0, var uParam1)//Position - 0x93CF6
 					}
 				}
 				fVar1 = SYSTEM::VDIST2(Var0, uParam1->f_11);
-				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) != 1 && (fVar1 > 4f || !bVar3)))
+				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar1 > 4f || !bVar3)))
 				{
 					if (func_505(uParam1->f_11, Var6[2 /*3*/], 1056964608, 0))
 					{
@@ -118703,7 +118703,7 @@ void func_819(var uParam0, var uParam1)//Position - 0x93CF6
 					}
 				}
 				fVar1 = SYSTEM::VDIST2(Var0, uParam1->f_11);
-				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) != 1 && (fVar1 > 4f || !bVar3)))
+				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar1 > 4f || !bVar3)))
 				{
 					if (func_505(uParam1->f_11, Var6[3 /*3*/], 1056964608, 0))
 					{
@@ -118768,7 +118768,7 @@ void func_819(var uParam0, var uParam1)//Position - 0x93CF6
 			
 			case 4:
 				fVar1 = SYSTEM::VDIST2(Var0, uParam1->f_11);
-				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) != 1 && (fVar1 > 4f || !bVar3)))
+				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar1 > 4f || !bVar3)))
 				{
 					PED::SET_PED_SPHERE_DEFENSIVE_AREA(*uParam0, uParam1->f_11, 2f, true, false);
 					TASK::OPEN_SEQUENCE_TASK(&iVar4);
@@ -118866,7 +118866,7 @@ void func_822(var uParam0, var uParam1)//Position - 0x94C02
 	{
 		Var0 = { ENTITY::GET_ENTITY_COORDS(*uParam0, true) };
 		bVar2 = false;
-		bVar3 = (PED::IS_PED_IN_COMBAT(*uParam0, 0) || TASK::GET_SCRIPT_TASK_STATUS(*uParam0, -1442466670) == 1);
+		bVar3 = (PED::IS_PED_IN_COMBAT(*uParam0, 0) || TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_COMBAT_HATED_TARGETS_AROUND_PED")) == 1);
 		if (*uParam0 == uLocal_194[2])
 		{
 			Var5 = { Local_264.f_11 };
@@ -118998,7 +118998,7 @@ void func_822(var uParam0, var uParam1)//Position - 0x94C02
 					}
 				}
 				fVar1 = SYSTEM::VDIST2(Var0, uParam1->f_11);
-				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) != 1 && (fVar1 > 4f || !bVar3)))
+				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar1 > 4f || !bVar3)))
 				{
 					if (!func_505(Var6[0 /*3*/], uParam1->f_11, 1056964608, 0) && !func_505(Var7[0 /*3*/], uParam1->f_11, 1056964608, 0))
 					{
@@ -119058,7 +119058,7 @@ void func_822(var uParam0, var uParam1)//Position - 0x94C02
 					}
 				}
 				fVar1 = SYSTEM::VDIST2(Var0, uParam1->f_11);
-				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) != 1 && (fVar1 > 4f || !bVar3)))
+				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar1 > 4f || !bVar3)))
 				{
 					if (func_505(uParam1->f_11, Var6[1 /*3*/], 1056964608, 0))
 					{
@@ -119129,7 +119129,7 @@ void func_822(var uParam0, var uParam1)//Position - 0x94C02
 					}
 				}
 				fVar1 = SYSTEM::VDIST2(Var0, uParam1->f_11);
-				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) != 1 && (fVar1 > 4f || !bVar3)))
+				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar1 > 4f || !bVar3)))
 				{
 					if (func_505(uParam1->f_11, Var6[2 /*3*/], 1056964608, 0))
 					{
@@ -119185,7 +119185,7 @@ void func_822(var uParam0, var uParam1)//Position - 0x94C02
 					}
 				}
 				fVar1 = SYSTEM::VDIST2(Var0, uParam1->f_11);
-				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) != 1 && (fVar1 > 4f || !bVar3)))
+				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar1 > 4f || !bVar3)))
 				{
 					if (func_505(uParam1->f_11, Var6[3 /*3*/], 1056964608, 0))
 					{
@@ -119241,7 +119241,7 @@ void func_822(var uParam0, var uParam1)//Position - 0x94C02
 					}
 				}
 				fVar1 = SYSTEM::VDIST2(Var0, uParam1->f_11);
-				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) != 1 && (fVar1 > 4f || !bVar3)))
+				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar1 > 4f || !bVar3)))
 				{
 					if (func_505(uParam1->f_11, Var6[4 /*3*/], 1056964608, 0))
 					{
@@ -119297,7 +119297,7 @@ void func_822(var uParam0, var uParam1)//Position - 0x94C02
 					}
 				}
 				fVar1 = SYSTEM::VDIST2(Var0, uParam1->f_11);
-				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) != 1 && fVar1 > 4f))
+				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && fVar1 > 4f))
 				{
 					if (func_505(uParam1->f_11, Var6[5 /*3*/], 1056964608, 0))
 					{
@@ -119347,7 +119347,7 @@ void func_823(var uParam0, var uParam1)//Position - 0x95A97
 		Var0 = { ENTITY::GET_ENTITY_COORDS(*uParam0, true) };
 		bVar2 = false;
 		iVar3 = 1;
-		bVar4 = (PED::IS_PED_IN_COMBAT(*uParam0, 0) || TASK::GET_SCRIPT_TASK_STATUS(*uParam0, -1442466670) == 1);
+		bVar4 = (PED::IS_PED_IN_COMBAT(*uParam0, 0) || TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_COMBAT_HATED_TARGETS_AROUND_PED")) == 1);
 		if (*uParam0 == uLocal_194[2])
 		{
 			Var6 = { Local_264.f_11 };
@@ -119498,7 +119498,7 @@ void func_823(var uParam0, var uParam1)//Position - 0x95A97
 					}
 				}
 				fVar1 = SYSTEM::VDIST2(Var0, uParam1->f_11);
-				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) != 1 && (fVar1 > 4f || !bVar4)))
+				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar1 > 4f || !bVar4)))
 				{
 					PED::SET_PED_SPHERE_DEFENSIVE_AREA(*uParam0, uParam1->f_11, 2f, true, false);
 					TASK::OPEN_SEQUENCE_TASK(&iVar5);
@@ -119569,7 +119569,7 @@ void func_823(var uParam0, var uParam1)//Position - 0x95A97
 					}
 				}
 				fVar1 = SYSTEM::VDIST2(Var0, uParam1->f_11);
-				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) != 1 && (fVar1 > 4f || !bVar4)))
+				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar1 > 4f || !bVar4)))
 				{
 					if (func_505(uParam1->f_11, Var7[1 /*3*/], 1056964608, 0))
 					{
@@ -119625,7 +119625,7 @@ void func_823(var uParam0, var uParam1)//Position - 0x95A97
 					}
 				}
 				fVar1 = SYSTEM::VDIST2(Var0, uParam1->f_11);
-				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) != 1 && (fVar1 > 4f || !bVar4)))
+				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar1 > 4f || !bVar4)))
 				{
 					if (func_505(uParam1->f_11, Var7[2 /*3*/], 1056964608, 0))
 					{
@@ -119694,7 +119694,7 @@ void func_823(var uParam0, var uParam1)//Position - 0x95A97
 					}
 				}
 				fVar1 = SYSTEM::VDIST2(Var0, uParam1->f_11);
-				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) != 1 && (fVar1 > 4f || !bVar4)))
+				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar1 > 4f || !bVar4)))
 				{
 					if (func_505(uParam1->f_11, Var7[3 /*3*/], 1056964608, 0))
 					{
@@ -119763,7 +119763,7 @@ void func_823(var uParam0, var uParam1)//Position - 0x95A97
 					}
 				}
 				fVar1 = SYSTEM::VDIST2(Var0, uParam1->f_11);
-				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) != 1 && (fVar1 > 4f || !bVar4)))
+				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar1 > 4f || !bVar4)))
 				{
 					if (func_505(uParam1->f_11, Var7[4 /*3*/], 1056964608, 0))
 					{
@@ -119832,7 +119832,7 @@ void func_823(var uParam0, var uParam1)//Position - 0x95A97
 					}
 				}
 				fVar1 = SYSTEM::VDIST2(Var0, uParam1->f_11);
-				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) != 1 && (fVar1 > 4f || !bVar4)))
+				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar1 > 4f || !bVar4)))
 				{
 					if (func_505(uParam1->f_11, Var7[5 /*3*/], 1056964608, 0))
 					{
@@ -119901,7 +119901,7 @@ void func_823(var uParam0, var uParam1)//Position - 0x95A97
 					}
 				}
 				fVar1 = SYSTEM::VDIST2(Var0, uParam1->f_11);
-				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) != 1 && (fVar1 > 4f || !bVar4)))
+				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar1 > 4f || !bVar4)))
 				{
 					if (func_505(uParam1->f_11, Var7[6 /*3*/], 1056964608, 0))
 					{
@@ -119957,7 +119957,7 @@ void func_823(var uParam0, var uParam1)//Position - 0x95A97
 					}
 				}
 				fVar1 = SYSTEM::VDIST2(Var0, uParam1->f_11);
-				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) != 1 && fVar1 > 4f))
+				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && fVar1 > 4f))
 				{
 					if (func_505(uParam1->f_11, Var7[7 /*3*/], 1056964608, 0))
 					{
@@ -120006,7 +120006,7 @@ void func_824(var uParam0, var uParam1)//Position - 0x96EB9
 		Var0 = { ENTITY::GET_ENTITY_COORDS(*uParam0, true) };
 		bVar2 = false;
 		bVar3 = true;
-		bVar4 = (PED::IS_PED_IN_COMBAT(*uParam0, 0) || TASK::GET_SCRIPT_TASK_STATUS(*uParam0, -1442466670) == 1);
+		bVar4 = (PED::IS_PED_IN_COMBAT(*uParam0, 0) || TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_COMBAT_HATED_TARGETS_AROUND_PED")) == 1);
 		if (*uParam0 == uLocal_194[2])
 		{
 			Var6 = { Local_264.f_11 };
@@ -120132,7 +120132,7 @@ void func_824(var uParam0, var uParam1)//Position - 0x96EB9
 					}
 				}
 				fVar1 = SYSTEM::VDIST2(Var0, uParam1->f_11);
-				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) != 1 && (fVar1 > 4f || !bVar4)))
+				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar1 > 4f || !bVar4)))
 				{
 					if (!func_505(Var7[0 /*3*/], uParam1->f_11, 1056964608, 0) && !func_505(Var8[0 /*3*/], uParam1->f_11, 1056964608, 0))
 					{
@@ -120203,7 +120203,7 @@ void func_824(var uParam0, var uParam1)//Position - 0x96EB9
 					}
 				}
 				fVar1 = SYSTEM::VDIST2(Var0, uParam1->f_11);
-				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) != 1 && (fVar1 > 4f || !bVar4)))
+				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar1 > 4f || !bVar4)))
 				{
 					if (func_505(uParam1->f_11, Var7[1 /*3*/], 1056964608, 0))
 					{
@@ -120259,7 +120259,7 @@ void func_824(var uParam0, var uParam1)//Position - 0x96EB9
 					}
 				}
 				fVar1 = SYSTEM::VDIST2(Var0, uParam1->f_11);
-				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) != 1 && (fVar1 > 4f || !bVar4)))
+				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar1 > 4f || !bVar4)))
 				{
 					if (func_505(uParam1->f_11, Var7[2 /*3*/], 1056964608, 0))
 					{
@@ -120315,7 +120315,7 @@ void func_824(var uParam0, var uParam1)//Position - 0x96EB9
 					}
 				}
 				fVar1 = SYSTEM::VDIST2(Var0, uParam1->f_11);
-				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) != 1 && (fVar1 > 4f || !bVar4)))
+				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar1 > 4f || !bVar4)))
 				{
 					if (func_505(uParam1->f_11, Var7[3 /*3*/], 1056964608, 0))
 					{
@@ -120371,7 +120371,7 @@ void func_824(var uParam0, var uParam1)//Position - 0x96EB9
 					}
 				}
 				fVar1 = SYSTEM::VDIST2(Var0, uParam1->f_11);
-				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) != 1 && (fVar1 > 4f || !bVar4)))
+				if (uParam1->f_7 || (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && (fVar1 > 4f || !bVar4)))
 				{
 					if (func_505(uParam1->f_11, Var7[4 /*3*/], 1056964608, 0))
 					{
@@ -120452,7 +120452,7 @@ void func_825(var uParam0, var uParam1)//Position - 0x97AE6
 						{
 							if (MISC::ABSF(Var4.f_0) < 1.25f)
 							{
-								if (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, -2118855366) == 7)
+								if (TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_VEHICLE_TEMP_ACTION")) == 7)
 								{
 									if (ENTITY::GET_ENTITY_SPEED(Local_291.f_0) > 1f)
 									{
@@ -120698,7 +120698,7 @@ void func_826(var uParam0, var uParam1)//Position - 0x98021
 		{
 			if (iLocal_102 == 0)
 			{
-				if ((TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503) != 1 && !PED::IS_PED_IN_COMBAT(*uParam0, 0)) || uParam1->f_7)
+				if ((TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && !PED::IS_PED_IN_COMBAT(*uParam0, 0)) || uParam1->f_7)
 				{
 					PED::SET_PED_SPHERE_DEFENSIVE_AREA(*uParam0, uParam1->f_11, 2f, true, false);
 					TASK::OPEN_SEQUENCE_TASK(&iVar0);
@@ -124100,7 +124100,7 @@ void func_872()//Position - 0x9C9C3
 								{
 									fVar7 = MISC::ABSF((fVar7 - 360f));
 								}
-								if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 1464580341) != 1 && fVar7 > 20f)
+								if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_TURN_PED_TO_FACE_COORD")) != 1 && fVar7 > 20f)
 								{
 									TASK::TASK_TURN_PED_TO_FACE_COORD(PLAYER::PLAYER_PED_ID(), Local_55, 0);
 								}
@@ -124250,7 +124250,7 @@ void func_872()//Position - 0x9C9C3
 							{
 								if (VEHICLE::IS_VEHICLE_DRIVEABLE(Local_291.f_0, false))
 								{
-									if (!PED::IS_PED_IN_VEHICLE(uLocal_194[2], Local_291.f_0, false) && TASK::GET_SCRIPT_TASK_STATUS(uLocal_194[2], -1794415470) != 1)
+									if (!PED::IS_PED_IN_VEHICLE(uLocal_194[2], Local_291.f_0, false) && TASK::GET_SCRIPT_TASK_STATUS(uLocal_194[2], joaat("SCRIPT_TASK_ENTER_VEHICLE")) != 1)
 									{
 										TASK::TASK_ENTER_VEHICLE(uLocal_194[2], Local_291.f_0, -1, -1, 2f, 1, 0);
 										PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(uLocal_194[2], true);
@@ -124268,7 +124268,7 @@ void func_872()//Position - 0x9C9C3
 								{
 									fVar12 = MISC::ABSF((fVar12 - 360f));
 								}
-								if (TASK::GET_SCRIPT_TASK_STATUS(uLocal_194[2], 1464580341) != 1 && fVar12 > 20f)
+								if (TASK::GET_SCRIPT_TASK_STATUS(uLocal_194[2], joaat("SCRIPT_TASK_TURN_PED_TO_FACE_COORD")) != 1 && fVar12 > 20f)
 								{
 									TASK::TASK_TURN_PED_TO_FACE_COORD(uLocal_194[2], Local_55, 0);
 								}
@@ -124376,7 +124376,7 @@ void func_872()//Position - 0x9C9C3
 					WEAPON::ADD_AMMO_TO_PED(uLocal_194[0], joaat("weapon_heavysniper"), 5);
 				}
 			}
-			if (TASK::GET_SCRIPT_TASK_STATUS(uLocal_194[0], 242628503) != 1 && SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(uLocal_194[0], true), Local_60) > 4f)
+			if (TASK::GET_SCRIPT_TASK_STATUS(uLocal_194[0], joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(uLocal_194[0], true), Local_60) > 4f)
 			{
 				TASK::OPEN_SEQUENCE_TASK(&iVar15);
 				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_60, 2f, -1, 0.5f, false, 40000f);

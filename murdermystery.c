@@ -3242,7 +3242,7 @@ void func_49()//Position - 0x4E17
 		case 1:
 			if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), Var0, Var1, fVar2, false, true, 0) && !func_5(0))
 			{
-				if (!func_52(PLAYER::PLAYER_PED_ID(), -880529684))
+				if (!func_52(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LOOK_AT_COORD")))
 				{
 					TASK::TASK_LOOK_AT_COORD(PLAYER::PLAYER_PED_ID(), -1007.995f, -476.8016f, 49.9117f, -1, 0, 2);
 				}
@@ -3881,7 +3881,7 @@ void func_84()//Position - 0x589C
 			iLocal_63 = 731806707;
 			OBJECT::ADD_DOOR_TO_SYSTEM(iLocal_63, joaat("v_ilev_sol_off_door01"), -1002.147f, -478.064f, 50.117f, true, true, false);
 			OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iLocal_63, 1, true, false);
-			iLocal_62 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, -1008.056f, -476.7573f, 50.2493f, -89.5003f, 0f, 38.7952f, 50f, false, 2);
+			iLocal_62 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), -1008.056f, -476.7573f, 50.2493f, -89.5003f, 0f, 38.7952f, 50f, false, 2);
 			break;
 		
 		case 6:

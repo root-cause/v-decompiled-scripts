@@ -206,7 +206,7 @@ void func_5(var uParam0)//Position - 0x262
 	sVar0 = func_10(uParam0);
 	sVar1 = func_8(uParam0);
 	fVar2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 0.7f);
-	iVar3 = TASK::GET_SCRIPT_TASK_STATUS(*uParam0, 242628503);
+	iVar3 = TASK::GET_SCRIPT_TASK_STATUS(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"));
 	if (iVar3 != 0 && iVar3 != 1)
 	{
 		if (STREAMING::HAS_ANIM_DICT_LOADED(sVar0))

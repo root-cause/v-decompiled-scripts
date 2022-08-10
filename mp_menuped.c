@@ -248,11 +248,11 @@ void __EntryFunction__()//Position - 0x0
 			func_427(ScriptParam_177.f_1, 1);
 			if (func_426(PLAYER::PLAYER_ID()))
 			{
-				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(1344549371);
+				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("DisableSpectateScript"));
 			}
 			else
 			{
-				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1344549371);
+				HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DisableSpectateScript"));
 			}
 			SYSTEM::WAIT(0);
 			SYSTEM::WAIT(0);

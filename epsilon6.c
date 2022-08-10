@@ -43428,7 +43428,7 @@ int func_397(int iParam0, float fParam1, int iParam2)//Position - 0x32884
 			else if (iParam2 == 1)
 			{
 				iVar0 = 0;
-				if (!func_400(PLAYER::PLAYER_PED_ID(), -828834893))
+				if (!func_400(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")))
 				{
 					TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
 				}
@@ -44880,7 +44880,7 @@ void func_427()//Position - 0x34112
 				if (iLocal_102 == 0)
 				{
 					func_430(Local_62.f_0, "AIMED_AT_BY_PLAYER", "TOM", 4);
-					if (!func_400(Local_62.f_0, -1519143300))
+					if (!func_400(Local_62.f_0, joaat("SCRIPT_TASK_HANDS_UP")))
 					{
 						TASK::CLEAR_PED_TASKS(Local_62.f_0);
 						TASK::TASK_HANDS_UP(Local_62.f_0, -1, PLAYER::PLAYER_PED_ID(), -1, true);
@@ -44890,7 +44890,7 @@ void func_427()//Position - 0x34112
 				}
 				else
 				{
-					if (!func_400(Local_62.f_0, -1519143300))
+					if (!func_400(Local_62.f_0, joaat("SCRIPT_TASK_HANDS_UP")))
 					{
 						TASK::CLEAR_PED_TASKS(Local_62.f_0);
 						TASK::TASK_HANDS_UP(Local_62.f_0, -1, PLAYER::PLAYER_PED_ID(), -1, true);
@@ -45330,7 +45330,7 @@ void func_436()//Position - 0x34F01
 			case 2:
 				if (func_481(Local_62.f_0) && func_481(PLAYER::PLAYER_PED_ID()))
 				{
-					if (func_241(Local_62.f_0, PLAYER::PLAYER_PED_ID(), 1) < 5f || TASK::GET_SCRIPT_TASK_STATUS(Local_62.f_0, 242628503) == 7)
+					if (func_241(Local_62.f_0, PLAYER::PLAYER_PED_ID(), 1) < 5f || TASK::GET_SCRIPT_TASK_STATUS(Local_62.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 7)
 					{
 						TASK::CLEAR_PED_TASKS(Local_62.f_0);
 						TASK::TASK_TURN_PED_TO_FACE_ENTITY(Local_62.f_0, PLAYER::PLAYER_PED_ID(), -1);
@@ -45398,7 +45398,7 @@ void func_441()//Position - 0x35053
 				break;
 			
 			case 1:
-				if (!func_400(Local_62.f_0, 713668775))
+				if (!func_400(Local_62.f_0, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")))
 				{
 					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_62.f_0, Local_78[iLocal_77 /*3*/], 1f, 20000, 0.25f, false, 40000f);
 					func_524("Eps 6: Nav tasking Tom...");

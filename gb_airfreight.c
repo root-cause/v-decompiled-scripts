@@ -68704,11 +68704,11 @@ void func_759()//Position - 0x46923
 					{
 						if (!PED::IS_PED_INJURED(func_20(iVar0)))
 						{
-							if (TASK::GET_SCRIPT_TASK_STATUS(func_20(iVar0), -1794415470) == 1 || TASK::GET_SCRIPT_TASK_STATUS(func_20(iVar0), -1794415470) == 0)
+							if (TASK::GET_SCRIPT_TASK_STATUS(func_20(iVar0), joaat("SCRIPT_TASK_ENTER_VEHICLE")) == 1 || TASK::GET_SCRIPT_TASK_STATUS(func_20(iVar0), joaat("SCRIPT_TASK_ENTER_VEHICLE")) == 0)
 							{
 								TASK::CLEAR_PED_TASKS(func_20(iVar0));
 							}
-							if (TASK::GET_SCRIPT_TASK_STATUS(func_20(iVar0), 1120685857) != 1 && TASK::GET_SCRIPT_TASK_STATUS(func_20(iVar0), 1120685857) != 0)
+							if (TASK::GET_SCRIPT_TASK_STATUS(func_20(iVar0), joaat("SCRIPT_TASK_COMBAT_HATED_TARGETS_IN_AREA")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(func_20(iVar0), joaat("SCRIPT_TASK_COMBAT_HATED_TARGETS_IN_AREA")) != 0)
 							{
 								PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(func_20(iVar0), true);
 								PED::SET_PED_ACCURACY(func_20(iVar0), func_761());
@@ -68727,7 +68727,7 @@ void func_759()//Position - 0x46923
 							{
 								if (!PED::IS_PED_INJURED(func_20(iVar0)))
 								{
-									if (TASK::GET_SCRIPT_TASK_STATUS(func_20(iVar0), -1794415470) != 1 && TASK::GET_SCRIPT_TASK_STATUS(func_20(iVar0), -1794415470) != 0)
+									if (TASK::GET_SCRIPT_TASK_STATUS(func_20(iVar0), joaat("SCRIPT_TASK_ENTER_VEHICLE")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(func_20(iVar0), joaat("SCRIPT_TASK_ENTER_VEHICLE")) != 0)
 									{
 										PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(func_20(iVar0), true);
 										TASK::TASK_ENTER_VEHICLE(func_20(iVar0), func_19(), 20000, -1, 2f, 1, 0);
@@ -68736,7 +68736,7 @@ void func_759()//Position - 0x46923
 							}
 							else if ((((!PED::IS_PED_INJURED(func_20(iVar0)) && func_26(func_20(iVar0))) && func_26(func_19())) && func_975()) && func_26(func_31()))
 							{
-								if (TASK::GET_SCRIPT_TASK_STATUS(func_20(iVar0), -1273030092) != 1 && TASK::GET_SCRIPT_TASK_STATUS(func_20(iVar0), -1273030092) != 0)
+								if (TASK::GET_SCRIPT_TASK_STATUS(func_20(iVar0), joaat("SCRIPT_TASK_VEHICLE_MISSION")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(func_20(iVar0), joaat("SCRIPT_TASK_VEHICLE_MISSION")) != 0)
 								{
 									PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(func_20(iVar0), true);
 									PED::SET_PED_ACCURACY(func_20(iVar0), func_760());
@@ -76197,14 +76197,14 @@ void func_944(int iParam0, struct<3> Param1, var uParam2, float fParam3, float f
 	{
 		if (func_489(PLAYER::PLAYER_ID()) || func_966(PLAYER::PLAYER_ID()))
 		{
-			if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(1344549371))
+			if (!HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("DisableSpectateScript")))
 			{
-				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(1344549371);
+				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("DisableSpectateScript"));
 			}
 		}
-		else if (HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(1344549371))
+		else if (HUD::PAUSE_MENU_IS_CONTEXT_ACTIVE(joaat("DisableSpectateScript")))
 		{
-			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1344549371);
+			HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("DisableSpectateScript"));
 		}
 	}
 	if (fVar0 < fParam3)

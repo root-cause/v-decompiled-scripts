@@ -2135,7 +2135,7 @@ void func_90()//Position - 0x1FEA
 			break;
 		
 		case 2:
-			if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 242628503) != 1)
+			if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1)
 			{
 				func_256();
 				if (CLOCK::GET_CLOCK_HOURS() > 20 || CLOCK::GET_CLOCK_HOURS() < 4)
@@ -5724,7 +5724,7 @@ void func_201()//Position - 0x5E00
 	{
 		if (!CAM::DOES_CAM_EXIST(iLocal_279[iVar0]))
 		{
-			iLocal_279[iVar0] = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var1[iVar0 /*3*/], Var2[iVar0 /*3*/], uVar3[iVar0], false, 2);
+			iLocal_279[iVar0] = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var1[iVar0 /*3*/], Var2[iVar0 /*3*/], uVar3[iVar0], false, 2);
 			CAM::SHAKE_CAM(iLocal_279[iVar0], "HAND_SHAKE", 0.3f);
 		}
 		iVar0++;
@@ -5839,7 +5839,7 @@ void func_203(int iParam0, struct<3> Param1)//Position - 0x6406
 	if (!PED::IS_PED_INJURED(iParam0))
 	{
 		TASK::SET_PED_PATH_AVOID_FIRE(iParam0, true);
-		if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, 242628503) != 1)
+		if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1)
 		{
 			TASK::CLEAR_SEQUENCE_TASK(&iLocal_306);
 			TASK::OPEN_SEQUENCE_TASK(&iLocal_306);
@@ -6434,7 +6434,7 @@ void func_216()//Position - 0x706F
 		iVar1 = 0;
 		bVar2 = ENTITY::IS_ENTITY_PLAYING_ANIM(iLocal_271[0], sVar0, func_95(4, 1, 1, func_98(iLocal_307)), 3);
 		bVar3 = PED::IS_PED_SHOOTING(PLAYER::PLAYER_PED_ID());
-		bVar4 = TASK::GET_SCRIPT_TASK_STATUS(iLocal_271[0], 242628503) == 7;
+		bVar4 = TASK::GET_SCRIPT_TASK_STATUS(iLocal_271[0], joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 7;
 		bVar5 = PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false);
 		bVar6 = false;
 		if (bVar5)
@@ -8185,7 +8185,7 @@ void func_262(int iParam0)//Position - 0x9423
 	if (!PED::IS_PED_INJURED(iParam0))
 	{
 		TASK::SET_PED_PATH_AVOID_FIRE(iParam0, true);
-		if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, 242628503) != 1)
+		if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1)
 		{
 			TASK::CLEAR_SEQUENCE_TASK(&iLocal_306);
 			TASK::OPEN_SEQUENCE_TASK(&iLocal_306);

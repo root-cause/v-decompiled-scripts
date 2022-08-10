@@ -588,7 +588,7 @@ void func_1()//Position - 0x384
 			func_23();
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 			func_20(1);
-			if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 1045468327) == 7)
+			if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_PED_SLIDE_TO_COORD")) == 7)
 			{
 				func_16(104, 1, -1, 1);
 				iLocal_313 = NETWORK::NETWORK_CREATE_SYNCHRONISED_SCENE(Local_376, Local_377, 2, false, false, 1f, 0f, 1f);
@@ -1657,7 +1657,7 @@ int func_37(int iParam0)//Position - 0x1981
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, -1794415470);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, joaat("SCRIPT_TASK_ENTER_VEHICLE"));
 		if (iVar0 == 0)
 		{
 			return 1;
