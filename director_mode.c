@@ -17145,7 +17145,7 @@ void func_216(int iParam0)//Position - 0x144F3
 		{
 			if (!bVar0)
 			{
-				NETSHOPPING::NET_GAMESERVER_BASKET_END();
+				NETSHOPPING::_NET_GAMESERVER_BASKET_DELETE();
 			}
 		}
 		else if (!bVar0)

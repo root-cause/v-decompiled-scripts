@@ -118972,7 +118972,7 @@ int func_1031(int iParam0, bool bParam1, int iParam2, bool bParam3, int iParam4,
 			}
 			if (STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS() == 0 || (iParam2 && STREAMING::GET_PLAYER_SWITCH_STATE() > 8))
 			{
-				if (((((!Global_2667225.f_2688 == -1 && !Global_1836578) && !Global_2667225.f_2688 >= 254) && !func_1034()) && !BitTest(Global_4718592.f_168795, 0)) && !(AUDIO::AUDIO_IS_SCRIPTED_MUSIC_PLAYING() && Global_2667225.f_2689 == 0))
+				if (((((!Global_2667225.f_2688 == -1 && !Global_1836578) && !Global_2667225.f_2688 >= 254) && !func_1034()) && !BitTest(Global_4718592.f_168795, 0)) && !(AUDIO::_AUDIO_IS_SCRIPTED_MUSIC_PLAYING_2() && Global_2667225.f_2689 == 0))
 				{
 					if (!func_1033(&Global_2725371))
 					{
@@ -125846,7 +125846,7 @@ void func_1165(int iParam0)//Position - 0x9CB78
 	int iVar0;
 	
 	iVar0 = Global_2667225.f_2691;
-	if ((AUDIO::AUDIO_IS_SCRIPTED_MUSIC_PLAYING() && Global_2667225.f_2689 == 0) && iParam0 == 0)
+	if ((AUDIO::_AUDIO_IS_SCRIPTED_MUSIC_PLAYING_2() && Global_2667225.f_2689 == 0) && iParam0 == 0)
 	{
 		iVar0 = 255;
 	}
@@ -132477,7 +132477,7 @@ void func_1425(int iParam0)//Position - 0xA49C2
 		{
 			if (!bVar0)
 			{
-				NETSHOPPING::NET_GAMESERVER_BASKET_END();
+				NETSHOPPING::_NET_GAMESERVER_BASKET_DELETE();
 			}
 		}
 		else if (!bVar0)

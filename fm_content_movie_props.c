@@ -27389,7 +27389,7 @@ void func_709(int iParam0)//Position - 0x27E5F
 	}
 	else
 	{
-		unk_0xC0DE18944A7A9044(iParam0, func_516());
+		MONEY::_NETWORK_EARN_FROM_COLLECTION_ITEM(iParam0, func_516());
 	}
 	STATS::_PLAYSTATS_COLLECTIBLE(7, func_516(), Global_1973170.f_3, 10, func_600(), func_599(), 0, 7, func_556(), -1, 0);
 }
@@ -27871,7 +27871,7 @@ void func_713(int iParam0)//Position - 0x289C2
 		{
 			if (!bVar0)
 			{
-				NETSHOPPING::NET_GAMESERVER_BASKET_END();
+				NETSHOPPING::_NET_GAMESERVER_BASKET_DELETE();
 			}
 		}
 		else if (!bVar0)
@@ -37000,7 +37000,7 @@ void func_1058(int iParam0)//Position - 0x33A66
 	int iVar0;
 	
 	iVar0 = Global_2667225.f_2691;
-	if ((AUDIO::AUDIO_IS_SCRIPTED_MUSIC_PLAYING() && Global_2667225.f_2689 == 0) && iParam0 == 0)
+	if ((AUDIO::_AUDIO_IS_SCRIPTED_MUSIC_PLAYING_2() && Global_2667225.f_2689 == 0) && iParam0 == 0)
 	{
 		iVar0 = 255;
 	}

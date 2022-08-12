@@ -1008,7 +1008,7 @@ void func_3()//Position - 0x463
 					}
 					else
 					{
-						unk_0x2E2B0A3651E8DCC2(iVar5, &Var8, 0, 1, 0);
+						MONEY::NETWORK_SPENT_BUY_WANTEDLEVEL(iVar5, &Var8, false, true, 0);
 					}
 				}
 			}
@@ -4526,7 +4526,7 @@ void func_96(int iParam0)//Position - 0x50A5
 		{
 			if (!bVar0)
 			{
-				NETSHOPPING::NET_GAMESERVER_BASKET_END();
+				NETSHOPPING::_NET_GAMESERVER_BASKET_DELETE();
 			}
 		}
 		else if (!bVar0)

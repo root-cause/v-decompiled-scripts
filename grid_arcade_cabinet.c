@@ -1284,7 +1284,7 @@ void func_42()//Position - 0xECB
 		return;
 	}
 	Local_134.f_19 = (NETWORK::GET_NETWORK_TIME_ACCURATE() - Local_134.f_19);
-	unk_0xC9E0752C5AF51DC0(MISC::GET_HASH_KEY(&Local_134), Local_134.f_16, Local_134.f_17, Local_134.f_18, Local_134.f_19, Local_134.f_20, Local_134.f_21);
+	STATS::_PLAYSTATS_ARCADEGAME(MISC::GET_HASH_KEY(&Local_134), Local_134.f_16, Local_134.f_17, Local_134.f_18, Local_134.f_19, Local_134.f_20, Local_134.f_21);
 }
 
 int func_43()//Position - 0xF24
@@ -12058,9 +12058,9 @@ void func_400(struct<21> Param0)//Position - 0x106F6
 	func_403();
 	func_402();
 	NETWORK::NETWORK_REGISTER_HOST_BROADCAST_VARIABLES(&Local_136, 201, 0);
-	unk_0x2B297170E982E21E(&iLocal_172, 5, 0);
+	NETWORK::_0xEA8C0DDB10E2822A(&iLocal_172, 5, 0);
 	NETWORK::NETWORK_REGISTER_PLAYER_BROADCAST_VARIABLES(&Local_173, 37, 0);
-	unk_0x55B917F38CA35331(&Local_174, 65, 0);
+	NETWORK::_0xD6D7478CA62B8D41(&Local_174, 65, 0);
 	if (!func_401())
 	{
 		func_9();

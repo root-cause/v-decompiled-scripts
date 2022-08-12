@@ -10835,7 +10835,7 @@ void func_287(int iParam0, char* sParam1, bool bParam2, int iParam3)//Position -
 	{
 		return;
 	}
-	MONEY::_NETWORK_SPENT_NIGHTCLUB_BATHROOM_ATTENDANT(iParam0, -1180597171, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
+	STATS::_PLAYSTATS_NPC_PHONE(iParam0, -1180597171, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
 	if (bParam2)
 	{
 		Global_1973156 = -1;
@@ -12167,7 +12167,7 @@ void func_327(int iParam0, char* sParam1, bool bParam2, int iParam3)//Position -
 	{
 		return;
 	}
-	MONEY::_NETWORK_SPENT_NIGHTCLUB_BATHROOM_ATTENDANT(iParam0, 1654525105, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
+	STATS::_PLAYSTATS_NPC_PHONE(iParam0, 1654525105, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
 	if (bParam2)
 	{
 		Global_1973156 = -1;
@@ -13876,7 +13876,7 @@ int func_388(int iParam0, bool bParam1)//Position - 0x10688
 		iVar2++;
 	}
 	iVar7 = iVar1 * 25;
-	if (unk_0xE3D43E568F45340A(iParam0))
+	if (AUDIO::IS_VEHICLE_AUDIBLY_DAMAGED(iParam0))
 	{
 		iVar11 = 50;
 	}
@@ -17193,7 +17193,7 @@ void func_449(int iParam0)//Position - 0x144F3
 		{
 			if (!bVar0)
 			{
-				NETSHOPPING::NET_GAMESERVER_BASKET_END();
+				NETSHOPPING::_NET_GAMESERVER_BASKET_DELETE();
 			}
 		}
 		else if (!bVar0)

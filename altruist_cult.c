@@ -7496,7 +7496,7 @@ void func_190()//Position - 0x86D6
 	}
 	else if (!iLocal_83)
 	{
-		if (AUDIO::AUDIO_IS_SCRIPTED_MUSIC_PLAYING())
+		if (AUDIO::_AUDIO_IS_SCRIPTED_MUSIC_PLAYING_2())
 		{
 			AUDIO::TRIGGER_MUSIC_EVENT("AC_END");
 		}

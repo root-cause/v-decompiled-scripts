@@ -70778,7 +70778,7 @@ int func_421()//Position - 0x42BE4
 				if (fLocal_277 == 0f)
 				{
 					ENTITY::SET_ENTITY_DYNAMIC(iLocal_275, true);
-					if (unk_0x2467A2D807D37CA3(iLocal_275))
+					if (VEHICLE::CAN_ANCHOR_BOAT_HERE(iLocal_275))
 					{
 						VEHICLE::SET_BOAT_ANCHOR(iLocal_275, true);
 					}

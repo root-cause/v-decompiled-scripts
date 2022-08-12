@@ -10647,7 +10647,7 @@ void func_245(int iParam0, bool bParam1, var uParam2, struct<3> Param3, int iPar
 		{
 			VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(iParam0, 5f);
 		}
-		if (unk_0x2467A2D807D37CA3(iParam0) && ENTITY::GET_ENTITY_MODEL(iParam0) != joaat("stromberg"))
+		if (VEHICLE::CAN_ANCHOR_BOAT_HERE(iParam0) && ENTITY::GET_ENTITY_MODEL(iParam0) != joaat("stromberg"))
 		{
 			VEHICLE::SET_BOAT_ANCHOR(iParam0, true);
 		}
@@ -36265,7 +36265,7 @@ void func_670(int iParam0)//Position - 0x2F389
 		{
 			if (!bVar0)
 			{
-				NETSHOPPING::NET_GAMESERVER_BASKET_END();
+				NETSHOPPING::_NET_GAMESERVER_BASKET_DELETE();
 			}
 		}
 		else if (!bVar0)
@@ -54124,7 +54124,7 @@ void func_1006(int iParam0)//Position - 0x42429
 	int iVar0;
 	
 	iVar0 = Global_2667225.f_2691;
-	if ((AUDIO::AUDIO_IS_SCRIPTED_MUSIC_PLAYING() && Global_2667225.f_2689 == 0) && iParam0 == 0)
+	if ((AUDIO::_AUDIO_IS_SCRIPTED_MUSIC_PLAYING_2() && Global_2667225.f_2689 == 0) && iParam0 == 0)
 	{
 		iVar0 = 255;
 	}

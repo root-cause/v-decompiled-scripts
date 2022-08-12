@@ -6257,7 +6257,7 @@ void func_277(int iParam0)//Position - 0x6FF4
 	int iVar0;
 	
 	iVar0 = Global_2667225.f_2691;
-	if ((AUDIO::AUDIO_IS_SCRIPTED_MUSIC_PLAYING() && Global_2667225.f_2689 == 0) && iParam0 == 0)
+	if ((AUDIO::_AUDIO_IS_SCRIPTED_MUSIC_PLAYING_2() && Global_2667225.f_2689 == 0) && iParam0 == 0)
 	{
 		iVar0 = 255;
 	}
@@ -151392,7 +151392,7 @@ void func_1578(var uParam0)//Position - 0xC9D1F
 		VEHICLE::SET_VEHICLE_BRAKE(uParam0->f_11.f_553[0 /*12*/], 0f);
 		VEHICLE::SET_VEHICLE_HANDBRAKE(uParam0->f_11.f_553[0 /*12*/], false);
 		VEHICLE::SET_VEHICLE_FORWARD_SPEED(uParam0->f_11.f_553[0 /*12*/], fVar4);
-		AUDIO::IS_VEHICLE_AUDIBLY_DAMAGED(uParam0->f_11.f_553[0 /*12*/], 1);
+		AUDIO::_0x97FFB4ADEED08066(uParam0->f_11.f_553[0 /*12*/], 1);
 	}
 }
 

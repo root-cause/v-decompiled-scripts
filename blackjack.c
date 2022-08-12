@@ -8384,7 +8384,7 @@ void func_129(int iParam0)//Position - 0xFBB6
 		{
 			if (!bVar0)
 			{
-				NETSHOPPING::NET_GAMESERVER_BASKET_END();
+				NETSHOPPING::_NET_GAMESERVER_BASKET_DELETE();
 			}
 		}
 		else if (!bVar0)
@@ -9013,9 +9013,9 @@ int func_143(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, va
 	*iParam0 = 0;
 	if (!bVar0)
 	{
-		if (unk_0xE547E9114277098F())
+		if (NETSHOPPING::NET_GAMESERVER_BASKET_END())
 		{
-			NETSHOPPING::NET_GAMESERVER_BASKET_END();
+			NETSHOPPING::_NET_GAMESERVER_BASKET_DELETE();
 		}
 	}
 	if (bVar0 || NETSHOPPING::NET_GAMESERVER_BASKET_START(&uVar3, iParam2, iParam3, iParam4))
@@ -16504,7 +16504,7 @@ int func_334(int iParam0, var uParam1)//Position - 0x1AD37
 			break;
 		
 		case 2:
-			iVar0 = 1023703758;
+			iVar0 = joaat("GTAO_CASINO_3CARDPOKER");
 			break;
 		
 		case 5:

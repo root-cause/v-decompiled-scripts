@@ -36174,7 +36174,7 @@ void func_245(int iParam0, char* sParam1, bool bParam2, int iParam3)//Position -
 	{
 		return;
 	}
-	MONEY::_NETWORK_SPENT_NIGHTCLUB_BATHROOM_ATTENDANT(iParam0, 1654525105, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
+	STATS::_PLAYSTATS_NPC_PHONE(iParam0, 1654525105, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
 	if (bParam2)
 	{
 		Global_1973156 = -1;
@@ -47205,7 +47205,7 @@ void func_476()//Position - 0x371AE
 						}
 						if (iLocal_274)
 						{
-							if (AUDIO::AUDIO_IS_SCRIPTED_MUSIC_PLAYING())
+							if (AUDIO::_AUDIO_IS_SCRIPTED_MUSIC_PLAYING_2())
 							{
 								AUDIO::TRIGGER_MUSIC_EVENT("PAP3_STOP");
 							}
@@ -47215,7 +47215,7 @@ void func_476()//Position - 0x371AE
 				}
 				else
 				{
-					if (AUDIO::AUDIO_IS_SCRIPTED_MUSIC_PLAYING())
+					if (AUDIO::_AUDIO_IS_SCRIPTED_MUSIC_PLAYING_2())
 					{
 						AUDIO::TRIGGER_MUSIC_EVENT("PAP3_STOP");
 					}
@@ -51428,7 +51428,7 @@ void func_544()//Position - 0x3D140
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_203, true);
 	}
 	func_540(iLocal_201, -1, 1);
-	if (AUDIO::AUDIO_IS_SCRIPTED_MUSIC_PLAYING())
+	if (AUDIO::_AUDIO_IS_SCRIPTED_MUSIC_PLAYING_2())
 	{
 		AUDIO::TRIGGER_MUSIC_EVENT("PAP3_STOP");
 	}

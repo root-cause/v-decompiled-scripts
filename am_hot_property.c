@@ -21625,7 +21625,7 @@ void func_645(int iParam0)//Position - 0x196A1
 	int iVar0;
 	
 	iVar0 = Global_2667225.f_2691;
-	if ((AUDIO::AUDIO_IS_SCRIPTED_MUSIC_PLAYING() && Global_2667225.f_2689 == 0) && iParam0 == 0)
+	if ((AUDIO::_AUDIO_IS_SCRIPTED_MUSIC_PLAYING_2() && Global_2667225.f_2689 == 0) && iParam0 == 0)
 	{
 		iVar0 = 255;
 	}
@@ -128926,7 +128926,7 @@ void func_1529(int iParam0)//Position - 0xA50ED
 		{
 			if (!bVar0)
 			{
-				NETSHOPPING::NET_GAMESERVER_BASKET_END();
+				NETSHOPPING::_NET_GAMESERVER_BASKET_DELETE();
 			}
 		}
 		else if (!bVar0)

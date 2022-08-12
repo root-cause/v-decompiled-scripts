@@ -47316,7 +47316,7 @@ void func_507()//Position - 0x36D21
 					VEHICLE::_SET_BOAT_MOVEMENT_RESISTANCE(Local_39.f_0, 0f);
 					VEHICLE::_SET_BOAT_FROZEN_WHEN_ANCHORED(Local_39.f_0, true);
 					VEHICLE::_0xB28B1FE5BFADD7F5(Local_39.f_0, true);
-					if (unk_0x2467A2D807D37CA3(Local_39.f_0))
+					if (VEHICLE::CAN_ANCHOR_BOAT_HERE(Local_39.f_0))
 					{
 						VEHICLE::SET_BOAT_ANCHOR(Local_39.f_0, true);
 					}
@@ -48921,7 +48921,7 @@ void func_538(int iParam0, int iParam1)//Position - 0x3B1FB
 					VEHICLE::_SET_BOAT_MOVEMENT_RESISTANCE(Local_542[iVar0 /*18*/].f_6, 0f);
 					VEHICLE::_SET_BOAT_FROZEN_WHEN_ANCHORED(Local_542[iVar0 /*18*/].f_6, true);
 					VEHICLE::_0xB28B1FE5BFADD7F5(Local_542[iVar0 /*18*/].f_6, true);
-					if (unk_0x2467A2D807D37CA3(Local_542[iVar0 /*18*/].f_6))
+					if (VEHICLE::CAN_ANCHOR_BOAT_HERE(Local_542[iVar0 /*18*/].f_6))
 					{
 						VEHICLE::SET_BOAT_ANCHOR(Local_542[iVar0 /*18*/].f_6, true);
 					}

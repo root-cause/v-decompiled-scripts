@@ -106150,7 +106150,7 @@ void func_732(int iParam0)//Position - 0x7FB76
 		{
 			if (!bVar0)
 			{
-				NETSHOPPING::NET_GAMESERVER_BASKET_END();
+				NETSHOPPING::_NET_GAMESERVER_BASKET_DELETE();
 			}
 		}
 		else if (!bVar0)
@@ -106574,9 +106574,9 @@ void func_751(int iParam0, int iParam1)//Position - 0x80287
 	func_752(iParam0, iParam1, joaat("PLAYLIST_EVENT_GIFT_ACTIVE"), &(Global_262145.f_7123), 1);
 }
 
-void func_752(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam4)//Position - 0x80417
+void func_752(int iParam0, int iParam1, int iParam2, int* iParam3, bool bParam4)//Position - 0x80417
 {
-	func_753(0, iParam2, fParam3, bParam4);
+	func_753(0, iParam2, iParam3, bParam4);
 	if (iParam0 == 0)
 	{
 		return;
@@ -106609,7 +106609,7 @@ void func_752(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 		case 23:
 		case 24:
 		case 25:
-			func_753(1, iParam2, fParam3, bParam4);
+			func_753(1, iParam2, iParam3, bParam4);
 			if (iParam0 == 1)
 			{
 				return;
@@ -106620,7 +106620,7 @@ void func_752(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 				case 3:
 				case 4:
 				case 5:
-					func_753(2, iParam2, fParam3, bParam4);
+					func_753(2, iParam2, iParam3, bParam4);
 					if (iParam0 == 2)
 					{
 						return;
@@ -106630,7 +106630,7 @@ void func_752(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 						case 3:
 						case 4:
 						case 5:
-							func_753(iParam0, iParam2, fParam3, bParam4);
+							func_753(iParam0, iParam2, iParam3, bParam4);
 							return;
 						
 						case 1:
@@ -106684,7 +106684,7 @@ void func_752(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 				case 23:
 				case 24:
 				case 25:
-					func_753(6, iParam2, fParam3, bParam4);
+					func_753(6, iParam2, iParam3, bParam4);
 					if (iParam0 == 6)
 					{
 						return;
@@ -106698,10 +106698,10 @@ void func_752(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 						case 19:
 						case 26:
 						case 24:
-							func_753(iParam0, iParam2, fParam3, bParam4);
+							func_753(iParam0, iParam2, iParam3, bParam4);
 							if (iParam1 != 27)
 							{
-								func_753(iParam1, iParam2, fParam3, bParam4);
+								func_753(iParam1, iParam2, iParam3, bParam4);
 							}
 							return;
 						
@@ -106711,12 +106711,12 @@ void func_752(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 						case 22:
 						case 23:
 						case 25:
-							func_753(15, iParam2, fParam3, bParam4);
+							func_753(15, iParam2, iParam3, bParam4);
 							if (iParam0 == 15)
 							{
 								if (iParam1 != 27)
 								{
-									func_753(iParam1, iParam2, fParam3, bParam4);
+									func_753(iParam1, iParam2, iParam3, bParam4);
 								}
 								return;
 							}
@@ -106727,10 +106727,10 @@ void func_752(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 								case 22:
 								case 23:
 								case 25:
-									func_753(iParam0, iParam2, fParam3, bParam4);
+									func_753(iParam0, iParam2, iParam3, bParam4);
 									if (iParam1 != 27)
 									{
-										func_753(iParam1, iParam2, fParam3, bParam4);
+										func_753(iParam1, iParam2, iParam3, bParam4);
 									}
 									return;
 								
@@ -106746,12 +106746,12 @@ void func_752(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 						case 12:
 						case 13:
 						case 14:
-							func_753(8, iParam2, fParam3, bParam4);
+							func_753(8, iParam2, iParam3, bParam4);
 							if (iParam0 == 8)
 							{
 								if (iParam1 != 27)
 								{
-									func_753(iParam1, iParam2, fParam3, bParam4);
+									func_753(iParam1, iParam2, iParam3, bParam4);
 								}
 								return;
 							}
@@ -106763,10 +106763,10 @@ void func_752(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 								case 12:
 								case 13:
 								case 14:
-									func_753(iParam0, iParam2, fParam3, bParam4);
+									func_753(iParam0, iParam2, iParam3, bParam4);
 									if (iParam1 != 27)
 									{
-										func_753(iParam1, iParam2, fParam3, bParam4);
+										func_753(iParam1, iParam2, iParam3, bParam4);
 									}
 									return;
 								
@@ -106796,12 +106796,12 @@ void func_752(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 	}
 }
 
-void func_753(int iParam0, int iParam1, float* fParam2, bool bParam3)//Position - 0x80839
+void func_753(int iParam0, int iParam1, int* iParam2, bool bParam3)//Position - 0x80839
 {
 	int iVar0;
 	
 	iVar0 = func_754(iParam0);
-	if (!NETWORK::_NETWORK_REGISTER_TUNABLE_INT_HASH(iVar0, iParam1))
+	if (!NETWORK::NETWORK_DOES_TUNABLE_EXIST_HASH(iVar0, iParam1))
 	{
 		if (bParam3)
 		{
@@ -106810,8 +106810,8 @@ void func_753(int iParam0, int iParam1, float* fParam2, bool bParam3)//Position 
 	}
 	else
 	{
-		*fParam2 = NETWORK::NETWORK_ACCESS_TUNABLE_FLOAT_HASH(iVar0, iParam1);
-		NETWORK::_NETWORK_REGISTER_TUNABLE_FLOAT_HASH(iVar0, iParam1, fParam2);
+		*iParam2 = NETWORK::NETWORK_ACCESS_TUNABLE_BOOL_HASH(iVar0, iParam1);
+		NETWORK::_NETWORK_REGISTER_TUNABLE_BOOL_HASH(iVar0, iParam1, iParam2);
 	}
 	if (bParam3)
 	{
@@ -107187,7 +107187,7 @@ void func_756(int iParam0, int iParam1, int* iParam2, bool bParam3)//Position - 
 	}
 	else
 	{
-		unk_0xC5D08122EC634870(iVar0, iParam1, iParam2);
+		NETWORK::_NETWORK_REGISTER_TUNABLE_INT_HASH(iVar0, iParam1, iParam2);
 	}
 	if (bParam3)
 	{

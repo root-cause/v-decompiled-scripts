@@ -101123,7 +101123,7 @@ void func_689(int iParam0)//Position - 0x781F1
 		{
 			if (!bVar0)
 			{
-				NETSHOPPING::NET_GAMESERVER_BASKET_END();
+				NETSHOPPING::_NET_GAMESERVER_BASKET_DELETE();
 			}
 		}
 		else if (!bVar0)
@@ -101547,9 +101547,9 @@ void func_708(int iParam0, int iParam1)//Position - 0x788FC
 	func_709(iParam0, iParam1, joaat("PLAYLIST_EVENT_GIFT_ACTIVE"), &(Global_262145.f_7123), 1);
 }
 
-void func_709(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam4)//Position - 0x78A8C
+void func_709(int iParam0, int iParam1, int iParam2, int* iParam3, bool bParam4)//Position - 0x78A8C
 {
-	func_710(0, iParam2, fParam3, bParam4);
+	func_710(0, iParam2, iParam3, bParam4);
 	if (iParam0 == 0)
 	{
 		return;
@@ -101582,7 +101582,7 @@ void func_709(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 		case 23:
 		case 24:
 		case 25:
-			func_710(1, iParam2, fParam3, bParam4);
+			func_710(1, iParam2, iParam3, bParam4);
 			if (iParam0 == 1)
 			{
 				return;
@@ -101593,7 +101593,7 @@ void func_709(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 				case 3:
 				case 4:
 				case 5:
-					func_710(2, iParam2, fParam3, bParam4);
+					func_710(2, iParam2, iParam3, bParam4);
 					if (iParam0 == 2)
 					{
 						return;
@@ -101603,7 +101603,7 @@ void func_709(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 						case 3:
 						case 4:
 						case 5:
-							func_710(iParam0, iParam2, fParam3, bParam4);
+							func_710(iParam0, iParam2, iParam3, bParam4);
 							return;
 						
 						case 1:
@@ -101657,7 +101657,7 @@ void func_709(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 				case 23:
 				case 24:
 				case 25:
-					func_710(6, iParam2, fParam3, bParam4);
+					func_710(6, iParam2, iParam3, bParam4);
 					if (iParam0 == 6)
 					{
 						return;
@@ -101671,10 +101671,10 @@ void func_709(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 						case 19:
 						case 26:
 						case 24:
-							func_710(iParam0, iParam2, fParam3, bParam4);
+							func_710(iParam0, iParam2, iParam3, bParam4);
 							if (iParam1 != 27)
 							{
-								func_710(iParam1, iParam2, fParam3, bParam4);
+								func_710(iParam1, iParam2, iParam3, bParam4);
 							}
 							return;
 						
@@ -101684,12 +101684,12 @@ void func_709(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 						case 22:
 						case 23:
 						case 25:
-							func_710(15, iParam2, fParam3, bParam4);
+							func_710(15, iParam2, iParam3, bParam4);
 							if (iParam0 == 15)
 							{
 								if (iParam1 != 27)
 								{
-									func_710(iParam1, iParam2, fParam3, bParam4);
+									func_710(iParam1, iParam2, iParam3, bParam4);
 								}
 								return;
 							}
@@ -101700,10 +101700,10 @@ void func_709(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 								case 22:
 								case 23:
 								case 25:
-									func_710(iParam0, iParam2, fParam3, bParam4);
+									func_710(iParam0, iParam2, iParam3, bParam4);
 									if (iParam1 != 27)
 									{
-										func_710(iParam1, iParam2, fParam3, bParam4);
+										func_710(iParam1, iParam2, iParam3, bParam4);
 									}
 									return;
 								
@@ -101719,12 +101719,12 @@ void func_709(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 						case 12:
 						case 13:
 						case 14:
-							func_710(8, iParam2, fParam3, bParam4);
+							func_710(8, iParam2, iParam3, bParam4);
 							if (iParam0 == 8)
 							{
 								if (iParam1 != 27)
 								{
-									func_710(iParam1, iParam2, fParam3, bParam4);
+									func_710(iParam1, iParam2, iParam3, bParam4);
 								}
 								return;
 							}
@@ -101736,10 +101736,10 @@ void func_709(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 								case 12:
 								case 13:
 								case 14:
-									func_710(iParam0, iParam2, fParam3, bParam4);
+									func_710(iParam0, iParam2, iParam3, bParam4);
 									if (iParam1 != 27)
 									{
-										func_710(iParam1, iParam2, fParam3, bParam4);
+										func_710(iParam1, iParam2, iParam3, bParam4);
 									}
 									return;
 								
@@ -101769,12 +101769,12 @@ void func_709(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 	}
 }
 
-void func_710(int iParam0, int iParam1, float* fParam2, bool bParam3)//Position - 0x78EAE
+void func_710(int iParam0, int iParam1, int* iParam2, bool bParam3)//Position - 0x78EAE
 {
 	int iVar0;
 	
 	iVar0 = func_711(iParam0);
-	if (!NETWORK::_NETWORK_REGISTER_TUNABLE_INT_HASH(iVar0, iParam1))
+	if (!NETWORK::NETWORK_DOES_TUNABLE_EXIST_HASH(iVar0, iParam1))
 	{
 		if (bParam3)
 		{
@@ -101783,8 +101783,8 @@ void func_710(int iParam0, int iParam1, float* fParam2, bool bParam3)//Position 
 	}
 	else
 	{
-		*fParam2 = NETWORK::NETWORK_ACCESS_TUNABLE_FLOAT_HASH(iVar0, iParam1);
-		NETWORK::_NETWORK_REGISTER_TUNABLE_FLOAT_HASH(iVar0, iParam1, fParam2);
+		*iParam2 = NETWORK::NETWORK_ACCESS_TUNABLE_BOOL_HASH(iVar0, iParam1);
+		NETWORK::_NETWORK_REGISTER_TUNABLE_BOOL_HASH(iVar0, iParam1, iParam2);
 	}
 	if (bParam3)
 	{
@@ -102160,7 +102160,7 @@ void func_713(int iParam0, int iParam1, int* iParam2, bool bParam3)//Position - 
 	}
 	else
 	{
-		unk_0xC5D08122EC634870(iVar0, iParam1, iParam2);
+		NETWORK::_NETWORK_REGISTER_TUNABLE_INT_HASH(iVar0, iParam1, iParam2);
 	}
 	if (bParam3)
 	{
@@ -123113,7 +123113,7 @@ int func_1148(int iParam0, bool bParam1, int iParam2, bool bParam3, int iParam4,
 			}
 			if (STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS() == 0 || (iParam2 && STREAMING::GET_PLAYER_SWITCH_STATE() > 8))
 			{
-				if (((((!Global_2667225.f_2688 == -1 && !Global_1836578) && !Global_2667225.f_2688 >= 254) && !func_1149()) && !BitTest(Global_4718592.f_168795, 0)) && !(AUDIO::AUDIO_IS_SCRIPTED_MUSIC_PLAYING() && Global_2667225.f_2689 == 0))
+				if (((((!Global_2667225.f_2688 == -1 && !Global_1836578) && !Global_2667225.f_2688 >= 254) && !func_1149()) && !BitTest(Global_4718592.f_168795, 0)) && !(AUDIO::_AUDIO_IS_SCRIPTED_MUSIC_PLAYING_2() && Global_2667225.f_2689 == 0))
 				{
 					if (!func_545(&Global_2725371))
 					{

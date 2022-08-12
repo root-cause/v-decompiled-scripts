@@ -28510,7 +28510,7 @@ void func_679(int iParam0)//Position - 0x27DED
 		{
 			if (!bVar0)
 			{
-				NETSHOPPING::NET_GAMESERVER_BASKET_END();
+				NETSHOPPING::_NET_GAMESERVER_BASKET_DELETE();
 			}
 		}
 		else if (!bVar0)
@@ -29092,9 +29092,9 @@ int func_688(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, va
 	*iParam0 = 0;
 	if (!bVar0)
 	{
-		if (unk_0xE547E9114277098F())
+		if (NETSHOPPING::NET_GAMESERVER_BASKET_END())
 		{
-			NETSHOPPING::NET_GAMESERVER_BASKET_END();
+			NETSHOPPING::_NET_GAMESERVER_BASKET_DELETE();
 		}
 	}
 	if (bVar0 || NETSHOPPING::NET_GAMESERVER_BASKET_START(&iVar3, iParam2, iParam3, iParam4))
@@ -36984,7 +36984,7 @@ void func_1092(int iParam0, int iParam1, bool bParam2, var uParam3, var uParam4)
 			{
 				func_829(18);
 			}
-			if (((!func_658(15) && !VEHICLE::_IS_BOAT_ANCHORED_AND_FROZEN(iParam1)) && unk_0x2467A2D807D37CA3(iParam1)) && func_841(Local_1394.f_743[iParam0 /*8*/]))
+			if (((!func_658(15) && !VEHICLE::_IS_BOAT_ANCHORED_AND_FROZEN(iParam1)) && VEHICLE::CAN_ANCHOR_BOAT_HERE(iParam1)) && func_841(Local_1394.f_743[iParam0 /*8*/]))
 			{
 				VEHICLE::SET_BOAT_ANCHOR(iParam1, true);
 				func_829(17);
@@ -38663,7 +38663,7 @@ void func_1157(int iParam0)//Position - 0x33D0F
 	int iVar0;
 	
 	iVar0 = Global_2667225.f_2691;
-	if ((AUDIO::AUDIO_IS_SCRIPTED_MUSIC_PLAYING() && Global_2667225.f_2689 == 0) && iParam0 == 0)
+	if ((AUDIO::_AUDIO_IS_SCRIPTED_MUSIC_PLAYING_2() && Global_2667225.f_2689 == 0) && iParam0 == 0)
 	{
 		iVar0 = 255;
 	}
@@ -169902,7 +169902,7 @@ void func_2834(int iParam0, char* sParam1, bool bParam2, int iParam3)//Position 
 	{
 		return;
 	}
-	MONEY::_NETWORK_SPENT_NIGHTCLUB_BATHROOM_ATTENDANT(iParam0, 1654525105, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
+	STATS::_PLAYSTATS_NPC_PHONE(iParam0, 1654525105, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
 	if (bParam2)
 	{
 		Global_1973156 = -1;

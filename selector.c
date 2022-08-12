@@ -5329,7 +5329,7 @@ void func_132()//Position - 0x60B5
 									}
 								}
 							}
-							else if (unk_0x6C8E92D4F56B150E() == 1)
+							else if (NETWORK::_0xA8ACB6459542A8C8() == 1)
 							{
 							}
 							else if (func_114() && NETWORK::_NETWORK_HAVE_ONLINE_PRIVILEGE_2() == 0)

@@ -317,7 +317,7 @@ void func_7(int iParam0)//Position - 0x3CA
 		{
 			if (!bVar0)
 			{
-				NETSHOPPING::NET_GAMESERVER_BASKET_END();
+				NETSHOPPING::_NET_GAMESERVER_BASKET_DELETE();
 			}
 		}
 		else if (!bVar0)
@@ -1226,7 +1226,7 @@ void func_32(int iParam0, bool bParam1)//Position - 0x1E2B
 			break;
 		
 		case -180141073:
-			unk_0x2E2B0A3651E8DCC2(Global_4534105[iParam0 /*85*/].f_66.f_1, &(Global_4534105[iParam0 /*85*/].f_14), bVar1, bVar0, 0);
+			MONEY::NETWORK_SPENT_BUY_WANTEDLEVEL(Global_4534105[iParam0 /*85*/].f_66.f_1, &(Global_4534105[iParam0 /*85*/].f_14), bVar1, bVar0, 0);
 			break;
 		
 		case 68030260:
@@ -1242,7 +1242,7 @@ void func_32(int iParam0, bool bParam1)//Position - 0x1E2B
 			break;
 		
 		case -1586170317:
-			unk_0xD20D79671A598594(Global_4534105[iParam0 /*85*/].f_66.f_1, &(Global_4534105[iParam0 /*85*/].f_14.f_26), &(Global_4534105[iParam0 /*85*/].f_14.f_34));
+			MONEY::NETWORK_EARN_FROM_JOB_BONUS(Global_4534105[iParam0 /*85*/].f_66.f_1, &(Global_4534105[iParam0 /*85*/].f_14.f_26), &(Global_4534105[iParam0 /*85*/].f_14.f_34));
 			break;
 		
 		case 650665123:
@@ -1322,7 +1322,7 @@ void func_32(int iParam0, bool bParam1)//Position - 0x1E2B
 			break;
 		
 		case 1612072658:
-			unk_0xDC639BE2424A7A98(Global_4534105[iParam0 /*85*/].f_66.f_1, bVar1, bVar0, 0);
+			MONEY::NETWORK_SPENT_BUY_PASSIVE_MODE(Global_4534105[iParam0 /*85*/].f_66.f_1, bVar1, bVar0, 0);
 			break;
 		
 		case -990286235:
@@ -1424,7 +1424,7 @@ void func_32(int iParam0, bool bParam1)//Position - 0x1E2B
 			break;
 		
 		case 1839532116:
-			unk_0xFD06E55DAF765B32(Global_4534105[iParam0 /*85*/].f_66.f_1, 0, 0, 0);
+			MONEY::NETWORK_SPENT_ROBBED_BY_MUGGER(Global_4534105[iParam0 /*85*/].f_66.f_1, false, false, 0);
 			break;
 		
 		case 941287179:
@@ -1440,7 +1440,7 @@ void func_32(int iParam0, bool bParam1)//Position - 0x1E2B
 			break;
 		
 		case -1834046564:
-			unk_0x633310C9B4B8972C(Global_4534105[iParam0 /*85*/].f_66.f_1, bVar1, bVar0, 0);
+			MONEY::NETWORK_SPENT_TAXI(Global_4534105[iParam0 /*85*/].f_66.f_1, bVar1, bVar0, 0);
 			break;
 		
 		case 393059668:
@@ -1593,7 +1593,7 @@ void func_32(int iParam0, bool bParam1)//Position - 0x1E2B
 			break;
 		
 		case -101307780:
-			unk_0x771E4AB5C79C58E6(Global_4534105[iParam0 /*85*/].f_66.f_1, 0);
+			MONEY::_NETWORK_EARN_FROM_WAGE_PAYMENT(Global_4534105[iParam0 /*85*/].f_66.f_1, 0);
 			break;
 		
 		case 599804707:
@@ -1605,7 +1605,7 @@ void func_32(int iParam0, bool bParam1)//Position - 0x1E2B
 			break;
 		
 		case 1052472386:
-			MONEY::NETWORK_EARN_FROM_JOB_BONUS(Global_4534105[iParam0 /*85*/].f_66.f_1, &(Global_4534105[iParam0 /*85*/].f_14.f_26), &(Global_4534105[iParam0 /*85*/].f_14.f_34));
+			MONEY::_NETWORK_EARN_FROM_CRIMINAL_MASTERMIND_BONUS(Global_4534105[iParam0 /*85*/].f_66.f_1, &(Global_4534105[iParam0 /*85*/].f_14.f_26), &(Global_4534105[iParam0 /*85*/].f_14.f_34));
 			break;
 		
 		case -2130199671:
@@ -1911,7 +1911,7 @@ void func_32(int iParam0, bool bParam1)//Position - 0x1E2B
 			break;
 		
 		case 1775876058:
-			unk_0xC0DE18944A7A9044(Global_4534105[iParam0 /*85*/].f_66.f_1, Global_4534105[iParam0 /*85*/]);
+			MONEY::_NETWORK_EARN_FROM_COLLECTION_ITEM(Global_4534105[iParam0 /*85*/].f_66.f_1, Global_4534105[iParam0 /*85*/]);
 			break;
 		
 		case -842062976:
@@ -2040,7 +2040,7 @@ void func_32(int iParam0, bool bParam1)//Position - 0x1E2B
 			break;
 		
 		case 1280785534:
-			unk_0x5AA4C7A11447C2FD(Global_4534105[iParam0 /*85*/].f_66.f_1, 277);
+			MONEY::_NETWORK_EARN_FROM_AUTOSHOP_INCOME(Global_4534105[iParam0 /*85*/].f_66.f_1, 277);
 			break;
 		
 		case -168319378:

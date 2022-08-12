@@ -89154,7 +89154,7 @@ void func_801(int iParam0)//Position - 0x66436
 		{
 			if (!bVar0)
 			{
-				NETSHOPPING::NET_GAMESERVER_BASKET_END();
+				NETSHOPPING::_NET_GAMESERVER_BASKET_DELETE();
 			}
 		}
 		else if (!bVar0)
@@ -96040,9 +96040,9 @@ void func_866(int iParam0, int iParam1)//Position - 0x6CC4B
 	func_867(iParam0, iParam1, joaat("PLAYLIST_EVENT_GIFT_ACTIVE"), &(Global_262145.f_7123), 1);
 }
 
-void func_867(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam4)//Position - 0x6CDDB
+void func_867(int iParam0, int iParam1, int iParam2, int* iParam3, bool bParam4)//Position - 0x6CDDB
 {
-	func_868(0, iParam2, fParam3, bParam4);
+	func_868(0, iParam2, iParam3, bParam4);
 	if (iParam0 == 0)
 	{
 		return;
@@ -96075,7 +96075,7 @@ void func_867(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 		case 23:
 		case 24:
 		case 25:
-			func_868(1, iParam2, fParam3, bParam4);
+			func_868(1, iParam2, iParam3, bParam4);
 			if (iParam0 == 1)
 			{
 				return;
@@ -96086,7 +96086,7 @@ void func_867(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 				case 3:
 				case 4:
 				case 5:
-					func_868(2, iParam2, fParam3, bParam4);
+					func_868(2, iParam2, iParam3, bParam4);
 					if (iParam0 == 2)
 					{
 						return;
@@ -96096,7 +96096,7 @@ void func_867(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 						case 3:
 						case 4:
 						case 5:
-							func_868(iParam0, iParam2, fParam3, bParam4);
+							func_868(iParam0, iParam2, iParam3, bParam4);
 							return;
 						
 						case 1:
@@ -96150,7 +96150,7 @@ void func_867(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 				case 23:
 				case 24:
 				case 25:
-					func_868(6, iParam2, fParam3, bParam4);
+					func_868(6, iParam2, iParam3, bParam4);
 					if (iParam0 == 6)
 					{
 						return;
@@ -96164,10 +96164,10 @@ void func_867(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 						case 19:
 						case 26:
 						case 24:
-							func_868(iParam0, iParam2, fParam3, bParam4);
+							func_868(iParam0, iParam2, iParam3, bParam4);
 							if (iParam1 != 27)
 							{
-								func_868(iParam1, iParam2, fParam3, bParam4);
+								func_868(iParam1, iParam2, iParam3, bParam4);
 							}
 							return;
 						
@@ -96177,12 +96177,12 @@ void func_867(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 						case 22:
 						case 23:
 						case 25:
-							func_868(15, iParam2, fParam3, bParam4);
+							func_868(15, iParam2, iParam3, bParam4);
 							if (iParam0 == 15)
 							{
 								if (iParam1 != 27)
 								{
-									func_868(iParam1, iParam2, fParam3, bParam4);
+									func_868(iParam1, iParam2, iParam3, bParam4);
 								}
 								return;
 							}
@@ -96193,10 +96193,10 @@ void func_867(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 								case 22:
 								case 23:
 								case 25:
-									func_868(iParam0, iParam2, fParam3, bParam4);
+									func_868(iParam0, iParam2, iParam3, bParam4);
 									if (iParam1 != 27)
 									{
-										func_868(iParam1, iParam2, fParam3, bParam4);
+										func_868(iParam1, iParam2, iParam3, bParam4);
 									}
 									return;
 								
@@ -96212,12 +96212,12 @@ void func_867(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 						case 12:
 						case 13:
 						case 14:
-							func_868(8, iParam2, fParam3, bParam4);
+							func_868(8, iParam2, iParam3, bParam4);
 							if (iParam0 == 8)
 							{
 								if (iParam1 != 27)
 								{
-									func_868(iParam1, iParam2, fParam3, bParam4);
+									func_868(iParam1, iParam2, iParam3, bParam4);
 								}
 								return;
 							}
@@ -96229,10 +96229,10 @@ void func_867(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 								case 12:
 								case 13:
 								case 14:
-									func_868(iParam0, iParam2, fParam3, bParam4);
+									func_868(iParam0, iParam2, iParam3, bParam4);
 									if (iParam1 != 27)
 									{
-										func_868(iParam1, iParam2, fParam3, bParam4);
+										func_868(iParam1, iParam2, iParam3, bParam4);
 									}
 									return;
 								
@@ -96262,12 +96262,12 @@ void func_867(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam
 	}
 }
 
-void func_868(int iParam0, int iParam1, float* fParam2, bool bParam3)//Position - 0x6D1FD
+void func_868(int iParam0, int iParam1, int* iParam2, bool bParam3)//Position - 0x6D1FD
 {
 	int iVar0;
 	
 	iVar0 = func_869(iParam0);
-	if (!NETWORK::_NETWORK_REGISTER_TUNABLE_INT_HASH(iVar0, iParam1))
+	if (!NETWORK::NETWORK_DOES_TUNABLE_EXIST_HASH(iVar0, iParam1))
 	{
 		if (bParam3)
 		{
@@ -96276,8 +96276,8 @@ void func_868(int iParam0, int iParam1, float* fParam2, bool bParam3)//Position 
 	}
 	else
 	{
-		*fParam2 = NETWORK::NETWORK_ACCESS_TUNABLE_FLOAT_HASH(iVar0, iParam1);
-		NETWORK::_NETWORK_REGISTER_TUNABLE_FLOAT_HASH(iVar0, iParam1, fParam2);
+		*iParam2 = NETWORK::NETWORK_ACCESS_TUNABLE_BOOL_HASH(iVar0, iParam1);
+		NETWORK::_NETWORK_REGISTER_TUNABLE_BOOL_HASH(iVar0, iParam1, iParam2);
 	}
 	if (bParam3)
 	{
@@ -96653,7 +96653,7 @@ void func_871(int iParam0, int iParam1, int* iParam2, bool bParam3)//Position - 
 	}
 	else
 	{
-		unk_0xC5D08122EC634870(iVar0, iParam1, iParam2);
+		NETWORK::_NETWORK_REGISTER_TUNABLE_INT_HASH(iVar0, iParam1, iParam2);
 	}
 	if (bParam3)
 	{
@@ -113943,7 +113943,7 @@ void func_1456(int iParam0)//Position - 0x861F9
 	int iVar0;
 	
 	iVar0 = Global_2667225.f_2691;
-	if ((AUDIO::AUDIO_IS_SCRIPTED_MUSIC_PLAYING() && Global_2667225.f_2689 == 0) && iParam0 == 0)
+	if ((AUDIO::_AUDIO_IS_SCRIPTED_MUSIC_PLAYING_2() && Global_2667225.f_2689 == 0) && iParam0 == 0)
 	{
 		iVar0 = 255;
 	}

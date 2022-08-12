@@ -3945,7 +3945,7 @@ void func_95(int iParam0)//Position - 0x3FEE
 						if ((!func_98(Local_47[iParam0 /*6*/], joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING"), 1) && TASK::GET_SCRIPT_TASK_STATUS(Local_47[iParam0 /*6*/], joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING")) == 7) && !func_98(Local_47[iParam0 /*6*/], joaat("SCRIPT_TASK_VEHICLE_SHOOT_AT_ENTITY"), 1))
 						{
 							TASK::TASK_VEHICLE_SHOOT_AT_PED(Local_47[iParam0 /*6*/], PLAYER::PLAYER_PED_ID(), 20f);
-							if (func_199(PED::GET_VEHICLE_PED_IS_USING(Local_47[iParam0 /*6*/])) && unk_0x2467A2D807D37CA3(PED::GET_VEHICLE_PED_IS_USING(Local_47[iParam0 /*6*/])))
+							if (func_199(PED::GET_VEHICLE_PED_IS_USING(Local_47[iParam0 /*6*/])) && VEHICLE::CAN_ANCHOR_BOAT_HERE(PED::GET_VEHICLE_PED_IS_USING(Local_47[iParam0 /*6*/])))
 							{
 								VEHICLE::SET_BOAT_ANCHOR(PED::GET_VEHICLE_PED_IS_USING(Local_47[iParam0 /*6*/]), true);
 								func_58(iParam0, 5);
@@ -3957,7 +3957,7 @@ void func_95(int iParam0)//Position - 0x3FEE
 							{
 								func_58(iParam0, 4);
 								TASK::CLEAR_PED_TASKS(Local_47[iParam0 /*6*/]);
-								if (!func_89(iParam0, 5) && unk_0x2467A2D807D37CA3(PED::GET_VEHICLE_PED_IS_USING(Local_47[iParam0 /*6*/])))
+								if (!func_89(iParam0, 5) && VEHICLE::CAN_ANCHOR_BOAT_HERE(PED::GET_VEHICLE_PED_IS_USING(Local_47[iParam0 /*6*/])))
 								{
 									VEHICLE::SET_BOAT_ANCHOR(PED::GET_VEHICLE_PED_IS_USING(Local_47[iParam0 /*6*/]), true);
 								}

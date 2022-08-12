@@ -1464,7 +1464,7 @@ void func_37(int iParam0, char* sParam1, bool bParam2, int iParam3)//Position - 
 	{
 		return;
 	}
-	MONEY::_NETWORK_SPENT_NIGHTCLUB_BATHROOM_ATTENDANT(iParam0, 1654525105, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
+	STATS::_PLAYSTATS_NPC_PHONE(iParam0, 1654525105, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
 	if (bParam2)
 	{
 		Global_1973156 = -1;
@@ -4112,7 +4112,7 @@ void func_96()//Position - 0x4723
 			}
 			else
 			{
-				unk_0x2E2B0A3651E8DCC2(iLocal_128, &Var4, 0, 0, joaat("char_lester"));
+				MONEY::NETWORK_SPENT_BUY_WANTEDLEVEL(iLocal_128, &Var4, false, false, joaat("char_lester"));
 				func_97(-iLocal_128, 1, 1, 0f);
 			}
 			Global_2689235[iVar0 /*453*/].f_212 = -1;
@@ -4646,7 +4646,7 @@ void func_102(int iParam0)//Position - 0x5353
 		{
 			if (!bVar0)
 			{
-				NETSHOPPING::NET_GAMESERVER_BASKET_END();
+				NETSHOPPING::_NET_GAMESERVER_BASKET_DELETE();
 			}
 		}
 		else if (!bVar0)
@@ -50606,52 +50606,52 @@ void func_894(int iParam0, int iParam1, int iParam2)//Position - 0x38454
 	switch (iParam0)
 	{
 		case -407201236:
-			unk_0xB69B75EFECEA8C8A(iParam1, 0, 1, joaat("char_lester"));
+			MONEY::NETWORK_SPENT_NO_COPS(iParam1, false, true, joaat("char_lester"));
 			break;
 		
 		case -1885444887:
-			unk_0xB370DA8D10149A81(iParam1, 0, 1, joaat("char_mp_merryweather"));
+			MONEY::NETWORK_SPENT_HIRE_MERCENARY(iParam1, false, true, joaat("char_mp_merryweather"));
 			break;
 		
 		case -671062876:
-			unk_0xB4CE8CBF609F48C9(iParam1, 0, 1, joaat("char_mp_brucie"));
+			MONEY::NETWORK_SPENT_BULL_SHARK(iParam1, false, true, joaat("char_mp_brucie"));
 			break;
 		
 		case 2131324797:
-			unk_0xDDB99FAA2DA252AF(iParam1, 0, 1, joaat("char_lester"));
+			MONEY::NETWORK_SPENT_BUY_OFFTHERADAR(iParam1, false, true, joaat("char_lester"));
 			break;
 		
 		case -180141073:
 			Var0 = { func_70(PLAYER::PLAYER_ID()) };
-			unk_0x2E2B0A3651E8DCC2(iParam1, &Var0, 0, 1, joaat("char_lester"));
+			MONEY::NETWORK_SPENT_BUY_WANTEDLEVEL(iParam1, &Var0, false, true, joaat("char_lester"));
 			break;
 		
 		case 1108628223:
-			unk_0xA68E39F91108707E(iParam1, 0, 1, joaat("char_lester"));
+			MONEY::NETWORK_SPENT_BUY_REVEAL_PLAYERS(iParam1, false, true, joaat("char_lester"));
 			break;
 		
 		case 1173654533:
-			unk_0xD4757DA5CA4ABEBD(iParam1, 0, 1, joaat("char_mp_merryweather"));
+			MONEY::NETWORK_SPENT_AMMO_DROP(iParam1, false, true, joaat("char_mp_merryweather"));
 			break;
 		
 		case 1208553146:
-			unk_0x60BAA0F5725CAC6E(iParam1, 0, 1, joaat("char_mp_merryweather"));
+			MONEY::NETWORK_SPENT_BOAT_PICKUP(iParam1, false, true, joaat("char_mp_merryweather"));
 			break;
 		
 		case -663944335:
-			unk_0x2D153944371C57B5(iParam1, 0, 1, joaat("char_mp_merryweather"));
+			MONEY::NETWORK_BUY_HELI_STRIKE(iParam1, false, true, joaat("char_mp_merryweather"));
 			break;
 		
 		case 1515774909:
-			unk_0x70E4920577D2AF8F(iParam1, 0, 1, joaat("char_mp_merryweather"));
+			MONEY::NETWORK_BUY_AIRSTRIKE(iParam1, false, true, joaat("char_mp_merryweather"));
 			break;
 		
 		case -754024203:
-			unk_0x98D10C65A5ED5819(iParam1, 0, 1, joaat("char_mp_merryweather"));
+			MONEY::NETWORK_SPENT_HELI_PICKUP(iParam1, false, true, joaat("char_mp_merryweather"));
 			break;
 		
 		case 1931729587:
-			unk_0x20E0724AA92474E3(iParam1, 0, 1, joaat("char_lamar"));
+			MONEY::NETWORK_SPENT_HIRE_MUGGER(iParam1, false, true, joaat("char_lamar"));
 			break;
 		
 		case 283351220:
@@ -50659,11 +50659,11 @@ void func_894(int iParam0, int iParam1, int iParam2)//Position - 0x38454
 			break;
 		
 		case -1555026615:
-			unk_0x98D10C65A5ED5819(iParam1, 0, 1, 0);
+			MONEY::NETWORK_SPENT_HELI_PICKUP(iParam1, false, true, 0);
 			break;
 		
 		case 522351365:
-			unk_0x60BAA0F5725CAC6E(iParam1, 0, 1, 0);
+			MONEY::NETWORK_SPENT_BOAT_PICKUP(iParam1, false, true, 0);
 			break;
 		
 		case 74383614:
@@ -69596,7 +69596,7 @@ void func_1204()//Position - 0x4CBF9
 						}
 						else
 						{
-							unk_0x98D10C65A5ED5819(func_86(40), 0, 1, -1266520414);
+							MONEY::NETWORK_SPENT_HELI_PICKUP(func_86(40), false, true, -1266520414);
 						}
 						StringCopy(&(Local_122.f_174), "APCAL_HELIC", 16);
 						func_1(Local_122.f_1, &(Local_122.f_170), &(Local_122.f_174), &Local_166, 1);
@@ -69638,7 +69638,7 @@ void func_1204()//Position - 0x4CBF9
 						}
 						else
 						{
-							unk_0x60BAA0F5725CAC6E(func_86(41), 0, 1, -1266520414);
+							MONEY::NETWORK_SPENT_BOAT_PICKUP(func_86(41), false, true, -1266520414);
 						}
 						StringCopy(&(Local_122.f_174), "APCAL_BOATC", 16);
 						func_1(Local_122.f_1, &(Local_122.f_170), &(Local_122.f_174), &Local_166, 1);
@@ -69816,7 +69816,7 @@ void func_1209()//Position - 0x4D157
 	}
 	else
 	{
-		MONEY::NETWORK_BUY_BOUNTY(iVar1, 0, false, joaat("char_lester"));
+		MONEY::NETWORK_SPENT_REQUEST_HEIST(iVar1, false, false, joaat("char_lester"));
 	}
 	func_1210(iVar0);
 	func_93(&(Global_2715699.f_4316.f_233[50 /*2*/]), 1, 0);
@@ -69951,7 +69951,7 @@ void func_1213()//Position - 0x4D3FB
 	func_97(-iVar3, 1, 1, 0f);
 	if (iVar3 > 0)
 	{
-		MONEY::NETWORK_BUY_BOUNTY(iVar3, 0, true, joaat("char_lester"));
+		MONEY::NETWORK_SPENT_REQUEST_HEIST(iVar3, false, true, joaat("char_lester"));
 	}
 	MISC::SET_BIT(&(Global_2815059.f_1777), 6);
 	iVar4 = Local_122.f_181.f_70[Local_122.f_181.f_69];
@@ -81180,7 +81180,7 @@ void func_1409(int iParam0)//Position - 0x5A327
 				{
 					func_97(-func_1088(Local_122.f_181.f_103[0]), 1, 1, 0f);
 					func_555(10, 1, -1);
-					unk_0x2A2E293C460E3BC9(func_1088(Local_122.f_181.f_103[0]), Local_122.f_358, 0, 1, joaat("char_lester"));
+					MONEY::NETWORK_BUY_BOUNTY(func_1088(Local_122.f_181.f_103[0]), Local_122.f_358, false, true, joaat("char_lester"));
 					func_1411(func_113(1, 1), Local_122.f_358, (func_1088(Local_122.f_181.f_103[0]) - Global_262145.f_7104), 0, 1);
 					func_1302(29, 1);
 					MISC::SET_BIT(&(Global_2815059.f_1856.f_1), Local_122.f_358);
@@ -81211,7 +81211,7 @@ void func_1409(int iParam0)//Position - 0x5A327
 								NETSHOPPING::NET_GAMESERVER_SET_TELEMETRY_NONCE_SEED(func_895(iLocal_199));
 							}
 							func_555(10, 1, -1);
-							unk_0x2A2E293C460E3BC9(func_1088(Local_122.f_181.f_103[0]), Local_122.f_358, 0, 1, joaat("char_lester"));
+							MONEY::NETWORK_BUY_BOUNTY(func_1088(Local_122.f_181.f_103[0]), Local_122.f_358, false, true, joaat("char_lester"));
 							func_1411(func_113(1, 1), Local_122.f_358, (func_1088(Local_122.f_181.f_103[0]) - Global_262145.f_7104), 0, 1);
 							func_1302(29, 1);
 							MISC::SET_BIT(&(Global_2815059.f_1856.f_1), Local_122.f_358);

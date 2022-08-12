@@ -6810,7 +6810,7 @@ void func_207(int iParam0)//Position - 0x8C3F
 		{
 			if (!bVar0)
 			{
-				NETSHOPPING::NET_GAMESERVER_BASKET_END();
+				NETSHOPPING::_NET_GAMESERVER_BASKET_DELETE();
 			}
 		}
 		else if (!bVar0)
@@ -11022,9 +11022,9 @@ int func_303(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, va
 	*iParam0 = 0;
 	if (!bVar0)
 	{
-		if (unk_0xE547E9114277098F())
+		if (NETSHOPPING::NET_GAMESERVER_BASKET_END())
 		{
-			NETSHOPPING::NET_GAMESERVER_BASKET_END();
+			NETSHOPPING::_NET_GAMESERVER_BASKET_DELETE();
 		}
 	}
 	if (bVar0 || NETSHOPPING::NET_GAMESERVER_BASKET_START(&iVar3, iParam2, iParam3, iParam4))

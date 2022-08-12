@@ -69180,7 +69180,7 @@ void func_746(int iParam0)//Position - 0x4E6EA
 		{
 			if (!bVar0)
 			{
-				NETSHOPPING::NET_GAMESERVER_BASKET_END();
+				NETSHOPPING::_NET_GAMESERVER_BASKET_DELETE();
 			}
 		}
 		else if (!bVar0)
@@ -77284,7 +77284,7 @@ void func_960(int iParam0)//Position - 0x57A6F
 	int iVar0;
 	
 	iVar0 = Global_2667225.f_2691;
-	if ((AUDIO::AUDIO_IS_SCRIPTED_MUSIC_PLAYING() && Global_2667225.f_2689 == 0) && iParam0 == 0)
+	if ((AUDIO::_AUDIO_IS_SCRIPTED_MUSIC_PLAYING_2() && Global_2667225.f_2689 == 0) && iParam0 == 0)
 	{
 		iVar0 = 255;
 	}
@@ -154225,7 +154225,7 @@ void func_1822(int iParam0, char* sParam1, bool bParam2, int iParam3)//Position 
 	{
 		return;
 	}
-	MONEY::_NETWORK_SPENT_NIGHTCLUB_BATHROOM_ATTENDANT(iParam0, 1654525105, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
+	STATS::_PLAYSTATS_NPC_PHONE(iParam0, 1654525105, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
 	if (bParam2)
 	{
 		Global_1973156 = -1;
@@ -155790,7 +155790,7 @@ void func_1870(int iParam0, char* sParam1, bool bParam2, int iParam3)//Position 
 	{
 		return;
 	}
-	MONEY::_NETWORK_SPENT_NIGHTCLUB_BATHROOM_ATTENDANT(iParam0, -1180597171, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
+	STATS::_PLAYSTATS_NPC_PHONE(iParam0, -1180597171, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
 	if (bParam2)
 	{
 		Global_1973156 = -1;
@@ -166560,9 +166560,9 @@ int func_2229(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, v
 	*iParam0 = 0;
 	if (!bVar0)
 	{
-		if (unk_0xE547E9114277098F())
+		if (NETSHOPPING::NET_GAMESERVER_BASKET_END())
 		{
-			NETSHOPPING::NET_GAMESERVER_BASKET_END();
+			NETSHOPPING::_NET_GAMESERVER_BASKET_DELETE();
 		}
 	}
 	if (bVar0 || NETSHOPPING::NET_GAMESERVER_BASKET_START(&uVar3, iParam2, iParam3, iParam4))

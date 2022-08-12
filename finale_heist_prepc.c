@@ -42357,7 +42357,7 @@ int func_418(int iParam0, bool bParam1)//Position - 0x2FA49
 		iVar2++;
 	}
 	iVar7 = iVar1 * 25;
-	if (unk_0xE3D43E568F45340A(iParam0))
+	if (AUDIO::IS_VEHICLE_AUDIBLY_DAMAGED(iParam0))
 	{
 		iVar11 = 50;
 	}

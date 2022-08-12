@@ -1285,7 +1285,7 @@ void func_40()//Position - 0x107F
 		return;
 	}
 	Local_134.f_19 = (NETWORK::GET_NETWORK_TIME_ACCURATE() - Local_134.f_19);
-	unk_0xC9E0752C5AF51DC0(MISC::GET_HASH_KEY(&Local_134), Local_134.f_16, Local_134.f_17, Local_134.f_18, Local_134.f_19, Local_134.f_20, Local_134.f_21);
+	STATS::_PLAYSTATS_ARCADEGAME(MISC::GET_HASH_KEY(&Local_134), Local_134.f_16, Local_134.f_17, Local_134.f_18, Local_134.f_19, Local_134.f_20, Local_134.f_21);
 }
 
 int func_41()//Position - 0x10D8

@@ -96,7 +96,7 @@ int func_1(var uParam0, var uParam1)//Position - 0x6D
 					{
 						if (iVar7 != 0 && Var3.f_5 != 0)
 						{
-							if (unk_0xA0D79393A2E01ED3(iVar7, Var3.f_5, &fVar0))
+							if (NETWORK::NETWORK_ACCESS_TUNABLE_FLOAT_HASH(iVar7, Var3.f_5, &fVar0))
 							{
 								if (fVar0 > Var3.f_1 || fVar0 < Var3.f_0)
 								{

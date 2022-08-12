@@ -16335,7 +16335,7 @@ void func_311()//Position - 0x18FC3
 	{
 		Var1 = { ENTITY::GET_ENTITY_COORDS(func_7(), false) };
 	}
-	unk_0xBE608F8C2140BDFD(iVar2, Var0.f_0, Var0.f_1, Var0.f_2, iVar3, Var1.f_0, Var1.f_1, Var1.f_2, iVar4);
+	STATS::_PLAYSTATS_FAST_TRVL(iVar2, Var0.f_0, Var0.f_1, Var0.f_2, iVar3, Var1.f_0, Var1.f_1, Var1.f_2, iVar4);
 }
 
 int func_312(int iParam0)//Position - 0x19049

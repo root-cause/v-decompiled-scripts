@@ -3321,7 +3321,7 @@ void func_129(int iParam0)//Position - 0x3D31
 		{
 			if (!Global_2667225.f_2688 == -1)
 			{
-				if (((Global_2667225.f_2688 < 255 && !func_130()) && !BitTest(Global_4718592.f_168795, 0)) && !(AUDIO::AUDIO_IS_SCRIPTED_MUSIC_PLAYING() && (Global_2667225.f_2689 == 0 && iParam0 == 0)))
+				if (((Global_2667225.f_2688 < 255 && !func_130()) && !BitTest(Global_4718592.f_168795, 0)) && !(AUDIO::_AUDIO_IS_SCRIPTED_MUSIC_PLAYING_2() && (Global_2667225.f_2689 == 0 && iParam0 == 0)))
 				{
 					AUDIO::SET_RADIO_TO_STATION_INDEX(Global_2667225.f_2688);
 				}
@@ -3583,7 +3583,7 @@ void func_151(int iParam0)//Position - 0x423B
 	int iVar0;
 	
 	iVar0 = Global_2667225.f_2691;
-	if ((AUDIO::AUDIO_IS_SCRIPTED_MUSIC_PLAYING() && Global_2667225.f_2689 == 0) && iParam0 == 0)
+	if ((AUDIO::_AUDIO_IS_SCRIPTED_MUSIC_PLAYING_2() && Global_2667225.f_2689 == 0) && iParam0 == 0)
 	{
 		iVar0 = 255;
 	}

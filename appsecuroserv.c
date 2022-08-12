@@ -12463,7 +12463,7 @@ void func_231(int iParam0)//Position - 0xB177
 		{
 			if (!bVar0)
 			{
-				NETSHOPPING::NET_GAMESERVER_BASKET_END();
+				NETSHOPPING::_NET_GAMESERVER_BASKET_DELETE();
 			}
 		}
 		else if (!bVar0)
@@ -13240,9 +13240,9 @@ int func_249(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, va
 	*iParam0 = 0;
 	if (!bVar0)
 	{
-		if (unk_0xE547E9114277098F())
+		if (NETSHOPPING::NET_GAMESERVER_BASKET_END())
 		{
-			NETSHOPPING::NET_GAMESERVER_BASKET_END();
+			NETSHOPPING::_NET_GAMESERVER_BASKET_DELETE();
 		}
 	}
 	if (bVar0 || NETSHOPPING::NET_GAMESERVER_BASKET_START(&uVar3, iParam2, iParam3, iParam4))
@@ -37053,7 +37053,7 @@ void func_702(int iParam0, int iParam1, bool bParam2)//Position - 0x280CA
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
-void func_703(float fParam0, float fParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6)//Position - 0x28247
+void func_703(float* fParam0, float* fParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6)//Position - 0x28247
 {
 	int iVar0;
 	int iVar1;
@@ -37064,9 +37064,9 @@ void func_703(float fParam0, float fParam1, int iParam2, int iParam3, int iParam
 	func_704(iVar0, iVar1, joaat("CASH_MULTIPLIER"), fParam1, 1);
 }
 
-void func_704(int iParam0, int iParam1, int iParam2, var uParam3, bool bParam4)//Position - 0x28286
+void func_704(int iParam0, int iParam1, int iParam2, float* fParam3, bool bParam4)//Position - 0x28286
 {
-	func_705(0, iParam2, uParam3, bParam4);
+	func_705(0, iParam2, fParam3, bParam4);
 	if (iParam0 == 0)
 	{
 		return;
@@ -37099,7 +37099,7 @@ void func_704(int iParam0, int iParam1, int iParam2, var uParam3, bool bParam4)/
 		case 23:
 		case 24:
 		case 25:
-			func_705(1, iParam2, uParam3, bParam4);
+			func_705(1, iParam2, fParam3, bParam4);
 			if (iParam0 == 1)
 			{
 				return;
@@ -37110,7 +37110,7 @@ void func_704(int iParam0, int iParam1, int iParam2, var uParam3, bool bParam4)/
 				case 3:
 				case 4:
 				case 5:
-					func_705(2, iParam2, uParam3, bParam4);
+					func_705(2, iParam2, fParam3, bParam4);
 					if (iParam0 == 2)
 					{
 						return;
@@ -37120,7 +37120,7 @@ void func_704(int iParam0, int iParam1, int iParam2, var uParam3, bool bParam4)/
 						case 3:
 						case 4:
 						case 5:
-							func_705(iParam0, iParam2, uParam3, bParam4);
+							func_705(iParam0, iParam2, fParam3, bParam4);
 							return;
 						
 						case 1:
@@ -37174,7 +37174,7 @@ void func_704(int iParam0, int iParam1, int iParam2, var uParam3, bool bParam4)/
 				case 23:
 				case 24:
 				case 25:
-					func_705(6, iParam2, uParam3, bParam4);
+					func_705(6, iParam2, fParam3, bParam4);
 					if (iParam0 == 6)
 					{
 						return;
@@ -37188,10 +37188,10 @@ void func_704(int iParam0, int iParam1, int iParam2, var uParam3, bool bParam4)/
 						case 19:
 						case 26:
 						case 24:
-							func_705(iParam0, iParam2, uParam3, bParam4);
+							func_705(iParam0, iParam2, fParam3, bParam4);
 							if (iParam1 != 27)
 							{
-								func_705(iParam1, iParam2, uParam3, bParam4);
+								func_705(iParam1, iParam2, fParam3, bParam4);
 							}
 							return;
 						
@@ -37201,12 +37201,12 @@ void func_704(int iParam0, int iParam1, int iParam2, var uParam3, bool bParam4)/
 						case 22:
 						case 23:
 						case 25:
-							func_705(15, iParam2, uParam3, bParam4);
+							func_705(15, iParam2, fParam3, bParam4);
 							if (iParam0 == 15)
 							{
 								if (iParam1 != 27)
 								{
-									func_705(iParam1, iParam2, uParam3, bParam4);
+									func_705(iParam1, iParam2, fParam3, bParam4);
 								}
 								return;
 							}
@@ -37217,10 +37217,10 @@ void func_704(int iParam0, int iParam1, int iParam2, var uParam3, bool bParam4)/
 								case 22:
 								case 23:
 								case 25:
-									func_705(iParam0, iParam2, uParam3, bParam4);
+									func_705(iParam0, iParam2, fParam3, bParam4);
 									if (iParam1 != 27)
 									{
-										func_705(iParam1, iParam2, uParam3, bParam4);
+										func_705(iParam1, iParam2, fParam3, bParam4);
 									}
 									return;
 								
@@ -37236,12 +37236,12 @@ void func_704(int iParam0, int iParam1, int iParam2, var uParam3, bool bParam4)/
 						case 12:
 						case 13:
 						case 14:
-							func_705(8, iParam2, uParam3, bParam4);
+							func_705(8, iParam2, fParam3, bParam4);
 							if (iParam0 == 8)
 							{
 								if (iParam1 != 27)
 								{
-									func_705(iParam1, iParam2, uParam3, bParam4);
+									func_705(iParam1, iParam2, fParam3, bParam4);
 								}
 								return;
 							}
@@ -37253,10 +37253,10 @@ void func_704(int iParam0, int iParam1, int iParam2, var uParam3, bool bParam4)/
 								case 12:
 								case 13:
 								case 14:
-									func_705(iParam0, iParam2, uParam3, bParam4);
+									func_705(iParam0, iParam2, fParam3, bParam4);
 									if (iParam1 != 27)
 									{
-										func_705(iParam1, iParam2, uParam3, bParam4);
+										func_705(iParam1, iParam2, fParam3, bParam4);
 									}
 									return;
 								
@@ -37286,24 +37286,24 @@ void func_704(int iParam0, int iParam1, int iParam2, var uParam3, bool bParam4)/
 	}
 }
 
-void func_705(int iParam0, int iParam1, var uParam2, bool bParam3)//Position - 0x286A8
+void func_705(int iParam0, int iParam1, float* fParam2, bool bParam3)//Position - 0x286A8
 {
 	int iVar0;
 	var uVar1;
 	
 	iVar0 = func_706(iParam0);
-	uVar1 = *uParam2;
-	if (!unk_0xA0D79393A2E01ED3(iVar0, iParam1, uParam2))
+	uVar1 = *fParam2;
+	if (!NETWORK::NETWORK_ACCESS_TUNABLE_FLOAT_HASH(iVar0, iParam1, fParam2))
 	{
 		if (bParam3)
 		{
 		}
 		return;
-		*uParam2 = uVar1;
+		*fParam2 = uVar1;
 	}
 	else
 	{
-		NETWORK::NETWORK_ACCESS_TUNABLE_BOOL_HASH(iVar0, iParam1, uParam2);
+		NETWORK::_NETWORK_REGISTER_TUNABLE_FLOAT_HASH(iVar0, iParam1, fParam2);
 	}
 	if (bParam3)
 	{
