@@ -1056,14 +1056,14 @@ void func_1()//Position - 0x9AE
 			func_243();
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 			func_3(0);
-			if (!PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_341) || ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), 2116425869))
+			if (!PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_341) || ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("break_out")))
 			{
 				if (iLocal_370)
 				{
 					func_256(PLAYER::PLAYER_ID(), 1, 0, 0);
 					iLocal_370 = 0;
 				}
-				if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), 2116425869))
+				if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("break_out")))
 				{
 					if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_341))
 					{

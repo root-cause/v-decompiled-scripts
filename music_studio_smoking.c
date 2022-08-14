@@ -73621,7 +73621,7 @@ void func_362()//Position - 0x58340
 	STREAMING::REQUEST_NAMED_PTFX_ASSET("scr_sec");
 	if (STREAMING::HAS_NAMED_PTFX_ASSET_LOADED("scr_sec"))
 	{
-		if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), -459002777))
+		if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("vfx_sec_weed_lighter_start")))
 		{
 			if (!BitTest(Local_112.f_1, 0))
 			{
@@ -73635,19 +73635,19 @@ void func_362()//Position - 0x58340
 				Local_112.f_8 = GRAPHICS::START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY("scr_sec_weed_lighter_flame", NETWORK::NET_TO_OBJ(Local_109[Local_112.f_3]), 0f, 0f, 0.05f, 0f, 0f, 0f, 1f, false, false, false, 1065353216, 1065353216, 1065353216, 0);
 			}
 		}
-		if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), 253297497))
+		if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("vfx_sec_weed_lighter_stop")))
 		{
 			if (GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(Local_112.f_8))
 			{
 				GRAPHICS::STOP_PARTICLE_FX_LOOPED(Local_112.f_8, false);
 			}
 		}
-		if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), -1314208391) && !GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(Local_112.f_6))
+		if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("vfx_sec_weed_smoke_start")) && !GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(Local_112.f_6))
 		{
 			GRAPHICS::USE_PARTICLE_FX_ASSET("scr_sec");
 			Local_112.f_6 = GRAPHICS::START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY("scr_sec_weed_smoke", NETWORK::NET_TO_OBJ(Local_109.f_3[Local_112.f_3]), -0.07f, 0f, 0f, 0f, 0f, 0f, 1f, false, false, false, 1065353216, 1065353216, 1065353216, 0);
 		}
-		if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), 854548828))
+		if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("vfx_sec_weed_smoke_stop")))
 		{
 			if (GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(Local_112.f_6))
 			{
@@ -73666,7 +73666,7 @@ void func_362()//Position - 0x58340
 				GRAPHICS::STOP_PARTICLE_FX_LOOPED(Local_112.f_7, false);
 			}
 		}
-		if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), 1923273193))
+		if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("vfx_sec_weed_smoke_exhale_start")))
 		{
 			if (!BitTest(Local_112.f_1, 1))
 			{

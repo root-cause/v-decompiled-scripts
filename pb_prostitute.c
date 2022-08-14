@@ -1687,7 +1687,7 @@ void func_36(var uParam0)//Position - 0x10AA
 
 bool func_37()//Position - 0x10E5
 {
-	return ENTITY::HAS_ANIM_EVENT_FIRED(iLocal_90, 876132797);
+	return ENTITY::HAS_ANIM_EVENT_FIRED(iLocal_90, joaat("sex_bounce"));
 }
 
 void func_38()//Position - 0x10F8
@@ -6636,7 +6636,7 @@ void func_195()//Position - 0x6BA0
 		switch (iLocal_289)
 		{
 			case 0:
-				if (ENTITY::HAS_ANIM_EVENT_FIRED(iLocal_90, 876132797))
+				if (ENTITY::HAS_ANIM_EVENT_FIRED(iLocal_90, joaat("sex_bounce")))
 				{
 					PAD::SET_PAD_SHAKE(0, 200, 84);
 					ENTITY::APPLY_FORCE_TO_ENTITY(iLocal_93, 1, 0f, 0f, -0.05f, 0f, 0f, 0f, 0, true, true, true, true, false);
@@ -6675,7 +6675,7 @@ void func_195()//Position - 0x6BA0
 						}
 					}
 				}
-				else if (ENTITY::HAS_ANIM_EVENT_FIRED(iLocal_90, 876132797))
+				else if (ENTITY::HAS_ANIM_EVENT_FIRED(iLocal_90, joaat("sex_bounce")))
 				{
 					PAD::SET_PAD_SHAKE(0, 200, 252);
 					ENTITY::APPLY_FORCE_TO_ENTITY(iLocal_93, 1, 0f, 0f, -0.1f, 0f, 0f, 0f, 0, true, true, true, true, false);

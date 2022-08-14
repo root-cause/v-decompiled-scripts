@@ -1801,7 +1801,7 @@ void func_39()//Position - 0x12CB
 					AUDIO::PLAY_SOUND_FRONTEND(-1, "1st_Person_Transition", "PLAYER_SWITCH_CUSTOM_SOUNDSET", true);
 					iLocal_528 = 1;
 				}
-				if (((PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_150) && PED::GET_SYNCHRONIZED_SCENE_PHASE(iLocal_150) == 1f) || func_92()) || ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), -571081548))
+				if (((PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_150) && PED::GET_SYNCHRONIZED_SCENE_PHASE(iLocal_150) == 1f) || func_92()) || ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("walkinterruptable")))
 				{
 					CAM::RENDER_SCRIPT_CAMS(false, false, 3000, true, false, 0);
 					CAM::DESTROY_ALL_CAMS(false);

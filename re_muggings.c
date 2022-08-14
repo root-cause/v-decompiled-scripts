@@ -1116,7 +1116,7 @@ void __EntryFunction__()//Position - 0x0
 								PED::FORCE_PED_MOTION_STATE(iLocal_61, joaat("MotionState_Run"), true, 0, false);
 								iLocal_124 = 1;
 							}
-							if (ENTITY::HAS_ANIM_EVENT_FIRED(iLocal_61, -2134635134))
+							if (ENTITY::HAS_ANIM_EVENT_FIRED(iLocal_61, joaat("ends_in_run")))
 							{
 								TASK::TASK_SMART_FLEE_PED(iLocal_61, iLocal_60, 200f, -1, false, false);
 								PED::FORCE_PED_MOTION_STATE(iLocal_61, joaat("MotionState_Run"), true, 0, false);

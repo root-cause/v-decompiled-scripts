@@ -8011,7 +8011,7 @@ int func_335(char* sParam0)//Position - 0x83A2
 
 int func_336(int iParam0, char* sParam1)//Position - 0x8430
 {
-	if ((((iParam0 == 1518810369 || iParam0 == 1518810369) || iParam0 == 1518810369) || MISC::ARE_STRINGS_EQUAL("\", sParam1)) || MISC::ARE_STRINGS_EQUAL("/", sParam1))
+	if ((((iParam0 == joaat("/") || iParam0 == joaat("/")) || iParam0 == joaat("/")) || MISC::ARE_STRINGS_EQUAL("\", sParam1)) || MISC::ARE_STRINGS_EQUAL("/", sParam1))
 	{
 		return 0;
 	}
@@ -8254,7 +8254,7 @@ int func_336(int iParam0, char* sParam1)//Position - 0x8430
 		case joaat("?"):
 		case joaat("@"):
 		case 1550006445:
-		case 1518810369:
+		case joaat("/"):
 		case 2118548595:
 		case joaat("^"):
 		case joaat("_"):

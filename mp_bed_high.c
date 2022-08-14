@@ -656,14 +656,14 @@ void func_14(var uParam0)//Position - 0x4B4
 		case 9:
 			func_258();
 			func_16(0);
-			if (!PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_77) || ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), 2116425869))
+			if (!PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_77) || ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("break_out")))
 			{
 				if (((iLocal_88 && !STREAMING::IS_NEW_LOAD_SCENE_ACTIVE()) && !PLAYER::IS_PLAYER_TELEPORT_ACTIVE()) && !func_29(PLAYER::PLAYER_ID()))
 				{
 					func_270(PLAYER::PLAYER_ID(), 1, 0, 0);
 					iLocal_88 = 0;
 				}
-				if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), 2116425869))
+				if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("break_out")))
 				{
 					if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_77))
 					{

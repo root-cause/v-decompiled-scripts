@@ -2512,7 +2512,7 @@ void func_2()//Position - 0x3DD
 			{
 				if (func_89(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_PLAY_ANIM")))
 				{
-					if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), -352013938))
+					if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("walkinterruptible")))
 					{
 						bLocal_406 = true;
 					}

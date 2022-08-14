@@ -62574,7 +62574,7 @@ void func_577(bool bParam0)//Position - 0x4BEAA
 				TASK::TASK_PERFORM_SEQUENCE(Local_228[15 /*2*/], iLocal_2614);
 				TASK::CLEAR_SEQUENCE_TASK(&iLocal_2614);
 			}
-			else if (ENTITY::HAS_ANIM_EVENT_FIRED(Local_228[15 /*2*/], -1864400582))
+			else if (ENTITY::HAS_ANIM_EVENT_FIRED(Local_228[15 /*2*/], joaat("exhale")))
 			{
 				GRAPHICS::START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE("cs_cig_exhale_mouth", Local_228[15 /*2*/], 0f, 0f, 0f, 0f, 0f, 0f, 31086, 1f, false, false, false);
 			}
@@ -62603,7 +62603,7 @@ void func_577(bool bParam0)//Position - 0x4BEAA
 			TASK::TASK_PERFORM_SEQUENCE(Local_228[13 /*2*/], iLocal_2614);
 			TASK::CLEAR_SEQUENCE_TASK(&iLocal_2614);
 		}
-		else if (ENTITY::HAS_ANIM_EVENT_FIRED(Local_228[13 /*2*/], -1864400582))
+		else if (ENTITY::HAS_ANIM_EVENT_FIRED(Local_228[13 /*2*/], joaat("exhale")))
 		{
 			GRAPHICS::START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE("cs_cig_exhale_mouth", Local_228[13 /*2*/], 0f, 0f, 0f, 0f, 0f, 0f, 31086, 1f, false, false, false);
 		}
@@ -62631,7 +62631,7 @@ void func_577(bool bParam0)//Position - 0x4BEAA
 			TASK::TASK_PERFORM_SEQUENCE(Local_228[14 /*2*/], iLocal_2614);
 			TASK::CLEAR_SEQUENCE_TASK(&iLocal_2614);
 		}
-		else if (ENTITY::HAS_ANIM_EVENT_FIRED(Local_228[14 /*2*/], -1864400582))
+		else if (ENTITY::HAS_ANIM_EVENT_FIRED(Local_228[14 /*2*/], joaat("exhale")))
 		{
 			GRAPHICS::START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE("cs_cig_exhale_mouth", Local_228[14 /*2*/], 0f, 0f, 0f, 0f, 0f, 0f, 31086, 1f, false, false, false);
 		}

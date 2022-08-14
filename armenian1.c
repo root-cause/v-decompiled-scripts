@@ -42650,7 +42650,7 @@ void func_376()//Position - 0x2F649
 			}
 			if (ENTITY::DOES_ENTITY_EXIST(iLocal_431))
 			{
-				if (ENTITY::HAS_ANIM_EVENT_FIRED(Local_473.f_0, -2033458239))
+				if (ENTITY::HAS_ANIM_EVENT_FIRED(Local_473.f_0, joaat("phone_disappear")))
 				{
 					func_273(&iLocal_431, 1);
 				}

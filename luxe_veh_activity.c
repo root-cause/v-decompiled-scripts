@@ -74630,7 +74630,7 @@ void func_346(var uParam0, var uParam1)//Position - 0x590C5
 		{
 			if (!iLocal_47)
 			{
-				if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), -2121855126))
+				if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("begin_exhale")))
 				{
 					GRAPHICS::USE_PARTICLE_FX_ASSET("scr_mp_cig_plane");
 					GRAPHICS::START_NETWORKED_PARTICLE_FX_NON_LOOPED_ON_PED_BONE("ent_anim_cig_exhale_mth_plane", PLAYER::PLAYER_PED_ID(), -0.025f, 0.13f, 0f, 0f, 0f, 0f, 31086, 1f, false, false, false);
@@ -74638,7 +74638,7 @@ void func_346(var uParam0, var uParam1)//Position - 0x590C5
 					iLocal_47 = 1;
 				}
 			}
-			else if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), 1376297906))
+			else if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("begin_inhale")))
 			{
 				GRAPHICS::SET_PARTICLE_FX_LOOPED_EVOLUTION(uParam1->f_52, "light_intensity", (uParam1->f_63 * 1.5f), false);
 				uParam1->f_309 = 1;
@@ -74833,7 +74833,7 @@ void func_351(var uParam0, var uParam1, var uParam2)//Position - 0x59632
 			iVar3 = PLAYER::GET_PLAYER_PED(bVar2);
 			if ((uParam2[bVar2 /*8*/])->f_7 == 2)
 			{
-				if (ENTITY::HAS_ANIM_EVENT_FIRED(iVar3, 1715754472))
+				if (ENTITY::HAS_ANIM_EVENT_FIRED(iVar3, joaat("put_down_bottle")))
 				{
 					MISC::CLEAR_BIT(&(uParam1->f_48), bVar2);
 					MISC::CLEAR_BIT(&(uParam1->f_49), bVar2);
@@ -74842,14 +74842,14 @@ void func_351(var uParam0, var uParam1, var uParam2)//Position - 0x59632
 			}
 			if ((uParam2[bVar2 /*8*/])->f_7 != 2)
 			{
-				if (ENTITY::HAS_ANIM_EVENT_FIRED(iVar3, 2112143076))
+				if (ENTITY::HAS_ANIM_EVENT_FIRED(iVar3, joaat("put_down_flute")))
 				{
 					MISC::CLEAR_BIT(&(uParam1->f_48), bVar2);
 					MISC::CLEAR_BIT(&(uParam1->f_49), bVar2);
 					uParam1->f_12[(uParam2[bVar2 /*8*/])->f_3] = 0;
 				}
 			}
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(iVar3, -228307820))
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(iVar3, joaat("pick_up_bottle")))
 			{
 				if ((!BitTest(uParam1->f_49, bVar2) || !BitTest(uParam1->f_48, bVar2)) || !uParam1->f_12[(uParam2[bVar2 /*8*/])->f_3])
 				{
@@ -74861,19 +74861,19 @@ void func_351(var uParam0, var uParam1, var uParam2)//Position - 0x59632
 					}
 				}
 			}
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(iVar3, -1062529518))
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(iVar3, joaat("pick_up_cigar")))
 			{
 				MISC::SET_BIT(&(uParam1->f_50), bVar2);
 			}
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(iVar3, -1986143665))
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(iVar3, joaat("put_down_cigar")))
 			{
 				MISC::CLEAR_BIT(&(uParam1->f_50), bVar2);
 			}
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(iVar3, 1474989916))
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(iVar3, joaat("create_lighter")))
 			{
 				MISC::SET_BIT(&(uParam1->f_51), bVar2);
 			}
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(iVar3, -700873858))
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(iVar3, joaat("destroy_lighter")))
 			{
 				MISC::CLEAR_BIT(&(uParam1->f_51), bVar2);
 			}
