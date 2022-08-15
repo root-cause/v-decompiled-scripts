@@ -14673,27 +14673,27 @@ int func_29(var uParam0, int iParam1, var uParam2, int iParam3, int iParam4)//Po
 			iVar7 = 0;
 			switch (MISC::GET_HASH_KEY(sVar2))
 			{
-				case -1173387164:
+				case joaat("COMMENT_ON_CELEB_JIMMY"):
 					iVar7 = 1;
 					break;
 				
-				case -1341355415:
+				case joaat("COMMENT_ON_CELEB_KERRY"):
 					iVar7 = 3;
 					break;
 				
-				case 606624234:
+				case joaat("COMMENT_ON_CELEB_POPPY"):
 					iVar7 = 4;
 					break;
 				
-				case 425718265:
+				case joaat("COMMENT_ON_CELEB_TYLER"):
 					iVar7 = 5;
 					break;
 				
-				case 2125830386:
+				case joaat("COMMENT_ON_CELEB_MIRANDA"):
 					iVar7 = 6;
 					break;
 				
-				case 862212437:
+				case joaat("COMMENT_ON_CELEB_LACEY"):
 					iVar7 = 2;
 					break;
 			}
@@ -14719,27 +14719,27 @@ int func_29(var uParam0, int iParam1, var uParam2, int iParam3, int iParam4)//Po
 				iVar10 = -1;
 				switch (MISC::GET_HASH_KEY(sVar2))
 				{
-					case -548347289:
+					case joaat("LAZFM_ANJB1"):
 						iVar10 = 22;
 						break;
 					
-					case 1687378398:
+					case joaat("LAZFM_ANLJ1"):
 						iVar10 = 23;
 						break;
 					
-					case -1347825087:
+					case joaat("LAZFM_ANKM1"):
 						iVar10 = 24;
 						break;
 					
-					case 1074326450:
+					case joaat("LAZFM_ANPM1"):
 						iVar10 = 25;
 						break;
 					
-					case -1453440037:
+					case joaat("LAZFM_ANTD1"):
 						iVar10 = 26;
 						break;
 					
-					case 1843125432:
+					case joaat("LAZFM_ANMC1"):
 						iVar10 = 27;
 						break;
 					
@@ -23170,7 +23170,7 @@ struct<16> func_200(int iParam0, int iParam1)//Position - 0x12E21
 	
 	iVar0 = MISC::GET_HASH_KEY(func_22(iParam0, iParam1));
 	StringCopy(&Var1, "BASE_Prop_Battle_Fan", 64);
-	if (iVar0 == -2016185107 || iVar0 == 1101928234)
+	if (iVar0 == joaat("POSE_B_LONG_TRANS_DANCE_A") || iVar0 == joaat("POSE_E_IDLE_B"))
 	{
 		StringCopy(&Var1, func_22(iParam0, iParam1), 64);
 		StringConCat(&Var1, "_prop_battle_fan", 64);
@@ -23190,12 +23190,12 @@ struct<16> func_201(int iParam0, int iParam1)//Position - 0x12E71
 			if (!MISC::IS_STRING_NULL_OR_EMPTY(func_22(iParam0, iParam1)))
 			{
 				iVar1 = MISC::GET_HASH_KEY(func_22(iParam0, iParam1));
-				if (iVar1 == -1130026047 || iVar1 == 2040364024)
+				if (iVar1 == joaat("TOU_SYNC_H") || iVar1 == joaat("TOU_DANCE_L"))
 				{
 					StringConCat(&Var0, func_22(iParam0, iParam1), 64);
 					StringConCat(&Var0, "_glass_cc", 64);
 				}
-				else if (iVar1 == 586414161 || iVar1 == -196338942)
+				else if (iVar1 == joaat("TOU_SYNC_B") || iVar1 == joaat("TOU_SYNC_C"))
 				{
 					StringConCat(&Var0, func_22(iParam0, iParam1), 64);
 					StringConCat(&Var0, "_glass", 64);
@@ -23204,7 +23204,7 @@ struct<16> func_201(int iParam0, int iParam1)//Position - 0x12E71
 			break;
 		
 		case 10:
-			if (!MISC::IS_STRING_NULL_OR_EMPTY(func_22(iParam0, iParam1)) && MISC::GET_HASH_KEY(func_22(iParam0, iParam1)) == 1274126497)
+			if (!MISC::IS_STRING_NULL_OR_EMPTY(func_22(iParam0, iParam1)) && MISC::GET_HASH_KEY(func_22(iParam0, iParam1)) == joaat("TOU_DANCE_J"))
 			{
 				StringConCat(&Var0, func_22(iParam0, iParam1), 64);
 				StringConCat(&Var0, "_glass_mm", 64);
@@ -23215,12 +23215,12 @@ struct<16> func_201(int iParam0, int iParam1)//Position - 0x12E71
 			if (!MISC::IS_STRING_NULL_OR_EMPTY(func_22(iParam0, iParam1)))
 			{
 				iVar1 = MISC::GET_HASH_KEY(func_22(iParam0, iParam1));
-				if ((iVar1 == 879731227 || iVar1 == 402068295) || iVar1 == 302707725)
+				if ((iVar1 == joaat("DIXN_IDLE_OPEN_A") || iVar1 == joaat("DIXN_SYNC_CNTR_D")) || iVar1 == joaat("DIXN_TRNS_CNTR_TO_LFT_C"))
 				{
 					StringConCat(&Var0, func_22(iParam0, iParam1), 64);
 					StringConCat(&Var0, "_glass", 64);
 				}
-				else if ((iVar1 == -66655434 || iVar1 == -953843340) || iVar1 == -542006595)
+				else if ((iVar1 == joaat("DIXN_DANCE_CNTR_C") || iVar1 == joaat("DIXN_DANCE_CNTR_D")) || iVar1 == joaat("DIXN_SYNC_CNTR_H"))
 				{
 					StringConCat(&Var0, func_22(iParam0, iParam1), 64);
 					StringConCat(&Var0, "_glass^2", 64);
@@ -23232,7 +23232,7 @@ struct<16> func_201(int iParam0, int iParam1)//Position - 0x12E71
 			if (!MISC::IS_STRING_NULL_OR_EMPTY(func_22(iParam0, iParam1)))
 			{
 				iVar1 = MISC::GET_HASH_KEY(func_22(iParam0, iParam1));
-				if (iVar1 == -1880482357 || iVar1 == -1284643626)
+				if (iVar1 == joaat("SOL_SYNC_E") || iVar1 == joaat("SOL_SYNC_G"))
 				{
 					StringConCat(&Var0, func_22(iParam0, iParam1), 64);
 					StringConCat(&Var0, "_wineglass", 64);
@@ -23244,12 +23244,12 @@ struct<16> func_201(int iParam0, int iParam1)//Position - 0x12E71
 			if (!MISC::IS_STRING_NULL_OR_EMPTY(func_22(iParam0, iParam1)))
 			{
 				iVar1 = MISC::GET_HASH_KEY(func_22(iParam0, iParam1));
-				if ((iVar1 == 209219118 || iVar1 == 260003795) || iVar1 == 861556637)
+				if ((iVar1 == joaat("POSE_A_TRANS_DRINK_DOWN") || iVar1 == joaat("POSE_B_LONG_TRANS_DRINK_DOWN")) || iVar1 == joaat("DANCE_B_TRANS_DRINK_DOWN"))
 				{
 					StringConCat(&Var0, func_22(iParam0, iParam1), 64);
 					StringConCat(&Var0, "_tumbler_cs2_s", 64);
 				}
-				else if (iVar1 == 343718244 || iVar1 == -1971017514)
+				else if (iVar1 == joaat("POSE_B_LONG_TRANS_POSE_A") || iVar1 == joaat("POSE_E_IDLE_C"))
 				{
 					StringConCat(&Var0, func_22(iParam0, iParam1), 64);
 					StringConCat(&Var0, "_water_bottle", 64);
@@ -25035,19 +25035,19 @@ struct<16> func_234(int iParam0, int iParam1)//Position - 0x14F27
 			if (!MISC::IS_STRING_NULL_OR_EMPTY(func_22(iParam0, iParam1)))
 			{
 				iVar1 = MISC::GET_HASH_KEY(func_22(iParam0, iParam1));
-				if ((((((((((((iVar1 == -888802358 || iVar1 == -1307358137) || iVar1 == -1785379812) || iVar1 == -298758261) || iVar1 == -1543953328) || iVar1 == -1618759140) || iVar1 == 1060626884) || iVar1 == -320942899) || iVar1 == -1534393500) || iVar1 == -428726779) || iVar1 == -1327577832) || iVar1 == -331051422) || iVar1 == -428726779)
+				if ((((((((((((iVar1 == joaat("DIXN_TRNS_LFT_TO_CNTR_A") || iVar1 == joaat("DIXN_IDLE_CNTR_LNG")) || iVar1 == joaat("DIXN_IDLE_TRNS_HP_NK_HD")) || iVar1 == joaat("DIXN_DANCE_CNTR_B")) || iVar1 == joaat("DIXN_IDLE_CNTR_F")) || iVar1 == joaat("DIXN_TRNS_OPEN_TO_CNTR_A")) || iVar1 == joaat("DIXN_SYNC_CNTR_A")) || iVar1 == joaat("DIXN_TRNS_OPEN_TO_CNTR_C")) || iVar1 == joaat("DIXN_TRNS_CNTR_TO_OPEN_B")) || iVar1 == joaat("DIXN_IDLE_CNTR_LNG_C")) || iVar1 == joaat("DIXN_SYNC_CNTR_I")) || iVar1 == joaat("DIXN_SYNC_LFT_A")) || iVar1 == joaat("DIXN_IDLE_CNTR_LNG_C"))
 				{
 					StringConCat(&Var0, func_22(iParam0, iParam1), 64);
 					StringConCat(&Var0, "_headphones", 64);
 				}
-				else if ((((((func_235(iParam0, iParam1) == 2 || iVar1 == 245829725) || iVar1 == -626093638) || iVar1 == -1067721098) || iVar1 == 402068295) || iVar1 == 1845394450) || iVar1 == -1649336643)
+				else if ((((((func_235(iParam0, iParam1) == 2 || iVar1 == joaat("DIXN_TRNS_OPEN_TO_CNTR_D")) || iVar1 == joaat("DIXN_IDLE_CNTR_B")) || iVar1 == joaat("DIXN_TRNS_LFT_TO_CNTR_B")) || iVar1 == joaat("DIXN_SYNC_CNTR_D")) || iVar1 == joaat("DIXN_TRNS_CNTR_TO_LFT")) || iVar1 == joaat("DIXN_SYNC_CNTR_G"))
 				{
-					if ((((iVar1 == 245829725 && iParam1 == 122) || (iVar1 == -626093638 && iParam1 == 175)) || (iVar1 == -1067721098 && iParam1 == 268)) || (iVar1 == 1845394450 && iParam1 == 33))
+					if ((((iVar1 == joaat("DIXN_TRNS_OPEN_TO_CNTR_D") && iParam1 == 122) || (iVar1 == joaat("DIXN_IDLE_CNTR_B") && iParam1 == 175)) || (iVar1 == joaat("DIXN_TRNS_LFT_TO_CNTR_B") && iParam1 == 268)) || (iVar1 == joaat("DIXN_TRNS_CNTR_TO_LFT") && iParam1 == 33))
 					{
 						StringConCat(&Var0, func_22(iParam0, iParam1), 64);
 						StringConCat(&Var0, "_headphones", 64);
 					}
-					else if ((((iVar1 == -626093638 && (iParam1 == 85 || iParam1 == 309)) || (iVar1 == -1067721098 && iParam1 == 303)) || (iVar1 == 1845394450 && ((iParam1 == 43 || iParam1 == 107) || iParam1 == 159))) || (iVar1 == -1649336643 && iParam1 == 298))
+					else if ((((iVar1 == joaat("DIXN_IDLE_CNTR_B") && (iParam1 == 85 || iParam1 == 309)) || (iVar1 == joaat("DIXN_TRNS_LFT_TO_CNTR_B") && iParam1 == 303)) || (iVar1 == joaat("DIXN_TRNS_CNTR_TO_LFT") && ((iParam1 == 43 || iParam1 == 107) || iParam1 == 159))) || (iVar1 == joaat("DIXN_SYNC_CNTR_G") && iParam1 == 298))
 					{
 						StringConCat(&Var0, func_22(iParam0, iParam1), 64);
 						StringConCat(&Var0, "_headphones_Table", 64);
@@ -25076,12 +25076,12 @@ struct<16> func_234(int iParam0, int iParam1)//Position - 0x14F27
 			if (!MISC::IS_STRING_NULL_OR_EMPTY(func_22(iParam0, iParam1)))
 			{
 				iVar1 = MISC::GET_HASH_KEY(func_22(iParam0, iParam1));
-				if ((((((iVar1 == -1523595174 || iVar1 == 1865861925) || iVar1 == 242029090) || iVar1 == 1912822093) || iVar1 == -1523595174) || iVar1 == -631043465) || iVar1 == 611020307)
+				if ((((((iVar1 == joaat("SOL_SYNC_H") || iVar1 == joaat("SOL_TRANS_LFTHP_TO_CTRMID_A")) || iVar1 == joaat("SOL_DANCE_H")) || iVar1 == joaat("SOL_DANCE_F")) || iVar1 == joaat("SOL_SYNC_H")) || iVar1 == joaat("SOL_TRANS_LFTHP_TO_OUT_A")) || iVar1 == joaat("NEW_SOL_DANCE_A"))
 				{
 					StringConCat(&Var0, func_22(iParam0, iParam1), 64);
 					StringConCat(&Var0, "_headphones", 64);
 				}
-				else if (((iVar1 == 740524004 || iVar1 == 1271336149) || iVar1 == 945222349) || iVar1 == 1016721023)
+				else if (((iVar1 == joaat("SOL_IDLE_LEFT_D") || iVar1 == joaat("SOL_DANCE_D")) || iVar1 == joaat("SOL_IDLE_CTR_MID_G")) || iVar1 == joaat("SOL_DANCE_J"))
 				{
 					StringConCat(&Var0, func_22(iParam0, iParam1), 64);
 					StringConCat(&Var0, "_headphones_neck", 64);

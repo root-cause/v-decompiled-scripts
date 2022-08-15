@@ -2511,19 +2511,19 @@ void func_58()//Position - 0x2686
 		Var0.f_21 = Local_204[iLocal_257 /*21*/].f_17;
 		if (func_67(PLAYER::PLAYER_ID()))
 		{
-			Var0.f_20 = 1983458449;
+			Var0.f_20 = joaat("VIP membership");
 		}
 		else if (func_65())
 		{
-			Var0.f_20 = 1334658487;
+			Var0.f_20 = joaat("paid membership");
 		}
 		else if (func_59())
 		{
-			Var0.f_20 = 980726932;
+			Var0.f_20 = joaat("Gang membership");
 		}
 		else
 		{
-			Var0.f_20 = 939907746;
+			Var0.f_20 = joaat("no membership");
 		}
 		iLocal_250 = 0;
 		STATS::_PLAYSTATS_CASINO_SLOTMACHINE(&Var0);
@@ -7970,19 +7970,19 @@ void func_218(bool bParam0)//Position - 0x8A5A
 		Var0.f_16 = Local_204[iLocal_257 /*21*/].f_17;
 		if (func_67(PLAYER::PLAYER_ID()))
 		{
-			Var0.f_15 = 1983458449;
+			Var0.f_15 = joaat("VIP membership");
 		}
 		else if (func_65())
 		{
-			Var0.f_15 = 1334658487;
+			Var0.f_15 = joaat("paid membership");
 		}
 		else if (func_59())
 		{
-			Var0.f_15 = 980726932;
+			Var0.f_15 = joaat("Gang membership");
 		}
 		else
 		{
-			Var0.f_15 = 939907746;
+			Var0.f_15 = joaat("no membership");
 		}
 		STATS::_PLAYSTATS_CASINO_SLOTMACHINE_LIGHT(&Var0);
 		func_3(&Local_240);

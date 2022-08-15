@@ -6717,10 +6717,10 @@ int func_252()//Position - 0x79EA
 {
 	int iVar0;
 	
-	iVar0 = 345141950;
+	iVar0 = joaat("clipset@anim_heist@arcade@strength@male");
 	if (func_79() && func_71(PLAYER::PLAYER_PED_ID()))
 	{
-		iVar0 = 762993224;
+		iVar0 = joaat("clipset@anim_heist@arcade@strength@female");
 	}
 	return iVar0;
 }
@@ -57571,7 +57571,7 @@ int func_481(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, 
 			}
 			break;
 		
-		case 1019352240:
+		case joaat("crewLogo"):
 			if (bParam8)
 			{
 				if (iVar0 == joaat("mp_m_freemode_01"))
@@ -58156,7 +58156,7 @@ int func_483(int iParam0, char* sParam1, int iParam2)//Position - 0x42158
 {
 	switch (iParam2)
 	{
-		case 1019352240:
+		case joaat("crewLogo"):
 		case joaat("hairOverlay"):
 		case joaat("torsoDecal"):
 			return -1;
@@ -58562,7 +58562,7 @@ int func_483(int iParam0, char* sParam1, int iParam2)//Position - 0x42158
 	}
 	switch (MISC::GET_HASH_KEY(sParam1))
 	{
-		case 1948764112:
+		case joaat("NO_LABEL"):
 			return -1;
 			break;
 		
@@ -63197,7 +63197,7 @@ void func_510(int iParam0, int iParam1)//Position - 0x48EFD
 		{
 			if (iVar1 == 3 || iVar1 == 4)
 			{
-				if (iParam0 == 1019352240)
+				if (iParam0 == joaat("crewLogo"))
 				{
 					func_541(13, 0, Global_78127);
 					func_541(14, 0, Global_78127);

@@ -52122,7 +52122,7 @@ int func_1058(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4,
 			}
 			break;
 		
-		case 1019352240:
+		case joaat("crewLogo"):
 			if (bParam8)
 			{
 				if (iVar0 == joaat("mp_m_freemode_01"))
@@ -52707,7 +52707,7 @@ int func_1060(int iParam0, char* sParam1, int iParam2)//Position - 0x4A11F
 {
 	switch (iParam2)
 	{
-		case 1019352240:
+		case joaat("crewLogo"):
 		case joaat("hairOverlay"):
 		case joaat("torsoDecal"):
 			return -1;
@@ -53113,7 +53113,7 @@ int func_1060(int iParam0, char* sParam1, int iParam2)//Position - 0x4A11F
 	}
 	switch (MISC::GET_HASH_KEY(sParam1))
 	{
-		case 1948764112:
+		case joaat("NO_LABEL"):
 			return -1;
 			break;
 		
@@ -57695,7 +57695,7 @@ void func_1082(int iParam0, int iParam1)//Position - 0x50E99
 		{
 			if (iVar1 == 3 || iVar1 == 4)
 			{
-				if (iParam0 == 1019352240)
+				if (iParam0 == joaat("crewLogo"))
 				{
 					func_1116(13, 0, Global_78127);
 					func_1116(14, 0, Global_78127);
@@ -157445,7 +157445,7 @@ void func_2672()//Position - 0xC5399
 	Local_220.f_462.f_30.f_13 = 810186/*func_2716*/;
 	Local_220.f_462.f_30.f_6 = 810164/*func_2715*/;
 	Local_220.f_462.f_30.f_14 = 810155/*func_2714*/;
-	Local_220.f_462.f_30.f_4 = 810135/*func_2713*/;
+	Local_220.f_462.f_30.f_4 = joaat("FMMC_DT_MG_FPT");
 	Local_220.f_462.f_53 = 810123/*func_2712*/;
 	Local_220.f_462.f_53.f_1 = 810111/*func_2711*/;
 	Local_220.f_462.f_55 = 810092/*func_2710*/;

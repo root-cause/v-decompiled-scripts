@@ -48954,7 +48954,7 @@ int func_380(int iParam0)//Position - 0x307BF
 		
 		case joaat("MP_Gunrunning_Award_020_M_ALT"):
 		case joaat("MP_Gunrunning_Award_020_F_ALT"):
-		case 447234752:
+		case joaat("CLO_GRM_DECL_32"):
 		case joaat("CLO_GRF_DECL_32"):
 			if (!func_252(15423, -1))
 			{

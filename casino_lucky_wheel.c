@@ -28608,37 +28608,37 @@ void func_397(char* sParam0, char[8] cParam1, char[4] cParam2, char[4] cParam3, 
 {
 	switch (MISC::GET_HASH_KEY(&cParam1))
 	{
-		case 64715401:
+		case joaat("GSA_TYPE_R1"):
 		case joaat("GSA_TYPE_R"):
 			StringCopy(&cParam1, "GSA_TYPE_R", 16);
 			break;
 		
-		case -414529079:
+		case joaat("GSA_TYPE_C1"):
 		case joaat("GSA_TYPE_C"):
 			StringCopy(&cParam1, "GSA_TYPE_C", 16);
 			break;
 		
-		case 336264847:
+		case joaat("GSA_TYPE_RO1"):
 		case joaat("GSA_TYPE_RO"):
 			StringCopy(&cParam1, "GSA_TYPE_RO", 16);
 			break;
 		
-		case 531395379:
+		case joaat("GSA_TYPE_CH1"):
 		case joaat("GSA_TYPE_CH"):
 			StringCopy(&cParam1, "GSA_TYPE_CH", 16);
 			break;
 		
-		case 1034118160:
+		case joaat("GSA_TYPE_G1"):
 		case joaat("GSA_TYPE_G"):
 			StringCopy(&cParam1, "GSA_TYPE_G", 16);
 			break;
 		
-		case -218834291:
+		case joaat("GSA_TYPE_B1"):
 		case joaat("GSA_TYPE_B"):
 			StringCopy(&cParam1, "GSA_TYPE_B", 16);
 			break;
 		
-		case 1779531303:
+		case joaat("GSA_TYPE_FW1"):
 		case joaat("GSA_TYPE_FW"):
 			StringCopy(&cParam1, "GSA_TYPE_FW", 16);
 			break;
@@ -38454,45 +38454,45 @@ void func_590(int iParam0, int iParam1)//Position - 0x2C3AF
 	{
 		func_24(1881, iVar0, iParam0, 1, 0);
 		iVar1 = 1722125749;
-		iVar2 = 1927737204;
-		iVar3 = -1379218218;
-		iVar4 = -1095556500;
+		iVar2 = joaat("armor");
+		iVar3 = joaat("event");
+		iVar4 = joaat("get");
 		func_591(1, iVar1, iVar2, iVar0, 0, iVar4, 0, iVar3, 0);
 	}
 	if (func_596(157))
 	{
 		func_24(1882, iVar0, iParam0, 1, 0);
 		iVar5 = -583313972;
-		iVar6 = 1927737204;
-		iVar7 = -1379218218;
-		iVar8 = -1095556500;
+		iVar6 = joaat("armor");
+		iVar7 = joaat("event");
+		iVar8 = joaat("get");
 		func_591(1, iVar5, iVar6, iVar0, 0, iVar8, 0, iVar7, 0);
 	}
 	if (func_596(158))
 	{
 		func_24(1883, iVar0, iParam0, 1, 0);
 		iVar9 = 1174170707;
-		iVar10 = 1927737204;
-		iVar11 = -1379218218;
-		iVar12 = -1095556500;
+		iVar10 = joaat("armor");
+		iVar11 = joaat("event");
+		iVar12 = joaat("get");
 		func_591(1, iVar9, iVar10, iVar0, 0, iVar12, 0, iVar11, 0);
 	}
 	if (func_596(159))
 	{
 		func_24(1884, iVar0, iParam0, 1, 0);
 		iVar13 = 1006076045;
-		iVar14 = 1927737204;
-		iVar15 = -1379218218;
-		iVar16 = -1095556500;
+		iVar14 = joaat("armor");
+		iVar15 = joaat("event");
+		iVar16 = joaat("get");
 		func_591(1, iVar13, iVar14, iVar0, 0, iVar16, 0, iVar15, 0);
 	}
 	if (func_596(160))
 	{
 		func_24(1885, iVar0, iParam0, 1, 0);
 		iVar17 = -391796677;
-		iVar18 = 1927737204;
-		iVar19 = -1379218218;
-		iVar20 = -1095556500;
+		iVar18 = joaat("armor");
+		iVar19 = joaat("event");
+		iVar20 = joaat("get");
 		func_591(1, iVar17, iVar18, iVar0, 0, iVar20, 0, iVar19, 0);
 	}
 }
@@ -42013,39 +42013,39 @@ void func_621()//Position - 0x2FD1E
 	}
 	func_219(1276, iVar0, -1);
 	func_185(16, 1, -1);
-	func_591(1, -251807494, 1359863693, iVar0, -84733279, -1095556500, 0, -472400371, 0);
+	func_591(1, -251807494, joaat("snack"), iVar0, -84733279, joaat("get"), 0, -472400371, 0);
 	if (func_21(1277, -1, 0) < 15)
 	{
 		iVar0 = (15 - func_21(1277, -1, 0));
 	}
 	func_219(1277, iVar0, -1);
 	func_185(15, 1, -1);
-	func_591(1, 1199442189, 1359863693, iVar0, -84733279, -1095556500, 0, -472400371, 0);
+	func_591(1, 1199442189, joaat("snack"), iVar0, -84733279, joaat("get"), 0, -472400371, 0);
 	if (func_21(1278, -1, 0) < 5)
 	{
 		iVar0 = (5 - func_21(1278, -1, 0));
 	}
 	func_185(14, 1, -1);
 	func_219(1278, iVar0, -1);
-	func_591(1, 1486811039, 1359863693, iVar0, -84733279, -1095556500, 0, -472400371, 0);
+	func_591(1, 1486811039, joaat("snack"), iVar0, -84733279, joaat("get"), 0, -472400371, 0);
 	if (func_21(1098, -1, 0) < 20)
 	{
 		iVar0 = (20 - func_21(1098, -1, 0));
 	}
 	func_219(1098, iVar0, -1);
-	func_591(1, -181862273, 1359863693, iVar0, -84733279, -1095556500, 0, -472400371, 0);
+	func_591(1, -181862273, joaat("snack"), iVar0, -84733279, joaat("get"), 0, -472400371, 0);
 	if (func_21(62, -1, 0) < 10)
 	{
 		iVar0 = (10 - func_21(62, -1, 0));
 	}
 	func_219(62, iVar0, -1);
-	func_591(1, -39155154, 1359863693, iVar0, -84733279, -1095556500, 0, -472400371, 0);
+	func_591(1, -39155154, joaat("snack"), iVar0, -84733279, joaat("get"), 0, -472400371, 0);
 	if (func_21(63, -1, 0) < 10)
 	{
 		iVar0 = (10 - func_21(63, -1, 0));
 	}
 	func_219(63, iVar0, -1);
-	func_591(1, -1600998734, 1359863693, iVar0, -84733279, -1095556500, 0, -472400371, 0);
+	func_591(1, -1600998734, joaat("snack"), iVar0, -84733279, joaat("get"), 0, -472400371, 0);
 }
 
 char* func_622(int iParam0)//Position - 0x2FEE4
@@ -42118,7 +42118,7 @@ void func_624(int iParam0)//Position - 0x2FF95
 			}
 			func_219(1276, iVar0, -1);
 			func_185(16, 1, -1);
-			func_591(1, -251807494, 1359863693, iVar0, -84733279, -1095556500, 0, -472400371, 0);
+			func_591(1, -251807494, joaat("snack"), iVar0, -84733279, joaat("get"), 0, -472400371, 0);
 			break;
 		
 		case 1:
@@ -42128,7 +42128,7 @@ void func_624(int iParam0)//Position - 0x2FF95
 			}
 			func_219(1277, iVar0, -1);
 			func_185(15, 1, -1);
-			func_591(1, 1199442189, 1359863693, iVar0, -84733279, -1095556500, 0, -472400371, 0);
+			func_591(1, 1199442189, joaat("snack"), iVar0, -84733279, joaat("get"), 0, -472400371, 0);
 			break;
 		
 		case 2:
@@ -42138,7 +42138,7 @@ void func_624(int iParam0)//Position - 0x2FF95
 			}
 			func_185(14, 1, -1);
 			func_219(1278, iVar0, -1);
-			func_591(1, 1486811039, 1359863693, iVar0, -84733279, -1095556500, 0, -472400371, 0);
+			func_591(1, 1486811039, joaat("snack"), iVar0, -84733279, joaat("get"), 0, -472400371, 0);
 			break;
 		
 		case 4:
@@ -42147,7 +42147,7 @@ void func_624(int iParam0)//Position - 0x2FF95
 				iVar0 = (20 - func_21(1098, -1, 0));
 			}
 			func_219(1098, iVar0, -1);
-			func_591(1, -181862273, 1359863693, iVar0, -84733279, -1095556500, 0, -472400371, 0);
+			func_591(1, -181862273, joaat("snack"), iVar0, -84733279, joaat("get"), 0, -472400371, 0);
 			break;
 		
 		case 0:
@@ -42156,7 +42156,7 @@ void func_624(int iParam0)//Position - 0x2FF95
 				iVar0 = (10 - func_21(62, -1, 0));
 			}
 			func_219(62, iVar0, -1);
-			func_591(1, -39155154, 1359863693, iVar0, -84733279, -1095556500, 0, -472400371, 0);
+			func_591(1, -39155154, joaat("snack"), iVar0, -84733279, joaat("get"), 0, -472400371, 0);
 			break;
 		
 		case 5:
@@ -42165,7 +42165,7 @@ void func_624(int iParam0)//Position - 0x2FF95
 				iVar0 = (10 - func_21(63, -1, 0));
 			}
 			func_219(63, iVar0, -1);
-			func_591(1, -1600998734, 1359863693, iVar0, -84733279, -1095556500, 0, -472400371, 0);
+			func_591(1, -1600998734, joaat("snack"), iVar0, -84733279, joaat("get"), 0, -472400371, 0);
 			break;
 	}
 }

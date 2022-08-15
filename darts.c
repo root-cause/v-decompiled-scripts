@@ -661,43 +661,43 @@ void __EntryFunction__()//Position - 0x0
 								if (iVar12 < 51)
 								{
 									sLocal_220 = func_451("RAYMOND");
-									iLocal_221 = 954610991;
+									iLocal_221 = joaat("RAYMOND");
 								}
 								else if (iVar12 < 101)
 								{
 									sLocal_220 = func_451("JOHAN");
-									iLocal_221 = 94453331;
+									iLocal_221 = joaat("JOHAN");
 								}
 								else if (iVar12 < 151)
 								{
 									sLocal_220 = func_451("STAN");
-									iLocal_221 = 1891555423;
+									iLocal_221 = joaat("STAN");
 								}
 								else
 								{
 									sLocal_220 = func_451("VINCE");
-									iLocal_221 = -1067630349;
+									iLocal_221 = joaat("VINCE");
 								}
 							}
 							else if (iVar12 < 51)
 							{
 								sLocal_220 = func_451("KRISTY");
-								iLocal_221 = 885327384;
+								iLocal_221 = joaat("KRISTY");
 							}
 							else if (iVar12 < 101)
 							{
 								sLocal_220 = func_451("MARLENE");
-								iLocal_221 = -1791000994;
+								iLocal_221 = joaat("MARLENE");
 							}
 							else if (iVar12 < 151)
 							{
 								sLocal_220 = func_451("LORIE");
-								iLocal_221 = 1954368234;
+								iLocal_221 = joaat("LORIE");
 							}
 							else
 							{
 								sLocal_220 = func_451("SHELLEY");
-								iLocal_221 = -863218904;
+								iLocal_221 = joaat("SHELLEY");
 							}
 						}
 						iLocal_36 = OBJECT::CREATE_OBJECT(iLocal_37, Var3, true, true, false);
@@ -22899,45 +22899,45 @@ void func_445(float fParam0, struct<4> Param1, var uParam2, var uParam3, var* uP
 		if (DECORATOR::DECOR_EXIST_ON(iLocal_138[1], "Darts_name"))
 		{
 			iVar0 = DECORATOR::DECOR_GET_INT(iLocal_138[1], "Darts_name");
-			if (954610991 == iVar0)
+			if (joaat("RAYMOND") == iVar0)
 			{
 				sLocal_220 = func_451("RAYMOND");
-				iLocal_221 = 954610991;
+				iLocal_221 = joaat("RAYMOND");
 			}
-			else if (94453331 == iVar0)
+			else if (joaat("JOHAN") == iVar0)
 			{
 				sLocal_220 = func_451("JOHAN");
-				iLocal_221 = 94453331;
+				iLocal_221 = joaat("JOHAN");
 			}
-			else if (1891555423 == iVar0)
+			else if (joaat("STAN") == iVar0)
 			{
 				sLocal_220 = func_451("STAN");
-				iLocal_221 = 1891555423;
+				iLocal_221 = joaat("STAN");
 			}
-			else if (-1067630349 == iVar0)
+			else if (joaat("VINCE") == iVar0)
 			{
 				sLocal_220 = func_451("VINCE");
-				iLocal_221 = -1067630349;
+				iLocal_221 = joaat("VINCE");
 			}
-			else if (885327384 == iVar0)
+			else if (joaat("KRISTY") == iVar0)
 			{
 				sLocal_220 = func_451("KRISTY");
-				iLocal_221 = 885327384;
+				iLocal_221 = joaat("KRISTY");
 			}
-			else if (-1791000994 == iVar0)
+			else if (joaat("MARLENE") == iVar0)
 			{
 				sLocal_220 = func_451("MARLENE");
-				iLocal_221 = -1791000994;
+				iLocal_221 = joaat("MARLENE");
 			}
-			else if (1954368234 == iVar0)
+			else if (joaat("LORIE") == iVar0)
 			{
 				sLocal_220 = func_451("LORIE");
-				iLocal_221 = 1954368234;
+				iLocal_221 = joaat("LORIE");
 			}
-			else if (-863218904 == iVar0)
+			else if (joaat("SHELLEY") == iVar0)
 			{
 				sLocal_220 = func_451("SHELLEY");
-				iLocal_221 = -863218904;
+				iLocal_221 = joaat("SHELLEY");
 			}
 		}
 		DECORATOR::DECOR_SET_INT(iLocal_138[1], "Darts_name", iLocal_221);

@@ -106150,7 +106150,7 @@ int func_1466(int iParam0, int iParam1, int iParam2)//Position - 0x7CCC7
 			switch (iParam1)
 			{
 				case 1373870519:
-					iVar0 = 765227840;
+					iVar0 = joaat("ADAM_BCH_UNQ_CRWD_A_34_DANCER_A");
 					*iParam2 = 0;
 					break;
 			}
@@ -106160,32 +106160,32 @@ int func_1466(int iParam0, int iParam1, int iParam2)//Position - 0x7CCC7
 			switch (iParam1)
 			{
 				case -1027590476:
-					iVar0 = 1469096934;
+					iVar0 = joaat("RAMPA_BCH_UNQ_CRWD_B_103_DANCER_A");
 					*iParam2 = 1;
 					break;
 				
 				case -1607338441:
-					iVar0 = 1384945087;
+					iVar0 = joaat("RAMPA_BCH_UNQ_CRWD_C_56_DANCER_A");
 					*iParam2 = 0;
 					break;
 				
 				case -1630527959:
-					iVar0 = -475632286;
+					iVar0 = joaat("RAMPA_BCH_UNQ_CRWD_D_74_DANCER_A");
 					*iParam2 = 1;
 					break;
 				
 				case -966401322:
-					iVar0 = 2004163292;
+					iVar0 = joaat("RAMPA_BCH_UNQ_CRWD_E_40_DANCER_A");
 					*iParam2 = 0;
 					break;
 				
 				case -246717923:
-					iVar0 = -330133023;
+					iVar0 = joaat("RAMPA_BCH_UNQ_CRWD_F_78_DANCER_A");
 					*iParam2 = 0;
 					break;
 				
 				case -950067780:
-					iVar0 = 163883826;
+					iVar0 = joaat("RAMPA_BCH_UNQ_END_B_212_DANCER_A");
 					*iParam2 = 0;
 					break;
 			}

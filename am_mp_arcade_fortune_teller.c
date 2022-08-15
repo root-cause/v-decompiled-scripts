@@ -963,18 +963,18 @@ struct<16> func_33(int iParam0)//Position - 0xBBB
 					StringCopy(&Var0, "HS3MN_FT_43", 64);
 					break;
 				
-				case 1840358669:
+				case joaat("clearing"):
 				case joaat("Neutral"):
 				case joaat("clear"):
 					StringCopy(&Var0, "HS3MN_FT_44", 64);
 					break;
 				
 				case joaat("OVERCAST"):
-				case 282916021:
+				case joaat("smog"):
 					StringCopy(&Var0, "HS3MN_FT_45", 64);
 					break;
 				
-				case -318724249:
+				case joaat("cloudy"):
 				case joaat("clouds"):
 					StringCopy(&Var0, "HS3MN_FT_46", 64);
 					break;
@@ -984,7 +984,7 @@ struct<16> func_33(int iParam0)//Position - 0xBBB
 					break;
 				
 				case joaat("snow"):
-				case -1429616491:
+				case joaat("xmas"):
 					StringCopy(&Var0, "HS3MN_FT_48", 64);
 					break;
 				
@@ -3038,7 +3038,7 @@ int func_90()//Position - 0x2E26
 			iVar1 = 22;
 			break;
 		
-		case 1840358669:
+		case joaat("clearing"):
 		case joaat("Neutral"):
 		case joaat("clear"):
 			iVar0 = 21;
@@ -3046,12 +3046,12 @@ int func_90()//Position - 0x2E26
 			break;
 		
 		case joaat("OVERCAST"):
-		case 282916021:
+		case joaat("smog"):
 			iVar0 = 26;
 			iVar1 = 23;
 			break;
 		
-		case -318724249:
+		case joaat("cloudy"):
 		case joaat("clouds"):
 			iVar0 = 26;
 			iVar1 = 23;
@@ -3063,7 +3063,7 @@ int func_90()//Position - 0x2E26
 			break;
 		
 		case joaat("snow"):
-		case -1429616491:
+		case joaat("xmas"):
 			iVar0 = 27;
 			iVar1 = 27;
 			break;

@@ -52044,7 +52044,7 @@ int func_1062(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4,
 			}
 			break;
 		
-		case 1019352240:
+		case joaat("crewLogo"):
 			if (bParam8)
 			{
 				if (iVar0 == joaat("mp_m_freemode_01"))
@@ -52629,7 +52629,7 @@ int func_1064(int iParam0, char* sParam1, int iParam2)//Position - 0x49CC3
 {
 	switch (iParam2)
 	{
-		case 1019352240:
+		case joaat("crewLogo"):
 		case joaat("hairOverlay"):
 		case joaat("torsoDecal"):
 			return -1;
@@ -53035,7 +53035,7 @@ int func_1064(int iParam0, char* sParam1, int iParam2)//Position - 0x49CC3
 	}
 	switch (MISC::GET_HASH_KEY(sParam1))
 	{
-		case 1948764112:
+		case joaat("NO_LABEL"):
 			return -1;
 			break;
 		
@@ -57617,7 +57617,7 @@ void func_1086(int iParam0, int iParam1)//Position - 0x50A3F
 		{
 			if (iVar1 == 3 || iVar1 == 4)
 			{
-				if (iParam0 == 1019352240)
+				if (iParam0 == joaat("crewLogo"))
 				{
 					func_1120(13, 0, Global_78127);
 					func_1120(14, 0, Global_78127);

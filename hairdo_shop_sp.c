@@ -979,7 +979,7 @@ struct<7> func_4(int iParam0)//Position - 0x51E
 			Var0.f_3 = joaat("v_ilev_trevtraildr");
 			Var0 = { 1973f, 3815f, 34f };
 			MISC::SET_BIT(&(Var0.f_4), 0);
-			Var0.f_5 = 1736361794;
+			Var0.f_5 = joaat("DOORHASH_T_TRAILER_CS");
 			break;
 		
 		case 52:
@@ -25482,7 +25482,7 @@ int func_203(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, 
 			}
 			break;
 		
-		case 1019352240:
+		case joaat("crewLogo"):
 			if (bParam8)
 			{
 				if (iVar0 == joaat("mp_m_freemode_01"))
@@ -26067,7 +26067,7 @@ int func_205(int iParam0, char* sParam1, int iParam2)//Position - 0x23A93
 {
 	switch (iParam2)
 	{
-		case 1019352240:
+		case joaat("crewLogo"):
 		case joaat("hairOverlay"):
 		case joaat("torsoDecal"):
 			return -1;
@@ -26473,7 +26473,7 @@ int func_205(int iParam0, char* sParam1, int iParam2)//Position - 0x23A93
 	}
 	switch (MISC::GET_HASH_KEY(sParam1))
 	{
-		case 1948764112:
+		case joaat("NO_LABEL"):
 			return -1;
 			break;
 		
@@ -30847,7 +30847,7 @@ void func_229(int iParam0, int iParam1)//Position - 0x2A3AC
 		{
 			if (iVar1 == 3 || iVar1 == 4)
 			{
-				if (iParam0 == 1019352240)
+				if (iParam0 == joaat("crewLogo"))
 				{
 					func_97(13, 0, Global_78127);
 					func_97(14, 0, Global_78127);
@@ -50006,69 +50006,69 @@ int func_362(char* sParam0)//Position - 0x44C55
 	iVar0 = MISC::GET_HASH_KEY(sParam0);
 	switch (iVar0)
 	{
-		case 1416268745:
-		case -708047258:
-		case 26371570:
-		case 621780057:
-		case 954254331:
-		case -1639280951:
-		case -780274385:
-		case -1031153849:
-		case -212322077:
-		case 1963703368:
-		case -2016091686:
-		case 2039498065:
-		case -1443879404:
-		case -1878067362:
-		case 705702754:
-		case 1012584439:
-		case 1147920409:
-		case -799016957:
-		case 1661443408:
-		case 1833284044:
-		case 2106937963:
-		case -34090190:
-		case 266827537:
-		case -474374046:
-		case 41606628:
-		case 1539608682:
+		case joaat("CC_BLUSH_7"):
+		case joaat("CC_BLUSH_8"):
+		case joaat("CC_BLUSH_9"):
+		case joaat("CC_BLUSH_10"):
+		case joaat("CC_BLUSH_11"):
+		case joaat("CC_BLUSH_12"):
+		case joaat("CC_BLUSH_13"):
+		case joaat("CC_BLUSH_14"):
+		case joaat("CC_BLUSH_15"):
+		case joaat("CC_BLUSH_16"):
+		case joaat("CC_BLUSH_17"):
+		case joaat("CC_BLUSH_18"):
+		case joaat("CC_BLUSH_19"):
+		case joaat("CC_BLUSH_20"):
+		case joaat("CC_BLUSH_21"):
+		case joaat("CC_BLUSH_22"):
+		case joaat("CC_BLUSH_23"):
+		case joaat("CC_BLUSH_24"):
+		case joaat("CC_BLUSH_25"):
+		case joaat("CC_BLUSH_26"):
+		case joaat("CC_BLUSH_27"):
+		case joaat("CC_BLUSH_28"):
+		case joaat("CC_BLUSH_29"):
+		case joaat("CC_BLUSH_30"):
+		case joaat("CC_BLUSH_31"):
+		case joaat("CC_BLUSH_32"):
 			return 1;
 			break;
 		
-		case -81735992:
-		case 90628948:
-		case -1608542009:
-		case -1309590422:
-		case -801604532:
+		case joaat("XMAS_CAMO06"):
+		case joaat("XMAS_CAMO07"):
+		case joaat("XMAS_CAMO08"):
+		case joaat("XMAS_CAMO09"):
+		case joaat("XMAS_CAMO10"):
 			return 1;
 			break;
 		
-		case -1433564204:
-		case -1193269127:
-		case -306966096:
-		case -9784035:
-		case 172018377:
-		case 468610596:
-		case -1799561165:
-		case 654836823:
-		case 1029842567:
+		case joaat("CC_MKUP_72"):
+		case joaat("CC_MKUP_73"):
+		case joaat("CC_MKUP_74"):
+		case joaat("CC_MKUP_75"):
+		case joaat("CC_MKUP_76"):
+		case joaat("CC_MKUP_77"):
+		case joaat("CC_MKUP_78"):
+		case joaat("CC_MKUP_79"):
+		case joaat("CC_MKUP_80"):
 			return 1;
 			break;
 		
-		case 739541996:
-		case 673283082:
-		case 378460389:
-		case -994167487:
-		case -1294560910:
-		case -508039372:
-		case -815576437:
-		case 2118920286:
-		case 1811874756:
-		case -1923299929:
-		case 990355698:
-		case 978558858:
-		case 1747352367:
-		case 902108793:
+		case joaat("CC_MKUP_81"):
+		case joaat("CC_MKUP_82"):
+		case joaat("CC_MKUP_83"):
+		case joaat("CC_MKUP_84"):
+		case joaat("CC_MKUP_85"):
+		case joaat("CC_MKUP_86"):
+		case joaat("CC_MKUP_87"):
+		case joaat("CC_MKUP_88"):
+		case joaat("CC_MKUP_89"):
+		case joaat("CC_MKUP_90"):
+		case joaat("CC_MKUP_91"):
+		case joaat("CC_MKUP_92"):
+		case joaat("CC_MKUP_93"):
+		case joaat("CC_MKUP_94"):
 			return 1;
 			break;
 	}
@@ -50410,28 +50410,28 @@ char* func_366(char* sParam0, bool bParam1)//Position - 0x450B3
 	}
 	switch (iVar0)
 	{
-		case 1055949266:
-		case -1037727686:
-		case -1721400137:
-		case -1918079679:
+		case joaat("CC_M_HS_16"):
+		case joaat("CC_M_HS_17"):
+		case joaat("CC_F_HS_17"):
+		case joaat("CC_F_HS_16"):
 			return "SHOP_CONTENT_1";
 			break;
 		
-		case -731173691:
-		case -1515172016:
-		case -1492180982:
-		case -1192311863:
+		case joaat("CC_M_HS_18"):
+		case joaat("CC_M_HS_19"):
+		case joaat("CC_F_HS_18"):
+		case joaat("CC_F_HS_19"):
 			return "SHOP_CONTENT_2";
 			break;
 		
-		case 49831163:
+		case joaat("CC_F_HS_23"):
 			return "SHOP_CONTENT_4";
 			break;
 		
-		case 1305347725:
-		case 593441196:
-		case 482578589:
-		case -696417274:
+		case joaat("CC_M_HS_20"):
+		case joaat("CC_M_HS_21"):
+		case joaat("CC_F_HS_20"):
+		case joaat("CC_F_HS_21"):
 			if (!bParam1)
 			{
 				return "SHOP_CONTENT_6";
@@ -50442,9 +50442,9 @@ char* func_366(char* sParam0, bool bParam1)//Position - 0x450B3
 			}
 			break;
 		
-		case 1084779582:
-		case 1229416868:
-		case -915127147:
+		case joaat("CC_M_HS_22"):
+		case joaat("CC_F_HS_22"):
+		case joaat("CC_MKUP_33"):
 			if (!bParam1)
 			{
 				return "SHOP_CONTENT_8";
@@ -50492,75 +50492,75 @@ char* func_366(char* sParam0, bool bParam1)//Position - 0x450B3
 	}
 	switch (iVar0)
 	{
-		case 1416268745:
-		case -708047258:
-		case 26371570:
-		case 621780057:
-		case 954254331:
-		case -1639280951:
-		case -780274385:
-		case -1031153849:
-		case -212322077:
-		case 1963703368:
-		case -2016091686:
-		case 2039498065:
-		case -1443879404:
-		case -1878067362:
-		case 705702754:
-		case 1012584439:
-		case 1147920409:
-		case -799016957:
-		case 1661443408:
-		case 1833284044:
-		case 2106937963:
-		case -34090190:
-		case 266827537:
-		case -474374046:
-		case 41606628:
-		case 1539608682:
+		case joaat("CC_BLUSH_7"):
+		case joaat("CC_BLUSH_8"):
+		case joaat("CC_BLUSH_9"):
+		case joaat("CC_BLUSH_10"):
+		case joaat("CC_BLUSH_11"):
+		case joaat("CC_BLUSH_12"):
+		case joaat("CC_BLUSH_13"):
+		case joaat("CC_BLUSH_14"):
+		case joaat("CC_BLUSH_15"):
+		case joaat("CC_BLUSH_16"):
+		case joaat("CC_BLUSH_17"):
+		case joaat("CC_BLUSH_18"):
+		case joaat("CC_BLUSH_19"):
+		case joaat("CC_BLUSH_20"):
+		case joaat("CC_BLUSH_21"):
+		case joaat("CC_BLUSH_22"):
+		case joaat("CC_BLUSH_23"):
+		case joaat("CC_BLUSH_24"):
+		case joaat("CC_BLUSH_25"):
+		case joaat("CC_BLUSH_26"):
+		case joaat("CC_BLUSH_27"):
+		case joaat("CC_BLUSH_28"):
+		case joaat("CC_BLUSH_29"):
+		case joaat("CC_BLUSH_30"):
+		case joaat("CC_BLUSH_31"):
+		case joaat("CC_BLUSH_32"):
 			return "SHOP_CONTENT_30";
 			break;
 	}
 	switch (iVar0)
 	{
-		case -81735992:
-		case 90628948:
-		case -1608542009:
-		case -1309590422:
-		case -801604532:
+		case joaat("XMAS_CAMO06"):
+		case joaat("XMAS_CAMO07"):
+		case joaat("XMAS_CAMO08"):
+		case joaat("XMAS_CAMO09"):
+		case joaat("XMAS_CAMO10"):
 			return "SHOP_CONTENT_31";
 			break;
 	}
 	switch (iVar0)
 	{
-		case -1433564204:
-		case -1193269127:
-		case -306966096:
-		case -9784035:
-		case 172018377:
-		case 468610596:
-		case -1799561165:
-		case 654836823:
-		case 1029842567:
+		case joaat("CC_MKUP_72"):
+		case joaat("CC_MKUP_73"):
+		case joaat("CC_MKUP_74"):
+		case joaat("CC_MKUP_75"):
+		case joaat("CC_MKUP_76"):
+		case joaat("CC_MKUP_77"):
+		case joaat("CC_MKUP_78"):
+		case joaat("CC_MKUP_79"):
+		case joaat("CC_MKUP_80"):
 			return "SHOP_CONTENT_41";
 			break;
 	}
 	switch (iVar0)
 	{
-		case 739541996:
-		case 673283082:
-		case 378460389:
-		case -994167487:
-		case -1294560910:
-		case -508039372:
-		case -815576437:
-		case 2118920286:
-		case 1811874756:
-		case -1923299929:
-		case 990355698:
-		case 978558858:
-		case 1747352367:
-		case 902108793:
+		case joaat("CC_MKUP_81"):
+		case joaat("CC_MKUP_82"):
+		case joaat("CC_MKUP_83"):
+		case joaat("CC_MKUP_84"):
+		case joaat("CC_MKUP_85"):
+		case joaat("CC_MKUP_86"):
+		case joaat("CC_MKUP_87"):
+		case joaat("CC_MKUP_88"):
+		case joaat("CC_MKUP_89"):
+		case joaat("CC_MKUP_90"):
+		case joaat("CC_MKUP_91"):
+		case joaat("CC_MKUP_92"):
+		case joaat("CC_MKUP_93"):
+		case joaat("CC_MKUP_94"):
 			return "SHOP_CONTENT_44";
 			break;
 	}
@@ -50775,7 +50775,7 @@ int func_367(char* sParam0)//Position - 0x45895
 	iVar0 = MISC::GET_HASH_KEY(sParam0);
 	switch (iVar0)
 	{
-		case -915127147:
+		case joaat("CC_MKUP_33"):
 			return 0;
 			break;
 		
@@ -50812,69 +50812,69 @@ int func_367(char* sParam0)//Position - 0x45895
 			return 0;
 			break;
 		
-		case 1416268745:
-		case -708047258:
-		case 26371570:
-		case 621780057:
-		case 954254331:
-		case -1639280951:
-		case -780274385:
-		case -1031153849:
-		case -212322077:
-		case 1963703368:
-		case -2016091686:
-		case 2039498065:
-		case -1443879404:
-		case -1878067362:
-		case 705702754:
-		case 1012584439:
-		case 1147920409:
-		case -799016957:
-		case 1661443408:
-		case 1833284044:
-		case 2106937963:
-		case -34090190:
-		case 266827537:
-		case -474374046:
-		case 41606628:
-		case 1539608682:
+		case joaat("CC_BLUSH_7"):
+		case joaat("CC_BLUSH_8"):
+		case joaat("CC_BLUSH_9"):
+		case joaat("CC_BLUSH_10"):
+		case joaat("CC_BLUSH_11"):
+		case joaat("CC_BLUSH_12"):
+		case joaat("CC_BLUSH_13"):
+		case joaat("CC_BLUSH_14"):
+		case joaat("CC_BLUSH_15"):
+		case joaat("CC_BLUSH_16"):
+		case joaat("CC_BLUSH_17"):
+		case joaat("CC_BLUSH_18"):
+		case joaat("CC_BLUSH_19"):
+		case joaat("CC_BLUSH_20"):
+		case joaat("CC_BLUSH_21"):
+		case joaat("CC_BLUSH_22"):
+		case joaat("CC_BLUSH_23"):
+		case joaat("CC_BLUSH_24"):
+		case joaat("CC_BLUSH_25"):
+		case joaat("CC_BLUSH_26"):
+		case joaat("CC_BLUSH_27"):
+		case joaat("CC_BLUSH_28"):
+		case joaat("CC_BLUSH_29"):
+		case joaat("CC_BLUSH_30"):
+		case joaat("CC_BLUSH_31"):
+		case joaat("CC_BLUSH_32"):
 			return 0;
 			break;
 		
-		case -81735992:
-		case 90628948:
-		case -1608542009:
-		case -1309590422:
-		case -801604532:
+		case joaat("XMAS_CAMO06"):
+		case joaat("XMAS_CAMO07"):
+		case joaat("XMAS_CAMO08"):
+		case joaat("XMAS_CAMO09"):
+		case joaat("XMAS_CAMO10"):
 			return 0;
 			break;
 		
-		case -1433564204:
-		case -1193269127:
-		case -306966096:
-		case -9784035:
-		case 172018377:
-		case 468610596:
-		case -1799561165:
-		case 654836823:
-		case 1029842567:
+		case joaat("CC_MKUP_72"):
+		case joaat("CC_MKUP_73"):
+		case joaat("CC_MKUP_74"):
+		case joaat("CC_MKUP_75"):
+		case joaat("CC_MKUP_76"):
+		case joaat("CC_MKUP_77"):
+		case joaat("CC_MKUP_78"):
+		case joaat("CC_MKUP_79"):
+		case joaat("CC_MKUP_80"):
 			return 0;
 			break;
 		
-		case 739541996:
-		case 673283082:
-		case 378460389:
-		case -994167487:
-		case -1294560910:
-		case -508039372:
-		case -815576437:
-		case 2118920286:
-		case 1811874756:
-		case -1923299929:
-		case 990355698:
-		case 978558858:
-		case 1747352367:
-		case 902108793:
+		case joaat("CC_MKUP_81"):
+		case joaat("CC_MKUP_82"):
+		case joaat("CC_MKUP_83"):
+		case joaat("CC_MKUP_84"):
+		case joaat("CC_MKUP_85"):
+		case joaat("CC_MKUP_86"):
+		case joaat("CC_MKUP_87"):
+		case joaat("CC_MKUP_88"):
+		case joaat("CC_MKUP_89"):
+		case joaat("CC_MKUP_90"):
+		case joaat("CC_MKUP_91"):
+		case joaat("CC_MKUP_92"):
+		case joaat("CC_MKUP_93"):
+		case joaat("CC_MKUP_94"):
 			return 0;
 			break;
 	}
@@ -67260,37 +67260,37 @@ void func_423(char* sParam0, char[8] cParam1, var uParam2, var uParam3, int iPar
 {
 	switch (MISC::GET_HASH_KEY(&cParam1))
 	{
-		case 64715401:
+		case joaat("GSA_TYPE_R1"):
 		case joaat("GSA_TYPE_R"):
 			StringCopy(&cParam1, "GSA_TYPE_R", 16);
 			break;
 		
-		case -414529079:
+		case joaat("GSA_TYPE_C1"):
 		case joaat("GSA_TYPE_C"):
 			StringCopy(&cParam1, "GSA_TYPE_C", 16);
 			break;
 		
-		case 336264847:
+		case joaat("GSA_TYPE_RO1"):
 		case joaat("GSA_TYPE_RO"):
 			StringCopy(&cParam1, "GSA_TYPE_RO", 16);
 			break;
 		
-		case 531395379:
+		case joaat("GSA_TYPE_CH1"):
 		case joaat("GSA_TYPE_CH"):
 			StringCopy(&cParam1, "GSA_TYPE_CH", 16);
 			break;
 		
-		case 1034118160:
+		case joaat("GSA_TYPE_G1"):
 		case joaat("GSA_TYPE_G"):
 			StringCopy(&cParam1, "GSA_TYPE_G", 16);
 			break;
 		
-		case -218834291:
+		case joaat("GSA_TYPE_B1"):
 		case joaat("GSA_TYPE_B"):
 			StringCopy(&cParam1, "GSA_TYPE_B", 16);
 			break;
 		
-		case 1779531303:
+		case joaat("GSA_TYPE_FW1"):
 		case joaat("GSA_TYPE_FW"):
 			StringCopy(&cParam1, "GSA_TYPE_FW", 16);
 			break;
@@ -80663,7 +80663,7 @@ bool func_588(var uParam0)//Position - 0x64A6E
 		iVar0 = 0;
 		while (iVar0 < 12)
 		{
-			if ((MISC::GET_HASH_KEY(&(Global_23150.f_5355[iVar0 /*4*/])) == joaat("ITEM_PSSTORE") || MISC::GET_HASH_KEY(&(Global_23150.f_5355[iVar0 /*4*/])) == 1259557274) || MISC::GET_HASH_KEY(&(Global_23150.f_5355[iVar0 /*4*/])) == joaat("ITEM_STORE"))
+			if ((MISC::GET_HASH_KEY(&(Global_23150.f_5355[iVar0 /*4*/])) == joaat("ITEM_PSSTORE") || MISC::GET_HASH_KEY(&(Global_23150.f_5355[iVar0 /*4*/])) == joaat("ITEM_MARKET")) || MISC::GET_HASH_KEY(&(Global_23150.f_5355[iVar0 /*4*/])) == joaat("ITEM_STORE"))
 			{
 				uParam0->f_1 = 1;
 			}

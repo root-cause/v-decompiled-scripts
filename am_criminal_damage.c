@@ -20106,7 +20106,7 @@ void func_112(int iParam0, var uParam1, int iParam2)//Position - 0x14EE4
 					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27452) * 1f));
 					break;
 				
-				case 1808301876:
+				case joaat("CLO_VWM_U_17_13"):
 					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27453) * 1f));
 					break;
 				
@@ -21415,7 +21415,7 @@ void func_112(int iParam0, var uParam1, int iParam2)//Position - 0x14EE4
 					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27731) * 1f));
 					break;
 				
-				case 462891880:
+				case joaat("CLO_VWM_S_6_0"):
 					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27732) * 1f));
 					break;
 				
@@ -21427,7 +21427,7 @@ void func_112(int iParam0, var uParam1, int iParam2)//Position - 0x14EE4
 					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27734) * 1f));
 					break;
 				
-				case 1681046686:
+				case joaat("CLO_VWM_S_6_4"):
 					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27735) * 1f));
 					break;
 				
@@ -21435,19 +21435,19 @@ void func_112(int iParam0, var uParam1, int iParam2)//Position - 0x14EE4
 					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27736) * 1f));
 					break;
 				
-				case -242919615:
+				case joaat("CLO_VWM_S_6_6"):
 					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27737) * 1f));
 					break;
 				
-				case -1625214342:
+				case joaat("CLO_VWM_S_6_7"):
 					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27738) * 1f));
 					break;
 				
-				case -1924788540:
+				case joaat("CLO_VWM_S_6_8"):
 					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27739) * 1f));
 					break;
 				
-				case 214601167:
+				case joaat("CLO_VWM_S_6_9"):
 					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27740) * 1f));
 					break;
 				
@@ -21455,11 +21455,11 @@ void func_112(int iParam0, var uParam1, int iParam2)//Position - 0x14EE4
 					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27741) * 1f));
 					break;
 				
-				case 1092429579:
+				case joaat("CLO_VWM_S_6_11"):
 					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27742) * 1f));
 					break;
 				
-				case 862129047:
+				case joaat("CLO_VWM_S_6_12"):
 					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27743) * 1f));
 					break;
 				
@@ -22177,7 +22177,7 @@ void func_112(int iParam0, var uParam1, int iParam2)//Position - 0x14EE4
 					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27452) * 1f));
 					break;
 				
-				case 1444933006:
+				case joaat("CLO_VWF_U_15_13"):
 					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27453) * 1f));
 					break;
 				
@@ -65271,7 +65271,7 @@ void func_139(int iParam0, var uParam1)//Position - 0x5D95A
 			*uParam1 = SYSTEM::FLOOR((Global_262145.f_7178[12] * IntToFloat(*uParam1)));
 			break;
 		
-		case 823754616:
+		case joaat("CLO_BUS_F_O_5"):
 			*uParam1 = SYSTEM::FLOOR((Global_262145.f_7178[13] * IntToFloat(*uParam1)));
 			break;
 		
@@ -65299,7 +65299,7 @@ void func_139(int iParam0, var uParam1)//Position - 0x5D95A
 			*uParam1 = SYSTEM::FLOOR((Global_262145.f_7178[19] * IntToFloat(*uParam1)));
 			break;
 		
-		case -419205006:
+		case joaat("CLO_BUS_F_O_12"):
 			*uParam1 = SYSTEM::FLOOR((Global_262145.f_7178[20] * IntToFloat(*uParam1)));
 			break;
 		
@@ -65307,7 +65307,7 @@ void func_139(int iParam0, var uParam1)//Position - 0x5D95A
 			*uParam1 = SYSTEM::FLOOR((Global_262145.f_7178[21] * IntToFloat(*uParam1)));
 			break;
 		
-		case 1040031245:
+		case joaat("CLO_BUS_F_O_14"):
 			*uParam1 = SYSTEM::FLOOR((Global_262145.f_7178[22] * IntToFloat(*uParam1)));
 			break;
 		
@@ -65323,7 +65323,7 @@ void func_139(int iParam0, var uParam1)//Position - 0x5D95A
 			*uParam1 = SYSTEM::FLOOR((Global_262145.f_7178[25] * IntToFloat(*uParam1)));
 			break;
 		
-		case -121465960:
+		case joaat("CLO_BUS_F_O_18"):
 			*uParam1 = SYSTEM::FLOOR((Global_262145.f_7178[26] * IntToFloat(*uParam1)));
 			break;
 		
@@ -65343,11 +65343,11 @@ void func_139(int iParam0, var uParam1)//Position - 0x5D95A
 			*uParam1 = SYSTEM::FLOOR((Global_262145.f_7178[30] * IntToFloat(*uParam1)));
 			break;
 		
-		case 845284826:
+		case joaat("CLO_BUS_F_O_23"):
 			*uParam1 = SYSTEM::FLOOR((Global_262145.f_7178[31] * IntToFloat(*uParam1)));
 			break;
 		
-		case 1151347286:
+		case joaat("CLO_BUS_F_O_24"):
 			*uParam1 = SYSTEM::FLOOR((Global_262145.f_7178[32] * IntToFloat(*uParam1)));
 			break;
 		
@@ -65759,7 +65759,7 @@ void func_139(int iParam0, var uParam1)//Position - 0x5D95A
 			*uParam1 = SYSTEM::FLOOR((Global_262145.f_7178[166] * IntToFloat(*uParam1)));
 			break;
 		
-		case -598896965:
+		case joaat("CLO_BUS_M_O_7"):
 			*uParam1 = SYSTEM::FLOOR((Global_262145.f_7178[167] * IntToFloat(*uParam1)));
 			break;
 		
@@ -65771,7 +65771,7 @@ void func_139(int iParam0, var uParam1)//Position - 0x5D95A
 			*uParam1 = SYSTEM::FLOOR((Global_262145.f_7178[169] * IntToFloat(*uParam1)));
 			break;
 		
-		case 1344121348:
+		case joaat("CLO_BUS_M_O_10"):
 			*uParam1 = SYSTEM::FLOOR((Global_262145.f_7178[170] * IntToFloat(*uParam1)));
 			break;
 		
@@ -65787,11 +65787,11 @@ void func_139(int iParam0, var uParam1)//Position - 0x5D95A
 			*uParam1 = SYSTEM::FLOOR((Global_262145.f_7178[173] * IntToFloat(*uParam1)));
 			break;
 		
-		case 58757327:
+		case joaat("CLO_BUS_M_O_14"):
 			*uParam1 = SYSTEM::FLOOR((Global_262145.f_7178[174] * IntToFloat(*uParam1)));
 			break;
 		
-		case 1992292172:
+		case joaat("CLO_BUS_M_O_15"):
 			*uParam1 = SYSTEM::FLOOR((Global_262145.f_7178[175] * IntToFloat(*uParam1)));
 			break;
 		
@@ -65823,7 +65823,7 @@ void func_139(int iParam0, var uParam1)//Position - 0x5D95A
 			*uParam1 = SYSTEM::FLOOR((Global_262145.f_7178[182] * IntToFloat(*uParam1)));
 			break;
 		
-		case 1512814740:
+		case joaat("CLO_BUS_M_O_23"):
 			*uParam1 = SYSTEM::FLOOR((Global_262145.f_7178[183] * IntToFloat(*uParam1)));
 			break;
 		

@@ -12169,7 +12169,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					switch (iParam2)
 					{
 						case 0:
-							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						
 						case 1:
@@ -12214,7 +12214,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 4:
-							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
 				}
@@ -12401,7 +12401,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					switch (iParam2)
 					{
 						case 0:
-							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						
 						case 1:
@@ -12462,7 +12462,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 6:
-							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
 				}
@@ -12510,7 +12510,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					switch (iParam2)
 					{
 						case 0:
-							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						
 						case 1:
@@ -12579,7 +12579,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 7:
-							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
 				}
@@ -12631,7 +12631,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					switch (iParam2)
 					{
 						case 0:
-							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						
 						case 1:
@@ -12700,7 +12700,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 7:
-							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
 				}
@@ -12802,7 +12802,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					switch (iParam2)
 					{
 						case 0:
-							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						
 						case 1:
@@ -12847,7 +12847,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 4:
-							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
 				}
@@ -12937,7 +12937,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					switch (iParam2)
 					{
 						case 0:
-							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						
 						case 1:
@@ -12970,7 +12970,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 3:
-							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
 				}
@@ -13922,7 +13922,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					switch (iParam2)
 					{
 						case 0:
-							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						
 						case 1:
@@ -13959,7 +13959,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 3:
-							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
 				}
@@ -14012,7 +14012,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					switch (iParam2)
 					{
 						case 0:
-							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						
 						case 1:
@@ -14085,7 +14085,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 8:
-							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
 				}
@@ -14137,7 +14137,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					switch (iParam2)
 					{
 						case 0:
-							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						
 						case 1:
@@ -14170,7 +14170,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 3:
-							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
 				}
@@ -14202,7 +14202,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					switch (iParam2)
 					{
 						case 0:
-							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						
 						case 1:
@@ -14267,7 +14267,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 7:
-							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
 				}
@@ -14315,7 +14315,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					switch (iParam2)
 					{
 						case 0:
-							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						
 						case 1:
@@ -14348,7 +14348,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 3:
-							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
 				}
@@ -14380,7 +14380,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					switch (iParam2)
 					{
 						case 0:
-							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						
 						case 1:
@@ -14445,7 +14445,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 7:
-							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_333(uParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
 				}
@@ -15422,7 +15422,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							{
 								iVar8++;
 							}
-							else if (Var16.f_0 == -31573710)
+							else if (Var16.f_0 == joaat("Gun_GripR"))
 							{
 								iVar9++;
 							}
@@ -15468,7 +15468,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 								{
 									iVar0 = iVar8;
 								}
-								else if (Var16.f_0 == -31573710)
+								else if (Var16.f_0 == joaat("Gun_GripR"))
 								{
 									iVar0 = iVar9;
 								}
@@ -19669,37 +19669,37 @@ void func_309(char* sParam0, char[8] cParam1, char[4] cParam2, char[4] cParam3, 
 {
 	switch (MISC::GET_HASH_KEY(&cParam1))
 	{
-		case 64715401:
+		case joaat("GSA_TYPE_R1"):
 		case joaat("GSA_TYPE_R"):
 			StringCopy(&cParam1, "GSA_TYPE_R", 16);
 			break;
 		
-		case -414529079:
+		case joaat("GSA_TYPE_C1"):
 		case joaat("GSA_TYPE_C"):
 			StringCopy(&cParam1, "GSA_TYPE_C", 16);
 			break;
 		
-		case 336264847:
+		case joaat("GSA_TYPE_RO1"):
 		case joaat("GSA_TYPE_RO"):
 			StringCopy(&cParam1, "GSA_TYPE_RO", 16);
 			break;
 		
-		case 531395379:
+		case joaat("GSA_TYPE_CH1"):
 		case joaat("GSA_TYPE_CH"):
 			StringCopy(&cParam1, "GSA_TYPE_CH", 16);
 			break;
 		
-		case 1034118160:
+		case joaat("GSA_TYPE_G1"):
 		case joaat("GSA_TYPE_G"):
 			StringCopy(&cParam1, "GSA_TYPE_G", 16);
 			break;
 		
-		case -218834291:
+		case joaat("GSA_TYPE_B1"):
 		case joaat("GSA_TYPE_B"):
 			StringCopy(&cParam1, "GSA_TYPE_B", 16);
 			break;
 		
-		case 1779531303:
+		case joaat("GSA_TYPE_FW1"):
 		case joaat("GSA_TYPE_FW"):
 			StringCopy(&cParam1, "GSA_TYPE_FW", 16);
 			break;

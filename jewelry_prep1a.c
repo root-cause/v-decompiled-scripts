@@ -14404,8 +14404,8 @@ void func_273(int iParam0)//Position - 0x112A6
 			switch (MISC::GET_HASH_KEY(&(iParam0->f_9)))
 			{
 				case joaat("fight"):
-				case 1681313069:
-				case 1156217463:
+				case joaat("FIGHT_RETURN"):
+				case joaat("RAN_OVER"):
 					if (WEAPON::HAS_PED_GOT_WEAPON(*iParam0, joaat("weapon_pistol"), false))
 					{
 						WEAPON::REMOVE_WEAPON_FROM_PED(*iParam0, joaat("weapon_pistol"));
@@ -14424,16 +14424,16 @@ void func_273(int iParam0)//Position - 0x112A6
 					break;
 				
 				case joaat("killed"):
-				case 1518302817:
-				case -1298712083:
-				case 185995093:
-				case -1645534839:
-				case 880647822:
+				case joaat("PLAYER_KILLED"):
+				case joaat("DEAD_BODY"):
+				case joaat("PLAYER_KO"):
+				case joaat("GUN_AIMED_AT"):
+				case joaat("PROJ_AIMED"):
 				case joaat("gunshot"):
-				case 1921975061:
-				case 1682434916:
-				case -924218668:
-				case 600040296:
+				case joaat("SEEN_WEAPON"):
+				case joaat("STEALING_VAN"):
+				case joaat("GET_IN_VAN"):
+				case joaat("STEALING_SEC_CAR"):
 					if (WEAPON::HAS_PED_GOT_WEAPON(*iParam0, joaat("weapon_nightstick"), false))
 					{
 						WEAPON::REMOVE_WEAPON_FROM_PED(*iParam0, joaat("weapon_nightstick"));
@@ -14461,7 +14461,7 @@ void func_273(int iParam0)//Position - 0x112A6
 		case 1:
 			switch (MISC::GET_HASH_KEY(&(iParam0->f_9)))
 			{
-				case 686645495:
+				case joaat("HEARD_SEC_CAR"):
 					if (ENTITY::DOES_ENTITY_EXIST(iParam0->f_91))
 					{
 						if (!PED::IS_PED_HEADING_TOWARDS_POSITION(*iParam0, ENTITY::GET_ENTITY_COORDS(iParam0->f_91, true), 180f) && (MISC::GET_GAME_TIMER() - iParam0->f_37) < 5000)
@@ -14479,7 +14479,7 @@ void func_273(int iParam0)//Position - 0x112A6
 					}
 					break;
 				
-				case -1225951737:
+				case joaat("HEARD_PLAYER"):
 					if (iParam0->f_41 && !func_65(iParam0->f_88, iParam0->f_43, 1f, 0))
 					{
 						iParam0->f_88 = { iParam0->f_43 };
@@ -14505,7 +14505,7 @@ void func_273(int iParam0)//Position - 0x112A6
 				case -1940555668:
 					break;
 				
-				case -927541383:
+				case joaat("SOUND_LOST"):
 					if (!func_244(iParam0->f_88))
 					{
 						if (!func_191(*iParam0, joaat("SCRIPT_TASK_TURN_PED_TO_FACE_COORD"), 1) || func_274(*iParam0))
@@ -14520,7 +14520,7 @@ void func_273(int iParam0)//Position - 0x112A6
 					}
 					break;
 				
-				case 58299323:
+				case joaat("VAN_LOST"):
 					if (ENTITY::DOES_ENTITY_EXIST(iParam0->f_91))
 					{
 						if (!func_191(*iParam0, joaat("SCRIPT_TASK_TURN_PED_TO_FACE_ENTITY"), 1) || func_274(*iParam0))
@@ -14685,10 +14685,10 @@ void func_275(var uParam0)//Position - 0x117CD
 		case 1:
 			switch (MISC::GET_HASH_KEY(&(uParam0->f_9)))
 			{
-				case 2074432461:
-				case 356486511:
-				case -414594135:
-				case 1260350710:
+				case joaat("HEARD_VAN"):
+				case joaat("CHECK_DRIVER"):
+				case joaat("SEE_VAN_LEAVING"):
+				case joaat("SEE_VAN_LEAVING_1"):
 					if (ENTITY::DOES_ENTITY_EXIST(uParam0->f_91))
 					{
 						if (!PED::IS_PED_HEADING_TOWARDS_POSITION(*uParam0, ENTITY::GET_ENTITY_COORDS(uParam0->f_91, true), 180f) && (MISC::GET_GAME_TIMER() - uParam0->f_37) < 5000)
@@ -14706,7 +14706,7 @@ void func_275(var uParam0)//Position - 0x117CD
 					}
 					break;
 				
-				case -1225951737:
+				case joaat("HEARD_PLAYER"):
 					if (uParam0->f_41 && !func_65(uParam0->f_88, uParam0->f_43, 1f, 0))
 					{
 						uParam0->f_88 = { uParam0->f_43 };
@@ -14732,7 +14732,7 @@ void func_275(var uParam0)//Position - 0x117CD
 				case -1940555668:
 					break;
 				
-				case -927541383:
+				case joaat("SOUND_LOST"):
 					if (!func_244(uParam0->f_88))
 					{
 						if (!func_191(*uParam0, joaat("SCRIPT_TASK_TURN_PED_TO_FACE_COORD"), 1) || func_274(*uParam0))
@@ -14747,7 +14747,7 @@ void func_275(var uParam0)//Position - 0x117CD
 					}
 					break;
 				
-				case 58299323:
+				case joaat("VAN_LOST"):
 					if (ENTITY::DOES_ENTITY_EXIST(uParam0->f_91))
 					{
 						if (!func_191(*uParam0, joaat("SCRIPT_TASK_TURN_PED_TO_FACE_ENTITY"), 1) || func_274(*uParam0))
@@ -14851,13 +14851,13 @@ void func_275(var uParam0)//Position - 0x117CD
 			switch (MISC::GET_HASH_KEY(&(uParam0->f_9)))
 			{
 				case joaat("fight"):
-				case 1681313069:
-				case 1156217463:
-				case 1568162790:
-				case 1682434916:
-				case -924218668:
-				case 2056033185:
-				case 185995093:
+				case joaat("FIGHT_RETURN"):
+				case joaat("RAN_OVER"):
+				case joaat("WH_FAILED_LEAVE"):
+				case joaat("STEALING_VAN"):
+				case joaat("GET_IN_VAN"):
+				case joaat("EXIT_VAN"):
+				case joaat("PLAYER_KO"):
 					if (WEAPON::GET_CURRENT_PED_WEAPON(*uParam0, &iVar9, true))
 					{
 						if (iVar9 != joaat("weapon_unarmed"))
@@ -14871,7 +14871,7 @@ void func_275(var uParam0)//Position - 0x117CD
 					}
 					break;
 				
-				case 1093888274:
+				case joaat("FIGHT_ESC"):
 					if ((!func_191(*uParam0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1) || !PED::IS_PED_FACING_PED(*uParam0, PLAYER::PLAYER_PED_ID(), 90f)) || func_274(*uParam0))
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_1280);
@@ -14904,7 +14904,7 @@ void func_275(var uParam0)//Position - 0x117CD
 		case 4:
 			switch (MISC::GET_HASH_KEY(&(uParam0->f_9)))
 			{
-				case -1645534839:
+				case joaat("GUN_AIMED_AT"):
 					if (!func_191(*uParam0, joaat("SCRIPT_TASK_HANDS_UP"), 1) || func_274(*uParam0))
 					{
 						TASK::TASK_HANDS_UP(*uParam0, -1, PLAYER::PLAYER_PED_ID(), 0, true);
@@ -15037,28 +15037,28 @@ void func_276(int iParam0)//Position - 0x122B8
 		switch (MISC::GET_HASH_KEY(&(Local_1106[iParam0->f_34 /*32*/].f_1)))
 		{
 			case joaat("killed"):
-			case 1518302817:
-			case -1298712083:
-			case 185995093:
-			case -1645534839:
-			case 880647822:
-			case 1921975061:
+			case joaat("PLAYER_KILLED"):
+			case joaat("DEAD_BODY"):
+			case joaat("PLAYER_KO"):
+			case joaat("GUN_AIMED_AT"):
+			case joaat("PROJ_AIMED"):
+			case joaat("SEEN_WEAPON"):
 			case joaat("fight"):
-			case 1681313069:
-			case 1156217463:
-			case 1682434916:
-			case -924218668:
+			case joaat("FIGHT_RETURN"):
+			case joaat("RAN_OVER"):
+			case joaat("STEALING_VAN"):
+			case joaat("GET_IN_VAN"):
 			case joaat("gunshot"):
-			case 600040296:
+			case joaat("STEALING_SEC_CAR"):
 				func_258(iParam0, 3, 1, &(Local_1106[iParam0->f_34 /*32*/].f_1), 0, bVar8);
 				break;
 			
-			case -1225951737:
+			case joaat("HEARD_PLAYER"):
 				func_277(iParam0, 1, &(Local_1106[iParam0->f_34 /*32*/].f_1), ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 1, 0, bVar8);
 				break;
 			
-			case 2074432461:
-			case 686645495:
+			case joaat("HEARD_VAN"):
+			case joaat("HEARD_SEC_CAR"):
 				func_280(iParam0, 1, &(Local_1106[iParam0->f_34 /*32*/].f_1), Local_46[func_102() /*8*/], 1, 0, bVar8);
 				break;
 			}
@@ -15090,21 +15090,21 @@ void func_276(int iParam0)//Position - 0x122B8
 		case 1:
 			switch (MISC::GET_HASH_KEY(&(iParam0->f_9)))
 			{
-				case 58299323:
+				case joaat("VAN_LOST"):
 					if ((MISC::GET_GAME_TIMER() - iParam0->f_37) > 3000)
 					{
 						func_258(iParam0, 0, 0, "BACK_TO_WORK", 1, 0);
 					}
 					break;
 				
-				case -1225951737:
+				case joaat("HEARD_PLAYER"):
 					if (((MISC::GET_GAME_TIMER() - iParam0->f_37) > 4000 && func_108(*iParam0, iParam0->f_88, 1) < 3f) && TASK::IS_PED_STILL(*iParam0))
 					{
 						func_258(iParam0, 1, 0, "SOUND_LOST", 1, 0);
 					}
 					break;
 				
-				case -927541383:
+				case joaat("SOUND_LOST"):
 					if ((MISC::GET_GAME_TIMER() - iParam0->f_37) > 4000 && !AUDIO::IS_PED_IN_CURRENT_CONVERSATION(*iParam0))
 					{
 						func_258(iParam0, 0, 0, "BACK_TO_WORK", 1, 0);
@@ -15117,8 +15117,8 @@ void func_276(int iParam0)//Position - 0x122B8
 			switch (MISC::GET_HASH_KEY(&(iParam0->f_9)))
 			{
 				case joaat("fight"):
-				case 1681313069:
-				case 1156217463:
+				case joaat("FIGHT_RETURN"):
+				case joaat("RAN_OVER"):
 					if ((((MISC::GET_GAME_TIMER() - iParam0->f_38) > 8000 && func_108(PLAYER::PLAYER_PED_ID(), Local_58, 1) > 65f) && (func_107(PLAYER::PLAYER_PED_ID(), *iParam0, 1) > 10f || (MISC::GET_GAME_TIMER() - iParam0->f_38) > 16000)) && !AUDIO::IS_PED_IN_CURRENT_CONVERSATION(*iParam0))
 					{
 						func_258(iParam0, 3, 0, "FIGHT_ESC", 1, 0);
@@ -15126,16 +15126,16 @@ void func_276(int iParam0)//Position - 0x122B8
 					break;
 				
 				case joaat("killed"):
-				case 1518302817:
-				case -1298712083:
-				case 185995093:
-				case -1645534839:
-				case 880647822:
+				case joaat("PLAYER_KILLED"):
+				case joaat("DEAD_BODY"):
+				case joaat("PLAYER_KO"):
+				case joaat("GUN_AIMED_AT"):
+				case joaat("PROJ_AIMED"):
 				case joaat("gunshot"):
-				case 1921975061:
-				case 1682434916:
-				case -924218668:
-				case 600040296:
+				case joaat("SEEN_WEAPON"):
+				case joaat("STEALING_VAN"):
+				case joaat("GET_IN_VAN"):
+				case joaat("STEALING_SEC_CAR"):
 					if (func_108(PLAYER::PLAYER_PED_ID(), Local_58, 1) > 300f && func_107(PLAYER::PLAYER_PED_ID(), *iParam0, 1) > 150f)
 					{
 						func_258(iParam0, 3, 0, "FIGHT_ESC", 1, 0);
@@ -15526,22 +15526,22 @@ void func_285(int iParam0)//Position - 0x12CB9
 		switch (MISC::GET_HASH_KEY(&(Local_1106[iParam0->f_34 /*32*/].f_1)))
 		{
 			case joaat("killed"):
-			case 1518302817:
-			case -1298712083:
+			case joaat("PLAYER_KILLED"):
+			case joaat("DEAD_BODY"):
 				if (iParam0->f_5 != 4)
 				{
 					func_258(iParam0, 5, 1, &(Local_1106[iParam0->f_34 /*32*/].f_1), 0, bVar9);
 				}
 				break;
 			
-			case 185995093:
+			case joaat("PLAYER_KO"):
 				if (iParam0->f_5 != 4)
 				{
 					func_258(iParam0, 3, 1, &(Local_1106[iParam0->f_34 /*32*/].f_1), 0, bVar9);
 				}
 				break;
 			
-			case -1645534839:
+			case joaat("GUN_AIMED_AT"):
 				if (iParam0->f_5 != 4)
 				{
 					if (func_108(*iParam0, Local_1106[iParam0->f_34 /*32*/].f_23, 1) < 5f)
@@ -15555,14 +15555,14 @@ void func_285(int iParam0)//Position - 0x12CB9
 				}
 				break;
 			
-			case 880647822:
+			case joaat("PROJ_AIMED"):
 				if (iParam0->f_5 != 4)
 				{
 					func_258(iParam0, 5, 1, &(Local_1106[iParam0->f_34 /*32*/].f_1), 0, bVar9);
 				}
 				break;
 			
-			case 1921975061:
+			case joaat("SEEN_WEAPON"):
 				if (iParam0->f_5 != 4)
 				{
 					func_258(iParam0, 5, 1, &(Local_1106[iParam0->f_34 /*32*/].f_1), 0, bVar9);
@@ -15570,8 +15570,8 @@ void func_285(int iParam0)//Position - 0x12CB9
 				break;
 			
 			case joaat("fight"):
-			case 1681313069:
-			case 1156217463:
+			case joaat("FIGHT_RETURN"):
+			case joaat("RAN_OVER"):
 			case -419867425:
 				if (iParam0->f_5 != 4)
 				{
@@ -15579,9 +15579,9 @@ void func_285(int iParam0)//Position - 0x12CB9
 				}
 				break;
 			
-			case 1682434916:
-			case -924218668:
-			case 2056033185:
+			case joaat("STEALING_VAN"):
+			case joaat("GET_IN_VAN"):
+			case joaat("EXIT_VAN"):
 				if (((iParam0->f_5 != 4 && !MISC::ARE_STRINGS_EQUAL(&(iParam0->f_9), "STEALING_VAN")) && !MISC::ARE_STRINGS_EQUAL(&(iParam0->f_9), "GET_IN_VAN")) && !MISC::ARE_STRINGS_EQUAL(&(iParam0->f_9), "EXIT_VAN"))
 				{
 					func_258(iParam0, 3, 1, &(Local_1106[iParam0->f_34 /*32*/].f_1), 0, bVar9);
@@ -15595,28 +15595,28 @@ void func_285(int iParam0)//Position - 0x12CB9
 				}
 				break;
 			
-			case -426892158:
+			case joaat("ENT_FOOT"):
 				if (iParam0->f_86)
 				{
 					func_258(iParam0, 2, 1, &(Local_1106[iParam0->f_34 /*32*/].f_1), 0, bVar9);
 				}
 				break;
 			
-			case -1461435341:
+			case joaat("ENT_VEH"):
 				if (iParam0->f_86)
 				{
 					func_258(iParam0, 2, 1, &(Local_1106[iParam0->f_34 /*32*/].f_1), 0, bVar9);
 				}
 				break;
 			
-			case -972653884:
+			case joaat("WH_FOOT"):
 				if (iParam0->f_87)
 				{
 					func_258(iParam0, 2, 1, &(Local_1106[iParam0->f_34 /*32*/].f_1), 0, bVar9);
 				}
 				break;
 			
-			case -520621538:
+			case joaat("WH_VEH"):
 				if (iParam0->f_87)
 				{
 					func_258(iParam0, 2, 1, &(Local_1106[iParam0->f_34 /*32*/].f_1), 0, bVar9);
@@ -15630,14 +15630,14 @@ void func_285(int iParam0)//Position - 0x12CB9
 				}
 				break;
 			
-			case -1225951737:
+			case joaat("HEARD_PLAYER"):
 				if (iParam0->f_87)
 				{
 					func_277(iParam0, 1, &(Local_1106[iParam0->f_34 /*32*/].f_1), ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 1, 0, bVar9);
 				}
 				break;
 			
-			case 2074432461:
+			case joaat("HEARD_VAN"):
 				if (iParam0->f_87)
 				{
 					func_280(iParam0, 1, &(Local_1106[iParam0->f_34 /*32*/].f_1), Local_46[func_102() /*8*/], 1, 0, bVar9);
@@ -15679,14 +15679,14 @@ void func_285(int iParam0)//Position - 0x12CB9
 			switch (MISC::GET_HASH_KEY(&(iParam0->f_9)))
 			{
 				case joaat("gunshot"):
-				case 1921975061:
-				case 880647822:
+				case joaat("SEEN_WEAPON"):
+				case joaat("PROJ_AIMED"):
 				case joaat("killed"):
-				case 1518302817:
-				case -1298712083:
+				case joaat("PLAYER_KILLED"):
+				case joaat("DEAD_BODY"):
 					if ((func_290(*iParam0) || (iParam0->f_48 % 2) == 0) || !func_181(Local_29.f_0))
 					{
-						if ((MISC::GET_HASH_KEY(&(iParam0->f_9)) == joaat("gunshot") || MISC::GET_HASH_KEY(&(iParam0->f_9)) == 1921975061) || MISC::GET_HASH_KEY(&(iParam0->f_9)) == 880647822)
+						if ((MISC::GET_HASH_KEY(&(iParam0->f_9)) == joaat("gunshot") || MISC::GET_HASH_KEY(&(iParam0->f_9)) == joaat("SEEN_WEAPON")) || MISC::GET_HASH_KEY(&(iParam0->f_9)) == joaat("PROJ_AIMED"))
 						{
 							if (func_267(iVar11))
 							{
@@ -15722,7 +15722,7 @@ void func_285(int iParam0)//Position - 0x12CB9
 								}
 							}
 						}
-						else if ((MISC::GET_HASH_KEY(&(iParam0->f_9)) == joaat("killed") || MISC::GET_HASH_KEY(&(iParam0->f_9)) == 1518302817) || MISC::GET_HASH_KEY(&(iParam0->f_9)) == -1298712083)
+						else if ((MISC::GET_HASH_KEY(&(iParam0->f_9)) == joaat("killed") || MISC::GET_HASH_KEY(&(iParam0->f_9)) == joaat("PLAYER_KILLED")) || MISC::GET_HASH_KEY(&(iParam0->f_9)) == joaat("DEAD_BODY"))
 						{
 							if (func_267(iVar11))
 							{
@@ -15787,7 +15787,7 @@ void func_285(int iParam0)//Position - 0x12CB9
 		case 4:
 			switch (MISC::GET_HASH_KEY(&(iParam0->f_9)))
 			{
-				case 1224761252:
+				case joaat("GUN_AIMED"):
 					if (func_281(*iParam0, 4))
 					{
 						func_258(iParam0, 4, 0, "GUN_AIMED_AT", 1, 0);
@@ -15798,7 +15798,7 @@ void func_285(int iParam0)//Position - 0x12CB9
 					}
 					break;
 				
-				case -1645534839:
+				case joaat("GUN_AIMED_AT"):
 					if (func_281(*iParam0, 4))
 					{
 						func_258(iParam0, 4, 1, "GUN_AIMED_AT", 1, 0);
@@ -15979,8 +15979,8 @@ void func_285(int iParam0)//Position - 0x12CB9
 			}
 			switch (MISC::GET_HASH_KEY(&(iParam0->f_9)))
 			{
-				case -414594135:
-				case 1260350710:
+				case joaat("SEE_VAN_LEAVING"):
+				case joaat("SEE_VAN_LEAVING_1"):
 					if (func_290(*iParam0) && MISC::ARE_STRINGS_EQUAL(&(iParam0->f_9), "SEE_VAN_LEAVING"))
 					{
 						if (func_267(iVar11))
@@ -16002,7 +16002,7 @@ void func_285(int iParam0)//Position - 0x12CB9
 					}
 					break;
 				
-				case 58299323:
+				case joaat("VAN_LOST"):
 					if (func_290(*iParam0))
 					{
 						Var12 = { func_289(iVar11, "JS_VAN_LVE2") };
@@ -16014,7 +16014,7 @@ void func_285(int iParam0)//Position - 0x12CB9
 					}
 					break;
 				
-				case 356486511:
+				case joaat("CHECK_DRIVER"):
 					if (bVar13)
 					{
 						if ((MISC::GET_GAME_TIMER() - iParam0->f_37) > 2000 && !AUDIO::IS_PED_IN_CURRENT_CONVERSATION(*iParam0))
@@ -16028,7 +16028,7 @@ void func_285(int iParam0)//Position - 0x12CB9
 					}
 					break;
 				
-				case -1225951737:
+				case joaat("HEARD_PLAYER"):
 					if (((MISC::GET_GAME_TIMER() - iParam0->f_37) > 4000 && func_108(*iParam0, iParam0->f_88, 1) < 3f) && TASK::IS_PED_STILL(*iParam0))
 					{
 						func_258(iParam0, 1, 0, "SOUND_LOST", 1, 0);
@@ -16046,7 +16046,7 @@ void func_285(int iParam0)//Position - 0x12CB9
 					}
 					break;
 				
-				case -927541383:
+				case joaat("SOUND_LOST"):
 					if ((MISC::GET_GAME_TIMER() - iParam0->f_37) > 4000 && !AUDIO::IS_PED_IN_CURRENT_CONVERSATION(*iParam0))
 					{
 						if (func_267(iVar11))
@@ -16072,8 +16072,8 @@ void func_285(int iParam0)//Position - 0x12CB9
 			switch (MISC::GET_HASH_KEY(&(iParam0->f_9)))
 			{
 				case joaat("fight"):
-				case 1681313069:
-				case 1156217463:
+				case joaat("FIGHT_RETURN"):
+				case joaat("RAN_OVER"):
 				case -419867425:
 					if ((((MISC::GET_GAME_TIMER() - iParam0->f_38) > 8000 && func_108(PLAYER::PLAYER_PED_ID(), Local_58, 1) > 65f) && (func_107(PLAYER::PLAYER_PED_ID(), *iParam0, 1) > 10f || (MISC::GET_GAME_TIMER() - iParam0->f_38) > 16000)) && !AUDIO::IS_PED_IN_CURRENT_CONVERSATION(*iParam0))
 					{
@@ -16138,7 +16138,7 @@ void func_285(int iParam0)//Position - 0x12CB9
 					}
 					break;
 				
-				case 1093888274:
+				case joaat("FIGHT_ESC"):
 					if ((MISC::GET_GAME_TIMER() - iParam0->f_37) > 4000)
 					{
 						func_258(iParam0, 0, 0, "BACK_TO_WORK", 1, 0);
@@ -16153,7 +16153,7 @@ void func_285(int iParam0)//Position - 0x12CB9
 					}
 					break;
 				
-				case 1682434916:
+				case joaat("STEALING_VAN"):
 					if (((((MISC::GET_GAME_TIMER() - iParam0->f_37) > 2000 && iParam0->f_39) && !AUDIO::IS_PED_IN_CURRENT_CONVERSATION(*iParam0)) && iLocal_1322 != 9) && iLocal_1322 != 10)
 					{
 						func_258(iParam0, 3, 0, "EXIT_VAN", 1, 0);
@@ -16207,7 +16207,7 @@ void func_285(int iParam0)//Position - 0x12CB9
 					}
 					break;
 				
-				case -924218668:
+				case joaat("GET_IN_VAN"):
 					if (func_290(*iParam0))
 					{
 						if (func_267(iVar11))
@@ -16261,7 +16261,7 @@ void func_285(int iParam0)//Position - 0x12CB9
 					}
 					break;
 				
-				case 2056033185:
+				case joaat("EXIT_VAN"):
 					if (func_290(*iParam0))
 					{
 						if (func_267(iVar11))
@@ -16335,7 +16335,7 @@ void func_285(int iParam0)//Position - 0x12CB9
 				}
 				switch (MISC::GET_HASH_KEY(&(iParam0->f_9)))
 				{
-					case -426892158:
+					case joaat("ENT_FOOT"):
 						if (func_290(*iParam0))
 						{
 							if (!iParam0->f_82)
@@ -16387,7 +16387,7 @@ void func_285(int iParam0)//Position - 0x12CB9
 						}
 						break;
 					
-					case -1461435341:
+					case joaat("ENT_VEH"):
 						if (func_290(*iParam0) || iParam0->f_48 == 0)
 						{
 							if (!iParam0->f_82)
@@ -16432,7 +16432,7 @@ void func_285(int iParam0)//Position - 0x12CB9
 						}
 						break;
 					
-					case -972653884:
+					case joaat("WH_FOOT"):
 						if (func_290(*iParam0))
 						{
 							if (iParam0->f_104 == 0)
@@ -16497,7 +16497,7 @@ void func_285(int iParam0)//Position - 0x12CB9
 						}
 						break;
 					
-					case -640827668:
+					case joaat("WH_DITCH_VEH"):
 						if (func_290(*iParam0))
 						{
 							if (iParam0->f_104 == 0)
@@ -16569,7 +16569,7 @@ void func_285(int iParam0)//Position - 0x12CB9
 						}
 						break;
 					
-					case -520621538:
+					case joaat("WH_VEH"):
 						if (func_290(*iParam0))
 						{
 							if (iParam0->f_104 == 0)
@@ -16641,7 +16641,7 @@ void func_285(int iParam0)//Position - 0x12CB9
 						}
 						break;
 					
-					case 778765338:
+					case joaat("ENT_DITCH_VEH"):
 						if (iParam0->f_48 == 0)
 						{
 							if (func_48() && (MISC::GET_GAME_TIMER() - iLocal_1278) > 1000)
@@ -16669,7 +16669,7 @@ void func_285(int iParam0)//Position - 0x12CB9
 						}
 						break;
 					
-					case 1580556320:
+					case joaat("ENT_FOOT_LEAVE"):
 						if (iParam0->f_48 == 0)
 						{
 							if (func_48() && (MISC::GET_GAME_TIMER() - iLocal_1278) > 1000)
@@ -16692,9 +16692,9 @@ void func_285(int iParam0)//Position - 0x12CB9
 						}
 						break;
 					
-					case -1697689838:
-					case -628260985:
-					case -1891358342:
+					case joaat("ENT_VEH_LEAVE"):
+					case joaat("WH_FOOT_LEAVE"):
+					case joaat("WH_VEH_LEAVE"):
 						if (iParam0->f_48 == 0)
 						{
 							if (func_48() && (MISC::GET_GAME_TIMER() - iLocal_1278) > 1000)

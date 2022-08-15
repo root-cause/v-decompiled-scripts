@@ -8793,7 +8793,7 @@ void func_313()//Position - 0xA098
 	char* sVar0;
 	
 	sVar0 = "HIDE_OVERLAY_ONE_BUTTON";
-	if (MISC::GET_HASH_KEY(sLocal_144) == -2021992805)
+	if (MISC::GET_HASH_KEY(sLocal_144) == joaat("SHOW_OVERLAY_TWO_BUTTON"))
 	{
 		sVar0 = "HIDE_OVERLAY_TWO_BUTTON";
 	}

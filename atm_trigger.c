@@ -3072,7 +3072,7 @@ int func_29(int iParam0)//Position - 0x2FE8
 								func_31("MONEY_SPENT_HEALTHCARE");
 								break;
 							
-							case -152954333:
+							case joaat("MONEY_SPENT_FROM_DEBUG"):
 								func_31("MONEY_SPENT_FROM_DEBUG");
 								break;
 							
@@ -3084,7 +3084,7 @@ int func_29(int iParam0)//Position - 0x2FE8
 								func_31("MONEY_SPENT_VEH_MAINTENANCE");
 								break;
 							
-							case -1995364556:
+							case joaat("MONEY_SPENT_HOLDUPS"):
 								func_31("MONEY_SPENT_HOLDUPS");
 								break;
 							

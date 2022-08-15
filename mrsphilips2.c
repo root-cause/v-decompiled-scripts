@@ -499,9 +499,9 @@ void func_6()//Position - 0x4E9
 					STREAMING::REQUEST_ANIM_DICT("rcmtmom_2leadinout");
 					if (func_701(1, 1093140480, 0) && STREAMING::HAS_ANIM_DICT_LOADED("rcmtmom_2leadinout"))
 					{
-						if (!OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(1736361794))
+						if (!OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(joaat("DOORHASH_T_TRAILER_CS")))
 						{
-							OBJECT::ADD_DOOR_TO_SYSTEM(1736361794, joaat("v_ilev_trevtraildr"), 1972.77f, 3815.37f, 33.66f, true, true, false);
+							OBJECT::ADD_DOOR_TO_SYSTEM(joaat("DOORHASH_T_TRAILER_CS"), joaat("v_ilev_trevtraildr"), 1972.77f, 3815.37f, 33.66f, true, true, false);
 						}
 						CUTSCENE::START_CUTSCENE(2048);
 						RECORDING::_0x48621C9FCA3EBD28(1);
@@ -48493,7 +48493,7 @@ struct<7> func_314(int iParam0)//Position - 0x3B675
 			Var0.f_3 = joaat("v_ilev_trevtraildr");
 			Var0 = { 1973f, 3815f, 34f };
 			MISC::SET_BIT(&(Var0.f_4), 0);
-			Var0.f_5 = 1736361794;
+			Var0.f_5 = joaat("DOORHASH_T_TRAILER_CS");
 			break;
 		
 		case 52:
@@ -71401,7 +71401,7 @@ int func_501(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, 
 			}
 			break;
 		
-		case 1019352240:
+		case joaat("crewLogo"):
 			if (bParam8)
 			{
 				if (iVar0 == joaat("mp_m_freemode_01"))
@@ -71986,7 +71986,7 @@ int func_503(int iParam0, char* sParam1, int iParam2)//Position - 0x5C69E
 {
 	switch (iParam2)
 	{
-		case 1019352240:
+		case joaat("crewLogo"):
 		case joaat("hairOverlay"):
 		case joaat("torsoDecal"):
 			return -1;
@@ -72392,7 +72392,7 @@ int func_503(int iParam0, char* sParam1, int iParam2)//Position - 0x5C69E
 	}
 	switch (MISC::GET_HASH_KEY(sParam1))
 	{
-		case 1948764112:
+		case joaat("NO_LABEL"):
 			return -1;
 			break;
 		
@@ -77017,7 +77017,7 @@ void func_528(int iParam0, int iParam1)//Position - 0x63765
 		{
 			if (iVar1 == 3 || iVar1 == 4)
 			{
-				if (iParam0 == 1019352240)
+				if (iParam0 == joaat("crewLogo"))
 				{
 					func_552(13, 0, Global_78127);
 					func_552(14, 0, Global_78127);

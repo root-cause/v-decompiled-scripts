@@ -169,14 +169,14 @@ void __EntryFunction__()//Position - 0x0
 			{
 				if (iLocal_53 == 0)
 				{
-					if (!OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(1736361794))
+					if (!OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(joaat("DOORHASH_T_TRAILER_CS")))
 					{
-						OBJECT::ADD_DOOR_TO_SYSTEM(1736361794, joaat("v_ilev_trevtraildr"), 1972.77f, 3815.37f, 33.66f, true, true, false);
+						OBJECT::ADD_DOOR_TO_SYSTEM(joaat("DOORHASH_T_TRAILER_CS"), joaat("v_ilev_trevtraildr"), 1972.77f, 3815.37f, 33.66f, true, true, false);
 					}
-					if (OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(1736361794))
+					if (OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(joaat("DOORHASH_T_TRAILER_CS")))
 					{
-						OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(1736361794, 0f, true, false);
-						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(1736361794, 1, true, false);
+						OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(joaat("DOORHASH_T_TRAILER_CS"), 0f, true, false);
+						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(joaat("DOORHASH_T_TRAILER_CS"), 1, true, false);
 						iLocal_53 = 1;
 					}
 				}

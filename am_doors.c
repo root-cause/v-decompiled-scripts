@@ -3034,7 +3034,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			break;
 		
 		case 276:
-			Var0.f_0 = -1750863300;
+			Var0.f_0 = joaat("MP_MED_APT_BATH_DOOR");
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("v_ilev_mm_doorw");
 			Var0.f_3 = { 348.2157f, -993.1122f, -99.043f };

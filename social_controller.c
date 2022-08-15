@@ -735,9 +735,9 @@ void func_12(char* sParam0, var uParam1)//Position - 0x6DE
 	{
 		StringCopy(&cVar2, HUD::_GET_TEXT_SUBSTRING(sParam0, iVar1, iVar1 + 1), 8);
 		iVar1++;
-		if (MISC::GET_HASH_KEY(&cVar2) == 625527429 || iVar1 >= iVar0)
+		if (MISC::GET_HASH_KEY(&cVar2) == joaat(",") || iVar1 >= iVar0)
 		{
-			if (MISC::GET_HASH_KEY(&cVar2) != 625527429)
+			if (MISC::GET_HASH_KEY(&cVar2) != joaat(","))
 			{
 				StringConCat(&cVar4, &cVar2, 32);
 			}
@@ -27184,7 +27184,7 @@ int func_394(char* sParam0)//Position - 0x1D224
 			return 19800;
 			break;
 		
-		case 1224546404:
+		case joaat("HOT PINK"):
 			return 20000;
 			break;
 		
@@ -27600,7 +27600,7 @@ int func_396(char* sParam0)//Position - 0x1D81B
 			return 14750;
 			break;
 		
-		case 1224546404:
+		case joaat("HOT PINK"):
 			return 15000;
 			break;
 		
@@ -27826,7 +27826,7 @@ int func_397(char* sParam0)//Position - 0x1DCB3
 			return 12500;
 			break;
 		
-		case -644198701:
+		case joaat("BR BLACK_STEEL"):
 			return 11500;
 			break;
 		
@@ -28232,7 +28232,7 @@ int func_401(char* sParam0)//Position - 0x1E256
 			return 12150;
 			break;
 		
-		case 1224546404:
+		case joaat("HOT PINK"):
 			return 12500;
 			break;
 		
@@ -29304,7 +29304,7 @@ int func_413(char* sParam0)//Position - 0x1F3D0
 			return 6;
 			break;
 		
-		case -2077191789:
+		case joaat("SILVER_STEEL"):
 			return 7;
 			break;
 		
@@ -29380,7 +29380,7 @@ int func_413(char* sParam0)//Position - 0x1F3D0
 			return 25;
 			break;
 		
-		case 1224546404:
+		case joaat("HOT PINK"):
 			return 26;
 			break;
 		
@@ -29420,7 +29420,7 @@ int func_413(char* sParam0)//Position - 0x1F3D0
 			return 35;
 			break;
 		
-		case -1411292916:
+		case joaat("RACE_YELLOW1"):
 			return 36;
 			break;
 		
@@ -29604,7 +29604,7 @@ int func_413(char* sParam0)//Position - 0x1F3D0
 			return 81;
 			break;
 		
-		case -644198701:
+		case joaat("BR BLACK_STEEL"):
 			return 82;
 			break;
 		
@@ -46828,65 +46828,65 @@ int func_490(int iParam0)//Position - 0x3D413
 			return 1;
 			break;
 		
-		case 232975537:
+		case joaat("HORN_CLAS1"):
 		case joaat("CMOD_SMOKE_4"):
 			return 2;
 			break;
 		
-		case 462718996:
+		case joaat("HORN_CLAS2"):
 		case joaat("CMOD_SMOKE_5"):
 			return 3;
 			break;
 		
-		case -444556307:
+		case joaat("HORN_CLAS3"):
 		case joaat("CMOD_SMOKE_6"):
 			return 4;
 			break;
 		
-		case -213731471:
+		case joaat("HORN_CLAS4"):
 		case joaat("CMOD_SMOKE_7"):
 			return 5;
 			break;
 		
-		case -968041086:
+		case joaat("HORN_CLAS5"):
 			return 6;
 			break;
 		
-		case -694977009:
+		case joaat("HORN_CLAS6"):
 		case joaat("CMOD_SMOKE_3"):
 			return 7;
 			break;
 		
-		case 1523877515:
+		case joaat("HORN_CLAS7"):
 		case joaat("CMOD_SMOKE_8"):
 			return 8;
 			break;
 		
-		case -1518694851:
+		case joaat("HORN_CNOTE_C0"):
 			return 9;
 			break;
 		
-		case 685937731:
+		case joaat("HORN_CNOTE_D0"):
 			return 10;
 			break;
 		
-		case 1107182854:
+		case joaat("HORN_CNOTE_E0"):
 			return 11;
 			break;
 		
-		case 1795528252:
+		case joaat("HORN_CNOTE_F0"):
 			return 12;
 			break;
 		
-		case 963431690:
+		case joaat("HORN_CNOTE_G0"):
 			return 13;
 			break;
 		
-		case 7683469:
+		case joaat("HORN_CNOTE_A0"):
 			return 14;
 			break;
 		
-		case -1485567420:
+		case joaat("HORN_CNOTE_B0"):
 			return 15;
 			break;
 		
@@ -46898,49 +46898,49 @@ int func_490(int iParam0)//Position - 0x3D413
 			return 17;
 			break;
 		
-		case -835077886:
+		case joaat("CMOD_TYR_12"):
 		case joaat("CMOD_SMOKE_12"):
 			return 18;
 			break;
 		
-		case 1888648625:
+		case joaat("CMOD_TYR_13"):
 		case joaat("CMOD_SMOKE_13"):
 			return 19;
 			break;
 		
-		case 1708257079:
+		case joaat("HORN_HIPS1"):
 			return 20;
 			break;
 		
-		case -1440188433:
+		case joaat("HORN_HIPS2"):
 			return 22;
 			break;
 		
-		case -1813427343:
+		case joaat("HORN_HIPS3"):
 			return 22;
 			break;
 		
-		case -1940603832:
+		case joaat("HORN_HIPS4"):
 			return 23;
 			break;
 		
-		case -665245345:
+		case joaat("HORN_INDI_1"):
 			return 24;
 			break;
 		
-		case 1049163197:
+		case joaat("HORN_INDI_2"):
 			return 25;
 			break;
 		
-		case -177872008:
+		case joaat("HORN_INDI_3"):
 			return 26;
 			break;
 		
-		case -366752524:
+		case joaat("HORN_INDI_4"):
 			return 27;
 			break;
 		
-		case -952091823:
+		case joaat("CMOD_TYR_PAT"):
 			return 28;
 			break;
 		

@@ -5842,7 +5842,7 @@ void func_91()//Position - 0xA193
 					}
 					else if (Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 == 2 || Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 == 3)
 					{
-						Local_162.f_0 = 1952785842;
+						Local_162.f_0 = joaat("high stakes");
 					}
 					else
 					{
@@ -5852,19 +5852,19 @@ void func_91()//Position - 0xA193
 					Local_162.f_6 = 1;
 					if (func_330(PLAYER::PLAYER_ID()))
 					{
-						Local_162.f_15 = 1983458449;
+						Local_162.f_15 = joaat("VIP membership");
 					}
 					else if (func_327())
 					{
-						Local_162.f_15 = 1334658487;
+						Local_162.f_15 = joaat("paid membership");
 					}
 					else if (func_329(1) && (func_330(func_328()) || func_227(PLAYER::PLAYER_ID())))
 					{
-						Local_162.f_15 = 980726932;
+						Local_162.f_15 = joaat("Gang membership");
 					}
 					else
 					{
-						Local_162.f_15 = 939907746;
+						Local_162.f_15 = joaat("no membership");
 					}
 					func_370(&uLocal_159, 0, 0);
 					func_226();
@@ -6205,19 +6205,19 @@ void func_95()//Position - 0xB371
 				Local_161.f_11 = func_330(PLAYER::PLAYER_ID());
 				if (func_330(PLAYER::PLAYER_ID()))
 				{
-					Local_161.f_20 = 1983458449;
+					Local_161.f_20 = joaat("VIP membership");
 				}
 				else if (func_327())
 				{
-					Local_161.f_20 = 1334658487;
+					Local_161.f_20 = joaat("paid membership");
 				}
 				else if (func_329(1) && (func_330(func_328()) || func_227(PLAYER::PLAYER_ID())))
 				{
-					Local_161.f_20 = 980726932;
+					Local_161.f_20 = joaat("Gang membership");
 				}
 				else
 				{
-					Local_161.f_20 = 939907746;
+					Local_161.f_20 = joaat("no membership");
 				}
 				if (func_419(PLAYER::PLAYER_ID()))
 				{
@@ -6225,7 +6225,7 @@ void func_95()//Position - 0xB371
 				}
 				else if (Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 == 2 || Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 == 3)
 				{
-					Local_161.f_1 = 1952785842;
+					Local_161.f_1 = joaat("high stakes");
 				}
 				else
 				{
@@ -6245,8 +6245,8 @@ void func_95()//Position - 0xB371
 				{
 					Local_161.f_9 = Local_109.f_30[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2];
 				}
-				Local_162.f_2 = 939907746;
-				Local_161.f_4 = 939907746;
+				Local_162.f_2 = joaat("no membership");
+				Local_161.f_4 = joaat("no membership");
 				Local_161.f_7 = func_402();
 				Local_161.f_17 = func_207(&uLocal_157, 0, 0);
 				Local_161.f_18 = func_408();
@@ -6273,8 +6273,8 @@ void func_95()//Position - 0xB371
 			}
 			if ((((Local_152.f_19 < Local_152.f_28 && Local_151[PLAYER::PLAYER_ID() /*9*/].f_3 == 0) && Local_151[PLAYER::PLAYER_ID() /*9*/].f_5 == 0) && Local_151[PLAYER::PLAYER_ID() /*9*/].f_4 == 0) && !Local_152.f_1)
 			{
-				Local_161.f_4 = -1275559872;
-				Local_162.f_2 = -1275559872;
+				Local_161.f_4 = joaat("low chips");
+				Local_162.f_2 = joaat("low chips");
 				Local_161.f_7 = func_402();
 				Local_161.f_17 = func_207(&uLocal_157, 0, 0);
 				Local_161.f_18 = func_408();
@@ -6315,29 +6315,29 @@ void func_95()//Position - 0xB371
 				switch (func_331())
 				{
 					case 0:
-						Local_161.f_4 = 1982714739;
+						Local_161.f_4 = joaat("win cutoff");
 						break;
 					
 					case 1:
-						Local_161.f_4 = -633175758;
+						Local_161.f_4 = joaat("loss cutoff");
 						break;
 					
 					case 2:
-						Local_161.f_4 = -1625999354;
+						Local_161.f_4 = joaat("time cutoff");
 						break;
 				}
 				switch (func_331())
 				{
 					case 0:
-						Local_162.f_2 = 1982714739;
+						Local_162.f_2 = joaat("win cutoff");
 						break;
 					
 					case 1:
-						Local_162.f_2 = -633175758;
+						Local_162.f_2 = joaat("loss cutoff");
 						break;
 					
 					case 2:
-						Local_162.f_2 = -1625999354;
+						Local_162.f_2 = joaat("time cutoff");
 						break;
 				}
 				Local_161.f_7 = func_402();
@@ -7477,29 +7477,29 @@ void func_95()//Position - 0xB371
 						switch (func_331())
 						{
 							case 0:
-								Local_161.f_4 = 1982714739;
+								Local_161.f_4 = joaat("win cutoff");
 								break;
 							
 							case 1:
-								Local_161.f_4 = -633175758;
+								Local_161.f_4 = joaat("loss cutoff");
 								break;
 							
 							case 2:
-								Local_161.f_4 = -1625999354;
+								Local_161.f_4 = joaat("time cutoff");
 								break;
 						}
 						switch (func_331())
 						{
 							case 0:
-								Local_162.f_2 = 1982714739;
+								Local_162.f_2 = joaat("win cutoff");
 								break;
 							
 							case 1:
-								Local_162.f_2 = -633175758;
+								Local_162.f_2 = joaat("loss cutoff");
 								break;
 							
 							case 2:
-								Local_162.f_2 = -1625999354;
+								Local_162.f_2 = joaat("time cutoff");
 								break;
 						}
 						if (Global_262145.f_26815 && !bVar25)
@@ -7534,7 +7534,7 @@ void func_95()//Position - 0xB371
 					}
 					if (iVar28 > 500)
 					{
-						Local_161.f_22 = 745220304;
+						Local_161.f_22 = joaat("StraightFlush");
 					}
 					else if (iVar28 > 400)
 					{

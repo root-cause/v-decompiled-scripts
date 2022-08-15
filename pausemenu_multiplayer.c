@@ -1703,12 +1703,12 @@ void func_3(int iParam0, char* sParam1, char* sParam2, int iParam3, char* sParam
 					}
 				}
 				func_6(iVar9, iVar10, joaat("XP_MULTIPLIER"), &fVar1, 1);
-				func_6(iVar9, iVar10, -31280827, &fVar4, 1);
+				func_6(iVar9, iVar10, joaat("FAKE_XP_MULTIPLIER"), &fVar4, 1);
 				func_6(iVar9, iVar10, joaat("CASH_MULTIPLIER"), &fVar2, 1);
 				func_6(iVar9, iVar10, -1245438974, &fVar5, 1);
 				if (func_5(iParam12))
 				{
-					func_6(iVar9, iVar10, -1258787971, &fVar3, 1);
+					func_6(iVar9, iVar10, joaat("AP_MULTIPLIER"), &fVar3, 1);
 				}
 				else
 				{
@@ -2086,7 +2086,7 @@ int func_8(int iParam0)//Position - 0x17B8
 	switch (iParam0)
 	{
 		case 0:
-			return 190769267;
+			return joaat("BASE_GLOBALS");
 			break;
 		
 		case 1:
@@ -2094,102 +2094,102 @@ int func_8(int iParam0)//Position - 0x17B8
 			break;
 		
 		case 2:
-			return 1398379561;
+			return joaat("MP_CNC");
 			break;
 		
 		case 3:
-			return -295628664;
+			return joaat("MP_CNC_TEAM_COP");
 			break;
 		
 		case 4:
-			return -1157311665;
+			return joaat("MP_CNC_TEAM_VAGOS");
 			break;
 		
 		case 5:
-			return 988790432;
+			return joaat("MP_CNC_TEAM_LOST");
 			break;
 		
 		case 6:
-			return 1140746429;
+			return joaat("MP_FM");
 			break;
 		
 		case 7:
-			return 1882254284;
+			return joaat("MP_FM_DM");
 			break;
 		
 		case 8:
-			return -1021097824;
+			return joaat("MP_FM_RACES");
 			break;
 		
 		case 9:
-			return 1031194139;
+			return joaat("MP_FM_RACES_CAR");
 			break;
 		
 		case 10:
-			return -946481156;
+			return joaat("MP_FM_RACES_BIKE");
 			break;
 		
 		case 11:
-			return -364624190;
+			return joaat("MP_FM_RACES_CYCLE");
 			break;
 		
 		case 12:
-			return -199795525;
+			return joaat("MP_FM_RACES_AIR");
 			break;
 		
 		case 13:
-			return -866645446;
+			return joaat("MP_FM_RACES_SEA");
 			break;
 		
 		case 14:
-			return 1144300534;
+			return joaat("MP_FM_RACES_STUNT");
 			break;
 		
 		case 15:
-			return 539878179;
+			return joaat("MP_FM_MISSIONS");
 			break;
 		
 		case 16:
-			return 571975921;
+			return joaat("MP_FM_SURVIVAL");
 			break;
 		
 		case 17:
-			return 818280646;
+			return joaat("MP_FM_BASEJUMP");
 			break;
 		
 		case 18:
-			return -183978087;
+			return joaat("MP_FM_CAPTURE");
 			break;
 		
 		case 19:
-			return -52527117;
+			return joaat("MP_FM_LTS");
 			break;
 		
 		case 26:
-			return -395434754;
+			return joaat("MP_FM_HEIST");
 			break;
 		
 		case 20:
-			return -1110334219;
+			return joaat("MP_FM_CONTACT");
 			break;
 		
 		case 21:
-			return -1382306730;
+			return joaat("MP_FM_RANDOM");
 			break;
 		
 		case 22:
-			return 1453550531;
+			return joaat("MP_FM_VERSUS");
 			break;
 		
 		case 23:
 			break;
 		
 		case 24:
-			return 1744317449;
+			return joaat("MP_FM_GANG_ATTACK");
 			break;
 		
 		case 25:
-			return -1679896800;
+			return joaat("MP_FMADVERSARY");
 			break;
 		
 		case 27:
@@ -12868,7 +12868,7 @@ int func_374(var uParam0, int iParam1)//Position - 0xD97E
 		{
 			return 8;
 		}
-		if (((((((((((Global_1853348[PLAYER::PLAYER_ID() /*834*/] == 14 || Global_1853348[PLAYER::PLAYER_ID() /*834*/] == 15) || Global_1853348[PLAYER::PLAYER_ID() /*834*/] == 13) || Global_1853348[PLAYER::PLAYER_ID() /*834*/] == 6) || Global_1853348[PLAYER::PLAYER_ID() /*834*/] == 5) || Global_1853348[PLAYER::PLAYER_ID() /*834*/] == 32) || func_395()) || BitTest(Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_833, 6)) || func_390(PLAYER::PLAYER_PED_ID(), 1215605247, 0, uParam0, 0, 500, 1, 0)) || func_389(PLAYER::PLAYER_ID(), 0)) || func_171(PLAYER::PLAYER_ID(), 1, 0)) || Global_1853348[PLAYER::PLAYER_ID() /*834*/] == 148)
+		if (((((((((((Global_1853348[PLAYER::PLAYER_ID() /*834*/] == 14 || Global_1853348[PLAYER::PLAYER_ID() /*834*/] == 15) || Global_1853348[PLAYER::PLAYER_ID() /*834*/] == 13) || Global_1853348[PLAYER::PLAYER_ID() /*834*/] == 6) || Global_1853348[PLAYER::PLAYER_ID() /*834*/] == 5) || Global_1853348[PLAYER::PLAYER_ID() /*834*/] == 32) || func_395()) || BitTest(Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_833, 6)) || func_390(PLAYER::PLAYER_PED_ID(), joaat("MP_GAR_SIMEON"), 0, uParam0, 0, 500, 1, 0)) || func_389(PLAYER::PLAYER_ID(), 0)) || func_171(PLAYER::PLAYER_ID(), 1, 0)) || Global_1853348[PLAYER::PLAYER_ID() /*834*/] == 148)
 		{
 			return 9;
 		}
@@ -13451,11 +13451,11 @@ Vector3 func_392(int iParam0)//Position - 0xE4F1
 {
 	switch (iParam0)
 	{
-		case 1215605247:
+		case joaat("MP_GAR_SIMEON"):
 			return 1204.429f, -3110.847f, 4.3988f;
 			break;
 		
-		case -1710530912:
+		case joaat("MP_GAR_PNS_2"):
 			return 725.1831f, -1089.349f, 21.1692f;
 			break;
 		
@@ -13463,11 +13463,11 @@ Vector3 func_392(int iParam0)//Position - 0xE4F1
 			return -1164.887f, -2011.105f, 12.25371f;
 			break;
 		
-		case 916723671:
+		case joaat("MP_GAR_PNS_4"):
 			return -330.44f, -143.39f, 39.33f;
 			break;
 		
-		case 1340820069:
+		case joaat("MP_GAR_PNS_5"):
 			return 106.28f, 6620.01f, 32.12f;
 			break;
 		
@@ -13483,9 +13483,9 @@ void func_393(var uParam0, int iParam1)//Position - 0xE5A5
 	switch (iParam1)
 	{
 		case 0:
-		case 1215605247:
+		case joaat("MP_GAR_SIMEON"):
 			*uParam0 = 99;
-			uParam0->f_1 = 1215605247;
+			uParam0->f_1 = joaat("MP_GAR_SIMEON");
 			uParam0->f_2 = 0;
 			uParam0->f_3 = { 1204.429f, -3110.847f, 4.3988f };
 			uParam0->f_6 = -247372382;
@@ -13504,9 +13504,9 @@ void func_393(var uParam0, int iParam1)//Position - 0xE5A5
 			break;
 		
 		case 1:
-		case -1710530912:
+		case joaat("MP_GAR_PNS_2"):
 			*uParam0 = 99;
-			uParam0->f_1 = -1710530912;
+			uParam0->f_1 = joaat("MP_GAR_PNS_2");
 			uParam0->f_2 = 1;
 			uParam0->f_3 = { 725.1831f, -1089.349f, 21.1692f };
 			uParam0->f_7 = 0;
@@ -13544,9 +13544,9 @@ void func_393(var uParam0, int iParam1)//Position - 0xE5A5
 			break;
 		
 		case 3:
-		case 916723671:
+		case joaat("MP_GAR_PNS_4"):
 			*uParam0 = 99;
-			uParam0->f_1 = 916723671;
+			uParam0->f_1 = joaat("MP_GAR_PNS_4");
 			uParam0->f_2 = 3;
 			uParam0->f_3 = { -330.44f, -143.39f, 39.33f };
 			uParam0->f_7 = 0;
@@ -13564,9 +13564,9 @@ void func_393(var uParam0, int iParam1)//Position - 0xE5A5
 			break;
 		
 		case 4:
-		case 1340820069:
+		case joaat("MP_GAR_PNS_5"):
 			*uParam0 = 99;
-			uParam0->f_1 = 1340820069;
+			uParam0->f_1 = joaat("MP_GAR_PNS_5");
 			uParam0->f_2 = 4;
 			uParam0->f_3 = { 106.28f, 6620.01f, 32.12f };
 			uParam0->f_7 = 0;
@@ -120719,10 +120719,10 @@ int func_1556(int iParam0)//Position - 0xAD02F
 			return joaat("lester");
 		
 		case 31:
-			return -328739832;
+			return joaat("martin");
 		
 		case 20:
-			return -1984782235;
+			return joaat("ron");
 		
 		case 18:
 			return joaat("simeon");
@@ -120740,7 +120740,7 @@ int func_1556(int iParam0)//Position - 0xAD02F
 			return joaat("hao");
 		
 		case 34:
-			return 1526580161;
+			return joaat("oscar");
 		
 		case 152:
 			return joaat("lazlow");
@@ -120749,7 +120749,7 @@ int func_1556(int iParam0)//Position - 0xAD02F
 			return joaat("merryweather");
 		
 		case 84:
-			return 1085494823;
+			return joaat("brucie");
 		
 		case 0:
 			return joaat("MICHAEL");
@@ -120761,7 +120761,7 @@ int func_1556(int iParam0)//Position - 0xAD02F
 			return 1548197805;
 		
 		case 151:
-			return 1252576609;
+			return joaat("tony");
 		
 		case 14:
 			return joaat("JIMMY");
@@ -120776,7 +120776,7 @@ int func_1556(int iParam0)//Position - 0xAD02F
 			return joaat("dave");
 		
 		case 46:
-			return 1528098484;
+			return joaat("rickie");
 		
 		case 47:
 			return joaat("chef");
@@ -120794,19 +120794,19 @@ int func_1556(int iParam0)//Position - 0xAD02F
 			return joaat("maude");
 		
 		case 66:
-			return 1028278171;
+			return joaat("ashley");
 		
 		case 69:
-			return -1120398581;
+			return joaat("omega");
 		
 		case 154:
 			return joaat("paige");
 		
 		case 82:
-			return -867869163;
+			return joaat("ray");
 		
 		case 157:
-			return -979045660;
+			return joaat("agatha");
 		
 		case 79:
 			return joaat("yachtcaptain");
@@ -120815,22 +120815,22 @@ int func_1556(int iParam0)//Position - 0xAD02F
 			return 2111147587;
 		
 		case 169:
-			return -1188565131;
+			return joaat("pavel");
 		
 		case 171:
-			return 1716563776;
+			return joaat("moodymann");
 		
 		case 172:
-			return -1600365920;
+			return joaat("sessanta");
 		
 		case 173:
-			return -1364725565;
+			return joaat("kdj");
 		
 		case 177:
 			return -763093917;
 		
 		case 182:
-			return -934784798;
+			return joaat("ulp");
 		
 		case 145:
 			return 0;

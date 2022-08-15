@@ -2126,26 +2126,26 @@ int func_43(char* sParam0)//Position - 0x2BFC
 {
 	switch (MISC::GET_HASH_KEY(sParam0))
 	{
-		case 368818696:
-		case -242537573:
-		case 293851599:
-		case 1276417163:
-		case -695052470:
-		case -272335065:
-		case 1286719131:
-		case -1417266496:
-		case -469944288:
-		case -687436221:
-		case 1989355620:
-		case 549480519:
-		case 1944388503:
-		case -934641488:
-		case -728564821:
-		case 1522380948:
-		case -1256768569:
-		case -320488889:
-		case -539437394:
-		case -1801936221:
+		case joaat("BONEPIC1_TXT"):
+		case joaat("BONEPIC2_TXT"):
+		case joaat("BONEPIC3_TXT"):
+		case joaat("BONEPIC4_TXT"):
+		case joaat("BONEPIC5_TXT"):
+		case joaat("BONEPIC6_TXT"):
+		case joaat("BONEPIC7_TXT"):
+		case joaat("BONEPIC8_TXT"):
+		case joaat("BONEPIC9_TXT"):
+		case joaat("BONEPIC10_TXT"):
+		case joaat("BONEPIC11_TXT"):
+		case joaat("BONEPIC12_TXT"):
+		case joaat("BONEPIC13_TXT"):
+		case joaat("BONEPIC14_TXT"):
+		case joaat("BONEPIC15_TXT"):
+		case joaat("BONEPIC16_TXT"):
+		case joaat("BONEPIC17_TXT"):
+		case joaat("BONEPIC18_TXT"):
+		case joaat("BONEPIC19_TXT"):
+		case joaat("BONEPIC20_TXT"):
 			return 1;
 		
 		default:

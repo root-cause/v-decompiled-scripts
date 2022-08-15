@@ -22633,7 +22633,7 @@ struct<7> func_351(int iParam0)//Position - 0x209BD
 			Var0.f_3 = joaat("v_ilev_trevtraildr");
 			Var0 = { 1973f, 3815f, 34f };
 			MISC::SET_BIT(&(Var0.f_4), 0);
-			Var0.f_5 = 1736361794;
+			Var0.f_5 = joaat("DOORHASH_T_TRAILER_CS");
 			break;
 		
 		case 52:
@@ -67188,7 +67188,7 @@ int func_532(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, 
 			}
 			break;
 		
-		case 1019352240:
+		case joaat("crewLogo"):
 			if (bParam8)
 			{
 				if (iVar0 == joaat("mp_m_freemode_01"))
@@ -67773,7 +67773,7 @@ int func_534(int iParam0, char* sParam1, int iParam2)//Position - 0x57E8F
 {
 	switch (iParam2)
 	{
-		case 1019352240:
+		case joaat("crewLogo"):
 		case joaat("hairOverlay"):
 		case joaat("torsoDecal"):
 			return -1;
@@ -68179,7 +68179,7 @@ int func_534(int iParam0, char* sParam1, int iParam2)//Position - 0x57E8F
 	}
 	switch (MISC::GET_HASH_KEY(sParam1))
 	{
-		case 1948764112:
+		case joaat("NO_LABEL"):
 			return -1;
 			break;
 		
@@ -72804,7 +72804,7 @@ void func_559(int iParam0, int iParam1)//Position - 0x5F076
 		{
 			if (iVar1 == 3 || iVar1 == 4)
 			{
-				if (iParam0 == 1019352240)
+				if (iParam0 == joaat("crewLogo"))
 				{
 					func_584(13, 0, Global_78127);
 					func_584(14, 0, Global_78127);

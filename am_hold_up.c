@@ -9545,19 +9545,19 @@ void func_267(var uParam0, var uParam1, var uParam2, var uParam3, struct<3> Para
 						case 3:
 							func_106(1276, 1, -1);
 							func_105(16, 1, -1);
-							func_275(1, -251807494, 1359863693, 1, joaat("office"), -1317518156, 0, joaat("pa"), func_282(func_215(), func_283(func_284()), 0));
+							func_275(1, -251807494, joaat("snack"), 1, joaat("office"), joaat("purchase"), 0, joaat("pa"), func_282(func_215(), func_283(func_284()), 0));
 							break;
 						
 						case 1:
 							func_106(1277, 1, -1);
 							func_105(15, 1, -1);
-							func_275(1, 1199442189, 1359863693, 1, joaat("office"), -1317518156, 0, joaat("pa"), func_282(func_215(), func_283(func_284()), 0));
+							func_275(1, 1199442189, joaat("snack"), 1, joaat("office"), joaat("purchase"), 0, joaat("pa"), func_282(func_215(), func_283(func_284()), 0));
 							break;
 						
 						case 2:
 							func_105(14, 1, -1);
 							func_106(1278, 1, -1);
-							func_275(1, 1486811039, 1359863693, 1, joaat("office"), -1317518156, 0, joaat("pa"), func_282(func_215(), func_283(func_284()), 0));
+							func_275(1, 1486811039, joaat("snack"), 1, joaat("office"), joaat("purchase"), 0, joaat("pa"), func_282(func_215(), func_283(func_284()), 0));
 							break;
 						
 						case 4:
@@ -9566,23 +9566,23 @@ void func_267(var uParam0, var uParam1, var uParam2, var uParam3, struct<3> Para
 							{
 								uParam0->f_55 = (20 - func_127(1098, -1, 0));
 							}
-							func_275(1, -181862273, 1359863693, uParam0->f_55, joaat("office"), -1317518156, 0, joaat("pa"), func_282(func_215(), func_283(func_284()), 0));
+							func_275(1, -181862273, joaat("snack"), uParam0->f_55, joaat("office"), joaat("purchase"), 0, joaat("pa"), func_282(func_215(), func_283(func_284()), 0));
 							func_106(1098, uParam0->f_55, -1);
 							break;
 						
 						case 0:
 							func_106(62, 1, -1);
-							func_275(1, -39155154, 1359863693, 1, joaat("office"), -1317518156, 0, joaat("pa"), func_282(func_215(), func_283(func_284()), 0));
+							func_275(1, -39155154, joaat("snack"), 1, joaat("office"), joaat("purchase"), 0, joaat("pa"), func_282(func_215(), func_283(func_284()), 0));
 							break;
 						
 						case 5:
 							func_106(63, 1, -1);
-							func_275(1, -1600998734, 1359863693, 1, joaat("office"), -1317518156, 0, joaat("pa"), func_282(func_215(), func_283(func_284()), 0));
+							func_275(1, -1600998734, joaat("snack"), 1, joaat("office"), joaat("purchase"), 0, joaat("pa"), func_282(func_215(), func_283(func_284()), 0));
 							break;
 						
 						case 6:
 							func_106(10404, 1, -1);
-							func_275(1, 495696637, 1359863693, 1, joaat("office"), -1317518156, 0, joaat("pa"), func_282(func_215(), func_283(func_284()), 0));
+							func_275(1, 495696637, joaat("snack"), 1, joaat("office"), joaat("purchase"), 0, joaat("pa"), func_282(func_215(), func_283(func_284()), 0));
 							break;
 					}
 				}
@@ -9600,7 +9600,7 @@ void func_267(var uParam0, var uParam1, var uParam2, var uParam3, struct<3> Para
 								iVar1 = func_371(uParam0, uParam0->f_12);
 							}
 							func_106(1276, 1, -1);
-							func_275(1, -251807494, 1359863693, 1, func_273(*uParam0), -1317518156, 0, 1037810546, func_282(func_215(), func_283(func_284()), 0));
+							func_275(1, -251807494, joaat("snack"), 1, func_273(*uParam0), joaat("purchase"), 0, joaat("store"), func_282(func_215(), func_283(func_284()), 0));
 							func_105(16, 1, -1);
 							MONEY::NETWORK_BUY_ITEM(iVar1, MISC::GET_HASH_KEY("SNK_ITEM1"), 12, 1, false, 0, 0, 0, 0, true);
 							break;
@@ -9615,7 +9615,7 @@ void func_267(var uParam0, var uParam1, var uParam2, var uParam3, struct<3> Para
 								iVar1 = func_371(uParam0, uParam0->f_12);
 							}
 							func_106(1277, 1, -1);
-							func_275(1, 1199442189, 1359863693, 1, func_273(*uParam0), -1317518156, 0, 1037810546, func_282(func_215(), func_283(func_284()), 0));
+							func_275(1, 1199442189, joaat("snack"), 1, func_273(*uParam0), joaat("purchase"), 0, joaat("store"), func_282(func_215(), func_283(func_284()), 0));
 							func_105(15, 1, -1);
 							MONEY::NETWORK_BUY_ITEM(iVar1, MISC::GET_HASH_KEY("SNK_ITEM2"), 12, 1, false, 0, 0, 0, 0, true);
 							break;
@@ -9631,7 +9631,7 @@ void func_267(var uParam0, var uParam1, var uParam2, var uParam3, struct<3> Para
 							}
 							func_105(14, 1, -1);
 							func_106(1278, 1, -1);
-							func_275(1, 1486811039, 1359863693, 1, func_273(*uParam0), -1317518156, 0, 1037810546, func_282(func_215(), func_283(func_284()), 0));
+							func_275(1, 1486811039, joaat("snack"), 1, func_273(*uParam0), joaat("purchase"), 0, joaat("store"), func_282(func_215(), func_283(func_284()), 0));
 							MONEY::NETWORK_BUY_ITEM(iVar1, MISC::GET_HASH_KEY("SNK_ITEM3"), 12, 1, false, 0, 0, 0, 0, true);
 							break;
 						
@@ -9650,7 +9650,7 @@ void func_267(var uParam0, var uParam1, var uParam2, var uParam3, struct<3> Para
 								uParam0->f_55 = (20 - func_127(1098, -1, 0));
 							}
 							func_106(1098, uParam0->f_55, -1);
-							func_275(1, -181862273, 1359863693, uParam0->f_55, func_273(*uParam0), -1317518156, 0, 1037810546, func_282(func_215(), func_283(func_284()), 0));
+							func_275(1, -181862273, joaat("snack"), uParam0->f_55, func_273(*uParam0), joaat("purchase"), 0, joaat("store"), func_282(func_215(), func_283(func_284()), 0));
 							MONEY::NETWORK_BUY_ITEM(iVar1, MISC::GET_HASH_KEY("SNK_ITEM4"), 12, 1, false, 0, 0, 0, 0, true);
 							break;
 						
@@ -9664,7 +9664,7 @@ void func_267(var uParam0, var uParam1, var uParam2, var uParam3, struct<3> Para
 								iVar1 = func_371(uParam0, uParam0->f_12);
 							}
 							func_106(62, 1, -1);
-							func_275(1, -39155154, 1359863693, 1, func_273(*uParam0), -1317518156, 0, 1037810546, func_282(func_215(), func_283(func_284()), 0));
+							func_275(1, -39155154, joaat("snack"), 1, func_273(*uParam0), joaat("purchase"), 0, joaat("store"), func_282(func_215(), func_283(func_284()), 0));
 							MONEY::NETWORK_BUY_ITEM(iVar1, MISC::GET_HASH_KEY("SNK_ITEM5"), 12, 1, false, 0, 0, 0, 0, true);
 							break;
 						
@@ -9678,7 +9678,7 @@ void func_267(var uParam0, var uParam1, var uParam2, var uParam3, struct<3> Para
 								iVar1 = func_371(uParam0, uParam0->f_12);
 							}
 							func_106(10404, 1, -1);
-							func_275(1, 495696637, 1359863693, 1, func_273(*uParam0), -1317518156, 0, 1037810546, func_282(func_215(), func_283(func_284()), 0));
+							func_275(1, 495696637, joaat("snack"), 1, func_273(*uParam0), joaat("purchase"), 0, joaat("store"), func_282(func_215(), func_283(func_284()), 0));
 							MONEY::NETWORK_BUY_ITEM(iVar1, MISC::GET_HASH_KEY("SNK_ITEM7"), 12, 1, false, 0, 0, 0, 0, true);
 							break;
 						
@@ -9692,7 +9692,7 @@ void func_267(var uParam0, var uParam1, var uParam2, var uParam3, struct<3> Para
 								iVar1 = func_371(uParam0, uParam0->f_12);
 							}
 							func_106(63, 1, -1);
-							func_275(1, -1600998734, 1359863693, 1, func_273(*uParam0), -1317518156, 0, 1037810546, func_282(func_215(), func_283(func_284()), 0));
+							func_275(1, -1600998734, joaat("snack"), 1, func_273(*uParam0), joaat("purchase"), 0, joaat("store"), func_282(func_215(), func_283(func_284()), 0));
 							MONEY::NETWORK_BUY_ITEM(iVar1, MISC::GET_HASH_KEY("SNK_ITEM6"), 12, 1, false, 0, 0, 0, 0, true);
 							break;
 						}
@@ -9737,7 +9737,7 @@ void func_267(var uParam0, var uParam1, var uParam2, var uParam3, struct<3> Para
 				{
 					case 3:
 						func_270(0, 1f, 3);
-						func_275(1, -251807494, 1359863693, 1, 0, -85260536, 0, 1037810546, 0);
+						func_275(1, -251807494, joaat("snack"), 1, 0, joaat("steal"), 0, joaat("store"), 0);
 						func_106(1276, 1, -1);
 						func_105(13, 1, -1);
 						break;
@@ -9745,14 +9745,14 @@ void func_267(var uParam0, var uParam1, var uParam2, var uParam3, struct<3> Para
 					case 1:
 						func_270(1, 1f, 3);
 						func_106(1277, 1, -1);
-						func_275(1, 1199442189, 1359863693, 1, 0, -85260536, 0, 1037810546, 0);
+						func_275(1, 1199442189, joaat("snack"), 1, 0, joaat("steal"), 0, joaat("store"), 0);
 						func_105(13, 1, -1);
 						break;
 					
 					case 2:
 						func_270(2, 1f, 3);
 						func_106(1278, 1, -1);
-						func_275(1, 1486811039, 1359863693, 1, 0, -85260536, 0, 1037810546, 0);
+						func_275(1, 1486811039, joaat("snack"), 1, 0, joaat("steal"), 0, joaat("store"), 0);
 						func_105(13, 1, -1);
 						break;
 					
@@ -9764,25 +9764,25 @@ void func_267(var uParam0, var uParam1, var uParam2, var uParam3, struct<3> Para
 						}
 						func_270(6, SYSTEM::TO_FLOAT(uParam0->f_55), 3);
 						func_106(1098, uParam0->f_55, -1);
-						func_275(1, -181862273, 1359863693, uParam0->f_55, 0, -85260536, 0, 1037810546, 0);
+						func_275(1, -181862273, joaat("snack"), uParam0->f_55, 0, joaat("steal"), 0, joaat("store"), 0);
 						break;
 					
 					case 0:
 						func_270(3, 1f, 3);
 						func_106(62, 1, -1);
-						func_275(1, -39155154, 1359863693, uParam0->f_55, 0, -85260536, 0, 1037810546, 0);
+						func_275(1, -39155154, joaat("snack"), uParam0->f_55, 0, joaat("steal"), 0, joaat("store"), 0);
 						break;
 					
 					case 6:
 						func_270(5, 1f, 3);
 						func_106(10404, 1, -1);
-						func_275(1, 495696637, 1359863693, uParam0->f_55, 0, -85260536, 0, 1037810546, 0);
+						func_275(1, 495696637, joaat("snack"), uParam0->f_55, 0, joaat("steal"), 0, joaat("store"), 0);
 						break;
 					
 					case 5:
 						func_270(4, 1f, 3);
 						func_106(63, 1, -1);
-						func_275(1, -1600998734, 1359863693, uParam0->f_55, 0, -85260536, 0, 1037810546, 0);
+						func_275(1, -1600998734, joaat("snack"), uParam0->f_55, 0, joaat("steal"), 0, joaat("store"), 0);
 						break;
 				}
 				if (!bParam8)
@@ -11328,7 +11328,7 @@ void func_308(var uParam0, bool bParam1)//Position - 0xECEF
 	if (!func_378(uParam0->f_12))
 	{
 		iVar1 = (func_311(uParam0->f_12) - func_127(func_310(uParam0->f_12), -1, 0));
-		func_275(1, func_309(uParam0->f_12), 1359863693, iVar1, func_282(bParam1, joaat("office"), func_273(*uParam0)), -1317518156, 1, func_282(bParam1, joaat("pa"), 1037810546), func_282(func_215(), func_283(func_284()), 0));
+		func_275(1, func_309(uParam0->f_12), joaat("snack"), iVar1, func_282(bParam1, joaat("office"), func_273(*uParam0)), joaat("purchase"), 1, func_282(bParam1, joaat("pa"), joaat("store")), func_282(func_215(), func_283(func_284()), 0));
 		func_124(func_310(uParam0->f_12), func_311(uParam0->f_12), -1, 1, 0);
 		bVar0 = true;
 	}

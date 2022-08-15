@@ -8098,18 +8098,18 @@ int func_336(int iParam0, char* sParam1)//Position - 0x8430
 		case joaat(")"):
 		case joaat("*"):
 		case joaat("+"):
-		case 625527429:
+		case joaat(","):
 		case joaat("-"):
-		case 1224511980:
+		case joaat("."):
 		case 616155491:
-		case 897542894:
-		case 1232048846:
-		case 1529493059:
-		case 1844665301:
+		case joaat(";"):
+		case joaat("<"):
+		case joaat("="):
+		case joaat(">"):
 		case joaat("?"):
 		case joaat("@"):
-		case 1550006445:
-		case 2118548595:
+		case joaat("["):
+		case joaat("]"):
 		case joaat("^"):
 		case joaat("_"):
 		case joaat("`"):
@@ -8167,7 +8167,7 @@ int func_336(int iParam0, char* sParam1)//Position - 0x8430
 		case -1463969696:
 		case 929379417:
 		case 1872733385:
-		case joaat("ap1_04_props_combo119_slod_lod"):
+		case 26298542:
 		case -1893407789:
 		case 322169851:
 		case joaat("¥"):
@@ -8243,19 +8243,19 @@ int func_336(int iParam0, char* sParam1)//Position - 0x8430
 		case joaat(")"):
 		case joaat("*"):
 		case joaat("+"):
-		case 625527429:
+		case joaat(","):
 		case joaat("-"):
-		case 1224511980:
+		case joaat("."):
 		case 616155491:
-		case 897542894:
-		case 1232048846:
-		case 1529493059:
-		case 1844665301:
+		case joaat(";"):
+		case joaat("<"):
+		case joaat("="):
+		case joaat(">"):
 		case joaat("?"):
 		case joaat("@"):
-		case 1550006445:
+		case joaat("["):
 		case joaat("/"):
-		case 2118548595:
+		case joaat("]"):
 		case joaat("^"):
 		case joaat("_"):
 		case joaat("`"):
@@ -8312,7 +8312,7 @@ int func_336(int iParam0, char* sParam1)//Position - 0x8430
 		case -1463969696:
 		case 929379417:
 		case 1872733385:
-		case joaat("ap1_04_props_combo119_slod_lod"):
+		case 26298542:
 		case -1893407789:
 		case 322169851:
 		case 600083096:

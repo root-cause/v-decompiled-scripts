@@ -41527,7 +41527,7 @@ void func_348()//Position - 0x2F759
 							{
 								if (PED::IS_PED_IN_VEHICLE(Local_229.f_0, Local_231.f_0, false))
 								{
-									VEHICLE::START_VEHICLE_HORN(Local_231.f_0, 6000, -2087385909, false);
+									VEHICLE::START_VEHICLE_HORN(Local_231.f_0, 6000, joaat("HELDDOWN"), false);
 								}
 							}
 						}

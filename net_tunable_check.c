@@ -9369,7 +9369,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_4 = 1;
 			break;
 		
-		case 1015:
+		case joaat("XMAS_LIVERY_8"):
 			*uParam1 = 0f;
 			uParam1->f_1 = 1200000f;
 			uParam1->f_2 = 0;
@@ -21369,7 +21369,7 @@ int func_4(int iParam0)//Position - 0x1D163
 	switch (iParam0)
 	{
 		case 0:
-			return 190769267;
+			return joaat("BASE_GLOBALS");
 			break;
 		
 		case 1:
@@ -21377,102 +21377,102 @@ int func_4(int iParam0)//Position - 0x1D163
 			break;
 		
 		case 2:
-			return 1398379561;
+			return joaat("MP_CNC");
 			break;
 		
 		case 3:
-			return -295628664;
+			return joaat("MP_CNC_TEAM_COP");
 			break;
 		
 		case 4:
-			return -1157311665;
+			return joaat("MP_CNC_TEAM_VAGOS");
 			break;
 		
 		case 5:
-			return 988790432;
+			return joaat("MP_CNC_TEAM_LOST");
 			break;
 		
 		case 6:
-			return 1140746429;
+			return joaat("MP_FM");
 			break;
 		
 		case 7:
-			return 1882254284;
+			return joaat("MP_FM_DM");
 			break;
 		
 		case 8:
-			return -1021097824;
+			return joaat("MP_FM_RACES");
 			break;
 		
 		case 9:
-			return 1031194139;
+			return joaat("MP_FM_RACES_CAR");
 			break;
 		
 		case 10:
-			return -946481156;
+			return joaat("MP_FM_RACES_BIKE");
 			break;
 		
 		case 11:
-			return -364624190;
+			return joaat("MP_FM_RACES_CYCLE");
 			break;
 		
 		case 12:
-			return -199795525;
+			return joaat("MP_FM_RACES_AIR");
 			break;
 		
 		case 13:
-			return -866645446;
+			return joaat("MP_FM_RACES_SEA");
 			break;
 		
 		case 14:
-			return 1144300534;
+			return joaat("MP_FM_RACES_STUNT");
 			break;
 		
 		case 15:
-			return 539878179;
+			return joaat("MP_FM_MISSIONS");
 			break;
 		
 		case 16:
-			return 571975921;
+			return joaat("MP_FM_SURVIVAL");
 			break;
 		
 		case 17:
-			return 818280646;
+			return joaat("MP_FM_BASEJUMP");
 			break;
 		
 		case 18:
-			return -183978087;
+			return joaat("MP_FM_CAPTURE");
 			break;
 		
 		case 19:
-			return -52527117;
+			return joaat("MP_FM_LTS");
 			break;
 		
 		case 26:
-			return -395434754;
+			return joaat("MP_FM_HEIST");
 			break;
 		
 		case 20:
-			return -1110334219;
+			return joaat("MP_FM_CONTACT");
 			break;
 		
 		case 21:
-			return -1382306730;
+			return joaat("MP_FM_RANDOM");
 			break;
 		
 		case 22:
-			return 1453550531;
+			return joaat("MP_FM_VERSUS");
 			break;
 		
 		case 23:
 			break;
 		
 		case 24:
-			return 1744317449;
+			return joaat("MP_FM_GANG_ATTACK");
 			break;
 		
 		case 25:
-			return -1679896800;
+			return joaat("MP_FMADVERSARY");
 			break;
 		
 		case 27:

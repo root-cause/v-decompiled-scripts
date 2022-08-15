@@ -2132,7 +2132,7 @@ struct<7> func_30(int iParam0)//Position - 0x2927
 			Var0.f_3 = joaat("v_ilev_trevtraildr");
 			Var0 = { 1973f, 3815f, 34f };
 			MISC::SET_BIT(&(Var0.f_4), 0);
-			Var0.f_5 = 1736361794;
+			Var0.f_5 = joaat("DOORHASH_T_TRAILER_CS");
 			break;
 		
 		case 52:

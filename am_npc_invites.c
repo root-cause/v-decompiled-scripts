@@ -3170,10 +3170,10 @@ int func_59(int iParam0)//Position - 0x2AAC
 			return joaat("lester");
 		
 		case 31:
-			return -328739832;
+			return joaat("martin");
 		
 		case 20:
-			return -1984782235;
+			return joaat("ron");
 		
 		case 18:
 			return joaat("simeon");
@@ -3191,7 +3191,7 @@ int func_59(int iParam0)//Position - 0x2AAC
 			return joaat("hao");
 		
 		case 34:
-			return 1526580161;
+			return joaat("oscar");
 		
 		case 152:
 			return joaat("lazlow");
@@ -3200,7 +3200,7 @@ int func_59(int iParam0)//Position - 0x2AAC
 			return joaat("merryweather");
 		
 		case 84:
-			return 1085494823;
+			return joaat("brucie");
 		
 		case 0:
 			return joaat("MICHAEL");
@@ -3212,7 +3212,7 @@ int func_59(int iParam0)//Position - 0x2AAC
 			return 1548197805;
 		
 		case 151:
-			return 1252576609;
+			return joaat("tony");
 		
 		case 14:
 			return joaat("JIMMY");
@@ -3227,7 +3227,7 @@ int func_59(int iParam0)//Position - 0x2AAC
 			return joaat("dave");
 		
 		case 46:
-			return 1528098484;
+			return joaat("rickie");
 		
 		case 47:
 			return joaat("chef");
@@ -3245,19 +3245,19 @@ int func_59(int iParam0)//Position - 0x2AAC
 			return joaat("maude");
 		
 		case 66:
-			return 1028278171;
+			return joaat("ashley");
 		
 		case 69:
-			return -1120398581;
+			return joaat("omega");
 		
 		case 154:
 			return joaat("paige");
 		
 		case 82:
-			return -867869163;
+			return joaat("ray");
 		
 		case 157:
-			return -979045660;
+			return joaat("agatha");
 		
 		case 79:
 			return joaat("yachtcaptain");
@@ -3266,22 +3266,22 @@ int func_59(int iParam0)//Position - 0x2AAC
 			return 2111147587;
 		
 		case 169:
-			return -1188565131;
+			return joaat("pavel");
 		
 		case 171:
-			return 1716563776;
+			return joaat("moodymann");
 		
 		case 172:
-			return -1600365920;
+			return joaat("sessanta");
 		
 		case 173:
-			return -1364725565;
+			return joaat("kdj");
 		
 		case 177:
 			return -763093917;
 		
 		case 182:
-			return -934784798;
+			return joaat("ulp");
 		
 		case 145:
 			return 0;

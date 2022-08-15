@@ -1075,7 +1075,7 @@ struct<7> func_3(int iParam0)//Position - 0x8E8
 			Var0.f_3 = joaat("v_ilev_trevtraildr");
 			Var0 = { 1973f, 3815f, 34f };
 			MISC::SET_BIT(&(Var0.f_4), 0);
-			Var0.f_5 = 1736361794;
+			Var0.f_5 = joaat("DOORHASH_T_TRAILER_CS");
 			break;
 		
 		case 52:
@@ -15009,37 +15009,37 @@ void func_150(char* sParam0, char[8] cParam1, char[4] cParam2, char[4] cParam3, 
 {
 	switch (MISC::GET_HASH_KEY(&cParam1))
 	{
-		case 64715401:
+		case joaat("GSA_TYPE_R1"):
 		case joaat("GSA_TYPE_R"):
 			StringCopy(&cParam1, "GSA_TYPE_R", 16);
 			break;
 		
-		case -414529079:
+		case joaat("GSA_TYPE_C1"):
 		case joaat("GSA_TYPE_C"):
 			StringCopy(&cParam1, "GSA_TYPE_C", 16);
 			break;
 		
-		case 336264847:
+		case joaat("GSA_TYPE_RO1"):
 		case joaat("GSA_TYPE_RO"):
 			StringCopy(&cParam1, "GSA_TYPE_RO", 16);
 			break;
 		
-		case 531395379:
+		case joaat("GSA_TYPE_CH1"):
 		case joaat("GSA_TYPE_CH"):
 			StringCopy(&cParam1, "GSA_TYPE_CH", 16);
 			break;
 		
-		case 1034118160:
+		case joaat("GSA_TYPE_G1"):
 		case joaat("GSA_TYPE_G"):
 			StringCopy(&cParam1, "GSA_TYPE_G", 16);
 			break;
 		
-		case -218834291:
+		case joaat("GSA_TYPE_B1"):
 		case joaat("GSA_TYPE_B"):
 			StringCopy(&cParam1, "GSA_TYPE_B", 16);
 			break;
 		
-		case 1779531303:
+		case joaat("GSA_TYPE_FW1"):
 		case joaat("GSA_TYPE_FW"):
 			StringCopy(&cParam1, "GSA_TYPE_FW", 16);
 			break;
@@ -20018,7 +20018,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					switch (iParam2)
 					{
 						case 0:
-							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						
 						case 1:
@@ -20063,7 +20063,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 4:
-							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
 				}
@@ -20250,7 +20250,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					switch (iParam2)
 					{
 						case 0:
-							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						
 						case 1:
@@ -20311,7 +20311,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 6:
-							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
 				}
@@ -20359,7 +20359,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					switch (iParam2)
 					{
 						case 0:
-							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						
 						case 1:
@@ -20428,7 +20428,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 7:
-							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
 				}
@@ -20480,7 +20480,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					switch (iParam2)
 					{
 						case 0:
-							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						
 						case 1:
@@ -20549,7 +20549,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 7:
-							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
 				}
@@ -20651,7 +20651,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					switch (iParam2)
 					{
 						case 0:
-							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						
 						case 1:
@@ -20696,7 +20696,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 4:
-							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
 				}
@@ -20786,7 +20786,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					switch (iParam2)
 					{
 						case 0:
-							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						
 						case 1:
@@ -20819,7 +20819,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 3:
-							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
 				}
@@ -21771,7 +21771,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					switch (iParam2)
 					{
 						case 0:
-							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						
 						case 1:
@@ -21808,7 +21808,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 3:
-							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
 				}
@@ -21861,7 +21861,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					switch (iParam2)
 					{
 						case 0:
-							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						
 						case 1:
@@ -21934,7 +21934,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 8:
-							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
 				}
@@ -21986,7 +21986,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					switch (iParam2)
 					{
 						case 0:
-							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						
 						case 1:
@@ -22019,7 +22019,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 3:
-							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
 				}
@@ -22051,7 +22051,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					switch (iParam2)
 					{
 						case 0:
-							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						
 						case 1:
@@ -22116,7 +22116,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 7:
-							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
 				}
@@ -22164,7 +22164,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					switch (iParam2)
 					{
 						case 0:
-							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						
 						case 1:
@@ -22197,7 +22197,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 3:
-							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
 				}
@@ -22229,7 +22229,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					switch (iParam2)
 					{
 						case 0:
-							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						
 						case 1:
@@ -22294,7 +22294,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 7:
-							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), -31573710, 1, 0);
+							func_88(iParam0, joaat("component_gunrun_mk2_upgrade"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
 				}
@@ -23271,7 +23271,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							{
 								iVar8++;
 							}
-							else if (Var16.f_0 == -31573710)
+							else if (Var16.f_0 == joaat("Gun_GripR"))
 							{
 								iVar9++;
 							}
@@ -23317,7 +23317,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 								{
 									iVar0 = iVar8;
 								}
-								else if (Var16.f_0 == -31573710)
+								else if (Var16.f_0 == joaat("Gun_GripR"))
 								{
 									iVar0 = iVar9;
 								}
@@ -64276,7 +64276,7 @@ int func_502(int iParam0)//Position - 0x4E09D
 			return 1076;
 			break;
 		
-		case 1015:
+		case joaat("XMAS_LIVERY_8"):
 			return 1077;
 			break;
 		
@@ -84422,23 +84422,23 @@ void func_599()//Position - 0x695D5
 											switch (Local_120.f_116.f_1)
 											{
 												case 0:
-													func_888(1, 1722125749, 1927737204, 1, func_893(&Local_120), -1317518156, 0, 786385660, 0);
+													func_888(1, 1722125749, joaat("armor"), 1, func_893(&Local_120), joaat("purchase"), 0, 786385660, 0);
 													break;
 												
 												case 1:
-													func_888(1, -583313972, 1927737204, 1, func_893(&Local_120), -1317518156, 0, 786385660, 0);
+													func_888(1, -583313972, joaat("armor"), 1, func_893(&Local_120), joaat("purchase"), 0, 786385660, 0);
 													break;
 												
 												case 2:
-													func_888(1, 1174170707, 1927737204, 1, func_893(&Local_120), -1317518156, 0, 786385660, 0);
+													func_888(1, 1174170707, joaat("armor"), 1, func_893(&Local_120), joaat("purchase"), 0, 786385660, 0);
 													break;
 												
 												case 3:
-													func_888(1, 1006076045, 1927737204, 1, func_893(&Local_120), -1317518156, 0, 786385660, 0);
+													func_888(1, 1006076045, joaat("armor"), 1, func_893(&Local_120), joaat("purchase"), 0, 786385660, 0);
 													break;
 												
 												case 4:
-													func_888(1, -391796677, 1927737204, 1, func_893(&Local_120), -1317518156, 0, 786385660, 0);
+													func_888(1, -391796677, joaat("armor"), 1, func_893(&Local_120), joaat("purchase"), 0, 786385660, 0);
 													break;
 											}
 											if (bVar20)
@@ -84673,35 +84673,35 @@ void func_599()//Position - 0x695D5
 												iVar53 = func_31(1881, -1, 0);
 												iVar53++;
 												func_316(1881, iVar53, -1, 1, 0);
-												func_888(1, 1722125749, 1927737204, 1, func_893(&Local_120), -1317518156, 0, 786385660, 0);
+												func_888(1, 1722125749, joaat("armor"), 1, func_893(&Local_120), joaat("purchase"), 0, 786385660, 0);
 											}
 											else if (Local_120.f_116.f_1 == 1)
 											{
 												iVar53 = func_31(1882, -1, 0);
 												iVar53++;
 												func_316(1882, iVar53, -1, 1, 0);
-												func_888(1, -583313972, 1927737204, 1, func_893(&Local_120), -1317518156, 0, 786385660, 0);
+												func_888(1, -583313972, joaat("armor"), 1, func_893(&Local_120), joaat("purchase"), 0, 786385660, 0);
 											}
 											else if (Local_120.f_116.f_1 == 2)
 											{
 												iVar53 = func_31(1883, -1, 0);
 												iVar53++;
 												func_316(1883, iVar53, -1, 1, 0);
-												func_888(1, 1174170707, 1927737204, 1, func_893(&Local_120), -1317518156, 0, 786385660, 0);
+												func_888(1, 1174170707, joaat("armor"), 1, func_893(&Local_120), joaat("purchase"), 0, 786385660, 0);
 											}
 											else if (Local_120.f_116.f_1 == 3)
 											{
 												iVar53 = func_31(1884, -1, 0);
 												iVar53++;
 												func_316(1884, iVar53, -1, 1, 0);
-												func_888(1, 1006076045, 1927737204, 1, func_893(&Local_120), -1317518156, 0, 786385660, 0);
+												func_888(1, 1006076045, joaat("armor"), 1, func_893(&Local_120), joaat("purchase"), 0, 786385660, 0);
 											}
 											else if (Local_120.f_116.f_1 == 4)
 											{
 												iVar53 = func_31(1885, -1, 0);
 												iVar53++;
 												func_316(1885, iVar53, -1, 1, 0);
-												func_888(1, -391796677, 1927737204, 1, func_893(&Local_120), -1317518156, 0, 786385660, 0);
+												func_888(1, -391796677, joaat("armor"), 1, func_893(&Local_120), joaat("purchase"), 0, 786385660, 0);
 											}
 											if (bVar20)
 											{
@@ -86487,7 +86487,7 @@ void func_599()//Position - 0x695D5
 														iLocal_162 = 31;
 														func_549(&(Local_120.f_116), "GSM_REMOVE", 3000);
 													}
-													else if (Local_230.f_4 == -31573710)
+													else if (Local_230.f_4 == joaat("Gun_GripR"))
 													{
 														if ((func_53(Local_120.f_0) && func_78(Var27.f_0)) && func_735(Local_230.f_0))
 														{
@@ -86540,7 +86540,7 @@ void func_599()//Position - 0x695D5
 													iLocal_162 = 31;
 													func_549(&(Local_120.f_116), "GSM_REMOVE", 3000);
 												}
-												else if (Local_230.f_4 == -31573710)
+												else if (Local_230.f_4 == joaat("Gun_GripR"))
 												{
 													if ((func_53(Local_120.f_0) && func_78(Var27.f_0)) && func_735(Local_230.f_0))
 													{
@@ -86605,7 +86605,7 @@ void func_599()//Position - 0x695D5
 													iLocal_162 = 0;
 													func_549(&(Local_120.f_116), "GSM_REMOVE", 3000);
 												}
-												else if (Local_230.f_4 == -31573710)
+												else if (Local_230.f_4 == joaat("Gun_GripR"))
 												{
 													if ((func_53(Local_120.f_0) && func_78(Var27.f_0)) && func_735(Local_230.f_0))
 													{
@@ -86991,7 +86991,7 @@ void func_599()//Position - 0x695D5
 								func_1015(&Var27);
 								func_719(Var27.f_0);
 							}
-							if (Local_230.f_4 == -31573710)
+							if (Local_230.f_4 == joaat("Gun_GripR"))
 							{
 								if (WEAPON::HAS_PED_GOT_WEAPON(PLAYER::PLAYER_PED_ID(), Var27.f_0, false))
 								{
@@ -88285,7 +88285,7 @@ void func_599()//Position - 0x695D5
 		{
 			if (func_183(&Local_230, Var27.f_0, (Local_120.f_116.f_2 - 2), 0))
 			{
-				if (Local_230.f_4 != joaat("gun_root") && Local_230.f_4 != -31573710)
+				if (Local_230.f_4 != joaat("gun_root") && Local_230.f_4 != joaat("Gun_GripR"))
 				{
 					Local_120.f_116.f_17 = 0;
 					bVar23 = true;
@@ -90314,7 +90314,7 @@ int func_603(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, 
 			}
 			break;
 		
-		case 1019352240:
+		case joaat("crewLogo"):
 			if (bParam8)
 			{
 				if (iVar0 == joaat("mp_m_freemode_01"))
@@ -90899,7 +90899,7 @@ int func_605(int iParam0, char* sParam1, int iParam2)//Position - 0x7331F
 {
 	switch (iParam2)
 	{
-		case 1019352240:
+		case joaat("crewLogo"):
 		case joaat("hairOverlay"):
 		case joaat("torsoDecal"):
 			return -1;
@@ -91305,7 +91305,7 @@ int func_605(int iParam0, char* sParam1, int iParam2)//Position - 0x7331F
 	}
 	switch (MISC::GET_HASH_KEY(sParam1))
 	{
-		case 1948764112:
+		case joaat("NO_LABEL"):
 			return -1;
 			break;
 		
@@ -129058,7 +129058,7 @@ int func_721(int iParam0)//Position - 0x9AD88
 		
 		case joaat("MP_Gunrunning_Award_020_M_ALT"):
 		case joaat("MP_Gunrunning_Award_020_F_ALT"):
-		case 447234752:
+		case joaat("CLO_GRM_DECL_32"):
 		case joaat("CLO_GRF_DECL_32"):
 			if (!func_39(15423, -1))
 			{
@@ -140019,7 +140019,7 @@ int func_851(int iParam0, int iParam1)//Position - 0xA729F
 				iVar4 = Var7.f_6;
 			}
 		}
-		else if ((((Var7.f_4 == joaat("WAPClip") || Var7.f_4 == joaat("WAPScop")) || Var7.f_4 == joaat("WAPRail")) || Var7.f_4 == joaat("gun_root")) || Var7.f_4 == -31573710)
+		else if ((((Var7.f_4 == joaat("WAPClip") || Var7.f_4 == joaat("WAPScop")) || Var7.f_4 == joaat("WAPRail")) || Var7.f_4 == joaat("gun_root")) || Var7.f_4 == joaat("Gun_GripR"))
 		{
 		}
 		else
@@ -149514,7 +149514,7 @@ void func_964()//Position - 0xB21E6
 			func_999(21, "ITEM_INSPECT", -1);
 			if (((((Var7.f_0 != joaat("weapon_knuckle") && Var7.f_0 != joaat("weapon_switchblade")) && Var7.f_0 != joaat("gadget_parachute")) && Var7.f_0 != joaat("weapon_doubleaction")) && !func_1211(Local_120.f_0)) && !func_1139(Local_120.f_0))
 			{
-				if (Local_230.f_4 != -31573710 && Local_230.f_4 != joaat("gun_root"))
+				if (Local_230.f_4 != joaat("Gun_GripR") && Local_230.f_4 != joaat("gun_root"))
 				{
 					func_1000(207, "ITEM_ZOOM", -1);
 				}
@@ -153073,7 +153073,7 @@ void func_1015(int iParam0)//Position - 0xB802D
 							{
 								MISC::SET_BIT(&(Local_120.f_719), 12);
 							}
-							if ((func_53(Local_120.f_0) && func_78(*iParam0)) && Local_230.f_4 == -31573710)
+							if ((func_53(Local_120.f_0) && func_78(*iParam0)) && Local_230.f_4 == joaat("Gun_GripR"))
 							{
 								MISC::SET_BIT(&(Local_120.f_719), 12);
 							}
@@ -153135,7 +153135,7 @@ void func_1015(int iParam0)//Position - 0xB802D
 							{
 								MISC::SET_BIT(&(Local_120.f_719), 12);
 							}
-							if ((func_53(Local_120.f_0) && func_78(*iParam0)) && Local_230.f_4 == -31573710)
+							if ((func_53(Local_120.f_0) && func_78(*iParam0)) && Local_230.f_4 == joaat("Gun_GripR"))
 							{
 								MISC::SET_BIT(&(Local_120.f_719), 12);
 							}

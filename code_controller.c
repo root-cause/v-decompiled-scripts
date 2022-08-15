@@ -39188,7 +39188,7 @@ struct<7> func_469(int iParam0)//Position - 0x2C189
 			Var0.f_3 = joaat("v_ilev_trevtraildr");
 			Var0 = { 1973f, 3815f, 34f };
 			MISC::SET_BIT(&(Var0.f_4), 0);
-			Var0.f_5 = 1736361794;
+			Var0.f_5 = joaat("DOORHASH_T_TRAILER_CS");
 			break;
 		
 		case 52:
@@ -57676,65 +57676,65 @@ int func_512(int iParam0)//Position - 0x4C1FB
 			return 1;
 			break;
 		
-		case 232975537:
+		case joaat("HORN_CLAS1"):
 		case joaat("CMOD_SMOKE_4"):
 			return 2;
 			break;
 		
-		case 462718996:
+		case joaat("HORN_CLAS2"):
 		case joaat("CMOD_SMOKE_5"):
 			return 3;
 			break;
 		
-		case -444556307:
+		case joaat("HORN_CLAS3"):
 		case joaat("CMOD_SMOKE_6"):
 			return 4;
 			break;
 		
-		case -213731471:
+		case joaat("HORN_CLAS4"):
 		case joaat("CMOD_SMOKE_7"):
 			return 5;
 			break;
 		
-		case -968041086:
+		case joaat("HORN_CLAS5"):
 			return 6;
 			break;
 		
-		case -694977009:
+		case joaat("HORN_CLAS6"):
 		case joaat("CMOD_SMOKE_3"):
 			return 7;
 			break;
 		
-		case 1523877515:
+		case joaat("HORN_CLAS7"):
 		case joaat("CMOD_SMOKE_8"):
 			return 8;
 			break;
 		
-		case -1518694851:
+		case joaat("HORN_CNOTE_C0"):
 			return 9;
 			break;
 		
-		case 685937731:
+		case joaat("HORN_CNOTE_D0"):
 			return 10;
 			break;
 		
-		case 1107182854:
+		case joaat("HORN_CNOTE_E0"):
 			return 11;
 			break;
 		
-		case 1795528252:
+		case joaat("HORN_CNOTE_F0"):
 			return 12;
 			break;
 		
-		case 963431690:
+		case joaat("HORN_CNOTE_G0"):
 			return 13;
 			break;
 		
-		case 7683469:
+		case joaat("HORN_CNOTE_A0"):
 			return 14;
 			break;
 		
-		case -1485567420:
+		case joaat("HORN_CNOTE_B0"):
 			return 15;
 			break;
 		
@@ -57746,49 +57746,49 @@ int func_512(int iParam0)//Position - 0x4C1FB
 			return 17;
 			break;
 		
-		case -835077886:
+		case joaat("CMOD_TYR_12"):
 		case joaat("CMOD_SMOKE_12"):
 			return 18;
 			break;
 		
-		case 1888648625:
+		case joaat("CMOD_TYR_13"):
 		case joaat("CMOD_SMOKE_13"):
 			return 19;
 			break;
 		
-		case 1708257079:
+		case joaat("HORN_HIPS1"):
 			return 20;
 			break;
 		
-		case -1440188433:
+		case joaat("HORN_HIPS2"):
 			return 22;
 			break;
 		
-		case -1813427343:
+		case joaat("HORN_HIPS3"):
 			return 22;
 			break;
 		
-		case -1940603832:
+		case joaat("HORN_HIPS4"):
 			return 23;
 			break;
 		
-		case -665245345:
+		case joaat("HORN_INDI_1"):
 			return 24;
 			break;
 		
-		case 1049163197:
+		case joaat("HORN_INDI_2"):
 			return 25;
 			break;
 		
-		case -177872008:
+		case joaat("HORN_INDI_3"):
 			return 26;
 			break;
 		
-		case -366752524:
+		case joaat("HORN_INDI_4"):
 			return 27;
 			break;
 		
-		case -952091823:
+		case joaat("CMOD_TYR_PAT"):
 			return 28;
 			break;
 		

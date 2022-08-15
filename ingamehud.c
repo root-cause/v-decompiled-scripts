@@ -16328,7 +16328,7 @@ void func_372(var uParam0, var uParam1)//Position - 0x15154
 		iVar4 = func_384(Global_794709.f_4[*uParam1 /*88*/].f_65, Global_794709.f_4[*uParam1 /*88*/].f_68, 0, 0, 0);
 		iVar5 = func_383(Global_794709.f_177589[*uParam1 /*13*/].f_1);
 		func_380(iVar4, iVar5, joaat("XP_MULTIPLIER"), &fVar0, 1);
-		func_380(iVar4, iVar5, -31280827, &fVar3, 1);
+		func_380(iVar4, iVar5, joaat("FAKE_XP_MULTIPLIER"), &fVar3, 1);
 		func_380(iVar4, iVar5, joaat("CASH_MULTIPLIER"), &fVar1, 1);
 		func_380(iVar4, iVar5, -1245438974, &fVar2, 1);
 		if (fVar3 > 0f)
@@ -16828,7 +16828,7 @@ int func_382(int iParam0)//Position - 0x15BA0
 	switch (iParam0)
 	{
 		case 0:
-			return 190769267;
+			return joaat("BASE_GLOBALS");
 			break;
 		
 		case 1:
@@ -16836,102 +16836,102 @@ int func_382(int iParam0)//Position - 0x15BA0
 			break;
 		
 		case 2:
-			return 1398379561;
+			return joaat("MP_CNC");
 			break;
 		
 		case 3:
-			return -295628664;
+			return joaat("MP_CNC_TEAM_COP");
 			break;
 		
 		case 4:
-			return -1157311665;
+			return joaat("MP_CNC_TEAM_VAGOS");
 			break;
 		
 		case 5:
-			return 988790432;
+			return joaat("MP_CNC_TEAM_LOST");
 			break;
 		
 		case 6:
-			return 1140746429;
+			return joaat("MP_FM");
 			break;
 		
 		case 7:
-			return 1882254284;
+			return joaat("MP_FM_DM");
 			break;
 		
 		case 8:
-			return -1021097824;
+			return joaat("MP_FM_RACES");
 			break;
 		
 		case 9:
-			return 1031194139;
+			return joaat("MP_FM_RACES_CAR");
 			break;
 		
 		case 10:
-			return -946481156;
+			return joaat("MP_FM_RACES_BIKE");
 			break;
 		
 		case 11:
-			return -364624190;
+			return joaat("MP_FM_RACES_CYCLE");
 			break;
 		
 		case 12:
-			return -199795525;
+			return joaat("MP_FM_RACES_AIR");
 			break;
 		
 		case 13:
-			return -866645446;
+			return joaat("MP_FM_RACES_SEA");
 			break;
 		
 		case 14:
-			return 1144300534;
+			return joaat("MP_FM_RACES_STUNT");
 			break;
 		
 		case 15:
-			return 539878179;
+			return joaat("MP_FM_MISSIONS");
 			break;
 		
 		case 16:
-			return 571975921;
+			return joaat("MP_FM_SURVIVAL");
 			break;
 		
 		case 17:
-			return 818280646;
+			return joaat("MP_FM_BASEJUMP");
 			break;
 		
 		case 18:
-			return -183978087;
+			return joaat("MP_FM_CAPTURE");
 			break;
 		
 		case 19:
-			return -52527117;
+			return joaat("MP_FM_LTS");
 			break;
 		
 		case 26:
-			return -395434754;
+			return joaat("MP_FM_HEIST");
 			break;
 		
 		case 20:
-			return -1110334219;
+			return joaat("MP_FM_CONTACT");
 			break;
 		
 		case 21:
-			return -1382306730;
+			return joaat("MP_FM_RANDOM");
 			break;
 		
 		case 22:
-			return 1453550531;
+			return joaat("MP_FM_VERSUS");
 			break;
 		
 		case 23:
 			break;
 		
 		case 24:
-			return 1744317449;
+			return joaat("MP_FM_GANG_ATTACK");
 			break;
 		
 		case 25:
-			return -1679896800;
+			return joaat("MP_FMADVERSARY");
 			break;
 		
 		case 27:
@@ -19348,10 +19348,10 @@ int func_474(int iParam0)//Position - 0x18742
 			return joaat("lester");
 		
 		case 31:
-			return -328739832;
+			return joaat("martin");
 		
 		case 20:
-			return -1984782235;
+			return joaat("ron");
 		
 		case 18:
 			return joaat("simeon");
@@ -19369,7 +19369,7 @@ int func_474(int iParam0)//Position - 0x18742
 			return joaat("hao");
 		
 		case 34:
-			return 1526580161;
+			return joaat("oscar");
 		
 		case 152:
 			return joaat("lazlow");
@@ -19378,7 +19378,7 @@ int func_474(int iParam0)//Position - 0x18742
 			return joaat("merryweather");
 		
 		case 84:
-			return 1085494823;
+			return joaat("brucie");
 		
 		case 0:
 			return joaat("MICHAEL");
@@ -19390,7 +19390,7 @@ int func_474(int iParam0)//Position - 0x18742
 			return 1548197805;
 		
 		case 151:
-			return 1252576609;
+			return joaat("tony");
 		
 		case 14:
 			return joaat("JIMMY");
@@ -19405,7 +19405,7 @@ int func_474(int iParam0)//Position - 0x18742
 			return joaat("dave");
 		
 		case 46:
-			return 1528098484;
+			return joaat("rickie");
 		
 		case 47:
 			return joaat("chef");
@@ -19423,19 +19423,19 @@ int func_474(int iParam0)//Position - 0x18742
 			return joaat("maude");
 		
 		case 66:
-			return 1028278171;
+			return joaat("ashley");
 		
 		case 69:
-			return -1120398581;
+			return joaat("omega");
 		
 		case 154:
 			return joaat("paige");
 		
 		case 82:
-			return -867869163;
+			return joaat("ray");
 		
 		case 157:
-			return -979045660;
+			return joaat("agatha");
 		
 		case 79:
 			return joaat("yachtcaptain");
@@ -19444,22 +19444,22 @@ int func_474(int iParam0)//Position - 0x18742
 			return 2111147587;
 		
 		case 169:
-			return -1188565131;
+			return joaat("pavel");
 		
 		case 171:
-			return 1716563776;
+			return joaat("moodymann");
 		
 		case 172:
-			return -1600365920;
+			return joaat("sessanta");
 		
 		case 173:
-			return -1364725565;
+			return joaat("kdj");
 		
 		case 177:
 			return -763093917;
 		
 		case 182:
-			return -934784798;
+			return joaat("ulp");
 		
 		case 145:
 			return 0;
@@ -42552,7 +42552,7 @@ int func_680(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, 
 			}
 			break;
 		
-		case 1019352240:
+		case joaat("crewLogo"):
 			if (bParam8)
 			{
 				if (iVar0 == joaat("mp_m_freemode_01"))
@@ -43137,7 +43137,7 @@ int func_682(int iParam0, char* sParam1, int iParam2)//Position - 0x3918C
 {
 	switch (iParam2)
 	{
-		case 1019352240:
+		case joaat("crewLogo"):
 		case joaat("hairOverlay"):
 		case joaat("torsoDecal"):
 			return -1;
@@ -43543,7 +43543,7 @@ int func_682(int iParam0, char* sParam1, int iParam2)//Position - 0x3918C
 	}
 	switch (MISC::GET_HASH_KEY(sParam1))
 	{
-		case 1948764112:
+		case joaat("NO_LABEL"):
 			return -1;
 			break;
 		
@@ -48158,7 +48158,7 @@ void func_708(int iParam0, int iParam1)//Position - 0x3FEF7
 		{
 			if (iVar1 == 3 || iVar1 == 4)
 			{
-				if (iParam0 == 1019352240)
+				if (iParam0 == joaat("crewLogo"))
 				{
 					func_735(13, 0, Global_78127);
 					func_735(14, 0, Global_78127);

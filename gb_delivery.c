@@ -23604,7 +23604,7 @@ int func_369(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, 
 			}
 			break;
 		
-		case 1019352240:
+		case joaat("crewLogo"):
 			if (bParam8)
 			{
 				if (iVar0 == joaat("mp_m_freemode_01"))
@@ -24189,7 +24189,7 @@ int func_371(int iParam0, char* sParam1, int iParam2)//Position - 0x20183
 {
 	switch (iParam2)
 	{
-		case 1019352240:
+		case joaat("crewLogo"):
 		case joaat("hairOverlay"):
 		case joaat("torsoDecal"):
 			return -1;
@@ -24595,7 +24595,7 @@ int func_371(int iParam0, char* sParam1, int iParam2)//Position - 0x20183
 	}
 	switch (MISC::GET_HASH_KEY(sParam1))
 	{
-		case 1948764112:
+		case joaat("NO_LABEL"):
 			return -1;
 			break;
 		
@@ -29187,7 +29187,7 @@ void func_395(int iParam0, int iParam1)//Position - 0x26F0F
 		{
 			if (iVar1 == 3 || iVar1 == 4)
 			{
-				if (iParam0 == 1019352240)
+				if (iParam0 == joaat("crewLogo"))
 				{
 					func_430(13, 0, Global_78127);
 					func_430(14, 0, Global_78127);
@@ -119000,7 +119000,7 @@ int func_1316(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 												if (Global_78200.f_46[iVar29] == Var36.f_5 && Global_78200.f_46[iVar29] != -1)
 												{
 													bVar34 = false;
-													if (Var36.f_8 == 1019352240)
+													if (Var36.f_8 == joaat("crewLogo"))
 													{
 														if (iParam7 == 0)
 														{
@@ -119037,7 +119037,7 @@ int func_1316(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 												if (Global_78200.f_46[iVar29] == Var35.f_3 && Global_78200.f_46[iVar29] != -1)
 												{
 													bVar34 = false;
-													if (Var35.f_6 == 1019352240)
+													if (Var35.f_6 == joaat("crewLogo"))
 													{
 														if (iParam7 == 0)
 														{
@@ -148335,7 +148335,7 @@ void func_1494(int iParam0, var uParam1, int iParam2)//Position - 0xC4949
 			}
 			break;
 	}
-	if (!MISC::IS_STRING_NULL_OR_EMPTY(uParam1->f_22.f_5) && MISC::GET_HASH_KEY(uParam1->f_22.f_5) != -141454772)
+	if (!MISC::IS_STRING_NULL_OR_EMPTY(uParam1->f_22.f_5) && MISC::GET_HASH_KEY(uParam1->f_22.f_5) != joaat("buzz_short"))
 	{
 		if (iParam2 == 0)
 		{

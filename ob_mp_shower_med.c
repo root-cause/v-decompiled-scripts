@@ -10923,7 +10923,7 @@ int func_36(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, b
 			}
 			break;
 		
-		case 1019352240:
+		case joaat("crewLogo"):
 			if (bParam8)
 			{
 				if (iVar0 == joaat("mp_m_freemode_01"))
@@ -11508,7 +11508,7 @@ int func_38(int iParam0, char* sParam1, int iParam2)//Position - 0xE034
 {
 	switch (iParam2)
 	{
-		case 1019352240:
+		case joaat("crewLogo"):
 		case joaat("hairOverlay"):
 		case joaat("torsoDecal"):
 			return -1;
@@ -11914,7 +11914,7 @@ int func_38(int iParam0, char* sParam1, int iParam2)//Position - 0xE034
 	}
 	switch (MISC::GET_HASH_KEY(sParam1))
 	{
-		case 1948764112:
+		case joaat("NO_LABEL"):
 			return -1;
 			break;
 		
@@ -55664,7 +55664,7 @@ void func_184(int iParam0, int iParam1)//Position - 0x4182A
 		{
 			if (iVar1 == 3 || iVar1 == 4)
 			{
-				if (iParam0 == 1019352240)
+				if (iParam0 == joaat("crewLogo"))
 				{
 					func_209(13, 0, Global_78127);
 					func_209(14, 0, Global_78127);
@@ -99879,7 +99879,7 @@ void func_525()//Position - 0x75792
 
 void func_526()//Position - 0x757B0
 {
-	OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(-1750863300, 0, false, true);
+	OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(joaat("MP_MED_APT_BATH_DOOR"), 0, false, true);
 	Global_2779522.f_8 = 0;
 }
 

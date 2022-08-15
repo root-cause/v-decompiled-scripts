@@ -6462,7 +6462,7 @@ struct<7> func_59(int iParam0)//Position - 0xA5EA
 			Var0.f_3 = joaat("v_ilev_trevtraildr");
 			Var0 = { 1973f, 3815f, 34f };
 			MISC::SET_BIT(&(Var0.f_4), 0);
-			Var0.f_5 = 1736361794;
+			Var0.f_5 = joaat("DOORHASH_T_TRAILER_CS");
 			break;
 		
 		case 52:
@@ -8213,56 +8213,56 @@ void func_78()//Position - 0xED26
 	func_79(-1680125890);
 	func_79(-1355829283);
 	func_79(359660636);
-	func_79(1393576711);
-	func_79(86126380);
-	func_79(-205222799);
-	func_79(391435153);
-	func_79(-937839340);
-	func_79(-1173448450);
-	func_79(-897631773);
-	func_79(-1137468084);
-	func_79(-519379206);
-	func_79(-754857240);
-	func_79(1840214442);
-	func_79(1840769);
-	func_79(161163647);
-	func_79(467127800);
-	func_79(682485668);
-	func_79(-652109396);
-	func_79(-354665183);
-	func_79(864702084);
-	func_79(1028416008);
-	func_79(635450156);
-	func_79(462102146);
-	func_79(1559732570);
-	func_79(1864517039);
-	func_79(1685533938);
-	func_79(1395036753);
-	func_79(-2135823001);
-	func_79(1835189961);
-	func_79(-1673223028);
-	func_79(-1978531801);
-	func_79(-1213637803);
-	func_79(-460147389);
-	func_79(-742386786);
-	func_79(19689078);
-	func_79(-1488383664);
-	func_79(-644090379);
-	func_79(-203675019);
-	func_79(-437416296);
-	func_79(1053081101);
-	func_79(755374736);
-	func_79(307225892);
+	func_79(joaat("fbi_1_door_0"));
+	func_79(joaat("fbi_1_door_1"));
+	func_79(joaat("fbi_1_door_2"));
+	func_79(joaat("fbi_1_door_3"));
+	func_79(joaat("fbi_1_door_4"));
+	func_79(joaat("fbi_1_door_5"));
+	func_79(joaat("fbi_1_door_6"));
+	func_79(joaat("fbi_1_door_7"));
+	func_79(joaat("fbi_1_door_8"));
+	func_79(joaat("fbi_1_door_9"));
+	func_79(joaat("fbi_1_door_10"));
+	func_79(joaat("fbi_1_door_11"));
+	func_79(joaat("fbi_1_door_12"));
+	func_79(joaat("fbi_1_door_13"));
+	func_79(joaat("fbi_1_door_14"));
+	func_79(joaat("fbi_5_door_0"));
+	func_79(joaat("fbi_5_door_1"));
+	func_79(joaat("fbi_5_door_2"));
+	func_79(joaat("fbi_5_door_3"));
+	func_79(joaat("fbi_5_door_4"));
+	func_79(joaat("fbi_5_door_7"));
+	func_79(joaat("fbi_5_door_8"));
+	func_79(joaat("fbi_5_door_9"));
+	func_79(joaat("fbi_5_door_10"));
+	func_79(joaat("fbi_5_door_11"));
+	func_79(joaat("fbi_5_door_12"));
+	func_79(joaat("fbi_5_door_13"));
+	func_79(joaat("fbi_5_door_14"));
+	func_79(joaat("fbi_5_door_15"));
+	func_79(joaat("fbi_5_door_16"));
+	func_79(joaat("fbi_5_door_17"));
+	func_79(joaat("fbi_5_door_18"));
+	func_79(joaat("fbi_5_door_19"));
+	func_79(joaat("fbi_5_door_20"));
+	func_79(joaat("fbi_5_door_21"));
+	func_79(joaat("fbi_5_door_22"));
+	func_79(joaat("fbi_5_door_23"));
+	func_79(joaat("fbi_5_door_24"));
+	func_79(joaat("fbi_5_door_25"));
+	func_79(joaat("fbi_5_door_26"));
 	func_79(1739830342);
 	func_79(1008345977);
 	func_79(-1838261400);
 	func_79(-88189184);
-	func_79(-14436651);
-	func_79(-295889592);
-	func_79(1667956578);
-	func_79(1367432079);
-	func_79(-801974028);
-	func_79(-1218336942);
+	func_79(joaat("Josh2_door_0"));
+	func_79(joaat("Josh2_door_1"));
+	func_79(joaat("Josh2_door_2"));
+	func_79(joaat("Josh2_door_3"));
+	func_79(joaat("Josh2_door_4"));
+	func_79(joaat("Josh2_door_5"));
 	func_79(380898258);
 	func_79(-1889206990);
 	func_79(-1834311451);
@@ -8307,38 +8307,38 @@ void func_78()//Position - 0xED26
 	func_79(1246814063);
 	func_79(1063217957);
 	func_79(-106864726);
-	func_79(-1873493291);
-	func_79(-2010178835);
-	func_79(-1905121421);
-	func_79(1775073303);
-	func_79(1099769751);
-	func_79(1661725620);
-	func_79(759267360);
-	func_79(1540733319);
-	func_79(1293360138);
-	func_79(-1005160179);
-	func_79(-808284251);
-	func_79(-2139165953);
-	func_79(517816380);
-	func_79(1445867565);
-	func_79(-1064705745);
-	func_79(-1370964819);
-	func_79(-302630109);
-	func_79(-88255311);
-	func_79(1480953272);
-	func_79(963989528);
-	func_79(-959812712);
-	func_79(-1198469339);
-	func_79(-5531601);
-	func_79(1198794687);
-	func_79(-1564779168);
-	func_79(1538150219);
-	func_79(408472505);
-	func_79(629663255);
-	func_79(1810854397);
-	func_79(1009554040);
-	func_79(1462321819);
-	func_79(107618590);
+	func_79(joaat("eCRIM_HUP_GAS_2B"));
+	func_79(joaat("eCRIM_HUP_GAS_3A"));
+	func_79(joaat("eCRIM_HUP_GAS_3B"));
+	func_79(joaat("eCRIM_HUP_GAS_4A"));
+	func_79(joaat("eCRIM_HUP_GAS_4B"));
+	func_79(joaat("eCRIM_HUP_GAS_1A"));
+	func_79(joaat("eCRIM_HUP_GAS_1B"));
+	func_79(joaat("eCRIM_HUP_GAS_5A"));
+	func_79(joaat("eCRIM_HUP_GAS_5B"));
+	func_79(joaat("eCRIM_HUP_LIQUOR_1A"));
+	func_79(joaat("eCRIM_HUP_LIQUOR_2A"));
+	func_79(joaat("eCRIM_HUP_LIQUOR_3A"));
+	func_79(joaat("eCRIM_HUP_LIQUOR_4A"));
+	func_79(joaat("eCRIM_HUP_LIQUOR_5A"));
+	func_79(joaat("eCRIM_HUP_SHOP247_3A"));
+	func_79(joaat("eCRIM_HUP_SHOP247_3B"));
+	func_79(joaat("eCRIM_HUP_SHOP247_2A"));
+	func_79(joaat("eCRIM_HUP_SHOP247_2B"));
+	func_79(joaat("eCRIM_HUP_SHOP247_4A"));
+	func_79(joaat("eCRIM_HUP_SHOP247_4B"));
+	func_79(joaat("eCRIM_HUP_SHOP247_5A"));
+	func_79(joaat("eCRIM_HUP_SHOP247_5B"));
+	func_79(joaat("eCRIM_HUP_SHOP247_6A"));
+	func_79(joaat("eCRIM_HUP_SHOP247_6B"));
+	func_79(joaat("eCRIM_HUP_SHOP247_7A"));
+	func_79(joaat("eCRIM_HUP_SHOP247_7B"));
+	func_79(joaat("eCRIM_HUP_SHOP247_8A"));
+	func_79(joaat("eCRIM_HUP_SHOP247_8B"));
+	func_79(joaat("eCRIM_HUP_SHOP247_9A"));
+	func_79(joaat("eCRIM_HUP_SHOP247_9B"));
+	func_79(joaat("eCRIM_HUP_SHOP247_10A"));
+	func_79(joaat("eCRIM_HUP_SHOP247_10B"));
 }
 
 void func_79(int iParam0)//Position - 0xF1B6
@@ -55042,7 +55042,7 @@ int func_296(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, 
 			}
 			break;
 		
-		case 1019352240:
+		case joaat("crewLogo"):
 			if (bParam8)
 			{
 				if (iVar0 == joaat("mp_m_freemode_01"))
@@ -55627,7 +55627,7 @@ int func_298(int iParam0, char* sParam1, int iParam2)//Position - 0x48C4E
 {
 	switch (iParam2)
 	{
-		case 1019352240:
+		case joaat("crewLogo"):
 		case joaat("hairOverlay"):
 		case joaat("torsoDecal"):
 			return -1;
@@ -56033,7 +56033,7 @@ int func_298(int iParam0, char* sParam1, int iParam2)//Position - 0x48C4E
 	}
 	switch (MISC::GET_HASH_KEY(sParam1))
 	{
-		case 1948764112:
+		case joaat("NO_LABEL"):
 			return -1;
 			break;
 		
@@ -59263,7 +59263,7 @@ void func_318(int iParam0, int iParam1)//Position - 0x4C461
 		{
 			if (iVar1 == 3 || iVar1 == 4)
 			{
-				if (iParam0 == 1019352240)
+				if (iParam0 == joaat("crewLogo"))
 				{
 					func_343(13, 0, Global_78127);
 					func_343(14, 0, Global_78127);

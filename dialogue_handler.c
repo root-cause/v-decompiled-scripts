@@ -4036,12 +4036,12 @@ int func_98(int iParam0)//Position - 0x47C8
 		case joaat("fxfaaud"):
 		case joaat("fxcutau"):
 		case joaat("fxigaud"):
-		case -1018917633:
-		case 1332392277:
-		case -1889985881:
-		case -1536828534:
-		case -580715848:
-		case -947428706:
+		case joaat("SM2AGAU"):
+		case joaat("SM2MAAU"):
+		case joaat("SM2TOAU"):
+		case joaat("SM2WBAU"):
+		case joaat("SM2YOAU"):
+		case joaat("SM2ULAU"):
 		case -790967848:
 		case 1475512972:
 		case -9119060:

@@ -17525,7 +17525,7 @@ int func_95(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, b
 			}
 			break;
 		
-		case 1019352240:
+		case joaat("crewLogo"):
 			if (bParam8)
 			{
 				if (iVar0 == joaat("mp_m_freemode_01"))
@@ -18110,7 +18110,7 @@ int func_97(int iParam0, char* sParam1, int iParam2)//Position - 0x191DE
 {
 	switch (iParam2)
 	{
-		case 1019352240:
+		case joaat("crewLogo"):
 		case joaat("hairOverlay"):
 		case joaat("torsoDecal"):
 			return -1;
@@ -18516,7 +18516,7 @@ int func_97(int iParam0, char* sParam1, int iParam2)//Position - 0x191DE
 	}
 	switch (MISC::GET_HASH_KEY(sParam1))
 	{
-		case 1948764112:
+		case joaat("NO_LABEL"):
 			return -1;
 			break;
 		
@@ -23151,7 +23151,7 @@ void func_124(int iParam0, int iParam1)//Position - 0x20029
 		{
 			if (iVar1 == 3 || iVar1 == 4)
 			{
-				if (iParam0 == 1019352240)
+				if (iParam0 == joaat("crewLogo"))
 				{
 					func_161(13, 0, Global_78127);
 					func_161(14, 0, Global_78127);
@@ -64302,7 +64302,7 @@ void func_248(int iParam0, int iParam1)//Position - 0x4CA58
 							{
 								if (!BitTest(uLocal_73, 0))
 								{
-									func_326(337428855, 1, 0);
+									func_326(joaat("soda"), 1, 0);
 									func_319(0, 31, 3);
 									MISC::SET_BIT(&uLocal_73, 0);
 								}
@@ -64586,7 +64586,7 @@ void func_250(int iParam0)//Position - 0x4D48A
 				NETSHOPPING::NET_GAMESERVER_SET_TELEMETRY_NONCE_SEED(func_299(func_300()));
 			}
 			iVar2 = func_298();
-			func_285(2, func_297(), 1359863693, 1, func_293(), -1317518156, 0, 768194215, func_292(func_340(), func_299(func_300()), 0));
+			func_285(2, func_297(), joaat("snack"), 1, func_293(), joaat("purchase"), 0, joaat("vending_machine"), func_292(func_340(), func_299(func_300()), 0));
 			if (func_284(0) > 0)
 			{
 				MONEY::NETWORK_BUY_ITEM(iParam0, iVar2, 12, 1, false, 0, 0, 0, 0, false);
@@ -66604,7 +66604,7 @@ int func_297()//Position - 0x4F9C2
 			return 1232090783;
 			break;
 	}
-	return 337428855;
+	return joaat("soda");
 }
 
 int func_298()//Position - 0x4FA5E
@@ -66643,7 +66643,7 @@ int func_298()//Position - 0x4FA5E
 			return 1232090783;
 			break;
 	}
-	return 337428855;
+	return joaat("soda");
 }
 
 int func_299(int iParam0)//Position - 0x4FAFA

@@ -148,14 +148,14 @@ void func_1()//Position - 0xCA
 					if (func_226(1, 1093140480, 0))
 					{
 						func_225();
-						if (!OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(1736361794))
+						if (!OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(joaat("DOORHASH_T_TRAILER_CS")))
 						{
-							OBJECT::ADD_DOOR_TO_SYSTEM(1736361794, joaat("v_ilev_trevtraildr"), 1972.77f, 3815.37f, 33.66f, true, true, false);
+							OBJECT::ADD_DOOR_TO_SYSTEM(joaat("DOORHASH_T_TRAILER_CS"), joaat("v_ilev_trevtraildr"), 1972.77f, 3815.37f, 33.66f, true, true, false);
 						}
-						if (OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(1736361794))
+						if (OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(joaat("DOORHASH_T_TRAILER_CS")))
 						{
-							OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(1736361794, 0f, true, false);
-							OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(1736361794, 0, true, false);
+							OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(joaat("DOORHASH_T_TRAILER_CS"), 0f, true, false);
+							OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(joaat("DOORHASH_T_TRAILER_CS"), 0, true, false);
 						}
 						CUTSCENE::START_CUTSCENE(0);
 						RECORDING::_0x48621C9FCA3EBD28(1);
@@ -208,14 +208,14 @@ void func_1()//Position - 0xCA
 
 void func_2()//Position - 0x25D
 {
-	if (!OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(1736361794))
+	if (!OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(joaat("DOORHASH_T_TRAILER_CS")))
 	{
-		OBJECT::ADD_DOOR_TO_SYSTEM(1736361794, joaat("v_ilev_trevtraildr"), 1972.77f, 3815.37f, 33.66f, true, true, false);
+		OBJECT::ADD_DOOR_TO_SYSTEM(joaat("DOORHASH_T_TRAILER_CS"), joaat("v_ilev_trevtraildr"), 1972.77f, 3815.37f, 33.66f, true, true, false);
 	}
-	if (OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(1736361794))
+	if (OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(joaat("DOORHASH_T_TRAILER_CS")))
 	{
-		OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(1736361794, 0f, true, false);
-		OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(1736361794, 1, true, false);
+		OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(joaat("DOORHASH_T_TRAILER_CS"), 0f, true, false);
+		OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(joaat("DOORHASH_T_TRAILER_CS"), 1, true, false);
 	}
 	func_3(110, 1);
 	func_253();

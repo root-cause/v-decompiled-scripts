@@ -4317,7 +4317,7 @@ void func_141()//Position - 0x47C5
 			{
 				if (PED::IS_PED_SITTING_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID()))
 				{
-					if (!func_165(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), 1215605247, &uLocal_318, 0, 500, 1, 0))
+					if (!func_165(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), joaat("MP_GAR_SIMEON"), &uLocal_318, 0, 500, 1, 0))
 					{
 						if (func_118())
 						{
@@ -6069,11 +6069,11 @@ Vector3 func_168(int iParam0)//Position - 0x6E1E
 {
 	switch (iParam0)
 	{
-		case 1215605247:
+		case joaat("MP_GAR_SIMEON"):
 			return 1204.429f, -3110.847f, 4.3988f;
 			break;
 		
-		case -1710530912:
+		case joaat("MP_GAR_PNS_2"):
 			return 725.1831f, -1089.349f, 21.1692f;
 			break;
 		
@@ -6081,11 +6081,11 @@ Vector3 func_168(int iParam0)//Position - 0x6E1E
 			return -1164.887f, -2011.105f, 12.25371f;
 			break;
 		
-		case 916723671:
+		case joaat("MP_GAR_PNS_4"):
 			return -330.44f, -143.39f, 39.33f;
 			break;
 		
-		case 1340820069:
+		case joaat("MP_GAR_PNS_5"):
 			return 106.28f, 6620.01f, 32.12f;
 			break;
 		
@@ -6101,9 +6101,9 @@ void func_169(var uParam0, int iParam1)//Position - 0x6ED2
 	switch (iParam1)
 	{
 		case 0:
-		case 1215605247:
+		case joaat("MP_GAR_SIMEON"):
 			*uParam0 = 99;
-			uParam0->f_1 = 1215605247;
+			uParam0->f_1 = joaat("MP_GAR_SIMEON");
 			uParam0->f_2 = 0;
 			uParam0->f_3 = { 1204.429f, -3110.847f, 4.3988f };
 			uParam0->f_6 = -247372382;
@@ -6122,9 +6122,9 @@ void func_169(var uParam0, int iParam1)//Position - 0x6ED2
 			break;
 		
 		case 1:
-		case -1710530912:
+		case joaat("MP_GAR_PNS_2"):
 			*uParam0 = 99;
-			uParam0->f_1 = -1710530912;
+			uParam0->f_1 = joaat("MP_GAR_PNS_2");
 			uParam0->f_2 = 1;
 			uParam0->f_3 = { 725.1831f, -1089.349f, 21.1692f };
 			uParam0->f_7 = 0;
@@ -6162,9 +6162,9 @@ void func_169(var uParam0, int iParam1)//Position - 0x6ED2
 			break;
 		
 		case 3:
-		case 916723671:
+		case joaat("MP_GAR_PNS_4"):
 			*uParam0 = 99;
-			uParam0->f_1 = 916723671;
+			uParam0->f_1 = joaat("MP_GAR_PNS_4");
 			uParam0->f_2 = 3;
 			uParam0->f_3 = { -330.44f, -143.39f, 39.33f };
 			uParam0->f_7 = 0;
@@ -6182,9 +6182,9 @@ void func_169(var uParam0, int iParam1)//Position - 0x6ED2
 			break;
 		
 		case 4:
-		case 1340820069:
+		case joaat("MP_GAR_PNS_5"):
 			*uParam0 = 99;
-			uParam0->f_1 = 1340820069;
+			uParam0->f_1 = joaat("MP_GAR_PNS_5");
 			uParam0->f_2 = 4;
 			uParam0->f_3 = { 106.28f, 6620.01f, 32.12f };
 			uParam0->f_7 = 0;
@@ -6245,14 +6245,14 @@ void func_171()//Position - 0x7473
 	{
 		if (!iLocal_87)
 		{
-			func_173(1215605247, 1, 0);
+			func_173(joaat("MP_GAR_SIMEON"), 1, 0);
 			func_172(1);
 			iLocal_87 = 1;
 		}
 	}
 	else if (iLocal_87)
 	{
-		func_173(1215605247, 0, 0);
+		func_173(joaat("MP_GAR_SIMEON"), 0, 0);
 		func_172(0);
 		iLocal_87 = 0;
 	}
@@ -6299,11 +6299,11 @@ int func_174(int iParam0)//Position - 0x7569
 {
 	switch (iParam0)
 	{
-		case 1215605247:
+		case joaat("MP_GAR_SIMEON"):
 			return 0;
 			break;
 		
-		case -1710530912:
+		case joaat("MP_GAR_PNS_2"):
 			return 1;
 			break;
 		
@@ -6311,11 +6311,11 @@ int func_174(int iParam0)//Position - 0x7569
 			return 2;
 			break;
 		
-		case 916723671:
+		case joaat("MP_GAR_PNS_4"):
 			return 3;
 			break;
 		
-		case 1340820069:
+		case joaat("MP_GAR_PNS_5"):
 			return 4;
 			break;
 		
@@ -9764,7 +9764,7 @@ void func_247()//Position - 0xBAFD
 
 int func_248(int iParam0, int iParam1)//Position - 0xBB67
 {
-	if (func_165(iParam0, 1215605247, &uLocal_318, 0f, 500, 1, iParam1))
+	if (func_165(iParam0, joaat("MP_GAR_SIMEON"), &uLocal_318, 0f, 500, 1, iParam1))
 	{
 		return 1;
 	}
@@ -10088,7 +10088,7 @@ int func_264()//Position - 0xC036
 			if (!func_245())
 			{
 				Var0 = { ENTITY::GET_ENTITY_COORDS(NETWORK::NET_TO_VEH(Local_330.f_22), true) };
-				if (func_265(Var0, 1215605247, 18))
+				if (func_265(Var0, joaat("MP_GAR_SIMEON"), 18))
 				{
 					if (func_248(NETWORK::NET_TO_VEH(Local_330.f_22), 1))
 					{
@@ -14760,7 +14760,7 @@ void func_405()//Position - 0x114E0
 											bLocal_93 = false;
 											bLocal_95 = false;
 											bLocal_96 = true;
-											if (func_500(1215605247, 18))
+											if (func_500(joaat("MP_GAR_SIMEON"), 18))
 											{
 												bLocal_86 = true;
 											}
@@ -15122,7 +15122,7 @@ void func_405()//Position - 0x114E0
 							}
 							if (bLocal_102)
 							{
-								if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false) && func_500(1215605247, 18))
+								if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false) && func_500(joaat("MP_GAR_SIMEON"), 18))
 								{
 									iVar2 = PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false);
 									if (func_248(iVar2, 0))
@@ -15143,7 +15143,7 @@ void func_405()//Position - 0x114E0
 								}
 							}
 						}
-						if (func_500(1215605247, 18))
+						if (func_500(joaat("MP_GAR_SIMEON"), 18))
 						{
 							if (func_256())
 							{
@@ -15222,7 +15222,7 @@ void func_405()//Position - 0x114E0
 			case 1:
 				if (func_14(PLAYER::PLAYER_ID(), 1, 1))
 				{
-					if (!func_165(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), 1215605247, &uLocal_318, 0, 500, 1, 0))
+					if (!func_165(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), joaat("MP_GAR_SIMEON"), &uLocal_318, 0, 500, 1, 0))
 					{
 						Local_337[NETWORK::PARTICIPANT_ID_TO_INT() /*4*/].f_1 = 2;
 					}
@@ -15318,7 +15318,7 @@ void func_405()//Position - 0x114E0
 					iLocal_100 = 0;
 				}
 			}
-			else if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false) && func_500(1215605247, 18))
+			else if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false) && func_500(joaat("MP_GAR_SIMEON"), 18))
 			{
 				iVar2 = PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false);
 				if (func_248(iVar2, 0))
@@ -19496,7 +19496,7 @@ void func_542()//Position - 0x16B51
 	{
 		if (iLocal_87)
 		{
-			func_173(1215605247, 0, 0);
+			func_173(joaat("MP_GAR_SIMEON"), 0, 0);
 			func_172(0);
 		}
 		if (iLocal_100)

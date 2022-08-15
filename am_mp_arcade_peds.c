@@ -2551,7 +2551,7 @@ int func_78(int iParam0, bool bParam1, int iParam2, bool bParam3)//Position - 0x
 	if (iParam0 == 0 && func_85())
 	{
 		iVar0 = MISC::GET_HASH_KEY(&(Global_23150.f_1));
-		if (iVar0 == -1794358814)
+		if (iVar0 == joaat("BAR_MENU_TITLE"))
 		{
 			return 0;
 		}

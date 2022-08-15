@@ -5513,7 +5513,7 @@ void func_86()//Position - 0x981A
 					}
 					else if (Local_118[PLAYER::PLAYER_ID() /*8*/].f_4 == 2 || Local_118[PLAYER::PLAYER_ID() /*8*/].f_4 == 3)
 					{
-						Local_125.f_0 = 1952785842;
+						Local_125.f_0 = joaat("high stakes");
 					}
 					else
 					{
@@ -5523,19 +5523,19 @@ void func_86()//Position - 0x981A
 					Local_125.f_6 = 1;
 					if (func_326(PLAYER::PLAYER_ID()))
 					{
-						Local_125.f_15 = 1983458449;
+						Local_125.f_15 = joaat("VIP membership");
 					}
 					else if (func_323())
 					{
-						Local_125.f_15 = 1334658487;
+						Local_125.f_15 = joaat("paid membership");
 					}
 					else if (func_325(1) && (func_326(func_324()) || func_211(PLAYER::PLAYER_ID())))
 					{
-						Local_125.f_15 = 980726932;
+						Local_125.f_15 = joaat("Gang membership");
 					}
 					else
 					{
-						Local_125.f_15 = 939907746;
+						Local_125.f_15 = joaat("no membership");
 					}
 					func_366(&uLocal_122, 0, 0);
 					func_210();
@@ -5881,19 +5881,19 @@ void func_90()//Position - 0xA9A3
 				Local_124.f_11 = func_326(PLAYER::PLAYER_ID());
 				if (func_326(PLAYER::PLAYER_ID()))
 				{
-					Local_124.f_20 = 1983458449;
+					Local_124.f_20 = joaat("VIP membership");
 				}
 				else if (func_323())
 				{
-					Local_124.f_20 = 1334658487;
+					Local_124.f_20 = joaat("paid membership");
 				}
 				else if (func_325(1) && (func_326(func_324()) || func_211(PLAYER::PLAYER_ID())))
 				{
-					Local_124.f_20 = 980726932;
+					Local_124.f_20 = joaat("Gang membership");
 				}
 				else
 				{
-					Local_124.f_20 = 939907746;
+					Local_124.f_20 = joaat("no membership");
 				}
 				if (func_426(PLAYER::PLAYER_ID()))
 				{
@@ -5901,7 +5901,7 @@ void func_90()//Position - 0xA9A3
 				}
 				else if (Local_118[PLAYER::PLAYER_ID() /*8*/].f_4 == 2 || Local_118[PLAYER::PLAYER_ID() /*8*/].f_4 == 3)
 				{
-					Local_124.f_1 = 1952785842;
+					Local_124.f_1 = joaat("high stakes");
 				}
 				else
 				{
@@ -5925,8 +5925,8 @@ void func_90()//Position - 0xA9A3
 				Local_124.f_19 = func_192();
 				Local_124.f_17 = func_190(&uLocal_120, 0, 0);
 				Local_124.f_7 = func_401();
-				Local_125.f_2 = 939907746;
-				Local_124.f_4 = 939907746;
+				Local_125.f_2 = joaat("no membership");
+				Local_124.f_4 = joaat("no membership");
 				if (Global_262145.f_26814)
 				{
 					STATS::_PLAYSTATS_CASINO_BLACKJACK(&Local_124);
@@ -5957,8 +5957,8 @@ void func_90()//Position - 0xA9A3
 				Local_124.f_19 = func_192();
 				Local_124.f_17 = func_190(&uLocal_120, 0, 0);
 				Local_124.f_7 = func_401();
-				Local_125.f_2 = -1275559872;
-				Local_124.f_4 = -1275559872;
+				Local_125.f_2 = joaat("low chips");
+				Local_124.f_4 = joaat("low chips");
 				if (Global_262145.f_26814)
 				{
 					STATS::_PLAYSTATS_CASINO_BLACKJACK(&Local_124);
@@ -5991,29 +5991,29 @@ void func_90()//Position - 0xA9A3
 				switch (func_327())
 				{
 					case 0:
-						Local_125.f_2 = 1982714739;
+						Local_125.f_2 = joaat("win cutoff");
 						break;
 					
 					case 1:
-						Local_125.f_2 = -633175758;
+						Local_125.f_2 = joaat("loss cutoff");
 						break;
 					
 					case 2:
-						Local_125.f_2 = -1625999354;
+						Local_125.f_2 = joaat("time cutoff");
 						break;
 				}
 				switch (func_327())
 				{
 					case 0:
-						Local_124.f_4 = 1982714739;
+						Local_124.f_4 = joaat("win cutoff");
 						break;
 					
 					case 1:
-						Local_124.f_4 = -633175758;
+						Local_124.f_4 = joaat("loss cutoff");
 						break;
 					
 					case 2:
-						Local_124.f_4 = -1625999354;
+						Local_124.f_4 = joaat("time cutoff");
 						break;
 				}
 				if (Local_118[PLAYER::PLAYER_ID() /*8*/].f_4 > -1)
@@ -6873,29 +6873,29 @@ void func_90()//Position - 0xA9A3
 						switch (func_327())
 						{
 							case 0:
-								Local_125.f_2 = 1982714739;
+								Local_125.f_2 = joaat("win cutoff");
 								break;
 							
 							case 1:
-								Local_125.f_2 = -633175758;
+								Local_125.f_2 = joaat("loss cutoff");
 								break;
 							
 							case 2:
-								Local_125.f_2 = -1625999354;
+								Local_125.f_2 = joaat("time cutoff");
 								break;
 						}
 						switch (func_327())
 						{
 							case 0:
-								Local_124.f_4 = 1982714739;
+								Local_124.f_4 = joaat("win cutoff");
 								break;
 							
 							case 1:
-								Local_124.f_4 = -633175758;
+								Local_124.f_4 = joaat("loss cutoff");
 								break;
 							
 							case 2:
-								Local_124.f_4 = -1625999354;
+								Local_124.f_4 = joaat("time cutoff");
 								break;
 						}
 						if (Local_118[PLAYER::PLAYER_ID() /*8*/].f_4 > -1)

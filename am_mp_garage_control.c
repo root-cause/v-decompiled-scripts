@@ -20708,7 +20708,7 @@ int func_191(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, 
 			}
 			break;
 		
-		case 1019352240:
+		case joaat("crewLogo"):
 			if (bParam8)
 			{
 				if (iVar0 == joaat("mp_m_freemode_01"))
@@ -21293,7 +21293,7 @@ int func_193(int iParam0, char* sParam1, int iParam2)//Position - 0x1D1D6
 {
 	switch (iParam2)
 	{
-		case 1019352240:
+		case joaat("crewLogo"):
 		case joaat("hairOverlay"):
 		case joaat("torsoDecal"):
 			return -1;
@@ -21699,7 +21699,7 @@ int func_193(int iParam0, char* sParam1, int iParam2)//Position - 0x1D1D6
 	}
 	switch (MISC::GET_HASH_KEY(sParam1))
 	{
-		case 1948764112:
+		case joaat("NO_LABEL"):
 			return -1;
 			break;
 		
@@ -26334,7 +26334,7 @@ void func_220(int iParam0, int iParam1)//Position - 0x2401F
 		{
 			if (iVar1 == 3 || iVar1 == 4)
 			{
-				if (iParam0 == 1019352240)
+				if (iParam0 == joaat("crewLogo"))
 				{
 					func_255(13, 0, Global_78127);
 					func_255(14, 0, Global_78127);
@@ -112374,11 +112374,11 @@ Vector3 func_1013(int iParam0)//Position - 0x91AEF
 {
 	switch (iParam0)
 	{
-		case 1215605247:
+		case joaat("MP_GAR_SIMEON"):
 			return 1204.429f, -3110.847f, 4.3988f;
 			break;
 		
-		case -1710530912:
+		case joaat("MP_GAR_PNS_2"):
 			return 725.1831f, -1089.349f, 21.1692f;
 			break;
 		
@@ -112386,11 +112386,11 @@ Vector3 func_1013(int iParam0)//Position - 0x91AEF
 			return -1164.887f, -2011.105f, 12.25371f;
 			break;
 		
-		case 916723671:
+		case joaat("MP_GAR_PNS_4"):
 			return -330.44f, -143.39f, 39.33f;
 			break;
 		
-		case 1340820069:
+		case joaat("MP_GAR_PNS_5"):
 			return 106.28f, 6620.01f, 32.12f;
 			break;
 		
@@ -112406,9 +112406,9 @@ void func_1014(var uParam0, int iParam1)//Position - 0x91BA3
 	switch (iParam1)
 	{
 		case 0:
-		case 1215605247:
+		case joaat("MP_GAR_SIMEON"):
 			*uParam0 = 99;
-			uParam0->f_1 = 1215605247;
+			uParam0->f_1 = joaat("MP_GAR_SIMEON");
 			uParam0->f_2 = 0;
 			uParam0->f_3 = { 1204.429f, -3110.847f, 4.3988f };
 			uParam0->f_6 = -247372382;
@@ -112427,9 +112427,9 @@ void func_1014(var uParam0, int iParam1)//Position - 0x91BA3
 			break;
 		
 		case 1:
-		case -1710530912:
+		case joaat("MP_GAR_PNS_2"):
 			*uParam0 = 99;
-			uParam0->f_1 = -1710530912;
+			uParam0->f_1 = joaat("MP_GAR_PNS_2");
 			uParam0->f_2 = 1;
 			uParam0->f_3 = { 725.1831f, -1089.349f, 21.1692f };
 			uParam0->f_7 = 0;
@@ -112467,9 +112467,9 @@ void func_1014(var uParam0, int iParam1)//Position - 0x91BA3
 			break;
 		
 		case 3:
-		case 916723671:
+		case joaat("MP_GAR_PNS_4"):
 			*uParam0 = 99;
-			uParam0->f_1 = 916723671;
+			uParam0->f_1 = joaat("MP_GAR_PNS_4");
 			uParam0->f_2 = 3;
 			uParam0->f_3 = { -330.44f, -143.39f, 39.33f };
 			uParam0->f_7 = 0;
@@ -112487,9 +112487,9 @@ void func_1014(var uParam0, int iParam1)//Position - 0x91BA3
 			break;
 		
 		case 4:
-		case 1340820069:
+		case joaat("MP_GAR_PNS_5"):
 			*uParam0 = 99;
-			uParam0->f_1 = 1340820069;
+			uParam0->f_1 = joaat("MP_GAR_PNS_5");
 			uParam0->f_2 = 4;
 			uParam0->f_3 = { 106.28f, 6620.01f, 32.12f };
 			uParam0->f_7 = 0;
@@ -113223,7 +113223,7 @@ void func_1049()//Position - 0x92C0E
 {
 	if (func_1050(Local_62, 1204.429f, -3110.847f, 4.3988f, 0.5f, 0))
 	{
-		Local_63.f_1 = 1215605247;
+		Local_63.f_1 = joaat("MP_GAR_SIMEON");
 	}
 	func_1014(&Local_63, Local_63.f_1);
 }

@@ -49019,7 +49019,7 @@ int func_709(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, 
 			}
 			break;
 		
-		case 1019352240:
+		case joaat("crewLogo"):
 			if (bParam8)
 			{
 				if (iVar0 == joaat("mp_m_freemode_01"))
@@ -49604,7 +49604,7 @@ int func_711(int iParam0, char* sParam1, int iParam2)//Position - 0x42200
 {
 	switch (iParam2)
 	{
-		case 1019352240:
+		case joaat("crewLogo"):
 		case joaat("hairOverlay"):
 		case joaat("torsoDecal"):
 			return -1;
@@ -50010,7 +50010,7 @@ int func_711(int iParam0, char* sParam1, int iParam2)//Position - 0x42200
 	}
 	switch (MISC::GET_HASH_KEY(sParam1))
 	{
-		case 1948764112:
+		case joaat("NO_LABEL"):
 			return -1;
 			break;
 		
@@ -54645,7 +54645,7 @@ void func_738(int iParam0, int iParam1)//Position - 0x48F03
 		{
 			if (iVar1 == 3 || iVar1 == 4)
 			{
-				if (iParam0 == 1019352240)
+				if (iParam0 == joaat("crewLogo"))
 				{
 					func_774(13, 0, Global_78127);
 					func_774(14, 0, Global_78127);
@@ -119777,7 +119777,7 @@ int func_1126(int iParam0)//Position - 0x90A60
 		
 		case joaat("MP_Gunrunning_Award_020_M_ALT"):
 		case joaat("MP_Gunrunning_Award_020_F_ALT"):
-		case 447234752:
+		case joaat("CLO_GRM_DECL_32"):
 		case joaat("CLO_GRF_DECL_32"):
 			if (!func_708(15423, -1))
 			{
