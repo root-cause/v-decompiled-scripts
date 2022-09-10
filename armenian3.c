@@ -29169,14 +29169,14 @@ int func_134(int iParam0)//Position - 0x1DE21
 				break;
 			
 			case joaat("weapon_heavyrifle"):
-			case -572349828:
-			case 392730790:
-			case -1523701417:
-			case -2112826155:
-			case -664359727:
-			case -1887867191:
-			case -837150131:
-			case -344484024:
+			case joaat("weapon_assaultmg"):
+			case joaat("weapon_assaultsniper"):
+			case joaat("weapon_amrifle"):
+			case joaat("weapon_crossbow"):
+			case joaat("weapon_harpoon"):
+			case joaat("weapon_programmablear"):
+			case joaat("weapon_rubbergun"):
+			case joaat("weapon_loudhailer"):
 			case joaat("weapon_flaregun"):
 			case joaat("weapon_handcuffs"):
 			case joaat("weapon_snowball"):
@@ -117336,7 +117336,7 @@ int func_834(int iParam0)//Position - 0x9242E
 	
 	WEAPON::GET_CURRENT_PED_WEAPON(iParam0, &iVar0, true);
 	iVar1 = WEAPON::GET_WEAPONTYPE_GROUP(iVar0);
-	if (((((((iVar1 == joaat("GROUP_PISTOL") || iVar1 == joaat("GROUP_SMG")) || iVar1 == joaat("GROUP_RIFLE")) || iVar1 == joaat("GROUP_MG")) || iVar1 == joaat("GROUP_SHOTGUN")) || iVar1 == joaat("GROUP_SNIPER")) || iVar1 == joaat("GROUP_HEAVY")) || iVar1 == 88899580)
+	if (((((((iVar1 == joaat("GROUP_PISTOL") || iVar1 == joaat("GROUP_SMG")) || iVar1 == joaat("GROUP_RIFLE")) || iVar1 == joaat("GROUP_MG")) || iVar1 == joaat("GROUP_SHOTGUN")) || iVar1 == joaat("GROUP_SNIPER")) || iVar1 == joaat("GROUP_HEAVY")) || iVar1 == joaat("GROUP_RUBBERGUN"))
 	{
 		return 1;
 	}

@@ -120758,7 +120758,7 @@ int func_1556(int iParam0)//Position - 0xAD02F
 			return joaat("FRANKLIN");
 		
 		case 153:
-			return 1548197805;
+			return joaat("englishdave");
 		
 		case 151:
 			return joaat("tony");
@@ -120812,7 +120812,7 @@ int func_1556(int iParam0)//Position - 0xAD02F
 			return joaat("yachtcaptain");
 		
 		case 167:
-			return 2111147587;
+			return joaat("miguelmadrazo");
 		
 		case 169:
 			return joaat("pavel");

@@ -741,7 +741,7 @@ int func_18(int iParam0, int iParam1)//Position - 0x8B2
 		return 0;
 	}
 	iVar1 = func_89(iParam1, &uVar0);
-	if (((((((((((((((((((((iParam1 != joaat("weapon_pistol") && iParam1 != joaat("weapon_appistol")) && iParam1 != joaat("weapon_combatpistol")) && iParam1 != joaat("weapon_microsmg")) && iParam1 != joaat("weapon_smg")) && iParam1 != joaat("weapon_pumpshotgun")) && iParam1 != joaat("weapon_assaultshotgun")) && iParam1 != joaat("weapon_sawnoffshotgun")) && iParam1 != joaat("weapon_assaultrifle")) && iParam1 != joaat("weapon_carbinerifle")) && iParam1 != joaat("weapon_advancedrifle")) && iParam1 != joaat("weapon_sniperrifle")) && iParam1 != joaat("weapon_heavysniper")) && iParam1 != joaat("weapon_mg")) && iParam1 != joaat("weapon_combatmg")) && iParam1 != joaat("weapon_grenadelauncher")) && iParam1 != -572349828) && iParam1 != joaat("weapon_assaultsmg")) && iParam1 != 392730790) && iParam1 != joaat("weapon_bullpupshotgun")) && iParam1 != joaat("weapon_pistol50")) && (iVar1 == -1 || FILES::GET_NUM_DLC_WEAPON_COMPONENTS(iVar1) < 3))
+	if (((((((((((((((((((((iParam1 != joaat("weapon_pistol") && iParam1 != joaat("weapon_appistol")) && iParam1 != joaat("weapon_combatpistol")) && iParam1 != joaat("weapon_microsmg")) && iParam1 != joaat("weapon_smg")) && iParam1 != joaat("weapon_pumpshotgun")) && iParam1 != joaat("weapon_assaultshotgun")) && iParam1 != joaat("weapon_sawnoffshotgun")) && iParam1 != joaat("weapon_assaultrifle")) && iParam1 != joaat("weapon_carbinerifle")) && iParam1 != joaat("weapon_advancedrifle")) && iParam1 != joaat("weapon_sniperrifle")) && iParam1 != joaat("weapon_heavysniper")) && iParam1 != joaat("weapon_mg")) && iParam1 != joaat("weapon_combatmg")) && iParam1 != joaat("weapon_grenadelauncher")) && iParam1 != joaat("weapon_assaultmg")) && iParam1 != joaat("weapon_assaultsmg")) && iParam1 != joaat("weapon_assaultsniper")) && iParam1 != joaat("weapon_bullpupshotgun")) && iParam1 != joaat("weapon_pistol50")) && (iVar1 == -1 || FILES::GET_NUM_DLC_WEAPON_COMPONENTS(iVar1) < 3))
 	{
 		return 0;
 	}
@@ -8948,7 +8948,7 @@ int func_66(int iParam0)//Position - 0xAC93
 			return 13;
 			break;
 		
-		case -572349828:
+		case joaat("weapon_assaultmg"):
 			return 14;
 			break;
 		
@@ -8968,7 +8968,7 @@ int func_66(int iParam0)//Position - 0xAC93
 			return 18;
 			break;
 		
-		case 392730790:
+		case joaat("weapon_assaultsniper"):
 			return 19;
 			break;
 		
@@ -9008,11 +9008,11 @@ int func_66(int iParam0)//Position - 0xAC93
 			return 28;
 			break;
 		
-		case -344484024:
+		case joaat("weapon_loudhailer"):
 			return 29;
 			break;
 		
-		case -1887867191:
+		case joaat("weapon_programmablear"):
 			return 30;
 			break;
 		
@@ -9020,7 +9020,7 @@ int func_66(int iParam0)//Position - 0xAC93
 			return 31;
 			break;
 		
-		case -837150131:
+		case joaat("weapon_rubbergun"):
 			return 32;
 			break;
 		
@@ -10678,7 +10678,7 @@ int func_80(int iParam0, int iParam1)//Position - 0xBF08
 			}
 			break;
 		
-		case 392730790:
+		case joaat("weapon_assaultsniper"):
 			switch (iParam0)
 			{
 				case 195735895:
@@ -10699,7 +10699,7 @@ int func_80(int iParam0, int iParam1)//Position - 0xBF08
 			}
 			break;
 		
-		case -572349828:
+		case joaat("weapon_assaultmg"):
 			switch (iParam0)
 			{
 				case -890514874:
@@ -10720,7 +10720,7 @@ int func_80(int iParam0, int iParam1)//Position - 0xBF08
 			}
 			break;
 		
-		case -1887867191:
+		case joaat("weapon_programmablear"):
 			switch (iParam0)
 			{
 				case -124428919:
@@ -13019,14 +13019,14 @@ int func_91(int iParam0)//Position - 0xE7E1
 				break;
 			
 			case joaat("weapon_heavyrifle"):
-			case -572349828:
-			case 392730790:
-			case -1523701417:
-			case -2112826155:
-			case -664359727:
-			case -1887867191:
-			case -837150131:
-			case -344484024:
+			case joaat("weapon_assaultmg"):
+			case joaat("weapon_assaultsniper"):
+			case joaat("weapon_amrifle"):
+			case joaat("weapon_crossbow"):
+			case joaat("weapon_harpoon"):
+			case joaat("weapon_programmablear"):
+			case joaat("weapon_rubbergun"):
+			case joaat("weapon_loudhailer"):
 			case joaat("weapon_flaregun"):
 			case joaat("weapon_handcuffs"):
 			case joaat("weapon_snowball"):

@@ -139490,7 +139490,7 @@ int func_1835(int iParam0)//Position - 0xB2D9D
 			return 15;
 			break;
 		
-		case -572349828:
+		case joaat("weapon_assaultmg"):
 			return 41;
 			break;
 		
@@ -139498,7 +139498,7 @@ int func_1835(int iParam0)//Position - 0xB2D9D
 			return 29;
 			break;
 		
-		case 392730790:
+		case joaat("weapon_assaultsniper"):
 			return 57;
 			break;
 		
@@ -140216,7 +140216,7 @@ int func_1838(int iParam0)//Position - 0xB39BD
 			return 13;
 			break;
 		
-		case -572349828:
+		case joaat("weapon_assaultmg"):
 			return 14;
 			break;
 		
@@ -140236,7 +140236,7 @@ int func_1838(int iParam0)//Position - 0xB39BD
 			return 18;
 			break;
 		
-		case 392730790:
+		case joaat("weapon_assaultsniper"):
 			return 19;
 			break;
 		
@@ -140276,11 +140276,11 @@ int func_1838(int iParam0)//Position - 0xB39BD
 			return 28;
 			break;
 		
-		case -344484024:
+		case joaat("weapon_loudhailer"):
 			return 29;
 			break;
 		
-		case -1887867191:
+		case joaat("weapon_programmablear"):
 			return 30;
 			break;
 		
@@ -140288,7 +140288,7 @@ int func_1838(int iParam0)//Position - 0xB39BD
 			return 31;
 			break;
 		
-		case -837150131:
+		case joaat("weapon_rubbergun"):
 			return 32;
 			break;
 		
@@ -140770,7 +140770,7 @@ int func_1842(bool bParam0)//Position - 0xB3FDE
 	}
 	if (!bParam0 && func_191(371, -1, 0) > iVar1)
 	{
-		iVar0 = -572349828;
+		iVar0 = joaat("weapon_assaultmg");
 		iVar1 = func_191(371, -1, 0);
 	}
 	if (!bParam0 && func_191(380, -1, 0) > iVar1)

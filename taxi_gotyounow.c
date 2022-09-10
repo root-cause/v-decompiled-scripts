@@ -4971,7 +4971,7 @@ int func_171()//Position - 0x593F
 
 int func_172(var uParam0)//Position - 0x5961
 {
-	if ((((*uParam0 == joaat("weapon_unarmed") || *uParam0 == joaat("weapon_smokegrenade")) || *uParam0 == joaat("weapon_fireextinguisher")) || *uParam0 == joaat("weapon_petrolcan")) || *uParam0 == -837150131)
+	if ((((*uParam0 == joaat("weapon_unarmed") || *uParam0 == joaat("weapon_smokegrenade")) || *uParam0 == joaat("weapon_fireextinguisher")) || *uParam0 == joaat("weapon_petrolcan")) || *uParam0 == joaat("weapon_rubbergun"))
 	{
 		return 1;
 	}

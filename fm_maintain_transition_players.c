@@ -41527,7 +41527,7 @@ int func_326(int iParam0)//Position - 0x2AC5D
 		case joaat("weapon_pistol50"):
 			return joaat("pickup_weapon_pistol50");
 		
-		case -572349828:
+		case joaat("weapon_assaultmg"):
 			return 975696266;
 		
 		case joaat("weapon_heavyrifle"):

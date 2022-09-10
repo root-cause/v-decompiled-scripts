@@ -95905,7 +95905,7 @@ int func_526(int iParam0)//Position - 0x6E250
 			return joaat("FRANKLIN");
 		
 		case 153:
-			return 1548197805;
+			return joaat("englishdave");
 		
 		case 151:
 			return joaat("tony");
@@ -95959,7 +95959,7 @@ int func_526(int iParam0)//Position - 0x6E250
 			return joaat("yachtcaptain");
 		
 		case 167:
-			return 2111147587;
+			return joaat("miguelmadrazo");
 		
 		case 169:
 			return joaat("pavel");
@@ -114869,14 +114869,14 @@ int func_967(int iParam0)//Position - 0x8A8B8
 				break;
 			
 			case joaat("weapon_heavyrifle"):
-			case -572349828:
-			case 392730790:
-			case -1523701417:
-			case -2112826155:
-			case -664359727:
-			case -1887867191:
-			case -837150131:
-			case -344484024:
+			case joaat("weapon_assaultmg"):
+			case joaat("weapon_assaultsniper"):
+			case joaat("weapon_amrifle"):
+			case joaat("weapon_crossbow"):
+			case joaat("weapon_harpoon"):
+			case joaat("weapon_programmablear"):
+			case joaat("weapon_rubbergun"):
+			case joaat("weapon_loudhailer"):
 			case joaat("weapon_flaregun"):
 			case joaat("weapon_handcuffs"):
 			case joaat("weapon_snowball"):

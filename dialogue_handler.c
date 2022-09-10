@@ -3907,12 +3907,12 @@ int func_98(int iParam0)//Position - 0x47C8
 		case joaat("bplesau"):
 		case joaat("bpmalau"):
 		case joaat("lowreau"):
-		case 1566303118:
-		case 1220013368:
-		case 71115730:
-		case -251854137:
-		case -243052328:
-		case -1417718107:
+		case joaat("IMTRAAU"):
+		case joaat("IMAMPAU"):
+		case joaat("IMWEDAU"):
+		case joaat("IMBUSAU"):
+		case joaat("IMROCAU"):
+		case joaat("IMFLIAU"):
 		case joaat("impaaud"):
 		case joaat("imdunau"):
 		case joaat("imruiau"):
@@ -3977,7 +3977,7 @@ int func_98(int iParam0)//Position - 0x47C8
 		case joaat("hs3prau"):
 		case joaat("hs3cwau"):
 		case joaat("hs3leau"):
-		case -342942601:
+		case joaat("HS3SPAU"):
 		case joaat("hs3ceau"):
 		case joaat("hs3reau"):
 		case joaat("hs3fiau"):
@@ -3992,8 +3992,8 @@ int func_98(int iParam0)//Position - 0x47C8
 	{
 		case 1971768146:
 		case joaat("hs4paau"):
-		case -519616352:
-		case 718322585:
+		case joaat("HS4C1AU"):
+		case joaat("HS4C2AU"):
 		case joaat("hs4edau"):
 		case joaat("hs4bpau"):
 		case joaat("hs4moau"):
@@ -4042,12 +4042,12 @@ int func_98(int iParam0)//Position - 0x47C8
 		case joaat("SM2WBAU"):
 		case joaat("SM2YOAU"):
 		case joaat("SM2ULAU"):
-		case -790967848:
-		case 1475512972:
-		case -9119060:
-		case 1748914928:
-		case -105714609:
-		case -1463539315:
+		case joaat("SM2U1AU"):
+		case joaat("SM2U2AU"):
+		case joaat("SM2U3AU"):
+		case joaat("SM2U4AU"):
+		case joaat("SM2U5AU"):
+		case joaat("SM2U6AU"):
 			return 1;
 		
 		default:

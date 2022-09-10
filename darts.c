@@ -8250,7 +8250,7 @@ int func_145(int iParam0)//Position - 0xA512
 	}
 	else if (iParam0 == 402)
 	{
-		return -572349828;
+		return joaat("weapon_assaultmg");
 	}
 	else if (iParam0 == 300)
 	{

@@ -76921,7 +76921,7 @@ int __GET_RANGE_GUN_NAME_FROM_INT (int iParam0)//Position - 0x6663E
 	}
 	else if (iParam0 == 402)
 	{
-		return -572349828;
+		return joaat("weapon_assaultmg");
 	}
 	else if (iParam0 == 300)
 	{

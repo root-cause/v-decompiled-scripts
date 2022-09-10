@@ -49822,8 +49822,8 @@ int func_361(char* sParam0)//Position - 0x44B4D
 	iVar0 = MISC::GET_HASH_KEY(HUD::_GET_TEXT_SUBSTRING(sParam0, 0, 6));
 	switch (iVar0)
 	{
-		case -1647080257:
-		case -1635032722:
+		case joaat("CLO_HA"):
+		case joaat("TAT_HA"):
 			return 1;
 			break;
 	}
@@ -49877,129 +49877,129 @@ int func_362(char* sParam0)//Position - 0x44C55
 	iVar0 = MISC::GET_HASH_KEY(HUD::_GET_TEXT_SUBSTRING(sParam0, 0, 6));
 	switch (iVar0)
 	{
-		case -2115296325:
-		case -1917727053:
+		case joaat("CLO_S1"):
+		case joaat("TAT_S1"):
 			return 1;
 			break;
 		
-		case 1310830821:
-		case -2080815574:
+		case joaat("CLO_AP"):
+		case joaat("TAT_AP"):
 			return 1;
 			break;
 		
-		case 1264005900:
-		case -2124002991:
+		case joaat("CLO_X3"):
+		case joaat("TAT_X3"):
 			return 1;
 			break;
 		
-		case -845498475:
+		case joaat("CLO_X4"):
 			return 1;
 			break;
 		
-		case 1585373207:
+		case joaat("CLO_V2"):
 			return 1;
 			break;
 		
-		case -32105449:
-		case -723723000:
+		case joaat("CLO_S2"):
+		case joaat("TAT_S2"):
 			return 1;
 			break;
 		
-		case -2100506294:
+		case joaat("CLO_EX"):
 			return 1;
 			break;
 		
-		case 982652206:
-		case 1960353061:
+		case joaat("CLO_ST"):
+		case joaat("TAT_ST"):
 			return 1;
 			break;
 		
-		case 911341914:
-		case -1177833238:
+		case joaat("CLO_BI"):
+		case joaat("TAT_BI"):
 			return 1;
 			break;
 		
-		case -33829882:
-		case -2114785687:
+		case joaat("CLO_IE"):
+		case joaat("TAT_IE"):
 			return 1;
 			break;
 		
-		case 967837046:
-		case 1713900776:
+		case joaat("CLO_GR"):
+		case joaat("TAT_GR"):
 			return 1;
 			break;
 		
-		case -1236923236:
-		case -374634807:
+		case joaat("CLO_SM"):
+		case joaat("TAT_SM"):
 			return 1;
 			break;
 		
-		case 495538029:
-		case 1755484029:
+		case joaat("CLO_AR"):
+		case joaat("TAT_AR"):
 			return 1;
 			break;
 		
-		case 843134448:
-		case 1237563348:
+		case joaat("CLO_H2"):
+		case joaat("TAT_H2"):
 			return 1;
 			break;
 		
-		case 817135047:
-		case -1866897369:
+		case joaat("CLO_X1"):
+		case joaat("TAT_X1"):
 			return 1;
 			break;
 		
-		case 751562226:
+		case joaat("CLO_AS"):
 			return 1;
 			break;
 		
-		case 1068076045:
-		case -1417079707:
+		case joaat("CLO_BH"):
+		case joaat("TAT_BH"):
 			return 1;
 			break;
 		
-		case 1976270828:
-		case 1024899158:
+		case joaat("CLO_AW"):
+		case joaat("TAT_AW"):
 			return 1;
 			break;
 		
-		case -1043587080:
-		case 1556381710:
+		case joaat("CLO_X5"):
+		case joaat("TAT_X5"):
 			return 1;
 			break;
 		
-		case -1453558291:
-		case 2000920079:
+		case joaat("CLO_VW"):
+		case joaat("TAT_VW"):
 			return 1;
 			break;
 		
-		case 217574226:
-		case -1750609005:
+		case joaat("CLO_H3"):
+		case joaat("TAT_H3"):
 			return 1;
 			break;
 		
-		case 685273531:
-		case -2060239386:
+		case joaat("CLO_SU"):
+		case joaat("TAT_SU"):
 			return 1;
 			break;
 		
-		case -21147939:
-		case -1392640449:
+		case joaat("CLO_H4"):
+		case joaat("TAT_H4"):
 			return 1;
 			break;
 		
-		case -592490042:
-		case 1663924395:
+		case joaat("CLO_TR"):
+		case joaat("TAT_TR"):
 			return 1;
 			break;
 		
-		case -1509663423:
-		case 1864638416:
+		case joaat("CLO_FX"):
+		case joaat("TAT_FX"):
 			return 1;
 			break;
 		
-		case 1930593842:
-		case -1256972905:
+		case joaat("CLO_SB"):
+		case joaat("TAT_SB"):
 			return 1;
 			break;
 	}
@@ -50086,9 +50086,9 @@ int func_363(char* sParam0)//Position - 0x44FC5
 	iVar0 = MISC::GET_HASH_KEY(HUD::_GET_TEXT_SUBSTRING(sParam0, 0, 6));
 	switch (iVar0)
 	{
-		case -680965302:
-		case 436097115:
-		case 927511879:
+		case joaat("CLO_XM"):
+		case joaat("CLO_X2"):
+		case joaat("TAT_X2"):
 			return 1;
 			break;
 	}
@@ -50106,7 +50106,7 @@ int func_364(char* sParam0)//Position - 0x45009
 	iVar0 = MISC::GET_HASH_KEY(HUD::_GET_TEXT_SUBSTRING(sParam0, 0, 6));
 	switch (iVar0)
 	{
-		case 2070857446:
+		case joaat("CLO_IN"):
 			return 1;
 			break;
 	}
@@ -50146,19 +50146,19 @@ char* func_366(char* sParam0, bool bParam1)//Position - 0x450B3
 	iVar1 = MISC::GET_HASH_KEY(HUD::_GET_TEXT_SUBSTRING(sParam0, 0, 6));
 	switch (iVar1)
 	{
-		case -272077744:
-		case -217636000:
+		case joaat("CLO_BB"):
+		case joaat("TAT_BB"):
 			return "SHOP_CONTENT_1";
 			break;
 		
-		case -291739204:
-		case -1724452987:
+		case joaat("CLO_BU"):
+		case joaat("TAT_BU"):
 			return "SHOP_CONTENT_2";
 			break;
 		
-		case -680965302:
-		case 436097115:
-		case 927511879:
+		case joaat("CLO_XM"):
+		case joaat("CLO_X2"):
+		case joaat("TAT_X2"):
 			if (!bParam1)
 			{
 				return "SHOP_CONTENT_3";
@@ -50169,17 +50169,17 @@ char* func_366(char* sParam0, bool bParam1)//Position - 0x450B3
 			}
 			break;
 		
-		case -1376583914:
+		case joaat("CLO_VA"):
 			return "SHOP_CONTENT_4";
 			break;
 		
-		case 753969907:
+		case joaat("CLO_HI"):
 			return "SHOP_CONTENT_5";
 			break;
 		
-		case -1461214493:
-		case 469261390:
-		case 1454369070:
+		case joaat("CLO_HP"):
+		case joaat("TAT_HP"):
+		case joaat("BRD_HP"):
 			if (!bParam1)
 			{
 				return "SHOP_CONTENT_6";
@@ -50190,7 +50190,7 @@ char* func_366(char* sParam0, bool bParam1)//Position - 0x450B3
 			}
 			break;
 		
-		case -1497129317:
+		case joaat("CLO_HS"):
 			if (!bParam1)
 			{
 				return "SHOP_CONTENT_7";
@@ -50201,7 +50201,7 @@ char* func_366(char* sParam0, bool bParam1)//Position - 0x450B3
 			}
 			break;
 		
-		case 2070857446:
+		case joaat("CLO_IN"):
 			if (!bParam1)
 			{
 				return "SHOP_CONTENT_8";
@@ -50212,11 +50212,11 @@ char* func_366(char* sParam0, bool bParam1)//Position - 0x450B3
 			}
 			break;
 		
-		case 790660019:
+		case joaat("CLO_PI"):
 			return "SHOP_CONTENT_9";
 			break;
 		
-		case -1899372144:
+		case joaat("CLO_LT"):
 			if (!bParam1)
 			{
 				return "SHOP_CONTENT_10";
@@ -50227,8 +50227,8 @@ char* func_366(char* sParam0, bool bParam1)//Position - 0x450B3
 			}
 			break;
 		
-		case 2009248638:
-		case -434342601:
+		case joaat("CLO_LX"):
+		case joaat("TAT_LX"):
 			if (((((iVar0 == joaat("CLO_LXM_DEC_30") || iVar0 == joaat("CLO_LXM_DEC_33")) || iVar0 == joaat("CLO_LXM_DEC_38")) || iVar0 == joaat("CLO_LXF_DEC_30")) || iVar0 == joaat("CLO_LXF_DEC_33")) || iVar0 == joaat("CLO_LXF_DEC_38"))
 			{
 				return "SHOP_CONTENT_14";
@@ -50236,7 +50236,7 @@ char* func_366(char* sParam0, bool bParam1)//Position - 0x450B3
 			return "SHOP_CONTENT_12";
 			break;
 		
-		case 1759048931:
+		case joaat("CLO_VE"):
 			switch (iVar0)
 			{
 				case joaat("CLO_VEM_DEC_44"):
@@ -50253,33 +50253,33 @@ char* func_366(char* sParam0, bool bParam1)//Position - 0x450B3
 			return "SHOP_CONTENT_13";
 			break;
 		
-		case 1974808259:
-		case -1053480147:
+		case joaat("CLO_L2"):
+		case joaat("TAT_L2"):
 			return "SHOP_CONTENT_14";
 			break;
 		
-		case -2115296325:
-		case -1917727053:
+		case joaat("CLO_S1"):
+		case joaat("TAT_S1"):
 			return "SHOP_CONTENT_15";
 			break;
 		
-		case -1647080257:
-		case -1635032722:
+		case joaat("CLO_HA"):
+		case joaat("TAT_HA"):
 			return "SHOP_CONTENT_16";
 			break;
 		
-		case -32105449:
-		case -723723000:
+		case joaat("CLO_S2"):
+		case joaat("TAT_S2"):
 			return "SHOP_CONTENT_17";
 			break;
 		
-		case 1310830821:
-		case -2080815574:
+		case joaat("CLO_AP"):
+		case joaat("TAT_AP"):
 			return "SHOP_CONTENT_18";
 			break;
 		
-		case 1264005900:
-		case -2124002991:
+		case joaat("CLO_X3"):
+		case joaat("TAT_X3"):
 			if (iVar0 == joaat("CLO_X3F_DEC_00") || iVar0 == joaat("CLO_X3M_DEC_00"))
 			{
 				return "";
@@ -50287,64 +50287,64 @@ char* func_366(char* sParam0, bool bParam1)//Position - 0x450B3
 			return "SHOP_CONTENT_19";
 			break;
 		
-		case -845498475:
+		case joaat("CLO_X4"):
 			return "SHOP_CONTENT_26";
 			break;
 		
-		case 1585373207:
+		case joaat("CLO_V2"):
 			return "SHOP_CONTENT_21";
 			break;
 		
-		case -2100506294:
+		case joaat("CLO_EX"):
 			return "SHOP_CONTENT_22";
 			break;
 		
-		case 982652206:
-		case 1960353061:
+		case joaat("CLO_ST"):
+		case joaat("TAT_ST"):
 			return "SHOP_CONTENT_23";
 			break;
 		
-		case 911341914:
-		case -1177833238:
+		case joaat("CLO_BI"):
+		case joaat("TAT_BI"):
 			return "SHOP_CONTENT_24";
 			break;
 		
-		case -33829882:
-		case -2114785687:
+		case joaat("CLO_IE"):
+		case joaat("TAT_IE"):
 			return "SHOP_CONTENT_25";
 			break;
 		
-		case 967837046:
-		case 1713900776:
+		case joaat("CLO_GR"):
+		case joaat("TAT_GR"):
 			return "SHOP_CONTENT_27";
 			break;
 		
-		case -1236923236:
-		case -374634807:
+		case joaat("CLO_SM"):
+		case joaat("TAT_SM"):
 			return "SHOP_CONTENT_28";
 			break;
 		
-		case 495538029:
-		case 1755484029:
+		case joaat("CLO_AR"):
+		case joaat("TAT_AR"):
 			return "SHOP_CONTENT_29";
 			break;
 		
-		case 843134448:
-		case 1237563348:
+		case joaat("CLO_H2"):
+		case joaat("TAT_H2"):
 			return "SHOP_CONTENT_30";
 			break;
 		
-		case 817135047:
-		case -1866897369:
+		case joaat("CLO_X1"):
+		case joaat("TAT_X1"):
 			return "SHOP_CONTENT_31";
 			break;
 		
-		case 751562226:
+		case joaat("CLO_AS"):
 			return "SHOP_CONTENT_32";
 			break;
 		
-		case 1068076045:
-		case -1417079707:
+		case joaat("CLO_BH"):
+		case joaat("TAT_BH"):
 			if (!bParam1)
 			{
 				return "SHOP_CONTENT_33";
@@ -50355,8 +50355,8 @@ char* func_366(char* sParam0, bool bParam1)//Position - 0x450B3
 			}
 			break;
 		
-		case 1976270828:
-		case 1024899158:
+		case joaat("CLO_AW"):
+		case joaat("TAT_AW"):
 			if (iVar0 == joaat("TAT_AW_000"))
 			{
 				return "";
@@ -50368,43 +50368,43 @@ char* func_366(char* sParam0, bool bParam1)//Position - 0x450B3
 			return "SHOP_CONTENT_34";
 			break;
 		
-		case -1043587080:
-		case 1556381710:
+		case joaat("CLO_X5"):
+		case joaat("TAT_X5"):
 			return "SHOP_CONTENT_35";
 			break;
 		
-		case -1453558291:
-		case 2000920079:
+		case joaat("CLO_VW"):
+		case joaat("TAT_VW"):
 			return "SHOP_CONTENT_38";
 			break;
 		
-		case 217574226:
-		case -1750609005:
+		case joaat("CLO_H3"):
+		case joaat("TAT_H3"):
 			return "SHOP_CONTENT_39";
 			break;
 		
-		case 685273531:
-		case -2060239386:
+		case joaat("CLO_SU"):
+		case joaat("TAT_SU"):
 			return "SHOP_CONTENT_40";
 			break;
 		
-		case -21147939:
-		case -1392640449:
+		case joaat("CLO_H4"):
+		case joaat("TAT_H4"):
 			return "SHOP_CONTENT_41";
 			break;
 		
-		case -592490042:
-		case 1663924395:
+		case joaat("CLO_TR"):
+		case joaat("TAT_TR"):
 			return "SHOP_CONTENT_42";
 			break;
 		
-		case -1509663423:
-		case 1864638416:
+		case joaat("CLO_FX"):
+		case joaat("TAT_FX"):
 			return "SHOP_CONTENT_44";
 			break;
 		
-		case 1930593842:
-		case -1256972905:
+		case joaat("CLO_SB"):
+		case joaat("TAT_SB"):
 			return "SHOP_CONTENT_45";
 			break;
 	}
@@ -50582,193 +50582,193 @@ int func_367(char* sParam0)//Position - 0x45895
 	iVar0 = MISC::GET_HASH_KEY(HUD::_GET_TEXT_SUBSTRING(sParam0, 0, 6));
 	switch (iVar0)
 	{
-		case -272077744:
-		case -217636000:
+		case joaat("CLO_BB"):
+		case joaat("TAT_BB"):
 			return 1;
 			break;
 		
-		case -291739204:
-		case -1724452987:
+		case joaat("CLO_BU"):
+		case joaat("TAT_BU"):
 			return 0;
 			break;
 		
-		case -680965302:
-		case 436097115:
-		case 927511879:
+		case joaat("CLO_XM"):
+		case joaat("CLO_X2"):
+		case joaat("TAT_X2"):
 			return 0;
 			break;
 		
-		case -1376583914:
+		case joaat("CLO_VA"):
 			return 1;
 			break;
 		
-		case 753969907:
+		case joaat("CLO_HI"):
 			return 0;
 			break;
 		
-		case -1461214493:
-		case 469261390:
-		case 1454369070:
+		case joaat("CLO_HP"):
+		case joaat("TAT_HP"):
+		case joaat("BRD_HP"):
 			return 0;
 			break;
 		
-		case 2070857446:
+		case joaat("CLO_IN"):
 			return 0;
 			break;
 		
-		case 790660019:
+		case joaat("CLO_PI"):
 			return 0;
 			break;
 		
-		case -1899372144:
+		case joaat("CLO_LT"):
 			return 0;
 			break;
 		
-		case -1497129317:
+		case joaat("CLO_HS"):
 			return 0;
 			break;
 		
-		case 1759048931:
+		case joaat("CLO_VE"):
 			return 0;
 			break;
 		
-		case 2009248638:
-		case -434342601:
+		case joaat("CLO_LX"):
+		case joaat("TAT_LX"):
 			return 0;
 			break;
 		
-		case 1974808259:
-		case -1053480147:
+		case joaat("CLO_L2"):
+		case joaat("TAT_L2"):
 			return 0;
 			break;
 		
-		case -1647080257:
-		case -1635032722:
+		case joaat("CLO_HA"):
+		case joaat("TAT_HA"):
 			return 0;
 			break;
 		
-		case -2115296325:
-		case -1917727053:
+		case joaat("CLO_S1"):
+		case joaat("TAT_S1"):
 			return 0;
 			break;
 		
-		case 1310830821:
-		case -2080815574:
+		case joaat("CLO_AP"):
+		case joaat("TAT_AP"):
 			return 0;
 			break;
 		
-		case 1264005900:
-		case -2124002991:
+		case joaat("CLO_X3"):
+		case joaat("TAT_X3"):
 			return 0;
 			break;
 		
-		case -845498475:
+		case joaat("CLO_X4"):
 			return 0;
 			break;
 		
-		case 111238245:
+		case joaat("CLO_JA"):
 			return 1;
 			break;
 		
-		case 1585373207:
+		case joaat("CLO_V2"):
 			return 0;
 			break;
 		
-		case -32105449:
-		case -723723000:
+		case joaat("CLO_S2"):
+		case joaat("TAT_S2"):
 			return 0;
 			break;
 		
-		case -2100506294:
+		case joaat("CLO_EX"):
 			return 0;
 			break;
 		
-		case 982652206:
-		case 1960353061:
+		case joaat("CLO_ST"):
+		case joaat("TAT_ST"):
 			return 0;
 			break;
 		
-		case 911341914:
-		case -1177833238:
+		case joaat("CLO_BI"):
+		case joaat("TAT_BI"):
 			return 0;
 			break;
 		
-		case -33829882:
-		case -2114785687:
+		case joaat("CLO_IE"):
+		case joaat("TAT_IE"):
 			return 0;
 			break;
 		
-		case 967837046:
-		case 1713900776:
+		case joaat("CLO_GR"):
+		case joaat("TAT_GR"):
 			return 0;
 			break;
 		
-		case -1236923236:
-		case -374634807:
+		case joaat("CLO_SM"):
+		case joaat("TAT_SM"):
 			return 0;
 			break;
 		
-		case 843134448:
-		case 1237563348:
+		case joaat("CLO_H2"):
+		case joaat("TAT_H2"):
 			return 0;
 			break;
 		
-		case 817135047:
-		case -1866897369:
+		case joaat("CLO_X1"):
+		case joaat("TAT_X1"):
 			return 0;
 			break;
 		
-		case 751562226:
+		case joaat("CLO_AS"):
 			return 0;
 			break;
 		
-		case 1068076045:
-		case -1417079707:
+		case joaat("CLO_BH"):
+		case joaat("TAT_BH"):
 			return 0;
 			break;
 		
-		case 1976270828:
-		case 1024899158:
+		case joaat("CLO_AW"):
+		case joaat("TAT_AW"):
 			return 0;
 			break;
 		
-		case -1043587080:
-		case 1556381710:
+		case joaat("CLO_X5"):
+		case joaat("TAT_X5"):
 			return 0;
 			break;
 		
-		case -1453558291:
-		case 2000920079:
+		case joaat("CLO_VW"):
+		case joaat("TAT_VW"):
 			return 0;
 			break;
 		
-		case 217574226:
-		case -1750609005:
+		case joaat("CLO_H3"):
+		case joaat("TAT_H3"):
 			return 0;
 			break;
 		
-		case 685273531:
-		case -2060239386:
+		case joaat("CLO_SU"):
+		case joaat("TAT_SU"):
 			return 0;
 			break;
 		
-		case -21147939:
-		case -1392640449:
+		case joaat("CLO_H4"):
+		case joaat("TAT_H4"):
 			return 0;
 			break;
 		
-		case -592490042:
-		case 1663924395:
+		case joaat("CLO_TR"):
+		case joaat("TAT_TR"):
 			return 0;
 			break;
 		
-		case -1509663423:
-		case 1864638416:
+		case joaat("CLO_FX"):
+		case joaat("TAT_FX"):
 			return 0;
 			break;
 		
-		case 1930593842:
-		case -1256972905:
+		case joaat("CLO_SB"):
+		case joaat("TAT_SB"):
 			return 0;
 			break;
 	}
@@ -58376,7 +58376,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 {
 	switch (iParam0)
 	{
-		case 1371199852:
+		case joaat("CU_SUM2_G9EC_MASKS"):
 			if (func_411(iParam1, 1, 1, 1, -1))
 			{
 				return 0;
@@ -58459,7 +58459,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 			}
 			break;
 		
-		case -169593362:
+		case joaat("CU_SUM2_G9EC_CLOTHES"):
 			if (func_411(iParam1, 1, 1, 1, -1))
 			{
 				return 0;
@@ -63237,7 +63237,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 			break;
 		
 		case joaat("CU_XMAS6_CLOTHES"):
-		case 216058016:
+		case joaat("CU_XMAS6_MASKS"):
 		case joaat("CU_ARENA_CLOTHES"):
 			switch (iParam1)
 			{
