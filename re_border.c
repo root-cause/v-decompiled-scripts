@@ -1615,7 +1615,7 @@ int func_34()//Position - 0x15CC
 					{
 						if (!func_55() && !TASK::IS_PED_IN_WRITHE(iLocal_63[iVar0]))
 						{
-							PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_66, joaat("player"));
+							PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_66, joaat("PLAYER"));
 							PED::SET_PED_COMBAT_ATTRIBUTES(iLocal_63[iVar0], 2, true);
 							func_54(&uLocal_68, 1);
 							func_53(&uLocal_68, 1, iLocal_63[iVar0], "BorderPatrol", 0, 1);
@@ -2886,7 +2886,7 @@ int func_72()//Position - 0x2DA8
 				if (!CAM::IS_SPHERE_VISIBLE(Var0, 5f))
 				{
 					PED::ADD_RELATIONSHIP_GROUP("re_border badGuys", &iLocal_66);
-					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, iLocal_66, joaat("player"));
+					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, iLocal_66, joaat("PLAYER"));
 					iVar2 = 0;
 					while (iVar2 < 3)
 					{

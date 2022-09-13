@@ -74395,10 +74395,10 @@ int func_680(int iParam0, int iParam1, int iParam2)//Position - 0x5ACC1
 					return 1;
 					break;
 				
-				case 196632624:
-				case -1644428107:
-				case 1108198688:
-				case 810099095:
+				case joaat("MP_Award_M_Tshirt_000"):
+				case joaat("MP_Award_M_Tshirt_001"):
+				case joaat("MP_Award_F_Tshirt_000"):
+				case joaat("MP_Award_F_Tshirt_001"):
 					return 1;
 					break;
 				
@@ -74413,10 +74413,10 @@ int func_680(int iParam0, int iParam1, int iParam2)//Position - 0x5ACC1
 					return 1;
 					break;
 				
-				case 1980445908:
-				case -1882429354:
-				case -1235341889:
-				case -1544517404:
+				case joaat("MP_Award_M_Tshirt_002"):
+				case joaat("MP_Award_M_Tshirt_003"):
+				case joaat("MP_Award_F_Tshirt_002"):
+				case joaat("MP_Award_F_Tshirt_003"):
 					return 1;
 					break;
 				
@@ -124287,11 +124287,11 @@ void func_865()//Position - 0x9A6F2
 	PED::SET_PED_MODEL_IS_SUPPRESSED(joaat("cs_lifeinvad_01"), true);
 	PED::ADD_RELATIONSHIP_GROUP("REL_FREIND", &iLocal_361);
 	PED::ADD_RELATIONSHIP_GROUP("Family", &iLocal_362);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), iLocal_361);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), iLocal_362);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_361, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), iLocal_361);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), iLocal_362);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_361, joaat("PLAYER"));
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_361, iLocal_362);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), iLocal_362);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), iLocal_362);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_362, iLocal_361);
 	Global_75595 = 1;
 	iVar4 = 70;

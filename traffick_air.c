@@ -17254,8 +17254,8 @@ int func_308(var uParam0, int iParam1, var uParam2, var uParam3, int iParam4, va
 			else if (!uParam5->f_35 && !(iParam7 == 2 && !uParam5->f_34))
 			{
 				PED::ADD_RELATIONSHIP_GROUP("relRivalRunners", &(uParam3->f_368));
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, uParam3->f_368, joaat("player"));
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), uParam3->f_368);
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, uParam3->f_368, joaat("PLAYER"));
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), uParam3->f_368);
 				func_310(uParam5, uParam3, uParam2, iParam7);
 			}
 			iVar0 = 0;
@@ -17792,8 +17792,8 @@ void func_313(var uParam0, var uParam1, var uParam2)//Position - 0x12823
 	Local_4178[3 /*5*/][2] = PED::CREATE_PED(22, uParam2->f_1155[0], 1700.088f, 3287.261f, 47.9222f, 0f, true, true);
 	Local_4178[3 /*5*/][3] = PED::CREATE_PED(22, uParam2->f_1155[0], 1785.482f, 3293.358f, 40.7863f, 0f, true, true);
 	PED::ADD_RELATIONSHIP_GROUP("ENEMIES", &iLocal_4026);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_4026, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), iLocal_4026);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_4026, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_4026);
 	iVar0 = 0;
 	while (iVar0 < 4)
 	{
@@ -17882,7 +17882,7 @@ void func_314(var uParam0, var uParam1, var uParam2)//Position - 0x12E88
 		TASK::TASK_VEHICLE_DRIVE_WANDER(Local_4178[2 /*5*/][0], uParam1->f_343[8], 8f, 786603);
 	}
 	PED::ADD_RELATIONSHIP_GROUP("ENEMIES", &iLocal_4026);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_4026, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_4026, joaat("PLAYER"));
 	iVar0 = 0;
 	while (iVar0 < 3)
 	{
@@ -17908,7 +17908,7 @@ void func_315(var uParam0, var uParam1, var uParam2, int iParam3)//Position - 0x
 	iParam3 = iParam3;
 	Var2 = { 0f, -3f, 0.8f };
 	PED::ADD_RELATIONSHIP_GROUP("ENEMIES", &iLocal_4026);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_4026, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_4026, joaat("PLAYER"));
 	uParam1->f_312[0] = VEHICLE::CREATE_MISSION_TRAIN(6, uParam0->f_16[0 /*3*/], uParam0->f_29[0], 0, 0);
 	if (!ENTITY::IS_ENTITY_DEAD(uParam1->f_312[0], false))
 	{

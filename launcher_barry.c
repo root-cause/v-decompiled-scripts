@@ -12038,7 +12038,7 @@ int func_278(var uParam0)//Position - 0x10302
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(uParam0->f_28[0], true);
 				PED::SET_PED_CAN_BE_TARGETTED(uParam0->f_28[0], false);
 				PED::SET_PED_CONFIG_FLAG(uParam0->f_28[0], 208, true);
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_28[0], joaat("player"));
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_28[0], joaat("PLAYER"));
 				ENTITY::SET_ENTITY_COORDS(uParam0->f_28[0], Var1, true, false, false, true);
 				ENTITY::SET_ENTITY_HEADING(uParam0->f_28[0], fVar2);
 				ENTITY::FREEZE_ENTITY_POSITION(uParam0->f_28[0], true);
@@ -12183,7 +12183,7 @@ int func_281(var uParam0)//Position - 0x106E0
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(uParam0->f_28[0], true);
 				PED::SET_PED_CAN_BE_TARGETTED(uParam0->f_28[0], false);
 				PED::SET_PED_CONFIG_FLAG(uParam0->f_28[0], 208, true);
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_28[0], joaat("player"));
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_28[0], joaat("PLAYER"));
 				ENTITY::SET_ENTITY_COORDS(uParam0->f_28[0], Var1, true, false, false, true);
 				ENTITY::SET_ENTITY_HEADING(uParam0->f_28[0], fVar2);
 				ENTITY::FREEZE_ENTITY_POSITION(uParam0->f_28[0], true);

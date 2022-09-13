@@ -8365,7 +8365,7 @@ void func_122()//Position - 0xABC4
 				ENTITY::SET_ENTITY_INVINCIBLE(iLocal_264, true);
 				PED::SET_PED_CAN_BE_TARGETTED(iLocal_264, false);
 				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("ig_molly"));
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_264, joaat("player"));
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_264, joaat("PLAYER"));
 			}
 			if (func_23())
 			{
@@ -8443,7 +8443,7 @@ void func_122()//Position - 0xABC4
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_264, true);
 				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("ig_molly"));
 				ENTITY::SET_ENTITY_LOAD_COLLISION_FLAG(iLocal_264, true, 1);
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_264, joaat("player"));
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_264, joaat("PLAYER"));
 			}
 			iLocal_295 = OBJECT::CREATE_OBJECT(joaat("prop_cs_film_reel_01"), -929f, -2917f, 13f, true, true, false);
 			ENTITY::ATTACH_ENTITY_TO_ENTITY(iLocal_295, iLocal_264, PED::GET_PED_BONE_INDEX(iLocal_264, 28422), 0f, 0f, 0f, 0f, 0f, 0f, false, false, false, false, 2, true, 0);
@@ -24112,7 +24112,7 @@ void func_362()//Position - 0x20F31
 							PED::SET_PED_CAN_BE_TARGETTED(iLocal_264, false);
 							STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("cogcabrio"));
 							STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("ig_molly"));
-							PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_264, joaat("player"));
+							PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_264, joaat("PLAYER"));
 							iLocal_358 = 1;
 						}
 					}
@@ -24466,8 +24466,8 @@ void func_368()//Position - 0x21762
 					if (iLocal_406 == 0)
 					{
 						PED::ADD_RELATIONSHIP_GROUP("SecGuards", &iLocal_488);
-						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), iLocal_488);
-						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_488, joaat("player"));
+						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_488);
+						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_488, joaat("PLAYER"));
 						HUD::REQUEST_ADDITIONAL_TEXT("TREV4", 0);
 						iLocal_406 = 1;
 					}
@@ -26450,8 +26450,8 @@ void func_413()//Position - 0x24834
 	else
 	{
 		PED::ADD_RELATIONSHIP_GROUP("SecGuards", &iLocal_488);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), iLocal_488);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_488, joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_488);
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_488, joaat("PLAYER"));
 		if (Global_94618 == 1)
 		{
 			if (func_416() == 0)

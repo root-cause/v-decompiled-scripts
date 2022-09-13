@@ -3567,7 +3567,7 @@ int func_83()//Position - 0x3FD8
 	
 	if (!bLocal_51)
 	{
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, iLocal_228, joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, iLocal_228, joaat("PLAYER"));
 		if (!ENTITY::IS_ENTITY_DEAD(iLocal_59[0], false) && !ENTITY::IS_ENTITY_DEAD(iLocal_59[1], false))
 		{
 			if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(iLocal_59[0], PLAYER::PLAYER_PED_ID(), true) || ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(iLocal_59[1], PLAYER::PLAYER_PED_ID(), true))
@@ -3752,7 +3752,7 @@ int func_85()//Position - 0x454C
 			MISC::ENABLE_DISPATCH_SERVICE(3, false);
 			MISC::ENABLE_DISPATCH_SERVICE(5, false);
 			PED::ADD_RELATIONSHIP_GROUP("rghLost", &iLocal_228);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_228, joaat("player"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_228, joaat("PLAYER"));
 			iLocal_58 = PED::CREATE_PED(26, joaat("a_m_m_skidrow_01"), 973.053f, 3616.738f, 31.6181f, 110.2753f, true, true);
 			PED::SET_PED_COMPONENT_VARIATION(iLocal_58, 0, 0, 1, 0);
 			PED::SET_PED_COMPONENT_VARIATION(iLocal_58, 2, 1, 0, 0);

@@ -3554,7 +3554,7 @@ void func_82()//Position - 0x4EEF
 	if (!PED::IS_PED_INJURED(iLocal_67))
 	{
 		PED::SET_PED_KEEP_TASK(iLocal_67, true);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, iLocal_55, joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, iLocal_55, joaat("PLAYER"));
 		if (!Global_3 && !bLocal_56)
 		{
 			PED::SET_PED_CONFIG_FLAG(iLocal_67, 317, true);
@@ -5099,7 +5099,7 @@ void func_111()//Position - 0x6CAA
 			func_199();
 			func_187(10);
 		}
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_67, -2065892691);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_67, joaat("HATES_PLAYER"));
 	}
 	else
 	{
@@ -7649,7 +7649,7 @@ void func_181()//Position - 0x9B30
 					{
 						PLAYER::SET_WANTED_LEVEL_MULTIPLIER(0.2f);
 						PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_67, true);
-						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_55, joaat("player"));
+						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_55, joaat("PLAYER"));
 						iLocal_119 = OBJECT::CREATE_OBJECT(joaat("prop_ld_test_01"), Local_68, true, true, false);
 						ENTITY::SET_ENTITY_COLLISION(iLocal_119, false, false);
 						ENTITY::SET_ENTITY_VISIBLE(iLocal_119, false, false);
@@ -9072,7 +9072,7 @@ void func_199()//Position - 0xBAF1
 		if (!PED::IS_PED_INJURED(Local_109[iVar0 /*18*/]))
 		{
 			TASK::TASK_SMART_FLEE_PED(Local_109[iVar0 /*18*/], PLAYER::PLAYER_PED_ID(), 300f, -1, false, false);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_109[iVar0 /*18*/], -2065892691);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_109[iVar0 /*18*/], joaat("HATES_PLAYER"));
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_109[iVar0 /*18*/], false);
 		}
 		iVar0++;

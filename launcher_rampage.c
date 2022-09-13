@@ -13196,11 +13196,11 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					break;
 				
 				case 23:
-					func_333(uParam0, joaat("component_at_ar_barrel_01"), -1312077031, 1, 1);
+					func_333(uParam0, joaat("component_at_ar_barrel_01"), joaat("WAPBarrel"), 1, 1);
 					break;
 				
 				case 24:
-					func_333(uParam0, joaat("component_at_ar_barrel_02"), -1312077031, 2, 0);
+					func_333(uParam0, joaat("component_at_ar_barrel_02"), joaat("WAPBarrel"), 2, 0);
 					break;
 				
 				case 25:
@@ -13349,11 +13349,11 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					break;
 				
 				case 23:
-					func_333(uParam0, joaat("component_at_cr_barrel_01"), -1312077031, 1, 1);
+					func_333(uParam0, joaat("component_at_cr_barrel_01"), joaat("WAPBarrel"), 1, 1);
 					break;
 				
 				case 24:
-					func_333(uParam0, joaat("component_at_cr_barrel_02"), -1312077031, 2, 0);
+					func_333(uParam0, joaat("component_at_cr_barrel_02"), joaat("WAPBarrel"), 2, 0);
 					break;
 				
 				case 25:
@@ -13490,11 +13490,11 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					break;
 				
 				case 20:
-					func_333(uParam0, joaat("component_at_mg_barrel_01"), -1312077031, 1, 1);
+					func_333(uParam0, joaat("component_at_mg_barrel_01"), joaat("WAPBarrel"), 1, 1);
 					break;
 				
 				case 21:
-					func_333(uParam0, joaat("component_at_mg_barrel_02"), -1312077031, 2, 0);
+					func_333(uParam0, joaat("component_at_mg_barrel_02"), joaat("WAPBarrel"), 2, 0);
 					break;
 				
 				case 22:
@@ -13607,11 +13607,11 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					break;
 				
 				case 14:
-					func_333(uParam0, joaat("component_at_sr_barrel_01"), -1312077031, 1, 1);
+					func_333(uParam0, joaat("component_at_sr_barrel_01"), joaat("WAPBarrel"), 1, 1);
 					break;
 				
 				case 15:
-					func_333(uParam0, joaat("component_at_sr_barrel_02"), -1312077031, 2, 0);
+					func_333(uParam0, joaat("component_at_sr_barrel_02"), joaat("WAPBarrel"), 2, 0);
 					break;
 				
 				case 16:
@@ -13857,11 +13857,11 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					break;
 				
 				case 21:
-					func_333(uParam0, joaat("component_at_sb_barrel_01"), -1312077031, 1, 1);
+					func_333(uParam0, joaat("component_at_sb_barrel_01"), joaat("WAPBarrel"), 1, 1);
 					break;
 				
 				case 22:
-					func_333(uParam0, joaat("component_at_sb_barrel_02"), -1312077031, 2, 0);
+					func_333(uParam0, joaat("component_at_sb_barrel_02"), joaat("WAPBarrel"), 2, 0);
 					break;
 				
 				case 23:
@@ -14028,7 +14028,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 4:
-							func_333(uParam0, joaat("component_at_ar_flsh"), 953267555, 1, 0);
+							func_333(uParam0, joaat("component_at_ar_flsh"), joaat("WAPFlsh"), 1, 0);
 							break;
 						
 						case 5:
@@ -14065,7 +14065,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 3:
-							func_333(uParam0, joaat("component_at_ar_flsh"), 953267555, 1, 0);
+							func_333(uParam0, joaat("component_at_ar_flsh"), joaat("WAPFlsh"), 1, 0);
 							break;
 						
 						case 4:
@@ -14107,7 +14107,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 						break;
 					
 					case 3:
-						func_333(uParam0, joaat("component_at_ar_flsh"), 953267555, 1, 0);
+						func_333(uParam0, joaat("component_at_ar_flsh"), joaat("WAPFlsh"), 1, 0);
 						break;
 					
 					case 4:
@@ -14218,7 +14218,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 4:
-							func_333(uParam0, joaat("component_at_ar_flsh"), 953267555, 1, 0);
+							func_333(uParam0, joaat("component_at_ar_flsh"), joaat("WAPFlsh"), 1, 0);
 							break;
 						
 						case 5:
@@ -14251,7 +14251,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 3:
-							func_333(uParam0, joaat("component_at_ar_flsh"), 953267555, 1, 0);
+							func_333(uParam0, joaat("component_at_ar_flsh"), joaat("WAPFlsh"), 1, 0);
 							break;
 						
 						case 4:
@@ -14289,7 +14289,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 						break;
 					
 					case 3:
-						func_333(uParam0, joaat("component_at_ar_flsh"), 953267555, 1, 0);
+						func_333(uParam0, joaat("component_at_ar_flsh"), joaat("WAPFlsh"), 1, 0);
 						break;
 					
 					case 4:
@@ -14392,7 +14392,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 3:
-							func_333(uParam0, joaat("component_at_ar_flsh"), 953267555, 1, 0);
+							func_333(uParam0, joaat("component_at_ar_flsh"), joaat("WAPFlsh"), 1, 0);
 							break;
 						
 						case 4:
@@ -14425,7 +14425,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 2:
-							func_333(uParam0, joaat("component_at_ar_flsh"), 953267555, 1, 0);
+							func_333(uParam0, joaat("component_at_ar_flsh"), joaat("WAPFlsh"), 1, 0);
 							break;
 						
 						case 3:
@@ -14463,7 +14463,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 						break;
 					
 					case 2:
-						func_333(uParam0, joaat("component_at_ar_flsh"), 953267555, 1, 0);
+						func_333(uParam0, joaat("component_at_ar_flsh"), joaat("WAPFlsh"), 1, 0);
 						break;
 					
 					case 3:
@@ -14690,11 +14690,11 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					break;
 				
 				case 23:
-					func_333(uParam0, joaat("component_at_sc_barrel_01"), -1312077031, 1, 1);
+					func_333(uParam0, joaat("component_at_sc_barrel_01"), joaat("WAPBarrel"), 1, 1);
 					break;
 				
 				case 24:
-					func_333(uParam0, joaat("component_at_sc_barrel_02"), -1312077031, 2, 0);
+					func_333(uParam0, joaat("component_at_sc_barrel_02"), joaat("WAPBarrel"), 2, 0);
 					break;
 				
 				case 25:
@@ -14944,11 +14944,11 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					break;
 				
 				case 22:
-					func_333(uParam0, joaat("component_at_mrfl_barrel_01"), -1312077031, 1, 1);
+					func_333(uParam0, joaat("component_at_mrfl_barrel_01"), joaat("WAPBarrel"), 1, 1);
 					break;
 				
 				case 23:
-					func_333(uParam0, joaat("component_at_mrfl_barrel_02"), -1312077031, 2, 0);
+					func_333(uParam0, joaat("component_at_mrfl_barrel_02"), joaat("WAPBarrel"), 2, 0);
 					break;
 				
 				case 24:
@@ -15154,11 +15154,11 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					break;
 				
 				case 12:
-					func_333(uParam0, joaat("component_at_bp_barrel_01"), -1312077031, 1, 1);
+					func_333(uParam0, joaat("component_at_bp_barrel_01"), joaat("WAPBarrel"), 1, 1);
 					break;
 				
 				case 13:
-					func_333(uParam0, joaat("component_at_bp_barrel_02"), -1312077031, 2, 0);
+					func_333(uParam0, joaat("component_at_bp_barrel_02"), joaat("WAPBarrel"), 2, 0);
 					break;
 				
 				case 14:
@@ -15426,7 +15426,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							{
 								iVar9++;
 							}
-							else if (Var16.f_0 == -1312077031)
+							else if (Var16.f_0 == joaat("WAPBarrel"))
 							{
 								iVar10++;
 							}
@@ -15472,7 +15472,7 @@ bool func_280(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 								{
 									iVar0 = iVar9;
 								}
-								else if (Var16.f_0 == -1312077031)
+								else if (Var16.f_0 == joaat("WAPBarrel"))
 								{
 									iVar0 = iVar10;
 								}
@@ -19880,7 +19880,7 @@ void func_309(char* sParam0, char[8] cParam1, char[4] cParam2, char[4] cParam3, 
 			else if (iParam6 == 22)
 			{
 				StringCopy(&cParam1, VEHICLE::GET_DISPLAY_NAME_FROM_VEHICLE_MODEL(iParam4), 16);
-				if (MISC::IS_STRING_NULL_OR_EMPTY(&cParam1) || MISC::GET_HASH_KEY(&cParam1) == -515263000)
+				if (MISC::IS_STRING_NULL_OR_EMPTY(&cParam1) || MISC::GET_HASH_KEY(&cParam1) == joaat("carnotfound"))
 				{
 					return;
 				}
@@ -20694,23 +20694,23 @@ char* func_314(int iParam0, int iParam1)//Position - 0x1AB1A
 			return "WCT_CLIP2";
 			break;
 		
-		case 195735895:
+		case joaat("component_assaultsniper_clip_01"):
 			return "WCT_CLIP1";
 			break;
 		
-		case -890514874:
+		case joaat("component_assaultmg_clip_01"):
 			return "WCT_CLIP1";
 			break;
 		
-		case -507117574:
+		case joaat("component_assaultmg_clip_02"):
 			return "WCT_CLIP2";
 			break;
 		
-		case -124428919:
+		case joaat("component_programmablear_clip_01"):
 			return "WCT_CLIP1";
 			break;
 		
-		case 1048471894:
+		case joaat("component_programmablear_clip_02"):
 			return "WCT_CLIP2";
 			break;
 		
@@ -21782,7 +21782,7 @@ int func_326(int iParam0, int iParam1)//Position - 0x1B714
 		case joaat("weapon_assaultsniper"):
 			switch (iParam0)
 			{
-				case 195735895:
+				case joaat("component_assaultsniper_clip_01"):
 					return 95;
 					break;
 				
@@ -21803,11 +21803,11 @@ int func_326(int iParam0, int iParam1)//Position - 0x1B714
 		case joaat("weapon_assaultmg"):
 			switch (iParam0)
 			{
-				case -890514874:
+				case joaat("component_assaultmg_clip_01"):
 					return 105;
 					break;
 				
-				case -507117574:
+				case joaat("component_assaultmg_clip_02"):
 					return 106;
 					break;
 				
@@ -21824,11 +21824,11 @@ int func_326(int iParam0, int iParam1)//Position - 0x1B714
 		case joaat("weapon_programmablear"):
 			switch (iParam0)
 			{
-				case -124428919:
+				case joaat("component_programmablear_clip_01"):
 					return 109;
 					break;
 				
-				case 1048471894:
+				case joaat("component_programmablear_clip_02"):
 					return 110;
 					break;
 			}
@@ -24324,7 +24324,7 @@ void func_353(var uParam0)//Position - 0x1E7FE
 		OBJECT::SET_ACTIVATE_OBJECT_PHYSICS_AS_SOON_AS_IT_IS_UNFROZEN(uParam0->f_41[1], true);
 		ENTITY::FREEZE_ENTITY_POSITION(uParam0->f_28[0], true);
 		PED::SET_PED_CONFIG_FLAG(uParam0->f_28[0], 208, true);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_28[0], joaat("player"));
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_28[0], joaat("PLAYER"));
 	}
 	while (!func_339(&(uParam0->f_28[1]), iVar5, 909.3126f, 3643.507f, 32.2952f, 153.0127f, 0))
 	{
@@ -24351,7 +24351,7 @@ void func_353(var uParam0)//Position - 0x1E7FE
 		OBJECT::SET_ACTIVATE_OBJECT_PHYSICS_AS_SOON_AS_IT_IS_UNFROZEN(uParam0->f_41[2], true);
 		ENTITY::FREEZE_ENTITY_POSITION(uParam0->f_28[1], true);
 		PED::SET_PED_CONFIG_FLAG(uParam0->f_28[1], 208, true);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_28[1], joaat("player"));
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_28[1], joaat("PLAYER"));
 	}
 	uParam0->f_41[3] = OBJECT::GET_CLOSEST_OBJECT_OF_TYPE(909.3884f, 3643.652f, 31.699f, 1f, joaat("prop_table_03b_chr"), true, false, true);
 	if (ENTITY::DOES_ENTITY_EXIST(uParam0->f_41[3]))

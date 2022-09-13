@@ -4136,38 +4136,38 @@ void func_79()//Position - 0x4E73
 		iLocal_369 = VEHICLE::GET_VEHICLE_LAYOUT_HASH(iLocal_78);
 		switch (iLocal_369)
 		{
-			case -1965057835:
-			case 919485892:
-			case -1838563680:
-			case 1768419516:
-			case 1576485197:
-			case 929009548:
-			case -497732145:
-			case -1659990386:
-			case -662028469:
-			case 1939145032:
+			case joaat("LAYOUT_VAN"):
+			case joaat("LAYOUT_VAN_BODHI"):
+			case joaat("LAYOUT_VAN_BOXVILLE"):
+			case joaat("LAYOUT_VAN_CADDY"):
+			case joaat("LAYOUT_VAN_JOURNEY"):
+			case joaat("LAYOUT_VAN_MULE"):
+			case joaat("LAYOUT_VAN_POLICE"):
+			case joaat("LAYOUT_VAN_TRASH"):
+			case joaat("LAYOUT_4X4_DUBSTA"):
+			case joaat("LAYOUT_VAN_ROOSEVELT"):
 				sLocal_371 = "creatures@rottweiler@in_vehicle@van";
 				sLocal_370 = "van_ds_open_door_for_chop";
 				break;
 			
-			case -2066252141:
-			case 1105669833:
-			case 542797648:
-			case 68566729:
-			case -1887744178:
-			case -782720499:
-			case -1150063973:
-			case 1630950849:
-			case -463340997:
-			case 2033852426:
+			case joaat("LAYOUT_LOW"):
+			case joaat("LAYOUT_LOW_DUNE"):
+			case joaat("LAYOUT_LOW_INFERNUS"):
+			case joaat("LAYOUT_LOW_RESTRICTED"):
+			case joaat("LAYOUT_LOW_SENTINEL2"):
+			case joaat("LAYOUT_LOW_CHEETAH"):
+			case joaat("LAYOUT_LOW_BLADE"):
+			case joaat("LAYOUT_LOW_TURISMOR"):
+			case joaat("LAYOUT_LOW_FURORE"):
+			case joaat("LAYOUT_LOW_OSIRIS"):
 				sLocal_371 = "creatures@rottweiler@in_vehicle@low_car";
 				sLocal_370 = "low_ds_open_door_for_chop";
 				break;
 			
-			case 434478421:
-			case 1816176348:
-			case 1710903184:
-			case 1663892749:
+			case joaat("LAYOUT_4X4"):
+			case joaat("LAYOUT_BISON"):
+			case joaat("LAYOUT_RANGER"):
+			case joaat("LAYOUT_RANGER_SWAT"):
 				sLocal_371 = "creatures@rottweiler@in_vehicle@4x4";
 				sLocal_370 = "std_ds_open_door_for_chop";
 				break;
@@ -8632,10 +8632,10 @@ void func_156()//Position - 0xAF8A
 	{
 		PED::ADD_RELATIONSHIP_GROUP("rel_group_chop", &iLocal_71);
 		iLocal_72 = 1;
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), iLocal_71);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_71, joaat("player"));
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, joaat("cat"), iLocal_71);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, iLocal_71, joaat("cat"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), iLocal_71);
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_71, joaat("PLAYER"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, joaat("CAT"), iLocal_71);
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, iLocal_71, joaat("CAT"));
 		PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_69, iLocal_71);
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_69, true);
 		PED::SET_PED_ALLOW_VEHICLES_OVERRIDE(iLocal_69, true);

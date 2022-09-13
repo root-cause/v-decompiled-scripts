@@ -16510,14 +16510,14 @@ void func_266()//Position - 0x1723F
 		func_270(4, 0);
 		func_270(12, 0);
 		PED::ADD_RELATIONSHIP_GROUP("MarineGroupHash", &iLocal_44);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_44, joaat("player"));
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("army"), joaat("player"));
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_44, joaat("army"));
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("army"), iLocal_44);
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_44, joaat("PLAYER"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("ARMY"), joaat("PLAYER"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_44, joaat("ARMY"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("ARMY"), iLocal_44);
 		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("COP"), iLocal_44);
 		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_44, joaat("COP"));
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("COP"), joaat("army"));
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("army"), joaat("COP"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("COP"), joaat("ARMY"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("ARMY"), joaat("COP"));
 		if (func_283())
 		{
 			if (Global_94618 == 1)

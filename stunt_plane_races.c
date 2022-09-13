@@ -21649,7 +21649,7 @@ char* func_507(int iParam0, bool bParam1)//Position - 0x1A50B
 			return "WT_RAGE";
 			break;
 		
-		case -159960575:
+		case joaat("vehicle_weapon_torpedo"):
 			return "WT_VEH_WEP";
 			break;
 		

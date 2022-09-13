@@ -16291,8 +16291,8 @@ void func_318(var uParam0, var uParam1)//Position - 0x124AB
 			PED::ADD_RELATIONSHIP_GROUP("Target", &iLocal_983);
 			iLocal_973 = 1;
 		}
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_983, joaat("player"));
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), iLocal_983);
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_983, joaat("PLAYER"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_983);
 		PED::SET_PED_RELATIONSHIP_GROUP_HASH(*uParam1, iLocal_983);
 		if (uParam0->f_268)
 		{

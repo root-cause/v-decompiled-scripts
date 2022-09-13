@@ -684,8 +684,8 @@ void func_9()//Position - 0x391
 						WEAPON::REMOVE_ALL_PED_WEAPONS(Local_231.f_3, true);
 					}
 					PATHFIND::SET_ROADS_IN_ANGLED_AREA(-1035.326f, -2703.305f, 12.8004f, -1056.08f, -2568.675f, 12.8181f, 125f, true, false, true);
-					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(0, 1166638144, Local_231.f_413);
-					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(0, -1865950624, Local_231.f_413);
+					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(0, joaat("AMBIENT_GANG_FAMILY"), Local_231.f_413);
+					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(0, joaat("AMBIENT_GANG_LOST"), Local_231.f_413);
 					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(0, joaat("AMBIENT_GANG_MEXICAN"), Local_231.f_413);
 					STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(func_280(0));
 					func_240(&Local_231, 1, 0);
@@ -1645,7 +1645,7 @@ void func_21(var uParam0)//Position - 0x20D0
 				PED::RESET_PED_LAST_VEHICLE(uParam0->f_3);
 			}
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(uParam0->f_3, false);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, uParam0->f_413, joaat("player"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, uParam0->f_413, joaat("PLAYER"));
 			if (ENTITY::IS_ENTITY_PLAYING_ANIM(uParam0->f_3, "oddjobs@towingcome_here", "come_here_idle_a", 3))
 			{
 				TASK::STOP_ANIM_TASK(uParam0->f_3, "oddjobs@towingcome_here", "come_here_idle_a", -8f);
@@ -5046,7 +5046,7 @@ void func_167()//Position - 0x5E2B
 						TASK::CLOSE_SEQUENCE_TASK(iLocal_245);
 						TASK::TASK_PERFORM_SEQUENCE(Local_231.f_3, iLocal_245);
 						TASK::CLEAR_SEQUENCE_TASK(&iLocal_245);
-						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, Local_231.f_413, joaat("player"));
+						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, Local_231.f_413, joaat("PLAYER"));
 						PED::SET_PED_KEEP_TASK(Local_231.f_3, true);
 						bLocal_254 = true;
 						if (HUD::DOES_BLIP_EXIST(Local_231.f_9) && HUD::GET_BLIP_ALPHA(Local_231.f_9) > 0)
@@ -7916,7 +7916,7 @@ int func_278(var uParam0, struct<3> Param1, struct<3> Param2, char* sParam3, int
 			PED::SET_PED_CONFIG_FLAG(uParam0->f_3, 177, true);
 			PED::SET_PED_CONFIG_FLAG(uParam0->f_3, 116, false);
 			PED::ADD_RELATIONSHIP_GROUP("TAXI_Passenger", &(uParam0->f_413));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, uParam0->f_413, joaat("player"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, uParam0->f_413, joaat("PLAYER"));
 			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, uParam0->f_413, joaat("COP"));
 			PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_3, uParam0->f_413);
 			return 1;

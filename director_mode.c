@@ -4521,7 +4521,7 @@ void func_27()//Position - 0x4974
 	{
 		PED::SET_CAN_ATTACK_FRIENDLY(PLAYER::PLAYER_PED_ID(), true, true);
 	}
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(PLAYER::PLAYER_PED_ID(), joaat("player"));
+	PED::SET_PED_RELATIONSHIP_GROUP_HASH(PLAYER::PLAYER_PED_ID(), joaat("PLAYER"));
 	func_55();
 	func_47(0);
 	if (!bLocal_451 && iLocal_338 != 3)
@@ -6369,7 +6369,7 @@ int func_72(int iParam0)//Position - 0x660B
 		case joaat("weapon_briefcase"):
 		case joaat("weapon_briefcase_02"):
 		case joaat("gadget_parachute"):
-		case 1778781596:
+		case joaat("gadget_jetpack"):
 		case joaat("AMMO_RPG"):
 		case joaat("AMMO_TANK"):
 		case joaat("AMMO_SPACE_ROCKET"):
@@ -6389,7 +6389,7 @@ int func_72(int iParam0)//Position - 0x660B
 		case joaat("weapon_garbagebag"):
 		case joaat("weapon_handcuffs"):
 		case joaat("weapon_snowball"):
-		case -159960575:
+		case joaat("vehicle_weapon_torpedo"):
 		case -1443982089:
 		case -1578596338:
 		case joaat("weapon_assaultrifle_mk2"):
@@ -6644,7 +6644,7 @@ int func_73(int iParam0)//Position - 0x678D
 			break;
 		
 		case 57:
-			return 1778781596;
+			return joaat("gadget_jetpack");
 			break;
 		
 		case 58:
@@ -6820,7 +6820,7 @@ int func_73(int iParam0)//Position - 0x678D
 			break;
 		
 		case 101:
-			return -159960575;
+			return joaat("vehicle_weapon_torpedo");
 			break;
 		
 		case 102:
@@ -20794,7 +20794,7 @@ int func_335(int iParam0)//Position - 0x18F69
 {
 	switch (VEHICLE::GET_VEHICLE_LAYOUT_HASH(iParam0))
 	{
-		case -621749236:
+		case joaat("LAYOUT_LOW_RACER_FORMULA"):
 			return 1;
 			break;
 	}
@@ -20852,60 +20852,60 @@ int func_339(int iParam0)//Position - 0x1905E
 {
 	switch (VEHICLE::GET_VEHICLE_LAYOUT_HASH(iParam0))
 	{
-		case -2066252141:
-		case 542797648:
-		case 1105669833:
-		case 925191417:
-		case -782720499:
-		case -38413156:
-		case 68566729:
-		case -1887744178:
-		case 1630950849:
-		case -1150063973:
-		case -463340997:
-		case 2033852426:
-		case 1697345049:
-		case -635697407:
-		case -1453479140:
-		case 165348604:
-		case 2013836096:
-		case 1837596901:
-		case 1933394722:
-		case 2071837743:
-		case 2130662788:
-		case -1546132012:
-		case 1990288194:
-		case 1467385374:
-		case 1410462333:
-		case -1509158920:
-		case 1938699760:
-		case 1192783831:
-		case -1658004040:
-		case -317944664:
-		case 570040040:
-		case 1212243433:
-		case -193022774:
-		case 1032436035:
-		case -1944139668:
-		case 510359473:
-		case -988377294:
-		case 327329668:
-		case 1240573865:
-		case 2110311226:
-		case 986556497:
-		case -1396255064:
-		case -1525328744:
+		case joaat("LAYOUT_LOW"):
+		case joaat("LAYOUT_LOW_INFERNUS"):
+		case joaat("LAYOUT_LOW_DUNE"):
+		case joaat("LAYOUT_LOW_BFINJECTION"):
+		case joaat("LAYOUT_LOW_CHEETAH"):
+		case joaat("LAYOUT_LOW_ENTITYXF"):
+		case joaat("LAYOUT_LOW_RESTRICTED"):
+		case joaat("LAYOUT_LOW_SENTINEL2"):
+		case joaat("LAYOUT_LOW_TURISMOR"):
+		case joaat("LAYOUT_LOW_BLADE"):
+		case joaat("LAYOUT_LOW_FURORE"):
+		case joaat("LAYOUT_LOW_OSIRIS"):
+		case joaat("LAYOUT_LOW_LOWRIDER"):
+		case joaat("LAYOUT_LOW_LOWRIDER_FACTION"):
+		case joaat("LAYOUT_LOW_VERLIERER"):
+		case joaat("LAYOUT_LOW_LOWRIDER_FACTION3"):
+		case joaat("LAYOUT_LOW_LOWRIDER2_FACTION3"):
+		case joaat("LAYOUT_LOW_LOWRIDER2"):
+		case joaat("LAYOUT_LOW_PROTO"):
+		case joaat("LAYOUT_LOW_LE7B"):
+		case joaat("LAYOUT_LOW_RUINER2"):
+		case joaat("LAYOUT_LOW_INFERNUS2"):
+		case joaat("LAYOUT_LOW_RUSTON"):
+		case joaat("LAYOUT_LOW_TAMPA3"):
+		case joaat("LAYOUT_LOW_TORERO"):
+		case joaat("LAYOUT_LOW_VISIONE"):
+		case joaat("LAYOUT_LOW_VIGILANTE"):
+		case joaat("LAYOUT_LOW_SC1"):
+		case joaat("LAYOUT_LOW_STROMBERG"):
+		case joaat("LAYOUT_LOW_MICHELLI"):
+		case joaat("LAYOUT_LOW_TEZERACT"):
+		case joaat("LAYOUT_LOW_DOMINATOR3"):
+		case joaat("LAYOUT_LOW_TAIPAN"):
+		case joaat("LAYOUT_LOW_RESTRICTED_SCRAMJET"):
+		case joaat("LAYOUT_LOW_RESTRICTED_SWINGER"):
+		case joaat("LAYOUT_LOW_ITALIGTO"):
+		case joaat("LAYOUT_LOW_RESTRICTED_SCHLAGEN"):
+		case joaat("LAYOUT_LOW_ISSI7"):
+		case joaat("LAYOUT_LOW_RESTRICTED_GAUNTLET3"):
+		case joaat("LAYOUT_LOW_RESTRICTED_EMERUS"):
+		case joaat("LAYOUT_LOW_NEO"):
+		case joaat("LAYOUT_LOW_KRIEGER"):
+		case joaat("LAYOUT_LOW_S80"):
 		case joaat("LAYOUT_LOW_TOREADOR"):
-		case 1751095603:
-		case -3484518:
-		case -508485403:
-		case -1975786336:
-		case 1735755507:
-		case 784822781:
-		case -1297908787:
-		case 1509896619:
-		case -2093548880:
-		case -1174301217:
+		case joaat("LAYOUT_LOW_PEYOTE3"):
+		case joaat("LAYOUT_LOW_TIGON"):
+		case joaat("LAYOUT_LOW_CALICO"):
+		case joaat("LAYOUT_LOW_RESTRICTED_DOMINATOR8"):
+		case joaat("LAYOUT_LOW_RESTRICTED_EUROS"):
+		case joaat("LAYOUT_LOW_RESTRICTED_RT3000"):
+		case joaat("LAYOUT_LOW_ZR350"):
+		case joaat("LAYOUT_LOW_RESTRICTED_POSTLUDE"):
+		case joaat("LAYOUT_LOW_RESTRICTED_TENF2"):
+		case joaat("LAYOUT_LOW_TORERO2"):
 			return 1;
 			break;
 	}
@@ -21430,35 +21430,35 @@ int func_346(int iParam0)//Position - 0x19B37
 {
 	switch (VEHICLE::GET_VEHICLE_LAYOUT_HASH(iParam0))
 	{
-		case 919485892:
-		case 1816176348:
-		case -1965057835:
-		case -1838563680:
-		case 1768419516:
-		case 1576485197:
-		case 929009548:
-		case -497732145:
-		case -1856101214:
-		case -1659990386:
-		case 436153147:
-		case 1939145032:
-		case -399604638:
-		case -511236551:
-		case -351477052:
-		case -400105540:
-		case 1646528199:
-		case 704448249:
-		case 2061658035:
-		case -1466323828:
-		case 854722526:
-		case -1956693798:
-		case 1994291498:
-		case 954521785:
-		case 922754559:
-		case -298417810:
-		case -1852541008:
-		case -605059493:
-		case -991881300:
+		case joaat("LAYOUT_VAN_BODHI"):
+		case joaat("LAYOUT_BISON"):
+		case joaat("LAYOUT_VAN"):
+		case joaat("LAYOUT_VAN_BOXVILLE"):
+		case joaat("LAYOUT_VAN_CADDY"):
+		case joaat("LAYOUT_VAN_JOURNEY"):
+		case joaat("LAYOUT_VAN_MULE"):
+		case joaat("LAYOUT_VAN_POLICE"):
+		case joaat("LAYOUT_VAN_PONY"):
+		case joaat("LAYOUT_VAN_TRASH"):
+		case joaat("LAYOUT_VAN_ARMORED"):
+		case joaat("LAYOUT_VAN_ROOSEVELT"):
+		case joaat("LAYOUT_VAN_RUMPO3"):
+		case joaat("LAYOUT_TRUCK_PHANTOMBULL"):
+		case joaat("LAYOUT_TRUCK_WASTELANDER"):
+		case joaat("LAYOUT_VAN_CADDY3"):
+		case joaat("LAYOUT_RANGER_RIATA"):
+		case joaat("LAYOUT_RANGER_PATRIOT2"):
+		case joaat("LAYOUT_TRUCK_POUNDER2"):
+		case joaat("LAYOUT_VAN_MULE4"):
+		case joaat("LAYOUT_VAN_SPEEDO4"):
+		case joaat("LAYOUT_VAN_FREECRAWLER"):
+		case joaat("LAYOUT_TRUCK_TERBYTE"):
+		case joaat("LAYOUT_RANGER_TOROS"):
+		case joaat("LAYOUT_VAN_BRUTUS"):
+		case joaat("LAYOUT_RANGER_CARACARA2"):
+		case joaat("LAYOUT_RANGER_NOVAK"):
+		case joaat("LAYOUT_RANGER_EVERON"):
+		case joaat("LAYOUT_RANGER_SEMINOLE2"):
 		case joaat("LAYOUT_JEEP_WINKY"):
 		case joaat("LAYOUT_SLAMTRUCK"):
 		case joaat("LAYOUT_TRUCK_VETIR"):
@@ -71134,10 +71134,10 @@ int func_632(int iParam0, int iParam1, int iParam2)//Position - 0x597CA
 					return 1;
 					break;
 				
-				case 196632624:
-				case -1644428107:
-				case 1108198688:
-				case 810099095:
+				case joaat("MP_Award_M_Tshirt_000"):
+				case joaat("MP_Award_M_Tshirt_001"):
+				case joaat("MP_Award_F_Tshirt_000"):
+				case joaat("MP_Award_F_Tshirt_001"):
 					return 1;
 					break;
 				
@@ -71152,10 +71152,10 @@ int func_632(int iParam0, int iParam1, int iParam2)//Position - 0x597CA
 					return 1;
 					break;
 				
-				case 1980445908:
-				case -1882429354:
-				case -1235341889:
-				case -1544517404:
+				case joaat("MP_Award_M_Tshirt_002"):
+				case joaat("MP_Award_M_Tshirt_003"):
+				case joaat("MP_Award_F_Tshirt_002"):
+				case joaat("MP_Award_F_Tshirt_003"):
 					return 1;
 					break;
 				
@@ -165774,39 +165774,39 @@ void func_1425(int iParam0)//Position - 0xD82E8
 	switch (iParam0)
 	{
 		case 0:
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, 1166638144, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("player"), -1865950624);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, -1865950624, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95444, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95444);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95445, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95445);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95446, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95446);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("AMBIENT_GANG_FAMILY"), joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("PLAYER"), joaat("AMBIENT_GANG_LOST"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("AMBIENT_GANG_LOST"), joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95444, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95444);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95445, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95445);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95446, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95446);
 			break;
 		
 		case 1:
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, 1166638144, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("player"), -1865950624);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, -1865950624, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95444, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95444);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95445, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95445);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95446, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95446);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("AMBIENT_GANG_FAMILY"), joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("PLAYER"), joaat("AMBIENT_GANG_LOST"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("AMBIENT_GANG_LOST"), joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95444, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95444);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95445, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95445);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95446, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95446);
 			break;
 		
 		case 2:
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, 1166638144, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), -1865950624);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, -1865950624, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95444, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95444);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95445, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95445);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95446, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95446);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("AMBIENT_GANG_FAMILY"), joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), joaat("AMBIENT_GANG_LOST"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("AMBIENT_GANG_LOST"), joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95444, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95444);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95445, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95445);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95446, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95446);
 			break;
 		
 		default:

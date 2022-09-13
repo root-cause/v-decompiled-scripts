@@ -16086,10 +16086,10 @@ int func_170(int iParam0, int iParam1, int iParam2)//Position - 0x13E09
 					return 1;
 					break;
 				
-				case 196632624:
-				case -1644428107:
-				case 1108198688:
-				case 810099095:
+				case joaat("MP_Award_M_Tshirt_000"):
+				case joaat("MP_Award_M_Tshirt_001"):
+				case joaat("MP_Award_F_Tshirt_000"):
+				case joaat("MP_Award_F_Tshirt_001"):
 					return 1;
 					break;
 				
@@ -16104,10 +16104,10 @@ int func_170(int iParam0, int iParam1, int iParam2)//Position - 0x13E09
 					return 1;
 					break;
 				
-				case 1980445908:
-				case -1882429354:
-				case -1235341889:
-				case -1544517404:
+				case joaat("MP_Award_M_Tshirt_002"):
+				case joaat("MP_Award_M_Tshirt_003"):
+				case joaat("MP_Award_F_Tshirt_002"):
+				case joaat("MP_Award_F_Tshirt_003"):
 					return 1;
 					break;
 				
@@ -102831,7 +102831,7 @@ int func_760(int iParam0)//Position - 0x84103
 	int iVar1;
 	
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0);
-	switch (PED::GET_RELATIONSHIP_BETWEEN_GROUPS(iVar0, joaat("player")))
+	switch (PED::GET_RELATIONSHIP_BETWEEN_GROUPS(iVar0, joaat("PLAYER")))
 	{
 		case 3:
 		case 5:
@@ -112382,7 +112382,7 @@ Vector3 func_1013(int iParam0)//Position - 0x91AEF
 			return 725.1831f, -1089.349f, 21.1692f;
 			break;
 		
-		case 1131590004:
+		case joaat("MP_GAR_PNS_3"):
 			return -1164.887f, -2011.105f, 12.25371f;
 			break;
 		
@@ -112394,7 +112394,7 @@ Vector3 func_1013(int iParam0)//Position - 0x91AEF
 			return 106.28f, 6620.01f, 32.12f;
 			break;
 		
-		case -866958545:
+		case joaat("MP_GAR_PNS_6"):
 			return 1182.65f, 2641.9f, 38.05f;
 			break;
 	}
@@ -112447,9 +112447,9 @@ void func_1014(var uParam0, int iParam1)//Position - 0x91BA3
 			break;
 		
 		case 2:
-		case 1131590004:
+		case joaat("MP_GAR_PNS_3"):
 			*uParam0 = 99;
-			uParam0->f_1 = 1131590004;
+			uParam0->f_1 = joaat("MP_GAR_PNS_3");
 			uParam0->f_2 = 2;
 			uParam0->f_3 = { -1164.887f, -2011.105f, 12.25371f };
 			uParam0->f_7 = 0;
@@ -112507,9 +112507,9 @@ void func_1014(var uParam0, int iParam1)//Position - 0x91BA3
 			break;
 		
 		case 5:
-		case -866958545:
+		case joaat("MP_GAR_PNS_6"):
 			*uParam0 = 99;
-			uParam0->f_1 = -866958545;
+			uParam0->f_1 = joaat("MP_GAR_PNS_6");
 			uParam0->f_2 = 5;
 			uParam0->f_3 = { 1182.65f, 2641.9f, 38.05f };
 			uParam0->f_7 = 0;

@@ -20829,12 +20829,12 @@ int func_294(int iParam0)//Position - 0x21B50
 		case joaat("pickup_weapon_advancedrifle"):
 		case joaat("pickup_weapon_mg"):
 		case joaat("pickup_weapon_combatmg"):
-		case 975696266:
+		case joaat("pickup_weapon_assaultmg"):
 		case joaat("pickup_weapon_pumpshotgun"):
 		case joaat("pickup_weapon_sawnoffshotgun"):
 		case joaat("pickup_weapon_assaultshotgun"):
 		case joaat("pickup_weapon_sniperrifle"):
-		case 1061513000:
+		case joaat("pickup_weapon_assaultsniper"):
 		case joaat("pickup_weapon_heavysniper"):
 		case joaat("pickup_weapon_grenadelauncher"):
 		case joaat("pickup_weapon_rpg"):
@@ -20844,8 +20844,8 @@ int func_294(int iParam0)//Position - 0x21B50
 		case joaat("pickup_weapon_stickybomb"):
 		case joaat("pickup_weapon_molotov"):
 		case joaat("pickup_weapon_stungun"):
-		case -660082779:
-		case -695202657:
+		case joaat("pickup_weapon_rubbergun"):
+		case joaat("pickup_weapon_programmablear"):
 		case joaat("pickup_weapon_fireextinguisher"):
 		case joaat("pickup_weapon_petrolcan"):
 		case joaat("pickup_weapon_loudhailer"):
@@ -20873,12 +20873,12 @@ int func_294(int iParam0)//Position - 0x21B50
 		case joaat("pickup_ammo_grenadelauncher"):
 		case joaat("pickup_ammo_rpg"):
 		case joaat("pickup_ammo_minigun"):
-		case 610630637:
-		case -1883407879:
+		case joaat("pickup_ammo_rubbergun"):
+		case joaat("pickup_ammo_harpoon"):
 		case joaat("pickup_ammo_flaregun"):
 		case joaat("pickup_ammo_firework"):
-		case -1892342586:
-		case 2001257022:
+		case joaat("pickup_ammo_amrifle"):
+		case joaat("pickup_ammo_crossbow"):
 		case joaat("pickup_vehicle_health_standard"):
 		case joaat("pickup_vehicle_health_standard_low_glow"):
 		case joaat("pickup_vehicle_armour_standard"):
@@ -20956,7 +20956,7 @@ int func_294(int iParam0)//Position - 0x21B50
 		case joaat("pickup_weapon_doubleaction"):
 		case joaat("pickup_weapon_stone_hatchet"):
 		case joaat("PICKUP_WEAPON_NAVYREVOLVER"):
-		case -1140081444:
+		case joaat("pickup_weapon_policerifle"):
 		case joaat("PICKUP_WEAPON_COMBATSHOTGUN"):
 		case joaat("pickup_weapon_raycarbine"):
 		case joaat("pickup_weapon_rayminigun"):

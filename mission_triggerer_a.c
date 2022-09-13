@@ -11147,8 +11147,8 @@ void func_215()//Position - 0xD564
 
 void func_216(int iParam0, int iParam1)//Position - 0xD593
 {
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iParam1, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), iParam1);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iParam1, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), iParam1);
 	if (ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(iParam0, false))
@@ -50155,10 +50155,10 @@ int func_372(int iParam0, int iParam1, int iParam2)//Position - 0x38DF5
 					return 1;
 					break;
 				
-				case 196632624:
-				case -1644428107:
-				case 1108198688:
-				case 810099095:
+				case joaat("MP_Award_M_Tshirt_000"):
+				case joaat("MP_Award_M_Tshirt_001"):
+				case joaat("MP_Award_F_Tshirt_000"):
+				case joaat("MP_Award_F_Tshirt_001"):
 					return 1;
 					break;
 				
@@ -50173,10 +50173,10 @@ int func_372(int iParam0, int iParam1, int iParam2)//Position - 0x38DF5
 					return 1;
 					break;
 				
-				case 1980445908:
-				case -1882429354:
-				case -1235341889:
-				case -1544517404:
+				case joaat("MP_Award_M_Tshirt_002"):
+				case joaat("MP_Award_M_Tshirt_003"):
+				case joaat("MP_Award_F_Tshirt_002"):
+				case joaat("MP_Award_F_Tshirt_003"):
 					return 1;
 					break;
 				
@@ -105595,8 +105595,8 @@ void func_729()//Position - 0x7D7EB
 	MISC::CLEAR_AREA(func_151(182, 0), 30f, true, false, false, false);
 	PED::REMOVE_RELATIONSHIP_GROUP(Global_96938.f_42);
 	PED::ADD_RELATIONSHIP_GROUP("FAMILY_3_TS_RELGROUP", &(Global_96938.f_42));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_96938.f_42, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_96938.f_42);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_96938.f_42, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_96938.f_42);
 	switch (func_152())
 	{
 		case 1:

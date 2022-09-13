@@ -1276,7 +1276,7 @@ void func_37()//Position - 0xFB7
 		{
 			TASK::TASK_STAND_STILL(Global_100162, -1);
 		}
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_100162, joaat("player"));
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_100162, joaat("PLAYER"));
 	}
 	ENTITY::SET_ENTITY_AS_MISSION_ENTITY(Global_100162, true, true);
 	PED::SET_PED_CONFIG_FLAG(Global_100162, 132, true);

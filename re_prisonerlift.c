@@ -3242,7 +3242,7 @@ int func_65()//Position - 0x3ABE
 				{
 					if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(func_66(iVar0), PLAYER::PLAYER_PED_ID(), false))
 					{
-						if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(func_66(iVar0))) == -1865950624)
+						if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(func_66(iVar0))) == joaat("AMBIENT_GANG_LOST"))
 						{
 							return 1;
 						}
@@ -4633,8 +4633,8 @@ void func_108()//Position - 0x5439
 		PED::ADD_SCENARIO_BLOCKING_AREA(Local_68 - Vector(50f, 50f, 50f), Local_68 + Vector(50f, 50f, 50f), false, true, true, true);
 		PED::ADD_SCENARIO_BLOCKING_AREA(Local_74 - Vector(10f, 10f, 10f), Local_74 + Vector(10f, 10f, 10f), false, true, true, true);
 		VEHICLE::SET_ALL_VEHICLE_GENERATORS_ACTIVE_IN_AREA(Local_68 - Vector(10f, 10f, 10f), Local_68 + Vector(10f, 10f, 10f), false, true);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_65, -1865950624);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, -1865950624, iLocal_65);
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_65, joaat("AMBIENT_GANG_LOST"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("AMBIENT_GANG_LOST"), iLocal_65);
 		PED::SET_PED_COMBAT_ATTRIBUTES(iLocal_64, 17, true);
 		iLocal_69 = VEHICLE::CREATE_VEHICLE(joaat("sheriff"), 1524.332f, 2173.347f, 79.0619f, 201.6806f, true, true, false);
 		VEHICLE::SET_VEHICLE_ENGINE_HEALTH(iLocal_69, 0f);

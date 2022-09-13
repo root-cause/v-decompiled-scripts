@@ -5870,7 +5870,7 @@ void func_144()//Position - 0x6490
 	}
 	WEAPON::GIVE_WEAPON_TO_PED(iLocal_50[0], joaat("weapon_pistol"), -1, true, true);
 	WEAPON::GIVE_WEAPON_TO_PED(iLocal_50[1], joaat("weapon_pistol"), -1, false, true);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_119, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_119, joaat("PLAYER"));
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_119, joaat("COP"));
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("COP"), iLocal_119);
 	iLocal_53 = VEHICLE::CREATE_VEHICLE(iLocal_57, Local_54, fLocal_55, true, true, false);

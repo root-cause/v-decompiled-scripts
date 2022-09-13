@@ -39239,7 +39239,7 @@ char* func_314(int iParam0, int iParam1, int iParam2)//Position - 0x28D27
 			return "CEXT_PACTEXT";
 			break;
 		
-		case -660082779:
+		case joaat("pickup_weapon_rubbergun"):
 			return "WT_RUBB";
 			break;
 		
@@ -40411,7 +40411,7 @@ char* func_315(int iParam0, bool bParam1)//Position - 0x29400
 			return "WT_RAGE";
 			break;
 		
-		case -159960575:
+		case joaat("vehicle_weapon_torpedo"):
 			return "WT_VEH_WEP";
 			break;
 		
@@ -40916,7 +40916,7 @@ int func_319(int iParam0, int iParam1, int iParam2)//Position - 0x2A3A7
 		case joaat("pickup_vehicle_weapon_smg"):
 		case joaat("pickup_weapon_assaultsmg"):
 		case joaat("pickup_vehicle_weapon_assaultsmg"):
-		case -660082779:
+		case joaat("pickup_weapon_rubbergun"):
 		case joaat("pickup_weapon_combatpdw"):
 		case joaat("pickup_weapon_machinepistol"):
 		case joaat("pickup_weapon_minismg"):
@@ -40988,7 +40988,7 @@ int func_319(int iParam0, int iParam1, int iParam2)//Position - 0x2A3A7
 		case joaat("pickup_weapon_carbinerifle_mk2"):
 		case joaat("pickup_weapon_bullpuprifle_mk2"):
 		case joaat("pickup_weapon_specialcarbine_mk2"):
-		case -1140081444:
+		case joaat("pickup_weapon_policerifle"):
 		case joaat("PICKUP_WEAPON_MILITARYRIFLE"):
 		case joaat("PICKUP_WEAPON_TACTICALRIFLE"):
 		case joaat("PICKUP_WEAPON_HEAVYRIFLE"):
@@ -41203,7 +41203,7 @@ int func_321(int iParam0)//Position - 0x2A8A3
 	}
 	else if (iVar0 == joaat("pickup_vehicle_custom_script") && Global_4980736.f_69361[iParam0 /*151*/].f_25 != -1)
 	{
-		iVar1 = -159960575;
+		iVar1 = joaat("vehicle_weapon_torpedo");
 	}
 	else
 	{
@@ -41528,7 +41528,7 @@ int func_326(int iParam0)//Position - 0x2AC5D
 			return joaat("pickup_weapon_pistol50");
 		
 		case joaat("weapon_assaultmg"):
-			return 975696266;
+			return joaat("pickup_weapon_assaultmg");
 		
 		case joaat("weapon_heavyrifle"):
 			return joaat("PICKUP_WEAPON_HEAVYRIFLE");

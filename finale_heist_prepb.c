@@ -398,8 +398,8 @@ void __EntryFunction__()//Position - 0x0
 	PED::ADD_RELATIONSHIP_GROUP("WorkerPedMainGroup", &iLocal_264);
 	PED::ADD_RELATIONSHIP_GROUP("GuardMainGroup", &iLocal_265);
 	VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(joaat("packer"), true);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_265, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_264, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_265, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_264, joaat("PLAYER"));
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_265, iLocal_264);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_264, iLocal_265);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_265, joaat("COP"));
@@ -13045,7 +13045,7 @@ void func_207(int iParam0)//Position - 0x105FE
 			}
 			if (iLocal_58 == 0)
 			{
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_264, joaat("player"));
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_264, joaat("PLAYER"));
 				iLocal_58++;
 			}
 			if (iLocal_58 == 1)
@@ -13191,7 +13191,7 @@ void func_207(int iParam0)//Position - 0x105FE
 			}
 			if (iLocal_58 == 0)
 			{
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_264, joaat("player"));
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_264, joaat("PLAYER"));
 				iLocal_58++;
 			}
 			if (iLocal_58 == 1)
@@ -13417,7 +13417,7 @@ void func_207(int iParam0)//Position - 0x105FE
 			}
 			if (iLocal_58 == 0)
 			{
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_264, joaat("player"));
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_264, joaat("PLAYER"));
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iParam0, true);
 				iLocal_58++;
 			}

@@ -1371,8 +1371,8 @@ int func_28(int iParam0, int iParam1)//Position - 0xBB5
 							}
 							iVar17++;
 						}
-						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_279, joaat("player"));
-						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), iLocal_279);
+						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_279, joaat("PLAYER"));
+						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_279);
 						TASK::TASK_COMBAT_HATED_TARGETS_AROUND_PED_TIMED((*iParam0)[iVar0], 25f, -1, 0);
 						PED::SET_PED_KEEP_TASK((*iParam0)[iVar0], true);
 						ENTITY::CLEAR_ENTITY_LAST_DAMAGE_ENTITY((*iParam0)[iVar0]);
@@ -1383,16 +1383,16 @@ int func_28(int iParam0, int iParam1)//Position - 0xBB5
 				case 11:
 					if (SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), Local_283) > 50f && SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), ENTITY::GET_ENTITY_COORDS((*iParam0)[iVar0], true)) > 50f)
 					{
-						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_279, joaat("player"));
-						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("player"), iLocal_279);
+						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_279, joaat("PLAYER"));
+						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("PLAYER"), iLocal_279);
 						TASK::CLEAR_PED_TASKS((*iParam0)[iVar0]);
 						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD((*iParam0)[iVar0], Local_283 + Local_285[iVar0 /*3*/], 0.5f, -1, 0.25f, false, 40000f);
 						(*iParam1)[iVar0] = 1;
 					}
 					if (func_29((*iParam0)[iVar0], 15f))
 					{
-						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_279, joaat("player"));
-						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("player"), iLocal_279);
+						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_279, joaat("PLAYER"));
+						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("PLAYER"), iLocal_279);
 						TASK::CLEAR_PED_TASKS((*iParam0)[iVar0]);
 						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD((*iParam0)[iVar0], Local_283 + Local_285[iVar0 /*3*/], 0.5f, -1, 0.25f, false, 40000f);
 						(*iParam1)[iVar0] = 1;
@@ -2169,8 +2169,8 @@ void func_56()//Position - 0x2068
 		}
 		iVar0++;
 	}
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_279, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("player"), iLocal_279);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_279, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("PLAYER"), iLocal_279);
 }
 
 void func_57()//Position - 0x22CC

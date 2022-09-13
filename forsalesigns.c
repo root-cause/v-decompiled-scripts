@@ -1424,7 +1424,7 @@ int func_52()//Position - 0x14B8
 				PED::SET_PED_MONEY(iLocal_44, 0);
 				PED::SET_PED_CAN_BE_TARGETTED(iLocal_44, false);
 				PED::SET_PED_NAME_DEBUG(iLocal_44, "POSTJOSH");
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_44, joaat("player"));
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_44, joaat("PLAYER"));
 				func_53(&uLocal_45, 5, iLocal_44, "JOSH", 1, 1);
 				return 1;
 			}

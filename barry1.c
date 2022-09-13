@@ -41792,7 +41792,7 @@ int func_362(var uParam0, struct<3> Param1, int iParam2, bool bParam3)//Position
 	TASK::CLEAR_PED_TASKS_IMMEDIATELY(uParam0->f_2);
 	func_278(uParam0->f_2, Param1);
 	func_364(uParam0->f_2);
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_2, -2065892691);
+	PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_2, joaat("HATES_PLAYER"));
 	PED::SET_PED_CONFIG_FLAG(uParam0->f_2, 122, true);
 	AUDIO::STOP_PED_SPEAKING(uParam0->f_2, true);
 	AUDIO::DISABLE_PED_PAIN_AUDIO(uParam0->f_2, true);
@@ -45484,7 +45484,7 @@ void func_449(var uParam0)//Position - 0x34A0A
 				ENTITY::SET_ENTITY_COLLISION(uParam0->f_2, true, false);
 				ENTITY::SET_ENTITY_VISIBLE(uParam0->f_2, true, false);
 				uParam0->f_15 = 255f;
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_2, -2065892691);
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_2, joaat("HATES_PLAYER"));
 				PED::SET_PED_NAME_DEBUG(uParam0->f_2, "ACTIVE");
 				uParam0->f_1 = 9;
 			}
@@ -48045,7 +48045,7 @@ int func_516(var uParam0)//Position - 0x37C95
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(uParam0->f_28[0], true);
 				PED::SET_PED_CAN_BE_TARGETTED(uParam0->f_28[0], false);
 				PED::SET_PED_CONFIG_FLAG(uParam0->f_28[0], 208, true);
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_28[0], joaat("player"));
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_28[0], joaat("PLAYER"));
 				ENTITY::SET_ENTITY_COORDS(uParam0->f_28[0], Var1, true, false, false, true);
 				ENTITY::SET_ENTITY_HEADING(uParam0->f_28[0], fVar2);
 				ENTITY::FREEZE_ENTITY_POSITION(uParam0->f_28[0], true);

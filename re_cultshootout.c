@@ -3316,7 +3316,7 @@ void func_96()//Position - 0x3795
 		PED::ADD_RELATIONSHIP_GROUP("DrugCult", &iLocal_69);
 		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, iLocal_69, joaat("COP"));
 		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, joaat("COP"), iLocal_69);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_69, joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_69, joaat("PLAYER"));
 		iLocal_71 = 0;
 		while (iLocal_71 < 6)
 		{

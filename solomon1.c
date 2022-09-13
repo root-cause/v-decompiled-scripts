@@ -66651,10 +66651,10 @@ int func_541(int iParam0, int iParam1, int iParam2)//Position - 0x52C7A
 					return 1;
 					break;
 				
-				case 196632624:
-				case -1644428107:
-				case 1108198688:
-				case 810099095:
+				case joaat("MP_Award_M_Tshirt_000"):
+				case joaat("MP_Award_M_Tshirt_001"):
+				case joaat("MP_Award_F_Tshirt_000"):
+				case joaat("MP_Award_F_Tshirt_001"):
 					return 1;
 					break;
 				
@@ -66669,10 +66669,10 @@ int func_541(int iParam0, int iParam1, int iParam2)//Position - 0x52C7A
 					return 1;
 					break;
 				
-				case 1980445908:
-				case -1882429354:
-				case -1235341889:
-				case -1544517404:
+				case joaat("MP_Award_M_Tshirt_002"):
+				case joaat("MP_Award_M_Tshirt_003"):
+				case joaat("MP_Award_F_Tshirt_002"):
+				case joaat("MP_Award_F_Tshirt_003"):
 					return 1;
 					break;
 				
@@ -113929,12 +113929,12 @@ void func_730()//Position - 0x8B36F
 	PED::REMOVE_RELATIONSHIP_GROUP(iLocal_279);
 	PED::ADD_RELATIONSHIP_GROUP("enemies", &iLocal_278);
 	PED::ADD_RELATIONSHIP_GROUP("rel_Friends", &iLocal_279);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), iLocal_278);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_278, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_278);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_278, joaat("PLAYER"));
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_279, iLocal_278);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_278, iLocal_279);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), iLocal_279);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_279, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), iLocal_279);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_279, joaat("PLAYER"));
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_278, iLocal_278);
 	HUD::REQUEST_ADDITIONAL_TEXT("SOL1", 0);
 	if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))

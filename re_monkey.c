@@ -1959,7 +1959,7 @@ int func_57()//Position - 0x2186
 			PED::SET_PED_CONFIG_FLAG(iLocal_48, 42, true);
 			iLocal_53 = func_68(iLocal_48, 0, 145);
 			func_58(1);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_48, joaat("player"));
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_48, joaat("PLAYER"));
 			PED::SET_PED_LOD_MULTIPLIER(iLocal_48, 2.5f);
 		}
 	}

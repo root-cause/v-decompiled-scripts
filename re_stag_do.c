@@ -3660,7 +3660,7 @@ void func_95()//Position - 0x3889
 						iLocal_53 = PED::CREATE_PED(4, joaat("ig_bestmen"), -2202.747f, 4299.008f, 47.4293f, 73.0028f, true, true);
 						func_96(&uLocal_100, 4, iLocal_53, "BESTMAN", 0, 1);
 						PED::SET_PED_COMPONENT_VARIATION(iLocal_53, 0, 0, 0, 0);
-						PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_53, joaat("player"));
+						PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_53, joaat("PLAYER"));
 						PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_53, true);
 						PED::SET_PED_CONFIG_FLAG(iLocal_53, 185, true);
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_77);
@@ -5302,7 +5302,7 @@ void func_127()//Position - 0x60BD
 	}
 	iLocal_51 = PED::CREATE_PED(26, joaat("u_m_y_staggrm_01"), -935.57f, 2767.616f, 24.448f, 140.5f, true, true);
 	AUDIO::SET_AMBIENT_VOICE_NAME(iLocal_51, "GROOM");
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_51, joaat("player"));
+	PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_51, joaat("PLAYER"));
 	PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_51, true);
 	PED::SET_PED_MONEY(iLocal_51, 0);
 	PED::SET_PED_COMPONENT_VARIATION(iLocal_51, 2, 0, 0, 0);

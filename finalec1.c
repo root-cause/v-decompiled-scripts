@@ -8564,7 +8564,7 @@ void func_121(int iParam0, bool bParam1)//Position - 0xACE1
 void func_122(int iParam0)//Position - 0xADB1
 {
 	PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iParam0, true);
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(iParam0, joaat("player"));
+	PED::SET_PED_RELATIONSHIP_GROUP_HASH(iParam0, joaat("PLAYER"));
 	PED::SET_PED_CAN_BE_TARGETTED(iParam0, false);
 	PED::SET_PED_KEEP_TASK(iParam0, true);
 	ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(iParam0, true);
@@ -12386,39 +12386,39 @@ void func_177(bool bParam0)//Position - 0x10C18
 	switch (bParam0)
 	{
 		case 0:
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, 1166638144, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("player"), -1865950624);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, -1865950624, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95444, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95444);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95445, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95445);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95446, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95446);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("AMBIENT_GANG_FAMILY"), joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("PLAYER"), joaat("AMBIENT_GANG_LOST"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("AMBIENT_GANG_LOST"), joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95444, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95444);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95445, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95445);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95446, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95446);
 			break;
 		
 		case 1:
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, 1166638144, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("player"), -1865950624);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, -1865950624, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95444, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95444);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95445, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95445);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95446, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95446);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("AMBIENT_GANG_FAMILY"), joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("PLAYER"), joaat("AMBIENT_GANG_LOST"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("AMBIENT_GANG_LOST"), joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95444, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95444);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95445, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95445);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95446, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95446);
 			break;
 		
 		case 2:
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, 1166638144, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), -1865950624);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, -1865950624, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95444, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95444);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95445, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95445);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95446, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95446);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("AMBIENT_GANG_FAMILY"), joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), joaat("AMBIENT_GANG_LOST"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("AMBIENT_GANG_LOST"), joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95444, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95444);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95445, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95445);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95446, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95446);
 			break;
 		
 		default:
@@ -61364,10 +61364,10 @@ int func_473(int iParam0, int iParam1, int iParam2)//Position - 0x4A05D
 					return 1;
 					break;
 				
-				case 196632624:
-				case -1644428107:
-				case 1108198688:
-				case 810099095:
+				case joaat("MP_Award_M_Tshirt_000"):
+				case joaat("MP_Award_M_Tshirt_001"):
+				case joaat("MP_Award_F_Tshirt_000"):
+				case joaat("MP_Award_F_Tshirt_001"):
 					return 1;
 					break;
 				
@@ -61382,10 +61382,10 @@ int func_473(int iParam0, int iParam1, int iParam2)//Position - 0x4A05D
 					return 1;
 					break;
 				
-				case 1980445908:
-				case -1882429354:
-				case -1235341889:
-				case -1544517404:
+				case joaat("MP_Award_M_Tshirt_002"):
+				case joaat("MP_Award_M_Tshirt_003"):
+				case joaat("MP_Award_F_Tshirt_002"):
+				case joaat("MP_Award_F_Tshirt_003"):
 					return 1;
 					break;
 				
@@ -106970,7 +106970,7 @@ void func_616()//Position - 0x80B75
 				ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(func_229(), false);
 				PED::SET_PED_MAX_HEALTH(func_229(), ENTITY::GET_ENTITY_MAX_HEALTH(func_229()));
 				ENTITY::SET_ENTITY_HEALTH(func_229(), ENTITY::GET_ENTITY_MAX_HEALTH(func_229()), 0);
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_75[2], joaat("player"));
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_75[2], joaat("PLAYER"));
 				iLocal_148 = 2;
 			}
 			if ((((ENTITY::GET_ENTITY_HEALTH(func_229()) < ENTITY::GET_ENTITY_MAX_HEALTH(func_229()) && iLocal_148 == 2) || func_768(&Local_163)) || func_768(&Local_166)) || func_768(&Local_162))
@@ -107026,7 +107026,7 @@ void func_618()//Position - 0x80D3C
 	{
 		AUDIO::STOP_PED_SPEAKING(func_229(), false);
 		ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(func_229(), true);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(func_229(), joaat("player"));
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(func_229(), joaat("PLAYER"));
 	}
 	func_619(&iLocal_173);
 	if (func_617())
@@ -108340,7 +108340,7 @@ int func_653(int iParam0, bool bParam1)//Position - 0x82908
 	if (!PED::IS_PED_INJURED(iLocal_228))
 	{
 		PED::SET_PED_GROUP_MEMBER_PASSENGER_INDEX(iLocal_228, 0);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_228, joaat("player"));
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_228, joaat("PLAYER"));
 		PED::SET_PED_CAN_BE_TARGETTED(iLocal_228, false);
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_228, true);
 		ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(iLocal_228, bVar1);
@@ -109819,10 +109819,10 @@ void func_700()//Position - 0x848EF
 {
 	PED::REMOVE_RELATIONSHIP_GROUP(iLocal_226);
 	PED::ADD_RELATIONSHIP_GROUP("IgnoreGroup", &iLocal_226);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_226, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), iLocal_226);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, -2065892691, iLocal_226);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_226, -2065892691);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_226, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), iLocal_226);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("HATES_PLAYER"), iLocal_226);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_226, joaat("HATES_PLAYER"));
 }
 
 void func_701(var uParam0, int iParam1)//Position - 0x8493F
@@ -124103,12 +124103,12 @@ void func_1007()//Position - 0x972D1
 	
 	PED::ADD_RELATIONSHIP_GROUP("FIB group", &iLocal_506);
 	PED::ADD_RELATIONSHIP_GROUP("Merc group", &iLocal_507);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), iLocal_506);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), iLocal_507);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_506, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_506);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_507);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_506, joaat("PLAYER"));
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_506, iLocal_507);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_507, iLocal_506);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_507, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_507, joaat("PLAYER"));
 	if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 	{
 		if (!func_757())

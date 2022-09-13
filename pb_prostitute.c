@@ -2297,44 +2297,44 @@ int func_47(int iParam0)//Position - 0x1982
 	{
 		switch (VEHICLE::GET_VEHICLE_LAYOUT_HASH(iParam0))
 		{
-			case -2066252141:
-			case -38413156:
-			case -782720499:
-			case 542797648:
-			case 68566729:
-			case -1887744178:
-			case -463340997:
-			case 2033852426:
-			case -1820894825:
-			case 1697345049:
-			case -635697407:
-			case -1453479140:
-			case 1837596901:
-			case 2013836096:
-			case 2071837743:
-			case 2130662788:
-			case -1546132012:
-			case 1192783831:
-			case -317944664:
-			case 570040040:
-			case 1212243433:
-			case -193022774:
-			case 510359473:
-			case -988377294:
-			case 1240573865:
-			case -627376728:
-			case 986556497:
-			case 1751095603:
-			case -508485403:
-			case -1975786336:
-			case 1735755507:
-			case 784822781:
-			case -1297908787:
-			case -1901288301:
-			case -1949393167:
-			case 1509896619:
-			case -2093548880:
-			case 801538932:
+			case joaat("LAYOUT_LOW"):
+			case joaat("LAYOUT_LOW_ENTITYXF"):
+			case joaat("LAYOUT_LOW_CHEETAH"):
+			case joaat("LAYOUT_LOW_INFERNUS"):
+			case joaat("LAYOUT_LOW_RESTRICTED"):
+			case joaat("LAYOUT_LOW_SENTINEL2"):
+			case joaat("LAYOUT_LOW_FURORE"):
+			case joaat("LAYOUT_LOW_OSIRIS"):
+			case joaat("LAYOUT_LOW_FELTZER3"):
+			case joaat("LAYOUT_LOW_LOWRIDER"):
+			case joaat("LAYOUT_LOW_LOWRIDER_FACTION"):
+			case joaat("LAYOUT_LOW_VERLIERER"):
+			case joaat("LAYOUT_LOW_LOWRIDER2"):
+			case joaat("LAYOUT_LOW_LOWRIDER2_FACTION3"):
+			case joaat("LAYOUT_LOW_LE7B"):
+			case joaat("LAYOUT_LOW_RUINER2"):
+			case joaat("LAYOUT_LOW_INFERNUS2"):
+			case joaat("LAYOUT_LOW_SC1"):
+			case joaat("LAYOUT_LOW_MICHELLI"):
+			case joaat("LAYOUT_LOW_TEZERACT"):
+			case joaat("LAYOUT_LOW_DOMINATOR3"):
+			case joaat("LAYOUT_LOW_TAIPAN"):
+			case joaat("LAYOUT_LOW_ITALIGTO"):
+			case joaat("LAYOUT_LOW_RESTRICTED_SCHLAGEN"):
+			case joaat("LAYOUT_LOW_RESTRICTED_GAUNTLET3"):
+			case joaat("LAYOUT_LOW_PEYOTE2"):
+			case joaat("LAYOUT_LOW_NEO"):
+			case joaat("LAYOUT_LOW_PEYOTE3"):
+			case joaat("LAYOUT_LOW_CALICO"):
+			case joaat("LAYOUT_LOW_RESTRICTED_DOMINATOR8"):
+			case joaat("LAYOUT_LOW_RESTRICTED_EUROS"):
+			case joaat("LAYOUT_LOW_RESTRICTED_RT3000"):
+			case joaat("LAYOUT_LOW_ZR350"):
+			case joaat("LAYOUT_LOW_IGNUS"):
+			case joaat("LAYOUT_LOW_ZENO"):
+			case joaat("LAYOUT_LOW_RESTRICTED_POSTLUDE"):
+			case joaat("LAYOUT_LOW_RESTRICTED_TENF2"):
+			case joaat("LAYOUT_LOW_CORSITA"):
 				return 1;
 				break;
 			}
@@ -3742,101 +3742,101 @@ int func_93(int iParam0)//Position - 0x3231
 		}
 		switch (VEHICLE::GET_VEHICLE_LAYOUT_HASH(iParam0))
 		{
-			case -2066252141:
-			case -782720499:
-			case 542797648:
-			case 68566729:
-			case -1887744178:
+			case joaat("LAYOUT_LOW"):
+			case joaat("LAYOUT_LOW_CHEETAH"):
+			case joaat("LAYOUT_LOW_INFERNUS"):
+			case joaat("LAYOUT_LOW_RESTRICTED"):
+			case joaat("LAYOUT_LOW_SENTINEL2"):
 			case joaat("LAYOUT_STANDARD"):
-			case -1917671975:
-			case -1405350320:
-			case -157990217:
-			case -280076747:
-			case 1710903184:
-			case 1663892749:
-			case 434478421:
-			case 1816176348:
-			case 919485892:
-			case 945079693:
-			case 85100643:
-			case 1939145032:
-			case 1869774540:
-			case -28233912:
-			case -1150063973:
-			case -463340997:
-			case -703649403:
-			case 197952738:
-			case -208246612:
-			case 2033852426:
-			case -1820894825:
-			case 1697345049:
-			case -635697407:
-			case -1910741341:
-			case -1158091941:
-			case -1834221859:
-			case -1453479140:
-			case -1954624455:
-			case 1837596901:
-			case 2013836096:
-			case 1374303184:
-			case 1419869906:
-			case -526725184:
-			case 1610027666:
-			case -970031572:
-			case 2071837743:
-			case 1482989244:
-			case 2130662788:
-			case -1546132012:
-			case 1410462333:
-			case 1192783831:
-			case -1304848574:
-			case -317944664:
-			case 570040040:
-			case 1212243433:
-			case -193022774:
-			case 510359473:
-			case -988377294:
-			case 954521785:
-			case 584837381:
-			case -2123959937:
-			case 1074598648:
-			case 1818992907:
-			case -370341013:
-			case 1240573865:
-			case -627376728:
-			case 986556497:
-			case -1852541008:
-			case -605059493:
-			case 1751095603:
-			case -991881300:
-			case -508485403:
-			case 237329608:
-			case -1975786336:
-			case 1735755507:
-			case 784822781:
-			case -541039502:
-			case 2126816039:
-			case -1297908787:
-			case -1901288301:
-			case 1830236137:
-			case -1707715210:
-			case -1236346590:
-			case -428411780:
-			case -1149121978:
-			case -1282491670:
-			case -1949393167:
-			case -201773865:
-			case 1509896619:
-			case -2093548880:
-			case 801538932:
-			case 1478163132:
-			case -1920284504:
-			case -1174301217:
-			case -1736391383:
+			case joaat("LAYOUT_STD_EXITFIXUP"):
+			case joaat("LAYOUT_STD_HABANERO"):
+			case joaat("LAYOUT_STD_STRETCH"):
+			case joaat("LAYOUT_STD_HIGHWINDOW"):
+			case joaat("LAYOUT_RANGER"):
+			case joaat("LAYOUT_RANGER_SWAT"):
+			case joaat("LAYOUT_4X4"):
+			case joaat("LAYOUT_BISON"):
+			case joaat("LAYOUT_VAN_BODHI"):
+			case joaat("LAYOUT_STD_LOWROOF"):
+			case joaat("LAYOUT_STD_STRATUM"):
+			case joaat("LAYOUT_VAN_ROOSEVELT"):
+			case joaat("LAYOUT_STD_HUNTLEY"):
+			case joaat("LAYOUT_STD_WARRENER"):
+			case joaat("LAYOUT_LOW_BLADE"):
+			case joaat("LAYOUT_LOW_FURORE"):
+			case joaat("LAYOUT_STD_KURUMA"):
+			case joaat("LAYOUT_STD_BLISTA2"):
+			case joaat("LAYOUT_STD_CHINO"):
+			case joaat("LAYOUT_LOW_OSIRIS"):
+			case joaat("LAYOUT_LOW_FELTZER3"):
+			case joaat("LAYOUT_LOW_LOWRIDER"):
+			case joaat("LAYOUT_LOW_LOWRIDER_FACTION"):
+			case joaat("LAYOUT_STD_LOWRIDER"):
+			case joaat("LAYOUT_STD_LOWRIDER_CHINO"):
+			case joaat("LAYOUT_STD_LOWRIDER_SIDEDOOR"):
+			case joaat("LAYOUT_LOW_VERLIERER"):
+			case joaat("LAYOUT_STD_BALLER4"):
+			case joaat("LAYOUT_LOW_LOWRIDER2"):
+			case joaat("LAYOUT_LOW_LOWRIDER2_FACTION3"):
+			case joaat("LAYOUT_STD_LOWRIDER2"):
+			case joaat("LAYOUT_STD_LOWRIDER2_SIDEDOOR"):
+			case joaat("LAYOUT_STD_LOWRIDER2_SLAMVAN"):
+			case joaat("LAYOUT_STD_WINDSOR2"):
+			case joaat("LAYOUT_STD_XLS"):
+			case joaat("LAYOUT_LOW_LE7B"):
+			case joaat("LAYOUT_STD_OMNIS"):
+			case joaat("LAYOUT_LOW_RUINER2"):
+			case joaat("LAYOUT_LOW_INFERNUS2"):
+			case joaat("LAYOUT_LOW_TORERO"):
+			case joaat("LAYOUT_LOW_SC1"):
+			case joaat("LAYOUT_STD_NEON"):
+			case joaat("LAYOUT_LOW_MICHELLI"):
+			case joaat("LAYOUT_LOW_TEZERACT"):
+			case joaat("LAYOUT_LOW_DOMINATOR3"):
+			case joaat("LAYOUT_LOW_TAIPAN"):
+			case joaat("LAYOUT_LOW_ITALIGTO"):
+			case joaat("LAYOUT_LOW_RESTRICTED_SCHLAGEN"):
+			case joaat("LAYOUT_RANGER_TOROS"):
+			case joaat("LAYOUT_STD_DEVIANT"):
+			case joaat("LAYOUT_STD_DRAFTER"):
+			case joaat("LAYOUT_STD_DYNASTY"):
+			case joaat("LAYOUT_STD_PARAGON"):
+			case joaat("LAYOUT_STD_ZION3"):
+			case joaat("LAYOUT_LOW_RESTRICTED_GAUNTLET3"):
+			case joaat("LAYOUT_LOW_PEYOTE2"):
+			case joaat("LAYOUT_LOW_NEO"):
+			case joaat("LAYOUT_RANGER_NOVAK"):
+			case joaat("LAYOUT_RANGER_EVERON"):
+			case joaat("LAYOUT_LOW_PEYOTE3"):
+			case joaat("LAYOUT_RANGER_SEMINOLE2"):
+			case joaat("LAYOUT_LOW_CALICO"):
+			case joaat("LAYOUT_STD_CYPHER"):
+			case joaat("LAYOUT_LOW_RESTRICTED_DOMINATOR8"):
+			case joaat("LAYOUT_LOW_RESTRICTED_EUROS"):
+			case joaat("LAYOUT_LOW_RESTRICTED_RT3000"):
+			case joaat("LAYOUT_STANDARD_SULTAN3"):
+			case joaat("LAYOUT_STD_WARRENER2"):
+			case joaat("LAYOUT_LOW_ZR350"):
+			case joaat("LAYOUT_LOW_IGNUS"):
+			case joaat("LAYOUT_STANDARD_BUFFALO4"):
+			case joaat("LAYOUT_STD_ASTRON"):
+			case joaat("LAYOUT_STD_CINQUEMILA"):
+			case joaat("LAYOUT_STD_DEITY"):
+			case joaat("LAYOUT_STD_GRANGER2"):
+			case joaat("LAYOUT_STD_I-WAGEN"):
+			case joaat("LAYOUT_LOW_ZENO"):
+			case joaat("LAYOUT_STD_S95"):
+			case joaat("LAYOUT_LOW_RESTRICTED_POSTLUDE"):
+			case joaat("LAYOUT_LOW_RESTRICTED_TENF2"):
+			case joaat("LAYOUT_LOW_CORSITA"):
+			case joaat("LAYOUT_STD_RHINEHART"):
+			case joaat("LAYOUT_STANDARD_SENTINEL4"):
+			case joaat("LAYOUT_LOW_TORERO2"):
+			case joaat("LAYOUT_STD_GREENWOOD"):
 				return 1;
 				break;
 		}
-		if (VEHICLE::GET_VEHICLE_LAYOUT_HASH(iParam0) == 931866387 && ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("slamvan"))
+		if (VEHICLE::GET_VEHICLE_LAYOUT_HASH(iParam0) == joaat("LAYOUT_STD_RIPLEY") && ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("slamvan"))
 		{
 			return 1;
 		}
@@ -14973,7 +14973,7 @@ void func_389()//Position - 0x122AF
 					func_482(&iLocal_49, 2048);
 					iLocal_94 = 0;
 					PED::ADD_RELATIONSHIP_GROUP("ProstituteInPlay", &iLocal_298);
-					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_298, joaat("player"));
+					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_298, joaat("PLAYER"));
 					PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_90, iLocal_298);
 					func_492("Moving into sex state eCurrentProstituteState = PROSTITUTE_CHOOSING_SERVICE ");
 					func_5(&iLocal_49, 1024);
@@ -15882,7 +15882,7 @@ int func_414(int iParam0)//Position - 0x135BA
 	{
 		switch (VEHICLE::GET_VEHICLE_LAYOUT_HASH(iParam0))
 		{
-			case -1949393167:
+			case joaat("LAYOUT_LOW_ZENO"):
 				return 1;
 				break;
 			}
@@ -15896,7 +15896,7 @@ int func_415(int iParam0)//Position - 0x135E5
 	{
 		switch (VEHICLE::GET_VEHICLE_LAYOUT_HASH(iParam0))
 		{
-			case -1901288301:
+			case joaat("LAYOUT_LOW_IGNUS"):
 				return 1;
 				break;
 			}
@@ -15910,7 +15910,7 @@ int func_416(int iParam0)//Position - 0x13610
 	{
 		switch (VEHICLE::GET_VEHICLE_LAYOUT_HASH(iParam0))
 		{
-			case -1297908787:
+			case joaat("LAYOUT_LOW_ZR350"):
 				return 1;
 				break;
 			}
@@ -15924,7 +15924,7 @@ int func_417(int iParam0)//Position - 0x1363B
 	{
 		switch (VEHICLE::GET_VEHICLE_LAYOUT_HASH(iParam0))
 		{
-			case -627376728:
+			case joaat("LAYOUT_LOW_PEYOTE2"):
 				return 1;
 				break;
 			}
@@ -15938,7 +15938,7 @@ int func_418(int iParam0)//Position - 0x13666
 	{
 		switch (VEHICLE::GET_VEHICLE_LAYOUT_HASH(iParam0))
 		{
-			case 986556497:
+			case joaat("LAYOUT_LOW_NEO"):
 				return 1;
 				break;
 			}
@@ -15952,7 +15952,7 @@ int func_419(int iParam0)//Position - 0x13691
 	{
 		switch (VEHICLE::GET_VEHICLE_LAYOUT_HASH(iParam0))
 		{
-			case -988377294:
+			case joaat("LAYOUT_LOW_RESTRICTED_SCHLAGEN"):
 				return 1;
 				break;
 			}
@@ -15966,7 +15966,7 @@ int func_420(int iParam0)//Position - 0x136BC
 	{
 		switch (VEHICLE::GET_VEHICLE_LAYOUT_HASH(iParam0))
 		{
-			case 510359473:
+			case joaat("LAYOUT_LOW_ITALIGTO"):
 				return 1;
 				break;
 			}
@@ -15980,7 +15980,7 @@ int func_421(int iParam0)//Position - 0x136E7
 	{
 		switch (VEHICLE::GET_VEHICLE_LAYOUT_HASH(iParam0))
 		{
-			case 1212243433:
+			case joaat("LAYOUT_LOW_DOMINATOR3"):
 				return 1;
 				break;
 			}
@@ -15994,8 +15994,8 @@ int func_422(int iParam0)//Position - 0x13712
 	{
 		switch (VEHICLE::GET_VEHICLE_LAYOUT_HASH(iParam0))
 		{
-			case 570040040:
-			case -193022774:
+			case joaat("LAYOUT_LOW_TEZERACT"):
+			case joaat("LAYOUT_LOW_TAIPAN"):
 				return 1;
 				break;
 			}
@@ -16009,7 +16009,7 @@ int func_423(int iParam0)//Position - 0x13743
 	{
 		switch (VEHICLE::GET_VEHICLE_LAYOUT_HASH(iParam0))
 		{
-			case 1192783831:
+			case joaat("LAYOUT_LOW_SC1"):
 				return 1;
 				break;
 			}
@@ -16023,7 +16023,7 @@ int func_424(int iParam0)//Position - 0x1376E
 	{
 		switch (VEHICLE::GET_VEHICLE_LAYOUT_HASH(iParam0))
 		{
-			case -1546132012:
+			case joaat("LAYOUT_LOW_INFERNUS2"):
 				return 1;
 				break;
 			}
@@ -16037,8 +16037,8 @@ int func_425(int iParam0)//Position - 0x13799
 	{
 		switch (VEHICLE::GET_VEHICLE_LAYOUT_HASH(iParam0))
 		{
-			case 1837596901:
-			case 2013836096:
+			case joaat("LAYOUT_LOW_LOWRIDER2"):
+			case joaat("LAYOUT_LOW_LOWRIDER2_FACTION3"):
 				return 1;
 				break;
 			}
@@ -16052,8 +16052,8 @@ int func_426(int iParam0)//Position - 0x137CA
 	{
 		switch (VEHICLE::GET_VEHICLE_LAYOUT_HASH(iParam0))
 		{
-			case 1697345049:
-			case -635697407:
+			case joaat("LAYOUT_LOW_LOWRIDER"):
+			case joaat("LAYOUT_LOW_LOWRIDER_FACTION"):
 				return 1;
 				break;
 			}
@@ -16067,9 +16067,9 @@ int func_427(int iParam0)//Position - 0x137FB
 	{
 		switch (VEHICLE::GET_VEHICLE_LAYOUT_HASH(iParam0))
 		{
-			case -782720499:
-			case -38413156:
-			case 2071837743:
+			case joaat("LAYOUT_LOW_CHEETAH"):
+			case joaat("LAYOUT_LOW_ENTITYXF"):
+			case joaat("LAYOUT_LOW_LE7B"):
 				return 1;
 				break;
 			}
@@ -16083,22 +16083,22 @@ int func_428(int iParam0)//Position - 0x13832
 	{
 		switch (VEHICLE::GET_VEHICLE_LAYOUT_HASH(iParam0))
 		{
-			case 542797648:
-			case 68566729:
-			case 2033852426:
-			case -1820894825:
-			case -1453479140:
-			case 2130662788:
-			case 1410462333:
-			case -317944664:
-			case 1240573865:
-			case -1975786336:
-			case 1735755507:
-			case 784822781:
-			case 1509896619:
-			case -2093548880:
-			case 801538932:
-			case -1174301217:
+			case joaat("LAYOUT_LOW_INFERNUS"):
+			case joaat("LAYOUT_LOW_RESTRICTED"):
+			case joaat("LAYOUT_LOW_OSIRIS"):
+			case joaat("LAYOUT_LOW_FELTZER3"):
+			case joaat("LAYOUT_LOW_VERLIERER"):
+			case joaat("LAYOUT_LOW_RUINER2"):
+			case joaat("LAYOUT_LOW_TORERO"):
+			case joaat("LAYOUT_LOW_MICHELLI"):
+			case joaat("LAYOUT_LOW_RESTRICTED_GAUNTLET3"):
+			case joaat("LAYOUT_LOW_RESTRICTED_DOMINATOR8"):
+			case joaat("LAYOUT_LOW_RESTRICTED_EUROS"):
+			case joaat("LAYOUT_LOW_RESTRICTED_RT3000"):
+			case joaat("LAYOUT_LOW_RESTRICTED_POSTLUDE"):
+			case joaat("LAYOUT_LOW_RESTRICTED_TENF2"):
+			case joaat("LAYOUT_LOW_CORSITA"):
+			case joaat("LAYOUT_LOW_TORERO2"):
 				return 1;
 				break;
 			}

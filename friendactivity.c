@@ -45623,7 +45623,7 @@ void func_514(var uParam0, var uParam1, bool bParam2)//Position - 0x36AD8
 				}
 				func_146(uParam1, uParam0->f_1, uParam0->f_7, 1);
 				PED::SET_PED_CAN_BE_TARGETTED(uParam0->f_7, false);
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_7, joaat("player"));
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_7, joaat("PLAYER"));
 				PED::SET_PED_HELMET(uParam0->f_7, true);
 				ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(uParam0->f_7, true);
 				TASK::SET_PED_PATH_CAN_USE_CLIMBOVERS(uParam0->f_7, true);
@@ -60907,10 +60907,10 @@ int func_601(int iParam0, int iParam1, int iParam2)//Position - 0x49A17
 					return 1;
 					break;
 				
-				case 196632624:
-				case -1644428107:
-				case 1108198688:
-				case 810099095:
+				case joaat("MP_Award_M_Tshirt_000"):
+				case joaat("MP_Award_M_Tshirt_001"):
+				case joaat("MP_Award_F_Tshirt_000"):
+				case joaat("MP_Award_F_Tshirt_001"):
 					return 1;
 					break;
 				
@@ -60925,10 +60925,10 @@ int func_601(int iParam0, int iParam1, int iParam2)//Position - 0x49A17
 					return 1;
 					break;
 				
-				case 1980445908:
-				case -1882429354:
-				case -1235341889:
-				case -1544517404:
+				case joaat("MP_Award_M_Tshirt_002"):
+				case joaat("MP_Award_M_Tshirt_003"):
+				case joaat("MP_Award_F_Tshirt_002"):
+				case joaat("MP_Award_F_Tshirt_003"):
 					return 1;
 					break;
 				
@@ -114267,7 +114267,7 @@ void func_843(var uParam0)//Position - 0x8AC53
 		{
 			PED::SET_GROUP_FORMATION(func_13(), 0);
 		}
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_3, joaat("player"));
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_3, joaat("PLAYER"));
 		TASK::SET_PED_PATH_CAN_USE_CLIMBOVERS(uParam0->f_3, true);
 		TASK::SET_PED_PATH_CAN_USE_LADDERS(uParam0->f_3, true);
 		TASK::SET_PED_PATH_CAN_DROP_FROM_HEIGHT(uParam0->f_3, true);
@@ -115068,7 +115068,7 @@ int func_858(var uParam0, float fParam1)//Position - 0x8C0E3
 			iVar3 = PED::GET_PED_RELATIONSHIP_GROUP_HASH(uVar0[iVar2]);
 			if (iVar3 != joaat("NO_RELATIONSHIP"))
 			{
-				if (PED::GET_RELATIONSHIP_BETWEEN_GROUPS(joaat("player"), iVar3) == 5)
+				if (PED::GET_RELATIONSHIP_BETWEEN_GROUPS(joaat("PLAYER"), iVar3) == 5)
 				{
 					if (ENTITY::IS_ENTITY_AT_ENTITY(uVar0[iVar2], uParam0->f_3, fParam1, fParam1, fParam1, false, true, 0))
 					{

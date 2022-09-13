@@ -30307,7 +30307,7 @@ int func_189()//Position - 0x20162
 				PED::SET_PED_MONEY(iLocal_53, 0);
 				PED::SET_PED_CAN_BE_TARGETTED(iLocal_53, false);
 				PED::SET_PED_NAME_DEBUG(iLocal_53, "POSTMARNIE");
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_53, joaat("player"));
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_53, joaat("PLAYER"));
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_53, false);
 				func_146(&uLocal_54, 4, iLocal_53, "MARNIE", 1, 1);
 				return 1;

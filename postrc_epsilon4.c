@@ -981,7 +981,7 @@ void func_30()//Position - 0xC51
 				PED::SET_PED_MONEY(iLocal_205, 0);
 				PED::SET_PED_CAN_BE_TARGETTED(iLocal_205, false);
 				PED::SET_PED_NAME_DEBUG(iLocal_205, "POSTJIMMY");
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_205, joaat("player"));
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_205, joaat("PLAYER"));
 				func_31(&uLocal_38, 5, iLocal_205, "JIMMYBOSTON", 1, 1);
 			}
 			if (ENTITY::GET_ENTITY_MODEL(uVar2[iVar1]) == func_32(60))
@@ -994,7 +994,7 @@ void func_30()//Position - 0xC51
 				PED::SET_PED_MONEY(iLocal_204, 0);
 				PED::SET_PED_CAN_BE_TARGETTED(iLocal_204, false);
 				PED::SET_PED_NAME_DEBUG(iLocal_204, "POSTMARNIE");
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_204, joaat("player"));
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_204, joaat("PLAYER"));
 				func_31(&uLocal_38, 4, iLocal_204, "MARNIE", 1, 1);
 			}
 		}

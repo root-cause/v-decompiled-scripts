@@ -1177,8 +1177,8 @@ void func_40()//Position - 0x1178
 		VEHICLE::SET_VEHICLE_EXTRA_COLOURS(iLocal_77, 0, 0);
 		VEHICLE::SET_VEHICLE_NUMBER_PLATE_TEXT_INDEX(iLocal_77, 1);
 		PED::ADD_RELATIONSHIP_GROUP("rel_group_peds", &iLocal_86);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), iLocal_86);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_86, joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), iLocal_86);
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_86, joaat("PLAYER"));
 		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_86, joaat("COP"));
 		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("COP"), iLocal_86);
 		iLocal_82[0] = PED::CREATE_PED(26, iLocal_83[0], Local_84, fLocal_85, true, true);
@@ -20394,10 +20394,10 @@ int func_249(int iParam0, int iParam1, int iParam2)//Position - 0x19F8F
 					return 1;
 					break;
 				
-				case 196632624:
-				case -1644428107:
-				case 1108198688:
-				case 810099095:
+				case joaat("MP_Award_M_Tshirt_000"):
+				case joaat("MP_Award_M_Tshirt_001"):
+				case joaat("MP_Award_F_Tshirt_000"):
+				case joaat("MP_Award_F_Tshirt_001"):
 					return 1;
 					break;
 				
@@ -20412,10 +20412,10 @@ int func_249(int iParam0, int iParam1, int iParam2)//Position - 0x19F8F
 					return 1;
 					break;
 				
-				case 1980445908:
-				case -1882429354:
-				case -1235341889:
-				case -1544517404:
+				case joaat("MP_Award_M_Tshirt_002"):
+				case joaat("MP_Award_M_Tshirt_003"):
+				case joaat("MP_Award_F_Tshirt_002"):
+				case joaat("MP_Award_F_Tshirt_003"):
 					return 1;
 					break;
 				

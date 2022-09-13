@@ -30393,7 +30393,7 @@ int func_169()//Position - 0x1F96E
 				PED::SET_PED_MONEY(iLocal_40, 0);
 				PED::SET_PED_CAN_BE_TARGETTED(iLocal_40, false);
 				PED::SET_PED_NAME_DEBUG(iLocal_40, "POSTTOM");
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_40, joaat("player"));
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_40, joaat("PLAYER"));
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_40, false);
 				func_170(&uLocal_41, 5, iLocal_40, "TOM", 1, 1);
 				return 1;
@@ -30466,7 +30466,7 @@ int func_171()//Position - 0x1FAB9
 				PED::SET_PED_MONEY(iLocal_39, 0);
 				PED::SET_PED_CAN_BE_TARGETTED(iLocal_39, false);
 				PED::SET_PED_NAME_DEBUG(iLocal_39, "POSTJIMMY");
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_39, joaat("player"));
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_39, joaat("PLAYER"));
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_39, false);
 				func_170(&uLocal_41, 3, iLocal_39, "JIMMYBOSTON", 1, 1);
 				return 1;
@@ -30514,7 +30514,7 @@ int func_173()//Position - 0x1FB90
 				PED::SET_PED_MONEY(iLocal_38, 0);
 				PED::SET_PED_CAN_BE_TARGETTED(iLocal_38, false);
 				PED::SET_PED_NAME_DEBUG(iLocal_38, "POSTMARNIE");
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_38, joaat("player"));
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_38, joaat("PLAYER"));
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_38, false);
 				func_170(&uLocal_41, 4, iLocal_38, "MARNIE", 1, 1);
 				return 1;

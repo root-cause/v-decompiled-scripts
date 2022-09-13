@@ -42329,8 +42329,8 @@ void func_424(int iParam0)//Position - 0x3171A
 	}
 	PED::REMOVE_RELATIONSHIP_GROUP(iLocal_76);
 	PED::ADD_RELATIONSHIP_GROUP("FRIENDLIES", &iLocal_76);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_76, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), iLocal_76);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_76, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), iLocal_76);
 	STREAMING::REQUEST_MODEL(joaat("ig_maryann"));
 	while (!STREAMING::HAS_MODEL_LOADED(joaat("ig_maryann")))
 	{
@@ -43044,8 +43044,8 @@ void func_440()//Position - 0x32A13
 	MISC::CLEAR_ANGLED_AREA_OF_VEHICLES(-1867.243f, -622.763f, 13.38351f, -2013.267f, -497.9799f, 9.736394f, 23.75f, true, false, false, false, false, 0, 0);
 	PED::REMOVE_RELATIONSHIP_GROUP(iLocal_76);
 	PED::ADD_RELATIONSHIP_GROUP("FRIENDLIES", &iLocal_76);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_76, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), iLocal_76);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_76, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), iLocal_76);
 	func_351(&uLocal_78, 0, PLAYER::PLAYER_PED_ID(), "MICHAEL", 0, 1);
 	func_434();
 	if (func_443(iLocal_244))

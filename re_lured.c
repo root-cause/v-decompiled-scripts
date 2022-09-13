@@ -1641,7 +1641,7 @@ void func_36()//Position - 0x16F1
 	{
 		if ((func_56() || WEAPON::IS_PED_ARMED(PLAYER::PLAYER_PED_ID(), 6)) || !ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), ENTITY::GET_ENTITY_COORDS(iLocal_56, false), 12f, 12f, 5f, false, true, 0))
 		{
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_54, joaat("player"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_54, joaat("PLAYER"));
 			if (!PED::IS_PED_INJURED(iLocal_56))
 			{
 				TASK::CLEAR_PED_TASKS(iLocal_56);
@@ -4285,7 +4285,7 @@ void func_117()//Position - 0x48F0
 	PED::SET_PED_FLEE_ATTRIBUTES(iLocal_55, 128, true);
 	AUDIO::STOP_PED_SPEAKING(iLocal_55, true);
 	PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_55, iLocal_54);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_54, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_54, joaat("PLAYER"));
 	TASK::OPEN_SEQUENCE_TASK(&iLocal_61);
 	TASK::TASK_LOOK_AT_ENTITY(0, PLAYER::PLAYER_PED_ID(), -1, 3076, 2);
 	TASK::TASK_PLAY_ANIM(0, "random@mugging5", "ig_1_girl_agitated_loop", 2f, -2f, -1, 1, 0f, false, false, false);

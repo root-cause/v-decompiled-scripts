@@ -2977,7 +2977,7 @@ void func_65()//Position - 0x38B9
 			iLocal_85[0] = PED::CREATE_PED_INSIDE_VEHICLE(iLocal_87, 6, iLocal_81, -1, true, true);
 			iLocal_85[1] = PED::CREATE_PED_INSIDE_VEHICLE(iLocal_87, 6, iLocal_81, 0, true, true);
 			PED::ADD_RELATIONSHIP_GROUP("rghCop", &iLocal_106);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(4, iLocal_106, joaat("player"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(4, iLocal_106, joaat("PLAYER"));
 			PED::SET_PED_COMBAT_ATTRIBUTES(iLocal_85[0], 39, true);
 			PED::SET_PED_COMBAT_ATTRIBUTES(iLocal_85[1], 39, true);
 			iVar0 = 0;
@@ -4181,7 +4181,7 @@ void func_102()//Position - 0x4E5F
 		iLocal_84[0] = PED::CREATE_PED_INSIDE_VEHICLE(iLocal_86, 26, iLocal_80, -1, true, true);
 		iLocal_84[1] = PED::CREATE_PED_INSIDE_VEHICLE(iLocal_86, 26, iLocal_80, 0, true, true);
 		PED::ADD_RELATIONSHIP_GROUP("rghCriminal", &iLocal_107);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_107, joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_107, joaat("PLAYER"));
 		iVar1 = 0;
 		while (iVar1 < iLocal_84)
 		{

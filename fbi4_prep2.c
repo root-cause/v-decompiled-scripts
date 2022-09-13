@@ -7202,7 +7202,7 @@ void func_211(int iParam0)//Position - 0x765D
 				{
 					TASK::TASK_LEAVE_ANY_VEHICLE(0, 1000, 0);
 				}
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_203, joaat("player"));
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_203, joaat("PLAYER"));
 				TASK::TASK_COMBAT_PED(0, PLAYER::PLAYER_PED_ID(), 0, 16);
 				TASK::CLOSE_SEQUENCE_TASK(iVar0);
 				TASK::TASK_PERFORM_SEQUENCE(Local_197.f_0, iVar0);
@@ -7250,7 +7250,7 @@ void func_211(int iParam0)//Position - 0x765D
 		case 15:
 			if (!func_121(Local_197.f_0, joaat("SCRIPT_TASK_COMBAT")))
 			{
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_203, joaat("player"));
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_203, joaat("PLAYER"));
 				TASK::TASK_COMBAT_PED(Local_197.f_0, PLAYER::PLAYER_PED_ID(), 0, 16);
 			}
 			break;
@@ -7284,7 +7284,7 @@ void func_211(int iParam0)//Position - 0x765D
 			PED::SET_PED_CAPSULE(Local_197.f_0, 0f);
 			if (!func_121(Local_197.f_0, joaat("SCRIPT_TASK_COMBAT")))
 			{
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_203, joaat("player"));
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_203, joaat("PLAYER"));
 				TASK::TASK_COMBAT_PED(Local_197.f_0, PLAYER::PLAYER_PED_ID(), 0, 16);
 			}
 			break;
@@ -7308,7 +7308,7 @@ void func_213()//Position - 0x7B70
 	{
 		TASK::TASK_LEAVE_ANY_VEHICLE(0, 1000, 0);
 	}
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_203, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_203, joaat("PLAYER"));
 	TASK::TASK_COMBAT_PED(0, PLAYER::PLAYER_PED_ID(), 0, 16);
 	TASK::CLOSE_SEQUENCE_TASK(iVar0);
 	TASK::TASK_PERFORM_SEQUENCE(Local_197.f_0, iVar0);

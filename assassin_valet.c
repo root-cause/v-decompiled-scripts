@@ -20244,8 +20244,8 @@ void func_447()//Position - 0x192EB
 	PED::ADD_RELATIONSHIP_GROUP("Guards", &iLocal_1084);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("COP"), iLocal_1084);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_1084, joaat("COP"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_1084, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), iLocal_1084);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_1084, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_1084);
 	MISC::CLEAR_AREA(-1220.57f, -185.96f, 38.4f, 200f, true, false, false, false);
 	PED::SET_PED_NON_CREATION_AREA(-1298.684f, -324.0442f, -35.578f, -1113.372f, -46.1583f, 55.609f);
 	iLocal_957 = PED::ADD_SCENARIO_BLOCKING_AREA(Var0 - Vector(15f, 15f, 15f), Var0 + Vector(15f, 15f, 15f), false, true, true, true);

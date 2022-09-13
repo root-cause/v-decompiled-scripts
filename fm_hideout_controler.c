@@ -7158,7 +7158,7 @@ int func_141(int iParam0)//Position - 0x7C02
 	int iVar1;
 	
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0);
-	switch (PED::GET_RELATIONSHIP_BETWEEN_GROUPS(iVar0, joaat("player")))
+	switch (PED::GET_RELATIONSHIP_BETWEEN_GROUPS(iVar0, joaat("PLAYER")))
 	{
 		case 3:
 		case 5:
@@ -11410,7 +11410,7 @@ int func_248(int iParam0)//Position - 0xE13C
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("player");
+			return joaat("PLAYER");
 		
 		case 1:
 			return joaat("CIVMALE");
@@ -11422,55 +11422,55 @@ int func_248(int iParam0)//Position - 0xE13C
 			return joaat("COP");
 		
 		case 4:
-			return -2065892691;
+			return joaat("HATES_PLAYER");
 		
 		case 5:
-			return -1865950624;
+			return joaat("AMBIENT_GANG_LOST");
 		
 		case 6:
 			return joaat("AMBIENT_GANG_MEXICAN");
 		
 		case 7:
-			return 1166638144;
+			return joaat("AMBIENT_GANG_FAMILY");
 		
 		case 8:
-			return joaat("army");
+			return joaat("ARMY");
 		
 		case 9:
 			return joaat("SECURITY_GUARD");
 		
 		case 10:
-			return 2037579709;
+			return joaat("AMBIENT_GANG_MARABUNTE");
 		
 		case 11:
 			return joaat("AMBIENT_GANG_CULT");
 		
 		case 12:
-			return -1821475077;
+			return joaat("AMBIENT_GANG_SALVA");
 		
 		case 13:
-			return 1782292358;
+			return joaat("AMBIENT_GANG_WEICHENG");
 		
 		case 14:
-			return -1033021910;
+			return joaat("AMBIENT_GANG_BALLAS");
 		
 		case 15:
 			return joaat("AMBIENT_GANG_HILLBILLY");
 		
 		case 16:
-			return -347613984;
+			return joaat("AGGRESSIVE_INVESTIGATE");
 		
 		case 17:
 			return joaat("NO_RELATIONSHIP");
 		
 		case 18:
-			return joaat("shark");
+			return joaat("SHARK");
 		
 		case 19:
 			return joaat("PRIVATE_SECURITY");
 		
 		case 20:
-			return joaat("cat");
+			return joaat("CAT");
 		
 		default:
 	}
@@ -66517,10 +66517,10 @@ int func_1074(int iParam0, int iParam1, int iParam2)//Position - 0x51D89
 					return 1;
 					break;
 				
-				case 196632624:
-				case -1644428107:
-				case 1108198688:
-				case 810099095:
+				case joaat("MP_Award_M_Tshirt_000"):
+				case joaat("MP_Award_M_Tshirt_001"):
+				case joaat("MP_Award_F_Tshirt_000"):
+				case joaat("MP_Award_F_Tshirt_001"):
 					return 1;
 					break;
 				
@@ -66535,10 +66535,10 @@ int func_1074(int iParam0, int iParam1, int iParam2)//Position - 0x51D89
 					return 1;
 					break;
 				
-				case 1980445908:
-				case -1882429354:
-				case -1235341889:
-				case -1544517404:
+				case joaat("MP_Award_M_Tshirt_002"):
+				case joaat("MP_Award_M_Tshirt_003"):
+				case joaat("MP_Award_F_Tshirt_002"):
+				case joaat("MP_Award_F_Tshirt_003"):
 					return 1;
 					break;
 				

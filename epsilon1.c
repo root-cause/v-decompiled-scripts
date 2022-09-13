@@ -34513,7 +34513,7 @@ void func_218()//Position - 0x26CA7
 			if (func_217(iLocal_85))
 			{
 				PED::SET_PED_CAN_BE_TARGETTED(iLocal_85, false);
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_85, joaat("player"));
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_85, joaat("PLAYER"));
 				PED::SET_PED_KEEP_TASK(iLocal_85, true);
 				if (func_217(iLocal_88))
 				{

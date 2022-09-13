@@ -59961,10 +59961,10 @@ int func_447(int iParam0, int iParam1, int iParam2)//Position - 0x47029
 					return 1;
 					break;
 				
-				case 196632624:
-				case -1644428107:
-				case 1108198688:
-				case 810099095:
+				case joaat("MP_Award_M_Tshirt_000"):
+				case joaat("MP_Award_M_Tshirt_001"):
+				case joaat("MP_Award_F_Tshirt_000"):
+				case joaat("MP_Award_F_Tshirt_001"):
 					return 1;
 					break;
 				
@@ -59979,10 +59979,10 @@ int func_447(int iParam0, int iParam1, int iParam2)//Position - 0x47029
 					return 1;
 					break;
 				
-				case 1980445908:
-				case -1882429354:
-				case -1235341889:
-				case -1544517404:
+				case joaat("MP_Award_M_Tshirt_002"):
+				case joaat("MP_Award_M_Tshirt_003"):
+				case joaat("MP_Award_F_Tshirt_002"):
+				case joaat("MP_Award_F_Tshirt_003"):
 					return 1;
 					break;
 				
@@ -113592,7 +113592,7 @@ void func_709(var uParam0)//Position - 0x89EFF
 		case 1:
 			Local_820[0 /*18*/] = func_259(iLocal_325, 21.69f, -1898.34f, 21.96f, 313.933f, iLocal_358, joaat("weapon_assaultrifle"), 150, 1);
 			func_257(&Local_820, 0);
-			func_722(Local_820[0 /*18*/], 28.59f, -1889.94f, 21.48f, 2f, 0, 66.79f, -1885.01f, 22.46f, func_126(Local_820[0 /*18*/], joaat("player"), 0, 0), 0, 1, 0.25f, 0.25f, 0, 1120403456, 0);
+			func_722(Local_820[0 /*18*/], 28.59f, -1889.94f, 21.48f, 2f, 0, 66.79f, -1885.01f, 22.46f, func_126(Local_820[0 /*18*/], joaat("PLAYER"), 0, 0), 0, 1, 0.25f, 0.25f, 0, 1120403456, 0);
 			func_671(Local_820[0 /*18*/], 2, 2, 0, 13, 1);
 			func_670(Local_820[0 /*18*/], 24.07501f, -1891.494f, 20.61198f, 42.58776f, -1869.529f, 24.83541f, 14f, 0);
 			func_128(Local_820[0 /*18*/], 5, 80, joaat("FIRING_PATTERN_FULL_AUTO"));
@@ -121179,7 +121179,7 @@ int func_787(var uParam0)//Position - 0x96FBC
 						{
 							ENTITY::SET_ENTITY_AS_MISSION_ENTITY(Global_96938.f_9[1], true, true);
 							Local_360.f_0 = Global_96938.f_9[1];
-							func_634(Local_360.f_0, joaat("player"), 0, 1, 0, 0);
+							func_634(Local_360.f_0, joaat("PLAYER"), 0, 1, 0, 0);
 							CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_360.f_0, "Lamar", 0, joaat("ig_lamardavis"), 0);
 						}
 					}
@@ -121207,7 +121207,7 @@ int func_787(var uParam0)//Position - 0x96FBC
 						{
 							ENTITY::SET_ENTITY_AS_MISSION_ENTITY(Global_96938.f_9[3], true, true);
 							Local_362.f_0 = Global_96938.f_9[3];
-							func_634(Local_362.f_0, joaat("player"), 0, 1, 0, 0);
+							func_634(Local_362.f_0, joaat("PLAYER"), 0, 1, 0, 0);
 							iLocal_402[1] = Local_362.f_0;
 							CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_362.f_0, "Franklin", 0, joaat("player_one"), 0);
 						}
@@ -121333,7 +121333,7 @@ int func_787(var uParam0)//Position - 0x96FBC
 					if (ENTITY::DOES_ENTITY_EXIST(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY("Lamar", joaat("ig_lamardavis"))))
 					{
 						Local_360.f_0 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY("Lamar", joaat("ig_lamardavis")));
-						func_634(Local_360.f_0, joaat("player"), 0, 1, 0, 0);
+						func_634(Local_360.f_0, joaat("PLAYER"), 0, 1, 0, 0);
 						iLocal_679 = 1;
 					}
 				}
@@ -121347,7 +121347,7 @@ int func_787(var uParam0)//Position - 0x96FBC
 						if (ENTITY::DOES_ENTITY_EXIST(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY("Trevor", 0)))
 						{
 							Local_361.f_0 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY("Trevor", 0));
-							func_634(Local_361.f_0, joaat("player"), 0, 1, 0, 0);
+							func_634(Local_361.f_0, joaat("PLAYER"), 0, 1, 0, 0);
 							iLocal_402[2] = Local_361.f_0;
 							func_384(Local_361.f_0, 1);
 						}
@@ -121363,7 +121363,7 @@ int func_787(var uParam0)//Position - 0x96FBC
 						if (ENTITY::DOES_ENTITY_EXIST(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY("Franklin", 0)))
 						{
 							Local_362.f_0 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY("Franklin", 0));
-							func_634(Local_362.f_0, joaat("player"), 0, 1, 0, 0);
+							func_634(Local_362.f_0, joaat("PLAYER"), 0, 1, 0, 0);
 							iLocal_402[1] = Local_362.f_0;
 							func_384(Local_362.f_0, 1);
 						}
@@ -121409,7 +121409,7 @@ int func_787(var uParam0)//Position - 0x96FBC
 						if (ENTITY::DOES_ENTITY_EXIST(func_1040(2)))
 						{
 							Local_361.f_0 = func_1040(2);
-							func_634(Local_361.f_0, joaat("player"), 0, 1, 0, 0);
+							func_634(Local_361.f_0, joaat("PLAYER"), 0, 1, 0, 0);
 							iLocal_402[2] = Local_361.f_0;
 						}
 					}
@@ -121475,7 +121475,7 @@ int func_787(var uParam0)//Position - 0x96FBC
 							if (ENTITY::DOES_ENTITY_EXIST(func_1040(2)))
 							{
 								Local_361.f_0 = func_1040(2);
-								func_634(Local_361.f_0, joaat("player"), 0, 1, 0, 0);
+								func_634(Local_361.f_0, joaat("PLAYER"), 0, 1, 0, 0);
 								iLocal_402[2] = Local_361.f_0;
 							}
 						}
@@ -123298,39 +123298,39 @@ void func_833(int iParam0)//Position - 0x9A080
 	switch (iParam0)
 	{
 		case 0:
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, 1166638144, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("player"), -1865950624);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, -1865950624, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95444, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95444);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95445, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95445);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95446, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95446);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("AMBIENT_GANG_FAMILY"), joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("PLAYER"), joaat("AMBIENT_GANG_LOST"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("AMBIENT_GANG_LOST"), joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95444, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95444);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95445, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95445);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95446, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95446);
 			break;
 		
 		case 1:
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, 1166638144, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("player"), -1865950624);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, -1865950624, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95444, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95444);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95445, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95445);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95446, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95446);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("AMBIENT_GANG_FAMILY"), joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("PLAYER"), joaat("AMBIENT_GANG_LOST"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("AMBIENT_GANG_LOST"), joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95444, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95444);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95445, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95445);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95446, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95446);
 			break;
 		
 		case 2:
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, 1166638144, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), -1865950624);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, -1865950624, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95444, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95444);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95445, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95445);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95446, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95446);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("AMBIENT_GANG_FAMILY"), joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), joaat("AMBIENT_GANG_LOST"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("AMBIENT_GANG_LOST"), joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95444, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95444);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95445, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95445);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95446, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95446);
 			break;
 		
 		default:
@@ -125699,19 +125699,19 @@ int func_881(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 		PED::ADD_RELATIONSHIP_GROUP("BMX", &iLocal_357);
 		PED::ADD_RELATIONSHIP_GROUP("ENEMIES", &iLocal_358);
 		PED::ADD_RELATIONSHIP_GROUP("FILMCREW", &iLocal_359);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), iLocal_358);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_358, joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_358);
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_358, joaat("PLAYER"));
 		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_356, iLocal_358);
 		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_358, iLocal_358);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), joaat("player"));
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("player"), iLocal_359);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), iLocal_356);
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), joaat("PLAYER"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("PLAYER"), iLocal_359);
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), iLocal_356);
 		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_359, iLocal_359);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_359, joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_359, joaat("PLAYER"));
 		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_359, iLocal_356);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_356, joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_356, joaat("PLAYER"));
 		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_356, iLocal_359);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), joaat("COP"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), joaat("COP"));
 		iLocal_352 = func_915();
 		iLocal_689 = AUDIO::GET_SOUND_ID();
 		func_914(PLAYER::PLAYER_PED_ID(), 355);
@@ -125842,7 +125842,7 @@ int func_881(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 					func_894(Local_366.f_0, 351);
 					func_914(Local_366.f_0, 348);
 					func_818(Local_366.f_0, 0);
-					if (func_287(&Local_360, 0, joaat("player"), 0, 19, 0, 0, 0, 0, -1, 1))
+					if (func_287(&Local_360, 0, joaat("PLAYER"), 0, 19, 0, 0, 0, 0, -1, 1))
 					{
 						iLocal_769[6] = 1;
 						iLocal_769[4] = 1;
@@ -125852,7 +125852,7 @@ int func_881(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 							iLocal_769[13] = 1;
 							if (func_5() == 1)
 							{
-								if (func_287(&Local_361, 1, joaat("player"), 0, 2, 0, 0, 0, 0, -1, 1))
+								if (func_287(&Local_361, 1, joaat("PLAYER"), 0, 2, 0, 0, 0, 0, -1, 1))
 								{
 									iLocal_402[2] = Local_361.f_0;
 									iLocal_769[8] = 1;
@@ -125861,7 +125861,7 @@ int func_881(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 							}
 							else if (func_5() == 2)
 							{
-								if (func_287(&Local_362, 1, joaat("player"), 0, 1, 0, 0, 0, 0, -1, 1))
+								if (func_287(&Local_362, 1, joaat("PLAYER"), 0, 1, 0, 0, 0, 0, -1, 1))
 								{
 									iLocal_402[1] = Local_362.f_0;
 									iLocal_769[10] = 1;
@@ -125881,7 +125881,7 @@ int func_881(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 						VEHICLE::SET_VEHICLE_IS_CONSIDERED_BY_PLAYER(Local_366.f_0, false);
 					}
 					func_818(Local_366.f_0, 0);
-					if (func_287(&Local_360, 0, joaat("player"), 0, 19, 0, 0, 0, 0, -1, 1))
+					if (func_287(&Local_360, 0, joaat("PLAYER"), 0, 19, 0, 0, 0, 0, -1, 1))
 					{
 						iLocal_769[6] = 1;
 						iLocal_769[4] = 1;
@@ -125890,7 +125890,7 @@ int func_881(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 							iLocal_769[12] = 1;
 							if (func_5() == 1)
 							{
-								if (func_287(&Local_361, 1, joaat("player"), 0, 2, 0, 0, 0, 0, -1, 1))
+								if (func_287(&Local_361, 1, joaat("PLAYER"), 0, 2, 0, 0, 0, 0, -1, 1))
 								{
 									iLocal_402[2] = Local_361.f_0;
 									iLocal_769[8] = 1;
@@ -125899,7 +125899,7 @@ int func_881(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 							}
 							else if (func_5() == 2)
 							{
-								if (func_287(&Local_362, 1, joaat("player"), 0, 1, 0, 0, 0, 0, -1, 1))
+								if (func_287(&Local_362, 1, joaat("PLAYER"), 0, 1, 0, 0, 0, 0, -1, 1))
 								{
 									iLocal_402[1] = Local_362.f_0;
 									iLocal_769[10] = 1;
@@ -125925,7 +125925,7 @@ int func_881(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 						VEHICLE::SET_VEHICLE_IS_CONSIDERED_BY_PLAYER(Local_366.f_0, false);
 					}
 					func_818(Local_366.f_0, 0);
-					if (func_287(&Local_360, 0, joaat("player"), 1, 19, 0, 0, 0, 0, -1, 1))
+					if (func_287(&Local_360, 0, joaat("PLAYER"), 1, 19, 0, 0, 0, 0, -1, 1))
 					{
 						iLocal_769[6] = 1;
 						iLocal_769[4] = 1;
@@ -125934,7 +125934,7 @@ int func_881(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 							iLocal_769[12] = 1;
 							if (func_5() == 1)
 							{
-								if (func_287(&Local_361, 1, joaat("player"), 0, 2, 0, 0, 0, 0, -1, 1))
+								if (func_287(&Local_361, 1, joaat("PLAYER"), 0, 2, 0, 0, 0, 0, -1, 1))
 								{
 									iLocal_402[2] = Local_361.f_0;
 									iLocal_769[8] = 1;
@@ -125943,7 +125943,7 @@ int func_881(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 							}
 							else if (func_5() == 2)
 							{
-								if (func_287(&Local_362, 1, joaat("player"), 0, 1, 0, 0, 0, 0, -1, 1))
+								if (func_287(&Local_362, 1, joaat("PLAYER"), 0, 1, 0, 0, 0, 0, -1, 1))
 								{
 									iLocal_402[1] = Local_362.f_0;
 									iLocal_769[10] = 1;
@@ -125962,13 +125962,13 @@ int func_881(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 				Local_360.f_25 = 0;
 				Local_362.f_25 = 0;
 				Local_361.f_25 = 0;
-				if (func_287(&Local_360, 0, joaat("player"), 1, 19, 0, 0, 0, 0, -1, 1))
+				if (func_287(&Local_360, 0, joaat("PLAYER"), 1, 19, 0, 0, 0, 0, -1, 1))
 				{
 					iLocal_769[6] = 1;
 					iLocal_769[4] = 1;
 					if (func_5() == 1)
 					{
-						if (func_287(&Local_361, 1, joaat("player"), 1, 2, 0, 0, 0, 0, -1, 1))
+						if (func_287(&Local_361, 1, joaat("PLAYER"), 1, 2, 0, 0, 0, 0, -1, 1))
 						{
 							iLocal_402[2] = Local_361.f_0;
 							iLocal_769[8] = 1;
@@ -125977,7 +125977,7 @@ int func_881(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 					}
 					else if (func_5() == 2)
 					{
-						if (func_287(&Local_362, 1, joaat("player"), 1, 1, 0, 0, 0, 0, -1, 1))
+						if (func_287(&Local_362, 1, joaat("PLAYER"), 1, 1, 0, 0, 0, 0, -1, 1))
 						{
 							iLocal_402[1] = Local_362.f_0;
 							iLocal_769[10] = 1;
@@ -126008,14 +126008,14 @@ int func_881(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 							{
 								AUDIO::SET_VEHICLE_RADIO_ENABLED(Local_800[2 /*13*/], false);
 							}
-							if (func_287(&Local_360, 0, joaat("player"), 1, 19, 0, 0, 0, 0, -1, 1))
+							if (func_287(&Local_360, 0, joaat("PLAYER"), 1, 19, 0, 0, 0, 0, -1, 1))
 							{
 								iLocal_769[6] = 1;
 								iLocal_769[5] = 1;
 								iLocal_769[4] = 1;
 								if (func_5() == 1)
 								{
-									if (func_287(&Local_361, 1, joaat("player"), 1, 2, 0, 0, 0, 0, -1, 1))
+									if (func_287(&Local_361, 1, joaat("PLAYER"), 1, 2, 0, 0, 0, 0, -1, 1))
 									{
 										iLocal_402[2] = Local_361.f_0;
 										iLocal_769[8] = 1;
@@ -126024,7 +126024,7 @@ int func_881(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 								}
 								else if (func_5() == 2)
 								{
-									if (func_287(&Local_362, 1, joaat("player"), 1, 1, 0, 0, 0, 0, -1, 1))
+									if (func_287(&Local_362, 1, joaat("PLAYER"), 1, 1, 0, 0, 0, 0, -1, 1))
 									{
 										iLocal_402[1] = Local_362.f_0;
 										iLocal_769[10] = 1;
@@ -126056,12 +126056,12 @@ int func_881(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 							{
 								AUDIO::SET_VEHICLE_RADIO_ENABLED(Local_800[2 /*13*/], false);
 							}
-							if (func_287(&Local_360, 0, joaat("player"), 1, 19, 0, 0, 0, 0, -1, 1))
+							if (func_287(&Local_360, 0, joaat("PLAYER"), 1, 19, 0, 0, 0, 0, -1, 1))
 							{
 								iLocal_769[6] = 1;
 								if (func_5() == 1)
 								{
-									if (func_287(&Local_361, 1, joaat("player"), 1, 2, 0, 0, 0, 0, -1, 1))
+									if (func_287(&Local_361, 1, joaat("PLAYER"), 1, 2, 0, 0, 0, 0, -1, 1))
 									{
 										iLocal_402[2] = Local_361.f_0;
 										iLocal_769[8] = 1;
@@ -126070,7 +126070,7 @@ int func_881(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 								}
 								else if (func_5() == 2)
 								{
-									if (func_287(&Local_362, 1, joaat("player"), 1, 1, 0, 0, 0, 0, -1, 1))
+									if (func_287(&Local_362, 1, joaat("PLAYER"), 1, 1, 0, 0, 0, 0, -1, 1))
 									{
 										iLocal_402[1] = Local_362.f_0;
 										iLocal_769[10] = 1;
@@ -126084,7 +126084,7 @@ int func_881(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 				break;
 			
 			case 7:
-				if (func_287(&Local_360, 0, joaat("player"), 0, 19, 0, 0, 0, 0, -1, 1))
+				if (func_287(&Local_360, 0, joaat("PLAYER"), 0, 19, 0, 0, 0, 0, -1, 1))
 				{
 					iLocal_769[6] = 1;
 					*iParam1++;
@@ -126095,7 +126095,7 @@ int func_881(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 			case 9:
 				if (func_5() == 1)
 				{
-					if (func_287(&Local_361, 1, joaat("player"), 0, 2, 0, 0, 0, 0, -1, 1))
+					if (func_287(&Local_361, 1, joaat("PLAYER"), 0, 2, 0, 0, 0, 0, -1, 1))
 					{
 						iLocal_402[2] = Local_361.f_0;
 						iLocal_769[8] = 1;
@@ -126104,7 +126104,7 @@ int func_881(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 				}
 				else if (func_5() == 2)
 				{
-					if (func_287(&Local_362, 1, joaat("player"), 0, 1, 0, 0, 0, 0, -1, 1))
+					if (func_287(&Local_362, 1, joaat("PLAYER"), 0, 1, 0, 0, 0, 0, -1, 1))
 					{
 						iLocal_402[1] = Local_362.f_0;
 						iLocal_769[10] = 1;
@@ -128457,7 +128457,7 @@ void func_916(int iParam0, var uParam1)//Position - 0xA2CEE
 			}
 			if (iLocal_769[1] == 1)
 			{
-				if (((func_918(PLAYER::PLAYER_PED_ID(), 1, 89.17f, -1952.71f, 19.74f, 10f) || func_918(PLAYER::PLAYER_PED_ID(), 0, 89.17f, -1952.71f, 19.74f, 10f)) || FIRE::IS_EXPLOSION_IN_SPHERE(-1, 89.17f, -1952.71f, 19.74f, 10f)) || func_917(PLAYER::PLAYER_PED_ID(), -1033021910, 104.54f, -1939.98f, 19.8f, 50f))
+				if (((func_918(PLAYER::PLAYER_PED_ID(), 1, 89.17f, -1952.71f, 19.74f, 10f) || func_918(PLAYER::PLAYER_PED_ID(), 0, 89.17f, -1952.71f, 19.74f, 10f)) || FIRE::IS_EXPLOSION_IN_SPHERE(-1, 89.17f, -1952.71f, 19.74f, 10f)) || func_917(PLAYER::PLAYER_PED_ID(), joaat("AMBIENT_GANG_BALLAS"), 104.54f, -1939.98f, 19.8f, 50f))
 				{
 					*uParam1 = 1;
 					*iParam0 = 12;
@@ -128602,7 +128602,7 @@ void func_922(var uParam0, var uParam1)//Position - 0xA33EB
 									HUD::REMOVE_BLIP(&(Local_800[Local_362.f_28 /*13*/].f_1));
 								}
 							}
-							func_926(&Local_361, (*uParam0)[uParam0->f_5], 1, joaat("player"));
+							func_926(&Local_361, (*uParam0)[uParam0->f_5], 1, joaat("PLAYER"));
 							func_925(Local_361.f_0, joaat("weapon_pumpshotgun"), 1, 1);
 							func_924(func_1040(1));
 							ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(func_1040(2), true);
@@ -128649,7 +128649,7 @@ void func_922(var uParam0, var uParam1)//Position - 0xA33EB
 									HUD::REMOVE_BLIP(&(Local_800[Local_361.f_28 /*13*/].f_1));
 								}
 							}
-							func_926(&Local_362, (*uParam0)[uParam0->f_5], 1, joaat("player"));
+							func_926(&Local_362, (*uParam0)[uParam0->f_5], 1, joaat("PLAYER"));
 							func_925(Local_362.f_0, joaat("weapon_smg"), 1, 1);
 							func_924(func_1040(2));
 							ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(func_1040(2), false);

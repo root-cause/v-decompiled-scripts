@@ -40033,7 +40033,7 @@ int func_309(int iParam0, int iParam1, char* sParam2)//Position - 0x2CF1E
 		
 		case 2:
 			PED::ADD_RELATIONSHIP_GROUP("TOWBUDDIES", &iLocal_564);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_564, joaat("player"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_564, joaat("PLAYER"));
 			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_565[iParam1 /*20*/], iLocal_564);
 			func_313(iParam1);
 			*iParam0 = 3;
@@ -56061,7 +56061,7 @@ void func_593()//Position - 0x44AA7
 		PED::SET_PED_MODEL_IS_SUPPRESSED(iLocal_989, true);
 		PED::ADD_RELATIONSHIP_GROUP("instructorRelGroup", &iLocal_162);
 		PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_556, iLocal_162);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(0, iLocal_162, joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(0, iLocal_162, joaat("PLAYER"));
 		func_549();
 	}
 }
@@ -57666,7 +57666,7 @@ void func_639()//Position - 0x46A1A
 		PED::SET_PED_MODEL_IS_SUPPRESSED(iLocal_989, true);
 		PED::ADD_RELATIONSHIP_GROUP("instructorRelGroup", &iLocal_162);
 		PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_556, iLocal_162);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(0, iLocal_162, joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(0, iLocal_162, joaat("PLAYER"));
 		ENTITY::SET_ENTITY_COORDS(iLocal_556, Local_1014, true, false, false, true);
 		ENTITY::SET_ENTITY_HEADING(iLocal_556, fLocal_1015);
 	}

@@ -6531,7 +6531,7 @@ int func_46(int iParam0, int iParam1)//Position - 0x7821
 		case joaat("weapon_assaultsniper"):
 			switch (iParam0)
 			{
-				case 195735895:
+				case joaat("component_assaultsniper_clip_01"):
 					return 95;
 					break;
 				
@@ -6552,11 +6552,11 @@ int func_46(int iParam0, int iParam1)//Position - 0x7821
 		case joaat("weapon_assaultmg"):
 			switch (iParam0)
 			{
-				case -890514874:
+				case joaat("component_assaultmg_clip_01"):
 					return 105;
 					break;
 				
-				case -507117574:
+				case joaat("component_assaultmg_clip_02"):
 					return 106;
 					break;
 				
@@ -6573,11 +6573,11 @@ int func_46(int iParam0, int iParam1)//Position - 0x7821
 		case joaat("weapon_programmablear"):
 			switch (iParam0)
 			{
-				case -124428919:
+				case joaat("component_programmablear_clip_01"):
 					return 109;
 					break;
 				
-				case 1048471894:
+				case joaat("component_programmablear_clip_02"):
 					return 110;
 					break;
 			}
@@ -15220,7 +15220,7 @@ void func_150(char* sParam0, char[8] cParam1, char[4] cParam2, char[4] cParam3, 
 			else if (iParam6 == 22)
 			{
 				StringCopy(&cParam1, VEHICLE::GET_DISPLAY_NAME_FROM_VEHICLE_MODEL(iParam4), 16);
-				if (MISC::IS_STRING_NULL_OR_EMPTY(&cParam1) || MISC::GET_HASH_KEY(&cParam1) == -515263000)
+				if (MISC::IS_STRING_NULL_OR_EMPTY(&cParam1) || MISC::GET_HASH_KEY(&cParam1) == joaat("carnotfound"))
 				{
 					return;
 				}
@@ -21045,11 +21045,11 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					break;
 				
 				case 23:
-					func_88(iParam0, joaat("component_at_ar_barrel_01"), -1312077031, 1, 1);
+					func_88(iParam0, joaat("component_at_ar_barrel_01"), joaat("WAPBarrel"), 1, 1);
 					break;
 				
 				case 24:
-					func_88(iParam0, joaat("component_at_ar_barrel_02"), -1312077031, 2, 0);
+					func_88(iParam0, joaat("component_at_ar_barrel_02"), joaat("WAPBarrel"), 2, 0);
 					break;
 				
 				case 25:
@@ -21198,11 +21198,11 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					break;
 				
 				case 23:
-					func_88(iParam0, joaat("component_at_cr_barrel_01"), -1312077031, 1, 1);
+					func_88(iParam0, joaat("component_at_cr_barrel_01"), joaat("WAPBarrel"), 1, 1);
 					break;
 				
 				case 24:
-					func_88(iParam0, joaat("component_at_cr_barrel_02"), -1312077031, 2, 0);
+					func_88(iParam0, joaat("component_at_cr_barrel_02"), joaat("WAPBarrel"), 2, 0);
 					break;
 				
 				case 25:
@@ -21339,11 +21339,11 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					break;
 				
 				case 20:
-					func_88(iParam0, joaat("component_at_mg_barrel_01"), -1312077031, 1, 1);
+					func_88(iParam0, joaat("component_at_mg_barrel_01"), joaat("WAPBarrel"), 1, 1);
 					break;
 				
 				case 21:
-					func_88(iParam0, joaat("component_at_mg_barrel_02"), -1312077031, 2, 0);
+					func_88(iParam0, joaat("component_at_mg_barrel_02"), joaat("WAPBarrel"), 2, 0);
 					break;
 				
 				case 22:
@@ -21456,11 +21456,11 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					break;
 				
 				case 14:
-					func_88(iParam0, joaat("component_at_sr_barrel_01"), -1312077031, 1, 1);
+					func_88(iParam0, joaat("component_at_sr_barrel_01"), joaat("WAPBarrel"), 1, 1);
 					break;
 				
 				case 15:
-					func_88(iParam0, joaat("component_at_sr_barrel_02"), -1312077031, 2, 0);
+					func_88(iParam0, joaat("component_at_sr_barrel_02"), joaat("WAPBarrel"), 2, 0);
 					break;
 				
 				case 16:
@@ -21706,11 +21706,11 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					break;
 				
 				case 21:
-					func_88(iParam0, joaat("component_at_sb_barrel_01"), -1312077031, 1, 1);
+					func_88(iParam0, joaat("component_at_sb_barrel_01"), joaat("WAPBarrel"), 1, 1);
 					break;
 				
 				case 22:
-					func_88(iParam0, joaat("component_at_sb_barrel_02"), -1312077031, 2, 0);
+					func_88(iParam0, joaat("component_at_sb_barrel_02"), joaat("WAPBarrel"), 2, 0);
 					break;
 				
 				case 23:
@@ -21877,7 +21877,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 4:
-							func_88(iParam0, joaat("component_at_ar_flsh"), 953267555, 1, 0);
+							func_88(iParam0, joaat("component_at_ar_flsh"), joaat("WAPFlsh"), 1, 0);
 							break;
 						
 						case 5:
@@ -21914,7 +21914,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 3:
-							func_88(iParam0, joaat("component_at_ar_flsh"), 953267555, 1, 0);
+							func_88(iParam0, joaat("component_at_ar_flsh"), joaat("WAPFlsh"), 1, 0);
 							break;
 						
 						case 4:
@@ -21956,7 +21956,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 						break;
 					
 					case 3:
-						func_88(iParam0, joaat("component_at_ar_flsh"), 953267555, 1, 0);
+						func_88(iParam0, joaat("component_at_ar_flsh"), joaat("WAPFlsh"), 1, 0);
 						break;
 					
 					case 4:
@@ -22067,7 +22067,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 4:
-							func_88(iParam0, joaat("component_at_ar_flsh"), 953267555, 1, 0);
+							func_88(iParam0, joaat("component_at_ar_flsh"), joaat("WAPFlsh"), 1, 0);
 							break;
 						
 						case 5:
@@ -22100,7 +22100,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 3:
-							func_88(iParam0, joaat("component_at_ar_flsh"), 953267555, 1, 0);
+							func_88(iParam0, joaat("component_at_ar_flsh"), joaat("WAPFlsh"), 1, 0);
 							break;
 						
 						case 4:
@@ -22138,7 +22138,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 						break;
 					
 					case 3:
-						func_88(iParam0, joaat("component_at_ar_flsh"), 953267555, 1, 0);
+						func_88(iParam0, joaat("component_at_ar_flsh"), joaat("WAPFlsh"), 1, 0);
 						break;
 					
 					case 4:
@@ -22241,7 +22241,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 3:
-							func_88(iParam0, joaat("component_at_ar_flsh"), 953267555, 1, 0);
+							func_88(iParam0, joaat("component_at_ar_flsh"), joaat("WAPFlsh"), 1, 0);
 							break;
 						
 						case 4:
@@ -22274,7 +22274,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							break;
 						
 						case 2:
-							func_88(iParam0, joaat("component_at_ar_flsh"), 953267555, 1, 0);
+							func_88(iParam0, joaat("component_at_ar_flsh"), joaat("WAPFlsh"), 1, 0);
 							break;
 						
 						case 3:
@@ -22312,7 +22312,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 						break;
 					
 					case 2:
-						func_88(iParam0, joaat("component_at_ar_flsh"), 953267555, 1, 0);
+						func_88(iParam0, joaat("component_at_ar_flsh"), joaat("WAPFlsh"), 1, 0);
 						break;
 					
 					case 3:
@@ -22539,11 +22539,11 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					break;
 				
 				case 23:
-					func_88(iParam0, joaat("component_at_sc_barrel_01"), -1312077031, 1, 1);
+					func_88(iParam0, joaat("component_at_sc_barrel_01"), joaat("WAPBarrel"), 1, 1);
 					break;
 				
 				case 24:
-					func_88(iParam0, joaat("component_at_sc_barrel_02"), -1312077031, 2, 0);
+					func_88(iParam0, joaat("component_at_sc_barrel_02"), joaat("WAPBarrel"), 2, 0);
 					break;
 				
 				case 25:
@@ -22793,11 +22793,11 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					break;
 				
 				case 22:
-					func_88(iParam0, joaat("component_at_mrfl_barrel_01"), -1312077031, 1, 1);
+					func_88(iParam0, joaat("component_at_mrfl_barrel_01"), joaat("WAPBarrel"), 1, 1);
 					break;
 				
 				case 23:
-					func_88(iParam0, joaat("component_at_mrfl_barrel_02"), -1312077031, 2, 0);
+					func_88(iParam0, joaat("component_at_mrfl_barrel_02"), joaat("WAPBarrel"), 2, 0);
 					break;
 				
 				case 24:
@@ -23003,11 +23003,11 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					break;
 				
 				case 12:
-					func_88(iParam0, joaat("component_at_bp_barrel_01"), -1312077031, 1, 1);
+					func_88(iParam0, joaat("component_at_bp_barrel_01"), joaat("WAPBarrel"), 1, 1);
 					break;
 				
 				case 13:
-					func_88(iParam0, joaat("component_at_bp_barrel_02"), -1312077031, 2, 0);
+					func_88(iParam0, joaat("component_at_bp_barrel_02"), joaat("WAPBarrel"), 2, 0);
 					break;
 				
 				case 14:
@@ -23275,7 +23275,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 							{
 								iVar9++;
 							}
-							else if (Var16.f_0 == -1312077031)
+							else if (Var16.f_0 == joaat("WAPBarrel"))
 							{
 								iVar10++;
 							}
@@ -23321,7 +23321,7 @@ bool func_183(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 								{
 									iVar0 = iVar9;
 								}
-								else if (Var16.f_0 == -1312077031)
+								else if (Var16.f_0 == joaat("WAPBarrel"))
 								{
 									iVar0 = iVar10;
 								}
@@ -26989,23 +26989,23 @@ char* func_186(int iParam0, int iParam1)//Position - 0x1FD51
 			return "WCT_CLIP2";
 			break;
 		
-		case 195735895:
+		case joaat("component_assaultsniper_clip_01"):
 			return "WCT_CLIP1";
 			break;
 		
-		case -890514874:
+		case joaat("component_assaultmg_clip_01"):
 			return "WCT_CLIP1";
 			break;
 		
-		case -507117574:
+		case joaat("component_assaultmg_clip_02"):
 			return "WCT_CLIP2";
 			break;
 		
-		case -124428919:
+		case joaat("component_programmablear_clip_01"):
 			return "WCT_CLIP1";
 			break;
 		
-		case 1048471894:
+		case joaat("component_programmablear_clip_02"):
 			return "WCT_CLIP2";
 			break;
 		
@@ -36359,7 +36359,7 @@ char* func_235(int iParam0, bool bParam1)//Position - 0x2F952
 			return "WT_RAGE";
 			break;
 		
-		case -159960575:
+		case joaat("vehicle_weapon_torpedo"):
 			return "WT_VEH_WEP";
 			break;
 		
@@ -56253,7 +56253,7 @@ void func_446()//Position - 0x46143
 								if (Local_230.f_0 != 0 && !BitTest(Local_120.f_719, 6))
 								{
 									WEAPON::GET_WEAPON_COMPONENT_HUD_STATS(Local_230.f_0, &Var42);
-									iVar61 = func_452(&Local_230, Var0.f_0, -1312077031);
+									iVar61 = func_452(&Local_230, Var0.f_0, joaat("WAPBarrel"));
 									if (iVar61 != 0)
 									{
 										WEAPON::GET_WEAPON_COMPONENT_HUD_STATS(iVar61, &Var43);
@@ -77345,13 +77345,13 @@ char* func_534(int iParam0, int iParam1)//Position - 0x61250
 		case joaat("WAPSupp_2"):
 			return "WCD_SUB_SUPP";
 		
-		case 953267555:
-		case -1298890541:
+		case joaat("WAPFlsh"):
+		case joaat("WAPFlsh_2"):
 		case joaat("WAPFlshLasr"):
 		case joaat("WAPFlshLasr_2"):
 			return "WCD_SUB_FLASH";
 		
-		case -1312077031:
+		case joaat("WAPBarrel"):
 			return "WCD_SUB_BARL";
 		
 		case joaat("gun_root"):
@@ -150412,7 +150412,7 @@ int func_976(int iParam0, int iParam1, int iParam2, char* sParam3)//Position - 0
 		{
 			return 1;
 		}
-		else if ((Global_262145.f_13828 && (((iParam2 == 953267555 || iParam2 == -1298890541) || iParam2 == joaat("WAPFlshLasr")) || iParam2 == joaat("WAPFlshLasr_2"))) && Local_120.f_116.f_5 == 4)
+		else if ((Global_262145.f_13828 && (((iParam2 == joaat("WAPFlsh") || iParam2 == joaat("WAPFlsh_2")) || iParam2 == joaat("WAPFlshLasr")) || iParam2 == joaat("WAPFlshLasr_2"))) && Local_120.f_116.f_5 == 4)
 		{
 			return 1;
 		}
@@ -150420,7 +150420,7 @@ int func_976(int iParam0, int iParam1, int iParam2, char* sParam3)//Position - 0
 		{
 			return 1;
 		}
-		else if ((Global_262145.f_13830 && iParam2 == -1312077031) && Local_120.f_116.f_5 == 4)
+		else if ((Global_262145.f_13830 && iParam2 == joaat("WAPBarrel")) && Local_120.f_116.f_5 == 4)
 		{
 			return 1;
 		}
@@ -150770,13 +150770,13 @@ char* func_978(int iParam0, int iParam1, bool bParam2)//Position - 0xB5750
 			case joaat("WAPSupp_2"):
 				return "WCT_SUB_SUPP";
 			
-			case 953267555:
-			case -1298890541:
+			case joaat("WAPFlsh"):
+			case joaat("WAPFlsh_2"):
 			case joaat("WAPFlshLasr"):
 			case joaat("WAPFlshLasr_2"):
 				return "WCT_SUB_FLASH";
 			
-			case -1312077031:
+			case joaat("WAPBarrel"):
 				return "WCT_SUB_BARL";
 			
 			case joaat("gun_root"):
@@ -150809,13 +150809,13 @@ char* func_978(int iParam0, int iParam1, bool bParam2)//Position - 0xB5750
 			case joaat("WAPSupp_2"):
 				return "WCT_SUPPS";
 			
-			case 953267555:
-			case -1298890541:
+			case joaat("WAPFlsh"):
+			case joaat("WAPFlsh_2"):
 			case joaat("WAPFlshLasr"):
 			case joaat("WAPFlshLasr_2"):
 				return "WCT_FLASHS";
 			
-			case -1312077031:
+			case joaat("WAPBarrel"):
 				return "WCT_BARL";
 			
 			case joaat("gun_root"):
@@ -165849,8 +165849,8 @@ void func_1198()//Position - 0xC67A5
 							{
 								PED::ADD_RELATIONSHIP_GROUP(&cVar0, &iLocal_104);
 								PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_120.f_12, iLocal_104);
-								PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), iLocal_104);
-								PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_104, joaat("player"));
+								PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), iLocal_104);
+								PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_104, joaat("PLAYER"));
 								iLocal_103 = 1;
 							}
 							PED::SET_PED_AS_ENEMY(Local_120.f_12, false);
@@ -169369,7 +169369,7 @@ void func_1268()//Position - 0xCC0CE
 					{
 						PED::SET_PED_COMBAT_MOVEMENT(Local_120.f_12, 0);
 					}
-					PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_120.f_12, -2065892691);
+					PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_120.f_12, joaat("HATES_PLAYER"));
 					if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS() || Local_66.f_3 == PLAYER::PLAYER_ID())
 					{
 						TASK::CLEAR_PED_TASKS(Local_120.f_12);
@@ -169388,8 +169388,8 @@ void func_1268()//Position - 0xCC0CE
 				{
 					func_244("Telling shop staff to attack SOMEONE", -1);
 					TASK::CLEAR_PED_TASKS(Local_120.f_12);
-					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("player"), iLocal_104);
-					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, iLocal_104, joaat("player"));
+					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("PLAYER"), iLocal_104);
+					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, iLocal_104, joaat("PLAYER"));
 					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_120.f_12, false);
 				}
 				PED::SET_PED_KEEP_TASK(Local_120.f_12, true);

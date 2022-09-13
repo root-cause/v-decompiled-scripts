@@ -34899,7 +34899,7 @@ void func_232()//Position - 0x2764A
 							VEHICLE::SET_DISABLE_PRETEND_OCCUPANTS(Local_94.f_35[0], true);
 							if (func_312(Local_94.f_28[0]))
 							{
-								PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_94.f_28[0], joaat("player"));
+								PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_94.f_28[0], joaat("PLAYER"));
 								TASK::CLEAR_PED_TASKS_IMMEDIATELY(Local_94.f_28[0]);
 								PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_94.f_28[0], true);
 								PED::SET_PED_INTO_VEHICLE(Local_94.f_28[0], Local_94.f_35[0], -1);
@@ -34907,7 +34907,7 @@ void func_232()//Position - 0x2764A
 							}
 							if (func_312(Local_94.f_28[1]))
 							{
-								PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_94.f_28[1], joaat("player"));
+								PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_94.f_28[1], joaat("PLAYER"));
 								TASK::CLEAR_PED_TASKS_IMMEDIATELY(Local_94.f_28[1]);
 								PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_94.f_28[1], true);
 								PED::SET_PED_INTO_VEHICLE(Local_94.f_28[1], Local_94.f_35[0], 0);

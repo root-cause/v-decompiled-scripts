@@ -6446,7 +6446,7 @@ int func_156(int iParam0)//Position - 0x7C78
 	int iVar1;
 	
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0);
-	switch (PED::GET_RELATIONSHIP_BETWEEN_GROUPS(iVar0, joaat("player")))
+	switch (PED::GET_RELATIONSHIP_BETWEEN_GROUPS(iVar0, joaat("PLAYER")))
 	{
 		case 3:
 		case 5:

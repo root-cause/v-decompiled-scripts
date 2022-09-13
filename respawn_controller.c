@@ -9723,7 +9723,7 @@ void func_196()//Position - 0xC126
 	WEAPON::SET_PED_CURRENT_WEAPON_VISIBLE(iVar0, true, true, true, false);
 	PED::SET_PED_DIES_IN_SINKING_VEHICLE(iVar0, true);
 	PED::SET_PED_MAX_TIME_UNDERWATER(iVar0, -1f);
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar0, joaat("player"));
+	PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar0, joaat("PLAYER"));
 	PED::SET_PED_HELMET(iVar0, true);
 	PED::SET_PED_CAN_SWITCH_WEAPON(iVar0, true);
 	PED::RESET_PED_IN_VEHICLE_CONTEXT(iVar0);
@@ -51775,10 +51775,10 @@ int func_383(int iParam0, int iParam1, int iParam2)//Position - 0x3B773
 					return 1;
 					break;
 				
-				case 196632624:
-				case -1644428107:
-				case 1108198688:
-				case 810099095:
+				case joaat("MP_Award_M_Tshirt_000"):
+				case joaat("MP_Award_M_Tshirt_001"):
+				case joaat("MP_Award_F_Tshirt_000"):
+				case joaat("MP_Award_F_Tshirt_001"):
 					return 1;
 					break;
 				
@@ -51793,10 +51793,10 @@ int func_383(int iParam0, int iParam1, int iParam2)//Position - 0x3B773
 					return 1;
 					break;
 				
-				case 1980445908:
-				case -1882429354:
-				case -1235341889:
-				case -1544517404:
+				case joaat("MP_Award_M_Tshirt_002"):
+				case joaat("MP_Award_M_Tshirt_003"):
+				case joaat("MP_Award_F_Tshirt_002"):
+				case joaat("MP_Award_F_Tshirt_003"):
 					return 1;
 					break;
 				

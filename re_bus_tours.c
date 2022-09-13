@@ -7132,7 +7132,7 @@ void func_185()//Position - 0x8C1C
 	PED::ADD_RELATIONSHIP_GROUP("re_bus_tours1", &iLocal_66);
 	PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_57, iLocal_66);
 	PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_58, iLocal_66);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_66, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_66, joaat("PLAYER"));
 }
 
 void func_186(var uParam0, int iParam1, int iParam2, char* sParam3, int iParam4, int iParam5)//Position - 0x8C65

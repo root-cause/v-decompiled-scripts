@@ -755,7 +755,7 @@ void func_1()//Position - 0xDF
 						HUD::SET_GPS_FLAGS(1, 0f);
 						HUD::SET_BLIP_ROUTE(Local_274.f_8, true);
 						PED::ADD_RELATIONSHIP_GROUP("TAXI_Passenger", &(Local_274.f_413));
-						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Local_274.f_413, joaat("player"));
+						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Local_274.f_413, joaat("PLAYER"));
 						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, Local_274.f_413, joaat("COP"));
 						PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_274.f_3, Local_274.f_413);
 						TASK::TASK_LOOK_AT_ENTITY(Local_274.f_3, Local_274.f_4, -1, 2048, 4);
@@ -1135,7 +1135,7 @@ void func_11(var uParam0)//Position - 0xA74
 				PED::RESET_PED_LAST_VEHICLE(uParam0->f_3);
 			}
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(uParam0->f_3, false);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, uParam0->f_413, joaat("player"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, uParam0->f_413, joaat("PLAYER"));
 			if (ENTITY::IS_ENTITY_PLAYING_ANIM(uParam0->f_3, "oddjobs@towingcome_here", "come_here_idle_a", 3))
 			{
 				TASK::STOP_ANIM_TASK(uParam0->f_3, "oddjobs@towingcome_here", "come_here_idle_a", -8f);

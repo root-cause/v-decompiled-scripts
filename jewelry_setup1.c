@@ -39438,10 +39438,10 @@ int func_161(int iParam0, int iParam1, int iParam2)//Position - 0x2AE68
 					return 1;
 					break;
 				
-				case 196632624:
-				case -1644428107:
-				case 1108198688:
-				case 810099095:
+				case joaat("MP_Award_M_Tshirt_000"):
+				case joaat("MP_Award_M_Tshirt_001"):
+				case joaat("MP_Award_F_Tshirt_000"):
+				case joaat("MP_Award_F_Tshirt_001"):
 					return 1;
 					break;
 				
@@ -39456,10 +39456,10 @@ int func_161(int iParam0, int iParam1, int iParam2)//Position - 0x2AE68
 					return 1;
 					break;
 				
-				case 1980445908:
-				case -1882429354:
-				case -1235341889:
-				case -1544517404:
+				case joaat("MP_Award_M_Tshirt_002"):
+				case joaat("MP_Award_M_Tshirt_003"):
+				case joaat("MP_Award_F_Tshirt_002"):
+				case joaat("MP_Award_F_Tshirt_003"):
 					return 1;
 					break;
 				
@@ -87507,7 +87507,7 @@ void func_357()//Position - 0x64102
 		{
 			PED::SET_PED_CAN_BE_DRAGGED_OUT(iLocal_119, false);
 			PED::SET_PED_CAN_BE_TARGETTED(iLocal_119, false);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_119, joaat("player"));
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_119, joaat("PLAYER"));
 		}
 		PATHFIND::SET_ROADS_BACK_TO_ORIGINAL(-631.51f, -332.75f, 32f, -692.36f, -228.83f, 38f, 1);
 		if (CAM::IS_SCREEN_FADED_OUT())
@@ -94415,7 +94415,7 @@ void func_461()//Position - 0x6E038
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_119, true);
 				PED::SET_PED_CAN_BE_TARGETTED(iLocal_119, false);
 				func_317(&uLocal_167, 1, iLocal_119, "LESTER", 0, 1);
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_119, joaat("player"));
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_119, joaat("PLAYER"));
 				PED::SET_PED_GET_OUT_UPSIDE_DOWN_VEHICLE(iLocal_119, false);
 				PED::SET_PED_CONFIG_FLAG(iLocal_119, 182, true);
 			}
@@ -94452,7 +94452,7 @@ void func_461()//Position - 0x6E038
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_119, true);
 				PED::SET_PED_CAN_BE_TARGETTED(iLocal_119, false);
 				func_317(&uLocal_167, 1, iLocal_119, "LESTER", 0, 1);
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_119, joaat("player"));
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_119, joaat("PLAYER"));
 				PED::SET_PED_GET_OUT_UPSIDE_DOWN_VEHICLE(iLocal_119, false);
 				PED::SET_PED_CONFIG_FLAG(iLocal_119, 182, true);
 			}
@@ -94490,7 +94490,7 @@ void func_461()//Position - 0x6E038
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_119, true);
 				PED::SET_PED_CAN_BE_TARGETTED(iLocal_119, false);
 				func_317(&uLocal_167, 1, iLocal_119, "LESTER", 0, 1);
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_119, joaat("player"));
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_119, joaat("PLAYER"));
 				PED::SET_PED_GET_OUT_UPSIDE_DOWN_VEHICLE(iLocal_119, false);
 				PED::SET_PED_CONFIG_FLAG(iLocal_119, 182, true);
 			}
@@ -94529,7 +94529,7 @@ void func_461()//Position - 0x6E038
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_119, true);
 				PED::SET_PED_CAN_BE_TARGETTED(iLocal_119, false);
 				func_317(&uLocal_167, 1, iLocal_119, "LESTER", 0, 1);
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_119, joaat("player"));
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_119, joaat("PLAYER"));
 				PED::SET_PED_GET_OUT_UPSIDE_DOWN_VEHICLE(iLocal_119, false);
 				PED::SET_PED_CONFIG_FLAG(iLocal_119, 182, true);
 			}
@@ -94565,7 +94565,7 @@ void func_461()//Position - 0x6E038
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_119, true);
 				PED::SET_PED_CAN_BE_TARGETTED(iLocal_119, false);
 				func_317(&uLocal_167, 1, iLocal_119, "LESTER", 0, 1);
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_119, joaat("player"));
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_119, joaat("PLAYER"));
 				PED::SET_PED_GET_OUT_UPSIDE_DOWN_VEHICLE(iLocal_119, false);
 				PED::SET_PED_CONFIG_FLAG(iLocal_119, 182, true);
 			}
@@ -101251,7 +101251,7 @@ void func_537()//Position - 0x77D6B
 		{
 			PED::SET_PED_CAN_BE_DRAGGED_OUT(iLocal_119, false);
 			PED::SET_PED_CAN_BE_TARGETTED(iLocal_119, false);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_119, joaat("player"));
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_119, joaat("PLAYER"));
 		}
 		if (CAM::IS_SCREEN_FADED_OUT())
 		{
@@ -107138,7 +107138,7 @@ void func_581()//Position - 0x7FEB8
 						iLocal_119 = Global_96938.f_9[0];
 						PED::SET_PED_CAN_BE_DRAGGED_OUT(iLocal_119, false);
 						PED::SET_PED_CAN_BE_TARGETTED(iLocal_119, false);
-						PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_119, joaat("player"));
+						PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_119, joaat("PLAYER"));
 						PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_119, true);
 						PED::SET_PED_GET_OUT_UPSIDE_DOWN_VEHICLE(iLocal_119, false);
 						PED::SET_PED_CONFIG_FLAG(iLocal_119, 182, true);

@@ -13459,7 +13459,7 @@ Vector3 func_392(int iParam0)//Position - 0xE4F1
 			return 725.1831f, -1089.349f, 21.1692f;
 			break;
 		
-		case 1131590004:
+		case joaat("MP_GAR_PNS_3"):
 			return -1164.887f, -2011.105f, 12.25371f;
 			break;
 		
@@ -13471,7 +13471,7 @@ Vector3 func_392(int iParam0)//Position - 0xE4F1
 			return 106.28f, 6620.01f, 32.12f;
 			break;
 		
-		case -866958545:
+		case joaat("MP_GAR_PNS_6"):
 			return 1182.65f, 2641.9f, 38.05f;
 			break;
 	}
@@ -13524,9 +13524,9 @@ void func_393(var uParam0, int iParam1)//Position - 0xE5A5
 			break;
 		
 		case 2:
-		case 1131590004:
+		case joaat("MP_GAR_PNS_3"):
 			*uParam0 = 99;
-			uParam0->f_1 = 1131590004;
+			uParam0->f_1 = joaat("MP_GAR_PNS_3");
 			uParam0->f_2 = 2;
 			uParam0->f_3 = { -1164.887f, -2011.105f, 12.25371f };
 			uParam0->f_7 = 0;
@@ -13584,9 +13584,9 @@ void func_393(var uParam0, int iParam1)//Position - 0xE5A5
 			break;
 		
 		case 5:
-		case -866958545:
+		case joaat("MP_GAR_PNS_6"):
 			*uParam0 = 99;
-			uParam0->f_1 = -866958545;
+			uParam0->f_1 = joaat("MP_GAR_PNS_6");
 			uParam0->f_2 = 5;
 			uParam0->f_3 = { 1182.65f, 2641.9f, 38.05f };
 			uParam0->f_7 = 0;
@@ -24638,7 +24638,7 @@ char* func_566(int iParam0)//Position - 0x1EACC
 		case joaat("pickup_vehicle_weapon_smg"):
 		case joaat("pickup_weapon_assaultsmg"):
 		case joaat("pickup_vehicle_weapon_assaultsmg"):
-		case -660082779:
+		case joaat("pickup_weapon_rubbergun"):
 		case joaat("pickup_weapon_minismg"):
 		case joaat("pickup_weapon_smg_mk2"):
 		case joaat("pickup_weapon_combatmg_mk2"):
@@ -24661,7 +24661,7 @@ char* func_566(int iParam0)//Position - 0x1EACC
 		case joaat("pickup_weapon_assaultrifle_mk2"):
 		case joaat("pickup_weapon_bullpuprifle_mk2"):
 		case joaat("pickup_weapon_specialcarbine_mk2"):
-		case -1140081444:
+		case joaat("pickup_weapon_policerifle"):
 			return "ASSAULT_RIFLE";
 		
 		case joaat("pickup_weapon_pumpshotgun"):
@@ -52065,12 +52065,12 @@ int func_954(int iParam0)//Position - 0x4F1C9
 		case joaat("pickup_weapon_advancedrifle"):
 		case joaat("pickup_weapon_mg"):
 		case joaat("pickup_weapon_combatmg"):
-		case 975696266:
+		case joaat("pickup_weapon_assaultmg"):
 		case joaat("pickup_weapon_pumpshotgun"):
 		case joaat("pickup_weapon_sawnoffshotgun"):
 		case joaat("pickup_weapon_assaultshotgun"):
 		case joaat("pickup_weapon_sniperrifle"):
-		case 1061513000:
+		case joaat("pickup_weapon_assaultsniper"):
 		case joaat("pickup_weapon_heavysniper"):
 		case joaat("pickup_weapon_grenadelauncher"):
 		case joaat("pickup_weapon_rpg"):
@@ -52080,8 +52080,8 @@ int func_954(int iParam0)//Position - 0x4F1C9
 		case joaat("pickup_weapon_stickybomb"):
 		case joaat("pickup_weapon_molotov"):
 		case joaat("pickup_weapon_stungun"):
-		case -660082779:
-		case -695202657:
+		case joaat("pickup_weapon_rubbergun"):
+		case joaat("pickup_weapon_programmablear"):
 		case joaat("pickup_weapon_fireextinguisher"):
 		case joaat("pickup_weapon_petrolcan"):
 		case joaat("pickup_weapon_loudhailer"):
@@ -52109,12 +52109,12 @@ int func_954(int iParam0)//Position - 0x4F1C9
 		case joaat("pickup_ammo_grenadelauncher"):
 		case joaat("pickup_ammo_rpg"):
 		case joaat("pickup_ammo_minigun"):
-		case 610630637:
-		case -1883407879:
+		case joaat("pickup_ammo_rubbergun"):
+		case joaat("pickup_ammo_harpoon"):
 		case joaat("pickup_ammo_flaregun"):
 		case joaat("pickup_ammo_firework"):
-		case -1892342586:
-		case 2001257022:
+		case joaat("pickup_ammo_amrifle"):
+		case joaat("pickup_ammo_crossbow"):
 		case joaat("pickup_vehicle_health_standard"):
 		case joaat("pickup_vehicle_health_standard_low_glow"):
 		case joaat("pickup_vehicle_armour_standard"):
@@ -52192,7 +52192,7 @@ int func_954(int iParam0)//Position - 0x4F1C9
 		case joaat("pickup_weapon_doubleaction"):
 		case joaat("pickup_weapon_stone_hatchet"):
 		case joaat("PICKUP_WEAPON_NAVYREVOLVER"):
-		case -1140081444:
+		case joaat("pickup_weapon_policerifle"):
 		case joaat("PICKUP_WEAPON_COMBATSHOTGUN"):
 		case joaat("pickup_weapon_raycarbine"):
 		case joaat("pickup_weapon_rayminigun"):

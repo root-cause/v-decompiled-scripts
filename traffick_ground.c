@@ -7178,10 +7178,10 @@ int func_48()//Position - 0x1CBD
 				Local_5404[0 /*3*/] = { Local_4105[0 /*217*/].f_107 };
 				PED::ADD_RELATIONSHIP_GROUP("policeChasers", &iLocal_5124);
 				PED::ADD_RELATIONSHIP_GROUP("carChaserEnemies", &(Local_5115.f_36));
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, joaat("player"), iLocal_5124);
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, iLocal_5124, joaat("player"));
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), Local_5115.f_36);
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, Local_5115.f_36, joaat("player"));
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, joaat("PLAYER"), iLocal_5124);
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, iLocal_5124, joaat("PLAYER"));
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), Local_5115.f_36);
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, Local_5115.f_36, joaat("PLAYER"));
 				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("COP"), Local_5115.f_36);
 				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, Local_5115.f_36, joaat("COP"));
 				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_5124, Local_5115.f_36);
@@ -12360,8 +12360,8 @@ int func_158(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4)//P
 											iVar8 = 0;
 										}
 										TASK::TASK_HELI_MISSION(VEHICLE::GET_PED_IN_VEHICLE_SEAT((*uParam1)[iVar2], -1, false), (*uParam1)[iVar2], iVar8, PLAYER::PLAYER_PED_ID(), ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 8, 100f, -1f, ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()), 100, 50, -1f, 0);
-										PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("player"), uParam1->f_36);
-										PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, uParam1->f_36, joaat("player"));
+										PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("PLAYER"), uParam1->f_36);
+										PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, uParam1->f_36, joaat("PLAYER"));
 										func_375("bTaskedToWander = TRUE");
 										bLocal_3416 = true;
 									}
@@ -16243,8 +16243,8 @@ void func_226(var uParam0, var uParam1)//Position - 0xE0A9
 		}
 		iVar0++;
 	}
-	PED::CLEAR_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), uParam1->f_46);
-	PED::CLEAR_RELATIONSHIP_BETWEEN_GROUPS(5, uParam1->f_46, joaat("player"));
+	PED::CLEAR_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), uParam1->f_46);
+	PED::CLEAR_RELATIONSHIP_BETWEEN_GROUPS(5, uParam1->f_46, joaat("PLAYER"));
 }
 
 void func_227(var uParam0, var uParam1, int iParam2, var uParam3, char* sParam4, var uParam5, var uParam6)//Position - 0xE187
@@ -17696,8 +17696,8 @@ void func_258(var uParam0, var uParam1, var uParam2)//Position - 0x10392
 	if (!*uParam2)
 	{
 		PED::ADD_RELATIONSHIP_GROUP("SmugglerEnemies", &(uParam1->f_46));
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), uParam1->f_46);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, uParam1->f_46, joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), uParam1->f_46);
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, uParam1->f_46, joaat("PLAYER"));
 		func_375("SETTING SMUGGLERS RELATIONSHIP GROUPS");
 		iVar0 = 0;
 		while (iVar0 < uParam0->f_1136)
@@ -18004,8 +18004,8 @@ int func_264(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, bo
 			if (!uParam4->f_35)
 			{
 				PED::ADD_RELATIONSHIP_GROUP("ambushGroup", &(uParam4->f_22));
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), uParam4->f_22);
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, uParam4->f_22, joaat("player"));
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), uParam4->f_22);
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, uParam4->f_22, joaat("PLAYER"));
 				func_272(uParam0, uParam4, uParam2);
 				AUDIO::TRIGGER_MUSIC_EVENT("OJDG1_PACKAGE");
 				func_375("SETTING MAX WANTERD LEVEL TO ZERO VIA CREATE AMBUSH");

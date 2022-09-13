@@ -37706,13 +37706,13 @@ void func_240()//Position - 0x30618
 			{
 				if (PLAYER::IS_PLAYER_WANTED_LEVEL_GREATER(PLAYER::PLAYER_ID(), 0))
 				{
-					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, 1166638144, joaat("COP"));
+					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("AMBIENT_GANG_FAMILY"), joaat("COP"));
 					iLocal_70 = 1;
 				}
 			}
 			else if (!PLAYER::IS_PLAYER_WANTED_LEVEL_GREATER(PLAYER::PLAYER_ID(), 0))
 			{
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, 1166638144, joaat("COP"));
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("AMBIENT_GANG_FAMILY"), joaat("COP"));
 				iLocal_70 = 0;
 			}
 			break;
@@ -48453,7 +48453,7 @@ void func_388(var uParam0)//Position - 0x3F509
 	if (!PED::IS_PED_INJURED((*uParam0)[uParam0->f_5]))
 	{
 		PED::SET_PED_CAN_BE_TARGETTED((*uParam0)[uParam0->f_5], false);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH((*uParam0)[uParam0->f_5], joaat("player"));
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH((*uParam0)[uParam0->f_5], joaat("PLAYER"));
 	}
 }
 
@@ -61405,10 +61405,10 @@ int func_458(int iParam0, int iParam1, int iParam2)//Position - 0x4FA06
 					return 1;
 					break;
 				
-				case 196632624:
-				case -1644428107:
-				case 1108198688:
-				case 810099095:
+				case joaat("MP_Award_M_Tshirt_000"):
+				case joaat("MP_Award_M_Tshirt_001"):
+				case joaat("MP_Award_F_Tshirt_000"):
+				case joaat("MP_Award_F_Tshirt_001"):
 					return 1;
 					break;
 				
@@ -61423,10 +61423,10 @@ int func_458(int iParam0, int iParam1, int iParam2)//Position - 0x4FA06
 					return 1;
 					break;
 				
-				case 1980445908:
-				case -1882429354:
-				case -1235341889:
-				case -1544517404:
+				case joaat("MP_Award_M_Tshirt_002"):
+				case joaat("MP_Award_M_Tshirt_003"):
+				case joaat("MP_Award_F_Tshirt_002"):
+				case joaat("MP_Award_F_Tshirt_003"):
 					return 1;
 					break;
 				
@@ -110242,7 +110242,7 @@ void func_687(int iParam0, int iParam1)//Position - 0x88C32
 
 void func_688()//Position - 0x88C46
 {
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("army"), joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("ARMY"), joaat("PLAYER"));
 }
 
 void func_689()//Position - 0x88C5E

@@ -495,7 +495,7 @@ void func_2()//Position - 0x325
 						HUD::REMOVE_BLIP(&iLocal_265);
 						iLocal_248 = 1;
 						bLocal_48 = true;
-						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_241, joaat("player"));
+						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_241, joaat("PLAYER"));
 						if (!PED::IS_PED_INJURED(iLocal_219))
 						{
 							TASK::TASK_COMBAT_PED(iLocal_219, PLAYER::PLAYER_PED_ID(), 0, 16);
@@ -521,7 +521,7 @@ void func_2()//Position - 0x325
 						HUD::REMOVE_BLIP(&iLocal_266);
 						iLocal_247 = 1;
 						bLocal_48 = true;
-						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_241, joaat("player"));
+						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_241, joaat("PLAYER"));
 						if (!PED::IS_PED_INJURED(iLocal_218))
 						{
 							TASK::TASK_COMBAT_PED(iLocal_218, PLAYER::PLAYER_PED_ID(), 0, 16);
@@ -612,7 +612,7 @@ void func_2()//Position - 0x325
 				}
 				iVar0++;
 			}
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_242, joaat("player"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_242, joaat("PLAYER"));
 			MISC::ENABLE_DISPATCH_SERVICE(5, true);
 			MISC::ENABLE_DISPATCH_SERVICE(3, true);
 			if (ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), 267.94f, 2700.48f, 43.6f, 15f, 15f, 15f, false, true, 0))
@@ -2522,7 +2522,7 @@ void func_60()//Position - 0x2BC0
 				if (((((ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(iLocal_263, PLAYER::PLAYER_PED_ID(), true) && PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false)) && ENTITY::IS_ENTITY_AT_ENTITY(iLocal_263, PLAYER::PLAYER_PED_ID(), 10f, 10f, 10f, false, true, 0)) || PED::IS_PED_BEING_JACKED(iLocal_218)) || PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), iLocal_263, false)) || WEAPON::HAS_VEHICLE_GOT_PROJECTILE_ATTACHED(PLAYER::PLAYER_PED_ID(), iLocal_263, joaat("weapon_stickybomb"), -1))
 				{
 					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_218, false);
-					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_241, joaat("player"));
+					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_241, joaat("PLAYER"));
 					if (PED::IS_PED_IN_ANY_VEHICLE(iLocal_218, false))
 					{
 						WEAPON::GIVE_WEAPON_TO_PED(iLocal_218, joaat("weapon_microsmg"), 200, true, true);
@@ -2545,7 +2545,7 @@ void func_60()//Position - 0x2BC0
 			}
 			if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(iLocal_218, PLAYER::PLAYER_PED_ID(), true))
 			{
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_241, joaat("player"));
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_241, joaat("PLAYER"));
 				if ((PED::IS_PED_IN_ANY_VEHICLE(iLocal_218, false) && PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false)) && !ENTITY::IS_ENTITY_DEAD(iLocal_263, false))
 				{
 					if (ENTITY::IS_ENTITY_AT_ENTITY(iLocal_263, PLAYER::PLAYER_PED_ID(), 10f, 10f, 10f, false, true, 0))
@@ -2582,7 +2582,7 @@ void func_60()//Position - 0x2BC0
 				iLocal_263 = PED::GET_VEHICLE_PED_IS_IN(iLocal_219, false);
 				if (((ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(iLocal_263, PLAYER::PLAYER_PED_ID(), true) || PED::IS_PED_BEING_JACKED(iLocal_219)) || PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), iLocal_263, false)) || WEAPON::HAS_VEHICLE_GOT_PROJECTILE_ATTACHED(PLAYER::PLAYER_PED_ID(), iLocal_263, joaat("weapon_stickybomb"), -1))
 				{
-					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_241, joaat("player"));
+					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_241, joaat("PLAYER"));
 					if (!PED::IS_PED_INJURED(iLocal_218))
 					{
 						if ((PED::IS_PED_IN_ANY_VEHICLE(iLocal_218, false) && PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false)) && !ENTITY::IS_ENTITY_DEAD(iLocal_263, false))
@@ -2614,7 +2614,7 @@ void func_60()//Position - 0x2BC0
 			}
 			if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(iLocal_219, PLAYER::PLAYER_PED_ID(), true))
 			{
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_241, joaat("player"));
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_241, joaat("PLAYER"));
 				if (!PED::IS_PED_INJURED(iLocal_218))
 				{
 					if ((PED::IS_PED_IN_ANY_VEHICLE(iLocal_218, false) && PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false)) && !ENTITY::IS_ENTITY_DEAD(iLocal_263, false))
@@ -2857,7 +2857,7 @@ void func_65()//Position - 0x362E
 		func_59(&uLocal_52, 4);
 		iLocal_246 = 1;
 		iLocal_238 = 1;
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_241, joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_241, joaat("PLAYER"));
 		if (!bLocal_48 && bLocal_47)
 		{
 			HUD::REMOVE_BLIP(&iLocal_265);
@@ -3037,7 +3037,7 @@ void func_69()//Position - 0x3A62
 		{
 			bLocal_48 = true;
 			SYSTEM::SETTIMERA(0);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_241, joaat("player"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_241, joaat("PLAYER"));
 			if (!PED::IS_PED_INJURED(iLocal_218))
 			{
 				TASK::TASK_COMBAT_PED(iLocal_218, PLAYER::PLAYER_PED_ID(), 0, 16);
@@ -3150,7 +3150,7 @@ void func_69()//Position - 0x3A62
 		{
 			bLocal_48 = true;
 			SYSTEM::SETTIMERA(0);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_241, joaat("player"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_241, joaat("PLAYER"));
 			if (!PED::IS_PED_INJURED(iLocal_219))
 			{
 				TASK::TASK_COMBAT_PED(iLocal_219, PLAYER::PLAYER_PED_ID(), 0, 16);
@@ -3323,7 +3323,7 @@ void func_69()//Position - 0x3A62
 		{
 			bLocal_48 = true;
 			SYSTEM::SETTIMERA(0);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_241, joaat("player"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_241, joaat("PLAYER"));
 			if (!PED::IS_PED_INJURED(iLocal_218))
 			{
 				TASK::TASK_COMBAT_PED(iLocal_218, PLAYER::PLAYER_PED_ID(), 0, 16);
@@ -3492,7 +3492,7 @@ void func_73()//Position - 0x452B
 									bLocal_47 = true;
 									if (!ENTITY::IS_ENTITY_DEAD(iLocal_244, false))
 									{
-										PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_242, joaat("player"));
+										PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_242, joaat("PLAYER"));
 										iVar0 = 0;
 										while (iVar0 < iLocal_222)
 										{
@@ -3675,7 +3675,7 @@ void func_73()//Position - 0x452B
 				}
 				if (ENTITY::IS_ENTITY_TOUCHING_ENTITY(PLAYER::PLAYER_PED_ID(), iLocal_222[iVar1]))
 				{
-					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, iLocal_242, joaat("player"));
+					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, iLocal_242, joaat("PLAYER"));
 					bLocal_47 = true;
 				}
 			}
@@ -3837,7 +3837,7 @@ void func_73()//Position - 0x452B
 				func_39(&uLocal_52, "recsbau", "recsb_sscen3", 4, 0, 0, 0);
 			}
 		}
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_242, joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_242, joaat("PLAYER"));
 		if (!func_87())
 		{
 			SYSTEM::SETTIMERA(0);
@@ -3870,7 +3870,7 @@ void func_73()//Position - 0x452B
 		if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(iLocal_220, PLAYER::PLAYER_PED_ID(), true))
 		{
 			PLAYER::SET_POLICE_IGNORE_PLAYER(PLAYER::PLAYER_ID(), false);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_242, joaat("player"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_242, joaat("PLAYER"));
 			bLocal_47 = true;
 		}
 	}
@@ -3879,7 +3879,7 @@ void func_73()//Position - 0x452B
 		if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(iLocal_221, PLAYER::PLAYER_PED_ID(), true))
 		{
 			PLAYER::SET_POLICE_IGNORE_PLAYER(PLAYER::PLAYER_ID(), false);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_242, joaat("player"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_242, joaat("PLAYER"));
 			bLocal_47 = true;
 		}
 	}
@@ -3887,7 +3887,7 @@ void func_73()//Position - 0x452B
 	{
 		bLocal_47 = true;
 		PLAYER::SET_POLICE_IGNORE_PLAYER(PLAYER::PLAYER_ID(), false);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_242, joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_242, joaat("PLAYER"));
 	}
 }
 
@@ -4572,7 +4572,7 @@ void func_90()//Position - 0x5EB3
 	{
 		if (!iLocal_50)
 		{
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_241, joaat("player"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_241, joaat("PLAYER"));
 			if (!PED::IS_PED_INJURED(iLocal_218))
 			{
 				if (HUD::DOES_BLIP_EXIST(iLocal_265))
@@ -4611,7 +4611,7 @@ void func_90()//Position - 0x5EB3
 		{
 			if (!iLocal_51)
 			{
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_242, joaat("player"));
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_242, joaat("PLAYER"));
 				iVar0 = 0;
 				while (iVar0 < iLocal_222)
 				{
@@ -4661,7 +4661,7 @@ void func_90()//Position - 0x5EB3
 		}
 		if (!iLocal_51)
 		{
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_242, joaat("player"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_242, joaat("PLAYER"));
 			iVar0 = 0;
 			while (iVar0 < iLocal_222)
 			{
@@ -4802,8 +4802,8 @@ void func_91()//Position - 0x61F2
 		MISC::ENABLE_DISPATCH_SERVICE(3, false);
 		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_242, joaat("COP"));
 		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("COP"), iLocal_242);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_242, joaat("player"));
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_241, joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_242, joaat("PLAYER"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_241, joaat("PLAYER"));
 		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_242, iLocal_241);
 		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("COP"), iLocal_241);
 		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_241, iLocal_242);

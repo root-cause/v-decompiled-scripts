@@ -43092,7 +43092,7 @@ int func_409(int iParam0, int iParam1)//Position - 0x32986
 
 void func_410()//Position - 0x329A6
 {
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_54, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_54, joaat("PLAYER"));
 	if (func_343(PLAYER::PLAYER_PED_ID(), -726.45f, 33.33f, 43.23f, 1) <= func_343(PLAYER::PLAYER_PED_ID(), -666.55f, 49.19f, 42.08f, 1))
 	{
 		func_349(&uLocal_58, "EPS8AU", "EPS8_AMA1", 8, 0, 0, 0);

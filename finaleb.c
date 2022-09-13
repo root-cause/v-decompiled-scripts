@@ -49960,10 +49960,10 @@ int func_349(int iParam0, int iParam1, int iParam2)//Position - 0x38DF5
 					return 1;
 					break;
 				
-				case 196632624:
-				case -1644428107:
-				case 1108198688:
-				case 810099095:
+				case joaat("MP_Award_M_Tshirt_000"):
+				case joaat("MP_Award_M_Tshirt_001"):
+				case joaat("MP_Award_F_Tshirt_000"):
+				case joaat("MP_Award_F_Tshirt_001"):
 					return 1;
 					break;
 				
@@ -49978,10 +49978,10 @@ int func_349(int iParam0, int iParam1, int iParam2)//Position - 0x38DF5
 					return 1;
 					break;
 				
-				case 1980445908:
-				case -1882429354:
-				case -1235341889:
-				case -1544517404:
+				case joaat("MP_Award_M_Tshirt_002"):
+				case joaat("MP_Award_M_Tshirt_003"):
+				case joaat("MP_Award_F_Tshirt_002"):
+				case joaat("MP_Award_F_Tshirt_003"):
 					return 1;
 					break;
 				
@@ -111358,8 +111358,8 @@ void func_743()//Position - 0x85B55
 	VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(joaat("tailgater"), true);
 	VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(joaat("buffalo2"), true);
 	Local_51[0 /*5*/] = PLAYER::PLAYER_PED_ID();
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_259, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), iLocal_259);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_259, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_259);
 	PED::ADD_SCENARIO_BLOCKING_AREA(2644.987f, 1340.449f, 20f, 2839.826f, 1728.39f, 25f, false, true, true, true);
 	TASK::ASSISTED_MOVEMENT_REQUEST_ROUTE("finalB1sta");
 	TASK::ASSISTED_MOVEMENT_REQUEST_ROUTE("finaBroute1A");

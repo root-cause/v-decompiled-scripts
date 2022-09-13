@@ -287,8 +287,8 @@ void __EntryFunction__()//Position - 0x0
 				{
 					ENTITY::SET_ENTITY_AS_MISSION_ENTITY(iLocal_46, false, true);
 					PED::ADD_RELATIONSHIP_GROUP("Lester Group", &iLocal_50);
-					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_50, joaat("player"));
-					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), iLocal_50);
+					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_50, joaat("PLAYER"));
+					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), iLocal_50);
 					PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_46, iLocal_50);
 					PED::SET_PED_DIES_WHEN_INJURED(iLocal_46, false);
 					PED::SET_PED_CAN_BE_TARGETTED(iLocal_46, false);

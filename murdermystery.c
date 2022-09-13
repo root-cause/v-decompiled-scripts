@@ -3874,7 +3874,7 @@ void func_84()//Position - 0x589C
 			PED::SET_PED_CONFIG_FLAG(iLocal_66, 118, false);
 			PED::SET_PED_CONFIG_FLAG(iLocal_66, 208, true);
 			ENTITY::SET_ENTITY_INVINCIBLE(iLocal_66, true);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_66, joaat("player"));
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_66, joaat("PLAYER"));
 			break;
 		
 		case 5:
@@ -3892,7 +3892,7 @@ void func_84()//Position - 0x589C
 			AUDIO::STOP_PED_SPEAKING(iLocal_64, true);
 			AUDIO::DISABLE_PED_PAIN_AUDIO(iLocal_64, true);
 			PED::EXPLODE_PED_HEAD(iLocal_64, joaat("weapon_sniperrifle"));
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_64, joaat("player"));
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_64, joaat("PLAYER"));
 			iLocal_65 = OBJECT::CREATE_OBJECT_NO_OFFSET(joaat("prop_vintage_filmcan"), -543.71f, 1986.2f, 126.05f, true, true, false);
 			break;
 	}

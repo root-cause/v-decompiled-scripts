@@ -43388,8 +43388,8 @@ void func_404(int* iParam0)//Position - 0x31A08
 void func_405()//Position - 0x31A40
 {
 	PED::ADD_RELATIONSHIP_GROUP("SolomonREL", &iLocal_236);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_236, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), iLocal_236);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_236, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), iLocal_236);
 	if (func_460(iLocal_233))
 	{
 		PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_233, iLocal_236);

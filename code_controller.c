@@ -41468,7 +41468,7 @@ int func_494(int iParam0, int iParam1)//Position - 0x2FA26
 		case joaat("weapon_assaultsniper"):
 			switch (iParam0)
 			{
-				case 195735895:
+				case joaat("component_assaultsniper_clip_01"):
 					return 95;
 					break;
 				
@@ -41489,11 +41489,11 @@ int func_494(int iParam0, int iParam1)//Position - 0x2FA26
 		case joaat("weapon_assaultmg"):
 			switch (iParam0)
 			{
-				case -890514874:
+				case joaat("component_assaultmg_clip_01"):
 					return 105;
 					break;
 				
-				case -507117574:
+				case joaat("component_assaultmg_clip_02"):
 					return 106;
 					break;
 				
@@ -41510,11 +41510,11 @@ int func_494(int iParam0, int iParam1)//Position - 0x2FA26
 		case joaat("weapon_programmablear"):
 			switch (iParam0)
 			{
-				case -124428919:
+				case joaat("component_programmablear_clip_01"):
 					return 109;
 					break;
 				
-				case 1048471894:
+				case joaat("component_programmablear_clip_02"):
 					return 110;
 					break;
 			}

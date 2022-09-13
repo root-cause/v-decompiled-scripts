@@ -513,7 +513,7 @@ void __EntryFunction__()//Position - 0x0
 		AUDIO::START_AUDIO_SCENE("EPSILONISM_04_MIX");
 	}
 	AUDIO::REGISTER_SCRIPT_WITH_AUDIO(0);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), joaat("PLAYER"));
 	PLAYER::SET_WANTED_LEVEL_MULTIPLIER(0.5f);
 	iLocal_290 = GRAPHICS::_0xBE197EAA669238F4(1751.65f, 4676.77f, 43.03f, 1.5f);
 	func_402();
@@ -41960,7 +41960,7 @@ int func_380(var uParam0, struct<3> Param1, float fParam2, int iParam3, int iPar
 	if (func_350(*uParam0))
 	{
 		PED::SET_PED_CONFIG_FLAG(*uParam0, 132, true);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(*uParam0, joaat("player"));
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(*uParam0, joaat("PLAYER"));
 		ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(*uParam0, true);
 		PED::SET_PED_CAN_BE_TARGETTED(*uParam0, false);
 		PED::SET_PED_CAN_RAGDOLL_FROM_PLAYER_IMPACT(*uParam0, true);

@@ -22798,7 +22798,7 @@ int func_353(int iParam0, char* sParam1, int iParam2)//Position - 0x18F71
 	StringCopy(&cVar0, sParam1, 64);
 	StringIntConCat(&cVar0, iParam0, 64);
 	StringCopy(&cVar1, VEHICLE::GET_DISPLAY_NAME_FROM_VEHICLE_MODEL(iParam2), 16);
-	if (MISC::IS_STRING_NULL_OR_EMPTY(&cVar1) || MISC::GET_HASH_KEY(&cVar1) == -515263000)
+	if (MISC::IS_STRING_NULL_OR_EMPTY(&cVar1) || MISC::GET_HASH_KEY(&cVar1) == joaat("carnotfound"))
 	{
 		return 1;
 	}
@@ -28819,7 +28819,7 @@ void func_397(char* sParam0, char[8] cParam1, char[4] cParam2, char[4] cParam3, 
 			else if (iParam6 == 22)
 			{
 				StringCopy(&cParam1, VEHICLE::GET_DISPLAY_NAME_FROM_VEHICLE_MODEL(iParam4), 16);
-				if (MISC::IS_STRING_NULL_OR_EMPTY(&cParam1) || MISC::GET_HASH_KEY(&cParam1) == -515263000)
+				if (MISC::IS_STRING_NULL_OR_EMPTY(&cParam1) || MISC::GET_HASH_KEY(&cParam1) == joaat("carnotfound"))
 				{
 					return;
 				}
@@ -43391,7 +43391,7 @@ void func_642(char* sParam0, int iParam1, int iParam2, int iParam3, bool bParam4
 		return;
 	}
 	StringCopy(&Var1, func_654(iParam1), 16);
-	if (MISC::IS_STRING_NULL_OR_EMPTY(&Var1) || MISC::GET_HASH_KEY(&Var1) == -515263000)
+	if (MISC::IS_STRING_NULL_OR_EMPTY(&Var1) || MISC::GET_HASH_KEY(&Var1) == joaat("carnotfound"))
 	{
 		IntToString(sParam0, 0, 64);
 		return;
@@ -61598,7 +61598,7 @@ int func_910(int iParam0, int iParam1)//Position - 0x43EF1
 		case joaat("weapon_assaultsniper"):
 			switch (iParam0)
 			{
-				case 195735895:
+				case joaat("component_assaultsniper_clip_01"):
 					return 95;
 					break;
 				
@@ -61619,11 +61619,11 @@ int func_910(int iParam0, int iParam1)//Position - 0x43EF1
 		case joaat("weapon_assaultmg"):
 			switch (iParam0)
 			{
-				case -890514874:
+				case joaat("component_assaultmg_clip_01"):
 					return 105;
 					break;
 				
-				case -507117574:
+				case joaat("component_assaultmg_clip_02"):
 					return 106;
 					break;
 				
@@ -61640,11 +61640,11 @@ int func_910(int iParam0, int iParam1)//Position - 0x43EF1
 		case joaat("weapon_programmablear"):
 			switch (iParam0)
 			{
-				case -124428919:
+				case joaat("component_programmablear_clip_01"):
 					return 109;
 					break;
 				
-				case 1048471894:
+				case joaat("component_programmablear_clip_02"):
 					return 110;
 					break;
 			}

@@ -37458,14 +37458,14 @@ void func_289()//Position - 0x2A1E4
 					if (!PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_60) || PED::GET_SYNCHRONIZED_SCENE_PHASE(iLocal_60) >= 0.893f)
 					{
 						iLocal_103 = 1;
-						PED::CLEAR_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("player"));
+						PED::CLEAR_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("PLAYER"));
 						func_235();
 						func_232();
 					}
 					if (iLocal_82 && !func_251(PLAYER::PLAYER_PED_ID(), 1087.297f, -791.3091f, 57.2626f, 60f, 1))
 					{
 						iLocal_103 = 1;
-						PED::CLEAR_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("player"));
+						PED::CLEAR_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("PLAYER"));
 						func_235();
 						func_232();
 					}
@@ -37583,7 +37583,7 @@ void func_289()//Position - 0x2A1E4
 							}
 							if (iLocal_94 == 0)
 							{
-								PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("player"));
+								PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("PLAYER"));
 								iLocal_94 = 1;
 							}
 							iLocal_140 = 2;
@@ -37606,7 +37606,7 @@ void func_289()//Position - 0x2A1E4
 				{
 					if (iLocal_94 == 0)
 					{
-						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("player"));
+						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("PLAYER"));
 						iLocal_94 = 1;
 					}
 					if (func_234(Local_61[3 /*9*/]))
@@ -37634,7 +37634,7 @@ void func_289()//Position - 0x2A1E4
 							TASK::TASK_COMBAT_PED(Local_61[0 /*9*/], PLAYER::PLAYER_PED_ID(), 0, 16);
 						}
 					}
-					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("player"));
+					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("PLAYER"));
 					iLocal_94 = 1;
 				}
 				if (iLocal_94 == 0)
@@ -37648,12 +37648,12 @@ void func_289()//Position - 0x2A1E4
 								TASK::TASK_COMBAT_PED(Local_61[0 /*9*/], PLAYER::PLAYER_PED_ID(), 0, 16);
 							}
 						}
-						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("player"));
+						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("PLAYER"));
 						iLocal_94 = 1;
 					}
 					if (((ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 1071.381f, -793.3854f, 57.05151f, 1101.543f, -793.3998f, 61.01268f, 11.75f, false, true, 0) || ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 1095.905f, -786.5956f, 57.1032f, 1114.59f, -786.7163f, 60.15023f, 15.25f, false, true, 0)) || (ENTITY::DOES_ENTITY_EXIST(PLAYER::GET_PLAYERS_LAST_VEHICLE()) && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::GET_PLAYERS_LAST_VEHICLE(), 1071.381f, -793.3854f, 57.05151f, 1101.543f, -793.3998f, 61.01268f, 11.75f, false, true, 0))) || (ENTITY::DOES_ENTITY_EXIST(PLAYER::GET_PLAYERS_LAST_VEHICLE()) && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::GET_PLAYERS_LAST_VEHICLE(), 1095.905f, -786.5956f, 57.1032f, 1114.59f, -786.7163f, 60.15023f, 15.25f, false, true, 0)))
 					{
-						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("player"));
+						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("PLAYER"));
 						iLocal_94 = 1;
 					}
 					if (PED::IS_PED_IN_ANY_HELI(PLAYER::PLAYER_PED_ID()) || PED::IS_PED_IN_ANY_PLANE(PLAYER::PLAYER_PED_ID()))
@@ -37667,7 +37667,7 @@ void func_289()//Position - 0x2A1E4
 									TASK::TASK_COMBAT_PED(Local_61[0 /*9*/], PLAYER::PLAYER_PED_ID(), 0, 16);
 								}
 							}
-							PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("player"));
+							PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("PLAYER"));
 							iLocal_94 = 1;
 						}
 					}
@@ -37680,7 +37680,7 @@ void func_289()//Position - 0x2A1E4
 						{
 							TASK::TASK_COMBAT_PED(Local_61[0 /*9*/], PLAYER::PLAYER_PED_ID(), 0, 16);
 						}
-						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("player"));
+						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("PLAYER"));
 						iLocal_94 = 1;
 					}
 				}
@@ -37811,7 +37811,7 @@ void func_289()//Position - 0x2A1E4
 						}
 						if (iLocal_94 == 0)
 						{
-							PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("player"));
+							PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("PLAYER"));
 							iLocal_94 = 1;
 						}
 					}
@@ -37859,7 +37859,7 @@ void func_289()//Position - 0x2A1E4
 					{
 						if (iLocal_94 == 0)
 						{
-							PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("player"));
+							PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("PLAYER"));
 							iLocal_94 = 1;
 						}
 						if (func_234(Local_61[0 /*9*/]))
@@ -37875,7 +37875,7 @@ void func_289()//Position - 0x2A1E4
 				{
 					if (iLocal_94 == 0)
 					{
-						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("player"));
+						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("PLAYER"));
 						iLocal_94 = 1;
 					}
 					if (func_234(Local_61[0 /*9*/]))
@@ -37963,7 +37963,7 @@ void func_289()//Position - 0x2A1E4
 				}
 				else if (iLocal_94 == 0)
 				{
-					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("player"));
+					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("PLAYER"));
 					iLocal_94 = 1;
 				}
 				iVar2++;
@@ -45311,7 +45311,7 @@ void func_414()//Position - 0x35522
 					}
 					bLocal_80 = false;
 					func_285();
-					PED::CLEAR_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("player"));
+					PED::CLEAR_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("PLAYER"));
 					func_430(&iVar0, 1027.591f, -550.1744f, 59.2083f, 175.1857f, 1, 0, 0, 1, 1, joaat("asterope"), 0, 145, 1);
 					func_428(iVar0, -1, 1);
 					func_427();
@@ -45332,7 +45332,7 @@ void func_414()//Position - 0x35522
 					}
 					bLocal_80 = false;
 					func_285();
-					PED::CLEAR_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("player"));
+					PED::CLEAR_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("PLAYER"));
 					func_430(&iVar0, 1077.736f, -765.1624f, 56.6271f, 271.4277f, 0, 0, 0, 1, 1, joaat("buffalo"), 0, 145, 1);
 					iLocal_44 = 2;
 					iLocal_43 = 3;
@@ -45347,7 +45347,7 @@ void func_414()//Position - 0x35522
 				
 				case 2:
 					func_537(1066.643f, -774.0832f, 57.1322f, 245.0544f, 1, 0);
-					PED::CLEAR_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("player"));
+					PED::CLEAR_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_417, joaat("PLAYER"));
 					func_428(0, -1, 1);
 					func_426();
 					SYSTEM::WAIT(600);

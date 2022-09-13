@@ -378,7 +378,7 @@ void func_12()//Position - 0x561
 		PED::SET_PED_MONEY(iLocal_43, 0);
 		PED::SET_PED_CAN_BE_TARGETTED(iLocal_43, false);
 		PED::SET_PED_NAME_DEBUG(iLocal_43, "POSTBARRY");
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_43, joaat("player"));
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_43, joaat("PLAYER"));
 		ENTITY::SET_ENTITY_COLLISION(iLocal_43, false, false);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_43, true);
 		ENTITY::SET_ENTITY_COORDS(iLocal_43, Local_50, true, false, false, true);

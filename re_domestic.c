@@ -568,7 +568,7 @@ void func_1()//Position - 0x4AB
 			OBJECT::DELETE_OBJECT(&(iLocal_91[8]));
 		}
 		VEHICLE::SET_ALL_VEHICLE_GENERATORS_ACTIVE_IN_AREA(Local_57 - Vector(10f, 10f, 10f), Local_57 + Vector(10f, 10f, 10f), true, true);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, iLocal_111, joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, iLocal_111, joaat("PLAYER"));
 		if (bLocal_55)
 		{
 			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_78);
@@ -5095,7 +5095,7 @@ void func_131()//Position - 0x53B2
 				{
 					if (func_130())
 					{
-						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, iLocal_111, joaat("player"));
+						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, iLocal_111, joaat("PLAYER"));
 						if (func_134("REDO2_WT"))
 						{
 							func_55();
@@ -6115,7 +6115,7 @@ void func_150()//Position - 0x6953
 	PED::ADD_SCENARIO_BLOCKING_AREA(Local_88 - Vector(3f, 2f, 2f), Local_88 + Vector(3f, 2f, 2f), false, true, true, true);
 	PED::ADD_SCENARIO_BLOCKING_AREA(Vector(53.1038f, 56.6649f, -1366.481f) - Vector(1f, 1f, 1f), Vector(53.1038f, 56.6649f, -1366.481f) + Vector(1f, 1f, 1f), false, true, true, true);
 	PED::ADD_RELATIONSHIP_GROUP("rghDomestic", &iLocal_111);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_111, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_111, joaat("PLAYER"));
 	iLocal_53 = PED::CREATE_PED(26, iLocal_78, Local_56, fLocal_58, true, true);
 	PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_53, true);
 	PED::SET_PED_COMBAT_ATTRIBUTES(iLocal_53, 17, true);
@@ -8602,7 +8602,7 @@ void func_226()//Position - 0xAACA
 		}
 		func_2();
 		VEHICLE::SET_ALL_VEHICLE_GENERATORS_ACTIVE_IN_AREA(Local_57 - Vector(10f, 10f, 10f), Local_57 + Vector(10f, 10f, 10f), true, true);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, iLocal_111, joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, iLocal_111, joaat("PLAYER"));
 		if (bLocal_55)
 		{
 			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_78);

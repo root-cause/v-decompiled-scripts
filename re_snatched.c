@@ -8312,9 +8312,9 @@ void func_194()//Position - 0xA379
 {
 	PED::ADD_RELATIONSHIP_GROUP("re_snatched badGuys", &iLocal_318);
 	PED::ADD_RELATIONSHIP_GROUP("re_snatched pedVictim", &iLocal_319);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_318, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_318, joaat("PLAYER"));
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_318, iLocal_319);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(0, iLocal_319, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(0, iLocal_319, joaat("PLAYER"));
 }
 
 void func_195(int iParam0, bool bParam1)//Position - 0xA3BE

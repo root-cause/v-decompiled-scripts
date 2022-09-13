@@ -11444,8 +11444,8 @@ void func_237()//Position - 0xDB17
 
 void func_238(int iParam0, int iParam1)//Position - 0xDDD1
 {
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iParam1, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), iParam1);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iParam1, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), iParam1);
 	if (ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(iParam0, false))
@@ -51347,10 +51347,10 @@ int func_442(int iParam0, int iParam1, int iParam2)//Position - 0x3ABB4
 					return 1;
 					break;
 				
-				case 196632624:
-				case -1644428107:
-				case 1108198688:
-				case 810099095:
+				case joaat("MP_Award_M_Tshirt_000"):
+				case joaat("MP_Award_M_Tshirt_001"):
+				case joaat("MP_Award_F_Tshirt_000"):
+				case joaat("MP_Award_F_Tshirt_001"):
 					return 1;
 					break;
 				
@@ -51365,10 +51365,10 @@ int func_442(int iParam0, int iParam1, int iParam2)//Position - 0x3ABB4
 					return 1;
 					break;
 				
-				case 1980445908:
-				case -1882429354:
-				case -1235341889:
-				case -1544517404:
+				case joaat("MP_Award_M_Tshirt_002"):
+				case joaat("MP_Award_M_Tshirt_003"):
+				case joaat("MP_Award_F_Tshirt_002"):
+				case joaat("MP_Award_F_Tshirt_003"):
 					return 1;
 					break;
 				
@@ -103856,8 +103856,8 @@ void func_751()//Position - 0x79EC2
 {
 	PED::ADD_RELATIONSHIP_GROUP("WorkerPedGroup", &iLocal_1200);
 	PED::ADD_RELATIONSHIP_GROUP("GuardGroup", &iLocal_1201);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_1201, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_1200, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_1201, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_1200, joaat("PLAYER"));
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_1201, iLocal_1200);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_1200, iLocal_1201);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_1201, joaat("COP"));
@@ -115069,7 +115069,7 @@ void func_1032()//Position - 0x8B2D6
 			{
 				if (ENTITY::DOES_ENTITY_EXIST(Global_96938.f_9[iVar1]) && SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), ENTITY::GET_ENTITY_COORDS(iVar0, true)) < 30f)
 				{
-					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, Global_96938.f_42, joaat("player"));
+					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, Global_96938.f_42, joaat("PLAYER"));
 					PLAYER::SET_PLAYER_WANTED_LEVEL_NO_DROP(PLAYER::PLAYER_ID(), 1, false);
 					PLAYER::SET_WANTED_LEVEL_DIFFICULTY(PLAYER::PLAYER_ID(), 0f);
 				}
@@ -115624,7 +115624,7 @@ void func_1054()//Position - 0x8C227
 	if (!ENTITY::DOES_ENTITY_EXIST(Global_96938.f_9[0]))
 	{
 		func_617(&(Global_96938.f_9[0]), 12, 719.362f, -962.388f, 29.91f, 0, 1);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_96938.f_9[0], joaat("player"));
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_96938.f_9[0], joaat("PLAYER"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Global_96938.f_9[0], true);
 		PED::SET_PED_PROP_INDEX(Global_96938.f_9[0], 1, 0, 0, false);
 	}

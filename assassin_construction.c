@@ -18875,8 +18875,8 @@ void func_394()//Position - 0x17B82
 	Local_1102[3 /*19*/].f_17 = 2;
 	Local_1102[3 /*19*/].f_18 = 13;
 	PED::ADD_RELATIONSHIP_GROUP("ConstructionEnemies", &iLocal_1229);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_1229, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), iLocal_1229);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_1229, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_1229);
 }
 
 void func_395()//Position - 0x18282

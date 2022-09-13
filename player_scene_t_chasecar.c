@@ -3336,7 +3336,7 @@ void func_89()//Position - 0x3001
 		SYSTEM::WAIT(0);
 	}
 	PED::ADD_RELATIONSHIP_GROUP("chasecar", &iLocal_455);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, iLocal_455, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, iLocal_455, joaat("PLAYER"));
 	iVar0 = 0;
 	while (iVar0 < 4)
 	{

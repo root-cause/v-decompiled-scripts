@@ -64906,10 +64906,10 @@ int func_549(int iParam0, int iParam1, int iParam2)//Position - 0x4EA34
 					return 1;
 					break;
 				
-				case 196632624:
-				case -1644428107:
-				case 1108198688:
-				case 810099095:
+				case joaat("MP_Award_M_Tshirt_000"):
+				case joaat("MP_Award_M_Tshirt_001"):
+				case joaat("MP_Award_F_Tshirt_000"):
+				case joaat("MP_Award_F_Tshirt_001"):
 					return 1;
 					break;
 				
@@ -64924,10 +64924,10 @@ int func_549(int iParam0, int iParam1, int iParam2)//Position - 0x4EA34
 					return 1;
 					break;
 				
-				case 1980445908:
-				case -1882429354:
-				case -1235341889:
-				case -1544517404:
+				case joaat("MP_Award_M_Tshirt_002"):
+				case joaat("MP_Award_M_Tshirt_003"):
+				case joaat("MP_Award_F_Tshirt_002"):
+				case joaat("MP_Award_F_Tshirt_003"):
 					return 1;
 					break;
 				
@@ -114447,9 +114447,9 @@ void func_767()//Position - 0x8A23C
 	PED::ADD_RELATIONSHIP_GROUP("michael_rel", &iLocal_441);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_441, iLocal_442);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_442, iLocal_441);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_442, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_441, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), iLocal_441);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_442, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_441, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), iLocal_441);
 	PATHFIND::SET_ROADS_IN_AREA(1199.4f, -2661.9f, 70f, 1597.1f, -2447.7f, -5f, false, true);
 	PLAYER::SET_WANTED_LEVEL_MULTIPLIER(0f);
 	MISC::ENABLE_DISPATCH_SERVICE(5, false);

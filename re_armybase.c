@@ -476,11 +476,11 @@ void __EntryFunction__()//Position - 0x0
 		switch (iLocal_412)
 		{
 			case 0:
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("player"), joaat("army"));
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("army"), joaat("player"));
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("army"), joaat("army"));
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("COP"), joaat("army"));
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("army"), joaat("COP"));
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("PLAYER"), joaat("ARMY"));
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("ARMY"), joaat("PLAYER"));
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("ARMY"), joaat("ARMY"));
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("COP"), joaat("ARMY"));
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("ARMY"), joaat("COP"));
 				iLocal_412 = 1;
 				break;
 			
@@ -584,7 +584,7 @@ void func_1()//Position - 0x29B
 				case 0:
 					MISC::CLEAR_AREA_OF_VEHICLES(Local_332, 10f, false, false, false, false, false, false, 0);
 					iLocal_329 = PED::CREATE_PED(6, joaat("s_m_y_marine_01"), Local_332, 57.3018f, true, true);
-					PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_329, joaat("army"));
+					PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_329, joaat("ARMY"));
 					WEAPON::GIVE_WEAPON_TO_PED(iLocal_329, joaat("weapon_assaultrifle"), -1, true, true);
 					ENTITY::SET_ENTITY_LOD_DIST(iLocal_329, 1000);
 					PED::SET_PED_KEEP_TASK(iLocal_329, true);
@@ -598,7 +598,7 @@ void func_1()//Position - 0x29B
 					while (iVar0 < 5)
 					{
 						iLocal_330[iVar0] = PED::CREATE_PED(6, joaat("s_m_y_marine_01"), Local_336[iVar0 /*3*/], 57.3018f, true, true);
-						PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_330[iVar0], joaat("army"));
+						PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_330[iVar0], joaat("ARMY"));
 						WEAPON::GIVE_WEAPON_TO_PED(iLocal_330[iVar0], joaat("weapon_assaultrifle"), -1, true, true);
 						ENTITY::SET_ENTITY_LOD_DIST(iLocal_330[iVar0], 1000);
 						PED::SET_PED_KEEP_TASK(iLocal_330[iVar0], true);
@@ -783,8 +783,8 @@ void func_4()//Position - 0x950
 {
 	if (PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID()) > 0)
 	{
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), joaat("army"));
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("army"), joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), joaat("ARMY"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("ARMY"), joaat("PLAYER"));
 		if (!ENTITY::IS_ENTITY_DEAD(iLocal_226[0], false))
 		{
 			TASK::TASK_COMBAT_PED(iLocal_226[0], PLAYER::PLAYER_PED_ID(), 0, 16);
@@ -1780,7 +1780,7 @@ void func_37()//Position - 0x1C1C
 			ENTITY::SET_ENTITY_LOD_DIST(iLocal_224, 1000);
 			PED::SET_PED_KEEP_TASK(iLocal_224, true);
 			TASK::TASK_FOLLOW_WAYPOINT_RECORDING(iLocal_224, "AccomMarching01", 0, 0, -1);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_224, joaat("army"));
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_224, joaat("ARMY"));
 			iLocal_248++;
 			break;
 		
@@ -1791,7 +1791,7 @@ void func_37()//Position - 0x1C1C
 				iLocal_225[iVar0] = PED::CREATE_PED(6, joaat("s_m_y_marine_01"), Local_232[iVar0 /*3*/], 140.0094f, true, true);
 				WEAPON::GIVE_WEAPON_TO_PED(iLocal_225[iVar0], joaat("weapon_assaultrifle"), -1, true, true);
 				ENTITY::SET_ENTITY_LOD_DIST(iLocal_225[iVar0], 1000);
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_225[iVar0], joaat("army"));
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_225[iVar0], joaat("ARMY"));
 				PED::SET_PED_KEEP_TASK(iLocal_225[iVar0], true);
 				PED::SET_PED_STEERS_AROUND_PEDS(iLocal_225[iVar0], false);
 				iVar0++;
@@ -2127,7 +2127,7 @@ void func_44(int iParam0, int iParam1)//Position - 0x2600
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS((*iParam0)[iParam1], true);
 		WEAPON::GIVE_WEAPON_TO_PED((*iParam0)[iParam1], joaat("weapon_stinger"), 20, true, true);
 		PED::SET_PED_ACCURACY((*iParam0)[iParam1], 100);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH((*iParam0)[iParam1], joaat("army"));
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH((*iParam0)[iParam1], joaat("ARMY"));
 		PED::SET_PED_KEEP_TASK((*iParam0)[iParam1], true);
 	}
 }
@@ -2271,7 +2271,7 @@ void func_48()//Position - 0x2923
 			WEAPON::GIVE_WEAPON_TO_PED(iLocal_264[iVar0], joaat("weapon_stinger"), 20, true, true);
 			PED::SET_PED_ACCURACY(iLocal_264[iVar0], 100);
 			TASK::TASK_COMBAT_PED(iLocal_264[iVar0], PLAYER::PLAYER_PED_ID(), 0, 16);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_264[iVar0], joaat("army"));
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_264[iVar0], joaat("ARMY"));
 			PED::SET_PED_KEEP_TASK(iLocal_264[iVar0], true);
 		}
 		iVar0++;
@@ -2584,16 +2584,16 @@ void func_53()//Position - 0x3895
 	{
 		if (!iLocal_415)
 		{
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), joaat("army"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("army"), joaat("player"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), joaat("ARMY"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("ARMY"), joaat("PLAYER"));
 			bLocal_49 = true;
 			iLocal_415 = 1;
 		}
 	}
 	else if (!PLAYER::IS_PLAYER_WANTED_LEVEL_GREATER(PLAYER::GET_PLAYER_INDEX(), 0) && bLocal_49)
 	{
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("player"), joaat("army"));
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("army"), joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("PLAYER"), joaat("ARMY"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("ARMY"), joaat("PLAYER"));
 		iLocal_415 = 0;
 	}
 }
@@ -2616,7 +2616,7 @@ int func_54()//Position - 0x390E
 				PED::ADD_SCENARIO_BLOCKING_AREA(Local_233 - Vector(10f, 10f, 10f), Local_233 + Vector(10f, 10f, 10f), false, true, true, true);
 				WEAPON::GIVE_WEAPON_TO_PED(iLocal_226[0], joaat("weapon_assaultrifle"), -1, true, true);
 				ENTITY::SET_ENTITY_LOD_DIST(iLocal_226[0], 1000);
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_226[0], joaat("army"));
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_226[0], joaat("ARMY"));
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_226[0], true);
 				func_47(&uLocal_50, 4, iLocal_226[0], "ARMY_Guard01", 0, 1);
 				TASK::TASK_START_SCENARIO_AT_POSITION(iLocal_226[0], "WORLD_HUMAN_GUARD_STAND_ARMY", Local_233, fLocal_234, -1, false, true);
@@ -2639,7 +2639,7 @@ int func_54()//Position - 0x390E
 				PED::ADD_SCENARIO_BLOCKING_AREA(Local_235 - Vector(10f, 10f, 10f), Local_235 + Vector(10f, 10f, 10f), false, true, true, true);
 				WEAPON::GIVE_WEAPON_TO_PED(iLocal_226[1], joaat("weapon_assaultrifle"), -1, true, true);
 				ENTITY::SET_ENTITY_LOD_DIST(iLocal_226[1], 1000);
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_226[1], joaat("army"));
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_226[1], joaat("ARMY"));
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_226[1], true);
 				func_47(&uLocal_50, 5, iLocal_226[1], "ARMY_Guard02", 0, 1);
 				TASK::TASK_START_SCENARIO_AT_POSITION(iLocal_226[1], "WORLD_HUMAN_GUARD_STAND_ARMY", Local_235, fLocal_236, -1, false, true);
@@ -2681,8 +2681,8 @@ void func_58()//Position - 0x3BD1
 	func_62();
 	func_60();
 	func_59();
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("army"), joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("player"), joaat("army"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("ARMY"), joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("PLAYER"), joaat("ARMY"));
 	AUDIO::STOP_ALARM("PORT_OF_LS_HEIST_FORT_ZANCUDO_ALARMS", false);
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

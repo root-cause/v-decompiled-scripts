@@ -1784,7 +1784,7 @@ void func_39()//Position - 0x2112
 			case 0:
 				if (!PED::IS_PED_INJURED(iLocal_169))
 				{
-					PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_169, -2065892691);
+					PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_169, joaat("HATES_PLAYER"));
 					TASK::CLEAR_PED_TASKS(iLocal_169);
 					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_169, false);
 					PED::SET_PED_COMBAT_ATTRIBUTES(iLocal_169, 17, true);
@@ -46905,10 +46905,10 @@ int func_277(int iParam0, int iParam1, int iParam2)//Position - 0x3620B
 					return 1;
 					break;
 				
-				case 196632624:
-				case -1644428107:
-				case 1108198688:
-				case 810099095:
+				case joaat("MP_Award_M_Tshirt_000"):
+				case joaat("MP_Award_M_Tshirt_001"):
+				case joaat("MP_Award_F_Tshirt_000"):
+				case joaat("MP_Award_F_Tshirt_001"):
 					return 1;
 					break;
 				
@@ -46923,10 +46923,10 @@ int func_277(int iParam0, int iParam1, int iParam2)//Position - 0x3620B
 					return 1;
 					break;
 				
-				case 1980445908:
-				case -1882429354:
-				case -1235341889:
-				case -1544517404:
+				case joaat("MP_Award_M_Tshirt_002"):
+				case joaat("MP_Award_M_Tshirt_003"):
+				case joaat("MP_Award_F_Tshirt_002"):
+				case joaat("MP_Award_F_Tshirt_003"):
 					return 1;
 					break;
 				
@@ -100848,8 +100848,8 @@ void func_525()//Position - 0x778B2
 			ENTITY::SET_ENTITY_ROTATION(iLocal_178, 0f, 0f, 67.6822f, 2, true);
 			ENTITY::SET_ENTITY_QUATERNION(iLocal_178, 0f, 0f, 0.5569f, 0.8306f);
 			VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(iLocal_178, 5f);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_159, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("player"), iLocal_159);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_159, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("PLAYER"), iLocal_159);
 			VEHICLE::SET_VEHICLE_COLOUR_COMBINATION(iLocal_178, 2);
 			VEHICLE::SET_VEHICLE_ALARM(iLocal_178, true);
 			VEHICLE::SET_VEHICLE_DOORS_LOCKED(iLocal_178, 3);
@@ -113001,8 +113001,8 @@ void func_740()//Position - 0x8A33C
 	PED::ADD_RELATIONSHIP_GROUP("BUDDIES", &iLocal_191);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_191, joaat("COP"));
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("COP"), iLocal_191);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_191, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), iLocal_191);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_191, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), iLocal_191);
 	func_743(1);
 	if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 	{

@@ -9106,8 +9106,8 @@ void func_176()//Position - 0xB925
 	}
 	PED::SET_PED_NAME_DEBUG(iLocal_66[0], "pedRobber[0]");
 	PED::SET_PED_NAME_DEBUG(iLocal_66[1], "pedRobber[1]");
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_119, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), iLocal_119);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_119, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_119);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_119, joaat("COP"));
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("COP"), iLocal_119);
 	if (func_42() == 0)

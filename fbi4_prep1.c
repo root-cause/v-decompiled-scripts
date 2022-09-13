@@ -5137,7 +5137,7 @@ void func_162(int* iParam0)//Position - 0x5665
 
 void func_163(int* iParam0)//Position - 0x56AB
 {
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_40, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_40, joaat("PLAYER"));
 	switch (iParam0->f_8)
 	{
 		case 4:
@@ -5987,7 +5987,7 @@ void func_188(var uParam0)//Position - 0x6830
 	int iVar0;
 	int iVar1;
 	
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_40, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_40, joaat("PLAYER"));
 	func_169(uParam0);
 	if (!PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 	{
@@ -6039,7 +6039,7 @@ void func_190(var uParam0)//Position - 0x6940
 	int iVar0;
 	int iVar1;
 	
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_40, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_40, joaat("PLAYER"));
 	func_169(uParam0);
 	if (!PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 	{
@@ -6221,7 +6221,7 @@ void func_197(var uParam0)//Position - 0x6D96
 	int iVar0;
 	int iVar1;
 	
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_40, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_40, joaat("PLAYER"));
 	func_169(uParam0);
 	if (!PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 	{

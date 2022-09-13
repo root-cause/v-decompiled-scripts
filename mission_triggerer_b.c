@@ -48488,10 +48488,10 @@ int func_397(int iParam0, int iParam1, int iParam2)//Position - 0x35C0A
 					return 1;
 					break;
 				
-				case 196632624:
-				case -1644428107:
-				case 1108198688:
-				case 810099095:
+				case joaat("MP_Award_M_Tshirt_000"):
+				case joaat("MP_Award_M_Tshirt_001"):
+				case joaat("MP_Award_F_Tshirt_000"):
+				case joaat("MP_Award_F_Tshirt_001"):
 					return 1;
 					break;
 				
@@ -48506,10 +48506,10 @@ int func_397(int iParam0, int iParam1, int iParam2)//Position - 0x35C0A
 					return 1;
 					break;
 				
-				case 1980445908:
-				case -1882429354:
-				case -1235341889:
-				case -1544517404:
+				case joaat("MP_Award_M_Tshirt_002"):
+				case joaat("MP_Award_M_Tshirt_003"):
+				case joaat("MP_Award_F_Tshirt_002"):
+				case joaat("MP_Award_F_Tshirt_003"):
 					return 1;
 					break;
 				
@@ -99771,8 +99771,8 @@ int func_585(bool bParam0)//Position - 0x73D60
 
 void func_586(int iParam0, int iParam1)//Position - 0x73D86
 {
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iParam1, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), iParam1);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iParam1, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), iParam1);
 	if (ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(iParam0, false))
@@ -101116,7 +101116,7 @@ void func_630()//Position - 0x7668F
 		PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_96938.f_9[0], iLocal_1054);
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Global_96938.f_9[0], true);
 	}
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_1054, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_1054, joaat("PLAYER"));
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("cargobob"));
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("buzzard"));
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("s_m_y_marine_01"));
@@ -107979,8 +107979,8 @@ void func_722()//Position - 0x827A4
 	}
 	PED::REMOVE_RELATIONSHIP_GROUP(Global_96938.f_42);
 	PED::ADD_RELATIONSHIP_GROUP("FRANKLIN_1_TS_RELGROUP", &(Global_96938.f_42));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_96938.f_42, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_96938.f_42);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_96938.f_42, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_96938.f_42);
 	switch (func_152())
 	{
 		case 1:

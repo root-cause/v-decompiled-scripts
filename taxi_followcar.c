@@ -728,7 +728,7 @@ void func_9()//Position - 0x4BE
 					func_279(&Local_238, 1, 0);
 					PED::ADD_RELATIONSHIP_GROUP("TAXI_Escapee", &(Local_251.f_30));
 					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, Local_251.f_30, Local_238.f_413);
-					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, Local_251.f_30, joaat("player"));
+					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, Local_251.f_30, joaat("PLAYER"));
 					PATHFIND::SET_ROADS_IN_AREA(1346.9f, -1606.52f, 31.16f, 1457.25f, -1508.19f, 83.05f, false, true);
 					func_313(&Local_238, 5);
 				}
@@ -1325,7 +1325,7 @@ void func_18(var uParam0)//Position - 0x1560
 				PED::RESET_PED_LAST_VEHICLE(uParam0->f_3);
 			}
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(uParam0->f_3, false);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, uParam0->f_413, joaat("player"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, uParam0->f_413, joaat("PLAYER"));
 			if (ENTITY::IS_ENTITY_PLAYING_ANIM(uParam0->f_3, "oddjobs@towingcome_here", "come_here_idle_a", 3))
 			{
 				TASK::STOP_ANIM_TASK(uParam0->f_3, "oddjobs@towingcome_here", "come_here_idle_a", -8f);
@@ -9269,7 +9269,7 @@ int func_315(var uParam0, struct<3> Param1, struct<3> Param2, char* sParam3, int
 			PED::SET_PED_CONFIG_FLAG(uParam0->f_3, 177, true);
 			PED::SET_PED_CONFIG_FLAG(uParam0->f_3, 116, false);
 			PED::ADD_RELATIONSHIP_GROUP("TAXI_Passenger", &(uParam0->f_413));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, uParam0->f_413, joaat("player"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, uParam0->f_413, joaat("PLAYER"));
 			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, uParam0->f_413, joaat("COP"));
 			PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_3, uParam0->f_413);
 			return 1;

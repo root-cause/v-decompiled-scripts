@@ -797,10 +797,10 @@ void __EntryFunction__()//Position - 0x0
 			}
 			if (bLocal_80)
 			{
-				if (PED::GET_RELATIONSHIP_BETWEEN_GROUPS(iLocal_60, joaat("player")) != 5)
+				if (PED::GET_RELATIONSHIP_BETWEEN_GROUPS(iLocal_60, joaat("PLAYER")) != 5)
 				{
-					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_60, joaat("player"));
-					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), iLocal_60);
+					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_60, joaat("PLAYER"));
+					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_60);
 				}
 			}
 			if (bLocal_81)
@@ -7373,8 +7373,8 @@ void func_159()//Position - 0x989D
 	ENTITY::SET_ENTITY_LOAD_COLLISION_FLAG(iLocal_49[1], true, 1);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("COP"), iLocal_60);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_60, joaat("COP"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_60, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("player"), iLocal_60);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_60, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("PLAYER"), iLocal_60);
 	if (iLocal_44 == 1)
 	{
 		PED::SET_PED_PROP_INDEX(iLocal_49[0], 0, 1, 0, false);

@@ -7150,8 +7150,8 @@ void func_141(int* iParam0, int* iParam1)//Position - 0x67C9
 				func_252(Local_1373, &Local_1374, 2);
 			}
 			PED::ADD_RELATIONSHIP_GROUP("TargetGroup", &iLocal_1491);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_1491, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), iLocal_1491);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_1491, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_1491);
 			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_1491, joaat("COP"));
 			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("COP"), iLocal_1491);
 			if (ENTITY::DOES_ENTITY_EXIST(*iParam0))
@@ -9710,8 +9710,8 @@ void func_205(int iParam0, int* iParam1)//Position - 0x9FBF
 			PED::ADD_RELATIONSHIP_GROUP("Target", &iLocal_978);
 			iLocal_968 = 1;
 		}
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_978, joaat("player"));
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), iLocal_978);
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_978, joaat("PLAYER"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_978);
 		PED::SET_PED_RELATIONSHIP_GROUP_HASH(*iParam1, iLocal_978);
 		if (iParam0->f_268)
 		{

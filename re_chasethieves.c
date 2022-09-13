@@ -710,7 +710,7 @@ void __EntryFunction__()//Position - 0x0
 					}
 					else
 					{
-						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_510, joaat("player"));
+						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_510, joaat("PLAYER"));
 						if (func_1(iLocal_78))
 						{
 							PED::SET_PED_MONEY(iLocal_78, iLocal_149);
@@ -36473,7 +36473,7 @@ void func_335()//Position - 0x277EE
 	VEHICLE::SET_VEHICLE_DISABLE_TOWING(iLocal_86, true);
 	VEHICLE::SET_VEHICLE_ENGINE_ON(iLocal_86, true, true, false);
 	PED::ADD_RELATIONSHIP_GROUP("re_chasethieves badGuys", &iLocal_510);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_510, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_510, joaat("PLAYER"));
 	switch (bLocal_153)
 	{
 		case 1:

@@ -40041,7 +40041,7 @@ int func_307(int iParam0, int iParam1, char* sParam2)//Position - 0x2CEDC
 		
 		case 2:
 			PED::ADD_RELATIONSHIP_GROUP("TOWBUDDIES", &iLocal_604);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_604, joaat("player"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_604, joaat("PLAYER"));
 			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_605[iParam1 /*20*/], iLocal_604);
 			func_311(iParam1);
 			*iParam0 = 3;

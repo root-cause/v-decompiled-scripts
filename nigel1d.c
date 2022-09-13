@@ -575,7 +575,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_303[iVar0 /*13*/], iLocal_320);
 			ENTITY::SET_ENTITY_CAN_BE_DAMAGED_BY_RELATIONSHIP_GROUP(Local_303[iVar0 /*13*/], false, iLocal_320);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_320, joaat("player"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_320, joaat("PLAYER"));
 		}
 		iVar0++;
 	}
@@ -36686,7 +36686,7 @@ void func_267()//Position - 0x29A25
 				ENTITY::SET_ENTITY_LOAD_COLLISION_FLAG(Local_303[iVar0 /*13*/], true, 1);
 				PED::SET_PED_KEEP_TASK(Local_303[iVar0 /*13*/], true);
 				TASK::SET_PED_PATH_PREFER_TO_AVOID_WATER(Local_303[iVar0 /*13*/], true);
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_320, joaat("player"));
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_320, joaat("PLAYER"));
 				iLocal_307[iVar0] = 4;
 				if (!HUD::DOES_BLIP_EXIST(Local_303[iVar0 /*13*/].f_11))
 				{
@@ -38489,7 +38489,7 @@ void func_313(int iParam0)//Position - 0x2B463
 							ENTITY::SET_ENTITY_LOAD_COLLISION_FLAG(Local_303[iParam0 /*13*/], true, 1);
 							PED::SET_PED_KEEP_TASK(Local_303[iParam0 /*13*/], true);
 							TASK::SET_PED_PATH_PREFER_TO_AVOID_WATER(Local_303[iParam0 /*13*/], true);
-							PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_320, joaat("player"));
+							PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_320, joaat("PLAYER"));
 							iLocal_307[iParam0] = 4;
 							if (!HUD::DOES_BLIP_EXIST(Local_303[iParam0 /*13*/].f_11))
 							{

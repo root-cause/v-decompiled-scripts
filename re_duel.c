@@ -4614,8 +4614,8 @@ void func_61()//Position - 0x5ACE
 					break;
 				
 				case 4:
-					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), iLocal_81);
-					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_81, joaat("player"));
+					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_81);
+					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_81, joaat("PLAYER"));
 					if (func_227(Local_48[3 /*4*/]))
 					{
 						VEHICLE::SET_VEHICLE_DOORS_LOCKED(Local_48[3 /*4*/], 1);
@@ -5729,8 +5729,8 @@ void func_90(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x7
 		}
 		Local_47[iParam3 /*5*/].f_3++;
 	}
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), iLocal_81);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_81, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_81);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_81, joaat("PLAYER"));
 }
 
 void func_91(int iParam0, char* sParam1, int iParam2)//Position - 0x78F6
@@ -6547,11 +6547,11 @@ void func_112()//Position - 0x85FE
 	func_122(1);
 	AUDIO::REGISTER_SCRIPT_WITH_AUDIO(1);
 	PED::ADD_RELATIONSHIP_GROUP("ENEMIES", &iLocal_81);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("player"), iLocal_81);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("PLAYER"), iLocal_81);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_81, iLocal_81);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, iLocal_81, joaat("player"));
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(PLAYER::PLAYER_PED_ID(), joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, iLocal_81, joaat("PLAYER"));
+	PED::SET_PED_RELATIONSHIP_GROUP_HASH(PLAYER::PLAYER_PED_ID(), joaat("PLAYER"));
 	func_113(1);
 }
 

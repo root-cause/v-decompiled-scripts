@@ -32232,7 +32232,7 @@ int func_211()//Position - 0x21ECD
 		if (!ENTITY::IS_ENTITY_DEAD(iVar0, false))
 		{
 			iVar1 = VEHICLE::GET_VEHICLE_LAYOUT_HASH(iVar0);
-			if ((((iVar1 == -1965057835 || iVar1 == 919485892) || iVar1 == -1838563680) || iVar1 == 1576485197) || iVar1 == 929009548)
+			if ((((iVar1 == joaat("LAYOUT_VAN") || iVar1 == joaat("LAYOUT_VAN_BODHI")) || iVar1 == joaat("LAYOUT_VAN_BOXVILLE")) || iVar1 == joaat("LAYOUT_VAN_JOURNEY")) || iVar1 == joaat("LAYOUT_VAN_MULE"))
 			{
 				return 1;
 			}
@@ -32252,7 +32252,7 @@ int func_212()//Position - 0x21F43
 		if (!ENTITY::IS_ENTITY_DEAD(iVar0, false))
 		{
 			iVar1 = VEHICLE::GET_VEHICLE_LAYOUT_HASH(iVar0);
-			if ((((((((((iVar1 == -2066252141 || iVar1 == 542797648) || iVar1 == 1105669833) || iVar1 == 925191417) || iVar1 == -782720499) || iVar1 == 68566729) || iVar1 == -1887744178) || iVar1 == -1150063973) || iVar1 == 1630950849) || iVar1 == -463340997) || iVar1 == 2033852426)
+			if ((((((((((iVar1 == joaat("LAYOUT_LOW") || iVar1 == joaat("LAYOUT_LOW_INFERNUS")) || iVar1 == joaat("LAYOUT_LOW_DUNE")) || iVar1 == joaat("LAYOUT_LOW_BFINJECTION")) || iVar1 == joaat("LAYOUT_LOW_CHEETAH")) || iVar1 == joaat("LAYOUT_LOW_RESTRICTED")) || iVar1 == joaat("LAYOUT_LOW_SENTINEL2")) || iVar1 == joaat("LAYOUT_LOW_BLADE")) || iVar1 == joaat("LAYOUT_LOW_TURISMOR")) || iVar1 == joaat("LAYOUT_LOW_FURORE")) || iVar1 == joaat("LAYOUT_LOW_OSIRIS"))
 			{
 				return 1;
 			}
@@ -33284,7 +33284,7 @@ void func_237()//Position - 0x23093
 			PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0);
 			WEAPON::HIDE_PED_WEAPON_FOR_SCRIPTED_CUTSCENE(PLAYER::PLAYER_PED_ID(), false);
 			WEAPON::HIDE_PED_WEAPON_FOR_SCRIPTED_CUTSCENE(PLAYER::PLAYER_PED_ID(), false);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_67, joaat("player"));
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_67, joaat("PLAYER"));
 			if (iLocal_242)
 			{
 				if (CAM::IS_SCREEN_FADED_OUT())

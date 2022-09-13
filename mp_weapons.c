@@ -2125,7 +2125,7 @@ char* func_24(int iParam0, bool bParam1)//Position - 0x16B3
 			return "WT_RAGE";
 			break;
 		
-		case -159960575:
+		case joaat("vehicle_weapon_torpedo"):
 			return "WT_VEH_WEP";
 			break;
 		
@@ -5499,7 +5499,7 @@ int func_53(int iParam0, int iParam1)//Position - 0x4643
 		case joaat("weapon_assaultsniper"):
 			switch (iParam0)
 			{
-				case 195735895:
+				case joaat("component_assaultsniper_clip_01"):
 					return 95;
 					break;
 				
@@ -5520,11 +5520,11 @@ int func_53(int iParam0, int iParam1)//Position - 0x4643
 		case joaat("weapon_assaultmg"):
 			switch (iParam0)
 			{
-				case -890514874:
+				case joaat("component_assaultmg_clip_01"):
 					return 105;
 					break;
 				
-				case -507117574:
+				case joaat("component_assaultmg_clip_02"):
 					return 106;
 					break;
 				
@@ -5541,11 +5541,11 @@ int func_53(int iParam0, int iParam1)//Position - 0x4643
 		case joaat("weapon_programmablear"):
 			switch (iParam0)
 			{
-				case -124428919:
+				case joaat("component_programmablear_clip_01"):
 					return 109;
 					break;
 				
-				case 1048471894:
+				case joaat("component_programmablear_clip_02"):
 					return 110;
 					break;
 			}
@@ -7812,23 +7812,23 @@ char* func_56(int iParam0, int iParam1)//Position - 0x6AD6
 			return "WCT_CLIP2";
 			break;
 		
-		case 195735895:
+		case joaat("component_assaultsniper_clip_01"):
 			return "WCT_CLIP1";
 			break;
 		
-		case -890514874:
+		case joaat("component_assaultmg_clip_01"):
 			return "WCT_CLIP1";
 			break;
 		
-		case -507117574:
+		case joaat("component_assaultmg_clip_02"):
 			return "WCT_CLIP2";
 			break;
 		
-		case -124428919:
+		case joaat("component_programmablear_clip_01"):
 			return "WCT_CLIP1";
 			break;
 		
-		case 1048471894:
+		case joaat("component_programmablear_clip_02"):
 			return "WCT_CLIP2";
 			break;
 		
@@ -11655,11 +11655,11 @@ int func_127(int iParam0)//Position - 0xB04B
 			return 1;
 			break;
 		
-		case -507117574:
+		case joaat("component_assaultmg_clip_02"):
 			return 1;
 			break;
 		
-		case 1048471894:
+		case joaat("component_programmablear_clip_02"):
 			return 1;
 			break;
 		

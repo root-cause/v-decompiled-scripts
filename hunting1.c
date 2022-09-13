@@ -46669,7 +46669,7 @@ void func_495()//Position - 0x37AB7
 	{
 		if (((MISC::IS_PROJECTILE_TYPE_IN_AREA(ENTITY::GET_ENTITY_COORDS(iLocal_348, false) + Vector(2f, 2f, 2f), ENTITY::GET_ENTITY_COORDS(iLocal_348, false) - Vector(2f, 2f, 2f), joaat("weapon_grenade"), false) || MISC::IS_PROJECTILE_TYPE_IN_AREA(ENTITY::GET_ENTITY_COORDS(iLocal_348, false) + Vector(2f, 2f, 2f), ENTITY::GET_ENTITY_COORDS(iLocal_348, false) - Vector(2f, 2f, 2f), joaat("weapon_stickybomb"), false)) || MISC::IS_PROJECTILE_TYPE_IN_AREA(ENTITY::GET_ENTITY_COORDS(iLocal_348, false) + Vector(2f, 2f, 2f), ENTITY::GET_ENTITY_COORDS(iLocal_348, false) - Vector(2f, 2f, 2f), joaat("weapon_molotov"), false)) || FIRE::IS_EXPLOSION_IN_SPHERE(-1, ENTITY::GET_ENTITY_COORDS(iLocal_348, false), 10f))
 		{
-			PED::CLEAR_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_261, joaat("player"));
+			PED::CLEAR_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_261, joaat("PLAYER"));
 		}
 		if (!iLocal_272)
 		{
@@ -47537,10 +47537,10 @@ void func_517()//Position - 0x38892
 	{
 		PED::ADD_RELATIONSHIP_GROUP("FRIENDLIES", &iLocal_261);
 		PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_348, iLocal_261);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_261, joaat("player"));
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), iLocal_261);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_261, -2065892691);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("player"), -2065892691);
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_261, joaat("PLAYER"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), iLocal_261);
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_261, joaat("HATES_PLAYER"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("PLAYER"), joaat("HATES_PLAYER"));
 		iLocal_284 = 1;
 	}
 }

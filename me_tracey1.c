@@ -41768,8 +41768,8 @@ void func_383()//Position - 0x2EE9B
 	if (!iLocal_244)
 	{
 		PED::ADD_RELATIONSHIP_GROUP("FRIENDLIES", &iLocal_245);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_245, joaat("player"));
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), iLocal_245);
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_245, joaat("PLAYER"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), iLocal_245);
 		iLocal_244 = 1;
 	}
 	if (PED::IS_PED_IN_GROUP(iLocal_239))

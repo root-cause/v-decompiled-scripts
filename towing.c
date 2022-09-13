@@ -5667,7 +5667,7 @@ int func_114(int iParam0, int iParam1, char* sParam2)//Position - 0x5B65
 		
 		case 2:
 			PED::ADD_RELATIONSHIP_GROUP("TOWBUDDIES", &iLocal_823);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_823, joaat("player"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_823, joaat("PLAYER"));
 			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_824[iParam1 /*20*/], iLocal_823);
 			func_118(iParam1);
 			*iParam0 = 3;

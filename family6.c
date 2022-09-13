@@ -13942,7 +13942,7 @@ void func_98(var uParam0)//Position - 0x13283
 	if (!PED::IS_PED_INJURED((*uParam0)[uParam0->f_5]))
 	{
 		PED::SET_PED_CAN_BE_TARGETTED((*uParam0)[uParam0->f_5], false);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH((*uParam0)[uParam0->f_5], joaat("player"));
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH((*uParam0)[uParam0->f_5], joaat("PLAYER"));
 	}
 }
 
@@ -17553,39 +17553,39 @@ void func_139(bool bParam0)//Position - 0x18C9E
 	switch (bParam0)
 	{
 		case 0:
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, 1166638144, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("player"), -1865950624);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, -1865950624, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95444, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95444);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95445, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95445);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95446, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95446);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("AMBIENT_GANG_FAMILY"), joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("PLAYER"), joaat("AMBIENT_GANG_LOST"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("AMBIENT_GANG_LOST"), joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95444, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95444);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95445, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95445);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95446, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95446);
 			break;
 		
 		case 1:
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, 1166638144, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("player"), -1865950624);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, -1865950624, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95444, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95444);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95445, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95445);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95446, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95446);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("AMBIENT_GANG_FAMILY"), joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("PLAYER"), joaat("AMBIENT_GANG_LOST"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("AMBIENT_GANG_LOST"), joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95444, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95444);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95445, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95445);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95446, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95446);
 			break;
 		
 		case 2:
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, 1166638144, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), -1865950624);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, -1865950624, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95444, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95444);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95445, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95445);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95446, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), Global_95446);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("AMBIENT_GANG_FAMILY"), joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), joaat("AMBIENT_GANG_LOST"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("AMBIENT_GANG_LOST"), joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95444, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95444);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95445, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95445);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Global_95446, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), Global_95446);
 			break;
 		
 		default:
@@ -60431,10 +60431,10 @@ int func_387(int iParam0, int iParam1, int iParam2)//Position - 0x48413
 					return 1;
 					break;
 				
-				case 196632624:
-				case -1644428107:
-				case 1108198688:
-				case 810099095:
+				case joaat("MP_Award_M_Tshirt_000"):
+				case joaat("MP_Award_M_Tshirt_001"):
+				case joaat("MP_Award_F_Tshirt_000"):
+				case joaat("MP_Award_F_Tshirt_001"):
 					return 1;
 					break;
 				
@@ -60449,10 +60449,10 @@ int func_387(int iParam0, int iParam1, int iParam2)//Position - 0x48413
 					return 1;
 					break;
 				
-				case 1980445908:
-				case -1882429354:
-				case -1235341889:
-				case -1544517404:
+				case joaat("MP_Award_M_Tshirt_002"):
+				case joaat("MP_Award_M_Tshirt_003"):
+				case joaat("MP_Award_F_Tshirt_002"):
+				case joaat("MP_Award_F_Tshirt_003"):
 					return 1;
 					break;
 				
@@ -127169,7 +127169,7 @@ void func_793(int iParam0)//Position - 0x9C386
 			if (STREAMING::HAS_MODEL_LOADED(Local_520.f_6) && STREAMING::HAS_ANIM_DICT_LOADED("amb@world_human_stand_impatient@female@no_sign@idle_a"))
 			{
 				MISC::CLEAR_AREA(Local_520.f_2, 3f, true, false, false, false);
-				if (func_795(&Local_520, 0, joaat("player"), 0, 17, 0, 0, 0, 0, -1, 1))
+				if (func_795(&Local_520, 0, joaat("PLAYER"), 0, 17, 0, 0, 0, 0, -1, 1))
 				{
 					func_792(&uLocal_599, 4, Local_520.f_0, "AMANDA", 0, 1);
 					func_794(&(Local_520.f_10));
@@ -127923,7 +127923,7 @@ int func_804(int iParam0)//Position - 0x9D249
 					if (ENTITY::DOES_ENTITY_EXIST(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY("Tattooist", 0)))
 					{
 						Local_524.f_0 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY("Tattooist", 0));
-						func_799(Local_524.f_0, joaat("player"), 0, 1, 0, 0);
+						func_799(Local_524.f_0, joaat("PLAYER"), 0, 1, 0, 0);
 					}
 				}
 			}
@@ -131528,7 +131528,7 @@ void func_836(int iParam0)//Position - 0xA2E19
 			STREAMING::REQUEST_ANIM_DICT("missfam6leadinoutfam_6_mcs_2");
 			if ((STREAMING::HAS_MODEL_LOADED(Local_522.f_6) && STREAMING::HAS_MODEL_LOADED(Local_523.f_6)) && STREAMING::HAS_ANIM_DICT_LOADED("missfam6leadinoutfam_6_mcs_2"))
 			{
-				if (func_795(&Local_522, 0, joaat("player"), 0, 15, 0, 0, 0, 0, -1, 1) && func_795(&Local_523, 0, joaat("player"), 0, 145, 0, 0, 0, 0, -1, 1))
+				if (func_795(&Local_522, 0, joaat("PLAYER"), 0, 15, 0, 0, 0, 0, -1, 1) && func_795(&Local_523, 0, joaat("PLAYER"), 0, 145, 0, 0, 0, 0, -1, 1))
 				{
 					func_838(&(Local_522.f_10));
 					func_837(&(Local_523.f_10), 0, 0, 0, 0, 0);
@@ -132425,7 +132425,7 @@ void func_844(int iParam0)//Position - 0xA4665
 			STREAMING::REQUEST_ANIM_DICT("missfam6leadinoutfam_6_mcs_1");
 			if (((((STREAMING::HAS_MODEL_LOADED(Local_544.f_1) && STREAMING::HAS_MODEL_LOADED(Local_520.f_6)) && STREAMING::HAS_MODEL_LOADED(Local_521.f_6)) && STREAMING::HAS_MODEL_LOADED(Local_525.f_6)) && STREAMING::HAS_MODEL_LOADED(Local_530.f_6)) && STREAMING::HAS_ANIM_DICT_LOADED("missfam6leadinoutfam_6_mcs_1"))
 			{
-				if (((((func_847(&Local_530, 0, 0, 17, 1, -1, -1, -1) && func_795(&Local_520, 0, joaat("player"), 0, 17, 0, 0, 0, 0, -1, 1)) && func_795(&Local_521, 0, joaat("player"), 0, 145, 0, 0, 0, 0, -1, 1)) && func_795(&Local_525, 0, joaat("NO_RELATIONSHIP"), 0, 145, 0, 0, 0, 0, -1, 1)) && func_808(&Local_544, 0)) && func_808(&Local_532, 0))
+				if (((((func_847(&Local_530, 0, 0, 17, 1, -1, -1, -1) && func_795(&Local_520, 0, joaat("PLAYER"), 0, 17, 0, 0, 0, 0, -1, 1)) && func_795(&Local_521, 0, joaat("PLAYER"), 0, 145, 0, 0, 0, 0, -1, 1)) && func_795(&Local_525, 0, joaat("NO_RELATIONSHIP"), 0, 145, 0, 0, 0, 0, -1, 1)) && func_808(&Local_544, 0)) && func_808(&Local_532, 0))
 				{
 					if (VEHICLE::IS_VEHICLE_DRIVEABLE(Local_530.f_0, false))
 					{
@@ -137024,7 +137024,7 @@ int func_904(int iParam0)//Position - 0xAB360
 					if (ENTITY::DOES_ENTITY_EXIST(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY("Jimmy", 0)))
 					{
 						Local_519.f_0 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY("Jimmy", 0));
-						func_799(Local_519.f_0, joaat("player"), 0, 1, 0, 0);
+						func_799(Local_519.f_0, joaat("PLAYER"), 0, 1, 0, 0);
 					}
 				}
 			}
@@ -138968,7 +138968,7 @@ int func_931(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 				iLocal_845[2] = 1;
 				iLocal_845[7] = 1;
 				iLocal_845[12] = 1;
-				if (func_795(&Local_519, 0, joaat("player"), 0, 14, 0, 0, 0, 0, -1, 1))
+				if (func_795(&Local_519, 0, joaat("PLAYER"), 0, 14, 0, 0, 0, 0, -1, 1))
 				{
 					if (!ENTITY::DOES_ENTITY_EXIST(Local_531.f_0))
 					{
@@ -138996,7 +138996,7 @@ int func_931(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 				break;
 			
 			case 5:
-				if (((func_847(&Local_530, 0, 0, 17, 1, -1, -1, -1) && func_795(&Local_519, 0, joaat("player"), 0, 14, 0, 0, 0, 0, -1, 1)) && func_795(&Local_520, 0, joaat("player"), 0, 17, 0, 0, 0, 0, -1, 1)) && func_795(&Local_521, 0, joaat("player"), 0, 145, 0, 0, 0, 0, -1, 1))
+				if (((func_847(&Local_530, 0, 0, 17, 1, -1, -1, -1) && func_795(&Local_519, 0, joaat("PLAYER"), 0, 14, 0, 0, 0, 0, -1, 1)) && func_795(&Local_520, 0, joaat("PLAYER"), 0, 17, 0, 0, 0, 0, -1, 1)) && func_795(&Local_521, 0, joaat("PLAYER"), 0, 145, 0, 0, 0, 0, -1, 1))
 				{
 					if (VEHICLE::IS_VEHICLE_DRIVEABLE(Local_530.f_0, false))
 					{
@@ -139034,7 +139034,7 @@ int func_931(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 				iLocal_845[2] = 1;
 				iLocal_845[4] = 1;
 				iLocal_845[5] = 1;
-				if (func_795(&Local_519, 0, joaat("player"), 0, 14, 0, 0, 0, 0, -1, 1))
+				if (func_795(&Local_519, 0, joaat("PLAYER"), 0, 14, 0, 0, 0, 0, -1, 1))
 				{
 					if (!ENTITY::DOES_ENTITY_EXIST(Local_531.f_0))
 					{
@@ -139071,7 +139071,7 @@ int func_931(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 				iLocal_845[3] = 1;
 				iLocal_845[4] = 1;
 				iLocal_845[5] = 1;
-				if ((func_795(&Local_519, 0, joaat("player"), 0, 14, 0, 0, 0, 0, -1, 1) && func_795(&Local_522, 0, joaat("player"), 0, 15, 0, 0, 0, 0, -1, 1)) && func_795(&Local_523, 0, joaat("player"), 0, 145, 0, 0, 0, 0, -1, 1))
+				if ((func_795(&Local_519, 0, joaat("PLAYER"), 0, 14, 0, 0, 0, 0, -1, 1) && func_795(&Local_522, 0, joaat("PLAYER"), 0, 15, 0, 0, 0, 0, -1, 1)) && func_795(&Local_523, 0, joaat("PLAYER"), 0, 145, 0, 0, 0, 0, -1, 1))
 				{
 					if (!ENTITY::DOES_ENTITY_EXIST(Local_531.f_0))
 					{
@@ -139107,7 +139107,7 @@ int func_931(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 				iLocal_845[5] = 1;
 				iLocal_845[1] = 1;
 				iLocal_845[7] = 1;
-				if (((func_795(&Local_519, 0, joaat("player"), 0, 14, 0, 0, 0, 0, -1, 1) && func_795(&Local_522, 0, joaat("player"), 0, 15, 0, 0, 0, 0, -1, 1)) && func_795(&Local_523, 0, joaat("player"), 0, 145, 0, 0, 0, 0, -1, 1)) && func_795(&Local_524, 0, joaat("player"), 0, 145, 0, 0, 0, 0, -1, 1))
+				if (((func_795(&Local_519, 0, joaat("PLAYER"), 0, 14, 0, 0, 0, 0, -1, 1) && func_795(&Local_522, 0, joaat("PLAYER"), 0, 15, 0, 0, 0, 0, -1, 1)) && func_795(&Local_523, 0, joaat("PLAYER"), 0, 145, 0, 0, 0, 0, -1, 1)) && func_795(&Local_524, 0, joaat("PLAYER"), 0, 145, 0, 0, 0, 0, -1, 1))
 				{
 					if (!ENTITY::DOES_ENTITY_EXIST(Local_531.f_0))
 					{
@@ -139135,7 +139135,7 @@ int func_931(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 				break;
 			
 			case 15:
-				if ((func_795(&Local_519, 0, joaat("player"), 0, 14, 0, 0, 0, 0, -1, 1) && func_795(&Local_522, 0, joaat("player"), 0, 15, 0, 0, 0, 0, -1, 1)) && func_795(&Local_520, 0, joaat("player"), 0, 17, 0, 0, 0, 0, -1, 1))
+				if ((func_795(&Local_519, 0, joaat("PLAYER"), 0, 14, 0, 0, 0, 0, -1, 1) && func_795(&Local_522, 0, joaat("PLAYER"), 0, 15, 0, 0, 0, 0, -1, 1)) && func_795(&Local_520, 0, joaat("PLAYER"), 0, 17, 0, 0, 0, 0, -1, 1))
 				{
 					if (!ENTITY::DOES_ENTITY_EXIST(Local_531.f_0))
 					{
@@ -139170,7 +139170,7 @@ int func_931(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 				iLocal_845[1] = 1;
 				iLocal_845[8] = 1;
 				iLocal_845[11] = 1;
-				if ((func_795(&Local_519, 0, joaat("player"), 0, 14, 0, 0, 0, 0, -1, 1) && func_795(&Local_522, 0, joaat("player"), 0, 15, 0, 0, 0, 0, -1, 1)) && func_795(&Local_520, 0, joaat("player"), 0, 17, 0, 0, 0, 0, -1, 1))
+				if ((func_795(&Local_519, 0, joaat("PLAYER"), 0, 14, 0, 0, 0, 0, -1, 1) && func_795(&Local_522, 0, joaat("PLAYER"), 0, 15, 0, 0, 0, 0, -1, 1)) && func_795(&Local_520, 0, joaat("PLAYER"), 0, 17, 0, 0, 0, 0, -1, 1))
 				{
 					if (!ENTITY::DOES_ENTITY_EXIST(Local_531.f_0))
 					{
@@ -139198,7 +139198,7 @@ int func_931(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 				break;
 			
 			case 17:
-				if ((func_795(&Local_519, 0, joaat("player"), 0, 14, 0, 0, 0, 0, -1, 1) && func_795(&Local_522, 0, joaat("player"), 0, 15, 0, 0, 0, 0, -1, 1)) && func_795(&Local_520, 0, joaat("player"), 0, 17, 0, 0, 0, 0, -1, 1))
+				if ((func_795(&Local_519, 0, joaat("PLAYER"), 0, 14, 0, 0, 0, 0, -1, 1) && func_795(&Local_522, 0, joaat("PLAYER"), 0, 15, 0, 0, 0, 0, -1, 1)) && func_795(&Local_520, 0, joaat("PLAYER"), 0, 17, 0, 0, 0, 0, -1, 1))
 				{
 					if (func_847(&Local_531, 1, 0, 0, 1, -1, -1, -1))
 					{

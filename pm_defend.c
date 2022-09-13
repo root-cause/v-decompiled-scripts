@@ -982,9 +982,9 @@ void func_27()//Position - 0x12FC
 		case 3:
 			if (PED::ADD_RELATIONSHIP_GROUP("PMD_ENEMIES", &(Local_36.f_52)))
 			{
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), Local_36.f_52);
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), Local_36.f_52);
 				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, Local_36.f_52, joaat("COP"));
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, Local_36.f_52, joaat("player"));
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, Local_36.f_52, joaat("PLAYER"));
 				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, Local_36.f_52, Local_36.f_52);
 			}
 			Local_36.f_0 = 1;

@@ -2694,7 +2694,7 @@ void func_74()//Position - 0x274E
 		{
 			func_78(0);
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_50, false);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_70, joaat("player"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_70, joaat("PLAYER"));
 			PED::SET_PED_CAN_BE_TARGETTED(iLocal_50, true);
 			TASK::TASK_COMBAT_PED(iLocal_50, PLAYER::PLAYER_PED_ID(), 0, 16);
 			PED::SET_PED_KEEP_TASK(iLocal_50, true);
@@ -5332,8 +5332,8 @@ void func_155()//Position - 0x5A91
 		PED::ADD_RELATIONSHIP_GROUP("re_bikethief_relGroupVictim", &iLocal_70);
 		PED::ADD_RELATIONSHIP_GROUP("re_bikethief_relGroupThief", &iLocal_71);
 		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_71, iLocal_70);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_71, joaat("player"));
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_70, joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_71, joaat("PLAYER"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_70, joaat("PLAYER"));
 		iLocal_49 = PED::CREATE_PED(19, joaat("g_m_y_strpunk_01"), Local_58, fLocal_61, true, true);
 		STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("g_m_y_strpunk_01"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_49, true);

@@ -1043,7 +1043,7 @@ void func_19()//Position - 0x106C
 	{
 		WEAPON::GIVE_WEAPON_TO_PED(Local_66.f_2, joaat("weapon_pumpshotgun"), 12, false, true);
 		WEAPON::SET_CURRENT_PED_WEAPON(Local_66.f_2, joaat("weapon_pumpshotgun"), false);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_66.f_2, -2065892691);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_66.f_2, joaat("HATES_PLAYER"));
 		TASK::OPEN_SEQUENCE_TASK(&(Local_66.f_2.f_22));
 		TASK::TASK_AIM_GUN_AT_ENTITY(0, Local_66.f_0, 2000, false);
 		TASK::TASK_SHOOT_AT_ENTITY(0, Local_66.f_0, 4000, joaat("FIRING_PATTERN_FULL_AUTO"));

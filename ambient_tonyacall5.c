@@ -1060,7 +1060,7 @@ int func_28()//Position - 0xE5E
 			PED::SET_PED_MONEY(iLocal_38, 0);
 			PED::SET_PED_CAN_BE_TARGETTED(iLocal_38, false);
 			PED::SET_PED_NAME_DEBUG(iLocal_38, "TONYA");
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_38, joaat("player"));
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_38, joaat("PLAYER"));
 			func_31(&uLocal_53, 3, iLocal_38, "TONYA", 1, 1);
 			func_30();
 			if (!func_29(Local_49))

@@ -49730,10 +49730,10 @@ int func_1131(int iParam0, int iParam1, int iParam2)//Position - 0x43867
 					return 1;
 					break;
 				
-				case 196632624:
-				case -1644428107:
-				case 1108198688:
-				case 810099095:
+				case joaat("MP_Award_M_Tshirt_000"):
+				case joaat("MP_Award_M_Tshirt_001"):
+				case joaat("MP_Award_F_Tshirt_000"):
+				case joaat("MP_Award_F_Tshirt_001"):
 					return 1;
 					break;
 				
@@ -49748,10 +49748,10 @@ int func_1131(int iParam0, int iParam1, int iParam2)//Position - 0x43867
 					return 1;
 					break;
 				
-				case 1980445908:
-				case -1882429354:
-				case -1235341889:
-				case -1544517404:
+				case joaat("MP_Award_M_Tshirt_002"):
+				case joaat("MP_Award_M_Tshirt_003"):
+				case joaat("MP_Award_F_Tshirt_002"):
+				case joaat("MP_Award_F_Tshirt_003"):
 					return 1;
 					break;
 				
@@ -120345,7 +120345,7 @@ int func_1493(int iParam0)//Position - 0x990C8
 	int iVar1;
 	
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0);
-	switch (PED::GET_RELATIONSHIP_BETWEEN_GROUPS(iVar0, joaat("player")))
+	switch (PED::GET_RELATIONSHIP_BETWEEN_GROUPS(iVar0, joaat("PLAYER")))
 	{
 		case 3:
 		case 5:
@@ -146046,7 +146046,7 @@ void func_2096()//Position - 0xB8E45
 				if (StackVal && StackVal)
 				{
 					EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(104, iLocal_397, -1f);
-					PED::_0xAD27D957598E49E9(iLocal_397, Local_400, 20f, joaat("army"));
+					PED::_0xAD27D957598E49E9(iLocal_397, Local_400, 20f, joaat("ARMY"));
 				}
 				func_2097();
 				func_848(15);
@@ -161808,8 +161808,8 @@ void func_2956()//Position - 0xCA9D5
 	iVar0 = 0;
 	while (iVar0 < 32)
 	{
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, Global_1837161[iVar0], -347613984);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, -347613984, Global_1837161[iVar0]);
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, Global_1837161[iVar0], joaat("AGGRESSIVE_INVESTIGATE"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("AGGRESSIVE_INVESTIGATE"), Global_1837161[iVar0]);
 		iVar0++;
 	}
 }

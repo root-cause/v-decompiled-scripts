@@ -1105,8 +1105,8 @@ void __EntryFunction__()//Position - 0x0
 							iVar2 = PED::GET_VEHICLE_PED_IS_ENTERING(PLAYER::PLAYER_PED_ID());
 							if ((VEHICLE::IS_VEHICLE_DRIVEABLE(iVar2, false) && SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), ENTITY::GET_ENTITY_COORDS(iVar2, true)) < 30f) && VEHICLE::IS_VEHICLE_MODEL(iVar2, joaat("firetruk")))
 							{
-								PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), iLocal_803);
-								PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_803, joaat("player"));
+								PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_803);
+								PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_803, joaat("PLAYER"));
 								PLAYER::SET_PLAYER_WANTED_LEVEL_NO_DROP(PLAYER::PLAYER_ID(), 1, false);
 								PLAYER::SET_WANTED_LEVEL_DIFFICULTY(PLAYER::PLAYER_ID(), 0f);
 							}
@@ -4421,8 +4421,8 @@ void func_99()//Position - 0x4112
 		PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0);
 	}
 	PED::ADD_RELATIONSHIP_GROUP("FireMen", &iLocal_803);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), iLocal_803);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_803, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_803);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_803, joaat("PLAYER"));
 	if (func_10(0))
 	{
 		STREAMING::REQUEST_MODEL(joaat("s_m_y_fireman_01"));
@@ -4447,8 +4447,8 @@ void func_99()//Position - 0x4112
 			}
 			iVar1++;
 		}
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("player"), iLocal_803);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, iLocal_803, joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("PLAYER"), iLocal_803);
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, iLocal_803, joaat("PLAYER"));
 		iLocal_969 = -1;
 		if (func_106())
 		{

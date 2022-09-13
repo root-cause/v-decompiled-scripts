@@ -3215,7 +3215,7 @@ void func_79()//Position - 0x31F5
 					ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(iLocal_49, true);
 					WEAPON::GIVE_WEAPON_TO_PED(iLocal_49, joaat("weapon_pistol"), 999, false, false);
 					ENTITY::SET_ENTITY_CAN_BE_DAMAGED_BY_RELATIONSHIP_GROUP(iLocal_49, false, iLocal_88);
-					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_88, joaat("player"));
+					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_88, joaat("PLAYER"));
 					ENTITY::SET_ENTITY_LOAD_COLLISION_FLAG(iLocal_49, true, 1);
 					PED::SET_PED_CONFIG_FLAG(iLocal_49, 104, true);
 					iLocal_53 = OBJECT::CREATE_OBJECT(iLocal_74, ENTITY::GET_ENTITY_COORDS(iLocal_49, true), true, true, false);
@@ -3242,7 +3242,7 @@ void func_79()//Position - 0x31F5
 					ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(iLocal_50, true);
 					WEAPON::GIVE_WEAPON_TO_PED(iLocal_50, joaat("weapon_pistol"), 999, false, false);
 					ENTITY::SET_ENTITY_CAN_BE_DAMAGED_BY_RELATIONSHIP_GROUP(iLocal_50, false, iLocal_88);
-					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_88, joaat("player"));
+					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_88, joaat("PLAYER"));
 					ENTITY::SET_ENTITY_LOAD_COLLISION_FLAG(iLocal_50, true, 1);
 					PED::SET_PED_CONFIG_FLAG(iLocal_50, 104, true);
 					iLocal_54 = OBJECT::CREATE_OBJECT(iLocal_74, ENTITY::GET_ENTITY_COORDS(iLocal_50, true), true, true, false);
@@ -5428,10 +5428,10 @@ void func_130()//Position - 0x6731
 	PED::ADD_RELATIONSHIP_GROUP("GoonGroup", &iLocal_88);
 	PED::ADD_RELATIONSHIP_GROUP("PlayerGroup", &iLocal_89);
 	PED::ADD_RELATIONSHIP_GROUP("YetarianGroup", &iLocal_90);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_90, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), iLocal_90);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_88, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), iLocal_88);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_90, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), iLocal_90);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_88, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_88);
 	VEHICLE::SET_ALL_VEHICLE_GENERATORS_ACTIVE_IN_AREA(-51.0518f, -1104.685f, 25.2975f, -29.9812f, -1094.079f, 27.5686f, false, true);
 	iLocal_82 = PED::ADD_SCENARIO_BLOCKING_AREA(-79.95f, -1126.33f, 20.65f, -3.5f, -1081.6f, 30.67f, false, true, true, true);
 	TASK::ADD_COVER_BLOCKING_AREA(-34.2476f, -1107.283f, 24.9621f, -24.7924f, -1102.557f, 29.8287f, true, true, true, false);

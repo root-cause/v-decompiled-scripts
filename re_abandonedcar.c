@@ -509,7 +509,7 @@ void func_2()//Position - 0x391
 			{
 				func_187(&uLocal_66, "re_acau", "re_ac_attac2", 4, 0, 0, 0);
 				TASK::TASK_LOOK_AT_ENTITY(iLocal_234, PLAYER::PLAYER_PED_ID(), 4000, 0, 2);
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_63, joaat("player"));
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_63, joaat("PLAYER"));
 				SYSTEM::SETTIMERB(0);
 				iLocal_254++;
 			}
@@ -32325,7 +32325,7 @@ void func_222()//Position - 0x222D1
 	AUDIO::ADD_ENTITY_TO_AUDIO_MIX_GROUP(iLocal_236, "RE_ABANDONED_VEHICLE_MOTORHOME", 0f);
 	AUDIO::SET_AUDIO_VEHICLE_PRIORITY(iLocal_236, 3);
 	PED::ADD_RELATIONSHIP_GROUP("Redneck", &iLocal_63);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_63, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_63, joaat("PLAYER"));
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("COP"), iLocal_63);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_63, joaat("COP"));
 	if (iLocal_50 == 1)

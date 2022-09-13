@@ -55166,10 +55166,10 @@ int func_1352(int iParam0, int iParam1, int iParam2)//Position - 0x49408
 					return 1;
 					break;
 				
-				case 196632624:
-				case -1644428107:
-				case 1108198688:
-				case 810099095:
+				case joaat("MP_Award_M_Tshirt_000"):
+				case joaat("MP_Award_M_Tshirt_001"):
+				case joaat("MP_Award_F_Tshirt_000"):
+				case joaat("MP_Award_F_Tshirt_001"):
 					return 1;
 					break;
 				
@@ -55184,10 +55184,10 @@ int func_1352(int iParam0, int iParam1, int iParam2)//Position - 0x49408
 					return 1;
 					break;
 				
-				case 1980445908:
-				case -1882429354:
-				case -1235341889:
-				case -1544517404:
+				case joaat("MP_Award_M_Tshirt_002"):
+				case joaat("MP_Award_M_Tshirt_003"):
+				case joaat("MP_Award_F_Tshirt_002"):
+				case joaat("MP_Award_F_Tshirt_003"):
 					return 1;
 					break;
 				
@@ -125666,7 +125666,7 @@ int func_1708(int iParam0)//Position - 0x9ECAF
 	int iVar1;
 	
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0);
-	switch (PED::GET_RELATIONSHIP_BETWEEN_GROUPS(iVar0, joaat("player")))
+	switch (PED::GET_RELATIONSHIP_BETWEEN_GROUPS(iVar0, joaat("PLAYER")))
 	{
 		case 3:
 		case 5:
@@ -150677,7 +150677,7 @@ char* func_2234(int iParam0, int iParam1, int iParam2)//Position - 0xBE2D0
 			return "CEXT_PACTEXT";
 			break;
 		
-		case -660082779:
+		case joaat("pickup_weapon_rubbergun"):
 			return "WT_RUBB";
 			break;
 		
@@ -151849,7 +151849,7 @@ char* func_2235(int iParam0, bool bParam1)//Position - 0xBE9AA
 			return "WT_RAGE";
 			break;
 		
-		case -159960575:
+		case joaat("vehicle_weapon_torpedo"):
 			return "WT_VEH_WEP";
 			break;
 		
@@ -152354,7 +152354,7 @@ int func_2239(int iParam0, int iParam1, int iParam2)//Position - 0xBF953
 		case joaat("pickup_vehicle_weapon_smg"):
 		case joaat("pickup_weapon_assaultsmg"):
 		case joaat("pickup_vehicle_weapon_assaultsmg"):
-		case -660082779:
+		case joaat("pickup_weapon_rubbergun"):
 		case joaat("pickup_weapon_combatpdw"):
 		case joaat("pickup_weapon_machinepistol"):
 		case joaat("pickup_weapon_minismg"):
@@ -152426,7 +152426,7 @@ int func_2239(int iParam0, int iParam1, int iParam2)//Position - 0xBF953
 		case joaat("pickup_weapon_carbinerifle_mk2"):
 		case joaat("pickup_weapon_bullpuprifle_mk2"):
 		case joaat("pickup_weapon_specialcarbine_mk2"):
-		case -1140081444:
+		case joaat("pickup_weapon_policerifle"):
 		case joaat("PICKUP_WEAPON_MILITARYRIFLE"):
 		case joaat("PICKUP_WEAPON_TACTICALRIFLE"):
 		case joaat("PICKUP_WEAPON_HEAVYRIFLE"):
@@ -152641,7 +152641,7 @@ int func_2241(int iParam0)//Position - 0xBFE4F
 	}
 	else if (iVar0 == joaat("pickup_vehicle_custom_script") && Global_4980736.f_69361[iParam0 /*151*/].f_25 != -1)
 	{
-		iVar1 = -159960575;
+		iVar1 = joaat("vehicle_weapon_torpedo");
 	}
 	else
 	{
@@ -152912,7 +152912,7 @@ int func_2243(int iParam0)//Position - 0xC01BB
 			return joaat("pickup_weapon_pistol50");
 		
 		case joaat("weapon_assaultmg"):
-			return 975696266;
+			return joaat("pickup_weapon_assaultmg");
 		
 		case joaat("weapon_heavyrifle"):
 			return joaat("PICKUP_WEAPON_HEAVYRIFLE");
@@ -158273,7 +158273,7 @@ void func_2485()//Position - 0xC5F07
 				if (StackVal && StackVal)
 				{
 					EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(104, iLocal_1005, -1f);
-					PED::_0xAD27D957598E49E9(iLocal_1005, Local_1008, 20f, joaat("army"));
+					PED::_0xAD27D957598E49E9(iLocal_1005, Local_1008, 20f, joaat("ARMY"));
 				}
 				func_2486();
 				func_1040(15);
@@ -179235,8 +179235,8 @@ void func_3496()//Position - 0xDE003
 	iVar0 = 0;
 	while (iVar0 < 32)
 	{
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, Global_1837161[iVar0], -347613984);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, -347613984, Global_1837161[iVar0]);
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, Global_1837161[iVar0], joaat("AGGRESSIVE_INVESTIGATE"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("AGGRESSIVE_INVESTIGATE"), Global_1837161[iVar0]);
 		iVar0++;
 	}
 }

@@ -404,7 +404,7 @@ void __EntryFunction__()//Position - 0x0
 				MISC::SET_BIT(&uVar3, 1);
 				MISC::SET_BIT(&uVar3, 5);
 				PED::ADD_RELATIONSHIP_GROUP("GangOne", &iLocal_47);
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_47, joaat("player"));
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_47, joaat("PLAYER"));
 				iVar12 = PED::CREATE_PED(12, Var1.f_4, Var9, fVar10, true, true);
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iVar12, true);
 				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Var1.f_4);

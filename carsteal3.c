@@ -13657,10 +13657,10 @@ int func_75(int iParam0, int iParam1, int iParam2)//Position - 0x10760
 					return 1;
 					break;
 				
-				case 196632624:
-				case -1644428107:
-				case 1108198688:
-				case 810099095:
+				case joaat("MP_Award_M_Tshirt_000"):
+				case joaat("MP_Award_M_Tshirt_001"):
+				case joaat("MP_Award_F_Tshirt_000"):
+				case joaat("MP_Award_F_Tshirt_001"):
 					return 1;
 					break;
 				
@@ -13675,10 +13675,10 @@ int func_75(int iParam0, int iParam1, int iParam2)//Position - 0x10760
 					return 1;
 					break;
 				
-				case 1980445908:
-				case -1882429354:
-				case -1235341889:
-				case -1544517404:
+				case joaat("MP_Award_M_Tshirt_002"):
+				case joaat("MP_Award_M_Tshirt_003"):
+				case joaat("MP_Award_F_Tshirt_002"):
+				case joaat("MP_Award_F_Tshirt_003"):
 					return 1;
 					break;
 				
@@ -94559,7 +94559,7 @@ void func_488(int iParam0)//Position - 0x6E938
 			STREAMING::REQUEST_ANIM_DICT("misscarsteal4leadinoutcar_4_ext");
 			if (STREAMING::HAS_MODEL_LOADED(Local_77.f_6) && STREAMING::HAS_ANIM_DICT_LOADED("misscarsteal4leadinoutcar_4_ext"))
 			{
-				if (func_492(&Local_77, 0, joaat("player"), 0, 29, 0, 0, 0, 0, -1, 1))
+				if (func_492(&Local_77, 0, joaat("PLAYER"), 0, 29, 0, 0, 0, 0, -1, 1))
 				{
 					if (!ENTITY::IS_ENTITY_DEAD(Local_77.f_0, false))
 					{
@@ -112724,9 +112724,9 @@ int func_693(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)//P
 		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_75, iLocal_75);
 		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_75, joaat("COP"));
 		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_75, joaat("SECURITY_GUARD"));
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_75, joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_75, joaat("PLAYER"));
 		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("SECURITY_GUARD"), iLocal_75);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, joaat("SECURITY_GUARD"), joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, joaat("SECURITY_GUARD"), joaat("PLAYER"));
 		PATHFIND::SET_IGNORE_NO_GPS_FLAG(true);
 		HUD::SET_GPS_FLAGS(0, 15f);
 		iLocal_321 = func_507(1);
@@ -120265,7 +120265,7 @@ void func_795()//Position - 0x95BC9
 	}
 	func_671(&iLocal_393);
 	func_671(&iLocal_394);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("SECURITY_GUARD"), joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("SECURITY_GUARD"), joaat("PLAYER"));
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(255, joaat("SECURITY_GUARD"), iLocal_75);
 	PED::REMOVE_RELATIONSHIP_GROUP(iLocal_75);
 	VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(joaat("jb700"), false);

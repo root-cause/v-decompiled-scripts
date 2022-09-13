@@ -7184,8 +7184,8 @@ void func_259(var uParam0)//Position - 0xA7A1
 
 void func_260(var uParam0)//Position - 0xA7AE
 {
-	func_261(&((uParam0[0 /*94*/])->f_32), joaat("player"));
-	func_261(&((uParam0[1 /*94*/])->f_32), joaat("player"));
+	func_261(&((uParam0[0 /*94*/])->f_32), joaat("PLAYER"));
+	func_261(&((uParam0[1 /*94*/])->f_32), joaat("PLAYER"));
 }
 
 void func_261(var uParam0, int iParam1)//Position - 0xA7D6

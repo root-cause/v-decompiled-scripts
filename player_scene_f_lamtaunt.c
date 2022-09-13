@@ -5171,8 +5171,8 @@ int func_125(int* iParam0, int iParam1)//Position - 0x50D9
 					}
 					iVar8++;
 				}
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_261, joaat("player"));
-				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), iLocal_261);
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_261, joaat("PLAYER"));
+				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_261);
 				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_261, Global_95445);
 				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, Global_95445, iLocal_261);
 				TASK::TASK_COMBAT_HATED_TARGETS_AROUND_PED(*iParam0, 15f, 0);

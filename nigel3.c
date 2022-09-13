@@ -49110,8 +49110,8 @@ void func_500()//Position - 0x3A650
 						PED::SET_PED_CAN_RAGDOLL_FROM_PLAYER_IMPACT(iLocal_70, false);
 						iLocal_321 = MISC::GET_GAME_TIMER();
 						PED::ADD_RELATIONSHIP_GROUP("FRIENDLIES", &iLocal_81);
-						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_81, joaat("player"));
-						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), iLocal_81);
+						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_81, joaat("PLAYER"));
+						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), iLocal_81);
 						if (PED::IS_PED_IN_GROUP(iLocal_69))
 						{
 							PED::REMOVE_PED_FROM_GROUP(iLocal_69);

@@ -717,8 +717,8 @@ void func_19()//Position - 0x99A
 	int iVar0;
 	
 	PED::ADD_RELATIONSHIP_GROUP("ENEMIES", &iLocal_90);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), iLocal_90);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_90, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_90);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_90, joaat("PLAYER"));
 	iVar0 = 0;
 	while (iVar0 <= (iLocal_79.f_5 - 1))
 	{
@@ -746,8 +746,8 @@ void func_20()//Position - 0xA66
 {
 	int iVar0;
 	
-	PED::CLEAR_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), iLocal_90);
-	PED::CLEAR_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_90, joaat("player"));
+	PED::CLEAR_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_90);
+	PED::CLEAR_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_90, joaat("PLAYER"));
 	iVar0 = 0;
 	while (iVar0 <= (iLocal_79 - 1))
 	{

@@ -3009,8 +3009,8 @@ void func_87()//Position - 0x3401
 {
 	func_88(&Local_37);
 	PED::ADD_RELATIONSHIP_GROUP("relThief", &iLocal_224);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("player"), iLocal_224);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_224, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_224);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_224, joaat("PLAYER"));
 	switch (func_19())
 	{
 		case 0:

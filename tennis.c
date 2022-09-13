@@ -4484,7 +4484,7 @@ char* func_80(int iParam0, bool bParam1)//Position - 0x4FBE
 			return "WT_RAGE";
 			break;
 		
-		case -159960575:
+		case joaat("vehicle_weapon_torpedo"):
 			return "WT_VEH_WEP";
 			break;
 		
@@ -11363,7 +11363,7 @@ void func_202(var uParam0, var uParam1, var uParam2, var uParam3, int iParam4, i
 					}
 					if (func_912(4))
 					{
-						func_764(&((uParam1[1 /*94*/])->f_32), joaat("player"));
+						func_764(&((uParam1[1 /*94*/])->f_32), joaat("PLAYER"));
 					}
 				}
 				if (!PED::IS_PED_INJURED(func_1170(uParam1[0 /*94*/])))
@@ -55716,8 +55716,8 @@ int func_829(var uParam0)//Position - 0x479D3
 
 void func_830(var uParam0)//Position - 0x479E0
 {
-	func_764(&((uParam0[0 /*94*/])->f_32), joaat("player"));
-	func_764(&((uParam0[1 /*94*/])->f_32), joaat("player"));
+	func_764(&((uParam0[0 /*94*/])->f_32), joaat("PLAYER"));
+	func_764(&((uParam0[1 /*94*/])->f_32), joaat("PLAYER"));
 }
 
 void func_831(var uParam0, var uParam1, var uParam2, var uParam3)//Position - 0x47A08
@@ -75842,10 +75842,10 @@ int func_1053(int iParam0, int iParam1, int iParam2)//Position - 0x64DF5
 					return 1;
 					break;
 				
-				case 196632624:
-				case -1644428107:
-				case 1108198688:
-				case 810099095:
+				case joaat("MP_Award_M_Tshirt_000"):
+				case joaat("MP_Award_M_Tshirt_001"):
+				case joaat("MP_Award_F_Tshirt_000"):
+				case joaat("MP_Award_F_Tshirt_001"):
 					return 1;
 					break;
 				
@@ -75860,10 +75860,10 @@ int func_1053(int iParam0, int iParam1, int iParam2)//Position - 0x64DF5
 					return 1;
 					break;
 				
-				case 1980445908:
-				case -1882429354:
-				case -1235341889:
-				case -1544517404:
+				case joaat("MP_Award_M_Tshirt_002"):
+				case joaat("MP_Award_M_Tshirt_003"):
+				case joaat("MP_Award_F_Tshirt_002"):
+				case joaat("MP_Award_F_Tshirt_003"):
 					return 1;
 					break;
 				

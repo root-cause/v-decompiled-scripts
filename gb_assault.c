@@ -5811,7 +5811,7 @@ int func_130(int iParam0)//Position - 0x7600
 	int iVar1;
 	
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0);
-	switch (PED::GET_RELATIONSHIP_BETWEEN_GROUPS(iVar0, joaat("player")))
+	switch (PED::GET_RELATIONSHIP_BETWEEN_GROUPS(iVar0, joaat("PLAYER")))
 	{
 		case 3:
 		case 5:
@@ -8667,7 +8667,7 @@ int func_212()//Position - 0xB26C
 	}
 	else if (func_1205() == 3)
 	{
-		iVar5 = -347613984;
+		iVar5 = joaat("AGGRESSIVE_INVESTIGATE");
 	}
 	else
 	{
@@ -90176,8 +90176,8 @@ void func_1347()//Position - 0x6200A
 	iVar0 = 0;
 	while (iVar0 < 32)
 	{
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, Global_1837161[iVar0], -347613984);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, -347613984, Global_1837161[iVar0]);
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, Global_1837161[iVar0], joaat("AGGRESSIVE_INVESTIGATE"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("AGGRESSIVE_INVESTIGATE"), Global_1837161[iVar0]);
 		iVar0++;
 	}
 }

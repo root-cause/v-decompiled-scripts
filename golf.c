@@ -4442,7 +4442,7 @@ char* func_43(int iParam0, bool bParam1)//Position - 0x4021
 			return "WT_RAGE";
 			break;
 		
-		case -159960575:
+		case joaat("vehicle_weapon_torpedo"):
 			return "WT_VEH_WEP";
 			break;
 		
@@ -23788,10 +23788,10 @@ int func_216(int iParam0, int iParam1, int iParam2)//Position - 0x1F8A0
 					return 1;
 					break;
 				
-				case 196632624:
-				case -1644428107:
-				case 1108198688:
-				case 810099095:
+				case joaat("MP_Award_M_Tshirt_000"):
+				case joaat("MP_Award_M_Tshirt_001"):
+				case joaat("MP_Award_F_Tshirt_000"):
+				case joaat("MP_Award_F_Tshirt_001"):
 					return 1;
 					break;
 				
@@ -23806,10 +23806,10 @@ int func_216(int iParam0, int iParam1, int iParam2)//Position - 0x1F8A0
 					return 1;
 					break;
 				
-				case 1980445908:
-				case -1882429354:
-				case -1235341889:
-				case -1544517404:
+				case joaat("MP_Award_M_Tshirt_002"):
+				case joaat("MP_Award_M_Tshirt_003"):
+				case joaat("MP_Award_F_Tshirt_002"):
+				case joaat("MP_Award_F_Tshirt_003"):
 					return 1;
 					break;
 				
@@ -122234,8 +122234,8 @@ void func_1298(var uParam0, int* iParam1)//Position - 0x95FF1
 	PED::ADD_RELATIONSHIP_GROUP("golferRelGroup", &(iParam1->f_165));
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iParam1->f_165, joaat("CIVFEMALE"));
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iParam1->f_165, joaat("CIVMALE"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iParam1->f_165, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("player"), iParam1->f_165);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iParam1->f_165, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), iParam1->f_165);
 	iVar0 = 0;
 	while (iVar0 < func_1340(uParam0))
 	{

@@ -5860,7 +5860,7 @@ char* func_122(int iParam0, bool bParam1)//Position - 0x6497
 			return "WT_RAGE";
 			break;
 		
-		case -159960575:
+		case joaat("vehicle_weapon_torpedo"):
 			return "WT_VEH_WEP";
 			break;
 		
@@ -49162,10 +49162,10 @@ int func_372(int iParam0, int iParam1, int iParam2)//Position - 0x37CB6
 					return 1;
 					break;
 				
-				case 196632624:
-				case -1644428107:
-				case 1108198688:
-				case 810099095:
+				case joaat("MP_Award_M_Tshirt_000"):
+				case joaat("MP_Award_M_Tshirt_001"):
+				case joaat("MP_Award_F_Tshirt_000"):
+				case joaat("MP_Award_F_Tshirt_001"):
 					return 1;
 					break;
 				
@@ -49180,10 +49180,10 @@ int func_372(int iParam0, int iParam1, int iParam2)//Position - 0x37CB6
 					return 1;
 					break;
 				
-				case 1980445908:
-				case -1882429354:
-				case -1235341889:
-				case -1544517404:
+				case joaat("MP_Award_M_Tshirt_002"):
+				case joaat("MP_Award_M_Tshirt_003"):
+				case joaat("MP_Award_F_Tshirt_002"):
+				case joaat("MP_Award_F_Tshirt_003"):
 					return 1;
 					break;
 				
@@ -106915,7 +106915,7 @@ void func_758(var uParam0, int iParam1, int iParam2)//Position - 0x80350
 		ENTITY::SET_ENTITY_HEALTH(*uParam0, 100, 0);
 		PED::SET_PED_BLOCKS_PATHING_WHEN_DEAD(*uParam0, true);
 		PED::SET_PED_RELATIONSHIP_GROUP_HASH(*uParam0, iLocal_52);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_52, joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_52, joaat("PLAYER"));
 		PED::SET_PED_SEEING_RANGE(*uParam0, 20f);
 		PED::SET_PED_HEARING_RANGE(*uParam0, 10f);
 		ENTITY::SET_ENTITY_LOD_DIST(*uParam0, 1500);

@@ -38080,7 +38080,7 @@ void func_316()//Position - 0x2B00E
 	if (func_247(Local_84.f_28[0]))
 	{
 		PED::SET_PED_CAN_BE_TARGETTED(Local_84.f_28[0], false);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_84.f_28[0], joaat("player"));
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_84.f_28[0], joaat("PLAYER"));
 	}
 	func_317(&Local_84, 0, 0, 0);
 	SCRIPT::TERMINATE_THIS_THREAD();

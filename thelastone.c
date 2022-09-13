@@ -42968,7 +42968,7 @@ void func_397(var uParam0)//Position - 0x31849
 						if (func_395(PLAYER::PLAYER_PED_ID(), Local_48.f_2, 20f, 1))
 						{
 							ENTITY::SET_ENTITY_HEALTH(Local_48.f_2, 110, 0);
-							PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_48.f_2, -2065892691);
+							PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_48.f_2, joaat("HATES_PLAYER"));
 							PED::SET_PED_CONFIG_FLAG(Local_48.f_2, 185, true);
 							func_383();
 							iLocal_366 = 0;
@@ -43408,7 +43408,7 @@ void func_414()//Position - 0x32574
 		}
 		else if ((func_435(Local_45.f_0, 0, 70f, 170f, 1, 0, 0, 0) || !func_388(Local_45.f_0, Local_397, 1.5f, 1)) || PED::IS_PED_RAGDOLL(Local_45.f_0))
 		{
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_45.f_0, -2065892691);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_45.f_0, joaat("HATES_PLAYER"));
 			TASK::TASK_COMBAT_PED(Local_45.f_0, PLAYER::PLAYER_PED_ID(), 0, 16);
 			func_406();
 			func_254(6);
@@ -44642,7 +44642,7 @@ void func_448(bool bParam0)//Position - 0x340AA
 				Local_45.f_0 = PED::CREATE_PED(26, iLocal_371, Local_395, fLocal_396, true, true);
 				func_7(&(Local_44.f_28[0]));
 			}
-			if (func_450(Local_45.f_0, joaat("player"), iLocal_368))
+			if (func_450(Local_45.f_0, joaat("PLAYER"), iLocal_368))
 			{
 				if (func_472(PLAYER::PLAYER_PED_ID()))
 				{
@@ -44905,7 +44905,7 @@ void func_461()//Position - 0x34451
 			if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY("Hunter", 0))
 			{
 				Local_45.f_0 = Local_44.f_28[0];
-				if (func_450(Local_45.f_0, joaat("player"), iLocal_368))
+				if (func_450(Local_45.f_0, joaat("PLAYER"), iLocal_368))
 				{
 					if (STREAMING::HAS_ANIM_DICT_LOADED(sLocal_379))
 					{

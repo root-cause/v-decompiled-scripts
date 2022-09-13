@@ -4031,8 +4031,8 @@ void func_97()//Position - 0x446C
 	}
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, iLocal_111, iLocal_112);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, iLocal_112, iLocal_111);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, iLocal_111, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, iLocal_112, joaat("player"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, iLocal_111, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, iLocal_112, joaat("PLAYER"));
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("g_m_m_chigoon_02"));
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("g_m_y_salvagoon_03"));
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("rebel"));
@@ -4125,8 +4125,8 @@ void func_99()//Position - 0x4AA1
 		case 3:
 			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_111, iLocal_112);
 			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_112, iLocal_111);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_111, joaat("player"));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_112, joaat("player"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_111, joaat("PLAYER"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_112, joaat("PLAYER"));
 			if (bLocal_107)
 			{
 				iVar2 = 0;
@@ -5094,7 +5094,7 @@ void func_116()//Position - 0x5A1F
 		ENTITY::SET_ENTITY_ROTATION(iLocal_80, 4f, 18f, 326.7277f, 0, true);
 		PED::SET_PED_KEEP_TASK(iLocal_80, true);
 		PED::SET_PED_CONFIG_FLAG(iLocal_80, 227, true);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_113, joaat("player"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_113, joaat("PLAYER"));
 		if (func_38() == 0)
 		{
 			func_98(&uLocal_114, 0, PLAYER::PLAYER_PED_ID(), "MICHAEL", 0, 1);

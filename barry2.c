@@ -43158,7 +43158,7 @@ int func_411(var uParam0, struct<3> Param1, float fParam2, bool bParam3, bool bP
 	func_415(uParam0->f_3);
 	PED::SET_PED_COMBAT_ATTRIBUTES(uParam0->f_3, 24, false);
 	PED::SET_PED_RANDOM_COMPONENT_VARIATION(uParam0->f_3, 0);
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_3, -2065892691);
+	PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_3, joaat("HATES_PLAYER"));
 	PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(uParam0->f_3, true);
 	iVar0 = (ENTITY::GET_ENTITY_MAX_HEALTH(uParam0->f_3) / 2);
 	ENTITY::SET_ENTITY_HEALTH(uParam0->f_3, iVar0, 0);
@@ -43751,7 +43751,7 @@ int func_432(var uParam0, struct<3> Param1, float fParam2, int iParam3, int iPar
 	ENTITY::SET_ENTITY_HEALTH(uParam0->f_3, SYSTEM::FLOOR(fVar0), 0);
 	uParam0->f_8 = 0;
 	uParam0->f_9 = 0;
-	ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_RELATIONSHIP_GROUP(uParam0->f_3, true, joaat("player"));
+	ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_RELATIONSHIP_GROUP(uParam0->f_3, true, joaat("PLAYER"));
 	VEHICLE::SET_VEHICLE_CAN_BE_TARGETTED(uParam0->f_3, true);
 	ENTITY::SET_ENTITY_IS_TARGET_PRIORITY(uParam0->f_3, true, 0f);
 	ENTITY::SET_ENTITY_VISIBLE(uParam0->f_3, false, false);
@@ -50293,7 +50293,7 @@ int func_544(var uParam0, int iParam1, int iParam2)//Position - 0x3C059
 	uParam0->f_5 = -1;
 	PED::SET_PED_COMBAT_ATTRIBUTES(uParam0->f_3, 24, false);
 	PED::SET_PED_RANDOM_COMPONENT_VARIATION(uParam0->f_3, 0);
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_3, -2065892691);
+	PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_3, joaat("HATES_PLAYER"));
 	PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(uParam0->f_3, true);
 	iVar0 = (ENTITY::GET_ENTITY_MAX_HEALTH(uParam0->f_3) / 2);
 	ENTITY::SET_ENTITY_HEALTH(uParam0->f_3, iVar0, 0);
@@ -52613,7 +52613,7 @@ int func_605(var uParam0)//Position - 0x3EB12
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(uParam0->f_28[0], true);
 				PED::SET_PED_CAN_BE_TARGETTED(uParam0->f_28[0], false);
 				PED::SET_PED_CONFIG_FLAG(uParam0->f_28[0], 208, true);
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_28[0], joaat("player"));
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_28[0], joaat("PLAYER"));
 				ENTITY::SET_ENTITY_COORDS(uParam0->f_28[0], Var1, true, false, false, true);
 				ENTITY::SET_ENTITY_HEADING(uParam0->f_28[0], fVar2);
 				ENTITY::FREEZE_ENTITY_POSITION(uParam0->f_28[0], true);
