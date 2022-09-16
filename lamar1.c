@@ -62097,7 +62097,7 @@ bool func_536(int iParam0, int iParam1, char* sParam2, char* sParam3)//Position 
 	{
 		StringConCat(sParam2, "_TYPE_R", 16);
 	}
-	else if (iParam0 == -1866678455)
+	else if (iParam0 == joaat("AMMO_RUBBERGUN"))
 	{
 		StringConCat(sParam2, "_TYPE_R", 16);
 	}
@@ -62113,7 +62113,7 @@ bool func_536(int iParam0, int iParam1, char* sParam2, char* sParam3)//Position 
 	{
 		StringConCat(sParam2, "_TYPE_R", 16);
 	}
-	else if (iParam0 == -873900901)
+	else if (iParam0 == joaat("AMMO_PROGRAMMABLEAR"))
 	{
 		StringConCat(sParam2, "_TYPE_R", 16);
 	}
@@ -62137,7 +62137,7 @@ bool func_536(int iParam0, int iParam1, char* sParam2, char* sParam3)//Position 
 	{
 		StringConCat(sParam2, "_TYPE_G", 16);
 	}
-	else if (iParam0 == 214501711)
+	else if (iParam0 == joaat("AMMOTYPE_GRENADE"))
 	{
 		StringConCat(sParam2, "_TYPE_G", 16);
 	}

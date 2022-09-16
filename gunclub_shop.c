@@ -29049,7 +29049,7 @@ bool func_207(int iParam0, var uParam1, int iParam2, int iParam3, int iParam4, b
 						break;
 					
 					case 1:
-						func_241(iParam2, 2, 214501711, joaat("weapon_grenade"), 1, 23.0382f, -1108.005f, 29.5878f, 0f, 0f, 245f, 0f, 0f, 0.475f, 0f, 0f, 0f);
+						func_241(iParam2, 2, joaat("AMMOTYPE_GRENADE"), joaat("weapon_grenade"), 1, 23.0382f, -1108.005f, 29.5878f, 0f, 0f, 245f, 0f, 0f, 0.475f, 0f, 0f, 0f);
 						break;
 					
 					case 2:
@@ -31711,7 +31711,7 @@ bool func_207(int iParam0, var uParam1, int iParam2, int iParam3, int iParam4, b
 				switch (iParam4)
 				{
 					case 0:
-						func_241(iParam2, 2, 214501711, joaat("weapon_grenade"), 1, Var20 + Vector(0f, 0f, 0f), 0f, 0f, 180f, Var21, Var22);
+						func_241(iParam2, 2, joaat("AMMOTYPE_GRENADE"), joaat("weapon_grenade"), 1, Var20 + Vector(0f, 0f, 0f), 0f, 0f, 180f, Var21, Var22);
 						break;
 					
 					case 1:
@@ -34687,7 +34687,7 @@ bool func_232(int iParam0, int iParam1, char* sParam2, char* sParam3)//Position 
 	{
 		StringConCat(sParam2, "_TYPE_R", 16);
 	}
-	else if (iParam0 == -1866678455)
+	else if (iParam0 == joaat("AMMO_RUBBERGUN"))
 	{
 		StringConCat(sParam2, "_TYPE_R", 16);
 	}
@@ -34703,7 +34703,7 @@ bool func_232(int iParam0, int iParam1, char* sParam2, char* sParam3)//Position 
 	{
 		StringConCat(sParam2, "_TYPE_R", 16);
 	}
-	else if (iParam0 == -873900901)
+	else if (iParam0 == joaat("AMMO_PROGRAMMABLEAR"))
 	{
 		StringConCat(sParam2, "_TYPE_R", 16);
 	}
@@ -34727,7 +34727,7 @@ bool func_232(int iParam0, int iParam1, char* sParam2, char* sParam3)//Position 
 	{
 		StringConCat(sParam2, "_TYPE_G", 16);
 	}
-	else if (iParam0 == 214501711)
+	else if (iParam0 == joaat("AMMOTYPE_GRENADE"))
 	{
 		StringConCat(sParam2, "_TYPE_G", 16);
 	}
@@ -72355,7 +72355,7 @@ int func_521(char[4] cParam0, char[4] cParam1, char[4] cParam2, char[4] cParam3)
 			break;
 		
 		case joaat("CLO_H3M_O_BS_1"):
-		case 1939948667:
+		case joaat("CLO_H3M_B_6_1"):
 		case joaat("CLO_H3M_PH_2_0"):
 		case joaat("CLO_H3M_O_BS_2"):
 		case joaat("CLO_H3M_B_15_1"):
@@ -72363,7 +72363,7 @@ int func_521(char[4] cParam0, char[4] cParam1, char[4] cParam2, char[4] cParam3)
 		case joaat("CLO_H3M_PH_3_0"):
 		case joaat("CLO_H3M_O_BS_4"):
 		case joaat("CLO_H3M_O_BS_5"):
-		case 970674416:
+		case joaat("CLO_H3M_B_6_0"):
 		case joaat("CLO_H3M_O_BS_6"):
 			return !func_39(28233, -1);
 			break;

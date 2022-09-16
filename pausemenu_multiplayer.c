@@ -85118,7 +85118,7 @@ void func_1408()//Position - 0x894A6
 {
 	if (!HUD::IS_WARNING_MESSAGE_ACTIVE())
 	{
-		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(1869643752);
+		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("CycleToArenaWars"));
 		HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 		if ((((((iLocal_788[2] == iLocal_194 && BitTest(uLocal_244, 21)) || (iLocal_788[2] == iLocal_195 && BitTest(uLocal_245, 0))) || iLocal_788[2] == iLocal_191) || (iLocal_788[2] == iLocal_192 && iLocal_812 > 0)) || (iLocal_788[2] == iLocal_193 && iLocal_813 > 0)) || (iLocal_788[0] == 4 && iLocal_788[1] == 1))
 		{

@@ -130113,7 +130113,7 @@ void func_960()//Position - 0xA480F
 	}
 	if (bLocal_456)
 	{
-		HUD::SET_RADAR_AS_INTERIOR_THIS_FRAME(-1594035265, 3650f, 3700f, 0, 0);
+		HUD::SET_RADAR_AS_INTERIOR_THIS_FRAME(joaat("V_FakeLabTunnels"), 3650f, 3700f, 0, 0);
 	}
 }
 

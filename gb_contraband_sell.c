@@ -29419,7 +29419,7 @@ char* func_642(int iParam0)//Position - 0x26299
 			return "CLO_SBF_F_6_9";
 			break;
 		
-		case joaat("MP2_BUSINESSBATPSTAT_INT227"):
+		case joaat("DLC_MP_SUM2_M_FEET_6_10"):
 			return "CLO_SBM_F_6_10";
 			break;
 		
@@ -29427,7 +29427,7 @@ char* func_642(int iParam0)//Position - 0x26299
 			return "CLO_SBF_F_6_10";
 			break;
 		
-		case joaat("MP2_BUSINESSBATPSTAT_INT228"):
+		case joaat("DLC_MP_SUM2_M_FEET_6_11"):
 			return "CLO_SBM_F_6_11";
 			break;
 		
@@ -29435,7 +29435,7 @@ char* func_642(int iParam0)//Position - 0x26299
 			return "CLO_SBF_F_6_11";
 			break;
 		
-		case joaat("MP2_BUSINESSBATPSTAT_INT229"):
+		case joaat("DLC_MP_SUM2_M_FEET_6_12"):
 			return "CLO_SBM_F_6_12";
 			break;
 		
@@ -29467,12 +29467,12 @@ char* func_642(int iParam0)//Position - 0x26299
 			break;
 		
 		case joaat("DLC_MP_FIXER_M_JBIB_10_3"):
-		case -906547381:
+		case joaat("DLC_MP_FIXER_F_JBIB_10_3"):
 			return "CLO_FXM_U_10_3";
 			break;
 		
 		case joaat("DLC_MP_FIXER_M_JBIB_10_4"):
-		case 308133919:
+		case joaat("DLC_MP_FIXER_F_JBIB_10_4"):
 			return "CLO_FXM_U_10_4";
 			break;
 		
@@ -30724,7 +30724,7 @@ char* func_642(int iParam0)//Position - 0x26299
 			return "CLO_SUF_DECL_16";
 			break;
 		
-		case -1302300594:
+		case joaat("mpSum_Tee_017M"):
 			return "CLO_SUM_DECL_17";
 			break;
 		
@@ -33427,17 +33427,17 @@ int func_644(int iParam0)//Position - 0x2ADD2
 			return 34499;
 			break;
 		
-		case joaat("MP2_BUSINESSBATPSTAT_INT227"):
+		case joaat("DLC_MP_SUM2_M_FEET_6_10"):
 		case joaat("DLC_MP_SUM2_F_FEET_6_10"):
 			return 34500;
 			break;
 		
-		case joaat("MP2_BUSINESSBATPSTAT_INT228"):
+		case joaat("DLC_MP_SUM2_M_FEET_6_11"):
 		case joaat("DLC_MP_SUM2_F_FEET_6_11"):
 			return 34501;
 			break;
 		
-		case joaat("MP2_BUSINESSBATPSTAT_INT229"):
+		case joaat("DLC_MP_SUM2_M_FEET_6_12"):
 		case joaat("DLC_MP_SUM2_F_FEET_6_12"):
 			return 34502;
 			break;
@@ -33460,12 +33460,12 @@ int func_644(int iParam0)//Position - 0x2ADD2
 			break;
 		
 		case joaat("DLC_MP_FIXER_M_JBIB_10_3"):
-		case -906547381:
+		case joaat("DLC_MP_FIXER_F_JBIB_10_3"):
 			return 32310;
 			break;
 		
 		case joaat("DLC_MP_FIXER_M_JBIB_10_4"):
-		case 308133919:
+		case joaat("DLC_MP_FIXER_F_JBIB_10_4"):
 			return 32311;
 			break;
 		
@@ -66261,11 +66261,11 @@ int func_707(int iParam0)//Position - 0x4A510
 		case joaat("DLC_MP_SUM2_F_FEET_6_8"):
 		case joaat("DLC_MP_SUM2_M_FEET_6_9"):
 		case joaat("DLC_MP_SUM2_F_FEET_6_9"):
-		case joaat("MP2_BUSINESSBATPSTAT_INT227"):
+		case joaat("DLC_MP_SUM2_M_FEET_6_10"):
 		case joaat("DLC_MP_SUM2_F_FEET_6_10"):
-		case joaat("MP2_BUSINESSBATPSTAT_INT228"):
+		case joaat("DLC_MP_SUM2_M_FEET_6_11"):
 		case joaat("DLC_MP_SUM2_F_FEET_6_11"):
-		case joaat("MP2_BUSINESSBATPSTAT_INT229"):
+		case joaat("DLC_MP_SUM2_M_FEET_6_12"):
 		case joaat("DLC_MP_SUM2_F_FEET_6_12"):
 		case joaat("DLC_MP_SUM2_M_FEET_6_13"):
 		case joaat("DLC_MP_SUM2_F_FEET_6_13"):
@@ -66279,9 +66279,9 @@ int func_707(int iParam0)//Position - 0x4A510
 		case joaat("DLC_MP_FIXER_M_JBIB_10_2"):
 		case joaat("DLC_MP_FIXER_F_JBIB_10_2"):
 		case joaat("DLC_MP_FIXER_M_JBIB_10_3"):
-		case -906547381:
+		case joaat("DLC_MP_FIXER_F_JBIB_10_3"):
 		case joaat("DLC_MP_FIXER_M_JBIB_10_4"):
-		case 308133919:
+		case joaat("DLC_MP_FIXER_F_JBIB_10_4"):
 			return 11;
 			break;
 		

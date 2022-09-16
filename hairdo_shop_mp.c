@@ -66683,7 +66683,7 @@ int func_439(int iParam0, int iParam1, int iParam2)//Position - 0x4915D
 					}
 					break;
 				
-				case joaat("MP2_BUSINESSBATPSTAT_INT227"):
+				case joaat("DLC_MP_SUM2_M_FEET_6_10"):
 				case joaat("DLC_MP_SUM2_F_FEET_6_10"):
 					if (!func_264(34500, -1))
 					{
@@ -66695,7 +66695,7 @@ int func_439(int iParam0, int iParam1, int iParam2)//Position - 0x4915D
 					}
 					break;
 				
-				case joaat("MP2_BUSINESSBATPSTAT_INT228"):
+				case joaat("DLC_MP_SUM2_M_FEET_6_11"):
 				case joaat("DLC_MP_SUM2_F_FEET_6_11"):
 					if (!func_264(34501, -1))
 					{
@@ -66707,7 +66707,7 @@ int func_439(int iParam0, int iParam1, int iParam2)//Position - 0x4915D
 					}
 					break;
 				
-				case joaat("MP2_BUSINESSBATPSTAT_INT229"):
+				case joaat("DLC_MP_SUM2_M_FEET_6_12"):
 				case joaat("DLC_MP_SUM2_F_FEET_6_12"):
 					if (!func_264(34502, -1))
 					{
@@ -139320,7 +139320,7 @@ int func_1162(int iParam0, int iParam1, int iParam2)//Position - 0xA55F4
 			}
 			break;
 		
-		case joaat("MP2_BUSINESSBATPSTAT_INT227"):
+		case joaat("DLC_MP_SUM2_M_FEET_6_10"):
 		case joaat("DLC_MP_SUM2_F_FEET_6_10"):
 			if (func_264(34500, -1))
 			{
@@ -139328,7 +139328,7 @@ int func_1162(int iParam0, int iParam1, int iParam2)//Position - 0xA55F4
 			}
 			break;
 		
-		case joaat("MP2_BUSINESSBATPSTAT_INT228"):
+		case joaat("DLC_MP_SUM2_M_FEET_6_11"):
 		case joaat("DLC_MP_SUM2_F_FEET_6_11"):
 			if (func_264(34501, -1))
 			{
@@ -139336,7 +139336,7 @@ int func_1162(int iParam0, int iParam1, int iParam2)//Position - 0xA55F4
 			}
 			break;
 		
-		case joaat("MP2_BUSINESSBATPSTAT_INT229"):
+		case joaat("DLC_MP_SUM2_M_FEET_6_12"):
 		case joaat("DLC_MP_SUM2_F_FEET_6_12"):
 			if (func_264(34502, -1))
 			{

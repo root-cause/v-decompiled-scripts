@@ -17531,19 +17531,19 @@ void func_111(int iParam0, var uParam1, int iParam2)//Position - 0x11D20
 		case 1:
 			switch (iParam0)
 			{
-				case 970674416:
+				case joaat("CLO_H3M_B_6_0"):
 					*uParam1 = Global_262145.f_29130;
 					break;
 				
-				case 1939948667:
+				case joaat("CLO_H3M_B_6_1"):
 					*uParam1 = Global_262145.f_29131;
 					break;
 				
-				case -2026083407:
+				case joaat("CLO_H3M_B_6_2"):
 					*uParam1 = Global_262145.f_29132;
 					break;
 				
-				case 1453427268:
+				case joaat("CLO_H3M_B_6_3"):
 					*uParam1 = Global_262145.f_29133;
 					break;
 				
@@ -65675,59 +65675,59 @@ void func_139(int iParam0, var uParam1)//Position - 0x5D95A
 	}
 	switch (iParam0)
 	{
-		case 547455022:
+		case joaat("CLO_BUSM2_L_0_0"):
 			*uParam1 = SYSTEM::FLOOR(Global_262145.f_7178[146]);
 			break;
 		
-		case 542211982:
+		case joaat("CLO_BUSM2_L_0_1"):
 			*uParam1 = SYSTEM::FLOOR(Global_262145.f_7178[147]);
 			break;
 		
-		case 235657987:
+		case joaat("CLO_BUSM2_L_0_2"):
 			*uParam1 = SYSTEM::FLOOR(Global_262145.f_7178[148]);
 			break;
 		
-		case -67848491:
+		case joaat("CLO_BUSM2_L_0_3"):
 			*uParam1 = SYSTEM::FLOOR(Global_262145.f_7178[149]);
 			break;
 		
-		case -373943720:
+		case joaat("CLO_BUSM2_L_0_4"):
 			*uParam1 = SYSTEM::FLOOR(Global_262145.f_7178[150]);
 			break;
 		
-		case -994326428:
+		case joaat("CLO_BUSM2_L_0_5"):
 			*uParam1 = SYSTEM::FLOOR(Global_262145.f_7178[151]);
 			break;
 		
-		case -1284397616:
+		case joaat("CLO_BUSM2_L_0_6"):
 			*uParam1 = SYSTEM::FLOOR(Global_262145.f_7178[152]);
 			break;
 		
-		case -1851929032:
+		case joaat("CLO_BUSM2_L_1_0"):
 			*uParam1 = SYSTEM::FLOOR(Global_262145.f_7178[153]);
 			break;
 		
-		case 1070574237:
+		case joaat("CLO_BUSM2_L_1_1"):
 			*uParam1 = SYSTEM::FLOOR(Global_262145.f_7178[154]);
 			break;
 		
-		case 773490483:
+		case joaat("CLO_BUSM2_L_1_2"):
 			*uParam1 = SYSTEM::FLOOR(Global_262145.f_7178[155]);
 			break;
 		
-		case 1549034406:
+		case joaat("CLO_BUSM2_L_1_3"):
 			*uParam1 = SYSTEM::FLOOR(Global_262145.f_7178[156]);
 			break;
 		
-		case -510366168:
+		case joaat("CLO_BUSM2_L_1_4"):
 			*uParam1 = SYSTEM::FLOOR(Global_262145.f_7178[157]);
 			break;
 		
-		case -852867756:
+		case joaat("CLO_BUSM2_L_1_5"):
 			*uParam1 = SYSTEM::FLOOR(Global_262145.f_7178[158]);
 			break;
 		
-		case 2114135811:
+		case joaat("CLO_BUSM2_L_1_6"):
 			*uParam1 = SYSTEM::FLOOR(Global_262145.f_7178[159]);
 			break;
 		
