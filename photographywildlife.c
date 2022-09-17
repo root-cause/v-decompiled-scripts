@@ -2204,7 +2204,7 @@ void func_46()//Position - 0x2710
 		case 6:
 			func_54(iLocal_213);
 			func_51(iLocal_82);
-			STATS::STAT_SET_INT(joaat("num_hidden_packages_7"), func_27(), true);
+			STATS::STAT_SET_INT(joaat("NUM_HIDDEN_PACKAGES_7"), func_27(), true);
 			bLocal_214 = true;
 			func_48(&iLocal_205);
 			func_48(&iLocal_208);
@@ -2382,7 +2382,7 @@ void func_54(int iParam0)//Position - 0x2BA3
 {
 	switch (iParam0)
 	{
-		case joaat("a_c_boar"):
+		case joaat("A_C_Boar"):
 			if (!BitTest(Global_113386.f_10049.f_99, 4))
 			{
 				MISC::SET_BIT(&(Global_113386.f_10049.f_99), 4);
@@ -2390,7 +2390,7 @@ void func_54(int iParam0)//Position - 0x2BA3
 			}
 			break;
 		
-		case joaat("a_c_cat_01"):
+		case joaat("A_C_Cat_01"):
 			if (!BitTest(Global_113386.f_10049.f_99, 5))
 			{
 				MISC::SET_BIT(&(Global_113386.f_10049.f_99), 5);
@@ -2398,7 +2398,7 @@ void func_54(int iParam0)//Position - 0x2BA3
 			}
 			break;
 		
-		case joaat("a_c_chickenhawk"):
+		case joaat("A_C_Chickenhawk"):
 			if (!BitTest(Global_113386.f_10049.f_99, 6))
 			{
 				MISC::SET_BIT(&(Global_113386.f_10049.f_99), 6);
@@ -2406,7 +2406,7 @@ void func_54(int iParam0)//Position - 0x2BA3
 			}
 			break;
 		
-		case joaat("a_c_cormorant"):
+		case joaat("A_C_Cormorant"):
 			if (!BitTest(Global_113386.f_10049.f_99, 7))
 			{
 				MISC::SET_BIT(&(Global_113386.f_10049.f_99), 7);
@@ -2414,7 +2414,7 @@ void func_54(int iParam0)//Position - 0x2BA3
 			}
 			break;
 		
-		case joaat("a_c_cow"):
+		case joaat("A_C_Cow"):
 			if (!BitTest(Global_113386.f_10049.f_99, 8))
 			{
 				MISC::SET_BIT(&(Global_113386.f_10049.f_99), 8);
@@ -2422,7 +2422,7 @@ void func_54(int iParam0)//Position - 0x2BA3
 			}
 			break;
 		
-		case joaat("a_c_coyote"):
+		case joaat("A_C_Coyote"):
 			if (!BitTest(Global_113386.f_10049.f_99, 9))
 			{
 				MISC::SET_BIT(&(Global_113386.f_10049.f_99), 9);
@@ -2430,7 +2430,7 @@ void func_54(int iParam0)//Position - 0x2BA3
 			}
 			break;
 		
-		case joaat("a_c_crow"):
+		case joaat("A_C_Crow"):
 			if (!BitTest(Global_113386.f_10049.f_99, 10))
 			{
 				MISC::SET_BIT(&(Global_113386.f_10049.f_99), 10);
@@ -2438,7 +2438,7 @@ void func_54(int iParam0)//Position - 0x2BA3
 			}
 			break;
 		
-		case joaat("a_c_deer"):
+		case joaat("A_C_Deer"):
 			if (!BitTest(Global_113386.f_10049.f_99, 11))
 			{
 				MISC::SET_BIT(&(Global_113386.f_10049.f_99), 11);
@@ -2446,7 +2446,7 @@ void func_54(int iParam0)//Position - 0x2BA3
 			}
 			break;
 		
-		case joaat("a_c_hen"):
+		case joaat("A_C_Hen"):
 			if (!BitTest(Global_113386.f_10049.f_99, 14))
 			{
 				MISC::SET_BIT(&(Global_113386.f_10049.f_99), 14);
@@ -2454,7 +2454,7 @@ void func_54(int iParam0)//Position - 0x2BA3
 			}
 			break;
 		
-		case joaat("a_c_husky"):
+		case joaat("A_C_Husky"):
 			if (!BitTest(Global_113386.f_10049.f_99, 16))
 			{
 				MISC::SET_BIT(&(Global_113386.f_10049.f_99), 16);
@@ -2462,7 +2462,7 @@ void func_54(int iParam0)//Position - 0x2BA3
 			}
 			break;
 		
-		case joaat("a_c_mtlion"):
+		case joaat("A_C_MtLion"):
 			if (!BitTest(Global_113386.f_10049.f_99, 18))
 			{
 				MISC::SET_BIT(&(Global_113386.f_10049.f_99), 18);
@@ -2470,7 +2470,7 @@ void func_54(int iParam0)//Position - 0x2BA3
 			}
 			break;
 		
-		case joaat("a_c_pig"):
+		case joaat("A_C_Pig"):
 			if (!BitTest(Global_113386.f_10049.f_99, 19))
 			{
 				MISC::SET_BIT(&(Global_113386.f_10049.f_99), 19);
@@ -2478,7 +2478,7 @@ void func_54(int iParam0)//Position - 0x2BA3
 			}
 			break;
 		
-		case joaat("a_c_poodle"):
+		case joaat("A_C_Poodle"):
 			if (!BitTest(Global_113386.f_10049.f_99, 21))
 			{
 				MISC::SET_BIT(&(Global_113386.f_10049.f_99), 21);
@@ -2486,7 +2486,7 @@ void func_54(int iParam0)//Position - 0x2BA3
 			}
 			break;
 		
-		case joaat("a_c_pug"):
+		case joaat("A_C_Pug"):
 			if (!BitTest(Global_113386.f_10049.f_99, 22))
 			{
 				MISC::SET_BIT(&(Global_113386.f_10049.f_99), 22);
@@ -2494,7 +2494,7 @@ void func_54(int iParam0)//Position - 0x2BA3
 			}
 			break;
 		
-		case joaat("a_c_rabbit_01"):
+		case joaat("A_C_Rabbit_01"):
 			if (!BitTest(Global_113386.f_10049.f_99, 23))
 			{
 				MISC::SET_BIT(&(Global_113386.f_10049.f_99), 23);
@@ -2502,7 +2502,7 @@ void func_54(int iParam0)//Position - 0x2BA3
 			}
 			break;
 		
-		case joaat("a_c_retriever"):
+		case joaat("A_C_Retriever"):
 			if (!BitTest(Global_113386.f_10049.f_99, 24))
 			{
 				MISC::SET_BIT(&(Global_113386.f_10049.f_99), 24);
@@ -2510,8 +2510,8 @@ void func_54(int iParam0)//Position - 0x2BA3
 			}
 			break;
 		
-		case joaat("a_c_rottweiler"):
-		case joaat("a_c_chop"):
+		case joaat("A_C_Rottweiler"):
+		case joaat("A_C_Chop"):
 			if (!BitTest(Global_113386.f_10049.f_99, 25))
 			{
 				MISC::SET_BIT(&(Global_113386.f_10049.f_99), 25);
@@ -2519,7 +2519,7 @@ void func_54(int iParam0)//Position - 0x2BA3
 			}
 			break;
 		
-		case joaat("a_c_seagull"):
+		case joaat("A_C_Seagull"):
 			if (!BitTest(Global_113386.f_10049.f_99, 26))
 			{
 				MISC::SET_BIT(&(Global_113386.f_10049.f_99), 26);
@@ -2527,7 +2527,7 @@ void func_54(int iParam0)//Position - 0x2BA3
 			}
 			break;
 		
-		case joaat("a_c_shepherd"):
+		case joaat("A_C_shepherd"):
 			if (!BitTest(Global_113386.f_10049.f_99, 29))
 			{
 				MISC::SET_BIT(&(Global_113386.f_10049.f_99), 29);
@@ -2535,7 +2535,7 @@ void func_54(int iParam0)//Position - 0x2BA3
 			}
 			break;
 		
-		case joaat("a_c_westy"):
+		case joaat("A_C_Westy"):
 			if (!BitTest(Global_113386.f_10049.f_99, 31))
 			{
 				MISC::SET_BIT(&(Global_113386.f_10049.f_99), 31);
@@ -2630,7 +2630,7 @@ int func_64(int iParam0)//Position - 0x305C
 {
 	switch (iParam0)
 	{
-		case joaat("a_c_boar"):
+		case joaat("A_C_Boar"):
 			if (!BitTest(Global_113386.f_10049.f_99, 4))
 			{
 				return 0;
@@ -2641,7 +2641,7 @@ int func_64(int iParam0)//Position - 0x305C
 			}
 			break;
 		
-		case joaat("a_c_cat_01"):
+		case joaat("A_C_Cat_01"):
 			if (!BitTest(Global_113386.f_10049.f_99, 5))
 			{
 				return 0;
@@ -2652,7 +2652,7 @@ int func_64(int iParam0)//Position - 0x305C
 			}
 			break;
 		
-		case joaat("a_c_chickenhawk"):
+		case joaat("A_C_Chickenhawk"):
 			if (!BitTest(Global_113386.f_10049.f_99, 6))
 			{
 				return 0;
@@ -2663,7 +2663,7 @@ int func_64(int iParam0)//Position - 0x305C
 			}
 			break;
 		
-		case joaat("a_c_cormorant"):
+		case joaat("A_C_Cormorant"):
 			if (!BitTest(Global_113386.f_10049.f_99, 7))
 			{
 				return 0;
@@ -2674,7 +2674,7 @@ int func_64(int iParam0)//Position - 0x305C
 			}
 			break;
 		
-		case joaat("a_c_cow"):
+		case joaat("A_C_Cow"):
 			if (!BitTest(Global_113386.f_10049.f_99, 8))
 			{
 				return 0;
@@ -2685,7 +2685,7 @@ int func_64(int iParam0)//Position - 0x305C
 			}
 			break;
 		
-		case joaat("a_c_coyote"):
+		case joaat("A_C_Coyote"):
 			if (!BitTest(Global_113386.f_10049.f_99, 9))
 			{
 				return 0;
@@ -2696,7 +2696,7 @@ int func_64(int iParam0)//Position - 0x305C
 			}
 			break;
 		
-		case joaat("a_c_crow"):
+		case joaat("A_C_Crow"):
 			if (!BitTest(Global_113386.f_10049.f_99, 10))
 			{
 				return 0;
@@ -2707,7 +2707,7 @@ int func_64(int iParam0)//Position - 0x305C
 			}
 			break;
 		
-		case joaat("a_c_deer"):
+		case joaat("A_C_Deer"):
 			if (!BitTest(Global_113386.f_10049.f_99, 11))
 			{
 				return 0;
@@ -2718,7 +2718,7 @@ int func_64(int iParam0)//Position - 0x305C
 			}
 			break;
 		
-		case joaat("a_c_hen"):
+		case joaat("A_C_Hen"):
 			if (!BitTest(Global_113386.f_10049.f_99, 14))
 			{
 				return 0;
@@ -2729,7 +2729,7 @@ int func_64(int iParam0)//Position - 0x305C
 			}
 			break;
 		
-		case joaat("a_c_husky"):
+		case joaat("A_C_Husky"):
 			if (!BitTest(Global_113386.f_10049.f_99, 16))
 			{
 				return 0;
@@ -2740,7 +2740,7 @@ int func_64(int iParam0)//Position - 0x305C
 			}
 			break;
 		
-		case joaat("a_c_mtlion"):
+		case joaat("A_C_MtLion"):
 			if (!BitTest(Global_113386.f_10049.f_99, 18))
 			{
 				return 0;
@@ -2751,7 +2751,7 @@ int func_64(int iParam0)//Position - 0x305C
 			}
 			break;
 		
-		case joaat("a_c_pig"):
+		case joaat("A_C_Pig"):
 			if (!BitTest(Global_113386.f_10049.f_99, 19))
 			{
 				return 0;
@@ -2762,7 +2762,7 @@ int func_64(int iParam0)//Position - 0x305C
 			}
 			break;
 		
-		case joaat("a_c_poodle"):
+		case joaat("A_C_Poodle"):
 			if (!BitTest(Global_113386.f_10049.f_99, 21))
 			{
 				return 0;
@@ -2773,7 +2773,7 @@ int func_64(int iParam0)//Position - 0x305C
 			}
 			break;
 		
-		case joaat("a_c_pug"):
+		case joaat("A_C_Pug"):
 			if (!BitTest(Global_113386.f_10049.f_99, 22))
 			{
 				return 0;
@@ -2784,7 +2784,7 @@ int func_64(int iParam0)//Position - 0x305C
 			}
 			break;
 		
-		case joaat("a_c_rabbit_01"):
+		case joaat("A_C_Rabbit_01"):
 			if (!BitTest(Global_113386.f_10049.f_99, 23))
 			{
 				return 0;
@@ -2795,7 +2795,7 @@ int func_64(int iParam0)//Position - 0x305C
 			}
 			break;
 		
-		case joaat("a_c_retriever"):
+		case joaat("A_C_Retriever"):
 			if (!BitTest(Global_113386.f_10049.f_99, 24))
 			{
 				return 0;
@@ -2806,8 +2806,8 @@ int func_64(int iParam0)//Position - 0x305C
 			}
 			break;
 		
-		case joaat("a_c_rottweiler"):
-		case joaat("a_c_chop"):
+		case joaat("A_C_Rottweiler"):
+		case joaat("A_C_Chop"):
 			if (!BitTest(Global_113386.f_10049.f_99, 25))
 			{
 				return 0;
@@ -2818,7 +2818,7 @@ int func_64(int iParam0)//Position - 0x305C
 			}
 			break;
 		
-		case joaat("a_c_seagull"):
+		case joaat("A_C_Seagull"):
 			if (!BitTest(Global_113386.f_10049.f_99, 26))
 			{
 				return 0;
@@ -2829,7 +2829,7 @@ int func_64(int iParam0)//Position - 0x305C
 			}
 			break;
 		
-		case joaat("a_c_shepherd"):
+		case joaat("A_C_shepherd"):
 			if (!BitTest(Global_113386.f_10049.f_99, 29))
 			{
 				return 0;
@@ -2840,7 +2840,7 @@ int func_64(int iParam0)//Position - 0x305C
 			}
 			break;
 		
-		case joaat("a_c_westy"):
+		case joaat("A_C_Westy"):
 			if (!BitTest(Global_113386.f_10049.f_99, 31))
 			{
 				return 0;
@@ -2926,88 +2926,88 @@ int func_66(int iParam0)//Position - 0x3415
 	
 	switch (iParam0)
 	{
-		case joaat("a_c_boar"):
+		case joaat("A_C_Boar"):
 			iVar0 = 30;
 			break;
 		
-		case joaat("a_c_cat_01"):
+		case joaat("A_C_Cat_01"):
 			iVar0 = 30;
 			break;
 		
-		case joaat("a_c_chickenhawk"):
+		case joaat("A_C_Chickenhawk"):
 			iVar0 = 60;
 			break;
 		
-		case joaat("a_c_cormorant"):
+		case joaat("A_C_Cormorant"):
 			iVar0 = 60;
 			break;
 		
-		case joaat("a_c_cow"):
+		case joaat("A_C_Cow"):
 			iVar0 = 30;
 			break;
 		
-		case joaat("a_c_coyote"):
+		case joaat("A_C_Coyote"):
 			iVar0 = 30;
 			break;
 		
-		case joaat("a_c_crow"):
+		case joaat("A_C_Crow"):
 			iVar0 = 60;
 			break;
 		
-		case joaat("a_c_deer"):
+		case joaat("A_C_Deer"):
 			iVar0 = 40;
 			break;
 		
-		case joaat("a_c_hen"):
+		case joaat("A_C_Hen"):
 			iVar0 = 30;
 			break;
 		
-		case joaat("a_c_husky"):
+		case joaat("A_C_Husky"):
 			iVar0 = 30;
 			break;
 		
-		case joaat("a_c_mtlion"):
+		case joaat("A_C_MtLion"):
 			iVar0 = 30;
 			break;
 		
-		case joaat("a_c_pig"):
+		case joaat("A_C_Pig"):
 			iVar0 = 30;
 			break;
 		
-		case joaat("a_c_pigeon"):
+		case joaat("A_C_Pigeon"):
 			iVar0 = 40;
 			break;
 		
-		case joaat("a_c_poodle"):
+		case joaat("A_C_Poodle"):
 			iVar0 = 30;
 			break;
 		
-		case joaat("a_c_pug"):
+		case joaat("A_C_Pug"):
 			iVar0 = 30;
 			break;
 		
-		case joaat("a_c_rabbit_01"):
+		case joaat("A_C_Rabbit_01"):
 			iVar0 = 30;
 			break;
 		
-		case joaat("a_c_retriever"):
+		case joaat("A_C_Retriever"):
 			iVar0 = 30;
 			break;
 		
-		case joaat("a_c_rottweiler"):
-		case joaat("a_c_chop"):
+		case joaat("A_C_Rottweiler"):
+		case joaat("A_C_Chop"):
 			iVar0 = 30;
 			break;
 		
-		case joaat("a_c_seagull"):
+		case joaat("A_C_Seagull"):
 			iVar0 = 60;
 			break;
 		
-		case joaat("a_c_shepherd"):
+		case joaat("A_C_shepherd"):
 			iVar0 = 30;
 			break;
 		
-		case joaat("a_c_westy"):
+		case joaat("A_C_Westy"):
 			iVar0 = 30;
 			break;
 		
@@ -3022,12 +3022,12 @@ int func_67(int iParam0)//Position - 0x3544
 {
 	switch (iParam0)
 	{
-		case joaat("a_c_chickenhawk"):
-		case joaat("a_c_cormorant"):
-		case joaat("a_c_crow"):
-		case joaat("a_c_hen"):
-		case joaat("a_c_pigeon"):
-		case joaat("a_c_seagull"):
+		case joaat("A_C_Chickenhawk"):
+		case joaat("A_C_Cormorant"):
+		case joaat("A_C_Crow"):
+		case joaat("A_C_Hen"):
+		case joaat("A_C_Pigeon"):
+		case joaat("A_C_Seagull"):
 			return 1;
 			break;
 		
@@ -3073,7 +3073,7 @@ int func_69(int iParam0, int iParam1)//Position - 0x35E0
 	fVar2 = 0f;
 	fVar3 = 0f;
 	Local_220 = { ENTITY::GET_WORLD_POSITION_OF_ENTITY_BONE(iParam0, PED::GET_PED_BONE_INDEX(iParam0, iParam1)) };
-	if (iLocal_213 == joaat("a_c_rabbit_01") || iLocal_213 == joaat("a_c_rat"))
+	if (iLocal_213 == joaat("A_C_Rabbit_01") || iLocal_213 == joaat("A_C_Rat"))
 	{
 		Local_219 = { ENTITY::GET_WORLD_POSITION_OF_ENTITY_BONE(iParam0, PED::GET_PED_BONE_INDEX(iParam0, 24816)) };
 	}
@@ -3234,14 +3234,14 @@ int func_81()//Position - 0x38EF
 		{
 			if (NETWORK::_NETWORK_GET_ROS_PRIVILEGE_24())
 			{
-				STATS::STAT_GET_INT(joaat("sp_unlock_exclus_content"), &iVar0, -1);
+				STATS::STAT_GET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), &iVar0, -1);
 				MISC::SET_BIT(&iVar0, 2);
 				MISC::SET_BIT(&iVar0, 4);
 				MISC::SET_BIT(&iVar0, 6);
 				MISC::SET_BIT(&Global_25, 2);
 				MISC::SET_BIT(&Global_25, 4);
 				MISC::SET_BIT(&Global_25, 6);
-				STATS::STAT_SET_INT(joaat("sp_unlock_exclus_content"), iVar0, true);
+				STATS::STAT_SET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), iVar0, true);
 				if (MISC::ARE_PROFILE_SETTINGS_VALID())
 				{
 					iVar0 = MISC::GET_PROFILE_SETTING(866);

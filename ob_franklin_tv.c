@@ -473,7 +473,7 @@ void func_1()//Position - 0x1D4
 								PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), false, 256);
 							}
 							iLocal_51 = 1;
-							WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("weapon_unarmed"), true);
+							WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"), true);
 							func_21(1, 1, 1, 0, 0, 0, 0);
 							func_20();
 							iLocal_304 = 2;
@@ -671,9 +671,9 @@ void func_1()//Position - 0x1D4
 			break;
 		
 		case 8:
-			if (STATS::STAT_GET_INT(joaat("num_sh_tv_watched"), &iLocal_312, -1))
+			if (STATS::STAT_GET_INT(joaat("NUM_SH_TV_WATCHED"), &iLocal_312, -1))
 			{
-				STATS::STAT_SET_INT(joaat("num_sh_tv_watched"), iLocal_312 + 1, true);
+				STATS::STAT_SET_INT(joaat("NUM_SH_TV_WATCHED"), iLocal_312 + 1, true);
 			}
 			BRAIN::_0x6D6840CEE8845831("chop");
 			if (func_6(iLocal_313))
@@ -1482,7 +1482,7 @@ int func_38()//Position - 0x1564
 		{
 			if (bLocal_50)
 			{
-				if (ENTITY::GET_ENTITY_MODEL(uVar2[iVar1]) == joaat("player_zero"))
+				if (ENTITY::GET_ENTITY_MODEL(uVar2[iVar1]) == joaat("Player_Zero"))
 				{
 					if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), ENTITY::GET_ENTITY_COORDS(uVar2[iVar1], true), true) < 3f)
 					{
@@ -1492,7 +1492,7 @@ int func_38()//Position - 0x1564
 			}
 			if (!bLocal_50 && !bLocal_49)
 			{
-				if (ENTITY::GET_ENTITY_MODEL(uVar2[iVar1]) == joaat("player_one"))
+				if (ENTITY::GET_ENTITY_MODEL(uVar2[iVar1]) == joaat("Player_One"))
 				{
 					if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), ENTITY::GET_ENTITY_COORDS(uVar2[iVar1], true), true) < 3f)
 					{

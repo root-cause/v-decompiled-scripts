@@ -341,8 +341,8 @@ void func_1()//Position - 0xBA
 					}
 					if (Local_37.f_20)
 					{
-						WEAPON::GIVE_WEAPON_TO_PED(iLocal_218, joaat("weapon_pistol"), 120, false, false);
-						WEAPON::GIVE_WEAPON_TO_PED(iLocal_218, joaat("weapon_microsmg"), 120, true, true);
+						WEAPON::GIVE_WEAPON_TO_PED(iLocal_218, joaat("WEAPON_PISTOL"), 120, false, false);
+						WEAPON::GIVE_WEAPON_TO_PED(iLocal_218, joaat("WEAPON_MICROSMG"), 120, true, true);
 					}
 					STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_37.f_8);
 					ENTITY::SET_ENTITY_PROOFS(iLocal_218, false, false, false, Local_37.f_27, false, false, false, false);
@@ -425,7 +425,7 @@ void func_1()//Position - 0xBA
 					if (ENTITY::DOES_ENTITY_EXIST(iLocal_218))
 					{
 						Var1 = { PED::GET_DEAD_PED_PICKUP_COORDS(iLocal_218, 1.2f, 1.5f) };
-						iLocal_220 = OBJECT::CREATE_PICKUP(joaat("pickup_money_med_bag"), Var1, Local_37.f_28, -1, true, Local_37.f_10);
+						iLocal_220 = OBJECT::CREATE_PICKUP(joaat("PICKUP_MONEY_MED_BAG"), Var1, Local_37.f_28, -1, true, Local_37.f_10);
 						STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_37.f_10);
 						if (HUD::DOES_BLIP_EXIST(iLocal_222))
 						{
@@ -436,7 +436,7 @@ void func_1()//Position - 0xBA
 					if (ENTITY::DOES_ENTITY_EXIST(iLocal_219) && Local_37.f_11 != 0)
 					{
 						Var1 = { PED::GET_DEAD_PED_PICKUP_COORDS(iLocal_219, 1.2f, 1.5f) };
-						iLocal_221 = OBJECT::CREATE_PICKUP(joaat("pickup_money_med_bag"), Var1, Local_37.f_29, -1, true, Local_37.f_11);
+						iLocal_221 = OBJECT::CREATE_PICKUP(joaat("PICKUP_MONEY_MED_BAG"), Var1, Local_37.f_29, -1, true, Local_37.f_11);
 						STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_37.f_11);
 						if (HUD::DOES_BLIP_EXIST(iLocal_223))
 						{
@@ -620,7 +620,7 @@ void func_1()//Position - 0xBA
 				{
 					if (!TASK::IS_DRIVEBY_TASK_UNDERNEATH_DRIVING_TASK(iLocal_218))
 					{
-						WEAPON::SET_CURRENT_PED_VEHICLE_WEAPON(iLocal_218, joaat("weapon_microsmg"));
+						WEAPON::SET_CURRENT_PED_VEHICLE_WEAPON(iLocal_218, joaat("WEAPON_MICROSMG"));
 						TASK::TASK_DRIVE_BY(iLocal_218, PLAYER::PLAYER_PED_ID(), 0, 0f, 0f, 0f, 1000f, 100, true, joaat("FIRING_PATTERN_BURST_FIRE_DRIVEBY"));
 					}
 				}
@@ -1079,7 +1079,7 @@ int func_8(char* sParam0, int iParam1, bool bParam2)//Position - 0x1092
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -1276,7 +1276,7 @@ int func_17()//Position - 0x1518
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}
@@ -2454,7 +2454,7 @@ bool func_63()//Position - 0x2A90
 
 int func_64(int iParam0)//Position - 0x2AA0
 {
-	if (ENTITY::GET_ENTITY_MODEL(PLAYER::GET_PLAYER_PED(iParam0)) == joaat("mp_f_freemode_01"))
+	if (ENTITY::GET_ENTITY_MODEL(PLAYER::GET_PLAYER_PED(iParam0)) == joaat("MP_F_Freemode_01"))
 	{
 		return 1;
 	}
@@ -3046,7 +3046,7 @@ void func_88(var uParam0)//Position - 0x3492
 	switch (func_5())
 	{
 		case 0:
-			uParam0->f_8 = joaat("a_m_m_eastsa_02");
+			uParam0->f_8 = joaat("A_M_M_EastSA_02");
 			uParam0->f_10 = joaat("prop_cs_duffel_01b");
 			uParam0->f_16 = 572;
 			StringCopy(&(uParam0->f_12), "MON", 16);
@@ -3055,8 +3055,8 @@ void func_88(var uParam0)//Position - 0x3492
 			break;
 		
 		case 1:
-			uParam0->f_8 = joaat("a_m_m_paparazzi_01");
-			uParam0->f_9 = joaat("a_m_m_paparazzi_01");
+			uParam0->f_8 = joaat("A_M_M_Paparazzi_01");
+			uParam0->f_9 = joaat("A_M_M_Paparazzi_01");
 			uParam0->f_10 = joaat("prop_pap_camera_01");
 			uParam0->f_11 = joaat("prop_npc_phone");
 			uParam0->f_16 = 60;

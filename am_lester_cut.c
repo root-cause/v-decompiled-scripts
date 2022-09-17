@@ -3751,7 +3751,7 @@ int func_87()//Position - 0x383E
 			{
 				if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 				{
-					if (ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()) == joaat("mp_f_freemode_01"))
+					if (ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()) == joaat("MP_F_Freemode_01"))
 					{
 						CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(PLAYER::PLAYER_PED_ID(), "MP_1", 0, 0, 64);
 					}
@@ -4898,7 +4898,7 @@ void func_131(bool bParam0, int iParam1, int iParam2)//Position - 0x4BBB
 			NETWORK::NETWORK_SET_IN_SPECTATOR_MODE(bParam0, iParam1);
 		}
 		HUD::SET_MINIMAP_IN_SPECTATOR_MODE(bParam0, iParam1);
-		func_132(joaat("mpply_is_char_spectating"), bParam0);
+		func_132(joaat("MPPLY_IS_CHAR_SPECTATING"), bParam0);
 	}
 }
 
@@ -5056,7 +5056,7 @@ int func_142()//Position - 0x4E92
 					ENTITY::SET_ENTITY_HEADING(iLocal_163, 12.6638f);
 					PED::FORCE_PED_MOTION_STATE(iLocal_163, joaat("MotionState_Walk"), false, 0, false);
 					PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(PLAYER::PLAYER_PED_ID(), false, false);
-					WEAPON::SET_CURRENT_PED_WEAPON(iLocal_163, joaat("weapon_unarmed"), true);
+					WEAPON::SET_CURRENT_PED_WEAPON(iLocal_163, joaat("WEAPON_UNARMED"), true);
 				}
 				iLocal_342 = CAM::CREATE_CAM("DEFAULT_SCRIPTED_CAMERA", false);
 				CAM::SET_CAM_ACTIVE(iLocal_342, true);
@@ -5147,7 +5147,7 @@ int func_142()//Position - 0x4E92
 					{
 						ENTITY::SET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), 1273.885f, -1718.004f, 53.7715f, true, false, false, true);
 						ENTITY::SET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID(), 21.8709f);
-						WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("weapon_unarmed"), true);
+						WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"), true);
 						if (CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(0) == 4)
 						{
 							PED::FORCE_PED_MOTION_STATE(PLAYER::PLAYER_PED_ID(), joaat("MotionState_Aiming"), false, 0, false);
@@ -5343,7 +5343,7 @@ int func_145(int* iParam0, int iParam1, struct<3> Param2, float fParam3, bool bP
 			}
 			*iParam0 = PED::CREATE_PED(26, iVar0, Param2, fParam3, false, false);
 			PED::SET_PED_DEFAULT_COMPONENT_VARIATION(*iParam0);
-			if (iVar0 == joaat("ig_lamardavis"))
+			if (iVar0 == joaat("IG_LamarDavis"))
 			{
 				if (PED::GET_PED_DRAWABLE_VARIATION(*iParam0, 3) == 0)
 				{
@@ -5534,7 +5534,7 @@ int func_149(char* sParam0, int iParam1, bool bParam2)//Position - 0x575F
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -5717,7 +5717,7 @@ int func_156()//Position - 0x5BA6
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}

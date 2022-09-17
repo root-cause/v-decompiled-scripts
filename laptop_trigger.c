@@ -3613,7 +3613,7 @@ void func_140(bool bParam0)//Position - 0x3EF0
 			if (func_10(PLAYER::PLAYER_ID(), 1, 1))
 			{
 				PED::SET_PED_CAN_BE_DRAGGED_OUT(PLAYER::PLAYER_PED_ID(), false);
-				WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("weapon_unarmed"), true);
+				WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"), true);
 				PED::SET_PED_CONFIG_FLAG(PLAYER::PLAYER_PED_ID(), 342, true);
 				PED::SET_PED_CONFIG_FLAG(PLAYER::PLAYER_PED_ID(), 122, true);
 				PLAYER::SET_PLAYER_VEHICLE_DEFENSE_MODIFIER(PLAYER::PLAYER_ID(), 0.5f);
@@ -3954,7 +3954,7 @@ int func_164(int iParam0)//Position - 0x4560
 		}
 		else
 		{
-			iVar0 = func_166(joaat("mpply_vipgameplaydisabledtimer"));
+			iVar0 = func_166(joaat("MPPLY_VIPGAMEPLAYDISABLEDTIMER"));
 		}
 		iVar1 = ((iVar0 + func_165()) - NETWORK::GET_CLOUD_TIME_AS_INT());
 		return iVar1;
@@ -4028,7 +4028,7 @@ void func_170()//Position - 0x4659
 	Global_1946107 = 1;
 	if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 	{
-		WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("weapon_unarmed"), true);
+		WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"), true);
 		Var1 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iLocal_120, 0.0328f, -0.8f, 0.3f) };
 		bVar2 = false;
 		func_237(&uLocal_116);
@@ -4106,7 +4106,7 @@ void func_171(int iParam0)//Position - 0x47AA
 	STREAMING::REQUEST_ANIM_DICT(&sVar0);
 	sVar3 = "idle_a";
 	iVar4 = 1;
-	if (ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()) == joaat("mp_f_freemode_01"))
+	if (ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()) == joaat("MP_F_Freemode_01"))
 	{
 		iVar4 = 1;
 	}

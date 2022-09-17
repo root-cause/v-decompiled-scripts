@@ -389,7 +389,7 @@ bool func_21()//Position - 0x55D
 
 int func_22(int iParam0)//Position - 0x56D
 {
-	if (ENTITY::GET_ENTITY_MODEL(PLAYER::GET_PLAYER_PED(iParam0)) == joaat("mp_f_freemode_01"))
+	if (ENTITY::GET_ENTITY_MODEL(PLAYER::GET_PLAYER_PED(iParam0)) == joaat("MP_F_Freemode_01"))
 	{
 		return 1;
 	}

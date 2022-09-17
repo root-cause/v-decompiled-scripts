@@ -130,7 +130,7 @@ void __EntryFunction__()//Position - 0x0
 								case -1989308064:
 									func_7(12, 0);
 									func_6(134, 1);
-									STATS::STAT_SET_INT(joaat("sp_final_decision"), 2, true);
+									STATS::STAT_SET_INT(joaat("SP_FINAL_DECISION"), 2, true);
 									break;
 								
 								case -1970925435:
@@ -143,13 +143,13 @@ void __EntryFunction__()//Position - 0x0
 								case -1060930305:
 									func_7(12, 1);
 									func_6(134, 1);
-									STATS::STAT_SET_INT(joaat("sp_final_decision"), 1, true);
+									STATS::STAT_SET_INT(joaat("SP_FINAL_DECISION"), 1, true);
 									break;
 								
 								case -1817481777:
 									func_7(12, 2);
 									func_6(134, 1);
-									STATS::STAT_SET_INT(joaat("sp_final_decision"), 3, true);
+									STATS::STAT_SET_INT(joaat("SP_FINAL_DECISION"), 3, true);
 									break;
 								
 								default:

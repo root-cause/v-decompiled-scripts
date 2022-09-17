@@ -2288,9 +2288,9 @@ void func_60()//Position - 0x2209
 			Var3.f_20 = iVar4;
 		}
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar5, true);
-		if (WEAPON::IS_PED_ARMED(PLAYER::PLAYER_PED_ID(), 7) || (MISC::ARE_STRINGS_EQUAL(Var3.f_2, "FP_HAIL_TAXI") && iVar5 == joaat("weapon_petrolcan")))
+		if (WEAPON::IS_PED_ARMED(PLAYER::PLAYER_PED_ID(), 7) || (MISC::ARE_STRINGS_EQUAL(Var3.f_2, "FP_HAIL_TAXI") && iVar5 == joaat("WEAPON_PETROLCAN")))
 		{
-			if (iVar5 != joaat("weapon_petrolcan") || !MISC::ARE_STRINGS_EQUAL(Var3.f_2, "FP_HAIL_TAXI"))
+			if (iVar5 != joaat("WEAPON_PETROLCAN") || !MISC::ARE_STRINGS_EQUAL(Var3.f_2, "FP_HAIL_TAXI"))
 			{
 				PED::SET_PED_CONFIG_FLAG(PLAYER::PLAYER_PED_ID(), 113, true);
 			}
@@ -5744,7 +5744,7 @@ int func_119(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 0x
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -5890,7 +5890,7 @@ int func_123()//Position - 0x84A8
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}
@@ -6424,6 +6424,6 @@ int func_146()//Position - 0x8D66
 
 int func_147()//Position - 0x8D73
 {
-	return joaat("a_m_y_stlat_01");
+	return joaat("A_M_Y_StLat_01");
 }
 

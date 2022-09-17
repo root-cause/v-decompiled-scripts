@@ -2746,7 +2746,7 @@ void func_60(bool bParam0, int iParam1, int iParam2)//Position - 0x2807
 			NETWORK::NETWORK_SET_IN_SPECTATOR_MODE(bParam0, iParam1);
 		}
 		HUD::SET_MINIMAP_IN_SPECTATOR_MODE(bParam0, iParam1);
-		func_61(joaat("mpply_is_char_spectating"), bParam0);
+		func_61(joaat("MPPLY_IS_CHAR_SPECTATING"), bParam0);
 	}
 }
 
@@ -6344,7 +6344,7 @@ void func_185()//Position - 0x6951
 {
 	if (Global_1836751.f_3 == -1)
 	{
-		Global_1836751.f_3 = func_186(joaat("mpply_last_prof_race_won"));
+		Global_1836751.f_3 = func_186(joaat("MPPLY_LAST_PROF_RACE_WON"));
 	}
 }
 

@@ -1413,9 +1413,9 @@ void func_23()//Position - 0x2C1B
 	int iVar1;
 	int iVar2;
 	
-	STATS::STAT_GET_INT(joaat("content_hanger_veh"), &iVar0, -1);
-	STATS::STAT_GET_INT(joaat("content_marina_veh"), &iVar1, -1);
-	STATS::STAT_GET_INT(joaat("content_heli_veh"), &iVar2, -1);
+	STATS::STAT_GET_INT(joaat("CONTENT_HANGER_VEH"), &iVar0, -1);
+	STATS::STAT_GET_INT(joaat("CONTENT_MARINA_VEH"), &iVar1, -1);
+	STATS::STAT_GET_INT(joaat("CONTENT_HELI_VEH"), &iVar2, -1);
 	if ((iVar0 >= 0 && iVar1 >= 0) && iVar2 >= 0)
 	{
 		Global_113386.f_668.f_1312 = (Global_113386.f_668.f_1312 - iVar0);
@@ -13257,7 +13257,7 @@ int func_74()//Position - 0x22D60
 			return 0;
 		}
 	}
-	if (STATS::STAT_GET_INT(joaat("sp_unlock_exclus_content"), &uVar0, -1))
+	if (STATS::STAT_GET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), &uVar0, -1))
 	{
 		if (BitTest(uVar0, 5))
 		{
@@ -13275,7 +13275,7 @@ int func_74()//Position - 0x22D60
 	{
 		if (Global_152261.f_3)
 		{
-			iVar2 = joaat("mpply_plat_up_lb_check");
+			iVar2 = joaat("MPPLY_PLAT_UP_LB_CHECK");
 			if (STATS::STAT_GET_INT(iVar2, &uVar1, -1))
 			{
 				if (BitTest(uVar1, 5))
@@ -13299,14 +13299,14 @@ int func_74()//Position - 0x22D60
 		{
 			if (NETWORK::_NETWORK_GET_ROS_PRIVILEGE_25())
 			{
-				STATS::STAT_GET_INT(joaat("sp_unlock_exclus_content"), &iVar4, -1);
+				STATS::STAT_GET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), &iVar4, -1);
 				MISC::SET_BIT(&iVar4, 1);
 				MISC::SET_BIT(&iVar4, 3);
 				MISC::SET_BIT(&iVar4, 5);
 				MISC::SET_BIT(&Global_25, 1);
 				MISC::SET_BIT(&Global_25, 3);
 				MISC::SET_BIT(&Global_25, 5);
-				STATS::STAT_SET_INT(joaat("sp_unlock_exclus_content"), iVar4, true);
+				STATS::STAT_SET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), iVar4, true);
 				if (MISC::ARE_PROFILE_SETTINGS_VALID())
 				{
 					iVar4 = MISC::GET_PROFILE_SETTING(866);
@@ -13339,14 +13339,14 @@ int func_75()//Position - 0x22E99
 		{
 			if (NETWORK::_NETWORK_GET_ROS_PRIVILEGE_24())
 			{
-				STATS::STAT_GET_INT(joaat("sp_unlock_exclus_content"), &iVar0, -1);
+				STATS::STAT_GET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), &iVar0, -1);
 				MISC::SET_BIT(&iVar0, 2);
 				MISC::SET_BIT(&iVar0, 4);
 				MISC::SET_BIT(&iVar0, 6);
 				MISC::SET_BIT(&Global_25, 2);
 				MISC::SET_BIT(&Global_25, 4);
 				MISC::SET_BIT(&Global_25, 6);
-				STATS::STAT_SET_INT(joaat("sp_unlock_exclus_content"), iVar0, true);
+				STATS::STAT_SET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), iVar0, true);
 				if (MISC::ARE_PROFILE_SETTINGS_VALID())
 				{
 					iVar0 = MISC::GET_PROFILE_SETTING(866);

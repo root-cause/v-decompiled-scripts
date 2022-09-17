@@ -1952,7 +1952,7 @@ void func_37(bool bParam0, int iParam1, int iParam2)//Position - 0x1748
 			NETWORK::NETWORK_SET_IN_SPECTATOR_MODE(bParam0, iParam1);
 		}
 		HUD::SET_MINIMAP_IN_SPECTATOR_MODE(bParam0, iParam1);
-		func_38(joaat("mpply_is_char_spectating"), bParam0);
+		func_38(joaat("MPPLY_IS_CHAR_SPECTATING"), bParam0);
 	}
 }
 
@@ -2803,7 +2803,7 @@ void func_86(var uParam0)//Position - 0x26A0
 			if (iVar1 >= Global_262145.f_16823)
 			{
 				func_122(7551, 1, -1);
-				if (ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()) == joaat("mp_m_freemode_01"))
+				if (ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()) == joaat("MP_M_Freemode_01"))
 				{
 					func_87(func_121(joaat("MP_exec_prizes_015_M"), 3), 1, 1, 0, 0, -1);
 				}

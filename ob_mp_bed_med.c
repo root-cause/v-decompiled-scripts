@@ -578,7 +578,7 @@ void func_2()//Position - 0x30E
 						Global_1835486 = 9;
 						func_27(PLAYER::PLAYER_ID(), 0, 256, 0);
 						iLocal_36 = 1;
-						WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("weapon_unarmed"), true);
+						WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"), true);
 						func_17(1, 1, 1, 0, 0, 0, 0);
 						Local_334 = { PED::GET_ANIM_INITIAL_OFFSET_POSITION(sLocal_330, sLocal_331, Local_338, Local_339, 0f, 2) };
 						Var1 = { PED::GET_ANIM_INITIAL_OFFSET_ROTATION(sLocal_330, sLocal_331, Local_338, Local_339, 0f, 2) };
@@ -1473,7 +1473,7 @@ void func_32(bool bParam0, int iParam1, int iParam2)//Position - 0x13FD
 			NETWORK::NETWORK_SET_IN_SPECTATOR_MODE(bParam0, iParam1);
 		}
 		HUD::SET_MINIMAP_IN_SPECTATOR_MODE(bParam0, iParam1);
-		func_33(joaat("mpply_is_char_spectating"), bParam0);
+		func_33(joaat("MPPLY_IS_CHAR_SPECTATING"), bParam0);
 	}
 }
 
@@ -1917,7 +1917,7 @@ int func_53()//Position - 0x1B6D
 		{
 			if (bLocal_35)
 			{
-				if (ENTITY::GET_ENTITY_MODEL(uVar2[iVar1]) == joaat("player_zero"))
+				if (ENTITY::GET_ENTITY_MODEL(uVar2[iVar1]) == joaat("Player_Zero"))
 				{
 					if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), ENTITY::GET_ENTITY_COORDS(uVar2[iVar1], true), true) < 3f)
 					{
@@ -1927,7 +1927,7 @@ int func_53()//Position - 0x1B6D
 			}
 			if (!bLocal_35 && !bLocal_34)
 			{
-				if (ENTITY::GET_ENTITY_MODEL(uVar2[iVar1]) == joaat("player_one"))
+				if (ENTITY::GET_ENTITY_MODEL(uVar2[iVar1]) == joaat("Player_One"))
 				{
 					if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), ENTITY::GET_ENTITY_COORDS(uVar2[iVar1], true), true) < 3f)
 					{

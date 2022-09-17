@@ -889,7 +889,7 @@ int func_25()//Position - 0x92A
 
 void func_26(int iParam0, int iParam1, bool bParam2, bool bParam3)//Position - 0xB62
 {
-	WEAPON::GIVE_DELAYED_WEAPON_TO_PED(iParam0, joaat("weapon_assaultrifle"), 300, true);
+	WEAPON::GIVE_DELAYED_WEAPON_TO_PED(iParam0, joaat("WEAPON_ASSAULTRIFLE"), 300, true);
 	PED::SET_PED_COMBAT_ATTRIBUTES(iParam0, 5, true);
 	PED::SET_PED_COMBAT_ATTRIBUTES(iParam0, 3, false);
 	PED::SET_PED_COMBAT_MOVEMENT(iParam0, 2);
@@ -1963,7 +1963,7 @@ int func_63(char* sParam0, int iParam1, bool bParam2)//Position - 0x1E30
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -2155,7 +2155,7 @@ int func_71()//Position - 0x22AD
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}

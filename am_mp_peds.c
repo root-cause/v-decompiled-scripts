@@ -3168,7 +3168,7 @@ bool func_35()//Position - 0x18F1
 
 int func_36(int iParam0)//Position - 0x1901
 {
-	if (ENTITY::GET_ENTITY_MODEL(PLAYER::GET_PLAYER_PED(iParam0)) == joaat("mp_f_freemode_01"))
+	if (ENTITY::GET_ENTITY_MODEL(PLAYER::GET_PLAYER_PED(iParam0)) == joaat("MP_F_Freemode_01"))
 	{
 		return 1;
 	}
@@ -3545,7 +3545,7 @@ void func_56(var uParam0, var uParam1)//Position - 0x1F40
 {
 	ENTITY::SET_ENTITY_CAN_BE_DAMAGED(*uParam0, false);
 	PED::SET_PED_AS_ENEMY(*uParam0, false);
-	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("weapon_unarmed"), true);
+	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("WEAPON_UNARMED"), true);
 	PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(*uParam0, true);
 	PED::SET_PED_RESET_FLAG(*uParam0, 71, true);
 	PED::SET_PED_RESET_FLAG(*uParam0, 249, true);
@@ -4742,7 +4742,7 @@ void func_108(var uParam0, var uParam1)//Position - 0x343D
 {
 	ENTITY::SET_ENTITY_CAN_BE_DAMAGED(*uParam0, false);
 	PED::SET_PED_AS_ENEMY(*uParam0, false);
-	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("weapon_unarmed"), true);
+	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("WEAPON_UNARMED"), true);
 	PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(*uParam0, true);
 	PED::SET_PED_RESET_FLAG(*uParam0, 249, true);
 	PED::SET_PED_CONFIG_FLAG(*uParam0, 185, true);
@@ -6057,7 +6057,7 @@ void func_147(var uParam0, var uParam1)//Position - 0x5079
 {
 	ENTITY::SET_ENTITY_CAN_BE_DAMAGED(*uParam0, false);
 	PED::SET_PED_AS_ENEMY(*uParam0, false);
-	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("weapon_unarmed"), true);
+	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("WEAPON_UNARMED"), true);
 	PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(*uParam0, true);
 	PED::SET_PED_RESET_FLAG(*uParam0, 249, true);
 	PED::SET_PED_CONFIG_FLAG(*uParam0, 185, true);
@@ -8476,9 +8476,9 @@ void func_205(var uParam0, var uParam1)//Position - 0x7C04
 {
 	ENTITY::SET_ENTITY_CAN_BE_DAMAGED(*uParam0, false);
 	PED::SET_PED_AS_ENEMY(*uParam0, false);
-	if (ENTITY::GET_ENTITY_MODEL(*uParam0) != joaat("a_c_chop"))
+	if (ENTITY::GET_ENTITY_MODEL(*uParam0) != joaat("A_C_Chop"))
 	{
-		WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("weapon_unarmed"), true);
+		WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("WEAPON_UNARMED"), true);
 	}
 	PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(*uParam0, true);
 	PED::SET_PED_RESET_FLAG(*uParam0, 249, true);
@@ -12557,7 +12557,7 @@ void func_282(var uParam0, var uParam1)//Position - 0xCB75
 {
 	ENTITY::SET_ENTITY_CAN_BE_DAMAGED(*uParam0, false);
 	PED::SET_PED_AS_ENEMY(*uParam0, false);
-	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("weapon_unarmed"), true);
+	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("WEAPON_UNARMED"), true);
 	PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(*uParam0, true);
 	PED::SET_PED_RESET_FLAG(*uParam0, 249, true);
 	PED::SET_PED_CONFIG_FLAG(*uParam0, 185, true);
@@ -15912,7 +15912,7 @@ void func_343(var uParam0, var uParam1)//Position - 0x11104
 {
 	ENTITY::SET_ENTITY_CAN_BE_DAMAGED(*uParam0, false);
 	PED::SET_PED_AS_ENEMY(*uParam0, false);
-	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("weapon_unarmed"), true);
+	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("WEAPON_UNARMED"), true);
 	PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(*uParam0, true);
 	PED::SET_PED_RESET_FLAG(*uParam0, 249, true);
 	PED::SET_PED_CONFIG_FLAG(*uParam0, 185, true);
@@ -20965,7 +20965,7 @@ void func_415(var uParam0, int iParam1)//Position - 0x185D7
 {
 	ENTITY::SET_ENTITY_CAN_BE_DAMAGED(*uParam0, false);
 	PED::SET_PED_AS_ENEMY(*uParam0, false);
-	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("weapon_unarmed"), true);
+	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("WEAPON_UNARMED"), true);
 	if (iParam1 == 3)
 	{
 		ENTITY::SET_ENTITY_VISIBLE(*uParam0, false, false);
@@ -23201,7 +23201,7 @@ void func_464(var uParam0, var uParam1)//Position - 0x1B5A7
 {
 	ENTITY::SET_ENTITY_CAN_BE_DAMAGED(*uParam0, false);
 	PED::SET_PED_AS_ENEMY(*uParam0, false);
-	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("weapon_unarmed"), true);
+	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("WEAPON_UNARMED"), true);
 	PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(*uParam0, true);
 	PED::SET_PED_RESET_FLAG(*uParam0, 249, true);
 	PED::SET_PED_CONFIG_FLAG(*uParam0, 185, true);
@@ -32998,7 +32998,7 @@ int func_524(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x2
 	{
 		case 13:
 			iVar0 = INTERIOR::GET_ROOM_KEY_FROM_ENTITY(PLAYER::PLAYER_PED_ID());
-			if (iVar0 != joaat("lobby"))
+			if (iVar0 != joaat("Lobby"))
 			{
 				return 0;
 			}
@@ -33190,7 +33190,7 @@ void func_531(var uParam0, var uParam1)//Position - 0x2B8FD
 {
 	ENTITY::SET_ENTITY_CAN_BE_DAMAGED(*uParam0, false);
 	PED::SET_PED_AS_ENEMY(*uParam0, false);
-	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("weapon_unarmed"), true);
+	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("WEAPON_UNARMED"), true);
 	PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(*uParam0, true);
 	PED::SET_PED_RESET_FLAG(*uParam0, 249, true);
 	PED::SET_PED_CONFIG_FLAG(*uParam0, 185, true);
@@ -65347,7 +65347,7 @@ void func_829(var uParam0, var uParam1)//Position - 0x4FA56
 {
 	ENTITY::SET_ENTITY_CAN_BE_DAMAGED(*uParam0, false);
 	PED::SET_PED_AS_ENEMY(*uParam0, false);
-	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("weapon_unarmed"), true);
+	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("WEAPON_UNARMED"), true);
 	PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(*uParam0, true);
 	PED::SET_PED_RESET_FLAG(*uParam0, 249, true);
 	PED::SET_PED_CONFIG_FLAG(*uParam0, 185, true);
@@ -68338,7 +68338,7 @@ void func_878(var uParam0, var uParam1)//Position - 0x52DDB
 {
 	ENTITY::SET_ENTITY_CAN_BE_DAMAGED(*uParam0, false);
 	PED::SET_PED_AS_ENEMY(*uParam0, false);
-	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("weapon_unarmed"), true);
+	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("WEAPON_UNARMED"), true);
 	PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(*uParam0, true);
 	PED::SET_PED_RESET_FLAG(*uParam0, 249, true);
 	PED::SET_PED_CONFIG_FLAG(*uParam0, 185, true);
@@ -68415,7 +68415,7 @@ void func_885(var uParam0, int iParam1)//Position - 0x52F12
 		case 120:
 		case 121:
 		case 122:
-			uParam0->f_3 = joaat("weapon_assaultrifle");
+			uParam0->f_3 = joaat("WEAPON_ASSAULTRIFLE");
 			*uParam0 = 1;
 			uParam0->f_1 = 1;
 			uParam0->f_2 = 1;
@@ -96711,7 +96711,7 @@ void func_1239(bool bParam0, int iParam1, int iParam2)//Position - 0x71245
 			NETWORK::NETWORK_SET_IN_SPECTATOR_MODE(bParam0, iParam1);
 		}
 		HUD::SET_MINIMAP_IN_SPECTATOR_MODE(bParam0, iParam1);
-		func_1240(joaat("mpply_is_char_spectating"), bParam0);
+		func_1240(joaat("MPPLY_IS_CHAR_SPECTATING"), bParam0);
 	}
 }
 
@@ -100185,299 +100185,299 @@ int func_1329(int iParam0)//Position - 0x758E0
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = joaat("a_m_y_clubcust_01");
+			iVar0 = joaat("A_M_Y_ClubCust_01");
 			break;
 		
 		case 1:
-			iVar0 = joaat("a_m_y_clubcust_02");
+			iVar0 = joaat("A_M_Y_ClubCust_02");
 			break;
 		
 		case 2:
-			iVar0 = joaat("a_m_y_clubcust_03");
+			iVar0 = joaat("A_M_Y_ClubCust_03");
 			break;
 		
 		case 3:
-			iVar0 = joaat("a_m_y_clubcust_04");
+			iVar0 = joaat("A_M_Y_ClubCust_04");
 			break;
 		
 		case 4:
-			iVar0 = joaat("a_f_y_clubcust_01");
+			iVar0 = joaat("A_F_Y_ClubCust_01");
 			break;
 		
 		case 5:
-			iVar0 = joaat("a_f_y_clubcust_02");
+			iVar0 = joaat("A_F_Y_ClubCust_02");
 			break;
 		
 		case 6:
-			iVar0 = joaat("a_f_y_clubcust_03");
+			iVar0 = joaat("A_F_Y_ClubCust_03");
 			break;
 		
 		case 7:
-			iVar0 = joaat("a_f_y_clubcust_04");
+			iVar0 = joaat("A_F_Y_ClubCust_04");
 			break;
 		
 		case 8:
-			iVar0 = joaat("a_m_o_beach_02");
+			iVar0 = joaat("A_M_O_Beach_02");
 			break;
 		
 		case 9:
-			iVar0 = joaat("a_m_y_beach_04");
+			iVar0 = joaat("A_M_Y_Beach_04");
 			break;
 		
 		case 10:
-			iVar0 = joaat("a_f_y_beach_02");
+			iVar0 = joaat("A_F_Y_Beach_02");
 			break;
 		
 		case 11:
-			iVar0 = joaat("s_m_y_casino_01");
+			iVar0 = joaat("S_M_Y_Casino_01");
 			break;
 		
 		case 12:
-			iVar0 = joaat("s_f_y_casino_01");
+			iVar0 = joaat("S_F_Y_Casino_01");
 			break;
 		
 		case 13:
-			iVar0 = joaat("ig_sol");
+			iVar0 = joaat("IG_Sol");
 			break;
 		
 		case 14:
-			iVar0 = joaat("ig_helmsmanpavel");
+			iVar0 = joaat("IG_HelmsmanPavel");
 			break;
 		
 		case 15:
-			iVar0 = joaat("ig_kaylee");
+			iVar0 = joaat("IG_Kaylee");
 			break;
 		
 		case 16:
-			iVar0 = joaat("s_m_m_highsec_04");
+			iVar0 = joaat("S_M_M_HighSec_04");
 			break;
 		
 		case 17:
-			iVar0 = joaat("ig_patricia_02");
+			iVar0 = joaat("IG_Patricia_02");
 			break;
 		
 		case 18:
-			iVar0 = joaat("ig_miguelmadrazo");
+			iVar0 = joaat("IG_MiguelMadrazo");
 			break;
 		
 		case 19:
-			iVar0 = joaat("ig_jackie");
+			iVar0 = joaat("IG_Jackie");
 			break;
 		
 		case 20:
-			iVar0 = joaat("ig_isldj_00");
+			iVar0 = joaat("IG_IslDJ_00");
 			break;
 		
 		case 21:
-			iVar0 = joaat("ig_isldj_01");
+			iVar0 = joaat("IG_IslDJ_01");
 			break;
 		
 		case 22:
-			iVar0 = joaat("ig_isldj_02");
+			iVar0 = joaat("IG_IslDJ_02");
 			break;
 		
 		case 23:
-			iVar0 = joaat("ig_isldj_03");
+			iVar0 = joaat("IG_IslDJ_03");
 			break;
 		
 		case 24:
-			iVar0 = joaat("ig_isldj_04");
+			iVar0 = joaat("IG_IslDJ_04");
 			break;
 		
 		case 25:
-			iVar0 = joaat("a_f_y_beach_01");
+			iVar0 = joaat("A_F_Y_Beach_01");
 			break;
 		
 		case 26:
-			iVar0 = joaat("a_f_y_beach_01");
+			iVar0 = joaat("A_F_Y_Beach_01");
 			break;
 		
 		case 27:
-			iVar0 = joaat("ig_isldj_04_e_01");
+			iVar0 = joaat("IG_ISLDJ_04_E_01");
 			break;
 		
 		case 28:
-			iVar0 = joaat("ig_isldj_04_d_02");
+			iVar0 = joaat("IG_ISLDJ_04_D_02");
 			break;
 		
 		case 29:
-			iVar0 = joaat("ig_isldj_04_d_01");
+			iVar0 = joaat("IG_ISLDJ_04_D_01");
 			break;
 		
 		case 30:
-			iVar0 = joaat("s_m_m_bouncer_02");
+			iVar0 = joaat("S_M_M_Bouncer_02");
 			break;
 		
 		case 31:
-			iVar0 = joaat("g_m_m_cartelguards_02");
+			iVar0 = joaat("G_M_M_CartelGuards_02");
 			break;
 		
 		case 32:
-			iVar0 = joaat("ig_juanstrickler");
+			iVar0 = joaat("IG_JuanStrickler");
 			break;
 		
 		case 33:
-			iVar0 = joaat("ig_sss");
+			iVar0 = joaat("IG_SSS");
 			break;
 		
 		case 34:
-			iVar0 = joaat("ig_englishdave_02");
+			iVar0 = joaat("IG_EnglishDave_02");
 			break;
 		
 		case 35:
-			iVar0 = joaat("ig_hao_02");
+			iVar0 = joaat("IG_Hao_02");
 			break;
 		
 		case 36:
-			iVar0 = joaat("s_m_m_autoshop_03");
+			iVar0 = joaat("S_M_M_Autoshop_03");
 			break;
 		
 		case 37:
-			iVar0 = joaat("s_f_m_autoshop_01");
+			iVar0 = joaat("S_F_M_Autoshop_01");
 			break;
 		
 		case 44:
-			iVar0 = joaat("a_m_y_carclub_01");
+			iVar0 = joaat("A_M_Y_CarClub_01");
 			break;
 		
 		case 45:
-			iVar0 = joaat("a_f_y_carclub_01");
+			iVar0 = joaat("A_F_Y_CarClub_01");
 			break;
 		
 		case 46:
-			iVar0 = joaat("g_m_importexport_01");
+			iVar0 = joaat("G_M_ImportExport_01");
 			break;
 		
 		case 47:
-			iVar0 = joaat("g_f_importexport_01");
+			iVar0 = joaat("G_F_ImportExport_01");
 			break;
 		
 		case 38:
-			iVar0 = joaat("ig_sessanta");
+			iVar0 = joaat("IG_Sessanta");
 			break;
 		
 		case 39:
-			iVar0 = joaat("ig_benny_02");
+			iVar0 = joaat("IG_Benny_02");
 			break;
 		
 		case 43:
-			iVar0 = joaat("mp_f_bennymech_01");
+			iVar0 = joaat("MP_F_BennyMech_01");
 			break;
 		
 		case 40:
-			iVar0 = joaat("s_m_y_xmech_01");
+			iVar0 = joaat("S_M_Y_XMech_01");
 			break;
 		
 		case 41:
-			iVar0 = joaat("s_m_m_autoshop_01");
+			iVar0 = joaat("S_M_M_AutoShop_01");
 			break;
 		
 		case 42:
-			iVar0 = joaat("mp_m_waremech_01");
+			iVar0 = joaat("MP_M_WareMech_01");
 			break;
 		
 		case 48:
-			iVar0 = joaat("ig_moodyman_02");
+			iVar0 = joaat("IG_Moodyman_02");
 			break;
 		
 		case 49:
-			iVar0 = joaat("s_f_y_clubbar_01");
+			iVar0 = joaat("S_F_Y_ClubBar_01");
 			break;
 		
 		case 55:
-			iVar0 = joaat("ig_jio_02");
+			iVar0 = joaat("IG_JIO_02");
 			break;
 		
 		case 56:
-			iVar0 = joaat("ig_mjo_02");
+			iVar0 = joaat("IG_MJO_02");
 			break;
 		
 		case 57:
-			iVar0 = joaat("a_f_y_bevhills_01");
+			iVar0 = joaat("A_F_Y_BevHills_01");
 			break;
 		
 		case 58:
-			iVar0 = joaat("ig_soundeng_00");
+			iVar0 = joaat("IG_SoundEng_00");
 			break;
 		
 		case 64:
-			iVar0 = joaat("ig_entourage_a");
+			iVar0 = joaat("IG_Entourage_A");
 			break;
 		
 		case 65:
-			iVar0 = joaat("ig_entourage_b");
+			iVar0 = joaat("IG_Entourage_B");
 			break;
 		
 		case 59:
-			iVar0 = joaat("ig_musician_00");
+			iVar0 = joaat("IG_Musician_00");
 			break;
 		
 		case 60:
-			iVar0 = joaat("s_f_m_studioassist_01");
+			iVar0 = joaat("S_F_M_StudioAssist_01");
 			break;
 		
 		case 61:
-			iVar0 = joaat("s_m_m_studioassist_02");
+			iVar0 = joaat("S_M_M_StudioAssist_02");
 			break;
 		
 		case 62:
-			iVar0 = joaat("s_m_m_studiosoueng_02");
+			iVar0 = joaat("S_M_M_StudioSouEng_02");
 			break;
 		
 		case 63:
-			iVar0 = joaat("s_m_m_studioprod_01");
+			iVar0 = joaat("S_M_M_StudioProd_01");
 			break;
 		
 		case 50:
-			iVar0 = joaat("a_f_y_business_04");
+			iVar0 = joaat("A_F_Y_Business_04");
 			break;
 		
 		case 51:
-			iVar0 = joaat("ig_security_a");
+			iVar0 = joaat("IG_Security_A");
 			break;
 		
 		case 52:
-			iVar0 = joaat("s_m_m_highsec_05");
+			iVar0 = joaat("S_M_M_HighSec_05");
 			break;
 		
 		case 53:
-			iVar0 = joaat("p_franklin_02");
+			iVar0 = joaat("P_Franklin_02");
 			break;
 		
 		case 54:
-			iVar0 = joaat("ig_lamardavis_02");
+			iVar0 = joaat("IG_LamarDavis_02");
 			break;
 		
 		case 68:
-			iVar0 = joaat("s_m_m_studioassist_02");
+			iVar0 = joaat("S_M_M_StudioAssist_02");
 			break;
 		
 		case 66:
-			iVar0 = joaat("a_f_y_soucent_02");
+			iVar0 = joaat("A_F_Y_SouCent_02");
 			break;
 		
 		case 67:
-			iVar0 = joaat("a_f_y_vinewood_01");
+			iVar0 = joaat("A_F_Y_Vinewood_01");
 			break;
 		
 		case 69:
-			iVar0 = joaat("ig_imani");
+			iVar0 = joaat("IG_Imani");
 			break;
 		
 		case 70:
-			iVar0 = joaat("ig_ary_02");
+			iVar0 = joaat("IG_ARY_02");
 			break;
 		
 		case 71:
-			iVar0 = joaat("a_m_y_clubcust_01");
+			iVar0 = joaat("A_M_Y_ClubCust_01");
 			break;
 		
 		case 72:
-			iVar0 = joaat("a_m_y_clubcust_03");
+			iVar0 = joaat("A_M_Y_ClubCust_03");
 			break;
 		
 		case 73:
-			iVar0 = joaat("a_m_y_clubcust_02");
+			iVar0 = joaat("A_M_Y_ClubCust_02");
 			break;
 		
 		case 74:
@@ -100489,19 +100489,19 @@ int func_1329(int iParam0)//Position - 0x758E0
 			break;
 		
 		case 76:
-			iVar0 = joaat("a_m_y_gencaspat_01");
+			iVar0 = joaat("A_M_Y_GenCasPat_01");
 			break;
 		
 		case 77:
-			iVar0 = joaat("a_m_y_stbla_02");
+			iVar0 = joaat("A_M_Y_StBla_02");
 			break;
 		
 		case 78:
-			iVar0 = joaat("a_m_y_vinewood_01");
+			iVar0 = joaat("A_M_Y_Vinewood_01");
 			break;
 		
 		case 79:
-			iVar0 = joaat("a_m_y_smartcaspat_01");
+			iVar0 = joaat("A_M_Y_SmartCasPat_01");
 			break;
 		
 		case 80:
@@ -105305,7 +105305,7 @@ int func_1436(char* sParam0, int iParam1, bool bParam2)//Position - 0x7BA6B
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -105488,7 +105488,7 @@ int func_1443()//Position - 0x7BEC2
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}

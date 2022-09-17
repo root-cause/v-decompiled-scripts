@@ -1644,7 +1644,7 @@ void func_21()//Position - 0x1D6A
 	Var0.f_876 = 32;
 	Var0.f_913 = -1;
 	Var0.f_914 = -1;
-	Var0.f_926 = joaat("weapon_unarmed");
+	Var0.f_926 = joaat("WEAPON_UNARMED");
 	Var0.f_928 = -1;
 	Var0.f_929 = -1;
 	Var0.f_943 = -1;
@@ -2644,7 +2644,7 @@ void func_33()//Position - 0x34FB
 	}
 	Global_2815059.f_6771 = -1;
 	Global_2815059.f_837 = joaat("taxi");
-	Global_2815059.f_838 = joaat("a_m_y_stlat_01");
+	Global_2815059.f_838 = joaat("A_M_Y_StLat_01");
 	Global_2815059.f_957 = 0;
 	Global_2815059.f_4451 = 0;
 	func_40(&(Global_2815059.f_10));

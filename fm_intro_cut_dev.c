@@ -1070,23 +1070,23 @@ int func_1(int* iParam0, int* iParam1)//Position - 0xD8
 					{
 						if (func_87(iParam0))
 						{
-							CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(0, "MP_Male_Character", 3, joaat("mp_m_freemode_01"), 0);
+							CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(0, "MP_Male_Character", 3, joaat("MP_M_Freemode_01"), 0);
 							CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(PLAYER::PLAYER_PED_ID(), "MP_Female_Character", 0, 0, 0);
 						}
 						else
 						{
 							CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(PLAYER::PLAYER_PED_ID(), "MP_Male_Character", 0, 0, 0);
-							CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(0, "MP_Female_Character", 3, joaat("mp_f_freemode_01"), 0);
+							CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(0, "MP_Female_Character", 3, joaat("MP_F_Freemode_01"), 0);
 						}
 					}
 				}
 				else if (func_87(iParam0))
 				{
-					CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(0, "MP_Male_Character", 3, joaat("mp_m_freemode_01"), 0);
+					CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(0, "MP_Male_Character", 3, joaat("MP_M_Freemode_01"), 0);
 				}
 				else
 				{
-					CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(0, "MP_Female_Character", 3, joaat("mp_f_freemode_01"), 0);
+					CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(0, "MP_Female_Character", 3, joaat("MP_F_Freemode_01"), 0);
 				}
 				if (!ENTITY::IS_ENTITY_DEAD(iParam0->f_35, false))
 				{
@@ -3426,7 +3426,7 @@ int func_32(int* iParam0)//Position - 0x473D
 	int iVar0;
 	int iVar1;
 	
-	iVar0 = joaat("ig_lamardavis");
+	iVar0 = joaat("IG_LamarDavis");
 	iVar1 = joaat("emperor");
 	STREAMING::REQUEST_MODEL(iVar0);
 	STREAMING::REQUEST_MODEL(iVar1);
@@ -3593,7 +3593,7 @@ void func_43(int* iParam0)//Position - 0x4A60
 		}
 		iVar0++;
 	}
-	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("g_m_y_mexgoon_02"));
+	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("G_M_Y_MexGoon_02"));
 	STREAMING::REMOVE_ANIM_DICT("amb@world_human_leaning@male@wall@back@foot_up@idle_a");
 	STREAMING::REMOVE_ANIM_DICT("amb@world_human_hang_out_street@male_a@base");
 }
@@ -3608,17 +3608,17 @@ int func_44(int* iParam0)//Position - 0x4AAF
 	}
 	else
 	{
-		STREAMING::REQUEST_MODEL(joaat("g_m_y_mexgoon_02"));
+		STREAMING::REQUEST_MODEL(joaat("G_M_Y_MexGoon_02"));
 		STREAMING::REQUEST_ANIM_DICT("amb@world_human_leaning@male@wall@back@foot_up@idle_a");
 		STREAMING::REQUEST_ANIM_DICT("amb@world_human_hang_out_street@male_a@base");
-		if ((STREAMING::HAS_MODEL_LOADED(joaat("g_m_y_mexgoon_02")) && STREAMING::HAS_ANIM_DICT_LOADED("amb@world_human_leaning@male@wall@back@foot_up@idle_a")) && STREAMING::HAS_ANIM_DICT_LOADED("amb@world_human_hang_out_street@male_a@base"))
+		if ((STREAMING::HAS_MODEL_LOADED(joaat("G_M_Y_MexGoon_02")) && STREAMING::HAS_ANIM_DICT_LOADED("amb@world_human_leaning@male@wall@back@foot_up@idle_a")) && STREAMING::HAS_ANIM_DICT_LOADED("amb@world_human_hang_out_street@male_a@base"))
 		{
 			iVar0 = 0;
 			while (iVar0 < 10)
 			{
 				if (!ENTITY::DOES_ENTITY_EXIST(iParam0->f_37[iVar0]))
 				{
-					iParam0->f_37[iVar0] = PED::CREATE_PED(4, joaat("g_m_y_mexgoon_02"), -85.925f, -1233.407f, 27.759f, 0f, false, false);
+					iParam0->f_37[iVar0] = PED::CREATE_PED(4, joaat("G_M_Y_MexGoon_02"), -85.925f, -1233.407f, 27.759f, 0f, false, false);
 					ENTITY::SET_ENTITY_INVINCIBLE(iParam0->f_37[iVar0], true);
 					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iParam0->f_37[iVar0], true);
 					switch (iVar0)
@@ -3646,7 +3646,7 @@ int func_44(int* iParam0)//Position - 0x4AAF
 						case 5:
 							ENTITY::SET_ENTITY_COORDS(iParam0->f_37[iVar0], -82.0542f, -1199.264f, 26.592f, true, false, false, true);
 							ENTITY::SET_ENTITY_HEADING(iParam0->f_37[iVar0], 76.8852f);
-							WEAPON::GIVE_WEAPON_TO_PED(iParam0->f_37[iVar0], joaat("weapon_assaultrifle"), 100, true, true);
+							WEAPON::GIVE_WEAPON_TO_PED(iParam0->f_37[iVar0], joaat("WEAPON_ASSAULTRIFLE"), 100, true, true);
 							ENTITY::FREEZE_ENTITY_POSITION(iParam0->f_37[iVar0], true);
 							break;
 						
@@ -3657,7 +3657,7 @@ int func_44(int* iParam0)//Position - 0x4AAF
 						case 7:
 							ENTITY::SET_ENTITY_COORDS(iParam0->f_37[iVar0], -85.5161f, -1205.781f, 26.5847f, true, false, false, true);
 							ENTITY::SET_ENTITY_HEADING(iParam0->f_37[iVar0], 87.5786f);
-							WEAPON::GIVE_WEAPON_TO_PED(iParam0->f_37[iVar0], joaat("weapon_assaultrifle"), 100, true, true);
+							WEAPON::GIVE_WEAPON_TO_PED(iParam0->f_37[iVar0], joaat("WEAPON_ASSAULTRIFLE"), 100, true, true);
 							ENTITY::FREEZE_ENTITY_POSITION(iParam0->f_37[iVar0], true);
 							break;
 						
@@ -3682,7 +3682,7 @@ int func_44(int* iParam0)//Position - 0x4AAF
 			}
 			iVar0++;
 		}
-		STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("g_m_y_mexgoon_02"));
+		STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("G_M_Y_MexGoon_02"));
 		STREAMING::REMOVE_ANIM_DICT("amb@world_human_leaning@male@wall@back@foot_up@idle_a");
 		STREAMING::REMOVE_ANIM_DICT("amb@world_human_hang_out_street@male_a@base");
 		MISC::SET_BIT(&(iParam0->f_3), 5);
@@ -3819,7 +3819,7 @@ int func_46(char* sParam0, int iParam1, bool bParam2)//Position - 0x4ED8
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -4007,7 +4007,7 @@ int func_54()//Position - 0x5338
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}
@@ -4441,7 +4441,7 @@ int func_73(int* iParam0)//Position - 0x5B54
 {
 	int iVar0;
 	
-	iVar0 = joaat("cs_lamardavis");
+	iVar0 = joaat("CS_LamarDavis");
 	if (!BitTest(iParam0->f_3, 10))
 	{
 		STREAMING::REQUEST_MODEL(iVar0);
@@ -4759,7 +4759,7 @@ int func_88()//Position - 0x6087
 
 int func_89(int iParam0)//Position - 0x6097
 {
-	if (ENTITY::GET_ENTITY_MODEL(PLAYER::GET_PLAYER_PED(iParam0)) == joaat("mp_f_freemode_01"))
+	if (ENTITY::GET_ENTITY_MODEL(PLAYER::GET_PLAYER_PED(iParam0)) == joaat("MP_F_Freemode_01"))
 	{
 		return 1;
 	}
@@ -4768,7 +4768,7 @@ int func_89(int iParam0)//Position - 0x6097
 
 int func_90()//Position - 0x60B6
 {
-	return joaat("s_m_y_xmech_02");
+	return joaat("S_M_Y_XMech_02");
 }
 
 void func_91(int* iParam0, int iParam1)//Position - 0x60C3
@@ -4987,13 +4987,13 @@ int func_101(int* iParam0)//Position - 0x6469
 	if (!BitTest(iParam0->f_3, 2))
 	{
 		STREAMING::REQUEST_MODEL(joaat("p_cs_mp_jet_01_s"));
-		STREAMING::REQUEST_MODEL(joaat("mp_m_freemode_01"));
-		STREAMING::REQUEST_MODEL(joaat("mp_f_freemode_01"));
+		STREAMING::REQUEST_MODEL(joaat("MP_M_Freemode_01"));
+		STREAMING::REQUEST_MODEL(joaat("MP_F_Freemode_01"));
 		if (iParam0->f_294)
 		{
 			STREAMING::REQUEST_PTFX_ASSET();
 		}
-		if (((STREAMING::HAS_MODEL_LOADED(joaat("p_cs_mp_jet_01_s")) && STREAMING::HAS_MODEL_LOADED(joaat("mp_m_freemode_01"))) && STREAMING::HAS_MODEL_LOADED(joaat("mp_f_freemode_01"))) && (!iParam0->f_294 || STREAMING::HAS_PTFX_ASSET_LOADED()))
+		if (((STREAMING::HAS_MODEL_LOADED(joaat("p_cs_mp_jet_01_s")) && STREAMING::HAS_MODEL_LOADED(joaat("MP_M_Freemode_01"))) && STREAMING::HAS_MODEL_LOADED(joaat("MP_F_Freemode_01"))) && (!iParam0->f_294 || STREAMING::HAS_PTFX_ASSET_LOADED()))
 		{
 			iParam0->f_33 = OBJECT::CREATE_OBJECT(joaat("p_cs_mp_jet_01_s"), Var1, false, false, false);
 			ENTITY::SET_ENTITY_LOD_DIST(iParam0->f_33, 3000);
@@ -5013,11 +5013,11 @@ int func_101(int* iParam0)//Position - 0x6469
 			{
 				if (func_105(iParam0, iVar0))
 				{
-					iParam0->f_104[iVar0] = PED::CREATE_PED(26, joaat("mp_f_freemode_01"), -1117.778f, -1557.625f, 3.3819f, 0f, false, false);
+					iParam0->f_104[iVar0] = PED::CREATE_PED(26, joaat("MP_F_Freemode_01"), -1117.778f, -1557.625f, 3.3819f, 0f, false, false);
 				}
 				else
 				{
-					iParam0->f_104[iVar0] = PED::CREATE_PED(26, joaat("mp_m_freemode_01"), -1117.778f, -1557.625f, 3.3819f, 0f, false, false);
+					iParam0->f_104[iVar0] = PED::CREATE_PED(26, joaat("MP_M_Freemode_01"), -1117.778f, -1557.625f, 3.3819f, 0f, false, false);
 				}
 				if (func_103(iParam0, iVar0))
 				{
@@ -5345,7 +5345,7 @@ int func_108(int* iParam0)//Position - 0x712C
 	int iVar0;
 	int iVar1;
 	
-	iVar0 = joaat("ig_lamardavis");
+	iVar0 = joaat("IG_LamarDavis");
 	iVar1 = joaat("emperor");
 	if (BitTest(iParam0->f_3, 9))
 	{
@@ -5446,7 +5446,7 @@ int func_110(var uParam0)//Position - 0x7397
 							PED::SET_SYNCHRONIZED_SCENE_LOOPED(uParam0->f_10, true);
 							ENTITY::FREEZE_ENTITY_POSITION(uParam0->f_91, true);
 							ENTITY::SET_ENTITY_COLLISION(uParam0->f_91, false, false);
-							WEAPON::REMOVE_WEAPON_FROM_PED(uParam0->f_91, joaat("gadget_parachute"));
+							WEAPON::REMOVE_WEAPON_FROM_PED(uParam0->f_91, joaat("GADGET_PARACHUTE"));
 							PED::SET_PED_COMPONENT_VARIATION(uParam0->f_91, 0, 1, 1, 0);
 							PED::SET_PED_COMPONENT_VARIATION(uParam0->f_91, 1, 0, 0, 0);
 							PED::SET_PED_COMPONENT_VARIATION(uParam0->f_91, 2, 0, 2, 0);
@@ -10043,7 +10043,7 @@ void func_207(bool bParam0, int iParam1, int iParam2)//Position - 0xE3E4
 			NETWORK::NETWORK_SET_IN_SPECTATOR_MODE(bParam0, iParam1);
 		}
 		HUD::SET_MINIMAP_IN_SPECTATOR_MODE(bParam0, iParam1);
-		func_208(joaat("mpply_is_char_spectating"), bParam0);
+		func_208(joaat("MPPLY_IS_CHAR_SPECTATING"), bParam0);
 	}
 }
 

@@ -133,7 +133,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_40 = 65;
 	iLocal_41 = 49;
 	iLocal_42 = 64;
-	iLocal_88 = joaat("u_m_o_taphillbilly");
+	iLocal_88 = joaat("U_M_O_TapHillBilly");
 	sLocal_94 = "SPECIAL_PED@MOUNTAIN_DANCER@MONOLOGUE_1@MONOLOGUE_1A";
 	iLocal_97 = -1;
 	Local_89 = { ScriptParam_98.f_1[0 /*3*/] };

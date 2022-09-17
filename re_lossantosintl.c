@@ -106,7 +106,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_41 = 49;
 	iLocal_42 = 64;
 	bLocal_56 = true;
-	iLocal_62 = joaat("s_m_m_pilot_01");
+	iLocal_62 = joaat("S_M_M_Pilot_01");
 	iLocal_77 = 500;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(3))
 	{

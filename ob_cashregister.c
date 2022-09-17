@@ -111,7 +111,7 @@ void func_1()//Position - 0x111
 	int iVar3;
 	
 	iVar0 = joaat("prop_money_bag_01");
-	iVar1 = joaat("pickup_money_med_bag");
+	iVar1 = joaat("PICKUP_MONEY_MED_BAG");
 	iVar3 = MISC::GET_RANDOM_INT_IN_RANGE(70, 121);
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
@@ -304,15 +304,15 @@ int func_11(int iParam0)//Position - 0x528
 {
 	switch (iParam0)
 	{
-		case joaat("pickup_money_variable"):
-		case joaat("pickup_money_case"):
-		case joaat("pickup_money_wallet"):
-		case joaat("pickup_money_purse"):
-		case joaat("pickup_money_dep_bag"):
-		case joaat("pickup_money_med_bag"):
-		case joaat("pickup_money_paper_bag"):
-		case joaat("pickup_money_security_case"):
-		case joaat("pickup_gang_attack_money"):
+		case joaat("PICKUP_MONEY_VARIABLE"):
+		case joaat("PICKUP_MONEY_CASE"):
+		case joaat("PICKUP_MONEY_WALLET"):
+		case joaat("PICKUP_MONEY_PURSE"):
+		case joaat("PICKUP_MONEY_DEP_BAG"):
+		case joaat("PICKUP_MONEY_MED_BAG"):
+		case joaat("PICKUP_MONEY_PAPER_BAG"):
+		case joaat("PICKUP_MONEY_SECURITY_CASE"):
+		case joaat("PICKUP_GANG_ATTACK_MONEY"):
 			return 1;
 		
 		default:

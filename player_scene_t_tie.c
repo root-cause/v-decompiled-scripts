@@ -625,10 +625,10 @@ void func_22()//Position - 0x916
 			Local_73[1 /*3*/] = { 0f, 0f, 97.2582f };
 			Local_73[2 /*3*/] = { 0f, 0f, 34.2158f };
 			Local_73[3 /*3*/] = { 0f, 0f, 61.2158f };
-			iLocal_69[0] = joaat("g_m_y_lost_01");
-			iLocal_69[1] = joaat("g_m_y_lost_01");
-			iLocal_69[2] = joaat("g_m_y_lost_02");
-			iLocal_69[3] = joaat("g_m_y_lost_03");
+			iLocal_69[0] = joaat("G_M_Y_Lost_01");
+			iLocal_69[1] = joaat("G_M_Y_Lost_01");
+			iLocal_69[2] = joaat("G_M_Y_Lost_02");
+			iLocal_69[3] = joaat("G_M_Y_Lost_03");
 			iLocal_81 = 2621440;
 			iLocal_74[0] = 1;
 			iLocal_74[1] = 1;

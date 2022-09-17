@@ -3581,7 +3581,7 @@ void func_94(bool bParam0, int iParam1, int iParam2)//Position - 0x351C
 			NETWORK::NETWORK_SET_IN_SPECTATOR_MODE(bParam0, iParam1);
 		}
 		HUD::SET_MINIMAP_IN_SPECTATOR_MODE(bParam0, iParam1);
-		func_95(joaat("mpply_is_char_spectating"), bParam0);
+		func_95(joaat("MPPLY_IS_CHAR_SPECTATING"), bParam0);
 	}
 }
 
@@ -4015,10 +4015,10 @@ int func_110(int iParam0, int iParam1)//Position - 0x3C62
 			return 1;
 			break;
 		
-		case joaat("TENF2"):
-		case joaat("WEEVIL2"):
-		case joaat("BRIOSO3"):
-		case joaat("SENTINEL4"):
+		case joaat("tenf2"):
+		case joaat("weevil2"):
+		case joaat("brioso3"):
+		case joaat("sentinel4"):
 			if (iParam1 & 1 != 0)
 			{
 				return 0;
@@ -6306,23 +6306,23 @@ int func_156(int iParam0)//Position - 0x63D0
 		case joaat("reever"):
 		case joaat("shinobi"):
 		case joaat("iwagen"):
-		case joaat("BRIOSO3"):
-		case joaat("CORSITA"):
-		case joaat("DRAUGUR"):
-		case joaat("GREENWOOD"):
-		case joaat("KANJOSJ"):
-		case joaat("LM87"):
-		case joaat("POSTLUDE"):
-		case joaat("RHINEHART"):
-		case joaat("SM722"):
-		case joaat("TENF"):
-		case joaat("TENF2"):
-		case joaat("TORERO2"):
-		case joaat("VIGERO2"):
-		case joaat("WEEVIL2"):
-		case joaat("RUINER4"):
-		case joaat("SENTINEL4"):
-		case joaat("OMNISEGT"):
+		case joaat("brioso3"):
+		case joaat("corsita"):
+		case joaat("draugur"):
+		case joaat("greenwood"):
+		case joaat("kanjosj"):
+		case joaat("lm87"):
+		case joaat("postlude"):
+		case joaat("rhinehart"):
+		case joaat("sm722"):
+		case joaat("tenf"):
+		case joaat("tenf2"):
+		case joaat("torero2"):
+		case joaat("vigero2"):
+		case joaat("weevil2"):
+		case joaat("ruiner4"):
+		case joaat("sentinel4"):
+		case joaat("omnisegt"):
 			return 1;
 			break;
 	}
@@ -6903,7 +6903,7 @@ int func_172(int iParam0, int iParam1)//Position - 0x74C8
 	}
 	switch (iParam0)
 	{
-		case joaat("TENF"):
+		case joaat("tenf"):
 			if (Global_262145.f_33045)
 			{
 				return func_173();

@@ -2946,7 +2946,7 @@ int func_51(char* sParam0, int iParam1, bool bParam2)//Position - 0x2718
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -3143,7 +3143,7 @@ int func_60()//Position - 0x2B9E
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}
@@ -4425,17 +4425,17 @@ void func_99()//Position - 0x4112
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_803, joaat("PLAYER"));
 	if (func_10(0))
 	{
-		STREAMING::REQUEST_MODEL(joaat("s_m_y_fireman_01"));
-		while (!STREAMING::HAS_MODEL_LOADED(joaat("s_m_y_fireman_01")))
+		STREAMING::REQUEST_MODEL(joaat("S_M_Y_Fireman_01"));
+		while (!STREAMING::HAS_MODEL_LOADED(joaat("S_M_Y_Fireman_01")))
 		{
 			SYSTEM::WAIT(0);
 		}
 		Var0 = { 202.0504f, -1655.773f, 28.8031f };
 		iLocal_1005 = PED::ADD_SCENARIO_BLOCKING_AREA(Var0 - Vector(10f, 30f, 30f), Var0 + Vector(10f, 30f, 30f), false, true, true, true);
 		MISC::CLEAR_AREA(Var0, 20f, true, false, false, false);
-		iLocal_802[0] = PED::CREATE_PED(21, joaat("s_m_y_fireman_01"), 215.7186f, -1644.622f, 28.7719f, 357.5736f, true, true);
-		iLocal_802[1] = PED::CREATE_PED(21, joaat("s_m_y_fireman_01"), 214.4446f, -1643.72f, 28.7776f, 279.1055f, true, true);
-		iLocal_802[2] = PED::CREATE_PED(21, joaat("s_m_y_fireman_01"), 217.0826f, -1644.117f, 28.7155f, 72.8262f, true, true);
+		iLocal_802[0] = PED::CREATE_PED(21, joaat("S_M_Y_Fireman_01"), 215.7186f, -1644.622f, 28.7719f, 357.5736f, true, true);
+		iLocal_802[1] = PED::CREATE_PED(21, joaat("S_M_Y_Fireman_01"), 214.4446f, -1643.72f, 28.7776f, 279.1055f, true, true);
+		iLocal_802[2] = PED::CREATE_PED(21, joaat("S_M_Y_Fireman_01"), 217.0826f, -1644.117f, 28.7155f, 72.8262f, true, true);
 		iVar1 = 0;
 		while (iVar1 <= (iLocal_802 - 1))
 		{

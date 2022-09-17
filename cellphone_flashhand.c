@@ -1302,7 +1302,7 @@ void __EntryFunction__()//Position - 0x0
 					if (Global_78319)
 					{
 						WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iLocal_109, true);
-						if (iLocal_109 != joaat("weapon_unarmed") && Global_20266.f_1 < 7)
+						if (iLocal_109 != joaat("WEAPON_UNARMED") && Global_20266.f_1 < 7)
 						{
 							MISC::SET_BIT(&Global_8137, 4);
 						}
@@ -1483,7 +1483,7 @@ void __EntryFunction__()//Position - 0x0
 						if (!func_75())
 						{
 							WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iLocal_109, true);
-							if ((iLocal_109 == joaat("weapon_sniperrifle") || iLocal_109 == joaat("weapon_heavysniper")) || iLocal_109 == joaat("weapon_remotesniper"))
+							if ((iLocal_109 == joaat("WEAPON_SNIPERRIFLE") || iLocal_109 == joaat("WEAPON_HEAVYSNIPER")) || iLocal_109 == joaat("WEAPON_REMOTESNIPER"))
 							{
 								bLocal_108 = true;
 							}
@@ -3835,7 +3835,7 @@ void func_44()//Position - 0x3F49
 					if (PAD::IS_CONTROL_PRESSED(0, 25) || PAD::IS_CONTROL_PRESSED(0, 68))
 					{
 						WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iLocal_109, true);
-						if (iLocal_109 != joaat("weapon_unarmed"))
+						if (iLocal_109 != joaat("WEAPON_UNARMED"))
 						{
 							iVar0 = 1;
 						}

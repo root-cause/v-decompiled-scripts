@@ -185,9 +185,9 @@ void func_2()//Position - 0x1FD
 	iLocal_47 = MISC::GET_RANDOM_INT_IN_RANGE(0, 2);
 	if (ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), Local_45, 50f, 50f, 50f, false, true, 0))
 	{
-		STREAMING::REQUEST_MODEL(joaat("a_f_m_bevhills_02"));
-		STREAMING::REQUEST_MODEL(joaat("g_m_y_mexgoon_02"));
-		while (!STREAMING::HAS_MODEL_LOADED(joaat("a_f_m_bevhills_02")) || !STREAMING::HAS_MODEL_LOADED(joaat("g_m_y_mexgoon_02")))
+		STREAMING::REQUEST_MODEL(joaat("A_F_M_BevHills_02"));
+		STREAMING::REQUEST_MODEL(joaat("G_M_Y_MexGoon_02"));
+		while (!STREAMING::HAS_MODEL_LOADED(joaat("A_F_M_BevHills_02")) || !STREAMING::HAS_MODEL_LOADED(joaat("G_M_Y_MexGoon_02")))
 		{
 			SYSTEM::WAIT(0);
 		}
@@ -197,7 +197,7 @@ void func_2()//Position - 0x1FD
 			SYSTEM::WAIT(0);
 		}
 		Local_46.f_2 = (Local_45.f_2 - 1f);
-		iLocal_48 = PED::CREATE_PED(19, joaat("g_m_y_mexgoon_02"), Local_45.f_0, Local_45.f_1, Local_46.f_2, 0f, true, true);
+		iLocal_48 = PED::CREATE_PED(19, joaat("G_M_Y_MexGoon_02"), Local_45.f_0, Local_45.f_1, Local_46.f_2, 0f, true, true);
 		if (!ENTITY::IS_ENTITY_DEAD(iLocal_48, false))
 		{
 			TASK::OPEN_SEQUENCE_TASK(&iLocal_50);
@@ -210,7 +210,7 @@ void func_2()//Position - 0x1FD
 		if (iLocal_47 == 1)
 		{
 			Local_46 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iLocal_48, 3.8f, 0.8f, 0f) };
-			iLocal_49 = PED::CREATE_PED(5, joaat("a_f_m_bevhills_02"), Local_46, 0f, true, true);
+			iLocal_49 = PED::CREATE_PED(5, joaat("A_F_M_BevHills_02"), Local_46, 0f, true, true);
 			if (!ENTITY::IS_ENTITY_DEAD(iLocal_49, false))
 			{
 				TASK::TASK_TURN_PED_TO_FACE_COORD(iLocal_49, Local_45, 0);

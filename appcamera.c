@@ -1937,15 +1937,15 @@ void func_12()//Position - 0x1759
 				switch (func_13())
 				{
 					case 0:
-						STATS::STAT_INCREMENT(joaat("sp0_no_photos_taken"), 1f);
+						STATS::STAT_INCREMENT(joaat("SP0_NO_PHOTOS_TAKEN"), 1f);
 						break;
 					
 					case 1:
-						STATS::STAT_INCREMENT(joaat("sp1_no_photos_taken"), 1f);
+						STATS::STAT_INCREMENT(joaat("SP1_NO_PHOTOS_TAKEN"), 1f);
 						break;
 					
 					case 2:
-						STATS::STAT_INCREMENT(joaat("sp2_no_photos_taken"), 1f);
+						STATS::STAT_INCREMENT(joaat("SP2_NO_PHOTOS_TAKEN"), 1f);
 						break;
 				}
 				func_22();
@@ -3080,7 +3080,7 @@ int func_34(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, b
 	func_42(iParam1, iParam2, &uVar0, &uVar1, &uVar2, iVar6, bParam5);
 	if (!ENTITY::IS_ENTITY_DEAD(iParam0, false))
 	{
-		if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("mp_f_freemode_01"))
+		if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_F_Freemode_01"))
 		{
 			iVar3 = func_41(iParam0);
 			if (!iVar3 == -1)

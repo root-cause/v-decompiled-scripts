@@ -1105,9 +1105,9 @@ void func_35()//Position - 0x14E3
 				{
 					if (WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar0, true))
 					{
-						if (iVar0 != joaat("weapon_unarmed"))
+						if (iVar0 != joaat("WEAPON_UNARMED"))
 						{
-							WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("weapon_unarmed"), false);
+							WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"), false);
 						}
 					}
 					PED::SET_PED_MAX_MOVE_BLEND_RATIO(PLAYER::PLAYER_PED_ID(), 1f);
@@ -1133,7 +1133,7 @@ void func_35()//Position - 0x14E3
 				func_44(PLAYER::PLAYER_PED_ID(), Local_55, fLocal_56);
 				CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
 				CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
-				WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("weapon_unarmed"), true);
+				WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"), true);
 				PLAYER::SET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID(), 0, false);
 				PLAYER::SET_PLAYER_WANTED_LEVEL_NOW(PLAYER::PLAYER_ID(), false);
 				func_43(1);
@@ -3616,7 +3616,7 @@ int func_70(bool bParam0)//Position - 0x5435
 
 bool func_71()//Position - 0x545D
 {
-	return ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()) == joaat("player_zero");
+	return ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()) == joaat("Player_Zero");
 }
 
 int func_72()//Position - 0x5473
@@ -3861,10 +3861,10 @@ void func_84()//Position - 0x589C
 			break;
 		
 		case 4:
-			func_86(joaat("u_f_m_drowned_01"));
+			func_86(joaat("U_F_M_Drowned_01"));
 			func_85(sLocal_74);
-			iLocal_66 = PED::CREATE_PED(26, joaat("u_f_m_drowned_01"), func_75(4), 184.5548f, true, true);
-			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("u_f_m_drowned_01"));
+			iLocal_66 = PED::CREATE_PED(26, joaat("U_F_M_Drowned_01"), func_75(4), 184.5548f, true, true);
+			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("U_F_M_Drowned_01"));
 			TASK::TASK_PLAY_ANIM(iLocal_66, sLocal_74, sLocal_75, 1000f, -1000f, -1, 9, 0f, false, false, false);
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_66, true);
 			PED::SET_PED_KEEP_TASK(iLocal_66, true);
@@ -3885,13 +3885,13 @@ void func_84()//Position - 0x589C
 			break;
 		
 		case 6:
-			func_86(joaat("u_m_o_filmnoir"));
-			iLocal_64 = PED::CREATE_PED(26, joaat("u_m_o_filmnoir"), func_75(6), 22.9631f, true, true);
+			func_86(joaat("U_M_O_FilmNoir"));
+			iLocal_64 = PED::CREATE_PED(26, joaat("U_M_O_FilmNoir"), func_75(6), 22.9631f, true, true);
 			PED::SET_PED_PROP_INDEX(iLocal_64, 0, 0, 0, false);
-			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("u_m_o_filmnoir"));
+			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("U_M_O_FilmNoir"));
 			AUDIO::STOP_PED_SPEAKING(iLocal_64, true);
 			AUDIO::DISABLE_PED_PAIN_AUDIO(iLocal_64, true);
-			PED::EXPLODE_PED_HEAD(iLocal_64, joaat("weapon_sniperrifle"));
+			PED::EXPLODE_PED_HEAD(iLocal_64, joaat("WEAPON_SNIPERRIFLE"));
 			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_64, joaat("PLAYER"));
 			iLocal_65 = OBJECT::CREATE_OBJECT_NO_OFFSET(joaat("prop_vintage_filmcan"), -543.71f, 1986.2f, 126.05f, true, true, false);
 			break;
@@ -3951,14 +3951,14 @@ int func_89()//Position - 0x5AD1
 		{
 			if (NETWORK::_NETWORK_GET_ROS_PRIVILEGE_24())
 			{
-				STATS::STAT_GET_INT(joaat("sp_unlock_exclus_content"), &iVar0, -1);
+				STATS::STAT_GET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), &iVar0, -1);
 				MISC::SET_BIT(&iVar0, 2);
 				MISC::SET_BIT(&iVar0, 4);
 				MISC::SET_BIT(&iVar0, 6);
 				MISC::SET_BIT(&Global_25, 2);
 				MISC::SET_BIT(&Global_25, 4);
 				MISC::SET_BIT(&Global_25, 6);
-				STATS::STAT_SET_INT(joaat("sp_unlock_exclus_content"), iVar0, true);
+				STATS::STAT_SET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), iVar0, true);
 				if (MISC::ARE_PROFILE_SETTINGS_VALID())
 				{
 					iVar0 = MISC::GET_PROFILE_SETTING(866);

@@ -626,7 +626,7 @@ int func_6(char* sParam0, int iParam1, bool bParam2)//Position - 0x638
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -823,7 +823,7 @@ int func_15()//Position - 0xABF
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}
@@ -1071,7 +1071,7 @@ int func_28()//Position - 0xED8
 	if (ENTITY::DOES_ENTITY_EXIST(iVar1) && !ENTITY::IS_ENTITY_DEAD(iVar1, false))
 	{
 		iVar2 = ENTITY::GET_ENTITY_MODEL(iVar1);
-		if (iVar2 == joaat("ig_tonya"))
+		if (iVar2 == joaat("IG_Tonya"))
 		{
 			iLocal_38 = iVar1;
 			ENTITY::SET_ENTITY_AS_MISSION_ENTITY(iLocal_38, true, false);

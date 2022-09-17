@@ -13,7 +13,7 @@
 void __EntryFunction__()//Position - 0x0
 {
 	sLocal_4 = "Poledance_01";
-	iLocal_5 = joaat("a_f_y_beach_01");
+	iLocal_5 = joaat("A_F_Y_Beach_01");
 	sLocal_6 = "MISSSTRIP_CLUB";
 	if (ENTITY::DOES_ENTITY_EXIST(iScriptParam_8))
 	{

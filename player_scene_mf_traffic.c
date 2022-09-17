@@ -936,7 +936,7 @@ void func_33()//Position - 0xA08
 void func_34(int iParam0)//Position - 0xF87
 {
 	PED::SET_PED_RANDOM_COMPONENT_VARIATION(iParam0, 0);
-	if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("a_m_m_salton_01"))
+	if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("A_M_M_Salton_01"))
 	{
 		if (PED::GET_PED_DRAWABLE_VARIATION(iParam0, 3) == 1)
 		{
@@ -1124,8 +1124,8 @@ void func_39(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4)//P
 	int iVar1;
 	int iVar2;
 	
-	(*uParam0)[0] = joaat("a_m_m_salton_01");
-	(*uParam0)[1] = joaat("a_m_m_prolhost_01");
+	(*uParam0)[0] = joaat("A_M_M_Salton_01");
+	(*uParam0)[1] = joaat("A_M_M_ProlHost_01");
 	(*uParam0)[2] = (*uParam0)[1];
 	(*uParam0)[3] = (*uParam0)[2];
 	(*uParam1)[0] = joaat("taxi");
@@ -1234,9 +1234,9 @@ void func_41(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4)//P
 	int iVar1;
 	int iVar2;
 	
-	(*uParam0)[0] = joaat("a_m_m_salton_01");
-	(*uParam0)[1] = joaat("a_m_m_prolhost_01");
-	(*uParam0)[2] = joaat("a_m_m_afriamer_01");
+	(*uParam0)[0] = joaat("A_M_M_Salton_01");
+	(*uParam0)[1] = joaat("A_M_M_ProlHost_01");
+	(*uParam0)[2] = joaat("A_M_M_AfriAmer_01");
 	(*uParam0)[3] = (*uParam0)[2];
 	(*uParam1)[0] = joaat("camper");
 	(*uParam1)[2] = joaat("futo");
@@ -1342,10 +1342,10 @@ void func_43(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4)//P
 {
 	int iVar0;
 	
-	(*uParam0)[0] = joaat("a_m_m_salton_02");
+	(*uParam0)[0] = joaat("A_M_M_Salton_02");
 	(*uParam0)[1] = (*uParam0)[0];
-	(*uParam0)[2] = joaat("a_m_m_prolhost_01");
-	(*uParam0)[3] = joaat("a_m_m_afriamer_01");
+	(*uParam0)[2] = joaat("A_M_M_ProlHost_01");
+	(*uParam0)[3] = joaat("A_M_M_AfriAmer_01");
 	(*uParam1)[0] = joaat("camper");
 	(*uParam1)[1] = joaat("dilettante");
 	(*uParam1)[2] = joaat("futo");
@@ -1471,10 +1471,10 @@ void func_47(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4)//P
 {
 	int iVar0;
 	
-	(*uParam0)[0] = joaat("a_m_m_salton_02");
+	(*uParam0)[0] = joaat("A_M_M_Salton_02");
 	(*uParam0)[1] = (*uParam0)[0];
-	(*uParam0)[2] = joaat("a_m_m_prolhost_01");
-	(*uParam0)[3] = joaat("a_m_m_afriamer_01");
+	(*uParam0)[2] = joaat("A_M_M_ProlHost_01");
+	(*uParam0)[3] = joaat("A_M_M_AfriAmer_01");
 	(*uParam1)[0] = joaat("camper");
 	(*uParam1)[1] = joaat("dilettante");
 	(*uParam1)[2] = joaat("futo");

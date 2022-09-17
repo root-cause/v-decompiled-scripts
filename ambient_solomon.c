@@ -281,7 +281,7 @@ void __EntryFunction__()//Position - 0x0
 	Local_67 = { -2052f, 3237f, 1450.078f };
 	fLocal_235 = 3f;
 	iLocal_236 = 2;
-	iLocal_245 = joaat("s_m_m_security_01");
+	iLocal_245 = joaat("S_M_M_Security_01");
 	bVar0 = false;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(82))
 	{
@@ -3408,7 +3408,7 @@ int func_35(char* sParam0, int iParam1, bool bParam2)//Position - 0x55C7
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -3605,7 +3605,7 @@ int func_44()//Position - 0x5A4D
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}
@@ -4391,7 +4391,7 @@ void func_77()//Position - 0x6936
 	func_78(&iLocal_242, 0, 0, 1);
 	func_78(&iLocal_243, 0, 0, 1);
 	func_66(65, 1);
-	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("s_m_m_security_01"));
+	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("S_M_M_Security_01"));
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("akuma"));
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

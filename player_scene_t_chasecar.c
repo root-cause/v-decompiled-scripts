@@ -900,7 +900,7 @@ int func_8(char* sParam0, int iParam1, bool bParam2)//Position - 0x52F
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -1097,7 +1097,7 @@ int func_17()//Position - 0x9B5
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}
@@ -2108,7 +2108,7 @@ bool func_57()//Position - 0x1AB4
 
 int func_58(int iParam0)//Position - 0x1AC4
 {
-	if (ENTITY::GET_ENTITY_MODEL(PLAYER::GET_PLAYER_PED(iParam0)) == joaat("mp_f_freemode_01"))
+	if (ENTITY::GET_ENTITY_MODEL(PLAYER::GET_PLAYER_PED(iParam0)) == joaat("MP_F_Freemode_01"))
 	{
 		return 1;
 	}
@@ -3355,7 +3355,7 @@ void func_89()//Position - 0x3001
 			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_448[iVar0]);
 			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_447[iVar0], iLocal_455);
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_447[iVar0], true);
-			if (iLocal_448[iVar0] == joaat("a_m_y_roadcyc_01"))
+			if (iLocal_448[iVar0] == joaat("A_M_Y_RoadCyc_01"))
 			{
 				PED::SET_PED_HELMET(iLocal_447[iVar0], true);
 			}
@@ -3389,7 +3389,7 @@ void func_90()//Position - 0x324F
 			Local_452[0 /*3*/] = { 5.5437f, 30.4559f, 0f };
 			fLocal_453[0] = -4.6273f;
 			iLocal_454 = 7;
-			iLocal_448[0] = joaat("a_m_y_genstreet_01");
+			iLocal_448[0] = joaat("A_M_Y_GenStreet_01");
 			iLocal_448[1] = 0;
 			iLocal_448[2] = 0;
 			iLocal_448[3] = 0;
@@ -3416,7 +3416,7 @@ void func_90()//Position - 0x324F
 			Local_452[0 /*3*/] = { -21.211f, 7.393f, 0f };
 			fLocal_453[0] = 0.7266f;
 			iLocal_454 = 0;
-			iLocal_448[0] = joaat("a_m_y_genstreet_01");
+			iLocal_448[0] = joaat("A_M_Y_GenStreet_01");
 			iLocal_448[1] = 0;
 			iLocal_448[2] = 0;
 			iLocal_448[2] = 0;
@@ -3447,9 +3447,9 @@ void func_90()//Position - 0x324F
 			fLocal_453[1] = -0.8648f;
 			fLocal_453[2] = -12.6899f;
 			iLocal_454 = 0;
-			iLocal_448[0] = joaat("a_m_y_roadcyc_01");
-			iLocal_448[1] = joaat("a_m_y_roadcyc_01");
-			iLocal_448[2] = joaat("a_m_y_roadcyc_01");
+			iLocal_448[0] = joaat("A_M_Y_RoadCyc_01");
+			iLocal_448[1] = joaat("A_M_Y_RoadCyc_01");
+			iLocal_448[2] = joaat("A_M_Y_RoadCyc_01");
 			iLocal_448[3] = 0;
 			iLocal_449 = 4;
 			iLocal_451[0] = joaat("tribike");
@@ -3473,7 +3473,7 @@ void func_90()//Position - 0x324F
 			Local_452[0 /*3*/] = { 12.7813f, 6.7387f, 0f };
 			fLocal_453[0] = -2.6961f;
 			iLocal_454 = 0;
-			iLocal_448[0] = joaat("a_m_y_genstreet_01");
+			iLocal_448[0] = joaat("A_M_Y_GenStreet_01");
 			iLocal_448[1] = 0;
 			iLocal_448[2] = 0;
 			iLocal_448[3] = 0;
@@ -3505,10 +3505,10 @@ void func_90()//Position - 0x324F
 			fLocal_453[1] = MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f);
 			fLocal_453[2] = MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f);
 			fLocal_453[3] = MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f);
-			iLocal_448[0] = joaat("s_m_y_cop_01");
-			iLocal_448[1] = joaat("s_m_y_cop_01");
-			iLocal_448[2] = joaat("s_m_y_cop_01");
-			iLocal_448[3] = joaat("s_m_y_cop_01");
+			iLocal_448[0] = joaat("S_M_Y_Cop_01");
+			iLocal_448[1] = joaat("S_M_Y_Cop_01");
+			iLocal_448[2] = joaat("S_M_Y_Cop_01");
+			iLocal_448[3] = joaat("S_M_Y_Cop_01");
 			iLocal_449 = 6;
 			iLocal_451[0] = joaat("police3");
 			iLocal_451[1] = joaat("police3");
@@ -3536,10 +3536,10 @@ void func_90()//Position - 0x324F
 			fLocal_453[1] = -12.2569f;
 			fLocal_453[2] = MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f);
 			fLocal_453[3] = MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f);
-			iLocal_448[0] = joaat("s_m_y_ranger_01");
-			iLocal_448[1] = joaat("s_m_y_ranger_01");
-			iLocal_448[2] = joaat("s_m_y_ranger_01");
-			iLocal_448[3] = joaat("s_m_y_ranger_01");
+			iLocal_448[0] = joaat("S_M_Y_Ranger_01");
+			iLocal_448[1] = joaat("S_M_Y_Ranger_01");
+			iLocal_448[2] = joaat("S_M_Y_Ranger_01");
+			iLocal_448[3] = joaat("S_M_Y_Ranger_01");
 			iLocal_449 = 6;
 			iLocal_451[0] = joaat("sheriff");
 			iLocal_451[1] = joaat("sheriff");
@@ -3567,10 +3567,10 @@ void func_90()//Position - 0x324F
 			fLocal_453[1] = MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f);
 			fLocal_453[2] = MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f);
 			fLocal_453[3] = MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f);
-			iLocal_448[0] = joaat("s_m_y_ranger_01");
-			iLocal_448[1] = joaat("s_m_y_ranger_01");
-			iLocal_448[2] = joaat("s_m_y_ranger_01");
-			iLocal_448[3] = joaat("s_m_y_ranger_01");
+			iLocal_448[0] = joaat("S_M_Y_Ranger_01");
+			iLocal_448[1] = joaat("S_M_Y_Ranger_01");
+			iLocal_448[2] = joaat("S_M_Y_Ranger_01");
+			iLocal_448[3] = joaat("S_M_Y_Ranger_01");
 			iLocal_449 = 6;
 			iLocal_451[0] = joaat("sheriff");
 			iLocal_451[1] = joaat("sheriff");
@@ -3594,7 +3594,7 @@ void func_90()//Position - 0x324F
 			Local_452[0 /*3*/] = { Vector(0f, SYSTEM::COS(fVar5), SYSTEM::SIN(fVar5)) * FtoV(MISC::GET_RANDOM_FLOAT_IN_RANGE(15f, 25f)) };
 			fLocal_453[0] = MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f);
 			iLocal_454 = 0;
-			iLocal_448[0] = joaat("a_m_y_genstreet_01");
+			iLocal_448[0] = joaat("A_M_Y_GenStreet_01");
 			iLocal_448[1] = 0;
 			iLocal_448[2] = 0;
 			iLocal_448[3] = 0;

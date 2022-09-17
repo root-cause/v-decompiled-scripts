@@ -186,14 +186,14 @@ void func_1()//Position - 0xEC
 
 void func_2()//Position - 0x1FE
 {
-	STREAMING::REQUEST_MODEL(joaat("s_m_m_strpreach_01"));
+	STREAMING::REQUEST_MODEL(joaat("S_M_M_StrPreach_01"));
 	STREAMING::REQUEST_ANIM_DICT("amb@PREACHER");
-	while (!STREAMING::HAS_MODEL_LOADED(joaat("s_m_m_strpreach_01")) || !STREAMING::HAS_ANIM_DICT_LOADED("amb@PREACHER"))
+	while (!STREAMING::HAS_MODEL_LOADED(joaat("S_M_M_StrPreach_01")) || !STREAMING::HAS_ANIM_DICT_LOADED("amb@PREACHER"))
 	{
 		SYSTEM::WAIT(0);
 	}
 	Local_46.f_2 = (Local_45.f_2 - 1f);
-	iLocal_48 = PED::CREATE_PED(19, joaat("s_m_m_strpreach_01"), Local_45.f_0, Local_45.f_1, Local_46.f_2, 0f, true, true);
+	iLocal_48 = PED::CREATE_PED(19, joaat("S_M_M_StrPreach_01"), Local_45.f_0, Local_45.f_1, Local_46.f_2, 0f, true, true);
 	if (!ENTITY::IS_ENTITY_DEAD(iLocal_48, false))
 	{
 		TASK::OPEN_SEQUENCE_TASK(&iLocal_51);

@@ -565,14 +565,14 @@ void func_1()//Position - 0x29B
 			break;
 		
 		case 1:
-			STREAMING::REQUEST_MODEL(joaat("s_m_y_marine_01"));
-			STREAMING::REQUEST_MODEL(joaat("s_m_y_marine_03"));
+			STREAMING::REQUEST_MODEL(joaat("S_M_Y_Marine_01"));
+			STREAMING::REQUEST_MODEL(joaat("S_M_Y_Marine_03"));
 			TASK::REQUEST_WAYPOINT_RECORDING("OfficerMarch01");
 			iLocal_342 = 2;
 			break;
 		
 		case 2:
-			if ((STREAMING::HAS_MODEL_LOADED(joaat("s_m_y_marine_01")) && STREAMING::HAS_MODEL_LOADED(joaat("s_m_y_marine_03"))) && TASK::GET_IS_WAYPOINT_RECORDING_LOADED("OfficerMarch01"))
+			if ((STREAMING::HAS_MODEL_LOADED(joaat("S_M_Y_Marine_01")) && STREAMING::HAS_MODEL_LOADED(joaat("S_M_Y_Marine_03"))) && TASK::GET_IS_WAYPOINT_RECORDING_LOADED("OfficerMarch01"))
 			{
 				iLocal_342 = 3;
 			}
@@ -583,9 +583,9 @@ void func_1()//Position - 0x29B
 			{
 				case 0:
 					MISC::CLEAR_AREA_OF_VEHICLES(Local_332, 10f, false, false, false, false, false, false, 0);
-					iLocal_329 = PED::CREATE_PED(6, joaat("s_m_y_marine_01"), Local_332, 57.3018f, true, true);
+					iLocal_329 = PED::CREATE_PED(6, joaat("S_M_Y_Marine_01"), Local_332, 57.3018f, true, true);
 					PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_329, joaat("ARMY"));
-					WEAPON::GIVE_WEAPON_TO_PED(iLocal_329, joaat("weapon_assaultrifle"), -1, true, true);
+					WEAPON::GIVE_WEAPON_TO_PED(iLocal_329, joaat("WEAPON_ASSAULTRIFLE"), -1, true, true);
 					ENTITY::SET_ENTITY_LOD_DIST(iLocal_329, 1000);
 					PED::SET_PED_KEEP_TASK(iLocal_329, true);
 					TASK::TASK_FOLLOW_WAYPOINT_RECORDING(iLocal_329, "OfficerMarch01", 0, 0, -1);
@@ -597,9 +597,9 @@ void func_1()//Position - 0x29B
 					iVar0 = 0;
 					while (iVar0 < 5)
 					{
-						iLocal_330[iVar0] = PED::CREATE_PED(6, joaat("s_m_y_marine_01"), Local_336[iVar0 /*3*/], 57.3018f, true, true);
+						iLocal_330[iVar0] = PED::CREATE_PED(6, joaat("S_M_Y_Marine_01"), Local_336[iVar0 /*3*/], 57.3018f, true, true);
 						PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_330[iVar0], joaat("ARMY"));
-						WEAPON::GIVE_WEAPON_TO_PED(iLocal_330[iVar0], joaat("weapon_assaultrifle"), -1, true, true);
+						WEAPON::GIVE_WEAPON_TO_PED(iLocal_330[iVar0], joaat("WEAPON_ASSAULTRIFLE"), -1, true, true);
 						ENTITY::SET_ENTITY_LOD_DIST(iLocal_330[iVar0], 1000);
 						PED::SET_PED_KEEP_TASK(iLocal_330[iVar0], true);
 						PED::SET_PED_STEERS_AROUND_PEDS(iLocal_330[iVar0], false);
@@ -748,14 +748,14 @@ void func_3()//Position - 0x861
 			break;
 		
 		case 1:
-			STREAMING::REQUEST_MODEL(joaat("s_m_y_marine_01"));
-			STREAMING::REQUEST_MODEL(joaat("s_m_y_marine_03"));
+			STREAMING::REQUEST_MODEL(joaat("S_M_Y_Marine_01"));
+			STREAMING::REQUEST_MODEL(joaat("S_M_Y_Marine_03"));
 			TASK::REQUEST_WAYPOINT_RECORDING("AccomMarching01");
 			iLocal_258 = 2;
 			break;
 		
 		case 2:
-			if ((STREAMING::HAS_MODEL_LOADED(joaat("s_m_y_marine_01")) && STREAMING::HAS_MODEL_LOADED(joaat("s_m_y_marine_03"))) && TASK::GET_IS_WAYPOINT_RECORDING_LOADED("AccomMarching01"))
+			if ((STREAMING::HAS_MODEL_LOADED(joaat("S_M_Y_Marine_01")) && STREAMING::HAS_MODEL_LOADED(joaat("S_M_Y_Marine_03"))) && TASK::GET_IS_WAYPOINT_RECORDING_LOADED("AccomMarching01"))
 			{
 				iLocal_258 = 3;
 			}
@@ -1212,7 +1212,7 @@ int func_10(char* sParam0, int iParam1, bool bParam2)//Position - 0x10D0
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -1409,7 +1409,7 @@ int func_19()//Position - 0x1556
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}
@@ -1775,8 +1775,8 @@ void func_37()//Position - 0x1C1C
 	switch (iLocal_248)
 	{
 		case 0:
-			iLocal_224 = PED::CREATE_PED(6, joaat("s_m_y_marine_01"), Local_228, 140.0094f, true, true);
-			WEAPON::GIVE_WEAPON_TO_PED(iLocal_224, joaat("weapon_assaultrifle"), -1, true, true);
+			iLocal_224 = PED::CREATE_PED(6, joaat("S_M_Y_Marine_01"), Local_228, 140.0094f, true, true);
+			WEAPON::GIVE_WEAPON_TO_PED(iLocal_224, joaat("WEAPON_ASSAULTRIFLE"), -1, true, true);
 			ENTITY::SET_ENTITY_LOD_DIST(iLocal_224, 1000);
 			PED::SET_PED_KEEP_TASK(iLocal_224, true);
 			TASK::TASK_FOLLOW_WAYPOINT_RECORDING(iLocal_224, "AccomMarching01", 0, 0, -1);
@@ -1788,8 +1788,8 @@ void func_37()//Position - 0x1C1C
 			iVar0 = 0;
 			while (iVar0 < 2)
 			{
-				iLocal_225[iVar0] = PED::CREATE_PED(6, joaat("s_m_y_marine_01"), Local_232[iVar0 /*3*/], 140.0094f, true, true);
-				WEAPON::GIVE_WEAPON_TO_PED(iLocal_225[iVar0], joaat("weapon_assaultrifle"), -1, true, true);
+				iLocal_225[iVar0] = PED::CREATE_PED(6, joaat("S_M_Y_Marine_01"), Local_232[iVar0 /*3*/], 140.0094f, true, true);
+				WEAPON::GIVE_WEAPON_TO_PED(iLocal_225[iVar0], joaat("WEAPON_ASSAULTRIFLE"), -1, true, true);
 				ENTITY::SET_ENTITY_LOD_DIST(iLocal_225[iVar0], 1000);
 				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_225[iVar0], joaat("ARMY"));
 				PED::SET_PED_KEEP_TASK(iLocal_225[iVar0], true);
@@ -1846,13 +1846,13 @@ void func_38()//Position - 0x1D98
 		
 		case 1:
 			STREAMING::REQUEST_MODEL(joaat("lazer"));
-			STREAMING::REQUEST_MODEL(joaat("s_m_y_marine_01"));
+			STREAMING::REQUEST_MODEL(joaat("S_M_Y_Marine_01"));
 			STREAMING::REQUEST_MODEL(joaat("crusader"));
 			iLocal_293 = 2;
 			break;
 		
 		case 2:
-			if ((STREAMING::HAS_MODEL_LOADED(joaat("lazer")) && STREAMING::HAS_MODEL_LOADED(joaat("s_m_y_marine_01"))) && STREAMING::HAS_MODEL_LOADED(joaat("crusader")))
+			if ((STREAMING::HAS_MODEL_LOADED(joaat("lazer")) && STREAMING::HAS_MODEL_LOADED(joaat("S_M_Y_Marine_01"))) && STREAMING::HAS_MODEL_LOADED(joaat("crusader")))
 			{
 				iLocal_293 = 3;
 			}
@@ -1883,11 +1883,11 @@ void func_38()//Position - 0x1D98
 				switch (iLocal_266)
 				{
 					case 0:
-						iLocal_263 = PED::CREATE_PED(5, joaat("s_m_y_marine_01"), -2127.982f, 2824.686f, 50.437f, 34.9781f, true, true);
+						iLocal_263 = PED::CREATE_PED(5, joaat("S_M_Y_Marine_01"), -2127.982f, 2824.686f, 50.437f, 34.9781f, true, true);
 						PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_263, true);
-						iLocal_264[0] = PED::CREATE_PED(5, joaat("s_m_y_marine_01"), -1993.875f, 3145.167f, 54.4011f, 147.2257f, true, true);
-						iLocal_264[1] = PED::CREATE_PED(5, joaat("s_m_y_marine_01"), -2176.656f, 3250.501f, 54.3807f, 140.5236f, true, true);
-						iLocal_264[2] = PED::CREATE_PED(5, joaat("s_m_y_marine_01"), -2002.671f, 2960.148f, 31.8103f, 28.6649f, true, true);
+						iLocal_264[0] = PED::CREATE_PED(5, joaat("S_M_Y_Marine_01"), -1993.875f, 3145.167f, 54.4011f, 147.2257f, true, true);
+						iLocal_264[1] = PED::CREATE_PED(5, joaat("S_M_Y_Marine_01"), -2176.656f, 3250.501f, 54.3807f, 140.5236f, true, true);
+						iLocal_264[2] = PED::CREATE_PED(5, joaat("S_M_Y_Marine_01"), -2002.671f, 2960.148f, 31.8103f, 28.6649f, true, true);
 						func_48();
 						if (ENTITY::DOES_ENTITY_EXIST(iLocal_263) && !ENTITY::IS_ENTITY_DEAD(iLocal_263, false))
 						{
@@ -1922,12 +1922,12 @@ void func_38()//Position - 0x1D98
 										ENTITY::SET_ENTITY_ROTATION(iLocal_259, 0f, 0f, fVar2, 2, true);
 										VEHICLE::CONTROL_LANDING_GEAR(iLocal_259, 3);
 										ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(iLocal_259, false);
-										iLocal_262 = PED::CREATE_PED_INSIDE_VEHICLE(iLocal_259, 5, joaat("s_m_y_marine_01"), -1, true, true);
+										iLocal_262 = PED::CREATE_PED_INSIDE_VEHICLE(iLocal_259, 5, joaat("S_M_Y_Marine_01"), -1, true, true);
 										PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_262, true);
 										if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
 										{
 											VEHICLE::SET_VEHICLE_SHOOT_AT_TARGET(iLocal_262, PLAYER::PLAYER_PED_ID(), ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true));
-											WEAPON::SET_CURRENT_PED_VEHICLE_WEAPON(iLocal_262, joaat("vehicle_weapon_space_rocket"));
+											WEAPON::SET_CURRENT_PED_VEHICLE_WEAPON(iLocal_262, joaat("VEHICLE_WEAPON_SPACE_ROCKET"));
 										}
 										TASK::TASK_PLANE_MISSION(iLocal_262, iLocal_259, iLocal_260, PLAYER::PLAYER_PED_ID(), ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 6, 70f, -1f, 30f, 7.006492E-43f, 7.006492E-44f, 1);
 										iLocal_289 = 1;
@@ -2031,8 +2031,8 @@ void func_42(int iParam0)//Position - 0x2350
 					{
 						if (ENTITY::DOES_ENTITY_EXIST((*iParam0)[iVar0]) && !ENTITY::IS_ENTITY_DEAD((*iParam0)[iVar0], false))
 						{
-							WEAPON::GIVE_WEAPON_TO_PED((*iParam0)[iVar0], joaat("weapon_assaultrifle"), -1, false, true);
-							WEAPON::SET_CURRENT_PED_WEAPON((*iParam0)[iVar0], joaat("weapon_assaultrifle"), true);
+							WEAPON::GIVE_WEAPON_TO_PED((*iParam0)[iVar0], joaat("WEAPON_ASSAULTRIFLE"), -1, false, true);
+							WEAPON::SET_CURRENT_PED_WEAPON((*iParam0)[iVar0], joaat("WEAPON_ASSAULTRIFLE"), true);
 						}
 						iVar0++;
 					}
@@ -2057,7 +2057,7 @@ void func_43()//Position - 0x23FB
 				while (iVar1 < 3)
 				{
 					iLocal_261[iVar1] = VEHICLE::CREATE_VEHICLE(joaat("crusader"), Local_282[iVar1 /*3*/], fLocal_284[iVar1], true, true, false);
-					iLocal_265[iVar1] = PED::CREATE_PED_INSIDE_VEHICLE(iLocal_261[iVar1], 5, joaat("s_m_y_marine_01"), -1, true, true);
+					iLocal_265[iVar1] = PED::CREATE_PED_INSIDE_VEHICLE(iLocal_261[iVar1], 5, joaat("S_M_Y_Marine_01"), -1, true, true);
 					func_44(&iLocal_265, iVar1);
 					iVar1++;
 				}
@@ -2125,7 +2125,7 @@ void func_44(int iParam0, int iParam1)//Position - 0x2600
 	if (ENTITY::DOES_ENTITY_EXIST((*iParam0)[iParam1]) && !ENTITY::IS_ENTITY_DEAD((*iParam0)[iParam1], false))
 	{
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS((*iParam0)[iParam1], true);
-		WEAPON::GIVE_WEAPON_TO_PED((*iParam0)[iParam1], joaat("weapon_stinger"), 20, true, true);
+		WEAPON::GIVE_WEAPON_TO_PED((*iParam0)[iParam1], joaat("WEAPON_STINGER"), 20, true, true);
 		PED::SET_PED_ACCURACY((*iParam0)[iParam1], 100);
 		PED::SET_PED_RELATIONSHIP_GROUP_HASH((*iParam0)[iParam1], joaat("ARMY"));
 		PED::SET_PED_KEEP_TASK((*iParam0)[iParam1], true);
@@ -2268,7 +2268,7 @@ void func_48()//Position - 0x2923
 		if (ENTITY::DOES_ENTITY_EXIST(iLocal_264[iVar0]) && !ENTITY::IS_ENTITY_DEAD(iLocal_264[iVar0], false))
 		{
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_264[iVar0], true);
-			WEAPON::GIVE_WEAPON_TO_PED(iLocal_264[iVar0], joaat("weapon_stinger"), 20, true, true);
+			WEAPON::GIVE_WEAPON_TO_PED(iLocal_264[iVar0], joaat("WEAPON_STINGER"), 20, true, true);
 			PED::SET_PED_ACCURACY(iLocal_264[iVar0], 100);
 			TASK::TASK_COMBAT_PED(iLocal_264[iVar0], PLAYER::PLAYER_PED_ID(), 0, 16);
 			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_264[iVar0], joaat("ARMY"));
@@ -2600,8 +2600,8 @@ void func_53()//Position - 0x3895
 
 int func_54()//Position - 0x390E
 {
-	STREAMING::REQUEST_MODEL(joaat("s_m_y_marine_01"));
-	while (!STREAMING::HAS_MODEL_LOADED(joaat("s_m_y_marine_01")))
+	STREAMING::REQUEST_MODEL(joaat("S_M_Y_Marine_01"));
+	while (!STREAMING::HAS_MODEL_LOADED(joaat("S_M_Y_Marine_01")))
 	{
 		SYSTEM::WAIT(0);
 	}
@@ -2611,10 +2611,10 @@ int func_54()//Position - 0x390E
 		{
 			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_226[0]))
 			{
-				iLocal_226[0] = PED::CREATE_PED(6, joaat("s_m_y_marine_01"), Local_233, fLocal_234, true, true);
+				iLocal_226[0] = PED::CREATE_PED(6, joaat("S_M_Y_Marine_01"), Local_233, fLocal_234, true, true);
 				MISC::CLEAR_AREA(Local_233, 10f, true, false, false, false);
 				PED::ADD_SCENARIO_BLOCKING_AREA(Local_233 - Vector(10f, 10f, 10f), Local_233 + Vector(10f, 10f, 10f), false, true, true, true);
-				WEAPON::GIVE_WEAPON_TO_PED(iLocal_226[0], joaat("weapon_assaultrifle"), -1, true, true);
+				WEAPON::GIVE_WEAPON_TO_PED(iLocal_226[0], joaat("WEAPON_ASSAULTRIFLE"), -1, true, true);
 				ENTITY::SET_ENTITY_LOD_DIST(iLocal_226[0], 1000);
 				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_226[0], joaat("ARMY"));
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_226[0], true);
@@ -2634,10 +2634,10 @@ int func_54()//Position - 0x390E
 		{
 			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_226[1]))
 			{
-				iLocal_226[1] = PED::CREATE_PED(6, joaat("s_m_y_marine_01"), Local_235, fLocal_236, true, true);
+				iLocal_226[1] = PED::CREATE_PED(6, joaat("S_M_Y_Marine_01"), Local_235, fLocal_236, true, true);
 				MISC::CLEAR_AREA(Local_235, 10f, true, false, false, false);
 				PED::ADD_SCENARIO_BLOCKING_AREA(Local_235 - Vector(10f, 10f, 10f), Local_235 + Vector(10f, 10f, 10f), false, true, true, true);
-				WEAPON::GIVE_WEAPON_TO_PED(iLocal_226[1], joaat("weapon_assaultrifle"), -1, true, true);
+				WEAPON::GIVE_WEAPON_TO_PED(iLocal_226[1], joaat("WEAPON_ASSAULTRIFLE"), -1, true, true);
 				ENTITY::SET_ENTITY_LOD_DIST(iLocal_226[1], 1000);
 				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_226[1], joaat("ARMY"));
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_226[1], true);

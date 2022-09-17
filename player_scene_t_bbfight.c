@@ -621,7 +621,7 @@ int func_4(char* sParam0, int iParam1, bool bParam2)//Position - 0x265
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -818,7 +818,7 @@ int func_13()//Position - 0x6EA
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}
@@ -1658,7 +1658,7 @@ int func_35(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4)
 	if (func_42(PLAYER::PLAYER_PED_ID()) && func_42(iParam0))
 	{
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar2, true);
-		if (iVar2 == joaat("weapon_petrolcan"))
+		if (iVar2 == joaat("WEAPON_PETROLCAN"))
 		{
 			fVar0 = 3f;
 			fVar1 = 3f;
@@ -1722,7 +1722,7 @@ int func_36(int iParam0, float fParam1, bool bParam2, bool bParam3)//Position - 
 	Var1.f_2 = (Var1.f_2 + fParam1);
 	if (bParam2)
 	{
-		if (((MISC::IS_PROJECTILE_TYPE_WITHIN_DISTANCE(ENTITY::GET_ENTITY_COORDS(iParam0, true), joaat("weapon_grenade"), fParam1, true) || MISC::IS_PROJECTILE_TYPE_WITHIN_DISTANCE(ENTITY::GET_ENTITY_COORDS(iParam0, true), joaat("weapon_molotov"), fParam1, true)) || MISC::IS_PROJECTILE_TYPE_WITHIN_DISTANCE(ENTITY::GET_ENTITY_COORDS(iParam0, true), joaat("weapon_smokegrenade"), fParam1, true)) || MISC::IS_PROJECTILE_TYPE_WITHIN_DISTANCE(ENTITY::GET_ENTITY_COORDS(iParam0, true), joaat("weapon_stickybomb"), 5f, true))
+		if (((MISC::IS_PROJECTILE_TYPE_WITHIN_DISTANCE(ENTITY::GET_ENTITY_COORDS(iParam0, true), joaat("WEAPON_GRENADE"), fParam1, true) || MISC::IS_PROJECTILE_TYPE_WITHIN_DISTANCE(ENTITY::GET_ENTITY_COORDS(iParam0, true), joaat("WEAPON_MOLOTOV"), fParam1, true)) || MISC::IS_PROJECTILE_TYPE_WITHIN_DISTANCE(ENTITY::GET_ENTITY_COORDS(iParam0, true), joaat("WEAPON_SMOKEGRENADE"), fParam1, true)) || MISC::IS_PROJECTILE_TYPE_WITHIN_DISTANCE(ENTITY::GET_ENTITY_COORDS(iParam0, true), joaat("WEAPON_STICKYBOMB"), 5f, true))
 		{
 			if (bParam3)
 			{
@@ -1764,7 +1764,7 @@ int func_37(int iParam0, float fParam1)//Position - 0x1B53
 	var uVar0;
 	struct<3> Var1;
 	
-	if ((((MISC::GET_PROJECTILE_OF_PROJECTILE_TYPE_WITHIN_DISTANCE(iParam0, joaat("weapon_grenade"), fParam1, &Var1, &uVar0, false) || MISC::GET_PROJECTILE_OF_PROJECTILE_TYPE_WITHIN_DISTANCE(iParam0, joaat("weapon_smokegrenade"), fParam1, &Var1, &uVar0, false)) || MISC::GET_PROJECTILE_OF_PROJECTILE_TYPE_WITHIN_DISTANCE(iParam0, joaat("weapon_bzgas"), fParam1, &Var1, &uVar0, false)) || MISC::GET_PROJECTILE_OF_PROJECTILE_TYPE_WITHIN_DISTANCE(iParam0, joaat("weapon_stickybomb"), fParam1, &Var1, &uVar0, false)) || MISC::GET_PROJECTILE_OF_PROJECTILE_TYPE_WITHIN_DISTANCE(iParam0, joaat("weapon_molotov"), fParam1, &Var1, &uVar0, false))
+	if ((((MISC::GET_PROJECTILE_OF_PROJECTILE_TYPE_WITHIN_DISTANCE(iParam0, joaat("WEAPON_GRENADE"), fParam1, &Var1, &uVar0, false) || MISC::GET_PROJECTILE_OF_PROJECTILE_TYPE_WITHIN_DISTANCE(iParam0, joaat("WEAPON_SMOKEGRENADE"), fParam1, &Var1, &uVar0, false)) || MISC::GET_PROJECTILE_OF_PROJECTILE_TYPE_WITHIN_DISTANCE(iParam0, joaat("WEAPON_BZGAS"), fParam1, &Var1, &uVar0, false)) || MISC::GET_PROJECTILE_OF_PROJECTILE_TYPE_WITHIN_DISTANCE(iParam0, joaat("WEAPON_STICKYBOMB"), fParam1, &Var1, &uVar0, false)) || MISC::GET_PROJECTILE_OF_PROJECTILE_TYPE_WITHIN_DISTANCE(iParam0, joaat("WEAPON_MOLOTOV"), fParam1, &Var1, &uVar0, false))
 	{
 		if (func_38(iParam0, Var1, 90f, 0))
 		{
@@ -2136,7 +2136,7 @@ void func_56()//Position - 0x2068
 			iLocal_276[iVar0] = PED::CREATE_PED(26, iLocal_278[iVar0], Local_283 + Local_285[iVar0 /*3*/], 0f, true, true);
 			ENTITY::SET_ENTITY_HEADING(iLocal_276[iVar0], (fLocal_284 + fLocal_286[iVar0]));
 			PED::SET_PED_RANDOM_COMPONENT_VARIATION(iLocal_276[iVar0], 0);
-			if (iLocal_278[iVar0] == joaat("s_m_y_baywatch_01"))
+			if (iLocal_278[iVar0] == joaat("S_M_Y_BayWatch_01"))
 			{
 				if (PED::GET_PED_DRAWABLE_VARIATION(iLocal_276[iVar0], 3) == 0)
 				{
@@ -2190,7 +2190,7 @@ void func_57()//Position - 0x22CC
 		case 108:
 			Local_285[0 /*3*/] = { -0.88f, 0.8016f, -1f };
 			fLocal_286[0] = -150f;
-			iLocal_278[0] = joaat("s_m_y_ranger_01");
+			iLocal_278[0] = joaat("S_M_Y_Ranger_01");
 			iLocal_277[0] = 200;
 			StringCopy(&cLocal_338, "SWITCH@MICHAEL@PARKBENCH_SMOKE_RANGER", 64);
 			StringCopy(&(Local_347[0 /*16*/]), "Ranger_Nervous_Loop", 64);
@@ -2201,7 +2201,7 @@ void func_57()//Position - 0x22CC
 		case 109:
 			Local_285[0 /*3*/] = { -1.1832f, -0.3745f, -1f };
 			fLocal_286[0] = -147f;
-			iLocal_278[0] = joaat("s_m_y_baywatch_01");
+			iLocal_278[0] = joaat("S_M_Y_BayWatch_01");
 			iLocal_277[0] = 200;
 			StringCopy(&cLocal_338, "SWITCH@MICHAEL@PARKBENCH_SMOKE_RANGER", 64);
 			StringCopy(&(Local_347[0 /*16*/]), "Ranger_Nervous_Loop", 64);
@@ -2212,7 +2212,7 @@ void func_57()//Position - 0x22CC
 		case 157:
 			Local_285[0 /*3*/] = { -0.8296f, 1.1365f, -0.9999f };
 			fLocal_286[0] = -176.3014f;
-			iLocal_278[0] = joaat("s_m_m_bouncer_01");
+			iLocal_278[0] = joaat("S_M_M_Bouncer_01");
 			iLocal_277[0] = 100;
 			StringCopy(&cLocal_338, "SWITCH@MICHAEL@REJECTED_ENTRY", 64);
 			StringCopy(&(Local_347[0 /*16*/]), "001396_01_MICS3_6_REJECTED_ENTRY_IDLE_BOUNCER", 64);
@@ -2223,7 +2223,7 @@ void func_57()//Position - 0x22CC
 		case 166:
 			Local_285[0 /*3*/] = { Vector(36.037f, -476.663f, -1050.724f) - Local_283 };
 			fLocal_286[0] = MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f);
-			iLocal_278[0] = joaat("s_m_m_security_01");
+			iLocal_278[0] = joaat("S_M_M_Security_01");
 			iLocal_277[0] = 100;
 			StringCopy(&cLocal_338, "SWITCH@MICHAEL@TALKS_TO_GUARD", 64);
 			StringCopy(&(Local_347[0 /*16*/]), "001393_02_MICS3_3_TALKS_TO_GUARD_IDLE_GUARD", 64);
@@ -2234,7 +2234,7 @@ void func_57()//Position - 0x22CC
 		case 165:
 			Local_285[0 /*3*/] = { 0.1366f, -1.2192f, -1f };
 			fLocal_286[0] = 85.6329f;
-			iLocal_278[0] = joaat("s_m_y_grip_01");
+			iLocal_278[0] = joaat("S_M_Y_Grip_01");
 			iLocal_277[0] = 100;
 			StringCopy(&cLocal_338, "SWITCH@MICHAEL@BAR_EMPLOYEE_CONVO", 64);
 			StringCopy(&(Local_347[0 /*16*/]), "001387_03_MICS3_2_BAR_EMPLOYEE_CONVO_IDLE_STAFF", 64);
@@ -2253,8 +2253,8 @@ void func_57()//Position - 0x22CC
 			fLocal_286[0] = (0.61f - fLocal_284);
 			Local_285[1 /*3*/] = { -1.3617f, 6.7273f, -1f };
 			fLocal_286[1] = -3.6142f;
-			iLocal_278[0] = joaat("a_m_y_musclbeac_01");
-			iLocal_278[1] = joaat("a_m_y_musclbeac_01");
+			iLocal_278[0] = joaat("A_M_Y_MusclBeac_01");
+			iLocal_278[1] = joaat("A_M_Y_MusclBeac_01");
 			iLocal_277[0] = 100;
 			iLocal_277[1] = 100;
 			StringCopy(&cLocal_338, "SWITCH@TREVOR@PUSHES_BODYBUILDER", 64);
@@ -2269,7 +2269,7 @@ void func_57()//Position - 0x22CC
 		case 256:
 			Local_285[0 /*3*/] = { -4.7f, -0.2f, 0f };
 			fLocal_286[0] = 143f;
-			iLocal_278[0] = joaat("a_m_m_business_01");
+			iLocal_278[0] = joaat("A_M_M_Business_01");
 			iLocal_277[0] = 0;
 			iLocal_277[1] = 0;
 			Local_287[0 /*3*/] = { -3.65f, -1.2f, 1.5f };
@@ -2281,7 +2281,7 @@ void func_57()//Position - 0x22CC
 		case 257:
 			Local_285[0 /*3*/] = { Vector(7.1578f, -978.6192f, -1666.374f) - Local_283 };
 			fLocal_286[0] = -149.0587f;
-			iLocal_278[0] = joaat("a_m_m_business_01");
+			iLocal_278[0] = joaat("A_M_M_Business_01");
 			iLocal_277[0] = 0;
 			iLocal_277[1] = 0;
 			Local_287[0 /*3*/] = { 0.4f, -4.1f, 1.8f };
@@ -2295,8 +2295,8 @@ void func_57()//Position - 0x22CC
 			Local_285[1 /*3*/] = { 4.2393f, 4.1781f, 0f };
 			fLocal_286[0] = 145.8f;
 			fLocal_286[1] = 130.32f;
-			iLocal_278[0] = joaat("a_m_m_salton_01");
-			iLocal_278[1] = joaat("a_m_m_salton_01");
+			iLocal_278[0] = joaat("A_M_M_Salton_01");
+			iLocal_278[1] = joaat("A_M_M_Salton_01");
 			iLocal_277[0] = 0;
 			iLocal_277[1] = 0;
 			Local_287[0 /*3*/] = { 2.1f, 4.3f, 2f };
@@ -2311,7 +2311,7 @@ void func_57()//Position - 0x22CC
 			Local_285[1 /*3*/] = { MISC::GET_RANDOM_FLOAT_IN_RANGE(-10f, 10f), MISC::GET_RANDOM_FLOAT_IN_RANGE(-10f, 10f), 0f };
 			fLocal_286[0] = MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f);
 			fLocal_286[1] = MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f);
-			iLocal_278[0] = joaat("a_m_m_malibu_01");
+			iLocal_278[0] = joaat("A_M_M_Malibu_01");
 			iLocal_277[0] = 100;
 			iLocal_277[1] = 100;
 			StringCopy(&cLocal_338, "SWITCH@TREVOR@YELLS_AT_DOORMAN", 64);
@@ -2326,7 +2326,7 @@ void func_57()//Position - 0x22CC
 		case 285:
 			Local_285[0 /*3*/] = { -3.264f, -3.7895f, 14.1815f };
 			fLocal_286[0] = 0f;
-			iLocal_278[0] = joaat("g_m_y_lost_01");
+			iLocal_278[0] = joaat("G_M_Y_Lost_01");
 			iLocal_277[0] = 100;
 			StringCopy(&cLocal_338, "SWITCH@TREVOR@BRIDGE", 64);
 			StringCopy(&(Local_347[0 /*16*/]), "HOLD_LOOP_victim", 64);
@@ -2343,8 +2343,8 @@ void func_57()//Position - 0x22CC
 			Local_285[1 /*3*/] = { 2.4f, 4.6336f, 0.6f };
 			fLocal_286[0] = -164.16f;
 			fLocal_286[1] = 166.32f;
-			iLocal_278[0] = joaat("a_m_m_business_01");
-			iLocal_278[1] = joaat("a_m_m_business_01");
+			iLocal_278[0] = joaat("A_M_M_Business_01");
+			iLocal_278[1] = joaat("A_M_M_Business_01");
 			iLocal_277[0] = 0;
 			iLocal_277[1] = 0;
 			Local_287[0 /*3*/] = { 4f, 8f, 2f };
@@ -2359,8 +2359,8 @@ void func_57()//Position - 0x22CC
 			fLocal_286[1] = 156.719f;
 			iLocal_277[0] = 0;
 			iLocal_277[1] = 0;
-			iLocal_278[0] = joaat("s_m_m_bouncer_01");
-			iLocal_278[1] = joaat("s_m_m_bouncer_01");
+			iLocal_278[0] = joaat("S_M_M_Bouncer_01");
+			iLocal_278[1] = joaat("S_M_M_Bouncer_01");
 			Local_287[0 /*3*/] = { 3f, -3f, 2f };
 			Local_288[0 /*3*/] = { 4.5f, 2.5f, 2f };
 			fLocal_289[0] = 9f;
@@ -2371,8 +2371,8 @@ void func_57()//Position - 0x22CC
 			Local_285[1 /*3*/] = { Vector(113.05f, 354.08f, -53.18f) - Local_283 + Vector(-1f, 0f, 0f) };
 			fLocal_286[0] = -100f;
 			fLocal_286[1] = -100f;
-			iLocal_278[0] = joaat("a_m_m_business_01");
-			iLocal_278[1] = joaat("a_m_m_business_01");
+			iLocal_278[0] = joaat("A_M_M_Business_01");
+			iLocal_278[1] = joaat("A_M_M_Business_01");
 			Local_287[0 /*3*/] = { 1.6187f, -0.82f, 1f };
 			Local_288[0 /*3*/] = { (2.5f + 0.5f), 8f, 2f };
 			fLocal_289[0] = 6f;
@@ -2392,8 +2392,8 @@ void func_57()//Position - 0x22CC
 			Local_285[1 /*3*/] = { MISC::GET_RANDOM_FLOAT_IN_RANGE(-10f, 10f), MISC::GET_RANDOM_FLOAT_IN_RANGE(-10f, 10f), 0f };
 			fLocal_286[0] = MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f);
 			fLocal_286[1] = MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f);
-			iLocal_278[0] = joaat("a_m_y_musclbeac_01");
-			iLocal_278[1] = joaat("a_m_y_musclbeac_01");
+			iLocal_278[0] = joaat("A_M_Y_MusclBeac_01");
+			iLocal_278[1] = joaat("A_M_Y_MusclBeac_01");
 			Local_287[0 /*3*/] = { MISC::GET_RANDOM_FLOAT_IN_RANGE(-10f, 10f), MISC::GET_RANDOM_FLOAT_IN_RANGE(-10f, 10f), 0f };
 			Local_288[0 /*3*/] = { 1f, 1f, 1f };
 			fLocal_289[0] = MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f);

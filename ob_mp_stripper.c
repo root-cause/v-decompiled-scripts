@@ -412,8 +412,8 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_301 = 65;
 	iLocal_302 = 49;
 	iLocal_303 = 64;
-	iLocal_316 = joaat("s_f_y_stripper_01");
-	iLocal_317 = joaat("s_f_y_stripper_02");
+	iLocal_316 = joaat("S_F_Y_Stripper_01");
+	iLocal_317 = joaat("S_F_Y_Stripper_02");
 	sLocal_320 = "mini@strip_club@lap_dance_2g@ld_2g_intro";
 	sLocal_321 = "ld_2g_intro_m";
 	sLocal_322 = "ld_2g_intro_s1";
@@ -567,7 +567,7 @@ void func_1()//Position - 0x384
 						MISC::CLEAR_AREA_OF_PROJECTILES(Local_374, 2.5f, 0);
 						func_33(PLAYER::PLAYER_ID(), 0, 256, 0);
 						iLocal_36 = 1;
-						WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("weapon_unarmed"), true);
+						WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"), true);
 						func_24(1, 1, 1, 0, 0, 0, 0);
 						TASK::TASK_PED_SLIDE_TO_COORD(PLAYER::PLAYER_PED_ID(), Local_374, fLocal_375, 0.75f);
 						iLocal_308 = 2;
@@ -1718,7 +1718,7 @@ void func_38(bool bParam0, int iParam1, int iParam2)//Position - 0x19B2
 			NETWORK::NETWORK_SET_IN_SPECTATOR_MODE(bParam0, iParam1);
 		}
 		HUD::SET_MINIMAP_IN_SPECTATOR_MODE(bParam0, iParam1);
-		func_39(joaat("mpply_is_char_spectating"), bParam0);
+		func_39(joaat("MPPLY_IS_CHAR_SPECTATING"), bParam0);
 	}
 }
 
@@ -2152,7 +2152,7 @@ int func_60()//Position - 0x20DB
 		{
 			if (bLocal_35)
 			{
-				if (ENTITY::GET_ENTITY_MODEL(uVar2[iVar1]) == joaat("player_zero"))
+				if (ENTITY::GET_ENTITY_MODEL(uVar2[iVar1]) == joaat("Player_Zero"))
 				{
 					if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), ENTITY::GET_ENTITY_COORDS(uVar2[iVar1], true), true) < 3f)
 					{
@@ -2162,7 +2162,7 @@ int func_60()//Position - 0x20DB
 			}
 			if (!bLocal_35 && !bLocal_34)
 			{
-				if (ENTITY::GET_ENTITY_MODEL(uVar2[iVar1]) == joaat("player_one"))
+				if (ENTITY::GET_ENTITY_MODEL(uVar2[iVar1]) == joaat("Player_One"))
 				{
 					if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), ENTITY::GET_ENTITY_COORDS(uVar2[iVar1], true), true) < 3f)
 					{

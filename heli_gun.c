@@ -308,7 +308,7 @@ void func_1()//Position - 0x20B
 		{
 			if (!iLocal_94)
 			{
-				VEHICLE::DISABLE_VEHICLE_WEAPON(true, joaat("vehicle_weapon_space_rocket"), iLocal_121, PLAYER::PLAYER_PED_ID());
+				VEHICLE::DISABLE_VEHICLE_WEAPON(true, joaat("VEHICLE_WEAPON_SPACE_ROCKET"), iLocal_121, PLAYER::PLAYER_PED_ID());
 				iLocal_94 = 1;
 			}
 		}
@@ -319,7 +319,7 @@ void func_1()//Position - 0x20B
 		{
 			if (!iLocal_94 && iLocal_78 != joaat("hunter"))
 			{
-				VEHICLE::DISABLE_VEHICLE_WEAPON(true, joaat("vehicle_weapon_space_rocket"), iLocal_121, PLAYER::PLAYER_PED_ID());
+				VEHICLE::DISABLE_VEHICLE_WEAPON(true, joaat("VEHICLE_WEAPON_SPACE_ROCKET"), iLocal_121, PLAYER::PLAYER_PED_ID());
 				iLocal_94 = 1;
 			}
 		}
@@ -328,7 +328,7 @@ void func_1()//Position - 0x20B
 	{
 		if (iLocal_94)
 		{
-			VEHICLE::DISABLE_VEHICLE_WEAPON(false, joaat("vehicle_weapon_space_rocket"), iLocal_121, PLAYER::PLAYER_PED_ID());
+			VEHICLE::DISABLE_VEHICLE_WEAPON(false, joaat("VEHICLE_WEAPON_SPACE_ROCKET"), iLocal_121, PLAYER::PLAYER_PED_ID());
 			iLocal_94 = 0;
 		}
 	}
@@ -2864,7 +2864,7 @@ void func_58()//Position - 0x32A6
 												Var13 = { CAM::GET_CAM_ROT(CAM::GET_RENDERING_CAM(), 2) };
 												Var12 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Var12, Var13.f_2, -0.5f, 0f, 0f) };
 											}
-											MISC::SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY_NEW(Var12, Local_71.f_45, iVar9, true, joaat("vehicle_weapon_player_bullet"), PLAYER::PLAYER_PED_ID(), true, true, -1f, iVar11, false, false, 0, true, 0, 1, 0);
+											MISC::SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY_NEW(Var12, Local_71.f_45, iVar9, true, joaat("VEHICLE_WEAPON_PLAYER_BULLET"), PLAYER::PLAYER_PED_ID(), true, true, -1f, iVar11, false, false, 0, true, 0, 1, 0);
 											func_145(&Local_74, 0, 0);
 											if (iLocal_116 != 0)
 											{
@@ -3397,24 +3397,24 @@ int func_69(int iParam0)//Position - 0x42B3
 	iVar0 = ENTITY::GET_ENTITY_MODEL(ENTITY::GET_VEHICLE_INDEX_FROM_ENTITY_INDEX(iParam0));
 	if (func_142(PLAYER::PLAYER_ID()) || func_141(PLAYER::PLAYER_ID()))
 	{
-		return joaat("vehicle_weapon_avenger_cannon");
+		return joaat("VEHICLE_WEAPON_AVENGER_CANNON");
 	}
 	switch (iVar0)
 	{
 		case joaat("savage"):
 		case joaat("buzzard"):
-			return joaat("weapon_passenger_rocket");
+			return joaat("WEAPON_PASSENGER_ROCKET");
 			break;
 		
 		case joaat("avenger"):
-			return joaat("vehicle_weapon_mobileops_cannon");
+			return joaat("VEHICLE_WEAPON_MOBILEOPS_CANNON");
 			break;
 	}
 	if (func_125(3))
 	{
-		return joaat("vehicle_weapon_mobileops_cannon");
+		return joaat("VEHICLE_WEAPON_MOBILEOPS_CANNON");
 	}
-	return joaat("vehicle_weapon_mobileops_cannon");
+	return joaat("VEHICLE_WEAPON_MOBILEOPS_CANNON");
 }
 
 bool func_70()//Position - 0x432C
@@ -8912,7 +8912,7 @@ void func_214()//Position - 0xB6DA
 	{
 		if (iLocal_123 == PLAYER::PLAYER_PED_ID() && NETWORK::NETWORK_HAS_CONTROL_OF_ENTITY(iLocal_121))
 		{
-			VEHICLE::DISABLE_VEHICLE_WEAPON(false, joaat("vehicle_weapon_space_rocket"), iLocal_121, PLAYER::PLAYER_PED_ID());
+			VEHICLE::DISABLE_VEHICLE_WEAPON(false, joaat("VEHICLE_WEAPON_SPACE_ROCKET"), iLocal_121, PLAYER::PLAYER_PED_ID());
 		}
 	}
 	Global_1581357 = 0;

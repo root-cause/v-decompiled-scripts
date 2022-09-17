@@ -3325,11 +3325,11 @@ void func_126(var uParam0, int iParam1)//Position - 0x38D6
 				func_178(89, 1, 1, 0, 0, -1);
 				if (!func_176())
 				{
-					func_127(joaat("mp_m_freemode_01"), 89);
+					func_127(joaat("MP_M_Freemode_01"), 89);
 				}
 				else
 				{
-					func_127(joaat("mp_f_freemode_01"), 89);
+					func_127(joaat("MP_F_Freemode_01"), 89);
 				}
 			}
 		}
@@ -3338,46 +3338,46 @@ void func_126(var uParam0, int iParam1)//Position - 0x38D6
 
 void func_127(int iParam0, int iParam1)//Position - 0x394A
 {
-	if (iParam0 == joaat("mp_m_freemode_01"))
+	if (iParam0 == joaat("MP_M_Freemode_01"))
 	{
 		if (iParam1 == 89)
 		{
-			func_128(joaat("mp_m_freemode_01"), 11, 23, 1);
-			func_128(joaat("mp_m_freemode_01"), 8, 23, 1);
-			func_128(joaat("mp_m_freemode_01"), 8, 231, 1);
+			func_128(joaat("MP_M_Freemode_01"), 11, 23, 1);
+			func_128(joaat("MP_M_Freemode_01"), 8, 23, 1);
+			func_128(joaat("MP_M_Freemode_01"), 8, 231, 1);
 		}
 		else if (iParam1 == 88)
 		{
-			func_128(joaat("mp_m_freemode_01"), 11, 17, 1);
-			func_128(joaat("mp_m_freemode_01"), 8, 17, 1);
-			func_128(joaat("mp_m_freemode_01"), 8, 225, 1);
+			func_128(joaat("MP_M_Freemode_01"), 11, 17, 1);
+			func_128(joaat("MP_M_Freemode_01"), 8, 17, 1);
+			func_128(joaat("MP_M_Freemode_01"), 8, 225, 1);
 		}
 		else if (iParam1 == 87)
 		{
-			func_128(joaat("mp_m_freemode_01"), 11, 28, 1);
-			func_128(joaat("mp_m_freemode_01"), 8, 28, 1);
-			func_128(joaat("mp_m_freemode_01"), 8, 236, 1);
+			func_128(joaat("MP_M_Freemode_01"), 11, 28, 1);
+			func_128(joaat("MP_M_Freemode_01"), 8, 28, 1);
+			func_128(joaat("MP_M_Freemode_01"), 8, 236, 1);
 		}
 	}
-	else if (iParam0 == joaat("mp_f_freemode_01"))
+	else if (iParam0 == joaat("MP_F_Freemode_01"))
 	{
 		if (iParam1 == 89)
 		{
-			func_128(joaat("mp_f_freemode_01"), 11, 4, 1);
-			func_128(joaat("mp_f_freemode_01"), 8, 4, 1);
-			func_128(joaat("mp_f_freemode_01"), 8, 20, 1);
+			func_128(joaat("MP_F_Freemode_01"), 11, 4, 1);
+			func_128(joaat("MP_F_Freemode_01"), 8, 4, 1);
+			func_128(joaat("MP_F_Freemode_01"), 8, 20, 1);
 		}
 		else if (iParam1 == 88)
 		{
-			func_128(joaat("mp_f_freemode_01"), 11, 7, 1);
-			func_128(joaat("mp_f_freemode_01"), 8, 7, 1);
-			func_128(joaat("mp_f_freemode_01"), 8, 23, 1);
+			func_128(joaat("MP_F_Freemode_01"), 11, 7, 1);
+			func_128(joaat("MP_F_Freemode_01"), 8, 7, 1);
+			func_128(joaat("MP_F_Freemode_01"), 8, 23, 1);
 		}
 		else if (iParam1 == 87)
 		{
-			func_128(joaat("mp_f_freemode_01"), 11, 9, 1);
-			func_128(joaat("mp_f_freemode_01"), 8, 9, 1);
-			func_128(joaat("mp_f_freemode_01"), 8, 25, 1);
+			func_128(joaat("MP_F_Freemode_01"), 11, 9, 1);
+			func_128(joaat("MP_F_Freemode_01"), 8, 9, 1);
+			func_128(joaat("MP_F_Freemode_01"), 8, 25, 1);
 		}
 	}
 }
@@ -3727,11 +3727,11 @@ bool func_131(int iParam0, int iParam1, var uParam2)//Position - 0x3B90
 struct<14> func_132(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x3F95
 {
 	func_175();
-	if (iParam0 == joaat("mp_m_freemode_01"))
+	if (iParam0 == joaat("MP_M_Freemode_01"))
 	{
 		func_159(iParam1, iParam2, iParam3);
 	}
-	else if (iParam0 == joaat("mp_f_freemode_01"))
+	else if (iParam0 == joaat("MP_F_Freemode_01"))
 	{
 		func_133(iParam1, iParam2, iParam3);
 	}
@@ -32353,7 +32353,7 @@ bool func_176()//Position - 0x1EA94
 
 int func_177(int iParam0)//Position - 0x1EAA4
 {
-	if (ENTITY::GET_ENTITY_MODEL(PLAYER::GET_PLAYER_PED(iParam0)) == joaat("mp_f_freemode_01"))
+	if (ENTITY::GET_ENTITY_MODEL(PLAYER::GET_PLAYER_PED(iParam0)) == joaat("MP_F_Freemode_01"))
 	{
 		return 1;
 	}
@@ -35545,71 +35545,71 @@ void func_219(int iParam0, int iParam1)//Position - 0x227BA
 	}
 	switch (iParam0)
 	{
-		case joaat("mpply_crew_0_id"):
+		case joaat("MPPLY_CREW_0_ID"):
 			Global_1659609 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_1_id"):
+		case joaat("MPPLY_CREW_1_ID"):
 			Global_1659611 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_2_id"):
+		case joaat("MPPLY_CREW_2_ID"):
 			Global_1659611 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_3_id"):
+		case joaat("MPPLY_CREW_3_ID"):
 			Global_1659612 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_4_id"):
+		case joaat("MPPLY_CREW_4_ID"):
 			Global_1659613 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_local_xp_0"):
+		case joaat("MPPLY_CREW_LOCAL_XP_0"):
 			Global_1659614 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_local_xp_1"):
+		case joaat("MPPLY_CREW_LOCAL_XP_1"):
 			Global_1659615 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_local_xp_2"):
+		case joaat("MPPLY_CREW_LOCAL_XP_2"):
 			Global_1659616 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_local_xp_3"):
+		case joaat("MPPLY_CREW_LOCAL_XP_3"):
 			Global_1659617 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_local_xp_4"):
+		case joaat("MPPLY_CREW_LOCAL_XP_4"):
 			Global_1659618 = iParam1;
 			break;
 		
-		case joaat("mpply_became_cheater_num"):
+		case joaat("MPPLY_BECAME_CHEATER_NUM"):
 			Global_1659619 = iParam1;
 			break;
 		
-		case joaat("mpply_friendly"):
+		case joaat("MPPLY_FRIENDLY"):
 			Global_1659620 = iParam1;
 			break;
 		
-		case joaat("mpply_offensive_language"):
+		case joaat("MPPLY_OFFENSIVE_LANGUAGE"):
 			Global_1659621 = iParam1;
 			break;
 		
-		case joaat("mpply_griefing"):
+		case joaat("MPPLY_GRIEFING"):
 			Global_1659622 = iParam1;
 			break;
 		
-		case joaat("mpply_helpful"):
+		case joaat("MPPLY_HELPFUL"):
 			Global_1659623 = iParam1;
 			break;
 		
-		case joaat("mpply_offensive_tagplate"):
+		case joaat("MPPLY_OFFENSIVE_TAGPLATE"):
 			Global_1659624 = iParam1;
 			break;
 		
-		case joaat("mpply_offensive_ugc"):
+		case joaat("MPPLY_OFFENSIVE_UGC"):
 			Global_1659625 = iParam1;
 			break;
 		
@@ -35635,23 +35635,23 @@ int func_221(int iParam0)//Position - 0x228FB
 	{
 		switch (iParam0)
 		{
-			case joaat("mpply_crew_0_id"):
-			case joaat("mpply_crew_1_id"):
-			case joaat("mpply_crew_2_id"):
-			case joaat("mpply_crew_3_id"):
-			case joaat("mpply_crew_4_id"):
-			case joaat("mpply_crew_local_xp_0"):
-			case joaat("mpply_crew_local_xp_1"):
-			case joaat("mpply_crew_local_xp_2"):
-			case joaat("mpply_crew_local_xp_3"):
-			case joaat("mpply_crew_local_xp_4"):
-			case joaat("mpply_became_cheater_num"):
-			case joaat("mpply_friendly"):
-			case joaat("mpply_offensive_language"):
-			case joaat("mpply_griefing"):
-			case joaat("mpply_helpful"):
-			case joaat("mpply_offensive_tagplate"):
-			case joaat("mpply_offensive_ugc"):
+			case joaat("MPPLY_CREW_0_ID"):
+			case joaat("MPPLY_CREW_1_ID"):
+			case joaat("MPPLY_CREW_2_ID"):
+			case joaat("MPPLY_CREW_3_ID"):
+			case joaat("MPPLY_CREW_4_ID"):
+			case joaat("MPPLY_CREW_LOCAL_XP_0"):
+			case joaat("MPPLY_CREW_LOCAL_XP_1"):
+			case joaat("MPPLY_CREW_LOCAL_XP_2"):
+			case joaat("MPPLY_CREW_LOCAL_XP_3"):
+			case joaat("MPPLY_CREW_LOCAL_XP_4"):
+			case joaat("MPPLY_BECAME_CHEATER_NUM"):
+			case joaat("MPPLY_FRIENDLY"):
+			case joaat("MPPLY_OFFENSIVE_LANGUAGE"):
+			case joaat("MPPLY_GRIEFING"):
+			case joaat("MPPLY_HELPFUL"):
+			case joaat("MPPLY_OFFENSIVE_TAGPLATE"):
+			case joaat("MPPLY_OFFENSIVE_UGC"):
 				return 1;
 				break;
 			}
@@ -35679,44 +35679,44 @@ int func_223(int iParam0, int iParam1, bool bParam2)//Position - 0x2299D
 		case 2:
 			if (bParam2)
 			{
-				return joaat("mpply_available_races_v");
+				return joaat("MPPLY_AVAILABLE_RACES_V");
 			}
 			else
 			{
-				return joaat("mpply_available_races");
+				return joaat("MPPLY_AVAILABLE_RACES");
 			}
 			break;
 		
 		case 1:
 			if (bParam2)
 			{
-				return joaat("mpply_available_dms_v");
+				return joaat("MPPLY_AVAILABLE_DMS_V");
 			}
 			else
 			{
-				return joaat("mpply_available_dms");
+				return joaat("MPPLY_AVAILABLE_DMS");
 			}
 			break;
 		
 		case 8:
 			if (bParam2)
 			{
-				return joaat("mpply_available_paras_v");
+				return joaat("MPPLY_AVAILABLE_PARAS_V");
 			}
 			else
 			{
-				return joaat("mpply_available_paras");
+				return joaat("MPPLY_AVAILABLE_PARAS");
 			}
 			break;
 		
 		case 3:
 			if (bParam2)
 			{
-				return joaat("mpply_available_survival_v");
+				return joaat("MPPLY_AVAILABLE_SURVIVAL_V");
 			}
 			else
 			{
-				return joaat("mpply_available_survival");
+				return joaat("MPPLY_AVAILABLE_SURVIVAL");
 			}
 			break;
 		
@@ -35726,65 +35726,65 @@ int func_223(int iParam0, int iParam1, bool bParam2)//Position - 0x2299D
 				case 6:
 					if (bParam2)
 					{
-						return joaat("mpply_available_ctf_v");
+						return joaat("MPPLY_AVAILABLE_CTF_V");
 					}
 					else
 					{
-						return joaat("mpply_available_ctf");
+						return joaat("MPPLY_AVAILABLE_CTF");
 					}
 					break;
 				
 				case 5:
 					if (bParam2)
 					{
-						return joaat("mpply_available_lts_v");
+						return joaat("MPPLY_AVAILABLE_LTS_V");
 					}
 					else
 					{
-						return joaat("mpply_available_lts");
+						return joaat("MPPLY_AVAILABLE_LTS");
 					}
 					break;
 				
 				case 4:
 					if (bParam2)
 					{
-						return joaat("mpply_available_versus_v");
+						return joaat("MPPLY_AVAILABLE_VERSUS_V");
 					}
 					else
 					{
-						return joaat("mpply_available_versus");
+						return joaat("MPPLY_AVAILABLE_VERSUS");
 					}
 					break;
 				
 				case 1:
 					if (bParam2)
 					{
-						return joaat("mpply_available_heist_finale_v");
+						return joaat("MPPLY_AVAILABLE_HEIST_FINALE_V");
 					}
 					else
 					{
-						return joaat("mpply_available_heist_finale");
+						return joaat("MPPLY_AVAILABLE_HEIST_FINALE");
 					}
 					break;
 				
 				case 7:
 					if (bParam2)
 					{
-						return joaat("mpply_available_heist_planv");
+						return joaat("MPPLY_AVAILABLE_HEIST_PLANV");
 					}
 					else
 					{
-						return joaat("mpply_available_heist_plan");
+						return joaat("MPPLY_AVAILABLE_HEIST_PLAN");
 					}
 					break;
 			}
 			if (bParam2)
 			{
-				return joaat("mpply_available_missions_v");
+				return joaat("MPPLY_AVAILABLE_MISSIONS_V");
 			}
 			else
 			{
-				return joaat("mpply_available_missions");
+				return joaat("MPPLY_AVAILABLE_MISSIONS");
 			}
 			break;
 	}
@@ -35940,44 +35940,44 @@ int func_229(int iParam0, int iParam1, bool bParam2)//Position - 0x22CE2
 		case 2:
 			if (bParam2)
 			{
-				return joaat("mpply_unique_races_v");
+				return joaat("MPPLY_UNIQUE_RACES_V");
 			}
 			else
 			{
-				return joaat("mpply_unique_races");
+				return joaat("MPPLY_UNIQUE_RACES");
 			}
 			break;
 		
 		case 1:
 			if (bParam2)
 			{
-				return joaat("mpply_unique_dms_v");
+				return joaat("MPPLY_UNIQUE_DMS_V");
 			}
 			else
 			{
-				return joaat("mpply_unique_dms");
+				return joaat("MPPLY_UNIQUE_DMS");
 			}
 			break;
 		
 		case 8:
 			if (bParam2)
 			{
-				return joaat("mpply_unique_paras_v");
+				return joaat("MPPLY_UNIQUE_PARAS_V");
 			}
 			else
 			{
-				return joaat("mpply_unique_paras");
+				return joaat("MPPLY_UNIQUE_PARAS");
 			}
 			break;
 		
 		case 3:
 			if (bParam2)
 			{
-				return joaat("mpply_unique_survival_v");
+				return joaat("MPPLY_UNIQUE_SURVIVAL_V");
 			}
 			else
 			{
-				return joaat("mpply_unique_survival");
+				return joaat("MPPLY_UNIQUE_SURVIVAL");
 			}
 			break;
 		
@@ -35987,65 +35987,65 @@ int func_229(int iParam0, int iParam1, bool bParam2)//Position - 0x22CE2
 				case 6:
 					if (bParam2)
 					{
-						return joaat("mpply_unique_ctf_v");
+						return joaat("MPPLY_UNIQUE_CTF_V");
 					}
 					else
 					{
-						return joaat("mpply_unique_ctf");
+						return joaat("MPPLY_UNIQUE_CTF");
 					}
 					break;
 				
 				case 5:
 					if (bParam2)
 					{
-						return joaat("mpply_unique_lts_v");
+						return joaat("MPPLY_UNIQUE_LTS_V");
 					}
 					else
 					{
-						return joaat("mpply_unique_lts");
+						return joaat("MPPLY_UNIQUE_LTS");
 					}
 					break;
 				
 				case 4:
 					if (bParam2)
 					{
-						return joaat("mpply_unique_versus_v");
+						return joaat("MPPLY_UNIQUE_VERSUS_V");
 					}
 					else
 					{
-						return joaat("mpply_unique_versus");
+						return joaat("MPPLY_UNIQUE_VERSUS");
 					}
 					break;
 				
 				case 1:
 					if (bParam2)
 					{
-						return joaat("mpply_unique_heist_finale_v");
+						return joaat("MPPLY_UNIQUE_HEIST_FINALE_V");
 					}
 					else
 					{
-						return joaat("mpply_unique_heist_finale");
+						return joaat("MPPLY_UNIQUE_HEIST_FINALE");
 					}
 					break;
 				
 				case 7:
 					if (bParam2)
 					{
-						return joaat("mpply_unique_heist_planning_v");
+						return joaat("MPPLY_UNIQUE_HEIST_PLANNING_V");
 					}
 					else
 					{
-						return joaat("mpply_unique_heist_planning");
+						return joaat("MPPLY_UNIQUE_HEIST_PLANNING");
 					}
 					break;
 			}
 			if (bParam2)
 			{
-				return joaat("mpply_unique_missions_v");
+				return joaat("MPPLY_UNIQUE_MISSIONS_V");
 			}
 			else
 			{
-				return joaat("mpply_unique_missions");
+				return joaat("MPPLY_UNIQUE_MISSIONS");
 			}
 			break;
 	}
@@ -36379,25 +36379,25 @@ int func_234(int iParam0)//Position - 0x23B1E
 	switch (iParam0)
 	{
 		case 12:
-			return joaat("mpply_total_contact_0");
+			return joaat("MPPLY_TOTAL_CONTACT_0");
 		
 		case 19:
-			return joaat("mpply_total_contact_1");
+			return joaat("MPPLY_TOTAL_CONTACT_1");
 		
 		case 86:
-			return joaat("mpply_total_contact_2");
+			return joaat("MPPLY_TOTAL_CONTACT_2");
 		
 		case 20:
-			return joaat("mpply_total_contact_3");
+			return joaat("MPPLY_TOTAL_CONTACT_3");
 		
 		case 31:
-			return joaat("mpply_total_contact_4");
+			return joaat("MPPLY_TOTAL_CONTACT_4");
 		
 		case 2:
-			return joaat("mpply_total_contact_5");
+			return joaat("MPPLY_TOTAL_CONTACT_5");
 		
 		case 18:
-			return joaat("mpply_total_contact_6");
+			return joaat("MPPLY_TOTAL_CONTACT_6");
 		
 		default:
 	}
@@ -36803,25 +36803,25 @@ int func_242(int iParam0)//Position - 0x24208
 	switch (iParam0)
 	{
 		case 12:
-			return joaat("mpply_unique_contact_0");
+			return joaat("MPPLY_UNIQUE_CONTACT_0");
 		
 		case 19:
-			return joaat("mpply_unique_contact_1");
+			return joaat("MPPLY_UNIQUE_CONTACT_1");
 		
 		case 86:
-			return joaat("mpply_unique_contact_2");
+			return joaat("MPPLY_UNIQUE_CONTACT_2");
 		
 		case 20:
-			return joaat("mpply_unique_contact_3");
+			return joaat("MPPLY_UNIQUE_CONTACT_3");
 		
 		case 31:
-			return joaat("mpply_unique_contact_4");
+			return joaat("MPPLY_UNIQUE_CONTACT_4");
 		
 		case 2:
-			return joaat("mpply_unique_contact_5");
+			return joaat("MPPLY_UNIQUE_CONTACT_5");
 		
 		case 18:
-			return joaat("mpply_unique_contact_6");
+			return joaat("MPPLY_UNIQUE_CONTACT_6");
 		
 		default:
 	}
@@ -37136,7 +37136,7 @@ char* func_258()//Position - 0x24A99
 
 void func_259(bool bParam0)//Position - 0x24AA9
 {
-	func_260(joaat("mpply_big_feed_init"), bParam0);
+	func_260(joaat("MPPLY_BIG_FEED_INIT"), bParam0);
 }
 
 void func_260(int iParam0, bool bParam1)//Position - 0x24ABC
@@ -37158,63 +37158,63 @@ void func_261(bool bParam0)//Position - 0x24AD8
 	}
 	if (bParam0)
 	{
-		func_220(joaat("mpply_unique_races"), 0);
-		func_220(joaat("mpply_unique_dms"), 0);
-		func_220(joaat("mpply_unique_paras"), 0);
-		func_220(joaat("mpply_unique_survival"), 0);
-		func_220(joaat("mpply_unique_ctf"), 0);
-		func_220(joaat("mpply_unique_lts"), 0);
-		func_220(joaat("mpply_unique_versus"), 0);
-		func_220(joaat("mpply_unique_missions"), 0);
-		func_220(joaat("mpply_unique_heist_planning"), 0);
-		func_220(joaat("mpply_unique_heist_finale"), 0);
-		func_220(joaat("mpply_available_races"), 0);
-		func_220(joaat("mpply_available_dms"), 0);
-		func_220(joaat("mpply_available_paras"), 0);
-		func_220(joaat("mpply_available_survival"), 0);
-		func_220(joaat("mpply_available_lts"), 0);
-		func_220(joaat("mpply_available_ctf"), 0);
-		func_220(joaat("mpply_available_versus"), 0);
-		func_220(joaat("mpply_available_missions"), 0);
-		func_220(joaat("mpply_available_heist_plan"), 0);
-		func_220(joaat("mpply_available_heist_finale"), 0);
-		func_220(joaat("mpply_unique_contact_0"), 0);
-		func_220(joaat("mpply_unique_contact_1"), 0);
-		func_220(joaat("mpply_unique_contact_2"), 0);
-		func_220(joaat("mpply_unique_contact_3"), 0);
-		func_220(joaat("mpply_unique_contact_4"), 0);
-		func_220(joaat("mpply_unique_contact_5"), 0);
-		func_220(joaat("mpply_unique_contact_6"), 0);
-		func_220(joaat("mpply_total_contact_0"), 0);
-		func_220(joaat("mpply_total_contact_1"), 0);
-		func_220(joaat("mpply_total_contact_2"), 0);
-		func_220(joaat("mpply_total_contact_3"), 0);
-		func_220(joaat("mpply_total_contact_4"), 0);
-		func_220(joaat("mpply_total_contact_5"), 0);
-		func_220(joaat("mpply_total_contact_6"), 0);
+		func_220(joaat("MPPLY_UNIQUE_RACES"), 0);
+		func_220(joaat("MPPLY_UNIQUE_DMS"), 0);
+		func_220(joaat("MPPLY_UNIQUE_PARAS"), 0);
+		func_220(joaat("MPPLY_UNIQUE_SURVIVAL"), 0);
+		func_220(joaat("MPPLY_UNIQUE_CTF"), 0);
+		func_220(joaat("MPPLY_UNIQUE_LTS"), 0);
+		func_220(joaat("MPPLY_UNIQUE_VERSUS"), 0);
+		func_220(joaat("MPPLY_UNIQUE_MISSIONS"), 0);
+		func_220(joaat("MPPLY_UNIQUE_HEIST_PLANNING"), 0);
+		func_220(joaat("MPPLY_UNIQUE_HEIST_FINALE"), 0);
+		func_220(joaat("MPPLY_AVAILABLE_RACES"), 0);
+		func_220(joaat("MPPLY_AVAILABLE_DMS"), 0);
+		func_220(joaat("MPPLY_AVAILABLE_PARAS"), 0);
+		func_220(joaat("MPPLY_AVAILABLE_SURVIVAL"), 0);
+		func_220(joaat("MPPLY_AVAILABLE_LTS"), 0);
+		func_220(joaat("MPPLY_AVAILABLE_CTF"), 0);
+		func_220(joaat("MPPLY_AVAILABLE_VERSUS"), 0);
+		func_220(joaat("MPPLY_AVAILABLE_MISSIONS"), 0);
+		func_220(joaat("MPPLY_AVAILABLE_HEIST_PLAN"), 0);
+		func_220(joaat("MPPLY_AVAILABLE_HEIST_FINALE"), 0);
+		func_220(joaat("MPPLY_UNIQUE_CONTACT_0"), 0);
+		func_220(joaat("MPPLY_UNIQUE_CONTACT_1"), 0);
+		func_220(joaat("MPPLY_UNIQUE_CONTACT_2"), 0);
+		func_220(joaat("MPPLY_UNIQUE_CONTACT_3"), 0);
+		func_220(joaat("MPPLY_UNIQUE_CONTACT_4"), 0);
+		func_220(joaat("MPPLY_UNIQUE_CONTACT_5"), 0);
+		func_220(joaat("MPPLY_UNIQUE_CONTACT_6"), 0);
+		func_220(joaat("MPPLY_TOTAL_CONTACT_0"), 0);
+		func_220(joaat("MPPLY_TOTAL_CONTACT_1"), 0);
+		func_220(joaat("MPPLY_TOTAL_CONTACT_2"), 0);
+		func_220(joaat("MPPLY_TOTAL_CONTACT_3"), 0);
+		func_220(joaat("MPPLY_TOTAL_CONTACT_4"), 0);
+		func_220(joaat("MPPLY_TOTAL_CONTACT_5"), 0);
+		func_220(joaat("MPPLY_TOTAL_CONTACT_6"), 0);
 	}
 	else
 	{
-		func_220(joaat("mpply_unique_races_v"), 0);
-		func_220(joaat("mpply_unique_dms_v"), 0);
-		func_220(joaat("mpply_unique_paras_v"), 0);
-		func_220(joaat("mpply_unique_survival_v"), 0);
-		func_220(joaat("mpply_unique_ctf_v"), 0);
-		func_220(joaat("mpply_unique_lts_v"), 0);
-		func_220(joaat("mpply_unique_versus_v"), 0);
-		func_220(joaat("mpply_unique_missions_v"), 0);
-		func_220(joaat("mpply_unique_heist_planning_v"), 0);
-		func_220(joaat("mpply_unique_heist_finale_v"), 0);
-		func_220(joaat("mpply_available_races_v"), 0);
-		func_220(joaat("mpply_available_dms_v"), 0);
-		func_220(joaat("mpply_available_paras_v"), 0);
-		func_220(joaat("mpply_available_survival_v"), 0);
-		func_220(joaat("mpply_available_lts_v"), 0);
-		func_220(joaat("mpply_available_ctf_v"), 0);
-		func_220(joaat("mpply_available_versus_v"), 0);
-		func_220(joaat("mpply_available_missions_v"), 0);
-		func_220(joaat("mpply_available_heist_planv"), 0);
-		func_220(joaat("mpply_available_heist_finale_v"), 0);
+		func_220(joaat("MPPLY_UNIQUE_RACES_V"), 0);
+		func_220(joaat("MPPLY_UNIQUE_DMS_V"), 0);
+		func_220(joaat("MPPLY_UNIQUE_PARAS_V"), 0);
+		func_220(joaat("MPPLY_UNIQUE_SURVIVAL_V"), 0);
+		func_220(joaat("MPPLY_UNIQUE_CTF_V"), 0);
+		func_220(joaat("MPPLY_UNIQUE_LTS_V"), 0);
+		func_220(joaat("MPPLY_UNIQUE_VERSUS_V"), 0);
+		func_220(joaat("MPPLY_UNIQUE_MISSIONS_V"), 0);
+		func_220(joaat("MPPLY_UNIQUE_HEIST_PLANNING_V"), 0);
+		func_220(joaat("MPPLY_UNIQUE_HEIST_FINALE_V"), 0);
+		func_220(joaat("MPPLY_AVAILABLE_RACES_V"), 0);
+		func_220(joaat("MPPLY_AVAILABLE_DMS_V"), 0);
+		func_220(joaat("MPPLY_AVAILABLE_PARAS_V"), 0);
+		func_220(joaat("MPPLY_AVAILABLE_SURVIVAL_V"), 0);
+		func_220(joaat("MPPLY_AVAILABLE_LTS_V"), 0);
+		func_220(joaat("MPPLY_AVAILABLE_CTF_V"), 0);
+		func_220(joaat("MPPLY_AVAILABLE_VERSUS_V"), 0);
+		func_220(joaat("MPPLY_AVAILABLE_MISSIONS_V"), 0);
+		func_220(joaat("MPPLY_AVAILABLE_HEIST_PLANV"), 0);
+		func_220(joaat("MPPLY_AVAILABLE_HEIST_FINALE_V"), 0);
 	}
 }
 

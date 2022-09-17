@@ -72,7 +72,7 @@ void __EntryFunction__()//Position - 0x0
 	fLocal_32 = 180f;
 	iLocal_35 = 3;
 	iLocal_41 = joaat("blimp");
-	iLocal_44 = joaat("s_m_m_pilot_02");
+	iLocal_44 = joaat("S_M_M_Pilot_02");
 	iLocal_46 = joaat("buzzard");
 	if (CAM::IS_SCREEN_FADED_OUT())
 	{

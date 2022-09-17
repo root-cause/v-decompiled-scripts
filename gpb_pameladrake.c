@@ -583,7 +583,7 @@ void __EntryFunction__()//Position - 0x0
 		}
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((((PLAYER::IS_PLAYER_FREE_AIMING_AT_ENTITY(PLAYER::PLAYER_ID(), iLocal_208) || PLAYER::IS_PLAYER_TARGETTING_ENTITY(PLAYER::PLAYER_ID(), iLocal_208)) && fVar12 < 25f) && func_88(PLAYER::PLAYER_PED_ID()) != joaat("weapon_unarmed")) && func_85(iLocal_208, PLAYER::PLAYER_PED_ID(), 1126825984, 0))
+			if ((((PLAYER::IS_PLAYER_FREE_AIMING_AT_ENTITY(PLAYER::PLAYER_ID(), iLocal_208) || PLAYER::IS_PLAYER_TARGETTING_ENTITY(PLAYER::PLAYER_ID(), iLocal_208)) && fVar12 < 25f) && func_88(PLAYER::PLAYER_PED_ID()) != joaat("WEAPON_UNARMED")) && func_85(iLocal_208, PLAYER::PLAYER_PED_ID(), 1126825984, 0))
 			{
 				if (!func_89())
 				{
@@ -1822,7 +1822,7 @@ int func_34(char* sParam0, int iParam1, bool bParam2)//Position - 0x1C9A
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -2019,7 +2019,7 @@ int func_43()//Position - 0x211F
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}
@@ -3090,12 +3090,12 @@ void func_104()//Position - 0x32B0
 	{
 		return;
 	}
-	STREAMING::REQUEST_MODEL(joaat("a_m_m_business_01"));
-	while (!STREAMING::HAS_MODEL_LOADED(joaat("a_m_m_business_01")))
+	STREAMING::REQUEST_MODEL(joaat("A_M_M_Business_01"));
+	while (!STREAMING::HAS_MODEL_LOADED(joaat("A_M_M_Business_01")))
 	{
 		SYSTEM::WAIT(0);
 	}
-	iLocal_277 = PED::CREATE_PED(4, joaat("a_m_m_business_01"), 396.8498f, 143.3195f, 101.4659f, 360f, true, true);
+	iLocal_277 = PED::CREATE_PED(4, joaat("A_M_M_Business_01"), 396.8498f, 143.3195f, 101.4659f, 360f, true, true);
 	if ((ENTITY::DOES_ENTITY_EXIST(iLocal_277) && !ENTITY::IS_ENTITY_DEAD(iLocal_277, false)) && !ENTITY::IS_ENTITY_DEAD(iLocal_208, false))
 	{
 		PED::SET_IK_TARGET(iLocal_277, 1, iLocal_208, 0, 0f, 0f, 0f, 0, -1, -1);
@@ -3108,7 +3108,7 @@ void func_104()//Position - 0x32B0
 
 void func_105()//Position - 0x3362
 {
-	iLocal_36 = joaat("u_f_o_moviestar");
+	iLocal_36 = joaat("U_F_O_MovieStar");
 	StringCopy(&Local_204, "PBPD", 8);
 	StringCopy(&Local_205, "PAMELADRAKE", 16);
 	StringCopy(&Local_202, "Special_Ped@pamela", 64);

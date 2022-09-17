@@ -2035,15 +2035,15 @@ int func_34(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//Po
 				iVar9 = 0;
 				switch (iVar6[iVar7])
 				{
-					case joaat("player_zero"):
+					case joaat("Player_Zero"):
 						iVar9 = Global_97919[0];
 						break;
 					
-					case joaat("player_one"):
+					case joaat("Player_One"):
 						iVar9 = Global_97919[1];
 						break;
 					
-					case joaat("player_two"):
+					case joaat("Player_Two"):
 						iVar9 = Global_97919[2];
 						break;
 				}
@@ -2059,15 +2059,15 @@ int func_34(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//Po
 				}
 				switch (iVar6[iVar7])
 				{
-					case joaat("player_zero"):
+					case joaat("Player_Zero"):
 						iVar9 = Global_100366[0];
 						break;
 					
-					case joaat("player_one"):
+					case joaat("Player_One"):
 						iVar9 = Global_100366[1];
 						break;
 					
-					case joaat("player_two"):
+					case joaat("Player_Two"):
 						iVar9 = Global_100366[2];
 						break;
 				}

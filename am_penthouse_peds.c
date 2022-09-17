@@ -1006,7 +1006,7 @@ void func_18(var uParam0)//Position - 0x1037
 {
 	ENTITY::SET_ENTITY_CAN_BE_DAMAGED(*uParam0, false);
 	PED::SET_PED_AS_ENEMY(*uParam0, false);
-	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("weapon_unarmed"), true);
+	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("WEAPON_UNARMED"), true);
 	PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(*uParam0, true);
 	PED::SET_PED_RESET_FLAG(*uParam0, 249, true);
 	PED::SET_PED_CONFIG_FLAG(*uParam0, 185, true);
@@ -1025,92 +1025,92 @@ int func_19(var uParam0)//Position - 0x10BD
 	switch (uParam0->f_2)
 	{
 		case 0:
-			return joaat("a_f_y_smartcaspat_01");
+			return joaat("A_F_Y_SmartCasPat_01");
 		
 		case 1:
-			return joaat("a_f_y_clubcust_01");
+			return joaat("A_F_Y_ClubCust_01");
 		
 		case 2:
-			return joaat("a_f_y_clubcust_03");
+			return joaat("A_F_Y_ClubCust_03");
 		
 		case 3:
-			return joaat("a_f_y_genhot_01");
+			return joaat("A_F_Y_GenHot_01");
 		
 		case 4:
-			return joaat("a_f_y_bevhills_02");
+			return joaat("A_F_Y_BevHills_02");
 		
 		case 5:
-			return joaat("a_m_y_smartcaspat_01");
+			return joaat("A_M_Y_SmartCasPat_01");
 		
 		case 6:
-			return joaat("a_m_y_carclub_01");
+			return joaat("A_M_Y_CarClub_01");
 		
 		case 7:
-			return joaat("g_m_y_ballaorig_01");
+			return joaat("G_M_Y_BallaOrig_01");
 		
 		case 8:
-			return joaat("a_m_m_soucent_01");
+			return joaat("A_M_M_SouCent_01");
 		
 		case 9:
-			return joaat("g_m_y_famfor_01");
+			return joaat("G_M_Y_FamFor_01");
 		
 		case 10:
-			return joaat("a_m_y_clubcust_01");
+			return joaat("A_M_Y_ClubCust_01");
 		
 		case 11:
-			return joaat("a_m_y_clubcust_02");
+			return joaat("A_M_Y_ClubCust_02");
 		
 		case 12:
-			return joaat("a_m_y_studioparty_01");
+			return joaat("A_M_Y_StudioParty_01");
 		
 		case 13:
-			return joaat("g_m_y_ballasout_01");
+			return joaat("G_M_Y_BallaSout_01");
 		
 		case 14:
-			return joaat("g_m_y_famca_01");
+			return joaat("G_M_Y_FamCA_01");
 		
 		case 15:
-			return joaat("g_m_y_famdnf_01");
+			return joaat("G_M_Y_FamDNF_01");
 		
 		case 16:
-			return joaat("g_m_y_mexgoon_03");
+			return joaat("G_M_Y_MexGoon_03");
 		
 		case 17:
-			return joaat("a_m_m_studioparty_01");
+			return joaat("A_M_M_StudioParty_01");
 		
 		case 18:
-			return joaat("a_m_y_soucent_02");
+			return joaat("A_M_Y_SouCent_02");
 		
 		case 19:
-			return joaat("a_m_y_vinewood_01");
+			return joaat("A_M_Y_Vinewood_01");
 		
 		case 20:
-			return joaat("a_m_y_vinewood_02");
+			return joaat("A_M_Y_Vinewood_02");
 		
 		case 21:
-			return joaat("a_m_y_eastsa_02");
+			return joaat("A_M_Y_EastSA_02");
 		
 		case 22:
-			return joaat("a_m_y_indian_01");
+			return joaat("A_M_Y_Indian_01");
 		
 		case 23:
-			return joaat("a_f_y_carclub_01");
+			return joaat("A_F_Y_CarClub_01");
 		
 		case 24:
-			return joaat("a_f_y_studioparty_01");
+			return joaat("A_F_Y_StudioParty_01");
 		
 		case 25:
-			return joaat("g_f_y_ballas_01");
+			return joaat("G_F_Y_ballas_01");
 		
 		case 26:
-			return joaat("a_f_y_studioparty_02");
+			return joaat("A_F_Y_StudioParty_02");
 		
 		case 27:
-			return joaat("g_f_y_vagos_01");
+			return joaat("G_F_Y_Vagos_01");
 		
 		default:
 	}
-	return joaat("a_f_y_smartcaspat_01");
+	return joaat("A_F_Y_SmartCasPat_01");
 }
 
 int func_20(var uParam0)//Position - 0x125A

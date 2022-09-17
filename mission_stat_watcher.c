@@ -329,21 +329,21 @@ void __EntryFunction__()//Position - 0x0
 								switch (iVar6)
 								{
 									case 90:
-										STATS::STAT_SET_INT(joaat("hcs_penalty_jewel_funeral"), iVar10, true);
+										STATS::STAT_SET_INT(joaat("HCS_PENALTY_JEWEL_FUNERAL"), iVar10, true);
 										break;
 									
 									case 93:
-										STATS::STAT_SET_INT(joaat("hcs_penalty_paleto_funeral"), iVar10, true);
+										STATS::STAT_SET_INT(joaat("HCS_PENALTY_PALETO_FUNERAL"), iVar10, true);
 										break;
 									
 									case 69:
 									case 70:
-										STATS::STAT_SET_INT(joaat("hcs_penalty_bureau_funeral"), iVar10, true);
+										STATS::STAT_SET_INT(joaat("HCS_PENALTY_BUREAU_FUNERAL"), iVar10, true);
 										break;
 									
 									case 84:
 									case 85:
-										STATS::STAT_SET_INT(joaat("hcs_penalty_bigs_funeral"), iVar10, true);
+										STATS::STAT_SET_INT(joaat("HCS_PENALTY_BIGS_FUNERAL"), iVar10, true);
 										break;
 									}
 							}
@@ -621,12 +621,12 @@ void func_5()//Position - 0xA26
 void func_6()//Position - 0xA32
 {
 	Global_63173 = 0;
-	Global_63177 = func_7(joaat("sp0_shots"));
-	Global_63176 = func_7(joaat("sp0_hits"));
-	Global_63179 = func_7(joaat("sp1_shots"));
-	Global_63178 = func_7(joaat("sp1_hits"));
-	Global_63181 = func_7(joaat("sp2_shots"));
-	Global_63180 = func_7(joaat("sp2_hits"));
+	Global_63177 = func_7(joaat("SP0_SHOTS"));
+	Global_63176 = func_7(joaat("SP0_HITS"));
+	Global_63179 = func_7(joaat("SP1_SHOTS"));
+	Global_63178 = func_7(joaat("SP1_HITS"));
+	Global_63181 = func_7(joaat("SP2_SHOTS"));
+	Global_63180 = func_7(joaat("SP2_HITS"));
 }
 
 int func_7(int iParam0)//Position - 0xA86
@@ -7935,7 +7935,7 @@ void func_98(int iParam0)//Position - 0xD824
 	switch (iParam0)
 	{
 		case 0:
-			STATS::STAT_SET_INT(joaat("jewel_heist_raw_take"), Global_113386.f_1.f_126[iParam0 /*23*/], true);
+			STATS::STAT_SET_INT(joaat("JEWEL_HEIST_RAW_TAKE"), Global_113386.f_1.f_126[iParam0 /*23*/], true);
 			break;
 	}
 	iVar7 = 0;
@@ -8085,41 +8085,41 @@ void func_100(int iParam0, int iParam1, int iParam2)//Position - 0xE1CF
 			switch (iParam0)
 			{
 				case 0:
-					STATS::STAT_SET_INT(joaat("hcs_penalty_jewel_drop_money"), iParam2, true);
+					STATS::STAT_SET_INT(joaat("HCS_PENALTY_JEWEL_DROP_MONEY"), iParam2, true);
 					break;
 				
 				case 2:
-					STATS::STAT_SET_INT(joaat("hcs_penalty_paleto_drop_money"), iParam2, true);
+					STATS::STAT_SET_INT(joaat("HCS_PENALTY_PALETO_DROP_MONEY"), iParam2, true);
 					break;
 				
 				case 4:
-					STATS::STAT_SET_INT(joaat("hcs_penalty_bigs_drop_money"), iParam2, true);
+					STATS::STAT_SET_INT(joaat("HCS_PENALTY_BIGS_DROP_MONEY"), iParam2, true);
 					break;
 			}
 			break;
 		
 		case 1:
-			STATS::STAT_SET_INT(joaat("hcs_penalty_jewel_drop_money"), iParam2, true);
+			STATS::STAT_SET_INT(joaat("HCS_PENALTY_JEWEL_DROP_MONEY"), iParam2, true);
 			break;
 		
 		case 2:
-			STATS::STAT_SET_INT(joaat("hcs_penalty_jewel_madr_house"), iParam2, true);
+			STATS::STAT_SET_INT(joaat("HCS_PENALTY_JEWEL_MADR_HOUSE"), iParam2, true);
 			break;
 		
 		case 4:
-			STATS::STAT_SET_INT(joaat("hcs_penalty_docks_unsell_wpn"), iParam2, true);
+			STATS::STAT_SET_INT(joaat("HCS_PENALTY_DOCKS_UNSELL_WPN"), iParam2, true);
 			break;
 		
 		case 3:
-			STATS::STAT_SET_INT(joaat("hcs_penalty_paleto_agent_cut"), iParam2, true);
+			STATS::STAT_SET_INT(joaat("HCS_PENALTY_PALETO_AGENT_CUT"), iParam2, true);
 			break;
 		
 		case 5:
-			STATS::STAT_SET_INT(joaat("hcs_penalty_bigs_slow_loading"), iParam2, true);
+			STATS::STAT_SET_INT(joaat("HCS_PENALTY_BIGS_SLOW_LOADING"), iParam2, true);
 			break;
 		
 		case 6:
-			STATS::STAT_SET_INT(joaat("hcs_penalty_bigs_hostage_gift"), iParam2, true);
+			STATS::STAT_SET_INT(joaat("HCS_PENALTY_BIGS_HOSTAGE_GIFT"), iParam2, true);
 			break;
 	}
 	Global_96671[iParam0 /*38*/].f_25[Global_96671[iParam0 /*38*/].f_37] = iParam1;
@@ -8187,12 +8187,12 @@ void func_103()//Position - 0xE456
 	Global_63173 = 1;
 	iVar0 = 0;
 	iVar1 = 0;
-	iVar0 = (func_7(joaat("sp0_shots")) - Global_63177);
-	iVar1 = (func_7(joaat("sp0_hits")) - Global_63176);
-	iVar0 = (iVar0 + (func_7(joaat("sp1_shots")) - Global_63179));
-	iVar1 = (iVar1 + (func_7(joaat("sp1_hits")) - Global_63178));
-	iVar0 = (iVar0 + (func_7(joaat("sp2_shots")) - Global_63181));
-	iVar1 = (iVar1 + (func_7(joaat("sp2_hits")) - Global_63180));
+	iVar0 = (func_7(joaat("SP0_SHOTS")) - Global_63177);
+	iVar1 = (func_7(joaat("SP0_HITS")) - Global_63176);
+	iVar0 = (iVar0 + (func_7(joaat("SP1_SHOTS")) - Global_63179));
+	iVar1 = (iVar1 + (func_7(joaat("SP1_HITS")) - Global_63178));
+	iVar0 = (iVar0 + (func_7(joaat("SP2_SHOTS")) - Global_63181));
+	iVar1 = (iVar1 + (func_7(joaat("SP2_HITS")) - Global_63180));
 	SYSTEM::WAIT(0);
 	fVar2 = 100f;
 	if (!iVar0 == 0)
@@ -8535,7 +8535,7 @@ void func_108()//Position - 0xE98C
 										PED::GET_PED_LAST_DAMAGE_BONE(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(Global_63184[iVar11 /*2*/]), &iLocal_67);
 										if (iLocal_67 == 31086 || iLocal_67 == 39317)
 										{
-											if (iVar6 != 0 && iVar6 != joaat("weapon_unarmed"))
+											if (iVar6 != 0 && iVar6 != joaat("WEAPON_UNARMED"))
 											{
 												func_111();
 												Global_63184[iVar11 /*2*/] = 0;

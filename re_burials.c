@@ -641,18 +641,18 @@ void __EntryFunction__()//Position - 0x0
 								{
 									if (ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), Local_113, 200f, 200f, 200f, true, true, 0))
 									{
-										STREAMING::REQUEST_MODEL(joaat("s_m_m_highsec_01"));
+										STREAMING::REQUEST_MODEL(joaat("S_M_M_HighSec_01"));
 										STREAMING::REQUEST_MODEL(joaat("granger"));
-										if (STREAMING::HAS_MODEL_LOADED(joaat("s_m_m_highsec_01")) && STREAMING::HAS_MODEL_LOADED(joaat("granger")))
+										if (STREAMING::HAS_MODEL_LOADED(joaat("S_M_M_HighSec_01")) && STREAMING::HAS_MODEL_LOADED(joaat("granger")))
 										{
 											iLocal_55 = VEHICLE::CREATE_VEHICLE(joaat("granger"), -1155.043f, 942.9685f, 197.4921f, 161.1247f, true, true, false);
 											ENTITY::SET_ENTITY_LOD_DIST(iLocal_55, 200);
 											VEHICLE::SET_VEHICLE_LOD_MULTIPLIER(iLocal_55, 1.5f);
-											iLocal_53 = PED::CREATE_PED_INSIDE_VEHICLE(iLocal_55, 26, joaat("s_m_m_highsec_01"), -1, true, true);
+											iLocal_53 = PED::CREATE_PED_INSIDE_VEHICLE(iLocal_55, 26, joaat("S_M_M_HighSec_01"), -1, true, true);
 											PED::SET_PED_COMPONENT_VARIATION(iLocal_53, 0, 0, 2, 0);
 											PED::SET_PED_COMPONENT_VARIATION(iLocal_53, 3, 0, 0, 0);
 											PED::SET_PED_COMPONENT_VARIATION(iLocal_53, 4, 0, 0, 0);
-											WEAPON::GIVE_WEAPON_TO_PED(iLocal_53, joaat("weapon_pistol"), -1, true, true);
+											WEAPON::GIVE_WEAPON_TO_PED(iLocal_53, joaat("WEAPON_PISTOL"), -1, true, true);
 											PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_53, iLocal_137);
 										}
 									}
@@ -1319,15 +1319,15 @@ void func_18(int iParam0, var uParam1, var uParam2)//Position - 0x1436
 		Global_113386.f_10194[iParam0 /*12*/].f_11 = uParam2;
 		if (iParam0 == 287)
 		{
-			STATS::PRESENCE_EVENT_UPDATESTAT_INT(joaat("num_hidden_packages_0"), 50, 0);
+			STATS::PRESENCE_EVENT_UPDATESTAT_INT(joaat("NUM_HIDDEN_PACKAGES_0"), 50, 0);
 		}
 		if (iParam0 == 286)
 		{
-			STATS::PRESENCE_EVENT_UPDATESTAT_INT(joaat("num_hidden_packages_1"), 50, 0);
+			STATS::PRESENCE_EVENT_UPDATESTAT_INT(joaat("NUM_HIDDEN_PACKAGES_1"), 50, 0);
 		}
 		if (iParam0 == 299)
 		{
-			STATS::PRESENCE_EVENT_UPDATESTAT_INT(joaat("num_hidden_packages_3"), 50, 0);
+			STATS::PRESENCE_EVENT_UPDATESTAT_INT(joaat("NUM_HIDDEN_PACKAGES_3"), 50, 0);
 		}
 	}
 	if (bVar0)
@@ -1449,7 +1449,7 @@ void func_19()//Position - 0x151C
 			{
 				if (Global_113126 == Global_113109)
 				{
-					STATS::PRESENCE_EVENT_UPDATESTAT_INT(joaat("num_rndevents_completed"), Global_113109, 0);
+					STATS::PRESENCE_EVENT_UPDATESTAT_INT(joaat("NUM_RNDEVENTS_COMPLETED"), Global_113109, 0);
 					MISC::SET_BIT(&(Global_113386.f_10194.f_3856), 14);
 				}
 			}
@@ -1479,26 +1479,26 @@ void func_19()//Position - 0x151C
 	{
 		iVar9 = Global_113126;
 	}
-	STATS::STAT_SET_INT(joaat("num_missions_completed"), Global_113122, true);
-	STATS::STAT_SET_INT(joaat("num_missions_available"), Global_113105, true);
-	STATS::STAT_SET_INT(joaat("num_minigames_completed"), Global_113123, true);
-	STATS::STAT_SET_INT(joaat("num_minigames_available"), Global_113106, true);
-	STATS::STAT_SET_INT(joaat("num_oddjobs_completed"), Global_113124, true);
-	STATS::STAT_SET_INT(joaat("num_oddjobs_available"), Global_113107, true);
-	STATS::STAT_SET_INT(joaat("num_rndpeople_completed"), Global_113125, true);
-	STATS::STAT_SET_INT(joaat("num_rndpeople_available"), Global_113108, true);
-	STATS::STAT_SET_INT(joaat("num_rndevents_completed"), iVar9, true);
-	STATS::STAT_SET_INT(joaat("num_rndevents_available"), Global_113112, true);
-	STATS::STAT_SET_INT(joaat("num_misc_completed"), (Global_113128 + Global_113127), true);
-	STATS::STAT_SET_INT(joaat("num_misc_available"), (Global_113111 + Global_113110), true);
+	STATS::STAT_SET_INT(joaat("NUM_MISSIONS_COMPLETED"), Global_113122, true);
+	STATS::STAT_SET_INT(joaat("NUM_MISSIONS_AVAILABLE"), Global_113105, true);
+	STATS::STAT_SET_INT(joaat("NUM_MINIGAMES_COMPLETED"), Global_113123, true);
+	STATS::STAT_SET_INT(joaat("NUM_MINIGAMES_AVAILABLE"), Global_113106, true);
+	STATS::STAT_SET_INT(joaat("NUM_ODDJOBS_COMPLETED"), Global_113124, true);
+	STATS::STAT_SET_INT(joaat("NUM_ODDJOBS_AVAILABLE"), Global_113107, true);
+	STATS::STAT_SET_INT(joaat("NUM_RNDPEOPLE_COMPLETED"), Global_113125, true);
+	STATS::STAT_SET_INT(joaat("NUM_RNDPEOPLE_AVAILABLE"), Global_113108, true);
+	STATS::STAT_SET_INT(joaat("NUM_RNDEVENTS_COMPLETED"), iVar9, true);
+	STATS::STAT_SET_INT(joaat("NUM_RNDEVENTS_AVAILABLE"), Global_113112, true);
+	STATS::STAT_SET_INT(joaat("NUM_MISC_COMPLETED"), (Global_113128 + Global_113127), true);
+	STATS::STAT_SET_INT(joaat("NUM_MISC_AVAILABLE"), (Global_113111 + Global_113110), true);
 	Global_113129 = (Global_113122 * 100 / Global_113105);
 	Global_113131 = ((Global_113124 + Global_113123) * 100 / (Global_113107 + Global_113106));
 	Global_113130 = ((Global_113125 + iVar9) * 100 / (Global_113108 + Global_113112));
 	Global_113132 = ((Global_113127 + Global_113128) * 100 / (Global_113110 + Global_113111));
-	STATS::STAT_SET_FLOAT(joaat("total_progress_made"), Global_113386.f_10194.f_3853, true);
-	STATS::STAT_SET_INT(joaat("percent_story_missions"), Global_113129, true);
-	STATS::STAT_SET_INT(joaat("percent_ambient_missions"), Global_113130, true);
-	STATS::STAT_SET_INT(joaat("percent_oddjobs"), Global_113131, true);
+	STATS::STAT_SET_FLOAT(joaat("TOTAL_PROGRESS_MADE"), Global_113386.f_10194.f_3853, true);
+	STATS::STAT_SET_INT(joaat("PERCENT_STORY_MISSIONS"), Global_113129, true);
+	STATS::STAT_SET_INT(joaat("PERCENT_AMBIENT_MISSIONS"), Global_113130, true);
+	STATS::STAT_SET_INT(joaat("PERCENT_ODDJOBS"), Global_113131, true);
 	if (fVar8 > 0f && SYSTEM::FLOOR(fVar8) < SYSTEM::FLOOR(Global_113386.f_10194.f_3853))
 	{
 		func_21(13, SYSTEM::FLOOR(Global_113386.f_10194.f_3853));
@@ -3580,7 +3580,7 @@ int func_72(char* sParam0, int iParam1, bool bParam2)//Position - 0x3DD6
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -3777,7 +3777,7 @@ int func_81()//Position - 0x425D
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}
@@ -4873,7 +4873,7 @@ void func_114()//Position - 0x57DA
 					TASK::CLOSE_SEQUENCE_TASK(iLocal_59);
 					TASK::TASK_PERFORM_SEQUENCE(iLocal_52[0], iLocal_59);
 					TASK::CLEAR_SEQUENCE_TASK(&iLocal_59);
-					WEAPON::SET_CURRENT_PED_WEAPON(iLocal_52[1], joaat("weapon_sawnoffshotgun"), true);
+					WEAPON::SET_CURRENT_PED_WEAPON(iLocal_52[1], joaat("WEAPON_SAWNOFFSHOTGUN"), true);
 					TASK::CLEAR_PED_TASKS(iLocal_52[1]);
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_59);
 					TASK::TASK_LOOK_AT_ENTITY(0, PLAYER::PLAYER_PED_ID(), -1, 2048, 2);
@@ -5723,7 +5723,7 @@ int func_132()//Position - 0x6A72
 				return 1;
 			}
 		}
-		if (((((((((MISC::IS_PROJECTILE_TYPE_IN_ANGLED_AREA(194.3872f, 6833.941f, 62.4419f, 131.3547f, 6845.673f, 15.4613f, 36.9375f, joaat("weapon_smokegrenade"), true) || MISC::IS_PROJECTILE_TYPE_IN_ANGLED_AREA(194.3872f, 6833.941f, 62.4419f, 131.3547f, 6845.673f, 15.4613f, 36.9375f, joaat("weapon_grenade"), true)) || MISC::IS_PROJECTILE_TYPE_IN_ANGLED_AREA(194.3872f, 6833.941f, 62.4419f, 131.3547f, 6845.673f, 15.4613f, 36.9375f, joaat("weapon_stickybomb"), true)) || MISC::IS_PROJECTILE_TYPE_IN_ANGLED_AREA(194.3872f, 6833.941f, 62.4419f, 131.3547f, 6845.673f, 15.4613f, 36.9375f, joaat("weapon_grenadelauncher"), true)) || MISC::IS_PROJECTILE_TYPE_IN_ANGLED_AREA(194.3872f, 6833.941f, 62.4419f, 131.3547f, 6845.673f, 15.4613f, 36.9375f, joaat("weapon_grenadelauncher_smoke"), true)) || MISC::IS_PROJECTILE_TYPE_IN_ANGLED_AREA(194.3872f, 6833.941f, 62.4419f, 131.3547f, 6845.673f, 15.4613f, 36.9375f, joaat("weapon_rpg"), true)) || MISC::IS_PROJECTILE_TYPE_IN_ANGLED_AREA(194.3872f, 6833.941f, 62.4419f, 131.3547f, 6845.673f, 15.4613f, 36.9375f, joaat("weapon_molotov"), true)) || FIRE::IS_EXPLOSION_IN_AREA(2, Local_74 - Vector(100f, 100f, 100f), Local_74 + Vector(100f, 100f, 100f))) || FIRE::IS_EXPLOSION_IN_AREA(4, Local_74 - Vector(100f, 100f, 100f), Local_74 + Vector(100f, 100f, 100f))) || FIRE::IS_EXPLOSION_IN_AREA(0, Local_74 - Vector(100f, 100f, 100f), Local_74 + Vector(100f, 100f, 100f)))
+		if (((((((((MISC::IS_PROJECTILE_TYPE_IN_ANGLED_AREA(194.3872f, 6833.941f, 62.4419f, 131.3547f, 6845.673f, 15.4613f, 36.9375f, joaat("WEAPON_SMOKEGRENADE"), true) || MISC::IS_PROJECTILE_TYPE_IN_ANGLED_AREA(194.3872f, 6833.941f, 62.4419f, 131.3547f, 6845.673f, 15.4613f, 36.9375f, joaat("WEAPON_GRENADE"), true)) || MISC::IS_PROJECTILE_TYPE_IN_ANGLED_AREA(194.3872f, 6833.941f, 62.4419f, 131.3547f, 6845.673f, 15.4613f, 36.9375f, joaat("WEAPON_STICKYBOMB"), true)) || MISC::IS_PROJECTILE_TYPE_IN_ANGLED_AREA(194.3872f, 6833.941f, 62.4419f, 131.3547f, 6845.673f, 15.4613f, 36.9375f, joaat("WEAPON_GRENADELAUNCHER"), true)) || MISC::IS_PROJECTILE_TYPE_IN_ANGLED_AREA(194.3872f, 6833.941f, 62.4419f, 131.3547f, 6845.673f, 15.4613f, 36.9375f, joaat("WEAPON_GRENADELAUNCHER_SMOKE"), true)) || MISC::IS_PROJECTILE_TYPE_IN_ANGLED_AREA(194.3872f, 6833.941f, 62.4419f, 131.3547f, 6845.673f, 15.4613f, 36.9375f, joaat("WEAPON_RPG"), true)) || MISC::IS_PROJECTILE_TYPE_IN_ANGLED_AREA(194.3872f, 6833.941f, 62.4419f, 131.3547f, 6845.673f, 15.4613f, 36.9375f, joaat("WEAPON_MOLOTOV"), true)) || FIRE::IS_EXPLOSION_IN_AREA(2, Local_74 - Vector(100f, 100f, 100f), Local_74 + Vector(100f, 100f, 100f))) || FIRE::IS_EXPLOSION_IN_AREA(4, Local_74 - Vector(100f, 100f, 100f), Local_74 + Vector(100f, 100f, 100f))) || FIRE::IS_EXPLOSION_IN_AREA(0, Local_74 - Vector(100f, 100f, 100f), Local_74 + Vector(100f, 100f, 100f)))
 		{
 			iLocal_49 = 1;
 			return 1;
@@ -5783,7 +5783,7 @@ int func_132()//Position - 0x6A72
 		}
 		if (!PED::IS_PED_INJURED(iLocal_51))
 		{
-			if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(iLocal_51, PLAYER::PLAYER_PED_ID(), false) || WEAPON::HAS_ENTITY_BEEN_DAMAGED_BY_WEAPON(iLocal_51, joaat("weapon_stungun"), 0))
+			if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(iLocal_51, PLAYER::PLAYER_PED_ID(), false) || WEAPON::HAS_ENTITY_BEEN_DAMAGED_BY_WEAPON(iLocal_51, joaat("WEAPON_STUNGUN"), 0))
 			{
 				iLocal_49 = 4;
 				return 1;
@@ -6041,8 +6041,8 @@ void func_140()//Position - 0x7201
 	PED::SET_PED_SHOOT_RATE(iLocal_52[1], 100);
 	PED::SET_PED_FIRING_PATTERN(iLocal_52[1], joaat("FIRING_PATTERN_BURST_FIRE"));
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_136, joaat("PLAYER"));
-	WEAPON::GIVE_WEAPON_TO_PED(iLocal_52[0], joaat("weapon_pistol"), -1, false, true);
-	WEAPON::GIVE_WEAPON_TO_PED(iLocal_52[1], joaat("weapon_sawnoffshotgun"), -1, false, true);
+	WEAPON::GIVE_WEAPON_TO_PED(iLocal_52[0], joaat("WEAPON_PISTOL"), -1, false, true);
+	WEAPON::GIVE_WEAPON_TO_PED(iLocal_52[1], joaat("WEAPON_SAWNOFFSHOTGUN"), -1, false, true);
 	iLocal_54 = VEHICLE::CREATE_VEHICLE(iLocal_83, Local_74, fLocal_79, true, true, false);
 	VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(iLocal_54, 5f);
 	VEHICLE::SET_VEHICLE_LIGHTS(iLocal_54, 3);
@@ -6581,9 +6581,9 @@ void func_151()//Position - 0x7DB2
 
 void func_152()//Position - 0x7EC9
 {
-	iLocal_80 = joaat("u_f_y_mistress");
-	iLocal_81 = joaat("a_m_m_salton_01");
-	iLocal_82 = joaat("a_m_m_salton_01");
+	iLocal_80 = joaat("U_F_Y_Mistress");
+	iLocal_81 = joaat("A_M_M_Salton_01");
+	iLocal_82 = joaat("A_M_M_Salton_01");
 	iLocal_83 = joaat("bison");
 	Local_72 = { 163.4486f, 6839.993f, 18.86f };
 	fLocal_77 = 0f;
@@ -8591,14 +8591,14 @@ int func_211()//Position - 0xB1E8
 		{
 			if (NETWORK::_NETWORK_GET_ROS_PRIVILEGE_24())
 			{
-				STATS::STAT_GET_INT(joaat("sp_unlock_exclus_content"), &iVar0, -1);
+				STATS::STAT_GET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), &iVar0, -1);
 				MISC::SET_BIT(&iVar0, 2);
 				MISC::SET_BIT(&iVar0, 4);
 				MISC::SET_BIT(&iVar0, 6);
 				MISC::SET_BIT(&Global_25, 2);
 				MISC::SET_BIT(&Global_25, 4);
 				MISC::SET_BIT(&Global_25, 6);
-				STATS::STAT_SET_INT(joaat("sp_unlock_exclus_content"), iVar0, true);
+				STATS::STAT_SET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), iVar0, true);
 				if (MISC::ARE_PROFILE_SETTINGS_VALID())
 				{
 					iVar0 = MISC::GET_PROFILE_SETTING(866);

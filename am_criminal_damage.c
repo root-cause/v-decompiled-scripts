@@ -3918,33 +3918,33 @@ void func_99(char* sParam0, var uParam1, bool bParam2, int iParam3, int iParam4,
 			break;
 		
 		case 1:
-			if (iParam3 == joaat("mp_m_freemode_01"))
+			if (iParam3 == joaat("MP_M_Freemode_01"))
 			{
 				*uParam1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(*uParam1) * Global_295754.f_22));
 			}
-			else if (iParam3 == joaat("mp_f_freemode_01"))
+			else if (iParam3 == joaat("MP_F_Freemode_01"))
 			{
 				*uParam1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(*uParam1) * Global_295754.f_29));
 			}
 			break;
 		
 		case 4:
-			if (iParam3 == joaat("mp_m_freemode_01"))
+			if (iParam3 == joaat("MP_M_Freemode_01"))
 			{
 				*uParam1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(*uParam1) * Global_295754.f_15));
 			}
-			else if (iParam3 == joaat("mp_f_freemode_01"))
+			else if (iParam3 == joaat("MP_F_Freemode_01"))
 			{
 				*uParam1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(*uParam1) * Global_295754.f_23));
 			}
 			break;
 		
 		case 6:
-			if (iParam3 == joaat("mp_m_freemode_01"))
+			if (iParam3 == joaat("MP_M_Freemode_01"))
 			{
 				*uParam1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(*uParam1) * Global_295754.f_17));
 			}
-			else if (iParam3 == joaat("mp_f_freemode_01"))
+			else if (iParam3 == joaat("MP_F_Freemode_01"))
 			{
 				*uParam1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(*uParam1) * Global_295754.f_25));
 			}
@@ -3952,22 +3952,22 @@ void func_99(char* sParam0, var uParam1, bool bParam2, int iParam3, int iParam4,
 		
 		case 11:
 		case 8:
-			if (iParam3 == joaat("mp_m_freemode_01"))
+			if (iParam3 == joaat("MP_M_Freemode_01"))
 			{
 				*uParam1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(*uParam1) * Global_295754.f_16));
 			}
-			else if (iParam3 == joaat("mp_f_freemode_01"))
+			else if (iParam3 == joaat("MP_F_Freemode_01"))
 			{
 				*uParam1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(*uParam1) * Global_295754.f_24));
 			}
 			break;
 		
 		case 7:
-			if (iParam3 == joaat("mp_m_freemode_01"))
+			if (iParam3 == joaat("MP_M_Freemode_01"))
 			{
 				*uParam1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(*uParam1) * Global_295754.f_57));
 			}
-			else if (iParam3 == joaat("mp_f_freemode_01"))
+			else if (iParam3 == joaat("MP_F_Freemode_01"))
 			{
 				*uParam1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(*uParam1) * Global_295754.f_58));
 			}
@@ -3977,11 +3977,11 @@ void func_99(char* sParam0, var uParam1, bool bParam2, int iParam3, int iParam4,
 			switch (iParam6)
 			{
 				case 1:
-					if (iParam3 == joaat("mp_m_freemode_01"))
+					if (iParam3 == joaat("MP_M_Freemode_01"))
 					{
 						*uParam1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(*uParam1) * Global_295754.f_20));
 					}
-					else if (iParam3 == joaat("mp_f_freemode_01"))
+					else if (iParam3 == joaat("MP_F_Freemode_01"))
 					{
 						*uParam1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(*uParam1) * Global_295754.f_56));
 					}
@@ -3990,22 +3990,22 @@ void func_99(char* sParam0, var uParam1, bool bParam2, int iParam3, int iParam4,
 				case 0:
 					if (func_105(iParam3, iParam5, iParam4, -1))
 					{
-						if (iParam3 == joaat("mp_m_freemode_01"))
+						if (iParam3 == joaat("MP_M_Freemode_01"))
 						{
 							*uParam1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(*uParam1) * Global_295754.f_19));
 						}
-						else if (iParam3 == joaat("mp_f_freemode_01"))
+						else if (iParam3 == joaat("MP_F_Freemode_01"))
 						{
 							*uParam1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(*uParam1) * Global_295754.f_27));
 						}
 					}
 					else if (func_100(iParam3, iParam5, iParam4, -1))
 					{
-						if (iParam3 == joaat("mp_m_freemode_01"))
+						if (iParam3 == joaat("MP_M_Freemode_01"))
 						{
 							*uParam1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(*uParam1) * Global_295754.f_18));
 						}
-						else if (iParam3 == joaat("mp_f_freemode_01"))
+						else if (iParam3 == joaat("MP_F_Freemode_01"))
 						{
 							*uParam1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(*uParam1) * Global_295754.f_26));
 						}
@@ -4013,11 +4013,11 @@ void func_99(char* sParam0, var uParam1, bool bParam2, int iParam3, int iParam4,
 					break;
 				
 				case 6:
-					if (iParam3 == joaat("mp_m_freemode_01"))
+					if (iParam3 == joaat("MP_M_Freemode_01"))
 					{
 						*uParam1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(*uParam1) * Global_295754.f_21));
 					}
-					else if (iParam3 == joaat("mp_f_freemode_01"))
+					else if (iParam3 == joaat("MP_F_Freemode_01"))
 					{
 						*uParam1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(*uParam1) * Global_295754.f_28));
 					}
@@ -4032,7 +4032,7 @@ int func_100(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x2
 {
 	switch (iParam0)
 	{
-		case joaat("player_zero"):
+		case joaat("Player_Zero"):
 			switch (iParam1)
 			{
 				case 14:
@@ -4044,7 +4044,7 @@ int func_100(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x2
 			}
 			break;
 		
-		case joaat("player_one"):
+		case joaat("Player_One"):
 			switch (iParam1)
 			{
 				case 14:
@@ -4056,7 +4056,7 @@ int func_100(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x2
 			}
 			break;
 		
-		case joaat("player_two"):
+		case joaat("Player_Two"):
 			switch (iParam1)
 			{
 				case 14:
@@ -4068,7 +4068,7 @@ int func_100(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x2
 			}
 			break;
 		
-		case joaat("mp_m_freemode_01"):
+		case joaat("MP_M_Freemode_01"):
 			switch (iParam1)
 			{
 				case 14:
@@ -4103,7 +4103,7 @@ int func_100(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x2
 			}
 			break;
 		
-		case joaat("mp_f_freemode_01"):
+		case joaat("MP_F_Freemode_01"):
 			switch (iParam1)
 			{
 				case 14:
@@ -4202,7 +4202,7 @@ int func_102(int iParam0, int iParam1)//Position - 0x3325
 {
 	switch (iParam0)
 	{
-		case joaat("player_zero"):
+		case joaat("Player_Zero"):
 			switch (iParam1)
 			{
 				case 0:
@@ -4255,7 +4255,7 @@ int func_102(int iParam0, int iParam1)//Position - 0x3325
 			}
 			break;
 		
-		case joaat("player_one"):
+		case joaat("Player_One"):
 			switch (iParam1)
 			{
 				case 0:
@@ -4308,7 +4308,7 @@ int func_102(int iParam0, int iParam1)//Position - 0x3325
 			}
 			break;
 		
-		case joaat("player_two"):
+		case joaat("Player_Two"):
 			switch (iParam1)
 			{
 				case 0:
@@ -4363,7 +4363,7 @@ int func_102(int iParam0, int iParam1)//Position - 0x3325
 	}
 	switch (iParam0)
 	{
-		case joaat("mp_m_freemode_01"):
+		case joaat("MP_M_Freemode_01"):
 			switch (iParam1)
 			{
 				case 0:
@@ -4416,7 +4416,7 @@ int func_102(int iParam0, int iParam1)//Position - 0x3325
 			}
 			break;
 		
-		case joaat("mp_f_freemode_01"):
+		case joaat("MP_F_Freemode_01"):
 			switch (iParam1)
 			{
 				case 0:
@@ -4531,25 +4531,25 @@ int func_104(int iParam0)//Position - 0x377C
 {
 	switch (iParam0)
 	{
-		case joaat("player_zero"):
+		case joaat("Player_Zero"):
 			return 113;
 			break;
 		
-		case joaat("player_one"):
+		case joaat("Player_One"):
 			return 175;
 			break;
 		
-		case joaat("player_two"):
+		case joaat("Player_Two"):
 			return 155;
 			break;
 	}
 	switch (iParam0)
 	{
-		case joaat("mp_m_freemode_01"):
+		case joaat("MP_M_Freemode_01"):
 			return 327;
 			break;
 		
-		case joaat("mp_f_freemode_01"):
+		case joaat("MP_F_Freemode_01"):
 			return 327;
 			break;
 	}
@@ -4560,7 +4560,7 @@ int func_105(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x3
 {
 	switch (iParam0)
 	{
-		case joaat("mp_m_freemode_01"):
+		case joaat("MP_M_Freemode_01"):
 			switch (iParam1)
 			{
 				case 14:
@@ -4576,7 +4576,7 @@ int func_105(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x3
 			}
 			break;
 		
-		case joaat("mp_f_freemode_01"):
+		case joaat("MP_F_Freemode_01"):
 			switch (iParam1)
 			{
 				case 14:
@@ -29118,7 +29118,7 @@ void func_114(int iParam0, var uParam1, int iParam2)//Position - 0x22417
 					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_25176) * 1f));
 					break;
 				
-				case joaat("sc1_props_flyers14_lod"):
+				case joaat("CLO_BHF_U_19_0"):
 					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_25244) * 1f));
 					break;
 				
@@ -39319,7 +39319,7 @@ void func_122(int iParam0, var uParam1, int iParam2)//Position - 0x34131
 					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20945) * 1f));
 					break;
 				
-				case joaat("amb_creature_mammal@world_pig_eat_carcass@base"):
+				case joaat("CLO_GRM_B_5_2"):
 					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20946) * 1f));
 					break;
 				
@@ -69554,11 +69554,11 @@ void func_142(int iParam0, var uParam1)//Position - 0x6396A
 struct<14> func_143(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x63FF9
 {
 	func_195();
-	if (iParam0 == joaat("mp_m_freemode_01"))
+	if (iParam0 == joaat("MP_M_Freemode_01"))
 	{
 		func_179(iParam1, iParam2, iParam3);
 	}
-	else if (iParam0 == joaat("mp_f_freemode_01"))
+	else if (iParam0 == joaat("MP_F_Freemode_01"))
 	{
 		func_144(iParam1, iParam2, iParam3);
 	}
@@ -98828,11 +98828,11 @@ int func_200(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x7
 	iVar1 = FILES::GET_HASH_NAME_FOR_PROP(iParam0, iParam3, iParam1, iParam2);
 	if (iVar1 != -1 && iVar1 != 0)
 	{
-		if (iVar0 == joaat("mp_m_freemode_01"))
+		if (iVar0 == joaat("MP_M_Freemode_01"))
 		{
 			return func_202(ENTITY::GET_ENTITY_MODEL(iParam0), iVar1, 14, 3);
 		}
-		else if (iVar0 == joaat("mp_f_freemode_01"))
+		else if (iVar0 == joaat("MP_F_Freemode_01"))
 		{
 			return func_202(ENTITY::GET_ENTITY_MODEL(iParam0), iVar1, 14, 4);
 		}
@@ -98875,7 +98875,7 @@ int func_201(int iParam0, int iParam1)//Position - 0x7F529
 	iVar0 = ENTITY::GET_ENTITY_MODEL(iParam0);
 	switch (iVar0)
 	{
-		case joaat("player_zero"):
+		case joaat("Player_Zero"):
 			switch (iParam1)
 			{
 				case 0:
@@ -98892,7 +98892,7 @@ int func_201(int iParam0, int iParam1)//Position - 0x7F529
 			}
 			break;
 		
-		case joaat("player_one"):
+		case joaat("Player_One"):
 			switch (iParam1)
 			{
 				case 0:
@@ -98909,7 +98909,7 @@ int func_201(int iParam0, int iParam1)//Position - 0x7F529
 			}
 			break;
 		
-		case joaat("player_two"):
+		case joaat("Player_Two"):
 			switch (iParam1)
 			{
 				case 0:
@@ -98926,7 +98926,7 @@ int func_201(int iParam0, int iParam1)//Position - 0x7F529
 			}
 			break;
 		
-		case joaat("mp_m_freemode_01"):
+		case joaat("MP_M_Freemode_01"):
 			switch (iParam1)
 			{
 				case 0:
@@ -98943,7 +98943,7 @@ int func_201(int iParam0, int iParam1)//Position - 0x7F529
 			}
 			break;
 		
-		case joaat("mp_f_freemode_01"):
+		case joaat("MP_F_Freemode_01"):
 			switch (iParam1)
 			{
 				case 0:
@@ -99013,25 +99013,25 @@ int func_203(int iParam0)//Position - 0x7F722
 {
 	switch (iParam0)
 	{
-		case joaat("player_zero"):
+		case joaat("Player_Zero"):
 			return 53;
 			break;
 		
-		case joaat("player_one"):
+		case joaat("Player_One"):
 			return 47;
 			break;
 		
-		case joaat("player_two"):
+		case joaat("Player_Two"):
 			return 48;
 			break;
 	}
 	switch (iParam0)
 	{
-		case joaat("mp_m_freemode_01"):
+		case joaat("MP_M_Freemode_01"):
 			return 26;
 			break;
 		
-		case joaat("mp_f_freemode_01"):
+		case joaat("MP_F_Freemode_01"):
 			return 28;
 			break;
 	}
@@ -99296,7 +99296,7 @@ int func_206(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x7
 	
 	switch (iParam0)
 	{
-		case joaat("mp_f_freemode_01"):
+		case joaat("MP_F_Freemode_01"):
 			switch (iParam1)
 			{
 				case 4:
@@ -99343,7 +99343,7 @@ int func_207(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x7
 	
 	switch (iParam0)
 	{
-		case joaat("mp_f_freemode_01"):
+		case joaat("MP_F_Freemode_01"):
 			switch (iParam1)
 			{
 				case 4:
@@ -99383,7 +99383,7 @@ int func_208(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x7
 {
 	switch (iParam0)
 	{
-		case joaat("mp_f_freemode_01"):
+		case joaat("MP_F_Freemode_01"):
 			switch (iParam1)
 			{
 				case 11:
@@ -99443,7 +99443,7 @@ int func_209(int iParam0, int iParam1, int iParam2, int iParam3, var uParam4, va
 	{
 		return 1;
 	}
-	if (iParam0 == joaat("player_zero"))
+	if (iParam0 == joaat("Player_Zero"))
 	{
 		if (func_211(iParam0, iParam2, iParam3, -1))
 		{
@@ -99484,7 +99484,7 @@ int func_209(int iParam0, int iParam1, int iParam2, int iParam3, var uParam4, va
 			return 1;
 		}
 	}
-	else if (iParam0 == joaat("player_one"))
+	else if (iParam0 == joaat("Player_One"))
 	{
 		if (func_211(iParam0, iParam2, iParam3, -1))
 		{
@@ -99566,7 +99566,7 @@ int func_209(int iParam0, int iParam1, int iParam2, int iParam3, var uParam4, va
 			}
 		}
 	}
-	else if (iParam0 == joaat("player_two"))
+	else if (iParam0 == joaat("Player_Two"))
 	{
 		if (iParam1 == 2)
 		{
@@ -99619,7 +99619,7 @@ int func_209(int iParam0, int iParam1, int iParam2, int iParam3, var uParam4, va
 
 int func_210(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x8040A
 {
-	if (iParam0 == joaat("player_zero"))
+	if (iParam0 == joaat("Player_Zero"))
 	{
 		if (iParam1 == 6)
 		{
@@ -99650,7 +99650,7 @@ int func_210(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x8
 			}
 		}
 	}
-	else if (iParam0 == joaat("player_one"))
+	else if (iParam0 == joaat("Player_One"))
 	{
 		if (iParam1 == 2)
 		{
@@ -99681,7 +99681,7 @@ int func_210(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x8
 			}
 		}
 	}
-	else if (iParam0 == joaat("player_two"))
+	else if (iParam0 == joaat("Player_Two"))
 	{
 		if (iParam1 == 8)
 		{
@@ -99705,7 +99705,7 @@ int func_210(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x8
 			}
 		}
 	}
-	else if (iParam0 == joaat("mp_m_freemode_01"))
+	else if (iParam0 == joaat("MP_M_Freemode_01"))
 	{
 		if (iParam1 == 1)
 		{
@@ -99726,7 +99726,7 @@ int func_210(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x8
 			}
 		}
 	}
-	else if (iParam0 == joaat("mp_f_freemode_01"))
+	else if (iParam0 == joaat("MP_F_Freemode_01"))
 	{
 		if (iParam1 == 1)
 		{
@@ -99754,7 +99754,7 @@ int func_211(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x8
 {
 	switch (iParam0)
 	{
-		case joaat("player_zero"):
+		case joaat("Player_Zero"):
 			if (iParam1 == 14)
 			{
 				if ((((((((iParam2 == 58 || iParam2 == 61) || (iParam2 >= 62 && iParam2 <= 69)) || (iParam2 >= 70 && iParam2 <= 79)) || (iParam2 >= 80 && iParam2 <= 89)) || iParam2 == 90) || (iParam2 >= 91 && iParam2 <= 102)) || (iParam2 >= 103 && iParam2 <= 110)) || iParam2 == 111)
@@ -99764,7 +99764,7 @@ int func_211(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x8
 			}
 			break;
 		
-		case joaat("player_one"):
+		case joaat("Player_One"):
 			if (iParam1 == 14)
 			{
 				if (((((((((((iParam2 >= 83 && iParam2 <= 92) || iParam2 == 93) || iParam2 == 94) || (iParam2 >= 95 && iParam2 <= 101)) || (iParam2 >= 102 && iParam2 <= 111)) || (iParam2 >= 112 && iParam2 <= 121)) || (iParam2 >= 122 && iParam2 <= 131)) || (iParam2 >= 132 && iParam2 <= 139)) || (iParam2 >= 140 && iParam2 <= 149)) || (iParam2 >= 150 && iParam2 <= 156)) || iParam2 == 157)
@@ -99774,7 +99774,7 @@ int func_211(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x8
 			}
 			break;
 		
-		case joaat("player_two"):
+		case joaat("Player_Two"):
 			if (iParam1 == 14)
 			{
 				if (((((((((iParam2 == 89 || (iParam2 >= 90 && iParam2 <= 99)) || (iParam2 >= 100 && iParam2 <= 109)) || iParam2 == 111) || iParam2 == 112) || (iParam2 >= 113 && iParam2 <= 122)) || (iParam2 >= 123 && iParam2 <= 132)) || (iParam2 >= 133 && iParam2 <= 142)) || (iParam2 >= 143 && iParam2 <= 152)) || iParam2 == 153)
@@ -99784,7 +99784,7 @@ int func_211(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x8
 			}
 			break;
 		
-		case joaat("mp_m_freemode_01"):
+		case joaat("MP_M_Freemode_01"):
 			if (iParam1 == 14)
 			{
 				if (iParam2 >= 155 && iParam2 <= 318)
@@ -99802,7 +99802,7 @@ int func_211(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x8
 			}
 			break;
 		
-		case joaat("mp_f_freemode_01"):
+		case joaat("MP_F_Freemode_01"):
 			if (iParam1 == 14)
 			{
 				if (iParam2 >= 155 && iParam2 <= 318)
@@ -99827,7 +99827,7 @@ int func_212(int iParam0, int iParam1, int iParam2)//Position - 0x80B22
 {
 	switch (iParam0)
 	{
-		case joaat("player_zero"):
+		case joaat("Player_Zero"):
 			switch (iParam1)
 			{
 				case 8:
@@ -99846,7 +99846,7 @@ int func_212(int iParam0, int iParam1, int iParam2)//Position - 0x80B22
 			}
 			break;
 		
-		case joaat("player_one"):
+		case joaat("Player_One"):
 			switch (iParam1)
 			{
 				case 8:
@@ -99858,7 +99858,7 @@ int func_212(int iParam0, int iParam1, int iParam2)//Position - 0x80B22
 			}
 			break;
 		
-		case joaat("player_two"):
+		case joaat("Player_Two"):
 			switch (iParam1)
 			{
 				case 8:
@@ -99887,7 +99887,7 @@ struct<10> func_213(int iParam0, int iParam1)//Position - 0x80BBB
 	}
 	switch (iParam0)
 	{
-		case joaat("player_zero"):
+		case joaat("Player_Zero"):
 			switch (iParam1)
 			{
 				case 31:
@@ -99940,7 +99940,7 @@ struct<10> func_213(int iParam0, int iParam1)//Position - 0x80BBB
 			}
 			break;
 		
-		case joaat("player_one"):
+		case joaat("Player_One"):
 			switch (iParam1)
 			{
 				case 31:
@@ -99989,7 +99989,7 @@ struct<10> func_213(int iParam0, int iParam1)//Position - 0x80BBB
 			}
 			break;
 		
-		case joaat("player_two"):
+		case joaat("Player_Two"):
 			switch (iParam1)
 			{
 				case 31:
@@ -100038,7 +100038,7 @@ struct<10> func_213(int iParam0, int iParam1)//Position - 0x80BBB
 			}
 			break;
 		
-		case joaat("mp_m_freemode_01"):
+		case joaat("MP_M_Freemode_01"):
 			switch (iParam1)
 			{
 				case 31:
@@ -100151,7 +100151,7 @@ struct<10> func_213(int iParam0, int iParam1)//Position - 0x80BBB
 			}
 			break;
 		
-		case joaat("mp_f_freemode_01"):
+		case joaat("MP_F_Freemode_01"):
 			switch (iParam1)
 			{
 				case 31:
@@ -100282,23 +100282,23 @@ void func_214(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x
 		(*iParam0)[7] = 7;
 		(*iParam0)[8] = 8;
 		iVar0 = 0;
-		if (iParam1 == joaat("player_zero"))
+		if (iParam1 == joaat("Player_Zero"))
 		{
 			iVar0 = 0;
 		}
-		else if (iParam1 == joaat("player_one"))
+		else if (iParam1 == joaat("Player_One"))
 		{
 			iVar0 = 1;
 		}
-		else if (iParam1 == joaat("player_two"))
+		else if (iParam1 == joaat("Player_Two"))
 		{
 			iVar0 = 2;
 		}
-		else if (iParam1 == joaat("mp_m_freemode_01"))
+		else if (iParam1 == joaat("MP_M_Freemode_01"))
 		{
 			iVar0 = 3;
 		}
-		else if (iParam1 == joaat("mp_f_freemode_01"))
+		else if (iParam1 == joaat("MP_F_Freemode_01"))
 		{
 			iVar0 = 4;
 		}
@@ -100353,7 +100353,7 @@ struct<17> func_216(int iParam0, int iParam1)//Position - 0x8165C
 	Var1.f_16 = 0;
 	switch (iParam0)
 	{
-		case joaat("player_zero"):
+		case joaat("Player_Zero"):
 			switch (iParam1)
 			{
 				case 0:
@@ -100581,7 +100581,7 @@ struct<17> func_216(int iParam0, int iParam1)//Position - 0x8165C
 			}
 			break;
 		
-		case joaat("player_one"):
+		case joaat("Player_One"):
 			switch (iParam1)
 			{
 				case 0:
@@ -100778,7 +100778,7 @@ struct<17> func_216(int iParam0, int iParam1)//Position - 0x8165C
 			}
 			break;
 		
-		case joaat("player_two"):
+		case joaat("Player_Two"):
 			switch (iParam1)
 			{
 				case 0:
@@ -100979,7 +100979,7 @@ struct<17> func_216(int iParam0, int iParam1)//Position - 0x8165C
 			}
 			break;
 		
-		case joaat("mp_m_freemode_01"):
+		case joaat("MP_M_Freemode_01"):
 			switch (iParam1)
 			{
 				case 0:
@@ -101092,7 +101092,7 @@ struct<17> func_216(int iParam0, int iParam1)//Position - 0x8165C
 			}
 			break;
 		
-		case joaat("mp_f_freemode_01"):
+		case joaat("MP_F_Freemode_01"):
 			switch (iParam1)
 			{
 				case 0:
@@ -101240,26 +101240,26 @@ void func_217(var uParam0, int iParam1, int iParam2, int iParam3)//Position - 0x
 	(*uParam0)[14] = -99;
 	uParam0->f_16 = 0;
 	iVar0 = 0;
-	if (iParam1 == joaat("player_zero"))
+	if (iParam1 == joaat("Player_Zero"))
 	{
 		iVar0 = 0;
 		(*uParam0)[13] = (10 + (iParam2 - iParam3));
 	}
-	else if (iParam1 == joaat("player_one"))
+	else if (iParam1 == joaat("Player_One"))
 	{
 		iVar0 = 1;
 		(*uParam0)[13] = (9 + (iParam2 - iParam3));
 	}
-	else if (iParam1 == joaat("player_two"))
+	else if (iParam1 == joaat("Player_Two"))
 	{
 		iVar0 = 2;
 		(*uParam0)[13] = (9 + (iParam2 - iParam3));
 	}
-	else if (iParam1 == joaat("mp_m_freemode_01"))
+	else if (iParam1 == joaat("MP_M_Freemode_01"))
 	{
 		iVar0 = 3;
 	}
-	else if (iParam1 == joaat("mp_f_freemode_01"))
+	else if (iParam1 == joaat("MP_F_Freemode_01"))
 	{
 		iVar0 = 4;
 	}
@@ -102057,7 +102057,7 @@ void func_252(int iParam0)//Position - 0x843BE
 	if (func_283())
 	{
 		Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_205.f_5 = iParam0;
-		func_253(joaat("mpply_globalxp"), iParam0);
+		func_253(joaat("MPPLY_GLOBALXP"), iParam0);
 	}
 }
 
@@ -102080,7 +102080,7 @@ int func_254(bool bParam0)//Position - 0x84405
 		{
 			if (bParam0 == PLAYER::PLAYER_ID())
 			{
-				return func_255(joaat("mpply_globalxp"));
+				return func_255(joaat("MPPLY_GLOBALXP"));
 			}
 			else
 			{
@@ -102089,7 +102089,7 @@ int func_254(bool bParam0)//Position - 0x84405
 		}
 		else
 		{
-			return func_255(joaat("mpply_globalxp"));
+			return func_255(joaat("MPPLY_GLOBALXP"));
 		}
 	}
 	return 0;
@@ -102122,27 +102122,27 @@ void func_256(int iParam0)//Position - 0x84474
 			if (iVar1 == 0)
 			{
 				func_258(&Global_1659614, iParam0);
-				func_257(joaat("mpply_crew_local_xp_0"), Global_1659614);
+				func_257(joaat("MPPLY_CREW_LOCAL_XP_0"), Global_1659614);
 			}
 			else if (iVar1 == 1)
 			{
 				func_258(&Global_1659615, iParam0);
-				func_257(joaat("mpply_crew_local_xp_1"), Global_1659615);
+				func_257(joaat("MPPLY_CREW_LOCAL_XP_1"), Global_1659615);
 			}
 			else if (iVar1 == 2)
 			{
 				func_258(&Global_1659616, iParam0);
-				func_257(joaat("mpply_crew_local_xp_2"), Global_1659616);
+				func_257(joaat("MPPLY_CREW_LOCAL_XP_2"), Global_1659616);
 			}
 			else if (iVar1 == 3)
 			{
 				func_258(&Global_1659617, iParam0);
-				func_257(joaat("mpply_crew_local_xp_3"), Global_1659617);
+				func_257(joaat("MPPLY_CREW_LOCAL_XP_3"), Global_1659617);
 			}
 			else if (iVar1 == 4)
 			{
 				func_258(&Global_1659618, iParam0);
-				func_257(joaat("mpply_crew_local_xp_4"), Global_1659618);
+				func_257(joaat("MPPLY_CREW_LOCAL_XP_4"), Global_1659618);
 			}
 		}
 	}
@@ -102159,71 +102159,71 @@ void func_257(int iParam0, int iParam1)//Position - 0x84548
 	}
 	switch (iParam0)
 	{
-		case joaat("mpply_crew_0_id"):
+		case joaat("MPPLY_CREW_0_ID"):
 			Global_1659609 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_1_id"):
+		case joaat("MPPLY_CREW_1_ID"):
 			Global_1659611 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_2_id"):
+		case joaat("MPPLY_CREW_2_ID"):
 			Global_1659611 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_3_id"):
+		case joaat("MPPLY_CREW_3_ID"):
 			Global_1659612 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_4_id"):
+		case joaat("MPPLY_CREW_4_ID"):
 			Global_1659613 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_local_xp_0"):
+		case joaat("MPPLY_CREW_LOCAL_XP_0"):
 			Global_1659614 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_local_xp_1"):
+		case joaat("MPPLY_CREW_LOCAL_XP_1"):
 			Global_1659615 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_local_xp_2"):
+		case joaat("MPPLY_CREW_LOCAL_XP_2"):
 			Global_1659616 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_local_xp_3"):
+		case joaat("MPPLY_CREW_LOCAL_XP_3"):
 			Global_1659617 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_local_xp_4"):
+		case joaat("MPPLY_CREW_LOCAL_XP_4"):
 			Global_1659618 = iParam1;
 			break;
 		
-		case joaat("mpply_became_cheater_num"):
+		case joaat("MPPLY_BECAME_CHEATER_NUM"):
 			Global_1659619 = iParam1;
 			break;
 		
-		case joaat("mpply_friendly"):
+		case joaat("MPPLY_FRIENDLY"):
 			Global_1659620 = iParam1;
 			break;
 		
-		case joaat("mpply_offensive_language"):
+		case joaat("MPPLY_OFFENSIVE_LANGUAGE"):
 			Global_1659621 = iParam1;
 			break;
 		
-		case joaat("mpply_griefing"):
+		case joaat("MPPLY_GRIEFING"):
 			Global_1659622 = iParam1;
 			break;
 		
-		case joaat("mpply_helpful"):
+		case joaat("MPPLY_HELPFUL"):
 			Global_1659623 = iParam1;
 			break;
 		
-		case joaat("mpply_offensive_tagplate"):
+		case joaat("MPPLY_OFFENSIVE_TAGPLATE"):
 			Global_1659624 = iParam1;
 			break;
 		
-		case joaat("mpply_offensive_ugc"):
+		case joaat("MPPLY_OFFENSIVE_UGC"):
 			Global_1659625 = iParam1;
 			break;
 		
@@ -106430,7 +106430,7 @@ void func_417(bool bParam0)//Position - 0x89B84
 			if (func_10(PLAYER::PLAYER_ID(), 1, 1))
 			{
 				PED::SET_PED_CAN_BE_DRAGGED_OUT(PLAYER::PLAYER_PED_ID(), false);
-				WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("weapon_unarmed"), true);
+				WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"), true);
 				PED::SET_PED_CONFIG_FLAG(PLAYER::PLAYER_PED_ID(), 342, true);
 				PED::SET_PED_CONFIG_FLAG(PLAYER::PLAYER_PED_ID(), 122, true);
 				PLAYER::SET_PLAYER_VEHICLE_DEFENSE_MODIFIER(PLAYER::PLAYER_ID(), 0.5f);
@@ -106489,7 +106489,7 @@ int func_420(int iParam0)//Position - 0x89CC6
 		if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 		{
 			iVar1 = ENTITY::GET_ENTITY_MODEL(iVar0);
-			if (iVar1 == joaat("mp_m_freemode_01") || iVar1 == joaat("mp_f_freemode_01"))
+			if (iVar1 == joaat("MP_M_Freemode_01") || iVar1 == joaat("MP_F_Freemode_01"))
 			{
 				return 0;
 			}
@@ -112971,7 +112971,7 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				}
 				break;
 			
-			case joaat("CORSITA"):
+			case joaat("corsita"):
 				iVar1 = 1795000;
 				if (bVar0 && Global_262145.f_33530 >= 0)
 				{
@@ -112979,7 +112979,7 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				}
 				break;
 			
-			case joaat("DRAUGUR"):
+			case joaat("draugur"):
 				iVar1 = 1870000;
 				if (bVar0 && Global_262145.f_33532 >= 0)
 				{
@@ -112996,7 +112996,7 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				}
 				break;
 			
-			case joaat("GREENWOOD"):
+			case joaat("greenwood"):
 				iVar1 = 1465000;
 				if (bVar0 && Global_262145.f_33523 >= 0)
 				{
@@ -113013,7 +113013,7 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				}
 				break;
 			
-			case joaat("KANJOSJ"):
+			case joaat("kanjosj"):
 				iVar1 = 1370000;
 				if (bVar0 && Global_262145.f_33534 >= 0)
 				{
@@ -113030,7 +113030,7 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				}
 				break;
 			
-			case joaat("LM87"):
+			case joaat("lm87"):
 				iVar1 = 2915000;
 				if (bVar0 && Global_262145.f_33531 >= 0)
 				{
@@ -113038,7 +113038,7 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				}
 				break;
 			
-			case joaat("POSTLUDE"):
+			case joaat("postlude"):
 				iVar1 = 1310000;
 				if (bVar0 && Global_262145.f_33535 >= 0)
 				{
@@ -113055,7 +113055,7 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				}
 				break;
 			
-			case joaat("RHINEHART"):
+			case joaat("rhinehart"):
 				iVar1 = 1598000;
 				if (bVar0 && Global_262145.f_33529 >= 0)
 				{
@@ -113063,7 +113063,7 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				}
 				break;
 			
-			case joaat("SM722"):
+			case joaat("sm722"):
 				iVar1 = 2115000;
 				if (bVar0 && Global_262145.f_33524 >= 0)
 				{
@@ -113071,7 +113071,7 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				}
 				break;
 			
-			case joaat("TENF"):
+			case joaat("tenf"):
 				iVar1 = 1675000;
 				if (bVar0 && Global_262145.f_33528 >= 0)
 				{
@@ -113079,7 +113079,7 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				}
 				break;
 			
-			case joaat("TORERO2"):
+			case joaat("torero2"):
 				iVar1 = 2890000;
 				if (bVar0 && Global_262145.f_33527 >= 0)
 				{
@@ -113087,7 +113087,7 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				}
 				break;
 			
-			case joaat("VIGERO2"):
+			case joaat("vigero2"):
 				iVar1 = 1947000;
 				if (bVar0 && Global_262145.f_33526 >= 0)
 				{
@@ -113095,7 +113095,7 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				}
 				break;
 			
-			case joaat("RUINER4"):
+			case joaat("ruiner4"):
 				iVar1 = 1320000;
 				if (bVar0 && Global_262145.f_33525 >= 0)
 				{
@@ -113103,7 +113103,7 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				}
 				break;
 			
-			case joaat("CONADA"):
+			case joaat("conada"):
 				iVar1 = 2450000;
 				if (bVar0 && Global_262145.f_33533 >= 0)
 				{
@@ -113120,7 +113120,7 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				}
 				break;
 			
-			case joaat("OMNISEGT"):
+			case joaat("omnisegt"):
 				iVar1 = 1795000;
 				if (bVar0 && Global_262145.f_33522 >= 0)
 				{
@@ -113128,19 +113128,19 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				}
 				break;
 			
-			case joaat("WEEVIL2"):
+			case joaat("weevil2"):
 				iVar1 = (Global_262145.f_30804 + func_430(iParam1));
 				break;
 			
-			case joaat("TENF2"):
+			case joaat("tenf2"):
 				iVar1 = (Global_262145.f_33528 + func_430(iParam1));
 				break;
 			
-			case joaat("BRIOSO3"):
+			case joaat("brioso3"):
 				iVar1 = (Global_262145.f_30805 + func_430(iParam1));
 				break;
 			
-			case joaat("SENTINEL4"):
+			case joaat("sentinel4"):
 				iVar1 = (Global_262145.f_28505 + func_430(iParam1));
 				break;
 		}
@@ -115217,16 +115217,16 @@ int func_430(int iParam0)//Position - 0x9231D
 			return Global_262145.f_29362;
 			break;
 		
-		case joaat("TENF2"):
+		case joaat("tenf2"):
 			return Global_262145.f_32664;
 		
-		case joaat("WEEVIL2"):
+		case joaat("weevil2"):
 			return Global_262145.f_32665;
 		
-		case joaat("BRIOSO3"):
+		case joaat("brioso3"):
 			return Global_262145.f_32666;
 		
-		case joaat("SENTINEL4"):
+		case joaat("sentinel4"):
 			return Global_262145.f_32667;
 	}
 	return 0;
@@ -119657,7 +119657,7 @@ int func_614(int iParam0)//Position - 0x96EE1
 		if (!PED::IS_PED_INJURED(iParam0))
 		{
 			WEAPON::GET_CURRENT_PED_WEAPON(iParam0, &iVar0, true);
-			if (((iVar0 == joaat("weapon_sniperrifle") || iVar0 == joaat("weapon_heavysniper")) || iVar0 == joaat("weapon_marksmanrifle")) || iVar0 == joaat("weapon_heavysniper_mk2"))
+			if (((iVar0 == joaat("WEAPON_SNIPERRIFLE") || iVar0 == joaat("WEAPON_HEAVYSNIPER")) || iVar0 == joaat("WEAPON_MARKSMANRIFLE")) || iVar0 == joaat("WEAPON_HEAVYSNIPER_MK2"))
 			{
 				return 1;
 			}

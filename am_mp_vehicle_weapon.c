@@ -1840,11 +1840,11 @@ int func_53(int iParam0)//Position - 0x1F98
 	{
 		if (iParam0 == 0)
 		{
-			return joaat("vehicle_weapon_hacker_missile_homing");
+			return joaat("VEHICLE_WEAPON_HACKER_MISSILE_HOMING");
 		}
 		else
 		{
-			return joaat("vehicle_weapon_hacker_missile");
+			return joaat("VEHICLE_WEAPON_HACKER_MISSILE");
 		}
 	}
 	return 0;
@@ -4025,7 +4025,7 @@ int func_128(int iParam0)//Position - 0x497B
 		if (!PED::IS_PED_INJURED(iParam0))
 		{
 			WEAPON::GET_CURRENT_PED_WEAPON(iParam0, &iVar0, true);
-			if (((iVar0 == joaat("weapon_sniperrifle") || iVar0 == joaat("weapon_heavysniper")) || iVar0 == joaat("weapon_marksmanrifle")) || iVar0 == joaat("weapon_heavysniper_mk2"))
+			if (((iVar0 == joaat("WEAPON_SNIPERRIFLE") || iVar0 == joaat("WEAPON_HEAVYSNIPER")) || iVar0 == joaat("WEAPON_MARKSMANRIFLE")) || iVar0 == joaat("WEAPON_HEAVYSNIPER_MK2"))
 			{
 				return 1;
 			}
@@ -4640,7 +4640,7 @@ void func_144(bool bParam0, int iParam1, int iParam2)//Position - 0x534A
 			NETWORK::NETWORK_SET_IN_SPECTATOR_MODE(bParam0, iParam1);
 		}
 		HUD::SET_MINIMAP_IN_SPECTATOR_MODE(bParam0, iParam1);
-		func_145(joaat("mpply_is_char_spectating"), bParam0);
+		func_145(joaat("MPPLY_IS_CHAR_SPECTATING"), bParam0);
 	}
 }
 

@@ -804,7 +804,7 @@ int func_5(char* sParam0, int iParam1, bool bParam2)//Position - 0x736
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -1001,7 +1001,7 @@ int func_14()//Position - 0xBBD
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}
@@ -1237,7 +1237,7 @@ void func_22()//Position - 0xEDE
 							PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), false, 256);
 						}
 						iLocal_51 = 1;
-						WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("weapon_unarmed"), true);
+						WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"), true);
 						func_76(1, 1, 1, 0, 0, 0, 0);
 						GRAPHICS::ENABLE_MOVIE_SUBTITLES(true);
 						PAD::INIT_PC_SCRIPTED_CONTROLS("SOFA ACTIVITY");
@@ -1394,9 +1394,9 @@ void func_22()//Position - 0xEDE
 			{
 				if (!iLocal_320)
 				{
-					if (STATS::STAT_GET_INT(joaat("num_sh_tv_watched"), &iLocal_329, -1))
+					if (STATS::STAT_GET_INT(joaat("NUM_SH_TV_WATCHED"), &iLocal_329, -1))
 					{
-						STATS::STAT_SET_INT(joaat("num_sh_tv_watched"), iLocal_329 + 1, true);
+						STATS::STAT_SET_INT(joaat("NUM_SH_TV_WATCHED"), iLocal_329 + 1, true);
 						iLocal_320 = 1;
 					}
 				}
@@ -1900,9 +1900,9 @@ void func_22()//Position - 0xEDE
 			{
 				CAM::STOP_RENDERING_SCRIPT_CAMS_USING_CATCH_UP(false, 0f, 3, 0);
 			}
-			if (STATS::STAT_GET_INT(joaat("num_sh_sofa_used"), &iLocal_330, -1))
+			if (STATS::STAT_GET_INT(joaat("NUM_SH_SOFA_USED"), &iLocal_330, -1))
 			{
-				STATS::STAT_SET_INT(joaat("num_sh_sofa_used"), iLocal_330 + 1, true);
+				STATS::STAT_SET_INT(joaat("NUM_SH_SOFA_USED"), iLocal_330 + 1, true);
 			}
 			PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0);
 			iLocal_51 = 0;
@@ -3106,9 +3106,9 @@ void func_65()//Position - 0x3603
 			iLocal_310 = 1;
 			iLocal_305 = 1;
 		}
-		if (STATS::STAT_GET_INT(joaat("num_sh_sofa_smoked"), &iLocal_328, -1))
+		if (STATS::STAT_GET_INT(joaat("NUM_SH_SOFA_SMOKED"), &iLocal_328, -1))
 		{
-			STATS::STAT_SET_INT(joaat("num_sh_sofa_smoked"), iLocal_328 + 1, true);
+			STATS::STAT_SET_INT(joaat("NUM_SH_SOFA_SMOKED"), iLocal_328 + 1, true);
 		}
 		iLocal_304 = 10;
 	}
@@ -3924,7 +3924,7 @@ int func_93()//Position - 0x4887
 		{
 			if (bLocal_50)
 			{
-				if (ENTITY::GET_ENTITY_MODEL(uVar2[iVar1]) == joaat("player_zero"))
+				if (ENTITY::GET_ENTITY_MODEL(uVar2[iVar1]) == joaat("Player_Zero"))
 				{
 					if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), ENTITY::GET_ENTITY_COORDS(uVar2[iVar1], true), true) < 3f)
 					{
@@ -3934,7 +3934,7 @@ int func_93()//Position - 0x4887
 			}
 			if (!bLocal_50 && !bLocal_49)
 			{
-				if (ENTITY::GET_ENTITY_MODEL(uVar2[iVar1]) == joaat("player_one"))
+				if (ENTITY::GET_ENTITY_MODEL(uVar2[iVar1]) == joaat("Player_One"))
 				{
 					if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), ENTITY::GET_ENTITY_COORDS(uVar2[iVar1], true), true) < 3f)
 					{

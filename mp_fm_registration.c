@@ -43,9 +43,9 @@ void __EntryFunction__()//Position - 0x0
 	Global_1888844 = 1;
 	Global_1920752 = 1;
 	Global_1920753 = -1;
-	Global_1920756 = joaat("s_m_y_blackops_01");
+	Global_1920756 = joaat("S_M_Y_BlackOps_01");
 	Global_1920757 = joaat("patriot");
-	Global_1920758 = joaat("weapon_microsmg");
+	Global_1920758 = joaat("WEAPON_MICROSMG");
 	Global_1922007 = 1f;
 	Global_1922031 = -1;
 	Global_1922042 = -1;
@@ -57,7 +57,7 @@ void __EntryFunction__()//Position - 0x0
 	Global_1931387 = { 1204.21f, -3107.252f, 4.5502f };
 	Global_1931391 = { 718.0308f, -976.4414f, 23.9148f };
 	Global_1940662 = 1;
-	Global_1941596 = joaat("weapon_vehicle_rocket");
+	Global_1941596 = joaat("WEAPON_VEHICLE_ROCKET");
 	Global_1945912 = -1;
 	Global_1945913 = -3;
 	Global_1945919 = -1;

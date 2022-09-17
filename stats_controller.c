@@ -365,17 +365,17 @@ void func_2()//Position - 0xD7
 						{
 							if (iLocal_58 == 0)
 							{
-								STATS::STAT_GET_INT(joaat("sp0_total_playing_time"), &iVar10, -1);
+								STATS::STAT_GET_INT(joaat("SP0_TOTAL_PLAYING_TIME"), &iVar10, -1);
 								STATS::STAT_SET_INT(iVar9, iVar10, true);
 							}
 							else if (iLocal_58 == 1)
 							{
-								STATS::STAT_GET_INT(joaat("sp1_total_playing_time"), &iVar10, -1);
+								STATS::STAT_GET_INT(joaat("SP1_TOTAL_PLAYING_TIME"), &iVar10, -1);
 								STATS::STAT_SET_INT(iVar9, iVar10, true);
 							}
 							else if (iLocal_58 == 2)
 							{
-								STATS::STAT_GET_INT(joaat("sp2_total_playing_time"), &iVar10, -1);
+								STATS::STAT_GET_INT(joaat("SP2_TOTAL_PLAYING_TIME"), &iVar10, -1);
 								STATS::STAT_SET_INT(iVar9, iVar10, true);
 							}
 							else if (iLocal_58 == 3)
@@ -418,42 +418,42 @@ void func_2()//Position - 0xD7
 
 bool func_3(int iParam0, int iParam1, var uParam2)//Position - 0x5CD
 {
-	*uParam2 = joaat("last_playing_time");
+	*uParam2 = joaat("LAST_PLAYING_TIME");
 	switch (iParam0)
 	{
 		case 0:
 			switch (iParam1)
 			{
 				case 0:
-					*uParam2 = joaat("sp0_special_ability_maxed");
+					*uParam2 = joaat("SP0_SPECIAL_ABILITY_MAXED");
 					break;
 				
 				case 1:
-					*uParam2 = joaat("sp0_stamina_maxed");
+					*uParam2 = joaat("SP0_STAMINA_MAXED");
 					break;
 				
 				case 3:
-					*uParam2 = joaat("sp0_lung_capacity_maxed");
+					*uParam2 = joaat("SP0_LUNG_CAPACITY_MAXED");
 					break;
 				
 				case 2:
-					*uParam2 = joaat("sp0_strength_maxed");
+					*uParam2 = joaat("SP0_STRENGTH_MAXED");
 					break;
 				
 				case 4:
-					*uParam2 = joaat("sp0_wheelie_ability_maxed");
+					*uParam2 = joaat("SP0_WHEELIE_ABILITY_MAXED");
 					break;
 				
 				case 5:
-					*uParam2 = joaat("sp0_flying_ability_maxed");
+					*uParam2 = joaat("SP0_FLYING_ABILITY_MAXED");
 					break;
 				
 				case 6:
-					*uParam2 = joaat("sp0_shooting_ability_maxed");
+					*uParam2 = joaat("SP0_SHOOTING_ABILITY_MAXED");
 					break;
 				
 				case 7:
-					*uParam2 = joaat("sp0_stealth_ability_maxed");
+					*uParam2 = joaat("SP0_STEALTH_ABILITY_MAXED");
 					break;
 			}
 			break;
@@ -462,35 +462,35 @@ bool func_3(int iParam0, int iParam1, var uParam2)//Position - 0x5CD
 			switch (iParam1)
 			{
 				case 0:
-					*uParam2 = joaat("sp1_special_ability_maxed");
+					*uParam2 = joaat("SP1_SPECIAL_ABILITY_MAXED");
 					break;
 				
 				case 1:
-					*uParam2 = joaat("sp1_stamina_maxed");
+					*uParam2 = joaat("SP1_STAMINA_MAXED");
 					break;
 				
 				case 3:
-					*uParam2 = joaat("sp1_lung_capacity_maxed");
+					*uParam2 = joaat("SP1_LUNG_CAPACITY_MAXED");
 					break;
 				
 				case 2:
-					*uParam2 = joaat("sp1_strength_maxed");
+					*uParam2 = joaat("SP1_STRENGTH_MAXED");
 					break;
 				
 				case 4:
-					*uParam2 = joaat("sp1_wheelie_ability_maxed");
+					*uParam2 = joaat("SP1_WHEELIE_ABILITY_MAXED");
 					break;
 				
 				case 5:
-					*uParam2 = joaat("sp1_flying_ability_maxed");
+					*uParam2 = joaat("SP1_FLYING_ABILITY_MAXED");
 					break;
 				
 				case 6:
-					*uParam2 = joaat("sp1_shooting_ability_maxed");
+					*uParam2 = joaat("SP1_SHOOTING_ABILITY_MAXED");
 					break;
 				
 				case 7:
-					*uParam2 = joaat("sp1_stealth_ability_maxed");
+					*uParam2 = joaat("SP1_STEALTH_ABILITY_MAXED");
 					break;
 			}
 			break;
@@ -499,40 +499,40 @@ bool func_3(int iParam0, int iParam1, var uParam2)//Position - 0x5CD
 			switch (iParam1)
 			{
 				case 0:
-					*uParam2 = joaat("sp2_special_ability_maxed");
+					*uParam2 = joaat("SP2_SPECIAL_ABILITY_MAXED");
 					break;
 				
 				case 1:
-					*uParam2 = joaat("sp2_stamina_maxed");
+					*uParam2 = joaat("SP2_STAMINA_MAXED");
 					break;
 				
 				case 3:
-					*uParam2 = joaat("sp2_lung_capacity_maxed");
+					*uParam2 = joaat("SP2_LUNG_CAPACITY_MAXED");
 					break;
 				
 				case 2:
-					*uParam2 = joaat("sp2_strength_maxed");
+					*uParam2 = joaat("SP2_STRENGTH_MAXED");
 					break;
 				
 				case 4:
-					*uParam2 = joaat("sp2_wheelie_ability_maxed");
+					*uParam2 = joaat("SP2_WHEELIE_ABILITY_MAXED");
 					break;
 				
 				case 5:
-					*uParam2 = joaat("sp2_flying_ability_maxed");
+					*uParam2 = joaat("SP2_FLYING_ABILITY_MAXED");
 					break;
 				
 				case 6:
-					*uParam2 = joaat("sp2_shooting_ability_maxed");
+					*uParam2 = joaat("SP2_SHOOTING_ABILITY_MAXED");
 					break;
 				
 				case 7:
-					*uParam2 = joaat("sp2_stealth_ability_maxed");
+					*uParam2 = joaat("SP2_STEALTH_ABILITY_MAXED");
 					break;
 			}
 			break;
 	}
-	return *uParam2 != joaat("last_playing_time");
+	return *uParam2 != joaat("LAST_PLAYING_TIME");
 }
 
 void func_4(int iParam0, bool bParam1, int iParam2, bool bParam3)//Position - 0x7B5
@@ -710,7 +710,7 @@ int func_9()//Position - 0x84B
 	}
 	if (CAM::IS_FIRST_PERSON_AIM_CAM_ACTIVE())
 	{
-		if (func_26(PLAYER::PLAYER_PED_ID()) == joaat("weapon_sniperrifle") || func_26(PLAYER::PLAYER_PED_ID()) == joaat("weapon_heavysniper"))
+		if (func_26(PLAYER::PLAYER_PED_ID()) == joaat("WEAPON_SNIPERRIFLE") || func_26(PLAYER::PLAYER_PED_ID()) == joaat("WEAPON_HEAVYSNIPER"))
 		{
 			return 0;
 		}
@@ -1232,14 +1232,14 @@ int func_40()//Position - 0x10D2
 		{
 			if (NETWORK::_NETWORK_GET_ROS_PRIVILEGE_24())
 			{
-				STATS::STAT_GET_INT(joaat("sp_unlock_exclus_content"), &iVar0, -1);
+				STATS::STAT_GET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), &iVar0, -1);
 				MISC::SET_BIT(&iVar0, 2);
 				MISC::SET_BIT(&iVar0, 4);
 				MISC::SET_BIT(&iVar0, 6);
 				MISC::SET_BIT(&Global_25, 2);
 				MISC::SET_BIT(&Global_25, 4);
 				MISC::SET_BIT(&Global_25, 6);
-				STATS::STAT_SET_INT(joaat("sp_unlock_exclus_content"), iVar0, true);
+				STATS::STAT_SET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), iVar0, true);
 				if (MISC::ARE_PROFILE_SETTINGS_VALID())
 				{
 					iVar0 = MISC::GET_PROFILE_SETTING(866);
@@ -1713,17 +1713,17 @@ int func_57(int iParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x1
 		case 0:
 			if (iParam0 == 0)
 			{
-				STATS::STAT_GET_INT(joaat("sp0_special_ability_unlocked"), &iVar3, -1);
+				STATS::STAT_GET_INT(joaat("SP0_SPECIAL_ABILITY_UNLOCKED"), &iVar3, -1);
 				fVar0 = SYSTEM::TO_FLOAT(iVar3);
 			}
 			else if (iParam0 == 1)
 			{
-				STATS::STAT_GET_INT(joaat("sp1_special_ability_unlocked"), &iVar3, -1);
+				STATS::STAT_GET_INT(joaat("SP1_SPECIAL_ABILITY_UNLOCKED"), &iVar3, -1);
 				fVar0 = SYSTEM::TO_FLOAT(iVar3);
 			}
 			else if (iParam0 == 2)
 			{
-				STATS::STAT_GET_INT(joaat("sp2_special_ability_unlocked"), &iVar3, -1);
+				STATS::STAT_GET_INT(joaat("SP2_SPECIAL_ABILITY_UNLOCKED"), &iVar3, -1);
 				fVar0 = SYSTEM::TO_FLOAT(iVar3);
 			}
 			else if (iParam0 == 3)
@@ -1735,17 +1735,17 @@ int func_57(int iParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x1
 		case 1:
 			if (iParam0 == 0)
 			{
-				STATS::STAT_GET_FLOAT(joaat("sp0_dist_running"), &fVar1, -1);
+				STATS::STAT_GET_FLOAT(joaat("SP0_DIST_RUNNING"), &fVar1, -1);
 				fVar0 = ((fVar1 - Global_113386.f_2363.f_539.f_2355[iParam0]) / 175f);
 			}
 			else if (iParam0 == 1)
 			{
-				STATS::STAT_GET_FLOAT(joaat("sp1_dist_running"), &fVar1, -1);
+				STATS::STAT_GET_FLOAT(joaat("SP1_DIST_RUNNING"), &fVar1, -1);
 				fVar0 = ((fVar1 - Global_113386.f_2363.f_539.f_2355[iParam0]) / 175f);
 			}
 			else if (iParam0 == 2)
 			{
-				STATS::STAT_GET_FLOAT(joaat("sp2_dist_running"), &fVar1, -1);
+				STATS::STAT_GET_FLOAT(joaat("SP2_DIST_RUNNING"), &fVar1, -1);
 				fVar0 = ((fVar1 - Global_113386.f_2363.f_539.f_2355[iParam0]) / 175f);
 			}
 			else if (iParam0 == 3)
@@ -1755,15 +1755,15 @@ int func_57(int iParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x1
 			}
 			if (iParam0 == 0)
 			{
-				fVar0 = (fVar0 + SYSTEM::TO_FLOAT(func_64(joaat("sp0_time_swimming"))));
+				fVar0 = (fVar0 + SYSTEM::TO_FLOAT(func_64(joaat("SP0_TIME_SWIMMING"))));
 			}
 			else if (iParam0 == 1)
 			{
-				fVar0 = (fVar0 + SYSTEM::TO_FLOAT(func_64(joaat("sp1_time_swimming"))));
+				fVar0 = (fVar0 + SYSTEM::TO_FLOAT(func_64(joaat("SP1_TIME_SWIMMING"))));
 			}
 			else if (iParam0 == 2)
 			{
-				fVar0 = (fVar0 + SYSTEM::TO_FLOAT(func_64(joaat("sp2_time_swimming"))));
+				fVar0 = (fVar0 + SYSTEM::TO_FLOAT(func_64(joaat("SP2_TIME_SWIMMING"))));
 			}
 			else if (iParam0 == 3)
 			{
@@ -1772,15 +1772,15 @@ int func_57(int iParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x1
 			}
 			if (iParam0 == 0)
 			{
-				fVar0 = (fVar0 + SYSTEM::TO_FLOAT(func_64(joaat("sp0_time_driving_bicycle"))));
+				fVar0 = (fVar0 + SYSTEM::TO_FLOAT(func_64(joaat("SP0_TIME_DRIVING_BICYCLE"))));
 			}
 			else if (iParam0 == 1)
 			{
-				fVar0 = (fVar0 + SYSTEM::TO_FLOAT(func_64(joaat("sp1_time_driving_bicycle"))));
+				fVar0 = (fVar0 + SYSTEM::TO_FLOAT(func_64(joaat("SP1_TIME_DRIVING_BICYCLE"))));
 			}
 			else if (iParam0 == 2)
 			{
-				fVar0 = (fVar0 + SYSTEM::TO_FLOAT(func_64(joaat("sp2_time_driving_bicycle"))));
+				fVar0 = (fVar0 + SYSTEM::TO_FLOAT(func_64(joaat("SP2_TIME_DRIVING_BICYCLE"))));
 			}
 			else if (iParam0 == 3)
 			{
@@ -1800,15 +1800,15 @@ int func_57(int iParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x1
 		case 3:
 			if (iParam0 == 0)
 			{
-				fVar0 = (SYSTEM::TO_FLOAT(func_62(joaat("sp0_time_underwater"))) / 30f);
+				fVar0 = (SYSTEM::TO_FLOAT(func_62(joaat("SP0_TIME_UNDERWATER"))) / 30f);
 			}
 			else if (iParam0 == 1)
 			{
-				fVar0 = (SYSTEM::TO_FLOAT(func_62(joaat("sp1_time_underwater"))) / 30f);
+				fVar0 = (SYSTEM::TO_FLOAT(func_62(joaat("SP1_TIME_UNDERWATER"))) / 30f);
 			}
 			else if (iParam0 == 2)
 			{
-				fVar0 = (SYSTEM::TO_FLOAT(func_62(joaat("sp2_time_underwater"))) / 30f);
+				fVar0 = (SYSTEM::TO_FLOAT(func_62(joaat("SP2_TIME_UNDERWATER"))) / 30f);
 			}
 			else if (iParam0 == 3)
 			{
@@ -1820,17 +1820,17 @@ int func_57(int iParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x1
 		case 2:
 			if (iParam0 == 0)
 			{
-				STATS::STAT_GET_INT(joaat("sp0_unarmed_hits"), &iVar3, -1);
+				STATS::STAT_GET_INT(joaat("SP0_UNARMED_HITS"), &iVar3, -1);
 				fVar0 = (SYSTEM::TO_FLOAT((iVar3 - Global_113386.f_2363.f_539.f_2359[iParam0])) / 20f);
 			}
 			else if (iParam0 == 1)
 			{
-				STATS::STAT_GET_INT(joaat("sp1_unarmed_hits"), &iVar3, -1);
+				STATS::STAT_GET_INT(joaat("SP1_UNARMED_HITS"), &iVar3, -1);
 				fVar0 = (SYSTEM::TO_FLOAT((iVar3 - Global_113386.f_2363.f_539.f_2359[iParam0])) / 20f);
 			}
 			else if (iParam0 == 2)
 			{
-				STATS::STAT_GET_INT(joaat("sp2_unarmed_hits"), &iVar3, -1);
+				STATS::STAT_GET_INT(joaat("SP2_UNARMED_HITS"), &iVar3, -1);
 				fVar0 = (SYSTEM::TO_FLOAT((iVar3 - Global_113386.f_2363.f_539.f_2359[iParam0])) / 20f);
 			}
 			else if (iParam0 == 3)
@@ -1843,17 +1843,17 @@ int func_57(int iParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x1
 		case 4:
 			if (iParam0 == 0)
 			{
-				STATS::STAT_GET_INT(joaat("sp0_number_near_miss"), &iVar3, -1);
+				STATS::STAT_GET_INT(joaat("SP0_NUMBER_NEAR_MISS"), &iVar3, -1);
 				fVar0 = (fVar0 + (SYSTEM::TO_FLOAT((iVar3 - Global_113386.f_2363.f_539.f_2363[iParam0])) / 50f));
 			}
 			else if (iParam0 == 1)
 			{
-				STATS::STAT_GET_INT(joaat("sp1_number_near_miss"), &iVar3, -1);
+				STATS::STAT_GET_INT(joaat("SP1_NUMBER_NEAR_MISS"), &iVar3, -1);
 				fVar0 = (fVar0 + (SYSTEM::TO_FLOAT((iVar3 - Global_113386.f_2363.f_539.f_2363[iParam0])) / 50f));
 			}
 			else if (iParam0 == 2)
 			{
-				STATS::STAT_GET_INT(joaat("sp2_number_near_miss"), &iVar3, -1);
+				STATS::STAT_GET_INT(joaat("SP2_NUMBER_NEAR_MISS"), &iVar3, -1);
 				fVar0 = (fVar0 + (SYSTEM::TO_FLOAT((iVar3 - Global_113386.f_2363.f_539.f_2363[iParam0])) / 50f));
 			}
 			else if (iParam0 == 3)
@@ -1866,15 +1866,15 @@ int func_57(int iParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x1
 		case 5:
 			if (iParam0 == 0)
 			{
-				fVar0 = (SYSTEM::TO_FLOAT(func_64(joaat("sp0_time_driving_plane"))) / 10f);
+				fVar0 = (SYSTEM::TO_FLOAT(func_64(joaat("SP0_TIME_DRIVING_PLANE"))) / 10f);
 			}
 			else if (iParam0 == 1)
 			{
-				fVar0 = (SYSTEM::TO_FLOAT(func_64(joaat("sp1_time_driving_plane"))) / 10f);
+				fVar0 = (SYSTEM::TO_FLOAT(func_64(joaat("SP1_TIME_DRIVING_PLANE"))) / 10f);
 			}
 			else if (iParam0 == 2)
 			{
-				fVar0 = (SYSTEM::TO_FLOAT(func_64(joaat("sp2_time_driving_plane"))) / 10f);
+				fVar0 = (SYSTEM::TO_FLOAT(func_64(joaat("SP2_TIME_DRIVING_PLANE"))) / 10f);
 			}
 			else if (iParam0 == 3)
 			{
@@ -1882,15 +1882,15 @@ int func_57(int iParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x1
 			}
 			if (iParam0 == 0)
 			{
-				fVar0 = (fVar0 + (SYSTEM::TO_FLOAT(func_64(joaat("sp0_time_driving_heli"))) / 10f));
+				fVar0 = (fVar0 + (SYSTEM::TO_FLOAT(func_64(joaat("SP0_TIME_DRIVING_HELI"))) / 10f));
 			}
 			else if (iParam0 == 1)
 			{
-				fVar0 = (fVar0 + (SYSTEM::TO_FLOAT(func_64(joaat("sp1_time_driving_heli"))) / 10f));
+				fVar0 = (fVar0 + (SYSTEM::TO_FLOAT(func_64(joaat("SP1_TIME_DRIVING_HELI"))) / 10f));
 			}
 			else if (iParam0 == 2)
 			{
-				fVar0 = (fVar0 + (SYSTEM::TO_FLOAT(func_64(joaat("sp2_time_driving_heli"))) / 10f));
+				fVar0 = (fVar0 + (SYSTEM::TO_FLOAT(func_64(joaat("SP2_TIME_DRIVING_HELI"))) / 10f));
 			}
 			else if (iParam0 == 3)
 			{
@@ -1898,17 +1898,17 @@ int func_57(int iParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x1
 			}
 			if (iParam0 == 0)
 			{
-				STATS::STAT_GET_INT(joaat("sp0_plane_landings"), &iVar3, -1);
+				STATS::STAT_GET_INT(joaat("SP0_PLANE_LANDINGS"), &iVar3, -1);
 				fVar0 = (fVar0 + SYSTEM::TO_FLOAT(iVar3));
 			}
 			else if (iParam0 == 1)
 			{
-				STATS::STAT_GET_INT(joaat("sp1_plane_landings"), &iVar3, -1);
+				STATS::STAT_GET_INT(joaat("SP1_PLANE_LANDINGS"), &iVar3, -1);
 				fVar0 = (fVar0 + SYSTEM::TO_FLOAT(iVar3));
 			}
 			else if (iParam0 == 2)
 			{
-				STATS::STAT_GET_INT(joaat("sp2_plane_landings"), &iVar3, -1);
+				STATS::STAT_GET_INT(joaat("SP2_PLANE_LANDINGS"), &iVar3, -1);
 				fVar0 = (fVar0 + SYSTEM::TO_FLOAT(iVar3));
 			}
 			else if (iParam0 == 3)
@@ -2084,17 +2084,17 @@ int func_57(int iParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x1
 		case 7:
 			if (iParam0 == 0)
 			{
-				STATS::STAT_GET_FLOAT(joaat("sp0_dist_walk_st"), &fVar1, -1);
+				STATS::STAT_GET_FLOAT(joaat("SP0_DIST_WALK_ST"), &fVar1, -1);
 				fVar0 = ((fVar1 - Global_113386.f_2363.f_539.f_2367[iParam0]) / 45f);
 			}
 			else if (iParam0 == 1)
 			{
-				STATS::STAT_GET_FLOAT(joaat("sp1_dist_walk_st"), &fVar1, -1);
+				STATS::STAT_GET_FLOAT(joaat("SP1_DIST_WALK_ST"), &fVar1, -1);
 				fVar0 = ((fVar1 - Global_113386.f_2363.f_539.f_2367[iParam0]) / 45f);
 			}
 			else if (iParam0 == 2)
 			{
-				STATS::STAT_GET_FLOAT(joaat("sp2_dist_walk_st"), &fVar1, -1);
+				STATS::STAT_GET_FLOAT(joaat("SP2_DIST_WALK_ST"), &fVar1, -1);
 				fVar0 = ((fVar1 - Global_113386.f_2363.f_539.f_2367[iParam0]) / 45f);
 			}
 			else if (iParam0 == 3)
@@ -2103,17 +2103,17 @@ int func_57(int iParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x1
 			}
 			if (iParam0 == 0)
 			{
-				STATS::STAT_GET_INT(joaat("sp0_kills_stealth"), &iVar3, -1);
+				STATS::STAT_GET_INT(joaat("SP0_KILLS_STEALTH"), &iVar3, -1);
 				fVar0 = (fVar0 + ((SYSTEM::TO_FLOAT((iVar3 - Global_113386.f_2363.f_539.f_2371[iParam0])) / 2f) * 1.5f));
 			}
 			else if (iParam0 == 1)
 			{
-				STATS::STAT_GET_INT(joaat("sp1_kills_stealth"), &iVar3, -1);
+				STATS::STAT_GET_INT(joaat("SP1_KILLS_STEALTH"), &iVar3, -1);
 				fVar0 = (fVar0 + ((SYSTEM::TO_FLOAT((iVar3 - Global_113386.f_2363.f_539.f_2371[iParam0])) / 2f) * 1.5f));
 			}
 			else if (iParam0 == 2)
 			{
-				STATS::STAT_GET_INT(joaat("sp2_kills_stealth"), &iVar3, -1);
+				STATS::STAT_GET_INT(joaat("SP2_KILLS_STEALTH"), &iVar3, -1);
 				fVar0 = (fVar0 + ((SYSTEM::TO_FLOAT((iVar3 - Global_113386.f_2363.f_539.f_2371[iParam0])) / 2f) * 1.5f));
 			}
 			else if (iParam0 == 3)
@@ -2127,24 +2127,24 @@ int func_57(int iParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x1
 		case 6:
 			if (iParam0 == 0)
 			{
-				STATS::STAT_GET_INT(joaat("sp0_hits_mission"), &iVar5, -1);
-				STATS::STAT_GET_INT(joaat("sp0_hits_peds_vehicles"), &iVar6, -1);
+				STATS::STAT_GET_INT(joaat("SP0_HITS_MISSION"), &iVar5, -1);
+				STATS::STAT_GET_INT(joaat("SP0_HITS_PEDS_VEHICLES"), &iVar6, -1);
 				iVar6 = (iVar6 - iVar5);
 				fVar0 = (SYSTEM::TO_FLOAT((iVar5 - Global_113386.f_2363.f_539.f_2375[iParam0])) / 40f);
 				fVar0 = (fVar0 + (SYSTEM::TO_FLOAT((iVar6 - Global_113386.f_2363.f_539.f_2379[iParam0])) / 80f));
 			}
 			else if (iParam0 == 1)
 			{
-				STATS::STAT_GET_INT(joaat("sp1_hits_mission"), &iVar5, -1);
-				STATS::STAT_GET_INT(joaat("sp1_hits_peds_vehicles"), &iVar6, -1);
+				STATS::STAT_GET_INT(joaat("SP1_HITS_MISSION"), &iVar5, -1);
+				STATS::STAT_GET_INT(joaat("SP1_HITS_PEDS_VEHICLES"), &iVar6, -1);
 				iVar6 = (iVar6 - iVar5);
 				fVar0 = (SYSTEM::TO_FLOAT((iVar5 - Global_113386.f_2363.f_539.f_2375[iParam0])) / 40f);
 				fVar0 = (fVar0 + (SYSTEM::TO_FLOAT((iVar6 - Global_113386.f_2363.f_539.f_2379[iParam0])) / 80f));
 			}
 			else if (iParam0 == 2)
 			{
-				STATS::STAT_GET_INT(joaat("sp2_hits_mission"), &iVar5, -1);
-				STATS::STAT_GET_INT(joaat("sp2_hits_peds_vehicles"), &iVar6, -1);
+				STATS::STAT_GET_INT(joaat("SP2_HITS_MISSION"), &iVar5, -1);
+				STATS::STAT_GET_INT(joaat("SP2_HITS_PEDS_VEHICLES"), &iVar6, -1);
 				iVar6 = (iVar6 - iVar5);
 				fVar0 = (SYSTEM::TO_FLOAT((iVar5 - Global_113386.f_2363.f_539.f_2375[iParam0])) / 40f);
 				fVar0 = (fVar0 + (SYSTEM::TO_FLOAT((iVar6 - Global_113386.f_2363.f_539.f_2379[iParam0])) / 80f));
@@ -2181,7 +2181,7 @@ int func_57(int iParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x1
 			}
 			else if (iParam0 == 3)
 			{
-				fVar0 = (fVar0 + IntToFloat(func_59(joaat("mpply_shootingrange_wins")) * 1));
+				fVar0 = (fVar0 + IntToFloat(func_59(joaat("MPPLY_SHOOTINGRANGE_WINS")) * 1));
 				func_65(&fVar0);
 			}
 			break;
@@ -2408,35 +2408,35 @@ void func_71(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x2
 			switch (iParam1)
 			{
 				case 0:
-					*uParam2 = joaat("sp0_special_ability_unlocked");
+					*uParam2 = joaat("SP0_SPECIAL_ABILITY_UNLOCKED");
 					break;
 				
 				case 1:
-					*uParam2 = joaat("sp0_stamina");
+					*uParam2 = joaat("SP0_STAMINA");
 					break;
 				
 				case 3:
-					*uParam2 = joaat("sp0_lung_capacity");
+					*uParam2 = joaat("SP0_LUNG_CAPACITY");
 					break;
 				
 				case 2:
-					*uParam2 = joaat("sp0_strength");
+					*uParam2 = joaat("SP0_STRENGTH");
 					break;
 				
 				case 4:
-					*uParam2 = joaat("sp0_wheelie_ability");
+					*uParam2 = joaat("SP0_WHEELIE_ABILITY");
 					break;
 				
 				case 5:
-					*uParam2 = joaat("sp0_flying_ability");
+					*uParam2 = joaat("SP0_FLYING_ABILITY");
 					break;
 				
 				case 6:
-					*uParam2 = joaat("sp0_shooting_ability");
+					*uParam2 = joaat("SP0_SHOOTING_ABILITY");
 					break;
 				
 				case 7:
-					*uParam2 = joaat("sp0_stealth_ability");
+					*uParam2 = joaat("SP0_STEALTH_ABILITY");
 					break;
 			}
 			break;
@@ -2445,35 +2445,35 @@ void func_71(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x2
 			switch (iParam1)
 			{
 				case 0:
-					*uParam2 = joaat("sp1_special_ability_unlocked");
+					*uParam2 = joaat("SP1_SPECIAL_ABILITY_UNLOCKED");
 					break;
 				
 				case 1:
-					*uParam2 = joaat("sp1_stamina");
+					*uParam2 = joaat("SP1_STAMINA");
 					break;
 				
 				case 3:
-					*uParam2 = joaat("sp1_lung_capacity");
+					*uParam2 = joaat("SP1_LUNG_CAPACITY");
 					break;
 				
 				case 2:
-					*uParam2 = joaat("sp1_strength");
+					*uParam2 = joaat("SP1_STRENGTH");
 					break;
 				
 				case 4:
-					*uParam2 = joaat("sp1_wheelie_ability");
+					*uParam2 = joaat("SP1_WHEELIE_ABILITY");
 					break;
 				
 				case 5:
-					*uParam2 = joaat("sp1_flying_ability");
+					*uParam2 = joaat("SP1_FLYING_ABILITY");
 					break;
 				
 				case 6:
-					*uParam2 = joaat("sp1_shooting_ability");
+					*uParam2 = joaat("SP1_SHOOTING_ABILITY");
 					break;
 				
 				case 7:
-					*uParam2 = joaat("sp1_stealth_ability");
+					*uParam2 = joaat("SP1_STEALTH_ABILITY");
 					break;
 			}
 			break;
@@ -2482,35 +2482,35 @@ void func_71(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x2
 			switch (iParam1)
 			{
 				case 0:
-					*uParam2 = joaat("sp2_special_ability_unlocked");
+					*uParam2 = joaat("SP2_SPECIAL_ABILITY_UNLOCKED");
 					break;
 				
 				case 1:
-					*uParam2 = joaat("sp2_stamina");
+					*uParam2 = joaat("SP2_STAMINA");
 					break;
 				
 				case 3:
-					*uParam2 = joaat("sp2_lung_capacity");
+					*uParam2 = joaat("SP2_LUNG_CAPACITY");
 					break;
 				
 				case 2:
-					*uParam2 = joaat("sp2_strength");
+					*uParam2 = joaat("SP2_STRENGTH");
 					break;
 				
 				case 4:
-					*uParam2 = joaat("sp2_wheelie_ability");
+					*uParam2 = joaat("SP2_WHEELIE_ABILITY");
 					break;
 				
 				case 5:
-					*uParam2 = joaat("sp2_flying_ability");
+					*uParam2 = joaat("SP2_FLYING_ABILITY");
 					break;
 				
 				case 6:
-					*uParam2 = joaat("sp2_shooting_ability");
+					*uParam2 = joaat("SP2_SHOOTING_ABILITY");
 					break;
 				
 				case 7:
-					*uParam2 = joaat("sp2_stealth_ability");
+					*uParam2 = joaat("SP2_STEALTH_ABILITY");
 					break;
 			}
 			break;
@@ -2824,15 +2824,15 @@ void func_79()//Position - 0x2DE8
 				switch (iLocal_58)
 				{
 					case 0:
-						iLocal_77 = func_62(joaat("sp0_total_wheelie_time"));
+						iLocal_77 = func_62(joaat("SP0_TOTAL_WHEELIE_TIME"));
 						break;
 					
 					case 1:
-						iLocal_77 = func_62(joaat("sp1_total_wheelie_time"));
+						iLocal_77 = func_62(joaat("SP1_TOTAL_WHEELIE_TIME"));
 						break;
 					
 					case 2:
-						iLocal_77 = func_62(joaat("sp2_total_wheelie_time"));
+						iLocal_77 = func_62(joaat("SP2_TOTAL_WHEELIE_TIME"));
 						break;
 				}
 				Global_113386.f_2363.f_539.f_2292[iLocal_58] = 0;
@@ -2871,15 +2871,15 @@ void func_79()//Position - 0x2DE8
 		switch (iLocal_58)
 		{
 			case 0:
-				iVar0 = func_62(joaat("sp0_total_wheelie_time"));
+				iVar0 = func_62(joaat("SP0_TOTAL_WHEELIE_TIME"));
 				break;
 			
 			case 1:
-				iVar0 = func_62(joaat("sp1_total_wheelie_time"));
+				iVar0 = func_62(joaat("SP1_TOTAL_WHEELIE_TIME"));
 				break;
 			
 			case 2:
-				iVar0 = func_62(joaat("sp2_total_wheelie_time"));
+				iVar0 = func_62(joaat("SP2_TOTAL_WHEELIE_TIME"));
 				break;
 			
 			case 3:

@@ -370,10 +370,10 @@ void func_7(int iParam0)//Position - 0x3BD
 	int iVar0;
 	
 	iVar0 = 0;
-	STATS::STAT_GET_INT(joaat("num_stock_races_completed"), &iVar0, -1);
+	STATS::STAT_GET_INT(joaat("NUM_STOCK_RACES_COMPLETED"), &iVar0, -1);
 	if (iVar0 < iParam0 + 1)
 	{
-		STATS::STAT_SET_INT(joaat("num_stock_races_completed"), iParam0 + 1, true);
+		STATS::STAT_SET_INT(joaat("NUM_STOCK_RACES_COMPLETED"), iParam0 + 1, true);
 	}
 }
 
@@ -1419,19 +1419,19 @@ void func_44(bool bParam0)//Position - 0x1714
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_150) && !ENTITY::DOES_ENTITY_EXIST(iLocal_151))
 	{
 		STREAMING::REQUEST_MODEL(func_50());
-		STREAMING::REQUEST_MODEL(joaat("a_m_y_motox_02"));
+		STREAMING::REQUEST_MODEL(joaat("A_M_Y_MotoX_02"));
 		if (bParam0)
 		{
 			while (!STREAMING::HAS_MODEL_LOADED(func_50()))
 			{
 				SYSTEM::WAIT(0);
 			}
-			while (!STREAMING::HAS_MODEL_LOADED(joaat("a_m_y_motox_02")))
+			while (!STREAMING::HAS_MODEL_LOADED(joaat("A_M_Y_MotoX_02")))
 			{
 				SYSTEM::WAIT(0);
 			}
 		}
-		if (STREAMING::HAS_MODEL_LOADED(func_50()) && STREAMING::HAS_MODEL_LOADED(joaat("a_m_y_motox_02")))
+		if (STREAMING::HAS_MODEL_LOADED(func_50()) && STREAMING::HAS_MODEL_LOADED(joaat("A_M_Y_MotoX_02")))
 		{
 			iLocal_150 = VEHICLE::CREATE_VEHICLE(func_50(), func_49(), func_48(), true, true, false);
 			VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(iLocal_150, 5f);
@@ -1445,11 +1445,11 @@ void func_44(bool bParam0)//Position - 0x1714
 			VEHICLE::SET_VEHICLE_AUTOMATICALLY_ATTACHES(iLocal_150, false, 0);
 			VEHICLE::SET_VEHICLE_DISABLE_TOWING(iLocal_150, true);
 			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(func_50());
-			iLocal_151 = PED::CREATE_PED(26, joaat("a_m_y_motox_02"), func_47(), func_46(), true, true);
+			iLocal_151 = PED::CREATE_PED(26, joaat("A_M_Y_MotoX_02"), func_47(), func_46(), true, true);
 			func_45(iLocal_151);
 			AUDIO::SET_AMBIENT_VOICE_NAME(iLocal_151, "A_M_Y_RACER_01_WHITE_MINI_01");
 			TASK::TASK_START_SCENARIO_IN_PLACE(iLocal_151, "WORLD_HUMAN_STAND_IMPATIENT", -1, true);
-			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("a_m_y_motox_02"));
+			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("A_M_Y_MotoX_02"));
 		}
 	}
 }
@@ -1728,14 +1728,14 @@ int func_57()//Position - 0x1D09
 		{
 			if (NETWORK::_NETWORK_GET_ROS_PRIVILEGE_24())
 			{
-				STATS::STAT_GET_INT(joaat("sp_unlock_exclus_content"), &iVar0, -1);
+				STATS::STAT_GET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), &iVar0, -1);
 				MISC::SET_BIT(&iVar0, 2);
 				MISC::SET_BIT(&iVar0, 4);
 				MISC::SET_BIT(&iVar0, 6);
 				MISC::SET_BIT(&Global_25, 2);
 				MISC::SET_BIT(&Global_25, 4);
 				MISC::SET_BIT(&Global_25, 6);
-				STATS::STAT_SET_INT(joaat("sp_unlock_exclus_content"), iVar0, true);
+				STATS::STAT_SET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), iVar0, true);
 				if (MISC::ARE_PROFILE_SETTINGS_VALID())
 				{
 					iVar0 = MISC::GET_PROFILE_SETTING(866);

@@ -3762,7 +3762,7 @@ int func_85(char* sParam0, int iParam1, bool bParam2)//Position - 0x2D5D
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -3915,7 +3915,7 @@ int func_90()//Position - 0x314F
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}
@@ -11878,9 +11878,9 @@ int func_322()//Position - 0xD86F
 {
 	if (func_341())
 	{
-		return joaat("mp_f_helistaff_01");
+		return joaat("MP_F_HeliStaff_01");
 	}
-	return joaat("s_m_y_pilot_01");
+	return joaat("S_M_Y_Pilot_01");
 }
 
 bool func_323(int iParam0)//Position - 0xD88B
@@ -12843,7 +12843,7 @@ void func_345()//Position - 0xE646
 					{
 						CAM::SET_CINEMATIC_BUTTON_ACTIVE(false);
 						func_461();
-						WEAPON::GIVE_DELAYED_WEAPON_TO_PED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute"), 1, false);
+						WEAPON::GIVE_DELAYED_WEAPON_TO_PED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE"), 1, false);
 						NETWORK::_0x4C2A9FDC22377075();
 						Local_130[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2 = 2;
 						MISC::CLEAR_BIT(&(Local_130[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_1), 0);
@@ -13679,7 +13679,7 @@ int func_365()//Position - 0xF7B7
 
 bool func_366(int iParam0)//Position - 0xF7D8
 {
-	return func_367(iParam0) == joaat("weapon_minigun");
+	return func_367(iParam0) == joaat("WEAPON_MINIGUN");
 }
 
 int func_367(int iParam0)//Position - 0xF7EC

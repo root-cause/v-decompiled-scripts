@@ -4243,7 +4243,7 @@ char* func_56(int iParam0)//Position - 0x8814
 
 int func_57(int iParam0)//Position - 0x888D
 {
-	if (ENTITY::GET_ENTITY_MODEL(PLAYER::GET_PLAYER_PED(iParam0)) == joaat("mp_f_freemode_01"))
+	if (ENTITY::GET_ENTITY_MODEL(PLAYER::GET_PLAYER_PED(iParam0)) == joaat("MP_F_Freemode_01"))
 	{
 		return 1;
 	}
@@ -4836,10 +4836,10 @@ void func_82(int iParam0)//Position - 0x937C
 	int iVar0;
 	int iVar1;
 	
-	iVar0 = joaat("s_m_y_casino_01");
+	iVar0 = joaat("S_M_Y_Casino_01");
 	if (Local_109.f_15[iParam0] >= 7)
 	{
-		iVar0 = joaat("s_f_y_casino_01");
+		iVar0 = joaat("S_F_Y_Casino_01");
 	}
 	STREAMING::REQUEST_MODEL(iVar0);
 	if (!STREAMING::HAS_MODEL_LOADED(iVar0))
@@ -5832,7 +5832,7 @@ void func_91()//Position - 0xA193
 			}
 			if (Local_152.f_30 != -1)
 			{
-				if ((PED::GET_SYNCHRONIZED_SCENE_PHASE(Local_152.f_30) >= 0.99f || ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("ShowUi"))) || ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("blend_out")))
+				if ((PED::GET_SYNCHRONIZED_SCENE_PHASE(Local_152.f_30) >= 0.99f || ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("showui"))) || ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("blend_out")))
 				{
 					func_302(PLAYER::PLAYER_ID(), 0, 256, 0);
 					Local_162 = { Var6 };
@@ -8570,13 +8570,13 @@ void func_107(int iParam0)//Position - 0x10EAC
 	}
 	if ((iParam0 + iVar2) >= Global_262145.f_27178)
 	{
-		func_108(joaat("mpply_casino_chips_won_gd"), Global_262145.f_27178);
+		func_108(joaat("MPPLY_CASINO_CHIPS_WON_GD"), Global_262145.f_27178);
 		func_109();
 		Global_2725354 = 1;
 	}
 	else
 	{
-		func_108(joaat("mpply_casino_chips_won_gd"), (iVar2 + iParam0));
+		func_108(joaat("MPPLY_CASINO_CHIPS_WON_GD"), (iVar2 + iParam0));
 	}
 }
 
@@ -8598,12 +8598,12 @@ void func_109()//Position - 0x10F41
 
 void func_110()//Position - 0x10F4D
 {
-	func_108(joaat("mpply_casino_chips_wontim"), NETWORK::GET_CLOUD_TIME_AS_INT());
+	func_108(joaat("MPPLY_CASINO_CHIPS_WONTIM"), NETWORK::GET_CLOUD_TIME_AS_INT());
 }
 
 int func_111()//Position - 0x10F62
 {
-	return func_112(joaat("mpply_casino_chips_won_gd"));
+	return func_112(joaat("MPPLY_CASINO_CHIPS_WON_GD"));
 }
 
 int func_112(int iParam0)//Position - 0x10F73
@@ -8621,7 +8621,7 @@ int func_112(int iParam0)//Position - 0x10F73
 
 int func_113()//Position - 0x10F91
 {
-	return func_112(joaat("mpply_casino_chips_wontim"));
+	return func_112(joaat("MPPLY_CASINO_CHIPS_WONTIM"));
 }
 
 void func_114(int iParam0)//Position - 0x10FA2
@@ -8644,12 +8644,12 @@ void func_114(int iParam0)//Position - 0x10FA2
 	}
 	if (iParam0 + iVar2) > func_115()
 	{
-		func_108(joaat("mpply_casino_chips_pur_gd"), func_115());
+		func_108(joaat("MPPLY_CASINO_CHIPS_PUR_GD"), func_115());
 		func_116();
 	}
 	else
 	{
-		func_108(joaat("mpply_casino_chips_pur_gd"), (iVar2 + iParam0));
+		func_108(joaat("MPPLY_CASINO_CHIPS_PUR_GD"), (iVar2 + iParam0));
 	}
 }
 
@@ -8669,17 +8669,17 @@ void func_116()//Position - 0x11034
 
 void func_117()//Position - 0x11040
 {
-	func_108(joaat("mpply_casino_chips_purtim"), NETWORK::GET_CLOUD_TIME_AS_INT());
+	func_108(joaat("MPPLY_CASINO_CHIPS_PURTIM"), NETWORK::GET_CLOUD_TIME_AS_INT());
 }
 
 int func_118()//Position - 0x11055
 {
-	return func_112(joaat("mpply_casino_chips_pur_gd"));
+	return func_112(joaat("MPPLY_CASINO_CHIPS_PUR_GD"));
 }
 
 int func_119()//Position - 0x11066
 {
-	return func_112(joaat("mpply_casino_chips_purtim"));
+	return func_112(joaat("MPPLY_CASINO_CHIPS_PURTIM"));
 }
 
 void func_120()//Position - 0x11077
@@ -12056,13 +12056,13 @@ void func_206(int iParam0)//Position - 0x1527D
 	}
 	if ((iVar2 - iParam0) >= Global_262145.f_27177)
 	{
-		func_108(joaat("mpply_casino_chips_won_gd"), Global_262145.f_27177);
+		func_108(joaat("MPPLY_CASINO_CHIPS_WON_GD"), Global_262145.f_27177);
 		func_109();
 		Global_2725354 = 1;
 	}
 	else
 	{
-		func_108(joaat("mpply_casino_chips_won_gd"), (iVar2 - iParam0));
+		func_108(joaat("MPPLY_CASINO_CHIPS_WON_GD"), (iVar2 - iParam0));
 	}
 }
 
@@ -12869,7 +12869,7 @@ void func_241(int iParam0)//Position - 0x164FB
 
 void func_242()//Position - 0x16529
 {
-	func_108(joaat("mpply_cas_gmblng_l24_px"), NETWORK::GET_CLOUD_TIME_AS_INT());
+	func_108(joaat("MPPLY_CAS_GMBLNG_L24_PX"), NETWORK::GET_CLOUD_TIME_AS_INT());
 	func_244();
 	func_243();
 	Global_1966132 = 1;
@@ -12878,22 +12878,22 @@ void func_242()//Position - 0x16529
 
 void func_243()//Position - 0x16550
 {
-	func_108(joaat("mpply_cas_24h_gmblng_px"), NETWORK::GET_CLOUD_TIME_AS_INT());
+	func_108(joaat("MPPLY_CAS_24H_GMBLNG_PX"), NETWORK::GET_CLOUD_TIME_AS_INT());
 }
 
 void func_244()//Position - 0x16565
 {
-	func_108(joaat("mpply_cas_gmblng_l24"), 0);
-	func_108(joaat("mpply_cas_gmblng_l24_1"), 0);
-	func_108(joaat("mpply_cas_gmblng_l24_2"), 0);
-	func_108(joaat("mpply_cas_gmblng_l24_3"), 0);
-	func_108(joaat("mpply_cas_gmblng_l24_4"), 0);
-	func_108(joaat("mpply_cas_gmblng_l24_5"), 0);
-	func_108(joaat("mpply_cas_gmblng_l24_6"), 0);
-	func_108(joaat("mpply_cas_gmblng_l24_7"), 0);
-	func_108(joaat("mpply_cas_gmblng_l24_8"), 0);
-	func_108(joaat("mpply_cas_cur_gmblng_hr"), 0);
-	func_108(joaat("mpply_cas_24h_gmblng_px"), 0);
+	func_108(joaat("MPPLY_CAS_GMBLNG_L24"), 0);
+	func_108(joaat("MPPLY_CAS_GMBLNG_L24_1"), 0);
+	func_108(joaat("MPPLY_CAS_GMBLNG_L24_2"), 0);
+	func_108(joaat("MPPLY_CAS_GMBLNG_L24_3"), 0);
+	func_108(joaat("MPPLY_CAS_GMBLNG_L24_4"), 0);
+	func_108(joaat("MPPLY_CAS_GMBLNG_L24_5"), 0);
+	func_108(joaat("MPPLY_CAS_GMBLNG_L24_6"), 0);
+	func_108(joaat("MPPLY_CAS_GMBLNG_L24_7"), 0);
+	func_108(joaat("MPPLY_CAS_GMBLNG_L24_8"), 0);
+	func_108(joaat("MPPLY_CAS_CUR_GMBLNG_HR"), 0);
+	func_108(joaat("MPPLY_CAS_24H_GMBLNG_PX"), 0);
 }
 
 bool func_245()//Position - 0x165DB
@@ -12903,7 +12903,7 @@ bool func_245()//Position - 0x165DB
 
 void func_246()//Position - 0x165E7
 {
-	func_108(joaat("mpply_casino_gmblng_gd"), NETWORK::GET_CLOUD_TIME_AS_INT());
+	func_108(joaat("MPPLY_CASINO_GMBLNG_GD"), NETWORK::GET_CLOUD_TIME_AS_INT());
 	func_248();
 	func_247((NETWORK::GET_CLOUD_TIME_AS_INT() + 86400));
 	Global_1966131 = 1;
@@ -12916,12 +12916,12 @@ void func_247(int iParam0)//Position - 0x16612
 
 void func_248()//Position - 0x16620
 {
-	func_108(joaat("mpply_cas_cur_gmblng_px"), NETWORK::GET_CLOUD_TIME_AS_INT());
+	func_108(joaat("MPPLY_CAS_CUR_GMBLNG_PX"), NETWORK::GET_CLOUD_TIME_AS_INT());
 }
 
 bool func_249()//Position - 0x16635
 {
-	return func_112(joaat("mpply_casino_gmblng_gd")) != 0;
+	return func_112(joaat("MPPLY_CASINO_GMBLNG_GD")) != 0;
 }
 
 bool func_250(int iParam0)//Position - 0x16648
@@ -13145,7 +13145,7 @@ int func_257(int iParam0)//Position - 0x169A8
 
 int func_258()//Position - 0x169D2
 {
-	return func_112(joaat("mpply_cas_cur_gmblng_hr"));
+	return func_112(joaat("MPPLY_CAS_CUR_GMBLNG_HR"));
 }
 
 void func_259()//Position - 0x169E3
@@ -16292,7 +16292,7 @@ void func_307(bool bParam0, int iParam1, int iParam2)//Position - 0x1B4BA
 			NETWORK::NETWORK_SET_IN_SPECTATOR_MODE(bParam0, iParam1);
 		}
 		HUD::SET_MINIMAP_IN_SPECTATOR_MODE(bParam0, iParam1);
-		func_308(joaat("mpply_is_char_spectating"), bParam0);
+		func_308(joaat("MPPLY_IS_CHAR_SPECTATING"), bParam0);
 	}
 }
 

@@ -1476,7 +1476,7 @@ void func_14(bool bParam0, int iParam1, int iParam2)//Position - 0x1596
 			NETWORK::NETWORK_SET_IN_SPECTATOR_MODE(bParam0, iParam1);
 		}
 		HUD::SET_MINIMAP_IN_SPECTATOR_MODE(bParam0, iParam1);
-		func_15(joaat("mpply_is_char_spectating"), bParam0);
+		func_15(joaat("MPPLY_IS_CHAR_SPECTATING"), bParam0);
 	}
 }
 
@@ -6261,7 +6261,7 @@ void func_187()//Position - 0x6AFD
 				if ((iLocal_178 == 1 && uLocal_211[iLocal_207] == 2) && !func_196())
 				{
 					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PIM_DMAGUT");
-					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TIME((func_195(joaat("mpply_h3_cooldown")) - NETWORK::GET_CLOUD_TIME_AS_INT()) * 1000, 14);
+					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TIME((func_195(joaat("MPPLY_H3_COOLDOWN")) - NETWORK::GET_CLOUD_TIME_AS_INT()) * 1000, 14);
 					bVar1 = false;
 				}
 				else if ((iLocal_178 == 1 && uLocal_211[iLocal_207] == 3) && !func_194())
@@ -6415,7 +6415,7 @@ int func_195(int iParam0)//Position - 0x70A8
 
 bool func_196()//Position - 0x70C6
 {
-	return NETWORK::GET_CLOUD_TIME_AS_INT() >= func_195(joaat("mpply_h3_cooldown"));
+	return NETWORK::GET_CLOUD_TIME_AS_INT() >= func_195(joaat("MPPLY_H3_COOLDOWN"));
 }
 
 bool func_197()//Position - 0x70DC
@@ -6428,7 +6428,7 @@ void func_198()//Position - 0x70F3
 {
 	if (Global_1836751.f_3 == -1)
 	{
-		Global_1836751.f_3 = func_195(joaat("mpply_last_prof_race_won"));
+		Global_1836751.f_3 = func_195(joaat("MPPLY_LAST_PROF_RACE_WON"));
 	}
 }
 

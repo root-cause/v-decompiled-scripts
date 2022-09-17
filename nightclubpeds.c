@@ -8789,7 +8789,7 @@ void func_7(var uParam0, int* iParam1, int* iParam2)//Position - 0x1E3
 										Var14.f_38.f_1.f_2.f_2.f_2.f_2.f_2.f_2 = -1;
 										Var14.f_38.f_1.f_2.f_2.f_2.f_2.f_2.f_2.f_2 = -1;
 										Var14.f_38.f_1.f_2.f_2.f_2.f_2.f_2.f_2.f_2.f_2 = -1;
-										Var14.f_57 = joaat("weapon_unarmed");
+										Var14.f_57 = joaat("WEAPON_UNARMED");
 										iVar2 = 0;
 										iVar3 = 0;
 										iVar4 = 0;
@@ -15068,7 +15068,7 @@ int func_32(char* sParam0, int iParam1, bool bParam2)//Position - 0x81BF
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -15260,7 +15260,7 @@ int func_40()//Position - 0x863C
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}
@@ -26496,7 +26496,7 @@ void func_255(var uParam0)//Position - 0x1698A
 	Var6.f_38.f_1.f_2.f_2.f_2.f_2.f_2.f_2 = -1;
 	Var6.f_38.f_1.f_2.f_2.f_2.f_2.f_2.f_2.f_2 = -1;
 	Var6.f_38.f_1.f_2.f_2.f_2.f_2.f_2.f_2.f_2.f_2 = -1;
-	Var6.f_57 = joaat("weapon_unarmed");
+	Var6.f_57 = joaat("WEAPON_UNARMED");
 	bVar7 = false;
 	Var8 = { -1604.66f, -3012.58f, -80f };
 	Var9 = { 0f, 0f, 0f };
@@ -26620,7 +26620,7 @@ void func_255(var uParam0)//Position - 0x1698A
 							else
 							{
 								uParam0->f_7908.f_6[iVar0] = PED::CREATE_PED(4, Var6.f_0, Var8, 0f, false, true);
-								if (Var6.f_0 != joaat("a_f_y_clubcust_01"))
+								if (Var6.f_0 != joaat("A_F_Y_ClubCust_01"))
 								{
 									iVar1 = 0;
 									iVar1 = 0;
@@ -26636,7 +26636,7 @@ void func_255(var uParam0)//Position - 0x1698A
 									iVar1 = 0;
 									while (iVar1 < 9)
 									{
-										if (Var6.f_38[iVar1 /*2*/] != -1 && Var6.f_0 != joaat("ig_talmm"))
+										if (Var6.f_38[iVar1 /*2*/] != -1 && Var6.f_0 != joaat("IG_TalMM"))
 										{
 											PED::SET_PED_PROP_INDEX(uParam0->f_7908.f_6[iVar0], iVar1, Var6.f_38[iVar1 /*2*/], Var6.f_38[iVar1 /*2*/].f_1, false);
 										}
@@ -28079,7 +28079,7 @@ void func_298(bool bParam0, int iParam1, int iParam2)//Position - 0x18D99
 			NETWORK::NETWORK_SET_IN_SPECTATOR_MODE(bParam0, iParam1);
 		}
 		HUD::SET_MINIMAP_IN_SPECTATOR_MODE(bParam0, iParam1);
-		func_299(joaat("mpply_is_char_spectating"), bParam0);
+		func_299(joaat("MPPLY_IS_CHAR_SPECTATING"), bParam0);
 	}
 }
 
@@ -29561,13 +29561,13 @@ int func_317(bool bParam0, int iParam1)//Position - 0x1A48F
 		switch (iParam1)
 		{
 			case 0:
-				return joaat("a_f_y_clubcust_01");
+				return joaat("A_F_Y_ClubCust_01");
 			
 			case 1:
-				return joaat("a_f_y_clubcust_03");
+				return joaat("A_F_Y_ClubCust_03");
 			
 			case 2:
-				return joaat("a_f_y_clubcust_02");
+				return joaat("A_F_Y_ClubCust_02");
 			
 			default:
 		}
@@ -29577,22 +29577,22 @@ int func_317(bool bParam0, int iParam1)//Position - 0x1A48F
 		switch (iParam1)
 		{
 			case 0:
-				return joaat("a_m_y_clubcust_01");
+				return joaat("A_M_Y_ClubCust_01");
 			
 			case 1:
-				return joaat("a_m_y_clubcust_03");
+				return joaat("A_M_Y_ClubCust_03");
 			
 			case 2:
-				return joaat("a_m_y_clubcust_02");
+				return joaat("A_M_Y_ClubCust_02");
 			}
 		
 		default:
 	}
 	if (bParam0)
 	{
-		return joaat("a_f_y_clubcust_01");
+		return joaat("A_F_Y_ClubCust_01");
 	}
-	return joaat("a_m_y_clubcust_01");
+	return joaat("A_M_Y_ClubCust_01");
 }
 
 void func_318(var uParam0)//Position - 0x1A512
@@ -29606,7 +29606,7 @@ void func_319(var uParam0)//Position - 0x1A532
 {
 	int iVar0;
 	
-	*uParam0 = joaat("ig_djblamryanh");
+	*uParam0 = joaat("IG_DJBlamRyanH");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -29621,7 +29621,7 @@ void func_320(var uParam0)//Position - 0x1A574
 {
 	int iVar0;
 	
-	*uParam0 = joaat("ig_djsolfotios");
+	*uParam0 = joaat("IG_DJSolFotios");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -29637,7 +29637,7 @@ void func_321(var uParam0)//Position - 0x1A5BE
 {
 	int iVar0;
 	
-	*uParam0 = joaat("ig_djblamryans");
+	*uParam0 = joaat("IG_DJBlamRyanS");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -29652,7 +29652,7 @@ void func_322(var uParam0)//Position - 0x1A600
 {
 	int iVar0;
 	
-	*uParam0 = joaat("ig_djtalignazio");
+	*uParam0 = joaat("IG_DJTalIgnazio");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -29667,7 +29667,7 @@ void func_323(var uParam0)//Position - 0x1A642
 {
 	int iVar0;
 	
-	*uParam0 = joaat("ig_djsoljakob");
+	*uParam0 = joaat("IG_DJSolJakob");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -29682,7 +29682,7 @@ void func_324(var uParam0)//Position - 0x1A684
 {
 	int iVar0;
 	
-	*uParam0 = joaat("ig_djblamrupert");
+	*uParam0 = joaat("IG_DJBlamRupert");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -29697,7 +29697,7 @@ void func_325(var uParam0)//Position - 0x1A6C6
 {
 	int iVar0;
 	
-	*uParam0 = joaat("ig_djtalaurelia");
+	*uParam0 = joaat("IG_DJTalAurelia");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -29712,7 +29712,7 @@ void func_326(var uParam0)//Position - 0x1A708
 {
 	int iVar0;
 	
-	*uParam0 = joaat("ig_djdixmanager");
+	*uParam0 = joaat("IG_DJDixManager");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -29727,7 +29727,7 @@ void func_327(var uParam0)//Position - 0x1A74A
 {
 	int iVar0;
 	
-	*uParam0 = joaat("ig_djsolmanager");
+	*uParam0 = joaat("IG_DJSolManager");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -29742,7 +29742,7 @@ void func_328(var uParam0)//Position - 0x1A78C
 {
 	int iVar0;
 	
-	*uParam0 = joaat("ig_djblamadon");
+	*uParam0 = joaat("IG_DJBlaMadon");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -29763,7 +29763,7 @@ void func_329(var uParam0, int iParam1)//Position - 0x1A7F2
 	
 	if (iParam1 == 0)
 	{
-		*uParam0 = joaat("ig_talcc");
+		*uParam0 = joaat("IG_TalCC");
 		iVar0 = 0;
 		while (iVar0 < 12)
 		{
@@ -29777,7 +29777,7 @@ void func_329(var uParam0, int iParam1)//Position - 0x1A7F2
 	}
 	else
 	{
-		*uParam0 = joaat("ig_talmm");
+		*uParam0 = joaat("IG_TalMM");
 		iVar0 = 0;
 		while (iVar0 < 12)
 		{
@@ -29795,7 +29795,7 @@ void func_330(var uParam0)//Position - 0x1A89B
 {
 	int iVar0;
 	
-	*uParam0 = joaat("ig_dix");
+	*uParam0 = joaat("IG_Dix");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -29810,7 +29810,7 @@ void func_331(var uParam0)//Position - 0x1A8DD
 {
 	int iVar0;
 	
-	*uParam0 = joaat("ig_sol");
+	*uParam0 = joaat("IG_Sol");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -30827,7 +30827,7 @@ int func_364(var uParam0, var uParam1, var uParam2, struct<3> Param3, float fPar
 						iVar4++;
 					}
 				}
-				if (uParam1->f_57 != joaat("weapon_unarmed"))
+				if (uParam1->f_57 != joaat("WEAPON_UNARMED"))
 				{
 					WEAPON::GIVE_WEAPON_TO_PED(*uParam2, uParam1->f_57, 1, true, true);
 				}
@@ -42777,7 +42777,7 @@ void func_383(var uParam0)//Position - 0x2867A
 {
 	int iVar0;
 	
-	*uParam0 = joaat("u_m_y_guido_01");
+	*uParam0 = joaat("U_M_Y_Guido_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -42792,7 +42792,7 @@ void func_384(var uParam0)//Position - 0x286BC
 {
 	int iVar0;
 	
-	*uParam0 = joaat("ig_lacey_jones_02");
+	*uParam0 = joaat("IG_Lacey_Jones_02");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -42834,7 +42834,7 @@ void func_386(var uParam0)//Position - 0x287AE
 {
 	int iVar0;
 	
-	*uParam0 = joaat("ig_tylerdix_02");
+	*uParam0 = joaat("IG_TylerDix_02");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -42849,7 +42849,7 @@ void func_387(var uParam0)//Position - 0x287F0
 {
 	int iVar0;
 	
-	*uParam0 = joaat("u_f_y_mistress");
+	*uParam0 = joaat("U_F_Y_Mistress");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -42864,7 +42864,7 @@ void func_388(var uParam0)//Position - 0x28832
 {
 	int iVar0;
 	
-	*uParam0 = joaat("u_f_m_miranda_02");
+	*uParam0 = joaat("U_F_M_Miranda_02");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -42879,7 +42879,7 @@ void func_389(var uParam0)//Position - 0x28874
 {
 	int iVar0;
 	
-	*uParam0 = joaat("ig_kerrymcintosh_02");
+	*uParam0 = joaat("IG_KerryMcIntosh_02");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -42894,7 +42894,7 @@ void func_390(var uParam0)//Position - 0x288B6
 {
 	int iVar0;
 	
-	*uParam0 = joaat("ig_jimmyboston_02");
+	*uParam0 = joaat("IG_JimmyBoston_02");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -42909,7 +42909,7 @@ void func_391(var uParam0)//Position - 0x288F8
 {
 	int iVar0;
 	
-	*uParam0 = joaat("u_f_y_poppymich_02");
+	*uParam0 = joaat("U_F_Y_PoppyMich_02");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -42987,7 +42987,7 @@ void func_393(var uParam0)//Position - 0x28AEC
 {
 	int iVar0;
 	
-	*uParam0 = joaat("ig_djsolrobt");
+	*uParam0 = joaat("IG_DJSolRobT");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43002,7 +43002,7 @@ void func_394(var uParam0)//Position - 0x28B2E
 {
 	int iVar0;
 	
-	*uParam0 = joaat("ig_djsolmike");
+	*uParam0 = joaat("IG_DJSolMike");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43017,7 +43017,7 @@ void func_395(var uParam0)//Position - 0x28B70
 {
 	int iVar0;
 	
-	*uParam0 = joaat("s_m_y_clubbar_01");
+	*uParam0 = joaat("S_M_Y_ClubBar_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43036,7 +43036,7 @@ void func_396(var uParam0)//Position - 0x28BD2
 {
 	int iVar0;
 	
-	*uParam0 = joaat("s_m_y_waretech_01");
+	*uParam0 = joaat("S_M_Y_WareTech_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43059,7 +43059,7 @@ void func_397(var uParam0)//Position - 0x28C5E
 {
 	int iVar0;
 	
-	*uParam0 = joaat("u_f_y_danceburl_01");
+	*uParam0 = joaat("U_F_Y_DanceBurl_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43084,7 +43084,7 @@ void func_398(var uParam0)//Position - 0x28CFA
 {
 	int iVar0;
 	
-	*uParam0 = joaat("u_f_y_danceburl_01");
+	*uParam0 = joaat("U_F_Y_DanceBurl_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43099,7 +43099,7 @@ void func_399(var uParam0)//Position - 0x28D3C
 {
 	int iVar0;
 	
-	*uParam0 = joaat("u_f_y_dancelthr_01");
+	*uParam0 = joaat("U_F_Y_DanceLthr_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43128,7 +43128,7 @@ void func_400(var uParam0)//Position - 0x28DFE
 {
 	int iVar0;
 	
-	*uParam0 = joaat("u_f_y_dancelthr_01");
+	*uParam0 = joaat("U_F_Y_DanceLthr_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43145,7 +43145,7 @@ void func_401(var uParam0)//Position - 0x28E52
 {
 	int iVar0;
 	
-	*uParam0 = joaat("u_f_y_dancerave_01");
+	*uParam0 = joaat("U_F_Y_DanceRave_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43172,7 +43172,7 @@ void func_402(var uParam0)//Position - 0x28F02
 {
 	int iVar0;
 	
-	*uParam0 = joaat("u_f_y_dancerave_01");
+	*uParam0 = joaat("U_F_Y_DanceRave_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43187,7 +43187,7 @@ void func_403(var uParam0)//Position - 0x28F44
 {
 	int iVar0;
 	
-	*uParam0 = joaat("u_m_y_danceburl_01");
+	*uParam0 = joaat("U_M_Y_DanceBurl_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43214,7 +43214,7 @@ void func_404(var uParam0)//Position - 0x28FF2
 {
 	int iVar0;
 	
-	*uParam0 = joaat("u_m_y_danceburl_01");
+	*uParam0 = joaat("U_M_Y_DanceBurl_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43229,7 +43229,7 @@ void func_405(var uParam0)//Position - 0x29034
 {
 	int iVar0;
 	
-	*uParam0 = joaat("u_m_y_dancelthr_01");
+	*uParam0 = joaat("U_M_Y_DanceLthr_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43262,7 +43262,7 @@ void func_406(var uParam0)//Position - 0x2911A
 {
 	int iVar0;
 	
-	*uParam0 = joaat("u_m_y_dancelthr_01");
+	*uParam0 = joaat("U_M_Y_DanceLthr_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43283,7 +43283,7 @@ void func_407(var uParam0)//Position - 0x29192
 {
 	int iVar0;
 	
-	*uParam0 = joaat("u_m_y_dancerave_01");
+	*uParam0 = joaat("U_M_Y_DanceRave_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43310,7 +43310,7 @@ void func_408(var uParam0)//Position - 0x29242
 {
 	int iVar0;
 	
-	*uParam0 = joaat("u_m_y_dancerave_01");
+	*uParam0 = joaat("U_M_Y_DanceRave_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43329,7 +43329,7 @@ void func_409(var uParam0)//Position - 0x292A8
 {
 	int iVar0;
 	
-	*uParam0 = joaat("s_m_m_bouncer_01");
+	*uParam0 = joaat("S_M_M_Bouncer_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43348,7 +43348,7 @@ void func_410(var uParam0)//Position - 0x2930E
 {
 	int iVar0;
 	
-	*uParam0 = joaat("s_m_m_bouncer_01");
+	*uParam0 = joaat("S_M_M_Bouncer_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43363,7 +43363,7 @@ void func_411(var uParam0)//Position - 0x29350
 {
 	int iVar0;
 	
-	*uParam0 = joaat("s_m_m_bouncer_01");
+	*uParam0 = joaat("S_M_M_Bouncer_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43382,7 +43382,7 @@ void func_412(var uParam0)//Position - 0x293B6
 {
 	int iVar0;
 	
-	*uParam0 = joaat("s_m_m_bouncer_01");
+	*uParam0 = joaat("S_M_M_Bouncer_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43402,7 +43402,7 @@ void func_413(var uParam0)//Position - 0x29428
 {
 	int iVar0;
 	
-	*uParam0 = joaat("s_m_y_clubbar_01");
+	*uParam0 = joaat("S_M_Y_ClubBar_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43422,7 +43422,7 @@ void func_415(var uParam0)//Position - 0x2947A
 {
 	int iVar0;
 	
-	*uParam0 = joaat("u_m_y_justin");
+	*uParam0 = joaat("U_M_Y_Justin");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43438,7 +43438,7 @@ void func_416(var uParam0)//Position - 0x294C4
 {
 	int iVar0;
 	
-	*uParam0 = joaat("ig_tonyprince");
+	*uParam0 = joaat("IG_TonyPrince");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43455,7 +43455,7 @@ void func_417(var uParam0)//Position - 0x29518
 {
 	int iVar0;
 	
-	*uParam0 = joaat("csb_jackhowitzer");
+	*uParam0 = joaat("CSB_JackHowitzer");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43471,7 +43471,7 @@ void func_418(var uParam0)//Position - 0x29562
 {
 	int iVar0;
 	
-	*uParam0 = joaat("ig_tracydisanto");
+	*uParam0 = joaat("IG_TracyDiSanto");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43497,7 +43497,7 @@ void func_419(var uParam0)//Position - 0x29607
 {
 	int iVar0;
 	
-	*uParam0 = joaat("ig_lazlow_2");
+	*uParam0 = joaat("IG_Lazlow_2");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43514,7 +43514,7 @@ void func_420(var uParam0)//Position - 0x29659
 {
 	int iVar0;
 	
-	*uParam0 = joaat("s_m_m_gaffer_01");
+	*uParam0 = joaat("S_M_M_Gaffer_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43539,7 +43539,7 @@ void func_421(var uParam0)//Position - 0x296F7
 {
 	int iVar0;
 	
-	*uParam0 = joaat("s_f_y_clubbar_01");
+	*uParam0 = joaat("S_F_Y_ClubBar_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43561,7 +43561,7 @@ void func_422(var uParam0)//Position - 0x29776
 {
 	int iVar0;
 	
-	*uParam0 = joaat("s_m_y_clubbar_01");
+	*uParam0 = joaat("S_M_Y_ClubBar_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43582,7 +43582,7 @@ void func_423(var uParam0)//Position - 0x297EA
 {
 	int iVar0;
 	
-	*uParam0 = joaat("s_f_y_clubbar_01");
+	*uParam0 = joaat("S_F_Y_ClubBar_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43597,7 +43597,7 @@ void func_424(var uParam0)//Position - 0x2982C
 {
 	int iVar0;
 	
-	*uParam0 = joaat("s_m_y_clubbar_01");
+	*uParam0 = joaat("S_M_Y_ClubBar_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43614,7 +43614,7 @@ void func_425(var uParam0)//Position - 0x2987E
 {
 	int iVar0;
 	
-	*uParam0 = joaat("s_f_y_clubbar_01");
+	*uParam0 = joaat("S_F_Y_ClubBar_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -43636,7 +43636,7 @@ void func_426(var uParam0)//Position - 0x298FB
 {
 	int iVar0;
 	
-	*uParam0 = joaat("s_m_m_bouncer_01");
+	*uParam0 = joaat("S_M_M_Bouncer_01");
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -51567,7 +51567,7 @@ int func_474()//Position - 0x31E11
 	Var1.f_38.f_1.f_2.f_2.f_2.f_2.f_2.f_2 = -1;
 	Var1.f_38.f_1.f_2.f_2.f_2.f_2.f_2.f_2.f_2 = -1;
 	Var1.f_38.f_1.f_2.f_2.f_2.f_2.f_2.f_2.f_2.f_2 = -1;
-	Var1.f_57 = joaat("weapon_unarmed");
+	Var1.f_57 = joaat("WEAPON_UNARMED");
 	iVar2 = 1;
 	iVar0 = 0;
 	while (iVar0 < 162)

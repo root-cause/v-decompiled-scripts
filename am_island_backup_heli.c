@@ -693,7 +693,7 @@ int func_27()//Position - 0x8F8
 	int iVar1;
 	int iVar2;
 	
-	iVar0 = joaat("a_m_m_farmer_01");
+	iVar0 = joaat("A_M_M_Farmer_01");
 	if (func_39(Local_77.f_1.f_1))
 	{
 		if (func_39(Local_77.f_1.f_3[1 /*2*/].f_1) && func_39(iVar0))
@@ -753,7 +753,7 @@ int func_27()//Position - 0x8F8
 
 void func_28(int iParam0, int iParam1, bool bParam2, bool bParam3)//Position - 0xB17
 {
-	WEAPON::GIVE_DELAYED_WEAPON_TO_PED(iParam0, joaat("weapon_assaultrifle"), 300, true);
+	WEAPON::GIVE_DELAYED_WEAPON_TO_PED(iParam0, joaat("WEAPON_ASSAULTRIFLE"), 300, true);
 	PED::SET_PED_COMBAT_ATTRIBUTES(iParam0, 5, true);
 	PED::SET_PED_COMBAT_ATTRIBUTES(iParam0, 3, false);
 	PED::SET_PED_COMBAT_MOVEMENT(iParam0, 2);

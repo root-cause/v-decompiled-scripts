@@ -4609,7 +4609,7 @@ int func_81(char* sParam0, int iParam1, bool bParam2)//Position - 0x68D4
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -4797,7 +4797,7 @@ int func_89()//Position - 0x6D33
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}
@@ -5170,28 +5170,28 @@ int func_107(int iParam0)//Position - 0x73B5
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("s_m_y_pilot_01");
+			return joaat("S_M_Y_Pilot_01");
 		
 		case 1:
-			return joaat("s_m_y_pilot_01");
+			return joaat("S_M_Y_Pilot_01");
 		
 		case 2:
-			return joaat("s_m_y_pilot_01");
+			return joaat("S_M_Y_Pilot_01");
 		
 		case 3:
-			return joaat("s_m_y_pilot_01");
+			return joaat("S_M_Y_Pilot_01");
 		
 		case 7:
-			return joaat("a_m_y_hippy_01");
+			return joaat("A_M_Y_Hippy_01");
 		
 		case 9:
-			return joaat("s_m_y_pilot_01");
+			return joaat("S_M_Y_Pilot_01");
 		
 		case 10:
-			return joaat("s_m_y_pilot_01");
+			return joaat("S_M_Y_Pilot_01");
 		
 		case 11:
-			return joaat("a_m_m_genfat_02");
+			return joaat("A_M_M_GenFat_02");
 		
 		default:
 	}
@@ -5651,7 +5651,7 @@ bool func_128()//Position - 0x7BF0
 		return 0;
 	}
 	WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar0, true);
-	if (((iVar0 == 0 || iVar0 == joaat("weapon_unarmed")) || iVar0 == joaat("weapon_electric_fence")) || iVar0 == joaat("gadget_parachute"))
+	if (((iVar0 == 0 || iVar0 == joaat("WEAPON_UNARMED")) || iVar0 == joaat("WEAPON_ELECTRIC_FENCE")) || iVar0 == joaat("GADGET_PARACHUTE"))
 	{
 		bVar1 = false;
 	}

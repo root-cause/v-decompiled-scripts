@@ -1275,10 +1275,10 @@ void func_19()//Position - 0x15C0
 	int iVar0;
 	
 	iLocal_231 = 0;
-	STATS::STAT_GET_INT(joaat("num_epsilon_step"), &iVar0, -1);
+	STATS::STAT_GET_INT(joaat("NUM_EPSILON_STEP"), &iVar0, -1);
 	if (iVar0 < (6 + func_3()))
 	{
-		STATS::STAT_SET_INT(joaat("num_epsilon_step"), (6 + func_3()), true);
+		STATS::STAT_SET_INT(joaat("NUM_EPSILON_STEP"), (6 + func_3()), true);
 		func_20(23, (6 + func_3()));
 	}
 }
@@ -1440,7 +1440,7 @@ int func_23(char* sParam0, int iParam1, bool bParam2)//Position - 0x16B4
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -1637,7 +1637,7 @@ int func_32()//Position - 0x1B3B
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}
@@ -3297,10 +3297,10 @@ void func_96()//Position - 0x39AA
 		GRAPHICS::SET_SCALEFORM_MOVIE_AS_NO_LONGER_NEEDED(&iLocal_230);
 		iLocal_230 = 0;
 	}
-	STATS::STAT_GET_INT(joaat("num_epsilon_step"), &iVar0, -1);
+	STATS::STAT_GET_INT(joaat("NUM_EPSILON_STEP"), &iVar0, -1);
 	if (iVar0 < (6 + func_3()))
 	{
-		STATS::STAT_SET_INT(joaat("num_epsilon_step"), (6 + func_3()), true);
+		STATS::STAT_SET_INT(joaat("NUM_EPSILON_STEP"), (6 + func_3()), true);
 		func_20(23, (6 + func_3()));
 	}
 	SCRIPT::TERMINATE_THIS_THREAD();

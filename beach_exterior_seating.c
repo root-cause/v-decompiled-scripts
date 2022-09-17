@@ -2664,7 +2664,7 @@ bool func_11()//Position - 0x9BC
 
 int func_12(int iParam0)//Position - 0x9CC
 {
-	if (ENTITY::GET_ENTITY_MODEL(PLAYER::GET_PLAYER_PED(iParam0)) == joaat("mp_f_freemode_01"))
+	if (ENTITY::GET_ENTITY_MODEL(PLAYER::GET_PLAYER_PED(iParam0)) == joaat("MP_F_Freemode_01"))
 	{
 		return 1;
 	}
@@ -2839,7 +2839,7 @@ int func_17(int iParam0)//Position - 0xD45
 		if (!PED::IS_PED_INJURED(iParam0))
 		{
 			WEAPON::GET_CURRENT_PED_WEAPON(iParam0, &iVar0, true);
-			if (((iVar0 == joaat("weapon_sniperrifle") || iVar0 == joaat("weapon_heavysniper")) || iVar0 == joaat("weapon_marksmanrifle")) || iVar0 == joaat("weapon_heavysniper_mk2"))
+			if (((iVar0 == joaat("WEAPON_SNIPERRIFLE") || iVar0 == joaat("WEAPON_HEAVYSNIPER")) || iVar0 == joaat("WEAPON_MARKSMANRIFLE")) || iVar0 == joaat("WEAPON_HEAVYSNIPER_MK2"))
 			{
 				return 1;
 			}
@@ -2961,9 +2961,9 @@ void func_26(var uParam0)//Position - 0xFA0
 			HUD::HIDE_HUD_COMPONENT_THIS_FRAME(2);
 			HUD::_HUD_WEAPON_WHEEL_IGNORE_SELECTION();
 			func_30();
-			if (WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar0, true) && iVar0 != joaat("weapon_unarmed"))
+			if (WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar0, true) && iVar0 != joaat("WEAPON_UNARMED"))
 			{
-				WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("weapon_unarmed"), true);
+				WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"), true);
 			}
 			PAD::DISABLE_CONTROL_ACTION(0, 37, true);
 			func_28(1);
@@ -3687,7 +3687,7 @@ void func_47(var uParam0, int iParam1, char* sParam2, int iParam3, char* sParam4
 
 bool func_48(int iParam0)//Position - 0x1B13
 {
-	return func_49(iParam0) == joaat("weapon_minigun");
+	return func_49(iParam0) == joaat("WEAPON_MINIGUN");
 }
 
 int func_49(int iParam0)//Position - 0x1B27

@@ -569,7 +569,7 @@ void __EntryFunction__()//Position - 0x0
 		}
 	}
 	iVar0 = 1;
-	func_122(&uLocal_244, joaat("s_m_m_bouncer_01"));
+	func_122(&uLocal_244, joaat("S_M_M_Bouncer_01"));
 	func_119(&uLocal_244);
 	PLAYER::CLEAR_PLAYER_HAS_DAMAGED_AT_LEAST_ONE_PED(PLAYER::GET_PLAYER_INDEX());
 	MISC::CLEAR_AREA_OF_PEDS(130.8067f, -1299.166f, 28.2327f, 2f, 0);
@@ -613,7 +613,7 @@ void __EntryFunction__()//Position - 0x0
 		if (iVar0 && func_103() > 1)
 		{
 			iVar0 = 0;
-			func_97(&uLocal_244, joaat("s_m_m_bouncer_01"), 1);
+			func_97(&uLocal_244, joaat("S_M_M_Bouncer_01"), 1);
 		}
 		switch (func_103())
 		{
@@ -714,7 +714,7 @@ void func_6()//Position - 0x389
 		return;
 	}
 	WEAPON::GET_CURRENT_PED_WEAPON(iLocal_69, &iVar0, true);
-	if (((func_20() && PED::IS_PED_IN_COMBAT(iLocal_69, PLAYER::PLAYER_PED_ID())) && !PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true)) && iVar0 != joaat("weapon_pistol"))
+	if (((func_20() && PED::IS_PED_IN_COMBAT(iLocal_69, PLAYER::PLAYER_PED_ID())) && !PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true)) && iVar0 != joaat("WEAPON_PISTOL"))
 	{
 		func_18(16);
 		func_21();
@@ -876,7 +876,7 @@ int func_20()//Position - 0x639
 		return 0;
 	}
 	WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar0, true);
-	if ((((iVar0 == 0 || iVar0 == joaat("weapon_unarmed")) || iVar0 == joaat("weapon_electric_fence")) || iVar0 == joaat("gadget_parachute")) || iVar0 == joaat("object"))
+	if ((((iVar0 == 0 || iVar0 == joaat("WEAPON_UNARMED")) || iVar0 == joaat("WEAPON_ELECTRIC_FENCE")) || iVar0 == joaat("GADGET_PARACHUTE")) || iVar0 == joaat("OBJECT"))
 	{
 		return 0;
 	}
@@ -907,29 +907,29 @@ int func_21()//Position - 0x6A0
 	}
 	if (func_15(16, -1))
 	{
-		WEAPON::GIVE_WEAPON_TO_PED(iLocal_69, joaat("weapon_pistol"), -1, false, true);
-		WEAPON::SET_CURRENT_PED_WEAPON(iLocal_69, joaat("weapon_pistol"), true);
+		WEAPON::GIVE_WEAPON_TO_PED(iLocal_69, joaat("WEAPON_PISTOL"), -1, false, true);
+		WEAPON::SET_CURRENT_PED_WEAPON(iLocal_69, joaat("WEAPON_PISTOL"), true);
 		TASK::TASK_COMBAT_PED(iLocal_69, PLAYER::PLAYER_PED_ID(), 0, 16);
 	}
 	else if (func_15(8, -1))
 	{
 		WEAPON::REMOVE_ALL_PED_WEAPONS(iLocal_69, true);
-		WEAPON::SET_CURRENT_PED_WEAPON(iLocal_69, joaat("weapon_unarmed"), true);
+		WEAPON::SET_CURRENT_PED_WEAPON(iLocal_69, joaat("WEAPON_UNARMED"), true);
 		PED::SET_PED_CAN_SWITCH_WEAPON(iLocal_69, false);
 		TASK::TASK_COMBAT_PED(iLocal_69, PLAYER::PLAYER_PED_ID(), 0, 16);
 	}
 	else if (!(func_20() && !PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true)))
 	{
 		WEAPON::REMOVE_ALL_PED_WEAPONS(iLocal_69, true);
-		WEAPON::SET_CURRENT_PED_WEAPON(iLocal_69, joaat("weapon_unarmed"), true);
+		WEAPON::SET_CURRENT_PED_WEAPON(iLocal_69, joaat("WEAPON_UNARMED"), true);
 		PED::SET_PED_CAN_SWITCH_WEAPON(iLocal_69, false);
 		TASK::TASK_COMBAT_PED(iLocal_69, PLAYER::PLAYER_PED_ID(), 0, 16);
 		func_18(8);
 	}
 	else
 	{
-		WEAPON::GIVE_WEAPON_TO_PED(iLocal_69, joaat("weapon_pistol"), -1, false, true);
-		WEAPON::SET_CURRENT_PED_WEAPON(iLocal_69, joaat("weapon_pistol"), true);
+		WEAPON::GIVE_WEAPON_TO_PED(iLocal_69, joaat("WEAPON_PISTOL"), -1, false, true);
+		WEAPON::SET_CURRENT_PED_WEAPON(iLocal_69, joaat("WEAPON_PISTOL"), true);
 		TASK::TASK_COMBAT_PED(iLocal_69, PLAYER::PLAYER_PED_ID(), 0, 16);
 		func_18(16);
 	}
@@ -1205,9 +1205,9 @@ void func_35()//Position - 0xC5D
 			iVar1 = 0;
 		}
 	}
-	if (iVar0 != joaat("weapon_unarmed") && iVar1)
+	if (iVar0 != joaat("WEAPON_UNARMED") && iVar1)
 	{
-		WEAPON::SET_CURRENT_PED_WEAPON(iLocal_69, joaat("weapon_unarmed"), false);
+		WEAPON::SET_CURRENT_PED_WEAPON(iLocal_69, joaat("WEAPON_UNARMED"), false);
 		WEAPON::REMOVE_ALL_PED_WEAPONS(iLocal_69, true);
 	}
 	if (!func_15(4, -1))
@@ -1876,7 +1876,7 @@ int func_59(int iParam0)//Position - 0x1756
 
 int func_60(int iParam0, int iParam1, int iParam2)//Position - 0x1778
 {
-	if (iParam0 == joaat("player_zero"))
+	if (iParam0 == joaat("Player_Zero"))
 	{
 		if (iParam1 == 4)
 		{
@@ -1893,7 +1893,7 @@ int func_60(int iParam0, int iParam1, int iParam2)//Position - 0x1778
 			}
 		}
 	}
-	else if (iParam0 == joaat("player_one"))
+	else if (iParam0 == joaat("Player_One"))
 	{
 		if (iParam1 == 4)
 		{
@@ -1910,7 +1910,7 @@ int func_60(int iParam0, int iParam1, int iParam2)//Position - 0x1778
 			}
 		}
 	}
-	else if (iParam0 == joaat("player_two"))
+	else if (iParam0 == joaat("Player_Two"))
 	{
 		if (iParam1 == 4)
 		{
@@ -2201,7 +2201,7 @@ int func_70(char* sParam0, int iParam1, bool bParam2)//Position - 0x1B07
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -2398,7 +2398,7 @@ int func_79()//Position - 0x1F8E
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}
@@ -2712,9 +2712,9 @@ int func_94()//Position - 0x240C
 	}
 	if (func_44(&uLocal_244))
 	{
-		iLocal_69 = PED::CREATE_PED(26, joaat("s_m_m_bouncer_01"), func_34() - Vector(1f, 0f, 0f), func_42(), true, true);
+		iLocal_69 = PED::CREATE_PED(26, joaat("S_M_M_Bouncer_01"), func_34() - Vector(1f, 0f, 0f), func_42(), true, true);
 		func_95(1);
-		WEAPON::GIVE_WEAPON_TO_PED(iLocal_69, joaat("weapon_pistol"), -1, false, true);
+		WEAPON::GIVE_WEAPON_TO_PED(iLocal_69, joaat("WEAPON_PISTOL"), -1, false, true);
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_69, true);
 		PED::SET_PED_KEEP_TASK(iLocal_69, true);
 		return 1;
@@ -3375,7 +3375,7 @@ void func_126(var uParam0, int iParam1)//Position - 0x2DD0
 
 void func_127()//Position - 0x2DE8
 {
-	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("s_m_m_bouncer_01"));
+	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("S_M_M_Bouncer_01"));
 	if (ENTITY::DOES_ENTITY_EXIST(iLocal_69))
 	{
 		if (ENTITY::IS_ENTITY_A_MISSION_ENTITY(iLocal_69) && func_131())

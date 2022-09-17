@@ -751,7 +751,7 @@ void __EntryFunction__()//Position - 0x0
 							StringCopy(&Var7, "", 64);
 							if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 							{
-								WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("weapon_unarmed"), true);
+								WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"), true);
 								if (func_63(0, &Var7))
 								{
 									TASK::TASK_GO_STRAIGHT_TO_COORD(PLAYER::PLAYER_PED_ID(), Local_508, 1f, 5000, ENTITY::GET_ENTITY_HEADING(iScriptParam_538), 0.25f);
@@ -1639,7 +1639,7 @@ int func_10(int iParam0, int iParam1)//Position - 0x1365
 		{
 			return 0;
 		}
-		if (NETSHOPPING::_NET_GAMESERVER_TRANSFER_BANK_TO_WALLET(func_18(joaat("mpply_last_mp_char")), iParam1))
+		if (NETSHOPPING::_NET_GAMESERVER_TRANSFER_BANK_TO_WALLET(func_18(joaat("MPPLY_LAST_MP_CHAR")), iParam1))
 		{
 			iVar3 = NETSHOPPING::_NET_GAMESERVER_TRANSFER_CASH_GET_STATUS();
 			while (iVar3 == 1 && !func_64(iParam0, 1))
@@ -2382,7 +2382,7 @@ int func_20(int iParam0, int iParam1)//Position - 0x2329
 		{
 			return 0;
 		}
-		if (NETSHOPPING::_NET_GAMESERVER_TRANSFER_WALLET_TO_BANK(func_18(joaat("mpply_last_mp_char")), iParam1))
+		if (NETSHOPPING::_NET_GAMESERVER_TRANSFER_WALLET_TO_BANK(func_18(joaat("MPPLY_LAST_MP_CHAR")), iParam1))
 		{
 			iVar3 = NETSHOPPING::_NET_GAMESERVER_TRANSFER_CASH_GET_STATUS_2();
 			while (iVar3 == 1 && !func_64(iParam0, 1))
@@ -2995,7 +2995,7 @@ int func_29(int iParam0)//Position - 0x2FE8
 	iVar3 = 0;
 	while (iVar2 > 0)
 	{
-		if (Global_2359296[func_30() /*5567*/].f_5390.f_1[iVar1] > 0 && Global_2359296[func_30() /*5567*/].f_5390.f_132[iVar1] != joaat("money_spent_betting"))
+		if (Global_2359296[func_30() /*5567*/].f_5390.f_1[iVar1] > 0 && Global_2359296[func_30() /*5567*/].f_5390.f_132[iVar1] != joaat("MONEY_SPENT_BETTING"))
 		{
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar0);
@@ -3048,27 +3048,27 @@ int func_29(int iParam0)//Position - 0x2FE8
 						iVar4 = Global_2359296[func_30() /*5567*/].f_5390.f_132[iVar1];
 						switch (iVar4)
 						{
-							case joaat("money_spent_contact_service"):
+							case joaat("MONEY_SPENT_CONTACT_SERVICE"):
 								func_31("MONEY_SPENT_CONTACT_SERVICE");
 								break;
 							
-							case joaat("money_spent_property_util"):
+							case joaat("MONEY_SPENT_PROPERTY_UTIL"):
 								func_31("MONEY_SPENT_PROPERTY_UTIL");
 								break;
 							
-							case joaat("money_spent_job_activity"):
+							case joaat("MONEY_SPENT_JOB_ACTIVITY"):
 								func_31("MONEY_SPENT_JOB_ACTIVITY");
 								break;
 							
-							case joaat("money_spent_betting"):
+							case joaat("MONEY_SPENT_BETTING"):
 								func_31("MONEY_SPENT_BETTING");
 								break;
 							
-							case joaat("money_spent_style_ent"):
+							case joaat("MONEY_SPENT_STYLE_ENT"):
 								func_31("MONEY_SPENT_STYLE_ENT");
 								break;
 							
-							case joaat("money_spent_healthcare"):
+							case joaat("MONEY_SPENT_HEALTHCARE"):
 								func_31("MONEY_SPENT_HEALTHCARE");
 								break;
 							
@@ -3076,11 +3076,11 @@ int func_29(int iParam0)//Position - 0x2FE8
 								func_31("MONEY_SPENT_FROM_DEBUG");
 								break;
 							
-							case joaat("money_spent_dropped_stolen"):
+							case joaat("MONEY_SPENT_DROPPED_STOLEN"):
 								func_31("MONEY_SPENT_DROPPED_STOLEN");
 								break;
 							
-							case joaat("money_spent_veh_maintenance"):
+							case joaat("MONEY_SPENT_VEH_MAINTENANCE"):
 								func_31("MONEY_SPENT_VEH_MAINTENANCE");
 								break;
 							
@@ -3105,35 +3105,35 @@ int func_29(int iParam0)//Position - 0x2FE8
 						iVar5 = Global_2359296[func_30() /*5567*/].f_5390.f_132[iVar1];
 						switch (iVar5)
 						{
-							case joaat("money_earn_jobs"):
+							case joaat("MONEY_EARN_JOBS"):
 								func_31("MONEY_EARN_JOBS");
 								break;
 							
-							case joaat("money_earn_selling_veh"):
+							case joaat("MONEY_EARN_SELLING_VEH"):
 								func_31("MONEY_EARN_SELLING_VEH");
 								break;
 							
-							case joaat("money_earn_betting"):
+							case joaat("MONEY_EARN_BETTING"):
 								func_31("MONEY_EARN_BETTING");
 								break;
 							
-							case joaat("money_earn_good_sport"):
+							case joaat("MONEY_EARN_GOOD_SPORT"):
 								func_31("MONEY_EARN_GOOD_SPORT");
 								break;
 							
-							case joaat("money_earn_picked_up"):
+							case joaat("MONEY_EARN_PICKED_UP"):
 								func_31("MONEY_EARN_PICKED_UP");
 								break;
 							
-							case joaat("money_earn_shared"):
+							case joaat("MONEY_EARN_SHARED"):
 								func_31("MONEY_EARN_SHARED");
 								break;
 							
-							case joaat("money_earn_jobshared"):
+							case joaat("MONEY_EARN_JOBSHARED"):
 								func_31("MONEY_EARN_JOBSHARED");
 								break;
 							
-							case joaat("money_earn_rockstar_award"):
+							case joaat("MONEY_EARN_ROCKSTAR_AWARD"):
 								func_31("MONEY_EARN_ROCKSTAR_AWARD");
 								break;
 							
@@ -4179,7 +4179,7 @@ void func_55(int iParam0)//Position - 0x43D3
 	STREAMING::REQUEST_ANIM_DICT(&sVar3);
 	STREAMING::REQUEST_ANIM_DICT(&sVar0);
 	iVar4 = 3;
-	if (ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()) == joaat("mp_f_freemode_01"))
+	if (ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()) == joaat("MP_F_Freemode_01"))
 	{
 		iVar4 = 3;
 	}
@@ -4441,7 +4441,7 @@ int func_63(int iParam0, char* sParam1)//Position - 0x4B59
 		return 0;
 	}
 	iVar0 = ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID());
-	if (iVar0 == joaat("mp_m_freemode_01"))
+	if (iVar0 == joaat("MP_M_Freemode_01"))
 	{
 		switch (iParam0)
 		{
@@ -4482,7 +4482,7 @@ int func_63(int iParam0, char* sParam1)//Position - 0x4B59
 				break;
 		}
 	}
-	else if (iVar0 == joaat("mp_f_freemode_01"))
+	else if (iVar0 == joaat("MP_F_Freemode_01"))
 	{
 		switch (iParam0)
 		{
@@ -4774,7 +4774,7 @@ void func_70(int iParam0, int iParam1, char* sParam2, int iParam3, char* sParam4
 
 bool func_71(int iParam0)//Position - 0x50E9
 {
-	return func_72(iParam0) == joaat("weapon_minigun");
+	return func_72(iParam0) == joaat("WEAPON_MINIGUN");
 }
 
 int func_72(int iParam0)//Position - 0x50FD
@@ -4801,7 +4801,7 @@ int func_73(int iParam0)//Position - 0x5111
 		if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 		{
 			iVar1 = ENTITY::GET_ENTITY_MODEL(iVar0);
-			if (iVar1 == joaat("mp_m_freemode_01") || iVar1 == joaat("mp_f_freemode_01"))
+			if (iVar1 == joaat("MP_M_Freemode_01") || iVar1 == joaat("MP_F_Freemode_01"))
 			{
 				return 0;
 			}

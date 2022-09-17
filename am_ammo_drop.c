@@ -1726,10 +1726,10 @@ int func_45()//Position - 0x1ACB
 				if (!NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_60.f_4))
 				{
 					iVar2 = 0;
-					iVar3 = joaat("pickup_ammo_bullet_mp");
+					iVar3 = joaat("PICKUP_AMMO_BULLET_MP");
 					if (Local_60.f_18 == 1)
 					{
-						iVar3 = joaat("pickup_weapon_minigun");
+						iVar3 = joaat("PICKUP_WEAPON_MINIGUN");
 					}
 					if (Local_60.f_18 == 0)
 					{
@@ -1914,7 +1914,7 @@ int func_47(char* sParam0, int iParam1, bool bParam2)//Position - 0x1D98
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -2101,7 +2101,7 @@ int func_54()//Position - 0x21F5
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}
@@ -2556,7 +2556,7 @@ void func_77()//Position - 0x2903
 
 int func_78()//Position - 0x2991
 {
-	if (func_105(joaat("cuban800")) && func_105(joaat("s_m_m_pilot_02")))
+	if (func_105(joaat("cuban800")) && func_105(joaat("S_M_M_Pilot_02")))
 	{
 		if (func_103(&uLocal_70, 4000, 0))
 		{
@@ -2571,11 +2571,11 @@ int func_78()//Position - 0x2991
 
 int func_79()//Position - 0x29D5
 {
-	if ((!NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_60.f_3) && func_105(joaat("s_m_m_pilot_02"))) && NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_60.f_2))
+	if ((!NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_60.f_3) && func_105(joaat("S_M_M_Pilot_02"))) && NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_60.f_2))
 	{
 		if (func_35(Local_60.f_2))
 		{
-			if (func_80(&(Local_60.f_3), Local_60.f_2, 22, joaat("s_m_m_pilot_02"), -1, 1, 1, 1))
+			if (func_80(&(Local_60.f_3), Local_60.f_2, 22, joaat("S_M_M_Pilot_02"), -1, 1, 1, 1))
 			{
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(NETWORK::NET_TO_PED(Local_60.f_3), true);
 				PED::SET_PED_RELATIONSHIP_GROUP_HASH(NETWORK::NET_TO_PED(Local_60.f_3), Global_1837194);
@@ -2592,7 +2592,7 @@ int func_79()//Position - 0x29D5
 	{
 		return 0;
 	}
-	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("s_m_m_pilot_02"));
+	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("S_M_M_Pilot_02"));
 	return 1;
 }
 
@@ -3274,7 +3274,7 @@ void func_109()//Position - 0x3790
 		if (func_37(PLAYER::PLAYER_ID(), 1, 1))
 		{
 			iVar1 = func_112(PLAYER::PLAYER_PED_ID());
-			if (((((((((((((((((iVar1 == joaat("weapon_unarmed") || iVar1 == joaat("weapon_flare")) || iVar1 == joaat("weapon_knife")) || iVar1 == joaat("weapon_nightstick")) || iVar1 == joaat("weapon_bat")) || iVar1 == joaat("weapon_hammer")) || iVar1 == joaat("weapon_golfclub")) || iVar1 == joaat("weapon_crowbar")) || iVar1 == joaat("weapon_molotov")) || iVar1 == joaat("weapon_grenade")) || iVar1 == joaat("weapon_grenadelauncher")) || iVar1 == joaat("weapon_grenadelauncher_smoke")) || iVar1 == joaat("weapon_petrolcan")) || iVar1 == joaat("weapon_rpg")) || iVar1 == joaat("weapon_smokegrenade")) || iVar1 == joaat("weapon_stickybomb")) || iVar1 == joaat("weapon_bzgas")) || iVar1 == joaat("weapon_bottle"))
+			if (((((((((((((((((iVar1 == joaat("WEAPON_UNARMED") || iVar1 == joaat("WEAPON_FLARE")) || iVar1 == joaat("WEAPON_KNIFE")) || iVar1 == joaat("WEAPON_NIGHTSTICK")) || iVar1 == joaat("WEAPON_BAT")) || iVar1 == joaat("WEAPON_HAMMER")) || iVar1 == joaat("WEAPON_GOLFCLUB")) || iVar1 == joaat("WEAPON_CROWBAR")) || iVar1 == joaat("WEAPON_MOLOTOV")) || iVar1 == joaat("WEAPON_GRENADE")) || iVar1 == joaat("WEAPON_GRENADELAUNCHER")) || iVar1 == joaat("WEAPON_GRENADELAUNCHER_SMOKE")) || iVar1 == joaat("WEAPON_PETROLCAN")) || iVar1 == joaat("WEAPON_RPG")) || iVar1 == joaat("WEAPON_SMOKEGRENADE")) || iVar1 == joaat("WEAPON_STICKYBOMB")) || iVar1 == joaat("WEAPON_BZGAS")) || iVar1 == joaat("WEAPON_BOTTLE"))
 			{
 				iVar1 = Global_1574580;
 			}
@@ -3326,7 +3326,7 @@ void func_109()//Position - 0x3790
 
 int func_110(int iParam0)//Position - 0x3995
 {
-	if ((((((((((iParam0 == joaat("gadget_parachute") || iParam0 == joaat("weapon_knife")) || iParam0 == joaat("weapon_bat")) || iParam0 == joaat("weapon_crowbar")) || iParam0 == joaat("weapon_nightstick")) || iParam0 == joaat("weapon_golfclub")) || iParam0 == joaat("weapon_hammer")) || iParam0 == joaat("weapon_bat")) || iParam0 == joaat("weapon_bottle")) || iParam0 == joaat("weapon_dagger")) || iParam0 == joaat("weapon_hatchet"))
+	if ((((((((((iParam0 == joaat("GADGET_PARACHUTE") || iParam0 == joaat("WEAPON_KNIFE")) || iParam0 == joaat("WEAPON_BAT")) || iParam0 == joaat("WEAPON_CROWBAR")) || iParam0 == joaat("WEAPON_NIGHTSTICK")) || iParam0 == joaat("WEAPON_GOLFCLUB")) || iParam0 == joaat("WEAPON_HAMMER")) || iParam0 == joaat("WEAPON_BAT")) || iParam0 == joaat("WEAPON_BOTTLE")) || iParam0 == joaat("WEAPON_DAGGER")) || iParam0 == joaat("WEAPON_HATCHET"))
 	{
 		return 0;
 	}
@@ -3335,7 +3335,7 @@ int func_110(int iParam0)//Position - 0x3995
 
 int func_111(int iParam0)//Position - 0x3A39
 {
-	if (iParam0 == joaat("weapon_flare"))
+	if (iParam0 == joaat("WEAPON_FLARE"))
 	{
 		return 0;
 	}

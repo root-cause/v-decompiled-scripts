@@ -482,21 +482,21 @@ void func_7()//Position - 0x6C5
 {
 	if (ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), Local_47, 50f, 50f, 50f, false, true, 0))
 	{
-		STREAMING::REQUEST_MODEL(joaat("a_m_o_tramp_01"));
-		STREAMING::REQUEST_MODEL(joaat("g_m_y_strpunk_01"));
+		STREAMING::REQUEST_MODEL(joaat("A_M_O_Tramp_01"));
+		STREAMING::REQUEST_MODEL(joaat("G_M_Y_StrPunk_01"));
 		STREAMING::REQUEST_ANIM_DICT("amb@drug_dealer");
-		while ((!STREAMING::HAS_MODEL_LOADED(joaat("a_m_o_tramp_01")) || !STREAMING::HAS_MODEL_LOADED(joaat("g_m_y_strpunk_01"))) || !STREAMING::HAS_ANIM_DICT_LOADED("amb@drug_dealer"))
+		while ((!STREAMING::HAS_MODEL_LOADED(joaat("A_M_O_Tramp_01")) || !STREAMING::HAS_MODEL_LOADED(joaat("G_M_Y_StrPunk_01"))) || !STREAMING::HAS_ANIM_DICT_LOADED("amb@drug_dealer"))
 		{
 			SYSTEM::WAIT(0);
 		}
 		PED::ADD_RELATIONSHIP_GROUP("homeless", &iLocal_49);
 		Local_48.f_2 = (Local_47.f_2 - 1f);
-		iLocal_50 = PED::CREATE_PED(19, joaat("a_m_o_tramp_01"), Local_47.f_0, Local_47.f_1, Local_48.f_2, 0f, true, true);
+		iLocal_50 = PED::CREATE_PED(19, joaat("A_M_O_Tramp_01"), Local_47.f_0, Local_47.f_1, Local_48.f_2, 0f, true, true);
 		PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_50, iLocal_49);
 		if (iLocal_44 == 1)
 		{
 			Local_48 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iLocal_50, 0.8f, 0.8f, -1f) };
-			iLocal_51 = PED::CREATE_PED(5, joaat("g_m_y_strpunk_01"), Local_48, 0f, true, true);
+			iLocal_51 = PED::CREATE_PED(5, joaat("G_M_Y_StrPunk_01"), Local_48, 0f, true, true);
 			PED::ADD_RELATIONSHIP_GROUP("homeless", &iLocal_49);
 			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_51, iLocal_49);
 			if (!ENTITY::IS_ENTITY_DEAD(iLocal_50, false))

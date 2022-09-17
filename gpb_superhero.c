@@ -579,7 +579,7 @@ void __EntryFunction__()//Position - 0x0
 		}
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((((PLAYER::IS_PLAYER_FREE_AIMING_AT_ENTITY(PLAYER::PLAYER_ID(), iLocal_208) || PLAYER::IS_PLAYER_TARGETTING_ENTITY(PLAYER::PLAYER_ID(), iLocal_208)) && fVar12 < 25f) && func_88(PLAYER::PLAYER_PED_ID()) != joaat("weapon_unarmed")) && func_85(iLocal_208, PLAYER::PLAYER_PED_ID(), 1126825984, 0))
+			if ((((PLAYER::IS_PLAYER_FREE_AIMING_AT_ENTITY(PLAYER::PLAYER_ID(), iLocal_208) || PLAYER::IS_PLAYER_TARGETTING_ENTITY(PLAYER::PLAYER_ID(), iLocal_208)) && fVar12 < 25f) && func_88(PLAYER::PLAYER_PED_ID()) != joaat("WEAPON_UNARMED")) && func_85(iLocal_208, PLAYER::PLAYER_PED_ID(), 1126825984, 0))
 			{
 				if (!func_89())
 				{
@@ -1786,7 +1786,7 @@ int func_34(char* sParam0, int iParam1, bool bParam2)//Position - 0x1B9E
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -1983,7 +1983,7 @@ int func_43()//Position - 0x2023
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}
@@ -3061,7 +3061,7 @@ void func_104()//Position - 0x31C5
 
 void func_105()//Position - 0x31E3
 {
-	iLocal_36 = joaat("u_m_y_imporage");
+	iLocal_36 = joaat("U_M_Y_ImpoRage");
 	StringCopy(&Local_204, "PBSH", 8);
 	StringCopy(&Local_205, "IMPORAGE", 16);
 	StringCopy(&Local_202, "Special_Ped@Impotent_Rage", 64);

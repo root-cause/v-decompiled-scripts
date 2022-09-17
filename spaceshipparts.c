@@ -90,7 +90,7 @@ void __EntryFunction__()//Position - 0x0
 	func_52(14);
 	func_50();
 	func_49(&Local_42, 0, joaat("prop_power_cell"), "SSHIP_COLLECT");
-	func_47(&Local_42, joaat("num_hidden_packages_1"), 755, 50);
+	func_47(&Local_42, joaat("NUM_HIDDEN_PACKAGES_1"), 755, 50);
 	while (true)
 	{
 		SYSTEM::WAIT(0);
@@ -477,7 +477,7 @@ int func_16(var uParam0, int iParam1)//Position - 0x86E
 				{
 					if (uParam0->f_10 == iLocal_49)
 					{
-						func_43(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("pickup_custom_script"), 1, 0, 2);
+						func_43(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 1, 0, 2);
 						if (OBJECT::DOES_PICKUP_EXIST((iParam1[uParam0->f_10 /*11*/])->f_1))
 						{
 							INTERIOR::ADD_PICKUP_TO_INTERIOR_ROOM_BY_NAME((iParam1[uParam0->f_10 /*11*/])->f_1, "GtaMloRoomTun5");
@@ -485,11 +485,11 @@ int func_16(var uParam0, int iParam1)//Position - 0x86E
 					}
 					else if ((((uParam0->f_10 == 6 || uParam0->f_10 == 14) || uParam0->f_10 == 21) || uParam0->f_10 == 34) || uParam0->f_10 == 39)
 					{
-						func_43(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("pickup_custom_script"), 0, 1, 2);
+						func_43(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 0, 1, 2);
 					}
 					else
 					{
-						func_43(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("pickup_custom_script"), 0, 0, 2);
+						func_43(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 0, 0, 2);
 					}
 				}
 			}
@@ -644,15 +644,15 @@ int func_19(int iParam0)//Position - 0xBE4
 	}
 	else if (iParam0 == 6)
 	{
-		STATS::STAT_GET_INT(joaat("num_hidden_packages_5"), &iVar0, -1);
+		STATS::STAT_GET_INT(joaat("NUM_HIDDEN_PACKAGES_5"), &iVar0, -1);
 	}
 	else if (iParam0 == 7)
 	{
-		STATS::STAT_GET_INT(joaat("num_hidden_packages_7"), &iVar0, -1);
+		STATS::STAT_GET_INT(joaat("NUM_HIDDEN_PACKAGES_7"), &iVar0, -1);
 	}
 	else if (iParam0 == 8)
 	{
-		STATS::STAT_GET_INT(joaat("num_hidden_packages_6"), &iVar0, -1);
+		STATS::STAT_GET_INT(joaat("NUM_HIDDEN_PACKAGES_6"), &iVar0, -1);
 	}
 	else
 	{
@@ -872,7 +872,7 @@ void func_31()//Position - 0xF81
 	{
 		iVar3 = (iVar1 * 100 / iVar2);
 	}
-	STATS::STAT_SET_INT(joaat("percent_hidden_packages"), iVar3, true);
+	STATS::STAT_SET_INT(joaat("PERCENT_HIDDEN_PACKAGES"), iVar3, true);
 }
 
 int func_32(int iParam0, int iParam1)//Position - 0x1024
@@ -903,21 +903,21 @@ int func_33(int iParam0)//Position - 0x1075
 {
 	if (iParam0 == 3)
 	{
-		return joaat("num_hidden_packages_3");
+		return joaat("NUM_HIDDEN_PACKAGES_3");
 	}
 	if (iParam0 == 1)
 	{
-		return joaat("num_hidden_packages_0");
+		return joaat("NUM_HIDDEN_PACKAGES_0");
 	}
 	if (iParam0 == 0)
 	{
-		return joaat("num_hidden_packages_1");
+		return joaat("NUM_HIDDEN_PACKAGES_1");
 	}
 	if (iParam0 == 5)
 	{
-		return joaat("num_hidden_packages_4");
+		return joaat("NUM_HIDDEN_PACKAGES_4");
 	}
-	return joaat("num_hidden_packages_2");
+	return joaat("NUM_HIDDEN_PACKAGES_2");
 }
 
 void func_34(var uParam0)//Position - 0x10C6
@@ -1166,7 +1166,7 @@ void func_43(var uParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, 
 						if (bParam4)
 						{
 							MISC::SET_BIT(&iVar0, 1);
-							uParam0->f_1 = OBJECT::CREATE_PICKUP_ROTATE(joaat("pickup_custom_script"), uParam0->f_3, uParam0->f_6, iVar0, -1, iParam5, true, iParam1);
+							uParam0->f_1 = OBJECT::CREATE_PICKUP_ROTATE(joaat("PICKUP_CUSTOM_SCRIPT"), uParam0->f_3, uParam0->f_6, iVar0, -1, iParam5, true, iParam1);
 						}
 						else
 						{

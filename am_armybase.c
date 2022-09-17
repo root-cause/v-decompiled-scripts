@@ -943,7 +943,7 @@ int func_22(int iParam0)//Position - 0x1B1E
 		if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 		{
 			iVar1 = ENTITY::GET_ENTITY_MODEL(iVar0);
-			if (iVar1 == joaat("mp_m_freemode_01") || iVar1 == joaat("mp_f_freemode_01"))
+			if (iVar1 == joaat("MP_M_Freemode_01") || iVar1 == joaat("MP_F_Freemode_01"))
 			{
 				return 0;
 			}
@@ -1351,7 +1351,7 @@ void func_42(int iParam0)//Position - 0x2133
 							if ((!ENTITY::IS_ENTITY_DEAD(iVar0, false) && !ENTITY::IS_ENTITY_DEAD(iVar1, false)) && !ENTITY::IS_ENTITY_DEAD(iVar3, false))
 							{
 								TASK::TASK_PLANE_MISSION(iVar0, iVar1, iVar3, iVar2, ENTITY::GET_ENTITY_COORDS(iVar2, true), 6, 70f, -1f, 30f, 7.006492E-43f, 7.006492E-44f, 1);
-								WEAPON::SET_CURRENT_PED_VEHICLE_WEAPON(iVar0, joaat("vehicle_weapon_space_rocket"));
+								WEAPON::SET_CURRENT_PED_VEHICLE_WEAPON(iVar0, joaat("VEHICLE_WEAPON_SPACE_ROCKET"));
 								PED::SET_PED_CAN_SWITCH_WEAPON(iVar0, false);
 							}
 						}
@@ -1927,7 +1927,7 @@ int func_65(char* sParam0, int iParam1, bool bParam2)//Position - 0x2CD6
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -2114,7 +2114,7 @@ int func_72()//Position - 0x313B
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}
@@ -3055,7 +3055,7 @@ bool func_114(var uParam0, int iParam1)//Position - 0x44A4
 
 int func_115()//Position - 0x44B3
 {
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("s_m_y_marine_01")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("S_M_Y_Marine_01")))
 	{
 		return 0;
 	}
@@ -3063,7 +3063,7 @@ int func_115()//Position - 0x44B3
 	{
 		return 0;
 	}
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("s_m_y_pilot_01")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("S_M_Y_Pilot_01")))
 	{
 		return 0;
 	}
@@ -3125,9 +3125,9 @@ var func_122(int iParam0)//Position - 0x4591
 
 void func_123()//Position - 0x45A8
 {
-	STREAMING::REQUEST_MODEL(joaat("s_m_y_marine_01"));
+	STREAMING::REQUEST_MODEL(joaat("S_M_Y_Marine_01"));
 	STREAMING::REQUEST_MODEL(joaat("lazer"));
-	STREAMING::REQUEST_MODEL(joaat("s_m_y_pilot_01"));
+	STREAMING::REQUEST_MODEL(joaat("S_M_Y_Pilot_01"));
 }
 
 int func_124()//Position - 0x45CB
@@ -3427,13 +3427,13 @@ int func_130(struct<3> Param0, float fParam1, int iParam2)//Position - 0x4B42
 	{
 		if (!NETWORK::NETWORK_DOES_ENTITY_EXIST_WITH_NETWORK_ID(Local_94.f_3[iParam2 /*5*/].f_1))
 		{
-			if (!func_131(&(Local_94.f_3[iParam2 /*5*/].f_1), Local_94.f_3[iParam2 /*5*/], 29, joaat("s_m_y_pilot_01"), -1, 1, 1, 1))
+			if (!func_131(&(Local_94.f_3[iParam2 /*5*/].f_1), Local_94.f_3[iParam2 /*5*/], 29, joaat("S_M_Y_Pilot_01"), -1, 1, 1, 1))
 			{
 				iVar0 = 0;
 			}
 			else
 			{
-				WEAPON::SET_CURRENT_PED_VEHICLE_WEAPON(NETWORK::NET_TO_PED(Local_94.f_3[iParam2 /*5*/].f_1), joaat("vehicle_weapon_space_rocket"));
+				WEAPON::SET_CURRENT_PED_VEHICLE_WEAPON(NETWORK::NET_TO_PED(Local_94.f_3[iParam2 /*5*/].f_1), joaat("VEHICLE_WEAPON_SPACE_ROCKET"));
 				PED::SET_PED_CAN_SWITCH_WEAPON(NETWORK::NET_TO_PED(Local_94.f_3[iParam2 /*5*/].f_1), false);
 			}
 		}
@@ -3821,21 +3821,21 @@ int func_143()//Position - 0x52D0
 		return 1;
 	}
 	iVar0 = 1;
-	if (!func_144(&(Local_94[0]), 29, joaat("s_m_y_marine_01"), -2308.4f, 3391f, 30.0601f, 55.8214f, 1, 1, 1))
+	if (!func_144(&(Local_94[0]), 29, joaat("S_M_Y_Marine_01"), -2308.4f, 3391f, 30.0601f, 55.8214f, 1, 1, 1))
 	{
 		iVar0 = 0;
 	}
 	else if (NETWORK::NETWORK_DOES_ENTITY_EXIST_WITH_NETWORK_ID(Local_94[0]))
 	{
-		WEAPON::GIVE_WEAPON_TO_PED(NETWORK::NET_TO_PED(Local_94[0]), joaat("weapon_assaultrifle"), 200, true, true);
+		WEAPON::GIVE_WEAPON_TO_PED(NETWORK::NET_TO_PED(Local_94[0]), joaat("WEAPON_ASSAULTRIFLE"), 200, true, true);
 	}
-	if (!func_144(&(Local_94[1]), 29, joaat("s_m_y_marine_01"), -1588.9f, 2792.9f, 16.1385f, 229.437f, 1, 1, 1))
+	if (!func_144(&(Local_94[1]), 29, joaat("S_M_Y_Marine_01"), -1588.9f, 2792.9f, 16.1385f, 229.437f, 1, 1, 1))
 	{
 		iVar0 = 0;
 	}
 	else if (NETWORK::NETWORK_DOES_ENTITY_EXIST_WITH_NETWORK_ID(Local_94[1]))
 	{
-		WEAPON::GIVE_WEAPON_TO_PED(NETWORK::NET_TO_PED(Local_94[1]), joaat("weapon_assaultrifle"), 200, true, true);
+		WEAPON::GIVE_WEAPON_TO_PED(NETWORK::NET_TO_PED(Local_94[1]), joaat("WEAPON_ASSAULTRIFLE"), 200, true, true);
 	}
 	return iVar0;
 }
@@ -4809,17 +4809,17 @@ void func_179()//Position - 0x68E2
 	{
 		return;
 	}
-	if (STREAMING::HAS_MODEL_LOADED(joaat("s_m_y_marine_01")))
+	if (STREAMING::HAS_MODEL_LOADED(joaat("S_M_Y_Marine_01")))
 	{
-		STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("s_m_y_marine_01"));
+		STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("S_M_Y_Marine_01"));
 	}
 	if (STREAMING::HAS_MODEL_LOADED(joaat("lazer")))
 	{
 		STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("lazer"));
 	}
-	if (STREAMING::HAS_MODEL_LOADED(joaat("s_m_y_pilot_01")))
+	if (STREAMING::HAS_MODEL_LOADED(joaat("S_M_Y_Pilot_01")))
 	{
-		STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("s_m_y_pilot_01"));
+		STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("S_M_Y_Pilot_01"));
 	}
 }
 

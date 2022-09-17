@@ -936,7 +936,7 @@ void func_8(struct<3> Param0, struct<3> Param1, var uParam2)//Position - 0x9E9
 				Global_95464 = 3;
 			}
 		}
-		else if ((FIRE::IS_EXPLOSION_IN_AREA(0, Param0, Param1) || FIRE::IS_EXPLOSION_IN_AREA(2, Param0, Param1)) || MISC::IS_PROJECTILE_TYPE_IN_AREA(Param0, Param1, joaat("weapon_grenadelauncher"), true))
+		else if ((FIRE::IS_EXPLOSION_IN_AREA(0, Param0, Param1) || FIRE::IS_EXPLOSION_IN_AREA(2, Param0, Param1)) || MISC::IS_PROJECTILE_TYPE_IN_AREA(Param0, Param1, joaat("WEAPON_GRENADELAUNCHER"), true))
 		{
 			Global_95464 = 5;
 		}
@@ -949,7 +949,7 @@ void func_9(struct<3> Param0, struct<3> Param1)//Position - 0xA64
 	
 	if (WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar0, true))
 	{
-		if (iVar0 == joaat("weapon_molotov") || iVar0 == joaat("weapon_petrolcan"))
+		if (iVar0 == joaat("WEAPON_MOLOTOV") || iVar0 == joaat("WEAPON_PETROLCAN"))
 		{
 			if (FIRE::IS_EXPLOSION_IN_AREA(3, Param0, Param1))
 			{
@@ -1069,7 +1069,7 @@ void func_13(struct<3> Param0, struct<3> Param1)//Position - 0xC39
 	
 	if (WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar0, true))
 	{
-		if (iVar0 == joaat("weapon_rpg"))
+		if (iVar0 == joaat("WEAPON_RPG"))
 		{
 			if (MISC::IS_PROJECTILE_TYPE_IN_AREA(Param0, Param1, iVar0, true))
 			{
@@ -1552,16 +1552,16 @@ void func_36(var uParam0, int* iParam1, var uParam2, var uParam3, struct<3> Para
 			}
 			if (WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar0, true))
 			{
-				if (iVar0 != joaat("weapon_unarmed") && iVar0 != joaat("object"))
+				if (iVar0 != joaat("WEAPON_UNARMED") && iVar0 != joaat("OBJECT"))
 				{
-					WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("weapon_unarmed"), true);
+					WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"), true);
 				}
 			}
 			if (WEAPON::GET_CURRENT_PED_VEHICLE_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar0))
 			{
-				if (iVar0 != joaat("weapon_unarmed") && iVar0 != joaat("object"))
+				if (iVar0 != joaat("WEAPON_UNARMED") && iVar0 != joaat("OBJECT"))
 				{
-					WEAPON::SET_CURRENT_PED_VEHICLE_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("weapon_unarmed"));
+					WEAPON::SET_CURRENT_PED_VEHICLE_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"));
 				}
 			}
 		}
@@ -2059,7 +2059,7 @@ int func_57(int iParam0, int iParam1)//Position - 0x1AD3
 			break;
 		
 		case 12:
-			*iParam1 = joaat("s_f_m_maid_01");
+			*iParam1 = joaat("S_F_M_Maid_01");
 			return 145;
 			break;
 		
@@ -2072,12 +2072,12 @@ int func_57(int iParam0, int iParam1)//Position - 0x1AD3
 			break;
 		
 		case 3:
-			*iParam1 = joaat("s_f_m_maid_01");
+			*iParam1 = joaat("S_F_M_Maid_01");
 			return 145;
 			break;
 		
 		case 4:
-			*iParam1 = joaat("s_m_m_gardener_01");
+			*iParam1 = joaat("S_M_M_Gardener_01");
 			return 145;
 			break;
 		

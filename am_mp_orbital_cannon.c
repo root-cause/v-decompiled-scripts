@@ -1465,7 +1465,7 @@ void func_18(bool bParam0, int iParam1, int iParam2)//Position - 0x977
 			NETWORK::NETWORK_SET_IN_SPECTATOR_MODE(bParam0, iParam1);
 		}
 		HUD::SET_MINIMAP_IN_SPECTATOR_MODE(bParam0, iParam1);
-		func_19(joaat("mpply_is_char_spectating"), bParam0);
+		func_19(joaat("MPPLY_IS_CHAR_SPECTATING"), bParam0);
 	}
 }
 

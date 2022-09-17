@@ -1782,8 +1782,8 @@ void func_47()//Position - 0x1EE1
 			func_54(iVar4);
 			switch (iVar4)
 			{
-				case joaat("weapon_molotov"):
-				case joaat("weapon_petrolcan"):
+				case joaat("WEAPON_MOLOTOV"):
+				case joaat("WEAPON_PETROLCAN"):
 					switch (func_48())
 					{
 						case 0:
@@ -1910,36 +1910,36 @@ int func_55(int iParam0)//Position - 0x218D
 {
 	switch (iParam0)
 	{
-		case joaat("weapon_stickybomb"):
-		case joaat("weapon_stungun"):
-		case joaat("weapon_grenadelauncher"):
-		case joaat("weapon_heavysniper"):
-		case joaat("weapon_carbinerifle"):
-		case joaat("weapon_specialcarbine"):
-		case joaat("weapon_smg"):
-		case joaat("weapon_assaultshotgun"):
-		case joaat("weapon_appistol"):
+		case joaat("WEAPON_STICKYBOMB"):
+		case joaat("WEAPON_STUNGUN"):
+		case joaat("WEAPON_GRENADELAUNCHER"):
+		case joaat("WEAPON_HEAVYSNIPER"):
+		case joaat("WEAPON_CARBINERIFLE"):
+		case joaat("WEAPON_SPECIALCARBINE"):
+		case joaat("WEAPON_SMG"):
+		case joaat("WEAPON_ASSAULTSHOTGUN"):
+		case joaat("WEAPON_APPISTOL"):
 			return 0;
 			break;
 		
-		case joaat("weapon_smokegrenade"):
-		case joaat("weapon_remotesniper"):
-		case joaat("weapon_rpg"):
-		case joaat("weapon_mg"):
-		case joaat("weapon_advancedrifle"):
-		case joaat("weapon_microsmg"):
-		case joaat("weapon_sawnoffshotgun"):
-		case joaat("weapon_pistol"):
+		case joaat("WEAPON_SMOKEGRENADE"):
+		case joaat("WEAPON_REMOTESNIPER"):
+		case joaat("WEAPON_RPG"):
+		case joaat("WEAPON_MG"):
+		case joaat("WEAPON_ADVANCEDRIFLE"):
+		case joaat("WEAPON_MICROSMG"):
+		case joaat("WEAPON_SAWNOFFSHOTGUN"):
+		case joaat("WEAPON_PISTOL"):
 			return 1;
 			break;
 		
-		case joaat("weapon_grenade"):
-		case joaat("weapon_minigun"):
-		case joaat("weapon_sniperrifle"):
-		case joaat("weapon_combatmg"):
-		case joaat("weapon_assaultrifle"):
-		case joaat("weapon_pumpshotgun"):
-		case joaat("weapon_combatpistol"):
+		case joaat("WEAPON_GRENADE"):
+		case joaat("WEAPON_MINIGUN"):
+		case joaat("WEAPON_SNIPERRIFLE"):
+		case joaat("WEAPON_COMBATMG"):
+		case joaat("WEAPON_ASSAULTRIFLE"):
+		case joaat("WEAPON_PUMPSHOTGUN"):
+		case joaat("WEAPON_COMBATPISTOL"):
 			return 2;
 			break;
 		
@@ -2954,14 +2954,14 @@ int func_64()//Position - 0x3D0C
 		{
 			if (NETWORK::_NETWORK_GET_ROS_PRIVILEGE_24())
 			{
-				STATS::STAT_GET_INT(joaat("sp_unlock_exclus_content"), &iVar0, -1);
+				STATS::STAT_GET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), &iVar0, -1);
 				MISC::SET_BIT(&iVar0, 2);
 				MISC::SET_BIT(&iVar0, 4);
 				MISC::SET_BIT(&iVar0, 6);
 				MISC::SET_BIT(&Global_25, 2);
 				MISC::SET_BIT(&Global_25, 4);
 				MISC::SET_BIT(&Global_25, 6);
-				STATS::STAT_SET_INT(joaat("sp_unlock_exclus_content"), iVar0, true);
+				STATS::STAT_SET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), iVar0, true);
 				if (MISC::ARE_PROFILE_SETTINGS_VALID())
 				{
 					iVar0 = MISC::GET_PROFILE_SETTING(866);
@@ -3679,26 +3679,26 @@ void func_76(int iParam0, int iParam1, int iParam2)//Position - 0x47EE
 	}
 	switch (iParam2)
 	{
-		case joaat("s_f_y_hooker_01"):
+		case joaat("S_F_Y_Hooker_01"):
 			func_2(121, 1);
 			break;
 		
-		case joaat("a_f_m_bodybuild_01"):
-		case joaat("a_m_m_beach_02"):
-		case joaat("a_m_y_musclbeac_02"):
-		case joaat("a_m_y_runner_01"):
-		case joaat("a_m_y_roadcyc_01"):
-		case joaat("a_m_y_skater_01"):
-		case joaat("a_m_y_skater_02"):
-		case joaat("a_m_y_sunbathe_01"):
-		case joaat("a_m_y_surfer_01"):
-		case joaat("a_m_y_yoga_01"):
-		case joaat("s_m_y_baywatch_01"):
-		case joaat("s_m_y_marine_02"):
+		case joaat("A_F_M_BodyBuild_01"):
+		case joaat("A_M_M_Beach_02"):
+		case joaat("A_M_Y_MusclBeac_02"):
+		case joaat("A_M_Y_Runner_01"):
+		case joaat("A_M_Y_RoadCyc_01"):
+		case joaat("A_M_Y_Skater_01"):
+		case joaat("A_M_Y_Skater_02"):
+		case joaat("A_M_Y_Sunbathe_01"):
+		case joaat("A_M_Y_Surfer_01"):
+		case joaat("A_M_Y_Yoga_01"):
+		case joaat("S_M_Y_BayWatch_01"):
+		case joaat("S_M_Y_Marine_02"):
 			func_2(69, 1);
 			break;
 		
-		case joaat("s_m_y_dealer_01"):
+		case joaat("S_M_Y_Dealer_01"):
 			func_2(125, 1);
 			break;
 	}
@@ -5218,558 +5218,558 @@ void func_98()//Position - 0x5F5F
 	Global_58608[40 /*7*/].f_4 = 3.5f;
 	Global_58608[40 /*7*/].f_5 = 3.5f;
 	Global_58608[40 /*7*/].f_6 = 0.1f;
-	Global_58896[0 /*7*/].f_1 = joaat("sm_brvecdesbfa");
+	Global_58896[0 /*7*/].f_1 = joaat("SM_BRVECDESBFA");
 	Global_58896[0 /*7*/] = 1;
-	Global_58896[1 /*7*/].f_1 = joaat("sm_brvecdesbru");
+	Global_58896[1 /*7*/].f_1 = joaat("SM_BRVECDESBRU");
 	Global_58896[1 /*7*/] = 1;
-	Global_58896[3 /*7*/].f_1 = joaat("sm_brvecdeslsc");
+	Global_58896[3 /*7*/].f_1 = joaat("SM_BRVECDESLSC");
 	Global_58896[3 /*7*/] = 1;
-	Global_58896[4 /*7*/].f_1 = joaat("sm_brvecdeslst");
+	Global_58896[4 /*7*/].f_1 = joaat("SM_BRVECDESLST");
 	Global_58896[4 /*7*/] = 1;
-	Global_58896[5 /*7*/].f_1 = joaat("sm_brvecdesltd");
+	Global_58896[5 /*7*/].f_1 = joaat("SM_BRVECDESLTD");
 	Global_58896[5 /*7*/] = 1;
-	Global_58896[6 /*7*/].f_1 = joaat("sm_brvecdesmai");
+	Global_58896[6 /*7*/].f_1 = joaat("SM_BRVECDESMAI");
 	Global_58896[6 /*7*/] = 1;
-	Global_58896[7 /*7*/].f_1 = joaat("sm_brvecdesron");
+	Global_58896[7 /*7*/].f_1 = joaat("SM_BRVECDESRON");
 	Global_58896[7 /*7*/] = 1;
-	Global_58896[8 /*7*/].f_1 = joaat("sm_brvecdessht");
+	Global_58896[8 /*7*/].f_1 = joaat("SM_BRVECDESSHT");
 	Global_58896[8 /*7*/] = 1;
-	Global_58896[9 /*7*/].f_1 = joaat("sm_brvecdesuma");
+	Global_58896[9 /*7*/].f_1 = joaat("SM_BRVECDESUMA");
 	Global_58896[9 /*7*/] = 1;
-	Global_58896[10 /*7*/].f_1 = joaat("sm_brvecdesvap");
+	Global_58896[10 /*7*/].f_1 = joaat("SM_BRVECDESVAP");
 	Global_58896[10 /*7*/] = 1;
-	Global_58896[11 /*7*/].f_1 = joaat("sm_brvecdeshvy");
+	Global_58896[11 /*7*/].f_1 = joaat("SM_BRVECDESHVY");
 	Global_58896[11 /*7*/] = 1;
-	Global_58896[12 /*7*/].f_1 = joaat("sm_vecbuybfa");
+	Global_58896[12 /*7*/].f_1 = joaat("SM_VECBUYBFA");
 	Global_58896[12 /*7*/] = 1;
-	Global_58896[13 /*7*/].f_1 = joaat("sm_vecbuybru");
+	Global_58896[13 /*7*/].f_1 = joaat("SM_VECBUYBRU");
 	Global_58896[13 /*7*/] = 1;
-	Global_58896[15 /*7*/].f_1 = joaat("sm_vecbuymai");
+	Global_58896[15 /*7*/].f_1 = joaat("SM_VECBUYMAI");
 	Global_58896[15 /*7*/] = 1;
-	Global_58896[16 /*7*/].f_1 = joaat("sm_vecbuysht");
+	Global_58896[16 /*7*/].f_1 = joaat("SM_VECBUYSHT");
 	Global_58896[16 /*7*/] = 1;
-	Global_58896[17 /*7*/].f_1 = joaat("sm_vecbuyuma");
+	Global_58896[17 /*7*/].f_1 = joaat("SM_VECBUYUMA");
 	Global_58896[17 /*7*/] = 1;
-	Global_58896[18 /*7*/].f_1 = joaat("sm_vecbuyvap");
+	Global_58896[18 /*7*/].f_1 = joaat("SM_VECBUYVAP");
 	Global_58896[18 /*7*/] = 1;
-	Global_58896[19 /*7*/].f_1 = joaat("sm_vecbuyhvy");
+	Global_58896[19 /*7*/].f_1 = joaat("SM_VECBUYHVY");
 	Global_58896[19 /*7*/] = 1;
-	Global_58896[20 /*7*/].f_1 = joaat("sm_disdrivbfa");
+	Global_58896[20 /*7*/].f_1 = joaat("SM_DISDRIVBFA");
 	Global_58896[20 /*7*/] = 1;
-	Global_58896[21 /*7*/].f_1 = joaat("sm_disdrivbru");
+	Global_58896[21 /*7*/].f_1 = joaat("SM_DISDRIVBRU");
 	Global_58896[21 /*7*/] = 1;
-	Global_58896[23 /*7*/].f_1 = joaat("sm_disdrivlst");
+	Global_58896[23 /*7*/].f_1 = joaat("SM_DISDRIVLST");
 	Global_58896[23 /*7*/] = 1;
-	Global_58896[24 /*7*/].f_1 = joaat("sm_disdrivmai");
+	Global_58896[24 /*7*/].f_1 = joaat("SM_DISDRIVMAI");
 	Global_58896[24 /*7*/] = 1;
-	Global_58896[25 /*7*/].f_1 = joaat("sm_disdrivsht");
+	Global_58896[25 /*7*/].f_1 = joaat("SM_DISDRIVSHT");
 	Global_58896[25 /*7*/] = 1;
-	Global_58896[26 /*7*/].f_1 = joaat("sm_disdrivuma");
+	Global_58896[26 /*7*/].f_1 = joaat("SM_DISDRIVUMA");
 	Global_58896[26 /*7*/] = 1;
-	Global_58896[27 /*7*/].f_1 = joaat("sm_disdrivvap");
+	Global_58896[27 /*7*/].f_1 = joaat("SM_DISDRIVVAP");
 	Global_58896[27 /*7*/] = 1;
-	Global_58896[28 /*7*/].f_1 = joaat("sm_disdrivhvy");
+	Global_58896[28 /*7*/].f_1 = joaat("SM_DISDRIVHVY");
 	Global_58896[28 /*7*/] = 1;
-	Global_58896[30 /*7*/].f_1 = joaat("sm_vecmodlsc");
+	Global_58896[30 /*7*/].f_1 = joaat("SM_VECMODLSC");
 	Global_58896[30 /*7*/] = 1;
-	Global_58896[31 /*7*/].f_1 = joaat("sm_vecstolbfa");
+	Global_58896[31 /*7*/].f_1 = joaat("SM_VECSTOLBFA");
 	Global_58896[31 /*7*/] = 1;
-	Global_58896[32 /*7*/].f_1 = joaat("sm_vecstolbru");
+	Global_58896[32 /*7*/].f_1 = joaat("SM_VECSTOLBRU");
 	Global_58896[32 /*7*/] = 1;
-	Global_58896[34 /*7*/].f_1 = joaat("sm_vecstollst");
+	Global_58896[34 /*7*/].f_1 = joaat("SM_VECSTOLLST");
 	Global_58896[34 /*7*/] = 1;
-	Global_58896[35 /*7*/].f_1 = joaat("sm_vecstolmai");
+	Global_58896[35 /*7*/].f_1 = joaat("SM_VECSTOLMAI");
 	Global_58896[35 /*7*/] = 1;
-	Global_58896[36 /*7*/].f_1 = joaat("sm_vecstolsht");
+	Global_58896[36 /*7*/].f_1 = joaat("SM_VECSTOLSHT");
 	Global_58896[36 /*7*/] = 1;
-	Global_58896[37 /*7*/].f_1 = joaat("sm_vecstoluma");
+	Global_58896[37 /*7*/].f_1 = joaat("SM_VECSTOLUMA");
 	Global_58896[37 /*7*/] = 1;
-	Global_58896[38 /*7*/].f_1 = joaat("sm_vecstolvap");
+	Global_58896[38 /*7*/].f_1 = joaat("SM_VECSTOLVAP");
 	Global_58896[38 /*7*/] = 1;
-	Global_58896[39 /*7*/].f_1 = joaat("sm_vecstolhvy");
+	Global_58896[39 /*7*/].f_1 = joaat("SM_VECSTOLHVY");
 	Global_58896[39 /*7*/] = 1;
-	Global_58896[40 /*7*/].f_1 = joaat("sm_vecdmgbfa");
+	Global_58896[40 /*7*/].f_1 = joaat("SM_VECDMGBFA");
 	Global_58896[40 /*7*/] = 1;
-	Global_58896[41 /*7*/].f_1 = joaat("sm_vecdmgbru");
+	Global_58896[41 /*7*/].f_1 = joaat("SM_VECDMGBRU");
 	Global_58896[41 /*7*/] = 1;
-	Global_58896[43 /*7*/].f_1 = joaat("sm_vecdmgmai");
+	Global_58896[43 /*7*/].f_1 = joaat("SM_VECDMGMAI");
 	Global_58896[43 /*7*/] = 1;
-	Global_58896[44 /*7*/].f_1 = joaat("sm_vecdmgsht");
+	Global_58896[44 /*7*/].f_1 = joaat("SM_VECDMGSHT");
 	Global_58896[44 /*7*/] = 1;
-	Global_58896[45 /*7*/].f_1 = joaat("sm_vecdmguma");
+	Global_58896[45 /*7*/].f_1 = joaat("SM_VECDMGUMA");
 	Global_58896[45 /*7*/] = 1;
-	Global_58896[46 /*7*/].f_1 = joaat("sm_vecdmgvap");
+	Global_58896[46 /*7*/].f_1 = joaat("SM_VECDMGVAP");
 	Global_58896[46 /*7*/] = 1;
-	Global_58896[47 /*7*/].f_1 = joaat("sm_vecdmghvy");
+	Global_58896[47 /*7*/].f_1 = joaat("SM_VECDMGHVY");
 	Global_58896[47 /*7*/] = 1;
-	Global_58896[48 /*7*/].f_1 = joaat("sm_vecpedkil");
+	Global_58896[48 /*7*/].f_1 = joaat("SM_VECPEDKIL");
 	Global_58896[48 /*7*/] = 1;
-	Global_58896[49 /*7*/].f_1 = joaat("sm_wepbuyshr");
+	Global_58896[49 /*7*/].f_1 = joaat("SM_WEPBUYSHR");
 	Global_58896[49 /*7*/] = 1;
-	Global_58896[50 /*7*/].f_1 = joaat("sm_wepbuyhal");
+	Global_58896[50 /*7*/].f_1 = joaat("SM_WEPBUYHAL");
 	Global_58896[50 /*7*/] = 1;
-	Global_58896[51 /*7*/].f_1 = joaat("sm_weptakevom");
+	Global_58896[51 /*7*/].f_1 = joaat("SM_WEPTAKEVOM");
 	Global_58896[51 /*7*/] = 1;
-	Global_58896[52 /*7*/].f_1 = joaat("sm_weptakeshr");
+	Global_58896[52 /*7*/].f_1 = joaat("SM_WEPTAKESHR");
 	Global_58896[52 /*7*/] = 1;
-	Global_58896[53 /*7*/].f_1 = joaat("sm_weptakehal");
+	Global_58896[53 /*7*/].f_1 = joaat("SM_WEPTAKEHAL");
 	Global_58896[53 /*7*/] = 1;
-	Global_58896[54 /*7*/].f_1 = joaat("sm_kilcopvom");
+	Global_58896[54 /*7*/].f_1 = joaat("SM_KILCOPVOM");
 	Global_58896[54 /*7*/] = 1;
-	Global_58896[55 /*7*/].f_1 = joaat("sm_kilcopshr");
+	Global_58896[55 /*7*/].f_1 = joaat("SM_KILCOPSHR");
 	Global_58896[55 /*7*/] = 1;
-	Global_58896[56 /*7*/].f_1 = joaat("sm_kilcophal");
+	Global_58896[56 /*7*/].f_1 = joaat("SM_KILCOPHAL");
 	Global_58896[56 /*7*/] = 1;
-	Global_58896[57 /*7*/].f_1 = joaat("sm_kilcrimvom");
+	Global_58896[57 /*7*/].f_1 = joaat("SM_KILCRIMVOM");
 	Global_58896[57 /*7*/] = 1;
-	Global_58896[58 /*7*/].f_1 = joaat("sm_kilcrimshr");
+	Global_58896[58 /*7*/].f_1 = joaat("SM_KILCRIMSHR");
 	Global_58896[58 /*7*/] = 1;
-	Global_58896[59 /*7*/].f_1 = joaat("sm_kilcrimhal");
+	Global_58896[59 /*7*/].f_1 = joaat("SM_KILCRIMHAL");
 	Global_58896[59 /*7*/] = 1;
-	Global_58896[60 /*7*/].f_1 = joaat("sm_kilcivmai");
+	Global_58896[60 /*7*/].f_1 = joaat("SM_KILCIVMAI");
 	Global_58896[60 /*7*/] = 1;
-	Global_58896[61 /*7*/].f_1 = joaat("sm_kilcivsht");
+	Global_58896[61 /*7*/].f_1 = joaat("SM_KILCIVSHT");
 	Global_58896[61 /*7*/] = 1;
-	Global_58896[62 /*7*/].f_1 = joaat("sm_kilcivuma");
+	Global_58896[62 /*7*/].f_1 = joaat("SM_KILCIVUMA");
 	Global_58896[62 /*7*/] = 1;
-	Global_58896[63 /*7*/].f_1 = joaat("sm_kilcivvom");
+	Global_58896[63 /*7*/].f_1 = joaat("SM_KILCIVVOM");
 	Global_58896[63 /*7*/] = 1;
-	Global_58896[64 /*7*/].f_1 = joaat("sm_kilcivshr");
+	Global_58896[64 /*7*/].f_1 = joaat("SM_KILCIVSHR");
 	Global_58896[64 /*7*/] = 1;
-	Global_58896[65 /*7*/].f_1 = joaat("sm_kilcivhal");
+	Global_58896[65 /*7*/].f_1 = joaat("SM_KILCIVHAL");
 	Global_58896[65 /*7*/] = 1;
-	Global_58896[67 /*7*/].f_1 = joaat("sm_venusespu");
+	Global_58896[67 /*7*/].f_1 = joaat("SM_VENUSESPU");
 	Global_58896[67 /*7*/] = 1;
-	Global_58896[68 /*7*/].f_1 = joaat("sm_newdam");
+	Global_58896[68 /*7*/].f_1 = joaat("SM_NEWDAM");
 	Global_58896[68 /*7*/] = 1;
-	Global_58896[69 /*7*/].f_1 = joaat("sm_hpkil");
+	Global_58896[69 /*7*/].f_1 = joaat("SM_HPKIL");
 	Global_58896[69 /*7*/] = 1;
-	Global_58896[70 /*7*/].f_1 = joaat("sm_pubclub");
+	Global_58896[70 /*7*/].f_1 = joaat("SM_PUBCLUB");
 	Global_58896[70 /*7*/] = 1;
-	Global_58896[71 /*7*/].f_1 = joaat("sm_tdrnk");
+	Global_58896[71 /*7*/].f_1 = joaat("SM_TDRNK");
 	Global_58896[71 /*7*/] = 1;
-	Global_58896[72 /*7*/].f_1 = joaat("sm_frnpub");
+	Global_58896[72 /*7*/].f_1 = joaat("SM_FRNPUB");
 	Global_58896[72 /*7*/] = 1;
-	Global_58896[73 /*7*/].f_1 = joaat("sm_drnkcrm");
+	Global_58896[73 /*7*/].f_1 = joaat("SM_DRNKCRM");
 	Global_58896[73 /*7*/] = 1;
-	Global_58896[74 /*7*/].f_1 = joaat("sm_ramcom");
+	Global_58896[74 /*7*/].f_1 = joaat("SM_RAMCOM");
 	Global_58896[74 /*7*/] = 1;
-	Global_58896[76 /*7*/].f_1 = joaat("sm_radcnt");
+	Global_58896[76 /*7*/].f_1 = joaat("SM_RADCNT");
 	Global_58896[76 /*7*/] = 1;
-	Global_58896[77 /*7*/].f_1 = joaat("sm_radwzl");
+	Global_58896[77 /*7*/].f_1 = joaat("SM_RADWZL");
 	Global_58896[77 /*7*/] = 1;
-	Global_58896[78 /*7*/].f_1 = joaat("sm_radzit");
+	Global_58896[78 /*7*/].f_1 = joaat("SM_RADZIT");
 	Global_58896[78 /*7*/] = 1;
-	Global_58896[81 /*7*/].f_1 = joaat("sm_zititcnt");
+	Global_58896[81 /*7*/].f_1 = joaat("SM_ZITITCNT");
 	Global_58896[81 /*7*/] = 1;
-	Global_58896[82 /*7*/].f_1 = joaat("sm_zititwzl");
+	Global_58896[82 /*7*/].f_1 = joaat("SM_ZITITWZL");
 	Global_58896[82 /*7*/] = 1;
-	Global_58896[83 /*7*/].f_1 = joaat("sm_zititzit");
+	Global_58896[83 /*7*/].f_1 = joaat("SM_ZITITZIT");
 	Global_58896[83 /*7*/] = 1;
-	Global_58896[84 /*7*/].f_1 = joaat("sm_radchacnt");
+	Global_58896[84 /*7*/].f_1 = joaat("SM_RADCHACNT");
 	Global_58896[84 /*7*/] = 1;
-	Global_58896[85 /*7*/].f_1 = joaat("sm_radchawzl");
+	Global_58896[85 /*7*/].f_1 = joaat("SM_RADCHAWZL");
 	Global_58896[85 /*7*/] = 1;
-	Global_58896[88 /*7*/].f_1 = joaat("sm_para");
+	Global_58896[88 /*7*/].f_1 = joaat("SM_PARA");
 	Global_58896[88 /*7*/] = 1;
-	Global_58896[89 /*7*/].f_1 = joaat("sm_tkfire");
+	Global_58896[89 /*7*/].f_1 = joaat("SM_TKFIRE");
 	Global_58896[89 /*7*/] = 1;
-	Global_58896[90 /*7*/].f_1 = joaat("sm_fibai");
+	Global_58896[90 /*7*/].f_1 = joaat("SM_FIBAI");
 	Global_58896[90 /*7*/] = 1;
-	Global_58896[91 /*7*/].f_1 = joaat("sm_tandes");
+	Global_58896[91 /*7*/].f_1 = joaat("SM_TANDES");
 	Global_58896[91 /*7*/] = 1;
-	Global_58896[92 /*7*/].f_1 = joaat("sm_garep");
+	Global_58896[92 /*7*/].f_1 = joaat("SM_GAREP");
 	Global_58896[92 /*7*/] = 1;
-	Global_58896[93 /*7*/].f_1 = joaat("sm_gamonsp");
+	Global_58896[93 /*7*/].f_1 = joaat("SM_GAMONSP");
 	Global_58896[93 /*7*/] = 1;
-	Global_58896[94 /*7*/].f_1 = joaat("sm_monb");
+	Global_58896[94 /*7*/].f_1 = joaat("SM_MONB");
 	Global_58896[94 /*7*/] = 1;
-	Global_58896[98 /*7*/].f_1 = joaat("sm_monupshk");
+	Global_58896[98 /*7*/].f_1 = joaat("SM_MONUPSHK");
 	Global_58896[98 /*7*/] = 1;
-	Global_58896[100 /*7*/].f_1 = joaat("sm_taxdest");
+	Global_58896[100 /*7*/].f_1 = joaat("SM_TAXDEST");
 	Global_58896[100 /*7*/] = 1;
-	Global_58896[101 /*7*/].f_1 = joaat("sm_kilwbfa");
+	Global_58896[101 /*7*/].f_1 = joaat("SM_KILWBFA");
 	Global_58896[101 /*7*/] = 1;
-	Global_58896[102 /*7*/].f_1 = joaat("sm_kilwbru");
+	Global_58896[102 /*7*/].f_1 = joaat("SM_KILWBRU");
 	Global_58896[102 /*7*/] = 1;
-	Global_58896[104 /*7*/].f_1 = joaat("sm_kilwmai");
+	Global_58896[104 /*7*/].f_1 = joaat("SM_KILWMAI");
 	Global_58896[104 /*7*/] = 1;
-	Global_58896[105 /*7*/].f_1 = joaat("sm_kilwsht");
+	Global_58896[105 /*7*/].f_1 = joaat("SM_KILWSHT");
 	Global_58896[105 /*7*/] = 1;
-	Global_58896[106 /*7*/].f_1 = joaat("sm_kilwuma");
+	Global_58896[106 /*7*/].f_1 = joaat("SM_KILWUMA");
 	Global_58896[106 /*7*/] = 1;
-	Global_58896[107 /*7*/].f_1 = joaat("sm_kilwvap");
+	Global_58896[107 /*7*/].f_1 = joaat("SM_KILWVAP");
 	Global_58896[107 /*7*/] = 1;
-	Global_58896[108 /*7*/].f_1 = joaat("sm_kilwvom");
+	Global_58896[108 /*7*/].f_1 = joaat("SM_KILWVOM");
 	Global_58896[108 /*7*/] = 1;
-	Global_58896[109 /*7*/].f_1 = joaat("sm_kilwhvy");
+	Global_58896[109 /*7*/].f_1 = joaat("SM_KILWHVY");
 	Global_58896[109 /*7*/] = 1;
-	Global_58896[112 /*7*/].f_1 = joaat("sm_clobofbin");
+	Global_58896[112 /*7*/].f_1 = joaat("SM_CLOBOFBIN");
 	Global_58896[112 /*7*/] = 1;
-	Global_58896[113 /*7*/].f_1 = joaat("sm_clobofpkw");
+	Global_58896[113 /*7*/].f_1 = joaat("SM_CLOBOFPKW");
 	Global_58896[113 /*7*/] = 1;
-	Global_58896[114 /*7*/].f_1 = joaat("sm_clobofpon");
+	Global_58896[114 /*7*/].f_1 = joaat("SM_CLOBOFPON");
 	Global_58896[114 /*7*/] = 1;
-	Global_58896[117 /*7*/].f_1 = joaat("sm_yoga");
+	Global_58896[117 /*7*/].f_1 = joaat("SM_YOGA");
 	Global_58896[117 /*7*/] = 1;
-	Global_58896[118 /*7*/].f_1 = joaat("sm_tri");
+	Global_58896[118 /*7*/].f_1 = joaat("SM_TRI");
 	Global_58896[118 /*7*/] = 1;
-	Global_58896[119 /*7*/].f_1 = joaat("sm_gym");
+	Global_58896[119 /*7*/].f_1 = joaat("SM_GYM");
 	Global_58896[119 /*7*/] = 1;
-	Global_58896[120 /*7*/].f_1 = joaat("sm_strip");
+	Global_58896[120 /*7*/].f_1 = joaat("SM_STRIP");
 	Global_58896[120 /*7*/] = 1;
-	Global_58896[121 /*7*/].f_1 = joaat("sm_ughok");
+	Global_58896[121 /*7*/].f_1 = joaat("SM_UGHOK");
 	Global_58896[121 /*7*/] = 1;
-	Global_58896[122 /*7*/].f_1 = joaat("sm_strtro");
+	Global_58896[122 /*7*/].f_1 = joaat("SM_STRTRO");
 	Global_58896[122 /*7*/] = 1;
-	Global_58896[123 /*7*/].f_1 = joaat("sm_pisco");
+	Global_58896[123 /*7*/].f_1 = joaat("SM_PISCO");
 	Global_58896[123 /*7*/] = 1;
-	Global_58896[124 /*7*/].f_1 = joaat("sm_totinj");
+	Global_58896[124 /*7*/].f_1 = joaat("SM_TOTINJ");
 	Global_58896[124 /*7*/] = 1;
-	Global_58896[125 /*7*/].f_1 = joaat("sm_drugkil");
+	Global_58896[125 /*7*/].f_1 = joaat("SM_DRUGKIL");
 	Global_58896[125 /*7*/] = 1;
-	Global_58896[126 /*7*/].f_1 = joaat("sm_hangovr");
+	Global_58896[126 /*7*/].f_1 = joaat("SM_HANGOVR");
 	Global_58896[126 /*7*/] = 1;
-	Global_58896[127 /*7*/].f_1 = joaat("sm_killspr");
+	Global_58896[127 /*7*/].f_1 = joaat("SM_KILLSPR");
 	Global_58896[127 /*7*/] = 1;
-	Global_58896[129 /*7*/].f_1 = joaat("sm_pedfirekill");
+	Global_58896[129 /*7*/].f_1 = joaat("SM_PEDFIREKILL");
 	Global_58896[129 /*7*/] = 1;
-	Global_58896[130 /*7*/].f_1 = joaat("sm_pedfiretick");
+	Global_58896[130 /*7*/].f_1 = joaat("SM_PEDFIRETICK");
 	Global_58896[130 /*7*/] = 1;
-	Global_58896[131 /*7*/].f_1 = joaat("sm_tvtickwap");
+	Global_58896[131 /*7*/].f_1 = joaat("SM_TVTICKWAP");
 	Global_58896[131 /*7*/] = 1;
-	Global_58896[132 /*7*/].f_1 = joaat("sm_tvtickwiw");
+	Global_58896[132 /*7*/].f_1 = joaat("SM_TVTICKWIW");
 	Global_58896[132 /*7*/] = 1;
-	Global_58896[134 /*7*/].f_1 = joaat("sm_zitpopzit");
+	Global_58896[134 /*7*/].f_1 = joaat("SM_ZITPOPZIT");
 	Global_58896[134 /*7*/] = 1;
-	Global_58896[135 /*7*/].f_1 = joaat("sm_carapp");
+	Global_58896[135 /*7*/].f_1 = joaat("SM_CARAPP");
 	Global_58896[135 /*7*/] = 1;
-	Global_58896[137 /*7*/].f_1 = joaat("sm_storob");
+	Global_58896[137 /*7*/].f_1 = joaat("SM_STOROB");
 	Global_58896[137 /*7*/] = 1;
-	Global_58896[162 /*7*/].f_1 = joaat("sm_phoncalbdg");
+	Global_58896[162 /*7*/].f_1 = joaat("SM_PHONCALBDG");
 	Global_58896[162 /*7*/] = 1;
-	Global_58896[163 /*7*/].f_1 = joaat("sm_phoncaltnk");
+	Global_58896[163 /*7*/].f_1 = joaat("SM_PHONCALTNK");
 	Global_58896[163 /*7*/] = 1;
-	Global_58896[164 /*7*/].f_1 = joaat("sm_phoncalwiz");
+	Global_58896[164 /*7*/].f_1 = joaat("SM_PHONCALWIZ");
 	Global_58896[164 /*7*/] = 1;
-	Global_58896[165 /*7*/].f_1 = joaat("sm_phontxtbdg");
+	Global_58896[165 /*7*/].f_1 = joaat("SM_PHONTXTBDG");
 	Global_58896[165 /*7*/] = 1;
-	Global_58896[166 /*7*/].f_1 = joaat("sm_phontxttnk");
+	Global_58896[166 /*7*/].f_1 = joaat("SM_PHONTXTTNK");
 	Global_58896[166 /*7*/] = 1;
-	Global_58896[167 /*7*/].f_1 = joaat("sm_phontxtwiz");
+	Global_58896[167 /*7*/].f_1 = joaat("SM_PHONTXTWIZ");
 	Global_58896[167 /*7*/] = 1;
-	Global_58896[168 /*7*/].f_1 = joaat("sm_chtickbdg");
+	Global_58896[168 /*7*/].f_1 = joaat("SM_CHTICKBDG");
 	Global_58896[168 /*7*/] = 1;
-	Global_58896[169 /*7*/].f_1 = joaat("sm_chticktnk");
+	Global_58896[169 /*7*/].f_1 = joaat("SM_CHTICKTNK");
 	Global_58896[169 /*7*/] = 1;
-	Global_58896[170 /*7*/].f_1 = joaat("sm_chtickwiz");
+	Global_58896[170 /*7*/].f_1 = joaat("SM_CHTICKWIZ");
 	Global_58896[170 /*7*/] = 1;
-	Global_58896[171 /*7*/].f_1 = joaat("sm_calcanbdg");
+	Global_58896[171 /*7*/].f_1 = joaat("SM_CALCANBDG");
 	Global_58896[171 /*7*/] = 1;
-	Global_58896[172 /*7*/].f_1 = joaat("sm_calcantnk");
+	Global_58896[172 /*7*/].f_1 = joaat("SM_CALCANTNK");
 	Global_58896[172 /*7*/] = 1;
-	Global_58896[173 /*7*/].f_1 = joaat("sm_calcanwiz");
+	Global_58896[173 /*7*/].f_1 = joaat("SM_CALCANWIZ");
 	Global_58896[173 /*7*/] = 1;
 	Global_58896[138 /*7*/].f_2 = 1;
-	Global_58896[138 /*7*/].f_3 = joaat("sp0_dist_walking");
+	Global_58896[138 /*7*/].f_3 = joaat("SP0_DIST_WALKING");
 	Global_58896[138 /*7*/].f_4 = 1;
 	Global_58896[139 /*7*/].f_2 = 1;
-	Global_58896[139 /*7*/].f_3 = joaat("sp1_dist_walking");
+	Global_58896[139 /*7*/].f_3 = joaat("SP1_DIST_WALKING");
 	Global_58896[139 /*7*/].f_4 = 1;
 	Global_58896[140 /*7*/].f_2 = 1;
-	Global_58896[140 /*7*/].f_3 = joaat("sp2_dist_walking");
+	Global_58896[140 /*7*/].f_3 = joaat("SP2_DIST_WALKING");
 	Global_58896[140 /*7*/].f_4 = 1;
 	Global_58896[141 /*7*/].f_2 = 1;
-	Global_58896[141 /*7*/].f_3 = joaat("sp0_dist_driving_bicycle");
+	Global_58896[141 /*7*/].f_3 = joaat("SP0_DIST_DRIVING_BICYCLE");
 	Global_58896[141 /*7*/].f_4 = 1;
 	Global_58896[142 /*7*/].f_2 = 1;
-	Global_58896[142 /*7*/].f_3 = joaat("sp1_dist_driving_bicycle");
+	Global_58896[142 /*7*/].f_3 = joaat("SP1_DIST_DRIVING_BICYCLE");
 	Global_58896[142 /*7*/].f_4 = 1;
 	Global_58896[143 /*7*/].f_2 = 1;
-	Global_58896[143 /*7*/].f_3 = joaat("sp2_dist_driving_bicycle");
+	Global_58896[143 /*7*/].f_3 = joaat("SP2_DIST_DRIVING_BICYCLE");
 	Global_58896[143 /*7*/].f_4 = 1;
 	Global_58896[144 /*7*/].f_2 = 1;
-	Global_58896[144 /*7*/].f_3 = joaat("sp0_bailed_from_vehicle");
+	Global_58896[144 /*7*/].f_3 = joaat("SP0_BAILED_FROM_VEHICLE");
 	Global_58896[144 /*7*/].f_4 = 0;
 	Global_58896[145 /*7*/].f_2 = 1;
-	Global_58896[145 /*7*/].f_3 = joaat("sp1_bailed_from_vehicle");
+	Global_58896[145 /*7*/].f_3 = joaat("SP1_BAILED_FROM_VEHICLE");
 	Global_58896[145 /*7*/].f_4 = 0;
 	Global_58896[146 /*7*/].f_2 = 1;
-	Global_58896[146 /*7*/].f_3 = joaat("sp2_bailed_from_vehicle");
+	Global_58896[146 /*7*/].f_3 = joaat("SP2_BAILED_FROM_VEHICLE");
 	Global_58896[146 /*7*/].f_4 = 0;
 	Global_58896[150 /*7*/].f_2 = 1;
-	Global_58896[150 /*7*/].f_3 = joaat("sp0_large_accidents");
+	Global_58896[150 /*7*/].f_3 = joaat("SP0_LARGE_ACCIDENTS");
 	Global_58896[150 /*7*/].f_4 = 0;
 	Global_58896[151 /*7*/].f_2 = 1;
-	Global_58896[151 /*7*/].f_3 = joaat("sp1_large_accidents");
+	Global_58896[151 /*7*/].f_3 = joaat("SP1_LARGE_ACCIDENTS");
 	Global_58896[151 /*7*/].f_4 = 0;
 	Global_58896[152 /*7*/].f_2 = 1;
-	Global_58896[152 /*7*/].f_3 = joaat("sp2_large_accidents");
+	Global_58896[152 /*7*/].f_3 = joaat("SP2_LARGE_ACCIDENTS");
 	Global_58896[152 /*7*/].f_4 = 0;
 	Global_58896[153 /*7*/].f_2 = 1;
-	Global_58896[153 /*7*/].f_3 = joaat("sp0_total_legitimate_kills");
+	Global_58896[153 /*7*/].f_3 = joaat("SP0_TOTAL_LEGITIMATE_KILLS");
 	Global_58896[153 /*7*/].f_4 = 0;
 	Global_58896[154 /*7*/].f_2 = 1;
-	Global_58896[154 /*7*/].f_3 = joaat("sp1_total_legitimate_kills");
+	Global_58896[154 /*7*/].f_3 = joaat("SP1_TOTAL_LEGITIMATE_KILLS");
 	Global_58896[154 /*7*/].f_4 = 0;
 	Global_58896[155 /*7*/].f_2 = 1;
-	Global_58896[155 /*7*/].f_3 = joaat("sp2_total_legitimate_kills");
+	Global_58896[155 /*7*/].f_3 = joaat("SP2_TOTAL_LEGITIMATE_KILLS");
 	Global_58896[155 /*7*/].f_4 = 0;
 	Global_58896[156 /*7*/].f_2 = 1;
-	Global_58896[156 /*7*/].f_3 = joaat("sp0_money_spent_on_taxis");
+	Global_58896[156 /*7*/].f_3 = joaat("SP0_MONEY_SPENT_ON_TAXIS");
 	Global_58896[156 /*7*/].f_4 = 0;
 	Global_58896[157 /*7*/].f_2 = 1;
-	Global_58896[157 /*7*/].f_3 = joaat("sp1_money_spent_on_taxis");
+	Global_58896[157 /*7*/].f_3 = joaat("SP1_MONEY_SPENT_ON_TAXIS");
 	Global_58896[157 /*7*/].f_4 = 0;
 	Global_58896[158 /*7*/].f_2 = 1;
-	Global_58896[158 /*7*/].f_3 = joaat("sp2_money_spent_on_taxis");
+	Global_58896[158 /*7*/].f_3 = joaat("SP2_MONEY_SPENT_ON_TAXIS");
 	Global_58896[158 /*7*/].f_4 = 0;
 	Global_58896[159 /*7*/].f_2 = 1;
-	Global_58896[159 /*7*/].f_3 = joaat("sp0_money_spent_on_healthcare");
+	Global_58896[159 /*7*/].f_3 = joaat("SP0_MONEY_SPENT_ON_HEALTHCARE");
 	Global_58896[159 /*7*/].f_4 = 0;
 	Global_58896[160 /*7*/].f_2 = 1;
-	Global_58896[160 /*7*/].f_3 = joaat("sp1_money_spent_on_healthcare");
+	Global_58896[160 /*7*/].f_3 = joaat("SP1_MONEY_SPENT_ON_HEALTHCARE");
 	Global_58896[160 /*7*/].f_4 = 0;
 	Global_58896[161 /*7*/].f_2 = 1;
-	Global_58896[161 /*7*/].f_3 = joaat("sp2_money_spent_on_healthcare");
+	Global_58896[161 /*7*/].f_3 = joaat("SP2_MONEY_SPENT_ON_HEALTHCARE");
 	Global_58896[161 /*7*/].f_4 = 0;
 	Global_58896[174 /*7*/].f_2 = 1;
-	Global_58896[174 /*7*/].f_3 = joaat("sp0_money_spent_in_cop_bribes");
+	Global_58896[174 /*7*/].f_3 = joaat("SP0_MONEY_SPENT_IN_COP_BRIBES");
 	Global_58896[174 /*7*/].f_4 = 0;
 	Global_58896[175 /*7*/].f_2 = 1;
-	Global_58896[175 /*7*/].f_3 = joaat("sp1_money_spent_in_cop_bribes");
+	Global_58896[175 /*7*/].f_3 = joaat("SP1_MONEY_SPENT_IN_COP_BRIBES");
 	Global_58896[175 /*7*/].f_4 = 0;
 	Global_58896[176 /*7*/].f_2 = 1;
-	Global_58896[176 /*7*/].f_3 = joaat("sp2_money_spent_in_cop_bribes");
+	Global_58896[176 /*7*/].f_3 = joaat("SP2_MONEY_SPENT_IN_COP_BRIBES");
 	Global_58896[176 /*7*/].f_4 = 0;
 	Global_58896[177 /*7*/].f_2 = 1;
-	Global_58896[177 /*7*/].f_3 = joaat("sp0_busted");
+	Global_58896[177 /*7*/].f_3 = joaat("SP0_BUSTED");
 	Global_58896[177 /*7*/].f_4 = 0;
 	Global_58896[178 /*7*/].f_2 = 1;
-	Global_58896[178 /*7*/].f_3 = joaat("sp1_busted");
+	Global_58896[178 /*7*/].f_3 = joaat("SP1_BUSTED");
 	Global_58896[178 /*7*/].f_4 = 0;
 	Global_58896[179 /*7*/].f_2 = 1;
-	Global_58896[179 /*7*/].f_3 = joaat("sp2_busted");
+	Global_58896[179 /*7*/].f_3 = joaat("SP2_BUSTED");
 	Global_58896[179 /*7*/].f_4 = 0;
 	Global_58896[180 /*7*/].f_2 = 1;
-	Global_58896[180 /*7*/].f_3 = joaat("sp0_died_in_fall");
+	Global_58896[180 /*7*/].f_3 = joaat("SP0_DIED_IN_FALL");
 	Global_58896[180 /*7*/].f_4 = 0;
 	Global_58896[181 /*7*/].f_2 = 1;
-	Global_58896[181 /*7*/].f_3 = joaat("sp1_died_in_fall");
+	Global_58896[181 /*7*/].f_3 = joaat("SP1_DIED_IN_FALL");
 	Global_58896[181 /*7*/].f_4 = 0;
 	Global_58896[182 /*7*/].f_2 = 1;
-	Global_58896[182 /*7*/].f_3 = joaat("sp2_died_in_fall");
+	Global_58896[182 /*7*/].f_3 = joaat("SP2_DIED_IN_FALL");
 	Global_58896[182 /*7*/].f_4 = 0;
 	Global_58896[183 /*7*/].f_2 = 1;
-	Global_58896[183 /*7*/].f_3 = joaat("sp0_stars_attained");
+	Global_58896[183 /*7*/].f_3 = joaat("SP0_STARS_ATTAINED");
 	Global_58896[183 /*7*/].f_4 = 0;
 	Global_58896[184 /*7*/].f_2 = 1;
-	Global_58896[184 /*7*/].f_3 = joaat("sp1_stars_attained");
+	Global_58896[184 /*7*/].f_3 = joaat("SP1_STARS_ATTAINED");
 	Global_58896[184 /*7*/].f_4 = 0;
 	Global_58896[185 /*7*/].f_2 = 1;
-	Global_58896[185 /*7*/].f_3 = joaat("sp2_stars_attained");
+	Global_58896[185 /*7*/].f_3 = joaat("SP2_STARS_ATTAINED");
 	Global_58896[185 /*7*/].f_4 = 0;
 	Global_58896[186 /*7*/].f_2 = 1;
-	Global_58896[186 /*7*/].f_3 = joaat("sp0_stars_evaded");
+	Global_58896[186 /*7*/].f_3 = joaat("SP0_STARS_EVADED");
 	Global_58896[186 /*7*/].f_4 = 0;
 	Global_58896[187 /*7*/].f_2 = 1;
-	Global_58896[187 /*7*/].f_3 = joaat("sp1_stars_evaded");
+	Global_58896[187 /*7*/].f_3 = joaat("SP1_STARS_EVADED");
 	Global_58896[187 /*7*/].f_4 = 0;
 	Global_58896[188 /*7*/].f_2 = 1;
-	Global_58896[188 /*7*/].f_3 = joaat("sp2_stars_evaded");
+	Global_58896[188 /*7*/].f_3 = joaat("SP2_STARS_EVADED");
 	Global_58896[188 /*7*/].f_4 = 0;
 	Global_58896[189 /*7*/].f_2 = 1;
-	Global_58896[189 /*7*/].f_3 = joaat("sp0_manual_saved");
+	Global_58896[189 /*7*/].f_3 = joaat("SP0_MANUAL_SAVED");
 	Global_58896[189 /*7*/].f_4 = 0;
 	Global_58896[190 /*7*/].f_2 = 1;
-	Global_58896[190 /*7*/].f_3 = joaat("sp1_manual_saved");
+	Global_58896[190 /*7*/].f_3 = joaat("SP1_MANUAL_SAVED");
 	Global_58896[190 /*7*/].f_4 = 0;
 	Global_58896[191 /*7*/].f_2 = 1;
-	Global_58896[191 /*7*/].f_3 = joaat("sp2_manual_saved");
+	Global_58896[191 /*7*/].f_3 = joaat("SP2_MANUAL_SAVED");
 	Global_58896[191 /*7*/].f_4 = 0;
 	Global_58896[192 /*7*/].f_2 = 1;
-	Global_58896[192 /*7*/].f_3 = joaat("sp0_kills_cop");
+	Global_58896[192 /*7*/].f_3 = joaat("SP0_KILLS_COP");
 	Global_58896[192 /*7*/].f_4 = 0;
 	Global_58896[193 /*7*/].f_2 = 1;
-	Global_58896[193 /*7*/].f_3 = joaat("sp1_kills_cop");
+	Global_58896[193 /*7*/].f_3 = joaat("SP1_KILLS_COP");
 	Global_58896[193 /*7*/].f_4 = 0;
 	Global_58896[194 /*7*/].f_2 = 1;
-	Global_58896[194 /*7*/].f_3 = joaat("sp2_kills_cop");
+	Global_58896[194 /*7*/].f_3 = joaat("SP2_KILLS_COP");
 	Global_58896[194 /*7*/].f_4 = 0;
 	Global_58896[195 /*7*/].f_2 = 1;
-	Global_58896[195 /*7*/].f_3 = joaat("sp0_kills_swat");
+	Global_58896[195 /*7*/].f_3 = joaat("SP0_KILLS_SWAT");
 	Global_58896[195 /*7*/].f_4 = 0;
 	Global_58896[196 /*7*/].f_2 = 1;
-	Global_58896[196 /*7*/].f_3 = joaat("sp1_kills_swat");
+	Global_58896[196 /*7*/].f_3 = joaat("SP1_KILLS_SWAT");
 	Global_58896[196 /*7*/].f_4 = 0;
 	Global_58896[197 /*7*/].f_2 = 1;
-	Global_58896[197 /*7*/].f_3 = joaat("sp2_kills_swat");
+	Global_58896[197 /*7*/].f_3 = joaat("SP2_KILLS_SWAT");
 	Global_58896[197 /*7*/].f_4 = 0;
 	Global_58896[198 /*7*/].f_2 = 1;
-	Global_58896[198 /*7*/].f_3 = joaat("sp0_time_in_cover");
+	Global_58896[198 /*7*/].f_3 = joaat("SP0_TIME_IN_COVER");
 	Global_58896[198 /*7*/].f_4 = 0;
 	Global_58896[199 /*7*/].f_2 = 1;
-	Global_58896[199 /*7*/].f_3 = joaat("sp1_time_in_cover");
+	Global_58896[199 /*7*/].f_3 = joaat("SP1_TIME_IN_COVER");
 	Global_58896[199 /*7*/].f_4 = 0;
 	Global_58896[200 /*7*/].f_2 = 1;
-	Global_58896[200 /*7*/].f_3 = joaat("sp2_time_in_cover");
+	Global_58896[200 /*7*/].f_3 = joaat("SP2_TIME_IN_COVER");
 	Global_58896[200 /*7*/].f_4 = 0;
-	Global_58334[0 /*7*/] = joaat("sm_price_amu");
-	Global_58334[0 /*7*/].f_3[0] = joaat("amu_ow0");
-	Global_58334[0 /*7*/].f_3[1] = joaat("amu_ow1");
-	Global_58334[0 /*7*/].f_3[2] = joaat("amu_ow2");
-	Global_58334[1 /*7*/] = joaat("sm_price_bdg");
-	Global_58334[1 /*7*/].f_3[0] = joaat("bdg_ow0");
-	Global_58334[1 /*7*/].f_3[1] = joaat("bdg_ow1");
-	Global_58334[1 /*7*/].f_3[2] = joaat("bdg_ow2");
-	Global_58334[2 /*7*/] = joaat("sm_price_bfa");
-	Global_58334[2 /*7*/].f_3[0] = joaat("bfa_ow0");
-	Global_58334[2 /*7*/].f_3[1] = joaat("bfa_ow1");
-	Global_58334[2 /*7*/].f_3[2] = joaat("bfa_ow2");
-	Global_58334[3 /*7*/] = joaat("sm_price_bin");
-	Global_58334[3 /*7*/].f_3[0] = joaat("bin_ow0");
-	Global_58334[3 /*7*/].f_3[1] = joaat("bin_ow1");
-	Global_58334[3 /*7*/].f_3[2] = joaat("bin_ow2");
-	Global_58334[4 /*7*/] = joaat("sm_price_btr");
-	Global_58334[4 /*7*/].f_3[0] = joaat("btr_ow0");
-	Global_58334[4 /*7*/].f_3[1] = joaat("btr_ow1");
-	Global_58334[4 /*7*/].f_3[2] = joaat("btr_ow2");
-	Global_58334[5 /*7*/] = joaat("sm_price_ble");
-	Global_58334[5 /*7*/].f_3[0] = joaat("ble_ow0");
-	Global_58334[5 /*7*/].f_3[1] = joaat("ble_ow1");
-	Global_58334[5 /*7*/].f_3[2] = joaat("ble_ow2");
-	Global_58334[6 /*7*/] = joaat("sm_price_bru");
-	Global_58334[6 /*7*/].f_3[0] = joaat("bru_ow0");
-	Global_58334[6 /*7*/].f_3[1] = joaat("bru_ow1");
-	Global_58334[6 /*7*/].f_3[2] = joaat("bru_ow2");
-	Global_58334[7 /*7*/] = joaat("sm_price_cnt");
-	Global_58334[7 /*7*/].f_3[0] = joaat("cnt_ow0");
-	Global_58334[7 /*7*/].f_3[1] = joaat("cnt_ow1");
-	Global_58334[7 /*7*/].f_3[2] = joaat("cnt_ow2");
-	Global_58334[8 /*7*/] = joaat("sm_price_cre");
-	Global_58334[8 /*7*/].f_3[0] = joaat("cre_ow0");
-	Global_58334[8 /*7*/].f_3[1] = joaat("cre_ow1");
-	Global_58334[8 /*7*/].f_3[2] = joaat("cre_ow2");
-	Global_58334[9 /*7*/] = joaat("sm_price_dgp");
-	Global_58334[9 /*7*/].f_3[0] = joaat("dgp_ow0");
-	Global_58334[9 /*7*/].f_3[1] = joaat("dgp_ow1");
-	Global_58334[9 /*7*/].f_3[2] = joaat("dgp_ow2");
-	Global_58334[10 /*7*/] = joaat("sm_price_wap");
-	Global_58334[10 /*7*/].f_3[0] = joaat("wap_ow0");
-	Global_58334[10 /*7*/].f_3[1] = joaat("wap_ow1");
-	Global_58334[10 /*7*/].f_3[2] = joaat("wap_ow2");
-	Global_58334[11 /*7*/] = joaat("sm_price_fac");
-	Global_58334[11 /*7*/].f_3[0] = joaat("fac_ow0");
-	Global_58334[11 /*7*/].f_3[1] = joaat("fac_ow1");
-	Global_58334[11 /*7*/].f_3[2] = joaat("fac_ow2");
-	Global_58334[12 /*7*/] = joaat("sm_price_frt");
-	Global_58334[12 /*7*/].f_3[0] = joaat("frt_ow0");
-	Global_58334[12 /*7*/].f_3[1] = joaat("frt_ow1");
-	Global_58334[12 /*7*/].f_3[2] = joaat("frt_ow2");
-	Global_58334[13 /*7*/] = joaat("sm_price_lsc");
-	Global_58334[13 /*7*/].f_3[0] = joaat("lsc_ow0");
-	Global_58334[13 /*7*/].f_3[1] = joaat("lsc_ow1");
-	Global_58334[13 /*7*/].f_3[2] = joaat("lsc_ow2");
-	Global_58334[14 /*7*/] = joaat("sm_price_lst");
-	Global_58334[14 /*7*/].f_3[0] = joaat("lst_ow0");
-	Global_58334[14 /*7*/].f_3[1] = joaat("lst_ow1");
-	Global_58334[14 /*7*/].f_3[2] = joaat("lst_ow2");
-	Global_58334[15 /*7*/] = joaat("sm_price_ltd");
-	Global_58334[15 /*7*/].f_3[0] = joaat("ltd_ow0");
-	Global_58334[15 /*7*/].f_3[1] = joaat("ltd_ow1");
-	Global_58334[15 /*7*/].f_3[2] = joaat("ltd_ow2");
-	Global_58334[16 /*7*/] = joaat("sm_price_mai");
-	Global_58334[16 /*7*/].f_3[0] = joaat("mai_ow0");
-	Global_58334[16 /*7*/].f_3[1] = joaat("mai_ow1");
-	Global_58334[16 /*7*/].f_3[2] = joaat("mai_ow2");
-	Global_58334[17 /*7*/] = joaat("sm_price_pkw");
-	Global_58334[17 /*7*/].f_3[0] = joaat("pkw_ow0");
-	Global_58334[17 /*7*/].f_3[1] = joaat("pkw_ow1");
-	Global_58334[17 /*7*/].f_3[2] = joaat("pkw_ow2");
-	Global_58334[18 /*7*/] = joaat("sm_price_pis");
-	Global_58334[18 /*7*/].f_3[0] = joaat("pis_ow0");
-	Global_58334[18 /*7*/].f_3[1] = joaat("pis_ow1");
-	Global_58334[18 /*7*/].f_3[2] = joaat("pis_ow2");
-	Global_58334[19 /*7*/] = joaat("sm_price_pon");
-	Global_58334[19 /*7*/].f_3[0] = joaat("pon_ow0");
-	Global_58334[19 /*7*/].f_3[1] = joaat("pon_ow1");
-	Global_58334[19 /*7*/].f_3[2] = joaat("pon_ow2");
-	Global_58334[20 /*7*/] = joaat("sm_price_ron");
-	Global_58334[20 /*7*/].f_3[0] = joaat("ron_ow0");
-	Global_58334[20 /*7*/].f_3[1] = joaat("ron_ow1");
-	Global_58334[20 /*7*/].f_3[2] = joaat("ron_ow2");
-	Global_58334[21 /*7*/] = joaat("sm_price_sht");
-	Global_58334[21 /*7*/].f_3[0] = joaat("sht_ow0");
-	Global_58334[21 /*7*/].f_3[1] = joaat("sht_ow1");
-	Global_58334[21 /*7*/].f_3[2] = joaat("sht_ow2");
-	Global_58334[22 /*7*/] = joaat("sm_price_spu");
-	Global_58334[22 /*7*/].f_3[0] = joaat("spu_ow0");
-	Global_58334[22 /*7*/].f_3[1] = joaat("spu_ow1");
-	Global_58334[22 /*7*/].f_3[2] = joaat("spu_ow2");
-	Global_58334[23 /*7*/] = joaat("sm_price_tnk");
-	Global_58334[23 /*7*/].f_3[0] = joaat("tnk_ow0");
-	Global_58334[23 /*7*/].f_3[1] = joaat("tnk_ow1");
-	Global_58334[23 /*7*/].f_3[2] = joaat("tnk_ow2");
-	Global_58334[24 /*7*/] = joaat("sm_price_wiw");
-	Global_58334[24 /*7*/].f_3[0] = joaat("wiw_ow0");
-	Global_58334[24 /*7*/].f_3[1] = joaat("wiw_ow1");
-	Global_58334[24 /*7*/].f_3[2] = joaat("wiw_ow2");
-	Global_58334[25 /*7*/] = joaat("sm_price_uma");
-	Global_58334[25 /*7*/].f_3[0] = joaat("uma_ow0");
-	Global_58334[25 /*7*/].f_3[1] = joaat("uma_ow1");
-	Global_58334[25 /*7*/].f_3[2] = joaat("uma_ow2");
-	Global_58334[26 /*7*/] = joaat("sm_price_vap");
-	Global_58334[26 /*7*/].f_3[0] = joaat("vap_ow0");
-	Global_58334[26 /*7*/].f_3[1] = joaat("vap_ow1");
-	Global_58334[26 /*7*/].f_3[2] = joaat("vap_ow2");
-	Global_58334[27 /*7*/] = joaat("sm_price_vom");
-	Global_58334[27 /*7*/].f_3[0] = joaat("vom_ow0");
-	Global_58334[27 /*7*/].f_3[1] = joaat("vom_ow1");
-	Global_58334[27 /*7*/].f_3[2] = joaat("vom_ow2");
-	Global_58334[28 /*7*/] = joaat("sm_price_wzl");
-	Global_58334[28 /*7*/].f_3[0] = joaat("wzl_ow0");
-	Global_58334[28 /*7*/].f_3[1] = joaat("wzl_ow1");
-	Global_58334[28 /*7*/].f_3[2] = joaat("wzl_ow2");
-	Global_58334[29 /*7*/] = joaat("sm_price_wiz");
-	Global_58334[29 /*7*/].f_3[0] = joaat("wiz_ow0");
-	Global_58334[29 /*7*/].f_3[1] = joaat("wiz_ow1");
-	Global_58334[29 /*7*/].f_3[2] = joaat("wiz_ow2");
-	Global_58334[30 /*7*/] = joaat("sm_price_zit");
-	Global_58334[30 /*7*/].f_3[0] = joaat("zit_ow0");
-	Global_58334[30 /*7*/].f_3[1] = joaat("zit_ow1");
-	Global_58334[30 /*7*/].f_3[2] = joaat("zit_ow2");
-	Global_58334[31 /*7*/] = joaat("sm_price_shk");
-	Global_58334[31 /*7*/].f_3[0] = joaat("shk_ow0");
-	Global_58334[31 /*7*/].f_3[1] = joaat("shk_ow1");
-	Global_58334[31 /*7*/].f_3[2] = joaat("shk_ow2");
-	Global_58334[32 /*7*/] = joaat("sm_price_mol");
-	Global_58334[32 /*7*/].f_3[0] = joaat("mol_ow0");
-	Global_58334[32 /*7*/].f_3[1] = joaat("mol_ow1");
-	Global_58334[32 /*7*/].f_3[2] = joaat("mol_ow2");
-	Global_58334[33 /*7*/] = joaat("sm_price_pmp");
-	Global_58334[33 /*7*/].f_3[0] = joaat("pmp_ow0");
-	Global_58334[33 /*7*/].f_3[1] = joaat("pmp_ow1");
-	Global_58334[33 /*7*/].f_3[2] = joaat("pmp_ow2");
-	Global_58334[34 /*7*/] = joaat("sm_price_got");
-	Global_58334[34 /*7*/].f_3[0] = joaat("got_ow0");
-	Global_58334[34 /*7*/].f_3[1] = joaat("got_ow1");
-	Global_58334[34 /*7*/].f_3[2] = joaat("got_ow2");
-	Global_58334[35 /*7*/] = joaat("sm_price_eye");
-	Global_58334[35 /*7*/].f_3[0] = joaat("eye_ow0");
-	Global_58334[35 /*7*/].f_3[1] = joaat("eye_ow1");
-	Global_58334[35 /*7*/].f_3[2] = joaat("eye_ow2");
-	Global_58334[36 /*7*/] = joaat("sm_price_hvy");
-	Global_58334[36 /*7*/].f_3[0] = joaat("hvy_ow0");
-	Global_58334[36 /*7*/].f_3[1] = joaat("hvy_ow1");
-	Global_58334[36 /*7*/].f_3[2] = joaat("hvy_ow2");
-	Global_58334[37 /*7*/] = joaat("sm_price_shr");
-	Global_58334[37 /*7*/].f_3[0] = joaat("shr_ow0");
-	Global_58334[37 /*7*/].f_3[1] = joaat("shr_ow1");
-	Global_58334[37 /*7*/].f_3[2] = joaat("shr_ow2");
-	Global_58334[38 /*7*/] = joaat("sm_price_hal");
-	Global_58334[38 /*7*/].f_3[0] = joaat("hal_ow0");
-	Global_58334[38 /*7*/].f_3[1] = joaat("hal_ow1");
-	Global_58334[38 /*7*/].f_3[2] = joaat("hal_ow2");
+	Global_58334[0 /*7*/] = joaat("SM_PRICE_AMU");
+	Global_58334[0 /*7*/].f_3[0] = joaat("AMU_OW0");
+	Global_58334[0 /*7*/].f_3[1] = joaat("AMU_OW1");
+	Global_58334[0 /*7*/].f_3[2] = joaat("AMU_OW2");
+	Global_58334[1 /*7*/] = joaat("SM_PRICE_BDG");
+	Global_58334[1 /*7*/].f_3[0] = joaat("BDG_OW0");
+	Global_58334[1 /*7*/].f_3[1] = joaat("BDG_OW1");
+	Global_58334[1 /*7*/].f_3[2] = joaat("BDG_OW2");
+	Global_58334[2 /*7*/] = joaat("SM_PRICE_BFA");
+	Global_58334[2 /*7*/].f_3[0] = joaat("BFA_OW0");
+	Global_58334[2 /*7*/].f_3[1] = joaat("BFA_OW1");
+	Global_58334[2 /*7*/].f_3[2] = joaat("BFA_OW2");
+	Global_58334[3 /*7*/] = joaat("SM_PRICE_BIN");
+	Global_58334[3 /*7*/].f_3[0] = joaat("BIN_OW0");
+	Global_58334[3 /*7*/].f_3[1] = joaat("BIN_OW1");
+	Global_58334[3 /*7*/].f_3[2] = joaat("BIN_OW2");
+	Global_58334[4 /*7*/] = joaat("SM_PRICE_BTR");
+	Global_58334[4 /*7*/].f_3[0] = joaat("BTR_OW0");
+	Global_58334[4 /*7*/].f_3[1] = joaat("BTR_OW1");
+	Global_58334[4 /*7*/].f_3[2] = joaat("BTR_OW2");
+	Global_58334[5 /*7*/] = joaat("SM_PRICE_BLE");
+	Global_58334[5 /*7*/].f_3[0] = joaat("BLE_OW0");
+	Global_58334[5 /*7*/].f_3[1] = joaat("BLE_OW1");
+	Global_58334[5 /*7*/].f_3[2] = joaat("BLE_OW2");
+	Global_58334[6 /*7*/] = joaat("SM_PRICE_BRU");
+	Global_58334[6 /*7*/].f_3[0] = joaat("BRU_OW0");
+	Global_58334[6 /*7*/].f_3[1] = joaat("BRU_OW1");
+	Global_58334[6 /*7*/].f_3[2] = joaat("BRU_OW2");
+	Global_58334[7 /*7*/] = joaat("SM_PRICE_CNT");
+	Global_58334[7 /*7*/].f_3[0] = joaat("CNT_OW0");
+	Global_58334[7 /*7*/].f_3[1] = joaat("CNT_OW1");
+	Global_58334[7 /*7*/].f_3[2] = joaat("CNT_OW2");
+	Global_58334[8 /*7*/] = joaat("SM_PRICE_CRE");
+	Global_58334[8 /*7*/].f_3[0] = joaat("CRE_OW0");
+	Global_58334[8 /*7*/].f_3[1] = joaat("CRE_OW1");
+	Global_58334[8 /*7*/].f_3[2] = joaat("CRE_OW2");
+	Global_58334[9 /*7*/] = joaat("SM_PRICE_DGP");
+	Global_58334[9 /*7*/].f_3[0] = joaat("DGP_OW0");
+	Global_58334[9 /*7*/].f_3[1] = joaat("DGP_OW1");
+	Global_58334[9 /*7*/].f_3[2] = joaat("DGP_OW2");
+	Global_58334[10 /*7*/] = joaat("SM_PRICE_WAP");
+	Global_58334[10 /*7*/].f_3[0] = joaat("WAP_OW0");
+	Global_58334[10 /*7*/].f_3[1] = joaat("WAP_OW1");
+	Global_58334[10 /*7*/].f_3[2] = joaat("WAP_OW2");
+	Global_58334[11 /*7*/] = joaat("SM_PRICE_FAC");
+	Global_58334[11 /*7*/].f_3[0] = joaat("FAC_OW0");
+	Global_58334[11 /*7*/].f_3[1] = joaat("FAC_OW1");
+	Global_58334[11 /*7*/].f_3[2] = joaat("FAC_OW2");
+	Global_58334[12 /*7*/] = joaat("SM_PRICE_FRT");
+	Global_58334[12 /*7*/].f_3[0] = joaat("FRT_OW0");
+	Global_58334[12 /*7*/].f_3[1] = joaat("FRT_OW1");
+	Global_58334[12 /*7*/].f_3[2] = joaat("FRT_OW2");
+	Global_58334[13 /*7*/] = joaat("SM_PRICE_LSC");
+	Global_58334[13 /*7*/].f_3[0] = joaat("LSC_OW0");
+	Global_58334[13 /*7*/].f_3[1] = joaat("LSC_OW1");
+	Global_58334[13 /*7*/].f_3[2] = joaat("LSC_OW2");
+	Global_58334[14 /*7*/] = joaat("SM_PRICE_LST");
+	Global_58334[14 /*7*/].f_3[0] = joaat("LST_OW0");
+	Global_58334[14 /*7*/].f_3[1] = joaat("LST_OW1");
+	Global_58334[14 /*7*/].f_3[2] = joaat("LST_OW2");
+	Global_58334[15 /*7*/] = joaat("SM_PRICE_LTD");
+	Global_58334[15 /*7*/].f_3[0] = joaat("LTD_OW0");
+	Global_58334[15 /*7*/].f_3[1] = joaat("LTD_OW1");
+	Global_58334[15 /*7*/].f_3[2] = joaat("LTD_OW2");
+	Global_58334[16 /*7*/] = joaat("SM_PRICE_MAI");
+	Global_58334[16 /*7*/].f_3[0] = joaat("MAI_OW0");
+	Global_58334[16 /*7*/].f_3[1] = joaat("MAI_OW1");
+	Global_58334[16 /*7*/].f_3[2] = joaat("MAI_OW2");
+	Global_58334[17 /*7*/] = joaat("SM_PRICE_PKW");
+	Global_58334[17 /*7*/].f_3[0] = joaat("PKW_OW0");
+	Global_58334[17 /*7*/].f_3[1] = joaat("PKW_OW1");
+	Global_58334[17 /*7*/].f_3[2] = joaat("PKW_OW2");
+	Global_58334[18 /*7*/] = joaat("SM_PRICE_PIS");
+	Global_58334[18 /*7*/].f_3[0] = joaat("PIS_OW0");
+	Global_58334[18 /*7*/].f_3[1] = joaat("PIS_OW1");
+	Global_58334[18 /*7*/].f_3[2] = joaat("PIS_OW2");
+	Global_58334[19 /*7*/] = joaat("SM_PRICE_PON");
+	Global_58334[19 /*7*/].f_3[0] = joaat("PON_OW0");
+	Global_58334[19 /*7*/].f_3[1] = joaat("PON_OW1");
+	Global_58334[19 /*7*/].f_3[2] = joaat("PON_OW2");
+	Global_58334[20 /*7*/] = joaat("SM_PRICE_RON");
+	Global_58334[20 /*7*/].f_3[0] = joaat("RON_OW0");
+	Global_58334[20 /*7*/].f_3[1] = joaat("RON_OW1");
+	Global_58334[20 /*7*/].f_3[2] = joaat("RON_OW2");
+	Global_58334[21 /*7*/] = joaat("SM_PRICE_SHT");
+	Global_58334[21 /*7*/].f_3[0] = joaat("SHT_OW0");
+	Global_58334[21 /*7*/].f_3[1] = joaat("SHT_OW1");
+	Global_58334[21 /*7*/].f_3[2] = joaat("SHT_OW2");
+	Global_58334[22 /*7*/] = joaat("SM_PRICE_SPU");
+	Global_58334[22 /*7*/].f_3[0] = joaat("SPU_OW0");
+	Global_58334[22 /*7*/].f_3[1] = joaat("SPU_OW1");
+	Global_58334[22 /*7*/].f_3[2] = joaat("SPU_OW2");
+	Global_58334[23 /*7*/] = joaat("SM_PRICE_TNK");
+	Global_58334[23 /*7*/].f_3[0] = joaat("TNK_OW0");
+	Global_58334[23 /*7*/].f_3[1] = joaat("TNK_OW1");
+	Global_58334[23 /*7*/].f_3[2] = joaat("TNK_OW2");
+	Global_58334[24 /*7*/] = joaat("SM_PRICE_WIW");
+	Global_58334[24 /*7*/].f_3[0] = joaat("WIW_OW0");
+	Global_58334[24 /*7*/].f_3[1] = joaat("WIW_OW1");
+	Global_58334[24 /*7*/].f_3[2] = joaat("WIW_OW2");
+	Global_58334[25 /*7*/] = joaat("SM_PRICE_UMA");
+	Global_58334[25 /*7*/].f_3[0] = joaat("UMA_OW0");
+	Global_58334[25 /*7*/].f_3[1] = joaat("UMA_OW1");
+	Global_58334[25 /*7*/].f_3[2] = joaat("UMA_OW2");
+	Global_58334[26 /*7*/] = joaat("SM_PRICE_VAP");
+	Global_58334[26 /*7*/].f_3[0] = joaat("VAP_OW0");
+	Global_58334[26 /*7*/].f_3[1] = joaat("VAP_OW1");
+	Global_58334[26 /*7*/].f_3[2] = joaat("VAP_OW2");
+	Global_58334[27 /*7*/] = joaat("SM_PRICE_VOM");
+	Global_58334[27 /*7*/].f_3[0] = joaat("VOM_OW0");
+	Global_58334[27 /*7*/].f_3[1] = joaat("VOM_OW1");
+	Global_58334[27 /*7*/].f_3[2] = joaat("VOM_OW2");
+	Global_58334[28 /*7*/] = joaat("SM_PRICE_WZL");
+	Global_58334[28 /*7*/].f_3[0] = joaat("WZL_OW0");
+	Global_58334[28 /*7*/].f_3[1] = joaat("WZL_OW1");
+	Global_58334[28 /*7*/].f_3[2] = joaat("WZL_OW2");
+	Global_58334[29 /*7*/] = joaat("SM_PRICE_WIZ");
+	Global_58334[29 /*7*/].f_3[0] = joaat("WIZ_OW0");
+	Global_58334[29 /*7*/].f_3[1] = joaat("WIZ_OW1");
+	Global_58334[29 /*7*/].f_3[2] = joaat("WIZ_OW2");
+	Global_58334[30 /*7*/] = joaat("SM_PRICE_ZIT");
+	Global_58334[30 /*7*/].f_3[0] = joaat("ZIT_OW0");
+	Global_58334[30 /*7*/].f_3[1] = joaat("ZIT_OW1");
+	Global_58334[30 /*7*/].f_3[2] = joaat("ZIT_OW2");
+	Global_58334[31 /*7*/] = joaat("SM_PRICE_SHK");
+	Global_58334[31 /*7*/].f_3[0] = joaat("SHK_OW0");
+	Global_58334[31 /*7*/].f_3[1] = joaat("SHK_OW1");
+	Global_58334[31 /*7*/].f_3[2] = joaat("SHK_OW2");
+	Global_58334[32 /*7*/] = joaat("SM_PRICE_MOL");
+	Global_58334[32 /*7*/].f_3[0] = joaat("MOL_OW0");
+	Global_58334[32 /*7*/].f_3[1] = joaat("MOL_OW1");
+	Global_58334[32 /*7*/].f_3[2] = joaat("MOL_OW2");
+	Global_58334[33 /*7*/] = joaat("SM_PRICE_PMP");
+	Global_58334[33 /*7*/].f_3[0] = joaat("PMP_OW0");
+	Global_58334[33 /*7*/].f_3[1] = joaat("PMP_OW1");
+	Global_58334[33 /*7*/].f_3[2] = joaat("PMP_OW2");
+	Global_58334[34 /*7*/] = joaat("SM_PRICE_GOT");
+	Global_58334[34 /*7*/].f_3[0] = joaat("GOT_OW0");
+	Global_58334[34 /*7*/].f_3[1] = joaat("GOT_OW1");
+	Global_58334[34 /*7*/].f_3[2] = joaat("GOT_OW2");
+	Global_58334[35 /*7*/] = joaat("SM_PRICE_EYE");
+	Global_58334[35 /*7*/].f_3[0] = joaat("EYE_OW0");
+	Global_58334[35 /*7*/].f_3[1] = joaat("EYE_OW1");
+	Global_58334[35 /*7*/].f_3[2] = joaat("EYE_OW2");
+	Global_58334[36 /*7*/] = joaat("SM_PRICE_HVY");
+	Global_58334[36 /*7*/].f_3[0] = joaat("HVY_OW0");
+	Global_58334[36 /*7*/].f_3[1] = joaat("HVY_OW1");
+	Global_58334[36 /*7*/].f_3[2] = joaat("HVY_OW2");
+	Global_58334[37 /*7*/] = joaat("SM_PRICE_SHR");
+	Global_58334[37 /*7*/].f_3[0] = joaat("SHR_OW0");
+	Global_58334[37 /*7*/].f_3[1] = joaat("SHR_OW1");
+	Global_58334[37 /*7*/].f_3[2] = joaat("SHR_OW2");
+	Global_58334[38 /*7*/] = joaat("SM_PRICE_HAL");
+	Global_58334[38 /*7*/].f_3[0] = joaat("HAL_OW0");
+	Global_58334[38 /*7*/].f_3[1] = joaat("HAL_OW1");
+	Global_58334[38 /*7*/].f_3[2] = joaat("HAL_OW2");
 }
 
 void func_99()//Position - 0x9572

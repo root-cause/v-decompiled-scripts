@@ -702,7 +702,7 @@ void func_13(var uParam0, int iParam1, int iParam2, struct<3> Param3, var uParam
 			if (!func_43(PLAYER::PLAYER_ID()))
 			{
 				func_31(PLAYER::PLAYER_ID(), 0, 4, 0);
-				WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("weapon_unarmed"), true);
+				WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"), true);
 				ENTITY::SET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), -209.434f, 305.016f, 95.9464f, true, false, false, true);
 				ENTITY::SET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID(), 12.5f);
 				TASK::TASK_GO_STRAIGHT_TO_COORD(PLAYER::PLAYER_PED_ID(), -209.867f, 306.969f, 95.9464f, 1f, 20000, 40000f, 0.1f);
@@ -1360,7 +1360,7 @@ void func_36(bool bParam0, int iParam1, int iParam2)//Position - 0x14AA
 			NETWORK::NETWORK_SET_IN_SPECTATOR_MODE(bParam0, iParam1);
 		}
 		HUD::SET_MINIMAP_IN_SPECTATOR_MODE(bParam0, iParam1);
-		func_37(joaat("mpply_is_char_spectating"), bParam0);
+		func_37(joaat("MPPLY_IS_CHAR_SPECTATING"), bParam0);
 	}
 }
 
@@ -10219,32 +10219,32 @@ int func_311(int iParam0)//Position - 0xC09D
 	switch (iParam0)
 	{
 		case 3:
-			return joaat("mpply_gangops_allinorder");
+			return joaat("MPPLY_GANGOPS_ALLINORDER");
 		
 		case 4:
-			return joaat("mpply_gangops_loyalty");
+			return joaat("MPPLY_GANGOPS_LOYALTY");
 		
 		case 7:
-			return joaat("mpply_gangops_loyalty2");
+			return joaat("MPPLY_GANGOPS_LOYALTY2");
 		
 		case 8:
-			return joaat("mpply_gangops_loyalty3");
+			return joaat("MPPLY_GANGOPS_LOYALTY3");
 		
 		case 5:
-			return joaat("mpply_gangops_crimmasmd");
+			return joaat("MPPLY_GANGOPS_CRIMMASMD");
 		
 		case 9:
-			return joaat("mpply_gangops_crimmasmd2");
+			return joaat("MPPLY_GANGOPS_CRIMMASMD2");
 		
 		case 10:
-			return joaat("mpply_gangops_crimmasmd3");
+			return joaat("MPPLY_GANGOPS_CRIMMASMD3");
 		
 		case 11:
-			return joaat("mpply_gangops_support");
+			return joaat("MPPLY_GANGOPS_SUPPORT");
 		
 		default:
 	}
-	return joaat("mpply_gangops_allinorder");
+	return joaat("MPPLY_GANGOPS_ALLINORDER");
 }
 
 int func_312(int iParam0)//Position - 0xC121
@@ -15046,7 +15046,7 @@ int func_482(int iParam0)//Position - 0x11E0E
 		if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 		{
 			iVar1 = ENTITY::GET_ENTITY_MODEL(iVar0);
-			if (iVar1 == joaat("mp_m_freemode_01") || iVar1 == joaat("mp_f_freemode_01"))
+			if (iVar1 == joaat("MP_M_Freemode_01") || iVar1 == joaat("MP_F_Freemode_01"))
 			{
 				return 0;
 			}

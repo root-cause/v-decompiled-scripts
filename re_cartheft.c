@@ -916,7 +916,7 @@ int func_4()//Position - 0xDB3
 					fVar3 = 53.23f;
 					fLocal_96 = 50f;
 					ENTITY::SET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), Local_83, true, false, false, true);
-					WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("weapon_unarmed"), true);
+					WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"), true);
 					ENTITY::SET_ENTITY_COORDS(iLocal_71, Local_85, true, false, false, true);
 					ENTITY::SET_ENTITY_HEADING(iLocal_73, fLocal_89);
 					ENTITY::SET_ENTITY_COORDS(iLocal_73, Local_84, true, false, false, true);
@@ -942,7 +942,7 @@ int func_4()//Position - 0xDB3
 					Var2 = { -486.92f, -2169.01f, 8.89f };
 					fVar3 = 63.1f;
 					ENTITY::SET_ENTITY_COORDS(iLocal_73, Local_84, true, false, false, true);
-					WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("weapon_unarmed"), true);
+					WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"), true);
 					ENTITY::SET_ENTITY_HEADING(iLocal_73, fLocal_89);
 				}
 				PLAYER::SET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID(), 0, false);
@@ -2233,7 +2233,7 @@ int func_48(char* sParam0, int iParam1, bool bParam2)//Position - 0x263E
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -2421,7 +2421,7 @@ int func_56()//Position - 0x2A9E
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}
@@ -3641,7 +3641,7 @@ bool func_96()//Position - 0x3F59
 
 int func_97(int iParam0)//Position - 0x3F69
 {
-	if (ENTITY::GET_ENTITY_MODEL(PLAYER::GET_PLAYER_PED(iParam0)) == joaat("mp_f_freemode_01"))
+	if (ENTITY::GET_ENTITY_MODEL(PLAYER::GET_PLAYER_PED(iParam0)) == joaat("MP_F_Freemode_01"))
 	{
 		return 1;
 	}
@@ -4604,15 +4604,15 @@ void func_125(int iParam0, var uParam1, var uParam2)//Position - 0x518A
 		Global_113386.f_10194[iParam0 /*12*/].f_11 = uParam2;
 		if (iParam0 == 287)
 		{
-			STATS::PRESENCE_EVENT_UPDATESTAT_INT(joaat("num_hidden_packages_0"), 50, 0);
+			STATS::PRESENCE_EVENT_UPDATESTAT_INT(joaat("NUM_HIDDEN_PACKAGES_0"), 50, 0);
 		}
 		if (iParam0 == 286)
 		{
-			STATS::PRESENCE_EVENT_UPDATESTAT_INT(joaat("num_hidden_packages_1"), 50, 0);
+			STATS::PRESENCE_EVENT_UPDATESTAT_INT(joaat("NUM_HIDDEN_PACKAGES_1"), 50, 0);
 		}
 		if (iParam0 == 299)
 		{
-			STATS::PRESENCE_EVENT_UPDATESTAT_INT(joaat("num_hidden_packages_3"), 50, 0);
+			STATS::PRESENCE_EVENT_UPDATESTAT_INT(joaat("NUM_HIDDEN_PACKAGES_3"), 50, 0);
 		}
 	}
 	if (bVar0)
@@ -4734,7 +4734,7 @@ void func_126()//Position - 0x5270
 			{
 				if (Global_113126 == Global_113109)
 				{
-					STATS::PRESENCE_EVENT_UPDATESTAT_INT(joaat("num_rndevents_completed"), Global_113109, 0);
+					STATS::PRESENCE_EVENT_UPDATESTAT_INT(joaat("NUM_RNDEVENTS_COMPLETED"), Global_113109, 0);
 					MISC::SET_BIT(&(Global_113386.f_10194.f_3856), 14);
 				}
 			}
@@ -4764,26 +4764,26 @@ void func_126()//Position - 0x5270
 	{
 		iVar9 = Global_113126;
 	}
-	STATS::STAT_SET_INT(joaat("num_missions_completed"), Global_113122, true);
-	STATS::STAT_SET_INT(joaat("num_missions_available"), Global_113105, true);
-	STATS::STAT_SET_INT(joaat("num_minigames_completed"), Global_113123, true);
-	STATS::STAT_SET_INT(joaat("num_minigames_available"), Global_113106, true);
-	STATS::STAT_SET_INT(joaat("num_oddjobs_completed"), Global_113124, true);
-	STATS::STAT_SET_INT(joaat("num_oddjobs_available"), Global_113107, true);
-	STATS::STAT_SET_INT(joaat("num_rndpeople_completed"), Global_113125, true);
-	STATS::STAT_SET_INT(joaat("num_rndpeople_available"), Global_113108, true);
-	STATS::STAT_SET_INT(joaat("num_rndevents_completed"), iVar9, true);
-	STATS::STAT_SET_INT(joaat("num_rndevents_available"), Global_113112, true);
-	STATS::STAT_SET_INT(joaat("num_misc_completed"), (Global_113128 + Global_113127), true);
-	STATS::STAT_SET_INT(joaat("num_misc_available"), (Global_113111 + Global_113110), true);
+	STATS::STAT_SET_INT(joaat("NUM_MISSIONS_COMPLETED"), Global_113122, true);
+	STATS::STAT_SET_INT(joaat("NUM_MISSIONS_AVAILABLE"), Global_113105, true);
+	STATS::STAT_SET_INT(joaat("NUM_MINIGAMES_COMPLETED"), Global_113123, true);
+	STATS::STAT_SET_INT(joaat("NUM_MINIGAMES_AVAILABLE"), Global_113106, true);
+	STATS::STAT_SET_INT(joaat("NUM_ODDJOBS_COMPLETED"), Global_113124, true);
+	STATS::STAT_SET_INT(joaat("NUM_ODDJOBS_AVAILABLE"), Global_113107, true);
+	STATS::STAT_SET_INT(joaat("NUM_RNDPEOPLE_COMPLETED"), Global_113125, true);
+	STATS::STAT_SET_INT(joaat("NUM_RNDPEOPLE_AVAILABLE"), Global_113108, true);
+	STATS::STAT_SET_INT(joaat("NUM_RNDEVENTS_COMPLETED"), iVar9, true);
+	STATS::STAT_SET_INT(joaat("NUM_RNDEVENTS_AVAILABLE"), Global_113112, true);
+	STATS::STAT_SET_INT(joaat("NUM_MISC_COMPLETED"), (Global_113128 + Global_113127), true);
+	STATS::STAT_SET_INT(joaat("NUM_MISC_AVAILABLE"), (Global_113111 + Global_113110), true);
 	Global_113129 = (Global_113122 * 100 / Global_113105);
 	Global_113131 = ((Global_113124 + Global_113123) * 100 / (Global_113107 + Global_113106));
 	Global_113130 = ((Global_113125 + iVar9) * 100 / (Global_113108 + Global_113112));
 	Global_113132 = ((Global_113127 + Global_113128) * 100 / (Global_113110 + Global_113111));
-	STATS::STAT_SET_FLOAT(joaat("total_progress_made"), Global_113386.f_10194.f_3853, true);
-	STATS::STAT_SET_INT(joaat("percent_story_missions"), Global_113129, true);
-	STATS::STAT_SET_INT(joaat("percent_ambient_missions"), Global_113130, true);
-	STATS::STAT_SET_INT(joaat("percent_oddjobs"), Global_113131, true);
+	STATS::STAT_SET_FLOAT(joaat("TOTAL_PROGRESS_MADE"), Global_113386.f_10194.f_3853, true);
+	STATS::STAT_SET_INT(joaat("PERCENT_STORY_MISSIONS"), Global_113129, true);
+	STATS::STAT_SET_INT(joaat("PERCENT_AMBIENT_MISSIONS"), Global_113130, true);
+	STATS::STAT_SET_INT(joaat("PERCENT_ODDJOBS"), Global_113131, true);
 	if (fVar8 > 0f && SYSTEM::FLOOR(fVar8) < SYSTEM::FLOOR(Global_113386.f_10194.f_3853))
 	{
 		func_128(13, SYSTEM::FLOOR(Global_113386.f_10194.f_3853));
@@ -6508,7 +6508,7 @@ bool func_167(int iParam0)//Position - 0x70CE
 				}
 				Var1 = { Var1 + PED::GET_PED_BONE_COORDS(iLocal_71, 31086, 0f, 0f, 0f) };
 				Var2 = { Var2 + PED::GET_PED_BONE_COORDS(iLocal_71, 31086, 0f, 0f, 0f) };
-				if ((MISC::IS_PROJECTILE_TYPE_IN_AREA(Var2, Var1, joaat("weapon_smokegrenade"), true) || MISC::IS_PROJECTILE_TYPE_IN_AREA(Var2, Var1, joaat("weapon_grenade"), true)) || MISC::IS_PROJECTILE_TYPE_IN_AREA(Var2, Var1, joaat("weapon_stickybomb"), true))
+				if ((MISC::IS_PROJECTILE_TYPE_IN_AREA(Var2, Var1, joaat("WEAPON_SMOKEGRENADE"), true) || MISC::IS_PROJECTILE_TYPE_IN_AREA(Var2, Var1, joaat("WEAPON_GRENADE"), true)) || MISC::IS_PROJECTILE_TYPE_IN_AREA(Var2, Var1, joaat("WEAPON_STICKYBOMB"), true))
 				{
 					bVar0 = true;
 				}
@@ -6569,9 +6569,9 @@ int func_169()//Position - 0x721F
 			fLocal_94 = 293.9091f;
 			Local_87 = { -2253.763f, 4273.17f, 44.977f };
 			fLocal_95 = 185.5212f;
-			iVar3 = joaat("a_f_y_vinewood_04");
+			iVar3 = joaat("A_F_Y_Vinewood_04");
 			iVar5 = joaat("peyote");
-			iVar4 = joaat("g_m_y_salvagoon_01");
+			iVar4 = joaat("G_M_Y_SalvaGoon_01");
 			sVar6 = "CThiefVictim";
 			sVar7 = "A_F_Y_VINEWOOD_04_WHITE_MINI_02";
 			sLocal_107 = "RECT1_ATTR";
@@ -6606,9 +6606,9 @@ int func_169()//Position - 0x721F
 		case 2:
 			Local_87 = { -538.6718f, -2183.442f, 5.2336f };
 			Local_86 = { -365.7f, -2179.26f, 9.3184f };
-			iVar3 = joaat("a_f_y_indian_01");
+			iVar3 = joaat("A_F_Y_Indian_01");
 			iVar5 = joaat("rocoto");
-			iVar4 = joaat("a_m_m_soucent_04");
+			iVar4 = joaat("A_M_M_SouCent_04");
 			sVar6 = "CThiefGolfer";
 			sVar8 = "A_M_M_SOUCENT_04_BLACK_MINI_01";
 			sLocal_107 = "RECT2_ATTR";
@@ -6655,7 +6655,7 @@ int func_169()//Position - 0x721F
 			iLocal_72 = PED::CREATE_PED_INSIDE_VEHICLE(iLocal_73, 22, iVar4, -1, true, true);
 			PED::SET_PED_CONFIG_FLAG(iLocal_72, 42, true);
 			PED::SET_PED_COMBAT_ATTRIBUTES(iLocal_72, 3, true);
-			WEAPON::GIVE_WEAPON_TO_PED(iLocal_72, joaat("weapon_pistol"), -1, true, true);
+			WEAPON::GIVE_WEAPON_TO_PED(iLocal_72, joaat("WEAPON_PISTOL"), -1, true, true);
 			PED::SET_PED_ACCURACY(iLocal_72, 10);
 			PED::SET_DRIVER_ABILITY(iLocal_72, 1f);
 			PED::SET_DRIVER_RACING_MODIFIER(iLocal_72, 1f);
@@ -6745,7 +6745,7 @@ int func_169()//Position - 0x721F
 			PED::SET_PED_COMPONENT_VARIATION(iLocal_71, 3, 1, 2, 0);
 			PED::SET_PED_COMPONENT_VARIATION(iLocal_71, 4, 1, 2, 0);
 			iLocal_72 = PED::CREATE_PED_INSIDE_VEHICLE(iLocal_73, 22, iVar4, -1, true, true);
-			WEAPON::GIVE_WEAPON_TO_PED(iLocal_72, joaat("weapon_pistol"), -1, true, true);
+			WEAPON::GIVE_WEAPON_TO_PED(iLocal_72, joaat("WEAPON_PISTOL"), -1, true, true);
 			PED::SET_PED_ACCURACY(iLocal_72, 10);
 			PED::SET_DRIVER_ABILITY(iLocal_72, 1f);
 			PED::SET_DRIVER_RACING_MODIFIER(iLocal_72, 1f);
@@ -8897,14 +8897,14 @@ int func_234()//Position - 0xAF03
 		{
 			if (NETWORK::_NETWORK_GET_ROS_PRIVILEGE_24())
 			{
-				STATS::STAT_GET_INT(joaat("sp_unlock_exclus_content"), &iVar0, -1);
+				STATS::STAT_GET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), &iVar0, -1);
 				MISC::SET_BIT(&iVar0, 2);
 				MISC::SET_BIT(&iVar0, 4);
 				MISC::SET_BIT(&iVar0, 6);
 				MISC::SET_BIT(&Global_25, 2);
 				MISC::SET_BIT(&Global_25, 4);
 				MISC::SET_BIT(&Global_25, 6);
-				STATS::STAT_SET_INT(joaat("sp_unlock_exclus_content"), iVar0, true);
+				STATS::STAT_SET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), iVar0, true);
 				if (MISC::ARE_PROFILE_SETTINGS_VALID())
 				{
 					iVar0 = MISC::GET_PROFILE_SETTING(866);

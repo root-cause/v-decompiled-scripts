@@ -4644,7 +4644,7 @@ bool func_90()//Position - 0x635B
 		return 0;
 	}
 	WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar0, true);
-	if (((iVar0 == 0 || iVar0 == joaat("weapon_unarmed")) || iVar0 == joaat("weapon_electric_fence")) || iVar0 == joaat("gadget_parachute"))
+	if (((iVar0 == 0 || iVar0 == joaat("WEAPON_UNARMED")) || iVar0 == joaat("WEAPON_ELECTRIC_FENCE")) || iVar0 == joaat("GADGET_PARACHUTE"))
 	{
 		bVar1 = false;
 	}
@@ -5012,25 +5012,25 @@ void func_108()//Position - 0x6F55
 				switch (MISC::GET_RANDOM_INT_IN_RANGE(0, 3))
 				{
 					case 0:
-						iLocal_85 = joaat("a_m_y_vinewood_01");
+						iLocal_85 = joaat("A_M_Y_Vinewood_01");
 						break;
 					
 					case 1:
-						iLocal_85 = joaat("a_m_y_stlat_01");
+						iLocal_85 = joaat("A_M_Y_StLat_01");
 						break;
 					
 					case 2:
-						iLocal_85 = joaat("a_m_y_vinewood_04");
+						iLocal_85 = joaat("A_M_Y_Vinewood_04");
 						break;
 				}
 				switch (MISC::GET_RANDOM_INT_IN_RANGE(0, 2))
 				{
 					case 0:
-						iLocal_86 = joaat("a_m_y_stwhi_02");
+						iLocal_86 = joaat("A_M_Y_StWhi_02");
 						break;
 					
 					case 1:
-						iLocal_86 = joaat("a_m_y_vinewood_03");
+						iLocal_86 = joaat("A_M_Y_Vinewood_03");
 						break;
 				}
 				iLocal_92 = 1;
@@ -5040,13 +5040,13 @@ void func_108()//Position - 0x6F55
 				switch (MISC::GET_RANDOM_INT_IN_RANGE(0, 2))
 				{
 					case 0:
-						iLocal_85 = joaat("a_f_m_salton_01");
-						iLocal_86 = joaat("a_f_o_salton_01");
+						iLocal_85 = joaat("A_F_M_Salton_01");
+						iLocal_86 = joaat("A_F_O_Salton_01");
 						break;
 					
 					case 1:
-						iLocal_85 = joaat("a_f_o_salton_01");
-						iLocal_86 = joaat("a_f_m_salton_01");
+						iLocal_85 = joaat("A_F_O_Salton_01");
+						iLocal_86 = joaat("A_F_M_Salton_01");
 						break;
 				}
 				iLocal_92 = 2;

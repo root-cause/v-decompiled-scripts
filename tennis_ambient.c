@@ -1026,7 +1026,7 @@ void __EntryFunction__()//Position - 0x0
 	iVar3 = 0;
 	iVar4 = 0;
 	iVar5 = (1 - iVar4);
-	func_311(&Var0, &Var1, 1, iVar4, iVar5, &ScriptParam_616, joaat("a_f_y_tennis_01"), joaat("a_m_m_tennis_01"));
+	func_311(&Var0, &Var1, 1, iVar4, iVar5, &ScriptParam_616, joaat("A_F_Y_Tennis_01"), joaat("A_M_M_Tennis_01"));
 	while (true)
 	{
 		func_310(&Var0);

@@ -9132,7 +9132,7 @@ void func_85(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x9
 		{
 			case 17:
 				iVar11 = 0;
-				uVar13 = func_86(joaat("mpply_heistfloworderprogress"));
+				uVar13 = func_86(joaat("MPPLY_HEISTFLOWORDERPROGRESS"));
 				bVar0 = false;
 				while (bVar0 < 28)
 				{
@@ -9161,7 +9161,7 @@ void func_85(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x9
 			
 			case 18:
 				iVar11 = 0;
-				uVar13 = func_86(joaat("mpply_heistteamprogressbitset"));
+				uVar13 = func_86(joaat("MPPLY_HEISTTEAMPROGRESSBITSET"));
 				bVar0 = false;
 				while (bVar0 < 28)
 				{
@@ -9190,7 +9190,7 @@ void func_85(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x9
 			
 			case 19:
 				iVar11 = 0;
-				uVar13 = func_86(joaat("mpply_heistnodeathprogreitset"));
+				uVar13 = func_86(joaat("MPPLY_HEISTNODEATHPROGREITSET"));
 				bVar0 = false;
 				while (bVar0 < 28)
 				{
@@ -9219,7 +9219,7 @@ void func_85(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x9
 			
 			case 20:
 				iVar11 = 0;
-				uVar13 = func_86(joaat("mpply_heist_1stperson_prog"));
+				uVar13 = func_86(joaat("MPPLY_HEIST_1STPERSON_PROG"));
 				bVar0 = false;
 				while (bVar0 < 28)
 				{
@@ -9248,7 +9248,7 @@ void func_85(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x9
 			
 			case 21:
 				iVar11 = 0;
-				uVar13 = func_86(joaat("mpply_heistmemberprogressbitset"));
+				uVar13 = func_86(joaat("MPPLY_HEISTMEMBERPROGRESSBITSET"));
 				bVar0 = false;
 				while (bVar0 < 28)
 				{
@@ -9390,32 +9390,32 @@ int func_90(int iParam0)//Position - 0x9DC2
 	switch (iParam0)
 	{
 		case 3:
-			return joaat("mpply_gangops_allinorder");
+			return joaat("MPPLY_GANGOPS_ALLINORDER");
 		
 		case 4:
-			return joaat("mpply_gangops_loyalty");
+			return joaat("MPPLY_GANGOPS_LOYALTY");
 		
 		case 7:
-			return joaat("mpply_gangops_loyalty2");
+			return joaat("MPPLY_GANGOPS_LOYALTY2");
 		
 		case 8:
-			return joaat("mpply_gangops_loyalty3");
+			return joaat("MPPLY_GANGOPS_LOYALTY3");
 		
 		case 5:
-			return joaat("mpply_gangops_crimmasmd");
+			return joaat("MPPLY_GANGOPS_CRIMMASMD");
 		
 		case 9:
-			return joaat("mpply_gangops_crimmasmd2");
+			return joaat("MPPLY_GANGOPS_CRIMMASMD2");
 		
 		case 10:
-			return joaat("mpply_gangops_crimmasmd3");
+			return joaat("MPPLY_GANGOPS_CRIMMASMD3");
 		
 		case 11:
-			return joaat("mpply_gangops_support");
+			return joaat("MPPLY_GANGOPS_SUPPORT");
 		
 		default:
 	}
-	return joaat("mpply_gangops_allinorder");
+	return joaat("MPPLY_GANGOPS_ALLINORDER");
 }
 
 int func_91(int iParam0, int iParam1, int iParam2)//Position - 0x9E46

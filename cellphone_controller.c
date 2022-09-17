@@ -393,17 +393,17 @@ void __EntryFunction__()//Position - 0x0
 		{
 			if (BitTest(Global_8136, 25))
 			{
-				STATS::STAT_GET_INT(joaat("sp_cellphone_sleep_time"), &iLocal_76, -1);
+				STATS::STAT_GET_INT(joaat("SP_CELLPHONE_SLEEP_TIME"), &iLocal_76, -1);
 				iLocal_74 = MISC::GET_GAME_TIMER();
 				iLocal_77 = 1;
 			}
 		}
 		else if (!BitTest(Global_8136, 25))
 		{
-			STATS::STAT_GET_INT(joaat("sp_cellphone_sleep_time"), &iLocal_76, -1);
+			STATS::STAT_GET_INT(joaat("SP_CELLPHONE_SLEEP_TIME"), &iLocal_76, -1);
 			iLocal_75 = MISC::GET_GAME_TIMER();
 			iLocal_77 = 0;
-			STATS::STAT_SET_INT(joaat("sp_cellphone_sleep_time"), (iLocal_76 + (iLocal_75 - iLocal_74)), true);
+			STATS::STAT_SET_INT(joaat("SP_CELLPHONE_SLEEP_TIME"), (iLocal_76 + (iLocal_75 - iLocal_74)), true);
 		}
 		func_84();
 		func_83();
@@ -1135,7 +1135,7 @@ int func_21(int iParam0)//Position - 0x102D
 		if (!PED::IS_PED_INJURED(iParam0))
 		{
 			WEAPON::GET_CURRENT_PED_WEAPON(iParam0, &iVar0, true);
-			if (((iVar0 == joaat("weapon_sniperrifle") || iVar0 == joaat("weapon_heavysniper")) || iVar0 == joaat("weapon_marksmanrifle")) || iVar0 == joaat("weapon_heavysniper_mk2"))
+			if (((iVar0 == joaat("WEAPON_SNIPERRIFLE") || iVar0 == joaat("WEAPON_HEAVYSNIPER")) || iVar0 == joaat("WEAPON_MARKSMANRIFLE")) || iVar0 == joaat("WEAPON_HEAVYSNIPER_MK2"))
 			{
 				return 1;
 			}

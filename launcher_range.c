@@ -2178,15 +2178,15 @@ int func_56(int iParam0)//Position - 0x2242
 	switch (iParam0)
 	{
 		case 0:
-			STATS::STAT_GET_INT(joaat("sp0_total_cash"), &uVar0, -1);
+			STATS::STAT_GET_INT(joaat("SP0_TOTAL_CASH"), &uVar0, -1);
 			return uVar0;
 		
 		case 1:
-			STATS::STAT_GET_INT(joaat("sp1_total_cash"), &uVar0, -1);
+			STATS::STAT_GET_INT(joaat("SP1_TOTAL_CASH"), &uVar0, -1);
 			return uVar0;
 		
 		case 2:
-			STATS::STAT_GET_INT(joaat("sp2_total_cash"), &uVar0, -1);
+			STATS::STAT_GET_INT(joaat("SP2_TOTAL_CASH"), &uVar0, -1);
 			return uVar0;
 		
 		default:
@@ -2373,7 +2373,7 @@ bool func_72()//Position - 0x254A
 		return 0;
 	}
 	WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar0, true);
-	if (((iVar0 == 0 || iVar0 == joaat("weapon_unarmed")) || iVar0 == joaat("weapon_electric_fence")) || iVar0 == joaat("gadget_parachute"))
+	if (((iVar0 == 0 || iVar0 == joaat("WEAPON_UNARMED")) || iVar0 == joaat("WEAPON_ELECTRIC_FENCE")) || iVar0 == joaat("GADGET_PARACHUTE"))
 	{
 		bVar1 = false;
 	}
@@ -2664,9 +2664,9 @@ void func_87()//Position - 0x2F09
 			func_89(iLocal_83, &uLocal_86, &uLocal_89);
 			func_89(iLocal_84, &uLocal_87, &uLocal_90);
 			func_89(iLocal_85, &uLocal_88, &uLocal_91);
-			WEAPON::GIVE_WEAPON_TO_PED(iLocal_83, joaat("weapon_pistol"), -1, true, true);
-			WEAPON::GIVE_WEAPON_TO_PED(iLocal_84, joaat("weapon_combatpistol"), -1, true, true);
-			WEAPON::GIVE_WEAPON_TO_PED(iLocal_85, joaat("weapon_pistol"), -1, true, true);
+			WEAPON::GIVE_WEAPON_TO_PED(iLocal_83, joaat("WEAPON_PISTOL"), -1, true, true);
+			WEAPON::GIVE_WEAPON_TO_PED(iLocal_84, joaat("WEAPON_COMBATPISTOL"), -1, true, true);
+			WEAPON::GIVE_WEAPON_TO_PED(iLocal_85, joaat("WEAPON_PISTOL"), -1, true, true);
 			ENTITY::SET_ENTITY_AS_MISSION_ENTITY(iLocal_83, true, false);
 			ENTITY::SET_ENTITY_AS_MISSION_ENTITY(iLocal_84, true, false);
 			ENTITY::SET_ENTITY_AS_MISSION_ENTITY(iLocal_85, true, false);
@@ -2820,9 +2820,9 @@ int func_90()//Position - 0x362E
 
 int func_91()//Position - 0x3643
 {
-	iLocal_80 = joaat("g_m_m_chigoon_02");
-	iLocal_81 = joaat("g_m_m_chigoon_02");
-	iLocal_82 = joaat("g_m_m_chigoon_02");
+	iLocal_80 = joaat("G_M_M_ChiGoon_02");
+	iLocal_81 = joaat("G_M_M_ChiGoon_02");
+	iLocal_82 = joaat("G_M_M_ChiGoon_02");
 	STREAMING::REQUEST_MODEL(iLocal_80);
 	if (!STREAMING::HAS_MODEL_LOADED(iLocal_80))
 	{

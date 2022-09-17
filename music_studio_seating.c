@@ -1026,7 +1026,7 @@ void func_9(bool bParam0, int iParam1, int iParam2)//Position - 0x690
 			NETWORK::NETWORK_SET_IN_SPECTATOR_MODE(bParam0, iParam1);
 		}
 		HUD::SET_MINIMAP_IN_SPECTATOR_MODE(bParam0, iParam1);
-		func_10(joaat("mpply_is_char_spectating"), bParam0);
+		func_10(joaat("MPPLY_IS_CHAR_SPECTATING"), bParam0);
 	}
 }
 
@@ -1559,7 +1559,7 @@ bool func_27()//Position - 0x11CD
 
 int func_28(int iParam0)//Position - 0x11DD
 {
-	if (ENTITY::GET_ENTITY_MODEL(PLAYER::GET_PLAYER_PED(iParam0)) == joaat("mp_f_freemode_01"))
+	if (ENTITY::GET_ENTITY_MODEL(PLAYER::GET_PLAYER_PED(iParam0)) == joaat("MP_F_Freemode_01"))
 	{
 		return 1;
 	}
@@ -1734,7 +1734,7 @@ int func_33(int iParam0)//Position - 0x1553
 		if (!PED::IS_PED_INJURED(iParam0))
 		{
 			WEAPON::GET_CURRENT_PED_WEAPON(iParam0, &iVar0, true);
-			if (((iVar0 == joaat("weapon_sniperrifle") || iVar0 == joaat("weapon_heavysniper")) || iVar0 == joaat("weapon_marksmanrifle")) || iVar0 == joaat("weapon_heavysniper_mk2"))
+			if (((iVar0 == joaat("WEAPON_SNIPERRIFLE") || iVar0 == joaat("WEAPON_HEAVYSNIPER")) || iVar0 == joaat("WEAPON_MARKSMANRIFLE")) || iVar0 == joaat("WEAPON_HEAVYSNIPER_MK2"))
 			{
 				return 1;
 			}
@@ -1843,9 +1843,9 @@ void func_40(var uParam0)//Position - 0x1790
 			HUD::HIDE_HUD_COMPONENT_THIS_FRAME(2);
 			HUD::_HUD_WEAPON_WHEEL_IGNORE_SELECTION();
 			func_44();
-			if (WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar0, true) && iVar0 != joaat("weapon_unarmed"))
+			if (WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar0, true) && iVar0 != joaat("WEAPON_UNARMED"))
 			{
-				WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("weapon_unarmed"), true);
+				WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"), true);
 			}
 			PAD::DISABLE_CONTROL_ACTION(0, 37, true);
 			func_42(1);
@@ -2601,7 +2601,7 @@ int func_65(int iParam0)//Position - 0x234F
 
 bool func_66(int iParam0)//Position - 0x2368
 {
-	return func_67(iParam0) == joaat("weapon_minigun");
+	return func_67(iParam0) == joaat("WEAPON_MINIGUN");
 }
 
 int func_67(int iParam0)//Position - 0x237C

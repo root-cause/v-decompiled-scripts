@@ -600,185 +600,185 @@ int func_15()//Position - 0x8D5
 {
 	switch (Local_83.f_11)
 	{
-		case joaat("g_m_y_ballaorig_01"):
-		case joaat("g_m_y_ballaeast_01"):
+		case joaat("G_M_Y_BallaOrig_01"):
+		case joaat("G_M_Y_BallaEast_01"):
 			switch (MISC::GET_RANDOM_INT_IN_RANGE(0, 5))
 			{
 				case 0:
-					return joaat("weapon_combatpistol");
+					return joaat("WEAPON_COMBATPISTOL");
 				
 				case 1:
-					return joaat("weapon_pumpshotgun");
+					return joaat("WEAPON_PUMPSHOTGUN");
 				
 				case 2:
-					return joaat("weapon_microsmg");
+					return joaat("WEAPON_MICROSMG");
 				
 				case 3:
-					return joaat("weapon_mg");
+					return joaat("WEAPON_MG");
 				
 				case 4:
-					return joaat("weapon_assaultrifle");
+					return joaat("WEAPON_ASSAULTRIFLE");
 				
 				default:
 			}
 			break;
 		
-		case joaat("g_m_y_mexgoon_02"):
-		case joaat("g_f_y_vagos_01"):
+		case joaat("G_M_Y_MexGoon_02"):
+		case joaat("G_F_Y_Vagos_01"):
 			switch (MISC::GET_RANDOM_INT_IN_RANGE(0, 5))
 			{
 				case 0:
-					return joaat("weapon_pistol");
+					return joaat("WEAPON_PISTOL");
 				
 				case 1:
-					return joaat("weapon_pumpshotgun");
+					return joaat("WEAPON_PUMPSHOTGUN");
 				
 				case 2:
-					return joaat("weapon_microsmg");
+					return joaat("WEAPON_MICROSMG");
 				
 				case 3:
-					return joaat("weapon_mg");
+					return joaat("WEAPON_MG");
 				
 				case 4:
-					return joaat("weapon_assaultrifle");
+					return joaat("WEAPON_ASSAULTRIFLE");
 				
 				default:
 			}
 			break;
 		
-		case joaat("g_m_y_lost_01"):
-		case joaat("g_f_y_lost_01"):
+		case joaat("G_M_Y_Lost_01"):
+		case joaat("G_F_Y_Lost_01"):
 			switch (MISC::GET_RANDOM_INT_IN_RANGE(0, 5))
 			{
 				case 0:
-					return joaat("weapon_combatpistol");
+					return joaat("WEAPON_COMBATPISTOL");
 				
 				case 1:
-					return joaat("weapon_sawnoffshotgun");
+					return joaat("WEAPON_SAWNOFFSHOTGUN");
 				
 				case 2:
-					return joaat("weapon_smg");
+					return joaat("WEAPON_SMG");
 				
 				case 3:
-					return joaat("weapon_mg");
+					return joaat("WEAPON_MG");
 				
 				case 4:
-					return joaat("weapon_assaultrifle");
+					return joaat("WEAPON_ASSAULTRIFLE");
 				
 				default:
 			}
 			break;
 		
-		case joaat("g_m_m_chigoon_02"):
-		case joaat("g_m_m_chigoon_01"):
+		case joaat("G_M_M_ChiGoon_02"):
+		case joaat("G_M_M_ChiGoon_01"):
 			switch (MISC::GET_RANDOM_INT_IN_RANGE(0, 5))
 			{
 				case 0:
-					return joaat("weapon_pistol");
+					return joaat("WEAPON_PISTOL");
 				
 				case 1:
-					return joaat("weapon_pumpshotgun");
+					return joaat("WEAPON_PUMPSHOTGUN");
 				
 				case 2:
-					return joaat("weapon_advancedrifle");
+					return joaat("WEAPON_ADVANCEDRIFLE");
 				
 				case 3:
-					return joaat("weapon_mg");
+					return joaat("WEAPON_MG");
 				
 				case 4:
-					return joaat("weapon_carbinerifle");
+					return joaat("WEAPON_CARBINERIFLE");
 				
 				default:
 			}
 			break;
 		
-		case joaat("g_m_m_armgoon_01"):
-		case joaat("g_m_y_armgoon_02"):
+		case joaat("G_M_M_ArmGoon_01"):
+		case joaat("G_M_Y_ArmGoon_02"):
 			switch (MISC::GET_RANDOM_INT_IN_RANGE(0, 5))
 			{
 				case 0:
-					return joaat("weapon_pistol");
+					return joaat("WEAPON_PISTOL");
 				
 				case 1:
-					return joaat("weapon_sawnoffshotgun");
+					return joaat("WEAPON_SAWNOFFSHOTGUN");
 				
 				case 2:
-					return joaat("weapon_smg");
+					return joaat("WEAPON_SMG");
 				
 				case 3:
-					return joaat("weapon_mg");
+					return joaat("WEAPON_MG");
 				
 				case 4:
-					return joaat("weapon_carbinerifle");
+					return joaat("WEAPON_CARBINERIFLE");
 				
 				default:
 			}
 			break;
 		
-		case joaat("a_m_m_hillbilly_02"):
-		case joaat("a_m_m_hillbilly_01"):
+		case joaat("A_M_M_Hillbilly_02"):
+		case joaat("A_M_M_Hillbilly_01"):
 			switch (MISC::GET_RANDOM_INT_IN_RANGE(0, 5))
 			{
 				case 0:
-					return joaat("weapon_combatpistol");
+					return joaat("WEAPON_COMBATPISTOL");
 				
 				case 1:
-					return joaat("weapon_sawnoffshotgun");
+					return joaat("WEAPON_SAWNOFFSHOTGUN");
 				
 				case 2:
-					return joaat("weapon_microsmg");
+					return joaat("WEAPON_MICROSMG");
 				
 				case 3:
-					return joaat("weapon_mg");
+					return joaat("WEAPON_MG");
 				
 				case 4:
-					return joaat("weapon_combatmg");
+					return joaat("WEAPON_COMBATMG");
 				
 				default:
 			}
 			break;
 		
-		case joaat("g_m_y_salvagoon_01"):
-		case joaat("g_m_y_salvagoon_02"):
+		case joaat("G_M_Y_SalvaGoon_01"):
+		case joaat("G_M_Y_SalvaGoon_02"):
 			switch (MISC::GET_RANDOM_INT_IN_RANGE(0, 5))
 			{
 				case 0:
-					return joaat("weapon_pistol");
+					return joaat("WEAPON_PISTOL");
 				
 				case 1:
-					return joaat("weapon_pumpshotgun");
+					return joaat("WEAPON_PUMPSHOTGUN");
 				
 				case 2:
-					return joaat("weapon_microsmg");
+					return joaat("WEAPON_MICROSMG");
 				
 				case 3:
-					return joaat("weapon_mg");
+					return joaat("WEAPON_MG");
 				
 				case 4:
-					return joaat("weapon_assaultrifle");
+					return joaat("WEAPON_ASSAULTRIFLE");
 				
 				default:
 			}
 			break;
 		
-		case joaat("g_m_y_strpunk_01"):
-		case joaat("g_m_y_strpunk_02"):
+		case joaat("G_M_Y_StrPunk_01"):
+		case joaat("G_M_Y_StrPunk_02"):
 			switch (MISC::GET_RANDOM_INT_IN_RANGE(0, 5))
 			{
 				case 0:
-					return joaat("weapon_pistol");
+					return joaat("WEAPON_PISTOL");
 				
 				case 1:
-					return joaat("weapon_sawnoffshotgun");
+					return joaat("WEAPON_SAWNOFFSHOTGUN");
 				
 				case 2:
-					return joaat("weapon_microsmg");
+					return joaat("WEAPON_MICROSMG");
 				
 				case 3:
-					return joaat("weapon_mg");
+					return joaat("WEAPON_MG");
 				
 				case 4:
-					return joaat("weapon_assaultrifle");
+					return joaat("WEAPON_ASSAULTRIFLE");
 				
 				default:
 			}
@@ -788,25 +788,25 @@ int func_15()//Position - 0x8D5
 			switch (MISC::GET_RANDOM_INT_IN_RANGE(0, 5))
 			{
 				case 0:
-					return joaat("weapon_pistol");
+					return joaat("WEAPON_PISTOL");
 				
 				case 1:
-					return joaat("weapon_pumpshotgun");
+					return joaat("WEAPON_PUMPSHOTGUN");
 				
 				case 2:
-					return joaat("weapon_smg");
+					return joaat("WEAPON_SMG");
 				
 				case 3:
-					return joaat("weapon_combatmg");
+					return joaat("WEAPON_COMBATMG");
 				
 				case 4:
-					return joaat("weapon_carbinerifle");
+					return joaat("WEAPON_CARBINERIFLE");
 				
 				default:
 			}
 			break;
 	}
-	return joaat("weapon_pistol");
+	return joaat("WEAPON_PISTOL");
 }
 
 int func_16(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, bool bParam5, bool bParam6, bool bParam7)//Position - 0xC3F
@@ -4288,7 +4288,7 @@ void func_161(int iParam0)//Position - 0x4C0B
 	if (func_187())
 	{
 		Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_205.f_5 = iParam0;
-		func_162(joaat("mpply_globalxp"), iParam0);
+		func_162(joaat("MPPLY_GLOBALXP"), iParam0);
 	}
 }
 
@@ -4311,7 +4311,7 @@ int func_163(int iParam0)//Position - 0x4C52
 		{
 			if (iParam0 == PLAYER::PLAYER_ID())
 			{
-				return func_164(joaat("mpply_globalxp"));
+				return func_164(joaat("MPPLY_GLOBALXP"));
 			}
 			else
 			{
@@ -4320,7 +4320,7 @@ int func_163(int iParam0)//Position - 0x4C52
 		}
 		else
 		{
-			return func_164(joaat("mpply_globalxp"));
+			return func_164(joaat("MPPLY_GLOBALXP"));
 		}
 	}
 	return 0;
@@ -4353,27 +4353,27 @@ void func_165(int iParam0)//Position - 0x4CC1
 			if (iVar1 == 0)
 			{
 				func_167(&Global_1659614, iParam0);
-				func_166(joaat("mpply_crew_local_xp_0"), Global_1659614);
+				func_166(joaat("MPPLY_CREW_LOCAL_XP_0"), Global_1659614);
 			}
 			else if (iVar1 == 1)
 			{
 				func_167(&Global_1659615, iParam0);
-				func_166(joaat("mpply_crew_local_xp_1"), Global_1659615);
+				func_166(joaat("MPPLY_CREW_LOCAL_XP_1"), Global_1659615);
 			}
 			else if (iVar1 == 2)
 			{
 				func_167(&Global_1659616, iParam0);
-				func_166(joaat("mpply_crew_local_xp_2"), Global_1659616);
+				func_166(joaat("MPPLY_CREW_LOCAL_XP_2"), Global_1659616);
 			}
 			else if (iVar1 == 3)
 			{
 				func_167(&Global_1659617, iParam0);
-				func_166(joaat("mpply_crew_local_xp_3"), Global_1659617);
+				func_166(joaat("MPPLY_CREW_LOCAL_XP_3"), Global_1659617);
 			}
 			else if (iVar1 == 4)
 			{
 				func_167(&Global_1659618, iParam0);
-				func_166(joaat("mpply_crew_local_xp_4"), Global_1659618);
+				func_166(joaat("MPPLY_CREW_LOCAL_XP_4"), Global_1659618);
 			}
 		}
 	}
@@ -4390,71 +4390,71 @@ void func_166(int iParam0, int iParam1)//Position - 0x4D95
 	}
 	switch (iParam0)
 	{
-		case joaat("mpply_crew_0_id"):
+		case joaat("MPPLY_CREW_0_ID"):
 			Global_1659609 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_1_id"):
+		case joaat("MPPLY_CREW_1_ID"):
 			Global_1659611 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_2_id"):
+		case joaat("MPPLY_CREW_2_ID"):
 			Global_1659611 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_3_id"):
+		case joaat("MPPLY_CREW_3_ID"):
 			Global_1659612 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_4_id"):
+		case joaat("MPPLY_CREW_4_ID"):
 			Global_1659613 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_local_xp_0"):
+		case joaat("MPPLY_CREW_LOCAL_XP_0"):
 			Global_1659614 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_local_xp_1"):
+		case joaat("MPPLY_CREW_LOCAL_XP_1"):
 			Global_1659615 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_local_xp_2"):
+		case joaat("MPPLY_CREW_LOCAL_XP_2"):
 			Global_1659616 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_local_xp_3"):
+		case joaat("MPPLY_CREW_LOCAL_XP_3"):
 			Global_1659617 = iParam1;
 			break;
 		
-		case joaat("mpply_crew_local_xp_4"):
+		case joaat("MPPLY_CREW_LOCAL_XP_4"):
 			Global_1659618 = iParam1;
 			break;
 		
-		case joaat("mpply_became_cheater_num"):
+		case joaat("MPPLY_BECAME_CHEATER_NUM"):
 			Global_1659619 = iParam1;
 			break;
 		
-		case joaat("mpply_friendly"):
+		case joaat("MPPLY_FRIENDLY"):
 			Global_1659620 = iParam1;
 			break;
 		
-		case joaat("mpply_offensive_language"):
+		case joaat("MPPLY_OFFENSIVE_LANGUAGE"):
 			Global_1659621 = iParam1;
 			break;
 		
-		case joaat("mpply_griefing"):
+		case joaat("MPPLY_GRIEFING"):
 			Global_1659622 = iParam1;
 			break;
 		
-		case joaat("mpply_helpful"):
+		case joaat("MPPLY_HELPFUL"):
 			Global_1659623 = iParam1;
 			break;
 		
-		case joaat("mpply_offensive_tagplate"):
+		case joaat("MPPLY_OFFENSIVE_TAGPLATE"):
 			Global_1659624 = iParam1;
 			break;
 		
-		case joaat("mpply_offensive_ugc"):
+		case joaat("MPPLY_OFFENSIVE_UGC"):
 			Global_1659625 = iParam1;
 			break;
 		
@@ -6315,11 +6315,11 @@ void func_233()//Position - 0x7288
 			}
 			if (func_14())
 			{
-				Local_83.f_11 = joaat("g_m_y_ballaorig_01");
+				Local_83.f_11 = joaat("G_M_Y_BallaOrig_01");
 			}
 			else
 			{
-				Local_83.f_11 = joaat("g_m_y_ballaeast_01");
+				Local_83.f_11 = joaat("G_M_Y_BallaEast_01");
 			}
 			break;
 		
@@ -6334,11 +6334,11 @@ void func_233()//Position - 0x7288
 			}
 			if (func_14())
 			{
-				Local_83.f_11 = joaat("g_m_y_mexgoon_02");
+				Local_83.f_11 = joaat("G_M_Y_MexGoon_02");
 			}
 			else
 			{
-				Local_83.f_11 = joaat("g_f_y_vagos_01");
+				Local_83.f_11 = joaat("G_F_Y_Vagos_01");
 			}
 			break;
 		
@@ -6353,11 +6353,11 @@ void func_233()//Position - 0x7288
 			}
 			if (func_14())
 			{
-				Local_83.f_11 = joaat("g_m_y_lost_01");
+				Local_83.f_11 = joaat("G_M_Y_Lost_01");
 			}
 			else
 			{
-				Local_83.f_11 = joaat("g_f_y_lost_01");
+				Local_83.f_11 = joaat("G_F_Y_Lost_01");
 			}
 			break;
 		
@@ -6372,11 +6372,11 @@ void func_233()//Position - 0x7288
 			}
 			if (func_14())
 			{
-				Local_83.f_11 = joaat("g_m_m_chigoon_02");
+				Local_83.f_11 = joaat("G_M_M_ChiGoon_02");
 			}
 			else
 			{
-				Local_83.f_11 = joaat("g_m_m_chigoon_01");
+				Local_83.f_11 = joaat("G_M_M_ChiGoon_01");
 			}
 			break;
 		
@@ -6391,11 +6391,11 @@ void func_233()//Position - 0x7288
 			}
 			if (func_14())
 			{
-				Local_83.f_11 = joaat("g_m_m_armgoon_01");
+				Local_83.f_11 = joaat("G_M_M_ArmGoon_01");
 			}
 			else
 			{
-				Local_83.f_11 = joaat("g_m_y_armgoon_02");
+				Local_83.f_11 = joaat("G_M_Y_ArmGoon_02");
 			}
 			break;
 		
@@ -6410,11 +6410,11 @@ void func_233()//Position - 0x7288
 			}
 			if (func_14())
 			{
-				Local_83.f_11 = joaat("a_m_m_hillbilly_02");
+				Local_83.f_11 = joaat("A_M_M_Hillbilly_02");
 			}
 			else
 			{
-				Local_83.f_11 = joaat("a_m_m_hillbilly_01");
+				Local_83.f_11 = joaat("A_M_M_Hillbilly_01");
 			}
 			break;
 		
@@ -6429,11 +6429,11 @@ void func_233()//Position - 0x7288
 			}
 			if (func_14())
 			{
-				Local_83.f_11 = joaat("g_m_y_salvagoon_01");
+				Local_83.f_11 = joaat("G_M_Y_SalvaGoon_01");
 			}
 			else
 			{
-				Local_83.f_11 = joaat("g_m_y_salvagoon_02");
+				Local_83.f_11 = joaat("G_M_Y_SalvaGoon_02");
 			}
 			break;
 		
@@ -6448,11 +6448,11 @@ void func_233()//Position - 0x7288
 			}
 			if (func_14())
 			{
-				Local_83.f_11 = joaat("g_m_y_strpunk_01");
+				Local_83.f_11 = joaat("G_M_Y_StrPunk_01");
 			}
 			else
 			{
-				Local_83.f_11 = joaat("g_m_y_strpunk_02");
+				Local_83.f_11 = joaat("G_M_Y_StrPunk_02");
 			}
 			break;
 	}

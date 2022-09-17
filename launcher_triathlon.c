@@ -3965,7 +3965,7 @@ void func_63()//Position - 0x60B5
 			{
 				if (!PED::IS_PED_INJURED(uVar2[iVar5]) && !ENTITY::DOES_ENTITY_EXIST(iVar4))
 				{
-					if (ENTITY::GET_ENTITY_MODEL(uVar2[iVar5]) == joaat("a_m_y_roadcyc_01"))
+					if (ENTITY::GET_ENTITY_MODEL(uVar2[iVar5]) == joaat("A_M_Y_RoadCyc_01"))
 					{
 						iVar4 = uVar2[iVar5];
 					}
@@ -4495,7 +4495,7 @@ bool func_91()//Position - 0x69A1
 		return 0;
 	}
 	WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar0, true);
-	if (((iVar0 == 0 || iVar0 == joaat("weapon_unarmed")) || iVar0 == joaat("weapon_electric_fence")) || iVar0 == joaat("gadget_parachute"))
+	if (((iVar0 == 0 || iVar0 == joaat("WEAPON_UNARMED")) || iVar0 == joaat("WEAPON_ELECTRIC_FENCE")) || iVar0 == joaat("GADGET_PARACHUTE"))
 	{
 		bVar1 = false;
 	}
@@ -4793,11 +4793,11 @@ void func_105()//Position - 0x734F
 		if (!ENTITY::DOES_ENTITY_EXIST(iLocal_85))
 		{
 			fVar0 = func_108(iLocal_91 == 1, 79.9315f, func_108(iLocal_91 == 0, 77.5972f, func_108(iLocal_91 == 2, 47.2081f, 0f)));
-			iLocal_85 = PED::CREATE_PED(4, joaat("a_m_y_roadcyc_01"), Local_79, fVar0, true, true);
+			iLocal_85 = PED::CREATE_PED(4, joaat("A_M_Y_RoadCyc_01"), Local_79, fVar0, true, true);
 			PED::SET_PED_COMPONENT_VARIATION(iLocal_85, 0, 1, 0, 0);
 			PED::SET_PED_COMPONENT_VARIATION(iLocal_85, 4, 0, 3, 0);
 			PED::SET_PED_COMPONENT_VARIATION(iLocal_85, 3, 0, 2, 0);
-			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("a_m_y_roadcyc_01"));
+			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("A_M_Y_RoadCyc_01"));
 		}
 		if (!ENTITY::DOES_ENTITY_EXIST(iLocal_84))
 		{
@@ -5007,7 +5007,7 @@ int func_110()//Position - 0x7AD2
 		{
 			return 0;
 		}
-		if (!STREAMING::HAS_MODEL_LOADED(joaat("a_m_y_roadcyc_01")))
+		if (!STREAMING::HAS_MODEL_LOADED(joaat("A_M_Y_RoadCyc_01")))
 		{
 			return 0;
 		}
@@ -5033,7 +5033,7 @@ void func_111()//Position - 0x7B45
 	{
 		STREAMING::REQUEST_MODEL(joaat("prop_tri_table_01"));
 		STREAMING::REQUEST_MODEL(joaat("prop_chair_08"));
-		STREAMING::REQUEST_MODEL(joaat("a_m_y_roadcyc_01"));
+		STREAMING::REQUEST_MODEL(joaat("A_M_Y_RoadCyc_01"));
 		STREAMING::REQUEST_MODEL(joaat("p_cs_clipboard"));
 		STREAMING::REQUEST_MODEL(joaat("prop_pencil_01"));
 		STREAMING::REQUEST_ANIM_DICT("amb@prop_human_seat_chair@male@generic@idle_a");

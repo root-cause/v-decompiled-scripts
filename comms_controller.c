@@ -6414,7 +6414,7 @@ int func_164(char* sParam0, int iParam1, bool bParam2)//Position - 0x7147
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -6602,7 +6602,7 @@ int func_172()//Position - 0x75A6
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}
@@ -8442,15 +8442,15 @@ int func_204(var uParam0, int iParam1, int iParam2, int iParam3, var uParam4)//P
 				iVar9 = 0;
 				switch (iVar6[iVar7])
 				{
-					case joaat("player_zero"):
+					case joaat("Player_Zero"):
 						iVar9 = Global_97919[0];
 						break;
 					
-					case joaat("player_one"):
+					case joaat("Player_One"):
 						iVar9 = Global_97919[1];
 						break;
 					
-					case joaat("player_two"):
+					case joaat("Player_Two"):
 						iVar9 = Global_97919[2];
 						break;
 				}
@@ -8466,15 +8466,15 @@ int func_204(var uParam0, int iParam1, int iParam2, int iParam3, var uParam4)//P
 				}
 				switch (iVar6[iVar7])
 				{
-					case joaat("player_zero"):
+					case joaat("Player_Zero"):
 						iVar9 = Global_100366[0];
 						break;
 					
-					case joaat("player_one"):
+					case joaat("Player_One"):
 						iVar9 = Global_100366[1];
 						break;
 					
-					case joaat("player_two"):
+					case joaat("Player_Two"):
 						iVar9 = Global_100366[2];
 						break;
 				}
@@ -10791,7 +10791,7 @@ int func_234(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 0x
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -10968,14 +10968,14 @@ int func_240()//Position - 0xD740
 		{
 			if (NETWORK::_NETWORK_GET_ROS_PRIVILEGE_24())
 			{
-				STATS::STAT_GET_INT(joaat("sp_unlock_exclus_content"), &iVar0, -1);
+				STATS::STAT_GET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), &iVar0, -1);
 				MISC::SET_BIT(&iVar0, 2);
 				MISC::SET_BIT(&iVar0, 4);
 				MISC::SET_BIT(&iVar0, 6);
 				MISC::SET_BIT(&Global_25, 2);
 				MISC::SET_BIT(&Global_25, 4);
 				MISC::SET_BIT(&Global_25, 6);
-				STATS::STAT_SET_INT(joaat("sp_unlock_exclus_content"), iVar0, true);
+				STATS::STAT_SET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), iVar0, true);
 				if (MISC::ARE_PROFILE_SETTINGS_VALID())
 				{
 					iVar0 = MISC::GET_PROFILE_SETTING(866);

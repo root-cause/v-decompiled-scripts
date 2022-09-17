@@ -40,12 +40,12 @@ void __EntryFunction__()//Position - 0x0
 	STREAMING::REMOVE_IPL("prologue03_grv_dug");
 	STREAMING::REMOVE_IPL("prologue_grv_torch");
 	STREAMING::SET_MAPDATACULLBOX_ENABLED("prologue", true);
-	STREAMING::REQUEST_MODEL(joaat("csb_prolsec"));
-	while (!STREAMING::HAS_MODEL_LOADED(joaat("csb_prolsec")))
+	STREAMING::REQUEST_MODEL(joaat("CSB_ProlSec"));
+	while (!STREAMING::HAS_MODEL_LOADED(joaat("CSB_ProlSec")))
 	{
 		SYSTEM::WAIT(0);
 	}
-	PLAYER::SET_PLAYER_MODEL(PLAYER::PLAYER_ID(), joaat("csb_prolsec"));
+	PLAYER::SET_PLAYER_MODEL(PLAYER::PLAYER_ID(), joaat("CSB_ProlSec"));
 	if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
 	{
 		ENTITY::SET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), 5313.8f, -5207.2f, 83.5f, true, false, false, true);

@@ -4422,7 +4422,7 @@ void func_121(var uParam0)//Position - 0x49B1
 {
 	ENTITY::SET_ENTITY_CAN_BE_DAMAGED(*uParam0, false);
 	PED::SET_PED_AS_ENEMY(*uParam0, false);
-	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("weapon_unarmed"), true);
+	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("WEAPON_UNARMED"), true);
 	PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(*uParam0, true);
 	PED::SET_PED_RESET_FLAG(*uParam0, 249, true);
 	PED::SET_PED_CONFIG_FLAG(*uParam0, 185, true);
@@ -4608,19 +4608,19 @@ int func_131(int iParam0, bool bParam1, int iParam2, int iParam3, int iParam4, i
 			switch (iParam2)
 			{
 				case 1:
-					return joaat("hc_driver");
+					return joaat("HC_Driver");
 				
 				case 2:
-					return joaat("hc_driver");
+					return joaat("HC_Driver");
 				
 				case 3:
-					return joaat("u_m_m_edtoh");
+					return joaat("U_M_M_EdToh");
 				
 				case 4:
-					return joaat("s_m_y_xmech_02");
+					return joaat("S_M_Y_XMech_02");
 				
 				case 5:
-					return joaat("mp_m_weapexp_01");
+					return joaat("MP_M_WeapExp_01");
 				
 				default:
 			}
@@ -4630,19 +4630,19 @@ int func_131(int iParam0, bool bParam1, int iParam2, int iParam3, int iParam4, i
 			switch (iParam3)
 			{
 				case 1:
-					return joaat("hc_hacker");
+					return joaat("HC_Hacker");
 				
 				case 2:
-					return joaat("hc_hacker");
+					return joaat("HC_Hacker");
 				
 				case 3:
-					return joaat("s_m_y_waretech_01");
+					return joaat("S_M_Y_WareTech_01");
 				
 				case 4:
-					return joaat("ig_money");
+					return joaat("IG_Money");
 				
 				case 5:
-					return joaat("ig_paige");
+					return joaat("IG_Paige");
 				
 				default:
 			}
@@ -4652,19 +4652,19 @@ int func_131(int iParam0, bool bParam1, int iParam2, int iParam3, int iParam4, i
 			switch (iParam4)
 			{
 				case 1:
-					return joaat("hc_gunman");
+					return joaat("HC_Gunman");
 				
 				case 2:
-					return joaat("hc_gunman");
+					return joaat("HC_Gunman");
 				
 				case 3:
-					return joaat("u_m_y_smugmech_01");
+					return joaat("U_M_Y_SmugMech_01");
 				
 				case 4:
-					return joaat("mp_m_weapexp_01");
+					return joaat("MP_M_WeapExp_01");
 				
 				case 5:
-					return joaat("hc_gunman");
+					return joaat("HC_Gunman");
 				
 				default:
 			}
@@ -4675,13 +4675,13 @@ int func_131(int iParam0, bool bParam1, int iParam2, int iParam3, int iParam4, i
 		switch (iParam5)
 		{
 			case 0:
-				return joaat("a_f_y_hipster_02");
+				return joaat("A_F_Y_Hipster_02");
 			
 			case 1:
-				return joaat("a_f_y_hipster_04");
+				return joaat("A_F_Y_Hipster_04");
 			
 			case 2:
-				return joaat("a_f_y_skater_01");
+				return joaat("A_F_Y_Skater_01");
 			
 			default:
 		}
@@ -4691,24 +4691,24 @@ int func_131(int iParam0, bool bParam1, int iParam2, int iParam3, int iParam4, i
 		switch (iParam5)
 		{
 			case 0:
-				return joaat("a_m_y_beachvesp_01");
+				return joaat("A_M_Y_BeachVesp_01");
 			
 			case 1:
-				return joaat("a_m_y_skater_01");
+				return joaat("A_M_Y_Skater_01");
 			
 			case 2:
-				return joaat("a_m_y_skater_02");
+				return joaat("A_M_Y_Skater_02");
 			
 			case 3:
-				return joaat("a_m_y_hipster_01");
+				return joaat("A_M_Y_Hipster_01");
 			
 			case 4:
-				return joaat("a_m_y_stwhi_02");
+				return joaat("A_M_Y_StWhi_02");
 			}
 		
 		default:
 	}
-	return joaat("a_m_y_hipster_01");
+	return joaat("A_M_Y_Hipster_01");
 }
 
 int func_132(var uParam0, int iParam1)//Position - 0x4EBE

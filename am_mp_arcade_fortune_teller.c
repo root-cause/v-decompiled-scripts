@@ -1648,7 +1648,7 @@ void func_49(bool bParam0, int iParam1, int iParam2)//Position - 0x16B0
 			NETWORK::NETWORK_SET_IN_SPECTATOR_MODE(bParam0, iParam1);
 		}
 		HUD::SET_MINIMAP_IN_SPECTATOR_MODE(bParam0, iParam1);
-		func_50(joaat("mpply_is_char_spectating"), bParam0);
+		func_50(joaat("MPPLY_IS_CHAR_SPECTATING"), bParam0);
 	}
 }
 
@@ -2589,7 +2589,7 @@ bool func_76()//Position - 0x26A4
 
 int func_77(int iParam0)//Position - 0x26B4
 {
-	if (ENTITY::GET_ENTITY_MODEL(PLAYER::GET_PLAYER_PED(iParam0)) == joaat("mp_f_freemode_01"))
+	if (ENTITY::GET_ENTITY_MODEL(PLAYER::GET_PLAYER_PED(iParam0)) == joaat("MP_F_Freemode_01"))
 	{
 		return 1;
 	}

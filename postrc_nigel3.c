@@ -224,7 +224,7 @@ void __EntryFunction__()//Position - 0x0
 			else if (!func_24())
 			{
 				func_23(101, 1);
-				STATS::STAT_SET_BOOL(joaat("sp_killed_al"), true, true);
+				STATS::STAT_SET_BOOL(joaat("SP_KILLED_AL"), true, true);
 				if (!BitTest(Global_113386.f_18574.f_382, 5))
 				{
 					MISC::SET_BIT(&(Global_113386.f_18574.f_382), 5);
@@ -420,7 +420,7 @@ int func_4(char* sParam0, int iParam1, bool bParam2)//Position - 0x216
 				{
 					return 0;
 				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
 				{
 					return 0;
 				}
@@ -617,7 +617,7 @@ int func_13()//Position - 0x69C
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			if ((iVar1 == joaat("weapon_sniperrifle") || iVar1 == joaat("weapon_heavysniper")) || iVar1 == joaat("weapon_remotesniper"))
+			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
 			{
 				iVar0 = 1;
 			}
@@ -947,7 +947,7 @@ int func_31()//Position - 0xC20
 		{
 			if (uVar0[iVar2] != 0 && ENTITY::DOES_ENTITY_EXIST(uVar0[iVar2]))
 			{
-				if (ENTITY::GET_ENTITY_MODEL(uVar0[iVar2]) == joaat("u_m_m_aldinapoli"))
+				if (ENTITY::GET_ENTITY_MODEL(uVar0[iVar2]) == joaat("U_M_M_Aldinapoli"))
 				{
 					ENTITY::SET_ENTITY_AS_MISSION_ENTITY(uVar0[iVar2], true, true);
 					iLocal_188 = uVar0[iVar2];

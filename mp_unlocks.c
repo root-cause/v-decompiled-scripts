@@ -1211,7 +1211,7 @@ int func_30(int iParam0)//Position - 0x105A
 			return func_28(86, -1);
 		
 		case 36:
-			if (func_33(joaat("mpply_race_2_point_wins")) > 0 || func_33(joaat("mpply_race_2_point_lost")) > 0)
+			if (func_33(joaat("MPPLY_RACE_2_POINT_WINS")) > 0 || func_33(joaat("MPPLY_RACE_2_POINT_LOST")) > 0)
 			{
 				return 1;
 			}

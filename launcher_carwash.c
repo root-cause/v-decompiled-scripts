@@ -1643,7 +1643,7 @@ int func_61(int iParam0)//Position - 0x1C2D
 	{
 		return 1;
 	}
-	if (iVar0 == joaat("BRIOSO3"))
+	if (iVar0 == joaat("brioso3"))
 	{
 		switch (VEHICLE::GET_VEHICLE_MOD(iParam0, 10))
 		{
@@ -1753,8 +1753,8 @@ int func_62(int iParam0)//Position - 0x1DEC
 		case joaat("veto2"):
 		case joaat("squaddie"):
 		case joaat("comet7"):
-		case joaat("SM722"):
-		case joaat("DRAUGUR"):
+		case joaat("sm722"):
+		case joaat("draugur"):
 			return 1;
 			break;
 	}
