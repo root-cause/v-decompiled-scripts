@@ -676,7 +676,7 @@ bool func_3()//Position - 0x2B9
 	}
 	if (!bLocal_240)
 	{
-		return SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("stripclub")) == 0;
+		return SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("stripclub")) == 0;
 	}
 	if (func_4(PLAYER::PLAYER_ID()) == 185 && Global_2815059.f_4646 == 2)
 	{
@@ -2053,7 +2053,7 @@ int func_65()//Position - 0x1A4A
 
 int func_66()//Position - 0x1A7E
 {
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("stripperhome")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("stripperhome")) > 0)
 	{
 		return 1;
 	}
@@ -2630,7 +2630,7 @@ int func_91()//Position - 0x231F
 
 int func_92()//Position - 0x2342
 {
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("player_timetable_scene")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("player_timetable_scene")) > 0)
 	{
 		return 1;
 	}
@@ -3020,7 +3020,7 @@ int func_108()//Position - 0x28B8
 	}
 	if (func_109() != 0)
 	{
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(func_109()) == 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(func_109()) == 0)
 		{
 			return 1;
 		}

@@ -398,7 +398,7 @@ void func_1(int* iParam0, float fParam1, int iParam2, bool bParam3, bool bParam4
 	}
 	HUD::HIDE_LOADING_ON_FADE_THIS_FRAME();
 	GRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(iParam2);
-	if (!func_6(iParam0->f_1, 256) || (func_6(iParam0->f_1, 8192) && PAD::_0x6CD79468A1E595C6(2)))
+	if (!func_6(iParam0->f_1, 256) || (func_6(iParam0->f_1, 8192) && PAD::HAVE_CONTROLS_CHANGED(2)))
 	{
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*iParam0, "SET_CLEAR_SPACE");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fParam1);
@@ -425,11 +425,11 @@ void func_1(int* iParam0, float fParam1, int iParam2, bool bParam3, bool bParam4
 					break;
 				
 				case 1:
-					bVar4 = PAD::_IS_USING_KEYBOARD(2);
+					bVar4 = PAD::IS_USING_KEYBOARD_AND_MOUSE(2);
 					break;
 				
 				case 2:
-					bVar4 = !PAD::_IS_USING_KEYBOARD(2);
+					bVar4 = !PAD::IS_USING_KEYBOARD_AND_MOUSE(2);
 					break;
 				
 				default:
@@ -450,11 +450,11 @@ void func_1(int* iParam0, float fParam1, int iParam2, bool bParam3, bool bParam4
 						bVar2 = BitTest(iParam0->f_2[iVar6 /*15*/].f_13, bVar7);
 						if (!BitTest(iParam0->f_2[iVar6 /*15*/].f_12, bVar7))
 						{
-							sVar3 = PAD::GET_CONTROL_INSTRUCTIONAL_BUTTON(iVar0, iVar1, bVar2);
+							sVar3 = PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(iVar0, iVar1, bVar2);
 						}
 						else
 						{
-							sVar3 = PAD::GET_CONTROL_GROUP_INSTRUCTIONAL_BUTTON(iVar0, iVar1, bVar2);
+							sVar3 = PAD::GET_CONTROL_GROUP_INSTRUCTIONAL_BUTTONS_STRING(iVar0, iVar1, bVar2);
 						}
 						if (!MISC::IS_STRING_NULL_OR_EMPTY(sVar3))
 						{
@@ -1564,7 +1564,7 @@ int func_49(int iParam0)//Position - 0x18EE
 			return 0;
 		}
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("cellphone_flashhand")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) > 0)
 	{
 		return 1;
 	}
@@ -1725,9 +1725,9 @@ int func_58(bool bParam0, bool bParam1, var uParam2, bool bParam3)//Position - 0
 	iVar0 = 0;
 	if (MISC::IS_PC_VERSION())
 	{
-		if (CUTSCENE::_0xA0FE76168A189DDB() != bParam0 && uParam2)
+		if (CUTSCENE::IS_MULTIHEAD_FADE_UP() != bParam0 && uParam2)
 		{
-			CUTSCENE::_0x20746F7B1032A3C7(bParam0, bParam1, true, bParam3);
+			CUTSCENE::SET_CUTSCENE_MULTIHEAD_FADE(bParam0, bParam1, true, bParam3);
 			iVar0 = 1;
 		}
 	}

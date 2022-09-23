@@ -359,7 +359,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_59 = 0;
 	func_151(&Global_112037, 0);
 	func_145();
-	MISC::_0x6F2135B6129620C1(true);
+	MISC::SET_THIS_IS_A_TRIGGER_SCRIPT(true);
 	if (func_144(uLocal_58, 1))
 	{
 		iLocal_64 = 10;
@@ -401,7 +401,7 @@ void __EntryFunction__()//Position - 0x0
 	{
 		func_153(1);
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(SCRIPT::GET_HASH_OF_THIS_SCRIPT_NAME()) > 1 && !func_144(uLocal_58, 4194304))
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(SCRIPT::GET_HASH_OF_THIS_SCRIPT_NAME()) > 1 && !func_144(uLocal_58, 4194304))
 	{
 		if (iLocal_69 != 263)
 		{
@@ -1039,7 +1039,7 @@ int func_6()//Position - 0xC8D
 
 int func_7(bool bParam0)//Position - 0xCD8
 {
-	if (!bParam0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("benchmark")) > 0)
+	if (!bParam0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("benchmark")) > 0)
 	{
 		return 1;
 	}
@@ -1488,12 +1488,12 @@ void func_21()//Position - 0x16E4
 
 bool func_22()//Position - 0x1727
 {
-	return (MISC::IS_ORBIS_VERSION() || MISC::_0x807ABE1AB65C24D2());
+	return (MISC::IS_ORBIS_VERSION() || MISC::IS_PROSPERO_VERSION());
 }
 
 bool func_23()//Position - 0x173D
 {
-	return (MISC::IS_DURANGO_VERSION() || MISC::_0xC545AB1CF97ABB34());
+	return (MISC::IS_DURANGO_VERSION() || MISC::IS_SCARLETT_VERSION());
 }
 
 void func_24(int* iParam0)//Position - 0x1753
@@ -3460,7 +3460,7 @@ void func_93(int iParam0, int iParam1, char* sParam2, int iParam3, char* sParam4
 {
 	int iVar0;
 	
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("context_controller")) < 1)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("context_controller")) < 1)
 	{
 	}
 	if (STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
@@ -3557,7 +3557,7 @@ int func_97(int iParam0)//Position - 0x3B49
 			return 0;
 		}
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("cellphone_flashhand")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) > 0)
 	{
 		return 1;
 	}
@@ -3589,7 +3589,7 @@ bool func_99()//Position - 0x3BD8
 
 int func_100()//Position - 0x3BED
 {
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("player_timetable_scene")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("player_timetable_scene")) > 0)
 	{
 		return 1;
 	}
@@ -3807,7 +3807,7 @@ int func_113()//Position - 0x450A
 
 int func_114()//Position - 0x4526
 {
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("stripperhome")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("stripperhome")) > 0)
 	{
 		return 1;
 	}
@@ -4578,7 +4578,7 @@ int func_139()//Position - 0x5ABD
 {
 	if (MISC::IS_PC_VERSION())
 	{
-		if (MISC::_0xD10282B6E3751BA0() == 1f)
+		if (MISC::GET_CITY_DENSITY() == 1f)
 		{
 			return 1;
 		}
@@ -4767,7 +4767,7 @@ bool func_144(var uParam0, int iParam1)//Position - 0x5D39
 void func_145()//Position - 0x5D48
 {
 	StringCopy(&Local_51, "Offroad_Races", 64);
-	MISC::_0x6F2135B6129620C1(true);
+	MISC::SET_THIS_IS_A_TRIGGER_SCRIPT(true);
 	fLocal_77 = (6f + 4f);
 	iLocal_63 = 4;
 	func_103(&uLocal_58, 4194304);

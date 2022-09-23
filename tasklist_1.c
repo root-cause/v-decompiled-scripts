@@ -215,7 +215,7 @@ int func_4(int iParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x49
 
 int func_5(var uParam0, var uParam1, bool bParam2, int iParam3)//Position - 0x4BD
 {
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("appsidetask")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("appsidetask")) > 0)
 	{
 		return 0;
 	}

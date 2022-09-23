@@ -446,7 +446,7 @@ int func_3()//Position - 0x1FA
 	{
 		return 1;
 	}
-	if (!func_2(14) && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("director_mode")) > 0)
+	if (!func_2(14) && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("director_mode")) > 0)
 	{
 		return 1;
 	}
@@ -705,8 +705,8 @@ void func_5()//Position - 0x6CC
 			}
 			if ((func_16(iLocal_68, iLocal_66, &Local_70, &uLocal_71, 0, 1, 0, 1, 1) || func_16(iLocal_69, iLocal_67, &Local_70, &uLocal_71, 0, 1, 0, 1, 1)) || (func_15(Var0, 4, 20, 0) && !PED::IS_PED_IN_FLYING_VEHICLE(PLAYER::PLAYER_PED_ID())))
 			{
-				OBJECT::_DOOR_CONTROL(joaat("prop_gate_prison_01"), 1845f, 2605f, 45f, false, 0f, 50f, 0f);
-				OBJECT::_DOOR_CONTROL(joaat("prop_gate_prison_01"), 1819.274f, 2608.537f, 44.6195f, false, 0f, 50f, 0f);
+				OBJECT::SET_LOCKED_UNSTREAMED_IN_DOOR_OF_TYPE(joaat("prop_gate_prison_01"), 1845f, 2605f, 45f, false, 0f, 50f, 0f);
+				OBJECT::SET_LOCKED_UNSTREAMED_IN_DOOR_OF_TYPE(joaat("prop_gate_prison_01"), 1819.274f, 2608.537f, 44.6195f, false, 0f, 50f, 0f);
 				if (!ENTITY::IS_ENTITY_DEAD(iLocal_68, false))
 				{
 					TASK::TASK_COMBAT_PED(iLocal_68, PLAYER::PLAYER_PED_ID(), 0, 16);
@@ -2720,7 +2720,7 @@ void func_67()//Position - 0x36FE
 			WEAPON::GIVE_WEAPON_TO_PED(Local_307.f_27[iVar0], joaat("WEAPON_ASSAULTRIFLE"), -1, true, true);
 			ENTITY::SET_ENTITY_LOD_DIST(Local_307.f_27[iVar0], 1000);
 			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_307.f_27[iVar0], joaat("SECURITY_GUARD"));
-			PED::_0xA9B61A329BFDCBEA(Local_307.f_27[iVar0], false);
+			PED::SET_PED_IS_AVOIDED_BY_OTHERS(Local_307.f_27[iVar0], false);
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_307.f_27[iVar0], true);
 			if (!PED::IS_PED_INJURED(Local_307.f_27[iVar0]))
 			{
@@ -2749,10 +2749,10 @@ void func_68()//Position - 0x37B9
 		}
 		iVar0++;
 	}
-	Var1 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Local_307[1 /*3*/], Local_307.f_10[1], -2f, 0f, 0f) };
-	Var2 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Local_307[1 /*3*/], Local_307.f_10[1], -1f, 0f, 0f) };
-	Var3 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Local_307[2 /*3*/], Local_307.f_10[2], 1f, 0f, 0f) };
-	Var4 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Local_307[2 /*3*/], Local_307.f_10[2], -1f, 0f, 0f) };
+	Var1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Local_307[1 /*3*/], Local_307.f_10[1], -2f, 0f, 0f) };
+	Var2 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Local_307[1 /*3*/], Local_307.f_10[1], -1f, 0f, 0f) };
+	Var3 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Local_307[2 /*3*/], Local_307.f_10[2], 1f, 0f, 0f) };
+	Var4 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Local_307[2 /*3*/], Local_307.f_10[2], -1f, 0f, 0f) };
 	Local_307.f_31[0] = PED::CREATE_PED(6, joaat("S_M_M_PrisGuard_01"), Var1, Local_307.f_10[1], true, true);
 	Local_307.f_31[1] = PED::CREATE_PED(6, joaat("S_M_M_PrisGuard_01"), Var2, Local_307.f_10[1], true, true);
 	Local_307.f_31[2] = PED::CREATE_PED(6, joaat("S_M_M_PrisGuard_01"), Var3, Local_307.f_10[2], true, true);
@@ -3296,8 +3296,8 @@ void func_86()//Position - 0x4FBC
 	func_34();
 	Local_70.f_4 = 75;
 	Local_70.f_6 = 15;
-	OBJECT::_DOOR_CONTROL(joaat("prop_gate_prison_01"), 1845f, 2605f, 45f, true, 0f, 0f, 0f);
-	OBJECT::_DOOR_CONTROL(joaat("prop_gate_prison_01"), 1819.274f, 2608.537f, 44.6195f, true, 0f, 50f, 0f);
+	OBJECT::SET_LOCKED_UNSTREAMED_IN_DOOR_OF_TYPE(joaat("prop_gate_prison_01"), 1845f, 2605f, 45f, true, 0f, 0f, 0f);
+	OBJECT::SET_LOCKED_UNSTREAMED_IN_DOOR_OF_TYPE(joaat("prop_gate_prison_01"), 1819.274f, 2608.537f, 44.6195f, true, 0f, 50f, 0f);
 	PED::ADD_RELATIONSHIP_GROUP("Prison_Guards", &iLocal_250);
 	PED::ADD_RELATIONSHIP_GROUP("Prison_Prisoners", &iLocal_251);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_250, iLocal_251);
@@ -3389,8 +3389,8 @@ void func_89(bool bParam0)//Position - 0x535D
 		}
 		iVar0++;
 	}
-	OBJECT::_DOOR_CONTROL(joaat("prop_gate_prison_01"), 1845f, 2605f, 45f, true, 0f, 0f, 0f);
-	OBJECT::_DOOR_CONTROL(joaat("prop_gate_prison_01"), 1819.274f, 2608.537f, 44.6195f, true, 0f, 50f, 0f);
+	OBJECT::SET_LOCKED_UNSTREAMED_IN_DOOR_OF_TYPE(joaat("prop_gate_prison_01"), 1845f, 2605f, 45f, true, 0f, 0f, 0f);
+	OBJECT::SET_LOCKED_UNSTREAMED_IN_DOOR_OF_TYPE(joaat("prop_gate_prison_01"), 1819.274f, 2608.537f, 44.6195f, true, 0f, 50f, 0f);
 	if (bParam0)
 	{
 		MISC::CLEAR_AREA(1695.1f, 2595.8f, 50f, 1000f, true, false, false, false);

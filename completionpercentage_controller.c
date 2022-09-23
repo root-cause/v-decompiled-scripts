@@ -314,7 +314,7 @@ void __EntryFunction__()//Position - 0x0
 				if (func_124())
 				{
 					STATS::PRESENCE_EVENT_UPDATESTAT_FLOAT(joaat("TOTAL_PROGRESS_MADE"), Global_113386.f_10194.f_3853, 0);
-					if (NETWORK::_FACEBOOK_IS_AVAILABLE())
+					if (NETWORK::FACEBOOK_CAN_POST_TO_FACEBOOK())
 					{
 						NETWORK::FACEBOOK_POST_COMPLETED_MILESTONE(0);
 						func_122(0);
@@ -411,7 +411,7 @@ void func_2(int iParam0, bool bParam1, int iParam2)//Position - 0xAB6
 	{
 		iParam2 = func_3();
 	}
-	STATS::_SET_PACKED_STAT_BOOL(iParam0, bParam1, iParam2);
+	STATS::SET_PACKED_STAT_BOOL_CODE(iParam0, bParam1, iParam2);
 }
 
 int func_3()//Position - 0xAD4
@@ -1540,7 +1540,7 @@ int func_36(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x20
 	else if (iParam2 == 14)
 	{
 		FILES::SETUP_SHOP_PED_APPAREL_QUERY_TU(iParam3, 10, -1, true, -1, -1);
-		iVar3 = FILES::_0x6CEBE002E58DEE97(iParam1);
+		iVar3 = FILES::GET_SHOP_PED_QUERY_PROP_INDEX(iParam1);
 		if (iVar3 != -1)
 		{
 			return (func_39(iParam0) + iVar3);
@@ -1549,7 +1549,7 @@ int func_36(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x20
 	else
 	{
 		FILES::SETUP_SHOP_PED_APPAREL_QUERY_TU(iParam3, 10, -1, false, -1, func_38(iParam2));
-		iVar4 = FILES::_0x96E2929292A4DB77(iParam1);
+		iVar4 = FILES::GET_SHOP_PED_QUERY_COMPONENT_INDEX(iParam1);
 		if (iVar4 != -1)
 		{
 			return (func_37(iParam0, func_38(iParam2)) + iVar4);
@@ -6201,20 +6201,20 @@ bool func_56(int iParam0, int iParam1, var uParam2, var uParam3, bool bParam4, b
 	{
 		if (Global_4538418)
 		{
-			iVar0 = PED::_0x1E77FA7A62EE6C4C(iParam0);
+			iVar0 = PED::GET_FM_MALE_SHOP_PED_APPAREL_ITEM_INDEX(iParam0);
 		}
 		else
 		{
-			iVar0 = PED::_0xF033419D1B81FAE8(iParam0);
+			iVar0 = PED::GET_FM_FEMALE_SHOP_PED_APPAREL_ITEM_INDEX(iParam0);
 		}
 	}
 	else if (bParam5)
 	{
-		iVar0 = PED::_0x1E77FA7A62EE6C4C(iParam0);
+		iVar0 = PED::GET_FM_MALE_SHOP_PED_APPAREL_ITEM_INDEX(iParam0);
 	}
 	else
 	{
-		iVar0 = PED::_0xF033419D1B81FAE8(iParam0);
+		iVar0 = PED::GET_FM_FEMALE_SHOP_PED_APPAREL_ITEM_INDEX(iParam0);
 	}
 	if (iVar0 == -1)
 	{
@@ -30130,7 +30130,7 @@ void func_142()//Position - 0x21BB7
 
 void func_143()//Position - 0x21CC5
 {
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("finale_heist2a")) == 0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("rural_bank_heist")) == 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("finale_heist2a")) == 0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("rural_bank_heist")) == 0)
 	{
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
@@ -30567,7 +30567,7 @@ void func_151()//Position - 0x22940
 {
 	if (!BitTest(Global_113386.f_10194.f_3856, 15))
 	{
-		if (STATS::_0x5EAD2BF6484852E4())
+		if (STATS::GET_PLAYER_HAS_DRIVEN_ALL_VEHICLES())
 		{
 			MISC::SET_BIT(&(Global_113386.f_10194.f_3856), 15);
 			STATS::PRESENCE_EVENT_UPDATESTAT_INT(joaat("SP_VEHICLE_MODELS_DRIVEN"), 200, 0);
@@ -30784,7 +30784,7 @@ int func_153()//Position - 0x22E3A
 
 int func_154(bool bParam0)//Position - 0x22E85
 {
-	if (!bParam0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("benchmark")) > 0)
+	if (!bParam0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("benchmark")) > 0)
 	{
 		return 1;
 	}
@@ -30807,10 +30807,10 @@ int func_155(int iParam0, int iParam1)//Position - 0x22EAD
 	{
 		return 0;
 	}
-	iVar0 = PLAYER::_GET_ACHIEVEMENT_PROGRESS(iParam0);
+	iVar0 = PLAYER::GET_ACHIEVEMENT_PROGRESS(iParam0);
 	if (iParam1 > iVar0)
 	{
-		return PLAYER::_SET_ACHIEVEMENT_PROGRESS(iParam0, iParam1);
+		return PLAYER::SET_ACHIEVEMENT_PROGRESS(iParam0, iParam1);
 	}
 	return 0;
 }

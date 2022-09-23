@@ -237,7 +237,7 @@ void func_1()//Position - 0x20A
 	{
 		return;
 	}
-	bVar0 = SOCIALCLUB::_0x225798743970412B(&iVar1);
+	bVar0 = SOCIALCLUB::SC_ACHIEVEMENT_INFO_STATUS(&iVar1);
 	if (iVar1 == -1 && iLocal_72 == 0)
 	{
 	}
@@ -445,7 +445,7 @@ bool func_7(int iParam0, int iParam1)//Position - 0x520
 	{
 		iParam1 = func_6();
 	}
-	return STATS::_GET_PACKED_STAT_BOOL(iParam0, iParam1);
+	return STATS::GET_PACKED_STAT_BOOL_CODE(iParam0, iParam1);
 }
 
 int func_8(bool bParam0)//Position - 0x53C
@@ -7504,7 +7504,7 @@ int func_22(int iParam0, int iParam1)//Position - 0x5C63
 	{
 		StringCopy(&Var11, func_67(iParam1, iParam0), 16);
 		func_62(&sVar10, Var11, ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()), 3, 1, func_65(iParam0), func_64(iParam0), -1, 0, 0);
-		if (NETSHOPPING::_NET_GAMESERVER_CATALOG_ITEM_EXISTS(&sVar10))
+		if (NETSHOPPING::NET_GAMESERVER_CATALOG_ITEM_IS_VALID(&sVar10))
 		{
 			iVar0 = NETSHOPPING::NET_GAMESERVER_GET_PRICE(MISC::GET_HASH_KEY(&sVar10), 1671640801, true);
 		}
@@ -9868,7 +9868,7 @@ int func_70()//Position - 0xBA9F
 {
 	if (MISC::IS_PC_VERSION())
 	{
-		return NETSHOPPING::_NET_GAMESERVER_USE_SERVER_TRANSACTIONS();
+		return NETSHOPPING::NET_GAMESERVER_USE_SERVER_TRANSACTIONS();
 	}
 	return 0;
 }
@@ -10037,7 +10037,7 @@ int func_74()//Position - 0xBC2D
 	{
 		if (NETWORK::NETWORK_HAS_VALID_ROS_CREDENTIALS())
 		{
-			if (NETWORK::_NETWORK_GET_ROS_PRIVILEGE_25())
+			if (NETWORK::NETWORK_HAS_ROS_PRIVILEGE_SPECIAL_EDITION_CONTENT())
 			{
 				STATS::STAT_GET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), &iVar4, -1);
 				MISC::SET_BIT(&iVar4, 1);
@@ -10052,7 +10052,7 @@ int func_74()//Position - 0xBC2D
 					iVar4 = MISC::GET_PROFILE_SETTING(866);
 					MISC::SET_BIT(&iVar4, 1);
 					MISC::SET_BIT(&iVar4, 3);
-					STATS::_SET_HAS_CONTENT_UNLOCKS_FLAGS(iVar4);
+					STATS::SET_HAS_SPECIALEDITION_CONTENT(iVar4);
 				}
 				return 1;
 			}
@@ -10077,7 +10077,7 @@ int func_75()//Position - 0xBD66
 	{
 		if (NETWORK::NETWORK_HAS_VALID_ROS_CREDENTIALS())
 		{
-			if (NETWORK::_NETWORK_GET_ROS_PRIVILEGE_24())
+			if (NETWORK::NETWORK_HAS_ROS_PRIVILEGE_PLAYED_LAST_GEN())
 			{
 				STATS::STAT_GET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), &iVar0, -1);
 				MISC::SET_BIT(&iVar0, 2);
@@ -10091,7 +10091,7 @@ int func_75()//Position - 0xBD66
 				{
 					iVar0 = MISC::GET_PROFILE_SETTING(866);
 					MISC::SET_BIT(&iVar0, 0);
-					STATS::_SET_HAS_CONTENT_UNLOCKS_FLAGS(iVar0);
+					STATS::SET_HAS_SPECIALEDITION_CONTENT(iVar0);
 				}
 				return 1;
 			}
@@ -12870,7 +12870,7 @@ void func_90(int iParam0, var uParam1)//Position - 0xE559
 						Var4.f_1 = 1;
 					}
 					Var4.f_3 = WEAPON::GET_PED_WEAPON_TINT_INDEX(iParam0, Var4.f_0);
-					Var4.f_4 = WEAPON::_0xA2C9AC24B4061285(iParam0, Var4.f_0);
+					Var4.f_4 = WEAPON::GET_PED_WEAPON_CAMO_INDEX(iParam0, Var4.f_0);
 					if (Var4.f_1 == -1)
 					{
 						if (!WEAPON::GET_MAX_AMMO(iParam0, Var4.f_0, &(Var4.f_1)))
@@ -12901,11 +12901,11 @@ void func_90(int iParam0, var uParam1)//Position - 0xE559
 			uParam1->f_221[iVar0 /*5*/].f_1 = 0;
 			iVar0++;
 		}
-		iVar6 = FILES::_GET_NUM_DLC_WEAPONS_SP();
+		iVar6 = FILES::GET_NUM_DLC_WEAPONS_SP();
 		iVar5 = 0;
 		while (iVar5 < iVar6)
 		{
-			if ((FILES::_GET_DLC_WEAPON_DATA_SP(iVar5, &Var7) && !func_91(Var7.f_1)) && iVar9 < 51)
+			if ((FILES::GET_DLC_WEAPON_DATA_SP(iVar5, &Var7) && !func_91(Var7.f_1)) && iVar9 < 51)
 			{
 				if (!FILES::IS_CONTENT_ITEM_LOCKED(Var7.f_0))
 				{
@@ -12918,7 +12918,7 @@ void func_90(int iParam0, var uParam1)//Position - 0xE559
 					if (WEAPON::HAS_PED_GOT_WEAPON(iParam0, Var4.f_0, false))
 					{
 						Var4.f_3 = WEAPON::GET_PED_WEAPON_TINT_INDEX(iParam0, Var4.f_0);
-						Var4.f_4 = WEAPON::_0xA2C9AC24B4061285(iParam0, Var4.f_0);
+						Var4.f_4 = WEAPON::GET_PED_WEAPON_CAMO_INDEX(iParam0, Var4.f_0);
 					}
 					if (Var4.f_1 == -1)
 					{
@@ -12930,9 +12930,9 @@ void func_90(int iParam0, var uParam1)//Position - 0xE559
 					uParam1->f_221[iVar9 /*5*/].f_1 = Var4.f_1;
 					iVar10 = 0;
 					iVar1 = 0;
-					while (iVar1 < FILES::_GET_NUM_DLC_WEAPON_COMPONENTS_SP(iVar5))
+					while (iVar1 < FILES::GET_NUM_DLC_WEAPON_COMPONENTS_SP(iVar5))
 					{
-						if (FILES::_GET_DLC_WEAPON_COMPONENT_DATA_SP(iVar5, iVar1, &Var8))
+						if (FILES::GET_DLC_WEAPON_COMPONENT_DATA_SP(iVar5, iVar1, &Var8))
 						{
 							if (!func_76(Var8.f_3))
 							{
@@ -14099,7 +14099,7 @@ void func_101()//Position - 0xF8B4
 	{
 		if (!PLAYER::HAS_ACHIEVEMENT_BEEN_PASSED(iVar0))
 		{
-			if (SOCIALCLUB::_SC_GET_HAS_ACHIEVEMENT_BEEN_PASSED(iVar0))
+			if (SOCIALCLUB::SC_HAS_ACHIEVEMENT_BEEN_PASSED(iVar0))
 			{
 				func_129(iVar0, 1);
 			}
@@ -14111,7 +14111,7 @@ void func_101()//Position - 0xF8B4
 	{
 		if (!PLAYER::HAS_ACHIEVEMENT_BEEN_PASSED(iVar0))
 		{
-			if (SOCIALCLUB::_SC_GET_HAS_ACHIEVEMENT_BEEN_PASSED(iVar0))
+			if (SOCIALCLUB::SC_HAS_ACHIEVEMENT_BEEN_PASSED(iVar0))
 			{
 				func_129(iVar0, 1);
 			}
@@ -14123,7 +14123,7 @@ void func_101()//Position - 0xF8B4
 	{
 		if (!PLAYER::HAS_ACHIEVEMENT_BEEN_PASSED(iVar0))
 		{
-			if (SOCIALCLUB::_SC_GET_HAS_ACHIEVEMENT_BEEN_PASSED(iVar0))
+			if (SOCIALCLUB::SC_HAS_ACHIEVEMENT_BEEN_PASSED(iVar0))
 			{
 				func_129(iVar0, 1);
 			}
@@ -14846,10 +14846,10 @@ int func_135(int iParam0, int iParam1)//Position - 0x10349
 	{
 		return 0;
 	}
-	iVar0 = PLAYER::_GET_ACHIEVEMENT_PROGRESS(iParam0);
+	iVar0 = PLAYER::GET_ACHIEVEMENT_PROGRESS(iParam0);
 	if (iParam1 > iVar0)
 	{
-		return PLAYER::_SET_ACHIEVEMENT_PROGRESS(iParam0, iParam1);
+		return PLAYER::SET_ACHIEVEMENT_PROGRESS(iParam0, iParam1);
 	}
 	return 0;
 }
@@ -16383,7 +16383,7 @@ void func_163(char* sParam0, int iParam1)//Position - 0x117CE
 
 bool func_164()//Position - 0x117E5
 {
-	return (MISC::IS_ORBIS_VERSION() || MISC::_0x807ABE1AB65C24D2());
+	return (MISC::IS_ORBIS_VERSION() || MISC::IS_PROSPERO_VERSION());
 }
 
 void func_165(int* iParam0)//Position - 0x117FB

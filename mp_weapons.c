@@ -118,7 +118,7 @@ void __EntryFunction__()//Position - 0x0
 			SYSTEM::WAIT(0);
 		}
 	}
-	HUD::_LOG_DEBUG_INFO(1);
+	HUD::FORCE_SCRIPTED_GFX_WHEN_FRONTEND_ACTIVE(1);
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
 	Global_1574600 = 1;
 	iVar0 = 0;
@@ -242,7 +242,7 @@ void __EntryFunction__()//Position - 0x0
 			break;
 	}
 	HUD::RELEASE_CONTROL_OF_FRONTEND();
-	HUD::_LOG_DEBUG_INFO(0);
+	HUD::FORCE_SCRIPTED_GFX_WHEN_FRONTEND_ACTIVE(0);
 	Global_1574600 = 0;
 	GRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(4);
 	while (true)
@@ -1153,7 +1153,7 @@ bool func_17(int iParam0, int iParam1)//Position - 0x15FD
 	{
 		iParam1 = func_143();
 	}
-	return STATS::_GET_PACKED_STAT_BOOL(iParam0, iParam1);
+	return STATS::GET_PACKED_STAT_BOOL_CODE(iParam0, iParam1);
 }
 
 void func_18(char* sParam0)//Position - 0x1619
@@ -11168,7 +11168,7 @@ int func_102(int iParam0, int iParam1)//Position - 0xA911
 	{
 		iParam1 = func_143();
 	}
-	return STATS::_GET_PACKED_STAT_INT(iParam0, iParam1);
+	return STATS::GET_PACKED_STAT_INT_CODE(iParam0, iParam1);
 }
 
 int func_103()//Position - 0xA92D
@@ -11196,7 +11196,7 @@ int func_104()//Position - 0xA946
 	{
 		if (NETWORK::NETWORK_HAS_VALID_ROS_CREDENTIALS())
 		{
-			if (NETWORK::_NETWORK_GET_ROS_PRIVILEGE_24())
+			if (NETWORK::NETWORK_HAS_ROS_PRIVILEGE_PLAYED_LAST_GEN())
 			{
 				STATS::STAT_GET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), &iVar0, -1);
 				MISC::SET_BIT(&iVar0, 2);
@@ -11210,7 +11210,7 @@ int func_104()//Position - 0xA946
 				{
 					iVar0 = MISC::GET_PROFILE_SETTING(866);
 					MISC::SET_BIT(&iVar0, 0);
-					STATS::_SET_HAS_CONTENT_UNLOCKS_FLAGS(iVar0);
+					STATS::SET_HAS_SPECIALEDITION_CONTENT(iVar0);
 				}
 				return 1;
 			}
@@ -11247,7 +11247,7 @@ int func_105(bool bParam0, bool bParam1)//Position - 0xA9FE
 	}
 	if (bParam1)
 	{
-		if (NETWORK::_NETWORK_HAS_AGE_RESTRICTED_PROFILE())
+		if (NETWORK::NETWORK_HAS_AGE_RESTRICTIONS())
 		{
 			return 0;
 		}
@@ -11261,7 +11261,7 @@ int func_105(bool bParam0, bool bParam1)//Position - 0xA9FE
 
 bool func_106()//Position - 0xAA67
 {
-	return (MISC::IS_ORBIS_VERSION() || MISC::_0x807ABE1AB65C24D2());
+	return (MISC::IS_ORBIS_VERSION() || MISC::IS_PROSPERO_VERSION());
 }
 
 void func_107(int iParam0, var uParam1, int iParam2, int iParam3)//Position - 0xAA7D
@@ -13722,7 +13722,7 @@ bool func_140()//Position - 0xDFD2
 
 int func_141()//Position - 0xDFE8
 {
-	switch (NETWORK::_0x155467ACA0F55705())
+	switch (NETWORK::GET_USER_STARTER_ACCESS())
 	{
 		case 1:
 		case 2:
@@ -13737,7 +13737,7 @@ int func_141()//Position - 0xDFE8
 
 int func_142()//Position - 0xE016
 {
-	switch (NETWORK::_0x754615490A029508())
+	switch (NETWORK::GET_USER_PREMIUM_ACCESS())
 	{
 		case 1:
 		case 2:

@@ -189,8 +189,8 @@ void func_3(var uParam0, var uParam1)//Position - 0x1B3
 	Var0 = { CAM::GET_FINAL_RENDERED_CAM_COORD() };
 	if ((((HUD::IS_PAUSE_MENU_ACTIVE() || func_8()) || PAD::IS_CONTROL_JUST_PRESSED(2, 199)) || PAD::IS_CONTROL_PRESSED(2, 199)) || PAD::IS_CONTROL_JUST_RELEASED(2, 199))
 	{
-		HUD::_SET_PLAYER_BLIP_POSITION_THIS_FRAME(Var0.f_0, Var0.f_1);
-		HUD::_0xA17784FCA9548D15(Var0.f_0, Var0.f_1, 0);
+		HUD::SET_FAKE_PAUSEMAP_PLAYER_POSITION_THIS_FRAME(Var0.f_0, Var0.f_1);
+		HUD::SET_FAKE_GPS_PLAYER_POSITION_THIS_FRAME(Var0.f_0, Var0.f_1, 0);
 		if (HUD::IS_PAUSE_MENU_ACTIVE() || func_8())
 		{
 			if (HUD::DOES_BLIP_EXIST(HUD::GET_MAIN_PLAYER_BLIP_ID()))
@@ -510,7 +510,7 @@ void func_14(var uParam0, var uParam1)//Position - 0x761
 		bVar0 = func_31(0, -1, 0);
 		if (bVar0)
 		{
-			if ((!*uParam1 || PAD::_0x6CD79468A1E595C6(2)) || PAD::_0x6CD79468A1E595C6(0))
+			if ((!*uParam1 || PAD::HAVE_CONTROLS_CHANGED(2)) || PAD::HAVE_CONTROLS_CHANGED(0))
 			{
 				func_30(-1);
 				iVar1 = 0;
@@ -557,7 +557,7 @@ void func_15(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, b
 	{
 		return;
 	}
-	if (NETWORK::_NETWORK_IS_TEXT_CHAT_ACTIVE())
+	if (NETWORK::NETWORK_TEXT_CHAT_IS_TYPING())
 	{
 		return;
 	}
@@ -570,25 +570,25 @@ void func_15(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, b
 	}
 	if (MISC::IS_PC_VERSION())
 	{
-		if (MISC::UPDATE_ONSCREEN_KEYBOARD() == 0 || NETWORK::_NETWORK_IS_TEXT_CHAT_ACTIVE())
+		if (MISC::UPDATE_ONSCREEN_KEYBOARD() == 0 || NETWORK::NETWORK_TEXT_CHAT_IS_TYPING())
 		{
 			return;
 		}
 	}
 	if (Global_23150.f_5160 != 0)
 	{
-		if (PAD::_0x6CD79468A1E595C6(2))
+		if (PAD::HAVE_CONTROLS_CHANGED(2))
 		{
 			iVar1 = 0;
 			while (iVar1 < Global_23150.f_5160)
 			{
 				if (Global_23150.f_5417[iVar1] != 363)
 				{
-					StringCopy(&(Global_23150.f_5162[iVar1 /*16*/]), PAD::GET_CONTROL_INSTRUCTIONAL_BUTTON(2, Global_23150.f_5417[iVar1], true), 64);
+					StringCopy(&(Global_23150.f_5162[iVar1 /*16*/]), PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, Global_23150.f_5417[iVar1], true), 64);
 				}
 				else if (Global_23150.f_5430[iVar1] != 32)
 				{
-					StringCopy(&(Global_23150.f_5162[iVar1 /*16*/]), PAD::GET_CONTROL_GROUP_INSTRUCTIONAL_BUTTON(2, Global_23150.f_5430[iVar1], true), 64);
+					StringCopy(&(Global_23150.f_5162[iVar1 /*16*/]), PAD::GET_CONTROL_GROUP_INSTRUCTIONAL_BUTTONS_STRING(2, Global_23150.f_5430[iVar1], true), 64);
 				}
 				iVar1++;
 			}
@@ -882,7 +882,7 @@ int func_21()//Position - 0xDB4
 
 int func_22()//Position - 0xE22
 {
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("cellphone_flashhand")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) > 0)
 	{
 		return 1;
 	}
@@ -974,7 +974,7 @@ void func_28(int iParam0, char* sParam1, int iParam2, bool bParam3)//Position - 
 {
 	char* sVar0;
 	
-	sVar0 = PAD::GET_CONTROL_INSTRUCTIONAL_BUTTON(2, iParam0, true);
+	sVar0 = PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, iParam0, true);
 	if (Global_23150.f_5160 >= 12)
 	{
 		StringCopy(&Global_4539885, sVar0, 64);
@@ -999,7 +999,7 @@ void func_29(int iParam0, char* sParam1, int iParam2)//Position - 0x1080
 {
 	char* sVar0;
 	
-	sVar0 = PAD::GET_CONTROL_GROUP_INSTRUCTIONAL_BUTTON(2, iParam0, true);
+	sVar0 = PAD::GET_CONTROL_GROUP_INSTRUCTIONAL_BUTTONS_STRING(2, iParam0, true);
 	if (Global_23150.f_5160 >= 12)
 	{
 		StringCopy(&Global_4539885, sVar0, 64);
@@ -1442,7 +1442,7 @@ struct<4> func_46(int iParam0, var uParam1, struct<6> Param2, float fParam3, flo
 	Var1.f_1 = { -*uParam1 };
 	fVar2 = PAD::GET_DISABLED_CONTROL_NORMAL(0, 39);
 	Var3 = { -Vector(PAD::GET_DISABLED_CONTROL_UNBOUND_NORMAL(0, 290), 0f, PAD::GET_DISABLED_CONTROL_UNBOUND_NORMAL(0, 291)) };
-	if (PAD::_IS_USING_KEYBOARD(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 	{
 		fParam3 = (fParam3 * 8f);
 	}
@@ -1462,8 +1462,8 @@ struct<4> func_46(int iParam0, var uParam1, struct<6> Param2, float fParam3, flo
 	CAM::SET_CAM_FOV(iParam0, fVar5);
 	CAM::SET_CAM_NEAR_CLIP(iParam0, 0.01f);
 	fVar6 = ((fVar5 - 5f) / 42f);
-	CAM::_0x487A82C650EB7799(1f);
-	GRAPHICS::_0xE2892E7E55D7073A(fVar6);
+	CAM::SET_GAMEPLAY_CAM_MOTION_BLUR_SCALING_THIS_UPDATE(1f);
+	GRAPHICS::SET_DISTANCE_BLUR_STRENGTH_OVERRIDE(fVar6);
 	Var7.f_0 = Param2.f_2;
 	Var7.f_1 = 0f;
 	Var7.f_2 = Param2.f_0;
@@ -1549,7 +1549,7 @@ void func_51()//Position - 0x1B7D
 	var uVar1;
 	struct<3> Var2;
 	
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("am_mp_drone")) < 1)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("am_mp_drone")) < 1)
 	{
 		if (!Local_65.f_29.f_5)
 		{
@@ -1721,7 +1721,7 @@ void func_58(float fParam0, float fParam1, var uParam2, var uParam3, var uParam4
 	{
 		Var0 = { func_7(CAM::GET_CAM_ROT(Local_65.f_0, 2)) };
 		Var1 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(Local_64.f_95, Local_64.f_88) };
-		Var2 = { ENTITY::_GET_ENTITY_BONE_POSITION_2(Local_64.f_95, Local_64.f_74.f_1[0]) };
+		Var2 = { ENTITY::GET_ENTITY_BONE_POSTION(Local_64.f_95, Local_64.f_74.f_1[0]) };
 		Var3 = { Var2 - Var1 };
 		*uParam2 = { Var2 };
 		iVar4 = 0;
@@ -1729,7 +1729,7 @@ void func_58(float fParam0, float fParam1, var uParam2, var uParam3, var uParam4
 		iVar6 = 1;
 		while (iVar6 <= (Local_64.f_74 - 1))
 		{
-			Var2 = { ENTITY::_GET_ENTITY_BONE_POSITION_2(Local_64.f_95, Local_64.f_74.f_1[iVar6]) };
+			Var2 = { ENTITY::GET_ENTITY_BONE_POSTION(Local_64.f_95, Local_64.f_74.f_1[iVar6]) };
 			Var3 = { Var2 - Var1 };
 			fVar7 = func_59(Var3, Var0);
 			if (fVar7 > fVar5)
@@ -1740,7 +1740,7 @@ void func_58(float fParam0, float fParam1, var uParam2, var uParam3, var uParam4
 			}
 			iVar6++;
 		}
-		*uParam5 = { ENTITY::_GET_ENTITY_BONE_ROTATION(Local_64.f_95, Local_64.f_74.f_1[iVar4]) };
+		*uParam5 = { ENTITY::GET_ENTITY_BONE_ROTATION(Local_64.f_95, Local_64.f_74.f_1[iVar4]) };
 		*uParam4 = { func_7(*uParam5) };
 		*uParam2 = { *uParam2 + Vector(fParam0, fParam0, fParam0) * *uParam4 };
 		*uParam3 = { *uParam2 + Vector(fParam1, fParam1, fParam1) * *uParam4 };
@@ -1829,7 +1829,7 @@ int func_65(int iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3)//
 		Var0.f_5 = { Param2 };
 		Var0.f_8 = { Param3 };
 		Var0.f_1 = iParam0;
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("am_mp_drone")) < 1)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("am_mp_drone")) < 1)
 		{
 			if (!NETWORK::NETWORK_IS_SCRIPT_ACTIVE("AM_MP_DRONE", Var0.f_0, true, 0))
 			{
@@ -1854,7 +1854,7 @@ void func_66(bool bParam0)//Position - 0x21A7
 {
 	if (bParam0)
 	{
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(MISC::GET_HASH_KEY("AM_MP_DRONE")) > 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(MISC::GET_HASH_KEY("AM_MP_DRONE")) > 0)
 		{
 			if (!func_69())
 			{
@@ -1901,7 +1901,7 @@ void func_70()//Position - 0x2212
 			if (ENTITY::IS_ENTITY_A_VEHICLE(Local_65.f_22.f_4))
 			{
 				iVar2 = ENTITY::GET_VEHICLE_INDEX_FROM_ENTITY_INDEX(Local_65.f_22.f_4);
-				VEHICLE::_0x407DC5E97DB1A4D3(iVar2, 2);
+				VEHICLE::SET_VEHICLE_HOMING_LOCKEDONTO_STATE(iVar2, 2);
 			}
 			func_76(&(Local_65.f_22.f_5));
 			func_75(&(Local_65.f_22.f_6), "Bleep", "DLC_IE_Steal_EITS_Sounds", 1);
@@ -1912,7 +1912,7 @@ void func_70()//Position - 0x2212
 			if (ENTITY::IS_ENTITY_A_VEHICLE(Local_65.f_22.f_4))
 			{
 				iVar3 = ENTITY::GET_VEHICLE_INDEX_FROM_ENTITY_INDEX(Local_65.f_22.f_4);
-				VEHICLE::_0x407DC5E97DB1A4D3(iVar3, 1);
+				VEHICLE::SET_VEHICLE_HOMING_LOCKEDONTO_STATE(iVar3, 1);
 			}
 			func_75(&(Local_65.f_22.f_5), "VULKAN_LOCK_ON_AMBER", 0, 1);
 			iVar1 = 9;
@@ -1967,7 +1967,7 @@ void func_72(int iParam0, bool bParam1, int iParam2)//Position - 0x239C
 	GRAPHICS::SET_DRAW_ORIGIN(Var2, 0);
 	fVar0 = func_74(iParam0, Local_65.f_0, 0.5f);
 	fVar0 = func_49(fVar0, 0.015f, fVar0);
-	fVar1 = (fVar0 * GRAPHICS::_GET_ASPECT_RATIO(false));
+	fVar1 = (fVar0 * GRAPHICS::GET_ASPECT_RATIO(false));
 	HUD::GET_HUD_COLOUR(iParam2, &iVar3, &iVar4, &iVar5, &iVar6);
 	iVar7 = func_73((bParam1 && (MISC::GET_GAME_TIMER() % 300) < 150), SYSTEM::CEIL((SYSTEM::TO_FLOAT(iVar6) / 4f)), iVar6);
 	GRAPHICS::DRAW_SPRITE("helicopterhud", "hud_outline", 0f, 0f, fVar0, fVar1, 0f, iVar3, iVar4, iVar5, iVar7, false, 0);
@@ -2811,7 +2811,7 @@ void func_103(int* iParam0)//Position - 0x34A6
 	if (func_102(&iParam0, 5))
 	{
 		AUDIO::STOP_AUDIO_SCENES();
-		AUDIO::_0x9AC92EED5E4793AB();
+		AUDIO::UNHINT_SCRIPT_AUDIO_BANK();
 		if (!MISC::IS_STRING_NULL_OR_EMPTY(Local_65.f_40))
 		{
 			AUDIO::RELEASE_NAMED_SCRIPT_AUDIO_BANK(Local_65.f_40);
@@ -2925,7 +2925,7 @@ void func_106()//Position - 0x3776
 				MISC::SET_BIT(&(Local_65.f_60), 2);
 				func_41();
 				MISC::CLEAR_BIT(&(Local_65.f_60), 2);
-				PLAYER::_0x70A382ADEC069DD3(Local_65.f_4.f_6);
+				PLAYER::SET_SCRIPT_FIRE_POSITION(Local_65.f_4.f_6);
 			}
 			else
 			{
@@ -3098,7 +3098,7 @@ int func_113(int iParam0)//Position - 0x3A4E
 			return 0;
 		}
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("cellphone_flashhand")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) > 0)
 	{
 		return 1;
 	}
@@ -3172,7 +3172,7 @@ int func_116()//Position - 0x3B01
 	}
 	if (func_117() != 0)
 	{
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(func_117()) == 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(func_117()) == 0)
 		{
 			return 1;
 		}
@@ -3272,7 +3272,7 @@ void func_125()//Position - 0x3C35
 	{
 		func_128();
 	}
-	PLAYER::_0x7148E0F43D11F0D9();
+	PLAYER::REMOVE_SCRIPT_FIRE_POSITION();
 	GRAPHICS::CLEAR_TIMECYCLE_MODIFIER();
 	if (Local_65.f_57)
 	{
@@ -3321,7 +3321,7 @@ void func_129(int iParam0)//Position - 0x3D31
 		{
 			if (!Global_2667225.f_2688 == -1)
 			{
-				if (((Global_2667225.f_2688 < 255 && !func_130()) && !BitTest(Global_4718592.f_168795, 0)) && !(AUDIO::_AUDIO_IS_SCRIPTED_MUSIC_PLAYING_2() && (Global_2667225.f_2689 == 0 && iParam0 == 0)))
+				if (((Global_2667225.f_2688 < 255 && !func_130()) && !BitTest(Global_4718592.f_168795, 0)) && !(AUDIO::AUDIO_IS_SCRIPTED_MUSIC_PLAYING() && (Global_2667225.f_2689 == 0 && iParam0 == 0)))
 				{
 					AUDIO::SET_RADIO_TO_STATION_INDEX(Global_2667225.f_2688);
 				}
@@ -3583,7 +3583,7 @@ void func_151(int iParam0)//Position - 0x423B
 	int iVar0;
 	
 	iVar0 = Global_2667225.f_2691;
-	if ((AUDIO::_AUDIO_IS_SCRIPTED_MUSIC_PLAYING_2() && Global_2667225.f_2689 == 0) && iParam0 == 0)
+	if ((AUDIO::AUDIO_IS_SCRIPTED_MUSIC_PLAYING() && Global_2667225.f_2689 == 0) && iParam0 == 0)
 	{
 		iVar0 = 255;
 	}

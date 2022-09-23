@@ -354,7 +354,7 @@ void func_1()//Position - 0x16C
 		{
 			func_2(0);
 		}
-		else if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(MISC::GET_HASH_KEY(&Global_112442)) == 0)
+		else if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(MISC::GET_HASH_KEY(&Global_112442)) == 0)
 		{
 			func_2(0);
 		}
@@ -570,7 +570,7 @@ void func_6()//Position - 0x3EC
 				{
 					VEHICLE::SET_VEHICLE_HAS_BEEN_OWNED_BY_PLAYER(Global_112417, false);
 					VEHICLE::SET_VEHICLE_AUTOMATICALLY_ATTACHES(Global_112417, true, 0);
-					VEHICLE::_0xBE5C1255A1830FF5(Global_112417, false);
+					VEHICLE::SET_VEHICLE_WILL_FORCE_OTHER_VEHICLES_TO_STOP(Global_112417, false);
 				}
 				ENTITY::SET_VEHICLE_AS_NO_LONGER_NEEDED(&Global_112417);
 			}
@@ -1290,7 +1290,7 @@ int func_28(int iParam0, int iParam1, bool bParam2)//Position - 0x10C9
 					VEHICLE::SET_VEHICLE_DOORS_LOCKED(Global_112417, 1);
 					VEHICLE::SET_VEHICLE_HAS_BEEN_OWNED_BY_PLAYER(Global_112417, true);
 					VEHICLE::SET_VEHICLE_AUTOMATICALLY_ATTACHES(Global_112417, false, 0);
-					VEHICLE::_0xBE5C1255A1830FF5(Global_112417, true);
+					VEHICLE::SET_VEHICLE_WILL_FORCE_OTHER_VEHICLES_TO_STOP(Global_112417, true);
 					return 1;
 				}
 			}
@@ -1782,7 +1782,7 @@ int func_48(int iParam0)//Position - 0x19D8
 			return 0;
 		}
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("cellphone_flashhand")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) > 0)
 	{
 		return 1;
 	}
@@ -2261,7 +2261,7 @@ void func_60()//Position - 0x2209
 		Var3.f_18 = 1040187392;
 		Var3.f_19 = -1;
 		iVar4 = 0;
-		if (CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(CAM::_GET_CAM_ACTIVE_VIEW_MODE_CONTEXT()) == 4)
+		if (CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(CAM::GET_CAM_ACTIVE_VIEW_MODE_CONTEXT()) == 4)
 		{
 			Var3.f_0 = 1;
 			Var3.f_2 = "FP_HAIL_TAXI";
@@ -2373,7 +2373,7 @@ void func_62(int iParam0, int iParam1, char* sParam2, int iParam3, char* sParam4
 {
 	int iVar0;
 	
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("context_controller")) < 1)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("context_controller")) < 1)
 	{
 	}
 	if (STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
@@ -2652,7 +2652,7 @@ int func_68(struct<3> Param0, struct<3> Param1, var uParam2, var uParam3, var uP
 	if (PATHFIND::IS_VEHICLE_NODE_ID_VALID(iVar3))
 	{
 		PATHFIND::GET_VEHICLE_NODE_POSITION(iVar3, &Var0);
-		if (PATHFIND::_GET_POINT_ON_ROAD_SIDE(Var0, 0, &Var1) && PATHFIND::_GET_POINT_ON_ROAD_SIDE(Var0, 1, &Var2))
+		if (PATHFIND::GET_POSITION_BY_SIDE_OF_ROAD(Var0, 0, &Var1) && PATHFIND::GET_POSITION_BY_SIDE_OF_ROAD(Var0, 1, &Var2))
 		{
 			Var5 = { Var1 - Var0 };
 			Var6 = { -Var5.f_1, Var5.f_0, 0f };
@@ -2679,7 +2679,7 @@ int func_68(struct<3> Param0, struct<3> Param1, var uParam2, var uParam3, var uP
 			}
 			return 1;
 		}
-		else if (PATHFIND::_GET_POINT_ON_ROAD_SIDE(Var0, -1, &Var1))
+		else if (PATHFIND::GET_POSITION_BY_SIDE_OF_ROAD(Var0, -1, &Var1))
 		{
 			*uParam3 = { Var1 };
 			*uParam4 = uParam2;
@@ -3953,7 +3953,7 @@ int func_81()//Position - 0x5371
 		{
 			return 1;
 		}
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("ambient_solomon")) > 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("ambient_solomon")) > 0)
 		{
 			return 1;
 		}
@@ -4449,7 +4449,7 @@ void func_97(struct<2> Param0, var uParam1, struct<2> Param2, var uParam3, var u
 		*uParam4 = { Var0 };
 		*uParam5 = { Var1 };
 	}
-	PATHFIND::REQUEST_PATHS_PREFER_ACCURATE_BOUNDINGSTRUCT(*uParam4, uParam4->f_1, *uParam5, uParam5->f_1);
+	PATHFIND::REQUEST_PATH_NODES_IN_AREA_THIS_FRAME(*uParam4, uParam4->f_1, *uParam5, uParam5->f_1);
 }
 
 int func_98(struct<3> Param0, struct<3> Param1, float fParam2, bool bParam3)//Position - 0x65FD
@@ -4567,7 +4567,7 @@ int func_100(var uParam0, var uParam1, struct<3> Param2, float fParam3)//Positio
 					VEHICLE::SET_TAXI_LIGHTS(*uParam0, true);
 					VEHICLE::SET_VEHICLE_HAS_BEEN_OWNED_BY_PLAYER(*uParam0, true);
 					VEHICLE::SET_VEHICLE_AUTOMATICALLY_ATTACHES(*uParam0, false, 0);
-					ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(*uParam0, true);
+					ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(*uParam0, true);
 					*uParam1 = PED::CREATE_PED_INSIDE_VEHICLE(*uParam0, 25, func_147(), -1, true, true);
 					if (ENTITY::DOES_ENTITY_EXIST(*uParam1))
 					{
@@ -4643,13 +4643,13 @@ int func_101(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)//P
 		{
 			while (!bVar6 && iVar7 < 5)
 			{
-				if (VEHICLE::_0xA4822F1CF23F4810(&Var0, &Var1, &Var2, 0f, 180f, iParam4, iVar5, 1, 0))
+				if (VEHICLE::GENERATE_VEHICLE_CREATION_POS_FROM_PATHS(&Var0, &Var1, &Var2, 0f, 180f, iParam4, iVar5, 1, 0))
 				{
 					fVar3 = func_104(0f, 0f, 0f, Var2, 1);
 					if (func_102(Var14, Var1, 1133903872, 1101004800))
 					{
 						bVar6 = true;
-						Var10 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Var1, fVar3, 0f, 1f, 0f) };
+						Var10 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var1, fVar3, 0f, 1f, 0f) };
 						Var11 = { Var10 - Var1 };
 						Var12 = { Var0 - Var1 };
 						if (MISC::GET_ANGLE_BETWEEN_2D_VECTORS(Var11.f_0, Var11.f_1, Var12.f_0, Var12.f_1) > 60f)
@@ -6393,7 +6393,7 @@ int func_144()//Position - 0x8CD8
 	{
 		return 0;
 	}
-	if (REPLAY::_IS_INTERIOR_RENDERING_DISABLED())
+	if (REPLAY::REPLAY_SYSTEM_HAS_REQUESTED_A_SCRIPT_CLEANUP())
 	{
 		return 0;
 	}

@@ -72,12 +72,12 @@ void __EntryFunction__()//Position - 0x0
 	while (!bVar1)
 	{
 		iVar0 = SCRIPT::SCRIPT_THREAD_ITERATOR_GET_NEXT_THREAD_ID();
-		if (MISC::ARE_STRINGS_EQUAL(SCRIPT::_GET_NAME_OF_THREAD(iVar0), "heist_ctrl_finale"))
+		if (MISC::ARE_STRINGS_EQUAL(SCRIPT::GET_NAME_OF_SCRIPT_WITH_THIS_ID(iVar0), "heist_ctrl_finale"))
 		{
 			bVar1 = true;
 		}
 	}
-	CUTSCENE::_0x8D9DF6ECA8768583(iVar0);
+	CUTSCENE::SET_SCRIPT_CAN_START_CUTSCENE(iVar0);
 	func_17();
 	func_1(96.7f, -1288.1f, 28.1f, 104.5f, -1301f, 30f, 2f, 118.3f, -1309.7f, 29f, 120f, 1, 1, 1, 0, 0);
 	func_20();
@@ -164,7 +164,7 @@ void func_2(struct<3> Param0, struct<3> Param1, float fParam2, struct<3> Param3,
 					if (VEHICLE::IS_VEHICLE_DRIVEABLE(iVar0, false))
 					{
 						iVar7 = ENTITY::GET_ENTITY_MODEL(iVar0);
-						VEHICLE::_GET_VEHICLE_SUSPENSION_BOUNDS(iVar0, &Var4, &Var5);
+						VEHICLE::GET_VEHICLE_SIZE(iVar0, &Var4, &Var5);
 						if (VEHICLE::IS_THIS_MODEL_A_HELI(iVar7))
 						{
 							Param5.f_0 = (Param5.f_0 + 3f);
@@ -700,7 +700,7 @@ int func_23(int iParam0)//Position - 0xDF7
 
 int func_24(bool bParam0)//Position - 0xE35
 {
-	if (!bParam0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("benchmark")) > 0)
+	if (!bParam0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("benchmark")) > 0)
 	{
 		return 1;
 	}

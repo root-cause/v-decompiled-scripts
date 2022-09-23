@@ -168,12 +168,12 @@ void __EntryFunction__()//Position - 0x0
 		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 		HUD::PAUSE_MENU_SET_BUSY_SPINNER(false, -1, 0);
 		Global_1574599 = 0;
-		STATS::_PLAYSTATS_AWARDS_NAV(Global_1646672.f_471, Global_1646672.f_472);
+		STATS::PLAYSTATS_AWARD_NAV(Global_1646672.f_471, Global_1646672.f_472);
 		Global_1646672.f_471 = 0;
 		Global_1646672.f_472 = 0;
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
-	HUD::_LOG_DEBUG_INFO(1);
+	HUD::FORCE_SCRIPTED_GFX_WHEN_FRONTEND_ACTIVE(1);
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
 	Global_1574599 = 1;
 	iVar0 = 0;
@@ -342,7 +342,7 @@ void __EntryFunction__()//Position - 0x0
 	HUD::RELEASE_CONTROL_OF_FRONTEND();
 	Global_1574599 = 0;
 	HUD::PAUSE_MENU_SET_BUSY_SPINNER(false, -1, 0);
-	STATS::_PLAYSTATS_AWARDS_NAV(Global_1646672.f_471, Global_1646672.f_472);
+	STATS::PLAYSTATS_AWARD_NAV(Global_1646672.f_471, Global_1646672.f_472);
 	Global_1646672.f_471 = 0;
 	Global_1646672.f_472 = 0;
 	while (true)
@@ -571,7 +571,7 @@ void func_2(var uParam0, var uParam1, var uParam2)//Position - 0x516
 				if (iVar4 == 0 || iVar4 == 1)
 				{
 					uParam1->f_7 = 1;
-					if (HUD::_0xC8E1071177A23BE5(&iVar5, &uVar6, &uVar7))
+					if (HUD::PAUSE_MENU_GET_MOUSE_CLICK_EVENT(&iVar5, &uVar6, &uVar7))
 					{
 						Global_1643950.f_1 = (iVar5 % 4);
 						Global_1643950.f_3 = (iVar5 / 4);
@@ -6497,7 +6497,7 @@ int func_56(int iParam0, int iParam1)//Position - 0x74A3
 {
 	int iVar0;
 	
-	iVar0 = FILES::_0x10144267DD22866C(iParam1, -1, iParam0);
+	iVar0 = FILES::GET_TATTOO_SHOP_DLC_ITEM_INDEX(iParam1, -1, iParam0);
 	if (iVar0 != -1)
 	{
 		return (129 + iVar0);
@@ -6914,7 +6914,7 @@ int func_58(int iParam0, int iParam1)//Position - 0x7978
 	{
 		iParam1 = func_7();
 	}
-	return STATS::_GET_PACKED_STAT_INT(iParam0, iParam1);
+	return STATS::GET_PACKED_STAT_INT_CODE(iParam0, iParam1);
 }
 
 void func_59(int iParam0)//Position - 0x7994
@@ -7464,7 +7464,7 @@ bool func_66(int iParam0, int iParam1)//Position - 0x8183
 	{
 		iParam1 = func_7();
 	}
-	return STATS::_GET_PACKED_STAT_BOOL(iParam0, iParam1);
+	return STATS::GET_PACKED_STAT_BOOL_CODE(iParam0, iParam1);
 }
 
 void func_67(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x819F
@@ -14888,12 +14888,12 @@ int func_120(int iParam0, int iParam1)//Position - 0xF46C
 
 bool func_121()//Position - 0xF4E5
 {
-	return (MISC::IS_ORBIS_VERSION() || MISC::_0x807ABE1AB65C24D2());
+	return (MISC::IS_ORBIS_VERSION() || MISC::IS_PROSPERO_VERSION());
 }
 
 bool func_122()//Position - 0xF4FB
 {
-	return (MISC::IS_DURANGO_VERSION() || MISC::_0xC545AB1CF97ABB34());
+	return (MISC::IS_DURANGO_VERSION() || MISC::IS_SCARLETT_VERSION());
 }
 
 void func_123(var uParam0, var uParam1)//Position - 0xF511

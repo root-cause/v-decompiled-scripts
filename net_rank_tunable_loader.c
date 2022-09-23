@@ -8310,7 +8310,7 @@ void func_3(int iParam0, int iParam1, int* iParam2, bool bParam3)//Position - 0x
 	}
 	else
 	{
-		NETWORK::_NETWORK_REGISTER_TUNABLE_INT_HASH(iVar0, iParam1, iParam2);
+		NETWORK::NETWORK_ACCESS_TUNABLE_INT_MODIFICATION_DETECTION_REGISTRATION_HASH(iVar0, iParam1, iParam2);
 	}
 	if (bParam3)
 	{

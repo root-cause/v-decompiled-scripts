@@ -1,6 +1,6 @@
 # v-decompiled-scripts
 
-Decompiled scripts from GTAV build 2699.
+Decompiled scripts from GTAV build 2699, for educational purposes only.
 
 ## Credits
 

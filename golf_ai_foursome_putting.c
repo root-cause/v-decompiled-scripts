@@ -2509,7 +2509,7 @@ void func_83(var uParam0, var uParam1, var uParam2)//Position - 0x330B
 	}
 	if (func_92(uParam2))
 	{
-		PAD::SET_PAD_SHAKE(0, 50, func_90(0, func_91(256, (MISC::ABSI(SYSTEM::ROUND(uParam2->f_1.f_6)) + MISC::ABSI(SYSTEM::ROUND(uParam2->f_1.f_5))) + 30)));
+		PAD::SET_CONTROL_SHAKE(0, 50, func_90(0, func_91(256, (MISC::ABSI(SYSTEM::ROUND(uParam2->f_1.f_6)) + MISC::ABSI(SYSTEM::ROUND(uParam2->f_1.f_5))) + 30)));
 	}
 	if (!func_140(uParam2, 2))
 	{
@@ -2562,7 +2562,7 @@ void func_83(var uParam0, var uParam1, var uParam2)//Position - 0x330B
 				func_24(uParam2, 6);
 				if (func_92(uParam2))
 				{
-					PAD::SET_PAD_SHAKE(0, 10, 10);
+					PAD::SET_CONTROL_SHAKE(0, 10, 10);
 				}
 			}
 			func_47(uParam2, 4);
@@ -3206,7 +3206,7 @@ int func_108(var uParam0, var uParam1, var uParam2)//Position - 0x4092
 	{
 		if (!func_158(uParam1, uParam2))
 		{
-			PAD::SET_PAD_SHAKE(0, 100, 256);
+			PAD::SET_CONTROL_SHAKE(0, 100, 256);
 		}
 	}
 	return 1;
@@ -5368,15 +5368,15 @@ Vector3 func_190(var uParam0, var uParam1)//Position - 0x6D8C
 	}
 	if (func_140(uParam0, 1048576) || func_60(uParam0) == 4)
 	{
-		Var0 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(func_245(uParam0), (func_98(uParam0) + fVar1), (((-func_126(uParam1, func_122(uParam0)) * func_191(func_118(uParam0))) * func_125(func_32(&(uParam0->f_15[func_261(uParam0) /*34*/])))) * ((func_149(uParam0, 1) * fVar2) / 100f)), 0f, 0f) };
+		Var0 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(func_245(uParam0), (func_98(uParam0) + fVar1), (((-func_126(uParam1, func_122(uParam0)) * func_191(func_118(uParam0))) * func_125(func_32(&(uParam0->f_15[func_261(uParam0) /*34*/])))) * ((func_149(uParam0, 1) * fVar2) / 100f)), 0f, 0f) };
 	}
 	else if (func_31(uParam0) != 3)
 	{
-		Var0 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(func_245(uParam0), func_98(uParam0), (((-func_126(uParam1, func_122(uParam0)) * func_191(func_118(uParam0))) * func_125(func_32(&(uParam0->f_15[func_261(uParam0) /*34*/])))) * (func_149(uParam0, 1) / 100f)), 0f, 0f) };
+		Var0 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(func_245(uParam0), func_98(uParam0), (((-func_126(uParam1, func_122(uParam0)) * func_191(func_118(uParam0))) * func_125(func_32(&(uParam0->f_15[func_261(uParam0) /*34*/])))) * (func_149(uParam0, 1) / 100f)), 0f, 0f) };
 	}
 	else
 	{
-		Var0 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(func_245(uParam0), func_98(uParam0), Vector(-uParam0->f_1.f_1, -uParam0->f_1.f_1, -uParam0->f_1.f_1) * Vector(0f, 0f, (func_149(uParam0, 1) / 100f))) };
+		Var0 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(func_245(uParam0), func_98(uParam0), Vector(-uParam0->f_1.f_1, -uParam0->f_1.f_1, -uParam0->f_1.f_1) * Vector(0f, 0f, (func_149(uParam0, 1) / 100f))) };
 	}
 	if (MISC::GET_GROUND_Z_FOR_3D_COORD(Var0, &uVar3, false, false))
 	{
@@ -5627,7 +5627,7 @@ void func_199(var uParam0, var uParam1, float fParam2, bool bParam3, var uParam4
 	iVar0 = func_104(uParam1, func_105(uParam0));
 	func_46(uParam0, 134217728);
 	func_226(uParam0, fParam2);
-	Var1 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(func_171(uParam0), func_99(uParam0), func_225(iVar0)) };
+	Var1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(func_171(uParam0), func_99(uParam0), func_225(iVar0)) };
 	Var2 = { ENTITY::GET_ENTITY_COORDS(func_172(uParam0), true) };
 	if (bParam3)
 	{
@@ -5900,7 +5900,7 @@ void func_208(var uParam0, var uParam1)//Position - 0x7904
 	if (!func_3(uParam0, 32768))
 	{
 		PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(func_172(uParam0), true, false);
-		PED::_0xED3C76ADFA6D07C4(func_172(uParam0));
+		PED::FORCE_INSTANT_LEG_IK_SETUP(func_172(uParam0));
 		func_48(uParam0, 32768);
 	}
 }
@@ -6234,7 +6234,7 @@ void func_213(int iParam0)//Position - 0x80B3
 	int iVar0;
 	
 	iVar0 = Global_2667225.f_2691;
-	if ((AUDIO::_AUDIO_IS_SCRIPTED_MUSIC_PLAYING_2() && Global_2667225.f_2689 == 0) && iParam0 == 0)
+	if ((AUDIO::AUDIO_IS_SCRIPTED_MUSIC_PLAYING() && Global_2667225.f_2689 == 0) && iParam0 == 0)
 	{
 		iVar0 = 255;
 	}
@@ -6718,8 +6718,8 @@ int func_243(struct<3> Param0, float fParam1)//Position - 0x8877
 		return 0;
 	}
 	iVar0 = OBJECT::CREATE_OBJECT(joaat("prop_golf_ball"), Param0, true, true, false);
-	OBJECT::_0xC6033D32241F6FB5(iVar0, true);
-	ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(iVar0, false);
+	OBJECT::SET_OBJECT_IS_SPECIAL_GOLFBALL(iVar0, true);
+	ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iVar0, false);
 	ENTITY::SET_ENTITY_HEADING(iVar0, fParam1);
 	if (bLocal_0)
 	{
@@ -7696,7 +7696,7 @@ void func_285(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			{
 				func_286(uParam1, VEHICLE::CREATE_VEHICLE(joaat("caddy"), Var0, fVar1, true, true, false), iVar2);
 				VEHICLE::SET_VEHICLE_EXTRA(func_36(uParam1, iVar2), 5, true);
-				ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(func_36(uParam1, iVar2), true);
+				ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(func_36(uParam1, iVar2), true);
 			}
 		}
 		iVar2++;
@@ -7733,7 +7733,7 @@ void func_287(var uParam0, var uParam1, int iParam2)//Position - 0x9D90
 		{
 			PED::SET_PED_WEAPON_MOVEMENT_CLIPSET(func_184(uParam1, iParam2), "move_m@golfer@");
 		}
-		PED::_0x2F3C3D9F50681DE4(func_184(uParam1, iParam2), true);
+		PED::SET_TREAT_AS_AMBIENT_PED_FOR_DRIVER_LOCKON(func_184(uParam1, iParam2), true);
 	}
 }
 

@@ -327,7 +327,7 @@ void func_6(var uParam0, struct<3> Param1)//Position - 0x30E
 		Var3.f_1 = PLAYER::PLAYER_ID();
 		Var3.f_2 = { *uParam0 };
 		Var3.f_7 = { Param1 };
-		SCRIPT::_TRIGGER_SCRIPT_EVENT_2(1, &Var3, 10, iVar2);
+		SCRIPT::SEND_TU_SCRIPT_EVENT(1, &Var3, 10, iVar2);
 	}
 }
 
@@ -593,7 +593,7 @@ int func_21(int iParam0)//Position - 0x71F
 				{
 					if (!ENTITY::DOES_ENTITY_EXIST(Local_114.f_2[iParam0 /*27*/].f_10[iVar0 /*5*/].f_4))
 					{
-						Var1 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Local_114.f_2[iParam0 /*27*/].f_2, Local_114.f_2[iParam0 /*27*/].f_5, (0.6f - (IntToFloat(iVar0) * 0.4f)), 0f, 0.1f) };
+						Var1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Local_114.f_2[iParam0 /*27*/].f_2, Local_114.f_2[iParam0 /*27*/].f_5, (0.6f - (IntToFloat(iVar0) * 0.4f)), 0f, 0.1f) };
 						Local_114.f_2[iParam0 /*27*/].f_10[iVar0 /*5*/] = { func_23(joaat("PICKUP_GANG_ATTACK_MONEY"), Var1, iVar2, Local_114.f_2[iParam0 /*27*/].f_9, 0, 1, 1) };
 					}
 					iVar0++;
@@ -610,7 +610,7 @@ int func_21(int iParam0)//Position - 0x71F
 				{
 					if (!ENTITY::DOES_ENTITY_EXIST(Local_114.f_2[iParam0 /*27*/].f_10[iVar0 /*5*/].f_4))
 					{
-						Var1 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Local_114.f_2[iParam0 /*27*/].f_2, Local_114.f_2[iParam0 /*27*/].f_5, 0f, (0.25f - (IntToFloat(iVar0) * 0.25f)), 0.1f) };
+						Var1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Local_114.f_2[iParam0 /*27*/].f_2, Local_114.f_2[iParam0 /*27*/].f_5, 0f, (0.25f - (IntToFloat(iVar0) * 0.25f)), 0.1f) };
 						Local_114.f_2[iParam0 /*27*/].f_10[iVar0 /*5*/] = { func_23(Local_114.f_2[iParam0 /*27*/].f_8, Var1, iVar2, -1, 0, 1, 1) };
 					}
 					iVar0++;
@@ -630,7 +630,7 @@ int func_21(int iParam0)//Position - 0x71F
 				{
 					if (!ENTITY::DOES_ENTITY_EXIST(Local_114.f_2[iParam0 /*27*/].f_10[iVar0 /*5*/].f_4))
 					{
-						Var1 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Local_114.f_2[iParam0 /*27*/].f_2, Local_114.f_2[iParam0 /*27*/].f_5, 0f, (0.25f - (IntToFloat(iVar0) * 0.25f)), 0.2f) };
+						Var1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Local_114.f_2[iParam0 /*27*/].f_2, Local_114.f_2[iParam0 /*27*/].f_5, 0f, (0.25f - (IntToFloat(iVar0) * 0.25f)), 0.2f) };
 						Local_114.f_2[iParam0 /*27*/].f_10[iVar0 /*5*/] = { func_23(joaat("PICKUP_AMMO_BULLET_MP"), Var1, iVar2, Local_114.f_2[iParam0 /*27*/].f_9, 0, 1, 1) };
 					}
 					iVar0++;
@@ -657,7 +657,7 @@ int func_22(int iParam0, int iParam1)//Position - 0x964
 	{
 		if (!ENTITY::DOES_ENTITY_EXIST(Local_114.f_2[iParam0 /*27*/].f_10[iParam1 /*5*/].f_4))
 		{
-			Var0 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Local_114.f_2[iParam0 /*27*/].f_2, Local_114.f_2[iParam0 /*27*/].f_5, 0f, (0.25f - (IntToFloat(iParam1) * 0.25f)), 0.1f) };
+			Var0 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Local_114.f_2[iParam0 /*27*/].f_2, Local_114.f_2[iParam0 /*27*/].f_5, 0f, (0.25f - (IntToFloat(iParam1) * 0.25f)), 0.1f) };
 			Local_114.f_2[iParam0 /*27*/].f_10[iParam1 /*5*/] = { func_23(joaat("PICKUP_GANG_ATTACK_MONEY"), Var0, iVar1, Global_262145.f_4455, 0, 1, 1) };
 		}
 		return 1;
@@ -703,12 +703,12 @@ struct<5> func_24(int iParam0, struct<3> Param1, int iParam2, int iParam3, int i
 		return Var0;
 	}
 	MISC::SET_BIT(&iParam2, 5);
-	Var2.f_4 = OBJECT::_CREATE_NON_NETWORKED_AMBIENT_PICKUP(iParam0, Param1, iParam2, iParam3, iParam4, bParam5, false);
+	Var2.f_4 = OBJECT::CREATE_NON_NETWORKED_AMBIENT_PICKUP(iParam0, Param1, iParam2, iParam3, iParam4, bParam5, false);
 	iVar3 = PLAYER::NETWORK_PLAYER_ID_TO_INT();
 	if (bParam5)
 	{
 		Global_1911933[iVar3 /*260*/].f_94.f_21[iVar1 /*14*/].f_12 = SCRIPT::GET_HASH_OF_THIS_SCRIPT_NAME();
-		Global_1911933[iVar3 /*260*/].f_94.f_21[iVar1 /*14*/].f_13 = NETWORK::_NETWORK_GET_POSITION_HASH_OF_THIS_SCRIPT();
+		Global_1911933[iVar3 /*260*/].f_94.f_21[iVar1 /*14*/].f_13 = NETWORK::NETWORK_GET_POSITION_HASH_OF_THIS_SCRIPT();
 		if (Global_1911933[iVar3 /*260*/].f_94.f_21[iVar1 /*14*/].f_13 == 0)
 		{
 			Global_1911933[iVar3 /*260*/].f_94.f_21[iVar1 /*14*/].f_13 = NETWORK::NETWORK_GET_INSTANCE_ID_OF_THIS_SCRIPT();
@@ -867,7 +867,7 @@ int func_32()//Position - 0xCE9
 	}
 	if (func_33() != 0)
 	{
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(func_33()) == 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(func_33()) == 0)
 		{
 			return 1;
 		}

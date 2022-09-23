@@ -704,7 +704,7 @@ void func_33(int iParam0, int iParam1)//Position - 0xB63
 	iVar1 = func_34(1);
 	if (!iVar1 == 0)
 	{
-		SCRIPT::_TRIGGER_SCRIPT_EVENT_2(1, &Var0, 4, iVar1);
+		SCRIPT::SEND_TU_SCRIPT_EVENT(1, &Var0, 4, iVar1);
 	}
 }
 
@@ -4429,7 +4429,7 @@ void func_121(var uParam0)//Position - 0x49B1
 	PED::SET_PED_CONFIG_FLAG(*uParam0, 108, true);
 	PED::SET_PED_CONFIG_FLAG(*uParam0, 106, true);
 	PED::SET_PED_CAN_EVASIVE_DIVE(*uParam0, false);
-	PED::_0x2F3C3D9F50681DE4(*uParam0, true);
+	PED::SET_TREAT_AS_AMBIENT_PED_FOR_DRIVER_LOCKON(*uParam0, true);
 	PED::SET_PED_CAN_RAGDOLL_FROM_PLAYER_IMPACT(*uParam0, false);
 	PED::SET_PED_CAN_RAGDOLL(*uParam0, false);
 	PED::SET_PED_CONFIG_FLAG(*uParam0, 208, true);
@@ -4961,7 +4961,7 @@ int func_145()//Position - 0x525B
 	{
 		iVar0 = 1;
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(MISC::GET_HASH_KEY("AM_MP_ARCADE")) < 1)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(MISC::GET_HASH_KEY("AM_MP_ARCADE")) < 1)
 	{
 		iVar0 = 1;
 	}
@@ -5278,7 +5278,7 @@ int func_149()//Position - 0x57CD
 	}
 	if (func_150() != 0)
 	{
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(func_150()) == 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(func_150()) == 0)
 		{
 			return 1;
 		}
@@ -6282,7 +6282,7 @@ void func_183()//Position - 0x6C1E
 
 void func_184()//Position - 0x6C65
 {
-	while (!NETWORK::_NETWORK_IS_THIS_SCRIPT_MARKED(32, false, Global_1579074))
+	while (!NETWORK::NETWORK_TRY_TO_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(32, false, Global_1579074))
 	{
 		SYSTEM::WAIT(0);
 	}

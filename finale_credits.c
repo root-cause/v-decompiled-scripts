@@ -171,7 +171,7 @@ void __EntryFunction__()//Position - 0x0
 		switch (iLocal_28)
 		{
 			case 0:
-				GRAPHICS::_0x0218BA067D249DEA();
+				GRAPHICS::PROCGRASS_DISABLE_AMBSCALESCAN();
 				CAM::DESTROY_ALL_CAMS(false);
 				if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
 				{
@@ -233,7 +233,7 @@ void __EntryFunction__()//Position - 0x0
 				if (!Global_96884)
 				{
 					MISC::SET_CREDITS_ACTIVE(true);
-					MISC::_0xB51B9AB9EF81868C(false);
+					MISC::SET_CREDITS_FADE_OUT_WITH_SCREEN(false);
 				}
 				STREAMING::SET_GAME_PAUSES_FOR_STREAMING(false);
 				HUD::DISPLAY_RADAR(false);
@@ -242,7 +242,7 @@ void __EntryFunction__()//Position - 0x0
 			
 			case 1:
 				HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
-				MISC::_0x23227DF0B2115469();
+				MISC::DISABLE_SCREEN_DIMMING_THIS_FRAME();
 				switch (iLocal_29)
 				{
 					case 0:
@@ -500,7 +500,7 @@ void __EntryFunction__()//Position - 0x0
 				if ((SYSTEM::TIMERA() > 40000 && iLocal_126) || func_1())
 				{
 					AUDIO::START_AUDIO_SCENE("CAR_MOD_RADIO_MUTE_SCENE");
-					MISC::_0xB51B9AB9EF81868C(true);
+					MISC::SET_CREDITS_FADE_OUT_WITH_SCREEN(true);
 					if (!CAM::IS_SCREEN_FADED_OUT())
 					{
 						CAM::DO_SCREEN_FADE_OUT(5000);
@@ -517,7 +517,7 @@ void __EntryFunction__()//Position - 0x0
 					AUDIO::PLAY_END_CREDITS_MUSIC(false);
 					AUDIO::STOP_AUDIO_SCENE("CAR_MOD_RADIO_MUTE_SCENE");
 					STREAMING::SET_GAME_PAUSES_FOR_STREAMING(true);
-					GRAPHICS::_0x14FC5833464340A8();
+					GRAPHICS::PROCGRASS_ENABLE_AMBSCALESCAN();
 					MISC::SET_TIME_SCALE(1f);
 					PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0);
 					func_38();
@@ -1958,7 +1958,7 @@ void func_35()//Position - 0x3FFB
 
 void func_36()//Position - 0x4012
 {
-	RECORDING::_STOP_RECORDING_THIS_FRAME();
+	RECORDING::REPLAY_PREVENT_RECORDING_THIS_FRAME();
 	func_37();
 }
 
@@ -2027,7 +2027,7 @@ void func_38()//Position - 0x4030
 	MISC::SET_CREDITS_ACTIVE(false);
 	func_45(0, 0, 2000, 1);
 	PLAYER::SET_MAX_WANTED_LEVEL(5);
-	MISC::_0xB51B9AB9EF81868C(false);
+	MISC::SET_CREDITS_FADE_OUT_WITH_SCREEN(false);
 	MISC::SET_TIME_SCALE(1f);
 	Global_96884 = 0;
 	func_44(1, 0);
@@ -2130,7 +2130,7 @@ int func_42(int iParam0)//Position - 0x43AB
 
 int func_43(bool bParam0)//Position - 0x43E9
 {
-	if (!bParam0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("benchmark")) > 0)
+	if (!bParam0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("benchmark")) > 0)
 	{
 		return 1;
 	}
@@ -2149,7 +2149,7 @@ void func_44(int iParam0, int iParam1)//Position - 0x4411
 		Global_63175 = 0;
 		return;
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("mission_stat_watcher")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("mission_stat_watcher")) > 0)
 	{
 		if (Global_63148)
 		{
@@ -2313,7 +2313,7 @@ int func_52(int iParam0)//Position - 0x4667
 			return 0;
 		}
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("cellphone_flashhand")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) > 0)
 	{
 		return 1;
 	}
@@ -2478,9 +2478,9 @@ int func_61(bool bParam0, bool bParam1, var uParam2, bool bParam3)//Position - 0
 	iVar0 = 0;
 	if (MISC::IS_PC_VERSION())
 	{
-		if (CUTSCENE::_0xA0FE76168A189DDB() != bParam0 && uParam2)
+		if (CUTSCENE::IS_MULTIHEAD_FADE_UP() != bParam0 && uParam2)
 		{
-			CUTSCENE::_0x20746F7B1032A3C7(bParam0, bParam1, true, bParam3);
+			CUTSCENE::SET_CUTSCENE_MULTIHEAD_FADE(bParam0, bParam1, true, bParam3);
 			iVar0 = 1;
 		}
 	}

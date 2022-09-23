@@ -52,7 +52,7 @@ void __EntryFunction__()//Position - 0x0
 	fLocal_26 = 0.17f;
 	if (Global_2883694)
 	{
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(-43879923) == 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(-43879923) == 0)
 		{
 			SCRIPT::REQUEST_SCRIPT_WITH_NAME_HASH(-43879923);
 			while (!SCRIPT::HAS_SCRIPT_WITH_NAME_HASH_LOADED(-43879923))
@@ -65,7 +65,7 @@ void __EntryFunction__()//Position - 0x0
 	}
 	else if (Global_2883693)
 	{
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(1179280373) == 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(1179280373) == 0)
 		{
 			SCRIPT::REQUEST_SCRIPT_WITH_NAME_HASH(1179280373);
 			while (!SCRIPT::HAS_SCRIPT_WITH_NAME_HASH_LOADED(1179280373))
@@ -119,14 +119,14 @@ void __EntryFunction__()//Position - 0x0
 				case 52:
 					if (ScriptParam_30.f_2 == 52)
 					{
-						HUD::_0x0CF54F20DE43879C(ScriptParam_30.f_3);
+						HUD::SET_SAVEGAME_LIST_UNIQUE_ID(ScriptParam_30.f_3);
 					}
 					break;
 				
 				case 154:
 					if (ScriptParam_30.f_2 == 154)
 					{
-						HUD::_0x0CF54F20DE43879C(ScriptParam_30.f_3);
+						HUD::SET_SAVEGAME_LIST_UNIQUE_ID(ScriptParam_30.f_3);
 					}
 					break;
 				
@@ -196,7 +196,7 @@ void __EntryFunction__()//Position - 0x0
 						func_27(-1);
 						HUD::SET_FRONTEND_ACTIVE(false);
 						CAM::DO_SCREEN_FADE_OUT(0);
-						REPLAY::_RESET_EDITOR_VALUES();
+						REPLAY::REPLAY_CONTROL_SHUTDOWN();
 						if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 						{
 							if (VEHICLE::IS_VEHICLE_DRIVEABLE(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false), false))
@@ -328,23 +328,23 @@ int func_8()//Position - 0x476
 	}
 	if (Global_2883694)
 	{
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(-1516147206) > 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(-1516147206) > 0)
 		{
 			return 0;
 		}
 	}
 	else if (Global_2883693)
 	{
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(2006115718) > 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(2006115718) > 0)
 		{
 			return 0;
 		}
 	}
-	else if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("mission_stat_watcher")) > 0)
+	else if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("mission_stat_watcher")) > 0)
 	{
 		return 0;
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("creator")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("creator")) > 0)
 	{
 		return 1;
 	}
@@ -403,7 +403,7 @@ int func_8()//Position - 0x476
 
 int func_9()//Position - 0x5D8
 {
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("player_timetable_scene")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("player_timetable_scene")) > 0)
 	{
 		return 1;
 	}
@@ -791,7 +791,7 @@ bool func_23(var uParam0, int iParam1)//Position - 0xC4C
 
 int func_24(bool bParam0)//Position - 0xC5B
 {
-	if (!bParam0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("benchmark")) > 0)
+	if (!bParam0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("benchmark")) > 0)
 	{
 		return 1;
 	}

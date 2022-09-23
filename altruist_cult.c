@@ -896,7 +896,7 @@ int func_9(int iParam0)//Position - 0x78B
 			return 0;
 		}
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("cellphone_flashhand")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) > 0)
 	{
 		return 1;
 	}
@@ -931,7 +931,7 @@ void func_12(int iParam0, int iParam1)//Position - 0x823
 		GRAPHICS::ANIMPOSTFX_PLAY("DeathFailOut", 0, false);
 		MISC::SET_BIT(&iLocal_48, 1);
 		func_13(1, 2, 0);
-		CAM::_SET_CAM_EFFECT(2);
+		CAM::SET_CAM_DEATH_FAIL_EFFECT_STATE(2);
 	}
 	else
 	{
@@ -939,7 +939,7 @@ void func_12(int iParam0, int iParam1)//Position - 0x823
 		{
 			GRAPHICS::ANIMPOSTFX_STOP("DeathFailOut");
 			func_13(0, 2, 1);
-			CAM::_SET_CAM_EFFECT(0);
+			CAM::SET_CAM_DEATH_FAIL_EFFECT_STATE(0);
 		}
 		MISC::CLEAR_BIT(&iLocal_48, 1);
 	}
@@ -1000,7 +1000,7 @@ void func_14(int iParam0, int iParam1)//Position - 0x8DD
 			GRAPHICS::ANIMPOSTFX_PLAY(sVar0, 0, false);
 			MISC::SET_BIT(&iLocal_48, 0);
 			func_13(1, 1, 0);
-			CAM::_SET_CAM_EFFECT(1);
+			CAM::SET_CAM_DEATH_FAIL_EFFECT_STATE(1);
 		}
 	}
 	else
@@ -1009,7 +1009,7 @@ void func_14(int iParam0, int iParam1)//Position - 0x8DD
 		{
 			GRAPHICS::ANIMPOSTFX_STOP(sVar0);
 			func_13(0, 1, 1);
-			CAM::_SET_CAM_EFFECT(0);
+			CAM::SET_CAM_DEATH_FAIL_EFFECT_STATE(0);
 		}
 		MISC::CLEAR_BIT(&iLocal_48, 0);
 	}
@@ -1254,9 +1254,9 @@ int func_30(bool bParam0, bool bParam1, var uParam2, bool bParam3)//Position - 0
 	iVar0 = 0;
 	if (MISC::IS_PC_VERSION())
 	{
-		if (CUTSCENE::_0xA0FE76168A189DDB() != bParam0 && uParam2)
+		if (CUTSCENE::IS_MULTIHEAD_FADE_UP() != bParam0 && uParam2)
 		{
-			CUTSCENE::_0x20746F7B1032A3C7(bParam0, bParam1, true, bParam3);
+			CUTSCENE::SET_CUTSCENE_MULTIHEAD_FADE(bParam0, bParam1, true, bParam3);
 			iVar0 = 1;
 		}
 	}
@@ -1361,7 +1361,7 @@ int func_33(var uParam0, var uParam1, char* sParam2, char* sParam3, var uParam4,
 			if (!CAM::IS_SCREEN_FADED_OUT() || CAM::IS_SCREEN_FADING_OUT())
 			{
 				CAM::DO_SCREEN_FADE_OUT(2500);
-				RECORDING::_STOP_RECORDING_THIS_FRAME();
+				RECORDING::REPLAY_PREVENT_RECORDING_THIS_FRAME();
 			}
 			if (bParam9)
 			{
@@ -1460,7 +1460,7 @@ int func_33(var uParam0, var uParam1, char* sParam2, char* sParam3, var uParam4,
 			if (!func_53(iParam5, 16) && (func_44(&(uParam1->f_1)) >= uParam1->f_135 || CAM::IS_SCREEN_FADED_OUT()))
 			{
 				func_38(&(uParam1->f_10), 1128792064, iParam6, bParam7, 1, 1065353216);
-				HUD::_SET_MOUSE_CURSOR_ACTIVE_THIS_FRAME();
+				HUD::SET_MOUSE_CURSOR_THIS_FRAME();
 				if (PAD::IS_CONTROL_JUST_RELEASED(2, 201))
 				{
 					uParam1->f_138 = 1;
@@ -1610,7 +1610,7 @@ void func_38(var uParam0, float fParam1, int iParam2, bool bParam3, bool bParam4
 	}
 	HUD::HIDE_LOADING_ON_FADE_THIS_FRAME();
 	GRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(iParam2);
-	if (!func_53(uParam0->f_1, 256) || (func_53(uParam0->f_1, 8192) && PAD::_0x6CD79468A1E595C6(2)))
+	if (!func_53(uParam0->f_1, 256) || (func_53(uParam0->f_1, 8192) && PAD::HAVE_CONTROLS_CHANGED(2)))
 	{
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*uParam0, "SET_CLEAR_SPACE");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fParam1);
@@ -1637,11 +1637,11 @@ void func_38(var uParam0, float fParam1, int iParam2, bool bParam3, bool bParam4
 					break;
 				
 				case 1:
-					bVar4 = PAD::_IS_USING_KEYBOARD(2);
+					bVar4 = PAD::IS_USING_KEYBOARD_AND_MOUSE(2);
 					break;
 				
 				case 2:
-					bVar4 = !PAD::_IS_USING_KEYBOARD(2);
+					bVar4 = !PAD::IS_USING_KEYBOARD_AND_MOUSE(2);
 					break;
 				
 				default:
@@ -1662,11 +1662,11 @@ void func_38(var uParam0, float fParam1, int iParam2, bool bParam3, bool bParam4
 						bVar2 = BitTest(uParam0->f_2[iVar6 /*15*/].f_13, bVar7);
 						if (!BitTest(uParam0->f_2[iVar6 /*15*/].f_12, bVar7))
 						{
-							sVar3 = PAD::GET_CONTROL_INSTRUCTIONAL_BUTTON(iVar0, iVar1, bVar2);
+							sVar3 = PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(iVar0, iVar1, bVar2);
 						}
 						else
 						{
-							sVar3 = PAD::GET_CONTROL_GROUP_INSTRUCTIONAL_BUTTON(iVar0, iVar1, bVar2);
+							sVar3 = PAD::GET_CONTROL_GROUP_INSTRUCTIONAL_BUTTONS_STRING(iVar0, iVar1, bVar2);
 						}
 						if (!MISC::IS_STRING_NULL_OR_EMPTY(sVar3))
 						{
@@ -1938,7 +1938,7 @@ int func_57()//Position - 0x19EE
 	PAD::DISABLE_CONTROL_ACTION(0, 60, true);
 	PAD::DISABLE_CONTROL_ACTION(0, 37, true);
 	PAD::DISABLE_CONTROL_ACTION(0, 25, true);
-	PED::_0x5A7F62FDA59759BD();
+	PED::SUPPRESS_AMBIENT_PED_AGGRESSIVE_CLEANUP_THIS_FRAME();
 	if (IntToFloat(SYSTEM::TIMERA()) > (1500f * 0.2f))
 	{
 		if (!BitTest(iLocal_48, 1))
@@ -4290,7 +4290,7 @@ void func_128(int iParam0)//Position - 0x48A2
 		return;
 	}
 	func_65(iParam0);
-	MISC::_0x65D2EBB47E1CEC21(false);
+	MISC::SET_SCRIPT_HIGH_PRIO(false);
 	MISC::SET_RANDOM_EVENT_FLAG(true);
 	Global_113372 = 0;
 	func_129();
@@ -6620,7 +6620,7 @@ void func_169(int iParam0, bool bParam1, int iParam2)//Position - 0x7530
 	{
 		iParam2 = func_27();
 	}
-	STATS::_SET_PACKED_STAT_BOOL(iParam0, bParam1, iParam2);
+	STATS::SET_PACKED_STAT_BOOL_CODE(iParam0, bParam1, iParam2);
 }
 
 void func_170(int iParam0)//Position - 0x754E
@@ -6753,7 +6753,7 @@ bool func_173(int iParam0, int iParam1)//Position - 0x7751
 	{
 		iParam1 = func_27();
 	}
-	return STATS::_GET_PACKED_STAT_BOOL(iParam0, iParam1);
+	return STATS::GET_PACKED_STAT_BOOL_CODE(iParam0, iParam1);
 }
 
 int func_174(bool bParam0)//Position - 0x776D
@@ -6813,10 +6813,10 @@ int func_175(int iParam0, int iParam1)//Position - 0x7824
 	{
 		return 0;
 	}
-	iVar0 = PLAYER::_GET_ACHIEVEMENT_PROGRESS(iParam0);
+	iVar0 = PLAYER::GET_ACHIEVEMENT_PROGRESS(iParam0);
 	if (iParam1 > iVar0)
 	{
-		return PLAYER::_SET_ACHIEVEMENT_PROGRESS(iParam0, iParam1);
+		return PLAYER::SET_ACHIEVEMENT_PROGRESS(iParam0, iParam1);
 	}
 	return 0;
 }
@@ -7496,7 +7496,7 @@ void func_190()//Position - 0x86D6
 	}
 	else if (!iLocal_83)
 	{
-		if (AUDIO::_AUDIO_IS_SCRIPTED_MUSIC_PLAYING_2())
+		if (AUDIO::AUDIO_IS_SCRIPTED_MUSIC_PLAYING())
 		{
 			AUDIO::TRIGGER_MUSIC_EVENT("AC_END");
 		}

@@ -316,7 +316,7 @@ void func_3()//Position - 0x123
 	if (func_6())
 	{
 		MemCopy(&uLocal_210, {func_5()}, 6);
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(MISC::GET_HASH_KEY(&uLocal_210)) == 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(MISC::GET_HASH_KEY(&uLocal_210)) == 0)
 		{
 			func_4();
 		}
@@ -401,7 +401,7 @@ void func_7()//Position - 0x191
 			break;
 		
 		case 1:
-			if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("emergencycall")) == 0)
+			if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("emergencycall")) == 0)
 			{
 				if (!func_35(130))
 				{
@@ -1007,7 +1007,7 @@ int func_31()//Position - 0xC17
 
 int func_32(bool bParam0)//Position - 0xC6A
 {
-	if (!bParam0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("benchmark")) > 0)
+	if (!bParam0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("benchmark")) > 0)
 	{
 		return 1;
 	}

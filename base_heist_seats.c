@@ -300,7 +300,7 @@ int func_15(int iParam0)//Position - 0x364
 			return 0;
 		}
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("cellphone_flashhand")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) > 0)
 	{
 		return 1;
 	}
@@ -642,7 +642,7 @@ void func_26(var uParam0)//Position - 0xA57
 		}
 		else
 		{
-			PAD::_0x7F4724035FDCA1DD(2);
+			PAD::ALLOW_ALTERNATIVE_SCRIPT_CONTROLS_LAYOUT(2);
 			PAD::DISABLE_CONTROL_ACTION(0, 24, true);
 			PAD::DISABLE_CONTROL_ACTION(0, 257, true);
 			PAD::DISABLE_CONTROL_ACTION(0, 142, true);
@@ -789,7 +789,7 @@ void func_33(var uParam0)//Position - 0xE89
 			HUD::DISPLAY_AMMO_THIS_FRAME(false);
 			HUD::HIDE_HUD_COMPONENT_THIS_FRAME(19);
 			HUD::HIDE_HUD_COMPONENT_THIS_FRAME(2);
-			HUD::_HUD_WEAPON_WHEEL_IGNORE_SELECTION();
+			HUD::HUD_SUPPRESS_WEAPON_WHEEL_RESULTS_THIS_FRAME();
 			func_37();
 			if (WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar0, true) && iVar0 != joaat("WEAPON_UNARMED"))
 			{
@@ -1155,7 +1155,7 @@ void func_51(var uParam0, int iParam1, char* sParam2, int iParam3, char* sParam4
 {
 	int iVar0;
 	
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("context_controller")) < 1)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("context_controller")) < 1)
 	{
 	}
 	if (STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
@@ -1316,7 +1316,7 @@ void func_60(var uParam0)//Position - 0x170F
 	}
 	else if (uParam0->f_421.f_4 > 4)
 	{
-		CAM::_DISABLE_CAM_COLLISION_FOR_ENTITY(PLAYER::PLAYER_PED_ID());
+		CAM::SET_GAMEPLAY_CAM_IGNORE_ENTITY_COLLISION_THIS_UPDATE(PLAYER::PLAYER_PED_ID());
 		PED::SET_PED_CAPSULE(PLAYER::PLAYER_PED_ID(), func_61(uParam0));
 		uParam0->f_421.f_7 = MISC::GET_FRAME_COUNT();
 	}
@@ -1435,7 +1435,7 @@ int func_66()//Position - 0x18A9
 	}
 	if (func_67() != 0)
 	{
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(func_67()) == 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(func_67()) == 0)
 		{
 			return 1;
 		}

@@ -733,7 +733,7 @@ void func_12(char* sParam0, var uParam1)//Position - 0x6DE
 	}
 	while (bVar3)
 	{
-		StringCopy(&cVar2, HUD::_GET_TEXT_SUBSTRING(sParam0, iVar1, iVar1 + 1), 8);
+		StringCopy(&cVar2, HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(sParam0, iVar1, iVar1 + 1), 8);
 		iVar1++;
 		if (MISC::GET_HASH_KEY(&cVar2) == joaat(",") || iVar1 >= iVar0)
 		{
@@ -810,7 +810,7 @@ void func_14(int iParam0, bool bParam1, int iParam2)//Position - 0x843
 	{
 		iParam2 = func_15();
 	}
-	STATS::_SET_PACKED_STAT_BOOL(iParam0, bParam1, iParam2);
+	STATS::SET_PACKED_STAT_BOOL_CODE(iParam0, bParam1, iParam2);
 }
 
 int func_15()//Position - 0x861
@@ -842,7 +842,7 @@ int func_16(char* sParam0)//Position - 0x86D
 				{
 					if (iVar2 < iVar3)
 					{
-						uVar1[iVar2] = func_18(HUD::_GET_TEXT_SUBSTRING(sParam0, iVar2, iVar2 + 1));
+						uVar1[iVar2] = func_18(HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(sParam0, iVar2, iVar2 + 1));
 					}
 					else
 					{
@@ -882,7 +882,7 @@ void func_17(int iParam0, int iParam1, int iParam2)//Position - 0x99B
 	{
 		iParam1 = 255;
 	}
-	STATS::_SET_PACKED_STAT_INT(iParam0, iParam1, iParam2);
+	STATS::SET_PACKED_STAT_INT_CODE(iParam0, iParam1, iParam2);
 }
 
 int func_18(char* sParam0)//Position - 0x9C3
@@ -1221,7 +1221,7 @@ int func_20(int iParam0, int iParam1)//Position - 0xFF3
 	{
 		iParam1 = func_15();
 	}
-	return STATS::_GET_PACKED_STAT_INT(iParam0, iParam1);
+	return STATS::GET_PACKED_STAT_INT_CODE(iParam0, iParam1);
 }
 
 bool func_21(int iParam0, int iParam1)//Position - 0x100F
@@ -1230,7 +1230,7 @@ bool func_21(int iParam0, int iParam1)//Position - 0x100F
 	{
 		iParam1 = func_15();
 	}
-	return STATS::_GET_PACKED_STAT_BOOL(iParam0, iParam1);
+	return STATS::GET_PACKED_STAT_BOOL_CODE(iParam0, iParam1);
 }
 
 void func_22()//Position - 0x102B
@@ -2413,7 +2413,7 @@ int func_47(int iParam0, int iParam1, int iParam2)//Position - 0x256D
 
 int func_48()//Position - 0x25AA
 {
-	if (NETWORK::_NETWORK_GET_ROS_PRIVILEGE_9() == 0)
+	if (NETWORK::NETWORK_HAVE_SCS_PRIVATE_MSG_PRIV() == 0)
 	{
 		return 0;
 	}
@@ -2449,26 +2449,26 @@ int func_48()//Position - 0x25AA
 
 bool func_49()//Position - 0x2611
 {
-	return (MISC::IS_DURANGO_VERSION() || MISC::_0xC545AB1CF97ABB34());
+	return (MISC::IS_DURANGO_VERSION() || MISC::IS_SCARLETT_VERSION());
 }
 
 bool func_50()//Position - 0x2627
 {
-	return (MISC::IS_ORBIS_VERSION() || MISC::_0x807ABE1AB65C24D2());
+	return (MISC::IS_ORBIS_VERSION() || MISC::IS_PROSPERO_VERSION());
 }
 
 int func_51()//Position - 0x263D
 {
 	if (func_50())
 	{
-		if (NETWORK::_NETWORK_HAS_AGE_RESTRICTED_PROFILE() == 0)
+		if (NETWORK::NETWORK_HAS_AGE_RESTRICTIONS() == 0)
 		{
 			return 1;
 		}
 	}
 	else if (func_49())
 	{
-		if (NETWORK::_NETWORK_HAS_AGE_RESTRICTED_PROFILE() == 0)
+		if (NETWORK::NETWORK_HAS_AGE_RESTRICTIONS() == 0)
 		{
 			return 1;
 		}
@@ -2778,7 +2778,7 @@ void func_53(var uParam0, bool bParam1)//Position - 0x2754
 							{
 								if (!uParam0->f_168)
 								{
-									SOCIALCLUB::_SC_INBOX_MESSAGE_GET_BOUNTY_DATA(iVar1, &Var6);
+									SOCIALCLUB::SC_INBOX_GET_BOUNTY_DATA_AT_INDEX(iVar1, &Var6);
 									if (BitTest(Var6.f_16, 2))
 									{
 										if (func_51() && func_48())
@@ -3339,7 +3339,7 @@ int func_79(var uParam0, char* sParam1, char* sParam2, int iParam3)//Position - 
 			break;
 		
 		case 1:
-			if (NETWORK::SET_BALANCE_ADD_MACHINE(sParam1, func_88(0)))
+			if (NETWORK::UGC_GET_GET_BY_CONTENT_ID(sParam1, func_88(0)))
 			{
 				func_89(uParam0, 3);
 			}
@@ -5508,7 +5508,7 @@ void func_164(int iParam0, int iParam1)//Position - 0x5C8E
 	StringCopy(&Global_2726816, "", 64);
 	SOCIALCLUB::SC_INBOX_MESSAGE_GET_DATA_INT(iParam0, "awardAmount", &iVar2);
 	SOCIALCLUB::SC_INBOX_MESSAGE_GET_DATA_STRING(iParam0, "awardType", &uVar3);
-	bVar4 = SOCIALCLUB::_SC_INBOX_MESSAGE_GET_DATA_BOOL(iParam0, "fullRefresh");
+	bVar4 = SOCIALCLUB::SC_INBOX_MESSAGE_GET_DATA_BOOL(iParam0, "fullRefresh");
 	SOCIALCLUB::SC_INBOX_MESSAGE_GET_DATA_STRING(iParam0, "awardLabel", &Global_2726816);
 	SOCIALCLUB::SC_INBOX_MESSAGE_GET_DATA_STRING(iParam0, "items", &uVar5);
 	SOCIALCLUB::SC_INBOX_MESSAGE_GET_DATA_INT(iParam0, "userScreen", &iVar6);
@@ -5546,10 +5546,10 @@ void func_164(int iParam0, int iParam1)//Position - 0x5C8E
 		{
 			if (bVar4 == 1)
 			{
-				NETSHOPPING::_NET_GAMESERVER_GET_TRANSACTION_MANAGER_DATA(&iVar7, &uVar8);
+				NETSHOPPING::NET_GAMESERVER_GET_SESSION_STATE_AND_STATUS(&iVar7, &uVar8);
 				if (iVar7 == 8)
 				{
-					NETSHOPPING::_NET_GAMESERVER_UPDATE_BALANCE(bVar0, bVar1);
+					NETSHOPPING::NET_GAMESERVER_START_SESSION_RESTART(bVar0, bVar1);
 				}
 			}
 		}
@@ -6328,27 +6328,27 @@ void func_179(int iParam0, var uParam1, bool bParam2)//Position - 0x6BBE
 				{
 					if (Var1.f_2)
 					{
-						StringCopy(&Var4, HUD::_GET_LABEL_TEXT("HIGHER_RANK"), 32);
+						StringCopy(&Var4, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HIGHER_RANK"), 32);
 					}
 					else
 					{
-						StringCopy(&Var4, HUD::_GET_LABEL_TEXT("LOWER_RANK"), 32);
+						StringCopy(&Var4, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("LOWER_RANK"), 32);
 					}
 					if (MISC::ARE_STRINGS_EQUAL(&(Var1.f_3), "Rank4"))
 					{
-						StringCopy(&Var4, HUD::_GET_LABEL_TEXT("CREW_RANK4"), 32);
+						StringCopy(&Var4, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREW_RANK4"), 32);
 					}
 					if (MISC::ARE_STRINGS_EQUAL(&(Var1.f_3), "Rank3"))
 					{
-						StringCopy(&Var4, HUD::_GET_LABEL_TEXT("CREW_RANK3"), 32);
+						StringCopy(&Var4, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREW_RANK3"), 32);
 					}
 					if (MISC::ARE_STRINGS_EQUAL(&(Var1.f_3), "Rank2"))
 					{
-						StringCopy(&Var4, HUD::_GET_LABEL_TEXT("CREW_RANK2"), 32);
+						StringCopy(&Var4, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREW_RANK2"), 32);
 					}
 					if (MISC::ARE_STRINGS_EQUAL(&(Var1.f_3), "Rank1"))
 					{
-						StringCopy(&Var4, HUD::_GET_LABEL_TEXT("CREW_RANK1"), 32);
+						StringCopy(&Var4, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREW_RANK1"), 32);
 					}
 					if (Var1.f_2)
 					{
@@ -7799,7 +7799,7 @@ void func_201(int iParam0)//Position - 0x7AB8
 				{
 					if ((!func_454(0) && !func_454(3)) && !func_454(2))
 					{
-						if (func_260(96, "SOCIAL_CARAPP3", 2, HUD::_GET_LABEL_TEXT(VEHICLE::GET_DISPLAY_NAME_FROM_VEHICLE_MODEL(Global_113386.f_20118.f_130[iParam0 /*41*/])), -99, "NULL", 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0))
+						if (func_260(96, "SOCIAL_CARAPP3", 2, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(VEHICLE::GET_DISPLAY_NAME_FROM_VEHICLE_MODEL(Global_113386.f_20118.f_130[iParam0 /*41*/])), -99, "NULL", 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0))
 						{
 							Var12.f_33 = 0;
 							Var12.f_36 = 1;
@@ -7815,7 +7815,7 @@ void func_201(int iParam0)//Position - 0x7AB8
 					{
 						StringCopy(&Var28, "SOCIAL_FREE", 16);
 					}
-					if (func_260(96, &Var28, 2, HUD::_GET_LABEL_TEXT(VEHICLE::GET_DISPLAY_NAME_FROM_VEHICLE_MODEL(Global_113386.f_20118.f_130[iParam0 /*41*/])), -99, "NULL", 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0))
+					if (func_260(96, &Var28, 2, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(VEHICLE::GET_DISPLAY_NAME_FROM_VEHICLE_MODEL(Global_113386.f_20118.f_130[iParam0 /*41*/])), -99, "NULL", 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0))
 					{
 						Var12.f_33 = 0;
 						Var12.f_36 = 1;
@@ -11367,7 +11367,7 @@ int func_246(var uParam0)//Position - 0xC66A
 	uParam0->f_29 = VEHICLE::GET_NUM_VEHICLE_MODS(iVar0, 16) + 1;
 	uParam0->f_30 = VEHICLE::GET_NUM_VEHICLE_MODS(iVar0, 15) + 1;
 	uParam0->f_31 = func_247(iVar0);
-	uParam0->f_32 = VEHICLE::_0xEEBFC7A7EFDC35B4(iVar0);
+	uParam0->f_32 = VEHICLE::GET_VEHICLE_COLOURS_WHICH_CAN_BE_SET(iVar0);
 	uParam0->f_39 = VEHICLE::GET_VEHICLE_MOD_KIT_TYPE(iVar0);
 	uParam0->f_27 = VEHICLE::GET_NUM_VEHICLE_MODS(iVar0, 23) + 1;
 	bLocal_121 = VEHICLE::GET_VEHICLE_MOD_VARIATION(iVar0, 23);
@@ -11470,7 +11470,7 @@ char* func_249(char* sParam0)//Position - 0xC951
 
 int func_250(bool bParam0)//Position - 0xC963
 {
-	if (!bParam0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("benchmark")) > 0)
+	if (!bParam0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("benchmark")) > 0)
 	{
 		return 1;
 	}
@@ -11935,11 +11935,11 @@ int func_262(int iParam0, char* sParam1, int iParam2, int iParam3, char* sParam4
 		{
 			return 0;
 		}
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("apptextmessage")) > 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("apptextmessage")) > 0)
 		{
 			return 0;
 		}
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("apptextmessage")) > 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("apptextmessage")) > 0)
 		{
 			return 0;
 		}
@@ -12123,7 +12123,7 @@ void func_263(int iParam0, char* sParam1, bool bParam2, int iParam3)//Position -
 	{
 		return;
 	}
-	STATS::_PLAYSTATS_NPC_PHONE(iParam0, 1654525105, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
+	STATS::PLAYSTATS_NPC_PHONE(iParam0, 1654525105, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
 	if (bParam2)
 	{
 		Global_1973156 = -1;
@@ -13695,11 +13695,11 @@ int func_306(int iParam0, char* sParam1, int iParam2, int iParam3, char* sParam4
 		{
 			return 0;
 		}
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("appemail")) > 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("appemail")) > 0)
 		{
 			return 0;
 		}
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("appmpemail")) > 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("appmpemail")) > 0)
 		{
 			return 0;
 		}
@@ -13856,7 +13856,7 @@ void func_307(int iParam0, char* sParam1, bool bParam2, int iParam3)//Position -
 	{
 		return;
 	}
-	STATS::_PLAYSTATS_NPC_PHONE(iParam0, -1180597171, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
+	STATS::PLAYSTATS_NPC_PHONE(iParam0, -1180597171, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
 	if (bParam2)
 	{
 		Global_1973156 = -1;
@@ -14135,7 +14135,7 @@ char* func_315(char* sParam0, bool bParam1, int iParam2)//Position - 0xF7F0
 	{
 		return sParam0;
 	}
-	return HUD::_GET_LABEL_TEXT(sParam0);
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(sParam0);
 }
 
 int func_316(int iParam0)//Position - 0xF82D
@@ -15108,7 +15108,7 @@ int func_361(int iParam0)//Position - 0x10675
 			return 0;
 		}
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("cellphone_flashhand")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) > 0)
 	{
 		return 1;
 	}
@@ -48087,7 +48087,7 @@ int func_505()//Position - 0x3EA4F
 	{
 		if (NETWORK::NETWORK_HAS_VALID_ROS_CREDENTIALS())
 		{
-			if (NETWORK::_NETWORK_GET_ROS_PRIVILEGE_24())
+			if (NETWORK::NETWORK_HAS_ROS_PRIVILEGE_PLAYED_LAST_GEN())
 			{
 				STATS::STAT_GET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), &iVar0, -1);
 				MISC::SET_BIT(&iVar0, 2);
@@ -48101,7 +48101,7 @@ int func_505()//Position - 0x3EA4F
 				{
 					iVar0 = MISC::GET_PROFILE_SETTING(866);
 					MISC::SET_BIT(&iVar0, 0);
-					STATS::_SET_HAS_CONTENT_UNLOCKS_FLAGS(iVar0);
+					STATS::SET_HAS_SPECIALEDITION_CONTENT(iVar0);
 				}
 				return 1;
 			}
@@ -48175,7 +48175,7 @@ void func_510()//Position - 0x3EB7A
 			break;
 		
 		case 1:
-			if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("tuneables_processing")) == 0)
+			if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("tuneables_processing")) == 0)
 			{
 				func_509(2);
 				iLocal_67 = 0;

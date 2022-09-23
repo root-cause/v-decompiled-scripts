@@ -27,7 +27,7 @@
 
 void __EntryFunction__()//Position - 0x0
 {
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("wp_partyboombox")) > 1)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("wp_partyboombox")) > 1)
 	{
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}

@@ -1051,7 +1051,7 @@ void __EntryFunction__()//Position - 0x0
 	MISC::SET_MISSION_FLAG(true);
 	while (true)
 	{
-		RECORDING::_0x208784099002BC30("M_TheAgencyHeistPrep1", 0);
+		RECORDING::REPLAY_CHECK_FOR_EVENT_THIS_FRAME("M_TheAgencyHeistPrep1", 0);
 		if (!iLocal_974)
 		{
 			if (!ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), Local_971, 200f, 200f, 200f, false, true, 0) && !CAM::IS_SPHERE_VISIBLE(Local_971, 50f))
@@ -1116,7 +1116,7 @@ void __EntryFunction__()//Position - 0x0
 				}
 				if (func_94())
 				{
-					RECORDING::_0x293220DA1B46CEBC(15f, 15f, 4);
+					RECORDING::REPLAY_RECORD_BACK_FOR_TIME(15f, 15f, 4);
 					AUDIO::TRIGGER_MUSIC_EVENT("AHP1_START");
 					iLocal_969++;
 				}
@@ -1158,7 +1158,7 @@ void __EntryFunction__()//Position - 0x0
 								{
 									HUD::REMOVE_BLIP(&iLocal_798);
 								}
-								RECORDING::_0x293220DA1B46CEBC(5f, 15f, 4);
+								RECORDING::REPLAY_RECORD_BACK_FOR_TIME(5f, 15f, 4);
 								iLocal_969++;
 							}
 						}
@@ -1172,14 +1172,14 @@ void __EntryFunction__()//Position - 0x0
 							{
 								HUD::REMOVE_BLIP(&iLocal_798);
 							}
-							RECORDING::_0x293220DA1B46CEBC(5f, 15f, 4);
+							RECORDING::REPLAY_RECORD_BACK_FOR_TIME(5f, 15f, 4);
 							iLocal_969++;
 						}
 					}
 				}
 				if (PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID()) > 0)
 				{
-					RECORDING::_0x293220DA1B46CEBC(5f, 10f, 4);
+					RECORDING::REPLAY_RECORD_BACK_FOR_TIME(5f, 10f, 4);
 					iLocal_969 = 100;
 				}
 				if (!ENTITY::DOES_ENTITY_EXIST(iLocal_800))
@@ -1210,7 +1210,7 @@ void __EntryFunction__()//Position - 0x0
 							iLocal_978 = 1;
 						}
 						AUDIO::TRIGGER_MUSIC_EVENT("AHP1_STOP");
-						RECORDING::_0x293220DA1B46CEBC(10f, 10f, 4);
+						RECORDING::REPLAY_RECORD_BACK_FOR_TIME(10f, 10f, 4);
 						iLocal_969++;
 					}
 				}
@@ -1265,7 +1265,7 @@ void __EntryFunction__()//Position - 0x0
 				{
 					if (SYSTEM::TIMERA() > 3000)
 					{
-						RECORDING::_0x293220DA1B46CEBC(5f, 5f, 4);
+						RECORDING::REPLAY_RECORD_BACK_FOR_TIME(5f, 5f, 4);
 						func_6();
 					}
 				}
@@ -1505,7 +1505,7 @@ int func_9(int iParam0)//Position - 0xA48
 
 int func_10(bool bParam0)//Position - 0xA86
 {
-	if (!bParam0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("benchmark")) > 0)
+	if (!bParam0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("benchmark")) > 0)
 	{
 		return 1;
 	}
@@ -1566,7 +1566,7 @@ int func_12(int iParam0, float fParam1, int iParam2, float fParam3, bool bParam4
 	PAD::DISABLE_CONTROL_ACTION(0, 130, true);
 	PAD::DISABLE_CONTROL_ACTION(0, 133, true);
 	PAD::DISABLE_CONTROL_ACTION(0, 134, true);
-	CAM::_0x17FCA7199A530203();
+	CAM::DISABLE_CINEMATIC_SLOW_MO_THIS_UPDATE();
 	func_13(iParam0);
 	if ((MISC::GET_GAME_TIMER() - Global_29) > 500)
 	{
@@ -1587,11 +1587,11 @@ void func_13(int iParam0)//Position - 0xC5F
 {
 	if (!ENTITY::IS_ENTITY_DEAD(iParam0, false))
 	{
-		if (VEHICLE::_GET_HAS_ROCKET_BOOST(iParam0))
+		if (VEHICLE::GET_HAS_ROCKET_BOOST(iParam0))
 		{
-			if (VEHICLE::_IS_VEHICLE_ROCKET_BOOST_ACTIVE(iParam0))
+			if (VEHICLE::IS_ROCKET_BOOST_ACTIVE(iParam0))
 			{
-				VEHICLE::_SET_VEHICLE_ROCKET_BOOST_ACTIVE(iParam0, false);
+				VEHICLE::SET_ROCKET_BOOST_ACTIVE(iParam0, false);
 			}
 		}
 	}
@@ -2393,9 +2393,9 @@ void func_35(char* sParam0)//Position - 0x1DFD
 		{
 			StringCopy(&Global_78551, sParam0, 16);
 			StringCopy(&Global_78555, "", 16);
-			if (RECORDING::_IS_RECORDING())
+			if (RECORDING::IS_REPLAY_RECORDING())
 			{
-				RECORDING::_STOP_RECORDING_AND_SAVE_CLIP();
+				RECORDING::STOP_REPLAY_RECORDING();
 			}
 		}
 	}
@@ -2437,7 +2437,7 @@ void func_36(int iParam0)//Position - 0x1E3C
 					iLocal_973 = 1;
 				}
 				iLocal_798 = func_37(Local_971, 1);
-				RECORDING::_0x293220DA1B46CEBC(3f, 2f, 3);
+				RECORDING::REPLAY_RECORD_BACK_FOR_TIME(3f, 2f, 3);
 			}
 		}
 		else

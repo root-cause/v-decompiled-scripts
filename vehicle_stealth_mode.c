@@ -114,7 +114,7 @@ void func_1(int* iParam0)//Position - 0xA8
 	}
 	PLAYER::SET_MAX_WANTED_LEVEL(5);
 	func_3();
-	PLAYER::_SET_PLAYER_HOMING_ROCKET_DISABLED(PLAYER::PLAYER_ID(), 0);
+	PLAYER::SET_PLAYER_HOMING_DISABLED_FOR_ALL_VEHICLE_WEAPONS(PLAYER::PLAYER_ID(), 0);
 	func_2();
 }
 
@@ -266,13 +266,13 @@ void func_17(int* iParam0)//Position - 0x33F
 	}
 	if (func_46(iParam0))
 	{
-		PLAYER::_SET_PLAYER_HOMING_ROCKET_DISABLED(PLAYER::PLAYER_ID(), 1);
+		PLAYER::SET_PLAYER_HOMING_DISABLED_FOR_ALL_VEHICLE_WEAPONS(PLAYER::PLAYER_ID(), 1);
 		func_45();
 		func_44(iParam0);
 	}
 	else if (func_43(iParam0))
 	{
-		PLAYER::_SET_PLAYER_HOMING_ROCKET_DISABLED(PLAYER::PLAYER_ID(), 0);
+		PLAYER::SET_PLAYER_HOMING_DISABLED_FOR_ALL_VEHICLE_WEAPONS(PLAYER::PLAYER_ID(), 0);
 		func_16();
 		func_44(iParam0);
 		func_42(iParam0, 5);
@@ -391,7 +391,7 @@ void func_26(int iParam0, int iParam1, int iParam2)//Position - 0x62C
 	{
 		iParam1 = 255;
 	}
-	STATS::_SET_PACKED_STAT_INT(iParam0, iParam1, iParam2);
+	STATS::SET_PACKED_STAT_INT_CODE(iParam0, iParam1, iParam2);
 }
 
 int func_27()//Position - 0x654
@@ -405,7 +405,7 @@ int func_28(int iParam0, int iParam1)//Position - 0x660
 	{
 		iParam1 = func_27();
 	}
-	return STATS::_GET_PACKED_STAT_INT(iParam0, iParam1);
+	return STATS::GET_PACKED_STAT_INT_CODE(iParam0, iParam1);
 }
 
 bool func_29()//Position - 0x67C
@@ -443,7 +443,7 @@ int func_32(int iParam0)//Position - 0x6DF
 			return 0;
 		}
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("cellphone_flashhand")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) > 0)
 	{
 		return 1;
 	}
@@ -664,7 +664,7 @@ void func_48(int* iParam0, bool bParam1, bool bParam2)//Position - 0xADC
 	{
 		case joaat("akula"):
 		case joaat("annihilator2"):
-			VEHICLE::_SET_DEPLOY_HELI_STUB_WINGS(iParam0->f_1, !bParam1, bParam2);
+			VEHICLE::SET_DEPLOY_FOLDING_WINGS(iParam0->f_1, !bParam1, bParam2);
 			break;
 	}
 }
@@ -1255,7 +1255,7 @@ bool func_70(int* iParam0)//Position - 0x1356
 		{
 			case joaat("akula"):
 			case joaat("annihilator2"):
-				bVar0 = !VEHICLE::_ARE_HELI_STUB_WINGS_DEPLOYED(iParam0->f_1);
+				bVar0 = !VEHICLE::ARE_FOLDING_WINGS_DEPLOYED(iParam0->f_1);
 				break;
 		}
 	}
@@ -1399,7 +1399,7 @@ int func_80()//Position - 0x14F2
 	}
 	if (func_81() != 0)
 	{
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(func_81()) == 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(func_81()) == 0)
 		{
 			return 1;
 		}

@@ -555,11 +555,11 @@ void func_1()//Position - 0x29B
 			Local_335[2 /*3*/] = { 0f, -1.5f, 0f };
 			Local_335[3 /*3*/] = { -1f, -1.5f, 0f };
 			Local_335[4 /*3*/] = { -2f, -1.5f, 0f };
-			Local_336[0 /*3*/] = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Local_332, 57.3018f, Local_335[0 /*3*/]) };
-			Local_336[1 /*3*/] = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Local_332, 57.3018f, Local_335[1 /*3*/]) };
-			Local_336[2 /*3*/] = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Local_332, 57.3018f, Local_335[2 /*3*/]) };
-			Local_336[3 /*3*/] = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Local_332, 57.3018f, Local_335[3 /*3*/]) };
-			Local_336[4 /*3*/] = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Local_332, 57.3018f, Local_335[4 /*3*/]) };
+			Local_336[0 /*3*/] = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Local_332, 57.3018f, Local_335[0 /*3*/]) };
+			Local_336[1 /*3*/] = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Local_332, 57.3018f, Local_335[1 /*3*/]) };
+			Local_336[2 /*3*/] = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Local_332, 57.3018f, Local_335[2 /*3*/]) };
+			Local_336[3 /*3*/] = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Local_332, 57.3018f, Local_335[3 /*3*/]) };
+			Local_336[4 /*3*/] = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Local_332, 57.3018f, Local_335[4 /*3*/]) };
 			MISC::CLEAR_AREA_OF_VEHICLES(Local_332, 10f, false, false, false, false, false, false, 0);
 			iLocal_342 = 1;
 			break;
@@ -742,8 +742,8 @@ void func_3()//Position - 0x861
 		case 0:
 			Local_231[0 /*3*/] = { 1f, 0f, 0f };
 			Local_231[1 /*3*/] = { -1f, 0f, 0f };
-			Local_232[0 /*3*/] = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Local_228, 140.0094f, 1f, 0f, 0f) };
-			Local_232[1 /*3*/] = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Local_228, 140.0094f, -1f, 0f, 0f) };
+			Local_232[0 /*3*/] = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Local_228, 140.0094f, 1f, 0f, 0f) };
+			Local_232[1 /*3*/] = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Local_228, 140.0094f, -1f, 0f, 0f) };
 			iLocal_258 = 1;
 			break;
 		
@@ -1910,7 +1910,7 @@ void func_38()//Position - 0x1D98
 							{
 								Var0 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
 								fVar2 = ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID());
-								Var1 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Var0, fVar2, 0f, -150f, 0f) };
+								Var1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var0, fVar2, 0f, -150f, 0f) };
 								fVar3 = ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID());
 								fVar3 = fVar3;
 								if (!func_39(Var1))
@@ -1921,7 +1921,7 @@ void func_38()//Position - 0x1D98
 										fVar3 = ENTITY::GET_ENTITY_HEADING(iLocal_259);
 										ENTITY::SET_ENTITY_ROTATION(iLocal_259, 0f, 0f, fVar2, 2, true);
 										VEHICLE::CONTROL_LANDING_GEAR(iLocal_259, 3);
-										ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(iLocal_259, false);
+										ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iLocal_259, false);
 										iLocal_262 = PED::CREATE_PED_INSIDE_VEHICLE(iLocal_259, 5, joaat("S_M_Y_Marine_01"), -1, true, true);
 										PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_262, true);
 										if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
@@ -2932,7 +2932,7 @@ int func_64()//Position - 0x4080
 	{
 		return 1;
 	}
-	if (!func_27(14) && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("director_mode")) > 0)
+	if (!func_27(14) && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("director_mode")) > 0)
 	{
 		return 1;
 	}

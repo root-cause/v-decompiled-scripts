@@ -310,7 +310,7 @@ int func_9(int iParam0, int iParam1, int iParam2)//Position - 0x541
 	{
 		if (MISC::IS_PC_VERSION())
 		{
-			if (MISC::UPDATE_ONSCREEN_KEYBOARD() == 0 || (NETWORK::_NETWORK_IS_TEXT_CHAT_ACTIVE() && PAD::_IS_USING_KEYBOARD(2)))
+			if (MISC::UPDATE_ONSCREEN_KEYBOARD() == 0 || (NETWORK::NETWORK_TEXT_CHAT_IS_TYPING() && PAD::IS_USING_KEYBOARD_AND_MOUSE(2)))
 			{
 				return 0;
 			}
@@ -437,7 +437,7 @@ void func_13()//Position - 0x7FD
 {
 	if (func_14())
 	{
-		MOBILE::_CELL_CAM_MOVE_FINGER(5);
+		MOBILE::CELL_SET_INPUT(5);
 	}
 }
 
@@ -452,7 +452,7 @@ int func_14()//Position - 0x811
 		return 0;
 	}
 	iVar2 = 0;
-	iVar0 = CAM::_GET_CAM_ACTIVE_VIEW_MODE_CONTEXT();
+	iVar0 = CAM::GET_CAM_ACTIVE_VIEW_MODE_CONTEXT();
 	iVar1 = CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(iVar0);
 	if (iVar1 == 4)
 	{
@@ -1181,7 +1181,7 @@ void func_25()//Position - 0x144A
 			iLocal_24 = 0;
 		}
 	}
-	if (PAD::_IS_USING_KEYBOARD(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 	{
 		if (func_9(2, 181, 0))
 		{
@@ -1240,11 +1240,11 @@ void func_27()//Position - 0x1534
 	{
 		if (Global_20469 == 0)
 		{
-			MOBILE::_CELL_CAM_MOVE_FINGER(2);
+			MOBILE::CELL_SET_INPUT(2);
 		}
 		else
 		{
-			MOBILE::_CELL_CAM_MOVE_FINGER(1);
+			MOBILE::CELL_SET_INPUT(1);
 		}
 	}
 }
@@ -1262,11 +1262,11 @@ void func_29()//Position - 0x1594
 	{
 		if (Global_20469 == 0)
 		{
-			MOBILE::_CELL_CAM_MOVE_FINGER(1);
+			MOBILE::CELL_SET_INPUT(1);
 		}
 		else
 		{
-			MOBILE::_CELL_CAM_MOVE_FINGER(2);
+			MOBILE::CELL_SET_INPUT(2);
 		}
 	}
 }

@@ -53,7 +53,7 @@ void __EntryFunction__()//Position - 0x0
 					case 1:
 						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(iScriptParam_6))
 						{
-							if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("michael2")) > 0)
+							if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("michael2")) > 0)
 							{
 								STREAMING::REQUEST_ANIM_DICT("map_objects");
 								if (STREAMING::HAS_ANIM_DICT_LOADED("map_objects"))
@@ -67,7 +67,7 @@ void __EntryFunction__()//Position - 0x0
 					case 2:
 						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(iScriptParam_6))
 						{
-							if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("michael2")) > 0)
+							if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("michael2")) > 0)
 							{
 								if (Global_96872)
 								{

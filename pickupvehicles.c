@@ -64,7 +64,7 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("docks_setup")) == 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("docks_setup")) == 0)
 		{
 			if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 			{
@@ -96,11 +96,11 @@ void __EntryFunction__()//Position - 0x0
 								{
 									if (func_1(&iLocal_30, 1000))
 									{
-										if (VEHICLE::_IS_HANDLER_FRAME_ABOVE_CONTAINER(iLocal_28, iLocal_29))
+										if (VEHICLE::IS_HANDLER_FRAME_LINED_UP_WITH_CONTAINER(iLocal_28, iLocal_29))
 										{
 											if (PAD::IS_CONTROL_JUST_PRESSED(0, 51))
 											{
-												VEHICLE::_0x6A98C2ECF57FA5D4(iLocal_28, iLocal_29);
+												VEHICLE::ATTACH_CONTAINER_TO_HANDLER_FRAME_WHEN_LINED_UP(iLocal_28, iLocal_29);
 												iLocal_31 = 1;
 												iLocal_32 = 1;
 											}

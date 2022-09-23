@@ -108,7 +108,7 @@ void __EntryFunction__()//Position - 0x0
 	iVar1 = joaat("carwash1");
 	sVar2 = "carwash1";
 	Var3 = { ScriptParam_50.f_1[0 /*3*/] };
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("am_mp_carwash_launch")) > 1)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("am_mp_carwash_launch")) > 1)
 	{
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
@@ -123,7 +123,7 @@ void __EntryFunction__()//Position - 0x0
 	}
 	if (Global_2883694)
 	{
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(131838674) == 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(131838674) == 0)
 		{
 			SCRIPT::REQUEST_SCRIPT_WITH_NAME_HASH(131838674);
 			while (!SCRIPT::HAS_SCRIPT_WITH_NAME_HASH_LOADED(131838674))
@@ -156,7 +156,7 @@ void __EntryFunction__()//Position - 0x0
 	}
 	iVar0 = MISC::GET_GAME_TIMER();
 	iVar1 = MISC::GET_HASH_KEY(sVar2);
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(iVar1) == 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(iVar1) == 0)
 	{
 		SCRIPT::REQUEST_SCRIPT(sVar2);
 		while (!SCRIPT::HAS_SCRIPT_LOADED(sVar2))

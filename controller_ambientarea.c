@@ -158,7 +158,7 @@ void func_1(int iParam0)//Position - 0x14A
 	}
 	if (HUD::GET_LENGTH_OF_LITERAL_STRING(sVar0) != 0)
 	{
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(iVar1) == 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(iVar1) == 0)
 		{
 			SCRIPT::REQUEST_SCRIPT(sVar0);
 			while (!SCRIPT::HAS_SCRIPT_LOADED(sVar0))
@@ -414,7 +414,7 @@ int func_12(int iParam0, struct<3> Param1)//Position - 0x553
 		{
 			if (iParam0 == 1 || iParam0 == 2)
 			{
-				if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("golf")) == 0)
+				if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("golf")) == 0)
 				{
 					return 1;
 				}

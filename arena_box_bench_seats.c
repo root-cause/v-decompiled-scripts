@@ -392,7 +392,7 @@ void func_5(int iParam0, bool bParam1, int iParam2, int iParam3)//Position - 0x2
 					{
 						ENTITY::FREEZE_ENTITY_POSITION(iVar27, false);
 					}
-					ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(iVar27, true);
+					ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iVar27, true);
 				}
 				else if (!bVar21)
 				{
@@ -400,7 +400,7 @@ void func_5(int iParam0, bool bParam1, int iParam2, int iParam3)//Position - 0x2
 				}
 				PED::SET_PED_CAN_BE_TARGETTED(iVar27, true);
 				PLAYER::SET_PLAYER_INVINCIBLE(iParam0, false);
-				PLAYER::_SET_PLAYER_INVINCIBLE_KEEP_RAGDOLL_ENABLED(iParam0, false);
+				PLAYER::SET_PLAYER_INVINCIBLE_BUT_HAS_REACTIONS(iParam0, false);
 				if (PED::HAS_PED_HEAD_BLEND_FINISHED(iVar27) && PED::HAVE_ALL_STREAMING_REQUESTS_COMPLETED(iVar27))
 				{
 					PED::FINALIZE_HEAD_BLEND(iVar27);
@@ -446,7 +446,7 @@ void func_5(int iParam0, bool bParam1, int iParam2, int iParam3)//Position - 0x2
 						}
 						if (!bVar16)
 						{
-							ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(iVar27, true);
+							ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iVar27, true);
 						}
 					}
 					if (func_6(Global_4718592.f_168757))
@@ -589,7 +589,7 @@ void func_10(bool bParam0, int iParam1, int iParam2)//Position - 0x7DF
 		{
 			if (PED::IS_PED_A_PLAYER(iParam1))
 			{
-				if (!NETWORK::_NETWORK_IS_PLAYER_EQUAL_TO_INDEX(PLAYER::PLAYER_ID(), NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam1)))
+				if (!NETWORK::NETWORK_ARE_PLAYERS_IN_SAME_TUTORIAL_SESSION(PLAYER::PLAYER_ID(), NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam1)))
 				{
 					iVar0 = 1;
 				}
@@ -1022,7 +1022,7 @@ void func_36(var uParam0, var uParam1)//Position - 0xECF
 			{
 				if (!BitTest(uParam1->f_1, uParam0->f_281.f_4))
 				{
-					NETWORK::_RESERVE_NETWORK_LOCAL_OBJECTS(NETWORK::GET_NUM_RESERVED_MISSION_OBJECTS(false, 1) + 1);
+					NETWORK::RESERVE_LOCAL_NETWORK_MISSION_OBJECTS(NETWORK::GET_NUM_RESERVED_MISSION_OBJECTS(false, 1) + 1);
 					MISC::SET_BIT(&(uParam1->f_1), uParam0->f_281.f_4);
 				}
 				else if (NETWORK::CAN_REGISTER_MISSION_OBJECTS(1))
@@ -2054,7 +2054,7 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 	}
 	if (uParam0->f_281.f_5 == 7)
 	{
-		if (PAD::_0x6CD79468A1E595C6(2))
+		if (PAD::HAVE_CONTROLS_CHANGED(2))
 		{
 			func_25(uParam0, 1);
 		}
@@ -2105,7 +2105,7 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 				MISC::SET_BIT(&Global_2787913, 8);
 				func_120(&(uParam0->f_281), 15);
 			}
-			PAD::_0x7F4724035FDCA1DD(2);
+			PAD::ALLOW_ALTERNATIVE_SCRIPT_CONTROLS_LAYOUT(2);
 			PAD::DISABLE_CONTROL_ACTION(0, 24, true);
 			PAD::DISABLE_CONTROL_ACTION(0, 257, true);
 			PAD::DISABLE_CONTROL_ACTION(0, 142, true);
@@ -2166,7 +2166,7 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 				}
 				if ((((((!func_26() && !BitTest(Global_2787913, 4)) && !BitTest(Global_2787913, 5)) && !BitTest(Global_2787913, 7)) && !func_27("ARENA_VIP_CASH1", Global_262145.f_26633)) && !func_27("ARENA_VIP_CASH2", Global_262145.f_26634)) && !func_29("ARENA_VIP_ABIL"))
 				{
-					if (PAD::_IS_USING_KEYBOARD(2))
+					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 					{
 						if (bVar2)
 						{
@@ -2836,7 +2836,7 @@ void func_94(int iParam0)//Position - 0x3F1B
 
 void func_95()//Position - 0x3F29
 {
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("turret_cam_script")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("turret_cam_script")) > 0)
 	{
 		Global_2787945 = 1;
 	}
@@ -3224,7 +3224,7 @@ void func_104(int iParam0)//Position - 0x46E8
 	int iVar0;
 	
 	iVar0 = Global_2667225.f_2691;
-	if ((AUDIO::_AUDIO_IS_SCRIPTED_MUSIC_PLAYING_2() && Global_2667225.f_2689 == 0) && iParam0 == 0)
+	if ((AUDIO::AUDIO_IS_SCRIPTED_MUSIC_PLAYING() && Global_2667225.f_2689 == 0) && iParam0 == 0)
 	{
 		iVar0 = 255;
 	}
@@ -3661,7 +3661,7 @@ void func_124(var uParam0, int iParam1, char* sParam2, int iParam3, char* sParam
 {
 	int iVar0;
 	
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("context_controller")) < 1)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("context_controller")) < 1)
 	{
 	}
 	if (STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
@@ -3825,7 +3825,7 @@ void func_133(var uParam0)//Position - 0x509F
 			HUD::DISPLAY_AMMO_THIS_FRAME(false);
 			HUD::HIDE_HUD_COMPONENT_THIS_FRAME(19);
 			HUD::HIDE_HUD_COMPONENT_THIS_FRAME(2);
-			HUD::_HUD_WEAPON_WHEEL_IGNORE_SELECTION();
+			HUD::HUD_SUPPRESS_WEAPON_WHEEL_RESULTS_THIS_FRAME();
 			if (!func_138())
 			{
 				func_137();
@@ -3996,7 +3996,7 @@ int func_144(int iParam0)//Position - 0x5307
 			return 0;
 		}
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("cellphone_flashhand")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) > 0)
 	{
 		return 1;
 	}
@@ -4014,7 +4014,7 @@ void func_145(var uParam0)//Position - 0x535E
 	}
 	else if (uParam0->f_281.f_5 > 5)
 	{
-		CAM::_DISABLE_CAM_COLLISION_FOR_ENTITY(PLAYER::PLAYER_PED_ID());
+		CAM::SET_GAMEPLAY_CAM_IGNORE_ENTITY_COLLISION_THIS_UPDATE(PLAYER::PLAYER_PED_ID());
 		PED::SET_PED_CAPSULE(PLAYER::PLAYER_PED_ID(), func_146());
 		uParam0->f_281.f_8 = MISC::GET_FRAME_COUNT();
 	}
@@ -4072,7 +4072,7 @@ int func_150()//Position - 0x5457
 	{
 		return 1;
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(MISC::GET_HASH_KEY("AM_MP_ARENA_BOX")) <= 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(MISC::GET_HASH_KEY("AM_MP_ARENA_BOX")) <= 0)
 	{
 		return 1;
 	}
@@ -4121,7 +4121,7 @@ int func_151()//Position - 0x54DE
 	}
 	if (func_152() != 0)
 	{
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(func_152()) == 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(func_152()) == 0)
 		{
 			return 1;
 		}

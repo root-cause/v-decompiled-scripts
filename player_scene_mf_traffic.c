@@ -499,7 +499,7 @@ bool func_17(int iParam0, int iParam1)//Position - 0x67E
 
 int func_18()//Position - 0x6B6
 {
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("player_timetable_scene")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("player_timetable_scene")) > 0)
 	{
 		return 1;
 	}
@@ -782,7 +782,7 @@ void func_33()//Position - 0xA08
 					iLocal_69[iVar0] = VEHICLE::CREATE_VEHICLE(iLocal_70[iVar0], Local_85 + Local_71[iVar0 /*3*/], (fLocal_86 + uLocal_72[iVar0]), true, true, false);
 					ENTITY::SET_ENTITY_LOD_DIST(iLocal_69[iVar0], 250);
 					VEHICLE::SET_VEHICLE_LOD_MULTIPLIER(iLocal_69[iVar0], 2f);
-					ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(iLocal_69[iVar0], true);
+					ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iLocal_69[iVar0], true);
 				}
 			}
 			iVar0++;
@@ -803,7 +803,7 @@ void func_33()//Position - 0xA08
 					iLocal_73[iVar0] = VEHICLE::CREATE_VEHICLE(iLocal_74[iVar0], Local_85 + Local_75[iVar0 /*3*/], (fLocal_86 + uLocal_76[iVar0]), true, true, false);
 					ENTITY::SET_ENTITY_LOD_DIST(iLocal_73[iVar0], 250);
 					VEHICLE::SET_VEHICLE_LOD_MULTIPLIER(iLocal_73[iVar0], 2f);
-					ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(iLocal_73[iVar0], true);
+					ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iLocal_73[iVar0], true);
 				}
 			}
 			iVar0++;
@@ -824,7 +824,7 @@ void func_33()//Position - 0xA08
 					iLocal_77[iVar0] = VEHICLE::CREATE_VEHICLE(iLocal_78[iVar0], Local_85 + Local_79[iVar0 /*3*/], (fLocal_86 + uLocal_80[iVar0]), true, true, false);
 					ENTITY::SET_ENTITY_LOD_DIST(iLocal_77[iVar0], 250);
 					VEHICLE::SET_VEHICLE_LOD_MULTIPLIER(iLocal_77[iVar0], 2f);
-					ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(iLocal_77[iVar0], true);
+					ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iLocal_77[iVar0], true);
 				}
 			}
 			iVar0++;
@@ -845,7 +845,7 @@ void func_33()//Position - 0xA08
 					iLocal_81[iVar0] = VEHICLE::CREATE_VEHICLE(iLocal_82[iVar0], Local_85 + Local_83[iVar0 /*3*/], (fLocal_86 + uLocal_84[iVar0]), true, true, false);
 					ENTITY::SET_ENTITY_LOD_DIST(iLocal_81[iVar0], 250);
 					VEHICLE::SET_VEHICLE_LOD_MULTIPLIER(iLocal_81[iVar0], 2f);
-					ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(iLocal_81[iVar0], true);
+					ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iLocal_81[iVar0], true);
 				}
 			}
 			iVar0++;
@@ -863,8 +863,8 @@ void func_33()//Position - 0xA08
 		{
 			iVar3 = PED::CREATE_PED_INSIDE_VEHICLE(iLocal_69[iVar0], 4, iLocal_68[func_36()], -1, true, true);
 			func_34(iVar3);
-			ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(iLocal_69[iVar0], true);
-			ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(iVar3, true);
+			ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iLocal_69[iVar0], true);
+			ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iVar3, true);
 			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_70[iVar0]);
 		}
 		iVar0++;
@@ -878,8 +878,8 @@ void func_33()//Position - 0xA08
 			{
 				iVar4 = PED::CREATE_PED_INSIDE_VEHICLE(iLocal_73[iVar0], 4, iLocal_68[func_36()], -1, true, true);
 				func_34(iVar4);
-				ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(iLocal_69[iVar0], true);
-				ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(iVar4, true);
+				ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iLocal_69[iVar0], true);
+				ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iVar4, true);
 				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_74[iVar0]);
 			}
 		}
@@ -902,8 +902,8 @@ void func_33()//Position - 0xA08
 			{
 				iVar5 = PED::CREATE_PED_INSIDE_VEHICLE(iLocal_77[iVar0], 4, iLocal_68[func_36()], -1, true, true);
 				func_34(iVar5);
-				ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(iLocal_69[iVar0], true);
-				ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(iVar5, true);
+				ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iLocal_69[iVar0], true);
+				ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iVar5, true);
 				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_78[iVar0]);
 			}
 		}
@@ -918,8 +918,8 @@ void func_33()//Position - 0xA08
 			{
 				iVar6 = PED::CREATE_PED_INSIDE_VEHICLE(iLocal_81[iVar0], 4, iLocal_68[func_36()], -1, true, true);
 				func_34(iVar6);
-				ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(iLocal_69[iVar0], true);
-				ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(iVar6, true);
+				ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iLocal_69[iVar0], true);
+				ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iVar6, true);
 				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_82[iVar0]);
 			}
 		}

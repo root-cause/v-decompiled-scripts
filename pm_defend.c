@@ -104,7 +104,7 @@ void __EntryFunction__()//Position - 0x0
 	{
 		if (iLocal_52 > MISC::GET_GAME_TIMER())
 		{
-			RECORDING::_DISABLE_ROCKSTAR_EDITOR_CAMERA_CHANGES();
+			RECORDING::REPLAY_DISABLE_CAMERA_MOVEMENT_THIS_FRAME();
 		}
 		switch (Local_36.f_0)
 		{
@@ -163,7 +163,7 @@ void func_4()//Position - 0x151
 	switch (Local_36.f_3)
 	{
 		case 9:
-			PATHFIND::REQUEST_PATHS_PREFER_ACCURATE_BOUNDINGSTRUCT(1435f, -2385f, 1690f, -1885f);
+			PATHFIND::REQUEST_PATH_NODES_IN_AREA_THIS_FRAME(1435f, -2385f, 1690f, -1885f);
 			break;
 	}
 	switch (Local_36.f_83)
@@ -482,7 +482,7 @@ int func_11(int iParam0, var uParam1, int iParam2, int iParam3, bool bParam4, bo
 				}
 				else
 				{
-					HUD::_SET_PED_HAS_AI_BLIP_WITH_COLOR(iParam0, true, iParam8);
+					HUD::SET_PED_HAS_AI_BLIP_WITH_COLOUR(iParam0, true, iParam8);
 				}
 				uParam1->f_7 = iParam0;
 				HUD::SET_PED_AI_BLIP_GANG_ID(iParam0, iParam2);
@@ -495,11 +495,11 @@ int func_11(int iParam0, var uParam1, int iParam2, int iParam3, bool bParam4, bo
 		}
 		if (!iParam9 == -1)
 		{
-			HUD::_SET_PED_AI_BLIP_SPRITE(iParam0, iParam9);
+			HUD::SET_PED_AI_BLIP_SPRITE(iParam0, iParam9);
 		}
 		HUD::SET_PED_AI_BLIP_FORCED_ON(iParam0, bParam4);
 		HUD::SET_PED_AI_BLIP_HAS_CONE(iParam0, bParam5);
-		*uParam1 = HUD::_GET_AI_BLIP_2(iParam0);
+		*uParam1 = HUD::GET_AI_PED_PED_BLIP_INDEX(iParam0);
 		if (!iParam9 == -1)
 		{
 			if (HUD::DOES_BLIP_EXIST(*uParam1))
@@ -533,7 +533,7 @@ int func_11(int iParam0, var uParam1, int iParam2, int iParam3, bool bParam4, bo
 		}
 		if (PED::IS_PED_IN_ANY_VEHICLE(iParam0, false))
 		{
-			uParam1->f_1 = HUD::_GET_AI_BLIP(iParam0);
+			uParam1->f_1 = HUD::GET_AI_PED_VEHICLE_BLIP_INDEX(iParam0);
 			if (!BitTest(uParam1->f_6, 3))
 			{
 				if (HUD::DOES_BLIP_EXIST(uParam1->f_1))
@@ -691,7 +691,7 @@ int func_17(int iParam0, int iParam1, int iParam2)//Position - 0xDAA
 	int iVar0;
 	
 	iVar0 = VEHICLE::CREATE_VEHICLE((iParam0[iParam1 /*122*/])->f_83[iParam2 /*9*/].f_8, (iParam0[iParam1 /*122*/])->f_83[iParam2 /*9*/].f_1, (iParam0[iParam1 /*122*/])->f_83[iParam2 /*9*/].f_7, true, true, false);
-	VEHICLE::_0x0AD9E8F87FF7C16F(iVar0, false);
+	VEHICLE::SET_VEHICLE_INFLUENCES_WANTED_LEVEL(iVar0, false);
 	return iVar0;
 }
 

@@ -365,7 +365,7 @@ void __EntryFunction__()//Position - 0x0
 				func_152(Var1, iVar8, &iVar11, iVar12);
 			}
 		}
-		RECORDING::_0x208784099002BC30("RE_GI", 0);
+		RECORDING::REPLAY_CHECK_FOR_EVENT_THIS_FRAME("RE_GI", 0);
 		switch (iVar0)
 		{
 			case 0:
@@ -473,7 +473,7 @@ void __EntryFunction__()//Position - 0x0
 			
 			case 5:
 				PLAYER::SET_ALL_RANDOM_PEDS_FLEE_THIS_FRAME(PLAYER::PLAYER_ID());
-				PLAYER::_0xC3376F42B1FACCC6(PLAYER::PLAYER_ID());
+				PLAYER::SET_ALL_NEUTRAL_RANDOM_PEDS_FLEE_THIS_FRAME(PLAYER::PLAYER_ID());
 				if (iVar2 < 3)
 				{
 					if ((((((((func_79(&iVar11, &uVar6, &uVar5, &uVar4, uVar3, bVar7, 1075838976, 0) || func_78(iVar11[0], 0)) || func_78(iVar11[1], 0)) || func_78(iVar11[2], 0)) || MISC::IS_BULLET_IN_AREA(Local_222[0 /*3*/], 40f, true)) || MISC::IS_PROJECTILE_TYPE_IN_AREA(Local_222[0 /*3*/] - Vector(25f, 25f, 25f), Local_222[0 /*3*/] + Vector(25f, 25f, 25f), joaat("WEAPON_SMOKEGRENADE"), true)) || MISC::IS_PROJECTILE_TYPE_IN_AREA(Local_222[0 /*3*/] - Vector(25f, 25f, 25f), Local_222[0 /*3*/] + Vector(25f, 25f, 25f), joaat("WEAPON_GRENADE"), true)) || MISC::IS_PROJECTILE_TYPE_IN_AREA(Local_222[0 /*3*/] - Vector(25f, 25f, 25f), Local_222[0 /*3*/] + Vector(25f, 25f, 25f), joaat("WEAPON_GRENADELAUNCHER"), true)) || MISC::IS_PROJECTILE_TYPE_IN_AREA(Local_222[0 /*3*/] - Vector(25f, 25f, 25f), Local_222[0 /*3*/] + Vector(25f, 25f, 25f), joaat("WEAPON_STICKYBOMB"), true))
@@ -896,7 +896,7 @@ int func_3()//Position - 0x10A5
 
 int func_4(bool bParam0)//Position - 0x10F0
 {
-	if (!bParam0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("benchmark")) > 0)
+	if (!bParam0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("benchmark")) > 0)
 	{
 		return 1;
 	}
@@ -1206,10 +1206,10 @@ int func_10(int iParam0, int iParam1)//Position - 0x17D9
 	{
 		return 0;
 	}
-	iVar0 = PLAYER::_GET_ACHIEVEMENT_PROGRESS(iParam0);
+	iVar0 = PLAYER::GET_ACHIEVEMENT_PROGRESS(iParam0);
 	if (iParam1 > iVar0)
 	{
-		return PLAYER::_SET_ACHIEVEMENT_PROGRESS(iParam0, iParam1);
+		return PLAYER::SET_ACHIEVEMENT_PROGRESS(iParam0, iParam1);
 	}
 	return 0;
 }
@@ -1220,7 +1220,7 @@ void func_11(int iParam0, bool bParam1, int iParam2)//Position - 0x182A
 	{
 		iParam2 = func_12();
 	}
-	STATS::_SET_PACKED_STAT_BOOL(iParam0, bParam1, iParam2);
+	STATS::SET_PACKED_STAT_BOOL_CODE(iParam0, bParam1, iParam2);
 }
 
 int func_12()//Position - 0x1848
@@ -3950,7 +3950,7 @@ int func_94()//Position - 0x4CA0
 
 int func_95()//Position - 0x4CC3
 {
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("player_timetable_scene")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("player_timetable_scene")) > 0)
 	{
 		return 1;
 	}
@@ -4940,7 +4940,7 @@ int func_112()//Position - 0x69A3
 {
 	if (MISC::IS_PC_VERSION())
 	{
-		if (MISC::_0xD10282B6E3751BA0() == 1f)
+		if (MISC::GET_CITY_DENSITY() == 1f)
 		{
 			return 1;
 		}
@@ -5038,7 +5038,7 @@ void func_116(int iParam0)//Position - 0x6B02
 		return;
 	}
 	func_118(iParam0);
-	MISC::_0x65D2EBB47E1CEC21(false);
+	MISC::SET_SCRIPT_HIGH_PRIO(false);
 	MISC::SET_RANDOM_EVENT_FLAG(true);
 	Global_113372 = 0;
 	func_117();
@@ -5865,7 +5865,7 @@ int func_151()//Position - 0x7962
 	{
 		if (NETWORK::NETWORK_HAS_VALID_ROS_CREDENTIALS())
 		{
-			if (NETWORK::_NETWORK_GET_ROS_PRIVILEGE_24())
+			if (NETWORK::NETWORK_HAS_ROS_PRIVILEGE_PLAYED_LAST_GEN())
 			{
 				STATS::STAT_GET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), &iVar0, -1);
 				MISC::SET_BIT(&iVar0, 2);
@@ -5879,7 +5879,7 @@ int func_151()//Position - 0x7962
 				{
 					iVar0 = MISC::GET_PROFILE_SETTING(866);
 					MISC::SET_BIT(&iVar0, 0);
-					STATS::_SET_HAS_CONTENT_UNLOCKS_FLAGS(iVar0);
+					STATS::SET_HAS_SPECIALEDITION_CONTENT(iVar0);
 				}
 				return 1;
 			}

@@ -1570,7 +1570,7 @@ void func_17(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 	if (bParam2)
 	{
 		Var12 = { func_18(iVar8) };
-		StringCopy(&cVar13, HUD::_GET_LABEL_TEXT(&Var12), 32);
+		StringCopy(&cVar13, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&Var12), 32);
 		STATS::PLAYSTATS_NPC_INVITE(&cVar13);
 	}
 }
@@ -1801,7 +1801,7 @@ void func_21(var uParam0, var uParam1, struct<3> Param2, int iParam3, int iParam
 			if (bVar5)
 			{
 				Var6 = { func_22(iVar0) };
-				iVar7 = NETWORK::_0x36391F397731595D(&Var6);
+				iVar7 = NETWORK::NETWORK_START_COMMUNICATION_PERMISSIONS_CHECK(&Var6);
 				if (iVar7 != -1)
 				{
 					Global_2654152[iVar4 /*82*/].f_78 = iVar7;
@@ -1823,7 +1823,7 @@ struct<13> func_22(int iParam0)//Position - 0x13D6
 
 bool func_23()//Position - 0x13ED
 {
-	return (MISC::IS_DURANGO_VERSION() || MISC::_0xC545AB1CF97ABB34());
+	return (MISC::IS_DURANGO_VERSION() || MISC::IS_SCARLETT_VERSION());
 }
 
 void func_24()//Position - 0x1403
@@ -2053,7 +2053,7 @@ void func_32(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position - 
 	}
 	Var0.f_2.f_14 = func_34(PLAYER::PLAYER_ID());
 	StringCopy(&(Var0.f_2.f_15), "", 16);
-	SCRIPT::_TRIGGER_SCRIPT_EVENT_2(1, &Var0, 23, func_33(iParam0));
+	SCRIPT::SEND_TU_SCRIPT_EVENT(1, &Var0, 23, func_33(iParam0));
 }
 
 var func_33(int iParam0)//Position - 0x1839
@@ -4737,7 +4737,7 @@ int func_119()//Position - 0x41AF
 	{
 		return 1;
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("am_kill_list")) > 0 || SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("am_penned_in")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("am_kill_list")) > 0 || SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("am_penned_in")) > 0)
 	{
 		if (func_121(PLAYER::PLAYER_ID()) || func_120(PLAYER::PLAYER_ID()))
 		{
@@ -8115,7 +8115,7 @@ char* func_256(var uParam0)//Position - 0x7867
 	
 	if (func_259(uParam0->f_2))
 	{
-		return HUD::_GET_LABEL_TEXT("FM_LOC_ROCKS");
+		return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("FM_LOC_ROCKS");
 	}
 	if (uParam0->f_2 < 32 && !func_40(uParam0->f_1))
 	{
@@ -9165,7 +9165,7 @@ void func_288(int iParam0)//Position - 0x8CC4
 		{
 			if (!bVar0)
 			{
-				NETSHOPPING::_NET_GAMESERVER_BASKET_DELETE();
+				NETSHOPPING::NET_GAMESERVER_BASKET_END();
 			}
 		}
 		else if (!bVar0)
@@ -9313,7 +9313,7 @@ void func_294(struct<67> Param0, var uParam1, var uParam2, var uParam3, var uPar
 	if (!iVar1 == 0)
 	{
 		func_295();
-		SCRIPT::_TRIGGER_SCRIPT_EVENT_2(1, &Var0, 36, iVar1);
+		SCRIPT::SEND_TU_SCRIPT_EVENT(1, &Var0, 36, iVar1);
 	}
 }
 
@@ -9326,7 +9326,7 @@ int func_296()//Position - 0x9086
 {
 	if (MISC::IS_PC_VERSION())
 	{
-		return NETSHOPPING::_NET_GAMESERVER_USE_SERVER_TRANSACTIONS();
+		return NETSHOPPING::NET_GAMESERVER_USE_SERVER_TRANSACTIONS();
 	}
 	return 0;
 }
@@ -11539,7 +11539,7 @@ int func_361()//Position - 0xB459
 	}
 	if (func_362() != 0)
 	{
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(func_362()) == 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(func_362()) == 0)
 		{
 			return 1;
 		}

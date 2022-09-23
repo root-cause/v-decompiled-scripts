@@ -3657,7 +3657,7 @@ void func_38(bool bParam0)//Position - 0x54BC
 				case 13:
 					if (PED::IS_PED_IN_ANY_POLICE_VEHICLE(PLAYER::PLAYER_PED_ID()))
 					{
-						if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(Global_91229[78 /*34*/].f_6) == 0)
+						if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(Global_91229[78 /*34*/].f_6) == 0)
 						{
 							if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), Global_41748[13 /*31*/].f_2, true) <= 100f)
 							{
@@ -3672,7 +3672,7 @@ void func_38(bool bParam0)//Position - 0x54BC
 							}
 						}
 					}
-					else if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(Global_91229[78 /*34*/].f_6) == 0)
+					else if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(Global_91229[78 /*34*/].f_6) == 0)
 					{
 						if (func_49(13, PLAYER::PLAYER_PED_ID()))
 						{
@@ -3683,7 +3683,7 @@ void func_38(bool bParam0)//Position - 0x54BC
 				
 				case 17:
 				case 16:
-					if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(Global_91229[9 /*34*/].f_6) == 0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("extreme2")) == 0)
+					if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(Global_91229[9 /*34*/].f_6) == 0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("extreme2")) == 0)
 					{
 						if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), Global_41748[17 /*31*/].f_2, true) <= 100f)
 						{
@@ -3875,7 +3875,7 @@ void func_38(bool bParam0)//Position - 0x54BC
 				
 				case 14:
 				case 15:
-					if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(Global_91229[27 /*34*/].f_6) == 0)
+					if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(Global_91229[27 /*34*/].f_6) == 0)
 					{
 						if (func_49(14, PLAYER::PLAYER_PED_ID()))
 						{
@@ -3891,7 +3891,7 @@ void func_38(bool bParam0)//Position - 0x54BC
 				case 24:
 					if (SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 480.4354f, -1317.91f, 29.5957f) < 400f)
 					{
-						if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(Global_91229[8 /*34*/].f_6) == 0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(Global_91229[10 /*34*/].f_6) == 0)
+						if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(Global_91229[8 /*34*/].f_6) == 0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(Global_91229[10 /*34*/].f_6) == 0)
 						{
 							if (func_49(24, PLAYER::PLAYER_PED_ID()))
 							{
@@ -4238,7 +4238,7 @@ void func_52(int iParam0)//Position - 0x6001
 		MISC::CLEAR_BIT(&(Global_38421[(iParam0 / 32)]), (iParam0 % 32));
 		Global_38430[iParam0] = 0;
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("startup_positioning")) == 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("startup_positioning")) == 0)
 	{
 		if (BitTest(Global_38657[(iParam0 / 32)], (iParam0 % 32)))
 		{
@@ -4282,7 +4282,7 @@ void func_52(int iParam0)//Position - 0x6001
 			iVar3 = 0;
 		}
 	}
-	else if (BitTest(Var0.f_4, 1) && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("ambient_solomon")) == 0)
+	else if (BitTest(Var0.f_4, 1) && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("ambient_solomon")) == 0)
 	{
 		if (func_54())
 		{
@@ -4741,7 +4741,7 @@ void func_58(int iParam0, var uParam1)//Position - 0x682E
 		case 142:
 			if (func_59(iParam0))
 			{
-				if ((SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("jewelry_heist")) == 0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("jewelry_setup1")) == 0) && !Global_113386.f_9085.f_99.f_58[4])
+				if ((SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("jewelry_heist")) == 0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("jewelry_setup1")) == 0) && !Global_113386.f_9085.f_99.f_58[4])
 				{
 					if (iVar1 < 21)
 					{
@@ -4767,7 +4767,7 @@ void func_58(int iParam0, var uParam1)//Position - 0x682E
 				Global_113386.f_7261[iParam0] = 1;
 				OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(uParam1->f_5, Global_113386.f_7261[iParam0], true, true);
 			}
-			else if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("jewelry_heist")) == 0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("jewelry_setup1")) == 0)
+			else if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("jewelry_heist")) == 0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("jewelry_setup1")) == 0)
 			{
 				if (iVar1 >= 21)
 				{
@@ -4842,13 +4842,13 @@ void func_58(int iParam0, var uParam1)//Position - 0x682E
 		case 157:
 			if (!func_59(iParam0))
 			{
-				if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("assassin_valet")) == 0)
+				if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("assassin_valet")) == 0)
 				{
 					Global_113386.f_7261[iParam0] = 1;
 					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(uParam1->f_5, Global_113386.f_7261[iParam0], true, true);
 				}
 			}
-			else if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("assassin_valet")) > 0)
+			else if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("assassin_valet")) > 0)
 			{
 				Global_113386.f_7261[iParam0] = 0;
 				OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(uParam1->f_5, Global_113386.f_7261[iParam0], true, true);
@@ -4857,7 +4857,7 @@ void func_58(int iParam0, var uParam1)//Position - 0x682E
 		
 		case 158:
 		case 159:
-			if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(Global_91229[70 /*34*/].f_6) == 0)
+			if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(Global_91229[70 /*34*/].f_6) == 0)
 			{
 				if (!func_59(iParam0))
 				{
@@ -4869,7 +4869,7 @@ void func_58(int iParam0, var uParam1)//Position - 0x682E
 		
 		case 160:
 		case 161:
-			if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("omega2")) == 0)
+			if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("omega2")) == 0)
 			{
 				if (!func_59(iParam0))
 				{
@@ -4882,7 +4882,7 @@ void func_58(int iParam0, var uParam1)//Position - 0x682E
 		case 70:
 		case 71:
 		case 72:
-			if (!func_59(iParam0) && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(Global_91229[26 /*34*/].f_6) == 0)
+			if (!func_59(iParam0) && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(Global_91229[26 /*34*/].f_6) == 0)
 			{
 				Global_113386.f_7261[iParam0] = 1;
 				OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(uParam1->f_5, Global_113386.f_7261[iParam0], true, true);
@@ -4899,7 +4899,7 @@ void func_58(int iParam0, var uParam1)//Position - 0x682E
 		case 104:
 			if (!func_59(iParam0))
 			{
-				if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(Global_91229[43 /*34*/].f_6) == 0)
+				if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(Global_91229[43 /*34*/].f_6) == 0)
 				{
 					Global_113386.f_7261[iParam0] = 1;
 					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(uParam1->f_5, Global_113386.f_7261[iParam0], true, true);
@@ -4923,7 +4923,7 @@ void func_58(int iParam0, var uParam1)//Position - 0x682E
 		case 193:
 			if (!func_59(iParam0))
 			{
-				if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(Global_91229[93 /*34*/].f_6) > 0)
+				if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(Global_91229[93 /*34*/].f_6) > 0)
 				{
 					Global_113386.f_7261[iParam0] = 1;
 					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(uParam1->f_5, Global_113386.f_7261[iParam0], true, true);
@@ -4946,7 +4946,7 @@ void func_58(int iParam0, var uParam1)//Position - 0x682E
 		case 80:
 			if (!func_59(iParam0))
 			{
-				if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(Global_91229[8 /*34*/].f_6) == 0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(Global_91229[10 /*34*/].f_6) == 0)
+				if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(Global_91229[8 /*34*/].f_6) == 0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(Global_91229[10 /*34*/].f_6) == 0)
 				{
 					Global_113386.f_7261[iParam0] = 1;
 					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(uParam1->f_5, Global_113386.f_7261[iParam0], true, true);
@@ -4962,7 +4962,7 @@ void func_58(int iParam0, var uParam1)//Position - 0x682E
 		case 206:
 			if (!func_59(iParam0))
 			{
-				if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(Global_91229[47 /*34*/].f_6) == 0)
+				if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(Global_91229[47 /*34*/].f_6) == 0)
 				{
 					Global_113386.f_7261[iParam0] = 1;
 					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(uParam1->f_5, Global_113386.f_7261[iParam0], true, true);
@@ -4975,7 +4975,7 @@ void func_58(int iParam0, var uParam1)//Position - 0x682E
 			break;
 		
 		case 207:
-			if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(Global_91229[70 /*34*/].f_6) == 0)
+			if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(Global_91229[70 /*34*/].f_6) == 0)
 			{
 				if (!func_59(iParam0))
 				{
@@ -4993,7 +4993,7 @@ void func_58(int iParam0, var uParam1)//Position - 0x682E
 		case 213:
 		case 214:
 		case 215:
-			if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(Global_91229[48 /*34*/].f_6) == 0)
+			if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(Global_91229[48 /*34*/].f_6) == 0)
 			{
 				if (!func_59(iParam0))
 				{
@@ -5005,7 +5005,7 @@ void func_58(int iParam0, var uParam1)//Position - 0x682E
 		
 		case 99:
 		case 100:
-			if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(Global_91229[39 /*34*/].f_6) == 0)
+			if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(Global_91229[39 /*34*/].f_6) == 0)
 			{
 				if (!func_59(iParam0))
 				{
@@ -9355,20 +9355,20 @@ void func_91()//Position - 0xEC61
 
 void func_92()//Position - 0xEE71
 {
-	OBJECT::_0xD4A7A435B3710D05(1287.413f, 2846.593f, 45.05f, 40f);
-	OBJECT::_0xD4A7A435B3710D05(19.022f, 2611.234f, 81.656f, 40f);
-	OBJECT::_0xD4A7A435B3710D05(2769.089f, 3920.189f, 41.488f, 40f);
-	OBJECT::_0xD4A7A435B3710D05(3407.521f, 5504.718f, 21.934f, 40f);
-	OBJECT::_0xD4A7A435B3710D05(2.43f, 6831.906f, 11.473f, 40f);
-	OBJECT::_0xD4A7A435B3710D05(-2231.284f, 2417.664f, 7.837f, 40f);
-	OBJECT::_0xD4A7A435B3710D05(-8.5274f, 3327.212f, 40.5878f, 40f);
-	OBJECT::_0xD4A7A435B3710D05(2086.27f, 1761.552f, 102.98f, 40f);
-	OBJECT::_0xD4A7A435B3710D05(1874.689f, 284.791f, 159.961f, 40f);
+	OBJECT::ADD_EXTENDED_PICKUP_PROBE_AREA(1287.413f, 2846.593f, 45.05f, 40f);
+	OBJECT::ADD_EXTENDED_PICKUP_PROBE_AREA(19.022f, 2611.234f, 81.656f, 40f);
+	OBJECT::ADD_EXTENDED_PICKUP_PROBE_AREA(2769.089f, 3920.189f, 41.488f, 40f);
+	OBJECT::ADD_EXTENDED_PICKUP_PROBE_AREA(3407.521f, 5504.718f, 21.934f, 40f);
+	OBJECT::ADD_EXTENDED_PICKUP_PROBE_AREA(2.43f, 6831.906f, 11.473f, 40f);
+	OBJECT::ADD_EXTENDED_PICKUP_PROBE_AREA(-2231.284f, 2417.664f, 7.837f, 40f);
+	OBJECT::ADD_EXTENDED_PICKUP_PROBE_AREA(-8.5274f, 3327.212f, 40.5878f, 40f);
+	OBJECT::ADD_EXTENDED_PICKUP_PROBE_AREA(2086.27f, 1761.552f, 102.98f, 40f);
+	OBJECT::ADD_EXTENDED_PICKUP_PROBE_AREA(1874.689f, 284.791f, 159.961f, 40f);
 }
 
 void func_93()//Position - 0xEF51
 {
-	OBJECT::_0xB7C6D80FB371659A();
+	OBJECT::CLEAR_EXTENDED_PICKUP_PROBE_AREAS();
 }
 
 void func_94(int iParam0)//Position - 0xEF5D

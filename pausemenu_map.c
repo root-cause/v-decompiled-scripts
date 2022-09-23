@@ -400,14 +400,14 @@ void __EntryFunction__()//Position - 0x0
 					}
 					if (Global_77137.f_577)
 					{
-						if (HUD::_IS_MINIMAP_IN_INTERIOR())
+						if (HUD::IS_PAUSEMAP_IN_INTERIOR_MODE())
 						{
 							HUD::HIDE_MINIMAP_EXTERIOR_MAP_THIS_FRAME();
 						}
 						else
 						{
 							HUD::HIDE_MINIMAP_INTERIOR_MAP_THIS_FRAME();
-							HUD::_SET_PLAYER_BLIP_POSITION_THIS_FRAME(Global_77137.f_578, Global_77137.f_578.f_1);
+							HUD::SET_FAKE_PAUSEMAP_PLAYER_POSITION_THIS_FRAME(Global_77137.f_578, Global_77137.f_578.f_1);
 						}
 					}
 					if (Global_78319)
@@ -991,7 +991,7 @@ void func_10(int iParam0, int iParam1, float* fParam2, bool bParam3)//Position -
 	}
 	else
 	{
-		NETWORK::_NETWORK_REGISTER_TUNABLE_FLOAT_HASH(iVar0, iParam1, fParam2);
+		NETWORK::NETWORK_ACCESS_TUNABLE_FLOAT_MODIFICATION_DETECTION_REGISTRATION_HASH(iVar0, iParam1, fParam2);
 	}
 	if (bParam3)
 	{
@@ -2511,7 +2511,7 @@ void func_55(int iParam0, bool bParam1, int iParam2, int iParam3)//Position - 0x
 					{
 						ENTITY::FREEZE_ENTITY_POSITION(iVar27, false);
 					}
-					ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(iVar27, true);
+					ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iVar27, true);
 				}
 				else if (!bVar21)
 				{
@@ -2519,7 +2519,7 @@ void func_55(int iParam0, bool bParam1, int iParam2, int iParam3)//Position - 0x
 				}
 				PED::SET_PED_CAN_BE_TARGETTED(iVar27, true);
 				PLAYER::SET_PLAYER_INVINCIBLE(iParam0, false);
-				PLAYER::_SET_PLAYER_INVINCIBLE_KEEP_RAGDOLL_ENABLED(iParam0, false);
+				PLAYER::SET_PLAYER_INVINCIBLE_BUT_HAS_REACTIONS(iParam0, false);
 				if (PED::HAS_PED_HEAD_BLEND_FINISHED(iVar27) && PED::HAVE_ALL_STREAMING_REQUESTS_COMPLETED(iVar27))
 				{
 					PED::FINALIZE_HEAD_BLEND(iVar27);
@@ -2565,7 +2565,7 @@ void func_55(int iParam0, bool bParam1, int iParam2, int iParam3)//Position - 0x
 						}
 						if (!bVar16)
 						{
-							ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(iVar27, true);
+							ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iVar27, true);
 						}
 					}
 					if (func_56(Global_4718592.f_168757))
@@ -2708,7 +2708,7 @@ void func_60(bool bParam0, int iParam1, int iParam2)//Position - 0x2807
 		{
 			if (PED::IS_PED_A_PLAYER(iParam1))
 			{
-				if (!NETWORK::_NETWORK_IS_PLAYER_EQUAL_TO_INDEX(PLAYER::PLAYER_ID(), NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam1)))
+				if (!NETWORK::NETWORK_ARE_PLAYERS_IN_SAME_TUTORIAL_SESSION(PLAYER::PLAYER_ID(), NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam1)))
 				{
 					iVar0 = 1;
 				}
@@ -7804,11 +7804,11 @@ void func_223(int iParam0, int iParam1, var uParam2)//Position - 0x8563
 	if (Global_1976978.f_3 == 0 && func_4(iParam0))
 	{
 		HUD::SHOW_START_MISSION_INSTRUCTIONAL_BUTTON(false);
-		HUD::_SHOW_CONTACT_INSTRUCTIONAL_BUTTON(true);
+		HUD::SHOW_CONTACT_INSTRUCTIONAL_BUTTON(true);
 		*iParam1 = 0;
 	}
 	func_255(iVar0);
-	func_6(iVar0, "", HUD::_GET_LABEL_TEXT(func_236(iParam0)), 0, func_2(), func_235(iParam0), 1, 1, -1, -1, 0, 0, 0, 0);
+	func_6(iVar0, "", HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(func_236(iParam0)), 0, func_2(), func_235(iParam0), 1, 1, -1, -1, 0, 0, 0, 0);
 	func_230(iVar0, iVar1, iVar2, iVar1, 0, "DLCC_CONTACT", func_234(iParam0), 0, 0, 0, 0);
 	iVar1++;
 	if (!MISC::IS_STRING_NULL_OR_EMPTY(func_229(iParam0)))
@@ -7828,7 +7828,7 @@ void func_223(int iParam0, int iParam1, var uParam2)//Position - 0x8563
 	}
 	func_226(iVar0, iVar1, iVar2, iVar1, 0, " ", 0, 4);
 	iVar1++;
-	func_226(iVar0, iVar1, iVar2, iVar1, 0, HUD::_GET_LABEL_TEXT(func_225(iParam0)), 1, 5);
+	func_226(iVar0, iVar1, iVar2, iVar1, 0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(func_225(iParam0)), 1, 5);
 	iVar1++;
 	func_224(iVar0);
 	HUD::RELEASE_CONTROL_OF_FRONTEND();
@@ -8242,12 +8242,12 @@ int func_231(char* sParam0)//Position - 0x8CBA
 
 char* func_232()//Position - 0x8CF4
 {
-	return HUD::_GET_LABEL_TEXT("CREATOR_RSV");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREATOR_RSV");
 }
 
 char* func_233()//Position - 0x8D04
 {
-	return HUD::_GET_LABEL_TEXT("CREATOR_RSC");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREATOR_RSC");
 }
 
 char* func_234(int iParam0)//Position - 0x8D14
@@ -8673,7 +8673,7 @@ int func_245()//Position - 0x9460
 	{
 		iLocal_216 = -1;
 		StringCopy(&Local_182, "NULL", 64);
-		StringCopy(&cLocal_191, HUD::_GET_LABEL_TEXT(func_247(func_43())), 64);
+		StringCopy(&cLocal_191, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(func_247(func_43())), 64);
 		StringCopy(&cLocal_200, func_246(func_43()), 64);
 		iLocal_215 = 3;
 		iLocal_209 = 1;
@@ -8826,7 +8826,7 @@ int func_249()//Position - 0x9715
 		{
 			iLocal_216 = -1;
 			StringCopy(&Local_182, "NULL", 64);
-			StringCopy(&cLocal_191, HUD::_GET_LABEL_TEXT(func_252(func_45())), 64);
+			StringCopy(&cLocal_191, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(func_252(func_45())), 64);
 			StringCopy(&cLocal_200, func_250(func_45()), 64);
 			iLocal_215 = 3;
 			iLocal_209 = 1;
@@ -9963,7 +9963,7 @@ int func_269(int iParam0, int iParam1)//Position - 0xB29F
 
 char* func_270()//Position - 0xB2BF
 {
-	return HUD::_GET_LABEL_TEXT("CREATOR_NO_T");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREATOR_NO_T");
 }
 
 int func_271(int iParam0, var uParam1)//Position - 0xB2CF
@@ -10024,10 +10024,10 @@ void func_272(int iParam0)//Position - 0xB36E
 	iVar0 = 1;
 	iVar1 = 0;
 	iVar2 = 65;
-	HUD::_SHOW_CONTACT_INSTRUCTIONAL_BUTTON(false);
+	HUD::SHOW_CONTACT_INSTRUCTIONAL_BUTTON(false);
 	HUD::SHOW_START_MISSION_INSTRUCTIONAL_BUTTON(true);
 	func_255(iVar0);
-	func_6(iVar0, "", HUD::_GET_LABEL_TEXT(func_279(iParam0)), 0, func_2(), func_278(iParam0), 1, 1, -1, -1, 0, 0, 0, 0);
+	func_6(iVar0, "", HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(func_279(iParam0)), 0, func_2(), func_278(iParam0), 1, 1, -1, -1, 0, 0, 0, 0);
 	if (iParam0 == 0 && Global_1977014 != -1)
 	{
 		if (Global_262145.f_6230[Global_1977014] > 31 || Global_262145.f_6230[Global_1977014] < 0)
@@ -10055,7 +10055,7 @@ void func_272(int iParam0)//Position - 0xB36E
 	iVar1++;
 	func_226(iVar0, iVar1, iVar2, iVar1, 0, " ", 0, 4);
 	iVar1++;
-	func_226(iVar0, iVar1, iVar2, iVar1, 0, HUD::_GET_LABEL_TEXT(func_273(iParam0)), 1, 5);
+	func_226(iVar0, iVar1, iVar2, iVar1, 0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(func_273(iParam0)), 1, 5);
 	iVar1++;
 	func_224(iVar0);
 	HUD::RELEASE_CONTROL_OF_FRONTEND();
@@ -11274,7 +11274,7 @@ void func_293()//Position - 0xD0D6
 
 int func_294()//Position - 0xD0E9
 {
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("fm_deathmatch_creator")) == 0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("fm_race_creator")) == 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("fm_deathmatch_creator")) == 0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("fm_race_creator")) == 0)
 	{
 		return 0;
 	}

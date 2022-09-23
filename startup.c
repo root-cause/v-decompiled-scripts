@@ -92,19 +92,19 @@ void __EntryFunction__()//Position - 0x0
 	Local_51 = { 8.79494f, 0.59893f, 154.8464f };
 	func_82(0);
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
-	HUD::_SET_PLAYER_IS_IN_DIRECTOR_MODE(false);
-	MISC::_SET_PLAYER_IS_IN_ANIMAL_FORM(false);
+	HUD::SET_PLAYER_IS_IN_DIRECTOR_MODE(false);
+	MISC::SET_PLAYER_IS_IN_ANIMAL_FORM(false);
 	STREAMING::REMOVE_IPL("prologue_DistantLights");
 	STREAMING::REMOVE_IPL("prologue_LODLights");
 	iLocal_52 = 0;
 	bVar0 = func_81();
-	if (MISC::_IS_COMMAND_LINE_BENCHMARK_VALUE_SET() || MISC::_LANDING_MENU_IS_ACTIVE())
+	if (MISC::IS_COMMANDLINE_END_USER_BENCHMARK() || MISC::LANDING_SCREEN_STARTED_END_USER_BENCHMARK())
 	{
 		bVar0 = false;
 	}
 	if (bVar0)
 	{
-		SCRIPT::_0xB1577667C3708F9B();
+		SCRIPT::COMMIT_TO_LOADINGSCREEN_SELCTION();
 	}
 	MISC::SET_INSTANCE_PRIORITY_MODE(0);
 	func_77();
@@ -187,12 +187,12 @@ void __EntryFunction__()//Position - 0x0
 	if (iVar2 != iVar3)
 	{
 	}
-	if (!NETWORK::IS_COMMERCE_DATA_VALID() && !NETWORK::_0x1D4DC17C38FEAFF0())
+	if (!NETWORK::IS_COMMERCE_DATA_VALID() && !NETWORK::IS_COMMERCE_DATA_FETCH_IN_PROGRESS())
 	{
-		NETWORK::_0xB606E6CC59664972(0);
+		NETWORK::TRIGGER_COMMERCE_DATA_FETCH(0);
 	}
-	PATHFIND::SET_ALL_PATHS_CACHE_BOUNDINGSTRUCT(false);
-	MISC::_SET_PLAYER_IS_IN_ANIMAL_FORM(false);
+	PATHFIND::SET_ALLOW_STREAM_PROLOGUE_NODES(false);
+	MISC::SET_PLAYER_IS_IN_ANIMAL_FORM(false);
 	func_2();
 	func_1();
 	SCRIPT::TERMINATE_THIS_THREAD();
@@ -320,7 +320,7 @@ void func_6(var uParam0, int iParam1)//Position - 0xBB2
 	StringCopy(&cVar0, "g_SaveData_STRING_ScriptSaves", 32);
 	StringIntConCat(&cVar0, iParam1, 32);
 	MISC::START_SAVE_ARRAY_WITH_SIZE(&(uParam0->f_5540.f_6), 9, &cVar0);
-	MISC::_0x8269816F6CFD40F8(&(uParam0->f_5540.f_6[0 /*8*/]), "TEMPSTAT_LABEL");
+	MISC::REGISTER_TEXT_LABEL_31_TO_SAVE(&(uParam0->f_5540.f_6[0 /*8*/]), "TEMPSTAT_LABEL");
 	MISC::STOP_SAVE_ARRAY();
 }
 
@@ -390,7 +390,7 @@ void func_10(var uParam0, int iParam1)//Position - 0xC97
 	{
 		cVar4 = { Var2 };
 		StringIntConCat(&cVar4, iVar1, 16);
-		MISC::_0x48F069265A0E4BEC(&(uParam0->f_5390.f_18[iVar1 /*6*/]), &cVar4);
+		MISC::REGISTER_TEXT_LABEL_23_TO_SAVE(&(uParam0->f_5390.f_18[iVar1 /*6*/]), &cVar4);
 		iVar1++;
 	}
 	MISC::STOP_SAVE_ARRAY();
@@ -429,19 +429,19 @@ void func_11(var uParam0, int iParam1)//Position - 0xE11
 	StringCopy(&Var0, "MP_BOUNTY_SAVED", 24);
 	StringIntConCat(&Var0, iParam1, 24);
 	MISC::START_SAVE_STRUCT_WITH_SIZE(&(uParam0->f_5149), 241, &Var0);
-	MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149), "BOUNTY_GAMERH64_1");
-	MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_1), "BOUNTY_GAMERH64_2");
-	MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_2), "BOUNTY_GAMERH64_3");
-	MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_3), "BOUNTY_GAMERH64_4");
-	MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_4), "BOUNTY_GAMERH64_5");
-	MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_5), "BOUNTY_GAMERH64_6");
-	MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_6), "BOUNTY_GAMERH64_7");
-	MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_7), "BOUNTY_GAMERH64_8");
-	MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_8), "BOUNTY_GAMERH64_9");
-	MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_9), "BOUNTY_GAMERH64_10");
-	MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_10), "BOUNTY_GAMERH64_11");
-	MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_11), "BOUNTY_GAMERH64_12");
-	MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_12), "BOUNTY_GAMERH64_13");
+	MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149), "BOUNTY_GAMERH64_1");
+	MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_1), "BOUNTY_GAMERH64_2");
+	MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_2), "BOUNTY_GAMERH64_3");
+	MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_3), "BOUNTY_GAMERH64_4");
+	MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_4), "BOUNTY_GAMERH64_5");
+	MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_5), "BOUNTY_GAMERH64_6");
+	MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_6), "BOUNTY_GAMERH64_7");
+	MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_7), "BOUNTY_GAMERH64_8");
+	MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_8), "BOUNTY_GAMERH64_9");
+	MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_9), "BOUNTY_GAMERH64_10");
+	MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_10), "BOUNTY_GAMERH64_11");
+	MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_11), "BOUNTY_GAMERH64_12");
+	MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_12), "BOUNTY_GAMERH64_13");
 	MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_5149.f_13), "BOUNTY_TIME");
 	MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_5149.f_14), "BOUNTY_VALUE");
 	StringConCat(&Var0, "_GH", 24);
@@ -453,67 +453,67 @@ void func_11(var uParam0, int iParam1)//Position - 0xE11
 		StringConCat(&cVar1, "64_", 32);
 		StringIntConCat(&cVar1, iVar2, 32);
 		StringConCat(&cVar1, "_1", 32);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/]), &cVar1);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/]), &cVar1);
 		MemCopy(&cVar1, {Var0}, 8);
 		StringConCat(&cVar1, "64_", 32);
 		StringIntConCat(&cVar1, iVar2, 32);
 		StringConCat(&cVar1, "_2", 32);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/].f_1), &cVar1);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/].f_1), &cVar1);
 		MemCopy(&cVar1, {Var0}, 8);
 		StringConCat(&cVar1, "64_", 32);
 		StringIntConCat(&cVar1, iVar2, 32);
 		StringConCat(&cVar1, "_3", 32);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/].f_2), &cVar1);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/].f_2), &cVar1);
 		MemCopy(&cVar1, {Var0}, 8);
 		StringConCat(&cVar1, "64_", 32);
 		StringIntConCat(&cVar1, iVar2, 32);
 		StringConCat(&cVar1, "_4", 32);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/].f_3), &cVar1);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/].f_3), &cVar1);
 		MemCopy(&cVar1, {Var0}, 8);
 		StringConCat(&cVar1, "64_", 32);
 		StringIntConCat(&cVar1, iVar2, 32);
 		StringConCat(&cVar1, "_5", 32);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/].f_4), &cVar1);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/].f_4), &cVar1);
 		MemCopy(&cVar1, {Var0}, 8);
 		StringConCat(&cVar1, "64_", 32);
 		StringIntConCat(&cVar1, iVar2, 32);
 		StringConCat(&cVar1, "_6", 32);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/].f_5), &cVar1);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/].f_5), &cVar1);
 		MemCopy(&cVar1, {Var0}, 8);
 		StringConCat(&cVar1, "64_", 32);
 		StringIntConCat(&cVar1, iVar2, 32);
 		StringConCat(&cVar1, "_7", 32);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/].f_6), &cVar1);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/].f_6), &cVar1);
 		MemCopy(&cVar1, {Var0}, 8);
 		StringConCat(&cVar1, "64_", 32);
 		StringIntConCat(&cVar1, iVar2, 32);
 		StringConCat(&cVar1, "_8", 32);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/].f_7), &cVar1);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/].f_7), &cVar1);
 		MemCopy(&cVar1, {Var0}, 8);
 		StringConCat(&cVar1, "64_", 32);
 		StringIntConCat(&cVar1, iVar2, 32);
 		StringConCat(&cVar1, "_9", 32);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/].f_8), &cVar1);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/].f_8), &cVar1);
 		MemCopy(&cVar1, {Var0}, 8);
 		StringConCat(&cVar1, "64_", 32);
 		StringIntConCat(&cVar1, iVar2, 32);
 		StringConCat(&cVar1, "_10", 32);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/].f_9), &cVar1);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/].f_9), &cVar1);
 		MemCopy(&cVar1, {Var0}, 8);
 		StringConCat(&cVar1, "64_", 32);
 		StringIntConCat(&cVar1, iVar2, 32);
 		StringConCat(&cVar1, "_11", 32);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/].f_10), &cVar1);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/].f_10), &cVar1);
 		MemCopy(&cVar1, {Var0}, 8);
 		StringConCat(&cVar1, "64_", 32);
 		StringIntConCat(&cVar1, iVar2, 32);
 		StringConCat(&cVar1, "_12", 32);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/].f_11), &cVar1);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/].f_11), &cVar1);
 		MemCopy(&cVar1, {Var0}, 8);
 		StringConCat(&cVar1, "64_", 32);
 		StringIntConCat(&cVar1, iVar2, 32);
 		StringConCat(&cVar1, "_13", 32);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/].f_12), &cVar1);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_5149.f_15[iVar2 /*13*/].f_12), &cVar1);
 		iVar2++;
 	}
 	MISC::STOP_SAVE_ARRAY();
@@ -871,7 +871,7 @@ void func_13(var* uParam0, char* sParam1)//Position - 0x1258
 		StringCopy(&Var1, "Name", 16);
 		StringConCat(&Var1, "_", 16);
 		StringIntConCat(&Var1, iVar4, 16);
-		MISC::_0x8269816F6CFD40F8(&(uParam0->f_2459[iVar4 /*8*/]), &Var1);
+		MISC::REGISTER_TEXT_LABEL_31_TO_SAVE(&(uParam0->f_2459[iVar4 /*8*/]), &Var1);
 		iVar4++;
 	}
 	MISC::STOP_SAVE_ARRAY();
@@ -883,43 +883,43 @@ void func_13(var* uParam0, char* sParam1)//Position - 0x1258
 		StringIntConCat(&Var1, iVar4, 16);
 		cVar6 = { Var1 };
 		StringConCat(&cVar6, "_1", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/]), &cVar6);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/]), &cVar6);
 		cVar6 = { Var1 };
 		StringConCat(&cVar6, "_2", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/].f_1), &cVar6);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/].f_1), &cVar6);
 		cVar6 = { Var1 };
 		StringConCat(&cVar6, "_3", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/].f_2), &cVar6);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/].f_2), &cVar6);
 		cVar6 = { Var1 };
 		StringConCat(&cVar6, "_4", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/].f_3), &cVar6);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/].f_3), &cVar6);
 		cVar6 = { Var1 };
 		StringConCat(&cVar6, "_5", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/].f_4), &cVar6);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/].f_4), &cVar6);
 		cVar6 = { Var1 };
 		StringConCat(&cVar6, "_6", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/].f_5), &cVar6);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/].f_5), &cVar6);
 		cVar6 = { Var1 };
 		StringConCat(&cVar6, "_7", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/].f_6), &cVar6);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/].f_6), &cVar6);
 		cVar6 = { Var1 };
 		StringConCat(&cVar6, "_8", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/].f_7), &cVar6);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/].f_7), &cVar6);
 		cVar6 = { Var1 };
 		StringConCat(&cVar6, "_9", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/].f_8), &cVar6);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/].f_8), &cVar6);
 		cVar6 = { Var1 };
 		StringConCat(&cVar6, "_10", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/].f_9), &cVar6);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/].f_9), &cVar6);
 		cVar6 = { Var1 };
 		StringConCat(&cVar6, "_11", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/].f_10), &cVar6);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/].f_10), &cVar6);
 		cVar6 = { Var1 };
 		StringConCat(&cVar6, "_12", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/].f_11), &cVar6);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/].f_11), &cVar6);
 		cVar6 = { Var1 };
 		StringConCat(&cVar6, "_13", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/].f_12), &cVar6);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_2650[iVar4 /*13*/].f_12), &cVar6);
 		iVar4++;
 	}
 	MISC::STOP_SAVE_ARRAY();
@@ -966,7 +966,7 @@ void func_13(var* uParam0, char* sParam1)//Position - 0x1258
 		StringIntConCat(&Var1, iVar4, 16);
 		cVar7 = { Var1 };
 		StringConCat(&cVar7, "_1", 16);
-		MISC::_0xFAA457EF263E8763(&(uParam0->f_4276[iVar4 /*16*/]), &cVar7);
+		MISC::REGISTER_TEXT_LABEL_63_TO_SAVE(&(uParam0->f_4276[iVar4 /*16*/]), &cVar7);
 		iVar4++;
 	}
 	MISC::STOP_SAVE_ARRAY();
@@ -998,43 +998,43 @@ void func_13(var* uParam0, char* sParam1)//Position - 0x1258
 		StringIntConCat(&Var1, iVar4, 16);
 		cVar8 = { Var1 };
 		StringConCat(&cVar8, "_1", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/]), &cVar8);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/]), &cVar8);
 		cVar8 = { Var1 };
 		StringConCat(&cVar8, "_2", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/].f_1), &cVar8);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/].f_1), &cVar8);
 		cVar8 = { Var1 };
 		StringConCat(&cVar8, "_3", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/].f_2), &cVar8);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/].f_2), &cVar8);
 		cVar8 = { Var1 };
 		StringConCat(&cVar8, "_4", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/].f_3), &cVar8);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/].f_3), &cVar8);
 		cVar8 = { Var1 };
 		StringConCat(&cVar8, "_5", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/].f_4), &cVar8);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/].f_4), &cVar8);
 		cVar8 = { Var1 };
 		StringConCat(&cVar8, "_6", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/].f_5), &cVar8);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/].f_5), &cVar8);
 		cVar8 = { Var1 };
 		StringConCat(&cVar8, "_7", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/].f_6), &cVar8);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/].f_6), &cVar8);
 		cVar8 = { Var1 };
 		StringConCat(&cVar8, "_8", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/].f_7), &cVar8);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/].f_7), &cVar8);
 		cVar8 = { Var1 };
 		StringConCat(&cVar8, "_9", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/].f_8), &cVar8);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/].f_8), &cVar8);
 		cVar8 = { Var1 };
 		StringConCat(&cVar8, "_10", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/].f_9), &cVar8);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/].f_9), &cVar8);
 		cVar8 = { Var1 };
 		StringConCat(&cVar8, "_11", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/].f_10), &cVar8);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/].f_10), &cVar8);
 		cVar8 = { Var1 };
 		StringConCat(&cVar8, "_12", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/].f_11), &cVar8);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/].f_11), &cVar8);
 		cVar8 = { Var1 };
 		StringConCat(&cVar8, "_13", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/].f_12), &cVar8);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4339[iVar4 /*13*/].f_12), &cVar8);
 		iVar4++;
 	}
 	MISC::STOP_SAVE_ARRAY();
@@ -1046,43 +1046,43 @@ void func_13(var* uParam0, char* sParam1)//Position - 0x1258
 		StringIntConCat(&Var1, iVar4, 16);
 		cVar9 = { Var1 };
 		StringConCat(&cVar9, "_1", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/]), &cVar9);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/]), &cVar9);
 		cVar9 = { Var1 };
 		StringConCat(&cVar9, "_2", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/].f_1), &cVar9);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/].f_1), &cVar9);
 		cVar9 = { Var1 };
 		StringConCat(&cVar9, "_3", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/].f_2), &cVar9);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/].f_2), &cVar9);
 		cVar9 = { Var1 };
 		StringConCat(&cVar9, "_4", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/].f_3), &cVar9);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/].f_3), &cVar9);
 		cVar9 = { Var1 };
 		StringConCat(&cVar9, "_5", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/].f_4), &cVar9);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/].f_4), &cVar9);
 		cVar9 = { Var1 };
 		StringConCat(&cVar9, "_6", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/].f_5), &cVar9);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/].f_5), &cVar9);
 		cVar9 = { Var1 };
 		StringConCat(&cVar9, "_7", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/].f_6), &cVar9);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/].f_6), &cVar9);
 		cVar9 = { Var1 };
 		StringConCat(&cVar9, "_8", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/].f_7), &cVar9);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/].f_7), &cVar9);
 		cVar9 = { Var1 };
 		StringConCat(&cVar9, "_9", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/].f_8), &cVar9);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/].f_8), &cVar9);
 		cVar9 = { Var1 };
 		StringConCat(&cVar9, "_10", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/].f_9), &cVar9);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/].f_9), &cVar9);
 		cVar9 = { Var1 };
 		StringConCat(&cVar9, "_11", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/].f_10), &cVar9);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/].f_10), &cVar9);
 		cVar9 = { Var1 };
 		StringConCat(&cVar9, "_12", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/].f_11), &cVar9);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/].f_11), &cVar9);
 		cVar9 = { Var1 };
 		StringConCat(&cVar9, "_13", 16);
-		MISC::_REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/].f_12), &cVar9);
+		MISC::REGISTER_INT64_TO_SAVE(&(uParam0->f_4379[iVar4 /*13*/].f_12), &cVar9);
 		iVar4++;
 	}
 	MISC::STOP_SAVE_ARRAY();
@@ -1094,7 +1094,7 @@ void func_13(var* uParam0, char* sParam1)//Position - 0x1258
 		StringIntConCat(&Var1, iVar4, 16);
 		cVar10 = { Var1 };
 		StringConCat(&cVar10, "_1", 16);
-		MISC::_0xFAA457EF263E8763(&(uParam0->f_4419[iVar4 /*16*/]), &cVar10);
+		MISC::REGISTER_TEXT_LABEL_63_TO_SAVE(&(uParam0->f_4419[iVar4 /*16*/]), &cVar10);
 		iVar4++;
 	}
 	MISC::STOP_SAVE_ARRAY();
@@ -1139,7 +1139,7 @@ void func_15(var* uParam0, int iParam1)//Position - 0x240A
 	MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_60), &cVar0);
 	StringCopy(&cVar0, "tlCarAppPlateText", 64);
 	StringIntConCat(&cVar0, iParam1, 64);
-	MISC::_REGISTER_TEXT_LABEL_TO_SAVE_2(&(uParam0->f_56), &cVar0);
+	MISC::REGISTER_TEXT_LABEL_15_TO_SAVE(&(uParam0->f_56), &cVar0);
 	StringCopy(&cVar0, "iOrderCount", 64);
 	StringIntConCat(&cVar0, iParam1, 64);
 	MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_61), &cVar0);
@@ -1195,11 +1195,11 @@ void func_16(var* uParam0, char* sParam1)//Position - 0x25C3
 	MISC::REGISTER_BOOL_TO_SAVE(&(uParam0->f_18), "bBulletProofTyres");
 	MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_19), "iTurbo");
 	MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_20), "iTyreSmoke");
-	MISC::_REGISTER_TEXT_LABEL_TO_SAVE_2(&(uParam0->f_21), "tlPlateText");
+	MISC::REGISTER_TEXT_LABEL_15_TO_SAVE(&(uParam0->f_21), "tlPlateText");
 	MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_25), "iPlateBack");
 	MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_26), "UID");
 	MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_27), "Cost");
-	MISC::_REGISTER_TEXT_LABEL_TO_SAVE_2(&(uParam0->f_28), "tlPlateText_pending");
+	MISC::REGISTER_TEXT_LABEL_15_TO_SAVE(&(uParam0->f_28), "tlPlateText_pending");
 	MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_32), "iPlateBack_pending");
 	MISC::REGISTER_BOOL_TO_SAVE(&(uParam0->f_33), "bProcessOrder");
 	MISC::REGISTER_BOOL_TO_SAVE(&(uParam0->f_36), "bOrderPending");
@@ -1337,7 +1337,7 @@ void func_18(var* uParam0, char* sParam1)//Position - 0x279B
 	{
 		StringCopy(&cVar1, "NAMEDVEH_", 16);
 		StringIntConCat(&cVar1, iVar0, 16);
-		MISC::_0xFAA457EF263E8763(&(uParam0->f_105[iVar0 /*16*/]), &cVar1);
+		MISC::REGISTER_TEXT_LABEL_63_TO_SAVE(&(uParam0->f_105[iVar0 /*16*/]), &cVar1);
 		iVar0++;
 	}
 	MISC::STOP_SAVE_ARRAY();
@@ -1586,16 +1586,16 @@ void func_32(int iParam0, int iParam1)//Position - 0x30E4
 
 void func_33()//Position - 0x3113
 {
-	REPLAY::_0x7E2BD3EF6C205F09("No_Filter", true);
-	REPLAY::_0x7E2BD3EF6C205F09("phone_cam1", true);
-	REPLAY::_0x7E2BD3EF6C205F09("phone_cam2", true);
-	REPLAY::_0x7E2BD3EF6C205F09("phone_cam3", true);
-	REPLAY::_0x7E2BD3EF6C205F09("phone_cam4", true);
-	REPLAY::_0x7E2BD3EF6C205F09("phone_cam5", true);
-	REPLAY::_0x7E2BD3EF6C205F09("phone_cam6", true);
-	REPLAY::_0x7E2BD3EF6C205F09("phone_cam7", true);
-	REPLAY::_0x7E2BD3EF6C205F09("phone_cam9", true);
-	REPLAY::_0x7E2BD3EF6C205F09("phone_cam12", false);
+	REPLAY::REGISTER_EFFECT_FOR_REPLAY_EDITOR("No_Filter", true);
+	REPLAY::REGISTER_EFFECT_FOR_REPLAY_EDITOR("phone_cam1", true);
+	REPLAY::REGISTER_EFFECT_FOR_REPLAY_EDITOR("phone_cam2", true);
+	REPLAY::REGISTER_EFFECT_FOR_REPLAY_EDITOR("phone_cam3", true);
+	REPLAY::REGISTER_EFFECT_FOR_REPLAY_EDITOR("phone_cam4", true);
+	REPLAY::REGISTER_EFFECT_FOR_REPLAY_EDITOR("phone_cam5", true);
+	REPLAY::REGISTER_EFFECT_FOR_REPLAY_EDITOR("phone_cam6", true);
+	REPLAY::REGISTER_EFFECT_FOR_REPLAY_EDITOR("phone_cam7", true);
+	REPLAY::REGISTER_EFFECT_FOR_REPLAY_EDITOR("phone_cam9", true);
+	REPLAY::REGISTER_EFFECT_FOR_REPLAY_EDITOR("phone_cam12", false);
 }
 
 int func_34(var uParam0, int iParam1)//Position - 0x3175
@@ -3742,7 +3742,7 @@ void func_38(int iParam0, int iParam1, var uParam2, bool bParam3)//Position - 0x
 	Var1 = { *uParam2 - Var0[0 /*6*/] };
 	Var1 = { func_39(Var1, -Var0[0 /*6*/].f_3.f_2) };
 	Var1 = { func_39(Var1, Var0[1 /*6*/].f_3.f_2) };
-	*uParam2 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Var0[1 /*6*/], 0f, Var1) };
+	*uParam2 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var0[1 /*6*/], 0f, Var1) };
 	switch (iParam1)
 	{
 		case 6:
@@ -4097,7 +4097,7 @@ struct<6> func_40(int iParam0, int iParam1)//Position - 0x805B
 	{
 		iVar2 = 1;
 	}
-	if (iVar2 && MISC::_GET_BASE_ELEMENT_METADATA(&Var0, &(Var0.f_3), iParam0, bVar1))
+	if (iVar2 && MISC::GET_BASE_ELEMENT_LOCATION_FROM_METADATA_BLOCK(&Var0, &(Var0.f_3), iParam0, bVar1))
 	{
 		return Var0;
 	}
@@ -4745,7 +4745,7 @@ void func_48(int iParam0, int iParam1, var uParam2, int iParam3, bool bParam4)//
 	Var1 = { *uParam2 - Var0[0 /*6*/] };
 	Var1 = { func_39(Var1, -Var0[0 /*6*/].f_3.f_2) };
 	Var1 = { func_39(Var1, Var0[1 /*6*/].f_3.f_2) };
-	*uParam2 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Var0[1 /*6*/], 0f, Var1) };
+	*uParam2 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var0[1 /*6*/], 0f, Var1) };
 	switch (iParam1)
 	{
 		case 6:
@@ -11436,7 +11436,7 @@ void func_59(struct<4> Param0, var uParam1, var uParam2, struct<6> Param3, struc
 	Var0 = { *uParam7 - Param0 };
 	Var0 = { func_39(Var0, -Param0.f_3.f_2) };
 	Var0 = { func_39(Var0, Param4.f_3.f_2) };
-	*uParam7 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Param4, 0f, Var0) };
+	*uParam7 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Param4, 0f, Var0) };
 	if (!func_60(Param4.f_3, Param0.f_3, 0))
 	{
 		while (Param0.f_3.f_2 > 180f)
@@ -12723,7 +12723,7 @@ int func_67(int iParam0)//Position - 0x2239B
 		}
 		func_68(&sVar2, iParam0, iVar0, bVar1);
 		iVar3 = MISC::GET_HASH_KEY(&sVar2);
-		if (NETSHOPPING::_NET_GAMESERVER_CATALOG_ITEM_EXISTS_HASH(iVar3))
+		if (NETSHOPPING::NET_GAMESERVER_CATALOG_ITEM_KEY_IS_VALID(iVar3))
 		{
 			iVar4 = NETSHOPPING::NET_GAMESERVER_GET_PRICE(iVar3, 426439576, true);
 			Var5 = { func_66(iParam0) };
@@ -13191,7 +13191,7 @@ bool func_70()//Position - 0x22CB6
 
 int func_71()//Position - 0x22CCC
 {
-	switch (NETWORK::_0x155467ACA0F55705())
+	switch (NETWORK::GET_USER_STARTER_ACCESS())
 	{
 		case 1:
 		case 2:
@@ -13206,7 +13206,7 @@ int func_71()//Position - 0x22CCC
 
 int func_72()//Position - 0x22CFA
 {
-	switch (NETWORK::_0x754615490A029508())
+	switch (NETWORK::GET_USER_PREMIUM_ACCESS())
 	{
 		case 1:
 		case 2:
@@ -13297,7 +13297,7 @@ int func_74()//Position - 0x22D60
 	{
 		if (NETWORK::NETWORK_HAS_VALID_ROS_CREDENTIALS())
 		{
-			if (NETWORK::_NETWORK_GET_ROS_PRIVILEGE_25())
+			if (NETWORK::NETWORK_HAS_ROS_PRIVILEGE_SPECIAL_EDITION_CONTENT())
 			{
 				STATS::STAT_GET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), &iVar4, -1);
 				MISC::SET_BIT(&iVar4, 1);
@@ -13312,7 +13312,7 @@ int func_74()//Position - 0x22D60
 					iVar4 = MISC::GET_PROFILE_SETTING(866);
 					MISC::SET_BIT(&iVar4, 1);
 					MISC::SET_BIT(&iVar4, 3);
-					STATS::_SET_HAS_CONTENT_UNLOCKS_FLAGS(iVar4);
+					STATS::SET_HAS_SPECIALEDITION_CONTENT(iVar4);
 				}
 				return 1;
 			}
@@ -13337,7 +13337,7 @@ int func_75()//Position - 0x22E99
 	{
 		if (NETWORK::NETWORK_HAS_VALID_ROS_CREDENTIALS())
 		{
-			if (NETWORK::_NETWORK_GET_ROS_PRIVILEGE_24())
+			if (NETWORK::NETWORK_HAS_ROS_PRIVILEGE_PLAYED_LAST_GEN())
 			{
 				STATS::STAT_GET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), &iVar0, -1);
 				MISC::SET_BIT(&iVar0, 2);
@@ -13351,7 +13351,7 @@ int func_75()//Position - 0x22E99
 				{
 					iVar0 = MISC::GET_PROFILE_SETTING(866);
 					MISC::SET_BIT(&iVar0, 0);
-					STATS::_SET_HAS_CONTENT_UNLOCKS_FLAGS(iVar0);
+					STATS::SET_HAS_SPECIALEDITION_CONTENT(iVar0);
 				}
 				return 1;
 			}
@@ -13371,7 +13371,7 @@ int func_76()//Position - 0x22F51
 {
 	if (MISC::IS_PC_VERSION())
 	{
-		return NETSHOPPING::_NET_GAMESERVER_USE_SERVER_TRANSACTIONS();
+		return NETSHOPPING::NET_GAMESERVER_USE_SERVER_TRANSACTIONS();
 	}
 	return 0;
 }
@@ -13494,7 +13494,7 @@ int func_80(bool bParam0)//Position - 0x2304D
 
 int func_81()//Position - 0x23113
 {
-	if (((LOADINGSCREEN::_LOADINGSCREEN_GET_LOAD_FREEMODE() || LOADINGSCREEN::_0xF2CA003F167E21D2()) || NETWORK::_0x88B588B41FF7868E()) || NETWORK::_0x67FC09BC554A75E5())
+	if (((LOADINGSCREEN::LOBBY_AUTO_MULTIPLAYER_FREEMODE() || LOADINGSCREEN::LOBBY_AUTO_MULTIPLAYER_MENU()) || NETWORK::GET_IS_LAUNCH_FROM_LIVE_AREA()) || NETWORK::GET_IS_LIVE_AREA_LAUNCH_WITH_CONTENT())
 	{
 		return 1;
 	}

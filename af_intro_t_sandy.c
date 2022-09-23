@@ -742,7 +742,7 @@ int func_23()//Position - 0xDA9
 
 int func_24()//Position - 0xE1F
 {
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("player_timetable_scene")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("player_timetable_scene")) > 0)
 	{
 		return 1;
 	}
@@ -887,8 +887,8 @@ void func_33(var uParam0)//Position - 0x109F
 
 void func_34()//Position - 0x10C6
 {
-	BRAIN::_0x0B40ED49D7D6FF84();
-	BRAIN::_PREPARE_SCRIPT_BRAIN();
+	BRAIN::REACTIVATE_ALL_WORLD_BRAINS_THAT_ARE_WAITING_TILL_OUT_OF_RANGE();
+	BRAIN::REACTIVATE_ALL_OBJECT_BRAINS_THAT_ARE_WAITING_TILL_OUT_OF_RANGE();
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 

@@ -1707,7 +1707,7 @@ void func_13(struct<165> Param0, int iParam1, int iParam2)//Position - 0xFFD
 				if (!func_47())
 				{
 					func_257(&Param0, 1, PLAYER::PLAYER_PED_ID(), "FRANKLIN", 0, 1);
-					if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("tonya3")) == 1 || SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("tonya4")) == 1)
+					if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("tonya3")) == 1 || SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("tonya4")) == 1)
 					{
 						if (iLocal_170 == 1)
 						{
@@ -2399,7 +2399,7 @@ void func_38(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 	switch (iLocal_452)
 	{
 		case 1:
-			if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("towing")) == 0)
+			if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("towing")) == 0)
 			{
 				if (iLocal_170 == 1)
 				{
@@ -2481,7 +2481,7 @@ void func_38(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 			break;
 		
 		case 2:
-			if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("towing")) == 0)
+			if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("towing")) == 0)
 			{
 				if (iLocal_170 == 1)
 				{
@@ -2561,7 +2561,7 @@ void func_38(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 			break;
 		
 		case 4:
-			if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("towing")) == 0)
+			if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("towing")) == 0)
 			{
 				if (iLocal_170 == 1)
 				{
@@ -2641,7 +2641,7 @@ void func_38(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 			break;
 		
 		case 6:
-			if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("towing")) == 0)
+			if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("towing")) == 0)
 			{
 				if (iLocal_170 == 1)
 				{
@@ -2944,7 +2944,7 @@ int func_51()//Position - 0x27D5
 
 int func_52(bool bParam0)//Position - 0x2820
 {
-	if (!bParam0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("benchmark")) > 0)
+	if (!bParam0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("benchmark")) > 0)
 	{
 		return 1;
 	}
@@ -4348,7 +4348,7 @@ void func_74(int iParam0, bool bParam1, int iParam2)//Position - 0x4262
 	{
 		iParam2 = func_73();
 	}
-	STATS::_SET_PACKED_STAT_BOOL(iParam0, bParam1, iParam2);
+	STATS::SET_PACKED_STAT_BOOL_CODE(iParam0, bParam1, iParam2);
 }
 
 void func_75(int iParam0)//Position - 0x4280
@@ -4481,7 +4481,7 @@ bool func_78(int iParam0, int iParam1)//Position - 0x4483
 	{
 		iParam1 = func_73();
 	}
-	return STATS::_GET_PACKED_STAT_BOOL(iParam0, iParam1);
+	return STATS::GET_PACKED_STAT_BOOL_CODE(iParam0, iParam1);
 }
 
 int func_79(bool bParam0)//Position - 0x449F
@@ -4750,10 +4750,10 @@ int func_93(int iParam0, int iParam1)//Position - 0x4855
 	{
 		return 0;
 	}
-	iVar0 = PLAYER::_GET_ACHIEVEMENT_PROGRESS(iParam0);
+	iVar0 = PLAYER::GET_ACHIEVEMENT_PROGRESS(iParam0);
 	if (iParam1 > iVar0)
 	{
-		return PLAYER::_SET_ACHIEVEMENT_PROGRESS(iParam0, iParam1);
+		return PLAYER::SET_ACHIEVEMENT_PROGRESS(iParam0, iParam1);
 	}
 	return 0;
 }
@@ -6319,8 +6319,8 @@ int func_136(struct<3> Param0, float fParam1, var uParam2, int iParam3)//Positio
 	Var0 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(Local_824[*uParam2 /*20*/].f_6, 1.5f, 0f, 0f) };
 	Var4 = { ENTITY::GET_ENTITY_COORDS(Local_824[*uParam2 /*20*/].f_6, true) };
 	fVar5 = ENTITY::GET_ENTITY_HEADING(Local_824[*uParam2 /*20*/].f_6);
-	iLocal_850 = VEHICLE::ADD_ROAD_NODE_SPEED_ZONE(OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Var4, fVar5, -1.5f, -30f, 0f), 10f, 0f, false);
-	iLocal_851 = VEHICLE::ADD_ROAD_NODE_SPEED_ZONE(OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Var4, fVar5, -1.5f, 30f, 0f), 10f, 0f, false);
+	iLocal_850 = VEHICLE::ADD_ROAD_NODE_SPEED_ZONE(OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var4, fVar5, -1.5f, -30f, 0f), 10f, 0f, false);
+	iLocal_851 = VEHICLE::ADD_ROAD_NODE_SPEED_ZONE(OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var4, fVar5, -1.5f, 30f, 0f), 10f, 0f, false);
 	MISC::CLEAR_AREA_OF_VEHICLES(Var0, 30f, false, false, false, false, false, false, 0);
 	Local_394[func_256() /*28*/][0 /*3*/] = { Var0.f_0, Var0.f_1, (Var0.f_2 + 1f) };
 	return 1;
@@ -6366,7 +6366,7 @@ int func_137(var uParam0, float* fParam1, var* uParam2, var uParam3)//Position -
 	}
 	PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE_WITH_HEADING(Var3, 2, uParam2, fParam1, &uVar1, 1, 3f, 0f);
 	*uParam0 = { Var3 };
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("tonya4")) == 1)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("tonya4")) == 1)
 	{
 		*uParam0 = { -476.1537f, 132.6556f, 62.9586f };
 		*fParam1 = 87.951f;
@@ -6408,12 +6408,12 @@ void func_139(int iParam0)//Position - 0x71E2
 
 bool func_140()//Position - 0x723B
 {
-	return (MISC::IS_ORBIS_VERSION() || MISC::_0x807ABE1AB65C24D2());
+	return (MISC::IS_ORBIS_VERSION() || MISC::IS_PROSPERO_VERSION());
 }
 
 bool func_141()//Position - 0x7251
 {
-	return (MISC::IS_DURANGO_VERSION() || MISC::_0xC545AB1CF97ABB34());
+	return (MISC::IS_DURANGO_VERSION() || MISC::IS_SCARLETT_VERSION());
 }
 
 void func_142()//Position - 0x7267
@@ -6840,7 +6840,7 @@ int func_153(bool bParam0, bool bParam1, bool bParam2)//Position - 0x7949
 	{
 		return 0;
 	}
-	if (NETWORK::_NETWORK_IS_TEXT_CHAT_ACTIVE())
+	if (NETWORK::NETWORK_TEXT_CHAT_IS_TYPING())
 	{
 		return 0;
 	}
@@ -6848,7 +6848,7 @@ int func_153(bool bParam0, bool bParam1, bool bParam2)//Position - 0x7949
 	{
 		return 0;
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("appinternet")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("appinternet")) > 0)
 	{
 		return 0;
 	}
@@ -7085,7 +7085,7 @@ int func_162(int iParam0)//Position - 0x7D8D
 			return 0;
 		}
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("cellphone_flashhand")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) > 0)
 	{
 		return 1;
 	}
@@ -7957,7 +7957,7 @@ void func_183(var uParam0, int iParam1, int iParam2, int iParam3, var uParam4, i
 			{
 				func_184(iLocal_395, Local_394[func_256() /*28*/].f_17, Local_394[func_256() /*28*/].f_20);
 			}
-			if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("tonya5")) == 1)
+			if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("tonya5")) == 1)
 			{
 				if (!iLocal_205)
 				{
@@ -7989,7 +7989,7 @@ void func_183(var uParam0, int iParam1, int iParam2, int iParam3, var uParam4, i
 			break;
 		
 		case 5:
-			if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("tonya5")) == 1)
+			if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("tonya5")) == 1)
 			{
 				if (!iLocal_205)
 				{
@@ -8057,7 +8057,7 @@ int func_185(var uParam0, var uParam1, struct<3> Param2, var uParam3, var uParam
 			{
 				fParam6 = (fParam6 + 180f);
 			}
-			if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("tonya4")) == 1)
+			if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("tonya4")) == 1)
 			{
 				iVar1 = PED::CREATE_PED(4, joaat("A_M_M_Tourist_01"), *(uParam0[iVar2 /*3*/]), fParam6, true, true);
 				PED::SET_PED_COMPONENT_VARIATION(iVar1, 0, 0, 1, 0);
@@ -8068,7 +8068,7 @@ int func_185(var uParam0, var uParam1, struct<3> Param2, var uParam3, var uParam
 				PED::SET_PED_COMPONENT_VARIATION(iVar1, 10, 1, 1, 0);
 				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("A_M_M_Tourist_01"));
 			}
-			else if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("tonya5")) == 1)
+			else if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("tonya5")) == 1)
 			{
 				if (iVar2 == 0)
 				{
@@ -8279,7 +8279,7 @@ int func_189()//Position - 0x9304
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_171);
 						TASK::TASK_LEAVE_ANY_VEHICLE(0, 0, 0);
-						TASK::TASK_GO_TO_COORD_ANY_MEANS(0, OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Local_393[iLocal_450 /*23*/].f_1, Local_393[iLocal_450 /*23*/].f_4, 0f, 15f, 0f), 3f, 0, false, 786603, -1f);
+						TASK::TASK_GO_TO_COORD_ANY_MEANS(0, OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Local_393[iLocal_450 /*23*/].f_1, Local_393[iLocal_450 /*23*/].f_4, 0f, 15f, 0f), 3f, 0, false, 786603, -1f);
 						TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, PLAYER::PLAYER_PED_ID(), -1);
 						TASK::CLOSE_SEQUENCE_TASK(iLocal_171);
 						PED::SET_PED_FLEE_ATTRIBUTES(Local_824[0 /*20*/], 64, false);
@@ -8467,7 +8467,7 @@ void func_193()//Position - 0x9978
 	}
 	if (iLocal_794 && !ENTITY::IS_ENTITY_DEAD(Local_824[0 /*20*/].f_7, false))
 	{
-		VEHICLE::_0x1CF38D529D7441D9(Local_824[0 /*20*/].f_7, true);
+		VEHICLE::SET_VEHICLE_STAYS_FROZEN_WHEN_CLEANED_UP(Local_824[0 /*20*/].f_7, true);
 		VEHICLE::SET_MISSION_TRAIN_AS_NO_LONGER_NEEDED(&(Local_824[0 /*20*/].f_7), false);
 		VEHICLE::SET_RANDOM_TRAINS(true);
 		func_127(0, 1);
@@ -9613,7 +9613,7 @@ int func_211(int iParam0, int iParam1)//Position - 0xB84C
 
 void func_212()//Position - 0xB91C
 {
-	RECORDING::_STOP_RECORDING_THIS_FRAME();
+	RECORDING::REPLAY_PREVENT_RECORDING_THIS_FRAME();
 	func_213();
 }
 
@@ -11927,9 +11927,9 @@ void func_270(char* sParam0)//Position - 0xF881
 		{
 			StringCopy(&Global_78551, sParam0, 16);
 			StringCopy(&Global_78555, "", 16);
-			if (RECORDING::_IS_RECORDING())
+			if (RECORDING::IS_REPLAY_RECORDING())
 			{
-				RECORDING::_STOP_RECORDING_AND_SAVE_CLIP();
+				RECORDING::STOP_REPLAY_RECORDING();
 			}
 		}
 	}

@@ -677,7 +677,7 @@ void func_3()//Position - 0x687
 	
 	Var0.f_0 = 390850539;
 	Var0.f_1 = PLAYER::PLAYER_ID();
-	SCRIPT::_TRIGGER_SCRIPT_EVENT_2(1, &Var0, 2, func_4(1, 1));
+	SCRIPT::SEND_TU_SCRIPT_EVENT(1, &Var0, 2, func_4(1, 1));
 }
 
 int func_4(int iParam0, bool bParam1)//Position - 0x6AC
@@ -4205,7 +4205,7 @@ void func_93(var uParam0)//Position - 0x41AE
 					{
 						if (!HUD::DOES_BLIP_EXIST(uParam0->f_5))
 						{
-							PATHFIND::_SET_IGNORE_SECONDARY_ROUTE_NODES(true);
+							PATHFIND::SET_IGNORE_NO_GPS_FLAG_UNTIL_FIRST_NORMAL_NODE(true);
 							uParam0->f_5 = HUD::ADD_BLIP_FOR_COORD(Var1);
 							HUD::SET_BLIP_SPRITE(uParam0->f_5, 52);
 							HUD::SET_BLIP_SCALE(uParam0->f_5, 1f);
@@ -4496,14 +4496,14 @@ void func_105(var uParam0)//Position - 0x4787
 			iVar0 = func_148(1168, -1, 0);
 			if (iLocal_331 > -1 && iVar0 == iLocal_331)
 			{
-				if (!BitTest(Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_143, 2) && ((SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("am_hold_up")) == 0 && !BitTest(Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_143, 16)) && !func_112()))
+				if (!BitTest(Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_143, 2) && ((SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("am_hold_up")) == 0 && !BitTest(Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_143, 16)) && !func_112()))
 				{
 					MISC::SET_BIT(&(uParam0->f_1), 9);
 					MISC::SET_BIT(&(uParam0->f_1), 7);
 				}
 				else if (*uParam0 >= 1)
 				{
-					if ((!func_115() && !BitTest(uParam0->f_1, 8)) && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("am_hold_up")) == 0)
+					if ((!func_115() && !BitTest(uParam0->f_1, 8)) && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("am_hold_up")) == 0)
 					{
 						MISC::SET_BIT(&(uParam0->f_1), 9);
 						MISC::SET_BIT(&(uParam0->f_1), 7);
@@ -4609,7 +4609,7 @@ void func_108(int iParam0, int iParam1, int iParam2)//Position - 0x4A5B
 	Var0.f_3 = iParam1;
 	if (!iParam2 == 0)
 	{
-		SCRIPT::_TRIGGER_SCRIPT_EVENT_2(1, &Var0, 4, iParam2);
+		SCRIPT::SEND_TU_SCRIPT_EVENT(1, &Var0, 4, iParam2);
 	}
 }
 
@@ -4821,7 +4821,7 @@ void func_120()//Position - 0x4E56
 				{
 					if (iVar1 != PLAYER::PLAYER_ID())
 					{
-						if (NETWORK::_NETWORK_IS_PLAYER_EQUAL_TO_INDEX(PLAYER::PLAYER_ID(), iVar1))
+						if (NETWORK::NETWORK_ARE_PLAYERS_IN_SAME_TUTORIAL_SESSION(PLAYER::PLAYER_ID(), iVar1))
 						{
 							if (func_128(iVar1))
 							{
@@ -5365,7 +5365,7 @@ void func_149(int iParam0, int iParam1, int iParam2)//Position - 0x5668
 	Var0.f_3 = iParam1;
 	if (!iParam2 == 0)
 	{
-		SCRIPT::_TRIGGER_SCRIPT_EVENT_2(1, &Var0, 4, iParam2);
+		SCRIPT::SEND_TU_SCRIPT_EVENT(1, &Var0, 4, iParam2);
 	}
 }
 
@@ -5730,7 +5730,7 @@ void func_159(int iParam0, int iParam1, bool bParam2, char* sParam3, char* sPara
 			if (bVar6)
 			{
 				Var7 = { func_140(iVar0) };
-				iVar8 = NETWORK::_0x36391F397731595D(&Var7);
+				iVar8 = NETWORK::NETWORK_START_COMMUNICATION_PERMISSIONS_CHECK(&Var7);
 				if (iVar8 != -1)
 				{
 					Global_2656326[iVar4 /*46*/].f_41 = iVar8;
@@ -5744,7 +5744,7 @@ void func_159(int iParam0, int iParam1, bool bParam2, char* sParam3, char* sPara
 
 bool func_160()//Position - 0x5E9D
 {
-	return (MISC::IS_DURANGO_VERSION() || MISC::_0xC545AB1CF97ABB34());
+	return (MISC::IS_DURANGO_VERSION() || MISC::IS_SCARLETT_VERSION());
 }
 
 void func_161()//Position - 0x5EB3
@@ -5856,7 +5856,7 @@ struct<6> func_164()//Position - 0x6035
 		}
 		else
 		{
-			iVar1 = MISC::_GET_CONTENT_MAP_INDEX(iVar2);
+			iVar1 = MISC::GET_CONTENT_ID_INDEX(iVar2);
 			if (iVar1 != -1)
 			{
 				Var0 = { Global_794709.f_203837[Global_794709.f_177589[iVar1 /*13*/].f_10 /*6*/] };
@@ -5896,7 +5896,7 @@ int func_166(int iParam0)//Position - 0x60C9
 			return 0;
 		}
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("cellphone_flashhand")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) > 0)
 	{
 		return 1;
 	}
@@ -6400,11 +6400,11 @@ int func_187(int iParam0, char* sParam1, int iParam2, int iParam3, char* sParam4
 		{
 			return 0;
 		}
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("appemail")) > 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("appemail")) > 0)
 		{
 			return 0;
 		}
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("appmpemail")) > 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("appmpemail")) > 0)
 		{
 			return 0;
 		}
@@ -6561,7 +6561,7 @@ void func_188(int iParam0, char* sParam1, bool bParam2, int iParam3)//Position -
 	{
 		return;
 	}
-	STATS::_PLAYSTATS_NPC_PHONE(iParam0, -1180597171, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
+	STATS::PLAYSTATS_NPC_PHONE(iParam0, -1180597171, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
 	if (bParam2)
 	{
 		Global_1973156 = -1;
@@ -7343,7 +7343,7 @@ char* func_214(char* sParam0, bool bParam1, int iParam2)//Position - 0x7A7D
 	{
 		return sParam0;
 	}
-	return HUD::_GET_LABEL_TEXT(sParam0);
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(sParam0);
 }
 
 int func_215(int iParam0)//Position - 0x7ABA
@@ -7710,11 +7710,11 @@ int func_228(int iParam0, char* sParam1, int iParam2, int iParam3, char* sParam4
 		{
 			return 0;
 		}
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("apptextmessage")) > 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("apptextmessage")) > 0)
 		{
 			return 0;
 		}
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("apptextmessage")) > 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("apptextmessage")) > 0)
 		{
 			return 0;
 		}
@@ -7898,7 +7898,7 @@ void func_229(int iParam0, char* sParam1, bool bParam2, int iParam3)//Position -
 	{
 		return;
 	}
-	STATS::_PLAYSTATS_NPC_PHONE(iParam0, 1654525105, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
+	STATS::PLAYSTATS_NPC_PHONE(iParam0, 1654525105, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
 	if (bParam2)
 	{
 		Global_1973156 = -1;
@@ -8995,12 +8995,12 @@ void func_281()//Position - 0x95FF
 	char cVar1[64];
 	char* sVar2;
 	
-	StringCopy(&cVar0, HUD::_GET_LABEL_TEXT(&(Global_1998[Global_8822 /*29*/].f_7)), 64);
+	StringCopy(&cVar0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_1998[Global_8822 /*29*/].f_7)), 64);
 	if (Global_8841 == 0)
 	{
 		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("");
-		StringCopy(&cVar1, HUD::_GET_LABEL_TEXT(&(Global_8746[1 /*6*/])), 64);
-		sVar2 = HUD::_GET_LABEL_TEXT("CELL_253");
+		StringCopy(&cVar1, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_8746[1 /*6*/])), 64);
+		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253");
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, sVar2, &cVar1);
 	}
 	else
@@ -9189,7 +9189,7 @@ void func_293()//Position - 0x98FA
 	Var0.f_0 = -965690359;
 	Var0.f_1 = PLAYER::PLAYER_ID();
 	Var0.f_2 = MISC::GET_FRAME_COUNT();
-	SCRIPT::_TRIGGER_SCRIPT_EVENT_2(1, &Var0, 3, func_4(1, 1));
+	SCRIPT::SEND_TU_SCRIPT_EVENT(1, &Var0, 3, func_4(1, 1));
 }
 
 void func_294(bool bParam0)//Position - 0x9927
@@ -9338,7 +9338,7 @@ int func_304(int iParam0)//Position - 0x9B2A
 
 void func_305()//Position - 0x9B38
 {
-	PATHFIND::_SET_IGNORE_SECONDARY_ROUTE_NODES(false);
+	PATHFIND::SET_IGNORE_NO_GPS_FLAG_UNTIL_FIRST_NORMAL_NODE(false);
 	func_25();
 	func_24(8, 0);
 	NETWORK::NETWORK_SET_FRIENDLY_FIRE_OPTION(true);
@@ -9425,7 +9425,7 @@ int func_308()//Position - 0x9BD5
 	}
 	if (func_309() != 0)
 	{
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(func_309()) == 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(func_309()) == 0)
 		{
 			return 1;
 		}

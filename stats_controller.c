@@ -197,7 +197,7 @@ void func_2()//Position - 0xD7
 		return;
 	}
 	bVar1 = false;
-	if ((iLocal_55 == 6 && func_84(64)) || (iLocal_55 == 5 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("pilot_school")) > 0))
+	if ((iLocal_55 == 6 && func_84(64)) || (iLocal_55 == 5 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("pilot_school")) > 0))
 	{
 		bVar1 = true;
 		iLocal_60 = 1;
@@ -919,7 +919,7 @@ int func_19(int iParam0, bool bParam1, bool bParam2)//Position - 0xC5D
 
 int func_20()//Position - 0xCBD
 {
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("appcamera")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("appcamera")) > 0)
 	{
 		return 1;
 	}
@@ -946,7 +946,7 @@ int func_21(int iParam0)//Position - 0xCDA
 			return 0;
 		}
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("cellphone_flashhand")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) > 0)
 	{
 		return 1;
 	}
@@ -1061,7 +1061,7 @@ int func_32()//Position - 0xE66
 
 int func_33()//Position - 0xE88
 {
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("maintransition")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("maintransition")) > 0)
 	{
 		return 1;
 	}
@@ -1085,7 +1085,7 @@ void func_34(bool bParam0, int iParam1)//Position - 0xEA2
 	switch (bParam0)
 	{
 		case 0:
-			STATS::_0x0D01D20616FC73FB(0, iParam1);
+			STATS::SET_FREEMODE_PROLOGUE_DONE(0, iParam1);
 			iVar1 = func_35(iParam1);
 			iVar0 = MISC::GET_PROFILE_SETTING(iVar1);
 			break;
@@ -1096,7 +1096,7 @@ void func_34(bool bParam0, int iParam1)//Position - 0xEA2
 			if (!BitTest(iVar0, bParam0))
 			{
 				MISC::SET_BIT(&iVar0, bParam0);
-				STATS::_0x0D01D20616FC73FB(iVar0, iParam1);
+				STATS::SET_FREEMODE_PROLOGUE_DONE(iVar0, iParam1);
 			}
 			break;
 	}
@@ -1230,7 +1230,7 @@ int func_40()//Position - 0x10D2
 	{
 		if (NETWORK::NETWORK_HAS_VALID_ROS_CREDENTIALS())
 		{
-			if (NETWORK::_NETWORK_GET_ROS_PRIVILEGE_24())
+			if (NETWORK::NETWORK_HAS_ROS_PRIVILEGE_PLAYED_LAST_GEN())
 			{
 				STATS::STAT_GET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), &iVar0, -1);
 				MISC::SET_BIT(&iVar0, 2);
@@ -1244,7 +1244,7 @@ int func_40()//Position - 0x10D2
 				{
 					iVar0 = MISC::GET_PROFILE_SETTING(866);
 					MISC::SET_BIT(&iVar0, 0);
-					STATS::_SET_HAS_CONTENT_UNLOCKS_FLAGS(iVar0);
+					STATS::SET_HAS_SPECIALEDITION_CONTENT(iVar0);
 				}
 				return 1;
 			}
@@ -1497,7 +1497,7 @@ int func_51(int iParam0, int iParam1)//Position - 0x12A4
 
 int func_52(bool bParam0)//Position - 0x14B4
 {
-	if (!bParam0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("benchmark")) > 0)
+	if (!bParam0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("benchmark")) > 0)
 	{
 		return 1;
 	}
@@ -2596,7 +2596,7 @@ void func_74(int iParam0, int iParam1)//Position - 0x2A48
 			break;
 		
 		case 7:
-			if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("armenian3")) != 0 || SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("trevor3")) != 0)
+			if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("armenian3")) != 0 || SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("trevor3")) != 0)
 			{
 				Global_97724 = 1;
 			}

@@ -2718,7 +2718,7 @@ void func_15(var uParam0)//Position - 0xA43
 				func_20(uParam0);
 			}
 		}
-		if (PAD::_0x6CD79468A1E595C6(2))
+		if (PAD::HAVE_CONTROLS_CHANGED(2))
 		{
 			func_4(uParam0, 1);
 		}
@@ -2736,7 +2736,7 @@ void func_15(var uParam0)//Position - 0xA43
 		}
 		else
 		{
-			PAD::_0x7F4724035FDCA1DD(2);
+			PAD::ALLOW_ALTERNATIVE_SCRIPT_CONTROLS_LAYOUT(2);
 			PAD::DISABLE_CONTROL_ACTION(0, 24, true);
 			PAD::DISABLE_CONTROL_ACTION(0, 257, true);
 			PAD::DISABLE_CONTROL_ACTION(0, 142, true);
@@ -2751,7 +2751,7 @@ void func_15(var uParam0)//Position - 0xA43
 				{
 					if (uParam0->f_1.f_1 == 1 || uParam0->f_1.f_1 == 0)
 					{
-						if (PAD::_IS_USING_KEYBOARD(2))
+						if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 						{
 							func_47(&(uParam0->f_6), 4, "MPOF_AC_PC_EXIT", 0, 0, 0, 0);
 						}
@@ -2760,7 +2760,7 @@ void func_15(var uParam0)//Position - 0xA43
 							func_47(&(uParam0->f_6), 4, "MPOF_AC_EXIT", 0, 0, 0, 0);
 						}
 					}
-					else if (PAD::_IS_USING_KEYBOARD(2))
+					else if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 					{
 						func_47(&(uParam0->f_6), 4, "MPOFSEAT_PCEXIT", 0, 0, 0, 0);
 					}
@@ -2771,7 +2771,7 @@ void func_15(var uParam0)//Position - 0xA43
 				}
 				if (uParam0->f_13 == 6)
 				{
-					if (PAD::_IS_USING_KEYBOARD(2))
+					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 					{
 						iVar2 = 225;
 					}
@@ -2946,7 +2946,7 @@ void func_26(var uParam0)//Position - 0xFA0
 	
 	if (uParam0->f_1.f_1 == 3)
 	{
-		CAM::_CLAMP_GAMEPLAY_CAM_PITCH(-70.0027f, -10.1277f);
+		CAM::SET_THIRD_PERSON_CAM_RELATIVE_PITCH_LIMITS_THIS_UPDATE(-70.0027f, -10.1277f);
 	}
 	switch (uParam0->f_13)
 	{
@@ -2959,7 +2959,7 @@ void func_26(var uParam0)//Position - 0xFA0
 			HUD::DISPLAY_AMMO_THIS_FRAME(false);
 			HUD::HIDE_HUD_COMPONENT_THIS_FRAME(19);
 			HUD::HIDE_HUD_COMPONENT_THIS_FRAME(2);
-			HUD::_HUD_WEAPON_WHEEL_IGNORE_SELECTION();
+			HUD::HUD_SUPPRESS_WEAPON_WHEEL_RESULTS_THIS_FRAME();
 			func_30();
 			if (WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar0, true) && iVar0 != joaat("WEAPON_UNARMED"))
 			{
@@ -3122,7 +3122,7 @@ int func_36(int iParam0)//Position - 0x11F8
 			return 0;
 		}
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("cellphone_flashhand")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) > 0)
 	{
 		return 1;
 	}
@@ -3634,7 +3634,7 @@ void func_47(var uParam0, int iParam1, char* sParam2, int iParam3, char* sParam4
 {
 	int iVar0;
 	
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("context_controller")) < 1)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("context_controller")) < 1)
 	{
 	}
 	if (STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
@@ -3854,7 +3854,7 @@ void func_61(var uParam0)//Position - 0x1DF2
 	}
 	else if (uParam0->f_13 > 4)
 	{
-		CAM::_DISABLE_CAM_COLLISION_FOR_ENTITY(PLAYER::PLAYER_PED_ID());
+		CAM::SET_GAMEPLAY_CAM_IGNORE_ENTITY_COLLISION_THIS_UPDATE(PLAYER::PLAYER_PED_ID());
 		PED::SET_PED_CAPSULE(PLAYER::PLAYER_PED_ID(), func_62());
 		uParam0->f_12 = MISC::GET_FRAME_COUNT();
 	}
@@ -3953,7 +3953,7 @@ int func_67()//Position - 0x1F09
 	}
 	if (func_68() != 0)
 	{
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(func_68()) == 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(func_68()) == 0)
 		{
 			return 1;
 		}

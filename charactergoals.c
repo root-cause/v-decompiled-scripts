@@ -766,7 +766,7 @@ void func_11(int iParam0, bool bParam1, int iParam2)//Position - 0xE70
 	{
 		iParam2 = func_10();
 	}
-	STATS::_SET_PACKED_STAT_BOOL(iParam0, bParam1, iParam2);
+	STATS::SET_PACKED_STAT_BOOL_CODE(iParam0, bParam1, iParam2);
 }
 
 void func_12(int iParam0)//Position - 0xE8E
@@ -899,7 +899,7 @@ bool func_15(int iParam0, int iParam1)//Position - 0x1091
 	{
 		iParam1 = func_10();
 	}
-	return STATS::_GET_PACKED_STAT_BOOL(iParam0, iParam1);
+	return STATS::GET_PACKED_STAT_BOOL_CODE(iParam0, iParam1);
 }
 
 int func_16(bool bParam0)//Position - 0x10AD
@@ -1173,10 +1173,10 @@ int func_31(int iParam0, int iParam1)//Position - 0x1471
 	{
 		return 0;
 	}
-	iVar0 = PLAYER::_GET_ACHIEVEMENT_PROGRESS(iParam0);
+	iVar0 = PLAYER::GET_ACHIEVEMENT_PROGRESS(iParam0);
 	if (iParam1 > iVar0)
 	{
-		return PLAYER::_SET_ACHIEVEMENT_PROGRESS(iParam0, iParam1);
+		return PLAYER::SET_ACHIEVEMENT_PROGRESS(iParam0, iParam1);
 	}
 	return 0;
 }
@@ -1306,7 +1306,7 @@ int func_42(int iParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x1
 
 int func_43(var uParam0, var uParam1, bool bParam2, int iParam3)//Position - 0x16E6
 {
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("appsidetask")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("appsidetask")) > 0)
 	{
 		return 0;
 	}

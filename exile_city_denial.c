@@ -64,7 +64,7 @@ void __EntryFunction__()//Position - 0x0
 	fLocal_26 = 0.17f;
 	iLocal_28 = -1;
 	bLocal_32 = true;
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("exile_city_denial")) > 1)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("exile_city_denial")) > 1)
 	{
 		Global_43017 = 0;
 		SCRIPT::TERMINATE_THIS_THREAD();
@@ -250,7 +250,7 @@ void __EntryFunction__()//Position - 0x0
 					{
 						if ((!func_9(0) && !func_9(4)) && !func_9(3))
 						{
-							if (MISC::_GET_NUM_DISPATCHED_UNITS_FOR_PLAYER(11) < 256)
+							if (MISC::GET_NUMBER_RESOURCES_ALLOCATED_TO_WANTED_LEVEL(11) < 256)
 							{
 								if (ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()))
 								{
@@ -289,7 +289,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			if (!MISC::IS_INCIDENT_VALID(iLocal_33))
 			{
-				if (MISC::_GET_NUM_DISPATCHED_UNITS_FOR_PLAYER(11) < 256)
+				if (MISC::GET_NUMBER_RESOURCES_ALLOCATED_TO_WANTED_LEVEL(11) < 256)
 				{
 					if (ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()))
 					{
@@ -311,7 +311,7 @@ void __EntryFunction__()//Position - 0x0
 				{
 					MISC::SET_INCIDENT_REQUESTED_UNITS(iLocal_33, 11, iVar0);
 				}
-				else if (MISC::_GET_NUM_DISPATCHED_UNITS_FOR_PLAYER(11) < 256)
+				else if (MISC::GET_NUMBER_RESOURCES_ALLOCATED_TO_WANTED_LEVEL(11) < 256)
 				{
 					if (ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()))
 					{
@@ -800,7 +800,7 @@ int func_13(int iParam0)//Position - 0xC59
 
 int func_14(bool bParam0)//Position - 0xCC3
 {
-	if (!bParam0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("benchmark")) > 0)
+	if (!bParam0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("benchmark")) > 0)
 	{
 		return 1;
 	}

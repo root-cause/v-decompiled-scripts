@@ -56,7 +56,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_29 = 194;
 	iLocal_30 = 52;
 	iLocal_28 = 77;
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("rampage_controller")) > 1)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("rampage_controller")) > 1)
 	{
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
@@ -1003,7 +1003,7 @@ int func_29()//Position - 0x1325
 
 int func_30(bool bParam0)//Position - 0x1370
 {
-	if (!bParam0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("benchmark")) > 0)
+	if (!bParam0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("benchmark")) > 0)
 	{
 		return 1;
 	}
@@ -1031,10 +1031,10 @@ int func_32(int iParam0, int iParam1)//Position - 0x13A3
 	{
 		return 0;
 	}
-	iVar0 = PLAYER::_GET_ACHIEVEMENT_PROGRESS(iParam0);
+	iVar0 = PLAYER::GET_ACHIEVEMENT_PROGRESS(iParam0);
 	if (iParam1 > iVar0)
 	{
-		return PLAYER::_SET_ACHIEVEMENT_PROGRESS(iParam0, iParam1);
+		return PLAYER::SET_ACHIEVEMENT_PROGRESS(iParam0, iParam1);
 	}
 	return 0;
 }
@@ -1045,7 +1045,7 @@ void func_33(int iParam0, bool bParam1, int iParam2)//Position - 0x13F4
 	{
 		iParam2 = func_34();
 	}
-	STATS::_SET_PACKED_STAT_BOOL(iParam0, bParam1, iParam2);
+	STATS::SET_PACKED_STAT_BOOL_CODE(iParam0, bParam1, iParam2);
 }
 
 int func_34()//Position - 0x1412

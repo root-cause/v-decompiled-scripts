@@ -240,7 +240,7 @@ void func_10(int iParam0)//Position - 0x328
 	struct<3> Var0;
 	
 	Var0 = { ENTITY::GET_ENTITY_COORDS(iLocal_31, false) };
-	HUD::_SET_PLAYER_BLIP_POSITION_THIS_FRAME(Var0.f_0, Var0.f_1);
+	HUD::SET_FAKE_PAUSEMAP_PLAYER_POSITION_THIS_FRAME(Var0.f_0, Var0.f_1);
 	switch (iParam0)
 	{
 		case 0:
@@ -251,7 +251,7 @@ void func_10(int iParam0)//Position - 0x328
 		
 		case 2:
 			Var0 = { ENTITY::GET_ENTITY_COORDS(iLocal_31, false) };
-			HUD::_SET_PLAYER_BLIP_POSITION_THIS_FRAME(Var0.f_0, Var0.f_1);
+			HUD::SET_FAKE_PAUSEMAP_PLAYER_POSITION_THIS_FRAME(Var0.f_0, Var0.f_1);
 			break;
 		
 		case 3:

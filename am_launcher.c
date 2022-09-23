@@ -1227,7 +1227,7 @@ void func_12(int iParam0, int iParam1)//Position - 0x10B0
 	Var0.f_2 = iParam1;
 	if (!iParam0 == 0)
 	{
-		SCRIPT::_TRIGGER_SCRIPT_EVENT_2(1, &Var0, 3, iParam0);
+		SCRIPT::SEND_TU_SCRIPT_EVENT(1, &Var0, 3, iParam0);
 	}
 }
 
@@ -4479,7 +4479,7 @@ int func_103(struct<3> Param0, float fParam1, int iParam2, int iParam3, float fP
 		iVar1 = iVar0;
 		if (func_112(iVar1, 1, 1))
 		{
-			if (!func_105(iVar1, 0) && NETWORK::_NETWORK_IS_PLAYER_EQUAL_TO_INDEX(PLAYER::PLAYER_ID(), iVar1))
+			if (!func_105(iVar1, 0) && NETWORK::NETWORK_ARE_PLAYERS_IN_SAME_TUTORIAL_SESSION(PLAYER::PLAYER_ID(), iVar1))
 			{
 				if (iParam2 == 1 || (iParam2 == 0 && iVar1 != PLAYER::PLAYER_ID()))
 				{
@@ -4668,7 +4668,7 @@ int func_113(struct<3> Param0, float fParam1, bool bParam2, bool bParam3, bool b
 		{
 			if (func_112(iVar1, bParam2, bParam3))
 			{
-				if (iParam8 || NETWORK::_NETWORK_IS_PLAYER_EQUAL_TO_INDEX(PLAYER::PLAYER_ID(), iVar1))
+				if (iParam8 || NETWORK::NETWORK_ARE_PLAYERS_IN_SAME_TUTORIAL_SESSION(PLAYER::PLAYER_ID(), iVar1))
 				{
 					if (!bParam5 || (!PED::IS_PED_INJURED(PLAYER::GET_PLAYER_PED(iVar1)) && func_104(iVar1)))
 					{
@@ -5115,7 +5115,7 @@ int func_138(int iParam0, int iParam1, int iParam2, struct<3> Param3)//Position 
 	int iVar1;
 	int iVar2;
 	
-	NETWORK::_GET_RESERVATIONS_FOR_SLOT_WORLD_POSITION(Param3, 0, &iVar0, &iVar1, &iVar2);
+	NETWORK::GET_RESERVED_MISSION_ENTITIES_IN_AREA(Param3, 0, &iVar0, &iVar1, &iVar2);
 	if ((iParam0 <= (func_135(0) - iVar0) && iParam1 <= (func_135(1) - iVar1)) && iParam2 <= (func_135(2) - iVar2))
 	{
 		return 1;
@@ -13287,7 +13287,7 @@ bool func_287(int iParam0, int iParam1)//Position - 0xEF51
 	{
 		iParam1 = func_107();
 	}
-	return STATS::_GET_PACKED_STAT_BOOL(iParam0, iParam1);
+	return STATS::GET_PACKED_STAT_BOOL_CODE(iParam0, iParam1);
 }
 
 int func_288(int iParam0, int iParam1)//Position - 0xEF6D
@@ -13979,7 +13979,7 @@ void func_302(int iParam0, int iParam1)//Position - 0xF8FE
 	Var0.f_2 = iParam1;
 	if (!iParam0 == 0)
 	{
-		SCRIPT::_TRIGGER_SCRIPT_EVENT_2(1, &Var0, 3, iParam0);
+		SCRIPT::SEND_TU_SCRIPT_EVENT(1, &Var0, 3, iParam0);
 	}
 }
 
@@ -14834,7 +14834,7 @@ void func_325()//Position - 0x10477
 				if (!func_393(PLAYER::PLAYER_ID(), 2))
 				{
 					Local_200.f_16 = -1;
-					if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(MISC::GET_HASH_KEY(&cVar1)) == 0)
+					if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(MISC::GET_HASH_KEY(&cVar1)) == 0)
 					{
 						if (!NETWORK::NETWORK_IS_SCRIPT_ACTIVE(&cVar1, -1, false, 0) || NETWORK::NETWORK_GET_NUM_SCRIPT_PARTICIPANTS(&cVar1, -1, 0) < 32)
 						{
@@ -14849,7 +14849,7 @@ void func_325()//Position - 0x10477
 						}
 					}
 				}
-				else if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(MISC::GET_HASH_KEY(&cVar1)) != 0)
+				else if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(MISC::GET_HASH_KEY(&cVar1)) != 0)
 				{
 					if (Global_2779753.f_2 == 7)
 					{
@@ -16909,7 +16909,7 @@ int func_397()//Position - 0x129A3
 	}
 	if (func_398() != 0)
 	{
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(func_398()) == 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(func_398()) == 0)
 		{
 			return 1;
 		}

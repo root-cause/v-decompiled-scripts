@@ -90,7 +90,7 @@ void __EntryFunction__()//Position - 0x0
 	{
 		func_126();
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("ambient_sonar")) > 1)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("ambient_sonar")) > 1)
 	{
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
@@ -483,7 +483,7 @@ int func_14(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0x7
 		{
 			func_27();
 		}
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(Global_8143[iParam0 /*15*/].f_9) > 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(Global_8143[iParam0 /*15*/].f_9) > 0)
 		{
 			MISC::CLEAR_BIT(&Global_4541229, 14);
 			MISC::CLEAR_BIT(&Global_4541229, 16);
@@ -522,12 +522,12 @@ int func_14(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0x7
 	}
 	if (!SCRIPT::IS_THREAD_ACTIVE(Global_20263))
 	{
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("cellphone_flashhand")) == 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) == 0)
 		{
 			if (Global_20266.f_1 < 4)
 			{
 				func_18("cellphone_flashhand");
-				if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("cellphone_flashhand")) == 0)
+				if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) == 0)
 				{
 					Global_20263 = SYSTEM::START_NEW_SCRIPT("cellphone_flashhand", 1424);
 				}
@@ -541,19 +541,19 @@ int func_14(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0x7
 	}
 	func_27();
 	func_15();
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(Global_8143[iParam0 /*15*/].f_9) == 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(Global_8143[iParam0 /*15*/].f_9) == 0)
 	{
 		Global_8742 = 0;
 		Global_20266.f_1 = 7;
 		func_18(&(Global_8143[iParam0 /*15*/].f_5));
 		if (bParam3)
 		{
-			if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(Global_8143[iParam0 /*15*/].f_9) == 0)
+			if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(Global_8143[iParam0 /*15*/].f_9) == 0)
 			{
 				Global_20264 = SYSTEM::START_NEW_SCRIPT(&(Global_8143[iParam0 /*15*/].f_5), 4000);
 			}
 		}
-		else if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(Global_8143[iParam0 /*15*/].f_9) == 0)
+		else if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(Global_8143[iParam0 /*15*/].f_9) == 0)
 		{
 			Global_20264 = SYSTEM::START_NEW_SCRIPT(&(Global_8143[iParam0 /*15*/].f_5), 2552);
 		}
@@ -647,7 +647,7 @@ int func_19(int iParam0)//Position - 0xAFA
 			return 0;
 		}
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("cellphone_flashhand")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) > 0)
 	{
 		return 1;
 	}
@@ -932,7 +932,7 @@ int func_28()//Position - 0x12B8
 
 int func_29(bool bParam0)//Position - 0x12DF
 {
-	if (!bParam0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("benchmark")) > 0)
+	if (!bParam0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("benchmark")) > 0)
 	{
 		return 1;
 	}
@@ -1473,10 +1473,10 @@ int func_51(int iParam0, int iParam1)//Position - 0x1CCF
 	{
 		return 0;
 	}
-	iVar0 = PLAYER::_GET_ACHIEVEMENT_PROGRESS(iParam0);
+	iVar0 = PLAYER::GET_ACHIEVEMENT_PROGRESS(iParam0);
 	if (iParam1 > iVar0)
 	{
-		return PLAYER::_SET_ACHIEVEMENT_PROGRESS(iParam0, iParam1);
+		return PLAYER::SET_ACHIEVEMENT_PROGRESS(iParam0, iParam1);
 	}
 	return 0;
 }
@@ -1487,7 +1487,7 @@ void func_52(int iParam0, bool bParam1, int iParam2)//Position - 0x1D20
 	{
 		iParam2 = func_53();
 	}
-	STATS::_SET_PACKED_STAT_BOOL(iParam0, bParam1, iParam2);
+	STATS::SET_PACKED_STAT_BOOL_CODE(iParam0, bParam1, iParam2);
 }
 
 int func_53()//Position - 0x1D3E
@@ -2549,7 +2549,7 @@ bool func_68(int iParam0, int iParam1)//Position - 0x3073
 	{
 		iParam1 = func_53();
 	}
-	return STATS::_GET_PACKED_STAT_BOOL(iParam0, iParam1);
+	return STATS::GET_PACKED_STAT_BOOL_CODE(iParam0, iParam1);
 }
 
 int func_69(bool bParam0)//Position - 0x308F
@@ -3108,7 +3108,7 @@ void func_89(int iParam0, bool bParam1)//Position - 0x3936
 			{
 				if (func_90(&iVar0))
 				{
-					GRAPHICS::_0xAE51BC858F32BA66(iVar0, Local_48[iParam0 /*11*/].f_3, 8f);
+					GRAPHICS::PROCGRASS_ENABLE_CULLSPHERE(iVar0, Local_48[iParam0 /*11*/].f_3, 8f);
 					iLocal_58[iParam0] = iVar0;
 				}
 			}
@@ -3120,7 +3120,7 @@ void func_89(int iParam0, bool bParam1)//Position - 0x3936
 		{
 			if (iLocal_58[iParam0] >= 0 && iLocal_58[iParam0] < 8)
 			{
-				GRAPHICS::_0x649C97D52332341A(iLocal_58[iParam0]);
+				GRAPHICS::PROCGRASS_DISABLE_CULLSPHERE(iLocal_58[iParam0]);
 				iLocal_58[iParam0] = -1;
 			}
 		}
@@ -3133,7 +3133,7 @@ int func_90(var uParam0)//Position - 0x3A1C
 	*uParam0 = 0;
 	while (*uParam0 < 8)
 	{
-		if (!GRAPHICS::_0x2C42340F916C5930(*uParam0))
+		if (!GRAPHICS::PROCGRASS_IS_CULLSPHERE_ENABLED(*uParam0))
 		{
 			return 1;
 		}
@@ -3202,7 +3202,7 @@ void func_94(var uParam0, var uParam1, int iParam2)//Position - 0x3B3D
 	{
 		func_101(*uParam0, iParam2, 1);
 	}
-	PAD::SET_PAD_SHAKE(0, 200, 250);
+	PAD::SET_CONTROL_SHAKE(0, 200, 250);
 	STATS::STAT_INCREMENT(uParam0->f_6, 1f);
 	if (bLocal_41)
 	{
@@ -3615,7 +3615,7 @@ void func_110()//Position - 0x4285
 
 int func_111()//Position - 0x42C6
 {
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("apptrackify")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("apptrackify")) > 0)
 	{
 		return 1;
 	}
@@ -3976,7 +3976,7 @@ void func_126()//Position - 0x4BB0
 		func_93(&(Local_48[iVar0 /*11*/].f_1));
 		if (iLocal_58[iVar0] >= 0 && iLocal_58[iVar0] < 8)
 		{
-			GRAPHICS::_0x649C97D52332341A(iLocal_58[iVar0]);
+			GRAPHICS::PROCGRASS_DISABLE_CULLSPHERE(iLocal_58[iVar0]);
 		}
 		iVar0++;
 	}

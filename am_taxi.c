@@ -1040,7 +1040,7 @@ void __EntryFunction__()//Position - 0x0
 	fLocal_107 = 1.2f;
 	fLocal_110 = SYSTEM::TO_FLOAT(iLocal_104);
 	iLocal_817 = 1;
-	sLocal_818 = PAD::GET_CONTROL_INSTRUCTIONAL_BUTTON(0, 218, true);
+	sLocal_818 = PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 218, true);
 	iLocal_819 = LOCALIZATION::GET_CURRENT_LANGUAGE();
 	Local_820 = { -0.01f, 0.6f, 0.24f };
 	Local_821 = { -5f, 0f, 0f };
@@ -1694,7 +1694,7 @@ int func_19(int iParam0, struct<3> Param1, float fParam2, bool bParam3)//Positio
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(NETWORK::NET_TO_PED(Local_68.f_2[iParam0 /*23*/].f_1), true);
 				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Global_2815059.f_837);
 				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Global_2815059.f_838);
-				ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(NETWORK::NET_TO_VEH(Local_68.f_2[iParam0 /*23*/]), false);
+				ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(NETWORK::NET_TO_VEH(Local_68.f_2[iParam0 /*23*/]), false);
 				PED::SET_PED_GET_OUT_UPSIDE_DOWN_VEHICLE(NETWORK::NET_TO_PED(Local_68.f_2[iParam0 /*23*/].f_1), true);
 				PED::SET_PED_CONFIG_FLAG(NETWORK::NET_TO_PED(Local_68.f_2[iParam0 /*23*/].f_1), 29, true);
 				PED::SET_PED_CONFIG_FLAG(NETWORK::NET_TO_PED(Local_68.f_2[iParam0 /*23*/].f_1), 251, true);
@@ -1770,7 +1770,7 @@ int func_21(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, boo
 	*uParam0 = NETWORK::PED_TO_NET(PED::CREATE_PED_INSIDE_VEHICLE(NETWORK::NET_TO_VEH(iParam1), iParam2, iParam3, iParam4, bParam6, bParam5));
 	if (NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(*uParam0))
 	{
-		ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(NETWORK::NET_TO_PED(*uParam0), bParam7);
+		ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(NETWORK::NET_TO_PED(*uParam0), bParam7);
 		if (NETWORK::NETWORK_GET_ENTITY_IS_NETWORKED(NETWORK::NET_TO_PED(*uParam0)))
 		{
 			if (bParam5)
@@ -1814,9 +1814,9 @@ int func_22(var uParam0, int iParam1, struct<3> Param2, float fParam3, bool bPar
 		{
 			if (bParam13)
 			{
-				NETWORK::_NETWORK_SET_ENTITY_INVISIBLE_TO_NETWORK(iVar1, true);
+				NETWORK::NETWORK_SET_ENTITY_ONLY_EXISTS_FOR_PARTICIPANTS(iVar1, true);
 			}
-			ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(iVar1, bParam8);
+			ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iVar1, bParam8);
 			if (NETWORK::NETWORK_GET_ENTITY_IS_NETWORKED(iVar1))
 			{
 				if (bParam6)
@@ -1833,7 +1833,7 @@ int func_22(var uParam0, int iParam1, struct<3> Param2, float fParam3, bool bPar
 				}
 			}
 			VEHICLE::SET_VEHICLE_IS_STOLEN(iVar1, bParam7);
-			VEHICLE::_0xB2E0C0D6922D31F2(iVar1, true);
+			VEHICLE::SET_CLEAR_FREEZE_WAITING_ON_COLLISION_ONCE_PLAYER_ENTERS(iVar1, true);
 			if (bParam10)
 			{
 				VEHICLE::SET_CAR_BOOT_OPEN(iVar1);
@@ -2744,9 +2744,9 @@ void func_51(bool bParam0)//Position - 0x27AD
 			func_81(bParam0);
 		}
 		func_57(bParam0);
-		PAD::_0x7F4724035FDCA1DD(0);
-		PAD::_0x7F4724035FDCA1DD(1);
-		PAD::_0x7F4724035FDCA1DD(2);
+		PAD::ALLOW_ALTERNATIVE_SCRIPT_CONTROLS_LAYOUT(0);
+		PAD::ALLOW_ALTERNATIVE_SCRIPT_CONTROLS_LAYOUT(1);
+		PAD::ALLOW_ALTERNATIVE_SCRIPT_CONTROLS_LAYOUT(2);
 		func_56();
 		func_55();
 		PED::SET_PED_COMBAT_ATTRIBUTES(PLAYER::PLAYER_PED_ID(), 2, false);
@@ -2810,7 +2810,7 @@ int func_52(int iParam0)//Position - 0x2A13
 			return 0;
 		}
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("cellphone_flashhand")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) > 0)
 	{
 		return 1;
 	}
@@ -2851,7 +2851,7 @@ void func_57(bool bParam0)//Position - 0x2AA6
 		{
 			if (Local_68.f_2[bParam0 /*23*/].f_3 == iLocal_71)
 			{
-				sVar0 = PAD::GET_CONTROL_INSTRUCTIONAL_BUTTON(2, 218, true);
+				sVar0 = PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 218, true);
 				if (!MISC::ARE_STRINGS_EQUAL(sLocal_818, sVar0))
 				{
 					sLocal_818 = sVar0;
@@ -2910,7 +2910,7 @@ void func_57(bool bParam0)//Position - 0x2AA6
 								func_67(0, 176, "TXM_SLCT", &uLocal_113, 0, 363);
 							}
 						}
-						if (PAD::_IS_USING_KEYBOARD(2))
+						if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 						{
 							func_67(2, 199, "SPEC_PAUSE", &uLocal_113, 0, 363);
 						}
@@ -2945,7 +2945,7 @@ void func_58(int iParam0, var uParam1, var uParam2, int iParam3)//Position - 0x2
 	int iVar4;
 	int iVar5;
 	
-	if (iParam3 == 1 || PAD::_0x6CD79468A1E595C6(2))
+	if (iParam3 == 1 || PAD::HAVE_CONTROLS_CHANGED(2))
 	{
 		*uParam2 = 0;
 		if (GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(*iParam0))
@@ -2993,17 +2993,17 @@ void func_58(int iParam0, var uParam1, var uParam2, int iParam3)//Position - 0x2
 						iVar1 = uParam2->f_1[bVar0 /*57*/].f_54;
 						iVar2 = uParam2->f_1[bVar0 /*57*/].f_55;
 						iVar3 = uParam2->f_1[bVar0 /*57*/].f_56;
-						func_62(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTON(iVar1, iVar2, true));
+						func_62(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(iVar1, iVar2, true));
 						if (iVar3 < 363)
 						{
-							func_62(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTON(iVar1, iVar3, true));
+							func_62(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(iVar1, iVar3, true));
 						}
 					}
 					else
 					{
 						iVar4 = uParam2->f_1[bVar0 /*57*/].f_54;
 						iVar5 = uParam2->f_1[bVar0 /*57*/].f_55;
-						func_62(PAD::GET_CONTROL_GROUP_INSTRUCTIONAL_BUTTON(iVar4, iVar5, true));
+						func_62(PAD::GET_CONTROL_GROUP_INSTRUCTIONAL_BUTTONS_STRING(iVar4, iVar5, true));
 					}
 					if (BitTest(uParam2->f_686, bVar0))
 					{
@@ -5395,7 +5395,7 @@ void func_113(bool bParam0)//Position - 0x5900
 		if (iLocal_815 == 0)
 		{
 			func_145(&iVar0, &uVar1, &uVar2, &uVar3, 0);
-			if (PAD::_IS_USING_KEYBOARD(2))
+			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 			{
 				PAD::SET_INPUT_EXCLUSIVE(2, 241);
 				PAD::SET_INPUT_EXCLUSIVE(2, 242);
@@ -6559,7 +6559,7 @@ void func_149(int iParam0)//Position - 0x6F04
 		MISC::CLEAR_BIT(&(Local_70[iLocal_71 /*44*/].f_4.f_2), 13);
 	}
 	HUD::DONT_TILT_MINIMAP_THIS_FRAME();
-	CAM::_0x62ECFCFDEE7885D6();
+	CAM::DISABLE_CINEMATIC_VEHICLE_IDLE_MODE_THIS_UPDATE();
 }
 
 void func_150(int iParam0, int iParam1, struct<3> Param2)//Position - 0x6FA3
@@ -7249,7 +7249,7 @@ void func_161(int iParam0)//Position - 0x7DFB
 		{
 			if (!bVar0)
 			{
-				NETSHOPPING::_NET_GAMESERVER_BASKET_DELETE();
+				NETSHOPPING::NET_GAMESERVER_BASKET_END();
 			}
 		}
 		else if (!bVar0)
@@ -7397,7 +7397,7 @@ void func_167(struct<67> Param0, var uParam1, var uParam2, var uParam3, var uPar
 	if (!iVar1 == 0)
 	{
 		func_168();
-		SCRIPT::_TRIGGER_SCRIPT_EVENT_2(1, &Var0, 36, iVar1);
+		SCRIPT::SEND_TU_SCRIPT_EVENT(1, &Var0, 36, iVar1);
 	}
 }
 
@@ -7426,7 +7426,7 @@ int func_171()//Position - 0x81E7
 {
 	if (MISC::IS_PC_VERSION())
 	{
-		return NETSHOPPING::_NET_GAMESERVER_USE_SERVER_TRANSACTIONS();
+		return NETSHOPPING::NET_GAMESERVER_USE_SERVER_TRANSACTIONS();
 	}
 	return 0;
 }
@@ -7621,7 +7621,7 @@ void func_179(var uParam0, int iParam1, char* sParam2, int iParam3, char* sParam
 {
 	int iVar0;
 	
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("context_controller")) < 1)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("context_controller")) < 1)
 	{
 	}
 	if (STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
@@ -8107,7 +8107,7 @@ void func_195(bool bParam0)//Position - 0x8E8D
 						}
 						if (Local_68.f_2[bParam0 /*23*/].f_7 != 8)
 						{
-							VEHICLE::_0xBE5C1255A1830FF5(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/]), true);
+							VEHICLE::SET_VEHICLE_WILL_FORCE_OTHER_VEHICLES_TO_STOP(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/]), true);
 						}
 					}
 				}
@@ -8360,7 +8360,7 @@ void func_195(bool bParam0)//Position - 0x8E8D
 					break;
 				
 				case 8:
-					VEHICLE::_0xBE5C1255A1830FF5(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/]), false);
+					VEHICLE::SET_VEHICLE_WILL_FORCE_OTHER_VEHICLES_TO_STOP(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/]), false);
 					if (ENTITY::IS_ENTITY_PLAYING_ANIM(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), "ODDJOBS@TAXI@DRIVER", "leanover_enter", 3) || ENTITY::IS_ENTITY_PLAYING_ANIM(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), "ODDJOBS@TAXI@DRIVER", "leanover_idle", 3))
 					{
 						STREAMING::REQUEST_ANIM_DICT("ODDJOBS@TAXI@DRIVER");
@@ -8397,7 +8397,7 @@ void func_195(bool bParam0)//Position - 0x8E8D
 					}
 					PED::SET_PED_CONFIG_FLAG(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), 251, false);
 					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), false);
-					VEHICLE::_0xBE5C1255A1830FF5(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/]), false);
+					VEHICLE::SET_VEHICLE_WILL_FORCE_OTHER_VEHICLES_TO_STOP(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/]), false);
 					if (((!PED::IS_PED_FLEEING(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1)) && !func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), joaat("SCRIPT_TASK_SMART_FLEE_PED"), 1)) && !func_9(NETWORK::NET_TO_PED(Local_68.f_2[bParam0 /*23*/].f_1), -251125078, 1)) && TASK::GET_ACTIVE_VEHICLE_MISSION_TYPE(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/])) != 8)
 					{
 						if (Local_68.f_2[bParam0 /*23*/].f_7 == 10)
@@ -8452,7 +8452,7 @@ void func_195(bool bParam0)//Position - 0x8E8D
 				case 11:
 					if (NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_68.f_2[bParam0 /*23*/]))
 					{
-						VEHICLE::_0xBE5C1255A1830FF5(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/]), false);
+						VEHICLE::SET_VEHICLE_WILL_FORCE_OTHER_VEHICLES_TO_STOP(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/]), false);
 						func_28(&(Local_68.f_2[bParam0 /*23*/]));
 					}
 					if (NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_68.f_2[bParam0 /*23*/].f_1))
@@ -8481,7 +8481,7 @@ void func_195(bool bParam0)//Position - 0x8E8D
 		{
 			if (NETWORK::NETWORK_HAS_CONTROL_OF_NETWORK_ID(Local_68.f_2[bParam0 /*23*/]))
 			{
-				VEHICLE::_0xBE5C1255A1830FF5(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/]), false);
+				VEHICLE::SET_VEHICLE_WILL_FORCE_OTHER_VEHICLES_TO_STOP(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/]), false);
 				func_28(&(Local_68.f_2[bParam0 /*23*/]));
 			}
 		}
@@ -8539,7 +8539,7 @@ int func_196(int iParam0, struct<3> Param1, var uParam2, var uParam3, var uParam
 	bVar15 = true;
 	iVar18 = *uParam4 + 2;
 	iVar19 = 50;
-	PATHFIND::REQUEST_PATHS_PREFER_ACCURATE_BOUNDINGSTRUCT((Param1.f_0 - IntToFloat(iParam5)), (Param1.f_1 - IntToFloat(iParam5)), (Param1.f_0 + IntToFloat(iParam5)), (Param1.f_1 + IntToFloat(iParam5)));
+	PATHFIND::REQUEST_PATH_NODES_IN_AREA_THIS_FRAME((Param1.f_0 - IntToFloat(iParam5)), (Param1.f_1 - IntToFloat(iParam5)), (Param1.f_0 + IntToFloat(iParam5)), (Param1.f_1 + IntToFloat(iParam5)));
 	if (PATHFIND::ARE_NODES_LOADED_FOR_AREA((Param1.f_0 - IntToFloat(iParam5)), (Param1.f_1 - IntToFloat(iParam5)), (Param1.f_0 + IntToFloat(iParam5)), (Param1.f_1 + IntToFloat(iParam5))))
 	{
 		while (!bVar13 && *uParam4 < iVar18)
@@ -8648,7 +8648,7 @@ int func_196(int iParam0, struct<3> Param1, var uParam2, var uParam3, var uParam
 						}
 						if (func_197(Param1, Var22) || fVar11 < 0.5f)
 						{
-							Var22 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Var22, fVar23, fVar9, 0f, 0f) };
+							Var22 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var22, fVar23, fVar9, 0f, 0f) };
 							if (VEHICLE::IS_VEHICLE_DRIVEABLE(*iParam0, false))
 							{
 								iVar5 = *iParam0;
@@ -9758,7 +9758,7 @@ int func_201()//Position - 0xCACE
 		{
 			return 1;
 		}
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("ambient_solomon")) > 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("ambient_solomon")) > 0)
 		{
 			return 1;
 		}
@@ -10188,7 +10188,7 @@ int func_210(struct<3> Param0, struct<3> Param1, var uParam2, var uParam3, var u
 	if (PATHFIND::IS_VEHICLE_NODE_ID_VALID(iVar3))
 	{
 		PATHFIND::GET_VEHICLE_NODE_POSITION(iVar3, &Var0);
-		if (PATHFIND::_GET_POINT_ON_ROAD_SIDE(Var0, 0, &Var1) && PATHFIND::_GET_POINT_ON_ROAD_SIDE(Var0, 1, &Var2))
+		if (PATHFIND::GET_POSITION_BY_SIDE_OF_ROAD(Var0, 0, &Var1) && PATHFIND::GET_POSITION_BY_SIDE_OF_ROAD(Var0, 1, &Var2))
 		{
 			Var5 = { Var1 - Var0 };
 			Var6 = { -Var5.f_1, Var5.f_0, 0f };
@@ -10208,7 +10208,7 @@ int func_210(struct<3> Param0, struct<3> Param1, var uParam2, var uParam3, var u
 				return 1;
 			}
 		}
-		else if (PATHFIND::_GET_POINT_ON_ROAD_SIDE(Var0, -1, &Var1))
+		else if (PATHFIND::GET_POSITION_BY_SIDE_OF_ROAD(Var0, -1, &Var1))
 		{
 			*uParam3 = { Var1 };
 			*uParam4 = uParam2;
@@ -10358,7 +10358,7 @@ void func_215(struct<2> Param0, var uParam1, struct<2> Param2, var uParam3, var 
 		*uParam4 = { Var0 };
 		*uParam5 = { Var1 };
 	}
-	PATHFIND::REQUEST_PATHS_PREFER_ACCURATE_BOUNDINGSTRUCT(*uParam4, uParam4->f_1, *uParam5, uParam5->f_1);
+	PATHFIND::REQUEST_PATH_NODES_IN_AREA_THIS_FRAME(*uParam4, uParam4->f_1, *uParam5, uParam5->f_1);
 }
 
 Vector3 func_216(int iParam0)//Position - 0xDFB0
@@ -10903,11 +10903,11 @@ int func_237(int iParam0, char* sParam1, int iParam2, int iParam3, char* sParam4
 		{
 			return 0;
 		}
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("appemail")) > 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("appemail")) > 0)
 		{
 			return 0;
 		}
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("appmpemail")) > 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("appmpemail")) > 0)
 		{
 			return 0;
 		}
@@ -11064,7 +11064,7 @@ void func_238(int iParam0, char* sParam1, bool bParam2, int iParam3)//Position -
 	{
 		return;
 	}
-	STATS::_PLAYSTATS_NPC_PHONE(iParam0, -1180597171, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
+	STATS::PLAYSTATS_NPC_PHONE(iParam0, -1180597171, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
 	if (bParam2)
 	{
 		Global_1973156 = -1;
@@ -11668,7 +11668,7 @@ char* func_251(char* sParam0, bool bParam1, int iParam2)//Position - 0xF821
 	{
 		return sParam0;
 	}
-	return HUD::_GET_LABEL_TEXT(sParam0);
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(sParam0);
 }
 
 int func_252(int iParam0)//Position - 0xF85E
@@ -12035,11 +12035,11 @@ int func_265(int iParam0, char* sParam1, int iParam2, int iParam3, char* sParam4
 		{
 			return 0;
 		}
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("apptextmessage")) > 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("apptextmessage")) > 0)
 		{
 			return 0;
 		}
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("apptextmessage")) > 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("apptextmessage")) > 0)
 		{
 			return 0;
 		}
@@ -12223,7 +12223,7 @@ void func_266(int iParam0, char* sParam1, bool bParam2, int iParam3)//Position -
 	{
 		return;
 	}
-	STATS::_PLAYSTATS_NPC_PHONE(iParam0, 1654525105, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
+	STATS::PLAYSTATS_NPC_PHONE(iParam0, 1654525105, MISC::GET_HASH_KEY(sParam1), 0, bParam2, iParam3);
 	if (bParam2)
 	{
 		Global_1973156 = -1;
@@ -13173,7 +13173,7 @@ int func_307(struct<3> Param0, float fParam1, int iParam2, int iParam3, float fP
 		iVar1 = iVar0;
 		if (func_10(iVar1, 1, 1))
 		{
-			if (!func_309(iVar1, 0) && NETWORK::_NETWORK_IS_PLAYER_EQUAL_TO_INDEX(PLAYER::PLAYER_ID(), iVar1))
+			if (!func_309(iVar1, 0) && NETWORK::NETWORK_ARE_PLAYERS_IN_SAME_TUTORIAL_SESSION(PLAYER::PLAYER_ID(), iVar1))
 			{
 				if (iParam2 == 1 || (iParam2 == 0 && iVar1 != PLAYER::PLAYER_ID()))
 				{
@@ -13310,7 +13310,7 @@ int func_313(struct<3> Param0, float fParam1, bool bParam2, bool bParam3, bool b
 		{
 			if (func_10(iVar1, bParam2, bParam3))
 			{
-				if (iParam8 || NETWORK::_NETWORK_IS_PLAYER_EQUAL_TO_INDEX(PLAYER::PLAYER_ID(), iVar1))
+				if (iParam8 || NETWORK::NETWORK_ARE_PLAYERS_IN_SAME_TUTORIAL_SESSION(PLAYER::PLAYER_ID(), iVar1))
 				{
 					if (!bParam5 || (!PED::IS_PED_INJURED(PLAYER::GET_PLAYER_PED(iVar1)) && func_308(iVar1)))
 					{
@@ -13442,7 +13442,7 @@ int func_319(struct<3> Param0, var uParam1, var uParam2, var uParam3, int iParam
 			{
 				while (!bVar6 && iVar7 < 5)
 				{
-					if (VEHICLE::_0xA4822F1CF23F4810(&Var0, &Var1, &Var2, 0f, 180f, fParam5, iVar5, 1, 0))
+					if (VEHICLE::GENERATE_VEHICLE_CREATION_POS_FROM_PATHS(&Var0, &Var1, &Var2, 0f, 180f, fParam5, iVar5, 1, 0))
 					{
 						fVar3 = func_322(0f, 0f, 0f, Var2, 1);
 						if (func_320(Param0, Var1, 120f, fParam5))
@@ -13450,7 +13450,7 @@ int func_319(struct<3> Param0, var uParam1, var uParam2, var uParam3, int iParam
 							if (func_306(*uParam1, 5f, 2f, 1f, 6f, 1, 1, 1, 120f, 0, -1, 1, 0f, 0, 0, 0, 0))
 							{
 								bVar6 = true;
-								Var10 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Var1, fVar3, 0f, 1f, 0f) };
+								Var10 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var1, fVar3, 0f, 1f, 0f) };
 								Var11 = { Var10 - Var1 };
 								Var12 = { Var0 - Var1 };
 								if (MISC::GET_ANGLE_BETWEEN_2D_VECTORS(Var11.f_0, Var11.f_1, Var12.f_0, Var12.f_1) > 60f)
@@ -14468,7 +14468,7 @@ int func_355()//Position - 0x12FE7
 	}
 	if (func_356() != 0)
 	{
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(func_356()) == 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(func_356()) == 0)
 		{
 			return 1;
 		}
@@ -14692,12 +14692,12 @@ void func_368()//Position - 0x133D0
 	char cVar1[64];
 	char* sVar2;
 	
-	StringCopy(&cVar0, HUD::_GET_LABEL_TEXT(&(Global_1998[Global_8822 /*29*/].f_7)), 64);
+	StringCopy(&cVar0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_1998[Global_8822 /*29*/].f_7)), 64);
 	if (Global_8841 == 0)
 	{
 		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("");
-		StringCopy(&cVar1, HUD::_GET_LABEL_TEXT(&(Global_8746[1 /*6*/])), 64);
-		sVar2 = HUD::_GET_LABEL_TEXT("CELL_253");
+		StringCopy(&cVar1, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_8746[1 /*6*/])), 64);
+		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253");
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, sVar2, &cVar1);
 	}
 	else

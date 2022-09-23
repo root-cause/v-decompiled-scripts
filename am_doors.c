@@ -644,7 +644,7 @@ bool func_14(int iParam0, int iParam1)//Position - 0x8DE
 	{
 		iParam1 = func_15();
 	}
-	return STATS::_GET_PACKED_STAT_BOOL(iParam0, iParam1);
+	return STATS::GET_PACKED_STAT_BOOL_CODE(iParam0, iParam1);
 }
 
 int func_15()//Position - 0x8FA
@@ -1020,14 +1020,14 @@ void func_43()//Position - 0xFAF
 	{
 		if (!iLocal_118)
 		{
-			OBJECT::_0xC7F29CA00F46350E(true);
+			OBJECT::OPEN_ALL_BARRIERS_FOR_RACE(true);
 			iLocal_118 = 1;
 		}
 	}
 	else if (iLocal_118 == 1)
 	{
 		iLocal_118 = 0;
-		OBJECT::_0x701FDA1E82076BA4();
+		OBJECT::CLOSE_ALL_BARRIERS_FOR_RACE();
 	}
 }
 
@@ -3997,7 +3997,7 @@ void func_50(struct<15> Param0, bool bParam1)//Position - 0x5AAB
 		}
 		if (Param0.f_10)
 		{
-			OBJECT::_0xA85A21582451E951(Param0.f_0, true);
+			OBJECT::DOOR_SYSTEM_SET_DOOR_OPEN_FOR_RACES(Param0.f_0, true);
 		}
 		if (Param0.f_14 != 0f)
 		{
@@ -5420,7 +5420,7 @@ int func_72()//Position - 0x6F7B
 	}
 	if (func_73() != 0)
 	{
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(func_73()) == 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(func_73()) == 0)
 		{
 			return 1;
 		}

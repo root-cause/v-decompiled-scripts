@@ -690,7 +690,7 @@ void func_13()//Position - 0xD89
 			Var0 = { ENTITY::GET_ENTITY_COORDS(iLocal_67, true) };
 			fVar3 = ENTITY::GET_ENTITY_HEADING(iLocal_67);
 			Var1 = { 0f, 500f, 50f };
-			Var2 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Var0, fVar3, Var1) };
+			Var2 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var0, fVar3, Var1) };
 			TASK::TASK_HELI_MISSION(iLocal_68, iLocal_67, 0, 0, Var2, 4, 50f, -1f, 0f, 100, 50, -1f, 0);
 		}
 	}

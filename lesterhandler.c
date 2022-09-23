@@ -363,7 +363,7 @@ void __EntryFunction__()//Position - 0x0
 						func_3(7, 1);
 						Global_113377 = 0;
 						Global_113381 = 1;
-						BRAIN::_0x0B40ED49D7D6FF84();
+						BRAIN::REACTIVATE_ALL_WORLD_BRAINS_THAT_ARE_WAITING_TILL_OUT_OF_RANGE();
 					}
 				}
 				func_1();
@@ -1037,7 +1037,7 @@ void func_28(var uParam0, int iParam1, int iParam2, char* sParam3, int iParam4, 
 
 int func_29(bool bParam0)//Position - 0xEC0
 {
-	if (!bParam0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("benchmark")) > 0)
+	if (!bParam0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("benchmark")) > 0)
 	{
 		return 1;
 	}

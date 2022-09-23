@@ -8524,7 +8524,7 @@ void func_7(var uParam0, int* iParam1, int* iParam2)//Position - 0x1E3
 					iVar11++;
 				}
 			}
-			AUDIO::_0xA8A7D434AFB4B97B("DLC_BTL_Nightclub_SCL", 3);
+			AUDIO::BLOCK_SPEECH_CONTEXT_GROUP("DLC_BTL_Nightclub_SCL", 3);
 			uParam0->f_7563 = 0;
 			func_2(&(uParam0->f_7564));
 			func_475(iParam1);
@@ -8902,8 +8902,8 @@ void func_7(var uParam0, int* iParam1, int* iParam2)//Position - 0x1E3
 													(uParam0[iVar3 /*58*/])->f_6 = (uParam0[iVar3 /*58*/])->f_8;
 													if (func_361((uParam0[iVar3 /*58*/])->f_6))
 													{
-														AUDIO::_SET_PED_AUDIO_FOOTSTEP_LOUD((*uParam0)[iVar3 /*58*/], false);
-														AUDIO::_SET_PED_AUDIO_FOOTSTEP_QUIET((*uParam0)[iVar3 /*58*/], false);
+														AUDIO::SET_PED_FOOTSTEPS_EVENTS_ENABLED((*uParam0)[iVar3 /*58*/], false);
+														AUDIO::SET_PED_CLOTH_EVENTS_ENABLED((*uParam0)[iVar3 /*58*/], false);
 													}
 												}
 												func_358(uParam0[iVar3 /*58*/]);
@@ -16761,7 +16761,7 @@ char* func_61(var uParam0, int iParam1, int iParam2)//Position - 0x9BA7
 			}
 			if (!MISC::IS_STRING_NULL_OR_EMPTY(&cVar0))
 			{
-				return HUD::_GET_TEXT_SUBSTRING(&cVar0, 0, HUD::GET_LENGTH_OF_LITERAL_STRING(&cVar0));
+				return HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(&cVar0, 0, HUD::GET_LENGTH_OF_LITERAL_STRING(&cVar0));
 			}
 			break;
 		
@@ -17064,7 +17064,7 @@ char* func_61(var uParam0, int iParam1, int iParam2)//Position - 0x9BA7
 				{
 					StringCopy(&cVar0, "BUMP_CLUB", 32);
 				}
-				return HUD::_GET_TEXT_SUBSTRING(&cVar0, 0, HUD::GET_LENGTH_OF_LITERAL_STRING(&cVar0));
+				return HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(&cVar0, 0, HUD::GET_LENGTH_OF_LITERAL_STRING(&cVar0));
 			}
 			break;
 		
@@ -17834,7 +17834,7 @@ int func_89(int iParam0)//Position - 0xB18E
 			return 0;
 		}
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("cellphone_flashhand")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) > 0)
 	{
 		return 1;
 	}
@@ -18142,7 +18142,7 @@ void func_98(int iParam0, int iParam1, int iParam2)//Position - 0xB661
 	}
 	if (!iVar2 == 0)
 	{
-		SCRIPT::_TRIGGER_SCRIPT_EVENT_2(1, &Var0, 4, iVar2);
+		SCRIPT::SEND_TU_SCRIPT_EVENT(1, &Var0, 4, iVar2);
 	}
 }
 
@@ -19979,7 +19979,7 @@ void func_130(var uParam0, char* sParam1, char* sParam2, bool bParam3)//Position
 {
 	if (bParam3)
 	{
-		PED::_SET_FACIAL_CLIPSET_OVERRIDE(*uParam0, sParam1);
+		PED::SET_FACIAL_CLIPSET(*uParam0, sParam1);
 		PED::SET_FACIAL_IDLE_ANIM_OVERRIDE(*uParam0, sParam2, 0);
 	}
 	else
@@ -23273,7 +23273,7 @@ void func_202(int iParam0, int iParam1, var uParam2)//Position - 0x130DA
 			uParam2->f_7[0 /*79*/] = func_20(10, iParam1);
 			if (!MISC::IS_STRING_NULL_OR_EMPTY(&Var0))
 			{
-				uParam2->f_7[0 /*79*/].f_1 = HUD::_GET_TEXT_SUBSTRING(&Var0, 0, HUD::GET_LENGTH_OF_LITERAL_STRING(&Var0));
+				uParam2->f_7[0 /*79*/].f_1 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(&Var0, 0, HUD::GET_LENGTH_OF_LITERAL_STRING(&Var0));
 			}
 			break;
 	}
@@ -23292,7 +23292,7 @@ void func_203(int iParam0, int iParam1, var uParam2)//Position - 0x13153
 			uParam2->f_7[0 /*79*/] = func_20(9, iParam1);
 			if (!MISC::IS_STRING_NULL_OR_EMPTY(&Var0))
 			{
-				uParam2->f_7[0 /*79*/].f_1 = HUD::_GET_TEXT_SUBSTRING(&Var0, 0, HUD::GET_LENGTH_OF_LITERAL_STRING(&Var0));
+				uParam2->f_7[0 /*79*/].f_1 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(&Var0, 0, HUD::GET_LENGTH_OF_LITERAL_STRING(&Var0));
 			}
 			break;
 	}
@@ -26460,7 +26460,7 @@ void func_253(var uParam0)//Position - 0x1691E
 	AUDIO::SET_STATIC_EMITTER_ENABLED("SE_ba_dlc_int_01_main_area_2", false);
 	AUDIO::SET_STATIC_EMITTER_ENABLED("SE_ba_dlc_int_01_office", false);
 	AUDIO::SET_STATIC_EMITTER_ENABLED("SE_ba_dlc_int_01_rear_L_corridor", false);
-	AUDIO::_0x2ACABED337622DF2("DLC_BTL_Nightclub_SCL");
+	AUDIO::UNBLOCK_SPEECH_CONTEXT_GROUP("DLC_BTL_Nightclub_SCL");
 	func_254();
 }
 
@@ -27844,7 +27844,7 @@ void func_293(int iParam0, bool bParam1, int iParam2, int iParam3)//Position - 0
 					{
 						ENTITY::FREEZE_ENTITY_POSITION(iVar27, false);
 					}
-					ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(iVar27, true);
+					ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iVar27, true);
 				}
 				else if (!bVar21)
 				{
@@ -27852,7 +27852,7 @@ void func_293(int iParam0, bool bParam1, int iParam2, int iParam3)//Position - 0
 				}
 				PED::SET_PED_CAN_BE_TARGETTED(iVar27, true);
 				PLAYER::SET_PLAYER_INVINCIBLE(iParam0, false);
-				PLAYER::_SET_PLAYER_INVINCIBLE_KEEP_RAGDOLL_ENABLED(iParam0, false);
+				PLAYER::SET_PLAYER_INVINCIBLE_BUT_HAS_REACTIONS(iParam0, false);
 				if (PED::HAS_PED_HEAD_BLEND_FINISHED(iVar27) && PED::HAVE_ALL_STREAMING_REQUESTS_COMPLETED(iVar27))
 				{
 					PED::FINALIZE_HEAD_BLEND(iVar27);
@@ -27898,7 +27898,7 @@ void func_293(int iParam0, bool bParam1, int iParam2, int iParam3)//Position - 0
 						}
 						if (!bVar16)
 						{
-							ENTITY::_SET_ENTITY_CLEANUP_BY_ENGINE(iVar27, true);
+							ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iVar27, true);
 						}
 					}
 					if (func_294(Global_4718592.f_168757))
@@ -28041,7 +28041,7 @@ void func_298(bool bParam0, int iParam1, int iParam2)//Position - 0x18D99
 		{
 			if (PED::IS_PED_A_PLAYER(iParam1))
 			{
-				if (!NETWORK::_NETWORK_IS_PLAYER_EQUAL_TO_INDEX(PLAYER::PLAYER_ID(), NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam1)))
+				if (!NETWORK::NETWORK_ARE_PLAYERS_IN_SAME_TUTORIAL_SESSION(PLAYER::PLAYER_ID(), NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam1)))
 				{
 					iVar0 = 1;
 				}
@@ -28236,9 +28236,9 @@ int func_307(bool bParam0, bool bParam1, var uParam2, bool bParam3)//Position - 
 	iVar0 = 0;
 	if (MISC::IS_PC_VERSION())
 	{
-		if (CUTSCENE::_0xA0FE76168A189DDB() != bParam0 && uParam2)
+		if (CUTSCENE::IS_MULTIHEAD_FADE_UP() != bParam0 && uParam2)
 		{
-			CUTSCENE::_0x20746F7B1032A3C7(bParam0, bParam1, true, bParam3);
+			CUTSCENE::SET_CUTSCENE_MULTIHEAD_FADE(bParam0, bParam1, true, bParam3);
 			iVar0 = 1;
 		}
 	}
@@ -30849,7 +30849,7 @@ int func_364(var uParam0, var uParam1, var uParam2, struct<3> Param3, float fPar
 				PED::SET_PED_CONFIG_FLAG(*uParam2, 108, true);
 				PED::SET_PED_CONFIG_FLAG(*uParam2, 106, true);
 				PED::SET_PED_CAN_EVASIVE_DIVE(*uParam2, false);
-				PED::_0x2F3C3D9F50681DE4(*uParam2, true);
+				PED::SET_TREAT_AS_AMBIENT_PED_FOR_DRIVER_LOCKON(*uParam2, true);
 				PED::SET_PED_CAN_RAGDOLL_FROM_PLAYER_IMPACT(*uParam2, false);
 				PED::SET_PED_CAN_RAGDOLL(*uParam2, false);
 				PED::SET_PED_CONFIG_FLAG(*uParam2, 208, true);
@@ -42472,7 +42472,7 @@ Vector3 func_380(int iParam0)//Position - 0x281F3
 	{
 		Var1 = { func_381(iVar0) };
 		fVar2 = func_379(iVar0);
-		return OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Var1, fVar2, func_381(iParam0));
+		return OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var1, fVar2, func_381(iParam0));
 	}
 	return func_381(iParam0);
 }
@@ -51266,10 +51266,10 @@ int func_471(int iParam0)//Position - 0x31546
 	{
 		return 0;
 	}
-	iVar0 = AUDIO::_GET_CURRENT_RADIO_TRACK_PLAYBACK_TIME(AUDIO::GET_RADIO_STATION_NAME(iParam0));
+	iVar0 = AUDIO::GET_CURRENT_TRACK_PLAY_TIME(AUDIO::GET_RADIO_STATION_NAME(iParam0));
 	iVar1 = 1;
 	iVar2 = MISC::GET_HASH_KEY(func_238(MISC::GET_HASH_KEY(AUDIO::GET_RADIO_STATION_NAME(iParam0)), iVar1));
-	while (iVar2 != AUDIO::_GET_CURRENT_RADIO_TRACK_NAME(AUDIO::GET_RADIO_STATION_NAME(iParam0)) && func_237(iVar2) != -1)
+	while (iVar2 != AUDIO::GET_CURRENT_TRACK_SOUND_NAME(AUDIO::GET_RADIO_STATION_NAME(iParam0)) && func_237(iVar2) != -1)
 	{
 		iVar0 = (iVar0 + (func_237(iVar2) - 1000));
 		iVar1++;
@@ -51725,7 +51725,7 @@ bool func_483(int iParam0, int iParam1)//Position - 0x32103
 	{
 		iParam1 = func_119();
 	}
-	return STATS::_GET_PACKED_STAT_BOOL(iParam0, iParam1);
+	return STATS::GET_PACKED_STAT_BOOL_CODE(iParam0, iParam1);
 }
 
 int func_484(bool bParam0)//Position - 0x3211F
@@ -52264,7 +52264,7 @@ void func_511(var uParam0, var uParam1)//Position - 0x329F2
 							func_513(iVar2);
 						}
 					}
-					AUDIO::_SET_RADIO_TRACK_MIX(sVar0, sVar1, iVar2);
+					AUDIO::SET_RADIO_TRACK_WITH_START_OFFSET(sVar0, sVar1, iVar2);
 					AUDIO::UNFREEZE_RADIO_STATION(sVar0);
 					uParam0->f_7945 = iVar2;
 					uParam0->f_7944 = 0;
@@ -52348,7 +52348,7 @@ void func_511(var uParam0, var uParam1)//Position - 0x329F2
 						func_513(iVar6);
 					}
 					AUDIO::FREEZE_RADIO_STATION(sVar0);
-					AUDIO::_SET_RADIO_TRACK_MIX(sVar0, sVar7, iVar6);
+					AUDIO::SET_RADIO_TRACK_WITH_START_OFFSET(sVar0, sVar7, iVar6);
 					AUDIO::UNFREEZE_RADIO_STATION(sVar0);
 					uParam0->f_7945 = iVar6;
 					uParam0->f_7944 = 0;
@@ -52382,7 +52382,7 @@ void func_511(var uParam0, var uParam1)//Position - 0x329F2
 			{
 				sVar0 = "RADIO_26_DLC_BATTLE_CLUB_WARMUP";
 				AUDIO::FREEZE_RADIO_STATION(sVar0);
-				AUDIO::_SET_RADIO_TRACK_MIX(sVar0, "DLC_BATTLE_MUSIC_BATTLE_MIX_WARMUP", 0);
+				AUDIO::SET_RADIO_TRACK_WITH_START_OFFSET(sVar0, "DLC_BATTLE_MUSIC_BATTLE_MIX_WARMUP", 0);
 				AUDIO::UNFREEZE_RADIO_STATION(sVar0);
 				AUDIO::SET_STATIC_EMITTER_ENABLED("SE_ba_dlc_int_01_Bogs", true);
 				AUDIO::SET_STATIC_EMITTER_ENABLED("SE_ba_dlc_int_01_Entry_Hall", true);
@@ -52502,9 +52502,9 @@ void func_518(var uParam0)//Position - 0x33336
 	
 	if (uParam0->f_7252 != -1)
 	{
-		Global_1578946 = AUDIO::_GET_CURRENT_RADIO_TRACK_PLAYBACK_TIME(AUDIO::GET_RADIO_STATION_NAME(uParam0->f_7252));
+		Global_1578946 = AUDIO::GET_CURRENT_TRACK_PLAY_TIME(AUDIO::GET_RADIO_STATION_NAME(uParam0->f_7252));
 		iVar0 = Global_1578944;
-		func_519(AUDIO::_GET_CURRENT_RADIO_TRACK_NAME(AUDIO::GET_RADIO_STATION_NAME(uParam0->f_7252)), Global_1578946, &Global_1578944, &Global_1578945, &Global_1578947, &(uParam0->f_7253));
+		func_519(AUDIO::GET_CURRENT_TRACK_SOUND_NAME(AUDIO::GET_RADIO_STATION_NAME(uParam0->f_7252)), Global_1578946, &Global_1578944, &Global_1578945, &Global_1578947, &(uParam0->f_7253));
 		if (iVar0 != Global_1578944)
 		{
 			iVar1 = 0;
@@ -55346,7 +55346,7 @@ int func_523()//Position - 0x35FC3
 	}
 	if (func_524() != 0)
 	{
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(func_524()) == 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(func_524()) == 0)
 		{
 			return 1;
 		}
@@ -55529,7 +55529,7 @@ void func_533(var uParam0)//Position - 0x36329
 
 void func_534(int* iParam0, int* iParam1)//Position - 0x363DA
 {
-	while (!NETWORK::_NETWORK_IS_THIS_SCRIPT_MARKED(32, false, Global_1578976))
+	while (!NETWORK::NETWORK_TRY_TO_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(32, false, Global_1578976))
 	{
 		SYSTEM::WAIT(0);
 	}

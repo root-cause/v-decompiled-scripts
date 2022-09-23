@@ -597,8 +597,8 @@ void func_1()//Position - 0x1D4
 					}
 					iLocal_308 = 1;
 					iLocal_304 = 6;
-					PAD::STOP_PAD_SHAKE(2);
-					PAD::_CLEAR_SUPPRESSED_PAD_RUMBLE(2);
+					PAD::STOP_CONTROL_SHAKE(2);
+					PAD::CLEAR_CONTROL_SHAKE_SUPPRESSED_ID(2);
 				}
 			}
 			else
@@ -675,7 +675,7 @@ void func_1()//Position - 0x1D4
 			{
 				STATS::STAT_SET_INT(joaat("NUM_SH_TV_WATCHED"), iLocal_312 + 1, true);
 			}
-			BRAIN::_0x6D6840CEE8845831("chop");
+			BRAIN::REACTIVATE_NAMED_WORLD_BRAINS_WAITING_TILL_OUT_OF_RANGE("chop");
 			if (func_6(iLocal_313))
 			{
 				CAM::STOP_RENDERING_SCRIPT_CAMS_USING_CATCH_UP(false, 0f, 3, 0);
@@ -1288,9 +1288,9 @@ int func_28(bool bParam0, bool bParam1, var uParam2, bool bParam3)//Position - 0
 	iVar0 = 0;
 	if (MISC::IS_PC_VERSION())
 	{
-		if (CUTSCENE::_0xA0FE76168A189DDB() != bParam0 && uParam2)
+		if (CUTSCENE::IS_MULTIHEAD_FADE_UP() != bParam0 && uParam2)
 		{
-			CUTSCENE::_0x20746F7B1032A3C7(bParam0, bParam1, true, bParam3);
+			CUTSCENE::SET_CUTSCENE_MULTIHEAD_FADE(bParam0, bParam1, true, bParam3);
 			iVar0 = 1;
 		}
 	}
@@ -1526,7 +1526,7 @@ int func_39(int iParam0)//Position - 0x1628
 			return 0;
 		}
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("cellphone_flashhand")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) > 0)
 	{
 		return 1;
 	}
@@ -1585,7 +1585,7 @@ int func_44()//Position - 0x170B
 {
 	if (MISC::IS_PC_VERSION())
 	{
-		if (MISC::_0xD10282B6E3751BA0() == 1f)
+		if (MISC::GET_CITY_DENSITY() == 1f)
 		{
 			return 1;
 		}
@@ -1877,7 +1877,7 @@ void func_56()//Position - 0x1B00
 	func_10();
 	if (iLocal_51)
 	{
-		BRAIN::_0x6D6840CEE8845831("chop");
+		BRAIN::REACTIVATE_NAMED_WORLD_BRAINS_WAITING_TILL_OUT_OF_RANGE("chop");
 	}
 	func_57();
 	SCRIPT::TERMINATE_THIS_THREAD();

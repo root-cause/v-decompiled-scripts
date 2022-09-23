@@ -39,7 +39,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_17 = -1;
 	sLocal_20 = "NULL";
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
-	NETWORK::_0xFAFC23AEE23868DB();
+	NETWORK::NETWORK_ACCESS_TUNABLE_MODIFICATION_DETECTION_CLEAR();
 	while (true)
 	{
 		SYSTEM::WAIT(0);
@@ -2306,7 +2306,7 @@ void func_6(int iParam0, int iParam1, float* fParam2, bool bParam3)//Position - 
 	}
 	else
 	{
-		NETWORK::_NETWORK_REGISTER_TUNABLE_FLOAT_HASH(iVar0, iParam1, fParam2);
+		NETWORK::NETWORK_ACCESS_TUNABLE_FLOAT_MODIFICATION_DETECTION_REGISTRATION_HASH(iVar0, iParam1, fParam2);
 	}
 	if (bParam3)
 	{
@@ -2682,7 +2682,7 @@ void func_9(int iParam0, int iParam1, int* iParam2, bool bParam3)//Position - 0x
 	}
 	else
 	{
-		NETWORK::_NETWORK_REGISTER_TUNABLE_INT_HASH(iVar0, iParam1, iParam2);
+		NETWORK::NETWORK_ACCESS_TUNABLE_INT_MODIFICATION_DETECTION_REGISTRATION_HASH(iVar0, iParam1, iParam2);
 	}
 	if (bParam3)
 	{
@@ -2926,7 +2926,7 @@ void func_11(int iParam0, int iParam1, int* iParam2, bool bParam3)//Position - 0
 	else
 	{
 		*iParam2 = NETWORK::NETWORK_ACCESS_TUNABLE_BOOL_HASH(iVar0, iParam1);
-		NETWORK::_NETWORK_REGISTER_TUNABLE_BOOL_HASH(iVar0, iParam1, iParam2);
+		NETWORK::NETWORK_ACCESS_TUNABLE_BOOL_MODIFICATION_DETECTION_REGISTRATION_HASH(iVar0, iParam1, iParam2);
 	}
 	if (bParam3)
 	{

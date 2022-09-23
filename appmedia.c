@@ -162,7 +162,7 @@ void func_3()//Position - 0x199
 	iVar0 = 0;
 	while (iLocal_22 < iLocal_21)
 	{
-		if (GRAPHICS::_0xE791DF1F73ED2C8B(iLocal_22))
+		if (GRAPHICS::DOES_THIS_PHOTO_SLOT_CONTAIN_A_VALID_PHOTO(iLocal_22))
 		{
 			func_6(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(18), SYSTEM::TO_FLOAT(iVar0), SYSTEM::TO_FLOAT(0), -1f, -1f, &(Local_27[iLocal_22 /*6*/]), 0, 0, 0, 0);
 			iLocal_26[iVar0] = iLocal_22;
@@ -438,7 +438,7 @@ int func_15(int iParam0, int iParam1, int iParam2)//Position - 0x7BB
 	{
 		if (MISC::IS_PC_VERSION())
 		{
-			if (MISC::UPDATE_ONSCREEN_KEYBOARD() == 0 || (NETWORK::_NETWORK_IS_TEXT_CHAT_ACTIVE() && PAD::_IS_USING_KEYBOARD(2)))
+			if (MISC::UPDATE_ONSCREEN_KEYBOARD() == 0 || (NETWORK::NETWORK_TEXT_CHAT_IS_TYPING() && PAD::IS_USING_KEYBOARD_AND_MOUSE(2)))
 			{
 				return 0;
 			}
@@ -464,7 +464,7 @@ void func_16()//Position - 0x82D
 			iLocal_28 = 0;
 		}
 	}
-	if (PAD::_IS_USING_KEYBOARD(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 	{
 		if (func_15(2, 181, 0))
 		{
@@ -505,11 +505,11 @@ void func_18()//Position - 0x8DD
 	{
 		if (Global_20469 == 0)
 		{
-			MOBILE::_CELL_CAM_MOVE_FINGER(2);
+			MOBILE::CELL_SET_INPUT(2);
 		}
 		else
 		{
-			MOBILE::_CELL_CAM_MOVE_FINGER(1);
+			MOBILE::CELL_SET_INPUT(1);
 		}
 	}
 }
@@ -525,7 +525,7 @@ int func_19()//Position - 0x900
 		return 0;
 	}
 	iVar2 = 0;
-	iVar0 = CAM::_GET_CAM_ACTIVE_VIEW_MODE_CONTEXT();
+	iVar0 = CAM::GET_CAM_ACTIVE_VIEW_MODE_CONTEXT();
 	iVar1 = CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(iVar0);
 	if (iVar1 == 4)
 	{
@@ -551,11 +551,11 @@ void func_21()//Position - 0x982
 	{
 		if (Global_20469 == 0)
 		{
-			MOBILE::_CELL_CAM_MOVE_FINGER(1);
+			MOBILE::CELL_SET_INPUT(1);
 		}
 		else
 		{
-			MOBILE::_CELL_CAM_MOVE_FINGER(2);
+			MOBILE::CELL_SET_INPUT(2);
 		}
 	}
 }
@@ -638,7 +638,7 @@ void func_25()//Position - 0xB7E
 {
 	if (func_19())
 	{
-		MOBILE::_CELL_CAM_MOVE_FINGER(5);
+		MOBILE::CELL_SET_INPUT(5);
 	}
 }
 
@@ -646,8 +646,8 @@ void func_26()//Position - 0xB92
 {
 	if ((MISC::IS_XBOX360_VERSION() || func_27()) || MISC::IS_PC_VERSION())
 	{
-		GRAPHICS::_0x4AF92ACD3141D96C();
-		if (GRAPHICS::_0x2A893980E96B659A(0))
+		GRAPHICS::CLEAR_STATUS_OF_SORTED_LIST_OPERATION();
+		if (GRAPHICS::QUEUE_OPERATION_TO_CREATE_SORTED_LIST_OF_PHOTOS(0))
 		{
 			iLocal_24 = 1;
 		}
@@ -666,7 +666,7 @@ void func_26()//Position - 0xB92
 
 bool func_27()//Position - 0xBDC
 {
-	return (MISC::IS_DURANGO_VERSION() || MISC::_0xC545AB1CF97ABB34());
+	return (MISC::IS_DURANGO_VERSION() || MISC::IS_SCARLETT_VERSION());
 }
 
 void func_28()//Position - 0xBF2

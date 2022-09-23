@@ -100,7 +100,7 @@ void __EntryFunction__()//Position - 0x0
 	{
 		func_75(1);
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("ambient_diving")) > 1)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("ambient_diving")) > 1)
 	{
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
@@ -335,7 +335,7 @@ int func_6(int iParam0)//Position - 0x3D4
 
 int func_7(bool bParam0)//Position - 0x43E
 {
-	if (!bParam0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("benchmark")) > 0)
+	if (!bParam0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("benchmark")) > 0)
 	{
 		return 1;
 	}
@@ -616,10 +616,10 @@ int func_12(int iParam0, int iParam1)//Position - 0xA60
 	{
 		return 0;
 	}
-	iVar0 = PLAYER::_GET_ACHIEVEMENT_PROGRESS(iParam0);
+	iVar0 = PLAYER::GET_ACHIEVEMENT_PROGRESS(iParam0);
 	if (iParam1 > iVar0)
 	{
-		return PLAYER::_SET_ACHIEVEMENT_PROGRESS(iParam0, iParam1);
+		return PLAYER::SET_ACHIEVEMENT_PROGRESS(iParam0, iParam1);
 	}
 	return 0;
 }
@@ -630,7 +630,7 @@ void func_13(int iParam0, bool bParam1, int iParam2)//Position - 0xAB1
 	{
 		iParam2 = func_14();
 	}
-	STATS::_SET_PACKED_STAT_BOOL(iParam0, bParam1, iParam2);
+	STATS::SET_PACKED_STAT_BOOL_CODE(iParam0, bParam1, iParam2);
 }
 
 int func_14()//Position - 0xACF
@@ -652,7 +652,7 @@ void func_15(bool bParam0)//Position - 0xADB
 
 int func_16()//Position - 0xAFF
 {
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("apptrackify")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("apptrackify")) > 0)
 	{
 		return 1;
 	}
@@ -1191,7 +1191,7 @@ bool func_29(int iParam0, int iParam1)//Position - 0x1697
 	{
 		iParam1 = func_14();
 	}
-	return STATS::_GET_PACKED_STAT_BOOL(iParam0, iParam1);
+	return STATS::GET_PACKED_STAT_BOOL_CODE(iParam0, iParam1);
 }
 
 int func_30(int iParam0)//Position - 0x16B3
@@ -1312,7 +1312,7 @@ void func_37(var uParam0, var uParam1, int iParam2)//Position - 0x1864
 	{
 		func_44(*uParam0, iParam2, 1);
 	}
-	PAD::SET_PAD_SHAKE(0, 200, 250);
+	PAD::SET_CONTROL_SHAKE(0, 200, 250);
 	STATS::STAT_INCREMENT(uParam0->f_6, 1f);
 	if (bLocal_41)
 	{

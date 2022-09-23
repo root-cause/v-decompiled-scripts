@@ -483,14 +483,14 @@ int func_18(int iParam0, struct<3> Param1, float fParam2)//Position - 0x63A
 	Var3.f_1 = (MISC::ABSF((Var2.f_1 - Var1.f_1)) / 2f);
 	Var3.f_2 = (MISC::ABSF((Var2.f_2 - Var1.f_2)) / 2f);
 	Var0[0 /*3*/] = { Param1 };
-	Var0[1 /*3*/] = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Param1, fParam2, -Var3.f_0, -Var3.f_1, -Var3.f_2) };
-	Var0[2 /*3*/] = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Param1, fParam2, Var3.f_0, -Var3.f_1, -Var3.f_2) };
-	Var0[3 /*3*/] = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Param1, fParam2, Var3.f_0, Var3.f_1, -Var3.f_2) };
-	Var0[4 /*3*/] = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Param1, fParam2, -Var3.f_0, Var3.f_1, -Var3.f_2) };
-	Var0[5 /*3*/] = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Param1, fParam2, -Var3.f_0, -Var3.f_1, Var3.f_2) };
-	Var0[6 /*3*/] = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Param1, fParam2, Var3.f_0, -Var3.f_1, Var3.f_2) };
-	Var0[7 /*3*/] = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Param1, fParam2, Var3.f_0, Var3.f_1, Var3.f_2) };
-	Var0[8 /*3*/] = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Param1, fParam2, -Var3.f_0, Var3.f_1, Var3.f_2) };
+	Var0[1 /*3*/] = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Param1, fParam2, -Var3.f_0, -Var3.f_1, -Var3.f_2) };
+	Var0[2 /*3*/] = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Param1, fParam2, Var3.f_0, -Var3.f_1, -Var3.f_2) };
+	Var0[3 /*3*/] = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Param1, fParam2, Var3.f_0, Var3.f_1, -Var3.f_2) };
+	Var0[4 /*3*/] = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Param1, fParam2, -Var3.f_0, Var3.f_1, -Var3.f_2) };
+	Var0[5 /*3*/] = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Param1, fParam2, -Var3.f_0, -Var3.f_1, Var3.f_2) };
+	Var0[6 /*3*/] = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Param1, fParam2, Var3.f_0, -Var3.f_1, Var3.f_2) };
+	Var0[7 /*3*/] = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Param1, fParam2, Var3.f_0, Var3.f_1, Var3.f_2) };
+	Var0[8 /*3*/] = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Param1, fParam2, -Var3.f_0, Var3.f_1, Var3.f_2) };
 	if (!INTERIOR::IS_COLLISION_MARKED_OUTSIDE(Param1))
 	{
 		return 0;
@@ -966,7 +966,7 @@ void func_39()//Position - 0xFFF
 				return;
 			}
 			iLocal_75 = (MISC::GET_GAME_TIMER() - iLocal_74);
-			if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("appinternet")) == 0)
+			if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("appinternet")) == 0)
 			{
 				func_40((iLocal_73 - iLocal_75), "CHEAT_INV", 0, 0, 1000, 0, 2, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 			}
@@ -1163,8 +1163,8 @@ void func_45()//Position - 0x1450
 
 void func_46(bool bParam0)//Position - 0x152A
 {
-	CAM::_0x487A82C650EB7799(0f);
-	CAM::_0x0225778816FDC28C(0f);
+	CAM::SET_GAMEPLAY_CAM_MOTION_BLUR_SCALING_THIS_UPDATE(0f);
+	CAM::SET_GAMEPLAY_CAM_MAX_MOTION_BLUR_STRENGTH_THIS_UPDATE(0f);
 	CAM::SET_GAMEPLAY_CAM_SHAKE_AMPLITUDE(0f);
 	CAM::STOP_GAMEPLAY_CAM_SHAKING(true);
 	CAM::SET_CINEMATIC_CAM_SHAKE_AMPLITUDE(0f);
@@ -1754,7 +1754,7 @@ int func_71(int iParam0)//Position - 0x1D85
 			return 0;
 		}
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("cellphone_flashhand")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) > 0)
 	{
 		return 1;
 	}
@@ -2602,142 +2602,142 @@ void func_88()//Position - 0x2C67
 	}
 	iLocal_82 = 0;
 	iLocal_83 = 0;
-	if ((func_107(988027572, 12) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("buzzoff"))) || func_106(20, joaat("buzzard")))
+	if ((func_107(988027572, 12) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("buzzoff"))) || func_106(20, joaat("buzzard")))
 	{
 		func_103(joaat("buzzard"), "CHEAT_SPAWN_VEH1");
 	}
-	if ((func_107(-1134279030, 11) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("bandit"))) || func_106(20, joaat("bmx")))
+	if ((func_107(-1134279030, 11) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("bandit"))) || func_106(20, joaat("bmx")))
 	{
 		func_103(joaat("bmx"), "CHEAT_SPAWN_VEH2");
 	}
-	if ((func_107(971352167, 10) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("holein1"))) || func_106(20, joaat("caddy")))
+	if ((func_107(971352167, 10) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("holein1"))) || func_106(20, joaat("caddy")))
 	{
 		func_103(joaat("caddy"), "CHEAT_SPAWN_VEH3");
 	}
-	if ((func_107(-269863225, 10) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("comet"))) || func_106(20, joaat("comet2")))
+	if ((func_107(-269863225, 10) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("comet"))) || func_106(20, joaat("comet2")))
 	{
 		func_103(joaat("comet2"), "CHEAT_SPAWN_VEH4");
 	}
-	if ((func_107(458579068, 12) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("flyspray"))) || func_106(20, joaat("duster")))
+	if ((func_107(458579068, 12) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("flyspray"))) || func_106(20, joaat("duster")))
 	{
 		func_103(joaat("duster"), "CHEAT_SPAWN_VEH5");
 	}
-	if ((func_107(-666513193, 12) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("rocket"))) || func_106(20, joaat("pcj")))
+	if ((func_107(-666513193, 12) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("rocket"))) || func_106(20, joaat("pcj")))
 	{
 		func_103(joaat("pcj"), "CHEAT_SPAWN_VEH6");
 	}
-	if ((func_107(-1245984749, 10) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("rapidgt"))) || func_106(20, joaat("rapidgt")))
+	if ((func_107(-1245984749, 10) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("rapidgt"))) || func_106(20, joaat("rapidgt")))
 	{
 		func_103(joaat("rapidgt"), "CHEAT_SPAWN_VEH7");
 	}
-	if ((func_107(2076774618, 12) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("offroad"))) || func_106(20, joaat("sanchez")))
+	if ((func_107(2076774618, 12) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("offroad"))) || func_106(20, joaat("sanchez")))
 	{
 		func_103(joaat("sanchez"), "CHEAT_SPAWN_VEH8");
 	}
-	if ((func_107(855685457, 9) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("vinewood"))) || func_106(20, joaat("stretch")))
+	if ((func_107(855685457, 9) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("vinewood"))) || func_106(20, joaat("stretch")))
 	{
 		func_103(joaat("stretch"), "CHEAT_SPAWN_VEH9");
 	}
-	if ((func_107(-591395876, 12) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("barnstorm"))) || func_106(20, joaat("stunt")))
+	if ((func_107(-591395876, 12) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("barnstorm"))) || func_106(20, joaat("stunt")))
 	{
 		func_103(joaat("stunt"), "CHEAT_SPAWN_VEH10");
 	}
-	if ((func_107(-1399217582, 10) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("trashed"))) || func_106(20, joaat("trash")))
+	if ((func_107(-1399217582, 10) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("trashed"))) || func_106(20, joaat("trash")))
 	{
 		func_103(joaat("trash"), "CHEAT_SPAWN_VEH11");
 	}
 	if (func_102())
 	{
-		if ((func_107(-375917581, 10) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("extinct"))) || func_106(20, joaat("dodo")))
+		if ((func_107(-375917581, 10) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("extinct"))) || func_106(20, joaat("dodo")))
 		{
 			func_103(joaat("dodo"), "CHEAT_SPAWN_VEH12");
 		}
-		if ((func_107(-2124307881, 10) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("deathcar"))) || func_106(20, joaat("dukes2")))
+		if ((func_107(-2124307881, 10) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("deathcar"))) || func_106(20, joaat("dukes2")))
 		{
 			func_103(joaat("dukes2"), "CHEAT_SPAWN_VEH13");
 		}
-		if ((func_107(1028964594, 9) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("bubbles"))) || func_106(20, joaat("submersible2")))
+		if ((func_107(1028964594, 9) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("bubbles"))) || func_106(20, joaat("submersible2")))
 		{
 			func_103(joaat("submersible2"), "CHEAT_SPAWN_VEH14");
 		}
 	}
-	if ((func_107(-393416581, 11) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("hoptoit"))) || func_106(0, 0))
+	if ((func_107(-393416581, 11) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("hoptoit"))) || func_106(0, 0))
 	{
 		func_101();
 	}
-	if ((func_107(-296509791, 8) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("snowday"))) || func_106(1, 0))
+	if ((func_107(-296509791, 8) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("snowday"))) || func_106(1, 0))
 	{
 		func_100();
 	}
-	if ((func_107(1120820643, 7) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("catchme"))) || func_106(2, 0))
+	if ((func_107(1120820643, 7) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("catchme"))) || func_106(2, 0))
 	{
 		func_99();
 	}
-	if ((func_107(-421458016, 9) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("gotgills"))) || func_106(3, 0))
+	if ((func_107(-421458016, 9) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("gotgills"))) || func_106(3, 0))
 	{
 		func_98();
 	}
-	if ((func_107(372390926, 12) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("toolup"))) || func_106(4, 0))
+	if ((func_107(372390926, 12) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("toolup"))) || func_106(4, 0))
 	{
 		iLocal_51 = 4;
 	}
-	if ((func_107(606506837, 8) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("makeitrain"))) || func_106(5, 0))
+	if ((func_107(606506837, 8) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("makeitrain"))) || func_106(5, 0))
 	{
 		iLocal_52 = 4;
 	}
-	if ((func_107(453014206, 12) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("turtle"))) || func_106(6, 0))
+	if ((func_107(453014206, 12) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("turtle"))) || func_106(6, 0))
 	{
 		iLocal_53 = 4;
 	}
-	if ((func_107(1773187142, 9) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("powerup"))) || func_106(7, 0))
+	if ((func_107(1773187142, 9) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("powerup"))) || func_106(7, 0))
 	{
 		iLocal_54 = 4;
 	}
-	if ((func_107(1173296014, 10) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("fugitive"))) || func_106(8, 0))
+	if ((func_107(1173296014, 10) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("fugitive"))) || func_106(8, 0))
 	{
 		iLocal_55 = 4;
 	}
-	if ((func_107(-381269753, 10) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("lawyerup"))) || func_106(9, 0))
+	if ((func_107(-381269753, 10) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("lawyerup"))) || func_106(9, 0))
 	{
 		iLocal_56 = 4;
 	}
-	if ((func_107(-2023988698, 11) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("skydive"))) || func_106(10, 0))
+	if ((func_107(-2023988698, 11) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("skydive"))) || func_106(10, 0))
 	{
 		iLocal_57 = 4;
 	}
-	if ((func_107(-835863906, 12) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("highex"))) || func_106(11, 0))
+	if ((func_107(-835863906, 12) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("highex"))) || func_106(11, 0))
 	{
 		func_97();
 	}
-	if ((func_107(1958387485, 12) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("incendiary"))) || func_106(12, 0))
+	if ((func_107(1958387485, 12) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("incendiary"))) || func_106(12, 0))
 	{
 		func_96();
 	}
-	if ((func_107(-903985180, 9) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("hothands"))) || func_106(13, 0))
+	if ((func_107(-903985180, 9) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("hothands"))) || func_106(13, 0))
 	{
 		func_95();
 	}
-	if ((func_107(2087642905, 9) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("floater"))) || func_106(14, 0))
+	if ((func_107(2087642905, 9) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("floater"))) || func_106(14, 0))
 	{
 		func_94();
 	}
-	if ((func_107(1257820019, 10) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("painkiller"))) || func_106(15, 0))
+	if ((func_107(1257820019, 10) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("painkiller"))) || func_106(15, 0))
 	{
 		func_93();
 	}
-	if ((func_107(1540206179, 7) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("slowmo"))) || func_106(16, 0))
+	if ((func_107(1540206179, 7) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("slowmo"))) || func_106(16, 0))
 	{
 		func_92();
 	}
-	if ((func_107(115565392, 16) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("skyfall"))) || func_106(17, 0))
+	if ((func_107(115565392, 16) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("skyfall"))) || func_106(17, 0))
 	{
 		func_91();
 	}
-	if ((func_107(-1276513277, 8) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("liquor"))) || func_106(18, 0))
+	if ((func_107(-1276513277, 8) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("liquor"))) || func_106(18, 0))
 	{
 		func_90();
 	}
-	if ((func_107(2040433593, 9) || MISC::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(joaat("deadeye"))) || func_106(19, 0))
+	if ((func_107(2040433593, 9) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("deadeye"))) || func_106(19, 0))
 	{
 		func_89();
 	}
@@ -2827,7 +2827,7 @@ void func_91()//Position - 0x34AE
 		func_21("CHEAT_NOT_NOW");
 		return;
 	}
-	if ((PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()) || PLAYER::IS_PLAYER_BEING_ARRESTED(PLAYER::PLAYER_ID(), false)) || SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("respawn_controller")) > 0)
+	if ((PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()) || PLAYER::IS_PLAYER_BEING_ARRESTED(PLAYER::PLAYER_ID(), false)) || SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("respawn_controller")) > 0)
 	{
 		func_21("CHEAT_NOT_NOW");
 		return;
@@ -3106,7 +3106,7 @@ int func_102()//Position - 0x39FD
 	{
 		if (NETWORK::NETWORK_HAS_VALID_ROS_CREDENTIALS())
 		{
-			if (NETWORK::_NETWORK_GET_ROS_PRIVILEGE_24())
+			if (NETWORK::NETWORK_HAS_ROS_PRIVILEGE_PLAYED_LAST_GEN())
 			{
 				STATS::STAT_GET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), &iVar0, -1);
 				MISC::SET_BIT(&iVar0, 2);
@@ -3120,7 +3120,7 @@ int func_102()//Position - 0x39FD
 				{
 					iVar0 = MISC::GET_PROFILE_SETTING(866);
 					MISC::SET_BIT(&iVar0, 0);
-					STATS::_SET_HAS_CONTENT_UNLOCKS_FLAGS(iVar0);
+					STATS::SET_HAS_SPECIALEDITION_CONTENT(iVar0);
 				}
 				return 1;
 			}
@@ -3140,7 +3140,7 @@ void func_103(int iParam0, char* sParam1)//Position - 0x3AB5
 {
 	if (iLocal_46 == 1)
 	{
-		if (((((func_15(9) || SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("barry1")) > 0) || SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("tennis")) > 0) || func_27(23)) || func_27(22)) || func_27(20))
+		if (((((func_15(9) || SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("barry1")) > 0) || SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("tennis")) > 0) || func_27(23)) || func_27(22)) || func_27(20))
 		{
 			func_21("CHEAT_NOT_NOW");
 			return;
@@ -3229,7 +3229,7 @@ int func_107(int iParam0, int iParam1)//Position - 0x3C11
 {
 	if (!func_15(14))
 	{
-		return MISC::_HAS_BUTTON_COMBINATION_JUST_BEEN_ENTERED(iParam0, iParam1);
+		return MISC::HAS_CHEAT_WITH_HASH_BEEN_ACTIVATED(iParam0, iParam1);
 	}
 	return 0;
 }

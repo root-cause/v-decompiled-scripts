@@ -874,7 +874,7 @@ int func_34()//Position - 0x14F9
 	}
 	if (func_35() != 0)
 	{
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(func_35()) == 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(func_35()) == 0)
 		{
 			return 1;
 		}

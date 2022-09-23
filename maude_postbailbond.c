@@ -1463,7 +1463,7 @@ void func_58(int* iParam0, bool bParam1)//Position - 0x18EB
 		}
 		else
 		{
-			OBJECT::_MARK_OBJECT_FOR_DELETION(*iParam0);
+			OBJECT::ONLY_CLEAN_UP_OBJECT_WHEN_OUT_OF_RANGE(*iParam0);
 		}
 	}
 }

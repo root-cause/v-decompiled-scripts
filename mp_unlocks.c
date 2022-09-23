@@ -188,7 +188,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_132 = 50 + 1000;
 	iLocal_133 = 58 + 1000;
 	iLocal_142 = 39;
-	HUD::_LOG_DEBUG_INFO(1);
+	HUD::FORCE_SCRIPTED_GFX_WHEN_FRONTEND_ACTIVE(1);
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
 	GRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(1);
 	if ((func_58() || func_57()) || MISC::IS_PC_VERSION())
@@ -1335,7 +1335,7 @@ bool func_36(int iParam0, int iParam1)//Position - 0x1490
 	{
 		iParam1 = func_15();
 	}
-	return STATS::_GET_PACKED_STAT_BOOL(iParam0, iParam1);
+	return STATS::GET_PACKED_STAT_BOOL_CODE(iParam0, iParam1);
 }
 
 void func_37(int iParam0, int iParam1, int iParam2)//Position - 0x14AC
@@ -1781,7 +1781,7 @@ void func_53()//Position - 0x1CB1
 {
 	int iVar0;
 	
-	if (!PAD::_IS_USING_KEYBOARD(2))
+	if (!PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 	{
 		iVar0 = PAD::GET_CONTROL_VALUE(2, 221);
 		if (iVar0 > 180)
@@ -1878,11 +1878,11 @@ void func_56(var uParam0, bool bParam1, bool bParam2)//Position - 0x1DD9
 
 bool func_57()//Position - 0x1E1E
 {
-	return (MISC::IS_ORBIS_VERSION() || MISC::_0x807ABE1AB65C24D2());
+	return (MISC::IS_ORBIS_VERSION() || MISC::IS_PROSPERO_VERSION());
 }
 
 bool func_58()//Position - 0x1E34
 {
-	return (MISC::IS_DURANGO_VERSION() || MISC::_0xC545AB1CF97ABB34());
+	return (MISC::IS_DURANGO_VERSION() || MISC::IS_SCARLETT_VERSION());
 }
 

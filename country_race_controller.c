@@ -205,7 +205,7 @@ void __EntryFunction__()//Position - 0x0
 			}
 		}
 	}
-	MISC::_0x6F2135B6129620C1(true);
+	MISC::SET_THIS_IS_A_TRIGGER_SCRIPT(true);
 	while (true)
 	{
 		if (!func_61(PLAYER::PLAYER_PED_ID()))
@@ -272,7 +272,7 @@ int func_2()//Position - 0x1A1
 
 int func_3(bool bParam0)//Position - 0x1EC
 {
-	if (!bParam0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("benchmark")) > 0)
+	if (!bParam0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("benchmark")) > 0)
 	{
 		return 1;
 	}
@@ -400,7 +400,7 @@ bool func_10()//Position - 0x42B
 
 void func_11()//Position - 0x437
 {
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("country_race")) == 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("country_race")) == 0)
 	{
 		func_12(&Global_113384);
 		Global_113384 = -1;
@@ -436,7 +436,7 @@ void func_13()//Position - 0x49C
 	SCRIPT::REQUEST_SCRIPT("Country_Race");
 	PAD::DISABLE_CONTROL_ACTION(0, 74, true);
 	MISC::CLEAR_AREA_OF_PROJECTILES(func_60(), 20f, 0);
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("country_race")) == 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("country_race")) == 0)
 	{
 		if (SCRIPT::HAS_SCRIPT_LOADED("Country_Race"))
 		{
@@ -817,7 +817,7 @@ void func_23()//Position - 0xA0A
 					func_35();
 					func_33();
 					func_32();
-					if (((!STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS() && !func_31(1)) && !func_30(0)) && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("appinternet")) == 0)
+					if (((!STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS() && !func_31(1)) && !func_30(0)) && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("appinternet")) == 0)
 					{
 						if (PAD::IS_CONTROL_JUST_PRESSED(2, 51))
 						{
@@ -895,7 +895,7 @@ void func_28()//Position - 0xB88
 {
 	if (HUD::HAS_THIS_ADDITIONAL_TEXT_LOADED("C_RACE", 3))
 	{
-		if (!func_25("CRACECAR") && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("appinternet")) == 0)
+		if (!func_25("CRACECAR") && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("appinternet")) == 0)
 		{
 			HUD::CLEAR_HELP(true);
 			func_29("CRACECAR", 1, 1, -1);
@@ -929,7 +929,7 @@ int func_30(int iParam0)//Position - 0xBDE
 			return 0;
 		}
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("cellphone_flashhand")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) > 0)
 	{
 		return 1;
 	}
@@ -956,7 +956,7 @@ void func_32()//Position - 0xC5E
 	if (HUD::HAS_THIS_ADDITIONAL_TEXT_LOADED("C_RACE", 3))
 	{
 		Var0 = { func_26() };
-		if (!func_25(&Var0) && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("appinternet")) == 0)
+		if (!func_25(&Var0) && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("appinternet")) == 0)
 		{
 			HUD::CLEAR_HELP(true);
 			func_29(&Var0, 1, 1, -1);
@@ -1309,7 +1309,7 @@ int func_41()//Position - 0x14DD
 	{
 		return 0;
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("chop")) != 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("chop")) != 0)
 	{
 		return 0;
 	}
@@ -1359,7 +1359,7 @@ int func_43()//Position - 0x1574
 		{
 			if (func_61(iLocal_151) && func_61(iLocal_150))
 			{
-				if (!HUD::HAS_THIS_ADDITIONAL_TEXT_LOADED("C_RACE", 3) && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("mission_stat_watcher")) <= 0)
+				if (!HUD::HAS_THIS_ADDITIONAL_TEXT_LOADED("C_RACE", 3) && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("mission_stat_watcher")) <= 0)
 				{
 					HUD::REQUEST_ADDITIONAL_TEXT("C_RACE", 3);
 				}
@@ -1394,7 +1394,7 @@ int func_43()//Position - 0x1574
 			{
 				if (HUD::HAS_THIS_ADDITIONAL_TEXT_LOADED("C_RACE", 3))
 				{
-					if (!func_25("CRACEDISRUPT") && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("appinternet")) == 0)
+					if (!func_25("CRACEDISRUPT") && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("appinternet")) == 0)
 					{
 						HUD::CLEAR_HELP(true);
 						func_29("CRACEDISRUPT", 1, 1, -1);
@@ -1701,7 +1701,7 @@ void func_56()//Position - 0x1C6B
 		Global_113386.f_25073.f_8 = 1;
 		func_62(0);
 	}
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("country_race")) == 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("country_race")) == 0)
 	{
 		if (SYSTEM::VDIST2(func_60(), ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true)) > 160000f)
 		{
@@ -1726,7 +1726,7 @@ int func_57()//Position - 0x1D09
 	{
 		if (NETWORK::NETWORK_HAS_VALID_ROS_CREDENTIALS())
 		{
-			if (NETWORK::_NETWORK_GET_ROS_PRIVILEGE_24())
+			if (NETWORK::NETWORK_HAS_ROS_PRIVILEGE_PLAYED_LAST_GEN())
 			{
 				STATS::STAT_GET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), &iVar0, -1);
 				MISC::SET_BIT(&iVar0, 2);
@@ -1740,7 +1740,7 @@ int func_57()//Position - 0x1D09
 				{
 					iVar0 = MISC::GET_PROFILE_SETTING(866);
 					MISC::SET_BIT(&iVar0, 0);
-					STATS::_SET_HAS_CONTENT_UNLOCKS_FLAGS(iVar0);
+					STATS::SET_HAS_SPECIALEDITION_CONTENT(iVar0);
 				}
 				return 1;
 			}

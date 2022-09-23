@@ -1013,7 +1013,7 @@ void func_18(var uParam0)//Position - 0x1037
 	PED::SET_PED_CONFIG_FLAG(*uParam0, 108, true);
 	PED::SET_PED_CONFIG_FLAG(*uParam0, 106, true);
 	PED::SET_PED_CAN_EVASIVE_DIVE(*uParam0, false);
-	PED::_0x2F3C3D9F50681DE4(*uParam0, true);
+	PED::SET_TREAT_AS_AMBIENT_PED_FOR_DRIVER_LOCKON(*uParam0, true);
 	PED::SET_PED_CAN_RAGDOLL_FROM_PLAYER_IMPACT(*uParam0, false);
 	PED::SET_PED_CAN_RAGDOLL(*uParam0, false);
 	PED::SET_PED_CONFIG_FLAG(*uParam0, 208, true);
@@ -1267,7 +1267,7 @@ int func_29()//Position - 0x13E2
 	}
 	if (func_30() != 0)
 	{
-		if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(func_30()) == 0)
+		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(func_30()) == 0)
 		{
 			return 1;
 		}
@@ -4669,7 +4669,7 @@ int func_46(int iParam0)//Position - 0x83DE
 
 void func_47()//Position - 0x8430
 {
-	while (!NETWORK::_NETWORK_IS_THIS_SCRIPT_MARKED(32, false, Global_1579073))
+	while (!NETWORK::NETWORK_TRY_TO_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(32, false, Global_1579073))
 	{
 		SYSTEM::WAIT(0);
 	}

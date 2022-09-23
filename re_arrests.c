@@ -618,7 +618,7 @@ void func_1()//Position - 0x1D2
 				case 6:
 					if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_55, false) && !PED::IS_PED_INJURED(iLocal_54))
 					{
-						VEHICLE::_0xBE5C1255A1830FF5(iLocal_55, true);
+						VEHICLE::SET_VEHICLE_WILL_FORCE_OTHER_VEHICLES_TO_STOP(iLocal_55, true);
 						if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_52, joaat("SCRIPT_TASK_PLAY_ANIM")) == 7)
 						{
 							if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_54, joaat("SCRIPT_TASK_VEHICLE_MISSION")) == 7)
@@ -1304,7 +1304,7 @@ int func_10()//Position - 0x13E9
 	{
 		if (PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE(ENTITY::GET_ENTITY_COORDS(iLocal_52, false), 1, &Var0, 1, 1077936128, 0))
 		{
-			if (VEHICLE::_0xA4822F1CF23F4810(&Var0, &Var2, &uVar3, 0f, 180f, 50f, 1, 1, 1))
+			if (VEHICLE::GENERATE_VEHICLE_CREATION_POS_FROM_PATHS(&Var0, &Var2, &uVar3, 0f, 180f, 50f, 1, 1, 1))
 			{
 				iLocal_55 = VEHICLE::CREATE_VEHICLE(iVar4, Var2, 0f, true, true, false);
 				iLocal_54 = PED::CREATE_PED_INSIDE_VEHICLE(iLocal_55, 6, joaat("S_M_Y_Ranger_01"), -1, true, true);
@@ -2313,7 +2313,7 @@ void func_25(int iParam0, bool bParam1, int iParam2)//Position - 0x2974
 	{
 		iParam2 = func_24();
 	}
-	STATS::_SET_PACKED_STAT_BOOL(iParam0, bParam1, iParam2);
+	STATS::SET_PACKED_STAT_BOOL_CODE(iParam0, bParam1, iParam2);
 }
 
 void func_26(int iParam0)//Position - 0x2992
@@ -2446,7 +2446,7 @@ bool func_29(int iParam0, int iParam1)//Position - 0x2B95
 	{
 		iParam1 = func_24();
 	}
-	return STATS::_GET_PACKED_STAT_BOOL(iParam0, iParam1);
+	return STATS::GET_PACKED_STAT_BOOL_CODE(iParam0, iParam1);
 }
 
 int func_30(bool bParam0)//Position - 0x2BB1
@@ -2720,10 +2720,10 @@ int func_45(int iParam0, int iParam1)//Position - 0x2F75
 	{
 		return 0;
 	}
-	iVar0 = PLAYER::_GET_ACHIEVEMENT_PROGRESS(iParam0);
+	iVar0 = PLAYER::GET_ACHIEVEMENT_PROGRESS(iParam0);
 	if (iParam1 > iVar0)
 	{
-		return PLAYER::_SET_ACHIEVEMENT_PROGRESS(iParam0, iParam1);
+		return PLAYER::SET_ACHIEVEMENT_PROGRESS(iParam0, iParam1);
 	}
 	return 0;
 }
@@ -5878,7 +5878,7 @@ int func_123()//Position - 0x7451
 {
 	if (MISC::IS_PC_VERSION())
 	{
-		if (MISC::_0xD10282B6E3751BA0() == 1f)
+		if (MISC::GET_CITY_DENSITY() == 1f)
 		{
 			return 1;
 		}
@@ -5957,7 +5957,7 @@ void func_129(int iParam0)//Position - 0x756C
 		return;
 	}
 	func_131(iParam0);
-	MISC::_0x65D2EBB47E1CEC21(false);
+	MISC::SET_SCRIPT_HIGH_PRIO(false);
 	MISC::SET_RANDOM_EVENT_FLAG(true);
 	Global_113372 = 0;
 	func_130();
@@ -6889,7 +6889,7 @@ int func_162()//Position - 0x8B12
 
 int func_163()//Position - 0x8B35
 {
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("player_timetable_scene")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("player_timetable_scene")) > 0)
 	{
 		return 1;
 	}
@@ -7085,7 +7085,7 @@ int func_174()//Position - 0x8D5D
 
 int func_175(bool bParam0)//Position - 0x8DA1
 {
-	if (!bParam0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("benchmark")) > 0)
+	if (!bParam0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("benchmark")) > 0)
 	{
 		return 1;
 	}
@@ -7108,7 +7108,7 @@ int func_176()//Position - 0x8DC9
 	{
 		if (NETWORK::NETWORK_HAS_VALID_ROS_CREDENTIALS())
 		{
-			if (NETWORK::_NETWORK_GET_ROS_PRIVILEGE_24())
+			if (NETWORK::NETWORK_HAS_ROS_PRIVILEGE_PLAYED_LAST_GEN())
 			{
 				STATS::STAT_GET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), &iVar0, -1);
 				MISC::SET_BIT(&iVar0, 2);
@@ -7122,7 +7122,7 @@ int func_176()//Position - 0x8DC9
 				{
 					iVar0 = MISC::GET_PROFILE_SETTING(866);
 					MISC::SET_BIT(&iVar0, 0);
-					STATS::_SET_HAS_CONTENT_UNLOCKS_FLAGS(iVar0);
+					STATS::SET_HAS_SPECIALEDITION_CONTENT(iVar0);
 				}
 				return 1;
 			}

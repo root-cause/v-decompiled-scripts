@@ -109,9 +109,9 @@ void __EntryFunction__()//Position - 0x0
 				}
 		}
 		HUD::DISABLE_FRONTEND_THIS_FRAME();
-		if (MISC::_HAS_ASYNC_INSTALL_FINISHED())
+		if (MISC::HAS_ASYNC_INSTALL_FINISHED())
 		{
-			MISC::_CLEANUP_ASYNC_INSTALL();
+			MISC::CLEANUP_ASYNC_INSTALL();
 			return;
 		}
 		SYSTEM::WAIT(0);

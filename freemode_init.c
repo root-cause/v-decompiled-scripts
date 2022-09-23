@@ -366,7 +366,7 @@ void func_1()//Position - 0x17F
 	int iVar1;
 	
 	MISC::CLEAR_AREA_OF_VEHICLES(0f, 0f, 0f, 99999.9f, false, false, false, false, false, false, 0);
-	iVar0 = VEHICLE::_GET_ALL_VEHICLES(&Global_1578027);
+	iVar0 = VEHICLE::GET_ALL_VEHICLES(&Global_1578027);
 	iVar1 = 0;
 	while (iVar1 < iVar0)
 	{
@@ -399,7 +399,7 @@ void func_1()//Position - 0x17F
 					}
 					if (ENTITY::DOES_ENTITY_BELONG_TO_THIS_SCRIPT(Global_1578027[iVar1], false))
 					{
-						if (VEHICLE::_IS_MISSION_TRAIN(Global_1578027[iVar1]))
+						if (VEHICLE::IS_MISSION_TRAIN(Global_1578027[iVar1]))
 						{
 							VEHICLE::DELETE_MISSION_TRAIN(&(Global_1578027[iVar1]));
 						}
@@ -822,10 +822,10 @@ void func_22(int iParam0, int iParam1, char* sParam2, int iParam3, bool bParam4)
 				{
 					iVar5 = iVar4;
 				}
-				StringCopy(&cVar2, HUD::_GET_TEXT_SUBSTRING_SAFE(sParam2, 0, iVar5, 31), 32);
+				StringCopy(&cVar2, HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME_WITH_BYTE_LIMIT(sParam2, 0, iVar5, 31), 32);
 				if (iVar4 > 10)
 				{
-					StringCopy(&cVar3, HUD::_GET_TEXT_SUBSTRING_SAFE(sParam2, 10, iVar4, 31), 32);
+					StringCopy(&cVar3, HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME_WITH_BYTE_LIMIT(sParam2, 10, iVar4, 31), 32);
 				}
 			}
 			STATS::STAT_SET_STRING(iVar0, &cVar2, bParam4);
@@ -873,7 +873,7 @@ void func_25(int iParam0, int iParam1, int iParam2)//Position - 0xE47
 	{
 		iParam1 = 255;
 	}
-	STATS::_SET_PACKED_STAT_INT(iParam0, iParam1, iParam2);
+	STATS::SET_PACKED_STAT_INT_CODE(iParam0, iParam1, iParam2);
 }
 
 void func_26(struct<3> Param0)//Position - 0xE6F
@@ -1401,7 +1401,7 @@ int func_33(int iParam0, int iParam1)//Position - 0x1A93
 	{
 		iParam1 = func_31();
 	}
-	return STATS::_GET_PACKED_STAT_INT(iParam0, iParam1);
+	return STATS::GET_PACKED_STAT_INT_CODE(iParam0, iParam1);
 }
 
 bool func_34()//Position - 0x1AAF
@@ -1425,7 +1425,7 @@ void func_35()//Position - 0x1AC2
 
 Vector3 func_36(int iParam0, struct<3> Param1)//Position - 0x1B35
 {
-	return OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(func_28(iParam0), func_37(iParam0), Param1);
+	return OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(func_28(iParam0), func_37(iParam0), Param1);
 }
 
 var func_37(int iParam0)//Position - 0x1B51
@@ -2679,7 +2679,7 @@ int func_76(int iParam0)//Position - 0x302B
 
 bool func_77()//Position - 0x3086
 {
-	return (MISC::IS_ORBIS_VERSION() || MISC::_0x807ABE1AB65C24D2());
+	return (MISC::IS_ORBIS_VERSION() || MISC::IS_PROSPERO_VERSION());
 }
 
 int func_78()//Position - 0x309C
@@ -2692,7 +2692,7 @@ int func_78()//Position - 0x309C
 	{
 		return 1;
 	}
-	if ((func_77() && NETWORK::_NETWORK_HAS_AGE_RESTRICTED_PROFILE() == 0) && NETWORK::NETWORK_HAVE_ONLINE_PRIVILEGES())
+	if ((func_77() && NETWORK::NETWORK_HAS_AGE_RESTRICTIONS() == 0) && NETWORK::NETWORK_HAVE_ONLINE_PRIVILEGES())
 	{
 		return 1;
 	}
@@ -2775,7 +2775,7 @@ int func_82(int iParam0)//Position - 0x31C4
 
 bool func_83()//Position - 0x31F0
 {
-	return (MISC::IS_DURANGO_VERSION() || MISC::_0xC545AB1CF97ABB34());
+	return (MISC::IS_DURANGO_VERSION() || MISC::IS_SCARLETT_VERSION());
 }
 
 void func_84(bool bParam0)//Position - 0x3206
@@ -2840,7 +2840,7 @@ int func_86(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 
 int func_87()//Position - 0x32B1
 {
-	if (NETWORK::_NETWORK_GET_ROS_PRIVILEGE_9() == 0)
+	if (NETWORK::NETWORK_HAVE_SCS_PRIVATE_MSG_PRIV() == 0)
 	{
 		return 0;
 	}
@@ -3911,12 +3911,12 @@ int func_104(char* sParam0, int iParam1, int* iParam2)//Position - 0x4531
 	{
 		return 0;
 	}
-	StringCopy(&cVar1, HUD::_GET_TEXT_SUBSTRING_SLICE(sParam0, 0, 5), 8);
+	StringCopy(&cVar1, HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME_BYTES(sParam0, 0, 5), 8);
 	if (!MISC::ARE_STRINGS_EQUAL(&cVar1, "FAKE_"))
 	{
 		return 0;
 	}
-	StringCopy(&cVar2, HUD::_GET_TEXT_SUBSTRING_SLICE(sParam0, 5, 12), 16);
+	StringCopy(&cVar2, HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME_BYTES(sParam0, 5, 12), 16);
 	if (MISC::ARE_STRINGS_EQUAL(&cVar2, "GOLF___"))
 	{
 		*iParam1 = 11;
@@ -3945,7 +3945,7 @@ int func_104(char* sParam0, int iParam1, int* iParam2)//Position - 0x4531
 	{
 		return 0;
 	}
-	StringCopy(&cVar3, HUD::_GET_TEXT_SUBSTRING_SLICE(sParam0, 12, iVar0), 8);
+	StringCopy(&cVar3, HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME_BYTES(sParam0, 12, iVar0), 8);
 	if (!MISC::STRING_TO_INT(&cVar3, iParam2))
 	{
 		return 0;
@@ -4078,7 +4078,7 @@ bool func_110(int iParam0)//Position - 0x4913
 
 int func_111(bool bParam0)//Position - 0x4929
 {
-	if (!bParam0 && SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("benchmark")) > 0)
+	if (!bParam0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("benchmark")) > 0)
 	{
 		return 1;
 	}
@@ -8170,7 +8170,7 @@ void func_286()//Position - 0x9A7E
 
 int func_287()//Position - 0x9A8F
 {
-	if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("apptextmessage")) > 0)
+	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("apptextmessage")) > 0)
 	{
 		if (Global_20266.f_1 == 8)
 		{
