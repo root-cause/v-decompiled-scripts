@@ -105286,7 +105286,7 @@ void func_840()//Position - 0x7D698
 					{
 						if (func_858(Local_344.f_24[bVar3 /*2*/]))
 						{
-							TASK::TASK_HANDS_UP(iVar2, -1, 0, -1, false);
+							TASK::TASK_HANDS_UP(iVar2, -1, 0, -1, 0);
 						}
 					}
 					else if (func_856(PLAYER::PLAYER_PED_ID(), iVar2, 10f, 1))
@@ -127245,13 +127245,13 @@ void func_1260(int iParam0, var uParam1, bool bParam2, bool bParam3, bool bParam
 						{
 							VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, Global_262145.f_21791);
 						}
-						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, 1);
+						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, true);
 						break;
 					
 					default:
 						VEHICLE::SET_VEHICLE_EXPLODES_ON_HIGH_EXPLOSION_DAMAGE(iParam0, false);
 						VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, 1f);
-						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, 1);
+						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, true);
 						break;
 					}
 			}
@@ -142818,7 +142818,7 @@ void func_1497(int iParam0)//Position - 0xB069D
 			VEHICLE::SET_VEHICLE_NO_EXPLOSION_DAMAGE_FROM_DRIVER(iParam0, !func_429());
 			if (iVar1 == joaat("ruiner2"))
 			{
-				VEHICLE::SET_VEHICLE_WEAPON_CAN_TARGET_OBJECTS(iParam0, 1);
+				VEHICLE::SET_VEHICLE_WEAPON_CAN_TARGET_OBJECTS(iParam0, true);
 			}
 			if (iVar1 == joaat("blazer5"))
 			{
@@ -142901,7 +142901,7 @@ void func_1497(int iParam0)//Position - 0xB069D
 		}
 		if (BitTest(Global_4718592.f_18, 24) || (func_1498() && NETWORK::NETWORK_IS_ACTIVITY_SESSION()))
 		{
-			VEHICLE::SET_BIKE_EASY_TO_LAND(iParam0, 1);
+			VEHICLE::SET_BIKE_EASY_TO_LAND(iParam0, true);
 		}
 	}
 	if (bVar0)

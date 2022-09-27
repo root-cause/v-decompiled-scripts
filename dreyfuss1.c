@@ -36998,7 +36998,7 @@ void func_309()//Position - 0x29633
 				if (func_3(Local_82.f_35[0]))
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_92);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1472.27f, 513.9628f, 116.898f, 3f, 20000, 0.25f, true, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1472.27f, 513.9628f, 116.898f, 3f, 20000, 0.25f, 1, 40000f);
 					TASK::TASK_ENTER_VEHICLE(0, Local_82.f_35[0], 20000, -1, 3f, 1, 0);
 					TASK::TASK_VEHICLE_DRIVE_WANDER(0, Local_82.f_35[0], 15f, 262144);
 					TASK::CLOSE_SEQUENCE_TASK(iLocal_92);
@@ -37412,7 +37412,7 @@ void func_319()//Position - 0x29DC3
 						}
 						if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY("Dreyfuss", 0) && func_440(iLocal_89))
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_89, -1475.366f, 500.3797f, 116.6013f, 3f, 20000, 0.25f, true, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_89, -1475.366f, 500.3797f, 116.6013f, 3f, 20000, 0.25f, 1, 40000f);
 						}
 					}
 					break;
@@ -43578,7 +43578,7 @@ void func_422(int iParam0)//Position - 0x32711
 	{
 		if (func_440(iLocal_89))
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_89, -1475.366f, 500.3797f, 116.6013f, 3f, 20000, 0.25f, true, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_89, -1475.366f, 500.3797f, 116.6013f, 3f, 20000, 0.25f, 1, 40000f);
 		}
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{

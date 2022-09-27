@@ -106503,7 +106503,7 @@ void func_750(int iParam0)//Position - 0x7F38D
 					{
 						Local_55[Local_53[iParam0 /*36*/].f_27 /*5*/].f_3 = 1;
 					}
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_53[iParam0 /*36*/], Local_55[Local_53[iParam0 /*36*/].f_27 /*5*/], 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_53[iParam0 /*36*/], Local_55[Local_53[iParam0 /*36*/].f_27 /*5*/], 1f, -1, 0.25f, 0, 40000f);
 					Local_53[iParam0 /*36*/].f_26 = Local_53[iParam0 /*36*/].f_25;
 					Local_53[iParam0 /*36*/].f_16 = 7;
 				}

@@ -110540,7 +110540,7 @@ void func_790(struct<3> Param0, float fParam1)//Position - 0x86103
 void func_791(int iParam0)//Position - 0x86118
 {
 	struct<3> Var0;
-	bool bVar1;
+	int iVar1;
 	float fVar2;
 	int iVar3;
 	
@@ -110553,8 +110553,8 @@ void func_791(int iParam0)//Position - 0x86118
 			Var0 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
 			iVar3 = 0;
 			Var0.f_2 = (Var0.f_2 + 1.5f);
-			bVar1 = WATER::TEST_VERTICAL_PROBE_AGAINST_ALL_WATER(Var0, 1, &fVar2);
-			if (bVar1 == 1)
+			iVar1 = WATER::TEST_VERTICAL_PROBE_AGAINST_ALL_WATER(Var0, 1, &fVar2);
+			if (iVar1 == 1)
 			{
 				iVar3 = 1;
 			}
@@ -110567,7 +110567,7 @@ void func_791(int iParam0)//Position - 0x86118
 				Var0.f_2 = (fVar2 + 10f);
 				ENTITY::SET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), Var0, true, false, false, true);
 			}
-			else if (bVar1 == 2)
+			else if (iVar1 == 2)
 			{
 			}
 		}

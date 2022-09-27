@@ -571,7 +571,7 @@ void func_1(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)//Po
 							if (ENTITY::DOES_ENTITY_EXIST(func_284(uParam2, iVar0)) && !ENTITY::IS_ENTITY_DEAD(func_284(uParam2, iVar0), false))
 							{
 								TASK::CLEAR_PED_TASKS(func_284(uParam2, iVar0));
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_284(uParam2, iVar0), Var7, 1f, -1, 0.25f, false, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_284(uParam2, iVar0), Var7, 1f, -1, 0.25f, 0, 40000f);
 							}
 						}
 						iVar0++;
@@ -1176,7 +1176,7 @@ void func_20(var uParam0, var uParam1, int iParam2, int iParam3, int iParam4, in
 			Stack.Push(func_313(uParam0));
 			Stack.Push(iVar0);
 			Call_Loc(iParam4);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(StackVal, StackVal, StackVal, StackVal, 1f, -1, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(StackVal, StackVal, StackVal, StackVal, 1f, -1, 0.25f, 0, 40000f);
 			Stack.Push(0);
 			Stack.Push(uParam1);
 			Stack.Push(func_313(uParam0));
@@ -1480,7 +1480,7 @@ void func_42(var uParam0, int iParam1, struct<3> Param2, var uParam3, bool bPara
 
 int func_43(struct<3> Param0, struct<2> Param1, var uParam2, var* uParam3, float* fParam4)//Position - 0x1F47
 {
-	if (!PATHFIND::GET_CLOSEST_VEHICLE_NODE_WITH_HEADING(Param0, uParam3, fParam4, 1, 3f, 0))
+	if (!PATHFIND::GET_CLOSEST_VEHICLE_NODE_WITH_HEADING(Param0, uParam3, fParam4, 1, 3f, 0f))
 	{
 		return 0;
 	}
@@ -1960,7 +1960,7 @@ void func_67(var uParam0, var uParam1, var uParam2)//Position - 0x2380
 						}
 						TASK::CLEAR_PED_TASKS(func_64(uParam2));
 						TASK::OPEN_SEQUENCE_TASK(&(uParam2->f_15[func_270(uParam2) /*34*/].f_21));
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_266(uParam1, func_313(uParam2), func_270(uParam2)), 1f, -1, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_266(uParam1, func_313(uParam2), func_270(uParam2)), 1f, -1, 0.25f, 0, 40000f);
 						TASK::TASK_TURN_PED_TO_FACE_COORD(0, func_327(uParam1, func_313(uParam2)), 0);
 						TASK::CLOSE_SEQUENCE_TASK(uParam2->f_15[func_270(uParam2) /*34*/].f_21);
 						TASK::TASK_PERFORM_SEQUENCE(func_64(uParam2), uParam2->f_15[func_270(uParam2) /*34*/].f_21);
@@ -1982,7 +1982,7 @@ void func_67(var uParam0, var uParam1, var uParam2)//Position - 0x2380
 							}
 							TASK::CLEAR_PED_TASKS(func_64(uParam2));
 							TASK::OPEN_SEQUENCE_TASK(&(uParam2->f_15[func_270(uParam2) /*34*/].f_21));
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_268(uParam1, func_313(uParam2), func_270(uParam2)), 1f, -1, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_268(uParam1, func_313(uParam2), func_270(uParam2)), 1f, -1, 0.25f, 0, 40000f);
 							TASK::TASK_TURN_PED_TO_FACE_COORD(0, func_41(uParam1, func_313(uParam2)), 0);
 							TASK::CLOSE_SEQUENCE_TASK(uParam2->f_15[func_270(uParam2) /*34*/].f_21);
 							TASK::TASK_PERFORM_SEQUENCE(func_64(uParam2), uParam2->f_15[func_270(uParam2) /*34*/].f_21);

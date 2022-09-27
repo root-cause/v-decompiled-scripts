@@ -10564,7 +10564,7 @@ void func_254(int* iParam0, var uParam1, int iParam2, var uParam3, var uParam4, 
 				{
 					case 0:
 						TASK::OPEN_SEQUENCE_TASK(iParam0);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1004.948f, -53.6589f, -100.0031f, 1f, -1, fVar0, true, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1004.948f, -53.6589f, -100.0031f, 1f, -1, fVar0, 1, 40000f);
 						TASK::CLOSE_SEQUENCE_TASK(*iParam0);
 						break;
 					
@@ -10576,7 +10576,7 @@ void func_254(int* iParam0, var uParam1, int iParam2, var uParam3, var uParam4, 
 					
 					case 2:
 						TASK::OPEN_SEQUENCE_TASK(iParam0);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1019.463f, -50.293f, -100.0031f, 1f, -1, fVar0, true, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1019.463f, -50.293f, -100.0031f, 1f, -1, fVar0, 1, 40000f);
 						TASK::CLOSE_SEQUENCE_TASK(*iParam0);
 						break;
 					
@@ -10596,7 +10596,7 @@ void func_254(int* iParam0, var uParam1, int iParam2, var uParam3, var uParam4, 
 				{
 					case 0:
 						TASK::OPEN_SEQUENCE_TASK(iParam0);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1014.055f, -91.5497f, -100.4031f, 1f, -1, fVar0, true, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1014.055f, -91.5497f, -100.4031f, 1f, -1, fVar0, 1, 40000f);
 						TASK::CLOSE_SEQUENCE_TASK(*iParam0);
 						break;
 					
@@ -10608,7 +10608,7 @@ void func_254(int* iParam0, var uParam1, int iParam2, var uParam3, var uParam4, 
 					
 					case 2:
 						TASK::OPEN_SEQUENCE_TASK(iParam0);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1019.463f, -50.293f, -100.0031f, 1f, -1, fVar0, true, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1019.463f, -50.293f, -100.0031f, 1f, -1, fVar0, 1, 40000f);
 						TASK::TASK_ACHIEVE_HEADING(0, 234.7078f, 0);
 						TASK::CLOSE_SEQUENCE_TASK(*iParam0);
 						break;
@@ -21906,8 +21906,8 @@ void func_444(int* iParam0, int iParam1, int iParam2, var uParam3, var uParam4, 
 				{
 					case 0:
 						TASK::OPEN_SEQUENCE_TASK(iParam0);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2170.83f, 1133.225f, -24.3711f, 1f, -1, fVar0, true, 40000f);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2169.382f, 1137.348f, -24.3711f, 1f, -1, fVar0, true, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2170.83f, 1133.225f, -24.3711f, 1f, -1, fVar0, 1, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2169.382f, 1137.348f, -24.3711f, 1f, -1, fVar0, 1, 40000f);
 						TASK::TASK_ACHIEVE_HEADING(0, 265.0589f, 0);
 						TASK::CLOSE_SEQUENCE_TASK(*iParam0);
 						break;
@@ -21920,9 +21920,9 @@ void func_444(int* iParam0, int iParam1, int iParam2, var uParam3, var uParam4, 
 					
 					case 2:
 						TASK::OPEN_SEQUENCE_TASK(iParam0);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2196.738f, 1144.604f, -24.2981f, 1f, -1, fVar0, true, 40000f);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2212.897f, 1134.418f, -24.259f, 1f, -1, fVar0, true, 40000f);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2213.217f, 1096.826f, -24.258f, 1f, -1, fVar0, true, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2196.738f, 1144.604f, -24.2981f, 1f, -1, fVar0, 1, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2212.897f, 1134.418f, -24.259f, 1f, -1, fVar0, 1, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2213.217f, 1096.826f, -24.258f, 1f, -1, fVar0, 1, 40000f);
 						TASK::TASK_ACHIEVE_HEADING(0, 88.7544f, 0);
 						TASK::CLOSE_SEQUENCE_TASK(*iParam0);
 						break;
@@ -21935,8 +21935,8 @@ void func_444(int* iParam0, int iParam1, int iParam2, var uParam3, var uParam4, 
 					
 					case 4:
 						TASK::OPEN_SEQUENCE_TASK(iParam0);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2212.059f, 1079.675f, -24.2579f, 1f, -1, fVar0, true, 40000f);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2170.868f, 1077.34f, -24.3627f, 1f, -1, fVar0, true, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2212.059f, 1079.675f, -24.2579f, 1f, -1, fVar0, 1, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2170.868f, 1077.34f, -24.3627f, 1f, -1, fVar0, 1, 40000f);
 						TASK::TASK_ACHIEVE_HEADING(0, 190.9344f, 0);
 						TASK::CLOSE_SEQUENCE_TASK(*iParam0);
 						break;
@@ -21962,11 +21962,11 @@ void func_444(int* iParam0, int iParam1, int iParam2, var uParam3, var uParam4, 
 				{
 					case 0:
 						TASK::OPEN_SEQUENCE_TASK(iParam0);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2188.301f, 1099.582f, -24.2587f, 1f, -1, fVar0, true, 40000f);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2173.986f, 1099.578f, -25.3642f, 1f, -1, fVar0, true, 40000f);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2169.278f, 1125.738f, -25.3709f, 1f, -1, fVar0, true, 40000f);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2155.132f, 1126.2f, -25.3709f, 1f, -1, fVar0, true, 40000f);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2149.691f, 1122.27f, -25.3708f, 1f, -1, fVar0, true, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2188.301f, 1099.582f, -24.2587f, 1f, -1, fVar0, 1, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2173.986f, 1099.578f, -25.3642f, 1f, -1, fVar0, 1, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2169.278f, 1125.738f, -25.3709f, 1f, -1, fVar0, 1, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2155.132f, 1126.2f, -25.3709f, 1f, -1, fVar0, 1, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2149.691f, 1122.27f, -25.3708f, 1f, -1, fVar0, 1, 40000f);
 						TASK::TASK_ACHIEVE_HEADING(0, 234.7078f, 0);
 						TASK::CLOSE_SEQUENCE_TASK(*iParam0);
 						break;
@@ -21980,7 +21980,7 @@ void func_444(int* iParam0, int iParam1, int iParam2, var uParam3, var uParam4, 
 					
 					case 2:
 						TASK::OPEN_SEQUENCE_TASK(iParam0);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2153.047f, 1086.528f, -25.3628f, 1f, -1, fVar0, true, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2153.047f, 1086.528f, -25.3628f, 1f, -1, fVar0, 1, 40000f);
 						TASK::TASK_ACHIEVE_HEADING(0, 89.4733f, 0);
 						TASK::CLOSE_SEQUENCE_TASK(*iParam0);
 						break;
@@ -21993,13 +21993,13 @@ void func_444(int* iParam0, int iParam1, int iParam2, var uParam3, var uParam4, 
 					
 					case 4:
 						TASK::OPEN_SEQUENCE_TASK(iParam0);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2153.824f, 1079.185f, -25.3622f, 1f, -1, fVar0, true, 40000f);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2156.923f, 1079.135f, -25.3621f, 1f, -1, fVar0, true, 40000f);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2161.739f, 1079.014f, -25.362f, 1f, -1, fVar0, true, 40000f);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2167.334f, 1078.719f, -25.3621f, 1f, -1, fVar0, true, 40000f);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2178.115f, 1077.333f, -24.2215f, 1f, -1, fVar0, true, 40000f);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2201.432f, 1080.099f, -24.2575f, 1f, -1, fVar0, true, 40000f);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2191.67f, 1087.751f, -24.258f, 1f, -1, fVar0, true, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2153.824f, 1079.185f, -25.3622f, 1f, -1, fVar0, 1, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2156.923f, 1079.135f, -25.3621f, 1f, -1, fVar0, 1, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2161.739f, 1079.014f, -25.362f, 1f, -1, fVar0, 1, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2167.334f, 1078.719f, -25.3621f, 1f, -1, fVar0, 1, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2178.115f, 1077.333f, -24.2215f, 1f, -1, fVar0, 1, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2201.432f, 1080.099f, -24.2575f, 1f, -1, fVar0, 1, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2191.67f, 1087.751f, -24.258f, 1f, -1, fVar0, 1, 40000f);
 						TASK::TASK_ACHIEVE_HEADING(0, 301.32f, 0);
 						TASK::CLOSE_SEQUENCE_TASK(*iParam0);
 						break;

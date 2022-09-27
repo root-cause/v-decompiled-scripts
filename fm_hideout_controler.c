@@ -11167,7 +11167,7 @@ void func_245(int iParam0, bool bParam1, var uParam2, struct<3> Param3, int iPar
 	}
 	if (BitTest(Global_4718592.f_26, 22) && VEHICLE::IS_VEHICLE_MODEL(iParam0, joaat("bombushka")))
 	{
-		VEHICLE::SET_SHOULD_RESET_TURRET_IN_SCRIPTED_CAMERAS(iParam0, 1);
+		VEHICLE::SET_SHOULD_RESET_TURRET_IN_SCRIPTED_CAMERAS(iParam0, true);
 	}
 	if (BitTest(Global_4980736.f_78578[bParam1 /*450*/].f_112, 27))
 	{
@@ -11179,7 +11179,7 @@ void func_245(int iParam0, bool bParam1, var uParam2, struct<3> Param3, int iPar
 	}
 	if (BitTest(Global_4980736.f_78578[bParam1 /*450*/].f_113, 4))
 	{
-		VEHICLE::SET_VEHICLE_WEAPON_CAN_TARGET_OBJECTS(iParam0, 1);
+		VEHICLE::SET_VEHICLE_WEAPON_CAN_TARGET_OBJECTS(iParam0, true);
 	}
 	if (func_258(bParam1))
 	{
@@ -15775,13 +15775,13 @@ void func_286(int iParam0, var uParam1, bool bParam2, bool bParam3, bool bParam4
 						{
 							VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, Global_262145.f_21791);
 						}
-						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, 1);
+						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, true);
 						break;
 					
 					default:
 						VEHICLE::SET_VEHICLE_EXPLODES_ON_HIGH_EXPLOSION_DAMAGE(iParam0, false);
 						VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, 1f);
-						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, 1);
+						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, true);
 						break;
 					}
 			}
@@ -135468,7 +135468,7 @@ void func_1403(int iParam0)//Position - 0xA91E7
 			VEHICLE::SET_VEHICLE_NO_EXPLOSION_DAMAGE_FROM_DRIVER(iParam0, !func_462());
 			if (iVar1 == joaat("ruiner2"))
 			{
-				VEHICLE::SET_VEHICLE_WEAPON_CAN_TARGET_OBJECTS(iParam0, 1);
+				VEHICLE::SET_VEHICLE_WEAPON_CAN_TARGET_OBJECTS(iParam0, true);
 			}
 			if (iVar1 == joaat("blazer5"))
 			{
@@ -135551,7 +135551,7 @@ void func_1403(int iParam0)//Position - 0xA91E7
 		}
 		if (BitTest(Global_4718592.f_18, 24) || (func_1404() && NETWORK::NETWORK_IS_ACTIVITY_SESSION()))
 		{
-			VEHICLE::SET_BIKE_EASY_TO_LAND(iParam0, 1);
+			VEHICLE::SET_BIKE_EASY_TO_LAND(iParam0, true);
 		}
 	}
 	if (bVar0)

@@ -38592,7 +38592,7 @@ void func_306()//Position - 0x2BB1E
 			if (func_350(Local_298[1 /*8*/]))
 			{
 				WEAPON::REMOVE_WEAPON_FROM_PED(Local_298[1 /*8*/], iLocal_89);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_298[1 /*8*/], 1826.246f, 4696.506f, 38.1187f, 1f, 20000, 0.1f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_298[1 /*8*/], 1826.246f, 4696.506f, 38.1187f, 1f, 20000, 0.1f, 0, 40000f);
 			}
 			func_336(&(Local_298[1 /*8*/]), 1);
 			iLocal_410 = 8;
@@ -40834,7 +40834,7 @@ void func_348()//Position - 0x2ED39
 							{
 								TASK::OPEN_SEQUENCE_TASK(&iLocal_97);
 								TASK::TASK_LOOK_AT_ENTITY(0, Local_81.f_28[0], 15000, 0, 2);
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1827.34f, 4697.22f, 38.02f, 1f, 20000, 0.25f, true, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1827.34f, 4697.22f, 38.02f, 1f, 20000, 0.25f, 1, 40000f);
 								TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, Local_81.f_28[0], 0);
 								TASK::CLOSE_SEQUENCE_TASK(iLocal_97);
 								TASK::TASK_PERFORM_SEQUENCE(PLAYER::PLAYER_PED_ID(), iLocal_97);

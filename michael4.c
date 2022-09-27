@@ -88845,7 +88845,7 @@ int func_376(int iParam0)//Position - 0x65251
 			{
 				iLocal_405 = PED::CREATE_PED(26, func_390(), -810.4206f, 180.0989f, 71.153f, 108.587f, true, true);
 				WEAPON::GIVE_WEAPON_TO_PED(iLocal_405, joaat("WEAPON_PISTOL"), -1, true, true);
-				TASK::TASK_WRITHE(iLocal_405, PLAYER::PLAYER_PED_ID(), 10, 0, 0, -1);
+				TASK::TASK_WRITHE(iLocal_405, PLAYER::PLAYER_PED_ID(), 10, 0, false, -1);
 			}
 			if (iLocal_204 == joaat("WEAPON_UNARMED"))
 			{
@@ -98357,7 +98357,7 @@ void func_516()//Position - 0x76782
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_533);
 					TASK::TASK_SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(0, true);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -811.6075f, 192.6608f, 72.0095f, 3f, 20000, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -811.6075f, 192.6608f, 72.0095f, 3f, 20000, 0.25f, 0, 40000f);
 					TASK::TASK_COWER(0, -1);
 					TASK::CLOSE_SEQUENCE_TASK(iLocal_533);
 					TASK::TASK_PERFORM_SEQUENCE(iLocal_395, iLocal_533);
@@ -98715,8 +98715,8 @@ void func_518()//Position - 0x76D5B
 				func_423(&iLocal_530, joaat("WEAPON_CARBINERIFLE"));
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_529, true);
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_530, true);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_529, -806.4446f, 174.9243f, 71.8447f, 2f, 20000, 0.25f, false, 40000f);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_530, -806.4446f, 174.9243f, 71.8447f, 2f, 20000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_529, -806.4446f, 174.9243f, 71.8447f, 2f, 20000, 0.25f, 0, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_530, -806.4446f, 174.9243f, 71.8447f, 2f, 20000, 0.25f, 0, 40000f);
 				iLocal_528 = 1;
 			}
 		}
@@ -101935,7 +101935,7 @@ void func_589()//Position - 0x7B2F6
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_518);
 						TASK::TASK_PAUSE(0, 1000);
 						TASK::TASK_LEAVE_VEHICLE(0, iLocal_393, 0);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 300.536f, 200.4727f, 103.3838f, 1f, 60000, 0.25f, false, 256.7409f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 300.536f, 200.4727f, 103.3838f, 1f, 60000, 0.25f, 0, 256.7409f);
 						TASK::TASK_PLAY_ANIM(0, "missmic4premiere", "wave_b", 8f, -8f, -1, 0, 0f, false, false, false);
 						TASK::TASK_PLAY_ANIM(0, "missmic4premiere", "wave_c", 8f, -8f, -1, 0, 0f, false, false, false);
 						TASK::TASK_PLAY_ANIM(0, "missmic4premiere", "wave_d", 8f, -8f, -1, 0, 0f, false, false, false);
@@ -112169,7 +112169,7 @@ void func_750()//Position - 0x8B577
 					if (!func_686(iLocal_395, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1))
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_478);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -719.4904f, -162.2617f, 36.0158f, 1f, 20000, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -719.4904f, -162.2617f, 36.0158f, 1f, 20000, 0.25f, 0, 40000f);
 						TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, PLAYER::PLAYER_PED_ID(), 0);
 						TASK::CLOSE_SEQUENCE_TASK(iLocal_478);
 						TASK::TASK_PERFORM_SEQUENCE(iLocal_395, iLocal_478);

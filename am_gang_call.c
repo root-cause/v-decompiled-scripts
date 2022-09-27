@@ -17488,7 +17488,7 @@ void func_494(int iParam0)//Position - 0x1487E
 												}
 												else if (VEHICLE::IS_THIS_MODEL_A_PLANE(iVar8))
 												{
-													TASK::TASK_PLANE_MISSION(iVar0, iVar7, 0, PLAYER::PLAYER_PED_ID(), 0f, 0f, 0f, 8, 25f, 0f, -1f, 1.121039E-43f, 1.121039E-43f, 1);
+													TASK::TASK_PLANE_MISSION(iVar0, iVar7, 0, PLAYER::PLAYER_PED_ID(), 0f, 0f, 0f, 8, 25f, 0f, -1f, 1.121039E-43f, 1.121039E-43f, true);
 												}
 												else if (ENTITY::GET_ENTITY_MODEL(iVar7) == joaat("taxi"))
 												{

@@ -3094,7 +3094,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1024f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 1024;
-			uParam1->f_5 = 872194479;
+			uParam1->f_5 = joaat("BADSPORT_NUMDAYS_10TH_OFFENCE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -3202,7 +3202,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = joaat("Selling_Stolen_Personal_Vehicle_Cap");
+			uParam1->f_5 = joaat("SELLING_STOLEN_PERSONAL_VEHICLE_CAP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -3211,7 +3211,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = joaat("Selling_Purchased_Personal_Vehicle_Cap");
+			uParam1->f_5 = joaat("SELLING_PURCHASED_PERSONAL_VEHICLE_CAP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -3220,7 +3220,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = joaat("Selling_Stolen_Vehicle_Cap");
+			uParam1->f_5 = joaat("SELLING_STOLEN_VEHICLE_CAP");
 			uParam1->f_4 = 1;
 			break;
 	}
@@ -6085,7 +6085,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1.2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = joaat("Discount_Male_Masks_Bone_Skull");
+			uParam1->f_5 = joaat("DISCOUNT_MALE_MASKS_BONE_SKULL");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -6094,7 +6094,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1.2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = joaat("Discount_Male_Masks_Pogo");
+			uParam1->f_5 = joaat("DISCOUNT_MALE_MASKS_POGO");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -6103,7 +6103,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1.2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = joaat("Discount_Male_Masks_Green_Ape");
+			uParam1->f_5 = joaat("DISCOUNT_MALE_MASKS_GREEN_APE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -6112,7 +6112,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1.2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = joaat("Discount_Male_Masks_Pink_Ape");
+			uParam1->f_5 = joaat("DISCOUNT_MALE_MASKS_PINK_APE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -6121,7 +6121,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1.2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = joaat("Discount_Male_Masks_Red_Monster");
+			uParam1->f_5 = joaat("DISCOUNT_MALE_MASKS_RED_MONSTER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -6130,7 +6130,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1.2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = joaat("Discount_Female_Masks_Bone_Skull");
+			uParam1->f_5 = joaat("DISCOUNT_FEMALE_MASKS_BONE_SKULL");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -6139,7 +6139,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1.2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = joaat("Discount_Female_Masks_Pogo");
+			uParam1->f_5 = joaat("DISCOUNT_FEMALE_MASKS_POGO");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -6148,7 +6148,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1.2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = joaat("Discount_Female_Masks_Green_Ape");
+			uParam1->f_5 = joaat("DISCOUNT_FEMALE_MASKS_GREEN_APE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -6157,7 +6157,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1.2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = joaat("Discount_Female_Masks_Pink_Ape");
+			uParam1->f_5 = joaat("DISCOUNT_FEMALE_MASKS_PINK_APE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -6166,7 +6166,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1.2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = joaat("Discount_Female_Masks_Red_Monster");
+			uParam1->f_5 = joaat("DISCOUNT_FEMALE_MASKS_RED_MONSTER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -6238,7 +6238,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1.2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 1914127564;
+			uParam1->f_5 = joaat("TATTOO_MP_FM_04_EXPENDITURE_TUNABLE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -6247,7 +6247,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1.2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 983218273;
+			uParam1->f_5 = joaat("TATTOO_MP_FM_05_EXPENDITURE_TUNABLE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -6256,7 +6256,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1.2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 178678567;
+			uParam1->f_5 = joaat("TATTOO_MP_FM_06_EXPENDITURE_TUNABLE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -6301,7 +6301,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1.2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 1411998323;
+			uParam1->f_5 = joaat("TATTOO_MP_FM_20_EXPENDITURE_TUNABLE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -6798,7 +6798,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1.2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 193513430;
+			uParam1->f_5 = joaat("PLAYERKIT_GOLD_DLC_PISTOL50_EXPENDITURE_TUNABLE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -6807,7 +6807,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1.2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 1232863007;
+			uParam1->f_5 = joaat("PLAYERKIT_PLATINUM_DLC_PISTOL50_EXPENDITURE_TUNABLE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -6915,7 +6915,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 906300f;
 			uParam1->f_2 = 359000;
 			uParam1->f_3 = 906300;
-			uParam1->f_5 = joaat("business_vehicles_Zentorno");
+			uParam1->f_5 = joaat("BUSINESS_VEHICLES_ZENTORNO");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -7605,7 +7605,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100000f;
 			uParam1->f_2 = 39600;
 			uParam1->f_3 = 100000;
-			uParam1->f_5 = 1630934099;
+			uParam1->f_5 = joaat("DLC_VEHICLE_OCELOT_F620");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -7850,7 +7850,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 500000f;
 			uParam1->f_2 = 198000;
 			uParam1->f_3 = 500000;
-			uParam1->f_5 = joaat("DLC_hipster_modifier_Vulcar_Pigalle");
+			uParam1->f_5 = joaat("DLC_HIPSTER_MODIFIER_VULCAR_PIGALLE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -8243,7 +8243,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 1000;
-			uParam1->f_5 = joaat("Car_impound_fee");
+			uParam1->f_5 = joaat("CAR_IMPOUND_FEE");
 			uParam1->f_4 = 1;
 			break;
 	}
@@ -8317,7 +8317,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 100;
-			uParam1->f_5 = joaat("rollercoasterridescreamrewardxp");
+			uParam1->f_5 = joaat("ROLLERCOASTERRIDESCREAMREWARDXP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -8326,7 +8326,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 1000;
-			uParam1->f_5 = joaat("rollercoasterridescreamrewardcap");
+			uParam1->f_5 = joaat("ROLLERCOASTERRIDESCREAMREWARDCAP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -10274,7 +10274,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2500000f;
 			uParam1->f_2 = 300000;
 			uParam1->f_3 = 2500000;
-			uParam1->f_5 = -1877970625;
+			uParam1->f_5 = joaat("VEHICLES_HEIST_LAMPADATI_CASCO");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -10283,7 +10283,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 250000f;
 			uParam1->f_2 = 60000;
 			uParam1->f_3 = 250000;
-			uParam1->f_5 = 639828788;
+			uParam1->f_5 = joaat("VEHICLES_HEIST_NAGASAKI_DINGHY");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -10301,7 +10301,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100000f;
 			uParam1->f_2 = 30000;
 			uParam1->f_3 = 100000;
-			uParam1->f_5 = 290523077;
+			uParam1->f_5 = joaat("VEHICLES_HEIST_DECLASSE_GANG_BURRITO");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -10346,7 +10346,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 250000f;
 			uParam1->f_2 = 35000;
 			uParam1->f_3 = 250000;
-			uParam1->f_5 = -644832470;
+			uParam1->f_5 = joaat("VEHICLES_HEIST_KARIN_KURUMA");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -10355,7 +10355,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 600000f;
 			uParam1->f_2 = 65000;
 			uParam1->f_3 = 600000;
-			uParam1->f_5 = -842117179;
+			uParam1->f_5 = joaat("VEHICLES_HEIST_KARIN_KURUMA_ARMORED");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -10409,7 +10409,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 200000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = 1531297517;
+			uParam1->f_5 = joaat("VEHICLES_HEIST_VELUM");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -10463,7 +10463,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 300000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 300000;
-			uParam1->f_5 = -736791602;
+			uParam1->f_5 = joaat("HEIST_FLEECA_JOB_CASH_REWARD");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -10472,7 +10472,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = -1697146966;
+			uParam1->f_5 = joaat("HEIST_PRISON_BREAK_CASH_REWARD");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -10481,7 +10481,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1500000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 1500000;
-			uParam1->f_5 = -478542030;
+			uParam1->f_5 = joaat("HEIST_HUMANE_LABS_RAID_CASH_REWARD");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -10499,7 +10499,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2500000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2500000;
-			uParam1->f_5 = -1535523991;
+			uParam1->f_5 = joaat("HEIST_PACIFIC_STANDARD_JOB_CASH_REWARD");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -10545,7 +10545,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 200000f;
 			uParam1->f_2 = -1;
 			uParam1->f_3 = 200000;
-			uParam1->f_5 = -1108389569;
+			uParam1->f_5 = joaat("CASH_REWARD_OVERRIDE_ELITE_OBJECTIVES_FLEECA");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -10554,7 +10554,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 200000f;
 			uParam1->f_2 = -1;
 			uParam1->f_3 = 200000;
-			uParam1->f_5 = -927762540;
+			uParam1->f_5 = joaat("CASH_REWARD_OVERRIDE_ELITE_OBJECTIVES_HUMANE_LABS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -10563,7 +10563,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 200000f;
 			uParam1->f_2 = -1;
 			uParam1->f_3 = 200000;
-			uParam1->f_5 = -691376018;
+			uParam1->f_5 = joaat("CASH_REWARD_OVERRIDE_ELITE_OBJECTIVES_PRISON_BREAK");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -10581,7 +10581,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 200000f;
 			uParam1->f_2 = -1;
 			uParam1->f_3 = 200000;
-			uParam1->f_5 = -1188165573;
+			uParam1->f_5 = joaat("CASH_REWARD_OVERRIDE_ELITE_OBJECTIVES_PACIFIC_STANDARD");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -10918,7 +10918,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 150000f;
 			uParam1->f_2 = 20790;
 			uParam1->f_3 = 150000;
-			uParam1->f_5 = -682446881;
+			uParam1->f_5 = joaat("CGTONG_DINKA_BLISTA_COMPACT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -10927,7 +10927,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1500000f;
 			uParam1->f_2 = 247500;
 			uParam1->f_3 = 1500000;
-			uParam1->f_5 = 116463396;
+			uParam1->f_5 = joaat("CGTONG_DODO");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -10936,7 +10936,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 150000f;
 			uParam1->f_2 = 30690;
 			uParam1->f_3 = 150000;
-			uParam1->f_5 = 715349067;
+			uParam1->f_5 = joaat("CGTONG_IMPONTE_DUKES");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -10954,7 +10954,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 150000f;
 			uParam1->f_2 = 35145;
 			uParam1->f_3 = 150000;
-			uParam1->f_5 = -575136563;
+			uParam1->f_5 = joaat("CGTONG_DECLASSE_STALLION");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -10963,7 +10963,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2000000f;
 			uParam1->f_2 = 655875;
 			uParam1->f_3 = 2000000;
-			uParam1->f_5 = -1711319395;
+			uParam1->f_5 = joaat("CGTONG_SUBMERSIBLE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -10972,7 +10972,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2000f;
 			uParam1->f_2 = 200;
 			uParam1->f_3 = 2000;
-			uParam1->f_5 = -1885561778;
+			uParam1->f_5 = joaat("CGTONG_HATCHET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -11318,7 +11318,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 3;
-			uParam1->f_5 = -326111676;
+			uParam1->f_5 = joaat("HEIST_RP_TIME_PERIOD_1_PERCENTAGE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -11327,7 +11327,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 3;
-			uParam1->f_5 = 1656333677;
+			uParam1->f_5 = joaat("HEIST_RP_TIME_PERIOD_2_PERCENTAGE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -11336,7 +11336,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 3;
-			uParam1->f_5 = -1852964703;
+			uParam1->f_5 = joaat("HEIST_RP_TIME_PERIOD_3_PERCENTAGE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -11345,7 +11345,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 3;
-			uParam1->f_5 = 1787114410;
+			uParam1->f_5 = joaat("HEIST_RP_TIME_PERIOD_4_PERCENTAGE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -11354,7 +11354,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 3;
-			uParam1->f_5 = -849109764;
+			uParam1->f_5 = joaat("HEIST_RP_TIME_PERIOD_5_PERCENTAGE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -11363,7 +11363,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 4f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 4;
-			uParam1->f_5 = 599942040;
+			uParam1->f_5 = joaat("HEIST_RP_TIME_PERIOD_6_PERCENTAGE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -11372,7 +11372,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 4.5f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 5;
-			uParam1->f_5 = 1189510226;
+			uParam1->f_5 = joaat("HEIST_RP_TIME_PERIOD_7_PERCENTAGE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -11381,7 +11381,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 5f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 5;
-			uParam1->f_5 = 633502183;
+			uParam1->f_5 = joaat("HEIST_RP_TIME_PERIOD_8_PERCENTAGE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -11390,7 +11390,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 5.5f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 6;
-			uParam1->f_5 = -1019356302;
+			uParam1->f_5 = joaat("HEIST_RP_TIME_PERIOD_9_PERCENTAGE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -11399,7 +11399,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 6f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 6;
-			uParam1->f_5 = -217455654;
+			uParam1->f_5 = joaat("HEIST_RP_TIME_PERIOD_10_PERCENTAGE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -11435,7 +11435,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 100;
-			uParam1->f_5 = -1585383603;
+			uParam1->f_5 = joaat("HEIST_RP_BASE_MULTIPLIER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -11444,7 +11444,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 500f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 500;
-			uParam1->f_5 = 1667263936;
+			uParam1->f_5 = joaat("HEIST_RP_BASIC_VALUE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -11453,7 +11453,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 1000;
-			uParam1->f_5 = -662029971;
+			uParam1->f_5 = joaat("HEIST_RP_RANK_CAP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -11806,7 +11806,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 10f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 10;
-			uParam1->f_5 = 1946052474;
+			uParam1->f_5 = joaat("TIME_MULTIPLIER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -11815,7 +11815,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 1000;
-			uParam1->f_5 = -1708744574;
+			uParam1->f_5 = joaat("KILLS_MULTIPLIER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -11851,7 +11851,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 1000;
-			uParam1->f_5 = -1440816611;
+			uParam1->f_5 = joaat("HEAD_SHOT_MULTIPLIER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -11869,7 +11869,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = 1721859582;
+			uParam1->f_5 = joaat("SAFE_DRIVE_TIME_MULTIPLIER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -11878,7 +11878,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 20000;
-			uParam1->f_5 = -17216460;
+			uParam1->f_5 = joaat("ACCURACY_MULTIPLIER");
 			uParam1->f_4 = 1;
 			break;
 	}
@@ -11979,7 +11979,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 10000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 10000;
-			uParam1->f_5 = -236186605;
+			uParam1->f_5 = joaat("WANTED_LEVEL_MULTIPLIER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -11988,7 +11988,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 20;
-			uParam1->f_5 = 1845534777;
+			uParam1->f_5 = joaat("WANTED_LEVEL_TIME_MULTIPLIER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12006,7 +12006,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 10000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 10000;
-			uParam1->f_5 = -815423306;
+			uParam1->f_5 = joaat("OBJECTIVE_MULTIPLIER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12042,7 +12042,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 3;
-			uParam1->f_5 = 1964434213;
+			uParam1->f_5 = joaat("RP_HEISTS_PLATINUM_MEDAL_RP_MULTIPLIER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12051,7 +12051,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100f;
 			uParam1->f_2 = 1;
 			uParam1->f_3 = 100;
-			uParam1->f_5 = -2110655325;
+			uParam1->f_5 = joaat("EXPENSES_HEIST_COST_PERCENTAGE_FLEECA");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12060,7 +12060,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100f;
 			uParam1->f_2 = 1;
 			uParam1->f_3 = 100;
-			uParam1->f_5 = -945941977;
+			uParam1->f_5 = joaat("EXPENSES_HEIST_COST_PERCENTAGE_HUMANE_LABS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12069,7 +12069,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100f;
 			uParam1->f_2 = 1;
 			uParam1->f_3 = 100;
-			uParam1->f_5 = -1543624979;
+			uParam1->f_5 = joaat("EXPENSES_HEIST_COST_PERCENTAGE_PRISON_BREAK");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12087,7 +12087,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100f;
 			uParam1->f_2 = 1;
 			uParam1->f_3 = 100;
-			uParam1->f_5 = 162756378;
+			uParam1->f_5 = joaat("EXPENSES_HEIST_COST_PERCENTAGE_PACIFIC_STANDARD");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12096,7 +12096,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 20;
-			uParam1->f_5 = -1198047495;
+			uParam1->f_5 = joaat("HEISTS_PREP_PERCENTAGE_CUT_FLEECA");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12105,7 +12105,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 20;
-			uParam1->f_5 = -1236056555;
+			uParam1->f_5 = joaat("HEISTS_PREP_PERCENTAGE_CUT_HUMANE_LABS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12114,7 +12114,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 20;
-			uParam1->f_5 = 1805291589;
+			uParam1->f_5 = joaat("HEISTS_PREP_PERCENTAGE_CUT_PRISON_BREAK");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12132,7 +12132,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 20;
-			uParam1->f_5 = 268818202;
+			uParam1->f_5 = joaat("HEISTS_PREP_PERCENTAGE_CUT_PACIFIC_STANDARD");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12141,7 +12141,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 16f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 16;
-			uParam1->f_5 = -1770038462;
+			uParam1->f_5 = joaat("MAX_SKILL_MATCHED_INVITES_LG");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12150,7 +12150,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 32f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 32;
-			uParam1->f_5 = -1757323514;
+			uParam1->f_5 = joaat("MAX_SKILL_MATCHED_INVITES_NG");
 			uParam1->f_4 = 1;
 			break;
 	}
@@ -13636,7 +13636,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1463000f;
 			uParam1->f_2 = 480000;
 			uParam1->f_3 = 1463000;
-			uParam1->f_5 = 1325082693;
+			uParam1->f_5 = joaat("LUXE1_WEBSITE_BENEFACTOR_STIRLING_GT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13654,7 +13654,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2925000f;
 			uParam1->f_2 = 950000;
 			uParam1->f_3 = 2925000;
-			uParam1->f_5 = -644339642;
+			uParam1->f_5 = joaat("LUXE1_WEBSITE_PEGASSI_OSIRIS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13663,7 +13663,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 7725000f;
 			uParam1->f_2 = 2500000;
 			uParam1->f_3 = 7725000;
-			uParam1->f_5 = -1809229921;
+			uParam1->f_5 = joaat("LUXE1_WEBSITE_BUCKINGHAM_SWIFT_DELUXE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13672,7 +13672,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 293000f;
 			uParam1->f_2 = 95000;
 			uParam1->f_3 = 293000;
-			uParam1->f_5 = 1992732606;
+			uParam1->f_5 = joaat("LUXE1_WEBSITE_ALBANY_VIRGO");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13681,7 +13681,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1268000f;
 			uParam1->f_2 = 400000;
 			uParam1->f_3 = 1268000;
-			uParam1->f_5 = 956103291;
+			uParam1->f_5 = joaat("LUXE1_WEBSITE_ENUS_WINDSOR");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13753,7 +13753,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 18000f;
 			uParam1->f_2 = 5800;
 			uParam1->f_3 = 18000;
-			uParam1->f_5 = -273899566;
+			uParam1->f_5 = joaat("LUXE1_PRIMARY_COMBAT_PDW");
 			uParam1->f_4 = 1;
 			break;
 	}
@@ -14731,7 +14731,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 350000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = -1778850088;
+			uParam1->f_5 = joaat("LUXE2_COIL_BRAWLER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14740,7 +14740,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 340000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 340000;
-			uParam1->f_5 = 145064713;
+			uParam1->f_5 = joaat("LUXE2_VAPID_CHINO");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14749,7 +14749,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 340000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = 215838966;
+			uParam1->f_5 = joaat("LUXE2_INVETERO_COQUETTE_BLACKFIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14758,7 +14758,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3300000f;
 			uParam1->f_2 = 1000000;
 			uParam1->f_3 = 3300000;
-			uParam1->f_5 = 1145833376;
+			uParam1->f_5 = joaat("LUXE2_PROGEN_T20");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14767,7 +14767,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2625000f;
 			uParam1->f_2 = 850000;
 			uParam1->f_3 = 2625000;
-			uParam1->f_5 = -486041956;
+			uParam1->f_5 = joaat("LUXE2_LAMPADATI_TORO");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -16212,7 +16212,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 10000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 10000;
-			uParam1->f_5 = -794980589;
+			uParam1->f_5 = joaat("HOT_TARGET_MINIMUM_PARTICIPATION_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -16466,7 +16466,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 10000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 10000;
-			uParam1->f_5 = -1468556153;
+			uParam1->f_5 = joaat("CHECKPOINT_MINIMUM_PARTICIPATION_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -16556,7 +16556,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 10000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 10000;
-			uParam1->f_5 = 1903299406;
+			uParam1->f_5 = joaat("HELICOPTER_HOT_TARGET_MINIMUM_PARTICIPATION_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -16738,7 +16738,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = 2137376174;
+			uParam1->f_5 = joaat("DEAD_DROP_DEFAULT_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -16747,7 +16747,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 5000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 5000;
-			uParam1->f_5 = -552608155;
+			uParam1->f_5 = joaat("DEAD_DROP_DEFAULT_RP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -16783,7 +16783,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 10000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 10000;
-			uParam1->f_5 = 764734914;
+			uParam1->f_5 = joaat("DEAD_DROP_MINIMUM_PARTICIPATION_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -16920,7 +16920,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2000;
-			uParam1->f_5 = 807391048;
+			uParam1->f_5 = joaat("CHALLENGE_EOM_DEFAULT_CASH_REWARD");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -17138,7 +17138,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 10000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 10000;
-			uParam1->f_5 = 2067457727;
+			uParam1->f_5 = joaat("HOT_PROPERTY_EOM_DEFAULT_CASH_REWARD");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -17320,7 +17320,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 10000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 10000;
-			uParam1->f_5 = -34324859;
+			uParam1->f_5 = joaat("PASS_THE_PARCEL_EOM_DEFAULT_CASH_REWARD");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -17338,7 +17338,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 10000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 10000;
-			uParam1->f_5 = -2045844833;
+			uParam1->f_5 = joaat("KING_OF_THE_CASTLE_EOM_DEFAULT_CASH_REWARD");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -17646,7 +17646,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 10000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 10000;
-			uParam1->f_5 = -849702794;
+			uParam1->f_5 = joaat("HUNT_THE_BEAST_MINIMUM_PARTICIPATION_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -17864,7 +17864,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 3;
-			uParam1->f_5 = -1720254891;
+			uParam1->f_5 = joaat("CRIMINAL_DAMAGE_EVENT_MULTIPLIER_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -17882,7 +17882,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 3;
-			uParam1->f_5 = -1268775162;
+			uParam1->f_5 = joaat("HUNT_THE_BEAST_EVENT_MULTIPLIER_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -17900,7 +17900,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 3;
-			uParam1->f_5 = -1419158012;
+			uParam1->f_5 = joaat("KILL_LIST_EVENT_MULTIPLIER_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -17918,7 +17918,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 3;
-			uParam1->f_5 = 1195650876;
+			uParam1->f_5 = joaat("KILL_LIST_COMPETITIVE_EVENT_MULTIPLIER_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -17936,7 +17936,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 3;
-			uParam1->f_5 = 874154398;
+			uParam1->f_5 = joaat("PENNED_IN_EVENT_MULTIPLIER_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -17954,7 +17954,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 3;
-			uParam1->f_5 = 1389028830;
+			uParam1->f_5 = joaat("CHECKPOINTS_EVENT_MULTIPLIER_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -17972,7 +17972,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 3;
-			uParam1->f_5 = 1435050690;
+			uParam1->f_5 = joaat("CHALLENGE_EVENT_MULTIPLIER_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18008,7 +18008,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 3;
-			uParam1->f_5 = -882173420;
+			uParam1->f_5 = joaat("MOVING_TARGET_EVENT_MULTIPLIER_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18026,7 +18026,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 3;
-			uParam1->f_5 = 520648049;
+			uParam1->f_5 = joaat("HELI_MOVING_TARGET_EVENT_MULTIPLIER_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18044,7 +18044,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 3;
-			uParam1->f_5 = -1888029212;
+			uParam1->f_5 = joaat("HOLD_THE_WHEEL_EVENT_MULTIPLIER_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18062,7 +18062,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 3;
-			uParam1->f_5 = -1979201435;
+			uParam1->f_5 = joaat("HOT_PROPERTY_EVENT_MULTIPLIER_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18080,7 +18080,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 3;
-			uParam1->f_5 = 357772325;
+			uParam1->f_5 = joaat("DEAD_DROP_EVENT_MULTIPLIER_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18098,7 +18098,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 3;
-			uParam1->f_5 = -233932265;
+			uParam1->f_5 = joaat("KING_OF_THE_CASTLE_EVENT_MULTIPLIER_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18325,7 +18325,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 468000f;
 			uParam1->f_2 = 195000;
 			uParam1->f_3 = 468000;
-			uParam1->f_5 = 1784942865;
+			uParam1->f_5 = joaat("MOD_SHOP_UPGRADE_ALBANY_BUCCANEER_CUSTOM");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18334,7 +18334,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 222000f;
 			uParam1->f_2 = 92500;
 			uParam1->f_3 = 222000;
-			uParam1->f_5 = -16605981;
+			uParam1->f_5 = joaat("MOD_SHOP_UPGRADE_VAPID_CHINO_CUSTOM");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18343,7 +18343,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 402000f;
 			uParam1->f_2 = 167500;
 			uParam1->f_3 = 402000;
-			uParam1->f_5 = 1416295068;
+			uParam1->f_5 = joaat("MOD_SHOP_UPGRADE_WILLARD_FACTION_CUSTOM");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18352,7 +18352,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 444000f;
 			uParam1->f_2 = 185000;
 			uParam1->f_3 = 444000;
-			uParam1->f_5 = -890111734;
+			uParam1->f_5 = joaat("MOD_SHOP_UPGRADE_DECLASSE_MOONBEAM_CUSTOM");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18361,7 +18361,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 480000f;
 			uParam1->f_2 = 200000;
 			uParam1->f_3 = 480000;
-			uParam1->f_5 = 1098098280;
+			uParam1->f_5 = joaat("MOD_SHOP_UPGRADE_ALBANY_PRIMO_CUSTOM");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18370,7 +18370,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 504000f;
 			uParam1->f_2 = 210000;
 			uParam1->f_3 = 504000;
-			uParam1->f_5 = -725430499;
+			uParam1->f_5 = joaat("MOD_SHOP_UPGRADE_DECLASSE_VOODOO_CUSTOM");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18397,7 +18397,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100000f;
 			uParam1->f_2 = 7000;
 			uParam1->f_3 = 100000;
-			uParam1->f_5 = 1118450116;
+			uParam1->f_5 = joaat("CAR_MODS_SUPERMOD_SLOT_STOCK_HYDRAULICS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18543,7 +18543,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = 497433617;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_EVIL_PUMPKIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18552,7 +18552,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = 1296657880;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_ROTTEN_PUMPKIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18561,7 +18561,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = 1849579795;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_NASTY_WATERMELON");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18570,7 +18570,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = 2114589303;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_CREEPY_BUTLER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18579,7 +18579,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = -606965109;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_DEAD_BUTLER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18588,7 +18588,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = 1489214832;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_ROTTEN_BUTLER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18597,7 +18597,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = 286015615;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_WHITE_SCALDED_PSYCHO");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18606,7 +18606,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = -202932451;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_BLOODY_SCALDED_PSYCHO");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18615,7 +18615,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = -963220399;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_BLACK_SCALDED_PSYCHO");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18624,7 +18624,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = 1330763176;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_RED_FLAYED_DEMON");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18633,7 +18633,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = -1851865533;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_GREEN_FLAYED_DEMON");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18642,7 +18642,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = 1321035761;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_GRAY_FLAYED_DEMON");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18651,7 +18651,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = 621347832;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_WHITE_SKULL_BURST");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18660,7 +18660,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = -775260672;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_RED_SKULL_BURST");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18669,7 +18669,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = 55277820;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_CREAM_SKULL_BURST");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18678,7 +18678,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = 1246261725;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_PALE_LYCANTHROPE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18687,7 +18687,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = 301082109;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_DARK_LYCANTHROPE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18696,7 +18696,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = -1653556941;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_GRAY_LYCANTHROPE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18705,7 +18705,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = -257446039;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_GREEN_TOXIC_INSECT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18714,7 +18714,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = -1641192032;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_RED_TOXIC_INSECT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18723,7 +18723,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = -148487088;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_PURPLE_TOXIC_INSECT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18732,7 +18732,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = -1197550925;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_DIRTY_SEWER_CREATURE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18741,7 +18741,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = 1665703549;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_ROTTEN_SEWER_CREATURE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18750,7 +18750,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = -1090593685;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_SCABBY_SEWER_CREATURE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18759,7 +18759,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = 2028142545;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_RED_CLASSIC_LUCIFER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18768,7 +18768,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = 1889431274;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_ORANGE_CLASSIC_LUCIFER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18777,7 +18777,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = 931114659;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_BLACK_CLASSIC_LUCIFER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18786,7 +18786,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = 1387883820;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_CLASSIC_SACK_SLASHER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18795,7 +18795,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = -366147552;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_BLOODY_SACK_SLASHER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18804,7 +18804,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = 191681310;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_BLACK_SACK_SLASHER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18813,7 +18813,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = -1974666408;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_BLUE_HYPNOTIC_ALIEN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18822,7 +18822,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = 1381329009;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_GREEN_HYPNOTIC_ALIEN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18831,7 +18831,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = -1052600052;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_RED_HYPNOTIC_ALIEN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18840,7 +18840,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = 1780143083;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_YELLOW_HAGGARD_WITCH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18849,7 +18849,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = 1101275009;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_GRAY_HAGGARD_WITCH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18858,7 +18858,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = -773558617;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_WHITE_HAGGARD_WITCH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18867,7 +18867,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = 1571011756;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_RED_BEARDED_LUCIFER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18876,7 +18876,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = 50829484;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_ORANGE_BEARDED_LUCIFER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18885,7 +18885,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 75000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 75000;
-			uParam1->f_5 = 398774745;
+			uParam1->f_5 = joaat("HALLOWEEN_2015_BLACK_BEARDED_LUCIFER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19438,7 +19438,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_3 = 2000000;
 			uParam1->f_2 = 200000;
 			uParam1->f_3 = 2000000;
-			uParam1->f_5 = -1449462873;
+			uParam1->f_5 = joaat("BENNYSWEBSITE_KARIN_SULTAN_RS_UPGRADE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19456,7 +19456,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_3 = 2000000;
 			uParam1->f_2 = 200000;
 			uParam1->f_3 = 2000000;
-			uParam1->f_5 = -1781440390;
+			uParam1->f_5 = joaat("UPGRADE_BRAVADO_BANSHEE_900R_UPGRADE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19465,7 +19465,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_3 = 4000000;
 			uParam1->f_2 = 200000;
 			uParam1->f_3 = 4000000;
-			uParam1->f_5 = -1739834394;
+			uParam1->f_5 = joaat("WEBSITE_VALENTINES2016_ALBANY_ROOSEVELT_VALOR");
 			uParam1->f_4 = 1;
 			break;
 	}
@@ -19476,7 +19476,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2000000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 2000000;
-			uParam1->f_5 = -1500441824;
+			uParam1->f_5 = joaat("APARTMENT_WEBSITE_GALLIVANTER_BALLER_LE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19485,7 +19485,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = -124124851;
+			uParam1->f_5 = joaat("APARTMENT_WEBSITE_GALLIVANTER_BALLER_LE_ARMORED");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19494,7 +19494,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2000000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 2000000;
-			uParam1->f_5 = 500606852;
+			uParam1->f_5 = joaat("APARTMENT_WEBSITE_GALLIVANTER_BALLER_LE_LWB");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19503,7 +19503,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = 1580321384;
+			uParam1->f_5 = joaat("APARTMENT_WEBSITE_GALLIVANTER_BALLER_LWB_ARMORED");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19512,7 +19512,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2000000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 2000000;
-			uParam1->f_5 = -348526927;
+			uParam1->f_5 = joaat("APARTMENT_WEBSITE_ENUS_COGNOSCENTI_55");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19521,7 +19521,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = 1795576843;
+			uParam1->f_5 = joaat("APARTMENT_WEBSITE_ENUS_COGNOSCENTI_55_ARMORED");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19530,7 +19530,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2000000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 2000000;
-			uParam1->f_5 = 1136731901;
+			uParam1->f_5 = joaat("APARTMENT_WEBSITE_ENUS_COGNOSCENTI");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19539,7 +19539,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = 331669480;
+			uParam1->f_5 = joaat("APARTMENT_WEBSITE_ENUS_COGNOSCENTI_ARMORED");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19557,7 +19557,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = 491770944;
+			uParam1->f_5 = joaat("APARTMENT_WEBSITE_DECLASSE_MAMBA");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19566,7 +19566,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = -868533286;
+			uParam1->f_5 = joaat("APARTMENT_WEBSITE_IMPONTE_NIGHT_SHADE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19575,7 +19575,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2000000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 2000000;
-			uParam1->f_5 = 1573736830;
+			uParam1->f_5 = joaat("APARTMENT_WEBSITE_BENEFACTOR_SCHAFTER_V12");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19584,7 +19584,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = -1484532217;
+			uParam1->f_5 = joaat("APARTMENT_WEBSITE_BENEFACTOR_SCHAFTER_V12_ARMORED");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19593,7 +19593,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2000000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 2000000;
-			uParam1->f_5 = 925865262;
+			uParam1->f_5 = joaat("APARTMENT_WEBSITE_BENEFACTOR_SCHAFTER_LWB");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19602,7 +19602,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = 667281475;
+			uParam1->f_5 = joaat("APARTMENT_WEBSITE_BENEFACTOR_SCHAFTER_LWB_ARMORED");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19611,7 +19611,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = -1636766480;
+			uParam1->f_5 = joaat("APARTMENT_WEBSITE_BRAVADO_VERLIERER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19665,7 +19665,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3E+07f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 30000000;
-			uParam1->f_5 = -976367201;
+			uParam1->f_5 = joaat("APARTMENT_PURCHASE_MODEL_THE_ORION_FIRST_PURCHASE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19674,7 +19674,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2500000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 2500000;
-			uParam1->f_5 = 1587047182;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_MODEL_THE_ORION_MOD");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19683,7 +19683,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3.5E+07f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 35000000;
-			uParam1->f_5 = -1112039416;
+			uParam1->f_5 = joaat("APARTMENT_PURCHASE_MODEL_THE_PISCES_FIRST_PURCHASE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19692,7 +19692,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 5000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 5000000;
-			uParam1->f_5 = 1577150952;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_MODEL_THE_PISCES_MOD");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19701,7 +19701,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 4E+07f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 40000000;
-			uParam1->f_5 = -1946823177;
+			uParam1->f_5 = joaat("APARTMENT_PURCHASE_MODEL_THE_AQUARIUS_FIRST_PURCHASE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19710,7 +19710,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1E+07f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 10000000;
-			uParam1->f_5 = 1262037594;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_MODEL_THE_AQUARIUS_MOD");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20079,7 +20079,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1500000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 1500000;
-			uParam1->f_5 = -660218489;
+			uParam1->f_5 = joaat("APARTMENT_CAR_MODSHIGH_END_INTERIOR_MODERN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20088,7 +20088,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1500000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 1500000;
-			uParam1->f_5 = 780521842;
+			uParam1->f_5 = joaat("APARTMENT_CAR_MODSHIGH_END_INTERIOR_MOODY");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20097,7 +20097,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1500000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 1500000;
-			uParam1->f_5 = 1052138724;
+			uParam1->f_5 = joaat("APARTMENT_CAR_MODSHIGH_END_INTERIOR_VIBRANT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20106,7 +20106,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1500000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 1500000;
-			uParam1->f_5 = -258328892;
+			uParam1->f_5 = joaat("APARTMENT_CAR_MODSHIGH_END_INTERIOR_SHARP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20115,7 +20115,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1500000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 1500000;
-			uParam1->f_5 = -552995245;
+			uParam1->f_5 = joaat("APARTMENT_CAR_MODSHIGH_END_INTERIOR_MONOCHROME");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20124,7 +20124,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1500000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 1500000;
-			uParam1->f_5 = -1950302737;
+			uParam1->f_5 = joaat("APARTMENT_CAR_MODSHIGH_END_INTERIOR_SEDUCTIVE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20133,7 +20133,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1500000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 1500000;
-			uParam1->f_5 = -1924310762;
+			uParam1->f_5 = joaat("APARTMENT_CAR_MODSHIGH_END_INTERIOR_REGAL");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20142,7 +20142,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1500000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 1500000;
-			uParam1->f_5 = 1248618798;
+			uParam1->f_5 = joaat("APARTMENT_CAR_MODSHIGH_END_INTERIOR_AQUA");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20342,7 +20342,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2500000f;
 			uParam1->f_2 = 170000;
 			uParam1->f_3 = 2500000;
-			uParam1->f_5 = -1000293354;
+			uParam1->f_5 = joaat("CAR_MODS_WILLARD_FACTION_CUSTOM_DONK_UPGRADE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20351,7 +20351,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 80000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = -322801741;
+			uParam1->f_5 = joaat("CAR_MODS_VAPID_MINIVAN_CUSTOM_UPGRADE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20360,7 +20360,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 120000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = -1779270360;
+			uParam1->f_5 = joaat("CAR_MODS_DECLASSE_SABRE_TURBO_CUSTOM_UPGRADE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20369,7 +20369,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = -595438251;
+			uParam1->f_5 = joaat("CAR_MODS_VAPID_SLAMVAN_CUSTOM_UPGRADE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20378,7 +20378,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 90000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = 1608836980;
+			uParam1->f_5 = joaat("CAR_MODS_DECLASSE_TORNADO_CUSTOM_UPGRADE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20387,7 +20387,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 55000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = -1800957270;
+			uParam1->f_5 = joaat("CAR_MODS_DUNDREARY_VIRGO_CLASSIC_CUSTOM_UPGRADE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20594,7 +20594,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 30000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 30000;
-			uParam1->f_5 = 117408879;
+			uParam1->f_5 = joaat("PRIMARY_DOUBLE_BARREL_SHOTGUN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20747,7 +20747,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 20000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = -78329031;
+			uParam1->f_5 = joaat("BIKER_WEBSITE_LCC_AVARUS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20756,7 +20756,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 250000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 250000;
-			uParam1->f_5 = -1722331110;
+			uParam1->f_5 = joaat("BIKER_WEBSITE_NAGASAKI_STREET_BLAZER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20765,7 +20765,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = -687625947;
+			uParam1->f_5 = joaat("BIKER_WEBSITE_NAGASAKI_CHIMERA");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20774,7 +20774,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 500000f;
 			uParam1->f_2 = 20000;
 			uParam1->f_3 = 500000;
-			uParam1->f_5 = -2020967597;
+			uParam1->f_5 = joaat("BIKER_WEBSITE_WESTERN_DAEMON_CUSTOM");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20783,7 +20783,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = -1382016796;
+			uParam1->f_5 = joaat("BIKER_WEBSITE_SHITZU_DEFILER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20792,7 +20792,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = -1772063132;
+			uParam1->f_5 = joaat("BIKER_WEBSITE_PEGASSI_ESSKEY");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20801,7 +20801,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = 469998148;
+			uParam1->f_5 = joaat("BIKER_WEBSITE_SHITZU_HAKUCHOU_DRAG");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20810,7 +20810,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 250000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 250000;
-			uParam1->f_5 = -1616988346;
+			uParam1->f_5 = joaat("BIKER_WEBSITE_MAIBATSU_MANCHEZ");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20819,7 +20819,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 500000f;
 			uParam1->f_2 = 20000;
 			uParam1->f_3 = 500000;
-			uParam1->f_5 = 620345044;
+			uParam1->f_5 = joaat("BIKER_WEBSITE_WESTERN_NIGHTBLADE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20828,7 +20828,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = -1352887220;
+			uParam1->f_5 = joaat("BIKER_WEBSITE_BF_RAPTOR");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20837,7 +20837,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 250000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 250000;
-			uParam1->f_5 = 603859625;
+			uParam1->f_5 = joaat("BIKER_WEBSITE_WESTERN_RAT_BIKE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20846,7 +20846,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1E+07f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 10000000;
-			uParam1->f_5 = -412514399;
+			uParam1->f_5 = joaat("BIKER_WEBSITE_LCC_SANCTUS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20864,7 +20864,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = -554097411;
+			uParam1->f_5 = joaat("BIKER_WEBSITE_PEGASSI_VORTEX");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20873,7 +20873,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 250000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 250000;
-			uParam1->f_5 = 859016740;
+			uParam1->f_5 = joaat("BIKER_WEBSITE_WESTERN_WOLFSBANE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20882,7 +20882,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 250000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 250000;
-			uParam1->f_5 = 670403363;
+			uParam1->f_5 = joaat("BIKER_WEBSITE_WESTERN_ZOMBIE_BOBBER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20891,7 +20891,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 500000f;
 			uParam1->f_2 = 20000;
 			uParam1->f_3 = 500000;
-			uParam1->f_5 = 2134170442;
+			uParam1->f_5 = joaat("BIKER_WEBSITE_WESTERN_ZOMBIE_CHOPPER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21008,7 +21008,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = 1488685993;
+			uParam1->f_5 = joaat("BIKER_BUSINESS_PALETO_BAY_DOCUMENT_FORGERY_OFFICE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21017,7 +21017,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = -931206847;
+			uParam1->f_5 = joaat("BIKER_BUSINESS_CITY_DOCUMENT_FORGERY_OFFICE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21026,7 +21026,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = -1713675550;
+			uParam1->f_5 = joaat("BIKER_BUSINESS_COUNTRYSIDE_DOCUMENT_FORGERY_OFFICE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21035,7 +21035,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = -281008956;
+			uParam1->f_5 = joaat("BIKER_BUSINESS_ELYSIAN_DOCUMENT_FORGERY_OFFICE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21044,7 +21044,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = 342242048;
+			uParam1->f_5 = joaat("BIKER_BUSINESS_PALETO_BAY_COUNTERFEIT_CASH_FACTOY");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21053,7 +21053,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = 2109658967;
+			uParam1->f_5 = joaat("BIKER_BUSINESS_CITY_COUNTERFEIT_CASH_FACTOY");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21062,7 +21062,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = -575946903;
+			uParam1->f_5 = joaat("BIKER_BUSINESS_COUNTRYSIDE_COUNTERFEIT_CASH_FACTOY");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21071,7 +21071,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = -348877060;
+			uParam1->f_5 = joaat("BIKER_BUSINESS_ELYSIAN_COUNTERFEIT_CASH_FACTOY");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21080,7 +21080,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = 1306609736;
+			uParam1->f_5 = joaat("BIKER_BUSINESS_PALETO_BAY_COCAINE_LOCKUP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21089,7 +21089,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = -1704466501;
+			uParam1->f_5 = joaat("BIKER_BUSINESS_CITY_COCAINE_LOCKUP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21098,7 +21098,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = 1259696400;
+			uParam1->f_5 = joaat("BIKER_BUSINESS_COUNTRYSIDE_COCAINE_LOCKUP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21107,7 +21107,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = -1603482977;
+			uParam1->f_5 = joaat("BIKER_BUSINESS_ELYSIAN_COCAINE_LOCKUP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21116,7 +21116,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = -553590544;
+			uParam1->f_5 = joaat("BIKER_BUSINESS_PALETO_BAY_METH_LAB");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21125,7 +21125,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = 1497709697;
+			uParam1->f_5 = joaat("BIKER_BUSINESS_CITY_METH_LAB");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21134,7 +21134,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = -1194986364;
+			uParam1->f_5 = joaat("BIKER_BUSINESS_COUNTRYSIDE_METH_LAB");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21143,7 +21143,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = 101220655;
+			uParam1->f_5 = joaat("BIKER_BUSINESS_ELYSIAN_METH_LAB");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21152,7 +21152,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = -892925008;
+			uParam1->f_5 = joaat("BIKER_BUSINESS_PALETO_BAY_WEED_FARM");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21161,7 +21161,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = 1084179903;
+			uParam1->f_5 = joaat("BIKER_BUSINESS_CITY_WEED_FARM");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21170,7 +21170,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = 689755754;
+			uParam1->f_5 = joaat("BIKER_BUSINESS_COUNTRYSIDE_WEED_FARM");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21179,7 +21179,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = -910238678;
+			uParam1->f_5 = joaat("BIKER_BUSINESS_ELYSIAN_WEED_FARM");
 			uParam1->f_4 = 1;
 			break;
 		

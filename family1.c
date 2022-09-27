@@ -19426,7 +19426,7 @@ void func_318()//Position - 0x166D8
 				{
 					if (!PED::IS_PED_INJURED(func_2()))
 					{
-						TASK::TASK_USE_MOBILE_PHONE(func_2(), 1, 1);
+						TASK::TASK_USE_MOBILE_PHONE(func_2(), true, 1);
 						PED::SET_PED_PHONE_PALETTE_IDX(func_2(), func_348(1));
 					}
 					SYSTEM::SETTIMERA(0);
@@ -19446,7 +19446,7 @@ void func_318()//Position - 0x166D8
 				{
 					if (!PED::IS_PED_INJURED(func_2()))
 					{
-						TASK::TASK_USE_MOBILE_PHONE(func_2(), 0, 1);
+						TASK::TASK_USE_MOBILE_PHONE(func_2(), false, 1);
 					}
 					iLocal_307 = 13;
 				}

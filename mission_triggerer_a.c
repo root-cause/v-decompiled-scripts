@@ -8280,7 +8280,7 @@ void func_186()//Position - 0x869F
 								if (!PED::IS_PED_INJURED(Global_96938.f_9[0]))
 								{
 									PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), false, 0);
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), -808.416f, 177.4646f, 71.6071f, 1f, 20000, 0.25f, false, 40000f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), -808.416f, 177.4646f, 71.6071f, 1f, 20000, 0.25f, 0, 40000f);
 									TASK::TASK_SYNCHRONIZED_SCENE(Global_96938.f_9[0], iLocal_1518, "missheist_jewelleadinoutjh_endscene", "action_mic", 8f, -8f, 4, 16, 1000f, 0);
 									PED::SET_SYNCHRONIZED_SCENE_RATE(iLocal_1518, 0.7f);
 									func_187();
@@ -105352,7 +105352,7 @@ void func_721()//Position - 0x7CDB3
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iVar0);
 											TASK::OPEN_SEQUENCE_TASK(&iVar0);
-											TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -815.77f, 163.63f, 70.34f, 2f, 20000, 0.25f, true, 40000f);
+											TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -815.77f, 163.63f, 70.34f, 2f, 20000, 0.25f, 1, 40000f);
 											if (VEHICLE::IS_VEHICLE_DRIVEABLE(Global_96938[1], false))
 											{
 												if (VEHICLE::IS_ENTRY_POINT_FOR_SEAT_CLEAR(Global_96938.f_9[0], Global_96938[1], -1, false, false))
@@ -105385,7 +105385,7 @@ void func_721()//Position - 0x7CDB3
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iVar1);
 											TASK::OPEN_SEQUENCE_TASK(&iVar1);
-											TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -831.35f, 165.95f, 68.27f, 2f, 20000, 0.25f, true, 40000f);
+											TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -831.35f, 165.95f, 68.27f, 2f, 20000, 0.25f, 1, 40000f);
 											if (VEHICLE::IS_VEHICLE_DRIVEABLE(Global_96938[1], false))
 											{
 												if (VEHICLE::IS_ENTRY_POINT_FOR_SEAT_CLEAR(Global_96938.f_9[0], Global_96938[1], -1, false, false))
@@ -109006,7 +109006,7 @@ int func_798()//Position - 0x844D1
 					{
 						func_187();
 						PED::FORCE_PED_MOTION_STATE(PLAYER::PLAYER_PED_ID(), joaat("MotionState_Walk"), false, 0, true);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), -34.4845f, -1099.388f, 25.4223f, 1f, 20000, 0.25f, true, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), -34.4845f, -1099.388f, 25.4223f, 1f, 20000, 0.25f, 1, 40000f);
 						iLocal_235++;
 					}
 				}

@@ -142965,14 +142965,14 @@ float func_1096(float fParam0, float fParam1)//Position - 0xB17F8
 float func_1097(struct<3> Param0, bool bParam1)//Position - 0xB180F
 {
 	float fVar0;
-	bool bVar1;
+	int iVar1;
 	
-	bVar1 = WATER::TEST_VERTICAL_PROBE_AGAINST_ALL_WATER(Param0 + Vector(2f, 0f, 0f), 511, &fVar0);
-	if (bVar1 == 2)
+	iVar1 = WATER::TEST_VERTICAL_PROBE_AGAINST_ALL_WATER(Param0 + Vector(2f, 0f, 0f), 511, &fVar0);
+	if (iVar1 == 2)
 	{
 		return fVar0;
 	}
-	if (bVar1 == 1)
+	if (iVar1 == 1)
 	{
 		if (bParam1)
 		{

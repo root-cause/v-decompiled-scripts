@@ -1145,7 +1145,7 @@ void __EntryFunction__()//Position - 0x0
 												PED::SET_PED_MOVEMENT_CLIPSET(iLocal_136, sLocal_120, 0.25f);
 												PED::SET_PED_WEAPON_MOVEMENT_CLIPSET(iLocal_136, sLocal_120);
 												TASK::OPEN_SEQUENCE_TASK(&iLocal_157);
-												TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -827.8197f, 191.4635f, 72.2064f, 0.5f, -1, 0.25f, false, 299.3068f);
+												TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -827.8197f, 191.4635f, 72.2064f, 0.5f, -1, 0.25f, 0, 299.3068f);
 												TASK::TASK_PLAY_ANIM(0, sLocal_121, "Blower_Idle_a", 2f, -2f, -1, 8193, 0f, false, false, false);
 												TASK::CLOSE_SEQUENCE_TASK(iLocal_157);
 												TASK::TASK_PERFORM_SEQUENCE(iLocal_136, iLocal_157);
@@ -1827,14 +1827,14 @@ void func_6()//Position - 0x2427
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_135, true);
 			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_135, iLocal_197);
 			PED::SET_PED_AS_ENEMY(iLocal_135, true);
-			TASK::TASK_PUT_PED_DIRECTLY_INTO_MELEE(iLocal_135, func_820(0), 0f, -1f, 0f, false);
+			TASK::TASK_PUT_PED_DIRECTLY_INTO_MELEE(iLocal_135, func_820(0), 0f, -1f, 0f, 0);
 			PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(iLocal_135, false, false);
 			ENTITY::SET_ENTITY_INVINCIBLE(iLocal_135, false);
 			ENTITY::SET_ENTITY_HEALTH(iLocal_135, 450, 0);
 			PED::SET_PED_MAX_HEALTH(iLocal_135, 450);
 			func_118(PLAYER::PLAYER_PED_ID(), -58.1243f, -1095.056f, 25.4345f, 314.025f, 1);
 			WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"), true);
-			TASK::TASK_PUT_PED_DIRECTLY_INTO_MELEE(func_820(0), iLocal_135, 0f, -1f, 0f, false);
+			TASK::TASK_PUT_PED_DIRECTLY_INTO_MELEE(func_820(0), iLocal_135, 0f, -1f, 0f, 0);
 			PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(func_820(0), false, false);
 			CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
 			CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(-10f, 1f);
@@ -2073,7 +2073,7 @@ void func_6()//Position - 0x2427
 								{
 									TASK::TASK_GO_STRAIGHT_TO_COORD(0, -59.083f, -1097.82f, 25.4225f, 2f, 20000, 40000f, 0.5f);
 								}
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -54.8776f, -1092.944f, 25.4344f, 2f, 20000, 0.25f, false, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -54.8776f, -1092.944f, 25.4344f, 2f, 20000, 0.25f, 0, 40000f);
 								TASK::TASK_TURN_PED_TO_FACE_COORD(0, ENTITY::GET_ENTITY_COORDS(func_820(0), true), 0);
 								if (func_815(sLocal_119))
 								{
@@ -36544,7 +36544,7 @@ void func_276()//Position - 0x28A99
 				{
 					PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_135, iLocal_197);
 					PED::SET_PED_AS_ENEMY(iLocal_135, true);
-					TASK::TASK_PUT_PED_DIRECTLY_INTO_MELEE(iLocal_135, func_820(0), 0.5f, -1f, 0f, false);
+					TASK::TASK_PUT_PED_DIRECTLY_INTO_MELEE(iLocal_135, func_820(0), 0.5f, -1f, 0f, 0);
 					PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(iLocal_135, false, false);
 					ENTITY::SET_ENTITY_INVINCIBLE(iLocal_135, false);
 				}
@@ -36564,7 +36564,7 @@ void func_276()//Position - 0x28A99
 					MISC::ENABLE_DISPATCH_SERVICE(5, false);
 					PLAYER::SET_DISPATCH_COPS_FOR_PLAYER(PLAYER::PLAYER_ID(), false);
 					PED::SET_CREATE_RANDOM_COPS(false);
-					TASK::TASK_PUT_PED_DIRECTLY_INTO_MELEE(func_820(0), iLocal_135, 0f, -1f, 0f, false);
+					TASK::TASK_PUT_PED_DIRECTLY_INTO_MELEE(func_820(0), iLocal_135, 0f, -1f, 0f, 0);
 					PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(func_820(0), false, false);
 					if (iLocal_66)
 					{

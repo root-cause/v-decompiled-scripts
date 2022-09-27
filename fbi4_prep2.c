@@ -4670,7 +4670,7 @@ int func_147(int iParam0, int iParam1)//Position - 0x4AF7
 					}
 					else
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam1, Var0, 1f, 20000, 0.25f, false, 82.7989f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam1, Var0, 1f, 20000, 0.25f, 0, 82.7989f);
 						PED::SET_PED_STEALTH_MOVEMENT(iParam1, true, 0);
 						if (iParam0 == 2)
 						{
@@ -7079,7 +7079,7 @@ void func_211(int iParam0)//Position - 0x765D
 			{
 				if (func_6(Local_202.f_0))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_197.f_0, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(Local_200.f_0, -1f, 0.5f, 0f), 1f, 30000, 0.25f, false, 141.2603f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_197.f_0, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(Local_200.f_0, -1f, 0.5f, 0f), 1f, 30000, 0.25f, 0, 141.2603f);
 				}
 			}
 			break;

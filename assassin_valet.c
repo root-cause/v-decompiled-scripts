@@ -18667,7 +18667,7 @@ int func_382()//Position - 0x16A30
 									TASK::CLEAR_SEQUENCE_TASK(&iLocal_1076);
 									TASK::OPEN_SEQUENCE_TASK(&iLocal_1076);
 									TASK::TASK_LEAVE_ANY_VEHICLE(0, iVar0, 0);
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_1056[iLocal_1021 /*3*/], 1f, 20000, 0.25f, false, 40000f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_1056[iLocal_1021 /*3*/], 1f, 20000, 0.25f, 0, 40000f);
 									TASK::CLOSE_SEQUENCE_TASK(iLocal_1076);
 									TASK::TASK_PERFORM_SEQUENCE(iLocal_945[iLocal_1021], iLocal_1076);
 									TASK::CLEAR_SEQUENCE_TASK(&iLocal_1076);
@@ -19996,8 +19996,8 @@ void func_430()//Position - 0x18BB7
 						if (ENTITY::GET_ENTITY_ANIM_CURRENT_TIME(iLocal_948, "oddjobs@assassinate@hotel@leadin", "Lester_Getup") >= 0.376f)
 						{
 							TASK::OPEN_SEQUENCE_TASK(&iVar0);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1502.029f, -948.687f, 7.65061f, 1f, 20000, 1f, true, 40000f);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1462.339f, -964.178f, 6.3394f, 1f, -1, 1f, true, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1502.029f, -948.687f, 7.65061f, 1f, 20000, 1f, 1, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1462.339f, -964.178f, 6.3394f, 1f, -1, 1f, 1, 40000f);
 							TASK::TASK_WANDER_STANDARD(0, ENTITY::GET_ENTITY_HEADING(iLocal_948), 0);
 							TASK::CLOSE_SEQUENCE_TASK(iVar0);
 							TASK::TASK_PERFORM_SEQUENCE(iLocal_948, iVar0);

@@ -29870,7 +29870,7 @@ void func_762()//Position - 0x24295
 													if (!PED::IS_PED_INJURED(iVar6))
 													{
 														Var3 = { ENTITY::GET_ENTITY_COORDS(iVar6, true) };
-														TASK::TASK_PLANE_MISSION(NETWORK::NET_TO_PED(Local_91.f_48[bVar0]), iVar2, 0, iVar6, Var3, 4, 50f, 5f, -1f, 1.401298E-43f, 7.006492E-44f, 1);
+														TASK::TASK_PLANE_MISSION(NETWORK::NET_TO_PED(Local_91.f_48[bVar0]), iVar2, 0, iVar6, Var3, 4, 50f, 5f, -1f, 1.401298E-43f, 7.006492E-44f, true);
 														if (iLocal_97[iVar10] != Local_91.f_110[iVar10])
 														{
 															iLocal_97[iVar10] = Local_91.f_110[iVar10];
@@ -29894,7 +29894,7 @@ void func_762()//Position - 0x24295
 												fVar7 = func_26(iVar2, iVar6, 1);
 												if (fVar7 > 500f)
 												{
-													TASK::TASK_GO_TO_COORD_ANY_MEANS_EXTRA_PARAMS_WITH_CRUISE_SPEED(NETWORK::NET_TO_PED(Local_91.f_48[bVar0]), ENTITY::GET_ENTITY_COORDS(iVar6, true), 2f, iVar2, true, 786469, -1f, 0, 1101004800, 0, 30f, 1082130432);
+													TASK::TASK_GO_TO_COORD_ANY_MEANS_EXTRA_PARAMS_WITH_CRUISE_SPEED(NETWORK::NET_TO_PED(Local_91.f_48[bVar0]), ENTITY::GET_ENTITY_COORDS(iVar6, true), 2f, iVar2, true, 786469, -1f, 0f, 20f, 0, 30f, 4f);
 												}
 												else if (fVar7 > 250f)
 												{

@@ -736,7 +736,7 @@ void func_1()//Position - 0x1D2
 								fVar4 = MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(iLocal_53, true), ENTITY::GET_ENTITY_COORDS(iLocal_55, true), true);
 								if (fVar4 < 4f && iLocal_273 == 0)
 								{
-									TASK::TASK_GOTO_ENTITY_OFFSET_XY(iLocal_53, iLocal_55, 60000, 0.5f, Local_283.f_0, Local_283.f_1, 1f, true);
+									TASK::TASK_GOTO_ENTITY_OFFSET_XY(iLocal_53, iLocal_55, 60000, 0.5f, Local_283.f_0, Local_283.f_1, 1f, 1);
 									iLocal_273 = 1;
 								}
 								else if (fVar4 < 3f)
@@ -755,7 +755,7 @@ void func_1()//Position - 0x1D2
 								{
 									Local_283 = { -1.578f, -0.5f, 1f };
 								}
-								TASK::TASK_GOTO_ENTITY_OFFSET_XY(iLocal_53, iLocal_55, 60000, 0.5f, Local_283.f_0, Local_283.f_1, 1f, true);
+								TASK::TASK_GOTO_ENTITY_OFFSET_XY(iLocal_53, iLocal_55, 60000, 0.5f, Local_283.f_0, Local_283.f_1, 1f, 1);
 								if (bLocal_284)
 								{
 									PED::SET_PED_MOVEMENT_CLIPSET(iLocal_53, "MOVE_M@BAIL_BOND_TAZERED", 0.25f);
@@ -1219,7 +1219,7 @@ void func_7()//Position - 0x128E
 				ENTITY::IS_ENTITY_DEAD(iLocal_53, false);
 				if (ENTITY::DOES_ENTITY_EXIST(iLocal_52) && ENTITY::DOES_ENTITY_EXIST(iLocal_53))
 				{
-					TASK::TASK_GOTO_ENTITY_OFFSET_XY(iLocal_52, iLocal_53, -1, 3f, 0f, 0f, 1f, false);
+					TASK::TASK_GOTO_ENTITY_OFFSET_XY(iLocal_52, iLocal_53, -1, 3f, 0f, 0f, 1f, 0);
 				}
 				SYSTEM::SETTIMERB(0);
 			}
@@ -1302,7 +1302,7 @@ int func_10()//Position - 0x13E9
 	STREAMING::REQUEST_MODEL(iVar4);
 	if (STREAMING::HAS_MODEL_LOADED(iVar4))
 	{
-		if (PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE(ENTITY::GET_ENTITY_COORDS(iLocal_52, false), 1, &Var0, 1, 1077936128, 0))
+		if (PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE(ENTITY::GET_ENTITY_COORDS(iLocal_52, false), 1, &Var0, 1, 3f, 0f))
 		{
 			if (VEHICLE::GENERATE_VEHICLE_CREATION_POS_FROM_PATHS(&Var0, &Var2, &uVar3, 0f, 180f, 50f, 1, 1, 1))
 			{
@@ -1323,7 +1323,7 @@ int func_10()//Position - 0x13E9
 				Var0 = { ENTITY::GET_ENTITY_COORDS(iLocal_55, true) };
 				Var1 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) - Var0 };
 				ENTITY::SET_ENTITY_HEADING(iLocal_55, MISC::GET_HEADING_FROM_VECTOR_2D(Var1.f_0, Var1.f_1));
-				PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE(ENTITY::GET_ENTITY_COORDS(iLocal_52, false), 1, &Var0, 1, 1077936128, 0);
+				PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE(ENTITY::GET_ENTITY_COORDS(iLocal_52, false), 1, &Var0, 1, 3f, 0f);
 				if (MISC::GET_DISTANCE_BETWEEN_COORDS(Var0, 2528.563f, 2639.115f, 36.9446f, true) < 75f)
 				{
 					Var0 = { 2473.601f, 2496.765f, 40.87f };
@@ -1501,7 +1501,7 @@ void func_12()//Position - 0x1750
 								TASK::CLEAR_PED_TASKS(iLocal_53);
 								TASK::OPEN_SEQUENCE_TASK(&iLocal_67);
 								TASK::TASK_LOOK_AT_COORD(0, ENTITY::GET_ENTITY_COORDS(iLocal_52, false), 1000, 0, 2);
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, ENTITY::GET_ENTITY_COORDS(iLocal_52, false), 2f, -1, 3f, false, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, ENTITY::GET_ENTITY_COORDS(iLocal_52, false), 2f, -1, 3f, 0, 40000f);
 								TASK::CLOSE_SEQUENCE_TASK(iLocal_67);
 								TASK::TASK_PERFORM_SEQUENCE(iLocal_53, iLocal_67);
 								TASK::CLEAR_SEQUENCE_TASK(&iLocal_67);
@@ -1522,7 +1522,7 @@ void func_12()//Position - 0x1750
 							{
 								TASK::OPEN_SEQUENCE_TASK(&iLocal_67);
 								TASK::TASK_LOOK_AT_COORD(0, ENTITY::GET_ENTITY_COORDS(iLocal_52, false), 1000, 0, 2);
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, ENTITY::GET_ENTITY_COORDS(iLocal_52, false), 2f, -1, 3f, false, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, ENTITY::GET_ENTITY_COORDS(iLocal_52, false), 2f, -1, 3f, 0, 40000f);
 								TASK::CLOSE_SEQUENCE_TASK(iLocal_67);
 								TASK::TASK_PERFORM_SEQUENCE(iLocal_53, iLocal_67);
 								TASK::CLEAR_SEQUENCE_TASK(&iLocal_67);

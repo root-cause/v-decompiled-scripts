@@ -5130,7 +5130,7 @@ int func_142()//Position - 0x4E92
 					PED::SET_PED_CONFIG_FLAG(iLocal_163, 104, true);
 					MISC::SET_BIT(&uLocal_333, 22);
 					TASK::TASK_CLEAR_LOOK_AT(iLocal_163);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_163, 1273.576f, -1718.459f, 53.7715f, 1f, 20000, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_163, 1273.576f, -1718.459f, 53.7715f, 1f, 20000, 0.25f, 0, 40000f);
 					func_183(&uLocal_343);
 					func_7(&uLocal_343, 0, 0);
 					iLocal_340++;

@@ -117821,7 +117821,7 @@ void func_880(int iParam0)//Position - 0x8F095
 					if (iLocal_266)
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iVar0);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_755(iParam0), 2f, -1, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_755(iParam0), 2f, -1, 0.25f, 0, 40000f);
 						TASK::TASK_PUT_PED_DIRECTLY_INTO_COVER(0, func_755(iParam0), -1, false, 0f, false, false, iLocal_509[iParam0], true);
 						TASK::CLOSE_SEQUENCE_TASK(iVar0);
 						TASK::TASK_PERFORM_SEQUENCE(iLocal_75[iParam0], iVar0);
@@ -117856,7 +117856,7 @@ void func_880(int iParam0)//Position - 0x8F095
 					if (iLocal_266)
 					{
 						TASK::TASK_LOOK_AT_ENTITY(iLocal_75[iParam0], PLAYER::PLAYER_PED_ID(), -1, 2048, 2);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_75[iParam0], func_110(33), 2f, 60000, 5f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_75[iParam0], func_110(33), 2f, 60000, 5f, 0, 40000f);
 						Local_147[iParam0 /*3*/].f_1 = MISC::GET_GAME_TIMER();
 						Local_147[iParam0 /*3*/] = 9;
 					}
@@ -118087,7 +118087,7 @@ int func_882(int iParam0, bool bParam1)//Position - 0x8F654
 			if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_75[iParam0], joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) == 7)
 			{
 				TASK::OPEN_SEQUENCE_TASK(&iVar2);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var1, 2f, -1, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var1, 2f, -1, 0.25f, 0, 40000f);
 				TASK::TASK_PUT_PED_DIRECTLY_INTO_COVER(0, Var1, -1, !bParam1, 0f, false, false, iVar0, true);
 				TASK::CLOSE_SEQUENCE_TASK(iVar2);
 				TASK::TASK_PERFORM_SEQUENCE(iLocal_75[iParam0], iVar2);
@@ -120288,7 +120288,7 @@ void func_921()//Position - 0x91D3A
 							PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), false, 952);
 							if (func_804(func_230()))
 							{
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_230(), 1114.593f, -1996.371f, 32.1953f, 1f, 20000, 0.25f, false, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_230(), 1114.593f, -1996.371f, 32.1953f, 1f, 20000, 0.25f, 0, 40000f);
 								if (func_804(func_231()))
 								{
 									TASK::TASK_LOOK_AT_ENTITY(PLAYER::PLAYER_PED_ID(), func_231(), -1, 2048, 4);
@@ -121160,7 +121160,7 @@ void func_937()//Position - 0x93736
 				break;
 			
 			case 2:
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_228, func_110(4), 1f, 20000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_228, func_110(4), 1f, 20000, 0.25f, 0, 40000f);
 				iLocal_145 = 3;
 				break;
 			

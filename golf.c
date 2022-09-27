@@ -121090,7 +121090,7 @@ void func_1239(var uParam0, var uParam1, int iParam2, int iParam3, int iParam4, 
 			Stack.Push(func_541(uParam0));
 			Stack.Push(iVar0);
 			Call_Loc(iParam4);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(StackVal, StackVal, StackVal, StackVal, 1f, -1, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(StackVal, StackVal, StackVal, StackVal, 1f, -1, 0.25f, 0, 40000f);
 			Stack.Push(0);
 			Stack.Push(uParam1);
 			Stack.Push(func_541(uParam0));
@@ -124444,7 +124444,7 @@ void func_1377(var uParam0, int iParam1, var uParam2, int* iParam3)//Position - 
 					Var6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) - Var4 };
 					if (func_1080(Var5, Var6) > 0f)
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), Var3, 1f, -1, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), Var3, 1f, -1, 0.25f, 0, 40000f);
 					}
 					else
 					{

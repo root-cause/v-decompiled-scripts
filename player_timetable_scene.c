@@ -57138,7 +57138,7 @@ int func_270(int iParam0, int iParam1, struct<3> Param2, float fParam3, bool bPa
 		{
 			iVar0 = -1;
 			fVar1 = 0.25f;
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0, Param2, 1f, iVar0, fVar1, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0, Param2, 1f, iVar0, fVar1, 0, 40000f);
 		}
 	}
 	else
@@ -78559,7 +78559,7 @@ int func_451()//Position - 0x4EDCA
 			break;
 		
 		case joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD"):
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(PLAYER::PLAYER_PED_ID(), 0f, 5f, 0f), 1f, 20000, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(PLAYER::PLAYER_PED_ID(), 0f, 5f, 0f), 1f, 20000, 0.25f, 0, 40000f);
 			return 1;
 			break;
 		
@@ -138474,7 +138474,7 @@ int func_656()//Position - 0x97510
 			break;
 		
 		case joaat("SCRIPT_TASK_HANDS_UP"):
-			TASK::TASK_HANDS_UP(iLocal_273, -1, PLAYER::PLAYER_PED_ID(), -1, false);
+			TASK::TASK_HANDS_UP(iLocal_273, -1, PLAYER::PLAYER_PED_ID(), -1, 0);
 			PED::SET_PED_KEEP_TASK(iLocal_273, true);
 			return 1;
 			break;
@@ -139227,7 +139227,7 @@ int func_667()//Position - 0x97F40
 		
 		case joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD"):
 			Var50 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(PLAYER::PLAYER_PED_ID(), 0f, 5f, 0f) };
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), Var50, 1f, 20000, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), Var50, 1f, 20000, 0.25f, 0, 40000f);
 			return 1;
 			break;
 		

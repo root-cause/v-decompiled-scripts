@@ -95518,7 +95518,7 @@ void func_539(var uParam0, int iParam1)//Position - 0x6EB34
 		PED::SET_PED_STEERS_AROUND_OBJECTS(uParam0->f_1735[iParam1 /*206*/].f_8, false);
 		fVar2 = 3f;
 		Var3 = { func_540(Local_407, 0f, MISC::GET_RANDOM_FLOAT_IN_RANGE(-fVar2, fVar2), MISC::GET_RANDOM_FLOAT_IN_RANGE(-fVar2, fVar2), 0f) };
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(uParam0->f_1735[iParam1 /*206*/].f_8, Var3, 3f, -1, 3.45f, true, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(uParam0->f_1735[iParam1 /*206*/].f_8, Var3, 3f, -1, 3.45f, 1, 40000f);
 	}
 }
 
@@ -95586,7 +95586,7 @@ void func_543(var uParam0, int iParam1)//Position - 0x6EE1E
 		Var2 = { Var0 + Var1 };
 		TASK::CLEAR_SEQUENCE_TASK(&iLocal_403);
 		TASK::OPEN_SEQUENCE_TASK(&iLocal_403);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var2, 3f, 20000, 3f, true, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var2, 3f, 20000, 3f, 1, 40000f);
 		TASK::TASK_ENTER_VEHICLE(0, uParam0->f_1735[iParam1 /*206*/].f_9, 20000, -1, 3f, 1, 0);
 		TASK::TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING(0, uParam0->f_1735[iParam1 /*206*/].f_9, uParam0->f_1735[iParam1 /*206*/].f_205, 786485, 0, 8, -1, -1f, false, 2f);
 		TASK::CLOSE_SEQUENCE_TASK(iLocal_403);
@@ -95797,7 +95797,7 @@ void func_554(var uParam0, int iParam1)//Position - 0x6F514
 			func_556(&Var0);
 			TASK::CLEAR_SEQUENCE_TASK(&(uLocal_405[iParam1]));
 			TASK::OPEN_SEQUENCE_TASK(&(uLocal_405[iParam1]));
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var0, 1f, 20000, 0.25f, true, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var0, 1f, 20000, 0.25f, 1, 40000f);
 			if (uParam0->f_1735[iParam1 /*206*/].f_12 == 1)
 			{
 				sVar1 = func_555(iLocal_425[0]);
@@ -102398,7 +102398,7 @@ void func_720(int* iParam0, var uParam1)//Position - 0x7A25E
 		Var1 = { ENTITY::GET_ENTITY_COORDS(uParam1->f_8, true) - Var0 * Vector(0.15f, 0.15f, 0.15f) };
 		Var2 = { Var0 + Var1 };
 		TASK::OPEN_SEQUENCE_TASK(&iVar3);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var2, 3f, 20000, 3f, true, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var2, 3f, 20000, 3f, 1, 40000f);
 		TASK::TASK_ENTER_VEHICLE(0, uParam1->f_9, 20000, -1, 3f, 1, 0);
 		TASK::TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING(0, uParam1->f_9, uParam1->f_205, 786485, 0, 8, -1, -1f, false, 2f);
 		TASK::CLOSE_SEQUENCE_TASK(iVar3);
@@ -116352,7 +116352,7 @@ void func_982(var uParam0, int iParam1)//Position - 0x8F3D2
 		{
 			TASK::CLEAR_SEQUENCE_TASK(&(uLocal_404[iParam1]));
 			TASK::OPEN_SEQUENCE_TASK(&(uLocal_404[iParam1]));
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var4, 2f, 20000, 0.25f, true, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var4, 2f, 20000, 0.25f, 1, 40000f);
 			TASK::TASK_PLAY_ANIM(0, sVar1, sVar7, 2f, -2f, -1, 1, 0f, false, false, false);
 			TASK::CLOSE_SEQUENCE_TASK(uLocal_404[iParam1]);
 			TASK::TASK_PERFORM_SEQUENCE(uParam0->f_1735[iParam1 /*206*/].f_8, uLocal_404[iParam1]);
@@ -116363,8 +116363,8 @@ void func_982(var uParam0, int iParam1)//Position - 0x8F3D2
 			{
 				TASK::CLEAR_SEQUENCE_TASK(&(uLocal_404[iParam1]));
 				TASK::OPEN_SEQUENCE_TASK(&(uLocal_404[iParam1]));
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var4, 2f, 20000, 0.25f, true, 40000f);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var6, 2f, 20000, 0.25f, true, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var4, 2f, 20000, 0.25f, 1, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var6, 2f, 20000, 0.25f, 1, 40000f);
 				TASK::TASK_PLAY_ANIM(0, sVar1, sVar7, 2f, -2f, -1, 1, 0f, false, false, false);
 				TASK::CLOSE_SEQUENCE_TASK(uLocal_404[iParam1]);
 				TASK::TASK_PERFORM_SEQUENCE(uParam0->f_1735[iParam1 /*206*/].f_8, uLocal_404[iParam1]);

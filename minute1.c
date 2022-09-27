@@ -1476,7 +1476,7 @@ void func_38(int iParam0)//Position - 0x113A
 						VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iVar0);
 					}
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_384);
-					TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(0, iVar0, 0);
+					TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(0, iVar0, false);
 					TASK::TASK_VEHICLE_DRIVE_WANDER(0, iVar0, 30f, 786468);
 					TASK::CLOSE_SEQUENCE_TASK(iLocal_384);
 					TASK::TASK_PERFORM_SEQUENCE(iParam0, iLocal_384);
@@ -41294,15 +41294,15 @@ void func_314()//Position - 0x2D566
 								{
 									if (func_312(uLocal_339[iVar0], iLocal_316, 1) < 20f)
 									{
-										TASK::TASK_GOTO_ENTITY_OFFSET_XY(uLocal_339[iVar0], iLocal_316, 20000, 0.5f, fLocal_347[iVar0], 0f, 1f, false);
+										TASK::TASK_GOTO_ENTITY_OFFSET_XY(uLocal_339[iVar0], iLocal_316, 20000, 0.5f, fLocal_347[iVar0], 0f, 1f, 0);
 									}
 									else if (func_312(uLocal_339[iVar0], iLocal_316, 1) < 40f)
 									{
-										TASK::TASK_GOTO_ENTITY_OFFSET_XY(uLocal_339[iVar0], iLocal_316, 40000, 0.5f, fLocal_347[iVar0], 0f, 1f, false);
+										TASK::TASK_GOTO_ENTITY_OFFSET_XY(uLocal_339[iVar0], iLocal_316, 40000, 0.5f, fLocal_347[iVar0], 0f, 1f, 0);
 									}
 									else
 									{
-										TASK::TASK_GOTO_ENTITY_OFFSET_XY(uLocal_339[iVar0], iLocal_316, 60000, 0.5f, fLocal_347[iVar0], 0f, 1f, false);
+										TASK::TASK_GOTO_ENTITY_OFFSET_XY(uLocal_339[iVar0], iLocal_316, 60000, 0.5f, fLocal_347[iVar0], 0f, 1f, 0);
 									}
 								}
 							}
@@ -48917,7 +48917,7 @@ void func_507()//Position - 0x37F41
 				PED::SET_PED_FLEE_ATTRIBUTES(iLocal_365, 2, false);
 				func_26(&uLocal_108, 5, iLocal_365, "MIN1DRUNKMALE", 0, 1);
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_385);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1992.058f, 3056.179f, 46.063f, 1f, 20000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1992.058f, 3056.179f, 46.063f, 1f, 20000, 0.25f, 0, 40000f);
 				TASK::TASK_WANDER_IN_AREA(0, 1994f, 3059f, 47f, 5f, 3f, 6f);
 				TASK::CLOSE_SEQUENCE_TASK(iLocal_385);
 				TASK::TASK_PERFORM_SEQUENCE(iLocal_365, iLocal_385);

@@ -37622,7 +37622,7 @@ void func_289()//Position - 0x2A1E4
 				}
 				if ((iLocal_149 == 1 && MISC::GET_GAME_TIMER() > iLocal_148 + 1000) && func_234(Local_61[3 /*9*/]))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_61[3 /*9*/], Local_156, 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_61[3 /*9*/], Local_156, 1f, -1, 0.25f, 0, 40000f);
 					iLocal_149 = 2;
 				}
 				if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 1078.845f, -796.3937f, 57.01259f, 1091.735f, -796.5964f, 60.38212f, 6f, false, true, 0))

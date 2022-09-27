@@ -39391,7 +39391,7 @@ void func_295(int iParam0)//Position - 0x2B9E4
 					{
 						if ((bLocal_84 && Var22.f_2 > 22f) || !bLocal_84)
 						{
-							TASK::TASK_CLIMB_LADDER(Local_275.f_0, 1);
+							TASK::TASK_CLIMB_LADDER(Local_275.f_0, true);
 							TASK::TASK_LOOK_AT_ENTITY(Local_274.f_0, Local_275.f_0, 8000, 0, 2);
 							iLocal_324 = 2;
 							iLocal_85 = 1;
@@ -39487,7 +39487,7 @@ void func_295(int iParam0)//Position - 0x2B9E4
 				}
 				else if (!bVar23)
 				{
-					TASK::TASK_CLIMB_LADDER(Local_275.f_0, 1);
+					TASK::TASK_CLIMB_LADDER(Local_275.f_0, true);
 				}
 				break;
 			
@@ -39779,7 +39779,7 @@ int func_302(int iParam0, var uParam1, struct<3> Param2, struct<3> Param3, int i
 					}
 					else
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Param2, 2f, 20000, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Param2, 2f, 20000, 0.25f, 0, 40000f);
 					}
 				}
 				if (bParam6)
@@ -40111,7 +40111,7 @@ void func_307(int iParam0)//Position - 0x2F1FF
 					TASK::OPEN_SEQUENCE_TASK(&iVar0);
 					if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_274.f_0, -588.0685f, -1619.129f, 32.0334f, -606.6573f, -1617.368f, 34.5106f, 5.5f, false, true, 0))
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -603.2654f, -1617.911f, 32.0105f, 2f, 20000, 1f, true, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -603.2654f, -1617.911f, 32.0105f, 2f, 20000, 1f, 1, 40000f);
 					}
 					TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD(0, Local_274.f_8, -590.2297f, -1621.969f, 33.5192f, 2f, false, 0.25f, 2f, true, 0, false, joaat("FIRING_PATTERN_FULL_AUTO"));
 					TASK::TASK_AIM_GUN_AT_COORD(0, -590.2297f, -1621.969f, 33.5192f, -1, false, false);
@@ -41442,7 +41442,7 @@ void func_307(int iParam0)//Position - 0x2F1FF
 					{
 						if ((iLocal_85 && Var27.f_2 > 22f) || !iLocal_94)
 						{
-							TASK::TASK_CLIMB_LADDER(Local_274.f_0, 1);
+							TASK::TASK_CLIMB_LADDER(Local_274.f_0, true);
 							iLocal_323 = 2;
 							iLocal_111 = 1;
 							bLocal_84 = true;
@@ -41550,7 +41550,7 @@ void func_307(int iParam0)//Position - 0x2F1FF
 				}
 				else if (!bVar28)
 				{
-					TASK::TASK_CLIMB_LADDER(Local_274.f_0, 1);
+					TASK::TASK_CLIMB_LADDER(Local_274.f_0, true);
 				}
 				if (!iLocal_132[31] && iLocal_132[32])
 				{
@@ -43894,7 +43894,7 @@ void func_310(struct<3> Param0)//Position - 0x334F5
 												{
 													if ((MISC::GET_GAME_TIMER() - Local_314[iVar0 /*25*/].f_7) > 250)
 													{
-														TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(Local_314[iVar0 /*25*/], iLocal_261, 0);
+														TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(Local_314[iVar0 /*25*/], iLocal_261, false);
 														PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_314[iVar0 /*25*/], true);
 														Local_314[iVar0 /*25*/].f_7 = MISC::GET_GAME_TIMER();
 													}
@@ -49466,7 +49466,7 @@ void func_366()//Position - 0x4007D
 							if (SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(Local_274.f_0, true), Var6) > 4f)
 							{
 								PED::SET_PED_CONFIG_FLAG(Local_274.f_0, 104, true);
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_274.f_0, Var6, 1f, 40000, 0.25f, false, 349.012f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_274.f_0, Var6, 1f, 40000, 0.25f, 0, 349.012f);
 								PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_274.f_0, true);
 								Local_274.f_3 = 0;
 							}
@@ -49487,7 +49487,7 @@ void func_366()//Position - 0x4007D
 						{
 							if (TASK::GET_SCRIPT_TASK_STATUS(Local_274.f_0, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1 && SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(Local_274.f_0, true), -613.2521f, -1619.051f, 32.0105f) > 3f)
 							{
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_274.f_0, -613.2521f, -1619.051f, 32.0105f, 1f, 40000, 0.25f, false, 349.012f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_274.f_0, -613.2521f, -1619.051f, 32.0105f, 1f, 40000, 0.25f, 0, 349.012f);
 								TASK::TASK_CLEAR_LOOK_AT(Local_274.f_0);
 							}
 						}
@@ -49515,7 +49515,7 @@ void func_366()//Position - 0x4007D
 								{
 									if (!PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false) && !PED::IS_PED_IN_ANY_VEHICLE(Local_275.f_0, false))
 									{
-										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_275.f_0, Var7, 1f, 40000, 0.25f, false, 300.2354f);
+										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_275.f_0, Var7, 1f, 40000, 0.25f, 0, 300.2354f);
 										PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_275.f_0, true);
 										Local_275.f_3 = 0;
 									}

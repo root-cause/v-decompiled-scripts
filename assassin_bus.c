@@ -16758,7 +16758,7 @@ void func_328(var uParam0, int iParam1)//Position - 0x133B9
 		if (iParam1 == 0)
 		{
 			PED::SET_PED_MOVEMENT_CLIPSET(iVar0, "move_m@casual@d", 0.25f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, 305.2689f, -768.1415f, 28.17335f, 1f, 20000, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, 305.2689f, -768.1415f, 28.17335f, 1f, 20000, 0.25f, 0, 40000f);
 			PED::FORCE_PED_MOTION_STATE(iVar0, joaat("MotionState_Walk"), false, 0, false);
 		}
 		else if (iParam1 == 1)

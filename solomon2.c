@@ -32013,7 +32013,7 @@ int func_197(int iParam0, bool bParam1)//Position - 0x21BB1
 					if (func_460(iLocal_233))
 					{
 						PED::SET_PED_MOVEMENT_CLIPSET(iLocal_233, "move_injured_generic", 0.25f);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_233, Local_210, 1f, 60000, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_233, Local_210, 1f, 60000, 0.25f, 0, 40000f);
 					}
 					if (func_460(Local_229.f_0))
 					{
@@ -43576,7 +43576,7 @@ void func_411()//Position - 0x31B92
 			if (func_460(iLocal_233))
 			{
 				PED::SET_PED_MOVEMENT_CLIPSET(iLocal_233, "move_injured_generic", 0.25f);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_233, Local_210, 0.2f, 60000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_233, Local_210, 0.2f, 60000, 0.25f, 0, 40000f);
 			}
 			RECORDING::REPLAY_STOP_EVENT();
 			func_234(0);

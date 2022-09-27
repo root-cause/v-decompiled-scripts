@@ -38759,7 +38759,7 @@ void func_337()//Position - 0x2B968
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_129);
 					if (SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(Local_298.f_9, true), Local_321) >= 10f)
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_321, 1f, 20000, 2f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_321, 1f, 20000, 2f, 0, 40000f);
 					}
 					else
 					{
@@ -38962,7 +38962,7 @@ void func_337()//Position - 0x2B968
 							}
 							PED::SET_PED_COMBAT_ATTRIBUTES(Local_298.f_9, 5, false);
 							TASK::TASK_LOOK_AT_ENTITY(Local_298.f_9, PLAYER::PLAYER_PED_ID(), -1, 0, 2);
-							TASK::TASK_HANDS_UP(Local_298.f_9, -1, PLAYER::PLAYER_PED_ID(), -1, false);
+							TASK::TASK_HANDS_UP(Local_298.f_9, -1, PLAYER::PLAYER_PED_ID(), -1, 0);
 							PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_298.f_9, true);
 							if (PED::IS_PED_IN_COMBAT(Local_298.f_9, 0))
 							{

@@ -1715,7 +1715,7 @@ void func_1(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 				}
 				else
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_67, uParam5->f_130, 1f, 20000, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_67, uParam5->f_130, 1f, 20000, 0.25f, 0, 40000f);
 				}
 				PED::SET_PED_CONFIG_FLAG(iLocal_67, 104, true);
 				PED::SET_PED_RESET_FLAG(iLocal_67, 60, true);
@@ -111516,7 +111516,7 @@ void func_840(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 				if ((uParam0->f_25 != -1 || uParam0->f_26 != -1) && !uParam0->f_1)
 				{
 					SYSTEM::SETTIMERA(0);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_67, uParam6->f_133, 1f, 20000, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_67, uParam6->f_133, 1f, 20000, 0.25f, 0, 40000f);
 					uParam0->f_4 = 16;
 					uParam0->f_3 = 1;
 				}

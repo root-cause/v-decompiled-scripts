@@ -1350,7 +1350,7 @@ void func_42(int iParam0)//Position - 0x2133
 							iVar3 = PED::GET_VEHICLE_PED_IS_IN(iVar2, false);
 							if ((!ENTITY::IS_ENTITY_DEAD(iVar0, false) && !ENTITY::IS_ENTITY_DEAD(iVar1, false)) && !ENTITY::IS_ENTITY_DEAD(iVar3, false))
 							{
-								TASK::TASK_PLANE_MISSION(iVar0, iVar1, iVar3, iVar2, ENTITY::GET_ENTITY_COORDS(iVar2, true), 6, 70f, -1f, 30f, 7.006492E-43f, 7.006492E-44f, 1);
+								TASK::TASK_PLANE_MISSION(iVar0, iVar1, iVar3, iVar2, ENTITY::GET_ENTITY_COORDS(iVar2, true), 6, 70f, -1f, 30f, 7.006492E-43f, 7.006492E-44f, true);
 								WEAPON::SET_CURRENT_PED_VEHICLE_WEAPON(iVar0, joaat("VEHICLE_WEAPON_SPACE_ROCKET"));
 								PED::SET_PED_CAN_SWITCH_WEAPON(iVar0, false);
 							}
@@ -1388,7 +1388,7 @@ void func_42(int iParam0)//Position - 0x2133
 					iVar1 = NETWORK::NET_TO_VEH(Local_94.f_3[iParam0 /*5*/]);
 					if (!ENTITY::IS_ENTITY_DEAD(iVar0, false) && !ENTITY::IS_ENTITY_DEAD(iVar1, false))
 					{
-						TASK::TASK_PLANE_MISSION(iVar0, iVar1, 0, 0, -2076.374f, 3112.294f, 33.13584f, 9, 70f, -1f, 30f, 7.006492E-43f, 7.006492E-44f, 1);
+						TASK::TASK_PLANE_MISSION(iVar0, iVar1, 0, 0, -2076.374f, 3112.294f, 33.13584f, 9, 70f, -1f, 30f, 7.006492E-43f, 7.006492E-44f, true);
 					}
 				}
 				if (func_44(iParam0, 9))

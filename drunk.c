@@ -4464,7 +4464,7 @@ void func_144()//Position - 0x4C9D
 		Local_51.f_3 = -2;
 		return;
 	}
-	TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(Local_43.f_1, iVar1, 0);
+	TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(Local_43.f_1, iVar1, false);
 	Local_52.f_0 = 9;
 	Local_51.f_3 = SYSTEM::TIMERA() + 1000;
 }
@@ -4559,7 +4559,7 @@ void func_147()//Position - 0x4D9C
 			func_145();
 			return;
 		}
-		TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(Local_43.f_1, iVar0, 0);
+		TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(Local_43.f_1, iVar0, false);
 		Local_52.f_0 = 9;
 		Local_51.f_3 = SYSTEM::TIMERA() + 1000;
 		return;

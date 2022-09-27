@@ -1083,7 +1083,7 @@ void func_2()//Position - 0x2F5
 					MISC::GET_GROUND_Z_FOR_3D_COORD(Var3, &(Var3.f_2), false, false);
 					if (func_39(iLocal_69, Var3, 0) > 0.3f)
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_69, Var3, 1f, 5000, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_69, Var3, 1f, 5000, 0.25f, 0, 40000f);
 					}
 					iLocal_52++;
 				}
@@ -4055,7 +4055,7 @@ void func_74()//Position - 0x4B94
 {
 	if (!func_113(iLocal_69, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) && func_4(PLAYER::PLAYER_PED_ID(), iLocal_69, 1) > 1f)
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_69, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), true), 2f, 0f, 0f), 2f, 20000, 0.25f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_69, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), true), 2f, 0f, 0f), 2f, 20000, 0.25f, 0, 40000f);
 	}
 }
 

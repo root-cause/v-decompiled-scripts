@@ -44157,7 +44157,7 @@ void func_431()//Position - 0x34588
 				}
 				else if (!func_36(iLocal_91, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_91, Local_324[1 /*3*/], 2f, 20000, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_91, Local_324[1 /*3*/], 2f, 20000, 0.25f, 0, 40000f);
 				}
 				break;
 			
@@ -45962,7 +45962,7 @@ void func_489()//Position - 0x370BC
 				{
 					if (func_488(2.5f, 1f, 0f, 3f))
 					{
-						TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(iLocal_91, iLocal_97, 0);
+						TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(iLocal_91, iLocal_97, false);
 						iLocal_300 = 1;
 					}
 				}
@@ -45970,7 +45970,7 @@ void func_489()//Position - 0x370BC
 				{
 					if (func_488(-2.5f, 1f, 0f, 3f))
 					{
-						TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(iLocal_91, iLocal_97, 0);
+						TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(iLocal_91, iLocal_97, false);
 						iLocal_300 = 2;
 					}
 				}
@@ -46781,7 +46781,7 @@ void func_513()//Position - 0x3834E
 				{
 					if (iLocal_302 < 23 && !func_36(iLocal_90, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")))
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_90, Local_301[iLocal_302 /*3*/], 3f, 20000, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_90, Local_301[iLocal_302 /*3*/], 3f, 20000, 0.25f, 0, 40000f);
 					}
 					if (func_398(iLocal_90, Local_301[iLocal_302 /*3*/], 4f, 1))
 					{
@@ -46792,7 +46792,7 @@ void func_513()//Position - 0x3834E
 						}
 						else
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_90, Local_301[iLocal_302 /*3*/], 3f, 20000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_90, Local_301[iLocal_302 /*3*/], 3f, 20000, 0.25f, 0, 40000f);
 						}
 					}
 				}
@@ -47424,7 +47424,7 @@ void func_535()//Position - 0x392D3
 		if (!func_36(iLocal_90, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")))
 		{
 			PED::FORCE_PED_MOTION_STATE(iLocal_90, joaat("MotionState_Sprint"), false, 0, false);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_90, Local_301[0 /*3*/], 3f, 20000, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_90, Local_301[0 /*3*/], 3f, 20000, 0.25f, 0, 40000f);
 			PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(iLocal_90, false, false);
 		}
 	}

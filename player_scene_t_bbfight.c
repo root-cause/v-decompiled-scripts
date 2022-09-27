@@ -1189,7 +1189,7 @@ int func_28(int iParam0, int iParam1)//Position - 0xBB5
 						{
 							if (0.95f < PED::GET_SYNCHRONIZED_SCENE_PHASE(Global_97771))
 							{
-								TASK::TASK_PUT_PED_DIRECTLY_INTO_MELEE((*iParam0)[iVar0], PLAYER::PLAYER_PED_ID(), 0f, -1f, 0f, false);
+								TASK::TASK_PUT_PED_DIRECTLY_INTO_MELEE((*iParam0)[iVar0], PLAYER::PLAYER_PED_ID(), 0f, -1f, 0f, 0);
 								PED::FORCE_PED_AI_AND_ANIMATION_UPDATE((*iParam0)[iVar0], false, false);
 								SYSTEM::WAIT(0);
 								(*iParam1)[iVar0] = 10;
@@ -1200,12 +1200,12 @@ int func_28(int iParam0, int iParam1)//Position - 0xBB5
 						{
 							if (0.95f < PED::GET_SYNCHRONIZED_SCENE_PHASE(Global_97771))
 							{
-								TASK::TASK_PUT_PED_DIRECTLY_INTO_MELEE((*iParam0)[iVar0], PLAYER::PLAYER_PED_ID(), 0f, -1f, 0f, false);
+								TASK::TASK_PUT_PED_DIRECTLY_INTO_MELEE((*iParam0)[iVar0], PLAYER::PLAYER_PED_ID(), 0f, -1f, 0f, 0);
 								PED::FORCE_PED_AI_AND_ANIMATION_UPDATE((*iParam0)[iVar0], false, false);
 								SYSTEM::WAIT(0);
 								if (!PED::IS_PED_INJURED((*iParam0)[iVar0]))
 								{
-									TASK::TASK_PUT_PED_DIRECTLY_INTO_MELEE(PLAYER::PLAYER_PED_ID(), (*iParam0)[iVar0], 0f, -1f, 0f, false);
+									TASK::TASK_PUT_PED_DIRECTLY_INTO_MELEE(PLAYER::PLAYER_PED_ID(), (*iParam0)[iVar0], 0f, -1f, 0f, 0);
 									SYSTEM::WAIT(0);
 								}
 								(*iParam1)[iVar0] = 10;
@@ -1271,7 +1271,7 @@ int func_28(int iParam0, int iParam1)//Position - 0xBB5
 								{
 									Local_285[iVar0 /*3*/] = { Vector(5.9049f, -717.1404f, -1908.287f) - Local_283 };
 								}
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD((*iParam0)[iVar0], Local_283 + Local_285[iVar0 /*3*/], 1f, -1, 0.25f, false, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD((*iParam0)[iVar0], Local_283 + Local_285[iVar0 /*3*/], 1f, -1, 0.25f, 0, 40000f);
 								PED::FORCE_PED_MOTION_STATE((*iParam0)[iVar0], joaat("MotionState_Walk"), false, 0, false);
 								TASK::TASK_CLEAR_LOOK_AT((*iParam0)[iVar0]);
 								SYSTEM::WAIT(0);
@@ -1351,7 +1351,7 @@ int func_28(int iParam0, int iParam1)//Position - 0xBB5
 					}
 					if (!TASK::GET_SCRIPT_TASK_STATUS((*iParam0)[iVar0], joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) == 1 && !TASK::GET_SCRIPT_TASK_STATUS((*iParam0)[iVar0], joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) == 0)
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD((*iParam0)[iVar0], Var15, 0.5f, -1, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD((*iParam0)[iVar0], Var15, 0.5f, -1, 0.25f, 0, 40000f);
 						break;
 					}
 					break;
@@ -1386,7 +1386,7 @@ int func_28(int iParam0, int iParam1)//Position - 0xBB5
 						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_279, joaat("PLAYER"));
 						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("PLAYER"), iLocal_279);
 						TASK::CLEAR_PED_TASKS((*iParam0)[iVar0]);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD((*iParam0)[iVar0], Local_283 + Local_285[iVar0 /*3*/], 0.5f, -1, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD((*iParam0)[iVar0], Local_283 + Local_285[iVar0 /*3*/], 0.5f, -1, 0.25f, 0, 40000f);
 						(*iParam1)[iVar0] = 1;
 					}
 					if (func_29((*iParam0)[iVar0], 15f))
@@ -1394,7 +1394,7 @@ int func_28(int iParam0, int iParam1)//Position - 0xBB5
 						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_279, joaat("PLAYER"));
 						PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("PLAYER"), iLocal_279);
 						TASK::CLEAR_PED_TASKS((*iParam0)[iVar0]);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD((*iParam0)[iVar0], Local_283 + Local_285[iVar0 /*3*/], 0.5f, -1, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD((*iParam0)[iVar0], Local_283 + Local_285[iVar0 /*3*/], 0.5f, -1, 0.25f, 0, 40000f);
 						(*iParam1)[iVar0] = 1;
 					}
 					break;

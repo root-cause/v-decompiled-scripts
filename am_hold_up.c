@@ -7353,7 +7353,7 @@ int func_223()//Position - 0x91D1
 							iVar1 = PLAYER::GET_PLAYER_PED(iVar0);
 						}
 					}
-					TASK::TASK_HANDS_UP(NETWORK::NET_TO_PED(Local_83.f_0), -1, iVar1, -1, true);
+					TASK::TASK_HANDS_UP(NETWORK::NET_TO_PED(Local_83.f_0), -1, iVar1, -1, 1);
 					PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(NETWORK::NET_TO_PED(Local_83.f_0), false, false);
 					PED::SET_RAGDOLL_BLOCKING_FLAGS(NETWORK::NET_TO_PED(Local_83.f_0), 16);
 					PED::SET_PED_KEEP_TASK(NETWORK::NET_TO_PED(Local_83.f_0), true);
@@ -16336,7 +16336,7 @@ void func_405()//Position - 0x16285
 	TASK::TASK_PLAY_ANIM(0, "mp_am_hold_up", "handsup_base", 4f, -4f, -1, 262193, 0f, false, false, false);
 	TASK::CLOSE_SEQUENCE_TASK(iLocal_100);
 	TASK::OPEN_SEQUENCE_TASK(&iLocal_101);
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_92, 2f, -1, 0.25f, false, fLocal_93);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_92, 2f, -1, 0.25f, 0, fLocal_93);
 	TASK::TASK_PLAY_ANIM(0, "mp_am_hold_up", "cower_intro", 8f, -4f, -1, 262144, 0f, false, false, false);
 	TASK::TASK_PLAY_ANIM(0, "mp_am_hold_up", "cower_loop", 8f, -4f, -1, 270337, 0f, false, false, false);
 	TASK::TASK_SMART_FLEE_COORD(0, Local_92, 250f, -1, true, false);
@@ -16348,7 +16348,7 @@ void func_405()//Position - 0x16285
 	TASK::TASK_SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(0, false);
 	TASK::CLOSE_SEQUENCE_TASK(iLocal_103);
 	TASK::OPEN_SEQUENCE_TASK(&iLocal_102);
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_92, 2f, -1, 0.25f, false, (fLocal_93 - 180f));
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_92, 2f, -1, 0.25f, 0, (fLocal_93 - 180f));
 	TASK::TASK_SWAP_WEAPON(0, true);
 	TASK::TASK_COMBAT_HATED_TARGETS_AROUND_PED(0, 20f, 0);
 	TASK::CLOSE_SEQUENCE_TASK(iLocal_102);

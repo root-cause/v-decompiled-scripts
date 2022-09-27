@@ -629,7 +629,7 @@ void __EntryFunction__()//Position - 0x0
 													}
 													else if (iLocal_47 == 2)
 													{
-														TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1201.476f, -790.2733f, 15.5475f, 2f, -1, 0.25f, false, 40000f);
+														TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1201.476f, -790.2733f, 15.5475f, 2f, -1, 0.25f, 0, 40000f);
 													}
 													TASK::TASK_SMART_FLEE_COORD(0, Local_59, 150f, -1, false, false);
 													TASK::CLOSE_SEQUENCE_TASK(iLocal_87);
@@ -11827,7 +11827,7 @@ void func_234()//Position - 0xFE83
 					else if (iLocal_47 == 2)
 					{
 						TASK::CLEAR_PED_TASKS(iLocal_68[iVar0]);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1201.476f, -790.2733f, 15.5475f, 2f, -1, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1201.476f, -790.2733f, 15.5475f, 2f, -1, 0.25f, 0, 40000f);
 					}
 					TASK::TASK_SMART_FLEE_COORD(0, Local_59, 150f, -1, false, false);
 					TASK::CLOSE_SEQUENCE_TASK(iLocal_87);
@@ -11865,7 +11865,7 @@ void func_234()//Position - 0xFE83
 						if (iLocal_47 == 2)
 						{
 							TASK::CLEAR_PED_TASKS(iLocal_67[iVar0]);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1201.476f, -790.2733f, 15.5475f, 2f, -1, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1201.476f, -790.2733f, 15.5475f, 2f, -1, 0.25f, 0, 40000f);
 						}
 						TASK::TASK_SMART_FLEE_COORD(0, Local_59, 150f, -1, false, false);
 						TASK::CLOSE_SEQUENCE_TASK(iLocal_87);

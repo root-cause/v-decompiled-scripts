@@ -126051,13 +126051,13 @@ void func_1141(int iParam0, var uParam1, bool bParam2, bool bParam3, bool bParam
 						{
 							VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, Global_262145.f_21791);
 						}
-						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, 1);
+						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, true);
 						break;
 					
 					default:
 						VEHICLE::SET_VEHICLE_EXPLODES_ON_HIGH_EXPLOSION_DAMAGE(iParam0, false);
 						VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, 1f);
-						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, 1);
+						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, true);
 						break;
 					}
 			}
@@ -137444,7 +137444,7 @@ int func_1302()//Position - 0x9AE06
 								}
 								if (!GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(iLocal_7622))
 								{
-									iLocal_7622 = GRAPHICS::START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY_BONE("scr_veh_plane_gen_damage", Local_2026.f_0, Local_7621, 0f, 0f, 0f, ENTITY::GET_ENTITY_BONE_INDEX_BY_NAME(Local_2026.f_0, "exhaust"), 1f, false, false, false, 1065353216, 1065353216, 1065353216, 0);
+									iLocal_7622 = GRAPHICS::START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY_BONE("scr_veh_plane_gen_damage", Local_2026.f_0, Local_7621, 0f, 0f, 0f, ENTITY::GET_ENTITY_BONE_INDEX_BY_NAME(Local_2026.f_0, "exhaust"), 1f, false, false, false, 1f, 1f, 1f, 0f);
 									GRAPHICS::SET_PARTICLE_FX_LOOPED_EVOLUTION(iLocal_7622, "damage_smoke", 0.5f, false);
 									GRAPHICS::SET_PARTICLE_FX_LOOPED_EVOLUTION(iLocal_7622, "damage_fire", 0.2f, false);
 								}

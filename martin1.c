@@ -8108,7 +8108,7 @@ void func_16(char* sParam0)//Position - 0x24D6
 									VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_3671);
 								}
 								TASK::CLEAR_PED_TASKS(iLocal_3661);
-								TASK::TASK_PLANE_MISSION(iLocal_3661, iLocal_3671, 0, 0, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iLocal_3671, 0f, 0f, 100f), 4, 30f, 1f, ENTITY::GET_ENTITY_HEADING(iLocal_3671), SYSTEM::ROUND(ENTITY::GET_ENTITY_HEIGHT_ABOVE_GROUND(iLocal_3671)), SYSTEM::ROUND(ENTITY::GET_ENTITY_HEIGHT_ABOVE_GROUND(iLocal_3671)), 1);
+								TASK::TASK_PLANE_MISSION(iLocal_3661, iLocal_3671, 0, 0, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iLocal_3671, 0f, 0f, 100f), 4, 30f, 1f, ENTITY::GET_ENTITY_HEADING(iLocal_3671), SYSTEM::ROUND(ENTITY::GET_ENTITY_HEIGHT_ABOVE_GROUND(iLocal_3671)), SYSTEM::ROUND(ENTITY::GET_ENTITY_HEIGHT_ABOVE_GROUND(iLocal_3671)), true);
 								PED::SET_PED_KEEP_TASK(iLocal_3661, true);
 							}
 						}
@@ -129114,7 +129114,7 @@ int func_747()//Position - 0x964A1
 								{
 									if (ENTITY::GET_ENTITY_ANIM_CURRENT_TIME(iLocal_3667[1], "missmartin1@exit_plane", "exit_plane_guy_a") > 0.587f)
 									{
-										TASK::TASK_WRITHE(iLocal_3667[1], PLAYER::PLAYER_PED_ID(), 25, 0, 0, -1);
+										TASK::TASK_WRITHE(iLocal_3667[1], PLAYER::PLAYER_PED_ID(), 25, 0, false, -1);
 										PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(iLocal_3667[1], true, false);
 									}
 								}

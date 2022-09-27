@@ -17382,7 +17382,7 @@ void func_315(var uParam0)//Position - 0x14D58
 						if (!func_317(Local_1310.f_0, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"), 1))
 						{
 							TASK::OPEN_SEQUENCE_TASK(&iLocal_1308);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1093.486f, -2471.669f, 13.0716f, 1f, -1, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1093.486f, -2471.669f, 13.0716f, 1f, -1, 0.25f, 0, 40000f);
 							TASK::TASK_START_SCENARIO_IN_PLACE(0, "WORLD_HUMAN_SMOKING", -1, true);
 							TASK::CLOSE_SEQUENCE_TASK(iLocal_1308);
 							TASK::TASK_PERFORM_SEQUENCE(Local_1310.f_0, iLocal_1308);

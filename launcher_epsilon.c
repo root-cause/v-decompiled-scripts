@@ -441,7 +441,7 @@ void __EntryFunction__()//Position - 0x0
 					if (!func_370(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")))
 					{
 						PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), false, 256);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), 1827.34f, 4697.22f, 38.02f, 1f, 20000, 0.25f, true, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), 1827.34f, 4697.22f, 38.02f, 1f, 20000, 0.25f, 1, 40000f);
 					}
 				}
 			}
@@ -39891,7 +39891,7 @@ void func_362(int iParam0)//Position - 0x2D99F
 			case 1:
 				if (!func_370(iParam0->f_28[0], joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0->f_28[0], Local_234[iLocal_233 /*3*/], 1f, 20000, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0->f_28[0], Local_234[iLocal_233 /*3*/], 1f, 20000, 0.25f, 0, 40000f);
 					func_495("Eps 6: Nav tasking Tom...");
 					iLocal_232 = 2;
 				}

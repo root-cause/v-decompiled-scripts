@@ -1250,7 +1250,7 @@ void func_27(bool bParam0)//Position - 0xF0C
 				Var5 = { ENTITY::GET_ENTITY_COORDS(iLocal_255, false) + Var4 };
 				if (iLocal_82 == 12)
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var5, 1f, 20000, 0.25f, false, func_67(Var5, ENTITY::GET_ENTITY_COORDS(iLocal_255, false)));
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var5, 1f, 20000, 0.25f, 0, func_67(Var5, ENTITY::GET_ENTITY_COORDS(iLocal_255, false)));
 				}
 				else
 				{
@@ -1325,7 +1325,7 @@ void func_27(bool bParam0)//Position - 0xF0C
 		if (!func_35(func_36(iLocal_82)) && !ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
 		{
 			TASK::CLEAR_PED_TASKS(PLAYER::PLAYER_PED_ID());
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), func_36(iLocal_82), 1f, -1, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), func_36(iLocal_82), 1f, -1, 0.25f, 0, 40000f);
 		}
 		if (ENTITY::DOES_ENTITY_EXIST(iLocal_255))
 		{

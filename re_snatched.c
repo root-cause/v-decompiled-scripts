@@ -1252,7 +1252,7 @@ int func_2()//Position - 0x14F0
 					{
 						TASK::TASK_LEAVE_ANY_VEHICLE(0, 0, 0);
 					}
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -3069.737f, 455.0024f, 8.6478f, 1f, 30000, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -3069.737f, 455.0024f, 8.6478f, 1f, 30000, 0.25f, 0, 40000f);
 					TASK::TASK_ACHIEVE_HEADING(0, 73.0132f, 0);
 					TASK::TASK_START_SCENARIO_IN_PLACE(0, "WORLD_HUMAN_SMOKING", 0, true);
 					TASK::CLOSE_SEQUENCE_TASK(iVar0);
@@ -3463,12 +3463,12 @@ void func_63()//Position - 0x3BCF
 				{
 					if (!PED::IS_PED_RUNNING_MOBILE_PHONE_TASK(iLocal_104))
 					{
-						TASK::TASK_USE_MOBILE_PHONE(iLocal_104, 1, 1);
+						TASK::TASK_USE_MOBILE_PHONE(iLocal_104, true, 1);
 					}
 				}
 				else if (PED::IS_PED_RUNNING_MOBILE_PHONE_TASK(iLocal_104))
 				{
-					TASK::TASK_USE_MOBILE_PHONE(iLocal_104, 0, 1);
+					TASK::TASK_USE_MOBILE_PHONE(iLocal_104, false, 1);
 				}
 				switch (iLocal_327)
 				{

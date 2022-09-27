@@ -107618,7 +107618,7 @@ void func_689()//Position - 0x8309D
 						}
 						if (SYSTEM::TIMERB() > 5000 && PED::CAN_PED_SEE_HATED_PED(iLocal_306, PLAYER::PLAYER_PED_ID()))
 						{
-							TASK::TASK_USE_MOBILE_PHONE(iLocal_306, 1, 1);
+							TASK::TASK_USE_MOBILE_PHONE(iLocal_306, true, 1);
 							iLocal_308++;
 						}
 						break;
@@ -107714,7 +107714,7 @@ void func_689()//Position - 0x8309D
 								TASK::CLEAR_PED_TASKS(iLocal_307);
 								TASK::TASK_LOOK_AT_ENTITY(iLocal_307, PLAYER::PLAYER_PED_ID(), -1, 2048, 2);
 								TASK::TASK_TURN_PED_TO_FACE_ENTITY(iLocal_307, PLAYER::PLAYER_PED_ID(), 0);
-								TASK::TASK_USE_MOBILE_PHONE(iLocal_307, 1, 1);
+								TASK::TASK_USE_MOBILE_PHONE(iLocal_307, true, 1);
 								iLocal_309 = 1;
 							}
 						}

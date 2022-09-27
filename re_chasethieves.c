@@ -32227,12 +32227,12 @@ void func_223(int iParam0)//Position - 0x21B12
 		{
 			if (!PED::IS_PED_RUNNING_MOBILE_PHONE_TASK(iLocal_83))
 			{
-				TASK::TASK_USE_MOBILE_PHONE(iLocal_83, 1, 1);
+				TASK::TASK_USE_MOBILE_PHONE(iLocal_83, true, 1);
 			}
 		}
 		else if (PED::IS_PED_RUNNING_MOBILE_PHONE_TASK(iLocal_83))
 		{
-			TASK::TASK_USE_MOBILE_PHONE(iLocal_83, 0, 1);
+			TASK::TASK_USE_MOBILE_PHONE(iLocal_83, false, 1);
 		}
 	}
 }
@@ -32886,7 +32886,7 @@ void func_247()//Position - 0x22776
 			TASK::OPEN_SEQUENCE_TASK(&iLocal_136);
 			if (!ENTITY::IS_ENTITY_AT_COORD(iLocal_83, Local_131, 1f, 1f, 2f, false, true, 0))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_131, 1f, 20000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_131, 1f, 20000, 0.25f, 0, 40000f);
 			}
 			TASK::TASK_START_SCENARIO_IN_PLACE(0, "WORLD_HUMAN_STAND_MOBILE", 0, true);
 			TASK::CLOSE_SEQUENCE_TASK(iLocal_136);
@@ -32909,7 +32909,7 @@ void func_247()//Position - 0x22776
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_136);
 				if (!ENTITY::IS_ENTITY_AT_COORD(iLocal_83, OBJECT::GET_PICKUP_COORDS(iLocal_520), 1f, 1f, 2f, false, true, 0))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, OBJECT::GET_PICKUP_COORDS(iLocal_520), 2f, 20000, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, OBJECT::GET_PICKUP_COORDS(iLocal_520), 2f, 20000, 0.25f, 0, 40000f);
 				}
 				TASK::TASK_TURN_PED_TO_FACE_COORD(0, OBJECT::GET_PICKUP_COORDS(iLocal_520), 0);
 				TASK::TASK_PLAY_ANIM(0, sLocal_521, "pickup_low", 8f, -8f, -1, 0, 0f, false, false, false);

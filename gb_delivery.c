@@ -83188,13 +83188,13 @@ void func_597(int iParam0, var uParam1, bool bParam2, bool bParam3, bool bParam4
 						{
 							VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, Global_262145.f_21791);
 						}
-						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, 1);
+						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, true);
 						break;
 					
 					default:
 						VEHICLE::SET_VEHICLE_EXPLODES_ON_HIGH_EXPLOSION_DAMAGE(iParam0, false);
 						VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, 1f);
-						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, 1);
+						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, true);
 						break;
 					}
 			}
@@ -99334,7 +99334,7 @@ void func_853(int iParam0)//Position - 0x7D03D
 			VEHICLE::SET_VEHICLE_NO_EXPLOSION_DAMAGE_FROM_DRIVER(iParam0, !func_824());
 			if (iVar1 == joaat("ruiner2"))
 			{
-				VEHICLE::SET_VEHICLE_WEAPON_CAN_TARGET_OBJECTS(iParam0, 1);
+				VEHICLE::SET_VEHICLE_WEAPON_CAN_TARGET_OBJECTS(iParam0, true);
 			}
 			if (iVar1 == joaat("blazer5"))
 			{
@@ -99417,7 +99417,7 @@ void func_853(int iParam0)//Position - 0x7D03D
 		}
 		if (BitTest(Global_4718592.f_18, 24) || (func_854() && NETWORK::NETWORK_IS_ACTIVITY_SESSION()))
 		{
-			VEHICLE::SET_BIKE_EASY_TO_LAND(iParam0, 1);
+			VEHICLE::SET_BIKE_EASY_TO_LAND(iParam0, true);
 		}
 	}
 	if (bVar0)
@@ -149569,7 +149569,7 @@ void func_1525(var uParam0, int iParam1)//Position - 0xC71AF
 					{
 						ENTITY::SET_ENTITY_COORDS(uParam0->f_11.f_588[0], func_1528(uParam0), true, false, false, true);
 						ENTITY::SET_ENTITY_HEADING(uParam0->f_11.f_588[0], func_1527(uParam0));
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(uParam0->f_11.f_588[0], func_1526(uParam0), 1f, -1, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(uParam0->f_11.f_588[0], func_1526(uParam0), 1f, -1, 0.25f, 0, 40000f);
 					}
 					break;
 			}
@@ -151321,7 +151321,7 @@ void func_1573(int iParam0, struct<3> Param1)//Position - 0xC9BEE
 	iVar0 = 0;
 	TASK::OPEN_SEQUENCE_TASK(&iVar0);
 	TASK::TASK_LEAVE_ANY_VEHICLE(0, 0, 0);
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Param1, 1f, -1, 0.25f, false, 40000f);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Param1, 1f, -1, 0.25f, 0, 40000f);
 	TASK::CLOSE_SEQUENCE_TASK(iVar0);
 	TASK::TASK_PERFORM_SEQUENCE(iParam0, iVar0);
 	TASK::CLEAR_SEQUENCE_TASK(&iVar0);
@@ -161699,7 +161699,7 @@ void func_1695(var uParam0, int iParam1)//Position - 0xD9027
 						if (func_11(uParam0->f_11.f_588[0]))
 						{
 							ENTITY::SET_ENTITY_COORDS(uParam0->f_11.f_588[0], 1740.001f, 3280.04f, 40.0914f, true, true, false, true);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(uParam0->f_11.f_588[0], 1732.421f, 3306.705f, 40.2235f, 1f, 20000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(uParam0->f_11.f_588[0], 1732.421f, 3306.705f, 40.2235f, 1f, 20000, 0.25f, 0, 40000f);
 						}
 					}
 					break;
@@ -165542,7 +165542,7 @@ void func_1790(var uParam0)//Position - 0xDF5E9
 							TASK::OPEN_SEQUENCE_TASK(&iVar3);
 							TASK::TASK_LEAVE_ANY_VEHICLE(0, 0, 0);
 							Var5 = { func_1791(uParam0->f_2) };
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var5, 1f, -1, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var5, 1f, -1, 0.25f, 0, 40000f);
 							TASK::CLOSE_SEQUENCE_TASK(iVar3);
 							TASK::TASK_PERFORM_SEQUENCE(iVar0, iVar3);
 							TASK::CLEAR_SEQUENCE_TASK(&iVar3);
@@ -174631,7 +174631,7 @@ void func_1850(var uParam0)//Position - 0xEF7A8
 						TASK::OPEN_SEQUENCE_TASK(&iVar3);
 						TASK::TASK_LEAVE_ANY_VEHICLE(0, 0, 0);
 						Var5 = { func_1851(uParam0->f_2) };
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var5, 1f, -1, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var5, 1f, -1, 0.25f, 0, 40000f);
 						TASK::CLOSE_SEQUENCE_TASK(iVar3);
 						TASK::TASK_PERFORM_SEQUENCE(iVar0, iVar3);
 						TASK::CLEAR_SEQUENCE_TASK(&iVar3);

@@ -37789,7 +37789,7 @@ void func_300(int iParam0)//Position - 0x297D6
 					{
 						Local_95[Local_93[iParam0 /*36*/].f_27 /*5*/].f_3 = 1;
 					}
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_93[iParam0 /*36*/], Local_95[Local_93[iParam0 /*36*/].f_27 /*5*/], 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_93[iParam0 /*36*/], Local_95[Local_93[iParam0 /*36*/].f_27 /*5*/], 1f, -1, 0.25f, 0, 40000f);
 					Local_93[iParam0 /*36*/].f_26 = Local_93[iParam0 /*36*/].f_25;
 					Local_93[iParam0 /*36*/].f_16 = 7;
 				}
@@ -39417,7 +39417,7 @@ void func_346()//Position - 0x2BF9F
 						Var0 = { Local_972 };
 						fVar1 = fLocal_973;
 					}
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_93[4 /*36*/], Var0, 2f, -1, 0.25f, false, fVar1);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_93[4 /*36*/], Var0, 2f, -1, 0.25f, 0, fVar1);
 					Local_93[4 /*36*/].f_27 = 0;
 					Local_95[0 /*5*/] = { Var0 };
 					Local_93[4 /*36*/].f_16 = 9;
@@ -44935,8 +44935,8 @@ void func_433()//Position - 0x3385A
 					Local_93[3 /*36*/].f_27 = 0;
 					Local_95[0 /*5*/] = { Local_968 };
 					Local_93[3 /*36*/].f_16 = 9;
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_93[2 /*36*/], Local_966, 2f, -1, 0.25f, false, fLocal_967);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_93[3 /*36*/], Local_968, 2f, -1, 0.25f, false, fLocal_969);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_93[2 /*36*/], Local_966, 2f, -1, 0.25f, 0, fLocal_967);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_93[3 /*36*/], Local_968, 2f, -1, 0.25f, 0, fLocal_969);
 					iLocal_710 = 13;
 					iLocal_711 = 0;
 				}
@@ -45214,7 +45214,7 @@ void func_438()//Position - 0x33D04
 		case 2:
 			PED::SET_PED_CAN_USE_AUTO_CONVERSATION_LOOKAT(PLAYER::PLAYER_PED_ID(), false);
 			TASK::TASK_LOOK_AT_COORD(PLAYER::PLAYER_PED_ID(), Local_964[1 /*3*/], -1, 0, 2);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_93[1 /*36*/], Local_965, 2f, -1, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_93[1 /*36*/], Local_965, 2f, -1, 0.25f, 0, 40000f);
 			iLocal_934 = MISC::GET_GAME_TIMER() + 3000;
 			iLocal_710 = 9;
 			iLocal_711 = 0;
@@ -47707,7 +47707,7 @@ void func_506()//Position - 0x36F9D
 						if (MISC::ARE_STRINGS_EQUAL(&Local_950, "HT2_HUNT_3") || !func_9())
 						{
 							func_516(iLocal_939, 1);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_939, -605.36f, 5856.549f, 22.7741f, 1f, 60000, 0.25f, false, 239.6328f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_939, -605.36f, 5856.549f, 22.7741f, 1f, 60000, 0.25f, 0, 239.6328f);
 							PED::SET_PED_CAN_RAGDOLL_FROM_PLAYER_IMPACT(iLocal_939, false);
 							iLocal_712 = 4;
 						}
@@ -48006,7 +48006,7 @@ void func_506()//Position - 0x36F9D
 								func_516(iLocal_939, 0);
 								if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_939, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1)
 								{
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_939, ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 2f, 60000, 0.25f, false, fLocal_923);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_939, ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 2f, 60000, 0.25f, 0, fLocal_923);
 								}
 								sLocal_944 = func_508(1);
 								iLocal_987 = 1;
@@ -48255,7 +48255,7 @@ void func_506()//Position - 0x36F9D
 					}
 					else if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_939, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1)
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_939, Local_93[2 /*36*/].f_17, 1f, 60000, 0.25f, false, fLocal_923);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_939, Local_93[2 /*36*/].f_17, 1f, 60000, 0.25f, 0, fLocal_923);
 					}
 				}
 			}
@@ -48268,7 +48268,7 @@ void func_506()//Position - 0x36F9D
 				TASK::TASK_CLEAR_LOOK_AT(iLocal_939);
 				func_11(&iLocal_882);
 				func_516(iLocal_939, 0);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_939, Local_952, 1f, 60000, 0.25f, false, fLocal_923);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_939, Local_952, 1f, 60000, 0.25f, 0, fLocal_923);
 				iLocal_712 = 14;
 			}
 			break;
@@ -48320,7 +48320,7 @@ void func_506()//Position - 0x36F9D
 					}
 					else if (SYSTEM::TIMERA() > 1750)
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_939, Local_952, 1f, 60000, 0.25f, false, fLocal_923);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_939, Local_952, 1f, 60000, 0.25f, 0, fLocal_923);
 						iLocal_712 = 14;
 					}
 				}
@@ -48332,7 +48332,7 @@ void func_506()//Position - 0x36F9D
 			}
 			else if (SYSTEM::TIMERA() > 500)
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_939, Local_952, 1f, 60000, 0.25f, false, fLocal_923);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_939, Local_952, 1f, 60000, 0.25f, 0, fLocal_923);
 				iLocal_712 = 14;
 			}
 			break;

@@ -56758,7 +56758,7 @@ void func_628()//Position - 0x39FF6
 				iVar0 = ENTITY::GET_ENTITY_MODEL(iVar1);
 				if (func_592(iVar0))
 				{
-					VEHICLE::SET_BIKE_EASY_TO_LAND(iVar1, 1);
+					VEHICLE::SET_BIKE_EASY_TO_LAND(iVar1, true);
 					func_644(3);
 					if (func_646(4))
 					{
@@ -70839,7 +70839,7 @@ void func_881()//Position - 0x48C56
 		iVar1 = ENTITY::GET_ENTITY_MODEL(iVar0);
 		if (func_592(iVar1))
 		{
-			VEHICLE::SET_BIKE_EASY_TO_LAND(iVar0, 0);
+			VEHICLE::SET_BIKE_EASY_TO_LAND(iVar0, false);
 		}
 	}
 	func_644(0);

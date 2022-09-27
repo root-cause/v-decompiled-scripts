@@ -2108,7 +2108,7 @@ int func_35(struct<6> Param0, int iParam1, var uParam2)//Position - 0x24FF
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_48);
 					TASK::TASK_STAND_STILL(0, 700);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_222[0 /*3*/], 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_222[0 /*3*/], 1f, -1, 0.25f, 0, 40000f);
 					TASK::TASK_ACHIEVE_HEADING(0, fLocal_223[0], 0);
 					TASK::TASK_PLAY_ANIM_ADVANCED(0, Param0.f_5, "sit_down_idle_01", Local_222[0 /*3*/], 0f, 0f, fLocal_223[0], 1000f, -4f, -1, 1, 0f, 2, 0);
 					TASK::CLOSE_SEQUENCE_TASK(iLocal_48);
@@ -2120,7 +2120,7 @@ int func_35(struct<6> Param0, int iParam1, var uParam2)//Position - 0x24FF
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_48);
 					TASK::TASK_STAND_STILL(0, 200);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_222[1 /*3*/], 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_222[1 /*3*/], 1f, -1, 0.25f, 0, 40000f);
 					TASK::TASK_WANDER_STANDARD(0, 40000f, 0);
 					TASK::CLOSE_SEQUENCE_TASK(iLocal_48);
 					TASK::TASK_PERFORM_SEQUENCE((*uParam2)[1], iLocal_48);
@@ -2898,7 +2898,7 @@ int func_60(int iParam0, var uParam1)//Position - 0x3125
 				if (!PED::IS_PED_INJURED(iParam0))
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_48);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_224, 2f, 20000, 0.25f, false, 32.2195f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_224, 2f, 20000, 0.25f, 0, 32.2195f);
 					TASK::TASK_LOOK_AT_ENTITY(0, PLAYER::PLAYER_PED_ID(), -1, 1024, 2);
 					TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, PLAYER::PLAYER_PED_ID(), -1);
 					TASK::CLOSE_SEQUENCE_TASK(iLocal_48);
@@ -2967,7 +2967,7 @@ int func_60(int iParam0, var uParam1)//Position - 0x3125
 			{
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_48);
 				TASK::TASK_STAND_STILL(0, 500);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_224, 2f, 20000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_224, 2f, 20000, 0.25f, 0, 40000f);
 				TASK::CLOSE_SEQUENCE_TASK(iLocal_48);
 				TASK::CLEAR_SEQUENCE_TASK(&iLocal_48);
 				iLocal_48 = 0;
@@ -2997,7 +2997,7 @@ void func_61(int iParam0)//Position - 0x3809
 	{
 		TASK::CLEAR_PED_TASKS(iParam0);
 		TASK::OPEN_SEQUENCE_TASK(&iLocal_48);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1286.037f, -1623.207f, 53.2297f, 2f, -1, 0.25f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1286.037f, -1623.207f, 53.2297f, 2f, -1, 0.25f, 0, 40000f);
 		TASK::TASK_COWER(0, -1);
 		TASK::CLOSE_SEQUENCE_TASK(iLocal_48);
 		TASK::TASK_PERFORM_SEQUENCE(iParam0, iLocal_48);

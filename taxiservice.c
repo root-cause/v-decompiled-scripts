@@ -4196,7 +4196,7 @@ void func_81()//Position - 0x3E2E
 			{
 				Var0 = { func_82(Global_112424 - Var0) };
 				Var0 = { (Global_112424 + (Var0.f_0 * IntToFloat((100 - SYSTEM::ROUND(fVar1))))), (Global_112424.f_1 + (Var0.f_1 * IntToFloat((100 - SYSTEM::ROUND(fVar1))))), Global_112424.f_2 };
-				PATHFIND::GET_CLOSEST_VEHICLE_NODE_WITH_HEADING(Var0, &Global_112424, &Global_112430, 1, 3f, 0);
+				PATHFIND::GET_CLOSEST_VEHICLE_NODE_WITH_HEADING(Var0, &Global_112424, &Global_112430, 1, 3f, 0f);
 				ENTITY::SET_ENTITY_COORDS(Global_112417, Global_112424, true, false, false, true);
 				ENTITY::SET_ENTITY_HEADING(Global_112417, Global_112430);
 			}
@@ -5471,7 +5471,7 @@ void func_111(float fParam0)//Position - 0x5F09
 		if (func_112(&iVar0, Var3, fParam0))
 		{
 			bVar1 = false;
-			if (PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE(Global_112424, iVar2, &Var3, 1, 1077936128, 0))
+			if (PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE(Global_112424, iVar2, &Var3, 1, 3f, 0f))
 			{
 				iVar2++;
 			}

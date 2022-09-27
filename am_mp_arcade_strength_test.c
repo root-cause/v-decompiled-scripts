@@ -6523,7 +6523,7 @@ void func_239(float fParam0)//Position - 0x7599
 int func_240(struct<18> Param0)//Position - 0x7623
 {
 	struct<3> Var0[2];
-	int iVar1;
+	char* sVar1;
 	struct<3> Var2;
 	struct<3> Var3;
 	struct<10> Var4;
@@ -6531,15 +6531,15 @@ int func_240(struct<18> Param0)//Position - 0x7623
 	if (!TASK::IS_TASK_MOVE_NETWORK_ACTIVE(PLAYER::PLAYER_PED_ID()))
 	{
 		func_253(14, &Var0);
-		iVar1 = func_219();
+		sVar1 = func_219();
 		Var2 = { 0f, 0f, ENTITY::GET_ENTITY_HEADING(Local_149.f_0) };
 		Var3 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(Local_149.f_0, Var0[0 /*3*/]) };
 		Var4.f_6 = -1082130432;
 		Var4.f_9 = -1082130432;
 		Var4.f_0 = func_252();
 		Var4.f_1 = func_251();
-		TASK::TASK_MOVE_NETWORK_ADVANCED_BY_NAME_WITH_INIT_PARAMS(PLAYER::PLAYER_PED_ID(), "Heist_Arcade_Strength_Hammer", &Var4, Var3, Var2, 2, 0.5f, 0, iVar1, 4);
-		PED::PLAY_FACIAL_ANIM(PLAYER::PLAYER_PED_ID(), func_216(0), iVar1);
+		TASK::TASK_MOVE_NETWORK_ADVANCED_BY_NAME_WITH_INIT_PARAMS(PLAYER::PLAYER_PED_ID(), "Heist_Arcade_Strength_Hammer", &Var4, Var3, Var2, 2, 0.5f, false, sVar1, 4);
+		PED::PLAY_FACIAL_ANIM(PLAYER::PLAYER_PED_ID(), func_216(0), sVar1);
 		ENTITY::FREEZE_ENTITY_POSITION(PLAYER::PLAYER_PED_ID(), true);
 		PHYSICS::SET_USE_KINEMATIC_PHYSICS(PLAYER::PLAYER_PED_ID(), true);
 		if (ENTITY::DOES_ENTITY_EXIST(Param0.f_2[0]) && NETWORK::NETWORK_HAS_CONTROL_OF_ENTITY(Param0.f_2[0]))
@@ -8520,8 +8520,8 @@ void func_332(int* iParam0, var uParam1, var uParam2, int iParam3, int iParam4, 
 	int iVar0;
 	bool bVar1;
 	float fVar2;
-	int iVar3;
-	int iVar4;
+	char* sVar3;
+	char* sVar4;
 	struct<2> Var5;
 	struct<3> Var6;
 	struct<3> Var7;
@@ -8537,8 +8537,8 @@ void func_332(int* iParam0, var uParam1, var uParam2, int iParam3, int iParam4, 
 	PAD::DISABLE_CONTROL_ACTION(0, 47, true);
 	iVar0 = PLAYER::PLAYER_PED_ID();
 	bVar1 = NETWORK::NETWORK_IS_HOST_OF_THIS_SCRIPT();
-	iVar3 = func_639();
-	iVar4 = func_638();
+	sVar3 = func_639();
+	sVar4 = func_638();
 	if (BitTest(*iParam0, 8))
 	{
 		Var6 = { func_637() };
@@ -8592,12 +8592,12 @@ void func_332(int* iParam0, var uParam1, var uParam2, int iParam3, int iParam4, 
 			if (BitTest(*iParam0, 8))
 			{
 				Var8.f_0 = 1328920460;
-				TASK::TASK_MOVE_NETWORK_ADVANCED_BY_NAME_WITH_INIT_PARAMS(iVar0, "Heist3_minigame_drill_vault", &Var8, Var7, 0f, 0f, fVar2, 2, 0.5f, 0, iVar4, 4);
+				TASK::TASK_MOVE_NETWORK_ADVANCED_BY_NAME_WITH_INIT_PARAMS(iVar0, "Heist3_minigame_drill_vault", &Var8, Var7, 0f, 0f, fVar2, 2, 0.5f, false, sVar4, 4);
 			}
 			else
 			{
 				Var8.f_0 = -1853844820;
-				TASK::TASK_MOVE_NETWORK_ADVANCED_BY_NAME_WITH_INIT_PARAMS(iVar0, "Heist3_minigame_drill_vault", &Var8, Var7, 0f, 0f, fVar2, 2, 0.5f, 0, iVar3, 4);
+				TASK::TASK_MOVE_NETWORK_ADVANCED_BY_NAME_WITH_INIT_PARAMS(iVar0, "Heist3_minigame_drill_vault", &Var8, Var7, 0f, 0f, fVar2, 2, 0.5f, false, sVar3, 4);
 			}
 			ENTITY::FREEZE_ENTITY_POSITION(iVar0, true);
 			PHYSICS::SET_USE_KINEMATIC_PHYSICS(iVar0, true);
@@ -8612,22 +8612,22 @@ void func_332(int* iParam0, var uParam1, var uParam2, int iParam3, int iParam4, 
 					ENTITY::FREEZE_ENTITY_POSITION(NETWORK::NET_TO_OBJ((*uParam1)[1]), true);
 					if (BitTest(*iParam0, 8))
 					{
-						NETWORK::NETWORK_ADD_ENTITY_TO_SYNCHRONISED_SCENE(NETWORK::NET_TO_OBJ((*uParam1)[1]), iParam0->f_5, iVar4, "bag_intro", 1000f, -1.5f, 265);
-						NETWORK::NETWORK_ADD_SYNCHRONISED_SCENE_CAMERA(iParam0->f_5, iVar4, "intro_cam");
+						NETWORK::NETWORK_ADD_ENTITY_TO_SYNCHRONISED_SCENE(NETWORK::NET_TO_OBJ((*uParam1)[1]), iParam0->f_5, sVar4, "bag_intro", 1000f, -1.5f, 265);
+						NETWORK::NETWORK_ADD_SYNCHRONISED_SCENE_CAMERA(iParam0->f_5, sVar4, "intro_cam");
 					}
 					else
 					{
-						NETWORK::NETWORK_ADD_ENTITY_TO_SYNCHRONISED_SCENE(NETWORK::NET_TO_OBJ((*uParam1)[1]), iParam0->f_5, iVar3, "bag_intro", 1000f, -1.5f, 265);
-						NETWORK::NETWORK_ADD_SYNCHRONISED_SCENE_CAMERA(iParam0->f_5, iVar3, "intro_cam");
+						NETWORK::NETWORK_ADD_ENTITY_TO_SYNCHRONISED_SCENE(NETWORK::NET_TO_OBJ((*uParam1)[1]), iParam0->f_5, sVar3, "bag_intro", 1000f, -1.5f, 265);
+						NETWORK::NETWORK_ADD_SYNCHRONISED_SCENE_CAMERA(iParam0->f_5, sVar3, "intro_cam");
 					}
 				}
 				else if (BitTest(*iParam0, 8))
 				{
-					NETWORK::NETWORK_ADD_SYNCHRONISED_SCENE_CAMERA(iParam0->f_5, iVar4, "intro_nobag_cam");
+					NETWORK::NETWORK_ADD_SYNCHRONISED_SCENE_CAMERA(iParam0->f_5, sVar4, "intro_nobag_cam");
 				}
 				else
 				{
-					NETWORK::NETWORK_ADD_SYNCHRONISED_SCENE_CAMERA(iParam0->f_5, iVar3, "intro_nobag_cam");
+					NETWORK::NETWORK_ADD_SYNCHRONISED_SCENE_CAMERA(iParam0->f_5, sVar3, "intro_nobag_cam");
 				}
 				NETWORK::NETWORK_FORCE_LOCAL_USE_OF_SYNCED_SCENE_CAMERA(iParam0->f_5);
 				NETWORK::NETWORK_START_SYNCHRONISED_SCENE(iParam0->f_5);

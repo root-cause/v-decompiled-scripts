@@ -43492,7 +43492,7 @@ void func_398(int iParam0, int iParam1)//Position - 0x3033F
 	func_364(&Local_1000, 1);
 }
 
-void func_399(int iParam0, struct<3> Param1, float fParam2, int iParam3, int iParam4, float fParam5, float fParam6, bool bParam7)//Position - 0x30AC3
+void func_399(int iParam0, struct<3> Param1, float fParam2, int iParam3, int iParam4, float fParam5, float fParam6, int iParam7)//Position - 0x30AC3
 {
 	int iVar0;
 	
@@ -43502,7 +43502,7 @@ void func_399(int iParam0, struct<3> Param1, float fParam2, int iParam3, int iPa
 		TASK::TASK_SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(0, true);
 		if (iParam4 == 1)
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Param1, fParam2, iParam3, fParam6, bParam7, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Param1, fParam2, iParam3, fParam6, iParam7, 40000f);
 		}
 		else
 		{
@@ -108635,7 +108635,7 @@ int func_691(int iParam0)//Position - 0x82BB8
 						Local_92.f_10 = MISC::GET_GAME_TIMER();
 						if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), -1038.07f, -2738.51f, 19.17f, 1f, 20000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), -1038.07f, -2738.51f, 19.17f, 1f, 20000, 0.25f, 0, 40000f);
 						}
 					}
 					else if (CAM::IS_CAM_RENDERING(iLocal_469))
@@ -109940,15 +109940,15 @@ int func_709(var uParam0)//Position - 0x84741
 								TASK::OPEN_SEQUENCE_TASK(&iVar0);
 								if (CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(0) == 4)
 								{
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -809.27f, 179.55f, 71.15f, 2f, 20000, 0.25f, true, 40000f);
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -811.32f, 180.11f, 71.15f, 2f, 20000, 0.25f, true, 40000f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -809.27f, 179.55f, 71.15f, 2f, 20000, 0.25f, 1, 40000f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -811.32f, 180.11f, 71.15f, 2f, 20000, 0.25f, 1, 40000f);
 									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -813.92f, 179.22f, 71.16f, 2f, 20000, 0.25f, 512, 111.3824f);
 								}
 								else
 								{
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -809.27f, 179.55f, 71.15f, 2f, 20000, 0.25f, true, 40000f);
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -811.32f, 180.11f, 71.15f, 2f, 20000, 0.25f, true, 40000f);
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -813.17f, 179.48f, 71.16f, 2f, 20000, 0.25f, true, 40000f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -809.27f, 179.55f, 71.15f, 2f, 20000, 0.25f, 1, 40000f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -811.32f, 180.11f, 71.15f, 2f, 20000, 0.25f, 1, 40000f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -813.17f, 179.48f, 71.16f, 2f, 20000, 0.25f, 1, 40000f);
 									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -813.92f, 179.22f, 71.16f, 2f, 20000, 0.25f, 8192, 40000f);
 								}
 								TASK::CLOSE_SEQUENCE_TASK(iVar0);

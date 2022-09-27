@@ -1453,7 +1453,7 @@ void func_74(int iParam0)//Position - 0x1400
 				{
 					iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(0, 6);
 					func_75(iVar1, &Var0);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), Var0, 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), Var0, 1f, -1, 0.25f, 0, 40000f);
 					MISC::SET_BIT(&(Local_112.f_1), 1);
 				}
 			}

@@ -815,7 +815,7 @@ void __EntryFunction__()//Position - 0x0
 												{
 													TASK::OPEN_SEQUENCE_TASK(&iLocal_102);
 													TASK::TASK_LOOK_AT_ENTITY(0, PLAYER::PLAYER_PED_ID(), 5000, 2052, 2);
-													TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_68, 1f, -1, 0.25f, false, 38.9844f);
+													TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_68, 1f, -1, 0.25f, 0, 38.9844f);
 													TASK::TASK_START_SCENARIO_IN_PLACE(0, "WORLD_HUMAN_SMOKING", 0, true);
 													TASK::CLOSE_SEQUENCE_TASK(iLocal_102);
 													TASK::TASK_PERFORM_SEQUENCE(iLocal_58, iLocal_102);
@@ -2156,7 +2156,7 @@ void func_34()//Position - 0x211E
 			{
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_102);
 				TASK::TASK_LOOK_AT_ENTITY(0, PLAYER::PLAYER_PED_ID(), 5000, 2052, 2);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_68, 1f, -1, 0.25f, false, 38.9844f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_68, 1f, -1, 0.25f, 0, 38.9844f);
 				TASK::TASK_START_SCENARIO_IN_PLACE(0, "WORLD_HUMAN_SMOKING", 0, true);
 				TASK::CLOSE_SEQUENCE_TASK(iLocal_102);
 				TASK::TASK_PERFORM_SEQUENCE(iLocal_58, iLocal_102);

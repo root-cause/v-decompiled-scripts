@@ -2765,12 +2765,12 @@ void func_52()//Position - 0x2E04
 	{
 		if ((((((func_56("REBU2_LV2_2") || func_56("REBU2_LV2_3")) || func_56("REBU2_LV2_4")) || func_56("REBU2_LV2_5")) || func_56("REBU2_LV2_6")) || func_56("REBU2_LV2_7")) || func_56("REBU2_LV2_8"))
 		{
-			TASK::TASK_USE_MOBILE_PHONE(iLocal_51, 1, 1);
+			TASK::TASK_USE_MOBILE_PHONE(iLocal_51, true, 1);
 			TASK::TASK_CLEAR_LOOK_AT(iLocal_51);
 		}
 		if (func_56("REBU2_LV2_9") || iLocal_66 > 1)
 		{
-			TASK::TASK_USE_MOBILE_PHONE(iLocal_51, 0, 1);
+			TASK::TASK_USE_MOBILE_PHONE(iLocal_51, false, 1);
 		}
 	}
 	if (func_70() && !func_12())
@@ -3255,7 +3255,7 @@ void func_63()//Position - 0x391B
 				PED::REMOVE_PED_FROM_GROUP(iLocal_51);
 				if (ENTITY::IS_ENTITY_AT_COORD(iLocal_51, Local_113, 100f, 100f, 100f, false, true, 0))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_51, 1740.797f, 4648.756f, 42.6529f, 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_51, 1740.797f, 4648.756f, 42.6529f, 1f, -1, 0.25f, 0, 40000f);
 					PED::SET_PED_KEEP_TASK(iLocal_51, true);
 				}
 				func_110();
@@ -3294,7 +3294,7 @@ void func_64()//Position - 0x39E0
 				PED::REMOVE_PED_FROM_GROUP(iLocal_51);
 				if (ENTITY::IS_ENTITY_AT_COORD(iLocal_51, Local_113, 100f, 100f, 100f, false, true, 0))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_51, Local_113, 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_51, Local_113, 1f, -1, 0.25f, 0, 40000f);
 					PED::SET_PED_KEEP_TASK(iLocal_51, true);
 				}
 				else

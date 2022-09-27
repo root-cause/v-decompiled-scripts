@@ -662,7 +662,7 @@ void func_2()//Position - 0x325
 			{
 				PED::SET_PED_CONFIG_FLAG(iLocal_222[0], 185, true);
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_243);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, ENTITY::GET_ENTITY_COORDS(iLocal_226, false) + Vector(0f, 5f, 0f), 1f, -1, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, ENTITY::GET_ENTITY_COORDS(iLocal_226, false) + Vector(0f, 5f, 0f), 1f, -1, 0.25f, 0, 40000f);
 				TASK::TASK_SWAP_WEAPON(0, false);
 				TASK::TASK_PLAY_ANIM(0, "random@countrysiderobbery", "idle_a", 2f, -2f, -1, 0, 0f, false, false, false);
 				TASK::TASK_PLAY_ANIM(0, "random@countrysiderobbery", "idle_d", 2f, -2f, -1, 1, 0f, false, false, false);
@@ -676,7 +676,7 @@ void func_2()//Position - 0x325
 				PED::SET_PED_CONFIG_FLAG(iLocal_222[1], 185, true);
 				WEAPON::SET_CURRENT_PED_WEAPON(iLocal_222[1], joaat("WEAPON_UNARMED"), true);
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_243);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, ENTITY::GET_ENTITY_COORDS(iLocal_223, false) + Vector(0f, 1f, 0f), 2f, -1, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, ENTITY::GET_ENTITY_COORDS(iLocal_223, false) + Vector(0f, 1f, 0f), 2f, -1, 0.25f, 0, 40000f);
 				TASK::TASK_LOOK_AT_COORD(0, ENTITY::GET_ENTITY_COORDS(iLocal_223, false), -1, 2052, 2);
 				TASK::TASK_TURN_PED_TO_FACE_COORD(0, ENTITY::GET_ENTITY_COORDS(iLocal_223, false), 0);
 				TASK::TASK_PLAY_ANIM(0, "random@countrysiderobbery", "enter", 2f, -2f, -1, 0, 0f, false, false, false);
@@ -692,7 +692,7 @@ void func_2()//Position - 0x325
 				if (ENTITY::DOES_ENTITY_EXIST(iLocal_219))
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_243);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, ENTITY::GET_ENTITY_COORDS(iLocal_219, false) + Vector(0f, 1f, 0f), 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, ENTITY::GET_ENTITY_COORDS(iLocal_219, false) + Vector(0f, 1f, 0f), 1f, -1, 0.25f, 0, 40000f);
 					TASK::TASK_SWAP_WEAPON(0, false);
 					TASK::TASK_PLAY_ANIM(0, "random@countrysiderobbery", "idle_d", 2f, -2f, -1, 0, 0f, false, false, false);
 					TASK::TASK_PLAY_ANIM(0, "random@countrysiderobbery", "idle_a", 2f, -2f, -1, 1, 0f, false, false, false);

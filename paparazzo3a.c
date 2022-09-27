@@ -757,7 +757,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			if (TASK::CONTROL_MOUNTED_WEAPON(iLocal_204))
 			{
-				TASK::SET_MOUNTED_WEAPON_TARGET(iLocal_204, Local_316.f_0, 0, 0f, 0f, 0f, 2, 0);
+				TASK::SET_MOUNTED_WEAPON_TARGET(iLocal_204, Local_316.f_0, 0, 0f, 0f, 0f, 2, false);
 			}
 		}
 		if (iLocal_256)
@@ -36961,7 +36961,7 @@ void func_262()//Position - 0x29904
 					{
 						TASK::TASK_PLAY_ANIM(Local_316.f_0, "rcmpaparazzo_3", "poppy_arrest_popm", 8f, -1.5f, -1, 48, 0.615948f, true, false, false);
 						TASK::TASK_LOOK_AT_ENTITY(Local_316.f_0, PLAYER::PLAYER_PED_ID(), -1, 0, 2);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_316.f_0, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(PLAYER::PLAYER_PED_ID(), 0f, 80f, 0f), 1.5f, -1, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_316.f_0, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(PLAYER::PLAYER_PED_ID(), 0f, 80f, 0f), 1.5f, -1, 0.25f, 0, 40000f);
 					}
 				}
 			}
@@ -39022,7 +39022,7 @@ void func_325()//Position - 0x2C054
 						{
 							if (TASK::CONTROL_MOUNTED_WEAPON(iLocal_204))
 							{
-								TASK::SET_MOUNTED_WEAPON_TARGET(iLocal_204, Local_316.f_0, 0, 0f, 0f, 0f, 2, 0);
+								TASK::SET_MOUNTED_WEAPON_TARGET(iLocal_204, Local_316.f_0, 0, 0f, 0f, 0f, 2, false);
 							}
 						}
 						SYSTEM::WAIT(0);

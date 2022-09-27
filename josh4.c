@@ -35135,8 +35135,8 @@ void func_234()//Position - 0x279CD
 							func_501("Back gate blocked");
 							Local_55 = { -1130.35f, 307.92f, 65.19f };
 							TASK::OPEN_SEQUENCE_TASK(&iLocal_389);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_55, 2f, 20000, 1f, true, 40000f);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1126.56f, 319.85f, 65.98f, 2f, 20000, 1f, true, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_55, 2f, 20000, 1f, 1, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1126.56f, 319.85f, 65.98f, 2f, 20000, 1f, 1, 40000f);
 							TASK::TASK_SMART_FLEE_PED(0, PLAYER::PLAYER_PED_ID(), 500f, -1, false, false);
 							TASK::CLOSE_SEQUENCE_TASK(iLocal_389);
 							PED::SET_PED_KEEP_TASK(Local_386.f_28[0], true);
@@ -35163,7 +35163,7 @@ void func_234()//Position - 0x279CD
 					{
 						func_501("Josh car not ok - do Josh flee anyway");
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_389);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_55, 2f, 20000, 1f, true, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_55, 2f, 20000, 1f, 1, 40000f);
 						if (func_207(iLocal_391))
 						{
 							TASK::TASK_ENTER_VEHICLE(0, iLocal_391, 20000, -1, 2f, 1, 0);

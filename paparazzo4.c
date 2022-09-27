@@ -36146,7 +36146,7 @@ void func_281()//Position - 0x29405
 				TASK::OPEN_SEQUENCE_TASK(&iVar1);
 				if (PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_56.f_35[0], false))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_297, 2f, 20000, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_297, 2f, 20000, 0.25f, 0, 40000f);
 				}
 				TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, PLAYER::PLAYER_PED_ID(), -1);
 				TASK::CLOSE_SEQUENCE_TASK(iVar1);
@@ -36213,7 +36213,7 @@ void func_281()//Position - 0x29405
 					if ((((func_209(Local_56.f_28[2]) && !PED::IS_PED_FLEEING(Local_56.f_28[2])) && !iLocal_262) && !iLocal_309) && !PED::IS_PED_RAGDOLL(Local_56.f_28[2]))
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iVar2);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_298, 2f, 20000, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_298, 2f, 20000, 0.25f, 0, 40000f);
 						TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, PLAYER::PLAYER_PED_ID(), -1);
 						TASK::CLOSE_SEQUENCE_TASK(iVar2);
 						TASK::TASK_PERFORM_SEQUENCE(Local_56.f_28[2], iVar2);
@@ -36245,7 +36245,7 @@ void func_281()//Position - 0x29405
 			if (func_229(PLAYER::PLAYER_PED_ID(), Local_56.f_28[0]) > 20f)
 			{
 				TASK::OPEN_SEQUENCE_TASK(&iVar3);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_297, 1f, 20000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_297, 1f, 20000, 0.25f, 0, 40000f);
 				if (func_209(Local_56.f_28[1]))
 				{
 					TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, Local_56.f_28[1], -1);
@@ -36470,7 +36470,7 @@ void func_288()//Position - 0x29CFF
 			Var4 = { Var0 };
 		}
 		TASK::OPEN_SEQUENCE_TASK(&iVar5);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var4, 3f, 20000, 0.25f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var4, 3f, 20000, 0.25f, 0, 40000f);
 		TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, Local_56.f_28[0], 0);
 		TASK::CLOSE_SEQUENCE_TASK(iVar5);
 		TASK::TASK_PERFORM_SEQUENCE(Local_56.f_28[1], iVar5);

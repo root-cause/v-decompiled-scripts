@@ -3324,7 +3324,7 @@ void func_121(int iParam0)//Position - 0x3079
 				TASK::TASK_CLEAR_LOOK_AT(Local_69[iParam0 /*19*/]);
 				TASK::CLEAR_PED_SECONDARY_TASK(Local_69[iParam0 /*19*/]);
 				TASK::CLEAR_PED_TASKS(Local_69[iParam0 /*19*/]);
-				TASK::TASK_HANDS_UP(Local_69[iParam0 /*19*/], -1, PLAYER::PLAYER_PED_ID(), -1, false);
+				TASK::TASK_HANDS_UP(Local_69[iParam0 /*19*/], -1, PLAYER::PLAYER_PED_ID(), -1, 0);
 			}
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_69[iParam0 /*19*/], true);
 			Local_69[iParam0 /*19*/].f_14 = 2;
@@ -39716,7 +39716,7 @@ void func_365()//Position - 0x2AF97
 								}
 								else
 								{
-									TASK::TASK_HANDS_UP(Local_68.f_9, -1, PLAYER::PLAYER_PED_ID(), -1, false);
+									TASK::TASK_HANDS_UP(Local_68.f_9, -1, PLAYER::PLAYER_PED_ID(), -1, 0);
 								}
 							}
 							else if (!PED::IS_PED_IN_ANY_VEHICLE(Local_68.f_9, false))

@@ -21194,7 +21194,7 @@ int func_414()//Position - 0x1DF02
 	struct<3> Var0;
 	struct<3> Var1;
 	float fVar2;
-	var* uVar3;
+	int* iVar3;
 	bool bVar4;
 	bool bVar5;
 	int iVar6;
@@ -21214,7 +21214,7 @@ int func_414()//Position - 0x1DF02
 	}
 	if (!func_62(2))
 	{
-		if (func_453() || func_452(Var0, &Var1, &fVar2, &uVar3, 1, 1, 1))
+		if (func_453() || func_452(Var0, &Var1, &fVar2, &iVar3, 1, 1, 1))
 		{
 			bVar5 = false;
 			while (bVar5 < func_72())
@@ -25239,13 +25239,13 @@ int func_451(int iParam0)//Position - 0x21AB2
 	return iVar0;
 }
 
-int func_452(struct<3> Param0, var* uParam1, float* fParam2, var* uParam3, int iParam4, int iParam5, bool bParam6)//Position - 0x21AF3
+int func_452(struct<3> Param0, var* uParam1, float* fParam2, int* iParam3, int iParam4, int iParam5, bool bParam6)//Position - 0x21AF3
 {
 	int iVar0;
 	
 	while (true)
 	{
-		if (PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE_WITH_HEADING(Param0, iParam4, uParam1, fParam2, uParam3, 1, 3f, 0f))
+		if (PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE_WITH_HEADING(Param0, iParam4, uParam1, fParam2, iParam3, 1, 3f, 0f))
 		{
 			if (func_170(*uParam1, 10f, 1f, 1f, 5f, iParam5, bParam6, 1, 1123024896, 0, -1, 1, 0, 0, 0, 0, 0))
 			{

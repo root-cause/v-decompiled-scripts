@@ -62154,14 +62154,14 @@ void func_573()//Position - 0x4B4BA
 								}
 								break;
 						}
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -3111.284f, 352.5119f, 13.4585f, 2f, 20000, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -3111.284f, 352.5119f, 13.4585f, 2f, 20000, 0.25f, 0, 40000f);
 						TASK::CLOSE_SEQUENCE_TASK(iLocal_2614);
 						TASK::TASK_PERFORM_SEQUENCE(Local_228[iVar0 /*2*/], iLocal_2614);
 						TASK::CLEAR_SEQUENCE_TASK(&iLocal_2614);
 					}
 					else if (Var1.f_2 <= 13.5f)
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_228[iVar0 /*2*/], -3106.137f, 347.9758f, 9.8209f, 2f, 20000, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_228[iVar0 /*2*/], -3106.137f, 347.9758f, 9.8209f, 2f, 20000, 0.25f, 0, 40000f);
 					}
 					Local_228[iVar0 /*2*/].f_1 = 1;
 				}
@@ -127533,7 +127533,7 @@ void func_844()//Position - 0x9E5CB
 				if (!func_939())
 				{
 					TASK::TASK_CLEAR_LOOK_AT(iLocal_2594);
-					TASK::TASK_USE_MOBILE_PHONE(iLocal_2594, 1, 1);
+					TASK::TASK_USE_MOBILE_PHONE(iLocal_2594, true, 1);
 					AUDIO::PLAY_SOUND_FROM_ENTITY(-1, "PED_PHONE_DIAL_01", iLocal_2594, 0, false, 0);
 					SYSTEM::SETTIMERB(0);
 					iLocal_2339++;
@@ -127551,7 +127551,7 @@ void func_844()//Position - 0x9E5CB
 			case 3:
 				if (!func_939())
 				{
-					TASK::TASK_USE_MOBILE_PHONE(iLocal_2594, 0, 1);
+					TASK::TASK_USE_MOBILE_PHONE(iLocal_2594, false, 1);
 					SYSTEM::SETTIMERB(0);
 					iLocal_2339++;
 				}
@@ -131111,7 +131111,7 @@ void func_916(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 		fVar1 = 0f;
 		func_917(iParam0, Var0, fVar1, 1, iParam1, iParam2, iParam3, iParam4, iParam5, iParam6, bParam7, 1);
 	}
-	else if (PATHFIND::GET_CLOSEST_VEHICLE_NODE_WITH_HEADING(Var0, &Var0, &fVar1, 1, 3f, 0))
+	else if (PATHFIND::GET_CLOSEST_VEHICLE_NODE_WITH_HEADING(Var0, &Var0, &fVar1, 1, 3f, 0f))
 	{
 		func_917(iParam0, Var0, fVar1, 1, iParam1, iParam2, iParam3, iParam4, iParam5, iParam6, bParam7, 1);
 	}

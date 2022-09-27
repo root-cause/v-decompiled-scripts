@@ -15527,7 +15527,7 @@ void func_246()//Position - 0x151A6
 									{
 										TASK::CLEAR_PED_TASKS(iLocal_32[iLocal_55]);
 										TASK::OPEN_SEQUENCE_TASK(&iLocal_367);
-										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, ENTITY::GET_ENTITY_COORDS(iLocal_34, true), 2f, -1, 20f, false, 40000f);
+										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, ENTITY::GET_ENTITY_COORDS(iLocal_34, true), 2f, -1, 20f, 0, 40000f);
 										TASK::TASK_COMBAT_PED(0, PLAYER::PLAYER_PED_ID(), 0, 16);
 										TASK::CLOSE_SEQUENCE_TASK(iLocal_367);
 										TASK::TASK_PERFORM_SEQUENCE(iLocal_32[iLocal_55], iLocal_367);

@@ -2601,7 +2601,7 @@ void func_54(var uParam0, var uParam1)//Position - 0x3B0C
 		if (TASK::GET_SCRIPT_TASK_STATUS(func_266(uParam0), joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(func_266(uParam0), joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1)
 		{
 			Var0 = { uParam0->f_37 - uParam1->f_29 * Vector(0.93f, 0.93f, 0.93f) };
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_266(uParam0), uParam1->f_29 + Var0, 2f, 20000, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_266(uParam0), uParam1->f_29 + Var0, 2f, 20000, 0.25f, 0, 40000f);
 			func_59(uParam0, 2048);
 			func_55("FAR_FROM_COURT", -1);
 		}
@@ -6293,7 +6293,7 @@ void func_219(var uParam0, var uParam1, int iParam2, int iParam3, bool bParam4, 
 				}
 				else
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var7, 1f, 20000, 0.25f, true, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var7, 1f, 20000, 0.25f, 1, 40000f);
 				}
 				func_223(uParam0, func_27(uParam0) + 1);
 			}
@@ -6304,7 +6304,7 @@ void func_219(var uParam0, var uParam1, int iParam2, int iParam3, bool bParam4, 
 			}
 			else
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var1, 1f, 20000, 0.25f, false, fVar2);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var1, 1f, 20000, 0.25f, 0, fVar2);
 				func_223(uParam0, func_27(uParam0) + 1);
 			}
 			sVar8 = func_196(func_197(uParam0), "mini@tennis", "mini@tennis@female");
@@ -6511,11 +6511,11 @@ void func_228(var uParam0, var uParam1, int iParam2, int iParam3, bool bParam4, 
 				}
 				else
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var6, 1f, 20000, 0.25f, true, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var6, 1f, 20000, 0.25f, 1, 40000f);
 				}
 				func_223(uParam0, func_27(uParam0) + 1);
 			}
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var1, 1f, 20000, 0.25f, false, fVar2);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var1, 1f, 20000, 0.25f, 0, fVar2);
 			func_223(uParam0, func_27(uParam0) + 1);
 			TASK::TASK_PLAY_ANIM(0, "mini@tennis", "idle_2_serve", 8f, -8f, -1, 0, 0f, false, false, false);
 			func_223(uParam0, func_27(uParam0) + 1);

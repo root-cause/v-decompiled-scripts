@@ -1801,7 +1801,7 @@ void func_39()//Position - 0x2112
 				{
 					func_41(61, 0);
 					TASK::OPEN_SEQUENCE_TASK(&iVar0);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -111.5814f, -11.7526f, 69.5196f, 3f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -111.5814f, -11.7526f, 69.5196f, 3f, -1, 0.25f, 0, 40000f);
 					TASK::TASK_COWER(0, -1);
 					TASK::CLOSE_SEQUENCE_TASK(iVar0);
 					TASK::TASK_PERFORM_SEQUENCE(iLocal_171, iVar0);
@@ -5384,7 +5384,7 @@ void func_91()//Position - 0x7054
 						TASK::TASK_LOOK_AT_ENTITY(iLocal_170, PLAYER::PLAYER_PED_ID(), -1, 0, 2);
 						TASK::OPEN_SEQUENCE_TASK(&iVar0);
 						TASK::TASK_LEAVE_VEHICLE(0, iLocal_176, 0);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 713.0986f, -962.1581f, 29.3953f, 1f, -1, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 713.0986f, -962.1581f, 29.3953f, 1f, -1, 0.25f, 0, 40000f);
 						TASK::TASK_ACHIEVE_HEADING(0, 185.6443f, 0);
 						TASK::CLOSE_SEQUENCE_TASK(iVar0);
 						TASK::TASK_PERFORM_SEQUENCE(iLocal_170, iVar0);
@@ -107650,7 +107650,7 @@ void func_644()//Position - 0x8228A
 				{
 					TASK::CLEAR_PED_TASKS(iLocal_169);
 					TASK::OPEN_SEQUENCE_TASK(&iVar1);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -101.9519f, -82.8542f, 56.331f, 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -101.9519f, -82.8542f, 56.331f, 1f, -1, 0.25f, 0, 40000f);
 					TASK::TASK_WANDER_STANDARD(0, 40000f, 0);
 					TASK::CLOSE_SEQUENCE_TASK(iVar1);
 					TASK::TASK_PERFORM_SEQUENCE(iLocal_169, iVar1);
@@ -107665,7 +107665,7 @@ void func_644()//Position - 0x8228A
 			case 7:
 				if (SYSTEM::TIMERA() > 2500)
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_171, -77.0063f, -17.4465f, 65.4398f, 1f, 20000, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_171, -77.0063f, -17.4465f, 65.4398f, 1f, 20000, 0.25f, 0, 40000f);
 					iLocal_107++;
 				}
 				break;
@@ -107740,7 +107740,7 @@ void func_644()//Position - 0x8228A
 						}
 						iLocal_280[2] = -1;
 						func_41(61, 0);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_171, -111.455f, -7.0131f, 69.5283f, 1f, 20000, 0.25f, false, 283f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_171, -111.455f, -7.0131f, 69.5283f, 1f, 20000, 0.25f, 0, 283f);
 						PED::FORCE_PED_MOTION_STATE(iLocal_171, joaat("MotionState_Walk"), false, 0, false);
 						ENTITY::SET_ENTITY_COLLISION(iLocal_171, true, false);
 						SYSTEM::SETTIMERA(0);

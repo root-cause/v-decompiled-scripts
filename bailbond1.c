@@ -39703,7 +39703,7 @@ void func_366()//Position - 0x2B010
 								}
 								else
 								{
-									TASK::TASK_HANDS_UP(Local_68.f_9, -1, PLAYER::PLAYER_PED_ID(), -1, false);
+									TASK::TASK_HANDS_UP(Local_68.f_9, -1, PLAYER::PLAYER_PED_ID(), -1, 0);
 								}
 							}
 							else if (!PED::IS_PED_IN_ANY_VEHICLE(Local_68.f_9, false))

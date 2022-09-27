@@ -12690,7 +12690,7 @@ int func_277()//Position - 0x13C76
 	struct<3> Var0;
 	struct<3> Var1;
 	float fVar2;
-	var* uVar3;
+	int* iVar3;
 	int iVar4;
 	int iVar5;
 	
@@ -12705,7 +12705,7 @@ int func_277()//Position - 0x13C76
 	}
 	if (!func_37(2))
 	{
-		if (func_343() || func_342(Var0, &Var1, &fVar2, &uVar3, 1, 1, 1))
+		if (func_343() || func_342(Var0, &Var1, &fVar2, &iVar3, 1, 1, 1))
 		{
 			iVar4 = 0;
 			while (iVar4 < func_341())
@@ -16715,13 +16715,13 @@ int func_341()//Position - 0x175E7
 	return 0;
 }
 
-int func_342(struct<3> Param0, var* uParam1, float* fParam2, var* uParam3, int iParam4, int iParam5, bool bParam6)//Position - 0x17617
+int func_342(struct<3> Param0, var* uParam1, float* fParam2, int* iParam3, int iParam4, int iParam5, bool bParam6)//Position - 0x17617
 {
 	int iVar0;
 	
 	while (true)
 	{
-		if (PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE_WITH_HEADING(Param0, iParam4, uParam1, fParam2, uParam3, 1, 3f, 0f))
+		if (PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE_WITH_HEADING(Param0, iParam4, uParam1, fParam2, iParam3, 1, 3f, 0f))
 		{
 			if (func_128(*uParam1, 10f, 1f, 1f, 5f, iParam5, bParam6, 1, 1123024896, 0, -1, 1, 0, 0, 0, 0, 0))
 			{
@@ -123701,13 +123701,13 @@ void func_1204(int iParam0, var uParam1, bool bParam2, bool bParam3, bool bParam
 						{
 							VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, Global_262145.f_21791);
 						}
-						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, 1);
+						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, true);
 						break;
 					
 					default:
 						VEHICLE::SET_VEHICLE_EXPLODES_ON_HIGH_EXPLOSION_DAMAGE(iParam0, false);
 						VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, 1f);
-						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, 1);
+						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, true);
 						break;
 					}
 			}
@@ -133739,7 +133739,7 @@ void func_1343(int iParam0)//Position - 0xA3C48
 			VEHICLE::SET_VEHICLE_NO_EXPLOSION_DAMAGE_FROM_DRIVER(iParam0, !func_598());
 			if (iVar1 == joaat("ruiner2"))
 			{
-				VEHICLE::SET_VEHICLE_WEAPON_CAN_TARGET_OBJECTS(iParam0, 1);
+				VEHICLE::SET_VEHICLE_WEAPON_CAN_TARGET_OBJECTS(iParam0, true);
 			}
 			if (iVar1 == joaat("blazer5"))
 			{
@@ -133822,7 +133822,7 @@ void func_1343(int iParam0)//Position - 0xA3C48
 		}
 		if (BitTest(Global_4718592.f_18, 24) || (func_1344() && NETWORK::NETWORK_IS_ACTIVITY_SESSION()))
 		{
-			VEHICLE::SET_BIKE_EASY_TO_LAND(iParam0, 1);
+			VEHICLE::SET_BIKE_EASY_TO_LAND(iParam0, true);
 		}
 	}
 	if (bVar0)

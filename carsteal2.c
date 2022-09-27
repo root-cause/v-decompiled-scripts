@@ -15813,7 +15813,7 @@ void func_257(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 								{
 									TASK::CLEAR_PED_TASKS(Local_1371[5 /*14*/]);
 									func_548();
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 464.19f, -985.8955f, 29.6897f, 1f, 40000, 0.25f, false, 40000f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 464.19f, -985.8955f, 29.6897f, 1f, 40000, 0.25f, 0, 40000f);
 									TASK::TASK_LOOK_AT_ENTITY(0, PLAYER::PLAYER_PED_ID(), 10000, 0, 2);
 									TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, PLAYER::PLAYER_PED_ID(), 5000);
 									func_547(Local_1371[5 /*14*/], 0);
@@ -15897,7 +15897,7 @@ void func_257(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 					
 					case 9:
 						func_548();
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 441.256f, -977.9714f, 29.6895f, 1f, 20000, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 441.256f, -977.9714f, 29.6895f, 1f, 20000, 0.25f, 0, 40000f);
 						TASK::TASK_START_SCENARIO_IN_PLACE(0, "WORLD_HUMAN_HANG_OUT_STREET", 0, false);
 						func_547(Local_1371[5 /*14*/], 0);
 						Local_1610[iParam0 /*10*/].f_3 = 1;
@@ -15968,7 +15968,7 @@ void func_257(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 						if (!PED::IS_PED_INJURED(Local_1371[5 /*14*/]))
 						{
 							func_548();
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 453.0859f, -985.3833f, 29.6896f, 2f, 20000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 453.0859f, -985.3833f, 29.6896f, 2f, 20000, 0.25f, 0, 40000f);
 							TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, PLAYER::PLAYER_PED_ID(), 0);
 							func_547(Local_1371[5 /*14*/], 0);
 							Local_1610[iParam0 /*10*/].f_3 = 1;
@@ -16213,7 +16213,7 @@ void func_257(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 									}
 									else
 									{
-										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_1371[4 /*14*/], 1390.733f, -2063.394f, 50.9983f, 2f, 20000, 0.25f, false, 40000f);
+										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_1371[4 /*14*/], 1390.733f, -2063.394f, 50.9983f, 2f, 20000, 0.25f, 0, 40000f);
 										Local_1610[iParam0 /*10*/].f_6++;
 									}
 									break;
@@ -16671,7 +16671,7 @@ void func_257(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 								{
 									func_548();
 									TASK::TASK_LEAVE_ANY_VEHICLE(0, 0, 0);
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1269.91f, -210.0006f, 50.5499f, 1f, 20000, 0.25f, false, 40000f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1269.91f, -210.0006f, 50.5499f, 1f, 20000, 0.25f, 0, 40000f);
 									TASK::TASK_PLAY_ANIM(0, "misscarsteal2peeing", "peeing_intro", 8f, -8f, -1, 0, 0f, false, false, false);
 									TASK::TASK_PLAY_ANIM(0, "misscarsteal2peeing", "peeing_loop", 8f, -8f, -1, 1, 0f, false, false, false);
 									func_547(Local_1371[5 /*14*/], 0);
@@ -16867,7 +16867,7 @@ void func_257(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 									{
 										func_548();
 										TASK::TASK_LEAVE_ANY_VEHICLE(0, 0, 0);
-										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1273.988f, -221.81f, 50.5498f, 2f, 20000, 0.25f, false, 40000f);
+										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1273.988f, -221.81f, 50.5498f, 2f, 20000, 0.25f, 0, 40000f);
 										TASK::TASK_TURN_PED_TO_FACE_COORD(0, -1314.795f, -243.3134f, 55.9067f, 3000);
 										func_547(Local_1371[4 /*14*/], 0);
 										Local_1610[iParam0 /*10*/].f_6++;
@@ -16977,7 +16977,7 @@ void func_257(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 							{
 								case 0:
 									func_548();
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1263.639f, -239.6366f, 50.5499f, 2f, 20000, 0.25f, false, 40000f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1263.639f, -239.6366f, 50.5499f, 2f, 20000, 0.25f, 0, 40000f);
 									if (!PED::IS_PED_INJURED(Local_1371[6 /*14*/]))
 									{
 										TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, Local_1371[6 /*14*/], 5000);
@@ -17007,7 +17007,7 @@ void func_257(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 							{
 								case 0:
 									func_548();
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1273.505f, -212.807f, 50.5499f, 2f, 20000, 1.2f, false, 300f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1273.505f, -212.807f, 50.5499f, 2f, 20000, 1.2f, 0, 300f);
 									func_547(Local_1371[4 /*14*/], 0);
 									Local_1610[iParam0 /*10*/].f_6++;
 									break;
@@ -17028,7 +17028,7 @@ void func_257(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 							switch (Local_1610[iParam0 /*10*/].f_6)
 							{
 								case 0:
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_1371[4 /*14*/], -1301.094f, -208.0075f, 50.5498f, 2f, 20000, 0.25f, false, 141.1114f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_1371[4 /*14*/], -1301.094f, -208.0075f, 50.5498f, 2f, 20000, 0.25f, 0, 141.1114f);
 									Local_1610[iParam0 /*10*/].f_6++;
 									break;
 								
@@ -17058,7 +17058,7 @@ void func_257(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 							{
 								case 0:
 									func_548();
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1293.675f, -193.4069f, 50.5497f, 2f, 20000, 0.25f, false, 40000f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1293.675f, -193.4069f, 50.5497f, 2f, 20000, 0.25f, 0, 40000f);
 									if (!PED::IS_PED_INJURED(Local_1371[8 /*14*/]))
 									{
 										TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, Local_1371[8 /*14*/], 5000);
@@ -17088,7 +17088,7 @@ void func_257(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 							{
 								case 0:
 									func_548();
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1265.911f, -225.6303f, 50.5499f, 2f, 20000, 0.25f, false, 300f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1265.911f, -225.6303f, 50.5499f, 2f, 20000, 0.25f, 0, 300f);
 									func_547(Local_1371[4 /*14*/], 0);
 									Local_1610[iParam0 /*10*/].f_6++;
 									break;
@@ -17433,7 +17433,7 @@ void func_257(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 									}
 									TASK::CLEAR_PED_TASKS(Local_1371[3 /*14*/]);
 									func_548();
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1287.622f, -251.0352f, 46.0453f, 2f, 20000, 0.25f, false, 40000f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1287.622f, -251.0352f, 46.0453f, 2f, 20000, 0.25f, 0, 40000f);
 									TASK::TASK_COWER(0, -1);
 									func_547(Local_1371[3 /*14*/], 0);
 									Local_1610[iParam0 /*10*/].f_6++;
@@ -17497,7 +17497,7 @@ void func_257(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 							case 0:
 								if (!PED::IS_PED_INJURED(Local_1371[3 /*14*/]))
 								{
-									TASK::TASK_USE_MOBILE_PHONE(Local_1371[3 /*14*/], 1, 1);
+									TASK::TASK_USE_MOBILE_PHONE(Local_1371[3 /*14*/], true, 1);
 									Local_1610[iParam0 /*10*/].f_6++;
 								}
 								break;
@@ -131430,15 +131430,15 @@ void func_963(int iParam0, bool bParam1)//Position - 0xA1365
 										PED::SET_PED_DEFAULT_COMPONENT_VARIATION(Local_1371[16 /*14*/]);
 										func_548();
 										TASK::TASK_START_SCENARIO_IN_PLACE(0, "WORLD_DOG_SITTING_RETRIEVER", 10000, false);
-										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 222.7919f, -102.9722f, 68.7838f, 2f, 20000, 0.25f, false, 40000f);
+										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 222.7919f, -102.9722f, 68.7838f, 2f, 20000, 0.25f, 0, 40000f);
 										TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, Local_1371[15 /*14*/], 2000);
 										TASK::TASK_START_SCENARIO_IN_PLACE(0, "WORLD_DOG_SITTING_RETRIEVER", 5000, false);
-										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 225.5398f, -114.8174f, 68.7156f, 2f, 20000, 0.25f, false, 40000f);
+										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 225.5398f, -114.8174f, 68.7156f, 2f, 20000, 0.25f, 0, 40000f);
 										TASK::TASK_START_SCENARIO_IN_PLACE(0, "WORLD_DOG_SITTING_RETRIEVER", 10000, false);
-										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 224.4595f, -108.3759f, 68.8405f, 2f, 20000, 0.25f, false, 40000f);
+										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 224.4595f, -108.3759f, 68.8405f, 2f, 20000, 0.25f, 0, 40000f);
 										TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, Local_1371[15 /*14*/], 2000);
 										TASK::TASK_START_SCENARIO_IN_PLACE(0, "WORLD_DOG_SITTING_RETRIEVER", 5000, false);
-										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 225.5398f, -114.8174f, 68.7156f, 2f, 20000, 0.25f, false, 40000f);
+										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 225.5398f, -114.8174f, 68.7156f, 2f, 20000, 0.25f, 0, 40000f);
 										func_547(Local_1371[16 /*14*/], 1);
 										func_582(5, 228.4758f, -115.521f, 68.8577f);
 										Local_1390[iVar0 /*6*/].f_2++;
@@ -131500,14 +131500,14 @@ void func_963(int iParam0, bool bParam1)//Position - 0xA1365
 												}
 												else
 												{
-													TASK::TASK_USE_MOBILE_PHONE(Local_1371[15 /*14*/], 0, 1);
+													TASK::TASK_USE_MOBILE_PHONE(Local_1371[15 /*14*/], false, 1);
 													Local_1390[iVar0 /*6*/].f_2 = 5;
 												}
 											}
 										}
 										else
 										{
-											TASK::TASK_USE_MOBILE_PHONE(Local_1371[15 /*14*/], 0, 1);
+											TASK::TASK_USE_MOBILE_PHONE(Local_1371[15 /*14*/], false, 1);
 											Local_1390[iVar0 /*6*/].f_2 = 5;
 										}
 									}
@@ -131629,8 +131629,8 @@ void func_963(int iParam0, bool bParam1)//Position - 0xA1365
 									if (!PED::IS_PED_INJURED(Local_1371[16 /*14*/]) && !PED::IS_PED_INJURED(Local_1371[15 /*14*/]))
 									{
 										func_548();
-										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 232.5028f, -103.9169f, 69.0993f, 1f, -1, 0.25f, true, 40000f);
-										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 232.1583f, -81.7946f, 68.6269f, 1f, -1, 0.25f, false, 40000f);
+										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 232.5028f, -103.9169f, 69.0993f, 1f, -1, 0.25f, 1, 40000f);
+										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 232.1583f, -81.7946f, 68.6269f, 1f, -1, 0.25f, 0, 40000f);
 										TASK::TASK_WANDER_STANDARD(0, 40000f, 0);
 										func_547(Local_1371[15 /*14*/], 0);
 										Local_1390[iVar0 /*6*/].f_2++;
@@ -131660,7 +131660,7 @@ void func_963(int iParam0, bool bParam1)//Position - 0xA1365
 														}
 														func_547(Local_1371[3 /*14*/], 0);
 														func_548();
-														TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2197.307f, -2648.153f, -59.3432f, 2f, -1, 0.25f, false, 40000f);
+														TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2197.307f, -2648.153f, -59.3432f, 2f, -1, 0.25f, 0, 40000f);
 														TASK::TASK_FOLLOW_TO_OFFSET_OF_ENTITY(0, Local_1371[15 /*14*/], 3f, 1f, 0f, 2f, -1, 0.1f, true);
 														func_547(Local_1371[16 /*14*/], 0);
 														Local_1390[iVar0 /*6*/].f_2++;
@@ -132585,14 +132585,14 @@ int func_974(var uParam0, int iParam1, bool bParam2)//Position - 0xA71EE
 									WEAPON::SET_CURRENT_PED_WEAPON(Local_1371[11 /*14*/], joaat("WEAPON_UNARMED"), true);
 									func_548();
 									TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, Local_1371[13 /*14*/], 13000);
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 176.4232f, -153.2906f, 55.2087f, 1f, 20000, 0.25f, false, 40000f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 176.4232f, -153.2906f, 55.2087f, 1f, 20000, 0.25f, 0, 40000f);
 									TASK::TASK_START_SCENARIO_IN_PLACE(0, "WORLD_HUMAN_SMOKING", 0, false);
 									func_547(Local_1371[11 /*14*/], 0);
 									if (!PED::IS_PED_INJURED(Local_1371[13 /*14*/]))
 									{
 										func_548();
 										TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, Local_1371[13 /*14*/], 6000);
-										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 231.9157f, -173.5117f, 55.9517f, 1f, -1, 0.25f, false, 40000f);
+										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 231.9157f, -173.5117f, 55.9517f, 1f, -1, 0.25f, 0, 40000f);
 										TASK::TASK_START_SCENARIO_IN_PLACE(0, "WORLD_HUMAN_PROSTITUTE_LOW_CLASS", 0, false);
 										func_547(Local_1371[13 /*14*/], 0);
 									}
@@ -132845,11 +132845,11 @@ int func_974(var uParam0, int iParam1, bool bParam2)//Position - 0xA71EE
 								if ((PED::IS_SYNCHRONIZED_SCENE_RUNNING((*uParam0)[1]) && PED::GET_SYNCHRONIZED_SCENE_PHASE((*uParam0)[1]) > 0.97f) || (PED::IS_SYNCHRONIZED_SCENE_RUNNING((*uParam0)[0]) && PED::GET_SYNCHRONIZED_SCENE_PHASE((*uParam0)[0]) > 0.97f))
 								{
 									func_548();
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 224.1202f, -119.9946f, 68.6437f, 1f, 20000, 0.5f, true, 40000f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 224.1202f, -119.9946f, 68.6437f, 1f, 20000, 0.5f, 1, 40000f);
 									TASK::TASK_FOLLOW_WAYPOINT_RECORDING(0, "CS2_01", 0, 8, -1);
 									func_547(Local_1371[3 /*14*/], 0);
 									func_548();
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 195.4088f, -96.7522f, 66.7088f, 1f, 20000, 0.25f, false, 40000f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 195.4088f, -96.7522f, 66.7088f, 1f, 20000, 0.25f, 0, 40000f);
 									TASK::TASK_WANDER_STANDARD(0, 40000f, 0);
 									func_547(Local_1371[10 /*14*/], 0);
 									func_962(67);

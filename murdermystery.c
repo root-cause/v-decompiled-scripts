@@ -3249,7 +3249,7 @@ void func_49()//Position - 0x4E17
 				if (PAD::IS_CONTROL_JUST_PRESSED(2, 51))
 				{
 					func_51(0);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), -1007.351f, -477.5197f, 49.0282f, 1f, -1, 0.5f, false, 30.4025f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), -1007.351f, -477.5197f, 49.0282f, 1f, -1, 0.5f, 0, 30.4025f);
 					func_53(sLocal_77);
 					HUD::DISPLAY_RADAR(false);
 					CAM::SET_CAM_ACTIVE(iLocal_62, true);

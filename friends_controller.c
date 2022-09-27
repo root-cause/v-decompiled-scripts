@@ -34545,7 +34545,7 @@ void func_269(var uParam0, var uParam1)//Position - 0x24C91
 				}
 				if (iVar4 == 0)
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(uParam1->f_2, Var2, 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(uParam1->f_2, Var2, 1f, -1, 0.25f, 0, 40000f);
 					uParam1->f_4 = 60;
 				}
 			}

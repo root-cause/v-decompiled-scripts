@@ -41321,7 +41321,7 @@ void func_384()//Position - 0x2FB9B
 			HUD::DISPLAY_RADAR(false);
 			if (func_514(PLAYER::PLAYER_PED_ID()))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), -1368.33f, 56.4194f, 52.4637f, 1f, 20000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), -1368.33f, 56.4194f, 52.4637f, 1f, 20000, 0.25f, 0, 40000f);
 			}
 			iLocal_312 = 2;
 			break;
@@ -41352,7 +41352,7 @@ void func_384()//Position - 0x2FB9B
 				iLocal_268 = 1;
 				if (func_514(PLAYER::PLAYER_PED_ID()))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), -1373.09f, 55.61f, 52.71f, 1f, 20000, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), -1373.09f, 55.61f, 52.71f, 1f, 20000, 0.25f, 0, 40000f);
 				}
 				SYSTEM::WAIT(500);
 				iLocal_312 = 4;

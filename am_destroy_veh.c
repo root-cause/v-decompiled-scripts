@@ -5775,7 +5775,7 @@ void func_209()//Position - 0x679C
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_87);
 				TASK::TASK_VEHICLE_DRIVE_TO_COORD_LONGRANGE(0, NETWORK::NET_TO_VEH(Local_83.f_2), Local_83.f_20, 7f, iLocal_90, 3f);
 				TASK::TASK_LEAVE_ANY_VEHICLE(0, 0, 0);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_83.f_24, 1f, -1, 0.25f, false, Local_83.f_27);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_83.f_24, 1f, -1, 0.25f, 0, Local_83.f_27);
 				TASK::CLOSE_SEQUENCE_TASK(iLocal_87);
 			}
 		}

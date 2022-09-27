@@ -2980,7 +2980,7 @@ void func_59()//Position - 0x2820
 					{
 						TASK::CLEAR_PED_TASKS(iLocal_60);
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_103);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, OBJECT::GET_PICKUP_COORDS(iLocal_151), 1f, 20000, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, OBJECT::GET_PICKUP_COORDS(iLocal_151), 1f, 20000, 0.25f, 0, 40000f);
 						TASK::CLOSE_SEQUENCE_TASK(iLocal_103);
 						TASK::TASK_PERFORM_SEQUENCE(iLocal_60, iLocal_103);
 						TASK::CLEAR_SEQUENCE_TASK(&iLocal_103);
@@ -3016,7 +3016,7 @@ void func_59()//Position - 0x2820
 								{
 									TASK::CLEAR_PED_TASKS(iLocal_60);
 									TASK::OPEN_SEQUENCE_TASK(&iLocal_103);
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, OBJECT::GET_PICKUP_COORDS(iLocal_151), 1f, 20000, 0.25f, false, 40000f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, OBJECT::GET_PICKUP_COORDS(iLocal_151), 1f, 20000, 0.25f, 0, 40000f);
 									TASK::CLOSE_SEQUENCE_TASK(iLocal_103);
 									TASK::TASK_PERFORM_SEQUENCE(iLocal_60, iLocal_103);
 									TASK::CLEAR_SEQUENCE_TASK(&iLocal_103);
@@ -3027,7 +3027,7 @@ void func_59()//Position - 0x2820
 							{
 								TASK::CLEAR_PED_TASKS(iLocal_60);
 								TASK::OPEN_SEQUENCE_TASK(&iLocal_103);
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, OBJECT::GET_PICKUP_COORDS(iLocal_151), 1f, 20000, 0.25f, false, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, OBJECT::GET_PICKUP_COORDS(iLocal_151), 1f, 20000, 0.25f, 0, 40000f);
 								TASK::CLOSE_SEQUENCE_TASK(iLocal_103);
 								TASK::TASK_PERFORM_SEQUENCE(iLocal_60, iLocal_103);
 								TASK::CLEAR_SEQUENCE_TASK(&iLocal_103);
@@ -3461,7 +3461,7 @@ void func_61()//Position - 0x2D8A
 								if (func_97(Var1.f_2, 0f, 90f))
 								{
 									TASK::OPEN_SEQUENCE_TASK(&iLocal_103);
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 38.2412f, -992.2134f, 28.4317f, 1f, 20000, 0.25f, false, 40000f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 38.2412f, -992.2134f, 28.4317f, 1f, 20000, 0.25f, 0, 40000f);
 									TASK::TASK_WANDER_STANDARD(0, ENTITY::GET_ENTITY_HEADING(iLocal_60), 1);
 									TASK::CLOSE_SEQUENCE_TASK(iLocal_103);
 									TASK::TASK_PERFORM_SEQUENCE(iLocal_60, iLocal_103);
@@ -3470,7 +3470,7 @@ void func_61()//Position - 0x2D8A
 								else
 								{
 									TASK::OPEN_SEQUENCE_TASK(&iLocal_103);
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 58.803f, -1067.711f, 28.4411f, 1f, 20000, 0.25f, false, 40000f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 58.803f, -1067.711f, 28.4411f, 1f, 20000, 0.25f, 0, 40000f);
 									TASK::TASK_WANDER_STANDARD(0, ENTITY::GET_ENTITY_HEADING(iLocal_60), 1);
 									TASK::CLOSE_SEQUENCE_TASK(iLocal_103);
 									TASK::TASK_PERFORM_SEQUENCE(iLocal_60, iLocal_103);
@@ -4745,7 +4745,7 @@ Vector3 func_101(struct<3> Param0, struct<3> Param1)//Position - 0x4B9C
 		ENTITY::SET_ENTITY_AS_MISSION_ENTITY(iVar0, true, false);
 	}
 	MISC::GET_MODEL_DIMENSIONS(ENTITY::GET_ENTITY_MODEL(iVar0), &Var3, &Var4);
-	PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE(Param0, 3, &Var2, 1, 1077936128, 0);
+	PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE(Param0, 3, &Var2, 1, 3f, 0f);
 	if (SYSTEM::VDIST(Param0, -3039.655f, 602.4346f, 6.5719f) <= 25f)
 	{
 		Var1 = { -3045.49f, 604.46f, 7.02f };
@@ -11194,7 +11194,7 @@ void func_278()//Position - 0xD440
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_103);
 					if (PED::IS_PED_DUCKING(iLocal_60))
 					{
-						TASK::TASK_TOGGLE_DUCK(false, false);
+						TASK::TASK_TOGGLE_DUCK(0, 0);
 					}
 					TASK::TASK_LOOK_AT_ENTITY(0, PLAYER::PLAYER_PED_ID(), 9000, 0, 2);
 					TASK::TASK_SMART_FLEE_COORD(0, Local_104, 250f, -1, false, false);

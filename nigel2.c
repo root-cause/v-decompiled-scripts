@@ -40796,7 +40796,7 @@ void func_389(struct<3> Param0)//Position - 0x2DB35
 							{
 								if (iVar5 == 0 || iVar5 == 3)
 								{
-									TASK::TASK_USE_MOBILE_PHONE(Local_539[iVar5 /*2*/], 1, 1);
+									TASK::TASK_USE_MOBILE_PHONE(Local_539[iVar5 /*2*/], true, 1);
 									PED::SET_PED_KEEP_TASK(Local_539[iVar5 /*2*/], false);
 									Local_539[iVar5 /*2*/].f_1 = 4;
 								}

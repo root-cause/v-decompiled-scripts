@@ -11731,7 +11731,7 @@ int func_281()//Position - 0xE883
 					iLocal_226 = func_284();
 					MISC::CLEAR_BIT(&uLocal_217, 26);
 					MISC::SET_BIT(&uLocal_217, 26);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), func_283(iLocal_226), 1f, 7000, 0.05f, false, func_282(iLocal_226));
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), func_283(iLocal_226), 1f, 7000, 0.05f, 0, func_282(iLocal_226));
 					MISC::CLEAR_BIT(&uLocal_217, 30);
 					MISC::CLEAR_BIT(&uLocal_217, 31);
 					iLocal_219++;

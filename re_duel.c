@@ -4686,7 +4686,7 @@ void func_61()//Position - 0x5ACE
 					{
 						Var1 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
 						iVar5 = MISC::GET_RANDOM_INT_IN_RANGE(6, 10);
-						if (PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE(Var1, iVar5, &Var2, 1, 5f, 0))
+						if (PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE(Var1, iVar5, &Var2, 1, 5f, 0f))
 						{
 							PATHFIND::GET_VEHICLE_NODE_PROPERTIES(Var2, &uVar7, &uVar8);
 							if (((uVar8 & 4 == 0 && (!func_80() || uVar8 & 8 == 0)) && (func_79() || uVar8 & 1 == 0)) && !func_78(Var2, 1084227584))

@@ -1036,7 +1036,7 @@ bool func_35()//Position - 0x11CC
 {
 	if (!BitTest(uLocal_64, 1))
 	{
-		if (PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE(func_33(PLAYER::PLAYER_ID()), iLocal_68, &(Local_61.f_6), 4, 1077936128, 0))
+		if (PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE(func_33(PLAYER::PLAYER_ID()), iLocal_68, &(Local_61.f_6), 4, 3f, 0f))
 		{
 			MISC::SET_BIT(&uLocal_64, 1);
 		}

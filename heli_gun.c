@@ -3442,7 +3442,7 @@ void func_71()//Position - 0x4338
 	{
 		if (!func_194(iLocal_121) && NETWORK::NETWORK_HAS_CONTROL_OF_ENTITY(iLocal_121))
 		{
-			VEHICLE::SET_SHOULD_RESET_TURRET_IN_SCRIPTED_CAMERAS(iLocal_121, 1);
+			VEHICLE::SET_SHOULD_RESET_TURRET_IN_SCRIPTED_CAMERAS(iLocal_121, true);
 		}
 	}
 	if (Global_2725872)
@@ -7538,12 +7538,12 @@ void func_163()//Position - 0xA00B
 		{
 			if (VEHICLE::IS_VEHICLE_SEAT_FREE(iLocal_121, 1, false))
 			{
-				TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(PLAYER::PLAYER_PED_ID(), iLocal_121, 0);
+				TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(PLAYER::PLAYER_PED_ID(), iLocal_121, false);
 				iLocal_112 = 1;
 			}
 			else if (VEHICLE::IS_VEHICLE_SEAT_FREE(iLocal_121, 2, false))
 			{
-				TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(PLAYER::PLAYER_PED_ID(), iLocal_121, 1);
+				TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(PLAYER::PLAYER_PED_ID(), iLocal_121, true);
 				iLocal_112 = 2;
 			}
 			else if (iLocal_88 < 1)
@@ -7556,12 +7556,12 @@ void func_163()//Position - 0xA00B
 		{
 			if (VEHICLE::IS_VEHICLE_SEAT_FREE(iLocal_121, 2, false))
 			{
-				TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(PLAYER::PLAYER_PED_ID(), iLocal_121, 0);
+				TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(PLAYER::PLAYER_PED_ID(), iLocal_121, false);
 				iLocal_112 = 2;
 			}
 			else if (VEHICLE::IS_VEHICLE_SEAT_FREE(iLocal_121, 0, false))
 			{
-				TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(PLAYER::PLAYER_PED_ID(), iLocal_121, 1);
+				TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(PLAYER::PLAYER_PED_ID(), iLocal_121, true);
 				iLocal_112 = 0;
 			}
 			else if (iLocal_88 < 1)
@@ -7574,12 +7574,12 @@ void func_163()//Position - 0xA00B
 		{
 			if (VEHICLE::IS_VEHICLE_SEAT_FREE(iLocal_121, 0, false))
 			{
-				TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(PLAYER::PLAYER_PED_ID(), iLocal_121, 0);
+				TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(PLAYER::PLAYER_PED_ID(), iLocal_121, false);
 				iLocal_112 = 0;
 			}
 			else if (VEHICLE::IS_VEHICLE_SEAT_FREE(iLocal_121, 1, false))
 			{
-				TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(PLAYER::PLAYER_PED_ID(), iLocal_121, 1);
+				TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(PLAYER::PLAYER_PED_ID(), iLocal_121, true);
 				iLocal_112 = 1;
 			}
 			else if (iLocal_88 < 1)
@@ -7639,7 +7639,7 @@ void func_164()//Position - 0xA1F4
 		{
 			if (VEHICLE::IS_VEHICLE_SEAT_FREE(iLocal_121, 2, false))
 			{
-				TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(PLAYER::PLAYER_PED_ID(), iLocal_121, 0);
+				TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(PLAYER::PLAYER_PED_ID(), iLocal_121, false);
 				iLocal_112 = 2;
 			}
 			else if (iLocal_88 < 1)
@@ -7652,7 +7652,7 @@ void func_164()//Position - 0xA1F4
 		{
 			if (VEHICLE::IS_VEHICLE_SEAT_FREE(iLocal_121, 1, false))
 			{
-				TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(PLAYER::PLAYER_PED_ID(), iLocal_121, 1);
+				TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(PLAYER::PLAYER_PED_ID(), iLocal_121, true);
 				iLocal_112 = 1;
 			}
 			else if (iLocal_88 < 1)
@@ -8298,7 +8298,7 @@ void func_186()//Position - 0xACF1
 		iVar0 = PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false);
 		if (((ENTITY::DOES_ENTITY_EXIST(iVar0) && VEHICLE::IS_VEHICLE_DRIVEABLE(iVar0, false)) && func_194(iVar0)) && NETWORK::NETWORK_HAS_CONTROL_OF_ENTITY(iVar0))
 		{
-			VEHICLE::SET_SHOULD_RESET_TURRET_IN_SCRIPTED_CAMERAS(iVar0, 0);
+			VEHICLE::SET_SHOULD_RESET_TURRET_IN_SCRIPTED_CAMERAS(iVar0, false);
 		}
 	}
 }

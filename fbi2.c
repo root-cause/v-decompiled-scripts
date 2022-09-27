@@ -146790,7 +146790,7 @@ void func_1062()//Position - 0xAC1F1
 					{
 						if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) == 7)
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), 1372.63f, -2073.262f, 50.99822f, 1f, -1, 5f, true, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PLAYER::PLAYER_PED_ID(), 1372.63f, -2073.262f, 50.99822f, 1f, -1, 5f, 1, 40000f);
 							iLocal_360 = 1;
 							iLocal_494 = MISC::GET_GAME_TIMER();
 						}
@@ -146827,7 +146827,7 @@ void func_1062()//Position - 0xAC1F1
 						if (!PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), iLocal_125[1], false) && !PED::IS_PED_INJURED(iLocal_112))
 						{
 							TASK::TASK_LOOK_AT_ENTITY(iLocal_112, PLAYER::PLAYER_PED_ID(), -1, 2048, 2);
-							TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(iLocal_112, iLocal_125[1], 0);
+							TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(iLocal_112, iLocal_125[1], false);
 							RECORDING::REPLAY_RECORD_BACK_FOR_TIME(5f, 5f, 4);
 							iLocal_323 = 1;
 						}

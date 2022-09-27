@@ -3985,7 +3985,7 @@ void func_101(int* iParam0, bool bParam1)//Position - 0x4CA2
 			if (bParam1)
 			{
 				Var1 = { ENTITY::GET_ENTITY_COORDS(iParam0->f_2, true) + func_34(ENTITY::GET_ENTITY_COORDS(iParam0->f_2, true) - ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true)) * Vector(500f, 500f, 500f) };
-				if (!PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE(Var1, 0, &Var2, 1, 1077936128, 0))
+				if (!PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE(Var1, 0, &Var2, 1, 3f, 0f))
 				{
 					Var2 = { Var1 };
 				}
@@ -4555,7 +4555,7 @@ void func_114(int* iParam0)//Position - 0x56F9
 			AUDIO::PLAY_PED_AMBIENT_SPEECH_NATIVE(*iParam0, sLocal_407, "SPEECH_PARAMS_FORCE", 1);
 			TASK::CLEAR_PED_TASKS(*iParam0);
 			TASK::OPEN_SEQUENCE_TASK(&iVar3);
-			TASK::TASK_THROW_PROJECTILE(0, ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 0, 0);
+			TASK::TASK_THROW_PROJECTILE(0, ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 0, false);
 			TASK::TASK_SWAP_WEAPON(0, true);
 			TASK::TASK_SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(0, false);
 			TASK::TASK_COMBAT_PED(0, PLAYER::PLAYER_PED_ID(), 0, 16);
@@ -7976,7 +7976,7 @@ void func_202(int* iParam0, bool bParam1)//Position - 0xA0F0
 		if (bParam1)
 		{
 			Var2 = { ENTITY::GET_ENTITY_COORDS(*iParam0, true) + func_34(ENTITY::GET_ENTITY_COORDS(*iParam0, true) - ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true)) * Vector(500f, 500f, 500f) };
-			if (!PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE(Var2, 0, &Var3, 1, 1077936128, 0))
+			if (!PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE(Var2, 0, &Var3, 1, 3f, 0f))
 			{
 				Var3 = { Var2 };
 			}
@@ -8919,7 +8919,7 @@ void func_223(int iParam0, struct<3> Param1, bool bParam2)//Position - 0xBB6C
 	TASK::OPEN_SEQUENCE_TASK(&iVar0);
 	if (bParam2)
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Param1, 2f, -1, 0.25f, true, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Param1, 2f, -1, 0.25f, 1, 40000f);
 	}
 	else
 	{

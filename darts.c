@@ -24141,17 +24141,17 @@ void func_484(var uParam0)//Position - 0x228CC
 		{
 			if (!BitTest(Global_113347, 10))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_485(iLocal_175 == 2, Local_210, Local_212), 1f, 20000, 0.25f, false, func_124(iLocal_175 == 2, fLocal_214, fLocal_216));
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_485(iLocal_175 == 2, Local_210, Local_212), 1f, 20000, 0.25f, 0, func_124(iLocal_175 == 2, fLocal_214, fLocal_216));
 			}
 			else
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_485(iLocal_175 == 2, Local_209, Local_211), 1f, 20000, 0.25f, false, func_124(iLocal_175 == 2, fLocal_213, fLocal_215));
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_485(iLocal_175 == 2, Local_209, Local_211), 1f, 20000, 0.25f, 0, func_124(iLocal_175 == 2, fLocal_213, fLocal_215));
 			}
 			TASK::TASK_START_SCENARIO_IN_PLACE(0, "WORLD_HUMAN_HANG_OUT_STREET", 0, true);
 		}
 		else
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_485(iLocal_175 == 2, Local_209, Local_211), 1f, 20000, 0.25f, false, func_124(iLocal_175 == 2, 172.6813f, 142.6717f));
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_485(iLocal_175 == 2, Local_209, Local_211), 1f, 20000, 0.25f, 0, func_124(iLocal_175 == 2, 172.6813f, 142.6717f));
 			TASK::TASK_START_SCENARIO_IN_PLACE(0, "WORLD_HUMAN_STAND_IMPATIENT", 0, true);
 		}
 		TASK::CLOSE_SEQUENCE_TASK(iLocal_173);

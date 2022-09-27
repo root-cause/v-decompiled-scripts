@@ -820,8 +820,8 @@ void func_26()//Position - 0x834
 	ENTITY::FREEZE_ENTITY_POSITION(iLocal_271[0], false);
 	PED::SET_PED_CONFIG_FLAG(iLocal_271[0], 104, true);
 	TASK::OPEN_SEQUENCE_TASK(&iVar0);
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 98.2041f, -1291.252f, 28.2688f, 1f, -1, 0.25f, true, 40000f);
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 107.6303f, -1304.742f, 27.7688f, 1f, -1, 0.25f, false, 40000f);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 98.2041f, -1291.252f, 28.2688f, 1f, -1, 0.25f, 1, 40000f);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 107.6303f, -1304.742f, 27.7688f, 1f, -1, 0.25f, 0, 40000f);
 	TASK::TASK_PLAY_ANIM(0, "mini@strip_club@idles@stripper", "stripper_idle_01", 8f, -4f, 15000, 1, 0f, false, false, false);
 	TASK::CLOSE_SEQUENCE_TASK(iVar0);
 	TASK::TASK_PERFORM_SEQUENCE(iLocal_271[0], iVar0);
@@ -2894,7 +2894,7 @@ int func_105()//Position - 0x2B31
 			iVar2 = PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false);
 		}
 		Var3 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
-		if (PATHFIND::GET_CLOSEST_MAJOR_VEHICLE_NODE(Var3, &Var7, 3f, 0))
+		if (PATHFIND::GET_CLOSEST_MAJOR_VEHICLE_NODE(Var3, &Var7, 3f, 0f))
 		{
 			fVar8 = SYSTEM::VDIST(Var3, Var7);
 			if (fVar8 <= 10f)
@@ -4071,7 +4071,7 @@ void func_142()//Position - 0x41E4
 		iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(0, 50000);
 		TASK::CLEAR_PED_TASKS(PLAYER::PLAYER_PED_ID());
 		TASK::OPEN_SEQUENCE_TASK(&iVar1);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_289, 1f, -1, 0.25f, false, fLocal_293);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_289, 1f, -1, 0.25f, 0, fLocal_293);
 		if (iVar0 < 15000)
 		{
 			TASK::TASK_PLAY_ANIM(0, sLocal_272, "fidget_rub_hands", 1.5f, -1f, -1, 8320, 0f, false, false, false);
@@ -5872,7 +5872,7 @@ void func_203(int iParam0, struct<3> Param1)//Position - 0x6406
 				}
 				else
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Param1, 1f, -1, 0.25f, true, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Param1, 1f, -1, 0.25f, 1, 40000f);
 				}
 				if (func_25(iParam0, Param1, 1) > 5f)
 				{
@@ -8190,7 +8190,7 @@ void func_262(int iParam0)//Position - 0x9423
 			TASK::CLEAR_SEQUENCE_TASK(&iLocal_306);
 			TASK::OPEN_SEQUENCE_TASK(&iLocal_306);
 			TASK::TASK_USE_MOBILE_PHONE_TIMED(0, 8000);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_286, 1.5f, -1, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_286, 1.5f, -1, 0.25f, 0, 40000f);
 			TASK::CLOSE_SEQUENCE_TASK(iLocal_306);
 			TASK::TASK_PERFORM_SEQUENCE(iParam0, iLocal_306);
 		}

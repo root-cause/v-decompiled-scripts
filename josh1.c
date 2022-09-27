@@ -462,7 +462,7 @@ void func_1()//Position - 0x17C
 				if (iLocal_96 == 1)
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_84);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1115.44f, 317.46f, 65.98f, 1f, 30000, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1115.44f, 317.46f, 65.98f, 1f, 30000, 0.25f, 0, 40000f);
 					TASK::TASK_PLAY_ANIM(0, "rcmjosh1@impatient", "enter", 8f, -8f, -1, 0, 0f, false, false, false);
 					TASK::TASK_PLAY_ANIM(0, "rcmjosh1@impatient", "idle_b", 8f, -8f, -1, 1, 0f, false, false, false);
 					TASK::CLOSE_SEQUENCE_TASK(iLocal_84);
@@ -470,7 +470,7 @@ void func_1()//Position - 0x17C
 				else
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_84);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1115.44f, 317.46f, 65.98f, 1f, 30000, 0.25f, true, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1115.44f, 317.46f, 65.98f, 1f, 30000, 0.25f, 1, 40000f);
 					TASK::TASK_PLAY_ANIM(0, "rcmjosh1@impatient", "enter", 8f, -8f, -1, 0, 0f, false, false, false);
 					TASK::TASK_PLAY_ANIM(0, "rcmjosh1@impatient", "idle_b", 8f, -8f, -1, 1, 0f, false, false, false);
 					TASK::CLOSE_SEQUENCE_TASK(iLocal_84);

@@ -1077,7 +1077,7 @@ void func_26(int iParam0, int iParam1)//Position - 0xAF9
 								fVar3 = 2f;
 								iVar4 = joaat("MotionState_Run");
 							}
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0, Local_243 + Local_246[iParam1 /*3*/], fVar3, -1, (fLocal_248[iParam1] * 0.1f), false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0, Local_243 + Local_246[iParam1 /*3*/], fVar3, -1, (fLocal_248[iParam1] * 0.1f), 0, 40000f);
 							PED::FORCE_PED_MOTION_STATE(iParam0, iVar4, false, 0, false);
 							PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(iParam0, false, false);
 							iLocal_234[iParam1] = 1;
@@ -1099,7 +1099,7 @@ void func_26(int iParam0, int iParam1)//Position - 0xAF9
 						{
 							PED::SET_PED_MOVEMENT_CLIPSET(iParam0, &(Local_316[iParam1 /*16*/]), 0.25f);
 						}
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0, Local_243 + Local_246[iParam1 /*3*/], 1f, -1, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0, Local_243 + Local_246[iParam1 /*3*/], 1f, -1, 0.25f, 0, 40000f);
 						iLocal_234[iParam1] = 1;
 					}
 					else

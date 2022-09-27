@@ -128322,7 +128322,7 @@ void func_981()//Position - 0x97FDC
 										fVar14 = (fLocal_353[iVar3] / fVar13);
 										Var15 = { Var12 * Vector(fVar14, fVar14, fVar14) };
 										Var16 = { Local_336[iVar3 /*3*/] + Var15 };
-										if (PATHFIND::GET_CLOSEST_VEHICLE_NODE_WITH_HEADING(Var16, &Var0, &fVar1, 12, 3f, 0))
+										if (PATHFIND::GET_CLOSEST_VEHICLE_NODE_WITH_HEADING(Var16, &Var0, &fVar1, 12, 3f, 0f))
 										{
 											if (MISC::GET_DISTANCE_BETWEEN_COORDS(Var0, Var11, true) < 1000f)
 											{

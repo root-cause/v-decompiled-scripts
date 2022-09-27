@@ -101970,11 +101970,11 @@ void func_569()//Position - 0x7B98A
 							TASK::OPEN_SEQUENCE_TASK(&iLocal_195);
 							if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(iLocal_161, true), ENTITY::GET_ENTITY_COORDS(iLocal_172, true), true) > MISC::GET_DISTANCE_BETWEEN_COORDS(Local_85[0 /*3*/], ENTITY::GET_ENTITY_COORDS(iLocal_172, true), true))
 							{
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_85[0 /*3*/], 2f, 40000, 0.25f, false, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_85[0 /*3*/], 2f, 40000, 0.25f, 0, 40000f);
 							}
 							if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(iLocal_161, true), ENTITY::GET_ENTITY_COORDS(iLocal_172, true), true) > MISC::GET_DISTANCE_BETWEEN_COORDS(Local_85[1 /*3*/], ENTITY::GET_ENTITY_COORDS(iLocal_172, true), true))
 							{
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_85[1 /*3*/], 2f, 40000, 0.25f, false, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_85[1 /*3*/], 2f, 40000, 0.25f, 0, 40000f);
 							}
 							if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(iLocal_161, true), ENTITY::GET_ENTITY_COORDS(iLocal_172, true), true) > MISC::GET_DISTANCE_BETWEEN_COORDS(Local_85[2 /*3*/], ENTITY::GET_ENTITY_COORDS(iLocal_172, true), true) && !func_745(241))
 							{
@@ -101982,7 +101982,7 @@ void func_569()//Position - 0x7B98A
 							}
 							if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(iLocal_161, true), ENTITY::GET_ENTITY_COORDS(iLocal_172, true), true) > MISC::GET_DISTANCE_BETWEEN_COORDS(5423.055f, -5119.155f, 77.0883f, ENTITY::GET_ENTITY_COORDS(iLocal_172, true), true))
 							{
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 5423.055f, -5119.155f, 77.0883f, 2f, 40000, 0.25f, false, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 5423.055f, -5119.155f, 77.0883f, 2f, 40000, 0.25f, 0, 40000f);
 							}
 							TASK::TASK_ENTER_VEHICLE(0, iLocal_172, -1, 0, 2f, 1179713, 0);
 							TASK::CLOSE_SEQUENCE_TASK(iLocal_195);
@@ -102007,11 +102007,11 @@ void func_569()//Position - 0x7B98A
 							TASK::TASK_AIM_GUN_AT_COORD(0, Local_85[1 /*3*/], 1500, false, false);
 							if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(iLocal_161, true), ENTITY::GET_ENTITY_COORDS(iLocal_172, true), true) > MISC::GET_DISTANCE_BETWEEN_COORDS(Local_85[0 /*3*/], ENTITY::GET_ENTITY_COORDS(iLocal_172, true), true))
 							{
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_85[0 /*3*/], 2f, 40000, 0.25f, false, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_85[0 /*3*/], 2f, 40000, 0.25f, 0, 40000f);
 							}
 							if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(iLocal_161, true), ENTITY::GET_ENTITY_COORDS(iLocal_172, true), true) > MISC::GET_DISTANCE_BETWEEN_COORDS(Local_85[1 /*3*/], ENTITY::GET_ENTITY_COORDS(iLocal_172, true), true))
 							{
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_85[1 /*3*/], 2f, 40000, 0.25f, false, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_85[1 /*3*/], 2f, 40000, 0.25f, 0, 40000f);
 							}
 							if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(iLocal_161, true), ENTITY::GET_ENTITY_COORDS(iLocal_172, true), true) > MISC::GET_DISTANCE_BETWEEN_COORDS(Local_85[2 /*3*/], ENTITY::GET_ENTITY_COORDS(iLocal_172, true), true) && !func_745(241))
 							{
@@ -102019,7 +102019,7 @@ void func_569()//Position - 0x7B98A
 							}
 							if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(iLocal_161, true), ENTITY::GET_ENTITY_COORDS(iLocal_172, true), true) > MISC::GET_DISTANCE_BETWEEN_COORDS(5423.055f, -5119.155f, 77.0883f, ENTITY::GET_ENTITY_COORDS(iLocal_172, true), true))
 							{
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 5423.055f, -5119.155f, 77.0883f, 2f, 40000, 0.25f, false, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 5423.055f, -5119.155f, 77.0883f, 2f, 40000, 0.25f, 0, 40000f);
 							}
 							TASK::TASK_ENTER_VEHICLE(0, iLocal_172, -1, 1, 2f, 1179713, 0);
 							TASK::CLOSE_SEQUENCE_TASK(iLocal_195);
@@ -102041,11 +102041,11 @@ void func_569()//Position - 0x7B98A
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_195);
 						if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(iLocal_164, true), ENTITY::GET_ENTITY_COORDS(iLocal_172, true), true) > MISC::GET_DISTANCE_BETWEEN_COORDS(Local_85[0 /*3*/], ENTITY::GET_ENTITY_COORDS(iLocal_172, true), true))
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_85[0 /*3*/], 2f, 40000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_85[0 /*3*/], 2f, 40000, 0.25f, 0, 40000f);
 						}
 						if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(iLocal_164, true), ENTITY::GET_ENTITY_COORDS(iLocal_172, true), true) > MISC::GET_DISTANCE_BETWEEN_COORDS(5435.053f, -5140.256f, 77.1114f, ENTITY::GET_ENTITY_COORDS(iLocal_172, true), true))
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 5435.053f, -5140.256f, 77.1114f, 2f, 40000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 5435.053f, -5140.256f, 77.1114f, 2f, 40000, 0.25f, 0, 40000f);
 						}
 						if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(iLocal_164, true), ENTITY::GET_ENTITY_COORDS(iLocal_172, true), true) > MISC::GET_DISTANCE_BETWEEN_COORDS(5427.95f, -5122.748f, 77.0983f, ENTITY::GET_ENTITY_COORDS(iLocal_172, true), true) && !func_745(241))
 						{
@@ -108835,7 +108835,7 @@ void func_651()//Position - 0x876A0
 						}
 						TASK::CLEAR_PED_TASKS(uLocal_260[0]);
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_195);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, PED::GET_ANIM_INITIAL_OFFSET_POSITION(sLocal_117, "set_c4_start_loop_a_player0", Local_152, Local_153, 0f, 2), 2f, 20000, 2f, true, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, PED::GET_ANIM_INITIAL_OFFSET_POSITION(sLocal_117, "set_c4_start_loop_a_player0", Local_152, Local_153, 0f, 2), 2f, 20000, 2f, 1, 40000f);
 						TASK::TASK_PUT_PED_DIRECTLY_INTO_COVER(0, PED::GET_ANIM_INITIAL_OFFSET_POSITION(sLocal_117, "set_c4_start_loop_a_player0", Local_152, Local_153, 0f, 2), 1000, false, 0.9f, true, true, iLocal_220[0], true);
 						TASK::TASK_PLAY_ANIM_ADVANCED(0, sLocal_117, "set_c4_start_loop_a_player0", Local_152, Local_153, 2f, -8f, -1, 790537, 0f, 2, 0);
 						TASK::CLOSE_SEQUENCE_TASK(iLocal_195);
@@ -108854,7 +108854,7 @@ void func_651()//Position - 0x876A0
 						}
 						TASK::CLEAR_PED_TASKS(iLocal_164);
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_195);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, PED::GET_ANIM_INITIAL_OFFSET_POSITION(sLocal_117, "set_c4_start_loop_a_brad", Local_152, Local_153, 0f, 2), 2f, 20000, 2f, true, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, PED::GET_ANIM_INITIAL_OFFSET_POSITION(sLocal_117, "set_c4_start_loop_a_brad", Local_152, Local_153, 0f, 2), 2f, 20000, 2f, 1, 40000f);
 						TASK::TASK_PUT_PED_DIRECTLY_INTO_COVER(0, PED::GET_ANIM_INITIAL_OFFSET_POSITION(sLocal_117, "set_c4_start_loop_a_brad", Local_152, Local_153, 0f, 2), 1000, false, 0.9f, true, true, iLocal_220[1], true);
 						TASK::TASK_PLAY_ANIM_ADVANCED(0, sLocal_117, "set_c4_start_loop_a_brad", Local_152, Local_153, 8f, -8f, -1, 790537, 0f, 2, 0);
 						TASK::CLOSE_SEQUENCE_TASK(iLocal_195);
@@ -109119,7 +109119,7 @@ void func_651()//Position - 0x876A0
 				iLocal_220[0] = TASK::ADD_COVER_POINT(PED::GET_ANIM_INITIAL_OFFSET_POSITION(sLocal_117, "set_c4_start_loop_a_player0", Local_152, Local_153, 0f, 2) - Vector(1f, 0f, 0f), -func_462(PED::GET_ANIM_INITIAL_OFFSET_POSITION(sLocal_117, "set_c4_start_loop_a_player0", Local_152, Local_153, 0f, 2)), 1, 2, 0, false);
 			}
 			TASK::OPEN_SEQUENCE_TASK(&iLocal_195);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, PED::GET_ANIM_INITIAL_OFFSET_POSITION(sLocal_117, "set_c4_start_loop_a_player0", Local_152, Local_153, 0f, 2), 2f, 20000, 2f, true, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, PED::GET_ANIM_INITIAL_OFFSET_POSITION(sLocal_117, "set_c4_start_loop_a_player0", Local_152, Local_153, 0f, 2), 2f, 20000, 2f, 1, 40000f);
 			TASK::TASK_PUT_PED_DIRECTLY_INTO_COVER(0, PED::GET_ANIM_INITIAL_OFFSET_POSITION(sLocal_117, "set_c4_start_loop_a_player0", Local_152, Local_153, 0f, 2), 1000, false, 0.9f, true, true, iLocal_220[0], true);
 			TASK::TASK_PLAY_ANIM_ADVANCED(0, sLocal_117, "set_c4_start_loop_a_player0", Local_152, Local_153, 2f, -8f, -1, 790537, 0f, 2, 0);
 			TASK::CLOSE_SEQUENCE_TASK(iLocal_195);
@@ -109617,7 +109617,7 @@ void func_665()//Position - 0x8A506
 					TASK::CLEAR_PED_TASKS(uLocal_260[2]);
 					TASK::CLEAR_PED_SECONDARY_TASK(uLocal_260[2]);
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_195);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 5300.742f, -5190.498f, 82.5184f, 1f, 20000, 0.25f, false, (248.5686f + 46f));
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 5300.742f, -5190.498f, 82.5184f, 1f, 20000, 0.25f, 0, (248.5686f + 46f));
 					TASK::TASK_PLAY_ANIM(0, sLocal_111, "idle_d", 8f, -8f, -1, 786433, 0f, false, true, false);
 					TASK::CLOSE_SEQUENCE_TASK(iLocal_195);
 					TASK::TASK_PERFORM_SEQUENCE(uLocal_260[2], iLocal_195);
@@ -110418,7 +110418,7 @@ void func_669()//Position - 0x8B6CA
 					{
 						if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_164, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1)
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_164, 5313.781f, -5205.144f, 83.5237f, 1f, 20000, 0.25f, false, 114.0175f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_164, 5313.781f, -5205.144f, 83.5237f, 1f, 20000, 0.25f, 0, 114.0175f);
 						}
 					}
 				}

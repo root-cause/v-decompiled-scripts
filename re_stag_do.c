@@ -3726,8 +3726,8 @@ void func_95()//Position - 0x3889
 								{
 									TASK::CLEAR_PED_TASKS(iLocal_51);
 									TASK::OPEN_SEQUENCE_TASK(&iLocal_77);
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2013.094f, 460.3515f, 101.8024f, 2f, 20000, 0.25f, false, 40000f);
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_71, 3f, 20000, 0.25f, false, 40000f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2013.094f, 460.3515f, 101.8024f, 2f, 20000, 0.25f, 0, 40000f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_71, 3f, 20000, 0.25f, 0, 40000f);
 									TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, PLAYER::PLAYER_PED_ID(), -1);
 									TASK::TASK_LOOK_AT_ENTITY(0, PLAYER::PLAYER_PED_ID(), -1, 2048, 2);
 									TASK::CLOSE_SEQUENCE_TASK(iLocal_77);
@@ -4010,7 +4010,7 @@ void func_97()//Position - 0x455A
 			func_4(&uLocal_100, "stagdau", "stagd_failti", 4, 0, 0, 0);
 			if (!PED::IS_PED_INJURED(iLocal_51))
 			{
-				TASK::TASK_USE_MOBILE_PHONE(iLocal_51, 1, 1);
+				TASK::TASK_USE_MOBILE_PHONE(iLocal_51, true, 1);
 			}
 			if (!PED::IS_PED_INJURED(iLocal_52))
 			{
@@ -7661,13 +7661,13 @@ void func_183()//Position - 0x9CF0
 			if (!PED::IS_PED_INJURED(iLocal_51) && !PED::IS_PED_INJURED(iLocal_53))
 			{
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_77);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -330.36f, 6154.03f, 31.8f, 1f, -1, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -330.36f, 6154.03f, 31.8f, 1f, -1, 0.25f, 0, 40000f);
 				TASK::TASK_CHAT_TO_PED(0, iLocal_53, 16, 0f, 0f, 0f, 0f, 0f);
 				TASK::CLOSE_SEQUENCE_TASK(iLocal_77);
 				TASK::TASK_PERFORM_SEQUENCE(iLocal_51, iLocal_77);
 				TASK::CLEAR_SEQUENCE_TASK(&iLocal_77);
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_77);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -330.36f, 6155.03f, 31.8f, 1f, -1, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -330.36f, 6155.03f, 31.8f, 1f, -1, 0.25f, 0, 40000f);
 				TASK::TASK_CHAT_TO_PED(0, iLocal_51, 16, 0f, 0f, 0f, 0f, 0f);
 				TASK::CLOSE_SEQUENCE_TASK(iLocal_77);
 				TASK::TASK_PERFORM_SEQUENCE(iLocal_53, iLocal_77);

@@ -79789,13 +79789,13 @@ void func_413(int iParam0, var uParam1, bool bParam2, bool bParam3, bool bParam4
 						{
 							VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, Global_262145.f_21791);
 						}
-						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, 1);
+						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, true);
 						break;
 					
 					default:
 						VEHICLE::SET_VEHICLE_EXPLODES_ON_HIGH_EXPLOSION_DAMAGE(iParam0, false);
 						VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, 1f);
-						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, 1);
+						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, true);
 						break;
 					}
 			}
@@ -96083,7 +96083,7 @@ void func_676(int iParam0)//Position - 0x7973B
 			VEHICLE::SET_VEHICLE_NO_EXPLOSION_DAMAGE_FROM_DRIVER(iParam0, !func_646());
 			if (iVar1 == joaat("ruiner2"))
 			{
-				VEHICLE::SET_VEHICLE_WEAPON_CAN_TARGET_OBJECTS(iParam0, 1);
+				VEHICLE::SET_VEHICLE_WEAPON_CAN_TARGET_OBJECTS(iParam0, true);
 			}
 			if (iVar1 == joaat("blazer5"))
 			{
@@ -96166,7 +96166,7 @@ void func_676(int iParam0)//Position - 0x7973B
 		}
 		if (BitTest(Global_4718592.f_18, 24) || (func_677() && NETWORK::NETWORK_IS_ACTIVITY_SESSION()))
 		{
-			VEHICLE::SET_BIKE_EASY_TO_LAND(iParam0, 1);
+			VEHICLE::SET_BIKE_EASY_TO_LAND(iParam0, true);
 		}
 	}
 	if (bVar0)
@@ -116213,7 +116213,7 @@ int func_1201(var* uParam0, float* fParam1)//Position - 0x9757F
 {
 	struct<3> Var0;
 	var uVar1;
-	var* uVar2;
+	int* iVar2;
 	int iVar3;
 	
 	iVar3 = 0;
@@ -116232,7 +116232,7 @@ int func_1201(var* uParam0, float* fParam1)//Position - 0x9757F
 		}
 		if (iVar3 == 31)
 		{
-			if (func_1202(Local_156.f_273.f_108[0 /*4*/], uParam0, fParam1, &uVar2, 1, 0, 0))
+			if (func_1202(Local_156.f_273.f_108[0 /*4*/], uParam0, fParam1, &iVar2, 1, 0, 0))
 			{
 				return 1;
 			}
@@ -116242,13 +116242,13 @@ int func_1201(var* uParam0, float* fParam1)//Position - 0x9757F
 	return 0;
 }
 
-int func_1202(struct<3> Param0, var* uParam1, float* fParam2, var* uParam3, int iParam4, int iParam5, bool bParam6)//Position - 0x97626
+int func_1202(struct<3> Param0, var* uParam1, float* fParam2, int* iParam3, int iParam4, int iParam5, bool bParam6)//Position - 0x97626
 {
 	int iVar0;
 	
 	while (true)
 	{
-		if (PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE_WITH_HEADING(Param0, iParam4, uParam1, fParam2, uParam3, 1, 3f, 0f))
+		if (PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE_WITH_HEADING(Param0, iParam4, uParam1, fParam2, iParam3, 1, 3f, 0f))
 		{
 			if (func_543(*uParam1, 10f, 1f, 1f, 5f, iParam5, bParam6, 1, 1123024896, 0, -1, 1, 0, 0, 0, 0, 0))
 			{

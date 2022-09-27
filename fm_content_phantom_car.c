@@ -4312,13 +4312,13 @@ void func_178(int iParam0, var uParam1, bool bParam2, bool bParam3, bool bParam4
 						{
 							VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, Global_262145.f_21791);
 						}
-						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, 1);
+						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, true);
 						break;
 					
 					default:
 						VEHICLE::SET_VEHICLE_EXPLODES_ON_HIGH_EXPLOSION_DAMAGE(iParam0, false);
 						VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, 1f);
-						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, 1);
+						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, true);
 						break;
 					}
 			}
@@ -23994,7 +23994,7 @@ void func_570(int iParam0, int iParam1, bool bParam2, var uParam3, var uParam4)/
 		if (!GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(iLocal_376))
 		{
 			GRAPHICS::USE_PARTICLE_FX_ASSET("scr_tn_phantom");
-			iLocal_376 = GRAPHICS::START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY("scr_tn_phantom_flames", iParam1, 0f, 0f, 0f, 0f, 0f, 180f, 1f, false, true, false, 1065353216, 1065353216, 1065353216, 0);
+			iLocal_376 = GRAPHICS::START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY("scr_tn_phantom_flames", iParam1, 0f, 0f, 0f, 0f, 0f, 180f, 1f, false, true, false, 1f, 1f, 1f, 0f);
 		}
 	}
 	else if (GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(iLocal_376))
@@ -112011,7 +112011,7 @@ void func_1343(int iParam0)//Position - 0x8C30F
 			VEHICLE::SET_VEHICLE_NO_EXPLOSION_DAMAGE_FROM_DRIVER(iParam0, !func_842());
 			if (iVar1 == joaat("ruiner2"))
 			{
-				VEHICLE::SET_VEHICLE_WEAPON_CAN_TARGET_OBJECTS(iParam0, 1);
+				VEHICLE::SET_VEHICLE_WEAPON_CAN_TARGET_OBJECTS(iParam0, true);
 			}
 			if (iVar1 == joaat("blazer5"))
 			{
@@ -112094,7 +112094,7 @@ void func_1343(int iParam0)//Position - 0x8C30F
 		}
 		if (BitTest(Global_4718592.f_18, 24) || (func_1344() && NETWORK::NETWORK_IS_ACTIVITY_SESSION()))
 		{
-			VEHICLE::SET_BIKE_EASY_TO_LAND(iParam0, 1);
+			VEHICLE::SET_BIKE_EASY_TO_LAND(iParam0, true);
 		}
 	}
 	if (bVar0)
@@ -151850,7 +151850,7 @@ void func_2402(int iParam0, int iParam1)//Position - 0xBECB9
 							Call_Loc(Local_214.f_156.f_2.f_52.f_1);
 						}
 						Var1 = { func_2403(iParam0, iParam1) };
-						TASK::TASK_PLANE_MISSION(iParam1, NETWORK::NET_TO_VEH(iVar0), 0, 0, Var1, 21, 50f, 0f, -1f, 0f, 0f, 1);
+						TASK::TASK_PLANE_MISSION(iParam1, NETWORK::NET_TO_VEH(iVar0), 0, 0, Var1, 21, 50f, 0f, -1f, 0f, 0f, true);
 					}
 				}
 			}
@@ -151908,7 +151908,7 @@ void func_2405(int iParam0, int iParam1)//Position - 0xBEDC8
 					WEAPON::GIVE_WEAPON_TO_PED(iParam1, func_2408(iParam0), func_2407(iParam0), true, true);
 					WEAPON::SET_CURRENT_PED_WEAPON(iParam1, func_2408(iParam0), true);
 					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iParam1, true);
-					TASK::TASK_THROW_PROJECTILE(iParam1, Var0, 0, 1);
+					TASK::TASK_THROW_PROJECTILE(iParam1, Var0, 0, true);
 					if (func_2406(iParam0))
 					{
 						func_2104(iParam0, 16);
@@ -152107,7 +152107,7 @@ void func_2417(int iParam0, int iParam1)//Position - 0xBF0DE
 				{
 					if (PED::IS_PED_IN_ANY_PLANE(iParam1))
 					{
-						TASK::TASK_PLANE_MISSION(iParam1, iVar0, 0, iVar2, Var4, iVar1, func_2422(iParam0, iVar1), func_2421(iParam0, iVar1), -1f, func_2420(iParam0, iVar1), func_2420(iParam0, iVar1), 1);
+						TASK::TASK_PLANE_MISSION(iParam1, iVar0, 0, iVar2, Var4, iVar1, func_2422(iParam0, iVar1), func_2421(iParam0, iVar1), -1f, func_2420(iParam0, iVar1), func_2420(iParam0, iVar1), true);
 					}
 					else if (PED::IS_PED_IN_ANY_HELI(iParam1))
 					{
@@ -152122,7 +152122,7 @@ void func_2417(int iParam0, int iParam1)//Position - 0xBF0DE
 				{
 					if (PED::IS_PED_IN_ANY_PLANE(iParam1))
 					{
-						TASK::TASK_PLANE_MISSION(iParam1, iVar0, iVar3, 0, Var4, iVar1, func_2422(iParam0, iVar1), func_2421(iParam0, iVar1), -1f, func_2420(iParam0, iVar1), func_2420(iParam0, iVar1), 1);
+						TASK::TASK_PLANE_MISSION(iParam1, iVar0, iVar3, 0, Var4, iVar1, func_2422(iParam0, iVar1), func_2421(iParam0, iVar1), -1f, func_2420(iParam0, iVar1), func_2420(iParam0, iVar1), true);
 					}
 					else if (PED::IS_PED_IN_ANY_HELI(iParam1))
 					{
@@ -152143,7 +152143,7 @@ void func_2417(int iParam0, int iParam1)//Position - 0xBF0DE
 						Stack.Push(0);
 						Stack.Push(iParam0);
 						Call_Loc(Local_214.f_156.f_2.f_106.f_2);
-						TASK::TASK_PLANE_MISSION(StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, iVar1, func_2422(iParam0, iVar1), func_2421(iParam0, iVar1), -1f, func_2420(iParam0, iVar1), func_2420(iParam0, iVar1), 1);
+						TASK::TASK_PLANE_MISSION(StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, iVar1, func_2422(iParam0, iVar1), func_2421(iParam0, iVar1), -1f, func_2420(iParam0, iVar1), func_2420(iParam0, iVar1), true);
 					}
 					else if (PED::IS_PED_IN_ANY_HELI(iParam1))
 					{
@@ -153697,8 +153697,8 @@ void func_2502(int iParam0, int iParam1)//Position - 0xC11D7
 	float fVar5;
 	struct<3> Var6;
 	struct<3> Var7;
-	int iVar8;
-	int iVar9;
+	float fVar8;
+	float fVar9;
 	
 	bVar0 = func_2522(iParam0);
 	iVar1 = func_2521(iParam0);
@@ -153786,7 +153786,7 @@ void func_2502(int iParam0, int iParam1)//Position - 0xC11D7
 							Stack.Push(iParam1);
 							Call_Loc(Local_214.f_156.f_2.f_25.f_26);
 						}
-						TASK::TASK_PLANE_MISSION(iParam1, iVar2, 0, 0, Var4, 4, func_2519(iParam0), func_2515(iParam0), func_2518(iParam0), SYSTEM::ROUND(func_2517()), func_2516(), 1);
+						TASK::TASK_PLANE_MISSION(iParam1, iVar2, 0, 0, Var4, 4, func_2519(iParam0), func_2515(iParam0), func_2518(iParam0), SYSTEM::ROUND(func_2517()), func_2516(), true);
 						if (Local_367.f_22[iParam0 /*24*/].f_6 != Local_367.f_22[iParam0 /*24*/].f_5)
 						{
 							func_2440(Local_367.f_22[iParam0 /*24*/].f_5, iParam0);
@@ -153825,8 +153825,8 @@ void func_2502(int iParam0, int iParam1)//Position - 0xC11D7
 				if (func_575(Local_367.f_22[iParam0 /*24*/]) && (bVar0 || func_575(iVar1)))
 				{
 					Var7 = { func_2501(iParam0, -1) };
-					iVar8 = func_2514(iParam0);
-					iVar9 = func_2511(iParam0);
+					fVar8 = func_2514(iParam0);
+					fVar9 = func_2511(iParam0);
 					if (!bVar0)
 					{
 						func_2510(iVar2);
@@ -153839,11 +153839,11 @@ void func_2502(int iParam0, int iParam1)//Position - 0xC11D7
 					}
 					if (func_2509(iParam0))
 					{
-						TASK::TASK_GO_TO_COORD_ANY_MEANS_EXTRA_PARAMS_WITH_CRUISE_SPEED(iParam1, Var7, func_2508(iParam0), iVar2, true, func_2507(iParam0), -1f, 0, iVar9, func_2506(iParam0), iVar8, func_2515(iParam0));
+						TASK::TASK_GO_TO_COORD_ANY_MEANS_EXTRA_PARAMS_WITH_CRUISE_SPEED(iParam1, Var7, func_2508(iParam0), iVar2, true, func_2507(iParam0), -1f, 0f, fVar9, func_2506(iParam0), fVar8, func_2515(iParam0));
 					}
 					else
 					{
-						TASK::TASK_VEHICLE_DRIVE_TO_COORD(iParam1, iVar2, Var7, iVar8, func_2505(iParam0), ENTITY::GET_ENTITY_MODEL(iVar2), func_2507(iParam0), func_2515(iParam0), iVar9);
+						TASK::TASK_VEHICLE_DRIVE_TO_COORD(iParam1, iVar2, Var7, fVar8, func_2505(iParam0), ENTITY::GET_ENTITY_MODEL(iVar2), func_2507(iParam0), func_2515(iParam0), fVar9);
 					}
 					if (Local_367.f_22[iParam0 /*24*/].f_6 != Local_367.f_22[iParam0 /*24*/].f_5)
 					{

@@ -1413,7 +1413,7 @@ void func_16()//Position - 0x10C5
 						{
 							if ((TASK::GET_SCRIPT_TASK_STATUS(Local_197[iVar0 /*14*/], joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 0 && TASK::GET_SCRIPT_TASK_STATUS(Local_197[iVar0 /*14*/], joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1) && TASK::GET_SCRIPT_TASK_STATUS(Local_197[iVar0 /*14*/], joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 2)
 							{
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_197[iVar0 /*14*/], -159.4073f, -1024.213f, 113.3052f, 3f, -1, (3f - SYSTEM::TO_FLOAT(iVar0)), false, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_197[iVar0 /*14*/], -159.4073f, -1024.213f, 113.3052f, 3f, -1, (3f - SYSTEM::TO_FLOAT(iVar0)), 0, 40000f);
 							}
 						}
 						else if (!iLocal_112[iVar0])
@@ -6345,7 +6345,7 @@ void func_128()//Position - 0x934F
 							if (iLocal_236 != -1)
 							{
 								TASK::OPEN_SEQUENCE_TASK(&iLocal_235);
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_97[iLocal_236 /*3*/], 2f, -1, 0.25f, true, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_97[iLocal_236 /*3*/], 2f, -1, 0.25f, 1, 40000f);
 								TASK::TASK_GO_STRAIGHT_TO_COORD(0, Local_98[iLocal_236 /*3*/], 2f, -1, 40000f, 1.5f);
 								TASK::TASK_TURN_PED_TO_FACE_COORD(0, -157.0022f, -941.1864f, 113.2076f, 0);
 								TASK::CLOSE_SEQUENCE_TASK(iLocal_235);
@@ -6603,7 +6603,7 @@ void func_134(var uParam0)//Position - 0x9B69
 						}
 						else
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_77, *(uParam0[iLocal_227 /*3*/]), 2f, -1, 0.05f, true, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_77, *(uParam0[iLocal_227 /*3*/]), 2f, -1, 0.05f, 1, 40000f);
 						}
 						PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(iLocal_77, false, false);
 						iLocal_228 = -2;
@@ -21027,7 +21027,7 @@ void func_337()//Position - 0x1E83B
 				{
 					if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_77, joaat("SCRIPT_TASK_HANDS_UP")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(iLocal_77, joaat("SCRIPT_TASK_HANDS_UP")) != 2)
 					{
-						TASK::TASK_HANDS_UP(iLocal_77, 10000, PLAYER::PLAYER_PED_ID(), -1, false);
+						TASK::TASK_HANDS_UP(iLocal_77, 10000, PLAYER::PLAYER_PED_ID(), -1, 0);
 					}
 				}
 				else if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_77, joaat("SCRIPT_TASK_HANDS_UP")) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iLocal_77, joaat("SCRIPT_TASK_HANDS_UP")) == 2)

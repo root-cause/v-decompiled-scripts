@@ -74666,7 +74666,7 @@ void func_346(var uParam0, var uParam1)//Position - 0x590C5
 						if (PED::GET_SYNCHRONIZED_SCENE_PHASE(iVar3) >= fVar0 && PED::GET_SYNCHRONIZED_SCENE_PHASE(iVar3) < fVar1)
 						{
 							GRAPHICS::USE_PARTICLE_FX_ASSET("scr_mp_cig_plane");
-							uParam1->f_54 = GRAPHICS::START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY_BONE("ent_anim_lighter_flame_plane", NETWORK::NET_TO_ENT(uParam0->f_3[uParam1->f_32 /*40*/].f_12), 0f, 0f, 0.06f, 0f, 0f, 0f, ENTITY::GET_ENTITY_BONE_INDEX_BY_NAME(NETWORK::NET_TO_ENT(uParam0->f_3[uParam1->f_32 /*40*/].f_12), "VFX_Emitter"), 1f, false, false, false, 1065353216, 1065353216, 1065353216, 0);
+							uParam1->f_54 = GRAPHICS::START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY_BONE("ent_anim_lighter_flame_plane", NETWORK::NET_TO_ENT(uParam0->f_3[uParam1->f_32 /*40*/].f_12), 0f, 0f, 0.06f, 0f, 0f, 0f, ENTITY::GET_ENTITY_BONE_INDEX_BY_NAME(NETWORK::NET_TO_ENT(uParam0->f_3[uParam1->f_32 /*40*/].f_12), "VFX_Emitter"), 1f, false, false, false, 1f, 1f, 1f, 0f);
 							GRAPHICS::FORCE_PARTICLE_FX_IN_VEHICLE_INTERIOR(uParam1->f_54, 1);
 							iLocal_48 = 1;
 						}
@@ -74774,7 +74774,7 @@ void func_350(var uParam0, var uParam1)//Position - 0x594AF
 		if (uParam1->f_62 == 0)
 		{
 			GRAPHICS::USE_PARTICLE_FX_ASSET("scr_mp_cig_plane");
-			uParam1->f_52 = GRAPHICS::START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY_BONE("ent_anim_cig_smoke_plane", NETWORK::NET_TO_ENT(uParam0->f_3[uParam1->f_32 /*40*/].f_8), 0.004f, 0f, 0f, 0f, 0f, 0f, ENTITY::GET_ENTITY_BONE_INDEX_BY_NAME(NETWORK::NET_TO_ENT(uParam0->f_3[uParam1->f_32 /*40*/].f_8), "VFX_Emitter"), 1f, false, false, false, 1065353216, 1065353216, 1065353216, 0);
+			uParam1->f_52 = GRAPHICS::START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY_BONE("ent_anim_cig_smoke_plane", NETWORK::NET_TO_ENT(uParam0->f_3[uParam1->f_32 /*40*/].f_8), 0.004f, 0f, 0f, 0f, 0f, 0f, ENTITY::GET_ENTITY_BONE_INDEX_BY_NAME(NETWORK::NET_TO_ENT(uParam0->f_3[uParam1->f_32 /*40*/].f_8), "VFX_Emitter"), 1f, false, false, false, 1f, 1f, 1f, 0f);
 			GRAPHICS::FORCE_PARTICLE_FX_IN_VEHICLE_INTERIOR(uParam1->f_52, 1);
 			uParam1->f_62 = 1;
 		}
@@ -74792,7 +74792,7 @@ void func_350(var uParam0, var uParam1)//Position - 0x594AF
 		if (uParam1->f_61 == 0)
 		{
 			GRAPHICS::USE_PARTICLE_FX_ASSET("scr_mp_cig_plane");
-			uParam1->f_53 = GRAPHICS::START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY_BONE("ent_anim_cig_smoke_plane", uParam1->f_68[uParam1->f_32 /*40*/].f_9, 0.004f, 0f, 0f, 0f, 0f, 0f, ENTITY::GET_ENTITY_BONE_INDEX_BY_NAME(uParam1->f_68[uParam1->f_32 /*40*/].f_9, "VFX_Emitter"), 1f, false, false, false, 1065353216, 1065353216, 1065353216, 0);
+			uParam1->f_53 = GRAPHICS::START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY_BONE("ent_anim_cig_smoke_plane", uParam1->f_68[uParam1->f_32 /*40*/].f_9, 0.004f, 0f, 0f, 0f, 0f, 0f, ENTITY::GET_ENTITY_BONE_INDEX_BY_NAME(uParam1->f_68[uParam1->f_32 /*40*/].f_9, "VFX_Emitter"), 1f, false, false, false, 1f, 1f, 1f, 0f);
 			GRAPHICS::FORCE_PARTICLE_FX_IN_VEHICLE_INTERIOR(uParam1->f_53, 1);
 			GRAPHICS::SET_PARTICLE_FX_LOOPED_EVOLUTION(uParam1->f_53, "light_intensity", 1f, false);
 			GRAPHICS::SET_PARTICLE_FX_LOOPED_EVOLUTION(uParam1->f_53, "smoke_fade", 1f, false);

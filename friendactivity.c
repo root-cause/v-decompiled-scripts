@@ -572,7 +572,7 @@ void func_14(int iParam0, int iParam1, int iParam2)//Position - 0x854
 	int iVar2;
 	struct<3> Var3;
 	float* fVar4;
-	var* uVar5;
+	int* iVar5;
 	int iVar6;
 	
 	if (!PED::IS_PED_INJURED(iParam0))
@@ -601,7 +601,7 @@ void func_14(int iParam0, int iParam1, int iParam2)//Position - 0x854
 				Var3 = { func_35(iVar2, 0) };
 			}
 			Var1 = { Var3 + func_34(ENTITY::GET_ENTITY_COORDS(iParam0, true) - Var3) * Vector(50f, 50f, 50f) };
-			if (func_15(Var1, &Var1, &fVar4, &uVar5, 1, 0, 1))
+			if (func_15(Var1, &Var1, &fVar4, &iVar5, 1, 0, 1))
 			{
 				bVar0 = true;
 			}
@@ -625,13 +625,13 @@ void func_14(int iParam0, int iParam1, int iParam2)//Position - 0x854
 	func_12(iParam0, iParam1, 4);
 }
 
-int func_15(struct<3> Param0, var* uParam1, float* fParam2, var* uParam3, int iParam4, int iParam5, bool bParam6)//Position - 0x990
+int func_15(struct<3> Param0, var* uParam1, float* fParam2, int* iParam3, int iParam4, int iParam5, bool bParam6)//Position - 0x990
 {
 	int iVar0;
 	
 	while (true)
 	{
-		if (PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE_WITH_HEADING(Param0, iParam4, uParam1, fParam2, uParam3, 1, 3f, 0f))
+		if (PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE_WITH_HEADING(Param0, iParam4, uParam1, fParam2, iParam3, 1, 3f, 0f))
 		{
 			if (func_16(*uParam1, 10f, 1f, 1f, 5f, iParam5, bParam6, 1, 1123024896, 0, -1, 1, 0, 0, 0, 0, 0))
 			{
@@ -1979,7 +1979,7 @@ int func_74(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, int
 			}
 			else
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_109, 1f, 20000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_109, 1f, 20000, 0.25f, 0, 40000f);
 			}
 			TASK::CLOSE_SEQUENCE_TASK(iVar2);
 			TASK::TASK_PERFORM_SEQUENCE(PLAYER::PLAYER_PED_ID(), iVar2);
@@ -1995,7 +1995,7 @@ int func_74(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, int
 			}
 			else
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_112[0 /*3*/], 1f, 20000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_112[0 /*3*/], 1f, 20000, 0.25f, 0, 40000f);
 			}
 			TASK::CLOSE_SEQUENCE_TASK(iVar2);
 			TASK::TASK_PERFORM_SEQUENCE(iParam5, iVar2);
@@ -2011,7 +2011,7 @@ int func_74(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, int
 			}
 			else
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_112[1 /*3*/], 1f, 20000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_112[1 /*3*/], 1f, 20000, 0.25f, 0, 40000f);
 			}
 			TASK::CLOSE_SEQUENCE_TASK(iVar2);
 			TASK::TASK_PERFORM_SEQUENCE(iParam6, iVar2);
@@ -2413,7 +2413,7 @@ int func_74(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, int
 			TASK::CLEAR_PED_TASKS(iParam5);
 			if (*uParam1 == 1)
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam5, uParam0->f_129, 1f, -1, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam5, uParam0->f_129, 1f, -1, 0.25f, 0, 40000f);
 			}
 			else if (*uParam1 == 3 && VEHICLE::IS_VEHICLE_DRIVEABLE(*iParam7, false))
 			{
@@ -2421,7 +2421,7 @@ int func_74(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, int
 			}
 			else
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam5, uParam0->f_119, 1f, -1, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam5, uParam0->f_119, 1f, -1, 0.25f, 0, 40000f);
 			}
 		}
 		if (func_154(iParam6))
@@ -2432,7 +2432,7 @@ int func_74(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, int
 			TASK::TASK_PAUSE(0, 500);
 			if (*uParam1 == 1)
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_129, 1f, -1, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_129, 1f, -1, 0.25f, 0, 40000f);
 			}
 			else if (*uParam1 == 3 && VEHICLE::IS_VEHICLE_DRIVEABLE(*iParam7, false))
 			{
@@ -2440,7 +2440,7 @@ int func_74(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, int
 			}
 			else
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_119, 1f, -1, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_119, 1f, -1, 0.25f, 0, 40000f);
 			}
 			TASK::CLOSE_SEQUENCE_TASK(iVar25);
 			TASK::TASK_PERFORM_SEQUENCE(iParam6, iVar25);
@@ -43751,7 +43751,7 @@ int func_473(var uParam0, int iParam1, int iParam2, int iParam3)//Position - 0x3
 	int iVar4;
 	struct<3> Var5;
 	float* fVar6;
-	var* uVar7;
+	int* iVar7;
 	int iVar8;
 	
 	if (uParam0->f_1 != 0 && uParam0->f_1 < 14)
@@ -43789,7 +43789,7 @@ int func_473(var uParam0, int iParam1, int iParam2, int iParam3)//Position - 0x3
 					Var5 = { func_35(iVar4, 0) };
 				}
 				Var3 = { Var5 + func_34(ENTITY::GET_ENTITY_COORDS(uParam0->f_3, true) - Var5) * Vector(50f, 50f, 50f) };
-				if (func_15(Var3, &Var3, &fVar6, &uVar7, 1, 0, 1))
+				if (func_15(Var3, &Var3, &fVar6, &iVar7, 1, 0, 1))
 				{
 					bVar2 = true;
 				}
@@ -115978,7 +115978,7 @@ int func_889(int iParam0, var uParam1, var uParam2, int iParam3, int iParam4, va
 					WEAPON::SET_CURRENT_PED_WEAPON(iParam3, joaat("WEAPON_UNARMED"), true);
 					AUDIO::STOP_PED_SPEAKING(iParam3, true);
 					TASK::OPEN_SEQUENCE_TASK(&iVar2);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam1->f_63[1 /*3*/], 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam1->f_63[1 /*3*/], 1f, -1, 0.25f, 0, 40000f);
 					if (uParam1->f_44 && !func_287(iParam3))
 					{
 						TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, PLAYER::PLAYER_PED_ID(), 0);
@@ -115996,7 +115996,7 @@ int func_889(int iParam0, var uParam1, var uParam2, int iParam3, int iParam4, va
 					WEAPON::SET_CURRENT_PED_WEAPON(iParam4, joaat("WEAPON_UNARMED"), true);
 					AUDIO::STOP_PED_SPEAKING(iParam4, true);
 					TASK::OPEN_SEQUENCE_TASK(&iVar2);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam1->f_73[1 /*3*/], 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam1->f_73[1 /*3*/], 1f, -1, 0.25f, 0, 40000f);
 					if (uParam1->f_44 && !func_287(iParam4))
 					{
 						TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, PLAYER::PLAYER_PED_ID(), 0);

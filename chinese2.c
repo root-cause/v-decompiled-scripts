@@ -6221,8 +6221,8 @@ void func_85()//Position - 0x8C69
 								{
 									case 0:
 										func_99();
-										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2459.646f, 4977.735f, 50.5678f, 1f, 20000, 0.25f, false, 40000f);
-										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2456.221f, 4974.685f, 50.5678f, 1f, 20000, 0.25f, false, 40000f);
+										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2459.646f, 4977.735f, 50.5678f, 1f, 20000, 0.25f, 0, 40000f);
+										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2456.221f, 4974.685f, 50.5678f, 1f, 20000, 0.25f, 0, 40000f);
 										TASK::TASK_PED_SLIDE_TO_COORD(0, 2456.221f, 4974.685f, 50.5678f, 92.5678f, 0.75f);
 										TASK::TASK_ACHIEVE_HEADING(0, 92.5678f, 0);
 										func_98(&(Local_113[iVar0 /*33*/]), 0);
@@ -6243,7 +6243,7 @@ void func_85()//Position - 0x8C69
 									
 									case 2:
 										func_99();
-										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2450.491f, 4986.83f, 50.5677f, 1f, 20000, 0.25f, false, 40000f);
+										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2450.491f, 4986.83f, 50.5677f, 1f, 20000, 0.25f, 0, 40000f);
 										TASK::TASK_ACHIEVE_HEADING(0, 309.5567f, 0);
 										TASK::TASK_PAUSE(0, 2000);
 										func_98(&(Local_113[iVar0 /*33*/]), 0);
@@ -6349,7 +6349,7 @@ void func_85()//Position - 0x8C69
 											{
 												if (MISC::GET_GAME_TIMER() > (Local_113[iVar0 /*33*/].f_14 - 3000))
 												{
-													TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_113[iVar0 /*33*/], ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 1f, 20000, 0.25f, false, 40000f);
+													TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_113[iVar0 /*33*/], ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 1f, 20000, 0.25f, 0, 40000f);
 													Local_113[iVar0 /*33*/].f_5 = 15;
 												}
 											}
@@ -6364,7 +6364,7 @@ void func_85()//Position - 0x8C69
 										
 										case 13:
 											func_99();
-											TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2449.114f, 4981.984f, 45.8102f, 1f, 20000, 0.25f, false, 40000f);
+											TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2449.114f, 4981.984f, 45.8102f, 1f, 20000, 0.25f, 0, 40000f);
 											TASK::TASK_ACHIEVE_HEADING(0, 127.6328f, 3000);
 											func_98(&(Local_113[iVar0 /*33*/]), 0);
 											Local_113[iVar0 /*33*/].f_14 = MISC::GET_GAME_TIMER() + 3000;
@@ -6624,7 +6624,7 @@ void func_85()//Position - 0x8C69
 								{
 									case 0:
 										func_99();
-										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2434.891f, 4973.864f, 50.5679f, 1f, 20000, 0.25f, false, 40000f);
+										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2434.891f, 4973.864f, 50.5679f, 1f, 20000, 0.25f, 0, 40000f);
 										TASK::TASK_START_SCENARIO_IN_PLACE(0, "WORLD_HUMAN_BINOCULARS", 0, false);
 										func_98(&(Local_113[iVar0 /*33*/]), 0);
 										Local_113[iVar0 /*33*/].f_5++;
@@ -6703,7 +6703,7 @@ void func_85()//Position - 0x8C69
 									case 0:
 										if (PLAYER::IS_PLAYER_TARGETTING_ENTITY(PLAYER::PLAYER_ID(), Local_113[iVar0 /*33*/]) || (func_96(ENTITY::GET_ENTITY_COORDS(Local_113[iVar0 /*33*/], true), 1f, 1120403456) && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 2448.583f, 4969.292f, 45.1856f, 2439.538f, 4978.061f, 46.82762f, 5.75f, false, true, 0)))
 										{
-											TASK::TASK_HANDS_UP(Local_113[iVar0 /*33*/], 20000, 0, -1, false);
+											TASK::TASK_HANDS_UP(Local_113[iVar0 /*33*/], 20000, 0, -1, 0);
 											Local_113[iVar0 /*33*/].f_5 = 2;
 										}
 										break;
@@ -6958,7 +6958,7 @@ void func_85()//Position - 0x8C69
 									case 2:
 										if (MISC::GET_GAME_TIMER() > Local_113[iVar0 /*33*/].f_14)
 										{
-											TASK::TASK_HANDS_UP(Local_113[iVar0 /*33*/], 20000, 0, -1, false);
+											TASK::TASK_HANDS_UP(Local_113[iVar0 /*33*/], 20000, 0, -1, 0);
 											Local_113[iVar0 /*33*/].f_5++;
 										}
 										break;
@@ -8907,7 +8907,7 @@ int func_115(int iParam0, var uParam1, char* sParam2, struct<3> Param3, struct<3
 				{
 					if (MISC::GET_GAME_TIMER() > ((uParam1[iParam0 /*24*/])->f_11 - 3000))
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD((*uParam1)[iParam0 /*24*/], ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 1f, 20000, 0.1f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD((*uParam1)[iParam0 /*24*/], ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 1f, 20000, 0.1f, 0, 40000f);
 						(uParam1[iParam0 /*24*/])->f_15 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
 						(uParam1[iParam0 /*24*/])->f_5 = 5;
 					}
@@ -15970,10 +15970,10 @@ void func_207()//Position - 0x193FE
 				{
 					func_99();
 					TASK::TASK_SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(0, true);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2463.016f, 4974.97f, 45.5765f, 1f, -1, 0.5f, true, 40000f);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2452.833f, 4964.785f, 45.5765f, 1f, -1, 0.5f, true, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2463.016f, 4974.97f, 45.5765f, 1f, -1, 0.5f, 1, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2452.833f, 4964.785f, 45.5765f, 1f, -1, 0.5f, 1, 40000f);
 					TASK::TASK_PAUSE(0, 500);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2460.449f, 4976.938f, 45.5765f, 1f, -1, 0.5f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2460.449f, 4976.938f, 45.5765f, 1f, -1, 0.5f, 0, 40000f);
 					func_98(&iLocal_160, 1);
 				}
 				iLocal_147 = VEHICLE::CREATE_VEHICLE(joaat("dubsta"), 2479.961f, 4990f, 45.8f, -5.37f, true, true, false);

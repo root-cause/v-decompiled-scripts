@@ -6790,7 +6790,7 @@ void func_9()//Position - 0x6FD
 							PED::SET_PED_CONFIG_FLAG(func_173(), 104, true);
 							TASK::OPEN_SEQUENCE_TASK(&iLocal_408);
 							TASK::TASK_LEAVE_ANY_VEHICLE(0, 0, 64);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 6.4282f, 535.5682f, 175.028f, 1f, 20000, 1f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 6.4282f, 535.5682f, 175.028f, 1f, 20000, 1f, 0, 40000f);
 							TASK::CLOSE_SEQUENCE_TASK(iLocal_408);
 							TASK::TASK_PERFORM_SEQUENCE(func_173(), iLocal_408);
 							TASK::CLEAR_SEQUENCE_TASK(&iLocal_408);
@@ -6924,7 +6924,7 @@ void func_9()//Position - 0x6FD
 					}
 					if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_623) && PED::GET_SYNCHRONIZED_SCENE_PHASE(iLocal_623) >= 1f)
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_255(), ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(func_255(), 0f, 10f, 0f), 1f, 20000, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_255(), ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(func_255(), 0f, 10f, 0f), 1f, 20000, 0.25f, 0, 40000f);
 						TASK::TASK_LOOK_AT_ENTITY(func_175(), func_255(), 15000, 2064, 2);
 						iLocal_525 = MISC::GET_GAME_TIMER();
 						iLocal_2546++;
@@ -23583,7 +23583,7 @@ void func_261()//Position - 0x17559
 				AUDIO::STOP_SOUND(iLocal_563);
 				if (func_272(func_255(), Local_217[2 /*2*/]) == 2 && !func_271(func_255(), joaat("SCRIPT_TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT"), 1))
 				{
-					TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(func_255(), Local_217[2 /*2*/], 0);
+					TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(func_255(), Local_217[2 /*2*/], false);
 				}
 				RECORDING::REPLAY_RECORD_BACK_FOR_TIME(2f, 7f, 4);
 				iLocal_2546 = 0;
@@ -23629,12 +23629,12 @@ void func_262(struct<3> Param0)//Position - 0x17CEF
 			{
 				if (func_272(func_255(), Local_217[2 /*2*/]) == 1)
 				{
-					TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(func_255(), Local_217[2 /*2*/], 0);
+					TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(func_255(), Local_217[2 /*2*/], false);
 					iLocal_561 = 2;
 				}
 				else if (func_272(func_255(), Local_217[2 /*2*/]) == 2)
 				{
-					TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(func_255(), Local_217[2 /*2*/], 0);
+					TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(func_255(), Local_217[2 /*2*/], false);
 					iLocal_561 = 1;
 				}
 			}
@@ -73395,11 +73395,11 @@ void func_658(int iParam0, struct<3> Param1, float fParam2)//Position - 0x593EB
 	TASK::OPEN_SEQUENCE_TASK(&(Local_218[iParam0 /*4*/].f_2));
 	if (iParam0 == 4)
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -77.96f, -677.87f, 33.47f, 1f, -1, 0.25f, false, 90f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -77.96f, -677.87f, 33.47f, 1f, -1, 0.25f, 0, 90f);
 	}
 	else
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 9.47284f, -710.345f, 45.0146f, 1f, -1, 0.25f, false, 189.8286f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 9.47284f, -710.345f, 45.0146f, 1f, -1, 0.25f, 0, 189.8286f);
 	}
 	TASK::TASK_PLAY_ANIM(0, "missbigscore1guard_wait_rifle", "wait_base", 4f, -1000f, -1, 0, 0f, false, false, false);
 	TASK::TASK_PLAY_ANIM(0, "missbigscore1guard_wait_rifle", "wait_a", 1000f, -1000f, -1, 0, 0f, false, false, false);

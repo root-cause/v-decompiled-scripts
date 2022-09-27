@@ -56576,7 +56576,7 @@ void func_528()//Position - 0x47CBE
 								{
 									if (TASK::GET_SCRIPT_TASK_STATUS(Local_473.f_0, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1 && !MISC::IS_POSITION_OCCUPIED(Local_374, 0.5f, false, true, false, false, false, Local_493[1 /*7*/], false))
 									{
-										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_473.f_0, Local_374, 1f, 20000, 0.5f, false, fLocal_277);
+										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_473.f_0, Local_374, 1f, 20000, 0.5f, 0, fLocal_277);
 									}
 								}
 								else if (STREAMING::HAS_ANIM_DICT_LOADED(sLocal_390) && STREAMING::HAS_ANIM_DICT_LOADED(sLocal_389))

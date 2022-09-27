@@ -3863,11 +3863,11 @@ void func_79(int iParam0)//Position - 0x4BA8
 						{
 							if (bLocal_80)
 							{
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0, OBJECT::GET_PICKUP_COORDS(iLocal_103), 2f, -1, 0.25f, false, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0, OBJECT::GET_PICKUP_COORDS(iLocal_103), 2f, -1, 0.25f, 0, 40000f);
 							}
 							else
 							{
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0, OBJECT::GET_PICKUP_COORDS(iLocal_103), 1f, -1, 0.25f, false, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0, OBJECT::GET_PICKUP_COORDS(iLocal_103), 1f, -1, 0.25f, 0, 40000f);
 							}
 							iLocal_48++;
 						}
@@ -3881,7 +3881,7 @@ void func_79(int iParam0)//Position - 0x4BA8
 					{
 						if (OBJECT::DOES_PICKUP_EXIST(iLocal_103))
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0, OBJECT::GET_PICKUP_COORDS(iLocal_103), 2f, -1, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0, OBJECT::GET_PICKUP_COORDS(iLocal_103), 2f, -1, 0.25f, 0, 40000f);
 							iLocal_48++;
 						}
 						else
@@ -4375,7 +4375,7 @@ void func_86()//Position - 0x5726
 			{
 				PED::SET_PED_FLEE_ATTRIBUTES(iLocal_49[iVar1], 2, true);
 				TASK::OPEN_SEQUENCE_TASK(&iVar2);
-				TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(0, iLocal_50, 0);
+				TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(0, iLocal_50, false);
 				TASK::TASK_VEHICLE_MISSION_PED_TARGET(0, iLocal_50, PLAYER::PLAYER_PED_ID(), 8, 50f, 786484, 100f, 5f, true);
 				TASK::CLOSE_SEQUENCE_TASK(iVar2);
 				TASK::TASK_PERFORM_SEQUENCE(iLocal_49[iVar1], iVar2);

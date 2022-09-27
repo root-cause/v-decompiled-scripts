@@ -1433,7 +1433,7 @@ void func_39()//Position - 0x146F
 						}
 						else
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_87, 1991.677f, 3044.957f, 46.21505f, 1f, 20000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_87, 1991.677f, 3044.957f, 46.21505f, 1f, 20000, 0.25f, 0, 40000f);
 						}
 						ENTITY::SET_PED_AS_NO_LONGER_NEEDED(&iLocal_87);
 					}
@@ -1446,7 +1446,7 @@ void func_39()//Position - 0x146F
 						}
 						else
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_88, 1990.37f, 3045.121f, 46.21502f, 1f, 20000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_88, 1990.37f, 3045.121f, 46.21502f, 1f, 20000, 0.25f, 0, 40000f);
 						}
 						ENTITY::SET_PED_AS_NO_LONGER_NEEDED(&iLocal_88);
 					}

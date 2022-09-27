@@ -447,7 +447,7 @@ int func_3(int* iParam0)//Position - 0x12C
 						TASK::CLEAR_PED_TASKS(*iParam0);
 						ENTITY::STOP_SYNCHRONIZED_ENTITY_ANIM(*iParam0, -16f, true);
 						PED::SET_PED_MOVE_ANIMS_BLEND_OUT(*iParam0);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*iParam0, Local_264 + Local_266, 1f, -1, (fLocal_267 * 0.1f), false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*iParam0, Local_264 + Local_266, 1f, -1, (fLocal_267 * 0.1f), 0, 40000f);
 						PED::FORCE_PED_MOTION_STATE(*iParam0, joaat("MotionState_Walk"), false, 0, false);
 						PED::CLEAR_RAGDOLL_BLOCKING_FLAGS(*iParam0, 2);
 						func_134(3, "not playing exit synch anim");
@@ -474,7 +474,7 @@ int func_3(int* iParam0)//Position - 0x12C
 								TASK::CLEAR_PED_TASKS(*iParam0);
 								ENTITY::STOP_SYNCHRONIZED_ENTITY_ANIM(*iParam0, -16f, true);
 								PED::SET_PED_MOVE_ANIMS_BLEND_OUT(*iParam0);
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*iParam0, Local_264 + Local_266, 1f, -1, (fLocal_267 * 0.1f), false, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*iParam0, Local_264 + Local_266, 1f, -1, (fLocal_267 * 0.1f), 0, 40000f);
 								PED::FORCE_PED_MOTION_STATE(*iParam0, joaat("MotionState_Walk"), false, 0, false);
 								PED::CLEAR_RAGDOLL_BLOCKING_FLAGS(*iParam0, 2);
 								func_134(3, "WalkInterruptible phase reached");
@@ -488,7 +488,7 @@ int func_3(int* iParam0)//Position - 0x12C
 					TASK::CLEAR_PED_TASKS(*iParam0);
 					if (MISC::IS_STRING_NULL_OR_EMPTY(&cLocal_295))
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*iParam0, Local_264 + Local_266, 1f, -1, (fLocal_267 * 0.1f), false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*iParam0, Local_264 + Local_266, 1f, -1, (fLocal_267 * 0.1f), 0, 40000f);
 						PED::FORCE_PED_MOTION_STATE(*iParam0, joaat("MotionState_Walk"), false, 0, false);
 						PED::CLEAR_RAGDOLL_BLOCKING_FLAGS(*iParam0, 2);
 						func_134(3, "not playing synch scene (navmesh)");
@@ -531,7 +531,7 @@ int func_3(int* iParam0)//Position - 0x12C
 						Local_266 = { Var3 - Local_264 * Vector(4f, 4f, 4f) };
 					}
 					TASK::CLEAR_PED_TASKS(*iParam0);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*iParam0, Local_264 + Local_266, 1f, -1, (fLocal_267 * 0.1f), false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*iParam0, Local_264 + Local_266, 1f, -1, (fLocal_267 * 0.1f), 0, 40000f);
 					func_134(3, "not in vehicle");
 					return 1;
 				}
@@ -619,7 +619,7 @@ int func_3(int* iParam0)//Position - 0x12C
 					{
 						if (SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(*iParam0, true), Var5) > 100f)
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*iParam0, Var5, 1f, -1, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*iParam0, Var5, 1f, -1, 0.25f, 0, 40000f);
 							Var6 = { ENTITY::GET_ENTITY_COORDS(*iParam0, true) - Vector(2f, 2f, 2f) };
 							Var7 = { ENTITY::GET_ENTITY_COORDS(*iParam0, true) + Vector(2f, 2f, 2f) };
 							iLocal_307 = PED::ADD_SCENARIO_BLOCKING_AREA(Var6, Var7, false, false, true, true);
@@ -681,7 +681,7 @@ int func_3(int* iParam0)//Position - 0x12C
 				}
 				if (SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(*iParam0, true), ENTITY::GET_ENTITY_COORDS(*iParam0, true)) > (50f * 1.25f))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*iParam0, Local_264 + Local_266, 1f, -1, (fLocal_267 * 0.1f), false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*iParam0, Local_264 + Local_266, 1f, -1, (fLocal_267 * 0.1f), 0, 40000f);
 					func_134(3, "flee to navmesh");
 					return 1;
 				}

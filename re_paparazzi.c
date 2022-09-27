@@ -1456,11 +1456,11 @@ void func_31()//Position - 0x15B5
 					}
 					if (!PED::IS_PED_INJURED(func_63(2, 1)))
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_63(2, 1), Local_156, 2f, -1, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_63(2, 1), Local_156, 2f, -1, 0.25f, 0, 40000f);
 					}
 					if (!PED::IS_PED_INJURED(func_63(3, 1)))
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_63(3, 1), Local_157, 2f, -1, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_63(3, 1), Local_157, 2f, -1, 0.25f, 0, 40000f);
 					}
 					if (!ENTITY::DOES_ENTITY_EXIST(func_63(3, 0)))
 					{
@@ -1470,15 +1470,15 @@ void func_31()//Position - 0x15B5
 					{
 						if (!PED::IS_PED_INJURED(func_63(1, 0)))
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_63(1, 0), Local_158, 2f, 20000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_63(1, 0), Local_158, 2f, 20000, 0.25f, 0, 40000f);
 						}
 						if (!PED::IS_PED_INJURED(func_63(1, 1)))
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_63(1, 1), Local_159, 2f, 20000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_63(1, 1), Local_159, 2f, 20000, 0.25f, 0, 40000f);
 						}
 						if (!PED::IS_PED_INJURED(func_63(0, 1)))
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_63(0, 1), Local_160, 2f, 20000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_63(0, 1), Local_160, 2f, 20000, 0.25f, 0, 40000f);
 						}
 					}
 					SYSTEM::SETTIMERB(0);
@@ -2983,7 +2983,7 @@ void func_61(int iParam0, struct<3> Param1, float fParam2, char* sParam3, char* 
 		{
 			if (TASK::GET_SCRIPT_TASK_STATUS(Local_109[iParam0 /*18*/], joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1)
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_109[iParam0 /*18*/], Param1, 2f, -1, 0.25f, false, fParam2);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_109[iParam0 /*18*/], Param1, 2f, -1, 0.25f, 0, fParam2);
 			}
 		}
 		else if (MISC::ABSF((func_62(ENTITY::GET_ENTITY_HEADING(Local_109[iParam0 /*18*/])) - func_62(fParam2))) > 10f)
@@ -5005,7 +5005,7 @@ void func_108(char* sParam0)//Position - 0x670E
 				if (SYSTEM::VDIST(Local_53, Local_49) < 100f)
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iVar2);
-					TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(0, iLocal_70, 0);
+					TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(0, iLocal_70, false);
 					TASK::TASK_VEHICLE_DRIVE_TO_COORD(0, iLocal_70, Local_49, 20f, 0, joaat("serrano"), 786599, 10f, 10f);
 					TASK::TASK_VEHICLE_PARK(0, iLocal_70, Local_49, 288.7089f, 1, 50f, false);
 					TASK::TASK_VEHICLE_MISSION_COORS_TARGET(0, iLocal_70, ENTITY::GET_ENTITY_COORDS(iLocal_70, true), 5, 10f, 262144, 2f, 2f, true);
@@ -5019,7 +5019,7 @@ void func_108(char* sParam0)//Position - 0x670E
 				else
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iVar3);
-					TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(0, iLocal_70, 0);
+					TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(0, iLocal_70, false);
 					TASK::TASK_VEHICLE_DRIVE_WANDER(0, iLocal_70, 15f, 786468);
 					TASK::CLOSE_SEQUENCE_TASK(iVar3);
 					TASK::TASK_PERFORM_SEQUENCE(iLocal_67, iVar3);
@@ -8287,7 +8287,7 @@ void func_184()//Position - 0xA763
 						if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_67, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1 && !iLocal_189)
 						{
 							TASK::OPEN_SEQUENCE_TASK(&iVar6);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 259.2552f, 122.2986f, 100.441f, 1f, 20000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 259.2552f, 122.2986f, 100.441f, 1f, 20000, 0.25f, 0, 40000f);
 							TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, PLAYER::PLAYER_PED_ID(), 0);
 							TASK::CLOSE_SEQUENCE_TASK(iVar6);
 							TASK::TASK_PERFORM_SEQUENCE(iLocal_67, iVar6);
@@ -8628,7 +8628,7 @@ void func_185(struct<3> Param0, bool bParam1)//Position - 0xB3E8
 	{
 		if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_67, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1)
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_67, Param0, 1f, -1, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_67, Param0, 1f, -1, 0.25f, 0, 40000f);
 		}
 	}
 	else if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_67, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1)

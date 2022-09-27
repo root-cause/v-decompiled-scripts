@@ -4976,7 +4976,7 @@ int func_124(int iParam0)//Position - 0x5093
 
 int func_125(int* iParam0, int iParam1)//Position - 0x50D9
 {
-	bool bVar0;
+	int iVar0;
 	float fVar1;
 	float fVar2;
 	float fVar3;
@@ -4986,7 +4986,7 @@ int func_125(int* iParam0, int iParam1)//Position - 0x50D9
 	struct<3> Var7;
 	int iVar8;
 	
-	bVar0 = false;
+	iVar0 = 0;
 	if (ENTITY::DOES_ENTITY_EXIST(*iParam0))
 	{
 		if (!func_137(2, *iParam0))
@@ -5059,7 +5059,7 @@ int func_125(int* iParam0, int iParam1)//Position - 0x50D9
 			case 1:
 				if (TASK::GET_SCRIPT_TASK_STATUS(*iParam0, joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD")) != 1)
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*iParam0, Local_263 + Local_266[iParam1 /*3*/], 1f, -1, 0.25f, bVar0, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*iParam0, Local_263 + Local_266[iParam1 /*3*/], 1f, -1, 0.25f, iVar0, 40000f);
 					iLocal_260[iParam1] = 2;
 					return 1;
 				}
@@ -5068,7 +5068,7 @@ int func_125(int* iParam0, int iParam1)//Position - 0x50D9
 				{
 					if (!func_130() && !ENTITY::IS_ENTITY_ON_SCREEN(*iParam0))
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*iParam0, Local_263 + Local_266[iParam1 /*3*/], 1f, -1, 0.25f, bVar0, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*iParam0, Local_263 + Local_266[iParam1 /*3*/], 1f, -1, 0.25f, iVar0, 40000f);
 						iLocal_260[iParam1] = 2;
 						return 1;
 					}
@@ -5150,7 +5150,7 @@ int func_125(int* iParam0, int iParam1)//Position - 0x50D9
 					{
 						if (SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(*iParam0, true), Var7) > 100f)
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*iParam0, Var7, 1f, -1, 0.25f, bVar0, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*iParam0, Var7, 1f, -1, 0.25f, iVar0, 40000f);
 							iLocal_260[iParam1] = 1;
 							return 1;
 						}

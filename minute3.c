@@ -37100,7 +37100,7 @@ void func_300()//Position - 0x299EB
 			if ((!PED::IS_PED_FLEEING(iLocal_98[iVar0]) && !func_294(iLocal_98[iVar0], joaat("SCRIPT_TASK_PERFORM_SEQUENCE"))) && iVar1 > (iVar0 * iVar2))
 			{
 				TASK::OPEN_SEQUENCE_TASK(&iVar3);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_101[iVar0 /*3*/], 3f, 20000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_101[iVar0 /*3*/], 3f, 20000, 0.25f, 0, 40000f);
 				TASK::TASK_SMART_FLEE_PED(0, PLAYER::PLAYER_PED_ID(), 500f, -1, false, false);
 				TASK::CLOSE_SEQUENCE_TASK(iVar3);
 				if (PED::IS_PED_USING_ANY_SCENARIO(iLocal_98[iVar0]))
@@ -43649,7 +43649,7 @@ void func_419()//Position - 0x328A4
 				ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(iLocal_103[iVar0], true);
 				if ((iVar0 % 2) == 0)
 				{
-					TASK::TASK_HANDS_UP(iLocal_103[iVar0], -1, 0, -1, false);
+					TASK::TASK_HANDS_UP(iLocal_103[iVar0], -1, 0, -1, 0);
 				}
 				else
 				{
@@ -43744,7 +43744,7 @@ void func_420()//Position - 0x32C72
 				ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(iLocal_98[iVar0], true);
 				if ((iVar0 % 2) == 0)
 				{
-					TASK::TASK_HANDS_UP(iLocal_98[iVar0], -1, 0, -1, false);
+					TASK::TASK_HANDS_UP(iLocal_98[iVar0], -1, 0, -1, 0);
 				}
 				else
 				{
@@ -55438,7 +55438,7 @@ void func_650()//Position - 0x434B9
 			{
 				if (!(func_294(iLocal_98[iVar0], joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) || PED::IS_PED_FLEEING(iLocal_98[iVar0])))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_98[iVar0], Local_101[iVar0 /*3*/], 2f, 20000, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_98[iVar0], Local_101[iVar0 /*3*/], 2f, 20000, 0.25f, 0, 40000f);
 				}
 				PED::SET_PED_KEEP_TASK(iLocal_98[iVar0], true);
 				ENTITY::SET_PED_AS_NO_LONGER_NEEDED(&(iLocal_98[iVar0]));

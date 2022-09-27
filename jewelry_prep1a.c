@@ -14474,7 +14474,7 @@ void func_273(int iParam0)//Position - 0x112A6
 						}
 						else if (!func_191(*iParam0, joaat("SCRIPT_TASK_GOTO_ENTITY_OFFSET"), 1) || func_274(*iParam0))
 						{
-							TASK::TASK_GOTO_ENTITY_OFFSET_XY(*iParam0, iParam0->f_91, -1, 2f, -1f, 2.5f, 1f, true);
+							TASK::TASK_GOTO_ENTITY_OFFSET_XY(*iParam0, iParam0->f_91, -1, 2f, -1f, 2.5f, 1f, 1);
 						}
 					}
 					break;
@@ -14497,7 +14497,7 @@ void func_273(int iParam0)//Position - 0x112A6
 						}
 						else if ((!func_191(*iParam0, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD"), 1) || func_274(*iParam0)) || iVar1)
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*iParam0, iParam0->f_43, 1f, -1, 3f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*iParam0, iParam0->f_43, 1f, -1, 3f, 0, 40000f);
 						}
 					}
 					break;
@@ -14600,7 +14600,7 @@ void func_275(var uParam0)//Position - 0x117CD
 								TASK::OPEN_SEQUENCE_TASK(&iLocal_1280);
 								if (!func_65(ENTITY::GET_ENTITY_COORDS(*uParam0, true), 126.8496f, -3089.249f, 4.9141f, 0.75f, 0))
 								{
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 126.8496f, -3089.249f, 4.9141f, 1f, -1, 0.5f, false, 264.2812f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 126.8496f, -3089.249f, 4.9141f, 1f, -1, 0.5f, 0, 264.2812f);
 								}
 								TASK::TASK_ACHIEVE_HEADING(0, 264.2812f, 0);
 								TASK::TASK_PLAY_ANIM(0, "misslsdhsclipboard@base", "base", 8f, -8f, -1, 1, 0f, false, false, false);
@@ -14701,7 +14701,7 @@ void func_275(var uParam0)//Position - 0x117CD
 						}
 						else if (!func_191(*uParam0, joaat("SCRIPT_TASK_GOTO_ENTITY_OFFSET"), 1) || func_274(*uParam0))
 						{
-							TASK::TASK_GOTO_ENTITY_OFFSET_XY(*uParam0, uParam0->f_91, -1, 2f, -1f, 2.5f, 1f, true);
+							TASK::TASK_GOTO_ENTITY_OFFSET_XY(*uParam0, uParam0->f_91, -1, 2f, -1f, 2.5f, 1f, 1);
 						}
 					}
 					break;
@@ -14724,7 +14724,7 @@ void func_275(var uParam0)//Position - 0x117CD
 						}
 						else if ((!func_191(*uParam0, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD"), 1) || func_274(*uParam0)) || iVar3)
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*uParam0, uParam0->f_43, 1f, -1, 3f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*uParam0, uParam0->f_43, 1f, -1, 3f, 0, 40000f);
 						}
 					}
 					break;
@@ -14897,7 +14897,7 @@ void func_275(var uParam0)//Position - 0x117CD
 			}
 			else if ((!func_191(*uParam0, joaat("SCRIPT_TASK_SMART_FLEE_PED"), 1) && !func_191(*uParam0, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD"), 1)) || func_274(*uParam0))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*uParam0, 177.7484f, -3240.897f, 4.6079f, 3f, -1, 0.25f, true, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*uParam0, 177.7484f, -3240.897f, 4.6079f, 3f, -1, 0.25f, 1, 40000f);
 			}
 			break;
 		
@@ -14907,7 +14907,7 @@ void func_275(var uParam0)//Position - 0x117CD
 				case joaat("GUN_AIMED_AT"):
 					if (!func_191(*uParam0, joaat("SCRIPT_TASK_HANDS_UP"), 1) || func_274(*uParam0))
 					{
-						TASK::TASK_HANDS_UP(*uParam0, -1, PLAYER::PLAYER_PED_ID(), 0, true);
+						TASK::TASK_HANDS_UP(*uParam0, -1, PLAYER::PLAYER_PED_ID(), 0, 1);
 					}
 					break;
 			}

@@ -923,7 +923,7 @@ void __EntryFunction__()//Position - 0x0
 					iVar0 = 6;
 				}
 				iVar0 = 5;
-				PATHFIND::GET_CLOSEST_VEHICLE_NODE_WITH_HEADING(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), &uVar5, &uVar6, 1, 3f, 0);
+				PATHFIND::GET_CLOSEST_VEHICLE_NODE_WITH_HEADING(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), &uVar5, &uVar6, 1, 3f, 0f);
 				if (func_127(iVar7, 20000))
 				{
 					iVar0 = 6;
@@ -1177,7 +1177,7 @@ int func_1(int iParam0, struct<5> Param1, var uParam2, var uParam3, var uParam4,
 					}
 					if (!PED::IS_PED_INJURED(iLocal_257))
 					{
-						TASK::TASK_HANDS_UP(iLocal_257, -1, 0, -1, false);
+						TASK::TASK_HANDS_UP(iLocal_257, -1, 0, -1, 0);
 						if (!PED::IS_PED_INJURED((*uParam6)[0]))
 						{
 							TASK::TASK_PLAY_ANIM((*uParam6)[0], "random@getawaydriver@thugs", "base_a", 4f, -2f, -1, 1, 0f, false, false, false);
@@ -2020,7 +2020,7 @@ int func_1(int iParam0, struct<5> Param1, var uParam2, var uParam3, var uParam4,
 					TASK::TASK_LOOK_AT_ENTITY(PLAYER::PLAYER_PED_ID(), (*uParam6)[iVar8], 4000, 2048, 2);
 					TASK::OPEN_SEQUENCE_TASK(&iVar0);
 					TASK::TASK_LEAVE_ANY_VEHICLE(0, 0, 4194816);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var7[iLocal_221 /*3*/], 2f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var7[iLocal_221 /*3*/], 2f, -1, 0.25f, 0, 40000f);
 					TASK::TASK_SMART_FLEE_PED(0, PLAYER::PLAYER_PED_ID(), 200f, -1, false, false);
 					TASK::CLOSE_SEQUENCE_TASK(iVar0);
 					TASK::TASK_PERFORM_SEQUENCE((*uParam6)[0], iVar0);
@@ -2030,7 +2030,7 @@ int func_1(int iParam0, struct<5> Param1, var uParam2, var uParam3, var uParam4,
 						TASK::OPEN_SEQUENCE_TASK(&iVar0);
 						TASK::TASK_LEAVE_ANY_VEHICLE(0, 2000, 4194816);
 						TASK::TASK_LOOK_AT_ENTITY(0, PLAYER::PLAYER_PED_ID(), 3000, 2052, 2);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var7[iLocal_221 /*3*/], 2f, -1, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var7[iLocal_221 /*3*/], 2f, -1, 0.25f, 0, 40000f);
 						TASK::TASK_SMART_FLEE_PED(0, PLAYER::PLAYER_PED_ID(), 200f, -1, false, false);
 						TASK::CLOSE_SEQUENCE_TASK(iVar0);
 						TASK::TASK_PERFORM_SEQUENCE((*uParam6)[1], iVar0);
@@ -9967,7 +9967,7 @@ void func_167()//Position - 0xDF35
 {
 	if (!bLocal_248)
 	{
-		PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE(func_186(PLAYER::PLAYER_ID()) - Vector(0f, 10f, 0f), MISC::GET_RANDOM_INT_IN_RANGE(5, 15), &Local_235, 1, 1077936128, 0);
+		PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE(func_186(PLAYER::PLAYER_ID()) - Vector(0f, 10f, 0f), MISC::GET_RANDOM_INT_IN_RANGE(5, 15), &Local_235, 1, 3f, 0f);
 		if (!CAM::IS_SPHERE_VISIBLE(Local_235, 10f))
 		{
 			Local_233 = { Local_235 };
@@ -9975,7 +9975,7 @@ void func_167()//Position - 0xDF35
 		}
 		else
 		{
-			PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE(func_186(PLAYER::PLAYER_ID()) + Vector(0f, 10f, 0f), MISC::GET_RANDOM_INT_IN_RANGE(5, 15), &Local_235, 1, 1077936128, 0);
+			PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE(func_186(PLAYER::PLAYER_ID()) + Vector(0f, 10f, 0f), MISC::GET_RANDOM_INT_IN_RANGE(5, 15), &Local_235, 1, 3f, 0f);
 			if (!CAM::IS_SPHERE_VISIBLE(Local_235, 10f))
 			{
 				Local_233 = { Local_235 };

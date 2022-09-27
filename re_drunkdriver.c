@@ -2797,8 +2797,8 @@ void func_76()//Position - 0x299A
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_79);
 					TASK::TASK_LOOK_AT_ENTITY(0, iLocal_73[0], 7000, 2060, 4);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1052.215f, -1354.937f, 4.3754f, 1f, -1, 1f, false, 40000f);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1061.464f, -1384.922f, 4.2462f, 1f, -1, 1f, true, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1052.215f, -1354.937f, 4.3754f, 1f, -1, 1f, 0, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1061.464f, -1384.922f, 4.2462f, 1f, -1, 1f, 1, 40000f);
 					TASK::TASK_WANDER_STANDARD(0, 40000f, 0);
 					TASK::CLOSE_SEQUENCE_TASK(iLocal_79);
 					TASK::TASK_PERFORM_SEQUENCE(iLocal_73[1], iLocal_79);
@@ -3065,8 +3065,8 @@ void func_76()//Position - 0x299A
 										TASK::TASK_PLAY_ANIM(0, "random@drunk_driver_1", "drunk_breakout_dd2", 2f, -2f, -1, 0, 0f, false, false, false);
 										TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, iLocal_73[0], 0);
 										TASK::TASK_PAUSE(0, 3000);
-										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1052.215f, -1354.937f, 4.3754f, 1f, -1, 1f, false, 40000f);
-										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1061.464f, -1384.922f, 4.2462f, 1f, -1, 1f, true, 40000f);
+										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1052.215f, -1354.937f, 4.3754f, 1f, -1, 1f, 0, 40000f);
+										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1061.464f, -1384.922f, 4.2462f, 1f, -1, 1f, 1, 40000f);
 										TASK::TASK_WANDER_STANDARD(0, 40000f, 0);
 										TASK::CLOSE_SEQUENCE_TASK(iLocal_79);
 										TASK::TASK_PERFORM_SEQUENCE(iLocal_73[1], iLocal_79);
@@ -3450,7 +3450,7 @@ void func_76()//Position - 0x299A
 								{
 									if (VEHICLE::IS_VEHICLE_SEAT_FREE(iLocal_74, -1, false) && PED::IS_PED_IN_VEHICLE(iLocal_73[0], iLocal_74, false))
 									{
-										TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(iLocal_73[0], iLocal_74, 0);
+										TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(iLocal_73[0], iLocal_74, false);
 										iLocal_53 = 2;
 									}
 									else if (VEHICLE::GET_PED_IN_VEHICLE_SEAT(iLocal_74, -1, false) == iLocal_73[0])
@@ -4180,7 +4180,7 @@ void func_77()//Position - 0x4A2D
 			{
 				if (!PED::IS_PED_INJURED(iLocal_73[1]))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_73[1], Local_70, 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_73[1], Local_70, 1f, -1, 0.25f, 0, 40000f);
 					iLocal_106++;
 				}
 			}
@@ -5330,7 +5330,7 @@ void func_109()//Position - 0x5F02
 			{
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_79);
 				TASK::TASK_LEAVE_ANY_VEHICLE(0, 0, 0);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_70, 1f, -1, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_70, 1f, -1, 0.25f, 0, 40000f);
 				TASK::CLOSE_SEQUENCE_TASK(iLocal_79);
 				TASK::TASK_PERFORM_SEQUENCE(iLocal_73[1], iLocal_79);
 				TASK::CLEAR_SEQUENCE_TASK(&iLocal_79);
@@ -5344,7 +5344,7 @@ void func_109()//Position - 0x5F02
 			{
 				if (!PED::IS_PED_INJURED(iLocal_73[0]))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_73[0], Local_70, 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_73[0], Local_70, 1f, -1, 0.25f, 0, 40000f);
 					iLocal_106++;
 				}
 			}
@@ -5388,7 +5388,7 @@ void func_109()//Position - 0x5F02
 				{
 					if (func_67(&uLocal_140, "REDR2AU", "REDR2_NOT", 4, 0, 0, 0))
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_73[0], Local_70, 1f, -1, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_73[0], Local_70, 1f, -1, 0.25f, 0, 40000f);
 						iLocal_105 = MISC::GET_GAME_TIMER() + 3500;
 						iLocal_106++;
 					}
@@ -5397,7 +5397,7 @@ void func_109()//Position - 0x5F02
 				{
 					if (func_67(&uLocal_140, "REDR2AU", "REDR2_MIS", 4, 0, 0, 0))
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_73[0], Local_70, 1f, -1, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_73[0], Local_70, 1f, -1, 0.25f, 0, 40000f);
 						iLocal_105 = MISC::GET_GAME_TIMER() + 3500;
 						iLocal_106++;
 					}
@@ -5481,7 +5481,7 @@ void func_110()//Position - 0x61B7
 					if (PED::IS_PED_IN_ANY_VEHICLE(iLocal_73[1], false))
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_79);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_70, 1f, -1, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_70, 1f, -1, 0.25f, 0, 40000f);
 						TASK::CLOSE_SEQUENCE_TASK(iLocal_79);
 						TASK::TASK_PERFORM_SEQUENCE(iLocal_73[1], iLocal_79);
 						TASK::CLEAR_SEQUENCE_TASK(&iLocal_79);
@@ -5496,7 +5496,7 @@ void func_110()//Position - 0x61B7
 					if (PED::IS_PED_IN_ANY_VEHICLE(iLocal_73[0], false))
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_79);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_70 - Vector(0f, 0f, 1f), 1f, -1, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_70 - Vector(0f, 0f, 1f), 1f, -1, 0.25f, 0, 40000f);
 						TASK::CLOSE_SEQUENCE_TASK(iLocal_79);
 						TASK::TASK_PERFORM_SEQUENCE(iLocal_73[0], iLocal_79);
 						TASK::CLEAR_SEQUENCE_TASK(&iLocal_79);
@@ -5886,7 +5886,7 @@ void func_121()//Position - 0x6A9F
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_79);
 				TASK::TASK_LEAVE_ANY_VEHICLE(0, 0, 0);
 				TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, PLAYER::PLAYER_PED_ID(), 1800);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_70, 1f, -1, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_70, 1f, -1, 0.25f, 0, 40000f);
 				TASK::TASK_PLAY_ANIM(0, "random@drunk_driver_1", "drunk_fall_over", 2f, -2f, -1, 2359304, 0f, false, false, false);
 				TASK::CLOSE_SEQUENCE_TASK(iLocal_79);
 				TASK::TASK_PERFORM_SEQUENCE(iLocal_73[0], iLocal_79);
@@ -5957,7 +5957,7 @@ void func_122()//Position - 0x6C7E
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_79);
 				TASK::TASK_LEAVE_ANY_VEHICLE(0, 0, 4194304);
 				TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, PLAYER::PLAYER_PED_ID(), 1800);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_70, 1f, -1, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_70, 1f, -1, 0.25f, 0, 40000f);
 				TASK::TASK_PLAY_ANIM(0, "random@drunk_driver_1", "drunk_fall_over", 2f, -2f, -1, 2359304, 0f, false, false, false);
 				TASK::CLOSE_SEQUENCE_TASK(iLocal_79);
 				TASK::TASK_PERFORM_SEQUENCE(iLocal_73[0], iLocal_79);
@@ -6048,7 +6048,7 @@ void func_123()//Position - 0x6EB1
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_79);
 				TASK::TASK_LEAVE_ANY_VEHICLE(0, 0, 4194304);
 				TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, PLAYER::PLAYER_PED_ID(), 1800);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_70, 1f, -1, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_70, 1f, -1, 0.25f, 0, 40000f);
 				TASK::TASK_PLAY_ANIM(0, "random@drunk_driver_1", "drunk_fall_over", 2f, -2f, -1, 2359304, 0f, false, false, false);
 				TASK::CLOSE_SEQUENCE_TASK(iLocal_79);
 				TASK::TASK_PERFORM_SEQUENCE(iLocal_73[0], iLocal_79);

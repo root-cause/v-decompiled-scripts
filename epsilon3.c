@@ -37390,7 +37390,7 @@ void func_290()//Position - 0x2A674
 			bLocal_252 = false;
 			func_292(&uLocal_86, 3, Local_81.f_28[0], "MARNIE", 0, 1);
 			TASK::OPEN_SEQUENCE_TASK(&iLocal_255);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1817.323f, 4708.106f, 38.1031f, 1f, 20000, 0.25f, true, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1817.323f, 4708.106f, 38.1031f, 1f, 20000, 0.25f, 1, 40000f);
 			TASK::TASK_WANDER_STANDARD(0, 40000f, 0);
 			TASK::CLOSE_SEQUENCE_TASK(iLocal_255);
 			if (func_241(PLAYER::PLAYER_PED_ID(), Local_81.f_28[0], 1) >= 4f)

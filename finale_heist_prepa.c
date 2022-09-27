@@ -2608,7 +2608,7 @@ void func_77()//Position - 0x27D8
 					break;
 				
 				case 2:
-					TASK::TASK_USE_MOBILE_PHONE(Local_289[iVar0 /*22*/], 1, 1);
+					TASK::TASK_USE_MOBILE_PHONE(Local_289[iVar0 /*22*/], true, 1);
 					break;
 				}
 		}
@@ -3550,7 +3550,7 @@ int func_109(int iParam0, int iParam1)//Position - 0x397C
 				{
 					fVar0 = 2f;
 				}
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam1, Local_254[iLocal_470 /*4*/], fVar0, 20000, 0.25f, false, Local_254[iLocal_470 /*4*/].f_3);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam1, Local_254[iLocal_470 /*4*/], fVar0, 20000, 0.25f, 0, Local_254[iLocal_470 /*4*/].f_3);
 				iLocal_43[iParam0] = 1;
 			}
 			break;
@@ -4302,7 +4302,7 @@ void func_134(int iParam0)//Position - 0x4858
 			TASK::OPEN_SEQUENCE_TASK(&iVar0);
 			if (!func_63(Local_289[iParam0 /*22*/], Local_289[iParam0 /*22*/].f_1, 3f, 1))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_289[iParam0 /*22*/].f_1, 1f, 120000, 0.25f, false, Local_289[iParam0 /*22*/].f_4);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_289[iParam0 /*22*/].f_1, 1f, 120000, 0.25f, 0, Local_289[iParam0 /*22*/].f_4);
 			}
 			else
 			{
@@ -4314,7 +4314,7 @@ void func_134(int iParam0)//Position - 0x4858
 			}
 			else
 			{
-				TASK::TASK_USE_MOBILE_PHONE(0, 1, 1);
+				TASK::TASK_USE_MOBILE_PHONE(0, true, 1);
 			}
 			TASK::CLOSE_SEQUENCE_TASK(iVar0);
 			TASK::TASK_PERFORM_SEQUENCE(Local_289[iParam0 /*22*/], iVar0);
@@ -4328,7 +4328,7 @@ void func_134(int iParam0)//Position - 0x4858
 					TASK::OPEN_SEQUENCE_TASK(&iVar0);
 					if (!func_63(Local_289[iParam0 /*22*/], Local_289[iParam0 /*22*/].f_1, 3f, 1))
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_289[iParam0 /*22*/].f_1, 1f, 120000, 0.25f, false, Local_289[iParam0 /*22*/].f_4);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_289[iParam0 /*22*/].f_1, 1f, 120000, 0.25f, 0, Local_289[iParam0 /*22*/].f_4);
 					}
 					else
 					{
@@ -4344,7 +4344,7 @@ void func_134(int iParam0)//Position - 0x4858
 					TASK::OPEN_SEQUENCE_TASK(&iVar0);
 					if (!func_63(Local_289[iParam0 /*22*/], Local_289[iParam0 /*22*/].f_1, 3f, 1))
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_289[iParam0 /*22*/].f_1, 1f, 120000, 0.25f, false, Local_289[iParam0 /*22*/].f_4);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_289[iParam0 /*22*/].f_1, 1f, 120000, 0.25f, 0, Local_289[iParam0 /*22*/].f_4);
 					}
 					else
 					{

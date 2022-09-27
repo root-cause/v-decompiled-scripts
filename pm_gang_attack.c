@@ -1514,21 +1514,21 @@ void func_39(int iParam0, struct<3> Param1)//Position - 0x164A
 			{
 				TASK::OPEN_SEQUENCE_TASK(&iVar2);
 				TASK::TASK_STAND_STILL(0, MISC::GET_RANDOM_INT_IN_RANGE(1000, 6000));
-				TASK::TASK_THROW_PROJECTILE(0, func_40(Param1, 1f), 0, 0);
+				TASK::TASK_THROW_PROJECTILE(0, func_40(Param1, 1f), 0, false);
 				TASK::TASK_STAND_STILL(0, MISC::GET_RANDOM_INT_IN_RANGE(1000, 6000));
-				TASK::TASK_THROW_PROJECTILE(0, func_40(Param1, 1f), 0, 0);
+				TASK::TASK_THROW_PROJECTILE(0, func_40(Param1, 1f), 0, false);
 				TASK::TASK_STAND_STILL(0, MISC::GET_RANDOM_INT_IN_RANGE(1000, 6000));
-				TASK::TASK_THROW_PROJECTILE(0, func_40(Param1, 1f), 0, 0);
+				TASK::TASK_THROW_PROJECTILE(0, func_40(Param1, 1f), 0, false);
 				TASK::TASK_STAND_STILL(0, MISC::GET_RANDOM_INT_IN_RANGE(1000, 6000));
-				TASK::TASK_THROW_PROJECTILE(0, func_40(Param1, 1f), 0, 0);
+				TASK::TASK_THROW_PROJECTILE(0, func_40(Param1, 1f), 0, false);
 				TASK::TASK_STAND_STILL(0, MISC::GET_RANDOM_INT_IN_RANGE(1000, 6000));
-				TASK::TASK_THROW_PROJECTILE(0, func_40(Param1, 1f), 0, 0);
+				TASK::TASK_THROW_PROJECTILE(0, func_40(Param1, 1f), 0, false);
 				TASK::TASK_STAND_STILL(0, MISC::GET_RANDOM_INT_IN_RANGE(1000, 6000));
-				TASK::TASK_THROW_PROJECTILE(0, func_40(Param1, 1f), 0, 0);
+				TASK::TASK_THROW_PROJECTILE(0, func_40(Param1, 1f), 0, false);
 				TASK::TASK_STAND_STILL(0, MISC::GET_RANDOM_INT_IN_RANGE(1000, 6000));
-				TASK::TASK_THROW_PROJECTILE(0, func_40(Param1, 1f), 0, 0);
+				TASK::TASK_THROW_PROJECTILE(0, func_40(Param1, 1f), 0, false);
 				TASK::TASK_STAND_STILL(0, MISC::GET_RANDOM_INT_IN_RANGE(1000, 6000));
-				TASK::TASK_THROW_PROJECTILE(0, func_40(Param1, 1f), 0, 0);
+				TASK::TASK_THROW_PROJECTILE(0, func_40(Param1, 1f), 0, false);
 				TASK::SET_SEQUENCE_TO_REPEAT(iVar2, true);
 				TASK::CLOSE_SEQUENCE_TASK(iVar2);
 				TASK::TASK_PERFORM_SEQUENCE(iParam0, iVar2);
@@ -1818,7 +1818,7 @@ void func_45()//Position - 0x1A3D
 							{
 								if (!func_38(uLocal_221[iVar0], joaat("SCRIPT_TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT"), 1))
 								{
-									TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(uLocal_221[iVar0], PED::GET_VEHICLE_PED_IS_IN(uLocal_221[iVar0], false), 0);
+									TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(uLocal_221[iVar0], PED::GET_VEHICLE_PED_IS_IN(uLocal_221[iVar0], false), false);
 								}
 							}
 							else if (!func_38(uLocal_221[iVar0], joaat("SCRIPT_TASK_VEHICLE_MISSION"), 1) || iLocal_215 != iLocal_216)
@@ -1854,7 +1854,7 @@ void func_45()//Position - 0x1A3D
 							{
 								if (!func_38(uLocal_221[iVar0], joaat("SCRIPT_TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT"), 1))
 								{
-									TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(uLocal_221[iVar0], PED::GET_VEHICLE_PED_IS_IN(uLocal_221[iVar0], false), 0);
+									TASK::TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT(uLocal_221[iVar0], PED::GET_VEHICLE_PED_IS_IN(uLocal_221[iVar0], false), false);
 								}
 							}
 							else if (!func_38(uLocal_221[iVar0], joaat("SCRIPT_TASK_DRIVE_BY"), 1) || iLocal_215 != iLocal_216)

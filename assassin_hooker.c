@@ -7446,7 +7446,7 @@ void func_141(int* iParam0, int* iParam1)//Position - 0x67C9
 						TASK::CLEAR_SEQUENCE_TASK(&iVar0);
 						TASK::OPEN_SEQUENCE_TASK(&iVar0);
 						TASK::TASK_LEAVE_VEHICLE(0, iParam0->f_1, 0);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -458.7189f, -1719.692f, 17.6259f, 1f, -1, 0.25f, false, 150.2688f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -458.7189f, -1719.692f, 17.6259f, 1f, -1, 0.25f, 0, 150.2688f);
 						TASK::TASK_PLAY_ANIM(0, "ODDJOBS@ASSASSINATE@VICE@DEALER", "base", 4f, -4f, 20000, 1, 0f, false, false, false);
 						TASK::TASK_WANDER_STANDARD(0, 150.2688f, 0);
 						TASK::CLOSE_SEQUENCE_TASK(iVar0);
@@ -10841,7 +10841,7 @@ void func_236(var uParam0, bool bParam1)//Position - 0xB703
 			{
 				TASK::TASK_PLAY_ANIM(0, sLocal_1416, "idle_b", 4f, -4f, 10000, 0, 0f, false, false, false);
 			}
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -594.3811f, -1808.948f, 22.27985f, 1f, -1, 0.25f, false, Local_1374.f_21);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -594.3811f, -1808.948f, 22.27985f, 1f, -1, 0.25f, 0, Local_1374.f_21);
 			TASK::TASK_PLAY_ANIM(0, sLocal_1416, "idle_wait", 4f, -4f, -1, 1, 0f, false, false, false);
 			TASK::CLOSE_SEQUENCE_TASK(iVar0);
 			TASK::TASK_PERFORM_SEQUENCE(uParam0->f_7, iVar0);
@@ -19456,9 +19456,9 @@ void func_398()//Position - 0x17D0B
 			{
 				TASK::CLEAR_SEQUENCE_TASK(&iVar0);
 				TASK::OPEN_SEQUENCE_TASK(&iVar0);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 207.2075f, -853.1223f, 29.5467f, 1f, -1, 0.25f, false, 245.8158f);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 212.1299f, -854.8853f, 29.423f, 1f, -1, 0.25f, false, 245.8158f);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 229.6208f, -861.2581f, 28.9823f, 1f, -1, 0.25f, false, 245.8158f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 207.2075f, -853.1223f, 29.5467f, 1f, -1, 0.25f, 0, 245.8158f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 212.1299f, -854.8853f, 29.423f, 1f, -1, 0.25f, 0, 245.8158f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 229.6208f, -861.2581f, 28.9823f, 1f, -1, 0.25f, 0, 245.8158f);
 				TASK::TASK_WANDER_STANDARD(0, 248.3764f, 0);
 				TASK::CLOSE_SEQUENCE_TASK(iVar0);
 				TASK::TASK_PERFORM_SEQUENCE(iLocal_1429, iVar0);

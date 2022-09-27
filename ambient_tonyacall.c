@@ -1085,7 +1085,7 @@ int func_28()//Position - 0xED8
 			{
 				if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_38, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) != 1)
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_38, Local_49, 1f, -1, 0.25f, false, fLocal_50);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_38, Local_49, 1f, -1, 0.25f, 0, fLocal_50);
 					PED::SET_PED_KEEP_TASK(iLocal_38, true);
 				}
 				return 1;
