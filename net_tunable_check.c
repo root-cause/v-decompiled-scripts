@@ -12161,7 +12161,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 18000f;
 			uParam1->f_2 = 3000;
 			uParam1->f_3 = 18000;
-			uParam1->f_5 = -1729596367;
+			uParam1->f_5 = joaat("LUXE1_MALE_SHOES_GOLDEN_HI_TOPS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12170,7 +12170,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 39000f;
 			uParam1->f_2 = 6500;
 			uParam1->f_3 = 39000;
-			uParam1->f_5 = -1718001628;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_BROWN_LEATHER_FUR_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12179,7 +12179,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 38000f;
 			uParam1->f_2 = 6250;
 			uParam1->f_3 = 38000;
-			uParam1->f_5 = -1575846672;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_TAN_LEATHER_FUR_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12188,7 +12188,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 36000f;
 			uParam1->f_2 = 5900;
 			uParam1->f_3 = 36000;
-			uParam1->f_5 = 823111805;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_BLACK_LEATHER_FUR_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12197,7 +12197,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 37000f;
 			uParam1->f_2 = 6150;
 			uParam1->f_3 = 37000;
-			uParam1->f_5 = -8427937;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_OCHRE_LEATHER_FUR_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12206,7 +12206,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 35000f;
 			uParam1->f_2 = 5750;
 			uParam1->f_3 = 35000;
-			uParam1->f_5 = -871806160;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_WHITE_LEATHER_FUR_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12215,7 +12215,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 37000f;
 			uParam1->f_2 = 6050;
 			uParam1->f_3 = 37000;
-			uParam1->f_5 = -463233030;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_LEOPARD_LEATHER_FUR_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12224,7 +12224,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 34000f;
 			uParam1->f_2 = 5650;
 			uParam1->f_3 = 34000;
-			uParam1->f_5 = -193691263;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_FALL_LEATHER_FUR_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12233,7 +12233,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 35000f;
 			uParam1->f_2 = 5850;
 			uParam1->f_3 = 35000;
-			uParam1->f_5 = -397055287;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_HUNTER_LEATHER_FUR_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12242,7 +12242,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 34000f;
 			uParam1->f_2 = 5600;
 			uParam1->f_3 = 34000;
-			uParam1->f_5 = -661216548;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_GRAY_LEATHER_FUR_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12251,7 +12251,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 36000f;
 			uParam1->f_2 = 6000;
 			uParam1->f_3 = 36000;
-			uParam1->f_5 = -536846871;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_ALL_BLACK_LEATHER_FUR_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12260,7 +12260,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 38000f;
 			uParam1->f_2 = 6300;
 			uParam1->f_3 = 38000;
-			uParam1->f_5 = 1037974626;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_BURGUNDY_LEATHER_FUR_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12269,7 +12269,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 39000f;
 			uParam1->f_2 = 6400;
 			uParam1->f_3 = 39000;
-			uParam1->f_5 = -758174303;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_DARK_GRAY_LEATHER_FUR_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12278,7 +12278,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 30000f;
 			uParam1->f_2 = 4950;
 			uParam1->f_3 = 30000;
-			uParam1->f_5 = 1566897804;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_BEIGE_WOOL_COAT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12287,7 +12287,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 31000f;
 			uParam1->f_2 = 5050;
 			uParam1->f_3 = 31000;
-			uParam1->f_5 = -2111510718;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_GRAY_WOOL_COAT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12296,7 +12296,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 31000f;
 			uParam1->f_2 = 5150;
 			uParam1->f_3 = 31000;
-			uParam1->f_5 = -1028732531;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_BLACK_WOOL_COAT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12305,7 +12305,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 30000f;
 			uParam1->f_2 = 4950;
 			uParam1->f_3 = 30000;
-			uParam1->f_5 = -46284235;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_NAVY_WOOL_COAT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12314,7 +12314,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 28000f;
 			uParam1->f_2 = 4650;
 			uParam1->f_3 = 28000;
-			uParam1->f_5 = -237381221;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_CLASSIC_SN_BOMBER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12323,7 +12323,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 26000f;
 			uParam1->f_2 = 4400;
 			uParam1->f_3 = 26000;
-			uParam1->f_5 = 242573637;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_BROWN_P_WING_BOMBER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12332,7 +12332,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 28000f;
 			uParam1->f_2 = 4650;
 			uParam1->f_3 = 28000;
-			uParam1->f_5 = 1022653368;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_BLACK_SN_BOMBER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12341,7 +12341,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 28000f;
 			uParam1->f_2 = 4700;
 			uParam1->f_3 = 28000;
-			uParam1->f_5 = -201919806;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_COLOR_SN_BOMBER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12350,7 +12350,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 28000f;
 			uParam1->f_2 = 4600;
 			uParam1->f_3 = 28000;
-			uParam1->f_5 = -1431057455;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_BROWN_DIAMOND_BOMBER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12359,7 +12359,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 21000f;
 			uParam1->f_2 = 3550;
 			uParam1->f_3 = 21000;
-			uParam1->f_5 = 1549920548;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_GOLD_COIN_BOMBER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12368,7 +12368,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 21000f;
 			uParam1->f_2 = 3500;
 			uParam1->f_3 = 21000;
-			uParam1->f_5 = 2102711115;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_BRIGHT_NEON_BOMBER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12377,7 +12377,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 22000f;
 			uParam1->f_2 = 3700;
 			uParam1->f_3 = 22000;
-			uParam1->f_5 = 438329486;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_BLACK_PRINT_BOMBER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12386,7 +12386,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20000f;
 			uParam1->f_2 = 3400;
 			uParam1->f_3 = 20000;
-			uParam1->f_5 = 738158216;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_BLACK_DIX_BOMBER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12395,7 +12395,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 25000f;
 			uParam1->f_2 = 4150;
 			uParam1->f_3 = 25000;
-			uParam1->f_5 = -918926708;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_BLACK_LINK_BOMBER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12404,7 +12404,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 25000f;
 			uParam1->f_2 = 4100;
 			uParam1->f_3 = 25000;
-			uParam1->f_5 = -1373128818;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_RED_LINK_BOMBER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12413,7 +12413,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 28000f;
 			uParam1->f_2 = 4650;
 			uParam1->f_3 = 28000;
-			uParam1->f_5 = 494546616;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_CLASSIC_SN_ZIPPED_BOMBER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12422,7 +12422,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 26000f;
 			uParam1->f_2 = 4400;
 			uParam1->f_3 = 26000;
-			uParam1->f_5 = -1284435538;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_BROWN_P_WING_ZIPPED_BOMBER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12431,7 +12431,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 28000f;
 			uParam1->f_2 = 4650;
 			uParam1->f_3 = 28000;
-			uParam1->f_5 = -365514956;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_BLACK_SN_ZIPPED_BOMBER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12440,7 +12440,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 28000f;
 			uParam1->f_2 = 4700;
 			uParam1->f_3 = 28000;
-			uParam1->f_5 = -1943656460;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_COLOR_SN_ZIPPED_BOMBER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12449,7 +12449,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 28000f;
 			uParam1->f_2 = 4600;
 			uParam1->f_3 = 28000;
-			uParam1->f_5 = 1061694457;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_BROWN_DIAMOND_ZIPPED_BOMBER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12458,7 +12458,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 21000f;
 			uParam1->f_2 = 3550;
 			uParam1->f_3 = 21000;
-			uParam1->f_5 = -462275974;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_GOLD_COIN_ZIPPED_BOMBER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12467,7 +12467,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 21000f;
 			uParam1->f_2 = 3500;
 			uParam1->f_3 = 21000;
-			uParam1->f_5 = 174638335;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_BRIGHT_NEON_ZIPPED_BOMBER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12476,7 +12476,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 22000f;
 			uParam1->f_2 = 3700;
 			uParam1->f_3 = 22000;
-			uParam1->f_5 = -466789562;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_BLACK_PRINT_ZIPPED_BOMBER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12485,7 +12485,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20000f;
 			uParam1->f_2 = 3400;
 			uParam1->f_3 = 20000;
-			uParam1->f_5 = -1266026401;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_BLACK_DIX_ZIPPED_BOMBER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12494,7 +12494,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 25000f;
 			uParam1->f_2 = 4150;
 			uParam1->f_3 = 25000;
-			uParam1->f_5 = 844534447;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_BLACK_LINK_ZIPPED_BOMBER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12503,7 +12503,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 25000f;
 			uParam1->f_2 = 4100;
 			uParam1->f_3 = 25000;
-			uParam1->f_5 = -1044673943;
+			uParam1->f_5 = joaat("LUXE1_MALE_UPPERS_RED_LINK_ZIPPED_BOMBER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12512,7 +12512,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 64000f;
 			uParam1->f_2 = 10650;
 			uParam1->f_3 = 64000;
-			uParam1->f_5 = -1850514921;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_GOLD_SN_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12521,7 +12521,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 70000f;
 			uParam1->f_2 = 11600;
 			uParam1->f_3 = 70000;
-			uParam1->f_5 = 1756201683;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_PLATINUM_SN_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12530,7 +12530,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 41000f;
 			uParam1->f_2 = 6750;
 			uParam1->f_3 = 41000;
-			uParam1->f_5 = 372185970;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_GOLD_SKULL_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12539,7 +12539,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 47000f;
 			uParam1->f_2 = 7800;
 			uParam1->f_3 = 47000;
-			uParam1->f_5 = 1562446673;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_PLATINUM_SKULL_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12548,7 +12548,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 72000f;
 			uParam1->f_2 = 11950;
 			uParam1->f_3 = 72000;
-			uParam1->f_5 = 1431347163;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_PLATINUM_BALACLAVA_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12557,7 +12557,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 97000f;
 			uParam1->f_2 = 16050;
 			uParam1->f_3 = 97000;
-			uParam1->f_5 = -2018857623;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_GOLD_ZORSE_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12566,7 +12566,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 98000f;
 			uParam1->f_2 = 16200;
 			uParam1->f_3 = 98000;
-			uParam1->f_5 = 1121234308;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_PLATINUM_ZORSE_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12575,7 +12575,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 83000f;
 			uParam1->f_2 = 13750;
 			uParam1->f_3 = 83000;
-			uParam1->f_5 = 16087852;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_GOLD_LC_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12584,7 +12584,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 90000f;
 			uParam1->f_2 = 14950;
 			uParam1->f_3 = 90000;
-			uParam1->f_5 = -1506306818;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_PLATINUM_LC_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12593,7 +12593,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 41000f;
 			uParam1->f_2 = 6850;
 			uParam1->f_3 = 41000;
-			uParam1->f_5 = 615535070;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_GOLD_DIX_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12602,7 +12602,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 45000f;
 			uParam1->f_2 = 7450;
 			uParam1->f_3 = 45000;
-			uParam1->f_5 = 1420361769;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_PLATINUM_DIX_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12611,7 +12611,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 62000f;
 			uParam1->f_2 = 10300;
 			uParam1->f_3 = 62000;
-			uParam1->f_5 = 1354405463;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_GOLD_LE_CHIEN_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12620,7 +12620,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 68000f;
 			uParam1->f_2 = 11200;
 			uParam1->f_3 = 68000;
-			uParam1->f_5 = 588752792;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_PLATINUM_LE_CHIEN_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12629,7 +12629,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 39000f;
 			uParam1->f_2 = 6450;
 			uParam1->f_3 = 39000;
-			uParam1->f_5 = -45476468;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_GOLD_ILLUSION_SQUARE_STUDS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12638,7 +12638,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 42000f;
 			uParam1->f_2 = 6900;
 			uParam1->f_3 = 42000;
-			uParam1->f_5 = 951218996;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_GOLD_GRID_SQUARE_STUDS");
 			uParam1->f_4 = 1;
 			break;
 	}
@@ -12649,7 +12649,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 35000f;
 			uParam1->f_2 = 5800;
 			uParam1->f_3 = 35000;
-			uParam1->f_5 = 1006612972;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_GOLD_NOIR_SQUARE_STUDS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12658,7 +12658,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 53000f;
 			uParam1->f_2 = 8700;
 			uParam1->f_3 = 53000;
-			uParam1->f_5 = -1591209532;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_PLATINUM_GRID_SQUARE_STUDS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12667,7 +12667,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 8350;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = -1643342144;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_PLATINUM_NOIR_SQUARE_STUDS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12676,7 +12676,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 16000f;
 			uParam1->f_2 = 2700;
 			uParam1->f_3 = 16000;
-			uParam1->f_5 = 387600112;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_PLATINUM_GAULLE_RETRO_HEX");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12685,7 +12685,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 15000f;
 			uParam1->f_2 = 2500;
 			uParam1->f_3 = 15000;
-			uParam1->f_5 = -630209226;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_GOLD_GAULLE_RETRO_HEX");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12694,7 +12694,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 16000f;
 			uParam1->f_2 = 2600;
 			uParam1->f_3 = 16000;
-			uParam1->f_5 = -1518640763;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_GOLD_COVGARI_SUPERNOVA");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12703,7 +12703,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 17000f;
 			uParam1->f_2 = 2800;
 			uParam1->f_3 = 17000;
-			uParam1->f_5 = 147778759;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_PINK_GOLD_COVGARI_SUPERNOVA");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12712,7 +12712,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20000f;
 			uParam1->f_2 = 3250;
 			uParam1->f_3 = 20000;
-			uParam1->f_5 = -623557692;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_GOLD_CROWEX_CHROMOSPHERE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12721,7 +12721,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 25000f;
 			uParam1->f_2 = 4100;
 			uParam1->f_3 = 25000;
-			uParam1->f_5 = -457563433;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_GOLD_IFRUIT_LINK");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12730,7 +12730,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 15000f;
 			uParam1->f_2 = 2500;
 			uParam1->f_3 = 15000;
-			uParam1->f_5 = 1272142809;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_SILVER_IFRUIT_LINK");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12739,7 +12739,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 27000f;
 			uParam1->f_2 = 4450;
 			uParam1->f_3 = 27000;
-			uParam1->f_5 = 868761443;
+			uParam1->f_5 = joaat("LUXE1_MALE_ACCESSORIES_PINK_GOLD_IFRUIT_LINK");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12748,7 +12748,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 18000f;
 			uParam1->f_2 = 3000;
 			uParam1->f_3 = 18000;
-			uParam1->f_5 = -530226293;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_SHOES_GOLDEN_HI_TOPS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12757,7 +12757,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 30000f;
 			uParam1->f_2 = 4950;
 			uParam1->f_3 = 30000;
-			uParam1->f_5 = -1177716250;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_UPPERS_CREAM_PEACOAT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12766,7 +12766,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 30000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 30000;
-			uParam1->f_5 = 1397316083;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_UPPERS_BLACK_PEACOAT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12775,7 +12775,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 30000f;
 			uParam1->f_2 = 4900;
 			uParam1->f_3 = 30000;
-			uParam1->f_5 = -1814667424;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_UPPERS_NAVY_PEACOAT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12784,7 +12784,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 30000f;
 			uParam1->f_2 = 4950;
 			uParam1->f_3 = 30000;
-			uParam1->f_5 = -92922076;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_UPPERS_GRAY_PEACOAT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12793,7 +12793,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 29000f;
 			uParam1->f_2 = 4800;
 			uParam1->f_3 = 29000;
-			uParam1->f_5 = -325789041;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_UPPERS_GREEN_PEACOAT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12802,7 +12802,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 44000f;
 			uParam1->f_2 = 7400;
 			uParam1->f_3 = 44000;
-			uParam1->f_5 = 1079257332;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_UPPERS_RED_LEATHER_FUR_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12811,7 +12811,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 43000f;
 			uParam1->f_2 = 7150;
 			uParam1->f_3 = 43000;
-			uParam1->f_5 = 390774800;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_UPPERS_BROWN_LEATHER_FUR_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12820,7 +12820,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 41000f;
 			uParam1->f_2 = 6800;
 			uParam1->f_3 = 41000;
-			uParam1->f_5 = 1348540931;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_UPPERS_TAN_LEATHER_FUR_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12829,7 +12829,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 42000f;
 			uParam1->f_2 = 7050;
 			uParam1->f_3 = 42000;
-			uParam1->f_5 = -607564288;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_UPPERS_BLACK_LEATHER_FUR_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12838,7 +12838,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 40000f;
 			uParam1->f_2 = 6650;
 			uParam1->f_3 = 40000;
-			uParam1->f_5 = 646238916;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_UPPERS_WHITE_LEATHER_FUR_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12847,7 +12847,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 42000f;
 			uParam1->f_2 = 6950;
 			uParam1->f_3 = 42000;
-			uParam1->f_5 = 168933341;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_UPPERS_LEOPARD_LEATHER_FUR_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12856,7 +12856,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 40000f;
 			uParam1->f_2 = 6550;
 			uParam1->f_3 = 40000;
-			uParam1->f_5 = 240704550;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_UPPERS_FALL_LEATHER_FUR_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12865,7 +12865,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 41000f;
 			uParam1->f_2 = 6750;
 			uParam1->f_3 = 41000;
-			uParam1->f_5 = 1870450114;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_UPPERS_BLUE_LEATHER_FUR_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12874,7 +12874,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 39000f;
 			uParam1->f_2 = 6500;
 			uParam1->f_3 = 39000;
-			uParam1->f_5 = 1659202257;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_UPPERS_HUNTER_LEATHER_FUR_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12883,7 +12883,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 42000f;
 			uParam1->f_2 = 6900;
 			uParam1->f_3 = 42000;
-			uParam1->f_5 = 1719875364;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_UPPERS_GREEN_LEATHER_FUR_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12892,7 +12892,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 43000f;
 			uParam1->f_2 = 7200;
 			uParam1->f_3 = 43000;
-			uParam1->f_5 = -206626676;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_UPPERS_GRAY_LEATHER_FUR_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12901,7 +12901,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 44000f;
 			uParam1->f_2 = 7300;
 			uParam1->f_3 = 44000;
-			uParam1->f_5 = -858654121;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_UPPERS_ALL_BLACK_LEATHER_FUR_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12910,7 +12910,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 32000f;
 			uParam1->f_2 = 5400;
 			uParam1->f_3 = 32000;
-			uParam1->f_5 = 1362868671;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_UPPERS_BLACK_DEEP_BELTED_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12919,7 +12919,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 34000f;
 			uParam1->f_2 = 5650;
 			uParam1->f_3 = 34000;
-			uParam1->f_5 = 1318738727;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_UPPERS_BROWN_DEEP_BELTED_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12928,7 +12928,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 32000f;
 			uParam1->f_2 = 5250;
 			uParam1->f_3 = 32000;
-			uParam1->f_5 = -696473003;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_UPPERS_RED_DEEP_BELTED_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12937,7 +12937,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 33000f;
 			uParam1->f_2 = 5550;
 			uParam1->f_3 = 33000;
-			uParam1->f_5 = 1073348675;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_UPPERS_TEAL_DEEP_BELTED_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12946,7 +12946,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 64000f;
 			uParam1->f_2 = 10650;
 			uParam1->f_3 = 64000;
-			uParam1->f_5 = -985532639;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_ACCESSORIES_GOLD_SN_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12955,7 +12955,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 70000f;
 			uParam1->f_2 = 11600;
 			uParam1->f_3 = 70000;
-			uParam1->f_5 = 183500134;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_ACCESSORIES_PLATINUM_SN_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 	}
@@ -12966,7 +12966,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 41000f;
 			uParam1->f_2 = 6750;
 			uParam1->f_3 = 41000;
-			uParam1->f_5 = -164210352;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_ACCESSORIES_GOLD_SKULL_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12975,7 +12975,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 47000f;
 			uParam1->f_2 = 7800;
 			uParam1->f_3 = 47000;
-			uParam1->f_5 = 1872053592;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_ACCESSORIES_PLATINUM_SKULL_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12984,7 +12984,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 72000f;
 			uParam1->f_2 = 11950;
 			uParam1->f_3 = 72000;
-			uParam1->f_5 = -1375849199;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_ACCESSORIES_PLATINUM_BALACLAVA_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -12993,7 +12993,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 97000f;
 			uParam1->f_2 = 16050;
 			uParam1->f_3 = 97000;
-			uParam1->f_5 = -1589468666;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_ACCESSORIES_GOLD_ZORSE_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13002,7 +13002,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 98000f;
 			uParam1->f_2 = 16200;
 			uParam1->f_3 = 98000;
-			uParam1->f_5 = -931642865;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_ACCESSORIES_PLATINUM_ZORSE_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13011,7 +13011,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 83000f;
 			uParam1->f_2 = 13750;
 			uParam1->f_3 = 83000;
-			uParam1->f_5 = -192875152;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_ACCESSORIES_GOLD_LC_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13020,7 +13020,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 90000f;
 			uParam1->f_2 = 14950;
 			uParam1->f_3 = 90000;
-			uParam1->f_5 = -1805484546;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_ACCESSORIES_PLATINUM_LC_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13029,7 +13029,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 41000f;
 			uParam1->f_2 = 6850;
 			uParam1->f_3 = 41000;
-			uParam1->f_5 = -1252693940;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_ACCESSORIES_GOLD_DIX_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13038,7 +13038,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 45000f;
 			uParam1->f_2 = 7450;
 			uParam1->f_3 = 45000;
-			uParam1->f_5 = 1188109527;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_ACCESSORIES_PLATINUM_DIX_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13047,7 +13047,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 62000f;
 			uParam1->f_2 = 10300;
 			uParam1->f_3 = 62000;
-			uParam1->f_5 = 1887430707;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_ACCESSORIES_GOLD_LE_CHIEN_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13056,7 +13056,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 68000f;
 			uParam1->f_2 = 11200;
 			uParam1->f_3 = 68000;
-			uParam1->f_5 = 1348348209;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_ACCESSORIES_PLATINUM_LE_CHIEN_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13065,7 +13065,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 53000f;
 			uParam1->f_2 = 8700;
 			uParam1->f_3 = 53000;
-			uParam1->f_5 = 416578167;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_ACCESSORIES_PLATINUM_PENDULUMS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13074,7 +13074,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 42000f;
 			uParam1->f_2 = 6900;
 			uParam1->f_3 = 42000;
-			uParam1->f_5 = 844638271;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_ACCESSORIES_GOLD_PENDULUMS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13083,7 +13083,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 38000f;
 			uParam1->f_2 = 6300;
 			uParam1->f_3 = 38000;
-			uParam1->f_5 = -27925398;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_ACCESSORIES_GOLD_DIAMOND_ROUNDS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13092,7 +13092,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 45000f;
 			uParam1->f_2 = 7450;
 			uParam1->f_3 = 45000;
-			uParam1->f_5 = -97710512;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_ACCESSORIES_GOLD_DIAMOND_DROPS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13101,7 +13101,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 57000f;
 			uParam1->f_2 = 9450;
 			uParam1->f_3 = 57000;
-			uParam1->f_5 = -1560965010;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_ACCESSORIES_PLATINUM_DIAMOND_DROPS_");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13110,7 +13110,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 38000f;
 			uParam1->f_2 = 6300;
 			uParam1->f_3 = 38000;
-			uParam1->f_5 = 628262743;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_ACCESSORIES_BLACK_GOLD_DIAMOND_DROPS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13119,7 +13119,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 16000f;
 			uParam1->f_2 = 2650;
 			uParam1->f_3 = 16000;
-			uParam1->f_5 = 499519505;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_ACCESSORIES_PLATINUM_WATERFALLS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13128,7 +13128,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 16000f;
 			uParam1->f_2 = 2750;
 			uParam1->f_3 = 16000;
-			uParam1->f_5 = 202689733;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_ACCESSORIES_PLATINUM_TOTEMS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13137,7 +13137,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 17000f;
 			uParam1->f_2 = 2850;
 			uParam1->f_3 = 17000;
-			uParam1->f_5 = -1722815609;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_ACCESSORIES_PLATINUM_SUN_DROPS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13146,7 +13146,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 25000f;
 			uParam1->f_2 = 4100;
 			uParam1->f_3 = 25000;
-			uParam1->f_5 = -1991533546;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_ACCESSORIES_GOLD_IFRUIT_LINK");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13155,7 +13155,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 15000f;
 			uParam1->f_2 = 2500;
 			uParam1->f_3 = 15000;
-			uParam1->f_5 = -1791754603;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_ACCESSORIES_SILVER_IFRUIT_LINK");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13164,7 +13164,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 27000f;
 			uParam1->f_2 = 4450;
 			uParam1->f_3 = 27000;
-			uParam1->f_5 = 1813423691;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_ACCESSORIES_PINK_GOLD_IFRUIT_LINK");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13173,7 +13173,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = -1623792009;
+			uParam1->f_5 = joaat("LUXE1_MALE_OUTFITS_THE_MIDAS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13182,7 +13182,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 2073796128;
+			uParam1->f_5 = joaat("LUXE1_MALE_OUTFITS_THE_DELUXE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13191,7 +13191,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = -1992504606;
+			uParam1->f_5 = joaat("LUXE1_MALE_OUTFITS_THE_EXCLUSIVE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13200,7 +13200,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 867076051;
+			uParam1->f_5 = joaat("LUXE1_MALE_OUTFITS_THE_PERSEUS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13209,7 +13209,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 2086339040;
+			uParam1->f_5 = joaat("LUXE1_MALE_OUTFITS_THE_FLASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13218,7 +13218,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 2054389455;
+			uParam1->f_5 = joaat("LUXE1_MALE_OUTFITS_THE_PIMP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13227,7 +13227,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = -1893802109;
+			uParam1->f_5 = joaat("LUXE1_MALE_OUTFITS_THE_TALENT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13236,7 +13236,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = -1185920970;
+			uParam1->f_5 = joaat("LUXE1_MALE_OUTFITS_THE_LUXOR");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13245,7 +13245,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = -1077619944;
+			uParam1->f_5 = joaat("LUXE1_MALE_OUTFITS_THE_REFINED");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13254,7 +13254,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = -232563180;
+			uParam1->f_5 = joaat("LUXE1_MALE_OUTFITS_THE_SESSANTA_NOVE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13263,7 +13263,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 1025128029;
+			uParam1->f_5 = joaat("LUXE1_MALE_OUTFITS_THE_GRAND");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13272,7 +13272,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 1184224905;
+			uParam1->f_5 = joaat("LUXE1_MALE_OUTFITS_THE_VOGUE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13281,7 +13281,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 1;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 1837989889;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_OUTFITS_THE_SOCIALITE");
 			uParam1->f_4 = 1;
 			break;
 	}
@@ -13292,7 +13292,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 1468325815;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_OUTFITS_THE_ACCESSORY");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13301,7 +13301,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 1489577493;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_OUTFITS_THE_WEALTH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13310,7 +13310,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = -1442218045;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_OUTFITS_THE_STATUS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13319,7 +13319,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = -270424695;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_OUTFITS_THE_PERSEUS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13328,7 +13328,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 1554855494;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_OUTFITS_THE_ELITE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13337,7 +13337,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = -419251367;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_OUTFITS_THE_CHIC");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13346,7 +13346,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = -1156096398;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_OUTFITS_THE_GOLDEN_GIRL");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13355,7 +13355,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = -301512982;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_OUTFITS_THE_LAVISH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13364,7 +13364,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 2078262605;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_OUTFITS_THE_CLASS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13373,7 +13373,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = -113903074;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_OUTFITS_THE_SHINE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13382,7 +13382,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 145823683;
+			uParam1->f_5 = joaat("LUXE1_FEMALE_OUTFITS_THE_PUMA");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13508,7 +13508,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 18000f;
 			uParam1->f_2 = 5900;
 			uParam1->f_3 = 18000;
-			uParam1->f_5 = -693611144;
+			uParam1->f_5 = joaat("LUXE1_BOTH_GENDERS_SERPENT_OF_DEATH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13517,7 +13517,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 22000f;
 			uParam1->f_2 = 7100;
 			uParam1->f_3 = 22000;
-			uParam1->f_5 = 1924117099;
+			uParam1->f_5 = joaat("LUXE1_BOTH_GENDERS_ELABORATE_LOS_MUERTOS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13526,7 +13526,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 18000f;
 			uParam1->f_2 = 6050;
 			uParam1->f_3 = 18000;
-			uParam1->f_5 = 1153855224;
+			uParam1->f_5 = joaat("LUXE1_BOTH_GENDERS_FLORAL_RAVEN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13535,7 +13535,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 38000f;
 			uParam1->f_2 = 12400;
 			uParam1->f_3 = 38000;
-			uParam1->f_5 = -1623493982;
+			uParam1->f_5 = joaat("LUXE1_BOTH_GENDERS_ADORNED_WOLF");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13544,7 +13544,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 19000f;
 			uParam1->f_2 = 6150;
 			uParam1->f_3 = 19000;
-			uParam1->f_5 = 1433836543;
+			uParam1->f_5 = joaat("LUXE1_BOTH_GENDERS_EYE_OF_THE_GRIFFIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13553,7 +13553,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 27000f;
 			uParam1->f_2 = 8900;
 			uParam1->f_3 = 27000;
-			uParam1->f_5 = 399093662;
+			uParam1->f_5 = joaat("LUXE1_BOTH_GENDERS_FLYING_EYE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13562,7 +13562,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 29000f;
 			uParam1->f_2 = 9500;
 			uParam1->f_3 = 29000;
-			uParam1->f_5 = -1230281035;
+			uParam1->f_5 = joaat("LUXE1_BOTH_GENDERS_FLORAL_SYMMETRY");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13571,7 +13571,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 25000f;
 			uParam1->f_2 = 8350;
 			uParam1->f_3 = 25000;
-			uParam1->f_5 = 1574338118;
+			uParam1->f_5 = joaat("LUXE1_BOTH_GENDERS_MERMAID_HARPIST");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13580,7 +13580,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 27000f;
 			uParam1->f_2 = 9000;
 			uParam1->f_3 = 27000;
-			uParam1->f_5 = -280547334;
+			uParam1->f_5 = joaat("LUXE1_BOTH_GENDERS_ANCIENT_QUEEN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13589,7 +13589,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 24000f;
 			uParam1->f_2 = 8050;
 			uParam1->f_3 = 24000;
-			uParam1->f_5 = 295997592;
+			uParam1->f_5 = joaat("LUXE1_BOTH_GENDERS_SMOKING_SISTERS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13598,7 +13598,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 25000f;
 			uParam1->f_2 = 8350;
 			uParam1->f_3 = 25000;
-			uParam1->f_5 = -1693174653;
+			uParam1->f_5 = joaat("LUXE1_BOTH_GENDERS_GEISHA_BLOOM");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13607,7 +13607,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 34000f;
 			uParam1->f_2 = 11150;
 			uParam1->f_3 = 34000;
-			uParam1->f_5 = -245039713;
+			uParam1->f_5 = joaat("LUXE1_BOTH_GENDERS_ARCHANGEL_AND_MARY");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13616,7 +13616,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 19000f;
 			uParam1->f_2 = 6350;
 			uParam1->f_3 = 19000;
-			uParam1->f_5 = 258805324;
+			uParam1->f_5 = joaat("LUXE1_BOTH_GENDERS_GABRIEL_");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13625,7 +13625,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 41000f;
 			uParam1->f_2 = 13500;
 			uParam1->f_3 = 41000;
-			uParam1->f_5 = -1421508725;
+			uParam1->f_5 = joaat("LUXE1_BOTH_GENDERS_FEATHER_MURAL");
 			uParam1->f_4 = 1;
 			break;
 	}
@@ -13764,7 +13764,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20000f;
 			uParam1->f_2 = 3200;
 			uParam1->f_3 = 20000;
-			uParam1->f_5 = -622253716;
+			uParam1->f_5 = joaat("LUXE2_MALE_UPPERS_BEIGE_TRENCH_COAT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13773,7 +13773,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20000f;
 			uParam1->f_2 = 3200;
 			uParam1->f_3 = 20000;
-			uParam1->f_5 = -1627691056;
+			uParam1->f_5 = joaat("LUXE2_MALE_UPPERS_BLACK_TRENCH_COAT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13782,7 +13782,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 19000f;
 			uParam1->f_2 = 3150;
 			uParam1->f_3 = 19000;
-			uParam1->f_5 = 399246382;
+			uParam1->f_5 = joaat("LUXE2_MALE_UPPERS_NAVY_TRENCH_COAT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13791,7 +13791,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 19000f;
 			uParam1->f_2 = 3200;
 			uParam1->f_3 = 19000;
-			uParam1->f_5 = -1793368988;
+			uParam1->f_5 = joaat("LUXE2_MALE_UPPERS_GRAY_TRENCH_COAT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13800,7 +13800,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 19000f;
 			uParam1->f_2 = 3050;
 			uParam1->f_3 = 19000;
-			uParam1->f_5 = 1364365401;
+			uParam1->f_5 = joaat("LUXE2_MALE_UPPERS_GREEN_TRENCH_COAT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13809,7 +13809,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 16000f;
 			uParam1->f_2 = 2650;
 			uParam1->f_3 = 16000;
-			uParam1->f_5 = 2044461341;
+			uParam1->f_5 = joaat("LUXE2_MALE_UPPERS_GOLD_GEO_PRINT_SWEATER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13818,7 +13818,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 16000f;
 			uParam1->f_2 = 2600;
 			uParam1->f_3 = 16000;
-			uParam1->f_5 = -1731591700;
+			uParam1->f_5 = joaat("LUXE2_MALE_UPPERS_LE_CHIEN_PRINT_SWEATER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13827,7 +13827,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 15000f;
 			uParam1->f_2 = 2500;
 			uParam1->f_3 = 15000;
-			uParam1->f_5 = 511542655;
+			uParam1->f_5 = joaat("LUXE2_MALE_UPPERS_TEAL_TWEED_SWEATER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13836,7 +13836,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 17000f;
 			uParam1->f_2 = 2700;
 			uParam1->f_3 = 17000;
-			uParam1->f_5 = 1937886234;
+			uParam1->f_5 = joaat("LUXE2_MALE_UPPERS_CLASSIC_P_PRINT_SWEATER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13845,7 +13845,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 17000f;
 			uParam1->f_2 = 2750;
 			uParam1->f_3 = 17000;
-			uParam1->f_5 = -770984932;
+			uParam1->f_5 = joaat("LUXE2_MALE_UPPERS_BROWN_P_PRINT_SWEATER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13854,7 +13854,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 17000f;
 			uParam1->f_2 = 2800;
 			uParam1->f_3 = 17000;
-			uParam1->f_5 = 1730028949;
+			uParam1->f_5 = joaat("LUXE2_MALE_UPPERS_SWORD_AND_SHIELD_SWEATER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13863,7 +13863,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20000f;
 			uParam1->f_2 = 3250;
 			uParam1->f_3 = 20000;
-			uParam1->f_5 = -1594317759;
+			uParam1->f_5 = joaat("LUXE2_MALE_UPPERS_BLACK_SN_PRINT_SWEATER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13881,7 +13881,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20000f;
 			uParam1->f_2 = 3200;
 			uParam1->f_3 = 20000;
-			uParam1->f_5 = 420790512;
+			uParam1->f_5 = joaat("LUXE2_MALE_UPPERS_CLASSIC_SN_PRINT_SWEATER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13890,7 +13890,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20000f;
 			uParam1->f_2 = 3200;
 			uParam1->f_3 = 20000;
-			uParam1->f_5 = 67637077;
+			uParam1->f_5 = joaat("LUXE2_MALE_UPPERS_COLOR_DIAMOND_SWEATER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13899,7 +13899,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 19000f;
 			uParam1->f_2 = 3200;
 			uParam1->f_3 = 19000;
-			uParam1->f_5 = 1081069775;
+			uParam1->f_5 = joaat("LUXE2_MALE_UPPERS_GOLD_DIAMOND_SWEATER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13908,7 +13908,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20000f;
 			uParam1->f_2 = 3300;
 			uParam1->f_3 = 20000;
-			uParam1->f_5 = -1477118872;
+			uParam1->f_5 = joaat("LUXE2_MALE_UPPERS_COLOR_SN_PRINT_SWEATER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13917,7 +13917,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20000f;
 			uParam1->f_2 = 3300;
 			uParam1->f_3 = 20000;
-			uParam1->f_5 = 396035835;
+			uParam1->f_5 = joaat("LUXE2_MALE_UPPERS_COLOR_GEO_SWEATER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13926,7 +13926,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 15000f;
 			uParam1->f_2 = 2500;
 			uParam1->f_3 = 15000;
-			uParam1->f_5 = -535591151;
+			uParam1->f_5 = joaat("LUXE2_MALE_ACCESSORIES_GOLD_LOOSE_LINK_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13935,7 +13935,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 16000f;
 			uParam1->f_2 = 2650;
 			uParam1->f_3 = 16000;
-			uParam1->f_5 = -277350803;
+			uParam1->f_5 = joaat("LUXE2_MALE_ACCESSORIES_PLATINUM_LOOSE_LINK_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13944,7 +13944,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 17000f;
 			uParam1->f_2 = 2700;
 			uParam1->f_3 = 17000;
-			uParam1->f_5 = 1866753085;
+			uParam1->f_5 = joaat("LUXE2_MALE_ACCESSORIES_GOLD_BELCHER_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13953,7 +13953,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 18000f;
 			uParam1->f_2 = 2850;
 			uParam1->f_3 = 18000;
-			uParam1->f_5 = -279851098;
+			uParam1->f_5 = joaat("LUXE2_MALE_ACCESSORIES_PLATINUM_BELCHER_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13962,7 +13962,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 16000f;
 			uParam1->f_2 = 2700;
 			uParam1->f_3 = 16000;
-			uParam1->f_5 = 1701979727;
+			uParam1->f_5 = joaat("LUXE2_MALE_ACCESSORIES_GOLD_PRETZEL_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13971,7 +13971,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 17000f;
 			uParam1->f_2 = 2850;
 			uParam1->f_3 = 17000;
-			uParam1->f_5 = -1894272120;
+			uParam1->f_5 = joaat("LUXE2_MALE_ACCESSORIES_PLATINUM_PRETZEL_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13980,7 +13980,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 16000f;
 			uParam1->f_2 = 2650;
 			uParam1->f_3 = 16000;
-			uParam1->f_5 = 325995035;
+			uParam1->f_5 = joaat("LUXE2_MALE_ACCESSORIES_GOLD_CURB_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13989,7 +13989,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 17000f;
 			uParam1->f_2 = 2800;
 			uParam1->f_3 = 17000;
-			uParam1->f_5 = 1834923172;
+			uParam1->f_5 = joaat("LUXE2_MALE_ACCESSORIES_PLATINUM_CURB_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -13998,7 +13998,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 17000f;
 			uParam1->f_2 = 2850;
 			uParam1->f_3 = 17000;
-			uParam1->f_5 = 1226561546;
+			uParam1->f_5 = joaat("LUXE2_MALE_ACCESSORIES_GOLD_DIAMOND_CURB_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14007,7 +14007,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 18000f;
 			uParam1->f_2 = 3000;
 			uParam1->f_3 = 18000;
-			uParam1->f_5 = -821205110;
+			uParam1->f_5 = joaat("LUXE2_MALE_ACCESSORIES_PLATINUM_DIAMOND_CURB_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14016,7 +14016,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 35000f;
 			uParam1->f_2 = 5700;
 			uParam1->f_3 = 35000;
-			uParam1->f_5 = -132197608;
+			uParam1->f_5 = joaat("LUXE2_MALE_ACCESSORIES_GOLD_HEAVY_CURB_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14025,7 +14025,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 37000f;
 			uParam1->f_2 = 6000;
 			uParam1->f_3 = 37000;
-			uParam1->f_5 = 415703263;
+			uParam1->f_5 = joaat("LUXE2_MALE_ACCESSORIES_PLATINUM_HEAVY_CURB_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 	}
@@ -14036,7 +14036,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 33000f;
 			uParam1->f_2 = 5400;
 			uParam1->f_3 = 33000;
-			uParam1->f_5 = 1385217028;
+			uParam1->f_5 = joaat("LUXE2_MALE_ACCESSORIES_GOLD_HEAVY_SQUARE_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14045,7 +14045,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 35000f;
 			uParam1->f_2 = 5700;
 			uParam1->f_3 = 35000;
-			uParam1->f_5 = 642554522;
+			uParam1->f_5 = joaat("LUXE2_MALE_ACCESSORIES_PLATINUM_hEAVY_SQUARE_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14054,7 +14054,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 17000f;
 			uParam1->f_2 = 2700;
 			uParam1->f_3 = 17000;
-			uParam1->f_5 = 1723307126;
+			uParam1->f_5 = joaat("LUXE2_MALE_ACCESSORIES_GOLD_SQUARE_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14063,7 +14063,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 17000f;
 			uParam1->f_2 = 2850;
 			uParam1->f_3 = 17000;
-			uParam1->f_5 = 1571556859;
+			uParam1->f_5 = joaat("LUXE2_MALE_ACCESSORIES_PLATINUM_SQUARE_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14072,7 +14072,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 17000f;
 			uParam1->f_2 = 2800;
 			uParam1->f_3 = 17000;
-			uParam1->f_5 = 1697982160;
+			uParam1->f_5 = joaat("LUXE2_MALE_ACCESSORIES_GOLD_POPCORN_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14081,7 +14081,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 18000f;
 			uParam1->f_2 = 2950;
 			uParam1->f_3 = 18000;
-			uParam1->f_5 = 491458810;
+			uParam1->f_5 = joaat("LUXE2_MALE_ACCESSORIES_PLATINUM_POPCORN_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14090,7 +14090,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 18000f;
 			uParam1->f_2 = 2900;
 			uParam1->f_3 = 18000;
-			uParam1->f_5 = 1636412319;
+			uParam1->f_5 = joaat("LUXE2_MALE_ACCESSORIES_GOLD_ROPE_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14099,7 +14099,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 19000f;
 			uParam1->f_2 = 3050;
 			uParam1->f_3 = 19000;
-			uParam1->f_5 = 876551036;
+			uParam1->f_5 = joaat("LUXE2_MALE_ACCESSORIES_PLATINUM_ROPE_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14108,7 +14108,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 15000f;
 			uParam1->f_2 = 2500;
 			uParam1->f_3 = 15000;
-			uParam1->f_5 = 2091744836;
+			uParam1->f_5 = joaat("LUXE2_MALE_ACCESSORIES_PINK_GOLD_COVGARI_EXPLORER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14117,7 +14117,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 19000f;
 			uParam1->f_2 = 3100;
 			uParam1->f_3 = 19000;
-			uParam1->f_5 = -1105659840;
+			uParam1->f_5 = joaat("LUXE2_MALE_ACCESSORIES_GOLD_COVGARI_UNIVERSE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14126,7 +14126,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 16000f;
 			uParam1->f_2 = 2600;
 			uParam1->f_3 = 16000;
-			uParam1->f_5 = 1649856226;
+			uParam1->f_5 = joaat("LUXE2_MALE_ACCESSORIES_SILVER_COVGARI_UNIVERSE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14135,7 +14135,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 8150;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = 1340584067;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_UPPERS_PADDED_LEATHER_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14144,7 +14144,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 19000f;
 			uParam1->f_2 = 3150;
 			uParam1->f_3 = 19000;
-			uParam1->f_5 = 29001067;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_UPPERS_CREAM_TRENCH_COAT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14153,7 +14153,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 19000f;
 			uParam1->f_2 = 3150;
 			uParam1->f_3 = 19000;
-			uParam1->f_5 = 1638852953;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_UPPERS_BLACK_TRENCH_COAT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14162,7 +14162,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 19000f;
 			uParam1->f_2 = 3100;
 			uParam1->f_3 = 19000;
-			uParam1->f_5 = 1611179743;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_UPPERS_NAVY_TRENCH_COAT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14171,7 +14171,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 19000f;
 			uParam1->f_2 = 3100;
 			uParam1->f_3 = 19000;
-			uParam1->f_5 = 18325263;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_UPPERS_GRAY_TRENCH_COAT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14180,7 +14180,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 18000f;
 			uParam1->f_2 = 3000;
 			uParam1->f_3 = 18000;
-			uParam1->f_5 = -837168973;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_UPPERS_GREEN_TRENCH_COAT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14189,7 +14189,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 16000f;
 			uParam1->f_2 = 2650;
 			uParam1->f_3 = 16000;
-			uParam1->f_5 = 1053240799;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_UPPERS_GOLD_GEO_PRINT_SWEATER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14198,7 +14198,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 16000f;
 			uParam1->f_2 = 2600;
 			uParam1->f_3 = 16000;
-			uParam1->f_5 = 223375334;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_UPPERS_LE_CHIEN_PRINT_SWEATER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14207,7 +14207,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 15000f;
 			uParam1->f_2 = 2500;
 			uParam1->f_3 = 15000;
-			uParam1->f_5 = -1655754048;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_UPPERS_TEAL_TWEED_SWEATER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14216,7 +14216,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 17000f;
 			uParam1->f_2 = 2700;
 			uParam1->f_3 = 17000;
-			uParam1->f_5 = -836299130;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_UPPERS_CLASSIC_P_PRINT_SWEATER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14225,7 +14225,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 17000f;
 			uParam1->f_2 = 2750;
 			uParam1->f_3 = 17000;
-			uParam1->f_5 = 782279512;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_UPPERS_BROWN_P_PRINT_SWEATER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14234,7 +14234,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 17000f;
 			uParam1->f_2 = 2800;
 			uParam1->f_3 = 17000;
-			uParam1->f_5 = 1369424797;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_UPPERS_SWORD_AND_SHIELD_SWEATER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14243,7 +14243,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20000f;
 			uParam1->f_2 = 3250;
 			uParam1->f_3 = 20000;
-			uParam1->f_5 = 1041382958;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_UPPERS_BLACK_SN_PRINT_SWEATER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14261,7 +14261,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20000f;
 			uParam1->f_2 = 3200;
 			uParam1->f_3 = 20000;
-			uParam1->f_5 = 190102475;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_UPPERS_CLASSIC_SN_PRINT_SWEATER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14270,7 +14270,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20000f;
 			uParam1->f_2 = 3200;
 			uParam1->f_3 = 20000;
-			uParam1->f_5 = 1102060585;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_UPPERS_COLOR_DIAMOND_SWEATER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14279,7 +14279,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 19000f;
 			uParam1->f_2 = 3200;
 			uParam1->f_3 = 19000;
-			uParam1->f_5 = -1936071814;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_UPPERS_GOLD_DIAMOND_SWEATER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14288,7 +14288,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20000f;
 			uParam1->f_2 = 3300;
 			uParam1->f_3 = 20000;
-			uParam1->f_5 = 1083353164;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_UPPERS_COLOR_SN_PRINT_SWEATER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14297,7 +14297,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20000f;
 			uParam1->f_2 = 3300;
 			uParam1->f_3 = 20000;
-			uParam1->f_5 = -417660330;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_UPPERS_COLOR_GEO_SWEATER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14306,7 +14306,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 15000f;
 			uParam1->f_2 = 2500;
 			uParam1->f_3 = 15000;
-			uParam1->f_5 = 1932743496;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_UPPERS_GOLD_LOOSE_LINK_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14315,7 +14315,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 16000f;
 			uParam1->f_2 = 2650;
 			uParam1->f_3 = 16000;
-			uParam1->f_5 = -72691188;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_UPPERS_PLATINUM_LOOSE_LINK_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14324,7 +14324,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 17000f;
 			uParam1->f_2 = 2700;
 			uParam1->f_3 = 17000;
-			uParam1->f_5 = -602293245;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_UPPERS_GOLD_BELCHER_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14333,7 +14333,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 18000f;
 			uParam1->f_2 = 2850;
 			uParam1->f_3 = 18000;
-			uParam1->f_5 = 1398134415;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_UPPERS_PLATINUM_BELCHER_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14342,7 +14342,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 16000f;
 			uParam1->f_2 = 2700;
 			uParam1->f_3 = 16000;
-			uParam1->f_5 = 413711434;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_UPPERS_GOLD_PRETZEL_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14351,7 +14351,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 17000f;
 			uParam1->f_2 = 2850;
 			uParam1->f_3 = 17000;
-			uParam1->f_5 = 803677525;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_LOWERS_PLATINUM_PRETZEL_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 	}
@@ -14362,7 +14362,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 16000f;
 			uParam1->f_2 = 2650;
 			uParam1->f_3 = 16000;
-			uParam1->f_5 = -620078051;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_LOWERS_GOLD_CURB_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14371,7 +14371,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 17000f;
 			uParam1->f_2 = 2800;
 			uParam1->f_3 = 17000;
-			uParam1->f_5 = -628103623;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_LOWERS_PLATINUM_CURB_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14380,7 +14380,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 17000f;
 			uParam1->f_2 = 2850;
 			uParam1->f_3 = 17000;
-			uParam1->f_5 = -66304196;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_LOWERS_GOLD_DIAMOND_CURB_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14389,7 +14389,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 18000f;
 			uParam1->f_2 = 3000;
 			uParam1->f_3 = 18000;
-			uParam1->f_5 = 800556459;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_LOWERS_PLATINUM_DIAMOND_CURB_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14398,7 +14398,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 35000f;
 			uParam1->f_2 = 5700;
 			uParam1->f_3 = 35000;
-			uParam1->f_5 = -824264527;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_ACCESSORIES_GOLD_HEAVY_CURB_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14407,7 +14407,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 37000f;
 			uParam1->f_2 = 6000;
 			uParam1->f_3 = 37000;
-			uParam1->f_5 = 755031110;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_ACCESSORIES_PLATINUM_HEAVY_CURB_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14416,7 +14416,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 33000f;
 			uParam1->f_2 = 5400;
 			uParam1->f_3 = 33000;
-			uParam1->f_5 = -1068587067;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_ACCESSORIES_GOLD_HEAVY_SQUARE_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14425,7 +14425,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 35000f;
 			uParam1->f_2 = 5700;
 			uParam1->f_3 = 35000;
-			uParam1->f_5 = 1875074953;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_ACCESSORIES_PLATINUM_HEAVY_SQUARE_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14434,7 +14434,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 17000f;
 			uParam1->f_2 = 2700;
 			uParam1->f_3 = 17000;
-			uParam1->f_5 = 99755424;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_ACCESSORIES_GOLD_SQUARE_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14443,7 +14443,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 17000f;
 			uParam1->f_2 = 2850;
 			uParam1->f_3 = 17000;
-			uParam1->f_5 = -476349454;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_ACCESSORIES_PLATINUM_SQUARE_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14452,7 +14452,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 17000f;
 			uParam1->f_2 = 2800;
 			uParam1->f_3 = 17000;
-			uParam1->f_5 = 1115705246;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_ACCESSORIES_GOLD_POPCORN_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14461,7 +14461,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 18000f;
 			uParam1->f_2 = 2950;
 			uParam1->f_3 = 18000;
-			uParam1->f_5 = -8245662;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_ACCESSORIES_PLATINUM_POPCORN_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14470,7 +14470,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 18000f;
 			uParam1->f_2 = 2900;
 			uParam1->f_3 = 18000;
-			uParam1->f_5 = 1380386970;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_ACCESSORIES_GOLD_ROPE_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14479,7 +14479,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 19000f;
 			uParam1->f_2 = 3050;
 			uParam1->f_3 = 19000;
-			uParam1->f_5 = 1063931600;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_ACCESSORIES_PLATINUM_ROPE_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14488,7 +14488,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 49000f;
 			uParam1->f_2 = 8000;
 			uParam1->f_3 = 49000;
-			uParam1->f_5 = 467758279;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_ACCESSORIES_GOLD_SNAKE_CUFF");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14497,7 +14497,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 60000f;
 			uParam1->f_2 = 9800;
 			uParam1->f_3 = 60000;
-			uParam1->f_5 = -1319543371;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_ACCESSORIES_GOLD_DIAMOND_CUFF");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14506,7 +14506,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 43000f;
 			uParam1->f_2 = 6950;
 			uParam1->f_3 = 43000;
-			uParam1->f_5 = -215858403;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_ACCESSORIES_GOLD_PLAIN_CUFF");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14515,7 +14515,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 37000f;
 			uParam1->f_2 = 5950;
 			uParam1->f_3 = 37000;
-			uParam1->f_5 = -1081958808;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_ACCESSORIES_GOLD_LE_CHIEN_CUFF");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14524,7 +14524,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 47000f;
 			uParam1->f_2 = 7750;
 			uParam1->f_3 = 47000;
-			uParam1->f_5 = -1413988397;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_ACCESSORIES_GOLD_DETAIL_CUFF");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14533,7 +14533,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 8250;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = 1656371392;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_ACCESSORIES_GOLD_SWIRL_CUFF");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14542,7 +14542,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 58000f;
 			uParam1->f_2 = 9500;
 			uParam1->f_3 = 58000;
-			uParam1->f_5 = -272486755;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_ACCESSORIES_GOLD_TEXTURED_CUFF");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14551,7 +14551,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = -1242936773;
+			uParam1->f_5 = joaat("LUXE2_MALE_OUTFITS_THE_INVESTOR");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14560,7 +14560,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = -330255991;
+			uParam1->f_5 = joaat("LUXE2_MALE_OUTFITS_THE_MAC");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14569,7 +14569,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = -1403743541;
+			uParam1->f_5 = joaat("LUXE2_MALE_OUTFITS_THE_BULLION");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14578,7 +14578,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = -853299791;
+			uParam1->f_5 = joaat("LUXE2_MALE_OUTFITS_THE_BALLER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14587,7 +14587,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = -342699350;
+			uParam1->f_5 = joaat("LUXE2_MALE_OUTFITS_THE_BENEFACTOR");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14596,7 +14596,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 546969328;
+			uParam1->f_5 = joaat("LUXE2_MALE_OUTFITS_THE_STACKS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14605,7 +14605,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 1436767744;
+			uParam1->f_5 = joaat("LUXE2_MALE_OUTFITS_THE_LEISURE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14614,7 +14614,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = -1142176347;
+			uParam1->f_5 = joaat("LUXE2_MALE_OUTFITS_THE_VIP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14623,7 +14623,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 1989937423;
+			uParam1->f_5 = joaat("LUXE2_MALE_OUTFITS_THE_JET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14632,7 +14632,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = -367171541;
+			uParam1->f_5 = joaat("LUXE2_MALE_OUTFITS_THE_PLATINUM");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14641,7 +14641,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = -1489565880;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_OUTFITS_THE_VAMP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14650,7 +14650,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 99570882;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_OUTFITS_THE_TREASURE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14659,7 +14659,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = -2115936932;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_OUTFITS_THE_MANOR");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14668,7 +14668,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = -1967937907;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_OUTFITS_THE_ROSE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14677,7 +14677,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = -1870797418;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_OUTFITS_THE_SESSANTA_NOVE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14686,7 +14686,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = -588103474;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_OUTFITS_THE_SWANK");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14695,7 +14695,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 825754880;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_OUTFITS_THE_CRUISE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14704,7 +14704,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = -591343606;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_OUTFITS_THE_GRACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14713,7 +14713,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 761909348;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_OUTFITS_THE_HEIR");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14722,7 +14722,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 688997908;
+			uParam1->f_5 = joaat("LUXE2_FEMALE_OUTFITS_THE_ACCOUNT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14913,7 +14913,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 17000f;
 			uParam1->f_2 = 5450;
 			uParam1->f_3 = 17000;
-			uParam1->f_5 = 1537969659;
+			uParam1->f_5 = joaat("LUXE2_THE_HOWLER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14922,7 +14922,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 15000f;
 			uParam1->f_2 = 5050;
 			uParam1->f_3 = 15000;
-			uParam1->f_5 = 2052881604;
+			uParam1->f_5 = joaat("LUXE2_FATAL_DAGGER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14931,7 +14931,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 22000f;
 			uParam1->f_2 = 7250;
 			uParam1->f_3 = 22000;
-			uParam1->f_5 = 1657765060;
+			uParam1->f_5 = joaat("LUXE2_INTROMETRIC");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14940,7 +14940,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20000f;
 			uParam1->f_2 = 6550;
 			uParam1->f_3 = 20000;
-			uParam1->f_5 = 118699681;
+			uParam1->f_5 = joaat("LUXE2_CROSS_OF_ROSES");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14949,7 +14949,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 40000f;
 			uParam1->f_2 = 13100;
 			uParam1->f_3 = 40000;
-			uParam1->f_5 = -93488432;
+			uParam1->f_5 = joaat("LUXE2_GEOMETRIC_GALAXY");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14958,7 +14958,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 28000f;
 			uParam1->f_2 = 9200;
 			uParam1->f_3 = 28000;
-			uParam1->f_5 = -111901410;
+			uParam1->f_5 = joaat("LUXE2_EGYPTIAN_MURAL");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14967,7 +14967,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 32000f;
 			uParam1->f_2 = 10650;
 			uParam1->f_3 = 32000;
-			uParam1->f_5 = -776037061;
+			uParam1->f_5 = joaat("LUXE2_HEAVENLY_DEITY");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14976,7 +14976,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 35000f;
 			uParam1->f_2 = 11600;
 			uParam1->f_3 = 35000;
-			uParam1->f_5 = 1850662394;
+			uParam1->f_5 = joaat("LUXE2_DIVINE_GODDESS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14985,7 +14985,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 43000f;
 			uParam1->f_2 = 14100;
 			uParam1->f_3 = 43000;
-			uParam1->f_5 = 249366521;
+			uParam1->f_5 = joaat("LUXE2_CLOAKED_ANGEL");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -14994,7 +14994,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 23000f;
 			uParam1->f_2 = 7700;
 			uParam1->f_3 = 23000;
-			uParam1->f_5 = -1861456710;
+			uParam1->f_5 = joaat("LUXE2_STARMETRIC");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -15003,7 +15003,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 17000f;
 			uParam1->f_2 = 5700;
 			uParam1->f_3 = 17000;
-			uParam1->f_5 = 721710253;
+			uParam1->f_5 = joaat("LUXE2_REAPER_SWAY");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -15012,7 +15012,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 22000f;
 			uParam1->f_2 = 7300;
 			uParam1->f_3 = 22000;
-			uParam1->f_5 = 648351172;
+			uParam1->f_5 = joaat("LUXE2_FLORAL_PRINT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -15021,7 +15021,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 19000f;
 			uParam1->f_2 = 6300;
 			uParam1->f_3 = 19000;
-			uParam1->f_5 = 811933701;
+			uParam1->f_5 = joaat("LUXE2_COBRA_DAWN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -15030,7 +15030,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 17000f;
 			uParam1->f_2 = 5600;
 			uParam1->f_3 = 17000;
-			uParam1->f_5 = 600606008;
+			uParam1->f_5 = joaat("LUXE2_PYTHON_SKULL");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -15039,7 +15039,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 45000f;
 			uParam1->f_2 = 14850;
 			uParam1->f_3 = 45000;
-			uParam1->f_5 = 444644043;
+			uParam1->f_5 = joaat("LUXE2_GEOMETRIC_DESIGN");
 			uParam1->f_4 = 1;
 			break;
 	}
@@ -17990,7 +17990,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 3;
-			uParam1->f_5 = 1185535624;
+			uParam1->f_5 = joaat("TIME_TRIAL_EVENT_MULTIPLIER_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -17999,7 +17999,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 3;
-			uParam1->f_5 = -1673351342;
+			uParam1->f_5 = joaat("TIME_TRIAL_EVENT_MULTIPLIER_RP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18190,7 +18190,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 100000;
-			uParam1->f_5 = -173922587;
+			uParam1->f_5 = joaat("MALE_UPPERS_CREW_VARSITY_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18199,7 +18199,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = 907276681;
+			uParam1->f_5 = joaat("MALE_ACCESSORIES_GOLD_MAGNETICS_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18208,7 +18208,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = -2137268844;
+			uParam1->f_5 = joaat("MALE_ACCESSORIES_PLATINUM_MAGNETICS_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18217,7 +18217,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 100000;
-			uParam1->f_5 = 332150836;
+			uParam1->f_5 = joaat("FEMALE_UPPERS_CREW_VARSITY_JACKET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18226,7 +18226,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 2000;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = 2138856017;
+			uParam1->f_5 = joaat("FEMALE_ACCESSORIES_ASSAULT_HOOPS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18235,7 +18235,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 2000;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = -1324812423;
+			uParam1->f_5 = joaat("FEMALE_ACCESSORIES_CHUNKY_HOOPS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18244,7 +18244,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 2000;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = 724415285;
+			uParam1->f_5 = joaat("FEMALE_ACCESSORIES_CLASSIC_HOOPS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18253,7 +18253,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = 43990373;
+			uParam1->f_5 = joaat("FEMALE_ACCESSORIES_GOLD_MAGNETICS_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18262,7 +18262,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = -267783003;
+			uParam1->f_5 = joaat("FEMALE_ACCESSORIES_PLATINUM_MAGNETICS_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18415,7 +18415,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20000f;
 			uParam1->f_2 = 2000;
 			uParam1->f_3 = 20000;
-			uParam1->f_5 = 1072594687;
+			uParam1->f_5 = joaat("PRIMARY_MACHETE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18496,7 +18496,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 2000;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = 1614892838;
+			uParam1->f_5 = joaat("BOTH_GENDERS_HOLY_MARY");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18505,7 +18505,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 2000;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = -1617486606;
+			uParam1->f_5 = joaat("BOTH_GENDERS_BAD_ANGEL");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18514,7 +18514,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 2000;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = -256649283;
+			uParam1->f_5 = joaat("BOTH_GENDERS_LOVE_IS_BLIND");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18523,7 +18523,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 2000;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = -256341759;
+			uParam1->f_5 = joaat("BOTH_GENDERS_SAD_ANGEL");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18532,7 +18532,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 2000;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = -340095595;
+			uParam1->f_5 = joaat("BOTH_GENDERS_CITY_SORROW");
 			uParam1->f_4 = 1;
 			break;
 	}
@@ -20189,7 +20189,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 2000;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = 858646893;
+			uParam1->f_5 = joaat("MALE_UPPERS_TAN_CHORE_COAT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20198,7 +20198,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 2000;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = -1141300700;
+			uParam1->f_5 = joaat("MALE_ACCESSORIES_GOLD_RIM_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20207,7 +20207,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 2000;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = 1221648951;
+			uParam1->f_5 = joaat("MALE_ACCESSORIES_PLATINUM_RIM_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20234,7 +20234,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 2000;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = 532759465;
+			uParam1->f_5 = joaat("FEMALE_UPPERS_TAN_CHORE_COAT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20243,7 +20243,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 2000;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = -896121855;
+			uParam1->f_5 = joaat("FEMALE_ACCESSORIES_FU_HOOPS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20252,7 +20252,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 2000;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = -1007669447;
+			uParam1->f_5 = joaat("FEMALE_ACCESSORIES_SCREW_YOU_HOOPS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20261,7 +20261,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 2000;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = 402655953;
+			uParam1->f_5 = joaat("FEMALE_ACCESSORIES_GOLD_RIM_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20270,7 +20270,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 2000;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = -1614852695;
+			uParam1->f_5 = joaat("FEMALE_ACCESSORIES_PLATINUM_RIM_NECKLACE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20585,7 +20585,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 30000f;
 			uParam1->f_2 = 5000;
 			uParam1->f_3 = 30000;
-			uParam1->f_5 = 1816070514;
+			uParam1->f_5 = joaat("PRIMARY_COMPACT_RIFLE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20603,7 +20603,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 2000;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = 1309603139;
+			uParam1->f_5 = joaat("TATTOO_SA_ASSAULT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20612,7 +20612,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 2000;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = -793692562;
+			uParam1->f_5 = joaat("TATTOO_LOVE_THE_GAME");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20621,7 +20621,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 2000;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = 168631431;
+			uParam1->f_5 = joaat("TATTOO_SKELETON_PARTY");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20630,7 +20630,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 2000;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = -104499381;
+			uParam1->f_5 = joaat("TATTOO_DEAD_PRETTY");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20639,7 +20639,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50000f;
 			uParam1->f_2 = 2000;
 			uParam1->f_3 = 50000;
-			uParam1->f_5 = -1634707666;
+			uParam1->f_5 = joaat("TATTOO_REIGN_OVER");
 			uParam1->f_4 = 1;
 			break;
 		
