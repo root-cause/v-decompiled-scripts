@@ -1217,7 +1217,7 @@ void func_35(bool bParam0, bool bParam1, bool bParam2)//Position - 0x101C
 			if (!bParam2)
 			{
 				func_95();
-				func_36(0, PLAYER::PLAYER_PED_ID(), "CLAW GAME RP5", -1827353931, 215553531, 5, 1, -1, 0, 0, 0);
+				func_36(0, PLAYER::PLAYER_PED_ID(), "CLAW GAME RP5", joaat("XPTYPE_AWARDS"), joaat("XPCATEGORY_RP_CLAW_CRANE"), 5, 1, -1, 0, 0, 0);
 				if (func_28(6))
 				{
 					if (!func_28(14))
@@ -1253,7 +1253,7 @@ int func_37(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, i
 	{
 		return iVar0;
 	}
-	if (iParam4 == -592022605 || iParam4 == -1915191729)
+	if (iParam4 == joaat("XPCATEGORY_COMPLETED_SHOWER") || iParam4 == joaat("XPCATEGORY_COMPLETED_ROLLERCOASTER"))
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(iParam1))
 		{
@@ -1766,13 +1766,13 @@ void func_58(int iParam0, int iParam1, int iParam2)//Position - 0x1CC5
 		{
 			iParam0 = 1787576850;
 		}
-		if (Global_262145.f_10069 == 0 && iParam1 != -1076930708)
+		if (Global_262145.f_10069 == 0 && iParam1 != joaat("XPCATEGORY_KEYS_DEBUG"))
 		{
 			if (iParam2 == 0)
 			{
 				if (iParam0 < Global_1659759[func_67(-1)])
 				{
-					STATS::PLAYSTATS_AWARD_XP(iParam0, -523908350, iParam1);
+					STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR"), iParam1);
 					return;
 				}
 				else if (iParam0 == Global_1659759[func_67(-1)])
@@ -1796,7 +1796,7 @@ void func_58(int iParam0, int iParam1, int iParam2)//Position - 0x1CC5
 		{
 			if (iParam0 < 0)
 			{
-				STATS::PLAYSTATS_AWARD_XP(iParam0, -1586921397, iParam1);
+				STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR_NEGATIVE"), iParam1);
 				return;
 			}
 		}
@@ -3108,7 +3108,7 @@ void func_96()//Position - 0x362D
 			else
 			{
 				func_95();
-				func_36(0, PLAYER::PLAYER_PED_ID(), "CLAW GAME RP250", -1827353931, 215553531, Global_262145.f_28862, 1, -1, 0, 0, 0);
+				func_36(0, PLAYER::PLAYER_PED_ID(), "CLAW GAME RP250", joaat("XPTYPE_AWARDS"), joaat("XPCATEGORY_RP_CLAW_CRANE"), Global_262145.f_28862, 1, -1, 0, 0, 0);
 			}
 		}
 		else if (iVar1 == joaat("ch_prop_arcade_claw_plush_03a"))
@@ -3124,7 +3124,7 @@ void func_96()//Position - 0x362D
 			else
 			{
 				func_95();
-				func_36(0, PLAYER::PLAYER_PED_ID(), "CLAW GAME RP250", -1827353931, 215553531, Global_262145.f_28862, 1, -1, 0, 0, 0);
+				func_36(0, PLAYER::PLAYER_PED_ID(), "CLAW GAME RP250", joaat("XPTYPE_AWARDS"), joaat("XPCATEGORY_RP_CLAW_CRANE"), Global_262145.f_28862, 1, -1, 0, 0, 0);
 			}
 		}
 		else if (iVar1 == joaat("ch_prop_arcade_claw_plush_01a"))
@@ -3140,7 +3140,7 @@ void func_96()//Position - 0x362D
 			else
 			{
 				func_95();
-				func_36(0, PLAYER::PLAYER_PED_ID(), "CLAW GAME RP250", -1827353931, 215553531, Global_262145.f_28862, 1, -1, 0, 0, 0);
+				func_36(0, PLAYER::PLAYER_PED_ID(), "CLAW GAME RP250", joaat("XPTYPE_AWARDS"), joaat("XPCATEGORY_RP_CLAW_CRANE"), Global_262145.f_28862, 1, -1, 0, 0, 0);
 			}
 		}
 		else if (iVar1 == joaat("ch_prop_arcade_claw_plush_02a"))
@@ -3156,7 +3156,7 @@ void func_96()//Position - 0x362D
 			else
 			{
 				func_95();
-				func_36(0, PLAYER::PLAYER_PED_ID(), "CLAW GAME RP250", -1827353931, 215553531, Global_262145.f_28862, 1, -1, 0, 0, 0);
+				func_36(0, PLAYER::PLAYER_PED_ID(), "CLAW GAME RP250", joaat("XPTYPE_AWARDS"), joaat("XPCATEGORY_RP_CLAW_CRANE"), Global_262145.f_28862, 1, -1, 0, 0, 0);
 			}
 		}
 		else if (iVar1 == joaat("ch_prop_arcade_claw_plush_06a"))
@@ -3171,7 +3171,7 @@ void func_96()//Position - 0x362D
 			else
 			{
 				func_95();
-				func_36(0, PLAYER::PLAYER_PED_ID(), "CLAW GAME RP250", -1827353931, 215553531, Global_262145.f_28862, 1, -1, 0, 0, 0);
+				func_36(0, PLAYER::PLAYER_PED_ID(), "CLAW GAME RP250", joaat("XPTYPE_AWARDS"), joaat("XPCATEGORY_RP_CLAW_CRANE"), Global_262145.f_28862, 1, -1, 0, 0, 0);
 			}
 		}
 		else if (iVar1 == joaat("ch_prop_arcade_claw_plush_04a"))
@@ -3187,7 +3187,7 @@ void func_96()//Position - 0x362D
 			else
 			{
 				func_95();
-				func_36(0, PLAYER::PLAYER_PED_ID(), "CLAW GAME RP250", -1827353931, 215553531, Global_262145.f_28862, 1, -1, 0, 0, 0);
+				func_36(0, PLAYER::PLAYER_PED_ID(), "CLAW GAME RP250", joaat("XPTYPE_AWARDS"), joaat("XPCATEGORY_RP_CLAW_CRANE"), Global_262145.f_28862, 1, -1, 0, 0, 0);
 			}
 		}
 		else if (iVar1 == joaat("ch_prop_shiny_wasabi_plush_08a"))
@@ -3203,7 +3203,7 @@ void func_96()//Position - 0x362D
 			else
 			{
 				func_95();
-				func_36(0, PLAYER::PLAYER_PED_ID(), "CLAW GAME RP500", -1827353931, 215553531, Global_262145.f_28863, 1, -1, 0, 0, 0);
+				func_36(0, PLAYER::PLAYER_PED_ID(), "CLAW GAME RP500", joaat("XPTYPE_AWARDS"), joaat("XPCATEGORY_RP_CLAW_CRANE"), Global_262145.f_28863, 1, -1, 0, 0, 0);
 			}
 		}
 		else if (iVar1 == joaat("ch_prop_princess_robo_plush_07a"))
@@ -3219,7 +3219,7 @@ void func_96()//Position - 0x362D
 			else
 			{
 				func_95();
-				func_36(0, PLAYER::PLAYER_PED_ID(), "CLAW GAME RP750", -1827353931, 215553531, Global_262145.f_28864, 1, -1, 0, 0, 0);
+				func_36(0, PLAYER::PLAYER_PED_ID(), "CLAW GAME RP750", joaat("XPTYPE_AWARDS"), joaat("XPCATEGORY_RP_CLAW_CRANE"), Global_262145.f_28864, 1, -1, 0, 0, 0);
 			}
 		}
 		else if (iVar1 == joaat("ch_prop_master_09a"))
@@ -3235,7 +3235,7 @@ void func_96()//Position - 0x362D
 			else
 			{
 				func_95();
-				func_36(0, PLAYER::PLAYER_PED_ID(), "CLAW GAME RP1000", -1827353931, 215553531, Global_262145.f_28865, 1, -1, 0, 0, 0);
+				func_36(0, PLAYER::PLAYER_PED_ID(), "CLAW GAME RP1000", joaat("XPTYPE_AWARDS"), joaat("XPCATEGORY_RP_CLAW_CRANE"), Global_262145.f_28865, 1, -1, 0, 0, 0);
 			}
 		}
 		bVar2 = false;

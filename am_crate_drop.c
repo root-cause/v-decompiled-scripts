@@ -4173,7 +4173,7 @@ void func_124(int iParam0, int iParam1)//Position - 0x76CB
 			{
 				if (PLAYER::PLAYER_ID() == NETWORK::NETWORK_GET_DESTROYER_OF_NETWORK_ID(Local_83.f_2.f_68[iParam0 /*104*/].f_5[iParam1 /*18*/], &uVar0))
 				{
-					func_125(0, NETWORK::NET_TO_PED(Local_83.f_2.f_68[iParam0 /*104*/].f_5[iParam1 /*18*/]), "XPT_KAIE", -1859646258, 2131309714, SYSTEM::ROUND((50f * Global_262145.f_4232)), 1, -1, 0, 0, 0);
+					func_125(0, NETWORK::NET_TO_PED(Local_83.f_2.f_68[iParam0 /*104*/].f_5[iParam1 /*18*/]), "XPT_KAIE", joaat("XPTYPE_ACTION"), joaat("XPCATEGORY_ACTION_KILLS"), SYSTEM::ROUND((50f * Global_262145.f_4232)), 1, -1, 0, 0, 0);
 					iLocal_96 += 50;
 					iLocal_100++;
 					MISC::SET_BIT(&(uLocal_91[iParam0]), (0 + iParam1));
@@ -4202,7 +4202,7 @@ int func_126(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, 
 	{
 		return iVar0;
 	}
-	if (iParam4 == -592022605 || iParam4 == -1915191729)
+	if (iParam4 == joaat("XPCATEGORY_COMPLETED_SHOWER") || iParam4 == joaat("XPCATEGORY_COMPLETED_ROLLERCOASTER"))
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(iParam1))
 		{
@@ -4712,13 +4712,13 @@ void func_147(int iParam0, int iParam1, int iParam2)//Position - 0x8055
 		{
 			iParam0 = 1787576850;
 		}
-		if (Global_262145.f_10069 == 0 && iParam1 != -1076930708)
+		if (Global_262145.f_10069 == 0 && iParam1 != joaat("XPCATEGORY_KEYS_DEBUG"))
 		{
 			if (iParam2 == 0)
 			{
 				if (iParam0 < Global_1659759[func_156(-1)])
 				{
-					STATS::PLAYSTATS_AWARD_XP(iParam0, -523908350, iParam1);
+					STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR"), iParam1);
 					return;
 				}
 				else if (iParam0 == Global_1659759[func_156(-1)])
@@ -4742,7 +4742,7 @@ void func_147(int iParam0, int iParam1, int iParam2)//Position - 0x8055
 		{
 			if (iParam0 < 0)
 			{
-				STATS::PLAYSTATS_AWARD_XP(iParam0, -1586921397, iParam1);
+				STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR_NEGATIVE"), iParam1);
 				return;
 			}
 		}
@@ -6891,11 +6891,11 @@ void func_205(bool bParam0)//Position - 0xADE2
 	func_365(3);
 	if (NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_83.f_2.f_1[bParam0 /*66*/].f_1))
 	{
-		func_125(0, NETWORK::NET_TO_OBJ(Local_83.f_2.f_1[bParam0 /*66*/].f_1), "XPT_MEDIUMT", -979004785, 1022861207, iVar4, 1, -1, 0, 0, 0);
+		func_125(0, NETWORK::NET_TO_OBJ(Local_83.f_2.f_1[bParam0 /*66*/].f_1), "XPT_MEDIUMT", joaat("XPTYPE_COLLECT"), joaat("XPCATEGORY_COLLECT_CRATE_DROP"), iVar4, 1, -1, 0, 0, 0);
 	}
 	else
 	{
-		func_125(0, PLAYER::PLAYER_PED_ID(), "XPT_MEDIUMT", -979004785, 1022861207, iVar4, 1, -1, 0, 0, 0);
+		func_125(0, PLAYER::PLAYER_PED_ID(), "XPT_MEDIUMT", joaat("XPTYPE_COLLECT"), joaat("XPCATEGORY_COLLECT_CRATE_DROP"), iVar4, 1, -1, 0, 0, 0);
 	}
 	iLocal_96 = (iLocal_96 + iVar4);
 	switch (Local_83.f_2.f_1[bParam0 /*66*/].f_30)

@@ -19272,7 +19272,7 @@ void func_584(int iParam0)//Position - 0x16900
 															if (iLocal_652 < func_631())
 															{
 																iLocal_652++;
-																func_588(0, iVar1, "", -1859646258, 2131309714, func_630(), 1, -1, 0, 0, 0);
+																func_588(0, iVar1, "", joaat("XPTYPE_ACTION"), joaat("XPCATEGORY_ACTION_KILLS"), func_630(), 1, -1, 0, 0, 0);
 																Local_92.f_7 = (Local_92.f_7 + func_630());
 															}
 															else
@@ -19309,7 +19309,7 @@ void func_584(int iParam0)//Position - 0x16900
 															if (iLocal_650 < func_587())
 															{
 																iLocal_650++;
-																func_588(0, iVar1, "", -1859646258, 2131309714, func_586(), 1, -1, 0, 0, 0);
+																func_588(0, iVar1, "", joaat("XPTYPE_ACTION"), joaat("XPCATEGORY_ACTION_KILLS"), func_586(), 1, -1, 0, 0, 0);
 																Local_92.f_7 = (Local_92.f_7 + func_586());
 															}
 															else
@@ -19417,7 +19417,7 @@ int func_589(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, 
 	{
 		return iVar0;
 	}
-	if (iParam4 == -592022605 || iParam4 == -1915191729)
+	if (iParam4 == joaat("XPCATEGORY_COMPLETED_SHOWER") || iParam4 == joaat("XPCATEGORY_COMPLETED_ROLLERCOASTER"))
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(iParam1))
 		{
@@ -19819,13 +19819,13 @@ void func_607(int iParam0, int iParam1, int iParam2)//Position - 0x173AC
 		{
 			iParam0 = 1787576850;
 		}
-		if (Global_262145.f_10069 == 0 && iParam1 != -1076930708)
+		if (Global_262145.f_10069 == 0 && iParam1 != joaat("XPCATEGORY_KEYS_DEBUG"))
 		{
 			if (iParam2 == 0)
 			{
 				if (iParam0 < Global_1659759[func_215(-1)])
 				{
-					STATS::PLAYSTATS_AWARD_XP(iParam0, -523908350, iParam1);
+					STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR"), iParam1);
 					return;
 				}
 				else if (iParam0 == Global_1659759[func_215(-1)])
@@ -19849,7 +19849,7 @@ void func_607(int iParam0, int iParam1, int iParam2)//Position - 0x173AC
 		{
 			if (iParam0 < 0)
 			{
-				STATS::PLAYSTATS_AWARD_XP(iParam0, -1586921397, iParam1);
+				STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR_NEGATIVE"), iParam1);
 				return;
 			}
 		}
@@ -20361,7 +20361,7 @@ void func_635(int iParam0, int iParam1)//Position - 0x17BDD
 						if (iVar1 > 0)
 						{
 							func_660();
-							func_588(0, PLAYER::PLAYER_PED_ID(), "", -1636175450, -1253457806, iVar1, 1, -1, 0, 0, 0);
+							func_588(0, PLAYER::PLAYER_PED_ID(), "", joaat("XPTYPE_COMPLETE"), joaat("XPCATEGORY_COMPLETE_CHALLENGES"), iVar1, 1, -1, 0, 0, 0);
 							Local_92.f_7 = (Local_92.f_7 + iVar1);
 						}
 						if (iVar0 > 0)

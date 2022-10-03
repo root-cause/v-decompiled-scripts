@@ -603,7 +603,7 @@ void __EntryFunction__()//Position - 0x0
 						}
 						if (!func_652())
 						{
-							if (func_473(&(Var0.f_1531), &(Var7[iVar9 /*593*/].f_13), "XPT_RANGE", -1636175450, -492461234, Local_195[iVar9 /*80*/].f_8, iVar11, Global_1837285, &(Var0.f_2759), iVar12, 0, 0, 0, 0, 0, 3))
+							if (func_473(&(Var0.f_1531), &(Var7[iVar9 /*593*/].f_13), "XPT_RANGE", joaat("XPTYPE_COMPLETE"), joaat("XPCATEGORY_COMPLETE_SHOOTING_RANGE"), Local_195[iVar9 /*80*/].f_8, iVar11, Global_1837285, &(Var0.f_2759), iVar12, 0, 0, 0, 0, 0, 3))
 							{
 								func_115(0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0);
 								func_103();
@@ -91575,13 +91575,13 @@ void func_527(int iParam0, int iParam1, int iParam2)//Position - 0x69A96
 		{
 			iParam0 = 1787576850;
 		}
-		if (Global_262145.f_10069 == 0 && iParam1 != -1076930708)
+		if (Global_262145.f_10069 == 0 && iParam1 != joaat("XPCATEGORY_KEYS_DEBUG"))
 		{
 			if (iParam2 == 0)
 			{
 				if (iParam0 < Global_1659759[func_177(-1)])
 				{
-					STATS::PLAYSTATS_AWARD_XP(iParam0, -523908350, iParam1);
+					STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR"), iParam1);
 					return;
 				}
 				else if (iParam0 == Global_1659759[func_177(-1)])
@@ -91605,7 +91605,7 @@ void func_527(int iParam0, int iParam1, int iParam2)//Position - 0x69A96
 		{
 			if (iParam0 < 0)
 			{
-				STATS::PLAYSTATS_AWARD_XP(iParam0, -1586921397, iParam1);
+				STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR_NEGATIVE"), iParam1);
 				return;
 			}
 		}
@@ -104017,12 +104017,12 @@ void func_774(var uParam0, var uParam1, int iParam2, int iParam3, int iParam4, v
 	else if ((iParam2 == (*uParam5)[0] && func_31(uParam1, 1024)) || (iParam2 == (*uParam5)[1] && func_31(uParam1, 2048)))
 	{
 		iVar0 = SYSTEM::ROUND((10f * Global_262145.f_4242));
-		iVar1 = -492461234;
+		iVar1 = joaat("XPCATEGORY_COMPLETE_SHOOTING_RANGE");
 		if (func_788(PLAYER::PLAYER_ID()))
 		{
 			iVar1 = -1495394995;
 		}
-		func_515(0, "XPT_RANGE", -1636175450, iVar1, iVar0, 1, -1, 0);
+		func_515(0, "XPT_RANGE", joaat("XPTYPE_COMPLETE"), iVar1, iVar0, 1, -1, 0);
 	}
 	func_775(&(uParam0->f_125), iParam3, uParam6->f_11);
 }

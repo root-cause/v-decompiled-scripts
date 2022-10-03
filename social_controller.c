@@ -2665,7 +2665,7 @@ void func_53(var uParam0, bool bParam1)//Position - 0x2754
 												if (func_51() && func_48())
 												{
 													SOCIALCLUB::SC_INBOX_MESSAGE_DO_APPLY(iVar1);
-													func_113(0, "XPT_MISSVER", 663093519, 475954354, 5000, 1, -1, 0);
+													func_113(0, "XPT_MISSVER", joaat("XPTYPE_SOCIALCLUB"), 475954354, 5000, 1, -1, 0);
 													if (SOCIALCLUB::SC_INBOX_MESSAGE_GET_DATA_STRING(iVar1, "msg", &uVar3))
 													{
 													}
@@ -4173,13 +4173,13 @@ void func_126(int iParam0, int iParam1, int iParam2)//Position - 0x4310
 		{
 			iParam0 = 1787576850;
 		}
-		if (Global_262145.f_10069 == 0 && iParam1 != -1076930708)
+		if (Global_262145.f_10069 == 0 && iParam1 != joaat("XPCATEGORY_KEYS_DEBUG"))
 		{
 			if (iParam2 == 0)
 			{
 				if (iParam0 < Global_1659759[func_30(-1)])
 				{
-					STATS::PLAYSTATS_AWARD_XP(iParam0, -523908350, iParam1);
+					STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR"), iParam1);
 					return;
 				}
 				else if (iParam0 == Global_1659759[func_30(-1)])
@@ -4203,7 +4203,7 @@ void func_126(int iParam0, int iParam1, int iParam2)//Position - 0x4310
 		{
 			if (iParam0 < 0)
 			{
-				STATS::PLAYSTATS_AWARD_XP(iParam0, -1586921397, iParam1);
+				STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR_NEGATIVE"), iParam1);
 				return;
 			}
 		}

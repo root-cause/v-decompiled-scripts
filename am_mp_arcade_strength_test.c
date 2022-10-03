@@ -2505,7 +2505,7 @@ void func_90()//Position - 0x2AD6
 			func_158(28254, 1, -1);
 			func_155(44);
 			func_154(1);
-			func_96(0, PLAYER::PLAYER_PED_ID(), "", -1827353931, -1441430505, 800, 1, -1, 0, 0, 0);
+			func_96(0, PLAYER::PLAYER_PED_ID(), "", joaat("XPTYPE_AWARDS"), joaat("XPCATEGORY_RP_STRENGTH_TEST"), 800, 1, -1, 0, 0, 0);
 			func_154(0);
 			Local_149.f_156.f_3 = 1;
 		}
@@ -2522,7 +2522,7 @@ void func_90()//Position - 0x2AD6
 				func_155(46);
 				func_91("ARD_CAB_AOF_TROP1", -1);
 				func_154(1);
-				func_96(0, PLAYER::PLAYER_PED_ID(), "", -1827353931, -1441430505, 800, 1, -1, 0, 0, 0);
+				func_96(0, PLAYER::PLAYER_PED_ID(), "", joaat("XPTYPE_AWARDS"), joaat("XPCATEGORY_RP_STRENGTH_TEST"), 800, 1, -1, 0, 0, 0);
 				func_154(0);
 				Local_149.f_156.f_4 = 1;
 			}
@@ -2592,7 +2592,7 @@ int func_96(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, i
 	{
 		return iVar0;
 	}
-	if (iParam4 == -592022605 || iParam4 == -1915191729)
+	if (iParam4 == joaat("XPCATEGORY_COMPLETED_SHOWER") || iParam4 == joaat("XPCATEGORY_COMPLETED_ROLLERCOASTER"))
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(iParam1))
 		{
@@ -3110,13 +3110,13 @@ void func_118(int iParam0, int iParam1, int iParam2)//Position - 0x3533
 		{
 			iParam0 = 1787576850;
 		}
-		if (Global_262145.f_10069 == 0 && iParam1 != -1076930708)
+		if (Global_262145.f_10069 == 0 && iParam1 != joaat("XPCATEGORY_KEYS_DEBUG"))
 		{
 			if (iParam2 == 0)
 			{
 				if (iParam0 < Global_1659759[func_127(-1)])
 				{
-					STATS::PLAYSTATS_AWARD_XP(iParam0, -523908350, iParam1);
+					STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR"), iParam1);
 					return;
 				}
 				else if (iParam0 == Global_1659759[func_127(-1)])
@@ -3140,7 +3140,7 @@ void func_118(int iParam0, int iParam1, int iParam2)//Position - 0x3533
 		{
 			if (iParam0 < 0)
 			{
-				STATS::PLAYSTATS_AWARD_XP(iParam0, -1586921397, iParam1);
+				STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR_NEGATIVE"), iParam1);
 				return;
 			}
 		}

@@ -126648,7 +126648,7 @@ void func_1451(int iParam0)//Position - 0xA1178
 										iLocal_1449++;
 										if (iLocal_1449 <= func_1489())
 										{
-											func_1452(0, PLAYER::PLAYER_PED_ID(), "XPT_KAIE", -875716015, 1010140597, func_1488(), 1, -1, 0, 0, 0);
+											func_1452(0, PLAYER::PLAYER_PED_ID(), "XPT_KAIE", joaat("XPTYPE_SKILL"), 1010140597, func_1488(), 1, -1, 0, 0, 0);
 											Local_1437.f_7 += 100;
 										}
 									}
@@ -126689,7 +126689,7 @@ int func_1453(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4,
 	{
 		return iVar0;
 	}
-	if (iParam4 == -592022605 || iParam4 == -1915191729)
+	if (iParam4 == joaat("XPCATEGORY_COMPLETED_SHOWER") || iParam4 == joaat("XPCATEGORY_COMPLETED_ROLLERCOASTER"))
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(iParam1))
 		{
@@ -127091,13 +127091,13 @@ void func_1471(int iParam0, int iParam1, int iParam2)//Position - 0xA19D0
 		{
 			iParam0 = 1787576850;
 		}
-		if (Global_262145.f_10069 == 0 && iParam1 != -1076930708)
+		if (Global_262145.f_10069 == 0 && iParam1 != joaat("XPCATEGORY_KEYS_DEBUG"))
 		{
 			if (iParam2 == 0)
 			{
 				if (iParam0 < Global_1659759[func_67(-1)])
 				{
-					STATS::PLAYSTATS_AWARD_XP(iParam0, -523908350, iParam1);
+					STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR"), iParam1);
 					return;
 				}
 				else if (iParam0 == Global_1659759[func_67(-1)])
@@ -127121,7 +127121,7 @@ void func_1471(int iParam0, int iParam1, int iParam2)//Position - 0xA19D0
 		{
 			if (iParam0 < 0)
 			{
-				STATS::PLAYSTATS_AWARD_XP(iParam0, -1586921397, iParam1);
+				STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR_NEGATIVE"), iParam1);
 				return;
 			}
 		}
@@ -129314,7 +129314,7 @@ void func_1548(bool bParam0)//Position - 0xA425F
 				}
 				Global_2727753 = iVar0;
 				func_1550();
-				func_1452(0, PLAYER::PLAYER_PED_ID(), "XPT_KAIE", -875716015, 735118856, iVar1, 1, -1, 0, 0, 0);
+				func_1452(0, PLAYER::PLAYER_PED_ID(), "XPT_KAIE", joaat("XPTYPE_SKILL"), 735118856, iVar1, 1, -1, 0, 0, 0);
 				Local_1437.f_7 = (Local_1437.f_7 + iVar1);
 				Local_1437.f_6 = (Local_1437.f_6 + iVar0);
 				if (!Global_262145.f_11774)

@@ -15294,7 +15294,7 @@ void func_405()//Position - 0x114E0
 					{
 						func_445("IMPEX_PASS", iLocal_298, 7000, 0);
 					}
-					func_410(2, "XPT_IMPEXP", -1636175450, -1930707410, iLocal_299, 1, -1, 0);
+					func_410(2, "XPT_IMPEXP", joaat("XPTYPE_COMPLETE"), -1930707410, iLocal_299, 1, -1, 0);
 					func_409(29);
 					func_490(PLAYER::PLAYER_ID(), 1, 0, 0);
 					Local_337[NETWORK::PARTICIPANT_ID_TO_INT() /*4*/].f_1 = 0;
@@ -15778,13 +15778,13 @@ void func_422(int iParam0, int iParam1, int iParam2)//Position - 0x12725
 		{
 			iParam0 = 1787576850;
 		}
-		if (Global_262145.f_10069 == 0 && iParam1 != -1076930708)
+		if (Global_262145.f_10069 == 0 && iParam1 != joaat("XPCATEGORY_KEYS_DEBUG"))
 		{
 			if (iParam2 == 0)
 			{
 				if (iParam0 < Global_1659759[func_81(-1)])
 				{
-					STATS::PLAYSTATS_AWARD_XP(iParam0, -523908350, iParam1);
+					STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR"), iParam1);
 					return;
 				}
 				else if (iParam0 == Global_1659759[func_81(-1)])
@@ -15808,7 +15808,7 @@ void func_422(int iParam0, int iParam1, int iParam2)//Position - 0x12725
 		{
 			if (iParam0 < 0)
 			{
-				STATS::PLAYSTATS_AWARD_XP(iParam0, -1586921397, iParam1);
+				STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR_NEGATIVE"), iParam1);
 				return;
 			}
 		}

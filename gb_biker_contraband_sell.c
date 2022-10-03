@@ -104705,7 +104705,7 @@ void func_985(int iParam0, bool bParam1, int iParam2, bool bParam3)//Position - 
 	{
 		Global_1943929.f_10 = iVar1;
 		func_1097();
-		func_1052(0, PLAYER::PLAYER_PED_ID(), "", -875716015, 1626430110, iVar1, 1, -1, 0, 0, 0);
+		func_1052(0, PLAYER::PLAYER_PED_ID(), "", joaat("XPTYPE_SKILL"), joaat("XPCATEGORY_COLLECT_CHECKPOINT"), iVar1, 1, -1, 0, 0, 0);
 	}
 	if (iVar0 > 0)
 	{
@@ -116696,7 +116696,7 @@ int func_1053(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4,
 	{
 		return iVar0;
 	}
-	if (iParam4 == -592022605 || iParam4 == -1915191729)
+	if (iParam4 == joaat("XPCATEGORY_COMPLETED_SHOWER") || iParam4 == joaat("XPCATEGORY_COMPLETED_ROLLERCOASTER"))
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(iParam1))
 		{
@@ -117206,13 +117206,13 @@ void func_1074(int iParam0, int iParam1, int iParam2)//Position - 0x8E7D9
 		{
 			iParam0 = 1787576850;
 		}
-		if (Global_262145.f_10069 == 0 && iParam1 != -1076930708)
+		if (Global_262145.f_10069 == 0 && iParam1 != joaat("XPCATEGORY_KEYS_DEBUG"))
 		{
 			if (iParam2 == 0)
 			{
 				if (iParam0 < Global_1659759[func_436(-1)])
 				{
-					STATS::PLAYSTATS_AWARD_XP(iParam0, -523908350, iParam1);
+					STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR"), iParam1);
 					return;
 				}
 				else if (iParam0 == Global_1659759[func_436(-1)])
@@ -117236,7 +117236,7 @@ void func_1074(int iParam0, int iParam1, int iParam2)//Position - 0x8E7D9
 		{
 			if (iParam0 < 0)
 			{
-				STATS::PLAYSTATS_AWARD_XP(iParam0, -1586921397, iParam1);
+				STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR_NEGATIVE"), iParam1);
 				return;
 			}
 		}
@@ -126343,7 +126343,7 @@ void func_1331(int* iParam0, var uParam1)//Position - 0x99408
 		if (uParam1->f_2[0] == NETWORK::PARTICIPANT_ID())
 		{
 			func_1097();
-			func_1052(0, PLAYER::PLAYER_PED_ID(), "", -875716015, 1626430110, Global_262145.f_18895, 1, -1, 0, 0, 0);
+			func_1052(0, PLAYER::PLAYER_PED_ID(), "", joaat("XPTYPE_SKILL"), joaat("XPCATEGORY_COLLECT_CHECKPOINT"), Global_262145.f_18895, 1, -1, 0, 0, 0);
 		}
 		MISC::SET_BIT(iParam0, 1);
 	}

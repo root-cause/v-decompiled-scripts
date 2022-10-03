@@ -7130,7 +7130,7 @@ int func_189(char* sParam0, int* iParam1, var uParam2, int iParam3, bool bParam4
 			{
 			}
 			StringCopy(sParam0, "GIVE_RP_FOR_VEH", 64);
-			func_190(0, PLAYER::PLAYER_PED_ID(), "200000", -1827353931, 1223799452, 20000, 1, -1, 0, 0, 0);
+			func_190(0, PLAYER::PLAYER_PED_ID(), "200000", joaat("XPTYPE_AWARDS"), joaat("XPCATEGORY_RP_LUCKY_WHEEL"), 20000, 1, -1, 0, 0, 0);
 			return 1;
 		}
 	}
@@ -7174,7 +7174,7 @@ int func_190(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, 
 	{
 		return iVar0;
 	}
-	if (iParam4 == -592022605 || iParam4 == -1915191729)
+	if (iParam4 == joaat("XPCATEGORY_COMPLETED_SHOWER") || iParam4 == joaat("XPCATEGORY_COMPLETED_ROLLERCOASTER"))
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(iParam1))
 		{
@@ -7668,13 +7668,13 @@ void func_210(int iParam0, int iParam1, int iParam2)//Position - 0x84A1
 		{
 			iParam0 = 1787576850;
 		}
-		if (Global_262145.f_10069 == 0 && iParam1 != -1076930708)
+		if (Global_262145.f_10069 == 0 && iParam1 != joaat("XPCATEGORY_KEYS_DEBUG"))
 		{
 			if (iParam2 == 0)
 			{
 				if (iParam0 < Global_1659759[func_22(-1)])
 				{
-					STATS::PLAYSTATS_AWARD_XP(iParam0, -523908350, iParam1);
+					STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR"), iParam1);
 					return;
 				}
 				else if (iParam0 == Global_1659759[func_22(-1)])
@@ -7698,7 +7698,7 @@ void func_210(int iParam0, int iParam1, int iParam2)//Position - 0x84A1
 		{
 			if (iParam0 < 0)
 			{
-				STATS::PLAYSTATS_AWARD_XP(iParam0, -1586921397, iParam1);
+				STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR_NEGATIVE"), iParam1);
 				return;
 			}
 		}
@@ -54604,7 +54604,7 @@ int func_760(var uParam0, char* sParam1, int iParam2, bool bParam3)//Position - 
 		}
 		*uParam0 = iVar0;
 		func_762();
-		func_190(0, PLAYER::PLAYER_PED_ID(), func_761(iParam2), -1827353931, 1223799452, iVar0, 1, -1, 0, 0, 0);
+		func_190(0, PLAYER::PLAYER_PED_ID(), func_761(iParam2), joaat("XPTYPE_AWARDS"), joaat("XPCATEGORY_RP_LUCKY_WHEEL"), iVar0, 1, -1, 0, 0, 0);
 		return 1;
 	}
 	return 0;

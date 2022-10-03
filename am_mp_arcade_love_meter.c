@@ -80454,7 +80454,7 @@ void func_498()//Position - 0x5FD47
 							func_603(8789, -1);
 							MISC::SET_BIT(&iVar3, 1);
 							func_602();
-							func_548(0, PLAYER::PLAYER_PED_ID(), "LOVE METER NEMESIS RP800", -1827353931, -220391907, 800, 1, -1, 0, 0, 0);
+							func_548(0, PLAYER::PLAYER_PED_ID(), "LOVE METER NEMESIS RP800", joaat("XPTYPE_AWARDS"), joaat("XPCATEGORY_RP_LOVE_METER"), 800, 1, -1, 0, 0, 0);
 							func_547(14);
 							func_546(87, 1, -1);
 						}
@@ -80570,7 +80570,7 @@ void func_498()//Position - 0x5FD47
 							}
 							MISC::SET_BIT(&iVar3, 0);
 							func_602();
-							func_548(0, PLAYER::PLAYER_PED_ID(), "LOVE METER TRUELOVE RP800", -1827353931, -220391907, 800, 1, -1, 0, 0, 0);
+							func_548(0, PLAYER::PLAYER_PED_ID(), "LOVE METER TRUELOVE RP800", joaat("XPTYPE_AWARDS"), joaat("XPCATEGORY_RP_LOVE_METER"), 800, 1, -1, 0, 0, 0);
 							if (func_70(Local_118.f_21))
 							{
 								func_547(12);
@@ -80623,7 +80623,7 @@ void func_498()//Position - 0x5FD47
 					func_602();
 					func_547(11);
 					func_546(88, 1, -1);
-					func_548(0, PLAYER::PLAYER_PED_ID(), "LOVE METER FRIENDZ RP800", -1827353931, -220391907, 800, 1, -1, 0, 0, 0);
+					func_548(0, PLAYER::PLAYER_PED_ID(), "LOVE METER FRIENDZ RP800", joaat("XPTYPE_AWARDS"), joaat("XPCATEGORY_RP_LOVE_METER"), 800, 1, -1, 0, 0, 0);
 				}
 				switch (iVar0)
 				{
@@ -82235,7 +82235,7 @@ int func_549(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, 
 	{
 		return iVar0;
 	}
-	if (iParam4 == -592022605 || iParam4 == -1915191729)
+	if (iParam4 == joaat("XPCATEGORY_COMPLETED_SHOWER") || iParam4 == joaat("XPCATEGORY_COMPLETED_ROLLERCOASTER"))
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(iParam1))
 		{
@@ -82753,13 +82753,13 @@ void func_571(int iParam0, int iParam1, int iParam2)//Position - 0x6263E
 		{
 			iParam0 = 1787576850;
 		}
-		if (Global_262145.f_10069 == 0 && iParam1 != -1076930708)
+		if (Global_262145.f_10069 == 0 && iParam1 != joaat("XPCATEGORY_KEYS_DEBUG"))
 		{
 			if (iParam2 == 0)
 			{
 				if (iParam0 < Global_1659759[func_161(-1)])
 				{
-					STATS::PLAYSTATS_AWARD_XP(iParam0, -523908350, iParam1);
+					STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR"), iParam1);
 					return;
 				}
 				else if (iParam0 == Global_1659759[func_161(-1)])
@@ -82783,7 +82783,7 @@ void func_571(int iParam0, int iParam1, int iParam2)//Position - 0x6263E
 		{
 			if (iParam0 < 0)
 			{
-				STATS::PLAYSTATS_AWARD_XP(iParam0, -1586921397, iParam1);
+				STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR_NEGATIVE"), iParam1);
 				return;
 			}
 		}

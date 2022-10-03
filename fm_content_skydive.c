@@ -32335,7 +32335,7 @@ void func_816()//Position - 0x2D684
 		Stack.Push(0);
 		Stack.Push(iLocal_529);
 		Stack.Push("");
-		Stack.Push(-1636175450);
+		Stack.Push(joaat("XPTYPE_COMPLETE"));
 		Call_Loc(Local_197.f_58.f_9);
 		func_818(StackVal, StackVal, StackVal, StackVal, StackVal, iVar1, 1, -1, 0, 0, 0);
 	}
@@ -32366,7 +32366,7 @@ int func_819(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, 
 	{
 		return iVar0;
 	}
-	if (iParam4 == -592022605 || iParam4 == -1915191729)
+	if (iParam4 == joaat("XPCATEGORY_COMPLETED_SHOWER") || iParam4 == joaat("XPCATEGORY_COMPLETED_ROLLERCOASTER"))
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(iParam1))
 		{
@@ -32876,13 +32876,13 @@ void func_840(int iParam0, int iParam1, int iParam2)//Position - 0x2E05D
 		{
 			iParam0 = 1787576850;
 		}
-		if (Global_262145.f_10069 == 0 && iParam1 != -1076930708)
+		if (Global_262145.f_10069 == 0 && iParam1 != joaat("XPCATEGORY_KEYS_DEBUG"))
 		{
 			if (iParam2 == 0)
 			{
 				if (iParam0 < Global_1659759[func_186(-1)])
 				{
-					STATS::PLAYSTATS_AWARD_XP(iParam0, -523908350, iParam1);
+					STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR"), iParam1);
 					return;
 				}
 				else if (iParam0 == Global_1659759[func_186(-1)])
@@ -32906,7 +32906,7 @@ void func_840(int iParam0, int iParam1, int iParam2)//Position - 0x2E05D
 		{
 			if (iParam0 < 0)
 			{
-				STATS::PLAYSTATS_AWARD_XP(iParam0, -1586921397, iParam1);
+				STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR_NEGATIVE"), iParam1);
 				return;
 			}
 		}
@@ -173202,7 +173202,7 @@ int func_3345()//Position - 0xD8165
 
 int func_3346()//Position - 0xD816E
 {
-	return -2082244805;
+	return joaat("XPCATEGORY_FM_CONTENT_SUM22_SKYDIVE");
 }
 
 int func_3347()//Position - 0xD817B

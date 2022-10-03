@@ -14045,7 +14045,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 35000f;
 			uParam1->f_2 = 5700;
 			uParam1->f_3 = 35000;
-			uParam1->f_5 = joaat("LUXE2_MALE_ACCESSORIES_PLATINUM_hEAVY_SQUARE_CHAIN");
+			uParam1->f_5 = joaat("LUXE2_MALE_ACCESSORIES_PLATINUM_HEAVY_SQUARE_CHAIN");
 			uParam1->f_4 = 1;
 			break;
 		

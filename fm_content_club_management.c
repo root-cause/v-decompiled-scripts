@@ -61452,7 +61452,7 @@ void func_813(int iParam0)//Position - 0x48D74
 		{
 			func_863();
 		}
-		func_814(0, iLocal_1233, "", -1859646258, 186409565, iVar0, 1, -1, 0, 0, 0);
+		func_814(0, iLocal_1233, "", joaat("XPTYPE_ACTION"), joaat("XPCATEGORY_FM_CONTENT_COMPLETE_TASK"), iVar0, 1, -1, 0, 0, 0);
 		Local_1180.f_6 = (Local_1180.f_6 + iVar0);
 	}
 }
@@ -61472,7 +61472,7 @@ int func_815(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, 
 	{
 		return iVar0;
 	}
-	if (iParam4 == -592022605 || iParam4 == -1915191729)
+	if (iParam4 == joaat("XPCATEGORY_COMPLETED_SHOWER") || iParam4 == joaat("XPCATEGORY_COMPLETED_ROLLERCOASTER"))
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(iParam1))
 		{
@@ -61982,13 +61982,13 @@ void func_836(int iParam0, int iParam1, int iParam2)//Position - 0x49663
 		{
 			iParam0 = 1787576850;
 		}
-		if (Global_262145.f_10069 == 0 && iParam1 != -1076930708)
+		if (Global_262145.f_10069 == 0 && iParam1 != joaat("XPCATEGORY_KEYS_DEBUG"))
 		{
 			if (iParam2 == 0)
 			{
 				if (iParam0 < Global_1659759[func_253(-1)])
 				{
-					STATS::PLAYSTATS_AWARD_XP(iParam0, -523908350, iParam1);
+					STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR"), iParam1);
 					return;
 				}
 				else if (iParam0 == Global_1659759[func_253(-1)])
@@ -62012,7 +62012,7 @@ void func_836(int iParam0, int iParam1, int iParam2)//Position - 0x49663
 		{
 			if (iParam0 < 0)
 			{
-				STATS::PLAYSTATS_AWARD_XP(iParam0, -1586921397, iParam1);
+				STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR_NEGATIVE"), iParam1);
 				return;
 			}
 		}
@@ -68171,7 +68171,7 @@ void func_1111(int iParam0, struct<6> Param1, var uParam2, var uParam3, var uPar
 			Var0.f_1 = -1;
 			Var0.f_0 = 2;
 			func_811(5, &Var0);
-			func_814(0, iLocal_1233, "", -1859646258, 186409565, 250, 1, -1, 0, 0, 0);
+			func_814(0, iLocal_1233, "", joaat("XPTYPE_ACTION"), joaat("XPCATEGORY_FM_CONTENT_COMPLETE_TASK"), 250, 1, -1, 0, 0, 0);
 		}
 	}
 }
@@ -68994,7 +68994,7 @@ void func_1174(int iParam0)//Position - 0x51875
 		case 0:
 			Var0.f_0 = 1;
 			func_811(5, &Var0);
-			func_814(0, iLocal_1233, "", -1859646258, 186409565, 250, 1, -1, 0, 0, 0);
+			func_814(0, iLocal_1233, "", joaat("XPTYPE_ACTION"), joaat("XPCATEGORY_FM_CONTENT_COMPLETE_TASK"), 250, 1, -1, 0, 0, 0);
 			break;
 	}
 }
@@ -70867,7 +70867,7 @@ void func_1293()//Position - 0x53862
 		Stack.Push(0);
 		Stack.Push(iLocal_1233);
 		Stack.Push("");
-		Stack.Push(-1636175450);
+		Stack.Push(joaat("XPTYPE_COMPLETE"));
 		Call_Loc(Local_237.f_58.f_9);
 		func_814(StackVal, StackVal, StackVal, StackVal, StackVal, iVar1, 1, -1, 0, 0, 0);
 	}
@@ -189428,7 +189428,7 @@ int func_3934()//Position - 0xED2A2
 
 int func_3935()//Position - 0xED2AB
 {
-	return 1790004900;
+	return joaat("XPCATEGORY_FM_CONTENT_SUM22_CLUB_MANAGEMENT");
 }
 
 int func_3936()//Position - 0xED2B8

@@ -5040,7 +5040,7 @@ void func_30()//Position - 0x2F21
 	int iVar0;
 	
 	iVar0 = SYSTEM::ROUND((50f * Global_262145.f_4247));
-	func_31(1, "XPT_TENNIS", -875716015, -1487238961, iVar0, 1, -1, 0);
+	func_31(1, "XPT_TENNIS", joaat("XPTYPE_SKILL"), -1487238961, iVar0, 1, -1, 0);
 }
 
 var func_31(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, bool bParam7)//Position - 0x2F54
@@ -5372,13 +5372,13 @@ void func_42(int iParam0, int iParam1, int iParam2)//Position - 0x341B
 		{
 			iParam0 = 1787576850;
 		}
-		if (Global_262145.f_10069 == 0 && iParam1 != -1076930708)
+		if (Global_262145.f_10069 == 0 && iParam1 != joaat("XPCATEGORY_KEYS_DEBUG"))
 		{
 			if (iParam2 == 0)
 			{
 				if (iParam0 < Global_1659759[func_51(-1)])
 				{
-					STATS::PLAYSTATS_AWARD_XP(iParam0, -523908350, iParam1);
+					STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR"), iParam1);
 					return;
 				}
 				else if (iParam0 == Global_1659759[func_51(-1)])
@@ -5402,7 +5402,7 @@ void func_42(int iParam0, int iParam1, int iParam2)//Position - 0x341B
 		{
 			if (iParam0 < 0)
 			{
-				STATS::PLAYSTATS_AWARD_XP(iParam0, -1586921397, iParam1);
+				STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR_NEGATIVE"), iParam1);
 				return;
 			}
 		}
@@ -8947,7 +8947,7 @@ void func_156(var uParam0, var uParam1, var uParam2, int* iParam3, int iParam4, 
 					func_888();
 				}
 			}
-			if (func_181(&(uParam1->f_1105), &(uParam1->f_2), "XPT_TENNIS", -1636175450, 453064240, func_370(&(uParam1->f_28)), iVar28, Global_1837285, &(uParam1->f_2333), iVar29, 1, 0, 0, 0, 1, 3))
+			if (func_181(&(uParam1->f_1105), &(uParam1->f_2), "XPT_TENNIS", joaat("XPTYPE_COMPLETE"), 453064240, func_370(&(uParam1->f_28)), iVar28, Global_1837285, &(uParam1->f_2333), iVar29, 1, 0, 0, 0, 1, 3))
 			{
 				func_1325(iParam3[iVar27 /*65*/], 24);
 				func_1416(iParam3[iVar27 /*65*/], 2097152);

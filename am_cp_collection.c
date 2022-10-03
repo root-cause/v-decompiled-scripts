@@ -10128,7 +10128,7 @@ void func_199()//Position - 0xBCF0
 		}
 		Global_2727753 = iVar0;
 		func_253();
-		func_200(0, PLAYER::PLAYER_PED_ID(), "", -1636175450, -1253457806, iVar1, 1, -1, 0, 0, 0);
+		func_200(0, PLAYER::PLAYER_PED_ID(), "", joaat("XPTYPE_COMPLETE"), joaat("XPCATEGORY_COMPLETE_CHALLENGES"), iVar1, 1, -1, 0, 0, 0);
 		Local_1496.f_7 = (Local_1496.f_7 + iVar1);
 		MISC::SET_BIT(&(Local_1497[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2), 1);
 	}
@@ -10149,7 +10149,7 @@ int func_201(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, 
 	{
 		return iVar0;
 	}
-	if (iParam4 == -592022605 || iParam4 == -1915191729)
+	if (iParam4 == joaat("XPCATEGORY_COMPLETED_SHOWER") || iParam4 == joaat("XPCATEGORY_COMPLETED_ROLLERCOASTER"))
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(iParam1))
 		{
@@ -10659,13 +10659,13 @@ void func_222(int iParam0, int iParam1, int iParam2)//Position - 0xC7A5
 		{
 			iParam0 = 1787576850;
 		}
-		if (Global_262145.f_10069 == 0 && iParam1 != -1076930708)
+		if (Global_262145.f_10069 == 0 && iParam1 != joaat("XPCATEGORY_KEYS_DEBUG"))
 		{
 			if (iParam2 == 0)
 			{
 				if (iParam0 < Global_1659759[func_231(-1)])
 				{
-					STATS::PLAYSTATS_AWARD_XP(iParam0, -523908350, iParam1);
+					STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR"), iParam1);
 					return;
 				}
 				else if (iParam0 == Global_1659759[func_231(-1)])
@@ -10689,7 +10689,7 @@ void func_222(int iParam0, int iParam1, int iParam2)//Position - 0xC7A5
 		{
 			if (iParam0 < 0)
 			{
-				STATS::PLAYSTATS_AWARD_XP(iParam0, -1586921397, iParam1);
+				STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR_NEGATIVE"), iParam1);
 				return;
 			}
 		}
@@ -13751,7 +13751,7 @@ void func_328(struct<4> Param0, var uParam1, int iParam2)//Position - 0x1061E
 			MONEY::NETWORK_EARN_FROM_AMBIENT_JOB(iVar0, "AM_CP_COLLECTION", &uVar3);
 		}
 		func_253();
-		func_200(0, PLAYER::PLAYER_PED_ID(), "", -875716015, 1626430110, iVar1, 1, -1, 0, 0, 0);
+		func_200(0, PLAYER::PLAYER_PED_ID(), "", joaat("XPTYPE_SKILL"), joaat("XPCATEGORY_COLLECT_CHECKPOINT"), iVar1, 1, -1, 0, 0, 0);
 		iLocal_104 = (iLocal_104 + iVar0);
 		Global_2727753 = iVar0;
 		Local_1496.f_7 = (Local_1496.f_7 + iVar1);

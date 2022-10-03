@@ -24919,7 +24919,7 @@ void func_580()//Position - 0x25157
 			if (iVar2 > 0)
 			{
 				func_630();
-				func_581(0, iLocal_329, "", -1636175450, 329773635, iVar2, 1, -1, 0, 0, 0);
+				func_581(0, iLocal_329, "", joaat("XPTYPE_COMPLETE"), joaat("XPCATEGORY_FM_CONTENT_SUM22_CRIME_SCENE"), iVar2, 1, -1, 0, 0, 0);
 			}
 			func_571(0);
 		}
@@ -24941,7 +24941,7 @@ int func_582(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, 
 	{
 		return iVar0;
 	}
-	if (iParam4 == -592022605 || iParam4 == -1915191729)
+	if (iParam4 == joaat("XPCATEGORY_COMPLETED_SHOWER") || iParam4 == joaat("XPCATEGORY_COMPLETED_ROLLERCOASTER"))
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(iParam1))
 		{
@@ -25451,13 +25451,13 @@ void func_603(int iParam0, int iParam1, int iParam2)//Position - 0x25BB8
 		{
 			iParam0 = 1787576850;
 		}
-		if (Global_262145.f_10069 == 0 && iParam1 != -1076930708)
+		if (Global_262145.f_10069 == 0 && iParam1 != joaat("XPCATEGORY_KEYS_DEBUG"))
 		{
 			if (iParam2 == 0)
 			{
 				if (iParam0 < Global_1659759[func_188(-1)])
 				{
-					STATS::PLAYSTATS_AWARD_XP(iParam0, -523908350, iParam1);
+					STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR"), iParam1);
 					return;
 				}
 				else if (iParam0 == Global_1659759[func_188(-1)])
@@ -25481,7 +25481,7 @@ void func_603(int iParam0, int iParam1, int iParam2)//Position - 0x25BB8
 		{
 			if (iParam0 < 0)
 			{
-				STATS::PLAYSTATS_AWARD_XP(iParam0, -1586921397, iParam1);
+				STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_ERROR_NEGATIVE"), iParam1);
 				return;
 			}
 		}
@@ -33042,7 +33042,7 @@ void func_815()//Position - 0x2D72C
 		Stack.Push(0);
 		Stack.Push(iLocal_329);
 		Stack.Push("");
-		Stack.Push(-1636175450);
+		Stack.Push(joaat("XPTYPE_COMPLETE"));
 		Call_Loc(Local_215.f_54.f_9);
 		func_581(StackVal, StackVal, StackVal, StackVal, StackVal, iVar1, 1, -1, 0, 0, 0);
 	}
@@ -162585,7 +162585,7 @@ int func_2870()//Position - 0xCAA5E
 
 int func_2871()//Position - 0xCAA67
 {
-	return 404533672;
+	return joaat("XPCATEGORY_FM_CONTENT");
 }
 
 int func_2872()//Position - 0xCAA74
