@@ -584,7 +584,7 @@ int func_5(bool bParam0)//Position - 0x516
 
 void func_6(bool bParam0, bool bParam1)//Position - 0x6F3
 {
-	char* sVar0;
+	var* uVar0;
 	var* uVar1;
 	int iVar2;
 	int iVar3;
@@ -594,8 +594,8 @@ void func_6(bool bParam0, bool bParam1)//Position - 0x6F3
 	bool bVar7;
 	int iVar8;
 	
-	sVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
-	uVar1 = DATAFILE::DATADICT_GET_DICT(sVar0, "mission");
+	uVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
+	uVar1 = DATAFILE::DATADICT_GET_DICT(uVar0, "mission");
 	iVar2 = DATAFILE::DATADICT_GET_DICT(uVar1, "gen");
 	if (func_111())
 	{
@@ -3453,13 +3453,13 @@ int func_113(bool bParam0, char* sParam1, char* sParam2, int iParam3)//Position 
 
 void func_114(char* sParam0, int iParam1, var uParam2)//Position - 0x3E63
 {
-	char* sVar0;
+	var* uVar0;
 	var* uVar1;
 	int iVar2;
 	int iVar3;
 	
-	sVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
-	uVar1 = DATAFILE::DATADICT_GET_DICT(sVar0, "mission");
+	uVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
+	uVar1 = DATAFILE::DATADICT_GET_DICT(uVar0, "mission");
 	iVar2 = DATAFILE::DATADICT_GET_DICT(uVar1, "gen");
 	StringCopy(sParam0, NETWORK::UGC_GET_CONTENT_ID(iParam1), 24);
 	StringCopy(&(sParam0->f_6), NETWORK::UGC_GET_CONTENT_USER_ID(iParam1), 64);
@@ -4000,7 +4000,7 @@ int func_146(bool bParam0)//Position - 0x47FF
 int func_147(var uParam0, char* sParam1, int iParam2, bool bParam3, bool bParam4, var uParam5, int iParam6, bool bParam7, bool bParam8, bool bParam9, bool bParam10, bool bParam11, bool bParam12, bool bParam13, bool bParam14, bool bParam15)//Position - 0x4871
 {
 	var uVar0;
-	char* sVar1;
+	var* uVar1;
 	var* uVar2;
 	var* uVar3;
 	var uVar4;
@@ -4080,7 +4080,7 @@ int func_147(var uParam0, char* sParam1, int iParam2, bool bParam3, bool bParam4
 						{
 							StringCopy(&(Global_1050140.f_44), sParam1, 24);
 							Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_17 = { Global_1050140.f_14 };
-							func_190(&sVar1, &uVar0, &Global_1050140);
+							func_190(&uVar1, &uVar0, &Global_1050140);
 							if (Global_1050140.f_67 == 0)
 							{
 								func_536(uParam0, 1, 1);
@@ -4096,7 +4096,7 @@ int func_147(var uParam0, char* sParam1, int iParam2, bool bParam3, bool bParam4
 						{
 							StringCopy(&(Global_1048576.f_44), sParam1, 24);
 							Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_17 = { Global_1048576.f_14 };
-							func_190(&sVar1, &uVar0, &Global_1048576);
+							func_190(&uVar1, &uVar0, &Global_1048576);
 							uParam0->f_8 = 0;
 							if (Global_1048576.f_67 == 0)
 							{
@@ -4190,7 +4190,7 @@ int func_147(var uParam0, char* sParam1, int iParam2, bool bParam3, bool bParam4
 								Global_1050140.f_73 = NETWORK::UGC_GET_CONTENT_CATEGORY(0);
 								StringCopy(&(Global_1050140.f_44), sParam1, 24);
 								Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_17 = { Global_1050140.f_14 };
-								func_190(&sVar1, &uVar0, &Global_1050140);
+								func_190(&uVar1, &uVar0, &Global_1050140);
 								if (Global_1050140.f_67 == 0)
 								{
 									func_536(uParam0, 1, 1);
@@ -4209,7 +4209,7 @@ int func_147(var uParam0, char* sParam1, int iParam2, bool bParam3, bool bParam4
 								Global_1048576.f_73 = NETWORK::UGC_GET_CONTENT_CATEGORY(0);
 								StringCopy(&(Global_1048576.f_44), sParam1, 24);
 								Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_17 = { Global_1048576.f_14 };
-								func_190(&sVar1, &uVar0, &Global_1048576);
+								func_190(&uVar1, &uVar0, &Global_1048576);
 								uParam0->f_8 = 0;
 							}
 							func_104();
@@ -4229,7 +4229,7 @@ int func_147(var uParam0, char* sParam1, int iParam2, bool bParam3, bool bParam4
 						{
 							if (uParam0->f_16)
 							{
-								func_185(&sVar1, &uVar0, &Global_1050140, iParam6);
+								func_185(&uVar1, &uVar0, &Global_1050140, iParam6);
 								if (iParam6 == 1)
 								{
 									func_536(uParam0, 1, 1);
@@ -4245,7 +4245,7 @@ int func_147(var uParam0, char* sParam1, int iParam2, bool bParam3, bool bParam4
 							}
 							else
 							{
-								func_185(&sVar1, &uVar0, &Global_1048576, iParam6);
+								func_185(&uVar1, &uVar0, &Global_1048576, iParam6);
 								if (iParam6 == 1)
 								{
 									func_536(uParam0, 1, 1);
@@ -4495,8 +4495,8 @@ int func_147(var uParam0, char* sParam1, int iParam2, bool bParam3, bool bParam4
 					}
 					else
 					{
-						sVar1 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
-						uVar2 = DATAFILE::DATADICT_GET_DICT(sVar1, "mission");
+						uVar1 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
+						uVar2 = DATAFILE::DATADICT_GET_DICT(uVar1, "mission");
 						uVar3 = DATAFILE::DATADICT_GET_DICT(uVar2, "gen");
 						StringCopy(&(Global_2703735.f_3437), NETWORK::UGC_GET_CONTENT_NAME(0), 32);
 						Global_2703735.f_3437.f_8 = DATAFILE::DATADICT_GET_INT(uVar3, "type");
@@ -4913,12 +4913,12 @@ int func_149(var uParam0, var uParam1)//Position - 0x5AD1
 
 void func_150(var uParam0, var uParam1)//Position - 0x5B77
 {
-	char* sVar0;
+	var* uVar0;
 	var* uVar1;
 	int iVar2;
 	
-	sVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
-	uVar1 = DATAFILE::DATADICT_GET_DICT(sVar0, "mission");
+	uVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
+	uVar1 = DATAFILE::DATADICT_GET_DICT(uVar0, "mission");
 	iVar2 = DATAFILE::DATADICT_GET_DICT(uVar1, "gen");
 	uParam1->f_74[uParam0->f_9 /*69*/].f_45 = { func_88(iVar2) };
 	if (func_111())
@@ -5043,7 +5043,7 @@ int func_151(var uParam0, char* sParam1, int iParam2, int iParam3)//Position - 0
 
 void func_152()//Position - 0x5F4D
 {
-	char* sVar0;
+	var* uVar0;
 	var* uVar1;
 	var* uVar2;
 	var* uVar3;
@@ -5084,8 +5084,8 @@ void func_152()//Position - 0x5F4D
 	int iVar38;
 	struct<3> Var39;
 	
-	sVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
-	uVar1 = DATAFILE::DATADICT_GET_DICT(sVar0, "mission");
+	uVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
+	uVar1 = DATAFILE::DATADICT_GET_DICT(uVar0, "mission");
 	uVar2 = DATAFILE::DATADICT_GET_DICT(uVar1, "endcon");
 	uVar3 = DATAFILE::DATADICT_GET_DICT(uVar1, "ene");
 	iVar4 = DATAFILE::DATADICT_GET_INT(uVar3, "no");
@@ -5550,7 +5550,7 @@ bool func_167(int iParam0)//Position - 0x6C78
 
 int func_168(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x6C8A
 {
-	char* sVar0;
+	var* uVar0;
 	
 	if (func_108())
 	{
@@ -5601,26 +5601,26 @@ int func_168(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 			{
 				if (iParam3 == 4)
 				{
-					sVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
-					Global_1922946 = DATAFILE::DATADICT_GET_INT(sVar0, "pt");
-					Global_1922946.f_1 = DATAFILE::DATADICT_GET_INT(sVar0, "pu");
-					Global_1922946.f_2 = DATAFILE::DATADICT_GET_INT(sVar0, "ft");
-					Global_1922946.f_3 = DATAFILE::DATADICT_GET_INT(sVar0, "fu");
-					Global_1922946.f_4 = DATAFILE::DATADICT_GET_INT(sVar0, "qt");
-					Global_1922946.f_5 = DATAFILE::DATADICT_GET_INT(sVar0, "qu");
+					uVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
+					Global_1922946 = DATAFILE::DATADICT_GET_INT(uVar0, "pt");
+					Global_1922946.f_1 = DATAFILE::DATADICT_GET_INT(uVar0, "pu");
+					Global_1922946.f_2 = DATAFILE::DATADICT_GET_INT(uVar0, "ft");
+					Global_1922946.f_3 = DATAFILE::DATADICT_GET_INT(uVar0, "fu");
+					Global_1922946.f_4 = DATAFILE::DATADICT_GET_INT(uVar0, "qt");
+					Global_1922946.f_5 = DATAFILE::DATADICT_GET_INT(uVar0, "qu");
 				}
 				else
 				{
-					sVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
-					Global_1922915.f_10 = SYSTEM::TO_FLOAT(DATAFILE::DATADICT_GET_INT(sVar0, "dt"));
-					Global_1922915.f_11 = SYSTEM::TO_FLOAT(DATAFILE::DATADICT_GET_INT(sVar0, "du"));
+					uVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
+					Global_1922915.f_10 = SYSTEM::TO_FLOAT(DATAFILE::DATADICT_GET_INT(uVar0, "dt"));
+					Global_1922915.f_11 = SYSTEM::TO_FLOAT(DATAFILE::DATADICT_GET_INT(uVar0, "du"));
 					Global_1922915.f_9 = (Global_1922915.f_10 / Global_1922915.f_11);
-					Global_1922915.f_13 = SYSTEM::TO_FLOAT(DATAFILE::DATADICT_GET_INT(sVar0, "pt"));
-					Global_1922915.f_14 = SYSTEM::TO_FLOAT(DATAFILE::DATADICT_GET_INT(sVar0, "pu"));
+					Global_1922915.f_13 = SYSTEM::TO_FLOAT(DATAFILE::DATADICT_GET_INT(uVar0, "pt"));
+					Global_1922915.f_14 = SYSTEM::TO_FLOAT(DATAFILE::DATADICT_GET_INT(uVar0, "pu"));
 					Global_1057163 = SYSTEM::ROUND(Global_1922915.f_14);
 					Global_1922915.f_12 = (Global_1922915.f_13 / Global_1922915.f_14);
-					Global_1922915.f_15 = SYSTEM::TO_FLOAT(DATAFILE::DATADICT_GET_INT(sVar0, "qt"));
-					Global_1922915.f_17 = SYSTEM::TO_FLOAT(DATAFILE::DATADICT_GET_INT(sVar0, "qu"));
+					Global_1922915.f_15 = SYSTEM::TO_FLOAT(DATAFILE::DATADICT_GET_INT(uVar0, "qt"));
+					Global_1922915.f_17 = SYSTEM::TO_FLOAT(DATAFILE::DATADICT_GET_INT(uVar0, "qu"));
 					Global_1922915.f_16 = (Global_1922915.f_15 / Global_1922915.f_17);
 				}
 				if (DATAFILE::DATAFILE_GET_FILE_DICT(0) != 0)
@@ -5656,12 +5656,12 @@ int func_168(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				{
 					if (DATAFILE::DATAFILE_SELECT_UGC_PLAYER_DATA(iParam1, 0))
 					{
-						sVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
+						uVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
 						if (iParam3 == 0)
 						{
-							Global_1922915 = DATAFILE::DATADICT_GET_INT(sVar0, "quit");
-							Global_1922915.f_2 = DATAFILE::DATADICT_GET_INT(sVar0, "ply");
-							Global_1922915.f_8 = DATAFILE::DATADICT_GET_INT(sVar0, "fl");
+							Global_1922915 = DATAFILE::DATADICT_GET_INT(uVar0, "quit");
+							Global_1922915.f_2 = DATAFILE::DATADICT_GET_INT(uVar0, "ply");
+							Global_1922915.f_8 = DATAFILE::DATADICT_GET_INT(uVar0, "fl");
 							if (Global_1922915.f_2 > 0)
 							{
 								Global_1922915.f_5 = 1;
@@ -5670,10 +5670,10 @@ int func_168(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 						}
 						else if (iParam3 == 4)
 						{
-							Global_1922940.f_5 = DATAFILE::DATADICT_GET_BOOL(sVar0, "won");
-							Global_1922940.f_4 = DATAFILE::DATADICT_GET_INT(sVar0, "ply");
-							Global_1922940.f_1 = DATAFILE::DATADICT_GET_INT(sVar0, "quit");
-							Global_1922940.f_2 = DATAFILE::DATADICT_GET_INT(sVar0, "fl");
+							Global_1922940.f_5 = DATAFILE::DATADICT_GET_BOOL(uVar0, "won");
+							Global_1922940.f_4 = DATAFILE::DATADICT_GET_INT(uVar0, "ply");
+							Global_1922940.f_1 = DATAFILE::DATADICT_GET_INT(uVar0, "quit");
+							Global_1922940.f_2 = DATAFILE::DATADICT_GET_INT(uVar0, "fl");
 						}
 						uParam0->f_19 = 0;
 						return 1;
@@ -6201,7 +6201,7 @@ void func_190(var uParam0, var uParam1, var uParam2)//Position - 0x7C25
 
 void func_191(int iParam0, bool bParam1, bool bParam2, int iParam3)//Position - 0x7CD8
 {
-	char* sVar0;
+	var* uVar0;
 	int iVar1;
 	int iVar2;
 	int iVar3;
@@ -6209,11 +6209,11 @@ void func_191(int iParam0, bool bParam1, bool bParam2, int iParam3)//Position - 
 	int iVar5;
 	int iVar6;
 	
-	sVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
-	iVar1 = DATAFILE::DATADICT_GET_DICT(sVar0, "mission");
+	uVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
+	iVar1 = DATAFILE::DATADICT_GET_DICT(uVar0, "mission");
 	iVar2 = DATAFILE::DATADICT_GET_DICT(iVar1, "gen");
 	iVar3 = DATAFILE::DATADICT_GET_DICT(iVar1, "endcon");
-	Global_4718592.f_116954 = DATAFILE::DATADICT_GET_INT(sVar0, "debugOnlyVersion");
+	Global_4718592.f_116954 = DATAFILE::DATADICT_GET_INT(uVar0, "debugOnlyVersion");
 	if (!bParam2 || iParam3 == 0)
 	{
 		func_377(iVar1, iParam0, bParam1);

@@ -90504,7 +90504,7 @@ void func_405(int iParam0)//Position - 0x67338
 
 void func_406(var uParam0, int iParam1, int iParam2, int iParam3)//Position - 0x67346
 {
-	char* sVar0;
+	var* uVar0;
 	var* uVar1;
 	var* uVar2;
 	int iVar3;
@@ -90540,8 +90540,8 @@ void func_406(var uParam0, int iParam1, int iParam2, int iParam3)//Position - 0x
 		NETWORK::NETWORK_CLAN_PLAYER_GET_DESC(&iVar3, 35, &Var4);
 		Global_1053582.f_935 = iVar3;
 	}
-	sVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
-	uVar1 = DATAFILE::DATADICT_GET_DICT(sVar0, "data");
+	uVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
+	uVar1 = DATAFILE::DATADICT_GET_DICT(uVar0, "data");
 	uVar2 = DATAFILE::DATADICT_GET_DICT(uVar1, "trg");
 	iVar3 = DATAFILE::DATADICT_GET_INT(uVar1, "crew");
 	if (iParam1 == 1 && iParam3 != 8)
@@ -90677,7 +90677,7 @@ void func_413(var uParam0, var uParam1, bool bParam2, int iParam3)//Position - 0
 {
 	bool bVar0;
 	bool bVar1;
-	char* sVar2;
+	var* uVar2;
 	var* uVar3;
 	int iVar4;
 	int iVar5;
@@ -90693,17 +90693,17 @@ void func_413(var uParam0, var uParam1, bool bParam2, int iParam3)//Position - 0
 	}
 	StringCopy(uParam1[uParam0->f_9 /*16*/], NETWORK::UGC_GET_CONTENT_NAME(uParam0->f_7), 64);
 	StringCopy(&(uParam1->f_513[uParam0->f_9 /*6*/]), NETWORK::UGC_GET_CONTENT_ID(uParam0->f_7), 24);
-	sVar2 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
-	uVar3 = DATAFILE::DATADICT_GET_ARRAY(sVar2, "list");
+	uVar2 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
+	uVar3 = DATAFILE::DATADICT_GET_ARRAY(uVar2, "list");
 	if (bParam2)
 	{
-		if (DATAFILE::DATADICT_GET_TYPE(sVar2, "h2h") == 1)
+		if (DATAFILE::DATADICT_GET_TYPE(uVar2, "h2h") == 1)
 		{
-			bVar0 = DATAFILE::DATADICT_GET_BOOL(sVar2, "h2h");
+			bVar0 = DATAFILE::DATADICT_GET_BOOL(uVar2, "h2h");
 		}
-		if (DATAFILE::DATADICT_GET_TYPE(sVar2, "h2h") == 1)
+		if (DATAFILE::DATADICT_GET_TYPE(uVar2, "h2h") == 1)
 		{
-			bVar1 = DATAFILE::DATADICT_GET_BOOL(sVar2, "ch");
+			bVar1 = DATAFILE::DATADICT_GET_BOOL(uVar2, "ch");
 		}
 		if (bVar0)
 		{
@@ -90741,7 +90741,7 @@ void func_414(var uParam0, var uParam1, bool bParam2, int iParam3)//Position - 0
 {
 	bool bVar0;
 	bool bVar1;
-	char* sVar2;
+	var* uVar2;
 	var* uVar3;
 	int iVar4;
 	int iVar5;
@@ -90757,12 +90757,12 @@ void func_414(var uParam0, var uParam1, bool bParam2, int iParam3)//Position - 0
 	}
 	StringCopy(uParam1[uParam0->f_9 /*16*/], NETWORK::UGC_GET_CONTENT_NAME(uParam0->f_7), 64);
 	StringCopy(&(uParam1->f_257[uParam0->f_9 /*6*/]), NETWORK::UGC_GET_CONTENT_ID(uParam0->f_7), 24);
-	sVar2 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
-	uVar3 = DATAFILE::DATADICT_GET_ARRAY(sVar2, "list");
+	uVar2 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
+	uVar3 = DATAFILE::DATADICT_GET_ARRAY(uVar2, "list");
 	if (bParam2)
 	{
-		bVar0 = DATAFILE::DATADICT_GET_BOOL(sVar2, "h2h");
-		bVar1 = DATAFILE::DATADICT_GET_BOOL(sVar2, "ch");
+		bVar0 = DATAFILE::DATADICT_GET_BOOL(uVar2, "h2h");
+		bVar1 = DATAFILE::DATADICT_GET_BOOL(uVar2, "ch");
 		if (bVar0)
 		{
 			MISC::SET_BIT(&(uParam1->f_937), uParam0->f_9);
@@ -90797,7 +90797,7 @@ void func_414(var uParam0, var uParam1, bool bParam2, int iParam3)//Position - 0
 
 void func_415(var uParam0, bool bParam1)//Position - 0x679CD
 {
-	char* sVar0;
+	var* uVar0;
 	var* uVar1;
 	int iVar2;
 	int iVar3;
@@ -90808,8 +90808,8 @@ void func_415(var uParam0, bool bParam1)//Position - 0x679CD
 	var* uVar8;
 	bool bVar9;
 	
-	sVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
-	uVar1 = DATAFILE::DATADICT_GET_DICT(sVar0, "mission");
+	uVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
+	uVar1 = DATAFILE::DATADICT_GET_DICT(uVar0, "mission");
 	iVar2 = DATAFILE::DATADICT_GET_DICT(uVar1, "gen");
 	iVar3 = uParam0->f_9;
 	iVar4 = DATAFILE::DATADICT_GET_INT(iVar2, "type");
@@ -94336,7 +94336,7 @@ void func_499(int iParam0, bool bParam1, int iParam2)//Position - 0x6BCE2
 int func_500(var uParam0, char* sParam1, int iParam2, bool bParam3, int iParam4, bool bParam5)//Position - 0x6BD00
 {
 	struct<88> Var0;
-	char* sVar1;
+	var* uVar1;
 	var* uVar2;
 	int iVar3;
 	int iVar4;
@@ -94347,8 +94347,8 @@ int func_500(var uParam0, char* sParam1, int iParam2, bool bParam3, int iParam4,
 	Var0.f_66 = -1;
 	Var0.f_67 = 2;
 	*sParam1 = { Var0 };
-	sVar1 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
-	uVar2 = DATAFILE::DATADICT_GET_DICT(sVar1, "mission");
+	uVar1 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
+	uVar2 = DATAFILE::DATADICT_GET_DICT(uVar1, "mission");
 	iVar3 = DATAFILE::DATADICT_GET_DICT(uVar2, "gen");
 	if (Global_262145.f_7091 == 0)
 	{
@@ -94731,14 +94731,14 @@ int func_503(struct<3> Param0, int iParam1, float fParam2)//Position - 0x6C40B
 
 void func_504(var uParam0, var uParam1, bool bParam2, int iParam3)//Position - 0x6C75F
 {
-	char* sVar0;
+	var* uVar0;
 	var* uVar1;
 	int iVar2;
 	struct<88> Var3;
 	int iVar4;
 	
-	sVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
-	uVar1 = DATAFILE::DATADICT_GET_DICT(sVar0, "mission");
+	uVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
+	uVar1 = DATAFILE::DATADICT_GET_DICT(uVar0, "mission");
 	iVar2 = DATAFILE::DATADICT_GET_DICT(uVar1, "gen");
 	Var3.f_65 = -1;
 	Var3.f_66 = -1;
@@ -95416,7 +95416,7 @@ char* func_519()//Position - 0x6D3C3
 
 void func_520(var uParam0, bool bParam1)//Position - 0x6D3D4
 {
-	char* sVar0;
+	var* uVar0;
 	var* uVar1;
 	int iVar2;
 	int iVar3;
@@ -95426,8 +95426,8 @@ void func_520(var uParam0, bool bParam1)//Position - 0x6D3D4
 	bool bVar7;
 	int iVar8;
 	
-	sVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
-	uVar1 = DATAFILE::DATADICT_GET_DICT(sVar0, "mission");
+	uVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
+	uVar1 = DATAFILE::DATADICT_GET_DICT(uVar0, "mission");
 	iVar2 = DATAFILE::DATADICT_GET_DICT(uVar1, "gen");
 	if (func_573())
 	{
@@ -96755,13 +96755,13 @@ char* func_555(int iParam0)//Position - 0x6F5EF
 
 void func_556(var uParam0)//Position - 0x6F649
 {
-	char* sVar0;
+	var* uVar0;
 	var* uVar1;
 	int iVar2;
 	var* uVar3[16];
 	
-	sVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
-	uVar1 = DATAFILE::DATADICT_GET_ARRAY(sVar0, "list");
+	uVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
+	uVar1 = DATAFILE::DATADICT_GET_ARRAY(uVar0, "list");
 	uParam0->f_1864 = DATAFILE::DATAARRAY_GET_COUNT(uVar1);
 	if (uParam0->f_1864 > 16)
 	{
@@ -105372,7 +105372,7 @@ void func_736(int iParam0, int iParam1, var uParam2, int iParam3)//Position - 0x
 	}
 }
 
-int func_737(int iParam0, int iParam1)//Position - 0x7E2D7
+char* func_737(int iParam0, int iParam1)//Position - 0x7E2D7
 {
 	if (iParam0 == -1)
 	{

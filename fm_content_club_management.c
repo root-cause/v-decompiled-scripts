@@ -13156,13 +13156,13 @@ int func_307()//Position - 0xE8F3
 void func_308(int iParam0, int iParam1)//Position - 0xE8FC
 {
 	int iVar0;
-	bool bVar1;
+	int iVar1;
 	
 	if (VEHICLE::GET_NUM_MOD_KITS(iParam0) > 0)
 	{
 		VEHICLE::SET_VEHICLE_MOD_KIT(iParam0, 0);
 		iVar0 = VEHICLE::GET_VEHICLE_MOD(iParam0, 24);
-		bVar1 = VEHICLE::GET_VEHICLE_MOD_VARIATION(iParam0, 24);
+		iVar1 = VEHICLE::GET_VEHICLE_MOD_VARIATION(iParam0, 24);
 		VEHICLE::SET_VEHICLE_WHEEL_TYPE(iParam0, iParam1);
 		if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("tornado6") || ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("peyote2"))
 		{
@@ -13174,7 +13174,7 @@ void func_308(int iParam0, int iParam1)//Position - 0xE8FC
 		}
 		else
 		{
-			VEHICLE::SET_VEHICLE_MOD(iParam0, 24, iVar0, bVar1 == 1);
+			VEHICLE::SET_VEHICLE_MOD(iParam0, 24, iVar0, iVar1 == 1);
 		}
 	}
 }
@@ -25680,13 +25680,13 @@ void func_601(var uParam0)//Position - 0x24700
 
 void func_602(var uParam0)//Position - 0x2472A
 {
-	char* sVar0;
+	var* uVar0;
 	var* uVar1;
 	var uVar2;
 	
-	sVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
-	uVar1 = DATAFILE::DATADICT_GET_DICT(sVar0, "mission");
-	Global_4718592.f_116954 = DATAFILE::DATADICT_GET_INT(sVar0, "debugOnlyVersion");
+	uVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
+	uVar1 = DATAFILE::DATADICT_GET_DICT(uVar0, "mission");
+	Global_4718592.f_116954 = DATAFILE::DATADICT_GET_INT(uVar0, "debugOnlyVersion");
 	func_603(&uVar1, uParam0, 0, &uVar2);
 }
 
@@ -148965,7 +148965,7 @@ int func_2418(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 													else
 													{
 														PED::SET_PED_COMPONENT_VARIATION(*uParam0, iVar0, Global_78200[iVar0], Global_78200.f_13[iVar0], 0);
-														PED::SET_PED_ENABLE_CREW_EMBLEM(*uParam0, 1);
+														PED::SET_PED_ENABLE_CREW_EMBLEM(*uParam0, true);
 													}
 												}
 												else if (iParam7 == 2)
@@ -149007,7 +149007,7 @@ int func_2418(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 												iVar10 = func_697(*uParam0, Global_78200[iVar0], Global_78200.f_13[iVar0], 10);
 												if (func_2444(iVar1, 10, iVar10, -1))
 												{
-													PED::SET_PED_ENABLE_CREW_EMBLEM(*uParam0, 1);
+													PED::SET_PED_ENABLE_CREW_EMBLEM(*uParam0, true);
 												}
 											}
 										}
@@ -183335,9 +183335,9 @@ void func_3539()//Position - 0xE63AA
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	int iVar3;
+	bool bVar3;
 	
-	iVar3 = func_3542();
+	bVar3 = func_3542();
 	iVar2 = func_105(PLAYER::PLAYER_ID());
 	iVar0 = 0;
 	while (iVar0 < 32)
@@ -183347,8 +183347,8 @@ void func_3539()//Position - 0xE63AA
 		{
 			if (func_75(iVar1, iVar2, 1) || func_3540(iVar1, PLAYER::PLAYER_ID()))
 			{
-				PLAYER::SET_PLAYER_CAN_DAMAGE_PLAYER(PLAYER::PLAYER_ID(), iVar1, iVar3);
-				PLAYER::SET_PLAYER_CAN_DAMAGE_PLAYER(iVar1, PLAYER::PLAYER_ID(), iVar3);
+				PLAYER::SET_PLAYER_CAN_DAMAGE_PLAYER(PLAYER::PLAYER_ID(), iVar1, bVar3);
+				PLAYER::SET_PLAYER_CAN_DAMAGE_PLAYER(iVar1, PLAYER::PLAYER_ID(), bVar3);
 			}
 		}
 		iVar0++;

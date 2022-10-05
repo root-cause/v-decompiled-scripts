@@ -46813,7 +46813,7 @@ int func_349(int iParam0, var uParam1)//Position - 0x3D4BA
 	int iVar7;
 	int iVar8;
 	int iVar9;
-	bool bVar10;
+	int iVar10;
 	
 	if (VEHICLE::IS_VEHICLE_DRIVEABLE(iParam0, false) && *uParam1 == ENTITY::GET_ENTITY_MODEL(iParam0))
 	{
@@ -46956,10 +46956,10 @@ int func_349(int iParam0, var uParam1)//Position - 0x3D4BA
 		}
 		if ((uParam1->f_11 != -1 && uParam1->f_11 != VEHICLE::GET_VEHICLE_MOD(iParam0, 23) + 1) && func_351(uParam1->f_12))
 		{
-			bVar10 = VEHICLE::GET_VEHICLE_MOD_VARIATION(iParam0, 23);
+			iVar10 = VEHICLE::GET_VEHICLE_MOD_VARIATION(iParam0, 23);
 			if (uParam1->f_11 > 0)
 			{
-				VEHICLE::SET_VEHICLE_MOD(iParam0, 23, (uParam1->f_11 - 1), bVar10 > 0);
+				VEHICLE::SET_VEHICLE_MOD(iParam0, 23, (uParam1->f_11 - 1), iVar10 > 0);
 			}
 			else
 			{
@@ -46988,13 +46988,13 @@ int func_349(int iParam0, var uParam1)//Position - 0x3D4BA
 void func_350(int iParam0, int iParam1)//Position - 0x3D8B9
 {
 	int iVar0;
-	bool bVar1;
+	int iVar1;
 	
 	if (VEHICLE::GET_NUM_MOD_KITS(iParam0) > 0)
 	{
 		VEHICLE::SET_VEHICLE_MOD_KIT(iParam0, 0);
 		iVar0 = VEHICLE::GET_VEHICLE_MOD(iParam0, 24);
-		bVar1 = VEHICLE::GET_VEHICLE_MOD_VARIATION(iParam0, 24);
+		iVar1 = VEHICLE::GET_VEHICLE_MOD_VARIATION(iParam0, 24);
 		VEHICLE::SET_VEHICLE_WHEEL_TYPE(iParam0, iParam1);
 		if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("tornado6") || ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("peyote2"))
 		{
@@ -47006,7 +47006,7 @@ void func_350(int iParam0, int iParam1)//Position - 0x3D8B9
 		}
 		else
 		{
-			VEHICLE::SET_VEHICLE_MOD(iParam0, 24, iVar0, bVar1 == 1);
+			VEHICLE::SET_VEHICLE_MOD(iParam0, 24, iVar0, iVar1 == 1);
 		}
 	}
 }

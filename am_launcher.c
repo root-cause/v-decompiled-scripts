@@ -9382,13 +9382,13 @@ void func_221(var uParam0)//Position - 0xADAF
 
 void func_222(var uParam0)//Position - 0xADD9
 {
-	char* sVar0;
+	var* uVar0;
 	var* uVar1;
 	var uVar2;
 	
-	sVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
-	uVar1 = DATAFILE::DATADICT_GET_DICT(sVar0, "mission");
-	Global_4718592.f_116954 = DATAFILE::DATADICT_GET_INT(sVar0, "debugOnlyVersion");
+	uVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
+	uVar1 = DATAFILE::DATADICT_GET_DICT(uVar0, "mission");
+	Global_4718592.f_116954 = DATAFILE::DATADICT_GET_INT(uVar0, "debugOnlyVersion");
 	func_223(&uVar1, uParam0, 0, &uVar2);
 }
 

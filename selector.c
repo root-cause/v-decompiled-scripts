@@ -102974,13 +102974,13 @@ int func_793()//Position - 0x781F1
 
 int func_794(int iParam0)//Position - 0x782B7
 {
-	int iVar0;
+	bool bVar0;
 	
 	if (func_809())
 	{
-		iVar0 = NETWORK::NETWORK_CHECK_PRIVILEGES(0, 512, iParam0);
+		bVar0 = NETWORK::NETWORK_CHECK_PRIVILEGES(0, 512, iParam0);
 		NETWORK::NETWORK_SET_PRIVILEGE_CHECK_RESULT_NOT_NEEDED();
-		return iVar0;
+		return bVar0;
 	}
 	return 1;
 }
@@ -103483,13 +103483,13 @@ int func_807()//Position - 0x78BC1
 
 int func_808(int iParam0)//Position - 0x78C34
 {
-	int iVar0;
+	bool bVar0;
 	
 	if (func_809())
 	{
-		iVar0 = NETWORK::NETWORK_CHECK_PRIVILEGES(0, 512, iParam0);
+		bVar0 = NETWORK::NETWORK_CHECK_PRIVILEGES(0, 512, iParam0);
 		NETWORK::NETWORK_SET_PRIVILEGE_CHECK_RESULT_NOT_NEEDED();
-		return iVar0;
+		return bVar0;
 	}
 	return 1;
 }

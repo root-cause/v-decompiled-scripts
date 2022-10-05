@@ -97159,13 +97159,13 @@ int func_497()//Position - 0x72AD5
 void func_498(int iParam0, int iParam1)//Position - 0x72ADE
 {
 	int iVar0;
-	bool bVar1;
+	int iVar1;
 	
 	if (VEHICLE::GET_NUM_MOD_KITS(iParam0) > 0)
 	{
 		VEHICLE::SET_VEHICLE_MOD_KIT(iParam0, 0);
 		iVar0 = VEHICLE::GET_VEHICLE_MOD(iParam0, 24);
-		bVar1 = VEHICLE::GET_VEHICLE_MOD_VARIATION(iParam0, 24);
+		iVar1 = VEHICLE::GET_VEHICLE_MOD_VARIATION(iParam0, 24);
 		VEHICLE::SET_VEHICLE_WHEEL_TYPE(iParam0, iParam1);
 		if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("tornado6") || ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("peyote2"))
 		{
@@ -97177,7 +97177,7 @@ void func_498(int iParam0, int iParam1)//Position - 0x72ADE
 		}
 		else
 		{
-			VEHICLE::SET_VEHICLE_MOD(iParam0, 24, iVar0, bVar1 == 1);
+			VEHICLE::SET_VEHICLE_MOD(iParam0, 24, iVar0, iVar1 == 1);
 		}
 	}
 }
@@ -131983,7 +131983,7 @@ void func_1593()//Position - 0xA306D
 
 int func_1594(int iParam0)//Position - 0xA3089
 {
-	char* sVar0;
+	var* uVar0;
 	
 	if (func_1686())
 	{
@@ -132003,22 +132003,22 @@ int func_1594(int iParam0)//Position - 0xA3089
 	}
 	func_1597();
 	DATAFILE::DATAFILE_CREATE(0);
-	sVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
+	uVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
 	if (iParam0 == 0)
 	{
 		Global_1922915++;
-		DATAFILE::DATADICT_SET_INT(sVar0, "quit", Global_1922915);
-		DATAFILE::DATADICT_SET_INT(sVar0, "quitd", 1);
-		DATAFILE::DATADICT_SET_INT(sVar0, "ply", Global_1922915.f_2);
-		DATAFILE::DATADICT_SET_INT(sVar0, "lp", NETWORK::GET_CLOUD_TIME_AS_INT());
+		DATAFILE::DATADICT_SET_INT(uVar0, "quit", Global_1922915);
+		DATAFILE::DATADICT_SET_INT(uVar0, "quitd", 1);
+		DATAFILE::DATADICT_SET_INT(uVar0, "ply", Global_1922915.f_2);
+		DATAFILE::DATADICT_SET_INT(uVar0, "lp", NETWORK::GET_CLOUD_TIME_AS_INT());
 	}
 	else if (iParam0 == 1 || iParam0 == 4)
 	{
 		Global_1922940.f_1++;
-		DATAFILE::DATADICT_SET_INT(sVar0, "quit", Global_1922940.f_1);
-		DATAFILE::DATADICT_SET_INT(sVar0, "quitd", 1);
-		DATAFILE::DATADICT_SET_INT(sVar0, "ply", Global_1922940.f_4);
-		DATAFILE::DATADICT_SET_INT(sVar0, "lp", NETWORK::GET_CLOUD_TIME_AS_INT());
+		DATAFILE::DATADICT_SET_INT(uVar0, "quit", Global_1922940.f_1);
+		DATAFILE::DATADICT_SET_INT(uVar0, "quitd", 1);
+		DATAFILE::DATADICT_SET_INT(uVar0, "ply", Global_1922940.f_4);
+		DATAFILE::DATADICT_SET_INT(uVar0, "lp", NETWORK::GET_CLOUD_TIME_AS_INT());
 	}
 	if (iParam0 == 0)
 	{
@@ -133137,7 +133137,7 @@ var func_1692(int iParam0)//Position - 0xA430F
 
 int func_1693()//Position - 0xA4326
 {
-	char* sVar0;
+	var* uVar0;
 	
 	if (func_1686())
 	{
@@ -133157,16 +133157,16 @@ int func_1693()//Position - 0xA4326
 	}
 	func_1597();
 	DATAFILE::DATAFILE_CREATE(0);
-	sVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
+	uVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
 	Global_1922915.f_2++;
 	if (Global_1922915.f_2 < 1)
 	{
 		Global_1922915.f_2 = 1;
 	}
-	DATAFILE::DATADICT_SET_INT(sVar0, "quit", Global_1922915);
-	DATAFILE::DATADICT_SET_INT(sVar0, "ply", Global_1922915.f_2);
-	DATAFILE::DATADICT_SET_INT(sVar0, "plyd", 1);
-	DATAFILE::DATADICT_SET_INT(sVar0, "lp", NETWORK::GET_CLOUD_TIME_AS_INT());
+	DATAFILE::DATADICT_SET_INT(uVar0, "quit", Global_1922915);
+	DATAFILE::DATADICT_SET_INT(uVar0, "ply", Global_1922915.f_2);
+	DATAFILE::DATADICT_SET_INT(uVar0, "plyd", 1);
+	DATAFILE::DATADICT_SET_INT(uVar0, "lp", NETWORK::GET_CLOUD_TIME_AS_INT());
 	if (DATAFILE::UGC_SET_PLAYER_DATA(&(Global_4718592.f_116811), -1f, func_1596(0), 0))
 	{
 	}

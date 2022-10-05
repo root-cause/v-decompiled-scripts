@@ -120,7 +120,7 @@
 	int iLocal_118 = 0;
 	int iLocal_119[6] = { 0, 0, 0, 0, 0, 0 };
 	var uLocal_120[6] = { 0, 0, 0, 0, 0, 0 };
-	bool bLocal_121 = 0;
+	int iLocal_121 = 0;
 	int iLocal_122 = 0;
 	int iLocal_123 = 0;
 	var uLocal_124 = 0;
@@ -3383,13 +3383,13 @@ int func_79(var uParam0, char* sParam1, char* sParam2, int iParam3)//Position - 
 
 void func_80(char* sParam0, int iParam1, var uParam2)//Position - 0x36AA
 {
-	char* sVar0;
+	var* uVar0;
 	var* uVar1;
 	int iVar2;
 	int iVar3;
 	
-	sVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
-	uVar1 = DATAFILE::DATADICT_GET_DICT(sVar0, "mission");
+	uVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
+	uVar1 = DATAFILE::DATADICT_GET_DICT(uVar0, "mission");
 	iVar2 = DATAFILE::DATADICT_GET_DICT(uVar1, "gen");
 	StringCopy(sParam0, NETWORK::UGC_GET_CONTENT_ID(iParam1), 24);
 	StringCopy(&(sParam0->f_6), NETWORK::UGC_GET_CONTENT_USER_ID(iParam1), 64);
@@ -10263,7 +10263,7 @@ int func_211(var uParam0)//Position - 0xB57C
 	int iVar0;
 	
 	iVar0 = func_212(uParam0);
-	return ((uParam0->f_9 % iVar0) + (bLocal_121 * iVar0));
+	return ((uParam0->f_9 % iVar0) + (iLocal_121 * iVar0));
 }
 
 int func_212(var uParam0)//Position - 0xB599
@@ -11370,7 +11370,7 @@ int func_246(var uParam0)//Position - 0xC66A
 	uParam0->f_32 = VEHICLE::GET_VEHICLE_COLOURS_WHICH_CAN_BE_SET(iVar0);
 	uParam0->f_39 = VEHICLE::GET_VEHICLE_MOD_KIT_TYPE(iVar0);
 	uParam0->f_27 = VEHICLE::GET_NUM_VEHICLE_MODS(iVar0, 23) + 1;
-	bLocal_121 = VEHICLE::GET_VEHICLE_MOD_VARIATION(iVar0, 23);
+	iLocal_121 = VEHICLE::GET_VEHICLE_MOD_VARIATION(iVar0, 23);
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		if (*uParam0 == joaat("patriot"))

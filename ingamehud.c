@@ -16555,7 +16555,7 @@ void func_377(char* sParam0)//Position - 0x156FD
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_PLAYER_NAME_STRING(sParam0);
 }
 
-int func_378(int iParam0, int iParam1)//Position - 0x1570B
+char* func_378(int iParam0, int iParam1)//Position - 0x1570B
 {
 	if (iParam0 == -1)
 	{
@@ -115868,26 +115868,26 @@ void func_1123(int iParam0)//Position - 0x88031
 
 int func_1124(int iParam0)//Position - 0x8803F
 {
-	int iVar0;
+	bool bVar0;
 	
 	if (func_491())
 	{
-		iVar0 = NETWORK::NETWORK_CHECK_PRIVILEGES(0, 512, iParam0);
+		bVar0 = NETWORK::NETWORK_CHECK_PRIVILEGES(0, 512, iParam0);
 		NETWORK::NETWORK_SET_PRIVILEGE_CHECK_RESULT_NOT_NEEDED();
-		return iVar0;
+		return bVar0;
 	}
 	return 1;
 }
 
 int func_1125(int iParam0)//Position - 0x88064
 {
-	int iVar0;
+	bool bVar0;
 	
 	if (func_491())
 	{
-		iVar0 = NETWORK::NETWORK_CHECK_PRIVILEGES(0, 512, iParam0);
+		bVar0 = NETWORK::NETWORK_CHECK_PRIVILEGES(0, 512, iParam0);
 		NETWORK::NETWORK_SET_PRIVILEGE_CHECK_RESULT_NOT_NEEDED();
-		return iVar0;
+		return bVar0;
 	}
 	return 1;
 }

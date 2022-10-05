@@ -125529,7 +125529,7 @@ void func_1203()//Position - 0x9504A
 
 int func_1204(int iParam0)//Position - 0x95066
 {
-	char* sVar0;
+	var* uVar0;
 	
 	if (func_1078())
 	{
@@ -125549,22 +125549,22 @@ int func_1204(int iParam0)//Position - 0x95066
 	}
 	func_1207();
 	DATAFILE::DATAFILE_CREATE(0);
-	sVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
+	uVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
 	if (iParam0 == 0)
 	{
 		Global_1922915++;
-		DATAFILE::DATADICT_SET_INT(sVar0, "quit", Global_1922915);
-		DATAFILE::DATADICT_SET_INT(sVar0, "quitd", 1);
-		DATAFILE::DATADICT_SET_INT(sVar0, "ply", Global_1922915.f_2);
-		DATAFILE::DATADICT_SET_INT(sVar0, "lp", NETWORK::GET_CLOUD_TIME_AS_INT());
+		DATAFILE::DATADICT_SET_INT(uVar0, "quit", Global_1922915);
+		DATAFILE::DATADICT_SET_INT(uVar0, "quitd", 1);
+		DATAFILE::DATADICT_SET_INT(uVar0, "ply", Global_1922915.f_2);
+		DATAFILE::DATADICT_SET_INT(uVar0, "lp", NETWORK::GET_CLOUD_TIME_AS_INT());
 	}
 	else if (iParam0 == 1 || iParam0 == 4)
 	{
 		Global_1922940.f_1++;
-		DATAFILE::DATADICT_SET_INT(sVar0, "quit", Global_1922940.f_1);
-		DATAFILE::DATADICT_SET_INT(sVar0, "quitd", 1);
-		DATAFILE::DATADICT_SET_INT(sVar0, "ply", Global_1922940.f_4);
-		DATAFILE::DATADICT_SET_INT(sVar0, "lp", NETWORK::GET_CLOUD_TIME_AS_INT());
+		DATAFILE::DATADICT_SET_INT(uVar0, "quit", Global_1922940.f_1);
+		DATAFILE::DATADICT_SET_INT(uVar0, "quitd", 1);
+		DATAFILE::DATADICT_SET_INT(uVar0, "ply", Global_1922940.f_4);
+		DATAFILE::DATADICT_SET_INT(uVar0, "lp", NETWORK::GET_CLOUD_TIME_AS_INT());
 	}
 	if (iParam0 == 0)
 	{
@@ -126191,7 +126191,7 @@ void func_1262()//Position - 0x95A44
 
 int func_1263()//Position - 0x95A82
 {
-	char* sVar0;
+	var* uVar0;
 	
 	if (func_1078())
 	{
@@ -126211,16 +126211,16 @@ int func_1263()//Position - 0x95A82
 	}
 	func_1207();
 	DATAFILE::DATAFILE_CREATE(0);
-	sVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
+	uVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
 	Global_1922915.f_2++;
 	if (Global_1922915.f_2 < 1)
 	{
 		Global_1922915.f_2 = 1;
 	}
-	DATAFILE::DATADICT_SET_INT(sVar0, "quit", Global_1922915);
-	DATAFILE::DATADICT_SET_INT(sVar0, "ply", Global_1922915.f_2);
-	DATAFILE::DATADICT_SET_INT(sVar0, "plyd", 1);
-	DATAFILE::DATADICT_SET_INT(sVar0, "lp", NETWORK::GET_CLOUD_TIME_AS_INT());
+	DATAFILE::DATADICT_SET_INT(uVar0, "quit", Global_1922915);
+	DATAFILE::DATADICT_SET_INT(uVar0, "ply", Global_1922915.f_2);
+	DATAFILE::DATADICT_SET_INT(uVar0, "plyd", 1);
+	DATAFILE::DATADICT_SET_INT(uVar0, "lp", NETWORK::GET_CLOUD_TIME_AS_INT());
 	if (DATAFILE::UGC_SET_PLAYER_DATA(&(Global_4718592.f_116811), -1f, func_1206(0), 0))
 	{
 	}

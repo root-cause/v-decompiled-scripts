@@ -38063,7 +38063,7 @@ bool func_730(int iParam0)//Position - 0x29202
 	return bVar0;
 }
 
-int func_731(int iParam0, int iParam1)//Position - 0x292B9
+char* func_731(int iParam0, int iParam1)//Position - 0x292B9
 {
 	if (iParam0 == -1)
 	{

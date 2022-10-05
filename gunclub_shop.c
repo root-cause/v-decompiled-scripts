@@ -72605,7 +72605,7 @@ int func_521(char[4] cParam0, char[4] cParam1, char[4] cParam2, char[4] cParam3)
 			break;
 		
 		case joaat("CLO_H3F_O_BS_1"):
-		case -2036829130:
+		case joaat("CLO_H3F_B_6_1"):
 		case joaat("CLO_H3F_PH_2_0"):
 		case joaat("CLO_H3F_O_BS_2"):
 		case joaat("CLO_H3F_B_15_0"):
@@ -72613,7 +72613,7 @@ int func_521(char[4] cParam0, char[4] cParam1, char[4] cParam2, char[4] cParam3)
 		case joaat("CLO_H3F_PH_3_0"):
 		case joaat("CLO_H3F_O_BS_4"):
 		case joaat("CLO_H3F_O_BS_5"):
-		case -1309488406:
+		case joaat("CLO_H3F_B_6_0"):
 		case joaat("CLO_H3F_O_BS_6"):
 			return !func_39(28233, -1);
 			break;

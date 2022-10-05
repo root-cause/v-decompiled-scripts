@@ -9952,7 +9952,7 @@ void func_268(int iParam0, int iParam1, var uParam2, int iParam3)//Position - 0x
 	}
 }
 
-int func_269(int iParam0, int iParam1)//Position - 0xB29F
+char* func_269(int iParam0, int iParam1)//Position - 0xB29F
 {
 	if (iParam0 == -1)
 	{

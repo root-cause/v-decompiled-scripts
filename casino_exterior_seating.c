@@ -91758,7 +91758,7 @@ int func_442(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 													else
 													{
 														PED::SET_PED_COMPONENT_VARIATION(*uParam0, iVar0, Global_78200[iVar0], Global_78200.f_13[iVar0], 0);
-														PED::SET_PED_ENABLE_CREW_EMBLEM(*uParam0, 1);
+														PED::SET_PED_ENABLE_CREW_EMBLEM(*uParam0, true);
 													}
 												}
 												else if (iParam7 == 2)
@@ -91800,7 +91800,7 @@ int func_442(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 												iVar10 = func_120(*uParam0, Global_78200[iVar0], Global_78200.f_13[iVar0], 10);
 												if (func_466(iVar1, 10, iVar10, -1))
 												{
-													PED::SET_PED_ENABLE_CREW_EMBLEM(*uParam0, 1);
+													PED::SET_PED_ENABLE_CREW_EMBLEM(*uParam0, true);
 												}
 											}
 										}

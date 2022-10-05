@@ -112869,7 +112869,7 @@ void func_836(char* sParam0, var uParam1)//Position - 0x8C7F9
 	}
 }
 
-int func_837(int iParam0, int iParam1)//Position - 0x8C8AE
+char* func_837(int iParam0, int iParam1)//Position - 0x8C8AE
 {
 	if (iParam0 == -1)
 	{

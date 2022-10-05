@@ -49,7 +49,7 @@
 	int iLocal_47 = 0;
 	bool bLocal_48 = 0;
 	int iLocal_49 = 0;
-	char* sLocal_50 = NULL;
+	var* uLocal_50 = NULL;
 	var* uLocal_51 = NULL;
 	var* uLocal_52 = NULL;
 	var* uLocal_53 = NULL;
@@ -126,9 +126,9 @@ void __EntryFunction__()//Position - 0x0
 					iLocal_38 = 0;
 					iLocal_39 = 0;
 					DATAFILE::DATAFILE_CREATE(0);
-					sLocal_50 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
-					DATAFILE::DATADICT_SET_FLOAT(sLocal_50, "tot_pc", Global_113386.f_10194.f_3853);
-					uLocal_51 = DATAFILE::DATADICT_CREATE_DICT(sLocal_50, "Sect");
+					uLocal_50 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
+					DATAFILE::DATADICT_SET_FLOAT(uLocal_50, "tot_pc", Global_113386.f_10194.f_3853);
+					uLocal_51 = DATAFILE::DATADICT_CREATE_DICT(uLocal_50, "Sect");
 					uLocal_52 = DATAFILE::DATADICT_CREATE_ARRAY(uLocal_51, "mgc");
 					uLocal_53 = DATAFILE::DATADICT_CREATE_ARRAY(uLocal_51, "msnc");
 					uLocal_54 = DATAFILE::DATADICT_CREATE_ARRAY(uLocal_51, "ojc");

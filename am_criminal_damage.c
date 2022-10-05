@@ -18924,19 +18924,19 @@ void func_111(int iParam0, var uParam1, int iParam2)//Position - 0x11D20
 		case 1:
 			switch (iParam0)
 			{
-				case -1309488406:
+				case joaat("CLO_H3F_B_6_0"):
 					*uParam1 = Global_262145.f_29130;
 					break;
 				
-				case -2036829130:
+				case joaat("CLO_H3F_B_6_1"):
 					*uParam1 = Global_262145.f_29131;
 					break;
 				
-				case 356913555:
+				case joaat("CLO_H3F_B_6_2"):
 					*uParam1 = Global_262145.f_29132;
 					break;
 				
-				case 1791343761:
+				case joaat("CLO_H3F_B_6_3"):
 					*uParam1 = Global_262145.f_29133;
 					break;
 				
