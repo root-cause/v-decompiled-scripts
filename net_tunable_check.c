@@ -16293,7 +16293,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 20000;
-			uParam1->f_5 = -1149870437;
+			uParam1->f_5 = joaat("CHECKPOINT_BONUS_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -16302,7 +16302,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 5000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 5000;
-			uParam1->f_5 = 1125084275;
+			uParam1->f_5 = joaat("CHECKPOINT_BONUS_RP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -16583,7 +16583,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 10000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 10000;
-			uParam1->f_5 = -138800758;
+			uParam1->f_5 = joaat("PENNED_IN_BASE_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -16592,7 +16592,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2000;
-			uParam1->f_5 = -784376595;
+			uParam1->f_5 = joaat("PENNED_IN_BASE_RP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -16601,7 +16601,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2000;
-			uParam1->f_5 = -1029433510;
+			uParam1->f_5 = joaat("PENNED_IN_SCALE_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -16610,7 +16610,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 500f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 500;
-			uParam1->f_5 = 1551148962;
+			uParam1->f_5 = joaat("PENNED_IN_SCALE_RP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -16700,7 +16700,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 1356372648;
+			uParam1->f_5 = joaat("PENNED_IN_P_WEIGHT");
 			uParam1->f_4 = 1;
 			break;
 	}
@@ -16711,7 +16711,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 100;
-			uParam1->f_5 = 400510769;
+			uParam1->f_5 = joaat("PENNED_IN_P_CAP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -16720,7 +16720,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 10000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 10000;
-			uParam1->f_5 = -36074459;
+			uParam1->f_5 = joaat("PENNED_IN_MINIMUM_PARTICIPATION_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -16729,7 +16729,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2000;
-			uParam1->f_5 = 66985186;
+			uParam1->f_5 = joaat("PENNED_IN_MINIMUM_PARTICIPATION_RP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20396,7 +20396,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 80000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 80000;
-			uParam1->f_5 = 226750252;
+			uParam1->f_5 = joaat("CAR_MODS_BENNYS_BESPOKE_WHEELS_CHROME_OG_HUNNETS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20405,7 +20405,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 80000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 80000;
-			uParam1->f_5 = 565896526;
+			uParam1->f_5 = joaat("CAR_MODS_BENNYS_BESPOKE_WHEELS_GOLD_OG_HUNNETS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20414,7 +20414,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 80000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 80000;
-			uParam1->f_5 = 1891985936;
+			uParam1->f_5 = joaat("CAR_MODS_BENNYS_BESPOKE_WHEELS_CHROME_WIRES");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20423,7 +20423,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 80000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 80000;
-			uParam1->f_5 = 422023516;
+			uParam1->f_5 = joaat("CAR_MODS_BENNYS_BESPOKE_WHEELS_GOLD_WIRES");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20432,7 +20432,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 80000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 80000;
-			uParam1->f_5 = 1719817002;
+			uParam1->f_5 = joaat("CAR_MODS_BENNYS_BESPOKE_WHEELS_CHROME_SPOKED_OUT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20441,7 +20441,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 80000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 80000;
-			uParam1->f_5 = 1112332780;
+			uParam1->f_5 = joaat("CAR_MODS_BENNYS_BESPOKE_WHEELS_GOLD_SPOKED_OUT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20450,7 +20450,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 80000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 80000;
-			uParam1->f_5 = 1111805910;
+			uParam1->f_5 = joaat("CAR_MODS_BENNYS_BESPOKE_WHEELS_CHROME_KNOCKOFFS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20459,7 +20459,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 80000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 80000;
-			uParam1->f_5 = -1161309987;
+			uParam1->f_5 = joaat("CAR_MODS_BENNYS_BESPOKE_WHEELS_GOLD_KNOCKOFFS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20468,7 +20468,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 80000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 80000;
-			uParam1->f_5 = 564419787;
+			uParam1->f_5 = joaat("CAR_MODS_BENNYS_BESPOKE_WHEELS_CHROME_BIGGER_WORM");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20477,7 +20477,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 80000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 80000;
-			uParam1->f_5 = -1988086665;
+			uParam1->f_5 = joaat("CAR_MODS_BENNYS_BESPOKE_WHEELS_GOLD_BIGGER_WORM");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20486,7 +20486,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 80000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 80000;
-			uParam1->f_5 = 407270079;
+			uParam1->f_5 = joaat("CAR_MODS_BENNYS_BESPOKE_WHEELS_CHROME_VINTAGE_WIRE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20495,7 +20495,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 80000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 80000;
-			uParam1->f_5 = 227974550;
+			uParam1->f_5 = joaat("CAR_MODS_BENNYS_BESPOKE_WHEELS_GOLD_VINTAGE_WIRE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20504,7 +20504,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 80000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 80000;
-			uParam1->f_5 = 8444166;
+			uParam1->f_5 = joaat("CAR_MODS_BENNYS_BESPOKE_WHEELS_CHROME_CLASSIC_WIRE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20513,7 +20513,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 80000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 80000;
-			uParam1->f_5 = 1352855437;
+			uParam1->f_5 = joaat("CAR_MODS_BENNYS_BESPOKE_WHEELS_GOLD_CLASSIC_WIRE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20522,7 +20522,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 80000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 80000;
-			uParam1->f_5 = -1123558353;
+			uParam1->f_5 = joaat("CAR_MODS_BENNYS_BESPOKE_WHEELS_CHROME_SMOOTHIE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20531,7 +20531,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 80000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 80000;
-			uParam1->f_5 = 265222133;
+			uParam1->f_5 = joaat("CAR_MODS_BENNYS_BESPOKE_WHEELS_GOLD_SMOOTHIE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20540,7 +20540,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 80000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 80000;
-			uParam1->f_5 = 431081889;
+			uParam1->f_5 = joaat("CAR_MODS_BENNYS_BESPOKE_WHEELS_CHROME_CLASSIC_ROD");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20549,7 +20549,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 80000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 80000;
-			uParam1->f_5 = -651139583;
+			uParam1->f_5 = joaat("CAR_MODS_BENNYS_BESPOKE_WHEELS_GOLD_CLASSIC_ROD");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20558,7 +20558,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 80000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 80000;
-			uParam1->f_5 = 489413612;
+			uParam1->f_5 = joaat("CAR_MODS_BENNYS_BESPOKE_WHEELS_CHROME_DOLLAR");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20567,7 +20567,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 80000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 80000;
-			uParam1->f_5 = 1883688394;
+			uParam1->f_5 = joaat("CAR_MODS_BENNYS_BESPOKE_WHEELS_GOLD_DOLLAR");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20648,7 +20648,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 100000;
-			uParam1->f_5 = 1018805699;
+			uParam1->f_5 = joaat("BENNYS_BESPOKE_WHEELS_CHROME_MIGHTY_STAR");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20657,7 +20657,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 100000;
-			uParam1->f_5 = 1573512647;
+			uParam1->f_5 = joaat("BENNYS_BESPOKE_WHEELS_GOLD_MIGHTY_STAR");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20666,7 +20666,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 100000;
-			uParam1->f_5 = 1647104739;
+			uParam1->f_5 = joaat("BENNYS_BESPOKE_WHEELS_CHROME_DECADENT_DISH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20675,7 +20675,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 100000;
-			uParam1->f_5 = -1259976497;
+			uParam1->f_5 = joaat("BENNYS_BESPOKE_WHEELS_GOLD_DECADENT_DISH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20684,7 +20684,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 100000;
-			uParam1->f_5 = 189438753;
+			uParam1->f_5 = joaat("BENNYS_BESPOKE_WHEELS_CHROME_RAZOR_STYLE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20693,7 +20693,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 100000;
-			uParam1->f_5 = 1910275663;
+			uParam1->f_5 = joaat("BENNYS_BESPOKE_WHEELS_GOLD_RAZOR_STYLE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20702,7 +20702,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 100000;
-			uParam1->f_5 = -497136012;
+			uParam1->f_5 = joaat("BENNYS_BESPOKE_WHEELS_CHROME_CELTIC_KNOT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20711,7 +20711,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 100000;
-			uParam1->f_5 = 1670170118;
+			uParam1->f_5 = joaat("BENNYS_BESPOKE_WHEELS_GOLD_CELTIC_KNOT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20720,7 +20720,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 100000;
-			uParam1->f_5 = 470206542;
+			uParam1->f_5 = joaat("BENNYS_BESPOKE_WHEELS_CHROME_WARRIOR_DISH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20729,7 +20729,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 100000;
-			uParam1->f_5 = 1125064346;
+			uParam1->f_5 = joaat("BENNYS_BESPOKE_WHEELS_GOLD_WARRIOR_DISH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20738,7 +20738,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100000f;
 			uParam1->f_2 = 10000;
 			uParam1->f_3 = 100000;
-			uParam1->f_5 = 613457149;
+			uParam1->f_5 = joaat("BENNYS_BESPOKE_WHEELS_GOLD_BIG_DOG_SPOKES");
 			uParam1->f_4 = 1;
 			break;
 		

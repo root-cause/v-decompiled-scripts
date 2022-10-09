@@ -3887,7 +3887,7 @@ void func_49(bool bParam0)//Position - 0x3242
 					iLocal_1446 = func_196();
 				}
 				func_195();
-				func_133(0, PLAYER::PLAYER_PED_ID(), "XPT_KAIE", joaat("XPTYPE_SKILL"), 864921357, func_190(1, 0), 1, -1, 0, 0, 0);
+				func_133(0, PLAYER::PLAYER_PED_ID(), "XPT_KAIE", joaat("XPTYPE_SKILL"), joaat("XPCATEGORY_KILL_HOT_TARGET"), func_190(1, 0), 1, -1, 0, 0, 0);
 				iVar0 = func_127(1, 0);
 				if (bParam0)
 				{
