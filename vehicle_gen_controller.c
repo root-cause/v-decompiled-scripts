@@ -21840,7 +21840,7 @@ int func_250(int iParam0)//Position - 0x1B040
 	}
 	if (func_45() && !NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (func_252(33, 0) && !func_251(1751306471))
+		if (func_252(33, 0) && !func_251(joaat("TEXT_MONKEY_CAR_UNLOCK")))
 		{
 			iVar1[iVar0] = joaat("blista3");
 			iVar0++;
@@ -21957,7 +21957,7 @@ int func_254()//Position - 0x1B246
 	}
 	if (func_45() && !NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (func_252(33, 0) && !func_251(1751306471))
+		if (func_252(33, 0) && !func_251(joaat("TEXT_MONKEY_CAR_UNLOCK")))
 		{
 			iVar0++;
 		}

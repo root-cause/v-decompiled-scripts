@@ -60325,7 +60325,7 @@ void func_740()//Position - 0x4B775
 			if (!BitTest(Global_113386.f_24979.f_1, 2) && Global_113386.f_24979 != 2)
 			{
 				Global_113386.f_24979 = 2;
-				iVar1 = -527573502;
+				iVar1 = joaat("TEXT_STREET_RACE_AIRPORT");
 				bVar0 = true;
 			}
 			break;
@@ -60334,7 +60334,7 @@ void func_740()//Position - 0x4B775
 			if (!BitTest(Global_113386.f_24979.f_1, 3) && Global_113386.f_24979 != 3)
 			{
 				Global_113386.f_24979 = 3;
-				iVar1 = 277048894;
+				iVar1 = joaat("TEXT_STREET_RACE_FREEWAY");
 				bVar0 = true;
 			}
 			break;
@@ -60343,7 +60343,7 @@ void func_740()//Position - 0x4B775
 			if (!BitTest(Global_113386.f_24979.f_1, 4) && Global_113386.f_24979 != 4)
 			{
 				Global_113386.f_24979 = 4;
-				iVar1 = 477030223;
+				iVar1 = joaat("TEXT_STREET_RACE_CANALS");
 				bVar0 = true;
 			}
 			break;

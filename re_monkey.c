@@ -180,7 +180,7 @@ int func_1()//Position - 0x119
 		switch (iLocal_47)
 		{
 			case 0:
-				func_36(-899711929);
+				func_36(joaat("TEXT_MONKEY_MOSAIC_LAMAR"));
 				func_31();
 				func_5(-1, 0);
 				func_2();
@@ -1311,7 +1311,7 @@ int func_30(char[4] cParam0, char[4] cParam1, char[4] cParam2, char[4] cParam3, 
 
 void func_31()//Position - 0x152A
 {
-	func_32(1751306471, 6, func_35(), 133, 30000, 10000, -1, 0, -1, 0, 0);
+	func_32(joaat("TEXT_MONKEY_CAR_UNLOCK"), 6, func_35(), 133, 30000, 10000, -1, 0, -1, 0, 0);
 }
 
 int func_32(int iParam0, int iParam1, int iParam2, bool bParam3, int iParam4, int iParam5, int iParam6, int iParam7, int iParam8, int iParam9, int iParam10)//Position - 0x154E

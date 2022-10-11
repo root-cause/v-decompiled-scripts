@@ -905,8 +905,8 @@ void __EntryFunction__()//Position - 0x0
 									break;
 								
 								case 155:
-									func_13(1023767);
-									func_13(190444893);
+									func_13(joaat("TEXT_CAR3_F_REM"));
+									func_13(joaat("TEXT_CAR3_MT_REM"));
 									break;
 								
 								case 156:
@@ -32874,8 +32874,8 @@ void func_265()//Position - 0x245A7
 
 void func_266()//Position - 0x246EA
 {
-	func_259(466185907, 1, 2, 14, 3, 200000, 180000, -1, -1, 0, -1, 0);
-	func_259(185453884, 1, 4, 14, 3, 350000, 180000, -1, -1, 0, -1, 0);
+	func_259(joaat("CALL_FIN_MDEAD2"), 1, 2, 14, 3, 200000, 180000, -1, -1, 0, -1, 0);
+	func_259(joaat("CALL_FIN_MDEAD3"), 1, 4, 14, 3, 350000, 180000, -1, -1, 0, -1, 0);
 }
 
 void func_267()//Position - 0x2472A
@@ -33050,7 +33050,7 @@ void func_279()//Position - 0x249EB
 	{
 		if (func_257(79))
 		{
-			iVar0 = func_278(2073240496);
+			iVar0 = func_278(joaat("TEXT_FINH_PD_UNLOCK"));
 			if (iVar0 != -1)
 			{
 				iVar1 = MISC::GET_GAME_TIMER() + 25000;
@@ -33102,10 +33102,10 @@ void func_282()//Position - 0x24AB5
 	{
 		if (!func_246(88))
 		{
-			iVar0 = func_278(-270587643);
+			iVar0 = func_278(joaat("TEXT_JEWEL_P2A_UNLOCK"));
 			if (iVar0 != -1)
 			{
-				func_13(-270587643);
+				func_13(joaat("TEXT_JEWEL_P2A_UNLOCK"));
 				func_251(15, 1);
 			}
 		}
@@ -37593,11 +37593,11 @@ void func_438()//Position - 0x2A674
 
 void func_439()//Position - 0x2A6B9
 {
-	func_13(-2014002000);
-	func_13(-314546970);
-	func_13(-1306479777);
-	func_13(-1652588035);
-	func_13(-125167689);
+	func_13(joaat("CALL_FIB4_M_UNLOCK"));
+	func_13(joaat("CALL_FIB4_F_UNLOCK"));
+	func_13(joaat("CALL_FIB4_T_UNLOCK"));
+	func_13(joaat("TEXT_FIB4_M_UNLOCK"));
+	func_13(joaat("TEXT_FIB4_FT_UNLOCK"));
 	func_251(47, 1);
 }
 
@@ -40634,7 +40634,7 @@ void func_481()//Position - 0x2F327
 	func_13(joaat("TEXT_ARM2_END"));
 	func_13(joaat("TEXT_FRAN0_END"));
 	func_251(62, 1);
-	func_194(-899711929, 1, 2, 19, 800000, 20000, -1, 0, -1, 0, 1);
+	func_194(joaat("TEXT_MONKEY_MOSAIC_LAMAR"), 1, 2, 19, 800000, 20000, -1, 0, -1, 0, 1);
 }
 
 void func_482()//Position - 0x2F364
@@ -59768,7 +59768,7 @@ void func_564()//Position - 0x4E7A2
 		}
 		else
 		{
-			func_194(1139718847, 6, 4, 20, 120000, 30000, -1, 39, -1, 0, 1);
+			func_194(joaat("TEXT_COUNTRY_RACE_UNLOCK"), 6, 4, 20, 120000, 30000, -1, 39, -1, 0, 1);
 		}
 		Global_113386.f_25073.f_10 = 1;
 	}

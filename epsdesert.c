@@ -589,7 +589,7 @@ void func_1()//Position - 0xD6
 		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("EPSDES_02");
 		HUD::END_TEXT_COMMAND_THEFEED_POST_TICKER(true, true);
 		func_2(1);
-		while (!func_127(-885867010, 6, 1, 51, 6, 10000, 30000, -1, -1, 0, -1, 0))
+		while (!func_127(joaat("CALL_EPSILON_DESERT_DONE"), 6, 1, 51, 6, 10000, 30000, -1, -1, 0, -1, 0))
 		{
 			SYSTEM::WAIT(0);
 		}
