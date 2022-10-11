@@ -123177,14 +123177,14 @@ void func_846()//Position - 0x984B5
 	}
 }
 
-void func_847(var uParam0, struct<3> Param1, int iParam2, int iParam3, char[4] cParam4, char* sParam5, float fParam6)//Position - 0x98E97
+void func_847(var uParam0, struct<3> Param1, int iParam2, float fParam3, char* sParam4, char* sParam5, float fParam6)//Position - 0x98E97
 {
 	*uParam0 = 0;
 	uParam0->f_1 = 0;
 	uParam0->f_4 = { Param1 };
 	uParam0->f_3 = iParam2;
 	uParam0->f_2 = 1;
-	ENTITY::PLAY_SYNCHRONIZED_MAP_ENTITY_ANIM(Param1, 1f, iParam2, iParam3, sParam5, cParam4, fParam6, -8f, 0, 1000f);
+	ENTITY::PLAY_SYNCHRONIZED_MAP_ENTITY_ANIM(Param1, 1f, iParam2, fParam3, sParam5, sParam4, fParam6, -8f, 0, 1000f);
 }
 
 void func_848()//Position - 0x98EDC

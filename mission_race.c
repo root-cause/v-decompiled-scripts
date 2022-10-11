@@ -33395,7 +33395,7 @@ void func_586(int iParam0)//Position - 0x2F2DA
 		{
 			if (((((BitTest(Global_113386.f_24979.f_2, 0) || Local_530.f_0 == 0) && (BitTest(Global_113386.f_24979.f_2, 1) || Local_530.f_0 == 1)) && (BitTest(Global_113386.f_24979.f_2, 2) || Local_530.f_0 == 2)) && (BitTest(Global_113386.f_24979.f_2, 3) || Local_530.f_0 == 3)) && (BitTest(Global_113386.f_24979.f_2, 4) || Local_530.f_0 == 4))
 			{
-				if (func_599(-974942855, 6, 2, 53, 3, 10000, 10000, -1, -1, 0, -1, 0))
+				if (func_599(joaat("CALL_RACES_DONE"), 6, 2, 53, 3, 10000, 10000, -1, -1, 0, -1, 0))
 				{
 					Global_113386.f_24979.f_4 = 1;
 				}

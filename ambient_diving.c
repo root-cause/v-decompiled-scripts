@@ -157,7 +157,7 @@ void func_1()//Position - 0x116
 		{
 			if (!bLocal_62)
 			{
-				bLocal_62 = func_3(1303349750, 1, 1, 16, 3, 1000, 10000, 1256519626, -1, 163, -1, 0);
+				bLocal_62 = func_3(joaat("CALL_SONAR_COLLECT_DONE"), 1, 1, 16, 3, 1000, 10000, joaat("TEXT_ABIGAIL_MISSED"), -1, 163, -1, 0);
 			}
 		}
 		func_2(2);
@@ -730,7 +730,7 @@ int func_18(var uParam0, int iParam1)//Position - 0xB49
 	{
 		if (uParam0->f_1.f_4 >= uParam0->f_1.f_3)
 		{
-			bLocal_62 = func_3(1303349750, 1, 1, 16, 3, 1000, 10000, 1256519626, -1, 163, -1, 0);
+			bLocal_62 = func_3(joaat("CALL_SONAR_COLLECT_DONE"), 1, 1, 16, 3, 1000, 10000, joaat("TEXT_ABIGAIL_MISSED"), -1, 163, -1, 0);
 		}
 	}
 	if (!uParam0->f_12 && !uParam0->f_11)

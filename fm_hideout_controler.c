@@ -11010,7 +11010,7 @@ void func_245(int iParam0, bool bParam1, var uParam2, struct<3> Param3, int iPar
 		}
 		else if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("phantom2"))
 		{
-			ENTITY::SET_ENTITY_CAN_ONLY_BE_DAMAGED_BY_SCRIPT_PARTICIPANTS(iParam0, 1);
+			ENTITY::SET_ENTITY_CAN_ONLY_BE_DAMAGED_BY_SCRIPT_PARTICIPANTS(iParam0, true);
 		}
 	}
 	if (BitTest(Global_4980736.f_78578[bParam1 /*450*/].f_114, 9))

@@ -2264,7 +2264,7 @@ void func_34()//Position - 0x14C5
 		case 3:
 			if (MISC::GET_GAME_TIMER() > iLocal_1021)
 			{
-				if (func_70(1324777792, 3, 2, 53, 1000, 5000, -1, 14, -1, 0, 1))
+				if (func_70(joaat("TEXT_HAO1"), 3, 2, 53, 1000, 5000, -1, 14, -1, 0, 1))
 				{
 					func_35(1, 1, 200, 1, 1);
 					func_74();

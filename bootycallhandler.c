@@ -371,7 +371,7 @@ void func_3()//Position - 0x2C7
 		return;
 	}
 	iVar0 = func_15(Global_112380.f_1);
-	func_4(-384575792, iVar0, 7, 3, func_9(), func_67(Global_112380.f_1), 0, 10000, -1, 0, -1, 0, 1);
+	func_4(joaat("TEXT_SEXT"), iVar0, 7, 3, func_9(), func_67(Global_112380.f_1), 0, 10000, -1, 0, -1, 0, 1);
 }
 
 int func_4(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, bool bParam5, int iParam6, int iParam7, int iParam8, int iParam9, int iParam10, int iParam11, int iParam12)//Position - 0x30A
@@ -2007,7 +2007,7 @@ void func_68()//Position - 0x1CA1
 					{
 						iVar1 = func_15(Global_112380.f_1);
 						iVar2 = func_72(0);
-						func_4(-384575792, iVar1, iVar2, 3, func_9(), func_67(Global_112380.f_1), 0, 10000, -1, 0, -1, 0, 1);
+						func_4(joaat("TEXT_SEXT"), iVar1, iVar2, 3, func_9(), func_67(Global_112380.f_1), 0, 10000, -1, 0, -1, 0, 1);
 						func_69(Global_112380.f_1);
 					}
 					if (!func_50(Global_112380.f_1))

@@ -1097,7 +1097,7 @@ void func_3()//Position - 0x4E8
 			{
 				func_258(&uLocal_396, 3, 0, "BEVERLY", 0, 1);
 				func_258(&uLocal_396, 1, PLAYER::PLAYER_PED_ID(), "FRANKLIN", 0, 1);
-				func_213(707131591, 0, 2, 50, 3, 6000, 10000, -1, -1, 0, -1, 0);
+				func_213(joaat("CALL_PAP3A_DONE"), 0, 2, 50, 3, 6000, 10000, -1, -1, 0, -1, 0);
 			}
 			iLocal_322 = 0;
 			func_4();

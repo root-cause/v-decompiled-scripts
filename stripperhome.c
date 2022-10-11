@@ -3320,7 +3320,7 @@ void func_108()//Position - 0x2CCC
 				{
 					iVar3 = func_115(uLocal_74[0]);
 					iVar4 = func_114(iVar2);
-					func_109(-384575792, iVar3, iVar4, 3, func_113(), func_112(uLocal_74[0]), 60000, 10000, -1, 0, -1, 0, 1);
+					func_109(joaat("TEXT_SEXT"), iVar3, iVar4, 3, func_113(), func_112(uLocal_74[0]), 60000, 10000, -1, 0, -1, 0, 1);
 				}
 				func_39();
 			}
@@ -8206,7 +8206,7 @@ void func_263()//Position - 0x948C
 		return;
 	}
 	iVar0 = func_115(uLocal_74[0]);
-	func_109(-384575792, iVar0, 6, 3, func_113(), func_112(uLocal_74[0]), 0, 10000, -1, 0, -1, 0, 1);
+	func_109(joaat("TEXT_SEXT"), iVar0, 6, 3, func_113(), func_112(uLocal_74[0]), 0, 10000, -1, 0, -1, 0, 1);
 }
 
 int func_264()//Position - 0x94CD

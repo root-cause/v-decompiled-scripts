@@ -5521,7 +5521,7 @@ void func_152()//Position - 0x714D
 				{
 					if (func_210(4, iVar1) == 12)
 					{
-						func_196(-837794877);
+						func_196(joaat("CALL_HACKER_4"));
 					}
 					iVar1++;
 				}

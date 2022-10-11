@@ -1987,32 +1987,32 @@ int func_41(int iParam0, bool bParam1, int iParam2, int iParam3, int iParam4, in
 				return 0;
 			}
 			iVar6 = 0;
-			if (((((iParam5 == 2091854273 || iParam5 == 328868333) || iParam5 == -1813399915) || iParam5 == 465306446) || iParam5 == -816460512) || iParam5 == -702667427)
+			if (((((iParam5 == joaat("TEXT_FRIEND_GRIEF_MICHAEL") || iParam5 == joaat("TEXT_FRIEND_GRIEF_FRANKLIN")) || iParam5 == joaat("TEXT_FRIEND_GRIEF_TREVOR")) || iParam5 == joaat("TEXT_FRIEND_GRIEF_LAMAR")) || iParam5 == joaat("TEXT_FRIEND_GRIEF_JIMMY")) || iParam5 == joaat("TEXT_FRIEND_GRIEF_AMANDA"))
 			{
 				iVar6 = 262144;
 			}
 			iVar7 = -1;
-			if (iParam5 == 2091854273)
+			if (iParam5 == joaat("TEXT_FRIEND_GRIEF_MICHAEL"))
 			{
 				iVar7 = 24;
 			}
-			else if (iParam5 == 328868333)
+			else if (iParam5 == joaat("TEXT_FRIEND_GRIEF_FRANKLIN"))
 			{
 				iVar7 = 25;
 			}
-			else if (iParam5 == -1813399915)
+			else if (iParam5 == joaat("TEXT_FRIEND_GRIEF_TREVOR"))
 			{
 				iVar7 = 26;
 			}
-			else if (iParam5 == 465306446)
+			else if (iParam5 == joaat("TEXT_FRIEND_GRIEF_LAMAR"))
 			{
 				iVar7 = 27;
 			}
-			else if (iParam5 == -816460512)
+			else if (iParam5 == joaat("TEXT_FRIEND_GRIEF_JIMMY"))
 			{
 				iVar7 = 28;
 			}
-			else if (iParam5 == -702667427)
+			else if (iParam5 == joaat("TEXT_FRIEND_GRIEF_AMANDA"))
 			{
 				iVar7 = 29;
 			}
@@ -4887,27 +4887,27 @@ int func_120(int iParam0)//Position - 0x4F9C
 {
 	if (iParam0 == 0)
 	{
-		return 2091854273;
+		return joaat("TEXT_FRIEND_GRIEF_MICHAEL");
 	}
 	else if (iParam0 == 1)
 	{
-		return 328868333;
+		return joaat("TEXT_FRIEND_GRIEF_FRANKLIN");
 	}
 	else if (iParam0 == 2)
 	{
-		return -1813399915;
+		return joaat("TEXT_FRIEND_GRIEF_TREVOR");
 	}
 	else if (iParam0 == 3)
 	{
-		return 465306446;
+		return joaat("TEXT_FRIEND_GRIEF_LAMAR");
 	}
 	else if (iParam0 == 4)
 	{
-		return -816460512;
+		return joaat("TEXT_FRIEND_GRIEF_JIMMY");
 	}
 	else if (iParam0 == 5)
 	{
-		return -702667427;
+		return joaat("TEXT_FRIEND_GRIEF_AMANDA");
 	}
 	return -1;
 }

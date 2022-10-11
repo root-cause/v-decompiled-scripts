@@ -32639,12 +32639,12 @@ void func_252()//Position - 0x241FB
 {
 	int iVar0;
 	
-	iVar0 = func_253(1801771084);
+	iVar0 = func_253(joaat("CALL_PATRICIA_2"));
 	if (iVar0 != -1)
 	{
 		Global_113386.f_7688[iVar0 /*15*/].f_4 = (MISC::GET_GAME_TIMER() + 100000);
 	}
-	iVar0 = func_253(-1716308760);
+	iVar0 = func_253(joaat("CALL_PATRICIA_3"));
 	if (iVar0 != -1)
 	{
 		Global_113386.f_7688[iVar0 /*15*/].f_4 = (MISC::GET_GAME_TIMER() + 100000);
@@ -32670,7 +32670,7 @@ int func_253(int iParam0)//Position - 0x24255
 
 void func_254()//Position - 0x2428D
 {
-	func_194(341684477, 1, 7, 45, 30000, 5000, -1, 0, -1, 0, 1);
+	func_194(joaat("TEXT_CAR1_UNLOCK"), 1, 7, 45, 30000, 5000, -1, 0, -1, 0, 1);
 }
 
 void func_255()//Position - 0x242AE
@@ -32692,7 +32692,7 @@ void func_256()//Position - 0x242FD
 {
 	if (func_257(59))
 	{
-		func_194(1328556918, 0, 2, 0, 6000, 6000, -1, 142, -1, 262148, 1);
+		func_194(joaat("TEXT_CARS2_DONE"), 0, 2, 0, 6000, 6000, -1, 142, -1, 262148, 1);
 	}
 }
 
@@ -32709,7 +32709,7 @@ void func_258()//Position - 0x24356
 {
 	if (func_257(9))
 	{
-		func_259(-1074970768, 0, 1, 31, 3, 6000, 6000, -1, -1, 142, -1, 1060);
+		func_259(joaat("CALL_SOLOMON1_DONE"), 0, 1, 31, 3, 6000, 6000, -1, -1, 142, -1, 1060);
 	}
 }
 
@@ -37661,11 +37661,11 @@ void func_443()//Position - 0x2A760
 	if (!func_272(63))
 	{
 		func_13(546458037);
-		func_13(1674644829);
+		func_13(joaat("TEXT_CHOP_UNLOCK"));
 		if (!func_11(0))
 		{
 			func_410("AM_H_CHOP", 0, 3000, -1, 10000, 2, 0, 0, 0);
-			func_194(1674644829, 1, 2, 19, 10000, 10000, -1, 0, -1, 524288, 1);
+			func_194(joaat("TEXT_CHOP_UNLOCK"), 1, 2, 19, 10000, 10000, -1, 0, -1, 524288, 1);
 		}
 		func_251(63, 1);
 	}
@@ -40631,8 +40631,8 @@ void func_480()//Position - 0x2F301
 
 void func_481()//Position - 0x2F327
 {
-	func_13(-1982006572);
-	func_13(-1501908698);
+	func_13(joaat("TEXT_ARM2_END"));
+	func_13(joaat("TEXT_FRAN0_END"));
 	func_251(62, 1);
 	func_194(-899711929, 1, 2, 19, 800000, 20000, -1, 0, -1, 0, 1);
 }
@@ -59745,7 +59745,7 @@ void func_562()//Position - 0x4E6D7
 	func_410("AM_H_SWTCH5", 2, 3000, -1, 10000, 7, 0, 0, 0);
 	func_288(68);
 	func_288(96);
-	func_13(-1900821691);
+	func_13(joaat("TEXT_TENNIS_UNLOCK"));
 	func_13(-1845612607);
 }
 

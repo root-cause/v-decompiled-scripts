@@ -3216,7 +3216,7 @@ void func_136(int iParam0, int iParam1)//Position - 0x3077
 	}
 	if (func_141(iParam0, 9))
 	{
-		ENTITY::SET_ENTITY_CAN_ONLY_BE_DAMAGED_BY_SCRIPT_PARTICIPANTS(NETWORK::NET_TO_OBJ(Local_374.f_80[iParam0 /*5*/]), 1);
+		ENTITY::SET_ENTITY_CAN_ONLY_BE_DAMAGED_BY_SCRIPT_PARTICIPANTS(NETWORK::NET_TO_OBJ(Local_374.f_80[iParam0 /*5*/]), true);
 	}
 	if (func_141(iParam0, 34))
 	{

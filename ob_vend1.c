@@ -64107,7 +64107,7 @@ void func_245(bool bParam0)//Position - 0x4C944
 		}
 		if (Global_78319)
 		{
-			NETWORK::NETWORK_SET_NO_LONGER_NEEDED(iLocal_55, 0);
+			NETWORK::NETWORK_SET_NO_LONGER_NEEDED(iLocal_55, false);
 		}
 		ENTITY::SET_OBJECT_AS_NO_LONGER_NEEDED(&iLocal_55);
 	}

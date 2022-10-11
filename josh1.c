@@ -500,7 +500,7 @@ void func_1()//Position - 0x17C
 void func_2()//Position - 0x63C
 {
 	func_209(58, 2, 1);
-	while (!func_206(-1816533207, 0, 4, 58, 6000, 6000, 65, 0, -1, 17, 1))
+	while (!func_206(joaat("TEXT_JOSH_1"), 0, 4, 58, 6000, 6000, 65, 0, -1, 17, 1))
 	{
 		SYSTEM::WAIT(0);
 	}

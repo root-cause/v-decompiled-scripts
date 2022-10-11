@@ -13610,7 +13610,7 @@ int func_310(bool bParam0, int iParam1, bool bParam2, bool bParam3)//Position - 
 					}
 					if (func_82(&(Local_222.f_712[bParam0]), iParam1, Var0, fVar1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0))
 					{
-						ENTITY::SET_ENTITY_CAN_ONLY_BE_DAMAGED_BY_SCRIPT_PARTICIPANTS(NETWORK::NET_TO_PED(Local_222.f_712[bParam0]), 1);
+						ENTITY::SET_ENTITY_CAN_ONLY_BE_DAMAGED_BY_SCRIPT_PARTICIPANTS(NETWORK::NET_TO_PED(Local_222.f_712[bParam0]), true);
 						func_311(NETWORK::NET_TO_VEH(Local_222.f_712[bParam0]));
 						VEHICLE::SET_VEHICLE_TYRES_CAN_BURST(NETWORK::NET_TO_VEH(Local_222.f_712[bParam0]), false);
 						VEHICLE::SET_VEHICLE_AUTOMATICALLY_ATTACHES(NETWORK::NET_TO_VEH(Local_222.f_712[bParam0]), false, 0);

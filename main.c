@@ -136990,7 +136990,7 @@ void func_1525(bool bParam0)//Position - 0xAA961
 					if (MISC::GET_GAME_TIMER() >= Global_112096.f_33 + 5000)
 					{
 						func_1643(Global_112096.f_20, Global_112096.f_21, Global_112096.f_29, &iVar0, &iVar1);
-						if (func_1640(271682265, iVar0, iVar1, 3, func_1642(Global_113386.f_24904[Global_112096.f_20 /*4*/]), func_1641(Global_112096.f_20), 0, 10000, -1, 0, -1, 64, 0))
+						if (func_1640(joaat("TEXT_PROPERTY"), iVar0, iVar1, 3, func_1642(Global_113386.f_24904[Global_112096.f_20 /*4*/]), func_1641(Global_112096.f_20), 0, 10000, -1, 0, -1, 64, 0))
 						{
 							Global_112096.f_220 = 0;
 							func_1449(&(Global_112096.f_35), 2);
@@ -137002,7 +137002,7 @@ void func_1525(bool bParam0)//Position - 0xAA961
 					if (MISC::GET_GAME_TIMER() >= Global_112096.f_33 + 3000 && func_1639())
 					{
 						func_1638(Global_112096.f_20, Global_112096.f_21, Global_112096.f_29, &iVar2, &iVar3);
-						if (func_1640(271682265, iVar2, iVar3, 3, func_1642(Global_113386.f_24904[Global_112096.f_20 /*4*/]), func_1641(Global_112096.f_20), 0, 10000, -1, 0, -1, 64, 0))
+						if (func_1640(joaat("TEXT_PROPERTY"), iVar2, iVar3, 3, func_1642(Global_113386.f_24904[Global_112096.f_20 /*4*/]), func_1641(Global_112096.f_20), 0, 10000, -1, 0, -1, 64, 0))
 						{
 							Global_112096.f_221 = 0;
 							func_1449(&(Global_112096.f_35), 4);
@@ -137076,9 +137076,9 @@ void func_1525(bool bParam0)//Position - 0xAA961
 					iVar13 = 10000;
 					iVar14 = 3;
 					func_1610(Global_112096.f_20, Global_112096.f_21, Global_112096.f_29, &iVar15, &iVar16);
-					if (func_1640(271682265, iVar15, iVar16, iVar14, func_1613(), func_1641(Global_112096.f_20), 0, iVar13, -1, 0, -1, 64, 0))
+					if (func_1640(joaat("TEXT_PROPERTY"), iVar15, iVar16, iVar14, func_1613(), func_1641(Global_112096.f_20), 0, iVar13, -1, 0, -1, 64, 0))
 					{
-						Global_112096.f_36 = 271682265;
+						Global_112096.f_36 = joaat("TEXT_PROPERTY");
 						func_1449(&(Global_112096.f_35), 1024);
 						func_1518(&(Global_112096.f_35), 8388608);
 						bVar8 = true;
@@ -142809,7 +142809,7 @@ void func_1646(bool bParam0)//Position - 0xB1C3C
 										break;
 									
 									case 0:
-										func_1621(-577064562);
+										func_1621(joaat("CALL_PROP_TOWING"));
 										Global_112096.f_216 = iVar3;
 										func_1518(&(Global_112096.f_35), 4096);
 										break;
@@ -144513,7 +144513,7 @@ void func_1677(int iParam0)//Position - 0xB4359
 			
 			case 1:
 				bVar1 = true;
-				iVar3 = 453095043;
+				iVar3 = joaat("CALL_PROP_TAXI_F");
 				iVar5 = 3;
 				bVar4 = 113;
 				break;
@@ -144557,7 +144557,7 @@ void func_1677(int iParam0)//Position - 0xB4359
 			
 			case 7:
 				bVar1 = true;
-				iVar3 = 339632201;
+				iVar3 = joaat("CALL_PROP_CINEMA_M");
 				iVar5 = 4;
 				bVar4 = 116;
 				break;
@@ -144567,19 +144567,19 @@ void func_1677(int iParam0)//Position - 0xB4359
 				{
 					case 0:
 						bVar1 = true;
-						iVar3 = -1404384954;
+						iVar3 = joaat("CALL_PROP_GOLF_M");
 						iVar5 = 3;
 						break;
 					
 					case 2:
 						bVar1 = true;
-						iVar3 = 2025906743;
+						iVar3 = joaat("CALL_PROP_GOLF_T");
 						iVar5 = 3;
 						break;
 					
 					case 1:
 						bVar1 = true;
-						iVar3 = -112860461;
+						iVar3 = joaat("CALL_PROP_GOLF_F");
 						iVar5 = 3;
 						break;
 				}
@@ -144811,7 +144811,7 @@ void func_1679(int iParam0)//Position - 0xB4870
 				{
 					if (!ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), func_1575(0), 300f, 300f, 300f, false, false, 0))
 					{
-						if (func_1678(-577064562, 3, 2, 103, 3, 0, 10000, -1, -1, 0, -1, 0))
+						if (func_1678(joaat("CALL_PROP_TOWING"), 3, 2, 103, 3, 0, 10000, -1, -1, 0, -1, 0))
 						{
 							func_1518(&(Global_113386.f_24904.f_65), 8);
 						}
@@ -152182,7 +152182,7 @@ int func_1904()//Position - 0xBD8F9
 								{
 									if (HUD::IS_HUD_COMPONENT_ACTIVE(16))
 									{
-										if (!func_1607(1611093726) && !func_1607(742578279))
+										if (!func_1607(joaat("CALL_ARM2_UNLOCK")) && !func_1607(742578279))
 										{
 											if (!func_13(0))
 											{
@@ -152220,7 +152220,7 @@ int func_1905()//Position - 0xBD993
 						{
 							if (AUDIO::DOES_PLAYER_VEH_HAVE_RADIO())
 							{
-								if (!func_1607(1611093726) && !func_1607(742578279))
+								if (!func_1607(joaat("CALL_ARM2_UNLOCK")) && !func_1607(742578279))
 								{
 									if (!func_13(0))
 									{

@@ -99,7 +99,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			if (!bLocal_51)
 			{
-				bLocal_51 = func_11(367701416, 1, 2, 69, 5000, 10000, -1, 179, -1, 32, 1);
+				bLocal_51 = func_11(joaat("TEXT_UFOPARTS_DONE"), 1, 2, 69, 5000, 10000, -1, 179, -1, 32, 1);
 			}
 			if (bLocal_51)
 			{
@@ -512,7 +512,7 @@ int func_16(var uParam0, int iParam1)//Position - 0x86E
 		{
 			if (uParam0->f_1.f_4 >= uParam0->f_1.f_3)
 			{
-				bLocal_51 = func_11(367701416, 1, 2, 69, 5000, 10000, -1, 179, -1, 32, 1);
+				bLocal_51 = func_11(joaat("TEXT_UFOPARTS_DONE"), 1, 2, 69, 5000, 10000, -1, 179, -1, 32, 1);
 			}
 		}
 		if (!uParam0->f_12 && !uParam0->f_11)

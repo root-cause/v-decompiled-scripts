@@ -1540,7 +1540,7 @@ void func_57()//Position - 0x16A5
 		func_61("JOSH1_TXT");
 		if (func_55(105) == 0)
 		{
-			func_58(497850717, 1, 4, 58, 30000, 10000, -1, 176, -1, 0, 1);
+			func_58(joaat("TEXT_FORSALESIGNS_DONE"), 1, 4, 58, 30000, 10000, -1, 176, -1, 0, 1);
 		}
 	}
 	SCRIPT::TERMINATE_THIS_THREAD();

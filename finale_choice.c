@@ -64,17 +64,17 @@ void __EntryFunction__()//Position - 0x0
 	func_40(12);
 	Global_8141 = 1;
 	func_39();
-	if (!func_38(-1615086084))
+	if (!func_38(joaat("CALL_FIN_CHOICE_1A")))
 	{
-		func_37(-1615086084, 2, 2, 2, 1, -1, 5);
+		func_37(joaat("CALL_FIN_CHOICE_1A"), 2, 2, 2, 1, -1, 5);
 	}
-	if (!func_38(-1970925435))
+	if (!func_38(joaat("CALL_FIN_CHOICE_2A")))
 	{
-		func_37(-1970925435, 2, 0, 0, 1, -1, 5);
+		func_37(joaat("CALL_FIN_CHOICE_2A"), 2, 0, 0, 1, -1, 5);
 	}
-	if (!func_38(-1817481777))
+	if (!func_38(joaat("CALL_FIN_CHOICE_3")))
 	{
-		func_37(-1817481777, 2, 12, 3, 1, -1, 5);
+		func_37(joaat("CALL_FIN_CHOICE_3"), 2, 12, 3, 1, -1, 5);
 	}
 	bVar0 = false;
 	while (func_36(23) && !func_35(134))
@@ -120,33 +120,33 @@ void __EntryFunction__()//Position - 0x0
 							}
 							switch (func_12())
 							{
-								case -1615086084:
-									if (!func_38(-1989308064))
+								case joaat("CALL_FIN_CHOICE_1A"):
+									if (!func_38(joaat("CALL_FIN_CHOICE_1B")))
 									{
-										func_8(-1989308064, 0, 1, 0, 1, 6000, 6000, -1, 0, -1, 68);
+										func_8(joaat("CALL_FIN_CHOICE_1B"), 0, 1, 0, 1, 6000, 6000, -1, 0, -1, 68);
 									}
 									break;
 								
-								case -1989308064:
+								case joaat("CALL_FIN_CHOICE_1B"):
 									func_7(12, 0);
 									func_6(134, 1);
 									STATS::STAT_SET_INT(joaat("SP_FINAL_DECISION"), 2, true);
 									break;
 								
-								case -1970925435:
-									if (!func_38(-1060930305))
+								case joaat("CALL_FIN_CHOICE_2A"):
+									if (!func_38(joaat("CALL_FIN_CHOICE_2B")))
 									{
-										func_8(-1060930305, 0, 1, 2, 2, 6000, 6000, -1, 0, -1, 68);
+										func_8(joaat("CALL_FIN_CHOICE_2B"), 0, 1, 2, 2, 6000, 6000, -1, 0, -1, 68);
 									}
 									break;
 								
-								case -1060930305:
+								case joaat("CALL_FIN_CHOICE_2B"):
 									func_7(12, 1);
 									func_6(134, 1);
 									STATS::STAT_SET_INT(joaat("SP_FINAL_DECISION"), 1, true);
 									break;
 								
-								case -1817481777:
+								case joaat("CALL_FIN_CHOICE_3"):
 									func_7(12, 2);
 									func_6(134, 1);
 									STATS::STAT_SET_INT(joaat("SP_FINAL_DECISION"), 3, true);
@@ -1191,11 +1191,11 @@ int func_42(int iParam0)//Position - 0x1733
 
 void func_43()//Position - 0x178A
 {
-	func_44(-1615086084);
-	func_44(-1989308064);
-	func_44(-1970925435);
-	func_44(-1060930305);
-	func_44(-1817481777);
+	func_44(joaat("CALL_FIN_CHOICE_1A"));
+	func_44(joaat("CALL_FIN_CHOICE_1B"));
+	func_44(joaat("CALL_FIN_CHOICE_2A"));
+	func_44(joaat("CALL_FIN_CHOICE_2B"));
+	func_44(joaat("CALL_FIN_CHOICE_3"));
 	Global_8141 = 0;
 	PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0);
 	SCRIPT::TERMINATE_THIS_THREAD();

@@ -4316,7 +4316,7 @@ void func_175(int iParam0, int iParam1)//Position - 0x3DA5
 	}
 	if (func_161(iParam0, 9))
 	{
-		ENTITY::SET_ENTITY_CAN_ONLY_BE_DAMAGED_BY_SCRIPT_PARTICIPANTS(NETWORK::NET_TO_OBJ(Local_575.f_144[iParam0 /*5*/]), 1);
+		ENTITY::SET_ENTITY_CAN_ONLY_BE_DAMAGED_BY_SCRIPT_PARTICIPANTS(NETWORK::NET_TO_OBJ(Local_575.f_144[iParam0 /*5*/]), true);
 	}
 	if (func_161(iParam0, 34))
 	{
@@ -26136,7 +26136,7 @@ void func_664()//Position - 0x25E87
 	
 	if (func_667(&iVar0))
 	{
-		NETWORK::NETWORK_SET_NO_LONGER_NEEDED(iVar0, 0);
+		NETWORK::NETWORK_SET_NO_LONGER_NEEDED(iVar0, false);
 		func_665(0);
 	}
 }

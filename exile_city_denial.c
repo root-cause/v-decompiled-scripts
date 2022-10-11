@@ -105,7 +105,7 @@ void __EntryFunction__()//Position - 0x0
 				case 1:
 					func_25(1628462442);
 					func_25(1791324372);
-					func_25(-240877892);
+					func_25(joaat("CALL_THIRD_CREW"));
 					func_25(1806999335);
 					func_25(2054503592);
 					func_25(-2009081795);
@@ -228,7 +228,7 @@ void __EntryFunction__()//Position - 0x0
 						}
 						else if (!BitTest(Global_113386.f_7688.f_923, 2))
 						{
-							func_10(-240877892, 7, 1, 31, 3, 10000, 20000, -1, -1, 150, -1, 1024);
+							func_10(joaat("CALL_THIRD_CREW"), 7, 1, 31, 3, 10000, 20000, -1, -1, 150, -1, 1024);
 						}
 					}
 					else if (func_15(PLAYER::PLAYER_PED_ID()) == 2)
@@ -959,7 +959,7 @@ void func_20()//Position - 0xEE2
 	}
 	func_25(1628462442);
 	func_25(1791324372);
-	func_25(-240877892);
+	func_25(joaat("CALL_THIRD_CREW"));
 	func_25(1806999335);
 	func_25(2054503592);
 	func_25(-2009081795);

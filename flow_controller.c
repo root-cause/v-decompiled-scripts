@@ -40870,7 +40870,7 @@ int func_273()//Position - 0x2B433
 	iVar0 = 0;
 	while (iVar0 < Global_113386.f_7688.f_136)
 	{
-		if (Global_113386.f_7688[iVar0 /*15*/] == 2033185762)
+		if (Global_113386.f_7688[iVar0 /*15*/] == joaat("CALL_PATRICIA_1"))
 		{
 			return 0;
 		}

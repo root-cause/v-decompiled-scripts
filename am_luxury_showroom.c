@@ -44118,7 +44118,7 @@ int func_340(int iParam0, bool bParam1, int iParam2)//Position - 0x2F509
 					return 9;
 					break;
 				
-				case 324816886:
+				case joaat("CMOD_ROOF_ACC"):
 					if (((((iVar2 == joaat("youga3") || iVar2 == joaat("comet6")) || iVar2 == joaat("remus")) || iVar2 == joaat("vectre")) || iVar2 == joaat("sultan3")) || iVar2 == joaat("tailgater2"))
 					{
 						return 81;
@@ -44137,7 +44137,7 @@ int func_340(int iParam0, bool bParam1, int iParam2)//Position - 0x2F509
 					}
 					break;
 				
-				case -325145171:
+				case joaat("TOP_HOOD_ACC"):
 					if (iVar2 == joaat("weevil2"))
 					{
 						return 23;

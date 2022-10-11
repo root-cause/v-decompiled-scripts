@@ -1066,7 +1066,7 @@ void func_1(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 			if (func_794(uParam2, uParam1, uParam0, uParam5) && func_792(&(uParam0->f_6), uParam7))
 			{
 				func_791(82, 1);
-				func_777(486824538);
+				func_777(joaat("TEXT_SRANGE_UNLOCK"));
 				OBJECT::SET_STATE_OF_CLOSEST_DOOR_OF_TYPE(joaat("v_ilev_gc_door01"), uParam5->f_109, true, 0f, false);
 				uParam0->f_4 = 5;
 			}
@@ -1206,7 +1206,7 @@ void func_1(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 				CAM::SET_WIDESCREEN_BORDERS(false, 0);
 				HUD::CLEAR_FLOATING_HELP(1, true);
 				func_791(82, 1);
-				func_777(486824538);
+				func_777(joaat("TEXT_SRANGE_UNLOCK"));
 				OBJECT::SET_STATE_OF_CLOSEST_DOOR_OF_TYPE(joaat("v_ilev_gc_door01"), uParam5->f_109, true, 0f, false);
 				uParam0->f_4 = 5;
 				return;
