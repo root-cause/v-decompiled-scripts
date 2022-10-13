@@ -33003,7 +33003,7 @@ void func_277()//Position - 0x2490B
 	{
 		if (func_257(60))
 		{
-			iVar0 = func_253(-749738207);
+			iVar0 = func_253(joaat("CALL_DOCKS_2_T_UNLOCK"));
 			if (iVar0 != -1)
 			{
 				iVar1 = MISC::GET_GAME_TIMER() + 20000;
@@ -33012,7 +33012,7 @@ void func_277()//Position - 0x2490B
 					Global_113386.f_7688[iVar0 /*15*/].f_4 = iVar1;
 				}
 			}
-			iVar0 = func_278(1269300253);
+			iVar0 = func_278(joaat("TEXT_DOCKS_2_MF_UNLOCK"));
 			if (iVar0 != -1)
 			{
 				iVar1 = MISC::GET_GAME_TIMER() + 20000;
@@ -36743,8 +36743,8 @@ void func_419()//Position - 0x2954B
 			func_420(12, 1, "ASS1_MIS", 1, 0, 0, 0, 0, 0, 0, 1);
 		}
 	}
-	func_13(1323596299);
-	func_13(-1205448796);
+	func_13(joaat("TEXT_FIB4_F_ASS1"));
+	func_13(joaat("TEXT_FIB4_MT_ASS1"));
 }
 
 int func_420(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7, bool bParam8, int iParam9, int iParam10)//Position - 0x29594
@@ -37586,8 +37586,8 @@ int func_437()//Position - 0x2A50C
 
 void func_438()//Position - 0x2A674
 {
-	func_194(1323596299, 1, 2, 12, 15000, 5000, -1, 51, -1, 0, 1);
-	func_194(-1205448796, 1, 5, 1, 15000, 5000, -1, 51, -1, 0, 1);
+	func_194(joaat("TEXT_FIB4_F_ASS1"), 1, 2, 12, 15000, 5000, -1, 51, -1, 0, 1);
+	func_194(joaat("TEXT_FIB4_MT_ASS1"), 1, 5, 1, 15000, 5000, -1, 51, -1, 0, 1);
 	func_13(1635608802);
 }
 
@@ -37612,8 +37612,8 @@ void func_440()//Position - 0x2A6FA
 
 void func_441()//Position - 0x2A72B
 {
-	func_13(1269300253);
-	func_13(-749738207);
+	func_13(joaat("TEXT_DOCKS_2_MF_UNLOCK"));
+	func_13(joaat("CALL_DOCKS_2_T_UNLOCK"));
 	func_251(23, 1);
 }
 

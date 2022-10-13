@@ -10427,7 +10427,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2000000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2000000;
-			uParam1->f_5 = 15605478;
+			uParam1->f_5 = joaat("HEIST_ORDER_BONUS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -10445,7 +10445,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2E+07f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 20000000;
-			uParam1->f_5 = 1109954891;
+			uParam1->f_5 = joaat("HEIST_ULTIMATE_CHALLENGE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -11824,7 +11824,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 1000;
-			uParam1->f_5 = -2064452993;
+			uParam1->f_5 = joaat("MAX_KILLS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -11860,7 +11860,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 10000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 10000;
-			uParam1->f_5 = 1542235699;
+			uParam1->f_5 = joaat("MAX_HEADSHOTS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -11961,7 +11961,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 50;
-			uParam1->f_5 = -1471181088;
+			uParam1->f_5 = joaat("MAX_HACKS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -11970,7 +11970,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 50;
-			uParam1->f_5 = -1537238317;
+			uParam1->f_5 = joaat("MAX_WANTED_LEVEL");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -15059,7 +15059,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20f;
 			uParam1->f_2 = 2;
 			uParam1->f_3 = 20;
-			uParam1->f_5 = -2083994968;
+			uParam1->f_5 = joaat("CHALLENGE_MINIMUM_PARTICIPANTS_LAUNCH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -15340,7 +15340,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1800000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 1800000;
-			uParam1->f_5 = 886307808;
+			uParam1->f_5 = joaat("HOT_TARGET_EVENT_TIME_LIMIT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -15358,7 +15358,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20f;
 			uParam1->f_2 = 2;
 			uParam1->f_3 = 20;
-			uParam1->f_5 = 889332592;
+			uParam1->f_5 = joaat("HOT_TARGET_MINIMUM_PARTICIPANTS_LAUNCH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -15711,7 +15711,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1800000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 1800000;
-			uParam1->f_5 = 1580158853;
+			uParam1->f_5 = joaat("CHECKPOINT_EVENT_TIME_LIMIT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -15729,7 +15729,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20f;
 			uParam1->f_2 = 2;
 			uParam1->f_3 = 20;
-			uParam1->f_5 = 1388995326;
+			uParam1->f_5 = joaat("CHECKPOINT_MINIMUM_PARTICIPANTS_LAUNCH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -15765,7 +15765,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20f;
 			uParam1->f_2 = 1;
 			uParam1->f_3 = 20;
-			uParam1->f_5 = 1390734977;
+			uParam1->f_5 = joaat("TIME_TRIAL_MINIMUM_PARTICIPANTS_LAUNCH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -15810,7 +15810,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20f;
 			uParam1->f_2 = 2;
 			uParam1->f_3 = 20;
-			uParam1->f_5 = 880085553;
+			uParam1->f_5 = joaat("PENNED_IN_MINIMUM_PARTICIPANTS_LAUNCH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -15855,7 +15855,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 300000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 300000;
-			uParam1->f_5 = 1897633070;
+			uParam1->f_5 = joaat("PENNED_IN_KNOCKOUT_TIMER");
 			uParam1->f_4 = 1;
 			break;
 	}
@@ -15866,7 +15866,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1800000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 1800000;
-			uParam1->f_5 = 557283307;
+			uParam1->f_5 = joaat("PASS_THE_PARCEL_EVENT_TIME_LIMIT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -15884,7 +15884,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20f;
 			uParam1->f_2 = 2;
 			uParam1->f_3 = 20;
-			uParam1->f_5 = -1310549886;
+			uParam1->f_5 = joaat("PASS_THE_PARCEL_MINIMUM_PARTICIPANTS_LAUNCH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -15911,7 +15911,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1800000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 1800000;
-			uParam1->f_5 = -1290137458;
+			uParam1->f_5 = joaat("HOT_PROPERTY_EVENT_TIME_LIMIT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -15920,7 +15920,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20f;
 			uParam1->f_2 = 2;
 			uParam1->f_3 = 20;
-			uParam1->f_5 = 1382916859;
+			uParam1->f_5 = joaat("HOT_PROPERTY_MINIMUM_PARTICIPANTS_LAUNCH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -15929,7 +15929,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1800000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 1800000;
-			uParam1->f_5 = -1218910284;
+			uParam1->f_5 = joaat("DEAD_DROP_EVENT_TIME_LIMIT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -15947,7 +15947,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20f;
 			uParam1->f_2 = 2;
 			uParam1->f_3 = 20;
-			uParam1->f_5 = 1628079583;
+			uParam1->f_5 = joaat("DEAD_DROP_MINIMUM_PARTICIPANTS_LAUNCH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -15956,7 +15956,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1800000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 1800000;
-			uParam1->f_5 = 1916279352;
+			uParam1->f_5 = joaat("KING_OF_THE_CASTLE_EVENT_TIME_LIMIT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -15974,7 +15974,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20f;
 			uParam1->f_2 = 2;
 			uParam1->f_3 = 20;
-			uParam1->f_5 = 1128513602;
+			uParam1->f_5 = joaat("KING_OF_THE_CASTLE_MINIMUM_PARTICIPANTS_LAUNCH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -16010,7 +16010,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1800000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 1800000;
-			uParam1->f_5 = -8124520;
+			uParam1->f_5 = joaat("CRIMINAL_DAMAGE_EVENT_TIME_LIMIT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -16028,7 +16028,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20f;
 			uParam1->f_2 = 2;
 			uParam1->f_3 = 20;
-			uParam1->f_5 = 621349432;
+			uParam1->f_5 = joaat("CRIMINAL_DAMAGE_MINIMUM_PARTICIPANTS_LAUNCH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -16093,7 +16093,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3600000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 3600000;
-			uParam1->f_5 = 200947888;
+			uParam1->f_5 = joaat("HUNT_THE_BEAST_EVENT_TIME_LIMIT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -16111,7 +16111,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20f;
 			uParam1->f_2 = 2;
 			uParam1->f_3 = 20;
-			uParam1->f_5 = -1912384101;
+			uParam1->f_5 = joaat("HUNT_THE_BEAST_MINIMUM_PARTICIPANTS_LAUNCH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -16129,7 +16129,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 10000f;
 			uParam1->f_2 = 100;
 			uParam1->f_3 = 10000;
-			uParam1->f_5 = -535325223;
+			uParam1->f_5 = joaat("HUNT_THE_BEAST_BEAST_HEALTH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -16138,7 +16138,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1.15f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2;
-			uParam1->f_5 = 1757252586;
+			uParam1->f_5 = joaat("HUNT_THE_BEAST_BEAST_SPEED");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -16873,7 +16873,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 30f;
 			uParam1->f_2 = 2;
 			uParam1->f_3 = 30;
-			uParam1->f_5 = 1972582119;
+			uParam1->f_5 = joaat("PENNED_IN_MAX_PLAYERS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -17520,7 +17520,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 5000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 5000;
-			uParam1->f_5 = -139507733;
+			uParam1->f_5 = joaat("HUNT_THE_BEAST_SCALE_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -17529,7 +17529,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 2000;
-			uParam1->f_5 = 1584620117;
+			uParam1->f_5 = joaat("HUNT_THE_BEAST_SCALE_RP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -17538,7 +17538,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 50f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 50;
-			uParam1->f_5 = -1639547578;
+			uParam1->f_5 = joaat("HUNT_THE_BEAST_V_CAP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -17682,7 +17682,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 20;
-			uParam1->f_5 = 1554381493;
+			uParam1->f_5 = joaat("CHALLENGE_T_CAP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -17691,7 +17691,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 100;
-			uParam1->f_5 = -1326045406;
+			uParam1->f_5 = joaat("CHALLENGE_P_CAP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -17700,7 +17700,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 20;
-			uParam1->f_5 = 2029199907;
+			uParam1->f_5 = joaat("CRIMINAL_DAMAGE_T_CAP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -17709,7 +17709,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 100;
-			uParam1->f_5 = -476954019;
+			uParam1->f_5 = joaat("CRIMINAL_DAMAGE_P_CAP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -17718,7 +17718,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 20;
-			uParam1->f_5 = -333815755;
+			uParam1->f_5 = joaat("HOT_PROPERTY_T_CAP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -17727,7 +17727,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 100;
-			uParam1->f_5 = -408264973;
+			uParam1->f_5 = joaat("HOT_PROPERTY_P_CAP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -17745,7 +17745,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 20f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 20;
-			uParam1->f_5 = -1987740489;
+			uParam1->f_5 = joaat("KING_OF_THE_CASTLE_T_CAP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -17754,7 +17754,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 100f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 100;
-			uParam1->f_5 = 1419650767;
+			uParam1->f_5 = joaat("KING_OF_THE_CASTLE_P_CAP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18116,7 +18116,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 1;
-			uParam1->f_5 = -876619479;
+			uParam1->f_5 = joaat("CRIMINAL_DAMAGE_PERCENT_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18125,7 +18125,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 1;
-			uParam1->f_5 = 1287440918;
+			uParam1->f_5 = joaat("CRIMINAL_DAMAGE_PERCENT_RP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18134,7 +18134,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 30000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 30000;
-			uParam1->f_5 = -1068097748;
+			uParam1->f_5 = joaat("CRIMINAL_DAMAGE_BONUS_CASH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18143,7 +18143,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 5000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 5000;
-			uParam1->f_5 = 885071385;
+			uParam1->f_5 = joaat("CRIMINAL_DAMAGE_BONUS_RP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -18152,7 +18152,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 5000000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 5000000;
-			uParam1->f_5 = 992776116;
+			uParam1->f_5 = joaat("CRIMINAL_DAMAGE_S_CAP");
 			uParam1->f_4 = 1;
 			break;
 		

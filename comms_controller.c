@@ -2095,7 +2095,7 @@ void func_72(int iParam0, char* sParam1)//Position - 0x23F7
 				StringCopy(sParam1, "DOCKS1_M_FLY", 16);
 				break;
 			
-			case 1269300253:
+			case joaat("TEXT_DOCKS_2_MF_UNLOCK"):
 				StringCopy(sParam1, "DCK2_U", 16);
 				break;
 			
@@ -2155,11 +2155,11 @@ void func_72(int iParam0, char* sParam1)//Position - 0x23F7
 				StringCopy(sParam1, "FBI4_UFT", 16);
 				break;
 			
-			case 1323596299:
+			case joaat("TEXT_FIB4_F_ASS1"):
 				StringCopy(sParam1, "FBI4_ASS", 16);
 				break;
 			
-			case -1205448796:
+			case joaat("TEXT_FIB4_MT_ASS1"):
 				StringCopy(sParam1, "FBI4_MTASS", 16);
 				break;
 			
@@ -2215,7 +2215,7 @@ void func_72(int iParam0, char* sParam1)//Position - 0x23F7
 				StringCopy(sParam1, "JP1B_U", 16);
 				break;
 			
-			case 1471029448:
+			case joaat("TEXT_JEWEL_P1B_HOSTAGE_END"):
 				StringCopy(sParam1, "JP1B_HOST", 16);
 				break;
 			
@@ -2478,12 +2478,12 @@ int func_73(int iParam0)//Position - 0x2B72
 		case joaat("CALL_CARS1_UNLOCK"):
 		case -1134988206:
 		case joaat("CALL_CHIN1_UNLOCK"):
-		case -951496:
+		case joaat("CALL_DOCKS_POST_PLAN"):
 		case -1108940541:
 		case 1372476011:
 		case -452599906:
 		case 944724110:
-		case -749738207:
+		case joaat("CALL_DOCKS_2_T_UNLOCK"):
 		case joaat("CALL_EXILE_1_END"):
 		case joaat("CALL_EXILE_CALL1"):
 		case joaat("CALL_EXILE_CALL2"):
@@ -2755,7 +2755,7 @@ int func_73(int iParam0)//Position - 0x2B72
 				case joaat("TEXT_DOCKS_P2B_UNLOCK"):
 				case -549935988:
 				case 1759805585:
-				case 1269300253:
+				case joaat("TEXT_DOCKS_2_MF_UNLOCK"):
 				case joaat("TEXT_EXILE2_UNLOCK"):
 				case joaat("TEXT_EXILE2_OSCAR"):
 				case joaat("TEXT_EXILE_WADE_CHINESE"):
@@ -2770,8 +2770,8 @@ int func_73(int iParam0)//Position - 0x2B72
 				case 1266526796:
 				case joaat("TEXT_FIB4_M_UNLOCK"):
 				case joaat("TEXT_FIB4_FT_UNLOCK"):
-				case 1323596299:
-				case -1205448796:
+				case joaat("TEXT_FIB4_F_ASS1"):
+				case joaat("TEXT_FIB4_MT_ASS1"):
 				case joaat("TEXT_FINH_PA_UNLOCK"):
 				case joaat("TEXT_FINH_PB_UNLOCK"):
 				case joaat("TEXT_FINH_PD_UNLOCK"):
@@ -2785,7 +2785,7 @@ int func_73(int iParam0)//Position - 0x2B72
 				case joaat("TEXT_JEWEL_FRANK_PREP"):
 				case joaat("TEXT_JEWEL_P2A_UNLOCK"):
 				case joaat("TEXT_JEWEL_P1B_UNLOCK"):
-				case 1471029448:
+				case joaat("TEXT_JEWEL_P1B_HOSTAGE_END"):
 				case joaat("TEXT_JEWEL_2_DONE"):
 				case joaat("TEXT_JOSH_1"):
 				case -474700046:
@@ -3300,7 +3300,7 @@ void func_87(int iParam0, char* sParam1)//Position - 0x3ACA
 				StringCopy(&(sParam1->f_8), "CHFL_CALL2", 16);
 				break;
 			
-			case -951496:
+			case joaat("CALL_DOCKS_POST_PLAN"):
 				StringCopy(sParam1, "DHFAUD", 16);
 				StringCopy(&(sParam1->f_4), "DHF_C3", 16);
 				break;
@@ -3325,7 +3325,7 @@ void func_87(int iParam0, char* sParam1)//Position - 0x3ACA
 				StringCopy(&(sParam1->f_4), "DHF_WP2", 16);
 				break;
 			
-			case -749738207:
+			case joaat("CALL_DOCKS_2_T_UNLOCK"):
 				StringCopy(sParam1, "DHFAUD", 16);
 				StringCopy(&(sParam1->f_4), "DHF_C2A", 16);
 				break;
