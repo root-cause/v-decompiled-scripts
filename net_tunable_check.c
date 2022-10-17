@@ -19719,7 +19719,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 500000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 500000;
-			uParam1->f_5 = -70960120;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_CHROME_FITTINGS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19728,7 +19728,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3750000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3750000;
-			uParam1->f_5 = 1831571379;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_GOLD_FITTINGS");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19737,7 +19737,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1750000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 1750000;
-			uParam1->f_5 = 530533026;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_LIGHTS_PRESIDENTIAL_GOLD");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19746,7 +19746,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1575000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 1575000;
-			uParam1->f_5 = 1734623841;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_LIGHTS_PRESIDENTIAL_BLUE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19755,7 +19755,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1650000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 1650000;
-			uParam1->f_5 = 1717802375;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_LIGHTS_PRESIDENTIAL_ROSE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19764,7 +19764,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1500000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 1500000;
-			uParam1->f_5 = 1162246131;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_LIGHTS_PRESIDENTIAL_GREEN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19773,7 +19773,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = -1402096652;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_VIVACIOUS_GOLD");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19782,7 +19782,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2625000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 2625000;
-			uParam1->f_5 = -1669355876;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_VIVACIOUS_BLUE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19791,7 +19791,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2750000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 2750000;
-			uParam1->f_5 = -1667338230;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_VIVACIOUS_ROSE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19800,7 +19800,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2500000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 2500000;
-			uParam1->f_5 = 1360163048;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_VIVACIOUS_GREEN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19809,7 +19809,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 500000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 500000;
-			uParam1->f_5 = -386504470;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_YACHT_COLOR_PACIFIC");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19818,7 +19818,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1500000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 1500000;
-			uParam1->f_5 = -1373873834;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_YACHT_COLOR_AZURE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19827,7 +19827,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 675000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 675000;
-			uParam1->f_5 = 1484028079;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_YACHT_COLOR_NAUTICAL");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19836,7 +19836,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2250000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 2250000;
-			uParam1->f_5 = 1376975486;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_YACHT_COLOR_CONTINENTAL");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19845,7 +19845,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2375000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 2375000;
-			uParam1->f_5 = 229408028;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_YACHT_COLOR_BATTLESHIP");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19854,7 +19854,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3175000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 3175000;
-			uParam1->f_5 = -1083613953;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_YACHT_COLOR_INTREPID");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19863,7 +19863,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1575000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 1575000;
-			uParam1->f_5 = -2118994523;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_YACHT_COLOR_UNIFORM");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19872,7 +19872,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3100000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 3100000;
-			uParam1->f_5 = -2030136040;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_YACHT_COLOR_CLASSICO");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19881,7 +19881,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1825000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 1825000;
-			uParam1->f_5 = -852462379;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_YACHT_COLOR_MEDITERRANEAN");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19890,7 +19890,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2475000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 2475000;
-			uParam1->f_5 = 1443511899;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_YACHT_COLOR_COMMAND");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19899,7 +19899,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 850000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 850000;
-			uParam1->f_5 = -1026918136;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_YACHT_COLOR_MARINER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19908,7 +19908,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1700000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 1700000;
-			uParam1->f_5 = -1329392565;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_YACHT_COLOR_RUBY");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19917,7 +19917,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2125000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 2125000;
-			uParam1->f_5 = 1520256615;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_YACHT_COLOR_VINTAGE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19926,7 +19926,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1100000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 1100000;
-			uParam1->f_5 = 1027802695;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_YACHT_COLOR_PRISTINE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19935,7 +19935,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 975000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 975000;
-			uParam1->f_5 = 448700919;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_YACHT_COLOR_MERCHANT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19944,7 +19944,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3250000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 3250000;
-			uParam1->f_5 = 2126507810;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_YACHT_COLOR_VOYAGER");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -19953,7 +19953,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1250000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 1250000;
-			uParam1->f_5 = 196821080;
+			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_NAME_YACHT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20151,7 +20151,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 2000000f;
 			uParam1->f_2 = 25000;
 			uParam1->f_3 = 2000000;
-			uParam1->f_5 = 472317652;
+			uParam1->f_5 = joaat("XMAS2015_DECLASSE_TAMPA");
 			uParam1->f_4 = 1;
 			break;
 		
