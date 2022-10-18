@@ -12725,7 +12725,7 @@ int func_67(int iParam0)//Position - 0x2239B
 		iVar3 = MISC::GET_HASH_KEY(&sVar2);
 		if (NETSHOPPING::NET_GAMESERVER_CATALOG_ITEM_KEY_IS_VALID(iVar3))
 		{
-			iVar4 = NETSHOPPING::NET_GAMESERVER_GET_PRICE(iVar3, 426439576, true);
+			iVar4 = NETSHOPPING::NET_GAMESERVER_GET_PRICE(iVar3, joaat("CATEGORY_PROPERTIE"), true);
 			Var5 = { func_66(iParam0) };
 			return iVar4;
 		}

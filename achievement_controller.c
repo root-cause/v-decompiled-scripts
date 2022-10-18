@@ -836,7 +836,7 @@ bool func_21(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0x
 	var* uVar15;
 	struct<4> Var16;
 	
-	func_88(uParam0, 0, 989182658, 0, 0);
+	func_88(uParam0, 0, joaat("WAPInvalid"), 0, 0);
 	switch (iParam1)
 	{
 		case joaat("WEAPON_PISTOL"):
@@ -4172,7 +4172,7 @@ bool func_21(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0x
 	{
 		uParam0->f_2 = func_22(iParam1, *uParam0);
 	}
-	return uParam0->f_4 != 989182658;
+	return uParam0->f_4 != joaat("WAPInvalid");
 }
 
 int func_22(int iParam0, int iParam1)//Position - 0x5C63
@@ -7506,7 +7506,7 @@ int func_22(int iParam0, int iParam1)//Position - 0x5C63
 		func_62(&sVar10, Var11, ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()), 3, 1, func_65(iParam0), func_64(iParam0), -1, 0, 0);
 		if (NETSHOPPING::NET_GAMESERVER_CATALOG_ITEM_IS_VALID(&sVar10))
 		{
-			iVar0 = NETSHOPPING::NET_GAMESERVER_GET_PRICE(MISC::GET_HASH_KEY(&sVar10), 1671640801, true);
+			iVar0 = NETSHOPPING::NET_GAMESERVER_GET_PRICE(MISC::GET_HASH_KEY(&sVar10), joaat("CATEGORY_WEAPON_MOD"), true);
 		}
 	}
 	if (iVar0 > 0)

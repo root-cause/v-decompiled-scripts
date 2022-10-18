@@ -57338,7 +57338,7 @@ int func_476(int iParam0, int iParam1)//Position - 0x4654C
 		func_503(&sVar10, Var11, ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()), 3, 1, func_506(iParam0), func_505(iParam0), -1, 0, 0);
 		if (NETSHOPPING::NET_GAMESERVER_CATALOG_ITEM_IS_VALID(&sVar10))
 		{
-			iVar0 = NETSHOPPING::NET_GAMESERVER_GET_PRICE(MISC::GET_HASH_KEY(&sVar10), 1671640801, true);
+			iVar0 = NETSHOPPING::NET_GAMESERVER_GET_PRICE(MISC::GET_HASH_KEY(&sVar10), joaat("CATEGORY_WEAPON_MOD"), true);
 		}
 	}
 	if (iVar0 > 0)
@@ -61483,7 +61483,7 @@ bool func_517(int iParam0, var uParam1, var uParam2, var uParam3, int iParam4)//
 		func_503(&cVar4, Var5, ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()), 3, iVar6, iVar7, func_505(iParam0), -1, 0, bVar8);
 		if (NETSHOPPING::NET_GAMESERVER_CATALOG_ITEM_IS_VALID(&cVar4))
 		{
-			*uParam1 = NETSHOPPING::NET_GAMESERVER_GET_PRICE(MISC::GET_HASH_KEY(&cVar4), -1829708865, true);
+			*uParam1 = NETSHOPPING::NET_GAMESERVER_GET_PRICE(MISC::GET_HASH_KEY(&cVar4), joaat("CATEGORY_WEAPON"), true);
 		}
 		if (func_537(iParam0, &iVar9))
 		{
@@ -61491,7 +61491,7 @@ bool func_517(int iParam0, var uParam1, var uParam2, var uParam3, int iParam4)//
 			func_503(&cVar4, Var5, ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()), 3, 0, func_506(iParam0), func_505(iParam0), -1, 0, 0);
 			if (NETSHOPPING::NET_GAMESERVER_CATALOG_ITEM_IS_VALID(&cVar4))
 			{
-				*uParam2 = NETSHOPPING::NET_GAMESERVER_GET_PRICE(MISC::GET_HASH_KEY(&cVar4), 1067618600, true);
+				*uParam2 = NETSHOPPING::NET_GAMESERVER_GET_PRICE(MISC::GET_HASH_KEY(&cVar4), joaat("CATEGORY_WEAPON_AMMO"), true);
 				switch (iParam0)
 				{
 					case joaat("WEAPON_RPG"):
@@ -61529,7 +61529,7 @@ bool func_517(int iParam0, var uParam1, var uParam2, var uParam3, int iParam4)//
 			}
 			if (NETSHOPPING::NET_GAMESERVER_CATALOG_ITEM_IS_VALID(&cVar4))
 			{
-				*uParam2 = NETSHOPPING::NET_GAMESERVER_GET_PRICE(MISC::GET_HASH_KEY(&cVar4), 1067618600, true);
+				*uParam2 = NETSHOPPING::NET_GAMESERVER_GET_PRICE(MISC::GET_HASH_KEY(&cVar4), joaat("CATEGORY_WEAPON_AMMO"), true);
 			}
 		}
 	}
