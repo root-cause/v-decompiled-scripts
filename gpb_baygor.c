@@ -1308,7 +1308,7 @@ void func_11()//Position - 0x1576
 {
 	if (!func_15(86) && !func_14(34))
 	{
-		func_13("PBBY_ENDCHLP", -1);
+		func_13("PBBY_ENDCHLP" /* GXT: You can visit the Epsilon website at www.epsilonprogram.com on your ingame phone browser */, -1);
 		func_12(34);
 	}
 }
@@ -2448,7 +2448,7 @@ void func_72(int iParam0, bool bParam1)//Position - 0x270D
 					func_76(func_77(iParam0));
 					if (!func_14(70))
 					{
-						func_73("DI_HLP_SPCL", 2, 0, 20000, 10000, 7, 0, 210, 0);
+						func_73("DI_HLP_SPCL" /* GXT: Unique characters become available in Rockstar Editor's 'Director Mode' as you meet them around Los Santos. */, 2, 0, 20000, 10000, 7, 0, 210, 0);
 					}
 				}
 			}
@@ -2567,7 +2567,7 @@ void func_75()//Position - 0x2970
 void func_76(char* sParam0)//Position - 0x2A87
 {
 	HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("");
-	HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_SUBTITLE_LABEL("CHAR_ACTING_UP", "CHAR_ACTING_UP", false, 0, "DI_FEED_CHAR", sParam0);
+	HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_SUBTITLE_LABEL("CHAR_ACTING_UP", "CHAR_ACTING_UP", false, 0, "DI_FEED_CHAR" /* GXT: Director Mode Actor Unlock */, sParam0);
 }
 
 char* func_77(int iParam0)//Position - 0x2AAA
@@ -2575,55 +2575,55 @@ char* func_77(int iParam0)//Position - 0x2AAA
 	switch (iParam0)
 	{
 		case 0:
-			return "CM_SPEAND";
+			return "CM_SPEAND" /* GXT: Andy Moon */;
 			break;
 		
 		case 1:
-			return "CM_SPEBAY";
+			return "CM_SPEBAY" /* GXT: Baygor */;
 			break;
 		
 		case 2:
-			return "CM_SPEBIL";
+			return "CM_SPEBIL" /* GXT: Bill Binder */;
 			break;
 		
 		case 3:
-			return "CM_SPECLI";
+			return "CM_SPECLI" /* GXT: Clinton */;
 			break;
 		
 		case 4:
-			return "CM_SPEGRI";
+			return "CM_SPEGRI" /* GXT: Griff */;
 			break;
 		
 		case 5:
-			return "CM_SPEJAN";
+			return "CM_SPEJAN" /* GXT: Jane */;
 			break;
 		
 		case 6:
-			return "CM_SPEJER";
+			return "CM_SPEJER" /* GXT: Jerome */;
 			break;
 		
 		case 7:
-			return "CM_SPEJES";
+			return "CM_SPEJES" /* GXT: Jesse */;
 			break;
 		
 		case 8:
-			return "CM_SPEMAN";
+			return "CM_SPEMAN" /* GXT: Mani */;
 			break;
 		
 		case 9:
-			return "CM_SPEMIM";
+			return "CM_SPEMIM" /* GXT: Mime */;
 			break;
 		
 		case 10:
-			return "CM_SPEPAM";
+			return "CM_SPEPAM" /* GXT: Pamela Drake */;
 			break;
 		
 		case 11:
-			return "CM_SPEIMP";
+			return "CM_SPEIMP" /* GXT: Impotent Rage */;
 			break;
 		
 		case 12:
-			return "CM_SPEZOM";
+			return "CM_SPEZOM" /* GXT: Zombie */;
 			break;
 	}
 	return "ERROR!";
@@ -3089,7 +3089,7 @@ void func_108()//Position - 0x324B
 	StringCopy(&Local_203, "Base", 64);
 	bLocal_265 = !Global_3;
 	iLocal_218 = 8;
-	sLocal_226 = "PBBY_INTERACT";
+	sLocal_226 = "PBBY_INTERACT" /* GXT: Press ~INPUT_CONTEXT~ to talk to Baygor. */;
 	StringCopy(&Local_231, "PBBY_CONV_GM", 16);
 	StringCopy(&Local_232, "PBBY_CONV_GT", 16);
 	StringCopy(&Local_233, "PBBY_CONV_GF", 16);

@@ -1667,7 +1667,7 @@ void func_13(bool bParam0)//Position - 0xF91
 	if (bVar0)
 	{
 		StringCopy(&cVar1, "CHAR_LIFEINVADER", 64);
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("COUP_RED");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("COUP_RED" /* GXT: You have redeemed your promotion for ~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(func_14(bParam0));
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar1, &cVar1, true, 0, "", 0);
 	}
@@ -1678,28 +1678,28 @@ char* func_14(bool bParam0)//Position - 0x110E
 	switch (bParam0)
 	{
 		case 0:
-			return "COUP_HAIRC";
+			return "COUP_HAIRC" /* GXT: one free haircut. */;
 		
 		case 1:
-			return "COUP_TATTOO";
+			return "COUP_TATTOO" /* GXT: one free tattoo. */;
 		
 		case 2:
-			return "COUP_WARSTOCK";
+			return "COUP_WARSTOCK" /* GXT: 10% off your next purchase at Warstock-Cache-and-Carry.com. */;
 		
 		case 3:
-			return "COUP_MOSPORT";
+			return "COUP_MOSPORT" /* GXT: 10 percent off your next purchase at LegendaryMotorsport.net. */;
 		
 		case 4:
-			return "COUP_ELITAS";
+			return "COUP_ELITAS" /* GXT: 10 percent off your next purchase at ElitasTravel.com. */;
 		
 		case 5:
-			return "COUP_MEDSPENS";
+			return "COUP_MEDSPENS" /* GXT: 10 percent off your next medical expenses. */;
 		
 		case 6:
-			return "COUP_SPRUNK";
+			return "COUP_SPRUNK" /* GXT: one free can of Sprunk. */;
 		
 		case 7:
-			return "COUP_RESPRAY";
+			return "COUP_RESPRAY" /* GXT: one free respray. */;
 		
 		case 8:
 			return "COUP_XMAS2017";
@@ -1714,22 +1714,22 @@ char* func_14(bool bParam0)//Position - 0x110E
 			return "COUP_CAR2_XMAS2018";
 		
 		case 12:
-			return "COUP_CAS_ELITAS";
+			return "COUP_CAS_ELITAS" /* GXT: 10 percent off your next purchase at ElitasTravel.com. */;
 		
 		case 13:
-			return "COUP_CAS_DOCKTEASE";
+			return "COUP_CAS_DOCKTEASE" /* GXT: 10 percent off your next purchase at DockTease.com. */;
 		
 		case 14:
-			return "COUP_CAS_MOSPORT";
+			return "COUP_CAS_MOSPORT" /* GXT: 10 percent off your next purchase at LegendaryMotorsport.net. */;
 		
 		case 15:
-			return "COUP_CAS_SSASA";
+			return "COUP_CAS_SSASA" /* GXT: 10 percent off your next purchase at southernsanandreassuperautos.com. */;
 		
 		case 16:
-			return "COUP_CAS_WARSTOCK";
+			return "COUP_CAS_WARSTOCK" /* GXT: 10 percent off your next purchase at Warstock-Cache-and-Carry.com. */;
 		
 		case 17:
-			return "COUP_CAS_PANDM";
+			return "COUP_CAS_PANDM" /* GXT: 10 percent off your next purchase at pandmcycles.com. */;
 			break;
 		
 		default:
@@ -2552,407 +2552,407 @@ char* func_46()//Position - 0x1ED0
 	char cVar0[32];
 	
 	StringCopy(&cVar0, ZONE::GET_NAME_OF_ZONE(func_47(Local_43.f_0)), 32);
-	if (MISC::ARE_STRINGS_EQUAL("SanAnd", &cVar0))
+	if (MISC::ARE_STRINGS_EQUAL("SanAnd" /* GXT: San Andreas */, &cVar0))
 	{
 		return "LOCATION_SAN_ANDREAS";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Alamo", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Alamo" /* GXT: Alamo Sea */, &cVar0))
 	{
 		return "LOCATION_ALAMO_SEA";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Alta", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Alta" /* GXT: Alta */, &cVar0))
 	{
 		return "LOCATION_ALTA";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Airp", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Airp" /* GXT: Los Santos International Airport */, &cVar0))
 	{
 		return "LOCATION_LOS_SANTOS_INTERNATIONAL_AIRPORT";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("ArmyB", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("ArmyB" /* GXT: Fort Zancudo */, &cVar0))
 	{
 		return "LOCATION_FORT_ZANCUDO";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("BhamCa", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("BhamCa" /* GXT: Banham Canyon */, &cVar0))
 	{
 		return "LOCATION_BANHAM_CANYON";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Banning", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Banning" /* GXT: Banning */, &cVar0))
 	{
 		return "LOCATION_BANNING";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Baytre", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Baytre" /* GXT: Baytree Canyon */, &cVar0))
 	{
 		return "LOCATION_BAYTREE_CANYON";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Beach", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Beach" /* GXT: Vespucci Beach */, &cVar0))
 	{
 		return "LOCATION_VESPUCCI_BEACH";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("BradT", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("BradT" /* GXT: Braddock Tunnel */, &cVar0))
 	{
 		return "LOCATION_BRADDOCK_TUNNEL";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("BradP", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("BradP" /* GXT: Braddock Pass */, &cVar0))
 	{
 		return "LOCATION_BRADDOCK_PASS";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Burton", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Burton" /* GXT: Burton */, &cVar0))
 	{
 		return "LOCATION_BURTON";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("CANNY", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("CANNY" /* GXT: Raton Canyon */, &cVar0))
 	{
 		return "LOCATION_RATON_CANYON";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("CCreak", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("CCreak" /* GXT: Cassidy Creek */, &cVar0))
 	{
 		return "LOCATION_CASSIDY_CREEK";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("CalafB", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("CalafB" /* GXT: Calafia Bridge */, &cVar0))
 	{
 		return "LOCATION_CALAFIA_BRIDGE";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("ChamH", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("ChamH" /* GXT: Chamberlain Hills */, &cVar0))
 	{
 		return "LOCATION_CHAMBERLAIN_HILLS";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("CHU", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("CHU" /* GXT: Chumash */, &cVar0))
 	{
 		return "LOCATION_CHUMASH";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("CHIL", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("CHIL" /* GXT: Vinewood Hills */, &cVar0))
 	{
 		return "LOCATION_VINEWOOD_HILLS";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("COSI", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("COSI" /* GXT: Countryside */, &cVar0))
 	{
 		return "LOCATION_COUNTRYSIDE";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("CMSW", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("CMSW" /* GXT: Chiliad Mountain State Wilderness */, &cVar0))
 	{
 		return "LOCATION_CHILIAD_MOUNTAIN_STATE_WILDERNESS";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Cypre", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Cypre" /* GXT: Cypress Flats */, &cVar0))
 	{
 		return "LOCATION_CYPRESS_FLATS";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Davis", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Davis" /* GXT: Davis */, &cVar0))
 	{
 		return "LOCATION_DAVIS";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Desrt", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Desrt" /* GXT: Grand Senora Desert */, &cVar0))
 	{
 		return "LOCATION_GRAND_SENORA_DESERT";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("DelBe", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("DelBe" /* GXT: Del Perro Beach */, &cVar0))
 	{
 		return "LOCATION_DEL_PERRO_BEACH";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("DelPe", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("DelPe" /* GXT: Del Perro */, &cVar0))
 	{
 		return "LOCATION_DEL_PERRO";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("DelSol", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("DelSol" /* GXT: La Puerta */, &cVar0))
 	{
 		return "LOCATION_LA_PUERTA";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Downt", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Downt" /* GXT: Downtown */, &cVar0))
 	{
 		return "LOCATION_DOWNTOWN";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("DTVine", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("DTVine" /* GXT: Downtown Vinewood */, &cVar0))
 	{
 		return "LOCATION_DOWNTOWN_VINEWOOD";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Eclips", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Eclips" /* GXT: Eclipse */, &cVar0))
 	{
 		return "LOCATION_ECLIPSE";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("ELSant", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("ELSant" /* GXT: East Los Santos */, &cVar0))
 	{
 		return "LOCATION_EAST_LOS_SANTOS";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("EBuro", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("EBuro" /* GXT: El Burro Heights */, &cVar0))
 	{
 		return "LOCATION_EL_BURRO_HEIGHTS";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("ELGorl", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("ELGorl" /* GXT: El Gordo Lighthouse */, &cVar0))
 	{
 		return "LOCATION_EL_GORDO_LIGHTHOUSE";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Elysian", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Elysian" /* GXT: Elysian Island */, &cVar0))
 	{
 		return "LOCATION_ELYSIAN_ISLAND";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Galli", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Galli" /* GXT: Galileo Park */, &cVar0))
 	{
 		return "LOCATION_GALILEO_PARK";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Galfish", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Galfish" /* GXT: Galilee */, &cVar0))
 	{
 		return "LOCATION_GALILEE";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Greatc", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Greatc" /* GXT: Great Chaparral */, &cVar0))
 	{
 		return "LOCATION_GREAT_CHAPARRAL";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Golf", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Golf" /* GXT: GWC and Golfing Society */, &cVar0))
 	{
 		return "LOCATION_GWC_AND_GOLFING_SOCIETY";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("GrapeS", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("GrapeS" /* GXT: Grapeseed */, &cVar0))
 	{
 		return "LOCATION_GRAPESEED";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Hawick", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Hawick" /* GXT: Hawick */, &cVar0))
 	{
 		return "LOCATION_HAWICK";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Harmo", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Harmo" /* GXT: Harmony */, &cVar0))
 	{
 		return "LOCATION_HARMONY";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Heart", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Heart" /* GXT: Heart Attacks Beach */, &cVar0))
 	{
 		return "LOCATION_HEART_ATTACKS_BEACH";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("HumLab", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("HumLab" /* GXT: Humane Labs and Research */, &cVar0))
 	{
 		return "LOCATION_HUMANE_LABS_AND_RESEARCH";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("HORS", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("HORS" /* GXT: Vinewood Racetrack */, &cVar0))
 	{
 		return "LOCATION_VINEWOOD_RACETRACK";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Koreat", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Koreat" /* GXT: Little Seoul */, &cVar0))
 	{
 		return "LOCATION_LITTLE_SEOUL";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Jail", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Jail" /* GXT: Bolingbroke Penitentiary */, &cVar0))
 	{
 		return "LOCATION_BOLINGBROKE_PENITENTIARY";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("LAct", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("LAct" /* GXT: Land Act Reservoir */, &cVar0))
 	{
 		return "LOCATION_LAND_ACT_RESERVOIR";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("LDam", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("LDam" /* GXT: Land Act Dam */, &cVar0))
 	{
 		return "LOCATION_LAND_ACT_DAM";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Lago", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Lago" /* GXT: Lago Zancudo */, &cVar0))
 	{
 		return "LOCATION_LAGO_ZANCUDO";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("LegSqu", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("LegSqu" /* GXT: Legion Square */, &cVar0))
 	{
 		return "LOCATION_LEGION_SQUARE";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("LosSF", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("LosSF" /* GXT: Los Santos Freeway */, &cVar0))
 	{
 		return "LOCATION_LOS_SANTOS_FREEWAY";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("LMesa", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("LMesa" /* GXT: La Mesa */, &cVar0))
 	{
 		return "LOCATION_LA_MESA";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("LosPuer", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("LosPuer" /* GXT: La Puerta */, &cVar0))
 	{
 		return "LOCATION_LA_PUERTA";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("LosPFy", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("LosPFy" /* GXT: La Puerta Fwy */, &cVar0))
 	{
 		return "LOCATION_LA_PUERTA_FWY";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Mirr", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Mirr" /* GXT: Mirror Park */, &cVar0))
 	{
 		return "LOCATION_MIRROR_PARK";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Morn", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Morn" /* GXT: Morningwood */, &cVar0))
 	{
 		return "LOCATION_MORNINGWOOD";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Murri", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Murri" /* GXT: Murrieta Heights */, &cVar0))
 	{
 		return "LOCATION_MURRIETA_HEIGHTS";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("MTChil", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("MTChil" /* GXT: Mount Chiliad */, &cVar0))
 	{
 		return "LOCATION_MOUNT_CHILIAD";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("MTJose", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("MTJose" /* GXT: Mount Josiah */, &cVar0))
 	{
 		return "LOCATION_MOUNT_JOSIAH";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("MTGordo", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("MTGordo" /* GXT: Mount Gordo */, &cVar0))
 	{
 		return "LOCATION_MOUNT_GORDO";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Movie", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Movie" /* GXT: Richards Majestic */, &cVar0))
 	{
 		return "LOCATION_RICHARDS_MAJESTIC";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("NCHU", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("NCHU" /* GXT: North Chumash */, &cVar0))
 	{
 		return "LOCATION_NORTH_CHUMASH";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Oceana", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Oceana" /* GXT: Pacific Ocean */, &cVar0))
 	{
 		return "LOCATION_PACIFIC_OCEAN";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Observ", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Observ" /* GXT: Galileo Observatory */, &cVar0))
 	{
 		return "LOCATION_GALILEO_OBSERVATORY";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Palmpow", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Palmpow" /* GXT: Palmer-Taylor Power Station */, &cVar0))
 	{
 		return "LOCATION_PALMER-TAYLOR_POWER_STATION";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("PBOX", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("PBOX" /* GXT: Pillbox Hill */, &cVar0))
 	{
 		return "LOCATION_PILLBOX_HILL";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("PBluff", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("PBluff" /* GXT: Pacific Bluffs */, &cVar0))
 	{
 		return "LOCATION_PACIFIC_BLUFFS";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Paleto", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Paleto" /* GXT: Paleto Bay */, &cVar0))
 	{
 		return "LOCATION_PALETO_BAY";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("PalCov", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("PalCov" /* GXT: Paleto Cove */, &cVar0))
 	{
 		return "LOCATION_PALETO_COVE";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("PalFor", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("PalFor" /* GXT: Paleto Forest */, &cVar0))
 	{
 		return "LOCATION_PALETO_FOREST";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("PalHigh", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("PalHigh" /* GXT: Palomino Highlands */, &cVar0))
 	{
 		return "LOCATION_PALOMINO_HIGHLANDS";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("ProcoB", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("ProcoB" /* GXT: Procopio Beach */, &cVar0))
 	{
 		return "LOCATION_PROCOPIO_BEACH";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Prol", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Prol" /* GXT: North Yankton */, &cVar0))
 	{
 		return "LOCATION_NORTH_YANKTON";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("RTRAK", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("RTRAK" /* GXT: Redwood Lights Track */, &cVar0))
 	{
 		return "LOCATION_REDWOOD_LIGHTS_TRACK";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Rancho", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Rancho" /* GXT: Rancho */, &cVar0))
 	{
 		return "LOCATION_RANCHO";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("RGLEN", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("RGLEN" /* GXT: Richman Glen */, &cVar0))
 	{
 		return "LOCATION_RICHMAN_GLEN";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Richm", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Richm" /* GXT: Richman */, &cVar0))
 	{
 		return "LOCATION_RICHMAN";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Rockf", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Rockf" /* GXT: Rockford Hills */, &cVar0))
 	{
 		return "LOCATION_ROCKFORD_HILLS";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("SANDY", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("SANDY" /* GXT: Sandy Shores */, &cVar0))
 	{
 		return "LOCATION_SANDY_SHORES";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("TongvaH", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("TongvaH" /* GXT: Tongva Hills */, &cVar0))
 	{
 		return "LOCATION_TONGVA_HILLS";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("TongvaV", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("TongvaV" /* GXT: Tongva Valley */, &cVar0))
 	{
 		return "LOCATION_TONGVA_VALLEY";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("East_V", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("East_V" /* GXT: East Vinewood */, &cVar0))
 	{
 		return "LOCATION_EAST_VINEWOOD";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Zenora", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Zenora" /* GXT: Senora Freeway */, &cVar0))
 	{
 		return "LOCATION_SENORA_FREEWAY";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Slab", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Slab" /* GXT: Stab City */, &cVar0))
 	{
 		return "LOCATION_SLAB_CITY";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("SKID", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("SKID" /* GXT: Mission Row */, &cVar0))
 	{
 		return "LOCATION_MISSION_ROW";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("SLSant", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("SLSant" /* GXT: South Los Santos */, &cVar0))
 	{
 		return "LOCATION_SOUTH_LOS_SANTOS";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Stad", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Stad" /* GXT: Maze Bank Arena */, &cVar0))
 	{
 		return "LOCATION_MAZE_BANK_ARENA";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Tatamo", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Tatamo" /* GXT: Tataviam Mountains */, &cVar0))
 	{
 		return "LOCATION_TATAVIAM_MOUNTAINS";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Termina", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Termina" /* GXT: Terminal */, &cVar0))
 	{
 		return "LOCATION_TERMINAL";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("TEXTI", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("TEXTI" /* GXT: Textile City */, &cVar0))
 	{
 		return "LOCATION_TEXTILE_CITY";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("WVine", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("WVine" /* GXT: West Vinewood */, &cVar0))
 	{
 		return "LOCATION_WEST_VINEWOOD";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("UtopiaG", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("UtopiaG" /* GXT: Utopia Gardens */, &cVar0))
 	{
 		return "LOCATION_UTOPIA_GARDENS";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Vesp", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Vesp" /* GXT: Vespucci */, &cVar0))
 	{
 		return "LOCATION_VESPUCCI";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("VCana", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("VCana" /* GXT: Vespucci Canals */, &cVar0))
 	{
 		return "LOCATION_VESPUCCI_CANALS";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Vine", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Vine" /* GXT: Vinewood */, &cVar0))
 	{
 		return "LOCATION_VINEWOOD";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("WMirror", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("WMirror" /* GXT: West Mirror Drive */, &cVar0))
 	{
 		return "LOCATION_W_MIRROR_DRIVE";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("WindF", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("WindF" /* GXT: Ron Alternates Wind Farm */, &cVar0))
 	{
 		return "LOCATION_RON_ALTERNATES_WIND_WARM";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("Zancudo", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("Zancudo" /* GXT: Zancudo River */, &cVar0))
 	{
 		return "LOCATION_ZANCUDO_RIVER";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("SanChia", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("SanChia" /* GXT: San Chianski Mountain Range */, &cVar0))
 	{
 		return "LOCATION_SAN_CHIANSKI_MOUNTAIN_RANGE";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("STRAW", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("STRAW" /* GXT: Strawberry */, &cVar0))
 	{
 		return "LOCATION_STRAWBERRY";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("zQ_UAR", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("zQ_UAR" /* GXT: Davis Quartz */, &cVar0))
 	{
 		return "LOCATION_DAVIS_QUARTZ";
 	}
-	else if (MISC::ARE_STRINGS_EQUAL("ZP_ORT", &cVar0))
+	else if (MISC::ARE_STRINGS_EQUAL("ZP_ORT" /* GXT: Port of South Los Santos */, &cVar0))
 	{
 		return "LOCATION_PORT_OF_SOUTH_LOS_SANTOS";
 	}
@@ -3470,40 +3470,40 @@ void func_64()//Position - 0x3019
 				{
 					Local_814 = { func_78() };
 					func_76(&uLocal_113);
-					func_75(0, 75, "TXM_EXIT", &uLocal_113, 0, 363);
+					func_75(0, 75, "TXM_EXIT" /* GXT: Exit */, &uLocal_113, 0, 363);
 					if (iLocal_91 > 1)
 					{
-						func_75(2, 218, "TXM_CDES", &uLocal_113, 0, 363);
+						func_75(2, 218, "TXM_CDES" /* GXT: Change Destination */, &uLocal_113, 0, 363);
 					}
 					if (!bLocal_60)
 					{
 						if (iLocal_91 > 0)
 						{
-							func_75(2, 176, "TXM_SLCT", &uLocal_113, 0, 363);
+							func_75(2, 176, "TXM_SLCT" /* GXT: Choose Destination */, &uLocal_113, 0, 363);
 						}
 					}
 					else if (iLocal_821 == 2)
 					{
-						func_75(2, 177, "TXM_STOP", &uLocal_113, 0, 363);
+						func_75(2, 177, "TXM_STOP" /* GXT: Stop */, &uLocal_113, 0, 363);
 						if (bLocal_59)
 						{
-							func_75(2, 176, "TXM_SLCT", &uLocal_113, 0, 363);
+							func_75(2, 176, "TXM_SLCT" /* GXT: Choose Destination */, &uLocal_113, 0, 363);
 						}
 						if (func_74())
 						{
-							func_75(2, 176, "TXM_SKIP", &uLocal_113, 0, 363);
+							func_75(2, 176, "TXM_SKIP" /* GXT: Skip (Extra Cost) */, &uLocal_113, 0, 363);
 						}
 						if (!bLocal_64)
 						{
-							func_75(2, 179, "TXM_HURY", &uLocal_113, 0, 363);
+							func_75(2, 179, "TXM_HURY" /* GXT: Hurry */, &uLocal_113, 0, 363);
 						}
 					}
 					else if (iLocal_821 == 3)
 					{
-						func_75(2, 177, "TXM_STRT", &uLocal_113, 0, 363);
+						func_75(2, 177, "TXM_STRT" /* GXT: Start */, &uLocal_113, 0, 363);
 						if (bLocal_59)
 						{
-							func_75(2, 176, "TXM_SLCT", &uLocal_113, 0, 363);
+							func_75(2, 176, "TXM_SLCT" /* GXT: Choose Destination */, &uLocal_113, 0, 363);
 						}
 					}
 					iLocal_58 = 0;
@@ -3883,9 +3883,9 @@ void func_79()//Position - 0x37B3
 				}
 				HUD::CLEAR_PRINTS();
 				CAM::RENDER_SCRIPT_CAMS(false, false, 3000, true, false, 0);
-				if (HUD::IS_NAMED_RENDERTARGET_REGISTERED("taxi"))
+				if (HUD::IS_NAMED_RENDERTARGET_REGISTERED("taxi" /* GXT: Taxi */))
 				{
-					HUD::RELEASE_NAMED_RENDERTARGET("taxi");
+					HUD::RELEASE_NAMED_RENDERTARGET("taxi" /* GXT: Taxi */);
 				}
 				if (ENTITY::DOES_ENTITY_EXIST(iLocal_109))
 				{
@@ -4482,7 +4482,7 @@ void func_97(int iParam0, var uParam1)//Position - 0x42A5
 			break;
 		
 		case 5:
-			func_98(uParam1, "Barry3A", func_100(iParam0), 1, 1, 0, 1199.27f, -1255.63f, 34.23f, 381, "BARSTASH", 84, 0, "", 166, 0, 7, 4, 2, 0, 2359, func_99(iParam0), 0, 1);
+			func_98(uParam1, "Barry3A", func_100(iParam0), 1, 1, 0, 1199.27f, -1255.63f, 34.23f, 381, "BARSTASH" /* GXT: Areas where you can find vehicles with a hidden stash have been marked on the map. Collect these vehicles for Barry. */, 84, 0, "", 166, 0, 7, 4, 2, 0, 2359, func_99(iParam0), 0, 1);
 			break;
 		
 		case 6:
@@ -4494,7 +4494,7 @@ void func_97(int iParam0, var uParam1)//Position - 0x42A5
 			break;
 		
 		case 8:
-			func_98(uParam1, "Dreyfuss1", func_100(iParam0), 0, 2, 4, -1458.97f, 485.99f, 115.38f, 66, "LETTERS_HINT", 106, 0, "", 0, 0, -1, 4, 2, 0, 2359, func_99(iParam0), 0, 0);
+			func_98(uParam1, "Dreyfuss1", func_100(iParam0), 0, 2, 4, -1458.97f, 485.99f, 115.38f, 66, "LETTERS_HINT" /* GXT: The killer's identity and location have been revealed. */, 106, 0, "", 0, 0, -1, 4, 2, 0, 2359, func_99(iParam0), 0, 0);
 			break;
 		
 		case 9:
@@ -4614,7 +4614,7 @@ void func_97(int iParam0, var uParam1)//Position - 0x42A5
 			break;
 		
 		case 38:
-			func_98(uParam1, "Nigel1A", func_100(iParam0), 0, 12, 1, -558.65f, 284.49f, 90.86f, 149, "NIGITEMS", 100, 0, "", 0, 0, 42, 4, 4, 0, 2359, func_99(iParam0), 1, 1);
+			func_98(uParam1, "Nigel1A", func_100(iParam0), 0, 12, 1, -558.65f, 284.49f, 90.86f, 149, "NIGITEMS" /* GXT: Areas where you can find celebrity items have been marked on the map. Steal these items for Nigel and Mrs. Thornhill. */, 100, 0, "", 0, 0, 42, 4, 4, 0, 2359, func_99(iParam0), 1, 1);
 			break;
 		
 		case 39:
@@ -4658,7 +4658,7 @@ void func_97(int iParam0, var uParam1)//Position - 0x42A5
 			break;
 		
 		case 49:
-			func_98(uParam1, "Paparazzo3A", func_100(iParam0), 0, 14, 2, 305.52f, 157.19f, 102.94f, 389, "PAPPHOTO", 102, 0, "", 0, 0, 51, 4, 2, 0, 2359, func_99(iParam0), 0, 1);
+			func_98(uParam1, "Paparazzo3A", func_100(iParam0), 0, 14, 2, 305.52f, 157.19f, 102.94f, 389, "PAPPHOTO" /* GXT: Areas where you can find celebrity photo opportunities have been marked on the map. Track down and photograph these celebrities for Beverly. */, 102, 0, "", 0, 0, 51, 4, 2, 0, 2359, func_99(iParam0), 0, 1);
 			break;
 		
 		case 50:
@@ -4694,7 +4694,7 @@ void func_97(int iParam0, var uParam1)//Position - 0x42A5
 			break;
 		
 		case 58:
-			func_98(uParam1, "Tonya1", func_100(iParam0), 0, 17, 4, -14.39f, -1472.69f, 29.58f, 66, "AM_H_RCFS", -1, 0, "ambient_TonyaCall", 24, 1, 59, 4, 2, 0, 2359, func_99(iParam0), 0, 1);
+			func_98(uParam1, "Tonya1", func_100(iParam0), 0, 17, 4, -14.39f, -1472.69f, 29.58f, 66, "AM_H_RCFS" /* GXT: Strangers and Freaks can be found throughout San Andreas at ~HUD_COLOUR_FRANKLIN~~BLIP_RANDOM_CHARACTER~~s~ */, -1, 0, "ambient_TonyaCall", 24, 1, 59, 4, 2, 0, 2359, func_99(iParam0), 0, 1);
 			break;
 		
 		case 59:
@@ -6123,7 +6123,7 @@ int func_132(struct<3> Param0)//Position - 0x6B79
 	char* sVar0;
 	
 	sVar0 = ZONE::GET_NAME_OF_ZONE(Param0);
-	if (((((((((((((((((((((((((((((((((((((((((((((MISC::ARE_STRINGS_EQUAL("SanAnd", sVar0) || MISC::ARE_STRINGS_EQUAL("Alamo", sVar0)) || MISC::ARE_STRINGS_EQUAL("ArmyB", sVar0)) || MISC::ARE_STRINGS_EQUAL("BhamCa", sVar0)) || MISC::ARE_STRINGS_EQUAL("Baytre", sVar0)) || MISC::ARE_STRINGS_EQUAL("BradT", sVar0)) || MISC::ARE_STRINGS_EQUAL("BradP", sVar0)) || MISC::ARE_STRINGS_EQUAL("CANNY", sVar0)) || MISC::ARE_STRINGS_EQUAL("CCreak", sVar0)) || MISC::ARE_STRINGS_EQUAL("ChamH", sVar0)) || MISC::ARE_STRINGS_EQUAL("CHU", sVar0)) || MISC::ARE_STRINGS_EQUAL("COSI", sVar0)) || MISC::ARE_STRINGS_EQUAL("CMSW", sVar0)) || MISC::ARE_STRINGS_EQUAL("Cypre", sVar0)) || MISC::ARE_STRINGS_EQUAL("Desrt", sVar0)) || MISC::ARE_STRINGS_EQUAL("ELGorl", sVar0)) || MISC::ARE_STRINGS_EQUAL("Galli", sVar0)) || MISC::ARE_STRINGS_EQUAL("Galfish", sVar0)) || MISC::ARE_STRINGS_EQUAL("Harmo", sVar0)) || MISC::ARE_STRINGS_EQUAL("HumLab", sVar0)) || MISC::ARE_STRINGS_EQUAL("Jail", sVar0)) || MISC::ARE_STRINGS_EQUAL("LAct", sVar0)) || MISC::ARE_STRINGS_EQUAL("LDam", sVar0)) || MISC::ARE_STRINGS_EQUAL("Lago", sVar0)) || MISC::ARE_STRINGS_EQUAL("MTChil", sVar0)) || MISC::ARE_STRINGS_EQUAL("MTJose", sVar0)) || MISC::ARE_STRINGS_EQUAL("MTGordo", sVar0)) || MISC::ARE_STRINGS_EQUAL("NCHU", sVar0)) || MISC::ARE_STRINGS_EQUAL("Oceana", sVar0)) || MISC::ARE_STRINGS_EQUAL("Palmpow", sVar0)) || MISC::ARE_STRINGS_EQUAL("PBluff", sVar0)) || MISC::ARE_STRINGS_EQUAL("Paleto", sVar0)) || MISC::ARE_STRINGS_EQUAL("PalCov", sVar0)) || MISC::ARE_STRINGS_EQUAL("PalFor", sVar0)) || MISC::ARE_STRINGS_EQUAL("PalHigh", sVar0)) || MISC::ARE_STRINGS_EQUAL("RTRAK", sVar0)) || MISC::ARE_STRINGS_EQUAL("Rancho", sVar0)) || MISC::ARE_STRINGS_EQUAL("SANDY", sVar0)) || MISC::ARE_STRINGS_EQUAL("TongvaH", sVar0)) || MISC::ARE_STRINGS_EQUAL("TongvaV", sVar0)) || MISC::ARE_STRINGS_EQUAL("Zenora", sVar0)) || MISC::ARE_STRINGS_EQUAL("Slab", sVar0)) || MISC::ARE_STRINGS_EQUAL("WindF", sVar0)) || MISC::ARE_STRINGS_EQUAL("Zancudo", sVar0)) || MISC::ARE_STRINGS_EQUAL("SanChia", sVar0)) || MISC::ARE_STRINGS_EQUAL("zQ_UAR", sVar0))
+	if (((((((((((((((((((((((((((((((((((((((((((((MISC::ARE_STRINGS_EQUAL("SanAnd" /* GXT: San Andreas */, sVar0) || MISC::ARE_STRINGS_EQUAL("Alamo" /* GXT: Alamo Sea */, sVar0)) || MISC::ARE_STRINGS_EQUAL("ArmyB" /* GXT: Fort Zancudo */, sVar0)) || MISC::ARE_STRINGS_EQUAL("BhamCa" /* GXT: Banham Canyon */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Baytre" /* GXT: Baytree Canyon */, sVar0)) || MISC::ARE_STRINGS_EQUAL("BradT" /* GXT: Braddock Tunnel */, sVar0)) || MISC::ARE_STRINGS_EQUAL("BradP" /* GXT: Braddock Pass */, sVar0)) || MISC::ARE_STRINGS_EQUAL("CANNY" /* GXT: Raton Canyon */, sVar0)) || MISC::ARE_STRINGS_EQUAL("CCreak" /* GXT: Cassidy Creek */, sVar0)) || MISC::ARE_STRINGS_EQUAL("ChamH" /* GXT: Chamberlain Hills */, sVar0)) || MISC::ARE_STRINGS_EQUAL("CHU" /* GXT: Chumash */, sVar0)) || MISC::ARE_STRINGS_EQUAL("COSI" /* GXT: Countryside */, sVar0)) || MISC::ARE_STRINGS_EQUAL("CMSW" /* GXT: Chiliad Mountain State Wilderness */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Cypre" /* GXT: Cypress Flats */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Desrt" /* GXT: Grand Senora Desert */, sVar0)) || MISC::ARE_STRINGS_EQUAL("ELGorl" /* GXT: El Gordo Lighthouse */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Galli" /* GXT: Galileo Park */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Galfish" /* GXT: Galilee */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Harmo" /* GXT: Harmony */, sVar0)) || MISC::ARE_STRINGS_EQUAL("HumLab" /* GXT: Humane Labs and Research */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Jail" /* GXT: Bolingbroke Penitentiary */, sVar0)) || MISC::ARE_STRINGS_EQUAL("LAct" /* GXT: Land Act Reservoir */, sVar0)) || MISC::ARE_STRINGS_EQUAL("LDam" /* GXT: Land Act Dam */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Lago" /* GXT: Lago Zancudo */, sVar0)) || MISC::ARE_STRINGS_EQUAL("MTChil" /* GXT: Mount Chiliad */, sVar0)) || MISC::ARE_STRINGS_EQUAL("MTJose" /* GXT: Mount Josiah */, sVar0)) || MISC::ARE_STRINGS_EQUAL("MTGordo" /* GXT: Mount Gordo */, sVar0)) || MISC::ARE_STRINGS_EQUAL("NCHU" /* GXT: North Chumash */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Oceana" /* GXT: Pacific Ocean */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Palmpow" /* GXT: Palmer-Taylor Power Station */, sVar0)) || MISC::ARE_STRINGS_EQUAL("PBluff" /* GXT: Pacific Bluffs */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Paleto" /* GXT: Paleto Bay */, sVar0)) || MISC::ARE_STRINGS_EQUAL("PalCov" /* GXT: Paleto Cove */, sVar0)) || MISC::ARE_STRINGS_EQUAL("PalFor" /* GXT: Paleto Forest */, sVar0)) || MISC::ARE_STRINGS_EQUAL("PalHigh" /* GXT: Palomino Highlands */, sVar0)) || MISC::ARE_STRINGS_EQUAL("RTRAK" /* GXT: Redwood Lights Track */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Rancho" /* GXT: Rancho */, sVar0)) || MISC::ARE_STRINGS_EQUAL("SANDY" /* GXT: Sandy Shores */, sVar0)) || MISC::ARE_STRINGS_EQUAL("TongvaH" /* GXT: Tongva Hills */, sVar0)) || MISC::ARE_STRINGS_EQUAL("TongvaV" /* GXT: Tongva Valley */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Zenora" /* GXT: Senora Freeway */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Slab" /* GXT: Stab City */, sVar0)) || MISC::ARE_STRINGS_EQUAL("WindF" /* GXT: Ron Alternates Wind Farm */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Zancudo" /* GXT: Zancudo River */, sVar0)) || MISC::ARE_STRINGS_EQUAL("SanChia" /* GXT: San Chianski Mountain Range */, sVar0)) || MISC::ARE_STRINGS_EQUAL("zQ_UAR" /* GXT: Davis Quartz */, sVar0))
 	{
 		return 1;
 	}
@@ -9595,12 +9595,12 @@ int func_176()//Position - 0xCD19
 			iLocal_109 = OBJECT::CREATE_OBJECT(iLocal_108, ENTITY::GET_ENTITY_COORDS(Global_112417, true), true, true, false);
 			ENTITY::ATTACH_ENTITY_TO_ENTITY(iLocal_109, Global_112417, ENTITY::GET_ENTITY_BONE_INDEX_BY_NAME(Global_112417, "Chassis"), Local_837, Local_838, false, false, false, false, 2, true, 0);
 			VEHICLE::SET_TAXI_LIGHTS(Global_112417, false);
-			if (!HUD::IS_NAMED_RENDERTARGET_REGISTERED("taxi"))
+			if (!HUD::IS_NAMED_RENDERTARGET_REGISTERED("taxi" /* GXT: Taxi */))
 			{
-				HUD::REGISTER_NAMED_RENDERTARGET("taxi", false);
+				HUD::REGISTER_NAMED_RENDERTARGET("taxi" /* GXT: Taxi */, false);
 				HUD::LINK_NAMED_RENDERTARGET(ENTITY::GET_ENTITY_MODEL(iLocal_109));
 			}
-			iLocal_93 = HUD::GET_NAMED_RENDERTARGET_RENDER_ID("taxi");
+			iLocal_93 = HUD::GET_NAMED_RENDERTARGET_RENDER_ID("taxi" /* GXT: Taxi */);
 		}
 	}
 	return 0;
@@ -9898,14 +9898,14 @@ void func_187()//Position - 0xD198
 			{
 				if (Local_819[iVar0 /*3*/].f_1 != 0)
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("STRTNM1");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("STRTNM1" /* GXT: ~a~ */);
 					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL_HASH_KEY(Local_819[iVar0 /*3*/].f_1);
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				}
 			}
 			else
 			{
-				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("STRTNM2");
+				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("STRTNM2" /* GXT: ~a~ and ~a~ */);
 				HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL_HASH_KEY(Local_819[iVar0 /*3*/].f_1);
 				HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL_HASH_KEY(Local_819[iVar0 /*3*/].f_2);
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -9947,31 +9947,31 @@ char* func_188(int iParam0)//Position - 0xD406
 	switch (iParam0)
 	{
 		case 0:
-			return "SB_SAL";
+			return "SB_SAL" /* GXT: Barber Shop */;
 			break;
 		
 		case 1:
-			return "SB_BAR";
+			return "SB_BAR" /* GXT: Barber Shop */;
 			break;
 		
 		case 2:
-			return "SB_BAR";
+			return "SB_BAR" /* GXT: Barber Shop */;
 			break;
 		
 		case 3:
-			return "SB_BAR";
+			return "SB_BAR" /* GXT: Barber Shop */;
 			break;
 		
 		case 4:
-			return "SB_BAR";
+			return "SB_BAR" /* GXT: Barber Shop */;
 			break;
 		
 		case 5:
-			return "SB_BAR";
+			return "SB_BAR" /* GXT: Barber Shop */;
 			break;
 		
 		case 6:
-			return "SB_BAR";
+			return "SB_BAR" /* GXT: Barber Shop */;
 			break;
 		
 		case 7:
@@ -10035,71 +10035,71 @@ char* func_188(int iParam0)//Position - 0xD406
 			break;
 		
 		case 22:
-			return "SB_TAT";
+			return "SB_TAT" /* GXT: Tattoo Parlor */;
 			break;
 		
 		case 23:
-			return "SB_TAT";
+			return "SB_TAT" /* GXT: Tattoo Parlor */;
 			break;
 		
 		case 24:
-			return "SB_TAT";
+			return "SB_TAT" /* GXT: Tattoo Parlor */;
 			break;
 		
 		case 25:
-			return "SB_TAT";
+			return "SB_TAT" /* GXT: Tattoo Parlor */;
 			break;
 		
 		case 26:
-			return "SB_TAT";
+			return "SB_TAT" /* GXT: Tattoo Parlor */;
 			break;
 		
 		case 27:
-			return "SB_TAT";
+			return "SB_TAT" /* GXT: Tattoo Parlor */;
 			break;
 		
 		case 28:
-			return "SB_AMU2";
+			return "SB_AMU2" /* GXT: Ammu-Nation with Range */;
 			break;
 		
 		case 29:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 30:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 31:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 32:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 33:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 34:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 35:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 36:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 37:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 38:
-			return "SB_AMU2";
+			return "SB_AMU2" /* GXT: Ammu-Nation with Range */;
 			break;
 		
 		case 39:
@@ -10131,39 +10131,39 @@ char* func_188(int iParam0)//Position - 0xD406
 			break;
 		
 		case 46:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 47:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 48:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 49:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 52:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 50:
-			return "SB_BAR";
+			return "SB_BAR" /* GXT: Barber Shop */;
 			break;
 		
 		case 51:
-			return "S_CL_BL";
+			return "S_CL_BL" /* GXT: Casino Store */;
 			break;
 		
 		case 53:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 54:
-			return "SB_TAT";
+			return "SB_TAT" /* GXT: Tattoo Parlor */;
 			break;
 		
 		case 55:
@@ -10171,7 +10171,7 @@ char* func_188(int iParam0)//Position - 0xD406
 			break;
 		
 		case 56:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 57:
@@ -10186,187 +10186,187 @@ char* func_189(int iParam0, int iParam1, bool bParam2)//Position - 0xD819
 	switch (iParam0)
 	{
 		case -1:
-			return "S_N_EM";
+			return "S_N_EM" /* GXT: Empty Shop */;
 			break;
 		
 		case 0:
-			return "S_H_01";
+			return "S_H_01" /* GXT: Bob Mulét Hair & Beauty */;
 			break;
 		
 		case 1:
-			return "S_H_02";
+			return "S_H_02" /* GXT: Herr Kutz Barber */;
 			break;
 		
 		case 2:
-			return "S_H_03";
+			return "S_H_03" /* GXT: Beachcombover Barbers */;
 			break;
 		
 		case 3:
-			return "S_H_04";
+			return "S_H_04" /* GXT: O'Sheas Barbers */;
 			break;
 		
 		case 4:
-			return "S_H_05";
+			return "S_H_05" /* GXT: Herr Kutz Barber */;
 			break;
 		
 		case 5:
-			return "S_H_06";
+			return "S_H_06" /* GXT: Hair On Hawick Barbers */;
 			break;
 		
 		case 6:
-			return "S_H_07";
+			return "S_H_07" /* GXT: Herr Kutz Barber */;
 			break;
 		
 		case 7:
-			return "S_CL_01";
+			return "S_CL_01" /* GXT: Discount Store */;
 			break;
 		
 		case 8:
-			return "S_CL_02";
+			return "S_CL_02" /* GXT: Discount Store */;
 			break;
 		
 		case 9:
-			return "S_CL_03";
+			return "S_CL_03" /* GXT: Binco Clothing */;
 			break;
 		
 		case 10:
-			return "S_CL_04";
+			return "S_CL_04" /* GXT: Discount Store */;
 			break;
 		
 		case 11:
-			return "S_CL_05";
+			return "S_CL_05" /* GXT: Discount Store */;
 			break;
 		
 		case 12:
-			return "S_CL_06";
+			return "S_CL_06" /* GXT: Binco Clothing */;
 			break;
 		
 		case 13:
-			return "S_CL_07";
+			return "S_CL_07" /* GXT: Discount Store */;
 			break;
 		
 		case 14:
-			return "S_CM_01";
+			return "S_CM_01" /* GXT: Suburban */;
 			break;
 		
 		case 15:
-			return "S_CM_03";
+			return "S_CM_03" /* GXT: Suburban */;
 			break;
 		
 		case 16:
-			return "S_CM_04";
+			return "S_CM_04" /* GXT: Suburban */;
 			break;
 		
 		case 17:
-			return "S_CM_05";
+			return "S_CM_05" /* GXT: Suburban */;
 			break;
 		
 		case 18:
-			return "S_CH_01";
+			return "S_CH_01" /* GXT: Ponsonbys */;
 			break;
 		
 		case 19:
-			return "S_CH_02";
+			return "S_CH_02" /* GXT: Ponsonbys */;
 			break;
 		
 		case 20:
-			return "S_CH_03";
+			return "S_CH_03" /* GXT: Ponsonbys */;
 			break;
 		
 		case 21:
-			return "S_CA_01";
+			return "S_CA_01" /* GXT: Vespucci Movie Masks */;
 			break;
 		
 		case 22:
-			return "S_T_01";
+			return "S_T_01" /* GXT: Blazing Tattoo */;
 			break;
 		
 		case 23:
-			return "S_T_02";
+			return "S_T_02" /* GXT: Alamo Tattoo Studio */;
 			break;
 		
 		case 24:
-			return "S_T_03";
+			return "S_T_03" /* GXT: Paleto Tattoo Studio */;
 			break;
 		
 		case 25:
-			return "S_T_04";
+			return "S_T_04" /* GXT: The Pit */;
 			break;
 		
 		case 26:
-			return "S_T_05";
+			return "S_T_05" /* GXT: Los Santos Tattoos */;
 			break;
 		
 		case 27:
-			return "S_T_06";
+			return "S_T_06" /* GXT: Ink Inc Tattoos */;
 			break;
 		
 		case 28:
-			return "S_G_01";
+			return "S_G_01" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 29:
-			return "S_G_02";
+			return "S_G_02" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 30:
-			return "S_G_03";
+			return "S_G_03" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 31:
-			return "S_G_04";
+			return "S_G_04" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 32:
-			return "S_G_05";
+			return "S_G_05" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 33:
-			return "S_G_06";
+			return "S_G_06" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 34:
-			return "S_G_07";
+			return "S_G_07" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 35:
-			return "S_G_08";
+			return "S_G_08" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 36:
-			return "S_G_09";
+			return "S_G_09" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 37:
-			return "S_G_10";
+			return "S_G_10" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 38:
-			return "S_G_11";
+			return "S_G_11" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 39:
-			return "S_MO_01";
+			return "S_MO_01" /* GXT: Los Santos Customs */;
 			break;
 		
 		case 40:
-			return "S_MO_05";
+			return "S_MO_05" /* GXT: Los Santos Customs */;
 			break;
 		
 		case 41:
-			return "S_MO_06";
+			return "S_MO_06" /* GXT: Los Santos Customs */;
 			break;
 		
 		case 42:
-			return "S_MO_07";
+			return "S_MO_07" /* GXT: Beeker's Garage */;
 			break;
 		
 		case 43:
-			return "S_MO_08";
+			return "S_MO_08" /* GXT: Los Santos Customs */;
 			break;
 		
 		case 44:
-			return "S_MO_09";
+			return "S_MO_09" /* GXT: Benny's Original Motor Works */;
 			break;
 		
 		case 45:
@@ -10379,7 +10379,7 @@ char* func_189(int iParam0, int iParam1, bool bParam2)//Position - 0xD819
 					}
 					else
 					{
-						return "S_MO_10";
+						return "S_MO_10" /* GXT: Custom Mod Shop */;
 					}
 					break;
 				
@@ -10390,7 +10390,7 @@ char* func_189(int iParam0, int iParam1, bool bParam2)//Position - 0xD819
 					}
 					else
 					{
-						return "S_MO_10";
+						return "S_MO_10" /* GXT: Custom Mod Shop */;
 					}
 					break;
 				
@@ -10401,7 +10401,7 @@ char* func_189(int iParam0, int iParam1, bool bParam2)//Position - 0xD819
 					}
 					else
 					{
-						return "S_MO_B";
+						return "S_MO_B" /* GXT: Bunker Vehicle Workshop */;
 					}
 					break;
 				
@@ -10412,7 +10412,7 @@ char* func_189(int iParam0, int iParam1, bool bParam2)//Position - 0xD819
 					}
 					else
 					{
-						return "S_MO_T";
+						return "S_MO_T" /* GXT: Weapon & Vehicle Workshop */;
 					}
 					break;
 				
@@ -10423,7 +10423,7 @@ char* func_189(int iParam0, int iParam1, bool bParam2)//Position - 0xD819
 					}
 					else
 					{
-						return "S_MO_HA";
+						return "S_MO_HA" /* GXT: Hangar Aircraft Workshop */;
 					}
 					break;
 				
@@ -10434,7 +10434,7 @@ char* func_189(int iParam0, int iParam1, bool bParam2)//Position - 0xD819
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -10445,7 +10445,7 @@ char* func_189(int iParam0, int iParam1, bool bParam2)//Position - 0xD819
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -10456,7 +10456,7 @@ char* func_189(int iParam0, int iParam1, bool bParam2)//Position - 0xD819
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -10467,7 +10467,7 @@ char* func_189(int iParam0, int iParam1, bool bParam2)//Position - 0xD819
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -10478,7 +10478,7 @@ char* func_189(int iParam0, int iParam1, bool bParam2)//Position - 0xD819
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -10489,7 +10489,7 @@ char* func_189(int iParam0, int iParam1, bool bParam2)//Position - 0xD819
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -10500,7 +10500,7 @@ char* func_189(int iParam0, int iParam1, bool bParam2)//Position - 0xD819
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -10511,59 +10511,59 @@ char* func_189(int iParam0, int iParam1, bool bParam2)//Position - 0xD819
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 			}
-			return "S_MO_11";
+			return "S_MO_11" /* GXT: Custom Auto Shop */;
 			break;
 		
 		case 46:
-			return "S_G_12";
+			return "S_G_12" /* GXT: MOC Armory */;
 			break;
 		
 		case 47:
-			return "S_G_13";
+			return "S_G_13" /* GXT: Avenger Armory */;
 			break;
 		
 		case 48:
-			return "S_G_14";
+			return "S_G_14" /* GXT: Terrorbyte Armory */;
 			break;
 		
 		case 49:
-			return "S_G_15";
+			return "S_G_15" /* GXT: Arena Armory */;
 			break;
 		
 		case 52:
-			return "S_G_16";
+			return "S_G_16" /* GXT: Arcade Armory */;
 			break;
 		
 		case 53:
-			return "S_G_17";
+			return "S_G_17" /* GXT: Kosatka Armory */;
 			break;
 		
 		case 50:
-			return "S_H_08";
+			return "S_H_08" /* GXT: Penthouse Barber */;
 			break;
 		
 		case 51:
-			return "S_CL_09";
+			return "S_CL_09" /* GXT: Casino Store */;
 			break;
 		
 		case 54:
-			return "S_T_07";
+			return "S_T_07" /* GXT: LS Car Meet Tattoos */;
 			break;
 		
 		case 55:
-			return "S_CL_10";
+			return "S_CL_10" /* GXT: Merch Shop */;
 			break;
 		
 		case 56:
-			return "S_G_18";
+			return "S_G_18" /* GXT: Fixer Armory */;
 			break;
 		
 		case 57:
-			return "S_CL_11";
+			return "S_CL_11" /* GXT: Record A Studios */;
 			break;
 	}
 	return "SHOP_NAME_EMPTY";
@@ -12554,9 +12554,9 @@ int func_236()//Position - 0x1006E
 void func_237(bool bParam0)//Position - 0x1007B
 {
 	CAM::SET_CINEMATIC_BUTTON_ACTIVE(true);
-	if (HUD::IS_NAMED_RENDERTARGET_REGISTERED("taxi"))
+	if (HUD::IS_NAMED_RENDERTARGET_REGISTERED("taxi" /* GXT: Taxi */))
 	{
-		HUD::RELEASE_NAMED_RENDERTARGET("taxi");
+		HUD::RELEASE_NAMED_RENDERTARGET("taxi" /* GXT: Taxi */);
 	}
 	if (CAM::DOES_CAM_EXIST(iLocal_68))
 	{

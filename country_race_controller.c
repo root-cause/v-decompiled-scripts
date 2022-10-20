@@ -1248,7 +1248,7 @@ int func_38()//Position - 0xF73
 			iVar2[86] = joaat("rumpo2");
 			iVar2[87] = joaat("taxi");
 			iVar2[88] = MISC::GET_HASH_KEY("RATLOADER2");
-			iVar2[89] = MISC::GET_HASH_KEY("SLAMVAN");
+			iVar2[89] = MISC::GET_HASH_KEY("SLAMVAN" /* GXT: Slamvan */);
 			iVar2[90] = 0;
 			iVar1 = 0;
 			while (iVar1 < iVar2)

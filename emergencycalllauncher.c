@@ -369,7 +369,7 @@ void func_7()//Position - 0x191
 				{
 					if (func_31())
 					{
-						if (func_8(&uLocal_45, 130, "LOCAUD", "LOC_CALLQ", iLocal_217, "CELL_601", "LOC_CALLA", "LOC_CALLF", "LOC_CALLP", 0, 0, 0, 0))
+						if (func_8(&uLocal_45, 130, "LOCAUD", "LOC_CALLQ", iLocal_217, "CELL_601" /* GXT: Which Service? */, "LOC_CALLA", "LOC_CALLF", "LOC_CALLP", 0, 0, 0, 0))
 						{
 							if (!func_6())
 							{
@@ -383,7 +383,7 @@ void func_7()//Position - 0x191
 							iLocal_44 = 1;
 						}
 					}
-					else if (func_8(&uLocal_45, 130, "LOCAUD", "LOC_CALLQ", iLocal_217, "CELL_601", "LOC_CALLA", "LOC_CALLF", "LOC_CALLP", 0, 0, 0, 0))
+					else if (func_8(&uLocal_45, 130, "LOCAUD", "LOC_CALLQ", iLocal_217, "CELL_601" /* GXT: Which Service? */, "LOC_CALLA", "LOC_CALLF", "LOC_CALLP", 0, 0, 0, 0))
 					{
 						if (!func_6())
 						{

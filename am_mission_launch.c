@@ -2245,7 +2245,7 @@ void func_63()//Position - 0x20E8
 				}
 				if (!BitTest(uLocal_91, 10))
 				{
-					HUD::SET_BLIP_NAME_FROM_TEXT_FILE(Local_103.f_0, "FM_GDM_BLP");
+					HUD::SET_BLIP_NAME_FROM_TEXT_FILE(Local_103.f_0, "FM_GDM_BLP" /* GXT: Target */);
 					MISC::SET_BIT(&uLocal_91, 10);
 				}
 			}
@@ -2261,7 +2261,7 @@ void func_63()//Position - 0x20E8
 				}
 				if (!BitTest(uLocal_91, 12))
 				{
-					HUD::SET_BLIP_NAME_FROM_TEXT_FILE(Local_103.f_1, "FM_GDM_BLP");
+					HUD::SET_BLIP_NAME_FROM_TEXT_FILE(Local_103.f_1, "FM_GDM_BLP" /* GXT: Target */);
 					MISC::SET_BIT(&uLocal_91, 12);
 				}
 			}
@@ -2273,7 +2273,7 @@ void func_63()//Position - 0x20E8
 					{
 						if (!func_197())
 						{
-							func_186("FM_GDM_KIL", 0);
+							func_186("FM_GDM_KIL" /* GXT: Take out the ~r~target. */, 0);
 						}
 						MISC::SET_BIT(&uLocal_91, 6);
 					}
@@ -2313,7 +2313,7 @@ void func_63()//Position - 0x20E8
 				}
 				iVar3 = iVar2 * 20;
 				iVar3 = SYSTEM::ROUND((Global_262145.f_4238 * IntToFloat(iVar3)));
-				func_138(2, "XPT_KAIE", joaat("XPTYPE_ACTION"), joaat("XPCATEGORY_ACTION_KILLS"), iVar3, 1, -1, 0);
+				func_138(2, "XPT_KAIE" /* GXT: ~g~+~1~ ~a~:~s~ Killed Hostile */, joaat("XPTYPE_ACTION"), joaat("XPCATEGORY_ACTION_KILLS"), iVar3, 1, -1, 0);
 				if (Global_262145.f_2432 != 0f)
 				{
 					iVar4 = SYSTEM::ROUND(Global_262145.f_2432);
@@ -3082,7 +3082,7 @@ void func_79(int iParam0, int iParam1)//Position - 0x327A
 						func_127(&iVar0, 0);
 						if (iParam1 == 1)
 						{
-							func_84("GB_BCUT_TICK1", func_130(), iVar0, 0, 0, 1);
+							func_84("GB_BCUT_TICK1" /* GXT: You paid ~a~ ~s~a $~1~ ~s~cut. */, func_130(), iVar0, 0, 0, 1);
 						}
 						func_83(20);
 						func_80(func_130(), iVar0, 1);
@@ -6557,7 +6557,7 @@ void func_204(int iParam0)//Position - 0x6D79
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(42);
 								GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							}
-							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB")) && BitTest(Global_8137, 6))
+							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB" /* GXT: Benny's */)) && BitTest(Global_8137, 6))
 							{
 								GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT");
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
@@ -7400,7 +7400,7 @@ int func_239(var uParam0, int iParam1, int iParam2, char* sParam3, char* sParam4
 	}
 	if (iParam5 == 4)
 	{
-		StringCopy(&Var0, "CELL_226", 16);
+		StringCopy(&Var0, "CELL_226" /* GXT: Accept? */, 16);
 		return func_308(uParam0, iParam1, sParam3, sParam4, &Var0);
 	}
 	if (iParam5 == 1 || iParam5 == 7)
@@ -9957,12 +9957,12 @@ void func_335()//Position - 0xAB5F
 	{
 		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("");
 		StringCopy(&cVar1, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_8746[1 /*6*/])), 64);
-		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253");
+		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253" /* GXT: New Contact */);
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, sVar2, &cVar1);
 	}
 	else
 	{
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_255");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_255" /* GXT: New Contact: ~n~~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_8746[1 /*6*/]));
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, "", 0);
 	}
@@ -10290,7 +10290,7 @@ void func_359()//Position - 0xB094
 			{
 				if (func_382(Local_83.f_8, 0, 1))
 				{
-					func_360("FM_TGDM_KIL", Local_83.f_8, 0, 0, 0, 1, 0);
+					func_360("FM_TGDM_KIL" /* GXT: ~a~ ~s~killed the target. */, Local_83.f_8, 0, 0, 0, 1, 0);
 				}
 				MISC::SET_BIT(&uLocal_91, 3);
 			}

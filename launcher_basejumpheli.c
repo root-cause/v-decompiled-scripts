@@ -320,7 +320,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_61 = 2050;
 	iLocal_62 = -1;
 	iLocal_63 = -1;
-	sLocal_65 = "CC_SUBSTR";
+	sLocal_65 = "CC_SUBSTR" /* GXT: ~INPUT_CONTEXT~ */;
 	fLocal_66 = 125f;
 	iLocal_67 = 1;
 	iLocal_69 = 263;
@@ -966,7 +966,7 @@ void func_8()//Position - 0xB39
 	}
 	else if (MISC::IS_PS3_VERSION() || func_9())
 	{
-		StringCopy(&cVar0, "PRESENCE_0_STR", 24);
+		StringCopy(&cVar0, "PRESENCE_0_STR" /* GXT: Playing story */, 24);
 		NETWORK::NETWORK_SET_RICH_PRESENCE_STRING(0, &cVar0);
 	}
 }
@@ -3759,7 +3759,7 @@ void func_53()//Position - 0x57F3
 			ENTITY::SET_VEHICLE_AS_NO_LONGER_NEEDED(&Local_247);
 			Local_247.f_0 = 0;
 		}
-		if (func_1("PLAY_BASEJUMP_S"))
+		if (func_1("PLAY_BASEJUMP_S" /* GXT: Approach the helicopter and press ~INPUT_ENTER~ to start parachuting. */))
 		{
 			HUD::CLEAR_HELP(true);
 		}
@@ -3857,7 +3857,7 @@ void func_53()//Position - 0x57F3
 			bVar8 = true;
 			if (iLocal_250)
 			{
-				if (func_1("PLAY_BASEJUMP_B") || func_1("PLAY_BASEJUMP_S"))
+				if (func_1("PLAY_BASEJUMP_B" /* GXT: Approach the helicopter and press ~INPUT_ENTER~ to start parachuting. */) || func_1("PLAY_BASEJUMP_S" /* GXT: Approach the helicopter and press ~INPUT_ENTER~ to start parachuting. */))
 				{
 					HUD::CLEAR_HELP(true);
 				}
@@ -3903,7 +3903,7 @@ void func_53()//Position - 0x57F3
 							{
 								ENTITY::SET_VEHICLE_AS_NO_LONGER_NEEDED(&Local_247);
 							}
-							if (func_1("PLAY_BASEJUMP_S"))
+							if (func_1("PLAY_BASEJUMP_S" /* GXT: Approach the helicopter and press ~INPUT_ENTER~ to start parachuting. */))
 							{
 								HUD::CLEAR_HELP(true);
 							}
@@ -3961,25 +3961,25 @@ void func_53()//Position - 0x57F3
 	{
 		if ((VEHICLE::IS_VEHICLE_DRIVEABLE(Local_247.f_0, false) && SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), ENTITY::GET_ENTITY_COORDS(Local_247.f_0, true)) < 225f) && !PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true))
 		{
-			if ((!iLocal_250 || (iLocal_81 == 3 && !func_1("PLAY_BASEJUMP_B"))) || (iLocal_81 != 3 && !func_1("PLAY_BASEJUMP_S")))
+			if ((!iLocal_250 || (iLocal_81 == 3 && !func_1("PLAY_BASEJUMP_B" /* GXT: Approach the helicopter and press ~INPUT_ENTER~ to start parachuting. */))) || (iLocal_81 != 3 && !func_1("PLAY_BASEJUMP_S" /* GXT: Approach the helicopter and press ~INPUT_ENTER~ to start parachuting. */)))
 			{
 				if (iLocal_81 == 3)
 				{
 					if (!Global_75485)
 					{
-						func_54("PLAY_BASEJUMP_B");
+						func_54("PLAY_BASEJUMP_B" /* GXT: Approach the helicopter and press ~INPUT_ENTER~ to start parachuting. */);
 					}
 				}
 				else if (!Global_75485)
 				{
-					func_54("PLAY_BASEJUMP_S");
+					func_54("PLAY_BASEJUMP_S" /* GXT: Approach the helicopter and press ~INPUT_ENTER~ to start parachuting. */);
 				}
 				iLocal_250 = 1;
 			}
 		}
 		else if (iLocal_250)
 		{
-			if (func_1("PLAY_BASEJUMP_B") || func_1("PLAY_BASEJUMP_S"))
+			if (func_1("PLAY_BASEJUMP_B" /* GXT: Approach the helicopter and press ~INPUT_ENTER~ to start parachuting. */) || func_1("PLAY_BASEJUMP_S" /* GXT: Approach the helicopter and press ~INPUT_ENTER~ to start parachuting. */))
 			{
 				HUD::CLEAR_HELP(true);
 			}

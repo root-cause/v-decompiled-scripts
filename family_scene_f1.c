@@ -1536,7 +1536,7 @@ void func_36(var uParam0, int* iParam1, var uParam2, var uParam3, struct<3> Para
 			{
 				if (!Global_113386.f_18514.f_17)
 				{
-					func_37("FAM_WEAPDIS", -1);
+					func_37("FAM_WEAPDIS" /* GXT: A weapon cannot be equipped when in a safehouse. */, -1);
 					Global_113386.f_18514.f_17 = 1;
 				}
 				*uParam2 = INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID());

@@ -145,8 +145,8 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_71 = 7;
 	sLocal_74 = "missmurder";
 	sLocal_75 = "idle";
-	sLocal_76 = "MM_LETREAD";
-	sLocal_77 = "MM_LETCANC";
+	sLocal_76 = "MM_LETREAD" /* GXT: Press ~INPUT_SCRIPT_PAD_RIGHT~ to read the letter. */;
+	sLocal_77 = "MM_LETCANC" /* GXT: Press ~INPUT_SCRIPT_PAD_RIGHT~ to stop reading. */;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(83))
 	{
 		func_90();
@@ -259,7 +259,7 @@ void func_1()//Position - 0x15D
 						{
 							func_3();
 						}
-						func_2("MM_TOGGLE", 10);
+						func_2("MM_TOGGLE" /* GXT: Press ~INPUT_CONTEXT~ to cycle Vintage filters. */, 10);
 					}
 				}
 			}
@@ -267,7 +267,7 @@ void func_1()//Position - 0x15D
 			{
 				if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -594.9976f, 2089.005f, 130.3449f, -597.1125f, 2088.365f, 133.3035f, 1f, false, true, 0))
 				{
-					func_2("MM_HELP", 10000);
+					func_2("MM_HELP" /* GXT: Return to Isaac's corpse or call him on your cellphone to cycle Vintage filters. */, 10000);
 					func_33(1, 0);
 				}
 			}
@@ -441,12 +441,12 @@ void func_8()//Position - 0x6D7
 	{
 		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("");
 		StringCopy(&cVar1, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_8746[1 /*6*/])), 64);
-		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253");
+		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253" /* GXT: New Contact */);
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, sVar2, &cVar1);
 	}
 	else
 	{
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_255");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_255" /* GXT: New Contact: ~n~~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_8746[1 /*6*/]));
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, "", 0);
 	}
@@ -3143,7 +3143,7 @@ void func_45(int iParam0, bool bParam1)//Position - 0x4CEB
 	sVar0 = "NULL";
 	iVar1 = 0;
 	sVar0 = func_39(iParam0, &iVar1);
-	if (!MISC::ARE_STRINGS_EQUAL("NONE", sVar0) && iVar1 != 0)
+	if (!MISC::ARE_STRINGS_EQUAL("NONE" /* GXT: None */, sVar0) && iVar1 != 0)
 	{
 		if (bParam1)
 		{
@@ -3468,7 +3468,7 @@ int func_62()//Position - 0x521F
 	{
 		return 1;
 	}
-	func_2("MM_SOLBUSY", 5000);
+	func_2("MM_SOLBUSY" /* GXT: Solomon's office is busy. Come back later. */, 5000);
 	return 0;
 }
 

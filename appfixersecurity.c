@@ -599,7 +599,7 @@ void func_24()//Position - 0x73A
 		if (!func_30())
 		{
 			MISC::CLEAR_BIT(&uLocal_129, 14);
-			if (func_29("FXR_NX_SEC_WAIT"))
+			if (func_29("FXR_NX_SEC_WAIT" /* GXT: There is a short delay before you can accept another Security Contract. */))
 			{
 				HUD::CLEAR_HELP(true);
 			}
@@ -613,7 +613,7 @@ void func_24()//Position - 0x73A
 
 void func_25(bool bParam0)//Position - 0x776
 {
-	func_26("FIX_APP_ACC_CON", bParam0);
+	func_26("FIX_APP_ACC_CON" /* GXT: ACCEPT CONTRACT */, bParam0);
 }
 
 void func_26(char* sParam0, bool bParam1)//Position - 0x787
@@ -665,7 +665,7 @@ void func_31()//Position - 0x7E9
 						case 215:
 							func_67(0);
 							func_60(iVar0);
-							func_26("FAPP_ACCEPT", 1);
+							func_26("FAPP_ACCEPT" /* GXT: START */, 1);
 							break;
 						
 						case 205:
@@ -717,20 +717,20 @@ void func_32(int iParam0)//Position - 0x886
 		func_47(1);
 		if (func_51(iVar1, 0))
 		{
-			func_26("FIX_APP_MIS_COM", 0);
+			func_26("FIX_APP_MIS_COM" /* GXT: COMPLETED */, 0);
 			func_47(1);
 			func_39(iVar0, 2, 2);
 		}
 		else
 		{
-			func_26("FAPP_ACCEPT", 0);
+			func_26("FAPP_ACCEPT" /* GXT: START */, 0);
 			func_39(iVar0, 2, 0);
 		}
 	}
 	else
 	{
 		func_33();
-		func_26("FAPP_ACCEPT", 0);
+		func_26("FAPP_ACCEPT" /* GXT: START */, 0);
 		func_47(0);
 		func_39(iVar0, 2, 0);
 	}
@@ -847,15 +847,15 @@ char* func_42(int iParam0)//Position - 0xB0E
 	switch (iParam0)
 	{
 		case 0:
-			return "FIX_APP_DL1_D_B";
+			return "FIX_APP_DL1_D_B" /* GXT: Nightlife Leak: Investigate the data signal detected at a nightclub owned by the Los Santos Triads and track down the copy of Dr. Dre's stolen music. */;
 			break;
 		
 		case 1:
-			return "FIX_APP_DL2_D_B";
+			return "FIX_APP_DL2_D_B" /* GXT: High Society Leak: Investigate the data signal detected at the Pacific Bluffs Country Club and track down the copy of Dr. Dre's stolen music. */;
 			break;
 		
 		case 2:
-			return "FIX_APP_DL3_D_B";
+			return "FIX_APP_DL3_D_B" /* GXT: South Central Leak: Investigate the data signal detected in Davis and track down the copy of Dr. Dre's stolen music. */;
 			break;
 	}
 	return "";
@@ -927,15 +927,15 @@ char* func_44(int iParam0, int iParam1)//Position - 0xC31
 			switch (iParam1)
 			{
 				case 0:
-					return "FIX_APP_INVEST";
+					return "FIX_APP_INVEST" /* GXT: INVESTIGATED */;
 					break;
 				
 				case 1:
-					return "FIX_APP_INVEST";
+					return "FIX_APP_INVEST" /* GXT: INVESTIGATED */;
 					break;
 				
 				case 2:
-					return "FIX_APP_RECOVR";
+					return "FIX_APP_RECOVR" /* GXT: COPY RECOVERED */;
 					break;
 			}
 			break;
@@ -944,15 +944,15 @@ char* func_44(int iParam0, int iParam1)//Position - 0xC31
 			switch (iParam1)
 			{
 				case 0:
-					return "FIX_APP_INVEST";
+					return "FIX_APP_INVEST" /* GXT: INVESTIGATED */;
 					break;
 				
 				case 1:
-					return "FIX_APP_INVEST";
+					return "FIX_APP_INVEST" /* GXT: INVESTIGATED */;
 					break;
 				
 				case 2:
-					return "FIX_APP_RECOVR";
+					return "FIX_APP_RECOVR" /* GXT: COPY RECOVERED */;
 					break;
 			}
 			break;
@@ -961,15 +961,15 @@ char* func_44(int iParam0, int iParam1)//Position - 0xC31
 			switch (iParam1)
 			{
 				case 0:
-					return "FIX_APP_INVEST";
+					return "FIX_APP_INVEST" /* GXT: INVESTIGATED */;
 					break;
 				
 				case 1:
-					return "FIX_APP_INVEST";
+					return "FIX_APP_INVEST" /* GXT: INVESTIGATED */;
 					break;
 				
 				case 2:
-					return "FIX_APP_RECOVR";
+					return "FIX_APP_RECOVR" /* GXT: COPY RECOVERED */;
 					break;
 			}
 			break;
@@ -1043,15 +1043,15 @@ char* func_46(int iParam0, int iParam1)//Position - 0xDCA
 			switch (iParam1)
 			{
 				case 0:
-					return "FIX_APP_DATA_L1_D1";
+					return "FIX_APP_DATA_L1_D1" /* GXT: Investigate the data signal at the Los Santos Triads Nightclub. */;
 					break;
 				
 				case 1:
-					return "FIX_APP_DATA_L1_D2";
+					return "FIX_APP_DATA_L1_D2" /* GXT: Investigate the lead at the Puerto Del Sol Marina. */;
 					break;
 				
 				case 2:
-					return "FIX_APP_DATA_L1_D3";
+					return "FIX_APP_DATA_L1_D3" /* GXT: Recover the copy of Dr. Dre's stolen music from the casino penthouse party. */;
 					break;
 			}
 			break;
@@ -1060,15 +1060,15 @@ char* func_46(int iParam0, int iParam1)//Position - 0xDCA
 			switch (iParam1)
 			{
 				case 0:
-					return "FIX_APP_DATA_L2_D1";
+					return "FIX_APP_DATA_L2_D1" /* GXT: Investigate the data signal at the Pacific Bluffs Country Club. */;
 					break;
 				
 				case 1:
-					return "FIX_APP_DATA_L2_D2";
+					return "FIX_APP_DATA_L2_D2" /* GXT: Find a way to infiltrate the gathering at the Richman mansion. */;
 					break;
 				
 				case 2:
-					return "FIX_APP_DATA_L2_D3";
+					return "FIX_APP_DATA_L2_D3" /* GXT: Recover the copy of Dr. Dre's stolen music from the Richman mansion. */;
 					break;
 			}
 			break;
@@ -1077,15 +1077,15 @@ char* func_46(int iParam0, int iParam1)//Position - 0xDCA
 			switch (iParam1)
 			{
 				case 0:
-					return "FIX_APP_DATA_L3_D1";
+					return "FIX_APP_DATA_L3_D1" /* GXT: Investigate the data trace in Davis with Franklin's Families contact. */;
 					break;
 				
 				case 1:
-					return "FIX_APP_DATA_L3_D2";
+					return "FIX_APP_DATA_L3_D2" /* GXT: Confront the Ballas suspected of stealing Dr. Dre's music. */;
 					break;
 				
 				case 2:
-					return "FIX_APP_DATA_L3_D3";
+					return "FIX_APP_DATA_L3_D3" /* GXT: Recover the copy of Dr. Dre's stolen music from the Vagos. */;
 					break;
 			}
 			break;
@@ -1212,15 +1212,15 @@ char* func_50(int iParam0, int iParam1)//Position - 0x10B0
 			switch (iParam1)
 			{
 				case 0:
-					return "FIX_APP_DATA_L1_T1";
+					return "FIX_APP_DATA_L1_T1" /* GXT: THE NIGHTCLUB */;
 					break;
 				
 				case 1:
-					return "FIX_APP_DATA_L1_T2";
+					return "FIX_APP_DATA_L1_T2" /* GXT: THE MARINA */;
 					break;
 				
 				case 2:
-					return "FIX_APP_DATA_L1_T3";
+					return "FIX_APP_DATA_L1_T3" /* GXT: NIGHTLIFE LEAK */;
 					break;
 			}
 			break;
@@ -1229,15 +1229,15 @@ char* func_50(int iParam0, int iParam1)//Position - 0x10B0
 			switch (iParam1)
 			{
 				case 0:
-					return "FIX_APP_DATA_L2_T1";
+					return "FIX_APP_DATA_L2_T1" /* GXT: THE COUNTRY CLUB */;
 					break;
 				
 				case 1:
-					return "FIX_APP_DATA_L2_T2";
+					return "FIX_APP_DATA_L2_T2" /* GXT: GUEST LIST */;
 					break;
 				
 				case 2:
-					return "FIX_APP_DATA_L2_T3";
+					return "FIX_APP_DATA_L2_T3" /* GXT: HIGH SOCIETY LEAK */;
 					break;
 			}
 			break;
@@ -1246,15 +1246,15 @@ char* func_50(int iParam0, int iParam1)//Position - 0x10B0
 			switch (iParam1)
 			{
 				case 0:
-					return "FIX_APP_DATA_L3_T1";
+					return "FIX_APP_DATA_L3_T1" /* GXT: DAVIS */;
 					break;
 				
 				case 1:
-					return "FIX_APP_DATA_L3_T2";
+					return "FIX_APP_DATA_L3_T2" /* GXT: THE BALLAS */;
 					break;
 				
 				case 2:
-					return "FIX_APP_DATA_L3_T3";
+					return "FIX_APP_DATA_L3_T3" /* GXT: SOUTH CENTRAL LEAK */;
 					break;
 			}
 			break;
@@ -1396,7 +1396,7 @@ void func_60(int iParam0)//Position - 0x12DF
 	{
 		func_61();
 	}
-	func_40(sVar0, sVar1, "FIX_APP_INVEST", 0, 1, 0, "");
+	func_40(sVar0, sVar1, "FIX_APP_INVEST" /* GXT: INVESTIGATED */, 0, 1, 0, "");
 }
 
 void func_61()//Position - 0x1321
@@ -1418,7 +1418,7 @@ char* func_63()//Position - 0x1349
 
 char* func_64()//Position - 0x1355
 {
-	return "FIX_APP_DATA_R2_D";
+	return "FIX_APP_DATA_R2_D" /* GXT: Data Recovery: Infiltrate the FIB headquarters and retrieve any data that could lead to Dr. Dre's stolen phone. */;
 }
 
 char* func_65()//Position - 0x1361
@@ -1428,7 +1428,7 @@ char* func_65()//Position - 0x1361
 
 char* func_66()//Position - 0x136D
 {
-	return "FIX_APP_DATA_R1_D";
+	return "FIX_APP_DATA_R1_D" /* GXT: On Course: Meet Franklin at the Los Santos Golf Club in Richman to discuss the VIP client. */;
 }
 
 void func_67(bool bParam0)//Position - 0x1379
@@ -1470,7 +1470,7 @@ void func_69()//Position - 0x13A5
 				{
 					if (!BitTest(uLocal_129, 10))
 					{
-						func_324("FIX_HQ_APP_WAIT", -1);
+						func_324("FIX_HQ_APP_WAIT" /* GXT: Please wait for Franklin to finish his introduction to the Agency Network. */, -1);
 						MISC::SET_BIT(&uLocal_129, 10);
 					}
 				}
@@ -7702,11 +7702,11 @@ void func_259(int iParam0)//Position - 0x9039
 	func_323(3);
 	if (func_43(iLocal_132, iVar0))
 	{
-		func_26("FIX_APP_MIS_COM", 0);
+		func_26("FIX_APP_MIS_COM" /* GXT: COMPLETED */, 0);
 	}
 	else
 	{
-		func_26("FAPP_ACCEPT", 1);
+		func_26("FAPP_ACCEPT" /* GXT: START */, 1);
 	}
 }
 
@@ -7732,7 +7732,7 @@ void func_261(int iParam0)//Position - 0x909E
 		if (func_51(iVar1, 0))
 		{
 			func_48(iVar0);
-			func_26("FIX_APP_MIS_COM", 0);
+			func_26("FIX_APP_MIS_COM" /* GXT: COMPLETED */, 0);
 			func_47(1);
 			func_323(3);
 		}
@@ -7749,7 +7749,7 @@ void func_261(int iParam0)//Position - 0x909E
 				func_260(iVar2);
 				func_67(0);
 				func_267(iVar2);
-				func_26("FAPP_ACCEPT", 1);
+				func_26("FAPP_ACCEPT" /* GXT: START */, 1);
 				func_323(3);
 			}
 		}
@@ -7758,13 +7758,13 @@ void func_261(int iParam0)//Position - 0x909E
 	{
 		sVar3 = func_266(iVar0);
 		sVar4 = func_265(iVar0);
-		func_262(sVar3, sVar4, "WHOUSE_CONF", "WHOUSE_CANC", 0, 1, 2, -1, -1, 0, 0);
+		func_262(sVar3, sVar4, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 1, 2, -1, -1, 0, 0);
 		func_70(202);
 		func_56(iVar0);
 	}
 	else
 	{
-		func_324("FXR_VIP_STRAND2", -1);
+		func_324("FXR_VIP_STRAND2" /* GXT: Unavailable. Only one investigation can be active at a time. */, -1);
 		func_323(2);
 	}
 }
@@ -7842,15 +7842,15 @@ char* func_265(int iParam0)//Position - 0x927D
 	switch (iParam0)
 	{
 		case 0:
-			return "FIX_APP_DL1_D";
+			return "FIX_APP_DL1_D" /* GXT: Investigate the data signal last detected at a nightclub owned by the Los Santos Triads? */;
 			break;
 		
 		case 1:
-			return "FIX_APP_DL2_D";
+			return "FIX_APP_DL2_D" /* GXT: Investigate the data signal last detected at the Pacific Bluffs Country Club? */;
 			break;
 		
 		case 2:
-			return "FIX_APP_DL3_D";
+			return "FIX_APP_DL3_D" /* GXT: Investigate the data signal last detected in Davis? */;
 			break;
 	}
 	return "";
@@ -7861,15 +7861,15 @@ char* func_266(int iParam0)//Position - 0x92BE
 	switch (iParam0)
 	{
 		case 0:
-			return "FIX_APP_DL1_T";
+			return "FIX_APP_DL1_T" /* GXT: NIGHTLIFE LEAK */;
 			break;
 		
 		case 1:
-			return "FIX_APP_DL2_T";
+			return "FIX_APP_DL2_T" /* GXT: HIGH SOCIETY LEAK */;
 			break;
 		
 		case 2:
-			return "FIX_APP_DL3_T";
+			return "FIX_APP_DL3_T" /* GXT: SOUTH CENTRAL LEAK */;
 			break;
 	}
 	return "";
@@ -7960,17 +7960,17 @@ void func_269()//Position - 0x9397
 	sVar3 = func_274();
 	sVar4 = func_64();
 	sVar5 = func_63();
-	sVar6 = "FIX_APP_DL1_T";
+	sVar6 = "FIX_APP_DL1_T" /* GXT: NIGHTLIFE LEAK */;
 	sVar7 = func_42(0);
 	sVar8 = "MISSION_VINEWOOD";
 	bVar9 = func_273(0);
 	bVar10 = func_51(4, 0);
-	sVar11 = "FIX_APP_DL2_T";
+	sVar11 = "FIX_APP_DL2_T" /* GXT: HIGH SOCIETY LEAK */;
 	sVar12 = func_42(1);
 	sVar13 = "MISSION_RICHMAN_LEAK";
 	bVar14 = func_273(1);
 	bVar15 = func_51(7, 0);
-	sVar16 = "FIX_APP_DL3_T";
+	sVar16 = "FIX_APP_DL3_T" /* GXT: SOUTH CENTRAL LEAK */;
 	sVar17 = func_42(2);
 	sVar18 = "MISSION_SOUTH_CENTRAL";
 	bVar19 = func_273(2);
@@ -8025,7 +8025,7 @@ void func_269()//Position - 0x9397
 				func_70(207);
 			}
 			func_67(1);
-			func_26("FAPP_ACCEPT", 0);
+			func_26("FAPP_ACCEPT" /* GXT: START */, 0);
 			break;
 		
 		default:
@@ -8047,11 +8047,11 @@ void func_269()//Position - 0x9397
 				func_57(iVar22);
 				if (func_43(iVar22, 2))
 				{
-					func_26("FIX_APP_MIS_COM", 0);
+					func_26("FIX_APP_MIS_COM" /* GXT: COMPLETED */, 0);
 				}
 				else
 				{
-					func_26("FAPP_ACCEPT", 0);
+					func_26("FAPP_ACCEPT" /* GXT: START */, 0);
 				}
 			}
 			func_56(iVar22);
@@ -8124,12 +8124,12 @@ int func_273(int iParam0)//Position - 0x963C
 
 char* func_274()//Position - 0x969D
 {
-	return "FIX_APP_DATA_R2_T";
+	return "FIX_APP_DATA_R2_T" /* GXT: REPLAY: DATA RECOVERY */;
 }
 
 char* func_275()//Position - 0x96A9
 {
-	return "FIX_APP_DATA_R1_T";
+	return "FIX_APP_DATA_R1_T" /* GXT: REPLAY: THE MEET */;
 }
 
 void func_276(int iParam0)//Position - 0x96B5
@@ -8163,11 +8163,11 @@ void func_278()//Position - 0x96F4
 	int iVar5;
 	bool bVar6;
 	
-	sVar0 = "FIX_APP_VIP_SETUP_T";
-	sVar1 = "FIX_APP_VIP_SETUP_D";
+	sVar0 = "FIX_APP_VIP_SETUP_T" /* GXT: SETUP: DATA RECOVERY */;
+	sVar1 = "FIX_APP_VIP_SETUP_D" /* GXT: Infiltrate the FIB headquarters and retrieve any data that could lead to Dr. Dre's stolen phone. */;
 	sVar2 = "SETUP_DATA_RECOVERY";
 	sVar3 = "";
-	sVar4 = "FAPP_ACCEPT";
+	sVar4 = "FAPP_ACCEPT" /* GXT: START */;
 	iVar5 = 0;
 	bVar6 = false;
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_150, "SHOW_DATA_RECOVERY_SCREEN");
@@ -8350,10 +8350,10 @@ void func_293(int iParam0, int iParam1)//Position - 0x996F
 	sVar1 = func_299(iVar0);
 	iVar2 = func_297(iVar0, 0);
 	bVar3 = iParam0;
-	sVar4 = "FAPP_CONTRACTS_COMPLETE";
+	sVar4 = "FAPP_CONTRACTS_COMPLETE" /* GXT: CONTRACTS COMPLETE */;
 	iVar5 = func_295(0);
 	bVar6 = true;
-	sVar7 = "FAPP_EARNINGS";
+	sVar7 = "FAPP_EARNINGS" /* GXT: EARNINGS */;
 	iVar8 = func_294(PLAYER::PLAYER_ID());
 	bVar9 = true;
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_150, "UPDATE_SECURITY_CONTRACT_SELECTION_SCREEN");
@@ -8440,27 +8440,27 @@ char* func_299(int iParam0)//Position - 0x9B09
 	switch (iParam0)
 	{
 		case 0:
-			return "FIX_A_STAT_VAR";
+			return "FIX_A_STAT_VAR" /* GXT: VALUABLES RECOVERED */;
 			break;
 		
 		case 1:
-			return "FIX_A_STAT_VHR";
+			return "FIX_A_STAT_VHR" /* GXT: VEHICLES RECOVERED */;
 			break;
 		
 		case 2:
-			return "FIX_A_STAT_GE";
+			return "FIX_A_STAT_GE" /* GXT: GANGS ELIMINATED */;
 			break;
 		
 		case 3:
-			return "FIX_A_STAT_VIP";
+			return "FIX_A_STAT_VIP" /* GXT: VIPS RESCUED */;
 			break;
 		
 		case 4:
-			return "FIX_A_STAT_AP";
+			return "FIX_A_STAT_AP" /* GXT: ASSETS PROTECTED */;
 			break;
 		
 		case 5:
-			return "FIX_A_STAT_AD";
+			return "FIX_A_STAT_AD" /* GXT: ASSETS DESTROYED */;
 			break;
 	}
 	return "";
@@ -8492,9 +8492,9 @@ void func_300(int iParam0)//Position - 0x9B7A
 	if (func_30())
 	{
 		MISC::SET_BIT(&uLocal_129, 14);
-		if (!func_29("FXR_NX_SEC_WAIT"))
+		if (!func_29("FXR_NX_SEC_WAIT" /* GXT: There is a short delay before you can accept another Security Contract. */))
 		{
-			func_324("FXR_NX_SEC_WAIT", -1);
+			func_324("FXR_NX_SEC_WAIT" /* GXT: There is a short delay before you can accept another Security Contract. */, -1);
 		}
 		func_25(0);
 	}
@@ -8549,27 +8549,27 @@ char* func_304(int iParam0)//Position - 0x9CB6
 	switch (iParam0)
 	{
 		case 0:
-			return "FXR_STSTART_RP_D";
+			return "FXR_STSTART_RP_D" /* GXT: Recover the client's stolen valuables. */;
 			break;
 		
 		case 1:
-			return "FXR_STSTART_RV_D";
+			return "FXR_STSTART_RV_D" /* GXT: Recover the client's stolen vehicle. */;
 			break;
 		
 		case 2:
-			return "FXR_STSTART_AS_D";
+			return "FXR_STSTART_AS_D" /* GXT: Eliminate senior gang members as requested by the client. */;
 			break;
 		
 		case 3:
-			return "FXR_STSTART_RE_D";
+			return "FXR_STSTART_RE_D" /* GXT: Rescue the client and extract them to safety. */;
 			break;
 		
 		case 4:
-			return "FXR_STSTART_PR_D";
+			return "FXR_STSTART_PR_D" /* GXT: Provide protection for the client's assets. */;
 			break;
 		
 		case 5:
-			return "FXR_STSTART_TD_D";
+			return "FXR_STSTART_TD_D" /* GXT: Locate and destroy equipment as requested by the client. */;
 			break;
 	}
 	return "";
@@ -8580,27 +8580,27 @@ char* func_305(int iParam0)//Position - 0x9D27
 	switch (iParam0)
 	{
 		case 0:
-			return "FXR_STSTART_RP";
+			return "FXR_STSTART_RP" /* GXT: Recover Valuables */;
 			break;
 		
 		case 1:
-			return "FXR_STSTART_RV";
+			return "FXR_STSTART_RV" /* GXT: Vehicle Recovery */;
 			break;
 		
 		case 2:
-			return "FXR_STSTART_AS";
+			return "FXR_STSTART_AS" /* GXT: Gang Termination */;
 			break;
 		
 		case 3:
-			return "FXR_STSTART_RE";
+			return "FXR_STSTART_RE" /* GXT: Rescue Operation */;
 			break;
 		
 		case 4:
-			return "FXR_STSTART_PR";
+			return "FXR_STSTART_PR" /* GXT: Asset Protection */;
 			break;
 		
 		case 5:
-			return "FXR_STSTART_TD";
+			return "FXR_STSTART_TD" /* GXT: Liquidize Assets */;
 			break;
 	}
 	return "";
@@ -8685,29 +8685,29 @@ char* func_307(int iParam0)//Position - 0x9EE0
 	*iParam0 = 0;
 	if (func_281(1))
 	{
-		sVar0 = "FIX_VIP_LOCK3";
+		sVar0 = "FIX_VIP_LOCK3" /* GXT: Unavailable. There is a short delay before you can start this contract again. */;
 		*iParam0 = 1;
 	}
 	else if (!func_311())
 	{
 		if (func_310())
 		{
-			sVar0 = "FIX_VIP_LOCK";
+			sVar0 = "FIX_VIP_LOCK" /* GXT: Unavailable. Meet Franklin at the Los Santos Golf Club in Richman. */;
 			*iParam0 = 1;
 		}
 		else if (func_309())
 		{
-			sVar0 = "FIX_VIP_LOCK1";
+			sVar0 = "FIX_VIP_LOCK1" /* GXT: Unavailable. Franklin will be in touch about the VIP client soon. */;
 			*iParam0 = 1;
 		}
 		else if (!func_287(0) || !func_285(0))
 		{
-			sVar0 = "FIX_VIP_INTRO";
+			sVar0 = "FIX_VIP_INTRO" /* GXT: Unavailable. Franklin will be in touch about the VIP client soon. */;
 			*iParam0 = 1;
 		}
 		else if (func_308())
 		{
-			sVar0 = "FIX_VIP_LOCK2";
+			sVar0 = "FIX_VIP_LOCK2" /* GXT: Unavailable. Imani will be in touch after analyzing the FIB hard drive. */;
 			*iParam0 = 1;
 		}
 	}
@@ -8774,8 +8774,8 @@ void func_312()//Position - 0xA045
 	func_264(0);
 	sVar1 = func_307(&bVar0);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_150, "SHOW_HOME_SCREEN");
-	func_27("FIX_APP_SECU_T");
-	func_27("FIX_APP_VIP_T");
+	func_27("FIX_APP_SECU_T" /* GXT: SECURITY CONTRACTS */);
+	func_27("FIX_APP_VIP_T" /* GXT: VIP CONTRACT */);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bVar0);
 	if (bVar0)
 	{
@@ -8813,7 +8813,7 @@ void func_314()//Position - 0xA0D3
 			func_316();
 			func_39(iLocal_132, 0, -1);
 			func_47(1);
-			func_26("FAPP_ACCEPT", 1);
+			func_26("FAPP_ACCEPT" /* GXT: START */, 1);
 			func_70(217);
 			if (func_272(PLAYER::PLAYER_ID()) && !func_315())
 			{
@@ -8937,7 +8937,7 @@ void func_323(int iParam0)//Position - 0xA2CB
 			break;
 		
 		case 3:
-			sVar0 = "Select";
+			sVar0 = "Select" /* GXT: Filter List */;
 			break;
 		
 		case 4:
@@ -9792,7 +9792,7 @@ void func_361()//Position - 0xB061
 			bVar0 = true;
 			iLocal_137 = 28500;
 			iLocal_138 = 0;
-			func_370("FIX_VIP_TUT1");
+			func_370("FIX_VIP_TUT1" /* GXT: Franklin will be in touch about the VIP client soon. Complete Security Contracts in the meantime to earn cash and increase daily earnings for the business. */);
 			func_368(316, 1, -1, 1);
 		}
 		else if (func_28() == 3 && !func_371(317, -1))
@@ -9813,7 +9813,7 @@ void func_361()//Position - 0xB061
 			}
 			else
 			{
-				func_370("FIX_VIP_TUT2");
+				func_370("FIX_VIP_TUT2" /* GXT: The available contracts offered here change regularly, with each job having different difficulty levels and rewards. Select one to begin. */);
 			}
 			func_368(318, 1, -1, 1);
 		}
@@ -9822,7 +9822,7 @@ void func_361()//Position - 0xB061
 			bVar0 = true;
 			iLocal_137 = 12000;
 			iLocal_138 = 3;
-			func_370("FIX_VIP_TUT2");
+			func_370("FIX_VIP_TUT2" /* GXT: The available contracts offered here change regularly, with each job having different difficulty levels and rewards. Select one to begin. */);
 			MISC::CLEAR_BIT(&uLocal_129, 13);
 		}
 		else if ((func_28() == 1 && func_283()) && !(func_371(319, -1) && func_284(32312, -1)))
@@ -9846,7 +9846,7 @@ void func_361()//Position - 0xB061
 					bVar0 = true;
 					iLocal_137 = 11300;
 					iLocal_138 = 5;
-					func_370("FIX_VIP_TUT3");
+					func_370("FIX_VIP_TUT3" /* GXT: Select VIP Contract, then start Setup: Data Recovery when you are ready to begin the investigation into Dr. Dre's stolen phone. */);
 					func_367(32312, 1, -1);
 				}
 			}
@@ -9856,7 +9856,7 @@ void func_361()//Position - 0xB061
 			bVar0 = true;
 			iLocal_137 = 17250;
 			iLocal_138 = 6;
-			func_370("FIX_VIP_TUT4");
+			func_370("FIX_VIP_TUT4" /* GXT: Imani has identified the last known location for the 3 copies of Dr. Dre's stolen phone. Investigate each one and follow leads to recover every copy. */);
 			func_368(320, 1, -1, 1);
 		}
 		else if ((func_28() == 2 && func_54(1) == 0) && !func_371(321, -1))
@@ -10105,7 +10105,7 @@ void func_372()//Position - 0xB718
 				case 9:
 				case 11:
 				case 13:
-					func_324("FXR_NX_MIS_WAIT", -1);
+					func_324("FXR_NX_MIS_WAIT" /* GXT: Franklin will be in touch soon with information on the next investigation. */, -1);
 					MISC::SET_BIT(&uLocal_129, 11);
 					break;
 				}
@@ -10124,11 +10124,11 @@ void func_372()//Position - 0xB718
 			{
 				if (!func_374(PLAYER::PLAYER_ID(), 3))
 				{
-					func_324("FXRAP_FIN_WAIT3", -1);
+					func_324("FXRAP_FIN_WAIT3" /* GXT: Go to Franklin's office to continue this contract. */, -1);
 				}
 				else if (!func_374(PLAYER::PLAYER_ID(), 4))
 				{
-					func_324("FXRAP_FIN_WAIT5", -1);
+					func_324("FXRAP_FIN_WAIT5" /* GXT: Go to Franklin's office to complete this contract. */, -1);
 				}
 				MISC::SET_BIT(&uLocal_129, 12);
 			}
@@ -10136,28 +10136,28 @@ void func_372()//Position - 0xB718
 			{
 				if (!func_373())
 				{
-					func_324("FXR_AP_FIN_WAIT", -1);
+					func_324("FXR_AP_FIN_WAIT" /* GXT: All three Data Leaks investigated. Franklin will be in touch soon. */, -1);
 				}
 				else if (!func_374(PLAYER::PLAYER_ID(), 3))
 				{
 					if (BitTest(Global_1977048, 26))
 					{
-						func_324("FXRAP_FIN_WAIT3", -1);
+						func_324("FXRAP_FIN_WAIT3" /* GXT: Go to Franklin's office to continue this contract. */, -1);
 					}
 					else
 					{
-						func_324("FXRAP_FIN_WAIT2", -1);
+						func_324("FXRAP_FIN_WAIT2" /* GXT: Franklin will be in touch soon with information on Johnny Guns. */, -1);
 					}
 				}
 				else if (!func_374(PLAYER::PLAYER_ID(), 4))
 				{
 					if (BitTest(Global_1977048, 28))
 					{
-						func_324("FXRAP_FIN_WAIT5", -1);
+						func_324("FXRAP_FIN_WAIT5" /* GXT: Go to Franklin's office to complete this contract. */, -1);
 					}
 					else
 					{
-						func_324("FXRAP_FIN_WAIT4", -1);
+						func_324("FXRAP_FIN_WAIT4" /* GXT: Franklin will be in touch soon when Johnny Guns has been located. */, -1);
 					}
 				}
 				MISC::SET_BIT(&uLocal_129, 12);

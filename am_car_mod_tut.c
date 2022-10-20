@@ -2680,7 +2680,7 @@ void func_78()//Position - 0x2624
 										iLocal_139 = -1;
 									}
 									MISC::CLEAR_BIT(&uLocal_140, 3);
-									func_186("FM_CTUT_CAR", 0);
+									func_186("FM_CTUT_CAR" /* GXT: Get a vehicle. */, 0);
 									MISC::SET_BIT(&uLocal_140, 2);
 								}
 							}
@@ -2703,7 +2703,7 @@ void func_78()//Position - 0x2624
 									}
 									if (!BitTest(uLocal_140, 7))
 									{
-										func_186("FM_CTUT_ANO", 0);
+										func_186("FM_CTUT_ANO" /* GXT: Get a vehicle. */, 0);
 										MISC::SET_BIT(&uLocal_140, 7);
 									}
 									if (!BitTest(uLocal_140, 8))
@@ -2716,7 +2716,7 @@ void func_78()//Position - 0x2624
 												{
 													if (func_156(ENTITY::GET_ENTITY_MODEL(iVar0)))
 													{
-														func_148("FM_CTUT_PRM", -1);
+														func_148("FM_CTUT_PRM" /* GXT: This is a premium vehicle that is already being tracked. You can only apply a tracker to this vehicle if it was purchased online. Find another vehicle. */, -1);
 														MISC::SET_BIT(&uLocal_140, 8);
 														MISC::SET_BIT(&uLocal_140, 11);
 														func_7(&uLocal_145, 0, 0);
@@ -2724,12 +2724,12 @@ void func_78()//Position - 0x2624
 													else if (!func_157(iVar0))
 													{
 														MISC::SET_BIT(&uLocal_140, 8);
-														func_148("FM_CTUT_DRI", -1);
+														func_148("FM_CTUT_DRI" /* GXT: Only the driver can modify a vehicle. */, -1);
 													}
 													else if (!func_158(iVar0, 0, &uVar1))
 													{
 														MISC::SET_BIT(&uLocal_140, 8);
-														func_148("FM_CTUT_HMD", -1);
+														func_148("FM_CTUT_HMD" /* GXT: Los Santos Customs won't accept this vehicle. Service vehicles, vehicles that are too damaged, boats, cycles and aircraft can't be modified. */, -1);
 													}
 												}
 											}
@@ -2743,7 +2743,7 @@ void func_78()//Position - 0x2624
 											{
 												if (func_149())
 												{
-													func_148("FM_CTUT_PRM", -1);
+													func_148("FM_CTUT_PRM" /* GXT: This is a premium vehicle that is already being tracked. You can only apply a tracker to this vehicle if it was purchased online. Find another vehicle. */, -1);
 													func_146(&uLocal_145);
 													func_7(&uLocal_145, 0, 0);
 												}
@@ -2761,7 +2761,7 @@ void func_78()//Position - 0x2624
 									{
 										func_154(1);
 									}
-									if (func_145("FM_CTUT_HMD"))
+									if (func_145("FM_CTUT_HMD" /* GXT: Los Santos Customs won't accept this vehicle. Service vehicles, vehicles that are too damaged, boats, cycles and aircraft can't be modified. */))
 									{
 										HUD::CLEAR_HELP(true);
 									}
@@ -2769,7 +2769,7 @@ void func_78()//Position - 0x2624
 									{
 										if (!BitTest(uLocal_140, 3))
 										{
-											func_186("FM_CTUT_MOD", 0);
+											func_186("FM_CTUT_MOD" /* GXT: Go to Los Santos Customs. */, 0);
 											MISC::SET_BIT(&uLocal_140, 3);
 											func_146(&uLocal_141);
 											func_7(&uLocal_141, 0, 0);
@@ -2823,7 +2823,7 @@ void func_78()//Position - 0x2624
 							{
 								if (!BitTest(uLocal_140, 9))
 								{
-									func_186("FM_IHELP_LCP", 0);
+									func_186("FM_IHELP_LCP" /* GXT: Lose the Cops. */, 0);
 									if (iLocal_139 != -1)
 									{
 										func_76(iLocal_139, 0);
@@ -2861,11 +2861,11 @@ void func_78()//Position - 0x2624
 					{
 						if (func_144())
 						{
-							if (((func_145("FM_IHELP_CAR") || func_145("FM_IHELP_MOD")) || func_145("FM_CMOD_GPS")) || func_145("FM_CMOD_STOL"))
+							if (((func_145("FM_IHELP_CAR" /* GXT: Steal a vehicle to use as your own. This vehicle will be available to you in future Online sessions once you have fitted a 'Tracker' in Los Santos Customs. */) || func_145("FM_IHELP_MOD" /* GXT: Los Santos Customs is shown by ~BLIP_CAR_MOD_SHOP~. */)) || func_145("FM_CMOD_GPS" /* GXT: Use the Interaction Menu to set a quick GPS to a location. Hold ~INPUT_INTERACTION_MENU~ to bring up the Interaction Menu. */)) || func_145("FM_CMOD_STOL" /* GXT: If the Cops spot you in a stolen vehicle you will gain a Wanted Level. */))
 							{
 								HUD::CLEAR_HELP(true);
 							}
-							if (func_124("FM_IHELP_LCP"))
+							if (func_124("FM_IHELP_LCP" /* GXT: Lose the Cops. */))
 							{
 								func_23();
 							}
@@ -2875,7 +2875,7 @@ void func_78()//Position - 0x2624
 								{
 									MISC::SET_BIT(&uLocal_140, 9);
 									MISC::SET_BIT(&(Global_2815059.f_1792), 25);
-									if (func_124("FM_CTUT_MOD"))
+									if (func_124("FM_CTUT_MOD" /* GXT: Go to Los Santos Customs. */))
 									{
 										func_23();
 									}
@@ -2896,7 +2896,7 @@ void func_78()//Position - 0x2624
 										func_30(1);
 									}
 								}
-								if ((func_124("FM_CTUT_RSP") || func_124("FM_IHELP_PTRK")) || func_124("FM_IHELP_PINS"))
+								if ((func_124("FM_CTUT_RSP" /* GXT: Get your vehicle resprayed. */) || func_124("FM_IHELP_PTRK" /* GXT: Purchase a Tracker for your vehicle. */)) || func_124("FM_IHELP_PINS" /* GXT: Purchase Insurance for your vehicle. */))
 								{
 									func_23();
 								}
@@ -2908,30 +2908,30 @@ void func_78()//Position - 0x2624
 									iVar3 = func_108(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false), 0);
 									if (iVar3 > 0)
 									{
-										if (!func_124("FM_CTUT_REP"))
+										if (!func_124("FM_CTUT_REP" /* GXT: Get your vehicle repaired. */))
 										{
-											func_186("FM_CTUT_REP", 0);
+											func_186("FM_CTUT_REP" /* GXT: Get your vehicle repaired. */, 0);
 										}
 									}
 									else if (!func_106())
 									{
-										if (!func_124("FM_CTUT_RSP"))
+										if (!func_124("FM_CTUT_RSP" /* GXT: Get your vehicle resprayed. */))
 										{
-											func_186("FM_CTUT_RSP", 0);
+											func_186("FM_CTUT_RSP" /* GXT: Get your vehicle resprayed. */, 0);
 										}
 									}
 									else if (!func_104())
 									{
-										if (!func_124("FM_IHELP_PTRK"))
+										if (!func_124("FM_IHELP_PTRK" /* GXT: Purchase a Tracker for your vehicle. */))
 										{
-											func_186("FM_IHELP_PTRK", 0);
+											func_186("FM_IHELP_PTRK" /* GXT: Purchase a Tracker for your vehicle. */, 0);
 										}
 									}
 									else if (!func_101())
 									{
-										if (!func_124("FM_IHELP_PINS"))
+										if (!func_124("FM_IHELP_PINS" /* GXT: Purchase Insurance for your vehicle. */))
 										{
-											func_186("FM_IHELP_PINS", 0);
+											func_186("FM_IHELP_PINS" /* GXT: Purchase Insurance for your vehicle. */, 0);
 										}
 									}
 								}
@@ -3033,7 +3033,7 @@ void func_79()//Position - 0x2D7B
 		case 0:
 			if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 			{
-				func_148("FM_IHELP_CAR", -1);
+				func_148("FM_IHELP_CAR" /* GXT: Steal a vehicle to use as your own. This vehicle will be available to you in future Online sessions once you have fitted a 'Tracker' in Los Santos Customs. */, -1);
 				iLocal_148++;
 			}
 			break;
@@ -3043,7 +3043,7 @@ void func_79()//Position - 0x2D7B
 			{
 				if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 				{
-					func_148("FM_IHELP_MOD", -1);
+					func_148("FM_IHELP_MOD" /* GXT: Los Santos Customs is shown by ~BLIP_CAR_MOD_SHOP~. */, -1);
 					iLocal_148++;
 				}
 			}
@@ -3064,7 +3064,7 @@ void func_79()//Position - 0x2D7B
 							}
 							else if (func_147(&uLocal_149, 1000, 0))
 							{
-								func_148("FM_CMOD_GPS", -1);
+								func_148("FM_CMOD_GPS" /* GXT: Use the Interaction Menu to set a quick GPS to a location. Hold ~INPUT_INTERACTION_MENU~ to bring up the Interaction Menu. */, -1);
 								iLocal_148++;
 							}
 						}
@@ -3084,7 +3084,7 @@ void func_79()//Position - 0x2D7B
 					}
 					else if (func_147(&uLocal_149, 1000, 0))
 					{
-						func_148("FM_CMOD_STOL", -1);
+						func_148("FM_CMOD_STOL" /* GXT: If the Cops spot you in a stolen vehicle you will gain a Wanted Level. */, -1);
 						iLocal_148++;
 					}
 				}
@@ -3102,7 +3102,7 @@ void func_79()//Position - 0x2D7B
 					}
 					else if (func_147(&uLocal_149, 5000, 0))
 					{
-						func_148("FM_IHELP_BLP", -1);
+						func_148("FM_IHELP_BLP" /* GXT: Players are shown on the Radar by ~BLIP_LEVEL~. If they are your friend it will have a blue outline. If they are in your Crew it will be a Crew colored outline. You can go to the Pause Map and find the location of other players. */, -1);
 						iLocal_148++;
 					}
 				}

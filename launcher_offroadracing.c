@@ -335,7 +335,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_61 = 2050;
 	iLocal_62 = -1;
 	iLocal_63 = -1;
-	sLocal_65 = "CC_SUBSTR";
+	sLocal_65 = "CC_SUBSTR" /* GXT: ~INPUT_CONTEXT~ */;
 	fLocal_66 = 125f;
 	iLocal_67 = 1;
 	iLocal_69 = 263;
@@ -613,7 +613,7 @@ void __EntryFunction__()//Position - 0x0
 									{
 										if (!func_144(uLocal_58, 134217728))
 										{
-											func_95("MG_NA_TIME", iLocal_79, iLocal_80);
+											func_95("MG_NA_TIME" /* GXT: This activity is not available at this time of day. Come back between ~1~:00 and ~1~:00 to participate in this activity. */, iLocal_79, iLocal_80);
 											func_103(&uLocal_58, 134217728);
 										}
 									}
@@ -631,7 +631,7 @@ void __EntryFunction__()//Position - 0x0
 								{
 									if (!func_144(uLocal_58, 134217728))
 									{
-										func_95("MG_NA_TIME", iLocal_79, iLocal_80);
+										func_95("MG_NA_TIME" /* GXT: This activity is not available at this time of day. Come back between ~1~:00 and ~1~:00 to participate in this activity. */, iLocal_79, iLocal_80);
 										func_103(&uLocal_58, 134217728);
 									}
 								}
@@ -1110,7 +1110,7 @@ void func_8()//Position - 0xD00
 					func_138(75, 1, 0);
 					break;
 			}
-			func_14("OFFR_NEW", 0, 0, -1, 10000, 7, 0, 0, 0);
+			func_14("OFFR_NEW" /* GXT: New offroad race unlocked at ~BLIP_OFF_ROAD_RACING~ */, 0, 0, -1, 10000, 7, 0, 0, 0);
 		}
 		else
 		{
@@ -1481,7 +1481,7 @@ void func_21()//Position - 0x16E4
 	}
 	else if (MISC::IS_PS3_VERSION() || func_22())
 	{
-		StringCopy(&cVar0, "PRESENCE_0_STR", 24);
+		StringCopy(&cVar0, "PRESENCE_0_STR" /* GXT: Playing story */, 24);
 		NETWORK::NETWORK_SET_RICH_PRESENCE_STRING(0, &cVar0);
 	}
 }
@@ -4814,11 +4814,11 @@ void func_145()//Position - 0x5D48
 	}
 	if (iLocal_82 == 1 || iLocal_82 == 5)
 	{
-		sLocal_65 = "PLAY_OFFROAD_V";
+		sLocal_65 = "PLAY_OFFROAD_V" /* GXT: Press ~INPUT_CONTEXT~ to enter an offroad truck race. */;
 	}
 	else
 	{
-		sLocal_65 = "PLAY_OFFROAD_M";
+		sLocal_65 = "PLAY_OFFROAD_M" /* GXT: Press ~INPUT_CONTEXT~ to enter an offroad motorcycle / ATV race. */;
 	}
 }
 

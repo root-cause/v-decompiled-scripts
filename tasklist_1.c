@@ -50,15 +50,15 @@ void __EntryFunction__()//Position - 0x0
 			case 0:
 				if (uLocal_18[0])
 				{
-					StringCopy(&(Global_22724[1 /*42*/]), "CL_C1A", 16);
-					StringCopy(&(Global_22724[1 /*42*/].f_4), "CL_C1A_BR", 16);
+					StringCopy(&(Global_22724[1 /*42*/]), "CL_C1A" /* GXT: Killer photo */, 16);
+					StringCopy(&(Global_22724[1 /*42*/].f_4), "CL_C1A_BR" /* GXT: Kill some gang members and take a photo of the corpses. */, 16);
 					Global_22724[1 /*42*/].f_8 = 0;
 					Global_22724[1 /*42*/].f_9 = 2;
-					StringCopy(&(Global_22724[1 /*42*/].f_10[1 /*4*/]), "CL_C1A_J1", 16);
+					StringCopy(&(Global_22724[1 /*42*/].f_10[1 /*4*/]), "CL_C1A_J1" /* GXT: Gang members killed ~1~/~1~ */, 16);
 					Global_22724[1 /*42*/].f_37[1] = 0;
 					Global_22724[1 /*42*/].f_32[1] = 3;
 					Global_22724[1 /*42*/].f_27[1] = 0;
-					StringCopy(&(Global_22724[1 /*42*/].f_10[2 /*4*/]), "CL_C1A_J2", 16);
+					StringCopy(&(Global_22724[1 /*42*/].f_10[2 /*4*/]), "CL_C1A_J2" /* GXT: Photos taken of dead gang members ~1~/~1~ */, 16);
 					Global_22724[1 /*42*/].f_37[2] = 0;
 					Global_22724[1 /*42*/].f_32[2] = 3;
 					Global_22724[1 /*42*/].f_27[2] = 0;
@@ -70,7 +70,7 @@ void __EntryFunction__()//Position - 0x0
 						iLocal_19++;
 					}
 					func_4(1, 1, 1, 1);
-					func_3("CL_ADDED", "CL_C1A", 3000, 1);
+					func_3("CL_ADDED" /* GXT: Job ~a~ added to phone checklist */, "CL_C1A" /* GXT: Killer photo */, 3000, 1);
 					iLocal_21 = 1;
 				}
 				break;
@@ -90,7 +90,7 @@ void __EntryFunction__()//Position - 0x0
 									if (!Global_32010[iLocal_19])
 									{
 										Global_22724[1 /*42*/].f_27[1]++;
-										func_2("CL_C1A_J1", Global_22724[1 /*42*/].f_27[1], Global_22724[1 /*42*/].f_32[1], 2000, 1);
+										func_2("CL_C1A_J1" /* GXT: Gang members killed ~1~/~1~ */, Global_22724[1 /*42*/].f_27[1], Global_22724[1 /*42*/].f_32[1], 2000, 1);
 										Global_32010[iLocal_19] = 1;
 									}
 									if (ENTITY::IS_ENTITY_DEAD(uLocal_20[iLocal_19], false))
@@ -100,14 +100,14 @@ void __EntryFunction__()//Position - 0x0
 											if (MOBILE::CELL_CAM_IS_CHAR_VISIBLE_NO_FACE_CHECK(uLocal_20[iLocal_19]) && func_1())
 											{
 												Global_22724[1 /*42*/].f_27[2]++;
-												func_2("CL_C1A_J2", Global_22724[1 /*42*/].f_27[2], Global_22724[1 /*42*/].f_32[2], 2000, 1);
+												func_2("CL_C1A_J2" /* GXT: Photos taken of dead gang members ~1~/~1~ */, Global_22724[1 /*42*/].f_27[2], Global_22724[1 /*42*/].f_32[2], 2000, 1);
 												Global_32014[iLocal_19] = 1;
 											}
 										}
 									}
 									if (Global_22724[1 /*42*/].f_27[1] >= Global_22724[1 /*42*/].f_32[1] && Global_22724[1 /*42*/].f_27[2] >= Global_22724[1 /*42*/].f_32[2])
 									{
-										func_3("CL_COMPLETE", "CL_C1A", 3000, 1);
+										func_3("CL_COMPLETE" /* GXT: ~a~ job complete. */, "CL_C1A" /* GXT: Killer photo */, 3000, 1);
 										Global_22724[1 /*42*/].f_8 = 1;
 										iLocal_21 = 2;
 									}
@@ -128,24 +128,24 @@ void __EntryFunction__()//Position - 0x0
 			case 0:
 				if (uLocal_18[1])
 				{
-					StringCopy(&(Global_22724[2 /*42*/]), "CL_C1B", 16);
-					StringCopy(&(Global_22724[2 /*42*/].f_4), "CL_C1B_BR", 16);
+					StringCopy(&(Global_22724[2 /*42*/]), "CL_C1B" /* GXT: Bike Pro */, 16);
+					StringCopy(&(Global_22724[2 /*42*/].f_4), "CL_C1B_BR" /* GXT: Perform various bike stunts. */, 16);
 					Global_22724[2 /*42*/].f_8 = 0;
 					Global_22724[2 /*42*/].f_9 = 3;
-					StringCopy(&(Global_22724[2 /*42*/].f_10[1 /*4*/]), "CL_C1B_J1", 16);
+					StringCopy(&(Global_22724[2 /*42*/].f_10[1 /*4*/]), "CL_C1B_J1" /* GXT: Hold a wheelie for 200m without crashing. */, 16);
 					Global_22724[2 /*42*/].f_37[1] = 0;
 					Global_22724[2 /*42*/].f_32[1] = -1;
 					Global_22724[2 /*42*/].f_27[1] = -1;
-					StringCopy(&(Global_22724[2 /*42*/].f_10[2 /*4*/]), "CL_C1B_J2", 16);
+					StringCopy(&(Global_22724[2 /*42*/].f_10[2 /*4*/]), "CL_C1B_J2" /* GXT: Successfully perform a stoppie. */, 16);
 					Global_22724[2 /*42*/].f_37[2] = 0;
 					Global_22724[2 /*42*/].f_32[2] = -1;
 					Global_22724[2 /*42*/].f_27[2] = -1;
-					StringCopy(&(Global_22724[2 /*42*/].f_10[3 /*4*/]), "CL_C1B_J3", 16);
+					StringCopy(&(Global_22724[2 /*42*/].f_10[3 /*4*/]), "CL_C1B_J3" /* GXT: Perform a 360 flip on a bike. */, 16);
 					Global_22724[2 /*42*/].f_37[3] = 0;
 					Global_22724[2 /*42*/].f_32[3] = -1;
 					Global_22724[2 /*42*/].f_27[3] = -1;
 					func_4(136, 2, 1, 1);
-					func_3("CL_ADDED", "CL_C1B", 3000, 1);
+					func_3("CL_ADDED" /* GXT: Job ~a~ added to phone checklist */, "CL_C1B" /* GXT: Bike Pro */, 3000, 1);
 					iLocal_22 = 1;
 				}
 				break;
@@ -162,7 +162,7 @@ void __EntryFunction__()//Position - 0x0
 				}
 				if ((Global_22724[2 /*42*/].f_37[1] == 1 && Global_22724[2 /*42*/].f_37[2] == 1) && Global_22724[2 /*42*/].f_37[3] == 1)
 				{
-					func_3("CL_COMPLETE", "CL_C1B", 3000, 1);
+					func_3("CL_COMPLETE" /* GXT: ~a~ job complete. */, "CL_C1B" /* GXT: Bike Pro */, 3000, 1);
 					Global_22724[2 /*42*/].f_8 = 1;
 					iLocal_22 = 2;
 				}

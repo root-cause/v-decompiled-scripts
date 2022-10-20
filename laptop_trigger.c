@@ -320,7 +320,7 @@ void __EntryFunction__()//Position - 0x0
 						{
 							if (bVar0)
 							{
-								func_201(&iLocal_109, 1, "MPLA_BILL", 0, 0, 0, 0);
+								func_201(&iLocal_109, 1, "MPLA_BILL" /* GXT: Unable to use the laptop until utility charge is paid. */, 0, 0, 0, 0);
 							}
 							else if (func_230())
 							{
@@ -340,7 +340,7 @@ void __EntryFunction__()//Position - 0x0
 							}
 							else
 							{
-								func_201(&iLocal_109, 1, "BROWSEINPUTTRIG", 0, 0, 0, 0);
+								func_201(&iLocal_109, 1, "BROWSEINPUTTRIG" /* GXT: Press ~INPUT_CONTEXT~ to browse the internet on this computer. */, 0, 0, 0, 0);
 							}
 						}
 					}
@@ -1238,7 +1238,7 @@ void func_31(bool bParam0, int iParam1)//Position - 0x1462
 		func_57();
 		if (!func_91(PLAYER::PLAYER_ID()) && iParam1 != 1)
 		{
-			func_32(82, "GB_TXTMSG_INIT2", 2, 0, 0, 0, 0, 1, 0, 1);
+			func_32(82, "GB_TXTMSG_INIT2" /* GXT: Thank you for registering with SecuroServ as a VIP. Recruit your Protection Detail immediately to start feeling the benefits of having a troop of armed Bodyguards at your beck and call. But what now? Take your operation to the next level by getting an office on dynasty8realestate.com, of course! You'll become a CEO with access to Special Cargo, Vehicle Cargo, Special Vehicle Work and many other benefits. */, 2, 0, 0, 0, 0, 1, 0, 1);
 		}
 	}
 }
@@ -1799,7 +1799,7 @@ void func_40(int iParam0)//Position - 0x1B48
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(42);
 								GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							}
-							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB")) && BitTest(Global_8137, 6))
+							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB" /* GXT: Benny's */)) && BitTest(Global_8137, 6))
 							{
 								GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT");
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
@@ -2211,11 +2211,11 @@ void func_57()//Position - 0x281A
 	{
 		if (func_66())
 		{
-			func_58("GB_INFO_MC_L", 0);
+			func_58("GB_INFO_MC_L" /* GXT: There are players looking to join a MC in this session. */, 0);
 		}
 		else
 		{
-			func_58("GB_INFO_LFG", 0);
+			func_58("GB_INFO_LFG" /* GXT: There are players looking for work as Bodyguards in this session. */, 0);
 		}
 	}
 }
@@ -3029,12 +3029,12 @@ char* func_105(int iParam0, bool bParam1)//Position - 0x34CD
 			return func_106();
 		}
 	}
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACC");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACC" /* GXT: An Organization */);
 }
 
 char* func_106()//Position - 0x34F4
 {
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACCM");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACCM" /* GXT: Motorcycle Club */);
 }
 
 struct<16> func_107(int iParam0, int iParam1, int iParam2)//Position - 0x3504
@@ -3325,12 +3325,12 @@ void func_119()//Position - 0x3A5A
 	{
 		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("");
 		StringCopy(&cVar1, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_8746[1 /*6*/])), 64);
-		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253");
+		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253" /* GXT: New Contact */);
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, sVar2, &cVar1);
 	}
 	else
 	{
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_255");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_255" /* GXT: New Contact: ~n~~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_8746[1 /*6*/]));
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, "", 0);
 	}
@@ -4438,7 +4438,7 @@ void func_181(bool bParam0)//Position - 0x4F7C
 {
 	if (((func_175() && !NETWORK::NETWORK_IS_PLAYER_IN_MP_CUTSCENE(PLAYER::PLAYER_ID())) && !func_182()) && !Global_1946108)
 	{
-		func_201(&iLocal_109, 2, "ARENAWHINPUT", 0, 0, 0, 0);
+		func_201(&iLocal_109, 2, "ARENAWHINPUT" /* GXT: Press ~INPUT_CONTEXT~ to access arenawar.tv.~n~Press ~INPUT_CONTEXT_SECONDARY~ to view Sponsorship Tier Unlocks. */, 0, 0, 0, 0);
 	}
 }
 
@@ -4453,30 +4453,30 @@ void func_183(bool bParam0)//Position - 0x4FCB
 	{
 		if (func_189())
 		{
-			func_188("WHPRIVSESLAP");
+			func_188("WHPRIVSESLAP" /* GXT: Join a public session to access the SecuroServ network. */);
 		}
 		else if (!bParam0)
 		{
 			if (func_168() >= func_167())
 			{
-				func_201(&iLocal_109, 1, "WHSECUROMAXVIP", 0, 0, 0, 0);
+				func_201(&iLocal_109, 1, "WHSECUROMAXVIP" /* GXT: This computer is unavailable. The maximum number of VIPs, CEOs and Club Presidents has been reached in this session. */, 0, 0, 0, 0);
 			}
 			else if (func_163(PLAYER::PLAYER_ID()))
 			{
-				func_201(&iLocal_109, 1, "PIM_EXECH0x1", 0, 0, 0, 0);
+				func_201(&iLocal_109, 1, "PIM_EXECH0x1" /* GXT: SecuroServ access is currently blocked due to your recent behavior. */, 0, 0, 0, 0);
 			}
 			else if (NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 			{
-				func_188("WHSECUROBLCK");
+				func_188("WHSECUROBLCK" /* GXT: This computer is unavailable during a mission. */);
 			}
 			else
 			{
-				func_201(&iLocal_109, 1, "SECINPUTTREGLAP", 0, 0, 0, 0);
+				func_201(&iLocal_109, 1, "SECINPUTTREGLAP" /* GXT: Press ~INPUT_CONTEXT~ to register as a SecuroServ CEO and access this computer. */, 0, 0, 0, 0);
 			}
 		}
 		else if (func_67(PLAYER::PLAYER_ID()))
 		{
-			func_188("WHBIKERBLCK");
+			func_188("WHBIKERBLCK" /* GXT: You need to register as a SecuroServ CEO to access this computer. */);
 		}
 		else if ((func_242(&uLocal_114) && func_238(&uLocal_114, 10000, 1)) || !iLocal_111)
 		{
@@ -4485,7 +4485,7 @@ void func_183(bool bParam0)//Position - 0x4FCB
 				iLocal_111 = 1;
 				if (!Global_1946108)
 				{
-					func_188("WHSECUROBLCK");
+					func_188("WHSECUROBLCK" /* GXT: This computer is unavailable during a mission. */);
 				}
 			}
 			else
@@ -4496,14 +4496,14 @@ void func_183(bool bParam0)//Position - 0x4FCB
 				}
 				iLocal_111 = 0;
 				func_237(&uLocal_114);
-				func_201(&iLocal_109, 1, "WHSECUROINPUT", 0, 0, 0, 0);
+				func_201(&iLocal_109, 1, "WHSECUROINPUT" /* GXT: Press ~INPUT_CONTEXT~ to access this laptop. */, 0, 0, 0, 0);
 			}
 		}
 		else if (iLocal_111)
 		{
 			if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 			{
-				func_188("WHSECUROBLCK");
+				func_188("WHSECUROBLCK" /* GXT: This computer is unavailable during a mission. */);
 			}
 			if (!func_184(PLAYER::PLAYER_ID()))
 			{
@@ -4650,17 +4650,17 @@ void func_195(bool bParam0)//Position - 0x5305
 	{
 		if (NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 		{
-			func_188("WHSECUROBLCK");
+			func_188("WHSECUROBLCK" /* GXT: This computer is unavailable during a mission. */);
 		}
 		else if (func_189())
 		{
 			if (func_205(PLAYER::PLAYER_ID()))
 			{
-				func_188("BIKERWHBLCKC");
+				func_188("BIKERWHBLCKC" /* GXT: Join a public session to purchase a Business. */);
 			}
 			else
 			{
-				func_188("BIKERWHBLCKD");
+				func_188("BIKERWHBLCKD" /* GXT: Join a public session to manage your Business */);
 			}
 		}
 		else if (func_67(PLAYER::PLAYER_ID()))
@@ -4672,7 +4672,7 @@ void func_195(bool bParam0)//Position - 0x5305
 					iLocal_111 = 1;
 					if (!Global_1946108)
 					{
-						func_188("WHSECUROBLCK");
+						func_188("WHSECUROBLCK" /* GXT: This computer is unavailable during a mission. */);
 					}
 				}
 				else
@@ -4683,14 +4683,14 @@ void func_195(bool bParam0)//Position - 0x5305
 					}
 					iLocal_111 = 0;
 					func_237(&uLocal_114);
-					func_201(&iLocal_109, 1, "BIKERWHINPUT", 0, 0, 0, 0);
+					func_201(&iLocal_109, 1, "BIKERWHINPUT" /* GXT: Press ~INPUT_CONTEXT~ to securely access the Open Road website. */, 0, 0, 0, 0);
 				}
 			}
 			else if (iLocal_111)
 			{
 				if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 				{
-					func_188("WHSECUROBLCK");
+					func_188("WHSECUROBLCK" /* GXT: This computer is unavailable during a mission. */);
 				}
 				if (!func_196(PLAYER::PLAYER_ID()))
 				{
@@ -4701,11 +4701,11 @@ void func_195(bool bParam0)//Position - 0x5305
 		}
 		else if (!bParam0 && func_168() < func_167())
 		{
-			func_201(&iLocal_109, 1, "BIKERWHBLCKA", 0, 0, 0, 0);
+			func_201(&iLocal_109, 1, "BIKERWHBLCKA" /* GXT: Press ~INPUT_CONTEXT~ to found a Motorcycle Club and access this computer. */, 0, 0, 0, 0);
 		}
 		else
 		{
-			func_188("BIKERWHBLCKB");
+			func_188("BIKERWHBLCKB" /* GXT: You need to be the President of a Motorcycle Club to access this computer. */);
 		}
 	}
 }
@@ -4756,30 +4756,30 @@ void func_200(bool bParam0)//Position - 0x54FE
 	{
 		if (func_189())
 		{
-			func_188("WHPRIVSESLAP");
+			func_188("WHPRIVSESLAP" /* GXT: Join a public session to access the SecuroServ network. */);
 		}
 		else if (!bParam0)
 		{
 			if (func_168() >= func_167())
 			{
-				func_201(&iLocal_109, 1, "WHSECUROMAXVIP", 0, 0, 0, 0);
+				func_201(&iLocal_109, 1, "WHSECUROMAXVIP" /* GXT: This computer is unavailable. The maximum number of VIPs, CEOs and Club Presidents has been reached in this session. */, 0, 0, 0, 0);
 			}
 			else if (func_163(PLAYER::PLAYER_ID()))
 			{
-				func_201(&iLocal_109, 1, "PIM_EXECH0x1", 0, 0, 0, 0);
+				func_201(&iLocal_109, 1, "PIM_EXECH0x1" /* GXT: SecuroServ access is currently blocked due to your recent behavior. */, 0, 0, 0, 0);
 			}
 			else if (NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 			{
-				func_188("WHSECUROBLCK");
+				func_188("WHSECUROBLCK" /* GXT: This computer is unavailable during a mission. */);
 			}
 			else
 			{
-				func_201(&iLocal_109, 1, "SECINPUTTREGLAP", 0, 0, 0, 0);
+				func_201(&iLocal_109, 1, "SECINPUTTREGLAP" /* GXT: Press ~INPUT_CONTEXT~ to register as a SecuroServ CEO and access this computer. */, 0, 0, 0, 0);
 			}
 		}
 		else if (func_67(PLAYER::PLAYER_ID()))
 		{
-			func_188("WHBIKERBLCK");
+			func_188("WHBIKERBLCK" /* GXT: You need to register as a SecuroServ CEO to access this computer. */);
 		}
 		else if ((func_242(&uLocal_114) && func_238(&uLocal_114, 10000, 1)) || !iLocal_111)
 		{
@@ -4788,7 +4788,7 @@ void func_200(bool bParam0)//Position - 0x54FE
 				iLocal_111 = 1;
 				if (!Global_1946108)
 				{
-					func_188("WHSECUROBLCK");
+					func_188("WHSECUROBLCK" /* GXT: This computer is unavailable during a mission. */);
 				}
 			}
 			else
@@ -4799,14 +4799,14 @@ void func_200(bool bParam0)//Position - 0x54FE
 				}
 				iLocal_111 = 0;
 				func_237(&uLocal_114);
-				func_201(&iLocal_109, 1, "WHSECUROINPUT", 0, 0, 0, 0);
+				func_201(&iLocal_109, 1, "WHSECUROINPUT" /* GXT: Press ~INPUT_CONTEXT~ to access this laptop. */, 0, 0, 0, 0);
 			}
 		}
 		else if (iLocal_111)
 		{
 			if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 			{
-				func_188("WHSECUROBLCK");
+				func_188("WHSECUROBLCK" /* GXT: This computer is unavailable during a mission. */);
 			}
 			if (!func_243(PLAYER::PLAYER_ID()))
 			{
@@ -4874,7 +4874,7 @@ void func_201(int iParam0, int iParam1, char* sParam2, int iParam3, char* sParam
 
 int func_202()//Position - 0x5784
 {
-	if ((((((((((func_203("MP_OFF_LAP_1") || func_203("WHPRIVSESLAP")) || func_203("WHSECUROBLCK")) || func_203("SECINPUTTREGLAP")) || func_203("BIKERWHINPUT")) || func_203("BIKERWHBLCKA")) || func_203("BIKERWHBLCKB")) || func_203("WHBIKERBLCK")) || func_203("BIKERWHBLCKC")) || func_203("BIKERWHBLCKD")) || func_203("ARENAWHINPUT"))
+	if ((((((((((func_203("MP_OFF_LAP_1" /* GXT: Register as SecuroServ CEO to gain access to this computer. ~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */) || func_203("WHPRIVSESLAP" /* GXT: Join a public session to access the SecuroServ network. */)) || func_203("WHSECUROBLCK" /* GXT: This computer is unavailable during a mission. */)) || func_203("SECINPUTTREGLAP" /* GXT: Press ~INPUT_CONTEXT~ to register as a SecuroServ CEO and access this computer. */)) || func_203("BIKERWHINPUT" /* GXT: Press ~INPUT_CONTEXT~ to securely access the Open Road website. */)) || func_203("BIKERWHBLCKA" /* GXT: Press ~INPUT_CONTEXT~ to found a Motorcycle Club and access this computer. */)) || func_203("BIKERWHBLCKB" /* GXT: You need to be the President of a Motorcycle Club to access this computer. */)) || func_203("WHBIKERBLCK" /* GXT: You need to register as a SecuroServ CEO to access this computer. */)) || func_203("BIKERWHBLCKC" /* GXT: Join a public session to purchase a Business. */)) || func_203("BIKERWHBLCKD" /* GXT: Join a public session to manage your Business */)) || func_203("ARENAWHINPUT" /* GXT: Press ~INPUT_CONTEXT~ to access arenawar.tv.~n~Press ~INPUT_CONTEXT_SECONDARY~ to view Sponsorship Tier Unlocks. */))
 	{
 		return 1;
 	}

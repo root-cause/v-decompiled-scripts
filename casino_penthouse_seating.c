@@ -648,7 +648,7 @@ void func_1(var uParam0)//Position - 0xB3
 					MISC::SET_BIT(&(Global_1946250.f_3), 16);
 					if (func_51(uParam0))
 					{
-						func_45(&(uParam0->f_6), 4, "POD_TOO_MANY", 0, 0, 0, 0);
+						func_45(&(uParam0->f_6), 4, "POD_TOO_MANY" /* GXT: Too many players near activity. */, 0, 0, 0, 0);
 					}
 					else
 					{
@@ -667,11 +667,11 @@ void func_1(var uParam0)//Position - 0xB3
 						{
 							if (func_41(uParam0->f_9) && !Global_262145.f_27059)
 							{
-								func_45(&(uParam0->f_6), 4, "MPTV_WALKOFF", 0, 0, 0, 0);
+								func_45(&(uParam0->f_6), 4, "MPTV_WALKOFF" /* GXT: Press ~INPUT_CONTEXT~ to sit down, watch TV or play "Don't Cross The Line". */, 0, 0, 0, 0);
 							}
 							else
 							{
-								func_45(&(uParam0->f_6), 4, "MPJAC_SIT", 0, 0, 0, 0);
+								func_45(&(uParam0->f_6), 4, "MPJAC_SIT" /* GXT: Press ~INPUT_CONTEXT~ to sit down. */, 0, 0, 0, 0);
 							}
 						}
 					}
@@ -1040,20 +1040,20 @@ void func_8(var uParam0)//Position - 0x92C
 					{
 						if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 						{
-							func_45(&(uParam0->f_6), 4, "MPOF_AC_PC_EXIT", 0, 0, 0, 0);
+							func_45(&(uParam0->f_6), 4, "MPOF_AC_PC_EXIT" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
 						}
 						else
 						{
-							func_45(&(uParam0->f_6), 4, "MPOF_AC_EXIT", 0, 0, 0, 0);
+							func_45(&(uParam0->f_6), 4, "MPOF_AC_EXIT" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
 						}
 					}
 					else if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 					{
-						func_45(&(uParam0->f_6), 4, "MPOFSEAT_PCEXIT", 0, 0, 0, 0);
+						func_45(&(uParam0->f_6), 4, "MPOFSEAT_PCEXIT" /* GXT: Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
 					}
 					else
 					{
-						func_45(&(uParam0->f_6), 4, "MPOFSEAT_EXIT", 0, 0, 0, 0);
+						func_45(&(uParam0->f_6), 4, "MPOFSEAT_EXIT" /* GXT: Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
 					}
 				}
 				if (uParam0->f_13 == 6)

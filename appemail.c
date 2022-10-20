@@ -207,10 +207,10 @@ void __EntryFunction__()//Position - 0x0
 									sLocal_65 = func_51(iLocal_51, iLocal_56);
 									if (!func_50(37))
 									{
-										switch (func_48("AM_H_FLINK"))
+										switch (func_48("AM_H_FLINK" /* GXT: Some emails contain hyperlinks to web pages. Press ~INPUT_CELLPHONE_EXTRA_OPTION~ to jump to the linked page. */))
 										{
 											case 2:
-												func_45("AM_H_FLINK", 2, 0, 1000, 10000, 7, 0, 0, 0);
+												func_45("AM_H_FLINK" /* GXT: Some emails contain hyperlinks to web pages. Press ~INPUT_CELLPHONE_EXTRA_OPTION~ to jump to the linked page. */, 2, 0, 1000, 10000, 7, 0, 0, 0);
 												break;
 											
 											case 1:
@@ -223,7 +223,7 @@ void __EntryFunction__()//Position - 0x0
 										if (!BitTest(Global_4541229, 17))
 										{
 											MISC::SET_BIT(&Global_4541229, 17);
-											func_43("AM_H_FLINK", -1);
+											func_43("AM_H_FLINK" /* GXT: Some emails contain hyperlinks to web pages. Press ~INPUT_CELLPHONE_EXTRA_OPTION~ to jump to the linked page. */, -1);
 										}
 									}
 									func_75(1);
@@ -232,10 +232,10 @@ void __EntryFunction__()//Position - 0x0
 								{
 									if (!func_50(38))
 									{
-										switch (func_48("AM_H_SCROLL"))
+										switch (func_48("AM_H_SCROLL" /* GXT: Use ~INPUTGROUP_CELLPHONE_NAVIGATE_UD~ to scroll through an email. */))
 										{
 											case 2:
-												func_45("AM_H_SCROLL", 2, 0, 1000, 10000, 7, 0, 0, 0);
+												func_45("AM_H_SCROLL" /* GXT: Use ~INPUTGROUP_CELLPHONE_NAVIGATE_UD~ to scroll through an email. */, 2, 0, 1000, 10000, 7, 0, 0, 0);
 												break;
 											
 											case 1:
@@ -385,8 +385,8 @@ void func_5()//Position - 0x57D
 			}
 			if (Global_20254)
 			{
-				func_13(Global_20247, "SET_SOFT_KEYS", 2f, 1f, 2f, -1f, -1f, "CELL_205", 0, 0, 0, 0);
-				func_13(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, "CELL_206", 0, 0, 0, 0);
+				func_13(Global_20247, "SET_SOFT_KEYS", 2f, 1f, 2f, -1f, -1f, "CELL_205" /* GXT: SELECT */, 0, 0, 0, 0);
+				func_13(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, "CELL_206" /* GXT: BACK */, 0, 0, 0, 0);
 			}
 			else
 			{
@@ -409,7 +409,7 @@ void func_5()//Position - 0x57D
 				{
 					if (Global_20254)
 					{
-						func_13(Global_20247, "SET_SOFT_KEYS", 1f, 1f, 20f, -1f, -1f, "CELL_225", 0, 0, 0, 0);
+						func_13(Global_20247, "SET_SOFT_KEYS", 1f, 1f, 20f, -1f, -1f, "CELL_225" /* GXT: NEXT */, 0, 0, 0, 0);
 					}
 					else
 					{
@@ -418,7 +418,7 @@ void func_5()//Position - 0x57D
 				}
 				else if (Global_20254)
 				{
-					func_13(Global_20247, "SET_SOFT_KEYS", 1f, 1f, 3f, -1f, -1f, "CELL_225", 0, 0, 0, 0);
+					func_13(Global_20247, "SET_SOFT_KEYS", 1f, 1f, 3f, -1f, -1f, "CELL_225" /* GXT: NEXT */, 0, 0, 0, 0);
 				}
 				else
 				{
@@ -448,7 +448,7 @@ void func_5()//Position - 0x57D
 			}
 			else if (Global_20254)
 			{
-				func_13(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 6f, -1f, -1f, "CELL_202", 0, 0, 0, 0);
+				func_13(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 6f, -1f, -1f, "CELL_202" /* GXT: END CALL */, 0, 0, 0, 0);
 				if (Global_20209)
 				{
 					func_13(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 6f, -1f, -1f, 0, 0, 0, 0, 0);
@@ -471,21 +471,21 @@ void func_5()//Position - 0x57D
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(4);
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_CONDFON");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_CONDFON" /* GXT: ~a~ */);
 					HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&Global_21620);
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
-					func_9("CELL_300");
-					func_9("CELL_217");
-					func_9("CELL_217");
+					func_9("CELL_300" /* GXT: CHAR_DEFAULT */);
+					func_9("CELL_217" /* GXT: INCOMING CALL */);
+					func_9("CELL_217" /* GXT: INCOMING CALL */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				}
 				else if (func_8(Global_7451, Global_20266) == 0)
 				{
-					func_13(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(4), SYSTEM::TO_FLOAT(0), SYSTEM::TO_FLOAT(2), -1f, -1f, &(Global_117[Global_7451 /*10*/].f_4), "CELL_300", "CELL_217", "CELL_195", 0);
+					func_13(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(4), SYSTEM::TO_FLOAT(0), SYSTEM::TO_FLOAT(2), -1f, -1f, &(Global_117[Global_7451 /*10*/].f_4), "CELL_300" /* GXT: CHAR_DEFAULT */, "CELL_217" /* GXT: INCOMING CALL */, "CELL_195" /* GXT: Unknown */, 0);
 				}
 				else
 				{
-					func_13(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(4), SYSTEM::TO_FLOAT(0), SYSTEM::TO_FLOAT(2), -1f, -1f, &(Global_1998[Global_7451 /*29*/].f_3), &(Global_1998[Global_7451 /*29*/].f_7), "CELL_217", &(Global_1998[Global_7451 /*29*/].f_3), 0);
+					func_13(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(4), SYSTEM::TO_FLOAT(0), SYSTEM::TO_FLOAT(2), -1f, -1f, &(Global_1998[Global_7451 /*29*/].f_3), &(Global_1998[Global_7451 /*29*/].f_7), "CELL_217" /* GXT: INCOMING CALL */, &(Global_1998[Global_7451 /*29*/].f_3), 0);
 				}
 				func_64(Global_20247, "DISPLAY_VIEW", 4f, -1082130432, -1082130432, -1082130432, -1082130432);
 			}
@@ -499,28 +499,28 @@ void func_5()//Position - 0x57D
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(4);
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_CONDFON");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_CONDFON" /* GXT: ~a~ */);
 					HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&Global_21620);
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
-					func_9("CELL_300");
-					func_9("CELL_219");
-					func_9("CELL_219");
+					func_9("CELL_300" /* GXT: CHAR_DEFAULT */);
+					func_9("CELL_219" /* GXT: CONNECTED */);
+					func_9("CELL_219" /* GXT: CONNECTED */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				}
 				else
 				{
 					if (Global_21863)
 					{
-						StringCopy(&cVar0, "CELL_219", 24);
+						StringCopy(&cVar0, "CELL_219" /* GXT: CONNECTED */, 24);
 					}
 					else
 					{
-						StringCopy(&cVar0, "CELL_211", 24);
+						StringCopy(&cVar0, "CELL_211" /* GXT: DIALING... */, 24);
 					}
 					if (func_8(Global_7451, Global_20266) == 0)
 					{
 						func_64(Global_20247, "SET_DATA_SLOT_EMPTY", 4f, -1082130432, -1082130432, -1082130432, -1082130432);
-						func_13(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(4), SYSTEM::TO_FLOAT(0), SYSTEM::TO_FLOAT(3), -1f, -1f, &(Global_117[Global_7451 /*10*/].f_4), "CELL_300", &cVar0, "CELL_195", 0);
+						func_13(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(4), SYSTEM::TO_FLOAT(0), SYSTEM::TO_FLOAT(3), -1f, -1f, &(Global_117[Global_7451 /*10*/].f_4), "CELL_300" /* GXT: CHAR_DEFAULT */, &cVar0, "CELL_195" /* GXT: Unknown */, 0);
 					}
 					else
 					{
@@ -547,7 +547,7 @@ void func_6()//Position - 0xB35
 		{
 			if (Global_20254)
 			{
-				func_13(Global_20247, "SET_SOFT_KEYS", 2f, 1f, 5f, -1f, -1f, "CELL_203", 0, 0, 0, 0);
+				func_13(Global_20247, "SET_SOFT_KEYS", 2f, 1f, 5f, -1f, -1f, "CELL_203" /* GXT: ANSWER */, 0, 0, 0, 0);
 			}
 			else
 			{
@@ -563,7 +563,7 @@ void func_6()//Position - 0xB35
 			}
 			else if (Global_20254)
 			{
-				func_13(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 6f, -1f, -1f, "CELL_204", 0, 0, 0, 0);
+				func_13(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 6f, -1f, -1f, "CELL_204" /* GXT: REJECT */, 0, 0, 0, 0);
 			}
 			else
 			{
@@ -583,7 +583,7 @@ void func_6()//Position - 0xB35
 			}
 			else if (Global_20254)
 			{
-				func_13(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 6f, -1f, -1f, "CELL_202", 0, 0, 0, 0);
+				func_13(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 6f, -1f, -1f, "CELL_202" /* GXT: END CALL */, 0, 0, 0, 0);
 				if (Global_20209)
 				{
 					func_13(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 6f, -1f, -1f, 0, 0, 0, 0, 0);
@@ -1045,7 +1045,7 @@ void func_14(int iParam0)//Position - 0x108D
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(42);
 								GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							}
-							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB")) && BitTest(Global_8137, 6))
+							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB" /* GXT: Benny's */)) && BitTest(Global_8137, 6))
 							{
 								GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT");
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
@@ -1369,11 +1369,11 @@ void func_17()//Position - 0x1783
 				}
 				else
 				{
-					if (func_48("AM_H_FLINK") == 0)
+					if (func_48("AM_H_FLINK" /* GXT: Some emails contain hyperlinks to web pages. Press ~INPUT_CELLPHONE_EXTRA_OPTION~ to jump to the linked page. */) == 0)
 					{
 						func_44(37);
 					}
-					if (func_48("AM_H_SCROLL") == 0)
+					if (func_48("AM_H_SCROLL" /* GXT: Use ~INPUTGROUP_CELLPHONE_NAVIGATE_UD~ to scroll through an email. */) == 0)
 					{
 						func_44(38);
 					}
@@ -1400,11 +1400,11 @@ void func_17()//Position - 0x1783
 	{
 		if (iLocal_64)
 		{
-			if (func_48("AM_H_FLINK") == 0)
+			if (func_48("AM_H_FLINK" /* GXT: Some emails contain hyperlinks to web pages. Press ~INPUT_CELLPHONE_EXTRA_OPTION~ to jump to the linked page. */) == 0)
 			{
 				func_44(37);
 			}
-			if (func_48("AM_H_SCROLL") == 0)
+			if (func_48("AM_H_SCROLL" /* GXT: Use ~INPUTGROUP_CELLPHONE_NAVIGATE_UD~ to scroll through an email. */) == 0)
 			{
 				func_44(38);
 			}
@@ -1937,7 +1937,7 @@ void func_27(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4)
 				case 1:
 					if (iVar2 == 249)
 					{
-						func_28(1, iVar1, iVar2, "PW_FEED_EM_1", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+						func_28(1, iVar1, iVar2, "PW_FEED_EM_1" /* GXT: You've been nominated to take part in Southern San Andreas' premier amateur photography competition in the wildlife sector. You'll join hundreds of other young, talented... */, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 					}
 					else
 					{
@@ -1971,15 +1971,15 @@ void func_28(int iParam0, int iParam1, int iParam2, char* sParam3, char* sParam4
 		switch (iParam2)
 		{
 			case 72:
-				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL1");
+				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL1" /* GXT: Dear Mr. De Santa, please find below your weekly income from owned properties:~n~ */);
 				break;
 			
 			case 73:
-				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL3");
+				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL3" /* GXT: Dear Mr. Clinton, please find below your weekly income from owned properties:~n~ */);
 				break;
 			
 			case 74:
-				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL2");
+				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL2" /* GXT: Dear Mr. Philips, please find below your weekly income from owned properties:~n~ */);
 				break;
 			
 			default:
@@ -2088,202 +2088,202 @@ char* func_30(int iParam0)//Position - 0x286B
 	switch (iParam0)
 	{
 		case 0:
-			return "EMSTR_0";
+			return "EMSTR_0" /* GXT: Mike */;
 		
 		case 3:
-			return "EMSTR_3";
+			return "EMSTR_3" /* GXT: Jimmy */;
 		
 		case 1:
-			return "EMSTR_6";
+			return "EMSTR_6" /* GXT: Franklin */;
 		
 		case 2:
-			return "EMSTR_9";
+			return "EMSTR_9" /* GXT: Trevor */;
 		
 		case 4:
-			return "EMSTR_12";
+			return "EMSTR_12" /* GXT: Marnie */;
 		
 		case 5:
-			return "EMSTR_29";
+			return "EMSTR_29" /* GXT: Epsilon Store */;
 		
 		case 6:
-			return "EMSTR_36";
+			return "EMSTR_36" /* GXT: Maude */;
 		
 		case 7:
-			return "EMSTR_39";
+			return "EMSTR_39" /* GXT: Lester */;
 		
 		case 8:
-			return "EMSTR_52";
+			return "EMSTR_52" /* GXT: Maze Bank */;
 		
 		case 9:
-			return "EMSTR_55";
+			return "EMSTR_55" /* GXT: Fleeca */;
 		
 		case 10:
-			return "EMSTR_58";
+			return "EMSTR_58" /* GXT: Bank of Liberty */;
 		
 		case 11:
-			return "EMSTR_78";
+			return "EMSTR_78" /* GXT: Legendary Motorsport Sales */;
 		
 		case 12:
-			return "EMSTR_81";
+			return "EMSTR_81" /* GXT: Elitas Sales */;
 		
 		case 13:
-			return "EMSTR_84";
+			return "EMSTR_84" /* GXT: Cache & Carry */;
 		
 		case 14:
-			return "EMSTR_87";
+			return "EMSTR_87" /* GXT: Dock Tease */;
 		
 		case 15:
-			return "EMSTR_106";
+			return "EMSTR_106" /* GXT: LSC */;
 		
 		case 16:
-			return "EMSTR_114";
+			return "EMSTR_114" /* GXT: AMMU-NATION */;
 		
 		case 17:
-			return "EMSTR_142";
+			return "EMSTR_142" /* GXT: Christian Feltz */;
 		
 		case 18:
-			return "EMSTR_145";
+			return "EMSTR_145" /* GXT: Paige Harris */;
 		
 		case 19:
-			return "EMSTR_152";
+			return "EMSTR_152" /* GXT: Los Santos Tourist Info */;
 		
 		case 20:
-			return "EMSTR_157";
+			return "EMSTR_157" /* GXT: Rickie Luckens */;
 		
 		case 21:
-			return "EMSTR_163";
+			return "EMSTR_163" /* GXT: Minotaur Property Management */;
 		
 		case 22:
-			return "EMSTR_182";
+			return "EMSTR_182" /* GXT: Saeeda Kadam */;
 		
 		case 23:
-			return "EMSTR_187";
+			return "EMSTR_187" /* GXT: Vanilla Unicorn */;
 		
 		case 24:
-			return "EMSTR_190";
+			return "EMSTR_190" /* GXT: Dr Isiah Friedlander */;
 		
 		case 25:
-			return "EMSTR_206";
+			return "EMSTR_206" /* GXT: TRACEYHEARTSTEALER */;
 		
 		case 26:
-			return "EMSTR_219";
+			return "EMSTR_219" /* GXT: Dave Norton */;
 		
 		case 27:
-			return "EMSTR_226";
+			return "EMSTR_226" /* GXT: Amanda De Santa */;
 		
 		case 28:
-			return "EMSTR_233";
+			return "EMSTR_233" /* GXT: Donald Percival */;
 		
 		case 29:
-			return "EMSTR_242";
+			return "EMSTR_242" /* GXT: Ron */;
 		
 		case 30:
-			return "EMSTR_249";
+			return "EMSTR_249" /* GXT: Tanisha Marks */;
 		
 		case 31:
-			return "EMSTR_262";
+			return "EMSTR_262" /* GXT: Denise */;
 		
 		case 32:
-			return "EMSTR_269";
+			return "EMSTR_269" /* GXT: Lamar Davis */;
 		
 		case 33:
-			return "EMSTR_319";
+			return "EMSTR_319" /* GXT: Brad */;
 		
 		case 34:
-			return "EMSTR_340";
+			return "EMSTR_340" /* GXT: Patricia Madrazo */;
 		
 		case 35:
-			return "EMSTR_348";
+			return "EMSTR_348" /* GXT: Eileen Haworth */;
 		
 		case 36:
-			return "EMSTR_182";
+			return "EMSTR_182" /* GXT: Saeeda Kadam */;
 		
 		case 37:
-			return "EMSTR_357";
+			return "EMSTR_357" /* GXT: Gray Nicholson */;
 		
 		case 38:
-			return "EMSTR_360";
+			return "EMSTR_360" /* GXT: Nigel */;
 		
 		case 39:
-			return "EMSTR_369";
+			return "EMSTR_369" /* GXT: Hookies */;
 		
 		case 40:
-			return "EMSTR_376";
+			return "EMSTR_376" /* GXT: Towing Impound */;
 		
 		case 41:
-			return "EMSTR_379";
+			return "EMSTR_379" /* GXT: Downtown Cab Co, */;
 		
 		case 42:
-			return "EMSTR_382";
+			return "EMSTR_382" /* GXT: McKenzie Field Hangar */;
 		
 		case 43:
-			return "EMSTR_384";
+			return "EMSTR_384" /* GXT: Sonar Collections Dock */;
 		
 		case 44:
-			return "EMSTR_387";
+			return "EMSTR_387" /* GXT: Los Santos Customs */;
 		
 		case 45:
-			return "EMSTR_390";
+			return "EMSTR_390" /* GXT: Cinema Doppler */;
 		
 		case 46:
-			return "EMSTR_393";
+			return "EMSTR_393" /* GXT: Ten Cent Theater */;
 		
 		case 47:
-			return "EMSTR_396";
+			return "EMSTR_396" /* GXT: Tivoli Cinema */;
 		
 		case 48:
-			return "EMSTR_399";
+			return "EMSTR_399" /* GXT: Los Santos Golf Club */;
 		
 		case 49:
-			return "EMSTR_402";
+			return "EMSTR_402" /* GXT: Car Scrap Yard */;
 		
 		case 50:
-			return "EMSTR_405";
+			return "EMSTR_405" /* GXT: Smoke on the Water */;
 		
 		case 51:
-			return "EMSTR_408";
+			return "EMSTR_408" /* GXT: Tequi-la-la */;
 		
 		case 52:
-			return "EMSTR_411";
+			return "EMSTR_411" /* GXT: Pitchers */;
 		
 		case 53:
-			return "EMSTR_414";
+			return "EMSTR_414" /* GXT: The Hen House */;
 		
 		case 54:
-			return "EMSTR_465";
+			return "EMSTR_465" /* GXT: Pedal & Metal Sales */;
 		
 		case 55:
-			return "EMSTR_468";
+			return "EMSTR_468" /* GXT: SSA Super Autos Sales */;
 		
 		case 56:
-			return "EMSTR_489";
+			return "EMSTR_489" /* GXT: Hush Smush */;
 		
 		case 57:
-			return "EMSTR_492";
+			return "EMSTR_492" /* GXT: foxymama21 */;
 		
 		case 58:
-			return "EMSTR_495";
+			return "EMSTR_495" /* GXT: Altarego12 */;
 		
 		case 59:
-			return "EMSTR_498";
+			return "EMSTR_498" /* GXT: BadKitty11 */;
 		
 		case 60:
-			return "EMSTR_501";
+			return "EMSTR_501" /* GXT: 7yearbitch */;
 		
 		case 61:
-			return "EMSTR_504";
+			return "EMSTR_504" /* GXT: Froggy69 */;
 		
 		case 62:
-			return "EMSTR_507";
+			return "EMSTR_507" /* GXT: Misscuddles */;
 		
 		case 63:
-			return "EMSTR_640";
+			return "EMSTR_640" /* GXT: Offroad Events */;
 		
 		case 64:
-			return "EMSTR_643";
+			return "EMSTR_643" /* GXT: Dock Tease */;
 		
 		case 65:
-			return "EMSTR_652";
+			return "EMSTR_652" /* GXT: Brother Adrian */;
 		
 		default:
 	}
@@ -2368,7 +2368,7 @@ char* func_31(int iParam0, int iParam1)//Position - 0x2BD6
 			return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_1998[40 /*29*/].f_7));
 		
 		case 36:
-			return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_E_381");
+			return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_E_381" /* GXT: CHAR_SAEEDA */);
 		
 		case 38:
 			return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_1998[64 /*29*/].f_7));
@@ -2667,7 +2667,7 @@ void func_40(int iParam0, int iParam1, int iParam2)//Position - 0x3209
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 			func_9("");
 			func_9("");
-			func_9("EM_RESPONSE_NEW");
+			func_9("EM_RESPONSE_NEW" /* GXT: Response: */);
 			func_9(&Var10);
 			func_9(func_42(Global_44257[iVar8 /*12*/].f_2));
 			func_41(iVar8, Global_44257[iVar8 /*12*/].f_2);
@@ -2749,202 +2749,202 @@ char* func_42(int iParam0)//Position - 0x348C
 	switch (iParam0)
 	{
 		case 0:
-			return "EMSTR_2";
+			return "EMSTR_2" /* GXT: -Michael */;
 		
 		case 3:
-			return "EMSTR_5";
+			return "EMSTR_5" /* GXT: J */;
 		
 		case 1:
-			return "EMSTR_8";
+			return "EMSTR_8" /* GXT: F */;
 		
 		case 2:
-			return "EMSTR_11";
+			return "EMSTR_11" /* GXT: T */;
 		
 		case 4:
-			return "EMSTR_14";
+			return "EMSTR_14" /* GXT: M */;
 		
 		case 5:
-			return "EMSTR_31";
+			return "EMSTR_31" /* GXT: Praise Kraff */;
 		
 		case 6:
-			return "EMSTR_38";
+			return "EMSTR_38" /* GXT: -Maude */;
 		
 		case 7:
-			return "EMSTR_41";
+			return "EMSTR_41" /* GXT: -Lester */;
 		
 		case 8:
-			return "EMSTR_54";
+			return "EMSTR_54" /* GXT: Maze Online Support */;
 		
 		case 9:
-			return "EMSTR_57";
+			return "EMSTR_57" /* GXT: Fleeca Customer Services */;
 		
 		case 10:
-			return "EMSTR_60";
+			return "EMSTR_60" /* GXT: BoL Transaction Services */;
 		
 		case 11:
-			return "EMSTR_80";
+			return "EMSTR_80" /* GXT: Legendary Motorsport */;
 		
 		case 12:
-			return "EMSTR_83";
+			return "EMSTR_83" /* GXT: Elitas Travel */;
 		
 		case 13:
-			return "EMSTR_86";
+			return "EMSTR_86" /* GXT: C&C */;
 		
 		case 14:
-			return "EMSTR_89";
+			return "EMSTR_89" /* GXT: DT Sales */;
 		
 		case 15:
-			return "EMSTR_106";
+			return "EMSTR_106" /* GXT: LSC */;
 		
 		case 16:
-			return "EMSTR_116";
+			return "EMSTR_116" /* GXT: ~b~<u>www.ammunation.net</u>~s~ */;
 		
 		case 17:
-			return "EMSTR_144";
+			return "EMSTR_144" /* GXT: C */;
 		
 		case 18:
-			return "EMSTR_147";
+			return "EMSTR_147" /* GXT: P */;
 		
 		case 19:
-			return "EMSTR_154";
+			return "EMSTR_154" /* GXT: LS Tourist Info */;
 		
 		case 20:
-			return "EMSTR_159";
+			return "EMSTR_159" /* GXT: R */;
 		
 		case 21:
-			return "EMSTR_165";
+			return "EMSTR_165" /* GXT: Minotaur Finance - navigating the maze that is property ownership */;
 		
 		case 22:
-			return "EMSTR_184";
+			return "EMSTR_184" /* GXT: -Saeeda Kadam */;
 		
 		case 23:
-			return "EMSTR_189";
+			return "EMSTR_189" /* GXT: -Vanilla Unicorn */;
 		
 		case 24:
-			return "EMSTR_192";
+			return "EMSTR_192" /* GXT: Isiah Friedlander */;
 		
 		case 25:
-			return "EMSTR_208";
+			return "EMSTR_208" /* GXT: - Tracey */;
 		
 		case 26:
-			return "EMSTR_221";
+			return "EMSTR_221" /* GXT: - Davey */;
 		
 		case 27:
-			return "EMSTR_228";
+			return "EMSTR_228" /* GXT: - Amanda */;
 		
 		case 28:
-			return "EMSTR_235";
+			return "EMSTR_235" /* GXT: - Donald Percival */;
 		
 		case 29:
-			return "EMSTR_244";
+			return "EMSTR_244" /* GXT: - Ron */;
 		
 		case 30:
-			return "EMSTR_251";
+			return "EMSTR_251" /* GXT: - Tanisha */;
 		
 		case 31:
-			return "EMSTR_264";
+			return "EMSTR_264" /* GXT: - Denise */;
 		
 		case 32:
-			return "EMSTR_271";
+			return "EMSTR_271" /* GXT: - Lamar */;
 		
 		case 33:
-			return "EMSTR_321";
+			return "EMSTR_321" /* GXT: - Brad */;
 		
 		case 34:
-			return "EMSTR_342";
+			return "EMSTR_342" /* GXT: - Patricia M */;
 		
 		case 35:
-			return "EMSTR_350";
+			return "EMSTR_350" /* GXT: - Eileen Haworth */;
 		
 		case 36:
-			return "EMSTR_354";
+			return "EMSTR_354" /* GXT: - Saeeda Kadam */;
 		
 		case 37:
-			return "EMSTR_359";
+			return "EMSTR_359" /* GXT: - Gray N */;
 		
 		case 38:
-			return "EMSTR_362";
+			return "EMSTR_362" /* GXT: - Nigel */;
 		
 		case 39:
-			return "EMSTR_371";
+			return "EMSTR_371" /* GXT: - Hookies */;
 		
 		case 40:
-			return "EMSTR_378";
+			return "EMSTR_378" /* GXT: - Towing Impound */;
 		
 		case 41:
-			return "EMSTR_381";
+			return "EMSTR_381" /* GXT: - Downtown Cab Co. */;
 		
 		case 42:
-			return "EMSTR_382";
+			return "EMSTR_382" /* GXT: McKenzie Field Hangar */;
 		
 		case 43:
-			return "EMSTR_386";
+			return "EMSTR_386" /* GXT: - Sonar Collections Dock */;
 		
 		case 44:
-			return "EMSTR_389";
+			return "EMSTR_389" /* GXT: - Los Santos Customs */;
 		
 		case 45:
-			return "EMSTR_392";
+			return "EMSTR_392" /* GXT: - Cinema Doppler */;
 		
 		case 46:
-			return "EMSTR_395";
+			return "EMSTR_395" /* GXT: - Ten Cent Theater */;
 		
 		case 47:
-			return "EMSTR_398";
+			return "EMSTR_398" /* GXT: - Tivoli Cinema */;
 		
 		case 48:
-			return "EMSTR_401";
+			return "EMSTR_401" /* GXT: - Los Santos Golf Club */;
 		
 		case 49:
-			return "EMSTR_404";
+			return "EMSTR_404" /* GXT: - Car Scrap Yard */;
 		
 		case 50:
-			return "EMSTR_407";
+			return "EMSTR_407" /* GXT: - Smoke on the Water */;
 		
 		case 51:
-			return "EMSTR_410";
+			return "EMSTR_410" /* GXT: - Tequi-la-la */;
 		
 		case 52:
-			return "EMSTR_413";
+			return "EMSTR_413" /* GXT: - Pitchers */;
 		
 		case 53:
-			return "EMSTR_416";
+			return "EMSTR_416" /* GXT: - The Hen House */;
 		
 		case 54:
-			return "EMSTR_467";
+			return "EMSTR_467" /* GXT: Pedal & Metal Cycles */;
 		
 		case 55:
-			return "EMSTR_470";
+			return "EMSTR_470" /* GXT: SSA Super Autos */;
 		
 		case 56:
-			return "EMSTR_491";
+			return "EMSTR_491" /* GXT: Hush Smush */;
 		
 		case 57:
-			return "EMSTR_494";
+			return "EMSTR_494" /* GXT: foxymama21 */;
 		
 		case 58:
-			return "EMSTR_497";
+			return "EMSTR_497" /* GXT: Altarego12 */;
 		
 		case 59:
-			return "EMSTR_500";
+			return "EMSTR_500" /* GXT: BadKitty11 */;
 		
 		case 60:
-			return "EMSTR_503";
+			return "EMSTR_503" /* GXT: 7yearbitch */;
 		
 		case 61:
-			return "EMSTR_506";
+			return "EMSTR_506" /* GXT: Froggy69 */;
 		
 		case 62:
-			return "EMSTR_509";
+			return "EMSTR_509" /* GXT: Misscuddles */;
 		
 		case 63:
-			return "EMSTR_642";
+			return "EMSTR_642" /* GXT: - Southern San Andreas Super Autos */;
 		
 		case 64:
-			return "EMSTR_645";
+			return "EMSTR_645" /* GXT: - Dock Tease Events */;
 		
 		case 65:
-			return "EMSTR_654";
+			return "EMSTR_654" /* GXT: Brother Adrian */;
 		
 		default:
 	}
@@ -3721,15 +3721,15 @@ int func_57(int iParam0, var uParam1, int iParam2, int iParam3)//Position - 0x46
 	switch (iParam3)
 	{
 		case 72:
-			StringCopy(&Var4, "PROPR_INCEMAIL1", 64);
+			StringCopy(&Var4, "PROPR_INCEMAIL1" /* GXT: Dear Mr. De Santa, please find below your weekly income from owned properties:~n~ */, 64);
 			break;
 		
 		case 73:
-			StringCopy(&Var4, "PROPR_INCEMAIL3", 64);
+			StringCopy(&Var4, "PROPR_INCEMAIL3" /* GXT: Dear Mr. Clinton, please find below your weekly income from owned properties:~n~ */, 64);
 			break;
 		
 		case 74:
-			StringCopy(&Var4, "PROPR_INCEMAIL2", 64);
+			StringCopy(&Var4, "PROPR_INCEMAIL2" /* GXT: Dear Mr. Philips, please find below your weekly income from owned properties:~n~ */, 64);
 			break;
 	}
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
@@ -3778,73 +3778,73 @@ int func_57(int iParam0, var uParam1, int iParam2, int iParam3)//Position - 0x46
 			switch (iVar6)
 			{
 				case 0:
-					sVar8 = "ACCNA_TOWING";
+					sVar8 = "ACCNA_TOWING" /* GXT: Towing Impound */;
 					break;
 				
 				case 1:
-					sVar8 = "ACCNA_TAXI_LOT";
+					sVar8 = "ACCNA_TAXI_LOT" /* GXT: Downtown Cab Co. */;
 					break;
 				
 				case 2:
-					sVar8 = "ACCNA_ARMS";
+					sVar8 = "ACCNA_ARMS" /* GXT: McKenzie Field Hangar */;
 					break;
 				
 				case 3:
-					sVar8 = "ACCNA_SONAR";
+					sVar8 = "ACCNA_SONAR" /* GXT: Sonar Collections Dock */;
 					break;
 				
 				case 4:
-					sVar8 = "ACCNA_CARMOD";
+					sVar8 = "ACCNA_CARMOD" /* GXT: Los Santos Customs */;
 					break;
 				
 				case 5:
-					sVar8 = "ACCNA_VCINEMA";
+					sVar8 = "ACCNA_VCINEMA" /* GXT: Cinema Doppler */;
 					break;
 				
 				case 6:
-					sVar8 = "ACCNA_DCINEMA";
+					sVar8 = "ACCNA_DCINEMA" /* GXT: Ten Cent Theater */;
 					break;
 				
 				case 7:
-					sVar8 = "ACCNA_MCINEMA";
+					sVar8 = "ACCNA_MCINEMA" /* GXT: Tivoli Cinema */;
 					break;
 				
 				case 8:
-					sVar8 = "ACCNA_GOLF";
+					sVar8 = "ACCNA_GOLF" /* GXT: Los Santos Golf Club */;
 					break;
 				
 				case 9:
-					sVar8 = "ACCNA_CSCRAP";
+					sVar8 = "ACCNA_CSCRAP" /* GXT: Car Scrapyard */;
 					break;
 				
 				case 10:
-					sVar8 = "ACCNA_SMOKE";
+					sVar8 = "ACCNA_SMOKE" /* GXT: Smoke on the Water */;
 					break;
 				
 				case 11:
-					sVar8 = "ACCNA_TEQUILA";
+					sVar8 = "ACCNA_TEQUILA" /* GXT: Tequi-la-la */;
 					break;
 				
 				case 12:
-					sVar8 = "ACCNA_PITCHERS";
+					sVar8 = "ACCNA_PITCHERS" /* GXT: Pitchers */;
 					break;
 				
 				case 13:
-					sVar8 = "ACCNA_HEN";
+					sVar8 = "ACCNA_HEN" /* GXT: The Hen House */;
 					break;
 				
 				case 14:
-					sVar8 = "ACCNA_HOOKIES";
+					sVar8 = "ACCNA_HOOKIES" /* GXT: Hookies */;
 					break;
 				
 				case 15:
-					sVar8 = "ACCNA_STRP";
+					sVar8 = "ACCNA_STRP" /* GXT: Vanilla Unicorn */;
 					break;
 			}
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(9);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar2);
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PROPR_INCEMAIL4");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PROPR_INCEMAIL4" /* GXT: ~a~: $~1~ */);
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sVar8);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(Global_113386.f_24904[iVar6 /*4*/].f_3);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -3878,202 +3878,202 @@ char* func_59(int iParam0)//Position - 0x490E
 	switch (iParam0)
 	{
 		case 0:
-			return "EMSTR_1";
+			return "EMSTR_1" /* GXT: Mike@eyefind.info */;
 		
 		case 3:
-			return "EMSTR_4";
+			return "EMSTR_4" /* GXT: jimmy@eyefind.info */;
 		
 		case 1:
-			return "EMSTR_7";
+			return "EMSTR_7" /* GXT: Frankie@eyefind.info */;
 		
 		case 2:
-			return "EMSTR_10";
+			return "EMSTR_10" /* GXT: trev@eyefind.info */;
 		
 		case 4:
-			return "EMSTR_13";
+			return "EMSTR_13" /* GXT: Marnie@epsilonprogram.com */;
 		
 		case 5:
-			return "EMSTR_30";
+			return "EMSTR_30" /* GXT: noreply@epsilonprogram.com */;
 		
 		case 6:
-			return "EMSTR_37";
+			return "EMSTR_37" /* GXT: Maude@eyefind.info */;
 		
 		case 7:
-			return "EMSTR_40";
+			return "EMSTR_40" /* GXT: t34b4g99@eyefind.info */;
 		
 		case 8:
-			return "EMSTR_53";
+			return "EMSTR_53" /* GXT: services@maze-bank.com */;
 		
 		case 9:
-			return "EMSTR_56";
+			return "EMSTR_56" /* GXT: services@fleeca.com */;
 		
 		case 10:
-			return "EMSTR_59";
+			return "EMSTR_59" /* GXT: transactions@thebankofliberty.com */;
 		
 		case 11:
-			return "EMSTR_79";
+			return "EMSTR_79" /* GXT: sales@legendarymotorsport.net */;
 		
 		case 12:
-			return "EMSTR_82";
+			return "EMSTR_82" /* GXT: sales@elitastravel.com */;
 		
 		case 13:
-			return "EMSTR_85";
+			return "EMSTR_85" /* GXT: CnCsales@warstock-cache-and-carry.com */;
 		
 		case 14:
-			return "EMSTR_88";
+			return "EMSTR_88" /* GXT: sales@docktease.com */;
 		
 		case 15:
-			return "EMSTR_107";
+			return "EMSTR_107" /* GXT: MODS@lossantoscustoms.com */;
 		
 		case 16:
-			return "EMSTR_115";
+			return "EMSTR_115" /* GXT: GUNS@ammunation.net */;
 		
 		case 17:
-			return "EMSTR_143";
+			return "EMSTR_143" /* GXT: Feltz@eyefind.info */;
 		
 		case 18:
-			return "EMSTR_146";
+			return "EMSTR_146" /* GXT: Paige@eyefind.info */;
 		
 		case 19:
-			return "EMSTR_153";
+			return "EMSTR_153" /* GXT: info@LSTouristInfo.com */;
 		
 		case 20:
-			return "EMSTR_158";
+			return "EMSTR_158" /* GXT: Rickie@lifeinvader.com */;
 		
 		case 21:
-			return "EMSTR_164";
+			return "EMSTR_164" /* GXT: property@minotaurfinance.com */;
 		
 		case 22:
-			return "EMSTR_183";
+			return "EMSTR_183" /* GXT: SKadam@eyefind.info */;
 		
 		case 23:
-			return "EMSTR_188";
+			return "EMSTR_188" /* GXT: promotions@vanillaunicorn.xxx */;
 		
 		case 24:
-			return "EMSTR_191";
+			return "EMSTR_191" /* GXT: DrFriedlander@eyefind.info */;
 		
 		case 25:
-			return "EMSTR_207";
+			return "EMSTR_207" /* GXT: tracey@eyefind.info */;
 		
 		case 26:
-			return "EMSTR_220";
+			return "EMSTR_220" /* GXT: DaveNorton@eyefind.info */;
 		
 		case 27:
-			return "EMSTR_227";
+			return "EMSTR_227" /* GXT: AmandaDS@eyefind.info */;
 		
 		case 28:
-			return "EMSTR_234";
+			return "EMSTR_234" /* GXT: Don.Percival@merryweather.com */;
 		
 		case 29:
-			return "EMSTR_243";
+			return "EMSTR_243" /* GXT: BigBadRon@eyefind.info */;
 		
 		case 30:
-			return "EMSTR_250";
+			return "EMSTR_250" /* GXT: TanishaMarks@eyefind.info */;
 		
 		case 31:
-			return "EMSTR_263";
+			return "EMSTR_263" /* GXT: denise@eyefind.info */;
 		
 		case 32:
-			return "EMSTR_270";
+			return "EMSTR_270" /* GXT: LamDav@eyefind.info */;
 		
 		case 33:
-			return "EMSTR_320";
+			return "EMSTR_320" /* GXT: Bradley@eyefind.info */;
 		
 		case 34:
-			return "EMSTR_341";
+			return "EMSTR_341" /* GXT: PatriciaMadrazo@eyefind.info */;
 		
 		case 35:
-			return "EMSTR_349";
+			return "EMSTR_349" /* GXT: EileenHaworth@eyefind.info */;
 		
 		case 36:
-			return "EMSTR_353";
+			return "EMSTR_353" /* GXT: SaeedaKadam@eyefind.info */;
 		
 		case 37:
-			return "EMSTR_358";
+			return "EMSTR_358" /* GXT: GrayNicholson@eyefind.info */;
 		
 		case 38:
-			return "EMSTR_361";
+			return "EMSTR_361" /* GXT: Nigel@eyefind.info */;
 		
 		case 39:
-			return "EMSTR_370";
+			return "EMSTR_370" /* GXT: Hookies@eyefind.info */;
 		
 		case 40:
-			return "EMSTR_377";
+			return "EMSTR_377" /* GXT: TowingImpound@eyefind.info */;
 		
 		case 41:
-			return "EMSTR_380";
+			return "EMSTR_380" /* GXT: DowntownCabCo@eyefind.info */;
 		
 		case 42:
-			return "EMSTR_383";
+			return "EMSTR_383" /* GXT: McKenzieField@eyefind.info */;
 		
 		case 43:
-			return "EMSTR_385";
+			return "EMSTR_385" /* GXT: SonarCollections@eyefind.info */;
 		
 		case 44:
-			return "EMSTR_388";
+			return "EMSTR_388" /* GXT: LosSantosCustoms@eyefind.info */;
 		
 		case 45:
-			return "EMSTR_391";
+			return "EMSTR_391" /* GXT: CinemaDoppler@eyefind.info */;
 		
 		case 46:
-			return "EMSTR_394";
+			return "EMSTR_394" /* GXT: TenCentTheater@eyefind.info */;
 		
 		case 47:
-			return "EMSTR_397";
+			return "EMSTR_397" /* GXT: TivoliCinema@eyefind.info */;
 		
 		case 48:
-			return "EMSTR_400";
+			return "EMSTR_400" /* GXT: LosSantosGolfClub@eyefind.info */;
 		
 		case 49:
-			return "EMSTR_403";
+			return "EMSTR_403" /* GXT: CarScrapYard@eyefind.info */;
 		
 		case 50:
-			return "EMSTR_406";
+			return "EMSTR_406" /* GXT: SmokeOnTheWater@eyefind.info */;
 		
 		case 51:
-			return "EMSTR_409";
+			return "EMSTR_409" /* GXT: Tequi-la-la@eyefind.info */;
 		
 		case 52:
-			return "EMSTR_412";
+			return "EMSTR_412" /* GXT: Pitchers@eyefind.info */;
 		
 		case 53:
-			return "EMSTR_415";
+			return "EMSTR_415" /* GXT: TheHenHouse@eyefind.info */;
 		
 		case 54:
-			return "EMSTR_466";
+			return "EMSTR_466" /* GXT: sales@pandmcycles.com */;
 		
 		case 55:
-			return "EMSTR_469";
+			return "EMSTR_469" /* GXT: sales@southernsanandreassuperautos.com */;
 		
 		case 56:
-			return "EMSTR_490";
+			return "EMSTR_490" /* GXT: promotions@hushmush.com */;
 		
 		case 57:
-			return "EMSTR_493";
+			return "EMSTR_493" /* GXT: foxymama21@hushmush.com */;
 		
 		case 58:
-			return "EMSTR_496";
+			return "EMSTR_496" /* GXT: Altarego12@hushmush.com */;
 		
 		case 59:
-			return "EMSTR_499";
+			return "EMSTR_499" /* GXT: BadKitty11@hushmush.com */;
 		
 		case 60:
-			return "EMSTR_502";
+			return "EMSTR_502" /* GXT: 7yearbitch@hushmush.com */;
 		
 		case 61:
-			return "EMSTR_505";
+			return "EMSTR_505" /* GXT: Froggy69@hushmush.com */;
 		
 		case 62:
-			return "EMSTR_508";
+			return "EMSTR_508" /* GXT: Misscuddles@hushmush.com */;
 		
 		case 63:
-			return "EMSTR_641";
+			return "EMSTR_641" /* GXT: events@SouthernSanAndreasSuperAutos.com */;
 		
 		case 64:
-			return "EMSTR_644";
+			return "EMSTR_644" /* GXT: RaceOrganiser@docktease.com */;
 		
 		case 65:
-			return "EMSTR_653";
+			return "EMSTR_653" /* GXT: adrian@mydivinewithin.com */;
 		
 		default:
 	}

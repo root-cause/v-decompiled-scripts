@@ -346,7 +346,7 @@ void func_2()//Position - 0xD7
 								{
 									if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && func_9())
 									{
-										func_8("STAT_HELP2", -1);
+										func_8("STAT_HELP2" /* GXT: ~s~Character stats represent skill levels for your character. Increase individual stats by performing that activity throughout the game. */, -1);
 										func_4(117, 1, -1, 1);
 									}
 								}
@@ -813,7 +813,7 @@ int func_9()//Position - 0x84B
 	}
 	if (HUD::IS_HELP_MESSAGE_ON_SCREEN())
 	{
-		if (func_12("FHU_HELP3"))
+		if (func_12("FHU_HELP3" /* GXT: Shout through your headset to make the store clerk fill the bag with cash faster. */))
 		{
 			return 0;
 		}
@@ -3215,7 +3215,7 @@ void func_90()//Position - 0x35D8
 				}
 				break;
 		}
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PS_UPDATE");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PS_UPDATE" /* GXT: ~1~/100 */);
 		HUD::ADD_TEXT_COMPONENT_INTEGER(iLocal_65);
 		HUD::END_TEXT_COMMAND_THEFEED_POST_STATS(func_92(iLocal_63), func_91(iLocal_63), iLocal_64, (iLocal_65 - iLocal_64), false, sVar0, sVar0);
 		iLocal_82 = 1;
@@ -3272,35 +3272,35 @@ char* func_92(int iParam0)//Position - 0x371B
 	switch (iParam0)
 	{
 		case 0:
-			return "PSF_SPEC_AB";
+			return "PSF_SPEC_AB" /* GXT: Special capacity + */;
 			break;
 		
 		case 1:
-			return "PSF_STAMINA";
+			return "PSF_STAMINA" /* GXT: Stamina + */;
 			break;
 		
 		case 3:
-			return "PSF_LUNG";
+			return "PSF_LUNG" /* GXT: Lung Capacity + */;
 			break;
 		
 		case 2:
-			return "PSF_STRENGTH";
+			return "PSF_STRENGTH" /* GXT: Strength + */;
 			break;
 		
 		case 4:
-			return "PSF_DRIVING";
+			return "PSF_DRIVING" /* GXT: Driving + */;
 			break;
 		
 		case 5:
-			return "PSF_FLYING";
+			return "PSF_FLYING" /* GXT: Flying + */;
 			break;
 		
 		case 6:
-			return "PSF_SHOOTING";
+			return "PSF_SHOOTING" /* GXT: Shooting + */;
 			break;
 		
 		case 7:
-			return "PSF_STEALTH";
+			return "PSF_STEALTH" /* GXT: Stealth + */;
 			break;
 	}
 	return "ERROR";

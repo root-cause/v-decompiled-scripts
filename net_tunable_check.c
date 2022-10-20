@@ -21188,7 +21188,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = -2040295245;
+			uParam1->f_5 = joaat("BIKER_FORGERY_BUSINESS_EQUIPMENT_UPGRADE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21197,7 +21197,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = 211627492;
+			uParam1->f_5 = joaat("BIKER_FORGERY_BUSINESS_SECURITY_UPGRADE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21206,7 +21206,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = -898516364;
+			uParam1->f_5 = joaat("BIKER_FORGERY_BUSINESS_STAFF_UPGRADE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21215,7 +21215,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 200000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = 1682607606;
+			uParam1->f_5 = joaat("BIKER_COUNTERFEITBUSINESS_EQUIPMENT_UPGRADE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21224,7 +21224,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = 290299699;
+			uParam1->f_5 = joaat("BIKER_COUNTERFEITBUSINESS_SECURITY_UPGRADE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21233,7 +21233,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = -780784305;
+			uParam1->f_5 = joaat("BIKER_COUNTERFEITBUSINESS_STAFF_UPGRADE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21242,7 +21242,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 200000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = -388968324;
+			uParam1->f_5 = joaat("BIKER_COCAINE_BUSINESS_EQUIPMENT_UPGRADE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21251,7 +21251,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = 414132173;
+			uParam1->f_5 = joaat("BIKER_COCAINE_BUSINESS_SECURITY_UPGRADE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21260,7 +21260,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = -640767349;
+			uParam1->f_5 = joaat("BIKER_COCAINE_BUSINESS_STAFF_UPGRADE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21269,7 +21269,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 200000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = 1503149478;
+			uParam1->f_5 = joaat("BIKER_METH_BUSINESS_EQUIPMENT_UPGRADE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21278,7 +21278,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = -2009823399;
+			uParam1->f_5 = joaat("BIKER_METH_BUSINESS_SECURITY_UPGRADE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21287,7 +21287,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = 795028526;
+			uParam1->f_5 = joaat("BIKER_METH_BUSINESS_STAFF_UPGRADE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21296,7 +21296,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 200000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = 1685493909;
+			uParam1->f_5 = joaat("BIKER_WEED_BUSINESS_EQUIPMENT_UPGRADE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21305,7 +21305,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = -1557159022;
+			uParam1->f_5 = joaat("BIKER_WEED_BUSINESS_SECURITY_UPGRADE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -21314,7 +21314,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 3000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 3000000;
-			uParam1->f_5 = -1233922190;
+			uParam1->f_5 = joaat("BIKER_WEED_BUSINESS_STAFF_UPGRADE");
 			uParam1->f_4 = 1;
 			break;
 		

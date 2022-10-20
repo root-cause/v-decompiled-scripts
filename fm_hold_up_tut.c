@@ -1702,7 +1702,7 @@ int func_34(var uParam0)//Position - 0x1529
 					{
 						if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 						{
-							func_150("FM_IHELP_ACPI", -1);
+							func_150("FM_IHELP_ACPI" /* GXT: You've accepted a Job from Lamar. */, -1);
 							MISC::SET_BIT(&(uParam0->f_1), 13);
 						}
 					}
@@ -1809,7 +1809,7 @@ int func_34(var uParam0)//Position - 0x1529
 						{
 							if (!BitTest(Global_1853348[iVar0 /*834*/].f_143, 4) && !BitTest(Global_1853348[iVar0 /*834*/].f_143, 5))
 							{
-								func_144("FM_HTUT_GO", 0);
+								func_144("FM_HTUT_GO" /* GXT: Go to the ~y~Store. */, 0);
 								MISC::SET_BIT(&(uParam0->f_1), 0);
 							}
 						}
@@ -1817,7 +1817,7 @@ int func_34(var uParam0)//Position - 0x1529
 				}
 				if (!BitTest(uParam0->f_1, 0))
 				{
-					func_144("FM_HTUT_GO", 0);
+					func_144("FM_HTUT_GO" /* GXT: Go to the ~y~Store. */, 0);
 					MISC::SET_BIT(&(uParam0->f_1), 1);
 				}
 				else
@@ -1861,11 +1861,11 @@ int func_34(var uParam0)//Position - 0x1529
 												Var5 = { func_140(iVar4) };
 												if (NETWORK::NETWORK_IS_FRIEND(&Var5))
 												{
-													func_134("FM_HTUT_FWAT", iVar4, 0, 0);
+													func_134("FM_HTUT_FWAT" /* GXT: Wait for ~HUD_COLOUR_BLUE~~a~. */, iVar4, 0, 0);
 												}
 												else
 												{
-													func_134("FM_HTUT_WAT", iVar4, 0, 0);
+													func_134("FM_HTUT_WAT" /* GXT: Wait for ~HUD_COLOUR_WHITE~~a~. */, iVar4, 0, 0);
 												}
 											}
 										}
@@ -1892,7 +1892,7 @@ int func_34(var uParam0)//Position - 0x1529
 					}
 					if (BitTest(Global_1922763, 15))
 					{
-						if (func_131("FM_HTUT_WAT") || func_131("FM_HTUT_FWAT"))
+						if (func_131("FM_HTUT_WAT" /* GXT: Wait for ~HUD_COLOUR_WHITE~~a~. */) || func_131("FM_HTUT_FWAT" /* GXT: Wait for ~HUD_COLOUR_BLUE~~a~. */))
 						{
 							func_25();
 						}
@@ -2045,25 +2045,25 @@ int func_34(var uParam0)//Position - 0x1529
 										Var5 = { func_140(iVar4) };
 										if (NETWORK::NETWORK_IS_FRIEND(&Var5))
 										{
-											func_134("FM_HTUT_FHLD", iVar4, 0, 0);
+											func_134("FM_HTUT_FHLD" /* GXT: Hold up the Store with ~HUD_COLOUR_BLUE~~a~. */, iVar4, 0, 0);
 										}
 										else
 										{
-											func_134("FM_HTUT_HLD", iVar4, 0, 0);
+											func_134("FM_HTUT_HLD" /* GXT: Hold up the Store with ~HUD_COLOUR_WHITE~~a~. */, iVar4, 0, 0);
 										}
 										MISC::SET_BIT(&(uParam0->f_1), 3);
 									}
 									else if (!BitTest(uParam0->f_1, 14))
 									{
 										MISC::SET_BIT(&(uParam0->f_1), 14);
-										func_134("FM_HTUT_HLC", iVar4, 1, 0);
+										func_134("FM_HTUT_HLC" /* GXT: Help ~a~ lose the Cops. */, iVar4, 1, 0);
 									}
 								}
 							}
 						}
 						if (!BitTest(uParam0->f_1, 3) && !BitTest(uParam0->f_1, 14))
 						{
-							func_144("FM_HTUT_HLS", 0);
+							func_144("FM_HTUT_HLS" /* GXT: Hold up the Store. */, 0);
 							MISC::SET_BIT(&(uParam0->f_1), 3);
 							MISC::SET_BIT(&(Global_1853348[iVar3 /*834*/].f_143), 8);
 						}
@@ -4361,7 +4361,7 @@ void func_96(var uParam0)//Position - 0x4505
 				{
 					if (func_98())
 					{
-						func_150("FHU_HELP1", -1);
+						func_150("FHU_HELP1" /* GXT: ~s~Stores that can be held up are marked on the Radar with ~BLIP_CRIM_HOLDUPS~ */, -1);
 						uParam0->f_2++;
 						iVar0 = func_148(1191, -1, 0);
 						if (!BitTest(iVar0, 1))
@@ -4385,12 +4385,12 @@ void func_96(var uParam0)//Position - 0x4505
 						{
 							if (!func_97())
 							{
-								func_150("FHU_HELP5", -1);
+								func_150("FHU_HELP5" /* GXT: ~s~Threaten the store clerk with a weapon to steal from the cash register. */, -1);
 								uParam0->f_2++;
 							}
 							else if (!BitTest(uLocal_165, 7) || PAD::IS_DISABLED_CONTROL_PRESSED(0, 37))
 							{
-								func_150("FM_PASS_DBL", -1);
+								func_150("FM_PASS_DBL" /* GXT: Disable Passive Mode before robbing the Store. */, -1);
 								MISC::SET_BIT(&uLocal_165, 7);
 							}
 						}
@@ -4746,7 +4746,7 @@ void func_116(int iParam0, int iParam1, var uParam2)//Position - 0x4C8B
 		iVar0 = (iParam0 - NETWORK::GET_TIME_DIFFERENCE(NETWORK::GET_NETWORK_TIME(), iParam1));
 		if (iVar0 >= 0)
 		{
-			func_117(iVar0, "FM_HTUT_TME", 0, 0, -1, 0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
+			func_117(iVar0, "FM_HTUT_TME" /* GXT: Time */, 0, 0, -1, 0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 		}
 	}
 }
@@ -4835,7 +4835,7 @@ void func_120()//Position - 0x4E56
 		}
 		else if (func_121(0, 1, 1, 1))
 		{
-			func_150("FM_IHELP_BLP", -1);
+			func_150("FM_IHELP_BLP" /* GXT: Players are shown on the Radar by ~BLIP_LEVEL~. If they are your friend it will have a blue outline. If they are in your Crew it will be a Crew colored outline. You can go to the Pause Map and find the location of other players. */, -1);
 			MISC::SET_BIT(&uLocal_165, 14);
 		}
 	}
@@ -5299,7 +5299,7 @@ void func_146()//Position - 0x5589
 	{
 		if (func_121(0, 1, 1, 1))
 		{
-			func_150("FM_IHELP_INV", 10000);
+			func_150("FM_IHELP_INV" /* GXT: You will be invited onto Jobs by Contacts and other players via your phone. */, 10000);
 			MISC::SET_BIT(&uLocal_165, 16);
 		}
 	}
@@ -5397,15 +5397,15 @@ int func_151(var uParam0)//Position - 0x56B7
 						if (!func_166(0))
 						{
 							func_158(19, 30, "", 0, 0, 1, 0);
-							func_150("FM_IHELP_QNV", -1);
+							func_150("FM_IHELP_QNV" /* GXT: ~s~Hold ~INPUT_CELLPHONE_UP~ and press ~INPUT_FRONTEND_ACCEPT~ to quickly accept an invite. */, -1);
 							uParam0->f_3++;
 						}
 					}
 					else if (!BitTest(Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_143, 16))
 					{
-						func_144("FM_IHELP_LCP", 0);
+						func_144("FM_IHELP_LCP" /* GXT: Lose the Cops. */, 0);
 						MISC::SET_BIT(&(Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_143), 16);
-						if (func_157("FM_IHELP_INV2") || func_157("FM_IHELP_INV"))
+						if (func_157("FM_IHELP_INV2" /* GXT: Take out your phone, select the Job List and accept the 'Hold Up' invite from Lamar. */) || func_157("FM_IHELP_INV" /* GXT: You will be invited onto Jobs by Contacts and other players via your phone. */))
 						{
 							HUD::CLEAR_HELP(true);
 						}
@@ -5424,7 +5424,7 @@ int func_151(var uParam0)//Position - 0x56B7
 			{
 				if (PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID()) == 0)
 				{
-					if (func_131("FM_IHELP_LCP"))
+					if (func_131("FM_IHELP_LCP" /* GXT: Lose the Cops. */))
 					{
 						func_25();
 					}
@@ -5436,27 +5436,27 @@ int func_151(var uParam0)//Position - 0x56B7
 						}
 						if (!BitTest(uLocal_165, 16))
 						{
-							if (!func_157("FM_IHELP_INV"))
+							if (!func_157("FM_IHELP_INV" /* GXT: You will be invited onto Jobs by Contacts and other players via your phone. */))
 							{
-								if (!func_157("FM_IHELP_QNV"))
+								if (!func_157("FM_IHELP_QNV" /* GXT: ~s~Hold ~INPUT_CELLPHONE_UP~ and press ~INPUT_FRONTEND_ACCEPT~ to quickly accept an invite. */))
 								{
 									if (func_98())
 									{
-										func_150("FM_IHELP_INV", 10000);
+										func_150("FM_IHELP_INV" /* GXT: You will be invited onto Jobs by Contacts and other players via your phone. */, 10000);
 										MISC::SET_BIT(&uLocal_165, 16);
 									}
 								}
 							}
 						}
-						else if (!func_157("FM_IHELP_INV"))
+						else if (!func_157("FM_IHELP_INV" /* GXT: You will be invited onto Jobs by Contacts and other players via your phone. */))
 						{
-							if (!func_157("FM_IHELP_INV2"))
+							if (!func_157("FM_IHELP_INV2" /* GXT: Take out your phone, select the Job List and accept the 'Hold Up' invite from Lamar. */))
 							{
 								if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 								{
 									if (func_98())
 									{
-										func_150("FM_IHELP_INV2", -1);
+										func_150("FM_IHELP_INV2" /* GXT: Take out your phone, select the Job List and accept the 'Hold Up' invite from Lamar. */, -1);
 										func_18(&uLocal_332);
 										func_17(&uLocal_332, 0, 0);
 									}
@@ -5467,15 +5467,15 @@ int func_151(var uParam0)//Position - 0x56B7
 				}
 				else if (!BitTest(Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_143, 16))
 				{
-					func_144("FM_IHELP_LCP", 0);
+					func_144("FM_IHELP_LCP" /* GXT: Lose the Cops. */, 0);
 					MISC::SET_BIT(&(Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_143), 16);
-					if ((func_157("FM_IHELP_INV2") || func_157("FM_IHELP_INV")) || func_157("FM_IHELP_QNV"))
+					if ((func_157("FM_IHELP_INV2" /* GXT: Take out your phone, select the Job List and accept the 'Hold Up' invite from Lamar. */) || func_157("FM_IHELP_INV" /* GXT: You will be invited onto Jobs by Contacts and other players via your phone. */)) || func_157("FM_IHELP_QNV" /* GXT: ~s~Hold ~INPUT_CELLPHONE_UP~ and press ~INPUT_FRONTEND_ACCEPT~ to quickly accept an invite. */))
 					{
 						HUD::CLEAR_HELP(true);
 					}
 				}
 			}
-			else if ((func_157("FM_IHELP_INV2") || func_157("FM_IHELP_INV")) || func_157("FM_IHELP_QNV"))
+			else if ((func_157("FM_IHELP_INV2" /* GXT: Take out your phone, select the Job List and accept the 'Hold Up' invite from Lamar. */) || func_157("FM_IHELP_INV" /* GXT: You will be invited onto Jobs by Contacts and other players via your phone. */)) || func_157("FM_IHELP_QNV" /* GXT: ~s~Hold ~INPUT_CELLPHONE_UP~ and press ~INPUT_FRONTEND_ACCEPT~ to quickly accept an invite. */))
 			{
 				HUD::CLEAR_HELP(true);
 			}
@@ -5980,7 +5980,7 @@ bool func_169()//Position - 0x6143
 		}
 		else if (func_286())
 		{
-			if (func_170(19, "CELL_HOLD", 0, 0))
+			if (func_170(19, "CELL_HOLD" /* GXT: I got word a store nearby has been doing mad trade. You take it down now. You'll need two people to carry the loot. */, 0, 0))
 			{
 				MISC::SET_BIT(&uLocal_165, 2);
 				func_273(0);
@@ -6145,7 +6145,7 @@ int func_179(var uParam0, int iParam1, int iParam2, char* sParam3, char* sParam4
 	}
 	if (iParam5 == 4)
 	{
-		StringCopy(&Var0, "CELL_226", 16);
+		StringCopy(&Var0, "CELL_226" /* GXT: Accept? */, 16);
 		return func_253(uParam0, iParam1, sParam3, sParam4, &Var0);
 	}
 	if (iParam5 == 1 || iParam5 == 7)
@@ -6824,7 +6824,7 @@ void func_193(int iParam0)//Position - 0x6CBB
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(42);
 								GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							}
-							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB")) && BitTest(Global_8137, 6))
+							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB" /* GXT: Benny's */)) && BitTest(Global_8137, 6))
 							{
 								GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT");
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
@@ -9000,12 +9000,12 @@ void func_281()//Position - 0x95FF
 	{
 		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("");
 		StringCopy(&cVar1, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_8746[1 /*6*/])), 64);
-		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253");
+		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253" /* GXT: New Contact */);
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, sVar2, &cVar1);
 	}
 	else
 	{
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_255");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_255" /* GXT: New Contact: ~n~~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_8746[1 /*6*/]));
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, "", 0);
 	}
@@ -9213,21 +9213,21 @@ void func_295(var uParam0)//Position - 0x9980
 	{
 		func_296("FM_HTUT_GOP");
 	}
-	if (func_131("FM_HTUT_GO"))
+	if (func_131("FM_HTUT_GO" /* GXT: Go to the ~y~Store. */))
 	{
-		func_296("FM_HTUT_GO");
+		func_296("FM_HTUT_GO" /* GXT: Go to the ~y~Store. */);
 	}
-	if (func_131("FM_HTUT_WAT"))
+	if (func_131("FM_HTUT_WAT" /* GXT: Wait for ~HUD_COLOUR_WHITE~~a~. */))
 	{
-		func_296("FM_HTUT_WAT");
+		func_296("FM_HTUT_WAT" /* GXT: Wait for ~HUD_COLOUR_WHITE~~a~. */);
 	}
-	if (func_131("FM_HTUT_HLD"))
+	if (func_131("FM_HTUT_HLD" /* GXT: Hold up the Store with ~HUD_COLOUR_WHITE~~a~. */))
 	{
-		func_296("FM_HTUT_HLD");
+		func_296("FM_HTUT_HLD" /* GXT: Hold up the Store with ~HUD_COLOUR_WHITE~~a~. */);
 	}
-	if (func_131("FM_HTUT_HLS"))
+	if (func_131("FM_HTUT_HLS" /* GXT: Hold up the Store. */))
 	{
-		func_296("FM_HTUT_HLS");
+		func_296("FM_HTUT_HLS" /* GXT: Hold up the Store. */);
 	}
 	if (HUD::DOES_BLIP_EXIST(uParam0->f_4))
 	{

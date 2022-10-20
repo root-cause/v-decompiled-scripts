@@ -180,7 +180,7 @@ void func_1()//Position - 0xCE
 		{
 			func_11();
 		}
-		func_2(&bLocal_46, &bLocal_47, &uLocal_48, 4, &uLocal_44, &iLocal_45, "TRACT_TITLE", "TRACT_COLLECT");
+		func_2(&bLocal_46, &bLocal_47, &uLocal_48, 4, &uLocal_44, &iLocal_45, "TRACT_TITLE" /* GXT: Tract Collected~s~ */, "TRACT_COLLECT" /* GXT: ~1~/10 Epsilon tracts collected. */);
 	}
 }
 
@@ -696,7 +696,7 @@ void func_14(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4)
 				case 1:
 					if (iVar2 == 249)
 					{
-						func_15(1, iVar1, iVar2, "PW_FEED_EM_1", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+						func_15(1, iVar1, iVar2, "PW_FEED_EM_1" /* GXT: You've been nominated to take part in Southern San Andreas' premier amateur photography competition in the wildlife sector. You'll join hundreds of other young, talented... */, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 					}
 					else
 					{
@@ -730,15 +730,15 @@ void func_15(int iParam0, int iParam1, int iParam2, char* sParam3, char* sParam4
 		switch (iParam2)
 		{
 			case 72:
-				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL1");
+				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL1" /* GXT: Dear Mr. De Santa, please find below your weekly income from owned properties:~n~ */);
 				break;
 			
 			case 73:
-				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL3");
+				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL3" /* GXT: Dear Mr. Clinton, please find below your weekly income from owned properties:~n~ */);
 				break;
 			
 			case 74:
-				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL2");
+				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL2" /* GXT: Dear Mr. Philips, please find below your weekly income from owned properties:~n~ */);
 				break;
 			
 			default:
@@ -847,202 +847,202 @@ char* func_17(int iParam0)//Position - 0xE5A
 	switch (iParam0)
 	{
 		case 0:
-			return "EMSTR_0";
+			return "EMSTR_0" /* GXT: Mike */;
 		
 		case 3:
-			return "EMSTR_3";
+			return "EMSTR_3" /* GXT: Jimmy */;
 		
 		case 1:
-			return "EMSTR_6";
+			return "EMSTR_6" /* GXT: Franklin */;
 		
 		case 2:
-			return "EMSTR_9";
+			return "EMSTR_9" /* GXT: Trevor */;
 		
 		case 4:
-			return "EMSTR_12";
+			return "EMSTR_12" /* GXT: Marnie */;
 		
 		case 5:
-			return "EMSTR_29";
+			return "EMSTR_29" /* GXT: Epsilon Store */;
 		
 		case 6:
-			return "EMSTR_36";
+			return "EMSTR_36" /* GXT: Maude */;
 		
 		case 7:
-			return "EMSTR_39";
+			return "EMSTR_39" /* GXT: Lester */;
 		
 		case 8:
-			return "EMSTR_52";
+			return "EMSTR_52" /* GXT: Maze Bank */;
 		
 		case 9:
-			return "EMSTR_55";
+			return "EMSTR_55" /* GXT: Fleeca */;
 		
 		case 10:
-			return "EMSTR_58";
+			return "EMSTR_58" /* GXT: Bank of Liberty */;
 		
 		case 11:
-			return "EMSTR_78";
+			return "EMSTR_78" /* GXT: Legendary Motorsport Sales */;
 		
 		case 12:
-			return "EMSTR_81";
+			return "EMSTR_81" /* GXT: Elitas Sales */;
 		
 		case 13:
-			return "EMSTR_84";
+			return "EMSTR_84" /* GXT: Cache & Carry */;
 		
 		case 14:
-			return "EMSTR_87";
+			return "EMSTR_87" /* GXT: Dock Tease */;
 		
 		case 15:
-			return "EMSTR_106";
+			return "EMSTR_106" /* GXT: LSC */;
 		
 		case 16:
-			return "EMSTR_114";
+			return "EMSTR_114" /* GXT: AMMU-NATION */;
 		
 		case 17:
-			return "EMSTR_142";
+			return "EMSTR_142" /* GXT: Christian Feltz */;
 		
 		case 18:
-			return "EMSTR_145";
+			return "EMSTR_145" /* GXT: Paige Harris */;
 		
 		case 19:
-			return "EMSTR_152";
+			return "EMSTR_152" /* GXT: Los Santos Tourist Info */;
 		
 		case 20:
-			return "EMSTR_157";
+			return "EMSTR_157" /* GXT: Rickie Luckens */;
 		
 		case 21:
-			return "EMSTR_163";
+			return "EMSTR_163" /* GXT: Minotaur Property Management */;
 		
 		case 22:
-			return "EMSTR_182";
+			return "EMSTR_182" /* GXT: Saeeda Kadam */;
 		
 		case 23:
-			return "EMSTR_187";
+			return "EMSTR_187" /* GXT: Vanilla Unicorn */;
 		
 		case 24:
-			return "EMSTR_190";
+			return "EMSTR_190" /* GXT: Dr Isiah Friedlander */;
 		
 		case 25:
-			return "EMSTR_206";
+			return "EMSTR_206" /* GXT: TRACEYHEARTSTEALER */;
 		
 		case 26:
-			return "EMSTR_219";
+			return "EMSTR_219" /* GXT: Dave Norton */;
 		
 		case 27:
-			return "EMSTR_226";
+			return "EMSTR_226" /* GXT: Amanda De Santa */;
 		
 		case 28:
-			return "EMSTR_233";
+			return "EMSTR_233" /* GXT: Donald Percival */;
 		
 		case 29:
-			return "EMSTR_242";
+			return "EMSTR_242" /* GXT: Ron */;
 		
 		case 30:
-			return "EMSTR_249";
+			return "EMSTR_249" /* GXT: Tanisha Marks */;
 		
 		case 31:
-			return "EMSTR_262";
+			return "EMSTR_262" /* GXT: Denise */;
 		
 		case 32:
-			return "EMSTR_269";
+			return "EMSTR_269" /* GXT: Lamar Davis */;
 		
 		case 33:
-			return "EMSTR_319";
+			return "EMSTR_319" /* GXT: Brad */;
 		
 		case 34:
-			return "EMSTR_340";
+			return "EMSTR_340" /* GXT: Patricia Madrazo */;
 		
 		case 35:
-			return "EMSTR_348";
+			return "EMSTR_348" /* GXT: Eileen Haworth */;
 		
 		case 36:
-			return "EMSTR_182";
+			return "EMSTR_182" /* GXT: Saeeda Kadam */;
 		
 		case 37:
-			return "EMSTR_357";
+			return "EMSTR_357" /* GXT: Gray Nicholson */;
 		
 		case 38:
-			return "EMSTR_360";
+			return "EMSTR_360" /* GXT: Nigel */;
 		
 		case 39:
-			return "EMSTR_369";
+			return "EMSTR_369" /* GXT: Hookies */;
 		
 		case 40:
-			return "EMSTR_376";
+			return "EMSTR_376" /* GXT: Towing Impound */;
 		
 		case 41:
-			return "EMSTR_379";
+			return "EMSTR_379" /* GXT: Downtown Cab Co, */;
 		
 		case 42:
-			return "EMSTR_382";
+			return "EMSTR_382" /* GXT: McKenzie Field Hangar */;
 		
 		case 43:
-			return "EMSTR_384";
+			return "EMSTR_384" /* GXT: Sonar Collections Dock */;
 		
 		case 44:
-			return "EMSTR_387";
+			return "EMSTR_387" /* GXT: Los Santos Customs */;
 		
 		case 45:
-			return "EMSTR_390";
+			return "EMSTR_390" /* GXT: Cinema Doppler */;
 		
 		case 46:
-			return "EMSTR_393";
+			return "EMSTR_393" /* GXT: Ten Cent Theater */;
 		
 		case 47:
-			return "EMSTR_396";
+			return "EMSTR_396" /* GXT: Tivoli Cinema */;
 		
 		case 48:
-			return "EMSTR_399";
+			return "EMSTR_399" /* GXT: Los Santos Golf Club */;
 		
 		case 49:
-			return "EMSTR_402";
+			return "EMSTR_402" /* GXT: Car Scrap Yard */;
 		
 		case 50:
-			return "EMSTR_405";
+			return "EMSTR_405" /* GXT: Smoke on the Water */;
 		
 		case 51:
-			return "EMSTR_408";
+			return "EMSTR_408" /* GXT: Tequi-la-la */;
 		
 		case 52:
-			return "EMSTR_411";
+			return "EMSTR_411" /* GXT: Pitchers */;
 		
 		case 53:
-			return "EMSTR_414";
+			return "EMSTR_414" /* GXT: The Hen House */;
 		
 		case 54:
-			return "EMSTR_465";
+			return "EMSTR_465" /* GXT: Pedal & Metal Sales */;
 		
 		case 55:
-			return "EMSTR_468";
+			return "EMSTR_468" /* GXT: SSA Super Autos Sales */;
 		
 		case 56:
-			return "EMSTR_489";
+			return "EMSTR_489" /* GXT: Hush Smush */;
 		
 		case 57:
-			return "EMSTR_492";
+			return "EMSTR_492" /* GXT: foxymama21 */;
 		
 		case 58:
-			return "EMSTR_495";
+			return "EMSTR_495" /* GXT: Altarego12 */;
 		
 		case 59:
-			return "EMSTR_498";
+			return "EMSTR_498" /* GXT: BadKitty11 */;
 		
 		case 60:
-			return "EMSTR_501";
+			return "EMSTR_501" /* GXT: 7yearbitch */;
 		
 		case 61:
-			return "EMSTR_504";
+			return "EMSTR_504" /* GXT: Froggy69 */;
 		
 		case 62:
-			return "EMSTR_507";
+			return "EMSTR_507" /* GXT: Misscuddles */;
 		
 		case 63:
-			return "EMSTR_640";
+			return "EMSTR_640" /* GXT: Offroad Events */;
 		
 		case 64:
-			return "EMSTR_643";
+			return "EMSTR_643" /* GXT: Dock Tease */;
 		
 		case 65:
-			return "EMSTR_652";
+			return "EMSTR_652" /* GXT: Brother Adrian */;
 		
 		default:
 	}
@@ -1127,7 +1127,7 @@ char* func_18(int iParam0, int iParam1)//Position - 0x11C5
 			return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_1998[40 /*29*/].f_7));
 		
 		case 36:
-			return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_E_381");
+			return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_E_381" /* GXT: CHAR_SAEEDA */);
 		
 		case 38:
 			return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_1998[64 /*29*/].f_7));
@@ -1776,33 +1776,33 @@ void func_46()//Position - 0x1F1E
 	iVar0 = 0;
 	if (Global_113386.f_18574.f_388)
 	{
-		sLocal_50[0] = "TRACT_HINT1B";
+		sLocal_50[0] = "TRACT_HINT1B" /* GXT: Kifflom.  The ingratitude and self-centeredness of your actions is unforgiveable in my eyes but Kraff is not without mercy.  To have a chance of redeeming yourself, you must write the tract, which has already been written... WE WORSHIP KRAFF WHERE THE EARTH REACHES OUT TO THE 9Th PARADIGM. */;
 		iLocal_43 = 300000;
 	}
 	else
 	{
-		sLocal_50[0] = "TRACT_HINT1";
+		sLocal_50[0] = "TRACT_HINT1" /* GXT: Kifflom, brother. You are now truly one of us and are ready to write the tract, which has already been written...WE WORSHIP KRAFF WHERE THE EARTH REACHES OUT TO THE 9Th PARADIGM. */;
 		iLocal_43 = 16000;
 	}
 	Local_49[0 /*11*/].f_3 = { 501.9415f, 5604.429f, 796.9146f };
 	Local_49[1 /*11*/].f_3 = { 2658.18f, -1361.14f, -21.63f };
-	sLocal_50[1] = "TRACT_HINT2";
+	sLocal_50[1] = "TRACT_HINT2" /* GXT: Where the first of the fleet succumbed to the waves, there the message is seeded. */;
 	Local_49[2 /*11*/].f_3 = { 24.7139f, 7644.334f, 18.0792f };
-	sLocal_50[2] = "TRACT_HINT3";
+	sLocal_50[2] = "TRACT_HINT3" /* GXT: When they sail from the North, they will find this offering. */;
 	Local_49[3 /*11*/].f_3 = { -263.55f, 4729.6f, 137.37f };
-	sLocal_50[3] = "TRACT_HINT4";
+	sLocal_50[3] = "TRACT_HINT4" /* GXT: In the core of the mountain, where the blast is not felt, there you shall find it. */;
 	Local_49[4 /*11*/].f_3 = { -771.98f, -685.22f, 28.86f };
-	sLocal_50[4] = "TRACT_HINT5";
+	sLocal_50[4] = "TRACT_HINT5" /* GXT: In the rubble of the old religion, will be the basis for the new. */;
 	Local_49[5 /*11*/].f_3 = { -1605.03f, 5256.55f, 1.08f };
-	sLocal_50[5] = "TRACT_HINT6";
+	sLocal_50[5] = "TRACT_HINT6" /* GXT: Where the first fleet sailed, the new fleet will find its map. */;
 	Local_49[6 /*11*/].f_3 = { -1804.546f, 403.9298f, 112.1966f };
-	sLocal_50[6] = "TRACT_HINT7";
+	sLocal_50[6] = "TRACT_HINT7" /* GXT: What dwelling is worthy of Kraff? He is humble, yet we exalt him. */;
 	Local_49[7 /*11*/].f_3 = { 484.2701f, 5617.175f, 787.4708f };
-	sLocal_50[7] = "TRACT_HINT8";
+	sLocal_50[7] = "TRACT_HINT8" /* GXT: We are not dinosaurs, nor plants, but a tree in the jet stream may hold Kraff's true word. */;
 	Local_49[8 /*11*/].f_3 = { -75.1004f, -819.0673f, 325.3656f };
-	sLocal_50[8] = "TRACT_HINT9";
+	sLocal_50[8] = "TRACT_HINT9" /* GXT: The tallest obelisk of glass and steel holds no comparison to the word of Kraff. */;
 	Local_49[9 /*11*/].f_3 = { -1725.34f, -189.95f, 57.52f };
-	sLocal_50[9] = "TRACT_HINT10";
+	sLocal_50[9] = "TRACT_HINT10" /* GXT: Where they discard their earthly prisons, there you may find the germ of a higher civilization. */;
 	iLocal_42 = MISC::GET_GAME_TIMER();
 	iVar0 = 0;
 	while (iVar0 < 10)

@@ -3561,16 +3561,16 @@ void func_67()//Position - 0x5DE9
 		func_73(&(Local_50[0 /*24*/]), 0, "Bigwheel", func_74(158), 8, "", 0, 6.2f);
 		func_68(&(Local_49[0 /*24*/]), 0, "Rollercoaster", -1651.641f, -1134.325f, 21.90398f, -1640.984f, -1121.59f, 16.50313f, 6.75f, 15, "", 0);
 	}
-	Local_40.f_0 = "LEV_RIDEHLP";
-	Local_40.f_1 = "LEV_BROKEN";
-	Local_40.f_2 = "LEV_NOMONEY";
-	Local_40.f_4 = "LEV_WANTED";
+	Local_40.f_0 = "LEV_RIDEHLP" /* GXT: Press ~INPUT_CONTEXT~ to ride the Leviathan. The cost is $~1~. */;
+	Local_40.f_1 = "LEV_BROKEN" /* GXT: The Leviathan is closed. Come back later. */;
+	Local_40.f_2 = "LEV_NOMONEY" /* GXT: You do not have enough money. It costs $~1~ to ride the Leviathan. */;
+	Local_40.f_4 = "LEV_WANTED" /* GXT: You can't ride the Leviathan while Wanted. */;
 	Local_40.f_3 = 0;
 	Local_40.f_16 = 1;
-	Local_41.f_0 = "BIGW_RIDEHLP";
-	Local_41.f_1 = "BIGW_BROKEN";
-	Local_41.f_2 = "BIGW_NOMONEY";
-	Local_41.f_4 = "BIGW_WANTED";
+	Local_41.f_0 = "BIGW_RIDEHLP" /* GXT: Press ~INPUT_CONTEXT~ to ride the Ferris Whale. The cost is $~1~. */;
+	Local_41.f_1 = "BIGW_BROKEN" /* GXT: The Ferris Whale is closed. Come back later. */;
+	Local_41.f_2 = "BIGW_NOMONEY" /* GXT: You do not have enough money. It costs $~1~ to ride the Ferris Whale. */;
+	Local_41.f_4 = "BIGW_WANTED" /* GXT: You can't ride the Ferris Whale while Wanted. */;
 	Local_41.f_3 = 0;
 	Local_40.f_16 = 1;
 }

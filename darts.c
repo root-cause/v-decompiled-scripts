@@ -1874,7 +1874,7 @@ void func_11(var uParam0, bool bParam1)//Position - 0x27C9
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_4, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 	func_13(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 215, true));
-	func_12("ES_HELP");
+	func_12("ES_HELP" /* GXT: Continue */);
 	if (MISC::IS_PC_VERSION())
 	{
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
@@ -1886,7 +1886,7 @@ void func_11(var uParam0, bool bParam1)//Position - 0x27C9
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_4, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 		func_13(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 216, true));
-		func_12("ES_XPAND");
+		func_12("ES_XPAND" /* GXT: Expand */);
 		if (MISC::IS_PC_VERSION())
 		{
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
@@ -2110,7 +2110,7 @@ void func_15(var uParam0, float fParam1, bool bParam2)//Position - 0x28D4
 				{
 					if ((uParam0->f_574 - uParam0->f_576) > 0)
 					{
-						func_31((uParam0->f_574 - uParam0->f_576), "TIMER_TIME", 0, 0, -1, 0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
+						func_31((uParam0->f_574 - uParam0->f_576), "TIMER_TIME" /* GXT: TIME */, 0, 0, -1, 0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 					}
 					else
 					{
@@ -2341,26 +2341,26 @@ void func_15(var uParam0, float fParam1, bool bParam2)//Position - 0x28D4
 			switch (uParam0->f_560)
 			{
 				case 0:
-					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("PERCENTAGE");
+					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("PERCENTAGE" /* GXT: ~1~% */);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(uParam0->f_558);
 					HUD::END_TEXT_COMMAND_DISPLAY_TEXT(fVar20, (fVar1 + func_40((2f * 2f))), 0);
 					break;
 				
 				case 1:
-					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("FO_TWO_NUM");
+					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("FO_TWO_NUM" /* GXT: ~1~/~1~ */);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(uParam0->f_558);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(uParam0->f_559);
 					HUD::END_TEXT_COMMAND_DISPLAY_TEXT(fVar20, (fVar1 + func_40((2f * 2f))), 0);
 					break;
 				
 				case 2:
-					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("MTPHPER_XPNO");
+					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("MTPHPER_XPNO" /* GXT: ~1~RP */);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(uParam0->f_558);
 					HUD::END_TEXT_COMMAND_DISPLAY_TEXT(fVar20, (fVar1 + func_40((2f * 2f))), 0);
 					break;
 				
 				case 5:
-					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("ESDOLLA");
+					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("ESDOLLA" /* GXT: $~a~ */);
 					HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER(uParam0->f_558, true);
 					HUD::END_TEXT_COMMAND_DISPLAY_TEXT(fVar20, (fVar1 + func_40((2f * 2f))), 0);
 					break;
@@ -2969,13 +2969,13 @@ void func_28(int iParam0, int iParam1, float fParam2, float fParam3, char* sPara
 			HUD::SET_TEXT_FONT(4);
 			if (iParam0 < 0)
 			{
-				HUD::BEGIN_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT("ESMINDOLLA");
+				HUD::BEGIN_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT("ESMINDOLLA" /* GXT: -$~a~ */);
 				HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER((-1 * iParam0), true);
 				fVar1 = HUD::END_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT(false);
 			}
 			else
 			{
-				HUD::BEGIN_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT("ESDOLLA");
+				HUD::BEGIN_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT("ESDOLLA" /* GXT: $~a~ */);
 				HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER(iParam0, true);
 				fVar1 = HUD::END_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT(false);
 			}
@@ -2990,19 +2990,19 @@ void func_28(int iParam0, int iParam1, float fParam2, float fParam3, char* sPara
 	switch (iParam5)
 	{
 		case 11:
-			HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("PERCENTAGE");
+			HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("PERCENTAGE" /* GXT: ~1~% */);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iParam0);
 			break;
 		
 		case 1:
 			HUD::SET_TEXT_FONT(5);
-			HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("FO_NUM");
+			HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("FO_NUM" /* GXT: ~1~ */);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iParam0);
 			break;
 		
 		case 2:
 			HUD::SET_TEXT_FONT(5);
-			HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("FO_TWO_NUM");
+			HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("FO_TWO_NUM" /* GXT: ~1~/~1~ */);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iParam0);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iParam1);
 			break;
@@ -3014,12 +3014,12 @@ void func_28(int iParam0, int iParam1, float fParam2, float fParam3, char* sPara
 		case 3:
 			if (iParam0 < 0)
 			{
-				HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("ESMINDOLLA");
+				HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("ESMINDOLLA" /* GXT: -$~a~ */);
 				HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER((-1 * iParam0), true);
 			}
 			else
 			{
-				HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("ESDOLLA");
+				HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("ESDOLLA" /* GXT: $~a~ */);
 				HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER(iParam0, true);
 			}
 			break;
@@ -3338,10 +3338,10 @@ void func_44(var uParam0, var uParam1, var uParam2, var uParam3, bool bParam4)//
 				{
 					bLocal_161 = true;
 					func_121(&(uParam1->f_509), 0, 0, 1, 1);
-					func_120(&(uParam1->f_509), "DARTS_CONT", 2, 215, 1, 1, 0);
+					func_120(&(uParam1->f_509), "DARTS_CONT" /* GXT: Continue */, 2, 215, 1, 1, 0);
 					func_120(&(uParam1->f_509), "DARTS_REMATCH", 2, 216, 1, 1, 0);
-					func_120(&(uParam1->f_509), "IB_BACK", 2, 202, 1, 1, 0);
-					func_120(&(uParam1->f_509), "SCLB_PROFILE", 2, 217, 1, 1, 0);
+					func_120(&(uParam1->f_509), "IB_BACK" /* GXT: Back */, 2, 202, 1, 1, 0);
+					func_120(&(uParam1->f_509), "SCLB_PROFILE" /* GXT: View Profile */, 2, 217, 1, 1, 0);
 					func_117(&(uParam1->f_509), 1);
 				}
 			}
@@ -3468,12 +3468,12 @@ void func_44(var uParam0, var uParam1, var uParam2, var uParam3, bool bParam4)//
 		{
 			uParam1->f_680 = 1;
 			func_121(&(uParam1->f_509), 0, 0, 1, 1);
-			func_120(&(uParam1->f_509), "DARTS_CONT", 2, 215, 1, 1, 0);
+			func_120(&(uParam1->f_509), "DARTS_CONT" /* GXT: Continue */, 2, 215, 1, 1, 0);
 			func_120(&(uParam1->f_509), "DARTS_REMATCH", 2, 216, 1, 1, 0);
-			func_120(&(uParam1->f_509), "IB_BACK", 2, 202, 1, 1, 0);
+			func_120(&(uParam1->f_509), "IB_BACK" /* GXT: Back */, 2, 202, 1, 1, 0);
 			if (bLocal_161)
 			{
-				func_120(&(uParam1->f_509), "SCLB_PROFILE", 2, 217, 1, 1, 0);
+				func_120(&(uParam1->f_509), "SCLB_PROFILE" /* GXT: View Profile */, 2, 217, 1, 1, 0);
 			}
 			func_117(&(uParam1->f_509), 1);
 		}
@@ -3624,17 +3624,17 @@ void func_46(var uParam0)//Position - 0x5102
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_4, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 	func_13(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 188, true));
-	func_12("ES_HELP_TU");
+	func_12("ES_HELP_TU" /* GXT: Like */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_4, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 	func_13(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 187, true));
-	func_12("ES_HELP_TD");
+	func_12("ES_HELP_TD" /* GXT: Dislike */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_4, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 	func_13(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 202, true));
-	func_12("ES_HELP_AB");
+	func_12("ES_HELP_AB" /* GXT: Don't Vote */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_4, "DRAW_INSTRUCTIONAL_BUTTONS");
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -4378,7 +4378,7 @@ void func_60(bool bParam0)//Position - 0x5FB7
 	if (bVar0)
 	{
 		StringCopy(&cVar1, "CHAR_LIFEINVADER", 64);
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("COUP_RED");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("COUP_RED" /* GXT: You have redeemed your promotion for ~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(func_61(bParam0));
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar1, &cVar1, true, 0, "", 0);
 	}
@@ -4389,28 +4389,28 @@ char* func_61(bool bParam0)//Position - 0x6137
 	switch (bParam0)
 	{
 		case 0:
-			return "COUP_HAIRC";
+			return "COUP_HAIRC" /* GXT: one free haircut. */;
 		
 		case 1:
-			return "COUP_TATTOO";
+			return "COUP_TATTOO" /* GXT: one free tattoo. */;
 		
 		case 2:
-			return "COUP_WARSTOCK";
+			return "COUP_WARSTOCK" /* GXT: 10% off your next purchase at Warstock-Cache-and-Carry.com. */;
 		
 		case 3:
-			return "COUP_MOSPORT";
+			return "COUP_MOSPORT" /* GXT: 10 percent off your next purchase at LegendaryMotorsport.net. */;
 		
 		case 4:
-			return "COUP_ELITAS";
+			return "COUP_ELITAS" /* GXT: 10 percent off your next purchase at ElitasTravel.com. */;
 		
 		case 5:
-			return "COUP_MEDSPENS";
+			return "COUP_MEDSPENS" /* GXT: 10 percent off your next medical expenses. */;
 		
 		case 6:
-			return "COUP_SPRUNK";
+			return "COUP_SPRUNK" /* GXT: one free can of Sprunk. */;
 		
 		case 7:
-			return "COUP_RESPRAY";
+			return "COUP_RESPRAY" /* GXT: one free respray. */;
 		
 		case 8:
 			return "COUP_XMAS2017";
@@ -4425,22 +4425,22 @@ char* func_61(bool bParam0)//Position - 0x6137
 			return "COUP_CAR2_XMAS2018";
 		
 		case 12:
-			return "COUP_CAS_ELITAS";
+			return "COUP_CAS_ELITAS" /* GXT: 10 percent off your next purchase at ElitasTravel.com. */;
 		
 		case 13:
-			return "COUP_CAS_DOCKTEASE";
+			return "COUP_CAS_DOCKTEASE" /* GXT: 10 percent off your next purchase at DockTease.com. */;
 		
 		case 14:
-			return "COUP_CAS_MOSPORT";
+			return "COUP_CAS_MOSPORT" /* GXT: 10 percent off your next purchase at LegendaryMotorsport.net. */;
 		
 		case 15:
-			return "COUP_CAS_SSASA";
+			return "COUP_CAS_SSASA" /* GXT: 10 percent off your next purchase at southernsanandreassuperautos.com. */;
 		
 		case 16:
-			return "COUP_CAS_WARSTOCK";
+			return "COUP_CAS_WARSTOCK" /* GXT: 10 percent off your next purchase at Warstock-Cache-and-Carry.com. */;
 		
 		case 17:
-			return "COUP_CAS_PANDM";
+			return "COUP_CAS_PANDM" /* GXT: 10 percent off your next purchase at pandmcycles.com. */;
 			break;
 		
 		default:
@@ -5342,7 +5342,7 @@ int func_110(var uParam0, bool bParam1, bool bParam2, int iParam3)//Position - 0
 		{
 			func_39(1);
 			func_121(&(uParam0->f_509), 0, 0, 1, 1);
-			func_120(&(uParam0->f_509), "DARTS_CONT", 2, 215, 1, 1, 0);
+			func_120(&(uParam0->f_509), "DARTS_CONT" /* GXT: Continue */, 2, 215, 1, 1, 0);
 			if (!bParam2)
 			{
 				func_120(&(uParam0->f_509), "DARTS_REMATCH", 2, 216, 1, 1, 0);
@@ -5353,7 +5353,7 @@ int func_110(var uParam0, bool bParam1, bool bParam2, int iParam3)//Position - 0
 			}
 			if (iParam3 || !PLAYER::IS_PLAYER_ONLINE())
 			{
-				func_120(&(uParam0->f_509), "HUD_LBD_LBD", 2, 211, 1, 1, 0);
+				func_120(&(uParam0->f_509), "HUD_LBD_LBD" /* GXT: Leaderboard */, 2, 211, 1, 1, 0);
 			}
 			func_117(&(uParam0->f_509), 1);
 			func_337(&(uParam0->f_666), 8, 0);
@@ -5859,7 +5859,7 @@ void func_128(var uParam0, var uParam1)//Position - 0x7AD1
 					}
 					else if (!Global_2097536.f_2780.f_27)
 					{
-						StringCopy(&Var6, "FMMC_COR_SCLB5", 64);
+						StringCopy(&Var6, "FMMC_COR_SCLB5" /* GXT: Driver */, 64);
 						if (Global_2097536.f_2780.f_26 > 0)
 						{
 							func_197(*uParam0, &(Global_2097536.f_2780.f_1), &Var6, &(Global_2097536.f_2780.f_9), Global_2097536.f_2780.f_25, Global_2097536.f_2780.f_26);
@@ -5871,7 +5871,7 @@ void func_128(var uParam0, var uParam1)//Position - 0x7AD1
 					}
 					else
 					{
-						StringCopy(&Var6, "FMMC_COR_SCLB6", 64);
+						StringCopy(&Var6, "FMMC_COR_SCLB6" /* GXT: Co-Driver */, 64);
 						if (Global_2097536.f_2780.f_26 > 0)
 						{
 							func_197(*uParam0, &(Global_2097536.f_2780.f_1), &Var6, &(Global_2097536.f_2780.f_9), Global_2097536.f_2780.f_25, Global_2097536.f_2780.f_26);
@@ -5881,7 +5881,7 @@ void func_128(var uParam0, var uParam1)//Position - 0x7AD1
 							func_197(*uParam0, &(Global_2097536.f_2780.f_1), &Var6, &(Global_2097536.f_2780.f_9), Global_2097536.f_2780.f_25, -1);
 						}
 					}
-					func_196(*uParam0, "SCLB_C_RANK", &(Global_2097536.f_2717), Global_2097536.f_2708);
+					func_196(*uParam0, "SCLB_C_RANK" /* GXT: POSITION */, &(Global_2097536.f_2717), Global_2097536.f_2708);
 				}
 				iVar9 = 0;
 				MISC::SET_BIT(&iVar9, 4);
@@ -5934,7 +5934,7 @@ void func_128(var uParam0, var uParam1)//Position - 0x7AD1
 						}
 						else if (!Global_2097536.f_2780.f_27)
 						{
-							StringCopy(&Var6, "FMMC_COR_SCLB5", 64);
+							StringCopy(&Var6, "FMMC_COR_SCLB5" /* GXT: Driver */, 64);
 							if (Global_2097536.f_2780.f_26 > 0)
 							{
 								func_197(*uParam0, &(Global_2097536.f_2780.f_1), &Var6, &(Global_2097536.f_2780.f_9), Global_2097536.f_2780.f_25, Global_2097536.f_2780.f_26);
@@ -5946,7 +5946,7 @@ void func_128(var uParam0, var uParam1)//Position - 0x7AD1
 						}
 						else
 						{
-							StringCopy(&Var6, "FMMC_COR_SCLB6", 64);
+							StringCopy(&Var6, "FMMC_COR_SCLB6" /* GXT: Co-Driver */, 64);
 							if (Global_2097536.f_2780.f_26 > 0)
 							{
 								func_197(*uParam0, &(Global_2097536.f_2780.f_1), &Var6, &(Global_2097536.f_2780.f_9), Global_2097536.f_2780.f_25, Global_2097536.f_2780.f_26);
@@ -5956,7 +5956,7 @@ void func_128(var uParam0, var uParam1)//Position - 0x7AD1
 								func_197(*uParam0, &(Global_2097536.f_2780.f_1), &Var6, &(Global_2097536.f_2780.f_9), Global_2097536.f_2780.f_25, -1);
 							}
 						}
-						func_196(*uParam0, "SCLB_C_RANK", &(Global_2097536.f_2717), Global_2097536.f_2708);
+						func_196(*uParam0, "SCLB_C_RANK" /* GXT: POSITION */, &(Global_2097536.f_2717), Global_2097536.f_2708);
 					}
 					MISC::SET_BIT(&(uParam1->f_42), 0);
 					MISC::CLEAR_BIT(&(uParam1->f_42), 2);
@@ -5965,7 +5965,7 @@ void func_128(var uParam0, var uParam1)//Position - 0x7AD1
 				iVar0 = 0;
 				if (Global_2097536.f_2825 == -1)
 				{
-					StringCopy(&Var12, "SC_LB_DL0", 24);
+					StringCopy(&Var12, "SC_LB_DL0" /* GXT: Downloading */, 24);
 					iVar0 = 0;
 					while (iVar0 < 3)
 					{
@@ -6066,7 +6066,7 @@ void func_128(var uParam0, var uParam1)//Position - 0x7AD1
 						}
 						else if (!Global_2097536.f_2780.f_27)
 						{
-							StringCopy(&Var6, "FMMC_COR_SCLB5", 64);
+							StringCopy(&Var6, "FMMC_COR_SCLB5" /* GXT: Driver */, 64);
 							if (Global_2097536.f_2780.f_26 > 0)
 							{
 								func_197(*uParam0, &(Global_2097536.f_2780.f_1), &Var6, &(Global_2097536.f_2780.f_9), Global_2097536.f_2780.f_25, Global_2097536.f_2780.f_26);
@@ -6078,7 +6078,7 @@ void func_128(var uParam0, var uParam1)//Position - 0x7AD1
 						}
 						else
 						{
-							StringCopy(&Var6, "FMMC_COR_SCLB6", 64);
+							StringCopy(&Var6, "FMMC_COR_SCLB6" /* GXT: Co-Driver */, 64);
 							if (Global_2097536.f_2780.f_26 > 0)
 							{
 								func_197(*uParam0, &(Global_2097536.f_2780.f_1), &Var6, &(Global_2097536.f_2780.f_9), Global_2097536.f_2780.f_25, Global_2097536.f_2780.f_26);
@@ -6088,7 +6088,7 @@ void func_128(var uParam0, var uParam1)//Position - 0x7AD1
 								func_197(*uParam0, &(Global_2097536.f_2780.f_1), &Var6, &(Global_2097536.f_2780.f_9), Global_2097536.f_2780.f_25, -1);
 							}
 						}
-						func_196(*uParam0, "SCLB_C_RANK", &(Global_2097536.f_2717), Global_2097536.f_2708);
+						func_196(*uParam0, "SCLB_C_RANK" /* GXT: POSITION */, &(Global_2097536.f_2717), Global_2097536.f_2708);
 					}
 					if (!BitTest(uParam1->f_42, 6))
 					{
@@ -6453,7 +6453,7 @@ void func_129(var uParam0, var uParam1)//Position - 0x8A99
 				{
 					if (!PLAYER::IS_SYSTEM_UI_BEING_DISPLAYED())
 					{
-						AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FRONTEND_MP_SOUNDSET", true);
+						AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_MP_SOUNDSET", true);
 						MISC::SET_BIT(&(uParam1->f_246), 2);
 						NETWORK::NETWORK_SHOW_PROFILE_UI(&(uParam1->f_246.f_6[uParam1->f_246.f_1 /*15*/].f_2));
 					}
@@ -6536,7 +6536,7 @@ void func_134(struct<30> Param0, var uParam1, var uParam2, var uParam3, var uPar
 			}
 			else
 			{
-				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY");
+				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY" /* GXT: – */);
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 			}
 			break;
@@ -6550,7 +6550,7 @@ void func_134(struct<30> Param0, var uParam1, var uParam2, var uParam3, var uPar
 			}
 			else
 			{
-				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY");
+				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY" /* GXT: – */);
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 			}
 			break;
@@ -6582,7 +6582,7 @@ void func_134(struct<30> Param0, var uParam1, var uParam2, var uParam3, var uPar
 			}
 			else
 			{
-				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY");
+				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY" /* GXT: – */);
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 			}
 			break;
@@ -6622,7 +6622,7 @@ void func_137(struct<30> Param0, var uParam1, var uParam2, var uParam3, var uPar
 			}
 			else
 			{
-				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY");
+				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY" /* GXT: – */);
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 			}
 			break;
@@ -6636,7 +6636,7 @@ void func_137(struct<30> Param0, var uParam1, var uParam2, var uParam3, var uPar
 			}
 			else
 			{
-				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY");
+				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY" /* GXT: – */);
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 			}
 			break;
@@ -6671,7 +6671,7 @@ void func_137(struct<30> Param0, var uParam1, var uParam2, var uParam3, var uPar
 			}
 			else
 			{
-				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY");
+				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY" /* GXT: – */);
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 			}
 			break;
@@ -6681,7 +6681,7 @@ void func_137(struct<30> Param0, var uParam1, var uParam2, var uParam3, var uPar
 			{
 				if (iParam15 == 2147483647)
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY" /* GXT: – */);
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				}
 				else if (iParam15 >= 3600000 || iParam15 <= -3600000)
@@ -6699,7 +6699,7 @@ void func_137(struct<30> Param0, var uParam1, var uParam2, var uParam3, var uPar
 			}
 			else
 			{
-				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY");
+				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY" /* GXT: – */);
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 			}
 			break;
@@ -6730,7 +6730,7 @@ void func_137(struct<30> Param0, var uParam1, var uParam2, var uParam3, var uPar
 			}
 			else
 			{
-				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY");
+				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY" /* GXT: – */);
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 			}
 			break;
@@ -6740,13 +6740,13 @@ void func_137(struct<30> Param0, var uParam1, var uParam2, var uParam3, var uPar
 			{
 				if (STREAMING::IS_MODEL_IN_CDIMAGE(iParam15))
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SCLB_VEH_CUST");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SCLB_VEH_CUST" /* GXT: ~a~ (custom) */);
 					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(VEHICLE::GET_DISPLAY_NAME_FROM_VEHICLE_MODEL(iParam15));
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				}
 				else
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY" /* GXT: – */);
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				}
 			}
@@ -6757,7 +6757,7 @@ void func_137(struct<30> Param0, var uParam1, var uParam2, var uParam3, var uPar
 			}
 			else
 			{
-				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY");
+				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY" /* GXT: – */);
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 			}
 			break;
@@ -6770,7 +6770,7 @@ void func_137(struct<30> Param0, var uParam1, var uParam2, var uParam3, var uPar
 			}
 			else
 			{
-				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY");
+				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY" /* GXT: – */);
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 			}
 			break;
@@ -6802,7 +6802,7 @@ void func_137(struct<30> Param0, var uParam1, var uParam2, var uParam3, var uPar
 			}
 			else
 			{
-				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY");
+				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY" /* GXT: – */);
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 			}
 			break;
@@ -6810,7 +6810,7 @@ void func_137(struct<30> Param0, var uParam1, var uParam2, var uParam3, var uPar
 		case 21:
 			if (iParam15 > 20)
 			{
-				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY");
+				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY" /* GXT: – */);
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 			}
 			else
@@ -6830,7 +6830,7 @@ void func_137(struct<30> Param0, var uParam1, var uParam2, var uParam3, var uPar
 			}
 			else
 			{
-				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY");
+				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY" /* GXT: – */);
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 			}
 			break;
@@ -6921,293 +6921,293 @@ char* func_142(int iParam0, bool bParam1)//Position - 0x9680
 			}
 			else
 			{
-				return "WT_INVALID";
+				return "WT_INVALID" /* GXT: Invalid */;
 			}
 			break;
 		
 		case joaat("WEAPON_UNARMED"):
 			if (bParam1)
 			{
-				return "WTU_UNARMED";
+				return "WTU_UNARMED" /* GXT: UNARMED */;
 			}
 			else
 			{
-				return "WT_UNARMED";
+				return "WT_UNARMED" /* GXT: Unarmed */;
 			}
 			break;
 		
 		case joaat("WEAPON_PISTOL"):
 			if (bParam1)
 			{
-				return "WTU_PIST";
+				return "WTU_PIST" /* GXT: PISTOL */;
 			}
 			else
 			{
-				return "WT_PIST";
+				return "WT_PIST" /* GXT: Pistol */;
 			}
 			break;
 		
 		case joaat("WEAPON_COMBATPISTOL"):
 			if (bParam1)
 			{
-				return "WTU_PIST_CBT";
+				return "WTU_PIST_CBT" /* GXT: COMBAT PISTOL */;
 			}
 			else
 			{
-				return "WT_PIST_CBT";
+				return "WT_PIST_CBT" /* GXT: Combat Pistol */;
 			}
 			break;
 		
 		case joaat("WEAPON_APPISTOL"):
 			if (bParam1)
 			{
-				return "WTU_PIST_AP";
+				return "WTU_PIST_AP" /* GXT: AP PISTOL */;
 			}
 			else
 			{
-				return "WT_PIST_AP";
+				return "WT_PIST_AP" /* GXT: AP Pistol */;
 			}
 			break;
 		
 		case joaat("WEAPON_SMG"):
 			if (bParam1)
 			{
-				return "WTU_SMG";
+				return "WTU_SMG" /* GXT: SMG */;
 			}
 			else
 			{
-				return "WT_SMG";
+				return "WT_SMG" /* GXT: SMG */;
 			}
 			break;
 		
 		case joaat("WEAPON_MICROSMG"):
 			if (bParam1)
 			{
-				return "WTU_SMG_MCR";
+				return "WTU_SMG_MCR" /* GXT: MICRO SMG */;
 			}
 			else
 			{
-				return "WT_SMG_MCR";
+				return "WT_SMG_MCR" /* GXT: Micro SMG */;
 			}
 			break;
 		
 		case joaat("WEAPON_ASSAULTRIFLE"):
 			if (bParam1)
 			{
-				return "WTU_RIFLE_ASL";
+				return "WTU_RIFLE_ASL" /* GXT: ASSAULT RIFLE */;
 			}
 			else
 			{
-				return "WT_RIFLE_ASL";
+				return "WT_RIFLE_ASL" /* GXT: Assault Rifle */;
 			}
 			break;
 		
 		case joaat("WEAPON_CARBINERIFLE"):
 			if (bParam1)
 			{
-				return "WTU_RIFLE_CBN";
+				return "WTU_RIFLE_CBN" /* GXT: CARBINE RIFLE */;
 			}
 			else
 			{
-				return "WT_RIFLE_CBN";
+				return "WT_RIFLE_CBN" /* GXT: Carbine Rifle */;
 			}
 			break;
 		
 		case joaat("WEAPON_ADVANCEDRIFLE"):
 			if (bParam1)
 			{
-				return "WTU_RIFLE_ADV";
+				return "WTU_RIFLE_ADV" /* GXT: ADVANCED RIFLE */;
 			}
 			else
 			{
-				return "WT_RIFLE_ADV";
+				return "WT_RIFLE_ADV" /* GXT: Advanced Rifle */;
 			}
 			break;
 		
 		case joaat("WEAPON_MG"):
 			if (bParam1)
 			{
-				return "WTU_MG";
+				return "WTU_MG" /* GXT: MG */;
 			}
 			else
 			{
-				return "WT_MG";
+				return "WT_MG" /* GXT: MG */;
 			}
 			break;
 		
 		case joaat("WEAPON_COMBATMG"):
 			if (bParam1)
 			{
-				return "WTU_MG_CBT";
+				return "WTU_MG_CBT" /* GXT: COMBAT MG */;
 			}
 			else
 			{
-				return "WT_MG_CBT";
+				return "WT_MG_CBT" /* GXT: Combat MG */;
 			}
 			break;
 		
 		case joaat("WEAPON_PUMPSHOTGUN"):
 			if (bParam1)
 			{
-				return "WTU_SG_PMP";
+				return "WTU_SG_PMP" /* GXT: PUMP SHOTGUN */;
 			}
 			else
 			{
-				return "WT_SG_PMP";
+				return "WT_SG_PMP" /* GXT: Pump Shotgun */;
 			}
 			break;
 		
 		case joaat("WEAPON_SAWNOFFSHOTGUN"):
 			if (bParam1)
 			{
-				return "WTU_SG_SOF";
+				return "WTU_SG_SOF" /* GXT: SAWED-OFF SHOTGUN */;
 			}
 			else
 			{
-				return "WT_SG_SOF";
+				return "WT_SG_SOF" /* GXT: Sawed-Off Shotgun */;
 			}
 			break;
 		
 		case joaat("WEAPON_ASSAULTSHOTGUN"):
 			if (bParam1)
 			{
-				return "WTU_SG_ASL";
+				return "WTU_SG_ASL" /* GXT: ASSAULT SHOTGUN */;
 			}
 			else
 			{
-				return "WT_SG_ASL";
+				return "WT_SG_ASL" /* GXT: Assault Shotgun */;
 			}
 			break;
 		
 		case joaat("WEAPON_HEAVYSNIPER"):
 			if (bParam1)
 			{
-				return "WTU_SNIP_HVY";
+				return "WTU_SNIP_HVY" /* GXT: HEAVY SNIPER */;
 			}
 			else
 			{
-				return "WT_SNIP_HVY";
+				return "WT_SNIP_HVY" /* GXT: Heavy Sniper */;
 			}
 			break;
 		
 		case joaat("WEAPON_REMOTESNIPER"):
 			if (bParam1)
 			{
-				return "WTU_SNIP_RMT";
+				return "WTU_SNIP_RMT" /* GXT: REMOTE SNIPER */;
 			}
 			else
 			{
-				return "WT_SNIP_RMT";
+				return "WT_SNIP_RMT" /* GXT: Remote Sniper */;
 			}
 			break;
 		
 		case joaat("WEAPON_SNIPERRIFLE"):
 			if (bParam1)
 			{
-				return "WTU_SNIP_RIF";
+				return "WTU_SNIP_RIF" /* GXT: SNIPER RIFLE */;
 			}
 			else
 			{
-				return "WT_SNIP_RIF";
+				return "WT_SNIP_RIF" /* GXT: Sniper Rifle */;
 			}
 			break;
 		
 		case joaat("WEAPON_GRENADELAUNCHER"):
 			if (bParam1)
 			{
-				return "WTU_GL";
+				return "WTU_GL" /* GXT: GRENADE LAUNCHER */;
 			}
 			else
 			{
-				return "WT_GL";
+				return "WT_GL" /* GXT: Grenade Launcher */;
 			}
 			break;
 		
 		case joaat("WEAPON_RPG"):
 			if (bParam1)
 			{
-				return "WTU_RPG";
+				return "WTU_RPG" /* GXT: RPG */;
 			}
 			else
 			{
-				return "WT_RPG";
+				return "WT_RPG" /* GXT: RPG */;
 			}
 			break;
 		
 		case joaat("WEAPON_MINIGUN"):
 			if (bParam1)
 			{
-				return "WTU_MINIGUN";
+				return "WTU_MINIGUN" /* GXT: MINIGUN */;
 			}
 			else
 			{
-				return "WT_MINIGUN";
+				return "WT_MINIGUN" /* GXT: Minigun */;
 			}
 			break;
 		
 		case joaat("WEAPON_GRENADE"):
 			if (bParam1)
 			{
-				return "WTU_GNADE";
+				return "WTU_GNADE" /* GXT: GRENADE */;
 			}
 			else
 			{
-				return "WT_GNADE";
+				return "WT_GNADE" /* GXT: Grenade */;
 			}
 			break;
 		
 		case joaat("WEAPON_SMOKEGRENADE"):
 			if (bParam1)
 			{
-				return "WTU_GNADE_SMK";
+				return "WTU_GNADE_SMK" /* GXT: TEAR GAS */;
 			}
 			else
 			{
-				return "WT_GNADE_SMK";
+				return "WT_GNADE_SMK" /* GXT: Tear Gas */;
 			}
 			break;
 		
 		case joaat("WEAPON_STICKYBOMB"):
 			if (bParam1)
 			{
-				return "WTU_GNADE_STK";
+				return "WTU_GNADE_STK" /* GXT: STICKY BOMB */;
 			}
 			else
 			{
-				return "WT_GNADE_STK";
+				return "WT_GNADE_STK" /* GXT: Sticky Bomb */;
 			}
 			break;
 		
 		case joaat("WEAPON_MOLOTOV"):
 			if (bParam1)
 			{
-				return "WTU_MOLOTOV";
+				return "WTU_MOLOTOV" /* GXT: MOLOTOV */;
 			}
 			else
 			{
-				return "WT_MOLOTOV";
+				return "WT_MOLOTOV" /* GXT: Molotov */;
 			}
 			break;
 		
 		case joaat("WEAPON_STUNGUN"):
 			if (bParam1)
 			{
-				return "WTU_STUN";
+				return "WTU_STUN" /* GXT: STUN GUN */;
 			}
 			else
 			{
-				return "WT_STUN";
+				return "WT_STUN" /* GXT: Stun Gun */;
 			}
 			break;
 		
 		case joaat("WEAPON_PETROLCAN"):
 			if (bParam1)
 			{
-				return "WTU_PETROL";
+				return "WTU_PETROL" /* GXT: JERRY CAN */;
 			}
 			else
 			{
-				return "WT_PETROL";
+				return "WT_PETROL" /* GXT: Jerry Can */;
 			}
 			break;
 		
@@ -7225,33 +7225,33 @@ char* func_142(int iParam0, bool bParam1)//Position - 0x9680
 		case joaat("VEHICLE_WEAPON_TANK"):
 			if (bParam1)
 			{
-				return "WTU_V_TANK";
+				return "WTU_V_TANK" /* GXT: TANK CANNON */;
 			}
 			else
 			{
-				return "WT_V_TANK";
+				return "WT_V_TANK" /* GXT: Tank Cannon */;
 			}
 			break;
 		
 		case joaat("VEHICLE_WEAPON_SPACE_ROCKET"):
 			if (bParam1)
 			{
-				return "WTU_V_SPACERKT";
+				return "WTU_V_SPACERKT" /* GXT: ROCKETS */;
 			}
 			else
 			{
-				return "WT_V_SPACERKT";
+				return "WT_V_SPACERKT" /* GXT: Rockets */;
 			}
 			break;
 		
 		case joaat("VEHICLE_WEAPON_PLAYER_LASER"):
 			if (bParam1)
 			{
-				return "WTU_V_PLRLSR";
+				return "WTU_V_PLRLSR" /* GXT: LASER */;
 			}
 			else
 			{
-				return "WT_V_PLRLSR";
+				return "WT_V_PLRLSR" /* GXT: Laser */;
 			}
 			break;
 		
@@ -7262,818 +7262,818 @@ char* func_142(int iParam0, bool bParam1)//Position - 0x9680
 			}
 			else
 			{
-				return "WT_OBJECT";
+				return "WT_OBJECT" /* GXT: Object */;
 			}
 			break;
 		
 		case joaat("GADGET_PARACHUTE"):
 			if (bParam1)
 			{
-				return "WTU_PARA";
+				return "WTU_PARA" /* GXT: PARACHUTE */;
 			}
 			else
 			{
-				return "WT_PARA";
+				return "WT_PARA" /* GXT: Parachute */;
 			}
 			break;
 		
 		case joaat("AMMO_RPG"):
 			if (bParam1)
 			{
-				return "WTU_A_RPG";
+				return "WTU_A_RPG" /* GXT: ROCKET */;
 			}
 			else
 			{
-				return "WT_A_RPG";
+				return "WT_A_RPG" /* GXT: Rocket */;
 			}
 			break;
 		
 		case joaat("AMMO_TANK"):
 			if (bParam1)
 			{
-				return "WTU_A_TANK";
+				return "WTU_A_TANK" /* GXT: TANK */;
 			}
 			else
 			{
-				return "WT_A_TANK";
+				return "WT_A_TANK" /* GXT: Tank */;
 			}
 			break;
 		
 		case joaat("AMMO_SPACE_ROCKET"):
 			if (bParam1)
 			{
-				return "WTU_A_SPACERKT";
+				return "WTU_A_SPACERKT" /* GXT: ROCKET */;
 			}
 			else
 			{
-				return "WT_A_SPACERKT";
+				return "WT_A_SPACERKT" /* GXT: Rocket */;
 			}
 			break;
 		
 		case joaat("AMMO_PLAYER_LASER"):
 			if (bParam1)
 			{
-				return "WTU_A_PLRLSR";
+				return "WTU_A_PLRLSR" /* GXT: LASER */;
 			}
 			else
 			{
-				return "WT_A_PLRLSR";
+				return "WT_A_PLRLSR" /* GXT: Laser */;
 			}
 			break;
 		
 		case joaat("AMMO_ENEMY_LASER"):
 			if (bParam1)
 			{
-				return "WTU_A_ENMYLSR";
+				return "WTU_A_ENMYLSR" /* GXT: LASER */;
 			}
 			else
 			{
-				return "WT_A_ENMYLSR";
+				return "WT_A_ENMYLSR" /* GXT: Laser */;
 			}
 			break;
 		
 		case joaat("WEAPON_KNIFE"):
 			if (bParam1)
 			{
-				return "WTU_KNIFE";
+				return "WTU_KNIFE" /* GXT: KNIFE */;
 			}
 			else
 			{
-				return "WT_KNIFE";
+				return "WT_KNIFE" /* GXT: Knife */;
 			}
 			break;
 		
 		case joaat("WEAPON_NIGHTSTICK"):
 			if (bParam1)
 			{
-				return "WTU_NGTSTK";
+				return "WTU_NGTSTK" /* GXT: NIGHTSTICK */;
 			}
 			else
 			{
-				return "WT_NGTSTK";
+				return "WT_NGTSTK" /* GXT: Nightstick */;
 			}
 			break;
 		
 		case joaat("WEAPON_HAMMER"):
 			if (bParam1)
 			{
-				return "WTU_HAMMER";
+				return "WTU_HAMMER" /* GXT: HAMMER */;
 			}
 			else
 			{
-				return "WT_HAMMER";
+				return "WT_HAMMER" /* GXT: Hammer */;
 			}
 			break;
 		
 		case joaat("WEAPON_BAT"):
 			if (bParam1)
 			{
-				return "WTU_BAT";
+				return "WTU_BAT" /* GXT: BASEBALL BAT */;
 			}
 			else
 			{
-				return "WT_BAT";
+				return "WT_BAT" /* GXT: Baseball Bat */;
 			}
 			break;
 		
 		case joaat("WEAPON_CROWBAR"):
 			if (bParam1)
 			{
-				return "WTU_CROWBAR";
+				return "WTU_CROWBAR" /* GXT: CROWBAR */;
 			}
 			else
 			{
-				return "WT_CROWBAR";
+				return "WT_CROWBAR" /* GXT: Crowbar */;
 			}
 			break;
 		
 		case joaat("WEAPON_GOLFCLUB"):
 			if (bParam1)
 			{
-				return "WTU_GOLFCLUB";
+				return "WTU_GOLFCLUB" /* GXT: GOLF CLUB */;
 			}
 			else
 			{
-				return "WT_GOLFCLUB";
+				return "WT_GOLFCLUB" /* GXT: Golf Club */;
 			}
 			break;
 		
 		case joaat("WEAPON_RAMMED_BY_CAR"):
 			if (bParam1)
 			{
-				return "WTU_PIST";
+				return "WTU_PIST" /* GXT: PISTOL */;
 			}
 			else
 			{
-				return "WT_PIST";
+				return "WT_PIST" /* GXT: Pistol */;
 			}
 			break;
 		
 		case joaat("WEAPON_RUN_OVER_BY_CAR"):
 			if (bParam1)
 			{
-				return "WTU_PIST";
+				return "WTU_PIST" /* GXT: PISTOL */;
 			}
 			else
 			{
-				return "WT_PIST";
+				return "WT_PIST" /* GXT: Pistol */;
 			}
 			break;
 		
 		case joaat("WEAPON_ASSAULTSMG"):
 			if (bParam1)
 			{
-				return "WTU_SMG_ASL";
+				return "WTU_SMG_ASL" /* GXT: ASSAULT SMG */;
 			}
 			else
 			{
-				return "WT_SMG_ASL";
+				return "WT_SMG_ASL" /* GXT: Assault SMG */;
 			}
 			break;
 		
 		case joaat("WEAPON_BULLPUPSHOTGUN"):
 			if (bParam1)
 			{
-				return "WTU_SG_BLP";
+				return "WTU_SG_BLP" /* GXT: BULLPUP SHOTGUN */;
 			}
 			else
 			{
-				return "WT_SG_BLP";
+				return "WT_SG_BLP" /* GXT: Bullpup Shotgun */;
 			}
 			break;
 		
 		case joaat("WEAPON_PISTOL50"):
 			if (bParam1)
 			{
-				return "WTU_PIST_50";
+				return "WTU_PIST_50" /* GXT: PISTOL .50 */;
 			}
 			else
 			{
-				return "WT_PIST_50";
+				return "WT_PIST_50" /* GXT: Pistol .50 */;
 			}
 			break;
 		
 		case joaat("WEAPON_BOTTLE"):
 			if (bParam1)
 			{
-				return "WTU_BOTTLE";
+				return "WTU_BOTTLE" /* GXT: BOTTLE */;
 			}
 			else
 			{
-				return "WT_BOTTLE";
+				return "WT_BOTTLE" /* GXT: Bottle */;
 			}
 			break;
 		
 		case joaat("WEAPON_GUSENBERG"):
 			if (bParam1)
 			{
-				return "WTU_GUSENBERG";
+				return "WTU_GUSENBERG" /* GXT: GUSENBERG SWEEPER */;
 			}
 			else
 			{
-				return "WT_GUSENBERG";
+				return "WT_GUSENBERG" /* GXT: Gusenberg Sweeper */;
 			}
 			break;
 		
 		case joaat("WEAPON_SNSPISTOL"):
 			if (bParam1)
 			{
-				return "WTU_SNSPISTOL";
+				return "WTU_SNSPISTOL" /* GXT: SNS PISTOL */;
 			}
 			else
 			{
-				return "WT_SNSPISTOL";
+				return "WT_SNSPISTOL" /* GXT: SNS Pistol */;
 			}
 			break;
 		
 		case joaat("WEAPON_VINTAGEPISTOL"):
 			if (bParam1)
 			{
-				return "WTU_VPISTOL";
+				return "WTU_VPISTOL" /* GXT: VINTAGE PISTOL */;
 			}
 			else
 			{
-				return "WT_VPISTOL";
+				return "WT_VPISTOL" /* GXT: Vintage Pistol */;
 			}
 			break;
 		
 		case joaat("WEAPON_DAGGER"):
 			if (bParam1)
 			{
-				return "WTU_DAGGER";
+				return "WTU_DAGGER" /* GXT: ANTIQUE CAVALRY DAGGER */;
 			}
 			else
 			{
-				return "WT_DAGGER";
+				return "WT_DAGGER" /* GXT: Antique Cavalry Dagger */;
 			}
 			break;
 		
 		case joaat("WEAPON_FLAREGUN"):
 			if (bParam1)
 			{
-				return "WTU_FLAREGUN";
+				return "WTU_FLAREGUN" /* GXT: FLARE GUN */;
 			}
 			else
 			{
-				return "WT_FLAREGUN";
+				return "WT_FLAREGUN" /* GXT: Flare Gun */;
 			}
 			break;
 		
 		case joaat("WEAPON_HEAVYPISTOL"):
 			if (bParam1)
 			{
-				return "WTU_HEAVYPSTL";
+				return "WTU_HEAVYPSTL" /* GXT: HEAVY PISTOL */;
 			}
 			else
 			{
-				return "WT_HEAVYPSTL";
+				return "WT_HEAVYPSTL" /* GXT: Heavy Pistol */;
 			}
 			break;
 		
 		case joaat("WEAPON_SPECIALCARBINE"):
 			if (bParam1)
 			{
-				return "WTU_RIFLE_SCBN";
+				return "WTU_RIFLE_SCBN" /* GXT: SPECIAL CARBINE */;
 			}
 			else
 			{
-				return "WT_RIFLE_SCBN";
+				return "WT_RIFLE_SCBN" /* GXT: Special Carbine */;
 			}
 			break;
 		
 		case joaat("WEAPON_MUSKET"):
 			if (bParam1)
 			{
-				return "WTU_MUSKET";
+				return "WTU_MUSKET" /* GXT: MUSKET */;
 			}
 			else
 			{
-				return "WT_MUSKET";
+				return "WT_MUSKET" /* GXT: Musket */;
 			}
 			break;
 		
 		case joaat("WEAPON_FIREWORK"):
 			if (bParam1)
 			{
-				return "WTU_FWRKLNCHR";
+				return "WTU_FWRKLNCHR" /* GXT: FIREWORK LAUNCHER */;
 			}
 			else
 			{
-				return "WT_FWRKLNCHR";
+				return "WT_FWRKLNCHR" /* GXT: Firework Launcher */;
 			}
 			break;
 		
 		case joaat("WEAPON_MARKSMANRIFLE"):
 			if (bParam1)
 			{
-				return "WTU_MKRIFLE";
+				return "WTU_MKRIFLE" /* GXT: MARKSMAN RIFLE */;
 			}
 			else
 			{
-				return "WT_MKRIFLE";
+				return "WT_MKRIFLE" /* GXT: Marksman Rifle */;
 			}
 			break;
 		
 		case joaat("WEAPON_HEAVYSHOTGUN"):
 			if (bParam1)
 			{
-				return "WTU_HVYSHOT";
+				return "WTU_HVYSHOT" /* GXT: HEAVY SHOTGUN */;
 			}
 			else
 			{
-				return "WT_HVYSHOT";
+				return "WT_HVYSHOT" /* GXT: Heavy Shotgun */;
 			}
 			break;
 		
 		case joaat("WEAPON_PROXMINE"):
 			if (bParam1)
 			{
-				return "WTU_PRXMINE";
+				return "WTU_PRXMINE" /* GXT: PROXIMITY MINE */;
 			}
 			else
 			{
-				return "WT_PRXMINE";
+				return "WT_PRXMINE" /* GXT: Proximity Mine */;
 			}
 			break;
 		
 		case joaat("WEAPON_HOMINGLAUNCHER"):
 			if (bParam1)
 			{
-				return "WTU_HOMLNCH";
+				return "WTU_HOMLNCH" /* GXT: HOMING LAUNCHER */;
 			}
 			else
 			{
-				return "WT_HOMLNCH";
+				return "WT_HOMLNCH" /* GXT: Homing Launcher */;
 			}
 			break;
 		
 		case joaat("WEAPON_HATCHET"):
 			if (bParam1)
 			{
-				return "WTU_HATCHET";
+				return "WTU_HATCHET" /* GXT: HATCHET */;
 			}
 			else
 			{
-				return "WT_HATCHET";
+				return "WT_HATCHET" /* GXT: Hatchet */;
 			}
 			break;
 		
 		case joaat("WEAPON_RAILGUN"):
 			if (bParam1)
 			{
-				return "WTU_RAILGUN";
+				return "WTU_RAILGUN" /* GXT: RAILGUN */;
 			}
 			else
 			{
-				return "WT_RAILGUN";
+				return "WT_RAILGUN" /* GXT: Railgun */;
 			}
 			break;
 		
 		case joaat("WEAPON_COMBATPDW"):
 			if (bParam1)
 			{
-				return "WTU_COMBATPDW";
+				return "WTU_COMBATPDW" /* GXT: COMBAT PDW */;
 			}
 			else
 			{
-				return "WT_COMBATPDW";
+				return "WT_COMBATPDW" /* GXT: Combat PDW */;
 			}
 			break;
 		
 		case joaat("WEAPON_KNUCKLE"):
 			if (bParam1)
 			{
-				return "WTU_KNUCKLE";
+				return "WTU_KNUCKLE" /* GXT: KNUCKLE DUSTER */;
 			}
 			else
 			{
-				return "WT_KNUCKLE";
+				return "WT_KNUCKLE" /* GXT: Knuckle Duster */;
 			}
 			break;
 		
 		case joaat("WEAPON_MARKSMANPISTOL"):
 			if (bParam1)
 			{
-				return "WTU_MKPISTOL";
+				return "WTU_MKPISTOL" /* GXT: MARKSMAN PISTOL */;
 			}
 			else
 			{
-				return "WT_MKPISTOL";
+				return "WT_MKPISTOL" /* GXT: Marksman Pistol */;
 			}
 			break;
 		
 		case joaat("WEAPON_BULLPUPRIFLE"):
 			if (bParam1)
 			{
-				return "WTU_BULLRIFLE";
+				return "WTU_BULLRIFLE" /* GXT: BULLPUP RIFLE */;
 			}
 			else
 			{
-				return "WT_BULLRIFLE";
+				return "WT_BULLRIFLE" /* GXT: Bullpup Rifle */;
 			}
 			break;
 		
 		case joaat("WEAPON_MACHETE"):
 			if (bParam1)
 			{
-				return "WTU_MACHETE";
+				return "WTU_MACHETE" /* GXT: MACHETE */;
 			}
 			else
 			{
-				return "WT_MACHETE";
+				return "WT_MACHETE" /* GXT: Machete */;
 			}
 			break;
 		
 		case joaat("WEAPON_MACHINEPISTOL"):
 			if (bParam1)
 			{
-				return "WTU_MCHPIST";
+				return "WTU_MCHPIST" /* GXT: MACHINE PISTOL */;
 			}
 			else
 			{
-				return "WT_MCHPIST";
+				return "WT_MCHPIST" /* GXT: Machine Pistol */;
 			}
 			break;
 		
 		case joaat("WEAPON_FLASHLIGHT"):
 			if (bParam1)
 			{
-				return "WTU_FLASHLIGHT";
+				return "WTU_FLASHLIGHT" /* GXT: FLASHLIGHT */;
 			}
 			else
 			{
-				return "WT_FLASHLIGHT";
+				return "WT_FLASHLIGHT" /* GXT: Flashlight */;
 			}
 			break;
 		
 		case joaat("WEAPON_DBSHOTGUN"):
 			if (bParam1)
 			{
-				return "WTU_DBSHGN";
+				return "WTU_DBSHGN" /* GXT: DOUBLE BARREL SHOTGUN */;
 			}
 			else
 			{
-				return "WT_DBSHGN";
+				return "WT_DBSHGN" /* GXT: Double Barrel Shotgun */;
 			}
 			break;
 		
 		case joaat("WEAPON_COMPACTRIFLE"):
 			if (bParam1)
 			{
-				return "WTU_CMPRIFLE";
+				return "WTU_CMPRIFLE" /* GXT: COMPACT RIFLE */;
 			}
 			else
 			{
-				return "WT_CMPRIFLE";
+				return "WT_CMPRIFLE" /* GXT: Compact Rifle */;
 			}
 			break;
 		
 		case joaat("WEAPON_SWITCHBLADE"):
 			if (bParam1)
 			{
-				return "WTU_SWBLADE";
+				return "WTU_SWBLADE" /* GXT: SWITCHBLADE */;
 			}
 			else
 			{
-				return "WT_SWBLADE";
+				return "WT_SWBLADE" /* GXT: Switchblade */;
 			}
 			break;
 		
 		case joaat("WEAPON_REVOLVER"):
 			if (bParam1)
 			{
-				return "WTU_REVOLVER";
+				return "WTU_REVOLVER" /* GXT: HEAVY REVOLVER */;
 			}
 			else
 			{
-				return "WT_REVOLVER";
+				return "WT_REVOLVER" /* GXT: Heavy Revolver */;
 			}
 			break;
 		
 		case joaat("WEAPON_AUTOSHOTGUN"):
 			if (bParam1)
 			{
-				return "WTU_AUTOSHGN";
+				return "WTU_AUTOSHGN" /* GXT: SWEEPER SHOTGUN */;
 			}
 			else
 			{
-				return "WT_AUTOSHGN";
+				return "WT_AUTOSHGN" /* GXT: Sweeper Shotgun */;
 			}
 			break;
 		
 		case joaat("WEAPON_BATTLEAXE"):
 			if (bParam1)
 			{
-				return "WTU_BATTLEAXE";
+				return "WTU_BATTLEAXE" /* GXT: BATTLE AXE */;
 			}
 			else
 			{
-				return "WT_BATTLEAXE";
+				return "WT_BATTLEAXE" /* GXT: Battle Axe */;
 			}
 			break;
 		
 		case joaat("WEAPON_COMPACTLAUNCHER"):
 			if (bParam1)
 			{
-				return "WTU_CMPGL";
+				return "WTU_CMPGL" /* GXT: COMPACT GRENADE LAUNCHER */;
 			}
 			else
 			{
-				return "WT_CMPGL";
+				return "WT_CMPGL" /* GXT: Compact Grenade Launcher */;
 			}
 			break;
 		
 		case joaat("WEAPON_MINISMG"):
 			if (bParam1)
 			{
-				return "WTU_MINISMG";
+				return "WTU_MINISMG" /* GXT: MINI SMG */;
 			}
 			else
 			{
-				return "WT_MINISMG";
+				return "WT_MINISMG" /* GXT: Mini SMG */;
 			}
 			break;
 		
 		case joaat("WEAPON_PIPEBOMB"):
 			if (bParam1)
 			{
-				return "WTU_PIPEBOMB";
+				return "WTU_PIPEBOMB" /* GXT: PIPE BOMB */;
 			}
 			else
 			{
-				return "WT_PIPEBOMB";
+				return "WT_PIPEBOMB" /* GXT: Pipe Bomb */;
 			}
 			break;
 		
 		case joaat("WEAPON_POOLCUE"):
 			if (bParam1)
 			{
-				return "WTU_POOLCUE";
+				return "WTU_POOLCUE" /* GXT: POOL CUE */;
 			}
 			else
 			{
-				return "WT_POOLCUE";
+				return "WT_POOLCUE" /* GXT: Pool Cue */;
 			}
 			break;
 		
 		case joaat("WEAPON_WRENCH"):
 			if (bParam1)
 			{
-				return "WTU_WRENCH";
+				return "WTU_WRENCH" /* GXT: PIPE WRENCH */;
 			}
 			else
 			{
-				return "WT_WRENCH";
+				return "WT_WRENCH" /* GXT: Pipe Wrench */;
 			}
 			break;
 		
 		case joaat("WEAPON_COUGAR"):
-			return "WT_RAGE";
+			return "WT_RAGE" /* GXT: Rage Pickup */;
 			break;
 		
 		case joaat("VEHICLE_WEAPON_TORPEDO"):
-			return "WT_VEH_WEP";
+			return "WT_VEH_WEP" /* GXT: Vehicle Weapon */;
 			break;
 		
 		case joaat("WEAPON_PISTOL_MK2"):
 			if (bParam1)
 			{
-				return "WTU_PIST2";
+				return "WTU_PIST2" /* GXT: PISTOL MK II */;
 			}
 			else
 			{
-				return "WT_PIST2";
+				return "WT_PIST2" /* GXT: Pistol Mk II */;
 			}
 			break;
 		
 		case joaat("WEAPON_SMG_MK2"):
 			if (bParam1)
 			{
-				return "WTU_SMG2";
+				return "WTU_SMG2" /* GXT: SMG MK II */;
 			}
 			else
 			{
-				return "WT_SMG2";
+				return "WT_SMG2" /* GXT: SMG Mk II */;
 			}
 			break;
 		
 		case joaat("WEAPON_HEAVYSNIPER_MK2"):
 			if (bParam1)
 			{
-				return "WTU_SNIP_HVY2";
+				return "WTU_SNIP_HVY2" /* GXT: HEAVY SNIPER MK II */;
 			}
 			else
 			{
-				return "WT_SNIP_HVY2";
+				return "WT_SNIP_HVY2" /* GXT: Heavy Sniper Mk II */;
 			}
 			break;
 		
 		case joaat("WEAPON_COMBATMG_MK2"):
 			if (bParam1)
 			{
-				return "WTU_MG_CBT2";
+				return "WTU_MG_CBT2" /* GXT: COMBAT MG MK II */;
 			}
 			else
 			{
-				return "WT_MG_CBT2";
+				return "WT_MG_CBT2" /* GXT: Combat MG Mk II */;
 			}
 			break;
 		
 		case joaat("WEAPON_ASSAULTRIFLE_MK2"):
 			if (bParam1)
 			{
-				return "WTU_RIFLE_ASL2";
+				return "WTU_RIFLE_ASL2" /* GXT: ASSAULT RIFLE MK II */;
 			}
 			else
 			{
-				return "WT_RIFLE_ASL2";
+				return "WT_RIFLE_ASL2" /* GXT: Assault Rifle Mk II */;
 			}
 			break;
 		
 		case joaat("WEAPON_CARBINERIFLE_MK2"):
 			if (bParam1)
 			{
-				return "WTU_RIFLE_CBN2";
+				return "WTU_RIFLE_CBN2" /* GXT: CARBINE RIFLE MK II */;
 			}
 			else
 			{
-				return "WT_RIFLE_CBN2";
+				return "WT_RIFLE_CBN2" /* GXT: Carbine Rifle Mk II */;
 			}
 			break;
 		
 		case joaat("WEAPON_PUMPSHOTGUN_MK2"):
 			if (bParam1)
 			{
-				return "WTU_SG_PMP2";
+				return "WTU_SG_PMP2" /* GXT: PUMP SHOTGUN MK II */;
 			}
 			else
 			{
-				return "WT_SG_PMP2";
+				return "WT_SG_PMP2" /* GXT: Pump Shotgun Mk II */;
 			}
 			break;
 		
 		case joaat("WEAPON_SPECIALCARBINE_MK2"):
 			if (bParam1)
 			{
-				return "WTU_SPCARBINE2";
+				return "WTU_SPCARBINE2" /* GXT: SPECIAL CARBINE MK II */;
 			}
 			else
 			{
-				return "WT_SPCARBINE2";
+				return "WT_SPCARBINE2" /* GXT: Special Carbine Mk II */;
 			}
 			break;
 		
 		case joaat("WEAPON_SNSPISTOL_MK2"):
 			if (bParam1)
 			{
-				return "WTU_SNSPISTOL2";
+				return "WTU_SNSPISTOL2" /* GXT: SNS PISTOL MK II */;
 			}
 			else
 			{
-				return "WT_SNSPISTOL2";
+				return "WT_SNSPISTOL2" /* GXT: SNS Pistol Mk II */;
 			}
 			break;
 		
 		case joaat("WEAPON_MARKSMANRIFLE_MK2"):
 			if (bParam1)
 			{
-				return "WTU_MKRIFLE2";
+				return "WTU_MKRIFLE2" /* GXT: MARKSMAN RIFLE MK II */;
 			}
 			else
 			{
-				return "WT_MKRIFLE2";
+				return "WT_MKRIFLE2" /* GXT: Marksman Rifle Mk II */;
 			}
 			break;
 		
 		case joaat("WEAPON_REVOLVER_MK2"):
 			if (bParam1)
 			{
-				return "WTU_REVOLVER2";
+				return "WTU_REVOLVER2" /* GXT: HEAVY REVOLVER MK II */;
 			}
 			else
 			{
-				return "WT_REVOLVER2";
+				return "WT_REVOLVER2" /* GXT: Heavy Revolver Mk II */;
 			}
 			break;
 		
 		case joaat("WEAPON_BULLPUPRIFLE_MK2"):
 			if (bParam1)
 			{
-				return "WTU_BULLRIFLE2";
+				return "WTU_BULLRIFLE2" /* GXT: BULLPUP RIFLE MK II */;
 			}
 			else
 			{
-				return "WT_BULLRIFLE2";
+				return "WT_BULLRIFLE2" /* GXT: Bullpup Rifle Mk II */;
 			}
 			break;
 		
 		case joaat("WEAPON_DOUBLEACTION"):
 			if (bParam1)
 			{
-				return "WTU_REV_DA";
+				return "WTU_REV_DA" /* GXT: DOUBLE-ACTION REVOLVER */;
 			}
 			else
 			{
-				return "WT_REV_DA";
+				return "WT_REV_DA" /* GXT: Double-Action Revolver */;
 			}
 			break;
 		
 		case joaat("WEAPON_STONE_HATCHET"):
 			if (bParam1)
 			{
-				return "WTU_SHATCHET";
+				return "WTU_SHATCHET" /* GXT: STONE HATCHET */;
 			}
 			else
 			{
-				return "WT_SHATCHET";
+				return "WT_SHATCHET" /* GXT: Stone Hatchet */;
 			}
 			break;
 		
 		case joaat("WEAPON_RAYPISTOL"):
 			if (bParam1)
 			{
-				return "WTU_RAYPISTOL";
+				return "WTU_RAYPISTOL" /* GXT: UP-N-ATOMIZER */;
 			}
 			else
 			{
-				return "WT_RAYPISTOL";
+				return "WT_RAYPISTOL" /* GXT: Up-n-Atomizer */;
 			}
 			break;
 		
 		case joaat("WEAPON_RAYCARBINE"):
 			if (bParam1)
 			{
-				return "WTU_RAYCARBINE";
+				return "WTU_RAYCARBINE" /* GXT: UNHOLY HELLBRINGER */;
 			}
 			else
 			{
-				return "WT_RAYCARBINE";
+				return "WT_RAYCARBINE" /* GXT: Unholy Hellbringer */;
 			}
 			break;
 		
 		case joaat("WEAPON_RAYMINIGUN"):
 			if (bParam1)
 			{
-				return "WTU_RAYMINIGUN";
+				return "WTU_RAYMINIGUN" /* GXT: WIDOWMAKER */;
 			}
 			else
 			{
-				return "WT_RAYMINIGUN";
+				return "WT_RAYMINIGUN" /* GXT: Widowmaker */;
 			}
 			break;
 		
 		case joaat("WEAPON_NAVYREVOLVER"):
 			if (bParam1)
 			{
-				return "WTU_REV_NV";
+				return "WTU_REV_NV" /* GXT: NAVY REVOLVER */;
 			}
 			else
 			{
-				return "WT_REV_NV";
+				return "WT_REV_NV" /* GXT: Navy Revolver */;
 			}
 			break;
 		
 		case joaat("WEAPON_CERAMICPISTOL"):
 			if (bParam1)
 			{
-				return "WTU_CERPST";
+				return "WTU_CERPST" /* GXT: CERAMIC PISTOL */;
 			}
 			else
 			{
-				return "WT_CERPST";
+				return "WT_CERPST" /* GXT: Ceramic Pistol */;
 			}
 			break;
 		
 		case joaat("WEAPON_GADGETPISTOL"):
 			if (bParam1)
 			{
-				return "WTU_GDGTPST";
+				return "WTU_GDGTPST" /* GXT: PERICO PISTOL */;
 			}
 			else
 			{
-				return "WT_GDGTPST";
+				return "WT_GDGTPST" /* GXT: Perico Pistol */;
 			}
 			break;
 		
 		case joaat("WEAPON_MILITARYRIFLE"):
 			if (bParam1)
 			{
-				return "WTU_MLTRYRFL";
+				return "WTU_MLTRYRFL" /* GXT: MILITARY RIFLE */;
 			}
 			else
 			{
-				return "WT_MLTRYRFL";
+				return "WT_MLTRYRFL" /* GXT: Military Rifle */;
 			}
 			break;
 		
 		case joaat("WEAPON_COMBATSHOTGUN"):
 			if (bParam1)
 			{
-				return "WTU_CMBSHGN";
+				return "WTU_CMBSHGN" /* GXT: COMBAT SHOTGUN */;
 			}
 			else
 			{
-				return "WT_CMBSHGN";
+				return "WT_CMBSHGN" /* GXT: Combat Shotgun */;
 			}
 			break;
 		
@@ -8091,77 +8091,77 @@ char* func_142(int iParam0, bool bParam1)//Position - 0x9680
 		case joaat("WEAPON_FERTILIZERCAN"):
 			if (bParam1)
 			{
-				return "WTU_FERTCAN";
+				return "WTU_FERTCAN" /* GXT: FERTILIZER CAN */;
 			}
 			else
 			{
-				return "WT_FERTCAN";
+				return "WT_FERTCAN" /* GXT: Fertilizer Can */;
 			}
 			break;
 		
 		case joaat("WEAPON_HEAVYRIFLE"):
 			if (bParam1)
 			{
-				return "WTU_HEAVYRIFLE";
+				return "WTU_HEAVYRIFLE" /* GXT: HEAVY RIFLE */;
 			}
 			else
 			{
-				return "WT_HEAVYRIFLE";
+				return "WT_HEAVYRIFLE" /* GXT: Heavy Rifle */;
 			}
 			break;
 		
 		case joaat("WEAPON_EMPLAUNCHER"):
 			if (bParam1)
 			{
-				return "WTU_EMPL";
+				return "WTU_EMPL" /* GXT: COMPACT EMP LAUNCHER */;
 			}
 			else
 			{
-				return "WT_EMPL";
+				return "WT_EMPL" /* GXT: Compact EMP Launcher */;
 			}
 			break;
 		
 		case joaat("WEAPON_STUNGUN_MP"):
 			if (bParam1)
 			{
-				return "WTU_STNGUNMP";
+				return "WTU_STNGUNMP" /* GXT: STUN GUN */;
 			}
 			else
 			{
-				return "WT_STNGUNMP";
+				return "WT_STNGUNMP" /* GXT: Stun Gun */;
 			}
 			break;
 		
 		case joaat("WEAPON_TACTICALRIFLE"):
 			if (bParam1)
 			{
-				return "WTU_TACRIFLE";
+				return "WTU_TACRIFLE" /* GXT: SERVICE CARBINE */;
 			}
 			else
 			{
-				return "WT_TACRIFLE";
+				return "WT_TACRIFLE" /* GXT: Service Carbine */;
 			}
 			break;
 		
 		case joaat("WEAPON_PRECISIONRIFLE"):
 			if (bParam1)
 			{
-				return "WTU_PRCSRIFLE";
+				return "WTU_PRCSRIFLE" /* GXT: PRECISION RIFLE */;
 			}
 			else
 			{
-				return "WT_PRCSRIFLE";
+				return "WT_PRCSRIFLE" /* GXT: Precision Rifle */;
 			}
 			break;
 		
 		case joaat("WEAPON_BZGAS"):
 			if (bParam1)
 			{
-				return "WTU_BZGAS";
+				return "WTU_BZGAS" /* GXT: BZ GAS */;
 			}
 			else
 			{
-				return "WTU_BZGAS";
+				return "WTU_BZGAS" /* GXT: BZ GAS */;
 			}
 			break;
 		
@@ -8201,7 +8201,7 @@ char* func_142(int iParam0, bool bParam1)//Position - 0x9680
 			}
 			break;
 	}
-	return "WT_INVALID";
+	return "WT_INVALID" /* GXT: Invalid */;
 }
 
 var func_143(var uParam0)//Position - 0xA4CD
@@ -8328,7 +8328,7 @@ void func_146(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4,
 	}
 	else
 	{
-		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY");
+		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SC_LB_EMPTY" /* GXT: – */);
 		GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 	}
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_PLAYER_NAME_STRING(sParam4);
@@ -11163,12 +11163,12 @@ void func_195(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 	sVar0 = "";
 	if (BitTest(iParam2, 4))
 	{
-		sVar0 = "SCLB_GLOBAL";
+		sVar0 = "SCLB_GLOBAL" /* GXT: GLOBAL */;
 	}
 	else if (BitTest(iParam2, 5))
 	{
 		*iParam1++;
-		sVar0 = "SCLB_FRIENDS";
+		sVar0 = "SCLB_FRIENDS" /* GXT: FRIENDS */;
 	}
 	else if (BitTest(iParam2, 6))
 	{
@@ -11177,7 +11177,7 @@ void func_195(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 		{
 			if ((func_167() || func_166()) && !NETWORK::NETWORK_HAVE_USER_CONTENT_PRIVILEGES(0))
 			{
-				sVar0 = "SCLB_CREW";
+				sVar0 = "SCLB_CREW" /* GXT: CREW */;
 			}
 			else
 			{
@@ -11193,18 +11193,18 @@ void func_195(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 					}
 					else
 					{
-						sVar0 = "SCLB_CREW";
+						sVar0 = "SCLB_CREW" /* GXT: CREW */;
 					}
 				}
 				else
 				{
-					sVar0 = "SCLB_CREW";
+					sVar0 = "SCLB_CREW" /* GXT: CREW */;
 				}
 			}
 		}
 		else
 		{
-			sVar0 = "SCLB_CREW";
+			sVar0 = "SCLB_CREW" /* GXT: CREW */;
 		}
 	}
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_SLOT");
@@ -11232,19 +11232,19 @@ void func_195(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar5);
 		if (!NETWORK::NETWORK_IS_SIGNED_ONLINE())
 		{
-			sVar0 = "SCLB_NOT_ONL";
+			sVar0 = "SCLB_NOT_ONL" /* GXT: Sign in to view leaderboard data. */;
 		}
 		else if (!NETWORK::NETWORK_HAS_VALID_ROS_CREDENTIALS())
 		{
-			sVar0 = "SCLB_NO_ROS";
+			sVar0 = "SCLB_NO_ROS" /* GXT: The Rockstar game services are unavailable right now. Please try again later. */;
 		}
 		else if (Global_2097536.f_2832 != 0)
 		{
-			sVar0 = "SCLB_READ_FAIL";
+			sVar0 = "SCLB_READ_FAIL" /* GXT: Unable to retrieve leaderboard data. Please try again later. */;
 		}
 		else
 		{
-			sVar0 = "HUD_PERM";
+			sVar0 = "HUD_PERM" /* GXT: Your profile does not have the correct permissions to access Social Club functionality. */;
 		}
 		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sVar0);
 		GRAPHICS::END_TEXT_COMMAND_UNPARSED_SCALEFORM_STRING();
@@ -11255,17 +11255,17 @@ void func_195(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 	{
 		if (BitTest(iParam2, 4))
 		{
-			sVar0 = "SCLB_NO_GLOBAL";
+			sVar0 = "SCLB_NO_GLOBAL" /* GXT: No data available yet for this leaderboard. */;
 		}
 		else if (BitTest(iParam2, 5))
 		{
 			if (NETWORK::NETWORK_GET_FRIEND_COUNT() > 0)
 			{
-				sVar0 = "SCLB_NO_FRNDS";
+				sVar0 = "SCLB_NO_FRNDS" /* GXT: No friends listed on this leaderboard. */;
 			}
 			else
 			{
-				sVar0 = "SCLB_NO_FRNDSb";
+				sVar0 = "SCLB_NO_FRNDSb" /* GXT: Search for friends on Social Club to add and compare your scores with. */;
 			}
 		}
 		else if (BitTest(iParam2, 6))
@@ -11278,7 +11278,7 @@ void func_195(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 					{
 						if ((func_167() || func_166()) && !NETWORK::NETWORK_HAVE_USER_CONTENT_PRIVILEGES(0))
 						{
-							sVar0 = "SCLB_NO_CREWc";
+							sVar0 = "SCLB_NO_CREWc" /* GXT: No Crew members listed on this leaderboard. */;
 						}
 						else
 						{
@@ -11288,34 +11288,34 @@ void func_195(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 								NETWORK::NETWORK_CLAN_PLAYER_GET_DESC(&Var1, 35, &Var6);
 								if (!MISC::IS_STRING_NULL_OR_EMPTY(&(Var1.f_1)))
 								{
-									sVar0 = "SCLB_NO_CREWb";
+									sVar0 = "SCLB_NO_CREWb" /* GXT: No ~a~ members listed on this leaderboard. */;
 									Var2 = { Var1.f_1 };
 									bVar3 = true;
 								}
 								else
 								{
-									sVar0 = "SCLB_NO_CREWc";
+									sVar0 = "SCLB_NO_CREWc" /* GXT: No Crew members listed on this leaderboard. */;
 								}
 							}
 							else
 							{
-								sVar0 = "SCLB_NO_CREWa";
+								sVar0 = "SCLB_NO_CREWa" /* GXT: Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ to participate in a Crew. */;
 							}
 						}
 					}
 					else
 					{
-						sVar0 = "SCLB_NO_CREWa";
+						sVar0 = "SCLB_NO_CREWa" /* GXT: Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ to participate in a Crew. */;
 					}
 				}
 				else
 				{
-					sVar0 = "SCLB_NO_CREWe";
+					sVar0 = "SCLB_NO_CREWe" /* GXT: ~HUD_COLOUR_SOCIAL_CLUB~Social Club~s~ policies have been updated. Visit the Players menu, and press ~INPUT_FRONTEND_Y~ to view and accept the updated policies. */;
 				}
 			}
 			else
 			{
-				sVar0 = "SCLB_NO_CREWd";
+				sVar0 = "SCLB_NO_CREWd" /* GXT: Sign up to Social Club to gain access to Crew leaderboards. */;
 			}
 		}
 		iVar7 = 0;
@@ -11558,23 +11558,23 @@ int func_210(int* iParam0, bool bParam1)//Position - 0xF0C3
 		{
 			if (iVar1 == 4)
 			{
-				HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT", "HUD_PROFILECHNG", iVar0, 0, false, -1, 0, 0, true, 0);
+				HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT" /* GXT: Alert */, "HUD_PROFILECHNG" /* GXT: Please change to a profile with correct permissions. */, iVar0, 0, false, -1, 0, 0, true, 0);
 			}
 			else if (iVar1 == 2)
 			{
-				HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT", "HUD_GAMEUPD_G", iVar0, 0, false, -1, 0, 0, true, 0);
+				HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT" /* GXT: Alert */, "HUD_GAMEUPD_G" /* GXT: The game requires an update to access this feature. */, iVar0, 0, false, -1, 0, 0, true, 0);
 			}
 			else if (iVar1 == 1)
 			{
-				HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT", "HUD_SYSTUPD_G", iVar0, 0, false, -1, 0, 0, true, 0);
+				HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT" /* GXT: Alert */, "HUD_SYSTUPD_G" /* GXT: The system requires an update to access this feature. */, iVar0, 0, false, -1, 0, 0, true, 0);
 			}
 			else if (iVar1 == 5)
 			{
-				HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT", "SCLB_NO_INT", iVar0, 0, false, -1, 0, 0, true, 0);
+				HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT" /* GXT: Alert */, "SCLB_NO_INT" /* GXT: No internet connection detected, establish a connection to access this feature. */, iVar0, 0, false, -1, 0, 0, true, 0);
 			}
 			else if (!func_216())
 			{
-				HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT", "SCLB_NO_ROS", iVar0, 0, false, -1, 0, 0, true, 0);
+				HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT" /* GXT: Alert */, "SCLB_NO_ROS" /* GXT: The Rockstar game services are unavailable right now. Please try again later. */, iVar0, 0, false, -1, 0, 0, true, 0);
 			}
 			if (!BitTest(*iParam0, 0))
 			{
@@ -11628,11 +11628,11 @@ int func_210(int* iParam0, bool bParam1)//Position - 0xF0C3
 				{
 					if (NETWORK::NETWORK_IS_CABLE_CONNECTED())
 					{
-						HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT", "STORE_NOT_ONL", iVar0, 0, false, -1, 0, 0, true, 0);
+						HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT" /* GXT: Alert */, "STORE_NOT_ONL" /* GXT: Sign in to the Rockstar Games Social Club to access the Store. */, iVar0, 0, false, -1, 0, 0, true, 0);
 					}
 					else
 					{
-						HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT", "SCLB_NO_INT", iVar0, 0, false, -1, 0, 0, true, 0);
+						HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT" /* GXT: Alert */, "SCLB_NO_INT" /* GXT: No internet connection detected, establish a connection to access this feature. */, iVar0, 0, false, -1, 0, 0, true, 0);
 					}
 					if (!PLAYER::IS_SYSTEM_UI_BEING_DISPLAYED())
 					{
@@ -11666,11 +11666,11 @@ int func_210(int* iParam0, bool bParam1)//Position - 0xF0C3
 			{
 				if (NETWORK::NETWORK_IS_CABLE_CONNECTED())
 				{
-					HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT", "SCLB_SIGN_OUT", iVar0, 0, false, -1, 0, 0, true, 0);
+					HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT" /* GXT: Alert */, "SCLB_SIGN_OUT", iVar0, 0, false, -1, 0, 0, true, 0);
 				}
 				else
 				{
-					HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT", "SCLB_NO_INT", iVar0, 0, false, -1, 0, 0, true, 0);
+					HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT" /* GXT: Alert */, "SCLB_NO_INT" /* GXT: No internet connection detected, establish a connection to access this feature. */, iVar0, 0, false, -1, 0, 0, true, 0);
 				}
 				if (!BitTest(*iParam0, 0))
 				{
@@ -11693,11 +11693,11 @@ int func_210(int* iParam0, bool bParam1)//Position - 0xF0C3
 			{
 				if (NETWORK::NETWORK_IS_CABLE_CONNECTED())
 				{
-					HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT", "SCLB_NOT_ONL", iVar0, 0, false, -1, 0, 0, true, 0);
+					HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT" /* GXT: Alert */, "SCLB_NOT_ONL" /* GXT: Sign in to view leaderboard data. */, iVar0, 0, false, -1, 0, 0, true, 0);
 				}
 				else
 				{
-					HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT", "SCLB_NO_INT", iVar0, 0, false, -1, 0, 0, true, 0);
+					HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT" /* GXT: Alert */, "SCLB_NO_INT" /* GXT: No internet connection detected, establish a connection to access this feature. */, iVar0, 0, false, -1, 0, 0, true, 0);
 				}
 				if (!PLAYER::IS_SYSTEM_UI_BEING_DISPLAYED())
 				{
@@ -12515,43 +12515,43 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 					{
 						if (iParam5 == 1)
 						{
-							StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RCE_L1", 32);
+							StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RCE_L1" /* GXT: Race - ~a~ (~1~ Lap) */, 32);
 							StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 						}
 						else
 						{
-							StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RCE_LM", 32);
+							StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RCE_LM" /* GXT: Race - ~a~ (~1~ Laps) */, 32);
 							StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 						}
 					}
 					else if (iParam5 == 1)
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RCE_NN_L1", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RCE_NN_L1" /* GXT: Race (~1~ Lap) */, 32);
 					}
 					else
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RCE_NN_LM", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RCE_NN_LM" /* GXT: Race (~1~ Laps) */, 32);
 					}
 				}
 				else
 				{
 					if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam3))
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RCE", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RCE" /* GXT: Race - ~a~ */, 32);
 						StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 					}
 					else
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RCE_NN", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RCE_NN" /* GXT: Race */, 32);
 					}
 					Global_2097536.f_2780.f_26 = -1;
 				}
 				Global_2097536.f_2780 = 1;
 				if (iParam5 <= 0 || func_241())
 				{
-					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_BL", 24);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_VEH", 24);
-					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_RANK", 24);
+					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_BL" /* GXT: BEST LAP */, 24);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_VEH" /* GXT: VEHICLE */, 24);
+					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_RANK" /* GXT: POSITION */, 24);
 					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "", 24);
 					Global_2097536.f_2710[0] = 1;
 					Global_2097536.f_2710[1] = 3;
@@ -12568,10 +12568,10 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 				}
 				else
 				{
-					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_RT", 24);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_BL", 24);
-					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_VEH", 24);
-					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_RANK", 24);
+					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_RT" /* GXT: RACE TIME */, 24);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_BL" /* GXT: BEST LAP */, 24);
+					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_VEH" /* GXT: VEHICLE */, 24);
+					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_RANK" /* GXT: POSITION */, 24);
 					Global_2097536.f_2710[0] = 2;
 					Global_2097536.f_2710[1] = 1;
 					Global_2097536.f_2710[2] = 3;
@@ -12615,22 +12615,22 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 					{
 						if (iParam5 == 1)
 						{
-							StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_GRCE_L1", 32);
+							StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_GRCE_L1" /* GXT: GTA Race - ~a~ (~1~ Lap) */, 32);
 							StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 						}
 						else
 						{
-							StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_GRCE_LM", 32);
+							StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_GRCE_LM" /* GXT: GTA Race - ~a~ (~1~ Laps) */, 32);
 							StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 						}
 					}
 					else if (iParam5 == 1)
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_GRCE_NN_L1", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_GRCE_NN_L1" /* GXT: GTA Race (~1~ Laps) */, 32);
 					}
 					else
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_GRCE_NN_LM", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_GRCE_NN_LM" /* GXT: GTA Race (~1~ Laps) */, 32);
 					}
 				}
 				else
@@ -12638,20 +12638,20 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 					Global_2097536.f_2780.f_26 = -1;
 					if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam3))
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_GRCE", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_GRCE" /* GXT: GTA Race - ~a~ */, 32);
 						StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 					}
 					else
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_GRCE_NN", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_GRCE_NN" /* GXT: GTA Race */, 32);
 					}
 				}
 				Global_2097536.f_2780 = 1;
 				if (iParam5 <= 0 || func_241())
 				{
-					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_BL", 24);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_VEH", 24);
-					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_RANK", 24);
+					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_BL" /* GXT: BEST LAP */, 24);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_VEH" /* GXT: VEHICLE */, 24);
+					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_RANK" /* GXT: POSITION */, 24);
 					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "", 24);
 					Global_2097536.f_2710[0] = 1;
 					Global_2097536.f_2710[1] = 5;
@@ -12668,10 +12668,10 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 				}
 				else
 				{
-					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_RT", 24);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_BL", 24);
-					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_VEH", 24);
-					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_RANK", 24);
+					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_RT" /* GXT: RACE TIME */, 24);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_BL" /* GXT: BEST LAP */, 24);
+					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_VEH" /* GXT: VEHICLE */, 24);
+					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_RANK" /* GXT: POSITION */, 24);
 					Global_2097536.f_2710[0] = 2;
 					Global_2097536.f_2710[1] = 1;
 					Global_2097536.f_2710[2] = 5;
@@ -12727,22 +12727,22 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 					{
 						if (iParam5 == 1)
 						{
-							StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RRCE_L1", 32);
+							StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RRCE_L1" /* GXT: Rally Race - ~a~ - ~a~ (~1~ Lap) */, 32);
 							StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 						}
 						else
 						{
-							StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RRCE_LM", 32);
+							StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RRCE_LM" /* GXT: Rally Race - ~a~ - ~a~ (~1~ Laps) */, 32);
 							StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 						}
 					}
 					else if (iParam5 == 1)
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RRCE_NN_L1", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RRCE_NN_L1" /* GXT: Rally Race (~1~ Lap) */, 32);
 					}
 					else
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RRCE_NN_LM", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RRCE_NN_LM" /* GXT: Rally Race (~1~ Laps) */, 32);
 					}
 				}
 				else
@@ -12750,19 +12750,19 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 					Global_2097536.f_2780.f_26 = -1;
 					if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam3))
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RRCE", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RRCE" /* GXT: Rally Race - ~a~ - ~a~ */, 32);
 						StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 					}
 					else
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RRCE_NN", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RRCE_NN" /* GXT: Rally Race - ~a~ */, 32);
 					}
 				}
 				if (iParam5 <= 0 || func_241())
 				{
-					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_BL", 24);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_VEH", 24);
-					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_RANK", 24);
+					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_BL" /* GXT: BEST LAP */, 24);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_VEH" /* GXT: VEHICLE */, 24);
+					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_RANK" /* GXT: POSITION */, 24);
 					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "", 24);
 					Global_2097536.f_2710[0] = 1;
 					Global_2097536.f_2710[1] = 3;
@@ -12779,10 +12779,10 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 				}
 				else
 				{
-					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_RT", 24);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_BL", 24);
-					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_VEH", 24);
-					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_RANK", 24);
+					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_RT" /* GXT: RACE TIME */, 24);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_BL" /* GXT: BEST LAP */, 24);
+					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_VEH" /* GXT: VEHICLE */, 24);
+					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_RANK" /* GXT: POSITION */, 24);
 					Global_2097536.f_2710[0] = 2;
 					Global_2097536.f_2710[1] = 1;
 					Global_2097536.f_2710[2] = 3;
@@ -12826,22 +12826,22 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 					{
 						if (iParam5 == 1)
 						{
-							StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_FRCE_L1", 32);
+							StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_FRCE_L1" /* GXT: On Foot Race - ~a~ (~1~ Lap) */, 32);
 							StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 						}
 						else
 						{
-							StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_FRCE_LM", 32);
+							StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_FRCE_LM" /* GXT: On Foot Race - ~a~ (~1~ Laps) */, 32);
 							StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 						}
 					}
 					else if (iParam5 == 1)
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_FRCE_NN_L1", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_FRCE_NN_L1" /* GXT: On Foot Race (~1~ Laps) */, 32);
 					}
 					else
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_FRCE_NN_LM", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_FRCE_NN_LM" /* GXT: On Foot Race (~1~ Laps) */, 32);
 					}
 				}
 				else
@@ -12849,19 +12849,19 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 					Global_2097536.f_2780.f_26 = -1;
 					if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam3))
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_FRCE", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_FRCE" /* GXT: On Foot Race - ~a~ */, 32);
 						StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 					}
 					else
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_FRCE_NN", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_FRCE_NN" /* GXT: On Foot Race */, 32);
 					}
 				}
 				Global_2097536.f_2780 = 1;
 				if (iParam5 <= 0 || func_241())
 				{
-					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_BL", 24);
-					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_RANK", 24);
+					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_BL" /* GXT: BEST LAP */, 24);
+					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_RANK" /* GXT: POSITION */, 24);
 					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "", 24);
 					Global_2097536.f_2710[0] = 1;
 					Global_2097536.f_2710[1] = 0;
@@ -12877,9 +12877,9 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 				}
 				else
 				{
-					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_RT", 24);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_BL", 24);
-					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_RANK", 24);
+					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_RT" /* GXT: RACE TIME */, 24);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_BL" /* GXT: BEST LAP */, 24);
+					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_RANK" /* GXT: POSITION */, 24);
 					Global_2097536.f_2710[0] = 2;
 					Global_2097536.f_2710[1] = 1;
 					Global_2097536.f_2710[2] = 0;
@@ -12916,43 +12916,43 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 					{
 						if (iParam5 == 1)
 						{
-							StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RCE_L1", 32);
+							StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RCE_L1" /* GXT: Race - ~a~ (~1~ Lap) */, 32);
 							StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 						}
 						else
 						{
-							StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RCE_LM", 32);
+							StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RCE_LM" /* GXT: Race - ~a~ (~1~ Laps) */, 32);
 							StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 						}
 					}
 					else if (iParam5 == 1)
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RCE_NN_L1", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RCE_NN_L1" /* GXT: Race (~1~ Lap) */, 32);
 					}
 					else
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RCE_NN_LM", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RCE_NN_LM" /* GXT: Race (~1~ Laps) */, 32);
 					}
 				}
 				else
 				{
 					if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam3))
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RCE", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RCE" /* GXT: Race - ~a~ */, 32);
 						StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 					}
 					else
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RCE_NN", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_RCE_NN" /* GXT: Race */, 32);
 					}
 					Global_2097536.f_2780.f_26 = -1;
 				}
 				Global_2097536.f_2780 = 1;
 				if (iParam5 <= 0 || func_241())
 				{
-					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_BL", 24);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_VEH", 24);
-					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_RANK", 24);
+					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_BL" /* GXT: BEST LAP */, 24);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_VEH" /* GXT: VEHICLE */, 24);
+					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_RANK" /* GXT: POSITION */, 24);
 					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "", 24);
 					Global_2097536.f_2710[0] = 1;
 					Global_2097536.f_2710[1] = 3;
@@ -12969,10 +12969,10 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 				}
 				else
 				{
-					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_RT", 24);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_BL", 24);
-					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_VEH", 24);
-					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_RANK", 24);
+					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_RT" /* GXT: RACE TIME */, 24);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_BL" /* GXT: BEST LAP */, 24);
+					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_VEH" /* GXT: VEHICLE */, 24);
+					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_RANK" /* GXT: POSITION */, 24);
 					Global_2097536.f_2710[0] = 2;
 					Global_2097536.f_2710[1] = 1;
 					Global_2097536.f_2710[2] = 3;
@@ -13005,29 +13005,29 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 				{
 					if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam3))
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_KOTH", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_KOTH" /* GXT: King Of The Hill - ~a~ */, 32);
 						StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 					}
 					else
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_KOTH_NN", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_KOTH_NN" /* GXT: King Of The Hill */, 32);
 					}
 				}
 				else if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam3))
 				{
-					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_DM", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_DM" /* GXT: Deathmatch - ~a~ */, 32);
 					StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 				}
 				else
 				{
-					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_DM_NN", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_DM_NN" /* GXT: Deathmatch */, 32);
 				}
-				StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_WLRAT", 24);
-				StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_WINS", 24);
-				StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_LOSES", 24);
-				StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_KD", 24);
-				StringCopy(&(Global_2097536.f_2717[4 /*6*/]), "SCLB_C_KILLS", 24);
-				StringCopy(&(Global_2097536.f_2717[5 /*6*/]), "SCLB_C_DEATH", 24);
+				StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_WLRAT" /* GXT: W/L RATIO */, 24);
+				StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_WINS" /* GXT: WINS */, 24);
+				StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_LOSES" /* GXT: LOSSES */, 24);
+				StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_KD" /* GXT: K/D RATIO */, 24);
+				StringCopy(&(Global_2097536.f_2717[4 /*6*/]), "SCLB_C_KILLS" /* GXT: KILLS */, 24);
+				StringCopy(&(Global_2097536.f_2717[5 /*6*/]), "SCLB_C_DEATH" /* GXT: DEATHS */, 24);
 				Global_2097536.f_2710[0] = 0;
 				Global_2097536.f_2710[1] = 4;
 				Global_2097536.f_2710[2] = 6;
@@ -13061,29 +13061,29 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 				{
 					if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam3))
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_TKOTH", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_TKOTH" /* GXT: Team King Of The Hill - ~a~ */, 32);
 						StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 					}
 					else
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_TKOTH_NN", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_TKOTH_NN" /* GXT: Team King Of The Hill */, 32);
 					}
 				}
 				else if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam3))
 				{
-					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_TDM", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_TDM" /* GXT: Team Deathmatch - ~a~ */, 32);
 					StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 				}
 				else
 				{
-					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_TDM_NN", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_TDM_NN" /* GXT: Team Deathmatch */, 32);
 				}
-				StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_WLRAT", 24);
-				StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_WINS", 24);
-				StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_LOSES", 24);
-				StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_KD", 24);
-				StringCopy(&(Global_2097536.f_2717[4 /*6*/]), "SCLB_C_KILLS", 24);
-				StringCopy(&(Global_2097536.f_2717[5 /*6*/]), "SCLB_C_DEATH", 24);
+				StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_WLRAT" /* GXT: W/L RATIO */, 24);
+				StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_WINS" /* GXT: WINS */, 24);
+				StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_LOSES" /* GXT: LOSSES */, 24);
+				StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_KD" /* GXT: K/D RATIO */, 24);
+				StringCopy(&(Global_2097536.f_2717[4 /*6*/]), "SCLB_C_KILLS" /* GXT: KILLS */, 24);
+				StringCopy(&(Global_2097536.f_2717[5 /*6*/]), "SCLB_C_DEATH" /* GXT: DEATHS */, 24);
 				Global_2097536.f_2710[0] = 0;
 				Global_2097536.f_2710[1] = 4;
 				Global_2097536.f_2710[2] = 6;
@@ -13115,19 +13115,19 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 				Global_2097536.f_2780 = 1;
 				if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam3))
 				{
-					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_VEHDM", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_VEHDM" /* GXT: Vehicle Deathmatch - ~a~ */, 32);
 					StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 				}
 				else
 				{
-					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_VEHDM_NN", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_VEHDM_NN" /* GXT: Vehicle Deathmatch */, 32);
 				}
-				StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_WLRAT", 24);
-				StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_WINS", 24);
-				StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_LOSES", 24);
-				StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_KD", 24);
-				StringCopy(&(Global_2097536.f_2717[4 /*6*/]), "SCLB_C_KILLS", 24);
-				StringCopy(&(Global_2097536.f_2717[5 /*6*/]), "SCLB_C_DEATH", 24);
+				StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_WLRAT" /* GXT: W/L RATIO */, 24);
+				StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_WINS" /* GXT: WINS */, 24);
+				StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_LOSES" /* GXT: LOSSES */, 24);
+				StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_KD" /* GXT: K/D RATIO */, 24);
+				StringCopy(&(Global_2097536.f_2717[4 /*6*/]), "SCLB_C_KILLS" /* GXT: KILLS */, 24);
+				StringCopy(&(Global_2097536.f_2717[5 /*6*/]), "SCLB_C_DEATH" /* GXT: DEATHS */, 24);
 				Global_2097536.f_2710[0] = 0;
 				Global_2097536.f_2710[1] = 4;
 				Global_2097536.f_2710[2] = 6;
@@ -13158,11 +13158,11 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/]), "GameType", 32);
 			StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/].f_8), "MP", 32);
 			Global_2097536.f_2780 = 1;
-			StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_GOLF", 32);
-			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_GOLF0", 24);
-			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_GOLF1", 24);
-			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_GAMES", 24);
-			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_RANK", 24);
+			StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_GOLF" /* GXT: Golf */, 32);
+			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_GOLF0" /* GXT: BEST ROUND */, 24);
+			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_GOLF1" /* GXT: LONGEST DRIVE */, 24);
+			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_GAMES" /* GXT: GAMES PLAYED */, 24);
+			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_RANK" /* GXT: POSITION */, 24);
 			Global_2097536.f_2710[0] = 0;
 			Global_2097536.f_2710[1] = 1;
 			Global_2097536.f_2710[2] = 3;
@@ -13185,11 +13185,11 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/]), "GameType", 32);
 			StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/].f_8), "SP", 32);
 			Global_2097536.f_2780 = 1;
-			StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_GOLF", 32);
-			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_GOLF0", 24);
-			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_GOLF1", 24);
-			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_GAMES", 24);
-			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_RANK", 24);
+			StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_GOLF" /* GXT: Golf */, 32);
+			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_GOLF0" /* GXT: BEST ROUND */, 24);
+			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_GOLF1" /* GXT: LONGEST DRIVE */, 24);
+			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_GAMES" /* GXT: GAMES PLAYED */, 24);
+			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_RANK" /* GXT: POSITION */, 24);
 			Global_2097536.f_2710[0] = 0;
 			Global_2097536.f_2710[1] = 1;
 			Global_2097536.f_2710[2] = 3;
@@ -13209,15 +13209,15 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			uParam0->f_44 = 811;
 			uParam0->f_44.f_1 = 1;
 			uParam0->f_44.f_3 = 0;
-			StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_HUNTING", 32);
-			StringCopy(&(Global_2097536.f_2780.f_9), "CMSW", 64);
+			StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_HUNTING" /* GXT: Hunting */, 32);
+			StringCopy(&(Global_2097536.f_2780.f_9), "CMSW" /* GXT: Chiliad Mountain State Wilderness */, 64);
 			Global_2097536.f_2780.f_25 = 0;
 			Global_2097536.f_2780 = 0;
-			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_HSCORE", 24);
-			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_TIMEHUNT", 24);
-			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_EKILLS", 24);
-			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_PHOTOS", 24);
-			StringCopy(&(Global_2097536.f_2717[4 /*6*/]), "SCLB_C_MONEY", 24);
+			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_HSCORE" /* GXT: HIGH SCORE */, 24);
+			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_TIMEHUNT" /* GXT: TIME TO GOLD */, 24);
+			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_EKILLS" /* GXT: ELK KILLS */, 24);
+			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_PHOTOS" /* GXT: PHOTOS SENT */, 24);
+			StringCopy(&(Global_2097536.f_2717[4 /*6*/]), "SCLB_C_MONEY" /* GXT: MONEY MADE */, 24);
 			Global_2097536.f_2710[0] = 0;
 			Global_2097536.f_2710[1] = 5;
 			Global_2097536.f_2710[2] = 2;
@@ -13241,12 +13241,12 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			uParam0->f_44 = 749;
 			uParam0->f_44.f_1 = 1;
 			uParam0->f_44.f_3 = 0;
-			StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_ARM", 32);
+			StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_ARM" /* GXT: Arm Wrestling */, 32);
 			Global_2097536.f_2780 = 1;
-			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_WINS", 24);
-			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_LOSES", 24);
-			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_WLRAT", 24);
-			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_RANK", 24);
+			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_WINS" /* GXT: WINS */, 24);
+			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_LOSES" /* GXT: LOSSES */, 24);
+			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_WLRAT" /* GXT: W/L RATIO */, 24);
+			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_RANK" /* GXT: POSITION */, 24);
 			Global_2097536.f_2710[0] = 2;
 			Global_2097536.f_2710[1] = 5;
 			Global_2097536.f_2710[2] = 0;
@@ -13275,12 +13275,12 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			{
 				StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/].f_8), "SP", 32);
 			}
-			StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_DARTS", 32);
+			StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_DARTS" /* GXT: Darts */, 32);
 			Global_2097536.f_2780 = 1;
-			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_WLRAT", 24);
-			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_WINS", 24);
-			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_LOSES", 24);
-			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_RANK", 24);
+			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_WLRAT" /* GXT: W/L RATIO */, 24);
+			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_WINS" /* GXT: WINS */, 24);
+			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_LOSES" /* GXT: LOSSES */, 24);
+			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_RANK" /* GXT: POSITION */, 24);
 			Global_2097536.f_2710[0] = 0;
 			Global_2097536.f_2710[1] = 7;
 			Global_2097536.f_2710[2] = 5;
@@ -13302,20 +13302,20 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			uParam0->f_44.f_3 = 1;
 			StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/]), "GameType", 32);
 			StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/].f_8), "MP", 32);
-			StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_TENNIS", 32);
+			StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_TENNIS" /* GXT: Tennis ~a~ */, 32);
 			StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 			if (MISC::IS_STRING_NULL_OR_EMPTY(sParam3))
 			{
-				StringCopy(&(Global_2097536.f_2780.f_9), "HUD_MG_TENNIS", 64);
+				StringCopy(&(Global_2097536.f_2780.f_9), "HUD_MG_TENNIS" /* GXT: Tennis ~a~ */, 64);
 				StringIntConCat(&(Global_2097536.f_2780.f_9), iParam4 + 1, 64);
 			}
 			Global_2097536.f_2780.f_25 = 0;
 			Global_2097536.f_2780 = 1;
-			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_WINS", 24);
-			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_LOSES", 24);
-			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_TEN1", 24);
-			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_TEN2", 24);
-			StringCopy(&(Global_2097536.f_2717[4 /*6*/]), "SCLB_C_TEN0", 24);
+			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_WINS" /* GXT: WINS */, 24);
+			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_LOSES" /* GXT: LOSSES */, 24);
+			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_TEN1" /* GXT: SETS WON */, 24);
+			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_TEN2" /* GXT: GAMES WON */, 24);
+			StringCopy(&(Global_2097536.f_2717[4 /*6*/]), "SCLB_C_TEN0" /* GXT: ACES */, 24);
 			Global_2097536.f_2710[0] = 0;
 			Global_2097536.f_2710[1] = 9;
 			Global_2097536.f_2710[2] = 7;
@@ -13341,15 +13341,15 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			uParam0->f_44.f_3 = 1;
 			StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/]), "GameType", 32);
 			StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/].f_8), "SP", 32);
-			StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_TENNIS", 32);
+			StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_TENNIS" /* GXT: Tennis ~a~ */, 32);
 			StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 			Global_2097536.f_2780.f_25 = 0;
 			Global_2097536.f_2780 = 1;
-			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_WINS", 24);
-			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_LOSES", 24);
-			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_TEN1", 24);
-			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_TEN2", 24);
-			StringCopy(&(Global_2097536.f_2717[4 /*6*/]), "SCLB_C_TEN0", 24);
+			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_WINS" /* GXT: WINS */, 24);
+			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_LOSES" /* GXT: LOSSES */, 24);
+			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_TEN1" /* GXT: SETS WON */, 24);
+			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_TEN2" /* GXT: GAMES WON */, 24);
+			StringCopy(&(Global_2097536.f_2717[4 /*6*/]), "SCLB_C_TEN0" /* GXT: ACES */, 24);
 			Global_2097536.f_2710[0] = 0;
 			Global_2097536.f_2710[1] = 9;
 			Global_2097536.f_2710[2] = 7;
@@ -13378,25 +13378,25 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 				case 0:
 					StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/]), "Type", 32);
 					StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/].f_8), "RANDOM", 32);
-					StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_RANGEa", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_RANGEa" /* GXT: Shooting Range - Random Targets ~a~ */, 32);
 					break;
 				
 				case 1:
 					StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/]), "Type", 32);
 					StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/].f_8), "GRID", 32);
-					StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_RANGEb", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_RANGEb" /* GXT: Shooting Range - Target Grid ~a~ */, 32);
 					break;
 				
 				case 2:
 					StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/]), "Type", 32);
 					StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/].f_8), "COVERED", 32);
-					StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_RANGEc", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_RANGEc" /* GXT: Shooting Range - Covered Targets ~a~ */, 32);
 					break;
 				
 				default:
 					StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/]), "Type", 32);
 					StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/].f_8), "RANDOM", 32);
-					StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_RANGEa", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_RANGEa" /* GXT: Shooting Range - Random Targets ~a~ */, 32);
 					break;
 			}
 			switch (iParam5)
@@ -13404,51 +13404,51 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 				case 0:
 					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/]), "WeaponId", 32);
 					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/].f_8), "Pistols", 32);
-					StringCopy(&(Global_2097536.f_2780.f_9), "HUD_MG_PISTOL", 64);
+					StringCopy(&(Global_2097536.f_2780.f_9), "HUD_MG_PISTOL" /* GXT: Pistol */, 64);
 					break;
 				
 				case 1:
 					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/]), "WeaponId", 32);
 					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/].f_8), "SMGs", 32);
-					StringCopy(&(Global_2097536.f_2780.f_9), "HUD_MG_SMG", 64);
+					StringCopy(&(Global_2097536.f_2780.f_9), "HUD_MG_SMG" /* GXT: Submachine Guns */, 64);
 					break;
 				
 				case 2:
 					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/]), "WeaponId", 32);
 					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/].f_8), "AssaultRifles", 32);
-					StringCopy(&(Global_2097536.f_2780.f_9), "HUD_MG_ASSAULT", 64);
+					StringCopy(&(Global_2097536.f_2780.f_9), "HUD_MG_ASSAULT" /* GXT: Assault Rifle */, 64);
 					break;
 				
 				case 3:
 					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/]), "WeaponId", 32);
 					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/].f_8), "Shotguns", 32);
-					StringCopy(&(Global_2097536.f_2780.f_9), "HUD_MG_SHOTGUN", 64);
+					StringCopy(&(Global_2097536.f_2780.f_9), "HUD_MG_SHOTGUN" /* GXT: Shotgun */, 64);
 					break;
 				
 				case 4:
 					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/]), "WeaponId", 32);
 					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/].f_8), "LMGs", 32);
-					StringCopy(&(Global_2097536.f_2780.f_9), "HUD_MG_LMG", 64);
+					StringCopy(&(Global_2097536.f_2780.f_9), "HUD_MG_LMG" /* GXT: Light Machine Gun */, 64);
 					break;
 				
 				case 5:
 					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/]), "WeaponId", 32);
 					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/].f_8), "Heavies", 32);
-					StringCopy(&(Global_2097536.f_2780.f_9), "HUD_MG_HEAVY", 64);
+					StringCopy(&(Global_2097536.f_2780.f_9), "HUD_MG_HEAVY" /* GXT: Heavy */, 64);
 					break;
 				
 				default:
 					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/]), "WeaponId", 32);
 					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/].f_8), "Pistols", 32);
-					StringCopy(&(Global_2097536.f_2780.f_9), "HUD_MG_PISTOL", 64);
+					StringCopy(&(Global_2097536.f_2780.f_9), "HUD_MG_PISTOL" /* GXT: Pistol */, 64);
 					break;
 			}
 			Global_2097536.f_2780.f_25 = 0;
 			Global_2097536.f_2780 = 1;
-			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_WLRAT", 24);
-			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_HITS", 24);
-			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_SHOTS", 24);
-			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_ACC", 24);
+			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_WLRAT" /* GXT: W/L RATIO */, 24);
+			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_HITS" /* GXT: HITS */, 24);
+			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_SHOTS" /* GXT: SHOTS */, 24);
+			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_ACC" /* GXT: ACCURACY */, 24);
 			Global_2097536.f_2710[0] = 0;
 			Global_2097536.f_2710[1] = 2;
 			Global_2097536.f_2710[2] = 1;
@@ -13493,11 +13493,11 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/]), "Type", 32);
 			uParam0->f_44.f_3.f_1[0 /*16*/].f_8 = { Var0 };
 			Global_2097536.f_2780 = 1;
-			StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_RANGE", 32);
+			StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_RANGE" /* GXT: Shooting Range ~a~ */, 32);
 			MemCopy(&(Global_2097536.f_2780.f_9), {func_240(iParam1)}, 16);
 			Global_2097536.f_2780.f_25 = 0;
-			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_SCORE", 24);
-			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_WEAP", 24);
+			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_SCORE" /* GXT: SCORE */, 24);
+			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_WEAP" /* GXT: WEAPON */, 24);
 			Global_2097536.f_2710[0] = 0;
 			Global_2097536.f_2710[1] = 7;
 			Global_2097536.f_2708 = 2;
@@ -13517,11 +13517,11 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/]), "Location", 32);
 			uParam0->f_44.f_3.f_1[0 /*16*/].f_8 = { Var0 };
 			Global_2097536.f_2780 = 1;
-			StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_TRI", 32);
+			StringCopy(&(Global_2097536.f_2780.f_1), "HUD_MG_TRI" /* GXT: Triathlon - ~a~ */, 32);
 			StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 			Global_2097536.f_2780.f_25 = 0;
-			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_TIME", 24);
-			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_RANK", 24);
+			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_TIME" /* GXT: TIME */, 24);
+			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_RANK" /* GXT: POSITION */, 24);
 			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "", 24);
 			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "", 24);
 			Global_2097536.f_2710[0] = 0;
@@ -13551,7 +13551,7 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			Global_2097536.f_2780 = 1;
 			StringCopy(&(Global_2097536.f_2780.f_1), "OFFR_TITLE", 32);
 			StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
-			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_TIME", 24);
+			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_TIME" /* GXT: TIME */, 24);
 			Global_2097536.f_2710[0] = 3;
 			Global_2097536.f_2708 = 1;
 			MISC::SET_BIT(&(Global_2097536.f_2769), Global_2097536.f_2710[0]);
@@ -13568,17 +13568,17 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			Global_2097536.f_2780 = 1;
 			if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam3))
 			{
-				StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_HRD", 32);
+				StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_HRD" /* GXT: Survival - ~a~ */, 32);
 				StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 			}
 			else
 			{
-				StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_HRD_NN", 32);
+				StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_HRD_NN" /* GXT: Survival */, 32);
 			}
-			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_SCORE", 24);
-			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_WAVE", 24);
-			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_TKILLS", 24);
-			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_TDEATH", 24);
+			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_SCORE" /* GXT: SCORE */, 24);
+			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_WAVE" /* GXT: TOTAL WAVES */, 24);
+			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_TKILLS" /* GXT: TOTAL KILLS */, 24);
+			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_TDEATH" /* GXT: TOTAL DEATHS */, 24);
 			Global_2097536.f_2710[0] = 0;
 			Global_2097536.f_2710[1] = 1;
 			Global_2097536.f_2710[2] = 2;
@@ -13608,27 +13608,27 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 				{
 					if (iParam4 == 1)
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_HEIST", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_HEIST" /* GXT: Heist - ~a~ */, 32);
 					}
 					else
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_HEISTP", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_HEISTP" /* GXT: Heist Setup - ~a~ */, 32);
 					}
 					StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 				}
 				else if (iParam4 == 1)
 				{
-					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_HEIST_NN", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_HEIST_NN" /* GXT: Heist */, 32);
 				}
 				else
 				{
 					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_HEISTPNN", 32);
 				}
-				StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_SCORE", 24);
-				StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_TIME", 24);
-				StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_ACC", 24);
-				StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_HEADSHOT", 24);
-				StringCopy(&(Global_2097536.f_2717[4 /*6*/]), "SCLB_C_KILLS", 24);
+				StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_SCORE" /* GXT: SCORE */, 24);
+				StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_TIME" /* GXT: TIME */, 24);
+				StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_ACC" /* GXT: ACCURACY */, 24);
+				StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_HEADSHOT" /* GXT: HEADSHOTS */, 24);
+				StringCopy(&(Global_2097536.f_2717[4 /*6*/]), "SCLB_C_KILLS" /* GXT: KILLS */, 24);
 				Global_2097536.f_2710[0] = 0;
 				Global_2097536.f_2710[1] = 1;
 				Global_2097536.f_2710[2] = 4;
@@ -13659,26 +13659,26 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 				{
 					if (Global_4718592.f_2 == 5)
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_LTS", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_LTS" /* GXT: LTS - ~a~ */, 32);
 					}
 					else
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_MIS", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_MIS" /* GXT: Mission - ~a~ */, 32);
 					}
 					StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 				}
 				else if (Global_4718592.f_2 == 5)
 				{
-					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_LTS_NN", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_LTS_NN" /* GXT: LTS - ~a~ */, 32);
 				}
 				else
 				{
-					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_MIS_NN", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_MIS_NN" /* GXT: Mission */, 32);
 				}
-				StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_TIME", 24);
-				StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_KILLS", 24);
-				StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_DEATH", 24);
-				StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_RANK", 24);
+				StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_TIME" /* GXT: TIME */, 24);
+				StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_KILLS" /* GXT: KILLS */, 24);
+				StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_DEATH" /* GXT: DEATHS */, 24);
+				StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_RANK" /* GXT: POSITION */, 24);
 				Global_2097536.f_2710[0] = 0;
 				Global_2097536.f_2710[1] = 1;
 				Global_2097536.f_2710[2] = 2;
@@ -13705,27 +13705,27 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 				{
 					if (Global_4718592.f_2 == 5)
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_LTS", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_LTS" /* GXT: LTS - ~a~ */, 32);
 					}
 					else
 					{
-						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_MIS", 32);
+						StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_MIS" /* GXT: Mission - ~a~ */, 32);
 					}
 					StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 				}
 				else if (Global_4718592.f_2 == 5)
 				{
-					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_LTS_NN", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_LTS_NN" /* GXT: LTS - ~a~ */, 32);
 				}
 				else
 				{
-					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_MIS_NN", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_MIS_NN" /* GXT: Mission */, 32);
 				}
 				if (func_239(Global_4718592.f_168757) || func_236(Global_4718592.f_168757))
 				{
-					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_SCORE", 24);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_DEATH", 24);
-					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_RANK", 24);
+					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_SCORE" /* GXT: SCORE */, 24);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_DEATH" /* GXT: DEATHS */, 24);
+					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_RANK" /* GXT: POSITION */, 24);
 					Global_2097536.f_2710[0] = 0;
 					Global_2097536.f_2710[1] = 2;
 					Global_2097536.f_2710[2] = 0;
@@ -13739,9 +13739,9 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 				}
 				else if (func_235(Global_4718592.f_168757))
 				{
-					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_SCORE", 24);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_DEATH", 24);
-					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_RANK", 24);
+					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_SCORE" /* GXT: SCORE */, 24);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_DEATH" /* GXT: DEATHS */, 24);
+					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_RANK" /* GXT: POSITION */, 24);
 					Global_2097536.f_2710[0] = 0;
 					Global_2097536.f_2710[1] = 2;
 					Global_2097536.f_2710[2] = 0;
@@ -13755,10 +13755,10 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 				}
 				else
 				{
-					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_SCORE", 24);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_KILLS", 24);
-					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_DEATH", 24);
-					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_RANK", 24);
+					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_SCORE" /* GXT: SCORE */, 24);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_KILLS" /* GXT: KILLS */, 24);
+					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_DEATH" /* GXT: DEATHS */, 24);
+					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_RANK" /* GXT: POSITION */, 24);
 					Global_2097536.f_2710[0] = 0;
 					Global_2097536.f_2710[1] = 1;
 					Global_2097536.f_2710[2] = 2;
@@ -13785,17 +13785,17 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			Global_2097536.f_2780 = 1;
 			if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam3))
 			{
-				StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_BJ", 32);
+				StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_BJ" /* GXT: Parachute Jump - ~a~ */, 32);
 				StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 			}
 			else
 			{
-				StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_BJ_NN", 32);
+				StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_BJ_NN" /* GXT: Parachute Jump */, 32);
 			}
-			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_SCORE", 24);
-			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_TIME", 24);
-			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_JUMPS", 24);
-			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_RANK", 24);
+			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_SCORE" /* GXT: SCORE */, 24);
+			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_TIME" /* GXT: TIME */, 24);
+			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_JUMPS" /* GXT: JUMPS */, 24);
+			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_RANK" /* GXT: POSITION */, 24);
 			Global_2097536.f_2710[0] = 0;
 			Global_2097536.f_2710[1] = 1;
 			MISC::SET_BIT(&(Global_2097536.f_2768), 1);
@@ -13823,15 +13823,15 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			Global_2097536.f_2780.f_25 = 0;
 			if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam3))
 			{
-				StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_BJ", 32);
+				StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_BJ" /* GXT: Parachute Jump - ~a~ */, 32);
 				StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
 			}
 			else
 			{
-				StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_BJ_NN", 32);
+				StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_BJ_NN" /* GXT: Parachute Jump */, 32);
 			}
-			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_CASH", 24);
-			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_TOTCASH", 24);
+			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_CASH" /* GXT: CASH */, 24);
+			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_TOTCASH" /* GXT: TOTAL CASH */, 24);
 			Global_2097536.f_2710[0] = 0;
 			Global_2097536.f_2710[1] = 3;
 			Global_2097536.f_2708 = 2;
@@ -13880,10 +13880,10 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 					{
 						StringCopy(&(Global_2097536.f_2780.f_1), "PS_TITLE", 32);
 					}
-					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_TIME", 24);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_MEDAL1", 24);
-					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_MEDAL2", 24);
-					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_MEDAL3", 24);
+					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_TIME" /* GXT: TIME */, 24);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_MEDAL1" /* GXT: GOLD MEDALS */, 24);
+					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_MEDAL2" /* GXT: SILVER MEDALS */, 24);
+					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_MEDAL3" /* GXT: BRONZE MEDALS */, 24);
 					Global_2097536.f_2710[0] = 1;
 					Global_2097536.f_2710[1] = 4;
 					Global_2097536.f_2710[2] = 3;
@@ -13929,10 +13929,10 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 					{
 						StringCopy(&(Global_2097536.f_2780.f_1), "PS_TITLE", 32);
 					}
-					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_DIST", 24);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_MEDAL1", 24);
-					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_MEDAL2", 24);
-					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_MEDAL3", 24);
+					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_DIST" /* GXT: DISTANCE */, 24);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_MEDAL1" /* GXT: GOLD MEDALS */, 24);
+					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_MEDAL2" /* GXT: SILVER MEDALS */, 24);
+					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_MEDAL3" /* GXT: BRONZE MEDALS */, 24);
 					Global_2097536.f_2710[0] = 1;
 					Global_2097536.f_2710[1] = 4;
 					Global_2097536.f_2710[2] = 3;
@@ -13963,10 +13963,10 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 					{
 						StringCopy(&(Global_2097536.f_2780.f_1), "PS_TITLE", 32);
 					}
-					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_AVG_HEI", 24);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_MEDAL1", 24);
-					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_MEDAL2", 24);
-					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_MEDAL3", 24);
+					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_AVG_HEI" /* GXT: AVERAGE HEIGHT */, 24);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_MEDAL1" /* GXT: GOLD MEDALS */, 24);
+					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_MEDAL2" /* GXT: SILVER MEDALS */, 24);
+					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_MEDAL3" /* GXT: BRONZE MEDALS */, 24);
 					Global_2097536.f_2710[0] = 1;
 					Global_2097536.f_2710[1] = 4;
 					Global_2097536.f_2710[2] = 3;
@@ -14007,10 +14007,10 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 					{
 						StringCopy(&(Global_2097536.f_2780.f_1), "PS_TITLE", 32);
 					}
-					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_SCORE", 24);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_MEDAL1", 24);
-					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_MEDAL2", 24);
-					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_MEDAL3", 24);
+					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_SCORE" /* GXT: SCORE */, 24);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_MEDAL1" /* GXT: GOLD MEDALS */, 24);
+					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_MEDAL2" /* GXT: SILVER MEDALS */, 24);
+					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_MEDAL3" /* GXT: BRONZE MEDALS */, 24);
 					Global_2097536.f_2710[0] = 0;
 					Global_2097536.f_2710[1] = 3;
 					Global_2097536.f_2710[2] = 2;
@@ -14043,10 +14043,10 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			{
 				StringCopy(&(Global_2097536.f_2780.f_1), "PS_TITLE", 32);
 			}
-			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_DIST", 24);
-			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_MEDAL1", 24);
-			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_MEDAL2", 24);
-			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_MEDAL3", 24);
+			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_DIST" /* GXT: DISTANCE */, 24);
+			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_MEDAL1" /* GXT: GOLD MEDALS */, 24);
+			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_MEDAL2" /* GXT: SILVER MEDALS */, 24);
+			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_MEDAL3" /* GXT: BRONZE MEDALS */, 24);
 			Global_2097536.f_2710[0] = 2;
 			Global_2097536.f_2710[1] = 5;
 			Global_2097536.f_2710[2] = 4;
@@ -14076,12 +14076,12 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			}
 			else
 			{
-				StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_MIS_NN", 32);
+				StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_MIS_NN" /* GXT: Mission */, 32);
 			}
-			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_TIME", 24);
-			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_MEDAL1", 24);
-			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_MEDAL2", 24);
-			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_MEDAL3", 24);
+			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_TIME" /* GXT: TIME */, 24);
+			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_MEDAL1" /* GXT: GOLD MEDALS */, 24);
+			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_MEDAL2" /* GXT: SILVER MEDALS */, 24);
+			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_MEDAL3" /* GXT: BRONZE MEDALS */, 24);
 			Global_2097536.f_2710[0] = 0;
 			Global_2097536.f_2710[1] = 4;
 			Global_2097536.f_2710[2] = 3;
@@ -14112,14 +14112,14 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			}
 			else
 			{
-				StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_MIS_NN", 32);
+				StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_MIS_NN" /* GXT: Mission */, 32);
 			}
-			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_SCORE", 24);
-			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_TIME", 24);
-			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_ACC", 24);
-			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_MEDAL1", 24);
-			StringCopy(&(Global_2097536.f_2717[4 /*6*/]), "SCLB_C_MEDAL2", 24);
-			StringCopy(&(Global_2097536.f_2717[4 /*6*/]), "SCLB_C_MEDAL3", 24);
+			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_SCORE" /* GXT: SCORE */, 24);
+			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_TIME" /* GXT: TIME */, 24);
+			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_ACC" /* GXT: ACCURACY */, 24);
+			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_MEDAL1" /* GXT: GOLD MEDALS */, 24);
+			StringCopy(&(Global_2097536.f_2717[4 /*6*/]), "SCLB_C_MEDAL2" /* GXT: SILVER MEDALS */, 24);
+			StringCopy(&(Global_2097536.f_2717[4 /*6*/]), "SCLB_C_MEDAL3" /* GXT: BRONZE MEDALS */, 24);
 			Global_2097536.f_2710[0] = 0;
 			Global_2097536.f_2710[1] = 1;
 			Global_2097536.f_2710[2] = 2;
@@ -14161,7 +14161,7 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			{
 				StringCopy(&(Global_2097536.f_2780.f_1), "SPR_TITLE", 32);
 			}
-			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_TIME", 24);
+			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_TIME" /* GXT: TIME */, 24);
 			Global_2097536.f_2710[0] = 2;
 			Global_2097536.f_2708 = 1;
 			MISC::SET_BIT(&(Global_2097536.f_2769), Global_2097536.f_2710[0]);
@@ -14180,8 +14180,8 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			Global_2097536.f_2780 = 1;
 			if (iParam5 <= 0)
 			{
-				StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_RT", 24);
-				StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_VEH", 24);
+				StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_RT" /* GXT: RACE TIME */, 24);
+				StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_VEH" /* GXT: VEHICLE */, 24);
 				StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "", 24);
 				StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "", 24);
 				Global_2097536.f_2710[0] = 3;
@@ -14198,9 +14198,9 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			}
 			else
 			{
-				StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_RT", 24);
-				StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_BL", 24);
-				StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_VEH", 24);
+				StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_RT" /* GXT: RACE TIME */, 24);
+				StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_BL" /* GXT: BEST LAP */, 24);
+				StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_VEH" /* GXT: VEHICLE */, 24);
 				StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "", 24);
 				Global_2097536.f_2710[0] = 3;
 				Global_2097536.f_2710[1] = 2;
@@ -14220,56 +14220,56 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			switch (iParam4)
 			{
 				case 0:
-					StringCopy(&(Global_2097536.f_2780.f_1), "MGCR_1", 32);
-					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/].f_8), "MGCR_1", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "MGCR_1" /* GXT: South Los Santos */, 32);
+					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/].f_8), "MGCR_1" /* GXT: South Los Santos */, 32);
 					StringCopy(&(uParam0->f_44.f_3.f_1[2 /*16*/].f_8), "StreetRace", 32);
 					break;
 				
 				case 1:
-					StringCopy(&(Global_2097536.f_2780.f_1), "MGCR_2", 32);
-					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/].f_8), "MGCR_2", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "MGCR_2" /* GXT: City Circuit */, 32);
+					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/].f_8), "MGCR_2" /* GXT: City Circuit */, 32);
 					StringCopy(&(uParam0->f_44.f_3.f_1[2 /*16*/].f_8), "StreetRace", 32);
 					break;
 				
 				case 2:
-					StringCopy(&(Global_2097536.f_2780.f_1), "MGCR_4", 32);
-					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/].f_8), "MGCR_4", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "MGCR_4" /* GXT: Airport */, 32);
+					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/].f_8), "MGCR_4" /* GXT: Airport */, 32);
 					StringCopy(&(uParam0->f_44.f_3.f_1[2 /*16*/].f_8), "StreetRace", 32);
 					break;
 				
 				case 3:
-					StringCopy(&(Global_2097536.f_2780.f_1), "MGCR_5", 32);
-					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/].f_8), "MGCR_5", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "MGCR_5" /* GXT: Freeway */, 32);
+					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/].f_8), "MGCR_5" /* GXT: Freeway */, 32);
 					StringCopy(&(uParam0->f_44.f_3.f_1[2 /*16*/].f_8), "StreetRace", 32);
 					break;
 				
 				case 4:
-					StringCopy(&(Global_2097536.f_2780.f_1), "MGCR_6", 32);
-					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/].f_8), "MGCR_6", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "MGCR_6" /* GXT: Vespucci Canals */, 32);
+					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/].f_8), "MGCR_6" /* GXT: Vespucci Canals */, 32);
 					StringCopy(&(uParam0->f_44.f_3.f_1[2 /*16*/].f_8), "StreetRace", 32);
 					break;
 				
 				case 5:
-					StringCopy(&(Global_2097536.f_2780.f_1), "MGSR_1", 32);
-					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/].f_8), "MGSR_1", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "MGSR_1" /* GXT: East Coast */, 32);
+					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/].f_8), "MGSR_1" /* GXT: East Coast */, 32);
 					StringCopy(&(uParam0->f_44.f_3.f_1[2 /*16*/].f_8), "SeaRace", 32);
 					break;
 				
 				case 6:
-					StringCopy(&(Global_2097536.f_2780.f_1), "MGSR_2", 32);
-					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/].f_8), "MGSR_2", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "MGSR_2" /* GXT: North East Coast */, 32);
+					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/].f_8), "MGSR_2" /* GXT: North East Coast */, 32);
 					StringCopy(&(uParam0->f_44.f_3.f_1[2 /*16*/].f_8), "SeaRace", 32);
 					break;
 				
 				case 7:
-					StringCopy(&(Global_2097536.f_2780.f_1), "MGSR_3", 32);
-					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/].f_8), "MGSR_3", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "MGSR_3" /* GXT: Raton Canyon */, 32);
+					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/].f_8), "MGSR_3" /* GXT: Raton Canyon */, 32);
 					StringCopy(&(uParam0->f_44.f_3.f_1[2 /*16*/].f_8), "SeaRace", 32);
 					break;
 				
 				case 8:
-					StringCopy(&(Global_2097536.f_2780.f_1), "MGSR_4", 32);
-					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/].f_8), "MGSR_4", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "MGSR_4" /* GXT: Los Santos */, 32);
+					StringCopy(&(uParam0->f_44.f_3.f_1[1 /*16*/].f_8), "MGSR_4" /* GXT: Los Santos */, 32);
 					StringCopy(&(uParam0->f_44.f_3.f_1[2 /*16*/].f_8), "SeaRace", 32);
 					break;
 				
@@ -14283,8 +14283,8 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			uParam0->f_44.f_1 = 5;
 			uParam0->f_44.f_3 = 1;
 			StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/]), "ArenaMode", 32);
-			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_WINS", 24);
-			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_GAMES", 24);
+			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_WINS" /* GXT: WINS */, 24);
+			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_GAMES" /* GXT: GAMES PLAYED */, 24);
 			Global_2097536.f_2710[0] = 0;
 			Global_2097536.f_2710[1] = 1;
 			Global_2097536.f_2710[2] = 2;
@@ -14303,59 +14303,59 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			switch (iParam4)
 			{
 				case 1:
-					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_ARN_BUZZ", 32);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_KILLS", 24);
-					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_TIMESUR", 24);
+					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_ARN_BUZZ" /* GXT: Buzzer Beater */, 32);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_KILLS" /* GXT: KILLS */, 24);
+					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_TIMESUR" /* GXT: TIME SURVIVED */, 24);
 					Global_2097536.f_2780.f_29[3] = 9;
 					break;
 				
 				case 2:
-					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_ARN_CARN", 32);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_KILLS", 24);
-					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_DAMDEALT", 24);
+					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_ARN_CARN" /* GXT: Carnage */, 32);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_KILLS" /* GXT: KILLS */, 24);
+					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_DAMDEALT" /* GXT: DAMAGE DEALT */, 24);
 					break;
 				
 				case 3:
-					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_ARN_FLAGW", 32);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_FLAGS", 24);
-					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_KILLS", 24);
+					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_ARN_FLAGW" /* GXT: Flag War */, 32);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_FLAGS" /* GXT: FLAGS */, 24);
+					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_KILLS" /* GXT: KILLS */, 24);
 					break;
 				
 				case 4:
-					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_ARN_WRECK", 32);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_KILLS", 24);
-					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_DAMDEALT", 24);
+					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_ARN_WRECK" /* GXT: Wreck It */, 32);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_KILLS" /* GXT: KILLS */, 24);
+					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_DAMDEALT" /* GXT: DAMAGE DEALT */, 24);
 					break;
 				
 				case 5:
-					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_ARN_BOMBB", 32);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_POINTS", 24);
-					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_GOALS", 24);
+					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_ARN_BOMBB" /* GXT: Bomb Ball */, 32);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_POINTS" /* GXT: POINTS */, 24);
+					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_GOALS" /* GXT: GOALS */, 24);
 					break;
 				
 				case 6:
-					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_ARN_GAMEM", 32);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_CPOINTS", 24);
-					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_KILLS", 24);
+					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_ARN_GAMEM" /* GXT: Games Masters */, 32);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_CPOINTS" /* GXT: CHECKPOINTS */, 24);
+					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_KILLS" /* GXT: KILLS */, 24);
 					break;
 				
 				case 7:
-					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_ARN_MNSTR", 32);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_KILLS", 24);
-					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_DAMDEALT", 24);
+					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_ARN_MNSTR" /* GXT: Here Come the Monsters */, 32);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_KILLS" /* GXT: KILLS */, 24);
+					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_DAMDEALT" /* GXT: DAMAGE DEALT */, 24);
 					break;
 				
 				case 8:
-					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_ARN_HOTB", 32);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_PASSES", 24);
-					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_TIMESUR", 24);
+					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_ARN_HOTB" /* GXT: Hot Bomb */, 32);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_PASSES" /* GXT: PASSES */, 24);
+					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_TIMESUR" /* GXT: TIME SURVIVED */, 24);
 					Global_2097536.f_2780.f_29[3] = 9;
 					break;
 				
 				case 9:
-					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_ARN_TAGT", 32);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_KILLS", 24);
-					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_TAGS", 24);
+					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_ARN_TAGT" /* GXT: Tag Team */, 32);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_KILLS" /* GXT: KILLS */, 24);
+					StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_TAGS" /* GXT: TAGS */, 24);
 					break;
 			}
 			Global_2097536.f_2780 = 1;
@@ -14377,11 +14377,11 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			uParam0->f_44.f_3 = 0;
 			StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/]), "", 32);
 			StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/].f_8), "", 32);
-			StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_ARN_CAREER", 32);
-			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_CARPT", 24);
-			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_WLRAT", 24);
-			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_MATCHES", 24);
-			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_TITLE", 24);
+			StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_ARN_CAREER" /* GXT: Arena War Career */, 32);
+			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_CARPT" /* GXT: AP (POSITION) */, 24);
+			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_WLRAT" /* GXT: W/L RATIO */, 24);
+			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_MATCHES" /* GXT: MATCHES */, 24);
+			StringCopy(&(Global_2097536.f_2717[3 /*6*/]), "SCLB_C_TITLE" /* GXT: SKILL LEVEL */, 24);
 			Global_2097536.f_2710[0] = 0;
 			Global_2097536.f_2710[1] = 1;
 			Global_2097536.f_2710[2] = 3;
@@ -14406,10 +14406,10 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			uParam0->f_44.f_3 = 0;
 			StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/]), "", 32);
 			StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/].f_8), "", 32);
-			StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_CCM_CAREER", 32);
-			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_CCMLVL", 24);
-			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_WLRAT", 24);
-			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_RACES", 24);
+			StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_CCM_CAREER" /* GXT: LS Car Meet Membership */, 32);
+			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_CCMLVL" /* GXT: LEVEL */, 24);
+			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_WLRAT" /* GXT: W/L RATIO */, 24);
+			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_RACES" /* GXT: RACES */, 24);
 			Global_2097536.f_2710[0] = 0;
 			Global_2097536.f_2710[1] = 4;
 			Global_2097536.f_2710[2] = 3;
@@ -14440,9 +14440,9 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 				StringIntConCat(&Var0, iParam4, 32);
 			}
 			uParam0->f_44.f_3.f_1[0 /*16*/].f_8 = { Var0 };
-			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_BESTT", 24);
-			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_WINS", 24);
-			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_VEH", 24);
+			StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_BESTT" /* GXT: BEST TIME */, 24);
+			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_WINS" /* GXT: WINS */, 24);
+			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_VEH" /* GXT: VEHICLE */, 24);
 			Global_2097536.f_2710[0] = 0;
 			Global_2097536.f_2710[1] = 2;
 			Global_2097536.f_2710[2] = 3;
@@ -14458,11 +14458,11 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			switch (iParam4)
 			{
 				case 0:
-					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_T_TT", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_T_TT" /* GXT: Time Trial */, 32);
 					Global_2097536.f_2710[0] = 0;
 					Global_2097536.f_2710[1] = 3;
-					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_BESTT", 24);
-					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_VEH", 24);
+					StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_BESTT" /* GXT: BEST TIME */, 24);
+					StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_VEH" /* GXT: VEHICLE */, 24);
 					StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "", 24);
 					Global_2097536.f_2708 = 2;
 					Global_2097536.f_2780.f_28 = 3;
@@ -14471,12 +14471,12 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 					break;
 				
 				case 1:
-					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_T_CD", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_T_CD" /* GXT: Scramble */, 32);
 					break;
 				
 				case 2:
 				case 3:
-					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_T_HH1", 32);
+					StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_T_HH1" /* GXT: Head-to-Head */, 32);
 					break;
 			}
 			break;
@@ -14492,19 +14492,19 @@ void func_232(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 			{
 				StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/]), "GameType", 32);
 				StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/].f_8), "TUNER_SRS", 32);
-				StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_T_SRS", 32);
-				StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_BL", 24);
+				StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_T_SRS" /* GXT: Street Race Series - ~a~ */, 32);
+				StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_BL" /* GXT: BEST LAP */, 24);
 			}
 			else
 			{
 				StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/]), "GameType", 32);
 				StringCopy(&(uParam0->f_44.f_3.f_1[0 /*16*/].f_8), "TUNER_PS", 32);
-				StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_T_PURS", 32);
-				StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_BESTT", 24);
+				StringCopy(&(Global_2097536.f_2780.f_1), "SCLB_T_PURS" /* GXT: Pursuit Series - ~a~ */, 32);
+				StringCopy(&(Global_2097536.f_2717[0 /*6*/]), "SCLB_C_BESTT" /* GXT: BEST TIME */, 24);
 			}
 			StringCopy(&(Global_2097536.f_2780.f_9), sParam3, 64);
-			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_WINS", 24);
-			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_VEH", 24);
+			StringCopy(&(Global_2097536.f_2717[1 /*6*/]), "SCLB_C_WINS" /* GXT: WINS */, 24);
+			StringCopy(&(Global_2097536.f_2717[2 /*6*/]), "SCLB_C_VEH" /* GXT: VEHICLE */, 24);
 			Global_2097536.f_2710[0] = 0;
 			Global_2097536.f_2710[1] = 2;
 			Global_2097536.f_2710[2] = 3;
@@ -14640,91 +14640,91 @@ struct<6> func_240(int iParam0)//Position - 0x153DF
 	switch (iParam0)
 	{
 		case 38:
-			StringCopy(&Var0, "HUD_MG_RANGE0", 24);
+			StringCopy(&Var0, "HUD_MG_RANGE0" /* GXT: - Pistol Challenge 1 */, 24);
 			break;
 		
 		case 39:
-			StringCopy(&Var0, "HUD_MG_RANGE1", 24);
+			StringCopy(&Var0, "HUD_MG_RANGE1" /* GXT: - Pistol Challenge 2 */, 24);
 			break;
 		
 		case 40:
-			StringCopy(&Var0, "HUD_MG_RANGE2", 24);
+			StringCopy(&Var0, "HUD_MG_RANGE2" /* GXT: - Pistol Challenge 3 */, 24);
 			break;
 		
 		case 41:
-			StringCopy(&Var0, "HUD_MG_RANGE3", 24);
+			StringCopy(&Var0, "HUD_MG_RANGE3" /* GXT: - Submachine Gun Challenge 1 */, 24);
 			break;
 		
 		case 42:
-			StringCopy(&Var0, "HUD_MG_RANGE4", 24);
+			StringCopy(&Var0, "HUD_MG_RANGE4" /* GXT: - Submachine Gun Challenge 2 */, 24);
 			break;
 		
 		case 43:
-			StringCopy(&Var0, "HUD_MG_RANGE5", 24);
+			StringCopy(&Var0, "HUD_MG_RANGE5" /* GXT: - Submachine Gun Challenge 3 */, 24);
 			break;
 		
 		case 44:
-			StringCopy(&Var0, "HUD_MG_RANGE6", 24);
+			StringCopy(&Var0, "HUD_MG_RANGE6" /* GXT: - Shotgun Challenge 1 */, 24);
 			break;
 		
 		case 45:
-			StringCopy(&Var0, "HUD_MG_RANGE7", 24);
+			StringCopy(&Var0, "HUD_MG_RANGE7" /* GXT: - Shotgun Challenge 2 */, 24);
 			break;
 		
 		case 46:
-			StringCopy(&Var0, "HUD_MG_RANGE8", 24);
+			StringCopy(&Var0, "HUD_MG_RANGE8" /* GXT: - Shotgun Challenge 3 */, 24);
 			break;
 		
 		case 47:
-			StringCopy(&Var0, "HUD_MG_RANGE9", 24);
+			StringCopy(&Var0, "HUD_MG_RANGE9" /* GXT: - Assault Rifle Challenge 1 */, 24);
 			break;
 		
 		case 48:
-			StringCopy(&Var0, "HUD_MG_RANGE10", 24);
+			StringCopy(&Var0, "HUD_MG_RANGE10" /* GXT: - Assault Rifle Challenge 2 */, 24);
 			break;
 		
 		case 49:
-			StringCopy(&Var0, "HUD_MG_RANGE11", 24);
+			StringCopy(&Var0, "HUD_MG_RANGE11" /* GXT: - Assault Rifle Challenge 3 */, 24);
 			break;
 		
 		case 50:
-			StringCopy(&Var0, "HUD_MG_RANGE12", 24);
+			StringCopy(&Var0, "HUD_MG_RANGE12" /* GXT: - Light Machine Gun Challenge 1 */, 24);
 			break;
 		
 		case 51:
-			StringCopy(&Var0, "HUD_MG_RANGE13", 24);
+			StringCopy(&Var0, "HUD_MG_RANGE13" /* GXT: - Light Machine Gun Challenge 2 */, 24);
 			break;
 		
 		case 52:
-			StringCopy(&Var0, "HUD_MG_RANGE14", 24);
+			StringCopy(&Var0, "HUD_MG_RANGE14" /* GXT: - Light Machine Gun Challenge 3 */, 24);
 			break;
 		
 		case 53:
-			StringCopy(&Var0, "HUD_MG_RANGE15", 24);
+			StringCopy(&Var0, "HUD_MG_RANGE15" /* GXT: - Heavy Weapon Challenge 1 */, 24);
 			break;
 		
 		case 54:
-			StringCopy(&Var0, "HUD_MG_RANGE16", 24);
+			StringCopy(&Var0, "HUD_MG_RANGE16" /* GXT: - Heavy Weapon Challenge 2 */, 24);
 			break;
 		
 		case 55:
-			StringCopy(&Var0, "HUD_MG_RANGE17", 24);
+			StringCopy(&Var0, "HUD_MG_RANGE17" /* GXT: - Heavy Weapon Challenge 3 */, 24);
 			break;
 		
 		case 206:
-			StringCopy(&Var0, "HUD_MG_RANGE18", 24);
+			StringCopy(&Var0, "HUD_MG_RANGE18" /* GXT: - Rail Gun Challenge 1 */, 24);
 			break;
 		
 		case 207:
-			StringCopy(&Var0, "HUD_MG_RANGE19", 24);
+			StringCopy(&Var0, "HUD_MG_RANGE19" /* GXT: - Rail Gun Challenge 2 */, 24);
 			break;
 		
 		case 208:
-			StringCopy(&Var0, "HUD_MG_RANGE20", 24);
+			StringCopy(&Var0, "HUD_MG_RANGE20" /* GXT: - Rail Gun Challenge 3 */, 24);
 			break;
 		
 		case 209:
-			StringCopy(&Var0, "HUD_MG_RANGE21", 24);
+			StringCopy(&Var0, "HUD_MG_RANGE21" /* GXT: - Rail Gun Challenge 4 */, 24);
 			break;
 	}
 	return Var0;
@@ -17924,7 +17924,7 @@ void func_330(var uParam0, int iParam1)//Position - 0x19D48
 				func_331(&(uParam0->f_509), "DARTS_AIM", 2, 20, 1, 0);
 				func_120(&(uParam0->f_509), "DARTS_FOCUS", 2, 229, 1, 1, 0);
 				func_120(&(uParam0->f_509), "DARTS_FAST", 2, 227, 1, 1, 0);
-				func_120(&(uParam0->f_509), "IB_ZOOM", 2, 228, 1, 1, 0);
+				func_120(&(uParam0->f_509), "IB_ZOOM" /* GXT: Zoom */, 2, 228, 1, 1, 0);
 				func_117(&(uParam0->f_509), 1);
 				func_337(&(uParam0->f_666), 8, 0);
 				func_337(&(uParam0->f_666), 16, 0);
@@ -17937,7 +17937,7 @@ void func_330(var uParam0, int iParam1)//Position - 0x19D48
 				func_120(&(uParam0->f_509), "DARTS_END_QT", 2, 235, 1, 1, 0);
 				func_331(&(uParam0->f_509), "DARTS_AIM", 2, 20, 1, 0);
 				func_120(&(uParam0->f_509), "DARTS_FAST", 2, 227, 1, 1, 0);
-				func_120(&(uParam0->f_509), "IB_ZOOM", 2, 228, 1, 1, 0);
+				func_120(&(uParam0->f_509), "IB_ZOOM" /* GXT: Zoom */, 2, 228, 1, 1, 0);
 				func_117(&(uParam0->f_509), 1);
 				func_337(&(uParam0->f_666), 8, 0);
 				func_337(&(uParam0->f_666), 16, 0);
@@ -18008,8 +18008,8 @@ void func_332(var uParam0)//Position - 0x1A0CF
 		if (!func_3(&(uParam0->f_666), 23))
 		{
 			func_121(&(uParam0->f_509), 0, 0, 0, 1);
-			func_331(&(uParam0->f_509), "IB_MAPMOVE", 2, 21, 1, 0);
-			func_120(&(uParam0->f_509), "IB_ZOOM", 2, 39, 1, 1, 0);
+			func_331(&(uParam0->f_509), "IB_MAPMOVE" /* GXT: Move */, 2, 21, 1, 0);
+			func_120(&(uParam0->f_509), "IB_ZOOM" /* GXT: Zoom */, 2, 39, 1, 1, 0);
 			func_117(&(uParam0->f_509), 1);
 			func_337(&(uParam0->f_666), 23, 1);
 			func_337(&(uParam0->f_666), 8, 0);
@@ -18912,7 +18912,7 @@ void func_353(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 	{
 		if (Global_23150.f_5609 <= 1)
 		{
-			func_372(Global_23150.f_5609 + 1, "DFLT_MNU_OPT", 0, 1, 0, 0, 0);
+			func_372(Global_23150.f_5609 + 1, "DFLT_MNU_OPT" /* GXT: Exit */, 0, 1, 0, 0, 0);
 			Global_23150.f_6405 = 1;
 		}
 	}
@@ -19015,14 +19015,14 @@ void func_353(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 				if (Global_23150.f_6126)
 				{
 					func_370();
-					func_368((((Global_23147 + fParam5) - 0.00390625f) - func_369("CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128);
+					func_368((((Global_23147 + fParam5) - 0.00390625f) - func_369("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128);
 				}
 				else if (Global_23150.f_6122 > Global_23150.f_5616)
 				{
 					if (Global_23150.f_6125 != 0)
 					{
 						func_370();
-						func_368((((Global_23147 + fParam5) - 0.00390625f) - func_369("CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124);
+						func_368((((Global_23147 + fParam5) - 0.00390625f) - func_369("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124);
 					}
 				}
 			}
@@ -21391,8 +21391,8 @@ void func_383(var uParam0)//Position - 0x1F120
 	{
 		func_403(func_115(uParam0->f_660 == 0, "DARTS_LEGD", "DARTS_SETD"), 0, 0);
 	}
-	func_384(201, "ITEM_SELECT", -1, 0);
-	func_384(202, "IB_QUIT", -1, 0);
+	func_384(201, "ITEM_SELECT" /* GXT: Select */, -1, 0);
+	func_384(202, "IB_QUIT" /* GXT: Quit */, -1, 0);
 }
 
 void func_384(int iParam0, char* sParam1, int iParam2, bool bParam3)//Position - 0x1F21A
@@ -22118,8 +22118,8 @@ void func_411(var uParam0)//Position - 0x1FFF7
 	func_404(0, 1, 1);
 	func_403("DARTS_LEGD", 0, 0);
 	func_412();
-	func_384(201, "ITEM_SELECT", -1, 0);
-	func_384(202, "IB_QUIT", -1, 0);
+	func_384(201, "ITEM_SELECT" /* GXT: Select */, -1, 0);
+	func_384(202, "IB_QUIT" /* GXT: Quit */, -1, 0);
 }
 
 void func_412()//Position - 0x200E8
@@ -24271,15 +24271,15 @@ void func_494()//Position - 0x22B61
 			switch (func_91())
 			{
 				case 0:
-					StringCopy(&Global_78551, "CMN_MARRE", 16);
+					StringCopy(&Global_78551, "CMN_MARRE" /* GXT: ~s~Michael was arrested. */, 16);
 					break;
 				
 				case 1:
-					StringCopy(&Global_78551, "CMN_FARRE", 16);
+					StringCopy(&Global_78551, "CMN_FARRE" /* GXT: ~s~Franklin was arrested. */, 16);
 					break;
 				
 				case 2:
-					StringCopy(&Global_78551, "CMN_TARRE", 16);
+					StringCopy(&Global_78551, "CMN_TARRE" /* GXT: ~s~Trevor was arrested. */, 16);
 					break;
 			}
 			StringCopy(&Global_78555, "", 16);
@@ -24293,15 +24293,15 @@ void func_494()//Position - 0x22B61
 			switch (func_91())
 			{
 				case 0:
-					StringCopy(&Global_78551, "CMN_MDIED", 16);
+					StringCopy(&Global_78551, "CMN_MDIED" /* GXT: ~s~Michael died. */, 16);
 					break;
 				
 				case 1:
-					StringCopy(&Global_78551, "CMN_FDIED", 16);
+					StringCopy(&Global_78551, "CMN_FDIED" /* GXT: ~s~Franklin died. */, 16);
 					break;
 				
 				case 2:
-					StringCopy(&Global_78551, "CMN_TDIED", 16);
+					StringCopy(&Global_78551, "CMN_TDIED" /* GXT: ~s~Trevor died. */, 16);
 					break;
 			}
 			StringCopy(&Global_78555, "", 16);

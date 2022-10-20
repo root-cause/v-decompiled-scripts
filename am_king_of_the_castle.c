@@ -1286,7 +1286,7 @@ void func_20()//Position - 0x7D1
 										{
 											if (!BitTest(uLocal_648, Local_101[NETWORK::PARTICIPANT_ID_TO_INT() /*18*/].f_1))
 											{
-												func_237("KOTC_1STHELP", 30000);
+												func_237("KOTC_1STHELP" /* GXT: King of the Castle is available ~HUD_COLOUR_PURPLE~~BLIP_KING_OF_THE_CASTLE~ ~s~. Hold the area by yourself to become the King and earn cash and RP. */, 30000);
 												func_236(0);
 												AUDIO::PLAY_SOUND_FRONTEND(-1, "Event_Start_Text", "GTAO_FM_Events_Soundset", false);
 												MISC::SET_BIT(&bLocal_96, 8);
@@ -1300,7 +1300,7 @@ void func_20()//Position - 0x7D1
 				}
 				else
 				{
-					if (func_235("KOTC_1STHELP"))
+					if (func_235("KOTC_1STHELP" /* GXT: King of the Castle is available ~HUD_COLOUR_PURPLE~~BLIP_KING_OF_THE_CASTLE~ ~s~. Hold the area by yourself to become the King and earn cash and RP. */))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -1361,23 +1361,23 @@ void func_20()//Position - 0x7D1
 										{
 											if (func_8(iVar0) != bLocal_654)
 											{
-												sVar1 = "KOTC_STRAP2";
+												sVar1 = "KOTC_STRAP2" /* GXT: ~HUD_COLOUR_WHITE~<C>~a~</C> ~s~is the King. Take them out. */;
 												if (func_205(PLAYER::PLAYER_ID(), func_7(iVar0)))
 												{
-													sVar1 = "KOTC_STRAP2GN";
+													sVar1 = "KOTC_STRAP2GN" /* GXT: ~HUD_COLOUR_WHITE~<C>~a~</C> ~s~is the King. Help them win. */;
 												}
-												func_203(81, sVar1, PLAYER::GET_PLAYER_NAME(func_7(iVar0)), func_204(), -1, "KOTC_START", func_204());
+												func_203(81, sVar1, PLAYER::GET_PLAYER_NAME(func_7(iVar0)), func_204(), -1, "KOTC_START" /* GXT: King of the Castle */, func_204());
 											}
 											else
 											{
-												func_202(81, "KOTC_START2", "KOTC_STRAP1", func_204(), -1, func_204(), 1, 0);
+												func_202(81, "KOTC_START2" /* GXT: You are the King */, "KOTC_STRAP1" /* GXT: Defend the area */, func_204(), -1, func_204(), 1, 0);
 												MISC::SET_BIT(&bLocal_96, 14);
 												MISC::SET_BIT(&bLocal_96, 15);
 											}
 										}
 										else
 										{
-											func_202(81, "KOTC_START", "KOTC_STRAP3", func_204(), -1, func_204(), 1, 0);
+											func_202(81, "KOTC_START" /* GXT: King of the Castle */, "KOTC_STRAP3" /* GXT: Enter the Castle area. */, func_204(), -1, func_204(), 1, 0);
 										}
 										MISC::SET_BIT(&bLocal_96, 1);
 									}
@@ -1404,7 +1404,7 @@ void func_20()//Position - 0x7D1
 									{
 										if (!BitTest(uLocal_648, Local_101[bLocal_654 /*18*/].f_1))
 										{
-											func_202(81, "KOTC_START2", "KOTC_STRAP1", 1, -1, 2, 1, 0);
+											func_202(81, "KOTC_START2" /* GXT: You are the King */, "KOTC_STRAP1" /* GXT: Defend the area */, 1, -1, 2, 1, 0);
 											MISC::SET_BIT(&bLocal_96, 14);
 										}
 									}
@@ -1456,7 +1456,7 @@ void func_20()//Position - 0x7D1
 							{
 								if (!func_308(1, 0))
 								{
-									func_197("KOTC_KINGOB1", 0);
+									func_197("KOTC_KINGOB1" /* GXT: Defend the ~HUD_COLOUR_BLUE~Castle area. */, 0);
 								}
 								else
 								{
@@ -1482,7 +1482,7 @@ void func_20()//Position - 0x7D1
 																{
 																	if (!BitTest(bLocal_96, 10))
 																	{
-																		func_237("KOTC_YOUKNG", 30000);
+																		func_237("KOTC_YOUKNG" /* GXT: You are the King of the Castle. Earn points by staying in the Castle area. Earn extra points by killing other players while you are in the Castle area. */, 30000);
 																		func_236(1);
 																		MISC::SET_BIT(&bLocal_96, 6);
 																	}
@@ -1520,14 +1520,14 @@ void func_20()//Position - 0x7D1
 																	{
 																		if (!BitTest(bLocal_96, 7))
 																		{
-																			func_237("KOTC_OTHRKG", 30000);
+																			func_237("KOTC_OTHRKG" /* GXT: Another player is the King of the Castle ~HUD_COLOUR_RED~~BLIP_PLAYER_KING~ ~s~. To become the King, enter the Castle area and kill the King. */, 30000);
 																			func_236(1);
 																			MISC::SET_BIT(&bLocal_96, 7);
 																		}
 																	}
 																	else if (!BitTest(bLocal_96, 11))
 																	{
-																		func_162("KOTC_OTHRKGGN", func_195(), 1, "KOTC_KINGBLIP", func_163(PLAYER::PLAYER_ID(), -2, 0, 0, 0), -1);
+																		func_162("KOTC_OTHRKGGN" /* GXT: A member of ~a~ ~s~is the King of the Castle ~a~~s~. Help them defend the Castle area. */, func_195(), 1, "KOTC_KINGBLIP" /* GXT: ~BLIP_PLAYER_KING~ */, func_163(PLAYER::PLAYER_ID(), -2, 0, 0, 0), -1);
 																		func_236(1);
 																		MISC::SET_BIT(&bLocal_96, 11);
 																	}
@@ -1544,11 +1544,11 @@ void func_20()//Position - 0x7D1
 								{
 									if (func_205(PLAYER::PLAYER_ID(), func_7(iVar0)))
 									{
-										func_159("KOTC_PERMKNGb", func_7(iVar0), "KOTC_KINGNAME", 1, func_163(PLAYER::PLAYER_ID(), -2, 0, 0, 0), 0);
+										func_159("KOTC_PERMKNGb" /* GXT: ~HUD_COLOUR_WHITE~<C>~a~</C> ~s~is the ~a~.~s~ Help them win. */, func_7(iVar0), "KOTC_KINGNAME" /* GXT: King */, 1, func_163(PLAYER::PLAYER_ID(), -2, 0, 0, 0), 0);
 									}
 									else
 									{
-										func_148("KOTC_PERMKNG", &(Local_101[func_8(iVar0) /*18*/].f_2), 0, 1);
+										func_148("KOTC_PERMKNG" /* GXT: ~HUD_COLOUR_WHITE~<C>~a~</C> ~s~is the ~r~King.~s~ Take them out. */, &(Local_101[func_8(iVar0) /*18*/].f_2), 0, 1);
 									}
 								}
 								else
@@ -1568,11 +1568,11 @@ void func_20()//Position - 0x7D1
 						{
 							if (func_260(NETWORK::PARTICIPANT_ID_TO_INT(), iVar0))
 							{
-								func_197("KOTC_KLLALL", 0);
+								func_197("KOTC_KLLALL" /* GXT: Take out all the players inside the ~HUD_COLOUR_PURPLE~Castle area ~s~to become the King */, 0);
 							}
 							else
 							{
-								func_197("KOTC_ENTER", 0);
+								func_197("KOTC_ENTER" /* GXT: Enter the ~HUD_COLOUR_PURPLE~Castle area~s~ to become the King. */, 0);
 							}
 						}
 						else
@@ -1597,7 +1597,7 @@ void func_20()//Position - 0x7D1
 													{
 														if (func_147(iVar0))
 														{
-															func_237("KOTC_CONTS", 30000);
+															func_237("KOTC_CONTS" /* GXT: The King has left the Castle area while there are multiple players inside. Enter the Castle area and take out the other players inside it to become King. */, 30000);
 															func_236(1);
 															MISC::SET_BIT(&bLocal_96, 10);
 														}
@@ -1621,7 +1621,7 @@ void func_20()//Position - 0x7D1
 					{
 						if (func_196(NETWORK::PARTICIPANT_ID_TO_INT()) && !func_308(1, 0))
 						{
-							func_197("KOTC_ENTER", 0);
+							func_197("KOTC_ENTER" /* GXT: Enter the ~HUD_COLOUR_PURPLE~Castle area~s~ to become the King. */, 0);
 						}
 						else
 						{
@@ -1655,8 +1655,8 @@ void func_20()//Position - 0x7D1
 			func_200();
 			func_307();
 			func_82();
-			sVar4 = "KOTC_OVER1";
-			sVar5 = "KOTC_OVER2";
+			sVar4 = "KOTC_OVER1" /* GXT: Event Over */;
+			sVar5 = "KOTC_OVER2" /* GXT: <C>~a~</C> ~s~won King of the Castle with a score of ~a~ */;
 			iVar7 = -1;
 			iVar0 = 0;
 			while (iVar0 < 1)
@@ -1677,18 +1677,18 @@ void func_20()//Position - 0x7D1
 									switch (iVar2)
 									{
 										case 0:
-											sVar5 = "KOTC1ST_STR";
-											sVar4 = "KOTC_WIN1";
+											sVar5 = "KOTC1ST_STR" /* GXT: You won King of the Castle with a score of ~1~ */;
+											sVar4 = "KOTC_WIN1" /* GXT: Winner */;
 											bVar6 = true;
 											break;
 										
 										case 1:
-											sVar5 = "KOTC2ND_STR";
+											sVar5 = "KOTC2ND_STR" /* GXT: You came second in King of the Castle with a score of ~1~ */;
 											bVar6 = true;
 											break;
 										
 										case 2:
-											sVar5 = "KOTC3RD_STR";
+											sVar5 = "KOTC3RD_STR" /* GXT: You came third in King of the Castle with a score of ~1~ */;
 											bVar6 = true;
 											break;
 										}
@@ -1728,7 +1728,7 @@ void func_20()//Position - 0x7D1
 						{
 							if (!func_308(0, 0))
 							{
-								func_80("KOTC_NOENTRY", 0);
+								func_80("KOTC_NOENTRY" /* GXT: Event over. Nobody became the King. */, 0);
 							}
 						}
 						else if (bVar8)
@@ -1745,11 +1745,11 @@ void func_20()//Position - 0x7D1
 											{
 												if (func_196(bLocal_654))
 												{
-													func_202(68, "KOTC_OVER1", "KOTC_NOWIN", 1, 15000, 2, 1, 0);
+													func_202(68, "KOTC_OVER1" /* GXT: Event Over */, "KOTC_NOWIN" /* GXT: Nobody achieved a score in King of the Castle */, 1, 15000, 2, 1, 0);
 												}
 												else
 												{
-													func_80("KOTC_NOWIN", 0);
+													func_80("KOTC_NOWIN" /* GXT: Nobody achieved a score in King of the Castle */, 0);
 												}
 											}
 										}
@@ -1790,7 +1790,7 @@ void func_20()//Position - 0x7D1
 									{
 										if (func_196(bLocal_654))
 										{
-											sVar5 = "KOTC_OVER3";
+											sVar5 = "KOTC_OVER3" /* GXT: <C>~a~</C> ~s~won King of the Castle with a score of ~1~ */;
 											if (func_75(Local_91.f_6[iVar0 /*204*/].f_74[0 /*4*/].f_1, 1))
 											{
 												sVar9 = func_64(Local_91.f_6[iVar0 /*204*/].f_74[0 /*4*/].f_1);
@@ -1803,7 +1803,7 @@ void func_20()//Position - 0x7D1
 										}
 										else
 										{
-											sVar5 = "KOTC_OVER3";
+											sVar5 = "KOTC_OVER3" /* GXT: <C>~a~</C> ~s~won King of the Castle with a score of ~1~ */;
 											func_33(sVar5, Local_91.f_6[iVar0 /*204*/].f_74[0 /*4*/].f_1, 1, func_79(Local_91.f_6[iVar0 /*204*/].f_74[0 /*4*/].f_3), 0, 0, 0, 1, 0);
 										}
 									}
@@ -1933,7 +1933,7 @@ int func_21(var uParam0, bool bParam1)//Position - 0x1532
 			func_22();
 			if (func_5(&(uParam0->f_1), 15000, 0))
 			{
-				if (func_235("AMEV_LBD_HELP"))
+				if (func_235("AMEV_LBD_HELP" /* GXT: Press ~INPUT_MULTIPLAYER_INFO~ to show the Freemode Event leaderboard. */))
 				{
 					HUD::CLEAR_HELP(true);
 				}
@@ -1964,7 +1964,7 @@ void func_22()//Position - 0x16BC
 		if (((((!HUD::IS_RADAR_HIDDEN() && !BitTest(Global_2815059.f_836, 2)) && func_768(PLAYER::PLAYER_ID(), 1, 1)) && !Global_75485) && !Global_60335) && !CAM::IS_SCREEN_FADED_OUT())
 		{
 			MISC::SET_BIT(&(Global_2815059.f_4657), 1);
-			func_237("AMEV_LBD_HELP", -1);
+			func_237("AMEV_LBD_HELP" /* GXT: Press ~INPUT_MULTIPLAYER_INFO~ to show the Freemode Event leaderboard. */, -1);
 			func_236(1);
 			MISC::CLEAR_BIT(&(Global_2815059.f_4657), 0);
 		}
@@ -2976,12 +2976,12 @@ char* func_69(bool bParam0, bool bParam1)//Position - 0x2AA0
 			return func_70();
 		}
 	}
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACC");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACC" /* GXT: An Organization */);
 }
 
 char* func_70()//Position - 0x2AC7
 {
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACCM");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACCM" /* GXT: Motorcycle Club */);
 }
 
 bool func_71(bool bParam0, bool bParam1)//Position - 0x2AD7
@@ -6913,21 +6913,21 @@ void func_121(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 		case 1:
 			if (func_126(PLAYER::PLAYER_ID()) == 0)
 			{
-				func_130(iParam6, "HUD_USCORE", -1, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
+				func_130(iParam6, "HUD_USCORE" /* GXT: YOUR SCORE */, -1, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
 			}
 			break;
 		
 		case 2:
 			if (func_126(PLAYER::PLAYER_ID()) == 0)
 			{
-				func_130(iParam6, "HUD_UBEST", -1, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
+				func_130(iParam6, "HUD_UBEST" /* GXT: YOUR BEST */, -1, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
 			}
 			break;
 		
 		case 3:
 			break;
 	}
-	sVar2 = "HUD_COUNTDOWN";
+	sVar2 = "HUD_COUNTDOWN" /* GXT: EVENT END */;
 	if (!func_125(sParam10))
 	{
 		sVar2 = sParam10;
@@ -7161,23 +7161,23 @@ struct<16> func_133(int iParam0, char* sParam1)//Position - 0x9CFC
 			break;
 		
 		case 1:
-			StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HUD_POSFIRST"), 64);
+			StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HUD_POSFIRST" /* GXT: 1st: */), 64);
 			break;
 		
 		case 2:
-			StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HUD_POSSECOND"), 64);
+			StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HUD_POSSECOND" /* GXT: 2nd: */), 64);
 			break;
 		
 		case 3:
-			StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HUD_POSTHIRD"), 64);
+			StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HUD_POSTHIRD" /* GXT: 3rd: */), 64);
 			break;
 		
 		case 4:
-			StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HUD_POSFOURTH"), 64);
+			StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HUD_POSFOURTH" /* GXT: 4th: */), 64);
 			break;
 		
 		case 5:
-			StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HUD_POSFIFTH"), 64);
+			StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HUD_POSFIFTH" /* GXT: 5th: */), 64);
 			break;
 	}
 	StringConCat(&Var0, " ", 64);
@@ -7428,7 +7428,7 @@ void func_144(int iParam0, int iParam1, char* sParam2)//Position - 0xA2C1
 	{
 		return;
 	}
-	sVar0 = "HUD_COUNTDOWN";
+	sVar0 = "HUD_COUNTDOWN" /* GXT: EVENT END */;
 	if (!func_125(sParam2))
 	{
 		sVar0 = sParam2;
@@ -7438,102 +7438,102 @@ void func_144(int iParam0, int iParam1, char* sParam2)//Position - 0xA2C1
 
 char* func_145()//Position - 0xA303
 {
-	return "HUD_COUNTDOWN";
+	return "HUD_COUNTDOWN" /* GXT: EVENT END */;
 	switch (func_259(PLAYER::PLAYER_ID()))
 	{
 		case 131:
-			return "AET_HOT_TARG";
+			return "AET_HOT_TARG" /* GXT: MOVING TARGET END */;
 		
 		case 132:
-			return "AET_CHK_COLL";
+			return "AET_CHK_COLL" /* GXT: CHECKPOINTS END */;
 		
 		case 133:
 			switch (func_146())
 			{
 				case 0:
-					return "AET_CHALL_LJ";
+					return "AET_CHALL_LJ" /* GXT: LONGEST JUMP CHALLENGE END */;
 				
 				case 1:
-					return "AET_CHALL_LS";
+					return "AET_CHALL_LS" /* GXT: LONGEST FREEFALL CHALLENGE END */;
 				
 				case 2:
-					return "AET_CHALL_HS";
+					return "AET_CHALL_HS" /* GXT: HIGHEST SPEED CHALLENGE END */;
 				
 				case 3:
-					return "AET_CHALL_LST";
+					return "AET_CHALL_LST" /* GXT: LONGEST STOPPIE CHALLENGE END */;
 				
 				case 4:
-					return "AET_CHALL_LW";
+					return "AET_CHALL_LW" /* GXT: LONGEST WHEELIE CHALLENGE END */;
 				
 				case 5:
-					return "AET_CHALL_NC";
+					return "AET_CHALL_NC" /* GXT: NO CRASHES CHALLENGE END */;
 				
 				case 6:
-					return "AET_CHALL_LP";
+					return "AET_CHALL_LP" /* GXT: LOWEST PARACHUTE CHALLENGE END */;
 				
 				case 7:
-					return "AET_CHALL_VS";
+					return "AET_CHALL_VS" /* GXT: VEHICLES STOLEN CHALLENGE END */;
 				
 				case 8:
-					return "AET_CHALL_NM";
+					return "AET_CHALL_NM" /* GXT: NEAR MISSES CHALLENGE END */;
 				
 				case 9:
-					return "AET_CHALL_RD";
+					return "AET_CHALL_RD" /* GXT: REVERSE DRIVING CHALLENGE END */;
 				
 				case 10:
-					return "AET_CHALL_LF";
+					return "AET_CHALL_LF" /* GXT: LONGEST FALL SURVIVED CHALLENGE END */;
 				
 				case 11:
-					return "AET_CHALL_LFL";
+					return "AET_CHALL_LFL" /* GXT: LOW FLYING CHALLENGE END */;
 				
 				case 12:
-					return "AET_CHALL_LFI";
+					return "AET_CHALL_LFI" /* GXT: LOW FLYING INVERTED CHALLENGE END */;
 				
 				case 13:
-					return "AET_CHALL_LB";
+					return "AET_CHALL_LB" /* GXT: LONGEST BAIL CHALLENGE END */;
 				
 				case 14:
-					return "AET_CHALL_MB";
+					return "AET_CHALL_MB" /* GXT: MOST BRIDGES CHALLENGE END */;
 				
 				case 15:
-					return "AET_CHALL_HSH";
+					return "AET_CHALL_HSH" /* GXT: HEADSHOTS CHALLENGE END */;
 				
 				case 16:
-					return "AET_CHALL_DB";
+					return "AET_CHALL_DB" /* GXT: DRIVE-BY CHALLENGE END */;
 				
 				case 17:
-					return "AET_CHALL_ML";
+					return "AET_CHALL_ML" /* GXT: MELEE CHALLENGE END */;
 				
 				case 18:
-					return "AET_CHALL_LSN";
+					return "AET_CHALL_LSN" /* GXT: SNIPER KILLS CHALLENGE END */;
 				
 				default:
 			}
 			break;
 		
 		case 136:
-			return "AET_PENNED";
+			return "AET_PENNED" /* GXT: PENNED IN END */;
 		
 		case 138:
-			return "AET_PARCEL";
+			return "AET_PARCEL" /* GXT: HOLD THE WHEEL END */;
 		
 		case 139:
-			return "AET_PROPERTY";
+			return "AET_PROPERTY" /* GXT: HOT PROPERTY END */;
 		
 		case 140:
-			return "AET_DDROP";
+			return "AET_DDROP" /* GXT: DEAD DROP END */;
 		
 		case 141:
-			return "AET_KCASTLE";
+			return "AET_KCASTLE" /* GXT: KING OF THE CASTLE END */;
 		
 		case 144:
-			return "AET_BLAST";
+			return "AET_BLAST" /* GXT: CRIMINAL DAMAGE END */;
 		
 		case 129:
-			return "AET_UWARF";
+			return "AET_UWARF" /* GXT: KILL LIST END */;
 		
 		case 146:
-			return "AET_BEAST";
+			return "AET_BEAST" /* GXT: HUNT THE BEAST END */;
 	}
 	return "";
 }
@@ -11437,19 +11437,19 @@ void func_306()//Position - 0xE710
 
 void func_307()//Position - 0xE752
 {
-	if (func_235("KOTC_1STHELP"))
+	if (func_235("KOTC_1STHELP" /* GXT: King of the Castle is available ~HUD_COLOUR_PURPLE~~BLIP_KING_OF_THE_CASTLE~ ~s~. Hold the area by yourself to become the King and earn cash and RP. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
-	if (func_235("KOTC_OTHRKG"))
+	if (func_235("KOTC_OTHRKG" /* GXT: Another player is the King of the Castle ~HUD_COLOUR_RED~~BLIP_PLAYER_KING~ ~s~. To become the King, enter the Castle area and kill the King. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
-	if (func_235("KOTC_YOUKNG"))
+	if (func_235("KOTC_YOUKNG" /* GXT: You are the King of the Castle. Earn points by staying in the Castle area. Earn extra points by killing other players while you are in the Castle area. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
-	if (func_235("KOTC_CONTS"))
+	if (func_235("KOTC_CONTS" /* GXT: The King has left the Castle area while there are multiple players inside. Enter the Castle area and take out the other players inside it to become King. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -13536,15 +13536,15 @@ void func_381(bool bParam0, char* sParam1, int* iParam2, var uParam3, int iParam
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING(sParam9);
 			if (func_385(uParam3))
 			{
-				func_384("DPAD_FRIEND");
+				func_384("DPAD_FRIEND" /* GXT: F */);
 			}
 			else if (func_383(uParam3))
 			{
-				func_384("DPAD_FRIEND");
+				func_384("DPAD_FRIEND" /* GXT: F */);
 			}
 			else if (func_382(uParam3))
 			{
-				func_384("DPAD_CREW");
+				func_384("DPAD_CREW" /* GXT: C */);
 			}
 			else
 			{
@@ -13810,28 +13810,28 @@ void func_398(bool bParam0, int* iParam1, var uParam2, int iParam3, char* sParam
 				}
 				else if (uParam2->f_108 == 6 && !MISC::IS_STRING_NULL_OR_EMPTY(sParam16))
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_ONE_INT");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_ONE_INT" /* GXT: ~a~ ~1~ */);
 					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam16);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(iParam17);
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				}
 				else if (uParam2->f_108 == 5 && !MISC::IS_STRING_NULL_OR_EMPTY(sParam16))
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_ONE_INT");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_ONE_INT" /* GXT: ~a~ ~1~ */);
 					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam16);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(iParam17);
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				}
 				else if (uParam2->f_108 == 7 && !MISC::IS_STRING_NULL_OR_EMPTY(sParam16))
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_TWO_INT");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_TWO_INT" /* GXT: ~a~ ~a~ ~1~ */);
 					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam16);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(iParam17);
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				}
 				else if (uParam2->f_108 == 8 && !MISC::IS_STRING_NULL_OR_EMPTY(&(uParam2->f_104)))
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_UNIT");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_UNIT" /* GXT: ~1~~a~ */);
 					if (fParam13 != -1f)
 					{
 						HUD::ADD_TEXT_COMPONENT_FLOAT(fParam13, 1);
@@ -13845,7 +13845,7 @@ void func_398(bool bParam0, int* iParam1, var uParam2, int iParam3, char* sParam
 				}
 				else if (uParam2->f_108 == 9)
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_CASH");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_CASH" /* GXT: $~a~ */);
 					HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER(iParam10, true);
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				}
@@ -13853,13 +13853,13 @@ void func_398(bool bParam0, int* iParam1, var uParam2, int iParam3, char* sParam
 				{
 					if (iParam10 == 0)
 					{
-						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_CASH");
+						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_CASH" /* GXT: $~a~ */);
 						HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER(iParam10, true);
 						GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 					}
 					else
 					{
-						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_NG_CASH");
+						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_NG_CASH" /* GXT: -$~a~ */);
 						HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER(iParam10, true);
 						GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 					}
@@ -13916,15 +13916,15 @@ void func_398(bool bParam0, int* iParam1, var uParam2, int iParam3, char* sParam
 				}
 				if (func_385(uParam2))
 				{
-					func_384("DPAD_FRIEND");
+					func_384("DPAD_FRIEND" /* GXT: F */);
 				}
 				else if (func_383(uParam2))
 				{
-					func_384("DPAD_FRIEND");
+					func_384("DPAD_FRIEND" /* GXT: F */);
 				}
 				else if (func_382(uParam2))
 				{
-					func_384("DPAD_CREW");
+					func_384("DPAD_CREW" /* GXT: C */);
 				}
 				else
 				{
@@ -13987,28 +13987,28 @@ char* func_401(int iParam0, bool bParam1, bool bParam2, int iParam3)//Position -
 			{
 				if (bParam1)
 				{
-					return "AMCH_M_LB";
+					return "AMCH_M_LB" /* GXT: m */;
 				}
 				else if (bParam2)
 				{
-					return "AMCH_M";
+					return "AMCH_M" /* GXT: ~1~m */;
 				}
 				else
 				{
-					return "AMCH_METRES";
+					return "AMCH_METRES" /* GXT:  meters */;
 				}
 			}
 			else if (bParam1)
 			{
-				return "AMCH_FT_LB";
+				return "AMCH_FT_LB" /* GXT: ft */;
 			}
 			else if (bParam2)
 			{
-				return "AMCH_FT";
+				return "AMCH_FT" /* GXT: ~1~ft */;
 			}
 			else
 			{
-				return "AMCH_FEET";
+				return "AMCH_FEET" /* GXT:  feet */;
 			}
 			break;
 		
@@ -14017,28 +14017,28 @@ char* func_401(int iParam0, bool bParam1, bool bParam2, int iParam3)//Position -
 			{
 				if (bParam1)
 				{
-					return "AMCH_KMH_LB";
+					return "AMCH_KMH_LB" /* GXT: km/h */;
 				}
 				else if (bParam2)
 				{
-					return "AMCH_KMHN";
+					return "AMCH_KMHN" /* GXT: ~1~km/h */;
 				}
 				else
 				{
-					return "AMCH_KMH";
+					return "AMCH_KMH" /* GXT:  km/h */;
 				}
 			}
 			else if (bParam1)
 			{
-				return "AMCH_MPH_LB";
+				return "AMCH_MPH_LB" /* GXT: mph */;
 			}
 			else if (bParam2)
 			{
-				return "AMCH_MPHN";
+				return "AMCH_MPHN" /* GXT: ~1~mph */;
 			}
 			else
 			{
-				return "AMCH_MPH";
+				return "AMCH_MPH" /* GXT:  mph */;
 			}
 			break;
 		
@@ -14049,7 +14049,7 @@ char* func_401(int iParam0, bool bParam1, bool bParam2, int iParam3)//Position -
 			}
 			else
 			{
-				return "AMCH_VEH";
+				return "AMCH_VEH" /* GXT:  vehicles */;
 			}
 			break;
 		
@@ -14063,11 +14063,11 @@ char* func_401(int iParam0, bool bParam1, bool bParam2, int iParam3)//Position -
 			}
 			else if (iParam3 != 1)
 			{
-				return "AMCH_KILLS";
+				return "AMCH_KILLS" /* GXT:  kills */;
 			}
 			else
 			{
-				return "AMCH_KILL";
+				return "AMCH_KILL" /* GXT:  kill */;
 			}
 			break;
 	}
@@ -14075,7 +14075,7 @@ char* func_401(int iParam0, bool bParam1, bool bParam2, int iParam3)//Position -
 	{
 		return "";
 	}
-	return "AMCH_EMPTY";
+	return "AMCH_EMPTY" /* GXT: ~r~~s~ */;
 }
 
 int func_402(var uParam0, float fParam1, int iParam2, int iParam3)//Position - 0x11267
@@ -15104,7 +15104,7 @@ void func_452(int* iParam0, char* sParam1, char* sParam2, int iParam3)//Position
 		}
 		else
 		{
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_BRACKT");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_BRACKT" /* GXT: ~a~ (~a~) */);
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam1);
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam2);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -15123,19 +15123,19 @@ char* func_453()//Position - 0x1233D
 	switch (func_112(PLAYER::PLAYER_ID()))
 	{
 		case 163:
-			return "BD_SORT_1";
+			return "BD_SORT_1" /* GXT: Total Value */;
 			break;
 		
 		case 160:
-			return "BD_SORT_4";
+			return "BD_SORT_4" /* GXT: Packages Collected */;
 			break;
 		
 		case 154:
-			return "BD_SORT_3";
+			return "BD_SORT_3" /* GXT: Total Cash */;
 			break;
 		
 		case 155:
-			return "BD_SORT_3";
+			return "BD_SORT_3" /* GXT: Total Cash */;
 			break;
 	}
 	return "";
@@ -15146,254 +15146,254 @@ char* func_454(var uParam0)//Position - 0x12396
 	switch (uParam0->f_112)
 	{
 		case 0:
-			return "GR_DPD_E";
+			return "GR_DPD_E" /* GXT: Steal Cargo */;
 			break;
 		
 		case 1:
-			return "GR_DPD_F";
+			return "GR_DPD_F" /* GXT: Sell Cargo */;
 			break;
 		
 		case 2:
-			return "GR_DPD_S";
+			return "GR_DPD_S" /* GXT: Business Setup */;
 			break;
 	}
 	switch (uParam0->f_110)
 	{
 		case 0:
-			return "GR_DPD_A";
+			return "GR_DPD_A" /* GXT: Business Setup */;
 			break;
 		
 		case 1:
-			return "GR_DPD_B";
+			return "GR_DPD_B" /* GXT: Steal Supplies */;
 			break;
 		
 		case 2:
-			return "GR_DPD_C";
+			return "GR_DPD_C" /* GXT: Sell Weapons */;
 			break;
 		
 		case 3:
-			return "GR_DPD_D";
+			return "GR_DPD_D" /* GXT: Defend Business */;
 			break;
 	}
 	switch (func_112(PLAYER::PLAYER_ID()))
 	{
 		case 233:
-			return "H2_DPAD_SET";
+			return "H2_DPAD_SET" /* GXT: Heist Prep */;
 			break;
 		
 		case 180:
-			return "GB_BIGUNLOAD_T";
+			return "GB_BIGUNLOAD_T" /* GXT: Gunrunning */;
 			break;
 		
 		case 182:
-			return "DEAL_DEALN";
+			return "DEAL_DEALN" /* GXT: By the Pound */;
 			break;
 		
 		case 194:
-			return "PI_BIK_13_0";
+			return "PI_BIK_13_0" /* GXT: Rippin' it Up */;
 			break;
 		
 		case 189:
-			return "PI_BIK_4_1";
+			return "PI_BIK_4_1" /* GXT: Race to Point */;
 			break;
 		
 		case 193:
-			return "PI_BIK_13_1";
+			return "PI_BIK_13_1" /* GXT: Hit & Ride */;
 			break;
 		
 		case 205:
-			return "PI_BIK_13_3";
+			return "PI_BIK_13_3" /* GXT: Criminal Mischief */;
 			break;
 		
 		case 186:
-			return "CELL_BIKER_CK";
+			return "CELL_BIKER_CK" /* GXT: Weapon of Choice */;
 			break;
 		
 		case 207:
-			return "DV_SH_TITLE";
+			return "DV_SH_TITLE" /* GXT: Fragile Goods */;
 			break;
 		
 		case 208:
-			return "BA_SH_TITLE";
+			return "BA_SH_TITLE" /* GXT: Torched */;
 			break;
 		
 		case 209:
-			return "SHU_SH_TITLE";
+			return "SHU_SH_TITLE" /* GXT: Outrider */;
 			break;
 		
 		case 210:
-			return "PI_BIK_13_4";
+			return "PI_BIK_13_4" /* GXT: Wheelie Rider */;
 			break;
 		
 		case 183:
-			return "CELL_BIKER_RESC";
+			return "CELL_BIKER_RESC" /* GXT: P.O.W. */;
 			break;
 		
 		case 199:
-			return "CELL_BIKER_SEAR";
+			return "CELL_BIKER_SEAR" /* GXT: Search and Destroy */;
 			break;
 		
 		case 201:
-			return "CELL_BIKER_STAN";
+			return "CELL_BIKER_STAN" /* GXT: Stand Your Ground */;
 			break;
 		
 		case 142:
-			return "PIM_MAGM210";
+			return "PIM_MAGM210" /* GXT: Sightseer */;
 			break;
 		
 		case 163:
-			return "PIM_MAGM608";
+			return "PIM_MAGM608" /* GXT: Auto Buyout */;
 			break;
 		
 		case 160:
-			return "PIM_MAGM604";
+			return "PIM_MAGM604" /* GXT: Due Diligence */;
 			break;
 		
 		case 154:
-			return "PIM_MAGM602";
+			return "PIM_MAGM602" /* GXT: Market Manipulation */;
 			break;
 		
 		case 155:
-			return "PIM_MAGM603";
+			return "PIM_MAGM603" /* GXT: Courier Service */;
 			break;
 		
 		case 148:
 			if (func_456())
 			{
-				return "LBD_BKVBK";
+				return "LBD_BKVBK" /* GXT: Deathmatch */;
 			}
-			return "PIM_MAGM201";
+			return "PIM_MAGM201" /* GXT: Executive Deathmatch */;
 			break;
 		
 		case 151:
 			if (func_120(1))
 			{
-				return "GB_DPAD_BMFD";
+				return "GB_DPAD_BMFD" /* GXT: Marked For Death */;
 			}
-			return "PIM_MAGM202";
+			return "PIM_MAGM202" /* GXT: Put Out a Hit */;
 			break;
 		
 		case 152:
-			return "PIM_MAGM204";
+			return "PIM_MAGM204" /* GXT: Piracy Prevention */;
 			break;
 		
 		case 153:
 			if (func_120(1))
 			{
-				return "PI_BIK_3_2";
+				return "PI_BIK_3_2" /* GXT: On The Run */;
 			}
-			return "PIM_MAGM601";
+			return "PIM_MAGM601" /* GXT: Most Wanted */;
 			break;
 		
 		case 157:
-			return "PIM_MAGM207";
+			return "PIM_MAGM207" /* GXT: Asset Recovery */;
 			break;
 		
 		case 159:
-			return "PIM_MAGM206";
+			return "PIM_MAGM206" /* GXT: Hostile Takeover */;
 			break;
 		
 		case 162:
-			return "PIM_MAGM607";
+			return "PIM_MAGM607" /* GXT: Point to Point */;
 			break;
 		
 		case 164:
-			return "PIM_MAGM212";
+			return "PIM_MAGM212" /* GXT: Executive Search */;
 			break;
 		
 		case 166:
-			return "GB_DPAD_HEAD";
+			return "GB_DPAD_HEAD" /* GXT: Headhunter */;
 		
 		case 167:
-			return "GB_DPAD_BUY";
+			return "GB_DPAD_BUY" /* GXT: Buy Special Cargo */;
 		
 		case 168:
-			return "GB_DPAD_SELL";
+			return "GB_DPAD_SELL" /* GXT: Sell Special Cargo */;
 		
 		case 169:
-			return "GB_DPAD_DEF";
+			return "GB_DPAD_DEF" /* GXT: Defend Special Cargo */;
 		
 		case 170:
-			return "GB_DPAD_AIR";
+			return "GB_DPAD_AIR" /* GXT: Airfreight */;
 		
 		case 171:
-			return "GB_DPAD_CASH";
+			return "GB_DPAD_CASH" /* GXT: Cashing Out */;
 		
 		case 172:
-			return "GB_DPAD_SAL";
+			return "GB_DPAD_SAL" /* GXT: Salvage */;
 		
 		case 173:
-			return "GB_DPAD_FRA";
+			return "GB_DPAD_FRA" /* GXT: Haulage */;
 		
 		case 178:
-			return "VEX_TITLEa";
+			return "VEX_TITLEa" /* GXT: Steal Vehicle */;
 		
 		case 188:
-			return "VEX_TITLEb";
+			return "VEX_TITLEb" /* GXT: Export Vehicle */;
 		
 		case 218:
-			return "FRT_MODE";
+			return "FRT_MODE" /* GXT: Fortified */;
 		
 		case 217:
-			return "FRT_TRNS";
+			return "FRT_TRNS" /* GXT: Transporter */;
 		
 		case 214:
-			return "MODE_PLW";
+			return "MODE_PLW" /* GXT: Plowed */;
 		
 		case 215:
-			return "MODE_FUL";
+			return "MODE_FUL" /* GXT: Fully Loaded */;
 		
 		case 216:
-			return "MODE_AA";
+			return "MODE_AA" /* GXT: Amphibious Assault */;
 		
 		case 219:
-			return "MODE_VEL";
+			return "MODE_VEL" /* GXT: Velocity */;
 		
 		case 220:
-			return "MODE_RMP";
+			return "MODE_RMP" /* GXT: Ramped Up */;
 		
 		case 221:
-			return "MODE_STK";
+			return "MODE_STK" /* GXT: Stockpiling */;
 		
 		case 225:
-			return "GR_TITLEL";
+			return "GR_TITLEL" /* GXT: Gunrunning */;
 		
 		case 226:
-			return "GRS_TITLEL";
+			return "GRS_TITLEL" /* GXT: Gunrunning Sell */;
 		
 		case 227:
-			return "GRD_TITLEL";
+			return "GRD_TITLEL" /* GXT: Gunrunning Defend */;
 		
 		case 195:
-			return "GB_STEAL_T";
+			return "GB_STEAL_T" /* GXT: Nine Tenths Of The Law */;
 		
 		case 198:
-			return "SC_MENU_TITLE";
+			return "SC_MENU_TITLE" /* GXT: Cracked */;
 		
 		case 190:
-			return "GB_DPAD_BSEL";
+			return "GB_DPAD_BSEL" /* GXT: Biker Sell */;
 		
 		case 191:
-			return "GB_DPAD_BDEF";
+			return "GB_DPAD_BDEF" /* GXT: Biker Defend */;
 		
 		case 185:
-			return "GB_DPAD_GFH";
+			return "GB_DPAD_GFH" /* GXT: Guns For Hire */;
 		
 		case 197:
-			return "GB_DPAD_JB";
+			return "GB_DPAD_JB" /* GXT: Jailbreak */;
 		
 		case 179:
-			return "CELL_JOUST";
+			return "CELL_JOUST" /* GXT: Joust */;
 		
 		case 200:
-			return "CAG_BLIP";
+			return "CAG_BLIP" /* GXT: Caged In */;
 		
 		case 192:
 			if (func_455(Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_182))
 			{
-				return "GB_DPAD_BSET";
+				return "GB_DPAD_BSET" /* GXT: Business Setup */;
 			}
-			return "GB_DPAD_BBUY";
+			return "GB_DPAD_BBUY" /* GXT: Resupply */;
 			break;
 	}
 	return "";
@@ -15446,14 +15446,14 @@ void func_460(int* iParam0, char* sParam1, char* sParam2, int iParam3)//Position
 		}
 		else if (func_259(PLAYER::PLAYER_ID()) == 133)
 		{
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_BRACKT_C");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_BRACKT_C" /* GXT: ~a~ Challenge (~a~) */);
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam1);
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam2);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 		}
 		else
 		{
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_BRACKT");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_BRACKT" /* GXT: ~a~ (~a~) */);
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam1);
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam2);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -15485,67 +15485,67 @@ char* func_461(var uParam0)//Position - 0x128D2
 			return "";
 		
 		case 132:
-			return "FM_AE_SORT_5";
+			return "FM_AE_SORT_5" /* GXT: Points */;
 		
 		case 133:
 			switch (func_146())
 			{
 				case 0:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 1:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 2:
-					return "FM_AE_SORT_3";
+					return "FM_AE_SORT_3" /* GXT: Speed */;
 				
 				case 3:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 4:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 5:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 6:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 7:
-					return "FM_AE_SORT_13";
+					return "FM_AE_SORT_13" /* GXT: Vehicles */;
 				
 				case 8:
-					return "FM_AE_SORT_4";
+					return "FM_AE_SORT_4" /* GXT: Misses */;
 				
 				case 9:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 10:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 11:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 12:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 13:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 14:
-					return "FM_AE_SORT_5";
+					return "FM_AE_SORT_5" /* GXT: Points */;
 				
 				case 15:
-					return "FM_AE_SORT_9";
+					return "FM_AE_SORT_9" /* GXT: Kills */;
 				
 				case 16:
-					return "FM_AE_SORT_9";
+					return "FM_AE_SORT_9" /* GXT: Kills */;
 				
 				case 17:
-					return "FM_AE_SORT_9";
+					return "FM_AE_SORT_9" /* GXT: Kills */;
 				
 				case 18:
-					return "FM_AE_SORT_9";
+					return "FM_AE_SORT_9" /* GXT: Kills */;
 				
 				default:
 			}
@@ -15558,19 +15558,19 @@ char* func_461(var uParam0)//Position - 0x128D2
 			return "";
 		
 		case 139:
-			return "FM_AE_SORT_10";
+			return "FM_AE_SORT_10" /* GXT: Possession Time */;
 		
 		case 140:
 			return "";
 		
 		case 141:
-			return "FM_AE_SORT_5";
+			return "FM_AE_SORT_5" /* GXT: Points */;
 		
 		case 144:
-			return "FM_AE_SORT_1";
+			return "FM_AE_SORT_1" /* GXT: Destruction Value */;
 		
 		case 129:
-			return "FM_AE_SORT_9";
+			return "FM_AE_SORT_9" /* GXT: Kills */;
 	}
 	return "";
 }
@@ -15595,115 +15595,115 @@ char* func_463(var uParam0)//Position - 0x12A8E
 	switch (iVar0)
 	{
 		case 131:
-			return "PIM_TA9";
+			return "PIM_TA9" /* GXT: Moving Target */;
 		
 		case 132:
 			if (func_465() == 0)
 			{
-				return "CPC_TILEL";
+				return "CPC_TILEL" /* GXT: Checkpoints */;
 			}
 			else if (func_465() == 1)
 			{
-				return "CPC_TILELA";
+				return "CPC_TILELA" /* GXT: Air Checkpoints */;
 			}
-			return "PIM_TA0";
+			return "PIM_TA0" /* GXT: Checkpoints */;
 			break;
 		
 		case 133:
 			switch (func_146())
 			{
 				case 0:
-					return "AMCH_0SLC";
+					return "AMCH_0SLC" /* GXT: Longest Jump */;
 				
 				case 1:
-					return "AMCH_1SLC";
+					return "AMCH_1SLC" /* GXT: Longest Freefall */;
 				
 				case 2:
-					return "AMCH_2SLC";
+					return "AMCH_2SLC" /* GXT: Highest Speed */;
 				
 				case 3:
-					return "AMCH_3SLC";
+					return "AMCH_3SLC" /* GXT: Longest Stoppie */;
 				
 				case 4:
-					return "AMCH_4SLC";
+					return "AMCH_4SLC" /* GXT: Longest Wheelie */;
 				
 				case 5:
-					return "AMCH_5SLC";
+					return "AMCH_5SLC" /* GXT: No Crashes */;
 				
 				case 6:
-					return "AMCH_6SLC";
+					return "AMCH_6SLC" /* GXT: Lowest Parachute */;
 				
 				case 7:
-					return "AMCH_7SLC";
+					return "AMCH_7SLC" /* GXT: Vehicles Stolen */;
 				
 				case 8:
-					return "AMCH_8SLC";
+					return "AMCH_8SLC" /* GXT: Near Misses */;
 				
 				case 9:
-					return "AMCH_12SLC";
+					return "AMCH_12SLC" /* GXT: Reverse Driving */;
 				
 				case 10:
-					return "AMCH_13SLC";
+					return "AMCH_13SLC" /* GXT: Longest Fall Survived */;
 				
 				case 11:
-					return "AMCH_15SLC";
+					return "AMCH_15SLC" /* GXT: Low Flying */;
 				
 				case 12:
-					return "AMCH_16SLC";
+					return "AMCH_16SLC" /* GXT: Inverted Flying */;
 				
 				case 13:
-					return "AMCH_23SLC";
+					return "AMCH_23SLC" /* GXT: Longest Bail */;
 				
 				case 14:
-					return "AMCH_9SLC";
+					return "AMCH_9SLC" /* GXT: Fly Under Bridges */;
 				
 				case 15:
-					return "AMCH_19SLC";
+					return "AMCH_19SLC" /* GXT: Headshot Kills */;
 				
 				case 16:
-					return "AMCH_20SLC";
+					return "AMCH_20SLC" /* GXT: Driveby */;
 				
 				case 17:
-					return "AMCH_21SLC";
+					return "AMCH_21SLC" /* GXT: Melee */;
 				
 				case 18:
-					return "AMCH_22SLC";
+					return "AMCH_22SLC" /* GXT: Sniper Kills */;
 				
 				default:
 			}
 			break;
 		
 		case 136:
-			return "PIM_TA10";
+			return "PIM_TA10" /* GXT: Penned In */;
 		
 		case 138:
-			return "PIM_TA4";
+			return "PIM_TA4" /* GXT: Hold the Wheel */;
 		
 		case 139:
-			return "PIM_TA5";
+			return "PIM_TA5" /* GXT: Hot Property */;
 		
 		case 140:
-			return "PIM_TA3";
+			return "PIM_TA3" /* GXT: Dead Drop */;
 		
 		case 141:
-			return "PIM_TA8";
+			return "PIM_TA8" /* GXT: King of the Castle */;
 		
 		case 144:
-			return "PIM_TA2";
+			return "PIM_TA2" /* GXT: Criminal Damage */;
 		
 		case 129:
 			if (func_464() == 1)
 			{
-				return "FM_AE_TITL_12";
+				return "FM_AE_TITL_12" /* GXT: Kill List Competitive */;
 			}
 			else
 			{
-				return "PIM_TA7";
+				return "PIM_TA7" /* GXT: Kill List */;
 			}
 			break;
 		
 		case 146:
-			return "PIM_TA6";
+			return "PIM_TA6" /* GXT: Hunt the Beast */;
 	}
 	return "";
 }
@@ -15756,7 +15756,7 @@ void func_466(int* iParam0, char* sParam1, char* sParam2, bool bParam3, int iPar
 				iVar0 = 1;
 				iVar1 = 2;
 			}
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("LBD_DPD_CNT");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("LBD_DPD_CNT" /* GXT: (~1~/~1~) */);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iVar0);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iVar1);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -15841,7 +15841,7 @@ char* func_471(int iParam0, char* sParam1, bool bParam2)//Position - 0x12E58
 	}
 	else if (bParam2)
 	{
-		return "HUD_LBD_IMP";
+		return "HUD_LBD_IMP" /* GXT: One on One Deathmatch */;
 	}
 	else if (iParam0 == 25)
 	{
@@ -15849,7 +15849,7 @@ char* func_471(int iParam0, char* sParam1, bool bParam2)//Position - 0x12E58
 		{
 			Global_1836599 = 1;
 		}
-		return "HUD_LBD_OVR";
+		return "HUD_LBD_OVR" /* GXT: Overall Results */;
 	}
 	else if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam1))
 	{
@@ -15870,15 +15870,15 @@ char* func_471(int iParam0, char* sParam1, bool bParam2)//Position - 0x12E58
 			case 0:
 			case 31:
 			case 42:
-				return "HUD_LBD_DM";
+				return "HUD_LBD_DM" /* GXT: Deathmatch Leaderboard */;
 				break;
 			
 			case 1:
-				return "HUD_LBD_TDM";
+				return "HUD_LBD_TDM" /* GXT: Team Deathmatch Leaderboard */;
 				break;
 			
 			case 5:
-				return "HUD_LBD_GRCE";
+				return "HUD_LBD_GRCE" /* GXT: GTA Race Leaderboard */;
 				break;
 			
 			case 4:
@@ -15887,11 +15887,11 @@ char* func_471(int iParam0, char* sParam1, bool bParam2)//Position - 0x12E58
 			case 6:
 			case 26:
 			case 11:
-				return "HUD_LBD_RCE";
+				return "HUD_LBD_RCE" /* GXT: Race Leaderboard */;
 				break;
 			
 			case 7:
-				return "HUD_LBD_BRCE";
+				return "HUD_LBD_BRCE" /* GXT: Parachute Race Leaderboard */;
 				break;
 			
 			case 18:
@@ -15906,7 +15906,7 @@ char* func_471(int iParam0, char* sParam1, bool bParam2)//Position - 0x12E58
 				break;
 			
 			case 3:
-				return "HUD_LBD_HRD";
+				return "HUD_LBD_HRD" /* GXT: Survival Leaderboard */;
 				break;
 			
 			case 22:
@@ -15921,21 +15921,21 @@ char* func_472()//Position - 0x12FC2
 {
 	if (NETWORK::NETWORK_SESSION_IS_CLOSED_FRIENDS())
 	{
-		return "HUD_LBD_FMF";
+		return "HUD_LBD_FMF" /* GXT: GTA Online (Friend, ~1~) */;
 	}
 	if (NETWORK::NETWORK_SESSION_IS_CLOSED_CREW())
 	{
-		return "HUD_LBD_FMC";
+		return "HUD_LBD_FMC" /* GXT: GTA Online (Crew, ~1~) */;
 	}
 	if (NETWORK::NETWORK_SESSION_IS_SOLO())
 	{
-		return "HUD_LBD_FMS";
+		return "HUD_LBD_FMS" /* GXT: GTA Online (Solo, ~1~) */;
 	}
 	if (NETWORK::NETWORK_SESSION_IS_PRIVATE())
 	{
-		return "HUD_LBD_FMI";
+		return "HUD_LBD_FMI" /* GXT: GTA Online (Invite, ~1~) */;
 	}
-	return "HUD_LBD_FMP";
+	return "HUD_LBD_FMP" /* GXT: GTA Online (Public, ~1~) */;
 }
 
 void func_473()//Position - 0x13006
@@ -16529,9 +16529,9 @@ void func_502(int iParam0)//Position - 0x13A1E
 	{
 		func_505(iParam0, HUD::ADD_BLIP_FOR_COORD(func_366(iParam0)));
 		HUD::SET_BLIP_PRIORITY(func_89(iParam0), 12);
-		if (HUD::DOES_TEXT_LABEL_EXIST("KOTC_AREANAME"))
+		if (HUD::DOES_TEXT_LABEL_EXIST("KOTC_AREANAME" /* GXT: King of the Castle */))
 		{
-			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(func_89(iParam0), "KOTC_AREANAME");
+			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(func_89(iParam0), "KOTC_AREANAME" /* GXT: King of the Castle */);
 		}
 		HUD::SET_BLIP_SPRITE(func_89(iParam0), 438);
 		func_503(&(Local_110[iParam0 /*68*/].f_27), func_84(iParam0, 1));
@@ -16554,9 +16554,9 @@ void func_502(int iParam0)//Position - 0x13A1E
 		func_503(&(Local_110[iParam0 /*68*/].f_27), func_84(iParam0, 0));
 		if (HUD::DOES_BLIP_EXIST(func_89(iParam0)))
 		{
-			if (HUD::DOES_TEXT_LABEL_EXIST("KOTC_AREANAME"))
+			if (HUD::DOES_TEXT_LABEL_EXIST("KOTC_AREANAME" /* GXT: King of the Castle */))
 			{
-				HUD::SET_BLIP_NAME_FROM_TEXT_FILE(func_89(iParam0), "KOTC_AREANAME");
+				HUD::SET_BLIP_NAME_FROM_TEXT_FILE(func_89(iParam0), "KOTC_AREANAME" /* GXT: King of the Castle */);
 			}
 		}
 	}
@@ -21103,7 +21103,7 @@ void func_649(int iParam0, int iParam1)//Position - 0x18DA3
 						func_655(&iVar0, 0);
 						if (iParam1 == 1)
 						{
-							func_654("GB_BCUT_TICK1", func_658(), iVar0, 0, 0, 1);
+							func_654("GB_BCUT_TICK1" /* GXT: You paid ~a~ ~s~a $~1~ ~s~cut. */, func_658(), iVar0, 0, 0, 1);
 						}
 						func_653(20);
 						func_650(func_658(), iVar0, 1);
@@ -21449,17 +21449,17 @@ void func_679(char* sParam0, char* sParam1, bool bParam2)//Position - 0x193A1
 	{
 		if (MISC::IS_STRING_NULL_OR_EMPTY(sParam0))
 		{
-			sParam0 = "FMEVEN_NUM1";
+			sParam0 = "FMEVEN_NUM1" /* GXT: EVENT OVER */;
 		}
 		if (MISC::IS_STRING_NULL_OR_EMPTY(sParam1))
 		{
 			if (bParam2)
 			{
-				sParam1 = "FMEVEN_NUM2";
+				sParam1 = "FMEVEN_NUM2" /* GXT: Not enough players in the session */;
 			}
 			else
 			{
-				sParam1 = "FMEVEN_NUM3";
+				sParam1 = "FMEVEN_NUM3" /* GXT: Not enough players available in the session */;
 			}
 		}
 		func_202(66, sParam0, sParam1, 1, -1, 2, 1, 0);
@@ -21486,7 +21486,7 @@ void func_681()//Position - 0x19424
 			if (((!HUD::IS_RADAR_HIDDEN() && !HUD::IS_HELP_MESSAGE_BEING_DISPLAYED()) && !func_238()) && func_768(PLAYER::PLAYER_ID(), 1, 1))
 			{
 				MISC::SET_BIT(&(Global_1836844.f_1), 7);
-				func_237("FME_PASINT", 30000);
+				func_237("FME_PASINT" /* GXT: You will not be able to take part in this event in Passive Mode. */, 30000);
 				func_236(1);
 			}
 		}
@@ -21505,7 +21505,7 @@ void func_681()//Position - 0x19424
 		{
 			if (func_699())
 			{
-				func_237("AMEV_GA_RP", -1);
+				func_237("AMEV_GA_RP" /* GXT: When in an active Gang Attack location, some other players may not be attackable. */, -1);
 				if (func_112(PLAYER::PLAYER_ID()) != 200)
 				{
 					func_236(1);
@@ -21534,7 +21534,7 @@ void func_681()//Position - 0x19424
 		{
 			MISC::CLEAR_BIT(&(Global_1836844.f_1), 9);
 			func_698(0);
-			func_237("FME_TBL00", -1);
+			func_237("FME_TBL00" /* GXT: Job & Activity Triggers have been temporarily hidden as you are now an active participant in the current Freemode Event. They will return once the Event is over. */, -1);
 			func_236(1);
 		}
 	}
@@ -21553,7 +21553,7 @@ void func_681()//Position - 0x19424
 			{
 				MISC::CLEAR_BIT(&(Global_1836844.f_1), 18);
 				MISC::SET_BIT(&(Global_1836844.f_1), 19);
-				func_237("AMTT_RPAS", -1);
+				func_237("AMTT_RPAS" /* GXT: You have been removed from the current event because you triggered a Time Trial. */, -1);
 				func_236(1);
 			}
 		}
@@ -21691,7 +21691,7 @@ void func_683(int iParam0, int iParam1)//Position - 0x199C8
 		if (func_487() > 0)
 		{
 			func_233(iParam0);
-			if (func_235("AMEV_LBD_HELP"))
+			if (func_235("AMEV_LBD_HELP" /* GXT: Press ~INPUT_MULTIPLAYER_INFO~ to show the Freemode Event leaderboard. */))
 			{
 				HUD::CLEAR_HELP(true);
 			}

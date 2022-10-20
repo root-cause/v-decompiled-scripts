@@ -108,18 +108,18 @@ void __EntryFunction__()//Position - 0x0
 	{
 		Global_8941[3 /*2811*/][0 /*281*/] = 190;
 		Global_8941[3 /*2811*/][0 /*281*/].f_1 = 190;
-		StringCopy(&(Global_8941[3 /*2811*/][0 /*281*/].f_2), "CELL_701", 16);
+		StringCopy(&(Global_8941[3 /*2811*/][0 /*281*/].f_2), "CELL_701" /* GXT: Snapmatic */, 16);
 		Global_8941[3 /*2811*/][0 /*281*/].f_6 = 19;
 		Global_8941[3 /*2811*/][0 /*281*/].f_280 = 1;
-		StringCopy(&(Global_8941[3 /*2811*/][0 /*281*/].f_7[0 /*4*/]), "CELL_704", 16);
+		StringCopy(&(Global_8941[3 /*2811*/][0 /*281*/].f_7[0 /*4*/]), "CELL_704" /* GXT: Quick launch Off */, 16);
 		Global_8941[3 /*2811*/][0 /*281*/].f_124[0] = 1;
 		Global_8941[3 /*2811*/][0 /*281*/].f_84[0] = 170;
 		Global_8941[3 /*2811*/][0 /*281*/].f_104[0] = 19;
-		StringCopy(&(Global_8941[3 /*2811*/][0 /*281*/].f_7[1 /*4*/]), "CELL_703", 16);
+		StringCopy(&(Global_8941[3 /*2811*/][0 /*281*/].f_7[1 /*4*/]), "CELL_703" /* GXT: Quick launch On */, 16);
 		Global_8941[3 /*2811*/][0 /*281*/].f_124[1] = 1;
 		Global_8941[3 /*2811*/][0 /*281*/].f_84[1] = 175;
 		Global_8941[3 /*2811*/][0 /*281*/].f_104[1] = 19;
-		StringCopy(&(Global_8941[3 /*2811*/][0 /*281*/].f_7[2 /*4*/]), "CELL_801", 16);
+		StringCopy(&(Global_8941[3 /*2811*/][0 /*281*/].f_7[2 /*4*/]), "CELL_801" /* GXT: Sleep Mode */, 16);
 		Global_8941[3 /*2811*/][0 /*281*/].f_124[2] = 0;
 		Global_8941[3 /*2811*/][0 /*281*/].f_84[2] = 190;
 		Global_8941[3 /*2811*/][0 /*281*/].f_104[2] = 26;
@@ -623,7 +623,7 @@ void func_12()//Position - 0x895
 							if (iVar3 == 0)
 							{
 								GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_BACKGROUND_CREW_IMAGE");
-								GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_2000");
+								GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_2000" /* GXT: ~a~ */);
 								HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&uVar1);
 								GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 								GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -700,7 +700,7 @@ void func_12()//Position - 0x895
 							if (Global_113386.f_14051.f_82 == 0)
 							{
 								HUD::CLEAR_HELP(true);
-								func_16("CELL_7050");
+								func_16("CELL_7050" /* GXT: If you select Sleep Mode you will not receive incoming calls. This can pause game story progression. ~n~Select Normal Mode from this menu or trigger an existing mission to leave Sleep Mode. */);
 								if (fLocal_43 == fLocal_44)
 								{
 								}
@@ -714,7 +714,7 @@ void func_12()//Position - 0x895
 								if (Global_113386.f_14051.f_83 == 0)
 								{
 									HUD::CLEAR_HELP(true);
-									func_15("CELL_7051", -1);
+									func_15("CELL_7051" /* GXT: When Sleep Mode is active, the Sleep symbol will be displayed near the Radar. */, -1);
 									Global_113386.f_14051.f_83 = 1;
 								}
 							}
@@ -1089,7 +1089,7 @@ void func_26()//Position - 0x161D
 							if (Global_113386.f_14051.f_82 == 0)
 							{
 								HUD::CLEAR_HELP(true);
-								func_16("CELL_7050");
+								func_16("CELL_7050" /* GXT: If you select Sleep Mode you will not receive incoming calls. This can pause game story progression. ~n~Select Normal Mode from this menu or trigger an existing mission to leave Sleep Mode. */);
 								if (fLocal_43 == fLocal_44)
 								{
 								}
@@ -1132,11 +1132,11 @@ void func_27()//Position - 0x16EF
 	iVar1 = 0;
 	if (Global_78319)
 	{
-		StringCopy(&(Global_8941[3 /*2811*/][4 /*281*/].f_7[0 /*4*/]), "CELL_CREWEMB", 16);
+		StringCopy(&(Global_8941[3 /*2811*/][4 /*281*/].f_7[0 /*4*/]), "CELL_CREWEMB" /* GXT: Crew Emblem */, 16);
 		Var2 = { func_17(PLAYER::PLAYER_ID()) };
 		if (!NETWORK::NETWORK_CLAN_PLAYER_IS_ACTIVE(&Var2))
 		{
-			StringCopy(&(Global_8941[3 /*2811*/][4 /*281*/].f_7[0 /*4*/]), "CELL_840", 16);
+			StringCopy(&(Global_8941[3 /*2811*/][4 /*281*/].f_7[0 /*4*/]), "CELL_840" /* GXT: Default */, 16);
 		}
 	}
 	while (iVar1 < 19)
@@ -1189,8 +1189,8 @@ void func_27()//Position - 0x16EF
 	func_13(Global_20247, "SET_HEADER", &(Global_8941[Global_20266 /*2811*/][iLocal_23 /*281*/].f_7[Global_8941[Global_20266 /*2811*/][iLocal_23 /*281*/].f_259 /*4*/]), 0, 0, 0, 0);
 	if (Global_20254)
 	{
-		func_18(Global_20247, "SET_SOFT_KEYS", 2f, 1f, 2f, -1f, -1f, "CELL_205", 0, 0, 0, 0);
-		func_18(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, "CELL_206", 0, 0, 0, 0);
+		func_18(Global_20247, "SET_SOFT_KEYS", 2f, 1f, 2f, -1f, -1f, "CELL_205" /* GXT: SELECT */, 0, 0, 0, 0);
+		func_18(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, "CELL_206" /* GXT: BACK */, 0, 0, 0, 0);
 	}
 	else
 	{
@@ -1380,11 +1380,11 @@ void func_33()//Position - 0x1BA1
 		iVar1++;
 	}
 	func_46(Global_20247, "DISPLAY_VIEW", 13f, SYSTEM::TO_FLOAT(iLocal_24), -1082130432, -1082130432, -1082130432);
-	func_13(Global_20247, "SET_HEADER", "CELL_16", 0, 0, 0, 0);
+	func_13(Global_20247, "SET_HEADER", "CELL_16" /* GXT: Settings */, 0, 0, 0, 0);
 	if (Global_20254)
 	{
-		func_18(Global_20247, "SET_SOFT_KEYS", 2f, 1f, 2f, -1f, -1f, "CELL_205", 0, 0, 0, 0);
-		func_18(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, "CELL_206", 0, 0, 0, 0);
+		func_18(Global_20247, "SET_SOFT_KEYS", 2f, 1f, 2f, -1f, -1f, "CELL_205" /* GXT: SELECT */, 0, 0, 0, 0);
+		func_18(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, "CELL_206" /* GXT: BACK */, 0, 0, 0, 0);
 	}
 	else
 	{

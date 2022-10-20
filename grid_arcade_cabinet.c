@@ -4202,19 +4202,19 @@ void func_139(int iParam0, bool bParam1)//Position - 0x4EF3
 			switch (iParam0)
 			{
 				case 0:
-					StringConCat(&cVar4, "Green", 16);
+					StringConCat(&cVar4, "Green" /* GXT: Green */, 16);
 					break;
 				
 				case 1:
-					StringConCat(&cVar4, "Purple", 16);
+					StringConCat(&cVar4, "Purple" /* GXT: Schafter Purple */, 16);
 					break;
 				
 				case 2:
-					StringConCat(&cVar4, "Yellow", 16);
+					StringConCat(&cVar4, "Yellow" /* GXT: Yellow */, 16);
 					break;
 				
 				case 3:
-					StringConCat(&cVar4, "Blue", 16);
+					StringConCat(&cVar4, "Blue" /* GXT: Blue */, 16);
 					break;
 			}
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&cVar4);
@@ -4548,7 +4548,7 @@ void func_150()//Position - 0x552C
 		if (!func_158(247, -1))
 		{
 			func_155(247, 1, -1, 1);
-			func_153(12, "CLO_VWM_D_1_1", "UNLOCK_NAME_SHIRT3", "FeedhitTshirt04", "MPTshirtAwards3", -1, 0, 0, 0, -1, 1);
+			func_153(12, "CLO_VWM_D_1_1" /* GXT: Street Crimes Action Tee */, "UNLOCK_NAME_SHIRT3" /* GXT: Homies Sharp T-shirt */, "FeedhitTshirt04", "MPTshirtAwards3", -1, 0, 0, 0, -1, 1);
 			func_152(27193, 1, -1);
 			func_151("SCGW_CH_4", 7500, 1);
 		}
@@ -4687,7 +4687,7 @@ void func_159()//Position - 0x591B
 			if (iVar0 == Global_262145.f_27246)
 			{
 				func_152(27189, 1, -1);
-				func_153(12, "CLO_VWM_D_1_3", "UNLOCK_NAME_SHIRT3", "FeedhitTshirt04", "MPTshirtAwards3", -1, 0, 0, 0, -1, 1);
+				func_153(12, "CLO_VWM_D_1_3" /* GXT: Street Crimes Hoods Tee */, "UNLOCK_NAME_SHIRT3" /* GXT: Homies Sharp T-shirt */, "FeedhitTshirt04", "MPTshirtAwards3", -1, 0, 0, 0, -1, 1);
 				func_160("SCGW_CH_0", Global_262145.f_27246, 7500, 1);
 			}
 			break;
@@ -4698,7 +4698,7 @@ void func_159()//Position - 0x591B
 			if (iVar0 == Global_262145.f_27246)
 			{
 				func_152(27190, 1, -1);
-				func_153(12, "CLO_VWM_D_1_4", "UNLOCK_NAME_SHIRT3", "FeedhitTshirt04", "MPTshirtAwards3", -1, 0, 0, 0, -1, 1);
+				func_153(12, "CLO_VWM_D_1_4" /* GXT: Street Crimes Punks Tee */, "UNLOCK_NAME_SHIRT3" /* GXT: Homies Sharp T-shirt */, "FeedhitTshirt04", "MPTshirtAwards3", -1, 0, 0, 0, -1, 1);
 				func_160("SCGW_CH_1", Global_262145.f_27246, 7500, 1);
 			}
 			break;
@@ -4709,7 +4709,7 @@ void func_159()//Position - 0x591B
 			if (iVar0 == Global_262145.f_27246)
 			{
 				func_152(27191, 1, -1);
-				func_153(12, "CLO_VWM_D_1_5", "UNLOCK_NAME_SHIRT3", "FeedhitTshirt04", "MPTshirtAwards3", -1, 0, 0, 0, -1, 1);
+				func_153(12, "CLO_VWM_D_1_5" /* GXT: Street Crimes Yokels Tee */, "UNLOCK_NAME_SHIRT3" /* GXT: Homies Sharp T-shirt */, "FeedhitTshirt04", "MPTshirtAwards3", -1, 0, 0, 0, -1, 1);
 				func_160("SCGW_CH_2", Global_262145.f_27246, 7500, 1);
 			}
 			break;
@@ -4720,7 +4720,7 @@ void func_159()//Position - 0x591B
 			if (iVar0 == Global_262145.f_27246)
 			{
 				func_152(27192, 1, -1);
-				func_153(12, "CLO_VWM_D_1_2", "UNLOCK_NAME_SHIRT3", "FeedhitTshirt04", "MPTshirtAwards3", -1, 0, 0, 0, -1, 1);
+				func_153(12, "CLO_VWM_D_1_2" /* GXT: Street Crimes Bikers Tee */, "UNLOCK_NAME_SHIRT3" /* GXT: Homies Sharp T-shirt */, "FeedhitTshirt04", "MPTshirtAwards3", -1, 0, 0, 0, -1, 1);
 				func_160("SCGW_CH_3", Global_262145.f_27246, 7500, 1);
 			}
 			break;
@@ -6481,7 +6481,7 @@ void func_222()//Position - 0x863D
 					}
 					else
 					{
-						func_123("MPArcadeCabinetGrid", "bullet", Local_135.f_204[iVar0 /*19*/].f_10[iVar1 /*4*/], Local_135.f_204[iVar0 /*19*/].f_10[iVar1 /*4*/].f_1, 0.004166667f, 0.01111111f, fVar2, Local_135.f_107.f_17);
+						func_123("MPArcadeCabinetGrid", "bullet" /* GXT: Bullet */, Local_135.f_204[iVar0 /*19*/].f_10[iVar1 /*4*/], Local_135.f_204[iVar0 /*19*/].f_10[iVar1 /*4*/].f_1, 0.004166667f, 0.01111111f, fVar2, Local_135.f_107.f_17);
 					}
 				}
 				iVar1++;
@@ -10744,10 +10744,10 @@ void func_340()//Position - 0xE7A5
 
 void func_341()//Position - 0xE97C
 {
-	Local_135.f_422[0] = "green";
-	Local_135.f_422[1] = "purple";
-	Local_135.f_422[2] = "yellow";
-	Local_135.f_422[3] = "blue";
+	Local_135.f_422[0] = "green" /* GXT: Green */;
+	Local_135.f_422[1] = "purple" /* GXT: Schafter Purple */;
+	Local_135.f_422[2] = "yellow" /* GXT: Yellow */;
+	Local_135.f_422[3] = "blue" /* GXT: Blue */;
 }
 
 void func_342()//Position - 0xE9B4
@@ -11729,11 +11729,11 @@ int func_383()//Position - 0xFE99
 	}
 	if (PAD::IS_CONTROL_PRESSED(2, iVar0) || PAD::IS_DISABLED_CONTROL_PRESSED(2, iVar0))
 	{
-		func_384((1000 - MISC::ABSI((NETWORK::GET_NETWORK_TIME() - Local_135.f_431))), 1000, "DEG_GAME_QUIT", 1, -1, 2, -1082130432, -1082130432, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, -1, 0, -1, -1082130432, -1082130432, 0, 1, 0, 0, 1, -1, 0, -1, 1);
+		func_384((1000 - MISC::ABSI((NETWORK::GET_NETWORK_TIME() - Local_135.f_431))), 1000, "DEG_GAME_QUIT" /* GXT: Fill bar to quit the game. */, 1, -1, 2, -1082130432, -1082130432, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, -1, 0, -1, -1082130432, -1082130432, 0, 1, 0, 0, 1, -1, 0, -1, 1);
 	}
 	else
 	{
-		func_384(0, 1000, "DEG_GAME_QUIT", 1, -1, 2, -1082130432, -1082130432, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, -1, 0, -1, -1082130432, -1082130432, 0, 1, 0, 0, 1, -1, 0, -1, 1);
+		func_384(0, 1000, "DEG_GAME_QUIT" /* GXT: Fill bar to quit the game. */, 1, -1, 2, -1082130432, -1082130432, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, -1, 0, -1, -1082130432, -1082130432, 0, 1, 0, 0, 1, -1, 0, -1, 1);
 	}
 	if (PAD::IS_DISABLED_CONTROL_PRESSED(2, iVar0))
 	{

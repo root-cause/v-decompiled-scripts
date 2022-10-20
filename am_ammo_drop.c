@@ -1317,7 +1317,7 @@ char* func_29(int iParam0)//Position - 0x13C3
 			return "CHALLENGE_PLAYER_LEFT";
 			break;
 	}
-	return "DEFAULT";
+	return "DEFAULT" /* GXT: _ */;
 }
 
 char* func_30(int iParam0)//Position - 0x144D
@@ -1377,7 +1377,7 @@ char* func_30(int iParam0)//Position - 0x144D
 		
 		default:
 	}
-	return "DEFAULT";
+	return "DEFAULT" /* GXT: _ */;
 }
 
 void func_31(int iParam0, int iParam1)//Position - 0x1533
@@ -1596,12 +1596,12 @@ void func_41()//Position - 0x1849
 		{
 			HUD::SET_BLIP_SPRITE(iLocal_64, 84);
 			HUD::SET_BLIP_SCALE(iLocal_64, 1.2f);
-			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_64, "AMD_BLIPBALL");
+			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_64, "AMD_BLIPBALL" /* GXT: Ballistic Armor and Minigun */);
 		}
 		else
 		{
 			HUD::SET_BLIP_SPRITE(iLocal_64, 351);
-			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_64, "AMD_BLIPN");
+			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_64, "AMD_BLIPN" /* GXT: Ammo Crate */);
 			HUD::SET_BLIP_SCALE(iLocal_64, 0.7f);
 		}
 		HUD::SET_BLIP_COLOUR(iLocal_64, 2);
@@ -2441,14 +2441,14 @@ void func_72()//Position - 0x27BD
 			iVar0 = func_76(1191, -1, 0);
 			if (!BitTest(iVar0, 10))
 			{
-				func_75("AMD_HELP1", -1);
+				func_75("AMD_HELP1" /* GXT: ~s~An ammo crate ~HUD_COLOUR_GREEN~~BLIP_GANG_ATTACK_PACKAGE~ ~s~will be dropped at your GPS location.~n~Be sure to make it a secluded location to stop other players stealing it. */, -1);
 				MISC::SET_BIT(&iVar0, 10);
 				func_73(1191, iVar0, -1, 1, 0);
 				MISC::SET_BIT(&uLocal_63, 11);
 			}
 			else if (!BitTest(iVar0, 11))
 			{
-				func_75("AMD_HELP2", -1);
+				func_75("AMD_HELP2" /* GXT: ~s~Ammo crates ~HUD_COLOUR_GREEN~~BLIP_GANG_ATTACK_PACKAGE~ ~s~will add ammo to your equipped weapon only.~n~You will not pick up the ammo crate if you do not need ammo for your current or last equipped weapon. */, -1);
 				MISC::SET_BIT(&iVar0, 11);
 				func_73(1191, iVar0, -1, 1, 0);
 				MISC::SET_BIT(&uLocal_63, 11);
@@ -2534,14 +2534,14 @@ void func_77()//Position - 0x2903
 			iVar0 = func_76(1191, -1, 0);
 			if (!BitTest(iVar0, 24))
 			{
-				func_75("BALD_HELP1", -1);
+				func_75("BALD_HELP1" /* GXT: ~s~A crate ~HUD_COLOUR_GREEN~~BLIP_RAMPAGE~ ~s~containing the Ballistic Armor and Minigun has been dispatched. */, -1);
 				MISC::SET_BIT(&iVar0, 24);
 				func_73(1191, iVar0, -1, 1, 0);
 				MISC::SET_BIT(&uLocal_63, 17);
 			}
 			else if (!BitTest(iVar0, 25))
 			{
-				func_75("BALD_HELP2", -1);
+				func_75("BALD_HELP2" /* GXT: ~s~The crate ~HUD_COLOUR_GREEN~~BLIP_RAMPAGE~ ~s~will equip the Ballistic Armor and Minigun. */, -1);
 				MISC::SET_BIT(&iVar0, 25);
 				func_73(1191, iVar0, -1, 1, 0);
 				MISC::SET_BIT(&uLocal_63, 17);
@@ -3290,11 +3290,11 @@ void func_109()//Position - 0x3790
 					{
 						if (Local_60.f_18)
 						{
-							func_75("BALD_HELP3", -1);
+							func_75("BALD_HELP3" /* GXT: ~s~Collect the nearby crate ~HUD_COLOUR_GREEN~~BLIP_RAMPAGE~ ~s~to equip the Ballistic Armor and Minigun. */, -1);
 						}
 						else
 						{
-							func_75("AMD_HELP3", -1);
+							func_75("AMD_HELP3" /* GXT: ~s~To pick up the ammo crate ~HUD_COLOUR_GREEN~~BLIP_GANG_ATTACK_PACKAGE~ ~s~you need to equip a weapon that requires ammo.~n~If you are unarmed ammo will be added to your last weapon if possible. */, -1);
 						}
 						MISC::SET_BIT(&uLocal_63, 12);
 					}
@@ -3311,7 +3311,7 @@ void func_109()//Position - 0x3790
 								{
 									if (!Local_60.f_18)
 									{
-										func_75("AMD_HELP3", -1);
+										func_75("AMD_HELP3" /* GXT: ~s~To pick up the ammo crate ~HUD_COLOUR_GREEN~~BLIP_GANG_ATTACK_PACKAGE~ ~s~you need to equip a weapon that requires ammo.~n~If you are unarmed ammo will be added to your last weapon if possible. */, -1);
 									}
 									MISC::SET_BIT(&uLocal_63, 13);
 								}

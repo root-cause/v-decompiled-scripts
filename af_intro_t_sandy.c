@@ -210,9 +210,9 @@ int func_1(int iParam0)//Position - 0x1D9
 void func_2()//Position - 0x230
 {
 	func_6(joaat("TEXT_TREV_LOST_HANGER"));
-	func_3("SHI_T_SANDY_2", 0, 0, -1, 10000, 7, 0, 0, 0);
+	func_3("SHI_T_SANDY_2" /* GXT: Planes you purchase from websites or that you land inside will be stored at ~HUD_COLOUR_TREVOR~~BLIP_HANGAR~~s~~n~Ground vehicles too large for a garage will also be stored here. */, 0, 0, -1, 10000, 7, 0, 0, 0);
 	SYSTEM::WAIT(0);
-	func_3("SHI_T_SANDY_3", 0, 0, -1, 10000, 7, 0, 0, 0);
+	func_3("SHI_T_SANDY_3" /* GXT: Helicopters purchased from websites or that you land on the helipad will be stored at ~HUD_COLOUR_TREVOR~~BLIP_HELIPAD~ */, 0, 0, -1, 10000, 7, 0, 0, 0);
 	iLocal_37 = 2;
 }
 

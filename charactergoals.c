@@ -55,18 +55,18 @@ void __EntryFunction__()//Position - 0x0
 						Global_22724[3 /*42*/].f_27[0] = func_50(2);
 						func_49(2, 32, Global_22724[3 /*42*/].f_27[0]);
 					}
-					StringCopy(&(Global_22724[3 /*42*/]), "PA_TREV1", 16);
-					StringCopy(&(Global_22724[3 /*42*/].f_4), "PA_TREV1", 16);
+					StringCopy(&(Global_22724[3 /*42*/]), "PA_TREV1" /* GXT: Earn one million dollars. */, 16);
+					StringCopy(&(Global_22724[3 /*42*/].f_4), "PA_TREV1" /* GXT: Earn one million dollars. */, 16);
 					Global_22724[3 /*42*/].f_8 = 0;
 					Global_22724[3 /*42*/].f_9 = 1;
-					StringCopy(&(Global_22724[3 /*42*/].f_10[1 /*4*/]), "PA_TREV1A", 16);
+					StringCopy(&(Global_22724[3 /*42*/].f_10[1 /*4*/]), "PA_TREV1A" /* GXT: Current wealth $~1~. */, 16);
 					Global_22724[3 /*42*/].f_37[1] = 0;
 					if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 					{
 						Global_22724[3 /*42*/].f_27[1] = func_50(2);
 					}
 					func_42(2, 3, 1, 1);
-					func_39("PA_TREV1A", Global_22724[3 /*42*/].f_27[1]);
+					func_39("PA_TREV1A" /* GXT: Current wealth $~1~. */, Global_22724[3 /*42*/].f_27[1]);
 					iLocal_18 = 1;
 				}
 				break;
@@ -77,7 +77,7 @@ void __EntryFunction__()//Position - 0x0
 					Global_22724[3 /*42*/].f_27[1] = func_50(2);
 					if (func_38(2, 999999))
 					{
-						func_37("PA_COMPLETE", "PA_TREV1", 2000, 1);
+						func_37("PA_COMPLETE" /* GXT: Goal achieved ~a~ */, "PA_TREV1" /* GXT: Earn one million dollars. */, 2000, 1);
 						Global_22724[3 /*42*/].f_37[1] = 1;
 						Global_22724[3 /*42*/].f_8 = 1;
 						iLocal_22 = MISC::GET_GAME_TIMER();
@@ -87,7 +87,7 @@ void __EntryFunction__()//Position - 0x0
 					{
 						if (!iLocal_20)
 						{
-							func_36("PA_TREV1", 2000, 1);
+							func_36("PA_TREV1" /* GXT: Earn one million dollars. */, 2000, 1);
 							iLocal_20 = 1;
 						}
 					}
@@ -103,7 +103,7 @@ void __EntryFunction__()//Position - 0x0
 				iLocal_21 = MISC::GET_GAME_TIMER();
 				if ((iLocal_21 - iLocal_22) < 5000)
 				{
-					func_39("PA_TREV1A", Global_22724[3 /*42*/].f_27[1]);
+					func_39("PA_TREV1A" /* GXT: Current wealth $~1~. */, Global_22724[3 /*42*/].f_27[1]);
 				}
 				break;
 		}
@@ -639,7 +639,7 @@ void func_5(bool bParam0)//Position - 0xB82
 	if (bVar0)
 	{
 		StringCopy(&cVar1, "CHAR_LIFEINVADER", 64);
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("COUP_RED");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("COUP_RED" /* GXT: You have redeemed your promotion for ~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(func_6(bParam0));
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar1, &cVar1, true, 0, "", 0);
 	}
@@ -650,28 +650,28 @@ char* func_6(bool bParam0)//Position - 0xCFF
 	switch (bParam0)
 	{
 		case 0:
-			return "COUP_HAIRC";
+			return "COUP_HAIRC" /* GXT: one free haircut. */;
 		
 		case 1:
-			return "COUP_TATTOO";
+			return "COUP_TATTOO" /* GXT: one free tattoo. */;
 		
 		case 2:
-			return "COUP_WARSTOCK";
+			return "COUP_WARSTOCK" /* GXT: 10% off your next purchase at Warstock-Cache-and-Carry.com. */;
 		
 		case 3:
-			return "COUP_MOSPORT";
+			return "COUP_MOSPORT" /* GXT: 10 percent off your next purchase at LegendaryMotorsport.net. */;
 		
 		case 4:
-			return "COUP_ELITAS";
+			return "COUP_ELITAS" /* GXT: 10 percent off your next purchase at ElitasTravel.com. */;
 		
 		case 5:
-			return "COUP_MEDSPENS";
+			return "COUP_MEDSPENS" /* GXT: 10 percent off your next medical expenses. */;
 		
 		case 6:
-			return "COUP_SPRUNK";
+			return "COUP_SPRUNK" /* GXT: one free can of Sprunk. */;
 		
 		case 7:
-			return "COUP_RESPRAY";
+			return "COUP_RESPRAY" /* GXT: one free respray. */;
 		
 		case 8:
 			return "COUP_XMAS2017";
@@ -686,22 +686,22 @@ char* func_6(bool bParam0)//Position - 0xCFF
 			return "COUP_CAR2_XMAS2018";
 		
 		case 12:
-			return "COUP_CAS_ELITAS";
+			return "COUP_CAS_ELITAS" /* GXT: 10 percent off your next purchase at ElitasTravel.com. */;
 		
 		case 13:
-			return "COUP_CAS_DOCKTEASE";
+			return "COUP_CAS_DOCKTEASE" /* GXT: 10 percent off your next purchase at DockTease.com. */;
 		
 		case 14:
-			return "COUP_CAS_MOSPORT";
+			return "COUP_CAS_MOSPORT" /* GXT: 10 percent off your next purchase at LegendaryMotorsport.net. */;
 		
 		case 15:
-			return "COUP_CAS_SSASA";
+			return "COUP_CAS_SSASA" /* GXT: 10 percent off your next purchase at southernsanandreassuperautos.com. */;
 		
 		case 16:
-			return "COUP_CAS_WARSTOCK";
+			return "COUP_CAS_WARSTOCK" /* GXT: 10 percent off your next purchase at Warstock-Cache-and-Carry.com. */;
 		
 		case 17:
-			return "COUP_CAS_PANDM";
+			return "COUP_CAS_PANDM" /* GXT: 10 percent off your next purchase at pandmcycles.com. */;
 			break;
 		
 		default:

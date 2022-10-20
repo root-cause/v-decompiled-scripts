@@ -786,9 +786,9 @@ void __EntryFunction__()//Position - 0x0
 	StringCopy(&Local_216, "FAM3_DCAN", 16);
 	StringCopy(&Local_219, "FAM3_DHOUSE", 16);
 	StringCopy(&Local_222, "FAM3_GBIT", 16);
-	StringCopy(&cLocal_225, "CMN_FLEAVE", 16);
-	StringCopy(&cLocal_228, "CMN_MLEAVE", 16);
-	StringCopy(&Local_231, "LOSE_WANTED", 16);
+	StringCopy(&cLocal_225, "CMN_FLEAVE" /* GXT: ~s~Return to ~b~Franklin.~s~ */, 16);
+	StringCopy(&cLocal_228, "CMN_MLEAVE" /* GXT: ~s~Return to ~b~Michael.~s~ */, 16);
+	StringCopy(&Local_231, "LOSE_WANTED" /* GXT: Lose the Cops. */, 16);
 	StringCopy(&Local_606, "", 24);
 	StringCopy(&Local_607, "", 24);
 	fLocal_626 = 0.65f;
@@ -1018,19 +1018,19 @@ void func_4(var uParam0)//Position - 0x577
 			break;
 		
 		case 3:
-			func_5("CMN_MDIED");
+			func_5("CMN_MDIED" /* GXT: ~s~Michael died. */);
 			break;
 		
 		case 4:
-			func_5("CMN_MLEFT");
+			func_5("CMN_MLEFT" /* GXT: ~s~Michael was left behind. */);
 			break;
 		
 		case 5:
-			func_5("CMN_FDIED");
+			func_5("CMN_FDIED" /* GXT: ~s~Franklin died. */);
 			break;
 		
 		case 6:
-			func_5("CMN_FLEFT");
+			func_5("CMN_FLEFT" /* GXT: ~s~Franklin was left behind. */);
 			break;
 		
 		case 7:
@@ -1611,15 +1611,15 @@ void func_12()//Position - 0x1316
 			switch (func_13())
 			{
 				case 0:
-					StringCopy(&Global_78551, "CMN_MARRE", 16);
+					StringCopy(&Global_78551, "CMN_MARRE" /* GXT: ~s~Michael was arrested. */, 16);
 					break;
 				
 				case 1:
-					StringCopy(&Global_78551, "CMN_FARRE", 16);
+					StringCopy(&Global_78551, "CMN_FARRE" /* GXT: ~s~Franklin was arrested. */, 16);
 					break;
 				
 				case 2:
-					StringCopy(&Global_78551, "CMN_TARRE", 16);
+					StringCopy(&Global_78551, "CMN_TARRE" /* GXT: ~s~Trevor was arrested. */, 16);
 					break;
 			}
 			StringCopy(&Global_78555, "", 16);
@@ -1633,15 +1633,15 @@ void func_12()//Position - 0x1316
 			switch (func_13())
 			{
 				case 0:
-					StringCopy(&Global_78551, "CMN_MDIED", 16);
+					StringCopy(&Global_78551, "CMN_MDIED" /* GXT: ~s~Michael died. */, 16);
 					break;
 				
 				case 1:
-					StringCopy(&Global_78551, "CMN_FDIED", 16);
+					StringCopy(&Global_78551, "CMN_FDIED" /* GXT: ~s~Franklin died. */, 16);
 					break;
 				
 				case 2:
-					StringCopy(&Global_78551, "CMN_TDIED", 16);
+					StringCopy(&Global_78551, "CMN_TDIED" /* GXT: ~s~Trevor died. */, 16);
 					break;
 			}
 			StringCopy(&Global_78555, "", 16);
@@ -8466,27 +8466,27 @@ bool func_112(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 						break;
 					
 					case 13:
-						func_116(sParam0, iParam1, iParam3, "TAT_FM_100", "multiplayer_overlays", "000_A", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2936)), 0);
+						func_116(sParam0, iParam1, iParam3, "TAT_FM_100" /* GXT: Crew Emblem Small */, "multiplayer_overlays", "000_A", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2936)), 0);
 						break;
 					
 					case 14:
-						func_116(sParam0, iParam1, iParam3, "TAT_FM_101", "multiplayer_overlays", "000_B", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2937)), 0);
+						func_116(sParam0, iParam1, iParam3, "TAT_FM_101" /* GXT: Crew Emblem Large */, "multiplayer_overlays", "000_B", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2937)), 0);
 						break;
 					
 					case 15:
-						func_116(sParam0, iParam1, iParam3, "TAT_FMM_CLB", "multiplayer_overlays", "000_C", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2938)), 2);
+						func_116(sParam0, iParam1, iParam3, "TAT_FMM_CLB" /* GXT: Crew Emblem Back */, "multiplayer_overlays", "000_C", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2938)), 2);
 						break;
 					
 					case 16:
-						func_116(sParam0, iParam1, iParam3, "TAT_FM_100", "multiplayer_overlays", "000_D", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2939)), 0);
+						func_116(sParam0, iParam1, iParam3, "TAT_FM_100" /* GXT: Crew Emblem Small */, "multiplayer_overlays", "000_D", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2939)), 0);
 						break;
 					
 					case 71:
-						func_116(sParam0, iParam1, iParam3, "TAT_FM_101", "multiplayer_overlays", "000_E", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2939)), 0);
+						func_116(sParam0, iParam1, iParam3, "TAT_FM_101" /* GXT: Crew Emblem Large */, "multiplayer_overlays", "000_E", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2939)), 0);
 						break;
 					
 					case 72:
-						func_116(sParam0, iParam1, iParam3, "TAT_FMM_CLB", "multiplayer_overlays", "000_F", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2939)), 0);
+						func_116(sParam0, iParam1, iParam3, "TAT_FMM_CLB" /* GXT: Crew Emblem Back */, "multiplayer_overlays", "000_F", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2939)), 0);
 						break;
 				}
 			}
@@ -8687,19 +8687,19 @@ bool func_112(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 						break;
 					
 					case 13:
-						func_116(sParam0, iParam1, iParam3, "TAT_FM_100", "multiplayer_overlays", "000_A", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2936)), 0);
+						func_116(sParam0, iParam1, iParam3, "TAT_FM_100" /* GXT: Crew Emblem Small */, "multiplayer_overlays", "000_A", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2936)), 0);
 						break;
 					
 					case 14:
-						func_116(sParam0, iParam1, iParam3, "TAT_FM_100", "multiplayer_overlays", "000_B", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2937)), 0);
+						func_116(sParam0, iParam1, iParam3, "TAT_FM_100" /* GXT: Crew Emblem Small */, "multiplayer_overlays", "000_B", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2937)), 0);
 						break;
 					
 					case 15:
-						func_116(sParam0, iParam1, iParam3, "TAT_FM_101", "multiplayer_overlays", "000_C", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2938)), 2);
+						func_116(sParam0, iParam1, iParam3, "TAT_FM_101" /* GXT: Crew Emblem Large */, "multiplayer_overlays", "000_C", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2938)), 2);
 						break;
 					
 					case 16:
-						func_116(sParam0, iParam1, iParam3, "TAT_FM_101", "multiplayer_overlays", "000_D", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2939)), 0);
+						func_116(sParam0, iParam1, iParam3, "TAT_FM_101" /* GXT: Crew Emblem Large */, "multiplayer_overlays", "000_D", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2939)), 0);
 						break;
 					}
 			}
@@ -13345,19 +13345,19 @@ void func_167()//Position - 0x135EF
 		}
 		if (iVar1 == 0)
 		{
-			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iVar0, "BLIP_MICHAEL");
+			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iVar0, "BLIP_MICHAEL" /* GXT: Michael */);
 		}
 		else if (iVar1 == 1)
 		{
-			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iVar0, "BLIP_FRANKLIN");
+			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iVar0, "BLIP_FRANKLIN" /* GXT: Franklin */);
 		}
 		else if (iVar1 == 2)
 		{
-			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iVar0, "BLIP_TREV");
+			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iVar0, "BLIP_TREV" /* GXT: Trevor */);
 		}
 		else
 		{
-			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iVar0, "BLIP_PLAYER");
+			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iVar0, "BLIP_PLAYER" /* GXT: Player */);
 		}
 	}
 }
@@ -15865,7 +15865,7 @@ int func_216(int iParam0)//Position - 0x15DE8
 						{
 							if (!PLAYER::IS_PLAYER_WANTED_LEVEL_GREATER(PLAYER::PLAYER_ID(), 0))
 							{
-								StringCopy(&Local_231, "LOSE_WANTED", 16);
+								StringCopy(&Local_231, "LOSE_WANTED" /* GXT: Lose the Cops. */, 16);
 								iLocal_640 = 0;
 							}
 						}
@@ -16636,7 +16636,7 @@ int func_236(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3,
 			{
 				func_253(sParam16);
 				func_253(sParam19);
-				func_253("MORE_SEATS");
+				func_253("MORE_SEATS" /* GXT: A vehicle with more seats is needed. */);
 				if (bParam18 && PLAYER::IS_PLAYER_WANTED_LEVEL_GREATER(PLAYER::PLAYER_ID(), 0))
 				{
 					if (HUD::DOES_BLIP_EXIST(iParam0->f_5))
@@ -16652,7 +16652,7 @@ int func_236(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3,
 					{
 						if (bParam22)
 						{
-							func_248(iParam0, "LOSE_WANTED", 0);
+							func_248(iParam0, "LOSE_WANTED" /* GXT: Lose the Cops. */, 0);
 							if (!PED::IS_PED_INJURED(iParam0->f_17[0]))
 							{
 								func_246(iParam0->f_17[0], "VEHICLE_POLICE_PURSUIT", 3);
@@ -16666,7 +16666,7 @@ int func_236(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3,
 				{
 					if (BitTest(iParam0->f_13, 0))
 					{
-						func_253("LOSE_WANTED");
+						func_253("LOSE_WANTED" /* GXT: Lose the Cops. */);
 						MISC::CLEAR_BIT(&(iParam0->f_13), 0);
 						MISC::SET_BIT(&(iParam0->f_13), 1);
 					}
@@ -16787,8 +16787,8 @@ int func_236(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3,
 								func_253(sParam13);
 								func_253(sParam14);
 								func_253(sParam15);
-								func_253("LOSE_WANTED");
-								func_253("MORE_SEATS");
+								func_253("LOSE_WANTED" /* GXT: Lose the Cops. */);
+								func_253("MORE_SEATS" /* GXT: A vehicle with more seats is needed. */);
 								func_253(sParam19);
 								func_228(iParam0, 1, 0);
 								return 1;
@@ -16813,7 +16813,7 @@ int func_236(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3,
 					{
 						if (bParam22)
 						{
-							func_248(iParam0, "LOSE_WANTED", 0);
+							func_248(iParam0, "LOSE_WANTED" /* GXT: Lose the Cops. */, 0);
 							if (!PED::IS_PED_INJURED(iParam0->f_17[0]))
 							{
 								func_246(iParam0->f_17[0], "VEHICLE_POLICE_PURSUIT", 3);
@@ -16827,7 +16827,7 @@ int func_236(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3,
 				{
 					if (BitTest(iParam0->f_13, 0))
 					{
-						func_253("LOSE_WANTED");
+						func_253("LOSE_WANTED" /* GXT: Lose the Cops. */);
 						MISC::CLEAR_BIT(&(iParam0->f_13), 0);
 						MISC::SET_BIT(&(iParam0->f_13), 1);
 					}
@@ -16927,7 +16927,7 @@ int func_236(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3,
 									{
 										func_246(iParam0->f_17[iVar7], "NEED_A_BIGGER_VEHICLE", 3);
 									}
-									func_248(iParam0, "MORE_SEATS", 0);
+									func_248(iParam0, "MORE_SEATS" /* GXT: A vehicle with more seats is needed. */, 0);
 									MISC::SET_BIT(&(iParam0->f_13), 13);
 								}
 							}
@@ -16986,7 +16986,7 @@ int func_236(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3,
 		func_253(sParam16);
 		func_253(sParam19);
 		func_253(sParam16);
-		func_253("LOSE_WANTED");
+		func_253("LOSE_WANTED" /* GXT: Lose the Cops. */);
 		if (HUD::DOES_BLIP_EXIST(iParam0->f_5))
 		{
 			HUD::REMOVE_BLIP(&(iParam0->f_5));
@@ -17658,7 +17658,7 @@ int func_254(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 						{
 							func_246(uParam0->f_17[iVar18], "NEED_A_BIGGER_VEHICLE", 3);
 						}
-						func_248(uParam0, "MORE_SEATS", 0);
+						func_248(uParam0, "MORE_SEATS" /* GXT: A vehicle with more seats is needed. */, 0);
 						MISC::SET_BIT(&(uParam0->f_13), 13);
 					}
 				}
@@ -17669,7 +17669,7 @@ int func_254(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 		{
 			bVar9 = false;
 			MISC::CLEAR_BIT(&(uParam0->f_13), 13);
-			func_253("MORE_SEATS");
+			func_253("MORE_SEATS" /* GXT: A vehicle with more seats is needed. */);
 		}
 		if (!ENTITY::DOES_ENTITY_EXIST(iParam10))
 		{
@@ -17682,7 +17682,7 @@ int func_254(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 						iVar10 = PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false);
 						if (func_265(iVar10, uParam0))
 						{
-							func_248(uParam0, "CMN_VEHSUIT", 0);
+							func_248(uParam0, "CMN_VEHSUIT" /* GXT: ~s~Vehicle is not suitable. */, 0);
 							MISC::SET_BIT(&(uParam0->f_13), 31);
 						}
 					}
@@ -17690,7 +17690,7 @@ int func_254(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 				else if (!PED::IS_PED_SITTING_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID()))
 				{
 					MISC::CLEAR_BIT(&(uParam0->f_13), 31);
-					func_253("CMN_VEHSUIT");
+					func_253("CMN_VEHSUIT" /* GXT: ~s~Vehicle is not suitable. */);
 				}
 			}
 		}
@@ -18100,7 +18100,7 @@ int func_254(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 				}
 				iVar0++;
 			}
-			func_253("MORE_SEATS");
+			func_253("MORE_SEATS" /* GXT: A vehicle with more seats is needed. */);
 			return 1;
 		}
 	}
@@ -22173,7 +22173,7 @@ void func_333(var uParam0, var uParam1)//Position - 0x1E818
 					uParam1->f_1 = func_245(ENTITY::GET_ENTITY_COORDS(*uParam1, true), 0);
 					HUD::SET_BLIP_COLOUR(uParam1->f_1, 1);
 					HUD::SET_BLIP_PRIORITY(uParam1->f_1, 9);
-					HUD::SET_BLIP_NAME_FROM_TEXT_FILE(uParam1->f_1, "BLIP_VEH");
+					HUD::SET_BLIP_NAME_FROM_TEXT_FILE(uParam1->f_1, "BLIP_VEH" /* GXT: Vehicle */);
 				}
 			}
 			else
@@ -22982,1232 +22982,1232 @@ bool func_343(int iParam0, char* sParam1, var uParam2, var uParam3, var uParam4)
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(sParam1, "BR BLACK_STEEL", 16);
+			StringCopy(sParam1, "BR BLACK_STEEL" /* GXT: Brushed Black Steel */, 16);
 			*uParam2 = 3;
 			*uParam3 = 118;
 			*uParam4 = 3;
 			break;
 		
 		case 1:
-			StringCopy(sParam1, "BLACK_GRAPHITE", 16);
+			StringCopy(sParam1, "BLACK_GRAPHITE" /* GXT: Carbon Black */, 16);
 			*uParam2 = 0;
 			*uParam3 = 147;
 			*uParam4 = 4;
 			break;
 		
 		case 2:
-			StringCopy(sParam1, "CHOCOLATE_BROWN", 16);
+			StringCopy(sParam1, "CHOCOLATE_BROWN" /* GXT: Chocolate Brown */, 16);
 			*uParam2 = 1;
 			*uParam3 = 96;
 			*uParam4 = 0;
 			break;
 		
 		case 3:
-			StringCopy(sParam1, "PURPLE", 16);
+			StringCopy(sParam1, "PURPLE" /* GXT: Schafter Purple */, 16);
 			*uParam2 = 0;
 			*uParam3 = 71;
 			*uParam4 = 145;
 			break;
 		
 		case 4:
-			StringCopy(sParam1, "HOT PINK", 16);
+			StringCopy(sParam1, "HOT PINK" /* GXT: Hot Pink */, 16);
 			*uParam2 = 0;
 			*uParam3 = 135;
 			*uParam4 = 135;
 			break;
 		
 		case 5:
-			StringCopy(sParam1, "FORMULA_RED", 16);
+			StringCopy(sParam1, "FORMULA_RED" /* GXT: Formula Red */, 16);
 			*uParam2 = 0;
 			*uParam3 = 29;
 			*uParam4 = 28;
 			break;
 		
 		case 6:
-			StringCopy(sParam1, "BLUE", 16);
+			StringCopy(sParam1, "BLUE" /* GXT: Blue */, 16);
 			*uParam2 = 0;
 			*uParam3 = 64;
 			*uParam4 = 68;
 			break;
 		
 		case 7:
-			StringCopy(sParam1, "ULTRA_BLUE", 16);
+			StringCopy(sParam1, "ULTRA_BLUE" /* GXT: Ultra Blue */, 16);
 			*uParam2 = 1;
 			*uParam3 = 70;
 			*uParam4 = 0;
 			break;
 		
 		case 8:
-			StringCopy(sParam1, "RACING_GREEN", 16);
+			StringCopy(sParam1, "RACING_GREEN" /* GXT: Racing Green */, 16);
 			*uParam2 = 1;
 			*uParam3 = 50;
 			*uParam4 = 0;
 			break;
 		
 		case 9:
-			StringCopy(sParam1, "LIME_GREEN", 16);
+			StringCopy(sParam1, "LIME_GREEN" /* GXT: Lime Green */, 16);
 			*uParam2 = 2;
 			*uParam3 = 55;
 			*uParam4 = 0;
 			break;
 		
 		case 10:
-			StringCopy(sParam1, "RACE_YELLOW", 16);
+			StringCopy(sParam1, "RACE_YELLOW" /* GXT: Race Yellow */, 16);
 			*uParam2 = 1;
 			*uParam3 = 89;
 			*uParam4 = 0;
 			break;
 		
 		case 11:
-			StringCopy(sParam1, "ORANGE", 16);
+			StringCopy(sParam1, "ORANGE" /* GXT: Orange */, 16);
 			*uParam2 = 1;
 			*uParam3 = 38;
 			*uParam4 = 0;
 			break;
 		
 		case 12:
-			StringCopy(sParam1, "GOLD", 16);
+			StringCopy(sParam1, "GOLD" /* GXT: Gold */, 16);
 			*uParam2 = 0;
 			*uParam3 = 37;
 			*uParam4 = 106;
 			break;
 		
 		case 13:
-			StringCopy(sParam1, "SILVER", 16);
+			StringCopy(sParam1, "SILVER" /* GXT: Silver */, 16);
 			*uParam2 = 0;
 			*uParam3 = 4;
 			*uParam4 = 111;
 			break;
 		
 		case 14:
-			StringCopy(sParam1, "CHROME", 16);
+			StringCopy(sParam1, "CHROME" /* GXT: Chrome */, 16);
 			*uParam2 = 4;
 			*uParam3 = 120;
 			*uParam4 = 0;
 			break;
 		
 		case 15:
-			StringCopy(sParam1, "WHITE", 16);
+			StringCopy(sParam1, "WHITE" /* GXT: Ice White */, 16);
 			*uParam2 = 1;
 			*uParam3 = 111;
 			*uParam4 = 0;
 			break;
 		
 		case 16:
-			StringCopy(sParam1, "BLACK", 16);
+			StringCopy(sParam1, "BLACK" /* GXT: Black */, 16);
 			*uParam2 = 0;
 			*uParam3 = 0;
 			*uParam4 = 10;
 			break;
 		
 		case 17:
-			StringCopy(sParam1, "GRAPHITE", 16);
+			StringCopy(sParam1, "GRAPHITE" /* GXT: Graphite */, 16);
 			*uParam2 = 0;
 			*uParam3 = 1;
 			*uParam4 = 5;
 			break;
 		
 		case 18:
-			StringCopy(sParam1, "ANTHR_BLACK", 16);
+			StringCopy(sParam1, "ANTHR_BLACK" /* GXT: Anthracite Black */, 16);
 			*uParam2 = 0;
 			*uParam3 = 11;
 			*uParam4 = 2;
 			break;
 		
 		case 19:
-			StringCopy(sParam1, "BLACK_STEEL", 16);
+			StringCopy(sParam1, "BLACK_STEEL" /* GXT: Black Steel */, 16);
 			*uParam2 = 0;
 			*uParam3 = 2;
 			*uParam4 = 5;
 			break;
 		
 		case 20:
-			StringCopy(sParam1, "DARK_SILVER", 16);
+			StringCopy(sParam1, "DARK_SILVER" /* GXT: Dark Steel */, 16);
 			*uParam2 = 0;
 			*uParam3 = 3;
 			*uParam4 = 6;
 			break;
 		
 		case 21:
-			StringCopy(sParam1, "BLUE_SILVER", 16);
+			StringCopy(sParam1, "BLUE_SILVER" /* GXT: Bluish Silver */, 16);
 			*uParam2 = 0;
 			*uParam3 = 5;
 			*uParam4 = 111;
 			break;
 		
 		case 22:
-			StringCopy(sParam1, "ROLLED_STEEL", 16);
+			StringCopy(sParam1, "ROLLED_STEEL" /* GXT: Rolled Steel */, 16);
 			*uParam2 = 0;
 			*uParam3 = 6;
 			*uParam4 = 4;
 			break;
 		
 		case 23:
-			StringCopy(sParam1, "SHADOW_SILVER", 16);
+			StringCopy(sParam1, "SHADOW_SILVER" /* GXT: Shadow Silver */, 16);
 			*uParam2 = 0;
 			*uParam3 = 7;
 			*uParam4 = 5;
 			break;
 		
 		case 24:
-			StringCopy(sParam1, "STONE_SILVER", 16);
+			StringCopy(sParam1, "STONE_SILVER" /* GXT: Stone Silver */, 16);
 			*uParam2 = 0;
 			*uParam3 = 8;
 			*uParam4 = 5;
 			break;
 		
 		case 25:
-			StringCopy(sParam1, "MIDNIGHT_SILVER", 16);
+			StringCopy(sParam1, "MIDNIGHT_SILVER" /* GXT: Midnight Silver */, 16);
 			*uParam2 = 0;
 			*uParam3 = 9;
 			*uParam4 = 7;
 			break;
 		
 		case 26:
-			StringCopy(sParam1, "CAST_IRON_SIL", 16);
+			StringCopy(sParam1, "CAST_IRON_SIL" /* GXT: Cast Iron Silver */, 16);
 			*uParam2 = 0;
 			*uParam3 = 10;
 			*uParam4 = 7;
 			break;
 		
 		case 27:
-			StringCopy(sParam1, "RED", 16);
+			StringCopy(sParam1, "RED" /* GXT: Red */, 16);
 			*uParam2 = 0;
 			*uParam3 = 27;
 			*uParam4 = 36;
 			break;
 		
 		case 28:
-			StringCopy(sParam1, "TORINO_RED", 16);
+			StringCopy(sParam1, "TORINO_RED" /* GXT: Torino Red */, 16);
 			*uParam2 = 0;
 			*uParam3 = 28;
 			*uParam4 = 28;
 			break;
 		
 		case 29:
-			StringCopy(sParam1, "LAVA_RED", 16);
+			StringCopy(sParam1, "LAVA_RED" /* GXT: Lava Red */, 16);
 			*uParam2 = 0;
 			*uParam3 = 150;
 			*uParam4 = 42;
 			break;
 		
 		case 30:
-			StringCopy(sParam1, "BLAZE_RED", 16);
+			StringCopy(sParam1, "BLAZE_RED" /* GXT: Blaze Red */, 16);
 			*uParam2 = 0;
 			*uParam3 = 30;
 			*uParam4 = 36;
 			break;
 		
 		case 31:
-			StringCopy(sParam1, "GRACE_RED", 16);
+			StringCopy(sParam1, "GRACE_RED" /* GXT: Grace Red */, 16);
 			*uParam2 = 0;
 			*uParam3 = 31;
 			*uParam4 = 27;
 			break;
 		
 		case 32:
-			StringCopy(sParam1, "GARNET_RED", 16);
+			StringCopy(sParam1, "GARNET_RED" /* GXT: Garnet Red */, 16);
 			*uParam2 = 0;
 			*uParam3 = 32;
 			*uParam4 = 25;
 			break;
 		
 		case 33:
-			StringCopy(sParam1, "SUNSET_RED", 16);
+			StringCopy(sParam1, "SUNSET_RED" /* GXT: Sunset Red */, 16);
 			*uParam2 = 0;
 			*uParam3 = 33;
 			*uParam4 = 47;
 			break;
 		
 		case 34:
-			StringCopy(sParam1, "CABERNET_RED", 16);
+			StringCopy(sParam1, "CABERNET_RED" /* GXT: Cabernet Red */, 16);
 			*uParam2 = 0;
 			*uParam3 = 34;
 			*uParam4 = 47;
 			break;
 		
 		case 35:
-			StringCopy(sParam1, "WINE_RED", 16);
+			StringCopy(sParam1, "WINE_RED" /* GXT: Wine Red */, 16);
 			*uParam2 = 0;
 			*uParam3 = 143;
 			*uParam4 = 31;
 			break;
 		
 		case 36:
-			StringCopy(sParam1, "CANDY_RED", 16);
+			StringCopy(sParam1, "CANDY_RED" /* GXT: Candy Red */, 16);
 			*uParam2 = 0;
 			*uParam3 = 35;
 			*uParam4 = 25;
 			break;
 		
 		case 37:
-			StringCopy(sParam1, "PINK", 16);
+			StringCopy(sParam1, "PINK" /* GXT: Pfister Pink */, 16);
 			*uParam2 = 0;
 			*uParam3 = 137;
 			*uParam4 = 3;
 			break;
 		
 		case 38:
-			StringCopy(sParam1, "SALMON_PINK", 16);
+			StringCopy(sParam1, "SALMON_PINK" /* GXT: Salmon Pink */, 16);
 			*uParam2 = 0;
 			*uParam3 = 136;
 			*uParam4 = 5;
 			break;
 		
 		case 39:
-			StringCopy(sParam1, "SUNRISE_ORANGE", 16);
+			StringCopy(sParam1, "SUNRISE_ORANGE" /* GXT: Sunrise Orange */, 16);
 			*uParam2 = 0;
 			*uParam3 = 36;
 			*uParam4 = 26;
 			break;
 		
 		case 40:
-			StringCopy(sParam1, "ORANGE", 16);
+			StringCopy(sParam1, "ORANGE" /* GXT: Orange */, 16);
 			*uParam2 = 0;
 			*uParam3 = 38;
 			*uParam4 = 37;
 			break;
 		
 		case 41:
-			StringCopy(sParam1, "BRIGHT_ORANGE", 16);
+			StringCopy(sParam1, "BRIGHT_ORANGE" /* GXT: Bright Orange */, 16);
 			*uParam2 = 0;
 			*uParam3 = 138;
 			*uParam4 = 89;
 			break;
 		
 		case 42:
-			StringCopy(sParam1, "BRONZE", 16);
+			StringCopy(sParam1, "BRONZE" /* GXT: Bronze */, 16);
 			*uParam2 = 0;
 			*uParam3 = 90;
 			*uParam4 = 102;
 			break;
 		
 		case 43:
-			StringCopy(sParam1, "YELLOW", 16);
+			StringCopy(sParam1, "YELLOW" /* GXT: Yellow */, 16);
 			*uParam2 = 0;
 			*uParam3 = 88;
 			*uParam4 = 88;
 			break;
 		
 		case 44:
-			StringCopy(sParam1, "RACE_YELLOW", 16);
+			StringCopy(sParam1, "RACE_YELLOW" /* GXT: Race Yellow */, 16);
 			*uParam2 = 0;
 			*uParam3 = 89;
 			*uParam4 = 88;
 			break;
 		
 		case 45:
-			StringCopy(sParam1, "FLUR_YELLOW", 16);
+			StringCopy(sParam1, "FLUR_YELLOW" /* GXT: Dew Yellow */, 16);
 			*uParam2 = 0;
 			*uParam3 = 91;
 			*uParam4 = 91;
 			break;
 		
 		case 46:
-			StringCopy(sParam1, "DARK_GREEN", 16);
+			StringCopy(sParam1, "DARK_GREEN" /* GXT: Dark Green */, 16);
 			*uParam2 = 0;
 			*uParam3 = 49;
 			*uParam4 = 52;
 			break;
 		
 		case 47:
-			StringCopy(sParam1, "RACING_GREEN", 16);
+			StringCopy(sParam1, "RACING_GREEN" /* GXT: Racing Green */, 16);
 			*uParam2 = 0;
 			*uParam3 = 50;
 			*uParam4 = 53;
 			break;
 		
 		case 48:
-			StringCopy(sParam1, "SEA_GREEN", 16);
+			StringCopy(sParam1, "SEA_GREEN" /* GXT: Sea Green */, 16);
 			*uParam2 = 0;
 			*uParam3 = 51;
 			*uParam4 = 66;
 			break;
 		
 		case 49:
-			StringCopy(sParam1, "OLIVE_GREEN", 16);
+			StringCopy(sParam1, "OLIVE_GREEN" /* GXT: Olive Green */, 16);
 			*uParam2 = 0;
 			*uParam3 = 52;
 			*uParam4 = 59;
 			break;
 		
 		case 50:
-			StringCopy(sParam1, "BRIGHT_GREEN", 16);
+			StringCopy(sParam1, "BRIGHT_GREEN" /* GXT: Bright Green */, 16);
 			*uParam2 = 0;
 			*uParam3 = 53;
 			*uParam4 = 59;
 			break;
 		
 		case 51:
-			StringCopy(sParam1, "PETROL_GREEN", 16);
+			StringCopy(sParam1, "PETROL_GREEN" /* GXT: Gasoline Green */, 16);
 			*uParam2 = 0;
 			*uParam3 = 54;
 			*uParam4 = 60;
 			break;
 		
 		case 52:
-			StringCopy(sParam1, "LIME_GREEN", 16);
+			StringCopy(sParam1, "LIME_GREEN" /* GXT: Lime Green */, 16);
 			*uParam2 = 0;
 			*uParam3 = 92;
 			*uParam4 = 92;
 			break;
 		
 		case 53:
-			StringCopy(sParam1, "MIDNIGHT_BLUE", 16);
+			StringCopy(sParam1, "MIDNIGHT_BLUE" /* GXT: Midnight Blue */, 16);
 			*uParam2 = 0;
 			*uParam3 = 141;
 			*uParam4 = 73;
 			break;
 		
 		case 54:
-			StringCopy(sParam1, "GALAXY_BLUE", 16);
+			StringCopy(sParam1, "GALAXY_BLUE" /* GXT: Galaxy Blue */, 16);
 			*uParam2 = 0;
 			*uParam3 = 61;
 			*uParam4 = 63;
 			break;
 		
 		case 55:
-			StringCopy(sParam1, "DARK_BLUE", 16);
+			StringCopy(sParam1, "DARK_BLUE" /* GXT: Dark Blue */, 16);
 			*uParam2 = 0;
 			*uParam3 = 62;
 			*uParam4 = 68;
 			break;
 		
 		case 56:
-			StringCopy(sParam1, "SAXON_BLUE", 16);
+			StringCopy(sParam1, "SAXON_BLUE" /* GXT: Saxon Blue */, 16);
 			*uParam2 = 0;
 			*uParam3 = 63;
 			*uParam4 = 87;
 			break;
 		
 		case 57:
-			StringCopy(sParam1, "MARINER_BLUE", 16);
+			StringCopy(sParam1, "MARINER_BLUE" /* GXT: Mariner Blue */, 16);
 			*uParam2 = 0;
 			*uParam3 = 65;
 			*uParam4 = 87;
 			break;
 		
 		case 58:
-			StringCopy(sParam1, "HARBOR_BLUE", 16);
+			StringCopy(sParam1, "HARBOR_BLUE" /* GXT: Harbor Blue */, 16);
 			*uParam2 = 0;
 			*uParam3 = 66;
 			*uParam4 = 60;
 			break;
 		
 		case 59:
-			StringCopy(sParam1, "DIAMOND_BLUE", 16);
+			StringCopy(sParam1, "DIAMOND_BLUE" /* GXT: Diamond Blue */, 16);
 			*uParam2 = 0;
 			*uParam3 = 67;
 			*uParam4 = 67;
 			break;
 		
 		case 60:
-			StringCopy(sParam1, "SURF_BLUE", 16);
+			StringCopy(sParam1, "SURF_BLUE" /* GXT: Surf Blue */, 16);
 			*uParam2 = 0;
 			*uParam3 = 68;
 			*uParam4 = 68;
 			break;
 		
 		case 61:
-			StringCopy(sParam1, "NAUTICAL_BLUE", 16);
+			StringCopy(sParam1, "NAUTICAL_BLUE" /* GXT: Nautical Blue */, 16);
 			*uParam2 = 0;
 			*uParam3 = 69;
 			*uParam4 = 74;
 			break;
 		
 		case 62:
-			StringCopy(sParam1, "RACING_BLUE", 16);
+			StringCopy(sParam1, "RACING_BLUE" /* GXT: Racing Blue */, 16);
 			*uParam2 = 0;
 			*uParam3 = 73;
 			*uParam4 = 73;
 			break;
 		
 		case 63:
-			StringCopy(sParam1, "ULTRA_BLUE", 16);
+			StringCopy(sParam1, "ULTRA_BLUE" /* GXT: Ultra Blue */, 16);
 			*uParam2 = 0;
 			*uParam3 = 70;
 			*uParam4 = 70;
 			break;
 		
 		case 64:
-			StringCopy(sParam1, "LIGHT_BLUE", 16);
+			StringCopy(sParam1, "LIGHT_BLUE" /* GXT: Light Blue */, 16);
 			*uParam2 = 0;
 			*uParam3 = 74;
 			*uParam4 = 74;
 			break;
 		
 		case 65:
-			StringCopy(sParam1, "CHOCOLATE_BROWN", 16);
+			StringCopy(sParam1, "CHOCOLATE_BROWN" /* GXT: Chocolate Brown */, 16);
 			*uParam2 = 0;
 			*uParam3 = 96;
 			*uParam4 = 95;
 			break;
 		
 		case 66:
-			StringCopy(sParam1, "BISON_BROWN", 16);
+			StringCopy(sParam1, "BISON_BROWN" /* GXT: Bison Brown */, 16);
 			*uParam2 = 0;
 			*uParam3 = 101;
 			*uParam4 = 95;
 			break;
 		
 		case 67:
-			StringCopy(sParam1, "CREEK_BROWN", 16);
+			StringCopy(sParam1, "CREEK_BROWN" /* GXT: Creek Brown */, 16);
 			*uParam2 = 0;
 			*uParam3 = 95;
 			*uParam4 = 97;
 			break;
 		
 		case 68:
-			StringCopy(sParam1, "UMBER_BROWN", 16);
+			StringCopy(sParam1, "UMBER_BROWN" /* GXT: Feltzer Brown */, 16);
 			*uParam2 = 0;
 			*uParam3 = 94;
 			*uParam4 = 104;
 			break;
 		
 		case 69:
-			StringCopy(sParam1, "MAPLE_BROWN", 16);
+			StringCopy(sParam1, "MAPLE_BROWN" /* GXT: Maple Brown */, 16);
 			*uParam2 = 0;
 			*uParam3 = 97;
 			*uParam4 = 98;
 			break;
 		
 		case 70:
-			StringCopy(sParam1, "BEECHWOOD_BROWN", 16);
+			StringCopy(sParam1, "BEECHWOOD_BROWN" /* GXT: Beechwood Brown */, 16);
 			*uParam2 = 0;
 			*uParam3 = 103;
 			*uParam4 = 104;
 			break;
 		
 		case 71:
-			StringCopy(sParam1, "SIENNA_BROWN", 16);
+			StringCopy(sParam1, "SIENNA_BROWN" /* GXT: Sienna Brown */, 16);
 			*uParam2 = 0;
 			*uParam3 = 104;
 			*uParam4 = 104;
 			break;
 		
 		case 72:
-			StringCopy(sParam1, "SADDLE_BROWN", 16);
+			StringCopy(sParam1, "SADDLE_BROWN" /* GXT: Saddle Brown */, 16);
 			*uParam2 = 0;
 			*uParam3 = 98;
 			*uParam4 = 95;
 			break;
 		
 		case 73:
-			StringCopy(sParam1, "MOSS_BROWN", 16);
+			StringCopy(sParam1, "MOSS_BROWN" /* GXT: Moss Brown */, 16);
 			*uParam2 = 0;
 			*uParam3 = 100;
 			*uParam4 = 100;
 			break;
 		
 		case 74:
-			StringCopy(sParam1, "WOODBEECH_BROWN", 16);
+			StringCopy(sParam1, "WOODBEECH_BROWN" /* GXT: Woodbeech Brown */, 16);
 			*uParam2 = 0;
 			*uParam3 = 102;
 			*uParam4 = 105;
 			break;
 		
 		case 75:
-			StringCopy(sParam1, "STRAW_BROWN", 16);
+			StringCopy(sParam1, "STRAW_BROWN" /* GXT: Straw Brown */, 16);
 			*uParam2 = 0;
 			*uParam3 = 99;
 			*uParam4 = 106;
 			break;
 		
 		case 76:
-			StringCopy(sParam1, "SANDY_BROWN", 16);
+			StringCopy(sParam1, "SANDY_BROWN" /* GXT: Sandy Brown */, 16);
 			*uParam2 = 0;
 			*uParam3 = 105;
 			*uParam4 = 105;
 			break;
 		
 		case 77:
-			StringCopy(sParam1, "BLEECHED_BROWN", 16);
+			StringCopy(sParam1, "BLEECHED_BROWN" /* GXT: Bleached Brown */, 16);
 			*uParam2 = 0;
 			*uParam3 = 106;
 			*uParam4 = 106;
 			break;
 		
 		case 78:
-			StringCopy(sParam1, "SPIN_PURPLE", 16);
+			StringCopy(sParam1, "SPIN_PURPLE" /* GXT: Spinnaker Purple */, 16);
 			*uParam2 = 0;
 			*uParam3 = 72;
 			*uParam4 = 64;
 			break;
 		
 		case 79:
-			StringCopy(sParam1, "MIGHT_PURPLE", 16);
+			StringCopy(sParam1, "MIGHT_PURPLE" /* GXT: Midnight Purple */, 16);
 			*uParam2 = 0;
 			*uParam3 = 146;
 			*uParam4 = 145;
 			break;
 		
 		case 80:
-			StringCopy(sParam1, "BRIGHT_PURPLE", 16);
+			StringCopy(sParam1, "BRIGHT_PURPLE" /* GXT: Bright Purple */, 16);
 			*uParam2 = 0;
 			*uParam3 = 145;
 			*uParam4 = 74;
 			break;
 		
 		case 81:
-			StringCopy(sParam1, "CREAM", 16);
+			StringCopy(sParam1, "CREAM" /* GXT: Cream */, 16);
 			*uParam2 = 0;
 			*uParam3 = 107;
 			*uParam4 = 107;
 			break;
 		
 		case 82:
-			StringCopy(sParam1, "WHITE", 16);
+			StringCopy(sParam1, "WHITE" /* GXT: Ice White */, 16);
 			*uParam2 = 0;
 			*uParam3 = 111;
 			*uParam4 = 0;
 			break;
 		
 		case 83:
-			StringCopy(sParam1, "FROST_WHITE", 16);
+			StringCopy(sParam1, "FROST_WHITE" /* GXT: Frost White */, 16);
 			*uParam2 = 0;
 			*uParam3 = 112;
 			*uParam4 = 0;
 			break;
 		
 		case 84:
-			StringCopy(sParam1, "BLACK", 16);
+			StringCopy(sParam1, "BLACK" /* GXT: Black */, 16);
 			*uParam2 = 1;
 			*uParam3 = 0;
 			*uParam4 = 0;
 			break;
 		
 		case 85:
-			StringCopy(sParam1, "BLACK_GRAPHITE", 16);
+			StringCopy(sParam1, "BLACK_GRAPHITE" /* GXT: Carbon Black */, 16);
 			*uParam2 = 1;
 			*uParam3 = 147;
 			*uParam4 = 0;
 			break;
 		
 		case 86:
-			StringCopy(sParam1, "GRAPHITE", 16);
+			StringCopy(sParam1, "GRAPHITE" /* GXT: Graphite */, 16);
 			*uParam2 = 1;
 			*uParam3 = 1;
 			*uParam4 = 0;
 			break;
 		
 		case 87:
-			StringCopy(sParam1, "ANTHR_BLACK", 16);
+			StringCopy(sParam1, "ANTHR_BLACK" /* GXT: Anthracite Black */, 16);
 			*uParam2 = 1;
 			*uParam3 = 11;
 			*uParam4 = 0;
 			break;
 		
 		case 88:
-			StringCopy(sParam1, "BLACK_STEEL", 16);
+			StringCopy(sParam1, "BLACK_STEEL" /* GXT: Black Steel */, 16);
 			*uParam2 = 1;
 			*uParam3 = 2;
 			*uParam4 = 0;
 			break;
 		
 		case 89:
-			StringCopy(sParam1, "DARK_SILVER", 16);
+			StringCopy(sParam1, "DARK_SILVER" /* GXT: Dark Steel */, 16);
 			*uParam2 = 1;
 			*uParam3 = 3;
 			*uParam4 = 2;
 			break;
 		
 		case 90:
-			StringCopy(sParam1, "SILVER", 16);
+			StringCopy(sParam1, "SILVER" /* GXT: Silver */, 16);
 			*uParam2 = 1;
 			*uParam3 = 4;
 			*uParam4 = 4;
 			break;
 		
 		case 91:
-			StringCopy(sParam1, "BLUE_SILVER", 16);
+			StringCopy(sParam1, "BLUE_SILVER" /* GXT: Bluish Silver */, 16);
 			*uParam2 = 1;
 			*uParam3 = 5;
 			*uParam4 = 5;
 			break;
 		
 		case 92:
-			StringCopy(sParam1, "ROLLED_STEEL", 16);
+			StringCopy(sParam1, "ROLLED_STEEL" /* GXT: Rolled Steel */, 16);
 			*uParam2 = 1;
 			*uParam3 = 6;
 			*uParam4 = 0;
 			break;
 		
 		case 93:
-			StringCopy(sParam1, "SHADOW_SILVER", 16);
+			StringCopy(sParam1, "SHADOW_SILVER" /* GXT: Shadow Silver */, 16);
 			*uParam2 = 1;
 			*uParam3 = 7;
 			*uParam4 = 0;
 			break;
 		
 		case 94:
-			StringCopy(sParam1, "STONE_SILVER", 16);
+			StringCopy(sParam1, "STONE_SILVER" /* GXT: Stone Silver */, 16);
 			*uParam2 = 1;
 			*uParam3 = 8;
 			*uParam4 = 0;
 			break;
 		
 		case 95:
-			StringCopy(sParam1, "MIDNIGHT_SILVER", 16);
+			StringCopy(sParam1, "MIDNIGHT_SILVER" /* GXT: Midnight Silver */, 16);
 			*uParam2 = 1;
 			*uParam3 = 9;
 			*uParam4 = 0;
 			break;
 		
 		case 96:
-			StringCopy(sParam1, "CAST_IRON_SIL", 16);
+			StringCopy(sParam1, "CAST_IRON_SIL" /* GXT: Cast Iron Silver */, 16);
 			*uParam2 = 1;
 			*uParam3 = 10;
 			*uParam4 = 0;
 			break;
 		
 		case 97:
-			StringCopy(sParam1, "RED", 16);
+			StringCopy(sParam1, "RED" /* GXT: Red */, 16);
 			*uParam2 = 1;
 			*uParam3 = 27;
 			*uParam4 = 0;
 			break;
 		
 		case 98:
-			StringCopy(sParam1, "TORINO_RED", 16);
+			StringCopy(sParam1, "TORINO_RED" /* GXT: Torino Red */, 16);
 			*uParam2 = 1;
 			*uParam3 = 28;
 			*uParam4 = 0;
 			break;
 		
 		case 99:
-			StringCopy(sParam1, "FORMULA_RED", 16);
+			StringCopy(sParam1, "FORMULA_RED" /* GXT: Formula Red */, 16);
 			*uParam2 = 1;
 			*uParam3 = 29;
 			*uParam4 = 0;
 			break;
 		
 		case 100:
-			StringCopy(sParam1, "LAVA_RED", 16);
+			StringCopy(sParam1, "LAVA_RED" /* GXT: Lava Red */, 16);
 			*uParam2 = 1;
 			*uParam3 = 150;
 			*uParam4 = 0;
 			break;
 		
 		case 101:
-			StringCopy(sParam1, "BLAZE_RED", 16);
+			StringCopy(sParam1, "BLAZE_RED" /* GXT: Blaze Red */, 16);
 			*uParam2 = 1;
 			*uParam3 = 30;
 			*uParam4 = 0;
 			break;
 		
 		case 102:
-			StringCopy(sParam1, "GRACE_RED", 16);
+			StringCopy(sParam1, "GRACE_RED" /* GXT: Grace Red */, 16);
 			*uParam2 = 1;
 			*uParam3 = 31;
 			*uParam4 = 0;
 			break;
 		
 		case 103:
-			StringCopy(sParam1, "GARNET_RED", 16);
+			StringCopy(sParam1, "GARNET_RED" /* GXT: Garnet Red */, 16);
 			*uParam2 = 1;
 			*uParam3 = 32;
 			*uParam4 = 0;
 			break;
 		
 		case 104:
-			StringCopy(sParam1, "SUNSET_RED", 16);
+			StringCopy(sParam1, "SUNSET_RED" /* GXT: Sunset Red */, 16);
 			*uParam2 = 1;
 			*uParam3 = 33;
 			*uParam4 = 0;
 			break;
 		
 		case 105:
-			StringCopy(sParam1, "CABERNET_RED", 16);
+			StringCopy(sParam1, "CABERNET_RED" /* GXT: Cabernet Red */, 16);
 			*uParam2 = 1;
 			*uParam3 = 34;
 			*uParam4 = 0;
 			break;
 		
 		case 106:
-			StringCopy(sParam1, "WINE_RED", 16);
+			StringCopy(sParam1, "WINE_RED" /* GXT: Wine Red */, 16);
 			*uParam2 = 1;
 			*uParam3 = 143;
 			*uParam4 = 0;
 			break;
 		
 		case 107:
-			StringCopy(sParam1, "CANDY_RED", 16);
+			StringCopy(sParam1, "CANDY_RED" /* GXT: Candy Red */, 16);
 			*uParam2 = 1;
 			*uParam3 = 35;
 			*uParam4 = 0;
 			break;
 		
 		case 108:
-			StringCopy(sParam1, "HOT PINK", 16);
+			StringCopy(sParam1, "HOT PINK" /* GXT: Hot Pink */, 16);
 			*uParam2 = 1;
 			*uParam3 = 135;
 			*uParam4 = 0;
 			break;
 		
 		case 109:
-			StringCopy(sParam1, "PINK", 16);
+			StringCopy(sParam1, "PINK" /* GXT: Pfister Pink */, 16);
 			*uParam2 = 1;
 			*uParam3 = 137;
 			*uParam4 = 0;
 			break;
 		
 		case 110:
-			StringCopy(sParam1, "SALMON_PINK", 16);
+			StringCopy(sParam1, "SALMON_PINK" /* GXT: Salmon Pink */, 16);
 			*uParam2 = 1;
 			*uParam3 = 136;
 			*uParam4 = 0;
 			break;
 		
 		case 111:
-			StringCopy(sParam1, "SUNRISE_ORANGE", 16);
+			StringCopy(sParam1, "SUNRISE_ORANGE" /* GXT: Sunrise Orange */, 16);
 			*uParam2 = 1;
 			*uParam3 = 36;
 			*uParam4 = 0;
 			break;
 		
 		case 112:
-			StringCopy(sParam1, "BRIGHT_ORANGE", 16);
+			StringCopy(sParam1, "BRIGHT_ORANGE" /* GXT: Bright Orange */, 16);
 			*uParam2 = 1;
 			*uParam3 = 138;
 			*uParam4 = 0;
 			break;
 		
 		case 113:
-			StringCopy(sParam1, "GOLD", 16);
+			StringCopy(sParam1, "GOLD" /* GXT: Gold */, 16);
 			*uParam2 = 1;
 			*uParam3 = 99;
 			*uParam4 = 99;
 			break;
 		
 		case 114:
-			StringCopy(sParam1, "BRONZE", 16);
+			StringCopy(sParam1, "BRONZE" /* GXT: Bronze */, 16);
 			*uParam2 = 1;
 			*uParam3 = 90;
 			*uParam4 = 102;
 			break;
 		
 		case 115:
-			StringCopy(sParam1, "YELLOW", 16);
+			StringCopy(sParam1, "YELLOW" /* GXT: Yellow */, 16);
 			*uParam2 = 1;
 			*uParam3 = 88;
 			*uParam4 = 0;
 			break;
 		
 		case 116:
-			StringCopy(sParam1, "FLUR_YELLOW", 16);
+			StringCopy(sParam1, "FLUR_YELLOW" /* GXT: Dew Yellow */, 16);
 			*uParam2 = 1;
 			*uParam3 = 91;
 			*uParam4 = 0;
 			break;
 		
 		case 117:
-			StringCopy(sParam1, "DARK_GREEN", 16);
+			StringCopy(sParam1, "DARK_GREEN" /* GXT: Dark Green */, 16);
 			*uParam2 = 1;
 			*uParam3 = 49;
 			*uParam4 = 0;
 			break;
 		
 		case 118:
-			StringCopy(sParam1, "SEA_GREEN", 16);
+			StringCopy(sParam1, "SEA_GREEN" /* GXT: Sea Green */, 16);
 			*uParam2 = 1;
 			*uParam3 = 51;
 			*uParam4 = 0;
 			break;
 		
 		case 119:
-			StringCopy(sParam1, "OLIVE_GREEN", 16);
+			StringCopy(sParam1, "OLIVE_GREEN" /* GXT: Olive Green */, 16);
 			*uParam2 = 1;
 			*uParam3 = 52;
 			*uParam4 = 0;
 			break;
 		
 		case 120:
-			StringCopy(sParam1, "BRIGHT_GREEN", 16);
+			StringCopy(sParam1, "BRIGHT_GREEN" /* GXT: Bright Green */, 16);
 			*uParam2 = 1;
 			*uParam3 = 53;
 			*uParam4 = 0;
 			break;
 		
 		case 121:
-			StringCopy(sParam1, "PETROL_GREEN", 16);
+			StringCopy(sParam1, "PETROL_GREEN" /* GXT: Gasoline Green */, 16);
 			*uParam2 = 1;
 			*uParam3 = 54;
 			*uParam4 = 0;
 			break;
 		
 		case 122:
-			StringCopy(sParam1, "LIME_GREEN", 16);
+			StringCopy(sParam1, "LIME_GREEN" /* GXT: Lime Green */, 16);
 			*uParam2 = 1;
 			*uParam3 = 92;
 			*uParam4 = 0;
 			break;
 		
 		case 123:
-			StringCopy(sParam1, "MIDNIGHT_BLUE", 16);
+			StringCopy(sParam1, "MIDNIGHT_BLUE" /* GXT: Midnight Blue */, 16);
 			*uParam2 = 1;
 			*uParam3 = 141;
 			*uParam4 = 0;
 			break;
 		
 		case 124:
-			StringCopy(sParam1, "GALAXY_BLUE", 16);
+			StringCopy(sParam1, "GALAXY_BLUE" /* GXT: Galaxy Blue */, 16);
 			*uParam2 = 1;
 			*uParam3 = 61;
 			*uParam4 = 0;
 			break;
 		
 		case 125:
-			StringCopy(sParam1, "DARK_BLUE", 16);
+			StringCopy(sParam1, "DARK_BLUE" /* GXT: Dark Blue */, 16);
 			*uParam2 = 1;
 			*uParam3 = 62;
 			*uParam4 = 0;
 			break;
 		
 		case 126:
-			StringCopy(sParam1, "SAXON_BLUE", 16);
+			StringCopy(sParam1, "SAXON_BLUE" /* GXT: Saxon Blue */, 16);
 			*uParam2 = 1;
 			*uParam3 = 63;
 			*uParam4 = 0;
 			break;
 		
 		case 127:
-			StringCopy(sParam1, "BLUE", 16);
+			StringCopy(sParam1, "BLUE" /* GXT: Blue */, 16);
 			*uParam2 = 1;
 			*uParam3 = 64;
 			*uParam4 = 0;
 			break;
 		
 		case 128:
-			StringCopy(sParam1, "MARINER_BLUE", 16);
+			StringCopy(sParam1, "MARINER_BLUE" /* GXT: Mariner Blue */, 16);
 			*uParam2 = 1;
 			*uParam3 = 65;
 			*uParam4 = 0;
 			break;
 		
 		case 129:
-			StringCopy(sParam1, "HARBOR_BLUE", 16);
+			StringCopy(sParam1, "HARBOR_BLUE" /* GXT: Harbor Blue */, 16);
 			*uParam2 = 1;
 			*uParam3 = 66;
 			*uParam4 = 0;
 			break;
 		
 		case 130:
-			StringCopy(sParam1, "DIAMOND_BLUE", 16);
+			StringCopy(sParam1, "DIAMOND_BLUE" /* GXT: Diamond Blue */, 16);
 			*uParam2 = 1;
 			*uParam3 = 67;
 			*uParam4 = 0;
 			break;
 		
 		case 131:
-			StringCopy(sParam1, "SURF_BLUE", 16);
+			StringCopy(sParam1, "SURF_BLUE" /* GXT: Surf Blue */, 16);
 			*uParam2 = 1;
 			*uParam3 = 68;
 			*uParam4 = 0;
 			break;
 		
 		case 132:
-			StringCopy(sParam1, "NAUTICAL_BLUE", 16);
+			StringCopy(sParam1, "NAUTICAL_BLUE" /* GXT: Nautical Blue */, 16);
 			*uParam2 = 1;
 			*uParam3 = 69;
 			*uParam4 = 0;
 			break;
 		
 		case 133:
-			StringCopy(sParam1, "RACING_BLUE", 16);
+			StringCopy(sParam1, "RACING_BLUE" /* GXT: Racing Blue */, 16);
 			*uParam2 = 1;
 			*uParam3 = 73;
 			*uParam4 = 0;
 			break;
 		
 		case 134:
-			StringCopy(sParam1, "LIGHT_BLUE", 16);
+			StringCopy(sParam1, "LIGHT_BLUE" /* GXT: Light Blue */, 16);
 			*uParam2 = 1;
 			*uParam3 = 74;
 			*uParam4 = 0;
 			break;
 		
 		case 135:
-			StringCopy(sParam1, "BISON_BROWN", 16);
+			StringCopy(sParam1, "BISON_BROWN" /* GXT: Bison Brown */, 16);
 			*uParam2 = 1;
 			*uParam3 = 101;
 			*uParam4 = 0;
 			break;
 		
 		case 136:
-			StringCopy(sParam1, "CREEK_BROWN", 16);
+			StringCopy(sParam1, "CREEK_BROWN" /* GXT: Creek Brown */, 16);
 			*uParam2 = 1;
 			*uParam3 = 95;
 			*uParam4 = 0;
 			break;
 		
 		case 137:
-			StringCopy(sParam1, "UMBER_BROWN", 16);
+			StringCopy(sParam1, "UMBER_BROWN" /* GXT: Feltzer Brown */, 16);
 			*uParam2 = 1;
 			*uParam3 = 94;
 			*uParam4 = 0;
 			break;
 		
 		case 138:
-			StringCopy(sParam1, "MAPLE_BROWN", 16);
+			StringCopy(sParam1, "MAPLE_BROWN" /* GXT: Maple Brown */, 16);
 			*uParam2 = 1;
 			*uParam3 = 97;
 			*uParam4 = 0;
 			break;
 		
 		case 139:
-			StringCopy(sParam1, "BEECHWOOD_BROWN", 16);
+			StringCopy(sParam1, "BEECHWOOD_BROWN" /* GXT: Beechwood Brown */, 16);
 			*uParam2 = 1;
 			*uParam3 = 103;
 			*uParam4 = 0;
 			break;
 		
 		case 140:
-			StringCopy(sParam1, "SIENNA_BROWN", 16);
+			StringCopy(sParam1, "SIENNA_BROWN" /* GXT: Sienna Brown */, 16);
 			*uParam2 = 1;
 			*uParam3 = 104;
 			*uParam4 = 0;
 			break;
 		
 		case 141:
-			StringCopy(sParam1, "SADDLE_BROWN", 16);
+			StringCopy(sParam1, "SADDLE_BROWN" /* GXT: Saddle Brown */, 16);
 			*uParam2 = 1;
 			*uParam3 = 98;
 			*uParam4 = 0;
 			break;
 		
 		case 142:
-			StringCopy(sParam1, "MOSS_BROWN", 16);
+			StringCopy(sParam1, "MOSS_BROWN" /* GXT: Moss Brown */, 16);
 			*uParam2 = 1;
 			*uParam3 = 100;
 			*uParam4 = 0;
 			break;
 		
 		case 143:
-			StringCopy(sParam1, "WOODBEECH_BROWN", 16);
+			StringCopy(sParam1, "WOODBEECH_BROWN" /* GXT: Woodbeech Brown */, 16);
 			*uParam2 = 1;
 			*uParam3 = 102;
 			*uParam4 = 0;
 			break;
 		
 		case 144:
-			StringCopy(sParam1, "STRAW_BROWN", 16);
+			StringCopy(sParam1, "STRAW_BROWN" /* GXT: Straw Brown */, 16);
 			*uParam2 = 1;
 			*uParam3 = 99;
 			*uParam4 = 0;
 			break;
 		
 		case 145:
-			StringCopy(sParam1, "SANDY_BROWN", 16);
+			StringCopy(sParam1, "SANDY_BROWN" /* GXT: Sandy Brown */, 16);
 			*uParam2 = 1;
 			*uParam3 = 105;
 			*uParam4 = 0;
 			break;
 		
 		case 146:
-			StringCopy(sParam1, "BLEECHED_BROWN", 16);
+			StringCopy(sParam1, "BLEECHED_BROWN" /* GXT: Bleached Brown */, 16);
 			*uParam2 = 1;
 			*uParam3 = 106;
 			*uParam4 = 0;
 			break;
 		
 		case 147:
-			StringCopy(sParam1, "PURPLE", 16);
+			StringCopy(sParam1, "PURPLE" /* GXT: Schafter Purple */, 16);
 			*uParam2 = 1;
 			*uParam3 = 71;
 			*uParam4 = 0;
 			break;
 		
 		case 148:
-			StringCopy(sParam1, "SPIN_PURPLE", 16);
+			StringCopy(sParam1, "SPIN_PURPLE" /* GXT: Spinnaker Purple */, 16);
 			*uParam2 = 1;
 			*uParam3 = 72;
 			*uParam4 = 0;
 			break;
 		
 		case 149:
-			StringCopy(sParam1, "MIGHT_PURPLE", 16);
+			StringCopy(sParam1, "MIGHT_PURPLE" /* GXT: Midnight Purple */, 16);
 			*uParam2 = 1;
 			*uParam3 = 142;
 			*uParam4 = 0;
 			break;
 		
 		case 150:
-			StringCopy(sParam1, "BRIGHT_PURPLE", 16);
+			StringCopy(sParam1, "BRIGHT_PURPLE" /* GXT: Bright Purple */, 16);
 			*uParam2 = 1;
 			*uParam3 = 145;
 			*uParam4 = 0;
 			break;
 		
 		case 151:
-			StringCopy(sParam1, "CREAM", 16);
+			StringCopy(sParam1, "CREAM" /* GXT: Cream */, 16);
 			*uParam2 = 1;
 			*uParam3 = 107;
 			*uParam4 = 0;
 			break;
 		
 		case 152:
-			StringCopy(sParam1, "FROST_WHITE", 16);
+			StringCopy(sParam1, "FROST_WHITE" /* GXT: Frost White */, 16);
 			*uParam2 = 1;
 			*uParam3 = 112;
 			*uParam4 = 0;
 			break;
 		
 		case 153:
-			StringCopy(sParam1, "BLACK", 16);
+			StringCopy(sParam1, "BLACK" /* GXT: Black */, 16);
 			*uParam2 = 2;
 			*uParam3 = 12;
 			*uParam4 = 0;
 			break;
 		
 		case 154:
-			StringCopy(sParam1, "GREY", 16);
+			StringCopy(sParam1, "GREY" /* GXT: Gray */, 16);
 			*uParam2 = 2;
 			*uParam3 = 13;
 			*uParam4 = 0;
 			break;
 		
 		case 155:
-			StringCopy(sParam1, "LIGHT_GREY", 16);
+			StringCopy(sParam1, "LIGHT_GREY" /* GXT: Light Gray */, 16);
 			*uParam2 = 2;
 			*uParam3 = 14;
 			*uParam4 = 0;
 			break;
 		
 		case 156:
-			StringCopy(sParam1, "WHITE", 16);
+			StringCopy(sParam1, "WHITE" /* GXT: Ice White */, 16);
 			*uParam2 = 2;
 			*uParam3 = 131;
 			*uParam4 = 0;
 			break;
 		
 		case 157:
-			StringCopy(sParam1, "BLUE", 16);
+			StringCopy(sParam1, "BLUE" /* GXT: Blue */, 16);
 			*uParam2 = 2;
 			*uParam3 = 83;
 			*uParam4 = 0;
 			break;
 		
 		case 158:
-			StringCopy(sParam1, "DARK_BLUE", 16);
+			StringCopy(sParam1, "DARK_BLUE" /* GXT: Dark Blue */, 16);
 			*uParam2 = 2;
 			*uParam3 = 82;
 			*uParam4 = 0;
 			break;
 		
 		case 159:
-			StringCopy(sParam1, "MIDNIGHT_BLUE", 16);
+			StringCopy(sParam1, "MIDNIGHT_BLUE" /* GXT: Midnight Blue */, 16);
 			*uParam2 = 2;
 			*uParam3 = 84;
 			*uParam4 = 0;
 			break;
 		
 		case 160:
-			StringCopy(sParam1, "MIGHT_PURPLE", 16);
+			StringCopy(sParam1, "MIGHT_PURPLE" /* GXT: Midnight Purple */, 16);
 			*uParam2 = 2;
 			*uParam3 = 149;
 			*uParam4 = 0;
 			break;
 		
 		case 161:
-			StringCopy(sParam1, "Purple", 16);
+			StringCopy(sParam1, "Purple" /* GXT: Schafter Purple */, 16);
 			*uParam2 = 2;
 			*uParam3 = 148;
 			*uParam4 = 0;
 			break;
 		
 		case 162:
-			StringCopy(sParam1, "RED", 16);
+			StringCopy(sParam1, "RED" /* GXT: Red */, 16);
 			*uParam2 = 2;
 			*uParam3 = 39;
 			*uParam4 = 0;
 			break;
 		
 		case 163:
-			StringCopy(sParam1, "DARK_RED", 16);
+			StringCopy(sParam1, "DARK_RED" /* GXT: Dark Red */, 16);
 			*uParam2 = 2;
 			*uParam3 = 40;
 			*uParam4 = 0;
 			break;
 		
 		case 164:
-			StringCopy(sParam1, "ORANGE", 16);
+			StringCopy(sParam1, "ORANGE" /* GXT: Orange */, 16);
 			*uParam2 = 2;
 			*uParam3 = 41;
 			*uParam4 = 0;
 			break;
 		
 		case 165:
-			StringCopy(sParam1, "YELLOW", 16);
+			StringCopy(sParam1, "YELLOW" /* GXT: Yellow */, 16);
 			*uParam2 = 2;
 			*uParam3 = 42;
 			*uParam4 = 0;
 			break;
 		
 		case 166:
-			StringCopy(sParam1, "GREEN", 16);
+			StringCopy(sParam1, "GREEN" /* GXT: Green */, 16);
 			*uParam2 = 2;
 			*uParam3 = 128;
 			*uParam4 = 0;
 			break;
 		
 		case 167:
-			StringCopy(sParam1, "MATTE_FOR", 16);
+			StringCopy(sParam1, "MATTE_FOR" /* GXT: Forest Green */, 16);
 			*uParam2 = 2;
 			*uParam3 = 151;
 			*uParam4 = 0;
 			break;
 		
 		case 168:
-			StringCopy(sParam1, "MATTE_FOIL", 16);
+			StringCopy(sParam1, "MATTE_FOIL" /* GXT: Foliage Green */, 16);
 			*uParam2 = 2;
 			*uParam3 = 155;
 			*uParam4 = 0;
 			break;
 		
 		case 169:
-			StringCopy(sParam1, "MATTE_OD", 16);
+			StringCopy(sParam1, "MATTE_OD" /* GXT: Olive Drab */, 16);
 			*uParam2 = 2;
 			*uParam3 = 152;
 			*uParam4 = 0;
 			break;
 		
 		case 170:
-			StringCopy(sParam1, "MATTE_DIRT", 16);
+			StringCopy(sParam1, "MATTE_DIRT" /* GXT: Dark Earth */, 16);
 			*uParam2 = 2;
 			*uParam3 = 153;
 			*uParam4 = 0;
 			break;
 		
 		case 171:
-			StringCopy(sParam1, "MATTE_DESERT", 16);
+			StringCopy(sParam1, "MATTE_DESERT" /* GXT: Desert Tan */, 16);
 			*uParam2 = 2;
 			*uParam3 = 154;
 			*uParam4 = 0;
 			break;
 		
 		case 172:
-			StringCopy(sParam1, "BR_STEEL", 16);
+			StringCopy(sParam1, "BR_STEEL" /* GXT: Brushed Steel */, 16);
 			*uParam2 = 3;
 			*uParam3 = 117;
 			*uParam4 = 18;
 			break;
 		
 		case 173:
-			StringCopy(sParam1, "BR_ALUMINIUM", 16);
+			StringCopy(sParam1, "BR_ALUMINIUM" /* GXT: Brushed Aluminum */, 16);
 			*uParam2 = 3;
 			*uParam3 = 119;
 			*uParam4 = 5;
 			break;
 		
 		case 174:
-			StringCopy(sParam1, "GOLD_P", 16);
+			StringCopy(sParam1, "GOLD_P" /* GXT: Pure Gold */, 16);
 			*uParam2 = 3;
 			*uParam3 = 158;
 			*uParam4 = 160;
 			break;
 		
 		case 175:
-			StringCopy(sParam1, "GOLD_S", 16);
+			StringCopy(sParam1, "GOLD_S" /* GXT: Brushed Gold */, 16);
 			*uParam2 = 3;
 			*uParam3 = 159;
 			*uParam4 = 160;
@@ -25713,7 +25713,7 @@ int func_379(int iParam0)//Position - 0x2391E
 				iVar2 = MISC::GET_HASH_KEY(&cVar3);
 				if (iVar2 != 0)
 				{
-					if (iVar2 == MISC::GET_HASH_KEY("MNU_CAGE") || iVar2 == MISC::GET_HASH_KEY("SABRE_CAG"))
+					if (iVar2 == MISC::GET_HASH_KEY("MNU_CAGE" /* GXT: Roll Cage and Chassis Upgrade */) || iVar2 == MISC::GET_HASH_KEY("SABRE_CAG" /* GXT: Stunt Cage */))
 					{
 						return 1;
 					}
@@ -28395,7 +28395,7 @@ int func_412(int iParam0)//Position - 0x27090
 			}
 			if (iLocal_604 == 1)
 			{
-				func_414(&Local_373, Local_204, 4f, 8f, 2f, 1, Local_239.f_0, Local_274.f_0, &Local_216, "CMN_FLEAVE", "", &Local_222, 0, 1, 1, -1);
+				func_414(&Local_373, Local_204, 4f, 8f, 2f, 1, Local_239.f_0, Local_274.f_0, &Local_216, "CMN_FLEAVE" /* GXT: ~s~Return to ~b~Franklin.~s~ */, "", &Local_222, 0, 1, 1, -1);
 			}
 			break;
 		
@@ -28530,7 +28530,7 @@ int func_412(int iParam0)//Position - 0x27090
 					HUD::REMOVE_BLIP(&(Local_274.f_1));
 				}
 			}
-			if (func_414(&Local_373, Local_204, 4f, 8f, 2f, 1, Local_239.f_0, Local_274.f_0, &Local_216, "CMN_FLEAVE", "", &Local_222, 0, 1, 1, -1))
+			if (func_414(&Local_373, Local_204, 4f, 8f, 2f, 1, Local_239.f_0, Local_274.f_0, &Local_216, "CMN_FLEAVE" /* GXT: ~s~Return to ~b~Franklin.~s~ */, "", &Local_222, 0, 1, 1, -1))
 			{
 				if (VEHICLE::IS_VEHICLE_DRIVEABLE(Local_274.f_0, false))
 				{
@@ -28761,11 +28761,11 @@ void func_416(var uParam0, int iParam1, bool bParam2)//Position - 0x28221
 	{
 		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
-			sVar0 = "CMN_HINT";
+			sVar0 = "CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */;
 		}
 		else
 		{
-			sVar0 = "FM_IHELP_HNT";
+			sVar0 = "FM_IHELP_HNT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus. */;
 		}
 	}
 	if (!MISC::IS_STRING_NULL(uParam0->f_3))
@@ -28821,11 +28821,11 @@ void func_420(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iPa
 	{
 		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
-			iVar0 = "CMN_HINT";
+			iVar0 = "CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */;
 		}
 		else
 		{
-			iVar0 = "FM_IHELP_HNT";
+			iVar0 = "FM_IHELP_HNT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus. */;
 		}
 	}
 	if (func_276(iVar0))
@@ -28882,7 +28882,7 @@ void func_420(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iPa
 							{
 								func_304(iVar0, -1);
 								uParam0->f_3 = iVar0;
-								if (MISC::ARE_STRINGS_EQUAL("CMN_HINT", iVar0))
+								if (MISC::ARE_STRINGS_EQUAL("CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */, iVar0))
 								{
 									func_423(1);
 								}
@@ -28901,7 +28901,7 @@ void func_420(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iPa
 						{
 							func_304(iVar0, -1);
 							uParam0->f_3 = iVar0;
-							if (MISC::ARE_STRINGS_EQUAL("CMN_HINT", iVar0))
+							if (MISC::ARE_STRINGS_EQUAL("CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */, iVar0))
 							{
 								func_423(1);
 							}
@@ -29662,7 +29662,7 @@ int func_442(char* sParam0)//Position - 0x29263
 {
 	if (!func_428(1, 1, 0))
 	{
-		if ((!MISC::IS_STRING_NULL_OR_EMPTY(sParam0) && func_276(sParam0)) || func_276("CMN_HINT"))
+		if ((!MISC::IS_STRING_NULL_OR_EMPTY(sParam0) && func_276(sParam0)) || func_276("CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */))
 		{
 			HUD::CLEAR_HELP(true);
 		}
@@ -34236,7 +34236,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 89:
-			StringCopy(&Var2, "PROPS_P2_E1", 16);
+			StringCopy(&Var2, "PROPS_P2_E1" /* GXT: Specs Pest Shades */, 16);
 			iVar3 = 1;
 			iVar4 = 0;
 			iVar1 = 45;
@@ -34244,14 +34244,14 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 90:
-			StringCopy(&Var2, "PROPS_P2_E2", 16);
+			StringCopy(&Var2, "PROPS_P2_E2" /* GXT: Dix Charcoal Glasses */, 16);
 			iVar3 = 2;
 			iVar4 = 0;
 			iVar5 = 10;
 			break;
 		
 		case 91:
-			StringCopy(&Var2, "PROPS_P2_E2_1", 16);
+			StringCopy(&Var2, "PROPS_P2_E2_1" /* GXT: Dix Brown Glasses */, 16);
 			iVar3 = 2;
 			iVar4 = 1;
 			iVar1 = 50;
@@ -34259,7 +34259,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 92:
-			StringCopy(&Var2, "PROPS_P2_E2_2", 16);
+			StringCopy(&Var2, "PROPS_P2_E2_2" /* GXT: Dix Black Glasses */, 16);
 			iVar3 = 2;
 			iVar4 = 2;
 			iVar1 = 55;
@@ -34267,7 +34267,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 93:
-			StringCopy(&Var2, "PROPS_P2_E2_3", 16);
+			StringCopy(&Var2, "PROPS_P2_E2_3" /* GXT: Dix Checked Glasses */, 16);
 			iVar3 = 2;
 			iVar4 = 3;
 			iVar1 = 52;
@@ -34275,7 +34275,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 94:
-			StringCopy(&Var2, "PROPS_P2_E2_4", 16);
+			StringCopy(&Var2, "PROPS_P2_E2_4" /* GXT: Dix White Glasses */, 16);
 			iVar3 = 2;
 			iVar4 = 4;
 			iVar1 = 54;
@@ -34283,7 +34283,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 95:
-			StringCopy(&Var2, "PROPS_P2_E2_5", 16);
+			StringCopy(&Var2, "PROPS_P2_E2_5" /* GXT: Dix Red Glasses */, 16);
 			iVar3 = 2;
 			iVar4 = 5;
 			iVar1 = 54;
@@ -34291,7 +34291,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 96:
-			StringCopy(&Var2, "PROPS_P2_E2_6", 16);
+			StringCopy(&Var2, "PROPS_P2_E2_6" /* GXT: Dix Maroon Glasses */, 16);
 			iVar3 = 2;
 			iVar4 = 6;
 			iVar1 = 55;
@@ -34299,7 +34299,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 97:
-			StringCopy(&Var2, "PROPS_P2_E2_7", 16);
+			StringCopy(&Var2, "PROPS_P2_E2_7" /* GXT: Dix Yellow Glasses */, 16);
 			iVar3 = 2;
 			iVar4 = 7;
 			iVar1 = 55;
@@ -34307,7 +34307,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 98:
-			StringCopy(&Var2, "PROPS_P2_E2_8", 16);
+			StringCopy(&Var2, "PROPS_P2_E2_8" /* GXT: Dix Spring Glasses */, 16);
 			iVar3 = 2;
 			iVar4 = 8;
 			iVar1 = 58;
@@ -34315,7 +34315,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 99:
-			StringCopy(&Var2, "PROPS_P2_E2_9", 16);
+			StringCopy(&Var2, "PROPS_P2_E2_9" /* GXT: Dix Fall Glasses */, 16);
 			iVar3 = 2;
 			iVar4 = 9;
 			iVar1 = 58;
@@ -34323,7 +34323,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 100:
-			StringCopy(&Var2, "PROPS_P2_E3", 16);
+			StringCopy(&Var2, "PROPS_P2_E3" /* GXT: Tung Charcoal Shades */, 16);
 			iVar3 = 3;
 			iVar4 = 0;
 			iVar1 = 75;
@@ -34331,7 +34331,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 101:
-			StringCopy(&Var2, "PROPS_P2_E3_1", 16);
+			StringCopy(&Var2, "PROPS_P2_E3_1" /* GXT: Tung White Shades */, 16);
 			iVar3 = 3;
 			iVar4 = 1;
 			iVar1 = 75;
@@ -34339,7 +34339,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 102:
-			StringCopy(&Var2, "PROPS_P2_E3_2", 16);
+			StringCopy(&Var2, "PROPS_P2_E3_2" /* GXT: Tung Ash Shades */, 16);
 			iVar3 = 3;
 			iVar4 = 2;
 			iVar1 = 75;
@@ -34347,7 +34347,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 103:
-			StringCopy(&Var2, "PROPS_P2_E3_3", 16);
+			StringCopy(&Var2, "PROPS_P2_E3_3" /* GXT: Tung Red Shades */, 16);
 			iVar3 = 3;
 			iVar4 = 3;
 			iVar1 = 75;
@@ -34355,7 +34355,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 104:
-			StringCopy(&Var2, "PROPS_P2_E3_4", 16);
+			StringCopy(&Var2, "PROPS_P2_E3_4" /* GXT: Tung Blue Shades */, 16);
 			iVar3 = 3;
 			iVar4 = 4;
 			iVar1 = 75;
@@ -34363,7 +34363,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 105:
-			StringCopy(&Var2, "PROPS_P2_E3_5", 16);
+			StringCopy(&Var2, "PROPS_P2_E3_5" /* GXT: Tung Black Shades */, 16);
 			iVar3 = 3;
 			iVar4 = 5;
 			iVar1 = 75;
@@ -34371,7 +34371,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 106:
-			StringCopy(&Var2, "PROPS_P2_E3_6", 16);
+			StringCopy(&Var2, "PROPS_P2_E3_6" /* GXT: Tung Orange Tint Shades */, 16);
 			iVar3 = 3;
 			iVar4 = 6;
 			iVar1 = 75;
@@ -34379,7 +34379,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 107:
-			StringCopy(&Var2, "PROPS_P2_E3_7", 16);
+			StringCopy(&Var2, "PROPS_P2_E3_7" /* GXT: Tung Purple Tint Shades */, 16);
 			iVar3 = 3;
 			iVar4 = 7;
 			iVar1 = 75;
@@ -34387,7 +34387,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 108:
-			StringCopy(&Var2, "PROPS_P2_E3_8", 16);
+			StringCopy(&Var2, "PROPS_P2_E3_8" /* GXT: Tung Hornet Shades */, 16);
 			iVar3 = 3;
 			iVar4 = 8;
 			iVar1 = 75;
@@ -34395,7 +34395,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 109:
-			StringCopy(&Var2, "PROPS_P2_E3_9", 16);
+			StringCopy(&Var2, "PROPS_P2_E3_9" /* GXT: Tung Two-Tone Shades */, 16);
 			iVar3 = 3;
 			iVar4 = 9;
 			iVar1 = 75;
@@ -34424,7 +34424,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 113:
-			StringCopy(&Var2, "PROPS_P2_E7_0", 16);
+			StringCopy(&Var2, "PROPS_P2_E7_0" /* GXT: OG Black Shades */, 16);
 			iVar3 = 7;
 			iVar4 = 0;
 			iVar1 = 60;
@@ -34432,7 +34432,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 114:
-			StringCopy(&Var2, "PROPS_P2_E7_1", 16);
+			StringCopy(&Var2, "PROPS_P2_E7_1" /* GXT: OG Ash Shades */, 16);
 			iVar3 = 7;
 			iVar4 = 1;
 			iVar1 = 50;
@@ -34440,7 +34440,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 115:
-			StringCopy(&Var2, "PROPS_P2_E7_2", 16);
+			StringCopy(&Var2, "PROPS_P2_E7_2" /* GXT: OG Red Shades */, 16);
 			iVar3 = 7;
 			iVar4 = 2;
 			iVar1 = 50;
@@ -34448,7 +34448,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 116:
-			StringCopy(&Var2, "PROPS_P2_E7_3", 16);
+			StringCopy(&Var2, "PROPS_P2_E7_3" /* GXT: OG Yellow Shades */, 16);
 			iVar3 = 7;
 			iVar4 = 3;
 			iVar1 = 59;
@@ -34456,7 +34456,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 117:
-			StringCopy(&Var2, "PROPS_P2_E7_4", 16);
+			StringCopy(&Var2, "PROPS_P2_E7_4" /* GXT: OG Brown Shades */, 16);
 			iVar3 = 7;
 			iVar4 = 4;
 			iVar1 = 55;
@@ -34464,7 +34464,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 118:
-			StringCopy(&Var2, "PROPS_P2_E7_5", 16);
+			StringCopy(&Var2, "PROPS_P2_E7_5" /* GXT: OG Gray Shades */, 16);
 			iVar3 = 7;
 			iVar4 = 5;
 			iVar1 = 55;
@@ -34472,7 +34472,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 119:
-			StringCopy(&Var2, "PROPS_P2_E7_6", 16);
+			StringCopy(&Var2, "PROPS_P2_E7_6" /* GXT: OG Blue Shades */, 16);
 			iVar3 = 7;
 			iVar4 = 6;
 			iVar1 = 65;
@@ -34480,7 +34480,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 120:
-			StringCopy(&Var2, "PROPS_P2_E7_7", 16);
+			StringCopy(&Var2, "PROPS_P2_E7_7" /* GXT: OG Smoke Shades */, 16);
 			iVar3 = 7;
 			iVar4 = 7;
 			iVar1 = 59;
@@ -34488,7 +34488,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 121:
-			StringCopy(&Var2, "PROPS_P2_E7_8", 16);
+			StringCopy(&Var2, "PROPS_P2_E7_8" /* GXT: OG Orange Shades */, 16);
 			iVar3 = 7;
 			iVar4 = 8;
 			iVar1 = 79;
@@ -34496,7 +34496,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 122:
-			StringCopy(&Var2, "PROPS_P2_E7_9", 16);
+			StringCopy(&Var2, "PROPS_P2_E7_9" /* GXT: OG Slate Shades */, 16);
 			iVar3 = 7;
 			iVar4 = 9;
 			iVar1 = 79;
@@ -34504,7 +34504,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 123:
-			StringCopy(&Var2, "PROPS_P2_E8_0", 16);
+			StringCopy(&Var2, "PROPS_P2_E8_0" /* GXT: Steel Aviators */, 16);
 			iVar3 = 8;
 			iVar4 = 0;
 			iVar1 = 150;
@@ -34512,7 +34512,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 124:
-			StringCopy(&Var2, "PROPS_P2_E8_1", 16);
+			StringCopy(&Var2, "PROPS_P2_E8_1" /* GXT: Slate Aviators */, 16);
 			iVar3 = 8;
 			iVar4 = 1;
 			iVar1 = 150;
@@ -34520,7 +34520,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 125:
-			StringCopy(&Var2, "PROPS_P2_E8_2", 16);
+			StringCopy(&Var2, "PROPS_P2_E8_2" /* GXT: Gold Aviators */, 16);
 			iVar3 = 8;
 			iVar4 = 2;
 			iVar1 = 170;
@@ -34528,7 +34528,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 126:
-			StringCopy(&Var2, "PROPS_P2_E8_3", 16);
+			StringCopy(&Var2, "PROPS_P2_E8_3" /* GXT: Silver Two-Tone Aviators */, 16);
 			iVar3 = 8;
 			iVar4 = 3;
 			iVar1 = 175;
@@ -34536,7 +34536,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 127:
-			StringCopy(&Var2, "PROPS_P2_E8_4", 16);
+			StringCopy(&Var2, "PROPS_P2_E8_4" /* GXT: Aluminum Aviators */, 16);
 			iVar3 = 8;
 			iVar4 = 4;
 			iVar1 = 180;
@@ -34544,7 +34544,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 128:
-			StringCopy(&Var2, "PROPS_P2_E8_5", 16);
+			StringCopy(&Var2, "PROPS_P2_E8_5" /* GXT: Bronze Two-Tone Aviators */, 16);
 			iVar3 = 8;
 			iVar4 = 5;
 			iVar1 = 185;
@@ -34552,7 +34552,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 129:
-			StringCopy(&Var2, "PROPS_P2_E8_6", 16);
+			StringCopy(&Var2, "PROPS_P2_E8_6" /* GXT: Brown Two-Tone Aviators */, 16);
 			iVar3 = 8;
 			iVar4 = 6;
 			iVar1 = 189;
@@ -34560,7 +34560,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 130:
-			StringCopy(&Var2, "PROPS_P2_E8_7", 16);
+			StringCopy(&Var2, "PROPS_P2_E8_7" /* GXT: Black Aviators */, 16);
 			iVar3 = 8;
 			iVar4 = 7;
 			iVar1 = 195;
@@ -34568,7 +34568,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 131:
-			StringCopy(&Var2, "PROPS_P2_E8_8", 16);
+			StringCopy(&Var2, "PROPS_P2_E8_8" /* GXT: Silver Aviators */, 16);
 			iVar3 = 8;
 			iVar4 = 8;
 			iVar1 = 210;
@@ -34576,7 +34576,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 132:
-			StringCopy(&Var2, "PROPS_P2_E8_9", 16);
+			StringCopy(&Var2, "PROPS_P2_E8_9" /* GXT: Smoke Aviators */, 16);
 			iVar3 = 8;
 			iVar4 = 9;
 			iVar1 = 215;
@@ -34584,7 +34584,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 133:
-			StringCopy(&Var2, "PROPS_P2_E9_0", 16);
+			StringCopy(&Var2, "PROPS_P2_E9_0" /* GXT: Krepp Gold Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 0;
 			iVar1 = 165;
@@ -34592,7 +34592,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 134:
-			StringCopy(&Var2, "PROPS_P2_E9_1", 16);
+			StringCopy(&Var2, "PROPS_P2_E9_1" /* GXT: Krepp Gray Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 1;
 			iVar1 = 165;
@@ -34600,7 +34600,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 135:
-			StringCopy(&Var2, "PROPS_P2_E9_2", 16);
+			StringCopy(&Var2, "PROPS_P2_E9_2" /* GXT: Krepp Slate Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 2;
 			iVar1 = 169;
@@ -34608,7 +34608,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 136:
-			StringCopy(&Var2, "PROPS_P2_E9_3", 16);
+			StringCopy(&Var2, "PROPS_P2_E9_3" /* GXT: Krepp Black Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 3;
 			iVar1 = 169;
@@ -34616,7 +34616,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 137:
-			StringCopy(&Var2, "PROPS_P2_E9_4", 16);
+			StringCopy(&Var2, "PROPS_P2_E9_4" /* GXT: Krepp White Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 4;
 			iVar1 = 175;
@@ -34624,7 +34624,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 138:
-			StringCopy(&Var2, "PROPS_P2_E9_5", 16);
+			StringCopy(&Var2, "PROPS_P2_E9_5" /* GXT: Krepp Silver Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 5;
 			iVar1 = 175;
@@ -34632,7 +34632,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 139:
-			StringCopy(&Var2, "PROPS_P2_E9_6", 16);
+			StringCopy(&Var2, "PROPS_P2_E9_6" /* GXT: Krepp Ash Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 6;
 			iVar1 = 175;
@@ -34640,7 +34640,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 140:
-			StringCopy(&Var2, "PROPS_P2_E9_7", 16);
+			StringCopy(&Var2, "PROPS_P2_E9_7" /* GXT: Krepp Brown Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 7;
 			iVar1 = 189;
@@ -34648,7 +34648,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 141:
-			StringCopy(&Var2, "PROPS_P2_E9_8", 16);
+			StringCopy(&Var2, "PROPS_P2_E9_8" /* GXT: Krepp Beige Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 8;
 			iVar1 = 195;
@@ -34656,7 +34656,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 142:
-			StringCopy(&Var2, "PROPS_P2_E9_9", 16);
+			StringCopy(&Var2, "PROPS_P2_E9_9" /* GXT: Krepp Coffee Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 9;
 			iVar1 = 195;
@@ -34664,7 +34664,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 143:
-			StringCopy(&Var2, "PROPS_P2_E10_0", 16);
+			StringCopy(&Var2, "PROPS_P2_E10_0" /* GXT: Broker Black Shades */, 16);
 			iVar3 = 10;
 			iVar4 = 0;
 			iVar1 = 49;
@@ -34672,7 +34672,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 144:
-			StringCopy(&Var2, "PROPS_P2_E10_1", 16);
+			StringCopy(&Var2, "PROPS_P2_E10_1" /* GXT: Broker Purple Shades */, 16);
 			iVar3 = 10;
 			iVar4 = 1;
 			iVar1 = 50;
@@ -34680,7 +34680,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 145:
-			StringCopy(&Var2, "PROPS_P2_E10_2", 16);
+			StringCopy(&Var2, "PROPS_P2_E10_2" /* GXT: Broker Brown Shades */, 16);
 			iVar3 = 10;
 			iVar4 = 2;
 			iVar1 = 52;
@@ -34688,7 +34688,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 146:
-			StringCopy(&Var2, "PROPS_P2_E10_3", 16);
+			StringCopy(&Var2, "PROPS_P2_E10_3" /* GXT: Broker Orange Shades */, 16);
 			iVar3 = 10;
 			iVar4 = 3;
 			iVar1 = 55;
@@ -34696,7 +34696,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 147:
-			StringCopy(&Var2, "PROPS_P2_E10_4", 16);
+			StringCopy(&Var2, "PROPS_P2_E10_4" /* GXT: Broker Gray Shades */, 16);
 			iVar3 = 10;
 			iVar4 = 4;
 			iVar1 = 60;
@@ -34704,7 +34704,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 148:
-			StringCopy(&Var2, "PROPS_P2_E10_5", 16);
+			StringCopy(&Var2, "PROPS_P2_E10_5" /* GXT: Broker Striped Shades */, 16);
 			iVar3 = 10;
 			iVar4 = 5;
 			iVar1 = 58;
@@ -34712,7 +34712,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 149:
-			StringCopy(&Var2, "PROPS_P2_E10_6", 16);
+			StringCopy(&Var2, "PROPS_P2_E10_6" /* GXT: Broker Beige Shades */, 16);
 			iVar3 = 10;
 			iVar4 = 6;
 			iVar1 = 60;
@@ -34720,7 +34720,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 150:
-			StringCopy(&Var2, "PROPS_P2_E10_7", 16);
+			StringCopy(&Var2, "PROPS_P2_E10_7" /* GXT: Broker Ash Shades */, 16);
 			iVar3 = 10;
 			iVar4 = 7;
 			iVar1 = 63;
@@ -34728,7 +34728,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 151:
-			StringCopy(&Var2, "PROPS_P2_E10_8", 16);
+			StringCopy(&Var2, "PROPS_P2_E10_8" /* GXT: Broker Charcoal Shades */, 16);
 			iVar3 = 10;
 			iVar4 = 8;
 			iVar1 = 65;
@@ -34736,7 +34736,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 152:
-			StringCopy(&Var2, "PROPS_P2_E10_9", 16);
+			StringCopy(&Var2, "PROPS_P2_E10_9" /* GXT: Broker Gradient Shades */, 16);
 			iVar3 = 10;
 			iVar4 = 9;
 			iVar1 = 68;
@@ -34768,7 +34768,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 12:
-			StringCopy(&Var2, "PROPS_P2_H2_0", 16);
+			StringCopy(&Var2, "PROPS_P2_H2_0" /* GXT: Hockey Mask */, 16);
 			iVar3 = 2;
 			iVar4 = 0;
 			iVar1 = 320;
@@ -34808,7 +34808,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 17:
-			StringCopy(&Var2, "PROPS_P2_H7_0", 16);
+			StringCopy(&Var2, "PROPS_P2_H7_0" /* GXT: Black Hat */, 16);
 			iVar3 = 7;
 			iVar4 = 0;
 			iVar5 = 0;
@@ -35020,7 +35020,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 47:
-			StringCopy(&Var2, "PROPS_P1_H8_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H8_0" /* GXT: Green Monster Mask */, 16);
 			iVar3 = 14;
 			iVar4 = 0;
 			iVar1 = 270;
@@ -35028,7 +35028,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 48:
-			StringCopy(&Var2, "PROPS_P1_H8_1", 16);
+			StringCopy(&Var2, "PROPS_P1_H8_1" /* GXT: Red Monster Mask */, 16);
 			iVar3 = 14;
 			iVar4 = 1;
 			iVar1 = 270;
@@ -35036,7 +35036,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 49:
-			StringCopy(&Var2, "PROPS_P1_H9_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H9_0" /* GXT: Pig Mask */, 16);
 			iVar3 = 15;
 			iVar4 = 0;
 			iVar1 = 200;
@@ -35044,7 +35044,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 50:
-			StringCopy(&Var2, "PROPS_P1_H9_1", 16);
+			StringCopy(&Var2, "PROPS_P1_H9_1" /* GXT: Dark Pig Mask */, 16);
 			iVar3 = 15;
 			iVar4 = 1;
 			iVar1 = 200;
@@ -35052,7 +35052,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 51:
-			StringCopy(&Var2, "PROPS_P1_H10_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H10_0" /* GXT: Silver Skull Mask */, 16);
 			iVar3 = 16;
 			iVar4 = 0;
 			iVar1 = 350;
@@ -35060,7 +35060,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 52:
-			StringCopy(&Var2, "PROPS_P1_H10_1", 16);
+			StringCopy(&Var2, "PROPS_P1_H10_1" /* GXT: Bone Skull Mask */, 16);
 			iVar3 = 16;
 			iVar4 = 1;
 			iVar1 = 350;
@@ -35068,7 +35068,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 53:
-			StringCopy(&Var2, "PROPS_P1_H11_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H11_0" /* GXT: Space Monkey Mask */, 16);
 			iVar3 = 17;
 			iVar4 = 0;
 			iVar1 = 450;
@@ -35076,7 +35076,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 54:
-			StringCopy(&Var2, "PROPS_P1_H12_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H12_0" /* GXT: White Hockey Mask */, 16);
 			iVar3 = 18;
 			iVar4 = 0;
 			iVar1 = 500;
@@ -35084,7 +35084,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 55:
-			StringCopy(&Var2, "PROPS_P1_H12_1", 16);
+			StringCopy(&Var2, "PROPS_P1_H12_1" /* GXT: Red Hockey Mask */, 16);
 			iVar3 = 18;
 			iVar4 = 1;
 			iVar1 = 500;
@@ -35092,7 +35092,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 56:
-			StringCopy(&Var2, "PROPS_P1_H13_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H13_0" /* GXT: Ape Mask */, 16);
 			iVar3 = 19;
 			iVar4 = 0;
 			iVar1 = 50;
@@ -35100,7 +35100,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 57:
-			StringCopy(&Var2, "PROPS_P1_H13_1", 16);
+			StringCopy(&Var2, "PROPS_P1_H13_1" /* GXT: Dark Ape Mask */, 16);
 			iVar3 = 19;
 			iVar4 = 1;
 			iVar1 = 50;
@@ -35108,7 +35108,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 58:
-			StringCopy(&Var2, "PROPS_P1_H14_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H14_0" /* GXT: Carnival Orange Mask */, 16);
 			iVar3 = 20;
 			iVar4 = 0;
 			iVar1 = 99;
@@ -35116,7 +35116,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 59:
-			StringCopy(&Var2, "PROPS_P1_H14_1", 16);
+			StringCopy(&Var2, "PROPS_P1_H14_1" /* GXT: Carnival White Mask */, 16);
 			iVar3 = 20;
 			iVar4 = 1;
 			iVar1 = 99;
@@ -35124,7 +35124,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 60:
-			StringCopy(&Var2, "PROPS_P1_H14_2", 16);
+			StringCopy(&Var2, "PROPS_P1_H14_2" /* GXT: Carnival Blue Mask */, 16);
 			iVar3 = 20;
 			iVar4 = 2;
 			iVar1 = 99;
@@ -35202,7 +35202,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 71:
-			StringCopy(&Var2, "PROPS_P1_H26_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H26_0" /* GXT: Hawk and Little Baseball Cap */, 16);
 			iVar3 = 26;
 			iVar4 = 0;
 			iVar1 = 20;
@@ -35210,7 +35210,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 72:
-			StringCopy(&Var2, "PROPS_P1_H26_1", 16);
+			StringCopy(&Var2, "PROPS_P1_H26_1" /* GXT: Taco Bomb Baseball Cap */, 16);
 			iVar3 = 26;
 			iVar4 = 1;
 			iVar1 = 25;
@@ -35218,7 +35218,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 73:
-			StringCopy(&Var2, "PROPS_P1_H26_2", 16);
+			StringCopy(&Var2, "PROPS_P1_H26_2" /* GXT: Nut House Baseball Cap */, 16);
 			iVar3 = 26;
 			iVar4 = 2;
 			iVar1 = 25;
@@ -35226,7 +35226,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 74:
-			StringCopy(&Var2, "PROPS_P1_H26_3", 16);
+			StringCopy(&Var2, "PROPS_P1_H26_3" /* GXT: Rusty Brown's Baseball Cap */, 16);
 			iVar3 = 26;
 			iVar4 = 3;
 			iVar1 = 22;
@@ -35234,7 +35234,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 75:
-			StringCopy(&Var2, "PROPS_P1_H26_4", 16);
+			StringCopy(&Var2, "PROPS_P1_H26_4" /* GXT: Bishop's Chicken Baseball Cap */, 16);
 			iVar3 = 26;
 			iVar4 = 4;
 			iVar1 = 20;
@@ -35242,7 +35242,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 76:
-			StringCopy(&Var2, "PROPS_P1_H26_5", 16);
+			StringCopy(&Var2, "PROPS_P1_H26_5" /* GXT: 24/7 Baseball Cap */, 16);
 			iVar3 = 26;
 			iVar4 = 5;
 			iVar1 = 25;
@@ -35250,7 +35250,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 77:
-			StringCopy(&Var2, "PROPS_P1_H26_6", 16);
+			StringCopy(&Var2, "PROPS_P1_H26_6" /* GXT: iFruit 80s Baseball Cap */, 16);
 			iVar3 = 26;
 			iVar4 = 6;
 			iVar1 = 28;
@@ -35258,7 +35258,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 78:
-			StringCopy(&Var2, "PROPS_P1_H26_7", 16);
+			StringCopy(&Var2, "PROPS_P1_H26_7" /* GXT: Blarneys Baseball Cap */, 16);
 			iVar3 = 26;
 			iVar4 = 7;
 			iVar1 = 24;
@@ -35266,7 +35266,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 79:
-			StringCopy(&Var2, "PROPS_P1_H26_8", 16);
+			StringCopy(&Var2, "PROPS_P1_H26_8" /* GXT: Pisswasser Baseball Cap */, 16);
 			iVar3 = 26;
 			iVar4 = 8;
 			iVar1 = 25;
@@ -35274,7 +35274,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 80:
-			StringCopy(&Var2, "PROPS_P1_H26_9", 16);
+			StringCopy(&Var2, "PROPS_P1_H26_9" /* GXT: RON Baseball Cap */, 16);
 			iVar3 = 26;
 			iVar4 = 9;
 			iVar1 = 22;
@@ -35282,7 +35282,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 81:
-			StringCopy(&Var2, "PROPS_P1_H26_10", 16);
+			StringCopy(&Var2, "PROPS_P1_H26_10" /* GXT: Logger Light Baseball Cap */, 16);
 			iVar3 = 26;
 			iVar4 = 10;
 			iVar1 = 18;
@@ -35290,7 +35290,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 82:
-			StringCopy(&Var2, "PROPS_P1_H26_11", 16);
+			StringCopy(&Var2, "PROPS_P1_H26_11" /* GXT: Meteorite Baseball Cap */, 16);
 			iVar3 = 26;
 			iVar4 = 11;
 			iVar1 = 20;
@@ -35298,7 +35298,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 83:
-			StringCopy(&Var2, "PROPS_P1_H26_12", 16);
+			StringCopy(&Var2, "PROPS_P1_H26_12" /* GXT: Dusche Gold Baseball Cap */, 16);
 			iVar3 = 26;
 			iVar4 = 12;
 			iVar1 = 24;
@@ -35306,7 +35306,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 84:
-			StringCopy(&Var2, "PROPS_P1_H26_13", 16);
+			StringCopy(&Var2, "PROPS_P1_H26_13" /* GXT: Barracho Baseball Cap */, 16);
 			iVar3 = 26;
 			iVar4 = 13;
 			iVar1 = 22;
@@ -35314,7 +35314,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 85:
-			StringCopy(&Var2, "PROPS_P1_H26_14", 16);
+			StringCopy(&Var2, "PROPS_P1_H26_14" /* GXT: Vespucci Beach Baseball Cap */, 16);
 			iVar3 = 26;
 			iVar4 = 14;
 			iVar1 = 25;
@@ -35322,7 +35322,7 @@ void func_508(int iParam0)//Position - 0x2F3D2
 			break;
 		
 		case 86:
-			StringCopy(&Var2, "PROPS_P1_H26_15", 16);
+			StringCopy(&Var2, "PROPS_P1_H26_15" /* GXT: Orang-O-Tang Baseball Cap */, 16);
 			iVar3 = 26;
 			iVar4 = 15;
 			iVar1 = 25;
@@ -39725,7 +39725,7 @@ void func_520(int iParam0)//Position - 0x34F82
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var2, "OUTFIT_P2_0", 16);
+			StringCopy(&Var2, "OUTFIT_P2_0" /* GXT: White T-Shirt, Sweatpants */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			bVar0 = true;
@@ -39738,25 +39738,25 @@ void func_520(int iParam0)//Position - 0x34F82
 			break;
 		
 		case 2:
-			StringCopy(&Var2, "OUTFIT_P2_5", 16);
+			StringCopy(&Var2, "OUTFIT_P2_5" /* GXT: Dock Worker */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 3:
-			StringCopy(&Var2, "OUTFIT_P2_6", 16);
+			StringCopy(&Var2, "OUTFIT_P2_6" /* GXT: Highway Patrol */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 4:
-			StringCopy(&Var2, "OUTFIT_P2_7", 16);
+			StringCopy(&Var2, "OUTFIT_P2_7" /* GXT: Golf */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 5:
-			StringCopy(&Var2, "OUTFIT_P2_8", 16);
+			StringCopy(&Var2, "OUTFIT_P2_8" /* GXT: Tennis */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
@@ -39768,268 +39768,268 @@ void func_520(int iParam0)//Position - 0x34F82
 			break;
 		
 		case 7:
-			StringCopy(&Var2, "OUTFIT_P2_10", 16);
+			StringCopy(&Var2, "OUTFIT_P2_10" /* GXT: Scuba Land */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 8:
-			StringCopy(&Var2, "OUTFIT_P2_12", 16);
+			StringCopy(&Var2, "OUTFIT_P2_12" /* GXT: Stealth */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 9:
-			StringCopy(&Var2, "OUTFIT_P2_13", 16);
+			StringCopy(&Var2, "OUTFIT_P2_13" /* GXT: Triathlon */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 10:
-			StringCopy(&Var2, "OUTFIT_P2_14", 16);
+			StringCopy(&Var2, "OUTFIT_P2_14" /* GXT: Underwear */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 11:
-			StringCopy(&Var2, "OUTFIT_P2_15", 16);
+			StringCopy(&Var2, "OUTFIT_P2_15" /* GXT: Security */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 12:
-			StringCopy(&Var2, "OUTFIT_P2_16", 16);
+			StringCopy(&Var2, "OUTFIT_P2_16" /* GXT: Toilet */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 13:
-			StringCopy(&Var2, "OUTFIT_P2_17", 16);
+			StringCopy(&Var2, "OUTFIT_P2_17" /* GXT: Prologue */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 14:
-			StringCopy(&Var2, "OUTFIT_P2_18", 16);
+			StringCopy(&Var2, "OUTFIT_P2_18" /* GXT: Tuxedo */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 10000;
 			break;
 		
 		case 15:
-			StringCopy(&Var2, "OUTFIT_P2_19", 16);
+			StringCopy(&Var2, "OUTFIT_P2_19" /* GXT: Pink Ladies Sweats */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 16:
-			StringCopy(&Var2, "OUTFIT_P2_20", 16);
+			StringCopy(&Var2, "OUTFIT_P2_20" /* GXT: Blue Boiler Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 17:
-			StringCopy(&Var2, "OUTFIT_P2_21", 16);
+			StringCopy(&Var2, "OUTFIT_P2_21" /* GXT: Navy Boiler Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 105;
 			break;
 		
 		case 18:
-			StringCopy(&Var2, "OUTFIT_P2_22", 16);
+			StringCopy(&Var2, "OUTFIT_P2_22" /* GXT: Gray Boiler Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 105;
 			break;
 		
 		case 19:
-			StringCopy(&Var2, "OUTFIT_P2_23", 16);
+			StringCopy(&Var2, "OUTFIT_P2_23" /* GXT: Green Boiler Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 105;
 			break;
 		
 		case 20:
-			StringCopy(&Var2, "OUTFIT_P2_24", 16);
+			StringCopy(&Var2, "OUTFIT_P2_24" /* GXT: Hunting */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 21:
-			StringCopy(&Var2, "OUTFIT_P2_25", 16);
+			StringCopy(&Var2, "OUTFIT_P2_25" /* GXT: White T-Shirt, Cargo Pants */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 22:
-			StringCopy(&Var2, "OUTFIT_P2_26", 16);
+			StringCopy(&Var2, "OUTFIT_P2_26" /* GXT: Denim Jacket, Jeans */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 23:
-			StringCopy(&Var2, "OUTFIT_P2_27", 16);
+			StringCopy(&Var2, "OUTFIT_P2_27" /* GXT: Ludendorff */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 24:
-			StringCopy(&Var2, "OUTFIT_P2_28", 16);
+			StringCopy(&Var2, "OUTFIT_P2_28" /* GXT: Beige Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 119;
 			break;
 		
 		case 25:
-			StringCopy(&Var2, "OUTFIT_P2_29", 16);
+			StringCopy(&Var2, "OUTFIT_P2_29" /* GXT: Blue Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 99;
 			break;
 		
 		case 26:
-			StringCopy(&Var2, "OUTFIT_P2_30", 16);
+			StringCopy(&Var2, "OUTFIT_P2_30" /* GXT: Brown Plaid Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 129;
 			break;
 		
 		case 27:
-			StringCopy(&Var2, "OUTFIT_P2_44", 16);
+			StringCopy(&Var2, "OUTFIT_P2_44" /* GXT: Burgundy Cheap Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 125;
 			break;
 		
 		case 28:
-			StringCopy(&Var2, "OUTFIT_P2_45", 16);
+			StringCopy(&Var2, "OUTFIT_P2_45" /* GXT: Murky Plaid Cheap Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 120;
 			break;
 		
 		case 29:
-			StringCopy(&Var2, "OUTFIT_P2_46", 16);
+			StringCopy(&Var2, "OUTFIT_P2_46" /* GXT: Mint Plaid Cheap Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 139;
 			break;
 		
 		case 30:
-			StringCopy(&Var2, "OUTFIT_P2_47", 16);
+			StringCopy(&Var2, "OUTFIT_P2_47" /* GXT: Green Plaid Cheap Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 149;
 			break;
 		
 		case 31:
-			StringCopy(&Var2, "OUTFIT_P2_48", 16);
+			StringCopy(&Var2, "OUTFIT_P2_48" /* GXT: Blue-Gray Cheap Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 145;
 			break;
 		
 		case 32:
-			StringCopy(&Var2, "OUTFIT_P2_49", 16);
+			StringCopy(&Var2, "OUTFIT_P2_49" /* GXT: Caramel Cheap Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 140;
 			break;
 		
 		case 33:
-			StringCopy(&Var2, "OUTFIT_P2_50", 16);
+			StringCopy(&Var2, "OUTFIT_P2_50" /* GXT: Mocha Cheap Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 135;
 			break;
 		
 		case 34:
-			StringCopy(&Var2, "OUTFIT_P2_31", 16);
+			StringCopy(&Var2, "OUTFIT_P2_31" /* GXT: Gray Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 4900;
 			break;
 		
 		case 35:
-			StringCopy(&Var2, "OUTFIT_P2_32", 16);
+			StringCopy(&Var2, "OUTFIT_P2_32" /* GXT: Sand Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 5900;
 			break;
 		
 		case 36:
-			StringCopy(&Var2, "OUTFIT_P2_33", 16);
+			StringCopy(&Var2, "OUTFIT_P2_33" /* GXT: Charcoal Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 4500;
 			break;
 		
 		case 37:
-			StringCopy(&Var2, "OUTFIT_P2_34", 16);
+			StringCopy(&Var2, "OUTFIT_P2_34" /* GXT: Off-White Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 4900;
 			break;
 		
 		case 38:
-			StringCopy(&Var2, "OUTFIT_P2_35", 16);
+			StringCopy(&Var2, "OUTFIT_P2_35" /* GXT: Cream Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 4500;
 			break;
 		
 		case 39:
-			StringCopy(&Var2, "OUTFIT_P2_36", 16);
+			StringCopy(&Var2, "OUTFIT_P2_36" /* GXT: Black Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 5900;
 			break;
 		
 		case 40:
-			StringCopy(&Var2, "OUTFIT_P2_37", 16);
+			StringCopy(&Var2, "OUTFIT_P2_37" /* GXT: Ash Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 5500;
 			break;
 		
 		case 41:
-			StringCopy(&Var2, "OUTFIT_P2_38", 16);
+			StringCopy(&Var2, "OUTFIT_P2_38" /* GXT: Red T-Shirt, Cargo Pants */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 42:
-			StringCopy(&Var2, "OUTFIT_P2_39", 16);
+			StringCopy(&Var2, "OUTFIT_P2_39" /* GXT: Amethyst Polo Shirt, Jeans */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 43:
-			StringCopy(&Var2, "OUTFIT_P2_40", 16);
+			StringCopy(&Var2, "OUTFIT_P2_40" /* GXT: White T-Shirt, Camo Pants */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 44:
-			StringCopy(&Var2, "OUTFIT_P2_41", 16);
+			StringCopy(&Var2, "OUTFIT_P2_41" /* GXT: Moto-X */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 45:
-			StringCopy(&Var2, "OUTFIT_P2_42", 16);
+			StringCopy(&Var2, "OUTFIT_P2_42" /* GXT: White Tank Top, Sweatpants */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 46:
-			StringCopy(&Var2, "OUTFIT_P2_43", 16);
+			StringCopy(&Var2, "OUTFIT_P2_43" /* GXT: White T-Shirt, Jeans */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 47:
-			StringCopy(&Var2, "OUTFIT_P2_12", 16);
+			StringCopy(&Var2, "OUTFIT_P2_12" /* GXT: Stealth */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
@@ -40134,37 +40134,37 @@ void func_523(int iParam0)//Position - 0x35579
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var2, "BERD_P2_0_0", 16);
+			StringCopy(&Var2, "BERD_P2_0_0" /* GXT: Clean Shave */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 1:
-			StringCopy(&Var2, "BERD_P2_1_0", 16);
+			StringCopy(&Var2, "BERD_P2_1_0" /* GXT: Beard 1 */, 16);
 			iVar3 = 1;
 			iVar4 = 0;
 			break;
 		
 		case 2:
-			StringCopy(&Var2, "BERD_P2_2_0", 16);
+			StringCopy(&Var2, "BERD_P2_2_0" /* GXT: Stubble */, 16);
 			iVar3 = 2;
 			iVar4 = 0;
 			break;
 		
 		case 3:
-			StringCopy(&Var2, "BERD_P2_3_0", 16);
+			StringCopy(&Var2, "BERD_P2_3_0" /* GXT: Big Mustache */, 16);
 			iVar3 = 3;
 			iVar4 = 0;
 			break;
 		
 		case 4:
-			StringCopy(&Var2, "BERD_P2_4_0", 16);
+			StringCopy(&Var2, "BERD_P2_4_0" /* GXT: Handlebar */, 16);
 			iVar3 = 4;
 			iVar4 = 0;
 			break;
 		
 		case 5:
-			StringCopy(&Var2, "BERD_P2_5_0", 16);
+			StringCopy(&Var2, "BERD_P2_5_0" /* GXT: The Gerry */, 16);
 			iVar3 = 5;
 			iVar4 = 0;
 			break;
@@ -40483,56 +40483,56 @@ void func_525(int iParam0)//Position - 0x359C3
 			break;
 		
 		case 9:
-			StringCopy(&Var2, "SPEC2_P0_08_0", 16);
+			StringCopy(&Var2, "SPEC2_P0_08_0" /* GXT: Red Wrestler Mask */, 16);
 			iVar3 = 6;
 			iVar4 = 0;
 			iVar1 = 125;
 			break;
 		
 		case 10:
-			StringCopy(&Var2, "SPEC2_P0_08_1", 16);
+			StringCopy(&Var2, "SPEC2_P0_08_1" /* GXT: Green Wrestler Mask */, 16);
 			iVar3 = 6;
 			iVar4 = 1;
 			iVar1 = 150;
 			break;
 		
 		case 11:
-			StringCopy(&Var2, "SPEC2_P0_08_2", 16);
+			StringCopy(&Var2, "SPEC2_P0_08_2" /* GXT: Patriot Wrestler Mask */, 16);
 			iVar3 = 6;
 			iVar4 = 2;
 			iVar1 = 175;
 			break;
 		
 		case 12:
-			StringCopy(&Var2, "SPEC2_P0_08_3", 16);
+			StringCopy(&Var2, "SPEC2_P0_08_3" /* GXT: Domino Wrestler Mask */, 16);
 			iVar3 = 6;
 			iVar4 = 3;
 			iVar1 = 85;
 			break;
 		
 		case 13:
-			StringCopy(&Var2, "SPEC2_P0_08_4", 16);
+			StringCopy(&Var2, "SPEC2_P0_08_4" /* GXT: Gray Wrestler Mask */, 16);
 			iVar3 = 6;
 			iVar4 = 4;
 			iVar1 = 150;
 			break;
 		
 		case 14:
-			StringCopy(&Var2, "SPEC2_P0_08_5", 16);
+			StringCopy(&Var2, "SPEC2_P0_08_5" /* GXT: Phoenix Wrestler Mask */, 16);
 			iVar3 = 6;
 			iVar4 = 5;
 			iVar1 = 175;
 			break;
 		
 		case 15:
-			StringCopy(&Var2, "PROPS_P1_H8_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H8_0" /* GXT: Green Monster Mask */, 16);
 			iVar3 = 7;
 			iVar4 = 0;
 			iVar1 = 270;
 			break;
 		
 		case 16:
-			StringCopy(&Var2, "PROPS_P1_H8_1", 16);
+			StringCopy(&Var2, "PROPS_P1_H8_1" /* GXT: Red Monster Mask */, 16);
 			iVar3 = 7;
 			iVar4 = 1;
 			iVar1 = 270;
@@ -40568,13 +40568,13 @@ void func_526(int iParam0)//Position - 0x35BD4
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var2, "SPEC_P2_0_0", 16);
+			StringCopy(&Var2, "SPEC_P2_0_0" /* GXT: Black Digital Watch */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 1:
-			StringCopy(&Var2, "SPEC_P2_0_1", 16);
+			StringCopy(&Var2, "SPEC_P2_0_1" /* GXT: White Digital Watch */, 16);
 			iVar3 = 0;
 			iVar4 = 1;
 			break;
@@ -40796,55 +40796,55 @@ void func_528(int iParam0)//Position - 0x35F14
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var2, "FEET_P2_0_0", 16);
+			StringCopy(&Var2, "FEET_P2_0_0" /* GXT: Black Chukka Boots */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 1:
-			StringCopy(&Var2, "FEET_P2_0_1", 16);
+			StringCopy(&Var2, "FEET_P2_0_1" /* GXT: Snakeskin Chukka Boots */, 16);
 			iVar3 = 0;
 			iVar4 = 1;
 			iVar1 = 22;
 			break;
 		
 		case 2:
-			StringCopy(&Var2, "FEET_P2_0_2", 16);
+			StringCopy(&Var2, "FEET_P2_0_2" /* GXT: Gray Chukka Boots */, 16);
 			iVar3 = 0;
 			iVar4 = 2;
 			iVar1 = 45;
 			break;
 		
 		case 3:
-			StringCopy(&Var2, "FEET_P2_0_3", 16);
+			StringCopy(&Var2, "FEET_P2_0_3" /* GXT: Brown Chukka Boots */, 16);
 			iVar3 = 0;
 			iVar4 = 3;
 			iVar1 = 65;
 			break;
 		
 		case 4:
-			StringCopy(&Var2, "FEET_P2_0_4", 16);
+			StringCopy(&Var2, "FEET_P2_0_4" /* GXT: Crocodile Skin Boots */, 16);
 			iVar3 = 0;
 			iVar4 = 4;
 			iVar1 = 58;
 			break;
 		
 		case 5:
-			StringCopy(&Var2, "FEET_P2_0_5", 16);
+			StringCopy(&Var2, "FEET_P2_0_5" /* GXT: Cowboy Boots */, 16);
 			iVar3 = 0;
 			iVar4 = 5;
 			iVar1 = 72;
 			break;
 		
 		case 6:
-			StringCopy(&Var2, "FEET_P2_0_6", 16);
+			StringCopy(&Var2, "FEET_P2_0_6" /* GXT: Yellow Reptile Skin Boots */, 16);
 			iVar3 = 0;
 			iVar4 = 6;
 			iVar1 = 68;
 			break;
 		
 		case 7:
-			StringCopy(&Var2, "FEET_P2_0_7", 16);
+			StringCopy(&Var2, "FEET_P2_0_7" /* GXT: Reptile Skin Boots */, 16);
 			iVar3 = 0;
 			iVar4 = 7;
 			iVar1 = 60;
@@ -40878,7 +40878,7 @@ void func_528(int iParam0)//Position - 0x35F14
 			break;
 		
 		case 12:
-			StringCopy(&Var2, "FEET_P2_5_0", 16);
+			StringCopy(&Var2, "FEET_P2_5_0" /* GXT: Work Boots */, 16);
 			iVar3 = 5;
 			iVar4 = 0;
 			break;
@@ -40898,97 +40898,97 @@ void func_528(int iParam0)//Position - 0x35F14
 			break;
 		
 		case 15:
-			StringCopy(&Var2, "FEET_P2_8_0", 16);
+			StringCopy(&Var2, "FEET_P2_8_0" /* GXT: Dressy Shoes */, 16);
 			iVar3 = 8;
 			iVar4 = 0;
 			bVar0 = true;
 			break;
 		
 		case 16:
-			StringCopy(&Var2, "FEET_P2_9_0", 16);
+			StringCopy(&Var2, "FEET_P2_9_0" /* GXT: Black Leather Loafers */, 16);
 			iVar3 = 9;
 			iVar4 = 0;
 			break;
 		
 		case 17:
-			StringCopy(&Var2, "FEET_P2_9_1", 16);
+			StringCopy(&Var2, "FEET_P2_9_1" /* GXT: Gray Leather Loafers */, 16);
 			iVar3 = 9;
 			iVar4 = 1;
 			iVar1 = 680;
 			break;
 		
 		case 18:
-			StringCopy(&Var2, "FEET_P2_9_2", 16);
+			StringCopy(&Var2, "FEET_P2_9_2" /* GXT: Cream Leather Loafers */, 16);
 			iVar3 = 9;
 			iVar4 = 2;
 			iVar1 = 650;
 			break;
 		
 		case 19:
-			StringCopy(&Var2, "FEET_P2_9_3", 16);
+			StringCopy(&Var2, "FEET_P2_9_3" /* GXT: Brown Leather Loafers */, 16);
 			iVar3 = 9;
 			iVar4 = 3;
 			iVar1 = 670;
 			break;
 		
 		case 20:
-			StringCopy(&Var2, "FEET_P2_9_4", 16);
+			StringCopy(&Var2, "FEET_P2_9_4" /* GXT: White Leather Loafers */, 16);
 			iVar3 = 9;
 			iVar4 = 4;
 			iVar1 = 700;
 			break;
 		
 		case 21:
-			StringCopy(&Var2, "FEET_P2_9_5", 16);
+			StringCopy(&Var2, "FEET_P2_9_5" /* GXT: Russet Leather Loafers */, 16);
 			iVar3 = 9;
 			iVar4 = 5;
 			iVar1 = 680;
 			break;
 		
 		case 22:
-			StringCopy(&Var2, "FEET_P2_9_6", 16);
+			StringCopy(&Var2, "FEET_P2_9_6" /* GXT: White Snakeskin Loafers */, 16);
 			iVar3 = 9;
 			iVar4 = 6;
 			iVar1 = 720;
 			break;
 		
 		case 23:
-			StringCopy(&Var2, "FEET_P2_9_7", 16);
+			StringCopy(&Var2, "FEET_P2_9_7" /* GXT: Rattlesnake Loafers */, 16);
 			iVar3 = 9;
 			iVar4 = 7;
 			iVar1 = 740;
 			break;
 		
 		case 24:
-			StringCopy(&Var2, "FEET_P2_9_8", 16);
+			StringCopy(&Var2, "FEET_P2_9_8" /* GXT: Brown Snakeskin Loafers */, 16);
 			iVar3 = 9;
 			iVar4 = 8;
 			iVar1 = 760;
 			break;
 		
 		case 25:
-			StringCopy(&Var2, "FEET_P2_9_9", 16);
+			StringCopy(&Var2, "FEET_P2_9_9" /* GXT: Zebra Two-Tone Loafers */, 16);
 			iVar3 = 9;
 			iVar4 = 9;
 			iVar1 = 780;
 			break;
 		
 		case 26:
-			StringCopy(&Var2, "FEET_P2_9_10", 16);
+			StringCopy(&Var2, "FEET_P2_9_10" /* GXT: Pale Reptile Loafers */, 16);
 			iVar3 = 9;
 			iVar4 = 10;
 			iVar1 = 750;
 			break;
 		
 		case 27:
-			StringCopy(&Var2, "FEET_P2_9_11", 16);
+			StringCopy(&Var2, "FEET_P2_9_11" /* GXT: Tan Alligator Loafers */, 16);
 			iVar3 = 9;
 			iVar4 = 11;
 			iVar1 = 700;
 			break;
 		
 		case 28:
-			StringCopy(&Var2, "FEET_P2_10_0", 16);
+			StringCopy(&Var2, "FEET_P2_10_0" /* GXT: Chestnut Boots */, 16);
 			iVar3 = 10;
 			iVar4 = 0;
 			break;
@@ -41041,336 +41041,336 @@ void func_528(int iParam0)//Position - 0x35F14
 			break;
 		
 		case 36:
-			StringCopy(&Var2, "FEET_P2_18_0", 16);
+			StringCopy(&Var2, "FEET_P2_18_0" /* GXT: All Black Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 0;
 			iVar1 = 790;
 			break;
 		
 		case 37:
-			StringCopy(&Var2, "FEET_P2_18_1", 16);
+			StringCopy(&Var2, "FEET_P2_18_1" /* GXT: Chocolate Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 1;
 			iVar1 = 750;
 			break;
 		
 		case 38:
-			StringCopy(&Var2, "FEET_P2_18_2", 16);
+			StringCopy(&Var2, "FEET_P2_18_2" /* GXT: Chestnut Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 2;
 			iVar1 = 860;
 			break;
 		
 		case 39:
-			StringCopy(&Var2, "FEET_P2_18_3", 16);
+			StringCopy(&Var2, "FEET_P2_18_3" /* GXT: Tan Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 3;
 			iVar1 = 750;
 			break;
 		
 		case 40:
-			StringCopy(&Var2, "FEET_P2_18_4", 16);
+			StringCopy(&Var2, "FEET_P2_18_4" /* GXT: White Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 4;
 			iVar1 = 790;
 			break;
 		
 		case 41:
-			StringCopy(&Var2, "FEET_P2_18_5", 16);
+			StringCopy(&Var2, "FEET_P2_18_5" /* GXT: Ash Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 5;
 			iVar1 = 840;
 			break;
 		
 		case 42:
-			StringCopy(&Var2, "FEET_P2_18_6", 16);
+			StringCopy(&Var2, "FEET_P2_18_6" /* GXT: Gray Two-Tone Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 6;
 			iVar1 = 820;
 			break;
 		
 		case 43:
-			StringCopy(&Var2, "FEET_P2_18_7", 16);
+			StringCopy(&Var2, "FEET_P2_18_7" /* GXT: Beige Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 7;
 			iVar1 = 800;
 			break;
 		
 		case 44:
-			StringCopy(&Var2, "FEET_P2_18_8", 16);
+			StringCopy(&Var2, "FEET_P2_18_8" /* GXT: Topaz Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 8;
 			iVar1 = 850;
 			break;
 		
 		case 45:
-			StringCopy(&Var2, "FEET_P2_18_9", 16);
+			StringCopy(&Var2, "FEET_P2_18_9" /* GXT: Black Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 9;
 			iVar1 = 870;
 			break;
 		
 		case 46:
-			StringCopy(&Var2, "FEET_P2_18_10", 16);
+			StringCopy(&Var2, "FEET_P2_18_10" /* GXT: Lime Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 10;
 			iVar1 = 720;
 			break;
 		
 		case 47:
-			StringCopy(&Var2, "FEET_P2_18_11", 16);
+			StringCopy(&Var2, "FEET_P2_18_11" /* GXT: Hawthorn Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 11;
 			iVar1 = 740;
 			break;
 		
 		case 48:
-			StringCopy(&Var2, "FEET_P2_18_12", 16);
+			StringCopy(&Var2, "FEET_P2_18_12" /* GXT: Coffee Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 12;
 			iVar1 = 800;
 			break;
 		
 		case 49:
-			StringCopy(&Var2, "FEET_P2_18_13", 16);
+			StringCopy(&Var2, "FEET_P2_18_13" /* GXT: Gray Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 13;
 			iVar1 = 750;
 			break;
 		
 		case 50:
-			StringCopy(&Var2, "FEET_P2_18_14", 16);
+			StringCopy(&Var2, "FEET_P2_18_14" /* GXT: Cream Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 14;
 			iVar1 = 770;
 			break;
 		
 		case 51:
-			StringCopy(&Var2, "FEET_P2_18_15", 16);
+			StringCopy(&Var2, "FEET_P2_18_15" /* GXT: Navy Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 15;
 			iVar1 = 860;
 			break;
 		
 		case 52:
-			StringCopy(&Var2, "FEET_P2_19_0", 16);
+			StringCopy(&Var2, "FEET_P2_19_0" /* GXT: Black Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 0;
 			iVar1 = 850;
 			break;
 		
 		case 53:
-			StringCopy(&Var2, "FEET_P2_19_1", 16);
+			StringCopy(&Var2, "FEET_P2_19_1" /* GXT: Red Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 1;
 			iVar1 = 800;
 			break;
 		
 		case 54:
-			StringCopy(&Var2, "FEET_P2_19_2", 16);
+			StringCopy(&Var2, "FEET_P2_19_2" /* GXT: Brown Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 2;
 			iVar1 = 780;
 			break;
 		
 		case 55:
-			StringCopy(&Var2, "FEET_P2_19_3", 16);
+			StringCopy(&Var2, "FEET_P2_19_3" /* GXT: Green Stripe Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 3;
 			iVar1 = 890;
 			break;
 		
 		case 56:
-			StringCopy(&Var2, "FEET_P2_19_4", 16);
+			StringCopy(&Var2, "FEET_P2_19_4" /* GXT: Green Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 4;
 			iVar1 = 820;
 			break;
 		
 		case 57:
-			StringCopy(&Var2, "FEET_P2_19_5", 16);
+			StringCopy(&Var2, "FEET_P2_19_5" /* GXT: Copper Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 5;
 			iVar1 = 840;
 			break;
 		
 		case 58:
-			StringCopy(&Var2, "FEET_P2_19_6", 16);
+			StringCopy(&Var2, "FEET_P2_19_6" /* GXT: Copper Two-Tone Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 6;
 			iVar1 = 870;
 			break;
 		
 		case 59:
-			StringCopy(&Var2, "FEET_P2_19_7", 16);
+			StringCopy(&Var2, "FEET_P2_19_7" /* GXT: Navy Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 7;
 			iVar1 = 930;
 			break;
 		
 		case 60:
-			StringCopy(&Var2, "FEET_P2_19_8", 16);
+			StringCopy(&Var2, "FEET_P2_19_8" /* GXT: Blue Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 8;
 			iVar1 = 880;
 			break;
 		
 		case 61:
-			StringCopy(&Var2, "FEET_P2_19_9", 16);
+			StringCopy(&Var2, "FEET_P2_19_9" /* GXT: Beige Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 9;
 			iVar1 = 900;
 			break;
 		
 		case 62:
-			StringCopy(&Var2, "FEET_P2_19_10", 16);
+			StringCopy(&Var2, "FEET_P2_19_10" /* GXT: White Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 10;
 			iVar1 = 920;
 			break;
 		
 		case 63:
-			StringCopy(&Var2, "FEET_P2_19_11", 16);
+			StringCopy(&Var2, "FEET_P2_19_11" /* GXT: Tan Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 11;
 			iVar1 = 970;
 			break;
 		
 		case 64:
-			StringCopy(&Var2, "FEET_P2_19_12", 16);
+			StringCopy(&Var2, "FEET_P2_19_12" /* GXT: Black Snakeskin Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 12;
 			iVar1 = 990;
 			break;
 		
 		case 65:
-			StringCopy(&Var2, "FEET_P2_19_13", 16);
+			StringCopy(&Var2, "FEET_P2_19_13" /* GXT: Two-Tone Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 13;
 			iVar1 = 960;
 			break;
 		
 		case 66:
-			StringCopy(&Var2, "FEET_P2_19_14", 16);
+			StringCopy(&Var2, "FEET_P2_19_14" /* GXT: Brown Snakeskin Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 14;
 			iVar1 = 980;
 			break;
 		
 		case 67:
-			StringCopy(&Var2, "FEET_P2_19_15", 16);
+			StringCopy(&Var2, "FEET_P2_19_15" /* GXT: Gray Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 15;
 			iVar1 = 950;
 			break;
 		
 		case 68:
-			StringCopy(&Var2, "FEET_P2_20_0", 16);
+			StringCopy(&Var2, "FEET_P2_20_0" /* GXT: Brown Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 0;
 			iVar1 = 110;
 			break;
 		
 		case 69:
-			StringCopy(&Var2, "FEET_P2_20_1", 16);
+			StringCopy(&Var2, "FEET_P2_20_1" /* GXT: Navy Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 1;
 			iVar1 = 115;
 			break;
 		
 		case 70:
-			StringCopy(&Var2, "FEET_P2_20_2", 16);
+			StringCopy(&Var2, "FEET_P2_20_2" /* GXT: Coffee Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 2;
 			iVar1 = 120;
 			break;
 		
 		case 71:
-			StringCopy(&Var2, "FEET_P2_20_3", 16);
+			StringCopy(&Var2, "FEET_P2_20_3" /* GXT: Burgundy Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 3;
 			iVar1 = 110;
 			break;
 		
 		case 72:
-			StringCopy(&Var2, "FEET_P2_20_4", 16);
+			StringCopy(&Var2, "FEET_P2_20_4" /* GXT: Blue Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 4;
 			iVar1 = 125;
 			break;
 		
 		case 73:
-			StringCopy(&Var2, "FEET_P2_20_5", 16);
+			StringCopy(&Var2, "FEET_P2_20_5" /* GXT: Woodland Camo Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 5;
 			iVar1 = 128;
 			break;
 		
 		case 74:
-			StringCopy(&Var2, "FEET_P2_20_6", 16);
+			StringCopy(&Var2, "FEET_P2_20_6" /* GXT: Black Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 6;
 			iVar1 = 135;
 			break;
 		
 		case 75:
-			StringCopy(&Var2, "FEET_P2_20_7", 16);
+			StringCopy(&Var2, "FEET_P2_20_7" /* GXT: Tan Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 7;
 			iVar1 = 130;
 			break;
 		
 		case 76:
-			StringCopy(&Var2, "FEET_P2_20_8", 16);
+			StringCopy(&Var2, "FEET_P2_20_8" /* GXT: Purple Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 8;
 			iVar1 = 145;
 			break;
 		
 		case 77:
-			StringCopy(&Var2, "FEET_P2_20_9", 16);
+			StringCopy(&Var2, "FEET_P2_20_9" /* GXT: Brown Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 9;
 			iVar1 = 110;
 			break;
 		
 		case 78:
-			StringCopy(&Var2, "FEET_P2_20_10", 16);
+			StringCopy(&Var2, "FEET_P2_20_10" /* GXT: Chocolate Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 10;
 			iVar1 = 120;
 			break;
 		
 		case 79:
-			StringCopy(&Var2, "FEET_P2_20_11", 16);
+			StringCopy(&Var2, "FEET_P2_20_11" /* GXT: Green Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 11;
 			iVar1 = 150;
 			break;
 		
 		case 80:
-			StringCopy(&Var2, "FEET_P2_20_12", 16);
+			StringCopy(&Var2, "FEET_P2_20_12" /* GXT: Ash Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 12;
 			iVar1 = 125;
 			break;
 		
 		case 81:
-			StringCopy(&Var2, "FEET_P2_20_13", 16);
+			StringCopy(&Var2, "FEET_P2_20_13" /* GXT: Olive Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 13;
 			iVar1 = 120;
 			break;
 		
 		case 82:
-			StringCopy(&Var2, "FEET_P2_20_14", 16);
+			StringCopy(&Var2, "FEET_P2_20_14" /* GXT: Two-Tone Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 14;
 			iVar1 = 130;
 			break;
 		
 		case 83:
-			StringCopy(&Var2, "FEET_P2_20_15", 16);
+			StringCopy(&Var2, "FEET_P2_20_15" /* GXT: Yellow Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 15;
 			iVar1 = 110;
@@ -41406,27 +41406,27 @@ void func_529(int iParam0)//Position - 0x368B3
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var2, "LEGS_P2_0_0", 16);
+			StringCopy(&Var2, "LEGS_P2_0_0" /* GXT: Blue Jeans */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 1:
-			StringCopy(&Var2, "LEGS_P2_0_1", 16);
+			StringCopy(&Var2, "LEGS_P2_0_1" /* GXT: Dirty Blue Jeans */, 16);
 			iVar3 = 0;
 			iVar4 = 1;
 			iVar1 = 95;
 			break;
 		
 		case 2:
-			StringCopy(&Var2, "LEGS_P2_0_2", 16);
+			StringCopy(&Var2, "LEGS_P2_0_2" /* GXT: Navy Jeans */, 16);
 			iVar3 = 0;
 			iVar4 = 2;
 			iVar1 = 129;
 			break;
 		
 		case 3:
-			StringCopy(&Var2, "LEGS_P2_0_3", 16);
+			StringCopy(&Var2, "LEGS_P2_0_3" /* GXT: Faded Jeans */, 16);
 			iVar3 = 0;
 			iVar4 = 3;
 			iVar1 = 115;
@@ -41531,83 +41531,83 @@ void func_529(int iParam0)//Position - 0x368B3
 			break;
 		
 		case 18:
-			StringCopy(&Var2, "LEGS_P2_11_0", 16);
+			StringCopy(&Var2, "LEGS_P2_11_0" /* GXT: Black Golf Pants */, 16);
 			iVar3 = 11;
 			iVar4 = 0;
 			break;
 		
 		case 19:
-			StringCopy(&Var2, "LEGS_P2_11_1", 16);
+			StringCopy(&Var2, "LEGS_P2_11_1" /* GXT: Russet Plaid Golf Pants */, 16);
 			iVar3 = 11;
 			iVar4 = 1;
 			iVar1 = 750;
 			break;
 		
 		case 20:
-			StringCopy(&Var2, "LEGS_P2_11_2", 16);
+			StringCopy(&Var2, "LEGS_P2_11_2" /* GXT: White Golf Pants */, 16);
 			iVar3 = 11;
 			iVar4 = 2;
 			iVar1 = 650;
 			break;
 		
 		case 21:
-			StringCopy(&Var2, "LEGS_P2_11_3", 16);
+			StringCopy(&Var2, "LEGS_P2_11_3" /* GXT: Maroon Golf Pants */, 16);
 			iVar3 = 11;
 			iVar4 = 3;
 			iVar1 = 850;
 			break;
 		
 		case 22:
-			StringCopy(&Var2, "LEGS_P2_11_4", 16);
+			StringCopy(&Var2, "LEGS_P2_11_4" /* GXT: Lobster Golf Pants */, 16);
 			iVar3 = 11;
 			iVar4 = 4;
 			iVar1 = 850;
 			break;
 		
 		case 23:
-			StringCopy(&Var2, "LEGS_P2_11_5", 16);
+			StringCopy(&Var2, "LEGS_P2_11_5" /* GXT: Stone Plaid Golf Pants */, 16);
 			iVar3 = 11;
 			iVar4 = 5;
 			iVar1 = 750;
 			break;
 		
 		case 24:
-			StringCopy(&Var2, "LEGS_P2_11_6", 16);
+			StringCopy(&Var2, "LEGS_P2_11_6" /* GXT: Pink Plaid Golf Pants */, 16);
 			iVar3 = 11;
 			iVar4 = 6;
 			iVar1 = 690;
 			break;
 		
 		case 25:
-			StringCopy(&Var2, "LEGS_P2_11_7", 16);
+			StringCopy(&Var2, "LEGS_P2_11_7" /* GXT: Mint Plaid Golf Pants */, 16);
 			iVar3 = 11;
 			iVar4 = 7;
 			iVar1 = 820;
 			break;
 		
 		case 26:
-			StringCopy(&Var2, "LEGS_P2_11_8", 16);
+			StringCopy(&Var2, "LEGS_P2_11_8" /* GXT: Brown Plaid Golf Pants */, 16);
 			iVar3 = 11;
 			iVar4 = 8;
 			iVar1 = 650;
 			break;
 		
 		case 27:
-			StringCopy(&Var2, "LEGS_P2_11_9", 16);
+			StringCopy(&Var2, "LEGS_P2_11_9" /* GXT: Pale Blue Plaid Golf Pants */, 16);
 			iVar3 = 11;
 			iVar4 = 9;
 			iVar1 = 690;
 			break;
 		
 		case 28:
-			StringCopy(&Var2, "LEGS_P2_11_10", 16);
+			StringCopy(&Var2, "LEGS_P2_11_10" /* GXT: Beige Plaid Golf Pants */, 16);
 			iVar3 = 11;
 			iVar4 = 10;
 			iVar1 = 690;
 			break;
 		
 		case 29:
-			StringCopy(&Var2, "LEGS_P2_11_11", 16);
+			StringCopy(&Var2, "LEGS_P2_11_11" /* GXT: Aqua Plaid Golf Pants */, 16);
 			iVar3 = 11;
 			iVar4 = 11;
 			iVar1 = 820;
@@ -41628,421 +41628,421 @@ void func_529(int iParam0)//Position - 0x368B3
 			break;
 		
 		case 32:
-			StringCopy(&Var2, "LEGS_P2_14_0", 16);
+			StringCopy(&Var2, "LEGS_P2_14_0" /* GXT: Black Cargo Pants */, 16);
 			iVar3 = 14;
 			iVar4 = 0;
 			break;
 		
 		case 33:
-			StringCopy(&Var2, "LEGS_P2_15_0", 16);
+			StringCopy(&Var2, "LEGS_P2_15_0" /* GXT: White Shorts */, 16);
 			iVar3 = 15;
 			iVar4 = 0;
 			break;
 		
 		case 34:
-			StringCopy(&Var2, "LEGS_P2_16_0", 16);
+			StringCopy(&Var2, "LEGS_P2_16_0" /* GXT: Pink Sweatpants */, 16);
 			iVar3 = 16;
 			iVar4 = 0;
 			bVar0 = true;
 			break;
 		
 		case 35:
-			StringCopy(&Var2, "LEGS_P2_17_0", 16);
+			StringCopy(&Var2, "LEGS_P2_17_0" /* GXT: Brown Work Pants */, 16);
 			iVar3 = 17;
 			iVar4 = 0;
 			iVar1 = 58;
 			break;
 		
 		case 36:
-			StringCopy(&Var2, "LEGS_P2_17_1", 16);
+			StringCopy(&Var2, "LEGS_P2_17_1" /* GXT: Charcoal Work Pants */, 16);
 			iVar3 = 17;
 			iVar4 = 1;
 			iVar1 = 68;
 			break;
 		
 		case 37:
-			StringCopy(&Var2, "LEGS_P2_17_2", 16);
+			StringCopy(&Var2, "LEGS_P2_17_2" /* GXT: Gray Work Pants */, 16);
 			iVar3 = 17;
 			iVar4 = 2;
 			iVar1 = 65;
 			break;
 		
 		case 38:
-			StringCopy(&Var2, "LEGS_P2_17_3", 16);
+			StringCopy(&Var2, "LEGS_P2_17_3" /* GXT: Tan Work Pants */, 16);
 			iVar3 = 17;
 			iVar4 = 3;
 			iVar1 = 60;
 			break;
 		
 		case 39:
-			StringCopy(&Var2, "LEGS_P2_17_4", 16);
+			StringCopy(&Var2, "LEGS_P2_17_4" /* GXT: Blue Work Pants */, 16);
 			iVar3 = 17;
 			iVar4 = 4;
 			iVar1 = 65;
 			break;
 		
 		case 40:
-			StringCopy(&Var2, "LEGS_P2_17_5", 16);
+			StringCopy(&Var2, "LEGS_P2_17_5" /* GXT: Ash Work Pants */, 16);
 			iVar3 = 17;
 			iVar4 = 5;
 			iVar1 = 63;
 			break;
 		
 		case 41:
-			StringCopy(&Var2, "LEGS_P2_17_6", 16);
+			StringCopy(&Var2, "LEGS_P2_17_6" /* GXT: White Work Pants */, 16);
 			iVar3 = 17;
 			iVar4 = 6;
 			iVar1 = 60;
 			break;
 		
 		case 42:
-			StringCopy(&Var2, "LEGS_P2_17_7", 16);
+			StringCopy(&Var2, "LEGS_P2_17_7" /* GXT: Beige Work Pants */, 16);
 			iVar3 = 17;
 			iVar4 = 7;
 			iVar1 = 58;
 			break;
 		
 		case 43:
-			StringCopy(&Var2, "LEGS_P2_18_0", 16);
+			StringCopy(&Var2, "LEGS_P2_18_0" /* GXT: Tan Cargo Pants */, 16);
 			iVar3 = 18;
 			iVar4 = 0;
 			break;
 		
 		case 44:
-			StringCopy(&Var2, "LEGS_P2_18_1", 16);
+			StringCopy(&Var2, "LEGS_P2_18_1" /* GXT: Cream Cargo Pants */, 16);
 			iVar3 = 18;
 			iVar4 = 1;
 			break;
 		
 		case 45:
-			StringCopy(&Var2, "LEGS_P2_18_2", 16);
+			StringCopy(&Var2, "LEGS_P2_18_2" /* GXT: Silver Cargo Pants */, 16);
 			iVar3 = 18;
 			iVar4 = 2;
 			iVar1 = 99;
 			break;
 		
 		case 46:
-			StringCopy(&Var2, "LEGS_P2_18_3", 16);
+			StringCopy(&Var2, "LEGS_P2_18_3" /* GXT: Gray Cargo Pants */, 16);
 			iVar3 = 18;
 			iVar4 = 3;
 			iVar1 = 105;
 			break;
 		
 		case 47:
-			StringCopy(&Var2, "LEGS_P2_18_4", 16);
+			StringCopy(&Var2, "LEGS_P2_18_4" /* GXT: Charcoal Cargo Pants */, 16);
 			iVar3 = 18;
 			iVar4 = 4;
 			iVar1 = 110;
 			break;
 		
 		case 48:
-			StringCopy(&Var2, "LEGS_P2_18_5", 16);
+			StringCopy(&Var2, "LEGS_P2_18_5" /* GXT: Green Cargo Pants */, 16);
 			iVar3 = 18;
 			iVar4 = 5;
 			iVar1 = 110;
 			break;
 		
 		case 49:
-			StringCopy(&Var2, "LEGS_P2_18_6", 16);
+			StringCopy(&Var2, "LEGS_P2_18_6" /* GXT: White Cargo Pants */, 16);
 			iVar3 = 18;
 			iVar4 = 6;
 			iVar1 = 99;
 			break;
 		
 		case 50:
-			StringCopy(&Var2, "LEGS_P2_18_7", 16);
+			StringCopy(&Var2, "LEGS_P2_18_7" /* GXT: Urban Camo Cargo Pants */, 16);
 			iVar3 = 18;
 			iVar4 = 7;
 			iVar1 = 110;
 			break;
 		
 		case 51:
-			StringCopy(&Var2, "LEGS_P2_18_8", 16);
+			StringCopy(&Var2, "LEGS_P2_18_8" /* GXT: Desert Camo Cargo Pants */, 16);
 			iVar3 = 18;
 			iVar4 = 8;
 			iVar1 = 110;
 			break;
 		
 		case 52:
-			StringCopy(&Var2, "LEGS_P2_18_9", 16);
+			StringCopy(&Var2, "LEGS_P2_18_9" /* GXT: Field Camo Cargo Pants */, 16);
 			iVar3 = 18;
 			iVar4 = 9;
 			iVar1 = 105;
 			break;
 		
 		case 53:
-			StringCopy(&Var2, "LEGS_P2_18_10", 16);
+			StringCopy(&Var2, "LEGS_P2_18_10" /* GXT: Forest Camo Cargo Pants */, 16);
 			iVar3 = 18;
 			iVar4 = 10;
 			iVar1 = 105;
 			break;
 		
 		case 54:
-			StringCopy(&Var2, "LEGS_P2_19_0", 16);
+			StringCopy(&Var2, "LEGS_P2_19_0" /* GXT: Black Shorts */, 16);
 			iVar3 = 19;
 			iVar4 = 0;
 			iVar1 = 15;
 			break;
 		
 		case 55:
-			StringCopy(&Var2, "LEGS_P2_19_1", 16);
+			StringCopy(&Var2, "LEGS_P2_19_1" /* GXT: Pale Blue Shorts */, 16);
 			iVar3 = 19;
 			iVar4 = 1;
 			iVar1 = 15;
 			break;
 		
 		case 56:
-			StringCopy(&Var2, "LEGS_P2_19_2", 16);
+			StringCopy(&Var2, "LEGS_P2_19_2" /* GXT: Orange Shorts */, 16);
 			iVar3 = 19;
 			iVar4 = 2;
 			iVar1 = 15;
 			break;
 		
 		case 57:
-			StringCopy(&Var2, "LEGS_P2_19_3", 16);
+			StringCopy(&Var2, "LEGS_P2_19_3" /* GXT: Blue Shorts */, 16);
 			iVar3 = 19;
 			iVar4 = 3;
 			iVar1 = 15;
 			break;
 		
 		case 58:
-			StringCopy(&Var2, "LEGS_P2_19_4", 16);
+			StringCopy(&Var2, "LEGS_P2_19_4" /* GXT: Slate Shorts */, 16);
 			iVar3 = 19;
 			iVar4 = 4;
 			iVar1 = 15;
 			break;
 		
 		case 59:
-			StringCopy(&Var2, "LEGS_P2_19_5", 16);
+			StringCopy(&Var2, "LEGS_P2_19_5" /* GXT: Green Shorts */, 16);
 			iVar3 = 19;
 			iVar4 = 5;
 			iVar1 = 15;
 			break;
 		
 		case 60:
-			StringCopy(&Var2, "LEGS_P2_19_6", 16);
+			StringCopy(&Var2, "LEGS_P2_19_6" /* GXT: Crimson Shorts */, 16);
 			iVar3 = 19;
 			iVar4 = 6;
 			iVar1 = 15;
 			break;
 		
 		case 61:
-			StringCopy(&Var2, "LEGS_P2_19_7", 16);
+			StringCopy(&Var2, "LEGS_P2_19_7" /* GXT: Pale Blue Stripe Shorts */, 16);
 			iVar3 = 19;
 			iVar4 = 7;
 			iVar1 = 15;
 			break;
 		
 		case 62:
-			StringCopy(&Var2, "LEGS_P2_20_0", 16);
+			StringCopy(&Var2, "LEGS_P2_20_0" /* GXT: Gray Pants */, 16);
 			iVar3 = 20;
 			iVar4 = 0;
 			iVar1 = 600;
 			break;
 		
 		case 63:
-			StringCopy(&Var2, "LEGS_P2_20_1", 16);
+			StringCopy(&Var2, "LEGS_P2_20_1" /* GXT: Khaki Pants */, 16);
 			iVar3 = 20;
 			iVar4 = 1;
 			iVar1 = 600;
 			break;
 		
 		case 64:
-			StringCopy(&Var2, "LEGS_P2_20_2", 16);
+			StringCopy(&Var2, "LEGS_P2_20_2" /* GXT: Charcoal Pants */, 16);
 			iVar3 = 20;
 			iVar4 = 2;
 			iVar1 = 600;
 			break;
 		
 		case 65:
-			StringCopy(&Var2, "LEGS_P2_20_3", 16);
+			StringCopy(&Var2, "LEGS_P2_20_3" /* GXT: Cream Pants */, 16);
 			iVar3 = 20;
 			iVar4 = 3;
 			iVar1 = 600;
 			break;
 		
 		case 66:
-			StringCopy(&Var2, "LEGS_P2_20_4", 16);
+			StringCopy(&Var2, "LEGS_P2_20_4" /* GXT: Stone Pants */, 16);
 			iVar3 = 20;
 			iVar4 = 4;
 			iVar1 = 600;
 			break;
 		
 		case 67:
-			StringCopy(&Var2, "LEGS_P2_20_5", 16);
+			StringCopy(&Var2, "LEGS_P2_20_5" /* GXT: Black Pants */, 16);
 			iVar3 = 20;
 			iVar4 = 5;
 			iVar1 = 600;
 			break;
 		
 		case 68:
-			StringCopy(&Var2, "LEGS_P2_20_6", 16);
+			StringCopy(&Var2, "LEGS_P2_20_6" /* GXT: Ash Pants */, 16);
 			iVar3 = 20;
 			iVar4 = 6;
 			iVar1 = 600;
 			break;
 		
 		case 69:
-			StringCopy(&Var2, "LEGS_P2_20_7", 16);
+			StringCopy(&Var2, "LEGS_P2_20_7" /* GXT: Beige Pants */, 16);
 			iVar3 = 20;
 			iVar4 = 7;
 			iVar1 = 600;
 			break;
 		
 		case 70:
-			StringCopy(&Var2, "LEGS_P2_20_8", 16);
+			StringCopy(&Var2, "LEGS_P2_20_8" /* GXT: Brown Pants */, 16);
 			iVar3 = 20;
 			iVar4 = 8;
 			iVar1 = 600;
 			break;
 		
 		case 71:
-			StringCopy(&Var2, "LEGS_P2_21_0", 16);
+			StringCopy(&Var2, "LEGS_P2_21_0" /* GXT: Beige Cheap Pants */, 16);
 			iVar3 = 21;
 			iVar4 = 0;
 			iVar1 = 80;
 			break;
 		
 		case 72:
-			StringCopy(&Var2, "LEGS_P2_21_1", 16);
+			StringCopy(&Var2, "LEGS_P2_21_1" /* GXT: Blue Cheap Pants */, 16);
 			iVar3 = 21;
 			iVar4 = 1;
 			iVar1 = 80;
 			break;
 		
 		case 73:
-			StringCopy(&Var2, "LEGS_P2_21_2", 16);
+			StringCopy(&Var2, "LEGS_P2_21_2" /* GXT: Brown Plaid Cheap Pants */, 16);
 			iVar3 = 21;
 			iVar4 = 2;
 			iVar1 = 80;
 			break;
 		
 		case 74:
-			StringCopy(&Var2, "LEGS_P2_21_3", 16);
+			StringCopy(&Var2, "LEGS_P2_21_3" /* GXT: Burgundy Cheap Pants */, 16);
 			iVar3 = 21;
 			iVar4 = 3;
 			iVar1 = 80;
 			break;
 		
 		case 75:
-			StringCopy(&Var2, "LEGS_P2_21_4", 16);
+			StringCopy(&Var2, "LEGS_P2_21_4" /* GXT: Murky Plaid Cheap Pants */, 16);
 			iVar3 = 21;
 			iVar4 = 4;
 			iVar1 = 80;
 			break;
 		
 		case 76:
-			StringCopy(&Var2, "LEGS_P2_21_5", 16);
+			StringCopy(&Var2, "LEGS_P2_21_5" /* GXT: Mint Plaid Cheap Pants */, 16);
 			iVar3 = 21;
 			iVar4 = 5;
 			iVar1 = 80;
 			break;
 		
 		case 77:
-			StringCopy(&Var2, "LEGS_P2_21_6", 16);
+			StringCopy(&Var2, "LEGS_P2_21_6" /* GXT: Green Plaid Cheap Pants */, 16);
 			iVar3 = 21;
 			iVar4 = 6;
 			iVar1 = 80;
 			break;
 		
 		case 78:
-			StringCopy(&Var2, "LEGS_P2_21_7", 16);
+			StringCopy(&Var2, "LEGS_P2_21_7" /* GXT: Blue-Gray Cheap Pants */, 16);
 			iVar3 = 21;
 			iVar4 = 7;
 			iVar1 = 80;
 			break;
 		
 		case 79:
-			StringCopy(&Var2, "LEGS_P2_21_8", 16);
+			StringCopy(&Var2, "LEGS_P2_21_8" /* GXT: Caramel Cheap Pants */, 16);
 			iVar3 = 21;
 			iVar4 = 8;
 			iVar1 = 80;
 			break;
 		
 		case 80:
-			StringCopy(&Var2, "LEGS_P2_21_9", 16);
+			StringCopy(&Var2, "LEGS_P2_21_9" /* GXT: Mocha Cheap Pants */, 16);
 			iVar3 = 21;
 			iVar4 = 9;
 			iVar1 = 80;
 			break;
 		
 		case 81:
-			StringCopy(&Var2, "LEGS_P2_22_0", 16);
+			StringCopy(&Var2, "LEGS_P2_22_0" /* GXT: White Briefs */, 16);
 			iVar3 = 22;
 			iVar4 = 0;
 			break;
 		
 		case 82:
-			StringCopy(&Var2, "LEGS_P2_22_1", 16);
+			StringCopy(&Var2, "LEGS_P2_22_1" /* GXT: Green Briefs */, 16);
 			iVar3 = 22;
 			iVar4 = 1;
 			iVar1 = 12;
 			break;
 		
 		case 83:
-			StringCopy(&Var2, "LEGS_P2_22_2", 16);
+			StringCopy(&Var2, "LEGS_P2_22_2" /* GXT: Gray Briefs */, 16);
 			iVar3 = 22;
 			iVar4 = 2;
 			iVar1 = 12;
 			break;
 		
 		case 84:
-			StringCopy(&Var2, "LEGS_P2_22_3", 16);
+			StringCopy(&Var2, "LEGS_P2_22_3" /* GXT: Leopardskin Briefs */, 16);
 			iVar3 = 22;
 			iVar4 = 3;
 			iVar1 = 22;
 			break;
 		
 		case 85:
-			StringCopy(&Var2, "LEGS_P2_22_4", 16);
+			StringCopy(&Var2, "LEGS_P2_22_4" /* GXT: Impotent Rage Briefs */, 16);
 			iVar3 = 22;
 			iVar4 = 4;
 			iVar1 = 18;
 			break;
 		
 		case 86:
-			StringCopy(&Var2, "LEGS_P2_22_5", 16);
+			StringCopy(&Var2, "LEGS_P2_22_5" /* GXT: Pink Leopardskin Briefs */, 16);
 			iVar3 = 22;
 			iVar4 = 5;
 			iVar1 = 20;
 			break;
 		
 		case 87:
-			StringCopy(&Var2, "LEGS_P2_22_6", 16);
+			StringCopy(&Var2, "LEGS_P2_22_6" /* GXT: Space Monkey Briefs 1 */, 16);
 			iVar3 = 22;
 			iVar4 = 6;
 			iVar1 = 30;
 			break;
 		
 		case 88:
-			StringCopy(&Var2, "LEGS_P2_22_7", 16);
+			StringCopy(&Var2, "LEGS_P2_22_7" /* GXT: Space Monkey Briefs 2 */, 16);
 			iVar3 = 22;
 			iVar4 = 7;
 			iVar1 = 30;
 			break;
 		
 		case 89:
-			StringCopy(&Var2, "LEGS_P2_22_8", 16);
+			StringCopy(&Var2, "LEGS_P2_22_8" /* GXT: Space Monkey Briefs 3 */, 16);
 			iVar3 = 22;
 			iVar4 = 8;
 			iVar1 = 30;
 			break;
 		
 		case 90:
-			StringCopy(&Var2, "LEGS_P2_22_9", 16);
+			StringCopy(&Var2, "LEGS_P2_22_9" /* GXT: Space Monkey Briefs 4 */, 16);
 			iVar3 = 22;
 			iVar4 = 9;
 			iVar1 = 30;
 			break;
 		
 		case 91:
-			StringCopy(&Var2, "LEGS_P2_23_0", 16);
+			StringCopy(&Var2, "LEGS_P2_23_0" /* GXT: Sweatpants */, 16);
 			iVar3 = 23;
 			iVar4 = 0;
 			break;
 		
 		case 92:
-			StringCopy(&Var2, "LEGS_P2_24_0", 16);
+			StringCopy(&Var2, "LEGS_P2_24_0" /* GXT: Brown Tuxedo Pants */, 16);
 			iVar3 = 24;
 			iVar4 = 0;
 			break;
@@ -42160,730 +42160,730 @@ void func_531(int iParam0)//Position - 0x3745B
 	switch (iParam0)
 	{
 		case 136:
-			StringCopy(&Var2, "TORSO_P2_21_0", 16);
+			StringCopy(&Var2, "TORSO_P2_21_0" /* GXT: Peyton Blue Blouson */, 16);
 			iVar3 = 21;
 			iVar4 = 0;
 			iVar1 = 32;
 			break;
 		
 		case 137:
-			StringCopy(&Var2, "TORSO_P2_21_1", 16);
+			StringCopy(&Var2, "TORSO_P2_21_1" /* GXT: Overlooked Red Blouson */, 16);
 			iVar3 = 21;
 			iVar4 = 1;
 			iVar1 = 39;
 			break;
 		
 		case 138:
-			StringCopy(&Var2, "TORSO_P2_21_2", 16);
+			StringCopy(&Var2, "TORSO_P2_21_2" /* GXT: Natural Blouson */, 16);
 			iVar3 = 21;
 			iVar4 = 2;
 			iVar1 = 40;
 			break;
 		
 		case 139:
-			StringCopy(&Var2, "TORSO_P2_21_3", 16);
+			StringCopy(&Var2, "TORSO_P2_21_3" /* GXT: Sky Blue Blouson */, 16);
 			iVar3 = 21;
 			iVar4 = 3;
 			iVar1 = 42;
 			break;
 		
 		case 140:
-			StringCopy(&Var2, "TORSO_P2_21_4", 16);
+			StringCopy(&Var2, "TORSO_P2_21_4" /* GXT: Deep Green Blouson */, 16);
 			iVar3 = 21;
 			iVar4 = 4;
 			iVar1 = 45;
 			break;
 		
 		case 141:
-			StringCopy(&Var2, "TORSO_P2_21_5", 16);
+			StringCopy(&Var2, "TORSO_P2_21_5" /* GXT: Champagne Driver Blouson */, 16);
 			iVar3 = 21;
 			iVar4 = 5;
 			iVar1 = 48;
 			break;
 		
 		case 142:
-			StringCopy(&Var2, "TORSO_P2_21_6", 16);
+			StringCopy(&Var2, "TORSO_P2_21_6" /* GXT: Snakeskin Blouson */, 16);
 			iVar3 = 21;
 			iVar4 = 6;
 			iVar1 = 52;
 			break;
 		
 		case 143:
-			StringCopy(&Var2, "TORSO_P2_21_7", 16);
+			StringCopy(&Var2, "TORSO_P2_21_7" /* GXT: Desert Brown Blouson */, 16);
 			iVar3 = 21;
 			iVar4 = 7;
 			iVar1 = 55;
 			break;
 		
 		case 144:
-			StringCopy(&Var2, "TORSO_P2_22_0", 16);
+			StringCopy(&Var2, "TORSO_P2_22_0" /* GXT: Black Striped Leather Jacket */, 16);
 			iVar3 = 22;
 			iVar4 = 0;
 			iVar1 = 390;
 			break;
 		
 		case 145:
-			StringCopy(&Var2, "TORSO_P2_22_1", 16);
+			StringCopy(&Var2, "TORSO_P2_22_1" /* GXT: Black Leather Jacket */, 16);
 			iVar3 = 22;
 			iVar4 = 1;
 			iVar1 = 390;
 			break;
 		
 		case 146:
-			StringCopy(&Var2, "TORSO_P2_22_2", 16);
+			StringCopy(&Var2, "TORSO_P2_22_2" /* GXT: Chestnut Leather Jacket */, 16);
 			iVar3 = 22;
 			iVar4 = 2;
 			iVar1 = 560;
 			break;
 		
 		case 147:
-			StringCopy(&Var2, "TORSO_P2_22_3", 16);
+			StringCopy(&Var2, "TORSO_P2_22_3" /* GXT: Red Leather Jacket */, 16);
 			iVar3 = 22;
 			iVar4 = 3;
 			iVar1 = 390;
 			break;
 		
 		case 148:
-			StringCopy(&Var2, "TORSO_P2_22_4", 16);
+			StringCopy(&Var2, "TORSO_P2_22_4" /* GXT: White Leather Jacket */, 16);
 			iVar3 = 22;
 			iVar4 = 4;
 			iVar1 = 390;
 			break;
 		
 		case 149:
-			StringCopy(&Var2, "TORSO_P2_22_5", 16);
+			StringCopy(&Var2, "TORSO_P2_22_5" /* GXT: Blue Leather Jacket */, 16);
 			iVar3 = 22;
 			iVar4 = 5;
 			iVar1 = 390;
 			break;
 		
 		case 150:
-			StringCopy(&Var2, "TORSO_P2_22_6", 16);
+			StringCopy(&Var2, "TORSO_P2_22_6" /* GXT: Lonewolf Leather Jacket */, 16);
 			iVar3 = 22;
 			iVar4 = 6;
 			iVar1 = 560;
 			break;
 		
 		case 151:
-			StringCopy(&Var2, "TORSO_P2_22_7", 16);
+			StringCopy(&Var2, "TORSO_P2_22_7" /* GXT: Brown Leather Jacket */, 16);
 			iVar3 = 22;
 			iVar4 = 7;
 			iVar1 = 390;
 			break;
 		
 		case 152:
-			StringCopy(&Var2, "TORSO_P2_22_8", 16);
+			StringCopy(&Var2, "TORSO_P2_22_8" /* GXT: Gray Striped Leather Jacket */, 16);
 			iVar3 = 22;
 			iVar4 = 8;
 			iVar1 = 390;
 			break;
 		
 		case 153:
-			StringCopy(&Var2, "TORSO_P2_22_9", 16);
+			StringCopy(&Var2, "TORSO_P2_22_9" /* GXT: Gray Banded Leather Jacket */, 16);
 			iVar3 = 22;
 			iVar4 = 9;
 			iVar1 = 390;
 			break;
 		
 		case 154:
-			StringCopy(&Var2, "TORSO_P2_22_10", 16);
+			StringCopy(&Var2, "TORSO_P2_22_10" /* GXT: Russet Leather Jacket */, 16);
 			iVar3 = 22;
 			iVar4 = 10;
 			iVar1 = 390;
 			break;
 		
 		case 155:
-			StringCopy(&Var2, "TORSO_P2_22_11", 16);
+			StringCopy(&Var2, "TORSO_P2_22_11" /* GXT: Brown Suede Jacket */, 16);
 			iVar3 = 22;
 			iVar4 = 11;
 			iVar1 = 3950;
 			break;
 		
 		case 156:
-			StringCopy(&Var2, "TORSO_P2_23_0", 16);
+			StringCopy(&Var2, "TORSO_P2_23_0" /* GXT: Brown Shooting Vest */, 16);
 			iVar3 = 23;
 			iVar4 = 0;
 			iVar1 = 150;
 			break;
 		
 		case 157:
-			StringCopy(&Var2, "TORSO_P2_23_1", 16);
+			StringCopy(&Var2, "TORSO_P2_23_1" /* GXT: Woodland Shooting Vest */, 16);
 			iVar3 = 23;
 			iVar4 = 1;
 			break;
 		
 		case 158:
-			StringCopy(&Var2, "TORSO_P2_23_2", 16);
+			StringCopy(&Var2, "TORSO_P2_23_2" /* GXT: Taupe Shooting Vest */, 16);
 			iVar3 = 23;
 			iVar4 = 2;
 			iVar1 = 150;
 			break;
 		
 		case 159:
-			StringCopy(&Var2, "TORSO_P2_23_3", 16);
+			StringCopy(&Var2, "TORSO_P2_23_3" /* GXT: Brown Woven Shooting Vest */, 16);
 			iVar3 = 23;
 			iVar4 = 3;
 			iVar1 = 150;
 			break;
 		
 		case 160:
-			StringCopy(&Var2, "TORSO_P2_23_4", 16);
+			StringCopy(&Var2, "TORSO_P2_23_4" /* GXT: Field Shooting Vest */, 16);
 			iVar3 = 23;
 			iVar4 = 4;
 			iVar1 = 160;
 			break;
 		
 		case 161:
-			StringCopy(&Var2, "TORSO_P2_23_5", 16);
+			StringCopy(&Var2, "TORSO_P2_23_5" /* GXT: Forest Shooting Vest */, 16);
 			iVar3 = 23;
 			iVar4 = 5;
 			break;
 		
 		case 162:
-			StringCopy(&Var2, "TORSO_P2_24_0", 16);
+			StringCopy(&Var2, "TORSO_P2_24_0" /* GXT: Yellow Tank Top */, 16);
 			iVar3 = 24;
 			iVar4 = 0;
 			iVar1 = 19;
 			break;
 		
 		case 163:
-			StringCopy(&Var2, "TORSO_P2_24_1", 16);
+			StringCopy(&Var2, "TORSO_P2_24_1" /* GXT: Blue Birds Tank Top */, 16);
 			iVar3 = 24;
 			iVar4 = 1;
 			iVar1 = 20;
 			break;
 		
 		case 164:
-			StringCopy(&Var2, "TORSO_P2_24_2", 16);
+			StringCopy(&Var2, "TORSO_P2_24_2" /* GXT: Orange Pattern Tank Top */, 16);
 			iVar3 = 24;
 			iVar4 = 2;
 			iVar1 = 19;
 			break;
 		
 		case 165:
-			StringCopy(&Var2, "TORSO_P2_24_3", 16);
+			StringCopy(&Var2, "TORSO_P2_24_3" /* GXT: Blue Stars Tank Top */, 16);
 			iVar3 = 24;
 			iVar4 = 3;
 			iVar1 = 22;
 			break;
 		
 		case 166:
-			StringCopy(&Var2, "TORSO_P2_24_4", 16);
+			StringCopy(&Var2, "TORSO_P2_24_4" /* GXT: Aqua Pattern Tank Top */, 16);
 			iVar3 = 24;
 			iVar4 = 4;
 			iVar1 = 20;
 			break;
 		
 		case 167:
-			StringCopy(&Var2, "TORSO_P2_24_5", 16);
+			StringCopy(&Var2, "TORSO_P2_24_5" /* GXT: Degenatron Tank Top */, 16);
 			iVar3 = 24;
 			iVar4 = 5;
 			iVar1 = 28;
 			break;
 		
 		case 168:
-			StringCopy(&Var2, "TORSO_P2_24_6", 16);
+			StringCopy(&Var2, "TORSO_P2_24_6" /* GXT: Taco Libre Tank Top */, 16);
 			iVar3 = 24;
 			iVar4 = 6;
 			iVar1 = 28;
 			break;
 		
 		case 169:
-			StringCopy(&Var2, "TORSO_P2_24_7", 16);
+			StringCopy(&Var2, "TORSO_P2_24_7" /* GXT: Pussycat Tank Top */, 16);
 			iVar3 = 24;
 			iVar4 = 7;
 			iVar1 = 25;
 			break;
 		
 		case 170:
-			StringCopy(&Var2, "TORSO_P2_24_8", 16);
+			StringCopy(&Var2, "TORSO_P2_24_8" /* GXT: Lemon Pattern Tank Top */, 16);
 			iVar3 = 24;
 			iVar4 = 8;
 			iVar1 = 22;
 			break;
 		
 		case 171:
-			StringCopy(&Var2, "TORSO_P2_24_9", 16);
+			StringCopy(&Var2, "TORSO_P2_24_9" /* GXT: Charcoal Tank Top */, 16);
 			iVar3 = 24;
 			iVar4 = 9;
 			iVar1 = 19;
 			break;
 		
 		case 172:
-			StringCopy(&Var2, "TORSO_P2_24_10", 16);
+			StringCopy(&Var2, "TORSO_P2_24_10" /* GXT: Off-White Tank Top */, 16);
 			iVar3 = 24;
 			iVar4 = 10;
 			iVar1 = 22;
 			break;
 		
 		case 173:
-			StringCopy(&Var2, "TORSO_P2_24_11", 16);
+			StringCopy(&Var2, "TORSO_P2_24_11" /* GXT: Banded Tank Top */, 16);
 			iVar3 = 24;
 			iVar4 = 11;
 			iVar1 = 19;
 			break;
 		
 		case 174:
-			StringCopy(&Var2, "TORSO_P2_24_12", 16);
+			StringCopy(&Var2, "TORSO_P2_24_12" /* GXT: Orange Tank Top */, 16);
 			iVar3 = 24;
 			iVar4 = 12;
 			iVar1 = 20;
 			break;
 		
 		case 175:
-			StringCopy(&Var2, "TORSO_P2_24_13", 16);
+			StringCopy(&Var2, "TORSO_P2_24_13" /* GXT: Camo Tank Top */, 16);
 			iVar3 = 24;
 			iVar4 = 13;
 			iVar1 = 25;
 			break;
 		
 		case 176:
-			StringCopy(&Var2, "TORSO_P2_24_14", 16);
+			StringCopy(&Var2, "TORSO_P2_24_14" /* GXT: Indigo Tank Top */, 16);
 			iVar3 = 24;
 			iVar4 = 14;
 			iVar1 = 20;
 			break;
 		
 		case 177:
-			StringCopy(&Var2, "TORSO_P2_24_15", 16);
+			StringCopy(&Var2, "TORSO_P2_24_15" /* GXT: Liberty Cocks Tank Top */, 16);
 			iVar3 = 24;
 			iVar4 = 15;
 			iVar1 = 28;
 			break;
 		
 		case 178:
-			StringCopy(&Var2, "TORSO_P2_25_0", 16);
+			StringCopy(&Var2, "TORSO_P2_25_0" /* GXT: Blue Two-Tone Shirt */, 16);
 			iVar3 = 25;
 			iVar4 = 0;
 			iVar1 = 35;
 			break;
 		
 		case 179:
-			StringCopy(&Var2, "TORSO_P2_25_1", 16);
+			StringCopy(&Var2, "TORSO_P2_25_1" /* GXT: Circles Shirt */, 16);
 			iVar3 = 25;
 			iVar4 = 1;
 			iVar1 = 40;
 			break;
 		
 		case 180:
-			StringCopy(&Var2, "TORSO_P2_25_2", 16);
+			StringCopy(&Var2, "TORSO_P2_25_2" /* GXT: Gray Two-Tone Shirt */, 16);
 			iVar3 = 25;
 			iVar4 = 2;
 			iVar1 = 45;
 			break;
 		
 		case 181:
-			StringCopy(&Var2, "TORSO_P2_25_3", 16);
+			StringCopy(&Var2, "TORSO_P2_25_3" /* GXT: Mustard Shirt */, 16);
 			iVar3 = 25;
 			iVar4 = 3;
 			iVar1 = 45;
 			break;
 		
 		case 182:
-			StringCopy(&Var2, "TORSO_P2_25_4", 16);
+			StringCopy(&Var2, "TORSO_P2_25_4" /* GXT: Blue Checkered Shirt */, 16);
 			iVar3 = 25;
 			iVar4 = 4;
 			iVar1 = 49;
 			break;
 		
 		case 183:
-			StringCopy(&Var2, "TORSO_P2_25_5", 16);
+			StringCopy(&Var2, "TORSO_P2_25_5" /* GXT: Floral Shirt */, 16);
 			iVar3 = 25;
 			iVar4 = 5;
 			iVar1 = 820;
 			break;
 		
 		case 184:
-			StringCopy(&Var2, "TORSO_P2_25_6", 16);
+			StringCopy(&Var2, "TORSO_P2_25_6" /* GXT: Beige Shirt */, 16);
 			iVar3 = 25;
 			iVar4 = 6;
 			iVar1 = 790;
 			break;
 		
 		case 185:
-			StringCopy(&Var2, "TORSO_P2_25_7", 16);
+			StringCopy(&Var2, "TORSO_P2_25_7" /* GXT: Lavender Shirt */, 16);
 			iVar3 = 25;
 			iVar4 = 7;
 			iVar1 = 820;
 			break;
 		
 		case 186:
-			StringCopy(&Var2, "TORSO_P2_25_8", 16);
+			StringCopy(&Var2, "TORSO_P2_25_8" /* GXT: Black Shirt */, 16);
 			iVar3 = 25;
 			iVar4 = 8;
 			iVar1 = 929;
 			break;
 		
 		case 187:
-			StringCopy(&Var2, "TORSO_P2_25_9", 16);
+			StringCopy(&Var2, "TORSO_P2_25_9" /* GXT: Monogrammed Shirt */, 16);
 			iVar3 = 25;
 			iVar4 = 9;
 			iVar1 = 40;
 			break;
 		
 		case 188:
-			StringCopy(&Var2, "TORSO_P2_25_10", 16);
+			StringCopy(&Var2, "TORSO_P2_25_10" /* GXT: Paisley Shirt */, 16);
 			iVar3 = 25;
 			iVar4 = 10;
 			iVar1 = 850;
 			break;
 		
 		case 189:
-			StringCopy(&Var2, "TORSO_P2_25_11", 16);
+			StringCopy(&Var2, "TORSO_P2_25_11" /* GXT: Camel Shirt */, 16);
 			iVar3 = 25;
 			iVar4 = 11;
 			iVar1 = 790;
 			break;
 		
 		case 190:
-			StringCopy(&Var2, "TORSO_P2_26_0", 16);
+			StringCopy(&Var2, "TORSO_P2_26_0" /* GXT: Beige Tight Jacket */, 16);
 			iVar3 = 26;
 			iVar4 = 0;
 			break;
 		
 		case 191:
-			StringCopy(&Var2, "TORSO_P2_26_1", 16);
+			StringCopy(&Var2, "TORSO_P2_26_1" /* GXT: Blue Tight Jacket */, 16);
 			iVar3 = 26;
 			iVar4 = 1;
 			break;
 		
 		case 192:
-			StringCopy(&Var2, "TORSO_P2_26_2", 16);
+			StringCopy(&Var2, "TORSO_P2_26_2" /* GXT: Brown Plaid Tight Jacket */, 16);
 			iVar3 = 26;
 			iVar4 = 2;
 			break;
 		
 		case 193:
-			StringCopy(&Var2, "TORSO_P2_26_3", 16);
+			StringCopy(&Var2, "TORSO_P2_26_3" /* GXT: Burgundy Tight Jacket */, 16);
 			iVar3 = 26;
 			iVar4 = 3;
 			break;
 		
 		case 194:
-			StringCopy(&Var2, "TORSO_P2_26_4", 16);
+			StringCopy(&Var2, "TORSO_P2_26_4" /* GXT: Murky Plaid Tight Jacket */, 16);
 			iVar3 = 26;
 			iVar4 = 4;
 			break;
 		
 		case 195:
-			StringCopy(&Var2, "TORSO_P2_26_5", 16);
+			StringCopy(&Var2, "TORSO_P2_26_5" /* GXT: Mint Plaid Tight Jacket */, 16);
 			iVar3 = 26;
 			iVar4 = 5;
 			break;
 		
 		case 196:
-			StringCopy(&Var2, "TORSO_P2_26_6", 16);
+			StringCopy(&Var2, "TORSO_P2_26_6" /* GXT: Green Plaid Tight Jacket */, 16);
 			iVar3 = 26;
 			iVar4 = 6;
 			break;
 		
 		case 197:
-			StringCopy(&Var2, "TORSO_P2_26_7", 16);
+			StringCopy(&Var2, "TORSO_P2_26_7" /* GXT: Blue-Gray Tight Jacket */, 16);
 			iVar3 = 26;
 			iVar4 = 7;
 			break;
 		
 		case 198:
-			StringCopy(&Var2, "TORSO_P2_26_8", 16);
+			StringCopy(&Var2, "TORSO_P2_26_8" /* GXT: Caramel Tight Jacket */, 16);
 			iVar3 = 26;
 			iVar4 = 8;
 			break;
 		
 		case 199:
-			StringCopy(&Var2, "TORSO_P2_26_9", 16);
+			StringCopy(&Var2, "TORSO_P2_26_9" /* GXT: Mocha Tight Jacket */, 16);
 			iVar3 = 26;
 			iVar4 = 9;
 			break;
 		
 		case 200:
-			StringCopy(&Var2, "TORSO_P2_27_0", 16);
+			StringCopy(&Var2, "TORSO_P2_27_0" /* GXT: Gray Jacket */, 16);
 			iVar3 = 27;
 			iVar4 = 0;
 			iVar1 = 2200;
 			break;
 		
 		case 201:
-			StringCopy(&Var2, "TORSO_P2_27_1", 16);
+			StringCopy(&Var2, "TORSO_P2_27_1" /* GXT: Oatmeal Jacket */, 16);
 			iVar3 = 27;
 			iVar4 = 1;
 			iVar1 = 2500;
 			break;
 		
 		case 202:
-			StringCopy(&Var2, "TORSO_P2_27_2", 16);
+			StringCopy(&Var2, "TORSO_P2_27_2" /* GXT: Charcoal Jacket */, 16);
 			iVar3 = 27;
 			iVar4 = 2;
 			iVar1 = 2500;
 			break;
 		
 		case 203:
-			StringCopy(&Var2, "TORSO_P2_27_3", 16);
+			StringCopy(&Var2, "TORSO_P2_27_3" /* GXT: Off-White Jacket */, 16);
 			iVar3 = 27;
 			iVar4 = 3;
 			iVar1 = 2200;
 			break;
 		
 		case 204:
-			StringCopy(&Var2, "TORSO_P2_27_4", 16);
+			StringCopy(&Var2, "TORSO_P2_27_4" /* GXT: Cream Jacket */, 16);
 			iVar3 = 27;
 			iVar4 = 4;
 			iVar1 = 2500;
 			break;
 		
 		case 205:
-			StringCopy(&Var2, "TORSO_P2_27_5", 16);
+			StringCopy(&Var2, "TORSO_P2_27_5" /* GXT: Black Jacket */, 16);
 			iVar3 = 27;
 			iVar4 = 5;
 			iVar1 = 2500;
 			break;
 		
 		case 206:
-			StringCopy(&Var2, "TORSO_P2_27_6", 16);
+			StringCopy(&Var2, "TORSO_P2_27_6" /* GXT: Ash Jacket */, 16);
 			iVar3 = 27;
 			iVar4 = 6;
 			iVar1 = 2200;
 			break;
 		
 		case 207:
-			StringCopy(&Var2, "TORSO_P2_28_0", 16);
+			StringCopy(&Var2, "TORSO_P2_28_0" /* GXT: Dark Gray Sweater */, 16);
 			iVar3 = 28;
 			iVar4 = 0;
 			iVar1 = 1100;
 			break;
 		
 		case 208:
-			StringCopy(&Var2, "TORSO_P2_28_1", 16);
+			StringCopy(&Var2, "TORSO_P2_28_1" /* GXT: Pale Gray Sweater */, 16);
 			iVar3 = 28;
 			iVar4 = 1;
 			iVar1 = 1200;
 			break;
 		
 		case 209:
-			StringCopy(&Var2, "TORSO_P2_28_2", 16);
+			StringCopy(&Var2, "TORSO_P2_28_2" /* GXT: Taupe Sweater */, 16);
 			iVar3 = 28;
 			iVar4 = 2;
 			iVar1 = 1220;
 			break;
 		
 		case 210:
-			StringCopy(&Var2, "TORSO_P2_28_3", 16);
+			StringCopy(&Var2, "TORSO_P2_28_3" /* GXT: Pale Blue Sweater */, 16);
 			iVar3 = 28;
 			iVar4 = 3;
 			iVar1 = 1250;
 			break;
 		
 		case 211:
-			StringCopy(&Var2, "TORSO_P2_28_4", 16);
+			StringCopy(&Var2, "TORSO_P2_28_4" /* GXT: Tangerine Sweater */, 16);
 			iVar3 = 28;
 			iVar4 = 4;
 			iVar1 = 1300;
 			break;
 		
 		case 212:
-			StringCopy(&Var2, "TORSO_P2_28_5", 16);
+			StringCopy(&Var2, "TORSO_P2_28_5" /* GXT: Quarry Brown Sweater */, 16);
 			iVar3 = 28;
 			iVar4 = 5;
 			iVar1 = 1360;
 			break;
 		
 		case 213:
-			StringCopy(&Var2, "TORSO_P2_28_6", 16);
+			StringCopy(&Var2, "TORSO_P2_28_6" /* GXT: Dark Chevrons Sweater */, 16);
 			iVar3 = 28;
 			iVar4 = 6;
 			iVar1 = 35;
 			break;
 		
 		case 214:
-			StringCopy(&Var2, "TORSO_P2_28_7", 16);
+			StringCopy(&Var2, "TORSO_P2_28_7" /* GXT: Zingy Chevrons Sweater */, 16);
 			iVar3 = 28;
 			iVar4 = 7;
 			iVar1 = 38;
 			break;
 		
 		case 215:
-			StringCopy(&Var2, "TORSO_P2_28_8", 16);
+			StringCopy(&Var2, "TORSO_P2_28_8" /* GXT: Rainbow Field Sweater */, 16);
 			iVar3 = 28;
 			iVar4 = 8;
 			iVar1 = 40;
 			break;
 		
 		case 216:
-			StringCopy(&Var2, "TORSO_P2_28_9", 16);
+			StringCopy(&Var2, "TORSO_P2_28_9" /* GXT: Dark Field Sweater */, 16);
 			iVar3 = 28;
 			iVar4 = 9;
 			iVar1 = 42;
 			break;
 		
 		case 217:
-			StringCopy(&Var2, "TORSO_P2_28_10", 16);
+			StringCopy(&Var2, "TORSO_P2_28_10" /* GXT: Animal Strip Sweater */, 16);
 			iVar3 = 28;
 			iVar4 = 10;
 			iVar1 = 50;
 			break;
 		
 		case 218:
-			StringCopy(&Var2, "TORSO_P2_28_11", 16);
+			StringCopy(&Var2, "TORSO_P2_28_11" /* GXT: Bill Brown Sweater */, 16);
 			iVar3 = 28;
 			iVar4 = 11;
 			iVar1 = 45;
 			break;
 		
 		case 219:
-			StringCopy(&Var2, "TORSO_P2_28_12", 16);
+			StringCopy(&Var2, "TORSO_P2_28_12" /* GXT: Mint Argyle Sweater */, 16);
 			iVar3 = 28;
 			iVar4 = 12;
 			iVar1 = 45;
 			break;
 		
 		case 220:
-			StringCopy(&Var2, "TORSO_P2_28_13", 16);
+			StringCopy(&Var2, "TORSO_P2_28_13" /* GXT: Gray Argyle Sweater */, 16);
 			iVar3 = 28;
 			iVar4 = 13;
 			iVar1 = 44;
 			break;
 		
 		case 221:
-			StringCopy(&Var2, "TORSO_P2_28_14", 16);
+			StringCopy(&Var2, "TORSO_P2_28_14" /* GXT: Grape Eighties Sweater */, 16);
 			iVar3 = 28;
 			iVar4 = 14;
 			iVar1 = 46;
 			break;
 		
 		case 222:
-			StringCopy(&Var2, "TORSO_P2_28_15", 16);
+			StringCopy(&Var2, "TORSO_P2_28_15" /* GXT: Geometric Eighties Sweater */, 16);
 			iVar3 = 28;
 			iVar4 = 15;
 			iVar1 = 52;
 			break;
 		
 		case 223:
-			StringCopy(&Var2, "TORSO_P2_29_0", 16);
+			StringCopy(&Var2, "TORSO_P2_29_0" /* GXT: Black Jacket */, 16);
 			iVar3 = 29;
 			iVar4 = 0;
 			iVar1 = 3200;
 			break;
 		
 		case 224:
-			StringCopy(&Var2, "TORSO_P2_29_1", 16);
+			StringCopy(&Var2, "TORSO_P2_29_1" /* GXT: All Black Jacket */, 16);
 			iVar3 = 29;
 			iVar4 = 1;
 			iVar1 = 3200;
 			break;
 		
 		case 225:
-			StringCopy(&Var2, "TORSO_P2_29_2", 16);
+			StringCopy(&Var2, "TORSO_P2_29_2" /* GXT: White Jacket */, 16);
 			iVar3 = 29;
 			iVar4 = 2;
 			iVar1 = 2550;
 			break;
 		
 		case 226:
-			StringCopy(&Var2, "TORSO_P2_29_3", 16);
+			StringCopy(&Var2, "TORSO_P2_29_3" /* GXT: Cream Jacket */, 16);
 			iVar3 = 29;
 			iVar4 = 3;
 			iVar1 = 2750;
 			break;
 		
 		case 227:
-			StringCopy(&Var2, "TORSO_P2_29_4", 16);
+			StringCopy(&Var2, "TORSO_P2_29_4" /* GXT: Oatmeal Jacket */, 16);
 			iVar3 = 29;
 			iVar4 = 4;
 			iVar1 = 2590;
 			break;
 		
 		case 228:
-			StringCopy(&Var2, "TORSO_P2_29_5", 16);
+			StringCopy(&Var2, "TORSO_P2_29_5" /* GXT: Blue-Gray Jacket */, 16);
 			iVar3 = 29;
 			iVar4 = 5;
 			iVar1 = 2750;
 			break;
 		
 		case 229:
-			StringCopy(&Var2, "TORSO_P2_29_6", 16);
+			StringCopy(&Var2, "TORSO_P2_29_6" /* GXT: Beige Jacket */, 16);
 			iVar3 = 29;
 			iVar4 = 6;
 			iVar1 = 2550;
 			break;
 		
 		case 230:
-			StringCopy(&Var2, "TORSO_P2_29_7", 16);
+			StringCopy(&Var2, "TORSO_P2_29_7" /* GXT: Off-White Jacket */, 16);
 			iVar3 = 29;
 			iVar4 = 7;
 			iVar1 = 2590;
 			break;
 		
 		case 231:
-			StringCopy(&Var2, "TORSO_P2_29_8", 16);
+			StringCopy(&Var2, "TORSO_P2_29_8" /* GXT: Gray Suit Jacket */, 16);
 			iVar3 = 29;
 			iVar4 = 8;
 			iVar1 = 2720;
 			break;
 		
 		case 232:
-			StringCopy(&Var2, "TORSO_P2_29_9", 16);
+			StringCopy(&Var2, "TORSO_P2_29_9" /* GXT: Ash Suit Jacket */, 16);
 			iVar3 = 29;
 			iVar4 = 9;
 			iVar1 = 2750;
 			break;
 		
 		case 233:
-			StringCopy(&Var2, "TORSO_P2_30_0", 16);
+			StringCopy(&Var2, "TORSO_P2_30_0" /* GXT: Gray Blazer */, 16);
 			iVar3 = 30;
 			iVar4 = 0;
 			iVar1 = 3250;
 			break;
 		
 		case 234:
-			StringCopy(&Var2, "TORSO_P2_30_1", 16);
+			StringCopy(&Var2, "TORSO_P2_30_1" /* GXT: Beige Blazer */, 16);
 			iVar3 = 30;
 			iVar4 = 1;
 			iVar1 = 2950;
 			break;
 		
 		case 235:
-			StringCopy(&Var2, "TORSO_P2_30_2", 16);
+			StringCopy(&Var2, "TORSO_P2_30_2" /* GXT: Black Blazer */, 16);
 			iVar3 = 30;
 			iVar4 = 2;
 			iVar1 = 3100;
 			break;
 		
 		case 236:
-			StringCopy(&Var2, "TORSO_P2_30_3", 16);
+			StringCopy(&Var2, "TORSO_P2_30_3" /* GXT: Brown Blazer */, 16);
 			iVar3 = 30;
 			iVar4 = 3;
 			iVar1 = 3150;
 			break;
 		
 		case 237:
-			StringCopy(&Var2, "TORSO_P2_30_4", 16);
+			StringCopy(&Var2, "TORSO_P2_30_4" /* GXT: Navy Blazer */, 16);
 			iVar3 = 30;
 			iVar4 = 4;
 			iVar1 = 3240;
 			break;
 		
 		case 238:
-			StringCopy(&Var2, "TORSO_P2_30_5", 16);
+			StringCopy(&Var2, "TORSO_P2_30_5" /* GXT: Navy Pinstripe Blazer */, 16);
 			iVar3 = 30;
 			iVar4 = 5;
 			iVar1 = 3350;
 			break;
 		
 		case 239:
-			StringCopy(&Var2, "TORSO_P2_30_6", 16);
+			StringCopy(&Var2, "TORSO_P2_30_6" /* GXT: Blue-Gray Pinstripe Blazer */, 16);
 			iVar3 = 30;
 			iVar4 = 6;
 			iVar1 = 3400;
 			break;
 		
 		case 240:
-			StringCopy(&Var2, "TORSO_P2_30_7", 16);
+			StringCopy(&Var2, "TORSO_P2_30_7" /* GXT: Brown Pinstripe Blazer */, 16);
 			iVar3 = 30;
 			iVar4 = 7;
 			iVar1 = 3280;
 			break;
 		
 		case 241:
-			StringCopy(&Var2, "TORSO_P2_31_0", 16);
+			StringCopy(&Var2, "TORSO_P2_31_0" /* GXT: Tuxedo Jacket */, 16);
 			iVar3 = 31;
 			iVar4 = 0;
 			break;
@@ -42917,110 +42917,110 @@ void func_532(int iParam0)//Position - 0x38061
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var2, "TORSO_P2_0_0", 16);
+			StringCopy(&Var2, "TORSO_P2_0_0" /* GXT: White T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 1:
-			StringCopy(&Var2, "TORSO_P2_0_1", 16);
+			StringCopy(&Var2, "TORSO_P2_0_1" /* GXT: Yellow T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 1;
 			iVar1 = 25;
 			break;
 		
 		case 2:
-			StringCopy(&Var2, "TORSO_P2_0_2", 16);
+			StringCopy(&Var2, "TORSO_P2_0_2" /* GXT: Dusche Gold T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 2;
 			break;
 		
 		case 3:
-			StringCopy(&Var2, "TORSO_P2_0_3", 16);
+			StringCopy(&Var2, "TORSO_P2_0_3" /* GXT: Charcoal T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 3;
 			iVar1 = 15;
 			break;
 		
 		case 4:
-			StringCopy(&Var2, "TORSO_P2_0_4", 16);
+			StringCopy(&Var2, "TORSO_P2_0_4" /* GXT: Cerveza Barracho T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 4;
 			iVar1 = 25;
 			break;
 		
 		case 5:
-			StringCopy(&Var2, "TORSO_P2_0_5", 16);
+			StringCopy(&Var2, "TORSO_P2_0_5" /* GXT: Liberty City Wrath T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 5;
 			iVar1 = 25;
 			break;
 		
 		case 6:
-			StringCopy(&Var2, "TORSO_P2_0_6", 16);
+			StringCopy(&Var2, "TORSO_P2_0_6" /* GXT: Pump & Run T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 6;
 			iVar1 = 22;
 			break;
 		
 		case 7:
-			StringCopy(&Var2, "TORSO_P2_0_7", 16);
+			StringCopy(&Var2, "TORSO_P2_0_7" /* GXT: Atomic T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 7;
 			iVar1 = 22;
 			break;
 		
 		case 8:
-			StringCopy(&Var2, "TORSO_P2_0_8", 16);
+			StringCopy(&Var2, "TORSO_P2_0_8" /* GXT: LS Nuclear Power T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 8;
 			iVar1 = 20;
 			break;
 		
 		case 9:
-			StringCopy(&Var2, "TORSO_P2_0_9", 16);
+			StringCopy(&Var2, "TORSO_P2_0_9" /* GXT: Zancudo T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 9;
 			iVar1 = 20;
 			break;
 		
 		case 10:
-			StringCopy(&Var2, "TORSO_P2_0_10", 16);
+			StringCopy(&Var2, "TORSO_P2_0_10" /* GXT: West Coast Classics T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 10;
 			iVar1 = 24;
 			break;
 		
 		case 11:
-			StringCopy(&Var2, "TORSO_P2_0_11", 16);
+			StringCopy(&Var2, "TORSO_P2_0_11" /* GXT: BC Talk Radio T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 11;
 			iVar1 = 26;
 			break;
 		
 		case 12:
-			StringCopy(&Var2, "TORSO_P2_0_12", 16);
+			StringCopy(&Var2, "TORSO_P2_0_12" /* GXT: Animal Ark T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 12;
 			iVar1 = 28;
 			break;
 		
 		case 13:
-			StringCopy(&Var2, "TORSO_P2_0_13", 16);
+			StringCopy(&Var2, "TORSO_P2_0_13" /* GXT: Rimmers T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 13;
 			iVar1 = 29;
 			break;
 		
 		case 14:
-			StringCopy(&Var2, "TORSO_P2_0_14", 16);
+			StringCopy(&Var2, "TORSO_P2_0_14" /* GXT: Paperclips T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 14;
 			iVar1 = 22;
 			break;
 		
 		case 15:
-			StringCopy(&Var2, "TORSO_P2_0_15", 16);
+			StringCopy(&Var2, "TORSO_P2_0_15" /* GXT: Pop's Pills T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 15;
 			iVar1 = 20;
@@ -43041,174 +43041,174 @@ void func_532(int iParam0)//Position - 0x38061
 			break;
 		
 		case 18:
-			StringCopy(&Var2, "TORSO_P2_3_0", 16);
+			StringCopy(&Var2, "TORSO_P2_3_0" /* GXT: Los Santos Tank Top */, 16);
 			iVar3 = 3;
 			iVar4 = 0;
 			iVar1 = 35;
 			break;
 		
 		case 19:
-			StringCopy(&Var2, "TORSO_P2_3_1", 16);
+			StringCopy(&Var2, "TORSO_P2_3_1" /* GXT: Del Perro Pier Tank Top */, 16);
 			iVar3 = 3;
 			iVar4 = 1;
 			iVar1 = 22;
 			break;
 		
 		case 20:
-			StringCopy(&Var2, "TORSO_P2_3_2", 16);
+			StringCopy(&Var2, "TORSO_P2_3_2" /* GXT: San Andreas Tank Top */, 16);
 			iVar3 = 3;
 			iVar4 = 2;
 			iVar1 = 25;
 			break;
 		
 		case 21:
-			StringCopy(&Var2, "TORSO_P2_3_3", 16);
+			StringCopy(&Var2, "TORSO_P2_3_3" /* GXT: Love Fist Tank Top */, 16);
 			iVar3 = 3;
 			iVar4 = 3;
 			iVar1 = 38;
 			break;
 		
 		case 22:
-			StringCopy(&Var2, "TORSO_P2_3_4", 16);
+			StringCopy(&Var2, "TORSO_P2_3_4" /* GXT: Space Monkey Tank Top 1 */, 16);
 			iVar3 = 3;
 			iVar4 = 4;
 			iVar1 = 40;
 			break;
 		
 		case 23:
-			StringCopy(&Var2, "TORSO_P2_3_5", 16);
+			StringCopy(&Var2, "TORSO_P2_3_5" /* GXT: Space Monkey Tank Top 2 */, 16);
 			iVar3 = 3;
 			iVar4 = 5;
 			iVar1 = 40;
 			break;
 		
 		case 24:
-			StringCopy(&Var2, "TORSO_P2_3_6", 16);
+			StringCopy(&Var2, "TORSO_P2_3_6" /* GXT: Space Monkey Tank Top 3 */, 16);
 			iVar3 = 3;
 			iVar4 = 6;
 			iVar1 = 40;
 			break;
 		
 		case 25:
-			StringCopy(&Var2, "TORSO_P2_3_7", 16);
+			StringCopy(&Var2, "TORSO_P2_3_7" /* GXT: Space Monkey Tank Top 4 */, 16);
 			iVar3 = 3;
 			iVar4 = 7;
 			iVar1 = 40;
 			break;
 		
 		case 26:
-			StringCopy(&Var2, "TORSO_P2_3_8", 16);
+			StringCopy(&Var2, "TORSO_P2_3_8" /* GXT: Space Monkey Tank Top 5 */, 16);
 			iVar3 = 3;
 			iVar4 = 8;
 			iVar1 = 40;
 			break;
 		
 		case 27:
-			StringCopy(&Var2, "TORSO_P2_4_0", 16);
+			StringCopy(&Var2, "TORSO_P2_4_0" /* GXT: Rearwall Black Down Jacket */, 16);
 			iVar3 = 4;
 			iVar4 = 0;
 			break;
 		
 		case 28:
-			StringCopy(&Var2, "TORSO_P2_4_1", 16);
+			StringCopy(&Var2, "TORSO_P2_4_1" /* GXT: Crevis Green Down Jacket */, 16);
 			iVar3 = 4;
 			iVar4 = 1;
 			iVar1 = 500;
 			break;
 		
 		case 29:
-			StringCopy(&Var2, "TORSO_P2_4_2", 16);
+			StringCopy(&Var2, "TORSO_P2_4_2" /* GXT: Rearwall Fluoro Down Jacket */, 16);
 			iVar3 = 4;
 			iVar4 = 2;
 			iVar1 = 560;
 			break;
 		
 		case 30:
-			StringCopy(&Var2, "TORSO_P2_4_3", 16);
+			StringCopy(&Var2, "TORSO_P2_4_3" /* GXT: Rearwall Coffee Down Jacket */, 16);
 			iVar3 = 4;
 			iVar4 = 3;
 			iVar1 = 600;
 			break;
 		
 		case 31:
-			StringCopy(&Var2, "TORSO_P2_4_4tu", 16);
+			StringCopy(&Var2, "TORSO_P2_4_4tu" /* GXT: Crevis Yellow Down Jacket */, 16);
 			iVar3 = 4;
 			iVar4 = 4;
 			iVar1 = 650;
 			break;
 		
 		case 32:
-			StringCopy(&Var2, "TORSO_P2_4_5tu", 16);
+			StringCopy(&Var2, "TORSO_P2_4_5tu" /* GXT: Eris Yellow Down Jacket */, 16);
 			iVar3 = 4;
 			iVar4 = 5;
 			iVar1 = 500;
 			break;
 		
 		case 33:
-			StringCopy(&Var2, "TORSO_P2_4_6tu", 16);
+			StringCopy(&Var2, "TORSO_P2_4_6tu" /* GXT: Crevis Red Down Jacket */, 16);
 			iVar3 = 4;
 			iVar4 = 6;
 			iVar1 = 560;
 			break;
 		
 		case 34:
-			StringCopy(&Var2, "TORSO_P2_4_7", 16);
+			StringCopy(&Var2, "TORSO_P2_4_7" /* GXT: Rearwall Red Down Jacket */, 16);
 			iVar3 = 4;
 			iVar4 = 7;
 			iVar1 = 500;
 			break;
 		
 		case 35:
-			StringCopy(&Var2, "TORSO_P2_4_8", 16);
+			StringCopy(&Var2, "TORSO_P2_4_8" /* GXT: Crevis Blue Down Jacket */, 16);
 			iVar3 = 4;
 			iVar4 = 8;
 			iVar1 = 650;
 			break;
 		
 		case 36:
-			StringCopy(&Var2, "TORSO_P2_4_9", 16);
+			StringCopy(&Var2, "TORSO_P2_4_9" /* GXT: Eris Gray Down Jacket */, 16);
 			iVar3 = 4;
 			iVar4 = 9;
 			iVar1 = 540;
 			break;
 		
 		case 37:
-			StringCopy(&Var2, "TORSO_P2_4_10", 16);
+			StringCopy(&Var2, "TORSO_P2_4_10" /* GXT: Eris Red Down Jacket */, 16);
 			iVar3 = 4;
 			iVar4 = 10;
 			iVar1 = 690;
 			break;
 		
 		case 38:
-			StringCopy(&Var2, "TORSO_P2_4_11", 16);
+			StringCopy(&Var2, "TORSO_P2_4_11" /* GXT: Eris Olive Down Jacket */, 16);
 			iVar3 = 4;
 			iVar4 = 11;
 			iVar1 = 560;
 			break;
 		
 		case 39:
-			StringCopy(&Var2, "TORSO_P2_4_12", 16);
+			StringCopy(&Var2, "TORSO_P2_4_12" /* GXT: Eris Aqua Down Jacket */, 16);
 			iVar3 = 4;
 			iVar4 = 12;
 			iVar1 = 590;
 			break;
 		
 		case 40:
-			StringCopy(&Var2, "TORSO_P2_4_13", 16);
+			StringCopy(&Var2, "TORSO_P2_4_13" /* GXT: Eris Blue Down Jacket */, 16);
 			iVar3 = 4;
 			iVar4 = 13;
 			iVar1 = 690;
 			break;
 		
 		case 41:
-			StringCopy(&Var2, "TORSO_P2_4_14", 16);
+			StringCopy(&Var2, "TORSO_P2_4_14" /* GXT: Crevis Gray Down Jacket */, 16);
 			iVar3 = 4;
 			iVar4 = 14;
 			iVar1 = 540;
 			break;
 		
 		case 42:
-			StringCopy(&Var2, "TORSO_P2_4_15", 16);
+			StringCopy(&Var2, "TORSO_P2_4_15" /* GXT: Eris Tan Down Jacket */, 16);
 			iVar3 = 4;
 			iVar4 = 15;
 			iVar1 = 500;
@@ -43292,109 +43292,109 @@ void func_532(int iParam0)//Position - 0x38061
 			break;
 		
 		case 54:
-			StringCopy(&Var2, "TORSO_P2_11_0", 16);
+			StringCopy(&Var2, "TORSO_P2_11_0" /* GXT: Red Floral Polo Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 0;
 			break;
 		
 		case 55:
-			StringCopy(&Var2, "TORSO_P2_11_1", 16);
+			StringCopy(&Var2, "TORSO_P2_11_1" /* GXT: Amethyst Polo Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 1;
 			break;
 		
 		case 56:
-			StringCopy(&Var2, "TORSO_P2_11_2", 16);
+			StringCopy(&Var2, "TORSO_P2_11_2" /* GXT: Turquoise Striped Polo Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 2;
 			iVar1 = 25;
 			break;
 		
 		case 57:
-			StringCopy(&Var2, "TORSO_P2_11_3", 16);
+			StringCopy(&Var2, "TORSO_P2_11_3" /* GXT: Pink Striped Polo Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 3;
 			iVar1 = 27;
 			break;
 		
 		case 58:
-			StringCopy(&Var2, "TORSO_P2_11_4", 16);
+			StringCopy(&Var2, "TORSO_P2_11_4" /* GXT: Mustard Polo Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 4;
 			iVar1 = 22;
 			break;
 		
 		case 59:
-			StringCopy(&Var2, "TORSO_P2_11_5", 16);
+			StringCopy(&Var2, "TORSO_P2_11_5" /* GXT: Orange Polo Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 5;
 			iVar1 = 350;
 			break;
 		
 		case 60:
-			StringCopy(&Var2, "TORSO_P2_11_6", 16);
+			StringCopy(&Var2, "TORSO_P2_11_6" /* GXT: Topaz Striped Polo Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 6;
 			iVar1 = 27;
 			break;
 		
 		case 61:
-			StringCopy(&Var2, "TORSO_P2_11_7", 16);
+			StringCopy(&Var2, "TORSO_P2_11_7" /* GXT: Mint Polo Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 7;
 			iVar1 = 370;
 			break;
 		
 		case 62:
-			StringCopy(&Var2, "TORSO_P2_11_8", 16);
+			StringCopy(&Var2, "TORSO_P2_11_8" /* GXT: Navy Striped Polo Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 8;
 			iVar1 = 25;
 			break;
 		
 		case 63:
-			StringCopy(&Var2, "TORSO_P2_11_9", 16);
+			StringCopy(&Var2, "TORSO_P2_11_9" /* GXT: Green Striped Polo Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 9;
 			iVar1 = 22;
 			break;
 		
 		case 64:
-			StringCopy(&Var2, "TORSO_P2_11_10", 16);
+			StringCopy(&Var2, "TORSO_P2_11_10" /* GXT: Turquoise Two-Tone Polo Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 10;
 			iVar1 = 25;
 			break;
 		
 		case 65:
-			StringCopy(&Var2, "TORSO_P2_11_11", 16);
+			StringCopy(&Var2, "TORSO_P2_11_11" /* GXT: Brown Polo Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 11;
 			break;
 		
 		case 66:
-			StringCopy(&Var2, "TORSO_P2_11_12", 16);
+			StringCopy(&Var2, "TORSO_P2_11_12" /* GXT: Pink Polo Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 12;
 			iVar1 = 22;
 			break;
 		
 		case 67:
-			StringCopy(&Var2, "TORSO_P2_11_13", 16);
+			StringCopy(&Var2, "TORSO_P2_11_13" /* GXT: Green Polo Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 13;
 			iVar1 = 27;
 			break;
 		
 		case 68:
-			StringCopy(&Var2, "TORSO_P2_11_14", 16);
+			StringCopy(&Var2, "TORSO_P2_11_14" /* GXT: Aqua Polo Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 14;
 			iVar1 = 25;
 			break;
 		
 		case 69:
-			StringCopy(&Var2, "TORSO_P2_11_15", 16);
+			StringCopy(&Var2, "TORSO_P2_11_15" /* GXT: Brown Striped Polo Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 15;
 			iVar1 = 27;
@@ -43409,450 +43409,450 @@ void func_532(int iParam0)//Position - 0x38061
 			break;
 		
 		case 71:
-			StringCopy(&Var2, "TORSO_P2_13_0", 16);
+			StringCopy(&Var2, "TORSO_P2_13_0" /* GXT: Mint Floral Dress */, 16);
 			iVar3 = 13;
 			iVar4 = 0;
 			break;
 		
 		case 72:
-			StringCopy(&Var2, "TORSO_P2_13_1", 16);
+			StringCopy(&Var2, "TORSO_P2_13_1" /* GXT: Pink Dress */, 16);
 			iVar3 = 13;
 			iVar4 = 1;
 			iVar1 = 39;
 			break;
 		
 		case 73:
-			StringCopy(&Var2, "TORSO_P2_13_2", 16);
+			StringCopy(&Var2, "TORSO_P2_13_2" /* GXT: White Floral Dress */, 16);
 			iVar3 = 13;
 			iVar4 = 2;
 			iVar1 = 42;
 			break;
 		
 		case 74:
-			StringCopy(&Var2, "TORSO_P2_13_3", 16);
+			StringCopy(&Var2, "TORSO_P2_13_3" /* GXT: Purple Zebra Dress */, 16);
 			iVar3 = 13;
 			iVar4 = 3;
 			iVar1 = 49;
 			break;
 		
 		case 75:
-			StringCopy(&Var2, "TORSO_P2_13_4", 16);
+			StringCopy(&Var2, "TORSO_P2_13_4" /* GXT: Cream Dress */, 16);
 			iVar3 = 13;
 			iVar4 = 4;
 			iVar1 = 35;
 			break;
 		
 		case 76:
-			StringCopy(&Var2, "TORSO_P2_13_5", 16);
+			StringCopy(&Var2, "TORSO_P2_13_5" /* GXT: Space Monkey Dress 1 */, 16);
 			iVar3 = 13;
 			iVar4 = 5;
 			iVar1 = 50;
 			break;
 		
 		case 77:
-			StringCopy(&Var2, "TORSO_P2_13_6", 16);
+			StringCopy(&Var2, "TORSO_P2_13_6" /* GXT: Space Monkey Dress 2 */, 16);
 			iVar3 = 13;
 			iVar4 = 6;
 			iVar1 = 50;
 			break;
 		
 		case 78:
-			StringCopy(&Var2, "TORSO_P2_13_7", 16);
+			StringCopy(&Var2, "TORSO_P2_13_7" /* GXT: Space Monkey Dress 3 */, 16);
 			iVar3 = 13;
 			iVar4 = 7;
 			iVar1 = 50;
 			break;
 		
 		case 79:
-			StringCopy(&Var2, "TORSO_P2_14_0", 16);
+			StringCopy(&Var2, "TORSO_P2_14_0" /* GXT: Black Hoodie */, 16);
 			iVar3 = 14;
 			iVar4 = 0;
 			break;
 		
 		case 80:
-			StringCopy(&Var2, "TORSO_P2_14_1", 16);
+			StringCopy(&Var2, "TORSO_P2_14_1" /* GXT: Silver Hoodie */, 16);
 			iVar3 = 14;
 			iVar4 = 1;
 			iVar1 = 88;
 			break;
 		
 		case 81:
-			StringCopy(&Var2, "TORSO_P2_14_2", 16);
+			StringCopy(&Var2, "TORSO_P2_14_2" /* GXT: Ammu-Nation Camo Hoodie */, 16);
 			iVar3 = 14;
 			iVar4 = 2;
 			iVar1 = 60;
 			break;
 		
 		case 82:
-			StringCopy(&Var2, "TORSO_P2_14_3", 16);
+			StringCopy(&Var2, "TORSO_P2_14_3" /* GXT: LSGC Urban Hoodie */, 16);
 			iVar3 = 14;
 			iVar4 = 3;
 			iVar1 = 80;
 			break;
 		
 		case 83:
-			StringCopy(&Var2, "TORSO_P2_14_4", 16);
+			StringCopy(&Var2, "TORSO_P2_14_4" /* GXT: LSGC Gray Hoodie */, 16);
 			iVar3 = 14;
 			iVar4 = 4;
 			iVar1 = 70;
 			break;
 		
 		case 84:
-			StringCopy(&Var2, "TORSO_P2_14_5", 16);
+			StringCopy(&Var2, "TORSO_P2_14_5" /* GXT: Ammu-Nation A Hoodie */, 16);
 			iVar3 = 14;
 			iVar4 = 5;
 			iVar1 = 80;
 			break;
 		
 		case 85:
-			StringCopy(&Var2, "TORSO_P2_14_6", 16);
+			StringCopy(&Var2, "TORSO_P2_14_6" /* GXT: Blauser Hoodie */, 16);
 			iVar3 = 14;
 			iVar4 = 6;
 			iVar1 = 70;
 			break;
 		
 		case 86:
-			StringCopy(&Var2, "TORSO_P2_14_7", 16);
+			StringCopy(&Var2, "TORSO_P2_14_7" /* GXT: LSGC Forest Hoodie */, 16);
 			iVar3 = 14;
 			iVar4 = 7;
 			iVar1 = 90;
 			break;
 		
 		case 87:
-			StringCopy(&Var2, "TORSO_P2_14_8", 16);
+			StringCopy(&Var2, "TORSO_P2_14_8" /* GXT: Penetrators Hoodie */, 16);
 			iVar3 = 14;
 			iVar4 = 8;
 			iVar1 = 95;
 			break;
 		
 		case 88:
-			StringCopy(&Var2, "TORSO_P2_14_9", 16);
+			StringCopy(&Var2, "TORSO_P2_14_9" /* GXT: Crevis Fluorescent Hoodie */, 16);
 			iVar3 = 14;
 			iVar4 = 9;
 			iVar1 = 105;
 			break;
 		
 		case 89:
-			StringCopy(&Var2, "TORSO_P2_14_10", 16);
+			StringCopy(&Var2, "TORSO_P2_14_10" /* GXT: Blue Hoodie */, 16);
 			iVar3 = 14;
 			iVar4 = 10;
 			iVar1 = 95;
 			break;
 		
 		case 90:
-			StringCopy(&Var2, "TORSO_P2_14_11", 16);
+			StringCopy(&Var2, "TORSO_P2_14_11" /* GXT: Green Hoodie */, 16);
 			iVar3 = 14;
 			iVar4 = 11;
 			iVar1 = 110;
 			break;
 		
 		case 91:
-			StringCopy(&Var2, "TORSO_P2_14_12", 16);
+			StringCopy(&Var2, "TORSO_P2_14_12" /* GXT: LS Jardineros Hoodie */, 16);
 			iVar3 = 14;
 			iVar4 = 12;
 			iVar1 = 98;
 			break;
 		
 		case 92:
-			StringCopy(&Var2, "TORSO_P2_14_13", 16);
+			StringCopy(&Var2, "TORSO_P2_14_13" /* GXT: Ash 18 Hoodie */, 16);
 			iVar3 = 14;
 			iVar4 = 13;
 			iVar1 = 88;
 			break;
 		
 		case 93:
-			StringCopy(&Var2, "TORSO_P2_14_14", 16);
+			StringCopy(&Var2, "TORSO_P2_14_14" /* GXT: Red Mist XI Hoodie */, 16);
 			iVar3 = 14;
 			iVar4 = 14;
 			iVar1 = 98;
 			break;
 		
 		case 94:
-			StringCopy(&Var2, "TORSO_P2_14_15", 16);
+			StringCopy(&Var2, "TORSO_P2_14_15" /* GXT: Eris Charcoal Hoodie */, 16);
 			iVar3 = 14;
 			iVar4 = 15;
 			iVar1 = 110;
 			break;
 		
 		case 95:
-			StringCopy(&Var2, "TORSO_P2_15_0", 16);
+			StringCopy(&Var2, "TORSO_P2_15_0" /* GXT: Tennis Shirt */, 16);
 			iVar3 = 15;
 			iVar4 = 0;
 			bVar0 = true;
 			break;
 		
 		case 96:
-			StringCopy(&Var2, "TORSO_P2_16_0", 16);
+			StringCopy(&Var2, "TORSO_P2_16_0" /* GXT: Bare Chest */, 16);
 			iVar3 = 16;
 			iVar4 = 0;
 			break;
 		
 		case 97:
-			StringCopy(&Var2, "TORSO_P2_17_0", 16);
+			StringCopy(&Var2, "TORSO_P2_17_0" /* GXT: Pink Jacket */, 16);
 			iVar3 = 17;
 			iVar4 = 0;
 			bVar0 = true;
 			break;
 		
 		case 98:
-			StringCopy(&Var2, "TORSO_P2_18_0", 16);
+			StringCopy(&Var2, "TORSO_P2_18_0" /* GXT: Blue Denim Jacket */, 16);
 			iVar3 = 18;
 			iVar4 = 0;
 			break;
 		
 		case 99:
-			StringCopy(&Var2, "TORSO_P2_18_1", 16);
+			StringCopy(&Var2, "TORSO_P2_18_1" /* GXT: Black Denim Jacket */, 16);
 			iVar3 = 18;
 			iVar4 = 1;
 			iVar1 = 520;
 			break;
 		
 		case 100:
-			StringCopy(&Var2, "TORSO_P2_18_2", 16);
+			StringCopy(&Var2, "TORSO_P2_18_2" /* GXT: Gray Denim Jacket */, 16);
 			iVar3 = 18;
 			iVar4 = 2;
 			iVar1 = 490;
 			break;
 		
 		case 101:
-			StringCopy(&Var2, "TORSO_P2_18_3", 16);
+			StringCopy(&Var2, "TORSO_P2_18_3" /* GXT: Brown Denim Jacket */, 16);
 			iVar3 = 18;
 			iVar4 = 3;
 			iVar1 = 450;
 			break;
 		
 		case 102:
-			StringCopy(&Var2, "TORSO_P2_18_4", 16);
+			StringCopy(&Var2, "TORSO_P2_18_4" /* GXT: Faded Denim Jacket */, 16);
 			iVar3 = 18;
 			iVar4 = 4;
 			iVar1 = 420;
 			break;
 		
 		case 103:
-			StringCopy(&Var2, "TORSO_P2_18_5", 16);
+			StringCopy(&Var2, "TORSO_P2_18_5" /* GXT: Ash Denim Jacket */, 16);
 			iVar3 = 18;
 			iVar4 = 5;
 			iVar1 = 420;
 			break;
 		
 		case 104:
-			StringCopy(&Var2, "TORSO_P2_19_0", 16);
+			StringCopy(&Var2, "TORSO_P2_19_0" /* GXT: Denim Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 0;
 			iVar1 = 85;
 			break;
 		
 		case 105:
-			StringCopy(&Var2, "TORSO_P2_19_1", 16);
+			StringCopy(&Var2, "TORSO_P2_19_1" /* GXT: Faded Denim Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 1;
 			iVar1 = 85;
 			break;
 		
 		case 106:
-			StringCopy(&Var2, "TORSO_P2_19_2", 16);
+			StringCopy(&Var2, "TORSO_P2_19_2" /* GXT: Black Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 2;
 			iVar1 = 75;
 			break;
 		
 		case 107:
-			StringCopy(&Var2, "TORSO_P2_19_3", 16);
+			StringCopy(&Var2, "TORSO_P2_19_3" /* GXT: Gray Check Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 3;
 			iVar1 = 68;
 			break;
 		
 		case 108:
-			StringCopy(&Var2, "TORSO_P2_19_4", 16);
+			StringCopy(&Var2, "TORSO_P2_19_4" /* GXT: Brown Check Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 4;
 			iVar1 = 68;
 			break;
 		
 		case 109:
-			StringCopy(&Var2, "TORSO_P2_19_5", 16);
+			StringCopy(&Var2, "TORSO_P2_19_5" /* GXT: Red Check Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 5;
 			iVar1 = 78;
 			break;
 		
 		case 110:
-			StringCopy(&Var2, "TORSO_P2_19_6", 16);
+			StringCopy(&Var2, "TORSO_P2_19_6" /* GXT: Brown Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 6;
 			iVar1 = 85;
 			break;
 		
 		case 111:
-			StringCopy(&Var2, "TORSO_P2_19_7", 16);
+			StringCopy(&Var2, "TORSO_P2_19_7" /* GXT: Khaki Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 7;
 			iVar1 = 68;
 			break;
 		
 		case 112:
-			StringCopy(&Var2, "TORSO_P2_19_8", 16);
+			StringCopy(&Var2, "TORSO_P2_19_8" /* GXT: Red Plaid Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 8;
 			iVar1 = 75;
 			break;
 		
 		case 113:
-			StringCopy(&Var2, "TORSO_P2_19_9", 16);
+			StringCopy(&Var2, "TORSO_P2_19_9" /* GXT: Brown Plaid Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 9;
 			iVar1 = 75;
 			break;
 		
 		case 114:
-			StringCopy(&Var2, "TORSO_P2_19_10", 16);
+			StringCopy(&Var2, "TORSO_P2_19_10" /* GXT: Green Check Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 10;
 			iVar1 = 78;
 			break;
 		
 		case 115:
-			StringCopy(&Var2, "TORSO_P2_19_11", 16);
+			StringCopy(&Var2, "TORSO_P2_19_11" /* GXT: Maroon Check Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 11;
 			iVar1 = 75;
 			break;
 		
 		case 116:
-			StringCopy(&Var2, "TORSO_P2_19_12", 16);
+			StringCopy(&Var2, "TORSO_P2_19_12" /* GXT: Gray Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 12;
 			iVar1 = 75;
 			break;
 		
 		case 117:
-			StringCopy(&Var2, "TORSO_P2_19_13", 16);
+			StringCopy(&Var2, "TORSO_P2_19_13" /* GXT: Blue Check Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 13;
 			iVar1 = 75;
 			break;
 		
 		case 118:
-			StringCopy(&Var2, "TORSO_P2_19_14", 16);
+			StringCopy(&Var2, "TORSO_P2_19_14" /* GXT: Blue Two-Tone Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 14;
 			iVar1 = 78;
 			break;
 		
 		case 119:
-			StringCopy(&Var2, "TORSO_P2_19_15", 16);
+			StringCopy(&Var2, "TORSO_P2_19_15" /* GXT: Navy Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 15;
 			iVar1 = 78;
 			break;
 		
 		case 120:
-			StringCopy(&Var2, "TORSO_P2_20_0", 16);
+			StringCopy(&Var2, "TORSO_P2_20_0" /* GXT: Burgundy Bowling Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 0;
 			iVar1 = 40;
 			break;
 		
 		case 121:
-			StringCopy(&Var2, "TORSO_P2_20_1", 16);
+			StringCopy(&Var2, "TORSO_P2_20_1" /* GXT: Purple Bowling Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 1;
 			iVar1 = 32;
 			break;
 		
 		case 122:
-			StringCopy(&Var2, "TORSO_P2_20_2", 16);
+			StringCopy(&Var2, "TORSO_P2_20_2" /* GXT: Crimson Bowling Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 2;
 			iVar1 = 32;
 			break;
 		
 		case 123:
-			StringCopy(&Var2, "TORSO_P2_20_3", 16);
+			StringCopy(&Var2, "TORSO_P2_20_3" /* GXT: Tan Bowling Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 3;
 			iVar1 = 32;
 			break;
 		
 		case 124:
-			StringCopy(&Var2, "TORSO_P2_20_4", 16);
+			StringCopy(&Var2, "TORSO_P2_20_4" /* GXT: Flames Bowling Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 4;
 			break;
 		
 		case 125:
-			StringCopy(&Var2, "TORSO_P2_20_5", 16);
+			StringCopy(&Var2, "TORSO_P2_20_5" /* GXT: Skull Bowling Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 5;
 			iVar1 = 38;
 			break;
 		
 		case 126:
-			StringCopy(&Var2, "TORSO_P2_20_6", 16);
+			StringCopy(&Var2, "TORSO_P2_20_6" /* GXT: Pale Blue Bowling Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 6;
 			iVar1 = 35;
 			break;
 		
 		case 127:
-			StringCopy(&Var2, "TORSO_P2_20_7", 16);
+			StringCopy(&Var2, "TORSO_P2_20_7" /* GXT: Scarab Bowling Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 7;
 			iVar1 = 38;
 			break;
 		
 		case 128:
-			StringCopy(&Var2, "TORSO_P2_20_8", 16);
+			StringCopy(&Var2, "TORSO_P2_20_8" /* GXT: Cream Bowling Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 8;
 			iVar1 = 29;
 			break;
 		
 		case 129:
-			StringCopy(&Var2, "TORSO_P2_20_9", 16);
+			StringCopy(&Var2, "TORSO_P2_20_9" /* GXT: Cube Bowling Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 9;
 			iVar1 = 32;
 			break;
 		
 		case 130:
-			StringCopy(&Var2, "TORSO_P2_20_10", 16);
+			StringCopy(&Var2, "TORSO_P2_20_10" /* GXT: Beige Bowling Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 10;
 			iVar1 = 29;
 			break;
 		
 		case 131:
-			StringCopy(&Var2, "TORSO_P2_20_11", 16);
+			StringCopy(&Var2, "TORSO_P2_20_11" /* GXT: Blue Bowling Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 11;
 			iVar1 = 35;
 			break;
 		
 		case 132:
-			StringCopy(&Var2, "TORSO_P2_20_12", 16);
+			StringCopy(&Var2, "TORSO_P2_20_12" /* GXT: Yellow Bowling Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 12;
 			iVar1 = 32;
 			break;
 		
 		case 133:
-			StringCopy(&Var2, "TORSO_P2_20_13", 16);
+			StringCopy(&Var2, "TORSO_P2_20_13" /* GXT: Pink Bowling Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 13;
 			iVar1 = 35;
 			break;
 		
 		case 134:
-			StringCopy(&Var2, "TORSO_P2_20_14", 16);
+			StringCopy(&Var2, "TORSO_P2_20_14" /* GXT: White Bowling Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 14;
 			iVar1 = 32;
 			break;
 		
 		case 135:
-			StringCopy(&Var2, "TORSO_P2_20_15", 16);
+			StringCopy(&Var2, "TORSO_P2_20_15" /* GXT: Black Bowling Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 15;
 			iVar1 = 40;
@@ -43887,55 +43887,55 @@ void func_533(int iParam0)//Position - 0x38F6F
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var2, "HAIR_P2_0_0", 16);
+			StringCopy(&Var2, "HAIR_P2_0_0" /* GXT: Trailer Cut */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 1:
-			StringCopy(&Var2, "HAIR_P2_0_1", 16);
+			StringCopy(&Var2, "HAIR_P2_0_1" /* GXT: Frozen */, 16);
 			iVar3 = 0;
 			iVar4 = 1;
 			break;
 		
 		case 2:
-			StringCopy(&Var2, "HAIR_P2_1_0", 16);
+			StringCopy(&Var2, "HAIR_P2_1_0" /* GXT: Clean Razor */, 16);
 			iVar3 = 1;
 			iVar4 = 0;
 			break;
 		
 		case 3:
-			StringCopy(&Var2, "HAIR_P2_2_0", 16);
+			StringCopy(&Var2, "HAIR_P2_2_0" /* GXT: Randal */, 16);
 			iVar3 = 2;
 			iVar4 = 0;
 			break;
 		
 		case 4:
-			StringCopy(&Var2, "HAIR_P2_3_0", 16);
+			StringCopy(&Var2, "HAIR_P2_3_0" /* GXT: Side Shed */, 16);
 			iVar3 = 3;
 			iVar4 = 0;
 			break;
 		
 		case 5:
-			StringCopy(&Var2, "HAIR_P2_4_0", 16);
+			StringCopy(&Var2, "HAIR_P2_4_0" /* GXT: Grown Out */, 16);
 			iVar3 = 4;
 			iVar4 = 0;
 			break;
 		
 		case 6:
-			StringCopy(&Var2, "HAIR_P2_5_0", 16);
+			StringCopy(&Var2, "HAIR_P2_5_0" /* GXT: Mullet */, 16);
 			iVar3 = 5;
 			iVar4 = 0;
 			break;
 		
 		case 7:
-			StringCopy(&Var2, "HAIR_P2_6_0", 16);
+			StringCopy(&Var2, "HAIR_P2_6_0" /* GXT: Shaved 2 */, 16);
 			iVar3 = 6;
 			iVar4 = 0;
 			break;
 		
 		case 8:
-			StringCopy(&Var2, "HAIR_P2_7_0", 16);
+			StringCopy(&Var2, "HAIR_P2_7_0" /* GXT: Swept Back */, 16);
 			iVar3 = 7;
 			iVar4 = 0;
 			break;
@@ -44187,7 +44187,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 159:
-			StringCopy(&Var2, "PROPS_P1_EA1_0", 16);
+			StringCopy(&Var2, "PROPS_P1_EA1_0" /* GXT: De Koch Diamond Studs */, 16);
 			iVar3 = 1;
 			iVar4 = 0;
 			iVar1 = 4590;
@@ -44195,7 +44195,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 160:
-			StringCopy(&Var2, "PROPS_P1_EA1_1", 16);
+			StringCopy(&Var2, "PROPS_P1_EA1_1" /* GXT: De Koch Obsidian Studs */, 16);
 			iVar3 = 1;
 			iVar4 = 1;
 			iVar1 = 4100;
@@ -44203,7 +44203,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 161:
-			StringCopy(&Var2, "PROPS_P1_EA1_2", 16);
+			StringCopy(&Var2, "PROPS_P1_EA1_2" /* GXT: De Koch Sapphire Studs */, 16);
 			iVar3 = 1;
 			iVar4 = 2;
 			iVar1 = 3850;
@@ -44211,7 +44211,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 162:
-			StringCopy(&Var2, "PROPS_P1_EA1_3", 16);
+			StringCopy(&Var2, "PROPS_P1_EA1_3" /* GXT: De Koch Opal Studs */, 16);
 			iVar3 = 1;
 			iVar4 = 3;
 			iVar1 = 1850;
@@ -44219,7 +44219,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 163:
-			StringCopy(&Var2, "PROPS_P1_EA1_4", 16);
+			StringCopy(&Var2, "PROPS_P1_EA1_4" /* GXT: De Koch Platinum Studs */, 16);
 			iVar3 = 1;
 			iVar4 = 4;
 			iVar1 = 5250;
@@ -44227,7 +44227,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 164:
-			StringCopy(&Var2, "PROPS_P1_EA1_5", 16);
+			StringCopy(&Var2, "PROPS_P1_EA1_5" /* GXT: De Koch Garnet Studs */, 16);
 			iVar3 = 1;
 			iVar4 = 5;
 			iVar1 = 2700;
@@ -44235,7 +44235,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 165:
-			StringCopy(&Var2, "PROPS_P1_EA1_6", 16);
+			StringCopy(&Var2, "PROPS_P1_EA1_6" /* GXT: De Koch Jasper Studs */, 16);
 			iVar3 = 1;
 			iVar4 = 6;
 			iVar1 = 3100;
@@ -44243,7 +44243,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 166:
-			StringCopy(&Var2, "PROPS_P1_EA1_7", 16);
+			StringCopy(&Var2, "PROPS_P1_EA1_7" /* GXT: De Koch Aquamarine Studs */, 16);
 			iVar3 = 1;
 			iVar4 = 7;
 			iVar1 = 5050;
@@ -44251,7 +44251,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 167:
-			StringCopy(&Var2, "PROPS_P1_EA2_0", 16);
+			StringCopy(&Var2, "PROPS_P1_EA2_0" /* GXT: Vankhov Diamond Studs */, 16);
 			iVar3 = 2;
 			iVar4 = 0;
 			iVar1 = 2500;
@@ -44259,7 +44259,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 168:
-			StringCopy(&Var2, "PROPS_P1_EA2_1", 16);
+			StringCopy(&Var2, "PROPS_P1_EA2_1" /* GXT: Vankhov Emerald Studs */, 16);
 			iVar3 = 2;
 			iVar4 = 1;
 			iVar1 = 1950;
@@ -44267,7 +44267,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 169:
-			StringCopy(&Var2, "PROPS_P1_EA2_2", 16);
+			StringCopy(&Var2, "PROPS_P1_EA2_2" /* GXT: Vankhov Quartz Studs */, 16);
 			iVar3 = 2;
 			iVar4 = 2;
 			iVar1 = 3900;
@@ -44275,7 +44275,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 170:
-			StringCopy(&Var2, "PROPS_P1_EA2_3", 16);
+			StringCopy(&Var2, "PROPS_P1_EA2_3" /* GXT: Vankhov Obsidian Studs */, 16);
 			iVar3 = 2;
 			iVar4 = 3;
 			iVar1 = 3550;
@@ -44283,7 +44283,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 171:
-			StringCopy(&Var2, "PROPS_P1_EA2_4", 16);
+			StringCopy(&Var2, "PROPS_P1_EA2_4" /* GXT: Vankhov Platinum Studs */, 16);
 			iVar3 = 2;
 			iVar4 = 4;
 			iVar1 = 4500;
@@ -44291,7 +44291,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 172:
-			StringCopy(&Var2, "PROPS_P1_EA2_5", 16);
+			StringCopy(&Var2, "PROPS_P1_EA2_5" /* GXT: Vankhov Agate Studs */, 16);
 			iVar3 = 2;
 			iVar4 = 5;
 			iVar1 = 2700;
@@ -44299,7 +44299,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 173:
-			StringCopy(&Var2, "PROPS_P1_EA2_6", 16);
+			StringCopy(&Var2, "PROPS_P1_EA2_6" /* GXT: Vankhov Jade Studs */, 16);
 			iVar3 = 2;
 			iVar4 = 6;
 			iVar1 = 3100;
@@ -44307,7 +44307,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 174:
-			StringCopy(&Var2, "PROPS_P1_EA2_7", 16);
+			StringCopy(&Var2, "PROPS_P1_EA2_7" /* GXT: Vankhov Onyx Studs */, 16);
 			iVar3 = 2;
 			iVar4 = 7;
 			iVar1 = 2950;
@@ -44323,7 +44323,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 83:
-			StringCopy(&Var2, "PROPS_P1_E1_0", 16);
+			StringCopy(&Var2, "PROPS_P1_E1_0" /* GXT: Orange Tint Contour Shades */, 16);
 			iVar3 = 1;
 			iVar4 = 0;
 			iVar1 = 75;
@@ -44331,7 +44331,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 84:
-			StringCopy(&Var2, "PROPS_P1_E1_1", 16);
+			StringCopy(&Var2, "PROPS_P1_E1_1" /* GXT: Slate Contour Shades */, 16);
 			iVar3 = 1;
 			iVar4 = 1;
 			iVar1 = 75;
@@ -44339,7 +44339,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 85:
-			StringCopy(&Var2, "PROPS_P1_E1_2", 16);
+			StringCopy(&Var2, "PROPS_P1_E1_2" /* GXT: Gray Contour Shades */, 16);
 			iVar3 = 1;
 			iVar4 = 2;
 			iVar1 = 75;
@@ -44347,7 +44347,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 86:
-			StringCopy(&Var2, "PROPS_P1_E1_3", 16);
+			StringCopy(&Var2, "PROPS_P1_E1_3" /* GXT: Brown Contour Shades */, 16);
 			iVar3 = 1;
 			iVar4 = 3;
 			iVar1 = 75;
@@ -44355,7 +44355,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 87:
-			StringCopy(&Var2, "PROPS_P1_E1_4", 16);
+			StringCopy(&Var2, "PROPS_P1_E1_4" /* GXT: Burgundy Contour Shades */, 16);
 			iVar3 = 1;
 			iVar4 = 4;
 			iVar1 = 75;
@@ -44363,7 +44363,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 88:
-			StringCopy(&Var2, "PROPS_P1_E1_5", 16);
+			StringCopy(&Var2, "PROPS_P1_E1_5" /* GXT: Chocolate Contour Shades */, 16);
 			iVar3 = 1;
 			iVar4 = 5;
 			iVar1 = 75;
@@ -44371,7 +44371,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 89:
-			StringCopy(&Var2, "PROPS_P1_E1_6", 16);
+			StringCopy(&Var2, "PROPS_P1_E1_6" /* GXT: Black Contour Shades */, 16);
 			iVar3 = 1;
 			iVar4 = 6;
 			iVar1 = 75;
@@ -44379,7 +44379,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 90:
-			StringCopy(&Var2, "PROPS_P1_E1_7", 16);
+			StringCopy(&Var2, "PROPS_P1_E1_7" /* GXT: Purple Tint Contour Shades */, 16);
 			iVar3 = 1;
 			iVar4 = 7;
 			iVar1 = 75;
@@ -44387,7 +44387,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 91:
-			StringCopy(&Var2, "PROPS_P1_E1_8", 16);
+			StringCopy(&Var2, "PROPS_P1_E1_8" /* GXT: Blue-Gray Contour Shades */, 16);
 			iVar3 = 1;
 			iVar4 = 8;
 			iVar1 = 75;
@@ -44395,7 +44395,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 92:
-			StringCopy(&Var2, "PROPS_P1_E1_9", 16);
+			StringCopy(&Var2, "PROPS_P1_E1_9" /* GXT: White Contour Shades */, 16);
 			iVar3 = 1;
 			iVar4 = 9;
 			iVar1 = 75;
@@ -44403,14 +44403,14 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 93:
-			StringCopy(&Var2, "PROPS_P1_E2", 16);
+			StringCopy(&Var2, "PROPS_P1_E2" /* GXT: Swimming Goggles */, 16);
 			iVar3 = 2;
 			iVar4 = 0;
 			iVar5 = 10;
 			break;
 		
 		case 94:
-			StringCopy(&Var2, "PROPS_P1_E3", 16);
+			StringCopy(&Var2, "PROPS_P1_E3" /* GXT: Racer Shades */, 16);
 			iVar3 = 3;
 			iVar4 = 0;
 			iVar1 = 110;
@@ -44418,7 +44418,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 95:
-			StringCopy(&Var2, "PROPS_P1_E4_0", 16);
+			StringCopy(&Var2, "PROPS_P1_E4_0" /* GXT: Stank Slate Shades */, 16);
 			iVar3 = 4;
 			iVar4 = 0;
 			iVar1 = 120;
@@ -44426,7 +44426,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 96:
-			StringCopy(&Var2, "PROPS_P1_E4_1", 16);
+			StringCopy(&Var2, "PROPS_P1_E4_1" /* GXT: Broker Ash Shades */, 16);
 			iVar3 = 4;
 			iVar4 = 1;
 			iVar1 = 128;
@@ -44434,7 +44434,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 97:
-			StringCopy(&Var2, "PROPS_P1_E4_2", 16);
+			StringCopy(&Var2, "PROPS_P1_E4_2" /* GXT: Broker Chocolate Shades */, 16);
 			iVar3 = 4;
 			iVar4 = 2;
 			iVar1 = 130;
@@ -44442,7 +44442,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 98:
-			StringCopy(&Var2, "PROPS_P1_E4_3", 16);
+			StringCopy(&Var2, "PROPS_P1_E4_3" /* GXT: Stank Black Shades */, 16);
 			iVar3 = 4;
 			iVar4 = 3;
 			iVar1 = 140;
@@ -44450,7 +44450,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 99:
-			StringCopy(&Var2, "PROPS_P1_E4_4", 16);
+			StringCopy(&Var2, "PROPS_P1_E4_4" /* GXT: Broker Black Shades */, 16);
 			iVar3 = 4;
 			iVar4 = 4;
 			iVar1 = 145;
@@ -44458,7 +44458,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 100:
-			StringCopy(&Var2, "PROPS_P1_E4_5", 16);
+			StringCopy(&Var2, "PROPS_P1_E4_5" /* GXT: Stank Green Tint Shades */, 16);
 			iVar3 = 4;
 			iVar4 = 5;
 			iVar1 = 135;
@@ -44466,7 +44466,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 101:
-			StringCopy(&Var2, "PROPS_P1_E4_6", 16);
+			StringCopy(&Var2, "PROPS_P1_E4_6" /* GXT: Stank Blue Tint Shades */, 16);
 			iVar3 = 4;
 			iVar4 = 6;
 			iVar1 = 138;
@@ -44474,7 +44474,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 102:
-			StringCopy(&Var2, "PROPS_P1_E5_0", 16);
+			StringCopy(&Var2, "PROPS_P1_E5_0" /* GXT: Black Aviator Shades */, 16);
 			iVar3 = 5;
 			iVar4 = 0;
 			iVar1 = 110;
@@ -44482,7 +44482,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 103:
-			StringCopy(&Var2, "PROPS_P1_E5_1", 16);
+			StringCopy(&Var2, "PROPS_P1_E5_1" /* GXT: White Aviator Shades */, 16);
 			iVar3 = 5;
 			iVar4 = 1;
 			iVar1 = 112;
@@ -44490,7 +44490,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 104:
-			StringCopy(&Var2, "PROPS_P1_E5_2", 16);
+			StringCopy(&Var2, "PROPS_P1_E5_2" /* GXT: Brown Aviator Shades */, 16);
 			iVar3 = 5;
 			iVar4 = 2;
 			iVar1 = 115;
@@ -44498,7 +44498,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 105:
-			StringCopy(&Var2, "PROPS_P1_E5_3", 16);
+			StringCopy(&Var2, "PROPS_P1_E5_3" /* GXT: Gray Aviator Shades */, 16);
 			iVar3 = 5;
 			iVar4 = 3;
 			iVar1 = 118;
@@ -44506,7 +44506,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 106:
-			StringCopy(&Var2, "PROPS_P1_E5_4", 16);
+			StringCopy(&Var2, "PROPS_P1_E5_4" /* GXT: Two-Tone Aviator Shades */, 16);
 			iVar3 = 5;
 			iVar4 = 4;
 			iVar1 = 120;
@@ -44514,7 +44514,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 107:
-			StringCopy(&Var2, "PROPS_P1_E5_5", 16);
+			StringCopy(&Var2, "PROPS_P1_E5_5" /* GXT: Bone Aviator Shades */, 16);
 			iVar3 = 5;
 			iVar4 = 5;
 			iVar1 = 125;
@@ -44522,7 +44522,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 108:
-			StringCopy(&Var2, "PROPS_P1_E5_6", 16);
+			StringCopy(&Var2, "PROPS_P1_E5_6" /* GXT: Red Aviator Shades */, 16);
 			iVar3 = 5;
 			iVar4 = 6;
 			iVar1 = 128;
@@ -44530,7 +44530,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 109:
-			StringCopy(&Var2, "PROPS_P1_E5_7", 16);
+			StringCopy(&Var2, "PROPS_P1_E5_7" /* GXT: Silver Aviator Shades */, 16);
 			iVar3 = 5;
 			iVar4 = 7;
 			iVar1 = 138;
@@ -44538,7 +44538,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 110:
-			StringCopy(&Var2, "PROPS_P1_E5_8", 16);
+			StringCopy(&Var2, "PROPS_P1_E5_8" /* GXT: Charcoal Aviator Shades */, 16);
 			iVar3 = 5;
 			iVar4 = 8;
 			iVar1 = 140;
@@ -44546,7 +44546,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 111:
-			StringCopy(&Var2, "PROPS_P1_E5_9", 16);
+			StringCopy(&Var2, "PROPS_P1_E5_9" /* GXT: Gold Aviator Shades */, 16);
 			iVar3 = 5;
 			iVar4 = 9;
 			iVar1 = 155;
@@ -44554,7 +44554,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 112:
-			StringCopy(&Var2, "PROPS_P1_E6_0", 16);
+			StringCopy(&Var2, "PROPS_P1_E6_0" /* GXT: Tinted Aviator Glasses */, 16);
 			iVar3 = 6;
 			iVar4 = 0;
 			iVar1 = 55;
@@ -44562,7 +44562,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 113:
-			StringCopy(&Var2, "PROPS_P1_E6_1", 16);
+			StringCopy(&Var2, "PROPS_P1_E6_1" /* GXT: Silver Aviator Glasses */, 16);
 			iVar3 = 6;
 			iVar4 = 1;
 			iVar1 = 55;
@@ -44570,7 +44570,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 114:
-			StringCopy(&Var2, "PROPS_P1_E6_2", 16);
+			StringCopy(&Var2, "PROPS_P1_E6_2" /* GXT: Sepia Aviator Glasses */, 16);
 			iVar3 = 6;
 			iVar4 = 2;
 			iVar1 = 58;
@@ -44578,7 +44578,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 115:
-			StringCopy(&Var2, "PROPS_P1_E6_3", 16);
+			StringCopy(&Var2, "PROPS_P1_E6_3" /* GXT: Blue Aviator Glasses */, 16);
 			iVar3 = 6;
 			iVar4 = 3;
 			iVar1 = 58;
@@ -44586,7 +44586,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 116:
-			StringCopy(&Var2, "PROPS_P1_E6_4", 16);
+			StringCopy(&Var2, "PROPS_P1_E6_4" /* GXT: Yellow Aviator Glasses */, 16);
 			iVar3 = 6;
 			iVar4 = 4;
 			iVar1 = 60;
@@ -44594,7 +44594,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 117:
-			StringCopy(&Var2, "PROPS_P1_E6_5", 16);
+			StringCopy(&Var2, "PROPS_P1_E6_5" /* GXT: Gray Aviator Glasses */, 16);
 			iVar3 = 6;
 			iVar4 = 5;
 			iVar1 = 62;
@@ -44602,7 +44602,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 118:
-			StringCopy(&Var2, "PROPS_P1_E6_6", 16);
+			StringCopy(&Var2, "PROPS_P1_E6_6" /* GXT: Black Aviator Glasses */, 16);
 			iVar3 = 6;
 			iVar4 = 6;
 			iVar1 = 65;
@@ -44610,7 +44610,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 119:
-			StringCopy(&Var2, "PROPS_P1_E6_7", 16);
+			StringCopy(&Var2, "PROPS_P1_E6_7" /* GXT: Slate Aviator Glasses */, 16);
 			iVar3 = 6;
 			iVar4 = 7;
 			iVar1 = 68;
@@ -44618,7 +44618,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 120:
-			StringCopy(&Var2, "PROPS_P1_E6_8", 16);
+			StringCopy(&Var2, "PROPS_P1_E6_8" /* GXT: Smoke Aviator Glasses */, 16);
 			iVar3 = 6;
 			iVar4 = 8;
 			iVar1 = 68;
@@ -44626,7 +44626,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 121:
-			StringCopy(&Var2, "PROPS_P1_E6_9", 16);
+			StringCopy(&Var2, "PROPS_P1_E6_9" /* GXT: Gold Aviator Glasses */, 16);
 			iVar3 = 6;
 			iVar4 = 9;
 			iVar1 = 72;
@@ -44634,7 +44634,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 122:
-			StringCopy(&Var2, "PROPS_P1_E7_0", 16);
+			StringCopy(&Var2, "PROPS_P1_E7_0" /* GXT: Suburban Black Shades */, 16);
 			iVar3 = 7;
 			iVar4 = 0;
 			iVar1 = 145;
@@ -44642,7 +44642,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 123:
-			StringCopy(&Var2, "PROPS_P1_E7_1", 16);
+			StringCopy(&Var2, "PROPS_P1_E7_1" /* GXT: Suburban Teal Shades */, 16);
 			iVar3 = 7;
 			iVar4 = 1;
 			iVar1 = 149;
@@ -44650,7 +44650,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 124:
-			StringCopy(&Var2, "PROPS_P1_E7_2", 16);
+			StringCopy(&Var2, "PROPS_P1_E7_2" /* GXT: Suburban Tortoiseshell Shades */, 16);
 			iVar3 = 7;
 			iVar4 = 2;
 			iVar1 = 139;
@@ -44658,7 +44658,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 125:
-			StringCopy(&Var2, "PROPS_P1_E7_3", 16);
+			StringCopy(&Var2, "PROPS_P1_E7_3" /* GXT: Suburban Orange Shades */, 16);
 			iVar3 = 7;
 			iVar4 = 3;
 			iVar1 = 149;
@@ -44666,7 +44666,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 126:
-			StringCopy(&Var2, "PROPS_P1_E7_4", 16);
+			StringCopy(&Var2, "PROPS_P1_E7_4" /* GXT: Fuque White Shades */, 16);
 			iVar3 = 7;
 			iVar4 = 4;
 			iVar1 = 135;
@@ -44674,7 +44674,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 127:
-			StringCopy(&Var2, "PROPS_P1_E7_5", 16);
+			StringCopy(&Var2, "PROPS_P1_E7_5" /* GXT: Fuque Camo Shades */, 16);
 			iVar3 = 7;
 			iVar4 = 5;
 			iVar1 = 138;
@@ -44682,7 +44682,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 128:
-			StringCopy(&Var2, "PROPS_P1_E7_6", 16);
+			StringCopy(&Var2, "PROPS_P1_E7_6" /* GXT: Fuque Yellow Shades */, 16);
 			iVar3 = 7;
 			iVar4 = 6;
 			iVar1 = 140;
@@ -44690,7 +44690,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 129:
-			StringCopy(&Var2, "PROPS_P1_E7_7", 16);
+			StringCopy(&Var2, "PROPS_P1_E7_7" /* GXT: Fuque Burgundy Shades */, 16);
 			iVar3 = 7;
 			iVar4 = 7;
 			iVar1 = 145;
@@ -44698,7 +44698,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 130:
-			StringCopy(&Var2, "PROPS_P1_E7_8", 16);
+			StringCopy(&Var2, "PROPS_P1_E7_8" /* GXT: Fuque Funky Shades */, 16);
 			iVar3 = 7;
 			iVar4 = 8;
 			iVar1 = 159;
@@ -44706,7 +44706,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 131:
-			StringCopy(&Var2, "PROPS_P1_E7_9", 16);
+			StringCopy(&Var2, "PROPS_P1_E7_9" /* GXT: Fuque Squared Shades */, 16);
 			iVar3 = 7;
 			iVar4 = 9;
 			iVar1 = 155;
@@ -44714,7 +44714,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 132:
-			StringCopy(&Var2, "PROPS_P1_E8_0", 16);
+			StringCopy(&Var2, "PROPS_P1_E8_0" /* GXT: Gold T-Bone Shades */, 16);
 			iVar3 = 8;
 			iVar4 = 0;
 			iVar1 = 198;
@@ -44722,7 +44722,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 133:
-			StringCopy(&Var2, "PROPS_P1_E8_1", 16);
+			StringCopy(&Var2, "PROPS_P1_E8_1" /* GXT: Silver T-Bone Shades */, 16);
 			iVar3 = 8;
 			iVar4 = 1;
 			iVar1 = 210;
@@ -44730,7 +44730,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 134:
-			StringCopy(&Var2, "PROPS_P1_E8_2", 16);
+			StringCopy(&Var2, "PROPS_P1_E8_2" /* GXT: Two-Tone T-Bone Shades */, 16);
 			iVar3 = 8;
 			iVar4 = 2;
 			iVar1 = 185;
@@ -44738,7 +44738,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 135:
-			StringCopy(&Var2, "PROPS_P1_E8_3", 16);
+			StringCopy(&Var2, "PROPS_P1_E8_3" /* GXT: Green T-Bone Shades */, 16);
 			iVar3 = 8;
 			iVar4 = 3;
 			iVar1 = 220;
@@ -44746,7 +44746,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 136:
-			StringCopy(&Var2, "PROPS_P1_E8_4", 16);
+			StringCopy(&Var2, "PROPS_P1_E8_4" /* GXT: Brown T-Bone Shades */, 16);
 			iVar3 = 8;
 			iVar4 = 4;
 			iVar1 = 190;
@@ -44754,7 +44754,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 137:
-			StringCopy(&Var2, "PROPS_P1_E8_5", 16);
+			StringCopy(&Var2, "PROPS_P1_E8_5" /* GXT: Peach T-Bone Shades */, 16);
 			iVar3 = 8;
 			iVar4 = 5;
 			iVar1 = 200;
@@ -44762,7 +44762,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 138:
-			StringCopy(&Var2, "PROPS_P1_E8_6", 16);
+			StringCopy(&Var2, "PROPS_P1_E8_6" /* GXT: Gray T-Bone Shades */, 16);
 			iVar3 = 8;
 			iVar4 = 6;
 			iVar1 = 208;
@@ -44770,7 +44770,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 139:
-			StringCopy(&Var2, "PROPS_P1_E8_7", 16);
+			StringCopy(&Var2, "PROPS_P1_E8_7" /* GXT: Orange T-Bone Shades */, 16);
 			iVar3 = 8;
 			iVar4 = 7;
 			iVar1 = 210;
@@ -44778,7 +44778,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 140:
-			StringCopy(&Var2, "PROPS_P1_E9_0", 16);
+			StringCopy(&Var2, "PROPS_P1_E9_0" /* GXT: Yellow Mono Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 0;
 			iVar1 = 165;
@@ -44786,7 +44786,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 141:
-			StringCopy(&Var2, "PROPS_P1_E9_1", 16);
+			StringCopy(&Var2, "PROPS_P1_E9_1" /* GXT: Gray Mono Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 1;
 			iVar1 = 185;
@@ -44794,7 +44794,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 142:
-			StringCopy(&Var2, "PROPS_P1_E9_2", 16);
+			StringCopy(&Var2, "PROPS_P1_E9_2" /* GXT: Hornet Mono Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 2;
 			iVar1 = 190;
@@ -44802,7 +44802,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 143:
-			StringCopy(&Var2, "PROPS_P1_E9_3", 16);
+			StringCopy(&Var2, "PROPS_P1_E9_3" /* GXT: Copper Mono Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 3;
 			iVar1 = 178;
@@ -44810,7 +44810,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 144:
-			StringCopy(&Var2, "PROPS_P1_E9_4", 16);
+			StringCopy(&Var2, "PROPS_P1_E9_4" /* GXT: Blue Mono Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 4;
 			iVar1 = 180;
@@ -44818,7 +44818,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 145:
-			StringCopy(&Var2, "PROPS_P1_E9_5", 16);
+			StringCopy(&Var2, "PROPS_P1_E9_5" /* GXT: Sepia Mono Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 5;
 			iVar1 = 168;
@@ -44826,7 +44826,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 146:
-			StringCopy(&Var2, "PROPS_P1_E9_6", 16);
+			StringCopy(&Var2, "PROPS_P1_E9_6" /* GXT: White Mono Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 6;
 			iVar1 = 170;
@@ -44834,7 +44834,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 147:
-			StringCopy(&Var2, "PROPS_P1_E9_7", 16);
+			StringCopy(&Var2, "PROPS_P1_E9_7" /* GXT: Orange Tint Mono Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 7;
 			iVar1 = 175;
@@ -44842,7 +44842,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 148:
-			StringCopy(&Var2, "PROPS_P1_E9_8", 16);
+			StringCopy(&Var2, "PROPS_P1_E9_8" /* GXT: Blue Tint Mono Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 8;
 			iVar1 = 170;
@@ -44850,7 +44850,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 149:
-			StringCopy(&Var2, "PROPS_P1_E9_9", 16);
+			StringCopy(&Var2, "PROPS_P1_E9_9" /* GXT: Smoke Mono Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 9;
 			iVar1 = 178;
@@ -44858,7 +44858,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 150:
-			StringCopy(&Var2, "PROPS_P1_E10_0", 16);
+			StringCopy(&Var2, "PROPS_P1_E10_0" /* GXT: Gold Triptych Shades */, 16);
 			iVar3 = 10;
 			iVar4 = 0;
 			iVar1 = 140;
@@ -44866,7 +44866,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 151:
-			StringCopy(&Var2, "PROPS_P1_E10_1", 16);
+			StringCopy(&Var2, "PROPS_P1_E10_1" /* GXT: Gray Triptych Shades */, 16);
 			iVar3 = 10;
 			iVar4 = 1;
 			iVar1 = 145;
@@ -44874,7 +44874,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 152:
-			StringCopy(&Var2, "PROPS_P1_E10_2", 16);
+			StringCopy(&Var2, "PROPS_P1_E10_2" /* GXT: Silver Triptych Shades */, 16);
 			iVar3 = 10;
 			iVar4 = 2;
 			iVar1 = 150;
@@ -44882,7 +44882,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 153:
-			StringCopy(&Var2, "PROPS_P1_E10_3", 16);
+			StringCopy(&Var2, "PROPS_P1_E10_3" /* GXT: Two-Tone Triptych Shades */, 16);
 			iVar3 = 10;
 			iVar4 = 3;
 			iVar1 = 165;
@@ -44890,7 +44890,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 154:
-			StringCopy(&Var2, "PROPS_P1_E10_4", 16);
+			StringCopy(&Var2, "PROPS_P1_E10_4" /* GXT: Copper Triptych Shades */, 16);
 			iVar3 = 10;
 			iVar4 = 4;
 			iVar1 = 168;
@@ -44898,7 +44898,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 155:
-			StringCopy(&Var2, "PROPS_P1_E10_5", 16);
+			StringCopy(&Var2, "PROPS_P1_E10_5" /* GXT: Black Triptych Shades */, 16);
 			iVar3 = 10;
 			iVar4 = 5;
 			iVar1 = 178;
@@ -44906,7 +44906,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 156:
-			StringCopy(&Var2, "PROPS_P1_E10_6", 16);
+			StringCopy(&Var2, "PROPS_P1_E10_6" /* GXT: White Triptych Shades */, 16);
 			iVar3 = 10;
 			iVar4 = 6;
 			iVar1 = 160;
@@ -44922,7 +44922,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 10:
-			StringCopy(&Var2, "PROPS_P1_H0_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H0_0" /* GXT: Hockey Mask */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 320;
@@ -44946,7 +44946,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 13:
-			StringCopy(&Var2, "PROPS_P1_H3_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H3_0" /* GXT: Gray Flat Cap */, 16);
 			iVar3 = 3;
 			iVar4 = 0;
 			iVar5 = 0;
@@ -45039,7 +45039,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 26:
-			StringCopy(&Var2, "PROPS_P1_H8_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H8_0" /* GXT: Green Monster Mask */, 16);
 			iVar3 = 8;
 			iVar4 = 0;
 			iVar1 = 270;
@@ -45047,7 +45047,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 27:
-			StringCopy(&Var2, "PROPS_P1_H8_1", 16);
+			StringCopy(&Var2, "PROPS_P1_H8_1" /* GXT: Red Monster Mask */, 16);
 			iVar3 = 8;
 			iVar4 = 1;
 			iVar1 = 270;
@@ -45055,7 +45055,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 28:
-			StringCopy(&Var2, "PROPS_P1_H9_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H9_0" /* GXT: Pig Mask */, 16);
 			iVar3 = 9;
 			iVar4 = 0;
 			iVar1 = 200;
@@ -45063,7 +45063,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 29:
-			StringCopy(&Var2, "PROPS_P1_H9_1", 16);
+			StringCopy(&Var2, "PROPS_P1_H9_1" /* GXT: Dark Pig Mask */, 16);
 			iVar3 = 9;
 			iVar4 = 1;
 			iVar1 = 200;
@@ -45071,7 +45071,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 30:
-			StringCopy(&Var2, "PROPS_P1_H10_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H10_0" /* GXT: Silver Skull Mask */, 16);
 			iVar3 = 10;
 			iVar4 = 0;
 			iVar1 = 350;
@@ -45079,7 +45079,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 31:
-			StringCopy(&Var2, "PROPS_P1_H10_1", 16);
+			StringCopy(&Var2, "PROPS_P1_H10_1" /* GXT: Bone Skull Mask */, 16);
 			iVar3 = 10;
 			iVar4 = 1;
 			iVar1 = 350;
@@ -45087,7 +45087,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 32:
-			StringCopy(&Var2, "PROPS_P1_H11_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H11_0" /* GXT: Space Monkey Mask */, 16);
 			iVar3 = 11;
 			iVar4 = 0;
 			iVar1 = 450;
@@ -45095,7 +45095,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 33:
-			StringCopy(&Var2, "PROPS_P1_H12_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H12_0" /* GXT: White Hockey Mask */, 16);
 			iVar3 = 12;
 			iVar4 = 0;
 			iVar1 = 500;
@@ -45103,7 +45103,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 34:
-			StringCopy(&Var2, "PROPS_P1_H12_1", 16);
+			StringCopy(&Var2, "PROPS_P1_H12_1" /* GXT: Red Hockey Mask */, 16);
 			iVar3 = 12;
 			iVar4 = 1;
 			iVar1 = 500;
@@ -45111,7 +45111,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 35:
-			StringCopy(&Var2, "PROPS_P1_H13_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H13_0" /* GXT: Ape Mask */, 16);
 			iVar3 = 13;
 			iVar4 = 0;
 			iVar1 = 50;
@@ -45119,7 +45119,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 36:
-			StringCopy(&Var2, "PROPS_P1_H13_1", 16);
+			StringCopy(&Var2, "PROPS_P1_H13_1" /* GXT: Dark Ape Mask */, 16);
 			iVar3 = 13;
 			iVar4 = 1;
 			iVar1 = 50;
@@ -45127,7 +45127,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 37:
-			StringCopy(&Var2, "PROPS_P1_H14_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H14_0" /* GXT: Carnival Orange Mask */, 16);
 			iVar3 = 14;
 			iVar4 = 0;
 			iVar1 = 99;
@@ -45135,7 +45135,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 38:
-			StringCopy(&Var2, "PROPS_P1_H14_1", 16);
+			StringCopy(&Var2, "PROPS_P1_H14_1" /* GXT: Carnival White Mask */, 16);
 			iVar3 = 14;
 			iVar4 = 1;
 			iVar1 = 99;
@@ -45143,7 +45143,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 39:
-			StringCopy(&Var2, "PROPS_P1_H14_2", 16);
+			StringCopy(&Var2, "PROPS_P1_H14_2" /* GXT: Carnival Blue Mask */, 16);
 			iVar3 = 14;
 			iVar4 = 2;
 			iVar1 = 99;
@@ -45159,112 +45159,112 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 41:
-			StringCopy(&Var2, "PROPS_P1_H19_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_0" /* GXT: Toe Shoes Fitted Cap */, 16);
 			iVar3 = 16;
 			iVar4 = 0;
 			iVar5 = 0;
 			break;
 		
 		case 42:
-			StringCopy(&Var2, "PROPS_P1_H19_1", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_1" /* GXT: Yeti Fitted Cap */, 16);
 			iVar3 = 16;
 			iVar4 = 1;
 			iVar5 = 0;
 			break;
 		
 		case 43:
-			StringCopy(&Var2, "PROPS_P1_H19_2", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_2" /* GXT: OG Fitted Cap */, 16);
 			iVar3 = 16;
 			iVar4 = 2;
 			iVar5 = 0;
 			break;
 		
 		case 44:
-			StringCopy(&Var2, "PROPS_P1_H19_3", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_3" /* GXT: Magnetics Fitted Cap */, 16);
 			iVar3 = 16;
 			iVar4 = 3;
 			iVar5 = 0;
 			break;
 		
 		case 45:
-			StringCopy(&Var2, "PROPS_P1_H19_4", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_4" /* GXT: LS Red Fitted Cap */, 16);
 			iVar3 = 16;
 			iVar4 = 4;
 			iVar5 = 0;
 			break;
 		
 		case 46:
-			StringCopy(&Var2, "PROPS_P1_H19_5", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_5" /* GXT: Los Santos Charcoal Fitted Cap */, 16);
 			iVar3 = 16;
 			iVar4 = 5;
 			iVar5 = 0;
 			break;
 		
 		case 47:
-			StringCopy(&Var2, "PROPS_P1_H19_6", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_6" /* GXT: Stank Fitted Cap */, 16);
 			iVar3 = 16;
 			iVar4 = 6;
 			iVar5 = 0;
 			break;
 		
 		case 48:
-			StringCopy(&Var2, "PROPS_P1_H19_7", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_7" /* GXT: Los Santos Gray Fitted Cap */, 16);
 			iVar3 = 16;
 			iVar4 = 7;
 			iVar5 = 0;
 			break;
 		
 		case 49:
-			StringCopy(&Var2, "PROPS_P1_H19_8", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_8" /* GXT: Perseus Fitted Cap */, 16);
 			iVar3 = 16;
 			iVar4 = 8;
 			iVar5 = 0;
 			break;
 		
 		case 50:
-			StringCopy(&Var2, "PROPS_P1_H19_9", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_9" /* GXT: Feud Slate Fitted Cap */, 16);
 			iVar3 = 16;
 			iVar4 = 9;
 			iVar5 = 0;
 			break;
 		
 		case 51:
-			StringCopy(&Var2, "PROPS_P1_H19_10", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_10" /* GXT: Feud Black Fitted Cap */, 16);
 			iVar3 = 16;
 			iVar4 = 10;
 			iVar5 = 0;
 			break;
 		
 		case 52:
-			StringCopy(&Var2, "PROPS_P1_H19_11", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_11" /* GXT: LS Black Fitted Cap */, 16);
 			iVar3 = 16;
 			iVar4 = 11;
 			iVar5 = 0;
 			break;
 		
 		case 53:
-			StringCopy(&Var2, "PROPS_P1_H19_12", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_12" /* GXT: LS Corkers Fitted Cap */, 16);
 			iVar3 = 16;
 			iVar4 = 12;
 			iVar5 = 0;
 			break;
 		
 		case 54:
-			StringCopy(&Var2, "PROPS_P1_H19_13", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_13" /* GXT: LS White Fitted Cap */, 16);
 			iVar3 = 16;
 			iVar4 = 13;
 			iVar5 = 0;
 			break;
 		
 		case 55:
-			StringCopy(&Var2, "PROPS_P1_H19_14", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_14" /* GXT: Feud Green Fitted Cap */, 16);
 			iVar3 = 16;
 			iVar4 = 14;
 			iVar5 = 0;
 			break;
 		
 		case 56:
-			StringCopy(&Var2, "PROPS_P1_H19_15", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_15" /* GXT: LS Olive Fitted Cap */, 16);
 			iVar3 = 16;
 			iVar4 = 15;
 			iVar5 = 0;
@@ -45320,7 +45320,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 64:
-			StringCopy(&Var2, "PROPS_P1_H19_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_0" /* GXT: Toe Shoes Fitted Cap */, 16);
 			iVar3 = 19;
 			iVar4 = 0;
 			iVar1 = 30;
@@ -45328,7 +45328,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 65:
-			StringCopy(&Var2, "PROPS_P1_H19_1", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_1" /* GXT: Yeti Fitted Cap */, 16);
 			iVar3 = 19;
 			iVar4 = 1;
 			iVar1 = 30;
@@ -45336,7 +45336,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 66:
-			StringCopy(&Var2, "PROPS_P1_H19_2", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_2" /* GXT: OG Fitted Cap */, 16);
 			iVar3 = 19;
 			iVar4 = 2;
 			iVar1 = 32;
@@ -45344,7 +45344,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 67:
-			StringCopy(&Var2, "PROPS_P1_H19_3", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_3" /* GXT: Magnetics Fitted Cap */, 16);
 			iVar3 = 19;
 			iVar4 = 3;
 			iVar1 = 35;
@@ -45352,7 +45352,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 68:
-			StringCopy(&Var2, "PROPS_P1_H19_4", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_4" /* GXT: LS Red Fitted Cap */, 16);
 			iVar3 = 19;
 			iVar4 = 4;
 			iVar1 = 38;
@@ -45360,7 +45360,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 69:
-			StringCopy(&Var2, "PROPS_P1_H19_5", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_5" /* GXT: Los Santos Charcoal Fitted Cap */, 16);
 			iVar3 = 19;
 			iVar4 = 5;
 			iVar1 = 42;
@@ -45368,7 +45368,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 70:
-			StringCopy(&Var2, "PROPS_P1_H19_6", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_6" /* GXT: Stank Fitted Cap */, 16);
 			iVar3 = 19;
 			iVar4 = 6;
 			iVar1 = 42;
@@ -45376,7 +45376,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 71:
-			StringCopy(&Var2, "PROPS_P1_H19_7", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_7" /* GXT: Los Santos Gray Fitted Cap */, 16);
 			iVar3 = 19;
 			iVar4 = 7;
 			iVar1 = 40;
@@ -45384,7 +45384,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 72:
-			StringCopy(&Var2, "PROPS_P1_H19_8", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_8" /* GXT: Perseus Fitted Cap */, 16);
 			iVar3 = 19;
 			iVar4 = 8;
 			iVar1 = 45;
@@ -45392,7 +45392,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 73:
-			StringCopy(&Var2, "PROPS_P1_H19_9", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_9" /* GXT: Feud Slate Fitted Cap */, 16);
 			iVar3 = 19;
 			iVar4 = 9;
 			iVar1 = 48;
@@ -45400,7 +45400,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 74:
-			StringCopy(&Var2, "PROPS_P1_H19_10", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_10" /* GXT: Feud Black Fitted Cap */, 16);
 			iVar3 = 19;
 			iVar4 = 10;
 			iVar1 = 25;
@@ -45408,7 +45408,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 75:
-			StringCopy(&Var2, "PROPS_P1_H19_11", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_11" /* GXT: LS Black Fitted Cap */, 16);
 			iVar3 = 19;
 			iVar4 = 11;
 			iVar1 = 25;
@@ -45416,7 +45416,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 76:
-			StringCopy(&Var2, "PROPS_P1_H19_12", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_12" /* GXT: LS Corkers Fitted Cap */, 16);
 			iVar3 = 19;
 			iVar4 = 12;
 			iVar1 = 28;
@@ -45424,7 +45424,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 77:
-			StringCopy(&Var2, "PROPS_P1_H19_13", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_13" /* GXT: LS White Fitted Cap */, 16);
 			iVar3 = 19;
 			iVar4 = 13;
 			iVar1 = 28;
@@ -45432,7 +45432,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 78:
-			StringCopy(&Var2, "PROPS_P1_H19_14", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_14" /* GXT: Feud Green Fitted Cap */, 16);
 			iVar3 = 19;
 			iVar4 = 14;
 			iVar1 = 30;
@@ -45440,7 +45440,7 @@ void func_536(int iParam0)//Position - 0x3928A
 			break;
 		
 		case 79:
-			StringCopy(&Var2, "PROPS_P1_H19_15", 16);
+			StringCopy(&Var2, "PROPS_P1_H19_15" /* GXT: LS Olive Fitted Cap */, 16);
 			iVar3 = 19;
 			iVar4 = 15;
 			iVar1 = 35;
@@ -45584,20 +45584,20 @@ void func_538(int iParam0)//Position - 0x3A8CC
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var2, "OUTFIT_P1_0", 16);
+			StringCopy(&Var2, "OUTFIT_P1_0" /* GXT: Blue Shirt, Jeans */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			bVar0 = true;
 			break;
 		
 		case 1:
-			StringCopy(&Var2, "OUTFIT_P1_2", 16);
+			StringCopy(&Var2, "OUTFIT_P1_2" /* GXT: White Tuxedo */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 2:
-			StringCopy(&Var2, "OUTFIT_P1_4", 16);
+			StringCopy(&Var2, "OUTFIT_P1_4" /* GXT: Golf */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
@@ -45609,282 +45609,282 @@ void func_538(int iParam0)//Position - 0x3A8CC
 			break;
 		
 		case 4:
-			StringCopy(&Var2, "OUTFIT_P1_7", 16);
+			StringCopy(&Var2, "OUTFIT_P1_7" /* GXT: Scuba Land */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 5:
-			StringCopy(&Var2, "OUTFIT_P1_10", 16);
+			StringCopy(&Var2, "OUTFIT_P1_10" /* GXT: Stealth */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 6:
-			StringCopy(&Var2, "OUTFIT_P1_11", 16);
+			StringCopy(&Var2, "OUTFIT_P1_11" /* GXT: Triathlon */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 7:
-			StringCopy(&Var2, "OUTFIT_P1_12", 16);
+			StringCopy(&Var2, "OUTFIT_P1_12" /* GXT: Fireman */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 8:
-			StringCopy(&Var2, "OUTFIT_P1_13", 16);
+			StringCopy(&Var2, "OUTFIT_P1_13" /* GXT: Exterminator */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 9:
-			StringCopy(&Var2, "OUTFIT_P1_15", 16);
+			StringCopy(&Var2, "OUTFIT_P1_15" /* GXT: Black Boiler Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 10:
-			StringCopy(&Var2, "OUTFIT_P1_16", 16);
+			StringCopy(&Var2, "OUTFIT_P1_16" /* GXT: Skydiving */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 11:
-			StringCopy(&Var2, "OUTFIT_P1_17", 16);
+			StringCopy(&Var2, "OUTFIT_P1_17" /* GXT: Tuxedo */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 10000;
 			break;
 		
 		case 12:
-			StringCopy(&Var2, "OUTFIT_P1_18", 16);
+			StringCopy(&Var2, "OUTFIT_P1_18" /* GXT: Blue Boiler Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 13:
-			StringCopy(&Var2, "OUTFIT_P1_19", 16);
+			StringCopy(&Var2, "OUTFIT_P1_19" /* GXT: Navy Boiler Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 105;
 			break;
 		
 		case 14:
-			StringCopy(&Var2, "OUTFIT_P1_20", 16);
+			StringCopy(&Var2, "OUTFIT_P1_20" /* GXT: Gray Boiler Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 105;
 			break;
 		
 		case 15:
-			StringCopy(&Var2, "OUTFIT_P1_21", 16);
+			StringCopy(&Var2, "OUTFIT_P1_21" /* GXT: Green Boiler Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 105;
 			break;
 		
 		case 16:
-			StringCopy(&Var2, "OUTFIT_P1_22", 16);
+			StringCopy(&Var2, "OUTFIT_P1_22" /* GXT: Ash Hoodie, Sweatpants */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 17:
-			StringCopy(&Var2, "OUTFIT_P1_23", 16);
+			StringCopy(&Var2, "OUTFIT_P1_23" /* GXT: Yellow Check Shirt, Jeans */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 18:
-			StringCopy(&Var2, "OUTFIT_P1_24", 16);
+			StringCopy(&Var2, "OUTFIT_P1_24" /* GXT: Gray Plaid Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 19:
-			StringCopy(&Var2, "OUTFIT_P1_25", 16);
+			StringCopy(&Var2, "OUTFIT_P1_25" /* GXT: Black Hoodie, Jeans */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 20:
-			StringCopy(&Var2, "OUTFIT_P1_26", 16);
+			StringCopy(&Var2, "OUTFIT_P1_26" /* GXT: Track Jacket, Jeans */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 21:
-			StringCopy(&Var2, "OUTFIT_P1_27", 16);
+			StringCopy(&Var2, "OUTFIT_P1_27" /* GXT: Off-White Shirt, Jeans */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 22:
-			StringCopy(&Var2, "OUTFIT_P1_28", 16);
+			StringCopy(&Var2, "OUTFIT_P1_28" /* GXT: Gray Plaid 3 Piece Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 4000;
 			break;
 		
 		case 23:
-			StringCopy(&Var2, "OUTFIT_P1_29", 16);
+			StringCopy(&Var2, "OUTFIT_P1_29" /* GXT: Ash Plaid 3 Piece Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 4500;
 			break;
 		
 		case 24:
-			StringCopy(&Var2, "OUTFIT_P1_30", 16);
+			StringCopy(&Var2, "OUTFIT_P1_30" /* GXT: Charcoal Plaid 3 Piece Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 4500;
 			break;
 		
 		case 25:
-			StringCopy(&Var2, "OUTFIT_P1_31", 16);
+			StringCopy(&Var2, "OUTFIT_P1_31" /* GXT: Tan Plaid 3 Piece Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 4650;
 			break;
 		
 		case 26:
-			StringCopy(&Var2, "OUTFIT_P1_32", 16);
+			StringCopy(&Var2, "OUTFIT_P1_32" /* GXT: Slate 3 Piece Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 4900;
 			break;
 		
 		case 27:
-			StringCopy(&Var2, "OUTFIT_P1_33", 16);
+			StringCopy(&Var2, "OUTFIT_P1_33" /* GXT: Ash 3 Piece Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 5000;
 			break;
 		
 		case 28:
-			StringCopy(&Var2, "OUTFIT_P1_34", 16);
+			StringCopy(&Var2, "OUTFIT_P1_34" /* GXT: Stone 3 Piece Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 4750;
 			break;
 		
 		case 29:
-			StringCopy(&Var2, "OUTFIT_P1_35", 16);
+			StringCopy(&Var2, "OUTFIT_P1_35" /* GXT: Oatmeal 3 Piece Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 4750;
 			break;
 		
 		case 30:
-			StringCopy(&Var2, "OUTFIT_P1_36", 16);
+			StringCopy(&Var2, "OUTFIT_P1_36" /* GXT: Navy Plaid Piped 3 Piece Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 5200;
 			break;
 		
 		case 31:
-			StringCopy(&Var2, "OUTFIT_P1_37", 16);
+			StringCopy(&Var2, "OUTFIT_P1_37" /* GXT: Off-White 3 Piece Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 5200;
 			break;
 		
 		case 32:
-			StringCopy(&Var2, "OUTFIT_P1_38", 16);
+			StringCopy(&Var2, "OUTFIT_P1_38" /* GXT: Red Piped 3 Piece Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 5500;
 			break;
 		
 		case 33:
-			StringCopy(&Var2, "OUTFIT_P1_39", 16);
+			StringCopy(&Var2, "OUTFIT_P1_39" /* GXT: Gray Piped 3 Piece Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 5900;
 			break;
 		
 		case 34:
-			StringCopy(&Var2, "OUTFIT_P1_40", 16);
+			StringCopy(&Var2, "OUTFIT_P1_40" /* GXT: Navy 3 Piece Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 5900;
 			break;
 		
 		case 35:
-			StringCopy(&Var2, "OUTFIT_P1_41", 16);
+			StringCopy(&Var2, "OUTFIT_P1_41" /* GXT: Russet Piped 3 Piece Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 5900;
 			break;
 		
 		case 36:
-			StringCopy(&Var2, "OUTFIT_P1_42", 16);
+			StringCopy(&Var2, "OUTFIT_P1_42" /* GXT: Green 3 Piece Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 5900;
 			break;
 		
 		case 37:
-			StringCopy(&Var2, "OUTFIT_P1_43", 16);
+			StringCopy(&Var2, "OUTFIT_P1_43" /* GXT: Beige 3 Piece Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 5900;
 			break;
 		
 		case 38:
-			StringCopy(&Var2, "OUTFIT_P1_47", 16);
+			StringCopy(&Var2, "OUTFIT_P1_47" /* GXT: Underwear */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 3000;
 			break;
 		
 		case 39:
-			StringCopy(&Var2, "OUTFIT_P1_48", 16);
+			StringCopy(&Var2, "OUTFIT_P1_48" /* GXT: LS Black Hoodie, Jeans */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 3000;
 			break;
 		
 		case 40:
-			StringCopy(&Var2, "OUTFIT_P1_49", 16);
+			StringCopy(&Var2, "OUTFIT_P1_49" /* GXT: Gray Hoodie, Jeans */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 3000;
 			break;
 		
 		case 41:
-			StringCopy(&Var2, "OUTFIT_P1_10", 16);
+			StringCopy(&Var2, "OUTFIT_P1_10" /* GXT: Stealth */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 42:
-			StringCopy(&Var2, "OUTFIT_P1_50", 16);
+			StringCopy(&Var2, "OUTFIT_P1_50" /* GXT: Moto X */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 43:
-			StringCopy(&Var2, "OUTFIT_P1_51", 16);
+			StringCopy(&Var2, "OUTFIT_P1_51" /* GXT: U.R. Jersey, Fatigues */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 44:
-			StringCopy(&Var2, "OUTFIT_P1_52", 16);
+			StringCopy(&Var2, "OUTFIT_P1_52" /* GXT: U.R. OG Tee, Bike Leathers */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 45:
-			StringCopy(&Var2, "OUTFIT_P1_53", 16);
+			StringCopy(&Var2, "OUTFIT_P1_53" /* GXT: Uptown Riders Longsleeve, Camos */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 46:
-			StringCopy(&Var2, "OUTFIT_P1_54", 16);
+			StringCopy(&Var2, "OUTFIT_P1_54" /* GXT: U.R. Jacket, Baggies */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
@@ -45973,339 +45973,339 @@ void func_539(int iParam0)//Position - 0x3ADD7
 			break;
 		
 		case 9:
-			StringCopy(&Var2, "JBIB_P1_3_0", 16);
+			StringCopy(&Var2, "JBIB_P1_3_0" /* GXT: Silver Plaid Vest */, 16);
 			iVar3 = 3;
 			iVar4 = 0;
 			break;
 		
 		case 10:
-			StringCopy(&Var2, "JBIB_P1_3_1", 16);
+			StringCopy(&Var2, "JBIB_P1_3_1" /* GXT: Ash Vest */, 16);
 			iVar3 = 3;
 			iVar4 = 1;
 			break;
 		
 		case 11:
-			StringCopy(&Var2, "JBIB_P1_3_2", 16);
+			StringCopy(&Var2, "JBIB_P1_3_2" /* GXT: Navy Vest */, 16);
 			iVar3 = 3;
 			iVar4 = 2;
 			break;
 		
 		case 12:
-			StringCopy(&Var2, "JBIB_P1_3_3", 16);
+			StringCopy(&Var2, "JBIB_P1_3_3" /* GXT: Colorful Plaid Vest */, 16);
 			iVar3 = 3;
 			iVar4 = 3;
 			break;
 		
 		case 13:
-			StringCopy(&Var2, "JBIB_P1_3_4", 16);
+			StringCopy(&Var2, "JBIB_P1_3_4" /* GXT: Beige Vest */, 16);
 			iVar3 = 3;
 			iVar4 = 4;
 			break;
 		
 		case 14:
-			StringCopy(&Var2, "JBIB_P1_3_5", 16);
+			StringCopy(&Var2, "JBIB_P1_3_5" /* GXT: Black Vest */, 16);
 			iVar3 = 3;
 			iVar4 = 5;
 			break;
 		
 		case 15:
-			StringCopy(&Var2, "JBIB_P1_3_6", 16);
+			StringCopy(&Var2, "JBIB_P1_3_6" /* GXT: Gray Plaid Vest */, 16);
 			iVar3 = 3;
 			iVar4 = 6;
 			break;
 		
 		case 16:
-			StringCopy(&Var2, "JBIB_P1_3_7", 16);
+			StringCopy(&Var2, "JBIB_P1_3_7" /* GXT: Jade Plaid Vest */, 16);
 			iVar3 = 3;
 			iVar4 = 7;
 			break;
 		
 		case 17:
-			StringCopy(&Var2, "JBIB_P1_3_8", 16);
+			StringCopy(&Var2, "JBIB_P1_3_8" /* GXT: Beige Plaid Vest */, 16);
 			iVar3 = 3;
 			iVar4 = 8;
 			break;
 		
 		case 18:
-			StringCopy(&Var2, "JBIB_P1_3_9", 16);
+			StringCopy(&Var2, "JBIB_P1_3_9" /* GXT: Brown Plaid Vest */, 16);
 			iVar3 = 3;
 			iVar4 = 9;
 			break;
 		
 		case 19:
-			StringCopy(&Var2, "JBIB_P1_3_10", 16);
+			StringCopy(&Var2, "JBIB_P1_3_10" /* GXT: Brown Vest */, 16);
 			iVar3 = 3;
 			iVar4 = 10;
 			break;
 		
 		case 20:
-			StringCopy(&Var2, "JBIB_P1_3_11", 16);
+			StringCopy(&Var2, "JBIB_P1_3_11" /* GXT: White Plaid Vest */, 16);
 			iVar3 = 3;
 			iVar4 = 11;
 			break;
 		
 		case 21:
-			StringCopy(&Var2, "JBIB_P1_3_12", 16);
+			StringCopy(&Var2, "JBIB_P1_3_12" /* GXT: Pearl Plaid Vest */, 16);
 			iVar3 = 3;
 			iVar4 = 12;
 			break;
 		
 		case 22:
-			StringCopy(&Var2, "JBIB_P1_3_13", 16);
+			StringCopy(&Var2, "JBIB_P1_3_13" /* GXT: Warm Gray Vest */, 16);
 			iVar3 = 3;
 			iVar4 = 13;
 			break;
 		
 		case 23:
-			StringCopy(&Var2, "JBIB_P1_3_14", 16);
+			StringCopy(&Var2, "JBIB_P1_3_14" /* GXT: Topaz Vest */, 16);
 			iVar3 = 3;
 			iVar4 = 14;
 			break;
 		
 		case 24:
-			StringCopy(&Var2, "JBIB_P1_3_15", 16);
+			StringCopy(&Var2, "JBIB_P1_3_15" /* GXT: Plum Vest */, 16);
 			iVar3 = 3;
 			iVar4 = 15;
 			break;
 		
 		case 25:
-			StringCopy(&Var2, "JBIB_P1_3_0", 16);
+			StringCopy(&Var2, "JBIB_P1_3_0" /* GXT: Silver Plaid Vest */, 16);
 			iVar3 = 4;
 			iVar4 = 0;
 			break;
 		
 		case 26:
-			StringCopy(&Var2, "JBIB_P1_3_1", 16);
+			StringCopy(&Var2, "JBIB_P1_3_1" /* GXT: Ash Vest */, 16);
 			iVar3 = 4;
 			iVar4 = 1;
 			break;
 		
 		case 27:
-			StringCopy(&Var2, "JBIB_P1_3_2", 16);
+			StringCopy(&Var2, "JBIB_P1_3_2" /* GXT: Navy Vest */, 16);
 			iVar3 = 4;
 			iVar4 = 2;
 			break;
 		
 		case 28:
-			StringCopy(&Var2, "JBIB_P1_3_3", 16);
+			StringCopy(&Var2, "JBIB_P1_3_3" /* GXT: Colorful Plaid Vest */, 16);
 			iVar3 = 4;
 			iVar4 = 3;
 			break;
 		
 		case 29:
-			StringCopy(&Var2, "JBIB_P1_3_4", 16);
+			StringCopy(&Var2, "JBIB_P1_3_4" /* GXT: Beige Vest */, 16);
 			iVar3 = 4;
 			iVar4 = 4;
 			break;
 		
 		case 30:
-			StringCopy(&Var2, "JBIB_P1_3_5", 16);
+			StringCopy(&Var2, "JBIB_P1_3_5" /* GXT: Black Vest */, 16);
 			iVar3 = 4;
 			iVar4 = 5;
 			break;
 		
 		case 31:
-			StringCopy(&Var2, "JBIB_P1_3_6", 16);
+			StringCopy(&Var2, "JBIB_P1_3_6" /* GXT: Gray Plaid Vest */, 16);
 			iVar3 = 4;
 			iVar4 = 6;
 			break;
 		
 		case 32:
-			StringCopy(&Var2, "JBIB_P1_3_7", 16);
+			StringCopy(&Var2, "JBIB_P1_3_7" /* GXT: Jade Plaid Vest */, 16);
 			iVar3 = 4;
 			iVar4 = 7;
 			break;
 		
 		case 33:
-			StringCopy(&Var2, "JBIB_P1_3_8", 16);
+			StringCopy(&Var2, "JBIB_P1_3_8" /* GXT: Beige Plaid Vest */, 16);
 			iVar3 = 4;
 			iVar4 = 8;
 			break;
 		
 		case 34:
-			StringCopy(&Var2, "JBIB_P1_3_9", 16);
+			StringCopy(&Var2, "JBIB_P1_3_9" /* GXT: Brown Plaid Vest */, 16);
 			iVar3 = 4;
 			iVar4 = 9;
 			break;
 		
 		case 35:
-			StringCopy(&Var2, "JBIB_P1_3_10", 16);
+			StringCopy(&Var2, "JBIB_P1_3_10" /* GXT: Brown Vest */, 16);
 			iVar3 = 4;
 			iVar4 = 10;
 			break;
 		
 		case 36:
-			StringCopy(&Var2, "JBIB_P1_3_11", 16);
+			StringCopy(&Var2, "JBIB_P1_3_11" /* GXT: White Plaid Vest */, 16);
 			iVar3 = 4;
 			iVar4 = 11;
 			break;
 		
 		case 37:
-			StringCopy(&Var2, "JBIB_P1_3_12", 16);
+			StringCopy(&Var2, "JBIB_P1_3_12" /* GXT: Pearl Plaid Vest */, 16);
 			iVar3 = 4;
 			iVar4 = 12;
 			break;
 		
 		case 38:
-			StringCopy(&Var2, "JBIB_P1_3_13", 16);
+			StringCopy(&Var2, "JBIB_P1_3_13" /* GXT: Warm Gray Vest */, 16);
 			iVar3 = 4;
 			iVar4 = 13;
 			break;
 		
 		case 39:
-			StringCopy(&Var2, "JBIB_P1_3_14", 16);
+			StringCopy(&Var2, "JBIB_P1_3_14" /* GXT: Topaz Vest */, 16);
 			iVar3 = 4;
 			iVar4 = 14;
 			break;
 		
 		case 40:
-			StringCopy(&Var2, "JBIB_P1_3_15", 16);
+			StringCopy(&Var2, "JBIB_P1_3_15" /* GXT: Plum Vest */, 16);
 			iVar3 = 4;
 			iVar4 = 15;
 			break;
 		
 		case 41:
-			StringCopy(&Var2, "JBIB_P1_5_0", 16);
+			StringCopy(&Var2, "JBIB_P1_5_0" /* GXT: White Shirt */, 16);
 			iVar3 = 5;
 			iVar4 = 0;
 			break;
 		
 		case 42:
-			StringCopy(&Var2, "JBIB_P1_6_0", 16);
+			StringCopy(&Var2, "JBIB_P1_6_0" /* GXT: White Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 0;
 			break;
 		
 		case 43:
-			StringCopy(&Var2, "JBIB_P1_6_1", 16);
+			StringCopy(&Var2, "JBIB_P1_6_1" /* GXT: Two-Tone Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 1;
 			break;
 		
 		case 44:
-			StringCopy(&Var2, "JBIB_P1_7_0", 16);
+			StringCopy(&Var2, "JBIB_P1_7_0" /* GXT: Charcoal Hoodie */, 16);
 			iVar3 = 7;
 			iVar4 = 0;
 			break;
 		
 		case 45:
-			StringCopy(&Var2, "JBIB_P1_8_0", 16);
+			StringCopy(&Var2, "JBIB_P1_8_0" /* GXT: White T-Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 0;
 			break;
 		
 		case 46:
-			StringCopy(&Var2, "JBIB_P1_9_0", 16);
+			StringCopy(&Var2, "JBIB_P1_9_0" /* GXT: Blue Shirt */, 16);
 			iVar3 = 9;
 			iVar4 = 0;
 			break;
 		
 		case 47:
-			StringCopy(&Var2, "JBIB_P1_10_0", 16);
+			StringCopy(&Var2, "JBIB_P1_10_0" /* GXT: White T-Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 0;
 			break;
 		
 		case 48:
-			StringCopy(&Var2, "JBIB_P1_10_1", 16);
+			StringCopy(&Var2, "JBIB_P1_10_1" /* GXT: Crevis T-Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 1;
 			iVar1 = 48;
 			break;
 		
 		case 49:
-			StringCopy(&Var2, "JBIB_P1_10_2", 16);
+			StringCopy(&Var2, "JBIB_P1_10_2" /* GXT: Yeti T-Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 2;
 			iVar1 = 35;
 			break;
 		
 		case 50:
-			StringCopy(&Var2, "JBIB_P1_10_3", 16);
+			StringCopy(&Var2, "JBIB_P1_10_3" /* GXT: Sweatbox T-Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 3;
 			iVar1 = 32;
 			break;
 		
 		case 51:
-			StringCopy(&Var2, "JBIB_P1_10_4", 16);
+			StringCopy(&Var2, "JBIB_P1_10_4" /* GXT: Trey Baker T-Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 4;
 			iVar1 = 35;
 			break;
 		
 		case 52:
-			StringCopy(&Var2, "JBIB_P1_10_5", 16);
+			StringCopy(&Var2, "JBIB_P1_10_5" /* GXT: Black T-Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 5;
 			iVar1 = 48;
 			break;
 		
 		case 53:
-			StringCopy(&Var2, "JBIB_P1_10_6", 16);
+			StringCopy(&Var2, "JBIB_P1_10_6" /* GXT: Fruntalot T-Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 6;
 			iVar1 = 52;
 			break;
 		
 		case 54:
-			StringCopy(&Var2, "JBIB_P1_10_7", 16);
+			StringCopy(&Var2, "JBIB_P1_10_7" /* GXT: Kingz of Los Santos T-Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 7;
 			iVar1 = 38;
 			break;
 		
 		case 55:
-			StringCopy(&Var2, "JBIB_P1_10_8", 16);
+			StringCopy(&Var2, "JBIB_P1_10_8" /* GXT: Ten Off The Chain T-Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 8;
 			iVar1 = 42;
 			break;
 		
 		case 56:
-			StringCopy(&Var2, "JBIB_P1_10_9", 16);
+			StringCopy(&Var2, "JBIB_P1_10_9" /* GXT: Gray T-Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 9;
 			iVar1 = 38;
 			break;
 		
 		case 57:
-			StringCopy(&Var2, "JBIB_P1_10_10", 16);
+			StringCopy(&Var2, "JBIB_P1_10_10" /* GXT: Green T-Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 10;
 			iVar1 = 35;
 			break;
 		
 		case 58:
-			StringCopy(&Var2, "JBIB_P1_10_11", 16);
+			StringCopy(&Var2, "JBIB_P1_10_11" /* GXT: Camo T-Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 11;
 			iVar1 = 48;
 			break;
 		
 		case 59:
-			StringCopy(&Var2, "JBIB_P1_10_12", 16);
+			StringCopy(&Var2, "JBIB_P1_10_12" /* GXT: Yeti Rainbow T-Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 12;
 			iVar1 = 42;
 			break;
 		
 		case 60:
-			StringCopy(&Var2, "JBIB_P1_10_13", 16);
+			StringCopy(&Var2, "JBIB_P1_10_13" /* GXT: Feud Banded T-Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 13;
 			iVar1 = 45;
 			break;
 		
 		case 61:
-			StringCopy(&Var2, "JBIB_P1_10_14", 16);
+			StringCopy(&Var2, "JBIB_P1_10_14" /* GXT: Yogarishima T-Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 14;
 			iVar1 = 45;
 			break;
 		
 		case 62:
-			StringCopy(&Var2, "JBIB_P1_10_15", 16);
+			StringCopy(&Var2, "JBIB_P1_10_15" /* GXT: Feud Gray T-Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 15;
 			iVar1 = 49;
@@ -46376,31 +46376,31 @@ void func_541(int iParam0)//Position - 0x3B4B9
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var2, "BERD_P1_0_0", 16);
+			StringCopy(&Var2, "BERD_P1_0_0" /* GXT: Clean Shave */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 1:
-			StringCopy(&Var2, "BERD_P1_1_0", 16);
+			StringCopy(&Var2, "BERD_P1_1_0" /* GXT: Full Van Dyke */, 16);
 			iVar3 = 1;
 			iVar4 = 0;
 			break;
 		
 		case 2:
-			StringCopy(&Var2, "BERD_P1_2_0", 16);
+			StringCopy(&Var2, "BERD_P1_2_0" /* GXT: Methodical */, 16);
 			iVar3 = 2;
 			iVar4 = 0;
 			break;
 		
 		case 3:
-			StringCopy(&Var2, "BERD_P1_3_0", 16);
+			StringCopy(&Var2, "BERD_P1_3_0" /* GXT: Full Spartan */, 16);
 			iVar3 = 3;
 			iVar4 = 0;
 			break;
 		
 		case 4:
-			StringCopy(&Var2, "BERD_P1_4_0", 16);
+			StringCopy(&Var2, "BERD_P1_4_0" /* GXT: Stubble */, 16);
 			iVar3 = 4;
 			iVar4 = 0;
 			break;
@@ -46816,42 +46816,42 @@ void func_543(int iParam0)//Position - 0x3BAB9
 			break;
 		
 		case 5:
-			StringCopy(&Var2, "SPEC2_P0_08_0", 16);
+			StringCopy(&Var2, "SPEC2_P0_08_0" /* GXT: Red Wrestler Mask */, 16);
 			iVar3 = 5;
 			iVar4 = 0;
 			iVar1 = 125;
 			break;
 		
 		case 6:
-			StringCopy(&Var2, "SPEC2_P0_08_1", 16);
+			StringCopy(&Var2, "SPEC2_P0_08_1" /* GXT: Green Wrestler Mask */, 16);
 			iVar3 = 5;
 			iVar4 = 1;
 			iVar1 = 150;
 			break;
 		
 		case 7:
-			StringCopy(&Var2, "SPEC2_P0_08_2", 16);
+			StringCopy(&Var2, "SPEC2_P0_08_2" /* GXT: Patriot Wrestler Mask */, 16);
 			iVar3 = 5;
 			iVar4 = 2;
 			iVar1 = 175;
 			break;
 		
 		case 8:
-			StringCopy(&Var2, "SPEC2_P0_08_3", 16);
+			StringCopy(&Var2, "SPEC2_P0_08_3" /* GXT: Domino Wrestler Mask */, 16);
 			iVar3 = 5;
 			iVar4 = 3;
 			iVar1 = 85;
 			break;
 		
 		case 9:
-			StringCopy(&Var2, "SPEC2_P0_08_4", 16);
+			StringCopy(&Var2, "SPEC2_P0_08_4" /* GXT: Gray Wrestler Mask */, 16);
 			iVar3 = 5;
 			iVar4 = 4;
 			iVar1 = 150;
 			break;
 		
 		case 10:
-			StringCopy(&Var2, "SPEC2_P0_08_5", 16);
+			StringCopy(&Var2, "SPEC2_P0_08_5" /* GXT: Phoenix Wrestler Mask */, 16);
 			iVar3 = 5;
 			iVar4 = 5;
 			iVar1 = 175;
@@ -46954,7 +46954,7 @@ void func_544(int iParam0)//Position - 0x3BC50
 			break;
 		
 		case 9:
-			StringCopy(&Var2, "SPEC_P1_9_0", 16);
+			StringCopy(&Var2, "SPEC_P1_9_0" /* GXT: Bandana */, 16);
 			iVar3 = 9;
 			iVar4 = 0;
 			break;
@@ -46967,91 +46967,91 @@ void func_544(int iParam0)//Position - 0x3BC50
 			break;
 		
 		case 11:
-			StringCopy(&Var2, "SPEC_P1_11_0", 16);
+			StringCopy(&Var2, "SPEC_P1_11_0" /* GXT: Silver Tie */, 16);
 			iVar3 = 11;
 			iVar4 = 0;
 			iVar1 = 195;
 			break;
 		
 		case 12:
-			StringCopy(&Var2, "SPEC_P1_11_1", 16);
+			StringCopy(&Var2, "SPEC_P1_11_1" /* GXT: Gold Tie */, 16);
 			iVar3 = 11;
 			iVar4 = 1;
 			iVar1 = 195;
 			break;
 		
 		case 13:
-			StringCopy(&Var2, "SPEC_P1_11_2", 16);
+			StringCopy(&Var2, "SPEC_P1_11_2" /* GXT: Cream Tie */, 16);
 			iVar3 = 11;
 			iVar4 = 2;
 			iVar1 = 195;
 			break;
 		
 		case 14:
-			StringCopy(&Var2, "SPEC_P1_11_3", 16);
+			StringCopy(&Var2, "SPEC_P1_11_3" /* GXT: Blue Diamond Tie */, 16);
 			iVar3 = 11;
 			iVar4 = 3;
 			iVar1 = 250;
 			break;
 		
 		case 15:
-			StringCopy(&Var2, "SPEC_P1_11_4", 16);
+			StringCopy(&Var2, "SPEC_P1_11_4" /* GXT: Blue Spotted Tie */, 16);
 			iVar3 = 11;
 			iVar4 = 4;
 			iVar1 = 250;
 			break;
 		
 		case 16:
-			StringCopy(&Var2, "SPEC_P1_11_5", 16);
+			StringCopy(&Var2, "SPEC_P1_11_5" /* GXT: White Spotted Tie */, 16);
 			iVar3 = 11;
 			iVar4 = 5;
 			iVar1 = 250;
 			break;
 		
 		case 17:
-			StringCopy(&Var2, "SPEC_P1_11_6", 16);
+			StringCopy(&Var2, "SPEC_P1_11_6" /* GXT: Dark Gray Tie */, 16);
 			iVar3 = 11;
 			iVar4 = 6;
 			iVar1 = 195;
 			break;
 		
 		case 18:
-			StringCopy(&Var2, "SPEC_P1_11_7", 16);
+			StringCopy(&Var2, "SPEC_P1_11_7" /* GXT: Gray Striped Tie */, 16);
 			iVar3 = 11;
 			iVar4 = 7;
 			iVar1 = 250;
 			break;
 		
 		case 19:
-			StringCopy(&Var2, "SPEC_P1_11_8", 16);
+			StringCopy(&Var2, "SPEC_P1_11_8" /* GXT: Silver Striped Tie */, 16);
 			iVar3 = 11;
 			iVar4 = 8;
 			iVar1 = 250;
 			break;
 		
 		case 20:
-			StringCopy(&Var2, "SPEC_P1_11_9", 16);
+			StringCopy(&Var2, "SPEC_P1_11_9" /* GXT: Red Striped Tie */, 16);
 			iVar3 = 11;
 			iVar4 = 9;
 			iVar1 = 250;
 			break;
 		
 		case 21:
-			StringCopy(&Var2, "SPEC_P1_11_10", 16);
+			StringCopy(&Var2, "SPEC_P1_11_10" /* GXT: Bronze Striped Tie */, 16);
 			iVar3 = 11;
 			iVar4 = 10;
 			iVar1 = 250;
 			break;
 		
 		case 22:
-			StringCopy(&Var2, "SPEC_P1_11_11", 16);
+			StringCopy(&Var2, "SPEC_P1_11_11" /* GXT: White Diamond Tie */, 16);
 			iVar3 = 11;
 			iVar4 = 11;
 			iVar1 = 195;
 			break;
 		
 		case 23:
-			StringCopy(&Var2, "SPEC_P1_11_12", 16);
+			StringCopy(&Var2, "SPEC_P1_11_12" /* GXT: Black Diamond Tie */, 16);
 			iVar3 = 11;
 			iVar4 = 12;
 			iVar1 = 250;
@@ -47078,289 +47078,289 @@ void func_544(int iParam0)//Position - 0x3BC50
 			break;
 		
 		case 27:
-			StringCopy(&Var2, "SPEC_P1_15_0", 16);
+			StringCopy(&Var2, "SPEC_P1_15_0" /* GXT: Purple Tie */, 16);
 			iVar3 = 15;
 			iVar4 = 0;
 			break;
 		
 		case 28:
-			StringCopy(&Var2, "SPEC_P1_15_1", 16);
+			StringCopy(&Var2, "SPEC_P1_15_1" /* GXT: Cream Tie */, 16);
 			iVar3 = 15;
 			iVar4 = 1;
 			break;
 		
 		case 29:
-			StringCopy(&Var2, "SPEC_P1_15_2", 16);
+			StringCopy(&Var2, "SPEC_P1_15_2" /* GXT: Beige Tie */, 16);
 			iVar3 = 15;
 			iVar4 = 2;
 			break;
 		
 		case 30:
-			StringCopy(&Var2, "SPEC_P1_15_3", 16);
+			StringCopy(&Var2, "SPEC_P1_15_3" /* GXT: Ash Tie */, 16);
 			iVar3 = 15;
 			iVar4 = 3;
 			break;
 		
 		case 31:
-			StringCopy(&Var2, "SPEC_P1_15_4", 16);
+			StringCopy(&Var2, "SPEC_P1_15_4" /* GXT: White Diamond Tie */, 16);
 			iVar3 = 15;
 			iVar4 = 4;
 			break;
 		
 		case 32:
-			StringCopy(&Var2, "SPEC_P1_15_5", 16);
+			StringCopy(&Var2, "SPEC_P1_15_5" /* GXT: Gray Diamond Tie */, 16);
 			iVar3 = 15;
 			iVar4 = 5;
 			break;
 		
 		case 33:
-			StringCopy(&Var2, "SPEC_P1_15_6", 16);
+			StringCopy(&Var2, "SPEC_P1_15_6" /* GXT: Beige Striped Tie */, 16);
 			iVar3 = 15;
 			iVar4 = 6;
 			break;
 		
 		case 34:
-			StringCopy(&Var2, "SPEC_P1_15_7", 16);
+			StringCopy(&Var2, "SPEC_P1_15_7" /* GXT: Red Striped Tie */, 16);
 			iVar3 = 15;
 			iVar4 = 7;
 			break;
 		
 		case 35:
-			StringCopy(&Var2, "SPEC_P1_15_8", 16);
+			StringCopy(&Var2, "SPEC_P1_15_8" /* GXT: Russet Wool Tie */, 16);
 			iVar3 = 15;
 			iVar4 = 8;
 			break;
 		
 		case 36:
-			StringCopy(&Var2, "SPEC_P1_15_9", 16);
+			StringCopy(&Var2, "SPEC_P1_15_9" /* GXT: Gray Striped Tie */, 16);
 			iVar3 = 15;
 			iVar4 = 9;
 			break;
 		
 		case 37:
-			StringCopy(&Var2, "SPEC_P1_15_10", 16);
+			StringCopy(&Var2, "SPEC_P1_15_10" /* GXT: Gray Wool Tie */, 16);
 			iVar3 = 15;
 			iVar4 = 10;
 			break;
 		
 		case 38:
-			StringCopy(&Var2, "SPEC_P1_15_11", 16);
+			StringCopy(&Var2, "SPEC_P1_15_11" /* GXT: Off-White Tie */, 16);
 			iVar3 = 15;
 			iVar4 = 11;
 			break;
 		
 		case 39:
-			StringCopy(&Var2, "SPEC_P1_15_12", 16);
+			StringCopy(&Var2, "SPEC_P1_15_12" /* GXT: Blue Diamond Tie */, 16);
 			iVar3 = 15;
 			iVar4 = 12;
 			break;
 		
 		case 40:
-			StringCopy(&Var2, "SPEC_P1_15_13", 16);
+			StringCopy(&Var2, "SPEC_P1_15_13" /* GXT: Brown Wool Tie */, 16);
 			iVar3 = 15;
 			iVar4 = 13;
 			break;
 		
 		case 41:
-			StringCopy(&Var2, "SPEC_P1_15_14", 16);
+			StringCopy(&Var2, "SPEC_P1_15_14" /* GXT: Gray Textured Tie */, 16);
 			iVar3 = 15;
 			iVar4 = 14;
 			break;
 		
 		case 42:
-			StringCopy(&Var2, "SPEC_P1_15_15", 16);
+			StringCopy(&Var2, "SPEC_P1_15_15" /* GXT: Amethyst Tie */, 16);
 			iVar3 = 15;
 			iVar4 = 15;
 			break;
 		
 		case 43:
-			StringCopy(&Var2, "SPEC_P1_15_0", 16);
+			StringCopy(&Var2, "SPEC_P1_15_0" /* GXT: Purple Tie */, 16);
 			iVar3 = 16;
 			iVar4 = 0;
 			break;
 		
 		case 44:
-			StringCopy(&Var2, "SPEC_P1_15_1", 16);
+			StringCopy(&Var2, "SPEC_P1_15_1" /* GXT: Cream Tie */, 16);
 			iVar3 = 16;
 			iVar4 = 1;
 			break;
 		
 		case 45:
-			StringCopy(&Var2, "SPEC_P1_15_2", 16);
+			StringCopy(&Var2, "SPEC_P1_15_2" /* GXT: Beige Tie */, 16);
 			iVar3 = 16;
 			iVar4 = 2;
 			break;
 		
 		case 46:
-			StringCopy(&Var2, "SPEC_P1_15_3", 16);
+			StringCopy(&Var2, "SPEC_P1_15_3" /* GXT: Ash Tie */, 16);
 			iVar3 = 16;
 			iVar4 = 3;
 			break;
 		
 		case 47:
-			StringCopy(&Var2, "SPEC_P1_15_4", 16);
+			StringCopy(&Var2, "SPEC_P1_15_4" /* GXT: White Diamond Tie */, 16);
 			iVar3 = 16;
 			iVar4 = 4;
 			break;
 		
 		case 48:
-			StringCopy(&Var2, "SPEC_P1_15_5", 16);
+			StringCopy(&Var2, "SPEC_P1_15_5" /* GXT: Gray Diamond Tie */, 16);
 			iVar3 = 16;
 			iVar4 = 5;
 			break;
 		
 		case 49:
-			StringCopy(&Var2, "SPEC_P1_15_6", 16);
+			StringCopy(&Var2, "SPEC_P1_15_6" /* GXT: Beige Striped Tie */, 16);
 			iVar3 = 16;
 			iVar4 = 6;
 			break;
 		
 		case 50:
-			StringCopy(&Var2, "SPEC_P1_15_7", 16);
+			StringCopy(&Var2, "SPEC_P1_15_7" /* GXT: Red Striped Tie */, 16);
 			iVar3 = 16;
 			iVar4 = 7;
 			break;
 		
 		case 51:
-			StringCopy(&Var2, "SPEC_P1_15_8", 16);
+			StringCopy(&Var2, "SPEC_P1_15_8" /* GXT: Russet Wool Tie */, 16);
 			iVar3 = 16;
 			iVar4 = 8;
 			break;
 		
 		case 52:
-			StringCopy(&Var2, "SPEC_P1_15_9", 16);
+			StringCopy(&Var2, "SPEC_P1_15_9" /* GXT: Gray Striped Tie */, 16);
 			iVar3 = 16;
 			iVar4 = 9;
 			break;
 		
 		case 53:
-			StringCopy(&Var2, "SPEC_P1_15_10", 16);
+			StringCopy(&Var2, "SPEC_P1_15_10" /* GXT: Gray Wool Tie */, 16);
 			iVar3 = 16;
 			iVar4 = 10;
 			break;
 		
 		case 54:
-			StringCopy(&Var2, "SPEC_P1_15_11", 16);
+			StringCopy(&Var2, "SPEC_P1_15_11" /* GXT: Off-White Tie */, 16);
 			iVar3 = 16;
 			iVar4 = 11;
 			break;
 		
 		case 55:
-			StringCopy(&Var2, "SPEC_P1_15_12", 16);
+			StringCopy(&Var2, "SPEC_P1_15_12" /* GXT: Blue Diamond Tie */, 16);
 			iVar3 = 16;
 			iVar4 = 12;
 			break;
 		
 		case 56:
-			StringCopy(&Var2, "SPEC_P1_15_13", 16);
+			StringCopy(&Var2, "SPEC_P1_15_13" /* GXT: Brown Wool Tie */, 16);
 			iVar3 = 16;
 			iVar4 = 13;
 			break;
 		
 		case 57:
-			StringCopy(&Var2, "SPEC_P1_15_14", 16);
+			StringCopy(&Var2, "SPEC_P1_15_14" /* GXT: Gray Textured Tie */, 16);
 			iVar3 = 16;
 			iVar4 = 14;
 			break;
 		
 		case 58:
-			StringCopy(&Var2, "SPEC_P1_15_15", 16);
+			StringCopy(&Var2, "SPEC_P1_15_15" /* GXT: Amethyst Tie */, 16);
 			iVar3 = 16;
 			iVar4 = 15;
 			break;
 		
 		case 59:
-			StringCopy(&Var2, "SPEC_P1_15_0", 16);
+			StringCopy(&Var2, "SPEC_P1_15_0" /* GXT: Purple Tie */, 16);
 			iVar3 = 17;
 			iVar4 = 0;
 			break;
 		
 		case 60:
-			StringCopy(&Var2, "SPEC_P1_15_1", 16);
+			StringCopy(&Var2, "SPEC_P1_15_1" /* GXT: Cream Tie */, 16);
 			iVar3 = 17;
 			iVar4 = 1;
 			break;
 		
 		case 61:
-			StringCopy(&Var2, "SPEC_P1_15_2", 16);
+			StringCopy(&Var2, "SPEC_P1_15_2" /* GXT: Beige Tie */, 16);
 			iVar3 = 17;
 			iVar4 = 2;
 			break;
 		
 		case 62:
-			StringCopy(&Var2, "SPEC_P1_15_3", 16);
+			StringCopy(&Var2, "SPEC_P1_15_3" /* GXT: Ash Tie */, 16);
 			iVar3 = 17;
 			iVar4 = 3;
 			break;
 		
 		case 63:
-			StringCopy(&Var2, "SPEC_P1_15_4", 16);
+			StringCopy(&Var2, "SPEC_P1_15_4" /* GXT: White Diamond Tie */, 16);
 			iVar3 = 17;
 			iVar4 = 4;
 			break;
 		
 		case 64:
-			StringCopy(&Var2, "SPEC_P1_15_5", 16);
+			StringCopy(&Var2, "SPEC_P1_15_5" /* GXT: Gray Diamond Tie */, 16);
 			iVar3 = 17;
 			iVar4 = 5;
 			break;
 		
 		case 65:
-			StringCopy(&Var2, "SPEC_P1_15_6", 16);
+			StringCopy(&Var2, "SPEC_P1_15_6" /* GXT: Beige Striped Tie */, 16);
 			iVar3 = 17;
 			iVar4 = 6;
 			break;
 		
 		case 66:
-			StringCopy(&Var2, "SPEC_P1_15_7", 16);
+			StringCopy(&Var2, "SPEC_P1_15_7" /* GXT: Red Striped Tie */, 16);
 			iVar3 = 17;
 			iVar4 = 7;
 			break;
 		
 		case 67:
-			StringCopy(&Var2, "SPEC_P1_15_8", 16);
+			StringCopy(&Var2, "SPEC_P1_15_8" /* GXT: Russet Wool Tie */, 16);
 			iVar3 = 17;
 			iVar4 = 8;
 			break;
 		
 		case 68:
-			StringCopy(&Var2, "SPEC_P1_15_9", 16);
+			StringCopy(&Var2, "SPEC_P1_15_9" /* GXT: Gray Striped Tie */, 16);
 			iVar3 = 17;
 			iVar4 = 9;
 			break;
 		
 		case 69:
-			StringCopy(&Var2, "SPEC_P1_15_10", 16);
+			StringCopy(&Var2, "SPEC_P1_15_10" /* GXT: Gray Wool Tie */, 16);
 			iVar3 = 17;
 			iVar4 = 10;
 			break;
 		
 		case 70:
-			StringCopy(&Var2, "SPEC_P1_15_11", 16);
+			StringCopy(&Var2, "SPEC_P1_15_11" /* GXT: Off-White Tie */, 16);
 			iVar3 = 17;
 			iVar4 = 11;
 			break;
 		
 		case 71:
-			StringCopy(&Var2, "SPEC_P1_15_12", 16);
+			StringCopy(&Var2, "SPEC_P1_15_12" /* GXT: Blue Diamond Tie */, 16);
 			iVar3 = 17;
 			iVar4 = 12;
 			break;
 		
 		case 72:
-			StringCopy(&Var2, "SPEC_P1_15_13", 16);
+			StringCopy(&Var2, "SPEC_P1_15_13" /* GXT: Brown Wool Tie */, 16);
 			iVar3 = 17;
 			iVar4 = 13;
 			break;
 		
 		case 73:
-			StringCopy(&Var2, "SPEC_P1_15_14", 16);
+			StringCopy(&Var2, "SPEC_P1_15_14" /* GXT: Gray Textured Tie */, 16);
 			iVar3 = 17;
 			iVar4 = 14;
 			break;
 		
 		case 74:
-			StringCopy(&Var2, "SPEC_P1_15_15", 16);
+			StringCopy(&Var2, "SPEC_P1_15_15" /* GXT: Amethyst Tie */, 16);
 			iVar3 = 17;
 			iVar4 = 15;
 			break;
@@ -47484,90 +47484,90 @@ void func_546(int iParam0)//Position - 0x3C55F
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var2, "FEET_P1_00_0", 16);
+			StringCopy(&Var2, "FEET_P1_00_0" /* GXT: White Athletic Shoes */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 1:
-			StringCopy(&Var2, "FEET_P1_00_1", 16);
+			StringCopy(&Var2, "FEET_P1_00_1" /* GXT: All White Athletic Shoes */, 16);
 			iVar3 = 0;
 			iVar4 = 1;
 			iVar1 = 80;
 			break;
 		
 		case 2:
-			StringCopy(&Var2, "FEET_P1_00_2", 16);
+			StringCopy(&Var2, "FEET_P1_00_2" /* GXT: Charcoal Two-Tone Athletic Shoes */, 16);
 			iVar3 = 0;
 			iVar4 = 2;
 			iVar1 = 80;
 			break;
 		
 		case 3:
-			StringCopy(&Var2, "FEET_P1_00_3", 16);
+			StringCopy(&Var2, "FEET_P1_00_3" /* GXT: Yellow Athletic Shoes */, 16);
 			iVar3 = 0;
 			iVar4 = 3;
 			iVar1 = 89;
 			break;
 		
 		case 4:
-			StringCopy(&Var2, "FEET_P1_00_4", 16);
+			StringCopy(&Var2, "FEET_P1_00_4" /* GXT: Gray Athletic Shoes */, 16);
 			iVar3 = 0;
 			iVar4 = 4;
 			iVar1 = 45;
 			break;
 		
 		case 5:
-			StringCopy(&Var2, "FEET_P1_00_5", 16);
+			StringCopy(&Var2, "FEET_P1_00_5" /* GXT: Black Two-Tone Athletic Shoes */, 16);
 			iVar3 = 0;
 			iVar4 = 5;
 			iVar1 = 35;
 			break;
 		
 		case 6:
-			StringCopy(&Var2, "FEET_P1_00_6", 16);
+			StringCopy(&Var2, "FEET_P1_00_6" /* GXT: Gray Two-Tone Athletic Shoes */, 16);
 			iVar3 = 0;
 			iVar4 = 6;
 			iVar1 = 89;
 			break;
 		
 		case 7:
-			StringCopy(&Var2, "FEET_P1_00_7", 16);
+			StringCopy(&Var2, "FEET_P1_00_7" /* GXT: Lemon Accent Athletic Shoes */, 16);
 			iVar3 = 0;
 			iVar4 = 7;
 			iVar1 = 95;
 			break;
 		
 		case 8:
-			StringCopy(&Var2, "FEET_P1_00_8", 16);
+			StringCopy(&Var2, "FEET_P1_00_8" /* GXT: Two-Tone Athletic Shoes */, 16);
 			iVar3 = 0;
 			iVar4 = 8;
 			iVar1 = 115;
 			break;
 		
 		case 9:
-			StringCopy(&Var2, "FEET_P1_00_9", 16);
+			StringCopy(&Var2, "FEET_P1_00_9" /* GXT: Cyan Athletic Shoes */, 16);
 			iVar3 = 0;
 			iVar4 = 9;
 			iVar1 = 40;
 			break;
 		
 		case 10:
-			StringCopy(&Var2, "FEET_P1_00_10", 16);
+			StringCopy(&Var2, "FEET_P1_00_10" /* GXT: Cyan Accent Athletic Shoes */, 16);
 			iVar3 = 0;
 			iVar4 = 10;
 			iVar1 = 145;
 			break;
 		
 		case 11:
-			StringCopy(&Var2, "FEET_P1_00_11", 16);
+			StringCopy(&Var2, "FEET_P1_00_11" /* GXT: Fluorescent Athletic Shoes */, 16);
 			iVar3 = 0;
 			iVar4 = 11;
 			iVar1 = 145;
 			break;
 		
 		case 12:
-			StringCopy(&Var2, "FEET_P1_01_0", 16);
+			StringCopy(&Var2, "FEET_P1_01_0" /* GXT: Work Boots */, 16);
 			iVar3 = 1;
 			iVar4 = 0;
 			break;
@@ -47607,41 +47607,41 @@ void func_546(int iParam0)//Position - 0x3C55F
 			break;
 		
 		case 18:
-			StringCopy(&Var2, "FEET_P1_06_0", 16);
+			StringCopy(&Var2, "FEET_P1_06_0" /* GXT: Desert Round-Toe Boots */, 16);
 			iVar3 = 6;
 			iVar4 = 0;
 			break;
 		
 		case 19:
-			StringCopy(&Var2, "FEET_P1_06_1", 16);
+			StringCopy(&Var2, "FEET_P1_06_1" /* GXT: Coffee Round-Toe Boots */, 16);
 			iVar3 = 6;
 			iVar4 = 1;
 			iVar1 = 180;
 			break;
 		
 		case 20:
-			StringCopy(&Var2, "FEET_P1_06_2", 16);
+			StringCopy(&Var2, "FEET_P1_06_2" /* GXT: Chocolate Round-Toe Boots */, 16);
 			iVar3 = 6;
 			iVar4 = 2;
 			iVar1 = 80;
 			break;
 		
 		case 21:
-			StringCopy(&Var2, "FEET_P1_06_3", 16);
+			StringCopy(&Var2, "FEET_P1_06_3" /* GXT: Gray Round-Toe Boots */, 16);
 			iVar3 = 6;
 			iVar4 = 3;
 			iVar1 = 200;
 			break;
 		
 		case 22:
-			StringCopy(&Var2, "FEET_P1_06_4", 16);
+			StringCopy(&Var2, "FEET_P1_06_4" /* GXT: Slate Round-Toe Boots */, 16);
 			iVar3 = 6;
 			iVar4 = 4;
 			iVar1 = 220;
 			break;
 		
 		case 23:
-			StringCopy(&Var2, "FEET_P1_06_5", 16);
+			StringCopy(&Var2, "FEET_P1_06_5" /* GXT: Copper Round-Toe Boots */, 16);
 			iVar3 = 6;
 			iVar4 = 5;
 			iVar1 = 235;
@@ -47655,63 +47655,63 @@ void func_546(int iParam0)//Position - 0x3C55F
 			break;
 		
 		case 25:
-			StringCopy(&Var2, "FEET_P1_08_0", 16);
+			StringCopy(&Var2, "FEET_P1_08_0" /* GXT: Gray Snake Shoes */, 16);
 			iVar3 = 8;
 			iVar4 = 0;
 			iVar1 = 870;
 			break;
 		
 		case 26:
-			StringCopy(&Var2, "FEET_P1_08_1", 16);
+			StringCopy(&Var2, "FEET_P1_08_1" /* GXT: Black Shoes */, 16);
 			iVar3 = 8;
 			iVar4 = 1;
 			iVar1 = 870;
 			break;
 		
 		case 27:
-			StringCopy(&Var2, "FEET_P1_08_2", 16);
+			StringCopy(&Var2, "FEET_P1_08_2" /* GXT: White Snake Shoes */, 16);
 			iVar3 = 8;
 			iVar4 = 2;
 			iVar1 = 870;
 			break;
 		
 		case 28:
-			StringCopy(&Var2, "FEET_P1_08_3", 16);
+			StringCopy(&Var2, "FEET_P1_08_3" /* GXT: Gray Crocodile Shoes */, 16);
 			iVar3 = 8;
 			iVar4 = 3;
 			iVar1 = 1275;
 			break;
 		
 		case 29:
-			StringCopy(&Var2, "FEET_P1_08_4", 16);
+			StringCopy(&Var2, "FEET_P1_08_4" /* GXT: Alligator Shoes */, 16);
 			iVar3 = 8;
 			iVar4 = 4;
 			iVar1 = 1275;
 			break;
 		
 		case 30:
-			StringCopy(&Var2, "FEET_P1_08_5", 16);
+			StringCopy(&Var2, "FEET_P1_08_5" /* GXT: Brown Crocodile Shoes */, 16);
 			iVar3 = 8;
 			iVar4 = 5;
 			iVar1 = 1275;
 			break;
 		
 		case 31:
-			StringCopy(&Var2, "FEET_P1_08_6", 16);
+			StringCopy(&Var2, "FEET_P1_08_6" /* GXT: Rattlesnake Shoes */, 16);
 			iVar3 = 8;
 			iVar4 = 6;
 			iVar1 = 1275;
 			break;
 		
 		case 32:
-			StringCopy(&Var2, "FEET_P1_08_7", 16);
+			StringCopy(&Var2, "FEET_P1_08_7" /* GXT: Gray Python Shoes */, 16);
 			iVar3 = 8;
 			iVar4 = 7;
 			iVar1 = 1275;
 			break;
 		
 		case 33:
-			StringCopy(&Var2, "FEET_P1_08_8", 16);
+			StringCopy(&Var2, "FEET_P1_08_8" /* GXT: Two-Tone Crocodile Shoes */, 16);
 			iVar3 = 8;
 			iVar4 = 8;
 			iVar1 = 1275;
@@ -47725,264 +47725,264 @@ void func_546(int iParam0)//Position - 0x3C55F
 			break;
 		
 		case 35:
-			StringCopy(&Var2, "FEET_P1_10_0", 16);
+			StringCopy(&Var2, "FEET_P1_10_0" /* GXT: Black Brogues */, 16);
 			iVar3 = 10;
 			iVar4 = 0;
 			bVar0 = true;
 			break;
 		
 		case 36:
-			StringCopy(&Var2, "FEET_P1_11_0", 16);
+			StringCopy(&Var2, "FEET_P1_11_0" /* GXT: Two-Tone Sneakers */, 16);
 			iVar3 = 11;
 			iVar4 = 0;
 			break;
 		
 		case 37:
-			StringCopy(&Var2, "FEET_P1_11_1", 16);
+			StringCopy(&Var2, "FEET_P1_11_1" /* GXT: Orange Sneakers */, 16);
 			iVar3 = 11;
 			iVar4 = 1;
 			iVar1 = 50;
 			break;
 		
 		case 38:
-			StringCopy(&Var2, "FEET_P1_11_2", 16);
+			StringCopy(&Var2, "FEET_P1_11_2" /* GXT: Black Sneakers */, 16);
 			iVar3 = 11;
 			iVar4 = 2;
 			iVar1 = 50;
 			break;
 		
 		case 39:
-			StringCopy(&Var2, "FEET_P1_11_3", 16);
+			StringCopy(&Var2, "FEET_P1_11_3" /* GXT: Desert Green Sneakers */, 16);
 			iVar3 = 11;
 			iVar4 = 3;
 			iVar1 = 50;
 			break;
 		
 		case 40:
-			StringCopy(&Var2, "FEET_P1_11_4", 16);
+			StringCopy(&Var2, "FEET_P1_11_4" /* GXT: Mint Sneakers */, 16);
 			iVar3 = 11;
 			iVar4 = 4;
 			iVar1 = 50;
 			break;
 		
 		case 41:
-			StringCopy(&Var2, "FEET_P1_11_5", 16);
+			StringCopy(&Var2, "FEET_P1_11_5" /* GXT: Freeway Sneakers */, 16);
 			iVar3 = 11;
 			iVar4 = 5;
 			iVar1 = 50;
 			break;
 		
 		case 42:
-			StringCopy(&Var2, "FEET_P1_11_6", 16);
+			StringCopy(&Var2, "FEET_P1_11_6" /* GXT: Animal Fashion Sneakers */, 16);
 			iVar3 = 11;
 			iVar4 = 6;
 			iVar1 = 50;
 			break;
 		
 		case 43:
-			StringCopy(&Var2, "FEET_P1_11_7", 16);
+			StringCopy(&Var2, "FEET_P1_11_7" /* GXT: Feud Classic Sneakers */, 16);
 			iVar3 = 11;
 			iVar4 = 7;
 			iVar1 = 50;
 			break;
 		
 		case 44:
-			StringCopy(&Var2, "FEET_P1_11_8", 16);
+			StringCopy(&Var2, "FEET_P1_11_8" /* GXT: Cacao Blend Sneakers */, 16);
 			iVar3 = 11;
 			iVar4 = 8;
 			iVar1 = 50;
 			break;
 		
 		case 45:
-			StringCopy(&Var2, "FEET_P1_11_9", 16);
+			StringCopy(&Var2, "FEET_P1_11_9" /* GXT: Magnetics Sneakers */, 16);
 			iVar3 = 11;
 			iVar4 = 9;
 			iVar1 = 50;
 			break;
 		
 		case 46:
-			StringCopy(&Var2, "FEET_P1_11_10", 16);
+			StringCopy(&Var2, "FEET_P1_11_10" /* GXT: Blue Sneakers */, 16);
 			iVar3 = 11;
 			iVar4 = 10;
 			iVar1 = 50;
 			break;
 		
 		case 47:
-			StringCopy(&Var2, "FEET_P1_11_11", 16);
+			StringCopy(&Var2, "FEET_P1_11_11" /* GXT: White Sneakers */, 16);
 			iVar3 = 11;
 			iVar4 = 11;
 			iVar1 = 50;
 			break;
 		
 		case 48:
-			StringCopy(&Var2, "FEET_P1_11_12", 16);
+			StringCopy(&Var2, "FEET_P1_11_12" /* GXT: Winter Camo Sneakers */, 16);
 			iVar3 = 11;
 			iVar4 = 12;
 			iVar1 = 50;
 			break;
 		
 		case 49:
-			StringCopy(&Var2, "FEET_P1_11_13", 16);
+			StringCopy(&Var2, "FEET_P1_11_13" /* GXT: Forest Camo Sneakers */, 16);
 			iVar3 = 11;
 			iVar4 = 13;
 			iVar1 = 50;
 			break;
 		
 		case 50:
-			StringCopy(&Var2, "FEET_P1_11_14", 16);
+			StringCopy(&Var2, "FEET_P1_11_14" /* GXT: Soft Seas Sneakers */, 16);
 			iVar3 = 11;
 			iVar4 = 14;
 			iVar1 = 50;
 			break;
 		
 		case 51:
-			StringCopy(&Var2, "FEET_P1_11_15", 16);
+			StringCopy(&Var2, "FEET_P1_11_15" /* GXT: Latte Sneakers */, 16);
 			iVar3 = 11;
 			iVar4 = 15;
 			iVar1 = 50;
 			break;
 		
 		case 52:
-			StringCopy(&Var2, "FEET_P1_12_0", 16);
+			StringCopy(&Var2, "FEET_P1_12_0" /* GXT: White Skate Sneakers */, 16);
 			iVar3 = 12;
 			iVar4 = 0;
 			break;
 		
 		case 53:
-			StringCopy(&Var2, "FEET_P1_12_1", 16);
+			StringCopy(&Var2, "FEET_P1_12_1" /* GXT: Green Skate Sneakers */, 16);
 			iVar3 = 12;
 			iVar4 = 1;
 			iVar1 = 25;
 			break;
 		
 		case 54:
-			StringCopy(&Var2, "FEET_P1_12_2", 16);
+			StringCopy(&Var2, "FEET_P1_12_2" /* GXT: Two-Tone Skate Sneakers */, 16);
 			iVar3 = 12;
 			iVar4 = 2;
 			iVar1 = 20;
 			break;
 		
 		case 55:
-			StringCopy(&Var2, "FEET_P1_12_3", 16);
+			StringCopy(&Var2, "FEET_P1_12_3" /* GXT: Black Skate Sneakers */, 16);
 			iVar3 = 12;
 			iVar4 = 3;
 			iVar1 = 24;
 			break;
 		
 		case 56:
-			StringCopy(&Var2, "FEET_P1_12_4", 16);
+			StringCopy(&Var2, "FEET_P1_12_4" /* GXT: Blue Skate Sneakers */, 16);
 			iVar3 = 12;
 			iVar4 = 4;
 			iVar1 = 25;
 			break;
 		
 		case 57:
-			StringCopy(&Var2, "FEET_P1_12_5", 16);
+			StringCopy(&Var2, "FEET_P1_12_5" /* GXT: Orange Accent Skate Sneakers */, 16);
 			iVar3 = 12;
 			iVar4 = 5;
 			iVar1 = 27;
 			break;
 		
 		case 58:
-			StringCopy(&Var2, "FEET_P1_12_6", 16);
+			StringCopy(&Var2, "FEET_P1_12_6" /* GXT: Red Skate Sneakers */, 16);
 			iVar3 = 12;
 			iVar4 = 6;
 			iVar1 = 29;
 			break;
 		
 		case 59:
-			StringCopy(&Var2, "FEET_P1_12_7", 16);
+			StringCopy(&Var2, "FEET_P1_12_7" /* GXT: Orange Skate Sneakers */, 16);
 			iVar3 = 12;
 			iVar4 = 7;
 			iVar1 = 27;
 			break;
 		
 		case 60:
-			StringCopy(&Var2, "FEET_P1_12_8", 16);
+			StringCopy(&Var2, "FEET_P1_12_8" /* GXT: Mocha Skate Sneakers */, 16);
 			iVar3 = 12;
 			iVar4 = 8;
 			iVar1 = 25;
 			break;
 		
 		case 61:
-			StringCopy(&Var2, "FEET_P1_12_9", 16);
+			StringCopy(&Var2, "FEET_P1_12_9" /* GXT: Black Skate Sneakers */, 16);
 			iVar3 = 12;
 			iVar4 = 9;
 			iVar1 = 30;
 			break;
 		
 		case 62:
-			StringCopy(&Var2, "FEET_P1_12_10", 16);
+			StringCopy(&Var2, "FEET_P1_12_10" /* GXT: Fresh Skate Sneakers */, 16);
 			iVar3 = 12;
 			iVar4 = 10;
 			iVar1 = 28;
 			break;
 		
 		case 63:
-			StringCopy(&Var2, "FEET_P1_12_11", 16);
+			StringCopy(&Var2, "FEET_P1_12_11" /* GXT: Green Skate Sneakers */, 16);
 			iVar3 = 12;
 			iVar4 = 11;
 			iVar1 = 30;
 			break;
 		
 		case 64:
-			StringCopy(&Var2, "FEET_P1_13_0", 16);
+			StringCopy(&Var2, "FEET_P1_13_0" /* GXT: Black Oxfords */, 16);
 			iVar3 = 13;
 			iVar4 = 0;
 			bVar0 = true;
 			break;
 		
 		case 65:
-			StringCopy(&Var2, "FEET_P1_14_0", 16);
+			StringCopy(&Var2, "FEET_P1_14_0" /* GXT: Gray Skate Shoes */, 16);
 			iVar3 = 14;
 			iVar4 = 0;
 			iVar1 = 155;
 			break;
 		
 		case 66:
-			StringCopy(&Var2, "FEET_P1_14_1", 16);
+			StringCopy(&Var2, "FEET_P1_14_1" /* GXT: White Skate Shoes */, 16);
 			iVar3 = 14;
 			iVar4 = 1;
 			iVar1 = 155;
 			break;
 		
 		case 67:
-			StringCopy(&Var2, "FEET_P1_14_2", 16);
+			StringCopy(&Var2, "FEET_P1_14_2" /* GXT: Chestnut Skate Shoes */, 16);
 			iVar3 = 14;
 			iVar4 = 2;
 			iVar1 = 165;
 			break;
 		
 		case 68:
-			StringCopy(&Var2, "FEET_P1_14_3", 16);
+			StringCopy(&Var2, "FEET_P1_14_3" /* GXT: Jade Accent Skate Shoes */, 16);
 			iVar3 = 14;
 			iVar4 = 3;
 			iVar1 = 170;
 			break;
 		
 		case 69:
-			StringCopy(&Var2, "FEET_P1_14_4", 16);
+			StringCopy(&Var2, "FEET_P1_14_4" /* GXT: Two-Tone Skate Shoes */, 16);
 			iVar3 = 14;
 			iVar4 = 4;
 			iVar1 = 160;
 			break;
 		
 		case 70:
-			StringCopy(&Var2, "FEET_P1_14_5", 16);
+			StringCopy(&Var2, "FEET_P1_14_5" /* GXT: Red Piped Skate Shoes */, 16);
 			iVar3 = 14;
 			iVar4 = 5;
 			iVar1 = 165;
 			break;
 		
 		case 71:
-			StringCopy(&Var2, "FEET_P1_14_6", 16);
+			StringCopy(&Var2, "FEET_P1_14_6" /* GXT: Red Skate Shoes */, 16);
 			iVar3 = 14;
 			iVar4 = 6;
 			iVar1 = 170;
 			break;
 		
 		case 72:
-			StringCopy(&Var2, "FEET_P1_14_7", 16);
+			StringCopy(&Var2, "FEET_P1_14_7" /* GXT: Beige Skate Shoes */, 16);
 			iVar3 = 14;
 			iVar4 = 7;
 			iVar1 = 160;
@@ -47995,420 +47995,420 @@ void func_546(int iParam0)//Position - 0x3C55F
 			break;
 		
 		case 74:
-			StringCopy(&Var2, "FEET_P1_16_0", 16);
+			StringCopy(&Var2, "FEET_P1_16_0" /* GXT: Black Leather Loafers */, 16);
 			iVar3 = 16;
 			iVar4 = 0;
 			iVar1 = 720;
 			break;
 		
 		case 75:
-			StringCopy(&Var2, "FEET_P1_16_1", 16);
+			StringCopy(&Var2, "FEET_P1_16_1" /* GXT: Gray Leather Loafers */, 16);
 			iVar3 = 16;
 			iVar4 = 1;
 			iVar1 = 680;
 			break;
 		
 		case 76:
-			StringCopy(&Var2, "FEET_P1_16_2", 16);
+			StringCopy(&Var2, "FEET_P1_16_2" /* GXT: Cream Leather Loafers */, 16);
 			iVar3 = 16;
 			iVar4 = 2;
 			iVar1 = 650;
 			break;
 		
 		case 77:
-			StringCopy(&Var2, "FEET_P1_16_3", 16);
+			StringCopy(&Var2, "FEET_P1_16_3" /* GXT: Brown Leather Loafers */, 16);
 			iVar3 = 16;
 			iVar4 = 3;
 			iVar1 = 670;
 			break;
 		
 		case 78:
-			StringCopy(&Var2, "FEET_P1_16_4", 16);
+			StringCopy(&Var2, "FEET_P1_16_4" /* GXT: White Leather Loafers */, 16);
 			iVar3 = 16;
 			iVar4 = 4;
 			iVar1 = 700;
 			break;
 		
 		case 79:
-			StringCopy(&Var2, "FEET_P1_16_5", 16);
+			StringCopy(&Var2, "FEET_P1_16_5" /* GXT: Russet Leather Loafers */, 16);
 			iVar3 = 16;
 			iVar4 = 5;
 			iVar1 = 680;
 			break;
 		
 		case 80:
-			StringCopy(&Var2, "FEET_P1_16_6", 16);
+			StringCopy(&Var2, "FEET_P1_16_6" /* GXT: White Snakeskin Loafers */, 16);
 			iVar3 = 16;
 			iVar4 = 6;
 			iVar1 = 720;
 			break;
 		
 		case 81:
-			StringCopy(&Var2, "FEET_P1_16_7", 16);
+			StringCopy(&Var2, "FEET_P1_16_7" /* GXT: Rattlesnake Loafers */, 16);
 			iVar3 = 16;
 			iVar4 = 7;
 			iVar1 = 740;
 			break;
 		
 		case 82:
-			StringCopy(&Var2, "FEET_P1_16_8", 16);
+			StringCopy(&Var2, "FEET_P1_16_8" /* GXT: Brown Snakeskin Loafers */, 16);
 			iVar3 = 16;
 			iVar4 = 8;
 			iVar1 = 760;
 			break;
 		
 		case 83:
-			StringCopy(&Var2, "FEET_P1_16_9", 16);
+			StringCopy(&Var2, "FEET_P1_16_9" /* GXT: Zebra Two-Tone Loafers */, 16);
 			iVar3 = 16;
 			iVar4 = 9;
 			iVar1 = 780;
 			break;
 		
 		case 84:
-			StringCopy(&Var2, "FEET_P1_16_10", 16);
+			StringCopy(&Var2, "FEET_P1_16_10" /* GXT: Pale Reptile Loafers */, 16);
 			iVar3 = 16;
 			iVar4 = 10;
 			iVar1 = 750;
 			break;
 		
 		case 85:
-			StringCopy(&Var2, "FEET_P1_16_11", 16);
+			StringCopy(&Var2, "FEET_P1_16_11" /* GXT: Tan Alligator Loafers */, 16);
 			iVar3 = 16;
 			iVar4 = 11;
 			iVar1 = 700;
 			break;
 		
 		case 86:
-			StringCopy(&Var2, "FEET_P1_17_0", 16);
+			StringCopy(&Var2, "FEET_P1_17_0" /* GXT: All Black Oxfords */, 16);
 			iVar3 = 17;
 			iVar4 = 0;
 			iVar1 = 790;
 			break;
 		
 		case 87:
-			StringCopy(&Var2, "FEET_P1_17_1", 16);
+			StringCopy(&Var2, "FEET_P1_17_1" /* GXT: Chocolate Oxfords */, 16);
 			iVar3 = 17;
 			iVar4 = 1;
 			iVar1 = 750;
 			break;
 		
 		case 88:
-			StringCopy(&Var2, "FEET_P1_17_2", 16);
+			StringCopy(&Var2, "FEET_P1_17_2" /* GXT: Chestnut Oxfords */, 16);
 			iVar3 = 17;
 			iVar4 = 2;
 			iVar1 = 860;
 			break;
 		
 		case 89:
-			StringCopy(&Var2, "FEET_P1_17_3", 16);
+			StringCopy(&Var2, "FEET_P1_17_3" /* GXT: Tan Oxfords */, 16);
 			iVar3 = 17;
 			iVar4 = 3;
 			iVar1 = 750;
 			break;
 		
 		case 90:
-			StringCopy(&Var2, "FEET_P1_17_4", 16);
+			StringCopy(&Var2, "FEET_P1_17_4" /* GXT: White Oxfords */, 16);
 			iVar3 = 17;
 			iVar4 = 4;
 			iVar1 = 790;
 			break;
 		
 		case 91:
-			StringCopy(&Var2, "FEET_P1_17_5", 16);
+			StringCopy(&Var2, "FEET_P1_17_5" /* GXT: Ash Oxfords */, 16);
 			iVar3 = 17;
 			iVar4 = 5;
 			iVar1 = 840;
 			break;
 		
 		case 92:
-			StringCopy(&Var2, "FEET_P1_17_6", 16);
+			StringCopy(&Var2, "FEET_P1_17_6" /* GXT: Gray Two-Tone Oxfords */, 16);
 			iVar3 = 17;
 			iVar4 = 6;
 			iVar1 = 820;
 			break;
 		
 		case 93:
-			StringCopy(&Var2, "FEET_P1_17_7", 16);
+			StringCopy(&Var2, "FEET_P1_17_7" /* GXT: Beige Oxfords */, 16);
 			iVar3 = 17;
 			iVar4 = 7;
 			iVar1 = 800;
 			break;
 		
 		case 94:
-			StringCopy(&Var2, "FEET_P1_17_8", 16);
+			StringCopy(&Var2, "FEET_P1_17_8" /* GXT: Topaz Oxfords */, 16);
 			iVar3 = 17;
 			iVar4 = 8;
 			iVar1 = 850;
 			break;
 		
 		case 95:
-			StringCopy(&Var2, "FEET_P1_17_9", 16);
+			StringCopy(&Var2, "FEET_P1_17_9" /* GXT: Black Oxfords */, 16);
 			iVar3 = 17;
 			iVar4 = 9;
 			iVar1 = 870;
 			break;
 		
 		case 96:
-			StringCopy(&Var2, "FEET_P1_17_10", 16);
+			StringCopy(&Var2, "FEET_P1_17_10" /* GXT: Lime Oxfords */, 16);
 			iVar3 = 17;
 			iVar4 = 10;
 			iVar1 = 720;
 			break;
 		
 		case 97:
-			StringCopy(&Var2, "FEET_P1_17_11", 16);
+			StringCopy(&Var2, "FEET_P1_17_11" /* GXT: Hawthorn Oxfords */, 16);
 			iVar3 = 17;
 			iVar4 = 11;
 			iVar1 = 740;
 			break;
 		
 		case 98:
-			StringCopy(&Var2, "FEET_P1_17_12", 16);
+			StringCopy(&Var2, "FEET_P1_17_12" /* GXT: Coffee Oxfords */, 16);
 			iVar3 = 17;
 			iVar4 = 12;
 			iVar1 = 800;
 			break;
 		
 		case 99:
-			StringCopy(&Var2, "FEET_P1_17_13", 16);
+			StringCopy(&Var2, "FEET_P1_17_13" /* GXT: Gray Oxfords */, 16);
 			iVar3 = 17;
 			iVar4 = 13;
 			iVar1 = 750;
 			break;
 		
 		case 100:
-			StringCopy(&Var2, "FEET_P1_17_14", 16);
+			StringCopy(&Var2, "FEET_P1_17_14" /* GXT: Cream Oxfords */, 16);
 			iVar3 = 17;
 			iVar4 = 14;
 			iVar1 = 770;
 			break;
 		
 		case 101:
-			StringCopy(&Var2, "FEET_P1_17_15", 16);
+			StringCopy(&Var2, "FEET_P1_17_15" /* GXT: Navy Oxfords */, 16);
 			iVar3 = 17;
 			iVar4 = 15;
 			iVar1 = 860;
 			break;
 		
 		case 102:
-			StringCopy(&Var2, "FEET_P1_18_0", 16);
+			StringCopy(&Var2, "FEET_P1_18_0" /* GXT: Black Slip-Ons */, 16);
 			iVar3 = 18;
 			iVar4 = 0;
 			iVar1 = 850;
 			break;
 		
 		case 103:
-			StringCopy(&Var2, "FEET_P1_18_1", 16);
+			StringCopy(&Var2, "FEET_P1_18_1" /* GXT: Red Slip-Ons */, 16);
 			iVar3 = 18;
 			iVar4 = 1;
 			iVar1 = 800;
 			break;
 		
 		case 104:
-			StringCopy(&Var2, "FEET_P1_18_2", 16);
+			StringCopy(&Var2, "FEET_P1_18_2" /* GXT: Brown Slip-Ons */, 16);
 			iVar3 = 18;
 			iVar4 = 2;
 			iVar1 = 780;
 			break;
 		
 		case 105:
-			StringCopy(&Var2, "FEET_P1_18_3", 16);
+			StringCopy(&Var2, "FEET_P1_18_3" /* GXT: Green Stripe Slip-Ons */, 16);
 			iVar3 = 18;
 			iVar4 = 3;
 			iVar1 = 890;
 			break;
 		
 		case 106:
-			StringCopy(&Var2, "FEET_P1_18_4", 16);
+			StringCopy(&Var2, "FEET_P1_18_4" /* GXT: Green Slip-Ons */, 16);
 			iVar3 = 18;
 			iVar4 = 4;
 			iVar1 = 820;
 			break;
 		
 		case 107:
-			StringCopy(&Var2, "FEET_P1_18_5", 16);
+			StringCopy(&Var2, "FEET_P1_18_5" /* GXT: Copper Slip-Ons */, 16);
 			iVar3 = 18;
 			iVar4 = 5;
 			iVar1 = 840;
 			break;
 		
 		case 108:
-			StringCopy(&Var2, "FEET_P1_18_6", 16);
+			StringCopy(&Var2, "FEET_P1_18_6" /* GXT: Copper Two-Tone Slip-Ons */, 16);
 			iVar3 = 18;
 			iVar4 = 6;
 			iVar1 = 870;
 			break;
 		
 		case 109:
-			StringCopy(&Var2, "FEET_P1_18_7", 16);
+			StringCopy(&Var2, "FEET_P1_18_7" /* GXT: Navy Slip-Ons */, 16);
 			iVar3 = 18;
 			iVar4 = 7;
 			iVar1 = 930;
 			break;
 		
 		case 110:
-			StringCopy(&Var2, "FEET_P1_18_8", 16);
+			StringCopy(&Var2, "FEET_P1_18_8" /* GXT: Blue Slip-Ons */, 16);
 			iVar3 = 18;
 			iVar4 = 8;
 			iVar1 = 880;
 			break;
 		
 		case 111:
-			StringCopy(&Var2, "FEET_P1_18_9", 16);
+			StringCopy(&Var2, "FEET_P1_18_9" /* GXT: Beige Slip-Ons */, 16);
 			iVar3 = 18;
 			iVar4 = 9;
 			iVar1 = 900;
 			break;
 		
 		case 112:
-			StringCopy(&Var2, "FEET_P1_18_10", 16);
+			StringCopy(&Var2, "FEET_P1_18_10" /* GXT: White Slip-Ons */, 16);
 			iVar3 = 18;
 			iVar4 = 10;
 			iVar1 = 920;
 			break;
 		
 		case 113:
-			StringCopy(&Var2, "FEET_P1_18_11", 16);
+			StringCopy(&Var2, "FEET_P1_18_11" /* GXT: Tan Slip-Ons */, 16);
 			iVar3 = 18;
 			iVar4 = 11;
 			iVar1 = 970;
 			break;
 		
 		case 114:
-			StringCopy(&Var2, "FEET_P1_18_12", 16);
+			StringCopy(&Var2, "FEET_P1_18_12" /* GXT: Black Snakeskin Slip-Ons */, 16);
 			iVar3 = 18;
 			iVar4 = 12;
 			iVar1 = 990;
 			break;
 		
 		case 115:
-			StringCopy(&Var2, "FEET_P1_18_13", 16);
+			StringCopy(&Var2, "FEET_P1_18_13" /* GXT: Two-Tone Slip-Ons */, 16);
 			iVar3 = 18;
 			iVar4 = 13;
 			iVar1 = 960;
 			break;
 		
 		case 116:
-			StringCopy(&Var2, "FEET_P1_18_14", 16);
+			StringCopy(&Var2, "FEET_P1_18_14" /* GXT: Brown Snakeskin Slip-Ons */, 16);
 			iVar3 = 18;
 			iVar4 = 14;
 			iVar1 = 980;
 			break;
 		
 		case 117:
-			StringCopy(&Var2, "FEET_P1_18_15", 16);
+			StringCopy(&Var2, "FEET_P1_18_15" /* GXT: Gray Slip-Ons */, 16);
 			iVar3 = 18;
 			iVar4 = 15;
 			iVar1 = 950;
 			break;
 		
 		case 118:
-			StringCopy(&Var2, "FEET_P1_19_0", 16);
+			StringCopy(&Var2, "FEET_P1_19_0" /* GXT: Brown Wingtips */, 16);
 			iVar3 = 19;
 			iVar4 = 0;
 			iVar1 = 110;
 			break;
 		
 		case 119:
-			StringCopy(&Var2, "FEET_P1_19_1", 16);
+			StringCopy(&Var2, "FEET_P1_19_1" /* GXT: Navy Wingtips */, 16);
 			iVar3 = 19;
 			iVar4 = 1;
 			iVar1 = 115;
 			break;
 		
 		case 120:
-			StringCopy(&Var2, "FEET_P1_19_2", 16);
+			StringCopy(&Var2, "FEET_P1_19_2" /* GXT: Coffee Wingtips */, 16);
 			iVar3 = 19;
 			iVar4 = 2;
 			iVar1 = 120;
 			break;
 		
 		case 121:
-			StringCopy(&Var2, "FEET_P1_19_3", 16);
+			StringCopy(&Var2, "FEET_P1_19_3" /* GXT: Burgundy Wingtips */, 16);
 			iVar3 = 19;
 			iVar4 = 3;
 			iVar1 = 110;
 			break;
 		
 		case 122:
-			StringCopy(&Var2, "FEET_P1_19_4", 16);
+			StringCopy(&Var2, "FEET_P1_19_4" /* GXT: Blue Wingtips */, 16);
 			iVar3 = 19;
 			iVar4 = 4;
 			iVar1 = 125;
 			break;
 		
 		case 123:
-			StringCopy(&Var2, "FEET_P1_19_5", 16);
+			StringCopy(&Var2, "FEET_P1_19_5" /* GXT: Woodland Camo Wingtips */, 16);
 			iVar3 = 19;
 			iVar4 = 5;
 			iVar1 = 128;
 			break;
 		
 		case 124:
-			StringCopy(&Var2, "FEET_P1_19_6", 16);
+			StringCopy(&Var2, "FEET_P1_19_6" /* GXT: Black Wingtips */, 16);
 			iVar3 = 19;
 			iVar4 = 6;
 			iVar1 = 135;
 			break;
 		
 		case 125:
-			StringCopy(&Var2, "FEET_P1_19_7", 16);
+			StringCopy(&Var2, "FEET_P1_19_7" /* GXT: Tan Wingtips */, 16);
 			iVar3 = 19;
 			iVar4 = 7;
 			iVar1 = 130;
 			break;
 		
 		case 126:
-			StringCopy(&Var2, "FEET_P1_19_8", 16);
+			StringCopy(&Var2, "FEET_P1_19_8" /* GXT: Purple Wingtips */, 16);
 			iVar3 = 19;
 			iVar4 = 8;
 			iVar1 = 145;
 			break;
 		
 		case 127:
-			StringCopy(&Var2, "FEET_P1_19_9", 16);
+			StringCopy(&Var2, "FEET_P1_19_9" /* GXT: Brown Wingtips */, 16);
 			iVar3 = 19;
 			iVar4 = 9;
 			iVar1 = 110;
 			break;
 		
 		case 128:
-			StringCopy(&Var2, "FEET_P1_19_10", 16);
+			StringCopy(&Var2, "FEET_P1_19_10" /* GXT: Chocolate Wingtips */, 16);
 			iVar3 = 19;
 			iVar4 = 10;
 			iVar1 = 120;
 			break;
 		
 		case 129:
-			StringCopy(&Var2, "FEET_P1_19_11", 16);
+			StringCopy(&Var2, "FEET_P1_19_11" /* GXT: Green Wingtips */, 16);
 			iVar3 = 19;
 			iVar4 = 11;
 			iVar1 = 150;
 			break;
 		
 		case 130:
-			StringCopy(&Var2, "FEET_P1_19_12", 16);
+			StringCopy(&Var2, "FEET_P1_19_12" /* GXT: Ash Wingtips */, 16);
 			iVar3 = 19;
 			iVar4 = 12;
 			iVar1 = 125;
 			break;
 		
 		case 131:
-			StringCopy(&Var2, "FEET_P1_19_13", 16);
+			StringCopy(&Var2, "FEET_P1_19_13" /* GXT: Olive Wingtips */, 16);
 			iVar3 = 19;
 			iVar4 = 13;
 			iVar1 = 120;
 			break;
 		
 		case 132:
-			StringCopy(&Var2, "FEET_P1_19_14", 16);
+			StringCopy(&Var2, "FEET_P1_19_14" /* GXT: Two-Tone Wingtips */, 16);
 			iVar3 = 19;
 			iVar4 = 14;
 			iVar1 = 130;
 			break;
 		
 		case 133:
-			StringCopy(&Var2, "FEET_P1_19_15", 16);
+			StringCopy(&Var2, "FEET_P1_19_15" /* GXT: Yellow Wingtips */, 16);
 			iVar3 = 19;
 			iVar4 = 15;
 			iVar1 = 110;
@@ -48444,27 +48444,27 @@ void func_547(int iParam0)//Position - 0x3D48A
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var2, "LEGS_P1_0_0", 16);
+			StringCopy(&Var2, "LEGS_P1_0_0" /* GXT: Cream Cargo Shorts */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 1:
-			StringCopy(&Var2, "LEGS_P1_0_1", 16);
+			StringCopy(&Var2, "LEGS_P1_0_1" /* GXT: Sand Cargo Shorts */, 16);
 			iVar3 = 0;
 			iVar4 = 1;
 			iVar1 = 32;
 			break;
 		
 		case 2:
-			StringCopy(&Var2, "LEGS_P1_0_2", 16);
+			StringCopy(&Var2, "LEGS_P1_0_2" /* GXT: Navy Cargo Shorts */, 16);
 			iVar3 = 0;
 			iVar4 = 2;
 			iVar1 = 38;
 			break;
 		
 		case 3:
-			StringCopy(&Var2, "LEGS_P1_0_3", 16);
+			StringCopy(&Var2, "LEGS_P1_0_3" /* GXT: Olive Cargo Shorts */, 16);
 			iVar3 = 0;
 			iVar4 = 3;
 			iVar1 = 44;
@@ -48513,7 +48513,7 @@ void func_547(int iParam0)//Position - 0x3D48A
 			break;
 		
 		case 10:
-			StringCopy(&Var2, "LEGS_P1_2_0", 16);
+			StringCopy(&Var2, "LEGS_P1_2_0" /* GXT: Black Tuxedo Pants */, 16);
 			iVar3 = 2;
 			iVar4 = 0;
 			bVar0 = true;
@@ -48541,55 +48541,55 @@ void func_547(int iParam0)//Position - 0x3D48A
 			break;
 		
 		case 14:
-			StringCopy(&Var2, "LEGS_P1_6_0", 16);
+			StringCopy(&Var2, "LEGS_P1_6_0" /* GXT: Gray Golf Pants */, 16);
 			iVar3 = 6;
 			iVar4 = 0;
 			break;
 		
 		case 15:
-			StringCopy(&Var2, "LEGS_P1_6_1", 16);
+			StringCopy(&Var2, "LEGS_P1_6_1" /* GXT: Cream Golf Pants */, 16);
 			iVar3 = 6;
 			iVar4 = 1;
 			iVar1 = 690;
 			break;
 		
 		case 16:
-			StringCopy(&Var2, "LEGS_P1_6_2", 16);
+			StringCopy(&Var2, "LEGS_P1_6_2" /* GXT: Tan Plaid Golf Pants */, 16);
 			iVar3 = 6;
 			iVar4 = 2;
 			iVar1 = 720;
 			break;
 		
 		case 17:
-			StringCopy(&Var2, "LEGS_P1_6_3", 16);
+			StringCopy(&Var2, "LEGS_P1_6_3" /* GXT: Tartan Golf Pants */, 16);
 			iVar3 = 6;
 			iVar4 = 3;
 			iVar1 = 850;
 			break;
 		
 		case 18:
-			StringCopy(&Var2, "LEGS_P1_6_4", 16);
+			StringCopy(&Var2, "LEGS_P1_6_4" /* GXT: Charcoal Plaid Golf Pants */, 16);
 			iVar3 = 6;
 			iVar4 = 4;
 			iVar1 = 850;
 			break;
 		
 		case 19:
-			StringCopy(&Var2, "LEGS_P1_6_5", 16);
+			StringCopy(&Var2, "LEGS_P1_6_5" /* GXT: Dark Plaid Golf Pants */, 16);
 			iVar3 = 6;
 			iVar4 = 5;
 			iVar1 = 740;
 			break;
 		
 		case 20:
-			StringCopy(&Var2, "LEGS_P1_6_6", 16);
+			StringCopy(&Var2, "LEGS_P1_6_6" /* GXT: Brown Plaid Golf Pants */, 16);
 			iVar3 = 6;
 			iVar4 = 6;
 			iVar1 = 750;
 			break;
 		
 		case 21:
-			StringCopy(&Var2, "LEGS_P1_6_7", 16);
+			StringCopy(&Var2, "LEGS_P1_6_7" /* GXT: Slate Golf Pants */, 16);
 			iVar3 = 6;
 			iVar4 = 7;
 			iVar1 = 790;
@@ -48610,48 +48610,48 @@ void func_547(int iParam0)//Position - 0x3D48A
 			break;
 		
 		case 24:
-			StringCopy(&Var2, "LEGS_P1_8_0", 16);
+			StringCopy(&Var2, "LEGS_P1_8_0" /* GXT: Slate Baggy Jeans */, 16);
 			iVar3 = 8;
 			iVar4 = 0;
 			break;
 		
 		case 25:
-			StringCopy(&Var2, "LEGS_P1_8_1", 16);
+			StringCopy(&Var2, "LEGS_P1_8_1" /* GXT: Blue Baggy Jeans */, 16);
 			iVar3 = 8;
 			iVar4 = 1;
 			iVar1 = 145;
 			break;
 		
 		case 26:
-			StringCopy(&Var2, "LEGS_P1_8_2", 16);
+			StringCopy(&Var2, "LEGS_P1_8_2" /* GXT: Gray Baggy Jeans */, 16);
 			iVar3 = 8;
 			iVar4 = 2;
 			iVar1 = 140;
 			break;
 		
 		case 27:
-			StringCopy(&Var2, "LEGS_P1_8_3", 16);
+			StringCopy(&Var2, "LEGS_P1_8_3" /* GXT: Pale Blue Baggy Jeans */, 16);
 			iVar3 = 8;
 			iVar4 = 3;
 			iVar1 = 148;
 			break;
 		
 		case 28:
-			StringCopy(&Var2, "LEGS_P1_8_4", 16);
+			StringCopy(&Var2, "LEGS_P1_8_4" /* GXT: Black Baggy Jeans */, 16);
 			iVar3 = 8;
 			iVar4 = 4;
 			iVar1 = 150;
 			break;
 		
 		case 29:
-			StringCopy(&Var2, "LEGS_P1_8_5", 16);
+			StringCopy(&Var2, "LEGS_P1_8_5" /* GXT: Blue-Green Baggy Jeans */, 16);
 			iVar3 = 8;
 			iVar4 = 5;
 			iVar1 = 154;
 			break;
 		
 		case 30:
-			StringCopy(&Var2, "LEGS_P1_8_6", 16);
+			StringCopy(&Var2, "LEGS_P1_8_6" /* GXT: Faded Baggy Jeans */, 16);
 			iVar3 = 8;
 			iVar4 = 6;
 			iVar1 = 158;
@@ -48672,42 +48672,42 @@ void func_547(int iParam0)//Position - 0x3D48A
 			break;
 		
 		case 33:
-			StringCopy(&Var2, "LEGS_P1_11_0", 16);
+			StringCopy(&Var2, "LEGS_P1_11_0" /* GXT: Beige Chinos */, 16);
 			iVar3 = 11;
 			iVar4 = 0;
 			iVar1 = 820;
 			break;
 		
 		case 34:
-			StringCopy(&Var2, "LEGS_P1_11_1", 16);
+			StringCopy(&Var2, "LEGS_P1_11_1" /* GXT: Olive Chinos */, 16);
 			iVar3 = 11;
 			iVar4 = 1;
 			iVar1 = 820;
 			break;
 		
 		case 35:
-			StringCopy(&Var2, "LEGS_P1_11_2", 16);
+			StringCopy(&Var2, "LEGS_P1_11_2" /* GXT: Black Chinos */, 16);
 			iVar3 = 11;
 			iVar4 = 2;
 			iVar1 = 850;
 			break;
 		
 		case 36:
-			StringCopy(&Var2, "LEGS_P1_11_3", 16);
+			StringCopy(&Var2, "LEGS_P1_11_3" /* GXT: Off-White Chinos */, 16);
 			iVar3 = 11;
 			iVar4 = 3;
 			iVar1 = 850;
 			break;
 		
 		case 37:
-			StringCopy(&Var2, "LEGS_P1_11_4", 16);
+			StringCopy(&Var2, "LEGS_P1_11_4" /* GXT: Gray Chinos */, 16);
 			iVar3 = 11;
 			iVar4 = 4;
 			iVar1 = 920;
 			break;
 		
 		case 38:
-			StringCopy(&Var2, "LEGS_P1_11_5", 16);
+			StringCopy(&Var2, "LEGS_P1_11_5" /* GXT: Navy Chinos */, 16);
 			iVar3 = 11;
 			iVar4 = 5;
 			iVar1 = 950;
@@ -48720,192 +48720,192 @@ void func_547(int iParam0)//Position - 0x3D48A
 			break;
 		
 		case 40:
-			StringCopy(&Var2, "LEGS_P1_13_0", 16);
+			StringCopy(&Var2, "LEGS_P1_13_0" /* GXT: Silver Sweatpants */, 16);
 			iVar3 = 13;
 			iVar4 = 0;
 			break;
 		
 		case 41:
-			StringCopy(&Var2, "LEGS_P1_13_1", 16);
+			StringCopy(&Var2, "LEGS_P1_13_1" /* GXT: Gray Sweatpants */, 16);
 			iVar3 = 13;
 			iVar4 = 1;
 			iVar1 = 45;
 			break;
 		
 		case 42:
-			StringCopy(&Var2, "LEGS_P1_13_2", 16);
+			StringCopy(&Var2, "LEGS_P1_13_2" /* GXT: Topaz Sweatpants */, 16);
 			iVar3 = 13;
 			iVar4 = 2;
 			iVar1 = 48;
 			break;
 		
 		case 43:
-			StringCopy(&Var2, "LEGS_P1_13_3", 16);
+			StringCopy(&Var2, "LEGS_P1_13_3" /* GXT: Ash Sweatpants */, 16);
 			iVar3 = 13;
 			iVar4 = 3;
 			iVar1 = 45;
 			break;
 		
 		case 44:
-			StringCopy(&Var2, "LEGS_P1_13_4", 16);
+			StringCopy(&Var2, "LEGS_P1_13_4" /* GXT: Slate Sweatpants */, 16);
 			iVar3 = 13;
 			iVar4 = 4;
 			iVar1 = 48;
 			break;
 		
 		case 45:
-			StringCopy(&Var2, "LEGS_P1_13_5", 16);
+			StringCopy(&Var2, "LEGS_P1_13_5" /* GXT: Olive Sweatpants */, 16);
 			iVar3 = 13;
 			iVar4 = 5;
 			iVar1 = 52;
 			break;
 		
 		case 46:
-			StringCopy(&Var2, "LEGS_P1_13_6", 16);
+			StringCopy(&Var2, "LEGS_P1_13_6" /* GXT: Jade Sweatpants */, 16);
 			iVar3 = 13;
 			iVar4 = 6;
 			iVar1 = 55;
 			break;
 		
 		case 47:
-			StringCopy(&Var2, "LEGS_P1_13_7", 16);
+			StringCopy(&Var2, "LEGS_P1_13_7" /* GXT: Dark Green Sweatpants */, 16);
 			iVar3 = 13;
 			iVar4 = 7;
 			iVar1 = 58;
 			break;
 		
 		case 48:
-			StringCopy(&Var2, "LEGS_P1_13_8", 16);
+			StringCopy(&Var2, "LEGS_P1_13_8" /* GXT: Teal Sweatpants */, 16);
 			iVar3 = 13;
 			iVar4 = 8;
 			iVar1 = 60;
 			break;
 		
 		case 49:
-			StringCopy(&Var2, "LEGS_P1_13_9", 16);
+			StringCopy(&Var2, "LEGS_P1_13_9" /* GXT: Brown Sweatpants */, 16);
 			iVar3 = 13;
 			iVar4 = 9;
 			iVar1 = 58;
 			break;
 		
 		case 50:
-			StringCopy(&Var2, "LEGS_P1_13_10", 16);
+			StringCopy(&Var2, "LEGS_P1_13_10" /* GXT: Kingz Green Sweatpants */, 16);
 			iVar3 = 13;
 			iVar4 = 10;
 			iVar1 = 62;
 			break;
 		
 		case 51:
-			StringCopy(&Var2, "LEGS_P1_13_11", 16);
+			StringCopy(&Var2, "LEGS_P1_13_11" /* GXT: Gray Stripe Sweatpants */, 16);
 			iVar3 = 13;
 			iVar4 = 11;
 			iVar1 = 65;
 			break;
 		
 		case 52:
-			StringCopy(&Var2, "LEGS_P1_14_0", 16);
+			StringCopy(&Var2, "LEGS_P1_14_0" /* GXT: White Shorts */, 16);
 			iVar3 = 14;
 			iVar4 = 0;
 			break;
 		
 		case 53:
-			StringCopy(&Var2, "LEGS_P1_15_0", 16);
+			StringCopy(&Var2, "LEGS_P1_15_0" /* GXT: Gray Plaid Pants */, 16);
 			iVar3 = 15;
 			iVar4 = 0;
 			break;
 		
 		case 54:
-			StringCopy(&Var2, "LEGS_P1_15_1", 16);
+			StringCopy(&Var2, "LEGS_P1_15_1" /* GXT: Silver Plaid Pants */, 16);
 			iVar3 = 15;
 			iVar4 = 1;
 			break;
 		
 		case 55:
-			StringCopy(&Var2, "LEGS_P1_15_2", 16);
+			StringCopy(&Var2, "LEGS_P1_15_2" /* GXT: Charcoal Plaid Pants */, 16);
 			iVar3 = 15;
 			iVar4 = 2;
 			break;
 		
 		case 56:
-			StringCopy(&Var2, "LEGS_P1_15_3", 16);
+			StringCopy(&Var2, "LEGS_P1_15_3" /* GXT: Tan Plaid Pants */, 16);
 			iVar3 = 15;
 			iVar4 = 3;
 			break;
 		
 		case 57:
-			StringCopy(&Var2, "LEGS_P1_15_4", 16);
+			StringCopy(&Var2, "LEGS_P1_15_4" /* GXT: Charcoal Pants */, 16);
 			iVar3 = 15;
 			iVar4 = 4;
 			break;
 		
 		case 58:
-			StringCopy(&Var2, "LEGS_P1_15_5", 16);
+			StringCopy(&Var2, "LEGS_P1_15_5" /* GXT: Ash Pants */, 16);
 			iVar3 = 15;
 			iVar4 = 5;
 			break;
 		
 		case 59:
-			StringCopy(&Var2, "LEGS_P1_15_6", 16);
+			StringCopy(&Var2, "LEGS_P1_15_6" /* GXT: Beige Pants */, 16);
 			iVar3 = 15;
 			iVar4 = 6;
 			break;
 		
 		case 60:
-			StringCopy(&Var2, "LEGS_P1_15_7", 16);
+			StringCopy(&Var2, "LEGS_P1_15_7" /* GXT: Cream Pants */, 16);
 			iVar3 = 15;
 			iVar4 = 7;
 			break;
 		
 		case 61:
-			StringCopy(&Var2, "LEGS_P1_15_8", 16);
+			StringCopy(&Var2, "LEGS_P1_15_8" /* GXT: Navy Plaid Pants */, 16);
 			iVar3 = 15;
 			iVar4 = 8;
 			break;
 		
 		case 62:
-			StringCopy(&Var2, "LEGS_P1_15_9", 16);
+			StringCopy(&Var2, "LEGS_P1_15_9" /* GXT: Off-White Pants */, 16);
 			iVar3 = 15;
 			iVar4 = 9;
 			break;
 		
 		case 63:
-			StringCopy(&Var2, "LEGS_P1_15_10", 16);
+			StringCopy(&Var2, "LEGS_P1_15_10" /* GXT: White Pants */, 16);
 			iVar3 = 15;
 			iVar4 = 10;
 			break;
 		
 		case 64:
-			StringCopy(&Var2, "LEGS_P1_15_11", 16);
+			StringCopy(&Var2, "LEGS_P1_15_11" /* GXT: Subtle Blue Pants */, 16);
 			iVar3 = 15;
 			iVar4 = 11;
 			break;
 		
 		case 65:
-			StringCopy(&Var2, "LEGS_P1_15_12", 16);
+			StringCopy(&Var2, "LEGS_P1_15_12" /* GXT: Navy Pants */, 16);
 			iVar3 = 15;
 			iVar4 = 12;
 			break;
 		
 		case 66:
-			StringCopy(&Var2, "LEGS_P1_15_13", 16);
+			StringCopy(&Var2, "LEGS_P1_15_13" /* GXT: Rust Pants */, 16);
 			iVar3 = 15;
 			iVar4 = 13;
 			break;
 		
 		case 67:
-			StringCopy(&Var2, "LEGS_P1_15_14", 16);
+			StringCopy(&Var2, "LEGS_P1_15_14" /* GXT: Green Pants */, 16);
 			iVar3 = 15;
 			iVar4 = 14;
 			break;
 		
 		case 68:
-			StringCopy(&Var2, "LEGS_P1_15_15", 16);
+			StringCopy(&Var2, "LEGS_P1_15_15" /* GXT: Tan Pants */, 16);
 			iVar3 = 15;
 			iVar4 = 15;
 			break;
 		
 		case 69:
-			StringCopy(&Var2, "LEGS_P1_16_0", 16);
+			StringCopy(&Var2, "LEGS_P1_16_0" /* GXT: Combat Pants */, 16);
 			iVar3 = 16;
 			iVar4 = 0;
 			bVar0 = true;
@@ -48926,312 +48926,312 @@ void func_547(int iParam0)//Position - 0x3D48A
 			break;
 		
 		case 72:
-			StringCopy(&Var2, "LEGS_P1_18_0", 16);
+			StringCopy(&Var2, "LEGS_P1_18_0" /* GXT: White Boxers */, 16);
 			iVar3 = 18;
 			iVar4 = 0;
 			break;
 		
 		case 73:
-			StringCopy(&Var2, "LEGS_P1_18_1", 16);
+			StringCopy(&Var2, "LEGS_P1_18_1" /* GXT: Gray Boxers */, 16);
 			iVar3 = 18;
 			iVar4 = 1;
 			iVar1 = 160;
 			break;
 		
 		case 74:
-			StringCopy(&Var2, "LEGS_P1_18_2", 16);
+			StringCopy(&Var2, "LEGS_P1_18_2" /* GXT: Black Boxers */, 16);
 			iVar3 = 18;
 			iVar4 = 2;
 			iVar1 = 180;
 			break;
 		
 		case 75:
-			StringCopy(&Var2, "LEGS_P1_18_3", 16);
+			StringCopy(&Var2, "LEGS_P1_18_3" /* GXT: Kings Ash Boxers */, 16);
 			iVar3 = 18;
 			iVar4 = 3;
 			iVar1 = 180;
 			break;
 		
 		case 76:
-			StringCopy(&Var2, "LEGS_P1_18_4", 16);
+			StringCopy(&Var2, "LEGS_P1_18_4" /* GXT: Feud Green Boxers */, 16);
 			iVar3 = 18;
 			iVar4 = 4;
 			break;
 		
 		case 77:
-			StringCopy(&Var2, "LEGS_P1_18_5", 16);
+			StringCopy(&Var2, "LEGS_P1_18_5" /* GXT: Feud White Boxers */, 16);
 			iVar3 = 18;
 			iVar4 = 5;
 			break;
 		
 		case 78:
-			StringCopy(&Var2, "LEGS_P1_19_0", 16);
+			StringCopy(&Var2, "LEGS_P1_19_0" /* GXT: Black Tuxedo Pants */, 16);
 			iVar3 = 19;
 			iVar4 = 0;
 			bVar0 = true;
 			break;
 		
 		case 79:
-			StringCopy(&Var2, "LEGS_P1_20_0", 16);
+			StringCopy(&Var2, "LEGS_P1_20_0" /* GXT: Indigo Jeans */, 16);
 			iVar3 = 20;
 			iVar4 = 0;
 			iVar1 = 118;
 			break;
 		
 		case 80:
-			StringCopy(&Var2, "LEGS_P1_20_1", 16);
+			StringCopy(&Var2, "LEGS_P1_20_1" /* GXT: Black Jeans */, 16);
 			iVar3 = 20;
 			iVar4 = 1;
 			iVar1 = 120;
 			break;
 		
 		case 81:
-			StringCopy(&Var2, "LEGS_P1_20_2", 16);
+			StringCopy(&Var2, "LEGS_P1_20_2" /* GXT: Gray Faded Jeans */, 16);
 			iVar3 = 20;
 			iVar4 = 2;
 			iVar1 = 128;
 			break;
 		
 		case 82:
-			StringCopy(&Var2, "LEGS_P1_20_3", 16);
+			StringCopy(&Var2, "LEGS_P1_20_3" /* GXT: Navy Jeans */, 16);
 			iVar3 = 20;
 			iVar4 = 3;
 			iVar1 = 128;
 			break;
 		
 		case 83:
-			StringCopy(&Var2, "LEGS_P1_20_4", 16);
+			StringCopy(&Var2, "LEGS_P1_20_4" /* GXT: Brown Jeans */, 16);
 			iVar3 = 20;
 			iVar4 = 4;
 			iVar1 = 130;
 			break;
 		
 		case 84:
-			StringCopy(&Var2, "LEGS_P1_20_5", 16);
+			StringCopy(&Var2, "LEGS_P1_20_5" /* GXT: Blue Jeans */, 16);
 			iVar3 = 20;
 			iVar4 = 5;
 			iVar1 = 145;
 			break;
 		
 		case 85:
-			StringCopy(&Var2, "LEGS_P1_20_6", 16);
+			StringCopy(&Var2, "LEGS_P1_20_6" /* GXT: Olive Jeans */, 16);
 			iVar3 = 20;
 			iVar4 = 6;
 			iVar1 = 138;
 			break;
 		
 		case 86:
-			StringCopy(&Var2, "LEGS_P1_20_7", 16);
+			StringCopy(&Var2, "LEGS_P1_20_7" /* GXT: Black Faded Jeans */, 16);
 			iVar3 = 20;
 			iVar4 = 7;
 			iVar1 = 132;
 			break;
 		
 		case 87:
-			StringCopy(&Var2, "LEGS_P1_20_8", 16);
+			StringCopy(&Var2, "LEGS_P1_20_8" /* GXT: Coffee Jeans */, 16);
 			iVar3 = 20;
 			iVar4 = 8;
 			iVar1 = 148;
 			break;
 		
 		case 88:
-			StringCopy(&Var2, "LEGS_P1_21_0", 16);
+			StringCopy(&Var2, "LEGS_P1_21_0" /* GXT: Indigo Skinny Jeans */, 16);
 			iVar3 = 21;
 			iVar4 = 0;
 			iVar1 = 118;
 			break;
 		
 		case 89:
-			StringCopy(&Var2, "LEGS_P1_21_1", 16);
+			StringCopy(&Var2, "LEGS_P1_21_1" /* GXT: Black Skinny Jeans */, 16);
 			iVar3 = 21;
 			iVar4 = 1;
 			iVar1 = 118;
 			break;
 		
 		case 90:
-			StringCopy(&Var2, "LEGS_P1_21_2", 16);
+			StringCopy(&Var2, "LEGS_P1_21_2" /* GXT: Aqua Skinny Jeans */, 16);
 			iVar3 = 21;
 			iVar4 = 2;
 			iVar1 = 118;
 			break;
 		
 		case 91:
-			StringCopy(&Var2, "LEGS_P1_21_3", 16);
+			StringCopy(&Var2, "LEGS_P1_21_3" /* GXT: Brown Skinny Jeans */, 16);
 			iVar3 = 21;
 			iVar4 = 3;
 			iVar1 = 129;
 			break;
 		
 		case 92:
-			StringCopy(&Var2, "LEGS_P1_21_4", 16);
+			StringCopy(&Var2, "LEGS_P1_21_4" /* GXT: Blue Skinny Jeans */, 16);
 			iVar3 = 21;
 			iVar4 = 4;
 			iVar1 = 135;
 			break;
 		
 		case 93:
-			StringCopy(&Var2, "LEGS_P1_21_5", 16);
+			StringCopy(&Var2, "LEGS_P1_21_5" /* GXT: Red Skinny Jeans */, 16);
 			iVar3 = 21;
 			iVar4 = 5;
 			iVar1 = 135;
 			break;
 		
 		case 94:
-			StringCopy(&Var2, "LEGS_P1_21_6", 16);
+			StringCopy(&Var2, "LEGS_P1_21_6" /* GXT: Gray Skinny Jeans */, 16);
 			iVar3 = 21;
 			iVar4 = 6;
 			iVar1 = 118;
 			break;
 		
 		case 95:
-			StringCopy(&Var2, "LEGS_P1_21_7", 16);
+			StringCopy(&Var2, "LEGS_P1_21_7" /* GXT: Green Skinny Jeans */, 16);
 			iVar3 = 21;
 			iVar4 = 7;
 			iVar1 = 118;
 			break;
 		
 		case 96:
-			StringCopy(&Var2, "LEGS_P1_21_8", 16);
+			StringCopy(&Var2, "LEGS_P1_21_8" /* GXT: Coffee Skinny Jeans */, 16);
 			iVar3 = 21;
 			iVar4 = 8;
 			iVar1 = 118;
 			break;
 		
 		case 97:
-			StringCopy(&Var2, "LEGS_P1_22_0", 16);
+			StringCopy(&Var2, "LEGS_P1_22_0" /* GXT: LS Panic Charcoal Shorts */, 16);
 			iVar3 = 22;
 			iVar4 = 0;
 			iVar1 = 55;
 			break;
 		
 		case 98:
-			StringCopy(&Var2, "LEGS_P1_22_1", 16);
+			StringCopy(&Var2, "LEGS_P1_22_1" /* GXT: LS Panic Yellow Shorts */, 16);
 			iVar3 = 22;
 			iVar4 = 1;
 			iVar1 = 55;
 			break;
 		
 		case 99:
-			StringCopy(&Var2, "LEGS_P1_22_2", 16);
+			StringCopy(&Var2, "LEGS_P1_22_2" /* GXT: Prolaps White Shorts */, 16);
 			iVar3 = 22;
 			iVar4 = 2;
 			iVar1 = 59;
 			break;
 		
 		case 100:
-			StringCopy(&Var2, "LEGS_P1_22_3", 16);
+			StringCopy(&Var2, "LEGS_P1_22_3" /* GXT: Prolaps Blue Shorts */, 16);
 			iVar3 = 22;
 			iVar4 = 3;
 			iVar1 = 59;
 			break;
 		
 		case 101:
-			StringCopy(&Var2, "LEGS_P1_22_4", 16);
+			StringCopy(&Var2, "LEGS_P1_22_4" /* GXT: LC Salamanders Red Shorts */, 16);
 			iVar3 = 22;
 			iVar4 = 4;
 			iVar1 = 65;
 			break;
 		
 		case 102:
-			StringCopy(&Var2, "LEGS_P1_22_5", 16);
+			StringCopy(&Var2, "LEGS_P1_22_5" /* GXT: LC Salamanders Green Shorts */, 16);
 			iVar3 = 22;
 			iVar4 = 5;
 			iVar1 = 65;
 			break;
 		
 		case 103:
-			StringCopy(&Var2, "LEGS_P1_22_6", 16);
+			StringCopy(&Var2, "LEGS_P1_22_6" /* GXT: LS Shrimps Gray Shorts */, 16);
 			iVar3 = 22;
 			iVar4 = 6;
 			iVar1 = 69;
 			break;
 		
 		case 104:
-			StringCopy(&Var2, "LEGS_P1_22_7", 16);
+			StringCopy(&Var2, "LEGS_P1_22_7" /* GXT: LS Shrimps White Shorts */, 16);
 			iVar3 = 22;
 			iVar4 = 7;
 			iVar1 = 69;
 			break;
 		
 		case 105:
-			StringCopy(&Var2, "LEGS_P1_22_8", 16);
+			StringCopy(&Var2, "LEGS_P1_22_8" /* GXT: LOB Gray Shorts */, 16);
 			iVar3 = 22;
 			iVar4 = 8;
 			iVar1 = 75;
 			break;
 		
 		case 106:
-			StringCopy(&Var2, "LEGS_P1_22_9", 16);
+			StringCopy(&Var2, "LEGS_P1_22_9" /* GXT: LOB Blue Shorts */, 16);
 			iVar3 = 22;
 			iVar4 = 9;
 			iVar1 = 75;
 			break;
 		
 		case 107:
-			StringCopy(&Var2, "LEGS_P1_22_10", 16);
+			StringCopy(&Var2, "LEGS_P1_22_10" /* GXT: LOB Green Shorts */, 16);
 			iVar3 = 22;
 			iVar4 = 10;
 			iVar1 = 65;
 			break;
 		
 		case 108:
-			StringCopy(&Var2, "LEGS_P1_22_11", 16);
+			StringCopy(&Var2, "LEGS_P1_22_11" /* GXT: LOB Tan Shorts */, 16);
 			iVar3 = 22;
 			iVar4 = 11;
 			iVar1 = 65;
 			break;
 		
 		case 109:
-			StringCopy(&Var2, "LEGS_P1_22_12", 16);
+			StringCopy(&Var2, "LEGS_P1_22_12" /* GXT: LOB Orange Shorts */, 16);
 			iVar3 = 22;
 			iVar4 = 12;
 			iVar1 = 65;
 			break;
 		
 		case 110:
-			StringCopy(&Var2, "LEGS_P1_22_13", 16);
+			StringCopy(&Var2, "LEGS_P1_22_13" /* GXT: LOB Pale Blue Shorts */, 16);
 			iVar3 = 22;
 			iVar4 = 13;
 			iVar1 = 65;
 			break;
 		
 		case 111:
-			StringCopy(&Var2, "LEGS_P1_23_0", 16);
+			StringCopy(&Var2, "LEGS_P1_23_0" /* GXT: Broker White Shorts */, 16);
 			iVar3 = 23;
 			iVar4 = 0;
 			iVar1 = 38;
 			break;
 		
 		case 112:
-			StringCopy(&Var2, "LEGS_P1_23_1", 16);
+			StringCopy(&Var2, "LEGS_P1_23_1" /* GXT: Broker Black Shorts */, 16);
 			iVar3 = 23;
 			iVar4 = 1;
 			iVar1 = 38;
 			break;
 		
 		case 113:
-			StringCopy(&Var2, "LEGS_P1_23_2", 16);
+			StringCopy(&Var2, "LEGS_P1_23_2" /* GXT: Broker Gray Shorts */, 16);
 			iVar3 = 23;
 			iVar4 = 2;
 			iVar1 = 28;
 			break;
 		
 		case 114:
-			StringCopy(&Var2, "LEGS_P1_23_3", 16);
+			StringCopy(&Var2, "LEGS_P1_23_3" /* GXT: Broker Navy Shorts */, 16);
 			iVar3 = 23;
 			iVar4 = 3;
 			iVar1 = 34;
 			break;
 		
 		case 115:
-			StringCopy(&Var2, "LEGS_P1_23_4", 16);
+			StringCopy(&Var2, "LEGS_P1_23_4" /* GXT: Broker Green Shorts */, 16);
 			iVar3 = 23;
 			iVar4 = 4;
 			iVar1 = 36;
 			break;
 		
 		case 116:
-			StringCopy(&Var2, "LEGS_P1_23_5", 16);
+			StringCopy(&Var2, "LEGS_P1_23_5" /* GXT: Broker Brown Shorts */, 16);
 			iVar3 = 23;
 			iVar4 = 5;
 			iVar1 = 32;
@@ -49287,119 +49287,119 @@ void func_549(int iParam0)//Position - 0x3E18D
 	switch (iParam0)
 	{
 		case 227:
-			StringCopy(&Var2, "TORSO_P1_18_0", 16);
+			StringCopy(&Var2, "TORSO_P1_18_0" /* GXT: Gray Plaid Jacket */, 16);
 			iVar3 = 23;
 			iVar4 = 0;
 			iVar6 = 3;
 			break;
 		
 		case 228:
-			StringCopy(&Var2, "TORSO_P1_18_1", 16);
+			StringCopy(&Var2, "TORSO_P1_18_1" /* GXT: Ash Plaid Jacket */, 16);
 			iVar3 = 23;
 			iVar4 = 1;
 			iVar6 = 3;
 			break;
 		
 		case 229:
-			StringCopy(&Var2, "TORSO_P1_18_2", 16);
+			StringCopy(&Var2, "TORSO_P1_18_2" /* GXT: Charcoal Plaid Jacket */, 16);
 			iVar3 = 23;
 			iVar4 = 2;
 			iVar6 = 3;
 			break;
 		
 		case 230:
-			StringCopy(&Var2, "TORSO_P1_18_3", 16);
+			StringCopy(&Var2, "TORSO_P1_18_3" /* GXT: Tan Plaid Jacket */, 16);
 			iVar3 = 23;
 			iVar4 = 3;
 			iVar6 = 3;
 			break;
 		
 		case 231:
-			StringCopy(&Var2, "TORSO_P1_18_4", 16);
+			StringCopy(&Var2, "TORSO_P1_18_4" /* GXT: Slate Jacket */, 16);
 			iVar3 = 23;
 			iVar4 = 4;
 			iVar6 = 3;
 			break;
 		
 		case 232:
-			StringCopy(&Var2, "TORSO_P1_18_5", 16);
+			StringCopy(&Var2, "TORSO_P1_18_5" /* GXT: Silver Jacket */, 16);
 			iVar3 = 23;
 			iVar4 = 5;
 			iVar6 = 3;
 			break;
 		
 		case 233:
-			StringCopy(&Var2, "TORSO_P1_18_6", 16);
+			StringCopy(&Var2, "TORSO_P1_18_6" /* GXT: Stone Jacket */, 16);
 			iVar3 = 23;
 			iVar4 = 6;
 			iVar6 = 3;
 			break;
 		
 		case 234:
-			StringCopy(&Var2, "TORSO_P1_18_7", 16);
+			StringCopy(&Var2, "TORSO_P1_18_7" /* GXT: Cream Jacket */, 16);
 			iVar3 = 23;
 			iVar4 = 7;
 			iVar6 = 3;
 			break;
 		
 		case 235:
-			StringCopy(&Var2, "TORSO_P1_18_8", 16);
+			StringCopy(&Var2, "TORSO_P1_18_8" /* GXT: Navy Plaid Piped Jacket */, 16);
 			iVar3 = 23;
 			iVar4 = 8;
 			iVar6 = 3;
 			break;
 		
 		case 236:
-			StringCopy(&Var2, "TORSO_P1_18_9", 16);
+			StringCopy(&Var2, "TORSO_P1_18_9" /* GXT: Off-White Jacket */, 16);
 			iVar3 = 23;
 			iVar4 = 9;
 			iVar6 = 3;
 			break;
 		
 		case 237:
-			StringCopy(&Var2, "TORSO_P1_18_10", 16);
+			StringCopy(&Var2, "TORSO_P1_18_10" /* GXT: Red Piped Jacket */, 16);
 			iVar3 = 23;
 			iVar4 = 10;
 			iVar6 = 3;
 			break;
 		
 		case 238:
-			StringCopy(&Var2, "TORSO_P1_18_11", 16);
+			StringCopy(&Var2, "TORSO_P1_18_11" /* GXT: Gray Piped Jacket */, 16);
 			iVar3 = 23;
 			iVar4 = 11;
 			iVar6 = 3;
 			break;
 		
 		case 239:
-			StringCopy(&Var2, "TORSO_P1_18_12", 16);
+			StringCopy(&Var2, "TORSO_P1_18_12" /* GXT: Navy Jacket */, 16);
 			iVar3 = 23;
 			iVar4 = 12;
 			iVar6 = 3;
 			break;
 		
 		case 240:
-			StringCopy(&Var2, "TORSO_P1_18_13", 16);
+			StringCopy(&Var2, "TORSO_P1_18_13" /* GXT: Russet Piped Jacket */, 16);
 			iVar3 = 23;
 			iVar4 = 13;
 			iVar6 = 3;
 			break;
 		
 		case 241:
-			StringCopy(&Var2, "TORSO_P1_18_14", 16);
+			StringCopy(&Var2, "TORSO_P1_18_14" /* GXT: Green Jacket */, 16);
 			iVar3 = 23;
 			iVar4 = 14;
 			iVar6 = 3;
 			break;
 		
 		case 242:
-			StringCopy(&Var2, "TORSO_P1_18_15", 16);
+			StringCopy(&Var2, "TORSO_P1_18_15" /* GXT: Beige Jacket */, 16);
 			iVar3 = 23;
 			iVar4 = 15;
 			iVar6 = 3;
 			break;
 		
 		case 243:
-			StringCopy(&Var2, "TORSO_P1_24_0", 16);
+			StringCopy(&Var2, "TORSO_P1_24_0" /* GXT: Navy Plaid Vest */, 16);
 			iVar3 = 24;
 			iVar4 = 0;
 			iVar1 = 2200;
@@ -49407,7 +49407,7 @@ void func_549(int iParam0)//Position - 0x3E18D
 			break;
 		
 		case 244:
-			StringCopy(&Var2, "TORSO_P1_24_1", 16);
+			StringCopy(&Var2, "TORSO_P1_24_1" /* GXT: Gray Plaid Vest */, 16);
 			iVar3 = 24;
 			iVar4 = 1;
 			iVar1 = 2200;
@@ -49415,7 +49415,7 @@ void func_549(int iParam0)//Position - 0x3E18D
 			break;
 		
 		case 245:
-			StringCopy(&Var2, "TORSO_P1_24_2", 16);
+			StringCopy(&Var2, "TORSO_P1_24_2" /* GXT: Silver Plaid Vest */, 16);
 			iVar3 = 24;
 			iVar4 = 2;
 			iVar1 = 2200;
@@ -49423,7 +49423,7 @@ void func_549(int iParam0)//Position - 0x3E18D
 			break;
 		
 		case 246:
-			StringCopy(&Var2, "TORSO_P1_24_3", 16);
+			StringCopy(&Var2, "TORSO_P1_24_3" /* GXT: Charcoal Vest */, 16);
 			iVar3 = 24;
 			iVar4 = 3;
 			iVar1 = 2200;
@@ -49431,7 +49431,7 @@ void func_549(int iParam0)//Position - 0x3E18D
 			break;
 		
 		case 247:
-			StringCopy(&Var2, "TORSO_P1_24_4", 16);
+			StringCopy(&Var2, "TORSO_P1_24_4" /* GXT: Plum Plaid Vest */, 16);
 			iVar3 = 24;
 			iVar4 = 4;
 			iVar1 = 2200;
@@ -49439,7 +49439,7 @@ void func_549(int iParam0)//Position - 0x3E18D
 			break;
 		
 		case 248:
-			StringCopy(&Var2, "TORSO_P1_24_5", 16);
+			StringCopy(&Var2, "TORSO_P1_24_5" /* GXT: All Ash Vest */, 16);
 			iVar3 = 24;
 			iVar4 = 5;
 			iVar1 = 2200;
@@ -49447,7 +49447,7 @@ void func_549(int iParam0)//Position - 0x3E18D
 			break;
 		
 		case 249:
-			StringCopy(&Var2, "TORSO_P1_24_6", 16);
+			StringCopy(&Var2, "TORSO_P1_24_6" /* GXT: Silverback Vest */, 16);
 			iVar3 = 24;
 			iVar4 = 6;
 			iVar1 = 2200;
@@ -49455,7 +49455,7 @@ void func_549(int iParam0)//Position - 0x3E18D
 			break;
 		
 		case 250:
-			StringCopy(&Var2, "TORSO_P1_24_7", 16);
+			StringCopy(&Var2, "TORSO_P1_24_7" /* GXT: Gray Subtle Plaid Vest */, 16);
 			iVar3 = 24;
 			iVar4 = 7;
 			iVar1 = 2200;
@@ -49463,7 +49463,7 @@ void func_549(int iParam0)//Position - 0x3E18D
 			break;
 		
 		case 251:
-			StringCopy(&Var2, "TORSO_P1_24_8", 16);
+			StringCopy(&Var2, "TORSO_P1_24_8" /* GXT: Green Plaid Vest */, 16);
 			iVar3 = 24;
 			iVar4 = 8;
 			iVar1 = 2200;
@@ -49471,7 +49471,7 @@ void func_549(int iParam0)//Position - 0x3E18D
 			break;
 		
 		case 252:
-			StringCopy(&Var2, "TORSO_P1_24_9", 16);
+			StringCopy(&Var2, "TORSO_P1_24_9" /* GXT: Ash Plaid Vest */, 16);
 			iVar3 = 24;
 			iVar4 = 9;
 			iVar1 = 2200;
@@ -49479,7 +49479,7 @@ void func_549(int iParam0)//Position - 0x3E18D
 			break;
 		
 		case 253:
-			StringCopy(&Var2, "TORSO_P1_24_10", 16);
+			StringCopy(&Var2, "TORSO_P1_24_10" /* GXT: Stone Plaid Vest */, 16);
 			iVar3 = 24;
 			iVar4 = 10;
 			iVar1 = 2200;
@@ -49487,7 +49487,7 @@ void func_549(int iParam0)//Position - 0x3E18D
 			break;
 		
 		case 254:
-			StringCopy(&Var2, "TORSO_P1_24_11", 16);
+			StringCopy(&Var2, "TORSO_P1_24_11" /* GXT: Charcoal Plaid Vest */, 16);
 			iVar3 = 24;
 			iVar4 = 11;
 			iVar1 = 2200;
@@ -49495,7 +49495,7 @@ void func_549(int iParam0)//Position - 0x3E18D
 			break;
 		
 		case 255:
-			StringCopy(&Var2, "TORSO_P1_24_12", 16);
+			StringCopy(&Var2, "TORSO_P1_24_12" /* GXT: White Vest */, 16);
 			iVar3 = 24;
 			iVar4 = 12;
 			iVar1 = 2200;
@@ -49503,7 +49503,7 @@ void func_549(int iParam0)//Position - 0x3E18D
 			break;
 		
 		case 256:
-			StringCopy(&Var2, "TORSO_P1_24_13", 16);
+			StringCopy(&Var2, "TORSO_P1_24_13" /* GXT: Gray Vest */, 16);
 			iVar3 = 24;
 			iVar4 = 13;
 			iVar1 = 2200;
@@ -49511,7 +49511,7 @@ void func_549(int iParam0)//Position - 0x3E18D
 			break;
 		
 		case 257:
-			StringCopy(&Var2, "TORSO_P1_24_14", 16);
+			StringCopy(&Var2, "TORSO_P1_24_14" /* GXT: Silver Light Plaid Vest */, 16);
 			iVar3 = 24;
 			iVar4 = 14;
 			iVar1 = 2200;
@@ -49519,7 +49519,7 @@ void func_549(int iParam0)//Position - 0x3E18D
 			break;
 		
 		case 258:
-			StringCopy(&Var2, "TORSO_P1_24_15", 16);
+			StringCopy(&Var2, "TORSO_P1_24_15" /* GXT: All Silver Vest */, 16);
 			iVar3 = 24;
 			iVar4 = 15;
 			iVar1 = 2200;
@@ -49527,7 +49527,7 @@ void func_549(int iParam0)//Position - 0x3E18D
 			break;
 		
 		case 259:
-			StringCopy(&Var2, "TORSO_P1_25_0", 16);
+			StringCopy(&Var2, "TORSO_P1_25_0" /* GXT: Gray Tuxedo Jacket */, 16);
 			iVar3 = 25;
 			iVar4 = 0;
 			bVar0 = true;
@@ -49542,398 +49542,398 @@ void func_549(int iParam0)//Position - 0x3E18D
 			break;
 		
 		case 261:
-			StringCopy(&Var2, "TORSO_P1_27_0", 16);
+			StringCopy(&Var2, "TORSO_P1_27_0" /* GXT: Brown Shooting Vest */, 16);
 			iVar3 = 27;
 			iVar4 = 0;
 			iVar1 = 150;
 			break;
 		
 		case 262:
-			StringCopy(&Var2, "TORSO_P1_27_1", 16);
+			StringCopy(&Var2, "TORSO_P1_27_1" /* GXT: Woodland Shooting Vest */, 16);
 			iVar3 = 27;
 			iVar4 = 1;
 			iVar1 = 160;
 			break;
 		
 		case 263:
-			StringCopy(&Var2, "TORSO_P1_27_2", 16);
+			StringCopy(&Var2, "TORSO_P1_27_2" /* GXT: Taupe Shooting Vest */, 16);
 			iVar3 = 27;
 			iVar4 = 2;
 			iVar1 = 150;
 			break;
 		
 		case 264:
-			StringCopy(&Var2, "TORSO_P1_27_3", 16);
+			StringCopy(&Var2, "TORSO_P1_27_3" /* GXT: Brown Woven Shooting Vest */, 16);
 			iVar3 = 27;
 			iVar4 = 3;
 			iVar1 = 150;
 			break;
 		
 		case 265:
-			StringCopy(&Var2, "TORSO_P1_27_4", 16);
+			StringCopy(&Var2, "TORSO_P1_27_4" /* GXT: Field Shooting Vest */, 16);
 			iVar3 = 27;
 			iVar4 = 4;
 			iVar1 = 160;
 			break;
 		
 		case 266:
-			StringCopy(&Var2, "TORSO_P1_27_5", 16);
+			StringCopy(&Var2, "TORSO_P1_27_5" /* GXT: Forest Shooting Vest */, 16);
 			iVar3 = 27;
 			iVar4 = 5;
 			iVar1 = 160;
 			break;
 		
 		case 267:
-			StringCopy(&Var2, "TORSO_P1_28_0", 16);
+			StringCopy(&Var2, "TORSO_P1_28_0" /* GXT: Silver Hoodie */, 16);
 			iVar3 = 28;
 			iVar4 = 0;
 			iVar1 = 88;
 			break;
 		
 		case 268:
-			StringCopy(&Var2, "TORSO_P1_28_1", 16);
+			StringCopy(&Var2, "TORSO_P1_28_1" /* GXT: Ammu-Nation Camo Hoodie */, 16);
 			iVar3 = 28;
 			iVar4 = 1;
 			iVar1 = 60;
 			break;
 		
 		case 269:
-			StringCopy(&Var2, "TORSO_P1_28_2", 16);
+			StringCopy(&Var2, "TORSO_P1_28_2" /* GXT: LSGC Gray Hoodie */, 16);
 			iVar3 = 28;
 			iVar4 = 2;
 			iVar1 = 70;
 			break;
 		
 		case 270:
-			StringCopy(&Var2, "TORSO_P1_28_3", 16);
+			StringCopy(&Var2, "TORSO_P1_28_3" /* GXT: LSGC Urban Hoodie */, 16);
 			iVar3 = 28;
 			iVar4 = 3;
 			iVar1 = 80;
 			break;
 		
 		case 271:
-			StringCopy(&Var2, "TORSO_P1_28_4", 16);
+			StringCopy(&Var2, "TORSO_P1_28_4" /* GXT: LSGC Forest Hoodie */, 16);
 			iVar3 = 28;
 			iVar4 = 4;
 			iVar1 = 90;
 			break;
 		
 		case 272:
-			StringCopy(&Var2, "TORSO_P1_28_5", 16);
+			StringCopy(&Var2, "TORSO_P1_28_5" /* GXT: Ammu-Nation A Hoodie */, 16);
 			iVar3 = 28;
 			iVar4 = 5;
 			iVar1 = 80;
 			break;
 		
 		case 273:
-			StringCopy(&Var2, "TORSO_P1_28_6", 16);
+			StringCopy(&Var2, "TORSO_P1_28_6" /* GXT: Blauser Hoodie */, 16);
 			iVar3 = 28;
 			iVar4 = 6;
 			iVar1 = 70;
 			break;
 		
 		case 274:
-			StringCopy(&Var2, "TORSO_P1_28_7", 16);
+			StringCopy(&Var2, "TORSO_P1_28_7" /* GXT: Penetrators Orange Hoodie */, 16);
 			iVar3 = 28;
 			iVar4 = 7;
 			iVar1 = 95;
 			break;
 		
 		case 275:
-			StringCopy(&Var2, "TORSO_P1_28_8", 16);
+			StringCopy(&Var2, "TORSO_P1_28_8" /* GXT: Crevis Fluorescent Hoodie */, 16);
 			iVar3 = 28;
 			iVar4 = 8;
 			iVar1 = 105;
 			break;
 		
 		case 276:
-			StringCopy(&Var2, "TORSO_P1_28_9", 16);
+			StringCopy(&Var2, "TORSO_P1_28_9" /* GXT: Blue Hoodie */, 16);
 			iVar3 = 28;
 			iVar4 = 9;
 			iVar1 = 95;
 			break;
 		
 		case 277:
-			StringCopy(&Var2, "TORSO_P1_28_10", 16);
+			StringCopy(&Var2, "TORSO_P1_28_10" /* GXT: Green Hoodie */, 16);
 			iVar3 = 28;
 			iVar4 = 10;
 			iVar1 = 110;
 			break;
 		
 		case 278:
-			StringCopy(&Var2, "TORSO_P1_28_11", 16);
+			StringCopy(&Var2, "TORSO_P1_28_11" /* GXT: LS Jardineros Hoodie */, 16);
 			iVar3 = 28;
 			iVar4 = 11;
 			iVar1 = 98;
 			break;
 		
 		case 279:
-			StringCopy(&Var2, "TORSO_P1_28_12", 16);
+			StringCopy(&Var2, "TORSO_P1_28_12" /* GXT: Ash 18 Hoodie */, 16);
 			iVar3 = 28;
 			iVar4 = 12;
 			iVar1 = 88;
 			break;
 		
 		case 280:
-			StringCopy(&Var2, "TORSO_P1_28_13", 16);
+			StringCopy(&Var2, "TORSO_P1_28_13" /* GXT: Red Mist XI Hoodie */, 16);
 			iVar3 = 28;
 			iVar4 = 13;
 			iVar1 = 98;
 			break;
 		
 		case 281:
-			StringCopy(&Var2, "TORSO_P1_28_14", 16);
+			StringCopy(&Var2, "TORSO_P1_28_14" /* GXT: Eris Charcoal Hoodie */, 16);
 			iVar3 = 28;
 			iVar4 = 14;
 			iVar1 = 110;
 			break;
 		
 		case 282:
-			StringCopy(&Var2, "TORSO_P1_28_15", 16);
+			StringCopy(&Var2, "TORSO_P1_28_15" /* GXT: OG Hoodie */, 16);
 			iVar3 = 28;
 			iVar4 = 15;
 			iVar1 = 98;
 			break;
 		
 		case 283:
-			StringCopy(&Var2, "TORSO_P1_29_0", 16);
+			StringCopy(&Var2, "TORSO_P1_29_0" /* GXT: White V Neck T-Shirt */, 16);
 			iVar3 = 29;
 			iVar4 = 0;
 			iVar1 = 250;
 			break;
 		
 		case 284:
-			StringCopy(&Var2, "TORSO_P1_29_1", 16);
+			StringCopy(&Var2, "TORSO_P1_29_1" /* GXT: Ash V Neck T-Shirt */, 16);
 			iVar3 = 29;
 			iVar4 = 1;
 			iVar1 = 270;
 			break;
 		
 		case 285:
-			StringCopy(&Var2, "TORSO_P1_29_2", 16);
+			StringCopy(&Var2, "TORSO_P1_29_2" /* GXT: Black V Neck T-Shirt */, 16);
 			iVar3 = 29;
 			iVar4 = 2;
 			iVar1 = 280;
 			break;
 		
 		case 286:
-			StringCopy(&Var2, "TORSO_P1_29_3", 16);
+			StringCopy(&Var2, "TORSO_P1_29_3" /* GXT: Brown V Neck T-Shirt */, 16);
 			iVar3 = 29;
 			iVar4 = 3;
 			iVar1 = 275;
 			break;
 		
 		case 287:
-			StringCopy(&Var2, "TORSO_P1_29_4", 16);
+			StringCopy(&Var2, "TORSO_P1_29_4" /* GXT: Olive V Neck T-Shirt */, 16);
 			iVar3 = 29;
 			iVar4 = 4;
 			iVar1 = 290;
 			break;
 		
 		case 288:
-			StringCopy(&Var2, "TORSO_P1_29_5", 16);
+			StringCopy(&Var2, "TORSO_P1_29_5" /* GXT: Corkers V Neck T-Shirt */, 16);
 			iVar3 = 29;
 			iVar4 = 5;
 			iVar1 = 35;
 			break;
 		
 		case 289:
-			StringCopy(&Var2, "TORSO_P1_29_6", 16);
+			StringCopy(&Var2, "TORSO_P1_29_6" /* GXT: Feud V Neck T-Shirt */, 16);
 			iVar3 = 29;
 			iVar4 = 6;
 			iVar1 = 35;
 			break;
 		
 		case 290:
-			StringCopy(&Var2, "TORSO_P1_29_7", 16);
+			StringCopy(&Var2, "TORSO_P1_29_7" /* GXT: Magnetics V Neck T-Shirt */, 16);
 			iVar3 = 29;
 			iVar4 = 7;
 			iVar1 = 35;
 			break;
 		
 		case 291:
-			StringCopy(&Var2, "TORSO_P1_29_8", 16);
+			StringCopy(&Var2, "TORSO_P1_29_8" /* GXT: Mint V Neck T-Shirt */, 16);
 			iVar3 = 29;
 			iVar4 = 8;
 			iVar1 = 295;
 			break;
 		
 		case 292:
-			StringCopy(&Var2, "TORSO_P1_29_9", 16);
+			StringCopy(&Var2, "TORSO_P1_29_9" /* GXT: Harsh Souls V Neck T-Shirt */, 16);
 			iVar3 = 29;
 			iVar4 = 9;
 			iVar1 = 35;
 			break;
 		
 		case 293:
-			StringCopy(&Var2, "TORSO_P1_29_10", 16);
+			StringCopy(&Var2, "TORSO_P1_29_10" /* GXT: Trey Baker V Neck T-Shirt */, 16);
 			iVar3 = 29;
 			iVar4 = 10;
 			iVar1 = 35;
 			break;
 		
 		case 294:
-			StringCopy(&Var2, "TORSO_P1_29_11", 16);
+			StringCopy(&Var2, "TORSO_P1_29_11" /* GXT: Fuque V Neck T-Shirt */, 16);
 			iVar3 = 29;
 			iVar4 = 11;
 			iVar1 = 35;
 			break;
 		
 		case 295:
-			StringCopy(&Var2, "TORSO_P1_29_12", 16);
+			StringCopy(&Var2, "TORSO_P1_29_12" /* GXT: Fellowship V Neck T-Shirt */, 16);
 			iVar3 = 29;
 			iVar4 = 12;
 			break;
 		
 		case 296:
-			StringCopy(&Var2, "TORSO_P1_30_0", 16);
+			StringCopy(&Var2, "TORSO_P1_30_0" /* GXT: Green Cardigan */, 16);
 			iVar3 = 30;
 			iVar4 = 0;
 			iVar1 = 1750;
 			break;
 		
 		case 297:
-			StringCopy(&Var2, "TORSO_P1_30_1", 16);
+			StringCopy(&Var2, "TORSO_P1_30_1" /* GXT: Gray Cardigan */, 16);
 			iVar3 = 30;
 			iVar4 = 1;
 			iVar1 = 1920;
 			break;
 		
 		case 298:
-			StringCopy(&Var2, "TORSO_P1_30_2", 16);
+			StringCopy(&Var2, "TORSO_P1_30_2" /* GXT: Slate Cardigan */, 16);
 			iVar3 = 30;
 			iVar4 = 2;
 			iVar1 = 1890;
 			break;
 		
 		case 299:
-			StringCopy(&Var2, "TORSO_P1_30_3", 16);
+			StringCopy(&Var2, "TORSO_P1_30_3" /* GXT: Blue Cardigan */, 16);
 			iVar3 = 30;
 			iVar4 = 3;
 			iVar1 = 1850;
 			break;
 		
 		case 300:
-			StringCopy(&Var2, "TORSO_P1_30_4", 16);
+			StringCopy(&Var2, "TORSO_P1_30_4" /* GXT: Red Cardigan */, 16);
 			iVar3 = 30;
 			iVar4 = 4;
 			iVar1 = 1750;
 			break;
 		
 		case 301:
-			StringCopy(&Var2, "TORSO_P1_30_5", 16);
+			StringCopy(&Var2, "TORSO_P1_30_5" /* GXT: Charcoal Cardigan */, 16);
 			iVar3 = 30;
 			iVar4 = 5;
 			iVar1 = 1990;
 			break;
 		
 		case 302:
-			StringCopy(&Var2, "TORSO_P1_30_6", 16);
+			StringCopy(&Var2, "TORSO_P1_30_6" /* GXT: White Cardigan */, 16);
 			iVar3 = 30;
 			iVar4 = 6;
 			iVar1 = 1820;
 			break;
 		
 		case 303:
-			StringCopy(&Var2, "TORSO_P1_30_7", 16);
+			StringCopy(&Var2, "TORSO_P1_30_7" /* GXT: Silver Cardigan */, 16);
 			iVar3 = 30;
 			iVar4 = 7;
 			iVar1 = 1990;
 			break;
 		
 		case 304:
-			StringCopy(&Var2, "TORSO_P1_30_8", 16);
+			StringCopy(&Var2, "TORSO_P1_30_8" /* GXT: Pale Blue Cardigan */, 16);
 			iVar3 = 30;
 			iVar4 = 8;
 			iVar1 = 1920;
 			break;
 		
 		case 305:
-			StringCopy(&Var2, "TORSO_P1_30_9", 16);
+			StringCopy(&Var2, "TORSO_P1_30_9" /* GXT: Aqua Cardigan */, 16);
 			iVar3 = 30;
 			iVar4 = 9;
 			iVar1 = 1850;
 			break;
 		
 		case 306:
-			StringCopy(&Var2, "TORSO_P1_30_10", 16);
+			StringCopy(&Var2, "TORSO_P1_30_10" /* GXT: Gray Two-Tone Cardigan */, 16);
 			iVar3 = 30;
 			iVar4 = 10;
 			iVar1 = 1990;
 			break;
 		
 		case 307:
-			StringCopy(&Var2, "TORSO_P1_30_11", 16);
+			StringCopy(&Var2, "TORSO_P1_30_11" /* GXT: Pink Cardigan */, 16);
 			iVar3 = 30;
 			iVar4 = 11;
 			iVar1 = 1790;
 			break;
 		
 		case 308:
-			StringCopy(&Var2, "TORSO_P1_30_12", 16);
+			StringCopy(&Var2, "TORSO_P1_30_12" /* GXT: Yellow Cardigan */, 16);
 			iVar3 = 30;
 			iVar4 = 12;
 			iVar1 = 1790;
 			break;
 		
 		case 309:
-			StringCopy(&Var2, "TORSO_P1_31_0", 16);
+			StringCopy(&Var2, "TORSO_P1_31_0" /* GXT: LS Panic Gray Jersey */, 16);
 			iVar3 = 31;
 			iVar4 = 0;
 			iVar1 = 69;
 			break;
 		
 		case 310:
-			StringCopy(&Var2, "TORSO_P1_31_1", 16);
+			StringCopy(&Var2, "TORSO_P1_31_1" /* GXT: LS Panic Yellow Jersey */, 16);
 			iVar3 = 31;
 			iVar4 = 1;
 			iVar1 = 75;
 			break;
 		
 		case 311:
-			StringCopy(&Var2, "TORSO_P1_31_2", 16);
+			StringCopy(&Var2, "TORSO_P1_31_2" /* GXT: Penetrators White Jersey */, 16);
 			iVar3 = 31;
 			iVar4 = 2;
 			iVar1 = 75;
 			break;
 		
 		case 312:
-			StringCopy(&Var2, "TORSO_P1_31_3", 16);
+			StringCopy(&Var2, "TORSO_P1_31_3" /* GXT: Penetrators Blue Jersey */, 16);
 			iVar3 = 31;
 			iVar4 = 3;
 			iVar1 = 79;
 			break;
 		
 		case 313:
-			StringCopy(&Var2, "TORSO_P1_31_4", 16);
+			StringCopy(&Var2, "TORSO_P1_31_4" /* GXT: LC Salamanders Red Jersey */, 16);
 			iVar3 = 31;
 			iVar4 = 4;
 			iVar1 = 79;
 			break;
 		
 		case 314:
-			StringCopy(&Var2, "TORSO_P1_31_5", 16);
+			StringCopy(&Var2, "TORSO_P1_31_5" /* GXT: LC Salamanders Green Jersey */, 16);
 			iVar3 = 31;
 			iVar4 = 5;
 			iVar1 = 89;
 			break;
 		
 		case 315:
-			StringCopy(&Var2, "TORSO_P1_31_6", 16);
+			StringCopy(&Var2, "TORSO_P1_31_6" /* GXT: LS Shrimps Gray Jersey */, 16);
 			iVar3 = 31;
 			iVar4 = 6;
 			iVar1 = 85;
 			break;
 		
 		case 316:
-			StringCopy(&Var2, "TORSO_P1_31_7", 16);
+			StringCopy(&Var2, "TORSO_P1_31_7" /* GXT: LS Shrimps White Jersey */, 16);
 			iVar3 = 31;
 			iVar4 = 7;
 			iVar1 = 85;
 			break;
 		
 		case 317:
-			StringCopy(&Var2, "TORSO_P1_31_8", 16);
+			StringCopy(&Var2, "TORSO_P1_31_8" /* GXT: Uptown Riders Jersey */, 16);
 			iVar3 = 31;
 			iVar4 = 8;
 			break;
@@ -49967,596 +49967,596 @@ void func_550(int iParam0)//Position - 0x3EC32
 	switch (iParam0)
 	{
 		case 107:
-			StringCopy(&Var2, "TORSO_P1_12_0", 16);
+			StringCopy(&Var2, "TORSO_P1_12_0" /* GXT: Snake A Jacket */, 16);
 			iVar3 = 12;
 			iVar4 = 0;
 			iVar1 = 195;
 			break;
 		
 		case 108:
-			StringCopy(&Var2, "TORSO_P1_12_1", 16);
+			StringCopy(&Var2, "TORSO_P1_12_1" /* GXT: Eagle 69 Jacket */, 16);
 			iVar3 = 12;
 			iVar4 = 1;
 			iVar1 = 420;
 			break;
 		
 		case 109:
-			StringCopy(&Var2, "TORSO_P1_12_2", 16);
+			StringCopy(&Var2, "TORSO_P1_12_2" /* GXT: LS Corkers 33 Jacket */, 16);
 			iVar3 = 12;
 			iVar4 = 2;
 			iVar1 = 390;
 			break;
 		
 		case 110:
-			StringCopy(&Var2, "TORSO_P1_12_3", 16);
+			StringCopy(&Var2, "TORSO_P1_12_3" /* GXT: LSP 41 Jacket */, 16);
 			iVar3 = 12;
 			iVar4 = 3;
 			iVar1 = 450;
 			break;
 		
 		case 111:
-			StringCopy(&Var2, "TORSO_P1_12_4", 16);
+			StringCopy(&Var2, "TORSO_P1_12_4" /* GXT: LS Corkers E Jacket */, 16);
 			iVar3 = 12;
 			iVar4 = 4;
 			iVar1 = 400;
 			break;
 		
 		case 112:
-			StringCopy(&Var2, "TORSO_P1_12_5", 16);
+			StringCopy(&Var2, "TORSO_P1_12_5" /* GXT: LS Squeezers Jacket */, 16);
 			iVar3 = 12;
 			iVar4 = 5;
 			iVar1 = 390;
 			break;
 		
 		case 113:
-			StringCopy(&Var2, "TORSO_P1_12_6", 16);
+			StringCopy(&Var2, "TORSO_P1_12_6" /* GXT: The Feud 69 Jacket */, 16);
 			iVar3 = 12;
 			iVar4 = 6;
 			iVar1 = 570;
 			break;
 		
 		case 114:
-			StringCopy(&Var2, "TORSO_P1_12_7", 16);
+			StringCopy(&Var2, "TORSO_P1_12_7" /* GXT: LS Pounders Jacket */, 16);
 			iVar3 = 12;
 			iVar4 = 7;
 			iVar1 = 390;
 			break;
 		
 		case 115:
-			StringCopy(&Var2, "TORSO_P1_12_8", 16);
+			StringCopy(&Var2, "TORSO_P1_12_8" /* GXT: SA Jacket */, 16);
 			iVar3 = 12;
 			iVar4 = 8;
 			iVar1 = 470;
 			break;
 		
 		case 116:
-			StringCopy(&Var2, "TORSO_P1_12_9", 16);
+			StringCopy(&Var2, "TORSO_P1_12_9" /* GXT: Redwood A Jacket */, 16);
 			iVar3 = 12;
 			iVar4 = 9;
 			iVar1 = 390;
 			break;
 		
 		case 117:
-			StringCopy(&Var2, "TORSO_P1_12_10", 16);
+			StringCopy(&Var2, "TORSO_P1_12_10" /* GXT: Uptown Riders Jacket */, 16);
 			iVar3 = 12;
 			iVar4 = 10;
 			iVar1 = 520;
 			break;
 		
 		case 118:
-			StringCopy(&Var2, "TORSO_P1_12_11", 16);
+			StringCopy(&Var2, "TORSO_P1_12_11" /* GXT: The Feud Black Jacket */, 16);
 			iVar3 = 12;
 			iVar4 = 11;
 			iVar1 = 490;
 			break;
 		
 		case 119:
-			StringCopy(&Var2, "TORSO_P1_12_12", 16);
+			StringCopy(&Var2, "TORSO_P1_12_12" /* GXT: Yeti Jacket */, 16);
 			iVar3 = 12;
 			iVar4 = 12;
 			iVar1 = 490;
 			break;
 		
 		case 120:
-			StringCopy(&Var2, "TORSO_P1_12_13", 16);
+			StringCopy(&Var2, "TORSO_P1_12_13" /* GXT: LSP 71 Jacket */, 16);
 			iVar3 = 12;
 			iVar4 = 13;
 			iVar1 = 590;
 			break;
 		
 		case 121:
-			StringCopy(&Var2, "TORSO_P1_12_14", 16);
+			StringCopy(&Var2, "TORSO_P1_12_14" /* GXT: Dust Devils Jacket */, 16);
 			iVar3 = 12;
 			iVar4 = 14;
 			iVar1 = 560;
 			break;
 		
 		case 122:
-			StringCopy(&Var2, "TORSO_P1_12_15", 16);
+			StringCopy(&Var2, "TORSO_P1_12_15" /* GXT: SA 56 Jacket */, 16);
 			iVar3 = 12;
 			iVar4 = 15;
 			iVar1 = 520;
 			break;
 		
 		case 123:
-			StringCopy(&Var2, "TORSO_P1_13_0", 16);
+			StringCopy(&Var2, "TORSO_P1_13_0" /* GXT: Gray Hoodie */, 16);
 			iVar3 = 13;
 			iVar4 = 0;
 			break;
 		
 		case 124:
-			StringCopy(&Var2, "TORSO_P1_13_1", 16);
+			StringCopy(&Var2, "TORSO_P1_13_1" /* GXT: Kingz of Los Santos Hoodie */, 16);
 			iVar3 = 13;
 			iVar4 = 1;
 			break;
 		
 		case 125:
-			StringCopy(&Var2, "TORSO_P1_13_2", 16);
+			StringCopy(&Var2, "TORSO_P1_13_2" /* GXT: LS Black Hoodie */, 16);
 			iVar3 = 13;
 			iVar4 = 2;
 			break;
 		
 		case 126:
-			StringCopy(&Var2, "TORSO_P1_13_3", 16);
+			StringCopy(&Var2, "TORSO_P1_13_3" /* GXT: Dark Blue Hoodie */, 16);
 			iVar3 = 13;
 			iVar4 = 3;
 			iVar1 = 90;
 			break;
 		
 		case 127:
-			StringCopy(&Var2, "TORSO_P1_13_4", 16);
+			StringCopy(&Var2, "TORSO_P1_13_4" /* GXT: LS Mustard Hoodie */, 16);
 			iVar3 = 13;
 			iVar4 = 4;
 			iVar1 = 85;
 			break;
 		
 		case 128:
-			StringCopy(&Var2, "TORSO_P1_13_5", 16);
+			StringCopy(&Var2, "TORSO_P1_13_5" /* GXT: Crevis Hoodie */, 16);
 			iVar3 = 13;
 			iVar4 = 5;
 			iVar1 = 45;
 			break;
 		
 		case 129:
-			StringCopy(&Var2, "TORSO_P1_13_6", 16);
+			StringCopy(&Var2, "TORSO_P1_13_6" /* GXT: Dust Devils Hoodie */, 16);
 			iVar3 = 13;
 			iVar4 = 6;
 			iVar1 = 90;
 			break;
 		
 		case 130:
-			StringCopy(&Var2, "TORSO_P1_13_7", 16);
+			StringCopy(&Var2, "TORSO_P1_13_7" /* GXT: Feud Olive Hoodie */, 16);
 			iVar3 = 13;
 			iVar4 = 7;
 			iVar1 = 47;
 			break;
 		
 		case 131:
-			StringCopy(&Var2, "TORSO_P1_13_8", 16);
+			StringCopy(&Var2, "TORSO_P1_13_8" /* GXT: Eris Hoodie */, 16);
 			iVar3 = 13;
 			iVar4 = 8;
 			iVar1 = 45;
 			break;
 		
 		case 132:
-			StringCopy(&Var2, "TORSO_P1_13_9", 16);
+			StringCopy(&Var2, "TORSO_P1_13_9" /* GXT: Hinterland Hoodie */, 16);
 			iVar3 = 13;
 			iVar4 = 9;
 			iVar1 = 48;
 			break;
 		
 		case 133:
-			StringCopy(&Var2, "TORSO_P1_13_10", 16);
+			StringCopy(&Var2, "TORSO_P1_13_10" /* GXT: Feud Mint Hoodie */, 16);
 			iVar3 = 13;
 			iVar4 = 10;
 			iVar1 = 45;
 			break;
 		
 		case 134:
-			StringCopy(&Var2, "TORSO_P1_13_11", 16);
+			StringCopy(&Var2, "TORSO_P1_13_11" /* GXT: Penetrators Gray Hoodie */, 16);
 			iVar3 = 13;
 			iVar4 = 11;
 			iVar1 = 85;
 			break;
 		
 		case 135:
-			StringCopy(&Var2, "TORSO_P1_13_12", 16);
+			StringCopy(&Var2, "TORSO_P1_13_12" /* GXT: Ash Hoodie */, 16);
 			iVar3 = 13;
 			iVar4 = 12;
 			iVar1 = 45;
 			break;
 		
 		case 136:
-			StringCopy(&Var2, "TORSO_P1_13_13", 16);
+			StringCopy(&Var2, "TORSO_P1_13_13" /* GXT: Rearwall Hoodie */, 16);
 			iVar3 = 13;
 			iVar4 = 13;
 			iVar1 = 47;
 			break;
 		
 		case 137:
-			StringCopy(&Var2, "TORSO_P1_13_14", 16);
+			StringCopy(&Var2, "TORSO_P1_13_14" /* GXT: Trey Baker Hoodie */, 16);
 			iVar3 = 13;
 			iVar4 = 14;
 			iVar1 = 45;
 			break;
 		
 		case 138:
-			StringCopy(&Var2, "TORSO_P1_13_15", 16);
+			StringCopy(&Var2, "TORSO_P1_13_15" /* GXT: Feud Camo Hoodie */, 16);
 			iVar3 = 13;
 			iVar4 = 15;
 			iVar1 = 48;
 			break;
 		
 		case 139:
-			StringCopy(&Var2, "TORSO_P1_14_0", 16);
+			StringCopy(&Var2, "TORSO_P1_14_0" /* GXT: Gray Jacket */, 16);
 			iVar3 = 14;
 			iVar4 = 0;
 			iVar1 = 290;
 			break;
 		
 		case 140:
-			StringCopy(&Var2, "TORSO_P1_14_1", 16);
+			StringCopy(&Var2, "TORSO_P1_14_1" /* GXT: Charcoal Jacket */, 16);
 			iVar3 = 14;
 			iVar4 = 1;
 			iVar1 = 290;
 			break;
 		
 		case 141:
-			StringCopy(&Var2, "TORSO_P1_14_2", 16);
+			StringCopy(&Var2, "TORSO_P1_14_2" /* GXT: Silver Jacket */, 16);
 			iVar3 = 14;
 			iVar4 = 2;
 			iVar1 = 290;
 			break;
 		
 		case 142:
-			StringCopy(&Var2, "TORSO_P1_14_3", 16);
+			StringCopy(&Var2, "TORSO_P1_14_3" /* GXT: Olive Jacket */, 16);
 			iVar3 = 14;
 			iVar4 = 3;
 			iVar1 = 290;
 			break;
 		
 		case 143:
-			StringCopy(&Var2, "TORSO_P1_14_4", 16);
+			StringCopy(&Var2, "TORSO_P1_14_4" /* GXT: Brown Jacket */, 16);
 			iVar3 = 14;
 			iVar4 = 4;
 			iVar1 = 290;
 			break;
 		
 		case 144:
-			StringCopy(&Var2, "TORSO_P1_14_5", 16);
+			StringCopy(&Var2, "TORSO_P1_14_5" /* GXT: Desert Sand Jacket */, 16);
 			iVar3 = 14;
 			iVar4 = 5;
 			iVar1 = 290;
 			break;
 		
 		case 145:
-			StringCopy(&Var2, "TORSO_P1_14_6", 16);
+			StringCopy(&Var2, "TORSO_P1_14_6" /* GXT: Field Camo Jacket */, 16);
 			iVar3 = 14;
 			iVar4 = 6;
 			iVar1 = 65;
 			break;
 		
 		case 146:
-			StringCopy(&Var2, "TORSO_P1_14_7", 16);
+			StringCopy(&Var2, "TORSO_P1_14_7" /* GXT: Desert Camo Jacket */, 16);
 			iVar3 = 14;
 			iVar4 = 7;
 			iVar1 = 65;
 			break;
 		
 		case 147:
-			StringCopy(&Var2, "TORSO_P1_15_0", 16);
+			StringCopy(&Var2, "TORSO_P1_15_0" /* GXT: White T-Shirt */, 16);
 			iVar3 = 15;
 			iVar4 = 0;
 			iVar1 = 200;
 			break;
 		
 		case 148:
-			StringCopy(&Var2, "TORSO_P1_15_1", 16);
+			StringCopy(&Var2, "TORSO_P1_15_1" /* GXT: Gray T-Shirt */, 16);
 			iVar3 = 15;
 			iVar4 = 1;
 			iVar1 = 220;
 			break;
 		
 		case 149:
-			StringCopy(&Var2, "TORSO_P1_15_2", 16);
+			StringCopy(&Var2, "TORSO_P1_15_2" /* GXT: Slate T-Shirt */, 16);
 			iVar3 = 15;
 			iVar4 = 2;
 			iVar1 = 220;
 			break;
 		
 		case 150:
-			StringCopy(&Var2, "TORSO_P1_15_3", 16);
+			StringCopy(&Var2, "TORSO_P1_15_3" /* GXT: Jade T-Shirt */, 16);
 			iVar3 = 15;
 			iVar4 = 3;
 			iVar1 = 240;
 			break;
 		
 		case 151:
-			StringCopy(&Var2, "TORSO_P1_15_4", 16);
+			StringCopy(&Var2, "TORSO_P1_15_4" /* GXT: 100% T-Shirt */, 16);
 			iVar3 = 15;
 			iVar4 = 4;
 			break;
 		
 		case 152:
-			StringCopy(&Var2, "TORSO_P1_15_5", 16);
+			StringCopy(&Var2, "TORSO_P1_15_5" /* GXT: Navy T-Shirt */, 16);
 			iVar3 = 15;
 			iVar4 = 5;
 			iVar1 = 250;
 			break;
 		
 		case 153:
-			StringCopy(&Var2, "TORSO_P1_15_6", 16);
+			StringCopy(&Var2, "TORSO_P1_15_6" /* GXT: Black T-Shirt */, 16);
 			iVar3 = 15;
 			iVar4 = 6;
 			iVar1 = 260;
 			break;
 		
 		case 154:
-			StringCopy(&Var2, "TORSO_P1_15_7", 16);
+			StringCopy(&Var2, "TORSO_P1_15_7" /* GXT: LC Wrath T-Shirt */, 16);
 			iVar3 = 15;
 			iVar4 = 7;
 			iVar1 = 40;
 			break;
 		
 		case 155:
-			StringCopy(&Var2, "TORSO_P1_15_8", 16);
+			StringCopy(&Var2, "TORSO_P1_15_8" /* GXT: LOB T-Shirt */, 16);
 			iVar3 = 15;
 			iVar4 = 8;
 			iVar1 = 50;
 			break;
 		
 		case 156:
-			StringCopy(&Var2, "TORSO_P1_15_9", 16);
+			StringCopy(&Var2, "TORSO_P1_15_9" /* GXT: UCLS Bookworms T-Shirt */, 16);
 			iVar3 = 15;
 			iVar4 = 9;
 			iVar1 = 45;
 			break;
 		
 		case 157:
-			StringCopy(&Var2, "TORSO_P1_15_10", 16);
+			StringCopy(&Var2, "TORSO_P1_15_10" /* GXT: Los Santos Red T-Shirt */, 16);
 			iVar3 = 15;
 			iVar4 = 10;
 			iVar1 = 40;
 			break;
 		
 		case 158:
-			StringCopy(&Var2, "TORSO_P1_15_11", 16);
+			StringCopy(&Var2, "TORSO_P1_15_11" /* GXT: Queensbury Boxing T-Shirt */, 16);
 			iVar3 = 15;
 			iVar4 = 11;
 			iVar1 = 55;
 			break;
 		
 		case 159:
-			StringCopy(&Var2, "TORSO_P1_16_0", 16);
+			StringCopy(&Var2, "TORSO_P1_16_0" /* GXT: Black Shirt */, 16);
 			iVar3 = 16;
 			iVar4 = 0;
 			break;
 		
 		case 160:
-			StringCopy(&Var2, "TORSO_P1_17_0", 16);
+			StringCopy(&Var2, "TORSO_P1_17_0" /* GXT: Blue Jacket */, 16);
 			iVar3 = 17;
 			iVar4 = 0;
 			iVar1 = 40;
 			break;
 		
 		case 161:
-			StringCopy(&Var2, "TORSO_P1_17_1", 16);
+			StringCopy(&Var2, "TORSO_P1_17_1" /* GXT: OG Slate Jacket */, 16);
 			iVar3 = 17;
 			iVar4 = 1;
 			iVar1 = 50;
 			break;
 		
 		case 162:
-			StringCopy(&Var2, "TORSO_P1_17_2", 16);
+			StringCopy(&Var2, "TORSO_P1_17_2" /* GXT: OG White Jacket */, 16);
 			iVar3 = 17;
 			iVar4 = 2;
 			break;
 		
 		case 163:
-			StringCopy(&Var2, "TORSO_P1_17_3", 16);
+			StringCopy(&Var2, "TORSO_P1_17_3" /* GXT: Corkers Green Jacket */, 16);
 			iVar3 = 17;
 			iVar4 = 3;
 			iVar1 = 50;
 			break;
 		
 		case 164:
-			StringCopy(&Var2, "TORSO_P1_17_4", 16);
+			StringCopy(&Var2, "TORSO_P1_17_4" /* GXT: Deep Gray Jacket */, 16);
 			iVar3 = 17;
 			iVar4 = 4;
 			iVar1 = 50;
 			break;
 		
 		case 165:
-			StringCopy(&Var2, "TORSO_P1_17_5", 16);
+			StringCopy(&Var2, "TORSO_P1_17_5" /* GXT: Kingz Banded Jacket */, 16);
 			iVar3 = 17;
 			iVar4 = 5;
 			iVar1 = 50;
 			break;
 		
 		case 166:
-			StringCopy(&Var2, "TORSO_P1_17_6", 16);
+			StringCopy(&Var2, "TORSO_P1_17_6" /* GXT: Stank Forest Camo Jacket */, 16);
 			iVar3 = 17;
 			iVar4 = 6;
 			iVar1 = 50;
 			break;
 		
 		case 167:
-			StringCopy(&Var2, "TORSO_P1_17_7", 16);
+			StringCopy(&Var2, "TORSO_P1_17_7" /* GXT: Trey Baker Camo Jacket */, 16);
 			iVar3 = 17;
 			iVar4 = 7;
 			iVar1 = 50;
 			break;
 		
 		case 168:
-			StringCopy(&Var2, "TORSO_P1_17_8", 16);
+			StringCopy(&Var2, "TORSO_P1_17_8" /* GXT: Coffee Jacket */, 16);
 			iVar3 = 17;
 			iVar4 = 8;
 			iVar1 = 50;
 			break;
 		
 		case 169:
-			StringCopy(&Var2, "TORSO_P1_17_9", 16);
+			StringCopy(&Var2, "TORSO_P1_17_9" /* GXT: Plain Coffee Jacket */, 16);
 			iVar3 = 17;
 			iVar4 = 9;
 			iVar1 = 50;
 			break;
 		
 		case 170:
-			StringCopy(&Var2, "TORSO_P1_17_10", 16);
+			StringCopy(&Var2, "TORSO_P1_17_10" /* GXT: Fruntalot Green Jacket */, 16);
 			iVar3 = 17;
 			iVar4 = 10;
 			iVar1 = 50;
 			break;
 		
 		case 171:
-			StringCopy(&Var2, "TORSO_P1_17_11", 16);
+			StringCopy(&Var2, "TORSO_P1_17_11" /* GXT: Mocha Jacket */, 16);
 			iVar3 = 17;
 			iVar4 = 11;
 			iVar1 = 50;
 			break;
 		
 		case 172:
-			StringCopy(&Var2, "TORSO_P1_17_12", 16);
+			StringCopy(&Var2, "TORSO_P1_17_12" /* GXT: Brown Jacket */, 16);
 			iVar3 = 17;
 			iVar4 = 12;
 			iVar1 = 50;
 			break;
 		
 		case 173:
-			StringCopy(&Var2, "TORSO_P1_17_13", 16);
+			StringCopy(&Var2, "TORSO_P1_17_13" /* GXT: LS Snake Weave Jacket */, 16);
 			iVar3 = 17;
 			iVar4 = 13;
 			iVar1 = 50;
 			break;
 		
 		case 174:
-			StringCopy(&Var2, "TORSO_P1_17_14", 16);
+			StringCopy(&Var2, "TORSO_P1_17_14" /* GXT: Feud Animal Print Jacket */, 16);
 			iVar3 = 17;
 			iVar4 = 14;
 			iVar1 = 50;
 			break;
 		
 		case 175:
-			StringCopy(&Var2, "TORSO_P1_17_15", 16);
+			StringCopy(&Var2, "TORSO_P1_17_15" /* GXT: Fruntalot Techno Jacket */, 16);
 			iVar3 = 17;
 			iVar4 = 15;
 			iVar1 = 50;
 			break;
 		
 		case 176:
-			StringCopy(&Var2, "TORSO_P1_18_0", 16);
+			StringCopy(&Var2, "TORSO_P1_18_0" /* GXT: Gray Plaid Jacket */, 16);
 			iVar3 = 18;
 			iVar4 = 0;
 			iVar6 = 3;
 			break;
 		
 		case 177:
-			StringCopy(&Var2, "TORSO_P1_18_1", 16);
+			StringCopy(&Var2, "TORSO_P1_18_1" /* GXT: Ash Plaid Jacket */, 16);
 			iVar3 = 18;
 			iVar4 = 1;
 			iVar6 = 3;
 			break;
 		
 		case 178:
-			StringCopy(&Var2, "TORSO_P1_18_2", 16);
+			StringCopy(&Var2, "TORSO_P1_18_2" /* GXT: Charcoal Plaid Jacket */, 16);
 			iVar3 = 18;
 			iVar4 = 2;
 			iVar6 = 3;
 			break;
 		
 		case 179:
-			StringCopy(&Var2, "TORSO_P1_18_3", 16);
+			StringCopy(&Var2, "TORSO_P1_18_3" /* GXT: Tan Plaid Jacket */, 16);
 			iVar3 = 18;
 			iVar4 = 3;
 			iVar6 = 3;
 			break;
 		
 		case 180:
-			StringCopy(&Var2, "TORSO_P1_18_4", 16);
+			StringCopy(&Var2, "TORSO_P1_18_4" /* GXT: Slate Jacket */, 16);
 			iVar3 = 18;
 			iVar4 = 4;
 			iVar6 = 3;
 			break;
 		
 		case 181:
-			StringCopy(&Var2, "TORSO_P1_18_5", 16);
+			StringCopy(&Var2, "TORSO_P1_18_5" /* GXT: Silver Jacket */, 16);
 			iVar3 = 18;
 			iVar4 = 5;
 			iVar6 = 3;
 			break;
 		
 		case 182:
-			StringCopy(&Var2, "TORSO_P1_18_6", 16);
+			StringCopy(&Var2, "TORSO_P1_18_6" /* GXT: Stone Jacket */, 16);
 			iVar3 = 18;
 			iVar4 = 6;
 			iVar6 = 3;
 			break;
 		
 		case 183:
-			StringCopy(&Var2, "TORSO_P1_18_7", 16);
+			StringCopy(&Var2, "TORSO_P1_18_7" /* GXT: Cream Jacket */, 16);
 			iVar3 = 18;
 			iVar4 = 7;
 			iVar6 = 3;
 			break;
 		
 		case 184:
-			StringCopy(&Var2, "TORSO_P1_18_8", 16);
+			StringCopy(&Var2, "TORSO_P1_18_8" /* GXT: Navy Plaid Piped Jacket */, 16);
 			iVar3 = 18;
 			iVar4 = 8;
 			iVar6 = 3;
 			break;
 		
 		case 185:
-			StringCopy(&Var2, "TORSO_P1_18_9", 16);
+			StringCopy(&Var2, "TORSO_P1_18_9" /* GXT: Off-White Jacket */, 16);
 			iVar3 = 18;
 			iVar4 = 9;
 			iVar6 = 3;
 			break;
 		
 		case 186:
-			StringCopy(&Var2, "TORSO_P1_18_10", 16);
+			StringCopy(&Var2, "TORSO_P1_18_10" /* GXT: Red Piped Jacket */, 16);
 			iVar3 = 18;
 			iVar4 = 10;
 			iVar6 = 3;
 			break;
 		
 		case 187:
-			StringCopy(&Var2, "TORSO_P1_18_11", 16);
+			StringCopy(&Var2, "TORSO_P1_18_11" /* GXT: Gray Piped Jacket */, 16);
 			iVar3 = 18;
 			iVar4 = 11;
 			iVar6 = 3;
 			break;
 		
 		case 188:
-			StringCopy(&Var2, "TORSO_P1_18_12", 16);
+			StringCopy(&Var2, "TORSO_P1_18_12" /* GXT: Navy Jacket */, 16);
 			iVar3 = 18;
 			iVar4 = 12;
 			iVar6 = 3;
 			break;
 		
 		case 189:
-			StringCopy(&Var2, "TORSO_P1_18_13", 16);
+			StringCopy(&Var2, "TORSO_P1_18_13" /* GXT: Russet Piped Jacket */, 16);
 			iVar3 = 18;
 			iVar4 = 13;
 			iVar6 = 3;
 			break;
 		
 		case 190:
-			StringCopy(&Var2, "TORSO_P1_18_14", 16);
+			StringCopy(&Var2, "TORSO_P1_18_14" /* GXT: Green Jacket */, 16);
 			iVar3 = 18;
 			iVar4 = 14;
 			iVar6 = 3;
 			break;
 		
 		case 191:
-			StringCopy(&Var2, "TORSO_P1_18_15", 16);
+			StringCopy(&Var2, "TORSO_P1_18_15" /* GXT: Beige Jacket */, 16);
 			iVar3 = 18;
 			iVar4 = 15;
 			iVar6 = 3;
 			break;
 		
 		case 192:
-			StringCopy(&Var2, "TORSO_P1_19_0", 16);
+			StringCopy(&Var2, "TORSO_P1_19_0" /* GXT: Blue Striped Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 0;
 			iVar1 = 480;
@@ -50564,7 +50564,7 @@ void func_550(int iParam0)//Position - 0x3EC32
 			break;
 		
 		case 193:
-			StringCopy(&Var2, "TORSO_P1_19_1", 16);
+			StringCopy(&Var2, "TORSO_P1_19_1" /* GXT: Beige Striped Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 1;
 			iVar1 = 440;
@@ -50572,7 +50572,7 @@ void func_550(int iParam0)//Position - 0x3EC32
 			break;
 		
 		case 194:
-			StringCopy(&Var2, "TORSO_P1_19_2", 16);
+			StringCopy(&Var2, "TORSO_P1_19_2" /* GXT: Gray Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 2;
 			iVar1 = 440;
@@ -50580,7 +50580,7 @@ void func_550(int iParam0)//Position - 0x3EC32
 			break;
 		
 		case 195:
-			StringCopy(&Var2, "TORSO_P1_19_3", 16);
+			StringCopy(&Var2, "TORSO_P1_19_3" /* GXT: Slate Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 3;
 			iVar1 = 520;
@@ -50588,7 +50588,7 @@ void func_550(int iParam0)//Position - 0x3EC32
 			break;
 		
 		case 196:
-			StringCopy(&Var2, "TORSO_P1_19_4", 16);
+			StringCopy(&Var2, "TORSO_P1_19_4" /* GXT: Green Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 4;
 			iVar1 = 440;
@@ -50596,7 +50596,7 @@ void func_550(int iParam0)//Position - 0x3EC32
 			break;
 		
 		case 197:
-			StringCopy(&Var2, "TORSO_P1_19_5", 16);
+			StringCopy(&Var2, "TORSO_P1_19_5" /* GXT: Picnic Plaid Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 5;
 			iVar1 = 440;
@@ -50604,7 +50604,7 @@ void func_550(int iParam0)//Position - 0x3EC32
 			break;
 		
 		case 198:
-			StringCopy(&Var2, "TORSO_P1_19_6", 16);
+			StringCopy(&Var2, "TORSO_P1_19_6" /* GXT: White Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 6;
 			iVar1 = 480;
@@ -50612,7 +50612,7 @@ void func_550(int iParam0)//Position - 0x3EC32
 			break;
 		
 		case 199:
-			StringCopy(&Var2, "TORSO_P1_19_7", 16);
+			StringCopy(&Var2, "TORSO_P1_19_7" /* GXT: Light Green Plaid Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 7;
 			iVar1 = 480;
@@ -50620,7 +50620,7 @@ void func_550(int iParam0)//Position - 0x3EC32
 			break;
 		
 		case 200:
-			StringCopy(&Var2, "TORSO_P1_19_8", 16);
+			StringCopy(&Var2, "TORSO_P1_19_8" /* GXT: Pink Striped Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 8;
 			iVar1 = 480;
@@ -50628,7 +50628,7 @@ void func_550(int iParam0)//Position - 0x3EC32
 			break;
 		
 		case 201:
-			StringCopy(&Var2, "TORSO_P1_19_9", 16);
+			StringCopy(&Var2, "TORSO_P1_19_9" /* GXT: Country Check Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 9;
 			iVar1 = 480;
@@ -50636,7 +50636,7 @@ void func_550(int iParam0)//Position - 0x3EC32
 			break;
 		
 		case 202:
-			StringCopy(&Var2, "TORSO_P1_19_10", 16);
+			StringCopy(&Var2, "TORSO_P1_19_10" /* GXT: Off-White Striped Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 10;
 			iVar1 = 480;
@@ -50644,7 +50644,7 @@ void func_550(int iParam0)//Position - 0x3EC32
 			break;
 		
 		case 203:
-			StringCopy(&Var2, "TORSO_P1_19_11", 16);
+			StringCopy(&Var2, "TORSO_P1_19_11" /* GXT: Russet Striped Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 11;
 			iVar1 = 480;
@@ -50652,7 +50652,7 @@ void func_550(int iParam0)//Position - 0x3EC32
 			break;
 		
 		case 204:
-			StringCopy(&Var2, "TORSO_P1_19_12", 16);
+			StringCopy(&Var2, "TORSO_P1_19_12" /* GXT: Sea Green Plaid Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 12;
 			iVar1 = 520;
@@ -50660,7 +50660,7 @@ void func_550(int iParam0)//Position - 0x3EC32
 			break;
 		
 		case 205:
-			StringCopy(&Var2, "TORSO_P1_19_13", 16);
+			StringCopy(&Var2, "TORSO_P1_19_13" /* GXT: Navy Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 13;
 			iVar1 = 520;
@@ -50668,7 +50668,7 @@ void func_550(int iParam0)//Position - 0x3EC32
 			break;
 		
 		case 206:
-			StringCopy(&Var2, "TORSO_P1_19_14", 16);
+			StringCopy(&Var2, "TORSO_P1_19_14" /* GXT: Brown Check Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 14;
 			iVar1 = 520;
@@ -50676,7 +50676,7 @@ void func_550(int iParam0)//Position - 0x3EC32
 			break;
 		
 		case 207:
-			StringCopy(&Var2, "TORSO_P1_19_15", 16);
+			StringCopy(&Var2, "TORSO_P1_19_15" /* GXT: Sand Check Shirt */, 16);
 			iVar3 = 19;
 			iVar4 = 15;
 			iVar1 = 440;
@@ -50692,105 +50692,105 @@ void func_550(int iParam0)//Position - 0x3EC32
 			break;
 		
 		case 209:
-			StringCopy(&Var2, "TORSO_P1_21_0", 16);
+			StringCopy(&Var2, "TORSO_P1_21_0" /* GXT: Black Jacket */, 16);
 			iVar3 = 21;
 			iVar4 = 0;
 			iVar1 = 220;
 			break;
 		
 		case 210:
-			StringCopy(&Var2, "TORSO_P1_21_1", 16);
+			StringCopy(&Var2, "TORSO_P1_21_1" /* GXT: Sand Jacket */, 16);
 			iVar3 = 21;
 			iVar4 = 1;
 			iVar1 = 200;
 			break;
 		
 		case 211:
-			StringCopy(&Var2, "TORSO_P1_21_2", 16);
+			StringCopy(&Var2, "TORSO_P1_21_2" /* GXT: Teal Jacket */, 16);
 			iVar3 = 21;
 			iVar4 = 2;
 			iVar1 = 240;
 			break;
 		
 		case 212:
-			StringCopy(&Var2, "TORSO_P1_21_3", 16);
+			StringCopy(&Var2, "TORSO_P1_21_3" /* GXT: Gray Jacket */, 16);
 			iVar3 = 21;
 			iVar4 = 3;
 			iVar1 = 240;
 			break;
 		
 		case 213:
-			StringCopy(&Var2, "TORSO_P1_21_4", 16);
+			StringCopy(&Var2, "TORSO_P1_21_4" /* GXT: Gray Three-Way Jacket */, 16);
 			iVar3 = 21;
 			iVar4 = 4;
 			iVar1 = 260;
 			break;
 		
 		case 214:
-			StringCopy(&Var2, "TORSO_P1_21_5", 16);
+			StringCopy(&Var2, "TORSO_P1_21_5" /* GXT: Red Accent Jacket */, 16);
 			iVar3 = 21;
 			iVar4 = 5;
 			iVar1 = 275;
 			break;
 		
 		case 215:
-			StringCopy(&Var2, "TORSO_P1_21_6", 16);
+			StringCopy(&Var2, "TORSO_P1_21_6" /* GXT: Aqua Accent Jacket */, 16);
 			iVar3 = 21;
 			iVar4 = 6;
 			iVar1 = 275;
 			break;
 		
 		case 216:
-			StringCopy(&Var2, "TORSO_P1_21_7", 16);
+			StringCopy(&Var2, "TORSO_P1_21_7" /* GXT: Brown Two-Tone Jacket */, 16);
 			iVar3 = 21;
 			iVar4 = 7;
 			iVar1 = 280;
 			break;
 		
 		case 217:
-			StringCopy(&Var2, "TORSO_P1_21_8", 16);
+			StringCopy(&Var2, "TORSO_P1_21_8" /* GXT: White Jacket */, 16);
 			iVar3 = 21;
 			iVar4 = 8;
 			iVar1 = 280;
 			break;
 		
 		case 218:
-			StringCopy(&Var2, "TORSO_P1_21_9", 16);
+			StringCopy(&Var2, "TORSO_P1_21_9" /* GXT: Tan Two-Tone Jacket */, 16);
 			iVar3 = 21;
 			iVar4 = 9;
 			iVar1 = 280;
 			break;
 		
 		case 219:
-			StringCopy(&Var2, "TORSO_P1_21_10", 16);
+			StringCopy(&Var2, "TORSO_P1_21_10" /* GXT: Red Jacket */, 16);
 			iVar3 = 21;
 			iVar4 = 10;
 			iVar1 = 280;
 			break;
 		
 		case 220:
-			StringCopy(&Var2, "TORSO_P1_21_11", 16);
+			StringCopy(&Var2, "TORSO_P1_21_11" /* GXT: Olive Two-Tone Jacket */, 16);
 			iVar3 = 21;
 			iVar4 = 11;
 			iVar1 = 280;
 			break;
 		
 		case 221:
-			StringCopy(&Var2, "TORSO_P1_21_12", 16);
+			StringCopy(&Var2, "TORSO_P1_21_12" /* GXT: Three-Way Jacket */, 16);
 			iVar3 = 21;
 			iVar4 = 12;
 			iVar1 = 280;
 			break;
 		
 		case 222:
-			StringCopy(&Var2, "TORSO_P1_21_13", 16);
+			StringCopy(&Var2, "TORSO_P1_21_13" /* GXT: Ash Two-Tone Jacket */, 16);
 			iVar3 = 21;
 			iVar4 = 13;
 			iVar1 = 280;
 			break;
 		
 		case 223:
-			StringCopy(&Var2, "TORSO_P1_22_0", 16);
+			StringCopy(&Var2, "TORSO_P1_22_0" /* GXT: Navy Peacoat */, 16);
 			iVar3 = 22;
 			iVar4 = 0;
 			iVar1 = 3100;
@@ -50798,7 +50798,7 @@ void func_550(int iParam0)//Position - 0x3EC32
 			break;
 		
 		case 224:
-			StringCopy(&Var2, "TORSO_P1_22_1", 16);
+			StringCopy(&Var2, "TORSO_P1_22_1" /* GXT: Gray Peacoat */, 16);
 			iVar3 = 22;
 			iVar4 = 1;
 			iVar1 = 2800;
@@ -50806,7 +50806,7 @@ void func_550(int iParam0)//Position - 0x3EC32
 			break;
 		
 		case 225:
-			StringCopy(&Var2, "TORSO_P1_22_2", 16);
+			StringCopy(&Var2, "TORSO_P1_22_2" /* GXT: Brown Peacoat */, 16);
 			iVar3 = 22;
 			iVar4 = 2;
 			iVar1 = 2500;
@@ -50814,7 +50814,7 @@ void func_550(int iParam0)//Position - 0x3EC32
 			break;
 		
 		case 226:
-			StringCopy(&Var2, "TORSO_P1_22_3", 16);
+			StringCopy(&Var2, "TORSO_P1_22_3" /* GXT: Black Peacoat */, 16);
 			iVar3 = 22;
 			iVar4 = 3;
 			iVar1 = 3000;
@@ -50850,110 +50850,110 @@ void func_551(int iParam0)//Position - 0x3FA21
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var2, "TORSO_P1_0_0", 16);
+			StringCopy(&Var2, "TORSO_P1_0_0" /* GXT: White Tank Top */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 1:
-			StringCopy(&Var2, "TORSO_P1_0_1", 16);
+			StringCopy(&Var2, "TORSO_P1_0_1" /* GXT: Black Tank Top */, 16);
 			iVar3 = 0;
 			iVar4 = 1;
 			break;
 		
 		case 2:
-			StringCopy(&Var2, "TORSO_P1_0_2", 16);
+			StringCopy(&Var2, "TORSO_P1_0_2" /* GXT: Gray Tank Top */, 16);
 			iVar3 = 0;
 			iVar4 = 2;
 			iVar1 = 180;
 			break;
 		
 		case 3:
-			StringCopy(&Var2, "TORSO_P1_0_3", 16);
+			StringCopy(&Var2, "TORSO_P1_0_3" /* GXT: Feud Green Tank Top */, 16);
 			iVar3 = 0;
 			iVar4 = 3;
 			iVar1 = 22;
 			break;
 		
 		case 4:
-			StringCopy(&Var2, "TORSO_P1_0_4", 16);
+			StringCopy(&Var2, "TORSO_P1_0_4" /* GXT: Fruntalot Jade Tank Top */, 16);
 			iVar3 = 0;
 			iVar4 = 4;
 			iVar1 = 20;
 			break;
 		
 		case 5:
-			StringCopy(&Var2, "TORSO_P1_0_5", 16);
+			StringCopy(&Var2, "TORSO_P1_0_5" /* GXT: Fruntalot Brown Tank Top */, 16);
 			iVar3 = 0;
 			iVar4 = 5;
 			iVar1 = 18;
 			break;
 		
 		case 6:
-			StringCopy(&Var2, "TORSO_P1_0_6", 16);
+			StringCopy(&Var2, "TORSO_P1_0_6" /* GXT: Broker Blue Tank Top */, 16);
 			iVar3 = 0;
 			iVar4 = 6;
 			iVar1 = 19;
 			break;
 		
 		case 7:
-			StringCopy(&Var2, "TORSO_P1_0_7", 16);
+			StringCopy(&Var2, "TORSO_P1_0_7" /* GXT: Kingz Green Tank Top */, 16);
 			iVar3 = 0;
 			iVar4 = 7;
 			iVar1 = 22;
 			break;
 		
 		case 8:
-			StringCopy(&Var2, "TORSO_P1_0_8", 16);
+			StringCopy(&Var2, "TORSO_P1_0_8" /* GXT: Broker Gray Tank Top */, 16);
 			iVar3 = 0;
 			iVar4 = 8;
 			iVar1 = 20;
 			break;
 		
 		case 9:
-			StringCopy(&Var2, "TORSO_P1_0_9", 16);
+			StringCopy(&Var2, "TORSO_P1_0_9" /* GXT: Harsh Souls Tank Top */, 16);
 			iVar3 = 0;
 			iVar4 = 9;
 			iVar1 = 19;
 			break;
 		
 		case 10:
-			StringCopy(&Var2, "TORSO_P1_0_10", 16);
+			StringCopy(&Var2, "TORSO_P1_0_10" /* GXT: Sweatbox Tank Top */, 16);
 			iVar3 = 0;
 			iVar4 = 10;
 			iVar1 = 19;
 			break;
 		
 		case 11:
-			StringCopy(&Var2, "TORSO_P1_0_11", 16);
+			StringCopy(&Var2, "TORSO_P1_0_11" /* GXT: White Ringer Tank Top */, 16);
 			iVar3 = 0;
 			iVar4 = 11;
 			iVar1 = 18;
 			break;
 		
 		case 12:
-			StringCopy(&Var2, "TORSO_P1_0_12", 16);
+			StringCopy(&Var2, "TORSO_P1_0_12" /* GXT: Rearwall Tank Top */, 16);
 			iVar3 = 0;
 			iVar4 = 12;
 			iVar1 = 20;
 			break;
 		
 		case 13:
-			StringCopy(&Var2, "TORSO_P1_0_13", 16);
+			StringCopy(&Var2, "TORSO_P1_0_13" /* GXT: Feud 3 Tank Top */, 16);
 			iVar3 = 0;
 			iVar4 = 13;
 			iVar1 = 22;
 			break;
 		
 		case 14:
-			StringCopy(&Var2, "TORSO_P1_0_14", 16);
+			StringCopy(&Var2, "TORSO_P1_0_14" /* GXT: Kingz Charcoal Tank Top */, 16);
 			iVar3 = 0;
 			iVar4 = 14;
 			iVar1 = 19;
 			break;
 		
 		case 15:
-			StringCopy(&Var2, "TORSO_P1_0_15", 16);
+			StringCopy(&Var2, "TORSO_P1_0_15" /* GXT: Feud White Tank Top */, 16);
 			iVar3 = 0;
 			iVar4 = 15;
 			iVar1 = 22;
@@ -51008,7 +51008,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 22:
-			StringCopy(&Var2, "TORSO_P1_2_0", 16);
+			StringCopy(&Var2, "TORSO_P1_2_0" /* GXT: White Tuxedo Jacket */, 16);
 			iVar3 = 2;
 			iVar4 = 0;
 			bVar0 = true;
@@ -51024,7 +51024,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 24:
-			StringCopy(&Var2, "TORSO_P1_4_0", 16);
+			StringCopy(&Var2, "TORSO_P1_4_0" /* GXT: White OG T-Shirt */, 16);
 			iVar3 = 4;
 			iVar4 = 0;
 			iVar1 = 20;
@@ -51032,7 +51032,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 25:
-			StringCopy(&Var2, "TORSO_P1_4_1", 16);
+			StringCopy(&Var2, "TORSO_P1_4_1" /* GXT: Black OG T-Shirt */, 16);
 			iVar3 = 4;
 			iVar4 = 1;
 			iVar1 = 22;
@@ -51040,7 +51040,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 26:
-			StringCopy(&Var2, "TORSO_P1_4_2", 16);
+			StringCopy(&Var2, "TORSO_P1_4_2" /* GXT: Ash OG T-Shirt */, 16);
 			iVar3 = 4;
 			iVar4 = 2;
 			iVar1 = 20;
@@ -51048,7 +51048,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 27:
-			StringCopy(&Var2, "TORSO_P1_4_3", 16);
+			StringCopy(&Var2, "TORSO_P1_4_3" /* GXT: LC Swingers OG T-Shirt */, 16);
 			iVar3 = 4;
 			iVar4 = 3;
 			iVar1 = 25;
@@ -51056,7 +51056,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 28:
-			StringCopy(&Var2, "TORSO_P1_4_4", 16);
+			StringCopy(&Var2, "TORSO_P1_4_4" /* GXT: Corkers Red OG T-Shirt */, 16);
 			iVar3 = 4;
 			iVar4 = 4;
 			iVar1 = 23;
@@ -51064,7 +51064,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 29:
-			StringCopy(&Var2, "TORSO_P1_4_5", 16);
+			StringCopy(&Var2, "TORSO_P1_4_5" /* GXT: Corkers Green OG T-Shirt */, 16);
 			iVar3 = 4;
 			iVar4 = 5;
 			iVar1 = 25;
@@ -51072,7 +51072,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 30:
-			StringCopy(&Var2, "TORSO_P1_4_6", 16);
+			StringCopy(&Var2, "TORSO_P1_4_6" /* GXT: Uptown Riders OG T-Shirt */, 16);
 			iVar3 = 4;
 			iVar4 = 6;
 			iVar1 = 28;
@@ -51080,7 +51080,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 31:
-			StringCopy(&Var2, "TORSO_P1_4_7", 16);
+			StringCopy(&Var2, "TORSO_P1_4_7" /* GXT: Feud White OG T-Shirt */, 16);
 			iVar3 = 4;
 			iVar4 = 7;
 			iVar1 = 26;
@@ -51088,7 +51088,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 32:
-			StringCopy(&Var2, "TORSO_P1_4_8", 16);
+			StringCopy(&Var2, "TORSO_P1_4_8" /* GXT: Salamanders OG T-Shirt */, 16);
 			iVar3 = 4;
 			iVar4 = 8;
 			iVar1 = 24;
@@ -51096,7 +51096,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 33:
-			StringCopy(&Var2, "TORSO_P1_4_9", 16);
+			StringCopy(&Var2, "TORSO_P1_4_9" /* GXT: LC Rampage OG T-Shirt */, 16);
 			iVar3 = 4;
 			iVar4 = 9;
 			iVar1 = 27;
@@ -51104,7 +51104,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 34:
-			StringCopy(&Var2, "TORSO_P1_4_10", 16);
+			StringCopy(&Var2, "TORSO_P1_4_10" /* GXT: Dust Devils OG T-Shirt */, 16);
 			iVar3 = 4;
 			iVar4 = 10;
 			iVar1 = 29;
@@ -51112,7 +51112,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 35:
-			StringCopy(&Var2, "TORSO_P1_4_11", 16);
+			StringCopy(&Var2, "TORSO_P1_4_11" /* GXT: LS Gray OG T-Shirt */, 16);
 			iVar3 = 4;
 			iVar4 = 11;
 			iVar1 = 28;
@@ -51120,7 +51120,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 36:
-			StringCopy(&Var2, "TORSO_P1_4_12", 16);
+			StringCopy(&Var2, "TORSO_P1_4_12" /* GXT: Los Santos Black OG T-Shirt */, 16);
 			iVar3 = 4;
 			iVar4 = 12;
 			iVar1 = 25;
@@ -51128,7 +51128,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 37:
-			StringCopy(&Var2, "TORSO_P1_4_13", 16);
+			StringCopy(&Var2, "TORSO_P1_4_13" /* GXT: Los Santos White OG T-Shirt */, 16);
 			iVar3 = 4;
 			iVar4 = 13;
 			iVar1 = 22;
@@ -51136,7 +51136,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 38:
-			StringCopy(&Var2, "TORSO_P1_4_14", 16);
+			StringCopy(&Var2, "TORSO_P1_4_14" /* GXT: Pounders OG T-Shirt */, 16);
 			iVar3 = 4;
 			iVar4 = 14;
 			iVar1 = 27;
@@ -51144,7 +51144,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 39:
-			StringCopy(&Var2, "TORSO_P1_4_15", 16);
+			StringCopy(&Var2, "TORSO_P1_4_15" /* GXT: Feud Black OG T-Shirt */, 16);
 			iVar3 = 4;
 			iVar4 = 15;
 			iVar1 = 29;
@@ -51160,14 +51160,14 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 41:
-			StringCopy(&Var2, "TORSO_P1_6_0", 16);
+			StringCopy(&Var2, "TORSO_P1_6_0" /* GXT: Pine Striped Sweater */, 16);
 			iVar3 = 6;
 			iVar4 = 0;
 			iVar6 = 3;
 			break;
 		
 		case 42:
-			StringCopy(&Var2, "TORSO_P1_6_1", 16);
+			StringCopy(&Var2, "TORSO_P1_6_1" /* GXT: Yellow Sweater */, 16);
 			iVar3 = 6;
 			iVar4 = 1;
 			iVar1 = 1270;
@@ -51175,7 +51175,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 43:
-			StringCopy(&Var2, "TORSO_P1_6_2", 16);
+			StringCopy(&Var2, "TORSO_P1_6_2" /* GXT: Blue Sweater */, 16);
 			iVar3 = 6;
 			iVar4 = 2;
 			iVar1 = 1270;
@@ -51183,7 +51183,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 44:
-			StringCopy(&Var2, "TORSO_P1_6_3", 16);
+			StringCopy(&Var2, "TORSO_P1_6_3" /* GXT: Sand Striped Sweater */, 16);
 			iVar3 = 6;
 			iVar4 = 3;
 			iVar1 = 1270;
@@ -51191,7 +51191,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 45:
-			StringCopy(&Var2, "TORSO_P1_6_4", 16);
+			StringCopy(&Var2, "TORSO_P1_6_4" /* GXT: Silver Sweater */, 16);
 			iVar3 = 6;
 			iVar4 = 4;
 			iVar1 = 1090;
@@ -51199,7 +51199,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 46:
-			StringCopy(&Var2, "TORSO_P1_6_5", 16);
+			StringCopy(&Var2, "TORSO_P1_6_5" /* GXT: Gray Sweater */, 16);
 			iVar3 = 6;
 			iVar4 = 5;
 			iVar1 = 1090;
@@ -51207,7 +51207,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 47:
-			StringCopy(&Var2, "TORSO_P1_6_6", 16);
+			StringCopy(&Var2, "TORSO_P1_6_6" /* GXT: Navy Argyle Sweater */, 16);
 			iVar3 = 6;
 			iVar4 = 6;
 			iVar1 = 1120;
@@ -51215,7 +51215,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 48:
-			StringCopy(&Var2, "TORSO_P1_6_7", 16);
+			StringCopy(&Var2, "TORSO_P1_6_7" /* GXT: Sand Sweater */, 16);
 			iVar3 = 6;
 			iVar4 = 7;
 			iVar1 = 1120;
@@ -51223,7 +51223,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 49:
-			StringCopy(&Var2, "TORSO_P1_6_8", 16);
+			StringCopy(&Var2, "TORSO_P1_6_8" /* GXT: Salmon Pink Sweater */, 16);
 			iVar3 = 6;
 			iVar4 = 8;
 			iVar1 = 1290;
@@ -51231,7 +51231,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 50:
-			StringCopy(&Var2, "TORSO_P1_6_9", 16);
+			StringCopy(&Var2, "TORSO_P1_6_9" /* GXT: Turquoise Sweater */, 16);
 			iVar3 = 6;
 			iVar4 = 9;
 			iVar1 = 1290;
@@ -51239,7 +51239,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 51:
-			StringCopy(&Var2, "TORSO_P1_6_10", 16);
+			StringCopy(&Var2, "TORSO_P1_6_10" /* GXT: Green Sweater */, 16);
 			iVar3 = 6;
 			iVar4 = 10;
 			iVar1 = 1320;
@@ -51247,7 +51247,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 52:
-			StringCopy(&Var2, "TORSO_P1_6_11", 16);
+			StringCopy(&Var2, "TORSO_P1_6_11" /* GXT: Amethyst Sweater */, 16);
 			iVar3 = 6;
 			iVar4 = 11;
 			iVar1 = 1320;
@@ -51255,7 +51255,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 53:
-			StringCopy(&Var2, "TORSO_P1_6_12", 16);
+			StringCopy(&Var2, "TORSO_P1_6_12" /* GXT: Yellow Argyle Sweater */, 16);
 			iVar3 = 6;
 			iVar4 = 12;
 			iVar1 = 1590;
@@ -51263,7 +51263,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 54:
-			StringCopy(&Var2, "TORSO_P1_6_13", 16);
+			StringCopy(&Var2, "TORSO_P1_6_13" /* GXT: Gray Two-Tone Sweater */, 16);
 			iVar3 = 6;
 			iVar4 = 13;
 			iVar1 = 1590;
@@ -51271,7 +51271,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 55:
-			StringCopy(&Var2, "TORSO_P1_6_14", 16);
+			StringCopy(&Var2, "TORSO_P1_6_14" /* GXT: Sand Argyle Sweater */, 16);
 			iVar3 = 6;
 			iVar4 = 14;
 			iVar1 = 1590;
@@ -51279,7 +51279,7 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 56:
-			StringCopy(&Var2, "TORSO_P1_6_15", 16);
+			StringCopy(&Var2, "TORSO_P1_6_15" /* GXT: Charcoal Sweater */, 16);
 			iVar3 = 6;
 			iVar4 = 15;
 			iVar1 = 1320;
@@ -51287,220 +51287,220 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 57:
-			StringCopy(&Var2, "TORSO_P1_7_0", 16);
+			StringCopy(&Var2, "TORSO_P1_7_0" /* GXT: Ash Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 0;
 			iVar1 = 98;
 			break;
 		
 		case 58:
-			StringCopy(&Var2, "TORSO_P1_7_1", 16);
+			StringCopy(&Var2, "TORSO_P1_7_1" /* GXT: Gray Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 1;
 			iVar1 = 98;
 			break;
 		
 		case 59:
-			StringCopy(&Var2, "TORSO_P1_7_2", 16);
+			StringCopy(&Var2, "TORSO_P1_7_2" /* GXT: Black Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 2;
 			iVar1 = 110;
 			break;
 		
 		case 60:
-			StringCopy(&Var2, "TORSO_P1_7_3", 16);
+			StringCopy(&Var2, "TORSO_P1_7_3" /* GXT: Silver Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 3;
 			iVar1 = 110;
 			break;
 		
 		case 61:
-			StringCopy(&Var2, "TORSO_P1_7_4", 16);
+			StringCopy(&Var2, "TORSO_P1_7_4" /* GXT: White Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 4;
 			iVar1 = 118;
 			break;
 		
 		case 62:
-			StringCopy(&Var2, "TORSO_P1_7_5", 16);
+			StringCopy(&Var2, "TORSO_P1_7_5" /* GXT: Olive Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 5;
 			iVar1 = 120;
 			break;
 		
 		case 63:
-			StringCopy(&Var2, "TORSO_P1_7_6", 16);
+			StringCopy(&Var2, "TORSO_P1_7_6" /* GXT: Navy Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 6;
 			iVar1 = 120;
 			break;
 		
 		case 64:
-			StringCopy(&Var2, "TORSO_P1_7_7", 16);
+			StringCopy(&Var2, "TORSO_P1_7_7" /* GXT: Red Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 7;
 			iVar1 = 129;
 			break;
 		
 		case 65:
-			StringCopy(&Var2, "TORSO_P1_7_8", 16);
+			StringCopy(&Var2, "TORSO_P1_7_8" /* GXT: Tan Check Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 8;
 			iVar1 = 125;
 			break;
 		
 		case 66:
-			StringCopy(&Var2, "TORSO_P1_7_9", 16);
+			StringCopy(&Var2, "TORSO_P1_7_9" /* GXT: Beige Gingham Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 9;
 			iVar1 = 125;
 			break;
 		
 		case 67:
-			StringCopy(&Var2, "TORSO_P1_7_10", 16);
+			StringCopy(&Var2, "TORSO_P1_7_10" /* GXT: Gray Gingham Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 10;
 			iVar1 = 129;
 			break;
 		
 		case 68:
-			StringCopy(&Var2, "TORSO_P1_7_11", 16);
+			StringCopy(&Var2, "TORSO_P1_7_11" /* GXT: Gray Check Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 11;
 			iVar1 = 129;
 			break;
 		
 		case 69:
-			StringCopy(&Var2, "TORSO_P1_7_12", 16);
+			StringCopy(&Var2, "TORSO_P1_7_12" /* GXT: Blue Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 12;
 			iVar1 = 135;
 			break;
 		
 		case 70:
-			StringCopy(&Var2, "TORSO_P1_7_13", 16);
+			StringCopy(&Var2, "TORSO_P1_7_13" /* GXT: Off-White Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 13;
 			iVar1 = 139;
 			break;
 		
 		case 71:
-			StringCopy(&Var2, "TORSO_P1_7_14", 16);
+			StringCopy(&Var2, "TORSO_P1_7_14" /* GXT: Pastel Check Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 14;
 			iVar1 = 145;
 			break;
 		
 		case 72:
-			StringCopy(&Var2, "TORSO_P1_7_15", 16);
+			StringCopy(&Var2, "TORSO_P1_7_15" /* GXT: Fruity Check Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 15;
 			iVar1 = 145;
 			break;
 		
 		case 73:
-			StringCopy(&Var2, "TORSO_P1_8_0", 16);
+			StringCopy(&Var2, "TORSO_P1_8_0" /* GXT: Blue Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 0;
 			break;
 		
 		case 74:
-			StringCopy(&Var2, "TORSO_P1_8_1", 16);
+			StringCopy(&Var2, "TORSO_P1_8_1" /* GXT: Yellow Check Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 1;
 			break;
 		
 		case 75:
-			StringCopy(&Var2, "TORSO_P1_8_2", 16);
+			StringCopy(&Var2, "TORSO_P1_8_2" /* GXT: Off-White Striped Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 2;
 			break;
 		
 		case 76:
-			StringCopy(&Var2, "TORSO_P1_8_3", 16);
+			StringCopy(&Var2, "TORSO_P1_8_3" /* GXT: Off-White Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 3;
 			break;
 		
 		case 77:
-			StringCopy(&Var2, "TORSO_P1_8_4", 16);
+			StringCopy(&Var2, "TORSO_P1_8_4" /* GXT: Red Check Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 4;
 			iVar1 = 30;
 			break;
 		
 		case 78:
-			StringCopy(&Var2, "TORSO_P1_8_5", 16);
+			StringCopy(&Var2, "TORSO_P1_8_5" /* GXT: Charcoal Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 5;
 			iVar1 = 38;
 			break;
 		
 		case 79:
-			StringCopy(&Var2, "TORSO_P1_8_6", 16);
+			StringCopy(&Var2, "TORSO_P1_8_6" /* GXT: Blue Check Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 6;
 			iVar1 = 32;
 			break;
 		
 		case 80:
-			StringCopy(&Var2, "TORSO_P1_8_7", 16);
+			StringCopy(&Var2, "TORSO_P1_8_7" /* GXT: Gingham Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 7;
 			iVar1 = 30;
 			break;
 		
 		case 81:
-			StringCopy(&Var2, "TORSO_P1_8_8", 16);
+			StringCopy(&Var2, "TORSO_P1_8_8" /* GXT: Aqua Check Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 8;
 			iVar1 = 33;
 			break;
 		
 		case 82:
-			StringCopy(&Var2, "TORSO_P1_8_9", 16);
+			StringCopy(&Var2, "TORSO_P1_8_9" /* GXT: Orange Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 9;
 			iVar1 = 35;
 			break;
 		
 		case 83:
-			StringCopy(&Var2, "TORSO_P1_8_10", 16);
+			StringCopy(&Var2, "TORSO_P1_8_10" /* GXT: Mint Check Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 10;
 			iVar1 = 35;
 			break;
 		
 		case 84:
-			StringCopy(&Var2, "TORSO_P1_8_11", 16);
+			StringCopy(&Var2, "TORSO_P1_8_11" /* GXT: Dark Gray Check Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 11;
 			iVar1 = 38;
 			break;
 		
 		case 85:
-			StringCopy(&Var2, "TORSO_P1_8_12", 16);
+			StringCopy(&Var2, "TORSO_P1_8_12" /* GXT: Purple Check Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 12;
 			iVar1 = 33;
 			break;
 		
 		case 86:
-			StringCopy(&Var2, "TORSO_P1_8_13", 16);
+			StringCopy(&Var2, "TORSO_P1_8_13" /* GXT: Olive Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 13;
 			iVar1 = 35;
 			break;
 		
 		case 87:
-			StringCopy(&Var2, "TORSO_P1_8_14", 16);
+			StringCopy(&Var2, "TORSO_P1_8_14" /* GXT: Cream Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 14;
 			iVar1 = 38;
 			break;
 		
 		case 88:
-			StringCopy(&Var2, "TORSO_P1_8_15", 16);
+			StringCopy(&Var2, "TORSO_P1_8_15" /* GXT: Fruity Check Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 15;
 			iVar1 = 32;
@@ -51521,110 +51521,110 @@ void func_551(int iParam0)//Position - 0x3FA21
 			break;
 		
 		case 91:
-			StringCopy(&Var2, "TORSO_P1_11_0", 16);
+			StringCopy(&Var2, "TORSO_P1_11_0" /* GXT: White Longsleeve */, 16);
 			iVar3 = 11;
 			iVar4 = 0;
 			break;
 		
 		case 92:
-			StringCopy(&Var2, "TORSO_P1_11_1", 16);
+			StringCopy(&Var2, "TORSO_P1_11_1" /* GXT: Gray Longsleeve */, 16);
 			iVar3 = 11;
 			iVar4 = 1;
 			iVar1 = 59;
 			break;
 		
 		case 93:
-			StringCopy(&Var2, "TORSO_P1_11_2", 16);
+			StringCopy(&Var2, "TORSO_P1_11_2" /* GXT: Black Longsleeve */, 16);
 			iVar3 = 11;
 			iVar4 = 2;
 			break;
 		
 		case 94:
-			StringCopy(&Var2, "TORSO_P1_11_3", 16);
+			StringCopy(&Var2, "TORSO_P1_11_3" /* GXT: Ten Off Yellow Longsleeve */, 16);
 			iVar3 = 11;
 			iVar4 = 3;
 			iVar1 = 25;
 			break;
 		
 		case 95:
-			StringCopy(&Var2, "TORSO_P1_11_4", 16);
+			StringCopy(&Var2, "TORSO_P1_11_4" /* GXT: Kingz Of Los Santos Longsleeve */, 16);
 			iVar3 = 11;
 			iVar4 = 4;
 			iVar1 = 29;
 			break;
 		
 		case 96:
-			StringCopy(&Var2, "TORSO_P1_11_5", 16);
+			StringCopy(&Var2, "TORSO_P1_11_5" /* GXT: Yeti Rainbow Longsleeve */, 16);
 			iVar3 = 11;
 			iVar4 = 5;
 			iVar1 = 27;
 			break;
 		
 		case 97:
-			StringCopy(&Var2, "TORSO_P1_11_6", 16);
+			StringCopy(&Var2, "TORSO_P1_11_6" /* GXT: Ten Off Red Longsleeve */, 16);
 			iVar3 = 11;
 			iVar4 = 6;
 			iVar1 = 25;
 			break;
 		
 		case 98:
-			StringCopy(&Var2, "TORSO_P1_11_7", 16);
+			StringCopy(&Var2, "TORSO_P1_11_7" /* GXT: Trey Baker Longsleeve */, 16);
 			iVar3 = 11;
 			iVar4 = 7;
 			iVar1 = 27;
 			break;
 		
 		case 99:
-			StringCopy(&Var2, "TORSO_P1_11_8", 16);
+			StringCopy(&Var2, "TORSO_P1_11_8" /* GXT: Stank Striped Longsleeve */, 16);
 			iVar3 = 11;
 			iVar4 = 8;
 			iVar1 = 28;
 			break;
 		
 		case 100:
-			StringCopy(&Var2, "TORSO_P1_11_9", 16);
+			StringCopy(&Var2, "TORSO_P1_11_9" /* GXT: Feud Olive Longsleeve */, 16);
 			iVar3 = 11;
 			iVar4 = 9;
 			iVar1 = 30;
 			break;
 		
 		case 101:
-			StringCopy(&Var2, "TORSO_P1_11_10", 16);
+			StringCopy(&Var2, "TORSO_P1_11_10" /* GXT: Yeti Gray Longsleeve */, 16);
 			iVar3 = 11;
 			iVar4 = 10;
 			iVar1 = 29;
 			break;
 		
 		case 102:
-			StringCopy(&Var2, "TORSO_P1_11_11", 16);
+			StringCopy(&Var2, "TORSO_P1_11_11" /* GXT: Yogarishima Longsleeve */, 16);
 			iVar3 = 11;
 			iVar4 = 11;
 			iVar1 = 27;
 			break;
 		
 		case 103:
-			StringCopy(&Var2, "TORSO_P1_11_12", 16);
+			StringCopy(&Var2, "TORSO_P1_11_12" /* GXT: Yeti Camo Longsleeve */, 16);
 			iVar3 = 11;
 			iVar4 = 12;
 			iVar1 = 29;
 			break;
 		
 		case 104:
-			StringCopy(&Var2, "TORSO_P1_11_13", 16);
+			StringCopy(&Var2, "TORSO_P1_11_13" /* GXT: Crevis White Longsleeve */, 16);
 			iVar3 = 11;
 			iVar4 = 13;
 			iVar1 = 32;
 			break;
 		
 		case 105:
-			StringCopy(&Var2, "TORSO_P1_11_14", 16);
+			StringCopy(&Var2, "TORSO_P1_11_14" /* GXT: Yeti Blue Longsleeve */, 16);
 			iVar3 = 11;
 			iVar4 = 14;
 			iVar1 = 30;
 			break;
 		
 		case 106:
-			StringCopy(&Var2, "TORSO_P1_11_15", 16);
+			StringCopy(&Var2, "TORSO_P1_11_15" /* GXT: Uptown Ryders Longsleeve */, 16);
 			iVar3 = 11;
 			iVar4 = 15;
 			iVar1 = 28;
@@ -51659,136 +51659,136 @@ void func_552(int iParam0)//Position - 0x4066B
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var2, "HAIR_P1_0_0", 16);
+			StringCopy(&Var2, "HAIR_P1_0_0" /* GXT: Fade */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 1:
-			StringCopy(&Var2, "HAIR_P1_0_1", 16);
+			StringCopy(&Var2, "HAIR_P1_0_1" /* GXT: Triple Rails */, 16);
 			iVar3 = 0;
 			iVar4 = 1;
 			break;
 		
 		case 2:
-			StringCopy(&Var2, "HAIR_P1_0_2", 16);
+			StringCopy(&Var2, "HAIR_P1_0_2" /* GXT: Side Shaded */, 16);
 			iVar3 = 0;
 			iVar4 = 2;
 			break;
 		
 		case 3:
-			StringCopy(&Var2, "HAIR_P1_0_3", 16);
+			StringCopy(&Var2, "HAIR_P1_0_3" /* GXT: Wavy Siderows */, 16);
 			iVar3 = 0;
 			iVar4 = 3;
 			iVar6 = 3;
 			break;
 		
 		case 4:
-			StringCopy(&Var2, "HAIR_P1_0_4", 16);
+			StringCopy(&Var2, "HAIR_P1_0_4" /* GXT: Snakes */, 16);
 			iVar3 = 0;
 			iVar4 = 4;
 			iVar6 = 3;
 			break;
 		
 		case 5:
-			StringCopy(&Var2, "HAIR_P1_0_5", 16);
+			StringCopy(&Var2, "HAIR_P1_0_5" /* GXT: Tramlines */, 16);
 			iVar3 = 0;
 			iVar4 = 5;
 			iVar6 = 3;
 			break;
 		
 		case 6:
-			StringCopy(&Var2, "HAIR_P1_0_6", 16);
+			StringCopy(&Var2, "HAIR_P1_0_6" /* GXT: The King Fresh */, 16);
 			iVar3 = 0;
 			iVar4 = 6;
 			iVar6 = 3;
 			break;
 		
 		case 7:
-			StringCopy(&Var2, "HAIR_P1_0_7", 16);
+			StringCopy(&Var2, "HAIR_P1_0_7" /* GXT: Star Kutz */, 16);
 			iVar3 = 0;
 			iVar4 = 7;
 			iVar6 = 3;
 			break;
 		
 		case 8:
-			StringCopy(&Var2, "HAIR_P1_0_8", 16);
+			StringCopy(&Var2, "HAIR_P1_0_8" /* GXT: Tigerized */, 16);
 			iVar3 = 0;
 			iVar4 = 8;
 			iVar6 = 3;
 			break;
 		
 		case 9:
-			StringCopy(&Var2, "HAIR_P1_0_9", 16);
+			StringCopy(&Var2, "HAIR_P1_0_9" /* GXT: Abstraction */, 16);
 			iVar3 = 0;
 			iVar4 = 9;
 			iVar6 = 3;
 			break;
 		
 		case 10:
-			StringCopy(&Var2, "HAIR_P1_0_10", 16);
+			StringCopy(&Var2, "HAIR_P1_0_10" /* GXT: Shutters */, 16);
 			iVar3 = 0;
 			iVar4 = 10;
 			iVar6 = 3;
 			break;
 		
 		case 11:
-			StringCopy(&Var2, "HAIR_P1_0_11", 16);
+			StringCopy(&Var2, "HAIR_P1_0_11" /* GXT: Berms */, 16);
 			iVar3 = 0;
 			iVar4 = 11;
 			iVar6 = 3;
 			break;
 		
 		case 12:
-			StringCopy(&Var2, "HAIR_P1_0_12", 16);
+			StringCopy(&Var2, "HAIR_P1_0_12" /* GXT: Mellowplex */, 16);
 			iVar3 = 0;
 			iVar4 = 12;
 			iVar6 = 3;
 			break;
 		
 		case 13:
-			StringCopy(&Var2, "HAIR_P1_0_13", 16);
+			StringCopy(&Var2, "HAIR_P1_0_13" /* GXT: The Feud */, 16);
 			iVar3 = 0;
 			iVar4 = 13;
 			break;
 		
 		case 14:
-			StringCopy(&Var2, "HAIR_P1_0_14", 16);
+			StringCopy(&Var2, "HAIR_P1_0_14" /* GXT: Business on Top */, 16);
 			iVar3 = 0;
 			iVar4 = 14;
 			iVar6 = 3;
 			break;
 		
 		case 15:
-			StringCopy(&Var2, "HAIR_P1_0_15", 16);
+			StringCopy(&Var2, "HAIR_P1_0_15" /* GXT: Wild Palm */, 16);
 			iVar3 = 0;
 			iVar4 = 15;
 			iVar6 = 3;
 			break;
 		
 		case 16:
-			StringCopy(&Var2, "HAIR_P1_1_0", 16);
+			StringCopy(&Var2, "HAIR_P1_1_0" /* GXT: Lo Fro */, 16);
 			iVar3 = 1;
 			iVar4 = 0;
 			iVar6 = 3;
 			break;
 		
 		case 17:
-			StringCopy(&Var2, "HAIR_P1_2_0", 16);
+			StringCopy(&Var2, "HAIR_P1_2_0" /* GXT: Blowout */, 16);
 			iVar3 = 2;
 			iVar4 = 0;
 			iVar6 = 3;
 			break;
 		
 		case 18:
-			StringCopy(&Var2, "HAIR_P1_3_0", 16);
+			StringCopy(&Var2, "HAIR_P1_3_0" /* GXT: Cornrows */, 16);
 			iVar3 = 3;
 			iVar4 = 0;
 			iVar6 = 3;
 			break;
 		
 		case 19:
-			StringCopy(&Var2, "HAIR_P1_4_0", 16);
+			StringCopy(&Var2, "HAIR_P1_4_0" /* GXT: Shape-up */, 16);
 			iVar3 = 4;
 			iVar4 = 0;
 			break;
@@ -52065,14 +52065,14 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 11:
-			StringCopy(&Var2, "PROPS_P0_H1", 16);
+			StringCopy(&Var2, "PROPS_P0_H1" /* GXT: Blue Baseball Cap */, 16);
 			iVar3 = 1;
 			iVar4 = 0;
 			iVar5 = 0;
 			break;
 		
 		case 12:
-			StringCopy(&Var2, "PROPS_P0_H2", 16);
+			StringCopy(&Var2, "PROPS_P0_H2" /* GXT: White Hockey Mask */, 16);
 			iVar3 = 2;
 			iVar4 = 0;
 			iVar1 = 320;
@@ -52200,7 +52200,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 29:
-			StringCopy(&Var2, "PROPS_P0_H12", 16);
+			StringCopy(&Var2, "PROPS_P0_H12" /* GXT: Black Knitted Hat */, 16);
 			iVar3 = 12;
 			iVar4 = 0;
 			iVar5 = 0;
@@ -52214,7 +52214,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 31:
-			StringCopy(&Var2, "PROPS_P1_H8_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H8_0" /* GXT: Green Monster Mask */, 16);
 			iVar3 = 14;
 			iVar4 = 0;
 			iVar1 = 270;
@@ -52222,7 +52222,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 32:
-			StringCopy(&Var2, "PROPS_P1_H8_1", 16);
+			StringCopy(&Var2, "PROPS_P1_H8_1" /* GXT: Red Monster Mask */, 16);
 			iVar3 = 14;
 			iVar4 = 1;
 			iVar1 = 270;
@@ -52230,7 +52230,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 33:
-			StringCopy(&Var2, "PROPS_P1_H9_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H9_0" /* GXT: Pig Mask */, 16);
 			iVar3 = 15;
 			iVar4 = 0;
 			iVar1 = 200;
@@ -52238,7 +52238,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 34:
-			StringCopy(&Var2, "PROPS_P1_H9_1", 16);
+			StringCopy(&Var2, "PROPS_P1_H9_1" /* GXT: Dark Pig Mask */, 16);
 			iVar3 = 15;
 			iVar4 = 1;
 			iVar1 = 200;
@@ -52246,7 +52246,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 35:
-			StringCopy(&Var2, "PROPS_P1_H10_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H10_0" /* GXT: Silver Skull Mask */, 16);
 			iVar3 = 16;
 			iVar4 = 0;
 			iVar1 = 350;
@@ -52254,7 +52254,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 36:
-			StringCopy(&Var2, "PROPS_P1_H10_1", 16);
+			StringCopy(&Var2, "PROPS_P1_H10_1" /* GXT: Bone Skull Mask */, 16);
 			iVar3 = 16;
 			iVar4 = 1;
 			iVar1 = 350;
@@ -52262,7 +52262,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 37:
-			StringCopy(&Var2, "PROPS_P1_H11_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H11_0" /* GXT: Space Monkey Mask */, 16);
 			iVar3 = 17;
 			iVar4 = 0;
 			iVar1 = 450;
@@ -52270,7 +52270,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 38:
-			StringCopy(&Var2, "PROPS_P1_H12_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H12_0" /* GXT: White Hockey Mask */, 16);
 			iVar3 = 18;
 			iVar4 = 0;
 			iVar1 = 500;
@@ -52278,7 +52278,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 39:
-			StringCopy(&Var2, "PROPS_P1_H12_1", 16);
+			StringCopy(&Var2, "PROPS_P1_H12_1" /* GXT: Red Hockey Mask */, 16);
 			iVar3 = 18;
 			iVar4 = 1;
 			iVar1 = 500;
@@ -52286,7 +52286,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 40:
-			StringCopy(&Var2, "PROPS_P1_H13_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H13_0" /* GXT: Ape Mask */, 16);
 			iVar3 = 19;
 			iVar4 = 0;
 			iVar1 = 50;
@@ -52294,7 +52294,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 41:
-			StringCopy(&Var2, "PROPS_P1_H13_1", 16);
+			StringCopy(&Var2, "PROPS_P1_H13_1" /* GXT: Dark Ape Mask */, 16);
 			iVar3 = 19;
 			iVar4 = 1;
 			iVar1 = 50;
@@ -52302,7 +52302,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 42:
-			StringCopy(&Var2, "PROPS_P1_H14_0", 16);
+			StringCopy(&Var2, "PROPS_P1_H14_0" /* GXT: Carnival Orange Mask */, 16);
 			iVar3 = 20;
 			iVar4 = 0;
 			iVar1 = 99;
@@ -52310,7 +52310,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 43:
-			StringCopy(&Var2, "PROPS_P1_H14_1", 16);
+			StringCopy(&Var2, "PROPS_P1_H14_1" /* GXT: Carnival White Mask */, 16);
 			iVar3 = 20;
 			iVar4 = 1;
 			iVar1 = 99;
@@ -52318,7 +52318,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 44:
-			StringCopy(&Var2, "PROPS_P1_H14_2", 16);
+			StringCopy(&Var2, "PROPS_P1_H14_2" /* GXT: Carnival Blue Mask */, 16);
 			iVar3 = 20;
 			iVar4 = 2;
 			iVar1 = 99;
@@ -52417,7 +52417,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 58:
-			StringCopy(&Var2, "PROPS_P0_E0", 16);
+			StringCopy(&Var2, "PROPS_P0_E0" /* GXT: Black-Rimmed Glasses */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 45;
@@ -52441,7 +52441,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 61:
-			StringCopy(&Var2, "PROPS_P0_E3", 16);
+			StringCopy(&Var2, "PROPS_P0_E3" /* GXT: Copper Sports Shades */, 16);
 			iVar3 = 3;
 			iVar4 = 0;
 			iVar1 = 55;
@@ -52449,7 +52449,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 62:
-			StringCopy(&Var2, "PROPS_P0_E4", 16);
+			StringCopy(&Var2, "PROPS_P0_E4" /* GXT: Enema Brown Glasses */, 16);
 			iVar3 = 4;
 			iVar4 = 0;
 			iVar1 = 58;
@@ -52457,7 +52457,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 63:
-			StringCopy(&Var2, "PROPS_P0_E4_1", 16);
+			StringCopy(&Var2, "PROPS_P0_E4_1" /* GXT: Enema Gray Glasses */, 16);
 			iVar3 = 4;
 			iVar4 = 1;
 			iVar1 = 56;
@@ -52465,7 +52465,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 64:
-			StringCopy(&Var2, "PROPS_P0_E4_2", 16);
+			StringCopy(&Var2, "PROPS_P0_E4_2" /* GXT: Enema Black Glasses */, 16);
 			iVar3 = 4;
 			iVar4 = 2;
 			iVar1 = 60;
@@ -52473,7 +52473,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 65:
-			StringCopy(&Var2, "PROPS_P0_E4_3", 16);
+			StringCopy(&Var2, "PROPS_P0_E4_3" /* GXT: Enema Tortoiseshell Glasses */, 16);
 			iVar3 = 4;
 			iVar4 = 3;
 			iVar1 = 65;
@@ -52481,7 +52481,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 66:
-			StringCopy(&Var2, "PROPS_P0_E4_4", 16);
+			StringCopy(&Var2, "PROPS_P0_E4_4" /* GXT: Enema Coffee Glasses */, 16);
 			iVar3 = 4;
 			iVar4 = 4;
 			iVar1 = 62;
@@ -52489,7 +52489,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 67:
-			StringCopy(&Var2, "PROPS_P0_E4_5", 16);
+			StringCopy(&Var2, "PROPS_P0_E4_5" /* GXT: Enema Walnut Glasses */, 16);
 			iVar3 = 4;
 			iVar4 = 5;
 			iVar1 = 65;
@@ -52497,7 +52497,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 68:
-			StringCopy(&Var2, "PROPS_P0_E4_6", 16);
+			StringCopy(&Var2, "PROPS_P0_E4_6" /* GXT: Enema Silver Accent Glasses */, 16);
 			iVar3 = 4;
 			iVar4 = 6;
 			iVar1 = 68;
@@ -52505,7 +52505,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 69:
-			StringCopy(&Var2, "PROPS_P0_E4_7", 16);
+			StringCopy(&Var2, "PROPS_P0_E4_7" /* GXT: Enema Smoke Glasses */, 16);
 			iVar3 = 4;
 			iVar4 = 7;
 			iVar1 = 68;
@@ -52513,7 +52513,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 70:
-			StringCopy(&Var2, "PROPS_P0_E5", 16);
+			StringCopy(&Var2, "PROPS_P0_E5" /* GXT: Farshtunken Gold Aviators */, 16);
 			iVar3 = 5;
 			iVar4 = 0;
 			iVar1 = 65;
@@ -52521,7 +52521,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 71:
-			StringCopy(&Var2, "PROPS_P0_E5_1", 16);
+			StringCopy(&Var2, "PROPS_P0_E5_1" /* GXT: Farshtunken Purple Aviators */, 16);
 			iVar3 = 5;
 			iVar4 = 1;
 			iVar1 = 69;
@@ -52529,7 +52529,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 72:
-			StringCopy(&Var2, "PROPS_P0_E5_2", 16);
+			StringCopy(&Var2, "PROPS_P0_E5_2" /* GXT: Farshtunken Silver Aviators */, 16);
 			iVar3 = 5;
 			iVar4 = 2;
 			iVar1 = 72;
@@ -52537,7 +52537,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 73:
-			StringCopy(&Var2, "PROPS_P0_E5_3", 16);
+			StringCopy(&Var2, "PROPS_P0_E5_3" /* GXT: Farshtunken Gray Aviators */, 16);
 			iVar3 = 5;
 			iVar4 = 3;
 			iVar1 = 70;
@@ -52545,7 +52545,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 74:
-			StringCopy(&Var2, "PROPS_P0_E5_4", 16);
+			StringCopy(&Var2, "PROPS_P0_E5_4" /* GXT: Farshtunken Blue Aviators */, 16);
 			iVar3 = 5;
 			iVar4 = 4;
 			iVar1 = 74;
@@ -52553,7 +52553,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 75:
-			StringCopy(&Var2, "PROPS_P0_E5_5", 16);
+			StringCopy(&Var2, "PROPS_P0_E5_5" /* GXT: Farshtunken Tinted Aviators */, 16);
 			iVar3 = 5;
 			iVar4 = 5;
 			iVar1 = 78;
@@ -52561,7 +52561,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 76:
-			StringCopy(&Var2, "PROPS_P0_E5_6", 16);
+			StringCopy(&Var2, "PROPS_P0_E5_6" /* GXT: Farshtunken Steel Aviators */, 16);
 			iVar3 = 5;
 			iVar4 = 6;
 			iVar1 = 82;
@@ -52569,7 +52569,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 77:
-			StringCopy(&Var2, "PROPS_P0_E5_7", 16);
+			StringCopy(&Var2, "PROPS_P0_E5_7" /* GXT: Farshtunken Sepia Aviators */, 16);
 			iVar3 = 5;
 			iVar4 = 7;
 			iVar1 = 85;
@@ -52577,7 +52577,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 78:
-			StringCopy(&Var2, "PROPS_P0_E5_8", 16);
+			StringCopy(&Var2, "PROPS_P0_E5_8" /* GXT: Farshtunken Black Aviators */, 16);
 			iVar3 = 5;
 			iVar4 = 8;
 			iVar1 = 85;
@@ -52585,14 +52585,14 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 79:
-			StringCopy(&Var2, "PROPS_P0_E5_9", 16);
+			StringCopy(&Var2, "PROPS_P0_E5_9" /* GXT: Farshtunken Smoke Aviators */, 16);
 			iVar3 = 5;
 			iVar4 = 9;
 			iVar5 = 10;
 			break;
 		
 		case 80:
-			StringCopy(&Var2, "PROPS_P0_E6", 16);
+			StringCopy(&Var2, "PROPS_P0_E6" /* GXT: Tung Charcoal Shades */, 16);
 			iVar3 = 6;
 			iVar4 = 0;
 			iVar1 = 69;
@@ -52600,7 +52600,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 81:
-			StringCopy(&Var2, "PROPS_P0_E6_1", 16);
+			StringCopy(&Var2, "PROPS_P0_E6_1" /* GXT: Tung Ash Shades */, 16);
 			iVar3 = 6;
 			iVar4 = 1;
 			iVar1 = 69;
@@ -52608,7 +52608,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 82:
-			StringCopy(&Var2, "PROPS_P0_E6_2", 16);
+			StringCopy(&Var2, "PROPS_P0_E6_2" /* GXT: Tung Gray Shades */, 16);
 			iVar3 = 6;
 			iVar4 = 2;
 			iVar1 = 69;
@@ -52616,7 +52616,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 83:
-			StringCopy(&Var2, "PROPS_P0_E6_3", 16);
+			StringCopy(&Var2, "PROPS_P0_E6_3" /* GXT: Tung Red Shades */, 16);
 			iVar3 = 6;
 			iVar4 = 3;
 			iVar1 = 69;
@@ -52624,7 +52624,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 84:
-			StringCopy(&Var2, "PROPS_P0_E6_4", 16);
+			StringCopy(&Var2, "PROPS_P0_E6_4" /* GXT: Tung Blue Shades */, 16);
 			iVar3 = 6;
 			iVar4 = 4;
 			iVar1 = 69;
@@ -52632,7 +52632,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 85:
-			StringCopy(&Var2, "PROPS_P0_E6_5", 16);
+			StringCopy(&Var2, "PROPS_P0_E6_5" /* GXT: Tung Yellow Shades */, 16);
 			iVar3 = 6;
 			iVar4 = 5;
 			iVar1 = 69;
@@ -52640,7 +52640,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 86:
-			StringCopy(&Var2, "PROPS_P0_E6_6", 16);
+			StringCopy(&Var2, "PROPS_P0_E6_6" /* GXT: Tung Black Shades */, 16);
 			iVar3 = 6;
 			iVar4 = 6;
 			iVar1 = 69;
@@ -52648,7 +52648,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 87:
-			StringCopy(&Var2, "PROPS_P0_E6_7", 16);
+			StringCopy(&Var2, "PROPS_P0_E6_7" /* GXT: Tung Rosy Shades */, 16);
 			iVar3 = 6;
 			iVar4 = 7;
 			iVar1 = 69;
@@ -52656,7 +52656,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 88:
-			StringCopy(&Var2, "PROPS_P0_E6_8", 16);
+			StringCopy(&Var2, "PROPS_P0_E6_8" /* GXT: Tung Hornet Shades */, 16);
 			iVar3 = 6;
 			iVar4 = 8;
 			iVar1 = 69;
@@ -52664,7 +52664,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 89:
-			StringCopy(&Var2, "PROPS_P0_E6_9", 16);
+			StringCopy(&Var2, "PROPS_P0_E6_9" /* GXT: Tung Two-Tone Shades */, 16);
 			iVar3 = 6;
 			iVar4 = 9;
 			iVar1 = 69;
@@ -52672,14 +52672,14 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 90:
-			StringCopy(&Var2, "PROPS_P0_E7", 16);
+			StringCopy(&Var2, "PROPS_P0_E7" /* GXT: Swimming Goggles */, 16);
 			iVar3 = 7;
 			iVar4 = 0;
 			iVar5 = 10;
 			break;
 		
 		case 91:
-			StringCopy(&Var2, "PROPS_P0_E8", 16);
+			StringCopy(&Var2, "PROPS_P0_E8" /* GXT: Rimmers Azure Aviators */, 16);
 			iVar3 = 8;
 			iVar4 = 0;
 			iVar1 = 170;
@@ -52687,7 +52687,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 92:
-			StringCopy(&Var2, "PROPS_P0_E8_1", 16);
+			StringCopy(&Var2, "PROPS_P0_E8_1" /* GXT: Rimmers Smoke Aviators */, 16);
 			iVar3 = 8;
 			iVar4 = 1;
 			iVar1 = 175;
@@ -52695,7 +52695,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 93:
-			StringCopy(&Var2, "PROPS_P0_E8_2", 16);
+			StringCopy(&Var2, "PROPS_P0_E8_2" /* GXT: Rimmers Yellow Aviators */, 16);
 			iVar3 = 8;
 			iVar4 = 2;
 			iVar1 = 180;
@@ -52703,7 +52703,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 94:
-			StringCopy(&Var2, "PROPS_P0_E8_3", 16);
+			StringCopy(&Var2, "PROPS_P0_E8_3" /* GXT: Rimmers Topaz Aviators */, 16);
 			iVar3 = 8;
 			iVar4 = 3;
 			iVar1 = 185;
@@ -52711,7 +52711,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 95:
-			StringCopy(&Var2, "PROPS_P0_E8_4", 16);
+			StringCopy(&Var2, "PROPS_P0_E8_4" /* GXT: Rimmers Tinted Aviators */, 16);
 			iVar3 = 8;
 			iVar4 = 4;
 			iVar1 = 189;
@@ -52719,7 +52719,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 96:
-			StringCopy(&Var2, "PROPS_P0_E8_5", 16);
+			StringCopy(&Var2, "PROPS_P0_E8_5" /* GXT: Rimmers Steel Aviators */, 16);
 			iVar3 = 8;
 			iVar4 = 5;
 			iVar1 = 195;
@@ -52727,7 +52727,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 97:
-			StringCopy(&Var2, "PROPS_P0_E8_6", 16);
+			StringCopy(&Var2, "PROPS_P0_E8_6" /* GXT: Rimmers Indigo Aviators */, 16);
 			iVar3 = 8;
 			iVar4 = 6;
 			iVar1 = 235;
@@ -52735,7 +52735,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 98:
-			StringCopy(&Var2, "PROPS_P0_E8_7", 16);
+			StringCopy(&Var2, "PROPS_P0_E8_7" /* GXT: Rimmers Chocolate Aviators */, 16);
 			iVar3 = 8;
 			iVar4 = 7;
 			iVar1 = 245;
@@ -52743,7 +52743,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 99:
-			StringCopy(&Var2, "PROPS_P0_E8_8", 16);
+			StringCopy(&Var2, "PROPS_P0_E8_8" /* GXT: Rimmers Sepia Aviators */, 16);
 			iVar3 = 8;
 			iVar4 = 8;
 			iVar1 = 250;
@@ -52751,7 +52751,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 100:
-			StringCopy(&Var2, "PROPS_P0_E8_9", 16);
+			StringCopy(&Var2, "PROPS_P0_E8_9" /* GXT: Rimmers Slate Aviators */, 16);
 			iVar3 = 8;
 			iVar4 = 9;
 			iVar1 = 275;
@@ -52759,7 +52759,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 101:
-			StringCopy(&Var2, "PROPS_P0_E8_10", 16);
+			StringCopy(&Var2, "PROPS_P0_E8_10" /* GXT: Rimmers Gold Aviators */, 16);
 			iVar3 = 8;
 			iVar4 = 10;
 			iVar1 = 280;
@@ -52767,7 +52767,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 102:
-			StringCopy(&Var2, "PROPS_P0_E8_11", 16);
+			StringCopy(&Var2, "PROPS_P0_E8_11" /* GXT: Rimmers Blue Aviators */, 16);
 			iVar3 = 8;
 			iVar4 = 11;
 			iVar1 = 295;
@@ -52775,7 +52775,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 103:
-			StringCopy(&Var2, "PROPS_P0_E9", 16);
+			StringCopy(&Var2, "PROPS_P0_E9" /* GXT: Hawaiian Snow Black Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 0;
 			iVar1 = 179;
@@ -52783,7 +52783,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 104:
-			StringCopy(&Var2, "PROPS_P0_E9_1", 16);
+			StringCopy(&Var2, "PROPS_P0_E9_1" /* GXT: Hawaiian Snow Charcoal Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 1;
 			iVar1 = 159;
@@ -52791,7 +52791,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 105:
-			StringCopy(&Var2, "PROPS_P0_E9_2", 16);
+			StringCopy(&Var2, "PROPS_P0_E9_2" /* GXT: Hawaiian Snow Ash Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 2;
 			iVar1 = 165;
@@ -52799,7 +52799,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 106:
-			StringCopy(&Var2, "PROPS_P0_E9_3", 16);
+			StringCopy(&Var2, "PROPS_P0_E9_3" /* GXT: Hawaiian Snow Gray Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 3;
 			iVar1 = 155;
@@ -52807,7 +52807,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 107:
-			StringCopy(&Var2, "PROPS_P0_E9_4", 16);
+			StringCopy(&Var2, "PROPS_P0_E9_4" /* GXT: Hawaiian Snow Tan Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 4;
 			iVar1 = 175;
@@ -52815,7 +52815,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 108:
-			StringCopy(&Var2, "PROPS_P0_E9_5", 16);
+			StringCopy(&Var2, "PROPS_P0_E9_5" /* GXT: Hawaiian Snow Tortoiseshell Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 5;
 			iVar1 = 185;
@@ -52823,7 +52823,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 109:
-			StringCopy(&Var2, "PROPS_P0_E9_6", 16);
+			StringCopy(&Var2, "PROPS_P0_E9_6" /* GXT: Hawaiian Snow Walnut Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 6;
 			iVar1 = 189;
@@ -52831,7 +52831,7 @@ void func_555(int iParam0)//Position - 0x40B1A
 			break;
 		
 		case 110:
-			StringCopy(&Var2, "PROPS_P0_E9_7", 16);
+			StringCopy(&Var2, "PROPS_P0_E9_7" /* GXT: Hawaiian Snow Marbled Shades */, 16);
 			iVar3 = 9;
 			iVar4 = 7;
 			iVar1 = 225;
@@ -52989,14 +52989,14 @@ void func_557(int iParam0)//Position - 0x41A1E
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var2, "OUTFIT_P0_0", 16);
+			StringCopy(&Var2, "OUTFIT_P0_0" /* GXT: Gray Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			bVar0 = true;
 			break;
 		
 		case 1:
-			StringCopy(&Var2, "OUTFIT_P0_1", 16);
+			StringCopy(&Var2, "OUTFIT_P0_1" /* GXT: Firefighter */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
@@ -53008,25 +53008,25 @@ void func_557(int iParam0)//Position - 0x41A1E
 			break;
 		
 		case 3:
-			StringCopy(&Var2, "OUTFIT_P0_4", 16);
+			StringCopy(&Var2, "OUTFIT_P0_4" /* GXT: Janitor */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 4:
-			StringCopy(&Var2, "OUTFIT_P0_7", 16);
+			StringCopy(&Var2, "OUTFIT_P0_7" /* GXT: Highway Patrol */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 5:
-			StringCopy(&Var2, "OUTFIT_P0_8", 16);
+			StringCopy(&Var2, "OUTFIT_P0_8" /* GXT: Golf */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 6:
-			StringCopy(&Var2, "OUTFIT_P0_9", 16);
+			StringCopy(&Var2, "OUTFIT_P0_9" /* GXT: Bed */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
@@ -53038,13 +53038,13 @@ void func_557(int iParam0)//Position - 0x41A1E
 			break;
 		
 		case 8:
-			StringCopy(&Var2, "OUTFIT_P0_11", 16);
+			StringCopy(&Var2, "OUTFIT_P0_11" /* GXT: Epsilon Robes */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 9:
-			StringCopy(&Var2, "OUTFIT_P0_12", 16);
+			StringCopy(&Var2, "OUTFIT_P0_12" /* GXT: Tennis */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
@@ -53056,252 +53056,252 @@ void func_557(int iParam0)//Position - 0x41A1E
 			break;
 		
 		case 11:
-			StringCopy(&Var2, "OUTFIT_P0_14", 16);
+			StringCopy(&Var2, "OUTFIT_P0_14" /* GXT: Scuba Land */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 12:
-			StringCopy(&Var2, "OUTFIT_P0_17", 16);
+			StringCopy(&Var2, "OUTFIT_P0_17" /* GXT: Stealth */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 13:
-			StringCopy(&Var2, "OUTFIT_P0_18", 16);
+			StringCopy(&Var2, "OUTFIT_P0_18" /* GXT: Triathlon */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 14:
-			StringCopy(&Var2, "OUTFIT_P0_19", 16);
+			StringCopy(&Var2, "OUTFIT_P0_19" /* GXT: Security */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 15:
-			StringCopy(&Var2, "OUTFIT_P0_20", 16);
+			StringCopy(&Var2, "OUTFIT_P0_20" /* GXT: Exterminator */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 16:
-			StringCopy(&Var2, "OUTFIT_P0_22", 16);
+			StringCopy(&Var2, "OUTFIT_P0_22" /* GXT: Tuxedo */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 10000;
 			break;
 		
 		case 17:
-			StringCopy(&Var2, "OUTFIT_P0_23", 16);
+			StringCopy(&Var2, "OUTFIT_P0_23" /* GXT: Ludendorff */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 18:
-			StringCopy(&Var2, "OUTFIT_P0_24", 16);
+			StringCopy(&Var2, "OUTFIT_P0_24" /* GXT: Rappel Gear */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 19:
-			StringCopy(&Var2, "OUTFIT_P0_26", 16);
+			StringCopy(&Var2, "OUTFIT_P0_26" /* GXT: Blue Boiler Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 20:
-			StringCopy(&Var2, "OUTFIT_P0_28", 16);
+			StringCopy(&Var2, "OUTFIT_P0_28" /* GXT: Navy Boiler Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 105;
 			break;
 		
 		case 21:
-			StringCopy(&Var2, "OUTFIT_P0_29", 16);
+			StringCopy(&Var2, "OUTFIT_P0_29" /* GXT: Gray Boiler Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 105;
 			break;
 		
 		case 22:
-			StringCopy(&Var2, "OUTFIT_P0_30", 16);
+			StringCopy(&Var2, "OUTFIT_P0_30" /* GXT: Green Boiler Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 105;
 			break;
 		
 		case 23:
-			StringCopy(&Var2, "OUTFIT_P0_31", 16);
+			StringCopy(&Var2, "OUTFIT_P0_31" /* GXT: Prologue */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 24:
-			StringCopy(&Var2, "OUTFIT_P0_32", 16);
+			StringCopy(&Var2, "OUTFIT_P0_32" /* GXT: Spec Ops */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 25:
-			StringCopy(&Var2, "OUTFIT_P0_33", 16);
+			StringCopy(&Var2, "OUTFIT_P0_33" /* GXT: Denim Shirt, Jeans */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 26:
-			StringCopy(&Var2, "OUTFIT_P0_34", 16);
+			StringCopy(&Var2, "OUTFIT_P0_34" /* GXT: Slate Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 27:
-			StringCopy(&Var2, "OUTFIT_P0_35", 16);
+			StringCopy(&Var2, "OUTFIT_P0_35" /* GXT: Leather Jacket, Jeans */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 28:
-			StringCopy(&Var2, "OUTFIT_P0_11", 16);
+			StringCopy(&Var2, "OUTFIT_P0_11" /* GXT: Epsilon Robes */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 29:
-			StringCopy(&Var2, "OUTFIT_P0_36", 16);
+			StringCopy(&Var2, "OUTFIT_P0_36" /* GXT: Charcoal Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 4900;
 			break;
 		
 		case 30:
-			StringCopy(&Var2, "OUTFIT_P0_37", 16);
+			StringCopy(&Var2, "OUTFIT_P0_37" /* GXT: Pale Blue Shirt, Gray Pants */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 840;
 			break;
 		
 		case 31:
-			StringCopy(&Var2, "OUTFIT_P0_38", 16);
+			StringCopy(&Var2, "OUTFIT_P0_38" /* GXT: Jewel Heist Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 32:
-			StringCopy(&Var2, "OUTFIT_P0_39", 16);
+			StringCopy(&Var2, "OUTFIT_P0_39" /* GXT: Polo Shirt, Beach Shorts */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 33:
-			StringCopy(&Var2, "OUTFIT_P0_40", 16);
+			StringCopy(&Var2, "OUTFIT_P0_40" /* GXT: Polo Shirt, Suit Pants */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 34:
-			StringCopy(&Var2, "OUTFIT_P0_41", 16);
+			StringCopy(&Var2, "OUTFIT_P0_41" /* GXT: Shirt, Shorts */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 35:
-			StringCopy(&Var2, "OUTFIT_P0_42", 16);
+			StringCopy(&Var2, "OUTFIT_P0_42" /* GXT: Polo Shirt, Jeans */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 36:
-			StringCopy(&Var2, "OUTFIT_P0_43", 16);
+			StringCopy(&Var2, "OUTFIT_P0_43" /* GXT: Topaz Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 37:
-			StringCopy(&Var2, "OUTFIT_P0_44", 16);
+			StringCopy(&Var2, "OUTFIT_P0_44" /* GXT: Pale Blue Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 3900;
 			break;
 		
 		case 38:
-			StringCopy(&Var2, "OUTFIT_P0_45", 16);
+			StringCopy(&Var2, "OUTFIT_P0_45" /* GXT: Off-White Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 4000;
 			break;
 		
 		case 39:
-			StringCopy(&Var2, "OUTFIT_P0_46", 16);
+			StringCopy(&Var2, "OUTFIT_P0_46" /* GXT: Olive Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 5900;
 			break;
 		
 		case 40:
-			StringCopy(&Var2, "OUTFIT_P0_47", 16);
+			StringCopy(&Var2, "OUTFIT_P0_47" /* GXT: Cream Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 4600;
 			break;
 		
 		case 41:
-			StringCopy(&Var2, "OUTFIT_P0_48", 16);
+			StringCopy(&Var2, "OUTFIT_P0_48" /* GXT: Navy Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 5500;
 			break;
 		
 		case 42:
-			StringCopy(&Var2, "OUTFIT_P0_49", 16);
+			StringCopy(&Var2, "OUTFIT_P0_49" /* GXT: Beige Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 4400;
 			break;
 		
 		case 43:
-			StringCopy(&Var2, "OUTFIT_P0_50", 16);
+			StringCopy(&Var2, "OUTFIT_P0_50" /* GXT: Smoke Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 4400;
 			break;
 		
 		case 44:
-			StringCopy(&Var2, "OUTFIT_P0_51", 16);
+			StringCopy(&Var2, "OUTFIT_P0_51" /* GXT: Blue-Gray Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 4900;
 			break;
 		
 		case 45:
-			StringCopy(&Var2, "OUTFIT_P0_52", 16);
+			StringCopy(&Var2, "OUTFIT_P0_52" /* GXT: Ash Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 5500;
 			break;
 		
 		case 46:
-			StringCopy(&Var2, "OUTFIT_P0_53", 16);
+			StringCopy(&Var2, "OUTFIT_P0_53" /* GXT: Sand Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 4500;
 			break;
 		
 		case 47:
-			StringCopy(&Var2, "OUTFIT_P0_54", 16);
+			StringCopy(&Var2, "OUTFIT_P0_54" /* GXT: Black Suit */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 5900;
 			break;
 		
 		case 48:
-			StringCopy(&Var2, "OUTFIT_P0_55", 16);
+			StringCopy(&Var2, "OUTFIT_P0_55" /* GXT: Moto X */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 49:
-			StringCopy(&Var2, "OUTFIT_P0_17", 16);
+			StringCopy(&Var2, "OUTFIT_P0_17" /* GXT: Stealth */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
@@ -53366,295 +53366,295 @@ void func_558(int iParam0)//Position - 0x41F95
 			break;
 		
 		case 2:
-			StringCopy(&Var2, "JBIB_P0_02_0", 16);
+			StringCopy(&Var2, "JBIB_P0_02_0" /* GXT: Ash T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 0;
 			break;
 		
 		case 3:
-			StringCopy(&Var2, "JBIB_P0_02_1", 16);
+			StringCopy(&Var2, "JBIB_P0_02_1" /* GXT: White T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 1;
 			break;
 		
 		case 4:
-			StringCopy(&Var2, "JBIB_P0_02_2", 16);
+			StringCopy(&Var2, "JBIB_P0_02_2" /* GXT: Gray T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 2;
 			break;
 		
 		case 5:
-			StringCopy(&Var2, "JBIB_P0_02_3", 16);
+			StringCopy(&Var2, "JBIB_P0_02_3" /* GXT: Charcoal T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 3;
 			break;
 		
 		case 6:
-			StringCopy(&Var2, "JBIB_P0_02_4", 16);
+			StringCopy(&Var2, "JBIB_P0_02_4" /* GXT: Green T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 4;
 			break;
 		
 		case 7:
-			StringCopy(&Var2, "JBIB_P0_02_5", 16);
+			StringCopy(&Var2, "JBIB_P0_02_5" /* GXT: Blue T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 5;
 			break;
 		
 		case 8:
-			StringCopy(&Var2, "JBIB_P0_03_0", 16);
+			StringCopy(&Var2, "JBIB_P0_03_0" /* GXT: Charcoal Henley */, 16);
 			iVar3 = 3;
 			iVar4 = 0;
 			iVar1 = 390;
 			break;
 		
 		case 9:
-			StringCopy(&Var2, "JBIB_P0_03_1", 16);
+			StringCopy(&Var2, "JBIB_P0_03_1" /* GXT: Gray Henley */, 16);
 			iVar3 = 3;
 			iVar4 = 1;
 			iVar1 = 390;
 			break;
 		
 		case 10:
-			StringCopy(&Var2, "JBIB_P0_03_2", 16);
+			StringCopy(&Var2, "JBIB_P0_03_2" /* GXT: Black Henley */, 16);
 			iVar3 = 3;
 			iVar4 = 2;
 			iVar1 = 420;
 			break;
 		
 		case 11:
-			StringCopy(&Var2, "JBIB_P0_03_3", 16);
+			StringCopy(&Var2, "JBIB_P0_03_3" /* GXT: Beige Henley */, 16);
 			iVar3 = 3;
 			iVar4 = 3;
 			iVar1 = 420;
 			break;
 		
 		case 12:
-			StringCopy(&Var2, "JBIB_P0_03_4", 16);
+			StringCopy(&Var2, "JBIB_P0_03_4" /* GXT: Brown Henley */, 16);
 			iVar3 = 3;
 			iVar4 = 4;
 			iVar1 = 490;
 			break;
 		
 		case 13:
-			StringCopy(&Var2, "JBIB_P0_03_5", 16);
+			StringCopy(&Var2, "JBIB_P0_03_5" /* GXT: Navy Henley */, 16);
 			iVar3 = 3;
 			iVar4 = 5;
 			iVar1 = 490;
 			break;
 		
 		case 14:
-			StringCopy(&Var2, "JBIB_P0_03_6", 16);
+			StringCopy(&Var2, "JBIB_P0_03_6" /* GXT: Navy Striped Henley */, 16);
 			iVar3 = 3;
 			iVar4 = 6;
 			iVar1 = 540;
 			break;
 		
 		case 15:
-			StringCopy(&Var2, "JBIB_P0_03_7", 16);
+			StringCopy(&Var2, "JBIB_P0_03_7" /* GXT: Gray Striped Henley */, 16);
 			iVar3 = 3;
 			iVar4 = 7;
 			iVar1 = 540;
 			break;
 		
 		case 16:
-			StringCopy(&Var2, "JBIB_P0_03_8", 16);
+			StringCopy(&Var2, "JBIB_P0_03_8" /* GXT: Gray Wool Henley */, 16);
 			iVar3 = 3;
 			iVar4 = 8;
 			iVar1 = 550;
 			break;
 		
 		case 17:
-			StringCopy(&Var2, "JBIB_P0_03_9", 16);
+			StringCopy(&Var2, "JBIB_P0_03_9" /* GXT: Charcoal Striped Henley */, 16);
 			iVar3 = 3;
 			iVar4 = 9;
 			iVar1 = 540;
 			break;
 		
 		case 18:
-			StringCopy(&Var2, "JBIB_P0_04_0", 16);
+			StringCopy(&Var2, "JBIB_P0_04_0" /* GXT: Charcoal V Neck */, 16);
 			iVar3 = 4;
 			iVar4 = 0;
 			iVar1 = 850;
 			break;
 		
 		case 19:
-			StringCopy(&Var2, "JBIB_P0_04_1", 16);
+			StringCopy(&Var2, "JBIB_P0_04_1" /* GXT: Beige V Neck */, 16);
 			iVar3 = 4;
 			iVar4 = 1;
 			iVar1 = 850;
 			break;
 		
 		case 20:
-			StringCopy(&Var2, "JBIB_P0_04_2", 16);
+			StringCopy(&Var2, "JBIB_P0_04_2" /* GXT: Black V Neck */, 16);
 			iVar3 = 4;
 			iVar4 = 2;
 			iVar1 = 890;
 			break;
 		
 		case 21:
-			StringCopy(&Var2, "JBIB_P0_04_3", 16);
+			StringCopy(&Var2, "JBIB_P0_04_3" /* GXT: Olive V Neck */, 16);
 			iVar3 = 4;
 			iVar4 = 3;
 			iVar1 = 890;
 			break;
 		
 		case 22:
-			StringCopy(&Var2, "JBIB_P0_04_4", 16);
+			StringCopy(&Var2, "JBIB_P0_04_4" /* GXT: Gray V Neck */, 16);
 			iVar3 = 4;
 			iVar4 = 4;
 			iVar1 = 920;
 			break;
 		
 		case 23:
-			StringCopy(&Var2, "JBIB_P0_04_5", 16);
+			StringCopy(&Var2, "JBIB_P0_04_5" /* GXT: Brown V Neck */, 16);
 			iVar3 = 4;
 			iVar4 = 5;
 			iVar1 = 920;
 			break;
 		
 		case 24:
-			StringCopy(&Var2, "JBIB_P0_04_6", 16);
+			StringCopy(&Var2, "JBIB_P0_04_6" /* GXT: Black Striped V Neck */, 16);
 			iVar3 = 4;
 			iVar4 = 6;
 			iVar1 = 950;
 			break;
 		
 		case 25:
-			StringCopy(&Var2, "JBIB_P0_04_7", 16);
+			StringCopy(&Var2, "JBIB_P0_04_7" /* GXT: Gray Diamond V Neck */, 16);
 			iVar3 = 4;
 			iVar4 = 7;
 			iVar1 = 980;
 			break;
 		
 		case 26:
-			StringCopy(&Var2, "JBIB_P0_04_8", 16);
+			StringCopy(&Var2, "JBIB_P0_04_8" /* GXT: Brown Striped V Neck */, 16);
 			iVar3 = 4;
 			iVar4 = 8;
 			iVar1 = 1050;
 			break;
 		
 		case 27:
-			StringCopy(&Var2, "JBIB_P0_04_9", 16);
+			StringCopy(&Var2, "JBIB_P0_04_9" /* GXT: Silver Diamond V Neck */, 16);
 			iVar3 = 4;
 			iVar4 = 9;
 			iVar1 = 1100;
 			break;
 		
 		case 28:
-			StringCopy(&Var2, "JBIB_P0_05_0", 16);
+			StringCopy(&Var2, "JBIB_P0_05_0" /* GXT: Black Vest, White Shirt */, 16);
 			iVar3 = 5;
 			iVar4 = 0;
 			iVar1 = 1890;
 			break;
 		
 		case 29:
-			StringCopy(&Var2, "JBIB_P0_05_1", 16);
+			StringCopy(&Var2, "JBIB_P0_05_1" /* GXT: Black Vest, Black Shirt */, 16);
 			iVar3 = 5;
 			iVar4 = 1;
 			iVar1 = 1820;
 			break;
 		
 		case 30:
-			StringCopy(&Var2, "JBIB_P0_05_2", 16);
+			StringCopy(&Var2, "JBIB_P0_05_2" /* GXT: Black Vest, Gray Shirt */, 16);
 			iVar3 = 5;
 			iVar4 = 2;
 			iVar1 = 1820;
 			break;
 		
 		case 31:
-			StringCopy(&Var2, "JBIB_P0_05_3", 16);
+			StringCopy(&Var2, "JBIB_P0_05_3" /* GXT: Black Vest, Blue Shirt */, 16);
 			iVar3 = 5;
 			iVar4 = 3;
 			iVar1 = 1850;
 			break;
 		
 		case 32:
-			StringCopy(&Var2, "JBIB_P0_05_4", 16);
+			StringCopy(&Var2, "JBIB_P0_05_4" /* GXT: Black Vest, Pink Shirt */, 16);
 			iVar3 = 5;
 			iVar4 = 4;
 			iVar1 = 1850;
 			break;
 		
 		case 33:
-			StringCopy(&Var2, "JBIB_P0_05_5", 16);
+			StringCopy(&Var2, "JBIB_P0_05_5" /* GXT: Ash Vest, White Shirt */, 16);
 			iVar3 = 5;
 			iVar4 = 5;
 			iVar1 = 1900;
 			break;
 		
 		case 34:
-			StringCopy(&Var2, "JBIB_P0_05_6", 16);
+			StringCopy(&Var2, "JBIB_P0_05_6" /* GXT: Ash Vest, Black Shirt */, 16);
 			iVar3 = 5;
 			iVar4 = 6;
 			iVar1 = 1920;
 			break;
 		
 		case 35:
-			StringCopy(&Var2, "JBIB_P0_05_7", 16);
+			StringCopy(&Var2, "JBIB_P0_05_7" /* GXT: Ash Vest, Gray Shirt */, 16);
 			iVar3 = 5;
 			iVar4 = 7;
 			iVar1 = 1980;
 			break;
 		
 		case 36:
-			StringCopy(&Var2, "JBIB_P0_05_8", 16);
+			StringCopy(&Var2, "JBIB_P0_05_8" /* GXT: Ash Vest, Blue Shirt */, 16);
 			iVar3 = 5;
 			iVar4 = 8;
 			iVar1 = 2100;
 			break;
 		
 		case 37:
-			StringCopy(&Var2, "JBIB_P0_05_9", 16);
+			StringCopy(&Var2, "JBIB_P0_05_9" /* GXT: Ash Vest, Pink Shirt */, 16);
 			iVar3 = 5;
 			iVar4 = 9;
 			iVar1 = 2120;
 			break;
 		
 		case 38:
-			StringCopy(&Var2, "JBIB_P0_05_10", 16);
+			StringCopy(&Var2, "JBIB_P0_05_10" /* GXT: Blue Vest, White Shirt */, 16);
 			iVar3 = 5;
 			iVar4 = 10;
 			iVar1 = 2000;
 			break;
 		
 		case 39:
-			StringCopy(&Var2, "JBIB_P0_05_11", 16);
+			StringCopy(&Var2, "JBIB_P0_05_11" /* GXT: Blue Vest, Black Shirt */, 16);
 			iVar3 = 5;
 			iVar4 = 11;
 			iVar1 = 2200;
 			break;
 		
 		case 40:
-			StringCopy(&Var2, "JBIB_P0_05_12", 16);
+			StringCopy(&Var2, "JBIB_P0_05_12" /* GXT: Blue Vest, Gray Shirt */, 16);
 			iVar3 = 5;
 			iVar4 = 12;
 			iVar1 = 2280;
 			break;
 		
 		case 41:
-			StringCopy(&Var2, "JBIB_P0_05_13", 16);
+			StringCopy(&Var2, "JBIB_P0_05_13" /* GXT: Blue Vest, Blue Shirt */, 16);
 			iVar3 = 5;
 			iVar4 = 13;
 			iVar1 = 2300;
 			break;
 		
 		case 42:
-			StringCopy(&Var2, "JBIB_P0_05_14", 16);
+			StringCopy(&Var2, "JBIB_P0_05_14" /* GXT: Blue Vest, Pink Shirt */, 16);
 			iVar3 = 5;
 			iVar4 = 14;
 			iVar1 = 2350;
 			break;
 		
 		case 43:
-			StringCopy(&Var2, "JBIB_P0_05_15", 16);
+			StringCopy(&Var2, "JBIB_P0_05_15" /* GXT: Stone Vest, White Shirt */, 16);
 			iVar3 = 5;
 			iVar4 = 15;
 			iVar1 = 2280;
 			break;
 		
 		case 44:
-			StringCopy(&Var2, "JBIB_P0_06_0", 16);
+			StringCopy(&Var2, "JBIB_P0_06_0" /* GXT: Bare Chest */, 16);
 			iVar3 = 6;
 			iVar4 = 0;
 			break;
@@ -53724,31 +53724,31 @@ void func_560(int iParam0)//Position - 0x42533
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var2, "BERD_P0_0_0", 16);
+			StringCopy(&Var2, "BERD_P0_0_0" /* GXT: Clean Shave */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 1:
-			StringCopy(&Var2, "BERD_P0_1_0", 16);
+			StringCopy(&Var2, "BERD_P0_1_0" /* GXT: Stubbled */, 16);
 			iVar3 = 1;
 			iVar4 = 0;
 			break;
 		
 		case 2:
-			StringCopy(&Var2, "BERD_P0_2_0", 16);
+			StringCopy(&Var2, "BERD_P0_2_0" /* GXT: Long Stubbled */, 16);
 			iVar3 = 2;
 			iVar4 = 0;
 			break;
 		
 		case 3:
-			StringCopy(&Var2, "BERD_P0_3_0", 16);
+			StringCopy(&Var2, "BERD_P0_3_0" /* GXT: Full Goatee */, 16);
 			iVar3 = 3;
 			iVar4 = 0;
 			break;
 		
 		case 4:
-			StringCopy(&Var2, "BERD_P0_4_0", 16);
+			StringCopy(&Var2, "BERD_P0_4_0" /* GXT: Full Beard */, 16);
 			iVar3 = 4;
 			iVar4 = 0;
 			break;
@@ -53999,49 +53999,49 @@ void func_561(int iParam0)//Position - 0x42603
 			break;
 		
 		case 36:
-			StringCopy(&Var2, "DECL_P0_10_8", 16);
+			StringCopy(&Var2, "DECL_P0_10_8" /* GXT: Del Perro Pier T-Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 8;
 			break;
 		
 		case 37:
-			StringCopy(&Var2, "DECL_P0_10_9", 16);
+			StringCopy(&Var2, "DECL_P0_10_9" /* GXT: Los Santos T-Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 9;
 			break;
 		
 		case 38:
-			StringCopy(&Var2, "DECL_P0_10_10", 16);
+			StringCopy(&Var2, "DECL_P0_10_10" /* GXT: Sharkies Bites T-Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 10;
 			break;
 		
 		case 39:
-			StringCopy(&Var2, "DECL_P0_10_11", 16);
+			StringCopy(&Var2, "DECL_P0_10_11" /* GXT: Muscle Peach T-Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 11;
 			break;
 		
 		case 40:
-			StringCopy(&Var2, "DECL_P0_10_12", 16);
+			StringCopy(&Var2, "DECL_P0_10_12" /* GXT: Coral Reefers T-Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 12;
 			break;
 		
 		case 41:
-			StringCopy(&Var2, "DECL_P0_10_13", 16);
+			StringCopy(&Var2, "DECL_P0_10_13" /* GXT: SmokeBomb T-Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 13;
 			break;
 		
 		case 42:
-			StringCopy(&Var2, "DECL_P0_10_14", 16);
+			StringCopy(&Var2, "DECL_P0_10_14" /* GXT: The Big Puffa T-Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 14;
 			break;
 		
 		case 43:
-			StringCopy(&Var2, "DECL_P0_10_15", 16);
+			StringCopy(&Var2, "DECL_P0_10_15" /* GXT: Lob-Star T-Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 15;
 			break;
@@ -54158,42 +54158,42 @@ void func_562(int iParam0)//Position - 0x42ADB
 			break;
 		
 		case 9:
-			StringCopy(&Var2, "SPEC2_P0_08_0", 16);
+			StringCopy(&Var2, "SPEC2_P0_08_0" /* GXT: Red Wrestler Mask */, 16);
 			iVar3 = 8;
 			iVar4 = 0;
 			iVar1 = 125;
 			break;
 		
 		case 10:
-			StringCopy(&Var2, "SPEC2_P0_08_1", 16);
+			StringCopy(&Var2, "SPEC2_P0_08_1" /* GXT: Green Wrestler Mask */, 16);
 			iVar3 = 8;
 			iVar4 = 1;
 			iVar1 = 150;
 			break;
 		
 		case 11:
-			StringCopy(&Var2, "SPEC2_P0_08_2", 16);
+			StringCopy(&Var2, "SPEC2_P0_08_2" /* GXT: Patriot Wrestler Mask */, 16);
 			iVar3 = 8;
 			iVar4 = 2;
 			iVar1 = 175;
 			break;
 		
 		case 12:
-			StringCopy(&Var2, "SPEC2_P0_08_3", 16);
+			StringCopy(&Var2, "SPEC2_P0_08_3" /* GXT: Domino Wrestler Mask */, 16);
 			iVar3 = 8;
 			iVar4 = 3;
 			iVar1 = 85;
 			break;
 		
 		case 13:
-			StringCopy(&Var2, "SPEC2_P0_08_4", 16);
+			StringCopy(&Var2, "SPEC2_P0_08_4" /* GXT: Gray Wrestler Mask */, 16);
 			iVar3 = 8;
 			iVar4 = 4;
 			iVar1 = 150;
 			break;
 		
 		case 14:
-			StringCopy(&Var2, "SPEC2_P0_08_5", 16);
+			StringCopy(&Var2, "SPEC2_P0_08_5" /* GXT: Phoenix Wrestler Mask */, 16);
 			iVar3 = 8;
 			iVar4 = 5;
 			iVar1 = 175;
@@ -54333,7 +54333,7 @@ void func_563(int iParam0)//Position - 0x42D44
 			break;
 		
 		case 10:
-			StringCopy(&Var2, "SPEC_P0_10", 16);
+			StringCopy(&Var2, "SPEC_P0_10" /* GXT: Watch and Bracelet */, 16);
 			iVar3 = 10;
 			iVar4 = 0;
 			break;
@@ -54374,7 +54374,7 @@ void func_563(int iParam0)//Position - 0x42D44
 			break;
 		
 		case 16:
-			StringCopy(&Var2, "SPEC_P0_16", 16);
+			StringCopy(&Var2, "SPEC_P0_16" /* GXT: Leather Watch */, 16);
 			iVar3 = 16;
 			iVar4 = 0;
 			break;
@@ -54584,41 +54584,41 @@ void func_565(int iParam0)//Position - 0x431E3
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var2, "FEET_P0_0_0", 16);
+			StringCopy(&Var2, "FEET_P0_0_0" /* GXT: Black Leather Shoes */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 1:
-			StringCopy(&Var2, "FEET_P0_0_1", 16);
+			StringCopy(&Var2, "FEET_P0_0_1" /* GXT: Brown Leather Shoes */, 16);
 			iVar3 = 0;
 			iVar4 = 1;
 			iVar1 = 665;
 			break;
 		
 		case 2:
-			StringCopy(&Var2, "FEET_P0_0_2", 16);
+			StringCopy(&Var2, "FEET_P0_0_2" /* GXT: Charcoal Leather Shoes */, 16);
 			iVar3 = 0;
 			iVar4 = 2;
 			iVar1 = 620;
 			break;
 		
 		case 3:
-			StringCopy(&Var2, "FEET_P0_0_3", 16);
+			StringCopy(&Var2, "FEET_P0_0_3" /* GXT: Gray Leather Shoes */, 16);
 			iVar3 = 0;
 			iVar4 = 3;
 			iVar1 = 540;
 			break;
 		
 		case 4:
-			StringCopy(&Var2, "FEET_P0_0_4", 16);
+			StringCopy(&Var2, "FEET_P0_0_4" /* GXT: Sand Leather Shoes */, 16);
 			iVar3 = 0;
 			iVar4 = 4;
 			iVar1 = 580;
 			break;
 		
 		case 5:
-			StringCopy(&Var2, "FEET_P0_0_5", 16);
+			StringCopy(&Var2, "FEET_P0_0_5" /* GXT: Blue Suede Shoes */, 16);
 			iVar3 = 0;
 			iVar4 = 5;
 			iVar1 = 650;
@@ -54707,7 +54707,7 @@ void func_565(int iParam0)//Position - 0x431E3
 			break;
 		
 		case 18:
-			StringCopy(&Var2, "FEET_P0_13_0", 16);
+			StringCopy(&Var2, "FEET_P0_13_0" /* GXT: Dress Loafers */, 16);
 			iVar3 = 13;
 			iVar4 = 0;
 			break;
@@ -54720,125 +54720,125 @@ void func_565(int iParam0)//Position - 0x431E3
 			break;
 		
 		case 20:
-			StringCopy(&Var2, "FEET_P0_15_0", 16);
+			StringCopy(&Var2, "FEET_P0_15_0" /* GXT: Ash Skate Shoes */, 16);
 			iVar3 = 15;
 			iVar4 = 0;
 			break;
 		
 		case 21:
-			StringCopy(&Var2, "FEET_P0_15_1", 16);
+			StringCopy(&Var2, "FEET_P0_15_1" /* GXT: Black Skate Shoes */, 16);
 			iVar3 = 15;
 			iVar4 = 1;
 			iVar1 = 64;
 			break;
 		
 		case 22:
-			StringCopy(&Var2, "FEET_P0_15_2", 16);
+			StringCopy(&Var2, "FEET_P0_15_2" /* GXT: White Skate Shoes */, 16);
 			iVar3 = 15;
 			iVar4 = 2;
 			iVar1 = 56;
 			break;
 		
 		case 23:
-			StringCopy(&Var2, "FEET_P0_15_3", 16);
+			StringCopy(&Var2, "FEET_P0_15_3" /* GXT: Red Skate Shoes */, 16);
 			iVar3 = 15;
 			iVar4 = 3;
 			iVar1 = 69;
 			break;
 		
 		case 24:
-			StringCopy(&Var2, "FEET_P0_15_4", 16);
+			StringCopy(&Var2, "FEET_P0_15_4" /* GXT: Plaid Skate Shoes */, 16);
 			iVar3 = 15;
 			iVar4 = 4;
 			iVar1 = 59;
 			break;
 		
 		case 25:
-			StringCopy(&Var2, "FEET_P0_15_5", 16);
+			StringCopy(&Var2, "FEET_P0_15_5" /* GXT: Striped Skate Shoes */, 16);
 			iVar3 = 15;
 			iVar4 = 5;
 			iVar1 = 62;
 			break;
 		
 		case 26:
-			StringCopy(&Var2, "FEET_P0_15_6", 16);
+			StringCopy(&Var2, "FEET_P0_15_6" /* GXT: Coffee Skate Shoes */, 16);
 			iVar3 = 15;
 			iVar4 = 6;
 			iVar1 = 74;
 			break;
 		
 		case 27:
-			StringCopy(&Var2, "FEET_P0_15_7", 16);
+			StringCopy(&Var2, "FEET_P0_15_7" /* GXT: Camo Skate Shoes */, 16);
 			iVar3 = 15;
 			iVar4 = 7;
 			iVar1 = 68;
 			break;
 		
 		case 28:
-			StringCopy(&Var2, "FEET_P0_15_8", 16);
+			StringCopy(&Var2, "FEET_P0_15_8" /* GXT: Tropical Skate Shoes */, 16);
 			iVar3 = 15;
 			iVar4 = 8;
 			iVar1 = 72;
 			break;
 		
 		case 29:
-			StringCopy(&Var2, "FEET_P0_15_9", 16);
+			StringCopy(&Var2, "FEET_P0_15_9" /* GXT: Green Skate Shoes */, 16);
 			iVar3 = 15;
 			iVar4 = 9;
 			iVar1 = 70;
 			break;
 		
 		case 30:
-			StringCopy(&Var2, "FEET_P0_16_0", 16);
+			StringCopy(&Var2, "FEET_P0_16_0" /* GXT: Chocolate Boat Shoes */, 16);
 			iVar3 = 16;
 			iVar4 = 0;
 			iVar1 = 48;
 			break;
 		
 		case 31:
-			StringCopy(&Var2, "FEET_P0_16_1", 16);
+			StringCopy(&Var2, "FEET_P0_16_1" /* GXT: Teal Boat Shoes */, 16);
 			iVar3 = 16;
 			iVar4 = 1;
 			iVar1 = 48;
 			break;
 		
 		case 32:
-			StringCopy(&Var2, "FEET_P0_16_2", 16);
+			StringCopy(&Var2, "FEET_P0_16_2" /* GXT: Black Boat Shoes */, 16);
 			iVar3 = 16;
 			iVar4 = 2;
 			iVar1 = 55;
 			break;
 		
 		case 33:
-			StringCopy(&Var2, "FEET_P0_16_3", 16);
+			StringCopy(&Var2, "FEET_P0_16_3" /* GXT: Chestnut Boat Shoes */, 16);
 			iVar3 = 16;
 			iVar4 = 3;
 			iVar1 = 75;
 			break;
 		
 		case 34:
-			StringCopy(&Var2, "FEET_P0_16_4", 16);
+			StringCopy(&Var2, "FEET_P0_16_4" /* GXT: Tan Boat Shoes */, 16);
 			iVar3 = 16;
 			iVar4 = 4;
 			iVar1 = 65;
 			break;
 		
 		case 35:
-			StringCopy(&Var2, "FEET_P0_16_5", 16);
+			StringCopy(&Var2, "FEET_P0_16_5" /* GXT: Gray Boat Shoes */, 16);
 			iVar3 = 16;
 			iVar4 = 5;
 			iVar1 = 68;
 			break;
 		
 		case 36:
-			StringCopy(&Var2, "FEET_P0_16_6", 16);
+			StringCopy(&Var2, "FEET_P0_16_6" /* GXT: Red Boat Shoes */, 16);
 			iVar3 = 16;
 			iVar4 = 6;
 			iVar1 = 58;
 			break;
 		
 		case 37:
-			StringCopy(&Var2, "FEET_P0_16_7", 16);
+			StringCopy(&Var2, "FEET_P0_16_7" /* GXT: Slate Boat Shoes */, 16);
 			iVar3 = 16;
 			iVar4 = 7;
 			iVar1 = 68;
@@ -54852,420 +54852,420 @@ void func_565(int iParam0)//Position - 0x431E3
 			break;
 		
 		case 39:
-			StringCopy(&Var2, "FEET_P0_18_0", 16);
+			StringCopy(&Var2, "FEET_P0_18_0" /* GXT: All Black Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 0;
 			iVar1 = 790;
 			break;
 		
 		case 40:
-			StringCopy(&Var2, "FEET_P0_18_1", 16);
+			StringCopy(&Var2, "FEET_P0_18_1" /* GXT: Chocolate Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 1;
 			iVar1 = 750;
 			break;
 		
 		case 41:
-			StringCopy(&Var2, "FEET_P0_18_2", 16);
+			StringCopy(&Var2, "FEET_P0_18_2" /* GXT: Chestnut Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 2;
 			iVar1 = 860;
 			break;
 		
 		case 42:
-			StringCopy(&Var2, "FEET_P0_18_3", 16);
+			StringCopy(&Var2, "FEET_P0_18_3" /* GXT: Tan Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 3;
 			iVar1 = 750;
 			break;
 		
 		case 43:
-			StringCopy(&Var2, "FEET_P0_18_4", 16);
+			StringCopy(&Var2, "FEET_P0_18_4" /* GXT: White Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 4;
 			iVar1 = 790;
 			break;
 		
 		case 44:
-			StringCopy(&Var2, "FEET_P0_18_5", 16);
+			StringCopy(&Var2, "FEET_P0_18_5" /* GXT: Ash Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 5;
 			iVar1 = 840;
 			break;
 		
 		case 45:
-			StringCopy(&Var2, "FEET_P0_18_6", 16);
+			StringCopy(&Var2, "FEET_P0_18_6" /* GXT: Gray Two-Tone Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 6;
 			iVar1 = 820;
 			break;
 		
 		case 46:
-			StringCopy(&Var2, "FEET_P0_18_7", 16);
+			StringCopy(&Var2, "FEET_P0_18_7" /* GXT: Beige Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 7;
 			iVar1 = 800;
 			break;
 		
 		case 47:
-			StringCopy(&Var2, "FEET_P0_18_8", 16);
+			StringCopy(&Var2, "FEET_P0_18_8" /* GXT: Topaz Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 8;
 			iVar1 = 850;
 			break;
 		
 		case 48:
-			StringCopy(&Var2, "FEET_P0_18_9", 16);
+			StringCopy(&Var2, "FEET_P0_18_9" /* GXT: Black Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 9;
 			iVar1 = 870;
 			break;
 		
 		case 49:
-			StringCopy(&Var2, "FEET_P0_18_10", 16);
+			StringCopy(&Var2, "FEET_P0_18_10" /* GXT: Lime Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 10;
 			iVar1 = 720;
 			break;
 		
 		case 50:
-			StringCopy(&Var2, "FEET_P0_18_11", 16);
+			StringCopy(&Var2, "FEET_P0_18_11" /* GXT: Hawthorn Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 11;
 			iVar1 = 740;
 			break;
 		
 		case 51:
-			StringCopy(&Var2, "FEET_P0_18_12", 16);
+			StringCopy(&Var2, "FEET_P0_18_12" /* GXT: Coffee Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 12;
 			iVar1 = 800;
 			break;
 		
 		case 52:
-			StringCopy(&Var2, "FEET_P0_18_13", 16);
+			StringCopy(&Var2, "FEET_P0_18_13" /* GXT: Gray Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 13;
 			iVar1 = 750;
 			break;
 		
 		case 53:
-			StringCopy(&Var2, "FEET_P0_18_14", 16);
+			StringCopy(&Var2, "FEET_P0_18_14" /* GXT: Cream Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 14;
 			iVar1 = 770;
 			break;
 		
 		case 54:
-			StringCopy(&Var2, "FEET_P0_18_15", 16);
+			StringCopy(&Var2, "FEET_P0_18_15" /* GXT: Navy Oxfords */, 16);
 			iVar3 = 18;
 			iVar4 = 15;
 			iVar1 = 860;
 			break;
 		
 		case 55:
-			StringCopy(&Var2, "FEET_P0_19_0", 16);
+			StringCopy(&Var2, "FEET_P0_19_0" /* GXT: Black Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 0;
 			iVar1 = 850;
 			break;
 		
 		case 56:
-			StringCopy(&Var2, "FEET_P0_19_1", 16);
+			StringCopy(&Var2, "FEET_P0_19_1" /* GXT: Red Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 1;
 			iVar1 = 800;
 			break;
 		
 		case 57:
-			StringCopy(&Var2, "FEET_P0_19_2", 16);
+			StringCopy(&Var2, "FEET_P0_19_2" /* GXT: Brown Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 2;
 			iVar1 = 780;
 			break;
 		
 		case 58:
-			StringCopy(&Var2, "FEET_P0_19_3", 16);
+			StringCopy(&Var2, "FEET_P0_19_3" /* GXT: Green Stripe Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 3;
 			iVar1 = 890;
 			break;
 		
 		case 59:
-			StringCopy(&Var2, "FEET_P0_19_4", 16);
+			StringCopy(&Var2, "FEET_P0_19_4" /* GXT: Green Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 4;
 			iVar1 = 820;
 			break;
 		
 		case 60:
-			StringCopy(&Var2, "FEET_P0_19_5", 16);
+			StringCopy(&Var2, "FEET_P0_19_5" /* GXT: Copper Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 5;
 			iVar1 = 840;
 			break;
 		
 		case 61:
-			StringCopy(&Var2, "FEET_P0_19_6", 16);
+			StringCopy(&Var2, "FEET_P0_19_6" /* GXT: Copper Two-Tone Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 6;
 			iVar1 = 870;
 			break;
 		
 		case 62:
-			StringCopy(&Var2, "FEET_P0_19_7", 16);
+			StringCopy(&Var2, "FEET_P0_19_7" /* GXT: Navy Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 7;
 			iVar1 = 930;
 			break;
 		
 		case 63:
-			StringCopy(&Var2, "FEET_P0_19_8", 16);
+			StringCopy(&Var2, "FEET_P0_19_8" /* GXT: Blue Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 8;
 			iVar1 = 880;
 			break;
 		
 		case 64:
-			StringCopy(&Var2, "FEET_P0_19_9", 16);
+			StringCopy(&Var2, "FEET_P0_19_9" /* GXT: Beige Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 9;
 			iVar1 = 900;
 			break;
 		
 		case 65:
-			StringCopy(&Var2, "FEET_P0_19_10", 16);
+			StringCopy(&Var2, "FEET_P0_19_10" /* GXT: White Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 10;
 			iVar1 = 920;
 			break;
 		
 		case 66:
-			StringCopy(&Var2, "FEET_P0_19_11", 16);
+			StringCopy(&Var2, "FEET_P0_19_11" /* GXT: Tan Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 11;
 			iVar1 = 970;
 			break;
 		
 		case 67:
-			StringCopy(&Var2, "FEET_P0_19_12", 16);
+			StringCopy(&Var2, "FEET_P0_19_12" /* GXT: Black Snakeskin Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 12;
 			iVar1 = 990;
 			break;
 		
 		case 68:
-			StringCopy(&Var2, "FEET_P0_19_13", 16);
+			StringCopy(&Var2, "FEET_P0_19_13" /* GXT: Two-Tone Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 13;
 			iVar1 = 960;
 			break;
 		
 		case 69:
-			StringCopy(&Var2, "FEET_P0_19_14", 16);
+			StringCopy(&Var2, "FEET_P0_19_14" /* GXT: Brown Snakeskin Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 14;
 			iVar1 = 980;
 			break;
 		
 		case 70:
-			StringCopy(&Var2, "FEET_P0_19_15", 16);
+			StringCopy(&Var2, "FEET_P0_19_15" /* GXT: Gray Slip-Ons */, 16);
 			iVar3 = 19;
 			iVar4 = 15;
 			iVar1 = 950;
 			break;
 		
 		case 71:
-			StringCopy(&Var2, "FEET_P0_20_0", 16);
+			StringCopy(&Var2, "FEET_P0_20_0" /* GXT: Brown Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 0;
 			iVar1 = 110;
 			break;
 		
 		case 72:
-			StringCopy(&Var2, "FEET_P0_20_1", 16);
+			StringCopy(&Var2, "FEET_P0_20_1" /* GXT: Navy Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 1;
 			iVar1 = 115;
 			break;
 		
 		case 73:
-			StringCopy(&Var2, "FEET_P0_20_2", 16);
+			StringCopy(&Var2, "FEET_P0_20_2" /* GXT: Coffee Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 2;
 			iVar1 = 120;
 			break;
 		
 		case 74:
-			StringCopy(&Var2, "FEET_P0_20_3", 16);
+			StringCopy(&Var2, "FEET_P0_20_3" /* GXT: Burgundy Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 3;
 			iVar1 = 110;
 			break;
 		
 		case 75:
-			StringCopy(&Var2, "FEET_P0_20_4", 16);
+			StringCopy(&Var2, "FEET_P0_20_4" /* GXT: Blue Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 4;
 			iVar1 = 125;
 			break;
 		
 		case 76:
-			StringCopy(&Var2, "FEET_P0_20_5", 16);
+			StringCopy(&Var2, "FEET_P0_20_5" /* GXT: Woodland Camo Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 5;
 			iVar1 = 128;
 			break;
 		
 		case 77:
-			StringCopy(&Var2, "FEET_P0_20_6", 16);
+			StringCopy(&Var2, "FEET_P0_20_6" /* GXT: Black Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 6;
 			iVar1 = 135;
 			break;
 		
 		case 78:
-			StringCopy(&Var2, "FEET_P0_20_7", 16);
+			StringCopy(&Var2, "FEET_P0_20_7" /* GXT: Tan Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 7;
 			iVar1 = 130;
 			break;
 		
 		case 79:
-			StringCopy(&Var2, "FEET_P0_20_8", 16);
+			StringCopy(&Var2, "FEET_P0_20_8" /* GXT: Purple Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 8;
 			iVar1 = 145;
 			break;
 		
 		case 80:
-			StringCopy(&Var2, "FEET_P0_20_9", 16);
+			StringCopy(&Var2, "FEET_P0_20_9" /* GXT: Brown Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 9;
 			iVar1 = 110;
 			break;
 		
 		case 81:
-			StringCopy(&Var2, "FEET_P0_20_10", 16);
+			StringCopy(&Var2, "FEET_P0_20_10" /* GXT: Chocolate Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 10;
 			iVar1 = 120;
 			break;
 		
 		case 82:
-			StringCopy(&Var2, "FEET_P0_20_11", 16);
+			StringCopy(&Var2, "FEET_P0_20_11" /* GXT: Green Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 11;
 			iVar1 = 150;
 			break;
 		
 		case 83:
-			StringCopy(&Var2, "FEET_P0_20_12", 16);
+			StringCopy(&Var2, "FEET_P0_20_12" /* GXT: Ash Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 12;
 			iVar1 = 125;
 			break;
 		
 		case 84:
-			StringCopy(&Var2, "FEET_P0_20_13", 16);
+			StringCopy(&Var2, "FEET_P0_20_13" /* GXT: Olive Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 13;
 			iVar1 = 120;
 			break;
 		
 		case 85:
-			StringCopy(&Var2, "FEET_P0_20_14", 16);
+			StringCopy(&Var2, "FEET_P0_20_14" /* GXT: Two-Tone Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 14;
 			iVar1 = 130;
 			break;
 		
 		case 86:
-			StringCopy(&Var2, "FEET_P0_20_15", 16);
+			StringCopy(&Var2, "FEET_P0_20_15" /* GXT: Yellow Wingtips */, 16);
 			iVar3 = 20;
 			iVar4 = 15;
 			iVar1 = 110;
 			break;
 		
 		case 87:
-			StringCopy(&Var2, "FEET_P0_21_0", 16);
+			StringCopy(&Var2, "FEET_P0_21_0" /* GXT: Black Leather Loafers */, 16);
 			iVar3 = 21;
 			iVar4 = 0;
 			iVar1 = 720;
 			break;
 		
 		case 88:
-			StringCopy(&Var2, "FEET_P0_21_1", 16);
+			StringCopy(&Var2, "FEET_P0_21_1" /* GXT: Gray Leather Loafers */, 16);
 			iVar3 = 21;
 			iVar4 = 1;
 			iVar1 = 680;
 			break;
 		
 		case 89:
-			StringCopy(&Var2, "FEET_P0_21_2", 16);
+			StringCopy(&Var2, "FEET_P0_21_2" /* GXT: Cream Leather Loafers */, 16);
 			iVar3 = 21;
 			iVar4 = 2;
 			iVar1 = 650;
 			break;
 		
 		case 90:
-			StringCopy(&Var2, "FEET_P0_21_3", 16);
+			StringCopy(&Var2, "FEET_P0_21_3" /* GXT: Brown Leather Loafers */, 16);
 			iVar3 = 21;
 			iVar4 = 3;
 			iVar1 = 670;
 			break;
 		
 		case 91:
-			StringCopy(&Var2, "FEET_P0_21_4", 16);
+			StringCopy(&Var2, "FEET_P0_21_4" /* GXT: White Leather Loafers */, 16);
 			iVar3 = 21;
 			iVar4 = 4;
 			iVar1 = 700;
 			break;
 		
 		case 92:
-			StringCopy(&Var2, "FEET_P0_21_5", 16);
+			StringCopy(&Var2, "FEET_P0_21_5" /* GXT: Russet Leather Loafers */, 16);
 			iVar3 = 21;
 			iVar4 = 5;
 			iVar1 = 680;
 			break;
 		
 		case 93:
-			StringCopy(&Var2, "FEET_P0_21_6", 16);
+			StringCopy(&Var2, "FEET_P0_21_6" /* GXT: White Snakeskin Loafers */, 16);
 			iVar3 = 21;
 			iVar4 = 6;
 			iVar1 = 720;
 			break;
 		
 		case 94:
-			StringCopy(&Var2, "FEET_P0_21_7", 16);
+			StringCopy(&Var2, "FEET_P0_21_7" /* GXT: Rattlesnake Loafers */, 16);
 			iVar3 = 21;
 			iVar4 = 7;
 			iVar1 = 740;
 			break;
 		
 		case 95:
-			StringCopy(&Var2, "FEET_P0_21_8", 16);
+			StringCopy(&Var2, "FEET_P0_21_8" /* GXT: Brown Snakeskin Loafers */, 16);
 			iVar3 = 21;
 			iVar4 = 8;
 			iVar1 = 760;
 			break;
 		
 		case 96:
-			StringCopy(&Var2, "FEET_P0_21_9", 16);
+			StringCopy(&Var2, "FEET_P0_21_9" /* GXT: Zebra Two-Tone Loafers */, 16);
 			iVar3 = 21;
 			iVar4 = 9;
 			iVar1 = 780;
 			break;
 		
 		case 97:
-			StringCopy(&Var2, "FEET_P0_21_10", 16);
+			StringCopy(&Var2, "FEET_P0_21_10" /* GXT: Pale Reptile Loafers */, 16);
 			iVar3 = 21;
 			iVar4 = 10;
 			iVar1 = 750;
 			break;
 		
 		case 98:
-			StringCopy(&Var2, "FEET_P0_21_11", 16);
+			StringCopy(&Var2, "FEET_P0_21_11" /* GXT: Tan Alligator Loafers */, 16);
 			iVar3 = 21;
 			iVar4 = 11;
 			iVar1 = 700;
@@ -55301,97 +55301,97 @@ void func_566(int iParam0)//Position - 0x43D37
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var2, "LEGS_P0_0_0", 16);
+			StringCopy(&Var2, "LEGS_P0_0_0" /* GXT: Gray Pants */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 1:
-			StringCopy(&Var2, "LEGS_P0_0_0", 16);
+			StringCopy(&Var2, "LEGS_P0_0_0" /* GXT: Gray Pants */, 16);
 			iVar3 = 0;
 			iVar4 = 1;
 			break;
 		
 		case 2:
-			StringCopy(&Var2, "LEGS_P0_0_2", 16);
+			StringCopy(&Var2, "LEGS_P0_0_2" /* GXT: Charcoal Pants */, 16);
 			iVar3 = 0;
 			iVar4 = 2;
 			break;
 		
 		case 3:
-			StringCopy(&Var2, "LEGS_P0_0_3", 16);
+			StringCopy(&Var2, "LEGS_P0_0_3" /* GXT: Slate Pants */, 16);
 			iVar3 = 0;
 			iVar4 = 3;
 			break;
 		
 		case 4:
-			StringCopy(&Var2, "LEGS_P0_0_4", 16);
+			StringCopy(&Var2, "LEGS_P0_0_4" /* GXT: Topaz Pants */, 16);
 			iVar3 = 0;
 			iVar4 = 4;
 			break;
 		
 		case 5:
-			StringCopy(&Var2, "LEGS_P0_0_5", 16);
+			StringCopy(&Var2, "LEGS_P0_0_5" /* GXT: Pale Blue Pants */, 16);
 			iVar3 = 0;
 			iVar4 = 5;
 			break;
 		
 		case 6:
-			StringCopy(&Var2, "LEGS_P0_0_6", 16);
+			StringCopy(&Var2, "LEGS_P0_0_6" /* GXT: Cream Pants */, 16);
 			iVar3 = 0;
 			iVar4 = 6;
 			break;
 		
 		case 7:
-			StringCopy(&Var2, "LEGS_P0_0_7", 16);
+			StringCopy(&Var2, "LEGS_P0_0_7" /* GXT: Olive Pants */, 16);
 			iVar3 = 0;
 			iVar4 = 7;
 			break;
 		
 		case 8:
-			StringCopy(&Var2, "LEGS_P0_0_8", 16);
+			StringCopy(&Var2, "LEGS_P0_0_8" /* GXT: Off-White Pants */, 16);
 			iVar3 = 0;
 			iVar4 = 8;
 			break;
 		
 		case 9:
-			StringCopy(&Var2, "LEGS_P0_0_9", 16);
+			StringCopy(&Var2, "LEGS_P0_0_9" /* GXT: Navy Pants */, 16);
 			iVar3 = 0;
 			iVar4 = 9;
 			break;
 		
 		case 10:
-			StringCopy(&Var2, "LEGS_P0_0_10", 16);
+			StringCopy(&Var2, "LEGS_P0_0_10" /* GXT: Beige Pants */, 16);
 			iVar3 = 0;
 			iVar4 = 10;
 			break;
 		
 		case 11:
-			StringCopy(&Var2, "LEGS_P0_0_11", 16);
+			StringCopy(&Var2, "LEGS_P0_0_11" /* GXT: Smoke Pants */, 16);
 			iVar3 = 0;
 			iVar4 = 11;
 			break;
 		
 		case 12:
-			StringCopy(&Var2, "LEGS_P0_0_12", 16);
+			StringCopy(&Var2, "LEGS_P0_0_12" /* GXT: Blue-Gray Pants */, 16);
 			iVar3 = 0;
 			iVar4 = 12;
 			break;
 		
 		case 13:
-			StringCopy(&Var2, "LEGS_P0_0_13", 16);
+			StringCopy(&Var2, "LEGS_P0_0_13" /* GXT: Ash Pants */, 16);
 			iVar3 = 0;
 			iVar4 = 13;
 			break;
 		
 		case 14:
-			StringCopy(&Var2, "LEGS_P0_0_14", 16);
+			StringCopy(&Var2, "LEGS_P0_0_14" /* GXT: Sand Pants */, 16);
 			iVar3 = 0;
 			iVar4 = 14;
 			break;
 		
 		case 15:
-			StringCopy(&Var2, "LEGS_P0_0_15", 16);
+			StringCopy(&Var2, "LEGS_P0_0_15" /* GXT: Black Pants */, 16);
 			iVar3 = 0;
 			iVar4 = 15;
 			break;
@@ -55446,56 +55446,56 @@ void func_566(int iParam0)//Position - 0x43D37
 			break;
 		
 		case 23:
-			StringCopy(&Var2, "LEGS_P0_7_0", 16);
+			StringCopy(&Var2, "LEGS_P0_7_0" /* GXT: Off-White Chinos */, 16);
 			iVar3 = 7;
 			iVar4 = 0;
 			iVar1 = 115;
 			break;
 		
 		case 24:
-			StringCopy(&Var2, "LEGS_P0_7_1", 16);
+			StringCopy(&Var2, "LEGS_P0_7_1" /* GXT: Camel Chinos */, 16);
 			iVar3 = 7;
 			iVar4 = 1;
 			iVar1 = 115;
 			break;
 		
 		case 25:
-			StringCopy(&Var2, "LEGS_P0_7_2", 16);
+			StringCopy(&Var2, "LEGS_P0_7_2" /* GXT: Ash Chinos */, 16);
 			iVar3 = 7;
 			iVar4 = 2;
 			iVar1 = 128;
 			break;
 		
 		case 26:
-			StringCopy(&Var2, "LEGS_P0_7_3", 16);
+			StringCopy(&Var2, "LEGS_P0_7_3" /* GXT: Olive Chinos */, 16);
 			iVar3 = 7;
 			iVar4 = 3;
 			iVar1 = 118;
 			break;
 		
 		case 27:
-			StringCopy(&Var2, "LEGS_P0_7_4", 16);
+			StringCopy(&Var2, "LEGS_P0_7_4" /* GXT: Brown Chinos */, 16);
 			iVar3 = 7;
 			iVar4 = 4;
 			iVar1 = 125;
 			break;
 		
 		case 28:
-			StringCopy(&Var2, "LEGS_P0_7_5", 16);
+			StringCopy(&Var2, "LEGS_P0_7_5" /* GXT: Black Chinos */, 16);
 			iVar3 = 7;
 			iVar4 = 5;
 			iVar1 = 128;
 			break;
 		
 		case 29:
-			StringCopy(&Var2, "LEGS_P0_7_6", 16);
+			StringCopy(&Var2, "LEGS_P0_7_6" /* GXT: Charcoal Chinos */, 16);
 			iVar3 = 7;
 			iVar4 = 6;
 			iVar1 = 128;
 			break;
 		
 		case 30:
-			StringCopy(&Var2, "LEGS_P0_7_7", 16);
+			StringCopy(&Var2, "LEGS_P0_7_7" /* GXT: White Chinos */, 16);
 			iVar3 = 7;
 			iVar4 = 7;
 			iVar1 = 125;
@@ -55572,35 +55572,35 @@ void func_566(int iParam0)//Position - 0x43D37
 			break;
 		
 		case 41:
-			StringCopy(&Var2, "LEGS_P0_13_0", 16);
+			StringCopy(&Var2, "LEGS_P0_13_0" /* GXT: Cream Cargo Shorts */, 16);
 			iVar3 = 13;
 			iVar4 = 0;
 			iVar1 = 68;
 			break;
 		
 		case 42:
-			StringCopy(&Var2, "LEGS_P0_13_1", 16);
+			StringCopy(&Var2, "LEGS_P0_13_1" /* GXT: Khaki Cargo Shorts */, 16);
 			iVar3 = 13;
 			iVar4 = 1;
 			iVar1 = 68;
 			break;
 		
 		case 43:
-			StringCopy(&Var2, "LEGS_P0_13_2", 16);
+			StringCopy(&Var2, "LEGS_P0_13_2" /* GXT: Camo Cargo Shorts */, 16);
 			iVar3 = 13;
 			iVar4 = 2;
 			iVar1 = 68;
 			break;
 		
 		case 44:
-			StringCopy(&Var2, "LEGS_P0_13_3", 16);
+			StringCopy(&Var2, "LEGS_P0_13_3" /* GXT: Gray Cargo Shorts */, 16);
 			iVar3 = 13;
 			iVar4 = 3;
 			iVar1 = 68;
 			break;
 		
 		case 45:
-			StringCopy(&Var2, "LEGS_P0_13_4", 16);
+			StringCopy(&Var2, "LEGS_P0_13_4" /* GXT: White Cargo Shorts */, 16);
 			iVar3 = 13;
 			iVar4 = 4;
 			iVar1 = 68;
@@ -55614,166 +55614,166 @@ void func_566(int iParam0)//Position - 0x43D37
 			break;
 		
 		case 47:
-			StringCopy(&Var2, "LEGS_P0_15_0", 16);
+			StringCopy(&Var2, "LEGS_P0_15_0" /* GXT: Gray Golf Pants */, 16);
 			iVar3 = 15;
 			iVar4 = 0;
 			break;
 		
 		case 48:
-			StringCopy(&Var2, "LEGS_P0_15_1", 16);
+			StringCopy(&Var2, "LEGS_P0_15_1" /* GXT: Cream Golf Pants */, 16);
 			iVar3 = 15;
 			iVar4 = 1;
 			iVar1 = 550;
 			break;
 		
 		case 49:
-			StringCopy(&Var2, "LEGS_P0_15_2", 16);
+			StringCopy(&Var2, "LEGS_P0_15_2" /* GXT: Brown Golf Pants */, 16);
 			iVar3 = 15;
 			iVar4 = 2;
 			iVar1 = 650;
 			break;
 		
 		case 50:
-			StringCopy(&Var2, "LEGS_P0_15_3", 16);
+			StringCopy(&Var2, "LEGS_P0_15_3" /* GXT: Tartan Golf Pants */, 16);
 			iVar3 = 15;
 			iVar4 = 3;
 			iVar1 = 875;
 			break;
 		
 		case 51:
-			StringCopy(&Var2, "LEGS_P0_15_4", 16);
+			StringCopy(&Var2, "LEGS_P0_15_4" /* GXT: Charcoal Plaid Golf Pants */, 16);
 			iVar3 = 15;
 			iVar4 = 4;
 			iVar1 = 820;
 			break;
 		
 		case 52:
-			StringCopy(&Var2, "LEGS_P0_15_5", 16);
+			StringCopy(&Var2, "LEGS_P0_15_5" /* GXT: Green Plaid Golf Pants */, 16);
 			iVar3 = 15;
 			iVar4 = 5;
 			iVar1 = 720;
 			break;
 		
 		case 53:
-			StringCopy(&Var2, "LEGS_P0_15_6", 16);
+			StringCopy(&Var2, "LEGS_P0_15_6" /* GXT: Brown Plaid Golf Pants */, 16);
 			iVar3 = 15;
 			iVar4 = 6;
 			iVar1 = 750;
 			break;
 		
 		case 54:
-			StringCopy(&Var2, "LEGS_P0_15_7", 16);
+			StringCopy(&Var2, "LEGS_P0_15_7" /* GXT: Slate Golf Pants */, 16);
 			iVar3 = 15;
 			iVar4 = 7;
 			iVar1 = 850;
 			break;
 		
 		case 55:
-			StringCopy(&Var2, "LEGS_P0_16_0", 16);
+			StringCopy(&Var2, "LEGS_P0_16_0" /* GXT: Beige Shorts */, 16);
 			iVar3 = 16;
 			iVar4 = 0;
 			break;
 		
 		case 56:
-			StringCopy(&Var2, "LEGS_P0_16_1", 16);
+			StringCopy(&Var2, "LEGS_P0_16_1" /* GXT: Yellow Shorts */, 16);
 			iVar3 = 16;
 			iVar4 = 1;
 			iVar1 = 48;
 			break;
 		
 		case 57:
-			StringCopy(&Var2, "LEGS_P0_16_2", 16);
+			StringCopy(&Var2, "LEGS_P0_16_2" /* GXT: Blue Shorts */, 16);
 			iVar3 = 16;
 			iVar4 = 2;
 			iVar1 = 48;
 			break;
 		
 		case 58:
-			StringCopy(&Var2, "LEGS_P0_16_3", 16);
+			StringCopy(&Var2, "LEGS_P0_16_3" /* GXT: Brown Leafy Shorts */, 16);
 			iVar3 = 16;
 			iVar4 = 3;
 			iVar1 = 38;
 			break;
 		
 		case 59:
-			StringCopy(&Var2, "LEGS_P0_16_4", 16);
+			StringCopy(&Var2, "LEGS_P0_16_4" /* GXT: Tropical Shorts */, 16);
 			iVar3 = 16;
 			iVar4 = 4;
 			iVar1 = 38;
 			break;
 		
 		case 60:
-			StringCopy(&Var2, "LEGS_P0_16_5", 16);
+			StringCopy(&Var2, "LEGS_P0_16_5" /* GXT: Aqua Vintage Shorts */, 16);
 			iVar3 = 16;
 			iVar4 = 5;
 			iVar1 = 42;
 			break;
 		
 		case 61:
-			StringCopy(&Var2, "LEGS_P0_16_6", 16);
+			StringCopy(&Var2, "LEGS_P0_16_6" /* GXT: Bright Two-Tone Shorts */, 16);
 			iVar3 = 16;
 			iVar4 = 6;
 			iVar1 = 58;
 			break;
 		
 		case 62:
-			StringCopy(&Var2, "LEGS_P0_16_7", 16);
+			StringCopy(&Var2, "LEGS_P0_16_7" /* GXT: Red Floral Shorts */, 16);
 			iVar3 = 16;
 			iVar4 = 7;
 			iVar1 = 46;
 			break;
 		
 		case 63:
-			StringCopy(&Var2, "LEGS_P0_16_8", 16);
+			StringCopy(&Var2, "LEGS_P0_16_8" /* GXT: Navy Floral Shorts */, 16);
 			iVar3 = 16;
 			iVar4 = 8;
 			iVar1 = 46;
 			break;
 		
 		case 64:
-			StringCopy(&Var2, "LEGS_P0_16_9", 16);
+			StringCopy(&Var2, "LEGS_P0_16_9" /* GXT: Blue Floral Shorts */, 16);
 			iVar3 = 16;
 			iVar4 = 9;
 			iVar1 = 46;
 			break;
 		
 		case 65:
-			StringCopy(&Var2, "LEGS_P0_16_10", 16);
+			StringCopy(&Var2, "LEGS_P0_16_10" /* GXT: Orange Shorts */, 16);
 			iVar3 = 16;
 			iVar4 = 10;
 			iVar1 = 68;
 			break;
 		
 		case 66:
-			StringCopy(&Var2, "LEGS_P0_16_11", 16);
+			StringCopy(&Var2, "LEGS_P0_16_11" /* GXT: White Striped Shorts */, 16);
 			iVar3 = 16;
 			iVar4 = 11;
 			iVar1 = 58;
 			break;
 		
 		case 67:
-			StringCopy(&Var2, "LEGS_P0_16_12", 16);
+			StringCopy(&Var2, "LEGS_P0_16_12" /* GXT: Charcoal Shorts */, 16);
 			iVar3 = 16;
 			iVar4 = 12;
 			iVar1 = 50;
 			break;
 		
 		case 68:
-			StringCopy(&Var2, "LEGS_P0_16_13", 16);
+			StringCopy(&Var2, "LEGS_P0_16_13" /* GXT: Gray Shorts */, 16);
 			iVar3 = 16;
 			iVar4 = 13;
 			iVar1 = 68;
 			break;
 		
 		case 69:
-			StringCopy(&Var2, "LEGS_P0_16_14", 16);
+			StringCopy(&Var2, "LEGS_P0_16_14" /* GXT: Candy Surf Shorts */, 16);
 			iVar3 = 16;
 			iVar4 = 14;
 			iVar1 = 68;
 			break;
 		
 		case 70:
-			StringCopy(&Var2, "LEGS_P0_16_15", 16);
+			StringCopy(&Var2, "LEGS_P0_16_15" /* GXT: Undersea Shorts */, 16);
 			iVar3 = 16;
 			iVar4 = 15;
 			iVar1 = 42;
@@ -55787,55 +55787,55 @@ void func_566(int iParam0)//Position - 0x43D37
 			break;
 		
 		case 72:
-			StringCopy(&Var2, "LEGS_P0_18_0", 16);
+			StringCopy(&Var2, "LEGS_P0_18_0" /* GXT: White Striped Boxers */, 16);
 			iVar3 = 18;
 			iVar4 = 0;
 			break;
 		
 		case 73:
-			StringCopy(&Var2, "LEGS_P0_18_1", 16);
+			StringCopy(&Var2, "LEGS_P0_18_1" /* GXT: Blue Boxers */, 16);
 			iVar3 = 18;
 			iVar4 = 1;
 			iVar1 = 250;
 			break;
 		
 		case 74:
-			StringCopy(&Var2, "LEGS_P0_18_2", 16);
+			StringCopy(&Var2, "LEGS_P0_18_2" /* GXT: Ash Boxers */, 16);
 			iVar3 = 18;
 			iVar4 = 2;
 			iVar1 = 250;
 			break;
 		
 		case 75:
-			StringCopy(&Var2, "LEGS_P0_18_3", 16);
+			StringCopy(&Var2, "LEGS_P0_18_3" /* GXT: Blue Striped Boxers */, 16);
 			iVar3 = 18;
 			iVar4 = 3;
 			iVar1 = 290;
 			break;
 		
 		case 76:
-			StringCopy(&Var2, "LEGS_P0_18_4", 16);
+			StringCopy(&Var2, "LEGS_P0_18_4" /* GXT: White Boxers */, 16);
 			iVar3 = 18;
 			iVar4 = 4;
 			iVar1 = 270;
 			break;
 		
 		case 77:
-			StringCopy(&Var2, "LEGS_P0_18_5", 16);
+			StringCopy(&Var2, "LEGS_P0_18_5" /* GXT: Charcoal Boxers */, 16);
 			iVar3 = 18;
 			iVar4 = 5;
 			iVar1 = 270;
 			break;
 		
 		case 78:
-			StringCopy(&Var2, "LEGS_P0_18_6", 16);
+			StringCopy(&Var2, "LEGS_P0_18_6" /* GXT: Red Heart Boxers */, 16);
 			iVar3 = 18;
 			iVar4 = 6;
 			iVar1 = 15;
 			break;
 		
 		case 79:
-			StringCopy(&Var2, "LEGS_P0_18_7", 16);
+			StringCopy(&Var2, "LEGS_P0_18_7" /* GXT: Blue Heart Boxers */, 16);
 			iVar3 = 18;
 			iVar4 = 7;
 			iVar1 = 12;
@@ -55849,75 +55849,75 @@ void func_566(int iParam0)//Position - 0x43D37
 			break;
 		
 		case 81:
-			StringCopy(&Var2, "LEGS_P0_20_0", 16);
+			StringCopy(&Var2, "LEGS_P0_20_0" /* GXT: Blue Casual Jeans */, 16);
 			iVar3 = 20;
 			iVar4 = 0;
 			break;
 		
 		case 82:
-			StringCopy(&Var2, "LEGS_P0_20_1", 16);
+			StringCopy(&Var2, "LEGS_P0_20_1" /* GXT: Black Casual Jeans */, 16);
 			iVar3 = 20;
 			iVar4 = 1;
 			iVar1 = 118;
 			break;
 		
 		case 83:
-			StringCopy(&Var2, "LEGS_P0_20_2", 16);
+			StringCopy(&Var2, "LEGS_P0_20_2" /* GXT: Faded Casual Jeans */, 16);
 			iVar3 = 20;
 			iVar4 = 2;
 			iVar1 = 110;
 			break;
 		
 		case 84:
-			StringCopy(&Var2, "LEGS_P0_21_0", 16);
+			StringCopy(&Var2, "LEGS_P0_21_0" /* GXT: Tan Pants */, 16);
 			iVar3 = 21;
 			iVar4 = 0;
 			iVar1 = 88;
 			break;
 		
 		case 85:
-			StringCopy(&Var2, "LEGS_P0_21_1", 16);
+			StringCopy(&Var2, "LEGS_P0_21_1" /* GXT: Charcoal Pants */, 16);
 			iVar3 = 21;
 			iVar4 = 1;
 			iVar1 = 95;
 			break;
 		
 		case 86:
-			StringCopy(&Var2, "LEGS_P0_21_2", 16);
+			StringCopy(&Var2, "LEGS_P0_21_2" /* GXT: Brown Pants */, 16);
 			iVar3 = 21;
 			iVar4 = 2;
 			iVar1 = 95;
 			break;
 		
 		case 87:
-			StringCopy(&Var2, "LEGS_P0_21_3", 16);
+			StringCopy(&Var2, "LEGS_P0_21_3" /* GXT: Ash Pants */, 16);
 			iVar3 = 21;
 			iVar4 = 3;
 			iVar1 = 98;
 			break;
 		
 		case 88:
-			StringCopy(&Var2, "LEGS_P0_22_0", 16);
+			StringCopy(&Var2, "LEGS_P0_22_0" /* GXT: Smart Jeans */, 16);
 			iVar3 = 22;
 			iVar4 = 0;
 			iVar1 = 140;
 			break;
 		
 		case 89:
-			StringCopy(&Var2, "LEGS_P0_23_0", 16);
+			StringCopy(&Var2, "LEGS_P0_23_0" /* GXT: White Tennis Shorts */, 16);
 			iVar3 = 23;
 			iVar4 = 0;
 			break;
 		
 		case 90:
-			StringCopy(&Var2, "LEGS_P0_23_1", 16);
+			StringCopy(&Var2, "LEGS_P0_23_1" /* GXT: Lobon Tennis Shorts */, 16);
 			iVar3 = 23;
 			iVar4 = 1;
 			iVar1 = 150;
 			break;
 		
 		case 91:
-			StringCopy(&Var2, "LEGS_P0_23_2", 16);
+			StringCopy(&Var2, "LEGS_P0_23_2" /* GXT: Plaid Tennis Shorts */, 16);
 			iVar3 = 23;
 			iVar4 = 2;
 			iVar1 = 130;
@@ -55945,118 +55945,118 @@ void func_566(int iParam0)//Position - 0x43D37
 			break;
 		
 		case 95:
-			StringCopy(&Var2, "LEGS_P0_27_0", 16);
+			StringCopy(&Var2, "LEGS_P0_27_0" /* GXT: Beige Shorts, Bare Feet */, 16);
 			iVar3 = 27;
 			iVar4 = 0;
 			break;
 		
 		case 96:
-			StringCopy(&Var2, "LEGS_P0_28_0", 16);
+			StringCopy(&Var2, "LEGS_P0_28_0" /* GXT: Pale Blue Bermudas */, 16);
 			iVar3 = 28;
 			iVar4 = 0;
 			iVar1 = 45;
 			break;
 		
 		case 97:
-			StringCopy(&Var2, "LEGS_P0_28_1", 16);
+			StringCopy(&Var2, "LEGS_P0_28_1" /* GXT: Beige Bermudas */, 16);
 			iVar3 = 28;
 			iVar4 = 1;
 			iVar1 = 48;
 			break;
 		
 		case 98:
-			StringCopy(&Var2, "LEGS_P0_28_2", 16);
+			StringCopy(&Var2, "LEGS_P0_28_2" /* GXT: Cream Bermudas */, 16);
 			iVar3 = 28;
 			iVar4 = 2;
 			iVar1 = 48;
 			break;
 		
 		case 99:
-			StringCopy(&Var2, "LEGS_P0_28_3", 16);
+			StringCopy(&Var2, "LEGS_P0_28_3" /* GXT: Olive Bermudas */, 16);
 			iVar3 = 28;
 			iVar4 = 3;
 			iVar1 = 52;
 			break;
 		
 		case 100:
-			StringCopy(&Var2, "LEGS_P0_28_4", 16);
+			StringCopy(&Var2, "LEGS_P0_28_4" /* GXT: Blue Bermudas */, 16);
 			iVar3 = 28;
 			iVar4 = 4;
 			iVar1 = 52;
 			break;
 		
 		case 101:
-			StringCopy(&Var2, "LEGS_P0_28_5", 16);
+			StringCopy(&Var2, "LEGS_P0_28_5" /* GXT: Off-White Bermudas */, 16);
 			iVar3 = 28;
 			iVar4 = 5;
 			iVar1 = 55;
 			break;
 		
 		case 102:
-			StringCopy(&Var2, "LEGS_P0_28_6", 16);
+			StringCopy(&Var2, "LEGS_P0_28_6" /* GXT: Gray Bermudas */, 16);
 			iVar3 = 28;
 			iVar4 = 6;
 			iVar1 = 55;
 			break;
 		
 		case 103:
-			StringCopy(&Var2, "LEGS_P0_28_7", 16);
+			StringCopy(&Var2, "LEGS_P0_28_7" /* GXT: Charcoal Bermudas */, 16);
 			iVar3 = 28;
 			iVar4 = 7;
 			iVar1 = 55;
 			break;
 		
 		case 104:
-			StringCopy(&Var2, "LEGS_P0_28_8", 16);
+			StringCopy(&Var2, "LEGS_P0_28_8" /* GXT: Pink Bermudas */, 16);
 			iVar3 = 28;
 			iVar4 = 8;
 			iVar1 = 58;
 			break;
 		
 		case 105:
-			StringCopy(&Var2, "LEGS_P0_28_9", 16);
+			StringCopy(&Var2, "LEGS_P0_28_9" /* GXT: Beige Plaid Bermudas */, 16);
 			iVar3 = 28;
 			iVar4 = 9;
 			iVar1 = 58;
 			break;
 		
 		case 106:
-			StringCopy(&Var2, "LEGS_P0_28_10", 16);
+			StringCopy(&Var2, "LEGS_P0_28_10" /* GXT: Pastel Plaid Bermudas */, 16);
 			iVar3 = 28;
 			iVar4 = 10;
 			iVar1 = 60;
 			break;
 		
 		case 107:
-			StringCopy(&Var2, "LEGS_P0_28_11", 16);
+			StringCopy(&Var2, "LEGS_P0_28_11" /* GXT: Orange Plaid Bermudas */, 16);
 			iVar3 = 28;
 			iVar4 = 11;
 			iVar1 = 60;
 			break;
 		
 		case 108:
-			StringCopy(&Var2, "LEGS_P0_28_12", 16);
+			StringCopy(&Var2, "LEGS_P0_28_12" /* GXT: Gray Plaid Bermudas */, 16);
 			iVar3 = 28;
 			iVar4 = 12;
 			iVar1 = 62;
 			break;
 		
 		case 109:
-			StringCopy(&Var2, "LEGS_P0_28_13", 16);
+			StringCopy(&Var2, "LEGS_P0_28_13" /* GXT: Blue Striped Bermudas */, 16);
 			iVar3 = 28;
 			iVar4 = 13;
 			iVar1 = 62;
 			break;
 		
 		case 110:
-			StringCopy(&Var2, "LEGS_P0_28_14", 16);
+			StringCopy(&Var2, "LEGS_P0_28_14" /* GXT: Murky Plaid Bermudas */, 16);
 			iVar3 = 28;
 			iVar4 = 14;
 			iVar1 = 65;
 			break;
 		
 		case 111:
-			StringCopy(&Var2, "LEGS_P0_28_15", 16);
+			StringCopy(&Var2, "LEGS_P0_28_15" /* GXT: Pastel Check Bermudas */, 16);
 			iVar3 = 28;
 			iVar4 = 15;
 			iVar1 = 65;
@@ -56184,42 +56184,42 @@ void func_568(int iParam0)//Position - 0x44C58
 			break;
 		
 		case 70:
-			StringCopy(&Var2, "TORSO_P0_14_0", 16);
+			StringCopy(&Var2, "TORSO_P0_14_0" /* GXT: Rearwall Black Gilet */, 16);
 			iVar3 = 14;
 			iVar4 = 0;
 			iVar1 = 120;
 			break;
 		
 		case 71:
-			StringCopy(&Var2, "TORSO_P0_14_1", 16);
+			StringCopy(&Var2, "TORSO_P0_14_1" /* GXT: Fruntalot Red Gilet */, 16);
 			iVar3 = 14;
 			iVar4 = 1;
 			iVar1 = 120;
 			break;
 		
 		case 72:
-			StringCopy(&Var2, "TORSO_P0_14_2", 16);
+			StringCopy(&Var2, "TORSO_P0_14_2" /* GXT: Yeti Blue Gilet */, 16);
 			iVar3 = 14;
 			iVar4 = 2;
 			iVar1 = 120;
 			break;
 		
 		case 73:
-			StringCopy(&Var2, "TORSO_P0_14_3", 16);
+			StringCopy(&Var2, "TORSO_P0_14_3" /* GXT: Rearwall Brown Gilet */, 16);
 			iVar3 = 14;
 			iVar4 = 3;
 			iVar1 = 120;
 			break;
 		
 		case 74:
-			StringCopy(&Var2, "TORSO_P0_14_4", 16);
+			StringCopy(&Var2, "TORSO_P0_14_4" /* GXT: Rearwall Orange Gilet */, 16);
 			iVar3 = 14;
 			iVar4 = 4;
 			iVar1 = 120;
 			break;
 		
 		case 75:
-			StringCopy(&Var2, "TORSO_P0_14_5", 16);
+			StringCopy(&Var2, "TORSO_P0_14_5" /* GXT: Rearwall Green Gilet */, 16);
 			iVar3 = 14;
 			iVar4 = 5;
 			iVar1 = 120;
@@ -56233,94 +56233,94 @@ void func_568(int iParam0)//Position - 0x44C58
 			break;
 		
 		case 77:
-			StringCopy(&Var2, "TORSO_P0_16_0", 16);
+			StringCopy(&Var2, "TORSO_P0_16_0" /* GXT: Purple Golf Shirt */, 16);
 			iVar3 = 16;
 			iVar4 = 0;
 			break;
 		
 		case 78:
-			StringCopy(&Var2, "TORSO_P0_16_1", 16);
+			StringCopy(&Var2, "TORSO_P0_16_1" /* GXT: Orange Golf Shirt */, 16);
 			iVar3 = 16;
 			iVar4 = 1;
 			iVar1 = 20;
 			break;
 		
 		case 79:
-			StringCopy(&Var2, "TORSO_P0_16_2", 16);
+			StringCopy(&Var2, "TORSO_P0_16_2" /* GXT: Burgundy Golf Shirt */, 16);
 			iVar3 = 16;
 			iVar4 = 2;
 			iVar1 = 24;
 			break;
 		
 		case 80:
-			StringCopy(&Var2, "TORSO_P0_16_3", 16);
+			StringCopy(&Var2, "TORSO_P0_16_3" /* GXT: Yellow Golf Shirt */, 16);
 			iVar3 = 16;
 			iVar4 = 3;
 			iVar1 = 22;
 			break;
 		
 		case 81:
-			StringCopy(&Var2, "TORSO_P0_16_4", 16);
+			StringCopy(&Var2, "TORSO_P0_16_4" /* GXT: Blue Golf Shirt */, 16);
 			iVar3 = 16;
 			iVar4 = 4;
 			iVar1 = 25;
 			break;
 		
 		case 82:
-			StringCopy(&Var2, "TORSO_P0_16_5", 16);
+			StringCopy(&Var2, "TORSO_P0_16_5" /* GXT: Mint Golf Shirt */, 16);
 			iVar3 = 16;
 			iVar4 = 5;
 			iVar1 = 25;
 			break;
 		
 		case 83:
-			StringCopy(&Var2, "TORSO_P0_16_6", 16);
+			StringCopy(&Var2, "TORSO_P0_16_6" /* GXT: Brown Golf Shirt */, 16);
 			iVar3 = 16;
 			iVar4 = 6;
 			iVar1 = 22;
 			break;
 		
 		case 84:
-			StringCopy(&Var2, "TORSO_P0_16_7", 16);
+			StringCopy(&Var2, "TORSO_P0_16_7" /* GXT: Crimson Golf Shirt */, 16);
 			iVar3 = 16;
 			iVar4 = 7;
 			iVar1 = 27;
 			break;
 		
 		case 85:
-			StringCopy(&Var2, "TORSO_P0_17_0", 16);
+			StringCopy(&Var2, "TORSO_P0_17_0" /* GXT: Blue-Gray Polo Shirt */, 16);
 			iVar3 = 17;
 			iVar4 = 0;
 			break;
 		
 		case 86:
-			StringCopy(&Var2, "TORSO_P0_17_1", 16);
+			StringCopy(&Var2, "TORSO_P0_17_1" /* GXT: Olive Polo Shirt */, 16);
 			iVar3 = 17;
 			iVar4 = 1;
 			break;
 		
 		case 87:
-			StringCopy(&Var2, "TORSO_P0_17_2", 16);
+			StringCopy(&Var2, "TORSO_P0_17_2" /* GXT: Red Polo Shirt */, 16);
 			iVar3 = 17;
 			iVar4 = 2;
 			break;
 		
 		case 88:
-			StringCopy(&Var2, "TORSO_P0_17_3", 16);
+			StringCopy(&Var2, "TORSO_P0_17_3" /* GXT: Black Polo Shirt */, 16);
 			iVar3 = 17;
 			iVar4 = 3;
 			iVar1 = 48;
 			break;
 		
 		case 89:
-			StringCopy(&Var2, "TORSO_P0_17_4", 16);
+			StringCopy(&Var2, "TORSO_P0_17_4" /* GXT: White Polo Shirt */, 16);
 			iVar3 = 17;
 			iVar4 = 4;
 			iVar1 = 40;
 			break;
 		
 		case 90:
-			StringCopy(&Var2, "TORSO_P0_17_5", 16);
+			StringCopy(&Var2, "TORSO_P0_17_5" /* GXT: Blue Polo Shirt */, 16);
 			iVar3 = 17;
 			iVar4 = 5;
 			iVar1 = 45;
@@ -56334,543 +56334,543 @@ void func_568(int iParam0)//Position - 0x44C58
 			break;
 		
 		case 92:
-			StringCopy(&Var2, "TORSO_P0_19_0", 16);
+			StringCopy(&Var2, "TORSO_P0_19_0" /* GXT: Off-White Tank Top */, 16);
 			iVar3 = 19;
 			iVar4 = 0;
 			break;
 		
 		case 93:
-			StringCopy(&Var2, "TORSO_P0_19_1", 16);
+			StringCopy(&Var2, "TORSO_P0_19_1" /* GXT: White Tank Top */, 16);
 			iVar3 = 19;
 			iVar4 = 1;
 			iVar1 = 190;
 			break;
 		
 		case 94:
-			StringCopy(&Var2, "TORSO_P0_19_2", 16);
+			StringCopy(&Var2, "TORSO_P0_19_2" /* GXT: Ash Tank Top */, 16);
 			iVar3 = 19;
 			iVar4 = 2;
 			iVar1 = 190;
 			break;
 		
 		case 95:
-			StringCopy(&Var2, "TORSO_P0_19_3", 16);
+			StringCopy(&Var2, "TORSO_P0_19_3" /* GXT: Gray Tank Top */, 16);
 			iVar3 = 19;
 			iVar4 = 3;
 			iVar1 = 190;
 			break;
 		
 		case 96:
-			StringCopy(&Var2, "TORSO_P0_19_4", 16);
+			StringCopy(&Var2, "TORSO_P0_19_4" /* GXT: Black Tank Top */, 16);
 			iVar3 = 19;
 			iVar4 = 4;
 			iVar1 = 210;
 			break;
 		
 		case 97:
-			StringCopy(&Var2, "TORSO_P0_20_0", 16);
+			StringCopy(&Var2, "TORSO_P0_20_0" /* GXT: Blue Denim Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 0;
 			break;
 		
 		case 98:
-			StringCopy(&Var2, "TORSO_P0_20_1", 16);
+			StringCopy(&Var2, "TORSO_P0_20_1" /* GXT: Deep Black Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 1;
 			iVar1 = 115;
 			break;
 		
 		case 99:
-			StringCopy(&Var2, "TORSO_P0_20_2", 16);
+			StringCopy(&Var2, "TORSO_P0_20_2" /* GXT: Russet Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 2;
 			iVar1 = 55;
 			break;
 		
 		case 100:
-			StringCopy(&Var2, "TORSO_P0_20_3", 16);
+			StringCopy(&Var2, "TORSO_P0_20_3" /* GXT: Green Cord Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 3;
 			iVar1 = 110;
 			break;
 		
 		case 101:
-			StringCopy(&Var2, "TORSO_P0_20_4", 16);
+			StringCopy(&Var2, "TORSO_P0_20_4" /* GXT: Gray Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 4;
 			iVar1 = 99;
 			break;
 		
 		case 102:
-			StringCopy(&Var2, "TORSO_P0_20_5", 16);
+			StringCopy(&Var2, "TORSO_P0_20_5" /* GXT: Fresh Check Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 5;
 			iVar1 = 49;
 			break;
 		
 		case 103:
-			StringCopy(&Var2, "TORSO_P0_20_6", 16);
+			StringCopy(&Var2, "TORSO_P0_20_6" /* GXT: Southern Plaid Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 6;
 			iVar1 = 120;
 			break;
 		
 		case 104:
-			StringCopy(&Var2, "TORSO_P0_20_7", 16);
+			StringCopy(&Var2, "TORSO_P0_20_7" /* GXT: Sunrise Yellow Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 7;
 			iVar1 = 45;
 			break;
 		
 		case 105:
-			StringCopy(&Var2, "TORSO_P0_20_8", 16);
+			StringCopy(&Var2, "TORSO_P0_20_8" /* GXT: White Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 8;
 			iVar1 = 115;
 			break;
 		
 		case 106:
-			StringCopy(&Var2, "TORSO_P0_20_9", 16);
+			StringCopy(&Var2, "TORSO_P0_20_9" /* GXT: Stone Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 9;
 			iVar1 = 105;
 			break;
 		
 		case 107:
-			StringCopy(&Var2, "TORSO_P0_20_10", 16);
+			StringCopy(&Var2, "TORSO_P0_20_10" /* GXT: Earth Plaid Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 10;
 			iVar1 = 90;
 			break;
 		
 		case 108:
-			StringCopy(&Var2, "TORSO_P0_20_11", 16);
+			StringCopy(&Var2, "TORSO_P0_20_11" /* GXT: Green Check Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 11;
 			iVar1 = 95;
 			break;
 		
 		case 109:
-			StringCopy(&Var2, "TORSO_P0_20_12", 16);
+			StringCopy(&Var2, "TORSO_P0_20_12" /* GXT: Country Plaid Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 12;
 			iVar1 = 39;
 			break;
 		
 		case 110:
-			StringCopy(&Var2, "TORSO_P0_20_13", 16);
+			StringCopy(&Var2, "TORSO_P0_20_13" /* GXT: Orange Tight Check Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 13;
 			iVar1 = 95;
 			break;
 		
 		case 111:
-			StringCopy(&Var2, "TORSO_P0_20_14", 16);
+			StringCopy(&Var2, "TORSO_P0_20_14" /* GXT: Bright Blue Plaid Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 14;
 			iVar1 = 35;
 			break;
 		
 		case 112:
-			StringCopy(&Var2, "TORSO_P0_20_15", 16);
+			StringCopy(&Var2, "TORSO_P0_20_15" /* GXT: Blue Check Shirt */, 16);
 			iVar3 = 20;
 			iVar4 = 15;
 			iVar1 = 95;
 			break;
 		
 		case 113:
-			StringCopy(&Var2, "TORSO_P0_21_0", 16);
+			StringCopy(&Var2, "TORSO_P0_21_0" /* GXT: Gray Hoodie */, 16);
 			iVar3 = 21;
 			iVar4 = 0;
 			iVar1 = 88;
 			break;
 		
 		case 114:
-			StringCopy(&Var2, "TORSO_P0_21_1", 16);
+			StringCopy(&Var2, "TORSO_P0_21_1" /* GXT: Ammu-Nation Camo Hoodie */, 16);
 			iVar3 = 21;
 			iVar4 = 1;
 			iVar1 = 60;
 			break;
 		
 		case 115:
-			StringCopy(&Var2, "TORSO_P0_21_2", 16);
+			StringCopy(&Var2, "TORSO_P0_21_2" /* GXT: LSGC Gray Hoodie */, 16);
 			iVar3 = 21;
 			iVar4 = 2;
 			iVar1 = 70;
 			break;
 		
 		case 116:
-			StringCopy(&Var2, "TORSO_P0_21_3", 16);
+			StringCopy(&Var2, "TORSO_P0_21_3" /* GXT: LSGC Urban Hoodie */, 16);
 			iVar3 = 21;
 			iVar4 = 3;
 			iVar1 = 80;
 			break;
 		
 		case 117:
-			StringCopy(&Var2, "TORSO_P0_21_4", 16);
+			StringCopy(&Var2, "TORSO_P0_21_4" /* GXT: LSGC Forest Hoodie */, 16);
 			iVar3 = 21;
 			iVar4 = 4;
 			iVar1 = 90;
 			break;
 		
 		case 118:
-			StringCopy(&Var2, "TORSO_P0_21_5", 16);
+			StringCopy(&Var2, "TORSO_P0_21_5" /* GXT: Ammu-Nation A Hoodie */, 16);
 			iVar3 = 21;
 			iVar4 = 5;
 			iVar1 = 80;
 			break;
 		
 		case 119:
-			StringCopy(&Var2, "TORSO_P0_21_6", 16);
+			StringCopy(&Var2, "TORSO_P0_21_6" /* GXT: Blauser Hoodie */, 16);
 			iVar3 = 21;
 			iVar4 = 6;
 			iVar1 = 70;
 			break;
 		
 		case 120:
-			StringCopy(&Var2, "TORSO_P0_21_7", 16);
+			StringCopy(&Var2, "TORSO_P0_21_7" /* GXT: Penetrators Orange Hoodie */, 16);
 			iVar3 = 21;
 			iVar4 = 7;
 			iVar1 = 95;
 			break;
 		
 		case 121:
-			StringCopy(&Var2, "TORSO_P0_21_8", 16);
+			StringCopy(&Var2, "TORSO_P0_21_8" /* GXT: Crevis Fluorescent Hoodie */, 16);
 			iVar3 = 21;
 			iVar4 = 8;
 			iVar1 = 105;
 			break;
 		
 		case 122:
-			StringCopy(&Var2, "TORSO_P0_21_9", 16);
+			StringCopy(&Var2, "TORSO_P0_21_9" /* GXT: Blue Hoodie */, 16);
 			iVar3 = 21;
 			iVar4 = 9;
 			iVar1 = 95;
 			break;
 		
 		case 123:
-			StringCopy(&Var2, "TORSO_P0_21_10", 16);
+			StringCopy(&Var2, "TORSO_P0_21_10" /* GXT: Green Hoodie */, 16);
 			iVar3 = 21;
 			iVar4 = 10;
 			iVar1 = 110;
 			break;
 		
 		case 124:
-			StringCopy(&Var2, "TORSO_P0_21_11", 16);
+			StringCopy(&Var2, "TORSO_P0_21_11" /* GXT: LS Jardineros Hoodie */, 16);
 			iVar3 = 21;
 			iVar4 = 11;
 			iVar1 = 98;
 			break;
 		
 		case 125:
-			StringCopy(&Var2, "TORSO_P0_21_12", 16);
+			StringCopy(&Var2, "TORSO_P0_21_12" /* GXT: Ash 18 Hoodie */, 16);
 			iVar3 = 21;
 			iVar4 = 12;
 			iVar1 = 88;
 			break;
 		
 		case 126:
-			StringCopy(&Var2, "TORSO_P0_21_13", 16);
+			StringCopy(&Var2, "TORSO_P0_21_13" /* GXT: Red Mist XI Hoodie */, 16);
 			iVar3 = 21;
 			iVar4 = 13;
 			iVar1 = 98;
 			break;
 		
 		case 127:
-			StringCopy(&Var2, "TORSO_P0_21_14", 16);
+			StringCopy(&Var2, "TORSO_P0_21_14" /* GXT: Eris Charcoal Hoodie */, 16);
 			iVar3 = 21;
 			iVar4 = 14;
 			iVar1 = 110;
 			break;
 		
 		case 128:
-			StringCopy(&Var2, "TORSO_P0_21_15", 16);
+			StringCopy(&Var2, "TORSO_P0_21_15" /* GXT: OG Hoodie */, 16);
 			iVar3 = 21;
 			iVar4 = 15;
 			iVar1 = 98;
 			break;
 		
 		case 129:
-			StringCopy(&Var2, "TORSO_P0_22_0", 16);
+			StringCopy(&Var2, "TORSO_P0_22_0" /* GXT: Distressed Leather Jacket */, 16);
 			iVar3 = 22;
 			iVar4 = 0;
 			break;
 		
 		case 130:
-			StringCopy(&Var2, "TORSO_P0_22_1", 16);
+			StringCopy(&Var2, "TORSO_P0_22_1" /* GXT: Black Leather Jacket */, 16);
 			iVar3 = 22;
 			iVar4 = 1;
 			iVar1 = 4950;
 			break;
 		
 		case 131:
-			StringCopy(&Var2, "TORSO_P0_22_2", 16);
+			StringCopy(&Var2, "TORSO_P0_22_2" /* GXT: Chestnut Leather Jacket */, 16);
 			iVar3 = 22;
 			iVar4 = 2;
 			iVar1 = 4195;
 			break;
 		
 		case 132:
-			StringCopy(&Var2, "TORSO_P0_22_3", 16);
+			StringCopy(&Var2, "TORSO_P0_22_3" /* GXT: Oxblood Leather Jacket */, 16);
 			iVar3 = 22;
 			iVar4 = 3;
 			iVar1 = 3195;
 			break;
 		
 		case 133:
-			StringCopy(&Var2, "TORSO_P0_22_4", 16);
+			StringCopy(&Var2, "TORSO_P0_22_4" /* GXT: Vintage Black Leather Jacket */, 16);
 			iVar3 = 22;
 			iVar4 = 4;
 			iVar1 = 2950;
 			break;
 		
 		case 134:
-			StringCopy(&Var2, "TORSO_P0_22_5", 16);
+			StringCopy(&Var2, "TORSO_P0_22_5" /* GXT: Brown Leather Jacket */, 16);
 			iVar3 = 22;
 			iVar4 = 5;
 			iVar1 = 3950;
 			break;
 		
 		case 135:
-			StringCopy(&Var2, "TORSO_P0_23_0", 16);
+			StringCopy(&Var2, "TORSO_P0_23_0" /* GXT: Silver Sports Coat */, 16);
 			iVar3 = 23;
 			iVar4 = 0;
 			iVar1 = 3200;
 			break;
 		
 		case 136:
-			StringCopy(&Var2, "TORSO_P0_23_1", 16);
+			StringCopy(&Var2, "TORSO_P0_23_1" /* GXT: Gray-Green Sports Coat */, 16);
 			iVar3 = 23;
 			iVar4 = 1;
 			iVar1 = 3200;
 			break;
 		
 		case 137:
-			StringCopy(&Var2, "TORSO_P0_23_2", 16);
+			StringCopy(&Var2, "TORSO_P0_23_2" /* GXT: Slate Sports Coat */, 16);
 			iVar3 = 23;
 			iVar4 = 2;
 			iVar1 = 3200;
 			break;
 		
 		case 138:
-			StringCopy(&Var2, "TORSO_P0_23_3", 16);
+			StringCopy(&Var2, "TORSO_P0_23_3" /* GXT: Gray Sports Coat */, 16);
 			iVar3 = 23;
 			iVar4 = 3;
 			iVar1 = 3200;
 			break;
 		
 		case 139:
-			StringCopy(&Var2, "TORSO_P0_23_4", 16);
+			StringCopy(&Var2, "TORSO_P0_23_4" /* GXT: Blue Sports Coat */, 16);
 			iVar3 = 23;
 			iVar4 = 4;
 			iVar1 = 3200;
 			break;
 		
 		case 140:
-			StringCopy(&Var2, "TORSO_P0_23_5", 16);
+			StringCopy(&Var2, "TORSO_P0_23_5" /* GXT: Pale Blue Sports Coat */, 16);
 			iVar3 = 23;
 			iVar4 = 5;
 			iVar1 = 3200;
 			break;
 		
 		case 141:
-			StringCopy(&Var2, "TORSO_P0_23_6", 16);
+			StringCopy(&Var2, "TORSO_P0_23_6" /* GXT: White Sports Coat */, 16);
 			iVar3 = 23;
 			iVar4 = 6;
 			iVar1 = 3200;
 			break;
 		
 		case 142:
-			StringCopy(&Var2, "TORSO_P0_23_7", 16);
+			StringCopy(&Var2, "TORSO_P0_23_7" /* GXT: Warm Gray Sports Coat */, 16);
 			iVar3 = 23;
 			iVar4 = 7;
 			iVar1 = 3200;
 			break;
 		
 		case 143:
-			StringCopy(&Var2, "TORSO_P0_23_8", 16);
+			StringCopy(&Var2, "TORSO_P0_23_8" /* GXT: Cream Sports Coat */, 16);
 			iVar3 = 23;
 			iVar4 = 8;
 			iVar1 = 3200;
 			break;
 		
 		case 144:
-			StringCopy(&Var2, "TORSO_P0_23_9", 16);
+			StringCopy(&Var2, "TORSO_P0_23_9" /* GXT: Midnight Blue Sports Coat */, 16);
 			iVar3 = 23;
 			iVar4 = 9;
 			iVar1 = 3200;
 			break;
 		
 		case 145:
-			StringCopy(&Var2, "TORSO_P0_23_10", 16);
+			StringCopy(&Var2, "TORSO_P0_23_10" /* GXT: Off-White Sports Coat */, 16);
 			iVar3 = 23;
 			iVar4 = 10;
 			iVar1 = 3200;
 			break;
 		
 		case 146:
-			StringCopy(&Var2, "TORSO_P0_23_11", 16);
+			StringCopy(&Var2, "TORSO_P0_23_11" /* GXT: Charcoal Wool Sports Coat */, 16);
 			iVar3 = 23;
 			iVar4 = 11;
 			iVar1 = 3200;
 			break;
 		
 		case 147:
-			StringCopy(&Var2, "TORSO_P0_23_12", 16);
+			StringCopy(&Var2, "TORSO_P0_23_12" /* GXT: Charcoal Sports Coat */, 16);
 			iVar3 = 23;
 			iVar4 = 12;
 			iVar1 = 3200;
 			break;
 		
 		case 148:
-			StringCopy(&Var2, "TORSO_P0_23_13", 16);
+			StringCopy(&Var2, "TORSO_P0_23_13" /* GXT: Ash Plaid Sports Coat */, 16);
 			iVar3 = 23;
 			iVar4 = 13;
 			iVar1 = 3200;
 			break;
 		
 		case 149:
-			StringCopy(&Var2, "TORSO_P0_23_14", 16);
+			StringCopy(&Var2, "TORSO_P0_23_14" /* GXT: Beige Sports Coat */, 16);
 			iVar3 = 23;
 			iVar4 = 14;
 			iVar1 = 3200;
 			break;
 		
 		case 150:
-			StringCopy(&Var2, "TORSO_P0_23_15", 16);
+			StringCopy(&Var2, "TORSO_P0_23_15" /* GXT: Brown Sports Coat */, 16);
 			iVar3 = 23;
 			iVar4 = 15;
 			iVar1 = 3200;
 			break;
 		
 		case 151:
-			StringCopy(&Var2, "TORSO_P0_24_0", 16);
+			StringCopy(&Var2, "TORSO_P0_24_0" /* GXT: Charcoal Sweater */, 16);
 			iVar3 = 24;
 			iVar4 = 0;
 			iVar1 = 1350;
 			break;
 		
 		case 152:
-			StringCopy(&Var2, "TORSO_P0_24_1", 16);
+			StringCopy(&Var2, "TORSO_P0_24_1" /* GXT: Gray Sweater */, 16);
 			iVar3 = 24;
 			iVar4 = 1;
 			iVar1 = 1400;
 			break;
 		
 		case 153:
-			StringCopy(&Var2, "TORSO_P0_24_2", 16);
+			StringCopy(&Var2, "TORSO_P0_24_2" /* GXT: Beige Sweater */, 16);
 			iVar3 = 24;
 			iVar4 = 2;
 			iVar1 = 1200;
 			break;
 		
 		case 154:
-			StringCopy(&Var2, "TORSO_P0_24_3", 16);
+			StringCopy(&Var2, "TORSO_P0_24_3" /* GXT: Red Sweater */, 16);
 			iVar3 = 24;
 			iVar4 = 3;
 			iVar1 = 1250;
 			break;
 		
 		case 155:
-			StringCopy(&Var2, "TORSO_P0_24_4", 16);
+			StringCopy(&Var2, "TORSO_P0_24_4" /* GXT: Pale Blue Sweater */, 16);
 			iVar3 = 24;
 			iVar4 = 4;
 			iVar1 = 1350;
 			break;
 		
 		case 156:
-			StringCopy(&Var2, "TORSO_P0_24_5", 16);
+			StringCopy(&Var2, "TORSO_P0_24_5" /* GXT: Pale Amethyst Sweater */, 16);
 			iVar3 = 24;
 			iVar4 = 5;
 			iVar1 = 1300;
 			break;
 		
 		case 157:
-			StringCopy(&Var2, "TORSO_P0_24_6", 16);
+			StringCopy(&Var2, "TORSO_P0_24_6" /* GXT: Blue Sweater */, 16);
 			iVar3 = 24;
 			iVar4 = 6;
 			iVar1 = 1380;
 			break;
 		
 		case 158:
-			StringCopy(&Var2, "TORSO_P0_24_7", 16);
+			StringCopy(&Var2, "TORSO_P0_24_7" /* GXT: Pale Jade Sweater */, 16);
 			iVar3 = 24;
 			iVar4 = 7;
 			iVar1 = 1340;
 			break;
 		
 		case 159:
-			StringCopy(&Var2, "TORSO_P0_24_8", 16);
+			StringCopy(&Var2, "TORSO_P0_24_8" /* GXT: Orange Sweater */, 16);
 			iVar3 = 24;
 			iVar4 = 8;
 			iVar1 = 1380;
 			break;
 		
 		case 160:
-			StringCopy(&Var2, "TORSO_P0_24_9", 16);
+			StringCopy(&Var2, "TORSO_P0_24_9" /* GXT: Lemon Sweater */, 16);
 			iVar3 = 24;
 			iVar4 = 9;
 			iVar1 = 1250;
 			break;
 		
 		case 161:
-			StringCopy(&Var2, "TORSO_P0_25_0", 16);
+			StringCopy(&Var2, "TORSO_P0_25_0" /* GXT: Pale Blue Shirt */, 16);
 			iVar3 = 25;
 			iVar4 = 0;
 			iVar1 = 840;
 			break;
 		
 		case 162:
-			StringCopy(&Var2, "TORSO_P0_25_1", 16);
+			StringCopy(&Var2, "TORSO_P0_25_1" /* GXT: Pink Shirt */, 16);
 			iVar3 = 25;
 			iVar4 = 1;
 			iVar1 = 840;
 			break;
 		
 		case 163:
-			StringCopy(&Var2, "TORSO_P0_25_2", 16);
+			StringCopy(&Var2, "TORSO_P0_25_2" /* GXT: White Shirt */, 16);
 			iVar3 = 25;
 			iVar4 = 2;
 			iVar1 = 840;
 			break;
 		
 		case 164:
-			StringCopy(&Var2, "TORSO_P0_25_3", 16);
+			StringCopy(&Var2, "TORSO_P0_25_3" /* GXT: Gray Shirt */, 16);
 			iVar3 = 25;
 			iVar4 = 3;
 			iVar1 = 840;
 			break;
 		
 		case 165:
-			StringCopy(&Var2, "TORSO_P0_25_4", 16);
+			StringCopy(&Var2, "TORSO_P0_25_4" /* GXT: Charcoal Shirt */, 16);
 			iVar3 = 25;
 			iVar4 = 4;
 			iVar1 = 840;
 			break;
 		
 		case 166:
-			StringCopy(&Var2, "TORSO_P0_25_5", 16);
+			StringCopy(&Var2, "TORSO_P0_25_5" /* GXT: Blue Shirt */, 16);
 			iVar3 = 25;
 			iVar4 = 5;
 			iVar1 = 840;
 			break;
 		
 		case 167:
-			StringCopy(&Var2, "TORSO_P0_25_6", 16);
+			StringCopy(&Var2, "TORSO_P0_25_6" /* GXT: Topaz Shirt */, 16);
 			iVar3 = 25;
 			iVar4 = 6;
 			iVar1 = 840;
 			break;
 		
 		case 168:
-			StringCopy(&Var2, "TORSO_P0_25_7", 16);
+			StringCopy(&Var2, "TORSO_P0_25_7" /* GXT: Black Shirt */, 16);
 			iVar3 = 25;
 			iVar4 = 7;
 			iVar1 = 840;
 			break;
 		
 		case 169:
-			StringCopy(&Var2, "TORSO_P0_26_0", 16);
+			StringCopy(&Var2, "TORSO_P0_26_0" /* GXT: Bare Chested */, 16);
 			iVar3 = 26;
 			iVar4 = 0;
 			break;
@@ -56883,20 +56883,20 @@ void func_568(int iParam0)//Position - 0x44C58
 			break;
 		
 		case 171:
-			StringCopy(&Var2, "TORSO_P0_28_0", 16);
+			StringCopy(&Var2, "TORSO_P0_28_0" /* GXT: Eris White Sweater Vest */, 16);
 			iVar3 = 28;
 			iVar4 = 0;
 			break;
 		
 		case 172:
-			StringCopy(&Var2, "TORSO_P0_28_1", 16);
+			StringCopy(&Var2, "TORSO_P0_28_1" /* GXT: Lobon Sweater Vest */, 16);
 			iVar3 = 28;
 			iVar4 = 1;
 			iVar1 = 130;
 			break;
 		
 		case 173:
-			StringCopy(&Var2, "TORSO_P0_28_2", 16);
+			StringCopy(&Var2, "TORSO_P0_28_2" /* GXT: Eris Blue Sweater Vest */, 16);
 			iVar3 = 28;
 			iVar4 = 2;
 			iVar1 = 110;
@@ -56910,42 +56910,42 @@ void func_568(int iParam0)//Position - 0x44C58
 			break;
 		
 		case 175:
-			StringCopy(&Var2, "TORSO_P0_30_0", 16);
+			StringCopy(&Var2, "TORSO_P0_30_0" /* GXT: Gray Jacket */, 16);
 			iVar3 = 30;
 			iVar4 = 0;
 			iVar1 = 290;
 			break;
 		
 		case 176:
-			StringCopy(&Var2, "TORSO_P0_30_1", 16);
+			StringCopy(&Var2, "TORSO_P0_30_1" /* GXT: Black Jacket */, 16);
 			iVar3 = 30;
 			iVar4 = 1;
 			iVar1 = 320;
 			break;
 		
 		case 177:
-			StringCopy(&Var2, "TORSO_P0_31_0", 16);
+			StringCopy(&Var2, "TORSO_P0_31_0" /* GXT: Red Check Winter Shirt */, 16);
 			iVar3 = 31;
 			iVar4 = 0;
 			iVar1 = 59;
 			break;
 		
 		case 178:
-			StringCopy(&Var2, "TORSO_P0_31_1", 16);
+			StringCopy(&Var2, "TORSO_P0_31_1" /* GXT: Blue Check Winter Shirt */, 16);
 			iVar3 = 31;
 			iVar4 = 1;
 			iVar1 = 55;
 			break;
 		
 		case 179:
-			StringCopy(&Var2, "TORSO_P0_31_2", 16);
+			StringCopy(&Var2, "TORSO_P0_31_2" /* GXT: Black Winter Shirt */, 16);
 			iVar3 = 31;
 			iVar4 = 2;
 			iVar1 = 59;
 			break;
 		
 		case 180:
-			StringCopy(&Var2, "TORSO_P0_31_3", 16);
+			StringCopy(&Var2, "TORSO_P0_31_3" /* GXT: Brown Check Winter Shirt */, 16);
 			iVar3 = 31;
 			iVar4 = 3;
 			iVar1 = 49;
@@ -56980,98 +56980,98 @@ void func_569(int iParam0)//Position - 0x45A3D
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var2, "TORSO_P0_0_0", 16);
+			StringCopy(&Var2, "TORSO_P0_0_0" /* GXT: Gray Jacket */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 1:
-			StringCopy(&Var2, "TORSO_P0_0_0", 16);
+			StringCopy(&Var2, "TORSO_P0_0_0" /* GXT: Gray Jacket */, 16);
 			iVar3 = 0;
 			iVar4 = 1;
 			break;
 		
 		case 2:
-			StringCopy(&Var2, "TORSO_P0_0_2", 16);
+			StringCopy(&Var2, "TORSO_P0_0_2" /* GXT: Charcoal Jacket */, 16);
 			iVar3 = 0;
 			iVar4 = 2;
 			iVar1 = 3500;
 			break;
 		
 		case 3:
-			StringCopy(&Var2, "TORSO_P0_0_3", 16);
+			StringCopy(&Var2, "TORSO_P0_0_3" /* GXT: Slate Jacket */, 16);
 			iVar3 = 0;
 			iVar4 = 3;
 			break;
 		
 		case 4:
-			StringCopy(&Var2, "TORSO_P0_0_4", 16);
+			StringCopy(&Var2, "TORSO_P0_0_4" /* GXT: Topaz Jacket */, 16);
 			iVar3 = 0;
 			iVar4 = 4;
 			break;
 		
 		case 5:
-			StringCopy(&Var2, "TORSO_P0_0_5", 16);
+			StringCopy(&Var2, "TORSO_P0_0_5" /* GXT: Pale Blue Jacket */, 16);
 			iVar3 = 0;
 			iVar4 = 5;
 			break;
 		
 		case 6:
-			StringCopy(&Var2, "TORSO_P0_0_6", 16);
+			StringCopy(&Var2, "TORSO_P0_0_6" /* GXT: Cream Jacket */, 16);
 			iVar3 = 0;
 			iVar4 = 6;
 			break;
 		
 		case 7:
-			StringCopy(&Var2, "TORSO_P0_0_7", 16);
+			StringCopy(&Var2, "TORSO_P0_0_7" /* GXT: Olive Jacket */, 16);
 			iVar3 = 0;
 			iVar4 = 7;
 			break;
 		
 		case 8:
-			StringCopy(&Var2, "TORSO_P0_0_8", 16);
+			StringCopy(&Var2, "TORSO_P0_0_8" /* GXT: Off-White Jacket */, 16);
 			iVar3 = 0;
 			iVar4 = 8;
 			break;
 		
 		case 9:
-			StringCopy(&Var2, "TORSO_P0_0_9", 16);
+			StringCopy(&Var2, "TORSO_P0_0_9" /* GXT: Navy Jacket */, 16);
 			iVar3 = 0;
 			iVar4 = 9;
 			break;
 		
 		case 10:
-			StringCopy(&Var2, "TORSO_P0_0_10", 16);
+			StringCopy(&Var2, "TORSO_P0_0_10" /* GXT: Beige Jacket */, 16);
 			iVar3 = 0;
 			iVar4 = 10;
 			break;
 		
 		case 11:
-			StringCopy(&Var2, "TORSO_P0_0_11", 16);
+			StringCopy(&Var2, "TORSO_P0_0_11" /* GXT: Smoke Jacket */, 16);
 			iVar3 = 0;
 			iVar4 = 11;
 			break;
 		
 		case 12:
-			StringCopy(&Var2, "TORSO_P0_0_12", 16);
+			StringCopy(&Var2, "TORSO_P0_0_12" /* GXT: Blue-Gray Jacket */, 16);
 			iVar3 = 0;
 			iVar4 = 12;
 			break;
 		
 		case 13:
-			StringCopy(&Var2, "TORSO_P0_0_13", 16);
+			StringCopy(&Var2, "TORSO_P0_0_13" /* GXT: Ash Jacket */, 16);
 			iVar3 = 0;
 			iVar4 = 13;
 			break;
 		
 		case 14:
-			StringCopy(&Var2, "TORSO_P0_0_14", 16);
+			StringCopy(&Var2, "TORSO_P0_0_14" /* GXT: Sand Jacket */, 16);
 			iVar3 = 0;
 			iVar4 = 14;
 			break;
 		
 		case 15:
-			StringCopy(&Var2, "TORSO_P0_0_15", 16);
+			StringCopy(&Var2, "TORSO_P0_0_15" /* GXT: Black Jacket */, 16);
 			iVar3 = 0;
 			iVar4 = 15;
 			break;
@@ -57112,84 +57112,84 @@ void func_569(int iParam0)//Position - 0x45A3D
 			break;
 		
 		case 21:
-			StringCopy(&Var2, "TORSO_P0_2_4", 16);
+			StringCopy(&Var2, "TORSO_P0_2_4" /* GXT: Suburban Yellow T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 4;
 			iVar1 = 19;
 			break;
 		
 		case 22:
-			StringCopy(&Var2, "TORSO_P0_2_5", 16);
+			StringCopy(&Var2, "TORSO_P0_2_5" /* GXT: Rearwall Slate T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 5;
 			iVar1 = 20;
 			break;
 		
 		case 23:
-			StringCopy(&Var2, "TORSO_P0_2_6", 16);
+			StringCopy(&Var2, "TORSO_P0_2_6" /* GXT: Rearwall Blue T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 6;
 			iVar1 = 22;
 			break;
 		
 		case 24:
-			StringCopy(&Var2, "TORSO_P0_2_7", 16);
+			StringCopy(&Var2, "TORSO_P0_2_7" /* GXT: Rearwall Gray T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 7;
 			iVar1 = 18;
 			break;
 		
 		case 25:
-			StringCopy(&Var2, "TORSO_P0_2_8", 16);
+			StringCopy(&Var2, "TORSO_P0_2_8" /* GXT: Suburban Navy T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 8;
 			iVar1 = 39;
 			break;
 		
 		case 26:
-			StringCopy(&Var2, "TORSO_P0_2_9", 16);
+			StringCopy(&Var2, "TORSO_P0_2_9" /* GXT: Suburban Russet T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 9;
 			iVar1 = 32;
 			break;
 		
 		case 27:
-			StringCopy(&Var2, "TORSO_P0_2_10", 16);
+			StringCopy(&Var2, "TORSO_P0_2_10" /* GXT: Suburban Orange T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 10;
 			iVar1 = 35;
 			break;
 		
 		case 28:
-			StringCopy(&Var2, "TORSO_P0_2_11", 16);
+			StringCopy(&Var2, "TORSO_P0_2_11" /* GXT: Suburban Gray T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 11;
 			iVar1 = 35;
 			break;
 		
 		case 29:
-			StringCopy(&Var2, "TORSO_P0_2_12", 16);
+			StringCopy(&Var2, "TORSO_P0_2_12" /* GXT: White T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 12;
 			iVar1 = 210;
 			break;
 		
 		case 30:
-			StringCopy(&Var2, "TORSO_P0_2_13", 16);
+			StringCopy(&Var2, "TORSO_P0_2_13" /* GXT: Forest Green T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 13;
 			iVar1 = 250;
 			break;
 		
 		case 31:
-			StringCopy(&Var2, "TORSO_P0_2_14", 16);
+			StringCopy(&Var2, "TORSO_P0_2_14" /* GXT: Pale Blue T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 14;
 			iVar1 = 290;
 			break;
 		
 		case 32:
-			StringCopy(&Var2, "TORSO_P0_2_15", 16);
+			StringCopy(&Var2, "TORSO_P0_2_15" /* GXT: Ash T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 15;
 			iVar1 = 310;
@@ -57231,153 +57231,153 @@ void func_569(int iParam0)//Position - 0x45A3D
 			break;
 		
 		case 38:
-			StringCopy(&Var2, "TORSO_P0_7_0", 16);
+			StringCopy(&Var2, "TORSO_P0_7_0" /* GXT: Brown Shooting Vest */, 16);
 			iVar3 = 7;
 			iVar4 = 0;
 			iVar1 = 150;
 			break;
 		
 		case 39:
-			StringCopy(&Var2, "TORSO_P0_7_1", 16);
+			StringCopy(&Var2, "TORSO_P0_7_1" /* GXT: Woodland Shooting Vest */, 16);
 			iVar3 = 7;
 			iVar4 = 1;
 			iVar1 = 160;
 			break;
 		
 		case 40:
-			StringCopy(&Var2, "TORSO_P0_7_2", 16);
+			StringCopy(&Var2, "TORSO_P0_7_2" /* GXT: Taupe Shooting Vest */, 16);
 			iVar3 = 7;
 			iVar4 = 2;
 			iVar1 = 150;
 			break;
 		
 		case 41:
-			StringCopy(&Var2, "TORSO_P0_7_3", 16);
+			StringCopy(&Var2, "TORSO_P0_7_3" /* GXT: Brown Woven Shooting Vest */, 16);
 			iVar3 = 7;
 			iVar4 = 3;
 			iVar1 = 150;
 			break;
 		
 		case 42:
-			StringCopy(&Var2, "TORSO_P0_7_4", 16);
+			StringCopy(&Var2, "TORSO_P0_7_4" /* GXT: Field Shooting Vest */, 16);
 			iVar3 = 7;
 			iVar4 = 4;
 			iVar1 = 160;
 			break;
 		
 		case 43:
-			StringCopy(&Var2, "TORSO_P0_7_5", 16);
+			StringCopy(&Var2, "TORSO_P0_7_5" /* GXT: Forest Shooting Vest */, 16);
 			iVar3 = 7;
 			iVar4 = 5;
 			iVar1 = 160;
 			break;
 		
 		case 44:
-			StringCopy(&Var2, "TORSO_P0_8_0", 16);
+			StringCopy(&Var2, "TORSO_P0_8_0" /* GXT: Blue-Gray Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 0;
 			break;
 		
 		case 45:
-			StringCopy(&Var2, "TORSO_P0_8_1", 16);
+			StringCopy(&Var2, "TORSO_P0_8_1" /* GXT: White Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 1;
 			iVar1 = 52;
 			break;
 		
 		case 46:
-			StringCopy(&Var2, "TORSO_P0_8_2", 16);
+			StringCopy(&Var2, "TORSO_P0_8_2" /* GXT: Camel Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 2;
 			iVar1 = 52;
 			break;
 		
 		case 47:
-			StringCopy(&Var2, "TORSO_P0_8_3", 16);
+			StringCopy(&Var2, "TORSO_P0_8_3" /* GXT: Black Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 3;
 			iVar1 = 55;
 			break;
 		
 		case 48:
-			StringCopy(&Var2, "TORSO_P0_8_4", 16);
+			StringCopy(&Var2, "TORSO_P0_8_4" /* GXT: Citrus Hawaiian Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 4;
 			iVar1 = 55;
 			break;
 		
 		case 49:
-			StringCopy(&Var2, "TORSO_P0_8_5", 16);
+			StringCopy(&Var2, "TORSO_P0_8_5" /* GXT: Orange Grove Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 5;
 			iVar1 = 58;
 			break;
 		
 		case 50:
-			StringCopy(&Var2, "TORSO_P0_8_6", 16);
+			StringCopy(&Var2, "TORSO_P0_8_6" /* GXT: Parrot Print Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 6;
 			iVar1 = 58;
 			break;
 		
 		case 51:
-			StringCopy(&Var2, "TORSO_P0_8_7", 16);
+			StringCopy(&Var2, "TORSO_P0_8_7" /* GXT: Blue Geometric Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 7;
 			iVar1 = 62;
 			break;
 		
 		case 52:
-			StringCopy(&Var2, "TORSO_P0_8_8", 16);
+			StringCopy(&Var2, "TORSO_P0_8_8" /* GXT: Gray Patterned Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 8;
 			iVar1 = 65;
 			break;
 		
 		case 53:
-			StringCopy(&Var2, "TORSO_P0_8_9", 16);
+			StringCopy(&Var2, "TORSO_P0_8_9" /* GXT: Peach Patterned Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 9;
 			iVar1 = 65;
 			break;
 		
 		case 54:
-			StringCopy(&Var2, "TORSO_P0_8_10", 16);
+			StringCopy(&Var2, "TORSO_P0_8_10" /* GXT: Tropical Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 10;
 			iVar1 = 68;
 			break;
 		
 		case 55:
-			StringCopy(&Var2, "TORSO_P0_8_11", 16);
+			StringCopy(&Var2, "TORSO_P0_8_11" /* GXT: Navy Floral Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 11;
 			iVar1 = 68;
 			break;
 		
 		case 56:
-			StringCopy(&Var2, "TORSO_P0_8_12", 16);
+			StringCopy(&Var2, "TORSO_P0_8_12" /* GXT: Lime Plaid Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 12;
 			iVar1 = 55;
 			break;
 		
 		case 57:
-			StringCopy(&Var2, "TORSO_P0_8_13", 16);
+			StringCopy(&Var2, "TORSO_P0_8_13" /* GXT: Brown Patterned Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 13;
 			iVar1 = 62;
 			break;
 		
 		case 58:
-			StringCopy(&Var2, "TORSO_P0_8_14", 16);
+			StringCopy(&Var2, "TORSO_P0_8_14" /* GXT: Vintage Hawaiian Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 14;
 			iVar1 = 58;
 			break;
 		
 		case 59:
-			StringCopy(&Var2, "TORSO_P0_8_15", 16);
+			StringCopy(&Var2, "TORSO_P0_8_15" /* GXT: Blue Plaid Shirt */, 16);
 			iVar3 = 8;
 			iVar4 = 15;
 			iVar1 = 58;
@@ -57412,31 +57412,31 @@ void func_570(int iParam0)//Position - 0x460FB
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var2, "HAIR_P0_0_0", 16);
+			StringCopy(&Var2, "HAIR_P0_0_0" /* GXT: Lexington */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			break;
 		
 		case 1:
-			StringCopy(&Var2, "HAIR_P0_1_0", 16);
+			StringCopy(&Var2, "HAIR_P0_1_0" /* GXT: The Wood */, 16);
 			iVar3 = 1;
 			iVar4 = 0;
 			break;
 		
 		case 2:
-			StringCopy(&Var2, "HAIR_P0_2_0", 16);
+			StringCopy(&Var2, "HAIR_P0_2_0" /* GXT: Clippered Cut */, 16);
 			iVar3 = 2;
 			iVar4 = 0;
 			break;
 		
 		case 3:
-			StringCopy(&Var2, "HAIR_P0_3_0", 16);
+			StringCopy(&Var2, "HAIR_P0_3_0" /* GXT: Grown Out */, 16);
 			iVar3 = 3;
 			iVar4 = 0;
 			break;
 		
 		case 4:
-			StringCopy(&Var2, "HAIR_P0_4_0", 16);
+			StringCopy(&Var2, "HAIR_P0_4_0" /* GXT: Slicker */, 16);
 			iVar3 = 4;
 			iVar4 = 0;
 			break;
@@ -76837,7 +76837,7 @@ int func_667(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, 
 						}
 						else if (func_670(15, -1))
 						{
-							if (!MISC::ARE_STRINGS_EQUAL(sParam1, "TAT_FMM_CLB"))
+							if (!MISC::ARE_STRINGS_EQUAL(sParam1, "TAT_FMM_CLB" /* GXT: Crew Emblem Back */))
 							{
 								return 0;
 							}
@@ -76863,7 +76863,7 @@ int func_667(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, 
 				}
 				else if (Global_4539561 == 15)
 				{
-					if (!MISC::ARE_STRINGS_EQUAL(sParam1, "TAT_FMM_CLB"))
+					if (!MISC::ARE_STRINGS_EQUAL(sParam1, "TAT_FMM_CLB" /* GXT: Crew Emblem Back */))
 					{
 						return 0;
 					}
@@ -90224,163 +90224,163 @@ void func_730(int iParam0, int iParam1)//Position - 0x7346E
 		case 1:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_S1", 16);
+			StringCopy(&Var2, "O_FMF_S1" /* GXT: The Indie Heart */, 16);
 			break;
 		
 		case 2:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_S2", 16);
+			StringCopy(&Var2, "O_FMF_S2" /* GXT: The Kitten */, 16);
 			break;
 		
 		case 3:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_S3", 16);
+			StringCopy(&Var2, "O_FMF_S3" /* GXT: The Vacation */, 16);
 			break;
 		
 		case 4:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_S4", 16);
+			StringCopy(&Var2, "O_FMF_S4" /* GXT: The Girly */, 16);
 			break;
 		
 		case 5:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_S5", 16);
+			StringCopy(&Var2, "O_FMF_S5" /* GXT: The Standout */, 16);
 			break;
 		
 		case 6:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_S6", 16);
+			StringCopy(&Var2, "O_FMF_S6" /* GXT: The Streetwise */, 16);
 			break;
 		
 		case 7:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_S7", 16);
+			StringCopy(&Var2, "O_FMF_S7" /* GXT: The Butterfly */, 16);
 			break;
 		
 		case 8:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_S8", 16);
+			StringCopy(&Var2, "O_FMF_S8" /* GXT: The Festival */, 16);
 			break;
 		
 		case 9:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_P1", 16);
+			StringCopy(&Var2, "O_FMF_P1" /* GXT: The Interview */, 16);
 			break;
 		
 		case 10:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_P2", 16);
+			StringCopy(&Var2, "O_FMF_P2" /* GXT: The Red Hot */, 16);
 			break;
 		
 		case 11:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_P3", 16);
+			StringCopy(&Var2, "O_FMF_P3" /* GXT: The Upmarket */, 16);
 			break;
 		
 		case 12:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_P4", 16);
+			StringCopy(&Var2, "O_FMF_P4" /* GXT: The Power Suit */, 16);
 			break;
 		
 		case 13:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_P5", 16);
+			StringCopy(&Var2, "O_FMF_P5" /* GXT: The Versatile */, 16);
 			break;
 		
 		case 14:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_P6", 16);
+			StringCopy(&Var2, "O_FMF_P6" /* GXT: The Egyptian */, 16);
 			break;
 		
 		case 15:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_P7", 16);
+			StringCopy(&Var2, "O_FMF_P7" /* GXT: The Chalet */, 16);
 			break;
 		
 		case 16:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_P8", 16);
+			StringCopy(&Var2, "O_FMF_P8" /* GXT: The Cougar */, 16);
 			break;
 		
 		case 17:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_P9", 16);
+			StringCopy(&Var2, "O_FMF_P9" /* GXT: The Spring Break */, 16);
 			break;
 		
 		case 18:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_P10", 16);
+			StringCopy(&Var2, "O_FMF_P10" /* GXT: The Yacht Club */, 16);
 			break;
 		
 		case 19:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_B1", 16);
+			StringCopy(&Var2, "O_FMF_B1" /* GXT: The Holla Over */, 16);
 			break;
 		
 		case 20:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_B2", 16);
+			StringCopy(&Var2, "O_FMF_B2" /* GXT: The Tough Chick */, 16);
 			break;
 		
 		case 21:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_B3", 16);
+			StringCopy(&Var2, "O_FMF_B3" /* GXT: The Chica */, 16);
 			break;
 		
 		case 22:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_B4", 16);
+			StringCopy(&Var2, "O_FMF_B4" /* GXT: The Tomboy */, 16);
 			break;
 		
 		case 23:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_B5", 16);
+			StringCopy(&Var2, "O_FMF_B5" /* GXT: The Basics */, 16);
 			break;
 		
 		case 24:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_B6", 16);
+			StringCopy(&Var2, "O_FMF_B6" /* GXT: The Young Luck */, 16);
 			break;
 		
 		case 25:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_B7", 16);
+			StringCopy(&Var2, "O_FMF_B7" /* GXT: The Workout */, 16);
 			break;
 		
 		case 26:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_B8", 16);
+			StringCopy(&Var2, "O_FMF_B8" /* GXT: The She Devil */, 16);
 			break;
 		
 		case 27:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMF_B9", 16);
+			StringCopy(&Var2, "O_FMF_B9" /* GXT: The Beach Beauty */, 16);
 			break;
 		
 		default:
@@ -90482,7 +90482,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 10:
-			StringCopy(&Var2, "HT_FMF_0_0", 16);
+			StringCopy(&Var2, "HT_FMF_0_0" /* GXT: Red Ear Defenders */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 65;
@@ -90491,7 +90491,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 11:
-			StringCopy(&Var2, "HT_FMF_0_1", 16);
+			StringCopy(&Var2, "HT_FMF_0_1" /* GXT: Magenta Ear Defenders */, 16);
 			iVar3 = 0;
 			iVar4 = 1;
 			iVar1 = 65;
@@ -90500,7 +90500,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 12:
-			StringCopy(&Var2, "HT_FMF_0_2", 16);
+			StringCopy(&Var2, "HT_FMF_0_2" /* GXT: Green Ear Defenders */, 16);
 			iVar3 = 0;
 			iVar4 = 2;
 			iVar1 = 85;
@@ -90509,7 +90509,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 13:
-			StringCopy(&Var2, "HT_FMF_0_3", 16);
+			StringCopy(&Var2, "HT_FMF_0_3" /* GXT: Yellow Ear Defenders */, 16);
 			iVar3 = 0;
 			iVar4 = 3;
 			iVar1 = 75;
@@ -90518,7 +90518,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 14:
-			StringCopy(&Var2, "HT_FMF_0_4", 16);
+			StringCopy(&Var2, "HT_FMF_0_4" /* GXT: Desert Camo Ear Defenders */, 16);
 			iVar3 = 0;
 			iVar4 = 4;
 			iVar1 = 235;
@@ -90527,7 +90527,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 15:
-			StringCopy(&Var2, "HT_FMF_0_5", 16);
+			StringCopy(&Var2, "HT_FMF_0_5" /* GXT: Blue Ear Defenders */, 16);
 			iVar3 = 0;
 			iVar4 = 5;
 			iVar1 = 80;
@@ -90536,7 +90536,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 16:
-			StringCopy(&Var2, "HT_FMF_0_6", 16);
+			StringCopy(&Var2, "HT_FMF_0_6" /* GXT: Pale Blue Ear Defenders */, 16);
 			iVar3 = 0;
 			iVar4 = 6;
 			iVar1 = 85;
@@ -90545,7 +90545,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 17:
-			StringCopy(&Var2, "HT_FMF_0_7", 16);
+			StringCopy(&Var2, "HT_FMF_0_7" /* GXT: Orange Ear Defenders */, 16);
 			iVar3 = 0;
 			iVar4 = 7;
 			iVar1 = 90;
@@ -90573,7 +90573,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 20:
-			StringCopy(&Var2, "HT_FMF_2_1", 16);
+			StringCopy(&Var2, "HT_FMF_2_1" /* GXT: Pink Accent Cowgirl Hat */, 16);
 			iVar3 = 2;
 			iVar4 = 1;
 			iVar1 = 5000;
@@ -90712,7 +90712,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 34:
-			StringCopy(&Var2, "HT_FMF_3_7", 16);
+			StringCopy(&Var2, "HT_FMF_3_7" /* GXT: Gray Plaid Canvas Hat */, 16);
 			iVar3 = 3;
 			iVar4 = 7;
 			iVar1 = 120;
@@ -90721,7 +90721,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 35:
-			StringCopy(&Var2, "HT_FMF_4_0", 16);
+			StringCopy(&Var2, "HT_FMF_4_0" /* GXT: Black LS Fitted Cap */, 16);
 			iVar3 = 4;
 			iVar4 = 0;
 			iVar1 = 400;
@@ -90730,7 +90730,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 36:
-			StringCopy(&Var2, "HT_FMF_4_1", 16);
+			StringCopy(&Var2, "HT_FMF_4_1" /* GXT: Fruntalot Fitted Cap */, 16);
 			iVar3 = 4;
 			iVar4 = 1;
 			iVar1 = 65;
@@ -90739,7 +90739,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 37:
-			StringCopy(&Var2, "HT_FMF_4_2", 16);
+			StringCopy(&Var2, "HT_FMF_4_2" /* GXT: Broker Fitted Cap */, 16);
 			iVar3 = 4;
 			iVar4 = 2;
 			iVar1 = 375;
@@ -90748,7 +90748,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 38:
-			StringCopy(&Var2, "HT_FMF_4_3", 16);
+			StringCopy(&Var2, "HT_FMF_4_3" /* GXT: SA Fitted Cap */, 16);
 			iVar3 = 4;
 			iVar4 = 3;
 			iVar1 = 75;
@@ -90757,7 +90757,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 39:
-			StringCopy(&Var2, "HT_FMF_4_4", 16);
+			StringCopy(&Var2, "HT_FMF_4_4" /* GXT: SA Boars Fitted Cap */, 16);
 			iVar3 = 4;
 			iVar4 = 4;
 			iVar1 = 65;
@@ -90766,7 +90766,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 40:
-			StringCopy(&Var2, "HT_FMF_4_5", 16);
+			StringCopy(&Var2, "HT_FMF_4_5" /* GXT: Stank Fitted Cap */, 16);
 			iVar3 = 4;
 			iVar4 = 5;
 			iVar1 = 65;
@@ -90775,7 +90775,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 41:
-			StringCopy(&Var2, "HT_FMF_4_6", 16);
+			StringCopy(&Var2, "HT_FMF_4_6" /* GXT: Red Mist XI Fitted Cap */, 16);
 			iVar3 = 4;
 			iVar4 = 6;
 			iVar1 = 85;
@@ -90784,7 +90784,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 42:
-			StringCopy(&Var2, "HT_FMF_4_7", 16);
+			StringCopy(&Var2, "HT_FMF_4_7" /* GXT: LS Corkers Fitted Cap */, 16);
 			iVar3 = 4;
 			iVar4 = 7;
 			iVar1 = 325;
@@ -90793,7 +90793,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 43:
-			StringCopy(&Var2, "HT_FMF_5_0", 16);
+			StringCopy(&Var2, "HT_FMF_5_0" /* GXT: Rearwall Black Beanie */, 16);
 			iVar3 = 5;
 			iVar4 = 0;
 			iVar1 = 35;
@@ -90802,7 +90802,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 44:
-			StringCopy(&Var2, "HT_FMF_5_1", 16);
+			StringCopy(&Var2, "HT_FMF_5_1" /* GXT: Crevis Ash Beanie */, 16);
 			iVar3 = 5;
 			iVar4 = 1;
 			iVar1 = 30;
@@ -90811,7 +90811,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 45:
-			StringCopy(&Var2, "HT_FMF_5_2", 16);
+			StringCopy(&Var2, "HT_FMF_5_2" /* GXT: Crevis Pink Beanie */, 16);
 			iVar3 = 5;
 			iVar4 = 2;
 			iVar1 = 35;
@@ -90820,7 +90820,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 46:
-			StringCopy(&Var2, "HT_FMF_5_3", 16);
+			StringCopy(&Var2, "HT_FMF_5_3" /* GXT: LS Panic Beanie */, 16);
 			iVar3 = 5;
 			iVar4 = 3;
 			iVar1 = 40;
@@ -90829,7 +90829,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 47:
-			StringCopy(&Var2, "HT_FMF_5_4", 16);
+			StringCopy(&Var2, "HT_FMF_5_4" /* GXT: SA Beanie */, 16);
 			iVar3 = 5;
 			iVar4 = 4;
 			iVar1 = 35;
@@ -90838,7 +90838,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 48:
-			StringCopy(&Var2, "HT_FMF_5_5", 16);
+			StringCopy(&Var2, "HT_FMF_5_5" /* GXT: Hawaiian Snow Blue Beanie */, 16);
 			iVar3 = 5;
 			iVar4 = 5;
 			iVar1 = 30;
@@ -90847,7 +90847,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 49:
-			StringCopy(&Var2, "HT_FMF_5_6", 16);
+			StringCopy(&Var2, "HT_FMF_5_6" /* GXT: Rearwall Lime Beanie */, 16);
 			iVar3 = 5;
 			iVar4 = 6;
 			iVar1 = 35;
@@ -90856,7 +90856,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 50:
-			StringCopy(&Var2, "HT_FMF_5_7", 16);
+			StringCopy(&Var2, "HT_FMF_5_7" /* GXT: Hawaiian Snow Plaid Beanie */, 16);
 			iVar3 = 5;
 			iVar4 = 7;
 			iVar1 = 255;
@@ -90865,7 +90865,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 51:
-			StringCopy(&Var2, "HT_FMF_6_0", 16);
+			StringCopy(&Var2, "HT_FMF_6_0" /* GXT: Black Military Cap */, 16);
 			iVar3 = 6;
 			iVar4 = 0;
 			iVar1 = 360;
@@ -90874,7 +90874,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 52:
-			StringCopy(&Var2, "HT_FMF_6_1", 16);
+			StringCopy(&Var2, "HT_FMF_6_1" /* GXT: Green Military Cap */, 16);
 			iVar3 = 6;
 			iVar4 = 1;
 			iVar1 = 195;
@@ -90883,7 +90883,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 53:
-			StringCopy(&Var2, "HT_FMF_6_2", 16);
+			StringCopy(&Var2, "HT_FMF_6_2" /* GXT: Leopard Military Cap */, 16);
 			iVar3 = 6;
 			iVar4 = 2;
 			iVar1 = 3970;
@@ -90892,7 +90892,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 54:
-			StringCopy(&Var2, "HT_FMF_6_3", 16);
+			StringCopy(&Var2, "HT_FMF_6_3" /* GXT: Tan Military Cap */, 16);
 			iVar3 = 6;
 			iVar4 = 3;
 			iVar1 = 135;
@@ -90901,7 +90901,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 55:
-			StringCopy(&Var2, "HT_FMF_6_4", 16);
+			StringCopy(&Var2, "HT_FMF_6_4" /* GXT: Denim Military Cap */, 16);
 			iVar3 = 6;
 			iVar4 = 4;
 			iVar1 = 1355;
@@ -90910,7 +90910,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 56:
-			StringCopy(&Var2, "HT_FMF_6_5", 16);
+			StringCopy(&Var2, "HT_FMF_6_5" /* GXT: Field Camo Military Cap */, 16);
 			iVar3 = 6;
 			iVar4 = 5;
 			iVar1 = 110;
@@ -90919,7 +90919,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 57:
-			StringCopy(&Var2, "HT_FMF_6_6", 16);
+			StringCopy(&Var2, "HT_FMF_6_6" /* GXT: Desert Camo Military Cap */, 16);
 			iVar3 = 6;
 			iVar4 = 6;
 			iVar1 = 140;
@@ -90928,7 +90928,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 58:
-			StringCopy(&Var2, "HT_FMF_6_7", 16);
+			StringCopy(&Var2, "HT_FMF_6_7" /* GXT: Woodland Camo Military Cap */, 16);
 			iVar3 = 6;
 			iVar4 = 7;
 			iVar1 = 130;
@@ -90937,7 +90937,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 59:
-			StringCopy(&Var2, "HT_FMF_7_0", 16);
+			StringCopy(&Var2, "HT_FMF_7_0" /* GXT: Navy Flat Cap */, 16);
 			iVar3 = 7;
 			iVar4 = 0;
 			iVar1 = 230;
@@ -90946,7 +90946,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 60:
-			StringCopy(&Var2, "HT_FMF_7_1", 16);
+			StringCopy(&Var2, "HT_FMF_7_1" /* GXT: White Flat Cap */, 16);
 			iVar3 = 7;
 			iVar4 = 1;
 			iVar1 = 195;
@@ -90955,7 +90955,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 61:
-			StringCopy(&Var2, "HT_FMF_7_2", 16);
+			StringCopy(&Var2, "HT_FMF_7_2" /* GXT: Gray Plaid Flat Cap */, 16);
 			iVar3 = 7;
 			iVar4 = 2;
 			iVar1 = 515;
@@ -90964,7 +90964,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 62:
-			StringCopy(&Var2, "HT_FMF_7_3", 16);
+			StringCopy(&Var2, "HT_FMF_7_3" /* GXT: Brown Plaid Flat Cap */, 16);
 			iVar3 = 7;
 			iVar4 = 3;
 			iVar1 = 545;
@@ -90973,7 +90973,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 63:
-			StringCopy(&Var2, "HT_FMF_7_4", 16);
+			StringCopy(&Var2, "HT_FMF_7_4" /* GXT: Red Flat Cap */, 16);
 			iVar3 = 7;
 			iVar4 = 4;
 			iVar1 = 195;
@@ -90982,7 +90982,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 64:
-			StringCopy(&Var2, "HT_FMF_7_5", 16);
+			StringCopy(&Var2, "HT_FMF_7_5" /* GXT: Pink Flat Cap */, 16);
 			iVar3 = 7;
 			iVar4 = 5;
 			iVar1 = 155;
@@ -90991,7 +90991,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 65:
-			StringCopy(&Var2, "HT_FMF_7_6", 16);
+			StringCopy(&Var2, "HT_FMF_7_6" /* GXT: Green Plaid Flat Cap */, 16);
 			iVar3 = 7;
 			iVar4 = 6;
 			iVar1 = 155;
@@ -91000,7 +91000,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 66:
-			StringCopy(&Var2, "HT_FMF_7_7", 16);
+			StringCopy(&Var2, "HT_FMF_7_7" /* GXT: Fruity Plaid Flat Cap */, 16);
 			iVar3 = 7;
 			iVar4 = 7;
 			iVar1 = 1440;
@@ -91091,7 +91091,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 75:
-			StringCopy(&Var2, "HT_FMF_9_0", 16);
+			StringCopy(&Var2, "HT_FMF_9_0" /* GXT: Fruit Cap */, 16);
 			iVar3 = 9;
 			iVar4 = 0;
 			iVar1 = 35;
@@ -91100,7 +91100,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 76:
-			StringCopy(&Var2, "HT_FMF_9_1", 16);
+			StringCopy(&Var2, "HT_FMF_9_1" /* GXT: 247 Cap */, 16);
 			iVar3 = 9;
 			iVar4 = 1;
 			iVar1 = 25;
@@ -91109,7 +91109,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 77:
-			StringCopy(&Var2, "HT_FMF_9_2", 16);
+			StringCopy(&Var2, "HT_FMF_9_2" /* GXT: Fred's Cap */, 16);
 			iVar3 = 9;
 			iVar4 = 2;
 			iVar1 = 30;
@@ -91118,7 +91118,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 78:
-			StringCopy(&Var2, "HT_FMF_9_3", 16);
+			StringCopy(&Var2, "HT_FMF_9_3" /* GXT: US Post LS Cap */, 16);
 			iVar3 = 9;
 			iVar4 = 3;
 			iVar1 = 25;
@@ -91127,7 +91127,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 79:
-			StringCopy(&Var2, "HT_FMF_9_4", 16);
+			StringCopy(&Var2, "HT_FMF_9_4" /* GXT: Swallow Cap */, 16);
 			iVar3 = 9;
 			iVar4 = 4;
 			iVar1 = 50;
@@ -91136,7 +91136,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 80:
-			StringCopy(&Var2, "HT_FMF_9_5", 16);
+			StringCopy(&Var2, "HT_FMF_9_5" /* GXT: CNT Cap */, 16);
 			iVar3 = 9;
 			iVar4 = 5;
 			iVar1 = 40;
@@ -91145,7 +91145,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 81:
-			StringCopy(&Var2, "HT_FMF_9_6", 16);
+			StringCopy(&Var2, "HT_FMF_9_6" /* GXT: Peachy Chics Snakeskin Cap */, 16);
 			iVar3 = 9;
 			iVar4 = 6;
 			iVar1 = 575;
@@ -91154,7 +91154,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 82:
-			StringCopy(&Var2, "HT_FMF_9_7", 16);
+			StringCopy(&Var2, "HT_FMF_9_7" /* GXT: Peachy Chics Leopard Cap */, 16);
 			iVar3 = 9;
 			iVar4 = 7;
 			iVar1 = 605;
@@ -91233,7 +91233,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 90:
-			StringCopy(&Var2, "HT_FMF_10_7", 16);
+			StringCopy(&Var2, "HT_FMF_10_7" /* GXT: Tan Patterned Cap */, 16);
 			iVar3 = 10;
 			iVar4 = 7;
 			iVar1 = 285;
@@ -91252,7 +91252,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 92:
-			StringCopy(&Var2, "HT_FMF_11_1", 16);
+			StringCopy(&Var2, "HT_FMF_11_1" /* GXT: Black Sun Hat */, 16);
 			iVar3 = 11;
 			iVar4 = 1;
 			iVar1 = 2125;
@@ -91321,7 +91321,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 99:
-			StringCopy(&Var2, "HT_FMF_12_0", 16);
+			StringCopy(&Var2, "HT_FMF_12_0" /* GXT: Black Saggy Beanie */, 16);
 			iVar3 = 12;
 			iVar4 = 0;
 			iVar1 = 75;
@@ -91380,7 +91380,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 105:
-			StringCopy(&Var2, "HT_FMF_12_6", 16);
+			StringCopy(&Var2, "HT_FMF_12_6" /* GXT: Hawaiian Snow Saggy Beanie */, 16);
 			iVar3 = 12;
 			iVar4 = 6;
 			iVar1 = 75;
@@ -91389,7 +91389,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 106:
-			StringCopy(&Var2, "HT_FMF_12_7", 16);
+			StringCopy(&Var2, "HT_FMF_12_7" /* GXT: Yeti Saggy Beanie */, 16);
 			iVar3 = 12;
 			iVar4 = 7;
 			iVar1 = 295;
@@ -91398,7 +91398,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 107:
-			StringCopy(&Var2, "HT_FMF_13_0", 16);
+			StringCopy(&Var2, "HT_FMF_13_0" /* GXT: Tan Straw Hat */, 16);
 			iVar3 = 13;
 			iVar4 = 0;
 			iVar1 = 195;
@@ -91407,7 +91407,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 108:
-			StringCopy(&Var2, "HT_FMF_13_1", 16);
+			StringCopy(&Var2, "HT_FMF_13_1" /* GXT: Two-Tone Straw Hat */, 16);
 			iVar3 = 13;
 			iVar4 = 1;
 			iVar1 = 200;
@@ -91416,7 +91416,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 109:
-			StringCopy(&Var2, "HT_FMF_13_2", 16);
+			StringCopy(&Var2, "HT_FMF_13_2" /* GXT: Brown Straw Hat */, 16);
 			iVar3 = 13;
 			iVar4 = 2;
 			iVar1 = 160;
@@ -91425,7 +91425,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 110:
-			StringCopy(&Var2, "HT_FMF_13_3", 16);
+			StringCopy(&Var2, "HT_FMF_13_3" /* GXT: Safari Straw Hat */, 16);
 			iVar3 = 13;
 			iVar4 = 3;
 			iVar1 = 855;
@@ -91434,7 +91434,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 111:
-			StringCopy(&Var2, "HT_FMF_13_4", 16);
+			StringCopy(&Var2, "HT_FMF_13_4" /* GXT: Gray Patterned Straw Hat */, 16);
 			iVar3 = 13;
 			iVar4 = 4;
 			iVar1 = 1615;
@@ -91443,7 +91443,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 112:
-			StringCopy(&Var2, "HT_FMF_13_5", 16);
+			StringCopy(&Var2, "HT_FMF_13_5" /* GXT: Brown Striped Straw Hat */, 16);
 			iVar3 = 13;
 			iVar4 = 5;
 			iVar1 = 1130;
@@ -91452,7 +91452,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 113:
-			StringCopy(&Var2, "HT_FMF_13_6", 16);
+			StringCopy(&Var2, "HT_FMF_13_6" /* GXT: Gray Straw Hat */, 16);
 			iVar3 = 13;
 			iVar4 = 6;
 			iVar1 = 165;
@@ -91461,7 +91461,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 114:
-			StringCopy(&Var2, "HT_FMF_13_7", 16);
+			StringCopy(&Var2, "HT_FMF_13_7" /* GXT: Navy Straw Hat */, 16);
 			iVar3 = 13;
 			iVar4 = 7;
 			iVar1 = 215;
@@ -91470,7 +91470,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 115:
-			StringCopy(&Var2, "HT_FMF_14_0", 16);
+			StringCopy(&Var2, "HT_FMF_14_0" /* GXT: Black Beret */, 16);
 			iVar3 = 14;
 			iVar4 = 0;
 			iVar1 = 145;
@@ -91479,7 +91479,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 116:
-			StringCopy(&Var2, "HT_FMF_14_1", 16);
+			StringCopy(&Var2, "HT_FMF_14_1" /* GXT: Cherry Beret */, 16);
 			iVar3 = 14;
 			iVar4 = 1;
 			iVar1 = 250;
@@ -91488,7 +91488,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 117:
-			StringCopy(&Var2, "HT_FMF_14_2", 16);
+			StringCopy(&Var2, "HT_FMF_14_2" /* GXT: Purple Beret */, 16);
 			iVar3 = 14;
 			iVar4 = 2;
 			iVar1 = 110;
@@ -91497,7 +91497,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 118:
-			StringCopy(&Var2, "HT_FMF_14_3", 16);
+			StringCopy(&Var2, "HT_FMF_14_3" /* GXT: White Beret */, 16);
 			iVar3 = 14;
 			iVar4 = 3;
 			iVar1 = 145;
@@ -91506,7 +91506,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 119:
-			StringCopy(&Var2, "HT_FMF_14_4", 16);
+			StringCopy(&Var2, "HT_FMF_14_4" /* GXT: Gray Beret */, 16);
 			iVar3 = 14;
 			iVar4 = 4;
 			iVar1 = 105;
@@ -91515,7 +91515,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 120:
-			StringCopy(&Var2, "HT_FMF_14_5", 16);
+			StringCopy(&Var2, "HT_FMF_14_5" /* GXT: Navy Beret */, 16);
 			iVar3 = 14;
 			iVar4 = 5;
 			iVar1 = 105;
@@ -91524,7 +91524,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 121:
-			StringCopy(&Var2, "HT_FMF_14_6", 16);
+			StringCopy(&Var2, "HT_FMF_14_6" /* GXT: Tan Beret */, 16);
 			iVar3 = 14;
 			iVar4 = 6;
 			iVar1 = 115;
@@ -91533,7 +91533,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 122:
-			StringCopy(&Var2, "HT_FMF_14_7", 16);
+			StringCopy(&Var2, "HT_FMF_14_7" /* GXT: Magenta Beret */, 16);
 			iVar3 = 14;
 			iVar4 = 7;
 			iVar1 = 115;
@@ -91542,7 +91542,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 123:
-			StringCopy(&Var2, "HT_FMF_15_0", 16);
+			StringCopy(&Var2, "HT_FMF_15_0" /* GXT: Beat Off White Headphones */, 16);
 			iVar3 = 15;
 			iVar4 = 0;
 			iVar1 = 390;
@@ -91551,7 +91551,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 124:
-			StringCopy(&Var2, "HT_FMF_15_1", 16);
+			StringCopy(&Var2, "HT_FMF_15_1" /* GXT: Beat Off Black Headphones */, 16);
 			iVar3 = 15;
 			iVar4 = 1;
 			iVar1 = 395;
@@ -91560,7 +91560,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 125:
-			StringCopy(&Var2, "HT_FMF_15_2", 16);
+			StringCopy(&Var2, "HT_FMF_15_2" /* GXT: Beat Off Red Headphones */, 16);
 			iVar3 = 15;
 			iVar4 = 2;
 			iVar1 = 595;
@@ -91569,7 +91569,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 126:
-			StringCopy(&Var2, "HT_FMF_15_3", 16);
+			StringCopy(&Var2, "HT_FMF_15_3" /* GXT: Beat Off Gray Headphones */, 16);
 			iVar3 = 15;
 			iVar4 = 3;
 			iVar1 = 425;
@@ -91578,7 +91578,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 127:
-			StringCopy(&Var2, "HT_FMF_15_4", 16);
+			StringCopy(&Var2, "HT_FMF_15_4" /* GXT: Beat Off Navy Headphones */, 16);
 			iVar3 = 15;
 			iVar4 = 4;
 			iVar1 = 600;
@@ -91587,7 +91587,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 128:
-			StringCopy(&Var2, "HT_FMF_15_5", 16);
+			StringCopy(&Var2, "HT_FMF_15_5" /* GXT: Beat Off Purple Headphones */, 16);
 			iVar3 = 15;
 			iVar4 = 5;
 			iVar1 = 590;
@@ -91596,7 +91596,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 129:
-			StringCopy(&Var2, "HT_FMF_15_6", 16);
+			StringCopy(&Var2, "HT_FMF_15_6" /* GXT: Beat Off Pink Headphones */, 16);
 			iVar3 = 15;
 			iVar4 = 6;
 			iVar1 = 595;
@@ -91605,7 +91605,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 130:
-			StringCopy(&Var2, "HT_FMF_15_7", 16);
+			StringCopy(&Var2, "HT_FMF_15_7" /* GXT: Beat Off Orange Headphones */, 16);
 			iVar3 = 15;
 			iVar4 = 7;
 			iVar1 = 555;
@@ -91616,7 +91616,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 	switch (iParam0)
 	{
 		case 131:
-			StringCopy(&Var2, "HE_FMF_16_0", 16);
+			StringCopy(&Var2, "HE_FMF_16_0" /* GXT: Western MC Yellow Helmet */, 16);
 			iVar3 = 16;
 			iVar4 = 0;
 			iVar1 = 1060;
@@ -91625,7 +91625,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 132:
-			StringCopy(&Var2, "HE_FMF_16_1", 16);
+			StringCopy(&Var2, "HE_FMF_16_1" /* GXT: Steel Horse Blue Helmet */, 16);
 			iVar3 = 16;
 			iVar4 = 1;
 			iVar1 = 1400;
@@ -91634,7 +91634,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 133:
-			StringCopy(&Var2, "HE_FMF_16_2", 16);
+			StringCopy(&Var2, "HE_FMF_16_2" /* GXT: Steel Horse Orange Helmet */, 16);
 			iVar3 = 16;
 			iVar4 = 2;
 			iVar1 = 1315;
@@ -91643,7 +91643,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 134:
-			StringCopy(&Var2, "HE_FMF_16_3", 16);
+			StringCopy(&Var2, "HE_FMF_16_3" /* GXT: Western MC Green Helmet */, 16);
 			iVar3 = 16;
 			iVar4 = 3;
 			iVar1 = 1230;
@@ -91652,7 +91652,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 135:
-			StringCopy(&Var2, "HE_FMF_16_4", 16);
+			StringCopy(&Var2, "HE_FMF_16_4" /* GXT: Western MC Red Helmet */, 16);
 			iVar3 = 16;
 			iVar4 = 4;
 			iVar1 = 1145;
@@ -91661,7 +91661,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 136:
-			StringCopy(&Var2, "HE_FMF_16_5", 16);
+			StringCopy(&Var2, "HE_FMF_16_5" /* GXT: Steel Horse Black Helmet */, 16);
 			iVar3 = 16;
 			iVar4 = 5;
 			iVar1 = 8450;
@@ -91670,7 +91670,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 137:
-			StringCopy(&Var2, "HE_FMF_16_6", 16);
+			StringCopy(&Var2, "HE_FMF_16_6" /* GXT: Black Helmet */, 16);
 			iVar3 = 16;
 			iVar4 = 6;
 			iVar1 = 675;
@@ -91679,7 +91679,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 138:
-			StringCopy(&Var2, "HE_FMF_16_7", 16);
+			StringCopy(&Var2, "HE_FMF_16_7" /* GXT: Western MC Lilac Helmet */, 16);
 			iVar3 = 16;
 			iVar4 = 7;
 			iVar1 = 8750;
@@ -91688,7 +91688,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 139:
-			StringCopy(&Var2, "HE_FMF_17_0", 16);
+			StringCopy(&Var2, "HE_FMF_17_0" /* GXT: Blue Open-Face Helmet */, 16);
 			iVar3 = 17;
 			iVar4 = 0;
 			iVar1 = 975;
@@ -91697,7 +91697,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 140:
-			StringCopy(&Var2, "HE_FMF_17_1", 16);
+			StringCopy(&Var2, "HE_FMF_17_1" /* GXT: Orange Open-Face Helmet */, 16);
 			iVar3 = 17;
 			iVar4 = 1;
 			iVar1 = 750;
@@ -91706,7 +91706,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 141:
-			StringCopy(&Var2, "HE_FMF_17_2", 16);
+			StringCopy(&Var2, "HE_FMF_17_2" /* GXT: Pale Blue Open-Face Helmet */, 16);
 			iVar3 = 17;
 			iVar4 = 2;
 			iVar1 = 865;
@@ -91715,7 +91715,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 142:
-			StringCopy(&Var2, "HE_FMF_17_3", 16);
+			StringCopy(&Var2, "HE_FMF_17_3" /* GXT: Red Open-Face Helmet */, 16);
 			iVar3 = 17;
 			iVar4 = 3;
 			iVar1 = 890;
@@ -91724,7 +91724,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 143:
-			StringCopy(&Var2, "HE_FMF_17_4", 16);
+			StringCopy(&Var2, "HE_FMF_17_4" /* GXT: Gray Open-Face Helmet */, 16);
 			iVar3 = 17;
 			iVar4 = 4;
 			iVar1 = 730;
@@ -91733,7 +91733,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 144:
-			StringCopy(&Var2, "HE_FMF_17_5", 16);
+			StringCopy(&Var2, "HE_FMF_17_5" /* GXT: Black Open-Face Helmet */, 16);
 			iVar3 = 17;
 			iVar4 = 5;
 			iVar1 = 650;
@@ -91742,7 +91742,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 145:
-			StringCopy(&Var2, "HE_FMF_17_6", 16);
+			StringCopy(&Var2, "HE_FMF_17_6" /* GXT: Pink Open-Face Helmet */, 16);
 			iVar3 = 17;
 			iVar4 = 6;
 			iVar1 = 645;
@@ -91751,7 +91751,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 146:
-			StringCopy(&Var2, "HE_FMF_17_7", 16);
+			StringCopy(&Var2, "HE_FMF_17_7" /* GXT: White Open-Face Helmet */, 16);
 			iVar3 = 17;
 			iVar4 = 7;
 			iVar1 = 755;
@@ -91760,7 +91760,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 147:
-			StringCopy(&Var2, "HE_FMF_18_0", 16);
+			StringCopy(&Var2, "HE_FMF_18_0" /* GXT: Shatter Pattern Helmet */, 16);
 			iVar3 = 18;
 			iVar4 = 0;
 			iVar1 = 13850;
@@ -91769,7 +91769,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 148:
-			StringCopy(&Var2, "HE_FMF_18_1", 16);
+			StringCopy(&Var2, "HE_FMF_18_1" /* GXT: Stars Helmet */, 16);
 			iVar3 = 18;
 			iVar4 = 1;
 			iVar1 = 2900;
@@ -91778,7 +91778,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 149:
-			StringCopy(&Var2, "HE_FMF_18_2", 16);
+			StringCopy(&Var2, "HE_FMF_18_2" /* GXT: Squared Helmet */, 16);
 			iVar3 = 18;
 			iVar4 = 2;
 			iVar1 = 2895;
@@ -91787,7 +91787,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 150:
-			StringCopy(&Var2, "HE_FMF_18_3", 16);
+			StringCopy(&Var2, "HE_FMF_18_3" /* GXT: Crimson Helmet */, 16);
 			iVar3 = 18;
 			iVar4 = 3;
 			iVar1 = 12500;
@@ -91796,7 +91796,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 151:
-			StringCopy(&Var2, "HE_FMF_18_4", 16);
+			StringCopy(&Var2, "HE_FMF_18_4" /* GXT: Skull Helmet */, 16);
 			iVar3 = 18;
 			iVar4 = 4;
 			iVar1 = 15000;
@@ -91805,7 +91805,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 152:
-			StringCopy(&Var2, "HE_FMF_18_5", 16);
+			StringCopy(&Var2, "HE_FMF_18_5" /* GXT: Ace of Spades Helmet */, 16);
 			iVar3 = 18;
 			iVar4 = 5;
 			iVar1 = 14750;
@@ -91814,7 +91814,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 153:
-			StringCopy(&Var2, "HE_FMF_18_6", 16);
+			StringCopy(&Var2, "HE_FMF_18_6" /* GXT: Flamejob Helmet */, 16);
 			iVar3 = 18;
 			iVar4 = 6;
 			iVar1 = 13150;
@@ -91823,7 +91823,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 154:
-			StringCopy(&Var2, "HE_FMF_18_7", 16);
+			StringCopy(&Var2, "HE_FMF_18_7" /* GXT: White Helmet */, 16);
 			iVar3 = 18;
 			iVar4 = 7;
 			iVar1 = 2925;
@@ -91834,7 +91834,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 	switch (iParam0)
 	{
 		case 155:
-			StringCopy(&Var2, "G_FMF_0_0", 16);
+			StringCopy(&Var2, "G_FMF_0_0" /* GXT: Hornet Sports Shades */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 65;
@@ -91843,7 +91843,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 156:
-			StringCopy(&Var2, "G_FMF_0_1", 16);
+			StringCopy(&Var2, "G_FMF_0_1" /* GXT: Two-Tone Sports Shades */, 16);
 			iVar3 = 0;
 			iVar4 = 1;
 			iVar1 = 65;
@@ -91852,7 +91852,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 157:
-			StringCopy(&Var2, "G_FMF_0_2", 16);
+			StringCopy(&Var2, "G_FMF_0_2" /* GXT: Orange Sports Shades */, 16);
 			iVar3 = 0;
 			iVar4 = 2;
 			iVar1 = 85;
@@ -91861,7 +91861,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 158:
-			StringCopy(&Var2, "G_FMF_0_3", 16);
+			StringCopy(&Var2, "G_FMF_0_3" /* GXT: Blue Sports Shades */, 16);
 			iVar3 = 0;
 			iVar4 = 3;
 			iVar1 = 75;
@@ -91870,7 +91870,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 159:
-			StringCopy(&Var2, "G_FMF_0_4", 16);
+			StringCopy(&Var2, "G_FMF_0_4" /* GXT: Marble Sports Shades */, 16);
 			iVar3 = 0;
 			iVar4 = 4;
 			iVar1 = 85;
@@ -91879,7 +91879,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 160:
-			StringCopy(&Var2, "G_FMF_0_5", 16);
+			StringCopy(&Var2, "G_FMF_0_5" /* GXT: Purple Sports Shades */, 16);
 			iVar3 = 0;
 			iVar4 = 5;
 			iVar1 = 80;
@@ -91888,7 +91888,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 161:
-			StringCopy(&Var2, "G_FMF_0_6", 16);
+			StringCopy(&Var2, "G_FMF_0_6" /* GXT: Topaz Sports Shades */, 16);
 			iVar3 = 0;
 			iVar4 = 6;
 			iVar1 = 85;
@@ -91897,7 +91897,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 162:
-			StringCopy(&Var2, "G_FMF_0_7", 16);
+			StringCopy(&Var2, "G_FMF_0_7" /* GXT: Beige Sports Shades */, 16);
 			iVar3 = 0;
 			iVar4 = 7;
 			iVar1 = 90;
@@ -91906,7 +91906,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 163:
-			StringCopy(&Var2, "CLO_EXF_G_0_8", 16);
+			StringCopy(&Var2, "CLO_EXF_G_0_8" /* GXT: Shell Sports Glasses */, 16);
 			iVar3 = 0;
 			iVar4 = 8;
 			iVar1 = 820;
@@ -91915,7 +91915,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 164:
-			StringCopy(&Var2, "CLO_EXF_G_0_9", 16);
+			StringCopy(&Var2, "CLO_EXF_G_0_9" /* GXT: Black Sports Glasses */, 16);
 			iVar3 = 0;
 			iVar4 = 9;
 			iVar1 = 435;
@@ -91924,7 +91924,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 165:
-			StringCopy(&Var2, "CLO_EXF_G_0_10", 16);
+			StringCopy(&Var2, "CLO_EXF_G_0_10" /* GXT: White Sports Glasses */, 16);
 			iVar3 = 0;
 			iVar4 = 10;
 			iVar1 = 500;
@@ -91933,7 +91933,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 166:
-			StringCopy(&Var2, "G_FMF_1_0", 16);
+			StringCopy(&Var2, "G_FMF_1_0" /* GXT: Copper Marbles */, 16);
 			iVar3 = 1;
 			iVar4 = 0;
 			iVar1 = 160;
@@ -91942,7 +91942,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 167:
-			StringCopy(&Var2, "G_FMF_1_1", 16);
+			StringCopy(&Var2, "G_FMF_1_1" /* GXT: Blue Tint Marbles */, 16);
 			iVar3 = 1;
 			iVar4 = 1;
 			iVar1 = 165;
@@ -91951,7 +91951,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 168:
-			StringCopy(&Var2, "G_FMF_1_2", 16);
+			StringCopy(&Var2, "G_FMF_1_2" /* GXT: Black Marbles */, 16);
 			iVar3 = 1;
 			iVar4 = 2;
 			iVar1 = 170;
@@ -91960,7 +91960,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 169:
-			StringCopy(&Var2, "G_FMF_1_3", 16);
+			StringCopy(&Var2, "G_FMF_1_3" /* GXT: Purple Marbles */, 16);
 			iVar3 = 1;
 			iVar4 = 3;
 			iVar1 = 135;
@@ -91969,7 +91969,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 170:
-			StringCopy(&Var2, "G_FMF_1_4", 16);
+			StringCopy(&Var2, "G_FMF_1_4" /* GXT: Teal Marbles */, 16);
 			iVar3 = 1;
 			iVar4 = 4;
 			iVar1 = 120;
@@ -91978,7 +91978,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 171:
-			StringCopy(&Var2, "G_FMF_1_5", 16);
+			StringCopy(&Var2, "G_FMF_1_5" /* GXT: Red Tint Marbles */, 16);
 			iVar3 = 1;
 			iVar4 = 5;
 			iVar1 = 110;
@@ -91987,7 +91987,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 172:
-			StringCopy(&Var2, "G_FMF_1_6", 16);
+			StringCopy(&Var2, "G_FMF_1_6" /* GXT: White Marbles */, 16);
 			iVar3 = 1;
 			iVar4 = 6;
 			iVar1 = 140;
@@ -91996,7 +91996,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 173:
-			StringCopy(&Var2, "G_FMF_1_7", 16);
+			StringCopy(&Var2, "G_FMF_1_7" /* GXT: Pink Tint Marbles */, 16);
 			iVar3 = 1;
 			iVar4 = 7;
 			iVar1 = 130;
@@ -92005,7 +92005,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 174:
-			StringCopy(&Var2, "CLO_EXF_G_1_8", 16);
+			StringCopy(&Var2, "CLO_EXF_G_1_8" /* GXT: Shell Marble Glasses */, 16);
 			iVar3 = 1;
 			iVar4 = 8;
 			iVar1 = 970;
@@ -92014,7 +92014,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 175:
-			StringCopy(&Var2, "CLO_EXF_G_1_9", 16);
+			StringCopy(&Var2, "CLO_EXF_G_1_9" /* GXT: Black Marble Glasses */, 16);
 			iVar3 = 1;
 			iVar4 = 9;
 			iVar1 = 585;
@@ -92023,7 +92023,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 176:
-			StringCopy(&Var2, "CLO_EXF_G_1_10", 16);
+			StringCopy(&Var2, "CLO_EXF_G_1_10" /* GXT: White Marble Glasses */, 16);
 			iVar3 = 1;
 			iVar4 = 10;
 			iVar1 = 650;
@@ -92032,7 +92032,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 177:
-			StringCopy(&Var2, "G_FMF_2_0", 16);
+			StringCopy(&Var2, "G_FMF_2_0" /* GXT: Marble Mademoiselles */, 16);
 			iVar3 = 2;
 			iVar4 = 0;
 			iVar1 = 180;
@@ -92041,7 +92041,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 178:
-			StringCopy(&Var2, "G_FMF_2_1", 16);
+			StringCopy(&Var2, "G_FMF_2_1" /* GXT: Copper Mademoiselles */, 16);
 			iVar3 = 2;
 			iVar4 = 1;
 			iVar1 = 110;
@@ -92050,7 +92050,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 179:
-			StringCopy(&Var2, "G_FMF_2_2", 16);
+			StringCopy(&Var2, "G_FMF_2_2" /* GXT: Orange Tint Mademoiselles */, 16);
 			iVar3 = 2;
 			iVar4 = 2;
 			iVar1 = 115;
@@ -92059,7 +92059,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 180:
-			StringCopy(&Var2, "G_FMF_2_3", 16);
+			StringCopy(&Var2, "G_FMF_2_3" /* GXT: Pink Tint Mademoiselles */, 16);
 			iVar3 = 2;
 			iVar4 = 3;
 			iVar1 = 120;
@@ -92068,7 +92068,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 181:
-			StringCopy(&Var2, "G_FMF_2_4", 16);
+			StringCopy(&Var2, "G_FMF_2_4" /* GXT: Walnut Mademoiselles */, 16);
 			iVar3 = 2;
 			iVar4 = 4;
 			iVar1 = 595;
@@ -92077,7 +92077,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 182:
-			StringCopy(&Var2, "G_FMF_2_5", 16);
+			StringCopy(&Var2, "G_FMF_2_5" /* GXT: Black Mademoiselles */, 16);
 			iVar3 = 2;
 			iVar4 = 5;
 			iVar1 = 160;
@@ -92086,7 +92086,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 183:
-			StringCopy(&Var2, "G_FMF_2_6", 16);
+			StringCopy(&Var2, "G_FMF_2_6" /* GXT: Vintage Red Mademoiselles */, 16);
 			iVar3 = 2;
 			iVar4 = 6;
 			iVar1 = 545;
@@ -92095,7 +92095,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 184:
-			StringCopy(&Var2, "G_FMF_2_7", 16);
+			StringCopy(&Var2, "G_FMF_2_7" /* GXT: Gold Mademoiselles */, 16);
 			iVar3 = 2;
 			iVar4 = 7;
 			iVar1 = 590;
@@ -92104,7 +92104,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 185:
-			StringCopy(&Var2, "CLO_EXF_G_2_8", 16);
+			StringCopy(&Var2, "CLO_EXF_G_2_8" /* GXT: Shell Mademoiselle Glasses */, 16);
 			iVar3 = 2;
 			iVar4 = 8;
 			iVar1 = 1125;
@@ -92113,7 +92113,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 186:
-			StringCopy(&Var2, "CLO_EXF_G_2_9", 16);
+			StringCopy(&Var2, "CLO_EXF_G_2_9" /* GXT: Black Mademoiselle Glasses */, 16);
 			iVar3 = 2;
 			iVar4 = 9;
 			iVar1 = 740;
@@ -92122,7 +92122,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 187:
-			StringCopy(&Var2, "CLO_EXF_G_2_10", 16);
+			StringCopy(&Var2, "CLO_EXF_G_2_10" /* GXT: White Mademoiselle Glasses */, 16);
 			iVar3 = 2;
 			iVar4 = 10;
 			iVar1 = 805;
@@ -92131,7 +92131,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 188:
-			StringCopy(&Var2, "G_FMF_3_0", 16);
+			StringCopy(&Var2, "G_FMF_3_0" /* GXT: Zebra Shields */, 16);
 			iVar3 = 3;
 			iVar4 = 0;
 			iVar1 = 6250;
@@ -92140,7 +92140,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 189:
-			StringCopy(&Var2, "G_FMF_3_1", 16);
+			StringCopy(&Var2, "G_FMF_3_1" /* GXT: Ombre Shields */, 16);
 			iVar3 = 3;
 			iVar4 = 1;
 			iVar1 = 4065;
@@ -92149,7 +92149,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 190:
-			StringCopy(&Var2, "G_FMF_3_2", 16);
+			StringCopy(&Var2, "G_FMF_3_2" /* GXT: Flame Shields */, 16);
 			iVar3 = 3;
 			iVar4 = 2;
 			iVar1 = 3585;
@@ -92158,7 +92158,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 191:
-			StringCopy(&Var2, "G_FMF_3_3", 16);
+			StringCopy(&Var2, "G_FMF_3_3" /* GXT: Violet Shields */, 16);
 			iVar3 = 3;
 			iVar4 = 3;
 			iVar1 = 4075;
@@ -92167,7 +92167,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 192:
-			StringCopy(&Var2, "G_FMF_3_4", 16);
+			StringCopy(&Var2, "G_FMF_3_4" /* GXT: Sun Shields */, 16);
 			iVar3 = 3;
 			iVar4 = 4;
 			iVar1 = 4935;
@@ -92176,7 +92176,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 193:
-			StringCopy(&Var2, "G_FMF_3_5", 16);
+			StringCopy(&Var2, "G_FMF_3_5" /* GXT: Silver Accent Shields */, 16);
 			iVar3 = 3;
 			iVar4 = 5;
 			iVar1 = 130;
@@ -92185,7 +92185,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 194:
-			StringCopy(&Var2, "G_FMF_3_6", 16);
+			StringCopy(&Var2, "G_FMF_3_6" /* GXT: Party Shields */, 16);
 			iVar3 = 3;
 			iVar4 = 6;
 			iVar1 = 5600;
@@ -92194,7 +92194,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 195:
-			StringCopy(&Var2, "G_FMF_3_7", 16);
+			StringCopy(&Var2, "G_FMF_3_7" /* GXT: Gold Shields */, 16);
 			iVar3 = 3;
 			iVar4 = 7;
 			iVar1 = 4790;
@@ -92203,7 +92203,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 196:
-			StringCopy(&Var2, "CLO_EXF_G_3_8", 16);
+			StringCopy(&Var2, "CLO_EXF_G_3_8" /* GXT: Shell Shield Glasses */, 16);
 			iVar3 = 3;
 			iVar4 = 8;
 			iVar1 = 2315;
@@ -92212,7 +92212,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 197:
-			StringCopy(&Var2, "CLO_EXF_G_3_9", 16);
+			StringCopy(&Var2, "CLO_EXF_G_3_9" /* GXT: Black Shield Glasses */, 16);
 			iVar3 = 3;
 			iVar4 = 9;
 			iVar1 = 1930;
@@ -92221,7 +92221,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 198:
-			StringCopy(&Var2, "CLO_EXF_G_3_10", 16);
+			StringCopy(&Var2, "CLO_EXF_G_3_10" /* GXT: White Shield Glasses */, 16);
 			iVar3 = 3;
 			iVar4 = 10;
 			iVar1 = 1995;
@@ -92230,7 +92230,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 199:
-			StringCopy(&Var2, "G_FMF_4_0", 16);
+			StringCopy(&Var2, "G_FMF_4_0" /* GXT: Deep Walnut Retro */, 16);
 			iVar3 = 4;
 			iVar4 = 0;
 			iVar1 = 2245;
@@ -92239,7 +92239,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 200:
-			StringCopy(&Var2, "G_FMF_4_1", 16);
+			StringCopy(&Var2, "G_FMF_4_1" /* GXT: Marble Retro */, 16);
 			iVar3 = 4;
 			iVar4 = 1;
 			iVar1 = 250;
@@ -92248,7 +92248,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 201:
-			StringCopy(&Var2, "G_FMF_4_2", 16);
+			StringCopy(&Var2, "G_FMF_4_2" /* GXT: Beige Retro */, 16);
 			iVar3 = 4;
 			iVar4 = 2;
 			iVar1 = 210;
@@ -92257,7 +92257,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 202:
-			StringCopy(&Var2, "G_FMF_4_3", 16);
+			StringCopy(&Var2, "G_FMF_4_3" /* GXT: Aqua Retro */, 16);
 			iVar3 = 4;
 			iVar4 = 3;
 			iVar1 = 245;
@@ -92266,7 +92266,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 203:
-			StringCopy(&Var2, "G_FMF_4_4", 16);
+			StringCopy(&Var2, "G_FMF_4_4" /* GXT: Dice Retro */, 16);
 			iVar3 = 4;
 			iVar4 = 4;
 			iVar1 = 1205;
@@ -92275,7 +92275,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 204:
-			StringCopy(&Var2, "G_FMF_4_5", 16);
+			StringCopy(&Var2, "G_FMF_4_5" /* GXT: Black Retro */, 16);
 			iVar3 = 4;
 			iVar4 = 5;
 			iVar1 = 205;
@@ -92284,7 +92284,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 205:
-			StringCopy(&Var2, "G_FMF_4_6", 16);
+			StringCopy(&Var2, "G_FMF_4_6" /* GXT: Toffee Retro */, 16);
 			iVar3 = 4;
 			iVar4 = 6;
 			iVar1 = 2215;
@@ -92293,7 +92293,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 206:
-			StringCopy(&Var2, "G_FMF_4_7", 16);
+			StringCopy(&Var2, "G_FMF_4_7" /* GXT: Red Retro */, 16);
 			iVar3 = 4;
 			iVar4 = 7;
 			iVar1 = 215;
@@ -92302,7 +92302,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 207:
-			StringCopy(&Var2, "CLO_EXF_G_4_8", 16);
+			StringCopy(&Var2, "CLO_EXF_G_4_8" /* GXT: Shell Retro Glasses */, 16);
 			iVar3 = 4;
 			iVar4 = 8;
 			iVar1 = 2835;
@@ -92311,7 +92311,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 208:
-			StringCopy(&Var2, "CLO_EXF_G_4_9", 16);
+			StringCopy(&Var2, "CLO_EXF_G_4_9" /* GXT: Black Retro Glasses */, 16);
 			iVar3 = 4;
 			iVar4 = 9;
 			iVar1 = 2450;
@@ -92320,7 +92320,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 209:
-			StringCopy(&Var2, "CLO_EXF_G_4_10", 16);
+			StringCopy(&Var2, "CLO_EXF_G_4_10" /* GXT: White Retro Glasses */, 16);
 			iVar3 = 4;
 			iVar4 = 10;
 			iVar1 = 2515;
@@ -92436,7 +92436,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 221:
-			StringCopy(&Var2, "G_FMF_6_0", 16);
+			StringCopy(&Var2, "G_FMF_6_0" /* GXT: Purple Tint Bugs */, 16);
 			iVar3 = 6;
 			iVar4 = 0;
 			iVar1 = 5000;
@@ -92515,7 +92515,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 229:
-			StringCopy(&Var2, "CLO_EXF_G_6_8", 16);
+			StringCopy(&Var2, "CLO_EXF_G_6_8" /* GXT: Shell Bug Glasses */, 16);
 			iVar3 = 6;
 			iVar4 = 8;
 			iVar1 = 2820;
@@ -92524,7 +92524,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 230:
-			StringCopy(&Var2, "CLO_EXF_G_6_9", 16);
+			StringCopy(&Var2, "CLO_EXF_G_6_9" /* GXT: Black Bug Glasses */, 16);
 			iVar3 = 6;
 			iVar4 = 9;
 			iVar1 = 2435;
@@ -92533,7 +92533,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 231:
-			StringCopy(&Var2, "CLO_EXF_G_6_10", 16);
+			StringCopy(&Var2, "CLO_EXF_G_6_10" /* GXT: White Bug Glasses */, 16);
 			iVar3 = 6;
 			iVar4 = 10;
 			iVar1 = 2500;
@@ -92542,7 +92542,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 232:
-			StringCopy(&Var2, "G_FMF_7_0", 16);
+			StringCopy(&Var2, "G_FMF_7_0" /* GXT: Champagne Figure 8s */, 16);
 			iVar3 = 7;
 			iVar4 = 0;
 			iVar1 = 4815;
@@ -92551,7 +92551,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 233:
-			StringCopy(&Var2, "G_FMF_7_1", 16);
+			StringCopy(&Var2, "G_FMF_7_1" /* GXT: Platinum Figure 8s */, 16);
 			iVar3 = 7;
 			iVar4 = 1;
 			iVar1 = 4795;
@@ -92560,7 +92560,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 234:
-			StringCopy(&Var2, "G_FMF_7_2", 16);
+			StringCopy(&Var2, "G_FMF_7_2" /* GXT: Sapphire Figure 8s */, 16);
 			iVar3 = 7;
 			iVar4 = 2;
 			iVar1 = 4305;
@@ -92569,7 +92569,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 235:
-			StringCopy(&Var2, "G_FMF_7_3", 16);
+			StringCopy(&Var2, "G_FMF_7_3" /* GXT: Amethyst Figure 8s */, 16);
 			iVar3 = 7;
 			iVar4 = 3;
 			iVar1 = 4305;
@@ -92578,7 +92578,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 236:
-			StringCopy(&Var2, "G_FMF_7_4", 16);
+			StringCopy(&Var2, "G_FMF_7_4" /* GXT: Gold Figure 8s */, 16);
 			iVar3 = 7;
 			iVar4 = 4;
 			iVar1 = 4965;
@@ -92587,7 +92587,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 237:
-			StringCopy(&Var2, "G_FMF_7_5", 16);
+			StringCopy(&Var2, "G_FMF_7_5" /* GXT: White Figure 8s */, 16);
 			iVar3 = 7;
 			iVar4 = 5;
 			iVar1 = 480;
@@ -92596,7 +92596,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 238:
-			StringCopy(&Var2, "G_FMF_7_6", 16);
+			StringCopy(&Var2, "G_FMF_7_6" /* GXT: Gray Figure 8s */, 16);
 			iVar3 = 7;
 			iVar4 = 6;
 			iVar1 = 465;
@@ -92605,7 +92605,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 239:
-			StringCopy(&Var2, "G_FMF_7_7", 16);
+			StringCopy(&Var2, "G_FMF_7_7" /* GXT: Garnet Figure 8s */, 16);
 			iVar3 = 7;
 			iVar4 = 7;
 			iVar1 = 4320;
@@ -92614,7 +92614,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 240:
-			StringCopy(&Var2, "CLO_EXF_G_7_8", 16);
+			StringCopy(&Var2, "CLO_EXF_G_7_8" /* GXT: Shell Figure 8 Glasses */, 16);
 			iVar3 = 7;
 			iVar4 = 8;
 			iVar1 = 2390;
@@ -92623,7 +92623,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 241:
-			StringCopy(&Var2, "CLO_EXF_G_7_9", 16);
+			StringCopy(&Var2, "CLO_EXF_G_7_9" /* GXT: Black Figure 8 Glasses */, 16);
 			iVar3 = 7;
 			iVar4 = 9;
 			iVar1 = 2005;
@@ -92632,7 +92632,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 242:
-			StringCopy(&Var2, "CLO_EXF_G_7_10", 16);
+			StringCopy(&Var2, "CLO_EXF_G_7_10" /* GXT: White Figure 8 Glasses */, 16);
 			iVar3 = 7;
 			iVar4 = 10;
 			iVar1 = 2070;
@@ -92643,7 +92643,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 	switch (iParam0)
 	{
 		case 243:
-			StringCopy(&Var2, "G_FMF_8_0", 16);
+			StringCopy(&Var2, "G_FMF_8_0" /* GXT: Orange Tint Squared */, 16);
 			iVar3 = 8;
 			iVar4 = 0;
 			iVar1 = 500;
@@ -92722,7 +92722,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 251:
-			StringCopy(&Var2, "CLO_EXF_G_8_8", 16);
+			StringCopy(&Var2, "CLO_EXF_G_8_8" /* GXT: Shell Squared Glasses */, 16);
 			iVar3 = 8;
 			iVar4 = 8;
 			iVar1 = 645;
@@ -92731,7 +92731,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 252:
-			StringCopy(&Var2, "CLO_EXF_G_8_9", 16);
+			StringCopy(&Var2, "CLO_EXF_G_8_9" /* GXT: Black Squared Glasses */, 16);
 			iVar3 = 8;
 			iVar4 = 9;
 			iVar1 = 260;
@@ -92740,7 +92740,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 253:
-			StringCopy(&Var2, "CLO_EXF_G_8_10", 16);
+			StringCopy(&Var2, "CLO_EXF_G_8_10" /* GXT: White Squared Glasses */, 16);
 			iVar3 = 8;
 			iVar4 = 10;
 			iVar1 = 325;
@@ -92749,7 +92749,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 254:
-			StringCopy(&Var2, "G_FMF_9_0", 16);
+			StringCopy(&Var2, "G_FMF_9_0" /* GXT: Lime Tint Shooters */, 16);
 			iVar3 = 9;
 			iVar4 = 0;
 			iVar1 = 70;
@@ -92758,7 +92758,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 255:
-			StringCopy(&Var2, "G_FMF_9_1", 16);
+			StringCopy(&Var2, "G_FMF_9_1" /* GXT: Orange Tint Shooters */, 16);
 			iVar3 = 9;
 			iVar4 = 1;
 			iVar1 = 60;
@@ -92767,7 +92767,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 256:
-			StringCopy(&Var2, "G_FMF_9_2", 16);
+			StringCopy(&Var2, "G_FMF_9_2" /* GXT: Blue Shooters */, 16);
 			iVar3 = 9;
 			iVar4 = 2;
 			iVar1 = 65;
@@ -92776,7 +92776,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 257:
-			StringCopy(&Var2, "G_FMF_9_3", 16);
+			StringCopy(&Var2, "G_FMF_9_3" /* GXT: Tropic Shooters */, 16);
 			iVar3 = 9;
 			iVar4 = 3;
 			iVar1 = 570;
@@ -92785,7 +92785,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 258:
-			StringCopy(&Var2, "G_FMF_9_4", 16);
+			StringCopy(&Var2, "G_FMF_9_4" /* GXT: Fly Shooters */, 16);
 			iVar3 = 9;
 			iVar4 = 4;
 			iVar1 = 525;
@@ -92794,7 +92794,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 259:
-			StringCopy(&Var2, "G_FMF_9_5", 16);
+			StringCopy(&Var2, "G_FMF_9_5" /* GXT: Crimson Shooters */, 16);
 			iVar3 = 9;
 			iVar4 = 5;
 			iVar1 = 75;
@@ -92803,7 +92803,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 260:
-			StringCopy(&Var2, "G_FMF_9_6", 16);
+			StringCopy(&Var2, "G_FMF_9_6" /* GXT: Green Tint Shooters */, 16);
 			iVar3 = 9;
 			iVar4 = 6;
 			iVar1 = 75;
@@ -92812,7 +92812,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 261:
-			StringCopy(&Var2, "G_FMF_9_7", 16);
+			StringCopy(&Var2, "G_FMF_9_7" /* GXT: Pink Shooters */, 16);
 			iVar3 = 9;
 			iVar4 = 7;
 			iVar1 = 90;
@@ -92821,7 +92821,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 262:
-			StringCopy(&Var2, "CLO_EXF_G_9_8", 16);
+			StringCopy(&Var2, "CLO_EXF_G_9_8" /* GXT: Shell Shooter Glasses */, 16);
 			iVar3 = 9;
 			iVar4 = 8;
 			iVar1 = 645;
@@ -92830,7 +92830,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 263:
-			StringCopy(&Var2, "CLO_EXF_G_9_9", 16);
+			StringCopy(&Var2, "CLO_EXF_G_9_9" /* GXT: Black Shooter Glasses */, 16);
 			iVar3 = 9;
 			iVar4 = 9;
 			iVar1 = 260;
@@ -92839,7 +92839,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 264:
-			StringCopy(&Var2, "CLO_EXF_G_9_10", 16);
+			StringCopy(&Var2, "CLO_EXF_G_9_10" /* GXT: White Shooter Glasses */, 16);
 			iVar3 = 9;
 			iVar4 = 10;
 			iVar1 = 325;
@@ -92848,7 +92848,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 265:
-			StringCopy(&Var2, "G_FMF_10_0", 16);
+			StringCopy(&Var2, "G_FMF_10_0" /* GXT: Luxury Ice Sports */, 16);
 			iVar3 = 10;
 			iVar4 = 0;
 			iVar1 = 4065;
@@ -92857,7 +92857,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 266:
-			StringCopy(&Var2, "G_FMF_10_1", 16);
+			StringCopy(&Var2, "G_FMF_10_1" /* GXT: Black Sports */, 16);
 			iVar3 = 10;
 			iVar4 = 1;
 			iVar1 = 65;
@@ -92866,7 +92866,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 267:
-			StringCopy(&Var2, "G_FMF_10_2", 16);
+			StringCopy(&Var2, "G_FMF_10_2" /* GXT: Green Sports */, 16);
 			iVar3 = 10;
 			iVar4 = 2;
 			iVar1 = 85;
@@ -92875,7 +92875,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 268:
-			StringCopy(&Var2, "G_FMF_10_3", 16);
+			StringCopy(&Var2, "G_FMF_10_3" /* GXT: Luxury Cowhide Sports */, 16);
 			iVar3 = 10;
 			iVar4 = 3;
 			iVar1 = 4275;
@@ -92884,7 +92884,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 269:
-			StringCopy(&Var2, "G_FMF_10_4", 16);
+			StringCopy(&Var2, "G_FMF_10_4" /* GXT: Orange Sports */, 16);
 			iVar3 = 10;
 			iVar4 = 4;
 			iVar1 = 85;
@@ -92893,7 +92893,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 270:
-			StringCopy(&Var2, "G_FMF_10_5", 16);
+			StringCopy(&Var2, "G_FMF_10_5" /* GXT: Black Pattern Sports */, 16);
 			iVar3 = 10;
 			iVar4 = 5;
 			iVar1 = 80;
@@ -92902,7 +92902,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 271:
-			StringCopy(&Var2, "G_FMF_10_6", 16);
+			StringCopy(&Var2, "G_FMF_10_6" /* GXT: Blue Pattern Sports */, 16);
 			iVar3 = 10;
 			iVar4 = 6;
 			iVar1 = 85;
@@ -92911,7 +92911,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 272:
-			StringCopy(&Var2, "G_FMF_10_7", 16);
+			StringCopy(&Var2, "G_FMF_10_7" /* GXT: Pink Pattern Sports */, 16);
 			iVar3 = 10;
 			iVar4 = 7;
 			iVar1 = 90;
@@ -92920,7 +92920,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 273:
-			StringCopy(&Var2, "CLO_EXF_G_10_8", 16);
+			StringCopy(&Var2, "CLO_EXF_G_10_8" /* GXT: Shell HS Glasses */, 16);
 			iVar3 = 10;
 			iVar4 = 8;
 			iVar1 = 2315;
@@ -92929,7 +92929,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 274:
-			StringCopy(&Var2, "CLO_EXF_G_10_9", 16);
+			StringCopy(&Var2, "CLO_EXF_G_10_9" /* GXT: Black HS Glasses */, 16);
 			iVar3 = 10;
 			iVar4 = 9;
 			iVar1 = 1930;
@@ -92938,7 +92938,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 275:
-			StringCopy(&Var2, "CLO_EXF_G_10_10", 16);
+			StringCopy(&Var2, "CLO_EXF_G_10_10" /* GXT: White HS Glasses */, 16);
 			iVar3 = 10;
 			iVar4 = 10;
 			iVar1 = 1995;
@@ -92947,7 +92947,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 276:
-			StringCopy(&Var2, "G_FMF_11_0", 16);
+			StringCopy(&Var2, "G_FMF_11_0" /* GXT: Pewter Aviators */, 16);
 			iVar3 = 11;
 			iVar4 = 0;
 			iVar1 = 3660;
@@ -92956,7 +92956,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 277:
-			StringCopy(&Var2, "G_FMF_11_1", 16);
+			StringCopy(&Var2, "G_FMF_11_1" /* GXT: Steel Aviators */, 16);
 			iVar3 = 11;
 			iVar4 = 1;
 			iVar1 = 4165;
@@ -92965,7 +92965,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 278:
-			StringCopy(&Var2, "G_FMF_11_2", 16);
+			StringCopy(&Var2, "G_FMF_11_2" /* GXT: Bronze Aviators */, 16);
 			iVar3 = 11;
 			iVar4 = 2;
 			iVar1 = 3670;
@@ -92974,7 +92974,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 279:
-			StringCopy(&Var2, "G_FMF_11_3", 16);
+			StringCopy(&Var2, "G_FMF_11_3" /* GXT: Black Aviators */, 16);
 			iVar3 = 11;
 			iVar4 = 3;
 			iVar1 = 135;
@@ -92983,7 +92983,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 280:
-			StringCopy(&Var2, "G_FMF_11_4", 16);
+			StringCopy(&Var2, "G_FMF_11_4" /* GXT: Neon Aviators */, 16);
 			iVar3 = 11;
 			iVar4 = 4;
 			iVar1 = 3620;
@@ -92992,7 +92992,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 281:
-			StringCopy(&Var2, "G_FMF_11_5", 16);
+			StringCopy(&Var2, "G_FMF_11_5" /* GXT: Copper Aviators */, 16);
 			iVar3 = 11;
 			iVar4 = 5;
 			iVar1 = 3610;
@@ -93001,7 +93001,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 282:
-			StringCopy(&Var2, "G_FMF_11_6", 16);
+			StringCopy(&Var2, "G_FMF_11_6" /* GXT: Gold Aviators */, 16);
 			iVar3 = 11;
 			iVar4 = 6;
 			iVar1 = 4140;
@@ -93010,7 +93010,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 283:
-			StringCopy(&Var2, "G_FMF_11_7", 16);
+			StringCopy(&Var2, "G_FMF_11_7" /* GXT: Slate Aviators */, 16);
 			iVar3 = 11;
 			iVar4 = 7;
 			iVar1 = 130;
@@ -93179,7 +93179,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 300:
-			StringCopy(&Var2, "G_FMF_14_0", 16);
+			StringCopy(&Var2, "G_FMF_14_0" /* GXT: Black Cat Eyes */, 16);
 			iVar3 = 14;
 			iVar4 = 0;
 			iVar1 = 325;
@@ -93188,7 +93188,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 301:
-			StringCopy(&Var2, "G_FMF_14_1", 16);
+			StringCopy(&Var2, "G_FMF_14_1" /* GXT: Brown Marble Cat Eyes */, 16);
 			iVar3 = 14;
 			iVar4 = 1;
 			iVar1 = 110;
@@ -93197,7 +93197,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 302:
-			StringCopy(&Var2, "G_FMF_14_2", 16);
+			StringCopy(&Var2, "G_FMF_14_2" /* GXT: Pink Cat Eyes */, 16);
 			iVar3 = 14;
 			iVar4 = 2;
 			iVar1 = 115;
@@ -93206,7 +93206,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 303:
-			StringCopy(&Var2, "G_FMF_14_3", 16);
+			StringCopy(&Var2, "G_FMF_14_3" /* GXT: Green Marble Cat Eyes */, 16);
 			iVar3 = 14;
 			iVar4 = 3;
 			iVar1 = 120;
@@ -93215,7 +93215,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 304:
-			StringCopy(&Var2, "G_FMF_14_4", 16);
+			StringCopy(&Var2, "G_FMF_14_4" /* GXT: Red Cat Eyes */, 16);
 			iVar3 = 14;
 			iVar4 = 4;
 			iVar1 = 135;
@@ -93224,7 +93224,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 305:
-			StringCopy(&Var2, "G_FMF_14_5", 16);
+			StringCopy(&Var2, "G_FMF_14_5" /* GXT: Teal Cat Eyes */, 16);
 			iVar3 = 14;
 			iVar4 = 5;
 			iVar1 = 110;
@@ -93233,7 +93233,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 306:
-			StringCopy(&Var2, "G_FMF_14_6", 16);
+			StringCopy(&Var2, "G_FMF_14_6" /* GXT: Purple Cat Eyes */, 16);
 			iVar3 = 14;
 			iVar4 = 6;
 			iVar1 = 115;
@@ -93242,7 +93242,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 307:
-			StringCopy(&Var2, "G_FMF_14_7", 16);
+			StringCopy(&Var2, "G_FMF_14_7" /* GXT: Blue Cat Eyes */, 16);
 			iVar3 = 14;
 			iVar4 = 7;
 			iVar1 = 120;
@@ -93251,7 +93251,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 308:
-			StringCopy(&Var2, "CLO_EXF_G_14_8", 16);
+			StringCopy(&Var2, "CLO_EXF_G_14_8" /* GXT: Shell Cat Eye Glasses */, 16);
 			iVar3 = 14;
 			iVar4 = 8;
 			iVar1 = 1490;
@@ -93260,7 +93260,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 309:
-			StringCopy(&Var2, "CLO_EXF_G_14_9", 16);
+			StringCopy(&Var2, "CLO_EXF_G_14_9" /* GXT: Black Cat Eye Glasses */, 16);
 			iVar3 = 14;
 			iVar4 = 9;
 			iVar1 = 1105;
@@ -93269,7 +93269,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 310:
-			StringCopy(&Var2, "CLO_EXF_G_14_10", 16);
+			StringCopy(&Var2, "CLO_EXF_G_14_10" /* GXT: White Cat Eye Glasses */, 16);
 			iVar3 = 14;
 			iVar4 = 10;
 			iVar1 = 1170;
@@ -93400,7 +93400,7 @@ void func_731(int iParam0, int iParam1)//Position - 0x73768
 			break;
 		
 		case 323:
-			StringCopy(&Var2, "W_FMF_0_4", 16);
+			StringCopy(&Var2, "W_FMF_0_4" /* GXT: Pewter Watch */, 16);
 			iVar3 = 0;
 			iVar4 = 4;
 			iVar1 = 825;
@@ -93521,42 +93521,42 @@ void func_732(int iParam0, int iParam1)//Position - 0x7667B
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var2, "D_FMM_0_0", 16);
+			StringCopy(&Var2, "D_FMM_0_0" /* GXT: No Crew Emblem */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 0;
 			break;
 		
 		case 1:
-			StringCopy(&Var2, "D_FMM_2_0", 16);
+			StringCopy(&Var2, "D_FMM_2_0" /* GXT: Large Crew Emblem */, 16);
 			iVar3 = 1;
 			iVar4 = 0;
 			iVar1 = 10000;
 			break;
 		
 		case 2:
-			StringCopy(&Var2, "D_FMM_1_0", 16);
+			StringCopy(&Var2, "D_FMM_1_0" /* GXT: Small Crew Emblem */, 16);
 			iVar3 = 2;
 			iVar4 = 0;
 			iVar1 = 5000;
 			break;
 		
 		case 3:
-			StringCopy(&Var2, "D_FMM_2_0", 16);
+			StringCopy(&Var2, "D_FMM_2_0" /* GXT: Large Crew Emblem */, 16);
 			iVar3 = 3;
 			iVar4 = 0;
 			iVar1 = 10000;
 			break;
 		
 		case 4:
-			StringCopy(&Var2, "D_FMM_1_0", 16);
+			StringCopy(&Var2, "D_FMM_1_0" /* GXT: Small Crew Emblem */, 16);
 			iVar3 = 4;
 			iVar4 = 0;
 			iVar1 = 5000;
 			break;
 		
 		case 5:
-			StringCopy(&Var2, "D_FMM_2_0", 16);
+			StringCopy(&Var2, "D_FMM_2_0" /* GXT: Large Crew Emblem */, 16);
 			iVar3 = 5;
 			iVar4 = 0;
 			iVar1 = 10000;
@@ -98121,224 +98121,224 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var2, "U_FMF_0_0", 16);
+			StringCopy(&Var2, "U_FMF_0_0" /* GXT: Crew T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 250;
 			break;
 		
 		case 1:
-			StringCopy(&Var2, "U_FMF_0_1", 16);
+			StringCopy(&Var2, "U_FMF_0_1" /* GXT: Salamanders T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 1;
 			iVar1 = 225;
 			break;
 		
 		case 2:
-			StringCopy(&Var2, "U_FMF_0_2", 16);
+			StringCopy(&Var2, "U_FMF_0_2" /* GXT: The Feud T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 2;
 			iVar1 = 50;
 			break;
 		
 		case 3:
-			StringCopy(&Var2, "U_FMF_0_3", 16);
+			StringCopy(&Var2, "U_FMF_0_3" /* GXT: Yellow T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 3;
 			iVar1 = 40;
 			break;
 		
 		case 4:
-			StringCopy(&Var2, "U_FMF_0_4", 16);
+			StringCopy(&Var2, "U_FMF_0_4" /* GXT: Red T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 4;
 			iVar1 = 40;
 			break;
 		
 		case 5:
-			StringCopy(&Var2, "U_FMF_0_5", 16);
+			StringCopy(&Var2, "U_FMF_0_5" /* GXT: Cyan T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 5;
 			iVar1 = 40;
 			break;
 		
 		case 6:
-			StringCopy(&Var2, "U_FMF_0_6", 16);
+			StringCopy(&Var2, "U_FMF_0_6" /* GXT: Blue T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 6;
 			iVar1 = 40;
 			break;
 		
 		case 7:
-			StringCopy(&Var2, "U_FMF_0_7", 16);
+			StringCopy(&Var2, "U_FMF_0_7" /* GXT: Tan T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 7;
 			iVar1 = 45;
 			break;
 		
 		case 8:
-			StringCopy(&Var2, "U_FMF_0_8", 16);
+			StringCopy(&Var2, "U_FMF_0_8" /* GXT: Pink T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 8;
 			iVar1 = 40;
 			break;
 		
 		case 9:
-			StringCopy(&Var2, "U_FMF_0_9", 16);
+			StringCopy(&Var2, "U_FMF_0_9" /* GXT: Mint T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 9;
 			iVar1 = 40;
 			break;
 		
 		case 10:
-			StringCopy(&Var2, "U_FMF_0_10", 16);
+			StringCopy(&Var2, "U_FMF_0_10" /* GXT: Ash T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 10;
 			iVar1 = 135;
 			break;
 		
 		case 11:
-			StringCopy(&Var2, "U_FMF_0_11", 16);
+			StringCopy(&Var2, "U_FMF_0_11" /* GXT: Gray T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 11;
 			iVar1 = 60;
 			break;
 		
 		case 12:
-			StringCopy(&Var2, "U_FMF_0_12", 16);
+			StringCopy(&Var2, "U_FMF_0_12" /* GXT: Leopard T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 12;
 			iVar1 = 220;
 			break;
 		
 		case 13:
-			StringCopy(&Var2, "U_FMF_0_13", 16);
+			StringCopy(&Var2, "U_FMF_0_13" /* GXT: Two-Tone T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 13;
 			iVar1 = 45;
 			break;
 		
 		case 14:
-			StringCopy(&Var2, "U_FMF_0_14", 16);
+			StringCopy(&Var2, "U_FMF_0_14" /* GXT: Baby Blue T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 14;
 			iVar1 = 45;
 			break;
 		
 		case 15:
-			StringCopy(&Var2, "U_FMF_0_15", 16);
+			StringCopy(&Var2, "U_FMF_0_15" /* GXT: Two-Tone Striped T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 15;
 			iVar1 = 125;
 			break;
 		
 		case 16:
-			StringCopy(&Var2, "U_FMF_0_0", 16);
+			StringCopy(&Var2, "U_FMF_0_0" /* GXT: Crew T-Shirt */, 16);
 			iVar3 = 1;
 			iVar4 = 0;
 			iVar1 = 250;
 			break;
 		
 		case 17:
-			StringCopy(&Var2, "U_FMF_0_1", 16);
+			StringCopy(&Var2, "U_FMF_0_1" /* GXT: Salamanders T-Shirt */, 16);
 			iVar3 = 1;
 			iVar4 = 1;
 			iVar1 = 60;
 			break;
 		
 		case 18:
-			StringCopy(&Var2, "U_FMF_0_2", 16);
+			StringCopy(&Var2, "U_FMF_0_2" /* GXT: The Feud T-Shirt */, 16);
 			iVar3 = 1;
 			iVar4 = 2;
 			iVar1 = 50;
 			break;
 		
 		case 19:
-			StringCopy(&Var2, "U_FMF_0_3", 16);
+			StringCopy(&Var2, "U_FMF_0_3" /* GXT: Yellow T-Shirt */, 16);
 			iVar3 = 1;
 			iVar4 = 3;
 			iVar1 = 40;
 			break;
 		
 		case 20:
-			StringCopy(&Var2, "U_FMF_0_4", 16);
+			StringCopy(&Var2, "U_FMF_0_4" /* GXT: Red T-Shirt */, 16);
 			iVar3 = 1;
 			iVar4 = 4;
 			iVar1 = 40;
 			break;
 		
 		case 21:
-			StringCopy(&Var2, "U_FMF_0_5", 16);
+			StringCopy(&Var2, "U_FMF_0_5" /* GXT: Cyan T-Shirt */, 16);
 			iVar3 = 1;
 			iVar4 = 5;
 			iVar1 = 40;
 			break;
 		
 		case 22:
-			StringCopy(&Var2, "U_FMF_0_6", 16);
+			StringCopy(&Var2, "U_FMF_0_6" /* GXT: Blue T-Shirt */, 16);
 			iVar3 = 1;
 			iVar4 = 6;
 			iVar1 = 40;
 			break;
 		
 		case 23:
-			StringCopy(&Var2, "U_FMF_0_7", 16);
+			StringCopy(&Var2, "U_FMF_0_7" /* GXT: Tan T-Shirt */, 16);
 			iVar3 = 1;
 			iVar4 = 7;
 			iVar1 = 45;
 			break;
 		
 		case 24:
-			StringCopy(&Var2, "U_FMF_0_8", 16);
+			StringCopy(&Var2, "U_FMF_0_8" /* GXT: Pink T-Shirt */, 16);
 			iVar3 = 1;
 			iVar4 = 8;
 			iVar1 = 40;
 			break;
 		
 		case 25:
-			StringCopy(&Var2, "U_FMF_0_9", 16);
+			StringCopy(&Var2, "U_FMF_0_9" /* GXT: Mint T-Shirt */, 16);
 			iVar3 = 1;
 			iVar4 = 9;
 			iVar1 = 40;
 			break;
 		
 		case 26:
-			StringCopy(&Var2, "U_FMF_0_10", 16);
+			StringCopy(&Var2, "U_FMF_0_10" /* GXT: Ash T-Shirt */, 16);
 			iVar3 = 1;
 			iVar4 = 10;
 			iVar1 = 135;
 			break;
 		
 		case 27:
-			StringCopy(&Var2, "U_FMF_0_11", 16);
+			StringCopy(&Var2, "U_FMF_0_11" /* GXT: Gray T-Shirt */, 16);
 			iVar3 = 1;
 			iVar4 = 11;
 			iVar1 = 60;
 			break;
 		
 		case 28:
-			StringCopy(&Var2, "U_FMF_0_12", 16);
+			StringCopy(&Var2, "U_FMF_0_12" /* GXT: Leopard T-Shirt */, 16);
 			iVar3 = 1;
 			iVar4 = 12;
 			iVar1 = 220;
 			break;
 		
 		case 29:
-			StringCopy(&Var2, "U_FMF_0_13", 16);
+			StringCopy(&Var2, "U_FMF_0_13" /* GXT: Two-Tone T-Shirt */, 16);
 			iVar3 = 1;
 			iVar4 = 13;
 			iVar1 = 45;
 			break;
 		
 		case 30:
-			StringCopy(&Var2, "U_FMF_0_14", 16);
+			StringCopy(&Var2, "U_FMF_0_14" /* GXT: Baby Blue T-Shirt */, 16);
 			iVar3 = 1;
 			iVar4 = 14;
 			iVar1 = 45;
 			break;
 		
 		case 31:
-			StringCopy(&Var2, "U_FMF_0_15", 16);
+			StringCopy(&Var2, "U_FMF_0_15" /* GXT: Two-Tone Striped T-Shirt */, 16);
 			iVar3 = 1;
 			iVar4 = 15;
 			iVar1 = 125;
@@ -98446,7 +98446,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 47:
-			StringCopy(&Var2, "U_FMF_4_13", 16);
+			StringCopy(&Var2, "U_FMF_4_13" /* GXT: Red Two-Tone Tank */, 16);
 			iVar3 = 4;
 			iVar4 = 13;
 			iVar1 = 40;
@@ -98454,7 +98454,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 48:
-			StringCopy(&Var2, "U_FMF_4_14", 16);
+			StringCopy(&Var2, "U_FMF_4_14" /* GXT: Two-Tone Tank */, 16);
 			iVar3 = 4;
 			iVar4 = 14;
 			iVar1 = 40;
@@ -98469,7 +98469,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 50:
-			StringCopy(&Var2, "U_FMF_5_0", 16);
+			StringCopy(&Var2, "U_FMF_5_0" /* GXT: Off-White Cropped Tank */, 16);
 			iVar3 = 5;
 			iVar4 = 0;
 			iVar1 = 45;
@@ -98477,7 +98477,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 51:
-			StringCopy(&Var2, "U_FMF_5_1", 16);
+			StringCopy(&Var2, "U_FMF_5_1" /* GXT: Ash Cropped Tank */, 16);
 			iVar3 = 5;
 			iVar4 = 1;
 			iVar1 = 60;
@@ -98520,7 +98520,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 57:
-			StringCopy(&Var2, "U_FMF_5_7", 16);
+			StringCopy(&Var2, "U_FMF_5_7" /* GXT: Snakeskin Cropped Tank */, 16);
 			iVar3 = 5;
 			iVar4 = 7;
 			iVar1 = 375;
@@ -98535,7 +98535,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 59:
-			StringCopy(&Var2, "U_FMF_5_9", 16);
+			StringCopy(&Var2, "U_FMF_5_9" /* GXT: White Stripe Cropped Tank */, 16);
 			iVar3 = 5;
 			iVar4 = 9;
 			iVar1 = 90;
@@ -98610,7 +98610,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 71:
-			StringCopy(&Var2, "U_FMF_11_0", 16);
+			StringCopy(&Var2, "U_FMF_11_0" /* GXT: Sky Blue Racerback */, 16);
 			iVar3 = 11;
 			iVar4 = 0;
 			iVar1 = 90;
@@ -98618,7 +98618,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 72:
-			StringCopy(&Var2, "U_FMF_11_1", 16);
+			StringCopy(&Var2, "U_FMF_11_1" /* GXT: Purple Racerback */, 16);
 			iVar3 = 11;
 			iVar4 = 1;
 			iVar1 = 95;
@@ -98626,7 +98626,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 73:
-			StringCopy(&Var2, "U_FMF_11_2", 16);
+			StringCopy(&Var2, "U_FMF_11_2" /* GXT: Gray Racerback */, 16);
 			iVar3 = 11;
 			iVar4 = 2;
 			iVar1 = 95;
@@ -98683,7 +98683,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 81:
-			StringCopy(&Var2, "U_FMF_11_10", 16);
+			StringCopy(&Var2, "U_FMF_11_10" /* GXT: Los Santos 01 Racerback */, 16);
 			iVar3 = 11;
 			iVar4 = 10;
 			iVar1 = 150;
@@ -98691,7 +98691,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 82:
-			StringCopy(&Var2, "U_FMF_11_11", 16);
+			StringCopy(&Var2, "U_FMF_11_11" /* GXT: LS Racerback */, 16);
 			iVar3 = 11;
 			iVar4 = 11;
 			iVar1 = 65;
@@ -98720,7 +98720,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 86:
-			StringCopy(&Var2, "U_FMF_11_15", 16);
+			StringCopy(&Var2, "U_FMF_11_15" /* GXT: LC Penetrators Racerback */, 16);
 			iVar3 = 11;
 			iVar4 = 15;
 			iVar1 = 145;
@@ -98777,7 +98777,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 94:
-			StringCopy(&Var2, "U_FMF_12_7", 16);
+			StringCopy(&Var2, "U_FMF_12_7" /* GXT: Neon Camisole */, 16);
 			iVar3 = 12;
 			iVar4 = 7;
 			iVar1 = 1560;
@@ -98785,7 +98785,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 95:
-			StringCopy(&Var2, "U_FMF_12_8", 16);
+			StringCopy(&Var2, "U_FMF_12_8" /* GXT: Red Spotted Camisole */, 16);
 			iVar3 = 12;
 			iVar4 = 8;
 			iVar1 = 195;
@@ -98793,7 +98793,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 96:
-			StringCopy(&Var2, "U_FMF_12_9", 16);
+			StringCopy(&Var2, "U_FMF_12_9" /* GXT: Black Spotted Camisole */, 16);
 			iVar3 = 12;
 			iVar4 = 9;
 			iVar1 = 200;
@@ -98843,7 +98843,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 103:
-			StringCopy(&Var2, "U_FMF_13_0", 16);
+			StringCopy(&Var2, "U_FMF_13_0" /* GXT: Black Bustier */, 16);
 			iVar3 = 13;
 			iVar4 = 0;
 			iVar1 = 975;
@@ -98851,7 +98851,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 104:
-			StringCopy(&Var2, "U_FMF_13_1", 16);
+			StringCopy(&Var2, "U_FMF_13_1" /* GXT: Pink Rose Bustier */, 16);
 			iVar3 = 13;
 			iVar4 = 1;
 			iVar1 = 2670;
@@ -98859,7 +98859,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 105:
-			StringCopy(&Var2, "U_FMF_13_2", 16);
+			StringCopy(&Var2, "U_FMF_13_2" /* GXT: Olive Bustier */, 16);
 			iVar3 = 13;
 			iVar4 = 2;
 			iVar1 = 480;
@@ -98867,7 +98867,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 106:
-			StringCopy(&Var2, "U_FMF_13_3", 16);
+			StringCopy(&Var2, "U_FMF_13_3" /* GXT: Gray Bustier */, 16);
 			iVar3 = 13;
 			iVar4 = 3;
 			iVar1 = 400;
@@ -98875,7 +98875,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 107:
-			StringCopy(&Var2, "U_FMF_13_4", 16);
+			StringCopy(&Var2, "U_FMF_13_4" /* GXT: Floral Bustier */, 16);
 			iVar3 = 13;
 			iVar4 = 4;
 			iVar1 = 2500;
@@ -98883,7 +98883,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 108:
-			StringCopy(&Var2, "U_FMF_13_5", 16);
+			StringCopy(&Var2, "U_FMF_13_5" /* GXT: Red Plaid Bustier */, 16);
 			iVar3 = 13;
 			iVar4 = 5;
 			iVar1 = 2060;
@@ -98891,7 +98891,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 109:
-			StringCopy(&Var2, "U_FMF_13_6", 16);
+			StringCopy(&Var2, "U_FMF_13_6" /* GXT: Studded Bustier */, 16);
 			iVar3 = 13;
 			iVar4 = 6;
 			iVar1 = 2620;
@@ -98899,7 +98899,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 110:
-			StringCopy(&Var2, "U_FMF_13_7", 16);
+			StringCopy(&Var2, "U_FMF_13_7" /* GXT: Pink Bustier */, 16);
 			iVar3 = 13;
 			iVar4 = 7;
 			iVar1 = 475;
@@ -98907,7 +98907,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 111:
-			StringCopy(&Var2, "U_FMF_13_8", 16);
+			StringCopy(&Var2, "U_FMF_13_8" /* GXT: White Bustier */, 16);
 			iVar3 = 13;
 			iVar4 = 8;
 			iVar1 = 490;
@@ -98915,7 +98915,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 112:
-			StringCopy(&Var2, "U_FMF_13_9", 16);
+			StringCopy(&Var2, "U_FMF_13_9" /* GXT: Vivid Blue Bustier */, 16);
 			iVar3 = 13;
 			iVar4 = 9;
 			iVar1 = 2280;
@@ -98923,7 +98923,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 113:
-			StringCopy(&Var2, "U_FMF_13_10", 16);
+			StringCopy(&Var2, "U_FMF_13_10" /* GXT: Denim Bustier */, 16);
 			iVar3 = 13;
 			iVar4 = 10;
 			iVar1 = 485;
@@ -98931,7 +98931,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 114:
-			StringCopy(&Var2, "U_FMF_13_11", 16);
+			StringCopy(&Var2, "U_FMF_13_11" /* GXT: Pink Tribal Bustier */, 16);
 			iVar3 = 13;
 			iVar4 = 11;
 			iVar1 = 2390;
@@ -98939,7 +98939,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 115:
-			StringCopy(&Var2, "U_FMF_13_12", 16);
+			StringCopy(&Var2, "U_FMF_13_12" /* GXT: Camo Bustier */, 16);
 			iVar3 = 13;
 			iVar4 = 12;
 			iVar1 = 2610;
@@ -98947,7 +98947,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 116:
-			StringCopy(&Var2, "U_FMF_13_13", 16);
+			StringCopy(&Var2, "U_FMF_13_13" /* GXT: Blue Bustier */, 16);
 			iVar3 = 13;
 			iVar4 = 13;
 			iVar1 = 1450;
@@ -98955,7 +98955,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 117:
-			StringCopy(&Var2, "U_FMF_13_14", 16);
+			StringCopy(&Var2, "U_FMF_13_14" /* GXT: Black & White Bustier */, 16);
 			iVar3 = 13;
 			iVar4 = 14;
 			iVar1 = 2720;
@@ -98963,7 +98963,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 118:
-			StringCopy(&Var2, "U_FMF_13_15", 16);
+			StringCopy(&Var2, "U_FMF_13_15" /* GXT: Leopard Bustier */, 16);
 			iVar3 = 13;
 			iVar4 = 15;
 			iVar1 = 4995;
@@ -98976,7 +98976,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 120:
-			StringCopy(&Var2, "U_FMF_15_0", 16);
+			StringCopy(&Var2, "U_FMF_15_0" /* GXT: Black Bikini */, 16);
 			iVar3 = 15;
 			iVar4 = 0;
 			iVar1 = 325;
@@ -98998,7 +98998,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 123:
-			StringCopy(&Var2, "U_FMF_15_3", 16);
+			StringCopy(&Var2, "U_FMF_15_3" /* GXT: Gray Bikini */, 16);
 			iVar3 = 15;
 			iVar4 = 3;
 			iVar1 = 130;
@@ -99048,7 +99048,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 130:
-			StringCopy(&Var2, "U_FMF_15_10", 16);
+			StringCopy(&Var2, "U_FMF_15_10" /* GXT: Aqua Bikini */, 16);
 			iVar3 = 15;
 			iVar4 = 10;
 			iVar1 = 450;
@@ -99056,7 +99056,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 			break;
 		
 		case 131:
-			StringCopy(&Var2, "U_FMF_15_11", 16);
+			StringCopy(&Var2, "U_FMF_15_11" /* GXT: Orange Bikini */, 16);
 			iVar3 = 15;
 			iVar4 = 11;
 			iVar1 = 465;
@@ -99105,7 +99105,7 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 	{
 		if (func_651(89, -1))
 		{
-			StringCopy(&Var2, "REW_RS", 16);
+			StringCopy(&Var2, "REW_RS" /* GXT: Rockstar V Neck */, 16);
 			iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(1250) * Global_262145.f_2989));
 		}
 		else
@@ -99115,14 +99115,14 @@ void func_739(int iParam0, int iParam1)//Position - 0x7A326
 	}
 	else if (iParam0 == 7 || iParam0 == 23)
 	{
-		StringCopy(&Var2, "REW_LSB", 16);
+		StringCopy(&Var2, "REW_LSB" /* GXT: Los Santos Belle V Neck */, 16);
 		iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(450) * Global_262145.f_2988));
 	}
 	else if (iParam0 == 9 || iParam0 == 25)
 	{
 		if (func_651(87, -1))
 		{
-			StringCopy(&Var2, "REW_REDSK", 16);
+			StringCopy(&Var2, "REW_REDSK" /* GXT: Red Skull V Neck */, 16);
 			iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(500) * Global_262145.f_2987));
 		}
 		else
@@ -100864,7 +100864,7 @@ void func_740(int iParam0, int iParam1)//Position - 0x7B74B
 	{
 		if (func_651(89, -1))
 		{
-			StringCopy(&Var2, "REW_RS", 16);
+			StringCopy(&Var2, "REW_RS" /* GXT: Rockstar V Neck */, 16);
 			iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(1250) * Global_262145.f_2989) * Global_295754.f_24));
 		}
 		else
@@ -100874,14 +100874,14 @@ void func_740(int iParam0, int iParam1)//Position - 0x7B74B
 	}
 	else if (iParam0 == 7)
 	{
-		StringCopy(&Var2, "REW_LSB", 16);
+		StringCopy(&Var2, "REW_LSB" /* GXT: Los Santos Belle V Neck */, 16);
 		iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(450) * Global_262145.f_2988) * Global_295754.f_24));
 	}
 	else if (iParam0 == 9)
 	{
 		if (func_651(87, -1))
 		{
-			StringCopy(&Var2, "REW_REDSK", 16);
+			StringCopy(&Var2, "REW_REDSK" /* GXT: Red Skull V Neck */, 16);
 			iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(500) * Global_262145.f_2987) * Global_295754.f_24));
 		}
 		else
@@ -101908,151 +101908,151 @@ void func_746(int iParam0, int iParam1)//Position - 0x7E184
 		case 1:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMM_S1", 16);
+			StringCopy(&Var2, "O_FMM_S1" /* GXT: The Beat Maker */, 16);
 			break;
 		
 		case 2:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMM_S2", 16);
+			StringCopy(&Var2, "O_FMM_S2" /* GXT: The Brand */, 16);
 			break;
 		
 		case 3:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMM_S3", 16);
+			StringCopy(&Var2, "O_FMM_S3" /* GXT: The Skater */, 16);
 			break;
 		
 		case 4:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMM_S4", 16);
+			StringCopy(&Var2, "O_FMM_S4" /* GXT: The Roller */, 16);
 			break;
 		
 		case 5:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMM_S5", 16);
+			StringCopy(&Var2, "O_FMM_S5" /* GXT: The Camo Kid */, 16);
 			break;
 		
 		case 6:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMM_S6", 16);
+			StringCopy(&Var2, "O_FMM_S6" /* GXT: The Vibe */, 16);
 			break;
 		
 		case 7:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMM_S7", 16);
+			StringCopy(&Var2, "O_FMM_S7" /* GXT: The Color Junky */, 16);
 			break;
 		
 		case 8:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMM_S8", 16);
+			StringCopy(&Var2, "O_FMM_S8" /* GXT: The Classic T */, 16);
 			break;
 		
 		case 9:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMM_S9", 16);
+			StringCopy(&Var2, "O_FMM_S9" /* GXT: The Worker */, 16);
 			break;
 		
 		case 10:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMM_P1", 16);
+			StringCopy(&Var2, "O_FMM_P1" /* GXT: The Ladies Man */, 16);
 			break;
 		
 		case 11:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMM_P2", 16);
+			StringCopy(&Var2, "O_FMM_P2" /* GXT: The Office */, 16);
 			break;
 		
 		case 12:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMM_P3", 16);
+			StringCopy(&Var2, "O_FMM_P3" /* GXT: The After Party */, 16);
 			break;
 		
 		case 13:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMM_P4", 16);
+			StringCopy(&Var2, "O_FMM_P4" /* GXT: The Rebel */, 16);
 			break;
 		
 		case 14:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMM_P5", 16);
+			StringCopy(&Var2, "O_FMM_P5" /* GXT: The Trendsetter */, 16);
 			break;
 		
 		case 15:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMM_P6", 16);
+			StringCopy(&Var2, "O_FMM_P6" /* GXT: The Artist */, 16);
 			break;
 		
 		case 16:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMM_P7", 16);
+			StringCopy(&Var2, "O_FMM_P7" /* GXT: The Icon */, 16);
 			break;
 		
 		case 17:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMM_P8", 16);
+			StringCopy(&Var2, "O_FMM_P8" /* GXT: The Nightlife */, 16);
 			break;
 		
 		case 18:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMM_B1", 16);
+			StringCopy(&Var2, "O_FMM_B1" /* GXT: The Sun Bather */, 16);
 			break;
 		
 		case 19:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMM_B2", 16);
+			StringCopy(&Var2, "O_FMM_B2" /* GXT: The Stoop */, 16);
 			break;
 		
 		case 20:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMM_B3", 16);
+			StringCopy(&Var2, "O_FMM_B3" /* GXT: The Street G */, 16);
 			break;
 		
 		case 21:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMM_B4", 16);
+			StringCopy(&Var2, "O_FMM_B4" /* GXT: The Effortless */, 16);
 			break;
 		
 		case 22:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMM_B5", 16);
+			StringCopy(&Var2, "O_FMM_B5" /* GXT: The Everyday */, 16);
 			break;
 		
 		case 23:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMM_B6", 16);
+			StringCopy(&Var2, "O_FMM_B6" /* GXT: The Hood */, 16);
 			break;
 		
 		case 24:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMM_B7", 16);
+			StringCopy(&Var2, "O_FMM_B7" /* GXT: The Jock */, 16);
 			break;
 		
 		case 25:
 			iVar3 = 0;
 			iVar4 = 0;
-			StringCopy(&Var2, "O_FMM_B8", 16);
+			StringCopy(&Var2, "O_FMM_B8" /* GXT: The Pounders Fan */, 16);
 			break;
 		
 		default:
@@ -102154,7 +102154,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 10:
-			StringCopy(&Var2, "HT_FMM_0_0", 16);
+			StringCopy(&Var2, "HT_FMM_0_0" /* GXT: Red Ear Defenders */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 65;
@@ -102163,7 +102163,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 11:
-			StringCopy(&Var2, "HT_FMM_0_1", 16);
+			StringCopy(&Var2, "HT_FMM_0_1" /* GXT: Blue Ear Defenders */, 16);
 			iVar3 = 0;
 			iVar4 = 1;
 			iVar1 = 65;
@@ -102172,7 +102172,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 12:
-			StringCopy(&Var2, "HT_FMM_0_2", 16);
+			StringCopy(&Var2, "HT_FMM_0_2" /* GXT: Green Ear Defenders */, 16);
 			iVar3 = 0;
 			iVar4 = 2;
 			iVar1 = 85;
@@ -102181,7 +102181,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 13:
-			StringCopy(&Var2, "HT_FMM_0_3", 16);
+			StringCopy(&Var2, "HT_FMM_0_3" /* GXT: Yellow Ear Defenders */, 16);
 			iVar3 = 0;
 			iVar4 = 3;
 			iVar1 = 75;
@@ -102190,7 +102190,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 14:
-			StringCopy(&Var2, "HT_FMM_0_4", 16);
+			StringCopy(&Var2, "HT_FMM_0_4" /* GXT: Desert Camo Ear Defenders */, 16);
 			iVar3 = 0;
 			iVar4 = 4;
 			iVar1 = 235;
@@ -102199,7 +102199,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 15:
-			StringCopy(&Var2, "HT_FMM_0_5", 16);
+			StringCopy(&Var2, "HT_FMM_0_5" /* GXT: Black Ear Defenders */, 16);
 			iVar3 = 0;
 			iVar4 = 5;
 			iVar1 = 80;
@@ -102208,7 +102208,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 16:
-			StringCopy(&Var2, "HT_FMM_0_6", 16);
+			StringCopy(&Var2, "HT_FMM_0_6" /* GXT: Gray Ear Defenders */, 16);
 			iVar3 = 0;
 			iVar4 = 6;
 			iVar1 = 85;
@@ -102217,7 +102217,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 17:
-			StringCopy(&Var2, "HT_FMM_0_7", 16);
+			StringCopy(&Var2, "HT_FMM_0_7" /* GXT: White Ear Defenders */, 16);
 			iVar3 = 0;
 			iVar4 = 7;
 			iVar1 = 90;
@@ -102228,14 +102228,14 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 	switch (iParam0)
 	{
 		case 18:
-			StringCopy(&Var2, "HT_FMM_1_0", 16);
+			StringCopy(&Var2, "HT_FMM_1_0" /* GXT: White Dunce Cap */, 16);
 			iVar3 = 1;
 			iVar4 = 0;
 			iVar5 = 0;
 			break;
 		
 		case 19:
-			StringCopy(&Var2, "HT_FMM_2_0", 16);
+			StringCopy(&Var2, "HT_FMM_2_0" /* GXT: Black Winter Hat */, 16);
 			iVar3 = 2;
 			iVar4 = 0;
 			iVar1 = 35;
@@ -102244,7 +102244,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 20:
-			StringCopy(&Var2, "HT_FMM_2_1", 16);
+			StringCopy(&Var2, "HT_FMM_2_1" /* GXT: Gray Winter Hat */, 16);
 			iVar3 = 2;
 			iVar4 = 1;
 			iVar1 = 30;
@@ -102253,7 +102253,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 21:
-			StringCopy(&Var2, "HT_FMM_2_2", 16);
+			StringCopy(&Var2, "HT_FMM_2_2" /* GXT: Blue Winter Hat */, 16);
 			iVar3 = 2;
 			iVar4 = 2;
 			iVar1 = 35;
@@ -102262,7 +102262,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 22:
-			StringCopy(&Var2, "HT_FMM_2_3", 16);
+			StringCopy(&Var2, "HT_FMM_2_3" /* GXT: Rasta Winter Hat */, 16);
 			iVar3 = 2;
 			iVar4 = 3;
 			iVar1 = 320;
@@ -102271,7 +102271,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 23:
-			StringCopy(&Var2, "HT_FMM_2_4", 16);
+			StringCopy(&Var2, "HT_FMM_2_4" /* GXT: Gray Striped Winter Hat */, 16);
 			iVar3 = 2;
 			iVar4 = 4;
 			iVar1 = 185;
@@ -102280,7 +102280,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 24:
-			StringCopy(&Var2, "HT_FMM_2_5", 16);
+			StringCopy(&Var2, "HT_FMM_2_5" /* GXT: Trio Knit Winter Hat */, 16);
 			iVar3 = 2;
 			iVar4 = 5;
 			iVar1 = 245;
@@ -102289,7 +102289,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 25:
-			StringCopy(&Var2, "HT_FMM_2_6", 16);
+			StringCopy(&Var2, "HT_FMM_2_6" /* GXT: White Winter Hat */, 16);
 			iVar3 = 2;
 			iVar4 = 6;
 			iVar1 = 35;
@@ -102298,7 +102298,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 26:
-			StringCopy(&Var2, "HT_FMM_2_7", 16);
+			StringCopy(&Var2, "HT_FMM_2_7" /* GXT: Maroon Winter Hat */, 16);
 			iVar3 = 2;
 			iVar4 = 7;
 			iVar1 = 40;
@@ -102317,7 +102317,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 28:
-			StringCopy(&Var2, "HT_FMM_3_1", 16);
+			StringCopy(&Var2, "HT_FMM_3_1" /* GXT: Black Canvas Hat */, 16);
 			iVar3 = 3;
 			iVar4 = 1;
 			iVar1 = 60;
@@ -102326,7 +102326,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 29:
-			StringCopy(&Var2, "HT_FMM_3_2", 16);
+			StringCopy(&Var2, "HT_FMM_3_2" /* GXT: Tan Canvas Hat */, 16);
 			iVar3 = 3;
 			iVar4 = 2;
 			iVar1 = 65;
@@ -102385,7 +102385,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 35:
-			StringCopy(&Var2, "HT_FMM_4_0", 16);
+			StringCopy(&Var2, "HT_FMM_4_0" /* GXT: Black LS Fitted Cap */, 16);
 			iVar3 = 4;
 			iVar4 = 0;
 			iVar1 = 415;
@@ -102394,7 +102394,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 36:
-			StringCopy(&Var2, "HT_FMM_4_1", 16);
+			StringCopy(&Var2, "HT_FMM_4_1" /* GXT: Gray LS Fitted Cap */, 16);
 			iVar3 = 4;
 			iVar4 = 1;
 			iVar1 = 315;
@@ -102463,7 +102463,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 43:
-			StringCopy(&Var2, "HT_FMM_5_0", 16);
+			StringCopy(&Var2, "HT_FMM_5_0" /* GXT: Black Saggy Beanie */, 16);
 			iVar3 = 5;
 			iVar4 = 0;
 			iVar1 = 75;
@@ -102472,7 +102472,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 44:
-			StringCopy(&Var2, "HT_FMM_5_1", 16);
+			StringCopy(&Var2, "HT_FMM_5_1" /* GXT: Gray Saggy Beanie */, 16);
 			iVar3 = 5;
 			iVar4 = 1;
 			iVar1 = 60;
@@ -102541,7 +102541,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 51:
-			StringCopy(&Var2, "HT_FMM_6_0", 16);
+			StringCopy(&Var2, "HT_FMM_6_0" /* GXT: Green Army Cap */, 16);
 			iVar3 = 6;
 			iVar4 = 0;
 			iVar1 = 160;
@@ -102550,7 +102550,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 52:
-			StringCopy(&Var2, "HT_FMM_6_1", 16);
+			StringCopy(&Var2, "HT_FMM_6_1" /* GXT: Black Army Cap */, 16);
 			iVar3 = 6;
 			iVar4 = 1;
 			iVar1 = 265;
@@ -102559,7 +102559,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 53:
-			StringCopy(&Var2, "HT_FMM_6_2", 16);
+			StringCopy(&Var2, "HT_FMM_6_2" /* GXT: Gray Army Cap */, 16);
 			iVar3 = 6;
 			iVar4 = 2;
 			iVar1 = 170;
@@ -102568,7 +102568,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 54:
-			StringCopy(&Var2, "HT_FMM_6_3", 16);
+			StringCopy(&Var2, "HT_FMM_6_3" /* GXT: Blue Army Cap */, 16);
 			iVar3 = 6;
 			iVar4 = 3;
 			iVar1 = 135;
@@ -102577,7 +102577,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 55:
-			StringCopy(&Var2, "HT_FMM_6_4", 16);
+			StringCopy(&Var2, "HT_FMM_6_4" /* GXT: Desert Army Cap */, 16);
 			iVar3 = 6;
 			iVar4 = 4;
 			iVar1 = 570;
@@ -102586,7 +102586,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 56:
-			StringCopy(&Var2, "HT_FMM_6_5", 16);
+			StringCopy(&Var2, "HT_FMM_6_5" /* GXT: Woodland Army Cap */, 16);
 			iVar3 = 6;
 			iVar4 = 5;
 			iVar1 = 560;
@@ -102595,7 +102595,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 57:
-			StringCopy(&Var2, "HT_FMM_6_6", 16);
+			StringCopy(&Var2, "HT_FMM_6_6" /* GXT: Ranch Beige Army Cap */, 16);
 			iVar3 = 6;
 			iVar4 = 6;
 			iVar1 = 140;
@@ -102604,7 +102604,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 58:
-			StringCopy(&Var2, "HT_FMM_6_7", 16);
+			StringCopy(&Var2, "HT_FMM_6_7" /* GXT: Ranch Brown Army Cap */, 16);
 			iVar3 = 6;
 			iVar4 = 7;
 			iVar1 = 130;
@@ -102613,7 +102613,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 59:
-			StringCopy(&Var2, "HT_FMM_7_0", 16);
+			StringCopy(&Var2, "HT_FMM_7_0" /* GXT: White Flat Cap */, 16);
 			iVar3 = 7;
 			iVar4 = 0;
 			iVar1 = 260;
@@ -102622,7 +102622,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 60:
-			StringCopy(&Var2, "HT_FMM_7_1", 16);
+			StringCopy(&Var2, "HT_FMM_7_1" /* GXT: Gray Flat Cap */, 16);
 			iVar3 = 7;
 			iVar4 = 1;
 			iVar1 = 215;
@@ -102631,7 +102631,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 61:
-			StringCopy(&Var2, "HT_FMM_7_2", 16);
+			StringCopy(&Var2, "HT_FMM_7_2" /* GXT: Black Flat Cap */, 16);
 			iVar3 = 7;
 			iVar4 = 2;
 			iVar1 = 430;
@@ -102640,7 +102640,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 62:
-			StringCopy(&Var2, "HT_FMM_7_3", 16);
+			StringCopy(&Var2, "HT_FMM_7_3" /* GXT: Navy Flat Cap */, 16);
 			iVar3 = 7;
 			iVar4 = 3;
 			iVar1 = 160;
@@ -102649,7 +102649,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 63:
-			StringCopy(&Var2, "HT_FMM_7_4", 16);
+			StringCopy(&Var2, "HT_FMM_7_4" /* GXT: Red Flat Cap */, 16);
 			iVar3 = 7;
 			iVar4 = 4;
 			iVar1 = 200;
@@ -102658,7 +102658,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 64:
-			StringCopy(&Var2, "HT_FMM_7_5", 16);
+			StringCopy(&Var2, "HT_FMM_7_5" /* GXT: Brown Flat Cap */, 16);
 			iVar3 = 7;
 			iVar4 = 5;
 			iVar1 = 155;
@@ -102667,7 +102667,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 65:
-			StringCopy(&Var2, "HT_FMM_7_6", 16);
+			StringCopy(&Var2, "HT_FMM_7_6" /* GXT: Green Flat Cap */, 16);
 			iVar3 = 7;
 			iVar4 = 6;
 			iVar1 = 155;
@@ -102676,7 +102676,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 66:
-			StringCopy(&Var2, "HT_FMM_7_7", 16);
+			StringCopy(&Var2, "HT_FMM_7_7" /* GXT: Yellow Flat Cap */, 16);
 			iVar3 = 7;
 			iVar4 = 7;
 			iVar1 = 165;
@@ -102817,7 +102817,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 80:
-			StringCopy(&Var2, "HT_FMM_9_5", 16);
+			StringCopy(&Var2, "HT_FMM_9_5" /* GXT: Fruntalot Green Cap */, 16);
 			iVar3 = 9;
 			iVar4 = 5;
 			iVar1 = 100;
@@ -102836,7 +102836,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 82:
-			StringCopy(&Var2, "HT_FMM_9_7", 16);
+			StringCopy(&Var2, "HT_FMM_9_7" /* GXT: Stank Purple Cap */, 16);
 			iVar3 = 9;
 			iVar4 = 7;
 			iVar1 = 65;
@@ -102895,7 +102895,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 88:
-			StringCopy(&Var2, "HT_FMM_10_5", 16);
+			StringCopy(&Var2, "HT_FMM_10_5" /* GXT: Fruntalot Green Cap */, 16);
 			iVar3 = 10;
 			iVar4 = 5;
 			iVar1 = 65;
@@ -102914,7 +102914,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 90:
-			StringCopy(&Var2, "HT_FMM_10_7", 16);
+			StringCopy(&Var2, "HT_FMM_10_7" /* GXT: Stank Purple Cap */, 16);
 			iVar3 = 10;
 			iVar4 = 7;
 			iVar1 = 65;
@@ -102933,7 +102933,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 92:
-			StringCopy(&Var2, "HT_FMM_11_1", 16);
+			StringCopy(&Var2, "HT_FMM_11_1" /* GXT: Black Pork Pie */, 16);
 			iVar3 = 11;
 			iVar4 = 1;
 			iVar1 = 0;
@@ -102953,7 +102953,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 94:
-			StringCopy(&Var2, "HT_FMM_11_3", 16);
+			StringCopy(&Var2, "HT_FMM_11_3" /* GXT: Olive Pork Pie */, 16);
 			iVar3 = 11;
 			iVar4 = 3;
 			iVar1 = 0;
@@ -102983,7 +102983,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 97:
-			StringCopy(&Var2, "HT_FMM_11_6", 16);
+			StringCopy(&Var2, "HT_FMM_11_6" /* GXT: Blue Pork Pie */, 16);
 			iVar3 = 11;
 			iVar4 = 6;
 			iVar1 = 0;
@@ -103003,7 +103003,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 99:
-			StringCopy(&Var2, "HT_FMM_12_0", 16);
+			StringCopy(&Var2, "HT_FMM_12_0" /* GXT: Black Fedora */, 16);
 			iVar3 = 12;
 			iVar4 = 0;
 			iVar1 = 1715;
@@ -103012,7 +103012,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 100:
-			StringCopy(&Var2, "HT_FMM_12_1", 16);
+			StringCopy(&Var2, "HT_FMM_12_1" /* GXT: White Fedora */, 16);
 			iVar3 = 12;
 			iVar4 = 1;
 			iVar1 = 3900;
@@ -103021,7 +103021,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 101:
-			StringCopy(&Var2, "HT_FMM_12_2", 16);
+			StringCopy(&Var2, "HT_FMM_12_2" /* GXT: Ash Fedora */, 16);
 			iVar3 = 12;
 			iVar4 = 2;
 			iVar1 = 1550;
@@ -103040,7 +103040,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 103:
-			StringCopy(&Var2, "HT_FMM_12_4", 16);
+			StringCopy(&Var2, "HT_FMM_12_4" /* GXT: Brown Fedora */, 16);
 			iVar3 = 12;
 			iVar4 = 4;
 			iVar1 = 4250;
@@ -103059,7 +103059,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 105:
-			StringCopy(&Var2, "HT_FMM_12_6", 16);
+			StringCopy(&Var2, "HT_FMM_12_6" /* GXT: Green Fedora */, 16);
 			iVar3 = 12;
 			iVar4 = 6;
 			iVar1 = 4460;
@@ -103068,7 +103068,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 106:
-			StringCopy(&Var2, "HT_FMM_12_7", 16);
+			StringCopy(&Var2, "HT_FMM_12_7" /* GXT: Navy Fedora */, 16);
 			iVar3 = 12;
 			iVar4 = 7;
 			iVar1 = 4970;
@@ -103077,7 +103077,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 107:
-			StringCopy(&Var2, "HT_FMM_13_0", 16);
+			StringCopy(&Var2, "HT_FMM_13_0" /* GXT: Black Cowboy Hat */, 16);
 			iVar3 = 13;
 			iVar4 = 0;
 			iVar1 = 290;
@@ -103086,7 +103086,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 108:
-			StringCopy(&Var2, "HT_FMM_13_1", 16);
+			StringCopy(&Var2, "HT_FMM_13_1" /* GXT: Brown Cowboy Hat */, 16);
 			iVar3 = 13;
 			iVar4 = 1;
 			iVar1 = 305;
@@ -103095,7 +103095,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 109:
-			StringCopy(&Var2, "HT_FMM_13_2", 16);
+			StringCopy(&Var2, "HT_FMM_13_2" /* GXT: Chocolate Cowboy Hat */, 16);
 			iVar3 = 13;
 			iVar4 = 2;
 			iVar1 = 4170;
@@ -103104,7 +103104,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 110:
-			StringCopy(&Var2, "HT_FMM_13_3", 16);
+			StringCopy(&Var2, "HT_FMM_13_3" /* GXT: White Cowboy Hat */, 16);
 			iVar3 = 13;
 			iVar4 = 3;
 			iVar1 = 335;
@@ -103113,7 +103113,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 111:
-			StringCopy(&Var2, "HT_FMM_13_4", 16);
+			StringCopy(&Var2, "HT_FMM_13_4" /* GXT: Chestnut Cowboy Hat */, 16);
 			iVar3 = 13;
 			iVar4 = 4;
 			iVar1 = 4940;
@@ -103122,7 +103122,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 112:
-			StringCopy(&Var2, "HT_FMM_13_5", 16);
+			StringCopy(&Var2, "HT_FMM_13_5" /* GXT: Beige Cowboy Hat */, 16);
 			iVar3 = 13;
 			iVar4 = 5;
 			iVar1 = 275;
@@ -103131,7 +103131,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 113:
-			StringCopy(&Var2, "HT_FMM_13_6", 16);
+			StringCopy(&Var2, "HT_FMM_13_6" /* GXT: Red Cowboy Hat */, 16);
 			iVar3 = 13;
 			iVar4 = 6;
 			iVar1 = 5000;
@@ -103140,7 +103140,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 114:
-			StringCopy(&Var2, "HT_FMM_13_7", 16);
+			StringCopy(&Var2, "HT_FMM_13_7" /* GXT: Tan Cowboy Hat */, 16);
 			iVar3 = 13;
 			iVar4 = 7;
 			iVar1 = 3620;
@@ -103149,7 +103149,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 115:
-			StringCopy(&Var2, "HT_FMM_14_0", 16);
+			StringCopy(&Var2, "HT_FMM_14_0" /* GXT: White Paisley Bandana */, 16);
 			iVar3 = 14;
 			iVar4 = 0;
 			iVar1 = 30;
@@ -103158,7 +103158,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 116:
-			StringCopy(&Var2, "HT_FMM_14_1", 16);
+			StringCopy(&Var2, "HT_FMM_14_1" /* GXT: Black Paisley Bandana */, 16);
 			iVar3 = 14;
 			iVar4 = 1;
 			iVar1 = 25;
@@ -103167,7 +103167,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 117:
-			StringCopy(&Var2, "HT_FMM_14_2", 16);
+			StringCopy(&Var2, "HT_FMM_14_2" /* GXT: Navy Bandana */, 16);
 			iVar3 = 14;
 			iVar4 = 2;
 			iVar1 = 30;
@@ -103176,7 +103176,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 118:
-			StringCopy(&Var2, "HT_FMM_14_3", 16);
+			StringCopy(&Var2, "HT_FMM_14_3" /* GXT: Red Bandana */, 16);
 			iVar3 = 14;
 			iVar4 = 3;
 			iVar1 = 30;
@@ -103185,7 +103185,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 119:
-			StringCopy(&Var2, "HT_FMM_14_4", 16);
+			StringCopy(&Var2, "HT_FMM_14_4" /* GXT: Green Bandana */, 16);
 			iVar3 = 14;
 			iVar4 = 4;
 			iVar1 = 35;
@@ -103194,7 +103194,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 120:
-			StringCopy(&Var2, "HT_FMM_14_5", 16);
+			StringCopy(&Var2, "HT_FMM_14_5" /* GXT: Purple Bandana */, 16);
 			iVar3 = 14;
 			iVar4 = 5;
 			iVar1 = 30;
@@ -103203,7 +103203,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 121:
-			StringCopy(&Var2, "HT_FMM_14_6", 16);
+			StringCopy(&Var2, "HT_FMM_14_6" /* GXT: Camo Bandana */, 16);
 			iVar3 = 14;
 			iVar4 = 6;
 			iVar1 = 350;
@@ -103212,7 +103212,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 122:
-			StringCopy(&Var2, "HT_FMM_14_7", 16);
+			StringCopy(&Var2, "HT_FMM_14_7" /* GXT: Yellow Bandana */, 16);
 			iVar3 = 14;
 			iVar4 = 7;
 			iVar1 = 35;
@@ -103221,7 +103221,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 123:
-			StringCopy(&Var2, "HT_FMM_15_0", 16);
+			StringCopy(&Var2, "HT_FMM_15_0" /* GXT: Beat Off White Headphones */, 16);
 			iVar3 = 15;
 			iVar4 = 0;
 			iVar1 = 365;
@@ -103230,7 +103230,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 124:
-			StringCopy(&Var2, "HT_FMM_15_1", 16);
+			StringCopy(&Var2, "HT_FMM_15_1" /* GXT: Beat Off Black Headphones */, 16);
 			iVar3 = 15;
 			iVar4 = 1;
 			iVar1 = 380;
@@ -103239,7 +103239,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 125:
-			StringCopy(&Var2, "HT_FMM_15_2", 16);
+			StringCopy(&Var2, "HT_FMM_15_2" /* GXT: Beat Off Red Headphones */, 16);
 			iVar3 = 15;
 			iVar4 = 2;
 			iVar1 = 595;
@@ -103248,7 +103248,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 126:
-			StringCopy(&Var2, "HT_FMM_15_3", 16);
+			StringCopy(&Var2, "HT_FMM_15_3" /* GXT: Beat Off Blue Headphones */, 16);
 			iVar3 = 15;
 			iVar4 = 3;
 			iVar1 = 595;
@@ -103257,7 +103257,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 127:
-			StringCopy(&Var2, "HT_FMM_15_4", 16);
+			StringCopy(&Var2, "HT_FMM_15_4" /* GXT: Beat Off Yellow Headphones */, 16);
 			iVar3 = 15;
 			iVar4 = 4;
 			iVar1 = 600;
@@ -103266,7 +103266,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 128:
-			StringCopy(&Var2, "HT_FMM_15_5", 16);
+			StringCopy(&Var2, "HT_FMM_15_5" /* GXT: Beat Off Purple Headphones */, 16);
 			iVar3 = 15;
 			iVar4 = 5;
 			iVar1 = 590;
@@ -103275,7 +103275,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 129:
-			StringCopy(&Var2, "HT_FMM_15_6", 16);
+			StringCopy(&Var2, "HT_FMM_15_6" /* GXT: Beat Off Gray Headphones */, 16);
 			iVar3 = 15;
 			iVar4 = 6;
 			iVar1 = 395;
@@ -103284,7 +103284,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 130:
-			StringCopy(&Var2, "HT_FMM_15_7", 16);
+			StringCopy(&Var2, "HT_FMM_15_7" /* GXT: Beat Off Green Headphones */, 16);
 			iVar3 = 15;
 			iVar4 = 7;
 			iVar1 = 555;
@@ -103295,7 +103295,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 	switch (iParam0)
 	{
 		case 131:
-			StringCopy(&Var2, "HE_FMM_16_0", 16);
+			StringCopy(&Var2, "HE_FMM_16_0" /* GXT: Western MC Yellow Helmet */, 16);
 			iVar3 = 16;
 			iVar4 = 0;
 			iVar1 = 1060;
@@ -103304,7 +103304,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 132:
-			StringCopy(&Var2, "HE_FMM_16_1", 16);
+			StringCopy(&Var2, "HE_FMM_16_1" /* GXT: Steel Horse Blue Helmet */, 16);
 			iVar3 = 16;
 			iVar4 = 1;
 			iVar1 = 1400;
@@ -103313,7 +103313,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 133:
-			StringCopy(&Var2, "HE_FMM_16_2", 16);
+			StringCopy(&Var2, "HE_FMM_16_2" /* GXT: Steel Horse Orange Helmet */, 16);
 			iVar3 = 16;
 			iVar4 = 2;
 			iVar1 = 1315;
@@ -103322,7 +103322,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 134:
-			StringCopy(&Var2, "HE_FMM_16_3", 16);
+			StringCopy(&Var2, "HE_FMM_16_3" /* GXT: Western MC Green Helmet */, 16);
 			iVar3 = 16;
 			iVar4 = 3;
 			iVar1 = 1230;
@@ -103331,7 +103331,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 135:
-			StringCopy(&Var2, "HE_FMM_16_4", 16);
+			StringCopy(&Var2, "HE_FMM_16_4" /* GXT: Western MC Red Helmet */, 16);
 			iVar3 = 16;
 			iVar4 = 4;
 			iVar1 = 1145;
@@ -103340,7 +103340,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 136:
-			StringCopy(&Var2, "HE_FMM_16_5", 16);
+			StringCopy(&Var2, "HE_FMM_16_5" /* GXT: Steel Horse Black Helmet */, 16);
 			iVar3 = 16;
 			iVar4 = 5;
 			iVar1 = 8450;
@@ -103349,7 +103349,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 137:
-			StringCopy(&Var2, "HE_FMM_16_6", 16);
+			StringCopy(&Var2, "HE_FMM_16_6" /* GXT: Black Helmet */, 16);
 			iVar3 = 16;
 			iVar4 = 6;
 			iVar1 = 675;
@@ -103358,7 +103358,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 138:
-			StringCopy(&Var2, "HE_FMM_16_7", 16);
+			StringCopy(&Var2, "HE_FMM_16_7" /* GXT: Western MC Lilac Helmet */, 16);
 			iVar3 = 16;
 			iVar4 = 7;
 			iVar1 = 8750;
@@ -103367,7 +103367,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 139:
-			StringCopy(&Var2, "HE_FMM_17_0", 16);
+			StringCopy(&Var2, "HE_FMM_17_0" /* GXT: Blue Open-Face Helmet */, 16);
 			iVar3 = 17;
 			iVar4 = 0;
 			iVar1 = 975;
@@ -103376,7 +103376,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 140:
-			StringCopy(&Var2, "HE_FMM_17_1", 16);
+			StringCopy(&Var2, "HE_FMM_17_1" /* GXT: Orange Open-Face Helmet */, 16);
 			iVar3 = 17;
 			iVar4 = 1;
 			iVar1 = 750;
@@ -103385,7 +103385,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 141:
-			StringCopy(&Var2, "HE_FMM_17_2", 16);
+			StringCopy(&Var2, "HE_FMM_17_2" /* GXT: Pale Blue Open-Face Helmet */, 16);
 			iVar3 = 17;
 			iVar4 = 2;
 			iVar1 = 865;
@@ -103394,7 +103394,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 142:
-			StringCopy(&Var2, "HE_FMM_17_3", 16);
+			StringCopy(&Var2, "HE_FMM_17_3" /* GXT: Red Open-Face Helmet */, 16);
 			iVar3 = 17;
 			iVar4 = 3;
 			iVar1 = 890;
@@ -103403,7 +103403,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 143:
-			StringCopy(&Var2, "HE_FMM_17_4", 16);
+			StringCopy(&Var2, "HE_FMM_17_4" /* GXT: Gray Open-Face Helmet */, 16);
 			iVar3 = 17;
 			iVar4 = 4;
 			iVar1 = 730;
@@ -103412,7 +103412,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 144:
-			StringCopy(&Var2, "HE_FMM_17_5", 16);
+			StringCopy(&Var2, "HE_FMM_17_5" /* GXT: Black Open-Face Helmet */, 16);
 			iVar3 = 17;
 			iVar4 = 5;
 			iVar1 = 650;
@@ -103421,7 +103421,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 145:
-			StringCopy(&Var2, "HE_FMM_17_6", 16);
+			StringCopy(&Var2, "HE_FMM_17_6" /* GXT: Pink Open-Face Helmet */, 16);
 			iVar3 = 17;
 			iVar4 = 6;
 			iVar1 = 645;
@@ -103430,7 +103430,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 146:
-			StringCopy(&Var2, "HE_FMM_17_7", 16);
+			StringCopy(&Var2, "HE_FMM_17_7" /* GXT: White Open-Face Helmet */, 16);
 			iVar3 = 17;
 			iVar4 = 7;
 			iVar1 = 755;
@@ -103439,7 +103439,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 147:
-			StringCopy(&Var2, "HE_FMM_18_0", 16);
+			StringCopy(&Var2, "HE_FMM_18_0" /* GXT: Shatter Pattern Helmet */, 16);
 			iVar3 = 18;
 			iVar4 = 0;
 			iVar1 = 13850;
@@ -103448,7 +103448,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 148:
-			StringCopy(&Var2, "HE_FMM_18_1", 16);
+			StringCopy(&Var2, "HE_FMM_18_1" /* GXT: Stars Helmet */, 16);
 			iVar3 = 18;
 			iVar4 = 1;
 			iVar1 = 2900;
@@ -103457,7 +103457,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 149:
-			StringCopy(&Var2, "HE_FMM_18_2", 16);
+			StringCopy(&Var2, "HE_FMM_18_2" /* GXT: Squared Helmet */, 16);
 			iVar3 = 18;
 			iVar4 = 2;
 			iVar1 = 2895;
@@ -103466,7 +103466,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 150:
-			StringCopy(&Var2, "HE_FMM_18_3", 16);
+			StringCopy(&Var2, "HE_FMM_18_3" /* GXT: Crimson Helmet */, 16);
 			iVar3 = 18;
 			iVar4 = 3;
 			iVar1 = 12500;
@@ -103475,7 +103475,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 151:
-			StringCopy(&Var2, "HE_FMM_18_4", 16);
+			StringCopy(&Var2, "HE_FMM_18_4" /* GXT: Skull Helmet */, 16);
 			iVar3 = 18;
 			iVar4 = 4;
 			iVar1 = 15000;
@@ -103484,7 +103484,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 152:
-			StringCopy(&Var2, "HE_FMM_18_5", 16);
+			StringCopy(&Var2, "HE_FMM_18_5" /* GXT: Ace of Spades Helmet */, 16);
 			iVar3 = 18;
 			iVar4 = 5;
 			iVar1 = 14750;
@@ -103493,7 +103493,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 153:
-			StringCopy(&Var2, "HE_FMM_18_6", 16);
+			StringCopy(&Var2, "HE_FMM_18_6" /* GXT: Flamejob Helmet */, 16);
 			iVar3 = 18;
 			iVar4 = 6;
 			iVar1 = 13150;
@@ -103502,7 +103502,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 154:
-			StringCopy(&Var2, "HE_FMM_18_7", 16);
+			StringCopy(&Var2, "HE_FMM_18_7" /* GXT: White Helmet */, 16);
 			iVar3 = 18;
 			iVar4 = 7;
 			iVar1 = 2925;
@@ -103630,7 +103630,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 167:
-			StringCopy(&Var2, "G_FMM_1_1", 16);
+			StringCopy(&Var2, "G_FMM_1_1" /* GXT: Black Wraparounds */, 16);
 			iVar3 = 1;
 			iVar4 = 1;
 			iVar1 = 180;
@@ -103699,7 +103699,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 174:
-			StringCopy(&Var2, "G_FMM_2_0", 16);
+			StringCopy(&Var2, "G_FMM_2_0" /* GXT: Black Winter Shades */, 16);
 			iVar3 = 2;
 			iVar4 = 0;
 			iVar1 = 110;
@@ -103708,7 +103708,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 175:
-			StringCopy(&Var2, "G_FMM_2_1", 16);
+			StringCopy(&Var2, "G_FMM_2_1" /* GXT: White Silver Shades */, 16);
 			iVar3 = 2;
 			iVar4 = 1;
 			iVar1 = 140;
@@ -103717,7 +103717,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 176:
-			StringCopy(&Var2, "G_FMM_2_2", 16);
+			StringCopy(&Var2, "G_FMM_2_2" /* GXT: Crimson Polarized Shades */, 16);
 			iVar3 = 2;
 			iVar4 = 2;
 			iVar1 = 380;
@@ -103726,7 +103726,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 177:
-			StringCopy(&Var2, "G_FMM_2_3", 16);
+			StringCopy(&Var2, "G_FMM_2_3" /* GXT: Black Summer Shades */, 16);
 			iVar3 = 2;
 			iVar4 = 3;
 			iVar1 = 135;
@@ -103735,7 +103735,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 178:
-			StringCopy(&Var2, "G_FMM_2_4", 16);
+			StringCopy(&Var2, "G_FMM_2_4" /* GXT: Black Autumn Shades */, 16);
 			iVar3 = 2;
 			iVar4 = 4;
 			iVar1 = 130;
@@ -103744,7 +103744,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 179:
-			StringCopy(&Var2, "G_FMM_2_5", 16);
+			StringCopy(&Var2, "G_FMM_2_5" /* GXT: White Rust Shades */, 16);
 			iVar3 = 2;
 			iVar4 = 5;
 			iVar1 = 110;
@@ -103753,7 +103753,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 180:
-			StringCopy(&Var2, "G_FMM_2_6", 16);
+			StringCopy(&Var2, "G_FMM_2_6" /* GXT: White Steel Shades */, 16);
 			iVar3 = 2;
 			iVar4 = 6;
 			iVar1 = 140;
@@ -103762,7 +103762,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 181:
-			StringCopy(&Var2, "G_FMM_2_7", 16);
+			StringCopy(&Var2, "G_FMM_2_7" /* GXT: Green Polarized Shades */, 16);
 			iVar3 = 2;
 			iVar4 = 7;
 			iVar1 = 390;
@@ -103771,7 +103771,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 182:
-			StringCopy(&Var2, "CLO_EXM_G_2_8", 16);
+			StringCopy(&Var2, "CLO_EXM_G_2_8" /* GXT: Shell Stank Glasses */, 16);
 			iVar3 = 2;
 			iVar4 = 8;
 			iVar1 = 950;
@@ -103780,7 +103780,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 183:
-			StringCopy(&Var2, "CLO_EXM_G_2_9", 16);
+			StringCopy(&Var2, "CLO_EXM_G_2_9" /* GXT: Black Stank Glasses */, 16);
 			iVar3 = 2;
 			iVar4 = 9;
 			iVar1 = 565;
@@ -103789,7 +103789,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 184:
-			StringCopy(&Var2, "CLO_EXM_G_2_10", 16);
+			StringCopy(&Var2, "CLO_EXM_G_2_10" /* GXT: White Stank Glasses */, 16);
 			iVar3 = 2;
 			iVar4 = 10;
 			iVar1 = 630;
@@ -103798,7 +103798,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 185:
-			StringCopy(&Var2, "G_FMM_3_0", 16);
+			StringCopy(&Var2, "G_FMM_3_0" /* GXT: Slate Janitor Frames */, 16);
 			iVar3 = 3;
 			iVar4 = 0;
 			iVar1 = 70;
@@ -103807,7 +103807,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 186:
-			StringCopy(&Var2, "G_FMM_3_1", 16);
+			StringCopy(&Var2, "G_FMM_3_1" /* GXT: Black Janitor Frames */, 16);
 			iVar3 = 3;
 			iVar4 = 1;
 			iVar1 = 60;
@@ -103816,7 +103816,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 187:
-			StringCopy(&Var2, "G_FMM_3_2", 16);
+			StringCopy(&Var2, "G_FMM_3_2" /* GXT: Gray Janitor Frames */, 16);
 			iVar3 = 3;
 			iVar4 = 2;
 			iVar1 = 65;
@@ -103825,7 +103825,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 188:
-			StringCopy(&Var2, "G_FMM_3_3", 16);
+			StringCopy(&Var2, "G_FMM_3_3" /* GXT: Ash Janitor Frames */, 16);
 			iVar3 = 3;
 			iVar4 = 3;
 			iVar1 = 95;
@@ -103834,7 +103834,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 189:
-			StringCopy(&Var2, "G_FMM_3_4", 16);
+			StringCopy(&Var2, "G_FMM_3_4" /* GXT: Tan Janitor Frames */, 16);
 			iVar3 = 3;
 			iVar4 = 4;
 			iVar1 = 85;
@@ -103843,7 +103843,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 190:
-			StringCopy(&Var2, "G_FMM_3_5", 16);
+			StringCopy(&Var2, "G_FMM_3_5" /* GXT: Smoke Janitor Frames */, 16);
 			iVar3 = 3;
 			iVar4 = 5;
 			iVar1 = 75;
@@ -103852,7 +103852,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 191:
-			StringCopy(&Var2, "G_FMM_3_6", 16);
+			StringCopy(&Var2, "G_FMM_3_6" /* GXT: Charcoal Janitor Frames */, 16);
 			iVar3 = 3;
 			iVar4 = 6;
 			iVar1 = 75;
@@ -103861,7 +103861,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 192:
-			StringCopy(&Var2, "G_FMM_3_7", 16);
+			StringCopy(&Var2, "G_FMM_3_7" /* GXT: White Janitor Frames */, 16);
 			iVar3 = 3;
 			iVar4 = 7;
 			iVar1 = 90;
@@ -103870,7 +103870,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 193:
-			StringCopy(&Var2, "CLO_EXM_G_3_8", 16);
+			StringCopy(&Var2, "CLO_EXM_G_3_8" /* GXT: Shell Janitor Glasses */, 16);
 			iVar3 = 3;
 			iVar4 = 8;
 			iVar1 = 650;
@@ -103879,7 +103879,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 194:
-			StringCopy(&Var2, "CLO_EXM_G_3_9", 16);
+			StringCopy(&Var2, "CLO_EXM_G_3_9" /* GXT: Black Janitor Glasses */, 16);
 			iVar3 = 3;
 			iVar4 = 9;
 			iVar1 = 265;
@@ -103888,7 +103888,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 195:
-			StringCopy(&Var2, "CLO_EXM_G_3_10", 16);
+			StringCopy(&Var2, "CLO_EXM_G_3_10" /* GXT: White Janitor Glasses */, 16);
 			iVar3 = 3;
 			iVar4 = 10;
 			iVar1 = 330;
@@ -103897,7 +103897,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 196:
-			StringCopy(&Var2, "G_FMM_4_0", 16);
+			StringCopy(&Var2, "G_FMM_4_0" /* GXT: Enema Brown Glasses */, 16);
 			iVar3 = 4;
 			iVar4 = 0;
 			iVar1 = 245;
@@ -103906,7 +103906,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 197:
-			StringCopy(&Var2, "G_FMM_4_1", 16);
+			StringCopy(&Var2, "G_FMM_4_1" /* GXT: Enema Gray Glasses */, 16);
 			iVar3 = 4;
 			iVar4 = 1;
 			iVar1 = 250;
@@ -103915,7 +103915,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 198:
-			StringCopy(&Var2, "G_FMM_4_2", 16);
+			StringCopy(&Var2, "G_FMM_4_2" /* GXT: Enema Black Glasses */, 16);
 			iVar3 = 4;
 			iVar4 = 2;
 			iVar1 = 210;
@@ -103924,7 +103924,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 199:
-			StringCopy(&Var2, "G_FMM_4_3", 16);
+			StringCopy(&Var2, "G_FMM_4_3" /* GXT: Enema Tortoiseshell Glasses */, 16);
 			iVar3 = 4;
 			iVar4 = 3;
 			iVar1 = 245;
@@ -103933,7 +103933,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 200:
-			StringCopy(&Var2, "G_FMM_4_4", 16);
+			StringCopy(&Var2, "G_FMM_4_4" /* GXT: Enema Walnut Glasses */, 16);
 			iVar3 = 4;
 			iVar4 = 4;
 			iVar1 = 205;
@@ -103942,7 +103942,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 201:
-			StringCopy(&Var2, "G_FMM_4_5", 16);
+			StringCopy(&Var2, "G_FMM_4_5" /* GXT: Enema Marble Glasses */, 16);
 			iVar3 = 4;
 			iVar4 = 5;
 			iVar1 = 205;
@@ -103951,7 +103951,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 202:
-			StringCopy(&Var2, "G_FMM_4_6", 16);
+			StringCopy(&Var2, "G_FMM_4_6" /* GXT: Enema Smoke Glasses */, 16);
 			iVar3 = 4;
 			iVar4 = 6;
 			iVar1 = 215;
@@ -103960,7 +103960,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 203:
-			StringCopy(&Var2, "G_FMM_4_7", 16);
+			StringCopy(&Var2, "G_FMM_4_7" /* GXT: Enema Smoke Shades */, 16);
 			iVar3 = 4;
 			iVar4 = 7;
 			iVar1 = 215;
@@ -103969,7 +103969,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 204:
-			StringCopy(&Var2, "CLO_EXM_G_4_8", 16);
+			StringCopy(&Var2, "CLO_EXM_G_4_8" /* GXT: Shell Enema Glasses */, 16);
 			iVar3 = 4;
 			iVar4 = 8;
 			iVar1 = 995;
@@ -103978,7 +103978,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 205:
-			StringCopy(&Var2, "CLO_EXM_G_4_9", 16);
+			StringCopy(&Var2, "CLO_EXM_G_4_9" /* GXT: Black Enema Glasses */, 16);
 			iVar3 = 4;
 			iVar4 = 9;
 			iVar1 = 610;
@@ -103987,7 +103987,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 206:
-			StringCopy(&Var2, "CLO_EXM_G_4_10", 16);
+			StringCopy(&Var2, "CLO_EXM_G_4_10" /* GXT: White Enema Glasses */, 16);
 			iVar3 = 4;
 			iVar4 = 10;
 			iVar1 = 675;
@@ -103996,7 +103996,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 207:
-			StringCopy(&Var2, "G_FMM_5_0", 16);
+			StringCopy(&Var2, "G_FMM_5_0" /* GXT: Gold Aviators */, 16);
 			iVar3 = 5;
 			iVar4 = 0;
 			iVar1 = 4050;
@@ -104005,7 +104005,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 208:
-			StringCopy(&Var2, "G_FMM_5_1", 16);
+			StringCopy(&Var2, "G_FMM_5_1" /* GXT: Steel Aviators */, 16);
 			iVar3 = 5;
 			iVar4 = 1;
 			iVar1 = 4060;
@@ -104014,7 +104014,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 209:
-			StringCopy(&Var2, "G_FMM_5_2", 16);
+			StringCopy(&Var2, "G_FMM_5_2" /* GXT: Silver Aviators, Brown Tint */, 16);
 			iVar3 = 5;
 			iVar4 = 2;
 			iVar1 = 170;
@@ -104023,7 +104023,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 210:
-			StringCopy(&Var2, "G_FMM_5_3", 16);
+			StringCopy(&Var2, "G_FMM_5_3" /* GXT: Gray Aviators, Green Tint */, 16);
 			iVar3 = 5;
 			iVar4 = 3;
 			iVar1 = 135;
@@ -104032,7 +104032,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 211:
-			StringCopy(&Var2, "G_FMM_5_4", 16);
+			StringCopy(&Var2, "G_FMM_5_4" /* GXT: Silver Aviators, Blue Tint */, 16);
 			iVar3 = 5;
 			iVar4 = 4;
 			iVar1 = 120;
@@ -104041,7 +104041,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 212:
-			StringCopy(&Var2, "G_FMM_5_5", 16);
+			StringCopy(&Var2, "G_FMM_5_5" /* GXT: Tan Aviators, Dark Tint */, 16);
 			iVar3 = 5;
 			iVar4 = 5;
 			iVar1 = 110;
@@ -104050,7 +104050,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 213:
-			StringCopy(&Var2, "G_FMM_5_6", 16);
+			StringCopy(&Var2, "G_FMM_5_6" /* GXT: Steel Aviators, Blue Tint */, 16);
 			iVar3 = 5;
 			iVar4 = 6;
 			iVar1 = 140;
@@ -104059,7 +104059,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 214:
-			StringCopy(&Var2, "G_FMM_5_7", 16);
+			StringCopy(&Var2, "G_FMM_5_7" /* GXT: Silver Aviators, Copper Tint */, 16);
 			iVar3 = 5;
 			iVar4 = 7;
 			iVar1 = 130;
@@ -104068,7 +104068,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 215:
-			StringCopy(&Var2, "CLO_EXM_G_5_8", 16);
+			StringCopy(&Var2, "CLO_EXM_G_5_8" /* GXT: Shell Aviator Glasses */, 16);
 			iVar3 = 5;
 			iVar4 = 8;
 			iVar1 = 1760;
@@ -104077,7 +104077,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 216:
-			StringCopy(&Var2, "CLO_EXM_G_5_9", 16);
+			StringCopy(&Var2, "CLO_EXM_G_5_9" /* GXT: Black Aviator Glasses */, 16);
 			iVar3 = 5;
 			iVar4 = 9;
 			iVar1 = 1375;
@@ -104086,7 +104086,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 217:
-			StringCopy(&Var2, "CLO_EXM_G_5_10", 16);
+			StringCopy(&Var2, "CLO_EXM_G_5_10" /* GXT: White Aviator Glasses */, 16);
 			iVar3 = 5;
 			iVar4 = 10;
 			iVar1 = 1440;
@@ -104175,7 +104175,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 226:
-			StringCopy(&Var2, "G_FMM_7_0", 16);
+			StringCopy(&Var2, "G_FMM_7_0" /* GXT: Black Casuals */, 16);
 			iVar3 = 7;
 			iVar4 = 0;
 			iVar1 = 180;
@@ -104184,7 +104184,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 227:
-			StringCopy(&Var2, "G_FMM_7_1", 16);
+			StringCopy(&Var2, "G_FMM_7_1" /* GXT: Zap Casuals */, 16);
 			iVar3 = 7;
 			iVar4 = 1;
 			iVar1 = 500;
@@ -104193,7 +104193,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 228:
-			StringCopy(&Var2, "G_FMM_7_2", 16);
+			StringCopy(&Var2, "G_FMM_7_2" /* GXT: Tortoiseshell Casuals */, 16);
 			iVar3 = 7;
 			iVar4 = 2;
 			iVar1 = 115;
@@ -104202,7 +104202,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 229:
-			StringCopy(&Var2, "G_FMM_7_3", 16);
+			StringCopy(&Var2, "G_FMM_7_3" /* GXT: Red Casuals */, 16);
 			iVar3 = 7;
 			iVar4 = 3;
 			iVar1 = 220;
@@ -104211,7 +104211,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 230:
-			StringCopy(&Var2, "G_FMM_7_4", 16);
+			StringCopy(&Var2, "G_FMM_7_4" /* GXT: White Casuals */, 16);
 			iVar3 = 7;
 			iVar4 = 4;
 			iVar1 = 185;
@@ -104220,7 +104220,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 231:
-			StringCopy(&Var2, "G_FMM_7_5", 16);
+			StringCopy(&Var2, "G_FMM_7_5" /* GXT: Camo Collection Casuals */, 16);
 			iVar3 = 7;
 			iVar4 = 5;
 			iVar1 = 1445;
@@ -104229,7 +104229,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 232:
-			StringCopy(&Var2, "G_FMM_7_6", 16);
+			StringCopy(&Var2, "G_FMM_7_6" /* GXT: Lemon Casuals */, 16);
 			iVar3 = 7;
 			iVar4 = 6;
 			iVar1 = 530;
@@ -104238,7 +104238,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 233:
-			StringCopy(&Var2, "G_FMM_7_7", 16);
+			StringCopy(&Var2, "G_FMM_7_7" /* GXT: Blood Casuals */, 16);
 			iVar3 = 7;
 			iVar4 = 7;
 			iVar1 = 650;
@@ -104247,7 +104247,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 234:
-			StringCopy(&Var2, "CLO_EXM_G_7_8", 16);
+			StringCopy(&Var2, "CLO_EXM_G_7_8" /* GXT: Shell Casual Glasses */, 16);
 			iVar3 = 7;
 			iVar4 = 8;
 			iVar1 = 1170;
@@ -104256,7 +104256,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 235:
-			StringCopy(&Var2, "CLO_EXM_G_7_9", 16);
+			StringCopy(&Var2, "CLO_EXM_G_7_9" /* GXT: Black Casual Glasses */, 16);
 			iVar3 = 7;
 			iVar4 = 9;
 			iVar1 = 785;
@@ -104265,7 +104265,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 236:
-			StringCopy(&Var2, "CLO_EXM_G_7_10", 16);
+			StringCopy(&Var2, "CLO_EXM_G_7_10" /* GXT: White Casual Glasses */, 16);
 			iVar3 = 7;
 			iVar4 = 10;
 			iVar1 = 850;
@@ -104276,7 +104276,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 	switch (iParam0)
 	{
 		case 237:
-			StringCopy(&Var2, "G_FMM_8_0", 16);
+			StringCopy(&Var2, "G_FMM_8_0" /* GXT: Brown Eyewear */, 16);
 			iVar3 = 8;
 			iVar4 = 0;
 			iVar1 = 4260;
@@ -104285,7 +104285,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 238:
-			StringCopy(&Var2, "G_FMM_8_1", 16);
+			StringCopy(&Var2, "G_FMM_8_1" /* GXT: Silver Eyewear */, 16);
 			iVar3 = 8;
 			iVar4 = 1;
 			iVar1 = 4310;
@@ -104294,7 +104294,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 239:
-			StringCopy(&Var2, "G_FMM_8_2", 16);
+			StringCopy(&Var2, "G_FMM_8_2" /* GXT: Gray Eyewear */, 16);
 			iVar3 = 8;
 			iVar4 = 2;
 			iVar1 = 4130;
@@ -104303,7 +104303,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 240:
-			StringCopy(&Var2, "G_FMM_8_3", 16);
+			StringCopy(&Var2, "G_FMM_8_3" /* GXT: Smoke Cop Frames */, 16);
 			iVar3 = 8;
 			iVar4 = 3;
 			iVar1 = 135;
@@ -104312,7 +104312,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 241:
-			StringCopy(&Var2, "G_FMM_8_4", 16);
+			StringCopy(&Var2, "G_FMM_8_4" /* GXT: Coffee Cop Frames */, 16);
 			iVar3 = 8;
 			iVar4 = 4;
 			iVar1 = 120;
@@ -104321,7 +104321,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 242:
-			StringCopy(&Var2, "G_FMM_8_5", 16);
+			StringCopy(&Var2, "G_FMM_8_5" /* GXT: Black Cop Frames */, 16);
 			iVar3 = 8;
 			iVar4 = 5;
 			iVar1 = 110;
@@ -104330,7 +104330,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 243:
-			StringCopy(&Var2, "G_FMM_8_6", 16);
+			StringCopy(&Var2, "G_FMM_8_6" /* GXT: Slate Cop Frames */, 16);
 			iVar3 = 8;
 			iVar4 = 6;
 			iVar1 = 140;
@@ -104339,7 +104339,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 244:
-			StringCopy(&Var2, "G_FMM_8_7", 16);
+			StringCopy(&Var2, "G_FMM_8_7" /* GXT: Charcoal Cop Frames */, 16);
 			iVar3 = 8;
 			iVar4 = 7;
 			iVar1 = 130;
@@ -104348,7 +104348,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 245:
-			StringCopy(&Var2, "CLO_EXM_G_8_8", 16);
+			StringCopy(&Var2, "CLO_EXM_G_8_8" /* GXT: Shell Cop Glasses */, 16);
 			iVar3 = 8;
 			iVar4 = 8;
 			iVar1 = 1885;
@@ -104357,7 +104357,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 246:
-			StringCopy(&Var2, "CLO_EXM_G_8_9", 16);
+			StringCopy(&Var2, "CLO_EXM_G_8_9" /* GXT: Black Cop Glasses */, 16);
 			iVar3 = 8;
 			iVar4 = 9;
 			iVar1 = 1500;
@@ -104366,7 +104366,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 247:
-			StringCopy(&Var2, "CLO_EXM_G_8_10", 16);
+			StringCopy(&Var2, "CLO_EXM_G_8_10" /* GXT: White Cop Glasses */, 16);
 			iVar3 = 8;
 			iVar4 = 10;
 			iVar1 = 1565;
@@ -104375,7 +104375,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 248:
-			StringCopy(&Var2, "G_FMM_9_0", 16);
+			StringCopy(&Var2, "G_FMM_9_0" /* GXT: Hawaiian Snow Black */, 16);
 			iVar3 = 9;
 			iVar4 = 0;
 			iVar1 = 65;
@@ -104384,7 +104384,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 249:
-			StringCopy(&Var2, "G_FMM_9_1", 16);
+			StringCopy(&Var2, "G_FMM_9_1" /* GXT: Hawaiian Snow Gray */, 16);
 			iVar3 = 9;
 			iVar4 = 1;
 			iVar1 = 65;
@@ -104393,7 +104393,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 250:
-			StringCopy(&Var2, "G_FMM_9_2", 16);
+			StringCopy(&Var2, "G_FMM_9_2" /* GXT: Hawaiian Snow White */, 16);
 			iVar3 = 9;
 			iVar4 = 2;
 			iVar1 = 85;
@@ -104402,7 +104402,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 251:
-			StringCopy(&Var2, "G_FMM_9_3", 16);
+			StringCopy(&Var2, "G_FMM_9_3" /* GXT: Hawaiian Snow Ash */, 16);
 			iVar3 = 9;
 			iVar4 = 3;
 			iVar1 = 75;
@@ -104411,7 +104411,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 252:
-			StringCopy(&Var2, "G_FMM_9_4", 16);
+			StringCopy(&Var2, "G_FMM_9_4" /* GXT: Hawaiian Snow Copper */, 16);
 			iVar3 = 9;
 			iVar4 = 4;
 			iVar1 = 85;
@@ -104420,7 +104420,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 253:
-			StringCopy(&Var2, "G_FMM_9_5", 16);
+			StringCopy(&Var2, "G_FMM_9_5" /* GXT: Hawaiian Snow Tortoiseshell */, 16);
 			iVar3 = 9;
 			iVar4 = 5;
 			iVar1 = 4290;
@@ -104429,7 +104429,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 254:
-			StringCopy(&Var2, "G_FMM_9_6", 16);
+			StringCopy(&Var2, "G_FMM_9_6" /* GXT: Hawaiian Snow Marble */, 16);
 			iVar3 = 9;
 			iVar4 = 6;
 			iVar1 = 4150;
@@ -104438,7 +104438,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 255:
-			StringCopy(&Var2, "G_FMM_9_7", 16);
+			StringCopy(&Var2, "G_FMM_9_7" /* GXT: Hawaiian Snow Walnut */, 16);
 			iVar3 = 9;
 			iVar4 = 7;
 			iVar1 = 4295;
@@ -104447,7 +104447,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 256:
-			StringCopy(&Var2, "CLO_EXM_G_9_8", 16);
+			StringCopy(&Var2, "CLO_EXM_G_9_8" /* GXT: Shell HS Glasses */, 16);
 			iVar3 = 9;
 			iVar4 = 8;
 			iVar1 = 2315;
@@ -104456,7 +104456,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 257:
-			StringCopy(&Var2, "CLO_EXM_G_9_9", 16);
+			StringCopy(&Var2, "CLO_EXM_G_9_9" /* GXT: Black HS Glasses */, 16);
 			iVar3 = 9;
 			iVar4 = 9;
 			iVar1 = 1930;
@@ -104465,7 +104465,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 258:
-			StringCopy(&Var2, "CLO_EXM_G_9_10", 16);
+			StringCopy(&Var2, "CLO_EXM_G_9_10" /* GXT: White HS Glasses */, 16);
 			iVar3 = 9;
 			iVar4 = 10;
 			iVar1 = 1995;
@@ -104474,7 +104474,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 259:
-			StringCopy(&Var2, "G_FMM_10_0", 16);
+			StringCopy(&Var2, "G_FMM_10_0" /* GXT: Gold Bull Emic */, 16);
 			iVar3 = 10;
 			iVar4 = 0;
 			iVar1 = 6240;
@@ -104483,7 +104483,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 260:
-			StringCopy(&Var2, "G_FMM_10_1", 16);
+			StringCopy(&Var2, "G_FMM_10_1" /* GXT: Gray Bull Emic */, 16);
 			iVar3 = 10;
 			iVar4 = 1;
 			iVar1 = 4955;
@@ -104492,7 +104492,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 261:
-			StringCopy(&Var2, "G_FMM_10_2", 16);
+			StringCopy(&Var2, "G_FMM_10_2" /* GXT: Silver Bull Emic */, 16);
 			iVar3 = 10;
 			iVar4 = 2;
 			iVar1 = 5590;
@@ -104501,7 +104501,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 262:
-			StringCopy(&Var2, "G_FMM_10_3", 16);
+			StringCopy(&Var2, "G_FMM_10_3" /* GXT: Black Bull Emic */, 16);
 			iVar3 = 10;
 			iVar4 = 3;
 			iVar1 = 4920;
@@ -104510,7 +104510,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 263:
-			StringCopy(&Var2, "G_FMM_10_4", 16);
+			StringCopy(&Var2, "G_FMM_10_4" /* GXT: Brown Bull Emic */, 16);
 			iVar3 = 10;
 			iVar4 = 4;
 			iVar1 = 4990;
@@ -104519,7 +104519,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 264:
-			StringCopy(&Var2, "G_FMM_10_5", 16);
+			StringCopy(&Var2, "G_FMM_10_5" /* GXT: Slate Bull Emic */, 16);
 			iVar3 = 10;
 			iVar4 = 5;
 			iVar1 = 4780;
@@ -104528,7 +104528,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 265:
-			StringCopy(&Var2, "G_FMM_10_6", 16);
+			StringCopy(&Var2, "G_FMM_10_6" /* GXT: White Bull Emic */, 16);
 			iVar3 = 10;
 			iVar4 = 6;
 			iVar1 = 4775;
@@ -104537,7 +104537,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 266:
-			StringCopy(&Var2, "G_FMM_10_7", 16);
+			StringCopy(&Var2, "G_FMM_10_7" /* GXT: Purple Tint Bull Emic */, 16);
 			iVar3 = 10;
 			iVar4 = 7;
 			iVar1 = 4800;
@@ -104546,7 +104546,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 267:
-			StringCopy(&Var2, "CLO_EXM_G_10_8", 16);
+			StringCopy(&Var2, "CLO_EXM_G_10_8" /* GXT: Shell Bull Emic Glasses */, 16);
 			iVar3 = 10;
 			iVar4 = 8;
 			iVar1 = 2835;
@@ -104555,7 +104555,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 268:
-			StringCopy(&Var2, "CLO_EXM_G_10_9", 16);
+			StringCopy(&Var2, "CLO_EXM_G_10_9" /* GXT: Black Bull Emic Glasses */, 16);
 			iVar3 = 10;
 			iVar4 = 9;
 			iVar1 = 2450;
@@ -104564,7 +104564,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 269:
-			StringCopy(&Var2, "CLO_EXM_G_10_10", 16);
+			StringCopy(&Var2, "CLO_EXM_G_10_10" /* GXT: White Bull Emic Glasses */, 16);
 			iVar3 = 10;
 			iVar4 = 10;
 			iVar1 = 2515;
@@ -104643,7 +104643,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 278:
-			StringCopy(&Var2, "G_FMM_12_0", 16);
+			StringCopy(&Var2, "G_FMM_12_0" /* GXT: Orange Elvis */, 16);
 			iVar3 = 12;
 			iVar4 = 0;
 			iVar1 = 385;
@@ -104652,7 +104652,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 279:
-			StringCopy(&Var2, "G_FMM_12_1", 16);
+			StringCopy(&Var2, "G_FMM_12_1" /* GXT: Gray Elvis */, 16);
 			iVar3 = 12;
 			iVar4 = 1;
 			iVar1 = 310;
@@ -104661,7 +104661,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 280:
-			StringCopy(&Var2, "G_FMM_12_2", 16);
+			StringCopy(&Var2, "G_FMM_12_2" /* GXT: Slate Elvis */, 16);
 			iVar3 = 12;
 			iVar4 = 2;
 			iVar1 = 3655;
@@ -104670,7 +104670,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 281:
-			StringCopy(&Var2, "G_FMM_12_3", 16);
+			StringCopy(&Var2, "G_FMM_12_3" /* GXT: Black Elvis */, 16);
 			iVar3 = 12;
 			iVar4 = 3;
 			iVar1 = 4055;
@@ -104679,7 +104679,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 282:
-			StringCopy(&Var2, "G_FMM_12_4", 16);
+			StringCopy(&Var2, "G_FMM_12_4" /* GXT: White Elvis */, 16);
 			iVar3 = 12;
 			iVar4 = 4;
 			iVar1 = 3595;
@@ -104688,7 +104688,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 283:
-			StringCopy(&Var2, "G_FMM_12_5", 16);
+			StringCopy(&Var2, "G_FMM_12_5" /* GXT: Blue Tint Elvis */, 16);
 			iVar3 = 12;
 			iVar4 = 5;
 			iVar1 = 3605;
@@ -104697,7 +104697,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 284:
-			StringCopy(&Var2, "G_FMM_12_6", 16);
+			StringCopy(&Var2, "G_FMM_12_6" /* GXT: Pink Tint Elvis */, 16);
 			iVar3 = 12;
 			iVar4 = 6;
 			iVar1 = 3645;
@@ -104706,7 +104706,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 285:
-			StringCopy(&Var2, "G_FMM_12_7", 16);
+			StringCopy(&Var2, "G_FMM_12_7" /* GXT: Copper Elvis */, 16);
 			iVar3 = 12;
 			iVar4 = 7;
 			iVar1 = 320;
@@ -104715,7 +104715,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 286:
-			StringCopy(&Var2, "CLO_EXM_G_12_8", 16);
+			StringCopy(&Var2, "CLO_EXM_G_12_8" /* GXT: Shell Elvis Glasses */, 16);
 			iVar3 = 12;
 			iVar4 = 8;
 			iVar1 = 2820;
@@ -104724,7 +104724,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 287:
-			StringCopy(&Var2, "CLO_EXM_G_12_9", 16);
+			StringCopy(&Var2, "CLO_EXM_G_12_9" /* GXT: Black Elvis Glasses */, 16);
 			iVar3 = 12;
 			iVar4 = 9;
 			iVar1 = 2435;
@@ -104733,7 +104733,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 288:
-			StringCopy(&Var2, "CLO_EXM_G_12_10", 16);
+			StringCopy(&Var2, "CLO_EXM_G_12_10" /* GXT: White Elvis Glasses */, 16);
 			iVar3 = 12;
 			iVar4 = 10;
 			iVar1 = 2500;
@@ -104742,7 +104742,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 289:
-			StringCopy(&Var2, "G_FMM_13_0", 16);
+			StringCopy(&Var2, "G_FMM_13_0" /* GXT: Broker Black Hipsters */, 16);
 			iVar3 = 13;
 			iVar4 = 0;
 			iVar1 = 230;
@@ -104751,7 +104751,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 290:
-			StringCopy(&Var2, "G_FMM_13_1", 16);
+			StringCopy(&Var2, "G_FMM_13_1" /* GXT: White Polarized Hipsters */, 16);
 			iVar3 = 13;
 			iVar4 = 1;
 			iVar1 = 1605;
@@ -104760,7 +104760,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 291:
-			StringCopy(&Var2, "G_FMM_13_2", 16);
+			StringCopy(&Var2, "G_FMM_13_2" /* GXT: Choco Polarized Hipsters */, 16);
 			iVar3 = 13;
 			iVar4 = 2;
 			iVar1 = 2230;
@@ -104769,7 +104769,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 292:
-			StringCopy(&Var2, "G_FMM_13_3", 16);
+			StringCopy(&Var2, "G_FMM_13_3" /* GXT: Slate Hipsters */, 16);
 			iVar3 = 13;
 			iVar4 = 3;
 			iVar1 = 220;
@@ -104778,7 +104778,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 293:
-			StringCopy(&Var2, "G_FMM_13_4", 16);
+			StringCopy(&Var2, "G_FMM_13_4" /* GXT: Charcoal Hipsters */, 16);
 			iVar3 = 13;
 			iVar4 = 4;
 			iVar1 = 185;
@@ -104787,7 +104787,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 294:
-			StringCopy(&Var2, "G_FMM_13_5", 16);
+			StringCopy(&Var2, "G_FMM_13_5" /* GXT: Olive Polarized Hipsters */, 16);
 			iVar3 = 13;
 			iVar4 = 5;
 			iVar1 = 2070;
@@ -104796,7 +104796,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 295:
-			StringCopy(&Var2, "G_FMM_13_6", 16);
+			StringCopy(&Var2, "G_FMM_13_6" /* GXT: Gold Polarized Hipsters */, 16);
 			iVar3 = 13;
 			iVar4 = 6;
 			iVar1 = 2205;
@@ -104805,7 +104805,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 296:
-			StringCopy(&Var2, "G_FMM_13_7", 16);
+			StringCopy(&Var2, "G_FMM_13_7" /* GXT: Candy Polarized Hipsters */, 16);
 			iVar3 = 13;
 			iVar4 = 7;
 			iVar1 = 1690;
@@ -104814,7 +104814,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 297:
-			StringCopy(&Var2, "CLO_EXM_G_13_8", 16);
+			StringCopy(&Var2, "CLO_EXM_G_13_8" /* GXT: Shell Hipster Glasses */, 16);
 			iVar3 = 13;
 			iVar4 = 8;
 			iVar1 = 2715;
@@ -104823,7 +104823,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 298:
-			StringCopy(&Var2, "CLO_EXM_G_13_9", 16);
+			StringCopy(&Var2, "CLO_EXM_G_13_9" /* GXT: Black Hipster Glasses */, 16);
 			iVar3 = 13;
 			iVar4 = 9;
 			iVar1 = 2330;
@@ -104832,7 +104832,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 299:
-			StringCopy(&Var2, "CLO_EXM_G_13_10", 16);
+			StringCopy(&Var2, "CLO_EXM_G_13_10" /* GXT: White Hipster Glasses */, 16);
 			iVar3 = 13;
 			iVar4 = 10;
 			iVar1 = 2395;
@@ -104921,7 +104921,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 308:
-			StringCopy(&Var2, "G_FMM_15_0", 16);
+			StringCopy(&Var2, "G_FMM_15_0" /* GXT: Yellow Guns */, 16);
 			iVar3 = 15;
 			iVar4 = 0;
 			iVar1 = 515;
@@ -104930,7 +104930,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 309:
-			StringCopy(&Var2, "G_FMM_15_1", 16);
+			StringCopy(&Var2, "G_FMM_15_1" /* GXT: White Guns */, 16);
 			iVar3 = 15;
 			iVar4 = 1;
 			iVar1 = 60;
@@ -104939,7 +104939,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 310:
-			StringCopy(&Var2, "G_FMM_15_2", 16);
+			StringCopy(&Var2, "G_FMM_15_2" /* GXT: Gray Guns */, 16);
 			iVar3 = 15;
 			iVar4 = 2;
 			iVar1 = 65;
@@ -104948,7 +104948,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 311:
-			StringCopy(&Var2, "G_FMM_15_3", 16);
+			StringCopy(&Var2, "G_FMM_15_3" /* GXT: Red Guns */, 16);
 			iVar3 = 15;
 			iVar4 = 3;
 			iVar1 = 95;
@@ -104957,7 +104957,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 312:
-			StringCopy(&Var2, "G_FMM_15_4", 16);
+			StringCopy(&Var2, "G_FMM_15_4" /* GXT: Blue Guns */, 16);
 			iVar3 = 15;
 			iVar4 = 4;
 			iVar1 = 85;
@@ -104966,7 +104966,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 313:
-			StringCopy(&Var2, "G_FMM_15_5", 16);
+			StringCopy(&Var2, "G_FMM_15_5" /* GXT: Hornet Guns */, 16);
 			iVar3 = 15;
 			iVar4 = 5;
 			iVar1 = 75;
@@ -104975,7 +104975,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 314:
-			StringCopy(&Var2, "G_FMM_15_6", 16);
+			StringCopy(&Var2, "G_FMM_15_6" /* GXT: Orange Guns */, 16);
 			iVar3 = 15;
 			iVar4 = 6;
 			iVar1 = 485;
@@ -104984,7 +104984,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 315:
-			StringCopy(&Var2, "G_FMM_15_7", 16);
+			StringCopy(&Var2, "G_FMM_15_7" /* GXT: Pink Guns */, 16);
 			iVar3 = 15;
 			iVar4 = 7;
 			iVar1 = 545;
@@ -104993,7 +104993,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 316:
-			StringCopy(&Var2, "CLO_EXM_G_15_8", 16);
+			StringCopy(&Var2, "CLO_EXM_G_15_8" /* GXT: Shell Gun Glasses */, 16);
 			iVar3 = 15;
 			iVar4 = 8;
 			iVar1 = 645;
@@ -105002,7 +105002,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 317:
-			StringCopy(&Var2, "CLO_EXM_G_15_9", 16);
+			StringCopy(&Var2, "CLO_EXM_G_15_9" /* GXT: Black Gun Glasses */, 16);
 			iVar3 = 15;
 			iVar4 = 9;
 			iVar1 = 260;
@@ -105011,7 +105011,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 318:
-			StringCopy(&Var2, "CLO_EXM_G_15_10", 16);
+			StringCopy(&Var2, "CLO_EXM_G_15_10" /* GXT: White Gun Glasses */, 16);
 			iVar3 = 15;
 			iVar4 = 10;
 			iVar1 = 325;
@@ -105022,7 +105022,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 	switch (iParam0)
 	{
 		case 319:
-			StringCopy(&Var2, "W_FMM_0_0", 16);
+			StringCopy(&Var2, "W_FMM_0_0" /* GXT: Deep Sea Watch */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 5000;
@@ -105031,7 +105031,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 320:
-			StringCopy(&Var2, "W_FMM_0_1", 16);
+			StringCopy(&Var2, "W_FMM_0_1" /* GXT: Gold Watch */, 16);
 			iVar3 = 0;
 			iVar4 = 1;
 			iVar1 = 0;
@@ -105041,7 +105041,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 321:
-			StringCopy(&Var2, "W_FMM_0_2", 16);
+			StringCopy(&Var2, "W_FMM_0_2" /* GXT: Silver Watch */, 16);
 			iVar3 = 0;
 			iVar4 = 2;
 			iVar1 = 0;
@@ -105051,7 +105051,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 322:
-			StringCopy(&Var2, "W_FMM_0_3", 16);
+			StringCopy(&Var2, "W_FMM_0_3" /* GXT: Black Watch */, 16);
 			iVar3 = 0;
 			iVar4 = 3;
 			iVar1 = 0;
@@ -105061,7 +105061,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 323:
-			StringCopy(&Var2, "W_FMM_0_4", 16);
+			StringCopy(&Var2, "W_FMM_0_4" /* GXT: Gold Faced Silver Watch */, 16);
 			iVar3 = 0;
 			iVar4 = 4;
 			iVar1 = 0;
@@ -105071,7 +105071,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 324:
-			StringCopy(&Var2, "W_FMM_1_0", 16);
+			StringCopy(&Var2, "W_FMM_1_0" /* GXT: White LED, Black Strap */, 16);
 			iVar3 = 1;
 			iVar4 = 0;
 			iVar1 = 695;
@@ -105080,7 +105080,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 325:
-			StringCopy(&Var2, "W_FMM_1_1", 16);
+			StringCopy(&Var2, "W_FMM_1_1" /* GXT: Red LED, White Strap */, 16);
 			iVar3 = 1;
 			iVar4 = 1;
 			iVar1 = 0;
@@ -105090,7 +105090,7 @@ void func_747(int iParam0, int iParam1)//Position - 0x7E44E
 			break;
 		
 		case 326:
-			StringCopy(&Var2, "W_FMM_1_2", 16);
+			StringCopy(&Var2, "W_FMM_1_2" /* GXT: Red LED, Brown Strap */, 16);
 			iVar3 = 1;
 			iVar4 = 2;
 			iVar1 = 0;
@@ -105182,49 +105182,49 @@ void func_748(int iParam0, int iParam1)//Position - 0x8134A
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var2, "D_FMM_0_0", 16);
+			StringCopy(&Var2, "D_FMM_0_0" /* GXT: No Crew Emblem */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 0;
 			break;
 		
 		case 1:
-			StringCopy(&Var2, "D_FMM_1_0", 16);
+			StringCopy(&Var2, "D_FMM_1_0" /* GXT: Small Crew Emblem */, 16);
 			iVar3 = 1;
 			iVar4 = 0;
 			iVar1 = 5000;
 			break;
 		
 		case 2:
-			StringCopy(&Var2, "D_FMM_2_0", 16);
+			StringCopy(&Var2, "D_FMM_2_0" /* GXT: Large Crew Emblem */, 16);
 			iVar3 = 2;
 			iVar4 = 0;
 			iVar1 = 10000;
 			break;
 		
 		case 3:
-			StringCopy(&Var2, "D_FMM_1_0", 16);
+			StringCopy(&Var2, "D_FMM_1_0" /* GXT: Small Crew Emblem */, 16);
 			iVar3 = 3;
 			iVar4 = 0;
 			iVar1 = 5000;
 			break;
 		
 		case 4:
-			StringCopy(&Var2, "D_FMM_2_0", 16);
+			StringCopy(&Var2, "D_FMM_2_0" /* GXT: Large Crew Emblem */, 16);
 			iVar3 = 4;
 			iVar4 = 0;
 			iVar1 = 10000;
 			break;
 		
 		case 5:
-			StringCopy(&Var2, "D_FMM_1_0", 16);
+			StringCopy(&Var2, "D_FMM_1_0" /* GXT: Small Crew Emblem */, 16);
 			iVar3 = 5;
 			iVar4 = 0;
 			iVar1 = 5000;
 			break;
 		
 		case 6:
-			StringCopy(&Var2, "D_FMM_2_0", 16);
+			StringCopy(&Var2, "D_FMM_2_0" /* GXT: Large Crew Emblem */, 16);
 			iVar3 = 6;
 			iVar4 = 0;
 			iVar1 = 10000;
@@ -109945,42 +109945,42 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var2, "U_FMM_0_0", 16);
+			StringCopy(&Var2, "U_FMM_0_0" /* GXT: Crew T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 0;
 			iVar1 = 250;
 			break;
 		
 		case 1:
-			StringCopy(&Var2, "U_FMM_0_1", 16);
+			StringCopy(&Var2, "U_FMM_0_1" /* GXT: Yeti T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 1;
 			iVar1 = 210;
 			break;
 		
 		case 2:
-			StringCopy(&Var2, "U_FMM_0_2", 16);
+			StringCopy(&Var2, "U_FMM_0_2" /* GXT: Charcoal T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 2;
 			iVar1 = 50;
 			break;
 		
 		case 3:
-			StringCopy(&Var2, "U_FMM_0_3", 16);
+			StringCopy(&Var2, "U_FMM_0_3" /* GXT: Stank T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 3;
 			iVar1 = 90;
 			break;
 		
 		case 4:
-			StringCopy(&Var2, "U_FMM_0_4", 16);
+			StringCopy(&Var2, "U_FMM_0_4" /* GXT: Ranch T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 4;
 			iVar1 = 210;
 			break;
 		
 		case 5:
-			StringCopy(&Var2, "U_FMM_0_5", 16);
+			StringCopy(&Var2, "U_FMM_0_5" /* GXT: Pikeys T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 5;
 			iVar1 = 200;
@@ -109994,14 +109994,14 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 7:
-			StringCopy(&Var2, "U_FMM_0_7", 16);
+			StringCopy(&Var2, "U_FMM_0_7" /* GXT: Multi-Logo T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 7;
 			iVar1 = 130;
 			break;
 		
 		case 8:
-			StringCopy(&Var2, "U_FMM_0_8", 16);
+			StringCopy(&Var2, "U_FMM_0_8" /* GXT: Sweatbox T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 8;
 			iVar1 = 220;
@@ -110022,7 +110022,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 11:
-			StringCopy(&Var2, "U_FMM_0_11", 16);
+			StringCopy(&Var2, "U_FMM_0_11" /* GXT: Eris T-Shirt */, 16);
 			iVar3 = 0;
 			iVar4 = 11;
 			iVar1 = 220;
@@ -110057,14 +110057,14 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 16:
-			StringCopy(&Var2, "U_FMM_1_0", 16);
+			StringCopy(&Var2, "U_FMM_1_0" /* GXT: White V Neck */, 16);
 			iVar3 = 1;
 			iVar4 = 0;
 			iVar1 = 45;
 			break;
 		
 		case 17:
-			StringCopy(&Var2, "U_FMM_1_1", 16);
+			StringCopy(&Var2, "U_FMM_1_1" /* GXT: Ash V Neck */, 16);
 			iVar3 = 1;
 			iVar4 = 1;
 			iVar1 = 60;
@@ -110078,42 +110078,42 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 19:
-			StringCopy(&Var2, "U_FMM_1_3", 16);
+			StringCopy(&Var2, "U_FMM_1_3" /* GXT: Swallow V Neck */, 16);
 			iVar3 = 1;
 			iVar4 = 3;
 			iVar1 = 40;
 			break;
 		
 		case 20:
-			StringCopy(&Var2, "U_FMM_1_4", 16);
+			StringCopy(&Var2, "U_FMM_1_4" /* GXT: Harsh Souls V Neck */, 16);
 			iVar3 = 1;
 			iVar4 = 4;
 			iVar1 = 315;
 			break;
 		
 		case 21:
-			StringCopy(&Var2, "U_FMM_1_5", 16);
+			StringCopy(&Var2, "U_FMM_1_5" /* GXT: Broker V Neck */, 16);
 			iVar3 = 1;
 			iVar4 = 5;
 			iVar1 = 215;
 			break;
 		
 		case 22:
-			StringCopy(&Var2, "U_FMM_1_6", 16);
+			StringCopy(&Var2, "U_FMM_1_6" /* GXT: Hip-Hop Royalty V Neck */, 16);
 			iVar3 = 1;
 			iVar4 = 6;
 			iVar1 = 265;
 			break;
 		
 		case 23:
-			StringCopy(&Var2, "U_FMM_1_7", 16);
+			StringCopy(&Var2, "U_FMM_1_7" /* GXT: Green V Neck */, 16);
 			iVar3 = 1;
 			iVar4 = 7;
 			iVar1 = 45;
 			break;
 		
 		case 24:
-			StringCopy(&Var2, "U_FMM_1_8", 16);
+			StringCopy(&Var2, "U_FMM_1_8" /* GXT: G&B V Neck */, 16);
 			iVar3 = 1;
 			iVar4 = 8;
 			iVar1 = 205;
@@ -110134,14 +110134,14 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 27:
-			StringCopy(&Var2, "U_FMM_1_11", 16);
+			StringCopy(&Var2, "U_FMM_1_11" /* GXT: Orange V Neck */, 16);
 			iVar3 = 1;
 			iVar4 = 11;
 			iVar1 = 60;
 			break;
 		
 		case 28:
-			StringCopy(&Var2, "U_FMM_1_12", 16);
+			StringCopy(&Var2, "U_FMM_1_12" /* GXT: Brown V Neck */, 16);
 			iVar3 = 1;
 			iVar4 = 12;
 			iVar1 = 55;
@@ -110155,14 +110155,14 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 30:
-			StringCopy(&Var2, "U_FMM_1_14", 16);
+			StringCopy(&Var2, "U_FMM_1_14" /* GXT: Signs V Neck */, 16);
 			iVar3 = 1;
 			iVar4 = 14;
 			iVar1 = 170;
 			break;
 		
 		case 31:
-			StringCopy(&Var2, "U_FMM_1_15", 16);
+			StringCopy(&Var2, "U_FMM_1_15" /* GXT: Blue Striped V Neck */, 16);
 			iVar3 = 1;
 			iVar4 = 15;
 			bVar0 = true;
@@ -110171,42 +110171,42 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 	switch (iParam0)
 	{
 		case 32:
-			StringCopy(&Var2, "U_FMM_0_0", 16);
+			StringCopy(&Var2, "U_FMM_0_0" /* GXT: Crew T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 0;
 			iVar1 = 250;
 			break;
 		
 		case 33:
-			StringCopy(&Var2, "U_FMM_0_1", 16);
+			StringCopy(&Var2, "U_FMM_0_1" /* GXT: Yeti T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 1;
 			iVar1 = 210;
 			break;
 		
 		case 34:
-			StringCopy(&Var2, "U_FMM_0_2", 16);
+			StringCopy(&Var2, "U_FMM_0_2" /* GXT: Charcoal T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 2;
 			iVar1 = 50;
 			break;
 		
 		case 35:
-			StringCopy(&Var2, "U_FMM_0_3", 16);
+			StringCopy(&Var2, "U_FMM_0_3" /* GXT: Stank T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 3;
 			iVar1 = 90;
 			break;
 		
 		case 36:
-			StringCopy(&Var2, "U_FMM_0_4", 16);
+			StringCopy(&Var2, "U_FMM_0_4" /* GXT: Ranch T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 4;
 			iVar1 = 210;
 			break;
 		
 		case 37:
-			StringCopy(&Var2, "U_FMM_0_5", 16);
+			StringCopy(&Var2, "U_FMM_0_5" /* GXT: Pikeys T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 5;
 			iVar1 = 200;
@@ -110220,14 +110220,14 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 39:
-			StringCopy(&Var2, "U_FMM_0_7", 16);
+			StringCopy(&Var2, "U_FMM_0_7" /* GXT: Multi-Logo T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 7;
 			iVar1 = 130;
 			break;
 		
 		case 40:
-			StringCopy(&Var2, "U_FMM_0_8", 16);
+			StringCopy(&Var2, "U_FMM_0_8" /* GXT: Sweatbox T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 8;
 			iVar1 = 220;
@@ -110248,7 +110248,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 43:
-			StringCopy(&Var2, "U_FMM_0_11", 16);
+			StringCopy(&Var2, "U_FMM_0_11" /* GXT: Eris T-Shirt */, 16);
 			iVar3 = 2;
 			iVar4 = 11;
 			iVar1 = 220;
@@ -110283,7 +110283,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 48:
-			StringCopy(&Var2, "SP_FMM_3_0", 16);
+			StringCopy(&Var2, "SP_FMM_3_0" /* GXT: Black Vest */, 16);
 			iVar3 = 3;
 			iVar4 = 0;
 			if (Global_262145.f_4190 != -1)
@@ -110297,7 +110297,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 49:
-			StringCopy(&Var2, "SP_FMM_3_1", 16);
+			StringCopy(&Var2, "SP_FMM_3_1" /* GXT: Gray Vest */, 16);
 			iVar3 = 3;
 			iVar4 = 1;
 			if (Global_262145.f_4198 != -1)
@@ -110311,7 +110311,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 50:
-			StringCopy(&Var2, "SP_FMM_3_2", 16);
+			StringCopy(&Var2, "SP_FMM_3_2" /* GXT: Blue Vest */, 16);
 			iVar3 = 3;
 			iVar4 = 2;
 			if (Global_262145.f_4193 != -1)
@@ -110418,7 +110418,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 	switch (iParam0)
 	{
 		case 64:
-			StringCopy(&Var2, "SP_FMM_3_0", 16);
+			StringCopy(&Var2, "SP_FMM_3_0" /* GXT: Black Vest */, 16);
 			iVar3 = 4;
 			iVar4 = 0;
 			if (Global_262145.f_4190 != -1)
@@ -110432,7 +110432,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 65:
-			StringCopy(&Var2, "SP_FMM_3_1", 16);
+			StringCopy(&Var2, "SP_FMM_3_1" /* GXT: Gray Vest */, 16);
 			iVar3 = 4;
 			iVar4 = 1;
 			if (Global_262145.f_4198 != -1)
@@ -110446,7 +110446,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 66:
-			StringCopy(&Var2, "SP_FMM_3_2", 16);
+			StringCopy(&Var2, "SP_FMM_3_2" /* GXT: Blue Vest */, 16);
 			iVar3 = 4;
 			iVar4 = 2;
 			if (Global_262145.f_4193 != -1)
@@ -110551,7 +110551,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 80:
-			StringCopy(&Var2, "U_FMM_5_0", 16);
+			StringCopy(&Var2, "U_FMM_5_0" /* GXT: White Tank */, 16);
 			iVar3 = 5;
 			iVar4 = 0;
 			iVar1 = 80;
@@ -110559,7 +110559,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 81:
-			StringCopy(&Var2, "U_FMM_5_1", 16);
+			StringCopy(&Var2, "U_FMM_5_1" /* GXT: Gray Tank */, 16);
 			iVar3 = 5;
 			iVar4 = 1;
 			iVar1 = 45;
@@ -110567,7 +110567,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 82:
-			StringCopy(&Var2, "U_FMM_5_2", 16);
+			StringCopy(&Var2, "U_FMM_5_2" /* GXT: Black Tank */, 16);
 			iVar3 = 5;
 			iVar4 = 2;
 			iVar1 = 50;
@@ -110603,7 +110603,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 87:
-			StringCopy(&Var2, "U_FMM_5_7", 16);
+			StringCopy(&Var2, "U_FMM_5_7" /* GXT: Red Tank */, 16);
 			iVar3 = 5;
 			iVar4 = 7;
 			iVar1 = 50;
@@ -110669,7 +110669,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 	switch (iParam0)
 	{
 		case 96:
-			StringCopy(&Var2, "SP_FMM_6_0", 16);
+			StringCopy(&Var2, "SP_FMM_6_0" /* GXT: White Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 0;
 			if (Global_262145.f_4211 != -1)
@@ -110683,7 +110683,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 97:
-			StringCopy(&Var2, "SP_FMM_6_1", 16);
+			StringCopy(&Var2, "SP_FMM_6_1" /* GXT: Silver Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 1;
 			if (Global_262145.f_4209 != -1)
@@ -110697,7 +110697,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 98:
-			StringCopy(&Var2, "SP_FMM_6_2", 16);
+			StringCopy(&Var2, "SP_FMM_6_2" /* GXT: Charcoal Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 2;
 			if (Global_262145.f_4189 != -1)
@@ -110711,7 +110711,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 99:
-			StringCopy(&Var2, "SP_FMM_6_3", 16);
+			StringCopy(&Var2, "SP_FMM_6_3" /* GXT: Pale Blue Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 3;
 			if (Global_262145.f_4203 != -1)
@@ -110725,7 +110725,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 100:
-			StringCopy(&Var2, "SP_FMM_6_4", 16);
+			StringCopy(&Var2, "SP_FMM_6_4" /* GXT: Barely Blue Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 4;
 			if (Global_262145.f_4188 != -1)
@@ -110739,7 +110739,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 101:
-			StringCopy(&Var2, "SP_FMM_6_5", 16);
+			StringCopy(&Var2, "SP_FMM_6_5" /* GXT: Pink Check Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 5;
 			if (Global_262145.f_4205 != -1)
@@ -110753,7 +110753,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 102:
-			StringCopy(&Var2, "SP_FMM_6_6", 16);
+			StringCopy(&Var2, "SP_FMM_6_6" /* GXT: Salmon Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 6;
 			if (Global_262145.f_4208 != -1)
@@ -110767,7 +110767,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 103:
-			StringCopy(&Var2, "SP_FMM_6_7", 16);
+			StringCopy(&Var2, "SP_FMM_6_7" /* GXT: Pale Olive Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 7;
 			if (Global_262145.f_4204 != -1)
@@ -110781,7 +110781,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 104:
-			StringCopy(&Var2, "SP_FMM_6_8", 16);
+			StringCopy(&Var2, "SP_FMM_6_8" /* GXT: Fuchsia Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 8;
 			if (Global_262145.f_4197 != -1)
@@ -110795,7 +110795,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 105:
-			StringCopy(&Var2, "SP_FMM_6_9", 16);
+			StringCopy(&Var2, "SP_FMM_6_9" /* GXT: Off-White Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 9;
 			if (Global_262145.f_4202 != -1)
@@ -110809,7 +110809,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 106:
-			StringCopy(&Var2, "SP_FMM_6_10", 16);
+			StringCopy(&Var2, "SP_FMM_6_10" /* GXT: Mint Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 10;
 			if (Global_262145.f_4200 != -1)
@@ -110823,7 +110823,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 107:
-			StringCopy(&Var2, "SP_FMM_6_11", 16);
+			StringCopy(&Var2, "SP_FMM_6_11" /* GXT: Tan Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 11;
 			if (Global_262145.f_4210 != -1)
@@ -110837,7 +110837,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 108:
-			StringCopy(&Var2, "SP_FMM_6_12", 16);
+			StringCopy(&Var2, "SP_FMM_6_12" /* GXT: Dark Salmon Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 12;
 			if (Global_262145.f_4196 != -1)
@@ -110851,7 +110851,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 109:
-			StringCopy(&Var2, "SP_FMM_6_13", 16);
+			StringCopy(&Var2, "SP_FMM_6_13" /* GXT: Blue Check Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 13;
 			if (Global_262145.f_4191 != -1)
@@ -110865,7 +110865,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 110:
-			StringCopy(&Var2, "SP_FMM_6_14", 16);
+			StringCopy(&Var2, "SP_FMM_6_14" /* GXT: Pink Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 14;
 			if (Global_262145.f_4206 != -1)
@@ -110879,7 +110879,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 111:
-			StringCopy(&Var2, "SP_FMM_6_15", 16);
+			StringCopy(&Var2, "SP_FMM_6_15" /* GXT: Lemon Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 15;
 			if (Global_262145.f_4199 != -1)
@@ -110893,7 +110893,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 112:
-			StringCopy(&Var2, "SP_FMM_6_0", 16);
+			StringCopy(&Var2, "SP_FMM_6_0" /* GXT: White Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 0;
 			if (Global_262145.f_4211 != -1)
@@ -110907,7 +110907,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 113:
-			StringCopy(&Var2, "SP_FMM_6_1", 16);
+			StringCopy(&Var2, "SP_FMM_6_1" /* GXT: Silver Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 1;
 			if (Global_262145.f_4209 != -1)
@@ -110921,7 +110921,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 114:
-			StringCopy(&Var2, "SP_FMM_6_2", 16);
+			StringCopy(&Var2, "SP_FMM_6_2" /* GXT: Charcoal Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 2;
 			if (Global_262145.f_4189 != -1)
@@ -110935,7 +110935,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 115:
-			StringCopy(&Var2, "SP_FMM_6_3", 16);
+			StringCopy(&Var2, "SP_FMM_6_3" /* GXT: Pale Blue Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 3;
 			if (Global_262145.f_4203 != -1)
@@ -110949,7 +110949,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 116:
-			StringCopy(&Var2, "SP_FMM_6_4", 16);
+			StringCopy(&Var2, "SP_FMM_6_4" /* GXT: Barely Blue Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 4;
 			if (Global_262145.f_4188 != -1)
@@ -110963,7 +110963,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 117:
-			StringCopy(&Var2, "SP_FMM_6_5", 16);
+			StringCopy(&Var2, "SP_FMM_6_5" /* GXT: Pink Check Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 5;
 			if (Global_262145.f_4205 != -1)
@@ -110977,7 +110977,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 118:
-			StringCopy(&Var2, "SP_FMM_6_6", 16);
+			StringCopy(&Var2, "SP_FMM_6_6" /* GXT: Salmon Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 6;
 			if (Global_262145.f_4208 != -1)
@@ -110991,7 +110991,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 119:
-			StringCopy(&Var2, "SP_FMM_6_7", 16);
+			StringCopy(&Var2, "SP_FMM_6_7" /* GXT: Pale Olive Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 7;
 			if (Global_262145.f_4204 != -1)
@@ -111005,7 +111005,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 120:
-			StringCopy(&Var2, "SP_FMM_6_8", 16);
+			StringCopy(&Var2, "SP_FMM_6_8" /* GXT: Fuchsia Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 8;
 			if (Global_262145.f_4197 != -1)
@@ -111019,7 +111019,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 121:
-			StringCopy(&Var2, "SP_FMM_6_9", 16);
+			StringCopy(&Var2, "SP_FMM_6_9" /* GXT: Off-White Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 9;
 			if (Global_262145.f_4202 != -1)
@@ -111033,7 +111033,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 122:
-			StringCopy(&Var2, "SP_FMM_6_10", 16);
+			StringCopy(&Var2, "SP_FMM_6_10" /* GXT: Mint Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 10;
 			if (Global_262145.f_4200 != -1)
@@ -111047,7 +111047,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 123:
-			StringCopy(&Var2, "SP_FMM_6_11", 16);
+			StringCopy(&Var2, "SP_FMM_6_11" /* GXT: Tan Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 11;
 			if (Global_262145.f_4210 != -1)
@@ -111061,7 +111061,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 124:
-			StringCopy(&Var2, "SP_FMM_6_12", 16);
+			StringCopy(&Var2, "SP_FMM_6_12" /* GXT: Dark Salmon Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 12;
 			if (Global_262145.f_4196 != -1)
@@ -111075,7 +111075,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 125:
-			StringCopy(&Var2, "SP_FMM_6_13", 16);
+			StringCopy(&Var2, "SP_FMM_6_13" /* GXT: Blue Check Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 13;
 			if (Global_262145.f_4191 != -1)
@@ -111089,7 +111089,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 126:
-			StringCopy(&Var2, "SP_FMM_6_14", 16);
+			StringCopy(&Var2, "SP_FMM_6_14" /* GXT: Pink Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 14;
 			if (Global_262145.f_4206 != -1)
@@ -111103,7 +111103,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 127:
-			StringCopy(&Var2, "SP_FMM_6_15", 16);
+			StringCopy(&Var2, "SP_FMM_6_15" /* GXT: Lemon Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 15;
 			if (Global_262145.f_4199 != -1)
@@ -111119,7 +111119,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 	switch (iParam0)
 	{
 		case 128:
-			StringCopy(&Var2, "U_FMM_8_0", 16);
+			StringCopy(&Var2, "U_FMM_8_0" /* GXT: Red Accent Tee */, 16);
 			iVar3 = 8;
 			iVar4 = 0;
 			iVar1 = 45;
@@ -111189,7 +111189,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 138:
-			StringCopy(&Var2, "U_FMM_8_10", 16);
+			StringCopy(&Var2, "U_FMM_8_10" /* GXT: Sky Blue Tee */, 16);
 			iVar3 = 8;
 			iVar4 = 10;
 			iVar1 = 65;
@@ -111210,14 +111210,14 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 141:
-			StringCopy(&Var2, "U_FMM_8_13", 16);
+			StringCopy(&Var2, "U_FMM_8_13" /* GXT: Slate Tee */, 16);
 			iVar3 = 8;
 			iVar4 = 13;
 			iVar1 = 40;
 			break;
 		
 		case 142:
-			StringCopy(&Var2, "U_FMM_8_14", 16);
+			StringCopy(&Var2, "U_FMM_8_14" /* GXT: Gray Two-Tone Tee */, 16);
 			iVar3 = 8;
 			iVar4 = 14;
 			iVar1 = 45;
@@ -111231,56 +111231,56 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 144:
-			StringCopy(&Var2, "U_FMM_9_0", 16);
+			StringCopy(&Var2, "U_FMM_9_0" /* GXT: White Striped Polo Shirt */, 16);
 			iVar3 = 9;
 			iVar4 = 0;
 			iVar1 = 265;
 			break;
 		
 		case 145:
-			StringCopy(&Var2, "U_FMM_9_1", 16);
+			StringCopy(&Var2, "U_FMM_9_1" /* GXT: Metal Polo Shirt */, 16);
 			iVar3 = 9;
 			iVar4 = 1;
 			iVar1 = 340;
 			break;
 		
 		case 146:
-			StringCopy(&Var2, "U_FMM_9_2", 16);
+			StringCopy(&Var2, "U_FMM_9_2" /* GXT: Night Polo Shirt */, 16);
 			iVar3 = 9;
 			iVar4 = 2;
 			iVar1 = 335;
 			break;
 		
 		case 147:
-			StringCopy(&Var2, "U_FMM_9_3", 16);
+			StringCopy(&Var2, "U_FMM_9_3" /* GXT: Cupcake Polo Shirt */, 16);
 			iVar3 = 9;
 			iVar4 = 3;
 			iVar1 = 330;
 			break;
 		
 		case 148:
-			StringCopy(&Var2, "U_FMM_9_4", 16);
+			StringCopy(&Var2, "U_FMM_9_4" /* GXT: Blue Polo Shirt */, 16);
 			iVar3 = 9;
 			iVar4 = 4;
 			iVar1 = 345;
 			break;
 		
 		case 149:
-			StringCopy(&Var2, "U_FMM_9_5", 16);
+			StringCopy(&Var2, "U_FMM_9_5" /* GXT: Vibe Polo Shirt */, 16);
 			iVar3 = 9;
 			iVar4 = 5;
 			iVar1 = 550;
 			break;
 		
 		case 150:
-			StringCopy(&Var2, "U_FMM_9_6", 16);
+			StringCopy(&Var2, "U_FMM_9_6" /* GXT: Salmon Polo Shirt */, 16);
 			iVar3 = 9;
 			iVar4 = 6;
 			iVar1 = 340;
 			break;
 		
 		case 151:
-			StringCopy(&Var2, "U_FMM_9_7", 16);
+			StringCopy(&Var2, "U_FMM_9_7" /* GXT: Royale Polo Shirt */, 16);
 			iVar3 = 9;
 			iVar4 = 7;
 			iVar1 = 295;
@@ -111301,42 +111301,42 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 154:
-			StringCopy(&Var2, "U_FMM_9_10", 16);
+			StringCopy(&Var2, "U_FMM_9_10" /* GXT: Pro Lite Polo Shirt */, 16);
 			iVar3 = 9;
 			iVar4 = 10;
 			iVar1 = 545;
 			break;
 		
 		case 155:
-			StringCopy(&Var2, "U_FMM_9_11", 16);
+			StringCopy(&Var2, "U_FMM_9_11" /* GXT: Ice Polo Shirt */, 16);
 			iVar3 = 9;
 			iVar4 = 11;
 			iVar1 = 345;
 			break;
 		
 		case 156:
-			StringCopy(&Var2, "U_FMM_9_12", 16);
+			StringCopy(&Var2, "U_FMM_9_12" /* GXT: Money Polo Shirt */, 16);
 			iVar3 = 9;
 			iVar4 = 12;
 			iVar1 = 315;
 			break;
 		
 		case 157:
-			StringCopy(&Var2, "U_FMM_9_13", 16);
+			StringCopy(&Var2, "U_FMM_9_13" /* GXT: Hunter Polo Shirt */, 16);
 			iVar3 = 9;
 			iVar4 = 13;
 			iVar1 = 520;
 			break;
 		
 		case 158:
-			StringCopy(&Var2, "U_FMM_9_14", 16);
+			StringCopy(&Var2, "U_FMM_9_14" /* GXT: Red Polo Shirt */, 16);
 			iVar3 = 9;
 			iVar4 = 14;
 			iVar1 = 325;
 			break;
 		
 		case 159:
-			StringCopy(&Var2, "U_FMM_9_15", 16);
+			StringCopy(&Var2, "U_FMM_9_15" /* GXT: Sunshine Polo Shirt */, 16);
 			iVar3 = 9;
 			iVar4 = 15;
 			iVar1 = 330;
@@ -111345,7 +111345,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 	switch (iParam0)
 	{
 		case 160:
-			StringCopy(&Var2, "SP_FMM_10_0", 16);
+			StringCopy(&Var2, "SP_FMM_10_0" /* GXT: White Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 0;
 			if (Global_262145.f_4211 != -1)
@@ -111359,7 +111359,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 161:
-			StringCopy(&Var2, "SP_FMM_10_1", 16);
+			StringCopy(&Var2, "SP_FMM_10_1" /* GXT: Silver Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 1;
 			if (Global_262145.f_4209 != -1)
@@ -111373,7 +111373,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 162:
-			StringCopy(&Var2, "SP_FMM_10_2", 16);
+			StringCopy(&Var2, "SP_FMM_10_2" /* GXT: Charcoal Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 2;
 			if (Global_262145.f_4195 != -1)
@@ -111387,7 +111387,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 163:
-			StringCopy(&Var2, "SP_FMM_10_3", 16);
+			StringCopy(&Var2, "SP_FMM_10_3" /* GXT: Pale Blue Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 3;
 			if (Global_262145.f_4203 != -1)
@@ -111401,7 +111401,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 164:
-			StringCopy(&Var2, "SP_FMM_10_4", 16);
+			StringCopy(&Var2, "SP_FMM_10_4" /* GXT: Barely Blue Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 4;
 			if (Global_262145.f_4188 != -1)
@@ -111415,7 +111415,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 165:
-			StringCopy(&Var2, "SP_FMM_10_5", 16);
+			StringCopy(&Var2, "SP_FMM_10_5" /* GXT: Pink Check Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 5;
 			if (Global_262145.f_4205 != -1)
@@ -111429,7 +111429,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 166:
-			StringCopy(&Var2, "SP_FMM_10_6", 16);
+			StringCopy(&Var2, "SP_FMM_10_6" /* GXT: Blue Woven Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 6;
 			if (Global_262145.f_4194 != -1)
@@ -111443,7 +111443,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 167:
-			StringCopy(&Var2, "SP_FMM_10_7", 16);
+			StringCopy(&Var2, "SP_FMM_10_7" /* GXT: Salmon Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 7;
 			if (Global_262145.f_4208 != -1)
@@ -111457,7 +111457,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 168:
-			StringCopy(&Var2, "SP_FMM_10_8", 16);
+			StringCopy(&Var2, "SP_FMM_10_8" /* GXT: Pale Olive Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 8;
 			if (Global_262145.f_4204 != -1)
@@ -111471,7 +111471,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 169:
-			StringCopy(&Var2, "SP_FMM_10_9", 16);
+			StringCopy(&Var2, "SP_FMM_10_9" /* GXT: Fuchsia Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 9;
 			if (Global_262145.f_4197 != -1)
@@ -111485,7 +111485,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 170:
-			StringCopy(&Var2, "SP_FMM_10_10", 16);
+			StringCopy(&Var2, "SP_FMM_10_10" /* GXT: Off-White Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 10;
 			if (Global_262145.f_4202 != -1)
@@ -111499,7 +111499,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 171:
-			StringCopy(&Var2, "SP_FMM_10_11", 16);
+			StringCopy(&Var2, "SP_FMM_10_11" /* GXT: Mint Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 11;
 			if (Global_262145.f_4200 != -1)
@@ -111513,7 +111513,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 172:
-			StringCopy(&Var2, "SP_FMM_10_12", 16);
+			StringCopy(&Var2, "SP_FMM_10_12" /* GXT: Blue Striped Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 12;
 			if (Global_262145.f_4192 != -1)
@@ -111527,7 +111527,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 173:
-			StringCopy(&Var2, "SP_FMM_10_13", 16);
+			StringCopy(&Var2, "SP_FMM_10_13" /* GXT: Pink Striped Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 13;
 			if (Global_262145.f_4207 != -1)
@@ -111541,7 +111541,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 174:
-			StringCopy(&Var2, "SP_FMM_10_14", 16);
+			StringCopy(&Var2, "SP_FMM_10_14" /* GXT: Tan Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 14;
 			if (Global_262145.f_4210 != -1)
@@ -111555,7 +111555,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 175:
-			StringCopy(&Var2, "SP_FMM_10_15", 16);
+			StringCopy(&Var2, "SP_FMM_10_15" /* GXT: Ocean Stripe Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 15;
 			if (Global_262145.f_4201 != -1)
@@ -111569,7 +111569,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 176:
-			StringCopy(&Var2, "SP_FMM_10_0", 16);
+			StringCopy(&Var2, "SP_FMM_10_0" /* GXT: White Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 0;
 			if (Global_262145.f_4211 != -1)
@@ -111583,7 +111583,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 177:
-			StringCopy(&Var2, "SP_FMM_10_1", 16);
+			StringCopy(&Var2, "SP_FMM_10_1" /* GXT: Silver Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 1;
 			if (Global_262145.f_4209 != -1)
@@ -111597,7 +111597,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 178:
-			StringCopy(&Var2, "SP_FMM_10_2", 16);
+			StringCopy(&Var2, "SP_FMM_10_2" /* GXT: Charcoal Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 2;
 			if (Global_262145.f_4195 != -1)
@@ -111611,7 +111611,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 179:
-			StringCopy(&Var2, "SP_FMM_10_3", 16);
+			StringCopy(&Var2, "SP_FMM_10_3" /* GXT: Pale Blue Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 3;
 			if (Global_262145.f_4203 != -1)
@@ -111625,7 +111625,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 180:
-			StringCopy(&Var2, "SP_FMM_10_4", 16);
+			StringCopy(&Var2, "SP_FMM_10_4" /* GXT: Barely Blue Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 4;
 			if (Global_262145.f_4188 != -1)
@@ -111639,7 +111639,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 181:
-			StringCopy(&Var2, "SP_FMM_10_5", 16);
+			StringCopy(&Var2, "SP_FMM_10_5" /* GXT: Pink Check Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 5;
 			if (Global_262145.f_4205 != -1)
@@ -111653,7 +111653,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 182:
-			StringCopy(&Var2, "SP_FMM_10_6", 16);
+			StringCopy(&Var2, "SP_FMM_10_6" /* GXT: Blue Woven Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 6;
 			if (Global_262145.f_4194 != -1)
@@ -111667,7 +111667,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 183:
-			StringCopy(&Var2, "SP_FMM_10_7", 16);
+			StringCopy(&Var2, "SP_FMM_10_7" /* GXT: Salmon Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 7;
 			if (Global_262145.f_4208 != -1)
@@ -111681,7 +111681,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 184:
-			StringCopy(&Var2, "SP_FMM_10_8", 16);
+			StringCopy(&Var2, "SP_FMM_10_8" /* GXT: Pale Olive Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 8;
 			if (Global_262145.f_4204 != -1)
@@ -111695,7 +111695,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 185:
-			StringCopy(&Var2, "SP_FMM_10_9", 16);
+			StringCopy(&Var2, "SP_FMM_10_9" /* GXT: Fuchsia Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 9;
 			if (Global_262145.f_4197 != -1)
@@ -111709,7 +111709,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 186:
-			StringCopy(&Var2, "SP_FMM_10_10", 16);
+			StringCopy(&Var2, "SP_FMM_10_10" /* GXT: Off-White Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 10;
 			if (Global_262145.f_4202 != -1)
@@ -111723,7 +111723,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 187:
-			StringCopy(&Var2, "SP_FMM_10_11", 16);
+			StringCopy(&Var2, "SP_FMM_10_11" /* GXT: Mint Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 11;
 			if (Global_262145.f_4200 != -1)
@@ -111737,7 +111737,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 188:
-			StringCopy(&Var2, "SP_FMM_10_12", 16);
+			StringCopy(&Var2, "SP_FMM_10_12" /* GXT: Blue Striped Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 12;
 			if (Global_262145.f_4192 != -1)
@@ -111751,7 +111751,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 189:
-			StringCopy(&Var2, "SP_FMM_10_13", 16);
+			StringCopy(&Var2, "SP_FMM_10_13" /* GXT: Pink Striped Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 13;
 			if (Global_262145.f_4207 != -1)
@@ -111765,7 +111765,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 190:
-			StringCopy(&Var2, "SP_FMM_10_14", 16);
+			StringCopy(&Var2, "SP_FMM_10_14" /* GXT: Tan Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 14;
 			if (Global_262145.f_4210 != -1)
@@ -111779,7 +111779,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 191:
-			StringCopy(&Var2, "SP_FMM_10_15", 16);
+			StringCopy(&Var2, "SP_FMM_10_15" /* GXT: Ocean Stripe Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 15;
 			if (Global_262145.f_4201 != -1)
@@ -111795,84 +111795,84 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 	switch (iParam0)
 	{
 		case 192:
-			StringCopy(&Var2, "U_FMM_12_0", 16);
+			StringCopy(&Var2, "U_FMM_12_0" /* GXT: White Untucked */, 16);
 			iVar3 = 12;
 			iVar4 = 0;
 			iVar1 = 420;
 			break;
 		
 		case 193:
-			StringCopy(&Var2, "U_FMM_12_1", 16);
+			StringCopy(&Var2, "U_FMM_12_1" /* GXT: Steel Untucked */, 16);
 			iVar3 = 12;
 			iVar4 = 1;
 			iVar1 = 415;
 			break;
 		
 		case 194:
-			StringCopy(&Var2, "U_FMM_12_2", 16);
+			StringCopy(&Var2, "U_FMM_12_2" /* GXT: Black Untucked */, 16);
 			iVar3 = 12;
 			iVar4 = 2;
 			iVar1 = 695;
 			break;
 		
 		case 195:
-			StringCopy(&Var2, "U_FMM_12_3", 16);
+			StringCopy(&Var2, "U_FMM_12_3" /* GXT: Sky Untucked */, 16);
 			iVar3 = 12;
 			iVar4 = 3;
 			iVar1 = 385;
 			break;
 		
 		case 196:
-			StringCopy(&Var2, "U_FMM_12_4", 16);
+			StringCopy(&Var2, "U_FMM_12_4" /* GXT: Navy Untucked */, 16);
 			iVar3 = 12;
 			iVar4 = 4;
 			iVar1 = 330;
 			break;
 		
 		case 197:
-			StringCopy(&Var2, "U_FMM_12_5", 16);
+			StringCopy(&Var2, "U_FMM_12_5" /* GXT: Red Untucked */, 16);
 			iVar3 = 12;
 			iVar4 = 5;
 			iVar1 = 345;
 			break;
 		
 		case 198:
-			StringCopy(&Var2, "U_FMM_12_6", 16);
+			StringCopy(&Var2, "U_FMM_12_6" /* GXT: Moss Untucked */, 16);
 			iVar3 = 12;
 			iVar4 = 6;
 			iVar1 = 340;
 			break;
 		
 		case 199:
-			StringCopy(&Var2, "U_FMM_12_7", 16);
+			StringCopy(&Var2, "U_FMM_12_7" /* GXT: Ash Untucked */, 16);
 			iVar3 = 12;
 			iVar4 = 7;
 			iVar1 = 450;
 			break;
 		
 		case 200:
-			StringCopy(&Var2, "U_FMM_12_8", 16);
+			StringCopy(&Var2, "U_FMM_12_8" /* GXT: Mustard Untucked */, 16);
 			iVar3 = 12;
 			iVar4 = 8;
 			iVar1 = 295;
 			break;
 		
 		case 201:
-			StringCopy(&Var2, "U_FMM_12_9", 16);
+			StringCopy(&Var2, "U_FMM_12_9" /* GXT: Butter Untucked */, 16);
 			iVar3 = 12;
 			iVar4 = 9;
 			iVar1 = 340;
 			break;
 		
 		case 202:
-			StringCopy(&Var2, "U_FMM_12_10", 16);
+			StringCopy(&Var2, "U_FMM_12_10" /* GXT: Forest Untucked */, 16);
 			iVar3 = 12;
 			iVar4 = 10;
 			iVar1 = 1060;
 			break;
 		
 		case 203:
-			StringCopy(&Var2, "U_FMM_12_11", 16);
+			StringCopy(&Var2, "U_FMM_12_11" /* GXT: Azure Untucked */, 16);
 			iVar3 = 12;
 			iVar4 = 11;
 			iVar1 = 1040;
@@ -111907,28 +111907,28 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 208:
-			StringCopy(&Var2, "U_FMM_13_0", 16);
+			StringCopy(&Var2, "U_FMM_13_0" /* GXT: White Tucked */, 16);
 			iVar3 = 13;
 			iVar4 = 0;
 			iVar1 = 420;
 			break;
 		
 		case 209:
-			StringCopy(&Var2, "U_FMM_13_1", 16);
+			StringCopy(&Var2, "U_FMM_13_1" /* GXT: Silver Tucked */, 16);
 			iVar3 = 13;
 			iVar4 = 1;
 			iVar1 = 415;
 			break;
 		
 		case 210:
-			StringCopy(&Var2, "U_FMM_13_2", 16);
+			StringCopy(&Var2, "U_FMM_13_2" /* GXT: Black Tucked */, 16);
 			iVar3 = 13;
 			iVar4 = 2;
 			iVar1 = 680;
 			break;
 		
 		case 211:
-			StringCopy(&Var2, "U_FMM_13_3", 16);
+			StringCopy(&Var2, "U_FMM_13_3" /* GXT: Blue Tucked */, 16);
 			iVar3 = 13;
 			iVar4 = 3;
 			iVar1 = 385;
@@ -111942,7 +111942,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 213:
-			StringCopy(&Var2, "U_FMM_13_5", 16);
+			StringCopy(&Var2, "U_FMM_13_5" /* GXT: Burgundy Tucked */, 16);
 			iVar3 = 13;
 			iVar4 = 5;
 			iVar1 = 345;
@@ -111998,7 +111998,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 221:
-			StringCopy(&Var2, "U_FMM_13_13", 16);
+			StringCopy(&Var2, "U_FMM_13_13" /* GXT: Green Plaid Tucked */, 16);
 			iVar3 = 13;
 			iVar4 = 13;
 			iVar1 = 1065;
@@ -112021,7 +112021,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 	switch (iParam0)
 	{
 		case 224:
-			StringCopy(&Var2, "U_FMM_1_0", 16);
+			StringCopy(&Var2, "U_FMM_1_0" /* GXT: White V Neck */, 16);
 			iVar3 = 14;
 			iVar4 = 0;
 			iVar1 = 45;
@@ -112029,7 +112029,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 225:
-			StringCopy(&Var2, "U_FMM_1_1", 16);
+			StringCopy(&Var2, "U_FMM_1_1" /* GXT: Ash V Neck */, 16);
 			iVar3 = 14;
 			iVar4 = 1;
 			iVar1 = 60;
@@ -112044,7 +112044,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 227:
-			StringCopy(&Var2, "U_FMM_1_3", 16);
+			StringCopy(&Var2, "U_FMM_1_3" /* GXT: Swallow V Neck */, 16);
 			iVar3 = 14;
 			iVar4 = 3;
 			iVar1 = 40;
@@ -112052,7 +112052,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 228:
-			StringCopy(&Var2, "U_FMM_1_4", 16);
+			StringCopy(&Var2, "U_FMM_1_4" /* GXT: Harsh Souls V Neck */, 16);
 			iVar3 = 14;
 			iVar4 = 4;
 			iVar1 = 315;
@@ -112060,7 +112060,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 229:
-			StringCopy(&Var2, "U_FMM_1_5", 16);
+			StringCopy(&Var2, "U_FMM_1_5" /* GXT: Broker V Neck */, 16);
 			iVar3 = 14;
 			iVar4 = 5;
 			iVar1 = 215;
@@ -112068,7 +112068,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 230:
-			StringCopy(&Var2, "U_FMM_1_6", 16);
+			StringCopy(&Var2, "U_FMM_1_6" /* GXT: Hip-Hop Royalty V Neck */, 16);
 			iVar3 = 14;
 			iVar4 = 6;
 			iVar1 = 265;
@@ -112076,7 +112076,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 231:
-			StringCopy(&Var2, "U_FMM_1_7", 16);
+			StringCopy(&Var2, "U_FMM_1_7" /* GXT: Green V Neck */, 16);
 			iVar3 = 14;
 			iVar4 = 7;
 			iVar1 = 45;
@@ -112084,7 +112084,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 232:
-			StringCopy(&Var2, "U_FMM_1_8", 16);
+			StringCopy(&Var2, "U_FMM_1_8" /* GXT: G&B V Neck */, 16);
 			iVar3 = 14;
 			iVar4 = 8;
 			iVar1 = 205;
@@ -112106,7 +112106,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 235:
-			StringCopy(&Var2, "U_FMM_1_11", 16);
+			StringCopy(&Var2, "U_FMM_1_11" /* GXT: Orange V Neck */, 16);
 			iVar3 = 14;
 			iVar4 = 11;
 			iVar1 = 60;
@@ -112114,7 +112114,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 236:
-			StringCopy(&Var2, "U_FMM_1_12", 16);
+			StringCopy(&Var2, "U_FMM_1_12" /* GXT: Brown V Neck */, 16);
 			iVar3 = 14;
 			iVar4 = 12;
 			iVar1 = 55;
@@ -112129,7 +112129,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 238:
-			StringCopy(&Var2, "U_FMM_1_14", 16);
+			StringCopy(&Var2, "U_FMM_1_14" /* GXT: Signs V Neck */, 16);
 			iVar3 = 14;
 			iVar4 = 14;
 			iVar1 = 170;
@@ -112137,7 +112137,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 			break;
 		
 		case 239:
-			StringCopy(&Var2, "U_FMM_1_15", 16);
+			StringCopy(&Var2, "U_FMM_1_15" /* GXT: Blue Striped V Neck */, 16);
 			iVar3 = 14;
 			iVar4 = 15;
 			bVar0 = true;
@@ -112155,7 +112155,7 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 	{
 		if (func_651(89, -1))
 		{
-			StringCopy(&Var2, "REW_RS", 16);
+			StringCopy(&Var2, "REW_RS" /* GXT: Rockstar V Neck */, 16);
 			iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(1250) * Global_262145.f_2989));
 		}
 		else
@@ -112165,14 +112165,14 @@ void func_755(int iParam0, int iParam1)//Position - 0x8517E
 	}
 	else if (iParam0 == 17 || iParam0 == 225)
 	{
-		StringCopy(&Var2, "REW_LSB", 16);
+		StringCopy(&Var2, "REW_LSB" /* GXT: Los Santos Belle V Neck */, 16);
 		iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(450) * Global_262145.f_2988));
 	}
 	else if (iParam0 == 28 || iParam0 == 236)
 	{
 		if (func_651(87, -1))
 		{
-			StringCopy(&Var2, "REW_REDSK", 16);
+			StringCopy(&Var2, "REW_REDSK" /* GXT: Red Skull V Neck */, 16);
 			iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(500) * Global_262145.f_2987));
 		}
 		else
@@ -113798,7 +113798,7 @@ void func_756(int iParam0, int iParam1)//Position - 0x87763
 	{
 		if (func_651(89, -1))
 		{
-			StringCopy(&Var2, "REW_RS", 16);
+			StringCopy(&Var2, "REW_RS" /* GXT: Rockstar V Neck */, 16);
 			iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(1250) * Global_262145.f_2989) * Global_295754.f_16));
 		}
 		else
@@ -113808,14 +113808,14 @@ void func_756(int iParam0, int iParam1)//Position - 0x87763
 	}
 	else if (iParam0 == 17)
 	{
-		StringCopy(&Var2, "REW_LSB", 16);
+		StringCopy(&Var2, "REW_LSB" /* GXT: Los Santos Belle V Neck */, 16);
 		iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(450) * Global_262145.f_2988) * Global_295754.f_16));
 	}
 	else if (iParam0 == 28)
 	{
 		if (func_651(87, -1))
 		{
-			StringCopy(&Var2, "REW_REDSK", 16);
+			StringCopy(&Var2, "REW_REDSK" /* GXT: Red Skull V Neck */, 16);
 			iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(500) * Global_262145.f_2987) * Global_295754.f_16));
 		}
 		else
@@ -118769,9 +118769,9 @@ void func_812()//Position - 0x8F4E9
 	StringCopy(&Local_216, "FAM3_DCAN", 16);
 	StringCopy(&Local_219, "FAM3_DHOUSE", 16);
 	StringCopy(&Local_222, "FAM3_GBIT", 16);
-	StringCopy(&cLocal_225, "CMN_FLEAVE", 16);
-	StringCopy(&cLocal_228, "CMN_MLEAVE", 16);
-	StringCopy(&Local_231, "LOSE_WANTED", 16);
+	StringCopy(&cLocal_225, "CMN_FLEAVE" /* GXT: ~s~Return to ~b~Franklin.~s~ */, 16);
+	StringCopy(&cLocal_228, "CMN_MLEAVE" /* GXT: ~s~Return to ~b~Michael.~s~ */, 16);
+	StringCopy(&Local_231, "LOSE_WANTED" /* GXT: Lose the Cops. */, 16);
 	iLocal_236 = 0;
 	iLocal_652 = 0;
 	iLocal_651 = 0;
@@ -128530,7 +128530,7 @@ void func_963(int iParam0, var uParam1)//Position - 0x9EE56
 			break;
 		
 		case 5:
-			func_964(uParam1, "Barry3A", func_966(iParam0), 1, 1, 0, 1199.27f, -1255.63f, 34.23f, 381, "BARSTASH", 84, 0, "", 166, 0, 7, 4, 2, 0, 2359, func_965(iParam0), 0, 1);
+			func_964(uParam1, "Barry3A", func_966(iParam0), 1, 1, 0, 1199.27f, -1255.63f, 34.23f, 381, "BARSTASH" /* GXT: Areas where you can find vehicles with a hidden stash have been marked on the map. Collect these vehicles for Barry. */, 84, 0, "", 166, 0, 7, 4, 2, 0, 2359, func_965(iParam0), 0, 1);
 			break;
 		
 		case 6:
@@ -128542,7 +128542,7 @@ void func_963(int iParam0, var uParam1)//Position - 0x9EE56
 			break;
 		
 		case 8:
-			func_964(uParam1, "Dreyfuss1", func_966(iParam0), 0, 2, 4, -1458.97f, 485.99f, 115.38f, 66, "LETTERS_HINT", 106, 0, "", 0, 0, -1, 4, 2, 0, 2359, func_965(iParam0), 0, 0);
+			func_964(uParam1, "Dreyfuss1", func_966(iParam0), 0, 2, 4, -1458.97f, 485.99f, 115.38f, 66, "LETTERS_HINT" /* GXT: The killer's identity and location have been revealed. */, 106, 0, "", 0, 0, -1, 4, 2, 0, 2359, func_965(iParam0), 0, 0);
 			break;
 		
 		case 9:
@@ -128662,7 +128662,7 @@ void func_963(int iParam0, var uParam1)//Position - 0x9EE56
 			break;
 		
 		case 38:
-			func_964(uParam1, "Nigel1A", func_966(iParam0), 0, 12, 1, -558.65f, 284.49f, 90.86f, 149, "NIGITEMS", 100, 0, "", 0, 0, 42, 4, 4, 0, 2359, func_965(iParam0), 1, 1);
+			func_964(uParam1, "Nigel1A", func_966(iParam0), 0, 12, 1, -558.65f, 284.49f, 90.86f, 149, "NIGITEMS" /* GXT: Areas where you can find celebrity items have been marked on the map. Steal these items for Nigel and Mrs. Thornhill. */, 100, 0, "", 0, 0, 42, 4, 4, 0, 2359, func_965(iParam0), 1, 1);
 			break;
 		
 		case 39:
@@ -128706,7 +128706,7 @@ void func_963(int iParam0, var uParam1)//Position - 0x9EE56
 			break;
 		
 		case 49:
-			func_964(uParam1, "Paparazzo3A", func_966(iParam0), 0, 14, 2, 305.52f, 157.19f, 102.94f, 389, "PAPPHOTO", 102, 0, "", 0, 0, 51, 4, 2, 0, 2359, func_965(iParam0), 0, 1);
+			func_964(uParam1, "Paparazzo3A", func_966(iParam0), 0, 14, 2, 305.52f, 157.19f, 102.94f, 389, "PAPPHOTO" /* GXT: Areas where you can find celebrity photo opportunities have been marked on the map. Track down and photograph these celebrities for Beverly. */, 102, 0, "", 0, 0, 51, 4, 2, 0, 2359, func_965(iParam0), 0, 1);
 			break;
 		
 		case 50:
@@ -128742,7 +128742,7 @@ void func_963(int iParam0, var uParam1)//Position - 0x9EE56
 			break;
 		
 		case 58:
-			func_964(uParam1, "Tonya1", func_966(iParam0), 0, 17, 4, -14.39f, -1472.69f, 29.58f, 66, "AM_H_RCFS", -1, 0, "ambient_TonyaCall", 24, 1, 59, 4, 2, 0, 2359, func_965(iParam0), 0, 1);
+			func_964(uParam1, "Tonya1", func_966(iParam0), 0, 17, 4, -14.39f, -1472.69f, 29.58f, 66, "AM_H_RCFS" /* GXT: Strangers and Freaks can be found throughout San Andreas at ~HUD_COLOUR_FRANKLIN~~BLIP_RANDOM_CHARACTER~~s~ */, -1, 0, "ambient_TonyaCall", 24, 1, 59, 4, 2, 0, 2359, func_965(iParam0), 0, 1);
 			break;
 		
 		case 59:

@@ -2076,7 +2076,7 @@ void __EntryFunction__()//Position - 0x0
 	{
 		SYSTEM::WAIT(0);
 		func_421(&uLocal_1630);
-		RECORDING::REPLAY_CHECK_FOR_EVENT_THIS_FRAME("M_ASS3", 0);
+		RECORDING::REPLAY_CHECK_FOR_EVENT_THIS_FRAME("M_ASS3" /* GXT: The Vice Assassination */, 0);
 		func_419(&iLocal_1461, 7f, 1);
 		if (func_418(&Local_1374))
 		{
@@ -2153,7 +2153,7 @@ void func_1(struct<39> Param0, var uParam1, var uParam2)//Position - 0x5E6
 			{
 				func_102(uParam1, 0, 0, 0, 1);
 				func_101(uParam1, &(Local_727.f_60), 2, 215, 1, 1, 0);
-				func_101(uParam1, "ES_XPAND", 2, 216, 1, 1, 0);
+				func_101(uParam1, "ES_XPAND" /* GXT: Expand */, 2, 216, 1, 1, 0);
 				func_99(1);
 				SYSTEM::SETTIMERA(0);
 				iLocal_981 = 2;
@@ -2772,7 +2772,7 @@ void func_10(bool bParam0)//Position - 0x11BE
 	if (bVar0)
 	{
 		StringCopy(&cVar1, "CHAR_LIFEINVADER", 64);
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("COUP_RED");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("COUP_RED" /* GXT: You have redeemed your promotion for ~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(func_11(bParam0));
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar1, &cVar1, true, 0, "", 0);
 	}
@@ -2783,28 +2783,28 @@ char* func_11(bool bParam0)//Position - 0x133B
 	switch (bParam0)
 	{
 		case 0:
-			return "COUP_HAIRC";
+			return "COUP_HAIRC" /* GXT: one free haircut. */;
 		
 		case 1:
-			return "COUP_TATTOO";
+			return "COUP_TATTOO" /* GXT: one free tattoo. */;
 		
 		case 2:
-			return "COUP_WARSTOCK";
+			return "COUP_WARSTOCK" /* GXT: 10% off your next purchase at Warstock-Cache-and-Carry.com. */;
 		
 		case 3:
-			return "COUP_MOSPORT";
+			return "COUP_MOSPORT" /* GXT: 10 percent off your next purchase at LegendaryMotorsport.net. */;
 		
 		case 4:
-			return "COUP_ELITAS";
+			return "COUP_ELITAS" /* GXT: 10 percent off your next purchase at ElitasTravel.com. */;
 		
 		case 5:
-			return "COUP_MEDSPENS";
+			return "COUP_MEDSPENS" /* GXT: 10 percent off your next medical expenses. */;
 		
 		case 6:
-			return "COUP_SPRUNK";
+			return "COUP_SPRUNK" /* GXT: one free can of Sprunk. */;
 		
 		case 7:
-			return "COUP_RESPRAY";
+			return "COUP_RESPRAY" /* GXT: one free respray. */;
 		
 		case 8:
 			return "COUP_XMAS2017";
@@ -2819,22 +2819,22 @@ char* func_11(bool bParam0)//Position - 0x133B
 			return "COUP_CAR2_XMAS2018";
 		
 		case 12:
-			return "COUP_CAS_ELITAS";
+			return "COUP_CAS_ELITAS" /* GXT: 10 percent off your next purchase at ElitasTravel.com. */;
 		
 		case 13:
-			return "COUP_CAS_DOCKTEASE";
+			return "COUP_CAS_DOCKTEASE" /* GXT: 10 percent off your next purchase at DockTease.com. */;
 		
 		case 14:
-			return "COUP_CAS_MOSPORT";
+			return "COUP_CAS_MOSPORT" /* GXT: 10 percent off your next purchase at LegendaryMotorsport.net. */;
 		
 		case 15:
-			return "COUP_CAS_SSASA";
+			return "COUP_CAS_SSASA" /* GXT: 10 percent off your next purchase at southernsanandreassuperautos.com. */;
 		
 		case 16:
-			return "COUP_CAS_WARSTOCK";
+			return "COUP_CAS_WARSTOCK" /* GXT: 10 percent off your next purchase at Warstock-Cache-and-Carry.com. */;
 		
 		case 17:
-			return "COUP_CAS_PANDM";
+			return "COUP_CAS_PANDM" /* GXT: 10 percent off your next purchase at pandmcycles.com. */;
 			break;
 		
 		default:
@@ -4083,7 +4083,7 @@ void func_65(var uParam0, bool bParam1)//Position - 0x2AB7
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_4, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 	func_61(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 215, true));
-	func_60("ES_HELP");
+	func_60("ES_HELP" /* GXT: Continue */);
 	if (MISC::IS_PC_VERSION())
 	{
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
@@ -4095,7 +4095,7 @@ void func_65(var uParam0, bool bParam1)//Position - 0x2AB7
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_4, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 		func_61(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 216, true));
-		func_60("ES_XPAND");
+		func_60("ES_XPAND" /* GXT: Expand */);
 		if (MISC::IS_PC_VERSION())
 		{
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
@@ -4308,7 +4308,7 @@ void func_67(var uParam0, float fParam1, bool bParam2)//Position - 0x2BA1
 				{
 					if ((uParam0->f_574 - uParam0->f_576) > 0)
 					{
-						func_83((uParam0->f_574 - uParam0->f_576), "TIMER_TIME", 0, 0, -1, 0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
+						func_83((uParam0->f_574 - uParam0->f_576), "TIMER_TIME" /* GXT: TIME */, 0, 0, -1, 0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 					}
 					else
 					{
@@ -4539,26 +4539,26 @@ void func_67(var uParam0, float fParam1, bool bParam2)//Position - 0x2BA1
 			switch (uParam0->f_560)
 			{
 				case 0:
-					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("PERCENTAGE");
+					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("PERCENTAGE" /* GXT: ~1~% */);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(uParam0->f_558);
 					HUD::END_TEXT_COMMAND_DISPLAY_TEXT(fVar20, (fVar1 + func_91((2f * 2f))), 0);
 					break;
 				
 				case 1:
-					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("FO_TWO_NUM");
+					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("FO_TWO_NUM" /* GXT: ~1~/~1~ */);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(uParam0->f_558);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(uParam0->f_559);
 					HUD::END_TEXT_COMMAND_DISPLAY_TEXT(fVar20, (fVar1 + func_91((2f * 2f))), 0);
 					break;
 				
 				case 2:
-					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("MTPHPER_XPNO");
+					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("MTPHPER_XPNO" /* GXT: ~1~RP */);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(uParam0->f_558);
 					HUD::END_TEXT_COMMAND_DISPLAY_TEXT(fVar20, (fVar1 + func_91((2f * 2f))), 0);
 					break;
 				
 				case 5:
-					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("ESDOLLA");
+					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("ESDOLLA" /* GXT: $~a~ */);
 					HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER(uParam0->f_558, true);
 					HUD::END_TEXT_COMMAND_DISPLAY_TEXT(fVar20, (fVar1 + func_91((2f * 2f))), 0);
 					break;
@@ -5167,13 +5167,13 @@ void func_80(int iParam0, int iParam1, float fParam2, float fParam3, char* sPara
 			HUD::SET_TEXT_FONT(4);
 			if (iParam0 < 0)
 			{
-				HUD::BEGIN_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT("ESMINDOLLA");
+				HUD::BEGIN_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT("ESMINDOLLA" /* GXT: -$~a~ */);
 				HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER((-1 * iParam0), true);
 				fVar1 = HUD::END_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT(false);
 			}
 			else
 			{
-				HUD::BEGIN_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT("ESDOLLA");
+				HUD::BEGIN_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT("ESDOLLA" /* GXT: $~a~ */);
 				HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER(iParam0, true);
 				fVar1 = HUD::END_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT(false);
 			}
@@ -5188,19 +5188,19 @@ void func_80(int iParam0, int iParam1, float fParam2, float fParam3, char* sPara
 	switch (iParam5)
 	{
 		case 11:
-			HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("PERCENTAGE");
+			HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("PERCENTAGE" /* GXT: ~1~% */);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iParam0);
 			break;
 		
 		case 1:
 			HUD::SET_TEXT_FONT(5);
-			HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("FO_NUM");
+			HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("FO_NUM" /* GXT: ~1~ */);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iParam0);
 			break;
 		
 		case 2:
 			HUD::SET_TEXT_FONT(5);
-			HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("FO_TWO_NUM");
+			HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("FO_TWO_NUM" /* GXT: ~1~/~1~ */);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iParam0);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iParam1);
 			break;
@@ -5212,12 +5212,12 @@ void func_80(int iParam0, int iParam1, float fParam2, float fParam3, char* sPara
 		case 3:
 			if (iParam0 < 0)
 			{
-				HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("ESMINDOLLA");
+				HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("ESMINDOLLA" /* GXT: -$~a~ */);
 				HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER((-1 * iParam0), true);
 			}
 			else
 			{
-				HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("ESDOLLA");
+				HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("ESDOLLA" /* GXT: $~a~ */);
 				HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER(iParam0, true);
 			}
 			break;
@@ -5724,17 +5724,17 @@ void func_104(var uParam0)//Position - 0x4EF7
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_4, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 	func_61(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 188, true));
-	func_60("ES_HELP_TU");
+	func_60("ES_HELP_TU" /* GXT: Like */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_4, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 	func_61(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 187, true));
-	func_60("ES_HELP_TD");
+	func_60("ES_HELP_TD" /* GXT: Dislike */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_4, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 	func_61(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 202, true));
-	func_60("ES_HELP_AB");
+	func_60("ES_HELP_AB" /* GXT: Don't Vote */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_4, "DRAW_INSTRUCTIONAL_BUTTONS");
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -5835,16 +5835,16 @@ void func_107()//Position - 0x5143
 		fLocal_130 = (fLocal_130 * 1000f);
 		if (Global_94618)
 		{
-			func_112(&uLocal_146, 6, &(Local_727.f_12), "MTPHPERSKI", SYSTEM::FLOOR(fLocal_130), 0, 3, 0);
-			func_112(&uLocal_146, 6, &(Local_727.f_24), "MTPHPERSKI", 0, 0, 3, 0);
-			func_112(&uLocal_146, 6, &(Local_727.f_30), "MTPHPERSKI", SYSTEM::ROUND((fLocal_132 + fLocal_131)), 0, 3, 0);
+			func_112(&uLocal_146, 6, &(Local_727.f_12), "MTPHPERSKI" /* GXT: Skip */, SYSTEM::FLOOR(fLocal_130), 0, 3, 0);
+			func_112(&uLocal_146, 6, &(Local_727.f_24), "MTPHPERSKI" /* GXT: Skip */, 0, 0, 3, 0);
+			func_112(&uLocal_146, 6, &(Local_727.f_30), "MTPHPERSKI" /* GXT: Skip */, SYSTEM::ROUND((fLocal_132 + fLocal_131)), 0, 3, 0);
 			func_111();
 		}
 		else
 		{
 			if (bLocal_134)
 			{
-				func_112(&uLocal_146, 6, &(Local_727.f_12), "MTPHPERRET", SYSTEM::FLOOR(fLocal_130), 0, 3, 0);
+				func_112(&uLocal_146, 6, &(Local_727.f_12), "MTPHPERRET" /* GXT: Checkpoint */, SYSTEM::FLOOR(fLocal_130), 0, 3, 0);
 			}
 			else
 			{
@@ -7655,11 +7655,11 @@ void func_146(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iPa
 	{
 		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
-			iVar0 = "CMN_HINT";
+			iVar0 = "CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */;
 		}
 		else
 		{
-			iVar0 = "FM_IHELP_HNT";
+			iVar0 = "FM_IHELP_HNT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus. */;
 		}
 	}
 	if (func_171(iVar0))
@@ -7716,7 +7716,7 @@ void func_146(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iPa
 							{
 								func_199(iVar0, -1);
 								uParam0->f_3 = iVar0;
-								if (MISC::ARE_STRINGS_EQUAL("CMN_HINT", iVar0))
+								if (MISC::ARE_STRINGS_EQUAL("CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */, iVar0))
 								{
 									func_149(1);
 								}
@@ -7735,7 +7735,7 @@ void func_146(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iPa
 						{
 							func_199(iVar0, -1);
 							uParam0->f_3 = iVar0;
-							if (MISC::ARE_STRINGS_EQUAL("CMN_HINT", iVar0))
+							if (MISC::ARE_STRINGS_EQUAL("CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */, iVar0))
 							{
 								func_149(1);
 							}
@@ -7888,7 +7888,7 @@ int func_150(char* sParam0)//Position - 0x7C5C
 {
 	if (!func_151(1, 1, 0))
 	{
-		if ((!MISC::IS_STRING_NULL_OR_EMPTY(sParam0) && func_171(sParam0)) || func_171("CMN_HINT"))
+		if ((!MISC::IS_STRING_NULL_OR_EMPTY(sParam0) && func_171(sParam0)) || func_171("CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */))
 		{
 			HUD::CLEAR_HELP(true);
 		}
@@ -10512,11 +10512,11 @@ void func_227(var uParam0, int iParam1, bool bParam2)//Position - 0xB03D
 	{
 		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
-			sVar0 = "CMN_HINT";
+			sVar0 = "CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */;
 		}
 		else
 		{
-			sVar0 = "FM_IHELP_HNT";
+			sVar0 = "FM_IHELP_HNT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus. */;
 		}
 	}
 	if (!MISC::IS_STRING_NULL(uParam0->f_3))
@@ -11885,15 +11885,15 @@ void func_259()//Position - 0xCD20
 			switch (func_41())
 			{
 				case 0:
-					StringCopy(&Global_78551, "CMN_MARRE", 16);
+					StringCopy(&Global_78551, "CMN_MARRE" /* GXT: ~s~Michael was arrested. */, 16);
 					break;
 				
 				case 1:
-					StringCopy(&Global_78551, "CMN_FARRE", 16);
+					StringCopy(&Global_78551, "CMN_FARRE" /* GXT: ~s~Franklin was arrested. */, 16);
 					break;
 				
 				case 2:
-					StringCopy(&Global_78551, "CMN_TARRE", 16);
+					StringCopy(&Global_78551, "CMN_TARRE" /* GXT: ~s~Trevor was arrested. */, 16);
 					break;
 			}
 			StringCopy(&Global_78555, "", 16);
@@ -11907,15 +11907,15 @@ void func_259()//Position - 0xCD20
 			switch (func_41())
 			{
 				case 0:
-					StringCopy(&Global_78551, "CMN_MDIED", 16);
+					StringCopy(&Global_78551, "CMN_MDIED" /* GXT: ~s~Michael died. */, 16);
 					break;
 				
 				case 1:
-					StringCopy(&Global_78551, "CMN_FDIED", 16);
+					StringCopy(&Global_78551, "CMN_FDIED" /* GXT: ~s~Franklin died. */, 16);
 					break;
 				
 				case 2:
-					StringCopy(&Global_78551, "CMN_TDIED", 16);
+					StringCopy(&Global_78551, "CMN_TDIED" /* GXT: ~s~Trevor died. */, 16);
 					break;
 			}
 			StringCopy(&Global_78555, "", 16);
@@ -17613,7 +17613,7 @@ void func_350(int iParam0, var uParam1)//Position - 0x14AED
 			break;
 		
 		case 5:
-			func_351(uParam1, "Barry3A", func_353(iParam0), 1, 1, 0, 1199.27f, -1255.63f, 34.23f, 381, "BARSTASH", 84, 0, "", 166, 0, 7, 4, 2, 0, 2359, func_352(iParam0), 0, 1);
+			func_351(uParam1, "Barry3A", func_353(iParam0), 1, 1, 0, 1199.27f, -1255.63f, 34.23f, 381, "BARSTASH" /* GXT: Areas where you can find vehicles with a hidden stash have been marked on the map. Collect these vehicles for Barry. */, 84, 0, "", 166, 0, 7, 4, 2, 0, 2359, func_352(iParam0), 0, 1);
 			break;
 		
 		case 6:
@@ -17625,7 +17625,7 @@ void func_350(int iParam0, var uParam1)//Position - 0x14AED
 			break;
 		
 		case 8:
-			func_351(uParam1, "Dreyfuss1", func_353(iParam0), 0, 2, 4, -1458.97f, 485.99f, 115.38f, 66, "LETTERS_HINT", 106, 0, "", 0, 0, -1, 4, 2, 0, 2359, func_352(iParam0), 0, 0);
+			func_351(uParam1, "Dreyfuss1", func_353(iParam0), 0, 2, 4, -1458.97f, 485.99f, 115.38f, 66, "LETTERS_HINT" /* GXT: The killer's identity and location have been revealed. */, 106, 0, "", 0, 0, -1, 4, 2, 0, 2359, func_352(iParam0), 0, 0);
 			break;
 		
 		case 9:
@@ -17745,7 +17745,7 @@ void func_350(int iParam0, var uParam1)//Position - 0x14AED
 			break;
 		
 		case 38:
-			func_351(uParam1, "Nigel1A", func_353(iParam0), 0, 12, 1, -558.65f, 284.49f, 90.86f, 149, "NIGITEMS", 100, 0, "", 0, 0, 42, 4, 4, 0, 2359, func_352(iParam0), 1, 1);
+			func_351(uParam1, "Nigel1A", func_353(iParam0), 0, 12, 1, -558.65f, 284.49f, 90.86f, 149, "NIGITEMS" /* GXT: Areas where you can find celebrity items have been marked on the map. Steal these items for Nigel and Mrs. Thornhill. */, 100, 0, "", 0, 0, 42, 4, 4, 0, 2359, func_352(iParam0), 1, 1);
 			break;
 		
 		case 39:
@@ -17789,7 +17789,7 @@ void func_350(int iParam0, var uParam1)//Position - 0x14AED
 			break;
 		
 		case 49:
-			func_351(uParam1, "Paparazzo3A", func_353(iParam0), 0, 14, 2, 305.52f, 157.19f, 102.94f, 389, "PAPPHOTO", 102, 0, "", 0, 0, 51, 4, 2, 0, 2359, func_352(iParam0), 0, 1);
+			func_351(uParam1, "Paparazzo3A", func_353(iParam0), 0, 14, 2, 305.52f, 157.19f, 102.94f, 389, "PAPPHOTO" /* GXT: Areas where you can find celebrity photo opportunities have been marked on the map. Track down and photograph these celebrities for Beverly. */, 102, 0, "", 0, 0, 51, 4, 2, 0, 2359, func_352(iParam0), 0, 1);
 			break;
 		
 		case 50:
@@ -17825,7 +17825,7 @@ void func_350(int iParam0, var uParam1)//Position - 0x14AED
 			break;
 		
 		case 58:
-			func_351(uParam1, "Tonya1", func_353(iParam0), 0, 17, 4, -14.39f, -1472.69f, 29.58f, 66, "AM_H_RCFS", -1, 0, "ambient_TonyaCall", 24, 1, 59, 4, 2, 0, 2359, func_352(iParam0), 0, 1);
+			func_351(uParam1, "Tonya1", func_353(iParam0), 0, 17, 4, -14.39f, -1472.69f, 29.58f, 66, "AM_H_RCFS" /* GXT: Strangers and Freaks can be found throughout San Andreas at ~HUD_COLOUR_FRANKLIN~~BLIP_RANDOM_CHARACTER~~s~ */, -1, 0, "ambient_TonyaCall", 24, 1, 59, 4, 2, 0, 2359, func_352(iParam0), 0, 1);
 			break;
 		
 		case 59:
@@ -24659,7 +24659,7 @@ int func_470(int iParam0)//Position - 0x1FAB1
 				iVar2 = MISC::GET_HASH_KEY(&cVar3);
 				if (iVar2 != 0)
 				{
-					if (iVar2 == MISC::GET_HASH_KEY("MNU_CAGE") || iVar2 == MISC::GET_HASH_KEY("SABRE_CAG"))
+					if (iVar2 == MISC::GET_HASH_KEY("MNU_CAGE" /* GXT: Roll Cage and Chassis Upgrade */) || iVar2 == MISC::GET_HASH_KEY("SABRE_CAG" /* GXT: Stunt Cage */))
 					{
 						return 1;
 					}

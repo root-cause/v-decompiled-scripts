@@ -305,16 +305,16 @@ void __EntryFunction__()//Position - 0x0
 				{
 					if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 					{
-						if (!func_4("SHOP_CLOSED", func_5(iLocal_80)) && !func_3(PLAYER::PLAYER_ID()))
+						if (!func_4("SHOP_CLOSED" /* GXT: ~a~ is closed. Please come back later. */, func_5(iLocal_80)) && !func_3(PLAYER::PLAYER_ID()))
 						{
 							HUD::ADD_NEXT_MESSAGE_TO_PREVIOUS_BRIEFS(false);
-							func_2("SHOP_CLOSED", func_5(iLocal_80));
+							func_2("SHOP_CLOSED" /* GXT: ~a~ is closed. Please come back later. */, func_5(iLocal_80));
 						}
 					}
 				}
 				else
 				{
-					if (func_4("SHOP_CLOSED", func_5(iLocal_80)))
+					if (func_4("SHOP_CLOSED" /* GXT: ~a~ is closed. Please come back later. */, func_5(iLocal_80)))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -397,16 +397,16 @@ char* func_5(int iParam0)//Position - 0x41C
 		case 2:
 		case 3:
 		case 4:
-			return "SHR_GAS";
+			return "SHR_GAS" /* GXT: LTD Gasoline */;
 		
 		case 5:
-			return "SHR_LIQ1";
+			return "SHR_LIQ1" /* GXT: Scoops Liquor Barn */;
 		
 		case 6:
 		case 7:
 		case 8:
 		case 9:
-			return "SHR_LIQ2";
+			return "SHR_LIQ2" /* GXT: Rob's Liquor */;
 		
 		case 10:
 		case 11:
@@ -417,10 +417,10 @@ char* func_5(int iParam0)//Position - 0x41C
 		case 16:
 		case 17:
 		case 18:
-			return "SHR_CONV";
+			return "SHR_CONV" /* GXT: 24-7 */;
 		
 		case -2:
-			return "SHR_ACE";
+			return "SHR_ACE" /* GXT: Ace Liquor */;
 		
 		default:
 	}
@@ -1258,10 +1258,10 @@ void func_27()//Position - 0x14D4
 				{
 					if (!func_1(Global_113386.f_20035.f_20, 1))
 					{
-						switch (func_36("SHR_HOLDUP_1"))
+						switch (func_36("SHR_HOLDUP_1" /* GXT: Rob the cash register by pointing a weapon at the shop clerk. */))
 						{
 							case 2:
-								func_34("SHR_HOLDUP_1", 2, 0, -1, 10000, 7, 0, 0, 0);
+								func_34("SHR_HOLDUP_1" /* GXT: Rob the cash register by pointing a weapon at the shop clerk. */, 2, 0, -1, 10000, 7, 0, 0, 0);
 								break;
 							
 							case 1:
@@ -1271,9 +1271,9 @@ void func_27()//Position - 0x14D4
 						}
 						if (iLocal_63 > 0)
 						{
-							if (func_33("SHR_HOLDUP_1"))
+							if (func_33("SHR_HOLDUP_1" /* GXT: Rob the cash register by pointing a weapon at the shop clerk. */))
 							{
-								func_29("SHR_HOLDUP_1", 1);
+								func_29("SHR_HOLDUP_1" /* GXT: Rob the cash register by pointing a weapon at the shop clerk. */, 1);
 								iLocal_50 = 4;
 							}
 						}
@@ -1286,9 +1286,9 @@ void func_27()//Position - 0x14D4
 						iLocal_50 = 1;
 					}
 				}
-				else if (func_33("SHR_HOLDUP_1"))
+				else if (func_33("SHR_HOLDUP_1" /* GXT: Rob the cash register by pointing a weapon at the shop clerk. */))
 				{
-					func_29("SHR_HOLDUP_1", 1);
+					func_29("SHR_HOLDUP_1" /* GXT: Rob the cash register by pointing a weapon at the shop clerk. */, 1);
 				}
 			}
 			break;
@@ -1300,10 +1300,10 @@ void func_27()//Position - 0x14D4
 				{
 					if (!func_1(Global_113386.f_20035.f_20, 2))
 					{
-						switch (func_36("SHR_SNK_TUT"))
+						switch (func_36("SHR_SNK_TUT" /* GXT: Buy snacks by walking up to the counter. */))
 						{
 							case 2:
-								func_34("SHR_SNK_TUT", 2, 0, -1, 10000, 7, 0, 0, 0);
+								func_34("SHR_SNK_TUT" /* GXT: Buy snacks by walking up to the counter. */, 2, 0, -1, 10000, 7, 0, 0, 0);
 								break;
 							
 							case 1:
@@ -1317,38 +1317,38 @@ void func_27()//Position - 0x14D4
 						iLocal_50 = 4;
 					}
 				}
-				else if (func_33("SHR_SNK_TUT"))
+				else if (func_33("SHR_SNK_TUT" /* GXT: Buy snacks by walking up to the counter. */))
 				{
-					func_29("SHR_SNK_TUT", 1);
+					func_29("SHR_SNK_TUT" /* GXT: Buy snacks by walking up to the counter. */, 1);
 				}
 			}
 			break;
 		
 		case 3:
-			if (func_28("SHR_HOLDUP_1") || func_28("SHR_SNK_TUT"))
+			if (func_28("SHR_HOLDUP_1" /* GXT: Rob the cash register by pointing a weapon at the shop clerk. */) || func_28("SHR_SNK_TUT" /* GXT: Buy snacks by walking up to the counter. */))
 			{
 				HUD::CLEAR_HELP(true);
 			}
-			if (func_33("SHR_SNK_TUT") && !func_1(Global_113386.f_20035.f_20, 2))
+			if (func_33("SHR_SNK_TUT" /* GXT: Buy snacks by walking up to the counter. */) && !func_1(Global_113386.f_20035.f_20, 2))
 			{
-				func_29("SHR_SNK_TUT", 1);
+				func_29("SHR_SNK_TUT" /* GXT: Buy snacks by walking up to the counter. */, 1);
 			}
-			if (func_33("SHR_HOLDUP_1") && !func_1(Global_113386.f_20035.f_20, 1))
+			if (func_33("SHR_HOLDUP_1" /* GXT: Rob the cash register by pointing a weapon at the shop clerk. */) && !func_1(Global_113386.f_20035.f_20, 1))
 			{
-				func_29("SHR_HOLDUP_1", 1);
+				func_29("SHR_HOLDUP_1" /* GXT: Rob the cash register by pointing a weapon at the shop clerk. */, 1);
 			}
 			iLocal_50 = 4;
 			break;
 		
 		case 4:
-			if ((!func_302() && func_33("SHR_HOLDUP_1")) && !func_1(Global_113386.f_20035.f_20, 1))
+			if ((!func_302() && func_33("SHR_HOLDUP_1" /* GXT: Rob the cash register by pointing a weapon at the shop clerk. */)) && !func_1(Global_113386.f_20035.f_20, 1))
 			{
-				func_29("SHR_HOLDUP_1", 1);
+				func_29("SHR_HOLDUP_1" /* GXT: Rob the cash register by pointing a weapon at the shop clerk. */, 1);
 				iLocal_50 = 2;
 			}
-			if ((!func_302() && func_33("SHR_SNK_TUT")) && !func_1(Global_113386.f_20035.f_20, 2))
+			if ((!func_302() && func_33("SHR_SNK_TUT" /* GXT: Buy snacks by walking up to the counter. */)) && !func_1(Global_113386.f_20035.f_20, 2))
 			{
-				func_29("SHR_SNK_TUT", 1);
+				func_29("SHR_SNK_TUT" /* GXT: Buy snacks by walking up to the counter. */, 1);
 				iLocal_50 = 2;
 			}
 			break;
@@ -1630,7 +1630,7 @@ void func_37()//Position - 0x1CD8
 		case 7:
 			if (!ENTITY::IS_ENTITY_DEAD(Local_66.f_2, false))
 			{
-				func_48(Local_66.f_2, "SHOP_NO_ENTRY", 3);
+				func_48(Local_66.f_2, "SHOP_NO_ENTRY" /* GXT: Friendly */, 3);
 			}
 			iLocal_51 = 14;
 			break;
@@ -1638,7 +1638,7 @@ void func_37()//Position - 0x1CD8
 		case 8:
 			if (!ENTITY::IS_ENTITY_DEAD(Local_66.f_2, false))
 			{
-				func_48(Local_66.f_2, "SHOP_NO_ENTRY", 3);
+				func_48(Local_66.f_2, "SHOP_NO_ENTRY" /* GXT: Friendly */, 3);
 			}
 			iLocal_51 = 14;
 			break;
@@ -2919,12 +2919,12 @@ void func_67()//Position - 0x3593
 									if ((MISC::GET_GAME_TIMER() % 1000) < 50)
 									{
 									}
-									if (((!func_28("SHR_HOLDUP_1") && !func_28("SHR_MENU")) && !func_50()) && func_187())
+									if (((!func_28("SHR_HOLDUP_1" /* GXT: Rob the cash register by pointing a weapon at the shop clerk. */) && !func_28("SHR_MENU" /* GXT: Press ~INPUT_CONTEXT~ to shop.~n~ */)) && !func_50()) && func_187())
 									{
-										func_186("SHR_MENU");
+										func_186("SHR_MENU" /* GXT: Press ~INPUT_CONTEXT~ to shop.~n~ */);
 									}
 									Local_66.f_469 = -1;
-									func_185(&(Local_66.f_469), 4, "SHR_MENU", 0, 0, 0, 0);
+									func_185(&(Local_66.f_469), 4, "SHR_MENU" /* GXT: Press ~INPUT_CONTEXT~ to shop.~n~ */, 0, 0, 0, 0);
 									MISC::CLEAR_BIT(&(Local_66.f_162.f_18), 1);
 									MISC::CLEAR_BIT(&(Local_66.f_162.f_18), 0);
 									iLocal_64 = 1;
@@ -2938,7 +2938,7 @@ void func_67()//Position - 0x3593
 			case 1:
 				if (!PED::IS_PED_HEADING_TOWARDS_POSITION(PLAYER::PLAYER_PED_ID(), Local_66.f_102.f_33, 135f) || !func_25(Local_66.f_0) == joaat("WEAPON_UNARMED"))
 				{
-					if (func_28("SHR_MENU"))
+					if (func_28("SHR_MENU" /* GXT: Press ~INPUT_CONTEXT~ to shop.~n~ */))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -2946,15 +2946,15 @@ void func_67()//Position - 0x3593
 					func_184(&(Local_66.f_469));
 					iLocal_64 = 0;
 				}
-				else if (((!func_28("SHR_MENU") && !func_28("SHR_HOLDUP_1")) && func_187()) && !func_183(Local_66.f_469, 0))
+				else if (((!func_28("SHR_MENU" /* GXT: Press ~INPUT_CONTEXT~ to shop.~n~ */) && !func_28("SHR_HOLDUP_1" /* GXT: Rob the cash register by pointing a weapon at the shop clerk. */)) && func_187()) && !func_183(Local_66.f_469, 0))
 				{
-					func_186("SHR_MENU");
+					func_186("SHR_MENU" /* GXT: Press ~INPUT_CONTEXT~ to shop.~n~ */);
 				}
 				if ((!TASK::IS_PED_RUNNING(PLAYER::PLAYER_PED_ID()) && !PED::IS_PED_RAGDOLL(PLAYER::PLAYER_PED_ID())) && !PED::IS_PED_JUMPING(PLAYER::PLAYER_PED_ID()))
 				{
 					if (func_181(Local_66.f_469, 1))
 					{
-						if (func_28("SHR_MENU"))
+						if (func_28("SHR_MENU" /* GXT: Press ~INPUT_CONTEXT~ to shop.~n~ */))
 						{
 							HUD::CLEAR_HELP(true);
 						}
@@ -2998,19 +2998,19 @@ void func_67()//Position - 0x3593
 				func_173(1, Local_66.f_102.f_46, Local_66.f_102.f_46);
 				func_172();
 				func_168(0, "SNK_ITEM1", 0, 1, 0, 0, 0);
-				func_168(0, "ITEM_COST", 1, 1, 0, 0, 0);
+				func_168(0, "ITEM_COST" /* GXT: $~1~ */, 1, 1, 0, 0, 0);
 				func_164(func_167(0), 0);
 				func_168(1, "SNK_ITEM2", 0, 1, 0, 0, 0);
-				func_168(1, "ITEM_COST", 1, 1, 0, 0, 0);
+				func_168(1, "ITEM_COST" /* GXT: $~1~ */, 1, 1, 0, 0, 0);
 				func_164(func_167(1), 0);
 				func_168(2, "SNK_ITEM3", 0, 1, 0, 0, 0);
-				func_168(2, "ITEM_COST", 1, 1, 0, 0, 0);
+				func_168(2, "ITEM_COST" /* GXT: $~1~ */, 1, 1, 0, 0, 0);
 				func_164(func_167(2), 0);
 				func_163(0);
 				func_162(Local_66.f_102.f_23, 1, 1);
 				func_161("SNK_ITEM1_D", 0, 0);
-				func_160(201, "ITEM_SELECT", -1, 0);
-				func_160(202, "ITEM_BACK", -1, 0);
+				func_160(201, "ITEM_SELECT" /* GXT: Select */, -1, 0);
+				func_160(202, "ITEM_BACK" /* GXT: Back */, -1, 0);
 				func_160(203, "SNK_LIFT", -1, 0);
 				iLocal_64 = 3;
 				break;
@@ -3076,7 +3076,7 @@ void func_67()//Position - 0x3593
 				if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2, 203))
 				{
 					iLocal_64 = 6;
-					AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_LIQUOR_STORE_SOUNDSET", true);
+					AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_LIQUOR_STORE_SOUNDSET", true);
 					func_109();
 				}
 				if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2, 202) || PAD::IS_CONTROL_JUST_RELEASED(2, 238))
@@ -3228,12 +3228,12 @@ void func_67()//Position - 0x3593
 			}
 			iLocal_64 = 8;
 		}
-		if (func_28("SHR_SNACKS"))
+		if (func_28("SHR_SNACKS" /* GXT: Press ~INPUT_CONTEXT~ to buy a snack.~n~Hold ~INPUT_CONTEXT~ to steal a snack. */))
 		{
 			HUD::CLEAR_HELP(true);
 			func_184(&(Local_66.f_469));
 		}
-		if (func_28("SHR_MENU"))
+		if (func_28("SHR_MENU" /* GXT: Press ~INPUT_CONTEXT~ to shop.~n~ */))
 		{
 			HUD::CLEAR_HELP(true);
 			func_184(&(Local_66.f_469));
@@ -3750,7 +3750,7 @@ void func_73(bool bParam0)//Position - 0x48B0
 	if (bVar0)
 	{
 		StringCopy(&cVar1, "CHAR_LIFEINVADER", 64);
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("COUP_RED");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("COUP_RED" /* GXT: You have redeemed your promotion for ~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(func_74(bParam0));
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar1, &cVar1, true, 0, "", 0);
 	}
@@ -3761,28 +3761,28 @@ char* func_74(bool bParam0)//Position - 0x4A2F
 	switch (bParam0)
 	{
 		case 0:
-			return "COUP_HAIRC";
+			return "COUP_HAIRC" /* GXT: one free haircut. */;
 		
 		case 1:
-			return "COUP_TATTOO";
+			return "COUP_TATTOO" /* GXT: one free tattoo. */;
 		
 		case 2:
-			return "COUP_WARSTOCK";
+			return "COUP_WARSTOCK" /* GXT: 10% off your next purchase at Warstock-Cache-and-Carry.com. */;
 		
 		case 3:
-			return "COUP_MOSPORT";
+			return "COUP_MOSPORT" /* GXT: 10 percent off your next purchase at LegendaryMotorsport.net. */;
 		
 		case 4:
-			return "COUP_ELITAS";
+			return "COUP_ELITAS" /* GXT: 10 percent off your next purchase at ElitasTravel.com. */;
 		
 		case 5:
-			return "COUP_MEDSPENS";
+			return "COUP_MEDSPENS" /* GXT: 10 percent off your next medical expenses. */;
 		
 		case 6:
-			return "COUP_SPRUNK";
+			return "COUP_SPRUNK" /* GXT: one free can of Sprunk. */;
 		
 		case 7:
-			return "COUP_RESPRAY";
+			return "COUP_RESPRAY" /* GXT: one free respray. */;
 		
 		case 8:
 			return "COUP_XMAS2017";
@@ -3797,22 +3797,22 @@ char* func_74(bool bParam0)//Position - 0x4A2F
 			return "COUP_CAR2_XMAS2018";
 		
 		case 12:
-			return "COUP_CAS_ELITAS";
+			return "COUP_CAS_ELITAS" /* GXT: 10 percent off your next purchase at ElitasTravel.com. */;
 		
 		case 13:
-			return "COUP_CAS_DOCKTEASE";
+			return "COUP_CAS_DOCKTEASE" /* GXT: 10 percent off your next purchase at DockTease.com. */;
 		
 		case 14:
-			return "COUP_CAS_MOSPORT";
+			return "COUP_CAS_MOSPORT" /* GXT: 10 percent off your next purchase at LegendaryMotorsport.net. */;
 		
 		case 15:
-			return "COUP_CAS_SSASA";
+			return "COUP_CAS_SSASA" /* GXT: 10 percent off your next purchase at southernsanandreassuperautos.com. */;
 		
 		case 16:
-			return "COUP_CAS_WARSTOCK";
+			return "COUP_CAS_WARSTOCK" /* GXT: 10 percent off your next purchase at Warstock-Cache-and-Carry.com. */;
 		
 		case 17:
-			return "COUP_CAS_PANDM";
+			return "COUP_CAS_PANDM" /* GXT: 10 percent off your next purchase at pandmcycles.com. */;
 			break;
 		
 		default:
@@ -4738,7 +4738,7 @@ void func_114(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 	{
 		if (Global_23150.f_5609 <= 1)
 		{
-			func_168(Global_23150.f_5609 + 1, "DFLT_MNU_OPT", 0, 1, 0, 0, 0);
+			func_168(Global_23150.f_5609 + 1, "DFLT_MNU_OPT" /* GXT: Exit */, 0, 1, 0, 0, 0);
 			Global_23150.f_6405 = 1;
 		}
 	}
@@ -4841,14 +4841,14 @@ void func_114(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 				if (Global_23150.f_6126)
 				{
 					func_141();
-					func_139((((Global_23147 + fParam5) - 0.00390625f) - func_140("CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128);
+					func_139((((Global_23147 + fParam5) - 0.00390625f) - func_140("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128);
 				}
 				else if (Global_23150.f_6122 > Global_23150.f_5616)
 				{
 					if (Global_23150.f_6125 != 0)
 					{
 						func_141();
-						func_139((((Global_23147 + fParam5) - 0.00390625f) - func_140("CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124);
+						func_139((((Global_23147 + fParam5) - 0.00390625f) - func_140("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124);
 					}
 				}
 			}
@@ -9086,9 +9086,9 @@ void func_197()//Position - 0xC108
 			{
 				if ((func_45() && !PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false)) && !func_216(0))
 				{
-					func_215("SHR_ROBTILL", -1);
+					func_215("SHR_ROBTILL" /* GXT: Press ~INPUT_CONTEXT~ to take money. */, -1);
 					Local_66.f_469 = -1;
-					func_185(&(Local_66.f_469), 4, "SHR_ROBTILL", 0, 0, 0, 0);
+					func_185(&(Local_66.f_469), 4, "SHR_ROBTILL" /* GXT: Press ~INPUT_CONTEXT~ to take money. */, 0, 0, 0, 0);
 					MISC::CLEAR_BIT(&(Local_66.f_162.f_18), 1);
 					MISC::CLEAR_BIT(&(Local_66.f_162.f_18), 0);
 					iLocal_101 = 1;
@@ -9122,7 +9122,7 @@ void func_197()//Position - 0xC108
 						}
 					}
 					MISC::SET_BIT(&(Local_66.f_162.f_18), 1);
-					if (func_28("SHR_ROBTILL"))
+					if (func_28("SHR_ROBTILL" /* GXT: Press ~INPUT_CONTEXT~ to take money. */))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -9147,13 +9147,13 @@ void func_197()//Position - 0xC108
 					if (Local_66.f_469 <= 0)
 					{
 						Local_66.f_469 = -1;
-						func_185(&(Local_66.f_469), 4, "SHR_ROBTILL", 0, 0, 0, 0);
+						func_185(&(Local_66.f_469), 4, "SHR_ROBTILL" /* GXT: Press ~INPUT_CONTEXT~ to take money. */, 0, 0, 0, 0);
 					}
 				}
 			}
 			else
 			{
-				if (func_28("SHR_ROBTILL"))
+				if (func_28("SHR_ROBTILL" /* GXT: Press ~INPUT_CONTEXT~ to take money. */))
 				{
 					HUD::CLEAR_HELP(true);
 				}
@@ -14495,9 +14495,9 @@ void func_320()//Position - 0x1448F
 	}
 	PLAYER::SET_ALL_RANDOM_PEDS_FLEE(PLAYER::PLAYER_ID(), false);
 	PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_79, false);
-	func_29("SHR_HOLDUP_1", 1);
-	func_29("SHR_SNK_TUT", 1);
-	if ((func_28("SHR_MENU") || func_28("SHR_HOLDUP_1")) || func_28("SHR_SNK_TUT"))
+	func_29("SHR_HOLDUP_1" /* GXT: Rob the cash register by pointing a weapon at the shop clerk. */, 1);
+	func_29("SHR_SNK_TUT" /* GXT: Buy snacks by walking up to the counter. */, 1);
+	if ((func_28("SHR_MENU" /* GXT: Press ~INPUT_CONTEXT~ to shop.~n~ */) || func_28("SHR_HOLDUP_1" /* GXT: Rob the cash register by pointing a weapon at the shop clerk. */)) || func_28("SHR_SNK_TUT" /* GXT: Buy snacks by walking up to the counter. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -14774,18 +14774,18 @@ struct<8> func_329(var uParam0)//Position - 0x14A6E
 		case 2:
 		case 3:
 		case 4:
-			StringCopy(&Var0, "SHR_GAS", 32);
+			StringCopy(&Var0, "SHR_GAS" /* GXT: LTD Gasoline */, 32);
 			break;
 		
 		case 5:
-			StringCopy(&Var0, "SHR_LIQ1", 32);
+			StringCopy(&Var0, "SHR_LIQ1" /* GXT: Scoops Liquor Barn */, 32);
 			break;
 		
 		case 6:
 		case 7:
 		case 8:
 		case 9:
-			StringCopy(&Var0, "SHR_LIQ2", 32);
+			StringCopy(&Var0, "SHR_LIQ2" /* GXT: Rob's Liquor */, 32);
 			break;
 		
 		case 10:
@@ -14797,7 +14797,7 @@ struct<8> func_329(var uParam0)//Position - 0x14A6E
 		case 16:
 		case 17:
 		case 18:
-			StringCopy(&Var0, "SHR_CONV", 32);
+			StringCopy(&Var0, "SHR_CONV" /* GXT: 24-7 */, 32);
 			break;
 		
 		default:

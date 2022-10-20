@@ -1147,7 +1147,7 @@ void func_31()//Position - 0xF8A
 			if (iVar0 == 0)
 			{
 			}
-			else if (func_34(172, "TUN_CBL_FEED", 1, "NULL", iVar0, "", 12, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0))
+			else if (func_34(172, "TUN_CBL_FEED" /* GXT: Here's the list of Exotic Exports vehicles you're looking for: */, 1, "NULL", iVar0, "", 12, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0))
 			{
 			}
 			func_33(&uLocal_197);
@@ -1688,7 +1688,7 @@ void func_39(int iParam0)//Position - 0x15FB
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(42);
 								GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							}
-							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB")) && BitTest(Global_8137, 6))
+							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB" /* GXT: Benny's */)) && BitTest(Global_8137, 6))
 							{
 								GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT");
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
@@ -2140,7 +2140,7 @@ void func_59()//Position - 0x22C5
 		func_76(0, 1, 0, 0, 0);
 		Local_122.f_181.f_2 = 1;
 		Local_122.f_181.f_69 = 1;
-		func_62(iVar0, "GC_MENU8", 0, 1, 0, 0, 0);
+		func_62(iVar0, "GC_MENU8" /* GXT: Sending request... */, 0, 1, 0, 0, 0);
 		func_60(-1);
 		MISC::SET_BIT(&(Local_122.f_359), 6);
 	}
@@ -4056,7 +4056,7 @@ void func_95()//Position - 0x4690
 		func_76(0, 1, 0, 0, 0);
 		Local_122.f_181.f_2 = 1;
 		Local_122.f_181.f_69 = 1;
-		func_62(iVar0, "GC_MENU8", 0, 1, 0, 0, 0);
+		func_62(iVar0, "GC_MENU8" /* GXT: Sending request... */, 0, 1, 0, 0, 0);
 		func_60(-1);
 		MISC::SET_BIT(&(Local_122.f_359), 6);
 	}
@@ -4927,7 +4927,7 @@ void func_116()//Position - 0x5862
 		func_76(0, 1, 0, 0, 0);
 		Local_122.f_181.f_2 = 1;
 		Local_122.f_181.f_69 = 1;
-		func_62(iVar0, "GC_MENU8", 0, 1, 0, 0, 0);
+		func_62(iVar0, "GC_MENU8" /* GXT: Sending request... */, 0, 1, 0, 0, 0);
 		func_60(-1);
 		MISC::SET_BIT(&(Local_122.f_359), 6);
 	}
@@ -5198,7 +5198,7 @@ void func_122()//Position - 0x5CF5
 		switch (Local_122.f_181.f_69)
 		{
 			case 0:
-				func_368("YOHN_OP1_D", 0, 0);
+				func_368("YOHN_OP1_D" /* GXT: Request Nightclub Goods.~n~Current Stock Level: ~1~%~n~Current Stock Value: $~1~ */, 0, 0);
 				func_358(func_359());
 				func_358(func_352(PLAYER::PLAYER_ID()));
 				break;
@@ -5211,26 +5211,26 @@ void func_122()//Position - 0x5CF5
 			case 0:
 				if (!func_348())
 				{
-					func_368("YOHN_OP1_D1", 0, 0);
+					func_368("YOHN_OP1_D1" /* GXT: Unavailable. Complete the Nightclub setup to start Nightclub Goods. */, 0, 0);
 				}
 				else if (func_359() >= 100)
 				{
-					func_368("YOHN_OP1_D2", 0, 0);
+					func_368("YOHN_OP1_D2" /* GXT: Unavailable. Your Nightclub Basement is already full. */, 0, 0);
 				}
 				else if (func_347())
 				{
 					Local_144 = { func_94(func_345(), 0, 0) };
-					func_368("CONT_REQ_CD", 0, 0);
+					func_368("CONT_REQ_CD" /* GXT: Next request available in ~a~. */, 0, 0);
 					func_344(&Local_144);
 				}
 				else
 				{
-					func_368("YOHN_NA", 100, 0);
+					func_368("YOHN_NA" /* GXT: This request is not currently available. */, 100, 0);
 				}
 				break;
 			
 			default:
-				func_368("YOHN_NA", 100, 0);
+				func_368("YOHN_NA" /* GXT: This request is not currently available. */, 100, 0);
 				break;
 			}
 	}
@@ -5369,7 +5369,7 @@ void func_124(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 	{
 		if (Global_23150.f_5609 <= 1)
 		{
-			func_62(Global_23150.f_5609 + 1, "DFLT_MNU_OPT", 0, 1, 0, 0, 0);
+			func_62(Global_23150.f_5609 + 1, "DFLT_MNU_OPT" /* GXT: Exit */, 0, 1, 0, 0, 0);
 			Global_23150.f_6405 = 1;
 		}
 	}
@@ -5472,14 +5472,14 @@ void func_124(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 				if (Global_23150.f_6126)
 				{
 					func_144();
-					func_142((((Global_23147 + fParam5) - 0.00390625f) - func_143("CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128);
+					func_142((((Global_23147 + fParam5) - 0.00390625f) - func_143("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128);
 				}
 				else if (Global_23150.f_6122 > Global_23150.f_5616)
 				{
 					if (Global_23150.f_6125 != 0)
 					{
 						func_144();
-						func_142((((Global_23147 + fParam5) - 0.00390625f) - func_143("CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124);
+						func_142((((Global_23147 + fParam5) - 0.00390625f) - func_143("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124);
 					}
 				}
 			}
@@ -7413,25 +7413,25 @@ void func_148()//Position - 0x96D1
 						{
 							if (!func_309(1))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (!func_279(1))
 							{
-								func_368("MPCT_UNAVAIL1", 100, 0);
+								func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_DES_BNTY", 100, 0);
+								func_368("MPCT_DES_BNTY" /* GXT: Choose a player to place a Bounty on or view their current Bounty value. */, 100, 0);
 							}
 						}
 						else
 						{
-							func_368("MPCT_LOCKED", 100, 0);
+							func_368("MPCT_LOCKED" /* GXT: This item unlocks at Rank ~1~. */, 100, 0);
 							func_358(func_275(29));
 						}
 						if (func_273(1))
 						{
-							func_272("MPCT_LESTDIS", 100, 0);
+							func_272("MPCT_LESTDIS" /* GXT: Lester is currently offering a discount on this service. */, 100, 0);
 						}
 						break;
 					
@@ -7440,15 +7440,15 @@ void func_148()//Position - 0x96D1
 						{
 							if (!func_309(20))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (!func_279(20))
 							{
-								func_368("MPCT_UNAVAIL1", 100, 0);
+								func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_LOSE_WANT", 100, 0);
+								func_368("MPCT_LOSE_WANT" /* GXT: Clear your Wanted Level. Get out of sight of the Cops first. */, 100, 0);
 							}
 						}
 						else
@@ -7456,17 +7456,17 @@ void func_148()//Position - 0x96D1
 							iVar1 = func_38(PLAYER::PLAYER_ID());
 							if (iVar1 < func_275(65))
 							{
-								func_368("MPCT_LOCKED", 100, 0);
+								func_368("MPCT_LOCKED" /* GXT: This item unlocks at Rank ~1~. */, 100, 0);
 								func_358(func_275(65));
 							}
 							else
 							{
-								func_368("MPCT_WLEST", 100, 0);
+								func_368("MPCT_WLEST" /* GXT: Wait for Lester to contact you. */, 100, 0);
 							}
 						}
 						if (func_273(20))
 						{
-							func_272("MPCT_LESTDIS", 100, 0);
+							func_272("MPCT_LESTDIS" /* GXT: Lester is currently offering a discount on this service. */, 100, 0);
 						}
 						break;
 					
@@ -7475,15 +7475,15 @@ void func_148()//Position - 0x96D1
 						{
 							if (!func_309(6))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (!func_279(6))
 							{
-								func_368("MPCT_UNAVAIL1", 100, 0);
+								func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_OTR", 100, 0);
+								func_368("MPCT_OTR" /* GXT: Hide yourself from other players on the Radar for 1 minute. */, 100, 0);
 							}
 						}
 						else
@@ -7491,17 +7491,17 @@ void func_148()//Position - 0x96D1
 							iVar1 = func_38(PLAYER::PLAYER_ID());
 							if (iVar1 < func_275(75))
 							{
-								func_368("MPCT_LOCKED", 100, 0);
+								func_368("MPCT_LOCKED" /* GXT: This item unlocks at Rank ~1~. */, 100, 0);
 								func_358(func_275(75));
 							}
 							else
 							{
-								func_368("MPCT_WLEST", 100, 0);
+								func_368("MPCT_WLEST" /* GXT: Wait for Lester to contact you. */, 100, 0);
 							}
 						}
 						if (func_273(6))
 						{
-							func_272("MPCT_LESTDIS", 100, 0);
+							func_272("MPCT_LESTDIS" /* GXT: Lester is currently offering a discount on this service. */, 100, 0);
 						}
 						break;
 					
@@ -7510,15 +7510,15 @@ void func_148()//Position - 0x96D1
 						{
 							if (!func_309(14))
 							{
-								func_368("MPCT_RVLPL", 100, 0);
+								func_368("MPCT_RVLPL" /* GXT: Available on Jobs where player blips are off by default. */, 100, 0);
 							}
 							else if (!func_279(14))
 							{
-								func_368("MPCT_RVLPL", 100, 0);
+								func_368("MPCT_RVLPL" /* GXT: Available on Jobs where player blips are off by default. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_RE", 100, 0);
+								func_368("MPCT_RE" /* GXT: Reveal other players on the Radar for 1 minute. */, 100, 0);
 							}
 						}
 						else
@@ -7526,17 +7526,17 @@ void func_148()//Position - 0x96D1
 							iVar1 = func_38(PLAYER::PLAYER_ID());
 							if (iVar1 < func_275(95))
 							{
-								func_368("MPCT_LOCKED", 100, 0);
+								func_368("MPCT_LOCKED" /* GXT: This item unlocks at Rank ~1~. */, 100, 0);
 								func_358(func_275(95));
 							}
 							else
 							{
-								func_368("MPCT_WLEST", 100, 0);
+								func_368("MPCT_WLEST" /* GXT: Wait for Lester to contact you. */, 100, 0);
 							}
 						}
 						if (func_273(14))
 						{
-							func_272("MPCT_LESTDIS", 100, 0);
+							func_272("MPCT_LESTDIS" /* GXT: Lester is currently offering a discount on this service. */, 100, 0);
 						}
 						break;
 					
@@ -7545,20 +7545,20 @@ void func_148()//Position - 0x96D1
 						{
 							if (!func_309(15))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (!func_279(15))
 							{
-								func_368("MPCT_UNAVAIL1", 100, 0);
+								func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_LJOB", 100, 0);
+								func_368("MPCT_LJOB" /* GXT: Request an invite to a previously completed Job. */, 100, 0);
 							}
 						}
 						else
 						{
-							func_368("MPCT_RQJL", 100, 0);
+							func_368("MPCT_RQJL" /* GXT: This item unlocks when Lester has a Job available. */, 100, 0);
 						}
 						break;
 					
@@ -7567,28 +7567,28 @@ void func_148()//Position - 0x96D1
 						{
 							if (!func_309(36))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (!func_279(36))
 							{
-								func_368("MPCT_UNAVAIL1", 100, 0);
+								func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 							}
 							else if (func_271())
 							{
-								func_368("MPCT_RQHU", 100, 0);
+								func_368("MPCT_RQHU" /* GXT: Unavailable: a Heist is currently active. */, 100, 0);
 							}
 							else if (func_270(PLAYER::PLAYER_ID(), 0, 0) && func_255())
 							{
-								func_368("MPCT_RQAPT", 100, 0);
+								func_368("MPCT_RQAPT" /* GXT: Unavailable: Access the Planning Board to replay a Heist when in an Apartment. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_HJOB", 100, 0);
+								func_368("MPCT_HJOB" /* GXT: Request a replay of a Heist. */, 100, 0);
 							}
 						}
 						else
 						{
-							func_368("MPCT_RQHL", 100, 0);
+							func_368("MPCT_RQHL" /* GXT: This item unlocks when Lester has a Heist available for replay. */, 100, 0);
 						}
 						break;
 					
@@ -7599,25 +7599,25 @@ void func_148()//Position - 0x96D1
 							{
 								if (!func_309(37))
 								{
-									func_368("MPCT_UNAVAIL0", 100, 0);
+									func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 								}
 								else if (!func_279(37))
 								{
-									func_368("MPCT_UNAVAIL1", 100, 0);
+									func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 								}
 								else
 								{
-									func_368("MPCT_CNCL", 100, 0);
+									func_368("MPCT_CNCL" /* GXT: Cancel the currently active Heist. */, 100, 0);
 								}
 							}
 							else
 							{
-								func_368("MPCT_CNCLH", 100, 0);
+								func_368("MPCT_CNCLH" /* GXT: This item is available when there is a currently active Heist. */, 100, 0);
 							}
 						}
 						else
 						{
-							func_368("MPCT_RQHL", 100, 0);
+							func_368("MPCT_RQHL" /* GXT: This item unlocks when Lester has a Heist available for replay. */, 100, 0);
 						}
 						break;
 					
@@ -7635,7 +7635,7 @@ void func_148()//Position - 0x96D1
 						}
 						else
 						{
-							func_368("HPPHONE_UNAV1", 100, 0);
+							func_368("HPPHONE_UNAV1" /* GXT: This item unlocks when Lester has an act of The Doomsday Heist available for replay. */, 100, 0);
 						}
 						break;
 					
@@ -7644,16 +7644,16 @@ void func_148()//Position - 0x96D1
 						{
 							if (func_253(PLAYER::PLAYER_ID(), 0) != -1)
 							{
-								func_368("HPPHONE_CANCELH", 100, 0);
+								func_368("HPPHONE_CANCELH" /* GXT: Cancel the currently active act of The Doomsday Heist. */, 100, 0);
 							}
 							else
 							{
-								func_368("HPPHONE_UNAV3", 100, 0);
+								func_368("HPPHONE_UNAV3" /* GXT: Unavailable: The Doomsday Heist is not currently active. */, 100, 0);
 							}
 						}
 						else
 						{
-							func_368("HPPHONE_UNAV1", 100, 0);
+							func_368("HPPHONE_UNAV1" /* GXT: This item unlocks when Lester has an act of The Doomsday Heist available for replay. */, 100, 0);
 						}
 						break;
 					
@@ -7662,20 +7662,20 @@ void func_148()//Position - 0x96D1
 						{
 							if (!func_251(PLAYER::PLAYER_ID()))
 							{
-								func_368("CSH_LPHONE_UNAV2", 100, 0);
+								func_368("CSH_LPHONE_UNAV2" /* GXT: Unavailable: The Diamond Casino Heist is not currently active. */, 100, 0);
 							}
 							else if (func_249(PLAYER::PLAYER_ID()))
 							{
-								func_368("CSH_LPHONE_UNAV3", 100, 0);
+								func_368("CSH_LPHONE_UNAV3" /* GXT: Unavailable: Can't cancel The Diamond Casino Heist while in the Arcade. */, 100, 0);
 							}
 							else
 							{
-								func_368("CSH_LPHONE_TIP1", 100, 0);
+								func_368("CSH_LPHONE_TIP1" /* GXT: Cancel your current progress on The Diamond Casino Heist. */, 100, 0);
 							}
 						}
 						else
 						{
-							func_368("CSH_LPHONE_UNAV1", 100, 0);
+							func_368("CSH_LPHONE_UNAV1" /* GXT: This item unlocks when you have completed the main approaches to The Diamond Casino Heist. */, 100, 0);
 						}
 						break;
 					
@@ -7684,25 +7684,25 @@ void func_148()//Position - 0x96D1
 						{
 							if (!func_309(23))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (!func_279(23))
 							{
-								func_368("MPCT_UNAVAIL1", 100, 0);
+								func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_LCBT", 100, 0);
+								func_368("MPCT_LCBT" /* GXT: Locate a boat and display it on the Map. */, 100, 0);
 							}
 						}
 						else
 						{
-							func_368("MPCT_LOCKED", 100, 0);
+							func_368("MPCT_LOCKED" /* GXT: This item unlocks at Rank ~1~. */, 100, 0);
 							func_358(func_275(104));
 						}
 						if (func_273(23))
 						{
-							func_272("MPCT_LESTDIS", 100, 0);
+							func_272("MPCT_LESTDIS" /* GXT: Lester is currently offering a discount on this service. */, 100, 0);
 						}
 						break;
 					
@@ -7711,25 +7711,25 @@ void func_148()//Position - 0x96D1
 						{
 							if (!func_309(24))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (!func_279(24))
 							{
-								func_368("MPCT_UNAVAIL1", 100, 0);
+								func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_LCHL", 100, 0);
+								func_368("MPCT_LCHL" /* GXT: Locate a helicopter and display it on the Map. */, 100, 0);
 							}
 						}
 						else
 						{
-							func_368("MPCT_LOCKED", 100, 0);
+							func_368("MPCT_LOCKED" /* GXT: This item unlocks at Rank ~1~. */, 100, 0);
 							func_358(func_275(98));
 						}
 						if (func_273(24))
 						{
-							func_272("MPCT_LESTDIS", 100, 0);
+							func_272("MPCT_LESTDIS" /* GXT: Lester is currently offering a discount on this service. */, 100, 0);
 						}
 						break;
 					
@@ -7738,25 +7738,25 @@ void func_148()//Position - 0x96D1
 						{
 							if (!func_309(25))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (!func_279(25))
 							{
-								func_368("MPCT_UNAVAIL1", 100, 0);
+								func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_LCCR", 100, 0);
+								func_368("MPCT_LCCR" /* GXT: Locate a car and display it on the Map. */, 100, 0);
 							}
 						}
 						else
 						{
-							func_368("MPCT_LOCKED", 100, 0);
+							func_368("MPCT_LOCKED" /* GXT: This item unlocks at Rank ~1~. */, 100, 0);
 							func_358(func_275(103));
 						}
 						if (func_273(25))
 						{
-							func_272("MPCT_LESTDIS", 100, 0);
+							func_272("MPCT_LESTDIS" /* GXT: Lester is currently offering a discount on this service. */, 100, 0);
 						}
 						break;
 					
@@ -7765,25 +7765,25 @@ void func_148()//Position - 0x96D1
 						{
 							if (!func_309(26))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (!func_279(26))
 							{
-								func_368("MPCT_UNAVAIL1", 100, 0);
+								func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_LCPL", 100, 0);
+								func_368("MPCT_LCPL" /* GXT: Locate a plane and display it on the Map. */, 100, 0);
 							}
 						}
 						else
 						{
-							func_368("MPCT_LOCKED", 100, 0);
+							func_368("MPCT_LOCKED" /* GXT: This item unlocks at Rank ~1~. */, 100, 0);
 							func_358(func_275(105));
 						}
 						if (func_273(26))
 						{
-							func_272("MPCT_LESTDIS", 100, 0);
+							func_272("MPCT_LESTDIS" /* GXT: Lester is currently offering a discount on this service. */, 100, 0);
 						}
 						break;
 					
@@ -7792,25 +7792,25 @@ void func_148()//Position - 0x96D1
 						{
 							if (!func_309(57))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (!func_279(57))
 							{
-								func_368("MPCT_UNAVAIL1", 100, 0);
+								func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_LCHL", 100, 0);
+								func_368("MPCT_LCHL" /* GXT: Locate a helicopter and display it on the Map. */, 100, 0);
 							}
 						}
 						else
 						{
-							func_368("MPCT_LOCKED", 100, 0);
+							func_368("MPCT_LOCKED" /* GXT: This item unlocks at Rank ~1~. */, 100, 0);
 							func_358(func_275(98));
 						}
 						if (func_273(57))
 						{
-							func_272("MPCT_LESTDIS", 100, 0);
+							func_272("MPCT_LESTDIS" /* GXT: Lester is currently offering a discount on this service. */, 100, 0);
 						}
 						break;
 					
@@ -7819,33 +7819,33 @@ void func_148()//Position - 0x96D1
 						{
 							if (!func_309(35))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (!func_279(35))
 							{
-								func_368("MPCT_UNAVAIL1", 100, 0);
+								func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 							}
 							else if (func_248())
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (func_245())
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_NCPS", 100, 0);
+								func_368("MPCT_NCPS" /* GXT: Cops will ignore any crimes you commit for a short period of time. */, 100, 0);
 							}
 						}
 						else
 						{
-							func_368("MPCT_LOCKED", 100, 0);
+							func_368("MPCT_LOCKED" /* GXT: This item unlocks at Rank ~1~. */, 100, 0);
 							func_358(func_275(119));
 						}
 						if (func_273(35))
 						{
-							func_272("MPCT_LESTDIS", 100, 0);
+							func_272("MPCT_LESTDIS" /* GXT: Lester is currently offering a discount on this service. */, 100, 0);
 						}
 						break;
 				}
@@ -7861,15 +7861,15 @@ void func_148()//Position - 0x96D1
 							{
 								if (!func_309(2))
 								{
-									func_368("MPCT_UNAVAIL0", 100, 0);
+									func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 								}
 								else if (!func_279(2))
 								{
-									func_368("MPCT_UNAVAIL1", 100, 0);
+									func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 								}
 								else
 								{
-									func_368("MPCT_THIEF", 100, 0);
+									func_368("MPCT_THIEF" /* GXT: Choose a player to be targeted by a Mugger who will steal a portion of their cash. */, 100, 0);
 								}
 							}
 							else
@@ -7877,37 +7877,37 @@ void func_148()//Position - 0x96D1
 								iVar1 = func_38(PLAYER::PLAYER_ID());
 								if (iVar1 < func_275(67))
 								{
-									func_368("MPCT_LOCKED", 100, 0);
+									func_368("MPCT_LOCKED" /* GXT: This item unlocks at Rank ~1~. */, 100, 0);
 									func_358(func_275(67));
 								}
 								else
 								{
-									func_368("MPCT_WLAM", 100, 0);
+									func_368("MPCT_WLAM" /* GXT: Wait for Lamar to contact you. */, 100, 0);
 								}
 							}
 							if (func_273(2))
 							{
-								func_272("MPCT_LAMADIS", 100, 0);
+								func_272("MPCT_LAMADIS" /* GXT: Lamar is currently offering a discount on this service. */, 100, 0);
 							}
 							break;
 						
 						case 1:
 							if (!func_309(38))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (!func_279(38))
 							{
-								func_368("MPCT_UNAVAIL1", 100, 0);
+								func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 							}
 							else
 							{
-								func_368("FM_LAMC_FRD", 100, 0);
+								func_368("FM_LAMC_FRD" /* GXT: Restart Lamar's missions from the beginning. */, 100, 0);
 							}
 							break;
 						
 						case 2:
-							func_368("MPCT_EXIT", 100, 0);
+							func_368("MPCT_EXIT" /* GXT: Close down the menu. */, 100, 0);
 							break;
 						}
 				}
@@ -7921,15 +7921,15 @@ void func_148()//Position - 0x96D1
 						{
 							if (!func_309(11) || BitTest(Global_44241, 10))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (!func_279(11))
 							{
-								func_368("MPCT_UNAVAIL1", 100, 0);
+								func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_AIRSTRIKE", 100, 0);
+								func_368("MPCT_AIRSTRIKE" /* GXT: Request an Airstrike at a selected position. */, 100, 0);
 							}
 						}
 						else
@@ -7937,17 +7937,17 @@ void func_148()//Position - 0x96D1
 							iVar1 = func_38(PLAYER::PLAYER_ID());
 							if (iVar1 < func_275(64))
 							{
-								func_368("MPCT_LOCKED", 100, 0);
+								func_368("MPCT_LOCKED" /* GXT: This item unlocks at Rank ~1~. */, 100, 0);
 								func_358(func_275(64));
 							}
 							else
 							{
-								func_368("MPCT_WMERRY", 100, 0);
+								func_368("MPCT_WMERRY" /* GXT: Wait for Merryweather to contact you. */, 100, 0);
 							}
 						}
 						if (func_273(11))
 						{
-							func_272("MPCT_MERRYDIS", 100, 0);
+							func_272("MPCT_MERRYDIS" /* GXT: Merryweather are currently offering a discount on this service. */, 100, 0);
 						}
 						break;
 					
@@ -7956,15 +7956,15 @@ void func_148()//Position - 0x96D1
 						{
 							if (!func_309(8))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (!func_279(8))
 							{
-								func_368("MPCT_UNAVAIL1", 100, 0);
+								func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_AMMO", 100, 0);
+								func_368("MPCT_AMMO" /* GXT: Request an ammo crate to be dropped at your GPS location. Be sure you are in a secluded location to stop other players stealing it. */, 100, 0);
 							}
 						}
 						else
@@ -7972,17 +7972,17 @@ void func_148()//Position - 0x96D1
 							iVar1 = func_38(PLAYER::PLAYER_ID());
 							if (iVar1 < func_275(61))
 							{
-								func_368("MPCT_LOCKED", 100, 0);
+								func_368("MPCT_LOCKED" /* GXT: This item unlocks at Rank ~1~. */, 100, 0);
 								func_358(func_275(61));
 							}
 							else
 							{
-								func_368("MPCT_WMERRY", 100, 0);
+								func_368("MPCT_WMERRY" /* GXT: Wait for Merryweather to contact you. */, 100, 0);
 							}
 						}
 						if (func_273(8))
 						{
-							func_272("MPCT_MERRYDIS", 100, 0);
+							func_272("MPCT_MERRYDIS" /* GXT: Merryweather are currently offering a discount on this service. */, 100, 0);
 						}
 						break;
 					
@@ -7991,15 +7991,15 @@ void func_148()//Position - 0x96D1
 						{
 							if (!func_309(10))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (!func_279(10))
 							{
-								func_368("MPCT_UNAVAIL1", 100, 0);
+								func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_BACK_HELI", 100, 0);
+								func_368("MPCT_BACK_HELI" /* GXT: Request a helicopter to provide covering fire. */, 100, 0);
 							}
 						}
 						else
@@ -8007,17 +8007,17 @@ void func_148()//Position - 0x96D1
 							iVar1 = func_38(PLAYER::PLAYER_ID());
 							if (iVar1 < func_275(62))
 							{
-								func_368("MPCT_LOCKED", 100, 0);
+								func_368("MPCT_LOCKED" /* GXT: This item unlocks at Rank ~1~. */, 100, 0);
 								func_358(func_275(62));
 							}
 							else
 							{
-								func_368("MPCT_WMERRY", 100, 0);
+								func_368("MPCT_WMERRY" /* GXT: Wait for Merryweather to contact you. */, 100, 0);
 							}
 						}
 						if (func_273(10))
 						{
-							func_272("MPCT_MERRYDIS", 100, 0);
+							func_272("MPCT_MERRYDIS" /* GXT: Merryweather are currently offering a discount on this service. */, 100, 0);
 						}
 						break;
 					
@@ -8026,15 +8026,15 @@ void func_148()//Position - 0x96D1
 						{
 							if (!func_309(9))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (!func_279(9))
 							{
-								func_368("MPCT_UNAVAIL1", 100, 0);
+								func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_BOAT", 100, 0);
+								func_368("MPCT_BOAT" /* GXT: Request a boat to bring you to land. */, 100, 0);
 							}
 						}
 						else
@@ -8042,17 +8042,17 @@ void func_148()//Position - 0x96D1
 							iVar1 = func_38(PLAYER::PLAYER_ID());
 							if (iVar1 < func_275(63))
 							{
-								func_368("MPCT_LOCKED", 100, 0);
+								func_368("MPCT_LOCKED" /* GXT: This item unlocks at Rank ~1~. */, 100, 0);
 								func_358(func_275(63));
 							}
 							else
 							{
-								func_368("MPCT_WMERRY", 100, 0);
+								func_368("MPCT_WMERRY" /* GXT: Wait for Merryweather to contact you. */, 100, 0);
 							}
 						}
 						if (func_273(9))
 						{
-							func_272("MPCT_MERRYDIS", 100, 0);
+							func_272("MPCT_MERRYDIS" /* GXT: Merryweather are currently offering a discount on this service. */, 100, 0);
 						}
 						break;
 					
@@ -8061,15 +8061,15 @@ void func_148()//Position - 0x96D1
 						{
 							if (!func_309(12))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (!func_279(12))
 							{
-								func_368("MPCT_UNAVAIL1", 100, 0);
+								func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_ARMY", 100, 0);
+								func_368("MPCT_ARMY" /* GXT: Choose a player to be attacked by Mercenaries. */, 100, 0);
 							}
 						}
 						else
@@ -8077,17 +8077,17 @@ void func_148()//Position - 0x96D1
 							iVar1 = func_38(PLAYER::PLAYER_ID());
 							if (iVar1 < func_275(81))
 							{
-								func_368("MPCT_LOCKED", 100, 0);
+								func_368("MPCT_LOCKED" /* GXT: This item unlocks at Rank ~1~. */, 100, 0);
 								func_358(func_275(81));
 							}
 							else
 							{
-								func_368("MPCT_WMERRY", 100, 0);
+								func_368("MPCT_WMERRY" /* GXT: Wait for Merryweather to contact you. */, 100, 0);
 							}
 						}
 						if (func_273(12))
 						{
-							func_272("MPCT_MERRYDIS", 100, 0);
+							func_272("MPCT_MERRYDIS" /* GXT: Merryweather are currently offering a discount on this service. */, 100, 0);
 						}
 						break;
 					
@@ -8099,24 +8099,24 @@ void func_148()//Position - 0x96D1
 							{
 								if (iVar8 == 2)
 								{
-									func_368("MPCT_UNAVAIL2", 100, 0);
+									func_368("MPCT_UNAVAIL2" /* GXT: Unavailable at current location. */, 100, 0);
 								}
 								else
 								{
-									func_368("MPCT_UNAVAIL0", 100, 0);
+									func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 								}
 							}
 							else if (!func_309(13))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (!func_279(13))
 							{
-								func_368("MPCT_UNAVAIL1", 100, 0);
+								func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_HELI", 100, 0);
+								func_368("MPCT_HELI" /* GXT: Request a helicopter to pick you up. */, 100, 0);
 							}
 						}
 						else
@@ -8124,17 +8124,17 @@ void func_148()//Position - 0x96D1
 							iVar1 = func_38(PLAYER::PLAYER_ID());
 							if (iVar1 < func_275(77))
 							{
-								func_368("MPCT_LOCKED", 100, 0);
+								func_368("MPCT_LOCKED" /* GXT: This item unlocks at Rank ~1~. */, 100, 0);
 								func_358(func_275(77));
 							}
 							else
 							{
-								func_368("MPCT_WMERRY", 100, 0);
+								func_368("MPCT_WMERRY" /* GXT: Wait for Merryweather to contact you. */, 100, 0);
 							}
 						}
 						if (func_273(13))
 						{
-							func_272("MPCT_MERRYDIS", 100, 0);
+							func_272("MPCT_MERRYDIS" /* GXT: Merryweather are currently offering a discount on this service. */, 100, 0);
 						}
 						break;
 				}
@@ -8146,7 +8146,7 @@ void func_148()//Position - 0x96D1
 				}
 				else if (func_273(22) && Local_122.f_181.f_69 <= Local_122.f_181.f_2)
 				{
-					func_368("MPCT_PEGADIS", 100, 0);
+					func_368("MPCT_PEGADIS" /* GXT: Pegasus are currently offering a discount on this service. */, 100, 0);
 				}
 				break;
 			
@@ -8158,30 +8158,30 @@ void func_148()//Position - 0x96D1
 						{
 							if (!func_309(0))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (!func_279(0))
 							{
-								func_368("MPCT_UNAVAIL1", 100, 0);
+								func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_BRUC_BOX", 100, 0);
+								func_368("MPCT_BRUC_BOX" /* GXT: Request a package of Bull Shark Testosterone. Doubles damage inflicted and halves damage received. */, 100, 0);
 							}
 						}
 						else
 						{
-							func_368("MPCT_LOCKED", 100, 0);
+							func_368("MPCT_LOCKED" /* GXT: This item unlocks at Rank ~1~. */, 100, 0);
 							func_358(func_275(74));
 						}
 						if (func_273(0))
 						{
-							func_272("MPCT_BRUCEDIS", 100, 0);
+							func_272("MPCT_BRUCEDIS" /* GXT: Brucie is currently offering a discount on this service. */, 100, 0);
 						}
 						break;
 					
 					case 1:
-						func_368("MPCT_EXIT", 100, 0);
+						func_368("MPCT_EXIT" /* GXT: Close down the menu. */, 100, 0);
 						break;
 				}
 				break;
@@ -8194,26 +8194,26 @@ void func_148()//Position - 0x96D1
 						{
 							if (!func_309(39))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (!func_279(39))
 							{
-								func_368("MPCT_UNAVAIL1", 100, 0);
+								func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_GB_LIMO", 100, 0);
+								func_368("MPCT_GB_LIMO" /* GXT: Request your Organization's Turreted Limo to be delivered. */, 100, 0);
 							}
 						}
 						else
 						{
-							func_368("MPCT_LOCKED", 100, 0);
+							func_368("MPCT_LOCKED" /* GXT: This item unlocks at Rank ~1~. */, 100, 0);
 							func_358(func_275(74));
 						}
 						break;
 					
 					case 1:
-						func_368("MPCT_EXIT", 100, 0);
+						func_368("MPCT_EXIT" /* GXT: Close down the menu. */, 100, 0);
 						break;
 				}
 				break;
@@ -8227,40 +8227,40 @@ void func_148()//Position - 0x96D1
 							iVar9 = func_242(PLAYER::PLAYER_ID());
 							if (!func_279(42) || !func_309(42))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (func_241(0, 1024))
 							{
-								func_368("MPCT_YC_HNONE", 100, 0);
+								func_368("MPCT_YC_HNONE" /* GXT: Your Yacht is not equipped with a helicopter. */, 100, 0);
 							}
 							else if (func_240(0))
 							{
-								func_368("MPCT_YC_HSPN", 100, 0);
+								func_368("MPCT_YC_HSPN" /* GXT: Your helicopter is already on the way. */, 100, 0);
 							}
 							else if (func_239(PLAYER::PLAYER_ID(), 0))
 							{
-								func_368("MPCT_YC_HIN", 100, 0);
+								func_368("MPCT_YC_HIN" /* GXT: You are already using the helicopter. */, 100, 0);
 							}
 							else if (func_232(PLAYER::PLAYER_ID(), iVar9, 100f))
 							{
-								func_368("MPCT_YC_CLOSE", 100, 0);
+								func_368("MPCT_YC_CLOSE" /* GXT: You are too close to your Yacht. */, 100, 0);
 							}
 							else if (func_231(0))
 							{
-								func_368("MPCT_YC_HSPWND", 100, 0);
+								func_368("MPCT_YC_HSPWND" /* GXT: A helicopter is already on the shore. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_YC_YAH", 100, 0);
+								func_368("MPCT_YC_YAH" /* GXT: Tell the Captain to deliver a Helicopter to the coastline nearest your Yacht. */, 100, 0);
 							}
 						}
 						else
 						{
-							func_368("MPCT_YC_NOY", 100, 0);
+							func_368("MPCT_YC_NOY" /* GXT: You do not own a Yacht. */, 100, 0);
 						}
 						if (func_273(40))
 						{
-							func_272("MPCT_YACHTDIS", 100, 0);
+							func_272("MPCT_YACHTDIS" /* GXT: The captain is currently offering a discount on this service. */, 100, 0);
 						}
 						break;
 					
@@ -8270,36 +8270,36 @@ void func_148()//Position - 0x96D1
 							iVar10 = func_242(PLAYER::PLAYER_ID());
 							if (!func_279(42) || !func_309(42))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (func_239(PLAYER::PLAYER_ID(), 1))
 							{
-								func_368("MPCT_YC_BIN", 100, 0);
+								func_368("MPCT_YC_BIN" /* GXT: You are already using the boat. */, 100, 0);
 							}
 							else if (func_240(1))
 							{
-								func_368("MPCT_YC_BSPN", 100, 0);
+								func_368("MPCT_YC_BSPN" /* GXT: Your boat is already on the way. */, 100, 0);
 							}
 							else if (func_232(PLAYER::PLAYER_ID(), iVar10, 100f))
 							{
-								func_368("MPCT_YC_CLOSE", 100, 0);
+								func_368("MPCT_YC_CLOSE" /* GXT: You are too close to your Yacht. */, 100, 0);
 							}
 							else if (func_231(1))
 							{
-								func_368("MPCT_YC_BSPWND", 100, 0);
+								func_368("MPCT_YC_BSPWND" /* GXT: A boat is already on the shore. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_YC_YAB", 100, 0);
+								func_368("MPCT_YC_YAB" /* GXT: Tell the Captain to deliver a Boat to the coastline nearest your Yacht. */, 100, 0);
 							}
 						}
 						else
 						{
-							func_368("MPCT_YC_NOY", 100, 0);
+							func_368("MPCT_YC_NOY" /* GXT: You do not own a Yacht. */, 100, 0);
 						}
 						if (func_273(41))
 						{
-							func_272("MPCT_YACHTDIS", 100, 0);
+							func_272("MPCT_YACHTDIS" /* GXT: The captain is currently offering a discount on this service. */, 100, 0);
 						}
 						break;
 					
@@ -8310,40 +8310,40 @@ void func_148()//Position - 0x96D1
 							func_187(&bVar12, &bVar11);
 							if (!func_279(42) || !func_309(42))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (func_186(PLAYER::PLAYER_ID()))
 							{
-								func_368("MPCT_YC_PIN", 100, 0);
+								func_368("MPCT_YC_PIN" /* GXT: You are already using your Personal Vehicle. */, 100, 0);
 							}
 							else if (func_177(1133903872))
 							{
-								func_368("MPCT_YC_PSPWND", 100, 0);
+								func_368("MPCT_YC_PSPWND" /* GXT: You are too close to your current Personal Vehicle. */, 100, 0);
 							}
 							else if (!bVar12)
 							{
-								func_368("MPCT_YC_GAR", 100, 0);
+								func_368("MPCT_YC_GAR" /* GXT: There are no available garages. */, 100, 0);
 							}
 							else if (!bVar11)
 							{
-								func_368("MPCT_YC_VEH", 100, 0);
+								func_368("MPCT_YC_VEH" /* GXT: There are no available vehicles. */, 100, 0);
 							}
 							else if (!func_232(PLAYER::PLAYER_ID(), iVar13, 100f))
 							{
-								func_368("MPCT_YC_FAR", 100, 0);
+								func_368("MPCT_YC_FAR" /* GXT: You are too far away from your Yacht. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_YC_YAP", 100, 0);
+								func_368("MPCT_YC_YAP" /* GXT: Tell the Captain to deliver your Personal Vehicle to the coastline nearest your Yacht. */, 100, 0);
 							}
 						}
 						else
 						{
-							func_368("MPCT_YC_NOY", 100, 0);
+							func_368("MPCT_YC_NOY" /* GXT: You do not own a Yacht. */, 100, 0);
 						}
 						if (func_273(42))
 						{
-							func_272("MPCT_YACHTDIS", 100, 0);
+							func_272("MPCT_YACHTDIS" /* GXT: The captain is currently offering a discount on this service. */, 100, 0);
 						}
 						break;
 					
@@ -8352,16 +8352,16 @@ void func_148()//Position - 0x96D1
 						{
 							if ((!func_279(64) || !func_309(64)) || Global_262145.f_29259)
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else
 							{
-								func_368("YACHT_REQDESC", 100, 0);
+								func_368("YACHT_REQDESC" /* GXT: Request a job from your Galaxy Super Yacht Captain. */, 100, 0);
 							}
 						}
 						else
 						{
-							func_368("MPCT_YC_NOY", 100, 0);
+							func_368("MPCT_YC_NOY" /* GXT: You do not own a Yacht. */, 100, 0);
 						}
 						break;
 				}
@@ -8375,35 +8375,35 @@ void func_148()//Position - 0x96D1
 						{
 							if (!func_309(43))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (!func_279(43))
 							{
-								func_368("MPCT_UNAVAIL1", 100, 0);
+								func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 							}
 							else if (func_171(func_175()))
 							{
 								if (func_170())
 								{
-									func_368("MPCT_PA_IMP", 100, 0);
+									func_368("MPCT_PA_IMP" /* GXT: Tell the Executive Assistant to recover your impounded vehicle. */, 100, 0);
 								}
 								else
 								{
-									func_368("MPCT_PA_IMP_F", 100, 0);
+									func_368("MPCT_PA_IMP_F" /* GXT: Tell the Executive Assistant to recover your impounded vehicle. */, 100, 0);
 								}
 							}
 							else
 							{
-								func_368("MPCT_PA_IMPF", 100, 0);
+								func_368("MPCT_PA_IMPF" /* GXT: None of your vehicles are currently impounded. */, 100, 0);
 							}
 						}
 						else
 						{
-							func_368("MPCT_PA_NOY", 100, 0);
+							func_368("MPCT_PA_NOY" /* GXT: You do not own an Office. */, 100, 0);
 						}
 						if (func_273(43))
 						{
-							func_272("MPCT_YACHTDIS", 100, 0);
+							func_272("MPCT_YACHTDIS" /* GXT: The captain is currently offering a discount on this service. */, 100, 0);
 						}
 						break;
 					
@@ -8415,48 +8415,48 @@ void func_148()//Position - 0x96D1
 							{
 								if (iVar8 == 3)
 								{
-									func_368("MPCT_PA_YAH0A", 100, 0);
+									func_368("MPCT_PA_YAH0A" /* GXT: The Luxury Helicopter pickup has already been requested. */, 100, 0);
 								}
 								else if (iVar8 == 2)
 								{
-									func_368("MPCT_UNAVAIL2", 100, 0);
+									func_368("MPCT_UNAVAIL2" /* GXT: Unavailable at current location. */, 100, 0);
 								}
 								else
 								{
-									func_368("MPCT_UNAVAIL0", 100, 0);
+									func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 								}
 							}
 							else if (!func_309(44))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (!func_279(44))
 							{
-								func_368("MPCT_UNAVAIL1", 100, 0);
+								func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 							}
 							else if (func_167())
 							{
 								if (func_170())
 								{
-									func_368("MPCT_PA_HP", 100, 0);
+									func_368("MPCT_PA_HP" /* GXT: Tell the Executive Assistant to send a Helicopter to your location. */, 100, 0);
 								}
 								else
 								{
-									func_368("MPCT_PA_HPF", 100, 0);
+									func_368("MPCT_PA_HPF" /* GXT: Tell the Executive Assistant to send a Helicopter to your location. */, 100, 0);
 								}
 							}
 							else if (!BitTest(Local_122.f_359, 10))
 							{
-								func_368("MPCT_PA_YAH0U", 100, 0);
+								func_368("MPCT_PA_YAH0U" /* GXT: Unavailable. This helicopter is already in use by another player. */, 100, 0);
 							}
 						}
 						else
 						{
-							func_368("MPCT_PA_NOY", 100, 0);
+							func_368("MPCT_PA_NOY" /* GXT: You do not own an Office. */, 100, 0);
 						}
 						if (func_273(44))
 						{
-							func_272("MPCT_YACHTDIS", 100, 0);
+							func_272("MPCT_YACHTDIS" /* GXT: The captain is currently offering a discount on this service. */, 100, 0);
 						}
 						break;
 				}
@@ -8473,25 +8473,25 @@ void func_148()//Position - 0x96D1
 						{
 							if (!func_309(18))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (!func_279(18))
 							{
-								func_368("MPCT_UNAVAIL1", 100, 0);
+								func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_LJOB", 100, 0);
+								func_368("MPCT_LJOB" /* GXT: Request an invite to a previously completed Job. */, 100, 0);
 							}
 						}
 						else
 						{
-							func_368("MPCT_RQJS", 100, 0);
+							func_368("MPCT_RQJS" /* GXT: This item unlocks when Simeon has a Job available. */, 100, 0);
 						}
 						break;
 					
 					case 1:
-						func_368("MPCT_EXIT", 100, 0);
+						func_368("MPCT_EXIT" /* GXT: Close down the menu. */, 100, 0);
 						break;
 				}
 				break;
@@ -8504,25 +8504,25 @@ void func_148()//Position - 0x96D1
 						{
 							if (!func_309(19))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (!func_279(19))
 							{
-								func_368("MPCT_UNAVAIL1", 100, 0);
+								func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_LJOB", 100, 0);
+								func_368("MPCT_LJOB" /* GXT: Request an invite to a previously completed Job. */, 100, 0);
 							}
 						}
 						else
 						{
-							func_368("MPCT_RQJM", 100, 0);
+							func_368("MPCT_RQJM" /* GXT: This item unlocks when Martin has a Job available. */, 100, 0);
 						}
 						break;
 					
 					case 1:
-						func_368("MPCT_EXIT", 100, 0);
+						func_368("MPCT_EXIT" /* GXT: Close down the menu. */, 100, 0);
 						break;
 				}
 				break;
@@ -8535,25 +8535,25 @@ void func_148()//Position - 0x96D1
 						{
 							if (!func_309(21))
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 							else if (!func_279(21))
 							{
-								func_368("MPCT_UNAVAIL1", 100, 0);
+								func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_LJOB", 100, 0);
+								func_368("MPCT_LJOB" /* GXT: Request an invite to a previously completed Job. */, 100, 0);
 							}
 						}
 						else
 						{
-							func_368("MPCT_RQJR", 100, 0);
+							func_368("MPCT_RQJR" /* GXT: This item unlocks when Ron has a Job available. */, 100, 0);
 						}
 						break;
 					
 					case 1:
-						func_368("MPCT_EXIT", 100, 0);
+						func_368("MPCT_EXIT" /* GXT: Close down the menu. */, 100, 0);
 						break;
 				}
 				break;
@@ -8568,26 +8568,26 @@ void func_148()//Position - 0x96D1
 							{
 								if (func_279(17))
 								{
-									func_368("MPCT_LJOB", 100, 0);
+									func_368("MPCT_LJOB" /* GXT: Request an invite to a previously completed Job. */, 100, 0);
 								}
 								else
 								{
-									func_368("MPCT_UNAVAIL1", 100, 0);
+									func_368("MPCT_UNAVAIL1" /* GXT: Unavailable during your current Job. */, 100, 0);
 								}
 							}
 							else
 							{
-								func_368("MPCT_UNAVAIL0", 100, 0);
+								func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 							}
 						}
 						else
 						{
-							func_368("MPCT_RQJG", 100, 0);
+							func_368("MPCT_RQJG" /* GXT: This item unlocks when Gerald has a Job available. */, 100, 0);
 						}
 						break;
 					
 					case 1:
-						func_368("MPCT_EXIT", 100, 0);
+						func_368("MPCT_EXIT" /* GXT: Close down the menu. */, 100, 0);
 						break;
 				}
 				break;
@@ -8599,11 +8599,11 @@ void func_148()//Position - 0x96D1
 						bVar0 = func_166(Local_122.f_358);
 						if (bVar0)
 						{
-							func_368("BB_DES_CUR", 100, 0);
+							func_368("BB_DES_CUR" /* GXT: Current value of the Bounty on the selected player. */, 100, 0);
 						}
 						else if (func_165(&iVar4))
 						{
-							func_368("BB_DELAY1", 100, 0);
+							func_368("BB_DELAY1" /* GXT: You have hit your daily limit of bounties. You can set another in ~a~. */, 100, 0);
 							Local_144 = { func_94(iVar4, 0, 0) };
 							func_344(&Local_144);
 						}
@@ -8612,17 +8612,17 @@ void func_148()//Position - 0x96D1
 							Var3 = { func_70(Local_122.f_358) };
 							if (func_162(&Var3, &iVar4))
 							{
-								func_368("BB_DELAY", 100, 0);
+								func_368("BB_DELAY" /* GXT: You can set a bounty on this player again in ~a~. */, 100, 0);
 								Local_144 = { func_94(iVar4, 0, 0) };
 								func_344(&Local_144);
 							}
 							else if (Global_2815059.f_1856.f_1 != 0 && !BitTest(Local_122.f_359, 8))
 							{
-								func_368("BB_ABOUNTYSET", 100, 0);
+								func_368("BB_ABOUNTYSET" /* GXT: You have already set a Bounty.~n~Another can be placed when that Bounty is over. */, 100, 0);
 							}
 							else
 							{
-								func_368("BB_DES_SET", 100, 0);
+								func_368("BB_DES_SET" /* GXT: Set a new Bounty on the selected player. Lester takes a $~1~ cut. */, 100, 0);
 								func_358(Global_262145.f_7104);
 							}
 						}
@@ -8633,7 +8633,7 @@ void func_148()//Position - 0x96D1
 			case 6:
 				if (BitTest(bLocal_169, 2) && Local_122.f_181.f_69 == 1)
 				{
-					func_368("MPCT_EXIT", 100, 0);
+					func_368("MPCT_EXIT" /* GXT: Close down the menu. */, 100, 0);
 				}
 				else if (!BitTest(Global_1585857[uLocal_159[Local_122.f_181.f_69] /*142*/].f_103, 1))
 				{
@@ -8646,40 +8646,40 @@ void func_148()//Position - 0x96D1
 								if (func_161(uLocal_159[Local_122.f_181.f_69]) == joaat("oppressor2") && func_160())
 								{
 									Var2 = { func_94((Global_262145.f_28396 - func_159(&Global_2789823, 1)), 0, 0) };
-									func_368("PI_BIK_TIMER", 0, 0);
+									func_368("PI_BIK_TIMER" /* GXT: This vehicle can be requested again in ~a~. */, 0, 0);
 									func_344(&Var2);
 								}
 								else if (!BitTest(Global_1585857[func_175() /*142*/].f_103, 6))
 								{
-									func_368("MPCT_PERVEHc", 100, 0);
+									func_368("MPCT_PERVEHc" /* GXT: Request Delivery? */, 100, 0);
 								}
 								else
 								{
-									func_368("MPCT_PERVEHi", 100, 0);
+									func_368("MPCT_PERVEHi" /* GXT: Request Delivery? Your impounded vehicle will be lost if you have a new vehicle delivered. */, 100, 0);
 								}
 							}
 							else
 							{
-								func_368("MPCT_PERVEHc", 100, 0);
+								func_368("MPCT_PERVEHc" /* GXT: Request Delivery? */, 100, 0);
 							}
 						}
 						else
 						{
-							func_368("BB_PVUNA8", 100, 0);
+							func_368("BB_PVUNA8" /* GXT: Your Personal Vehicle is impounded. */, 100, 0);
 						}
 					}
 					else
 					{
-						func_368("BB_PVUNA1", 100, 0);
+						func_368("BB_PVUNA1" /* GXT: You have no Personal Vehicle in this space. */, 100, 0);
 					}
 				}
 				else if (BitTest(Global_1585857[Local_122.f_181.f_69 /*142*/].f_103, 2))
 				{
-					func_368("BB_PVUNA12", 100, 0);
+					func_368("BB_PVUNA12" /* GXT: Your Personal Vehicle is destroyed. You can call Mors Mutual Insurance to make a claim. */, 100, 0);
 				}
 				else
 				{
-					func_368("BB_PVUNA13", 100, 0);
+					func_368("BB_PVUNA13" /* GXT: Your Personal Vehicle is destroyed. To protect your vehicles in the future you can purchase Car Insurance. */, 100, 0);
 				}
 				break;
 			
@@ -8694,23 +8694,23 @@ void func_148()//Position - 0x96D1
 							{
 								if ((iLocal_132 - iLocal_133) > 0)
 								{
-									func_368("MPCT_INSD3", 100, 0);
+									func_368("MPCT_INSD3" /* GXT: ~a~ has paid $~1~ towards the premium. Pay the remaining premium to make a claim on your insured vehicle and have it returned to you. */, 100, 0);
 								}
 								else
 								{
-									func_368("MPCT_INSD2", 100, 0);
+									func_368("MPCT_INSD2" /* GXT: ~a~ has paid the full $~1~ of the premium. Make a claim on your insured vehicle and have it returned to you. */, 100, 0);
 								}
 								func_344(&(Global_1585857[iLocal_151[Local_122.f_181.f_69] /*142*/].f_106));
 								func_358(iLocal_133);
 							}
 							else if ((iLocal_132 - iLocal_133) > 0)
 							{
-								func_368("MPCT_INSD", 100, 0);
+								func_368("MPCT_INSD" /* GXT: Pay a premium to make a claim on your insured vehicle and have it returned to you. */, 100, 0);
 							}
 						}
 						else if (iLocal_132 > 0)
 						{
-							func_368("MPCT_INSD", 100, 0);
+							func_368("MPCT_INSD" /* GXT: Pay a premium to make a claim on your insured vehicle and have it returned to you. */, 100, 0);
 						}
 					}
 				}
@@ -8720,14 +8720,14 @@ void func_148()//Position - 0x96D1
 				switch (Local_122.f_181.f_69)
 				{
 					case 0:
-						func_368("MP_STRIP_IN1", 100, 0);
+						func_368("MP_STRIP_IN1" /* GXT: Invite ~a~ to your Apartment for a lapdance. */, 100, 0);
 						StringCopy(&Var2, "SCLUB_NM_", 16);
 						StringIntConCat(&Var2, iLocal_168, 16);
 						func_158(&Var2);
 						break;
 					
 					case 1:
-						func_368("MPCT_EXIT", 100, 0);
+						func_368("MPCT_EXIT" /* GXT: Close down the menu. */, 100, 0);
 						break;
 				}
 				break;
@@ -8738,7 +8738,7 @@ void func_148()//Position - 0x96D1
 				bVar7 = false;
 				if (BitTest(bLocal_169, 2) && Local_122.f_181.f_69 == 1)
 				{
-					func_368("MPCT_EXIT", 100, 0);
+					func_368("MPCT_EXIT" /* GXT: Close down the menu. */, 100, 0);
 				}
 				else if (iVar6 > 0)
 				{
@@ -8749,11 +8749,11 @@ void func_148()//Position - 0x96D1
 						{
 							if (BitTest(iLocal_183, bVar7))
 							{
-								func_368("MPCT_RPHS", 100, 0);
+								func_368("MPCT_RPHS" /* GXT: Replay this Heist. */, 100, 0);
 							}
 							else
 							{
-								func_368("MPCT_RQRE", 100, 0);
+								func_368("MPCT_RQRE" /* GXT: Unavailable: This Heist has recently been completed. */, 100, 0);
 							}
 						}
 						bVar7++;
@@ -8765,7 +8765,7 @@ void func_148()//Position - 0x96D1
 				bVar7 = false;
 				if (BitTest(bLocal_169, 2) && Local_122.f_181.f_69 == 1)
 				{
-					func_368("MPCT_EXIT", 100, 0);
+					func_368("MPCT_EXIT" /* GXT: Close down the menu. */, 100, 0);
 				}
 				else
 				{
@@ -8774,7 +8774,7 @@ void func_148()//Position - 0x96D1
 					{
 						if (Local_122.f_181.f_70[Local_122.f_181.f_69] == bVar7)
 						{
-							func_368("MPCT_RPHS", 100, 0);
+							func_368("MPCT_RPHS" /* GXT: Replay this Heist. */, 100, 0);
 						}
 						bVar7++;
 					}
@@ -8786,121 +8786,121 @@ void func_148()//Position - 0x96D1
 	{
 		if (BitTest(iLocal_142, 0))
 		{
-			func_368("BB_NOMONEY", 100, 0);
+			func_368("BB_NOMONEY" /* GXT: You don't have enough cash. */, 100, 0);
 		}
 		if (BitTest(iLocal_142, 1))
 		{
-			func_368("MPCT_UNAVAIL0", 100, 0);
+			func_368("MPCT_UNAVAIL0" /* GXT: Unavailable. */, 100, 0);
 		}
 		if (BitTest(iLocal_142, 2))
 		{
-			func_368("GC_MENU6", 100, 0);
+			func_368("GC_MENU6" /* GXT: The Mugger is already working for someone else. */, 100, 0);
 		}
 		if (BitTest(iLocal_142, 3))
 		{
-			func_368("GC_MENU12", 100, 0);
+			func_368("GC_MENU12" /* GXT: This gang is already working for someone else. */, 100, 0);
 		}
 		if (BitTest(iLocal_142, 4))
 		{
-			func_368("GC_MENU14", 100, 0);
+			func_368("GC_MENU14" /* GXT: You are already working with another gang. */, 100, 0);
 		}
 		if (BitTest(iLocal_142, 6))
 		{
-			func_368("GC_MENU19", 100, 0);
+			func_368("GC_MENU19" /* GXT: This gang is already working with you. */, 100, 0);
 		}
 		if (BitTest(iLocal_142, 5))
 		{
-			func_368("GC_MENU15", 100, 0);
+			func_368("GC_MENU15" /* GXT: The gang is unable to reach your current position. */, 100, 0);
 		}
 		if (BitTest(iLocal_142, 7))
 		{
-			func_368("GC_MENU20", 100, 0);
+			func_368("GC_MENU20" /* GXT: There are no players to mug. */, 100, 0);
 		}
 		if (BitTest(iLocal_142, 8))
 		{
-			func_368("GC_MENU21", 100, 0);
+			func_368("GC_MENU21" /* GXT: The Mercenaries are already working for someone else. */, 100, 0);
 		}
 		if (BitTest(iLocal_142, 9))
 		{
-			func_368("GC_MENU22", 100, 0);
+			func_368("GC_MENU22" /* GXT: There are no players to attack. */, 100, 0);
 		}
 		if (BitTest(iLocal_142, 10))
 		{
-			func_368("GC_MENU35", 100, 0);
+			func_368("GC_MENU35" /* GXT: There are no players to give a Wanted Level to. */, 100, 0);
 		}
 		if (BitTest(iLocal_142, 11))
 		{
-			func_368("GC_MENU39", 100, 0);
+			func_368("GC_MENU39" /* GXT: The Mugger is already working with you. */, 100, 0);
 		}
 		if (BitTest(iLocal_142, 12))
 		{
-			func_368("GC_MENU40", 100, 0);
+			func_368("GC_MENU40" /* GXT: The Mercenaries are already working with you. */, 100, 0);
 		}
 		if (BitTest(iLocal_142, 31))
 		{
-			func_368("BB_NOBANK", 100, 0);
+			func_368("BB_NOBANK" /* GXT: You don't have enough cash in your bank account. */, 100, 0);
 		}
 		if (Local_122.f_178 == 6)
 		{
 			if (BitTest(iLocal_142, 14) || !STREAMING::IS_MODEL_A_VEHICLE(func_161(uLocal_159[Local_122.f_181.f_69])))
 			{
-				func_368("BB_PVUNA1", 100, 0);
+				func_368("BB_PVUNA1" /* GXT: You have no Personal Vehicle in this space. */, 100, 0);
 			}
 			else if (BitTest(iLocal_142, 13))
 			{
-				func_368("BB_PVUNA2", 100, 0);
+				func_368("BB_PVUNA2" /* GXT: You are too close to your current Personal Vehicle. */, 100, 0);
 			}
 			else if (BitTest(iLocal_142, 15))
 			{
-				func_368("BB_PVUNA3", 100, 0);
+				func_368("BB_PVUNA3" /* GXT: Your Personal Vehicle is not empty. */, 100, 0);
 			}
 			else if (BitTest(iLocal_142, 16))
 			{
-				func_368("BB_PVUNA4", 100, 0);
+				func_368("BB_PVUNA4" /* GXT: You are too far from a suitable road. */, 100, 0);
 			}
 			else if (BitTest(iLocal_142, 17))
 			{
-				func_368("BB_PVUNA5", 100, 0);
+				func_368("BB_PVUNA5" /* GXT: Unlocks when you have a Garage. */, 100, 0);
 			}
 			else if (BitTest(iLocal_142, 18))
 			{
-				func_368("BB_PVUNA6", 100, 0);
+				func_368("BB_PVUNA6" /* GXT: Unavailable. */, 100, 0);
 			}
 			else if (BitTest(iLocal_142, 21))
 			{
-				func_368("BB_PVUNA7", 100, 0);
+				func_368("BB_PVUNA7" /* GXT: A delivery is in progress. */, 100, 0);
 			}
 			else if (BitTest(iLocal_142, 22))
 			{
-				func_368("BB_PVUNA8", 100, 0);
+				func_368("BB_PVUNA8" /* GXT: Your Personal Vehicle is impounded. */, 100, 0);
 			}
 			else if (BitTest(iLocal_143, 2))
 			{
-				func_368("BB_PVUNA9", 100, 0);
+				func_368("BB_PVUNA9" /* GXT: You are already using your Personal Vehicle. */, 100, 0);
 			}
 			else if (BitTest(iLocal_143, 13))
 			{
-				func_368("BB_PVUNA11", 100, 0);
+				func_368("BB_PVUNA11" /* GXT: You are too close to your Garage. */, 100, 0);
 			}
 			else if (BitTest(iLocal_143, 16))
 			{
-				func_368("BB_PVUNA12", 100, 0);
+				func_368("BB_PVUNA12" /* GXT: Your Personal Vehicle is destroyed. You can call Mors Mutual Insurance to make a claim. */, 100, 0);
 			}
 			else if (BitTest(iLocal_143, 18))
 			{
-				func_368("BB_PVUNA13", 100, 0);
+				func_368("BB_PVUNA13" /* GXT: Your Personal Vehicle is destroyed. To protect your vehicles in the future you can purchase Car Insurance. */, 100, 0);
 			}
 			else if (BitTest(iLocal_143, 23))
 			{
-				func_368("PIM_HRPV14", 100, 0);
+				func_368("PIM_HRPV14" /* GXT: You already have an active Special/Personal Vehicle. */, 100, 0);
 			}
 			else if (BitTest(iLocal_143, 24))
 			{
-				func_368("BB_PVUNA98", 100, 0);
+				func_368("BB_PVUNA98" /* GXT: Your Personal Vehicle is already in the LS Car Meet. Return it to Storage via the Vehicles section of the Interaction Menu if you wish to request another vehicle. */, 100, 0);
 			}
 			else if (BitTest(iLocal_143, 25))
 			{
-				func_368("PIM_HRPV99", 100, 0);
+				func_368("PIM_HRPV99" /* GXT: This vehicle is not allowed inside the LS Car Meet. */, 100, 0);
 			}
 			else if (func_161(uLocal_159[Local_122.f_181.f_69]) == joaat("oppressor2") && func_160())
 			{
@@ -8910,103 +8910,103 @@ void func_148()//Position - 0x96D1
 		{
 			if (BitTest(iLocal_143, 17))
 			{
-				func_368("BB_PVEMPTY", 100, 0);
+				func_368("BB_PVEMPTY" /* GXT: This Garage is empty. */, 100, 0);
 			}
 		}
 		if (BitTest(iLocal_142, 19))
 		{
-			func_368("BB_NONE0", 100, 0);
+			func_368("BB_NONE0" /* GXT: There are no players available. */, 100, 0);
 		}
 		if (BitTest(iLocal_142, 20))
 		{
-			func_368("CONT_REQ_CD", 100, 0);
+			func_368("CONT_REQ_CD" /* GXT: Next request available in ~a~. */, 100, 0);
 			func_344(&Local_144);
 		}
 		if (BitTest(iLocal_142, 20))
 		{
-			func_368("CONT_REQ_CD", 100, 0);
+			func_368("CONT_REQ_CD" /* GXT: Next request available in ~a~. */, 100, 0);
 			func_344(&Local_144);
 		}
 		if (BitTest(iLocal_142, 23))
 		{
-			func_368("BB_ADRUNN", 100, 0);
+			func_368("BB_ADRUNN" /* GXT: The cargo plane is already out making a delivery. */, 100, 0);
 		}
 		if (BitTest(iLocal_142, 30))
 		{
-			func_368("BB_BHRUNN", 100, 0);
+			func_368("BB_BHRUNN" /* GXT: There are no free helicopters to back you up. */, 100, 0);
 		}
 		if (BitTest(iLocal_142, 24))
 		{
-			func_368("BB_HPRUNN", 100, 0);
+			func_368("BB_HPRUNN" /* GXT: There are no free helicopters to make a pick up. */, 100, 0);
 		}
 		if (BitTest(iLocal_142, 25))
 		{
-			func_368("BB_HPWANT", 100, 0);
+			func_368("BB_HPWANT" /* GXT: The helicopter won't pick up a Wanted crook. */, 100, 0);
 		}
 		if (BitTest(iLocal_142, 26))
 		{
-			func_368("BB_HPUNSF", 100, 0);
+			func_368("BB_HPUNSF" /* GXT: Current location is unsafe for the helicopter to land. */, 100, 0);
 		}
 		if (BitTest(iLocal_142, 28))
 		{
-			func_368("BB_HPLOCK", 100, 0);
+			func_368("BB_HPLOCK" /* GXT: Helicopter pickup unlocks at Rank ~1~. */, 100, 0);
 			func_358(func_275(77));
 		}
 		if (BitTest(iLocal_142, 27))
 		{
-			func_368("BB_BRURUN", 100, 0);
+			func_368("BB_BRURUN" /* GXT: There are no more stashes in the area. */, 100, 0);
 		}
 		if (BitTest(iLocal_143, 1))
 		{
-			func_368("BB_BHAMMO", 100, 0);
+			func_368("BB_BHAMMO" /* GXT: Unavailable - you are using Ammo Drop. */, 100, 0);
 		}
 		if (BitTest(iLocal_143, 0))
 		{
-			func_368("BB_BHTAXI", 100, 0);
+			func_368("BB_BHTAXI" /* GXT: Unavailable - you are using Helicopter Pickup. */, 100, 0);
 		}
 		if (BitTest(iLocal_143, 3))
 		{
-			func_368("BB_BHONBHELI", 100, 0);
+			func_368("BB_BHONBHELI" /* GXT: You are already using a Backup Helicopter. */, 100, 0);
 		}
 		if (BitTest(iLocal_143, 5))
 		{
-			func_368("BB_BPBUSY", 100, 0);
+			func_368("BB_BPBUSY" /* GXT: The boat is currently busy. */, 100, 0);
 		}
 		if (BitTest(iLocal_143, 6))
 		{
-			func_368("BB_BPMOVI", 100, 0);
+			func_368("BB_BPMOVI" /* GXT: The boat can't get to you while you are moving. */, 100, 0);
 		}
 		if (BitTest(iLocal_143, 7))
 		{
-			func_368("BB_BPWANT", 100, 0);
+			func_368("BB_BPWANT" /* GXT: The boat won't pick up a Wanted crook. */, 100, 0);
 		}
 		if (BitTest(iLocal_143, 8))
 		{
-			func_368("BB_BPARDR", 100, 0);
+			func_368("BB_BPARDR" /* GXT: You are already at a boat drop location. */, 100, 0);
 		}
 		if (BitTest(iLocal_143, 9))
 		{
-			func_368("BB_BPLAKE", 100, 0);
+			func_368("BB_BPLAKE" /* GXT: The boat can't access this body of water. */, 100, 0);
 		}
 		if (BitTest(iLocal_143, 10))
 		{
-			func_368("BB_BPLAND", 100, 0);
+			func_368("BB_BPLAND" /* GXT: The boat is for picking up players stranded in the ocean. */, 100, 0);
 		}
 		if (BitTest(iLocal_143, 11))
 		{
-			func_368("BB_DES_PASS", 100, 0);
+			func_368("BB_DES_PASS" /* GXT: You can't add a bounty while Passive Mode is active. */, 100, 0);
 		}
 		if (BitTest(iLocal_143, 12))
 		{
-			func_368("MPCT_UNVLPASS", 100, 0);
+			func_368("MPCT_UNVLPASS" /* GXT: Unavailable in Passive Mode. */, 100, 0);
 		}
 		if (BitTest(iLocal_143, 21))
 		{
-			func_368("MPCT_PA_YAH0U", 100, 0);
+			func_368("MPCT_PA_YAH0U" /* GXT: Unavailable. This helicopter is already in use by another player. */, 100, 0);
 		}
 		if (BitTest(iLocal_143, 22))
 		{
-			func_368("MPCT_PA_IMPF", 100, 0);
+			func_368("MPCT_PA_IMPF" /* GXT: None of your vehicles are currently impounded. */, 100, 0);
 		}
 		if (func_117(&uLocal_145, 2000, 0))
 		{
@@ -9024,7 +9024,7 @@ void func_148()//Position - 0x96D1
 		{
 			Var14 = { func_94(func_149(2, Local_122.f_358), 0, 0) };
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_181, "SET_TEXT");
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CONT_REQ_CD2");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CONT_REQ_CD2" /* GXT: Mugging target cooldown ~a~. */);
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&Var14);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -15256,7 +15256,7 @@ void func_371()//Position - 0x1210C
 	int iVar1;
 	
 	func_81(0, 0);
-	func_80("YOHAN_TITLE");
+	func_80("YOHAN_TITLE" /* GXT: YOHAN */);
 	bVar0 = true;
 	func_78(1, 1, 0, 0, 0);
 	func_77(1, 2, 1, 1, 1);
@@ -15265,19 +15265,19 @@ void func_371()//Position - 0x1210C
 	{
 		bVar0 = false;
 	}
-	func_62(iVar1, "YOHN_OP1_T", 0, bVar0, 0, 0, 0);
+	func_62(iVar1, "YOHN_OP1_T" /* GXT: Request Nightclub Goods */, 0, bVar0, 0, 0, 0);
 	func_60(-1);
 	if (func_1120())
 	{
 		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 		{
-			func_374(237, "BB_SELECT", -1, 0);
-			func_374(238, "BB_BACK", -1, 0);
+			func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+			func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 		}
 		else
 		{
-			func_373(176, "BB_SELECT", -1);
-			func_373(177, "BB_BACK", -1);
+			func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+			func_373(177, "BB_BACK" /* GXT: Back */, -1);
 		}
 		MISC::SET_BIT(&(Local_122.f_359), 6);
 	}
@@ -15450,12 +15450,12 @@ void func_380()//Position - 0x12586
 		switch (Local_122.f_181.f_69)
 		{
 			case 0:
-				func_368("AG14_OP1_D", 0, 0);
+				func_368("AG14_OP1_D" /* GXT: Request Bunker Research.~n~Current research progress: ~1~% */, 0, 0);
 				func_358(func_390(PLAYER::PLAYER_ID(), func_395(PLAYER::PLAYER_ID(), 5)));
 				break;
 			
 			case 1:
-				func_368("AG14_OP2_D", 100, 0);
+				func_368("AG14_OP2_D" /* GXT: Request a vehicle to be delivered nearby. */, 100, 0);
 				break;
 		}
 	}
@@ -15466,39 +15466,39 @@ void func_380()//Position - 0x12586
 			case 0:
 				if (!func_386(PLAYER::PLAYER_ID(), func_395(PLAYER::PLAYER_ID(), 5)))
 				{
-					func_368("AG14_OP1_D1", 0, 0);
+					func_368("AG14_OP1_D1" /* GXT: Unavailable. Complete the Bunker setup to start Bunker Research. */, 0, 0);
 				}
 				else if (func_385())
 				{
 					Local_144 = { func_94(func_383(), 0, 0) };
-					func_368("CONT_REQ_CD", 0, 0);
+					func_368("CONT_REQ_CD" /* GXT: Next request available in ~a~. */, 0, 0);
 					func_344(&Local_144);
 				}
 				else
 				{
-					func_368("AG14_NA", 100, 0);
+					func_368("AG14_NA" /* GXT: This request is not currently available. */, 100, 0);
 				}
 				break;
 			
 			case 1:
 				if (Global_1978980.f_2 != 0)
 				{
-					func_368("AG14_OP2_D1", 100, 0);
+					func_368("AG14_OP2_D1" /* GXT: Unavailable. Vehicle already in use. */, 100, 0);
 				}
 				else if (func_382())
 				{
 					Local_144 = { func_94(func_381(), 0, 0) };
-					func_368("CONT_REQ_CD", 0, 0);
+					func_368("CONT_REQ_CD" /* GXT: Next request available in ~a~. */, 0, 0);
 					func_344(&Local_144);
 				}
 				else
 				{
-					func_368("AG14_NA", 100, 0);
+					func_368("AG14_NA" /* GXT: This request is not currently available. */, 100, 0);
 				}
 				break;
 			
 			default:
-				func_368("AG14_NA", 100, 0);
+				func_368("AG14_NA" /* GXT: This request is not currently available. */, 100, 0);
 				break;
 			}
 	}
@@ -15804,7 +15804,7 @@ void func_396()//Position - 0x12B11
 	int iVar1;
 	
 	func_81(0, 0);
-	func_80("AG14_TITLE");
+	func_80("AG14_TITLE" /* GXT: AGENT 14 */);
 	bVar0 = true;
 	func_78(1, 1, 0, 0, 0);
 	func_77(1, 2, 1, 1, 1);
@@ -15813,7 +15813,7 @@ void func_396()//Position - 0x12B11
 	{
 		bVar0 = false;
 	}
-	func_62(iVar1, "AG14_OP1_T", 0, bVar0, 0, 0, 0);
+	func_62(iVar1, "AG14_OP1_T" /* GXT: Request Bunker Research */, 0, bVar0, 0, 0, 0);
 	bVar0 = true;
 	iVar1++;
 	if ((Global_1978980.f_2 != 0 || func_382()) || func_270(PLAYER::PLAYER_ID(), 1, 1))
@@ -15821,7 +15821,7 @@ void func_396()//Position - 0x12B11
 		bVar0 = false;
 	}
 	func_62(iVar1, "STRING", 1, bVar0, 0, 0, 0);
-	func_399("AG14_OP2_T", 0);
+	func_399("AG14_OP2_T" /* GXT: Request Transportation */, 0);
 	func_62(iVar1, "STRING", 1, bVar0, 0, 0, 0);
 	func_399(func_397(), 0);
 	func_60(-1);
@@ -15831,13 +15831,13 @@ void func_396()//Position - 0x12B11
 	{
 		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 		{
-			func_374(237, "BB_SELECT", -1, 0);
-			func_374(238, "BB_BACK", -1, 0);
+			func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+			func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 		}
 		else
 		{
-			func_373(176, "BB_SELECT", -1);
-			func_373(177, "BB_BACK", -1);
+			func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+			func_373(177, "BB_BACK" /* GXT: Back */, -1);
 		}
 		MISC::SET_BIT(&(Local_122.f_359), 6);
 	}
@@ -16150,12 +16150,12 @@ void func_404()//Position - 0x133AA
 		switch (Local_122.f_181.f_69)
 		{
 			case 0:
-				func_368("TONY_OP1_D", 0, 0);
+				func_368("TONY_OP1_D" /* GXT: Request Club Management.~n~Current Nightclub popularity: ~1~% */, 0, 0);
 				func_358(SYSTEM::ROUND(func_410()));
 				break;
 			
 			case 1:
-				func_368("TONY_OP2_D", 100, 0);
+				func_368("TONY_OP2_D" /* GXT: Request a Nightclub Limo to be delivered nearby. */, 100, 0);
 				break;
 		}
 	}
@@ -16166,39 +16166,39 @@ void func_404()//Position - 0x133AA
 			case 0:
 				if (!func_378(PLAYER::PLAYER_ID()))
 				{
-					func_368("TONY_OP1_D1", 0, 0);
+					func_368("TONY_OP1_D1" /* GXT: You must be a VIP, CEO or MC President to make this request. */, 0, 0);
 				}
 				else if (func_409())
 				{
 					Local_144 = { func_94(func_407(Global_1958659.f_30, func_408(), 0), 0, 0) };
-					func_368("CONT_REQ_CD", 0, 0);
+					func_368("CONT_REQ_CD" /* GXT: Next request available in ~a~. */, 0, 0);
 					func_344(&Local_144);
 				}
 				else
 				{
-					func_368("TONY_NA", 100, 0);
+					func_368("TONY_NA" /* GXT: This request is not currently available. */, 100, 0);
 				}
 				break;
 			
 			case 1:
 				if (Global_1978966.f_2 != 0)
 				{
-					func_368("TONY_OP2_D1", 100, 0);
+					func_368("TONY_OP2_D1" /* GXT: Unavailable. The Nightclub Limo is already in use. */, 100, 0);
 				}
 				else if (func_406())
 				{
 					Local_144 = { func_94(func_405(), 0, 0) };
-					func_368("CONT_REQ_CD", 0, 0);
+					func_368("CONT_REQ_CD" /* GXT: Next request available in ~a~. */, 0, 0);
 					func_344(&Local_144);
 				}
 				else
 				{
-					func_368("TONY_NA", 100, 0);
+					func_368("TONY_NA" /* GXT: This request is not currently available. */, 100, 0);
 				}
 				break;
 			
 			default:
-				func_368("TONY_NA", 100, 0);
+				func_368("TONY_NA" /* GXT: This request is not currently available. */, 100, 0);
 				break;
 			}
 	}
@@ -16283,7 +16283,7 @@ void func_412()//Position - 0x135F5
 	int iVar1;
 	
 	func_81(0, 0);
-	func_80("TONY_TITLE");
+	func_80("TONY_TITLE" /* GXT: TONY */);
 	bVar0 = true;
 	func_78(1, 1, 0, 0, 0);
 	func_77(1, 2, 1, 1, 1);
@@ -16292,7 +16292,7 @@ void func_412()//Position - 0x135F5
 	{
 		bVar0 = false;
 	}
-	func_62(iVar1, "TONY_OP1_T", 0, bVar0, 0, 0, 0);
+	func_62(iVar1, "TONY_OP1_T" /* GXT: Request Club Management */, 0, bVar0, 0, 0, 0);
 	bVar0 = true;
 	iVar1++;
 	if (((Global_1978966.f_2 != 0 || func_406()) || func_416()) || func_270(PLAYER::PLAYER_ID(), 1, 1))
@@ -16300,7 +16300,7 @@ void func_412()//Position - 0x135F5
 		bVar0 = false;
 	}
 	func_62(iVar1, "STRING", 1, bVar0, 0, 0, 0);
-	func_399("TONY_OP2_T", 0);
+	func_399("TONY_OP2_T" /* GXT: Request Limo */, 0);
 	func_62(iVar1, "STRING", 1, bVar0, 0, 0, 0);
 	func_399(func_413(), 0);
 	func_60(-1);
@@ -16310,13 +16310,13 @@ void func_412()//Position - 0x135F5
 	{
 		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 		{
-			func_374(237, "BB_SELECT", -1, 0);
-			func_374(238, "BB_BACK", -1, 0);
+			func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+			func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 		}
 		else
 		{
-			func_373(176, "BB_SELECT", -1);
-			func_373(177, "BB_BACK", -1);
+			func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+			func_373(177, "BB_BACK" /* GXT: Back */, -1);
 		}
 		MISC::SET_BIT(&(Local_122.f_359), 6);
 	}
@@ -16422,23 +16422,23 @@ void func_420()//Position - 0x138D0
 		switch (Local_122.f_181.f_69)
 		{
 			case 0:
-				func_368("FRANK_OP1_D", 100, 0);
+				func_368("FRANK_OP1_D" /* GXT: Request Security Contract. */, 100, 0);
 				break;
 			
 			case 1:
-				func_368("FRANK_OP2_D", 100, 0);
+				func_368("FRANK_OP2_D" /* GXT: Request Payphone Hit. */, 100, 0);
 				break;
 			
 			case 2:
-				func_368("FRANK_OP3_D", 100, 0);
+				func_368("FRANK_OP3_D" /* GXT: Request that the Company SUV be delivered nearby. */, 100, 0);
 				break;
 			
 			case 3:
-				func_368("FRANK_OP4_D", 100, 0);
+				func_368("FRANK_OP4_D" /* GXT: Request the Company SUV to return you to your Agency. */, 100, 0);
 				break;
 			
 			case 4:
-				func_368("FRANK_OP5_D", 100, 0);
+				func_368("FRANK_OP5_D" /* GXT: Request a Supply Stash containing ammo, health and armor. */, 100, 0);
 				break;
 		}
 	}
@@ -16449,18 +16449,18 @@ void func_420()//Position - 0x138D0
 			case 0:
 				if (!func_378(PLAYER::PLAYER_ID()))
 				{
-					func_368("FRANK_OP2_D3", 0, 0);
+					func_368("FRANK_OP2_D3" /* GXT: You must be a VIP, CEO or MC President to make this request. */, 0, 0);
 				}
 				else if (func_432())
 				{
 					iVar0 = (Global_262145.f_31689 - func_150(&(Global_1977048.f_14), 0, 0));
 					Local_144 = { func_94(iVar0, 0, 0) };
-					func_368("CONT_REQ_CD", 0, 0);
+					func_368("CONT_REQ_CD" /* GXT: Next request available in ~a~. */, 0, 0);
 					func_344(&Local_144);
 				}
 				else
 				{
-					func_368("FRANK_NA", 100, 0);
+					func_368("FRANK_NA" /* GXT: This request is not currently available. */, 100, 0);
 				}
 				break;
 			
@@ -16468,27 +16468,27 @@ void func_420()//Position - 0x138D0
 				if (!func_431())
 				{
 					Local_144 = { func_94(func_429(), 0, 0) };
-					func_368("CONT_REQ_CD", 0, 0);
+					func_368("CONT_REQ_CD" /* GXT: Next request available in ~a~. */, 0, 0);
 					func_344(&Local_144);
 				}
 				else if (!func_428() || !func_426(1))
 				{
-					func_368("FRANK_OP2_D2", 100, 0);
+					func_368("FRANK_OP2_D2" /* GXT: Unavailable. Become a leader and complete a hit for Franklin to unlock. */, 100, 0);
 				}
 				else
 				{
-					func_368("FRANK_NA", 100, 0);
+					func_368("FRANK_NA" /* GXT: This request is not currently available. */, 100, 0);
 				}
 				break;
 			
 			case 2:
 				if (((Global_1964720 != 0 || BitTest(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_5, 21)) || func_425(PLAYER::PLAYER_ID())) || func_423(PLAYER::PLAYER_ID()))
 				{
-					func_368("FRANK_NA_2", 100, 0);
+					func_368("FRANK_NA_2" /* GXT: The Company SUV is already in use. */, 100, 0);
 				}
 				else
 				{
-					func_368("FRANK_NA", 100, 0);
+					func_368("FRANK_NA" /* GXT: This request is not currently available. */, 100, 0);
 				}
 				break;
 			
@@ -16496,16 +16496,16 @@ void func_420()//Position - 0x138D0
 				if (func_421(76) > 0)
 				{
 					Local_144 = { func_94(func_421(76), 0, 0) };
-					func_368("CONT_REQ_CD", 0, 0);
+					func_368("CONT_REQ_CD" /* GXT: Next request available in ~a~. */, 0, 0);
 					func_344(&Local_144);
 				}
 				else if (((Global_1964720 != 0 || BitTest(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_5, 21)) || func_425(PLAYER::PLAYER_ID())) || func_423(PLAYER::PLAYER_ID()))
 				{
-					func_368("FRANK_NA_2", 100, 0);
+					func_368("FRANK_NA_2" /* GXT: The Company SUV is already in use. */, 100, 0);
 				}
 				else
 				{
-					func_368("FRANK_NA", 100, 0);
+					func_368("FRANK_NA" /* GXT: This request is not currently available. */, 100, 0);
 				}
 				break;
 			
@@ -16513,17 +16513,17 @@ void func_420()//Position - 0x138D0
 				if (func_421(72) > 0)
 				{
 					Local_144 = { func_94(func_421(72), 0, 0) };
-					func_368("CONT_REQ_CD", 0, 0);
+					func_368("CONT_REQ_CD" /* GXT: Next request available in ~a~. */, 0, 0);
 					func_344(&Local_144);
 				}
 				else
 				{
-					func_368("FRANK_NA", 100, 0);
+					func_368("FRANK_NA" /* GXT: This request is not currently available. */, 100, 0);
 				}
 				break;
 			
 			default:
-				func_368("FRANK_NA", 100, 0);
+				func_368("FRANK_NA" /* GXT: This request is not currently available. */, 100, 0);
 				break;
 			}
 	}
@@ -16623,7 +16623,7 @@ void func_433()//Position - 0x13CC8
 	int iVar2;
 	
 	func_81(0, 0);
-	func_80("FRANK_TITLE");
+	func_80("FRANK_TITLE" /* GXT: FRANKLIN */);
 	bVar0 = true;
 	func_78(1, 1, 0, 0, 0);
 	func_77(1, 2, 1, 1, 1);
@@ -16632,28 +16632,28 @@ void func_433()//Position - 0x13CC8
 	{
 		bVar0 = false;
 	}
-	func_62(iVar1, "FRANK_OP1_T", 0, bVar0, 0, 0, 0);
+	func_62(iVar1, "FRANK_OP1_T" /* GXT: Request Security Contract */, 0, bVar0, 0, 0, 0);
 	bVar0 = true;
 	if ((((!func_431() || !func_473()) || !func_428()) || !func_426(1)) || BitTest(Global_1964716, 3))
 	{
 		bVar0 = false;
 	}
 	iVar1++;
-	func_62(iVar1, "FRANK_OP2_T", 0, bVar0, 0, 0, 0);
+	func_62(iVar1, "FRANK_OP2_T" /* GXT: Request Payphone Hit */, 0, bVar0, 0, 0, 0);
 	bVar0 = true;
 	iVar1++;
 	if ((((Global_1964720 != 0 || BitTest(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_5, 21)) || func_425(PLAYER::PLAYER_ID())) || func_423(PLAYER::PLAYER_ID())) || BitTest(Global_1964716, 4))
 	{
 		bVar0 = false;
 	}
-	func_62(iVar1, "FRANK_OP3_T", 0, bVar0, 0, 0, 0);
+	func_62(iVar1, "FRANK_OP3_T" /* GXT: Company SUV */, 0, bVar0, 0, 0, 0);
 	bVar0 = true;
 	iVar1++;
 	if (((((!func_436() || Global_1964720 != 0) || BitTest(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_5, 21)) || func_425(PLAYER::PLAYER_ID())) || func_423(PLAYER::PLAYER_ID())) || BitTest(Global_1964716, 5))
 	{
 		bVar0 = false;
 	}
-	func_62(iVar1, "FRANK_OP4_T", 0, bVar0, 0, 0, 0);
+	func_62(iVar1, "FRANK_OP4_T" /* GXT: SUV Service */, 0, bVar0, 0, 0, 0);
 	bVar0 = true;
 	iVar1++;
 	iVar2 = func_421(72);
@@ -16665,21 +16665,21 @@ void func_433()//Position - 0x13CC8
 	{
 		bVar0 = false;
 	}
-	func_62(iVar1, "FRANK_OP5_T", 0, bVar0, 0, 0, 0);
-	func_62(iVar1, "MPCT_CASH", 1, bVar0, 0, 0, 0);
+	func_62(iVar1, "FRANK_OP5_T" /* GXT: Supply Stash */, 0, bVar0, 0, 0, 0);
+	func_62(iVar1, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar0, 0, 0, 0);
 	func_434(func_86(72), 0);
 	func_60(-1);
 	if (func_1120())
 	{
 		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 		{
-			func_374(237, "BB_SELECT", -1, 0);
-			func_374(238, "BB_BACK", -1, 0);
+			func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+			func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 		}
 		else
 		{
-			func_373(176, "BB_SELECT", -1);
-			func_373(177, "BB_BACK", -1);
+			func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+			func_373(177, "BB_BACK" /* GXT: Back */, -1);
 		}
 		MISC::SET_BIT(&(Local_122.f_359), 6);
 	}
@@ -18219,23 +18219,23 @@ void func_499()//Position - 0x167A4
 			case 0:
 				if (func_376(1) && !func_501(1))
 				{
-					func_368("IMANI_OOS_D_2", 100, 0);
+					func_368("IMANI_OOS_D_2" /* GXT: Activate a ~1~m area where you and members of your Organization will be hidden from the radar of other players. */, 100, 0);
 					func_358(Global_262145.f_31768);
 				}
 				else if (func_376(1) && func_501(1))
 				{
-					func_368("IMANI_OOS_D_3", 100, 0);
+					func_368("IMANI_OOS_D_3" /* GXT: Activate a ~1~m area where you and members of your Motorcycle Club will be hidden from the radar of other players. */, 100, 0);
 					func_358(Global_262145.f_31768);
 				}
 				else
 				{
-					func_368("IMANI_OOS_D_1", 100, 0);
+					func_368("IMANI_OOS_D_1" /* GXT: Activate a ~1~m area where you will be hidden from the radar of other players. */, 100, 0);
 					func_358(Global_262145.f_31768);
 				}
 				break;
 			
 			case 1:
-				func_368("IMANI_SMC_D", 100, 0);
+				func_368("IMANI_SMC_D" /* GXT: Source a nearby motorcycle equipped with bulletproof tires. */, 100, 0);
 				break;
 		}
 	}
@@ -18247,16 +18247,16 @@ void func_499()//Position - 0x167A4
 				if (func_421(74) > 0)
 				{
 					Local_144 = { func_94(func_421(74), 0, 0) };
-					func_368("CONT_REQ_CD", 0, 0);
+					func_368("CONT_REQ_CD" /* GXT: Next request available in ~a~. */, 0, 0);
 					func_344(&Local_144);
 				}
 				else if (func_376(0))
 				{
-					func_368("PIM_HTTV17", 100, 0);
+					func_368("PIM_HTTV17" /* GXT: Unavailable while working for another player. */, 100, 0);
 				}
 				else
 				{
-					func_368("IMANI_NA", 100, 0);
+					func_368("IMANI_NA" /* GXT: This request is not currently available. */, 100, 0);
 				}
 				break;
 			
@@ -18264,21 +18264,21 @@ void func_499()//Position - 0x167A4
 				if (func_421(73) > 0)
 				{
 					Local_144 = { func_94(func_421(73), 0, 0) };
-					func_368("CONT_REQ_CD", 0, 0);
+					func_368("CONT_REQ_CD" /* GXT: Next request available in ~a~. */, 0, 0);
 					func_344(&Local_144);
 				}
 				else if (func_500())
 				{
-					func_368("IMANI_IN_USE", 100, 0);
+					func_368("IMANI_IN_USE" /* GXT: You already have an active motorcycle. */, 100, 0);
 				}
 				else
 				{
-					func_368("IMANI_NA", 100, 0);
+					func_368("IMANI_NA" /* GXT: This request is not currently available. */, 100, 0);
 				}
 				break;
 			
 			default:
-				func_368("IMANI_NA", 100, 0);
+				func_368("IMANI_NA" /* GXT: This request is not currently available. */, 100, 0);
 				break;
 			}
 	}
@@ -18345,7 +18345,7 @@ void func_505()//Position - 0x169FD
 	int iVar2;
 	
 	func_81(0, 0);
-	func_80("IMANI_TITLE");
+	func_80("IMANI_TITLE" /* GXT: IMANI */);
 	bVar0 = true;
 	func_78(1, 1, 0, 0, 0);
 	func_77(1, 2, 1, 1, 1);
@@ -18355,8 +18355,8 @@ void func_505()//Position - 0x169FD
 	{
 		bVar0 = false;
 	}
-	func_62(iVar1, "IMANI_OOS_T", 0, bVar0, 0, 0, 0);
-	func_62(iVar1, "MPCT_CASH", 1, bVar0, 0, 0, 0);
+	func_62(iVar1, "IMANI_OOS_T" /* GXT: Out of Sight */, 0, bVar0, 0, 0, 0);
+	func_62(iVar1, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar0, 0, 0, 0);
 	func_434(func_86(74), 0);
 	bVar0 = true;
 	iVar1++;
@@ -18365,21 +18365,21 @@ void func_505()//Position - 0x169FD
 	{
 		bVar0 = false;
 	}
-	func_62(iVar1, "IMANI_SMC_T", 0, bVar0, 0, 0, 0);
-	func_62(iVar1, "MPCT_CASH", 1, bVar0, 0, 0, 0);
+	func_62(iVar1, "IMANI_SMC_T" /* GXT: Source Motorcycle */, 0, bVar0, 0, 0, 0);
+	func_62(iVar1, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar0, 0, 0, 0);
 	func_434(func_86(73), 0);
 	func_60(-1);
 	if (func_1120())
 	{
 		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 		{
-			func_374(237, "BB_SELECT", -1, 0);
-			func_374(238, "BB_BACK", -1, 0);
+			func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+			func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 		}
 		else
 		{
-			func_373(176, "BB_SELECT", -1);
-			func_373(177, "BB_BACK", -1);
+			func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+			func_373(177, "BB_BACK" /* GXT: Back */, -1);
 		}
 		MISC::SET_BIT(&(Local_122.f_359), 6);
 	}
@@ -18402,7 +18402,7 @@ void func_506()//Position - 0x16B6A
 		if (!BitTest(Local_122.f_359, 4) || PAD::HAVE_CONTROLS_CHANGED(2))
 		{
 			func_81(0, 0);
-			func_80("SES_FIRST_0");
+			func_80("SES_FIRST_0" /* GXT: SESSANTA */);
 			MISC::CLEAR_BIT(&bLocal_169, 2);
 			func_78(1, 1, 0, 0, 0);
 			func_77(1, 2, 1, 1, 1);
@@ -18415,27 +18415,27 @@ void func_506()//Position - 0x16B6A
 				{
 					bVar1 = false;
 				}
-				func_512(69, iVar0, "TUN_SPHONE_CANCEL", bVar1);
+				func_512(69, iVar0, "TUN_SPHONE_CANCEL" /* GXT: Cancel Contract Job */, bVar1);
 				if (func_86(69) > 0)
 				{
-					func_62(iVar0, "MPCT_CASH", 1, bVar1, 0, 0, 0);
+					func_62(iVar0, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar1, 0, 0, 0);
 					func_434(func_86(69), 0);
 				}
 				if (bVar2)
 				{
-					func_368("TUN_SPHONE_H3", 100, 0);
+					func_368("TUN_SPHONE_H3" /* GXT: Cancel your current Contract Job */, 100, 0);
 				}
 				else
 				{
-					func_368("TUN_SPHONE_H2", 100, 0);
+					func_368("TUN_SPHONE_H2" /* GXT: Unavailable: No Contract Job currently active. */, 100, 0);
 				}
 			}
 			else
 			{
-				func_62(iVar0, "TUN_SPHONE_CANCEL", 0, 1, 0, 0, 0);
+				func_62(iVar0, "TUN_SPHONE_CANCEL" /* GXT: Cancel Contract Job */, 0, 1, 0, 0, 0);
 				func_62(iVar0, "", 1, 1, 0, 0, 0);
 				func_511(15, 0);
-				func_368("TUN_SPHONE_H1", 100, 0);
+				func_368("TUN_SPHONE_H1" /* GXT: This will unlock when you have completed any Contract Job. */, 100, 0);
 			}
 			iVar0++;
 			if (func_510(PLAYER::PLAYER_ID()))
@@ -18443,14 +18443,14 @@ void func_506()//Position - 0x16B6A
 				if (func_507(PLAYER::PLAYER_ID()))
 				{
 					bVar1 = ((!BitTest(uLocal_196, 0) && !BitTest(uLocal_196, 1)) && !BitTest(uLocal_196, 2));
-					func_512(70, iVar0, "TUN_SPHONE_EL", bVar1);
-					func_368("TUN_SPHONE_H4", 100, 0);
+					func_512(70, iVar0, "TUN_SPHONE_EL" /* GXT: Request Exotic Exports List */, bVar1);
+					func_368("TUN_SPHONE_H4" /* GXT: Request the list of Exotic Exports vehicles you need to acquire. */, 100, 0);
 				}
 				else
 				{
-					func_62(iVar0, "TUN_SPHONE_EL", 0, 0, 0, 0, 0);
+					func_62(iVar0, "TUN_SPHONE_EL" /* GXT: Request Exotic Exports List */, 0, 0, 0, 0, 0);
 					func_62(iVar0, "", 1, 0, 0, 0, 0);
-					func_368("TUN_SPHONE_H5", 100, 0);
+					func_368("TUN_SPHONE_H5" /* GXT: All Exotic Exports vehicles already delivered. */, 100, 0);
 				}
 				iVar0++;
 			}
@@ -18461,13 +18461,13 @@ void func_506()//Position - 0x16B6A
 			{
 				if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 				{
-					func_374(237, "BB_SELECT", -1, 0);
-					func_374(238, "BB_BACK", -1, 0);
+					func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+					func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 				}
 				else
 				{
-					func_373(176, "BB_SELECT", -1);
-					func_373(177, "BB_BACK", -1);
+					func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+					func_373(177, "BB_BACK" /* GXT: Back */, -1);
 				}
 				MISC::SET_BIT(&(Local_122.f_359), 6);
 			}
@@ -18480,16 +18480,16 @@ void func_506()//Position - 0x16B6A
 			{
 				if (func_515(0))
 				{
-					func_368("TUN_SPHONE_H3", 100, 0);
+					func_368("TUN_SPHONE_H3" /* GXT: Cancel your current Contract Job */, 100, 0);
 				}
 				else
 				{
-					func_368("TUN_SPHONE_H2", 100, 0);
+					func_368("TUN_SPHONE_H2" /* GXT: Unavailable: No Contract Job currently active. */, 100, 0);
 				}
 			}
 			else
 			{
-				func_368("TUN_SPHONE_H1", 100, 0);
+				func_368("TUN_SPHONE_H1" /* GXT: This will unlock when you have completed any Contract Job. */, 100, 0);
 			}
 			func_123();
 		}
@@ -18754,7 +18754,7 @@ void func_521()//Position - 0x1721E
 	}
 	else if (BitTest(iLocal_193, 0))
 	{
-		HUD::SET_WARNING_MESSAGE_WITH_HEADER("HUD_CONNPROB", "TUN_SPHONE_CC", 36, 0, false, -1, 0, 0, true, 0);
+		HUD::SET_WARNING_MESSAGE_WITH_HEADER("HUD_CONNPROB" /* GXT: alert */, "TUN_SPHONE_CC" /* GXT: Are you sure you want to cancel your Contract Job? */, 36, 0, false, -1, 0, 0, true, 0);
 		if (func_117(&uLocal_194, 1000, 0))
 		{
 			if (func_538(201))
@@ -19231,7 +19231,7 @@ void func_540()//Position - 0x17A7C
 		if (!BitTest(Local_122.f_359, 4) || PAD::HAVE_CONTROLS_CHANGED(2))
 		{
 			func_81(0, 0);
-			func_80("P_FIRST_0");
+			func_80("P_FIRST_0" /* GXT: PAVEL */);
 			MISC::CLEAR_BIT(&bLocal_169, 2);
 			func_78(1, 1, 0, 0, 0);
 			func_77(1, 2, 1, 1, 1);
@@ -19244,19 +19244,19 @@ void func_540()//Position - 0x17A7C
 			}
 			if (func_541(PLAYER::PLAYER_ID()))
 			{
-				func_512(68, iVar0, "CSH_PPHONE_CANCEL", bVar1);
+				func_512(68, iVar0, "CSH_PPHONE_CANCEL" /* GXT: Cancel The Cayo Perico Heist */, bVar1);
 				if (func_86(68) > 0)
 				{
-					func_62(iVar0, "MPCT_CASH", 1, bVar1, 0, 0, 0);
+					func_62(iVar0, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar1, 0, 0, 0);
 					func_434(func_86(68), 0);
 				}
 				if (bVar1)
 				{
-					func_368("CSH_PPHONE_H3", 100, 0);
+					func_368("CSH_PPHONE_H3" /* GXT: Cancel your current progress on The Cayo Perico Heist. */, 100, 0);
 				}
 				else if (!bVar2)
 				{
-					func_368("CSH_PPHONE_H2", 100, 0);
+					func_368("CSH_PPHONE_H2" /* GXT: Unavailable: The Cayo Perico Heist is not currently active. */, 100, 0);
 				}
 				else
 				{
@@ -19265,10 +19265,10 @@ void func_540()//Position - 0x17A7C
 			}
 			else
 			{
-				func_62(iVar0, "CSH_PPHONE_CANCEL", 0, bVar1, 0, 0, 0);
+				func_62(iVar0, "CSH_PPHONE_CANCEL" /* GXT: Cancel The Cayo Perico Heist */, 0, bVar1, 0, 0, 0);
 				func_62(iVar0, "", 1, 1, 0, 0, 0);
 				func_511(15, 0);
-				func_368("CSH_PPHONE_H1", 100, 0);
+				func_368("CSH_PPHONE_H1" /* GXT: This will unlock when you have completed The Cayo Perico Heist. */, 100, 0);
 			}
 			iVar0++;
 			func_60(-1);
@@ -19276,13 +19276,13 @@ void func_540()//Position - 0x17A7C
 			{
 				if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 				{
-					func_374(237, "BB_SELECT", -1, 0);
-					func_374(238, "BB_BACK", -1, 0);
+					func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+					func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 				}
 				else
 				{
-					func_373(176, "BB_SELECT", -1);
-					func_373(177, "BB_BACK", -1);
+					func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+					func_373(177, "BB_BACK" /* GXT: Back */, -1);
 				}
 				MISC::SET_BIT(&(Local_122.f_359), 6);
 			}
@@ -19295,16 +19295,16 @@ void func_540()//Position - 0x17A7C
 			{
 				if (func_549(1))
 				{
-					func_368("CSH_PPHONE_H3", 100, 0);
+					func_368("CSH_PPHONE_H3" /* GXT: Cancel your current progress on The Cayo Perico Heist. */, 100, 0);
 				}
 				else
 				{
-					func_368("CSH_PPHONE_H2", 100, 0);
+					func_368("CSH_PPHONE_H2" /* GXT: Unavailable: The Cayo Perico Heist is not currently active. */, 100, 0);
 				}
 			}
 			else
 			{
-				func_368("CSH_PPHONE_H1", 100, 0);
+				func_368("CSH_PPHONE_H1" /* GXT: This will unlock when you have completed The Cayo Perico Heist. */, 100, 0);
 			}
 			func_123();
 		}
@@ -19435,7 +19435,7 @@ void func_551()//Position - 0x17DCF
 	}
 	else if (BitTest(uLocal_190, 0))
 	{
-		HUD::SET_WARNING_MESSAGE_WITH_HEADER("HUD_CONNPROB", "MPCT_CNCW", 36, 0, false, -1, 0, 0, true, 0);
+		HUD::SET_WARNING_MESSAGE_WITH_HEADER("HUD_CONNPROB" /* GXT: alert */, "MPCT_CNCW" /* GXT: Are you sure you want to cancel this Heist? If you have paid a setup cost it won't be refunded. */, 36, 0, false, -1, 0, 0, true, 0);
 		if (func_117(&uLocal_176, 1000, 0))
 		{
 			if (func_538(201))
@@ -20643,14 +20643,14 @@ void func_581()//Position - 0x19807
 {
 	if (Local_122.f_181.f_69 == 6)
 	{
-		func_368("MPCT_EXIT", 0, 0);
+		func_368("MPCT_EXIT" /* GXT: Close down the menu. */, 0, 0);
 	}
 	else if (!BitTest(uLocal_186, 2))
 	{
 		if (func_421(60) > 0)
 		{
 			Local_144 = { func_94(func_421(60), 0, 0) };
-			func_368("CONT_REQ_CD", 0, 0);
+			func_368("CONT_REQ_CD" /* GXT: Next request available in ~a~. */, 0, 0);
 			func_344(&Local_144);
 		}
 		else
@@ -20658,11 +20658,11 @@ void func_581()//Position - 0x19807
 			switch (func_582())
 			{
 				case 1:
-					func_368("MPCT_CASINO_VD2", 0, 0);
+					func_368("MPCT_CASINO_VD2" /* GXT: A luxury car has already been sent to your location. */, 0, 0);
 					break;
 				
 				default:
-					func_368("MPCT_CASINO_VD1", 0, 0);
+					func_368("MPCT_CASINO_VD1" /* GXT: You cannot request a luxury car at this time. */, 0, 0);
 					break;
 				}
 		}
@@ -20672,31 +20672,31 @@ void func_581()//Position - 0x19807
 		switch (Local_122.f_181.f_69)
 		{
 			case 0:
-				func_368("MPCT_REQCOGH", 0, 0);
+				func_368("MPCT_REQCOGH" /* GXT: Request a Cognoscenti Cabrio. */, 0, 0);
 				break;
 			
 			case 1:
-				func_368("MPCT_REQWINH", 0, 0);
+				func_368("MPCT_REQWINH" /* GXT: Request a Enus Windsor. */, 0, 0);
 				break;
 			
 			case 2:
-				func_368("MPCT_REQFUGH", 0, 0);
+				func_368("MPCT_REQFUGH" /* GXT: Request a Fugitive. */, 0, 0);
 				break;
 			
 			case 3:
-				func_368("MPCT_REQSUPH", 0, 0);
+				func_368("MPCT_REQSUPH" /* GXT: Request a Super Diamond. */, 0, 0);
 				break;
 			
 			case 4:
-				func_368("MPCT_REQDUBH", 0, 0);
+				func_368("MPCT_REQDUBH" /* GXT: Request a Dubsta. */, 0, 0);
 				break;
 			
 			case 5:
-				func_368("MPCT_REQFELH", 0, 0);
+				func_368("MPCT_REQFELH" /* GXT: Request a Feltzer. */, 0, 0);
 				break;
 			
 			default:
-				func_368("MPCT_PERVEHc", 0, 0);
+				func_368("MPCT_PERVEHc" /* GXT: Request Delivery? */, 0, 0);
 				break;
 			}
 	}
@@ -20712,27 +20712,27 @@ int func_583()//Position - 0x1992C
 	bool bVar0;
 	
 	func_81(0, 0);
-	func_80("MPCT_CASINO_V");
+	func_80("MPCT_CASINO_V" /* GXT: REQUEST VEHICLE */);
 	func_78(1, 1, 0, 0, 0);
 	func_77(1, 2, 1, 1, 1);
 	func_76(0, 0, 0, 0, 0);
 	bVar0 = BitTest(uLocal_186, 2);
-	func_62(0, "COGCABRI", 0, bVar0, 0, 0, 0);
-	func_62(1, "WINDSOR", 0, bVar0, 0, 0, 0);
-	func_62(2, "FUGITIVE", 0, bVar0, 0, 0, 0);
-	func_62(3, "SUPERD", 0, bVar0, 0, 0, 0);
-	func_62(4, "DUBSTA", 0, bVar0, 0, 0, 0);
-	func_62(5, "FELTZER", 0, bVar0, 0, 0, 0);
+	func_62(0, "COGCABRI" /* GXT: Cognoscenti Cabrio */, 0, bVar0, 0, 0, 0);
+	func_62(1, "WINDSOR" /* GXT: Windsor */, 0, bVar0, 0, 0, 0);
+	func_62(2, "FUGITIVE" /* GXT: Fugitive */, 0, bVar0, 0, 0, 0);
+	func_62(3, "SUPERD" /* GXT: Super Diamond */, 0, bVar0, 0, 0, 0);
+	func_62(4, "DUBSTA" /* GXT: Dubsta */, 0, bVar0, 0, 0, 0);
+	func_62(5, "FELTZER" /* GXT: Feltzer */, 0, bVar0, 0, 0, 0);
 	func_60(-1);
 	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 	{
-		func_374(237, "BB_SELECT", -1, 0);
-		func_374(238, "BB_BACK", -1, 0);
+		func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+		func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 	}
 	else
 	{
-		func_373(176, "BB_SELECT", -1);
-		func_373(177, "BB_BACK", -1);
+		func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+		func_373(177, "BB_BACK" /* GXT: Back */, -1);
 	}
 	MISC::SET_BIT(&(Local_122.f_359), 6);
 	func_372(Local_122.f_181.f_69, 1, 1);
@@ -20747,43 +20747,43 @@ void func_584()//Position - 0x19A1A
 		case 0:
 			if (Global_262145.f_27106)
 			{
-				func_368("MPCT_CASINO_RD3", 0, 0);
+				func_368("MPCT_CASINO_RD3" /* GXT: Ms. Baker is not currently offering any jobs. */, 0, 0);
 			}
 			else if (func_753())
 			{
-				func_368("MPCT_CASINO_RD0", 0, 0);
+				func_368("MPCT_CASINO_RD0" /* GXT: Request a job from Ms. Baker. */, 0, 0);
 			}
 			else if (bLocal_207)
 			{
-				func_368("MPCT_CASINO_RD2", 0, 0);
+				func_368("MPCT_CASINO_RD2" /* GXT: There is a short wait before you can request more work from Ms. Baker. */, 0, 0);
 			}
 			else if (!func_415())
 			{
-				func_368("MPCT_CASINO_RD1", 0, 0);
+				func_368("MPCT_CASINO_RD1" /* GXT: You must be a VIP, CEO or MC President in order to access Casino Work. */, 0, 0);
 			}
 			else if (func_586(PLAYER::PLAYER_ID(), 243, 0) == 16)
 			{
-				func_368("MPCT_CASINO_RD4", 0, 0);
+				func_368("MPCT_CASINO_RD4" /* GXT: Mission unavailable. A member of your gang is currently playing a casino game. */, 0, 0);
 			}
 			else if (func_586(PLAYER::PLAYER_ID(), 243, 0) == 15)
 			{
-				func_368("MPCT_CASINO_RD5", 0, 0);
+				func_368("MPCT_CASINO_RD5" /* GXT: Mission unavailable. A member of your gang is currently at one with the animals. */, 0, 0);
 			}
 			else
 			{
-				func_368("MPCT_CASINO_RD3", 0, 0);
+				func_368("MPCT_CASINO_RD3" /* GXT: Ms. Baker is not currently offering any jobs. */, 0, 0);
 			}
 			break;
 		
 		case 1:
 			if (!Global_262145.f_27107 && BitTest(uLocal_186, 1))
 			{
-				func_368("MPCT_CASINO_LD0", 0, 0);
+				func_368("MPCT_CASINO_LD0" /* GXT: Request a limousine to be sent to your location. */, 0, 0);
 			}
 			else if (func_421(59) > 0)
 			{
 				Local_144 = { func_94(func_421(59), 0, 0) };
-				func_368("CONT_REQ_CD", 0, 0);
+				func_368("CONT_REQ_CD" /* GXT: Next request available in ~a~. */, 0, 0);
 				func_344(&Local_144);
 			}
 			else
@@ -20791,11 +20791,11 @@ void func_584()//Position - 0x19A1A
 				switch (func_585())
 				{
 					case 1:
-						func_368("MPCT_CASINO_LD2", 0, 0);
+						func_368("MPCT_CASINO_LD2" /* GXT: A limousine has already been sent to your location. */, 0, 0);
 						break;
 					
 					default:
-						func_368("MPCT_CASINO_LD1", 0, 0);
+						func_368("MPCT_CASINO_LD1" /* GXT: You cannot request a limousine at this time. */, 0, 0);
 						break;
 					}
 			}
@@ -20804,12 +20804,12 @@ void func_584()//Position - 0x19A1A
 		case 2:
 			if (!Global_262145.f_27108 && BitTest(uLocal_186, 2))
 			{
-				func_368("MPCT_CASINO_VD0", 0, 0);
+				func_368("MPCT_CASINO_VD0" /* GXT: Request a luxury car to be sent to your location. */, 0, 0);
 			}
 			else if (func_421(60) > 0)
 			{
 				Local_144 = { func_94(func_421(60), 0, 0) };
-				func_368("CONT_REQ_CD", 0, 0);
+				func_368("CONT_REQ_CD" /* GXT: Next request available in ~a~. */, 0, 0);
 				func_344(&Local_144);
 			}
 			else
@@ -20817,11 +20817,11 @@ void func_584()//Position - 0x19A1A
 				switch (func_582())
 				{
 					case 1:
-						func_368("MPCT_CASINO_VD2", 0, 0);
+						func_368("MPCT_CASINO_VD2" /* GXT: A luxury car has already been sent to your location. */, 0, 0);
 						break;
 					
 					default:
-						func_368("MPCT_CASINO_VD1", 0, 0);
+						func_368("MPCT_CASINO_VD1" /* GXT: You cannot request a luxury car at this time. */, 0, 0);
 						break;
 					}
 			}
@@ -29779,7 +29779,7 @@ void func_752()//Position - 0x21807
 	bool bVar0;
 	
 	func_81(0, 0);
-	func_80("MPCT_CASINO_M");
+	func_80("MPCT_CASINO_M" /* GXT: MS. BAKER */);
 	func_78(1, 1, 0, 0, 0);
 	func_77(1, 2, 1, 1, 1);
 	func_76(0, 0, 0, 0, 0);
@@ -29788,31 +29788,31 @@ void func_752()//Position - 0x21807
 	{
 		bVar0 = false;
 	}
-	func_62(0, "MPCT_CASINO_M_R", 0, bVar0, 0, 0, 0);
+	func_62(0, "MPCT_CASINO_M_R" /* GXT: Request Work */, 0, bVar0, 0, 0, 0);
 	bVar0 = true;
 	if (Global_262145.f_27107 || !BitTest(uLocal_186, 1))
 	{
 		bVar0 = false;
 	}
-	func_62(1, "MPCT_CASINO_M_L", 0, bVar0, 0, 0, 0);
+	func_62(1, "MPCT_CASINO_M_L" /* GXT: Limousine Service */, 0, bVar0, 0, 0, 0);
 	bVar0 = true;
 	if (Global_262145.f_27108 || !BitTest(uLocal_186, 2))
 	{
 		bVar0 = false;
 	}
-	func_62(2, "MPCT_CASINO_M_V", 0, bVar0, 0, 0, 0);
+	func_62(2, "MPCT_CASINO_M_V" /* GXT: Car Service */, 0, bVar0, 0, 0, 0);
 	func_60(-1);
 	if (func_1120())
 	{
 		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 		{
-			func_374(237, "BB_SELECT", -1, 0);
-			func_374(238, "BB_BACK", -1, 0);
+			func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+			func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 		}
 		else
 		{
-			func_373(176, "BB_SELECT", -1);
-			func_373(177, "BB_BACK", -1);
+			func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+			func_373(177, "BB_BACK" /* GXT: Back */, -1);
 		}
 		MISC::SET_BIT(&(Local_122.f_359), 6);
 	}
@@ -30408,13 +30408,13 @@ int func_772()//Position - 0x2220F
 	func_60(-1);
 	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 	{
-		func_374(237, "BB_SELECT", -1, 0);
-		func_374(238, "BB_BACK", -1, 0);
+		func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+		func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 	}
 	else
 	{
-		func_373(176, "BB_SELECT", -1);
-		func_373(177, "BB_BACK", -1);
+		func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+		func_373(177, "BB_BACK" /* GXT: Back */, -1);
 	}
 	MISC::SET_BIT(&(Local_122.f_359), 6);
 	func_372(Local_122.f_181.f_69, 1, 1);
@@ -30427,7 +30427,7 @@ void func_773()//Position - 0x22277
 	int iVar0;
 	
 	func_81(0, 0);
-	func_80("MPCT_PA_HEL");
+	func_80("MPCT_PA_HEL" /* GXT: CHOOSE HELICOPTER */);
 	func_78(1, 1, 0, 0, 0);
 	func_77(1, 2, 1, 1, 1);
 	func_76(0, 0, 0, 0, 0);
@@ -36765,73 +36765,73 @@ char* func_838(int iParam0)//Position - 0x28551
 			return "SUBMERSIBLE";
 		
 		case 68:
-			return "SANCHEZ";
+			return "SANCHEZ" /* GXT: Sanchez (Livery) */;
 		
 		case 105:
-			return "REBEL";
+			return "REBEL" /* GXT: Rebel */;
 		
 		case 107:
-			return "SANCHEZ2";
+			return "SANCHEZ2" /* GXT: Sanchez */;
 		
 		case 117:
-			return "COQUETTE_TLESS";
+			return "COQUETTE_TLESS" /* GXT: Coquette Topless */;
 		
 		case 118:
-			return "BANSHEE_TLESS";
+			return "BANSHEE_TLESS" /* GXT: Banshee Topless */;
 		
 		case 119:
-			return "STINGER_TLESS";
+			return "STINGER_TLESS" /* GXT: Stinger Topless */;
 		
 		case 120:
-			return "VOLTIC_HTOP";
+			return "VOLTIC_HTOP" /* GXT: Voltic */;
 		
 		case 154:
-			return "BLAZER3";
+			return "BLAZER3" /* GXT: Hot Rod Blazer */;
 		
 		case 155:
-			return "REBEL2";
+			return "REBEL2" /* GXT: Rebel (Clean) */;
 		
 		case 158:
-			return "BUFFALO2";
+			return "BUFFALO2" /* GXT: Buffalo S */;
 		
 		case 159:
-			return "TAILGATER";
+			return "TAILGATER" /* GXT: Tailgater */;
 		
 		case 166:
-			return "COQUETTE2_TLESS";
+			return "COQUETTE2_TLESS" /* GXT: Coquette Classic Topless */;
 		
 		case 170:
-			return "KALAHARI_TLESS";
+			return "KALAHARI_TLESS" /* GXT: Kalahari Topless */;
 		
 		case 171:
-			return "BOXVILLE4";
+			return "BOXVILLE4" /* GXT: Boxville */;
 		
 		case 173:
-			return "DINGHY3";
+			return "DINGHY3" /* GXT: Dinghy */;
 		
 		case 183:
-			return "MULE3";
+			return "MULE3" /* GXT: Mule */;
 		
 		case 191:
-			return "LANDSTALKER";
+			return "LANDSTALKER" /* GXT: Landstalker */;
 		
 		case 192:
-			return "MESA3";
+			return "MESA3" /* GXT: Mesa */;
 		
 		case 194:
-			return "ORACLE1";
+			return "ORACLE1" /* GXT: Oracle XS */;
 		
 		case 196:
-			return "SCHAFTER2";
+			return "SCHAFTER2" /* GXT: Schafter */;
 		
 		case 207:
-			return "DOMINATOR2";
+			return "DOMINATOR2" /* GXT: Pisswasser Dominator */;
 		
 		case 245:
 			return "BIG_YACHT";
 		
 		case 254:
-			return "CARGOBOB2";
+			return "CARGOBOB2" /* GXT: Cargobob Jetsam */;
 		
 		case 323:
 			return "BIG_TRUCK";
@@ -36846,7 +36846,7 @@ char* func_838(int iParam0)//Position - 0x28551
 			return "HACKER_TRUCK";
 		
 		case 510:
-			return "LANDSTLKR2";
+			return "LANDSTLKR2" /* GXT: Landstalker XL */;
 		
 		default:
 	}
@@ -36892,11 +36892,11 @@ void func_840()//Position - 0x28759
 	func_81(0, 0);
 	if (func_170())
 	{
-		func_80("MPCT_PA_AGH");
+		func_80("MPCT_PA_AGH" /* GXT: EXECUTIVE ASSISTANT */);
 	}
 	else
 	{
-		func_80("MPCT_PA_AGHF");
+		func_80("MPCT_PA_AGHF" /* GXT: EXECUTIVE ASSISTANT */);
 	}
 	func_78(1, 1, 0, 0, 0);
 	func_77(1, 2, 1, 1, 1);
@@ -36913,13 +36913,13 @@ void func_840()//Position - 0x28759
 		{
 			bVar2 = false;
 		}
-		func_512(43, iVar0, "MPCT_PA_IMP0", bVar2);
-		func_62(iVar0, "MPCT_CASH", 1, bVar2, 0, 0, 0);
+		func_512(43, iVar0, "MPCT_PA_IMP0" /* GXT: Recover vehicle from impound */, bVar2);
+		func_62(iVar0, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar2, 0, 0, 0);
 		func_434(func_86(43), 0);
 	}
 	else
 	{
-		func_62(iVar0, "MPCT_PA_IMP0", 0, 0, 0, 0, 0);
+		func_62(iVar0, "MPCT_PA_IMP0" /* GXT: Recover vehicle from impound */, 0, 0, 0, 0, 0);
 		func_62(iVar0, "", 1, 0, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -36944,13 +36944,13 @@ void func_840()//Position - 0x28759
 				bVar2 = false;
 			}
 		}
-		func_512(44, iVar0, "MPCT_PA_YAH0", bVar2);
-		func_62(iVar0, "MPCT_CASH", 1, bVar2, 0, 0, 0);
+		func_512(44, iVar0, "MPCT_PA_YAH0" /* GXT: Request Luxury Helicopter */, bVar2);
+		func_62(iVar0, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar2, 0, 0, 0);
 		func_434(func_86(44), 0);
 	}
 	else
 	{
-		func_62(iVar0, "MPCT_PA_YAH0", 0, 0, 0, 0, 0);
+		func_62(iVar0, "MPCT_PA_YAH0" /* GXT: Request Luxury Helicopter */, 0, 0, 0, 0, 0);
 		func_62(iVar0, "", 1, 0, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -36960,13 +36960,13 @@ void func_840()//Position - 0x28759
 	{
 		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 		{
-			func_374(237, "BB_SELECT", -1, 0);
-			func_374(238, "BB_BACK", -1, 0);
+			func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+			func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 		}
 		else
 		{
-			func_373(176, "BB_SELECT", -1);
-			func_373(177, "BB_BACK", -1);
+			func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+			func_373(177, "BB_BACK" /* GXT: Back */, -1);
 		}
 		MISC::SET_BIT(&(Local_122.f_359), 6);
 	}
@@ -37064,13 +37064,13 @@ int func_843()//Position - 0x28A64
 	func_60(-1);
 	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 	{
-		func_374(237, "BB_SELECT", -1, 0);
-		func_374(238, "BB_BACK", -1, 0);
+		func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+		func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 	}
 	else
 	{
-		func_373(176, "BB_SELECT", -1);
-		func_373(177, "BB_BACK", -1);
+		func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+		func_373(177, "BB_BACK" /* GXT: Back */, -1);
 	}
 	MISC::SET_BIT(&(Local_122.f_359), 6);
 	func_372(Local_122.f_181.f_69, 1, 1);
@@ -37097,7 +37097,7 @@ void func_844(var uParam0, var uParam1, var uParam2, var uParam3)//Position - 0x
 	int iVar4;
 	
 	func_81(0, 0);
-	func_80("MPCT_PERVEH1");
+	func_80("MPCT_PERVEH1" /* GXT: SELECT VEHICLE FOR DELIVERY */);
 	func_78(1, 1, 0, 0, 0);
 	func_77(1, 2, 1, 1, 1);
 	func_76(0, 0, 0, 0, 0);
@@ -37178,7 +37178,7 @@ void func_845(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, v
 						{
 							if (BitTest(Global_1585857[iParam3 /*142*/].f_103, 2))
 							{
-								StringCopy(&Var2, "MPCT_PVNAMEDES", 24);
+								StringCopy(&Var2, "MPCT_PVNAMEDES" /* GXT: ~a~ ~a~ (Destroyed) */, 24);
 								StringIntConCat(&Var2, iVar1, 24);
 								func_62(*uParam6, &Var2, iVar1, 1, 0, 0, 0);
 							}
@@ -37191,19 +37191,19 @@ void func_845(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, v
 						}
 						else if (func_171(iParam3))
 						{
-							StringCopy(&Var2, "MPCT_PVNAMEIMP", 24);
+							StringCopy(&Var2, "MPCT_PVNAMEIMP" /* GXT: ~a~ ~a~ (Impounded) */, 24);
 							StringIntConCat(&Var2, iVar1, 24);
 							func_62(*uParam6, &Var2, iVar1, 1, 0, 0, 0);
 						}
 						else if (((((((((((((iParam4 < 29 && iParam1 >= Global_1312193[func_227(iParam4, -1) /*1951*/].f_33) && iParam4 != 13) && iParam4 != 14) && iParam4 != 15) && iParam4 != 16) && iParam4 != 17) && iParam4 != 18) && iParam4 != 19) && iParam4 != 20) && iParam4 != 21) && iParam4 != 22) && iParam4 != 25) && iParam4 != 26)
 						{
-							StringCopy(&Var2, "MPCT_PVNAMESTO", 24);
+							StringCopy(&Var2, "MPCT_PVNAMESTO" /* GXT: ~a~ ~a~ (Storage) */, 24);
 							StringIntConCat(&Var2, iVar1, 24);
 							func_62(*uParam6, &Var2, iVar1, 1, 0, 0, 0);
 						}
 						else
 						{
-							StringCopy(&Var2, "MPCT_PVNAME", 24);
+							StringCopy(&Var2, "MPCT_PVNAME" /* GXT: ~a~ ~a~ */, 24);
 							StringIntConCat(&Var2, iVar1, 24);
 							func_62(*uParam6, &Var2, iVar1, 1, 0, 0, 0);
 						}
@@ -37218,11 +37218,11 @@ void func_845(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, v
 						}
 						if (func_870(&(Global_1585857[iParam3 /*142*/])))
 						{
-							func_399("VEH_LIVERY", 0);
+							func_399("VEH_LIVERY" /* GXT: (Livery) */, 0);
 						}
 						if (func_869(func_161(iParam3), Global_1585857[iParam3 /*142*/].f_77, Global_1585857[iParam3 /*142*/].f_9[10]) && func_868(func_161(iParam3)))
 						{
-							func_399("VEH_TOPL", 0);
+							func_399("VEH_TOPL" /* GXT: Topless */, 0);
 						}
 						(*uParam0)[*uParam5] = iParam3;
 						*uParam5++;
@@ -49831,24 +49831,24 @@ void func_877()//Position - 0x3744C
 	
 	if (Global_2815059.f_5977)
 	{
-		func_878(&uVar0, &(Local_122.f_181.f_70), "MPCT_YC_AGH");
+		func_878(&uVar0, &(Local_122.f_181.f_70), "MPCT_YC_AGH" /* GXT: YACHT CAPTAIN */);
 	}
 	else
 	{
-		func_878(&uVar0, &(Local_122.f_181.f_70), "MPCT_MECHH");
+		func_878(&uVar0, &(Local_122.f_181.f_70), "MPCT_MECHH" /* GXT: MECHANIC */);
 	}
 	func_60(-1);
 	if (func_1120())
 	{
 		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 		{
-			func_374(237, "BB_SELECT", -1, 0);
-			func_374(238, "BB_BACK", -1, 0);
+			func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+			func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 		}
 		else
 		{
-			func_373(176, "BB_SELECT", -1);
-			func_373(177, "BB_BACK", -1);
+			func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+			func_373(177, "BB_BACK" /* GXT: Back */, -1);
 		}
 		MISC::SET_BIT(&(Local_122.f_359), 6);
 	}
@@ -49913,7 +49913,7 @@ void func_878(var uParam0, var uParam1, char* sParam2)//Position - 0x374E4
 			}
 			if (iVar2 == 14)
 			{
-				StringCopy(&Var6, "MP_BHUB_CLUBG", 24);
+				StringCopy(&Var6, "MP_BHUB_CLUBG" /* GXT: Nightclub Service Entrance */, 24);
 			}
 			else if (iVar2 == 15)
 			{
@@ -49941,19 +49941,19 @@ void func_878(var uParam0, var uParam1, char* sParam2)//Position - 0x374E4
 			}
 			else if (iVar2 == 21)
 			{
-				StringCopy(&Var6, "CASINO_GARNAME", 24);
+				StringCopy(&Var6, "CASINO_GARNAME" /* GXT: Casino Penthouse Garage */, 24);
 			}
 			else if (iVar2 == 22)
 			{
-				StringCopy(&Var6, "ARCADE_GARNAME", 24);
+				StringCopy(&Var6, "ARCADE_GARNAME" /* GXT: Arcade Garage */, 24);
 			}
 			else if (iVar2 == 25)
 			{
-				StringCopy(&Var6, "AUT_SHP_GAR", 24);
+				StringCopy(&Var6, "AUT_SHP_GAR" /* GXT: Auto Shop Storage */, 24);
 			}
 			else if (iVar2 == 26)
 			{
-				StringCopy(&Var6, "FIXER_GARNAME", 24);
+				StringCopy(&Var6, "FIXER_GARNAME" /* GXT: Agency Garage */, 24);
 			}
 			StringConCat(&Var6, "S", 24);
 			func_62(*uParam0, &Var6, 0, iVar0[iVar2], 0, 0, 0);
@@ -50004,16 +50004,16 @@ char* func_880(int iParam0)//Position - 0x37859
 	switch (iParam0)
 	{
 		case 0:
-			return "GRTRUCK";
+			return "GRTRUCK" /* GXT: Mobile Operations Center */;
 		
 		case 2:
-			return "MP_BHUB_CLUBT";
+			return "MP_BHUB_CLUBT" /* GXT: Terrorbyte */;
 		
 		case 1:
-			return "MP_BHUB_GAR0";
+			return "MP_BHUB_GAR0" /* GXT: Nightclub Garage B1 */;
 		
 		case 3:
-			return "MP_BHUB_SUB";
+			return "MP_BHUB_SUB" /* GXT: Kosatka */;
 		
 		default:
 	}
@@ -50025,15 +50025,15 @@ char* func_881(int iParam0)//Position - 0x3789E
 	switch (iParam0)
 	{
 		case 1:
-			return "ARENA_GAR_F0";
+			return "ARENA_GAR_F0" /* GXT: Arena Workshop */;
 			break;
 		
 		case 2:
-			return "ARENA_GAR_F1";
+			return "ARENA_GAR_F1" /* GXT: Arena Workshop B1 */;
 			break;
 		
 		case 3:
-			return "ARENA_GAR_F2";
+			return "ARENA_GAR_F2" /* GXT: Arena Workshop B2 */;
 			break;
 	}
 	return "";
@@ -50044,15 +50044,15 @@ char* func_882(int iParam0)//Position - 0x378DF
 	switch (iParam0)
 	{
 		case 1:
-			return "MP_BHUB_GAR1";
+			return "MP_BHUB_GAR1" /* GXT: Nightclub Garage B2 */;
 			break;
 		
 		case 2:
-			return "MP_BHUB_GAR2";
+			return "MP_BHUB_GAR2" /* GXT: Nightclub Garage B3 */;
 			break;
 		
 		case 3:
-			return "MP_BHUB_GAR3";
+			return "MP_BHUB_GAR3" /* GXT: Nightclub Garage B4 */;
 			break;
 	}
 	return "";
@@ -50063,39 +50063,39 @@ char* func_883(int iParam0)//Position - 0x37920
 	switch (iParam0)
 	{
 		case 1:
-			return "MP_DBASE_1";
+			return "MP_DBASE_1" /* GXT: Grand Senora Desert Facility */;
 			break;
 		
 		case 2:
-			return "MP_DBASE_2";
+			return "MP_DBASE_2" /* GXT: Route 68 Facility */;
 			break;
 		
 		case 3:
-			return "MP_DBASE_3";
+			return "MP_DBASE_3" /* GXT: Sandy Shores Facility */;
 			break;
 		
 		case 4:
-			return "MP_DBASE_4";
+			return "MP_DBASE_4" /* GXT: Mount Gordo Facility */;
 			break;
 		
 		case 5:
-			return "MP_DBASE_6";
+			return "MP_DBASE_6" /* GXT: Paleto Bay Facility */;
 			break;
 		
 		case 6:
-			return "MP_DBASE_7";
+			return "MP_DBASE_7" /* GXT: Lago Zancudo Facility */;
 			break;
 		
 		case 7:
-			return "MP_DBASE_8";
+			return "MP_DBASE_8" /* GXT: Zancudo River Facility */;
 			break;
 		
 		case 8:
-			return "MP_DBASE_9";
+			return "MP_DBASE_9" /* GXT: Ron Alternates Wind Farm Facility */;
 			break;
 		
 		case 9:
-			return "MP_DBASE_10";
+			return "MP_DBASE_10" /* GXT: Land Act Reservoir Facility */;
 			break;
 	}
 	return "";
@@ -50142,7 +50142,7 @@ void func_886()//Position - 0x37A18
 	int iVar8;
 	
 	func_81(0, 0);
-	func_80("MPCT_YC_AGH");
+	func_80("MPCT_YC_AGH" /* GXT: YACHT CAPTAIN */);
 	func_78(1, 1, 0, 0, 0);
 	func_77(1, 2, 1, 1, 1);
 	func_76(0, 0, 0, 0, 0);
@@ -50155,13 +50155,13 @@ void func_886()//Position - 0x37A18
 		{
 			bVar2 = false;
 		}
-		func_512(40, iVar0, "MPCT_YC_YAH0", bVar2);
-		func_62(iVar0, "MPCT_CASH", 1, bVar2, 0, 0, 0);
+		func_512(40, iVar0, "MPCT_YC_YAH0" /* GXT: Request Helicopter */, bVar2);
+		func_62(iVar0, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar2, 0, 0, 0);
 		func_434(func_86(40), 0);
 	}
 	else
 	{
-		func_62(iVar0, "MPCT_YC_YAH0", 0, 0, 0, 0, 0);
+		func_62(iVar0, "MPCT_YC_YAH0" /* GXT: Request Helicopter */, 0, 0, 0, 0, 0);
 		func_62(iVar0, "", 1, 0, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -50175,13 +50175,13 @@ void func_886()//Position - 0x37A18
 		{
 			bVar2 = false;
 		}
-		func_512(41, iVar0, "MPCT_YC_YAB0", bVar2);
-		func_62(iVar0, "MPCT_CASH", 1, bVar2, 0, 0, 0);
+		func_512(41, iVar0, "MPCT_YC_YAB0" /* GXT: Request Boat */, bVar2);
+		func_62(iVar0, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar2, 0, 0, 0);
 		func_434(func_86(41), 0);
 	}
 	else
 	{
-		func_62(iVar0, "MPCT_YC_YAB0", 0, 0, 0, 0, 0);
+		func_62(iVar0, "MPCT_YC_YAB0" /* GXT: Request Boat */, 0, 0, 0, 0, 0);
 		func_62(iVar0, "", 1, 0, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -50196,21 +50196,21 @@ void func_886()//Position - 0x37A18
 		{
 			bVar2 = false;
 		}
-		func_512(42, iVar0, "MPCT_YC_YAP0", bVar2);
+		func_512(42, iVar0, "MPCT_YC_YAP0" /* GXT: Request Personal Vehicle */, bVar2);
 		iVar8 = func_86(42);
 		if (iVar8 <= 0)
 		{
-			func_62(iVar0, "PEG_FREE", 0, bVar2, 0, 0, 0);
+			func_62(iVar0, "PEG_FREE" /* GXT: FREE */, 0, bVar2, 0, 0, 0);
 		}
 		else
 		{
-			func_62(iVar0, "MPCT_CASH", 1, bVar2, 0, 0, 0);
+			func_62(iVar0, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar2, 0, 0, 0);
 			func_434(iVar8, 0);
 		}
 	}
 	else
 	{
-		func_62(iVar0, "MPCT_YC_YAP0", 0, 1, 0, 0, 0);
+		func_62(iVar0, "MPCT_YC_YAP0" /* GXT: Request Personal Vehicle */, 0, 1, 0, 0, 0);
 		func_62(iVar0, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -50225,16 +50225,16 @@ void func_886()//Position - 0x37A18
 			{
 				bVar2 = false;
 			}
-			func_512(64, iVar0, "YACHT_REQUEST", bVar2);
+			func_512(64, iVar0, "YACHT_REQUEST" /* GXT: Request Job */, bVar2);
 			if (func_86(64) > 0)
 			{
-				func_62(iVar0, "MPCT_CASH", 1, bVar2, 0, 0, 0);
+				func_62(iVar0, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar2, 0, 0, 0);
 				func_434(func_86(64), 0);
 			}
 		}
 		else
 		{
-			func_62(iVar0, "YACHT_REQUEST", 0, 0, 0, 0, 0);
+			func_62(iVar0, "YACHT_REQUEST" /* GXT: Request Job */, 0, 0, 0, 0, 0);
 			func_62(iVar0, "", 1, 0, 0, 0, 0);
 			func_511(15, 0);
 		}
@@ -50245,13 +50245,13 @@ void func_886()//Position - 0x37A18
 	{
 		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 		{
-			func_374(237, "BB_SELECT", -1, 0);
-			func_374(238, "BB_BACK", -1, 0);
+			func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+			func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 		}
 		else
 		{
-			func_373(176, "BB_SELECT", -1);
-			func_373(177, "BB_BACK", -1);
+			func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+			func_373(177, "BB_BACK" /* GXT: Back */, -1);
 		}
 		MISC::SET_BIT(&(Local_122.f_359), 6);
 	}
@@ -50480,7 +50480,7 @@ char* func_890(int iParam0)//Position - 0x381FC
 			return "CHALLENGE_PLAYER_LEFT";
 			break;
 	}
-	return "DEFAULT";
+	return "DEFAULT" /* GXT: _ */;
 }
 
 char* func_891(int iParam0)//Position - 0x3828F
@@ -50540,7 +50540,7 @@ char* func_891(int iParam0)//Position - 0x3828F
 		
 		default:
 	}
-	return "DEFAULT";
+	return "DEFAULT" /* GXT: _ */;
 }
 
 int func_892(int iParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x3837F
@@ -50736,7 +50736,7 @@ void func_899()//Position - 0x386E6
 	bool bVar2;
 	
 	func_81(0, 0);
-	func_80("MPCT_GB_AGH");
+	func_80("MPCT_GB_AGH" /* GXT: SECUROSERV */);
 	func_78(1, 1, 0, 0, 0);
 	func_77(1, 2, 1, 1, 1);
 	func_76(0, 0, 0, 0, 0);
@@ -50748,13 +50748,13 @@ void func_899()//Position - 0x386E6
 		{
 			bVar2 = false;
 		}
-		func_512(39, iVar0, "MPCT_GB_AG0", bVar2);
-		func_62(iVar0, "MPCT_CASH", 1, bVar2, 0, 0, 0);
+		func_512(39, iVar0, "MPCT_GB_AG0" /* GXT: Request Turreted Limo */, bVar2);
+		func_62(iVar0, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar2, 0, 0, 0);
 		func_434(func_86(39), 0);
 	}
 	else
 	{
-		func_62(iVar0, "MPCT_GB_AG0", 0, 1, 0, 0, 0);
+		func_62(iVar0, "MPCT_GB_AG0" /* GXT: Request Turreted Limo */, 0, 1, 0, 0, 0);
 		func_62(iVar0, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -50764,13 +50764,13 @@ void func_899()//Position - 0x386E6
 	{
 		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 		{
-			func_374(237, "BB_SELECT", -1, 0);
-			func_374(238, "BB_BACK", -1, 0);
+			func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+			func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 		}
 		else
 		{
-			func_373(176, "BB_SELECT", -1);
-			func_373(177, "BB_BACK", -1);
+			func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+			func_373(177, "BB_BACK" /* GXT: Back */, -1);
 		}
 		MISC::SET_BIT(&(Local_122.f_359), 6);
 	}
@@ -50807,9 +50807,9 @@ void func_901()//Position - 0x3884C
 	func_78(1, 0, 0, 0, 0);
 	func_77(1, 1, 1, 1, 1);
 	func_76(0, 0, 0, 0, 0);
-	func_62(iVar0, "MP_STRIP_IN", 0, 1, 0, 0, 0);
+	func_62(iVar0, "MP_STRIP_IN" /* GXT: Invite to Your Apartment */, 0, 1, 0, 0, 0);
 	iVar0++;
-	func_62(iVar0, "BB_LC_EXIT", 0, 1, 0, 0, 0);
+	func_62(iVar0, "BB_LC_EXIT" /* GXT: Exit */, 0, 1, 0, 0, 0);
 	iVar0++;
 	Local_122.f_181.f_2 = iVar0;
 	func_372(Local_122.f_181.f_69, 1, 0);
@@ -50820,13 +50820,13 @@ void func_901()//Position - 0x3884C
 	{
 		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 		{
-			func_374(237, "BB_SELECT", -1, 0);
-			func_374(238, "BB_BACK", -1, 0);
+			func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+			func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 		}
 		else
 		{
-			func_373(176, "BB_SELECT", -1);
-			func_373(177, "BB_BACK", -1);
+			func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+			func_373(177, "BB_BACK" /* GXT: Back */, -1);
 		}
 		MISC::SET_BIT(&(Local_122.f_359), 6);
 	}
@@ -50861,7 +50861,7 @@ void func_903()//Position - 0x3897E
 	bool bVar2;
 	
 	func_81(0, 0);
-	func_80("MPCT_RON");
+	func_80("MPCT_RON" /* GXT: RON */);
 	func_78(1, 1, 0, 0, 0);
 	func_77(1, 2, 1, 1, 1);
 	func_76(0, 0, 0, 0, 0);
@@ -50873,16 +50873,16 @@ void func_903()//Position - 0x3897E
 		{
 			bVar2 = false;
 		}
-		func_512(21, iVar0, "GC_MENU48", bVar2);
+		func_512(21, iVar0, "GC_MENU48" /* GXT: Request Job */, bVar2);
 		if (func_86(21) > 0)
 		{
-			func_62(iVar0, "MPCT_CASH", 1, bVar2, 0, 0, 0);
+			func_62(iVar0, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar2, 0, 0, 0);
 			func_434(func_86(21), 0);
 		}
 	}
 	else
 	{
-		func_62(iVar0, "GC_MENU48", 0, 1, 0, 0, 0);
+		func_62(iVar0, "GC_MENU48" /* GXT: Request Job */, 0, 1, 0, 0, 0);
 		func_62(iVar0, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -50892,13 +50892,13 @@ void func_903()//Position - 0x3897E
 	{
 		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 		{
-			func_374(237, "BB_SELECT", -1, 0);
-			func_374(238, "BB_BACK", -1, 0);
+			func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+			func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 		}
 		else
 		{
-			func_373(176, "BB_SELECT", -1);
-			func_373(177, "BB_BACK", -1);
+			func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+			func_373(177, "BB_BACK" /* GXT: Back */, -1);
 		}
 		MISC::SET_BIT(&(Local_122.f_359), 6);
 	}
@@ -50935,7 +50935,7 @@ void func_905()//Position - 0x38AE5
 	bool bVar2;
 	
 	func_81(0, 0);
-	func_80("MPCT_GERALD");
+	func_80("MPCT_GERALD" /* GXT: GERALD */);
 	func_78(1, 1, 0, 0, 0);
 	func_77(1, 2, 1, 1, 1);
 	func_76(0, 0, 0, 0, 0);
@@ -50947,16 +50947,16 @@ void func_905()//Position - 0x38AE5
 		{
 			bVar2 = false;
 		}
-		func_512(17, iVar0, "GC_MENU48", bVar2);
+		func_512(17, iVar0, "GC_MENU48" /* GXT: Request Job */, bVar2);
 		if (func_86(17) > 0)
 		{
-			func_62(iVar0, "MPCT_CASH", 1, bVar2, 0, 0, 0);
+			func_62(iVar0, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar2, 0, 0, 0);
 			func_434(func_86(17), 0);
 		}
 	}
 	else
 	{
-		func_62(iVar0, "GC_MENU48", 0, 1, 0, 0, 0);
+		func_62(iVar0, "GC_MENU48" /* GXT: Request Job */, 0, 1, 0, 0, 0);
 		func_62(iVar0, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -50966,13 +50966,13 @@ void func_905()//Position - 0x38AE5
 	{
 		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 		{
-			func_374(237, "BB_SELECT", -1, 0);
-			func_374(238, "BB_BACK", -1, 0);
+			func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+			func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 		}
 		else
 		{
-			func_373(176, "BB_SELECT", -1);
-			func_373(177, "BB_BACK", -1);
+			func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+			func_373(177, "BB_BACK" /* GXT: Back */, -1);
 		}
 		MISC::SET_BIT(&(Local_122.f_359), 6);
 	}
@@ -51009,7 +51009,7 @@ void func_907()//Position - 0x38C4C
 	bool bVar2;
 	
 	func_81(0, 0);
-	func_80("MPCT_MARTIN");
+	func_80("MPCT_MARTIN" /* GXT: MARTIN */);
 	func_78(1, 1, 0, 0, 0);
 	func_77(1, 2, 1, 1, 1);
 	func_76(0, 0, 0, 0, 0);
@@ -51021,16 +51021,16 @@ void func_907()//Position - 0x38C4C
 		{
 			bVar2 = false;
 		}
-		func_512(19, iVar0, "GC_MENU48", bVar2);
+		func_512(19, iVar0, "GC_MENU48" /* GXT: Request Job */, bVar2);
 		if (func_86(19) > 0)
 		{
-			func_62(iVar0, "MPCT_CASH", 1, bVar2, 0, 0, 0);
+			func_62(iVar0, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar2, 0, 0, 0);
 			func_434(func_86(19), 0);
 		}
 	}
 	else
 	{
-		func_62(iVar0, "GC_MENU48", 0, 1, 0, 0, 0);
+		func_62(iVar0, "GC_MENU48" /* GXT: Request Job */, 0, 1, 0, 0, 0);
 		func_62(iVar0, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -51040,13 +51040,13 @@ void func_907()//Position - 0x38C4C
 	{
 		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 		{
-			func_374(237, "BB_SELECT", -1, 0);
-			func_374(238, "BB_BACK", -1, 0);
+			func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+			func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 		}
 		else
 		{
-			func_373(176, "BB_SELECT", -1);
-			func_373(177, "BB_BACK", -1);
+			func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+			func_373(177, "BB_BACK" /* GXT: Back */, -1);
 		}
 		MISC::SET_BIT(&(Local_122.f_359), 6);
 	}
@@ -51083,7 +51083,7 @@ void func_909()//Position - 0x38DB3
 	bool bVar2;
 	
 	func_81(0, 0);
-	func_80("MPCT_SIMEON");
+	func_80("MPCT_SIMEON" /* GXT: SIMEON */);
 	func_78(1, 1, 0, 0, 0);
 	func_77(1, 2, 1, 1, 1);
 	func_76(0, 0, 0, 0, 0);
@@ -51095,16 +51095,16 @@ void func_909()//Position - 0x38DB3
 		{
 			bVar2 = false;
 		}
-		func_512(18, iVar0, "GC_MENU48", bVar2);
+		func_512(18, iVar0, "GC_MENU48" /* GXT: Request Job */, bVar2);
 		if (func_86(18) > 0)
 		{
-			func_62(iVar0, "MPCT_CASH", 1, bVar2, 0, 0, 0);
+			func_62(iVar0, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar2, 0, 0, 0);
 			func_434(func_86(18), 0);
 		}
 	}
 	else
 	{
-		func_62(iVar0, "GC_MENU48", 0, 1, 0, 0, 0);
+		func_62(iVar0, "GC_MENU48" /* GXT: Request Job */, 0, 1, 0, 0, 0);
 		func_62(iVar0, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -51114,13 +51114,13 @@ void func_909()//Position - 0x38DB3
 	{
 		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 		{
-			func_374(237, "BB_SELECT", -1, 0);
-			func_374(238, "BB_BACK", -1, 0);
+			func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+			func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 		}
 		else
 		{
-			func_373(176, "BB_SELECT", -1);
-			func_373(177, "BB_BACK", -1);
+			func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+			func_373(177, "BB_BACK" /* GXT: Back */, -1);
 		}
 		MISC::SET_BIT(&(Local_122.f_359), 6);
 	}
@@ -51184,7 +51184,7 @@ void func_910()//Position - 0x38EC7
 				}
 				else if (iLocal_152 == 4 || iLocal_152 == 2)
 				{
-					HUD::SET_WARNING_MESSAGE_WITH_HEADER("GAR_REP_WARNH", "PERV_INS_REP1", iLocal_153, "PERV_INS_REP2", false, -1, 0, 0, true, 0);
+					HUD::SET_WARNING_MESSAGE_WITH_HEADER("GAR_REP_WARNH" /* GXT: Confirm */, "PERV_INS_REP1" /* GXT: Make Insurance claim? */, iLocal_153, "PERV_INS_REP2" /* GXT: Making a claim on this vehicle will cause your current Personal Vehicle (and any purchased upgrades) to be lost. */, false, -1, 0, 0, true, 0);
 					iLocal_153 = 18;
 				}
 				else if ((Global_1585094.f_2 > 0 && MONEY::NETWORK_CAN_SPEND_MONEY(Global_1585094.f_2, false, true, false, -1, 0)) || Global_1585094.f_2 <= 0)
@@ -51234,7 +51234,7 @@ void func_911()//Position - 0x3905A
 	int iVar6;
 	
 	func_81(0, 0);
-	func_80("MPCT_INSH");
+	func_80("MPCT_INSH" /* GXT: MAKE A CLAIM */);
 	func_78(1, 1, 0, 0, 0);
 	func_77(1, 2, 1, 1, 1);
 	func_76(0, 0, 0, 0, 0);
@@ -51317,13 +51317,13 @@ void func_911()//Position - 0x3905A
 	{
 		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 		{
-			func_374(237, "BB_SELECT", -1, 0);
-			func_374(238, "BB_BACK", -1, 0);
+			func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+			func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 		}
 		else
 		{
-			func_373(176, "BB_SELECT", -1);
-			func_373(177, "BB_BACK", -1);
+			func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+			func_373(177, "BB_BACK" /* GXT: Back */, -1);
 		}
 		MISC::SET_BIT(&(Local_122.f_359), 6);
 	}
@@ -51337,15 +51337,15 @@ int func_912(int iParam0)//Position - 0x3928A
 
 void func_913(var uParam0)//Position - 0x3929C
 {
-	func_62(*uParam0, "MPCT_INSALL", 0, 1, 0, 0, 0);
+	func_62(*uParam0, "MPCT_INSALL" /* GXT: Claim All */, 0, 1, 0, 0, 0);
 	if (iLocal_134 > 0)
 	{
-		func_62(*uParam0, "MPCT_INSCOST", 1, 1, 0, 0, 0);
+		func_62(*uParam0, "MPCT_INSCOST" /* GXT: $~1~ */, 1, 1, 0, 0, 0);
 		func_434(iLocal_134, 0);
 	}
 	else
 	{
-		func_62(*uParam0, "MPCT_NOCOST", 0, 1, 0, 0, 0);
+		func_62(*uParam0, "MPCT_NOCOST" /* GXT: NO CHARGE */, 0, 1, 0, 0, 0);
 	}
 	*uParam0++;
 }
@@ -51372,7 +51372,7 @@ void func_914(int iParam0, var uParam1)//Position - 0x392EE
 			iVar3++;
 		}
 		Var5 = { func_866(-1, iVar2, 1) };
-		StringCopy(&Var4, "MPCT_INSVEH", 24);
+		StringCopy(&Var4, "MPCT_INSVEH" /* GXT: ~a~ ~a~ */, 24);
 		StringIntConCat(&Var4, iVar3, 24);
 		func_62(*uParam1, &Var4, iVar3, 1, 0, 0, 0);
 		if (!MISC::IS_STRING_NULL_OR_EMPTY(&Var5))
@@ -51385,11 +51385,11 @@ void func_914(int iParam0, var uParam1)//Position - 0x392EE
 		}
 		if (func_870(&(Global_1585857[iParam0 /*142*/])))
 		{
-			func_399("VEH_LIVERY", 0);
+			func_399("VEH_LIVERY" /* GXT: (Livery) */, 0);
 		}
 		if (func_869(func_161(iParam0), Global_1585857[iParam0 /*142*/].f_77, Global_1585857[iParam0 /*142*/].f_9[10]) && func_868(func_161(iParam0)))
 		{
-			func_399("VEH_TOPL", 0);
+			func_399("VEH_TOPL" /* GXT: Topless */, 0);
 		}
 		func_915(&Var1, Global_1585857[iParam0 /*142*/].f_66, 0, -1);
 		if (BitTest(Global_1585857[iParam0 /*142*/].f_103, 16))
@@ -51413,13 +51413,13 @@ void func_914(int iParam0, var uParam1)//Position - 0x392EE
 		}
 		if (iVar0 > 0)
 		{
-			func_62(*uParam1, "MPCT_INSCOST", 1, 1, 0, 0, 0);
+			func_62(*uParam1, "MPCT_INSCOST" /* GXT: $~1~ */, 1, 1, 0, 0, 0);
 			func_434(iVar0, 0);
 			iLocal_134 = (iLocal_134 + iVar0);
 		}
 		else
 		{
-			func_62(*uParam1, "MPCT_NOCOST", 0, 1, 0, 0, 0);
+			func_62(*uParam1, "MPCT_NOCOST" /* GXT: NO CHARGE */, 0, 1, 0, 0, 0);
 		}
 		iLocal_135++;
 		iLocal_151[*uParam1] = iParam0;
@@ -60088,7 +60088,7 @@ void func_926(bool bParam0)//Position - 0x41DBD
 {
 	int iVar0;
 	
-	func_927("CUST_GAR_VEH_L8", -1);
+	func_927("CUST_GAR_VEH_L8" /* GXT: Your replacement vehicle can be found at the Mors Mutual depot. */, -1);
 	if (Global_1585094.f_2 > 0 && !Global_262145.f_141)
 	{
 		if (bParam0)
@@ -60368,8 +60368,8 @@ void func_930(int iParam0, int iParam1, bool bParam2)//Position - 0x422AF
 			MONEY::NETWORK_BUY_ITEM(Global_1585094.f_2, Global_1585857[iParam1 /*142*/].f_66, 9, 1, true, 0, 0, 0, 0, true);
 		}
 	}
-	func_927("CUST_GAR_VEH_L8", -1);
-	AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FREEMODE_SOUNDSET", true);
+	func_927("CUST_GAR_VEH_L8" /* GXT: Your replacement vehicle can be found at the Mors Mutual depot. */, -1);
+	AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FREEMODE_SOUNDSET", true);
 	Global_1585094.f_1 = 1;
 	func_1(Local_122.f_1, "CT_AUD", "MPCT_MoGen1", &Local_166, 0);
 	func_933(1, 0, 0, 0, 0, 0, 0);
@@ -60556,31 +60556,31 @@ void func_937(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 	{
 		if (func_227(iLocal_137, -1) == 116)
 		{
-			func_927("HANGAR_CLAIM", -1);
+			func_927("HANGAR_CLAIM" /* GXT: Your Personal Aircraft has been returned to the Hangar ~BLIP_SM_HANGAR~. You can also Request Personal Aircraft via the Vehicles section of the Interaction Menu. */, -1);
 		}
 		else if (func_227(iLocal_137, -1) == 117)
 		{
-			func_927("DBASE_CLAIM", -1);
+			func_927("DBASE_CLAIM" /* GXT: Your Personal Vehicle has been returned to the Facility ~BLIP_NHP_BASE~. You can also Request Personal Vehicle via the Vehicles section of the Interaction Menu. */, -1);
 		}
 		else if (iLocal_137 >= 1000 && func_211(iLocal_137) == 0)
 		{
-			func_927("PER_VEH_MRS_GR", -1);
+			func_927("PER_VEH_MRS_GR" /* GXT: Your replacement vehicle has been returned to storage. You can request it from the Services section in the Interaction Menu to recover it. */, -1);
 		}
 		else
 		{
-			func_927("PER_VEH_MORS_STO", -1);
+			func_927("PER_VEH_MORS_STO" /* GXT: Your replacement vehicle has been returned to storage. You can call the mechanic to recover it. */, -1);
 		}
 	}
 	else if (bParam3)
 	{
-		func_927("CUST_GAR_VEH_L8", -1);
+		func_927("CUST_GAR_VEH_L8" /* GXT: Your replacement vehicle can be found at the Mors Mutual depot. */, -1);
 		MISC::SET_BIT(&(Global_1585857[iParam1 /*142*/].f_103), 0);
 		MISC::SET_BIT(&(Global_1585857[iParam1 /*142*/].f_103), 11);
 		func_938(iParam1);
 	}
 	else
 	{
-		func_927("CUST_GAR_VEH_L7", -1);
+		func_927("CUST_GAR_VEH_L7" /* GXT: Your replacement vehicle can be found in your Garage. */, -1);
 	}
 	func_931();
 	MISC::CLEAR_BIT(&(Local_122.f_359), 4);
@@ -60629,15 +60629,15 @@ void func_941(bool bParam0)//Position - 0x4299B
 	
 	if (func_227(iLocal_137, -1) == 116)
 	{
-		func_927("HANGAR_CLAIM2", -1);
+		func_927("HANGAR_CLAIM2" /* GXT: Your replacement aircraft can be found in your Hangar ~BLIP_SM_HANGAR~. */, -1);
 	}
 	else if (func_227(iLocal_137, -1) == 117)
 	{
-		func_927("DBASE_CLAIM2", -1);
+		func_927("DBASE_CLAIM2" /* GXT: Your replacement vehicle can be found in your Facility ~BLIP_NHP_BASE~. */, -1);
 	}
 	else
 	{
-		func_927("CUST_GAR_ALL", -1);
+		func_927("CUST_GAR_ALL" /* GXT: Your replacement vehicles can be found in your Garage. */, -1);
 	}
 	func_1(Local_122.f_1, "CT_AUD", "MPCT_MoGen1", &Local_166, 0);
 	iVar4 = 0;
@@ -60729,7 +60729,7 @@ void func_943()//Position - 0x42BA5
 	else
 	{
 		func_81(0, 0);
-		func_80("MPCT_INSH");
+		func_80("MPCT_INSH" /* GXT: MAKE A CLAIM */);
 		func_78(1, 1, 0, 0, 0);
 		func_77(1, 2, 1, 1, 1);
 		func_76(0, 0, 0, 0, 0);
@@ -60802,19 +60802,19 @@ void func_943()//Position - 0x42BA5
 					}
 					else if (iVar3 == 21)
 					{
-						StringCopy(&Var7, "CASINO_GARNAME", 24);
+						StringCopy(&Var7, "CASINO_GARNAME" /* GXT: Casino Penthouse Garage */, 24);
 					}
 					else if (iVar3 == 22)
 					{
-						StringCopy(&Var7, "ARCADE_GARNAME", 24);
+						StringCopy(&Var7, "ARCADE_GARNAME" /* GXT: Arcade Garage */, 24);
 					}
 					else if (iVar3 == 25)
 					{
-						StringCopy(&Var7, "AUT_SHP_GAR", 24);
+						StringCopy(&Var7, "AUT_SHP_GAR" /* GXT: Auto Shop Storage */, 24);
 					}
 					else if (iVar3 == 26)
 					{
-						StringCopy(&Var7, "FIXER_GARNAME", 24);
+						StringCopy(&Var7, "FIXER_GARNAME" /* GXT: Agency Garage */, 24);
 					}
 					func_62(iVar0, &Var7, 0, iVar1[iVar3], 0, 0, 0);
 					iLocal_139[iVar0] = iVar3;
@@ -60860,13 +60860,13 @@ void func_943()//Position - 0x42BA5
 		{
 			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 			{
-				func_374(237, "BB_SELECT", -1, 0);
-				func_374(238, "BB_BACK", -1, 0);
+				func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+				func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 			}
 			else
 			{
-				func_373(176, "BB_SELECT", -1);
-				func_373(177, "BB_BACK", -1);
+				func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+				func_373(177, "BB_BACK" /* GXT: Back */, -1);
 			}
 			MISC::SET_BIT(&(Local_122.f_359), 6);
 		}
@@ -60878,43 +60878,43 @@ char* func_944(int iParam0)//Position - 0x42F02
 	switch (iParam0)
 	{
 		case 1:
-			return "MP_NCLU_1";
+			return "MP_NCLU_1" /* GXT: La Mesa Nightclub */;
 			break;
 		
 		case 2:
-			return "MP_NCLU_2";
+			return "MP_NCLU_2" /* GXT: Mission Row Nightclub */;
 			break;
 		
 		case 3:
-			return "MP_NCLU_3";
+			return "MP_NCLU_3" /* GXT: Strawberry Nightclub */;
 			break;
 		
 		case 4:
-			return "MP_NCLU_4";
+			return "MP_NCLU_4" /* GXT: West Vinewood Nightclub */;
 			break;
 		
 		case 5:
-			return "MP_NCLU_5";
+			return "MP_NCLU_5" /* GXT: Cypress Flats Nightclub */;
 			break;
 		
 		case 6:
-			return "MP_NCLU_6";
+			return "MP_NCLU_6" /* GXT: LSIA Nightclub */;
 			break;
 		
 		case 7:
-			return "MP_NCLU_7";
+			return "MP_NCLU_7" /* GXT: Elysian Island Nightclub */;
 			break;
 		
 		case 8:
-			return "MP_NCLU_8";
+			return "MP_NCLU_8" /* GXT: Downtown Vinewood Nightclub */;
 			break;
 		
 		case 9:
-			return "MP_NCLU_9";
+			return "MP_NCLU_9" /* GXT: Del Perro Nightclub */;
 			break;
 		
 		case 10:
-			return "MP_NCLU_10";
+			return "MP_NCLU_10" /* GXT: Vespucci Canals Nightclub */;
 			break;
 	}
 	return "";
@@ -60934,23 +60934,23 @@ char* func_946(int iParam0)//Position - 0x42FD7
 	switch (iParam0)
 	{
 		case 1:
-			return "MP_HANGAR_1";
+			return "MP_HANGAR_1" /* GXT: LSIA Hangar 1 */;
 			break;
 		
 		case 2:
-			return "MP_HANGAR_2";
+			return "MP_HANGAR_2" /* GXT: LSIA Hangar A17 */;
 			break;
 		
 		case 3:
-			return "MP_HANGAR_3";
+			return "MP_HANGAR_3" /* GXT: Fort Zancudo Hangar A2 */;
 			break;
 		
 		case 4:
-			return "MP_HANGAR_4";
+			return "MP_HANGAR_4" /* GXT: Fort Zancudo Hangar 3497 */;
 			break;
 		
 		case 5:
-			return "MP_HANGAR_5";
+			return "MP_HANGAR_5" /* GXT: Fort Zancudo Hangar 3499 */;
 			break;
 	}
 	return "";
@@ -61210,13 +61210,13 @@ void func_971()//Position - 0x433B6
 	}
 	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 	{
-		func_374(237, "BB_SELECT", -1, 0);
-		func_374(238, "BB_BACK", -1, 0);
+		func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+		func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 	}
 	else
 	{
-		func_373(176, "BB_SELECT", -1);
-		func_373(177, "BB_BACK", -1);
+		func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+		func_373(177, "BB_BACK" /* GXT: Back */, -1);
 	}
 	MISC::SET_BIT(&(Local_122.f_359), 6);
 }
@@ -61277,40 +61277,40 @@ char* func_976(int iParam0)//Position - 0x434CD
 	switch (iParam0)
 	{
 		case 10:
-			return "PEG_CAT_BLIMP";
+			return "PEG_CAT_BLIMP" /* GXT: Blimp */;
 		
 		case 4:
-			return "PEG_CAT_BOAT";
+			return "PEG_CAT_BOAT" /* GXT: Boat */;
 		
 		case 2:
-			return "PEG_CAT_HELI";
+			return "PEG_CAT_HELI" /* GXT: Helicopter */;
 		
 		case 1:
-			return "PEG_CAT_MILITARY";
+			return "PEG_CAT_MILITARY" /* GXT: Military */;
 		
 		case 5:
-			return "PEG_CAT_MONSTER";
+			return "PEG_CAT_MONSTER" /* GXT: Monster Truck */;
 		
 		case 3:
-			return "PEG_CAT_PLANE";
+			return "PEG_CAT_PLANE" /* GXT: Plane */;
 		
 		case 8:
-			return "PEG_CAT_SERVICES";
+			return "PEG_CAT_SERVICES" /* GXT: Services */;
 		
 		case 11:
-			return "PEG_CAT_SPECIAL";
+			return "PEG_CAT_SPECIAL" /* GXT: Special */;
 		
 		case 9:
-			return "PEG_CAT_SUBMARINE";
+			return "PEG_CAT_SUBMARINE" /* GXT: Submarine */;
 		
 		case 7:
-			return "PEG_CAT_TRANSPORT";
+			return "PEG_CAT_TRANSPORT" /* GXT: Transport */;
 		
 		case 6:
-			return "PEG_CAT_TRUCK";
+			return "PEG_CAT_TRUCK" /* GXT: Truck */;
 		
 		case 0:
-			return "PEG_CAT_WEAPONIZED";
+			return "PEG_CAT_WEAPONIZED" /* GXT: Weaponized */;
 		
 		default:
 	}
@@ -62073,7 +62073,7 @@ void func_998(var uParam0)//Position - 0x4409E
 void func_999()//Position - 0x440C5
 {
 	func_81(0, 0);
-	func_80("PEG_TITLE");
+	func_80("PEG_TITLE" /* GXT: ~s~PEGASUS CONCIERGE */);
 	func_78(1, 1, 0, 0, 0);
 	func_77(1, 2, 1, 1, 1);
 	func_76(0, 0, 0, 0, 0);
@@ -62204,11 +62204,11 @@ void func_1006(int iParam0, char* sParam1, char* sParam2, bool bParam3, int iPar
 	{
 		if (func_273(22))
 		{
-			func_62(iParam4, "TWOSTRINGS", 3, bParam3, 0, 0, 0);
+			func_62(iParam4, "TWOSTRINGS" /* GXT: ~a~ ~a~ */, 3, bParam3, 0, 0, 0);
 		}
 		else
 		{
-			func_62(iParam4, "TWOSTRINGS", 2, bParam3, 0, 0, 0);
+			func_62(iParam4, "TWOSTRINGS" /* GXT: ~a~ ~a~ */, 2, bParam3, 0, 0, 0);
 		}
 		func_399(sParam1, 0);
 		func_399(sParam2, 0);
@@ -62230,7 +62230,7 @@ void func_1006(int iParam0, char* sParam1, char* sParam2, bool bParam3, int iPar
 		func_511(51, 0);
 	}
 	iVar1 = func_86(22);
-	func_62(iParam4, "MPCT_CASH", 1, bParam3, 0, 0, 0);
+	func_62(iParam4, "MPCT_CASH" /* GXT: $~1~ */, 1, bParam3, 0, 0, 0);
 	func_434(iVar1, 0);
 	uLocal_164[iParam4] = iParam0;
 }
@@ -62244,11 +62244,11 @@ char* func_1007(int iParam0, int iParam1)//Position - 0x44376
 		case joaat("swift"):
 			if (iParam1 == 39)
 			{
-				return "VNX_SWFTC";
+				return "VNX_SWFTC" /* GXT: Classic */;
 			}
 			else
 			{
-				return "VNX_SWFTB";
+				return "VNX_SWFTB" /* GXT: Flying Bravo */;
 			}
 			break;
 		
@@ -62256,79 +62256,79 @@ char* func_1007(int iParam0, int iParam1)//Position - 0x44376
 			switch (iParam1)
 			{
 				case 43:
-					return "WEB_VEH_FLAG_0";
+					return "WEB_VEH_FLAG_0" /* GXT: America */;
 				
 				case 44:
-					return "WEB_VEH_FLAG_1";
+					return "WEB_VEH_FLAG_1" /* GXT: Australia */;
 				
 				case 45:
-					return "WEB_VEH_FLAG_2";
+					return "WEB_VEH_FLAG_2" /* GXT: Brazil */;
 				
 				case 46:
-					return "WEB_VEH_FLAG_3";
+					return "WEB_VEH_FLAG_3" /* GXT: Spain */;
 				
 				case 47:
-					return "WEB_VEH_FLAG_4";
+					return "WEB_VEH_FLAG_4" /* GXT: Canada */;
 				
 				case 48:
-					return "WEB_VEH_FLAG_5";
+					return "WEB_VEH_FLAG_5" /* GXT: France */;
 				
 				case 49:
-					return "WEB_VEH_FLAG_6";
+					return "WEB_VEH_FLAG_6" /* GXT: Germany */;
 				
 				case 50:
-					return "WEB_VEH_FLAG_7";
+					return "WEB_VEH_FLAG_7" /* GXT: Japan */;
 				
 				case 51:
-					return "WEB_VEH_FLAG_8";
+					return "WEB_VEH_FLAG_8" /* GXT: Scotland */;
 				
 				case 52:
-					return "WEB_VEH_FLAG_9";
+					return "WEB_VEH_FLAG_9" /* GXT: Great Britain */;
 				
 				case 53:
-					return "WEB_VEH_FLAG_10";
+					return "WEB_VEH_FLAG_10" /* GXT: Italy */;
 				
 				case 54:
-					return "WEB_VEH_FLAG_11";
+					return "WEB_VEH_FLAG_11" /* GXT: Switzerland */;
 				
 				case 55:
-					return "WEB_VEH_FLAG_12";
+					return "WEB_VEH_FLAG_12" /* GXT: Jamaica */;
 				
 				case 56:
-					return "WEB_VEH_FLAG_13";
+					return "WEB_VEH_FLAG_13" /* GXT: Colombia */;
 				
 				case 57:
-					return "WEB_VEH_FLAG_14";
+					return "WEB_VEH_FLAG_14" /* GXT: Norway */;
 				
 				case 58:
-					return "WEB_VEH_FLAG_15";
+					return "WEB_VEH_FLAG_15" /* GXT: Sweden */;
 				
 				case 59:
-					return "WEB_VEH_FLAG_16";
+					return "WEB_VEH_FLAG_16" /* GXT: Belgium */;
 				
 				case 60:
-					return "WEB_VEH_FLAG_17";
+					return "WEB_VEH_FLAG_17" /* GXT: Mexico */;
 				
 				case 61:
-					return "WEB_VEH_FLAG_18";
+					return "WEB_VEH_FLAG_18" /* GXT: Austria */;
 				
 				case 62:
-					return "WEB_VEH_FLAG_19";
+					return "WEB_VEH_FLAG_19" /* GXT: Russia */;
 				
 				case 63:
-					return "WEB_VEH_FLAG_20";
+					return "WEB_VEH_FLAG_20" /* GXT: Argentina */;
 				
 				case 64:
-					return "WEB_VEH_FLAG_21";
+					return "WEB_VEH_FLAG_21" /* GXT: Turkey */;
 				
 				case 65:
-					return "WEB_VEH_FLAG_22";
+					return "WEB_VEH_FLAG_22" /* GXT: Ireland */;
 				
 				case 66:
-					return "WEB_VEH_FLAG_23";
+					return "WEB_VEH_FLAG_23" /* GXT: Wales */;
 				
 				case 67:
-					return "WEB_VEH_FLAG_24";
+					return "WEB_VEH_FLAG_24" /* GXT: England */;
 				
 				default:
 			}
@@ -62337,11 +62337,11 @@ char* func_1007(int iParam0, int iParam1)//Position - 0x44376
 		case joaat("rallytruck"):
 			if (iParam1 == 90)
 			{
-				return "SSS_DUNE_LIVERY_1";
+				return "SSS_DUNE_LIVERY_1" /* GXT: Globe Oil */;
 			}
 			else
 			{
-				return "SSS_DUNE_LIVERY_2";
+				return "SSS_DUNE_LIVERY_2" /* GXT: Fukaru Rally */;
 			}
 			break;
 		
@@ -62349,25 +62349,25 @@ char* func_1007(int iParam0, int iParam1)//Position - 0x44376
 			switch (iParam1)
 			{
 				case 97:
-					return "BLIMP3_ELT_1";
+					return "BLIMP3_ELT_1" /* GXT: Chepalle */;
 				
 				case 98:
-					return "BLIMP3_ELT_2";
+					return "BLIMP3_ELT_2" /* GXT: eCola */;
 				
 				case 99:
-					return "BLIMP3_ELT_3";
+					return "BLIMP3_ELT_3" /* GXT: Burger Shot */;
 				
 				case 100:
-					return "BLIMP3_ELT_4";
+					return "BLIMP3_ELT_4" /* GXT: Redwood */;
 				
 				case 101:
-					return "BLIMP3_ELT_5";
+					return "BLIMP3_ELT_5" /* GXT: Sprunk Xtreme */;
 				
 				case 102:
-					return "BLIMP3_ELT_6";
+					return "BLIMP3_ELT_6" /* GXT: Pisswasser */;
 				
 				case 103:
-					return "BLIMP3_ELT_7";
+					return "BLIMP3_ELT_7" /* GXT: Jackal Racing */;
 				
 				case 104:
 					StringCopy(&cVar0, "FCCLUB_NAME_", 16);
@@ -62381,34 +62381,34 @@ char* func_1007(int iParam0, int iParam1)//Position - 0x44376
 			switch (iParam1)
 			{
 				case 105:
-					return "PBUS2_SSA_1";
+					return "PBUS2_SSA_1" /* GXT: Crusty Cruiser */;
 				
 				case 106:
-					return "PBUS2_SSA_2";
+					return "PBUS2_SSA_2" /* GXT: Geometric Camo */;
 				
 				case 107:
-					return "PBUS2_SSA_3";
+					return "PBUS2_SSA_3" /* GXT: Daddy's Back */;
 				
 				case 108:
-					return "PBUS2_SSA_4";
+					return "PBUS2_SSA_4" /* GXT: Cosmic Trip */;
 				
 				case 109:
-					return "PBUS2_SSA_5";
+					return "PBUS2_SSA_5" /* GXT: Urban Arrows */;
 				
 				case 110:
-					return "PBUS2_SSA_6";
+					return "PBUS2_SSA_6" /* GXT: 90s Flava */;
 				
 				case 111:
-					return "PBUS2_SSA_7";
+					return "PBUS2_SSA_7" /* GXT: Purple Swirlz */;
 				
 				case 112:
-					return "PBUS2_SSA_8";
+					return "PBUS2_SSA_8" /* GXT: Alien Invasion */;
 				
 				case 113:
-					return "PBUS2_SSA_9";
+					return "PBUS2_SSA_9" /* GXT: Be Cool Man */;
 				
 				case 114:
-					return "PBUS2_SSA_10";
+					return "PBUS2_SSA_10" /* GXT: Party In My Bus */;
 				
 				default:
 			}
@@ -63293,7 +63293,7 @@ void func_1023()//Position - 0x45415
 	bool bVar2;
 	
 	func_81(0, 0);
-	func_80("MPCT_BRUCIEH");
+	func_80("MPCT_BRUCIEH" /* GXT: BRUCIE */);
 	func_78(1, 1, 0, 0, 0);
 	func_77(1, 2, 1, 1, 1);
 	func_76(0, 0, 0, 0, 0);
@@ -63305,13 +63305,13 @@ void func_1023()//Position - 0x45415
 		{
 			bVar2 = false;
 		}
-		func_512(0, iVar0, "MPCT_BRUCIE0", bVar2);
-		func_62(iVar0, "MPCT_CASH", 1, bVar2, 0, 0, 0);
+		func_512(0, iVar0, "MPCT_BRUCIE0" /* GXT: Bull Shark Testosterone */, bVar2);
+		func_62(iVar0, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar2, 0, 0, 0);
 		func_434(func_86(0), 0);
 	}
 	else
 	{
-		func_62(iVar0, "MPCT_BRUCIE0", 0, 1, 0, 0, 0);
+		func_62(iVar0, "MPCT_BRUCIE0" /* GXT: Bull Shark Testosterone */, 0, 1, 0, 0, 0);
 		func_62(iVar0, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -63321,13 +63321,13 @@ void func_1023()//Position - 0x45415
 	{
 		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 		{
-			func_374(237, "BB_SELECT", -1, 0);
-			func_374(238, "BB_BACK", -1, 0);
+			func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+			func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 		}
 		else
 		{
-			func_373(176, "BB_SELECT", -1);
-			func_373(177, "BB_BACK", -1);
+			func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+			func_373(177, "BB_BACK" /* GXT: Back */, -1);
 		}
 		MISC::SET_BIT(&(Local_122.f_359), 6);
 	}
@@ -63372,7 +63372,7 @@ void func_1024()//Position - 0x45535
 						{
 							if (func_82(Local_122.f_358, 0, 1))
 							{
-								func_368("GC_MENU42", 100, 0);
+								func_368("GC_MENU42" /* GXT: Set Mercenaries to attack ~a~?~n~ Cost: $~1~ */, 100, 0);
 								func_344(PLAYER::GET_PLAYER_NAME(Local_122.f_358));
 								func_358(func_86(12));
 							}
@@ -63492,19 +63492,19 @@ void func_1025()//Position - 0x45653
 					switch (Local_122.f_179)
 					{
 						case 0:
-							func_1039(&iLocal_147, "BB_HEAD", "", 0, -1, -1, 0);
+							func_1039(&iLocal_147, "BB_HEAD" /* GXT: Bounty */, "", 0, -1, -1, 0);
 							break;
 						
 						case 1:
-							func_1039(&iLocal_147, "GC_MENU5", "", 0, -1, -1, 0);
+							func_1039(&iLocal_147, "GC_MENU5" /* GXT: Mugger */, "", 0, -1, -1, 0);
 							break;
 						
 						case 2:
-							func_1039(&iLocal_147, "GC_MENU24", "", 0, -1, -1, 0);
+							func_1039(&iLocal_147, "GC_MENU24" /* GXT: Give Wanted Level */, "", 0, -1, -1, 0);
 							break;
 						
 						case 3:
-							func_1039(&iLocal_147, "GC_MENU23", "", 0, -1, -1, 0);
+							func_1039(&iLocal_147, "GC_MENU23" /* GXT: Mercenaries */, "", 0, -1, -1, 0);
 							break;
 					}
 					bVar2 = false;
@@ -63760,7 +63760,7 @@ void func_1039(var uParam0, char* sParam1, char* sParam2, bool bParam3, int iPar
 				iVar0 = 1;
 				iVar1 = 2;
 			}
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("LBD_DPD_CNT");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("LBD_DPD_CNT" /* GXT: (~1~/~1~) */);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iVar0);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iVar1);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -64480,14 +64480,14 @@ void func_1060()//Position - 0x4685B
 	sVar0 = func_1061();
 	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 	{
-		func_374(237, "BB_SELECT", -1, 0);
-		func_374(238, "BB_BACK", -1, 0);
+		func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+		func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 		func_374(37, sVar0, -1, 0);
 	}
 	else
 	{
-		func_373(176, "BB_SELECT", -1);
-		func_373(177, "BB_BACK", -1);
+		func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+		func_373(177, "BB_BACK" /* GXT: Back */, -1);
 		func_373(236, sVar0, -1);
 	}
 	MISC::SET_BIT(&(Local_122.f_359), 6);
@@ -64503,7 +64503,7 @@ char* func_1061()//Position - 0x468CA
 	}
 	else
 	{
-		sVar0 = "HUD_PS3CRD";
+		sVar0 = "HUD_PS3CRD" /* GXT: Profile */;
 	}
 	return sVar0;
 }
@@ -64524,13 +64524,13 @@ void func_1062()//Position - 0x468F4
 		func_76(0, 0, 0, 0, 0);
 		if (func_336(81, 0, 0))
 		{
-			func_62(iVar0, "GC_MENU41", 0, 1, 0, 0, 0);
-			func_62(iVar0, "MPCT_CASH", 1, 1, 0, 0, 0);
+			func_62(iVar0, "GC_MENU41" /* GXT: Call Mercenaries */, 0, 1, 0, 0, 0);
+			func_62(iVar0, "MPCT_CASH" /* GXT: $~1~ */, 1, 1, 0, 0, 0);
 			func_434(func_86(12), 0);
 		}
 		else
 		{
-			func_62(iVar0, "GC_MENU41", 0, 1, 0, 0, 0);
+			func_62(iVar0, "GC_MENU41" /* GXT: Call Mercenaries */, 0, 1, 0, 0, 0);
 			func_62(iVar0, "", 1, 1, 0, 0, 0);
 			func_511(15, 0);
 		}
@@ -64540,13 +64540,13 @@ void func_1062()//Position - 0x468F4
 		{
 			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 			{
-				func_374(237, "BB_SELECT", -1, 0);
-				func_374(238, "BB_BACK", -1, 0);
+				func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+				func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 			}
 			else
 			{
-				func_373(176, "BB_SELECT", -1);
-				func_373(177, "BB_BACK", -1);
+				func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+				func_373(177, "BB_BACK" /* GXT: Back */, -1);
 			}
 			MISC::SET_BIT(&(Local_122.f_359), 6);
 		}
@@ -64639,7 +64639,7 @@ void func_1064()//Position - 0x46B56
 	bool bVar2;
 	
 	func_81(0, 0);
-	func_80("MPCT_MERRYH");
+	func_80("MPCT_MERRYH" /* GXT: MERRYWEATHER */);
 	func_78(1, 1, 0, 0, 0);
 	func_77(1, 2, 1, 1, 1);
 	func_76(0, 0, 0, 0, 0);
@@ -64651,13 +64651,13 @@ void func_1064()//Position - 0x46B56
 		{
 			bVar2 = false;
 		}
-		func_512(8, 0, "MPCT_MERRY0", bVar2);
-		func_62(0, "MPCT_CASH", 1, bVar2, 0, 0, 0);
+		func_512(8, 0, "MPCT_MERRY0" /* GXT: Ammo Drop */, bVar2);
+		func_62(0, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar2, 0, 0, 0);
 		func_434(func_86(8), 0);
 	}
 	else
 	{
-		func_62(0, "MPCT_MERRY0", 0, 1, 0, 0, 0);
+		func_62(0, "MPCT_MERRY0" /* GXT: Ammo Drop */, 0, 1, 0, 0, 0);
 		func_62(0, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -64671,13 +64671,13 @@ void func_1064()//Position - 0x46B56
 		{
 			bVar2 = false;
 		}
-		func_512(10, 1, "MPCT_MERRY3", bVar2);
-		func_62(1, "MPCT_CASH", 1, bVar2, 0, 0, 0);
+		func_512(10, 1, "MPCT_MERRY3" /* GXT: Backup Helicopter */, bVar2);
+		func_62(1, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar2, 0, 0, 0);
 		func_434(func_86(10), 0);
 	}
 	else
 	{
-		func_62(1, "MPCT_MERRY3", 0, 1, 0, 0, 0);
+		func_62(1, "MPCT_MERRY3" /* GXT: Backup Helicopter */, 0, 1, 0, 0, 0);
 		func_62(1, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -64691,13 +64691,13 @@ void func_1064()//Position - 0x46B56
 		{
 			bVar2 = false;
 		}
-		func_512(9, 2, "MPCT_MERRY1", bVar2);
-		func_62(2, "MPCT_CASH", 1, bVar2, 0, 0, 0);
+		func_512(9, 2, "MPCT_MERRY1" /* GXT: Boat Pickup */, bVar2);
+		func_62(2, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar2, 0, 0, 0);
 		func_434(func_86(9), 0);
 	}
 	else
 	{
-		func_62(2, "MPCT_MERRY1", 0, 1, 0, 0, 0);
+		func_62(2, "MPCT_MERRY1" /* GXT: Boat Pickup */, 0, 1, 0, 0, 0);
 		func_62(2, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -64711,13 +64711,13 @@ void func_1064()//Position - 0x46B56
 		{
 			bVar2 = false;
 		}
-		func_512(13, 3, "MPCT_MERRY5", bVar2);
-		func_62(3, "MPCT_CASH", 1, bVar2, 0, 0, 0);
+		func_512(13, 3, "MPCT_MERRY5" /* GXT: Helicopter Pickup */, bVar2);
+		func_62(3, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar2, 0, 0, 0);
 		func_434(func_86(13), 0);
 	}
 	else
 	{
-		func_62(3, "MPCT_MERRY5", 0, 1, 0, 0, 0);
+		func_62(3, "MPCT_MERRY5" /* GXT: Helicopter Pickup */, 0, 1, 0, 0, 0);
 		func_62(3, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -64731,13 +64731,13 @@ void func_1064()//Position - 0x46B56
 		{
 			bVar2 = false;
 		}
-		func_512(12, 4, "GC_MENU41", bVar2);
-		func_62(4, "MPCT_CASH", 1, bVar2, 0, 0, 0);
+		func_512(12, 4, "GC_MENU41" /* GXT: Call Mercenaries */, bVar2);
+		func_62(4, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar2, 0, 0, 0);
 		func_434(func_86(12), 0);
 	}
 	else
 	{
-		func_62(4, "GC_MENU41", 0, 1, 0, 0, 0);
+		func_62(4, "GC_MENU41" /* GXT: Call Mercenaries */, 0, 1, 0, 0, 0);
 		func_62(4, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -64751,13 +64751,13 @@ void func_1064()//Position - 0x46B56
 		{
 			bVar2 = false;
 		}
-		func_512(11, 5, "MPCT_MERRY4", bVar2);
-		func_62(5, "MPCT_CASH", 1, bVar2, 0, 0, 0);
+		func_512(11, 5, "MPCT_MERRY4" /* GXT: Airstrike */, bVar2);
+		func_62(5, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar2, 0, 0, 0);
 		func_434(func_86(11), 0);
 	}
 	else
 	{
-		func_62(5, "MPCT_MERRY4", 0, 1, 0, 0, 0);
+		func_62(5, "MPCT_MERRY4" /* GXT: Airstrike */, 0, 1, 0, 0, 0);
 		func_62(5, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -64768,13 +64768,13 @@ void func_1064()//Position - 0x46B56
 	{
 		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 		{
-			func_374(237, "BB_SELECT", -1, 0);
-			func_374(238, "BB_BACK", -1, 0);
+			func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+			func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 		}
 		else
 		{
-			func_373(176, "BB_SELECT", -1);
-			func_373(177, "BB_BACK", -1);
+			func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+			func_373(177, "BB_BACK" /* GXT: Back */, -1);
 		}
 		MISC::SET_BIT(&(Local_122.f_359), 6);
 	}
@@ -64835,7 +64835,7 @@ void func_1067()//Position - 0x4706C
 	int iVar2;
 	
 	func_81(0, 0);
-	func_80("MPCT_LAMAR");
+	func_80("MPCT_LAMAR" /* GXT: LAMAR */);
 	func_78(1, 1, 0, 0, 0);
 	func_77(1, 2, 1, 1, 1);
 	func_76(0, 0, 0, 0, 0);
@@ -64847,13 +64847,13 @@ void func_1067()//Position - 0x4706C
 		{
 			bVar1 = false;
 		}
-		func_512(2, iVar0, "GC_MENU7", bVar1);
-		func_62(iVar0, "MPCT_CASH", 1, bVar1, 0, 0, 0);
+		func_512(2, iVar0, "GC_MENU7" /* GXT: Call Mugger */, bVar1);
+		func_62(iVar0, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar1, 0, 0, 0);
 		func_434(func_86(2), 0);
 	}
 	else
 	{
-		func_62(iVar0, "GC_MENU7", 0, 1, 0, 0, 0);
+		func_62(iVar0, "GC_MENU7" /* GXT: Call Mugger */, 0, 1, 0, 0, 0);
 		func_62(iVar0, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -64866,7 +64866,7 @@ void func_1067()//Position - 0x4706C
 		{
 			bVar1 = false;
 		}
-		func_62(iVar0, "FM_LAMC_FR", 0, bVar1, 0, 0, 0);
+		func_62(iVar0, "FM_LAMC_FR" /* GXT: Restart Lamar Missions */, 0, bVar1, 0, 0, 0);
 		Local_122.f_181.f_70[iVar0] = 1;
 		iVar0++;
 	}
@@ -64880,13 +64880,13 @@ void func_1067()//Position - 0x4706C
 	{
 		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 		{
-			func_374(237, "BB_SELECT", -1, 0);
-			func_374(238, "BB_BACK", -1, 0);
+			func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+			func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 		}
 		else
 		{
-			func_373(176, "BB_SELECT", -1);
-			func_373(177, "BB_BACK", -1);
+			func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+			func_373(177, "BB_BACK" /* GXT: Back */, -1);
 		}
 		MISC::SET_BIT(&(Local_122.f_359), 6);
 	}
@@ -65215,13 +65215,13 @@ void func_1075()//Position - 0x47334
 								iVar0 = Local_122.f_181.f_103[0] * 500;
 								if (PLAYER::GET_PLAYER_WANTED_LEVEL(Local_122.f_358) == 0)
 								{
-									func_368("GC_MENU54", 100, 0);
+									func_368("GC_MENU54" /* GXT: Currently has no Wanted Level.~n~Give this player a Wanted Level of ~1~?~n~Cost: $~1~ */, 100, 0);
 									func_358(Local_122.f_181.f_103[0]);
 									func_358(iVar0);
 								}
 								else
 								{
-									func_368("GC_MENU32", 100, 0);
+									func_368("GC_MENU32" /* GXT: Current Wanted Level ~1~~n~Give this player a Wanted Level of ~1~?~n~Cost: $~1~ */, 100, 0);
 									func_358(PLAYER::GET_PLAYER_WANTED_LEVEL(Local_122.f_358));
 									func_358(Local_122.f_181.f_103[0]);
 									func_358(iVar0);
@@ -65308,13 +65308,13 @@ int func_1076()//Position - 0x479FB
 	func_60(-1);
 	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 	{
-		func_374(237, "BB_SELECT", -1, 0);
-		func_374(238, "BB_BACK", -1, 0);
+		func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+		func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 	}
 	else
 	{
-		func_373(176, "BB_SELECT", -1);
-		func_373(177, "BB_BACK", -1);
+		func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+		func_373(177, "BB_BACK" /* GXT: Back */, -1);
 	}
 	MISC::SET_BIT(&(Local_122.f_359), 6);
 	func_372(Local_122.f_181.f_69, 1, 1);
@@ -65329,15 +65329,15 @@ struct<16> func_1077(int iParam0)//Position - 0x47ADD
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var0, "HPSTRAND_IAAb", 64);
+			StringCopy(&Var0, "HPSTRAND_IAAb" /* GXT: The Data Breaches */, 64);
 			break;
 		
 		case 1:
-			StringCopy(&Var0, "HPSTRAND_SUBb", 64);
+			StringCopy(&Var0, "HPSTRAND_SUBb" /* GXT: The Bogdan Problem */, 64);
 			break;
 		
 		case 2:
-			StringCopy(&Var0, "HPSTRAND_MSILb", 64);
+			StringCopy(&Var0, "HPSTRAND_MSILb" /* GXT: The Doomsday Scenario */, 64);
 			break;
 	}
 	return Var0;
@@ -65362,7 +65362,7 @@ int func_1078()//Position - 0x47B24
 	Var7.f_2 = -1;
 	Var7.f_9 = -1;
 	func_81(0, 0);
-	func_80("GC_MENURH");
+	func_80("GC_MENURH" /* GXT: Replay Heist */);
 	func_78(1, 1, 0, 0, 0);
 	func_77(1, 2, 1, 1, 1);
 	func_76(0, 0, 0, 0, 0);
@@ -65404,13 +65404,13 @@ int func_1078()//Position - 0x47B24
 	func_60(-1);
 	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 	{
-		func_374(237, "BB_SELECT", -1, 0);
-		func_374(238, "BB_BACK", -1, 0);
+		func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+		func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 	}
 	else
 	{
-		func_373(176, "BB_SELECT", -1);
-		func_373(177, "BB_BACK", -1);
+		func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+		func_373(177, "BB_BACK" /* GXT: Back */, -1);
 	}
 	MISC::SET_BIT(&(Local_122.f_359), 6);
 	func_372(Local_122.f_181.f_69, 1, 1);
@@ -65657,7 +65657,7 @@ void func_1085()//Position - 0x480B3
 		iLocal_127 = PLAYER::GET_PLAYER_WANTED_LEVEL(Local_122.f_358);
 		func_81(0, 0);
 		StringCopy(&Var1, PLAYER::GET_PLAYER_NAME(Local_122.f_358), 64);
-		func_80("GC_MENU27");
+		func_80("GC_MENU27" /* GXT: ~s~SET WANTED LEVEL */);
 		func_78(1, 1, 0, 0, 0);
 		func_77(1, 2, 1, 1, 1);
 		func_76(0, 1, 0, 0, 0);
@@ -65665,7 +65665,7 @@ void func_1085()//Position - 0x480B3
 		Local_122.f_181.f_69 = 0;
 		func_62(iVar0, "STRING", 1, 1, 0, 0, 0);
 		func_1086(&Var1, 0, 1, 1);
-		func_62(iVar0, "GC_MENU3", 1, 1, 0, 0, 0);
+		func_62(iVar0, "GC_MENU3" /* GXT: ~1~~n~ Cost: $~1~ */, 1, 1, 0, 0, 0);
 		func_434(Local_122.f_181.f_103[0], 0);
 		func_60(-1);
 		Local_122.f_181.f_3[0] = iLocal_127 + 1;
@@ -65674,17 +65674,17 @@ void func_1085()//Position - 0x480B3
 		{
 			if (Local_122.f_181.f_69 == 0)
 			{
-				func_374(237, "BB_SELECT", -1, 0);
+				func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
 			}
-			func_374(238, "BB_BACK", -1, 0);
+			func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 		}
 		else
 		{
 			if (Local_122.f_181.f_69 == 0)
 			{
-				func_373(176, "BB_SELECT", -1);
+				func_373(176, "BB_SELECT" /* GXT: Select */, -1);
 			}
-			func_373(177, "BB_BACK", -1);
+			func_373(177, "BB_BACK" /* GXT: Back */, -1);
 		}
 		MISC::SET_BIT(&(Local_122.f_359), 6);
 		func_372(Local_122.f_181.f_69, 1, 1);
@@ -65770,11 +65770,11 @@ void func_1087()//Position - 0x4832D
 		func_80("STRING");
 		if (bVar1)
 		{
-			func_80("BB_CUR_TITLE");
+			func_80("BB_CUR_TITLE" /* GXT: CURRENT BOUNTY */);
 		}
 		else
 		{
-			func_80("BB_SET_TITLE");
+			func_80("BB_SET_TITLE" /* GXT: SET NEW BOUNTY */);
 		}
 		func_78(1, 1, 0, 0, 0);
 		func_77(1, 2, 1, 1, 1);
@@ -65785,20 +65785,20 @@ void func_1087()//Position - 0x4832D
 		{
 			func_62(iVar0, "STRING", 1, 1, 0, 0, 0);
 			func_1086(&Var2, 0, 1, 1);
-			func_62(iVar0, "BB_CASHAMT", 1, 1, 0, 0, 0);
+			func_62(iVar0, "BB_CASHAMT" /* GXT: $~1~ */, 1, 1, 0, 0, 0);
 			func_434(func_1089(Local_122.f_358), 0);
 			Local_122.f_181.f_3[1] = 0;
 			Local_122.f_181.f_36[1] = 0;
 			func_60(-1);
 			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 			{
-				func_374(237, "BB_SELECT", -1, 0);
-				func_374(238, "BB_BACK", -1, 0);
+				func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+				func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 			}
 			else
 			{
-				func_373(176, "BB_SELECT", -1);
-				func_373(177, "BB_BACK", -1);
+				func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+				func_373(177, "BB_BACK" /* GXT: Back */, -1);
 			}
 			MISC::SET_BIT(&(Local_122.f_359), 6);
 		}
@@ -65806,7 +65806,7 @@ void func_1087()//Position - 0x4832D
 		{
 			func_62(iVar0, "STRING", 1, 1, 0, 0, 0);
 			func_1086(&Var2, 0, 1, 1);
-			func_62(iVar0, "BB_CASHAMT", 1, 1, 0, 0, 0);
+			func_62(iVar0, "BB_CASHAMT" /* GXT: $~1~ */, 1, 1, 0, 0, 0);
 			func_434(func_1088(Local_122.f_181.f_103[0]), 0);
 			func_60(-1);
 			Local_122.f_181.f_3[0] = 0;
@@ -65815,18 +65815,18 @@ void func_1087()//Position - 0x4832D
 			Local_122.f_181.f_3[1] = 0;
 			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 			{
-				func_374(237, "BB_SELECT", -1, 0);
-				func_374(238, "BB_BACK", -1, 0);
+				func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+				func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 			}
 			else
 			{
-				func_373(176, "BB_SELECT", -1);
-				func_373(177, "BB_BACK", -1);
+				func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+				func_373(177, "BB_BACK" /* GXT: Back */, -1);
 			}
 			MISC::SET_BIT(&(Local_122.f_359), 6);
 		}
 		iVar0++;
-		func_62(iVar0, "BB_LC_EXIT", 0, 1, 0, 0, 0);
+		func_62(iVar0, "BB_LC_EXIT" /* GXT: Exit */, 0, 1, 0, 0, 0);
 		iVar0++;
 		if (Local_122.f_181.f_69 == 0)
 		{
@@ -66219,7 +66219,7 @@ void func_1096()//Position - 0x48B98
 	int iVar3;
 	
 	func_81(0, 0);
-	func_80("BB_FIRST_0");
+	func_80("BB_FIRST_0" /* GXT: LESTER */);
 	func_78(1, 1, 0, 0, 0);
 	func_77(1, 2, 1, 1, 1);
 	func_76(0, 0, 0, 0, 0);
@@ -66230,11 +66230,11 @@ void func_1096()//Position - 0x48B98
 		{
 			bVar1 = false;
 		}
-		func_512(1, iVar2, "BB_FIRST_1", bVar1);
+		func_512(1, iVar2, "BB_FIRST_1" /* GXT: Set Bounty */, bVar1);
 	}
 	else
 	{
-		func_62(iVar2, "BB_FIRST_1", 0, 1, 0, 0, 0);
+		func_62(iVar2, "BB_FIRST_1" /* GXT: Set Bounty */, 0, 1, 0, 0, 0);
 		func_62(iVar2, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -66250,21 +66250,21 @@ void func_1096()//Position - 0x48B98
 			bVar1 = false;
 			bVar1 = false;
 		}
-		func_512(20, iVar2, "GC_MENU26", bVar1);
+		func_512(20, iVar2, "GC_MENU26" /* GXT: Remove Wanted Level */, bVar1);
 		iVar3 = func_86(20);
 		if (iVar3 <= 0)
 		{
-			func_62(iVar2, "PEG_FREE", 0, bVar1, 0, 0, 0);
+			func_62(iVar2, "PEG_FREE" /* GXT: FREE */, 0, bVar1, 0, 0, 0);
 		}
 		else
 		{
-			func_62(iVar2, "MPCT_CASH", 1, bVar1, 0, 0, 0);
+			func_62(iVar2, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar1, 0, 0, 0);
 			func_434(iVar3, 0);
 		}
 	}
 	else
 	{
-		func_62(iVar2, "GC_MENU26", 0, 1, 0, 0, 0);
+		func_62(iVar2, "GC_MENU26" /* GXT: Remove Wanted Level */, 0, 1, 0, 0, 0);
 		func_62(iVar2, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -66279,13 +66279,13 @@ void func_1096()//Position - 0x48B98
 			MISC::SET_BIT(&uLocal_172, 2);
 			bVar1 = false;
 		}
-		func_512(6, iVar2, "GC_MENU25", bVar1);
-		func_62(iVar2, "MPCT_CASH", 1, bVar1, 0, 0, 0);
+		func_512(6, iVar2, "GC_MENU25" /* GXT: Off the Radar */, bVar1);
+		func_62(iVar2, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar1, 0, 0, 0);
 		func_434(func_86(6), 0);
 	}
 	else
 	{
-		func_62(iVar2, "GC_MENU25", 0, 1, 0, 0, 0);
+		func_62(iVar2, "GC_MENU25" /* GXT: Off the Radar */, 0, 1, 0, 0, 0);
 		func_62(iVar2, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -66300,13 +66300,13 @@ void func_1096()//Position - 0x48B98
 			MISC::SET_BIT(&uLocal_172, 3);
 			bVar1 = false;
 		}
-		func_512(14, iVar2, "GC_MENU47", bVar1);
-		func_62(iVar2, "MPCT_CASH", 1, bVar1, 0, 0, 0);
+		func_512(14, iVar2, "GC_MENU47" /* GXT: Reveal Players */, bVar1);
+		func_62(iVar2, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar1, 0, 0, 0);
 		func_434(func_86(14), 0);
 	}
 	else
 	{
-		func_62(iVar2, "GC_MENU47", 0, 1, 0, 0, 0);
+		func_62(iVar2, "GC_MENU47" /* GXT: Reveal Players */, 0, 1, 0, 0, 0);
 		func_62(iVar2, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -66321,16 +66321,16 @@ void func_1096()//Position - 0x48B98
 			MISC::SET_BIT(&uLocal_172, 4);
 			bVar1 = false;
 		}
-		func_512(15, iVar2, "GC_MENU48", bVar1);
+		func_512(15, iVar2, "GC_MENU48" /* GXT: Request Job */, bVar1);
 		if (func_86(15) > 0)
 		{
-			func_62(iVar2, "MPCT_CASH", 1, bVar1, 0, 0, 0);
+			func_62(iVar2, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar1, 0, 0, 0);
 			func_434(func_86(15), 0);
 		}
 	}
 	else
 	{
-		func_62(iVar2, "GC_MENU48", 0, 1, 0, 0, 0);
+		func_62(iVar2, "GC_MENU48" /* GXT: Request Job */, 0, 1, 0, 0, 0);
 		func_62(iVar2, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -66345,16 +66345,16 @@ void func_1096()//Position - 0x48B98
 			MISC::SET_BIT(&uLocal_172, 5);
 			bVar1 = false;
 		}
-		func_512(36, iVar2, "GC_MENURH", bVar1);
+		func_512(36, iVar2, "GC_MENURH" /* GXT: Replay Heist */, bVar1);
 		if (func_86(36) > 0)
 		{
-			func_62(iVar2, "MPCT_CASH", 1, bVar1, 0, 0, 0);
+			func_62(iVar2, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar1, 0, 0, 0);
 			func_434(func_86(36), 0);
 		}
 	}
 	else
 	{
-		func_62(iVar2, "GC_MENURH", 0, 1, 0, 0, 0);
+		func_62(iVar2, "GC_MENURH" /* GXT: Replay Heist */, 0, 1, 0, 0, 0);
 		func_62(iVar2, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -66368,16 +66368,16 @@ void func_1096()//Position - 0x48B98
 		{
 			bVar1 = false;
 		}
-		func_512(37, iVar2, "GC_MENUCH", bVar1);
+		func_512(37, iVar2, "GC_MENUCH" /* GXT: Cancel Heist */, bVar1);
 		if (func_86(37) > 0)
 		{
-			func_62(iVar2, "MPCT_CASH", 1, bVar1, 0, 0, 0);
+			func_62(iVar2, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar1, 0, 0, 0);
 			func_434(func_86(15), 0);
 		}
 	}
 	else
 	{
-		func_62(iVar2, "GC_MENUCH", 0, 1, 0, 0, 0);
+		func_62(iVar2, "GC_MENUCH" /* GXT: Cancel Heist */, 0, 1, 0, 0, 0);
 		func_62(iVar2, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -66390,16 +66390,16 @@ void func_1096()//Position - 0x48B98
 		{
 			bVar1 = false;
 		}
-		func_512(51, iVar2, "HPPHONE_CANCEL", bVar1);
+		func_512(51, iVar2, "HPPHONE_CANCEL" /* GXT: Cancel The Doomsday Heist */, bVar1);
 		if (func_86(51) > 0)
 		{
-			func_62(iVar2, "MPCT_CASH", 1, bVar1, 0, 0, 0);
+			func_62(iVar2, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar1, 0, 0, 0);
 			func_434(func_86(51), 0);
 		}
 	}
 	else
 	{
-		func_62(iVar2, "HPPHONE_CANCEL", 0, 1, 0, 0, 0);
+		func_62(iVar2, "HPPHONE_CANCEL" /* GXT: Cancel The Doomsday Heist */, 0, 1, 0, 0, 0);
 		func_62(iVar2, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -66412,16 +66412,16 @@ void func_1096()//Position - 0x48B98
 		{
 			bVar1 = false;
 		}
-		func_512(61, iVar2, "CSH_LPHONE_CANCEL", bVar1);
+		func_512(61, iVar2, "CSH_LPHONE_CANCEL" /* GXT: Cancel The Diamond Casino Heist */, bVar1);
 		if (func_86(61) > 0)
 		{
-			func_62(iVar2, "MPCT_CASH", 1, bVar1, 0, 0, 0);
+			func_62(iVar2, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar1, 0, 0, 0);
 			func_434(func_86(61), 0);
 		}
 	}
 	else
 	{
-		func_62(iVar2, "CSH_LPHONE_CANCEL", 0, 1, 0, 0, 0);
+		func_62(iVar2, "CSH_LPHONE_CANCEL" /* GXT: Cancel The Diamond Casino Heist */, 0, 1, 0, 0, 0);
 		func_62(iVar2, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -66435,13 +66435,13 @@ void func_1096()//Position - 0x48B98
 		{
 			bVar1 = false;
 		}
-		func_512(23, iVar2, "GC_MENU49", bVar1);
-		func_62(iVar2, "MPCT_CASH", 1, bVar1, 0, 0, 0);
+		func_512(23, iVar2, "GC_MENU49" /* GXT: Locate a Boat */, bVar1);
+		func_62(iVar2, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar1, 0, 0, 0);
 		func_434(func_86(23), 0);
 	}
 	else
 	{
-		func_62(iVar2, "GC_MENU49", 0, 1, 0, 0, 0);
+		func_62(iVar2, "GC_MENU49" /* GXT: Locate a Boat */, 0, 1, 0, 0, 0);
 		func_62(iVar2, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -66455,13 +66455,13 @@ void func_1096()//Position - 0x48B98
 		{
 			bVar1 = false;
 		}
-		func_512(24, iVar2, "GC_MENU50", bVar1);
-		func_62(iVar2, "MPCT_CASH", 1, bVar1, 0, 0, 0);
+		func_512(24, iVar2, "GC_MENU50" /* GXT: Locate a Helicopter */, bVar1);
+		func_62(iVar2, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar1, 0, 0, 0);
 		func_434(func_86(24), 0);
 	}
 	else
 	{
-		func_62(iVar2, "GC_MENU50", 0, 1, 0, 0, 0);
+		func_62(iVar2, "GC_MENU50" /* GXT: Locate a Helicopter */, 0, 1, 0, 0, 0);
 		func_62(iVar2, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -66475,13 +66475,13 @@ void func_1096()//Position - 0x48B98
 		{
 			bVar1 = false;
 		}
-		func_512(25, iVar2, "GC_MENU51", bVar1);
-		func_62(iVar2, "MPCT_CASH", 1, bVar1, 0, 0, 0);
+		func_512(25, iVar2, "GC_MENU51" /* GXT: Locate a Car */, bVar1);
+		func_62(iVar2, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar1, 0, 0, 0);
 		func_434(func_86(25), 0);
 	}
 	else
 	{
-		func_62(iVar2, "GC_MENU51", 0, 1, 0, 0, 0);
+		func_62(iVar2, "GC_MENU51" /* GXT: Locate a Car */, 0, 1, 0, 0, 0);
 		func_62(iVar2, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -66495,13 +66495,13 @@ void func_1096()//Position - 0x48B98
 		{
 			bVar1 = false;
 		}
-		func_512(26, iVar2, "GC_MENU52", bVar1);
-		func_62(iVar2, "MPCT_CASH", 1, bVar1, 0, 0, 0);
+		func_512(26, iVar2, "GC_MENU52" /* GXT: Locate a Plane */, bVar1);
+		func_62(iVar2, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar1, 0, 0, 0);
 		func_434(func_86(26), 0);
 	}
 	else
 	{
-		func_62(iVar2, "GC_MENU52", 0, 1, 0, 0, 0);
+		func_62(iVar2, "GC_MENU52" /* GXT: Locate a Plane */, 0, 1, 0, 0, 0);
 		func_62(iVar2, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -66520,13 +66520,13 @@ void func_1096()//Position - 0x48B98
 		{
 			bVar1 = false;
 		}
-		func_512(35, iVar2, "GC_MENU55", bVar1);
-		func_62(iVar2, "MPCT_CASH", 1, bVar1, 0, 0, 0);
+		func_512(35, iVar2, "GC_MENU55" /* GXT: Cops Turn Blind Eye */, bVar1);
+		func_62(iVar2, "MPCT_CASH" /* GXT: $~1~ */, 1, bVar1, 0, 0, 0);
 		func_434(func_86(35), 0);
 	}
 	else
 	{
-		func_62(iVar2, "GC_MENU55", 0, 1, 0, 0, 0);
+		func_62(iVar2, "GC_MENU55" /* GXT: Cops Turn Blind Eye */, 0, 1, 0, 0, 0);
 		func_62(iVar2, "", 1, 1, 0, 0, 0);
 		func_511(15, 0);
 	}
@@ -66537,13 +66537,13 @@ void func_1096()//Position - 0x48B98
 	{
 		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 		{
-			func_374(237, "BB_SELECT", -1, 0);
-			func_374(238, "BB_BACK", -1, 0);
+			func_374(237, "BB_SELECT" /* GXT: Select */, -1, 0);
+			func_374(238, "BB_BACK" /* GXT: Back */, -1, 0);
 		}
 		else
 		{
-			func_373(176, "BB_SELECT", -1);
-			func_373(177, "BB_BACK", -1);
+			func_373(176, "BB_SELECT" /* GXT: Select */, -1);
+			func_373(177, "BB_BACK" /* GXT: Back */, -1);
 		}
 		MISC::SET_BIT(&(Local_122.f_359), 6);
 	}
@@ -66573,7 +66573,7 @@ void func_1097()//Position - 0x495F3
 	}
 	else if (BitTest(uLocal_187, 0))
 	{
-		HUD::SET_WARNING_MESSAGE_WITH_HEADER("HUD_CONNPROB", "MPCT_CNCW", 36, 0, false, -1, 0, 0, true, 0);
+		HUD::SET_WARNING_MESSAGE_WITH_HEADER("HUD_CONNPROB" /* GXT: alert */, "MPCT_CNCW" /* GXT: Are you sure you want to cancel this Heist? If you have paid a setup cost it won't be refunded. */, 36, 0, false, -1, 0, 0, true, 0);
 		if (func_117(&uLocal_176, 1000, 0))
 		{
 			if (func_538(201))
@@ -66750,7 +66750,7 @@ void func_1104()//Position - 0x499FD
 {
 	if (BitTest(iLocal_178, 0))
 	{
-		HUD::SET_WARNING_MESSAGE_WITH_HEADER("HUD_CONNPROB", "MPCT_CNCW", 36, 0, false, -1, 0, 0, true, 0);
+		HUD::SET_WARNING_MESSAGE_WITH_HEADER("HUD_CONNPROB" /* GXT: alert */, "MPCT_CNCW" /* GXT: Are you sure you want to cancel this Heist? If you have paid a setup cost it won't be refunded. */, 36, 0, false, -1, 0, 0, true, 0);
 		if (func_117(&uLocal_176, 1000, 0))
 		{
 			if (func_538(201))
@@ -67386,7 +67386,7 @@ void func_1118()//Position - 0x4A5E0
 {
 	if (BitTest(uLocal_175, 0))
 	{
-		HUD::SET_WARNING_MESSAGE_WITH_HEADER("HUD_CONNPROB", "MPCT_CNCW", 36, 0, false, -1, 0, 0, true, 0);
+		HUD::SET_WARNING_MESSAGE_WITH_HEADER("HUD_CONNPROB" /* GXT: alert */, "MPCT_CNCW" /* GXT: Are you sure you want to cancel this Heist? If you have paid a setup cost it won't be refunded. */, 36, 0, false, -1, 0, 0, true, 0);
 		if (func_117(&uLocal_176, 1000, 0))
 		{
 			if (func_538(201))
@@ -67652,7 +67652,7 @@ void func_1121()//Position - 0x4A69E
 			{
 				if (func_1330())
 				{
-					AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FREEMODE_SOUNDSET", true);
+					AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FREEMODE_SOUNDSET", true);
 					MISC::SET_BIT(&(Local_122.f_181), 4);
 					bVar11 = true;
 					func_1159();
@@ -68024,7 +68024,7 @@ void func_1142()//Position - 0x4B188
 	}
 	else if (iLocal_152 != 0)
 	{
-		AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FREEMODE_SOUNDSET", true);
+		AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FREEMODE_SOUNDSET", true);
 		MISC::CLEAR_BIT(&(Local_122.f_359), 4);
 	}
 }
@@ -71735,78 +71735,78 @@ void func_1256()//Position - 0x4F1F5
 	{
 		if (iVar1 == 1)
 		{
-			func_368("BB_PVUNA1", 100, 0);
+			func_368("BB_PVUNA1" /* GXT: You have no Personal Vehicle in this space. */, 100, 0);
 			func_92(14, 0);
 		}
 		else if (iVar1 == 2)
 		{
-			func_368("BB_PVUNA2", 100, 0);
+			func_368("BB_PVUNA2" /* GXT: You are too close to your current Personal Vehicle. */, 100, 0);
 			func_92(13, 0);
 		}
 		else if (iVar1 == 3)
 		{
-			func_368("BB_PVUNA3", 100, 0);
+			func_368("BB_PVUNA3" /* GXT: Your Personal Vehicle is not empty. */, 100, 0);
 			func_92(15, 0);
 		}
 		else if (iVar1 == 4)
 		{
-			func_368("BB_PVUNA4", 100, 0);
+			func_368("BB_PVUNA4" /* GXT: You are too far from a suitable road. */, 100, 0);
 			func_92(16, 0);
 		}
 		else if (iVar1 == 5)
 		{
-			func_368("BB_PVUNA5", 100, 0);
+			func_368("BB_PVUNA5" /* GXT: Unlocks when you have a Garage. */, 100, 0);
 			func_92(17, 0);
 		}
 		else if (iVar1 == 6)
 		{
-			func_368("BB_PVUNA6", 100, 0);
+			func_368("BB_PVUNA6" /* GXT: Unavailable. */, 100, 0);
 			func_92(18, 0);
 		}
 		else if (iVar1 == 7)
 		{
-			func_368("BB_PVUNA7", 100, 0);
+			func_368("BB_PVUNA7" /* GXT: A delivery is in progress. */, 100, 0);
 			func_92(21, 0);
 		}
 		else if (iVar1 == 8)
 		{
-			func_368("BB_PVUNA8", 100, 0);
+			func_368("BB_PVUNA8" /* GXT: Your Personal Vehicle is impounded. */, 100, 0);
 			func_92(22, 0);
 			func_1(Local_122.f_1, "CT_AUD", "MPCT_MCGEN2", &Local_166, 0);
 		}
 		else if (iVar1 == 9)
 		{
-			func_368("BB_PVUNA9", 100, 0);
+			func_368("BB_PVUNA9" /* GXT: You are already using your Personal Vehicle. */, 100, 0);
 			func_1197(2, 0);
 		}
 		else if (iVar1 == 11)
 		{
-			func_368("BB_PVUNA11", 100, 0);
+			func_368("BB_PVUNA11" /* GXT: You are too close to your Garage. */, 100, 0);
 			func_1197(13, 0);
 		}
 		else if (iVar1 == 12)
 		{
-			func_368("BB_PVUNA12", 100, 0);
+			func_368("BB_PVUNA12" /* GXT: Your Personal Vehicle is destroyed. You can call Mors Mutual Insurance to make a claim. */, 100, 0);
 			func_1197(16, 0);
 		}
 		else if (iVar1 == 13)
 		{
-			func_368("BB_PVUNA13", 100, 0);
+			func_368("BB_PVUNA13" /* GXT: Your Personal Vehicle is destroyed. To protect your vehicles in the future you can purchase Car Insurance. */, 100, 0);
 			func_1197(18, 0);
 		}
 		else if (iVar1 == 14)
 		{
-			func_368("PIM_HRPV14", 100, 0);
+			func_368("PIM_HRPV14" /* GXT: You already have an active Special/Personal Vehicle. */, 100, 0);
 			func_1197(23, 0);
 		}
 		else if (iVar1 == 98)
 		{
-			func_368("BB_PVUNA98", 100, 0);
+			func_368("BB_PVUNA98" /* GXT: Your Personal Vehicle is already in the LS Car Meet. Return it to Storage via the Vehicles section of the Interaction Menu if you wish to request another vehicle. */, 100, 0);
 			func_1197(24, 0);
 		}
 		else if (iVar1 == 99)
 		{
-			func_368("PIM_HRPV99", 100, 0);
+			func_368("PIM_HRPV99" /* GXT: This vehicle is not allowed inside the LS Car Meet. */, 100, 0);
 			func_1197(25, 0);
 		}
 	}
@@ -72462,7 +72462,7 @@ int func_1264(struct<3> Param0)//Position - 0x50252
 	char* sVar0;
 	
 	sVar0 = ZONE::GET_NAME_OF_ZONE(Param0);
-	if (((((((((((((((((((((((((((((((((((((((((((((MISC::ARE_STRINGS_EQUAL("SanAnd", sVar0) || MISC::ARE_STRINGS_EQUAL("Alamo", sVar0)) || MISC::ARE_STRINGS_EQUAL("ArmyB", sVar0)) || MISC::ARE_STRINGS_EQUAL("BhamCa", sVar0)) || MISC::ARE_STRINGS_EQUAL("Baytre", sVar0)) || MISC::ARE_STRINGS_EQUAL("BradT", sVar0)) || MISC::ARE_STRINGS_EQUAL("BradP", sVar0)) || MISC::ARE_STRINGS_EQUAL("CANNY", sVar0)) || MISC::ARE_STRINGS_EQUAL("CCreak", sVar0)) || MISC::ARE_STRINGS_EQUAL("ChamH", sVar0)) || MISC::ARE_STRINGS_EQUAL("CHU", sVar0)) || MISC::ARE_STRINGS_EQUAL("COSI", sVar0)) || MISC::ARE_STRINGS_EQUAL("CMSW", sVar0)) || MISC::ARE_STRINGS_EQUAL("Cypre", sVar0)) || MISC::ARE_STRINGS_EQUAL("Desrt", sVar0)) || MISC::ARE_STRINGS_EQUAL("ELGorl", sVar0)) || MISC::ARE_STRINGS_EQUAL("Galli", sVar0)) || MISC::ARE_STRINGS_EQUAL("Galfish", sVar0)) || MISC::ARE_STRINGS_EQUAL("Harmo", sVar0)) || MISC::ARE_STRINGS_EQUAL("HumLab", sVar0)) || MISC::ARE_STRINGS_EQUAL("Jail", sVar0)) || MISC::ARE_STRINGS_EQUAL("LAct", sVar0)) || MISC::ARE_STRINGS_EQUAL("LDam", sVar0)) || MISC::ARE_STRINGS_EQUAL("Lago", sVar0)) || MISC::ARE_STRINGS_EQUAL("MTChil", sVar0)) || MISC::ARE_STRINGS_EQUAL("MTJose", sVar0)) || MISC::ARE_STRINGS_EQUAL("MTGordo", sVar0)) || MISC::ARE_STRINGS_EQUAL("NCHU", sVar0)) || MISC::ARE_STRINGS_EQUAL("Oceana", sVar0)) || MISC::ARE_STRINGS_EQUAL("Palmpow", sVar0)) || MISC::ARE_STRINGS_EQUAL("PBluff", sVar0)) || MISC::ARE_STRINGS_EQUAL("Paleto", sVar0)) || MISC::ARE_STRINGS_EQUAL("PalCov", sVar0)) || MISC::ARE_STRINGS_EQUAL("PalFor", sVar0)) || MISC::ARE_STRINGS_EQUAL("PalHigh", sVar0)) || MISC::ARE_STRINGS_EQUAL("RTRAK", sVar0)) || MISC::ARE_STRINGS_EQUAL("Rancho", sVar0)) || MISC::ARE_STRINGS_EQUAL("SANDY", sVar0)) || MISC::ARE_STRINGS_EQUAL("TongvaH", sVar0)) || MISC::ARE_STRINGS_EQUAL("TongvaV", sVar0)) || MISC::ARE_STRINGS_EQUAL("Zenora", sVar0)) || MISC::ARE_STRINGS_EQUAL("Slab", sVar0)) || MISC::ARE_STRINGS_EQUAL("WindF", sVar0)) || MISC::ARE_STRINGS_EQUAL("Zancudo", sVar0)) || MISC::ARE_STRINGS_EQUAL("SanChia", sVar0)) || MISC::ARE_STRINGS_EQUAL("zQ_UAR", sVar0))
+	if (((((((((((((((((((((((((((((((((((((((((((((MISC::ARE_STRINGS_EQUAL("SanAnd" /* GXT: San Andreas */, sVar0) || MISC::ARE_STRINGS_EQUAL("Alamo" /* GXT: Alamo Sea */, sVar0)) || MISC::ARE_STRINGS_EQUAL("ArmyB" /* GXT: Fort Zancudo */, sVar0)) || MISC::ARE_STRINGS_EQUAL("BhamCa" /* GXT: Banham Canyon */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Baytre" /* GXT: Baytree Canyon */, sVar0)) || MISC::ARE_STRINGS_EQUAL("BradT" /* GXT: Braddock Tunnel */, sVar0)) || MISC::ARE_STRINGS_EQUAL("BradP" /* GXT: Braddock Pass */, sVar0)) || MISC::ARE_STRINGS_EQUAL("CANNY" /* GXT: Raton Canyon */, sVar0)) || MISC::ARE_STRINGS_EQUAL("CCreak" /* GXT: Cassidy Creek */, sVar0)) || MISC::ARE_STRINGS_EQUAL("ChamH" /* GXT: Chamberlain Hills */, sVar0)) || MISC::ARE_STRINGS_EQUAL("CHU" /* GXT: Chumash */, sVar0)) || MISC::ARE_STRINGS_EQUAL("COSI" /* GXT: Countryside */, sVar0)) || MISC::ARE_STRINGS_EQUAL("CMSW" /* GXT: Chiliad Mountain State Wilderness */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Cypre" /* GXT: Cypress Flats */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Desrt" /* GXT: Grand Senora Desert */, sVar0)) || MISC::ARE_STRINGS_EQUAL("ELGorl" /* GXT: El Gordo Lighthouse */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Galli" /* GXT: Galileo Park */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Galfish" /* GXT: Galilee */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Harmo" /* GXT: Harmony */, sVar0)) || MISC::ARE_STRINGS_EQUAL("HumLab" /* GXT: Humane Labs and Research */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Jail" /* GXT: Bolingbroke Penitentiary */, sVar0)) || MISC::ARE_STRINGS_EQUAL("LAct" /* GXT: Land Act Reservoir */, sVar0)) || MISC::ARE_STRINGS_EQUAL("LDam" /* GXT: Land Act Dam */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Lago" /* GXT: Lago Zancudo */, sVar0)) || MISC::ARE_STRINGS_EQUAL("MTChil" /* GXT: Mount Chiliad */, sVar0)) || MISC::ARE_STRINGS_EQUAL("MTJose" /* GXT: Mount Josiah */, sVar0)) || MISC::ARE_STRINGS_EQUAL("MTGordo" /* GXT: Mount Gordo */, sVar0)) || MISC::ARE_STRINGS_EQUAL("NCHU" /* GXT: North Chumash */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Oceana" /* GXT: Pacific Ocean */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Palmpow" /* GXT: Palmer-Taylor Power Station */, sVar0)) || MISC::ARE_STRINGS_EQUAL("PBluff" /* GXT: Pacific Bluffs */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Paleto" /* GXT: Paleto Bay */, sVar0)) || MISC::ARE_STRINGS_EQUAL("PalCov" /* GXT: Paleto Cove */, sVar0)) || MISC::ARE_STRINGS_EQUAL("PalFor" /* GXT: Paleto Forest */, sVar0)) || MISC::ARE_STRINGS_EQUAL("PalHigh" /* GXT: Palomino Highlands */, sVar0)) || MISC::ARE_STRINGS_EQUAL("RTRAK" /* GXT: Redwood Lights Track */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Rancho" /* GXT: Rancho */, sVar0)) || MISC::ARE_STRINGS_EQUAL("SANDY" /* GXT: Sandy Shores */, sVar0)) || MISC::ARE_STRINGS_EQUAL("TongvaH" /* GXT: Tongva Hills */, sVar0)) || MISC::ARE_STRINGS_EQUAL("TongvaV" /* GXT: Tongva Valley */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Zenora" /* GXT: Senora Freeway */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Slab" /* GXT: Stab City */, sVar0)) || MISC::ARE_STRINGS_EQUAL("WindF" /* GXT: Ron Alternates Wind Farm */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Zancudo" /* GXT: Zancudo River */, sVar0)) || MISC::ARE_STRINGS_EQUAL("SanChia" /* GXT: San Chianski Mountain Range */, sVar0)) || MISC::ARE_STRINGS_EQUAL("zQ_UAR" /* GXT: Davis Quartz */, sVar0))
 	{
 		return 1;
 	}
@@ -79746,7 +79746,7 @@ void func_1362(int iParam0, bool bParam1, int iParam2)//Position - 0x5851C
 		{
 			StringCopy(&Var0, "SCLUB_NM_", 16);
 			StringIntConCat(&Var0, Global_2815059.f_4546.f_10[iVar1], 16);
-			func_1363("MP_STRIP_IN4", &Var0, -1);
+			func_1363("MP_STRIP_IN4" /* GXT: ~a~ will arrive at your Apartment shortly. */, &Var0, -1);
 		}
 		Global_2815059.f_4546.f_18++;
 	}
@@ -80670,77 +80670,77 @@ void func_1395(int iParam0)//Position - 0x59796
 		MISC::CLEAR_BIT(&(Local_122.f_359), 10);
 		if (iVar1 == 1)
 		{
-			func_368("BB_PVUNA1", 100, 0);
+			func_368("BB_PVUNA1" /* GXT: You have no Personal Vehicle in this space. */, 100, 0);
 			func_92(14, 0);
 		}
 		else if (iVar1 == 2)
 		{
-			func_368("BB_PVUNA2", 100, 0);
+			func_368("BB_PVUNA2" /* GXT: You are too close to your current Personal Vehicle. */, 100, 0);
 			func_92(13, 0);
 		}
 		else if (iVar1 == 3)
 		{
-			func_368("BB_PVUNA3", 100, 0);
+			func_368("BB_PVUNA3" /* GXT: Your Personal Vehicle is not empty. */, 100, 0);
 			func_92(15, 0);
 		}
 		else if (iVar1 == 4)
 		{
-			func_368("BB_PVUNA4", 100, 0);
+			func_368("BB_PVUNA4" /* GXT: You are too far from a suitable road. */, 100, 0);
 			func_92(16, 0);
 		}
 		else if (iVar1 == 5)
 		{
-			func_368("BB_PVUNA5", 100, 0);
+			func_368("BB_PVUNA5" /* GXT: Unlocks when you have a Garage. */, 100, 0);
 			func_92(17, 0);
 		}
 		else if (iVar1 == 6)
 		{
-			func_368("BB_PVUNA6", 100, 0);
+			func_368("BB_PVUNA6" /* GXT: Unavailable. */, 100, 0);
 			func_92(18, 0);
 		}
 		else if (iVar1 == 7)
 		{
-			func_368("BB_PVUNA7", 100, 0);
+			func_368("BB_PVUNA7" /* GXT: A delivery is in progress. */, 100, 0);
 			func_92(21, 0);
 		}
 		else if (iVar1 == 8)
 		{
-			func_368("BB_PVUNA8", 100, 0);
+			func_368("BB_PVUNA8" /* GXT: Your Personal Vehicle is impounded. */, 100, 0);
 			func_92(22, 0);
 		}
 		else if (iVar1 == 9)
 		{
-			func_368("BB_PVUNA9", 100, 0);
+			func_368("BB_PVUNA9" /* GXT: You are already using your Personal Vehicle. */, 100, 0);
 			func_1197(2, 0);
 		}
 		else if (iVar1 == 11)
 		{
-			func_368("BB_PVUNA11", 100, 0);
+			func_368("BB_PVUNA11" /* GXT: You are too close to your Garage. */, 100, 0);
 			func_1197(13, 0);
 		}
 		else if (iVar1 == 12)
 		{
-			func_368("BB_PVUNA12", 100, 0);
+			func_368("BB_PVUNA12" /* GXT: Your Personal Vehicle is destroyed. You can call Mors Mutual Insurance to make a claim. */, 100, 0);
 			func_1197(16, 0);
 		}
 		else if (iVar1 == 13)
 		{
-			func_368("BB_PVUNA13", 100, 0);
+			func_368("BB_PVUNA13" /* GXT: Your Personal Vehicle is destroyed. To protect your vehicles in the future you can purchase Car Insurance. */, 100, 0);
 			func_1197(18, 0);
 		}
 		else if (iVar1 == 14)
 		{
-			func_368("PIM_HRPV14", 100, 0);
+			func_368("PIM_HRPV14" /* GXT: You already have an active Special/Personal Vehicle. */, 100, 0);
 			func_1197(23, 0);
 		}
 		else if (iVar1 == 98)
 		{
-			func_368("BB_PVUNA98", 100, 0);
+			func_368("BB_PVUNA98" /* GXT: Your Personal Vehicle is already in the LS Car Meet. Return it to Storage via the Vehicles section of the Interaction Menu if you wish to request another vehicle. */, 100, 0);
 			func_1197(24, 0);
 		}
 		else if (iVar1 == 99)
 		{
-			func_368("PIM_HRPV99", 100, 0);
+			func_368("PIM_HRPV99" /* GXT: This vehicle is not allowed inside the LS Car Meet. */, 100, 0);
 			func_1197(25, 0);
 		}
 	}
@@ -81388,7 +81388,7 @@ void func_1414(int iParam0, int iParam1, int iParam2)//Position - 0x5A89C
 		if (!Global_100493.f_1458 && !NETWORK::IS_COMMERCE_STORE_OPEN())
 		{
 			iVar0 = 18;
-			HUD::SET_WARNING_MESSAGE_WITH_HEADER("BRSCRWTEX", "BRDISTEX", iVar0, "BRSHETEX", false, -1, 0, 0, true, 0);
+			HUD::SET_WARNING_MESSAGE_WITH_HEADER("BRSCRWTEX" /* GXT: Alert */, "BRDISTEX" /* GXT: You have insufficient funds. You can add GTA Dollars to your in-game account. */, iVar0, "BRSHETEX" /* GXT: Would you like to visit the Store? */, false, -1, 0, 0, true, 0);
 			Global_2726592 = iParam1;
 			Global_100493.f_1458 = 1;
 			Global_100493.f_1459 = iParam2;
@@ -82476,7 +82476,7 @@ void func_1456(struct<2> Param0, var uParam1, var uParam2, var uParam3, var uPar
 			StringCopy(&(Local_122.f_166), "NervousRon", 16);
 			Local_122.f_180 = 2;
 			StringCopy(&(Local_122.f_170), "CT_AUD", 16);
-			StringCopy(&(Local_122.f_174), "MPCT_RON", 16);
+			StringCopy(&(Local_122.f_174), "MPCT_RON" /* GXT: RON */, 16);
 			Local_122.f_178 = 15;
 			MISC::SET_BIT(&bLocal_169, 2);
 			func_1461(&(Local_122.f_351));
@@ -82572,7 +82572,7 @@ void func_1456(struct<2> Param0, var uParam1, var uParam2, var uParam3, var uPar
 		
 		case 76:
 			Local_122.f_0 = 76;
-			StringCopy(&(Local_122.f_166), "AGENT14", 16);
+			StringCopy(&(Local_122.f_166), "AGENT14" /* GXT: Agent 14 */, 16);
 			Local_122.f_180 = 2;
 			StringCopy(&(Local_122.f_170), "SM2AGAU", 16);
 			Local_122.f_178 = 30;
@@ -82611,7 +82611,7 @@ char* func_1457(int iParam0)//Position - 0x5BF9A
 			break;
 		
 		case 3:
-			return "Cheetah";
+			return "Cheetah" /* GXT: Cheetah */;
 			break;
 		
 		case 4:
@@ -82619,7 +82619,7 @@ char* func_1457(int iParam0)//Position - 0x5BF9A
 			break;
 		
 		case 5:
-			return "Infernus";
+			return "Infernus" /* GXT: Infernus */;
 			break;
 		
 		case 6:

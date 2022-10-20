@@ -112,10 +112,10 @@ void func_1()//Position - 0xA4
 			break;
 		
 		case 2:
-			switch (func_5("AM_H_TAXI1"))
+			switch (func_5("AM_H_TAXI1" /* GXT: Use ~INPUT_CONTEXT~ to flag down passing taxis. */))
 			{
 				case 2:
-					func_2("AM_H_TAXI1", 2, 0, 1000, 10000, 1, 0, 0, 0);
+					func_2("AM_H_TAXI1" /* GXT: Use ~INPUT_CONTEXT~ to flag down passing taxis. */, 2, 0, 1000, 10000, 1, 0, 0, 0);
 					break;
 				
 				case 1:
@@ -125,10 +125,10 @@ void func_1()//Position - 0xA4
 			break;
 		
 		case 3:
-			switch (func_5("AM_H_TAXI2"))
+			switch (func_5("AM_H_TAXI2" /* GXT: Taxi pick ups can be requested through the phone. */))
 			{
 				case 2:
-					func_2("AM_H_TAXI2", 2, 0, 1000, 10000, 1, 0, 0, 0);
+					func_2("AM_H_TAXI2" /* GXT: Taxi pick ups can be requested through the phone. */, 2, 0, 1000, 10000, 1, 0, 0, 0);
 					break;
 				
 				case 1:
@@ -309,13 +309,13 @@ int func_9(int iParam0)//Position - 0x541
 
 void func_10()//Position - 0x56D
 {
-	if (func_6("AM_H_TAXI1"))
+	if (func_6("AM_H_TAXI1" /* GXT: Use ~INPUT_CONTEXT~ to flag down passing taxis. */))
 	{
-		func_11("AM_H_TAXI1", 1);
+		func_11("AM_H_TAXI1" /* GXT: Use ~INPUT_CONTEXT~ to flag down passing taxis. */, 1);
 	}
-	if (func_6("AM_H_TAXI2"))
+	if (func_6("AM_H_TAXI2" /* GXT: Taxi pick ups can be requested through the phone. */))
 	{
-		func_11("AM_H_TAXI2", 1);
+		func_11("AM_H_TAXI2" /* GXT: Taxi pick ups can be requested through the phone. */, 1);
 	}
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

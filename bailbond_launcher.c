@@ -484,8 +484,8 @@ int func_4()//Position - 0x3FC
 	char* sVar2;
 	
 	iVar0 = 79;
-	sVar1 = "BBONDS_DMAIL_K5";
-	sVar2 = "BBONDS_DMAIL_C5";
+	sVar1 = "BBONDS_DMAIL_K5" /* GXT: I can only assume it was you, Trevor, who sent that malefactor to hell early?~n~~a~ */;
+	sVar2 = "BBONDS_DMAIL_C5" /* GXT: Well, in any case, I regret to inform you that our partnership has come to an end.  I've decided to get out of this distasteful business and strike out in search of pursuits more savoury.  You'll always have a rare and special place in my heart.  Good luck and goodbye. */;
 	if (func_14(26, iVar0, 1))
 	{
 		func_13(26, sVar1, 0);
@@ -530,15 +530,15 @@ void func_5(int iParam0)//Position - 0x439
 		switch (iVar1)
 		{
 			case 249:
-				sVar5 = "PW_FEED_EM_1";
+				sVar5 = "PW_FEED_EM_1" /* GXT: You've been nominated to take part in Southern San Andreas' premier amateur photography competition in the wildlife sector. You'll join hundreds of other young, talented... */;
 				break;
 			
 			case 269:
-				sVar5 = "PW_FEED_EM_3";
+				sVar5 = "PW_FEED_EM_3" /* GXT: Hello Franklin,~n~The Southern San Andreas Tourist Board Young Amateur Wildlife Photographer of the Year Competition is over.~n~Some of our photographers fell off cli... */;
 				break;
 			
 			default:
-				sVar5 = "PW_FEED_EM_2";
+				sVar5 = "PW_FEED_EM_2" /* GXT: Dear contestant,~n~Thank you for your recent photographic submission. Our image licensing department is already maximizing its profit-making potential. And you're a step clos... */;
 				break;
 		}
 		func_6(1, Global_44257[iVar1 /*12*/].f_2, iVar1, sVar5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -580,15 +580,15 @@ void func_6(int iParam0, int iParam1, int iParam2, char* sParam3, char* sParam4,
 		switch (iParam2)
 		{
 			case 72:
-				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL1");
+				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL1" /* GXT: Dear Mr. De Santa, please find below your weekly income from owned properties:~n~ */);
 				break;
 			
 			case 73:
-				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL3");
+				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL3" /* GXT: Dear Mr. Clinton, please find below your weekly income from owned properties:~n~ */);
 				break;
 			
 			case 74:
-				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL2");
+				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL2" /* GXT: Dear Mr. Philips, please find below your weekly income from owned properties:~n~ */);
 				break;
 			
 			default:
@@ -697,202 +697,202 @@ char* func_8(int iParam0)//Position - 0x9B2
 	switch (iParam0)
 	{
 		case 0:
-			return "EMSTR_0";
+			return "EMSTR_0" /* GXT: Mike */;
 		
 		case 3:
-			return "EMSTR_3";
+			return "EMSTR_3" /* GXT: Jimmy */;
 		
 		case 1:
-			return "EMSTR_6";
+			return "EMSTR_6" /* GXT: Franklin */;
 		
 		case 2:
-			return "EMSTR_9";
+			return "EMSTR_9" /* GXT: Trevor */;
 		
 		case 4:
-			return "EMSTR_12";
+			return "EMSTR_12" /* GXT: Marnie */;
 		
 		case 5:
-			return "EMSTR_29";
+			return "EMSTR_29" /* GXT: Epsilon Store */;
 		
 		case 6:
-			return "EMSTR_36";
+			return "EMSTR_36" /* GXT: Maude */;
 		
 		case 7:
-			return "EMSTR_39";
+			return "EMSTR_39" /* GXT: Lester */;
 		
 		case 8:
-			return "EMSTR_52";
+			return "EMSTR_52" /* GXT: Maze Bank */;
 		
 		case 9:
-			return "EMSTR_55";
+			return "EMSTR_55" /* GXT: Fleeca */;
 		
 		case 10:
-			return "EMSTR_58";
+			return "EMSTR_58" /* GXT: Bank of Liberty */;
 		
 		case 11:
-			return "EMSTR_78";
+			return "EMSTR_78" /* GXT: Legendary Motorsport Sales */;
 		
 		case 12:
-			return "EMSTR_81";
+			return "EMSTR_81" /* GXT: Elitas Sales */;
 		
 		case 13:
-			return "EMSTR_84";
+			return "EMSTR_84" /* GXT: Cache & Carry */;
 		
 		case 14:
-			return "EMSTR_87";
+			return "EMSTR_87" /* GXT: Dock Tease */;
 		
 		case 15:
-			return "EMSTR_106";
+			return "EMSTR_106" /* GXT: LSC */;
 		
 		case 16:
-			return "EMSTR_114";
+			return "EMSTR_114" /* GXT: AMMU-NATION */;
 		
 		case 17:
-			return "EMSTR_142";
+			return "EMSTR_142" /* GXT: Christian Feltz */;
 		
 		case 18:
-			return "EMSTR_145";
+			return "EMSTR_145" /* GXT: Paige Harris */;
 		
 		case 19:
-			return "EMSTR_152";
+			return "EMSTR_152" /* GXT: Los Santos Tourist Info */;
 		
 		case 20:
-			return "EMSTR_157";
+			return "EMSTR_157" /* GXT: Rickie Luckens */;
 		
 		case 21:
-			return "EMSTR_163";
+			return "EMSTR_163" /* GXT: Minotaur Property Management */;
 		
 		case 22:
-			return "EMSTR_182";
+			return "EMSTR_182" /* GXT: Saeeda Kadam */;
 		
 		case 23:
-			return "EMSTR_187";
+			return "EMSTR_187" /* GXT: Vanilla Unicorn */;
 		
 		case 24:
-			return "EMSTR_190";
+			return "EMSTR_190" /* GXT: Dr Isiah Friedlander */;
 		
 		case 25:
-			return "EMSTR_206";
+			return "EMSTR_206" /* GXT: TRACEYHEARTSTEALER */;
 		
 		case 26:
-			return "EMSTR_219";
+			return "EMSTR_219" /* GXT: Dave Norton */;
 		
 		case 27:
-			return "EMSTR_226";
+			return "EMSTR_226" /* GXT: Amanda De Santa */;
 		
 		case 28:
-			return "EMSTR_233";
+			return "EMSTR_233" /* GXT: Donald Percival */;
 		
 		case 29:
-			return "EMSTR_242";
+			return "EMSTR_242" /* GXT: Ron */;
 		
 		case 30:
-			return "EMSTR_249";
+			return "EMSTR_249" /* GXT: Tanisha Marks */;
 		
 		case 31:
-			return "EMSTR_262";
+			return "EMSTR_262" /* GXT: Denise */;
 		
 		case 32:
-			return "EMSTR_269";
+			return "EMSTR_269" /* GXT: Lamar Davis */;
 		
 		case 33:
-			return "EMSTR_319";
+			return "EMSTR_319" /* GXT: Brad */;
 		
 		case 34:
-			return "EMSTR_340";
+			return "EMSTR_340" /* GXT: Patricia Madrazo */;
 		
 		case 35:
-			return "EMSTR_348";
+			return "EMSTR_348" /* GXT: Eileen Haworth */;
 		
 		case 36:
-			return "EMSTR_182";
+			return "EMSTR_182" /* GXT: Saeeda Kadam */;
 		
 		case 37:
-			return "EMSTR_357";
+			return "EMSTR_357" /* GXT: Gray Nicholson */;
 		
 		case 38:
-			return "EMSTR_360";
+			return "EMSTR_360" /* GXT: Nigel */;
 		
 		case 39:
-			return "EMSTR_369";
+			return "EMSTR_369" /* GXT: Hookies */;
 		
 		case 40:
-			return "EMSTR_376";
+			return "EMSTR_376" /* GXT: Towing Impound */;
 		
 		case 41:
-			return "EMSTR_379";
+			return "EMSTR_379" /* GXT: Downtown Cab Co, */;
 		
 		case 42:
-			return "EMSTR_382";
+			return "EMSTR_382" /* GXT: McKenzie Field Hangar */;
 		
 		case 43:
-			return "EMSTR_384";
+			return "EMSTR_384" /* GXT: Sonar Collections Dock */;
 		
 		case 44:
-			return "EMSTR_387";
+			return "EMSTR_387" /* GXT: Los Santos Customs */;
 		
 		case 45:
-			return "EMSTR_390";
+			return "EMSTR_390" /* GXT: Cinema Doppler */;
 		
 		case 46:
-			return "EMSTR_393";
+			return "EMSTR_393" /* GXT: Ten Cent Theater */;
 		
 		case 47:
-			return "EMSTR_396";
+			return "EMSTR_396" /* GXT: Tivoli Cinema */;
 		
 		case 48:
-			return "EMSTR_399";
+			return "EMSTR_399" /* GXT: Los Santos Golf Club */;
 		
 		case 49:
-			return "EMSTR_402";
+			return "EMSTR_402" /* GXT: Car Scrap Yard */;
 		
 		case 50:
-			return "EMSTR_405";
+			return "EMSTR_405" /* GXT: Smoke on the Water */;
 		
 		case 51:
-			return "EMSTR_408";
+			return "EMSTR_408" /* GXT: Tequi-la-la */;
 		
 		case 52:
-			return "EMSTR_411";
+			return "EMSTR_411" /* GXT: Pitchers */;
 		
 		case 53:
-			return "EMSTR_414";
+			return "EMSTR_414" /* GXT: The Hen House */;
 		
 		case 54:
-			return "EMSTR_465";
+			return "EMSTR_465" /* GXT: Pedal & Metal Sales */;
 		
 		case 55:
-			return "EMSTR_468";
+			return "EMSTR_468" /* GXT: SSA Super Autos Sales */;
 		
 		case 56:
-			return "EMSTR_489";
+			return "EMSTR_489" /* GXT: Hush Smush */;
 		
 		case 57:
-			return "EMSTR_492";
+			return "EMSTR_492" /* GXT: foxymama21 */;
 		
 		case 58:
-			return "EMSTR_495";
+			return "EMSTR_495" /* GXT: Altarego12 */;
 		
 		case 59:
-			return "EMSTR_498";
+			return "EMSTR_498" /* GXT: BadKitty11 */;
 		
 		case 60:
-			return "EMSTR_501";
+			return "EMSTR_501" /* GXT: 7yearbitch */;
 		
 		case 61:
-			return "EMSTR_504";
+			return "EMSTR_504" /* GXT: Froggy69 */;
 		
 		case 62:
-			return "EMSTR_507";
+			return "EMSTR_507" /* GXT: Misscuddles */;
 		
 		case 63:
-			return "EMSTR_640";
+			return "EMSTR_640" /* GXT: Offroad Events */;
 		
 		case 64:
-			return "EMSTR_643";
+			return "EMSTR_643" /* GXT: Dock Tease */;
 		
 		case 65:
-			return "EMSTR_652";
+			return "EMSTR_652" /* GXT: Brother Adrian */;
 		
 		default:
 	}
@@ -977,7 +977,7 @@ char* func_9(int iParam0, int iParam1)//Position - 0xD1B
 			return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_1998[40 /*29*/].f_7));
 		
 		case 36:
-			return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_E_381");
+			return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_E_381" /* GXT: CHAR_SAEEDA */);
 		
 		case 38:
 			return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_1998[64 /*29*/].f_7));
@@ -1408,7 +1408,7 @@ void func_15(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4)
 				case 1:
 					if (iVar2 == 249)
 					{
-						func_6(1, iVar1, iVar2, "PW_FEED_EM_1", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+						func_6(1, iVar1, iVar2, "PW_FEED_EM_1" /* GXT: You've been nominated to take part in Southern San Andreas' premier amateur photography competition in the wildlife sector. You'll join hundreds of other young, talented... */, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 					}
 					else
 					{
@@ -8341,13 +8341,13 @@ void func_165(int iParam0)//Position - 0xB61A
 			{
 				if (func_31(26, func_32(iParam0), 0))
 				{
-					func_169("AM_H_BAILBONDS", 1, 0, -1, 10000, 4, 0, 0, 0);
+					func_169("AM_H_BAILBONDS" /* GXT: Trevor can do a bail bond job by visiting a suspect's last known location. A larger reward is given if a suspect is captured alive. */, 1, 0, -1, 10000, 4, 0, 0, 0);
 					iLocal_45 = 1;
 				}
 			}
 			else
 			{
-				switch (func_167("AM_H_BAILBONDS"))
+				switch (func_167("AM_H_BAILBONDS" /* GXT: Trevor can do a bail bond job by visiting a suspect's last known location. A larger reward is given if a suspect is captured alive. */))
 				{
 					case 2:
 						iLocal_45 = 0;
@@ -9827,7 +9827,7 @@ void func_206(bool bParam0)//Position - 0xD0DE
 	if (bVar0)
 	{
 		StringCopy(&cVar1, "CHAR_LIFEINVADER", 64);
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("COUP_RED");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("COUP_RED" /* GXT: You have redeemed your promotion for ~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(func_207(bParam0));
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar1, &cVar1, true, 0, "", 0);
 	}
@@ -9838,28 +9838,28 @@ char* func_207(bool bParam0)//Position - 0xD25C
 	switch (bParam0)
 	{
 		case 0:
-			return "COUP_HAIRC";
+			return "COUP_HAIRC" /* GXT: one free haircut. */;
 		
 		case 1:
-			return "COUP_TATTOO";
+			return "COUP_TATTOO" /* GXT: one free tattoo. */;
 		
 		case 2:
-			return "COUP_WARSTOCK";
+			return "COUP_WARSTOCK" /* GXT: 10% off your next purchase at Warstock-Cache-and-Carry.com. */;
 		
 		case 3:
-			return "COUP_MOSPORT";
+			return "COUP_MOSPORT" /* GXT: 10 percent off your next purchase at LegendaryMotorsport.net. */;
 		
 		case 4:
-			return "COUP_ELITAS";
+			return "COUP_ELITAS" /* GXT: 10 percent off your next purchase at ElitasTravel.com. */;
 		
 		case 5:
-			return "COUP_MEDSPENS";
+			return "COUP_MEDSPENS" /* GXT: 10 percent off your next medical expenses. */;
 		
 		case 6:
-			return "COUP_SPRUNK";
+			return "COUP_SPRUNK" /* GXT: one free can of Sprunk. */;
 		
 		case 7:
-			return "COUP_RESPRAY";
+			return "COUP_RESPRAY" /* GXT: one free respray. */;
 		
 		case 8:
 			return "COUP_XMAS2017";
@@ -9874,22 +9874,22 @@ char* func_207(bool bParam0)//Position - 0xD25C
 			return "COUP_CAR2_XMAS2018";
 		
 		case 12:
-			return "COUP_CAS_ELITAS";
+			return "COUP_CAS_ELITAS" /* GXT: 10 percent off your next purchase at ElitasTravel.com. */;
 		
 		case 13:
-			return "COUP_CAS_DOCKTEASE";
+			return "COUP_CAS_DOCKTEASE" /* GXT: 10 percent off your next purchase at DockTease.com. */;
 		
 		case 14:
-			return "COUP_CAS_MOSPORT";
+			return "COUP_CAS_MOSPORT" /* GXT: 10 percent off your next purchase at LegendaryMotorsport.net. */;
 		
 		case 15:
-			return "COUP_CAS_SSASA";
+			return "COUP_CAS_SSASA" /* GXT: 10 percent off your next purchase at southernsanandreassuperautos.com. */;
 		
 		case 16:
-			return "COUP_CAS_WARSTOCK";
+			return "COUP_CAS_WARSTOCK" /* GXT: 10 percent off your next purchase at Warstock-Cache-and-Carry.com. */;
 		
 		case 17:
-			return "COUP_CAS_PANDM";
+			return "COUP_CAS_PANDM" /* GXT: 10 percent off your next purchase at pandmcycles.com. */;
 			break;
 		
 		default:
@@ -10194,16 +10194,16 @@ char* func_221(int iParam0)//Position - 0xD7F2
 	switch (iParam0)
 	{
 		case 0:
-			return "BBONDS_DMAIL_C1";
+			return "BBONDS_DMAIL_C1" /* GXT: I got a tip-off this particular reprobate has been hiding out at the quarry. Slippery character by all accounts so you might have a runner on your hands.~nrt~~n~<img src='img://Email_Quarry_Bail_Bond/Target_Quarry' height="190" width="322" hspace='5' /> ~n~Last known location:~n~<img src='img://Email_Quarry_Bail_Bond/Location_Quarry' height="190" width="322" hspace='5' />~nrt~ */;
 		
 		case 1:
-			return "BBONDS_DMAIL_C2";
+			return "BBONDS_DMAIL_C2" /* GXT: If my sources serve me correctly, this pillar of society has been spotted hiding out in an old barn with a few of his cronies. He's a meth dealer with a history of violence so you two should get along just fine :)~nrt~~n~<img src='img://Email_AbandonedFarm_Bail_Bond/Target_AbandonedFarm' height="190" width="322" hspace='5' />~n~Last known location:~n~<img src='img://Email_AbandonedFarm_Bail_Bond/Location_AbandonedFarm' height="190" width="322" hspace='5' />~nrt~ */;
 		
 		case 2:
-			return "BBONDS_DMAIL_C3";
+			return "BBONDS_DMAIL_C3" /* GXT: This next feller's the worst kind of criminal there is – a banker. And looking at some of the videos he's posted online, he fancies himself as a bit of an adrenaline junkie and internet celebrity on the side.  So he'll be a real pleasure to put behind bars.~nrt~~n~<img src='img://email_mountain_bail_bond/Target_Mountains' height="190" width="322" hspace='5' />~n~Last known location:~n~<img src='img://email_mountain_bail_bond/Location_Mountains' height="190" width="322" hspace='5' />~nrt~ */;
 		
 		case 3:
-			return "BBONDS_DMAIL_C4";
+			return "BBONDS_DMAIL_C4" /* GXT: This old-timer's one of them crazy anti-establishment types, lives outside the system in some kind of hobo camp.  Might look harmless but watch yourself, he's got a couple of screws loose alright.~nrt~~n~<img src='img://Email_HoboCamp_Bail_Bond/Target_Hobocamp' height="190" width="322" hspace='5' /> ~n~Last known location:~n~<img src='img://Email_HoboCamp_Bail_Bond/Location_HoboCamp' height="190" width="322" hspace='5' />~nrt~ */;
 		
 		default:
 	}
@@ -10217,44 +10217,44 @@ char* func_222(int iParam0, bool bParam1)//Position - 0xD837
 		case 0:
 			if (bParam1)
 			{
-				return "BBONDS_DMAIL_K1";
+				return "BBONDS_DMAIL_K1" /* GXT: Hey Trevor~n~~a~ */;
 			}
 			else
 			{
-				return "BBONDS_DMAIL_N1";
+				return "BBONDS_DMAIL_N1" /* GXT: Hey Trevor~n~~a~ */;
 			}
 			break;
 		
 		case 1:
 			if (bParam1)
 			{
-				return "BBONDS_DMAIL_K2";
+				return "BBONDS_DMAIL_K2" /* GXT: So, Trevor, did you miss the part where I said bring the fugitive back to me? Do you think you might be able to deliver this feller in one piece?~n~~a~ */;
 			}
 			else
 			{
-				return "BBONDS_DMAIL_N2";
+				return "BBONDS_DMAIL_N2" /* GXT: Hi Handsome~n~~a~ */;
 			}
 			break;
 		
 		case 2:
 			if (bParam1)
 			{
-				return "BBONDS_DMAIL_K3";
+				return "BBONDS_DMAIL_K3" /* GXT: I can't say I wasn't disappointed by the news that you disposed of our fugitive instead of returning him to my care.  Do you think you could resist the temptation to dispense your own justice this time?~n~~a~ */;
 			}
 			else
 			{
-				return "BBONDS_DMAIL_N3";
+				return "BBONDS_DMAIL_N3" /* GXT: Ok Trevor~n~~a~ */;
 			}
 			break;
 		
 		case 3:
 			if (bParam1)
 			{
-				return "BBONDS_DMAIL_K4";
+				return "BBONDS_DMAIL_K4" /* GXT: What happened? Did you lose your head in the heat of the moment? As it's you, I'm going to give you one more chance.  But can you please try to bring this one in alive?~n~~a~ */;
 			}
 			else
 			{
-				return "BBONDS_DMAIL_N4";
+				return "BBONDS_DMAIL_N4" /* GXT: Me again~n~~a~ */;
 			}
 			break;
 	}
@@ -10904,7 +10904,7 @@ void func_235(int iParam0, var uParam1)//Position - 0xE2A5
 			break;
 		
 		case 5:
-			func_236(uParam1, "Barry3A", func_238(iParam0), 1, 1, 0, 1199.27f, -1255.63f, 34.23f, 381, "BARSTASH", 84, 0, "", 166, 0, 7, 4, 2, 0, 2359, func_237(iParam0), 0, 1);
+			func_236(uParam1, "Barry3A", func_238(iParam0), 1, 1, 0, 1199.27f, -1255.63f, 34.23f, 381, "BARSTASH" /* GXT: Areas where you can find vehicles with a hidden stash have been marked on the map. Collect these vehicles for Barry. */, 84, 0, "", 166, 0, 7, 4, 2, 0, 2359, func_237(iParam0), 0, 1);
 			break;
 		
 		case 6:
@@ -10916,7 +10916,7 @@ void func_235(int iParam0, var uParam1)//Position - 0xE2A5
 			break;
 		
 		case 8:
-			func_236(uParam1, "Dreyfuss1", func_238(iParam0), 0, 2, 4, -1458.97f, 485.99f, 115.38f, 66, "LETTERS_HINT", 106, 0, "", 0, 0, -1, 4, 2, 0, 2359, func_237(iParam0), 0, 0);
+			func_236(uParam1, "Dreyfuss1", func_238(iParam0), 0, 2, 4, -1458.97f, 485.99f, 115.38f, 66, "LETTERS_HINT" /* GXT: The killer's identity and location have been revealed. */, 106, 0, "", 0, 0, -1, 4, 2, 0, 2359, func_237(iParam0), 0, 0);
 			break;
 		
 		case 9:
@@ -11036,7 +11036,7 @@ void func_235(int iParam0, var uParam1)//Position - 0xE2A5
 			break;
 		
 		case 38:
-			func_236(uParam1, "Nigel1A", func_238(iParam0), 0, 12, 1, -558.65f, 284.49f, 90.86f, 149, "NIGITEMS", 100, 0, "", 0, 0, 42, 4, 4, 0, 2359, func_237(iParam0), 1, 1);
+			func_236(uParam1, "Nigel1A", func_238(iParam0), 0, 12, 1, -558.65f, 284.49f, 90.86f, 149, "NIGITEMS" /* GXT: Areas where you can find celebrity items have been marked on the map. Steal these items for Nigel and Mrs. Thornhill. */, 100, 0, "", 0, 0, 42, 4, 4, 0, 2359, func_237(iParam0), 1, 1);
 			break;
 		
 		case 39:
@@ -11080,7 +11080,7 @@ void func_235(int iParam0, var uParam1)//Position - 0xE2A5
 			break;
 		
 		case 49:
-			func_236(uParam1, "Paparazzo3A", func_238(iParam0), 0, 14, 2, 305.52f, 157.19f, 102.94f, 389, "PAPPHOTO", 102, 0, "", 0, 0, 51, 4, 2, 0, 2359, func_237(iParam0), 0, 1);
+			func_236(uParam1, "Paparazzo3A", func_238(iParam0), 0, 14, 2, 305.52f, 157.19f, 102.94f, 389, "PAPPHOTO" /* GXT: Areas where you can find celebrity photo opportunities have been marked on the map. Track down and photograph these celebrities for Beverly. */, 102, 0, "", 0, 0, 51, 4, 2, 0, 2359, func_237(iParam0), 0, 1);
 			break;
 		
 		case 50:
@@ -11116,7 +11116,7 @@ void func_235(int iParam0, var uParam1)//Position - 0xE2A5
 			break;
 		
 		case 58:
-			func_236(uParam1, "Tonya1", func_238(iParam0), 0, 17, 4, -14.39f, -1472.69f, 29.58f, 66, "AM_H_RCFS", -1, 0, "ambient_TonyaCall", 24, 1, 59, 4, 2, 0, 2359, func_237(iParam0), 0, 1);
+			func_236(uParam1, "Tonya1", func_238(iParam0), 0, 17, 4, -14.39f, -1472.69f, 29.58f, 66, "AM_H_RCFS" /* GXT: Strangers and Freaks can be found throughout San Andreas at ~HUD_COLOUR_FRANKLIN~~BLIP_RANDOM_CHARACTER~~s~ */, -1, 0, "ambient_TonyaCall", 24, 1, 59, 4, 2, 0, 2359, func_237(iParam0), 0, 1);
 			break;
 		
 		case 59:
@@ -12072,12 +12072,12 @@ void func_253()//Position - 0x1024A
 	{
 		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("");
 		StringCopy(&cVar1, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_8746[1 /*6*/])), 64);
-		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253");
+		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253" /* GXT: New Contact */);
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, sVar2, &cVar1);
 	}
 	else
 	{
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_255");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_255" /* GXT: New Contact: ~n~~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_8746[1 /*6*/]));
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, "", 0);
 	}
@@ -12135,7 +12135,7 @@ void func_258(int iParam0, int iParam1, int iParam2)//Position - 0x1036F
 
 void func_259()//Position - 0x103B4
 {
-	if (func_261("AM_H_BAILBONDS"))
+	if (func_261("AM_H_BAILBONDS" /* GXT: Trevor can do a bail bond job by visiting a suspect's last known location. A larger reward is given if a suspect is captured alive. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}

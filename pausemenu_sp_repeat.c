@@ -842,33 +842,33 @@ void func_29(bool bParam0, int iParam1)//Position - 0xCE3
 	if (iVar3 != -1)
 	{
 		iVar2 = 1;
-		sVar1 = "PM_RP_HELPT";
+		sVar1 = "PM_RP_HELPT" /* GXT: Replay */;
 		if (iParam1 == 1)
 		{
 			switch (iVar3)
 			{
 				case 0:
-					sVar0 = "PM_RPB_SM_1";
+					sVar0 = "PM_RPB_SM_1" /* GXT: Replay is unavailable while on a Mission. Once you have passed the current Mission, you will be able to try it again and aim to reach the Gold standard.~n~~n~If you are a Social Club member, Mission stats are recorded on the leaderboards on the Social Club website where you can see how you stack up against friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ to view leaderboards and in-depth career stats. */;
 					break;
 				
 				case 2:
-					sVar0 = "PM_RPB_SM_2";
+					sVar0 = "PM_RPB_SM_2" /* GXT: Replay is unavailable while viewing a cutscene.~n~~n~If you are a Social Club member, Mission stats are recorded on the leaderboards on the Social Club website where you can see how you stack up against friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ to view leaderboards and in-depth career stats. */;
 					break;
 				
 				case 3:
-					sVar0 = "PM_RPB_SM_3";
+					sVar0 = "PM_RPB_SM_3" /* GXT: Replay is unavailable while browsing in a shop.~n~~n~If you are a Social Club member, Mission stats are recorded on the leaderboards on the Social Club website where you can see how you stack up against friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ to view leaderboards and in-depth career stats. */;
 					break;
 				
 				case 1:
-					sVar0 = "PM_RPB_SM_4";
+					sVar0 = "PM_RPB_SM_4" /* GXT: Replay is unavailable while the Creator is running.~n~~n~If you are a Social Club member, Mission stats are recorded on the leaderboards on the Social Club website where you can see how you stack up against friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ to view leaderboards and in-depth career stats. */;
 					break;
 				
 				case 4:
-					sVar0 = "PM_RPB_SM_5";
+					sVar0 = "PM_RPB_SM_5" /* GXT: Replay is unavailable from this location.~n~~n~If you are a Social Club member, Mission stats are recorded on the leaderboards on the Social Club website where you can see how you stack up against friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ to view leaderboards and in-depth career stats. */;
 					break;
 				
 				case 5:
-					sVar0 = "PM_RPB_SM_6";
+					sVar0 = "PM_RPB_SM_6" /* GXT: Replay is unavailable while Director Mode is running. Once you have exited Director Mode, you will be able to replay missions and aim to reach the Gold standard.~n~~n~If you are a Social Club member, Mission stats are recorded on the leaderboards on the Social Club website where you can see how you stack up against friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ to view leaderboards and in-depth career stats. */;
 					break;
 				
 				default:
@@ -880,27 +880,27 @@ void func_29(bool bParam0, int iParam1)//Position - 0xCE3
 			switch (iVar3)
 			{
 				case 0:
-					sVar0 = "PM_RPB_RC_1";
+					sVar0 = "PM_RPB_RC_1" /* GXT: Replay is unavailable while on a Mission. Once you have passed the current Mission, you will be able to try it again and aim to reach the Gold standard.~n~~n~If you are a Social Club member, you can see which Strangers and Freaks you are yet to meet and see how you stack up against your friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ for more information and to view in-depth career stats. */;
 					break;
 				
 				case 2:
-					sVar0 = "PM_RPB_RC_2";
+					sVar0 = "PM_RPB_RC_2" /* GXT: Replay is unavailable while viewing a cutscene.~n~~n~If you are a Social Club member, you can see which Strangers and Freaks you are yet to meet and see how you stack up against your friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ for more information and to view in-depth career stats. */;
 					break;
 				
 				case 3:
-					sVar0 = "PM_RPB_RC_3";
+					sVar0 = "PM_RPB_RC_3" /* GXT: Replay is unavailable while browsing in a shop.~n~~n~If you are a Social Club member, you can see which Strangers and Freaks you are yet to meet and see how you stack up against your friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ for more information and to view in-depth career stats. */;
 					break;
 				
 				case 1:
-					sVar0 = "PM_RPB_RC_4";
+					sVar0 = "PM_RPB_RC_4" /* GXT: Replay is unavailable while the Creator is running.~n~~n~If you are a Social Club member, you can see which Strangers and Freaks you are yet to meet and see how you stack up against your friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ for more information and to view in-depth career stats. */;
 					break;
 				
 				case 4:
-					sVar0 = "PM_RPB_RC_5";
+					sVar0 = "PM_RPB_RC_5" /* GXT: Replay is unavailable from this location.~n~~n~If you are a Social Club member, you can see which Strangers and Freaks you are yet to meet and see how you stack up against your friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ for more information and to view in-depth career stats. */;
 					break;
 				
 				case 5:
-					sVar0 = "PM_RPB_RC_6";
+					sVar0 = "PM_RPB_RC_6" /* GXT: Replay is unavailable while Director Mode is running. Once you have exited Director Mode, you will be able to replay missions and aim to reach the Gold standard.~n~~n~If you are a Social Club member, you can see which Strangers and Freaks you are yet to meet and see how you stack up against your friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ for more information and to view in-depth career stats. */;
 					break;
 				
 				default:
@@ -913,13 +913,13 @@ void func_29(bool bParam0, int iParam1)//Position - 0xCE3
 		iVar2 = 1;
 		if (iParam1 == 1)
 		{
-			sVar1 = "PM_RP_HELPT";
-			sVar0 = "PM_RP_HELP";
+			sVar1 = "PM_RP_HELPT" /* GXT: Replay */;
+			sVar0 = "PM_RP_HELP" /* GXT: Replay Missions you've passed and try to reach the Gold standard for each. Aim to reach Gold in a single attempt, or work towards it one objective at a time.~n~~n~If you are a Social Club member, Mission stats are recorded on the leaderboards on the Social Club website where you can see how you stack up against friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ to view leaderboards and in-depth career stats. */;
 		}
 		else
 		{
-			sVar1 = "PM_RP_HELPT3";
-			sVar0 = "PM_RP_HELP3";
+			sVar1 = "PM_RP_HELPT3" /* GXT: Replay */;
+			sVar0 = "PM_RP_HELP3" /* GXT: Select an encounter with Strangers and Freaks to replay.~n~~n~If you are a Social Club member, you can see which Strangers and Freaks you are yet to meet and see how you stack up against your friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ for more information and to view in-depth career stats. */;
 		}
 	}
 	else
@@ -927,13 +927,13 @@ void func_29(bool bParam0, int iParam1)//Position - 0xCE3
 		iVar2 = 1;
 		if (iParam1 == 1)
 		{
-			sVar1 = "PM_RP_HELPT1";
-			sVar0 = "PM_RP_HELP1";
+			sVar1 = "PM_RP_HELPT1" /* GXT: Replay */;
+			sVar0 = "PM_RP_HELP1" /* GXT: There are currently no Missions available to replay. Once you have played some Missions you will be able to try them again and aim to reach the Gold standard in each.~n~~n~If you are a Social Club member, Mission stats are recorded on the leaderboards on the Social Club website where you can see how you stack up against friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ to view leaderboards and in-depth career stats. */;
 		}
 		else
 		{
-			sVar1 = "PM_RP_HELPT3";
-			sVar0 = "PM_RP_HELP4";
+			sVar1 = "PM_RP_HELPT3" /* GXT: Replay */;
+			sVar0 = "PM_RP_HELP4" /* GXT: There are currently no encounters with Strangers and Freaks available to replay.~n~~n~If you are a Social Club member, you can see which Strangers and Freaks you are yet to meet and see how you stack up against your friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ for more information and to view in-depth career stats. */;
 		}
 	}
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar2);
@@ -1530,7 +1530,7 @@ void func_46(int iParam0)//Position - 0x1637
 	func_77(2);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("SET_COLUMN_TITLE");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-	func_30("MISSTA");
+	func_30("MISSTA" /* GXT: Mission Stats */);
 	func_30(&Local_28);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	iVar1 = -333;
@@ -1899,7 +1899,7 @@ void func_54(int iParam0, int iParam1, int iParam2, char* sParam3, int iParam4, 
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam0);
 	if (iParam5 == 0)
 	{
-		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_RP_STATD");
+		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_RP_STATD" /* GXT: ~a~~n~~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam3);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(func_55(iParam4));
 		GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -3028,7 +3028,7 @@ void func_56(int iParam0, int iParam1, int iParam2, char* sParam3, int iParam4, 
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam0);
 	if (iParam5 == 0)
 	{
-		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_RP_STATD");
+		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_RP_STATD" /* GXT: ~a~~n~~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam3);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(func_55(iParam4));
 		GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -3065,7 +3065,7 @@ void func_57(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4, 
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam1);
 	if (iParam6 == 0)
 	{
-		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_RP_STATD");
+		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_RP_STATD" /* GXT: ~a~~n~~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam4);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(func_55(iParam5));
 		GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -3097,7 +3097,7 @@ void func_58(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4, 
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::CEIL(fVar0));
 	if (iParam6 == 0)
 	{
-		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_RP_STATD");
+		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_RP_STATD" /* GXT: ~a~~n~~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam4);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(func_55(iParam5));
 		GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -3124,7 +3124,7 @@ void func_59(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4)/
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam1);
 	if (iParam4 == 0)
 	{
-		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_RP_STATD");
+		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_RP_STATD" /* GXT: ~a~~n~~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam2);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(func_55(iParam3));
 		GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -3159,7 +3159,7 @@ void func_60(int iParam0, int iParam1, int iParam2, char* sParam3, int iParam4, 
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar1);
 	if (iParam5 == 0)
 	{
-		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_RP_STATD");
+		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_RP_STATD" /* GXT: ~a~~n~~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam3);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(func_55(iParam4));
 		GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -3188,7 +3188,7 @@ void func_61(int iParam0, int iParam1, int iParam2, char* sParam3, int iParam4, 
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam0);
 	if (iParam5 == 0)
 	{
-		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_RP_STATD");
+		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_RP_STATD" /* GXT: ~a~~n~~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam3);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(func_55(iParam4));
 		GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();

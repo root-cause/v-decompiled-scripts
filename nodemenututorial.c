@@ -763,7 +763,7 @@ int func_55(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4, 
 					}
 					else if (iParam7 == 6)
 					{
-						sVar4 = "FMMC_KEY_TIP10";
+						sVar4 = "FMMC_KEY_TIP10" /* GXT: Enter Synopsis (MAX 125 characters): */;
 					}
 					else if (iParam7 == 8)
 					{
@@ -834,7 +834,7 @@ int func_55(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4, 
 					}
 					else
 					{
-						sVar4 = "WEB_SEARCH";
+						sVar4 = "WEB_SEARCH" /* GXT: Search... */;
 					}
 				}
 				if (MISC::IS_STRING_NULL_OR_EMPTY(sParam5))
@@ -1108,49 +1108,49 @@ int func_55(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4, 
 						{
 							if (*iParam1 == 0)
 							{
-								sVar4 = "CELL_EMASH_SOD";
+								sVar4 = "CELL_EMASH_SOD" /* GXT: Enter your Eyefind subject: */;
 							}
 							else if (*iParam1 == -1)
 							{
-								sVar4 = "CELL_EMASH_SODE";
+								sVar4 = "CELL_EMASH_SODE" /* GXT: Subject too long. Try again: */;
 							}
 							else
 							{
-								sVar4 = "CELL_EMASH_SODF";
+								sVar4 = "CELL_EMASH_SODF" /* GXT: Forbidden text. Try again: */;
 							}
 						}
 						else if (*iParam1 == 0)
 						{
-							sVar4 = "CELL_EMAIL_SOD";
+							sVar4 = "CELL_EMAIL_SOD" /* GXT: Enter your Eyefind subject (MAX 60 characters): */;
 						}
 						else if (*iParam1 == -1)
 						{
-							sVar4 = "CELL_EMAIL_SODE";
+							sVar4 = "CELL_EMAIL_SODE" /* GXT: Subject too long. Try again (MAX 60 characters): */;
 						}
 						else
 						{
-							sVar4 = "CELL_EMAIL_SODF";
+							sVar4 = "CELL_EMAIL_SODF" /* GXT: Forbidden text. Try again (MAX 60 characters): */;
 						}
 						if (MISC::IS_XBOX360_VERSION() || func_61())
 						{
 							sVar5 = sVar4;
-							sVar4 = "CELL_EMAIL_DESC";
+							sVar4 = "CELL_EMAIL_DESC" /* GXT: Description */;
 						}
 					}
 					else if (func_62())
 					{
 						if (*iParam1 == 0)
 						{
-							sVar4 = "FMMC_KEY_TIP8S";
+							sVar4 = "FMMC_KEY_TIP8S" /* GXT: Enter Message (MAX 20 characters): */;
 						}
 						else
 						{
-							sVar4 = "FMMC_KEY_TIP8FS";
+							sVar4 = "FMMC_KEY_TIP8FS" /* GXT: Invalid Message. Try again (MAX 20 characters): */;
 						}
 						if (MISC::IS_XBOX360_VERSION() || func_61())
 						{
 							sVar5 = sVar4;
-							sVar4 = "FMMC_SMS4";
+							sVar4 = "FMMC_SMS4" /* GXT: Message */;
 						}
 						iVar9 = 21;
 					}
@@ -1158,16 +1158,16 @@ int func_55(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4, 
 					{
 						if (*iParam1 == 0)
 						{
-							sVar4 = "FMMC_KEY_TIP8";
+							sVar4 = "FMMC_KEY_TIP8" /* GXT: Enter Message (MAX 60 characters): */;
 						}
 						else
 						{
-							sVar4 = "FMMC_KEY_TIP8F";
+							sVar4 = "FMMC_KEY_TIP8F" /* GXT: Forbidden Text. Try again (MAX 60 characters): */;
 						}
 						if (MISC::IS_XBOX360_VERSION())
 						{
 							sVar5 = sVar4;
-							sVar4 = "FMMC_SMS4";
+							sVar4 = "FMMC_SMS4" /* GXT: Message */;
 						}
 					}
 					if (MISC::IS_STRING_NULL_OR_EMPTY(sParam5))
@@ -1183,16 +1183,16 @@ int func_55(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4, 
 				{
 					if (*iParam1 == 0)
 					{
-						sVar4 = "FMMC_KEY_TIP9";
+						sVar4 = "FMMC_KEY_TIP9" /* GXT: Enter Outfit Name (MAX 15 characters): */;
 					}
 					else
 					{
-						sVar4 = "FMMC_KEY_TIP9F";
+						sVar4 = "FMMC_KEY_TIP9F" /* GXT: Invalid Outfit Name. Try again (MAX 15 characters): */;
 					}
 					if (MISC::IS_XBOX360_VERSION())
 					{
 						sVar5 = sVar4;
-						sVar4 = "FMMC_KEY_TIP9N";
+						sVar4 = "FMMC_KEY_TIP9N" /* GXT: Outfit Name */;
 					}
 					if (MISC::IS_STRING_NULL_OR_EMPTY(sParam5))
 					{
@@ -1208,16 +1208,16 @@ int func_55(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4, 
 					iVar9 = 16;
 					if (*iParam1 == 0)
 					{
-						sVar4 = "FMMC_KEY_TIP12";
+						sVar4 = "FMMC_KEY_TIP12" /* GXT: Enter Custom Team Name (MAX 15 characters): */;
 					}
 					else
 					{
-						sVar4 = "FMMC_KEY_TIP12F";
+						sVar4 = "FMMC_KEY_TIP12F" /* GXT: Forbidden Text. Try again (MAX 15 characters): */;
 					}
 					if (MISC::IS_XBOX360_VERSION())
 					{
 						sVar5 = sVar4;
-						sVar4 = "FMMC_KEY_TIP12N";
+						sVar4 = "FMMC_KEY_TIP12N" /* GXT: Custom Team Name */;
 					}
 					if (MISC::IS_STRING_NULL_OR_EMPTY(sParam5))
 					{
@@ -1253,11 +1253,11 @@ int func_55(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4, 
 					iVar9 = 61;
 					if (*iParam1 == 0)
 					{
-						sVar4 = "FMMC_KEY_TIP12";
+						sVar4 = "FMMC_KEY_TIP12" /* GXT: Enter Custom Team Name (MAX 15 characters): */;
 					}
 					else
 					{
-						sVar4 = "FMMC_KEY_TIP12F";
+						sVar4 = "FMMC_KEY_TIP12F" /* GXT: Forbidden Text. Try again (MAX 15 characters): */;
 					}
 					if (MISC::IS_STRING_NULL_OR_EMPTY(sParam5))
 					{
@@ -1280,24 +1280,24 @@ int func_55(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4, 
 					}
 					if (*iParam1 == 0)
 					{
-						sVar4 = "FMMC_KEY_TIP14S";
+						sVar4 = "FMMC_KEY_TIP14S" /* GXT: Enter Yacht Name (MAX 20 characters): */;
 					}
 					else if (*iParam1 == -1)
 					{
-						sVar4 = "FMMC_KEY_TIP14ES";
+						sVar4 = "FMMC_KEY_TIP14ES" /* GXT: Subject too long. Try again (MAX 20 characters): */;
 					}
 					else if (*iParam1 == -2)
 					{
-						sVar4 = "FMMC_KEY_TIP14OS";
+						sVar4 = "FMMC_KEY_TIP14OS" /* GXT: Empty Text. Try again (MAX 20 characters): */;
 					}
 					else
 					{
-						sVar4 = "FMMC_KEY_TIP14FS";
+						sVar4 = "FMMC_KEY_TIP14FS" /* GXT: Forbidden Text. Try again (MAX 20 characters): */;
 					}
 					if (MISC::IS_XBOX360_VERSION())
 					{
 						sVar5 = sVar4;
-						sVar4 = "FMMC_KEY_TIP14N";
+						sVar4 = "FMMC_KEY_TIP14N" /* GXT: Yacht Name */;
 					}
 					if (MISC::IS_STRING_NULL_OR_EMPTY(sParam5))
 					{
@@ -1313,23 +1313,23 @@ int func_55(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4, 
 					iVar9 = 15;
 					if (*iParam1 == 0)
 					{
-						sVar4 = "FMMC_KEY_TIP16S";
+						sVar4 = "FMMC_KEY_TIP16S" /* GXT: Enter Vehicle Name (MAX 15 characters): */;
 					}
 					else if (*iParam1 == -1)
 					{
-						sVar4 = "FMMC_KEY_TIP16ES";
+						sVar4 = "FMMC_KEY_TIP16ES" /* GXT: Subject too long. Try again (MAX 15 characters): */;
 					}
 					else if (*iParam1 == -2)
 					{
-						sVar4 = "FMMC_KEY_TIP16OS";
+						sVar4 = "FMMC_KEY_TIP16OS" /* GXT: Empty Text. Try again (MAX 15 characters): */;
 					}
 					else
 					{
-						sVar4 = "FMMC_KEY_TIP16FS";
+						sVar4 = "FMMC_KEY_TIP16FS" /* GXT: Forbidden Text. Try again (MAX 15 characters): */;
 					}
 					if (bParam23)
 					{
-						sVar4 = "FMMC_KEY_TIP16IS";
+						sVar4 = "FMMC_KEY_TIP16IS" /* GXT: Invalid Character. Try again (MAX 15 characters): */;
 					}
 					if (MISC::IS_XBOX360_VERSION())
 					{
@@ -1358,34 +1358,34 @@ int func_55(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4, 
 					}
 					if (bParam20)
 					{
-						sVar4 = "FMMC_KEY_TIP15B";
+						sVar4 = "FMMC_KEY_TIP15B" /* GXT: You must enter a name (MAX 15 characters): */;
 					}
 					else if (bParam21)
 					{
-						sVar4 = "FMMC_KEY_TIP15U";
+						sVar4 = "FMMC_KEY_TIP15U" /* GXT: Name already in use. Try again (MAX 15 characters): */;
 					}
 					else if (bParam19)
 					{
-						sVar4 = "FMMC_KEY_TIP15N";
+						sVar4 = "FMMC_KEY_TIP15N" /* GXT: Name Too Short. Try again (MAX 15 characters): */;
 					}
 					else if (bParam23)
 					{
-						sVar4 = "FMMC_KEY_TIP15I";
+						sVar4 = "FMMC_KEY_TIP15I" /* GXT: Invalid Character. Try again (MAX 15 characters): */;
 					}
 					else if (*iParam1 == 0)
 					{
 						if (iParam18 == 2)
 						{
-							sVar4 = "FMMC_MCK_TIP15";
+							sVar4 = "FMMC_MCK_TIP15" /* GXT: Enter MC Name (MAX 15 characters): */;
 						}
 						else
 						{
-							sVar4 = "FMMC_KEY_TIP15";
+							sVar4 = "FMMC_KEY_TIP15" /* GXT: Enter Organization Name (MAX 15 characters): */;
 						}
 					}
 					else
 					{
-						sVar4 = "FMMC_KEY_TIP15F";
+						sVar4 = "FMMC_KEY_TIP15F" /* GXT: Forbidden Text. Try again (MAX 15 characters): */;
 					}
 					if (MISC::IS_STRING_NULL_OR_EMPTY(sParam5))
 					{
@@ -1407,28 +1407,28 @@ int func_55(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4, 
 							{
 								if (*iParam1 == 0)
 								{
-									sVar4 = "CELL_EMASH_BOD";
+									sVar4 = "CELL_EMASH_BOD" /* GXT: Enter your Eyefind message: */;
 								}
 								else if (*iParam1 == -1)
 								{
-									sVar4 = "CELL_EMASH_BODE";
+									sVar4 = "CELL_EMASH_BODE" /* GXT: Message too long. Try again: */;
 								}
 								else
 								{
-									sVar4 = "CELL_EMASH_BODF";
+									sVar4 = "CELL_EMASH_BODF" /* GXT: Forbidden message. Try again: */;
 								}
 							}
 							else if (*iParam1 == 0)
 							{
-								sVar4 = "CELL_EMAIL_BOD";
+								sVar4 = "CELL_EMAIL_BOD" /* GXT: Enter your Eyefind message (MAX 500 characters): */;
 							}
 							else if (*iParam1 == -1)
 							{
-								sVar4 = "CELL_EMAIL_BODE";
+								sVar4 = "CELL_EMAIL_BODE" /* GXT: Message too long. Try again (MAX 500 characters): */;
 							}
 							else
 							{
-								sVar4 = "CELL_EMAIL_BODF";
+								sVar4 = "CELL_EMAIL_BODF" /* GXT: Forbidden message. Try again (MAX 500 characters): */;
 							}
 						}
 						else if (*iParam1 == 0)
@@ -1455,15 +1455,15 @@ int func_55(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4, 
 						{
 							if (*iParam1 == 0)
 							{
-								sVar4 = "CELL_EMASH_BOD";
+								sVar4 = "CELL_EMASH_BOD" /* GXT: Enter your Eyefind message: */;
 							}
 							else if (*iParam1 == -1)
 							{
-								sVar4 = "CELL_EMASH_BODE";
+								sVar4 = "CELL_EMASH_BODE" /* GXT: Message too long. Try again: */;
 							}
 							else
 							{
-								sVar4 = "CELL_EMASH_BODF";
+								sVar4 = "CELL_EMASH_BODF" /* GXT: Forbidden message. Try again: */;
 							}
 						}
 						else if (func_62())
@@ -1500,7 +1500,7 @@ int func_55(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4, 
 						sVar4 = "FMMC_T0_M20";
 						if (bParam11)
 						{
-							sVar4 = "CELL_EMAIL_DESC";
+							sVar4 = "CELL_EMAIL_DESC" /* GXT: Description */;
 						}
 					}
 					iVar13 = 0;
@@ -1695,17 +1695,17 @@ int func_55(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4, 
 					}
 					if (bParam17)
 					{
-						HUD::BEGIN_TEXT_COMMAND_BUSYSPINNER_ON("ERROR_CHECKYACHTNAME");
+						HUD::BEGIN_TEXT_COMMAND_BUSYSPINNER_ON("ERROR_CHECKYACHTNAME" /* GXT: Registering your yacht's name.  Please wait... */);
 						HUD::END_TEXT_COMMAND_BUSYSPINNER_ON(1);
 					}
 					else if (bParam29)
 					{
-						HUD::BEGIN_TEXT_COMMAND_BUSYSPINNER_ON("ERROR_CHECKVEHICLENAME");
+						HUD::BEGIN_TEXT_COMMAND_BUSYSPINNER_ON("ERROR_CHECKVEHICLENAME" /* GXT: Registering your vehicle's name.  Please wait... */);
 						HUD::END_TEXT_COMMAND_BUSYSPINNER_ON(1);
 					}
 					else
 					{
-						HUD::BEGIN_TEXT_COMMAND_BUSYSPINNER_ON("ERROR_CHECKPROFANITY");
+						HUD::BEGIN_TEXT_COMMAND_BUSYSPINNER_ON("ERROR_CHECKPROFANITY" /* GXT: Checking your text for profanity.  Please wait... */);
 						HUD::END_TEXT_COMMAND_BUSYSPINNER_ON(1);
 					}
 					if (!SOCIALCLUB::SC_PROFANITY_GET_CHECK_IS_VALID(*iParam1))
@@ -2707,10 +2707,10 @@ void func_119(var uParam0, int iParam1)//Position - 0x29FC
 
 int func_120(var uParam0)//Position - 0x2A0A
 {
-	func_121(202, "PIM_CEXI", -1);
+	func_121(202, "PIM_CEXI" /* GXT: Back */, -1);
 	if (func_69(uParam0))
 	{
-		func_121(201, "PIM_CSEL", -1);
+		func_121(201, "PIM_CSEL" /* GXT: Select */, -1);
 	}
 	return 1;
 }
@@ -4512,7 +4512,7 @@ void func_194(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 	{
 		if (Global_23150.f_5609 <= 1)
 		{
-			func_171(Global_23150.f_5609 + 1, "DFLT_MNU_OPT", 0, 1, 0, 0, 0);
+			func_171(Global_23150.f_5609 + 1, "DFLT_MNU_OPT" /* GXT: Exit */, 0, 1, 0, 0, 0);
 			Global_23150.f_6405 = 1;
 		}
 	}
@@ -4615,14 +4615,14 @@ void func_194(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 				if (Global_23150.f_6126)
 				{
 					func_219();
-					func_217((((Global_23147 + fParam5) - 0.00390625f) - func_218("CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128);
+					func_217((((Global_23147 + fParam5) - 0.00390625f) - func_218("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128);
 				}
 				else if (Global_23150.f_6122 > Global_23150.f_5616)
 				{
 					if (Global_23150.f_6125 != 0)
 					{
 						func_219();
-						func_217((((Global_23147 + fParam5) - 0.00390625f) - func_218("CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124);
+						func_217((((Global_23147 + fParam5) - 0.00390625f) - func_218("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124);
 					}
 				}
 			}

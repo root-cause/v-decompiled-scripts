@@ -378,52 +378,52 @@ char* func_11(bool bParam0)//Position - 0x2CB
 	switch (bParam0)
 	{
 		case 0:
-			return "CH_PLAN_HLP_0";
+			return "CH_PLAN_HLP_0" /* GXT: This is the Setup Board. Here you can see the access points you have scoped on The Diamond Casino & Resort. After you find out the contents of the vault you will be able to choose your approach to the heist. */;
 		
 		case 1:
-			return "CH_PLAN_HLP_1";
+			return "CH_PLAN_HLP_1" /* GXT: Additional information for each item on the Planning Boards can be found by pressing ~INPUT_FRONTEND_Y~. For Prep work, this will also list the requirement and impact it has on The Diamond Casino Heist. */;
 		
 		case 2:
-			return "CH_PLAN_HLP_2";
+			return "CH_PLAN_HLP_2" /* GXT: You can now select how you would like to approach The Diamond Casino Heist. Different Prep work and equipment will be required depending on your chosen approach. */;
 		
 		case 3:
-			return "CH_PLAN_HLP_3";
+			return "CH_PLAN_HLP_3" /* GXT: This is the Prep Board. Here you can hire your Support Crew members and gather the Prep equipment you will need to take on The Diamond Casino Heist. Prep work marked with a star are mandatory and must be completed before you can access the Finale Board. */;
 		
 		case 4:
-			return "CH_PLAN_HLP_4";
+			return "CH_PLAN_HLP_4" /* GXT: Each hired Support Crew member will provide you with different Prep work to prepare for The Diamond Casino Heist. Some crew members will only be available if you have worked with them before. */;
 		
 		case 5:
-			return "CH_PLAN_HLP_5";
+			return "CH_PLAN_HLP_5" /* GXT: Approach Specific Prep work is unique to your chosen approach. */;
 		
 		case 6:
-			return "CH_PLAN_HLP_6";
+			return "CH_PLAN_HLP_6" /* GXT: For some of the optional Prep work you can pay Lester to source the equipment for you instead. Press ~INPUT_FRONTEND_X~ on the selected Prep work to do this. */;
 		
 		case 7:
-			return "CH_PLAN_HLP_7";
+			return "CH_PLAN_HLP_7" /* GXT: The more Prep work you complete, the better your chances are of walking away with a bigger score in The Diamond Casino Heist. */;
 		
 		case 8:
-			return "CH_PLAN_HLP_8";
+			return "CH_PLAN_HLP_8" /* GXT: You have completed the mandatory Prep work required to start The Diamond Casino Heist. You can now move to the Finale Board and finalize your plan or continue completing optional Prep work to increase your chances of success. */;
 		
 		case 9:
-			return "CH_PLAN_HLP_9";
+			return "CH_PLAN_HLP_9" /* GXT: Prep work for the Entry Disguise is split into two parts: obtaining the disguises to wear, and creating the reason for Casino security to let you inside. */;
 		
 		case 10:
-			return "CH_PLAN_HLP_10";
+			return "CH_PLAN_HLP_10" /* GXT: In order to complete your set up for the Entry Disguise you must complete both parts of the Prep work. Complete part two to unlock this disguise on The Diamond Casino Heist finale board. */;
 		
 		case 11:
-			return "CH_PLAN_HLP_11";
+			return "CH_PLAN_HLP_11" /* GXT: This is the Finale Board. Here you can preview the access points you have available from your completed Prep work. Select Start to invite other players to your planning room and begin The Diamond Casino Heist. */;
 		
 		case 12:
-			return "CH_PLAN_HLP_12";
+			return "CH_PLAN_HLP_12" /* GXT: You can only preview your available choices before you start The Diamond Casino Heist. Select Start to invite other players and set up the Finale when you are ready. */;
 		
 		case 13:
-			return "CH_PLAN_HLP_13";
+			return "CH_PLAN_HLP_13" /* GXT: Each Buyer has three potential rendezvous locations ~HUD_COLOUR_RED~~BLIP_FINDERS_KEEPERS~~s~ after you escape the Casino. Choosing a buyer further away will pay more however you increase the risk of losing some of the take. */;
 		
 		case 14:
-			return "CH_PLAN_HLP_14";
+			return "CH_PLAN_HLP_14" /* GXT: Choose your planned Entrance and Exit carefully. Each route you select has its pros and cons. The fastest and more obvious routes might not be the easiest or the quietest. */;
 		
 		case 15:
-			return "CH_PLAN_HLP_15";
+			return "CH_PLAN_HLP_15" /* GXT: On The Big Con approach, your Entrance into the Casino will be determined by the Entry Disguise you select. */;
 		
 		default:
 	}
@@ -1857,7 +1857,7 @@ void func_67(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 	{
 		if (Global_23150.f_5609 <= 1)
 		{
-			func_99(Global_23150.f_5609 + 1, "DFLT_MNU_OPT", 0, 1, 0, 0, 0);
+			func_99(Global_23150.f_5609 + 1, "DFLT_MNU_OPT" /* GXT: Exit */, 0, 1, 0, 0, 0);
 			Global_23150.f_6405 = 1;
 		}
 	}
@@ -1960,14 +1960,14 @@ void func_67(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 				if (Global_23150.f_6126)
 				{
 					func_93();
-					func_91((((Global_23147 + fParam5) - 0.00390625f) - func_92("CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128);
+					func_91((((Global_23147 + fParam5) - 0.00390625f) - func_92("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128);
 				}
 				else if (Global_23150.f_6122 > Global_23150.f_5616)
 				{
 					if (Global_23150.f_6125 != 0)
 					{
 						func_93();
-						func_91((((Global_23147 + fParam5) - 0.00390625f) - func_92("CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124);
+						func_91((((Global_23147 + fParam5) - 0.00390625f) - func_92("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124);
 					}
 				}
 			}
@@ -4810,54 +4810,54 @@ char* func_113(var uParam0)//Position - 0x6386
 			switch (uParam0->f_2593)
 			{
 				case 2:
-					return "CH_DP_FB_D_0";
+					return "CH_DP_FB_D_0" /* GXT: These are the scoped access points that can be used to enter the Casino. */;
 				
 				case 3:
-					return "CH_DP_FB_D_1";
+					return "CH_DP_FB_D_1" /* GXT: These are the scoped access points that can be used to exit the Casino. */;
 				
 				case 4:
-					return "CH_DP_FB_D_2";
+					return "CH_DP_FB_D_2" /* GXT: Lester has lined up three buyers to pay for any loot you steal from the Casino. Buyers that are further from the Casino will offer more money for the stolen loot. */;
 				
 				case 13:
-					return "CH_DP_FB_D_3";
+					return "CH_DP_FB_D_3" /* GXT: These disguises can be used to enter the Casino without alerting security. */;
 				
 				case 14:
-					return "CH_DP_FB_D_4";
+					return "CH_DP_FB_D_4" /* GXT: Lester will have this optional disguise stashed inside the Casino for you after robbing the vault. It can be used to avoid detection when escaping and will allow you to walk out the Casino Main Entrance. */;
 				
 				case 15:
 					if (func_114(uParam0->f_4356) == 2 && uParam0->f_1497.f_1020 != 4)
 					{
-						return "CH_DP_FB_D_5b";
+						return "CH_DP_FB_D_5b" /* GXT: This is your unmarked weapon loadout. You will have access to the Ceramic Pistol from the start but Lester will have your other weapon stashed inside the Casino so your cover is not blown when passing through any initial metal detectors. */;
 					}
-					return "CH_DP_FB_D_5";
+					return "CH_DP_FB_D_5" /* GXT: This is the unmarked weapon loadout that will be available to you during The Diamond Casino Heist. */;
 				
 				case 5:
-					return "CH_DP_FB_D_6";
+					return "CH_DP_FB_D_6" /* GXT: Your Driver will have these getaway vehicles parked for you when you exit the Casino. */;
 				
 				case 16:
-					return "CH_DP_FB_D_7";
+					return "CH_DP_FB_D_7" /* GXT: The hacking device can be used to hack into any 1, 2 or 3 secure keypads at the Casino. */;
 				
 				case 17:
 					switch (func_114(uParam0->f_4356))
 					{
 						case 1:
-							return "CH_DP_FB_D_8a";
+							return "CH_DP_FB_D_8a" /* GXT: This is the equipment you have acquired:~n~- Nano Drone~n~- Vault Laser~n~- Vault Keycards */;
 						
 						case 2:
-							return "CH_DP_FB_D_8b";
+							return "CH_DP_FB_D_8b" /* GXT: This is the equipment you have acquired:~n~- Entry Disguise(s)~n~- Vault Drill~n~- Vault Keycards */;
 						
 						case 3:
-							return "CH_DP_FB_D_8c";
+							return "CH_DP_FB_D_8c" /* GXT: This is the equipment you have acquired:~n~- Thermal/Breaching Charges~n~- Vault Explosives~n~- Vault Keycards */;
 						
 						default:
 					}
 					break;
 				
 				case 6:
-					return "CH_DP_FB_D_9";
+					return "CH_DP_FB_D_9" /* GXT: Your Gunman can act as decoy during the getaway and will help distract the Cops.~n~~n~Cost:~n~$~1~. */;
 				
 				case 7:
-					return "CH_DP_FB_D_10";
+					return "CH_DP_FB_D_10" /* GXT: Your Driver can park a clean vehicle during the getaway that you can switch into to help hide from the Cops.~n~~n~Cost:~n~$~1~. */;
 			}
 			break;
 	}
@@ -4951,37 +4951,37 @@ char* func_117(var uParam0)//Position - 0x664B
 			switch (uParam0->f_2593)
 			{
 				case 2:
-					return "CH_DP_FB_T_0";
+					return "CH_DP_FB_T_0" /* GXT: ENTRANCE */;
 				
 				case 3:
-					return "CH_DP_FB_T_1";
+					return "CH_DP_FB_T_1" /* GXT: EXIT */;
 				
 				case 4:
-					return "CH_DP_FB_T_2";
+					return "CH_DP_FB_T_2" /* GXT: BUYER */;
 				
 				case 13:
-					return "CH_DP_FB_T_3";
+					return "CH_DP_FB_T_3" /* GXT: ENTRY DISGUISE */;
 				
 				case 14:
-					return "CH_DP_FB_T_4";
+					return "CH_DP_FB_T_4" /* GXT: EXIT DISGUISE */;
 				
 				case 15:
-					return "CH_DP_FB_T_5";
+					return "CH_DP_FB_T_5" /* GXT: UNMARKED WEAPONS */;
 				
 				case 5:
-					return "CH_DP_FB_T_6";
+					return "CH_DP_FB_T_6" /* GXT: GETAWAY VEHICLES */;
 				
 				case 16:
-					return "CH_DP_FB_T_7";
+					return "CH_DP_FB_T_7" /* GXT: HACKING DEVICE */;
 				
 				case 17:
-					return "CH_DP_FB_T_8";
+					return "CH_DP_FB_T_8" /* GXT: EQUIPMENT */;
 				
 				case 6:
-					return "CH_DP_FB_T_9";
+					return "CH_DP_FB_T_9" /* GXT: DECOY GUNMAN */;
 				
 				case 7:
-					return "CH_DP_FB_T_10";
+					return "CH_DP_FB_T_10" /* GXT: CLEAN VEHICLE */;
 				
 				default:
 			}
@@ -5019,9 +5019,9 @@ int func_118(var uParam0)//Position - 0x6702
 
 void func_119(var uParam0)//Position - 0x676E
 {
-	func_116("CH_DP_TARGET");
+	func_116("CH_DP_TARGET" /* GXT: TARGET */);
 	func_115(-1, 1, 1);
-	func_112("CH_DETAILSh", 0, 0);
+	func_112("CH_DETAILSh" /* GXT: The target inside the vault is ~a~. */, 0, 0);
 	func_120(func_121(func_122(uParam0->f_4356), 0));
 }
 
@@ -5044,30 +5044,30 @@ char* func_121(int iParam0, bool bParam1)//Position - 0x6802
 		case 0:
 			if (!bParam1)
 			{
-				return "CH_TARGET_0b";
+				return "CH_TARGET_0b" /* GXT: Cash */;
 			}
-			return "CH_TARGET_0";
+			return "CH_TARGET_0" /* GXT: CASH */;
 		
 		case 1:
 			if (!bParam1)
 			{
-				return "CH_TARGET_1b";
+				return "CH_TARGET_1b" /* GXT: Gold */;
 			}
-			return "CH_TARGET_1";
+			return "CH_TARGET_1" /* GXT: GOLD */;
 		
 		case 2:
 			if (!bParam1)
 			{
-				return "CH_TARGET_2b";
+				return "CH_TARGET_2b" /* GXT: Artwork */;
 			}
-			return "CH_TARGET_2";
+			return "CH_TARGET_2" /* GXT: ARTWORK */;
 		
 		case 3:
 			if (!bParam1)
 			{
-				return "CH_TARGET_3b";
+				return "CH_TARGET_3b" /* GXT: Diamonds */;
 			}
-			return "CH_TARGET_3";
+			return "CH_TARGET_3" /* GXT: DIAMONDS */;
 		
 		default:
 	}
@@ -5106,13 +5106,13 @@ void func_124(var uParam0)//Position - 0x68CA
 	func_115(-1, 1, 1);
 	if (uParam0->f_2593 == 2)
 	{
-		func_112("CH_DETAILSf", 0, 0);
+		func_112("CH_DETAILSf" /* GXT: Details:~n~~a~~n~~n~Cost:~n~$~1~ */, 0, 0);
 		func_120(func_128(uParam0, uParam0->f_2593));
 		func_110(func_126(uParam0, uParam0->f_2593));
 	}
 	else
 	{
-		func_112("CH_DETAILSg", 0, 0);
+		func_112("CH_DETAILSg" /* GXT: Details:~n~~a~~n~~n~Cost:~n~$~1~~n~~n~Please note:~n~~a~ */, 0, 0);
 		func_120(func_128(uParam0, uParam0->f_2593));
 		func_110(func_126(uParam0, uParam0->f_2593));
 		func_120(func_125(uParam0, uParam0->f_2593));
@@ -5127,10 +5127,10 @@ char* func_125(var uParam0, int iParam1)//Position - 0x6953
 			return "";
 		
 		case 4:
-			return "CH_DP_PUR_PN_1";
+			return "CH_DP_PUR_PN_1" /* GXT: A Vault Drill or Vault Laser must be acquired before you can use this. */;
 		
 		case 3:
-			return "CH_DP_PUR_PN_2";
+			return "CH_DP_PUR_PN_2" /* GXT: The hacking device must be acquired before you can use this. */;
 		
 		default:
 	}
@@ -5165,13 +5165,13 @@ char* func_128(var uParam0, int iParam1)//Position - 0x69D9
 	switch (iParam1)
 	{
 		case 2:
-			return "CH_DP_PUR_D_0";
+			return "CH_DP_PUR_D_0" /* GXT: A model of the Casino exterior that highlights potential access points. */;
 		
 		case 4:
-			return "CH_DP_PUR_D_1";
+			return "CH_DP_PUR_D_1" /* GXT: A replica vault door to practice getting into the vault with the drill or laser. */;
 		
 		case 3:
-			return "CH_DP_PUR_D_2";
+			return "CH_DP_PUR_D_2" /* GXT: A replica secure keypad to practice getting through locked doors inside the Casino. */;
 		
 		default:
 	}
@@ -5183,13 +5183,13 @@ char* func_129(var uParam0, int iParam1)//Position - 0x6A12
 	switch (iParam1)
 	{
 		case 2:
-			return "CH_DP_PUR_T_0";
+			return "CH_DP_PUR_T_0" /* GXT: CASINO MODEL */;
 		
 		case 4:
-			return "CH_DP_PUR_T_1";
+			return "CH_DP_PUR_T_1" /* GXT: VAULT DOOR */;
 		
 		case 3:
-			return "CH_DP_PUR_T_2";
+			return "CH_DP_PUR_T_2" /* GXT: DOOR SECURITY */;
 		
 		default:
 	}
@@ -5219,7 +5219,7 @@ void func_131(var uParam0)//Position - 0x6A87
 {
 	func_116(func_133(uParam0, uParam0->f_2593));
 	func_115(-1, 1, 1);
-	func_112("CH_DETAILSe", 0, 0);
+	func_112("CH_DETAILSe" /* GXT: Description:~n~~a~ */, 0, 0);
 	func_120(func_132(uParam0, uParam0->f_2593));
 }
 
@@ -5228,13 +5228,13 @@ char* func_132(var uParam0, int iParam1)//Position - 0x6ABE
 	switch (iParam1)
 	{
 		case 5:
-			return "CH_DP_APR_0";
+			return "CH_DP_APR_0" /* GXT: Quietly infiltrate the Casino and get to the vault while trying to remain undetected. */;
 		
 		case 6:
-			return "CH_DP_APR_1";
+			return "CH_DP_APR_1" /* GXT: Use disguises to con your way into the Casino and get to the vault without blowing your cover. */;
 		
 		case 7:
-			return "CH_DP_APR_2";
+			return "CH_DP_APR_2" /* GXT: Go in loud. Shoot your way through the Casino and get to the vault while dealing with any resistance along the way. */;
 		
 		default:
 	}
@@ -5266,23 +5266,23 @@ char* func_134(int iParam0, bool bParam1)//Position - 0x6B36
 		case 1:
 			if (!bParam1)
 			{
-				return "CH_APPROACH_0b";
+				return "CH_APPROACH_0b" /* GXT: Silent & Sneaky */;
 			}
-			return "CH_APPROACH_0";
+			return "CH_APPROACH_0" /* GXT: SILENT & SNEAKY */;
 		
 		case 2:
 			if (!bParam1)
 			{
-				return "CH_APPROACH_1b";
+				return "CH_APPROACH_1b" /* GXT: The Big Con */;
 			}
-			return "CH_APPROACH_1";
+			return "CH_APPROACH_1" /* GXT: THE BIG CON */;
 		
 		case 3:
 			if (!bParam1)
 			{
-				return "CH_APPROACH_2b";
+				return "CH_APPROACH_2b" /* GXT: Aggressive */;
 			}
-			return "CH_APPROACH_2";
+			return "CH_APPROACH_2" /* GXT: AGGRESSIVE */;
 		
 		default:
 	}
@@ -5316,22 +5316,22 @@ void func_136(var uParam0)//Position - 0x6BD2
 	{
 		if (func_159(uParam0, uParam0->f_2593) != -1)
 		{
-			func_112("CH_DETAILSb", 0, 0);
+			func_112("CH_DETAILSb" /* GXT: Expertise:~n~~a~~n~~n~Skill level:~n~~a~~n~~n~Cut:~n~~1~% */, 0, 0);
 			func_120(func_158(uParam0, uParam0->f_2593));
 			func_120(func_157(uParam0, uParam0->f_2593));
 			func_110(func_159(uParam0, uParam0->f_2593));
 		}
 		else
 		{
-			func_112("CH_DETAILSc", 0, 0);
+			func_112("CH_DETAILSc" /* GXT: Expertise:~n~~a~~n~~n~Skill level:~n~~a~~n~~n~Cut:~n~~a~ */, 0, 0);
 			func_120(func_158(uParam0, uParam0->f_2593));
 			func_120(func_157(uParam0, uParam0->f_2593));
-			func_120("CH_LIST_BLANK");
+			func_120("CH_LIST_BLANK" /* GXT: ??? */);
 		}
 	}
 	else
 	{
-		func_112("CH_DETAILSd", 0, 0);
+		func_112("CH_DETAILSd" /* GXT: Locked:~n~~a~ */, 0, 0);
 		func_120(func_137(uParam0, uParam0->f_2593));
 	}
 }
@@ -5343,17 +5343,17 @@ char* func_137(var uParam0, int iParam1)//Position - 0x6C93
 		case 10:
 			if (func_144(uParam0))
 			{
-				return "CH_LIST_BLANK";
+				return "CH_LIST_BLANK" /* GXT: ??? */;
 			}
 			else
 			{
 				switch (uParam0->f_744.f_738)
 				{
 					case 3:
-						return "CH_DP_UR_WE_0";
+						return "CH_DP_UR_WE_0" /* GXT: Meet this support crew member as the owner of a Hangar. */;
 					
 					case 4:
-						return "CH_DP_UR_WE_1";
+						return "CH_DP_UR_WE_1" /* GXT: Meet this support crew member as the owner of a Bunker or Arena Workshop. */;
 					}
 				
 				default:
@@ -5364,10 +5364,10 @@ char* func_137(var uParam0, int iParam1)//Position - 0x6C93
 			switch (uParam0->f_744.f_740)
 			{
 				case 4:
-					return "CH_DP_UR_DR_0";
+					return "CH_DP_UR_DR_0" /* GXT: Meet this support crew member as the owner of a Clubhouse. */;
 				
 				case 5:
-					return "CH_DP_UR_WE_1";
+					return "CH_DP_UR_WE_1" /* GXT: Meet this support crew member as the owner of a Bunker or Arena Workshop. */;
 				
 				default:
 			}
@@ -5376,17 +5376,17 @@ char* func_137(var uParam0, int iParam1)//Position - 0x6C93
 		case 12:
 			if (func_138(uParam0))
 			{
-				return "CH_LIST_BLANK";
+				return "CH_LIST_BLANK" /* GXT: ??? */;
 			}
 			else
 			{
 				switch (uParam0->f_744.f_743)
 				{
 					case 3:
-						return "CH_DP_UR_HR_0";
+						return "CH_DP_UR_HR_0" /* GXT: Meet this support crew member as the owner of a Nightclub. */;
 					
 					case 5:
-						return "CH_DP_UR_HR_1";
+						return "CH_DP_UR_HR_1" /* GXT: Meet this support crew member as the owner of a Terrorbyte. */;
 					}
 				
 				default:
@@ -5706,26 +5706,26 @@ char* func_157(var uParam0, int iParam1)//Position - 0x72A9
 		case 10:
 			if (func_144(uParam0))
 			{
-				return "CH_LIST_BLANK";
+				return "CH_LIST_BLANK" /* GXT: ??? */;
 			}
 			else
 			{
 				switch (uParam0->f_744.f_738)
 				{
 					case 1:
-						return "CH_SKILL_POOR";
+						return "CH_SKILL_POOR" /* GXT: Poor */;
 					
 					case 2:
-						return "CH_SKILL_EXPR";
+						return "CH_SKILL_EXPR" /* GXT: Expert */;
 					
 					case 3:
-						return "CH_SKILL_GOOD";
+						return "CH_SKILL_GOOD" /* GXT: Good */;
 					
 					case 4:
-						return "CH_SKILL_EXPR";
+						return "CH_SKILL_EXPR" /* GXT: Expert */;
 					
 					case 5:
-						return "CH_SKILL_EXPR";
+						return "CH_SKILL_EXPR" /* GXT: Expert */;
 					}
 				
 				default:
@@ -5736,19 +5736,19 @@ char* func_157(var uParam0, int iParam1)//Position - 0x72A9
 			switch (uParam0->f_744.f_740)
 			{
 				case 1:
-					return "CH_SKILL_POOR";
+					return "CH_SKILL_POOR" /* GXT: Poor */;
 				
 				case 2:
-					return "CH_SKILL_GOOD";
+					return "CH_SKILL_GOOD" /* GXT: Good */;
 				
 				case 3:
-					return "CH_SKILL_EXPR";
+					return "CH_SKILL_EXPR" /* GXT: Expert */;
 				
 				case 4:
-					return "CH_SKILL_GOOD";
+					return "CH_SKILL_GOOD" /* GXT: Good */;
 				
 				case 5:
-					return "CH_SKILL_EXPR";
+					return "CH_SKILL_EXPR" /* GXT: Expert */;
 				
 				default:
 			}
@@ -5757,26 +5757,26 @@ char* func_157(var uParam0, int iParam1)//Position - 0x72A9
 		case 12:
 			if (func_138(uParam0))
 			{
-				return "CH_LIST_BLANK";
+				return "CH_LIST_BLANK" /* GXT: ??? */;
 			}
 			else
 			{
 				switch (uParam0->f_744.f_743)
 				{
 					case 1:
-						return "CH_SKILL_POOR";
+						return "CH_SKILL_POOR" /* GXT: Poor */;
 					
 					case 2:
-						return "CH_SKILL_GOOD";
+						return "CH_SKILL_GOOD" /* GXT: Good */;
 					
 					case 3:
-						return "CH_SKILL_GOOD";
+						return "CH_SKILL_GOOD" /* GXT: Good */;
 					
 					case 4:
-						return "CH_SKILL_EXPR";
+						return "CH_SKILL_EXPR" /* GXT: Expert */;
 					
 					case 5:
-						return "CH_SKILL_EXPR";
+						return "CH_SKILL_EXPR" /* GXT: Expert */;
 					}
 				
 				default:
@@ -5791,13 +5791,13 @@ char* func_158(var uParam0, int iParam1)//Position - 0x73E6
 	switch (iParam1)
 	{
 		case 10:
-			return "CH_WE_EXPR";
+			return "CH_WE_EXPR" /* GXT: Gunman */;
 		
 		case 11:
-			return "CH_DR_EXPR";
+			return "CH_DR_EXPR" /* GXT: Driver */;
 		
 		case 12:
-			return "CH_HR_EXPR";
+			return "CH_HR_EXPR" /* GXT: Hacker */;
 		
 		default:
 	}
@@ -6001,26 +6001,26 @@ char* func_167(var uParam0, int iParam1)//Position - 0x772E
 		case 10:
 			if (func_144(uParam0))
 			{
-				return "CH_LIST_BLANK";
+				return "CH_LIST_BLANK" /* GXT: ??? */;
 			}
 			else
 			{
 				switch (uParam0->f_744.f_738)
 				{
 					case 1:
-						return "CH_WE_NAME_0";
+						return "CH_WE_NAME_0" /* GXT: KARL ABOLAJI */;
 					
 					case 2:
-						return "CH_WE_NAME_1";
+						return "CH_WE_NAME_1" /* GXT: GUSTAVO MOTA */;
 					
 					case 3:
-						return "CH_WE_NAME_2";
+						return "CH_WE_NAME_2" /* GXT: CHARLIE REED */;
 					
 					case 4:
-						return "CH_WE_NAME_3";
+						return "CH_WE_NAME_3" /* GXT: CHESTER MCCOY */;
 					
 					case 5:
-						return "CH_WE_NAME_4";
+						return "CH_WE_NAME_4" /* GXT: PATRICK MCREARY */;
 					}
 				
 				default:
@@ -6031,19 +6031,19 @@ char* func_167(var uParam0, int iParam1)//Position - 0x772E
 			switch (uParam0->f_744.f_740)
 			{
 				case 1:
-					return "CH_DR_NAME_0";
+					return "CH_DR_NAME_0" /* GXT: KARIM DENZ */;
 				
 				case 2:
-					return "CH_DR_NAME_1";
+					return "CH_DR_NAME_1" /* GXT: TALIANA MARTINEZ */;
 				
 				case 3:
-					return "CH_DR_NAME_2";
+					return "CH_DR_NAME_2" /* GXT: EDDIE TOH */;
 				
 				case 4:
-					return "CH_DR_NAME_3";
+					return "CH_DR_NAME_3" /* GXT: ZACH NELSON */;
 				
 				case 5:
-					return "CH_DR_NAME_4";
+					return "CH_DR_NAME_4" /* GXT: CHESTER MCCOY */;
 				
 				default:
 			}
@@ -6052,26 +6052,26 @@ char* func_167(var uParam0, int iParam1)//Position - 0x772E
 		case 12:
 			if (func_138(uParam0))
 			{
-				return "CH_LIST_BLANK";
+				return "CH_LIST_BLANK" /* GXT: ??? */;
 			}
 			else
 			{
 				switch (uParam0->f_744.f_743)
 				{
 					case 1:
-						return "CH_HR_NAME_0";
+						return "CH_HR_NAME_0" /* GXT: RICKIE LUKENS */;
 					
 					case 2:
-						return "CH_HR_NAME_1";
+						return "CH_HR_NAME_1" /* GXT: CHRISTIAN FELTZ */;
 					
 					case 3:
-						return "CH_HR_NAME_2";
+						return "CH_HR_NAME_2" /* GXT: YOHAN BLAIR */;
 					
 					case 4:
-						return "CH_HR_NAME_3";
+						return "CH_HR_NAME_3" /* GXT: AVI SCHWARTZMAN */;
 					
 					case 5:
-						return "CH_HR_NAME_4";
+						return "CH_HR_NAME_4" /* GXT: PAIGE HARRIS */;
 					}
 				
 				default:
@@ -6106,12 +6106,12 @@ void func_169(var uParam0)//Position - 0x78A7
 	func_115(-1, 1, 1);
 	if (func_177(func_178(uParam0, uParam0->f_4355, uParam0->f_2593)))
 	{
-		func_112("CH_DETAILSd", 0, 0);
+		func_112("CH_DETAILSd" /* GXT: Locked:~n~~a~ */, 0, 0);
 		func_120(func_178(uParam0, uParam0->f_4355, uParam0->f_2593));
 	}
 	else
 	{
-		func_112("CH_DETAILS", 0, 0);
+		func_112("CH_DETAILS" /* GXT: Mission Details:~n~~a~~n~~n~Heist Impact:~n~~a~~n~~n~Requirement:~n~~a~~n~~n~Recommended:~n~~1~+ Players */, 0, 0);
 		func_120(func_178(uParam0, uParam0->f_4355, uParam0->f_2593));
 		func_120(func_176(uParam0, uParam0->f_4355, uParam0->f_2593));
 		func_120(func_172(uParam0, uParam0->f_4355, uParam0->f_2593));
@@ -6305,10 +6305,10 @@ char* func_172(var uParam0, int iParam1, int iParam2)//Position - 0x7BD5
 			switch (iParam2)
 			{
 				case 9:
-					return "CH_DP_MAND";
+					return "CH_DP_MAND" /* GXT: Mandatory */;
 				
 				case 10:
-					return "CH_DP_MAND";
+					return "CH_DP_MAND" /* GXT: Mandatory */;
 				
 				default:
 			}
@@ -6318,28 +6318,28 @@ char* func_172(var uParam0, int iParam1, int iParam2)//Position - 0x7BD5
 			switch (iParam2)
 			{
 				case 2:
-					return "CH_DP_OPT";
+					return "CH_DP_OPT" /* GXT: Optional */;
 				
 				case 3:
-					return "CH_DP_OPT";
+					return "CH_DP_OPT" /* GXT: Optional */;
 				
 				case 4:
-					return "CH_DP_OPT";
+					return "CH_DP_OPT" /* GXT: Optional */;
 				
 				case 5:
-					return "CH_DP_MAND";
+					return "CH_DP_MAND" /* GXT: Mandatory */;
 				
 				case 6:
-					return "CH_DP_MAND";
+					return "CH_DP_MAND" /* GXT: Mandatory */;
 				
 				case 7:
-					return "CH_DP_MAND";
+					return "CH_DP_MAND" /* GXT: Mandatory */;
 				
 				case 9:
-					return "CH_DP_MAND";
+					return "CH_DP_MAND" /* GXT: Mandatory */;
 				
 				case 13:
-					return "CH_DP_OPT";
+					return "CH_DP_OPT" /* GXT: Optional */;
 				
 				case 14:
 					switch (func_114(uParam0->f_4356))
@@ -6347,26 +6347,26 @@ char* func_172(var uParam0, int iParam1, int iParam2)//Position - 0x7BD5
 						case 2:
 							if (func_173(uParam0->f_4356))
 							{
-								return "CH_DP_OPT";
+								return "CH_DP_OPT" /* GXT: Optional */;
 							}
 							break;
 					}
-					return "CH_DP_MAND";
+					return "CH_DP_MAND" /* GXT: Mandatory */;
 				
 				case 15:
-					return "CH_DP_MAND";
+					return "CH_DP_MAND" /* GXT: Mandatory */;
 				
 				case 16:
-					return "CH_DP_OPT";
+					return "CH_DP_OPT" /* GXT: Optional */;
 				
 				case 17:
-					return "CH_DP_OPT";
+					return "CH_DP_OPT" /* GXT: Optional */;
 				
 				case 8:
-					return "CH_DP_OPT";
+					return "CH_DP_OPT" /* GXT: Optional */;
 				
 				case 18:
-					return "CH_DP_OPT";
+					return "CH_DP_OPT" /* GXT: Optional */;
 				
 				default:
 			}
@@ -6445,10 +6445,10 @@ char* func_176(var uParam0, int iParam1, int iParam2)//Position - 0x7E3C
 			switch (iParam2)
 			{
 				case 9:
-					return "CH_DP_I_S_0";
+					return "CH_DP_I_S_0" /* GXT: Opens up different access points to get in and out of the Casino. */;
 				
 				case 10:
-					return "CH_DP_I_S_1";
+					return "CH_DP_I_S_1" /* GXT: Identifies the type of loot in the vault. */;
 				
 				default:
 			}
@@ -6458,13 +6458,13 @@ char* func_176(var uParam0, int iParam1, int iParam2)//Position - 0x7E3C
 			switch (iParam2)
 			{
 				case 2:
-					return "CH_DP_I_P_0";
+					return "CH_DP_I_P_0" /* GXT: Shows all the security camera locations at the Casino. */;
 				
 				case 3:
-					return "CH_DP_I_P_1";
+					return "CH_DP_I_P_1" /* GXT: Shows the positions of all the security guards at the Casino. */;
 				
 				case 4:
-					return "CH_DP_I_P_2";
+					return "CH_DP_I_P_2" /* GXT: Reduces the weapons and armor available to the Casino security guards. */;
 				
 				case 5:
 					switch (func_165(uParam0->f_4356, 0))
@@ -6476,10 +6476,10 @@ char* func_176(var uParam0, int iParam1, int iParam2)//Position - 0x7E3C
 									switch (uParam0->f_744.f_739)
 									{
 										case 0:
-											return "CH_D_I_P_3_0_aa";
+											return "CH_D_I_P_3_0_aa" /* GXT: Gives you access to the following weapons:~n~- Suppressed Micro SMG~n~- Suppressed Vintage Pistol~n~- Stun Gun~n~- Knife */;
 										
 										case 1:
-											return "CH_D_I_P_3_0_ab";
+											return "CH_D_I_P_3_0_ab" /* GXT: Gives you access to the following weapons:~n~- Suppressed Machine Pistol~n~- Suppressed Combat Pistol~n~- Stun Gun~n~- Knife */;
 										
 										default:
 									}
@@ -6489,10 +6489,10 @@ char* func_176(var uParam0, int iParam1, int iParam2)//Position - 0x7E3C
 									switch (uParam0->f_744.f_739)
 									{
 										case 0:
-											return "CH_D_I_P_3_0_ba";
+											return "CH_D_I_P_3_0_ba" /* GXT: Gives you access to the following weapons:~n~- Micro SMG~n~- Ceramic Pistol~n~- Switchblade */;
 										
 										case 1:
-											return "CH_D_I_P_3_0_bb";
+											return "CH_D_I_P_3_0_bb" /* GXT: Gives you access to the following weapons:~n~- Double Barrel Shotgun~n~- Ceramic Pistol~n~- Switchblade */;
 										
 										default:
 									}
@@ -6502,10 +6502,10 @@ char* func_176(var uParam0, int iParam1, int iParam2)//Position - 0x7E3C
 									switch (uParam0->f_744.f_739)
 									{
 										case 0:
-											return "CH_D_I_P_3_0_ca";
+											return "CH_D_I_P_3_0_ca" /* GXT: Gives you access to the following weapons:~n~- Sawed-Off Shotgun~n~- SMG~n~- Molotov~n~- Knuckle Duster */;
 										
 										case 1:
-											return "CH_D_I_P_3_0_cb";
+											return "CH_D_I_P_3_0_cb" /* GXT: Gives you access to the following weapons:~n~- Heavy Revolver~n~- SMG~n~- Molotov~n~- Knuckle Duster */;
 										
 										default:
 									}
@@ -6520,10 +6520,10 @@ char* func_176(var uParam0, int iParam1, int iParam2)//Position - 0x7E3C
 									switch (uParam0->f_744.f_739)
 									{
 										case 0:
-											return "CH_D_I_P_3_1_aa";
+											return "CH_D_I_P_3_1_aa" /* GXT: Gives you access to the following weapons:~n~- Suppressed Carbine Rifle~n~- Suppressed Heavy Pistol~n~- Stun Gun~n~- Knife */;
 										
 										case 1:
-											return "CH_D_I_P_3_1_ab";
+											return "CH_D_I_P_3_1_ab" /* GXT: Gives you access to the following weapons:~n~- Suppressed Assault Shotgun~n~- Suppressed Pistol .50~n~- Stun Gun~n~- Knife */;
 										
 										default:
 									}
@@ -6533,10 +6533,10 @@ char* func_176(var uParam0, int iParam1, int iParam2)//Position - 0x7E3C
 									switch (uParam0->f_744.f_739)
 									{
 										case 0:
-											return "CH_D_I_P_3_1_ba";
+											return "CH_D_I_P_3_1_ba" /* GXT: Gives you access to the following weapons:~n~- Carbine Rifle~n~- Ceramic Pistol~n~- Switchblade */;
 										
 										case 1:
-											return "CH_D_I_P_3_1_bb";
+											return "CH_D_I_P_3_1_bb" /* GXT: Gives you access to the following weapons:~n~- Assault Shotgun~n~- Ceramic Pistol~n~- Switchblade */;
 										
 										default:
 									}
@@ -6546,10 +6546,10 @@ char* func_176(var uParam0, int iParam1, int iParam2)//Position - 0x7E3C
 									switch (uParam0->f_744.f_739)
 									{
 										case 0:
-											return "CH_D_I_P_3_1_ca";
+											return "CH_D_I_P_3_1_ca" /* GXT: Gives you access to the following weapons:~n~- Carbine Rifle~n~- SMG~n~- Proximity Mines~n~- Machete */;
 										
 										case 1:
-											return "CH_D_I_P_3_1_cb";
+											return "CH_D_I_P_3_1_cb" /* GXT: Gives you access to the following weapons:~n~- Assault Shotgun~n~- SMG~n~- Proximity Mines~n~- Machete */;
 										
 										default:
 									}
@@ -6564,10 +6564,10 @@ char* func_176(var uParam0, int iParam1, int iParam2)//Position - 0x7E3C
 									switch (uParam0->f_744.f_739)
 									{
 										case 0:
-											return "CH_D_I_P_3_2_aa";
+											return "CH_D_I_P_3_2_aa" /* GXT: Gives you access to the following weapons:~n~- Suppressed Assault SMG~n~- Suppressed Combat Pistol~n~- Stun Gun~n~- Knife */;
 										
 										case 1:
-											return "CH_D_I_P_3_2_ab";
+											return "CH_D_I_P_3_2_ab" /* GXT: Gives you access to the following weapons:~n~- Suppressed Bullpup Shotgun~n~- Suppressed Heavy Pistol~n~- Stun Gun~n~- Knife */;
 										
 										default:
 									}
@@ -6577,10 +6577,10 @@ char* func_176(var uParam0, int iParam1, int iParam2)//Position - 0x7E3C
 									switch (uParam0->f_744.f_739)
 									{
 										case 0:
-											return "CH_D_I_P_3_2_ba";
+											return "CH_D_I_P_3_2_ba" /* GXT: Gives you access to the following weapons:~n~- Machine Pistol~n~- Ceramic Pistol~n~- Switchblade */;
 										
 										case 1:
-											return "CH_D_I_P_3_2_bb";
+											return "CH_D_I_P_3_2_bb" /* GXT: Gives you access to the following weapons:~n~- Sweeper Shotgun~n~- Ceramic Pistol~n~- Switchblade */;
 										
 										default:
 									}
@@ -6590,10 +6590,10 @@ char* func_176(var uParam0, int iParam1, int iParam2)//Position - 0x7E3C
 									switch (uParam0->f_744.f_739)
 									{
 										case 0:
-											return "CH_D_I_P_3_2_ca";
+											return "CH_D_I_P_3_2_ca" /* GXT: Gives you access to the following weapons:~n~- Assault SMG~n~- SMG~n~- Grenades~n~- Hammer */;
 										
 										case 1:
-											return "CH_D_I_P_3_2_cb";
+											return "CH_D_I_P_3_2_cb" /* GXT: Gives you access to the following weapons:~n~- Pump Shotgun~n~- SMG~n~- Grenades~n~- Hammer */;
 										
 										default:
 									}
@@ -6608,10 +6608,10 @@ char* func_176(var uParam0, int iParam1, int iParam2)//Position - 0x7E3C
 									switch (uParam0->f_744.f_739)
 									{
 										case 0:
-											return "CH_D_I_P_3_3_aa";
+											return "CH_D_I_P_3_3_aa" /* GXT: Gives you access to the following weapons:~n~- Suppressed Pump Shotgun Mk II~n~- Suppressed Pistol .50~n~- Stun Gun~n~- Knife */;
 										
 										case 1:
-											return "CH_D_I_P_3_3_ab";
+											return "CH_D_I_P_3_3_ab" /* GXT: Gives you access to the following weapons:~n~- Suppressed Carbine Rifle Mk II~n~- Suppressed Pistol .50~n~- Stun Gun~n~- Knife */;
 										
 										default:
 									}
@@ -6621,10 +6621,10 @@ char* func_176(var uParam0, int iParam1, int iParam2)//Position - 0x7E3C
 									switch (uParam0->f_744.f_739)
 									{
 										case 0:
-											return "CH_D_I_P_3_3_ba";
+											return "CH_D_I_P_3_3_ba" /* GXT: Gives you access to the following weapons:~n~- SMG Mk II~n~- Ceramic Pistol~n~- Switchblade */;
 										
 										case 1:
-											return "CH_D_I_P_3_3_bb";
+											return "CH_D_I_P_3_3_bb" /* GXT: Gives you access to the following weapons:~n~- Bullpup Rifle Mk II~n~- Ceramic Pistol~n~- Switchblade */;
 										
 										default:
 									}
@@ -6634,10 +6634,10 @@ char* func_176(var uParam0, int iParam1, int iParam2)//Position - 0x7E3C
 									switch (uParam0->f_744.f_739)
 									{
 										case 0:
-											return "CH_D_I_P_3_3_ca";
+											return "CH_D_I_P_3_3_ca" /* GXT: Gives you access to the following weapons:~n~- Pump Shotgun Mk II~n~- SMG Mk II~n~- Pipe Bombs~n~- Pipe Wrench */;
 										
 										case 1:
-											return "CH_D_I_P_3_3_cb";
+											return "CH_D_I_P_3_3_cb" /* GXT: Gives you access to the following weapons:~n~- Assault Rifle Mk II~n~- SMG Mk II~n~- Pipe Bombs~n~- Pipe Wrench */;
 										
 										default:
 									}
@@ -6652,10 +6652,10 @@ char* func_176(var uParam0, int iParam1, int iParam2)//Position - 0x7E3C
 									switch (uParam0->f_744.f_739)
 									{
 										case 0:
-											return "CH_D_I_P_3_4_aa";
+											return "CH_D_I_P_3_4_aa" /* GXT: Gives you access to the following weapons:~n~- Combat PDW~n~- Suppressed Pistol .50~n~- Stun Gun~n~- Knife */;
 										
 										case 1:
-											return "CH_D_I_P_3_4_ab";
+											return "CH_D_I_P_3_4_ab" /* GXT: Gives you access to the following weapons:~n~- Suppressed Assault Rifle~n~- Suppressed Pistol .50~n~- Stun Gun~n~- Knife */;
 										
 										default:
 									}
@@ -6665,10 +6665,10 @@ char* func_176(var uParam0, int iParam1, int iParam2)//Position - 0x7E3C
 									switch (uParam0->f_744.f_739)
 									{
 										case 0:
-											return "CH_D_I_P_3_4_ba";
+											return "CH_D_I_P_3_4_ba" /* GXT: Gives you access to the following weapons:~n~- Sawed-Off Shotgun~n~- Ceramic Pistol~n~- Switchblade */;
 										
 										case 1:
-											return "CH_D_I_P_3_4_bb";
+											return "CH_D_I_P_3_4_bb" /* GXT: Gives you access to the following weapons:~n~- Compact Rifle~n~- Ceramic Pistol~n~- Switchblade */;
 										
 										default:
 									}
@@ -6678,10 +6678,10 @@ char* func_176(var uParam0, int iParam1, int iParam2)//Position - 0x7E3C
 									switch (uParam0->f_744.f_739)
 									{
 										case 0:
-											return "CH_D_I_P_3_4_ca";
+											return "CH_D_I_P_3_4_ca" /* GXT: Gives you access to the following weapons:~n~- Heavy Shotgun~n~- SMG~n~- Sticky Bombs~n~- Crowbar */;
 										
 										case 1:
-											return "CH_D_I_P_3_4_cb";
+											return "CH_D_I_P_3_4_cb" /* GXT: Gives you access to the following weapons:~n~- Combat MG~n~- SMG~n~- Sticky Bombs~n~- Crowbar */;
 										
 										default:
 									}
@@ -6692,22 +6692,22 @@ char* func_176(var uParam0, int iParam1, int iParam2)//Position - 0x7E3C
 					break;
 				
 				case 6:
-					return "CH_DP_I_P_4";
+					return "CH_DP_I_P_4" /* GXT: Vehicles used to escape after robbing the Casino. */;
 				
 				case 7:
-					return "CH_DP_I_P_5";
+					return "CH_DP_I_P_5" /* GXT: Hack into secure keypads at the Casino. */;
 				
 				case 9:
-					return "CH_DP_I_P_6";
+					return "CH_DP_I_P_6" /* GXT: Access into the secure tunnel that leads to the vault. */;
 				
 				case 13:
 					switch (uParam0->f_744.f_742)
 					{
 						case 1:
-							return "CH_DP_I_P_7a";
+							return "CH_DP_I_P_7a" /* GXT: Can swipe through all level 1 secure doors at the Casino. */;
 						
 						case 2:
-							return "CH_DP_I_P_7b";
+							return "CH_DP_I_P_7b" /* GXT: Can swipe through all level 1 and 2 secure doors at the Casino. */;
 						
 						default:
 					}
@@ -6717,26 +6717,26 @@ char* func_176(var uParam0, int iParam1, int iParam2)//Position - 0x7E3C
 					switch (func_114(uParam0->f_4356))
 					{
 						case 1:
-							return "CH_DP_I_P_8a";
+							return "CH_DP_I_P_8a" /* GXT: Can sedate security guards. */;
 						
 						case 2:
 							switch (uParam0->f_744.f_744)
 							{
 								case 1:
-									return "CH_DP_I_P_8b_a";
+									return "CH_DP_I_P_8b_a" /* GXT: Disguise as Bugstars workers to get into the back area of the Casino undetected. */;
 								
 								case 2:
-									return "CH_DP_I_P_8b_b";
+									return "CH_DP_I_P_8b_b" /* GXT: Disguise as maintenance workers to get into the back area of the Casino undetected. */;
 								
 								case 3:
-									return "CH_DP_I_P_8b_c";
+									return "CH_DP_I_P_8b_c" /* GXT: Disguise as Gruppe Sechs security guards to get to the vault undetected. */;
 								
 								default:
 							}
 							break;
 						
 						case 3:
-							return "CH_DP_I_P_8c";
+							return "CH_DP_I_P_8c" /* GXT: Burn through secure keypads. */;
 					}
 					break;
 				
@@ -6744,13 +6744,13 @@ char* func_176(var uParam0, int iParam1, int iParam2)//Position - 0x7E3C
 					switch (func_114(uParam0->f_4356))
 					{
 						case 1:
-							return "CH_DP_I_P_9a";
+							return "CH_DP_I_P_9a" /* GXT: Quietly drill through the vault door to gain access to the vault. */;
 						
 						case 2:
-							return "CH_DP_I_P_9b";
+							return "CH_DP_I_P_9b" /* GXT: Drill through the vault door to gain access to the vault. */;
 						
 						case 3:
-							return "CH_DP_I_P_9c";
+							return "CH_DP_I_P_9c" /* GXT: Vault door can be blown open. */;
 						
 						default:
 					}
@@ -6760,13 +6760,13 @@ char* func_176(var uParam0, int iParam1, int iParam2)//Position - 0x7E3C
 					switch (func_114(uParam0->f_4356))
 					{
 						case 1:
-							return "CH_DP_I_P_10a";
+							return "CH_DP_I_P_10a" /* GXT: Disables the lights inside the Casino. */;
 						
 						case 2:
-							return "CH_DP_I_P_10b";
+							return "CH_DP_I_P_10b" /* GXT: Disguise as Yung Ancestor's entourage to get into the back area of the Casino undetected. */;
 						
 						case 3:
-							return "CH_DP_I_P_10c";
+							return "CH_DP_I_P_10c" /* GXT: Provides reinforced armor to wear that reduces bullet damage, and rappelling equipment. */;
 						
 						default:
 					}
@@ -6776,38 +6776,38 @@ char* func_176(var uParam0, int iParam1, int iParam2)//Position - 0x7E3C
 					switch (func_114(uParam0->f_4356))
 					{
 						case 1:
-							return "CH_DP_I_P_11a";
+							return "CH_DP_I_P_11a" /* GXT: Provides nightvision and rappelling equipment. */;
 						
 						case 2:
 							switch (uParam0->f_744.f_745)
 							{
 								case 6:
-									return "CH_DP_I_P_11ba";
+									return "CH_DP_I_P_11ba" /* GXT: Disguise as NOOSE to get out of the Casino undetected after robbing the vault. */;
 								
 								case 7:
-									return "CH_DP_I_P_11bb";
+									return "CH_DP_I_P_11bb" /* GXT: Disguise as firefighters to get out of the Casino undetected after robbing the vault. */;
 								
 								default:
 							}
 							break;
 						
 						case 3:
-							return "CH_DP_I_P_11c";
+							return "CH_DP_I_P_11c" /* GXT: Tunnel access to the Casino basement. */;
 					}
 					break;
 				
 				case 8:
-					return "CH_DP_I_P_12";
+					return "CH_DP_I_P_12" /* GXT: Can drill into the safety deposit boxes inside the vault. */;
 				
 				case 18:
 					switch (func_114(uParam0->f_4356))
 					{
 						case 1:
 						case 2:
-							return "CH_DP_I_P_13";
+							return "CH_DP_I_P_13" /* GXT: Chosen masks can be equipped if your cover is blown and you're switched to the Aggressive approach. */;
 						
 						case 3:
-							return "CH_DP_I_P_13b";
+							return "CH_DP_I_P_13b" /* GXT: Masks equipped at the start of The Diamond Casino Heist. */;
 						
 						default:
 					}
@@ -6820,7 +6820,7 @@ char* func_176(var uParam0, int iParam1, int iParam2)//Position - 0x7E3C
 
 int func_177(char* sParam0)//Position - 0x83F0
 {
-	if ((MISC::ARE_STRINGS_EQUAL(sParam0, "CH_DP_D_P_0b") || MISC::ARE_STRINGS_EQUAL(sParam0, "CH_DP_D_P_8b_ac")) || MISC::ARE_STRINGS_EQUAL(sParam0, "CH_DP_D_P_8b_bc"))
+	if ((MISC::ARE_STRINGS_EQUAL(sParam0, "CH_DP_D_P_0b" /* GXT: As leader, help Ms. Baker transfer ownership of The Diamond Casino & Resort to unlock this prep mission. */) || MISC::ARE_STRINGS_EQUAL(sParam0, "CH_DP_D_P_8b_ac" /* GXT: You must scope the side entrance access point to unlock this prep mission. */)) || MISC::ARE_STRINGS_EQUAL(sParam0, "CH_DP_D_P_8b_bc" /* GXT: You must scope the waste disposal access point to unlock this prep mission. */))
 	{
 		return 1;
 	}
@@ -6835,10 +6835,10 @@ char* func_178(var uParam0, int iParam1, int iParam2)//Position - 0x842A
 			switch (iParam2)
 			{
 				case 9:
-					return "CH_DP_D_S_0";
+					return "CH_DP_D_S_0" /* GXT: Find and take photos of the Casino entrances, exits and security features. */;
 				
 				case 10:
-					return "CH_DP_D_S_1";
+					return "CH_DP_D_S_1" /* GXT: Access the Casino's security system and identify what is being held in the vault. */;
 				
 				default:
 			}
@@ -6850,36 +6850,36 @@ char* func_178(var uParam0, int iParam1, int iParam2)//Position - 0x842A
 				case 2:
 					if (!func_181(uParam0->f_4356))
 					{
-						return "CH_DP_D_P_0b";
+						return "CH_DP_D_P_0b" /* GXT: As leader, help Ms. Baker transfer ownership of The Diamond Casino & Resort to unlock this prep mission. */;
 					}
-					return "CH_DP_D_P_0";
+					return "CH_DP_D_P_0" /* GXT: Get information on the Casino security cameras by helping out a contact. */;
 				
 				case 3:
-					return "CH_DP_D_P_1";
+					return "CH_DP_D_P_1" /* GXT: Find and take a photo of the Casino security guards' staff roster. */;
 				
 				case 4:
-					return "CH_DP_D_P_2";
+					return "CH_DP_D_P_2" /* GXT: Destroy weapons and equipment that are intended for Duggan's Casino security team. */;
 				
 				case 5:
-					return "CH_DP_D_P_3";
+					return "CH_DP_D_P_3" /* GXT: Steal untraceable weapons that can be used during The Diamond Casino Heist. */;
 				
 				case 6:
-					return "CH_DP_D_P_4";
+					return "CH_DP_D_P_4" /* GXT: Steal several getaway vehicles that can be used to escape from the Casino. */;
 				
 				case 7:
-					return "CH_DP_D_P_5";
+					return "CH_DP_D_P_5" /* GXT: Steal a hacking device allowing any secure keypads to be hacked. */;
 				
 				case 9:
-					return "CH_DP_D_P_6";
+					return "CH_DP_D_P_6" /* GXT: Steal vault key cards allowing access to the security tunnel leading to the vault. */;
 				
 				case 13:
 					switch (uParam0->f_744.f_742)
 					{
 						case 1:
-							return "CH_DP_D_P_7a";
+							return "CH_DP_D_P_7a" /* GXT: Steal a security pass allowing access through all level 1 secure doors. */;
 						
 						case 2:
-							return "CH_DP_D_P_7b";
+							return "CH_DP_D_P_7b" /* GXT: Steal a security pass allowing access through all level 1 and 2 secure doors. */;
 						
 						default:
 					}
@@ -6889,7 +6889,7 @@ char* func_178(var uParam0, int iParam1, int iParam2)//Position - 0x842A
 					switch (func_114(uParam0->f_4356))
 					{
 						case 1:
-							return "CH_DP_D_P_8a";
+							return "CH_DP_D_P_8a" /* GXT: Steal parts from several police drones to create a Nano Drone that can be used inside the Casino. */;
 						
 						case 2:
 							switch (uParam0->f_744.f_744)
@@ -6897,31 +6897,31 @@ char* func_178(var uParam0, int iParam1, int iParam2)//Position - 0x842A
 								case 1:
 									if (!func_180(uParam0->f_4356, 1))
 									{
-										return "CH_DP_D_P_8b_ac";
+										return "CH_DP_D_P_8b_ac" /* GXT: You must scope the side entrance access point to unlock this prep mission. */;
 									}
 									if (!func_171(uParam0->f_4356, 1))
 									{
-										return "CH_DP_D_P_8b_aa";
+										return "CH_DP_D_P_8b_aa" /* GXT: Steal a Bugstars van and outfits that can be used to get into the Casino back area without alerting the security. */;
 									}
-									return "CH_DP_D_P_8b_ab";
+									return "CH_DP_D_P_8b_ab" /* GXT: Steal a Trashmaster and plant garbage bags full of cockroaches around the exterior of the Casino to get access as a Bugstars worker. */;
 								
 								case 2:
 									if (!func_180(uParam0->f_4356, 2))
 									{
-										return "CH_DP_D_P_8b_bc";
+										return "CH_DP_D_P_8b_bc" /* GXT: You must scope the waste disposal access point to unlock this prep mission. */;
 									}
 									if (!func_171(uParam0->f_4356, 2))
 									{
-										return "CH_DP_D_P_8b_ba";
+										return "CH_DP_D_P_8b_ba" /* GXT: Steal Maintenance outfits that can be used to get into the Casino back area without alerting the security. */;
 									}
-									return "CH_DP_D_P_8b_bb";
+									return "CH_DP_D_P_8b_bb" /* GXT: Steal a LSDWP Van and drop chemicals into the Casino ventilation system to get access as a maintenance worker. */;
 								
 								case 3:
 									if (!func_171(uParam0->f_4356, 3))
 									{
-										return "CH_DP_D_P_8b_ca";
+										return "CH_DP_D_P_8b_ca" /* GXT: Steal a Stockade that can later be cloned to look like the security vans used by the Casino security. */;
 									}
-									return "CH_DP_D_P_8b_cb";
+									return "CH_DP_D_P_8b_cb" /* GXT: Clone the stolen Stockade and steal Gruppe Sechs outfits to gain access to the vault without being detected. */;
 								
 								default:
 							}
@@ -6930,9 +6930,9 @@ char* func_178(var uParam0, int iParam1, int iParam2)//Position - 0x842A
 						case 3:
 							if (func_179(uParam0->f_4356))
 							{
-								return "CH_DP_D_P_8cb";
+								return "CH_DP_D_P_8cb" /* GXT: Steal a breaching charge and thermal charges that can be used to blow a route into the Casino basement and burn through secure keypads. */;
 							}
-							return "CH_DP_D_P_8c";
+							return "CH_DP_D_P_8c" /* GXT: Steal thermal charges to burn through any secure keypads. */;
 					}
 					break;
 				
@@ -6940,13 +6940,13 @@ char* func_178(var uParam0, int iParam1, int iParam2)//Position - 0x842A
 					switch (func_114(uParam0->f_4356))
 					{
 						case 1:
-							return "CH_DP_D_P_9a";
+							return "CH_DP_D_P_9a" /* GXT: Steal a set of lasers that can be used to quietly drill through the vault door. */;
 						
 						case 2:
-							return "CH_DP_D_P_9b";
+							return "CH_DP_D_P_9b" /* GXT: Steal a set of drills that can be used to drill through the vault door. */;
 						
 						case 3:
-							return "CH_DP_D_P_9c";
+							return "CH_DP_D_P_9c" /* GXT: Steal crates of vault explosives that are needed to blow open the vault door. */;
 						
 						default:
 					}
@@ -6956,17 +6956,17 @@ char* func_178(var uParam0, int iParam1, int iParam2)//Position - 0x842A
 					switch (func_114(uParam0->f_4356))
 					{
 						case 1:
-							return "CH_DP_D_P_10a";
+							return "CH_DP_D_P_10a" /* GXT: Steal a device that can trigger an electro-magnetic pulse to disable the lights inside the Casino. */;
 						
 						case 2:
 							if (!func_171(uParam0->f_4356, 4))
 							{
-								return "CH_DP_D_P_10ba";
+								return "CH_DP_D_P_10ba" /* GXT: Help Yung Ancestor so he will give access to the back areas of the Casino. */;
 							}
-							return "CH_DP_D_P_10bb";
+							return "CH_DP_D_P_10bb" /* GXT: Help Yung Ancestor so he will give access to the back areas of the Casino. */;
 						
 						case 3:
-							return "CH_DP_D_P_10c";
+							return "CH_DP_D_P_10c" /* GXT: Steal crates of equipment containing reinforced armor and rappelling gear to get down the Casino elevator shaft. */;
 						
 						default:
 					}
@@ -6976,31 +6976,31 @@ char* func_178(var uParam0, int iParam1, int iParam2)//Position - 0x842A
 					switch (func_114(uParam0->f_4356))
 					{
 						case 1:
-							return "CH_DP_D_P_11a";
+							return "CH_DP_D_P_11a" /* GXT: Steal a set of infiltration suits that can provide nightvision and the ability to rappel down the elevator shaft. */;
 						
 						case 2:
 							switch (uParam0->f_744.f_745)
 							{
 								case 6:
-									return "CH_DP_D_P_11b_a";
+									return "CH_DP_D_P_11b_a" /* GXT: Steal NOOSE outfits from the Mission Row Police Station to help get out of the Casino undetected. */;
 								
 								case 7:
-									return "CH_DP_D_P_11b_b";
+									return "CH_DP_D_P_11b_b" /* GXT: Steal a Fire Truck containing firefighter outfits to help get out of the Casino undetected. */;
 								
 								default:
 							}
 							break;
 						
 						case 3:
-							return "CH_DP_D_P_11c";
+							return "CH_DP_D_P_11c" /* GXT: Steal a Tunnel Boring Machine that can excavate a tunnel directly to the Casino basement. */;
 					}
 					break;
 				
 				case 8:
-					return "CH_DP_D_P_12";
+					return "CH_DP_D_P_12" /* GXT: Steal power drills for the safety deposit boxes inside the vault. */;
 				
 				case 18:
-					return "CH_DP_D_P_13";
+					return "CH_DP_D_P_13" /* GXT: Collect masks from Vespucci Movie Masks. */;
 			}
 			break;
 	}
@@ -7048,10 +7048,10 @@ char* func_182(var uParam0, int iParam1, int iParam2)//Position - 0x87CA
 			switch (iParam2)
 			{
 				case 9:
-					return "CH_DP_T_S_0";
+					return "CH_DP_T_S_0" /* GXT: PREP: SCOPE OUT CASINO */;
 				
 				case 10:
-					return "CH_DP_T_S_1";
+					return "CH_DP_T_S_1" /* GXT: PREP: VAULT CONTENTS */;
 				
 				default:
 			}
@@ -7061,34 +7061,34 @@ char* func_182(var uParam0, int iParam1, int iParam2)//Position - 0x87CA
 			switch (iParam2)
 			{
 				case 2:
-					return "CH_DP_T_P_0";
+					return "CH_DP_T_P_0" /* GXT: PREP: SECURITY INTEL */;
 				
 				case 3:
-					return "CH_DP_T_P_1";
+					return "CH_DP_T_P_1" /* GXT: PREP: PATROL ROUTES */;
 				
 				case 4:
-					return "CH_DP_T_P_2";
+					return "CH_DP_T_P_2" /* GXT: PREP: DUGGAN SHIPMENTS */;
 				
 				case 5:
-					return "CH_DP_T_P_3";
+					return "CH_DP_T_P_3" /* GXT: PREP: UNMARKED WEAPONS */;
 				
 				case 6:
-					return "CH_DP_T_P_4";
+					return "CH_DP_T_P_4" /* GXT: PREP: GETAWAY VEHICLES */;
 				
 				case 7:
-					return "CH_DP_T_P_5";
+					return "CH_DP_T_P_5" /* GXT: PREP: HACKING DEVICE */;
 				
 				case 9:
-					return "CH_DP_T_P_6";
+					return "CH_DP_T_P_6" /* GXT: PREP: VAULT KEY CARDS */;
 				
 				case 13:
 					switch (uParam0->f_744.f_742)
 					{
 						case 1:
-							return "CH_DP_T_P_7a";
+							return "CH_DP_T_P_7a" /* GXT: PREP: SECURITY PASS */;
 						
 						case 2:
-							return "CH_DP_T_P_7b";
+							return "CH_DP_T_P_7b" /* GXT: PREP: SECURITY PASS */;
 						
 						default:
 					}
@@ -7098,7 +7098,7 @@ char* func_182(var uParam0, int iParam1, int iParam2)//Position - 0x87CA
 					switch (func_114(uParam0->f_4356))
 					{
 						case 1:
-							return "CH_DP_T_P_8a";
+							return "CH_DP_T_P_8a" /* GXT: PREP: NANO DRONE */;
 						
 						case 2:
 							switch (uParam0->f_744.f_744)
@@ -7106,23 +7106,23 @@ char* func_182(var uParam0, int iParam1, int iParam2)//Position - 0x87CA
 								case 1:
 									if (!func_171(uParam0->f_4356, 1))
 									{
-										return "CH_DP_T_P_8b_aa";
+										return "CH_DP_T_P_8b_aa" /* GXT: PREP: BUGSTARS GEAR I */;
 									}
-									return "CH_DP_T_P_8b_ab";
+									return "CH_DP_T_P_8b_ab" /* GXT: PREP: BUGSTARS GEAR II */;
 								
 								case 2:
 									if (!func_171(uParam0->f_4356, 2))
 									{
-										return "CH_DP_T_P_8b_ba";
+										return "CH_DP_T_P_8b_ba" /* GXT: PREP: MAINTENANCE GEAR I */;
 									}
-									return "CH_DP_T_P_8b_bb";
+									return "CH_DP_T_P_8b_bb" /* GXT: PREP: MAINTENANCE GEAR II */;
 								
 								case 3:
 									if (!func_171(uParam0->f_4356, 3))
 									{
-										return "CH_DP_T_P_8b_ca";
+										return "CH_DP_T_P_8b_ca" /* GXT: PREP: GRUPPE SECHS GEAR I */;
 									}
-									return "CH_DP_T_P_8b_cb";
+									return "CH_DP_T_P_8b_cb" /* GXT: PREP: GRUPPE SECHS GEAR II */;
 								
 								default:
 							}
@@ -7131,9 +7131,9 @@ char* func_182(var uParam0, int iParam1, int iParam2)//Position - 0x87CA
 						case 3:
 							if (func_179(uParam0->f_4356))
 							{
-								return "CH_DP_T_P_8cb";
+								return "CH_DP_T_P_8cb" /* GXT: PREP: BREACHING CHARGES */;
 							}
-							return "CH_DP_T_P_8c";
+							return "CH_DP_T_P_8c" /* GXT: PREP: THERMAL CHARGES */;
 					}
 					break;
 				
@@ -7141,13 +7141,13 @@ char* func_182(var uParam0, int iParam1, int iParam2)//Position - 0x87CA
 					switch (func_114(uParam0->f_4356))
 					{
 						case 1:
-							return "CH_DP_T_P_9a";
+							return "CH_DP_T_P_9a" /* GXT: PREP: VAULT LASERS */;
 						
 						case 2:
-							return "CH_DP_T_P_9b";
+							return "CH_DP_T_P_9b" /* GXT: PREP: VAULT DRILLS */;
 						
 						case 3:
-							return "CH_DP_T_P_9c";
+							return "CH_DP_T_P_9c" /* GXT: PREP: VAULT EXPLOSIVES */;
 						
 						default:
 					}
@@ -7157,17 +7157,17 @@ char* func_182(var uParam0, int iParam1, int iParam2)//Position - 0x87CA
 					switch (func_114(uParam0->f_4356))
 					{
 						case 1:
-							return "CH_DP_T_P_10a";
+							return "CH_DP_T_P_10a" /* GXT: PREP: EMP DEVICE */;
 						
 						case 2:
 							if (!func_171(uParam0->f_4356, 4))
 							{
-								return "CH_DP_T_P_10ba";
+								return "CH_DP_T_P_10ba" /* GXT: PREP: DEAD WEIGHT */;
 							}
-							return "CH_DP_T_P_10bb";
+							return "CH_DP_T_P_10bb" /* GXT: PREP: AFTER PARTY */;
 						
 						case 3:
-							return "CH_DP_T_P_10c";
+							return "CH_DP_T_P_10c" /* GXT: PREP: REINFORCED ARMOR */;
 						
 						default:
 					}
@@ -7177,31 +7177,31 @@ char* func_182(var uParam0, int iParam1, int iParam2)//Position - 0x87CA
 					switch (func_114(uParam0->f_4356))
 					{
 						case 1:
-							return "CH_DP_T_P_11a";
+							return "CH_DP_T_P_11a" /* GXT: PREP: INFILTRATION SUITS */;
 						
 						case 2:
 							switch (uParam0->f_744.f_745)
 							{
 								case 6:
-									return "CH_DP_T_P_11b_a";
+									return "CH_DP_T_P_11b_a" /* GXT: PREP: NOOSE GEAR */;
 								
 								case 7:
-									return "CH_DP_T_P_11b_b";
+									return "CH_DP_T_P_11b_b" /* GXT: PREP: FIREFIGHTER GEAR */;
 								
 								default:
 							}
 							break;
 						
 						case 3:
-							return "CH_DP_T_P_11c";
+							return "CH_DP_T_P_11c" /* GXT: PREP: TUNNEL BORING MACHINE */;
 					}
 					break;
 				
 				case 8:
-					return "CH_DP_T_P_12";
+					return "CH_DP_T_P_12" /* GXT: PREP: POWER DRILLS */;
 				
 				case 18:
-					return "CH_DP_T_P_13";
+					return "CH_DP_T_P_13" /* GXT: MASKS */;
 			}
 			break;
 	}
@@ -8298,15 +8298,15 @@ bool func_228()//Position - 0x9E36
 	switch (func_226())
 	{
 		case 0:
-			StringCopy(&Var0, "CH_SETUP_USE", 16);
+			StringCopy(&Var0, "CH_SETUP_USE" /* GXT: Press ~INPUT_CONTEXT~ to use the Setup Board. */, 16);
 			break;
 		
 		case 1:
-			StringCopy(&Var0, "CH_PREP_USE", 16);
+			StringCopy(&Var0, "CH_PREP_USE" /* GXT: Press ~INPUT_CONTEXT~ to use the Prep Board. */, 16);
 			break;
 		
 		case 2:
-			StringCopy(&Var0, "CH_FINALE_USE", 16);
+			StringCopy(&Var0, "CH_FINALE_USE" /* GXT: Press ~INPUT_CONTEXT~ to use the Finale Board. */, 16);
 			break;
 	}
 	if (!func_230(&Var0))
@@ -8332,9 +8332,9 @@ void func_231()//Position - 0x9EBA
 {
 	if (func_277() != -1)
 	{
-		if (!func_271("CH_OWNER_SCOPE", PLAYER::GET_PLAYER_NAME(func_277())))
+		if (!func_271("CH_OWNER_SCOPE" /* GXT: Unable to use Planning Boards. ~a~ ~s~has not scoped out the Casino to complete the Arcade setup. */, PLAYER::GET_PLAYER_NAME(func_277())))
 		{
-			func_232("CH_OWNER_SCOPE", PLAYER::GET_PLAYER_NAME(func_277()), func_233(func_277(), -2, 0, 0, 0), -1);
+			func_232("CH_OWNER_SCOPE" /* GXT: Unable to use Planning Boards. ~a~ ~s~has not scoped out the Casino to complete the Arcade setup. */, PLAYER::GET_PLAYER_NAME(func_277()), func_233(func_277(), -2, 0, 0, 0), -1);
 		}
 	}
 }
@@ -9297,9 +9297,9 @@ void func_273()//Position - 0xAE5C
 {
 	if (func_277() != -1)
 	{
-		if (!func_271("CH_OWNER_SETUP", PLAYER::GET_PLAYER_NAME(func_277())))
+		if (!func_271("CH_OWNER_SETUP" /* GXT: Unable to use Planning Boards. ~a~ ~s~has not paid the upfront setup cost. */, PLAYER::GET_PLAYER_NAME(func_277())))
 		{
-			func_232("CH_OWNER_SETUP", PLAYER::GET_PLAYER_NAME(func_277()), func_233(func_277(), -2, 0, 0, 0), -1);
+			func_232("CH_OWNER_SETUP" /* GXT: Unable to use Planning Boards. ~a~ ~s~has not paid the upfront setup cost. */, PLAYER::GET_PLAYER_NAME(func_277()), func_233(func_277(), -2, 0, 0, 0), -1);
 		}
 	}
 }
@@ -9317,9 +9317,9 @@ void func_275()//Position - 0xAEBD
 {
 	if (func_277() != -1)
 	{
-		if (!func_271("CH_SETUP_REG2", PLAYER::GET_PLAYER_NAME(func_277())))
+		if (!func_271("CH_SETUP_REG2" /* GXT: Unable to use Planning Boards. ~a~ ~s~has not formed an Organization or Motorcycle Club. */, PLAYER::GET_PLAYER_NAME(func_277())))
 		{
-			func_232("CH_SETUP_REG2", PLAYER::GET_PLAYER_NAME(func_277()), func_233(func_277(), -2, 0, 0, 0), -1);
+			func_232("CH_SETUP_REG2" /* GXT: Unable to use Planning Boards. ~a~ ~s~has not formed an Organization or Motorcycle Club. */, PLAYER::GET_PLAYER_NAME(func_277()), func_233(func_277(), -2, 0, 0, 0), -1);
 		}
 	}
 }
@@ -9634,9 +9634,9 @@ void func_281(var uParam0)//Position - 0xB4BF
 			func_490();
 			return;
 		}
-		if (!func_230("CH_SETUP_SCOPE"))
+		if (!func_230("CH_SETUP_SCOPE" /* GXT: Press ~INPUT_CONTEXT~ to scope out the Casino and complete the Arcade setup. */))
 		{
-			func_229("CH_SETUP_SCOPE");
+			func_229("CH_SETUP_SCOPE" /* GXT: Press ~INPUT_CONTEXT~ to scope out the Casino and complete the Arcade setup. */);
 		}
 		if (PAD::IS_CONTROL_JUST_PRESSED(0, 51))
 		{
@@ -9654,30 +9654,30 @@ void func_281(var uParam0)//Position - 0xB4BF
 			case 15:
 				if (func_283(PLAYER::PLAYER_ID()))
 				{
-					func_10("GENERAL_MLF_G1", -1);
+					func_10("GENERAL_MLF_G1" /* GXT: Can't launch this mission whilst one of your Club Members is currently at one with the animals. */, -1);
 				}
 				else if (func_282(PLAYER::PLAYER_ID()))
 				{
-					func_10("GENERAL_MLF_G2", -1);
+					func_10("GENERAL_MLF_G2" /* GXT: Can't launch this mission whilst one of your Associates is currently at one with the animals. */, -1);
 				}
 				else
 				{
-					func_10("GENERAL_MLF_G3", -1);
+					func_10("GENERAL_MLF_G3" /* GXT: Can't launch this mission whilst one of your Bodyguards is currently at one with the animals. */, -1);
 				}
 				break;
 			
 			case 16:
 				if (func_283(PLAYER::PLAYER_ID()))
 				{
-					func_10("GENERAL_MLF_G4", -1);
+					func_10("GENERAL_MLF_G4" /* GXT: Can't launch this mission whilst one of your Club Members is playing a casino game. */, -1);
 				}
 				else if (func_282(PLAYER::PLAYER_ID()))
 				{
-					func_10("GENERAL_MLF_G5", -1);
+					func_10("GENERAL_MLF_G5" /* GXT: Can't launch this mission whilst one of your Associates is playing a casino game. */, -1);
 				}
 				else
 				{
-					func_10("GENERAL_MLF_G6", -1);
+					func_10("GENERAL_MLF_G6" /* GXT: Can't launch this mission whilst one of your Bodyguards is playing a casino game. */, -1);
 				}
 				break;
 			}
@@ -18852,22 +18852,22 @@ void func_472(var uParam0)//Position - 0x1358F
 		case 0:
 			if (BitTest(Global_1966471.f_23, 4))
 			{
-				if (!func_230("CH_ON_COOLDOWN"))
+				if (!func_230("CH_ON_COOLDOWN" /* GXT: Lester will contact you when The Diamond Casino Heist is available again. */))
 				{
-					func_229("CH_ON_COOLDOWN");
+					func_229("CH_ON_COOLDOWN" /* GXT: Lester will contact you when The Diamond Casino Heist is available again. */);
 				}
 				return;
 			}
 			if (!func_485(14))
 			{
-				func_10("CH_SETUP_COST", -1);
+				func_10("CH_SETUP_COST" /* GXT: An upfront cost is required to begin The Diamond Casino Heist. This pays for a portion of the equipment needed and covers Lester's initial set up. */, -1);
 				func_484(14);
 			}
-			if (!func_230("CH_SETUP_COST"))
+			if (!func_230("CH_SETUP_COST" /* GXT: An upfront cost is required to begin The Diamond Casino Heist. This pays for a portion of the equipment needed and covers Lester's initial set up. */))
 			{
-				if (!func_230("CH_SETUP_HEIST"))
+				if (!func_230("CH_SETUP_HEIST" /* GXT: Press ~INPUT_CONTEXT~ to set up The Diamond Casino Heist. */))
 				{
-					func_229("CH_SETUP_HEIST");
+					func_229("CH_SETUP_HEIST" /* GXT: Press ~INPUT_CONTEXT~ to set up The Diamond Casino Heist. */);
 				}
 				if (PAD::IS_CONTROL_JUST_PRESSED(0, 51))
 				{
@@ -19363,15 +19363,15 @@ void func_487()//Position - 0x13D81
 	switch (func_226())
 	{
 		case 0:
-			StringCopy(&Var0, "CH_SETUP_REG", 16);
+			StringCopy(&Var0, "CH_SETUP_REG" /* GXT: Register as a VIP, CEO or MC President to gain access to the Setup Board. */, 16);
 			break;
 		
 		case 1:
-			StringCopy(&Var0, "CH_PREP_REG", 16);
+			StringCopy(&Var0, "CH_PREP_REG" /* GXT: Register as a VIP, CEO or MC President to gain access to the Prep Board. */, 16);
 			break;
 		
 		case 2:
-			StringCopy(&Var0, "CH_FINALE_REG", 16);
+			StringCopy(&Var0, "CH_FINALE_REG" /* GXT: Register as a VIP, CEO or MC President to gain access to the Finale Board. */, 16);
 			break;
 	}
 	if (!func_230(&Var0))
@@ -19392,13 +19392,13 @@ bool func_489()//Position - 0x13DE5
 
 void func_490()//Position - 0x13DF6
 {
-	if ((((((((func_230("CH_SETUP_USE") || func_230("CH_PREP_USE")) || func_230("CH_FINALE_USE")) || func_230("CH_SETUP_HEIST")) || func_230("CH_SETUP_REG")) || func_230("CH_PREP_REG")) || func_230("CH_FINALE_REG")) || func_230("CH_SETUP_SCOPE")) || func_230("CH_ON_COOLDOWN"))
+	if ((((((((func_230("CH_SETUP_USE" /* GXT: Press ~INPUT_CONTEXT~ to use the Setup Board. */) || func_230("CH_PREP_USE" /* GXT: Press ~INPUT_CONTEXT~ to use the Prep Board. */)) || func_230("CH_FINALE_USE" /* GXT: Press ~INPUT_CONTEXT~ to use the Finale Board. */)) || func_230("CH_SETUP_HEIST" /* GXT: Press ~INPUT_CONTEXT~ to set up The Diamond Casino Heist. */)) || func_230("CH_SETUP_REG" /* GXT: Register as a VIP, CEO or MC President to gain access to the Setup Board. */)) || func_230("CH_PREP_REG" /* GXT: Register as a VIP, CEO or MC President to gain access to the Prep Board. */)) || func_230("CH_FINALE_REG" /* GXT: Register as a VIP, CEO or MC President to gain access to the Finale Board. */)) || func_230("CH_SETUP_SCOPE" /* GXT: Press ~INPUT_CONTEXT~ to scope out the Casino and complete the Arcade setup. */)) || func_230("CH_ON_COOLDOWN" /* GXT: Lester will contact you when The Diamond Casino Heist is available again. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
 	if (func_277() != -1)
 	{
-		if ((func_271("CH_OWNER_SCOPE", PLAYER::GET_PLAYER_NAME(func_277())) || func_271("CH_OWNER_SETUP", PLAYER::GET_PLAYER_NAME(func_277()))) || func_271("CH_SETUP_REG2", PLAYER::GET_PLAYER_NAME(func_277())))
+		if ((func_271("CH_OWNER_SCOPE" /* GXT: Unable to use Planning Boards. ~a~ ~s~has not scoped out the Casino to complete the Arcade setup. */, PLAYER::GET_PLAYER_NAME(func_277())) || func_271("CH_OWNER_SETUP" /* GXT: Unable to use Planning Boards. ~a~ ~s~has not paid the upfront setup cost. */, PLAYER::GET_PLAYER_NAME(func_277()))) || func_271("CH_SETUP_REG2" /* GXT: Unable to use Planning Boards. ~a~ ~s~has not formed an Organization or Motorcycle Club. */, PLAYER::GET_PLAYER_NAME(func_277())))
 		{
 			HUD::CLEAR_HELP(true);
 		}
@@ -20712,76 +20712,76 @@ int func_539(var uParam0, int iParam1, var uParam2)//Position - 0x156BA
 	
 	bVar5 = false;
 	iVar7 = 36;
-	StringCopy(&cVar0, "HPWARN_CONF", 64);
+	StringCopy(&cVar0, "HPWARN_CONF" /* GXT: Confirm */, 64);
 	switch (iParam1)
 	{
 		case 0:
-			StringCopy(&cVar1, "CH_WARN_CWE", 64);
+			StringCopy(&cVar1, "CH_WARN_CWE" /* GXT: Are you sure you wish to recruit ~a~ as your gunman? */, 64);
 			StringCopy(&cVar2, func_545(uParam0->f_744.f_738, 0), 64);
 			break;
 		
 		case 1:
-			StringCopy(&cVar1, "CH_WARN_CDR", 64);
+			StringCopy(&cVar1, "CH_WARN_CDR" /* GXT: Are you sure you wish to recruit ~a~ as your driver? */, 64);
 			StringCopy(&cVar2, func_544(uParam0->f_744.f_740, 0), 64);
 			break;
 		
 		case 2:
-			StringCopy(&cVar1, "CH_WARN_CHR", 64);
+			StringCopy(&cVar1, "CH_WARN_CHR" /* GXT: Are you sure you wish to recruit ~a~ as your hacker? */, 64);
 			StringCopy(&cVar2, func_543(uParam0->f_744.f_743, 0), 64);
 			break;
 		
 		case 3:
-			StringCopy(&cVar1, "CH_WARN_APR", 64);
+			StringCopy(&cVar1, "CH_WARN_APR" /* GXT: Are you sure you want to use the ~a~ approach for this heist? */, 64);
 			StringCopy(&cVar2, func_134(1, 0), 64);
 			break;
 		
 		case 4:
-			StringCopy(&cVar1, "CH_WARN_APRb", 64);
+			StringCopy(&cVar1, "CH_WARN_APRb" /* GXT: Are you sure you want to use ~a~ approach for this heist? */, 64);
 			StringCopy(&cVar2, func_134(2, 0), 64);
 			break;
 		
 		case 5:
-			StringCopy(&cVar1, "CH_WARN_APR", 64);
+			StringCopy(&cVar1, "CH_WARN_APR" /* GXT: Are you sure you want to use the ~a~ approach for this heist? */, 64);
 			StringCopy(&cVar2, func_134(3, 0), 64);
 			break;
 		
 		case 6:
-			StringCopy(&cVar1, "CH_WARN_SETUP", 64);
-			StringCopy(&cVar4, "HEIST_WARN_2", 64);
+			StringCopy(&cVar1, "CH_WARN_SETUP" /* GXT: The setup cost for The Diamond Casino Heist is $~1~. */, 64);
+			StringCopy(&cVar4, "HEIST_WARN_2" /* GXT: Do you wish to proceed? */, 64);
 			bVar5 = true;
 			iVar6 = func_538(uParam0);
 			break;
 		
 		case 7:
-			StringCopy(&cVar1, "CH_WARN_CWS", 64);
+			StringCopy(&cVar1, "CH_WARN_CWS" /* GXT: Are you sure you wish to begin the prep mission to steal the ~a~? */, 64);
 			StringCopy(&cVar2, func_542(uParam0, 0), 64);
 			break;
 		
 		case 8:
-			StringCopy(&cVar1, "CH_WARN_CVS", 64);
+			StringCopy(&cVar1, "CH_WARN_CVS" /* GXT: Are you sure you wish to begin the prep mission to steal the ~a~ getaway vehicles? */, 64);
 			StringCopy(&cVar2, func_541(uParam0, 0), 64);
 			break;
 		
 		case 9:
-			StringCopy(&cVar1, "CH_WARN_PCM", 64);
+			StringCopy(&cVar1, "CH_WARN_PCM" /* GXT: Are you sure you wish to purchase the Casino Model for $~1~? */, 64);
 			bVar5 = true;
 			iVar6 = func_127(2);
 			break;
 		
 		case 10:
-			StringCopy(&cVar1, "CH_WARN_PVD", 64);
+			StringCopy(&cVar1, "CH_WARN_PVD" /* GXT: Are you sure you wish to purchase the vault door for $~1~? */, 64);
 			bVar5 = true;
 			iVar6 = func_127(4);
 			break;
 		
 		case 11:
-			StringCopy(&cVar1, "CH_WARN_PDS", 64);
+			StringCopy(&cVar1, "CH_WARN_PDS" /* GXT: Are you sure you wish to purchase the door security for $~1~? */, 64);
 			bVar5 = true;
 			iVar6 = func_127(3);
 			break;
 		
 		case 12:
-			StringCopy(&cVar1, "CH_WARN_SKIP", 64);
+			StringCopy(&cVar1, "CH_WARN_SKIP" /* GXT: Are you sure you want to pay $~1~ for this Heist Prep Equipment? */, 64);
 			bVar5 = true;
 			iVar6 = func_540();
 			break;
@@ -20790,43 +20790,43 @@ int func_539(var uParam0, int iParam1, var uParam2)//Position - 0x156BA
 			switch (uParam0->f_744.f_742)
 			{
 				case 1:
-					StringCopy(&cVar1, "CH_WARN_CIM1", 64);
+					StringCopy(&cVar1, "CH_WARN_CIM1" /* GXT: Are you sure you wish to acquire level 1 security passes for this heist? */, 64);
 					break;
 				
 				case 2:
-					StringCopy(&cVar1, "CH_WARN_CIM2", 64);
+					StringCopy(&cVar1, "CH_WARN_CIM2" /* GXT: Are you sure you wish to acquire level 2 security passes for this heist? */, 64);
 					break;
 			}
 			break;
 		
 		case 14:
-			StringCopy(&cVar0, "FM_CSC_QUIT", 64);
-			StringCopy(&cVar1, "FM_CSC_QUIT1", 64);
+			StringCopy(&cVar0, "FM_CSC_QUIT" /* GXT: Confirm */, 64);
+			StringCopy(&cVar1, "FM_CSC_QUIT1" /* GXT: Are you sure you want to quit this Job? */, 64);
 			break;
 		
 		case 15:
-			StringCopy(&cVar1, "CH_WARN_PDV", 64);
+			StringCopy(&cVar1, "CH_WARN_PDV" /* GXT: Are you sure you wish to purchase the decoy gunman for $~1~? */, 64);
 			bVar5 = true;
 			iVar6 = func_111(6);
 			break;
 		
 		case 16:
-			StringCopy(&cVar0, "HPWARN_ALRT", 64);
-			StringCopy(&cVar1, "CH_WARN_CADV", 64);
+			StringCopy(&cVar0, "HPWARN_ALRT" /* GXT: Alert */, 64);
+			StringCopy(&cVar1, "CH_WARN_CADV" /* GXT: You don't have enough cash. The decoy gunman costs $~1~. */, 64);
 			bVar5 = true;
 			iVar6 = func_111(6);
 			iVar7 = 10;
 			break;
 		
 		case 17:
-			StringCopy(&cVar1, "CH_WARN_PSV", 64);
+			StringCopy(&cVar1, "CH_WARN_PSV" /* GXT: Are you sure you wish to purchase the clean vehicle for $~1~? */, 64);
 			bVar5 = true;
 			iVar6 = func_111(7);
 			break;
 		
 		case 18:
-			StringCopy(&cVar0, "HPWARN_ALRT", 64);
-			StringCopy(&cVar1, "CH_WARN_CASV", 64);
+			StringCopy(&cVar0, "HPWARN_ALRT" /* GXT: Alert */, 64);
+			StringCopy(&cVar1, "CH_WARN_CASV" /* GXT: You don't have enough cash. The clean vehicle costs $~1~. */, 64);
 			bVar5 = true;
 			iVar6 = func_111(7);
 			iVar7 = 10;
@@ -20893,37 +20893,37 @@ char* func_541(var uParam0, bool bParam1)//Position - 0x15A54
 				case 1:
 					if (!bParam1)
 					{
-						return "CH_VEH_0_01b";
+						return "CH_VEH_0_01b" /* GXT: Issi Classic */;
 					}
-					return "CH_VEH_0_01";
+					return "CH_VEH_0_01" /* GXT: ISSI CLASSIC */;
 				
 				case 2:
 					if (!bParam1)
 					{
-						return "CH_VEH_1_01b";
+						return "CH_VEH_1_01b" /* GXT: Retinue Mk II */;
 					}
-					return "CH_VEH_1_01";
+					return "CH_VEH_1_01" /* GXT: RETINUE MK II */;
 				
 				case 3:
 					if (!bParam1)
 					{
-						return "CH_VEH_2_01b";
+						return "CH_VEH_2_01b" /* GXT: Sultan Classic */;
 					}
-					return "CH_VEH_2_01";
+					return "CH_VEH_2_01" /* GXT: SULTAN CLASSIC */;
 				
 				case 4:
 					if (!bParam1)
 					{
-						return "CH_VEH_3_01b";
+						return "CH_VEH_3_01b" /* GXT: Manchez */;
 					}
-					return "CH_VEH_3_01";
+					return "CH_VEH_3_01" /* GXT: MANCHEZ */;
 				
 				case 5:
 					if (!bParam1)
 					{
-						return "CH_VEH_4_01b";
+						return "CH_VEH_4_01b" /* GXT: Zhaba */;
 					}
-					return "CH_VEH_4_01";
+					return "CH_VEH_4_01" /* GXT: ZHABA */;
 				
 				default:
 			}
@@ -20935,37 +20935,37 @@ char* func_541(var uParam0, bool bParam1)//Position - 0x15A54
 				case 1:
 					if (!bParam1)
 					{
-						return "CH_VEH_0_02b";
+						return "CH_VEH_0_02b" /* GXT: Asbo */;
 					}
-					return "CH_VEH_0_02";
+					return "CH_VEH_0_02" /* GXT: ASBO */;
 				
 				case 2:
 					if (!bParam1)
 					{
-						return "CH_VEH_1_02b";
+						return "CH_VEH_1_02b" /* GXT: Drift Yosemite */;
 					}
-					return "CH_VEH_1_02";
+					return "CH_VEH_1_02" /* GXT: DRIFT YOSEMITE */;
 				
 				case 3:
 					if (!bParam1)
 					{
-						return "CH_VEH_2_02b";
+						return "CH_VEH_2_02b" /* GXT: Gauntlet Classic */;
 					}
-					return "CH_VEH_2_02";
+					return "CH_VEH_2_02" /* GXT: GAUNTLET CLASSIC */;
 				
 				case 4:
 					if (!bParam1)
 					{
-						return "CH_VEH_3_02b";
+						return "CH_VEH_3_02b" /* GXT: Stryder */;
 					}
-					return "CH_VEH_3_02";
+					return "CH_VEH_3_02" /* GXT: STRYDER */;
 				
 				case 5:
 					if (!bParam1)
 					{
-						return "CH_VEH_4_02b";
+						return "CH_VEH_4_02b" /* GXT: Vagrant */;
 					}
-					return "CH_VEH_4_02";
+					return "CH_VEH_4_02" /* GXT: VAGRANT */;
 				
 				default:
 			}
@@ -20977,37 +20977,37 @@ char* func_541(var uParam0, bool bParam1)//Position - 0x15A54
 				case 1:
 					if (!bParam1)
 					{
-						return "CH_VEH_0_03b";
+						return "CH_VEH_0_03b" /* GXT: Kanjo */;
 					}
-					return "CH_VEH_0_03";
+					return "CH_VEH_0_03" /* GXT: KANJO */;
 				
 				case 2:
 					if (!bParam1)
 					{
-						return "CH_VEH_1_03b";
+						return "CH_VEH_1_03b" /* GXT: Sugoi */;
 					}
-					return "CH_VEH_1_03";
+					return "CH_VEH_1_03" /* GXT: SUGOI */;
 				
 				case 3:
 					if (!bParam1)
 					{
-						return "CH_VEH_2_03b";
+						return "CH_VEH_2_03b" /* GXT: Ellie */;
 					}
-					return "CH_VEH_2_03";
+					return "CH_VEH_2_03" /* GXT: ELLIE */;
 				
 				case 4:
 					if (!bParam1)
 					{
-						return "CH_VEH_3_03b";
+						return "CH_VEH_3_03b" /* GXT: Defiler */;
 					}
-					return "CH_VEH_3_03";
+					return "CH_VEH_3_03" /* GXT: DEFILER */;
 				
 				case 5:
 					if (!bParam1)
 					{
-						return "CH_VEH_4_03b";
+						return "CH_VEH_4_03b" /* GXT: Outlaw */;
 					}
-					return "CH_VEH_4_03";
+					return "CH_VEH_4_03" /* GXT: OUTLAW */;
 				
 				default:
 			}
@@ -21019,37 +21019,37 @@ char* func_541(var uParam0, bool bParam1)//Position - 0x15A54
 				case 1:
 					if (!bParam1)
 					{
-						return "CH_VEH_0_04b";
+						return "CH_VEH_0_04b" /* GXT: Sentinel Classic */;
 					}
-					return "CH_VEH_0_04";
+					return "CH_VEH_0_04" /* GXT: SENTINEL CLASSIC */;
 				
 				case 2:
 					if (!bParam1)
 					{
-						return "CH_VEH_1_04b";
+						return "CH_VEH_1_04b" /* GXT: Jugular */;
 					}
-					return "CH_VEH_1_04";
+					return "CH_VEH_1_04" /* GXT: JUGULAR */;
 				
 				case 3:
 					if (!bParam1)
 					{
-						return "CH_VEH_2_04b";
+						return "CH_VEH_2_04b" /* GXT: Komoda */;
 					}
-					return "CH_VEH_2_04";
+					return "CH_VEH_2_04" /* GXT: KOMODA */;
 				
 				case 4:
 					if (!bParam1)
 					{
-						return "CH_VEH_3_04b";
+						return "CH_VEH_3_04b" /* GXT: Lectro */;
 					}
-					return "CH_VEH_3_04";
+					return "CH_VEH_3_04" /* GXT: LECTRO */;
 				
 				case 5:
 					if (!bParam1)
 					{
-						return "CH_VEH_4_04b";
+						return "CH_VEH_4_04b" /* GXT: Everon */;
 					}
-					return "CH_VEH_4_04";
+					return "CH_VEH_4_04" /* GXT: EVERON */;
 				
 				default:
 			}
@@ -21071,16 +21071,16 @@ char* func_542(var uParam0, bool bParam1)//Position - 0x15CCC
 						case 0:
 							if (!bParam1)
 							{
-								return "CH_WEAP_0_01b";
+								return "CH_WEAP_0_01b" /* GXT: Micro SMG loadout */;
 							}
-							return "CH_WEAP_0_01";
+							return "CH_WEAP_0_01" /* GXT: MICRO SMG LOADOUT */;
 						
 						case 1:
 							if (!bParam1)
 							{
-								return "CH_WEAP_0_02b";
+								return "CH_WEAP_0_02b" /* GXT: Machine Pistol loadout */;
 							}
-							return "CH_WEAP_0_02";
+							return "CH_WEAP_0_02" /* GXT: MACHINE PISTOL LOADOUT */;
 						
 						default:
 					}
@@ -21092,16 +21092,16 @@ char* func_542(var uParam0, bool bParam1)//Position - 0x15CCC
 						case 0:
 							if (!bParam1)
 							{
-								return "CH_WEAP_0_03b";
+								return "CH_WEAP_0_03b" /* GXT: Micro SMG loadout */;
 							}
-							return "CH_WEAP_0_03";
+							return "CH_WEAP_0_03" /* GXT: MICRO SMG LOADOUT */;
 						
 						case 1:
 							if (!bParam1)
 							{
-								return "CH_WEAP_0_04b";
+								return "CH_WEAP_0_04b" /* GXT: Shotgun loadout */;
 							}
-							return "CH_WEAP_0_04";
+							return "CH_WEAP_0_04" /* GXT: SHOTGUN LOADOUT */;
 						
 						default:
 					}
@@ -21113,16 +21113,16 @@ char* func_542(var uParam0, bool bParam1)//Position - 0x15CCC
 						case 0:
 							if (!bParam1)
 							{
-								return "CH_WEAP_0_05b";
+								return "CH_WEAP_0_05b" /* GXT: Shotgun loadout */;
 							}
-							return "CH_WEAP_0_05";
+							return "CH_WEAP_0_05" /* GXT: SHOTGUN LOADOUT */;
 						
 						case 1:
 							if (!bParam1)
 							{
-								return "CH_WEAP_0_06b";
+								return "CH_WEAP_0_06b" /* GXT: Revolver loadout */;
 							}
-							return "CH_WEAP_0_06";
+							return "CH_WEAP_0_06" /* GXT: REVOLVER LOADOUT */;
 						
 						default:
 					}
@@ -21139,16 +21139,16 @@ char* func_542(var uParam0, bool bParam1)//Position - 0x15CCC
 						case 0:
 							if (!bParam1)
 							{
-								return "CH_WEAP_1_01b";
+								return "CH_WEAP_1_01b" /* GXT: Rifle loadout */;
 							}
-							return "CH_WEAP_1_01";
+							return "CH_WEAP_1_01" /* GXT: RIFLE LOADOUT */;
 						
 						case 1:
 							if (!bParam1)
 							{
-								return "CH_WEAP_1_02b";
+								return "CH_WEAP_1_02b" /* GXT: Shotgun loadout */;
 							}
-							return "CH_WEAP_1_02";
+							return "CH_WEAP_1_02" /* GXT: SHOTGUN LOADOUT */;
 						
 						default:
 					}
@@ -21160,16 +21160,16 @@ char* func_542(var uParam0, bool bParam1)//Position - 0x15CCC
 						case 0:
 							if (!bParam1)
 							{
-								return "CH_WEAP_1_03b";
+								return "CH_WEAP_1_03b" /* GXT: Rifle loadout */;
 							}
-							return "CH_WEAP_1_03";
+							return "CH_WEAP_1_03" /* GXT: RIFLE LOADOUT */;
 						
 						case 1:
 							if (!bParam1)
 							{
-								return "CH_WEAP_1_04b";
+								return "CH_WEAP_1_04b" /* GXT: Shotgun loadout */;
 							}
-							return "CH_WEAP_1_04";
+							return "CH_WEAP_1_04" /* GXT: SHOTGUN LOADOUT */;
 						
 						default:
 					}
@@ -21181,16 +21181,16 @@ char* func_542(var uParam0, bool bParam1)//Position - 0x15CCC
 						case 0:
 							if (!bParam1)
 							{
-								return "CH_WEAP_1_05b";
+								return "CH_WEAP_1_05b" /* GXT: Rifle loadout */;
 							}
-							return "CH_WEAP_1_05";
+							return "CH_WEAP_1_05" /* GXT: RIFLE LOADOUT */;
 						
 						case 1:
 							if (!bParam1)
 							{
-								return "CH_WEAP_1_06b";
+								return "CH_WEAP_1_06b" /* GXT: Shotgun loadout */;
 							}
-							return "CH_WEAP_1_06";
+							return "CH_WEAP_1_06" /* GXT: SHOTGUN LOADOUT */;
 						
 						default:
 					}
@@ -21207,16 +21207,16 @@ char* func_542(var uParam0, bool bParam1)//Position - 0x15CCC
 						case 0:
 							if (!bParam1)
 							{
-								return "CH_WEAP_2_01b";
+								return "CH_WEAP_2_01b" /* GXT: SMG loadout */;
 							}
-							return "CH_WEAP_2_01";
+							return "CH_WEAP_2_01" /* GXT: SMG LOADOUT */;
 						
 						case 1:
 							if (!bParam1)
 							{
-								return "CH_WEAP_2_02b";
+								return "CH_WEAP_2_02b" /* GXT: Shotgun loadout */;
 							}
-							return "CH_WEAP_2_02";
+							return "CH_WEAP_2_02" /* GXT: SHOTGUN LOADOUT */;
 						
 						default:
 					}
@@ -21228,16 +21228,16 @@ char* func_542(var uParam0, bool bParam1)//Position - 0x15CCC
 						case 0:
 							if (!bParam1)
 							{
-								return "CH_WEAP_2_03b";
+								return "CH_WEAP_2_03b" /* GXT: Machine Pistol loadout */;
 							}
-							return "CH_WEAP_2_03";
+							return "CH_WEAP_2_03" /* GXT: MACHINE PISTOL LOADOUT */;
 						
 						case 1:
 							if (!bParam1)
 							{
-								return "CH_WEAP_2_04b";
+								return "CH_WEAP_2_04b" /* GXT: Shotgun loadout */;
 							}
-							return "CH_WEAP_2_04";
+							return "CH_WEAP_2_04" /* GXT: SHOTGUN LOADOUT */;
 						
 						default:
 					}
@@ -21249,16 +21249,16 @@ char* func_542(var uParam0, bool bParam1)//Position - 0x15CCC
 						case 0:
 							if (!bParam1)
 							{
-								return "CH_WEAP_2_05b";
+								return "CH_WEAP_2_05b" /* GXT: SMG loadout */;
 							}
-							return "CH_WEAP_2_05";
+							return "CH_WEAP_2_05" /* GXT: SMG LOADOUT */;
 						
 						case 1:
 							if (!bParam1)
 							{
-								return "CH_WEAP_2_06b";
+								return "CH_WEAP_2_06b" /* GXT: Shotgun loadout */;
 							}
-							return "CH_WEAP_2_06";
+							return "CH_WEAP_2_06" /* GXT: SHOTGUN LOADOUT */;
 						
 						default:
 					}
@@ -21275,16 +21275,16 @@ char* func_542(var uParam0, bool bParam1)//Position - 0x15CCC
 						case 0:
 							if (!bParam1)
 							{
-								return "CH_WEAP_3_01b";
+								return "CH_WEAP_3_01b" /* GXT: Mk II Shotgun loadout */;
 							}
-							return "CH_WEAP_3_01";
+							return "CH_WEAP_3_01" /* GXT: MK II SHOTGUN LOADOUT */;
 						
 						case 1:
 							if (!bParam1)
 							{
-								return "CH_WEAP_3_02b";
+								return "CH_WEAP_3_02b" /* GXT: Mk II Rifle loadout */;
 							}
-							return "CH_WEAP_3_02";
+							return "CH_WEAP_3_02" /* GXT: MK II RIFLE LOADOUT */;
 						
 						default:
 					}
@@ -21296,16 +21296,16 @@ char* func_542(var uParam0, bool bParam1)//Position - 0x15CCC
 						case 0:
 							if (!bParam1)
 							{
-								return "CH_WEAP_3_03b";
+								return "CH_WEAP_3_03b" /* GXT: Mk II SMG loadout */;
 							}
-							return "CH_WEAP_3_03";
+							return "CH_WEAP_3_03" /* GXT: MK II SMG LOADOUT */;
 						
 						case 1:
 							if (!bParam1)
 							{
-								return "CH_WEAP_3_04b";
+								return "CH_WEAP_3_04b" /* GXT: Mk II Rifle loadout */;
 							}
-							return "CH_WEAP_3_04";
+							return "CH_WEAP_3_04" /* GXT: MK II RIFLE LOADOUT */;
 						
 						default:
 					}
@@ -21317,16 +21317,16 @@ char* func_542(var uParam0, bool bParam1)//Position - 0x15CCC
 						case 0:
 							if (!bParam1)
 							{
-								return "CH_WEAP_3_05b";
+								return "CH_WEAP_3_05b" /* GXT: Mk II Shotgun loadout */;
 							}
-							return "CH_WEAP_3_05";
+							return "CH_WEAP_3_05" /* GXT: MK II SHOTGUN LOADOUT */;
 						
 						case 1:
 							if (!bParam1)
 							{
-								return "CH_WEAP_3_06b";
+								return "CH_WEAP_3_06b" /* GXT: Mk II Rifle loadout */;
 							}
-							return "CH_WEAP_3_06";
+							return "CH_WEAP_3_06" /* GXT: MK II RIFLE LOADOUT */;
 						
 						default:
 					}
@@ -21343,16 +21343,16 @@ char* func_542(var uParam0, bool bParam1)//Position - 0x15CCC
 						case 0:
 							if (!bParam1)
 							{
-								return "CH_WEAP_4_01b";
+								return "CH_WEAP_4_01b" /* GXT: Combat PDW loadout */;
 							}
-							return "CH_WEAP_4_01";
+							return "CH_WEAP_4_01" /* GXT: COMBAT PDW LOADOUT */;
 						
 						case 1:
 							if (!bParam1)
 							{
-								return "CH_WEAP_4_02b";
+								return "CH_WEAP_4_02b" /* GXT: Rifle loadout */;
 							}
-							return "CH_WEAP_4_02";
+							return "CH_WEAP_4_02" /* GXT: RIFLE LOADOUT */;
 						
 						default:
 					}
@@ -21364,16 +21364,16 @@ char* func_542(var uParam0, bool bParam1)//Position - 0x15CCC
 						case 0:
 							if (!bParam1)
 							{
-								return "CH_WEAP_4_03b";
+								return "CH_WEAP_4_03b" /* GXT: Shotgun loadout */;
 							}
-							return "CH_WEAP_4_03";
+							return "CH_WEAP_4_03" /* GXT: SHOTGUN LOADOUT */;
 						
 						case 1:
 							if (!bParam1)
 							{
-								return "CH_WEAP_4_04b";
+								return "CH_WEAP_4_04b" /* GXT: Rifle loadout */;
 							}
-							return "CH_WEAP_4_04";
+							return "CH_WEAP_4_04" /* GXT: RIFLE LOADOUT */;
 						
 						default:
 					}
@@ -21385,16 +21385,16 @@ char* func_542(var uParam0, bool bParam1)//Position - 0x15CCC
 						case 0:
 							if (!bParam1)
 							{
-								return "CH_WEAP_4_05b";
+								return "CH_WEAP_4_05b" /* GXT: Shotgun loadout */;
 							}
-							return "CH_WEAP_4_05";
+							return "CH_WEAP_4_05" /* GXT: SHOTGUN LOADOUT */;
 						
 						case 1:
 							if (!bParam1)
 							{
-								return "CH_WEAP_4_06b";
+								return "CH_WEAP_4_06b" /* GXT: Combat MG loadout */;
 							}
-							return "CH_WEAP_4_06";
+							return "CH_WEAP_4_06" /* GXT: COMBAT MG LOADOUT */;
 						
 						default:
 					}
@@ -21412,37 +21412,37 @@ char* func_543(int iParam0, bool bParam1)//Position - 0x161AD
 		case 1:
 			if (!bParam1)
 			{
-				return "CH_HR_NAME_0b";
+				return "CH_HR_NAME_0b" /* GXT: Rickie Lukens */;
 			}
-			return "CH_HR_NAME_0";
+			return "CH_HR_NAME_0" /* GXT: RICKIE LUKENS */;
 		
 		case 2:
 			if (!bParam1)
 			{
-				return "CH_HR_NAME_1b";
+				return "CH_HR_NAME_1b" /* GXT: Christian Feltz */;
 			}
-			return "CH_HR_NAME_1";
+			return "CH_HR_NAME_1" /* GXT: CHRISTIAN FELTZ */;
 		
 		case 3:
 			if (!bParam1)
 			{
-				return "CH_HR_NAME_2b";
+				return "CH_HR_NAME_2b" /* GXT: Yohan Blair */;
 			}
-			return "CH_HR_NAME_2";
+			return "CH_HR_NAME_2" /* GXT: YOHAN BLAIR */;
 		
 		case 4:
 			if (!bParam1)
 			{
-				return "CH_HR_NAME_3b";
+				return "CH_HR_NAME_3b" /* GXT: Avi Schwartzman */;
 			}
-			return "CH_HR_NAME_3";
+			return "CH_HR_NAME_3" /* GXT: AVI SCHWARTZMAN */;
 		
 		case 5:
 			if (!bParam1)
 			{
-				return "CH_HR_NAME_4b";
+				return "CH_HR_NAME_4b" /* GXT: Paige Harris */;
 			}
-			return "CH_HR_NAME_4";
+			return "CH_HR_NAME_4" /* GXT: PAIGE HARRIS */;
 		
 		default:
 	}
@@ -21456,37 +21456,37 @@ char* func_544(int iParam0, bool bParam1)//Position - 0x16241
 		case 1:
 			if (!bParam1)
 			{
-				return "CH_DR_NAME_0b";
+				return "CH_DR_NAME_0b" /* GXT: Karim Denz */;
 			}
-			return "CH_DR_NAME_0";
+			return "CH_DR_NAME_0" /* GXT: KARIM DENZ */;
 		
 		case 2:
 			if (!bParam1)
 			{
-				return "CH_DR_NAME_1b";
+				return "CH_DR_NAME_1b" /* GXT: Taliana Martinez */;
 			}
-			return "CH_DR_NAME_1";
+			return "CH_DR_NAME_1" /* GXT: TALIANA MARTINEZ */;
 		
 		case 3:
 			if (!bParam1)
 			{
-				return "CH_DR_NAME_2b";
+				return "CH_DR_NAME_2b" /* GXT: Eddie Toh */;
 			}
-			return "CH_DR_NAME_2";
+			return "CH_DR_NAME_2" /* GXT: EDDIE TOH */;
 		
 		case 4:
 			if (!bParam1)
 			{
-				return "CH_DR_NAME_3b";
+				return "CH_DR_NAME_3b" /* GXT: Zach Nelson */;
 			}
-			return "CH_DR_NAME_3";
+			return "CH_DR_NAME_3" /* GXT: ZACH NELSON */;
 		
 		case 5:
 			if (!bParam1)
 			{
-				return "CH_DR_NAME_4b";
+				return "CH_DR_NAME_4b" /* GXT: Chester McCoy */;
 			}
-			return "CH_DR_NAME_4";
+			return "CH_DR_NAME_4" /* GXT: CHESTER MCCOY */;
 		
 		default:
 	}
@@ -21500,37 +21500,37 @@ char* func_545(int iParam0, bool bParam1)//Position - 0x162D5
 		case 1:
 			if (!bParam1)
 			{
-				return "CH_WE_NAME_0b";
+				return "CH_WE_NAME_0b" /* GXT: Karl Abolaji */;
 			}
-			return "CH_WE_NAME_0";
+			return "CH_WE_NAME_0" /* GXT: KARL ABOLAJI */;
 		
 		case 2:
 			if (!bParam1)
 			{
-				return "CH_WE_NAME_1b";
+				return "CH_WE_NAME_1b" /* GXT: Gustavo Mota */;
 			}
-			return "CH_WE_NAME_1";
+			return "CH_WE_NAME_1" /* GXT: GUSTAVO MOTA */;
 		
 		case 3:
 			if (!bParam1)
 			{
-				return "CH_WE_NAME_2b";
+				return "CH_WE_NAME_2b" /* GXT: Charlie Reed */;
 			}
-			return "CH_WE_NAME_2";
+			return "CH_WE_NAME_2" /* GXT: CHARLIE REED */;
 		
 		case 4:
 			if (!bParam1)
 			{
-				return "CH_WE_NAME_3b";
+				return "CH_WE_NAME_3b" /* GXT: Chester McCoy */;
 			}
-			return "CH_WE_NAME_3";
+			return "CH_WE_NAME_3" /* GXT: CHESTER MCCOY */;
 		
 		case 5:
 			if (!bParam1)
 			{
-				return "CH_WE_NAME_4b";
+				return "CH_WE_NAME_4b" /* GXT: Patrick McReary */;
 			}
-			return "CH_WE_NAME_4";
+			return "CH_WE_NAME_4" /* GXT: PATRICK MCREARY */;
 		
 		default:
 	}
@@ -27796,12 +27796,12 @@ void func_738(var uParam0)//Position - 0x1ED10
 	{
 		if (NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 		{
-			func_805(uParam0->f_1497.f_709, "CH_FINALE_LBLH");
+			func_805(uParam0->f_1497.f_709, "CH_FINALE_LBLH" /* GXT: CONTINUE */);
 			func_720(uParam0->f_1497.f_709, 12, 1);
 		}
 		else
 		{
-			func_805(uParam0->f_1497.f_709, "CH_FINALE_LBS");
+			func_805(uParam0->f_1497.f_709, "CH_FINALE_LBS" /* GXT: START */);
 			func_720(uParam0->f_1497.f_709, 12, 0);
 		}
 		func_804(uParam0, 0);
@@ -28898,25 +28898,25 @@ char* func_783(int iParam0)//Position - 0x20076
 			return "";
 		
 		case 1:
-			return "CH_OUTFIT_0";
+			return "CH_OUTFIT_0" /* GXT: BUGSTARS */;
 		
 		case 2:
-			return "CH_OUTFIT_1";
+			return "CH_OUTFIT_1" /* GXT: LS WATER & POWER */;
 		
 		case 3:
-			return "CH_OUTFIT_2";
+			return "CH_OUTFIT_2" /* GXT: GRUPPE SECHS */;
 		
 		case 4:
-			return "CH_OUTFIT_3";
+			return "CH_OUTFIT_3" /* GXT: YUNG ANCESTOR */;
 		
 		case 6:
-			return "CH_OUTFIT_4";
+			return "CH_OUTFIT_4" /* GXT: NOOSE */;
 		
 		case 7:
-			return "CH_OUTFIT_5";
+			return "CH_OUTFIT_5" /* GXT: FIREFIGHTERS */;
 		
 		case 8:
-			return "CH_OUTFIT_6";
+			return "CH_OUTFIT_6" /* GXT: HIGH ROLLERS */;
 		
 		default:
 	}
@@ -28930,17 +28930,17 @@ char* func_784(int iParam0)//Position - 0x200F5
 		case 0:
 		case 1:
 		case 2:
-			return "CH_DROPOFF_0";
+			return "CH_DROPOFF_0" /* GXT: LOW LEVEL */;
 		
 		case 3:
 		case 4:
 		case 5:
-			return "CH_DROPOFF_1";
+			return "CH_DROPOFF_1" /* GXT: MID LEVEL */;
 		
 		case 6:
 		case 7:
 		case 8:
-			return "CH_DROPOFF_2";
+			return "CH_DROPOFF_2" /* GXT: HIGH LEVEL */;
 		
 		default:
 	}
@@ -28952,37 +28952,37 @@ char* func_785(var uParam0, int iParam1)//Position - 0x20152
 	switch (iParam1)
 	{
 		case 0:
-			return "CH_ACCPNT_0";
+			return "CH_ACCPNT_0" /* GXT: MAIN DOOR */;
 		
 		case 1:
-			return "CH_ACCPNT_1";
+			return "CH_ACCPNT_1" /* GXT: STAFF LOBBY */;
 		
 		case 2:
-			return "CH_ACCPNT_2";
+			return "CH_ACCPNT_2" /* GXT: WASTE DISPOSAL */;
 		
 		case 3:
-			return "CH_ACCPNT_3";
+			return "CH_ACCPNT_3" /* GXT: S.W. ROOF TERRACE */;
 		
 		case 4:
-			return "CH_ACCPNT_4";
+			return "CH_ACCPNT_4" /* GXT: N.W. ROOF TERRACE */;
 		
 		case 5:
-			return "CH_ACCPNT_5";
+			return "CH_ACCPNT_5" /* GXT: S.E. ROOF TERRACE */;
 		
 		case 6:
-			return "CH_ACCPNT_6";
+			return "CH_ACCPNT_6" /* GXT: N.E. ROOF TERRACE */;
 		
 		case 7:
-			return "CH_ACCPNT_7";
+			return "CH_ACCPNT_7" /* GXT: SOUTH HELIPAD */;
 		
 		case 8:
-			return "CH_ACCPNT_8";
+			return "CH_ACCPNT_8" /* GXT: NORTH HELIPAD */;
 		
 		case 9:
-			return "CH_ACCPNT_9";
+			return "CH_ACCPNT_9" /* GXT: SECURITY TUNNEL */;
 		
 		case 10:
-			return "CH_ACCPNT_10";
+			return "CH_ACCPNT_10" /* GXT: SEWERS */;
 		
 		default:
 	}
@@ -29136,15 +29136,15 @@ char* func_795(var uParam0, int iParam1)//Position - 0x2047D
 	switch (iParam1)
 	{
 		case 0:
-			return "CH_OPT_FIN_0";
+			return "CH_OPT_FIN_0" /* GXT: Decoy Gunman */;
 		
 		case 1:
-			return "CH_OPT_FIN_1";
+			return "CH_OPT_FIN_1" /* GXT: Clean Vehicle */;
 		
 		case 2:
 			if (func_790(uParam0) == 2)
 			{
-				return "CH_OPT_FIN_2";
+				return "CH_OPT_FIN_2" /* GXT: Exit Disguise */;
 			}
 			break;
 	}
@@ -29215,20 +29215,20 @@ char* func_801(var uParam0, int iParam1)//Position - 0x205B6
 		case 0:
 			if (func_790(uParam0) == 2)
 			{
-				return "CH_TODO_FIN_1";
+				return "CH_TODO_FIN_1" /* GXT: Entry Disguise */;
 			}
-			return "CH_TODO_FIN_0";
+			return "CH_TODO_FIN_0" /* GXT: Entrance */;
 		
 		case 1:
-			return "CH_TODO_FIN_2";
+			return "CH_TODO_FIN_2" /* GXT: Exit */;
 		
 		case 2:
-			return "CH_TODO_FIN_3";
+			return "CH_TODO_FIN_3" /* GXT: Buyer */;
 		
 		case 3:
 			if (NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 			{
-				return "CH_TODO_FIN_4";
+				return "CH_TODO_FIN_4" /* GXT: Player Cuts */;
 			}
 			break;
 	}
@@ -29822,7 +29822,7 @@ void func_829(var uParam0)//Position - 0x20D8A
 						func_866();
 						iVar2 = PLAYER::INT_TO_PLAYERINDEX(uParam0->f_1497.f_736.f_87[func_846(iVar1)]);
 						Var3 = { func_97(iVar2) };
-						AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
+						AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 						NETWORK::NETWORK_SHOW_PROFILE_UI(&Var3);
 					}
 					break;
@@ -29875,7 +29875,7 @@ void func_830(var uParam0, int iParam1, bool bParam2)//Position - 0x21067
 	func_792(uParam0, 1);
 	if (bParam2)
 	{
-		AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
+		AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 		if (NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 		{
 			Global_1970897[PLAYER::NETWORK_PLAYER_ID_TO_INT() /*68*/]++;
@@ -30224,10 +30224,10 @@ void func_833(var uParam0, int iParam1, int iParam2)//Position - 0x216D0
 		}
 		if (uParam0->f_1497.f_736.f_92[iParam1] <= iVar0)
 		{
-			if (!func_230("HEIST_NOTE_6"))
+			if (!func_230("HEIST_NOTE_6" /* GXT: The selected Heist member is at minimum cut. */))
 			{
 				HUD::CLEAR_HELP(true);
-				func_10("HEIST_NOTE_6", 5000);
+				func_10("HEIST_NOTE_6" /* GXT: The selected Heist member is at minimum cut. */, 5000);
 			}
 		}
 	}
@@ -30266,10 +30266,10 @@ void func_833(var uParam0, int iParam1, int iParam2)//Position - 0x216D0
 		}
 		if (uParam0->f_1497.f_736.f_92[iParam1] >= iVar1)
 		{
-			if (!func_230("HEIST_NOTE_5"))
+			if (!func_230("HEIST_NOTE_5" /* GXT: The selected Heist member is at maximum cut. */))
 			{
 				HUD::CLEAR_HELP(true);
-				func_10("HEIST_NOTE_5", 5000);
+				func_10("HEIST_NOTE_5" /* GXT: The selected Heist member is at maximum cut. */, 5000);
 			}
 		}
 	}
@@ -30937,7 +30937,7 @@ void func_853(var uParam0, int iParam1)//Position - 0x221B3
 	{
 		uParam0->f_2529.f_33 = func_854(uParam0);
 	}
-	AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
+	AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 }
 
 int func_854(var uParam0)//Position - 0x2236E
@@ -31158,51 +31158,51 @@ void func_860(var uParam0)//Position - 0x2268B
 	switch (uParam0->f_1497.f_736.f_278)
 	{
 		case 0:
-			if (!func_230("CH_HELP_LBDR0"))
+			if (!func_230("CH_HELP_LBDR0" /* GXT: Unable to launch - edit mode is enabled. */))
 			{
-				func_10("CH_HELP_LBDR0", -1);
+				func_10("CH_HELP_LBDR0" /* GXT: Unable to launch - edit mode is enabled. */, -1);
 			}
 			break;
 		
 		case 1:
-			if (!func_230("CH_HELP_LBDR1"))
+			if (!func_230("CH_HELP_LBDR1" /* GXT: Unable to launch - cut has not been fully distributed. */))
 			{
-				func_10("CH_HELP_LBDR1", -1);
+				func_10("CH_HELP_LBDR1" /* GXT: Unable to launch - cut has not been fully distributed. */, -1);
 			}
 			break;
 		
 		case 2:
-			if (!func_230("CH_HELP_LBDR2"))
+			if (!func_230("CH_HELP_LBDR2" /* GXT: Unable to launch - one or more crew members are not ready. */))
 			{
-				func_10("CH_HELP_LBDR2", -1);
+				func_10("CH_HELP_LBDR2" /* GXT: Unable to launch - one or more crew members are not ready. */, -1);
 			}
 			break;
 		
 		case 3:
-			if (!func_230("CH_HELP_LBDR3"))
+			if (!func_230("CH_HELP_LBDR3" /* GXT: Unable to launch - A buyer has not been selected. */))
 			{
-				func_10("CH_HELP_LBDR3", -1);
+				func_10("CH_HELP_LBDR3" /* GXT: Unable to launch - A buyer has not been selected. */, -1);
 			}
 			break;
 		
 		case 4:
-			if (!func_230("CH_HELP_LBDR4"))
+			if (!func_230("CH_HELP_LBDR4" /* GXT: Unable to launch - An entrance has not been selected. */))
 			{
-				func_10("CH_HELP_LBDR4", -1);
+				func_10("CH_HELP_LBDR4" /* GXT: Unable to launch - An entrance has not been selected. */, -1);
 			}
 			break;
 		
 		case 5:
-			if (!func_230("CH_HELP_LBDR5"))
+			if (!func_230("CH_HELP_LBDR5" /* GXT: Unable to launch - An exit has not been selected. */))
 			{
-				func_10("CH_HELP_LBDR5", -1);
+				func_10("CH_HELP_LBDR5" /* GXT: Unable to launch - An exit has not been selected. */, -1);
 			}
 			break;
 		
 		case 6:
-			if (!func_230("CH_HELP_LBDR6"))
+			if (!func_230("CH_HELP_LBDR6" /* GXT: Unable to launch - An entry disguise has not been selected. */))
 			{
-				func_10("CH_HELP_LBDR6", -1);
+				func_10("CH_HELP_LBDR6" /* GXT: Unable to launch - An entry disguise has not been selected. */, -1);
 			}
 			break;
 	}
@@ -31263,7 +31263,7 @@ void func_865(var uParam0)//Position - 0x2280D
 
 void func_866()//Position - 0x22823
 {
-	if ((((((func_230("CH_HELP_LBDR0") || func_230("CH_HELP_LBDR1")) || func_230("CH_HELP_LBDR2")) || func_230("CH_HELP_LBDR3")) || func_230("CH_HELP_LBDR4")) || func_230("CH_HELP_LBDR5")) || func_230("CH_HELP_LBDR6"))
+	if ((((((func_230("CH_HELP_LBDR0" /* GXT: Unable to launch - edit mode is enabled. */) || func_230("CH_HELP_LBDR1" /* GXT: Unable to launch - cut has not been fully distributed. */)) || func_230("CH_HELP_LBDR2" /* GXT: Unable to launch - one or more crew members are not ready. */)) || func_230("CH_HELP_LBDR3" /* GXT: Unable to launch - A buyer has not been selected. */)) || func_230("CH_HELP_LBDR4" /* GXT: Unable to launch - An entrance has not been selected. */)) || func_230("CH_HELP_LBDR5" /* GXT: Unable to launch - An exit has not been selected. */)) || func_230("CH_HELP_LBDR6" /* GXT: Unable to launch - An entry disguise has not been selected. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -31698,7 +31698,7 @@ void func_875(var uParam0)//Position - 0x22FFA
 	func_881(&(uParam0->f_1497));
 	if (BitTest(uParam0->f_1497.f_736.f_78, 5))
 	{
-		func_880("", "HEIST_IB_CONT", uParam0->f_1497.f_1030, &(uParam0->f_1497), 0);
+		func_880("", "HEIST_IB_CONT" /* GXT: Continue (~a~) */, uParam0->f_1497.f_1030, &(uParam0->f_1497), 0);
 	}
 	iVar2 = uParam0->f_2593;
 	if (uParam0->f_1497.f_704)
@@ -31707,14 +31707,14 @@ void func_875(var uParam0)//Position - 0x22FFA
 		{
 			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 			{
-				func_879(2, 39, "CH_INSTR_ZOOM", &(uParam0->f_1497), 1, 363);
+				func_879(2, 39, "CH_INSTR_ZOOM" /* GXT: Zoom */, &(uParam0->f_1497), 1, 363);
 			}
 			else
 			{
-				func_878(2, 15, "CH_INSTR_ZOOM", &(uParam0->f_1497));
+				func_878(2, 15, "CH_INSTR_ZOOM" /* GXT: Zoom */, &(uParam0->f_1497));
 			}
 		}
-		func_878(2, 1, "HEIST_IB_LOOK", &(uParam0->f_1497));
+		func_878(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, &(uParam0->f_1497));
 	}
 	else
 	{
@@ -31725,60 +31725,60 @@ void func_875(var uParam0)//Position - 0x22FFA
 				{
 					if (func_861(iVar2))
 					{
-						func_879(2, 201, "CH_INSTR_SEL", &(uParam0->f_1497), 1, 363);
+						func_879(2, 201, "CH_INSTR_SEL" /* GXT: Select */, &(uParam0->f_1497), 1, 363);
 					}
 					else if (func_856(uParam0, iVar2))
 					{
-						func_879(2, 201, func_877(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "CH_INSTR_MODI", "CH_INSTR_PREV"), &(uParam0->f_1497), 1, 363);
+						func_879(2, 201, func_877(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "CH_INSTR_MODI" /* GXT: Modify */, "CH_INSTR_PREV" /* GXT: Preview */), &(uParam0->f_1497), 1, 363);
 					}
-					func_879(2, 202, "CH_INSTR_QUIT", &(uParam0->f_1497), 1, 363);
+					func_879(2, 202, "CH_INSTR_QUIT" /* GXT: Quit */, &(uParam0->f_1497), 1, 363);
 					if (func_851(uParam0, iVar2))
 					{
-						func_879(2, 203, "CH_INSTR_PURCH", &(uParam0->f_1497), 1, 363);
+						func_879(2, 203, "CH_INSTR_PURCH" /* GXT: Pay for Equipment */, &(uParam0->f_1497), 1, 363);
 					}
 				}
 				else if (NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 				{
 					if (func_721(uParam0, PLAYER::PLAYER_ID()))
 					{
-						func_879(2, 201, "HEIST_IB_UNRDY", &(uParam0->f_1497), 1, 363);
+						func_879(2, 201, "HEIST_IB_UNRDY" /* GXT: Unready */, &(uParam0->f_1497), 1, 363);
 					}
 					else
 					{
-						func_879(2, 201, "HEIST_IB_RDY", &(uParam0->f_1497), 1, 363);
+						func_879(2, 201, "HEIST_IB_RDY" /* GXT: Ready */, &(uParam0->f_1497), 1, 363);
 					}
-					func_879(2, 202, "CH_INSTR_QUIT", &(uParam0->f_1497), 1, 363);
+					func_879(2, 202, "CH_INSTR_QUIT" /* GXT: Quit */, &(uParam0->f_1497), 1, 363);
 				}
 				if (func_118(uParam0))
 				{
-					func_879(2, 204, "CH_INSTR_INFO", &(uParam0->f_1497), 1, 363);
+					func_879(2, 204, "CH_INSTR_INFO" /* GXT: Info */, &(uParam0->f_1497), 1, 363);
 				}
 				if (!NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 				{
 					if (func_493(uParam0, 1))
 					{
-						func_879(2, 205, "CH_INSTR_PREP", &(uParam0->f_1497), 1, 363);
+						func_879(2, 205, "CH_INSTR_PREP" /* GXT: Prep Board */, &(uParam0->f_1497), 1, 363);
 					}
 				}
 				if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 				{
-					func_879(2, 39, "CH_INSTR_ZOOM", &(uParam0->f_1497), 1, 363);
+					func_879(2, 39, "CH_INSTR_ZOOM" /* GXT: Zoom */, &(uParam0->f_1497), 1, 363);
 				}
 				else
 				{
-					func_878(2, 15, "CH_INSTR_ZOOM", &(uParam0->f_1497));
+					func_878(2, 15, "CH_INSTR_ZOOM" /* GXT: Zoom */, &(uParam0->f_1497));
 				}
-				func_878(2, 1, "HEIST_IB_LOOK", &(uParam0->f_1497));
-				func_878(2, 0, "HEIST_IB_NAV", &(uParam0->f_1497));
+				func_878(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, &(uParam0->f_1497));
+				func_878(2, 0, "HEIST_IB_NAV" /* GXT: Navigate */, &(uParam0->f_1497));
 				if (func_847(iVar2))
 				{
 					if ((MISC::IS_PS3_VERSION() || func_208()) || MISC::IS_PC_VERSION())
 					{
-						func_879(2, 217, "HEIST_IB_PSN", &(uParam0->f_1497), 1, 363);
+						func_879(2, 217, "HEIST_IB_PSN" /* GXT: View Profile */, &(uParam0->f_1497), 1, 363);
 					}
 					else if (MISC::IS_XBOX360_VERSION() || func_209())
 					{
-						func_876(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "HEIST_IB_XBL", &(uParam0->f_1497), 0);
+						func_876(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "HEIST_IB_XBL" /* GXT: View gamer card */, &(uParam0->f_1497), 0);
 					}
 					else
 					{
@@ -31794,38 +31794,38 @@ void func_875(var uParam0)//Position - 0x22FFA
 				}
 				if (NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 				{
-					func_879(2, 201, "CH_INSTR_SET", &(uParam0->f_1497), 1, 363);
+					func_879(2, 201, "CH_INSTR_SET" /* GXT: Set */, &(uParam0->f_1497), 1, 363);
 				}
-				func_879(2, 202, func_877(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "CH_INSTR_CANC", "CH_INSTR_BACK"), &(uParam0->f_1497), 1, 363);
+				func_879(2, 202, func_877(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "CH_INSTR_CANC" /* GXT: Cancel */, "CH_INSTR_BACK" /* GXT: Back */), &(uParam0->f_1497), 1, 363);
 				if (func_118(uParam0))
 				{
-					func_879(2, 204, "CH_INSTR_INFO", &(uParam0->f_1497), 1, 363);
+					func_879(2, 204, "CH_INSTR_INFO" /* GXT: Info */, &(uParam0->f_1497), 1, 363);
 				}
 				if (func_847(iVar2))
 				{
-					func_878(2, 8, "CH_INSTR_CUT", &(uParam0->f_1497));
+					func_878(2, 8, "CH_INSTR_CUT" /* GXT: Change Cut */, &(uParam0->f_1497));
 				}
 				else if (iVar2 == 2)
 				{
-					func_878(2, 8, "CH_INSTR_ENT", &(uParam0->f_1497));
+					func_878(2, 8, "CH_INSTR_ENT" /* GXT: Change Entrance */, &(uParam0->f_1497));
 				}
 				else if (iVar2 == 3)
 				{
-					func_878(2, 8, "CH_INSTR_EXT", &(uParam0->f_1497));
+					func_878(2, 8, "CH_INSTR_EXT" /* GXT: Change Exit */, &(uParam0->f_1497));
 				}
 				else if (iVar2 == 4)
 				{
-					func_878(2, 8, "CH_INSTR_BUY", &(uParam0->f_1497));
+					func_878(2, 8, "CH_INSTR_BUY" /* GXT: Change Buyer */, &(uParam0->f_1497));
 				}
 				else if (iVar2 == 13)
 				{
-					func_878(2, 8, "CH_INSTR_OUTI", &(uParam0->f_1497));
+					func_878(2, 8, "CH_INSTR_OUTI" /* GXT: Change Outfit (Entry) */, &(uParam0->f_1497));
 				}
 				else if (iVar2 == 14)
 				{
-					func_878(2, 8, "CH_INSTR_OUTO", &(uParam0->f_1497));
+					func_878(2, 8, "CH_INSTR_OUTO" /* GXT: Change Outfit (Exit) */, &(uParam0->f_1497));
 				}
-				func_878(2, 1, "HEIST_IB_LOOK", &(uParam0->f_1497));
+				func_878(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, &(uParam0->f_1497));
 				break;
 			}
 	}
@@ -33388,14 +33388,14 @@ void func_939(var uParam0)//Position - 0x257F9
 	}
 	if (func_952(uParam0, iVar0) && !func_951(uParam0))
 	{
-		func_229("CH_HELP_CREW");
+		func_229("CH_HELP_CREW" /* GXT: Prep work locked. Select your Support Crew members. */);
 		return;
 	}
 	if (BitTest(uParam0->f_4357, 9) && !BitTest(uParam0->f_4357, 10))
 	{
 		if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 		{
-			func_10("CSH_LAUNCHF_2", -1);
+			func_10("CSH_LAUNCHF_2" /* GXT: A fee can be paid to purchase the Heist Prep Equipment immediately. */, -1);
 			MISC::CLEAR_BIT(&(uParam0->f_4357), 9);
 			MISC::SET_BIT(&(uParam0->f_4357), 10);
 		}
@@ -33420,14 +33420,14 @@ void func_939(var uParam0)//Position - 0x257F9
 		case 18:
 			if (func_940(uParam0->f_4356) == 0)
 			{
-				func_229("CH_HELP_MASKS");
+				func_229("CH_HELP_MASKS" /* GXT: Visit Vespucci Movie Masks ~HUD_COLOUR_GREEN~~BLIP_MASK~~s~ to collect masks for The Diamond Casino Heist. */);
 			}
 			break;
 		
 		case 2:
 			if (func_952(uParam0, iVar0) && func_951(uParam0))
 			{
-				func_229("CH_HELP_SECI");
+				func_229("CH_HELP_SECI" /* GXT: Prep work locked. Press ~INPUT_FRONTEND_Y~ for more info. */);
 			}
 			break;
 		
@@ -33630,7 +33630,7 @@ int func_952(var uParam0, int iParam1)//Position - 0x25C10
 
 void func_953()//Position - 0x25CFA
 {
-	if ((func_230("CH_HELP_MASKS") || func_230("CH_HELP_CREW")) || func_230("CH_HELP_SECI"))
+	if ((func_230("CH_HELP_MASKS" /* GXT: Visit Vespucci Movie Masks ~HUD_COLOUR_GREEN~~BLIP_MASK~~s~ to collect masks for The Diamond Casino Heist. */) || func_230("CH_HELP_CREW" /* GXT: Prep work locked. Select your Support Crew members. */)) || func_230("CH_HELP_SECI" /* GXT: Prep work locked. Press ~INPUT_FRONTEND_Y~ for more info. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -34613,41 +34613,41 @@ void func_980(var uParam0, int iParam1, bool bParam2)//Position - 0x26F1C
 			case 15:
 				if (func_283(PLAYER::PLAYER_ID()))
 				{
-					func_10("GENERAL_MLF_G1", -1);
+					func_10("GENERAL_MLF_G1" /* GXT: Can't launch this mission whilst one of your Club Members is currently at one with the animals. */, -1);
 				}
 				else if (func_282(PLAYER::PLAYER_ID()))
 				{
-					func_10("GENERAL_MLF_G2", -1);
+					func_10("GENERAL_MLF_G2" /* GXT: Can't launch this mission whilst one of your Associates is currently at one with the animals. */, -1);
 				}
 				else
 				{
-					func_10("GENERAL_MLF_G3", -1);
+					func_10("GENERAL_MLF_G3" /* GXT: Can't launch this mission whilst one of your Bodyguards is currently at one with the animals. */, -1);
 				}
 				break;
 			
 			case 16:
 				if (func_283(PLAYER::PLAYER_ID()))
 				{
-					func_10("GENERAL_MLF_G4", -1);
+					func_10("GENERAL_MLF_G4" /* GXT: Can't launch this mission whilst one of your Club Members is playing a casino game. */, -1);
 				}
 				else if (func_282(PLAYER::PLAYER_ID()))
 				{
-					func_10("GENERAL_MLF_G5", -1);
+					func_10("GENERAL_MLF_G5" /* GXT: Can't launch this mission whilst one of your Associates is playing a casino game. */, -1);
 				}
 				else
 				{
-					func_10("GENERAL_MLF_G6", -1);
+					func_10("GENERAL_MLF_G6" /* GXT: Can't launch this mission whilst one of your Bodyguards is playing a casino game. */, -1);
 				}
 				break;
 			
 			default:
 				if (func_981(func_985(uParam0, iParam1)))
 				{
-					func_10("CSH_LAUNCHF_0", -1);
+					func_10("CSH_LAUNCHF_0" /* GXT: The mission you have selected is currently unavailable. The maximum number of missions with this Heist Prep Equipment have already been sourced in session. Please wait or look for rival Heist crews transporting Heist Prep Equipment ~BLIP_NHP_BAG~ to steal from. */, -1);
 				}
 				else
 				{
-					func_10("CSH_LAUNCHF_1", -1);
+					func_10("CSH_LAUNCHF_1" /* GXT: The mission you have selected is currently unavailable. The maximum number of missions with this Heist Prep Equipment have already been sourced in session. Please try again soon. */, -1);
 				}
 				if (func_975(uParam0, iParam1))
 				{
@@ -36065,28 +36065,28 @@ void func_1031(var uParam0)//Position - 0x287A8
 		{
 			if (!MISC::IS_STRING_NULL_OR_EMPTY(func_182(uParam0, 1, iVar2)))
 			{
-				func_879(2, 204, "CH_INSTR_INFO", &(uParam0->f_744), 1, 363);
+				func_879(2, 204, "CH_INSTR_INFO" /* GXT: Info */, &(uParam0->f_744), 1, 363);
 			}
 		}
 		else if (func_992(iVar2))
 		{
 			if (!MISC::IS_STRING_NULL_OR_EMPTY(func_167(uParam0, iVar2)))
 			{
-				func_879(2, 204, "CH_INSTR_INFO", &(uParam0->f_744), 1, 363);
+				func_879(2, 204, "CH_INSTR_INFO" /* GXT: Info */, &(uParam0->f_744), 1, 363);
 			}
 		}
 		if (func_728(&(uParam0->f_2529)))
 		{
 			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 			{
-				func_879(2, 39, "CH_INSTR_ZOOM", &(uParam0->f_744), 1, 363);
+				func_879(2, 39, "CH_INSTR_ZOOM" /* GXT: Zoom */, &(uParam0->f_744), 1, 363);
 			}
 			else
 			{
-				func_878(2, 15, "CH_INSTR_ZOOM", &(uParam0->f_744));
+				func_878(2, 15, "CH_INSTR_ZOOM" /* GXT: Zoom */, &(uParam0->f_744));
 			}
 		}
-		func_878(2, 1, "HEIST_IB_LOOK", &(uParam0->f_744));
+		func_878(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, &(uParam0->f_744));
 	}
 	else
 	{
@@ -36103,46 +36103,46 @@ void func_1031(var uParam0)//Position - 0x287A8
 							{
 								if (!func_978(uParam0->f_4356))
 								{
-									func_879(2, 201, "CH_INSTR_LM", &(uParam0->f_744), 1, 363);
+									func_879(2, 201, "CH_INSTR_LM" /* GXT: Launch Mission */, &(uParam0->f_744), 1, 363);
 								}
 								else if (!func_950(uParam0->f_4356))
 								{
-									func_879(2, 201, "CH_INSTR_RM", &(uParam0->f_744), 1, 363);
+									func_879(2, 201, "CH_INSTR_RM" /* GXT: Replay Mission */, &(uParam0->f_744), 1, 363);
 								}
 							}
 						}
 						else if (func_988(uParam0, iVar2))
 						{
-							func_879(2, 201, "CH_INSTR_LM", &(uParam0->f_744), 1, 363);
+							func_879(2, 201, "CH_INSTR_LM" /* GXT: Launch Mission */, &(uParam0->f_744), 1, 363);
 						}
 					}
 					else if (func_989(uParam0, iVar2))
 					{
 						if (func_988(uParam0, iVar2) || func_987(uParam0, iVar2))
 						{
-							func_879(2, 201, "CH_INSTR_SEL", &(uParam0->f_744), 1, 363);
+							func_879(2, 201, "CH_INSTR_SEL" /* GXT: Select */, &(uParam0->f_744), 1, 363);
 						}
 					}
 					else if (func_992(iVar2))
 					{
 						if (!func_991(uParam0, iVar2))
 						{
-							func_879(2, 201, "CH_INSTR_SEL", &(uParam0->f_744), 1, 363);
+							func_879(2, 201, "CH_INSTR_SEL" /* GXT: Select */, &(uParam0->f_744), 1, 363);
 						}
 					}
 					else if (func_1032(iVar2))
 					{
-						func_879(2, 201, "CH_INSTR_SEL", &(uParam0->f_744), 1, 363);
+						func_879(2, 201, "CH_INSTR_SEL" /* GXT: Select */, &(uParam0->f_744), 1, 363);
 					}
 				}
-				func_879(2, 202, "CH_INSTR_QUIT", &(uParam0->f_744), 1, 363);
+				func_879(2, 202, "CH_INSTR_QUIT" /* GXT: Quit */, &(uParam0->f_744), 1, 363);
 				if (uParam0->f_4356 == PLAYER::PLAYER_ID())
 				{
 					if (func_986(uParam0, iVar2) || func_989(uParam0, iVar2))
 					{
 						if (func_975(uParam0, iVar2) && func_974(uParam0, iVar2))
 						{
-							func_879(2, 203, "CH_INSTR_SKIP", &(uParam0->f_744), 1, 363);
+							func_879(2, 203, "CH_INSTR_SKIP" /* GXT: Pay to Skip */, &(uParam0->f_744), 1, 363);
 						}
 					}
 				}
@@ -36150,38 +36150,38 @@ void func_1031(var uParam0)//Position - 0x287A8
 				{
 					if (!MISC::IS_STRING_NULL_OR_EMPTY(func_182(uParam0, 1, iVar2)))
 					{
-						func_879(2, 204, "CH_INSTR_INFO", &(uParam0->f_744), 1, 363);
+						func_879(2, 204, "CH_INSTR_INFO" /* GXT: Info */, &(uParam0->f_744), 1, 363);
 					}
 				}
 				else if (func_992(iVar2))
 				{
 					if (!MISC::IS_STRING_NULL_OR_EMPTY(func_167(uParam0, iVar2)))
 					{
-						func_879(2, 204, "CH_INSTR_INFO", &(uParam0->f_744), 1, 363);
+						func_879(2, 204, "CH_INSTR_INFO" /* GXT: Info */, &(uParam0->f_744), 1, 363);
 					}
 				}
 				else if (iVar2 == 18)
 				{
-					func_879(2, 204, "CH_INSTR_INFO", &(uParam0->f_744), 1, 363);
+					func_879(2, 204, "CH_INSTR_INFO" /* GXT: Info */, &(uParam0->f_744), 1, 363);
 				}
 				if (func_493(uParam0, 2))
 				{
-					func_879(2, 206, "CH_INSTR_FIN", &(uParam0->f_744), 1, 363);
+					func_879(2, 206, "CH_INSTR_FIN" /* GXT: Finale Board */, &(uParam0->f_744), 1, 363);
 				}
 				if (func_493(uParam0, 0))
 				{
-					func_879(2, 205, "CH_INSTR_SETUP", &(uParam0->f_744), 1, 363);
+					func_879(2, 205, "CH_INSTR_SETUP" /* GXT: Setup Board */, &(uParam0->f_744), 1, 363);
 				}
 				if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 				{
-					func_879(2, 39, "CH_INSTR_ZOOM", &(uParam0->f_744), 1, 363);
+					func_879(2, 39, "CH_INSTR_ZOOM" /* GXT: Zoom */, &(uParam0->f_744), 1, 363);
 				}
 				else
 				{
-					func_878(2, 15, "CH_INSTR_ZOOM", &(uParam0->f_744));
+					func_878(2, 15, "CH_INSTR_ZOOM" /* GXT: Zoom */, &(uParam0->f_744));
 				}
-				func_878(2, 1, "HEIST_IB_LOOK", &(uParam0->f_744));
-				func_878(2, 0, "HEIST_IB_NAV", &(uParam0->f_744));
+				func_878(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, &(uParam0->f_744));
+				func_878(2, 0, "HEIST_IB_NAV" /* GXT: Navigate */, &(uParam0->f_744));
 				break;
 			
 			case 1:
@@ -36191,74 +36191,74 @@ void func_1031(var uParam0)//Position - 0x287A8
 					{
 						if (func_988(uParam0, iVar2))
 						{
-							func_879(2, 201, "CH_INSTR_LM", &(uParam0->f_744), 1, 363);
+							func_879(2, 201, "CH_INSTR_LM" /* GXT: Launch Mission */, &(uParam0->f_744), 1, 363);
 						}
 					}
 				}
 				else if ((func_992(iVar2) && !func_991(uParam0, iVar2)) && func_163(uParam0, iVar2))
 				{
-					func_879(2, 201, "CH_INSTR_SEL", &(uParam0->f_744), 1, 363);
+					func_879(2, 201, "CH_INSTR_SEL" /* GXT: Select */, &(uParam0->f_744), 1, 363);
 				}
-				func_879(2, 202, "CH_INSTR_CANC", &(uParam0->f_744), 1, 363);
+				func_879(2, 202, "CH_INSTR_CANC" /* GXT: Cancel */, &(uParam0->f_744), 1, 363);
 				if (func_986(uParam0, iVar2) || func_989(uParam0, iVar2))
 				{
 					if (func_975(uParam0, iVar2) && func_974(uParam0, iVar2))
 					{
-						func_879(2, 203, "CH_INSTR_SKIP", &(uParam0->f_744), 1, 363);
+						func_879(2, 203, "CH_INSTR_SKIP" /* GXT: Pay to Skip */, &(uParam0->f_744), 1, 363);
 					}
 				}
 				if (func_986(uParam0, iVar2) || func_989(uParam0, iVar2))
 				{
 					if (!MISC::IS_STRING_NULL_OR_EMPTY(func_182(uParam0, 1, iVar2)))
 					{
-						func_879(2, 204, "CH_INSTR_INFO", &(uParam0->f_744), 1, 363);
+						func_879(2, 204, "CH_INSTR_INFO" /* GXT: Info */, &(uParam0->f_744), 1, 363);
 					}
 				}
 				else if (func_992(iVar2))
 				{
 					if (!MISC::IS_STRING_NULL_OR_EMPTY(func_167(uParam0, iVar2)))
 					{
-						func_879(2, 204, "CH_INSTR_INFO", &(uParam0->f_744), 1, 363);
+						func_879(2, 204, "CH_INSTR_INFO" /* GXT: Info */, &(uParam0->f_744), 1, 363);
 					}
 				}
-				func_878(2, 1, "HEIST_IB_LOOK", &(uParam0->f_744));
+				func_878(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, &(uParam0->f_744));
 				switch (iVar2)
 				{
 					case 10:
-						func_878(2, 8, "CH_INSTR_CHGUN", &(uParam0->f_744));
+						func_878(2, 8, "CH_INSTR_CHGUN" /* GXT: Change Gunman */, &(uParam0->f_744));
 						break;
 					
 					case 11:
-						func_878(2, 8, "CH_INSTR_CHDRV", &(uParam0->f_744));
+						func_878(2, 8, "CH_INSTR_CHDRV" /* GXT: Change Driver */, &(uParam0->f_744));
 						break;
 					
 					case 12:
-						func_878(2, 8, "CH_INSTR_CHHCK", &(uParam0->f_744));
+						func_878(2, 8, "CH_INSTR_CHHCK" /* GXT: Change Hacker */, &(uParam0->f_744));
 						break;
 					
 					case 5:
-						func_878(2, 8, "CH_INSTR_CHWEP", &(uParam0->f_744));
+						func_878(2, 8, "CH_INSTR_CHWEP" /* GXT: Change Weapons Loadout */, &(uParam0->f_744));
 						break;
 					
 					case 6:
-						func_878(2, 8, "CH_INSTR_CHVEH", &(uParam0->f_744));
+						func_878(2, 8, "CH_INSTR_CHVEH" /* GXT: Change Vehicle */, &(uParam0->f_744));
 						break;
 					
 					case 13:
-						func_878(2, 8, "CH_INSTR_CHPAS", &(uParam0->f_744));
+						func_878(2, 8, "CH_INSTR_CHPAS" /* GXT: Change Security Pass Level */, &(uParam0->f_744));
 						break;
 					
 					case 14:
 						if (func_114(uParam0->f_4356) == 2)
 						{
-							func_878(2, 8, "CH_INSTR_CHENT", &(uParam0->f_744));
+							func_878(2, 8, "CH_INSTR_CHENT" /* GXT: Change Entry Disguise */, &(uParam0->f_744));
 						}
 						break;
 					
 					case 17:
 						if (func_114(uParam0->f_4356) == 2)
 						{
-							func_878(2, 8, "CH_INSTR_CHEXT", &(uParam0->f_744));
+							func_878(2, 8, "CH_INSTR_CHEXT" /* GXT: Change Exit Disguise */, &(uParam0->f_744));
 						}
 						break;
 				}
@@ -36346,8 +36346,8 @@ void func_1033(var uParam0)//Position - 0x28E6E
 		bVar4 = func_145(uParam0->f_4356, uParam0->f_744.f_738);
 		if (!bVar4 && func_144(uParam0))
 		{
-			sVar2 = "CH_LIST_BLANK";
-			sVar3 = "CH_LIST_BLANK";
+			sVar2 = "CH_LIST_BLANK" /* GXT: ??? */;
+			sVar3 = "CH_LIST_BLANK" /* GXT: ??? */;
 		}
 		func_1077(uParam0->f_744.f_709, 10, sVar2, sVar3, func_1079(uParam0), func_159(uParam0, 10), func_1078(uParam0));
 		func_1026(uParam0->f_744.f_709, 10, func_165(uParam0->f_4356, 0) == uParam0->f_744.f_738);
@@ -36371,8 +36371,8 @@ void func_1033(var uParam0)//Position - 0x28E6E
 		bVar4 = func_139(uParam0->f_4356, uParam0->f_744.f_743);
 		if (!bVar4 && func_138(uParam0))
 		{
-			sVar2 = "CH_LIST_BLANK";
-			sVar3 = "CH_LIST_BLANK";
+			sVar2 = "CH_LIST_BLANK" /* GXT: ??? */;
+			sVar3 = "CH_LIST_BLANK" /* GXT: ??? */;
 		}
 		func_1077(uParam0->f_744.f_709, 12, sVar2, sVar3, func_1072(uParam0), func_159(uParam0, 12), -1);
 		func_1026(uParam0->f_744.f_709, 12, func_501(uParam0->f_4356, 0) == uParam0->f_744.f_743);
@@ -36631,10 +36631,10 @@ char* func_1043(var uParam0)//Position - 0x297BF
 	switch (uParam0->f_744.f_742)
 	{
 		case 1:
-			return "CH_KEYACCESS_0";
+			return "CH_KEYACCESS_0" /* GXT: LEVEL 1 PASS */;
 		
 		case 2:
-			return "CH_KEYACCESS_1";
+			return "CH_KEYACCESS_1" /* GXT: LEVEL 2 PASS */;
 		
 		default:
 	}
@@ -37360,7 +37360,7 @@ char* func_1065(var uParam0, int iParam1)//Position - 0x2A1DC
 			switch (func_114(uParam0->f_4356))
 			{
 				case 2:
-					return "CH_PREP_OUTFITIN";
+					return "CH_PREP_OUTFITIN" /* GXT: ENTRY DISGUISE */;
 				
 				default:
 			}
@@ -37370,7 +37370,7 @@ char* func_1065(var uParam0, int iParam1)//Position - 0x2A1DC
 			switch (func_114(uParam0->f_4356))
 			{
 				case 2:
-					return "CH_PREP_OUTFITOUT";
+					return "CH_PREP_OUTFITOUT" /* GXT: EXIT DISGUISE */;
 				
 				default:
 			}
@@ -37400,16 +37400,16 @@ char* func_1067(var uParam0, int iParam1, int iParam2)//Position - 0x2A256
 			switch (iParam2)
 			{
 				case 0:
-					return "CH_MISS_ST_0";
+					return "CH_MISS_ST_0" /* GXT: NANO DRONE */;
 				
 				case 1:
-					return "CH_MISS_ST_1";
+					return "CH_MISS_ST_1" /* GXT: VAULT LASER */;
 				
 				case 2:
-					return "CH_MISS_ST_2";
+					return "CH_MISS_ST_2" /* GXT: EMP DEVICE */;
 				
 				case 3:
-					return "CH_MISS_ST_3";
+					return "CH_MISS_ST_3" /* GXT: INFILTRATION SUITS */;
 				
 				default:
 			}
@@ -37422,32 +37422,32 @@ char* func_1067(var uParam0, int iParam1, int iParam2)//Position - 0x2A256
 					switch (uParam0->f_744.f_744)
 					{
 						case 1:
-							return "CH_MISS_SU_0a";
+							return "CH_MISS_SU_0a" /* GXT: BUGSTARS GEAR */;
 						
 						case 2:
-							return "CH_MISS_SU_0b";
+							return "CH_MISS_SU_0b" /* GXT: MAINTENANCE GEAR */;
 						
 						case 3:
-							return "CH_MISS_SU_0c";
+							return "CH_MISS_SU_0c" /* GXT: GRUPPE SECHS GEAR */;
 						
 						default:
 					}
 					break;
 				
 				case 1:
-					return "CH_MISS_SU_1";
+					return "CH_MISS_SU_1" /* GXT: VAULT DRILLS */;
 				
 				case 2:
-					return "CH_MISS_SU_2";
+					return "CH_MISS_SU_2" /* GXT: CELEBRITY */;
 				
 				case 3:
 					switch (uParam0->f_744.f_745)
 					{
 						case 6:
-							return "CH_MISS_SU_3a";
+							return "CH_MISS_SU_3a" /* GXT: NOOSE GEAR */;
 						
 						case 7:
-							return "CH_MISS_SU_3b";
+							return "CH_MISS_SU_3b" /* GXT: FIREFIGHTER GEAR */;
 						
 						default:
 					}
@@ -37461,18 +37461,18 @@ char* func_1067(var uParam0, int iParam1, int iParam2)//Position - 0x2A256
 				case 0:
 					if (func_179(uParam0->f_4356))
 					{
-						return "CH_MISS_DI_0b";
+						return "CH_MISS_DI_0b" /* GXT: BREACHING CHARGES */;
 					}
-					return "CH_MISS_DI_0";
+					return "CH_MISS_DI_0" /* GXT: THERMAL CHARGES */;
 				
 				case 1:
-					return "CH_MISS_DI_1";
+					return "CH_MISS_DI_1" /* GXT: VAULT EXPLOSIVES */;
 				
 				case 2:
-					return "CH_MISS_DI_2";
+					return "CH_MISS_DI_2" /* GXT: REINFORCED ARMOR */;
 				
 				case 3:
-					return "CH_MISS_DI_3";
+					return "CH_MISS_DI_3" /* GXT: BORING MACHINE */;
 				
 				default:
 			}
@@ -37924,28 +37924,28 @@ char* func_1086(var uParam0, int iParam1)//Position - 0x2AA00
 			switch (iParam1)
 			{
 				case 0:
-					return "CH_OPT_PREP_0";
+					return "CH_OPT_PREP_0" /* GXT: Patrol Routes */;
 				
 				case 1:
-					return "CH_OPT_PREP_1";
+					return "CH_OPT_PREP_1" /* GXT: Duggan Shipments */;
 				
 				case 2:
-					return "CH_OPT_PREP_2";
+					return "CH_OPT_PREP_2" /* GXT: Security Intel */;
 				
 				case 3:
-					return "CH_OPT_PREP_3";
+					return "CH_OPT_PREP_3" /* GXT: Power Drills */;
 				
 				case 4:
-					return "CH_OPT_PREP_4";
+					return "CH_OPT_PREP_4" /* GXT: Security Passes */;
 				
 				case 5:
-					return "CH_OPT_PREP_5";
+					return "CH_OPT_PREP_5" /* GXT: Acquire Masks */;
 				
 				case 6:
-					return "CH_OPT_PREP_6";
+					return "CH_OPT_PREP_6" /* GXT: Steal EMP */;
 				
 				case 7:
-					return "CH_OPT_PREP_7";
+					return "CH_OPT_PREP_7" /* GXT: Infiltration Suits */;
 				
 				default:
 			}
@@ -37955,25 +37955,25 @@ char* func_1086(var uParam0, int iParam1)//Position - 0x2AA00
 			switch (iParam1)
 			{
 				case 0:
-					return "CH_OPT_PREP_0";
+					return "CH_OPT_PREP_0" /* GXT: Patrol Routes */;
 				
 				case 1:
-					return "CH_OPT_PREP_1";
+					return "CH_OPT_PREP_1" /* GXT: Duggan Shipments */;
 				
 				case 2:
-					return "CH_OPT_PREP_2";
+					return "CH_OPT_PREP_2" /* GXT: Security Intel */;
 				
 				case 3:
-					return "CH_OPT_PREP_3";
+					return "CH_OPT_PREP_3" /* GXT: Power Drills */;
 				
 				case 4:
-					return "CH_OPT_PREP_4";
+					return "CH_OPT_PREP_4" /* GXT: Security Passes */;
 				
 				case 5:
-					return "CH_OPT_PREP_5";
+					return "CH_OPT_PREP_5" /* GXT: Acquire Masks */;
 				
 				case 6:
-					return "CH_OPT_PREP_8";
+					return "CH_OPT_PREP_8" /* GXT: Exit Disguise */;
 				
 				default:
 			}
@@ -37983,34 +37983,34 @@ char* func_1086(var uParam0, int iParam1)//Position - 0x2AA00
 			switch (iParam1)
 			{
 				case 0:
-					return "CH_OPT_PREP_0";
+					return "CH_OPT_PREP_0" /* GXT: Patrol Routes */;
 				
 				case 1:
-					return "CH_OPT_PREP_1";
+					return "CH_OPT_PREP_1" /* GXT: Duggan Shipments */;
 				
 				case 2:
-					return "CH_OPT_PREP_2";
+					return "CH_OPT_PREP_2" /* GXT: Security Intel */;
 				
 				case 3:
-					return "CH_OPT_PREP_3";
+					return "CH_OPT_PREP_3" /* GXT: Power Drills */;
 				
 				case 4:
-					return "CH_OPT_PREP_4";
+					return "CH_OPT_PREP_4" /* GXT: Security Passes */;
 				
 				case 5:
-					return "CH_OPT_PREP_5";
+					return "CH_OPT_PREP_5" /* GXT: Acquire Masks */;
 				
 				case 6:
-					return "CH_OPT_PREP_9";
+					return "CH_OPT_PREP_9" /* GXT: Reinforced Armor */;
 				
 				case 7:
 					if (func_180(uParam0->f_4356, 10))
 					{
-						return "CH_OPT_PREP_10";
+						return "CH_OPT_PREP_10" /* GXT: Boring Machine */;
 					}
 					else
 					{
-						return "CH_LIST_BLANK";
+						return "CH_LIST_BLANK" /* GXT: ??? */;
 					}
 					break;
 			}
@@ -38114,22 +38114,22 @@ char* func_1089(var uParam0, int iParam1)//Position - 0x2AD26
 			switch (iParam1)
 			{
 				case 0:
-					return "CH_TODO_PREP_0";
+					return "CH_TODO_PREP_0" /* GXT: Unmarked Weapons */;
 				
 				case 1:
-					return "CH_TODO_PREP_1";
+					return "CH_TODO_PREP_1" /* GXT: Getaway Vehicles */;
 				
 				case 2:
-					return "CH_TODO_PREP_2";
+					return "CH_TODO_PREP_2" /* GXT: Hacking Device */;
 				
 				case 3:
-					return "CH_TODO_PREP_3";
+					return "CH_TODO_PREP_3" /* GXT: Vault Keycards */;
 				
 				case 4:
-					return "CH_TODO_PREP_4";
+					return "CH_TODO_PREP_4" /* GXT: Nano Drone */;
 				
 				case 5:
-					return "CH_TODO_PREP_5";
+					return "CH_TODO_PREP_5" /* GXT: Vault Laser */;
 				
 				default:
 			}
@@ -38139,22 +38139,22 @@ char* func_1089(var uParam0, int iParam1)//Position - 0x2AD26
 			switch (iParam1)
 			{
 				case 0:
-					return "CH_TODO_PREP_0";
+					return "CH_TODO_PREP_0" /* GXT: Unmarked Weapons */;
 				
 				case 1:
-					return "CH_TODO_PREP_1";
+					return "CH_TODO_PREP_1" /* GXT: Getaway Vehicles */;
 				
 				case 2:
-					return "CH_TODO_PREP_2";
+					return "CH_TODO_PREP_2" /* GXT: Hacking Device */;
 				
 				case 3:
-					return "CH_TODO_PREP_3";
+					return "CH_TODO_PREP_3" /* GXT: Vault Keycards */;
 				
 				case 4:
-					return "CH_TODO_PREP_8";
+					return "CH_TODO_PREP_8" /* GXT: Entry Disguise */;
 				
 				case 5:
-					return "CH_TODO_PREP_9";
+					return "CH_TODO_PREP_9" /* GXT: Vault Drills */;
 				
 				default:
 			}
@@ -38164,26 +38164,26 @@ char* func_1089(var uParam0, int iParam1)//Position - 0x2AD26
 			switch (iParam1)
 			{
 				case 0:
-					return "CH_TODO_PREP_0";
+					return "CH_TODO_PREP_0" /* GXT: Unmarked Weapons */;
 				
 				case 1:
-					return "CH_TODO_PREP_1";
+					return "CH_TODO_PREP_1" /* GXT: Getaway Vehicles */;
 				
 				case 2:
-					return "CH_TODO_PREP_2";
+					return "CH_TODO_PREP_2" /* GXT: Hacking Device */;
 				
 				case 3:
-					return "CH_TODO_PREP_3";
+					return "CH_TODO_PREP_3" /* GXT: Vault Keycards */;
 				
 				case 4:
 					if (func_179(uParam0->f_4356))
 					{
-						return "CH_TODO_PREP_6b";
+						return "CH_TODO_PREP_6b" /* GXT: Breaching Charges */;
 					}
-					return "CH_TODO_PREP_6";
+					return "CH_TODO_PREP_6" /* GXT: Thermal Charges */;
 				
 				case 5:
-					return "CH_TODO_PREP_7";
+					return "CH_TODO_PREP_7" /* GXT: Vault Explosives */;
 				
 				default:
 			}
@@ -38678,7 +38678,7 @@ void func_1116(var uParam0)//Position - 0x2B751
 			iVar0 = func_9(8726, -1, 0);
 			MISC::SET_BIT(&iVar0, 23);
 			func_6(8726, iVar0, -1, 1, 0);
-			func_10("CH_SETUP_CANUSE", -1);
+			func_10("CH_SETUP_CANUSE" /* GXT: The Setup Board can still be used to see the access points you've scoped so far. You can also continue to scope the Casino to look for additional access points and points of interest. */, -1);
 		}
 	}
 }
@@ -39301,30 +39301,30 @@ void func_1141(var uParam0, int iParam1)//Position - 0x2C1C0
 			case 15:
 				if (func_283(PLAYER::PLAYER_ID()))
 				{
-					func_10("GENERAL_MLF_G1", -1);
+					func_10("GENERAL_MLF_G1" /* GXT: Can't launch this mission whilst one of your Club Members is currently at one with the animals. */, -1);
 				}
 				else if (func_282(PLAYER::PLAYER_ID()))
 				{
-					func_10("GENERAL_MLF_G2", -1);
+					func_10("GENERAL_MLF_G2" /* GXT: Can't launch this mission whilst one of your Associates is currently at one with the animals. */, -1);
 				}
 				else
 				{
-					func_10("GENERAL_MLF_G3", -1);
+					func_10("GENERAL_MLF_G3" /* GXT: Can't launch this mission whilst one of your Bodyguards is currently at one with the animals. */, -1);
 				}
 				break;
 			
 			case 16:
 				if (func_283(PLAYER::PLAYER_ID()))
 				{
-					func_10("GENERAL_MLF_G4", -1);
+					func_10("GENERAL_MLF_G4" /* GXT: Can't launch this mission whilst one of your Club Members is playing a casino game. */, -1);
 				}
 				else if (func_282(PLAYER::PLAYER_ID()))
 				{
-					func_10("GENERAL_MLF_G5", -1);
+					func_10("GENERAL_MLF_G5" /* GXT: Can't launch this mission whilst one of your Associates is playing a casino game. */, -1);
 				}
 				else
 				{
-					func_10("GENERAL_MLF_G6", -1);
+					func_10("GENERAL_MLF_G6" /* GXT: Can't launch this mission whilst one of your Bodyguards is playing a casino game. */, -1);
 				}
 				break;
 			}
@@ -40050,19 +40050,19 @@ void func_1163(var uParam0)//Position - 0x2CD75
 	iVar2 = uParam0->f_2593;
 	if (uParam0->f_704)
 	{
-		func_879(2, 204, "CH_INSTR_INFO", uParam0, 1, 363);
+		func_879(2, 204, "CH_INSTR_INFO" /* GXT: Info */, uParam0, 1, 363);
 		if (func_728(&(uParam0->f_2529)))
 		{
 			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 			{
-				func_879(2, 39, "CH_INSTR_ZOOM", uParam0, 1, 363);
+				func_879(2, 39, "CH_INSTR_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 			}
 			else
 			{
-				func_878(2, 15, "CH_INSTR_ZOOM", uParam0);
+				func_878(2, 15, "CH_INSTR_ZOOM" /* GXT: Zoom */, uParam0);
 			}
 		}
-		func_878(2, 1, "HEIST_IB_LOOK", uParam0);
+		func_878(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, uParam0);
 	}
 	else
 	{
@@ -40075,22 +40075,22 @@ void func_1163(var uParam0)//Position - 0x2CD75
 					{
 						if (func_1143(uParam0, iVar2))
 						{
-							func_879(2, 201, "CH_INSTR_LM", uParam0, 1, 363);
+							func_879(2, 201, "CH_INSTR_LM" /* GXT: Launch Mission */, uParam0, 1, 363);
 						}
 					}
 					else if (func_1134(uParam0, iVar2))
 					{
-						func_879(2, 201, "CH_INSTR_SEL", uParam0, 1, 363);
+						func_879(2, 201, "CH_INSTR_SEL" /* GXT: Select */, uParam0, 1, 363);
 					}
 				}
-				func_879(2, 202, "CH_INSTR_QUIT", uParam0, 1, 363);
+				func_879(2, 202, "CH_INSTR_QUIT" /* GXT: Quit */, uParam0, 1, 363);
 				if (uParam0->f_4356 == PLAYER::PLAYER_ID())
 				{
 					if (func_1131(uParam0, iVar2) && func_1126(uParam0, iVar2))
 					{
 						if (!func_1127(uParam0, iVar2))
 						{
-							func_879(2, 203, "CH_INSTR_PURCH", uParam0, 1, 363);
+							func_879(2, 203, "CH_INSTR_PURCH" /* GXT: Pay for Equipment */, uParam0, 1, 363);
 						}
 					}
 				}
@@ -40098,47 +40098,47 @@ void func_1163(var uParam0)//Position - 0x2CD75
 				{
 					if (!MISC::IS_STRING_NULL_OR_EMPTY(func_182(uParam0, 0, iVar2)))
 					{
-						func_879(2, 204, "CH_INSTR_INFO", uParam0, 1, 363);
+						func_879(2, 204, "CH_INSTR_INFO" /* GXT: Info */, uParam0, 1, 363);
 					}
 				}
 				else if (func_1150(iVar2))
 				{
 					if (!MISC::IS_STRING_NULL_OR_EMPTY(func_133(uParam0, iVar2)))
 					{
-						func_879(2, 204, "CH_INSTR_INFO", uParam0, 1, 363);
+						func_879(2, 204, "CH_INSTR_INFO" /* GXT: Info */, uParam0, 1, 363);
 					}
 				}
 				else if (func_1131(uParam0, iVar2))
 				{
 					if (!MISC::IS_STRING_NULL_OR_EMPTY(func_129(uParam0, iVar2)))
 					{
-						func_879(2, 204, "CH_INSTR_INFO", uParam0, 1, 363);
+						func_879(2, 204, "CH_INSTR_INFO" /* GXT: Info */, uParam0, 1, 363);
 					}
 				}
 				else if (iVar2 == 8)
 				{
-					func_879(2, 204, "CH_INSTR_INFO", uParam0, 1, 363);
+					func_879(2, 204, "CH_INSTR_INFO" /* GXT: Info */, uParam0, 1, 363);
 				}
 				if (func_493(uParam0, 1))
 				{
-					func_879(2, 206, "CH_INSTR_PREP", uParam0, 1, 363);
+					func_879(2, 206, "CH_INSTR_PREP" /* GXT: Prep Board */, uParam0, 1, 363);
 				}
 				if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 				{
-					func_879(2, 39, "CH_INSTR_ZOOM", uParam0, 1, 363);
+					func_879(2, 39, "CH_INSTR_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 				}
 				else
 				{
-					func_878(2, 15, "CH_INSTR_ZOOM", uParam0);
+					func_878(2, 15, "CH_INSTR_ZOOM" /* GXT: Zoom */, uParam0);
 				}
-				func_878(2, 1, "HEIST_IB_LOOK", uParam0);
-				func_878(2, 0, "HEIST_IB_NAV", uParam0);
+				func_878(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, uParam0);
+				func_878(2, 0, "HEIST_IB_NAV" /* GXT: Navigate */, uParam0);
 				break;
 			
 			case 1:
-				func_879(2, 202, "CH_INSTR_BACK", uParam0, 1, 363);
-				func_878(2, 1, "HEIST_IB_LOOK", uParam0);
-				func_878(2, 8, "CH_INSTR_CHACP", uParam0);
+				func_879(2, 202, "CH_INSTR_BACK" /* GXT: Back */, uParam0, 1, 363);
+				func_878(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, uParam0);
+				func_878(2, 8, "CH_INSTR_CHACP" /* GXT: Change Access Point */, uParam0);
 				break;
 			}
 	}
@@ -40890,25 +40890,25 @@ char* func_1200(var uParam0, int iParam1)//Position - 0x2DCCE
 	switch (iParam1)
 	{
 		case 0:
-			return "CH_OPT_SETUP_0";
+			return "CH_OPT_SETUP_0" /* GXT: Scope All P.O.I. */;
 		
 		case 1:
-			return "CH_OPT_SETUP_1";
+			return "CH_OPT_SETUP_1" /* GXT: Scope All Access Points */;
 		
 		case 2:
-			return "CH_OPT_SETUP_2";
+			return "CH_OPT_SETUP_2" /* GXT: Purchase Casino Model */;
 		
 		case 3:
-			return "CH_OPT_SETUP_3";
+			return "CH_OPT_SETUP_3" /* GXT: Purchase Security Keypad */;
 		
 		case 4:
 			if (func_1132(uParam0->f_4356))
 			{
-				return "CH_OPT_SETUP_4";
+				return "CH_OPT_SETUP_4" /* GXT: Purchase Vault Door */;
 			}
 			else
 			{
-				return "CH_LIST_BLANK";
+				return "CH_LIST_BLANK" /* GXT: ??? */;
 			}
 			break;
 	}
@@ -40943,13 +40943,13 @@ char* func_1203(int iParam0)//Position - 0x2DD8C
 	switch (iParam0)
 	{
 		case 0:
-			return "CH_TODO_SETUP_0";
+			return "CH_TODO_SETUP_0" /* GXT: Scope Out Casino */;
 		
 		case 1:
-			return "CH_TODO_SETUP_1";
+			return "CH_TODO_SETUP_1" /* GXT: Scope Out Vault Contents */;
 		
 		case 2:
-			return "CH_TODO_SETUP_2";
+			return "CH_TODO_SETUP_2" /* GXT: Select Approach */;
 		
 		default:
 	}

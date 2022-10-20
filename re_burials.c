@@ -1260,7 +1260,7 @@ void func_17(int iParam0, int iParam1)//Position - 0x1333
 		func_38(iParam0, iParam1);
 		if (!func_37(51))
 		{
-			func_27("RE_REWARD", 1, 0, 4000, 10000, func_30(), 0, 138, 0);
+			func_27("RE_REWARD" /* GXT: Some Random Events will reward the player with stat boosts or money. */, 1, 0, 4000, 10000, func_30(), 0, 138, 0);
 			func_26(51);
 		}
 		if (func_25(iParam0))
@@ -4344,7 +4344,7 @@ void func_94()//Position - 0x4F4A
 	{
 		if (!Global_32199)
 		{
-			func_95("CULT_BLIP_HELP", -1);
+			func_95("CULT_BLIP_HELP" /* GXT: Trevor can sometimes deliver Random Event passengers to the Altruist Cult, located at ~BLIP_ALTRUIST~ */, -1);
 			Global_32199 = 1;
 		}
 	}
@@ -5192,7 +5192,7 @@ int func_119(int iParam0)//Position - 0x6108
 		{
 			func_120(0);
 		}
-		HUD::SET_MISSION_NAME(true, "RE_TITLE");
+		HUD::SET_MISSION_NAME(true, "RE_TITLE" /* GXT: Random Event */);
 		if (iParam0 && func_25(Global_113375))
 		{
 			HUD::FLASH_MINIMAP_DISPLAY();
@@ -5252,15 +5252,15 @@ char* func_121(int iParam0)//Position - 0x6236
 	switch (iParam0)
 	{
 		case 0:
-			sVar0 = "AM_H_REFS";
+			sVar0 = "AM_H_REFS" /* GXT: Various events unfold across San Andreas daily. These events will become blipped on the Radar when nearby. */;
 			break;
 		
 		case 1:
-			sVar0 = "RE_FLASHBLIP";
+			sVar0 = "RE_FLASHBLIP" /* GXT: Flashing blue and red blips indicate situations around San Andreas that you can choose to help with. */;
 			break;
 		
 		case 2:
-			sVar0 = "RE_HANDOVER";
+			sVar0 = "RE_HANDOVER" /* GXT: If you retrieve a stolen item, you can choose to keep it or return it for a reward. */;
 			break;
 	}
 	return sVar0;
@@ -6698,7 +6698,7 @@ void func_155(int iParam0, var uParam1)//Position - 0x80BD
 			break;
 		
 		case 5:
-			func_156(uParam1, "Barry3A", func_158(iParam0), 1, 1, 0, 1199.27f, -1255.63f, 34.23f, 381, "BARSTASH", 84, 0, "", 166, 0, 7, 4, 2, 0, 2359, func_157(iParam0), 0, 1);
+			func_156(uParam1, "Barry3A", func_158(iParam0), 1, 1, 0, 1199.27f, -1255.63f, 34.23f, 381, "BARSTASH" /* GXT: Areas where you can find vehicles with a hidden stash have been marked on the map. Collect these vehicles for Barry. */, 84, 0, "", 166, 0, 7, 4, 2, 0, 2359, func_157(iParam0), 0, 1);
 			break;
 		
 		case 6:
@@ -6710,7 +6710,7 @@ void func_155(int iParam0, var uParam1)//Position - 0x80BD
 			break;
 		
 		case 8:
-			func_156(uParam1, "Dreyfuss1", func_158(iParam0), 0, 2, 4, -1458.97f, 485.99f, 115.38f, 66, "LETTERS_HINT", 106, 0, "", 0, 0, -1, 4, 2, 0, 2359, func_157(iParam0), 0, 0);
+			func_156(uParam1, "Dreyfuss1", func_158(iParam0), 0, 2, 4, -1458.97f, 485.99f, 115.38f, 66, "LETTERS_HINT" /* GXT: The killer's identity and location have been revealed. */, 106, 0, "", 0, 0, -1, 4, 2, 0, 2359, func_157(iParam0), 0, 0);
 			break;
 		
 		case 9:
@@ -6830,7 +6830,7 @@ void func_155(int iParam0, var uParam1)//Position - 0x80BD
 			break;
 		
 		case 38:
-			func_156(uParam1, "Nigel1A", func_158(iParam0), 0, 12, 1, -558.65f, 284.49f, 90.86f, 149, "NIGITEMS", 100, 0, "", 0, 0, 42, 4, 4, 0, 2359, func_157(iParam0), 1, 1);
+			func_156(uParam1, "Nigel1A", func_158(iParam0), 0, 12, 1, -558.65f, 284.49f, 90.86f, 149, "NIGITEMS" /* GXT: Areas where you can find celebrity items have been marked on the map. Steal these items for Nigel and Mrs. Thornhill. */, 100, 0, "", 0, 0, 42, 4, 4, 0, 2359, func_157(iParam0), 1, 1);
 			break;
 		
 		case 39:
@@ -6874,7 +6874,7 @@ void func_155(int iParam0, var uParam1)//Position - 0x80BD
 			break;
 		
 		case 49:
-			func_156(uParam1, "Paparazzo3A", func_158(iParam0), 0, 14, 2, 305.52f, 157.19f, 102.94f, 389, "PAPPHOTO", 102, 0, "", 0, 0, 51, 4, 2, 0, 2359, func_157(iParam0), 0, 1);
+			func_156(uParam1, "Paparazzo3A", func_158(iParam0), 0, 14, 2, 305.52f, 157.19f, 102.94f, 389, "PAPPHOTO" /* GXT: Areas where you can find celebrity photo opportunities have been marked on the map. Track down and photograph these celebrities for Beverly. */, 102, 0, "", 0, 0, 51, 4, 2, 0, 2359, func_157(iParam0), 0, 1);
 			break;
 		
 		case 50:
@@ -6910,7 +6910,7 @@ void func_155(int iParam0, var uParam1)//Position - 0x80BD
 			break;
 		
 		case 58:
-			func_156(uParam1, "Tonya1", func_158(iParam0), 0, 17, 4, -14.39f, -1472.69f, 29.58f, 66, "AM_H_RCFS", -1, 0, "ambient_TonyaCall", 24, 1, 59, 4, 2, 0, 2359, func_157(iParam0), 0, 1);
+			func_156(uParam1, "Tonya1", func_158(iParam0), 0, 17, 4, -14.39f, -1472.69f, 29.58f, 66, "AM_H_RCFS" /* GXT: Strangers and Freaks can be found throughout San Andreas at ~HUD_COLOUR_FRANKLIN~~BLIP_RANDOM_CHARACTER~~s~ */, -1, 0, "ambient_TonyaCall", 24, 1, 59, 4, 2, 0, 2359, func_157(iParam0), 0, 1);
 			break;
 		
 		case 59:

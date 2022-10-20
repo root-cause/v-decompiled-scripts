@@ -1295,7 +1295,7 @@ void func_31(int iParam0)//Position - 0x14D4
 			{
 				if (!func_172(Global_113386.f_19983, 32))
 				{
-					func_169("MG_TRAF_AVAIL", 0, 0, -1, 10000, 7, 0, 0, 0);
+					func_169("MG_TRAF_AVAIL" /* GXT: Trevor can now do air and ground trafficking missions, available at ~BLIP_ARMS_DEALING_AIR~ and ~BLIP_ARMS_DEALING~ */, 0, 0, -1, 10000, 7, 0, 0, 0);
 					func_167(&(Global_113386.f_19983), 32);
 				}
 			}

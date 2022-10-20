@@ -208,7 +208,7 @@ void func_6()//Position - 0x2D4
 	{
 		if (Global_20254)
 		{
-			func_7(Global_20247, "SET_SOFT_KEYS", 2f, 1f, 13f, -1f, -1f, "CELL_201", 0, 0, 0, 0);
+			func_7(Global_20247, "SET_SOFT_KEYS", 2f, 1f, 13f, -1f, -1f, "CELL_201" /* GXT: CALL */, 0, 0, 0, 0);
 		}
 		else
 		{
@@ -280,8 +280,8 @@ void func_8()//Position - 0x3D7
 				func_9(Global_20247, "DISPLAY_VIEW", 23f, SYSTEM::TO_FLOAT(0), -1082130432, -1082130432, -1082130432);
 				if (Global_20254)
 				{
-					func_7(Global_20247, "SET_SOFT_KEYS", 2f, 0f, 13f, -1f, -1f, "CELL_201", 0, 0, 0, 0);
-					func_7(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 14f, -1f, -1f, "CELL_213", 0, 0, 0, 0);
+					func_7(Global_20247, "SET_SOFT_KEYS", 2f, 0f, 13f, -1f, -1f, "CELL_201" /* GXT: CALL */, 0, 0, 0, 0);
+					func_7(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 14f, -1f, -1f, "CELL_213" /* GXT: NO */, 0, 0, 0, 0);
 				}
 				else
 				{
@@ -427,13 +427,13 @@ void func_14()//Position - 0x695
 	{
 		if (iLocal_32)
 		{
-			func_7(Global_20247, "SET_SOFT_KEYS", 2f, 1f, 13f, -1f, -1f, "CELL_201", 0, 0, 0, 0);
+			func_7(Global_20247, "SET_SOFT_KEYS", 2f, 1f, 13f, -1f, -1f, "CELL_201" /* GXT: CALL */, 0, 0, 0, 0);
 		}
 		else
 		{
-			func_7(Global_20247, "SET_SOFT_KEYS", 2f, 0f, 13f, -1f, -1f, "CELL_201", 0, 0, 0, 0);
+			func_7(Global_20247, "SET_SOFT_KEYS", 2f, 0f, 13f, -1f, -1f, "CELL_201" /* GXT: CALL */, 0, 0, 0, 0);
 		}
-		func_7(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 14f, -1f, -1f, "CELL_213", 0, 0, 0, 0);
+		func_7(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 14f, -1f, -1f, "CELL_213" /* GXT: NO */, 0, 0, 0, 0);
 	}
 	else
 	{
@@ -463,12 +463,12 @@ void func_15()//Position - 0x7E5
 	StringCopy(&(Local_20.f_25), AUDIO::GET_PLAYER_RADIO_STATION_NAME(), 24);
 	if (!HUD::DOES_TEXT_LABEL_EXIST(&Local_20))
 	{
-		StringCopy(&Local_20, "CELL_195", 64);
+		StringCopy(&Local_20, "CELL_195" /* GXT: Unknown */, 64);
 	}
 	if (!HUD::DOES_TEXT_LABEL_EXIST(&(Local_20.f_16)))
 	{
-		StringCopy(&(Local_20.f_16), "CELL_195", 32);
-		StringCopy(&(Local_20.f_25), "CELL_195", 24);
+		StringCopy(&(Local_20.f_16), "CELL_195" /* GXT: Unknown */, 32);
+		StringCopy(&(Local_20.f_25), "CELL_195" /* GXT: Unknown */, 24);
 	}
 }
 

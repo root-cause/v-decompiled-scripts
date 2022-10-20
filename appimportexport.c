@@ -848,7 +848,7 @@ void __EntryFunction__()//Position - 0x0
 		}
 		else if (!func_404(PLAYER::PLAYER_ID()) && !func_374())
 		{
-			if (func_373("IEAPPINPUTTRIG") || func_373("IEAPPINPUTTRPC"))
+			if (func_373("IEAPPINPUTTRIG" /* GXT: Press ~INPUT_FRONTEND_ACCEPT~ to access this laptop computer. ~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */) || func_373("IEAPPINPUTTRPC" /* GXT: Press ~INPUT_FRONTEND_ACCEPT~ to access this laptop computer. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */))
 			{
 				HUD::CLEAR_HELP(true);
 			}
@@ -12721,19 +12721,19 @@ void func_263()//Position - 0xB310
 		{
 			if (!func_320(8))
 			{
-				func_317("AH_BUYER_T", func_319(), "OR_OVRLY_OK", "", -1, -1);
+				func_317("AH_BUYER_T" /* GXT: EXPORT VEHICLES */, func_319(), "OR_OVRLY_OK" /* GXT: Ok */, "", -1, -1);
 				bVar1 = false;
 			}
 			else if (func_316(PLAYER::PLAYER_ID()))
 			{
-				func_317("AH_VEH_SEL_T", "AHA_ARCADE_BLCK", "OR_OVRLY_OK", "", -1, -1);
+				func_317("AH_VEH_SEL_T" /* GXT: SELECT VEHICLES */, "AHA_ARCADE_BLCK" /* GXT: You need to be in your warehouse to sell your vehicles. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, -1);
 				bVar1 = false;
 			}
 			else if (!func_315(iVar0, 0))
 			{
 				if (func_76(0) == 4)
 				{
-					func_317("AH_BUYER_T", "AH_MAX_PLAYERD", "OR_OVRLY_OK", "", -1, -1);
+					func_317("AH_BUYER_T" /* GXT: EXPORT VEHICLES */, "AH_MAX_PLAYERD" /* GXT: You can only sell four vehicles in one transaction. Remove one of the selected vehicles to include this one in the deal. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, -1);
 					bVar1 = false;
 				}
 				else if (func_76(0) < func_82())
@@ -12742,7 +12742,7 @@ void func_263()//Position - 0xB310
 				}
 				else
 				{
-					func_317("AH_BUYER_T", "AH_NE_PLAYERD", "OR_OVRLY_OK", "", -1, -1);
+					func_317("AH_BUYER_T" /* GXT: EXPORT VEHICLES */, "AH_NE_PLAYERD" /* GXT: You need to have more Associates present in your warehouse in order to sell any more vehicles. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, -1);
 					bVar1 = false;
 				}
 			}
@@ -12761,22 +12761,22 @@ void func_263()//Position - 0xB310
 			iVar3 = iVar0;
 			if (!func_320(8))
 			{
-				func_317("AH_BUYER_T", func_319(), "OR_OVRLY_OK", "", -1, -1);
+				func_317("AH_BUYER_T" /* GXT: EXPORT VEHICLES */, func_319(), "OR_OVRLY_OK" /* GXT: Ok */, "", -1, -1);
 				bVar1 = false;
 			}
 			else if (func_316(PLAYER::PLAYER_ID()))
 			{
-				func_317("AH_VEH_SEL_T", "AHA_ARCADE_BLCK", "OR_OVRLY_OK", "", -1, -1);
+				func_317("AH_VEH_SEL_T" /* GXT: SELECT VEHICLES */, "AHA_ARCADE_BLCK" /* GXT: You need to be in your warehouse to sell your vehicles. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, -1);
 				bVar1 = false;
 			}
 			else if (!func_311(iVar3))
 			{
-				func_317("AH_BUYER_T", func_310(iVar3), "OR_OVRLY_OK", "", -1, -1);
+				func_317("AH_BUYER_T" /* GXT: EXPORT VEHICLES */, func_310(iVar3), "OR_OVRLY_OK" /* GXT: Ok */, "", -1, -1);
 				bVar1 = false;
 			}
 			else if (func_82() < func_309(iVar3))
 			{
-				func_317("AH_BUYER_T", "AH_COL_PLAYERD", "OR_OVRLY_OK", "", -1, -1);
+				func_317("AH_BUYER_T" /* GXT: EXPORT VEHICLES */, "AH_COL_PLAYERD" /* GXT: You need to have more Associates present in your warehouse in order to sell this vehicle collection. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, -1);
 				bVar1 = false;
 			}
 			else if (iLocal_558 == iVar3)
@@ -12865,7 +12865,7 @@ void func_264(int iParam0)//Position - 0xB629
 		{
 			if ((*iParam0 == 1007 || *iParam0 == 1008) || *iParam0 == 1009)
 			{
-				func_317("AH_BUYER_T", "AH_SAVING_DOWN", "WHOUSE_CONF", "", -1, -1);
+				func_317("AH_BUYER_T" /* GXT: EXPORT VEHICLES */, "AH_SAVING_DOWN" /* GXT: No buyers are currently available. Please try again later. */, "WHOUSE_CONF" /* GXT: Confirm */, "", -1, -1);
 				iLocal_549 = 0;
 				*iParam0 = 2000000;
 				return;
@@ -12901,7 +12901,7 @@ void func_264(int iParam0)//Position - 0xB629
 							iVar2++;
 						}
 					}
-					func_317("AH_BUYER_T", &Var1, "OR_OVRLY_OK", "", -1, -1);
+					func_317("AH_BUYER_T" /* GXT: EXPORT VEHICLES */, &Var1, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, -1);
 				}
 			}
 			else
@@ -12917,29 +12917,29 @@ void func_264(int iParam0)//Position - 0xB629
 		{
 			if (!func_320(8))
 			{
-				func_317("AH_BUYER_T", func_319(), "OR_OVRLY_OK", "", -1, -1);
+				func_317("AH_BUYER_T" /* GXT: EXPORT VEHICLES */, func_319(), "OR_OVRLY_OK" /* GXT: Ok */, "", -1, -1);
 			}
 			else if (func_316(PLAYER::PLAYER_ID()))
 			{
-				func_317("AH_VEH_SEL_T", "AHA_ARCADE_BLCK", "OR_OVRLY_OK", "", -1, -1);
+				func_317("AH_VEH_SEL_T" /* GXT: SELECT VEHICLES */, "AHA_ARCADE_BLCK" /* GXT: You need to be in your warehouse to sell your vehicles. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, -1);
 			}
 			else if ((iLocal_554[0] == 0 && iLocal_551 == 0) || (iLocal_555[0] == 0 && iLocal_551 == 1))
 			{
-				func_317("AH_VEH_SEL_T", "AH_VEH_SEL_D", "OR_OVRLY_OK", "", -1, -1);
+				func_317("AH_VEH_SEL_T" /* GXT: SELECT VEHICLES */, "AH_VEH_SEL_D" /* GXT: You need to select some vehicles to export first. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, -1);
 			}
 			else if (!func_64(PLAYER::PLAYER_ID()))
 			{
-				func_317("AH_BUYER_T", "AH_NBOSS", "OR_OVRLY_OK", "", -1, -1);
+				func_317("AH_BUYER_T" /* GXT: EXPORT VEHICLES */, "AH_NBOSS" /* GXT: You need to be a CEO to sell your vehicles. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, -1);
 			}
 			else if (func_307() && iLocal_551 == 1)
 			{
 				if (func_80())
 				{
-					func_317("AH_BUYER_T", "AH_SAVING_DOWN", "WHOUSE_CONF", "", -1, -1);
+					func_317("AH_BUYER_T" /* GXT: EXPORT VEHICLES */, "AH_SAVING_DOWN" /* GXT: No buyers are currently available. Please try again later. */, "WHOUSE_CONF" /* GXT: Confirm */, "", -1, -1);
 				}
 				else
 				{
-					func_317("AH_BUYER_T", "AH_BUYER_D3", "WHOUSE_CONF", "WHOUSE_CANC", -1, -1);
+					func_317("AH_BUYER_T" /* GXT: EXPORT VEHICLES */, "AH_BUYER_D3" /* GXT: Are you sure you'd like to sell this collection of vehicles? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, -1, -1);
 					iLocal_557 = 2;
 					iLocal_549 = 1;
 				}
@@ -12953,7 +12953,7 @@ void func_264(int iParam0)//Position - 0xB629
 		{
 			if (func_283(0))
 			{
-				func_317("AH_BUYER_T", func_282(1, 1, -1, 1), "WHOUSE_CONF", "", -1, -1);
+				func_317("AH_BUYER_T" /* GXT: EXPORT VEHICLES */, func_282(1, 1, -1, 1), "WHOUSE_CONF" /* GXT: Confirm */, "", -1, -1);
 				iLocal_549 = 0;
 			}
 			else if (func_281(0))
@@ -12964,13 +12964,13 @@ void func_264(int iParam0)//Position - 0xB629
 				{
 					iVar4 = -1;
 				}
-				func_317("AH_BUYER_T", func_282(1, 0, iVar4, 0), "WHOUSE_CONF", "WHOUSE_CANC", iVar4, iVar5);
+				func_317("AH_BUYER_T" /* GXT: EXPORT VEHICLES */, func_282(1, 0, iVar4, 0), "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, iVar4, iVar5);
 				iLocal_557 = 0;
 				iLocal_549 = 1;
 			}
 			else
 			{
-				func_317("AH_BUYER_T", func_282(1, 1, -1, 0), "WHOUSE_CONF", "", -1, -1);
+				func_317("AH_BUYER_T" /* GXT: EXPORT VEHICLES */, func_282(1, 1, -1, 0), "WHOUSE_CONF" /* GXT: Confirm */, "", -1, -1);
 				iLocal_549 = 0;
 			}
 		}
@@ -12978,20 +12978,20 @@ void func_264(int iParam0)//Position - 0xB629
 		{
 			if (func_283(1))
 			{
-				func_317("AH_BUYER_T", func_282(1, 1, -1, 1), "WHOUSE_CONF", "", -1, -1);
+				func_317("AH_BUYER_T" /* GXT: EXPORT VEHICLES */, func_282(1, 1, -1, 1), "WHOUSE_CONF" /* GXT: Confirm */, "", -1, -1);
 				iLocal_549 = 0;
 			}
 			else if (func_281(1))
 			{
 				iVar6 = func_265(11, 1);
 				iVar7 = func_265(11, 0);
-				func_317("AH_BUYER_T", func_282(0, 0, -1, 0), "WHOUSE_CONF", "WHOUSE_CANC", iVar6, iVar7);
+				func_317("AH_BUYER_T" /* GXT: EXPORT VEHICLES */, func_282(0, 0, -1, 0), "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, iVar6, iVar7);
 				iLocal_557 = 1;
 				iLocal_549 = 1;
 			}
 			else
 			{
-				func_317("AH_BUYER_T", func_282(1, 1, -1, 0), "WHOUSE_CONF", "", -1, -1);
+				func_317("AH_BUYER_T" /* GXT: EXPORT VEHICLES */, func_282(1, 1, -1, 0), "WHOUSE_CONF" /* GXT: Confirm */, "", -1, -1);
 				iLocal_549 = 0;
 			}
 		}
@@ -12999,20 +12999,20 @@ void func_264(int iParam0)//Position - 0xB629
 		{
 			if (func_283(2))
 			{
-				func_317("AH_BUYER_T", func_282(1, 1, -1, 1), "WHOUSE_CONF", "", -1, -1);
+				func_317("AH_BUYER_T" /* GXT: EXPORT VEHICLES */, func_282(1, 1, -1, 1), "WHOUSE_CONF" /* GXT: Confirm */, "", -1, -1);
 				iLocal_549 = 0;
 			}
 			else if (func_281(2))
 			{
 				iVar8 = func_265(19, 1);
 				iVar9 = func_265(19, 0);
-				func_317("AH_BUYER_T", func_282(0, 0, -1, 0), "WHOUSE_CONF", "WHOUSE_CANC", iVar8, iVar9);
+				func_317("AH_BUYER_T" /* GXT: EXPORT VEHICLES */, func_282(0, 0, -1, 0), "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, iVar8, iVar9);
 				iLocal_557 = 2;
 				iLocal_549 = 1;
 			}
 			else
 			{
-				func_317("AH_BUYER_T", func_282(1, 1, -1, 0), "WHOUSE_CONF", "", -1, -1);
+				func_317("AH_BUYER_T" /* GXT: EXPORT VEHICLES */, func_282(1, 1, -1, 0), "WHOUSE_CONF" /* GXT: Confirm */, "", -1, -1);
 				iLocal_549 = 0;
 			}
 		}
@@ -21962,17 +21962,17 @@ char* func_282(bool bParam0, bool bParam1, int iParam2, bool bParam3)//Position 
 {
 	if (bParam3)
 	{
-		return "AH_BUYER_D6";
+		return "AH_BUYER_D6" /* GXT: This buyer is not currently available to purchase any vehicles. */;
 	}
 	else if (bParam1)
 	{
 		if (func_76(0) == 1)
 		{
-			return "AH_BUYER_NM2";
+			return "AH_BUYER_NM2" /* GXT: You can't afford to modify this vehicle. Try selling it to a private buyer. */;
 		}
 		else
 		{
-			return "AH_BUYER_NM1";
+			return "AH_BUYER_NM1" /* GXT: You can't afford to modify these vehicles. Try selling them to a private buyer. */;
 		}
 	}
 	else if (bParam0)
@@ -21981,27 +21981,27 @@ char* func_282(bool bParam0, bool bParam1, int iParam2, bool bParam3)//Position 
 		{
 			if (iParam2 > 0)
 			{
-				return "AH_BUYER_D4";
+				return "AH_BUYER_D4" /* GXT: Are you sure you'd like to pay $~1~ to modify this vehicle and then sell it? You will be paid a commission of up to $~1~ upon delivery. */;
 			}
 			else
 			{
-				return "AH_BUYER_D2";
+				return "AH_BUYER_D2" /* GXT: Are you sure you'd like to sell this vehicle? You will be paid a commission of up to $~1~ upon delivery. */;
 			}
 		}
 		else if (iParam2 > 0)
 		{
-			return "AH_BUYER_D5";
+			return "AH_BUYER_D5" /* GXT: Are you sure you'd like to pay $~1~ to modify these vehicles and then sell them? You will be paid a commission of up to $~1~ upon delivery. */;
 		}
 	}
 	else if (func_76(0) == 1)
 	{
-		return "AH_BUYER_D4";
+		return "AH_BUYER_D4" /* GXT: Are you sure you'd like to pay $~1~ to modify this vehicle and then sell it? You will be paid a commission of up to $~1~ upon delivery. */;
 	}
 	else
 	{
-		return "AH_BUYER_D5";
+		return "AH_BUYER_D5" /* GXT: Are you sure you'd like to pay $~1~ to modify these vehicles and then sell them? You will be paid a commission of up to $~1~ upon delivery. */;
 	}
-	return "AH_BUYER_D1";
+	return "AH_BUYER_D1" /* GXT: Are you sure you'd like to sell these vehicles? You will be paid a commission of up to $~1~ upon delivery. */;
 }
 
 int func_283(int iParam0)//Position - 0x14B0A
@@ -22098,23 +22098,23 @@ struct<4> func_286(bool bParam0)//Position - 0x14CB0
 	switch (iLocal_550)
 	{
 		case 12:
-			StringCopy(&Var0, "AH_SES", 16);
+			StringCopy(&Var0, "AH_SES" /* GXT: You need to be in a public sessions to sell your vehicles. */, 16);
 			return Var0;
 		
 		case 13:
-			StringCopy(&Var0, "AH_CRIT", 16);
+			StringCopy(&Var0, "AH_CRIT" /* GXT: You can't sell your vehicles whilst you are taking part in another mission. */, 16);
 			return Var0;
 		
 		case 14:
-			StringCopy(&Var0, "AH_NBOSS", 16);
+			StringCopy(&Var0, "AH_NBOSS" /* GXT: You need to be a CEO to sell your vehicles. */, 16);
 			return Var0;
 		
 		case 15:
-			StringCopy(&Var0, "AH_NBOSS", 16);
+			StringCopy(&Var0, "AH_NBOSS" /* GXT: You need to be a CEO to sell your vehicles. */, 16);
 			return Var0;
 		
 		case 18:
-			StringCopy(&Var0, "AH_SAVING_DOWN", 16);
+			StringCopy(&Var0, "AH_SAVING_DOWN" /* GXT: No buyers are currently available. Please try again later. */, 16);
 			return Var0;
 		
 		case 17:
@@ -22125,40 +22125,40 @@ struct<4> func_286(bool bParam0)//Position - 0x14CB0
 		case 20:
 			if (func_85(PLAYER::PLAYER_ID()))
 			{
-				StringCopy(&Var0, "GENERAL_MLF_G1", 16);
+				StringCopy(&Var0, "GENERAL_MLF_G1" /* GXT: Can't launch this mission whilst one of your Club Members is currently at one with the animals. */, 16);
 			}
 			else if (func_287(PLAYER::PLAYER_ID()))
 			{
-				StringCopy(&Var0, "GENERAL_MLF_G2", 16);
+				StringCopy(&Var0, "GENERAL_MLF_G2" /* GXT: Can't launch this mission whilst one of your Associates is currently at one with the animals. */, 16);
 			}
 			else
 			{
-				StringCopy(&Var0, "GENERAL_MLF_G3", 16);
+				StringCopy(&Var0, "GENERAL_MLF_G3" /* GXT: Can't launch this mission whilst one of your Bodyguards is currently at one with the animals. */, 16);
 			}
 			return Var0;
 		
 		case 19:
 			if (func_85(PLAYER::PLAYER_ID()))
 			{
-				StringCopy(&Var0, "GENERAL_MLF_G4", 16);
+				StringCopy(&Var0, "GENERAL_MLF_G4" /* GXT: Can't launch this mission whilst one of your Club Members is playing a casino game. */, 16);
 			}
 			else if (func_287(PLAYER::PLAYER_ID()))
 			{
-				StringCopy(&Var0, "GENERAL_MLF_G5", 16);
+				StringCopy(&Var0, "GENERAL_MLF_G5" /* GXT: Can't launch this mission whilst one of your Associates is playing a casino game. */, 16);
 			}
 			else
 			{
-				StringCopy(&Var0, "GENERAL_MLF_G6", 16);
+				StringCopy(&Var0, "GENERAL_MLF_G6" /* GXT: Can't launch this mission whilst one of your Bodyguards is playing a casino game. */, 16);
 			}
 			return Var0;
 			break;
 	}
 	if (NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 	{
-		StringCopy(&Var0, "AH_SES", 16);
+		StringCopy(&Var0, "AH_SES" /* GXT: You need to be in a public sessions to sell your vehicles. */, 16);
 		return Var0;
 	}
-	StringCopy(&Var0, "AH_SELL_NA", 16);
+	StringCopy(&Var0, "AH_SELL_NA" /* GXT: Unable to set up a deal with the buyer. */, 16);
 	return Var0;
 }
 
@@ -22685,17 +22685,17 @@ char* func_310(int iParam0)//Position - 0x157AF
 	switch (iVar0)
 	{
 		case 2:
-			return "AH_COL_2VEH";
+			return "AH_COL_2VEH" /* GXT: Collect both vehicles to sell this collection. */;
 		
 		case 3:
-			return "AH_COL_3VEH";
+			return "AH_COL_3VEH" /* GXT: Collect all three vehicles to sell this collection. */;
 		
 		case 4:
-			return "AH_COL_4VEH";
+			return "AH_COL_4VEH" /* GXT: Collect all four vehicles to sell this collection. */;
 		
 		default:
 	}
-	return "AH_COL_2VEH";
+	return "AH_COL_2VEH" /* GXT: Collect both vehicles to sell this collection. */;
 }
 
 int func_311(int iParam0)//Position - 0x157F1
@@ -22861,9 +22861,9 @@ char* func_319()//Position - 0x15A47
 {
 	if (Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_267.f_142.f_1 > 1)
 	{
-		return "AH_COOLDOWN2";
+		return "AH_COOLDOWN2" /* GXT: Please wait until a buyer can be found for your vehicles. */;
 	}
-	return "AH_COOLDOWN";
+	return "AH_COOLDOWN" /* GXT: Please wait until a buyer can be found for your vehicle. */;
 }
 
 int func_320(int iParam0)//Position - 0x15A70
@@ -23111,49 +23111,49 @@ void func_327()//Position - 0x16120
 	{
 		if (func_332(16))
 		{
-			sVar0 = "IE_SEC_TUT7";
+			sVar0 = "IE_SEC_TUT7" /* GXT: Your current stock of Vehicle Cargo is listed here. Hire Associates as additional drivers to export up to four vehicles at once. */;
 			iLocal_573 = 9000;
 			MISC::SET_BIT(&Global_1946101, 16);
 			func_329(&iLocal_571, &uLocal_572, 18);
 		}
 		else if (func_332(17))
 		{
-			sVar0 = "IE_SEC_TUT8";
+			sVar0 = "IE_SEC_TUT8" /* GXT: Each Buyer has a different set of requirements. Buyers that are offering higher commissions will require you to pay an upfront cost to modify your Vehicle Cargo to fit these requirements. */;
 			iLocal_573 = 9500;
 			MISC::SET_BIT(&Global_1946101, 17);
 			func_329(&iLocal_571, &uLocal_572, 21);
 		}
 		else if (func_332(18))
 		{
-			sVar0 = "IE_SEC_TUT13";
+			sVar0 = "IE_SEC_TUT13" /* GXT: Damaging Vehicle Cargo during delivery will lower the market value and affect your agreed commission. As the market value drops the commission you will be paid also drops in relation to the condition of your vehicles. */;
 			iLocal_573 = 10000;
 			MISC::SET_BIT(&Global_1946101, 18);
 			func_329(&iLocal_571, &uLocal_572, 36);
 		}
 		else if (func_332(19))
 		{
-			sVar0 = "IE_SEC_TUT9";
+			sVar0 = "IE_SEC_TUT9" /* GXT: Export mission difficulty scales by Buyer type. The higher the agreed offer is the faster your Vehicle Cargo will be visible to other players in session during delivery. */;
 			iLocal_573 = 10000;
 			MISC::SET_BIT(&Global_1946101, 19);
 			func_329(&iLocal_571, &uLocal_572, 24);
 		}
 		else if (func_332(20))
 		{
-			sVar0 = "IE_SEC_TUT10";
+			sVar0 = "IE_SEC_TUT10" /* GXT: Stockpile Vehicle Cargo to complete Collections. Buyers will pay bonuses for a unique collection of vehicles upon delivery. */;
 			iLocal_573 = 8500;
 			MISC::SET_BIT(&Global_1946101, 20);
 			func_329(&iLocal_571, &uLocal_572, 27);
 		}
 		else if (func_332(21))
 		{
-			sVar0 = "IE_SEC_TUT11";
+			sVar0 = "IE_SEC_TUT11" /* GXT: You have completed a Collection. Sell this to an interested Buyer to earn additional bonuses for all Members of your Organization. */;
 			iLocal_573 = 8500;
 			MISC::SET_BIT(&Global_1946101, 21);
 			func_329(&iLocal_571, &uLocal_572, 30);
 		}
 		else if (func_332(22))
 		{
-			sVar0 = "IE_SEC_TUT12";
+			sVar0 = "IE_SEC_TUT12" /* GXT: There is a short waiting period before you can export additional vehicles from your warehouse. */;
 			iLocal_573 = 8000;
 			MISC::SET_BIT(&Global_1946101, 22);
 			func_329(&iLocal_571, &uLocal_572, 33);

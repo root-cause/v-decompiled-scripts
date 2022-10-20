@@ -746,7 +746,7 @@ void func_17(bool bParam0)//Position - 0xB0F
 	}
 	else
 	{
-		func_18("INV_RESTRICT", -1);
+		func_18("INV_RESTRICT" /* GXT: You have received an Invite to user-generated content which is currently restricted by your control settings. */, -1);
 	}
 	Global_2657487 = (iVar0 + 1800000);
 }
@@ -3741,7 +3741,7 @@ void func_140()//Position - 0x3941
 	{
 		if (Global_20254)
 		{
-			func_141(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 6f, -1f, -1f, "CELL_202", 0, 0, 0, 0);
+			func_141(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 6f, -1f, -1f, "CELL_202" /* GXT: END CALL */, 0, 0, 0, 0);
 			if (Global_20209)
 			{
 				func_141(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 6f, -1f, -1f, 0, 0, 0, 0, 0);

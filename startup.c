@@ -597,11 +597,11 @@ void func_13(var* uParam0, char* sParam1)//Position - 0x1258
 	MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_37), "iMyLastImportExportListDay");
 	MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_38), "iVehicleWebsiteReminderTime");
 	MISC::REGISTER_BOOL_TO_SAVE(&(uParam0->f_39), "bDefaultClothesSet");
-	MISC::START_SAVE_ARRAY_WITH_SIZE(&(uParam0->f_40), 7, "CLOTHES");
+	MISC::START_SAVE_ARRAY_WITH_SIZE(&(uParam0->f_40), 7, "CLOTHES" /* GXT: Resident */);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_40)
 	{
-		StringCopy(&Var1, "CLOTHES", 16);
+		StringCopy(&Var1, "CLOTHES" /* GXT: Resident */, 16);
 		StringIntConCat(&Var1, iVar0, 16);
 		MISC::REGISTER_INT_TO_SAVE(&(uParam0->f_40[iVar0]), &Var1);
 		iVar0++;
@@ -1586,7 +1586,7 @@ void func_32(int iParam0, int iParam1)//Position - 0x30E4
 
 void func_33()//Position - 0x3113
 {
-	REPLAY::REGISTER_EFFECT_FOR_REPLAY_EDITOR("No_Filter", true);
+	REPLAY::REGISTER_EFFECT_FOR_REPLAY_EDITOR("No_Filter" /* GXT: No Filter */, true);
 	REPLAY::REGISTER_EFFECT_FOR_REPLAY_EDITOR("phone_cam1", true);
 	REPLAY::REGISTER_EFFECT_FOR_REPLAY_EDITOR("phone_cam2", true);
 	REPLAY::REGISTER_EFFECT_FOR_REPLAY_EDITOR("phone_cam3", true);
@@ -11848,407 +11848,407 @@ struct<4> func_65(int iParam0)//Position - 0x21580
 	switch (iParam0)
 	{
 		case 1:
-			StringCopy(&Var0, "MP_PROP_1DES", 16);
+			StringCopy(&Var0, "MP_PROP_1DES" /* GXT: This luxury triplex is move-in ready! The previous owner was so rich he just left all his furniture. Just bring yourself and be ready for lots of new superficial friends when people find out you live on Eclipse Boulevard in Rockford Hills. Includes 10-car garage. */, 16);
 			break;
 		
 		case 2:
-			StringCopy(&Var0, "MP_PROP_2DES", 16);
+			StringCopy(&Var0, "MP_PROP_2DES" /* GXT: A massive, furnished, luxury triplex at this price? You've gotta love a bargain like this! Snap it up now before President Lawton loses the next election and they tax the hell out of you. Includes 10-car garage. */, 16);
 			break;
 		
 		case 3:
-			StringCopy(&Var0, "MP_PROP_3DES", 16);
+			StringCopy(&Var0, "MP_PROP_3DES" /* GXT: Eclipse Towers on Eclipse Boulevard... this is the best address in Rockford Hills! Stand at your floor-to-ceiling windows, take in the spectacular panoramic views, pour yourself a drink and toast how amazing your life is while you look down on everybody else. Includes 10-car garage. */, 16);
 			break;
 		
 		case 4:
-			StringCopy(&Var0, "MP_PROP_4DES", 16);
+			StringCopy(&Var0, "MP_PROP_4DES" /* GXT: Upper class living at middle class prices! Are you a single-digit millionaire who wants to live like a double-digit millionaire? You'll never find a better deal on a luxury condo in Rockford Hills than this again. Act now, it won't last! Includes 10-car garage. */, 16);
 			break;
 		
 		case 5:
-			StringCopy(&Var0, "MP_PROP_5DES", 16);
+			StringCopy(&Var0, "MP_PROP_5DES" /* GXT: With its own Bean Machine outlet on the ground floor and a short commute to the financial center, this luxury condo on Alta Street in Downtown Los Santos is the perfect pad for the banker who never sleeps because he's having too much fun gambling with other people's money. Includes 10-car garage. */, 16);
 			break;
 		
 		case 6:
-			StringCopy(&Var0, "MP_PROP_6DES", 16);
+			StringCopy(&Var0, "MP_PROP_6DES" /* GXT: Situated at the epicenter of the Los Santos financial, business and high-end shopping districts, you'll never have to see a poor person again at this luxury condo on Alta Street if you don't want to. Everything you need is right on your doorstep. Includes 10-car garage. */, 16);
 			break;
 		
 		case 7:
-			StringCopy(&Var0, "MP_PROP_7DES", 16);
+			StringCopy(&Var0, "MP_PROP_7DES" /* GXT: This luxury condo on Marathon Avenue and Prosperity Street, in one of the most stylish apartment buildings in hip Del Perro, directly opposite the Bahama Mamas nightclub for the perfect release at the end of a hard day's work. Includes 10-car garage. */, 16);
 			break;
 		
 		case 8:
-			StringCopy(&Var0, "MP_PROP_8DES", 16);
+			StringCopy(&Var0, "MP_PROP_8DES" /* GXT: Located steps away from a skate park, this cute-as-a-button one-bedroom in Hawick is perfect for families with teenage children or tragic 30-something hipsters with fixies. Includes 6-car garage. */, 16);
 			break;
 		
 		case 9:
-			StringCopy(&Var0, "MP_PROP_9DES", 16);
+			StringCopy(&Var0, "MP_PROP_9DES" /* GXT: This newly-renovated one-bedroom in Downtown Vinewood is a STEAL!~n~Hurry this one won't last! It did last!~n~$10,000 price reduction!~n~Crazy value!~n~Move NOW the price is right!~n~Everything's negotiable. Motivated seller.~n~Reduced again for quick sale!~n~WILL SOMEONE JUST BUY THIS ALREADY??? Includes 6-car garage. */, 16);
 			break;
 		
 		case 10:
-			StringCopy(&Var0, "MP_PROP_10DES", 16);
+			StringCopy(&Var0, "MP_PROP_10DES" /* GXT: This building has seen better days - the closest thing to a doorman is a homeless guy you sometimes have to step over to get into the lobby at night - but how else are you going to find a Vinewood apartment in your price range? Hope you like the smell of urine.~n~Includes 6-car garage. */, 16);
 			break;
 		
 		case 11:
-			StringCopy(&Var0, "MP_PROP_11DES", 16);
+			StringCopy(&Var0, "MP_PROP_11DES" /* GXT: Cozy one-bedroom in a cute West Vinewood apartment block! You'll only share the building with a few other units, meaning fewer neighbors for you to grow to despise. Includes 6-car garage. */, 16);
 			break;
 		
 		case 12:
-			StringCopy(&Var0, "MP_PROP_12DES", 16);
+			StringCopy(&Var0, "MP_PROP_12DES" /* GXT: The Royale apartment building in West Vinewood might not look regal on the outside but you'll live like a prince on the inside! PS Princes are douches.~n~Includes 6-car garage. */, 16);
 			break;
 		
 		case 13:
-			StringCopy(&Var0, "MP_PROP_13DES", 16);
+			StringCopy(&Var0, "MP_PROP_13DES" /* GXT: This modern, renovated one-bedroom is in a well-maintained building in a great West Vinewood location. Buy now at the bottom of the market! Property values can't go any lower! We're absolutely sure this time! Includes 6-car garage. */, 16);
 			break;
 		
 		case 14:
-			StringCopy(&Var0, "MP_PROP_14DES", 16);
+			StringCopy(&Var0, "MP_PROP_14DES" /* GXT: Hello, sailor! This renovated, fully-furnished apartment is right on the waterfront in Puerto Del Sol. Perfect for picking up other sailors.~n~Includes 6-car garage. */, 16);
 			break;
 		
 		case 15:
-			StringCopy(&Var0, "MP_PROP_15DES", 16);
+			StringCopy(&Var0, "MP_PROP_15DES" /* GXT: Location is in the eye of the beholder! Some might call this a busy traffic junction, we call it a Commuter's Dream! Some might call this Little Seoul, we call it Vespucci so we can up the price!~n~Includes 6-car garage. */, 16);
 			break;
 		
 		case 16:
-			StringCopy(&Var0, "MP_PROP_16DES", 16);
+			StringCopy(&Var0, "MP_PROP_16DES" /* GXT: Join the other creative types flocking to this neighborhood. With easy access to both a movie theater and a church, this apartment in Dream Tower is perfect for lovers of fiction.~n~Includes 6-car garage. */, 16);
 			break;
 		
 		case 17:
-			StringCopy(&Var0, "MP_PROP_17DES", 16);
+			StringCopy(&Var0, "MP_PROP_17DES" /* GXT: What this Hawick apartment lacks in space and all-round condition, it makes up for in proximity to the local liquor store. Drown in debt and your sorrows.~n~Includes 2-car garage. */, 16);
 			break;
 		
 		case 18:
-			StringCopy(&Var0, "MP_PROP_18DES", 16);
+			StringCopy(&Var0, "MP_PROP_18DES" /* GXT: Original features! This cozy apartment in West Vinewood had only one owner, who didn't update a single thing since he moved in there 40 years ago and then passed away – it was days before anyone noticed. Includes 2-car garage. */, 16);
 			break;
 		
 		case 19:
-			StringCopy(&Var0, "MP_PROP_19DES", 16);
+			StringCopy(&Var0, "MP_PROP_19DES" /* GXT: This compact apartment in a 2-story apartment building has been meticulously maintained in its original condition! Semi-partial ocean view! Includes 2-car garage. */, 16);
 			break;
 		
 		case 20:
-			StringCopy(&Var0, "MP_PROP_20DES", 16);
+			StringCopy(&Var0, "MP_PROP_20DES" /* GXT: The apartment building has seen better days but this affordable unit still has a Little Soul and a Lot of Potential! Bring your imagination! And an exterminator.~n~Includes 2-car garage. */, 16);
 			break;
 		
 		case 21:
-			StringCopy(&Var0, "MP_PROP_21DES", 16);
+			StringCopy(&Var0, "MP_PROP_21DES" /* GXT: This fixer-upper offers stunning views of the cemetery to at once remind you of your mortality and motivate you to get your act together and buy a better apartment one day.~n~Includes 2-car garage. */, 16);
 			break;
 		
 		case 22:
-			StringCopy(&Var0, "MP_PROP_22DES", 16);
+			StringCopy(&Var0, "MP_PROP_22DES" /* GXT: With both Wigwam and Up-n-Atom right on your doorstep, burger enthusiasts will be spoiled for choice at this apartment located in Del Perro or Morningwood, depending on which side of the building you stand. Includes 2-car garage. */, 16);
 			break;
 		
 		case 23:
-			StringCopy(&Var0, "MP_PROP_23DES", 16);
+			StringCopy(&Var0, "MP_PROP_23DES" /* GXT: With a funky retro décor and carpeted throughout, you can literally smell the history in this Del Perro apartment that features an almost unobstructed ocean view for an almost unbeatable price. Includes 2-car garage. */, 16);
 			break;
 		
 		case 24:
-			StringCopy(&Var0, "MP_PROP_24DES", 16);
+			StringCopy(&Var0, "MP_PROP_24DES" /* GXT: 10-Car Garage - With good access to the major roadways in and out of Los Santos, this spacious garage is perfect for the man or woman who might need to leave town in a hurry. Or is obsessed with cars. */, 16);
 			break;
 		
 		case 25:
-			StringCopy(&Var0, "MP_PROP_25DES", 16);
+			StringCopy(&Var0, "MP_PROP_25DES" /* GXT: 6-Car Garage - If you're an individual who likes to keep their business private, look no further than this secluded garage in East Los Santos. */, 16);
 			break;
 		
 		case 26:
-			StringCopy(&Var0, "MP_PROP_26DES", 16);
+			StringCopy(&Var0, "MP_PROP_26DES" /* GXT: 10-Car Garage - Spacious garage in prime East Los Santos. Panoramic views of urban blight, walking distance to gang members. */, 16);
 			break;
 		
 		case 27:
-			StringCopy(&Var0, "MP_PROP_27DES", 16);
+			StringCopy(&Var0, "MP_PROP_27DES" /* GXT: 10-Car Garage - Newly renovated garage with excellent square footage and direct road access. What better place to keep brand-new vehicles than the neighborhood with the highest crime rate in Los Santos? */, 16);
 			break;
 		
 		case 28:
-			StringCopy(&Var0, "MP_PROP_28DES", 16);
+			StringCopy(&Var0, "MP_PROP_28DES" /* GXT: 6-Car Garage - A good-sized garage in a quiet location within walking distance of the train for those days when you feel extra guilty about your 6-car carbon footprint. */, 16);
 			break;
 		
 		case 29:
-			StringCopy(&Var0, "MP_PROP_29DES", 16);
+			StringCopy(&Var0, "MP_PROP_29DES" /* GXT: 2-Car Garage - Located just a few brain-melting steps away from an electrical substation, you'll never have to worry losing power or reaching old age again at this garage in East Los Santos. */, 16);
 			break;
 		
 		case 30:
-			StringCopy(&Var0, "MP_PROP_30DES", 16);
+			StringCopy(&Var0, "MP_PROP_30DES" /* GXT: 2-Car Garage - Affluent on the inside, effluent on the outside! This garage offers panoramic views of the Los Santos waterways. */, 16);
 			break;
 		
 		case 31:
-			StringCopy(&Var0, "MP_PROP_31DES", 16);
+			StringCopy(&Var0, "MP_PROP_31DES" /* GXT: 2-Car Garage - Calling all bargain hunters! In today's economy, it's all about desirable properties in undesirable areas. East Los Santos? We prefer to call it 'South of Vinewood'! Plus if the economy keeps tanking, you can go live in it! */, 16);
 			break;
 		
 		case 32:
-			StringCopy(&Var0, "MP_PROP_32DES", 16);
+			StringCopy(&Var0, "MP_PROP_32DES" /* GXT: 6-Car Garage - This garage is in a killer area... literally! Be first to gentrify this neighborhood! In 20 years, it will be the next big thing! */, 16);
 			break;
 		
 		case 33:
-			StringCopy(&Var0, "MP_PROP_33DES", 16);
+			StringCopy(&Var0, "MP_PROP_33DES" /* GXT: 6-Car Garage - High standards in real estate, low standards in women? End the day with your own oil change at this garage located across from a strip club! */, 16);
 			break;
 		
 		case 34:
-			StringCopy(&Var0, "MP_PROP_34DES", 16);
+			StringCopy(&Var0, "MP_PROP_34DES" /* GXT: Luxury Del Perro Heights apartment complex! For all you voyeurs out there! This spectacular condo is one of the lower units so might not boast the best views, but all the buildings around you will have a direct eyeline into your awesome life 24/7. Includes 10-car garage. */, 16);
 			break;
 		
 		case 35:
-			StringCopy(&Var0, "MP_PROP_35DES", 16);
+			StringCopy(&Var0, "MP_PROP_35DES" /* GXT: Calling all actors! This is your chance to live on sought-after Movie Star Way in prime Rockford Hills directly opposite the legendary Richard Majestic film studios. Stagger out of your front door right onto set! Includes 10-car garage. */, 16);
 			break;
 		
 		case 36:
-			StringCopy(&Var0, "MP_PROP_36DES", 16);
+			StringCopy(&Var0, "MP_PROP_36DES" /* GXT: Movie Star Way! Don't miss this opportunity to live in one of the most exclusive apartment complexes in Rockford Hills. Even the janitor earns six figures in this building.~n~Includes 10-car garage. */, 16);
 			break;
 		
 		case 37:
-			StringCopy(&Var0, "MP_PROP_37DES", 16);
+			StringCopy(&Var0, "MP_PROP_37DES" /* GXT: This spectacular condo on Movie Star Way in prime Rockford Hills is move-in ready! Don't worry if you're a rich Los Santos philistine with no taste - it's all been picked out for you. All furniture, appliances, fixtures and art included.~n~Includes 10-car garage. */, 16);
 			break;
 		
 		case 38:
-			StringCopy(&Var0, "MP_PROP_38DES", 16);
+			StringCopy(&Var0, "MP_PROP_38DES" /* GXT: No dropped calls here! This luxury condo is located in the same building as Tinkle Mobile's headquarters in the new real estate hotspot of Downtown Los Santos. This is such an up-and-coming neighborhood, you can literally see the construction from your window!~n~Includes 10-car garage. */, 16);
 			break;
 		
 		case 39:
-			StringCopy(&Var0, "MP_PROP_39DES", 16);
+			StringCopy(&Var0, "MP_PROP_39DES" /* GXT: This beautiful Downtown triplex apartment has spectacular views of Los Santos and the iconic Vinewood Sign in the distance. Watch all the people chasing the dream while you live it! Includes 10-car garage. */, 16);
 			break;
 		
 		case 40:
-			StringCopy(&Var0, "MP_PROP_40DES", 16);
+			StringCopy(&Var0, "MP_PROP_40DES" /* GXT: This breathtaking luxury condo on Movie Star Way in Rockford Hills is a stone's throw from Richards Majestic Movie Studios, AKAN Records and a Sperm Donor Clinic. The ultimate trifecta of dying industries! Includes 10-car garage. */, 16);
 			break;
 		
 		case 41:
-			StringCopy(&Var0, "MP_PROP_41DES", 16);
+			StringCopy(&Var0, "MP_PROP_41DES" /* GXT: A luxury condo on Movie Star Way in Rockford Hills? This is one of the trendiest addresses in Los Santos! Imagine if all your neighbors were hedge fund managers and celebrities? Come on, live the dream. Includes 10-car garage. */, 16);
 			break;
 		
 		case 42:
-			StringCopy(&Var0, "MP_PROP_42DES", 16);
+			StringCopy(&Var0, "MP_PROP_42DES" /* GXT: Your split personality will be right at home in this retro-slash-ultramodern apartment building on Boulevard Del Perro. Go mad in style. Includes 10-car garage. */, 16);
 			break;
 		
 		case 43:
-			StringCopy(&Var0, "MP_PROP_43DES", 16);
+			StringCopy(&Var0, "MP_PROP_43DES" /* GXT: Parquet flooring, granite countertops, floating fireplace, bland modern art, walk-in closet, towel warmers, leather headboard, man cave...this luxury condo in Tinsel Towers on Boulevard Del Perro checks all the boxes on the new-money millionaire ticklist.~n~Includes 10-car garage. */, 16);
 			break;
 		
 		case 44:
-			StringCopy(&Var0, "MP_PROP_44DES", 16);
+			StringCopy(&Var0, "MP_PROP_44DES" /* GXT: 2-Car Garage - Annexed to a gas station and within easy distance of a number of cheap motels, this garage on Paleto Blvd in Paleto Bay has all you need for the perfect escape from the city. */, 16);
 			break;
 		
 		case 45:
-			StringCopy(&Var0, "MP_PROP_45DES", 16);
+			StringCopy(&Var0, "MP_PROP_45DES" /* GXT: 2-Car Garage - This garage near Paleto Blvd in Paleto Bay has seen better days but there's a barber's, a tattoo parlor and a Cluckin' Bell factory on your doorstep...so what more do you need? */, 16);
 			break;
 		
 		case 46:
-			StringCopy(&Var0, "MP_PROP_46DES", 16);
+			StringCopy(&Var0, "MP_PROP_46DES" /* GXT: 2-Car Garage - The town of Grapeseed offer a unique blend of heavy industry and genetically-modified farming that explains why everyone born there in the last 20 years looks so funny. This small garage on Grapeseed Avenue needs some TLC but is priced to sell. */, 16);
 			break;
 		
 		case 47:
-			StringCopy(&Var0, "MP_PROP_48DES", 16);
+			StringCopy(&Var0, "MP_PROP_48DES" /* GXT: 2-Car Garage - This garage is situated on the site of Ron Alternates on N. Senora Way. What better way to feel better about your carbon footprint than by storing your gas-guzzlers inside a wind farm? */, 16);
 			break;
 		
 		case 48:
-			StringCopy(&Var0, "MP_PROP_49DES", 16);
+			StringCopy(&Var0, "MP_PROP_49DES" /* GXT: 2-Car Garage - Across from the beach, ocean views, steps from a delicious seafood restaurant, this property on Great Ocean Highway in North Chumash is in an unbeatable location! The catch? It's a garage... */, 16);
 			break;
 		
 		case 49:
-			StringCopy(&Var0, "MP_PROP_50DES", 16);
+			StringCopy(&Var0, "MP_PROP_50DES" /* GXT: 2-Car Garage - Small one-door garage for sale on Route 68 on Harmony. With a rundown general store, a local arm-wrestling haunt and a seedy motel all nearby, park up and live the dream! */, 16);
 			break;
 		
 		case 50:
-			StringCopy(&Var0, "MP_PROP_51DES", 16);
+			StringCopy(&Var0, "MP_PROP_51DES" /* GXT: 6-Car Garage - Garage in need of some TLC for sale on Senora Rd in the Grand Senora Desert. Nothing of great note in the surrounding area. It's a garage. In a desert. */, 16);
 			break;
 		
 		case 51:
-			StringCopy(&Var0, "MP_PROP_52DES", 16);
+			StringCopy(&Var0, "MP_PROP_52DES" /* GXT: 2-Car Garage - Steps from a liquor store, a Dollar Pills pharmacy, a Suburban store, and an Animal Ark pet store, this garage on Route 68 in Harmony is a hipster's dream. Booze, cigarettes, faux-vintage clothing and organic dog food in one! */, 16);
 			break;
 		
 		case 52:
-			StringCopy(&Var0, "MP_PROP_57DES", 16);
+			StringCopy(&Var0, "MP_PROP_57DES" /* GXT: 6-Car Garage - Located behind an Ammu-Nation store and near to the Fort Zancudo Military Base, you won't have to worry about security at this garage on Route 68. */, 16);
 			break;
 		
 		case 53:
-			StringCopy(&Var0, "MP_PROP_59DES", 16);
+			StringCopy(&Var0, "MP_PROP_59DES" /* GXT: 6-Car Garage - Calling all Los Santos Panic fans! This garage on Crusade Road is in a prime location just down the road from the Maze Bank Arena! */, 16);
 			break;
 		
 		case 54:
-			StringCopy(&Var0, "MP_PROP_60DES", 16);
+			StringCopy(&Var0, "MP_PROP_60DES" /* GXT: 10-Car Garage - Are you in need of a low-profile lock-up where people won't ask too many questions? Look no further than this garage on South Shambles in Cypress Flats. */, 16);
 			break;
 		
 		case 55:
-			StringCopy(&Var0, "MP_PROP_61DES", 16);
+			StringCopy(&Var0, "MP_PROP_61DES" /* GXT: 6-Car Garage - If you're looking for a desolate, industrial lock-up far away from prying eyes, this garage on Dry Dock St in Cypress Flats is the one for you! */, 16);
 			break;
 		
 		case 56:
-			StringCopy(&Var0, "MP_PROP_62DES", 16);
+			StringCopy(&Var0, "MP_PROP_62DES" /* GXT: 10-Car Garage - Garage for sale on Exceptionalists Way. Why would you need a spacious, anonymous, non-descript lock-up with lots of space for storage close to the airport? We won't ask if you don't tell. */, 16);
 			break;
 		
 		case 57:
-			StringCopy(&Var0, "MP_PROP_63DES", 16);
+			StringCopy(&Var0, "MP_PROP_63DES" /* GXT: 10-Car Garage - In a prime location near Greenwich parkway in Los Santos International Airport, next door to Bilgeco Shipping services, this garage is perfect for a man or woman who might need to transport something in a hurry or get out of a town in a hurry. */, 16);
 			break;
 		
 		case 58:
-			StringCopy(&Var0, "MP_PROP_64DES", 16);
+			StringCopy(&Var0, "MP_PROP_64DES" /* GXT: 2-Car Garage - Garage for sale on Innocence Blvd in La Puerta. How can there be this many garages for sale in Los Santos? We're as puzzled by this real estate boom as you are. */, 16);
 			break;
 		
 		case 59:
-			StringCopy(&Var0, "MP_PROP_65DES", 16);
+			StringCopy(&Var0, "MP_PROP_65DES" /* GXT: 2-Car Garage - If you're feeling the pinch of the economic downturn but desperate for a prime Rockford Hills address, this garage on Boulevard Del Perro might be the perfect compromise! */, 16);
 			break;
 		
 		case 60:
-			StringCopy(&Var0, "MP_PROP_66DES", 16);
+			StringCopy(&Var0, "MP_PROP_66DES" /* GXT: 2-Car Garage - Garage for sale on Mirror Park Blvd in East Vinewood. If you're looking for a garage in Los Santos, don't delay! It's an incredible buyer's market right now. They're everywhere! */, 16);
 			break;
 		
 		case 61:
-			StringCopy(&Var0, "MP_PROP_67DES", 16);
+			StringCopy(&Var0, "MP_PROP_67DES" /* GXT: Part of The High Life Update. Perfectly proportioned, beautifully presented lateral living opportunity on exquisite Eclipse Blvd. This apartment is as unique as the new cheekbones your surgeon just gave you... by that we mean you'll see them all over town. Includes 10-car garage. */, 16);
 			break;
 		
 		case 62:
-			StringCopy(&Var0, "MP_PROP_68DES", 16);
+			StringCopy(&Var0, "MP_PROP_68DES" /* GXT: Part of The High Life Update. Enjoy ocean views far above the fray of tourists and bums on Del Perro Beach with this lateral living opportunity for the super rich. If we can overpay for something, we have, and we're passing the expense on down to you. Includes 10-car garage. */, 16);
 			break;
 		
 		case 63:
-			StringCopy(&Var0, "MP_PROP_69DES", 16);
+			StringCopy(&Var0, "MP_PROP_69DES" /* GXT: Part of The High Life Update. Own a piece of glamorous old Vinewood, albeit a very small and expensive piece that's been made to look just like the other super-rich corners of Los Santos. A contemporary lateral living experience with one foot in the past. Includes 10-car garage. */, 16);
 			break;
 		
 		case 64:
-			StringCopy(&Var0, "MP_PROP_70DES", 16);
+			StringCopy(&Var0, "MP_PROP_70DES" /* GXT: Part of The High Life Update. A picture-perfect lateral living experience in one of Los Santos' most sought-after tower blocks. These gorgeous lateral apartments only become available when hedgefunder residents have massive drug-induced heart attacks or get arrested for killing hookers. Includes 10-car garage. */, 16);
 			break;
 		
 		case 65:
-			StringCopy(&Var0, "MP_PROP_71DES", 16);
+			StringCopy(&Var0, "MP_PROP_71DES" /* GXT: Part of The High Life Update. Live in the clouds while your bank balance hits the floor. An apartment so conspicuously expensive all your friends will immediately know how much you paid for it. The Downtown lateral living experience for people who secretly want to be LC based. Includes 10-car garage. */, 16);
 			break;
 		
 		case 66:
-			StringCopy(&Var0, "MP_PROP_72DES", 16);
+			StringCopy(&Var0, "MP_PROP_72DES" /* GXT: Part of The Independence Day Special. Crazy movie director across the road? Check. Astronomically over-priced property where your car has more square footage than you do? Check. If you're looking for the full Vinewood Hills experience, this modest home ticks all the boxes. Includes 6-car garage. */, 16);
 			break;
 		
 		case 67:
-			StringCopy(&Var0, "MP_PROP_73DES", 16);
+			StringCopy(&Var0, "MP_PROP_73DES" /* GXT: Part of The Independence Day Special. Calling all gentrifiers... El Burro Heights is ripe for hostile takeover! Pack up the espresso machine, labradoodle and deliberately tousled toddler and snap up this property before it's too late! Act now, or you'll be priced out of this neighborhood within a year! Includes 6-car garage. */, 16);
 			break;
 		
 		case 68:
-			StringCopy(&Var0, "MP_PROP_74DES", 16);
+			StringCopy(&Var0, "MP_PROP_74DES" /* GXT: Part of The Independence Day Special. Check out the water feature in the front yard! This is coastal, provincial living at its very finest. Worried about shade? Want easy access to groceries? How about two for the price of one? This house backs right onto the supermarket, blocking out all natural light. Includes 6-car garage. */, 16);
 			break;
 		
 		case 69:
-			StringCopy(&Var0, "MP_PROP_75DES", 16);
+			StringCopy(&Var0, "MP_PROP_75DES" /* GXT: Part of The Independence Day Special. Stunning views of rapidly rising sea levels! And talk about amenities! This Paleto Bay beauty is walking distance to a dive bar, hospital, funeral home, crematorium and gun store, so you can go out on the town secure in the knowledge that you're covered for every eventuality. Includes 6-car garage. */, 16);
 			break;
 		
 		case 70:
-			StringCopy(&Var0, "MP_PROP_76DES", 16);
+			StringCopy(&Var0, "MP_PROP_76DES" /* GXT: Part of The Independence Day Special. Fall asleep to the sounds of the ocean and bums dumpster-diving in the parking lot. This cute-as-a-button property is centrally located on Paleto Bay's main street, a short walk from the coast and next door to the local supermarket. Includes 2-car garage. */, 16);
 			break;
 		
 		case 71:
-			StringCopy(&Var0, "MP_PROP_77DES", 16);
+			StringCopy(&Var0, "MP_PROP_77DES" /* GXT: Part of The Independence Day Special. Beggars CAN be choosers! Waterfront living at a bargain price! Steps away from both a Chinese restaurant and a tattoo parlor, this Sandy Shores location offers no shortage of late-night decisions you'll regret in the morning. Includes 2-car garage. */, 16);
 			break;
 		
 		case 72:
-			StringCopy(&Var0, "MP_PROP_78DES", 16);
+			StringCopy(&Var0, "MP_PROP_78DES" /* GXT: Part of The Independence Day Special. Location, location, location! Across from a feed store, minimart and discount clothes emporium, this house is right in the heart of the action on Grapeseed's main drag. Living on the cutting edge of rural retail! Includes 2-car garage. */, 16);
 			break;
 		
 		case 83:
-			StringCopy(&Var0, "MP_PROP_79DES", 16);
+			StringCopy(&Var0, "MP_PROP_79DES" /* GXT: Is the 1% starting to feel a little crowded? Are you tired of single-digit millionaires cluttering up your elevator and groping your bellboy? Do you need a new way of expressing your bottomless contempt for your fellow man? Look no further: this lavish penthouse suite at the best address in town is expensive enough to keep the riff raff at bay until at least the next federal bailout. Access to our same-day redecorating service included as standard. Part of Executives and Other Criminals. */, 16);
 			break;
 		
 		case 84:
-			StringCopy(&Var0, "MP_PROP_80DES", 16);
+			StringCopy(&Var0, "MP_PROP_80DES" /* GXT: Penthouse living isn't just about mindless luxury. It's about knowing that when you flush a dump you're literally crapping through every single one of the $500K hovels beneath you - and that's something that only money can buy. Access to our same-day redecorating service included as standard. Part of Executives and Other Criminals. */, 16);
 			break;
 		
 		case 85:
-			StringCopy(&Var0, "MP_PROP_81DES", 16);
+			StringCopy(&Var0, "MP_PROP_81DES" /* GXT: Let's face it: we had you at the pricetag. The fact that this happens to be one of the most decadent living spaces for hundreds of miles doesn't really matter. Just like its new owner, something this expensive doesn't need to be 'nice' or 'useful'. You're a perfect match. What are you waiting for? Access to our same-day redecorating service included as standard. Part of Executives and Other Criminals. */, 16);
 			break;
 		
 		case 73:
-			StringCopy(&Var0, "MP_PROP_83DES", 16);
+			StringCopy(&Var0, "MP_PROP_83DES" /* GXT: Welcome to the heights of the Vinewood hills, where the average first time buyer is 24 and the web 2.0 entrepreneurs are only outnumbered by the swarms of fading teenage pop sensations. Buy in now while the price is still ridiculously high - what are you, sensible? Part of Executives and Other Criminals. */, 16);
 			break;
 		
 		case 74:
-			StringCopy(&Var0, "MP_PROP_84DES", 16);
+			StringCopy(&Var0, "MP_PROP_84DES" /* GXT: San Andreas is a place where property values can only go up and high magnitude earthquakes never happen, so where better to balance a luxury apartment on stilts over a steep hillside in a crowded residential area? The first time you feel yourself and everything you own sway in a light breeze you'll be surprised how good this sounded on paper. Part of Executives and Other Criminals. */, 16);
 			break;
 		
 		case 75:
-			StringCopy(&Var0, "MP_PROP_85DES", 16);
+			StringCopy(&Var0, "MP_PROP_85DES" /* GXT: The previous owner of this gorgeous cliffside manor died doing a yoga pose on the rear balcony railing... but at least they got the Snapmatic shot. It's a tough act to follow, but if you're rich and stupid enough to buy into this neighborhood you're already most of the way there. Just follow your fragile heart. Part of Executives and Other Criminals. */, 16);
 			break;
 		
 		case 76:
-			StringCopy(&Var0, "MP_PROP_86DES", 16);
+			StringCopy(&Var0, "MP_PROP_86DES" /* GXT: Clinging to the side of the Vinewood hills like a dying oil tycoon clutching his carer-turned-sixth-wife, this three story mansion more than compensates for deep structural flaws with sumptuous interior design. Open plan kitchen, minimalist furnishings, ever-present vertigo: this one really has it all. Part of Executives and Other Criminals. */, 16);
 			break;
 		
 		case 77:
-			StringCopy(&Var0, "MP_PROP_87DES", 16);
+			StringCopy(&Var0, "MP_PROP_87DES" /* GXT: The saps driving through downtown Vinewood on their morning commute need something to aspire to. They don't want to look up and see green, peaceful hills. They want to gaze through your floor-length windows and see you in nothing but a snakeskin posing pouch injecting cold press kale juice with your tantric yoga instructor. That's the kind of status that doesn't come cheap, so dig deep. Part of Executives and Other Criminals. */, 16);
 			break;
 		
 		case 78:
-			StringCopy(&Var0, "MP_PROP_89DES", 16);
+			StringCopy(&Var0, "MP_PROP_89DES" /* GXT: Act now to secure your place at one of the quietest and most exclusive addresses in the city. All the other houses on this street were bought in the nineties by legitimate foreign investors who needed somewhere to store vast sums of legally acquired capital, and they've been empty ever since. It'll feel like you're living in an investment portfolio, but isn't that the point? Part of Executives and Other Criminals. */, 16);
 			break;
 		
 		case 79:
-			StringCopy(&Var0, "MP_PROP_90DES", 16);
+			StringCopy(&Var0, "MP_PROP_90DES" /* GXT: Skyscraper views and lateral living are last year's kind of vanity project. Put a more contemporary spin on your raging superiority complex by forcing your butler to wheeze up and down all three stories of this hillside palace, while you take selfies with the spectacular views of thousands of more comfortable, less expensive places to live behind you. Part of Executives and Other Criminals. */, 16);
 			break;
 		
 		case 80:
-			StringCopy(&Var0, "MP_PROP_92DES", 16);
+			StringCopy(&Var0, "MP_PROP_92DES" /* GXT: The tinnitus and smoker's cough are telling you that you've seen too much inner-city living, and we're telling you that this fantastically expensive apartment in leafy Vinewood is the answer to decades of hardened self-abuse. From here, you can gaze out across the whole town every morning as you retch into your green juice and paleo breakfast burrito. Just keep reminding yourself you're glad to get away from it all. Part of Executives and Other Criminals. */, 16);
 			break;
 		
 		case 81:
-			StringCopy(&Var0, "MP_PROP_94DES", 16);
+			StringCopy(&Var0, "MP_PROP_94DES" /* GXT: Built in the 60s and surprising everyone by still being in once piece, this understated property may not look like much on the outside, but don't worry: inside it's identical to every other brainless yuppie's fantasy of open plan, designer living. Part of Executives and Other Criminals. */, 16);
 			break;
 		
 		case 82:
-			StringCopy(&Var0, "MP_PROP_95DES", 16);
+			StringCopy(&Var0, "MP_PROP_95DES" /* GXT: Designed and constructed in direct violation of every building law in the state, this luxury apartment is a testament to the power of a can-do attitude and utter disregard for standards of health, safety and common sense. Time to pour yourself a drink, forget about the forty foot drop, and congratulate yourself on keeping that pioneer spirit alive. Part of Executives and Other Criminals. */, 16);
 			break;
 		
 		case 87:
-			StringCopy(&Var0, "MP_PROP_96DES", 16);
+			StringCopy(&Var0, "MP_PROP_96DES" /* GXT: In a radical new step towards diversification of the banking sector, industry giant Lombank is selling office space to results-driven, high-liquidity kill squads and drug cartels. Be part of the change our financial industry needs. */, 16);
 			break;
 		
 		case 88:
-			StringCopy(&Var0, "MP_PROP_97DES", 16);
+			StringCopy(&Var0, "MP_PROP_97DES" /* GXT: Maze has been the target for more boycotts, demonstrations and civil rights lawsuits than any other bank in America. Access to that wealth of experience doesn't come cheap, but a good education is an investment worth any price. */, 16);
 			break;
 		
 		case 89:
-			StringCopy(&Var0, "MP_PROP_98DES", 16);
+			StringCopy(&Var0, "MP_PROP_98DES" /* GXT: The City within the City, the Arcadius Business Center boasts more AAA hedge funds, smoothie bars and executive suicides per square foot of office space than any other building in the business district. Welcome to the cutting edge. */, 16);
 			break;
 		
 		case 90:
-			StringCopy(&Var0, "MP_PROP_99DES", 16);
+			StringCopy(&Var0, "MP_PROP_99DES" /* GXT: The building that defined the LS skyline for a generation. Taller, classier, more opulent, more shamelessly phallic, less structurally sound – you name it, the Maze Bank Tower is best in class. */, 16);
 			break;
 		
 		case 91:
-			StringCopy(&Var0, "MP_CLUBH1DES", 16);
+			StringCopy(&Var0, "MP_CLUBH1DES" /* GXT: This little gem is nestled so snugly in the heart of longstanding urban squalor that we'd forgotten it was even on our books. As far as we can tell it's not on any property register, so just give us the cash and make it disappear. */, 16);
 			break;
 		
 		case 92:
-			StringCopy(&Var0, "MP_CLUBH2DES", 16);
+			StringCopy(&Var0, "MP_CLUBH2DES" /* GXT: This functional ground floor property used to be a soup kitchen, and repossessing that kind of attack on American values isn't just business for us - it's pleasure. Now available for purchase by a patriotic entrepreneur or kingpin, this place will be serving the community again in no time. */, 16);
 			break;
 		
 		case 93:
-			StringCopy(&Var0, "MP_CLUBH3DES", 16);
+			StringCopy(&Var0, "MP_CLUBH3DES" /* GXT: The repo guys who raided this place died of smallpox three days later, which is almost certainly a coincidence and has in no way affected the valuation of the property. And hey, worst case scenario, you couldn't pay for a more robust security system. */, 16);
 			break;
 		
 		case 94:
-			StringCopy(&Var0, "MP_CLUBH4DES", 16);
+			StringCopy(&Var0, "MP_CLUBH4DES" /* GXT: We all thought there was a rock bottom, but nope, it turns out the value of a place like this just falls and falls! Get in here before we burn it for kicks. The authorities just want to forget it exists, so go wild. */, 16);
 			break;
 		
 		case 95:
-			StringCopy(&Var0, "MP_CLUBH5DES", 16);
+			StringCopy(&Var0, "MP_CLUBH5DES" /* GXT: You might assume this is a glass-half-empty kind of place, but the people of Paleto believe the glass is actually half full of cut-price real estate, disenfranchised workers and raw opportunity. That's right, this dingy storage unit is a step towards a brighter future for us all. */, 16);
 			break;
 		
 		case 96:
-			StringCopy(&Var0, "MP_CLUBH6DES", 16);
+			StringCopy(&Var0, "MP_CLUBH6DES" /* GXT: Are you a real fixer upper? Can you share the cool desert evenings with packs of wild dogs and openly incestuous couples? If so this is the project for you. It's got nothing but potential. */, 16);
 			break;
 		
 		case 97:
-			StringCopy(&Var0, "MP_CLUBH7DES", 16);
+			StringCopy(&Var0, "MP_CLUBH7DES" /* GXT: The locals assumed it was abandoned, but in fact this spacious warehouse was the heart and soul of the Los Santos snuff industry for years. Now tax hikes are forcing those pioneering filmmakers out of business, so this is your chance to buy your way under the radar and stay there for good. */, 16);
 			break;
 		
 		case 98:
-			StringCopy(&Var0, "MP_CLUBH8DES", 16);
+			StringCopy(&Var0, "MP_CLUBH8DES" /* GXT: Don't just sit there gorging on welfare and compassion. Take a stand for the trickle down economy today. Plunge capital back into your community. Buy up every last derelict and turn it into a living, breathing, buzzing hive of fugitives and meth heads. It's time to be the change, people. */, 16);
 			break;
 		
 		case 99:
-			StringCopy(&Var0, "MP_CLUBH9DES", 16);
+			StringCopy(&Var0, "MP_CLUBH9DES" /* GXT: You know a property must be something really special when the previous occupants have such a hard time letting go. You just can't fake that kind of helpless desperation and rage, and in a world as cynical as this that's the best review of all. */, 16);
 			break;
 		
 		case 100:
-			StringCopy(&Var0, "MP_CLUBH10DES", 16);
+			StringCopy(&Var0, "MP_CLUBH10DES" /* GXT: If you're looking for somewhere that's off the beaten path you just found it: miles from anywhere, deemed hazardous by the Los Santos Building Standards Commission, and the last occupants died in murder-suicide pact. How many reassurances of total privacy do you need? */, 16);
 			break;
 		
 		case 101:
-			StringCopy(&Var0, "MP_CLUBH11DES", 16);
+			StringCopy(&Var0, "MP_CLUBH11DES" /* GXT: Sure, coastal small town America has mile after mile of foreclosed retail premises within fifty feet of a church and a gun store, so why choose this one? Well ask yourself this: can you think of a better way to blend in and disappear? Act now before it stops making sense. */, 16);
 			break;
 		
 		case 102:
-			StringCopy(&Var0, "MP_CLUBH12DES", 16);
+			StringCopy(&Var0, "MP_CLUBH12DES" /* GXT: You know times are tough when not even a million hipsters getting a tattoo of a swallow in flight on their taint could save this place from going under. Bad news for those who wanted to follow up with that bold yet simple triangle design, but the rock bottom pricetag is good news for you. */, 16);
 			break;
 	}
 	return Var0;
@@ -12261,436 +12261,436 @@ struct<4> func_66(int iParam0)//Position - 0x21C48
 	switch (iParam0)
 	{
 		case 1:
-			StringCopy(&Var0, "MP_PROP_1", 16);
+			StringCopy(&Var0, "MP_PROP_1" /* GXT: Eclipse Towers, Apt 31 */, 16);
 			break;
 		
 		case 2:
-			StringCopy(&Var0, "MP_PROP_2", 16);
+			StringCopy(&Var0, "MP_PROP_2" /* GXT: Eclipse Towers, Apt 9 */, 16);
 			break;
 		
 		case 3:
-			StringCopy(&Var0, "MP_PROP_3", 16);
+			StringCopy(&Var0, "MP_PROP_3" /* GXT: Eclipse Towers, Apt 40 */, 16);
 			break;
 		
 		case 4:
-			StringCopy(&Var0, "MP_PROP_4", 16);
+			StringCopy(&Var0, "MP_PROP_4" /* GXT: Eclipse Towers, Apt 5 */, 16);
 			break;
 		
 		case 5:
-			StringCopy(&Var0, "MP_PROP_5", 16);
+			StringCopy(&Var0, "MP_PROP_5" /* GXT: 3 Alta St, Apt 10 */, 16);
 			break;
 		
 		case 6:
-			StringCopy(&Var0, "MP_PROP_6", 16);
+			StringCopy(&Var0, "MP_PROP_6" /* GXT: 3 Alta St, Apt 57 */, 16);
 			break;
 		
 		case 7:
-			StringCopy(&Var0, "MP_PROP_7", 16);
+			StringCopy(&Var0, "MP_PROP_7" /* GXT: Del Perro Heights, Apt 20 */, 16);
 			break;
 		
 		case 8:
-			StringCopy(&Var0, "MP_PROP_8", 16);
+			StringCopy(&Var0, "MP_PROP_8" /* GXT: 1162 Power St, Apt 3 */, 16);
 			break;
 		
 		case 9:
-			StringCopy(&Var0, "MP_PROP_9", 16);
+			StringCopy(&Var0, "MP_PROP_9" /* GXT: 0605 Spanish Ave, Apt 1 */, 16);
 			break;
 		
 		case 10:
-			StringCopy(&Var0, "MP_PROP_10", 16);
+			StringCopy(&Var0, "MP_PROP_10" /* GXT: 0604 Las Lagunas Blvd, Apt 4 */, 16);
 			break;
 		
 		case 11:
-			StringCopy(&Var0, "MP_PROP_11", 16);
+			StringCopy(&Var0, "MP_PROP_11" /* GXT: 0184 Milton Rd, Apt 13 */, 16);
 			break;
 		
 		case 12:
-			StringCopy(&Var0, "MP_PROP_12", 16);
+			StringCopy(&Var0, "MP_PROP_12" /* GXT: The Royale, Apt 19 */, 16);
 			break;
 		
 		case 13:
-			StringCopy(&Var0, "MP_PROP_13", 16);
+			StringCopy(&Var0, "MP_PROP_13" /* GXT: 0504 S Mo Milton Dr */, 16);
 			break;
 		
 		case 14:
-			StringCopy(&Var0, "MP_PROP_14", 16);
+			StringCopy(&Var0, "MP_PROP_14" /* GXT: 0115 Bay City Ave, Apt 45 */, 16);
 			break;
 		
 		case 15:
-			StringCopy(&Var0, "MP_PROP_15", 16);
+			StringCopy(&Var0, "MP_PROP_15" /* GXT: 0325 South Rockford Dr */, 16);
 			break;
 		
 		case 16:
-			StringCopy(&Var0, "MP_PROP_16", 16);
+			StringCopy(&Var0, "MP_PROP_16" /* GXT: Dream Tower, Apt 15 */, 16);
 			break;
 		
 		case 17:
-			StringCopy(&Var0, "MP_PROP_17", 16);
+			StringCopy(&Var0, "MP_PROP_17" /* GXT: 2143 Las Lagunas Blvd, Apt 9 */, 16);
 			break;
 		
 		case 18:
-			StringCopy(&Var0, "MP_PROP_18", 16);
+			StringCopy(&Var0, "MP_PROP_18" /* GXT: 1561 San Vitas St, Apt 2 */, 16);
 			break;
 		
 		case 19:
-			StringCopy(&Var0, "MP_PROP_19", 16);
+			StringCopy(&Var0, "MP_PROP_19" /* GXT: 0112 S Rockford Dr, Apt 13 */, 16);
 			break;
 		
 		case 20:
-			StringCopy(&Var0, "MP_PROP_20", 16);
+			StringCopy(&Var0, "MP_PROP_20" /* GXT: 2057 Vespucci Blvd, Apt 1 */, 16);
 			break;
 		
 		case 21:
-			StringCopy(&Var0, "MP_PROP_21", 16);
+			StringCopy(&Var0, "MP_PROP_21" /* GXT: 0069 Cougar Ave, Apt 19 */, 16);
 			break;
 		
 		case 22:
-			StringCopy(&Var0, "MP_PROP_22", 16);
+			StringCopy(&Var0, "MP_PROP_22" /* GXT: 1237 Prosperity St, Apt 21 */, 16);
 			break;
 		
 		case 23:
-			StringCopy(&Var0, "MP_PROP_23", 16);
+			StringCopy(&Var0, "MP_PROP_23" /* GXT: 1115 Blvd Del Perro, Apt 18 */, 16);
 			break;
 		
 		case 24:
-			StringCopy(&Var0, "MP_PROP_24", 16);
+			StringCopy(&Var0, "MP_PROP_24" /* GXT: 0120 Murrieta Heights */, 16);
 			break;
 		
 		case 25:
-			StringCopy(&Var0, "MP_PROP_25", 16);
+			StringCopy(&Var0, "MP_PROP_25" /* GXT: Unit 14 Popular St */, 16);
 			break;
 		
 		case 26:
-			StringCopy(&Var0, "MP_PROP_26", 16);
+			StringCopy(&Var0, "MP_PROP_26" /* GXT: Unit 2 Popular St */, 16);
 			break;
 		
 		case 27:
-			StringCopy(&Var0, "MP_PROP_27", 16);
+			StringCopy(&Var0, "MP_PROP_27" /* GXT: 331 Supply St */, 16);
 			break;
 		
 		case 28:
-			StringCopy(&Var0, "MP_PROP_28", 16);
+			StringCopy(&Var0, "MP_PROP_28" /* GXT: Unit 1 Olympic Fwy */, 16);
 			break;
 		
 		case 29:
-			StringCopy(&Var0, "MP_PROP_29", 16);
+			StringCopy(&Var0, "MP_PROP_29" /* GXT: 0754 Roy Lowenstein Blvd */, 16);
 			break;
 		
 		case 30:
-			StringCopy(&Var0, "MP_PROP_30", 16);
+			StringCopy(&Var0, "MP_PROP_30" /* GXT: 12 Little Bighorn Ave */, 16);
 			break;
 		
 		case 31:
-			StringCopy(&Var0, "MP_PROP_31", 16);
+			StringCopy(&Var0, "MP_PROP_31" /* GXT: Unit 124 Popular St */, 16);
 			break;
 		
 		case 32:
-			StringCopy(&Var0, "MP_PROP_32", 16);
+			StringCopy(&Var0, "MP_PROP_32" /* GXT: 0552 Roy Lowenstein Blvd */, 16);
 			break;
 		
 		case 33:
-			StringCopy(&Var0, "MP_PROP_33", 16);
+			StringCopy(&Var0, "MP_PROP_33" /* GXT: 0432 Davis Ave */, 16);
 			break;
 		
 		case 34:
-			StringCopy(&Var0, "MP_PROP_34", 16);
+			StringCopy(&Var0, "MP_PROP_34" /* GXT: Del Perro Heights, Apt 7 */, 16);
 			break;
 		
 		case 35:
-			StringCopy(&Var0, "MP_PROP_35", 16);
+			StringCopy(&Var0, "MP_PROP_35" /* GXT: Weazel Plaza, Apt 101 */, 16);
 			break;
 		
 		case 36:
-			StringCopy(&Var0, "MP_PROP_36", 16);
+			StringCopy(&Var0, "MP_PROP_36" /* GXT: Weazel Plaza, Apt 70 */, 16);
 			break;
 		
 		case 37:
-			StringCopy(&Var0, "MP_PROP_37", 16);
+			StringCopy(&Var0, "MP_PROP_37" /* GXT: Weazel Plaza, Apt 26 */, 16);
 			break;
 		
 		case 38:
-			StringCopy(&Var0, "MP_PROP_38", 16);
+			StringCopy(&Var0, "MP_PROP_38" /* GXT: 4 Integrity Way, Apt 30 */, 16);
 			break;
 		
 		case 39:
-			StringCopy(&Var0, "MP_PROP_39", 16);
+			StringCopy(&Var0, "MP_PROP_39" /* GXT: 4 Integrity Way, Apt 35 */, 16);
 			break;
 		
 		case 40:
-			StringCopy(&Var0, "MP_PROP_40", 16);
+			StringCopy(&Var0, "MP_PROP_40" /* GXT: Richards Majestic, Apt 4 */, 16);
 			break;
 		
 		case 41:
-			StringCopy(&Var0, "MP_PROP_41", 16);
+			StringCopy(&Var0, "MP_PROP_41" /* GXT: Richards Majestic, Apt 51 */, 16);
 			break;
 		
 		case 42:
-			StringCopy(&Var0, "MP_PROP_42", 16);
+			StringCopy(&Var0, "MP_PROP_42" /* GXT: Tinsel Towers, Apt 45 */, 16);
 			break;
 		
 		case 43:
-			StringCopy(&Var0, "MP_PROP_43", 16);
+			StringCopy(&Var0, "MP_PROP_43" /* GXT: Tinsel Towers, Apt 29 */, 16);
 			break;
 		
 		case 44:
-			StringCopy(&Var0, "MP_PROP_44", 16);
+			StringCopy(&Var0, "MP_PROP_44" /* GXT: 142 Paleto Blvd */, 16);
 			break;
 		
 		case 45:
-			StringCopy(&Var0, "MP_PROP_45", 16);
+			StringCopy(&Var0, "MP_PROP_45" /* GXT: 1 Strawberry Ave */, 16);
 			break;
 		
 		case 46:
-			StringCopy(&Var0, "MP_PROP_46", 16);
+			StringCopy(&Var0, "MP_PROP_46" /* GXT: 1932 Grapeseed Ave */, 16);
 			break;
 		
 		case 47:
-			StringCopy(&Var0, "MP_PROP_48", 16);
+			StringCopy(&Var0, "MP_PROP_48" /* GXT: 1920 Senora Way */, 16);
 			break;
 		
 		case 48:
-			StringCopy(&Var0, "MP_PROP_49", 16);
+			StringCopy(&Var0, "MP_PROP_49" /* GXT: 2000 Great Ocean Highway */, 16);
 			break;
 		
 		case 49:
-			StringCopy(&Var0, "MP_PROP_50", 16);
+			StringCopy(&Var0, "MP_PROP_50" /* GXT: 197 Route 68 */, 16);
 			break;
 		
 		case 50:
-			StringCopy(&Var0, "MP_PROP_51", 16);
+			StringCopy(&Var0, "MP_PROP_51" /* GXT: 870 Route 68 Approach */, 16);
 			break;
 		
 		case 51:
-			StringCopy(&Var0, "MP_PROP_52", 16);
+			StringCopy(&Var0, "MP_PROP_52" /* GXT: 1200 Route 68 */, 16);
 			break;
 		
 		case 52:
-			StringCopy(&Var0, "MP_PROP_57", 16);
+			StringCopy(&Var0, "MP_PROP_57" /* GXT: 8754 Route 68 */, 16);
 			break;
 		
 		case 53:
-			StringCopy(&Var0, "MP_PROP_59", 16);
+			StringCopy(&Var0, "MP_PROP_59" /* GXT: 1905 Davis Ave */, 16);
 			break;
 		
 		case 54:
-			StringCopy(&Var0, "MP_PROP_60", 16);
+			StringCopy(&Var0, "MP_PROP_60" /* GXT: 1623 South Shambles St */, 16);
 			break;
 		
 		case 55:
-			StringCopy(&Var0, "MP_PROP_61", 16);
+			StringCopy(&Var0, "MP_PROP_61" /* GXT: 4531 Dry Dock St */, 16);
 			break;
 		
 		case 56:
-			StringCopy(&Var0, "MP_PROP_62", 16);
+			StringCopy(&Var0, "MP_PROP_62" /* GXT: 1337 Exceptionalists Way */, 16);
 			break;
 		
 		case 57:
-			StringCopy(&Var0, "MP_PROP_63", 16);
+			StringCopy(&Var0, "MP_PROP_63" /* GXT: Unit 76 Greenwich Parkway */, 16);
 			break;
 		
 		case 58:
-			StringCopy(&Var0, "MP_PROP_64", 16);
+			StringCopy(&Var0, "MP_PROP_64" /* GXT: Garage Innocence Blvd */, 16);
 			break;
 		
 		case 59:
-			StringCopy(&Var0, "MP_PROP_65", 16);
+			StringCopy(&Var0, "MP_PROP_65" /* GXT: 634 Blvd Del Perro */, 16);
 			break;
 		
 		case 60:
-			StringCopy(&Var0, "MP_PROP_66", 16);
+			StringCopy(&Var0, "MP_PROP_66" /* GXT: 0897 Mirror Park Blvd */, 16);
 			break;
 		
 		case 61:
-			StringCopy(&Var0, "MP_PROP_67", 16);
+			StringCopy(&Var0, "MP_PROP_67" /* GXT: Eclipse Towers, Apt 3 */, 16);
 			break;
 		
 		case 62:
-			StringCopy(&Var0, "MP_PROP_68", 16);
+			StringCopy(&Var0, "MP_PROP_68" /* GXT: Del Perro Heights, Apt 4 */, 16);
 			break;
 		
 		case 63:
-			StringCopy(&Var0, "MP_PROP_69", 16);
+			StringCopy(&Var0, "MP_PROP_69" /* GXT: Richards Majestic, Apt 2 */, 16);
 			break;
 		
 		case 64:
-			StringCopy(&Var0, "MP_PROP_70", 16);
+			StringCopy(&Var0, "MP_PROP_70" /* GXT: Tinsel Towers, Apt 42 */, 16);
 			break;
 		
 		case 65:
-			StringCopy(&Var0, "MP_PROP_71", 16);
+			StringCopy(&Var0, "MP_PROP_71" /* GXT: 4 Integrity Way, Apt 28 */, 16);
 			break;
 		
 		case 66:
-			StringCopy(&Var0, "MP_PROP_72", 16);
+			StringCopy(&Var0, "MP_PROP_72" /* GXT: 4 Hangman Ave */, 16);
 			break;
 		
 		case 67:
-			StringCopy(&Var0, "MP_PROP_73", 16);
+			StringCopy(&Var0, "MP_PROP_73" /* GXT: 12 Sustancia Rd */, 16);
 			break;
 		
 		case 68:
-			StringCopy(&Var0, "MP_PROP_74", 16);
+			StringCopy(&Var0, "MP_PROP_74" /* GXT: 4584 Procopio Dr */, 16);
 			break;
 		
 		case 69:
-			StringCopy(&Var0, "MP_PROP_75", 16);
+			StringCopy(&Var0, "MP_PROP_75" /* GXT: 4401 Procopio Dr */, 16);
 			break;
 		
 		case 70:
-			StringCopy(&Var0, "MP_PROP_76", 16);
+			StringCopy(&Var0, "MP_PROP_76" /* GXT: 0232 Paleto Blvd */, 16);
 			break;
 		
 		case 71:
-			StringCopy(&Var0, "MP_PROP_77", 16);
+			StringCopy(&Var0, "MP_PROP_77" /* GXT: 140 Zancudo Ave */, 16);
 			break;
 		
 		case 72:
-			StringCopy(&Var0, "MP_PROP_78", 16);
+			StringCopy(&Var0, "MP_PROP_78" /* GXT: 1893 Grapeseed Ave */, 16);
 			break;
 		
 		case 83:
-			StringCopy(&Var0, "MP_PROP_79", 16);
+			StringCopy(&Var0, "MP_PROP_79" /* GXT: Eclipse Towers, Penthouse Suite 1 */, 16);
 			break;
 		
 		case 84:
-			StringCopy(&Var0, "MP_PROP_80", 16);
+			StringCopy(&Var0, "MP_PROP_80" /* GXT: Eclipse Towers, Penthouse Suite 2 */, 16);
 			break;
 		
 		case 85:
-			StringCopy(&Var0, "MP_PROP_81", 16);
+			StringCopy(&Var0, "MP_PROP_81" /* GXT: Eclipse Towers, Penthouse Suite 3 */, 16);
 			break;
 		
 		case 73:
-			StringCopy(&Var0, "MP_PROP_83", 16);
+			StringCopy(&Var0, "MP_PROP_83" /* GXT: 3655 Wild Oats Drive */, 16);
 			break;
 		
 		case 74:
-			StringCopy(&Var0, "MP_PROP_84", 16);
+			StringCopy(&Var0, "MP_PROP_84" /* GXT: 2044 North Conker Avenue */, 16);
 			break;
 		
 		case 75:
-			StringCopy(&Var0, "MP_PROP_85", 16);
+			StringCopy(&Var0, "MP_PROP_85" /* GXT: 2868 Hillcrest Avenue */, 16);
 			break;
 		
 		case 76:
-			StringCopy(&Var0, "MP_PROP_86", 16);
+			StringCopy(&Var0, "MP_PROP_86" /* GXT: 2862 Hillcrest Avenue */, 16);
 			break;
 		
 		case 77:
-			StringCopy(&Var0, "MP_PROP_87", 16);
+			StringCopy(&Var0, "MP_PROP_87" /* GXT: 3677 Whispymound Drive */, 16);
 			break;
 		
 		case 78:
-			StringCopy(&Var0, "MP_PROP_89", 16);
+			StringCopy(&Var0, "MP_PROP_89" /* GXT: 2117 Milton Road */, 16);
 			break;
 		
 		case 79:
-			StringCopy(&Var0, "MP_PROP_90", 16);
+			StringCopy(&Var0, "MP_PROP_90" /* GXT: 2866 Hillcrest Avenue */, 16);
 			break;
 		
 		case 80:
-			StringCopy(&Var0, "MP_PROP_92", 16);
+			StringCopy(&Var0, "MP_PROP_92" /* GXT: 2874 Hillcrest Avenue */, 16);
 			break;
 		
 		case 81:
-			StringCopy(&Var0, "MP_PROP_94", 16);
+			StringCopy(&Var0, "MP_PROP_94" /* GXT: 2113 Mad Wayne Thunder Drive */, 16);
 			break;
 		
 		case 82:
-			StringCopy(&Var0, "MP_PROP_95", 16);
+			StringCopy(&Var0, "MP_PROP_95" /* GXT: 2045 North Conker Avenue */, 16);
 			break;
 		
 		case 86:
-			StringCopy(&Var0, "PM_SPAWN_Y", 16);
+			StringCopy(&Var0, "PM_SPAWN_Y" /* GXT: Private Yacht */, 16);
 			break;
 		
 		case 87:
-			StringCopy(&Var0, "MP_PROP_OFF1", 16);
+			StringCopy(&Var0, "MP_PROP_OFF1" /* GXT: Lombank West */, 16);
 			break;
 		
 		case 88:
-			StringCopy(&Var0, "MP_PROP_OFF2", 16);
+			StringCopy(&Var0, "MP_PROP_OFF2" /* GXT: Maze Bank West */, 16);
 			break;
 		
 		case 89:
-			StringCopy(&Var0, "MP_PROP_OFF3", 16);
+			StringCopy(&Var0, "MP_PROP_OFF3" /* GXT: Arcadius Business Center */, 16);
 			break;
 		
 		case 90:
-			StringCopy(&Var0, "MP_PROP_OFF4", 16);
+			StringCopy(&Var0, "MP_PROP_OFF4" /* GXT: Maze Bank Tower */, 16);
 			break;
 		
 		case 91:
-			StringCopy(&Var0, "MP_PROP_CLUBH1", 16);
+			StringCopy(&Var0, "MP_PROP_CLUBH1" /* GXT: Rancho Clubhouse */, 16);
 			break;
 		
 		case 92:
-			StringCopy(&Var0, "MP_PROP_CLUBH2", 16);
+			StringCopy(&Var0, "MP_PROP_CLUBH2" /* GXT: Del Perro Beach Clubhouse */, 16);
 			break;
 		
 		case 93:
-			StringCopy(&Var0, "MP_PROP_CLUBH3", 16);
+			StringCopy(&Var0, "MP_PROP_CLUBH3" /* GXT: Pillbox Hill Clubhouse */, 16);
 			break;
 		
 		case 94:
-			StringCopy(&Var0, "MP_PROP_CLUBH4", 16);
+			StringCopy(&Var0, "MP_PROP_CLUBH4" /* GXT: Great Chaparral Clubhouse */, 16);
 			break;
 		
 		case 95:
-			StringCopy(&Var0, "MP_PROP_CLUBH5", 16);
+			StringCopy(&Var0, "MP_PROP_CLUBH5" /* GXT: Paleto Bay Clubhouse */, 16);
 			break;
 		
 		case 96:
-			StringCopy(&Var0, "MP_PROP_CLUBH6", 16);
+			StringCopy(&Var0, "MP_PROP_CLUBH6" /* GXT: Sandy Shores Clubhouse */, 16);
 			break;
 		
 		case 97:
-			StringCopy(&Var0, "MP_PROP_CLUBH7", 16);
+			StringCopy(&Var0, "MP_PROP_CLUBH7" /* GXT: La Mesa Clubhouse */, 16);
 			break;
 		
 		case 98:
-			StringCopy(&Var0, "MP_PROP_CLUBH8", 16);
+			StringCopy(&Var0, "MP_PROP_CLUBH8" /* GXT: Downtown Vinewood Clubhouse */, 16);
 			break;
 		
 		case 99:
-			StringCopy(&Var0, "MP_PROP_CLUBH9", 16);
+			StringCopy(&Var0, "MP_PROP_CLUBH9" /* GXT: Hawick Clubhouse */, 16);
 			break;
 		
 		case 100:
-			StringCopy(&Var0, "MP_PROP_CLUBH10", 16);
+			StringCopy(&Var0, "MP_PROP_CLUBH10" /* GXT: Grapeseed Clubhouse */, 16);
 			break;
 		
 		case 101:
-			StringCopy(&Var0, "MP_PROP_CLUBH11", 16);
+			StringCopy(&Var0, "MP_PROP_CLUBH11" /* GXT: Paleto Bay Clubhouse */, 16);
 			break;
 		
 		case 102:
-			StringCopy(&Var0, "MP_PROP_CLUBH12", 16);
+			StringCopy(&Var0, "MP_PROP_CLUBH12" /* GXT: Vespucci Beach Clubhouse */, 16);
 			break;
 		
 		case 103:
 		case 106:
 		case 109:
 		case 112:
-			StringCopy(&Var0, "MP_PROP_OFFG1", 16);
+			StringCopy(&Var0, "MP_PROP_OFFG1" /* GXT: Office Garage 1 */, 16);
 			break;
 		
 		case 104:
 		case 107:
 		case 110:
 		case 113:
-			StringCopy(&Var0, "MP_PROP_OFFG2", 16);
+			StringCopy(&Var0, "MP_PROP_OFFG2" /* GXT: Office Garage 2 */, 16);
 			break;
 		
 		case 105:
 		case 108:
 		case 111:
 		case 114:
-			StringCopy(&Var0, "MP_PROP_OFFG3", 16);
+			StringCopy(&Var0, "MP_PROP_OFFG3" /* GXT: Office Garage 3 */, 16);
 			break;
 		
 		case 115:
-			StringCopy(&Var0, "IE_WARE_1", 16);
+			StringCopy(&Var0, "IE_WARE_1" /* GXT: Vehicle Warehouse */, 16);
 			break;
 	}
 	return Var0;

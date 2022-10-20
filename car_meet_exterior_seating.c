@@ -402,7 +402,7 @@ void func_3(int iParam0)//Position - 0x143
 
 void func_4(var uParam0, int iParam1)//Position - 0x161
 {
-	if (((func_5("MPOF_AC_PC_EXIT") || func_5("MPOF_AC_EXIT")) || func_5("MPOFSEAT_PCEXIT")) || func_5("MPOFSEAT_EXIT"))
+	if (((func_5("MPOF_AC_PC_EXIT" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */) || func_5("MPOF_AC_EXIT" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || func_5("MPOFSEAT_PCEXIT" /* GXT: Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */)) || func_5("MPOFSEAT_EXIT" /* GXT: Press ~INPUT_FRONTEND_RIGHT~ to stand up. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -508,7 +508,7 @@ void func_8(var uParam0)//Position - 0x260
 					{
 						if (uParam0->f_6 == -1)
 						{
-							func_45(&(uParam0->f_6), 4, "POD_TOO_MANY", 0, 0, 0, 0);
+							func_45(&(uParam0->f_6), 4, "POD_TOO_MANY" /* GXT: Too many players near activity. */, 0, 0, 0, 0);
 						}
 					}
 					else
@@ -525,7 +525,7 @@ void func_8(var uParam0)//Position - 0x260
 					{
 						if ((MISC::GET_GAME_TIMER() - uParam0->f_11) > 150)
 						{
-							func_45(&(uParam0->f_6), 4, "MPJAC_SIT", 0, 0, 0, 0);
+							func_45(&(uParam0->f_6), 4, "MPJAC_SIT" /* GXT: Press ~INPUT_CONTEXT~ to sit down. */, 0, 0, 0, 0);
 						}
 					}
 					else if (PAD::IS_CONTROL_JUST_PRESSED(0, 51))
@@ -859,20 +859,20 @@ void func_15(var uParam0)//Position - 0x9C8
 					{
 						if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 						{
-							func_45(&(uParam0->f_6), 4, "MPOF_AC_PC_EXIT", 0, 0, 0, 0);
+							func_45(&(uParam0->f_6), 4, "MPOF_AC_PC_EXIT" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
 						}
 						else
 						{
-							func_45(&(uParam0->f_6), 4, "MPOF_AC_EXIT", 0, 0, 0, 0);
+							func_45(&(uParam0->f_6), 4, "MPOF_AC_EXIT" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
 						}
 					}
 					else if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 					{
-						func_45(&(uParam0->f_6), 4, "MPOFSEAT_PCEXIT", 0, 0, 0, 0);
+						func_45(&(uParam0->f_6), 4, "MPOFSEAT_PCEXIT" /* GXT: Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
 					}
 					else
 					{
-						func_45(&(uParam0->f_6), 4, "MPOFSEAT_EXIT", 0, 0, 0, 0);
+						func_45(&(uParam0->f_6), 4, "MPOFSEAT_EXIT" /* GXT: Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
 					}
 				}
 				if (uParam0->f_13 == 6)

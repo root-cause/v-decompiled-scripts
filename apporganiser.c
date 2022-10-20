@@ -195,31 +195,31 @@ void func_4(int iParam0, bool bParam1)//Position - 0x25C
 				switch (iVar0)
 				{
 					case 0:
-						sVar6 = "fSu";
+						sVar6 = "fSu" /* GXT: SUNDAY */;
 						break;
 					
 					case 1:
-						sVar6 = "fMo";
+						sVar6 = "fMo" /* GXT: MONDAY */;
 						break;
 					
 					case 2:
-						sVar6 = "fTu";
+						sVar6 = "fTu" /* GXT: TUESDAY */;
 						break;
 					
 					case 3:
-						sVar6 = "fWe";
+						sVar6 = "fWe" /* GXT: WEDNESDAY */;
 						break;
 					
 					case 4:
-						sVar6 = "fTh";
+						sVar6 = "fTh" /* GXT: THURSDAY */;
 						break;
 					
 					case 5:
-						sVar6 = "fFr";
+						sVar6 = "fFr" /* GXT: FRIDAY */;
 						break;
 					
 					case 6:
-						sVar6 = "fSa";
+						sVar6 = "fSa" /* GXT: SATURDAY */;
 						break;
 				}
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT_EMPTY");
@@ -260,14 +260,14 @@ char* func_5(int iParam0)//Position - 0x3D0
 	switch (iParam0)
 	{
 		case 0:
-			return "ORG_EV_0";
+			return "ORG_EV_0" /* GXT: NOT SET! */;
 			break;
 		
 		case 1:
-			return "ORG_EV_1";
+			return "ORG_EV_1" /* GXT: House Viewing */;
 			break;
 	}
-	return "ORG_EV_0";
+	return "ORG_EV_0" /* GXT: NOT SET! */;
 }
 
 void func_6(char* sParam0)//Position - 0x400

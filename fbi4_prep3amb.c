@@ -655,8 +655,8 @@ void func_16(int iParam0)//Position - 0x580
 					if (GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(iLocal_74))
 					{
 						GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_74, "SHOW_MISSION_PASSED_MESSAGE");
-						func_92("M_FB4P3_P");
-						func_92("M_FB4P3");
+						func_92("M_FB4P3_P" /* GXT: ~y~Mission Passed */);
+						func_92("M_FB4P3" /* GXT: Getaway Vehicle */);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(100);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
@@ -707,7 +707,7 @@ void func_16(int iParam0)//Position - 0x580
 				{
 					VEHICLE::SET_VEHICLE_DOORS_LOCKED(iLocal_51, 1);
 				}
-				func_83("M_FHPE", func_84());
+				func_83("M_FHPE" /* GXT: Getaway Vehicle */, func_84());
 				func_80(2, 0);
 				break;
 			}
@@ -7493,12 +7493,12 @@ void func_165()//Position - 0x93ED
 	{
 		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("");
 		StringCopy(&cVar1, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_8746[1 /*6*/])), 64);
-		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253");
+		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253" /* GXT: New Contact */);
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, sVar2, &cVar1);
 	}
 	else
 	{
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_255");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_255" /* GXT: New Contact: ~n~~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_8746[1 /*6*/]));
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, "", 0);
 	}
@@ -7538,7 +7538,7 @@ void func_170(int iParam0)//Position - 0x94EC
 {
 	if (!MISC::IS_STRING_NULL_OR_EMPTY(Local_44.f_6))
 	{
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "SanAnd"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "SanAnd" /* GXT: San Andreas */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7554,7 +7554,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Alamo"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Alamo" /* GXT: Alamo Sea */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7570,7 +7570,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Alta"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Alta" /* GXT: Alta */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7586,7 +7586,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Airp"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Airp" /* GXT: Los Santos International Airport */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7602,7 +7602,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "ArmyB"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "ArmyB" /* GXT: Fort Zancudo */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7618,7 +7618,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "BhamCa"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "BhamCa" /* GXT: Banham Canyon */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7634,7 +7634,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Banning"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Banning" /* GXT: Banning */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7650,7 +7650,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Baytre"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Baytre" /* GXT: Baytree Canyon */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7666,7 +7666,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Beach"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Beach" /* GXT: Vespucci Beach */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7682,7 +7682,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "BradT"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "BradT" /* GXT: Braddock Tunnel */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7698,7 +7698,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "BradP"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "BradP" /* GXT: Braddock Pass */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7714,7 +7714,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Burton"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Burton" /* GXT: Burton */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7730,7 +7730,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "CANNY"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "CANNY" /* GXT: Raton Canyon */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7746,7 +7746,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "CCreak"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "CCreak" /* GXT: Cassidy Creek */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7762,7 +7762,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "CalafB"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "CalafB" /* GXT: Calafia Bridge */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7778,7 +7778,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "ChamH"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "ChamH" /* GXT: Chamberlain Hills */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7794,7 +7794,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "CHU"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "CHU" /* GXT: Chumash */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7810,7 +7810,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "CHIL"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "CHIL" /* GXT: Vinewood Hills */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7826,7 +7826,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "COSI"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "COSI" /* GXT: Countryside */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7842,7 +7842,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "CMSW"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "CMSW" /* GXT: Chiliad Mountain State Wilderness */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7858,7 +7858,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Cypre"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Cypre" /* GXT: Cypress Flats */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7874,7 +7874,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Davis"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Davis" /* GXT: Davis */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7890,7 +7890,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Desrt"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Desrt" /* GXT: Grand Senora Desert */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7906,7 +7906,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "DelBe"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "DelBe" /* GXT: Del Perro Beach */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7922,7 +7922,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "DelPe"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "DelPe" /* GXT: Del Perro */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7938,7 +7938,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "DelSol"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "DelSol" /* GXT: La Puerta */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7954,7 +7954,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Downt"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Downt" /* GXT: Downtown */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7970,7 +7970,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "DTVine"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "DTVine" /* GXT: Downtown Vinewood */))
 		{
 			if (iParam0 == 0)
 			{
@@ -7986,7 +7986,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Eclips"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Eclips" /* GXT: Eclipse */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8002,7 +8002,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "ELSant"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "ELSant" /* GXT: East Los Santos */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8018,7 +8018,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "EBuro"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "EBuro" /* GXT: El Burro Heights */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8034,7 +8034,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "ELGorl"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "ELGorl" /* GXT: El Gordo Lighthouse */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8050,7 +8050,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Elysian"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Elysian" /* GXT: Elysian Island */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8066,7 +8066,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Galli"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Galli" /* GXT: Galileo Park */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8082,7 +8082,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Galfish"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Galfish" /* GXT: Galilee */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8098,7 +8098,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Greatc"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Greatc" /* GXT: Great Chaparral */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8114,7 +8114,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Golf"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Golf" /* GXT: GWC and Golfing Society */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8130,7 +8130,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "GrapeS"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "GrapeS" /* GXT: Grapeseed */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8146,7 +8146,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Hawick"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Hawick" /* GXT: Hawick */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8162,7 +8162,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Harmo"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Harmo" /* GXT: Harmony */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8178,7 +8178,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Heart"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Heart" /* GXT: Heart Attacks Beach */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8194,7 +8194,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "HumLab"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "HumLab" /* GXT: Humane Labs and Research */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8210,7 +8210,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "HORS"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "HORS" /* GXT: Vinewood Racetrack */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8226,7 +8226,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Koreat"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Koreat" /* GXT: Little Seoul */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8242,7 +8242,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Jail"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Jail" /* GXT: Bolingbroke Penitentiary */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8258,7 +8258,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "LAct"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "LAct" /* GXT: Land Act Reservoir */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8274,7 +8274,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "LDam"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "LDam" /* GXT: Land Act Dam */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8290,7 +8290,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Lago"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Lago" /* GXT: Lago Zancudo */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8306,7 +8306,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "LegSqu"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "LegSqu" /* GXT: Legion Square */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8322,7 +8322,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "LosSF"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "LosSF" /* GXT: Los Santos Freeway */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8338,7 +8338,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "LMesa"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "LMesa" /* GXT: La Mesa */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8354,7 +8354,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "LosPuer"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "LosPuer" /* GXT: La Puerta */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8370,7 +8370,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "LosPFy"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "LosPFy" /* GXT: La Puerta Fwy */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8386,7 +8386,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "LOSTMC"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "LOSTMC" /* GXT: Lost MC */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8402,7 +8402,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Mirr"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Mirr" /* GXT: Mirror Park */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8418,7 +8418,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Morn"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Morn" /* GXT: Morningwood */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8434,7 +8434,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Murri"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Murri" /* GXT: Murrieta Heights */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8450,7 +8450,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "MTChil"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "MTChil" /* GXT: Mount Chiliad */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8466,7 +8466,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "MTJose"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "MTJose" /* GXT: Mount Josiah */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8482,7 +8482,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "MTGordo"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "MTGordo" /* GXT: Mount Gordo */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8498,7 +8498,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Movie"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Movie" /* GXT: Richards Majestic */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8514,7 +8514,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "NCHU"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "NCHU" /* GXT: North Chumash */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8530,7 +8530,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Noose"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Noose" /* GXT: N.O.O.S.E */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8546,7 +8546,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Oceana"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Oceana" /* GXT: Pacific Ocean */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8562,7 +8562,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Observ"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Observ" /* GXT: Galileo Observatory */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8578,7 +8578,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Palmpow"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Palmpow" /* GXT: Palmer-Taylor Power Station */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8594,7 +8594,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "PBOX"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "PBOX" /* GXT: Pillbox Hill */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8610,7 +8610,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "PBluff"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "PBluff" /* GXT: Pacific Bluffs */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8626,7 +8626,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Paleto"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Paleto" /* GXT: Paleto Bay */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8642,7 +8642,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "PalCov"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "PalCov" /* GXT: Paleto Cove */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8658,7 +8658,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "PalFor"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "PalFor" /* GXT: Paleto Forest */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8674,7 +8674,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "PalHigh"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "PalHigh" /* GXT: Palomino Highlands */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8690,7 +8690,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "ProcoB"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "ProcoB" /* GXT: Procopio Beach */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8706,7 +8706,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Prol"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Prol" /* GXT: North Yankton */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8722,7 +8722,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "RTRAK"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "RTRAK" /* GXT: Redwood Lights Track */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8738,7 +8738,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Rancho"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Rancho" /* GXT: Rancho */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8754,7 +8754,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "RGLEN"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "RGLEN" /* GXT: Richman Glen */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8770,7 +8770,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Richm"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Richm" /* GXT: Richman */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8786,7 +8786,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Rockf"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Rockf" /* GXT: Rockford Hills */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8802,7 +8802,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "SANDY"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "SANDY" /* GXT: Sandy Shores */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8818,7 +8818,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "TongvaH"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "TongvaH" /* GXT: Tongva Hills */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8834,7 +8834,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "TongvaV"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "TongvaV" /* GXT: Tongva Valley */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8850,7 +8850,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "East_V"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "East_V" /* GXT: East Vinewood */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8866,7 +8866,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Zenora"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Zenora" /* GXT: Senora Freeway */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8882,7 +8882,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Slab"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Slab" /* GXT: Stab City */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8898,7 +8898,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "SKID"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "SKID" /* GXT: Mission Row */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8914,7 +8914,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "SLSant"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "SLSant" /* GXT: South Los Santos */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8930,7 +8930,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Stad"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Stad" /* GXT: Maze Bank Arena */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8946,7 +8946,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Tatamo"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Tatamo" /* GXT: Tataviam Mountains */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8962,7 +8962,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Termina"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Termina" /* GXT: Terminal */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8978,7 +8978,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "TEXTI"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "TEXTI" /* GXT: Textile City */))
 		{
 			if (iParam0 == 0)
 			{
@@ -8994,7 +8994,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "WVine"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "WVine" /* GXT: West Vinewood */))
 		{
 			if (iParam0 == 0)
 			{
@@ -9010,7 +9010,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "UtopiaG"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "UtopiaG" /* GXT: Utopia Gardens */))
 		{
 			if (iParam0 == 0)
 			{
@@ -9026,7 +9026,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Vesp"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Vesp" /* GXT: Vespucci */))
 		{
 			if (iParam0 == 0)
 			{
@@ -9042,7 +9042,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "VCana"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "VCana" /* GXT: Vespucci Canals */))
 		{
 			if (iParam0 == 0)
 			{
@@ -9058,7 +9058,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Vine"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Vine" /* GXT: Vinewood */))
 		{
 			if (iParam0 == 0)
 			{
@@ -9074,7 +9074,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "WMirror"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "WMirror" /* GXT: West Mirror Drive */))
 		{
 			if (iParam0 == 0)
 			{
@@ -9090,7 +9090,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "WindF"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "WindF" /* GXT: Ron Alternates Wind Farm */))
 		{
 			if (iParam0 == 0)
 			{
@@ -9106,7 +9106,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Zancudo"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "Zancudo" /* GXT: Zancudo River */))
 		{
 			if (iParam0 == 0)
 			{
@@ -9122,7 +9122,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "SanChia"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "SanChia" /* GXT: San Chianski Mountain Range */))
 		{
 			if (iParam0 == 0)
 			{
@@ -9138,7 +9138,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "STRAW"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "STRAW" /* GXT: Strawberry */))
 		{
 			if (iParam0 == 0)
 			{
@@ -9154,7 +9154,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "zQ_UAR"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "zQ_UAR" /* GXT: Davis Quartz */))
 		{
 			if (iParam0 == 0)
 			{
@@ -9170,7 +9170,7 @@ void func_170(int iParam0)//Position - 0x94EC
 			}
 			return;
 		}
-		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "ZP_ORT"))
+		if (MISC::ARE_STRINGS_EQUAL(Local_44.f_6, "ZP_ORT" /* GXT: Port of South Los Santos */))
 		{
 			if (iParam0 == 0)
 			{
@@ -12243,9 +12243,9 @@ void func_253(int iParam0)//Position - 0xE13C
 
 void func_254()//Position - 0xE202
 {
-	sLocal_45[0] = "AM_H_FBIC1A";
-	sLocal_45[1] = "AM_H_FBIC1B";
-	sLocal_45[2] = "AM_H_FBIC1C";
+	sLocal_45[0] = "AM_H_FBIC1A" /* GXT: This area is unsuitable for the getaway vehicle. Find a more discreet location. */;
+	sLocal_45[1] = "AM_H_FBIC1B" /* GXT: The getaway vehicle cannot be placed while meeting a friend. */;
+	sLocal_45[2] = "AM_H_FBIC1C" /* GXT: The getaway vehicle cannot be placed while on a taxi job. */;
 	sLocal_45[3] = "PRC_WANT";
 	sLocal_45[4] = "PRC_DROPOFF";
 	sLocal_45[5] = "PRC_INVALVEH";
@@ -12417,116 +12417,116 @@ char* func_255(int iParam0)//Position - 0xE3DF
 
 void func_256()//Position - 0xE5A5
 {
-	sLocal_69[0] = "ARMYB";
-	sLocal_69[1] = "AIRP";
-	sLocal_69[2] = "STAD";
-	sLocal_69[3] = "TERMINA";
-	sLocal_69[4] = "MOVIE";
-	sLocal_69[5] = "JAIL";
-	sLocal_69[6] = "OCEANA";
-	sLocal_69[7] = "GOLF";
-	sLocal_69[8] = "HORS";
-	sLocal_69[9] = "MTCHIL";
-	sLocal_69[10] = "MTGORDO";
-	sLocal_69[11] = "SANCHIA";
-	sLocal_69[12] = "TATAMO";
-	Local_68[0 /*261*/][0 /*8*/] = { func_257("DELBE", -1615.257f, -952.5944f, 20.01716f, -2160.706f, -423f, -1.28679f, 327.8f) };
-	Local_68[0 /*261*/][1 /*8*/] = { func_257("DELBE", -1521.716f, -914.5676f, 20.17247f, -1855.715f, -1325.784f, -44.79295f, 254.8f) };
-	Local_68[0 /*261*/][2 /*8*/] = { func_257("BEACH", -1162.37f, -1815.008f, 15.33822f, -1553.207f, -1098.685f, 0.46467f, 253.91f) };
-	Local_68[0 /*261*/][3 /*8*/] = { func_257("BEACH", -1464.219f, -1136.783f, 0.32167f, -2241.566f, -358.8849f, 20.32481f, 282.21f) };
-	Local_68[0 /*261*/][4 /*8*/] = { func_257("PBOX", 156.4109f, -1042.641f, 22.31273f, 238.6382f, -821.1217f, 35.10069f, 176.96f) };
-	Local_68[0 /*261*/][5 /*8*/] = { func_257("CHIL", 883.1121f, 534.7283f, 115.725f, 559.7425f, 644.602f, 150.5971f, 301.08f) };
-	Local_68[0 /*261*/][6 /*8*/] = { func_257("EAST_V", 941.4531f, -329.4256f, 60.77003f, 727.7651f, -200.9519f, 75.59085f, 88.89f) };
-	Local_68[0 /*261*/][7 /*8*/] = { func_257("EAST_V", 689.1177f, -273.1406f, 60.21559f, 834.7326f, -352.1655f, 50.92442f, 81.23f) };
-	Local_68[0 /*261*/][8 /*8*/] = { func_257("MIRR", 1048.499f, -357.0332f, 60.92149f, 1401.581f, -783.8975f, 75.7477f, 325.93f) };
-	Local_68[0 /*261*/][9 /*8*/] = { func_257("MIRR", 892.2836f, -461.5752f, 70.86029f, 1161.301f, -829.8299f, 45.90131f, 184.12f) };
-	Local_68[0 /*261*/][10 /*8*/] = { func_257("VCANA", -1161.361f, -1143.716f, -5.71593f, -864.9714f, -981.1257f, 21.09691f, 328.65f) };
-	Local_68[0 /*261*/][11 /*8*/] = { func_257("BAYTRE", 251.4011f, 1068.347f, 280.6663f, 189.6012f, 1272.352f, 143.8035f, 160.32f) };
-	Local_68[0 /*261*/][13 /*8*/] = { func_257("OBSERV", -450.9835f, 1048.408f, 252.945f, -389.564f, 1244.504f, 370.2469f, 199.93f) };
-	Local_68[0 /*261*/][14 /*8*/] = { func_257("AIRP", 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
-	Local_68[0 /*261*/][15 /*8*/] = { func_257("TERMINA", 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
-	Local_68[0 /*261*/][16 /*8*/] = { func_257("STAD", 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
-	Local_68[0 /*261*/][17 /*8*/] = { func_257("MOVIE", 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
-	Local_68[0 /*261*/][18 /*8*/] = { func_257("GOLF", 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
-	Local_68[0 /*261*/][19 /*8*/] = { func_257("HORS", 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
-	Local_68[0 /*261*/][20 /*8*/] = { func_257("PBOX", -28.39781f, -1071.245f, 50.21438f, -49.8352f, -1131.277f, 20.02555f, 55.12f) };
-	Local_68[0 /*261*/][21 /*8*/] = { func_257("LOSSF", 843.1962f, 25.93548f, 65.16061f, 1138.687f, 363.0587f, 105.4128f, 61.11f) };
-	Local_68[0 /*261*/][22 /*8*/] = { func_257("ROCKF", -992.5638f, -199.7673f, 30.74956f, -687.9904f, -43.23445f, 80.93306f, 80.53f) };
-	Local_68[0 /*261*/][23 /*8*/] = { func_257("ROCKF", -251.8548f, -446.2141f, 29.5887f, -362.685f, -434.7425f, 90.931f, 50f) };
-	Local_68[0 /*261*/][24 /*8*/] = { func_257("ALTA", 180.2637f, -404.9771f, 40.1713f, 289.9432f, -445.1485f, 124.3793f, 100f) };
-	Local_68[0 /*261*/][25 /*8*/] = { func_257("ALTA", 343.8481f, -323.1273f, 80.7749f, 427.08f, -361.0469f, 45.3411f, 85f) };
-	Local_68[0 /*261*/][26 /*8*/] = { func_257("RANCHO", 414.5057f, -2092.1f, 19.8533f, 350.8093f, -2158.395f, 12.3916f, 55f) };
-	Local_68[0 /*261*/][27 /*8*/] = { func_257("RANCHO", 283.7474f, -2103.918f, 12.9242f, 391.8871f, -1983.204f, 33.0042f, 100f) };
-	Local_68[0 /*261*/][28 /*8*/] = { func_257("PBOX", 85.038f, -670.3274f, 42.8642f, 227.8234f, -722.2458f, 274f, 175f) };
-	Local_68[0 /*261*/][29 /*8*/] = { func_257("PBOX", -107.2516f, -906.36f, 28.2051f, -49.9007f, -752.925f, 330f, 125f) };
-	Local_68[0 /*261*/][30 /*8*/] = { func_257("TEXTI", 456.8563f, -683.8335f, 32.2903f, 457.5504f, -819.4669f, 25.9553f, 14.4f) };
-	Local_68[0 /*261*/][31 /*8*/] = { func_257("ROCKF", -699.7205f, -227.3646f, 67.818f, -645.1068f, -332.5107f, 30.9132f, 127.1f) };
+	sLocal_69[0] = "ARMYB" /* GXT: Fort Zancudo */;
+	sLocal_69[1] = "AIRP" /* GXT: Los Santos International Airport */;
+	sLocal_69[2] = "STAD" /* GXT: Maze Bank Arena */;
+	sLocal_69[3] = "TERMINA" /* GXT: Terminal */;
+	sLocal_69[4] = "MOVIE" /* GXT: Richards Majestic */;
+	sLocal_69[5] = "JAIL" /* GXT: Bolingbroke Penitentiary */;
+	sLocal_69[6] = "OCEANA" /* GXT: Pacific Ocean */;
+	sLocal_69[7] = "GOLF" /* GXT: GWC and Golfing Society */;
+	sLocal_69[8] = "HORS" /* GXT: Vinewood Racetrack */;
+	sLocal_69[9] = "MTCHIL" /* GXT: Mount Chiliad */;
+	sLocal_69[10] = "MTGORDO" /* GXT: Mount Gordo */;
+	sLocal_69[11] = "SANCHIA" /* GXT: San Chianski Mountain Range */;
+	sLocal_69[12] = "TATAMO" /* GXT: Tataviam Mountains */;
+	Local_68[0 /*261*/][0 /*8*/] = { func_257("DELBE" /* GXT: Del Perro Beach */, -1615.257f, -952.5944f, 20.01716f, -2160.706f, -423f, -1.28679f, 327.8f) };
+	Local_68[0 /*261*/][1 /*8*/] = { func_257("DELBE" /* GXT: Del Perro Beach */, -1521.716f, -914.5676f, 20.17247f, -1855.715f, -1325.784f, -44.79295f, 254.8f) };
+	Local_68[0 /*261*/][2 /*8*/] = { func_257("BEACH" /* GXT: Vespucci Beach */, -1162.37f, -1815.008f, 15.33822f, -1553.207f, -1098.685f, 0.46467f, 253.91f) };
+	Local_68[0 /*261*/][3 /*8*/] = { func_257("BEACH" /* GXT: Vespucci Beach */, -1464.219f, -1136.783f, 0.32167f, -2241.566f, -358.8849f, 20.32481f, 282.21f) };
+	Local_68[0 /*261*/][4 /*8*/] = { func_257("PBOX" /* GXT: Pillbox Hill */, 156.4109f, -1042.641f, 22.31273f, 238.6382f, -821.1217f, 35.10069f, 176.96f) };
+	Local_68[0 /*261*/][5 /*8*/] = { func_257("CHIL" /* GXT: Vinewood Hills */, 883.1121f, 534.7283f, 115.725f, 559.7425f, 644.602f, 150.5971f, 301.08f) };
+	Local_68[0 /*261*/][6 /*8*/] = { func_257("EAST_V" /* GXT: East Vinewood */, 941.4531f, -329.4256f, 60.77003f, 727.7651f, -200.9519f, 75.59085f, 88.89f) };
+	Local_68[0 /*261*/][7 /*8*/] = { func_257("EAST_V" /* GXT: East Vinewood */, 689.1177f, -273.1406f, 60.21559f, 834.7326f, -352.1655f, 50.92442f, 81.23f) };
+	Local_68[0 /*261*/][8 /*8*/] = { func_257("MIRR" /* GXT: Mirror Park */, 1048.499f, -357.0332f, 60.92149f, 1401.581f, -783.8975f, 75.7477f, 325.93f) };
+	Local_68[0 /*261*/][9 /*8*/] = { func_257("MIRR" /* GXT: Mirror Park */, 892.2836f, -461.5752f, 70.86029f, 1161.301f, -829.8299f, 45.90131f, 184.12f) };
+	Local_68[0 /*261*/][10 /*8*/] = { func_257("VCANA" /* GXT: Vespucci Canals */, -1161.361f, -1143.716f, -5.71593f, -864.9714f, -981.1257f, 21.09691f, 328.65f) };
+	Local_68[0 /*261*/][11 /*8*/] = { func_257("BAYTRE" /* GXT: Baytree Canyon */, 251.4011f, 1068.347f, 280.6663f, 189.6012f, 1272.352f, 143.8035f, 160.32f) };
+	Local_68[0 /*261*/][13 /*8*/] = { func_257("OBSERV" /* GXT: Galileo Observatory */, -450.9835f, 1048.408f, 252.945f, -389.564f, 1244.504f, 370.2469f, 199.93f) };
+	Local_68[0 /*261*/][14 /*8*/] = { func_257("AIRP" /* GXT: Los Santos International Airport */, 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
+	Local_68[0 /*261*/][15 /*8*/] = { func_257("TERMINA" /* GXT: Terminal */, 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
+	Local_68[0 /*261*/][16 /*8*/] = { func_257("STAD" /* GXT: Maze Bank Arena */, 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
+	Local_68[0 /*261*/][17 /*8*/] = { func_257("MOVIE" /* GXT: Richards Majestic */, 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
+	Local_68[0 /*261*/][18 /*8*/] = { func_257("GOLF" /* GXT: GWC and Golfing Society */, 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
+	Local_68[0 /*261*/][19 /*8*/] = { func_257("HORS" /* GXT: Vinewood Racetrack */, 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
+	Local_68[0 /*261*/][20 /*8*/] = { func_257("PBOX" /* GXT: Pillbox Hill */, -28.39781f, -1071.245f, 50.21438f, -49.8352f, -1131.277f, 20.02555f, 55.12f) };
+	Local_68[0 /*261*/][21 /*8*/] = { func_257("LOSSF" /* GXT: Los Santos Freeway */, 843.1962f, 25.93548f, 65.16061f, 1138.687f, 363.0587f, 105.4128f, 61.11f) };
+	Local_68[0 /*261*/][22 /*8*/] = { func_257("ROCKF" /* GXT: Rockford Hills */, -992.5638f, -199.7673f, 30.74956f, -687.9904f, -43.23445f, 80.93306f, 80.53f) };
+	Local_68[0 /*261*/][23 /*8*/] = { func_257("ROCKF" /* GXT: Rockford Hills */, -251.8548f, -446.2141f, 29.5887f, -362.685f, -434.7425f, 90.931f, 50f) };
+	Local_68[0 /*261*/][24 /*8*/] = { func_257("ALTA" /* GXT: Alta */, 180.2637f, -404.9771f, 40.1713f, 289.9432f, -445.1485f, 124.3793f, 100f) };
+	Local_68[0 /*261*/][25 /*8*/] = { func_257("ALTA" /* GXT: Alta */, 343.8481f, -323.1273f, 80.7749f, 427.08f, -361.0469f, 45.3411f, 85f) };
+	Local_68[0 /*261*/][26 /*8*/] = { func_257("RANCHO" /* GXT: Rancho */, 414.5057f, -2092.1f, 19.8533f, 350.8093f, -2158.395f, 12.3916f, 55f) };
+	Local_68[0 /*261*/][27 /*8*/] = { func_257("RANCHO" /* GXT: Rancho */, 283.7474f, -2103.918f, 12.9242f, 391.8871f, -1983.204f, 33.0042f, 100f) };
+	Local_68[0 /*261*/][28 /*8*/] = { func_257("PBOX" /* GXT: Pillbox Hill */, 85.038f, -670.3274f, 42.8642f, 227.8234f, -722.2458f, 274f, 175f) };
+	Local_68[0 /*261*/][29 /*8*/] = { func_257("PBOX" /* GXT: Pillbox Hill */, -107.2516f, -906.36f, 28.2051f, -49.9007f, -752.925f, 330f, 125f) };
+	Local_68[0 /*261*/][30 /*8*/] = { func_257("TEXTI" /* GXT: Textile City */, 456.8563f, -683.8335f, 32.2903f, 457.5504f, -819.4669f, 25.9553f, 14.4f) };
+	Local_68[0 /*261*/][31 /*8*/] = { func_257("ROCKF" /* GXT: Rockford Hills */, -699.7205f, -227.3646f, 67.818f, -645.1068f, -332.5107f, 30.9132f, 127.1f) };
 	Local_68[0 /*261*/].f_260 = 0;
 	Local_68[0 /*261*/].f_257 = 32;
-	Local_68[2 /*261*/][0 /*8*/] = { func_257("PBOX", -25.50944f, -932.3846f, 20.41711f, 119.9406f, -523.4398f, 33.07988f, 363.4f) };
-	Local_68[2 /*261*/][1 /*8*/] = { func_257("DOWNT", -25.50944f, -932.3846f, 20.41711f, 119.9406f, -523.4398f, 33.07988f, 363.4f) };
-	Local_68[2 /*261*/][2 /*8*/] = { func_257("COSI", 1426.934f, 1225.115f, 90.76305f, 1429.982f, 1006.831f, 120.6643f, 259.89f) };
-	Local_68[2 /*261*/][3 /*8*/] = { func_257("COSI", 3503.56f, 3546.403f, 20.18748f, 3513.955f, 3875.795f, 72.94806f, 393.78f) };
-	Local_68[2 /*261*/][4 /*8*/] = { func_257("SKID", 403.5404f, -864.4694f, 20.33799f, 396.3441f, -1127.325f, 35.49262f, 325.93f) };
-	Local_68[2 /*261*/][5 /*8*/] = { func_257("JAIL", 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
-	Local_68[2 /*261*/][6 /*8*/] = { func_257("ARMYB", 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
+	Local_68[2 /*261*/][0 /*8*/] = { func_257("PBOX" /* GXT: Pillbox Hill */, -25.50944f, -932.3846f, 20.41711f, 119.9406f, -523.4398f, 33.07988f, 363.4f) };
+	Local_68[2 /*261*/][1 /*8*/] = { func_257("DOWNT" /* GXT: Downtown */, -25.50944f, -932.3846f, 20.41711f, 119.9406f, -523.4398f, 33.07988f, 363.4f) };
+	Local_68[2 /*261*/][2 /*8*/] = { func_257("COSI" /* GXT: Countryside */, 1426.934f, 1225.115f, 90.76305f, 1429.982f, 1006.831f, 120.6643f, 259.89f) };
+	Local_68[2 /*261*/][3 /*8*/] = { func_257("COSI" /* GXT: Countryside */, 3503.56f, 3546.403f, 20.18748f, 3513.955f, 3875.795f, 72.94806f, 393.78f) };
+	Local_68[2 /*261*/][4 /*8*/] = { func_257("SKID" /* GXT: Mission Row */, 403.5404f, -864.4694f, 20.33799f, 396.3441f, -1127.325f, 35.49262f, 325.93f) };
+	Local_68[2 /*261*/][5 /*8*/] = { func_257("JAIL" /* GXT: Bolingbroke Penitentiary */, 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
+	Local_68[2 /*261*/][6 /*8*/] = { func_257("ARMYB" /* GXT: Fort Zancudo */, 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
 	Local_68[2 /*261*/].f_260 = 2;
 	Local_68[2 /*261*/].f_257 = 7;
-	Local_68[1 /*261*/][0 /*8*/] = { func_257("PALETO", -422.8618f, 6068.399f, 20.34662f, -282.7452f, 6206.324f, 50.46586f, 196.61f) };
-	Local_68[1 /*261*/][1 /*8*/] = { func_257("ROCKF", -755.2506f, 147.4266f, 75.41048f, -1079.033f, 169.3806f, 50.46801f, 179.12f) };
-	Local_68[1 /*261*/][2 /*8*/] = { func_257("ROCKF", -752.3674f, 90.76733f, 65.5171f, -938.798f, -15.91457f, 35.48347f, 205.78f) };
-	Local_68[1 /*261*/][3 /*8*/] = { func_257("ROCKF", -890.4999f, 431.1449f, 90.29848f, -875.3576f, 232.3266f, 60.20724f, 263.82f) };
-	Local_68[1 /*261*/][4 /*8*/] = { func_257("ROCKF", -752.3674f, 90.76733f, 65.5171f, -938.798f, -15.91457f, 35.48347f, 205.78f) };
-	Local_68[1 /*261*/][5 /*8*/] = { func_257("ROCKF", -1198.183f, 638.6367f, 115.1066f, -444.509f, 750.9377f, 198.2971f, 473.88f) };
-	Local_68[1 /*261*/][6 /*8*/] = { func_257("ROCKF", -844.4075f, 400.9413f, 80.433f, -109.5311f, 420.5014f, 120.2088f, 256.03f) };
-	Local_68[1 /*261*/][7 /*8*/] = { func_257("ROCKF", -518.6213f, 648.8265f, 130.9352f, -64.0709f, 582.4504f, 215.3084f, 162.72f) };
-	Local_68[1 /*261*/][8 /*8*/] = { func_257("RICHM", -934.9802f, 349.6101f, 85.77298f, -1432.451f, 269.9804f, 50.7303f, 185.03f) };
-	Local_68[1 /*261*/][9 /*8*/] = { func_257("RICHM", -1633.813f, -69.53224f, 65.10236f, -1446.823f, 69.71544f, 48.23926f, 214.92f) };
-	Local_68[1 /*261*/][10 /*8*/] = { func_257("RICHM", -1732.258f, 444.1353f, 130.1258f, -2065.69f, 412.2121f, 98.09863f, 175.17f) };
-	Local_68[1 /*261*/][11 /*8*/] = { func_257("RICHM", -1618.036f, 50.95197f, 70.95364f, -1396.514f, 221.1004f, 50.84464f, 161.61f) };
-	Local_68[1 /*261*/][12 /*8*/] = { func_257("RICHM", -1801.285f, 106.8786f, 72.12892f, -1541.74f, 263.3738f, 50.44112f, 155.88f) };
+	Local_68[1 /*261*/][0 /*8*/] = { func_257("PALETO" /* GXT: Paleto Bay */, -422.8618f, 6068.399f, 20.34662f, -282.7452f, 6206.324f, 50.46586f, 196.61f) };
+	Local_68[1 /*261*/][1 /*8*/] = { func_257("ROCKF" /* GXT: Rockford Hills */, -755.2506f, 147.4266f, 75.41048f, -1079.033f, 169.3806f, 50.46801f, 179.12f) };
+	Local_68[1 /*261*/][2 /*8*/] = { func_257("ROCKF" /* GXT: Rockford Hills */, -752.3674f, 90.76733f, 65.5171f, -938.798f, -15.91457f, 35.48347f, 205.78f) };
+	Local_68[1 /*261*/][3 /*8*/] = { func_257("ROCKF" /* GXT: Rockford Hills */, -890.4999f, 431.1449f, 90.29848f, -875.3576f, 232.3266f, 60.20724f, 263.82f) };
+	Local_68[1 /*261*/][4 /*8*/] = { func_257("ROCKF" /* GXT: Rockford Hills */, -752.3674f, 90.76733f, 65.5171f, -938.798f, -15.91457f, 35.48347f, 205.78f) };
+	Local_68[1 /*261*/][5 /*8*/] = { func_257("ROCKF" /* GXT: Rockford Hills */, -1198.183f, 638.6367f, 115.1066f, -444.509f, 750.9377f, 198.2971f, 473.88f) };
+	Local_68[1 /*261*/][6 /*8*/] = { func_257("ROCKF" /* GXT: Rockford Hills */, -844.4075f, 400.9413f, 80.433f, -109.5311f, 420.5014f, 120.2088f, 256.03f) };
+	Local_68[1 /*261*/][7 /*8*/] = { func_257("ROCKF" /* GXT: Rockford Hills */, -518.6213f, 648.8265f, 130.9352f, -64.0709f, 582.4504f, 215.3084f, 162.72f) };
+	Local_68[1 /*261*/][8 /*8*/] = { func_257("RICHM" /* GXT: Richman */, -934.9802f, 349.6101f, 85.77298f, -1432.451f, 269.9804f, 50.7303f, 185.03f) };
+	Local_68[1 /*261*/][9 /*8*/] = { func_257("RICHM" /* GXT: Richman */, -1633.813f, -69.53224f, 65.10236f, -1446.823f, 69.71544f, 48.23926f, 214.92f) };
+	Local_68[1 /*261*/][10 /*8*/] = { func_257("RICHM" /* GXT: Richman */, -1732.258f, 444.1353f, 130.1258f, -2065.69f, 412.2121f, 98.09863f, 175.17f) };
+	Local_68[1 /*261*/][11 /*8*/] = { func_257("RICHM" /* GXT: Richman */, -1618.036f, 50.95197f, 70.95364f, -1396.514f, 221.1004f, 50.84464f, 161.61f) };
+	Local_68[1 /*261*/][12 /*8*/] = { func_257("RICHM" /* GXT: Richman */, -1801.285f, 106.8786f, 72.12892f, -1541.74f, 263.3738f, 50.44112f, 155.88f) };
 	Local_68[1 /*261*/][13 /*8*/] = { func_257("PELUFF", -2208.563f, 146.4101f, 150.9325f, -2350.122f, 486.6066f, 200.5952f, 299.18f) };
 	Local_68[1 /*261*/][14 /*8*/] = { func_257("PELUFF", -1852.326f, 134.4172f, 70.06226f, -1994.387f, 299.6283f, 100.9652f, 182.04f) };
-	Local_68[1 /*261*/][15 /*8*/] = { func_257("CHIL", -1982.67f, 505.9648f, 100.9364f, -1918.843f, 713.6382f, 150.7395f, 168.9f) };
-	Local_68[1 /*261*/][16 /*8*/] = { func_257("CHIL", -1455.751f, 887.3351f, 191.9757f, -1663.207f, 767.3684f, 160.8108f, 239.65f) };
-	Local_68[1 /*261*/][17 /*8*/] = { func_257("CHIL", -1570.222f, 508.2056f, 140.3884f, -808.9532f, 526.4333f, 90.18556f, 238.43f) };
-	Local_68[1 /*261*/][18 /*8*/] = { func_257("CHIL", 242.6204f, 583.5905f, 159.4043f, 268.0424f, 827.4494f, 201.6953f, 105.09f) };
-	Local_68[1 /*261*/][19 /*8*/] = { func_257("CHIL", -21.10285f, 706.8648f, 150.7263f, -210.4382f, 1056.276f, 280.3182f, 290.15f) };
-	Local_68[1 /*261*/][20 /*8*/] = { func_257("RGLEN", -1837.538f, 774.2984f, 120.5629f, -1765.842f, 831.0044f, 160.3584f, 68.09f) };
+	Local_68[1 /*261*/][15 /*8*/] = { func_257("CHIL" /* GXT: Vinewood Hills */, -1982.67f, 505.9648f, 100.9364f, -1918.843f, 713.6382f, 150.7395f, 168.9f) };
+	Local_68[1 /*261*/][16 /*8*/] = { func_257("CHIL" /* GXT: Vinewood Hills */, -1455.751f, 887.3351f, 191.9757f, -1663.207f, 767.3684f, 160.8108f, 239.65f) };
+	Local_68[1 /*261*/][17 /*8*/] = { func_257("CHIL" /* GXT: Vinewood Hills */, -1570.222f, 508.2056f, 140.3884f, -808.9532f, 526.4333f, 90.18556f, 238.43f) };
+	Local_68[1 /*261*/][18 /*8*/] = { func_257("CHIL" /* GXT: Vinewood Hills */, 242.6204f, 583.5905f, 159.4043f, 268.0424f, 827.4494f, 201.6953f, 105.09f) };
+	Local_68[1 /*261*/][19 /*8*/] = { func_257("CHIL" /* GXT: Vinewood Hills */, -21.10285f, 706.8648f, 150.7263f, -210.4382f, 1056.276f, 280.3182f, 290.15f) };
+	Local_68[1 /*261*/][20 /*8*/] = { func_257("RGLEN" /* GXT: Richman Glen */, -1837.538f, 774.2984f, 120.5629f, -1765.842f, 831.0044f, 160.3584f, 68.09f) };
 	Local_68[1 /*261*/][21 /*8*/] = { func_257("DIVINE", -372.0849f, 372.7183f, 100.6043f, 390.2198f, 532.5167f, 180.538f, 305.88f) };
 	Local_68[1 /*261*/].f_260 = 1;
 	Local_68[1 /*261*/].f_257 = 22;
-	Local_68[3 /*261*/][0 /*8*/] = { func_257("MTCHIL", 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
-	Local_68[3 /*261*/][1 /*8*/] = { func_257("MTGORDO", 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
-	Local_68[3 /*261*/][2 /*8*/] = { func_257("SANCHIA", 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
-	Local_68[3 /*261*/][3 /*8*/] = { func_257("TATAMO", 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
-	Local_68[3 /*261*/][4 /*8*/] = { func_257("ELYSIAN", 531.2397f, -3019.267f, 50f, 530.1656f, -3393.623f, -22.4165f, 210f) };
-	Local_68[3 /*261*/][5 /*8*/] = { func_257("ELYSIAN", 569.1023f, -2913.018f, 15.891f, 420.8226f, -2912.775f, -15.0372f, 25f) };
-	Local_68[3 /*261*/][6 /*8*/] = { func_257("ELYSIAN", 495.1012f, -2833.175f, 5.164f, 460.1983f, -2813.528f, 0.4269f, 12f) };
-	Local_68[3 /*261*/][7 /*8*/] = { func_257("ELYSIAN", 675.2973f, -2747.45f, 4.952f, 689.2358f, -2747.396f, 10.9001f, 4.3f) };
-	Local_68[3 /*261*/][8 /*8*/] = { func_257("CYPRE", 533.437f, -2693.279f, 17.4952f, 588.6345f, -2693.462f, 5.3007f, 15f) };
-	Local_68[3 /*261*/][9 /*8*/] = { func_257("CYPRE", 534.9656f, -2699.136f, 4.9004f, 560.1779f, -2662.192f, 9.0007f, 15f) };
-	Local_68[3 /*261*/][10 /*8*/] = { func_257("CYPRE", 583.903f, -2689.207f, 16.9771f, 549.8469f, -2665.318f, 3.9007f, 17.3f) };
-	Local_68[3 /*261*/][11 /*8*/] = { func_257("CYPRE", 683.428f, -2635.134f, 9.3367f, 694.4725f, -2679.66f, 4.7815f, 10f) };
-	Local_68[3 /*261*/][12 /*8*/] = { func_257("CYPRE", 695.2171f, -2694.769f, 5.9815f, 695.5035f, -2679.168f, 4.8365f, 10f) };
-	Local_68[3 /*261*/][13 /*8*/] = { func_257("CYPRE", 731.7991f, -2659.58f, 4.7713f, 732.5307f, -2678.4f, 10.5065f, 25f) };
-	Local_68[3 /*261*/][14 /*8*/] = { func_257("ELYSIAN", 86.1885f, -2430.696f, -0.1888f, 119.1515f, -2453.121f, 2.8614f, 13f) };
-	Local_68[3 /*261*/][15 /*8*/] = { func_257("ELYSIAN", 260.3166f, -2426.777f, 21.2819f, 313.7871f, -2433.656f, 6.5609f, 20.5f) };
-	Local_68[3 /*261*/][16 /*8*/] = { func_257("ELYSIAN", 260.3166f, -2426.777f, 21.2819f, 313.7871f, -2433.656f, 6.5609f, 20.5f) };
-	Local_68[3 /*261*/][17 /*8*/] = { func_257("ELYSIAN", 283.1514f, -2456.777f, 19.4609f, 290.2325f, -2403.611f, 4.2465f, 20.5f) };
-	Local_68[3 /*261*/][18 /*8*/] = { func_257("ELYSIAN", 266.0341f, -2446.724f, 19.4623f, 308.3783f, -2414.544f, 4.5423f, 20.5f) };
-	Local_68[3 /*261*/][19 /*8*/] = { func_257("ELYSIAN", 303.5269f, -2451.446f, 19.4091f, 270.9798f, -2409.452f, 4.4609f, 20.5f) };
-	Local_68[3 /*261*/][20 /*8*/] = { func_257("RANCHO", 515.026f, -1653.54f, 37.2615f, 582.571f, -1577.825f, 26.3365f, 100f) };
-	Local_68[3 /*261*/][21 /*8*/] = { func_257("BURTON", -150.7403f, -419.0541f, 28.6163f, -52.8669f, -453.5552f, 39.4051f, 100f) };
-	Local_68[3 /*261*/][22 /*8*/] = { func_257("SanAnd", 50.2035f, -470.7132f, 36.9003f, 102.0394f, -322.0089f, 115f, 130f) };
-	Local_68[3 /*261*/][23 /*8*/] = { func_257("ALTA", 499.1769f, -241.2495f, 47.3462f, 393.5317f, -205.7358f, 79.3132f, 120f) };
-	Local_68[3 /*261*/][24 /*8*/] = { func_257("DTVINE", 422.3247f, 62.118f, 113.2905f, 478.494f, 43.322f, 83.4541f, 80f) };
-	Local_68[3 /*261*/][25 /*8*/] = { func_257("DTVINE", 385.4908f, 56.1423f, 159.58f, 332.458f, -87.6805f, 63.3657f, 80f) };
-	Local_68[3 /*261*/][26 /*8*/] = { func_257("DTVINE", 213.6192f, 90.2228f, 98.9357f, 203.3067f, 61.8088f, 86.9197f, 60f) };
-	Local_68[3 /*261*/][27 /*8*/] = { func_257("DTVINE", 192.813f, -14.9451f, 85.3158f, 149.2689f, 0.6803f, 67.0343f, 40f) };
-	Local_68[3 /*261*/][28 /*8*/] = { func_257("WVINE", 16.1659f, 61.8685f, 70.8467f, -17.1751f, 74.3771f, 76.88f, 4.5f) };
-	Local_68[3 /*261*/][29 /*8*/] = { func_257("WVINE", -86.5425f, 84.8701f, 80.2147f, -50.4826f, 67.7335f, 70.297f, 20f) };
-	Local_68[3 /*261*/][30 /*8*/] = { func_257("ELGORL", 3449.839f, 5173.981f, 0.0662f, 3412.309f, 5166.89f, 14.8342f, 33.7f) };
+	Local_68[3 /*261*/][0 /*8*/] = { func_257("MTCHIL" /* GXT: Mount Chiliad */, 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
+	Local_68[3 /*261*/][1 /*8*/] = { func_257("MTGORDO" /* GXT: Mount Gordo */, 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
+	Local_68[3 /*261*/][2 /*8*/] = { func_257("SANCHIA" /* GXT: San Chianski Mountain Range */, 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
+	Local_68[3 /*261*/][3 /*8*/] = { func_257("TATAMO" /* GXT: Tataviam Mountains */, 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
+	Local_68[3 /*261*/][4 /*8*/] = { func_257("ELYSIAN" /* GXT: Elysian Island */, 531.2397f, -3019.267f, 50f, 530.1656f, -3393.623f, -22.4165f, 210f) };
+	Local_68[3 /*261*/][5 /*8*/] = { func_257("ELYSIAN" /* GXT: Elysian Island */, 569.1023f, -2913.018f, 15.891f, 420.8226f, -2912.775f, -15.0372f, 25f) };
+	Local_68[3 /*261*/][6 /*8*/] = { func_257("ELYSIAN" /* GXT: Elysian Island */, 495.1012f, -2833.175f, 5.164f, 460.1983f, -2813.528f, 0.4269f, 12f) };
+	Local_68[3 /*261*/][7 /*8*/] = { func_257("ELYSIAN" /* GXT: Elysian Island */, 675.2973f, -2747.45f, 4.952f, 689.2358f, -2747.396f, 10.9001f, 4.3f) };
+	Local_68[3 /*261*/][8 /*8*/] = { func_257("CYPRE" /* GXT: Cypress Flats */, 533.437f, -2693.279f, 17.4952f, 588.6345f, -2693.462f, 5.3007f, 15f) };
+	Local_68[3 /*261*/][9 /*8*/] = { func_257("CYPRE" /* GXT: Cypress Flats */, 534.9656f, -2699.136f, 4.9004f, 560.1779f, -2662.192f, 9.0007f, 15f) };
+	Local_68[3 /*261*/][10 /*8*/] = { func_257("CYPRE" /* GXT: Cypress Flats */, 583.903f, -2689.207f, 16.9771f, 549.8469f, -2665.318f, 3.9007f, 17.3f) };
+	Local_68[3 /*261*/][11 /*8*/] = { func_257("CYPRE" /* GXT: Cypress Flats */, 683.428f, -2635.134f, 9.3367f, 694.4725f, -2679.66f, 4.7815f, 10f) };
+	Local_68[3 /*261*/][12 /*8*/] = { func_257("CYPRE" /* GXT: Cypress Flats */, 695.2171f, -2694.769f, 5.9815f, 695.5035f, -2679.168f, 4.8365f, 10f) };
+	Local_68[3 /*261*/][13 /*8*/] = { func_257("CYPRE" /* GXT: Cypress Flats */, 731.7991f, -2659.58f, 4.7713f, 732.5307f, -2678.4f, 10.5065f, 25f) };
+	Local_68[3 /*261*/][14 /*8*/] = { func_257("ELYSIAN" /* GXT: Elysian Island */, 86.1885f, -2430.696f, -0.1888f, 119.1515f, -2453.121f, 2.8614f, 13f) };
+	Local_68[3 /*261*/][15 /*8*/] = { func_257("ELYSIAN" /* GXT: Elysian Island */, 260.3166f, -2426.777f, 21.2819f, 313.7871f, -2433.656f, 6.5609f, 20.5f) };
+	Local_68[3 /*261*/][16 /*8*/] = { func_257("ELYSIAN" /* GXT: Elysian Island */, 260.3166f, -2426.777f, 21.2819f, 313.7871f, -2433.656f, 6.5609f, 20.5f) };
+	Local_68[3 /*261*/][17 /*8*/] = { func_257("ELYSIAN" /* GXT: Elysian Island */, 283.1514f, -2456.777f, 19.4609f, 290.2325f, -2403.611f, 4.2465f, 20.5f) };
+	Local_68[3 /*261*/][18 /*8*/] = { func_257("ELYSIAN" /* GXT: Elysian Island */, 266.0341f, -2446.724f, 19.4623f, 308.3783f, -2414.544f, 4.5423f, 20.5f) };
+	Local_68[3 /*261*/][19 /*8*/] = { func_257("ELYSIAN" /* GXT: Elysian Island */, 303.5269f, -2451.446f, 19.4091f, 270.9798f, -2409.452f, 4.4609f, 20.5f) };
+	Local_68[3 /*261*/][20 /*8*/] = { func_257("RANCHO" /* GXT: Rancho */, 515.026f, -1653.54f, 37.2615f, 582.571f, -1577.825f, 26.3365f, 100f) };
+	Local_68[3 /*261*/][21 /*8*/] = { func_257("BURTON" /* GXT: Burton */, -150.7403f, -419.0541f, 28.6163f, -52.8669f, -453.5552f, 39.4051f, 100f) };
+	Local_68[3 /*261*/][22 /*8*/] = { func_257("SanAnd" /* GXT: San Andreas */, 50.2035f, -470.7132f, 36.9003f, 102.0394f, -322.0089f, 115f, 130f) };
+	Local_68[3 /*261*/][23 /*8*/] = { func_257("ALTA" /* GXT: Alta */, 499.1769f, -241.2495f, 47.3462f, 393.5317f, -205.7358f, 79.3132f, 120f) };
+	Local_68[3 /*261*/][24 /*8*/] = { func_257("DTVINE" /* GXT: Downtown Vinewood */, 422.3247f, 62.118f, 113.2905f, 478.494f, 43.322f, 83.4541f, 80f) };
+	Local_68[3 /*261*/][25 /*8*/] = { func_257("DTVINE" /* GXT: Downtown Vinewood */, 385.4908f, 56.1423f, 159.58f, 332.458f, -87.6805f, 63.3657f, 80f) };
+	Local_68[3 /*261*/][26 /*8*/] = { func_257("DTVINE" /* GXT: Downtown Vinewood */, 213.6192f, 90.2228f, 98.9357f, 203.3067f, 61.8088f, 86.9197f, 60f) };
+	Local_68[3 /*261*/][27 /*8*/] = { func_257("DTVINE" /* GXT: Downtown Vinewood */, 192.813f, -14.9451f, 85.3158f, 149.2689f, 0.6803f, 67.0343f, 40f) };
+	Local_68[3 /*261*/][28 /*8*/] = { func_257("WVINE" /* GXT: West Vinewood */, 16.1659f, 61.8685f, 70.8467f, -17.1751f, 74.3771f, 76.88f, 4.5f) };
+	Local_68[3 /*261*/][29 /*8*/] = { func_257("WVINE" /* GXT: West Vinewood */, -86.5425f, 84.8701f, 80.2147f, -50.4826f, 67.7335f, 70.297f, 20f) };
+	Local_68[3 /*261*/][30 /*8*/] = { func_257("ELGORL" /* GXT: El Gordo Lighthouse */, 3449.839f, 5173.981f, 0.0662f, 3412.309f, 5166.89f, 14.8342f, 33.7f) };
 	Local_68[3 /*261*/].f_260 = 3;
 	Local_68[3 /*261*/].f_257 = 31;
 	if (func_251(PLAYER::PLAYER_PED_ID()))
@@ -12642,22 +12642,22 @@ void func_260(bool bParam0)//Position - 0xF989
 
 void func_261()//Position - 0xFA53
 {
-	StringCopy(&(Global_7974[3 /*16*/].f_8), "CELL_SFUN_NULL", 32);
+	StringCopy(&(Global_7974[3 /*16*/].f_8), "CELL_SFUN_NULL" /* GXT: This is a dummy and should not be displayed but is referenced by script. Please leave. */, 32);
 }
 
 void func_262()//Position - 0xFA69
 {
-	StringCopy(&(Global_7974[2 /*16*/].f_8), "CELL_SFUN_NULL", 32);
+	StringCopy(&(Global_7974[2 /*16*/].f_8), "CELL_SFUN_NULL" /* GXT: This is a dummy and should not be displayed but is referenced by script. Please leave. */, 32);
 }
 
 void func_263()//Position - 0xFA7F
 {
-	StringCopy(&(Global_7974[1 /*16*/].f_8), "CELL_SFUN_NULL", 32);
+	StringCopy(&(Global_7974[1 /*16*/].f_8), "CELL_SFUN_NULL" /* GXT: This is a dummy and should not be displayed but is referenced by script. Please leave. */, 32);
 }
 
 void func_264()//Position - 0xFA95
 {
-	StringCopy(&(Global_7974[0 /*16*/].f_8), "CELL_SFUN_NULL", 32);
+	StringCopy(&(Global_7974[0 /*16*/].f_8), "CELL_SFUN_NULL" /* GXT: This is a dummy and should not be displayed but is referenced by script. Please leave. */, 32);
 }
 
 void func_265(char* sParam0)//Position - 0xFAAB

@@ -152,11 +152,11 @@ void __EntryFunction__()//Position - 0x0
 								{
 									if (!BitTest(Local_83.f_1, 0))
 									{
-										func_188("PTD_HELP1", -1);
+										func_188("PTD_HELP1" /* GXT: A Smuggler Plane ~HUD_COLOUR_RED~~BLIP_PLANE_DROP~ ~s~is flying around Los Santos. Bring the plane down before it leaves. */, -1);
 									}
 									else
 									{
-										func_188("PTD_HELP1H", -1);
+										func_188("PTD_HELP1H" /* GXT: A Smuggler Helicopter ~HUD_COLOUR_RED~~BLIP_HELICOPTER~ ~s~is flying around Los Santos. Bring the helicopter down before it leaves. */, -1);
 									}
 								}
 							}
@@ -768,7 +768,7 @@ void func_23()//Position - 0xB61
 						iVar2 = Global_262145.f_8563;
 					}
 					iVar3 = (Global_262145.f_8561 * iVar2);
-					func_129(0, PLAYER::PLAYER_PED_ID(), "XPT_KAIE", joaat("XPTYPE_SKILL"), joaat("XPCATEGORY_COMPLETE_PLANE_TAKEDOWN"), iVar3, 1, -1, 0, 0, 0);
+					func_129(0, PLAYER::PLAYER_PED_ID(), "XPT_KAIE" /* GXT: ~g~+~1~ ~a~:~s~ Killed Hostile */, joaat("XPTYPE_SKILL"), joaat("XPCATEGORY_COMPLETE_PLANE_TAKEDOWN"), iVar3, 1, -1, 0, 0, 0);
 					if (iVar1 > Global_262145.f_8562)
 					{
 						iVar1 = Global_262145.f_8562;
@@ -791,11 +791,11 @@ void func_23()//Position - 0xB61
 					func_43(65, 1, -1);
 					if (func_42())
 					{
-						func_29(2, "PTD_PASS0", 0, 0, -99);
+						func_29(2, "PTD_PASS0" /* GXT: Well dun, frend. I hope u told 'em 2 run guns with TP Inc next time, b4 u blasted em out the skie */, 0, 0, -99);
 					}
 					else
 					{
-						func_29(2, "PTD_PASS1", 0, 0, -99);
+						func_29(2, "PTD_PASS1" /* GXT: Nice work, buddy. Those engine noises, I hadn't been sleepin 4 weeks. But that coulda been the tina. Haha. Next time I'll get a trailer out the flight path. */, 0, 0, -99);
 					}
 					MISC::SET_BIT(&(Local_85[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_1), 0);
 				}
@@ -1830,7 +1830,7 @@ void func_61(int iParam0, int iParam1)//Position - 0x210D
 						func_115(&iVar0, 0);
 						if (iParam1 == 1)
 						{
-							func_66("GB_BCUT_TICK1", func_118(), iVar0, 0, 0, 1);
+							func_66("GB_BCUT_TICK1" /* GXT: You paid ~a~ ~s~a $~1~ ~s~cut. */, func_118(), iVar0, 0, 0, 1);
 						}
 						func_65(20);
 						func_62(func_118(), iVar0, 1);
@@ -4866,12 +4866,12 @@ void func_186()//Position - 0x56F9
 			if (!BitTest(Local_83.f_1, 0))
 			{
 				HUD::SET_BLIP_SPRITE(iLocal_88, 307);
-				HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_88, "PTD_BLIPN");
+				HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_88, "PTD_BLIPN" /* GXT: Smuggler Plane */);
 			}
 			else
 			{
 				HUD::SET_BLIP_SPRITE(iLocal_88, 64);
-				HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_88, "PTD_BLIPH");
+				HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_88, "PTD_BLIPH" /* GXT: Smuggler Helicopter */);
 			}
 			HUD::SET_BLIP_COLOUR(iLocal_88, 1);
 			HUD::SET_BLIP_FLASH_TIMER(iLocal_88, 7000);
@@ -5246,7 +5246,7 @@ void func_206()//Position - 0x5D03
 	}
 	if (BitTest(Local_83.f_1, 1))
 	{
-		func_29(2, "PTD_FAIL", 0, 0, -99);
+		func_29(2, "PTD_FAIL" /* GXT: Sum1 just tried 2 sell me sum guns!  That means that the byrd landed, and u r no kind of friend at all! Remind me 2 eat u when I next c u */, 0, 0, -99);
 	}
 	func_209();
 	if (func_191() == 4 && Local_83.f_4 != 0)

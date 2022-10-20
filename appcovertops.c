@@ -380,7 +380,7 @@ void func_1()//Position - 0xDC
 		{
 			if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 			{
-				func_6("WVM_LAUNCH_TUT", 9000);
+				func_6("WVM_LAUNCH_TUT" /* GXT: Complete Resupply missions for the Gunrunning Business in order to unlock Mobile Operations. The number next to the padlock icon indicates the total amount of Resupply missions required to unlock an Operation. */, 9000);
 				MISC::SET_BIT(&uLocal_129, 6);
 				func_2();
 			}
@@ -1198,13 +1198,13 @@ void func_42(int iParam0)//Position - 0xDD6
 {
 	if (!func_50(iParam0))
 	{
-		func_46("WVM_MIS_TI", func_49(), "OR_OVRLY_OK", "", -1, 0);
+		func_46("WVM_MIS_TI" /* GXT: MOBILE OPERATIONS */, func_49(), "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 0);
 		AUDIO::PLAY_SOUND_FRONTEND(-1, "Select_Mission_Unavailable", "DLC_GR_MOC_Computer_Sounds", true);
 	}
 	else
 	{
 		func_44(iParam0);
-		func_46("WVM_MIS_TI", "SVM_MIS_L", "WHOUSE_CONF", "WHOUSE_CANC", -1, 1);
+		func_46("WVM_MIS_TI" /* GXT: MOBILE OPERATIONS */, "SVM_MIS_L" /* GXT: Are you sure you'd like to launch this mission? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, -1, 1);
 		AUDIO::PLAY_SOUND_FRONTEND(-1, "Select_Mission_Are_You_Sure", "DLC_GR_MOC_Computer_Sounds", true);
 	}
 	func_43();
@@ -1268,27 +1268,27 @@ int func_50(int iParam0)//Position - 0xEDF
 {
 	if (iParam0 < 0 || iParam0 >= 8)
 	{
-		func_57("SVM_MIS_FL");
+		func_57("SVM_MIS_FL" /* GXT: This special vehicle work is currently unavailable. */);
 		return 0;
 	}
 	if (!func_55(iParam0))
 	{
-		func_57("WVM_MIS_FNA");
+		func_57("WVM_MIS_FNA" /* GXT: This Mobile Operation is currently unavailable. Source and steal more supplies for your Gunrunning Business to unlock this mission. */);
 		return 0;
 	}
 	if (func_54(PLAYER::PLAYER_ID()))
 	{
-		func_57("WVM_MIS_FL2");
+		func_57("WVM_MIS_FL2" /* GXT: This Mobile Operation is unavailable whilst you are taking part in another mission. */);
 		return 0;
 	}
 	if (NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 	{
-		func_57("SVM_MIS_FL");
+		func_57("SVM_MIS_FL" /* GXT: This special vehicle work is currently unavailable. */);
 		return 0;
 	}
 	if (iParam0 == 7 && !func_51(6))
 	{
-		func_57("WVM_MIS_FDB");
+		func_57("WVM_MIS_FDB" /* GXT: This Mobile Operation is currently unavailable. Complete Data Breach to unlock this mission. */);
 		return 0;
 	}
 	return 1;
@@ -1470,7 +1470,7 @@ int func_59(var uParam0, int iParam1, int iParam2)//Position - 0x1113
 				func_163();
 			}
 			func_162();
-			HUD::BEGIN_TEXT_COMMAND_BUSYSPINNER_ON("FMMC_PLYLOAD");
+			HUD::BEGIN_TEXT_COMMAND_BUSYSPINNER_ON("FMMC_PLYLOAD" /* GXT: Initializing */);
 			HUD::END_TEXT_COMMAND_BUSYSPINNER_ON(5);
 			func_160(func_161(), 0, 0, 0);
 			func_61(uParam0, 0, 0, 0f, 0f, 0f, &uVar2, 0f, 0f, 0f, 1, 0, &uVar2, &iVar3, iVar3, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -5986,7 +5986,7 @@ void func_217()//Position - 0x6DCF
 	else
 	{
 		func_219(1);
-		func_218(&uLocal_145, 2, 0, "AGENT14", 0, 1);
+		func_218(&uLocal_145, 2, 0, "AGENT14" /* GXT: Agent 14 */, 0, 1);
 	}
 }
 
@@ -6134,7 +6134,7 @@ void func_221(int iParam0)//Position - 0x6EEE
 	if (iVar1 != -1)
 	{
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_LITERAL_STRING(&(Global_794709.f_4[iVar1 /*88*/].f_22));
-		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FMMC_OFFLN_HD");
+		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FMMC_OFFLN_HD" /* GXT: ~a~~a~~a~~a~~a~~a~~a~~a~ */);
 		iVar0 = 0;
 		while (iVar0 < 8)
 		{
@@ -7177,7 +7177,7 @@ char* func_250(int iParam0, int iParam1)//Position - 0x8103
 
 char* func_251()//Position - 0x8123
 {
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREATOR_NO_T");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREATOR_NO_T" /* GXT: No translation. */);
 }
 
 int func_252(int iParam0, var uParam1)//Position - 0x8133

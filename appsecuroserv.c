@@ -819,7 +819,7 @@ void __EntryFunction__()//Position - 0x0
 	}
 	else
 	{
-		iLocal_548 = GRAPHICS::REQUEST_SCALEFORM_MOVIE("securoserv");
+		iLocal_548 = GRAPHICS::REQUEST_SCALEFORM_MOVIE("securoserv" /* GXT: SecuroServ */);
 		Global_75489 = 1;
 		Global_75490 = 0;
 	}
@@ -1260,20 +1260,20 @@ void func_10()//Position - 0x5AC
 				case 5010:
 					if (Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_267.f_142.f_1 != 0 && func_591(5303, -1, 0) != 0)
 					{
-						func_590("WHOUSE_PURFA", "SEC_WHOUSE_NEMP", "WHOUSE_CONF", "", 0, 0, -1);
+						func_590("WHOUSE_PURFA" /* GXT: PURCHASE FAILED */, "SEC_WHOUSE_NEMP" /* GXT: You need to sell all the vehicles stored in your Vehicle Warehouse before you can trade it for another one. */, "WHOUSE_CONF" /* GXT: Confirm */, "", 0, 0, -1);
 						MISC::CLEAR_BIT(&iLocal_554, 2);
 					}
 					else
 					{
 						iLocal_761 = 0;
-						func_590("IEWH_SEL_INTT", "IEWH_SEL_INTD", "WHOUSE_CONF", "WHOUSE_CANC", 1, 1, -1);
+						func_590("IEWH_SEL_INTT" /* GXT: SELECT INTERIOR */, "IEWH_SEL_INTD" /* GXT: Select an interior to purchase. */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 1, 1, -1);
 					}
 					break;
 				
 				case 5011:
 				case 4023:
 					iLocal_761 = func_589(PLAYER::PLAYER_ID());
-					func_590("IEWH_SEL_INTT", "IEWH_SEL_INTD", "WHOUSE_CONF", "WHOUSE_CANC", 1, 1, -1);
+					func_590("IEWH_SEL_INTT" /* GXT: SELECT INTERIOR */, "IEWH_SEL_INTD" /* GXT: Select an interior to purchase. */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 1, 1, -1);
 					break;
 				
 				case 5012:
@@ -1354,12 +1354,12 @@ void func_11(int iParam0)//Position - 0xA0E
 		case 5006:
 			if (!func_299(12))
 			{
-				func_590("SEC_VEH_STEAL", "SEC_V_STEAL_F", "WHOUSE_CONF", "", 0, 0, -1);
+				func_590("SEC_VEH_STEAL" /* GXT: SOURCE VEHICLE */, "SEC_V_STEAL_F" /* GXT: No vehicles can be found at this time. Try again later. */, "WHOUSE_CONF" /* GXT: Confirm */, "", 0, 0, -1);
 				MISC::CLEAR_BIT(&iLocal_554, 3);
 			}
 			else
 			{
-				func_590("SEC_VEH_STEAL", "SEC_VEH_STEALQ", "WHOUSE_CONF", "WHOUSE_CANC", 1, 0, -1);
+				func_590("SEC_VEH_STEAL" /* GXT: SOURCE VEHICLE */, "SEC_VEH_STEALQ" /* GXT: Are you sure you'd like to source a vehicle to steal? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 1, 0, -1);
 				MISC::SET_BIT(&iLocal_554, 3);
 			}
 			*iParam0 = 1;
@@ -1378,15 +1378,15 @@ void func_11(int iParam0)//Position - 0xA0E
 			MISC::SET_BIT(&iLocal_554, 2);
 			if (iVar2 == iVar3)
 			{
-				func_590("IEWHINT_PURCH", "IEWHINT_PURCHQ", "WHOUSE_CONF", "WHOUSE_CANC", 1, 0, -1);
+				func_590("IEWHINT_PURCH" /* GXT: RENOVATE VEHICLE WAREHOUSE */, "IEWHINT_PURCHQ" /* GXT: Are you sure you'd like to purchase this interior? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 1, 0, -1);
 			}
 			else if (func_298(PLAYER::PLAYER_ID()))
 			{
-				func_590("IEWHOUSE_PURCH", "IE_WH_TRADE", "WHOUSE_CONF", "WHOUSE_CANC", 1, 0, func_295(func_300(PLAYER::PLAYER_ID())));
+				func_590("IEWHOUSE_PURCH" /* GXT: PURCHASE VEHICLE WAREHOUSE */, "IE_WH_TRADE" /* GXT: You already own a Vehicle Warehouse, purchasing this one will trade in your old one. The trade will save you $~1~. Do you wish to continue with this purchase? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 1, 0, func_295(func_300(PLAYER::PLAYER_ID())));
 			}
 			else
 			{
-				func_590("IEWHOUSE_PURCH", "IEWHOUSE_PURCHQ", "WHOUSE_CONF", "WHOUSE_CANC", 1, 0, -1);
+				func_590("IEWHOUSE_PURCH" /* GXT: PURCHASE VEHICLE WAREHOUSE */, "IEWHOUSE_PURCHQ" /* GXT: Are you sure you'd like to purchase this Vehicle Warehouse? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 1, 0, -1);
 			}
 			break;
 		
@@ -1398,11 +1398,11 @@ void func_11(int iParam0)//Position - 0xA0E
 				{
 					if (iVar2 == iVar3)
 					{
-						func_590("WHOUSE_PURFA", "IEWH_PURCHF_NM", "WHOUSE_CONF", "", 0, 0, -1);
+						func_590("WHOUSE_PURFA" /* GXT: PURCHASE FAILED */, "IEWH_PURCHF_NM" /* GXT: You do not have enough money to purchase this interior. */, "WHOUSE_CONF" /* GXT: Confirm */, "", 0, 0, -1);
 					}
 					else
 					{
-						func_590("WHOUSE_PURFA", "WHSE_PURCHF_NM", "WHOUSE_CONF", "", 0, 0, -1);
+						func_590("WHOUSE_PURFA" /* GXT: PURCHASE FAILED */, "WHSE_PURCHF_NM" /* GXT: You do not have enough money to purchase this property. */, "WHOUSE_CONF" /* GXT: Confirm */, "", 0, 0, -1);
 					}
 					MISC::SET_BIT(&iLocal_554, 4);
 				}
@@ -1410,11 +1410,11 @@ void func_11(int iParam0)//Position - 0xA0E
 				{
 					if (iVar4 == iLocal_761)
 					{
-						func_590("WHOUSE_PURFA", "IEWH_INT_PURCHF", "WHOUSE_CONF", "", 0, 0, -1);
+						func_590("WHOUSE_PURFA" /* GXT: PURCHASE FAILED */, "IEWH_INT_PURCHF" /* GXT: You already own this interior. */, "WHOUSE_CONF" /* GXT: Confirm */, "", 0, 0, -1);
 					}
 					else if (func_291(iVar2, iLocal_761))
 					{
-						func_590("IEWHOUSE_PURCH", "IEWHINT_PURCHD", "WHOUSE_CONF", "", 1, 0, -1);
+						func_590("IEWHOUSE_PURCH" /* GXT: PURCHASE VEHICLE WAREHOUSE */, "IEWHINT_PURCHD" /* GXT: Renovation completed. */, "WHOUSE_CONF" /* GXT: Confirm */, "", 1, 0, -1);
 						func_290(iLocal_761);
 						iLocal_761 = 0;
 						func_261(iVar2, uVar1);
@@ -1423,18 +1423,18 @@ void func_11(int iParam0)//Position - 0xA0E
 					}
 					else
 					{
-						sVar5 = "WHOUSE_PURCHF";
+						sVar5 = "WHOUSE_PURCHF" /* GXT: Your purchase failed. */;
 						if (BitTest(iLocal_554, 18))
 						{
-							sVar5 = "WHSE_PURCHF_NM";
+							sVar5 = "WHSE_PURCHF_NM" /* GXT: You do not have enough money to purchase this property. */;
 						}
-						func_590("WHOUSE_PURFA", sVar5, "WHOUSE_CONF", "", 0, 0, -1);
+						func_590("WHOUSE_PURFA" /* GXT: PURCHASE FAILED */, sVar5, "WHOUSE_CONF" /* GXT: Confirm */, "", 0, 0, -1);
 						MISC::SET_BIT(&iLocal_554, 4);
 					}
 				}
 				else if (func_230(iVar2))
 				{
-					func_590("IEWHOUSE_PURCH", "IEWHOUSE_PURCHD", "WHOUSE_CONF", "", 1, 0, -1);
+					func_590("IEWHOUSE_PURCH" /* GXT: PURCHASE VEHICLE WAREHOUSE */, "IEWHOUSE_PURCHD" /* GXT: You have purchased this Vehicle Warehouse. */, "WHOUSE_CONF" /* GXT: Confirm */, "", 1, 0, -1);
 					if (func_298(PLAYER::PLAYER_ID()))
 					{
 						func_228(bVar0);
@@ -1456,12 +1456,12 @@ void func_11(int iParam0)//Position - 0xA0E
 				}
 				else
 				{
-					sVar5 = "WHOUSE_PURCHF";
+					sVar5 = "WHOUSE_PURCHF" /* GXT: Your purchase failed. */;
 					if (BitTest(iLocal_554, 18))
 					{
-						sVar5 = "WHSE_PURCHF_NM";
+						sVar5 = "WHSE_PURCHF_NM" /* GXT: You do not have enough money to purchase this property. */;
 					}
-					func_590("WHOUSE_PURFA", sVar5, "WHOUSE_CONF", "", 0, 0, -1);
+					func_590("WHOUSE_PURFA" /* GXT: PURCHASE FAILED */, sVar5, "WHOUSE_CONF" /* GXT: Confirm */, "", 0, 0, -1);
 					MISC::SET_BIT(&iLocal_554, 4);
 				}
 				MISC::CLEAR_BIT(&iLocal_554, 2);
@@ -1478,7 +1478,7 @@ void func_11(int iParam0)//Position - 0xA0E
 				else
 				{
 					AUDIO::PLAY_SOUND_FRONTEND(-1, "Popup_Confirm_Fail", "GTAO_Exec_SecuroServ_Computer_Sounds", true);
-					func_590("SEC_VEH_STEAL", func_12(iVar6), "WHOUSE_CONF", "", 0, 0, -1);
+					func_590("SEC_VEH_STEAL" /* GXT: SOURCE VEHICLE */, func_12(iVar6), "WHOUSE_CONF" /* GXT: Confirm */, "", 0, 0, -1);
 				}
 				MISC::CLEAR_BIT(&iLocal_554, 3);
 			}
@@ -1498,16 +1498,16 @@ char* func_12(int iParam0)//Position - 0xD8B
 	switch (iParam0)
 	{
 		case 0:
-			return "SEC_MISS_L_F";
+			return "SEC_MISS_L_F" /* GXT: No vehicles could be found. Try again later. */;
 		
 		case 1:
-			return "SEC_WHOUSE_FULL";
+			return "SEC_WHOUSE_FULL" /* GXT: Vehicle Warehouse is already at capacity. Try selling a vehicle. */;
 		
 		case 2:
-			return "GENERAL_MLF_G2";
+			return "GENERAL_MLF_G2" /* GXT: Can't launch this mission whilst one of your Associates is currently at one with the animals. */;
 		
 		case 3:
-			return "GENERAL_MLF_G5";
+			return "GENERAL_MLF_G5" /* GXT: Can't launch this mission whilst one of your Associates is playing a casino game. */;
 		
 		default:
 	}
@@ -13381,34 +13381,34 @@ char* func_257(int iParam0)//Position - 0xC30A
 	switch (iParam0)
 	{
 		case 1:
-			return "MP_WAREHOUSE_1";
+			return "MP_WAREHOUSE_1" /* GXT: La Puerta Vehicle Warehouse */;
 		
 		case 2:
-			return "MP_WAREHOUSE_2";
+			return "MP_WAREHOUSE_2" /* GXT: La Mesa Vehicle Warehouse */;
 		
 		case 3:
-			return "MP_WAREHOUSE_3";
+			return "MP_WAREHOUSE_3" /* GXT: Davis Vehicle Warehouse */;
 		
 		case 4:
-			return "MP_WAREHOUSE_4";
+			return "MP_WAREHOUSE_4" /* GXT: Strawberry Vehicle Warehouse */;
 		
 		case 5:
-			return "MP_WAREHOUSE_5";
+			return "MP_WAREHOUSE_5" /* GXT: Murrieta Heights Vehicle Warehouse */;
 		
 		case 6:
-			return "MP_WAREHOUSE_6";
+			return "MP_WAREHOUSE_6" /* GXT: Cypress Flats Vehicle Warehouse */;
 		
 		case 7:
-			return "MP_WAREHOUSE_7";
+			return "MP_WAREHOUSE_7" /* GXT: El Burro Heights Vehicle Warehouse */;
 		
 		case 8:
-			return "MP_WAREHOUSE_8";
+			return "MP_WAREHOUSE_8" /* GXT: Elysian Island Vehicle Warehouse */;
 		
 		case 9:
-			return "MP_WAREHOUSE_9";
+			return "MP_WAREHOUSE_9" /* GXT: LSIA Vehicle Warehouse */;
 		
 		case 10:
-			return "MP_WAREHOUSE_10";
+			return "MP_WAREHOUSE_10" /* GXT: LSIA Vehicle Warehouse */;
 		
 		default:
 	}
@@ -13517,7 +13517,7 @@ void func_261(int iParam0, var uParam1)//Position - 0xC457
 	}
 	if (iParam0 == 9 || iParam0 == 10)
 	{
-		StringCopy(&Var10, "WH_LISA_1", 16);
+		StringCopy(&Var10, "WH_LISA_1" /* GXT: LSIA */, 16);
 	}
 	if (bVar1)
 	{
@@ -22562,34 +22562,34 @@ char* func_282(int iParam0)//Position - 0x15532
 	switch (iParam0)
 	{
 		case 1:
-			return "IE_WH_DESC_1";
+			return "IE_WH_DESC_1" /* GXT: If buying a red brick warehouse in a blue collar neighborhood and filling it with unregistered super cars doesn't count as gentrification, then nothing does. Throw in a flat white served in a chemistry beaker and consider this community regenerated. */;
 		
 		case 2:
-			return "IE_WH_DESC_2";
+			return "IE_WH_DESC_2" /* GXT: Sure, this part of La Mesa won the LSPD's "Most Gang-Related Stabbings" award three years running. But the previous owner of this spacious depot had the largest collection of authentic Customs and Border Protection agency badges in the state, and his widow is throwing them in as a sweetener. You can't say fairer than that. */;
 		
 		case 3:
-			return "IE_WH_DESC_3";
+			return "IE_WH_DESC_3" /* GXT: Does it qualify as a bonded warehouse if the government just doesn't know it exists? We think so, and we've got another warehouse full of lawyers who'll say the same. On the market for a limited time only. */;
 		
 		case 4:
-			return "IE_WH_DESC_4";
+			return "IE_WH_DESC_4" /* GXT: In its glory days this was an FIB black site. In later years, a few reclaimed interrogation devices made it one of the premier S&M clubs in the state. Now, freshly bleached, it comes to the market as a largely disinfected warehouse that just about everyone wants to forget. Isn't it nice to work somewhere with a bit of history? */;
 		
 		case 5:
-			return "IE_WH_DESC_5";
+			return "IE_WH_DESC_5" /* GXT: Here at SecuroServ, we have a dream that one day everyone living in Murrieta Heights will be a billionaire crimelord with an enormous portfolio of nearly-new luxury cars. But we also know that every journey of a thousand miles begins with a single warehouse full of stolen goods. Step up, be the hope, pocket the change. */;
 		
 		case 6:
-			return "IE_WH_DESC_6";
+			return "IE_WH_DESC_6" /* GXT: There's no more discreet place to locate a gigantic storage unit than in a neighborhood full of other gigantic storage units. And compared to them, whatever you're planning will almost look legal. */;
 		
 		case 7:
-			return "IE_WH_DESC_7";
+			return "IE_WH_DESC_7" /* GXT: Who would locate an off-the-books vehicle depot in the middle of a suburban wasteland where the white picket fences got burned for fuel a decade ago? A visionary venture capitalist with an eye on privacy, that's who. */;
 		
 		case 8:
-			return "IE_WH_DESC_8";
+			return "IE_WH_DESC_8" /* GXT: In a recent survey of warehouse owners in the port area of Los Santos, 94% self-identified as radical entrepreneurs while only 2% could spell the word 'tax'. Welcome home. */;
 		
 		case 9:
-			return "IE_WH_DESC_9";
+			return "IE_WH_DESC_9" /* GXT: It's a sad day for democracy when political correctness, liberal media elites and nineteen counts of human trafficking conspire to bring down one of the oldest storage companies in the state. Lesson learned: don't deal in goods that can testify against you in court, and this place could serve you for decades to come. */;
 		
 		case 10:
-			return "IE_WH_DESC_10";
+			return "IE_WH_DESC_10" /* GXT: If you want your business to inspire the masses, this is the location for you. Because when they're queuing for another cavity search at LSIA, the sight of you stepping off your private jet to take delivery of a million dollar hypercar will be just the motivation they need to get off their asses and start being incredibly rich. */;
 		
 		default:
 	}
@@ -23035,7 +23035,7 @@ void func_301(int iParam0)//Position - 0x15D55
 	
 	if (*iParam0 == 3007)
 	{
-		func_590("WHOUSE_PURCH", "WHOUSE_PURCHQ", "WHOUSE_CONF", "WHOUSE_CANC", 1, 0, -1);
+		func_590("WHOUSE_PURCH" /* GXT: PURCHASE WAREHOUSE */, "WHOUSE_PURCHQ" /* GXT: Are you sure you'd like to purchase this Warehouse? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 1, 0, -1);
 		*iParam0 = 0;
 		iLocal_729 = -1;
 		MISC::SET_BIT(&iLocal_554, 10);
@@ -23044,13 +23044,13 @@ void func_301(int iParam0)//Position - 0x15D55
 	{
 		if (func_477(iLocal_556))
 		{
-			func_590("CONTRA_PURFA", "WH_MFREASON_11", "WHOUSE_CONF", "", 0, 0, -1);
+			func_590("CONTRA_PURFA" /* GXT: ITEMS UNAVAILABLE */, "WH_MFREASON_11" /* GXT: Please wait until more items are available for purchase in this area. */, "WHOUSE_CONF" /* GXT: Confirm */, "", 0, 0, -1);
 			MISC::SET_BIT(&iLocal_554, 8);
 		}
 		else
 		{
 			Var0 = { func_475(iLocal_558, iLocal_557, func_476()) };
-			func_590("WHOUSE_SHI", &Var0, "WHOUSE_CONF", "WHOUSE_CANC", 1, 0, -1);
+			func_590("WHOUSE_SHI" /* GXT: CONFIRM PURCHASE */, &Var0, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 1, 0, -1);
 		}
 		*iParam0 = 0;
 	}
@@ -23063,7 +23063,7 @@ void func_301(int iParam0)//Position - 0x15D55
 			iVar2 = -1;
 			if (func_389(bVar1, &iVar2))
 			{
-				func_590("WHOUSE_PURCH", "WHOUSE_PURCHD", "WHOUSE_CONF", "", 1, 0, -1);
+				func_590("WHOUSE_PURCH" /* GXT: PURCHASE WAREHOUSE */, "WHOUSE_PURCHD" /* GXT: You have purchased this Warehouse. */, "WHOUSE_CONF" /* GXT: Confirm */, "", 1, 0, -1);
 				bVar3 = func_388(iVar2);
 				if (bVar3 <= 0)
 				{
@@ -23086,16 +23086,16 @@ void func_301(int iParam0)//Position - 0x15D55
 			}
 			else
 			{
-				sVar4 = "WHOUSE_PURCHF";
+				sVar4 = "WHOUSE_PURCHF" /* GXT: Your purchase failed. */;
 				if (BitTest(iLocal_554, 18))
 				{
-					sVar4 = "WHSE_PURCHF_NM";
+					sVar4 = "WHSE_PURCHF_NM" /* GXT: You do not have enough money to purchase this property. */;
 				}
 				else if (Global_262145.f_15871)
 				{
-					sVar4 = "WHSE_PURCHF_TU";
+					sVar4 = "WHSE_PURCHF_TU" /* GXT: Your purchase failed. Warehouse trading is currently suspended. */;
 				}
-				func_590("WHOUSE_PURFA", sVar4, "WHOUSE_CONF", "", 0, 0, -1);
+				func_590("WHOUSE_PURFA" /* GXT: PURCHASE FAILED */, sVar4, "WHOUSE_CONF" /* GXT: Confirm */, "", 0, 0, -1);
 			}
 			iLocal_556 = -1;
 			iLocal_557 = -1;
@@ -23123,7 +23123,7 @@ void func_301(int iParam0)//Position - 0x15D55
 				AUDIO::PLAY_SOUND_FRONTEND(-1, "Popup_Confirm_Fail", "GTAO_Exec_SecuroServ_Computer_Sounds", true);
 				iLocal_729 = func_60(PLAYER::PLAYER_ID(), 168, 0);
 				sVar5 = func_335(0, iLocal_556);
-				func_590("MP_WH_SELL", sVar5, "WHOUSE_CONF", "", 0, 0, -1);
+				func_590("MP_WH_SELL" /* GXT: SELL SPECIAL CARGO */, sVar5, "WHOUSE_CONF" /* GXT: Confirm */, "", 0, 0, -1);
 				MISC::SET_BIT(&iLocal_554, 8);
 				iLocal_556 = -1;
 				*iParam0 = 1;
@@ -23162,7 +23162,7 @@ void func_301(int iParam0)//Position - 0x15D55
 			else
 			{
 				sVar9 = func_335(1, bVar6);
-				func_590("WHOUSE_PURFA", sVar9, "WHOUSE_CONF", "", 0, 0, -1);
+				func_590("WHOUSE_PURFA" /* GXT: PURCHASE FAILED */, sVar9, "WHOUSE_CONF" /* GXT: Confirm */, "", 0, 0, -1);
 				MISC::SET_BIT(&iLocal_554, 8);
 			}
 			iLocal_556 = -1;
@@ -23182,28 +23182,28 @@ void func_302(int iParam0)//Position - 0x16092
 	
 	if (func_313())
 	{
-		func_590("MP_WH_SELL", "WH_MFREASON_12", "WHOUSE_CONF", "", 0, 0, -1);
+		func_590("MP_WH_SELL" /* GXT: SELL SPECIAL CARGO */, "WH_MFREASON_12" /* GXT: Warehouse activities are currently unavailable. */, "WHOUSE_CONF" /* GXT: Confirm */, "", 0, 0, -1);
 		iLocal_734 = 0;
 		iLocal_735 = 0;
 		MISC::SET_BIT(&iLocal_554, 8);
 	}
 	else if (func_613(iParam0))
 	{
-		func_590("MP_WH_SELL", "MP_WH_SELL_FE", "WHOUSE_CONF", "", 0, 0, -1);
+		func_590("MP_WH_SELL" /* GXT: SELL SPECIAL CARGO */, "MP_WH_SELL_FE" /* GXT: This Warehouse is empty. */, "WHOUSE_CONF" /* GXT: Confirm */, "", 0, 0, -1);
 		iLocal_734 = 0;
 		iLocal_735 = 0;
 		MISC::SET_BIT(&iLocal_554, 8);
 	}
 	else if (func_306(iParam0) || !func_305())
 	{
-		func_590("CONTRA_SALEF", "WH_MFREASON_9", "WHOUSE_CONF", "", 0, 0, -1);
+		func_590("CONTRA_SALEF" /* GXT: BUYER UNAVAILABLE */, "WH_MFREASON_9" /* GXT: Please wait until a buyer can be found for your items. */, "WHOUSE_CONF" /* GXT: Confirm */, "", 0, 0, -1);
 		iLocal_734 = 0;
 		iLocal_735 = 0;
 		MISC::SET_BIT(&iLocal_554, 8);
 	}
 	else if (NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 	{
-		func_590("CONTRA_SALEF", "WH_MFREASON_10", "WHOUSE_CONF", "", 0, 0, -1);
+		func_590("CONTRA_SALEF" /* GXT: BUYER UNAVAILABLE */, "WH_MFREASON_10" /* GXT: You are actively involved in another job. */, "WHOUSE_CONF" /* GXT: Confirm */, "", 0, 0, -1);
 		iLocal_734 = 0;
 		iLocal_735 = 0;
 		MISC::SET_BIT(&iLocal_554, 8);
@@ -23211,24 +23211,24 @@ void func_302(int iParam0)//Position - 0x16092
 	else if (iLocal_734 >= Global_262145.f_15632)
 	{
 		MISC::SET_BIT(&iLocal_554, 11);
-		func_590("MP_WH_SALER", "MP_WH_SELL_W2", "WHOUSE_CONT", "WHOUSE_CANC", 1, 0, -1);
+		func_590("MP_WH_SALER" /* GXT: ALERT */, "MP_WH_SELL_W2" /* GXT: This sale may require three delivery vehicles. Ensure you have hired at least two Associates prior to launching this mission. */, "WHOUSE_CONT" /* GXT: Continue */, "WHOUSE_CANC" /* GXT: Cancel */, 1, 0, -1);
 	}
 	else if (iLocal_734 >= Global_262145.f_15631 || iLocal_734 >= Global_262145.f_15629)
 	{
 		MISC::SET_BIT(&iLocal_554, 11);
-		func_590("MP_WH_SALER", "MP_WH_SELL_W", "WHOUSE_CONT", "WHOUSE_CANC", 1, 0, -1);
+		func_590("MP_WH_SALER" /* GXT: ALERT */, "MP_WH_SELL_W" /* GXT: This sale may require two delivery vehicles. Ensure you have hired at least one Associate prior to launching this mission. */, "WHOUSE_CONT" /* GXT: Continue */, "WHOUSE_CANC" /* GXT: Cancel */, 1, 0, -1);
 	}
 	else if (iLocal_735 == 4)
 	{
 		MISC::SET_BIT(&iLocal_554, 11);
-		sVar0 = "MP_WH_SELLS";
-		sVar1 = "MP_WH_SELL_D";
+		sVar0 = "MP_WH_SELLS" /* GXT: SELL SPECIAL ITEMS */;
+		sVar1 = "MP_WH_SELL_D" /* GXT: Are you sure you'd like to sell your Special Items from this Warehouse? */;
 		if (iLocal_734 == 1)
 		{
-			sVar0 = "MP_WH_SELLSS";
-			sVar1 = "MP_WH_SELL_DS";
+			sVar0 = "MP_WH_SELLSS" /* GXT: SELL SPECIAL ITEM */;
+			sVar1 = "MP_WH_SELL_DS" /* GXT: Are you sure you'd like to sell your Special Item from this Warehouse? */;
 		}
-		func_590(sVar0, sVar1, "WHOUSE_CONF", "WHOUSE_CANC", 1, 0, -1);
+		func_590(sVar0, sVar1, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 1, 0, -1);
 	}
 	else
 	{
@@ -23237,14 +23237,14 @@ void func_302(int iParam0)//Position - 0x16092
 		{
 			if (!func_314(34713, -1))
 			{
-				if (!func_304("APP_SG_HELP", 0, 0))
+				if (!func_304("APP_SG_HELP" /* GXT: You are currently in a private session. Sales made in populated public sessions with rival players will earn an additional "High Demand" cash bonus on your sale value. */, 0, 0))
 				{
-					func_303("APP_SG_HELP", -1);
+					func_303("APP_SG_HELP" /* GXT: You are currently in a private session. Sales made in populated public sessions with rival players will earn an additional "High Demand" cash bonus on your sale value. */, -1);
 				}
 				func_1(34713, 1, -1);
 			}
 		}
-		func_590("MP_WH_SELL", "MP_WH_SELL_C", "WHOUSE_CONF", "WHOUSE_CANC", 1, 0, -1);
+		func_590("MP_WH_SELL" /* GXT: SELL SPECIAL CARGO */, "MP_WH_SELL_C" /* GXT: Are you sure you'd like to sell your Special Cargo from this Warehouse? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 1, 0, -1);
 	}
 	iLocal_553 = 0;
 	iLocal_729 = -1;
@@ -23979,91 +23979,91 @@ char* func_334(bool bParam0)//Position - 0x16D5F
 	switch (bParam0)
 	{
 		case 1:
-			return "MP_WHOUSE_0";
+			return "MP_WHOUSE_0" /* GXT: Pacific Bait Storage */;
 			break;
 		
 		case 2:
-			return "MP_WHOUSE_1";
+			return "MP_WHOUSE_1" /* GXT: White Widow Garage */;
 			break;
 		
 		case 3:
-			return "MP_WHOUSE_2";
+			return "MP_WHOUSE_2" /* GXT: Celltowa Unit */;
 			break;
 		
 		case 4:
-			return "MP_WHOUSE_3";
+			return "MP_WHOUSE_3" /* GXT: Convenience Store Lockup */;
 			break;
 		
 		case 5:
-			return "MP_WHOUSE_4";
+			return "MP_WHOUSE_4" /* GXT: Foreclosed Garage */;
 			break;
 		
 		case 6:
-			return "MP_WHOUSE_5";
+			return "MP_WHOUSE_5" /* GXT: Xero Gas Factory */;
 			break;
 		
 		case 7:
-			return "MP_WHOUSE_6";
+			return "MP_WHOUSE_6" /* GXT: Derriere Lingerie Backlot */;
 			break;
 		
 		case 8:
-			return "MP_WHOUSE_7";
+			return "MP_WHOUSE_7" /* GXT: Bilgeco Warehouse */;
 			break;
 		
 		case 9:
-			return "MP_WHOUSE_8";
+			return "MP_WHOUSE_8" /* GXT: Pier 400 Utility Building */;
 			break;
 		
 		case 10:
-			return "MP_WHOUSE_9";
+			return "MP_WHOUSE_9" /* GXT: GEE Warehouse */;
 			break;
 		
 		case 11:
-			return "MP_WHOUSE_10";
+			return "MP_WHOUSE_10" /* GXT: LS Marine Building 3 */;
 			break;
 		
 		case 12:
-			return "MP_WHOUSE_11";
+			return "MP_WHOUSE_11" /* GXT: Railyard Warehouse */;
 			break;
 		
 		case 13:
-			return "MP_WHOUSE_12";
+			return "MP_WHOUSE_12" /* GXT: Fridgit Annexe */;
 			break;
 		
 		case 14:
-			return "MP_WHOUSE_13";
+			return "MP_WHOUSE_13" /* GXT: Disused Factory Outlet */;
 			break;
 		
 		case 15:
-			return "MP_WHOUSE_14";
+			return "MP_WHOUSE_14" /* GXT: Discount Retail Unit */;
 			break;
 		
 		case 16:
-			return "MP_WHOUSE_15";
+			return "MP_WHOUSE_15" /* GXT: Logistics Depot */;
 			break;
 		
 		case 17:
-			return "MP_WHOUSE_16";
+			return "MP_WHOUSE_16" /* GXT: Darnell Bros Warehouse */;
 			break;
 		
 		case 18:
-			return "MP_WHOUSE_17";
+			return "MP_WHOUSE_17" /* GXT: Wholesale Furniture */;
 			break;
 		
 		case 19:
-			return "MP_WHOUSE_18";
+			return "MP_WHOUSE_18" /* GXT: Cypress Warehouses */;
 			break;
 		
 		case 20:
-			return "MP_WHOUSE_19";
+			return "MP_WHOUSE_19" /* GXT: West Vinewood Backlot */;
 			break;
 		
 		case 21:
-			return "MP_WHOUSE_20";
+			return "MP_WHOUSE_20" /* GXT: Old Power Station */;
 			break;
 		
 		case 22:
-			return "MP_WHOUSE_21";
+			return "MP_WHOUSE_21" /* GXT: Walker & Sons Warehouse */;
 			break;
 	}
 	return "";
@@ -24073,67 +24073,67 @@ char* func_335(bool bParam0, bool bParam1)//Position - 0x16ED1
 {
 	if (!func_305() || !func_330())
 	{
-		return "WH_MFREASON_9";
+		return "WH_MFREASON_9" /* GXT: Please wait until a buyer can be found for your items. */;
 	}
 	switch (iLocal_729)
 	{
 		case 1:
-			return "WH_MFREASON_0";
+			return "WH_MFREASON_0" /* GXT: Too many Special Cargo related activities ongoing. */;
 		
 		case 2:
-			return "WH_MFREASON_1";
+			return "WH_MFREASON_1" /* GXT: Another CEO mission is already active. */;
 		
 		case 3:
-			return "WH_MFREASON_2";
+			return "WH_MFREASON_2" /* GXT: No other CEO's in this session. */;
 		
 		case 4:
-			return "WH_MFREASON_3";
+			return "WH_MFREASON_3" /* GXT: You do not have enough Associates to undertake this mission. */;
 		
 		case 5:
-			return "WH_MFREASON_4";
+			return "WH_MFREASON_4" /* GXT: Too many Special Cargo related activities ongoing. */;
 		
 		case 6:
-			return "WH_MFREASON_5";
+			return "WH_MFREASON_5" /* GXT: Cannot do this whilst you are active in a Freemode Event. */;
 		
 		case 7:
-			return "WH_MFREASON_6";
+			return "WH_MFREASON_6" /* GXT: One of your Associates is active in a Freemode Event. */;
 		
 		case 8:
-			return "WH_MFREASON_6";
+			return "WH_MFREASON_6" /* GXT: One of your Associates is active in a Freemode Event. */;
 		
 		case 9:
-			return "WH_MFREASON_8";
+			return "WH_MFREASON_8" /* GXT: Awaiting the response to your previous activity invites. */;
 		
 		case 10:
-			return "WH_MFREASON_8";
+			return "WH_MFREASON_8" /* GXT: Awaiting the response to your previous activity invites. */;
 		
 		case 11:
-			return "WH_MFREASON_9";
+			return "WH_MFREASON_9" /* GXT: Please wait until a buyer can be found for your items. */;
 		
 		case 12:
-			return "WH_MFREASON_12";
+			return "WH_MFREASON_12" /* GXT: Warehouse activities are currently unavailable. */;
 		
 		case 16:
-			return "GENERAL_MLF_G5";
+			return "GENERAL_MLF_G5" /* GXT: Can't launch this mission whilst one of your Associates is playing a casino game. */;
 		
 		case 15:
-			return "GENERAL_MLF_G2";
+			return "GENERAL_MLF_G2" /* GXT: Can't launch this mission whilst one of your Associates is currently at one with the animals. */;
 		
 		default:
 	}
 	if (func_50(PLAYER::PLAYER_ID()) || NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 	{
-		return "WH_MFREASON_10";
+		return "WH_MFREASON_10" /* GXT: You are actively involved in another job. */;
 	}
 	if (bParam0)
 	{
-		return "WHOUSE_PURCHF";
+		return "WHOUSE_PURCHF" /* GXT: Your purchase failed. */;
 	}
 	if (func_613(bParam1))
 	{
-		return "MP_WH_SELL_FE";
+		return "MP_WH_SELL_FE" /* GXT: This Warehouse is empty. */;
 	}
-	return "MP_WH_SELL_F";
+	return "MP_WH_SELL_F" /* GXT: You can't sell Special Cargo at this time. */;
 }
 
 int func_336(int iParam0)//Position - 0x16FED
@@ -24255,17 +24255,17 @@ void func_340(bool bParam0)//Position - 0x171D1
 		if (iVar0 == 0)
 		{
 			bVar3 = 17;
-			sVar1 = "WHPURCH_TICK_1";
+			sVar1 = "WHPURCH_TICK_1" /* GXT: New CEO Vehicle unlocked: XLS */;
 		}
 		else if (iVar0 == 1)
 		{
 			bVar3 = 18;
-			sVar1 = "WHPURCH_TICK_2";
+			sVar1 = "WHPURCH_TICK_2" /* GXT: New CEO Vehicle unlocked: Rumpo Custom */;
 		}
 		else
 		{
 			bVar3 = 19;
-			sVar1 = "WHPURCH_TICK_3";
+			sVar1 = "WHPURCH_TICK_3" /* GXT: New CEO Vehicle unlocked: Brickade */;
 		}
 		if (!BitTest(bVar2, bVar3))
 		{
@@ -24858,7 +24858,7 @@ void func_363(bool bParam0)//Position - 0x17B98
 	}
 	if (bParam0 == 6 || bParam0 == 8)
 	{
-		StringCopy(&Var2, "WH_LISA_1", 16);
+		StringCopy(&Var2, "WH_LISA_1" /* GXT: LSIA */, 16);
 	}
 	if (func_371(bParam0))
 	{
@@ -25600,91 +25600,91 @@ char* func_384(int iParam0)//Position - 0x188DA
 	switch (iParam0)
 	{
 		case 1:
-			return "MP_WHOUSE_0DES";
+			return "MP_WHOUSE_0DES" /* GXT: Sure, it was recently declared a biohazard - but no cop with a functioning sense of smell is going to come snooping around here, and nothing confuses sniffer dogs like a room full of maggots and rotting fish. */;
 			break;
 		
 		case 2:
-			return "MP_WHOUSE_1DES";
+			return "MP_WHOUSE_1DES" /* GXT: For the businessman in need of privacy, what could be less conspicuous than a second rate hipster boutique in the heart of Vespucci? Generic and obnoxious: the perfect urban camouflage. */;
 			break;
 		
 		case 3:
-			return "MP_WHOUSE_2DES";
+			return "MP_WHOUSE_2DES" /* GXT: Buy it as unregistered storage in a shabby industrial area with minimal police presence; sell it a couple years later to an ex-yuppie who wants to start a low-fi artisan espresso bar in an edgy part of town. The American dream lives on. */;
 			break;
 		
 		case 4:
-			return "MP_WHOUSE_3DES";
+			return "MP_WHOUSE_3DES" /* GXT: The previous owner was a compulsive hoarder, and the last time anyone set foot in here people listened to CDs and got their porn in magazines. We're guessing you'll have some clearing out to do - but hey, it's almost cheap. */;
 			break;
 		
 		case 5:
-			return "MP_WHOUSE_4DES";
+			return "MP_WHOUSE_4DES" /* GXT: A neighborhood of self-obsessed, unobservant millionaires with extensive drug habits. When you think about it, Vinewood makes an ideal location for a cache of pretty much whatever you like. */;
 			break;
 		
 		case 6:
-			return "MP_WHOUSE_5DES";
+			return "MP_WHOUSE_5DES" /* GXT: The economy is stronger than it's ever been, there isn't a nationwide fossil fuel crisis, and Xero Gas have a huge amount of warehouse space on the market for no particular reason. Long-term let available. */;
 			break;
 		
 		case 7:
-			return "MP_WHOUSE_6DES";
+			return "MP_WHOUSE_6DES" /* GXT: Sure, other importers have bigger warehouses - but can any of them say they just drove their goods right into the back of Derriere lingerie? Just think of the Lifeinvader status updates. */;
 			break;
 		
 		case 8:
-			return "MP_WHOUSE_7DES";
+			return "MP_WHOUSE_7DES" /* GXT: Ah, the salt breeze, the seamen on the dockside, the endless ranks of unmarked shipping containers bound for unregistered ports across the Far East. The romance of the ocean never dies. */;
 			break;
 		
 		case 9:
-			return "MP_WHOUSE_8DES";
+			return "MP_WHOUSE_8DES" /* GXT: If you can ignore the ankle deep water and toxic mold this is a nice quiet location for some perfectly legitimate commodities brokering. */;
 			break;
 		
 		case 10:
-			return "MP_WHOUSE_9DES";
+			return "MP_WHOUSE_9DES" /* GXT: For some, it's a smog-ridden shanty town on the outskirts of LS; for you, it's a center of modern entrepreneurship and competitive industry with no red tape and a rock-bottom price. You are the visionary, this is the vision. */;
 			break;
 		
 		case 11:
-			return "MP_WHOUSE_10DES";
+			return "MP_WHOUSE_10DES" /* GXT: This charming, white paneled warehouse in the heart of a thriving dockland has been used as a smuggler's drop since the days when your grampa got sent to the chair. Join criminal history today. */;
 			break;
 		
 		case 12:
-			return "MP_WHOUSE_11DES";
+			return "MP_WHOUSE_11DES" /* GXT: Invest now for great access to infrastructure, poor street lighting and an endless stream of cheap, undocumented labor from every migrant and freighthopper passing through town. */;
 			break;
 		
 		case 13:
-			return "MP_WHOUSE_12DES";
+			return "MP_WHOUSE_12DES" /* GXT: Whether you need a place to stash a trunk full of body parts or keep a perfectly chilled case of beer, setting up shop next to a cold storage facility has its benefits. */;
 			break;
 		
 		case 14:
-			return "MP_WHOUSE_13DES";
+			return "MP_WHOUSE_13DES" /* GXT: Sure, high-street retailers are dying, but the endless supply of boarded up storefronts are a gift to arms dealers and meth labs up and down the country. Be a part of some real urban regeneration. */;
 			break;
 		
 		case 15:
-			return "MP_WHOUSE_14DES";
+			return "MP_WHOUSE_14DES" /* GXT: Small businesses are struggling across America, so when a store owner seizes the opportunity to start a space sharing initiative with his local drug cartel it's your patriotic duty to support that classic entrepreneurial spirit. */;
 			break;
 		
 		case 16:
-			return "MP_WHOUSE_15DES";
+			return "MP_WHOUSE_15DES" /* GXT: Forget the driftwood furniture and candlesticks made from wine bottles: take upcycling to the next level and reduce your footprint by converting this disused freight depot into a world-class black market storage facility. */;
 			break;
 		
 		case 17:
-			return "MP_WHOUSE_16DES";
+			return "MP_WHOUSE_16DES" /* GXT: Once little more than a respectable, home-grown family business, Darnell Bros has since blossomed into a front for some of the most innovative criminal activity in the city. With neighbors like these you're on your way to the top. */;
 			break;
 		
 		case 18:
-			return "MP_WHOUSE_17DES";
+			return "MP_WHOUSE_17DES" /* GXT: Act now for 7000 square feet of grey concrete storage where the only distinguishing feature is a complete lack of distinguishing features. If you want to go unnoticed, look no further. */;
 			break;
 		
 		case 19:
-			return "MP_WHOUSE_18DES";
+			return "MP_WHOUSE_18DES" /* GXT: This one has it all: size, location, access. You can comfortably roll a mid-size body from here to the ocean without breaking a sweat. What more could you want? */;
 			break;
 		
 		case 20:
-			return "MP_WHOUSE_19DES";
+			return "MP_WHOUSE_19DES" /* GXT: There's no more fashionable place to overdose in the whole state, and there's no better example of hiding in plain sight than stockpiling a hundredweight of world-class narcotics in the backroom. */;
 			break;
 		
 		case 21:
-			return "MP_WHOUSE_20DES";
+			return "MP_WHOUSE_20DES" /* GXT: Space, drama, privacy: an old power plant is perfect for everything from gun running to ivory smuggling - and thanks to the green lobby, this one is selling off space at rock bottom prices. */;
 			break;
 		
 		case 22:
-			return "MP_WHOUSE_21DES";
+			return "MP_WHOUSE_21DES" /* GXT: Tucked away among the heavy industry and widespread birth defects of the most toxic stretch of coastline in the state, this spacious property is perfect for the discerning trader with something really big to hide. */;
 			break;
 	}
 	return "";
@@ -26372,7 +26372,7 @@ int func_403(var uParam0, var uParam1, bool bParam2)//Position - 0x1944A
 					{
 						uParam0->f_367 = Global_4539961;
 						func_404(uParam0->f_367, 1, 1);
-						AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FREEMODE_SOUNDSET", true);
+						AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FREEMODE_SOUNDSET", true);
 					}
 				}
 				if (uParam0->f_367 >= uParam0->f_369)
@@ -26795,7 +26795,7 @@ void func_416(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 	{
 		if (Global_23150.f_5609 <= 1)
 		{
-			func_438(Global_23150.f_5609 + 1, "DFLT_MNU_OPT", 0, 1, 0, 0, 0);
+			func_438(Global_23150.f_5609 + 1, "DFLT_MNU_OPT" /* GXT: Exit */, 0, 1, 0, 0, 0);
 			Global_23150.f_6405 = 1;
 		}
 	}
@@ -26898,14 +26898,14 @@ void func_416(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 				if (Global_23150.f_6126)
 				{
 					func_432();
-					func_430((((Global_23147 + fParam5) - 0.00390625f) - func_431("CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128);
+					func_430((((Global_23147 + fParam5) - 0.00390625f) - func_431("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128);
 				}
 				else if (Global_23150.f_6122 > Global_23150.f_5616)
 				{
 					if (Global_23150.f_6125 != 0)
 					{
 						func_432();
-						func_430((((Global_23147 + fParam5) - 0.00390625f) - func_431("CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124);
+						func_430((((Global_23147 + fParam5) - 0.00390625f) - func_431("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124);
 					}
 				}
 			}
@@ -29511,33 +29511,33 @@ void func_448(var uParam0, bool bParam1)//Position - 0x1E50C
 		MISC::CLEAR_BIT(&(uParam0->f_370), 3);
 		if (BitTest(uParam0->f_370, 2))
 		{
-			func_449("REP_WHOUSE_4", 100, 0);
+			func_449("REP_WHOUSE_4" /* GXT: You don't have enough cash in your bank account to complete this transaction. */, 100, 0);
 		}
 		else if (BitTest(uParam0->f_370, 5))
 		{
-			func_449("MP_PROP_HEI_0", 100, 0);
+			func_449("MP_PROP_HEI_0" /* GXT: You can't trade in property while playing a Heist. */, 100, 0);
 		}
 		else if (BitTest(uParam0->f_370, 6))
 		{
-			func_449("PROP3RDDIS", 1000, 0);
+			func_449("PROP3RDDIS" /* GXT: Purchasing a third property has been temporarily disabled. */, 1000, 0);
 		}
 		else if (bVar2 > 0 && !func_351(bVar2, bParam1))
 		{
 			if (func_347(bVar2) > func_347(bParam1))
 			{
-				func_449("REP_WHOUSE_5a", 1000, 0);
+				func_449("REP_WHOUSE_5a" /* GXT: You can't trade in this Warehouse as it is larger than the one you have selected. */, 1000, 0);
 			}
 			else if (!func_613(bVar2))
 			{
-				func_449("REP_WHOUSE_5b", 1000, 0);
+				func_449("REP_WHOUSE_5b" /* GXT: You can't trade in this Warehouse as it contains Special Cargo. */, 1000, 0);
 			}
 			else if (bVar2 == bParam1)
 			{
-				func_449("REP_WHOUSE_5c", 1000, 0);
+				func_449("REP_WHOUSE_5c" /* GXT: You can't trade in this Warehouse. */, 1000, 0);
 			}
 			else if (func_352(bVar2))
 			{
-				func_449("REP_WHOUSE_5d", 1000, 0);
+				func_449("REP_WHOUSE_5d" /* GXT: You can't trade in this Warehouse as the staff are sourcing cargo. */, 1000, 0);
 			}
 			else
 			{
@@ -29546,11 +29546,11 @@ void func_448(var uParam0, bool bParam1)//Position - 0x1E50C
 		}
 		else if (bVar2 > 0 && func_351(bVar2, bParam1))
 		{
-			func_449("REP_WHOUSE_2", 100, 0);
+			func_449("REP_WHOUSE_2" /* GXT: Select this Warehouse to trade in. */, 100, 0);
 		}
 		else
 		{
-			func_449("REP_WHOUSE_3", 100, 0);
+			func_449("REP_WHOUSE_3" /* GXT: Available Warehouse slot. */, 100, 0);
 		}
 	}
 }
@@ -29586,16 +29586,16 @@ void func_450(int iParam0, bool bParam1)//Position - 0x1E6BD
 	iVar2 = 0;
 	iVar3 = -1;
 	iVar4 = 0;
-	sVar0 = "BRSCRWTEX";
+	sVar0 = "BRSCRWTEX" /* GXT: Alert */;
 	if (bParam1)
 	{
-		sVar1 = "BRDISWARE";
-		iVar2 = "BRSHETPROSUB1";
+		sVar1 = "BRDISWARE" /* GXT: You already own a Warehouse, purchasing this one will trade in your old one. */;
+		iVar2 = "BRSHETPROSUB1" /* GXT: Do you wish to continue with this purchase? */;
 	}
 	else
 	{
-		sVar1 = "BRDISWAREB1";
-		iVar2 = "BRSHETPROSUB1";
+		sVar1 = "BRDISWAREB1" /* GXT: You already own a Warehouse, purchasing this one will trade in your old one. The trade in will ~a~ you $~1~. */;
+		iVar2 = "BRSHETPROSUB1" /* GXT: Do you wish to continue with this purchase? */;
 	}
 	iVar3 = iParam0;
 	if (iVar3 < 0)
@@ -29604,11 +29604,11 @@ void func_450(int iParam0, bool bParam1)//Position - 0x1E6BD
 	}
 	if (iParam0 < 0)
 	{
-		iVar4 = "BRSHETMAK";
+		iVar4 = "BRSHETMAK" /* GXT: make */;
 	}
 	else
 	{
-		iVar4 = "BRSHETPRSA";
+		iVar4 = "BRSHETPRSA" /* GXT: save */;
 	}
 	HUD::SET_WARNING_MESSAGE_WITH_HEADER_AND_SUBSTRING_FLAGS(sVar0, sVar1, 18, iVar2, true, iVar3, 0, iVar4, 0, true, 0);
 }
@@ -29634,7 +29634,7 @@ void func_451(var uParam0, bool bParam1)//Position - 0x1E72E
 		func_464(1, 1, 0, 0, 0);
 		func_463(1, 2, 1, 1, 1);
 		func_462(0, 0, 0, 0, 0);
-		func_461("REP_WHOUSE_0");
+		func_461("REP_WHOUSE_0" /* GXT: WAREHOUSE PURCHASE */);
 		iVar1 = 4;
 		while (iVar1 >= 0)
 		{
@@ -29642,7 +29642,7 @@ void func_451(var uParam0, bool bParam1)//Position - 0x1E72E
 			if (bVar3 > 0)
 			{
 				bVar4 = func_351(bVar3, bParam1);
-				func_438(iVar0, "PIM_DNAME", 1, bVar4, 0, 0, 0);
+				func_438(iVar0, "PIM_DNAME" /* GXT: ~a~ */, 1, bVar4, 0, 0, 0);
 				if (func_460())
 				{
 					func_459(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(func_334(bVar3)), 0, 0, 0);
@@ -29651,7 +29651,7 @@ void func_451(var uParam0, bool bParam1)//Position - 0x1E72E
 				{
 					func_458(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(func_334(bVar3)), 0, 1, 1);
 				}
-				func_438(iVar0, "CUST_GAR_COST", 1, bVar4, 0, 0, 0);
+				func_438(iVar0, "CUST_GAR_COST" /* GXT: $~1~ */, 1, bVar4, 0, 0, 0);
 				func_455(func_396(bVar3), 0);
 				uParam0->f_1[iVar1] = bVar3;
 				iLocal_741[iVar0] = iVar1;
@@ -29661,7 +29661,7 @@ void func_451(var uParam0, bool bParam1)//Position - 0x1E72E
 			{
 				if (func_388((iVar1 - 1)) > 0)
 				{
-					func_438(iVar0, "REP_WHOUSE_1", 0, 1, 0, 0, 0);
+					func_438(iVar0, "REP_WHOUSE_1" /* GXT: Empty Warehouse Slot */, 0, 1, 0, 0, 0);
 					uParam0->f_1[iVar1] = bVar3;
 					iLocal_741[iVar0] = iVar1;
 					iVar0++;
@@ -29682,9 +29682,9 @@ void func_452(var uParam0, bool bParam1)//Position - 0x1E890
 	func_454(-1);
 	if (func_388(uParam0->f_367) <= 0 || func_351(func_388(uParam0->f_367), bParam1))
 	{
-		func_453(176, "BB_SELECT", -1);
+		func_453(176, "BB_SELECT" /* GXT: Select */, -1);
 	}
-	func_453(177, "BB_BACK", -1);
+	func_453(177, "BB_BACK" /* GXT: Back */, -1);
 }
 
 void func_453(int iParam0, char* sParam1, int iParam2)//Position - 0x1E8D6
@@ -30698,7 +30698,7 @@ struct<4> func_475(int iParam0, int iParam1, bool bParam2)//Position - 0x1FF7A
 	}
 	else
 	{
-		StringCopy(&Var0, "WHOUSE_SHI", 16);
+		StringCopy(&Var0, "WHOUSE_SHI" /* GXT: CONFIRM PURCHASE */, 16);
 		StringIntConCat(&Var0, iVar3, 16);
 		StringConCat(&Var0, "D", 16);
 		StringIntConCat(&Var0, iVar1, 16);
@@ -30731,7 +30731,7 @@ void func_478(int iParam0)//Position - 0x1FFF4
 				if (!BitTest(iLocal_554, 0))
 				{
 					AUDIO::PLAY_SOUND_FRONTEND(-1, "Popup_Confirm_Fail", "GTAO_Exec_SecuroServ_Computer_Sounds", true);
-					func_590("SVM_MIS_TI", "SVM_MIS_FL", "WHOUSE_CONF", "", 0, 0, -1);
+					func_590("SVM_MIS_TI" /* GXT: SPECIAL VEHICLE WORK */, "SVM_MIS_FL" /* GXT: This special vehicle work is currently unavailable. */, "WHOUSE_CONF" /* GXT: Confirm */, "", 0, 0, -1);
 					MISC::SET_BIT(&iLocal_554, 0);
 				}
 			}
@@ -30760,7 +30760,7 @@ void func_478(int iParam0)//Position - 0x1FFF4
 				if (!BitTest(iLocal_554, 0))
 				{
 					AUDIO::PLAY_SOUND_FRONTEND(-1, "Popup_Confirm_Fail", "GTAO_Exec_SecuroServ_Computer_Sounds", true);
-					func_590("SVM_MIS_TI", "SVM_MIS_FL", "", "WHOUSE_CONF", 0, 0, -1);
+					func_590("SVM_MIS_TI" /* GXT: SPECIAL VEHICLE WORK */, "SVM_MIS_FL" /* GXT: This special vehicle work is currently unavailable. */, "", "WHOUSE_CONF" /* GXT: Confirm */, 0, 0, -1);
 					MISC::SET_BIT(&iLocal_554, 0);
 				}
 				iLocal_754 = -1;
@@ -30770,7 +30770,7 @@ void func_478(int iParam0)//Position - 0x1FFF4
 				if (!BitTest(iLocal_554, 0))
 				{
 					AUDIO::PLAY_SOUND_FRONTEND(-1, "Popup_Confirm_Fail", "GTAO_Exec_SecuroServ_Computer_Sounds", true);
-					func_590("SVM_MIS_TI", "SVM_MIS_FNA", "", "WHOUSE_CONF", 0, 0, -1);
+					func_590("SVM_MIS_TI" /* GXT: SPECIAL VEHICLE WORK */, "SVM_MIS_FNA" /* GXT: This special vehicle work is currently unavailable. Source and steal some more vehicles to unlock this mission. */, "", "WHOUSE_CONF" /* GXT: Confirm */, 0, 0, -1);
 					MISC::SET_BIT(&iLocal_554, 0);
 				}
 				iLocal_754 = -1;
@@ -30780,14 +30780,14 @@ void func_478(int iParam0)//Position - 0x1FFF4
 				if (!BitTest(iLocal_554, 0))
 				{
 					AUDIO::PLAY_SOUND_FRONTEND(-1, "Popup_Confirm_Fail", "GTAO_Exec_SecuroServ_Computer_Sounds", true);
-					func_590("SVM_MIS_TI", "SVM_MIS_FL", "", "WHOUSE_CONF", 0, 0, -1);
+					func_590("SVM_MIS_TI" /* GXT: SPECIAL VEHICLE WORK */, "SVM_MIS_FL" /* GXT: This special vehicle work is currently unavailable. */, "", "WHOUSE_CONF" /* GXT: Confirm */, 0, 0, -1);
 					MISC::SET_BIT(&iLocal_554, 0);
 				}
 				iLocal_754 = -1;
 			}
 			else
 			{
-				func_590("SVM_MIS_TI", "SVM_MIS_L", "WHOUSE_CONF", "WHOUSE_CANC", 1, 0, -1);
+				func_590("SVM_MIS_TI" /* GXT: SPECIAL VEHICLE WORK */, "SVM_MIS_L" /* GXT: Are you sure you'd like to launch this mission? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 1, 0, -1);
 				AUDIO::PLAY_SOUND_FRONTEND(-1, "Navigate", "GTAO_Exec_SecuroServ_Computer_Sounds", true);
 			}
 			iLocal_553 = 1;
@@ -30888,7 +30888,7 @@ int func_482(var uParam0, int iParam1, int iParam2)//Position - 0x20264
 				func_570();
 			}
 			func_569();
-			HUD::BEGIN_TEXT_COMMAND_BUSYSPINNER_ON("FMMC_PLYLOAD");
+			HUD::BEGIN_TEXT_COMMAND_BUSYSPINNER_ON("FMMC_PLYLOAD" /* GXT: Initializing */);
 			HUD::END_TEXT_COMMAND_BUSYSPINNER_ON(5);
 			func_567(func_568(), 0, 0, 0);
 			func_484(uParam0, 0, 0, 0f, 0f, 0f, &uVar2, 0f, 0f, 0f, 1, 0, &uVar2, &iVar3, iVar3, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -34568,7 +34568,7 @@ void func_605()//Position - 0x251E3
 			iLocal_735 = 0;
 			iLocal_729 = func_60(PLAYER::PLAYER_ID(), 168, 0);
 			sVar1 = func_335(0, iLocal_730);
-			func_590("MP_WH_SELL", sVar1, "WHOUSE_CONF", "", 0, 0, -1);
+			func_590("MP_WH_SELL" /* GXT: SELL SPECIAL CARGO */, sVar1, "WHOUSE_CONF" /* GXT: Confirm */, "", 0, 0, -1);
 			AUDIO::PLAY_SOUND_FRONTEND(-1, "Error", "GTAO_Exec_SecuroServ_Warehouse_PC_Sounds", true);
 			MISC::SET_BIT(&iLocal_554, 8);
 		}
@@ -34661,7 +34661,7 @@ void func_608()//Position - 0x2554B
 	{
 		if (func_612(7654, -1) < 3 && !BitTest(Global_1946101, 12))
 		{
-			sVar0 = "WH_TUT_1";
+			sVar0 = "WH_TUT_1" /* GXT: Your current stock of Special Cargo has attracted an interested buyer. Their information and offer of payment can be seen on the right side of the screen. */;
 			iLocal_733 = 5500;
 			MISC::SET_BIT(&Global_1946101, 12);
 			iVar1 = func_612(7654, -1);
@@ -34670,7 +34670,7 @@ void func_608()//Position - 0x2554B
 		}
 		else if (func_612(7655, -1) < 3 && !BitTest(Global_1946101, 13))
 		{
-			sVar0 = "WH_TUT_2";
+			sVar0 = "WH_TUT_2" /* GXT: Stockpiling Special Cargo will attract wealthier buyers willing to pay more for a larger shipment in one transaction. */;
 			iLocal_733 = 5500;
 			MISC::SET_BIT(&Global_1946101, 13);
 			iVar2 = func_612(7655, -1);
@@ -34679,7 +34679,7 @@ void func_608()//Position - 0x2554B
 		}
 		else if (func_612(7656, -1) < 3 && !BitTest(Global_1946101, 14))
 		{
-			sVar0 = "WH_TUT_3";
+			sVar0 = "WH_TUT_3" /* GXT: Mission difficulty is decreased when selling smaller percentages of held stock. Hire Associates to help protect your Special Cargo when choosing to sell all. */;
 			iLocal_733 = 5500;
 			MISC::SET_BIT(&Global_1946101, 14);
 			iVar3 = func_612(7656, -1);
@@ -34688,7 +34688,7 @@ void func_608()//Position - 0x2554B
 		}
 		else if ((func_612(7657, -1) < 3 && !BitTest(Global_1946101, 15)) && func_610(iLocal_730))
 		{
-			sVar0 = "WH_TUT_SPEC";
+			sVar0 = "WH_TUT_SPEC" /* GXT: You have attracted a buyer who is interested in your Special Items. Sell to them for an increased profit margin. */;
 			iLocal_733 = 5500;
 			MISC::SET_BIT(&Global_1946101, 15);
 			iVar4 = func_612(7657, -1);
@@ -34772,7 +34772,7 @@ void func_614()//Position - 0x2579B
 	{
 		if (iLocal_731 == 2 && func_620(0))
 		{
-			sVar0 = "SECURO_MAP_TUT";
+			sVar0 = "SECURO_MAP_TUT" /* GXT: The map displays the various sizes of warehouse available for sale throughout Los Santos. Click on any red icon to preview the details for that specific warehouse. */;
 			iLocal_733 = 8000;
 			MISC::SET_BIT(&Global_1946101, 0);
 			iVar1 = func_612(7658, -1);
@@ -34781,7 +34781,7 @@ void func_614()//Position - 0x2579B
 		}
 		else if ((func_620(1) && func_603()) && !func_618())
 		{
-			sVar0 = "SECURO_WH_TUT";
+			sVar0 = "SECURO_WH_TUT" /* GXT: This page provides details on the currently selected warehouse you wish to buy, such as location and storage capacity. */;
 			iLocal_733 = 6000;
 			MISC::SET_BIT(&Global_1946101, 1);
 			iVar2 = func_612(7660, -1);
@@ -34790,7 +34790,7 @@ void func_614()//Position - 0x2579B
 		}
 		else if (((iLocal_731 == 2 && func_474()) && !BitTest(iLocal_554, 19)) && func_620(2))
 		{
-			sVar0 = "SECURO_PURCH_TUT";
+			sVar0 = "SECURO_PURCH_TUT" /* GXT: Your purchased warehouses are shown in green on the map. Select one to access the buy Special Cargo options for this warehouse. */;
 			iLocal_733 = 6000;
 			MISC::SET_BIT(&Global_1946101, 2);
 			iVar3 = func_612(7659, -1);
@@ -34799,7 +34799,7 @@ void func_614()//Position - 0x2579B
 		}
 		else if ((func_620(3) && func_618()) && func_603())
 		{
-			sVar0 = "SECURO_BUY_TUT";
+			sVar0 = "SECURO_BUY_TUT" /* GXT: There are three Special Cargo shipment sizes available. Larger shipment sizes increase mission difficulty. Hire additional Associates to help guarantee success. */;
 			iLocal_733 = 9000;
 			MISC::SET_BIT(&Global_1946101, 3);
 			iVar4 = func_612(7661, -1);
@@ -34808,7 +34808,7 @@ void func_614()//Position - 0x2579B
 		}
 		else if (iLocal_731 == 1 && func_620(4))
 		{
-			sVar0 = "SECURO_SUM_TUT";
+			sVar0 = "SECURO_SUM_TUT" /* GXT: The summary page tracks information across all owned warehouses and lists any rival Organizations in session. */;
 			iLocal_733 = 6000;
 			MISC::SET_BIT(&Global_1946101, 4);
 			iVar5 = func_612(7662, -1);
@@ -34817,7 +34817,7 @@ void func_614()//Position - 0x2579B
 		}
 		else if (func_620(5))
 		{
-			sVar0 = "SECURO_SPEC_TUT";
+			sVar0 = "SECURO_SPEC_TUT" /* GXT: A Special Item is available to buy. These items cost more to buy but sell for a larger profit. */;
 			iLocal_733 = 6000;
 			MISC::SET_BIT(&Global_1946101, 5);
 			iVar6 = func_612(7663, -1);
@@ -34826,42 +34826,42 @@ void func_614()//Position - 0x2579B
 		}
 		else if (func_620(6))
 		{
-			sVar0 = "IE_SEC_TUT1";
+			sVar0 = "IE_SEC_TUT1" /* GXT: This map displays the various Vehicle Warehouses available for sale throughout Los Santos. Click on any red icon to preview the details for that specific warehouse. */;
 			iLocal_733 = 6000;
 			MISC::SET_BIT(&Global_1946101, 6);
 			func_615(&iLocal_755, &iLocal_756, 0);
 		}
 		else if (func_620(7))
 		{
-			sVar0 = "IE_SEC_TUT2";
+			sVar0 = "IE_SEC_TUT2" /* GXT: Your purchased Vehicle Warehouse is shown in green on the map. Select it to view the details of the property and to access renovation options. */;
 			iLocal_733 = 6000;
 			MISC::SET_BIT(&Global_1946101, 7);
 			func_615(&iLocal_755, &iLocal_756, 3);
 		}
 		else if (func_620(8))
 		{
-			sVar0 = "IE_SEC_TUT3";
+			sVar0 = "IE_SEC_TUT3" /* GXT: Select the Source Vehicle button to begin a steal mission. Higher value vehicles increase mission difficulty. Hire Associates to help guarantee success. */;
 			iLocal_733 = 6000;
 			MISC::SET_BIT(&Global_1946101, 8);
 			func_615(&iLocal_755, &iLocal_756, 6);
 		}
 		else if (func_620(9))
 		{
-			sVar0 = "IE_SEC_TUT4";
+			sVar0 = "IE_SEC_TUT4" /* GXT: The summary page tracks your Vehicle Cargo information and lists any rival Organizations in session. You can also Source Vehicles and renovate your Warehouse from here. */;
 			iLocal_733 = 6000;
 			MISC::SET_BIT(&Global_1946101, 9);
 			func_615(&iLocal_755, &iLocal_756, 9);
 		}
 		else if (func_620(10))
 		{
-			sVar0 = "IE_SEC_TUT5";
+			sVar0 = "IE_SEC_TUT5" /* GXT: There is a short waiting period before an additional vehicle can be sourced. */;
 			iLocal_733 = 6000;
 			MISC::SET_BIT(&Global_1946101, 10);
 			func_615(&iLocal_755, &iLocal_756, 12);
 		}
 		else if (func_620(11))
 		{
-			sVar0 = "IE_SEC_TUT6";
+			sVar0 = "IE_SEC_TUT6" /* GXT: Launch a Special Vehicle Work to play a mission using one of SecuroServ's new Special Vehicles. The padlock icon shows the total number of steal missions that be must completed in order to unlock the next job. */;
 			iLocal_733 = 9000;
 			MISC::SET_BIT(&Global_1946101, 11);
 			func_615(&iLocal_755, &iLocal_756, 15);
@@ -35930,7 +35930,7 @@ void func_648()//Position - 0x26D34
 	{
 		if ((!BitTest(iLocal_554, 14) && !BitTest(iLocal_554, 30)) && BitTest(iLocal_554, 28))
 		{
-			func_609("SECURO_SELL_CD", 5000);
+			func_609("SECURO_SELL_CD" /* GXT: There is a waiting period before you can sell additional Special Cargo from the same warehouse location. */, 5000);
 			MISC::SET_BIT(&iLocal_554, 31);
 			MISC::SET_BIT(&iLocal_554, 30);
 		}
@@ -35944,14 +35944,14 @@ void func_648()//Position - 0x26D34
 			{
 				if (BitTest(uLocal_724, func_619()))
 				{
-					func_609("SECURO_BUY_CD", 5000);
+					func_609("SECURO_BUY_CD" /* GXT: There is a short waiting period before additional Special Cargo can be purchased and delivered to the same warehouse location. */, 5000);
 					MISC::SET_BIT(&iLocal_554, 31);
 					MISC::SET_BIT(&iLocal_554, 29);
 				}
 			}
 			if (((!BitTest(iLocal_554, 30) && !BitTest(iLocal_554, 31)) && BitTest(iLocal_554, 28)) && func_618())
 			{
-				func_609("SECURO_SELL_CD", 5000);
+				func_609("SECURO_SELL_CD" /* GXT: There is a waiting period before you can sell additional Special Cargo from the same warehouse location. */, 5000);
 				MISC::SET_BIT(&iLocal_554, 31);
 				MISC::SET_BIT(&iLocal_554, 30);
 			}
@@ -36115,34 +36115,34 @@ void func_657()//Position - 0x270A3
 	PAD::DISABLE_CONTROL_ACTION(2, 188, true);
 	iVar2 = 18;
 	iVar3 = 0;
-	sVar0 = "BRSCRWTEX";
+	sVar0 = "BRSCRWTEX" /* GXT: Alert */;
 	if (!func_658())
 	{
 		switch (Global_4539884)
 		{
 			case 0:
-				sVar1 = "BRDISTEX";
+				sVar1 = "BRDISTEX" /* GXT: You have insufficient funds. You can add GTA Dollars to your in-game account. */;
 				break;
 			
 			case 1:
-				sVar1 = "BRDISDLC";
+				sVar1 = "BRDISDLC" /* GXT: You do not own this downloadable content. */;
 				break;
 		}
-		iVar3 = "BRSHETEX";
+		iVar3 = "BRSHETEX" /* GXT: Would you like to visit the Store? */;
 	}
 	else
 	{
 		switch (Global_4539884)
 		{
 			case 0:
-				sVar1 = "BRDISTES";
+				sVar1 = "BRDISTES" /* GXT: You have insufficient funds. You will be able to add GTA Dollars when signed into your in-game account. */;
 				break;
 			
 			case 1:
-				sVar1 = "BRDISDLC";
+				sVar1 = "BRDISDLC" /* GXT: You do not own this downloadable content. */;
 				break;
 		}
-		iVar3 = "BRSHETES";
+		iVar3 = "BRSHETES" /* GXT: The PC Store is not available while you are signed out. */;
 	}
 	HUD::SET_WARNING_MESSAGE_WITH_HEADER(sVar0, sVar1, iVar2, iVar3, false, -1, 0, 0, true, 0);
 	Global_1964706.f_5 = MISC::GET_FRAME_COUNT();
@@ -36681,12 +36681,12 @@ char* func_690(int iParam0, bool bParam1)//Position - 0x27B10
 			return func_691();
 		}
 	}
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACC");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACC" /* GXT: An Organization */);
 }
 
 char* func_691()//Position - 0x27B37
 {
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACCM");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACCM" /* GXT: Motorcycle Club */);
 }
 
 bool func_692(int iParam0, bool bParam1)//Position - 0x27B47
@@ -37032,7 +37032,7 @@ void func_702(int iParam0, int iParam1, bool bParam2)//Position - 0x280CA
 	func_262(&Var6);
 	if (iVar3 != -1)
 	{
-		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FMMC_OFFLN_HD");
+		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FMMC_OFFLN_HD" /* GXT: ~a~~a~~a~~a~~a~~a~~a~~a~ */);
 		iVar0 = 0;
 		while (iVar0 < 8)
 		{
@@ -38074,7 +38074,7 @@ char* func_731(int iParam0, int iParam1)//Position - 0x292B9
 
 char* func_732()//Position - 0x292D9
 {
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREATOR_NO_T");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREATOR_NO_T" /* GXT: No translation. */);
 }
 
 int func_733(int iParam0, var uParam1)//Position - 0x292E9
@@ -38195,28 +38195,28 @@ char* func_739(int iParam0)//Position - 0x29459
 	switch (iParam0)
 	{
 		case 0:
-			return "SVM_MIS_1";
+			return "SVM_MIS_1" /* GXT: Ramp Buggy Mission */;
 		
 		case 1:
-			return "SVM_MIS_2";
+			return "SVM_MIS_2" /* GXT: Wastelander Mission */;
 		
 		case 2:
-			return "SVM_MIS_3";
+			return "SVM_MIS_3" /* GXT: Blazer Aqua Mission */;
 		
 		case 3:
-			return "SVM_MIS_4";
+			return "SVM_MIS_4" /* GXT: Phantom Wedge Mission */;
 		
 		case 4:
-			return "SVM_MIS_5";
+			return "SVM_MIS_5" /* GXT: Rocket Voltic Mission */;
 		
 		case 5:
-			return "SVM_MIS_6";
+			return "SVM_MIS_6" /* GXT: Technical Aqua Mission */;
 		
 		case 6:
-			return "SVM_MIS_7";
+			return "SVM_MIS_7" /* GXT: Armored Boxville Mission */;
 		
 		case 7:
-			return "SVM_MIS_8";
+			return "SVM_MIS_8" /* GXT: Ruiner 2000 Mission */;
 		
 		default:
 	}
@@ -38553,15 +38553,15 @@ void func_761(int iParam0, char* sParam1, char* sParam2, int iParam3, int iParam
 		}
 		if (iParam3 == 3)
 		{
-			StringConCat(sParam2, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CBUYERCRS"), 64);
+			StringConCat(sParam2, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CBUYERCRS" /* GXT: All Special Items */), 64);
 		}
 		else if (bVar0)
 		{
-			StringConCat(sParam2, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CBUYERCRP"), 64);
+			StringConCat(sParam2, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CBUYERCRP" /* GXT:  Crates */), 64);
 		}
 		else
 		{
-			StringConCat(sParam2, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CBUYERCR"), 64);
+			StringConCat(sParam2, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CBUYERCR" /* GXT:  Crate */), 64);
 		}
 	}
 	else

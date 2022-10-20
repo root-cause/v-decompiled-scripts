@@ -1265,11 +1265,11 @@ void func_2()//Position - 0x2F5
 						MISC::SET_BIT(&(Global_113386.f_10049.f_94), 10);
 						if (bLocal_327 == 0)
 						{
-							func_15("CHOP_H_BEHAVE", -1);
+							func_15("CHOP_H_BEHAVE" /* GXT: Chop is unhappy so is misbehaving. Download the iFruit app for your personal smartphone device or tablet to train him. */, -1);
 						}
 						else
 						{
-							func_15("CHOP_H_BEHAVA", -1);
+							func_15("CHOP_H_BEHAVA" /* GXT: Chop is unhappy so is misbehaving. Use the iFruit app to train him. */, -1);
 						}
 					}
 					TASK::CLEAR_PED_TASKS(iLocal_69);
@@ -2035,7 +2035,7 @@ void func_18()//Position - 0x24A3
 		if (((!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && !BitTest(Global_113386.f_10049.f_94, 1)) && !func_19()) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 		{
 			MISC::SET_BIT(&(Global_113386.f_10049.f_94), 1);
-			func_15("CHOP_H_HUNT", -1);
+			func_15("CHOP_H_HUNT" /* GXT: Chop will bark more often when he nears pickups. */, -1);
 		}
 	}
 }
@@ -2116,7 +2116,7 @@ int func_23()//Position - 0x26BB
 	if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true))
 	{
 		iVar0 = ENTITY::GET_ENTITY_MODEL(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), true));
-		if ((((((((((((((((((iVar0 == joaat("caddy") || iVar0 == joaat("caddy2")) || iVar0 == joaat("dune")) || iVar0 == joaat("airtug")) || iVar0 == joaat("blazer")) || iVar0 == joaat("blazer2")) || iVar0 == joaat("bulldozer")) || iVar0 == joaat("cutter")) || iVar0 == joaat("dump")) || iVar0 == joaat("forklift")) || iVar0 == joaat("handler")) || iVar0 == joaat("mower")) || iVar0 == joaat("rhino")) || iVar0 == joaat("tractor")) || iVar0 == joaat("tractor2")) || iVar0 == joaat("tractor3")) || iVar0 == MISC::GET_HASH_KEY("bifta")) || iVar0 == joaat("blazer3")) || iVar0 == joaat("dune2"))
+		if ((((((((((((((((((iVar0 == joaat("caddy") || iVar0 == joaat("caddy2")) || iVar0 == joaat("dune")) || iVar0 == joaat("airtug")) || iVar0 == joaat("blazer")) || iVar0 == joaat("blazer2")) || iVar0 == joaat("bulldozer")) || iVar0 == joaat("cutter")) || iVar0 == joaat("dump")) || iVar0 == joaat("forklift")) || iVar0 == joaat("handler")) || iVar0 == joaat("mower")) || iVar0 == joaat("rhino")) || iVar0 == joaat("tractor")) || iVar0 == joaat("tractor2")) || iVar0 == joaat("tractor3")) || iVar0 == MISC::GET_HASH_KEY("bifta" /* GXT: Bifta */)) || iVar0 == joaat("blazer3")) || iVar0 == joaat("dune2"))
 		{
 			return 1;
 		}
@@ -2538,7 +2538,7 @@ void func_44()//Position - 0x2E94
 	if (((!BitTest(Global_113386.f_10049.f_94, 7) && !HUD::IS_HELP_MESSAGE_BEING_DISPLAYED()) && !func_19()) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 	{
 		MISC::SET_BIT(&(Global_113386.f_10049.f_94), 7);
-		func_15("CHOP_H_BALL", -1);
+		func_15("CHOP_H_BALL" /* GXT: When taking Chop for a walk, Franklin can play fetch using the ball in the weapon wheel. */, -1);
 	}
 	if (((func_125(PLAYER::PLAYER_PED_ID()) && !PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true)) && func_125(iLocal_69)) && !PED::IS_PED_IN_ANY_VEHICLE(iLocal_69, true))
 	{
@@ -3293,7 +3293,7 @@ void func_54()//Position - 0x38A2
 					if (((!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && !BitTest(Global_113386.f_10049.f_94, 3)) && !func_19()) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 					{
 						MISC::SET_BIT(&(Global_113386.f_10049.f_94), 3);
-						func_15("CHOP_H_NOVEH", -1);
+						func_15("CHOP_H_NOVEH" /* GXT: Chop can only get into suitable cars with an empty front passenger seat. */, -1);
 					}
 					func_121(3, 1);
 				}
@@ -3531,7 +3531,7 @@ void func_54()//Position - 0x38A2
 					if (((!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && !BitTest(Global_113386.f_10049.f_94, 2)) && !func_19()) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 					{
 						MISC::SET_BIT(&(Global_113386.f_10049.f_94), 2);
-						func_15("CHOP_H_CAR", -1);
+						func_15("CHOP_H_CAR" /* GXT: Chop will follow Franklin into suitable cars with an empty front passenger seat. */, -1);
 					}
 				}
 			}
@@ -3624,7 +3624,7 @@ void func_54()//Position - 0x38A2
 				if (((!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && !BitTest(Global_113386.f_10049.f_94, 5)) && !func_19()) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 				{
 					MISC::SET_BIT(&(Global_113386.f_10049.f_94), 5);
-					func_15("CHOP_H_BIKE", -1);
+					func_15("CHOP_H_BIKE" /* GXT: Chop will follow bikes and other vehicles he cannot get inside. */, -1);
 				}
 			}
 			break;
@@ -4103,7 +4103,7 @@ int func_77()//Position - 0x4CCF
 	if (func_125(iLocal_78))
 	{
 		iVar0 = ENTITY::GET_ENTITY_MODEL(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), true));
-		if (((((((((((((((((((((((iVar0 == joaat("airbus") || iVar0 == joaat("barracks")) || iVar0 == joaat("barracks2")) || iVar0 == joaat("biff")) || iVar0 == joaat("bus")) || iVar0 == joaat("coach")) || iVar0 == joaat("hauler")) || iVar0 == joaat("mixer")) || iVar0 == joaat("mixer2")) || iVar0 == joaat("packer")) || iVar0 == joaat("pbus")) || iVar0 == joaat("phantom")) || iVar0 == joaat("pounder")) || iVar0 == joaat("riot")) || iVar0 == joaat("rubble")) || iVar0 == joaat("scrap")) || iVar0 == joaat("stockade")) || iVar0 == joaat("stockade3")) || iVar0 == joaat("tiptruck")) || iVar0 == joaat("tiptruck2")) || iVar0 == joaat("towtruck")) || iVar0 == joaat("towtruck2")) || iVar0 == MISC::GET_HASH_KEY("monster")) || iVar0 == MISC::GET_HASH_KEY("marshall"))
+		if (((((((((((((((((((((((iVar0 == joaat("airbus") || iVar0 == joaat("barracks")) || iVar0 == joaat("barracks2")) || iVar0 == joaat("biff")) || iVar0 == joaat("bus")) || iVar0 == joaat("coach")) || iVar0 == joaat("hauler")) || iVar0 == joaat("mixer")) || iVar0 == joaat("mixer2")) || iVar0 == joaat("packer")) || iVar0 == joaat("pbus")) || iVar0 == joaat("phantom")) || iVar0 == joaat("pounder")) || iVar0 == joaat("riot")) || iVar0 == joaat("rubble")) || iVar0 == joaat("scrap")) || iVar0 == joaat("stockade")) || iVar0 == joaat("stockade3")) || iVar0 == joaat("tiptruck")) || iVar0 == joaat("tiptruck2")) || iVar0 == joaat("towtruck")) || iVar0 == joaat("towtruck2")) || iVar0 == MISC::GET_HASH_KEY("monster" /* GXT: The Liberator */)) || iVar0 == MISC::GET_HASH_KEY("marshall" /* GXT: Marshall */))
 		{
 			return 1;
 		}
@@ -7093,13 +7093,13 @@ void func_102()//Position - 0x8C00
 {
 	if (!PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false) && !ENTITY::IS_ENTITY_IN_WATER(PLAYER::PLAYER_PED_ID()))
 	{
-		if (func_106(PLAYER::PLAYER_PED_ID(), iLocal_69) > 10f || func_105("CHOP_H_WHIS"))
+		if (func_106(PLAYER::PLAYER_PED_ID(), iLocal_69) > 10f || func_105("CHOP_H_WHIS" /* GXT: Press ~INPUT_DETONATE~ to whistle to make Chop return to Franklin. */))
 		{
 			if ((MISC::GET_GAME_TIMER() - iLocal_342) > 4000 && PAD::IS_CONTROL_JUST_PRESSED(2, 47))
 			{
 				iLocal_342 = MISC::GET_GAME_TIMER();
 				func_103(PLAYER::PLAYER_PED_ID(), "CALL_CHOP", 3);
-				if (func_105("CHOP_H_WHIS"))
+				if (func_105("CHOP_H_WHIS" /* GXT: Press ~INPUT_DETONATE~ to whistle to make Chop return to Franklin. */))
 				{
 					HUD::CLEAR_HELP(true);
 				}
@@ -7122,7 +7122,7 @@ void func_102()//Position - 0x8C00
 			if (((!BitTest(Global_113386.f_10049.f_94, 8) && !HUD::IS_HELP_MESSAGE_BEING_DISPLAYED()) && !func_19()) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 			{
 				MISC::SET_BIT(&(Global_113386.f_10049.f_94), 8);
-				func_15("CHOP_H_WHIS", -1);
+				func_15("CHOP_H_WHIS" /* GXT: Press ~INPUT_DETONATE~ to whistle to make Chop return to Franklin. */, -1);
 			}
 		}
 	}
@@ -7706,11 +7706,11 @@ void func_129()//Position - 0x96FF
 		PAD::DISABLE_CONTROL_ACTION(0, 37, true);
 		if (iLocal_328 == 0)
 		{
-			func_138(SYSTEM::FLOOR(Global_113386.f_20118.f_254), 100, "CHOP_H_HAPPY", 1, -1, 2, -1f, -1f, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, -1, 0, -1, -1082130432, -1082130432, 0, 1, 0, 0, 1, -1, 0, -1, 1);
+			func_138(SYSTEM::FLOOR(Global_113386.f_20118.f_254), 100, "CHOP_H_HAPPY" /* GXT: Happiness */, 1, -1, 2, -1f, -1f, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, -1, 0, -1, -1082130432, -1082130432, 0, 1, 0, 0, 1, -1, 0, -1, 1);
 		}
 		else
 		{
-			func_138(100, 100, "CHOP_H_HAPPY", 1, -1, 2, -1f, -1f, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, -1, 0, -1, -1082130432, -1082130432, 0, 1, 0, 0, 1, -1, 0, -1, 1);
+			func_138(100, 100, "CHOP_H_HAPPY" /* GXT: Happiness */, 1, -1, 2, -1f, -1f, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, -1, 0, -1, -1082130432, -1082130432, 0, 1, 0, 0, 1, -1, 0, -1, 1);
 		}
 		if (func_137())
 		{
@@ -7944,20 +7944,20 @@ void func_129()//Position - 0x96FF
 			{
 				if (PAD::IS_USING_KEYBOARD_AND_MOUSE(0))
 				{
-					func_130("CHOP_H_HOME_KM");
+					func_130("CHOP_H_HOME_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop. */);
 				}
 				else
 				{
-					func_130("CHOP_H_HOME");
+					func_130("CHOP_H_HOME" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop. */);
 				}
 			}
 			else if (PAD::IS_USING_KEYBOARD_AND_MOUSE(0))
 			{
-				func_130("CHOP_H_NOAPP_KM");
+				func_130("CHOP_H_NOAPP_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~You can teach Chop to perform tricks. Download the iFruit app for your personal smartphone device or tablet to train him. */);
 			}
 			else
 			{
-				func_130("CHOP_H_NOAPP");
+				func_130("CHOP_H_NOAPP" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~You can teach Chop to perform tricks. Download the iFruit app for your personal smartphone device or tablet to train him. */);
 			}
 		}
 	}
@@ -8076,7 +8076,7 @@ int func_137()//Position - 0x9EB2
 {
 	if (HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 	{
-		if (((((((((((((((((((func_105("CHOP_H_WAIT_0") || func_105("CHOP_H_WAIT_1")) || func_105("CHOP_H_WAIT_2")) || func_105("CHOP_H_WAIT_3")) || func_105("CHOP_H_WAIT_4")) || func_105("CHOP_H_WAIT_H1")) || func_105("CHOP_H_WAIT_H2")) || func_105("CHOP_H_WAIT_H3")) || func_105("CHOP_H_WAIT_H4")) || func_105("CHOP_H_HOME")) || func_105("CHOP_H_WALK_0")) || func_105("CHOP_H_WALK_1")) || func_105("CHOP_H_WALK_2")) || func_105("CHOP_H_WALK_3")) || func_105("CHOP_H_WALK_4")) || func_105("CHOP_H_WALK_H1")) || func_105("CHOP_H_WALK_H2")) || func_105("CHOP_H_WALK_H3")) || func_105("CHOP_H_WALK_H4")) || func_105("CHOP_H_NOAPP"))
+		if (((((((((((((((((((func_105("CHOP_H_WAIT_0" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups. */) || func_105("CHOP_H_WAIT_1" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~ */)) || func_105("CHOP_H_WAIT_2" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~ */)) || func_105("CHOP_H_WAIT_3" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~ */)) || func_105("CHOP_H_WAIT_4" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Press ~INPUT_SCRIPT_RUP~ to pet Chop.~n~ */)) || func_105("CHOP_H_WAIT_H1" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_WAIT_H2" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_WAIT_H3" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_WAIT_H4" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Press ~INPUT_SCRIPT_RUP~ to pet Chop.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_HOME" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop. */)) || func_105("CHOP_H_WALK_0" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups. */)) || func_105("CHOP_H_WALK_1" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~ */)) || func_105("CHOP_H_WALK_2" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~ */)) || func_105("CHOP_H_WALK_3" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~ */)) || func_105("CHOP_H_WALK_4" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Press ~INPUT_SCRIPT_RUP~ to pet Chop.~n~ */)) || func_105("CHOP_H_WALK_H1" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_WALK_H2" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_WALK_H3" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_WALK_H4" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Press ~INPUT_SCRIPT_RUP~ to pet Chop.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_NOAPP" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~You can teach Chop to perform tricks. Download the iFruit app for your personal smartphone device or tablet to train him. */))
 		{
 			return 1;
 		}
@@ -8085,7 +8085,7 @@ int func_137()//Position - 0x9EB2
 	{
 		if (HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 		{
-			if (((((((((((((((((((func_105("CHOP_H_WAIT_0_KM") || func_105("CHOP_H_WAIT_1_KM")) || func_105("CHOP_H_WAIT_2_KM")) || func_105("CHOP_H_WAIT_3_KM")) || func_105("CHOP_H_WAIT_4_KM")) || func_105("CHOP_H_WAIT_H1_KM")) || func_105("CHOP_H_WAIT_H2_KM")) || func_105("CHOP_H_WAIT_H3_KM")) || func_105("CHOP_H_WAIT_H4_KM")) || func_105("CHOP_H_HOME_KM")) || func_105("CHOP_H_WALK_0_KM")) || func_105("CHOP_H_WALK_1_KM")) || func_105("CHOP_H_WALK_2_KM")) || func_105("CHOP_H_WALK_3_KM")) || func_105("CHOP_H_WALK_4_KM")) || func_105("CHOP_H_WALK_H1_KM")) || func_105("CHOP_H_WALK_H2_KM")) || func_105("CHOP_H_WALK_H3_KM")) || func_105("CHOP_H_WALK_H4_KM")) || func_105("CHOP_H_NOAPP_KM"))
+			if (((((((((((((((((((func_105("CHOP_H_WAIT_0_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups. */) || func_105("CHOP_H_WAIT_1_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~ */)) || func_105("CHOP_H_WAIT_2_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~ */)) || func_105("CHOP_H_WAIT_3_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~ */)) || func_105("CHOP_H_WAIT_4_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Press ~INPUT_ENTER~ to pet Chop.~n~ */)) || func_105("CHOP_H_WAIT_H1_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_WAIT_H2_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_WAIT_H3_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_WAIT_H4_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Press ~INPUT_ENTER~ to pet Chop.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_HOME_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop. */)) || func_105("CHOP_H_WALK_0_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups. */)) || func_105("CHOP_H_WALK_1_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~ */)) || func_105("CHOP_H_WALK_2_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~ */)) || func_105("CHOP_H_WALK_3_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~ */)) || func_105("CHOP_H_WALK_4_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Press ~INPUT_ENTER~ to pet Chop.~n~ */)) || func_105("CHOP_H_WALK_H1_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_WALK_H2_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_WALK_H3_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_WALK_H4_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Press ~INPUT_ENTER~ to pet Chop.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_NOAPP_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~You can teach Chop to perform tricks. Download the iFruit app for your personal smartphone device or tablet to train him. */))
 			{
 				return 1;
 			}
@@ -8218,7 +8218,7 @@ int func_144()//Position - 0xA446
 	}
 	func_148(0);
 	func_147(0);
-	if (func_105("CHOP_H_INTRO") || (MISC::IS_PC_VERSION() && func_105("CHOP_H_INTRO_KM")))
+	if (func_105("CHOP_H_INTRO" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */) || (MISC::IS_PC_VERSION() && func_105("CHOP_H_INTRO_KM" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */)))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -8227,7 +8227,7 @@ int func_144()//Position - 0xA446
 
 void func_145()//Position - 0xA4D6
 {
-	if ((((((((!BitTest(Global_113386.f_10049.f_94, 0) && !(func_105("CHOP_H_INTRO") || (MISC::IS_PC_VERSION() && func_105("CHOP_H_INTRO_KM")))) && !func_105("PW_HELP_1")) && !func_105("PW_HELP_2")) && !func_146()) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS()) && !func_3(0)) && !func_142()) && !func_141())
+	if ((((((((!BitTest(Global_113386.f_10049.f_94, 0) && !(func_105("CHOP_H_INTRO" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */) || (MISC::IS_PC_VERSION() && func_105("CHOP_H_INTRO_KM" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */)))) && !func_105("PW_HELP_1" /* GXT: Use ~INPUT_CELLPHONE_EXTRA_OPTION~ to email the photograph to the LS Tourist Board. */)) && !func_105("PW_HELP_2" /* GXT: Use ~INPUT_CELLPHONE_SELECT~ to send the email to the LS Tourist Board. */)) && !func_146()) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS()) && !func_3(0)) && !func_142()) && !func_141())
 	{
 		if ((iLocal_51 == 1 || iLocal_51 == 17) || iLocal_51 == 18)
 		{
@@ -8236,16 +8236,16 @@ void func_145()//Position - 0xA4D6
 				HUD::CLEAR_HELP(true);
 				if (PAD::IS_USING_KEYBOARD_AND_MOUSE(0))
 				{
-					func_130("CHOP_H_INTRO_KM");
+					func_130("CHOP_H_INTRO_KM" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */);
 				}
 				else
 				{
-					func_130("CHOP_H_INTRO");
+					func_130("CHOP_H_INTRO" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */);
 				}
 			}
 		}
 	}
-	if ((MISC::IS_PC_VERSION() && func_105("CHOP_H_INTRO_KM")) || func_105("CHOP_H_INTRO"))
+	if ((MISC::IS_PC_VERSION() && func_105("CHOP_H_INTRO_KM" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */)) || func_105("CHOP_H_INTRO" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */))
 	{
 		if ((((func_146() || STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS()) || func_3(0)) || func_142()) || func_141())
 		{
@@ -8341,7 +8341,7 @@ void func_149()//Position - 0xA6EC
 					if (((!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && !BitTest(Global_113386.f_10049.f_94, 6)) && !func_19()) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 					{
 						MISC::SET_BIT(&(Global_113386.f_10049.f_94), 6);
-						func_15("CHOP_H_ATTACK", -1);
+						func_15("CHOP_H_ATTACK" /* GXT: Chop will attack anyone who attacks Franklin. */, -1);
 					}
 					func_40(0);
 					func_121(6, 0);
@@ -8370,7 +8370,7 @@ void func_149()//Position - 0xA6EC
 								if (((!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && !BitTest(Global_113386.f_10049.f_94, 11)) && !func_19()) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 								{
 									MISC::SET_BIT(&(Global_113386.f_10049.f_94), 11);
-									func_15("CHOP_H_AIM", -1);
+									func_15("CHOP_H_AIM" /* GXT: Chop will attack anyone who Franklin targets. */, -1);
 								}
 								func_40(0);
 								func_121(6, 0);
@@ -8847,13 +8847,13 @@ int func_163()//Position - 0xB4FE
 					if (!BitTest(Global_113386.f_10049.f_94, 9) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 					{
 						MISC::SET_BIT(&(Global_113386.f_10049.f_94), 9);
-						func_15("CHOP_H_DEAD", -1);
+						func_15("CHOP_H_DEAD" /* GXT: Franklin killed Chop. Chop will soon return to Franklin's safehouse, but he's not happy. */, -1);
 					}
 				}
 				else if (!BitTest(Global_113386.f_10049.f_94, 12) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 				{
 					MISC::SET_BIT(&(Global_113386.f_10049.f_94), 12);
-					func_15("CHOP_H_DEAD2", -1);
+					func_15("CHOP_H_DEAD2" /* GXT: Chop was killed. Chop will soon return to Franklin's safehouse. */, -1);
 				}
 				return 1;
 			}
@@ -8883,7 +8883,7 @@ int func_163()//Position - 0xB4FE
 							else
 							{
 								MISC::SET_BIT(&(Global_113386.f_10049.f_94), 4);
-								func_15("CHOP_H_RANGE", -1);
+								func_15("CHOP_H_RANGE" /* GXT: Chop will stop following if left too far behind. */, -1);
 							}
 						}
 						return 1;
@@ -8921,7 +8921,7 @@ void func_164()//Position - 0xB79C
 {
 	if (HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 	{
-		if ((((((((((((((((((((((((((((((func_105("CHOP_H_INTRO") || func_105("CHOP_H_WAIT_0")) || func_105("CHOP_H_WAIT_1")) || func_105("CHOP_H_WAIT_2")) || func_105("CHOP_H_WAIT_3")) || func_105("CHOP_H_WAIT_4")) || func_105("CHOP_H_WAIT_H1")) || func_105("CHOP_H_WAIT_H2")) || func_105("CHOP_H_WAIT_H3")) || func_105("CHOP_H_WAIT_H4")) || func_105("CHOP_H_HOME")) || func_105("CHOP_H_WALK_0")) || func_105("CHOP_H_WALK_1")) || func_105("CHOP_H_WALK_2")) || func_105("CHOP_H_WALK_3")) || func_105("CHOP_H_WALK_4")) || func_105("CHOP_H_WALK_H1")) || func_105("CHOP_H_WALK_H2")) || func_105("CHOP_H_WALK_H3")) || func_105("CHOP_H_WALK_H4")) || func_105("CHOP_H_HUNT")) || func_105("CHOP_H_NOVEH")) || func_105("CHOP_H_CAR")) || func_105("CHOP_H_BIKE")) || func_105("CHOP_H_ATTACK")) || func_105("CHOP_H_BALL")) || func_105("CHOP_H_WHIS")) || func_105("CHOP_H_NOAPP")) || func_105("CHOP_H_BEHAVE")) || func_105("CHOP_H_BEHAVA")) || func_105("CHOP_H_AIM"))
+		if ((((((((((((((((((((((((((((((func_105("CHOP_H_INTRO" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */) || func_105("CHOP_H_WAIT_0" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups. */)) || func_105("CHOP_H_WAIT_1" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~ */)) || func_105("CHOP_H_WAIT_2" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~ */)) || func_105("CHOP_H_WAIT_3" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~ */)) || func_105("CHOP_H_WAIT_4" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Press ~INPUT_SCRIPT_RUP~ to pet Chop.~n~ */)) || func_105("CHOP_H_WAIT_H1" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_WAIT_H2" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_WAIT_H3" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_WAIT_H4" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Press ~INPUT_SCRIPT_RUP~ to pet Chop.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_HOME" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop. */)) || func_105("CHOP_H_WALK_0" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups. */)) || func_105("CHOP_H_WALK_1" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~ */)) || func_105("CHOP_H_WALK_2" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~ */)) || func_105("CHOP_H_WALK_3" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~ */)) || func_105("CHOP_H_WALK_4" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Press ~INPUT_SCRIPT_RUP~ to pet Chop.~n~ */)) || func_105("CHOP_H_WALK_H1" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_WALK_H2" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_WALK_H3" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_WALK_H4" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Press ~INPUT_SCRIPT_RUP~ to pet Chop.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_HUNT" /* GXT: Chop will bark more often when he nears pickups. */)) || func_105("CHOP_H_NOVEH" /* GXT: Chop can only get into suitable cars with an empty front passenger seat. */)) || func_105("CHOP_H_CAR" /* GXT: Chop will follow Franklin into suitable cars with an empty front passenger seat. */)) || func_105("CHOP_H_BIKE" /* GXT: Chop will follow bikes and other vehicles he cannot get inside. */)) || func_105("CHOP_H_ATTACK" /* GXT: Chop will attack anyone who attacks Franklin. */)) || func_105("CHOP_H_BALL" /* GXT: When taking Chop for a walk, Franklin can play fetch using the ball in the weapon wheel. */)) || func_105("CHOP_H_WHIS" /* GXT: Press ~INPUT_DETONATE~ to whistle to make Chop return to Franklin. */)) || func_105("CHOP_H_NOAPP" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~You can teach Chop to perform tricks. Download the iFruit app for your personal smartphone device or tablet to train him. */)) || func_105("CHOP_H_BEHAVE" /* GXT: Chop is unhappy so is misbehaving. Download the iFruit app for your personal smartphone device or tablet to train him. */)) || func_105("CHOP_H_BEHAVA" /* GXT: Chop is unhappy so is misbehaving. Use the iFruit app to train him. */)) || func_105("CHOP_H_AIM" /* GXT: Chop will attack anyone who Franklin targets. */))
 		{
 			HUD::CLEAR_HELP(true);
 		}
@@ -8930,7 +8930,7 @@ void func_164()//Position - 0xB79C
 	{
 		if (HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 		{
-			if ((((((((((((((((((((func_105("CHOP_H_INTRO_KM") || func_105("CHOP_H_WAIT_0_KM")) || func_105("CHOP_H_WAIT_1_KM")) || func_105("CHOP_H_WAIT_2_KM")) || func_105("CHOP_H_WAIT_3_KM")) || func_105("CHOP_H_WAIT_4_KM")) || func_105("CHOP_H_WAIT_H1_KM")) || func_105("CHOP_H_WAIT_H2_KM")) || func_105("CHOP_H_WAIT_H3_KM")) || func_105("CHOP_H_WAIT_H4_KM")) || func_105("CHOP_H_HOME_KM")) || func_105("CHOP_H_WALK_0_KM")) || func_105("CHOP_H_WALK_1_KM")) || func_105("CHOP_H_WALK_2_KM")) || func_105("CHOP_H_WALK_3_KM")) || func_105("CHOP_H_WALK_4_KM")) || func_105("CHOP_H_WALK_H1_KM")) || func_105("CHOP_H_WALK_H2_KM")) || func_105("CHOP_H_WALK_H3_KM")) || func_105("CHOP_H_WALK_H4_KM")) || func_105("CHOP_H_NOAPP_KM"))
+			if ((((((((((((((((((((func_105("CHOP_H_INTRO_KM" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */) || func_105("CHOP_H_WAIT_0_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups. */)) || func_105("CHOP_H_WAIT_1_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~ */)) || func_105("CHOP_H_WAIT_2_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~ */)) || func_105("CHOP_H_WAIT_3_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~ */)) || func_105("CHOP_H_WAIT_4_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Press ~INPUT_ENTER~ to pet Chop.~n~ */)) || func_105("CHOP_H_WAIT_H1_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_WAIT_H2_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_WAIT_H3_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_WAIT_H4_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Press ~INPUT_ENTER~ to pet Chop.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_HOME_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop. */)) || func_105("CHOP_H_WALK_0_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups. */)) || func_105("CHOP_H_WALK_1_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~ */)) || func_105("CHOP_H_WALK_2_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~ */)) || func_105("CHOP_H_WALK_3_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~ */)) || func_105("CHOP_H_WALK_4_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Press ~INPUT_ENTER~ to pet Chop.~n~ */)) || func_105("CHOP_H_WALK_H1_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_WALK_H2_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_WALK_H3_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_WALK_H4_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Press ~INPUT_ENTER~ to pet Chop.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || func_105("CHOP_H_NOAPP_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~You can teach Chop to perform tricks. Download the iFruit app for your personal smartphone device or tablet to train him. */))
 			{
 				HUD::CLEAR_HELP(true);
 			}

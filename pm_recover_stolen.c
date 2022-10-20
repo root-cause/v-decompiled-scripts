@@ -547,7 +547,7 @@ void func_1()//Position - 0xBA
 				{
 					if (!iLocal_44)
 					{
-						func_83("LOSE_WANTED", 7500, 1);
+						func_83("LOSE_WANTED" /* GXT: Lose the Cops. */, 7500, 1);
 						iLocal_44 = 1;
 					}
 				}
@@ -1829,11 +1829,11 @@ void func_47(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iPar
 	{
 		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
-			iVar0 = "CMN_HINT";
+			iVar0 = "CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */;
 		}
 		else
 		{
-			iVar0 = "FM_IHELP_HNT";
+			iVar0 = "FM_IHELP_HNT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus. */;
 		}
 	}
 	if (func_73(iVar0))
@@ -1890,7 +1890,7 @@ void func_47(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iPar
 							{
 								func_82(iVar0, -1);
 								uParam0->f_3 = iVar0;
-								if (MISC::ARE_STRINGS_EQUAL("CMN_HINT", iVar0))
+								if (MISC::ARE_STRINGS_EQUAL("CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */, iVar0))
 								{
 									func_50(1);
 								}
@@ -1909,7 +1909,7 @@ void func_47(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iPar
 						{
 							func_82(iVar0, -1);
 							uParam0->f_3 = iVar0;
-							if (MISC::ARE_STRINGS_EQUAL("CMN_HINT", iVar0))
+							if (MISC::ARE_STRINGS_EQUAL("CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */, iVar0))
 							{
 								func_50(1);
 							}
@@ -2062,7 +2062,7 @@ int func_51(char* sParam0)//Position - 0x244C
 {
 	if (!func_52(1, 1, 0))
 	{
-		if ((!MISC::IS_STRING_NULL_OR_EMPTY(sParam0) && func_73(sParam0)) || func_73("CMN_HINT"))
+		if ((!MISC::IS_STRING_NULL_OR_EMPTY(sParam0) && func_73(sParam0)) || func_73("CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */))
 		{
 			HUD::CLEAR_HELP(true);
 		}
@@ -2875,11 +2875,11 @@ void func_77(var uParam0, int iParam1, bool bParam2)//Position - 0x3145
 	{
 		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
-			sVar0 = "CMN_HINT";
+			sVar0 = "CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */;
 		}
 		else
 		{
-			sVar0 = "FM_IHELP_HNT";
+			sVar0 = "FM_IHELP_HNT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus. */;
 		}
 	}
 	if (!MISC::IS_STRING_NULL(uParam0->f_3))

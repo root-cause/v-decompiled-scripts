@@ -1569,7 +1569,7 @@ int func_21(var uParam0, int iParam1, int iParam2, char* sParam3, char* sParam4,
 	}
 	if (iParam5 == 4)
 	{
-		StringCopy(&Var0, "CELL_226", 16);
+		StringCopy(&Var0, "CELL_226" /* GXT: Accept? */, 16);
 		return func_96(uParam0, iParam1, sParam3, sParam4, &Var0);
 	}
 	if (iParam5 == 1 || iParam5 == 7)
@@ -2248,7 +2248,7 @@ void func_35(int iParam0)//Position - 0xFB9
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(42);
 								GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							}
-							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB")) && BitTest(Global_8137, 6))
+							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB" /* GXT: Benny's */)) && BitTest(Global_8137, 6))
 							{
 								GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT");
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
@@ -5136,7 +5136,7 @@ char* func_135(int iParam0)//Position - 0x48E8
 			return "CHALLENGE_PLAYER_LEFT";
 			break;
 	}
-	return "DEFAULT";
+	return "DEFAULT" /* GXT: _ */;
 }
 
 char* func_136(int iParam0)//Position - 0x497B
@@ -5196,7 +5196,7 @@ char* func_136(int iParam0)//Position - 0x497B
 		
 		default:
 	}
-	return "DEFAULT";
+	return "DEFAULT" /* GXT: _ */;
 }
 
 int func_137(int iParam0)//Position - 0x4A6B
@@ -10691,16 +10691,16 @@ void func_275()//Position - 0xC105
 			{
 				if (PED::IS_PED_IN_VEHICLE(NETWORK::NET_TO_PED(Local_126.f_4), iLocal_1048, false) && !PED::IS_PED_BEING_JACKED(NETWORK::NET_TO_PED(Local_126.f_4)))
 				{
-					HUD::BEGIN_TEXT_COMMAND_DISPLAY_HELP("HTX_HELPN");
+					HUD::BEGIN_TEXT_COMMAND_DISPLAY_HELP("HTX_HELPN" /* GXT: ~s~The helicopter ~a~ ~s~will take you to the location of your waypoint.~n~Open up the Map screen from the Pause Menu ~INPUT_FRONTEND_PAUSE~ and press ~INPUT_FRONTEND_ACCEPT~ to place a waypoint. */);
 					if (func_277())
 					{
 						HUD::SET_COLOUR_OF_NEXT_TEXT_COMPONENT(13);
-						HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL("GB_HELI_BLIP");
+						HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL("GB_HELI_BLIP" /* GXT: ~BLIP_HELICOPTER~ */);
 					}
 					else
 					{
 						HUD::SET_COLOUR_OF_NEXT_TEXT_COMPONENT(iLocal_133);
-						HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL("HTX_HELPB");
+						HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL("HTX_HELPB" /* GXT: ~BLIP_PLAYER_HELI~ */);
 					}
 					HUD::END_TEXT_COMMAND_DISPLAY_HELP(0, false, true, -1);
 					MISC::SET_BIT(&iVar0, 16);
@@ -11908,7 +11908,7 @@ void func_325()//Position - 0xD8C5
 	{
 		if (func_328(iLocal_1048, iLocal_132, 1))
 		{
-			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_132, "HTX_BLIP");
+			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_132, "HTX_BLIP" /* GXT: Helicopter */);
 			iLocal_133 = 1;
 			func_326(&iLocal_132, iLocal_133);
 		}
@@ -12980,7 +12980,7 @@ void func_345()//Position - 0xE646
 			break;
 		
 		case 4:
-			if ((((((func_457("POD_CHAM_CIGAR") || func_457("POD_CHAM_WEB")) || func_457("POD_UNKNOWN")) || func_457("POD_CIGAR")) || func_457("POD_WEB")) || func_457("LUX_VEH_ACT_1ST")) || func_457("LUX_ACT_1ST_SW"))
+			if ((((((func_457("POD_CHAM_CIGAR" /* GXT: Press ~INPUT_CONTEXT~ to drink champagne. ~n~Press ~INPUT_CONTEXT_SECONDARY~ to smoke a cigar. */) || func_457("POD_CHAM_WEB" /* GXT: Press ~INPUT_CONTEXT~ to drink champagne. ~n~Press ~INPUT_CONTEXT_SECONDARY~ to browse the web. */)) || func_457("POD_UNKNOWN" /* GXT: There are no activities available for this vehicle. */)) || func_457("POD_CIGAR" /* GXT: Press ~INPUT_CONTEXT_SECONDARY~ to smoke a cigar. */)) || func_457("POD_WEB" /* GXT: Press ~INPUT_CONTEXT_SECONDARY~ to browse the web. */)) || func_457("LUX_VEH_ACT_1ST" /* GXT: Change to First Person mode to drink champagne and smoke cigars. */)) || func_457("LUX_ACT_1ST_SW" /* GXT: Change to First Person mode to drink champagne. */))
 			{
 				HUD::CLEAR_HELP(true);
 			}
@@ -13244,51 +13244,51 @@ void func_346()//Position - 0xEC41
 								func_358(&uLocal_140);
 								if (BitTest(iLocal_1049, 0))
 								{
-									func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 23, true), "HTX_ENTER", &uLocal_140, 0);
+									func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 23, true), "HTX_ENTER" /* GXT: Enter */, &uLocal_140, 0);
 								}
 								if (BitTest(iLocal_1049, 1))
 								{
 									if (PAD::IS_USING_KEYBOARD_AND_MOUSE(0))
 									{
-										func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 21, true), "HTX_START", &uLocal_140, 0);
+										func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 21, true), "HTX_START" /* GXT: Go */, &uLocal_140, 0);
 									}
 									else
 									{
-										func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 201, true), "HTX_START", &uLocal_140, 0);
+										func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 201, true), "HTX_START" /* GXT: Go */, &uLocal_140, 0);
 									}
 								}
 								if (BitTest(iLocal_1049, 2))
 								{
-									func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 199, true), "HTX_WAYP", &uLocal_140, 0);
+									func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 199, true), "HTX_WAYP" /* GXT: Set Waypoint */, &uLocal_140, 0);
 								}
 								if (BitTest(iLocal_1049, 3))
 								{
-									func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 75, true), "HTX_EXIT1", &uLocal_140, 0);
+									func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 75, true), "HTX_EXIT1" /* GXT: Exit */, &uLocal_140, 0);
 								}
 								if (BitTest(iLocal_1049, 4))
 								{
-									func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 75, true), "HTX_EXIT2", &uLocal_140, 0);
+									func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 75, true), "HTX_EXIT2" /* GXT: Jump */, &uLocal_140, 0);
 								}
 								if (BitTest(iLocal_1049, 5))
 								{
 									if (PAD::IS_USING_KEYBOARD_AND_MOUSE(0))
 									{
-										func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 22, true), "HTX_EXIT3", &uLocal_140, 0);
+										func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 22, true), "HTX_EXIT3" /* GXT: Rappel (Hold) */, &uLocal_140, 0);
 									}
 									else
 									{
-										func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 99, true), "HTX_EXIT3", &uLocal_140, 0);
+										func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 99, true), "HTX_EXIT3" /* GXT: Rappel (Hold) */, &uLocal_140, 0);
 									}
 								}
 								if (BitTest(iLocal_1049, 6))
 								{
 									if (PAD::IS_USING_KEYBOARD_AND_MOUSE(0))
 									{
-										func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 36, true), "HTX_STOP", &uLocal_140, 0);
+										func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 36, true), "HTX_STOP" /* GXT: Stop */, &uLocal_140, 0);
 									}
 									else
 									{
-										func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 202, true), "HTX_STOP", &uLocal_140, 0);
+										func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 202, true), "HTX_STOP" /* GXT: Stop */, &uLocal_140, 0);
 									}
 								}
 								if (BitTest(iLocal_1049, 7))
@@ -13297,20 +13297,20 @@ void func_346()//Position - 0xEC41
 									{
 										if (PAD::IS_USING_KEYBOARD_AND_MOUSE(0))
 										{
-											func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 101, true), "HTX_QT_WARP", &uLocal_140, 0);
+											func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 101, true), "HTX_QT_WARP" /* GXT: Quick travel options */, &uLocal_140, 0);
 										}
 										else
 										{
-											func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 209, true), "HTX_QT_WARP", &uLocal_140, 0);
+											func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 209, true), "HTX_QT_WARP" /* GXT: Quick travel options */, &uLocal_140, 0);
 										}
 									}
 									else if (PAD::IS_USING_KEYBOARD_AND_MOUSE(0))
 									{
-										func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 101, true), "HTX_OFF_WARP", &uLocal_140, 0);
+										func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 101, true), "HTX_OFF_WARP" /* GXT: Quick travel to Office */, &uLocal_140, 0);
 									}
 									else
 									{
-										func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 209, true), "HTX_OFF_WARP", &uLocal_140, 0);
+										func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 209, true), "HTX_OFF_WARP" /* GXT: Quick travel to Office */, &uLocal_140, 0);
 									}
 								}
 							}
@@ -14240,7 +14240,7 @@ void func_384(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 	{
 		if (Global_23150.f_5609 <= 1)
 		{
-			func_409(Global_23150.f_5609 + 1, "DFLT_MNU_OPT", 0, 1, 0, 0, 0);
+			func_409(Global_23150.f_5609 + 1, "DFLT_MNU_OPT" /* GXT: Exit */, 0, 1, 0, 0, 0);
 			Global_23150.f_6405 = 1;
 		}
 	}
@@ -14343,14 +14343,14 @@ void func_384(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 				if (Global_23150.f_6126)
 				{
 					func_404();
-					func_402((((Global_23147 + fParam5) - 0.00390625f) - func_403("CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128);
+					func_402((((Global_23147 + fParam5) - 0.00390625f) - func_403("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128);
 				}
 				else if (Global_23150.f_6122 > Global_23150.f_5616)
 				{
 					if (Global_23150.f_6125 != 0)
 					{
 						func_404();
-						func_402((((Global_23147 + fParam5) - 0.00390625f) - func_403("CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124);
+						func_402((((Global_23147 + fParam5) - 0.00390625f) - func_403("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124);
 					}
 				}
 			}
@@ -17025,27 +17025,27 @@ void func_419()//Position - 0x145FA
 	{
 		if (!bLocal_119)
 		{
-			func_420("PAH_QUICK_D1", 0, 0);
+			func_420("PAH_QUICK_D1" /* GXT: Your office is too near for quick travel. */, 0, 0);
 		}
 	}
 	else if (iLocal_111 == iLocal_112)
 	{
 		if (!bLocal_120)
 		{
-			func_420("PAH_QUICK_D2", 0, 0);
+			func_420("PAH_QUICK_D2" /* GXT: Only passengers who are in your organization can quick travel to warehouses. */, 0, 0);
 		}
 		else if (!bLocal_121)
 		{
-			func_420("PAH_QUICK_D3", 0, 0);
+			func_420("PAH_QUICK_D3" /* GXT: Your warehouse is too near for quick travel. */, 0, 0);
 		}
 	}
 	else if (!bLocal_120)
 	{
-		func_420("PAH_QUICK_D2", 0, 0);
+		func_420("PAH_QUICK_D2" /* GXT: Only passengers who are in your organization can quick travel to warehouses. */, 0, 0);
 	}
 	else if (!uLocal_122[(iLocal_111 - 1)])
 	{
-		func_420("PAH_QUICK_D3", 0, 0);
+		func_420("PAH_QUICK_D3" /* GXT: Your warehouse is too near for quick travel. */, 0, 0);
 	}
 }
 
@@ -17273,7 +17273,7 @@ void func_424()//Position - 0x14B4C
 	bool bVar3;
 	
 	func_434(0, 0);
-	func_433("PAH_QUICK_1");
+	func_433("PAH_QUICK_1" /* GXT: QUICK TRAVEL */);
 	func_432(1, 2, 1, 1, 1);
 	func_431(1, 1, 0, 0, 0);
 	iLocal_110 = 0;
@@ -17313,8 +17313,8 @@ void func_424()//Position - 0x14B4C
 		iLocal_112 = iLocal_110;
 		iLocal_110++;
 	}
-	func_425(201, "ITEM_SELECT", -1, 0);
-	func_425(202, "ITEM_BACK", -1, 0);
+	func_425(201, "ITEM_SELECT" /* GXT: Select */, -1, 0);
+	func_425(202, "ITEM_BACK" /* GXT: Back */, -1, 0);
 	func_423(iLocal_111, 1, 1);
 }
 
@@ -17348,34 +17348,34 @@ char* func_426(int iParam0)//Position - 0x14D33
 	switch (iParam0)
 	{
 		case 1:
-			return "MP_WAREHOUSE_1";
+			return "MP_WAREHOUSE_1" /* GXT: La Puerta Vehicle Warehouse */;
 		
 		case 2:
-			return "MP_WAREHOUSE_2";
+			return "MP_WAREHOUSE_2" /* GXT: La Mesa Vehicle Warehouse */;
 		
 		case 3:
-			return "MP_WAREHOUSE_3";
+			return "MP_WAREHOUSE_3" /* GXT: Davis Vehicle Warehouse */;
 		
 		case 4:
-			return "MP_WAREHOUSE_4";
+			return "MP_WAREHOUSE_4" /* GXT: Strawberry Vehicle Warehouse */;
 		
 		case 5:
-			return "MP_WAREHOUSE_5";
+			return "MP_WAREHOUSE_5" /* GXT: Murrieta Heights Vehicle Warehouse */;
 		
 		case 6:
-			return "MP_WAREHOUSE_6";
+			return "MP_WAREHOUSE_6" /* GXT: Cypress Flats Vehicle Warehouse */;
 		
 		case 7:
-			return "MP_WAREHOUSE_7";
+			return "MP_WAREHOUSE_7" /* GXT: El Burro Heights Vehicle Warehouse */;
 		
 		case 8:
-			return "MP_WAREHOUSE_8";
+			return "MP_WAREHOUSE_8" /* GXT: Elysian Island Vehicle Warehouse */;
 		
 		case 9:
-			return "MP_WAREHOUSE_9";
+			return "MP_WAREHOUSE_9" /* GXT: LSIA Vehicle Warehouse */;
 		
 		case 10:
-			return "MP_WAREHOUSE_10";
+			return "MP_WAREHOUSE_10" /* GXT: LSIA Vehicle Warehouse */;
 		
 		default:
 	}
@@ -17387,91 +17387,91 @@ char* func_427(int iParam0)//Position - 0x14DC7
 	switch (iParam0)
 	{
 		case 1:
-			return "MP_WHOUSE_0";
+			return "MP_WHOUSE_0" /* GXT: Pacific Bait Storage */;
 			break;
 		
 		case 2:
-			return "MP_WHOUSE_1";
+			return "MP_WHOUSE_1" /* GXT: White Widow Garage */;
 			break;
 		
 		case 3:
-			return "MP_WHOUSE_2";
+			return "MP_WHOUSE_2" /* GXT: Celltowa Unit */;
 			break;
 		
 		case 4:
-			return "MP_WHOUSE_3";
+			return "MP_WHOUSE_3" /* GXT: Convenience Store Lockup */;
 			break;
 		
 		case 5:
-			return "MP_WHOUSE_4";
+			return "MP_WHOUSE_4" /* GXT: Foreclosed Garage */;
 			break;
 		
 		case 6:
-			return "MP_WHOUSE_5";
+			return "MP_WHOUSE_5" /* GXT: Xero Gas Factory */;
 			break;
 		
 		case 7:
-			return "MP_WHOUSE_6";
+			return "MP_WHOUSE_6" /* GXT: Derriere Lingerie Backlot */;
 			break;
 		
 		case 8:
-			return "MP_WHOUSE_7";
+			return "MP_WHOUSE_7" /* GXT: Bilgeco Warehouse */;
 			break;
 		
 		case 9:
-			return "MP_WHOUSE_8";
+			return "MP_WHOUSE_8" /* GXT: Pier 400 Utility Building */;
 			break;
 		
 		case 10:
-			return "MP_WHOUSE_9";
+			return "MP_WHOUSE_9" /* GXT: GEE Warehouse */;
 			break;
 		
 		case 11:
-			return "MP_WHOUSE_10";
+			return "MP_WHOUSE_10" /* GXT: LS Marine Building 3 */;
 			break;
 		
 		case 12:
-			return "MP_WHOUSE_11";
+			return "MP_WHOUSE_11" /* GXT: Railyard Warehouse */;
 			break;
 		
 		case 13:
-			return "MP_WHOUSE_12";
+			return "MP_WHOUSE_12" /* GXT: Fridgit Annexe */;
 			break;
 		
 		case 14:
-			return "MP_WHOUSE_13";
+			return "MP_WHOUSE_13" /* GXT: Disused Factory Outlet */;
 			break;
 		
 		case 15:
-			return "MP_WHOUSE_14";
+			return "MP_WHOUSE_14" /* GXT: Discount Retail Unit */;
 			break;
 		
 		case 16:
-			return "MP_WHOUSE_15";
+			return "MP_WHOUSE_15" /* GXT: Logistics Depot */;
 			break;
 		
 		case 17:
-			return "MP_WHOUSE_16";
+			return "MP_WHOUSE_16" /* GXT: Darnell Bros Warehouse */;
 			break;
 		
 		case 18:
-			return "MP_WHOUSE_17";
+			return "MP_WHOUSE_17" /* GXT: Wholesale Furniture */;
 			break;
 		
 		case 19:
-			return "MP_WHOUSE_18";
+			return "MP_WHOUSE_18" /* GXT: Cypress Warehouses */;
 			break;
 		
 		case 20:
-			return "MP_WHOUSE_19";
+			return "MP_WHOUSE_19" /* GXT: West Vinewood Backlot */;
 			break;
 		
 		case 21:
-			return "MP_WHOUSE_20";
+			return "MP_WHOUSE_20" /* GXT: Old Power Station */;
 			break;
 		
 		case 22:
-			return "MP_WHOUSE_21";
+			return "MP_WHOUSE_21" /* GXT: Walker & Sons Warehouse */;
 			break;
 	}
 	return "";
@@ -17498,436 +17498,436 @@ struct<4> func_430(int iParam0)//Position - 0x14F7B
 	switch (iParam0)
 	{
 		case 1:
-			StringCopy(&Var0, "MP_PROP_1", 16);
+			StringCopy(&Var0, "MP_PROP_1" /* GXT: Eclipse Towers, Apt 31 */, 16);
 			break;
 		
 		case 2:
-			StringCopy(&Var0, "MP_PROP_2", 16);
+			StringCopy(&Var0, "MP_PROP_2" /* GXT: Eclipse Towers, Apt 9 */, 16);
 			break;
 		
 		case 3:
-			StringCopy(&Var0, "MP_PROP_3", 16);
+			StringCopy(&Var0, "MP_PROP_3" /* GXT: Eclipse Towers, Apt 40 */, 16);
 			break;
 		
 		case 4:
-			StringCopy(&Var0, "MP_PROP_4", 16);
+			StringCopy(&Var0, "MP_PROP_4" /* GXT: Eclipse Towers, Apt 5 */, 16);
 			break;
 		
 		case 5:
-			StringCopy(&Var0, "MP_PROP_5", 16);
+			StringCopy(&Var0, "MP_PROP_5" /* GXT: 3 Alta St, Apt 10 */, 16);
 			break;
 		
 		case 6:
-			StringCopy(&Var0, "MP_PROP_6", 16);
+			StringCopy(&Var0, "MP_PROP_6" /* GXT: 3 Alta St, Apt 57 */, 16);
 			break;
 		
 		case 7:
-			StringCopy(&Var0, "MP_PROP_7", 16);
+			StringCopy(&Var0, "MP_PROP_7" /* GXT: Del Perro Heights, Apt 20 */, 16);
 			break;
 		
 		case 8:
-			StringCopy(&Var0, "MP_PROP_8", 16);
+			StringCopy(&Var0, "MP_PROP_8" /* GXT: 1162 Power St, Apt 3 */, 16);
 			break;
 		
 		case 9:
-			StringCopy(&Var0, "MP_PROP_9", 16);
+			StringCopy(&Var0, "MP_PROP_9" /* GXT: 0605 Spanish Ave, Apt 1 */, 16);
 			break;
 		
 		case 10:
-			StringCopy(&Var0, "MP_PROP_10", 16);
+			StringCopy(&Var0, "MP_PROP_10" /* GXT: 0604 Las Lagunas Blvd, Apt 4 */, 16);
 			break;
 		
 		case 11:
-			StringCopy(&Var0, "MP_PROP_11", 16);
+			StringCopy(&Var0, "MP_PROP_11" /* GXT: 0184 Milton Rd, Apt 13 */, 16);
 			break;
 		
 		case 12:
-			StringCopy(&Var0, "MP_PROP_12", 16);
+			StringCopy(&Var0, "MP_PROP_12" /* GXT: The Royale, Apt 19 */, 16);
 			break;
 		
 		case 13:
-			StringCopy(&Var0, "MP_PROP_13", 16);
+			StringCopy(&Var0, "MP_PROP_13" /* GXT: 0504 S Mo Milton Dr */, 16);
 			break;
 		
 		case 14:
-			StringCopy(&Var0, "MP_PROP_14", 16);
+			StringCopy(&Var0, "MP_PROP_14" /* GXT: 0115 Bay City Ave, Apt 45 */, 16);
 			break;
 		
 		case 15:
-			StringCopy(&Var0, "MP_PROP_15", 16);
+			StringCopy(&Var0, "MP_PROP_15" /* GXT: 0325 South Rockford Dr */, 16);
 			break;
 		
 		case 16:
-			StringCopy(&Var0, "MP_PROP_16", 16);
+			StringCopy(&Var0, "MP_PROP_16" /* GXT: Dream Tower, Apt 15 */, 16);
 			break;
 		
 		case 17:
-			StringCopy(&Var0, "MP_PROP_17", 16);
+			StringCopy(&Var0, "MP_PROP_17" /* GXT: 2143 Las Lagunas Blvd, Apt 9 */, 16);
 			break;
 		
 		case 18:
-			StringCopy(&Var0, "MP_PROP_18", 16);
+			StringCopy(&Var0, "MP_PROP_18" /* GXT: 1561 San Vitas St, Apt 2 */, 16);
 			break;
 		
 		case 19:
-			StringCopy(&Var0, "MP_PROP_19", 16);
+			StringCopy(&Var0, "MP_PROP_19" /* GXT: 0112 S Rockford Dr, Apt 13 */, 16);
 			break;
 		
 		case 20:
-			StringCopy(&Var0, "MP_PROP_20", 16);
+			StringCopy(&Var0, "MP_PROP_20" /* GXT: 2057 Vespucci Blvd, Apt 1 */, 16);
 			break;
 		
 		case 21:
-			StringCopy(&Var0, "MP_PROP_21", 16);
+			StringCopy(&Var0, "MP_PROP_21" /* GXT: 0069 Cougar Ave, Apt 19 */, 16);
 			break;
 		
 		case 22:
-			StringCopy(&Var0, "MP_PROP_22", 16);
+			StringCopy(&Var0, "MP_PROP_22" /* GXT: 1237 Prosperity St, Apt 21 */, 16);
 			break;
 		
 		case 23:
-			StringCopy(&Var0, "MP_PROP_23", 16);
+			StringCopy(&Var0, "MP_PROP_23" /* GXT: 1115 Blvd Del Perro, Apt 18 */, 16);
 			break;
 		
 		case 24:
-			StringCopy(&Var0, "MP_PROP_24", 16);
+			StringCopy(&Var0, "MP_PROP_24" /* GXT: 0120 Murrieta Heights */, 16);
 			break;
 		
 		case 25:
-			StringCopy(&Var0, "MP_PROP_25", 16);
+			StringCopy(&Var0, "MP_PROP_25" /* GXT: Unit 14 Popular St */, 16);
 			break;
 		
 		case 26:
-			StringCopy(&Var0, "MP_PROP_26", 16);
+			StringCopy(&Var0, "MP_PROP_26" /* GXT: Unit 2 Popular St */, 16);
 			break;
 		
 		case 27:
-			StringCopy(&Var0, "MP_PROP_27", 16);
+			StringCopy(&Var0, "MP_PROP_27" /* GXT: 331 Supply St */, 16);
 			break;
 		
 		case 28:
-			StringCopy(&Var0, "MP_PROP_28", 16);
+			StringCopy(&Var0, "MP_PROP_28" /* GXT: Unit 1 Olympic Fwy */, 16);
 			break;
 		
 		case 29:
-			StringCopy(&Var0, "MP_PROP_29", 16);
+			StringCopy(&Var0, "MP_PROP_29" /* GXT: 0754 Roy Lowenstein Blvd */, 16);
 			break;
 		
 		case 30:
-			StringCopy(&Var0, "MP_PROP_30", 16);
+			StringCopy(&Var0, "MP_PROP_30" /* GXT: 12 Little Bighorn Ave */, 16);
 			break;
 		
 		case 31:
-			StringCopy(&Var0, "MP_PROP_31", 16);
+			StringCopy(&Var0, "MP_PROP_31" /* GXT: Unit 124 Popular St */, 16);
 			break;
 		
 		case 32:
-			StringCopy(&Var0, "MP_PROP_32", 16);
+			StringCopy(&Var0, "MP_PROP_32" /* GXT: 0552 Roy Lowenstein Blvd */, 16);
 			break;
 		
 		case 33:
-			StringCopy(&Var0, "MP_PROP_33", 16);
+			StringCopy(&Var0, "MP_PROP_33" /* GXT: 0432 Davis Ave */, 16);
 			break;
 		
 		case 34:
-			StringCopy(&Var0, "MP_PROP_34", 16);
+			StringCopy(&Var0, "MP_PROP_34" /* GXT: Del Perro Heights, Apt 7 */, 16);
 			break;
 		
 		case 35:
-			StringCopy(&Var0, "MP_PROP_35", 16);
+			StringCopy(&Var0, "MP_PROP_35" /* GXT: Weazel Plaza, Apt 101 */, 16);
 			break;
 		
 		case 36:
-			StringCopy(&Var0, "MP_PROP_36", 16);
+			StringCopy(&Var0, "MP_PROP_36" /* GXT: Weazel Plaza, Apt 70 */, 16);
 			break;
 		
 		case 37:
-			StringCopy(&Var0, "MP_PROP_37", 16);
+			StringCopy(&Var0, "MP_PROP_37" /* GXT: Weazel Plaza, Apt 26 */, 16);
 			break;
 		
 		case 38:
-			StringCopy(&Var0, "MP_PROP_38", 16);
+			StringCopy(&Var0, "MP_PROP_38" /* GXT: 4 Integrity Way, Apt 30 */, 16);
 			break;
 		
 		case 39:
-			StringCopy(&Var0, "MP_PROP_39", 16);
+			StringCopy(&Var0, "MP_PROP_39" /* GXT: 4 Integrity Way, Apt 35 */, 16);
 			break;
 		
 		case 40:
-			StringCopy(&Var0, "MP_PROP_40", 16);
+			StringCopy(&Var0, "MP_PROP_40" /* GXT: Richards Majestic, Apt 4 */, 16);
 			break;
 		
 		case 41:
-			StringCopy(&Var0, "MP_PROP_41", 16);
+			StringCopy(&Var0, "MP_PROP_41" /* GXT: Richards Majestic, Apt 51 */, 16);
 			break;
 		
 		case 42:
-			StringCopy(&Var0, "MP_PROP_42", 16);
+			StringCopy(&Var0, "MP_PROP_42" /* GXT: Tinsel Towers, Apt 45 */, 16);
 			break;
 		
 		case 43:
-			StringCopy(&Var0, "MP_PROP_43", 16);
+			StringCopy(&Var0, "MP_PROP_43" /* GXT: Tinsel Towers, Apt 29 */, 16);
 			break;
 		
 		case 44:
-			StringCopy(&Var0, "MP_PROP_44", 16);
+			StringCopy(&Var0, "MP_PROP_44" /* GXT: 142 Paleto Blvd */, 16);
 			break;
 		
 		case 45:
-			StringCopy(&Var0, "MP_PROP_45", 16);
+			StringCopy(&Var0, "MP_PROP_45" /* GXT: 1 Strawberry Ave */, 16);
 			break;
 		
 		case 46:
-			StringCopy(&Var0, "MP_PROP_46", 16);
+			StringCopy(&Var0, "MP_PROP_46" /* GXT: 1932 Grapeseed Ave */, 16);
 			break;
 		
 		case 47:
-			StringCopy(&Var0, "MP_PROP_48", 16);
+			StringCopy(&Var0, "MP_PROP_48" /* GXT: 1920 Senora Way */, 16);
 			break;
 		
 		case 48:
-			StringCopy(&Var0, "MP_PROP_49", 16);
+			StringCopy(&Var0, "MP_PROP_49" /* GXT: 2000 Great Ocean Highway */, 16);
 			break;
 		
 		case 49:
-			StringCopy(&Var0, "MP_PROP_50", 16);
+			StringCopy(&Var0, "MP_PROP_50" /* GXT: 197 Route 68 */, 16);
 			break;
 		
 		case 50:
-			StringCopy(&Var0, "MP_PROP_51", 16);
+			StringCopy(&Var0, "MP_PROP_51" /* GXT: 870 Route 68 Approach */, 16);
 			break;
 		
 		case 51:
-			StringCopy(&Var0, "MP_PROP_52", 16);
+			StringCopy(&Var0, "MP_PROP_52" /* GXT: 1200 Route 68 */, 16);
 			break;
 		
 		case 52:
-			StringCopy(&Var0, "MP_PROP_57", 16);
+			StringCopy(&Var0, "MP_PROP_57" /* GXT: 8754 Route 68 */, 16);
 			break;
 		
 		case 53:
-			StringCopy(&Var0, "MP_PROP_59", 16);
+			StringCopy(&Var0, "MP_PROP_59" /* GXT: 1905 Davis Ave */, 16);
 			break;
 		
 		case 54:
-			StringCopy(&Var0, "MP_PROP_60", 16);
+			StringCopy(&Var0, "MP_PROP_60" /* GXT: 1623 South Shambles St */, 16);
 			break;
 		
 		case 55:
-			StringCopy(&Var0, "MP_PROP_61", 16);
+			StringCopy(&Var0, "MP_PROP_61" /* GXT: 4531 Dry Dock St */, 16);
 			break;
 		
 		case 56:
-			StringCopy(&Var0, "MP_PROP_62", 16);
+			StringCopy(&Var0, "MP_PROP_62" /* GXT: 1337 Exceptionalists Way */, 16);
 			break;
 		
 		case 57:
-			StringCopy(&Var0, "MP_PROP_63", 16);
+			StringCopy(&Var0, "MP_PROP_63" /* GXT: Unit 76 Greenwich Parkway */, 16);
 			break;
 		
 		case 58:
-			StringCopy(&Var0, "MP_PROP_64", 16);
+			StringCopy(&Var0, "MP_PROP_64" /* GXT: Garage Innocence Blvd */, 16);
 			break;
 		
 		case 59:
-			StringCopy(&Var0, "MP_PROP_65", 16);
+			StringCopy(&Var0, "MP_PROP_65" /* GXT: 634 Blvd Del Perro */, 16);
 			break;
 		
 		case 60:
-			StringCopy(&Var0, "MP_PROP_66", 16);
+			StringCopy(&Var0, "MP_PROP_66" /* GXT: 0897 Mirror Park Blvd */, 16);
 			break;
 		
 		case 61:
-			StringCopy(&Var0, "MP_PROP_67", 16);
+			StringCopy(&Var0, "MP_PROP_67" /* GXT: Eclipse Towers, Apt 3 */, 16);
 			break;
 		
 		case 62:
-			StringCopy(&Var0, "MP_PROP_68", 16);
+			StringCopy(&Var0, "MP_PROP_68" /* GXT: Del Perro Heights, Apt 4 */, 16);
 			break;
 		
 		case 63:
-			StringCopy(&Var0, "MP_PROP_69", 16);
+			StringCopy(&Var0, "MP_PROP_69" /* GXT: Richards Majestic, Apt 2 */, 16);
 			break;
 		
 		case 64:
-			StringCopy(&Var0, "MP_PROP_70", 16);
+			StringCopy(&Var0, "MP_PROP_70" /* GXT: Tinsel Towers, Apt 42 */, 16);
 			break;
 		
 		case 65:
-			StringCopy(&Var0, "MP_PROP_71", 16);
+			StringCopy(&Var0, "MP_PROP_71" /* GXT: 4 Integrity Way, Apt 28 */, 16);
 			break;
 		
 		case 66:
-			StringCopy(&Var0, "MP_PROP_72", 16);
+			StringCopy(&Var0, "MP_PROP_72" /* GXT: 4 Hangman Ave */, 16);
 			break;
 		
 		case 67:
-			StringCopy(&Var0, "MP_PROP_73", 16);
+			StringCopy(&Var0, "MP_PROP_73" /* GXT: 12 Sustancia Rd */, 16);
 			break;
 		
 		case 68:
-			StringCopy(&Var0, "MP_PROP_74", 16);
+			StringCopy(&Var0, "MP_PROP_74" /* GXT: 4584 Procopio Dr */, 16);
 			break;
 		
 		case 69:
-			StringCopy(&Var0, "MP_PROP_75", 16);
+			StringCopy(&Var0, "MP_PROP_75" /* GXT: 4401 Procopio Dr */, 16);
 			break;
 		
 		case 70:
-			StringCopy(&Var0, "MP_PROP_76", 16);
+			StringCopy(&Var0, "MP_PROP_76" /* GXT: 0232 Paleto Blvd */, 16);
 			break;
 		
 		case 71:
-			StringCopy(&Var0, "MP_PROP_77", 16);
+			StringCopy(&Var0, "MP_PROP_77" /* GXT: 140 Zancudo Ave */, 16);
 			break;
 		
 		case 72:
-			StringCopy(&Var0, "MP_PROP_78", 16);
+			StringCopy(&Var0, "MP_PROP_78" /* GXT: 1893 Grapeseed Ave */, 16);
 			break;
 		
 		case 83:
-			StringCopy(&Var0, "MP_PROP_79", 16);
+			StringCopy(&Var0, "MP_PROP_79" /* GXT: Eclipse Towers, Penthouse Suite 1 */, 16);
 			break;
 		
 		case 84:
-			StringCopy(&Var0, "MP_PROP_80", 16);
+			StringCopy(&Var0, "MP_PROP_80" /* GXT: Eclipse Towers, Penthouse Suite 2 */, 16);
 			break;
 		
 		case 85:
-			StringCopy(&Var0, "MP_PROP_81", 16);
+			StringCopy(&Var0, "MP_PROP_81" /* GXT: Eclipse Towers, Penthouse Suite 3 */, 16);
 			break;
 		
 		case 73:
-			StringCopy(&Var0, "MP_PROP_83", 16);
+			StringCopy(&Var0, "MP_PROP_83" /* GXT: 3655 Wild Oats Drive */, 16);
 			break;
 		
 		case 74:
-			StringCopy(&Var0, "MP_PROP_84", 16);
+			StringCopy(&Var0, "MP_PROP_84" /* GXT: 2044 North Conker Avenue */, 16);
 			break;
 		
 		case 75:
-			StringCopy(&Var0, "MP_PROP_85", 16);
+			StringCopy(&Var0, "MP_PROP_85" /* GXT: 2868 Hillcrest Avenue */, 16);
 			break;
 		
 		case 76:
-			StringCopy(&Var0, "MP_PROP_86", 16);
+			StringCopy(&Var0, "MP_PROP_86" /* GXT: 2862 Hillcrest Avenue */, 16);
 			break;
 		
 		case 77:
-			StringCopy(&Var0, "MP_PROP_87", 16);
+			StringCopy(&Var0, "MP_PROP_87" /* GXT: 3677 Whispymound Drive */, 16);
 			break;
 		
 		case 78:
-			StringCopy(&Var0, "MP_PROP_89", 16);
+			StringCopy(&Var0, "MP_PROP_89" /* GXT: 2117 Milton Road */, 16);
 			break;
 		
 		case 79:
-			StringCopy(&Var0, "MP_PROP_90", 16);
+			StringCopy(&Var0, "MP_PROP_90" /* GXT: 2866 Hillcrest Avenue */, 16);
 			break;
 		
 		case 80:
-			StringCopy(&Var0, "MP_PROP_92", 16);
+			StringCopy(&Var0, "MP_PROP_92" /* GXT: 2874 Hillcrest Avenue */, 16);
 			break;
 		
 		case 81:
-			StringCopy(&Var0, "MP_PROP_94", 16);
+			StringCopy(&Var0, "MP_PROP_94" /* GXT: 2113 Mad Wayne Thunder Drive */, 16);
 			break;
 		
 		case 82:
-			StringCopy(&Var0, "MP_PROP_95", 16);
+			StringCopy(&Var0, "MP_PROP_95" /* GXT: 2045 North Conker Avenue */, 16);
 			break;
 		
 		case 86:
-			StringCopy(&Var0, "PM_SPAWN_Y", 16);
+			StringCopy(&Var0, "PM_SPAWN_Y" /* GXT: Private Yacht */, 16);
 			break;
 		
 		case 87:
-			StringCopy(&Var0, "MP_PROP_OFF1", 16);
+			StringCopy(&Var0, "MP_PROP_OFF1" /* GXT: Lombank West */, 16);
 			break;
 		
 		case 88:
-			StringCopy(&Var0, "MP_PROP_OFF2", 16);
+			StringCopy(&Var0, "MP_PROP_OFF2" /* GXT: Maze Bank West */, 16);
 			break;
 		
 		case 89:
-			StringCopy(&Var0, "MP_PROP_OFF3", 16);
+			StringCopy(&Var0, "MP_PROP_OFF3" /* GXT: Arcadius Business Center */, 16);
 			break;
 		
 		case 90:
-			StringCopy(&Var0, "MP_PROP_OFF4", 16);
+			StringCopy(&Var0, "MP_PROP_OFF4" /* GXT: Maze Bank Tower */, 16);
 			break;
 		
 		case 91:
-			StringCopy(&Var0, "MP_PROP_CLUBH1", 16);
+			StringCopy(&Var0, "MP_PROP_CLUBH1" /* GXT: Rancho Clubhouse */, 16);
 			break;
 		
 		case 92:
-			StringCopy(&Var0, "MP_PROP_CLUBH2", 16);
+			StringCopy(&Var0, "MP_PROP_CLUBH2" /* GXT: Del Perro Beach Clubhouse */, 16);
 			break;
 		
 		case 93:
-			StringCopy(&Var0, "MP_PROP_CLUBH3", 16);
+			StringCopy(&Var0, "MP_PROP_CLUBH3" /* GXT: Pillbox Hill Clubhouse */, 16);
 			break;
 		
 		case 94:
-			StringCopy(&Var0, "MP_PROP_CLUBH4", 16);
+			StringCopy(&Var0, "MP_PROP_CLUBH4" /* GXT: Great Chaparral Clubhouse */, 16);
 			break;
 		
 		case 95:
-			StringCopy(&Var0, "MP_PROP_CLUBH5", 16);
+			StringCopy(&Var0, "MP_PROP_CLUBH5" /* GXT: Paleto Bay Clubhouse */, 16);
 			break;
 		
 		case 96:
-			StringCopy(&Var0, "MP_PROP_CLUBH6", 16);
+			StringCopy(&Var0, "MP_PROP_CLUBH6" /* GXT: Sandy Shores Clubhouse */, 16);
 			break;
 		
 		case 97:
-			StringCopy(&Var0, "MP_PROP_CLUBH7", 16);
+			StringCopy(&Var0, "MP_PROP_CLUBH7" /* GXT: La Mesa Clubhouse */, 16);
 			break;
 		
 		case 98:
-			StringCopy(&Var0, "MP_PROP_CLUBH8", 16);
+			StringCopy(&Var0, "MP_PROP_CLUBH8" /* GXT: Downtown Vinewood Clubhouse */, 16);
 			break;
 		
 		case 99:
-			StringCopy(&Var0, "MP_PROP_CLUBH9", 16);
+			StringCopy(&Var0, "MP_PROP_CLUBH9" /* GXT: Hawick Clubhouse */, 16);
 			break;
 		
 		case 100:
-			StringCopy(&Var0, "MP_PROP_CLUBH10", 16);
+			StringCopy(&Var0, "MP_PROP_CLUBH10" /* GXT: Grapeseed Clubhouse */, 16);
 			break;
 		
 		case 101:
-			StringCopy(&Var0, "MP_PROP_CLUBH11", 16);
+			StringCopy(&Var0, "MP_PROP_CLUBH11" /* GXT: Paleto Bay Clubhouse */, 16);
 			break;
 		
 		case 102:
-			StringCopy(&Var0, "MP_PROP_CLUBH12", 16);
+			StringCopy(&Var0, "MP_PROP_CLUBH12" /* GXT: Vespucci Beach Clubhouse */, 16);
 			break;
 		
 		case 103:
 		case 106:
 		case 109:
 		case 112:
-			StringCopy(&Var0, "MP_PROP_OFFG1", 16);
+			StringCopy(&Var0, "MP_PROP_OFFG1" /* GXT: Office Garage 1 */, 16);
 			break;
 		
 		case 104:
 		case 107:
 		case 110:
 		case 113:
-			StringCopy(&Var0, "MP_PROP_OFFG2", 16);
+			StringCopy(&Var0, "MP_PROP_OFFG2" /* GXT: Office Garage 2 */, 16);
 			break;
 		
 		case 105:
 		case 108:
 		case 111:
 		case 114:
-			StringCopy(&Var0, "MP_PROP_OFFG3", 16);
+			StringCopy(&Var0, "MP_PROP_OFFG3" /* GXT: Office Garage 3 */, 16);
 			break;
 		
 		case 115:
-			StringCopy(&Var0, "IE_WARE_1", 16);
+			StringCopy(&Var0, "IE_WARE_1" /* GXT: Vehicle Warehouse */, 16);
 			break;
 	}
 	return Var0;
@@ -18777,7 +18777,7 @@ void func_451()//Position - 0x168B5
 			iVar0 = func_8(1191, -1, 0);
 			if (!BitTest(iVar0, 22) || !BitTest(iVar0, 23))
 			{
-				func_452("HTX_HELP2", -1);
+				func_452("HTX_HELP2" /* GXT: ~s~The helicopter has arrived at your destination. Entering a helicopter gives you a parachute, allowing you to jump out and land safely. */, -1);
 				if (!BitTest(iVar0, 22))
 				{
 					MISC::SET_BIT(&iVar0, 22);
@@ -19966,7 +19966,7 @@ void func_485()//Position - 0x17FD2
 				{
 					HUD::SET_BLIP_SPRITE(iLocal_132, 422);
 					HUD::SHOW_HEIGHT_ON_BLIP(iLocal_132, false);
-					HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_132, "HTX_BLIP");
+					HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_132, "HTX_BLIP" /* GXT: Helicopter */);
 					iLocal_133 = 1;
 					func_326(&iLocal_132, iLocal_133);
 				}
@@ -20131,7 +20131,7 @@ void func_497(bool bParam0)//Position - 0x1824C
 	func_265(0);
 	if (func_277())
 	{
-		if (func_502("HTX_HELPN", "GB_HELI_BLIP"))
+		if (func_502("HTX_HELPN" /* GXT: ~s~The helicopter ~a~ ~s~will take you to the location of your waypoint.~n~Open up the Map screen from the Pause Menu ~INPUT_FRONTEND_PAUSE~ and press ~INPUT_FRONTEND_ACCEPT~ to place a waypoint. */, "GB_HELI_BLIP" /* GXT: ~BLIP_HELICOPTER~ */))
 		{
 			HUD::CLEAR_HELP(true);
 			iVar0 = func_8(1191, -1, 0);
@@ -20140,7 +20140,7 @@ void func_497(bool bParam0)//Position - 0x1824C
 		}
 		func_12(0);
 	}
-	else if (func_502("HTX_HELPN", "HTX_HELPB"))
+	else if (func_502("HTX_HELPN" /* GXT: ~s~The helicopter ~a~ ~s~will take you to the location of your waypoint.~n~Open up the Map screen from the Pause Menu ~INPUT_FRONTEND_PAUSE~ and press ~INPUT_FRONTEND_ACCEPT~ to place a waypoint. */, "HTX_HELPB" /* GXT: ~BLIP_PLAYER_HELI~ */))
 	{
 		HUD::CLEAR_HELP(true);
 		iVar1 = func_8(1191, -1, 0);

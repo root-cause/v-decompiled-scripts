@@ -272,22 +272,22 @@ void func_6()//Position - 0x19B
 		if (func_22(0, -1, 0))
 		{
 			func_21(-1);
-			func_20(21, "BLIP_184", -1);
+			func_20(21, "BLIP_184" /* GXT: Camera */, -1);
 			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(0))
 			{
-				func_20(29, "CELL_284", -1);
+				func_20(29, "CELL_284" /* GXT: Zoom */, -1);
 			}
 			else
 			{
-				func_20(20, "CELL_284", -1);
+				func_20(20, "CELL_284" /* GXT: Zoom */, -1);
 			}
 			iVar0 = 208;
 			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(0))
 			{
 				iVar0 = 237;
 			}
-			func_19(iVar0, "BLIP_39", -1, 0);
-			func_19(80, "MOVE_DRONE_RE", -1, 0);
+			func_19(iVar0, "BLIP_39" /* GXT: Fire */, -1, 0);
+			func_19(80, "MOVE_DRONE_RE" /* GXT: Exit */, -1, 0);
 			MISC::SET_BIT(&(Local_128.f_5), 4);
 		}
 	}
@@ -4077,7 +4077,7 @@ void func_130()//Position - 0x49E6
 				TASK::TASK_HELI_MISSION(PLAYER::PLAYER_PED_ID(), Local_128.f_107, 0, 0, Var1, 4, 0f, -1f, -1f, -1, -1, -1f, 0);
 				VEHICLE::SET_AIRCRAFT_PILOT_SKILL_NOISE_SCALAR(Local_128.f_107, 0f);
 			}
-			func_131("HUNTGUN_2b", -1);
+			func_131("HUNTGUN_2b" /* GXT: You are using the helicopter's mounted surveillance camera.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out.~n~Press ~INPUT_CONTEXT~ to go back. */, -1);
 			func_112(2);
 		}
 	}
@@ -4986,7 +4986,7 @@ void func_166()//Position - 0x5B3A
 			{
 				if (func_165())
 				{
-					if ((func_168() && !func_150()) && func_167("MP_HTRUCK_T_2"))
+					if ((func_168() && !func_150()) && func_167("MP_HTRUCK_T_2" /* GXT: Press ~INPUT_CELLPHONE_SELECT~ to use the Multi-Lock Missile Battery.~n~Press ~INPUT_CONTEXT~ to stand up. */))
 					{
 						if (PAD::IS_CONTROL_JUST_RELEASED(2, 176) || PAD::IS_DISABLED_CONTROL_JUST_RELEASED(2, 176))
 						{
@@ -4998,11 +4998,11 @@ void func_166()//Position - 0x5B3A
 				}
 				else if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 				{
-					if ((!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && !HUD::IS_HELP_MESSAGE_ON_SCREEN()) && !func_167("HUNTGUN_1b"))
+					if ((!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && !HUD::IS_HELP_MESSAGE_ON_SCREEN()) && !func_167("HUNTGUN_1b" /* GXT: You are the co-pilot of a helicopter. Press ~INPUT_CONTEXT~ to use the mounted surveillance camera. */))
 					{
-						func_131("HUNTGUN_1b", -1);
+						func_131("HUNTGUN_1b" /* GXT: You are the co-pilot of a helicopter. Press ~INPUT_CONTEXT~ to use the mounted surveillance camera. */, -1);
 					}
-					else if (!func_167("HUNTGUN_1b"))
+					else if (!func_167("HUNTGUN_1b" /* GXT: You are the co-pilot of a helicopter. Press ~INPUT_CONTEXT~ to use the mounted surveillance camera. */))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -5013,12 +5013,12 @@ void func_166()//Position - 0x5B3A
 						HUD::CLEAR_HELP(true);
 					}
 				}
-				else if (func_167("HUNTGUN_1b"))
+				else if (func_167("HUNTGUN_1b" /* GXT: You are the co-pilot of a helicopter. Press ~INPUT_CONTEXT~ to use the mounted surveillance camera. */))
 				{
 					HUD::CLEAR_HELP(true);
 				}
 			}
-			else if (func_167("HUNTGUN_1b"))
+			else if (func_167("HUNTGUN_1b" /* GXT: You are the co-pilot of a helicopter. Press ~INPUT_CONTEXT~ to use the mounted surveillance camera. */))
 			{
 				HUD::CLEAR_HELP(true);
 			}
@@ -5474,7 +5474,7 @@ void func_194(bool bParam0)//Position - 0x63A3
 	
 	if (!func_165())
 	{
-		if (func_167("HUNTGUN_1b"))
+		if (func_167("HUNTGUN_1b" /* GXT: You are the co-pilot of a helicopter. Press ~INPUT_CONTEXT~ to use the mounted surveillance camera. */))
 		{
 			HUD::CLEAR_HELP(true);
 		}

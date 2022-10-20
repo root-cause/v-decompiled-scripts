@@ -711,7 +711,7 @@ int func_18(var uParam0, int iParam1)//Position - 0xB49
 	{
 		if (!Global_78579)
 		{
-			func_26(&(uParam0->f_11), &(uParam0->f_12), &(uParam0->f_9), 5, &iLocal_52, &iLocal_50, "DIVING_TITLE", "DIVING_COLLECT");
+			func_26(&(uParam0->f_11), &(uParam0->f_12), &(uParam0->f_9), 5, &iLocal_52, &iLocal_50, "DIVING_TITLE" /* GXT: Piece Collected~s~ */, "DIVING_COLLECT" /* GXT: ~1~/30 submarine pieces collected. */);
 		}
 		if (!func_25(44))
 		{
@@ -720,7 +720,7 @@ int func_18(var uParam0, int iParam1)//Position - 0xB49
 			{
 				if (MISC::GET_DISTANCE_BETWEEN_COORDS(func_23(iVar4), Var3, false) > 200f)
 				{
-					func_20("DIVING_HELP4", 1, 7500, -1, 10000, 7, 0, 0, 0);
+					func_20("DIVING_HELP4" /* GXT: Return to a Dinghy to continue hunting for the submarine pieces. */, 1, 7500, -1, 10000, 7, 0, 0, 0);
 					func_19(44);
 				}
 			}
@@ -1931,7 +1931,7 @@ void func_62()//Position - 0x22A1
 			{
 				if (!func_25(41))
 				{
-					func_20("DIVING_HELP1", 1, 0, -1, 10000, 7, 0, 0, 0);
+					func_20("DIVING_HELP1" /* GXT: The nearest area where submarine pieces can be found is marked on the map when driving the Dinghy. */, 1, 0, -1, 10000, 7, 0, 0, 0);
 					func_19(41);
 				}
 				if (iLocal_51 != iLocal_54)
@@ -1947,7 +1947,7 @@ void func_62()//Position - 0x22A1
 					HUD::SET_BLIP_ALPHA(iLocal_53, 128);
 					HUD::SET_BLIP_COLOUR(iLocal_53, 2);
 					HUD::SET_BLIP_HIDDEN_ON_LEGEND(iLocal_53, false);
-					HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_53, "B_WRE");
+					HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_53, "B_WRE" /* GXT: Wreckage Site */);
 					HUD::SHOW_HEIGHT_ON_BLIP(iLocal_53, false);
 					iLocal_54 = iLocal_51;
 				}
@@ -1963,7 +1963,7 @@ void func_62()//Position - 0x22A1
 			{
 				if (!func_25(42))
 				{
-					func_20("DIVING_HELP2", 1, 0, -1, 10000, 7, 0, 0, 0);
+					func_20("DIVING_HELP2" /* GXT: When inside the green marker areas, your sonar will be in range and you can use it to to help locate the missing submarine pieces. */, 1, 0, -1, 10000, 7, 0, 0, 0);
 					func_19(42);
 				}
 			}
@@ -1973,7 +1973,7 @@ void func_62()//Position - 0x22A1
 				{
 					if (ENTITY::IS_ENTITY_IN_WATER(PLAYER::PLAYER_PED_ID()) && !PED::IS_PED_SWIMMING_UNDER_WATER(PLAYER::PLAYER_PED_ID()))
 					{
-						func_20("DIVING_HELP3", 1, 2000, -1, 10000, 7, 0, 0, 0);
+						func_20("DIVING_HELP3" /* GXT: Dive underwater to search for the submarine pieces. */, 1, 2000, -1, 10000, 7, 0, 0, 0);
 						func_19(43);
 					}
 				}
@@ -2122,7 +2122,7 @@ void func_65()//Position - 0x267E
 		iLocal_66 = 0;
 	}
 	func_69();
-	func_68(&Local_42, 5, joaat("prop_sub_chunk_01"), "DIVING_COLLECT");
+	func_68(&Local_42, 5, joaat("prop_sub_chunk_01"), "DIVING_COLLECT" /* GXT: ~1~/30 submarine pieces collected. */);
 	func_66(&Local_42, joaat("NUM_HIDDEN_PACKAGES_4"), 845, 30);
 	func_2(1);
 	fLocal_57[0] = 0.25f;

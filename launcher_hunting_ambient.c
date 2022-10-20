@@ -153,7 +153,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_61 = 2050;
 	iLocal_62 = -1;
 	iLocal_63 = -1;
-	sLocal_65 = "CC_SUBSTR";
+	sLocal_65 = "CC_SUBSTR" /* GXT: ~INPUT_CONTEXT~ */;
 	fLocal_66 = 125f;
 	iLocal_67 = 1;
 	iLocal_69 = 263;
@@ -422,7 +422,7 @@ void __EntryFunction__()//Position - 0x0
 									{
 										if (!func_89(uLocal_58, 134217728))
 										{
-											func_47("MG_NA_TIME", iLocal_80, iLocal_81);
+											func_47("MG_NA_TIME" /* GXT: This activity is not available at this time of day. Come back between ~1~:00 and ~1~:00 to participate in this activity. */, iLocal_80, iLocal_81);
 											func_61(&uLocal_58, 134217728);
 										}
 									}
@@ -440,7 +440,7 @@ void __EntryFunction__()//Position - 0x0
 								{
 									if (!func_89(uLocal_58, 134217728))
 									{
-										func_47("MG_NA_TIME", iLocal_80, iLocal_81);
+										func_47("MG_NA_TIME" /* GXT: This activity is not available at this time of day. Come back between ~1~:00 and ~1~:00 to participate in this activity. */, iLocal_80, iLocal_81);
 										func_61(&uLocal_58, 134217728);
 									}
 								}
@@ -817,7 +817,7 @@ void func_7()//Position - 0xBE4
 	}
 	else if (MISC::IS_PS3_VERSION() || func_8())
 	{
-		StringCopy(&cVar0, "PRESENCE_0_STR", 24);
+		StringCopy(&cVar0, "PRESENCE_0_STR" /* GXT: Playing story */, 24);
 		NETWORK::NETWORK_SET_RICH_PRESENCE_STRING(0, &cVar0);
 	}
 }
@@ -2374,7 +2374,7 @@ void func_90()//Position - 0x2A16
 	StringCopy(&Local_51, "hunting_ambient", 64);
 	iLocal_63 = 3;
 	iLocal_79 = 2;
-	sLocal_65 = "PLAY_HUNT";
+	sLocal_65 = "PLAY_HUNT" /* GXT: Press ~INPUT_CONTEXT~ to start hunting. */;
 	iLocal_80 = 5;
 	iLocal_81 = 19;
 	fLocal_77 = 2f;

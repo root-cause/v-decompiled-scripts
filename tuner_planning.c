@@ -802,28 +802,28 @@ char* func_13(int iParam0)//Position - 0x62C
 	switch (iParam0)
 	{
 		case 0:
-			return "TUNPLAN_FIND0";
+			return "TUNPLAN_FIND0" /* GXT: Break into The Union Depository vault, steal the shipment of gold inside, and deliver it the client. */;
 		
 		case 1:
-			return "TUNPLAN_FIND1";
+			return "TUNPLAN_FIND1" /* GXT: Stop the convoy, steal the printing plates, and deliver them to the client. */;
 		
 		case 2:
-			return "TUNPLAN_FIND2";
+			return "TUNPLAN_FIND2" /* GXT: Rob the cash in the vaults of the Fleeca Bank branches and deliver it to the client. */;
 		
 		case 3:
-			return "TUNPLAN_FIND3";
+			return "TUNPLAN_FIND3" /* GXT: Stop the train, steal the ECUs, and deliver them to the client. */;
 		
 		case 4:
-			return "TUNPLAN_FIND4";
+			return "TUNPLAN_FIND4" /* GXT: Break into Bolingbroke and assassinate all the targets identified by Lil' Dee. */;
 		
 		case 5:
-			return "TUNPLAN_FIND5";
+			return "TUNPLAN_FIND5" /* GXT: Find the dealer in the IAA facility, learn the location of the recipe, and deliver it to the client. */;
 		
 		case 6:
-			return "TUNPLAN_FIND6";
+			return "TUNPLAN_FIND6" /* GXT: Destroy the Lost MC labs, steal their last shipment of meth, and deliver it to the client. */;
 		
 		case 7:
-			return "TUNPLAN_FIND7";
+			return "TUNPLAN_FIND7" /* GXT: Infiltrate the Merryweather CEO's base, steal the hard drives, and deliver them to the client. */;
 		
 		default:
 	}
@@ -835,28 +835,28 @@ char* func_14(int iParam0)//Position - 0x69E
 	switch (iParam0)
 	{
 		case 0:
-			return "TUNPLAN_FINN0";
+			return "TUNPLAN_FINN0" /* GXT: THE ROBBERY */;
 		
 		case 1:
-			return "TUNPLAN_FINN1";
+			return "TUNPLAN_FINN1" /* GXT: THE ROBBERY */;
 		
 		case 2:
-			return "TUNPLAN_FINN2";
+			return "TUNPLAN_FINN2" /* GXT: THE ROBBERIES */;
 		
 		case 3:
-			return "TUNPLAN_FINN3";
+			return "TUNPLAN_FINN3" /* GXT: THE ROBBERY */;
 		
 		case 4:
-			return "TUNPLAN_FINN4";
+			return "TUNPLAN_FINN4" /* GXT: THE HIT */;
 		
 		case 5:
-			return "TUNPLAN_FINN5";
+			return "TUNPLAN_FINN5" /* GXT: THE RAID */;
 		
 		case 6:
-			return "TUNPLAN_FINN6";
+			return "TUNPLAN_FINN6" /* GXT: THE JOB */;
 		
 		case 7:
-			return "TUNPLAN_FINN7";
+			return "TUNPLAN_FINN7" /* GXT: THE ROBBERY */;
 		
 		default:
 	}
@@ -1014,10 +1014,10 @@ char* func_18(int iParam0, int iParam1)//Position - 0x8E7
 			switch (iParam1)
 			{
 				case 0:
-					return "TUNPLAN_PDES0";
+					return "TUNPLAN_PDES0" /* GXT: Get an elevator key from a corrupt businessman that will help you access the vault. */;
 				
 				case 1:
-					return "TUNPLAN_PDES1";
+					return "TUNPLAN_PDES1" /* GXT: Find dirt on the bank's manager to blackmail him into giving up the code to the vault. */;
 				
 				default:
 			}
@@ -1027,10 +1027,10 @@ char* func_18(int iParam0, int iParam1)//Position - 0x8E7
 			switch (iParam1)
 			{
 				case 0:
-					return "TUNPLAN_PDES2";
+					return "TUNPLAN_PDES2" /* GXT: Identify the vehicle that will be transporting the printing plates and plant a tracking device on it. */;
 				
 				case 1:
-					return "TUNPLAN_PDES3";
+					return "TUNPLAN_PDES3" /* GXT: Acquire software that can disable any security systems onboard the convoy. */;
 				
 				default:
 			}
@@ -1040,10 +1040,10 @@ char* func_18(int iParam0, int iParam1)//Position - 0x8E7
 			switch (iParam1)
 			{
 				case 0:
-					return "TUNPLAN_PDES4";
+					return "TUNPLAN_PDES4" /* GXT: Acquire thermal charges capable of burning through Fleeca Bank vault doors. */;
 				
 				case 1:
-					return "TUNPLAN_PDES5";
+					return "TUNPLAN_PDES5" /* GXT: Install a device at each Fleeca Bank that can temporarily block the alarm system. */;
 				
 				default:
 			}
@@ -1053,10 +1053,10 @@ char* func_18(int iParam0, int iParam1)//Position - 0x8E7
 			switch (iParam1)
 			{
 				case 0:
-					return "TUNPLAN_PDES6";
+					return "TUNPLAN_PDES6" /* GXT: Identify which of the train's containers will be holding the ECUs. */;
 				
 				case 1:
-					return "TUNPLAN_PDES7";
+					return "TUNPLAN_PDES7" /* GXT: Learn when the ECUs are due to be transported and find a way to stop the train. */;
 				
 				default:
 			}
@@ -1066,10 +1066,10 @@ char* func_18(int iParam0, int iParam1)//Position - 0x8E7
 			switch (iParam1)
 			{
 				case 0:
-					return "TUNPLAN_PDES8";
+					return "TUNPLAN_PDES8" /* GXT: Help out Sessanta's cousin, Lil' Dee, and he'll get into Bolingbroke to identify the targets. */;
 				
 				case 1:
-					return "TUNPLAN_PDES9";
+					return "TUNPLAN_PDES9" /* GXT: Find a way to get over the prison's perimeter fence. */;
 				
 				default:
 			}
@@ -1079,10 +1079,10 @@ char* func_18(int iParam0, int iParam1)//Position - 0x8E7
 			switch (iParam1)
 			{
 				case 0:
-					return "TUNPLAN_PDES10";
+					return "TUNPLAN_PDES10" /* GXT: Find a way to enter the IAA's facility beneath their Los Santos headquarters. */;
 				
 				case 1:
-					return "TUNPLAN_PDES11";
+					return "TUNPLAN_PDES11" /* GXT: Get a security pass from a corrupt IAA agent to gain access to the facility. */;
 				
 				default:
 			}
@@ -1092,10 +1092,10 @@ char* func_18(int iParam0, int iParam1)//Position - 0x8E7
 			switch (iParam1)
 			{
 				case 0:
-					return "TUNPLAN_PDES12";
+					return "TUNPLAN_PDES12" /* GXT: Locate all the Lost MC meth labs and get explosives capable of destroying them. */;
 				
 				case 1:
-					return "TUNPLAN_PDES13";
+					return "TUNPLAN_PDES13" /* GXT: Find out how the Lost MC transport their product and when the next shipment is due. */;
 				
 				default:
 			}
@@ -1105,10 +1105,10 @@ char* func_18(int iParam0, int iParam1)//Position - 0x8E7
 			switch (iParam1)
 			{
 				case 0:
-					return "TUNPLAN_PDES14";
+					return "TUNPLAN_PDES14" /* GXT: Locate the Merryweather CEO's base of operations and find a way inside. */;
 				
 				case 1:
-					return "TUNPLAN_PDES15";
+					return "TUNPLAN_PDES15" /* GXT: Find equipment that will help defend against any retaliation from the Merryweather CEO. */;
 				
 				default:
 			}
@@ -1125,10 +1125,10 @@ char* func_19(int iParam0, int iParam1)//Position - 0xA49
 			switch (iParam1)
 			{
 				case 0:
-					return "TUNPLAN_PNAM0";
+					return "TUNPLAN_PNAM0" /* GXT: ELEVATOR KEY */;
 				
 				case 1:
-					return "TUNPLAN_PNAM1";
+					return "TUNPLAN_PNAM1" /* GXT: VAULT CODE */;
 				
 				default:
 			}
@@ -1138,10 +1138,10 @@ char* func_19(int iParam0, int iParam1)//Position - 0xA49
 			switch (iParam1)
 			{
 				case 0:
-					return "TUNPLAN_PNAM2";
+					return "TUNPLAN_PNAM2" /* GXT: TRACKING DEVICE */;
 				
 				case 1:
-					return "TUNPLAN_PNAM3";
+					return "TUNPLAN_PNAM3" /* GXT: VIRUS SOFTWARE */;
 				
 				default:
 			}
@@ -1151,10 +1151,10 @@ char* func_19(int iParam0, int iParam1)//Position - 0xA49
 			switch (iParam1)
 			{
 				case 0:
-					return "TUNPLAN_PNAM4";
+					return "TUNPLAN_PNAM4" /* GXT: THERMAL CHARGES */;
 				
 				case 1:
-					return "TUNPLAN_PNAM5";
+					return "TUNPLAN_PNAM5" /* GXT: SIGNAL JAMMERS */;
 				
 				default:
 			}
@@ -1164,10 +1164,10 @@ char* func_19(int iParam0, int iParam1)//Position - 0xA49
 			switch (iParam1)
 			{
 				case 0:
-					return "TUNPLAN_PNAM6";
+					return "TUNPLAN_PNAM6" /* GXT: TRAIN INVENTORY */;
 				
 				case 1:
-					return "TUNPLAN_PNAM7";
+					return "TUNPLAN_PNAM7" /* GXT: SCHEDULE */;
 				
 				default:
 			}
@@ -1177,10 +1177,10 @@ char* func_19(int iParam0, int iParam1)//Position - 0xA49
 			switch (iParam1)
 			{
 				case 0:
-					return "TUNPLAN_PNAM8";
+					return "TUNPLAN_PNAM8" /* GXT: INSIDE MAN */;
 				
 				case 1:
-					return "TUNPLAN_PNAM9";
+					return "TUNPLAN_PNAM9" /* GXT: ACCESS POINT */;
 				
 				default:
 			}
@@ -1190,10 +1190,10 @@ char* func_19(int iParam0, int iParam1)//Position - 0xA49
 			switch (iParam1)
 			{
 				case 0:
-					return "TUNPLAN_PNAM10";
+					return "TUNPLAN_PNAM10" /* GXT: ENTRY POINT */;
 				
 				case 1:
-					return "TUNPLAN_PNAM11";
+					return "TUNPLAN_PNAM11" /* GXT: SECURITY PASS */;
 				
 				default:
 			}
@@ -1203,10 +1203,10 @@ char* func_19(int iParam0, int iParam1)//Position - 0xA49
 			switch (iParam1)
 			{
 				case 0:
-					return "TUNPLAN_PNAM12";
+					return "TUNPLAN_PNAM12" /* GXT: LAB LOCATIONS */;
 				
 				case 1:
-					return "TUNPLAN_PNAM13";
+					return "TUNPLAN_PNAM13" /* GXT: TRANSPORT METHOD */;
 				
 				default:
 			}
@@ -1216,10 +1216,10 @@ char* func_19(int iParam0, int iParam1)//Position - 0xA49
 			switch (iParam1)
 			{
 				case 0:
-					return "TUNPLAN_PNAM14";
+					return "TUNPLAN_PNAM14" /* GXT: SAFEHOUSE LOCATION */;
 				
 				case 1:
-					return "TUNPLAN_PNAM15";
+					return "TUNPLAN_PNAM15" /* GXT: DEFENSES */;
 				
 				default:
 			}
@@ -1251,28 +1251,28 @@ char* func_22(int iParam0)//Position - 0xBF2
 	switch (iParam0)
 	{
 		case 0:
-			return "TUNPLAN_DESC0";
+			return "TUNPLAN_DESC0" /* GXT: Break into The Union Depository and strip the vault of gold bars. */;
 		
 		case 1:
-			return "TUNPLAN_DESC1";
+			return "TUNPLAN_DESC1" /* GXT: Halt a military convoy and steal the printing plates they're transporting. */;
 		
 		case 2:
-			return "TUNPLAN_DESC2";
+			return "TUNPLAN_DESC2" /* GXT: Hit Fleeca Banks across Los Santos and Blaine County and grab all the cash you can. */;
 		
 		case 3:
-			return "TUNPLAN_DESC3";
+			return "TUNPLAN_DESC3" /* GXT: Jump a freight train and steal the prototype standalone Engine Control Units inside. */;
 		
 		case 4:
-			return "TUNPLAN_DESC4";
+			return "TUNPLAN_DESC4" /* GXT: Infiltrate Bolingbroke Penitentiary and assassinate several targets. */;
 		
 		case 5:
-			return "TUNPLAN_DESC5";
+			return "TUNPLAN_DESC5" /* GXT: Get the location of a stolen narcotics recipe from a dealer held at an IAA Facility. */;
 		
 		case 6:
-			return "TUNPLAN_DESC6";
+			return "TUNPLAN_DESC6" /* GXT: Take down the Lost MC's operation by destroying their labs and stealing the last of their product. */;
 		
 		case 7:
-			return "TUNPLAN_DESC7";
+			return "TUNPLAN_DESC7" /* GXT: Locate the Merryweather CEO's base of operations and steal his secret files. */;
 		
 		default:
 	}
@@ -1284,28 +1284,28 @@ char* func_23(int iParam0)//Position - 0xC6C
 	switch (iParam0)
 	{
 		case 0:
-			return "TUNPLAN_NAME0";
+			return "TUNPLAN_NAME0" /* GXT: THE UNION DEPOSITORY CONTRACT */;
 		
 		case 1:
-			return "TUNPLAN_NAME1";
+			return "TUNPLAN_NAME1" /* GXT: THE SUPERDOLLAR DEAL */;
 		
 		case 2:
-			return "TUNPLAN_NAME2";
+			return "TUNPLAN_NAME2" /* GXT: THE BANK CONTRACT */;
 		
 		case 3:
-			return "TUNPLAN_NAME3";
+			return "TUNPLAN_NAME3" /* GXT: THE ECU JOB */;
 		
 		case 4:
-			return "TUNPLAN_NAME4";
+			return "TUNPLAN_NAME4" /* GXT: THE PRISON CONTRACT */;
 		
 		case 5:
-			return "TUNPLAN_NAME5";
+			return "TUNPLAN_NAME5" /* GXT: THE AGENCY DEAL */;
 		
 		case 6:
-			return "TUNPLAN_NAME6";
+			return "TUNPLAN_NAME6" /* GXT: THE LOST CONTRACT */;
 		
 		case 7:
-			return "TUNPLAN_NAME7";
+			return "TUNPLAN_NAME7" /* GXT: THE DATA CONTRACT */;
 		
 		default:
 	}
@@ -1807,7 +1807,7 @@ bool func_59()//Position - 0x13F5
 {
 	char* sVar0;
 	
-	sVar0 = "NHPG_PROMPT";
+	sVar0 = "NHPG_PROMPT" /* GXT: Press ~INPUT_CONTEXT~ to use the Planning Board. */;
 	if (Local_277.f_1 != 0)
 	{
 		Call_Loc(Local_277.f_1);
@@ -2465,10 +2465,10 @@ char* func_87(int iParam0)//Position - 0x1DA1
 	switch (iParam0)
 	{
 		case 0:
-			return "NHPG_HELP_BBOSS";
+			return "NHPG_HELP_BBOSS" /* GXT: Register as a VIP, CEO or MC President to gain access to the Planning Board. */;
 		
 		case 1:
-			return "NHPG_HELP_BGOON";
+			return "NHPG_HELP_BGOON" /* GXT: Unable to use the Planning Board. The leader has not formed an Organization or Motorcycle Club. */;
 		
 		default:
 	}
@@ -2521,7 +2521,7 @@ void func_92()//Position - 0x1E8F
 {
 	char* sVar0;
 	
-	sVar0 = "NHPG_PROMPT";
+	sVar0 = "NHPG_PROMPT" /* GXT: Press ~INPUT_CONTEXT~ to use the Planning Board. */;
 	if (Local_277.f_1 != 0)
 	{
 		Call_Loc(Local_277.f_1);
@@ -2624,7 +2624,7 @@ int func_93(var uParam0)//Position - 0x1EBC
 
 int func_94()//Position - 0x2015
 {
-	if (func_61("H4PREP_UNVLB"))
+	if (func_61("H4PREP_UNVLB" /* GXT: Freemode Prep mission currently unavailable. Please wait or look for rival crews transporting the Heist Prep Equipment ~HUD_COLOUR_GREEN~~BLIP_ISLAND_HEIST_PREP~~s~ to steal from instead. */))
 	{
 		return 1;
 	}
@@ -2851,21 +2851,21 @@ int func_109(var uParam0, int iParam1, var uParam2)//Position - 0x2302
 	
 	bVar5 = false;
 	iVar7 = 36;
-	StringCopy(&cVar0, "HPWARN_CONF", 64);
+	StringCopy(&cVar0, "HPWARN_CONF" /* GXT: Confirm */, 64);
 	switch (iParam1)
 	{
 		case 0:
 			Call_Loc(Local_277.f_33.f_4);
 			cVar1 = { StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal };
-			StringCopy(&cVar4, "HEIST_WARN_2", 64);
+			StringCopy(&cVar4, "HEIST_WARN_2" /* GXT: Do you wish to proceed? */, 64);
 			bVar5 = true;
 			Call_Loc(Local_277.f_33.f_3);
 			iVar6 = StackVal;
 			break;
 		
 		case 1:
-			StringCopy(&cVar0, "FM_CSC_QUIT", 64);
-			StringCopy(&cVar1, "FM_CSC_QUIT1", 64);
+			StringCopy(&cVar0, "FM_CSC_QUIT" /* GXT: Confirm */, 64);
+			StringCopy(&cVar1, "FM_CSC_QUIT1" /* GXT: Are you sure you want to quit this Job? */, 64);
 			break;
 		
 		case 2:
@@ -10225,23 +10225,23 @@ void func_351(var uParam0)//Position - 0xB87F
 	iVar0 = uParam0->f_806;
 	if (func_358(uParam0, iVar0))
 	{
-		func_357(2, 201, "CH_INSTR_LM", uParam0, 1, 363);
+		func_357(2, 201, "CH_INSTR_LM" /* GXT: Launch Mission */, uParam0, 1, 363);
 	}
 	else if (func_353(uParam0, iVar0))
 	{
-		func_357(2, 201, "TN_INSTR_ACC", uParam0, 1, 363);
+		func_357(2, 201, "TN_INSTR_ACC" /* GXT: Take Contract */, uParam0, 1, 363);
 	}
-	func_357(2, 202, "CH_INSTR_QUIT", uParam0, 1, 363);
+	func_357(2, 202, "CH_INSTR_QUIT" /* GXT: Quit */, uParam0, 1, 363);
 	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 	{
-		func_357(2, 39, "CH_INSTR_ZOOM", uParam0, 1, 363);
+		func_357(2, 39, "CH_INSTR_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 	}
 	else
 	{
-		func_352(2, 15, "CH_INSTR_ZOOM", uParam0);
+		func_352(2, 15, "CH_INSTR_ZOOM" /* GXT: Zoom */, uParam0);
 	}
-	func_352(2, 1, "HEIST_IB_LOOK", uParam0);
-	func_352(2, 0, "HEIST_IB_NAV", uParam0);
+	func_352(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, uParam0);
+	func_352(2, 0, "HEIST_IB_NAV" /* GXT: Navigate */, uParam0);
 }
 
 void func_352(int iParam0, int iParam1, char* sParam2, var uParam3)//Position - 0xB91B
@@ -10679,14 +10679,14 @@ void func_370(var uParam0)//Position - 0xC0D6
 	func_359(uParam0);
 	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 	{
-		func_357(2, 39, "CH_INSTR_ZOOM", uParam0, 1, 363);
+		func_357(2, 39, "CH_INSTR_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 	}
 	else
 	{
-		func_352(2, 15, "CH_INSTR_ZOOM", uParam0);
+		func_352(2, 15, "CH_INSTR_ZOOM" /* GXT: Zoom */, uParam0);
 	}
-	func_352(2, 1, "HEIST_IB_LOOK", uParam0);
-	func_352(2, 0, "HEIST_IB_NAV", uParam0);
+	func_352(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, uParam0);
+	func_352(2, 0, "HEIST_IB_NAV" /* GXT: Navigate */, uParam0);
 	func_362(&(uParam0->f_712), &Var0, uParam0, 1);
 	if (!iLocal_460)
 	{
@@ -11232,19 +11232,19 @@ char* func_406(int iParam0)//Position - 0xCBE0
 		case 1:
 		case 3:
 		case 7:
-			return "TUNPLAN_HELP_1a";
+			return "TUNPLAN_HELP_1a" /* GXT: Complete the required Planning Work by gathering information and the equipment necessary to then begin The Robbery. */;
 		
 		case 2:
-			return "TUNPLAN_HELP_1b";
+			return "TUNPLAN_HELP_1b" /* GXT: Complete the required Planning Work by gathering information and the equipment necessary to then begin The Robberies. */;
 		
 		case 4:
-			return "TUNPLAN_HELP_1c";
+			return "TUNPLAN_HELP_1c" /* GXT: Complete the required Planning Work by gathering information and the equipment necessary to then begin The Hit. */;
 		
 		case 5:
-			return "TUNPLAN_HELP_1d";
+			return "TUNPLAN_HELP_1d" /* GXT: Complete the required Planning Work by gathering information and the equipment necessary to then begin The Raid. */;
 		
 		case 6:
-			return "TUNPLAN_HELP_1e";
+			return "TUNPLAN_HELP_1e" /* GXT: Complete the required Planning Work by gathering information and the equipment necessary to then begin The Job. */;
 		
 		default:
 	}
@@ -11446,28 +11446,28 @@ char* func_417(int iParam0)//Position - 0xCF38
 	switch (iParam0)
 	{
 		case 0:
-			return "TUNPLAN_ROB0";
+			return "TUNPLAN_ROB0" /* GXT: The Union Depository Contract */;
 		
 		case 1:
-			return "TUNPLAN_ROB1";
+			return "TUNPLAN_ROB1" /* GXT: The Superdollar Deal */;
 		
 		case 2:
-			return "TUNPLAN_ROB2";
+			return "TUNPLAN_ROB2" /* GXT: The Bank Contract */;
 		
 		case 3:
-			return "TUNPLAN_ROB3";
+			return "TUNPLAN_ROB3" /* GXT: The E.C.U. Job */;
 		
 		case 4:
-			return "TUNPLAN_ROB4";
+			return "TUNPLAN_ROB4" /* GXT: The Prison Contract */;
 		
 		case 5:
-			return "TUNPLAN_ROB5";
+			return "TUNPLAN_ROB5" /* GXT: The Agency Deal */;
 		
 		case 6:
-			return "TUNPLAN_ROB6";
+			return "TUNPLAN_ROB6" /* GXT: The Lost Contract */;
 		
 		case 7:
-			return "TUNPLAN_ROB7";
+			return "TUNPLAN_ROB7" /* GXT: The Data Contract */;
 		
 		default:
 	}
@@ -11479,7 +11479,7 @@ char* func_418(var uParam0)//Position - 0xCFB2
 	switch (uParam0->f_1087)
 	{
 		case 0:
-			return "TUNPLAN_WARN0";
+			return "TUNPLAN_WARN0" /* GXT: Are you sure you wish to take ~a~? */;
 			break;
 	}
 	return "";
@@ -11490,7 +11490,7 @@ char* func_419(var uParam0)//Position - 0xCFD7
 	switch (uParam0->f_1087)
 	{
 		case 0:
-			return "FM_CSC_QUIT";
+			return "FM_CSC_QUIT" /* GXT: Confirm */;
 			break;
 	}
 	return "";
@@ -11699,7 +11699,7 @@ char* func_442(int iParam0)//Position - 0xD2A7
 	switch (iParam0)
 	{
 		case 0:
-			return "TUN_HELP_BBOSS";
+			return "TUN_HELP_BBOSS" /* GXT: Register as a VIP, CEO or MC President to gain access to the Job Board. */;
 		
 		default:
 	}
@@ -12377,7 +12377,7 @@ void func_484(int iParam0)//Position - 0xDDA6
 
 void func_485()//Position - 0xDDC9
 {
-	func_86("GB_MIS_UNAVAIL", -1);
+	func_86("GB_MIS_UNAVAIL" /* GXT: Mission currently unavailable. Please wait and try again soon. */, -1);
 }
 
 int func_486(int iParam0, int iParam1, int iParam2)//Position - 0xDDDA
@@ -13240,30 +13240,30 @@ void func_493(int iParam0)//Position - 0xE8EA
 		case 15:
 			if (func_495(iLocal_276))
 			{
-				func_86("GENERAL_MLF_G1", -1);
+				func_86("GENERAL_MLF_G1" /* GXT: Can't launch this mission whilst one of your Club Members is currently at one with the animals. */, -1);
 			}
 			else if (func_494(iLocal_276))
 			{
-				func_86("GENERAL_MLF_G2", -1);
+				func_86("GENERAL_MLF_G2" /* GXT: Can't launch this mission whilst one of your Associates is currently at one with the animals. */, -1);
 			}
 			else
 			{
-				func_86("GENERAL_MLF_G3", -1);
+				func_86("GENERAL_MLF_G3" /* GXT: Can't launch this mission whilst one of your Bodyguards is currently at one with the animals. */, -1);
 			}
 			break;
 		
 		case 16:
 			if (func_495(iLocal_276))
 			{
-				func_86("GENERAL_MLF_G4", -1);
+				func_86("GENERAL_MLF_G4" /* GXT: Can't launch this mission whilst one of your Club Members is playing a casino game. */, -1);
 			}
 			else if (func_494(iLocal_276))
 			{
-				func_86("GENERAL_MLF_G5", -1);
+				func_86("GENERAL_MLF_G5" /* GXT: Can't launch this mission whilst one of your Associates is playing a casino game. */, -1);
 			}
 			else
 			{
-				func_86("GENERAL_MLF_G6", -1);
+				func_86("GENERAL_MLF_G6" /* GXT: Can't launch this mission whilst one of your Bodyguards is playing a casino game. */, -1);
 			}
 			break;
 		
@@ -22236,9 +22236,9 @@ void func_661(var uParam0)//Position - 0x16567
 		case 103:
 			if (func_355(uParam0->f_1084, func_356(uParam0->f_1084, func_454(iVar0))))
 			{
-				func_86("TUNPLAN_HELP_2", -1);
+				func_86("TUNPLAN_HELP_2" /* GXT: There is a short delay before you can accept this Contract again. */, -1);
 			}
-			else if (func_61("TUNPLAN_HELP_2"))
+			else if (func_61("TUNPLAN_HELP_2" /* GXT: There is a short delay before you can accept this Contract again. */))
 			{
 				HUD::CLEAR_HELP(true);
 			}
@@ -22261,7 +22261,7 @@ void func_661(var uParam0)//Position - 0x16567
 			}
 			else if (func_24(uParam0->f_1084) == 5 && !func_6(uParam0->f_1084))
 			{
-				func_86("TUNPLAN_HELP_3", -1);
+				func_86("TUNPLAN_HELP_3" /* GXT: Find a way to enter the IAA's facility to then begin this Planning Work. */, -1);
 			}
 			break;
 		
@@ -22356,7 +22356,7 @@ void func_664(var uParam0)//Position - 0x166DD
 		case 4:
 			if (!func_666())
 			{
-				func_86("TUNPLAN_HELP_0", -1);
+				func_86("TUNPLAN_HELP_0" /* GXT: The Job Board shows the Contracts currently available from KDJ and the payment you will receive for completing each Contract. The Contracts offered here change regularly so check back often for new work. Select one to begin. */, -1);
 				func_665(1);
 				func_408(uParam0, 0);
 			}
@@ -22581,13 +22581,13 @@ char* func_678()//Position - 0x16C59
 {
 	if (!func_669(iLocal_276))
 	{
-		return "TUN_INT_STP";
+		return "TUN_INT_STP" /* GXT: Press ~INPUT_CONTEXT~ to retrieve Sessanta's impounded car and complete the Auto Shop setup. */;
 	}
 	if (!func_26(iLocal_276) && !func_679(iLocal_276))
 	{
-		return "TUN_INT_CON2";
+		return "TUN_INT_CON2" /* GXT: Press ~INPUT_CONTEXT~ to use the Job Board ~BLIP_CAR_ROBBERY_BOARD~ and select one of the Contracts provided by KDJ. */;
 	}
-	return "TUN_INT_CON";
+	return "TUN_INT_CON" /* GXT: Press ~INPUT_CONTEXT~ to use the Job Board. */;
 }
 
 int func_679(int iParam0)//Position - 0x16C96

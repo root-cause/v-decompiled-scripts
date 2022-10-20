@@ -1749,31 +1749,31 @@ char* func_48(int iParam0)//Position - 0x1CC8
 	switch (iParam0)
 	{
 		case 0:
-			return "SB_SAL";
+			return "SB_SAL" /* GXT: Barber Shop */;
 			break;
 		
 		case 1:
-			return "SB_BAR";
+			return "SB_BAR" /* GXT: Barber Shop */;
 			break;
 		
 		case 2:
-			return "SB_BAR";
+			return "SB_BAR" /* GXT: Barber Shop */;
 			break;
 		
 		case 3:
-			return "SB_BAR";
+			return "SB_BAR" /* GXT: Barber Shop */;
 			break;
 		
 		case 4:
-			return "SB_BAR";
+			return "SB_BAR" /* GXT: Barber Shop */;
 			break;
 		
 		case 5:
-			return "SB_BAR";
+			return "SB_BAR" /* GXT: Barber Shop */;
 			break;
 		
 		case 6:
-			return "SB_BAR";
+			return "SB_BAR" /* GXT: Barber Shop */;
 			break;
 		
 		case 7:
@@ -1837,71 +1837,71 @@ char* func_48(int iParam0)//Position - 0x1CC8
 			break;
 		
 		case 22:
-			return "SB_TAT";
+			return "SB_TAT" /* GXT: Tattoo Parlor */;
 			break;
 		
 		case 23:
-			return "SB_TAT";
+			return "SB_TAT" /* GXT: Tattoo Parlor */;
 			break;
 		
 		case 24:
-			return "SB_TAT";
+			return "SB_TAT" /* GXT: Tattoo Parlor */;
 			break;
 		
 		case 25:
-			return "SB_TAT";
+			return "SB_TAT" /* GXT: Tattoo Parlor */;
 			break;
 		
 		case 26:
-			return "SB_TAT";
+			return "SB_TAT" /* GXT: Tattoo Parlor */;
 			break;
 		
 		case 27:
-			return "SB_TAT";
+			return "SB_TAT" /* GXT: Tattoo Parlor */;
 			break;
 		
 		case 28:
-			return "SB_AMU2";
+			return "SB_AMU2" /* GXT: Ammu-Nation with Range */;
 			break;
 		
 		case 29:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 30:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 31:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 32:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 33:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 34:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 35:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 36:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 37:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 38:
-			return "SB_AMU2";
+			return "SB_AMU2" /* GXT: Ammu-Nation with Range */;
 			break;
 		
 		case 39:
@@ -1933,39 +1933,39 @@ char* func_48(int iParam0)//Position - 0x1CC8
 			break;
 		
 		case 46:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 47:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 48:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 49:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 52:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 50:
-			return "SB_BAR";
+			return "SB_BAR" /* GXT: Barber Shop */;
 			break;
 		
 		case 51:
-			return "S_CL_BL";
+			return "S_CL_BL" /* GXT: Casino Store */;
 			break;
 		
 		case 53:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 54:
-			return "SB_TAT";
+			return "SB_TAT" /* GXT: Tattoo Parlor */;
 			break;
 		
 		case 55:
@@ -1973,7 +1973,7 @@ char* func_48(int iParam0)//Position - 0x1CC8
 			break;
 		
 		case 56:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 57:
@@ -1988,187 +1988,187 @@ char* func_49(int iParam0, int iParam1, bool bParam2)//Position - 0x20CA
 	switch (iParam0)
 	{
 		case -1:
-			return "S_N_EM";
+			return "S_N_EM" /* GXT: Empty Shop */;
 			break;
 		
 		case 0:
-			return "S_H_01";
+			return "S_H_01" /* GXT: Bob Mulét Hair & Beauty */;
 			break;
 		
 		case 1:
-			return "S_H_02";
+			return "S_H_02" /* GXT: Herr Kutz Barber */;
 			break;
 		
 		case 2:
-			return "S_H_03";
+			return "S_H_03" /* GXT: Beachcombover Barbers */;
 			break;
 		
 		case 3:
-			return "S_H_04";
+			return "S_H_04" /* GXT: O'Sheas Barbers */;
 			break;
 		
 		case 4:
-			return "S_H_05";
+			return "S_H_05" /* GXT: Herr Kutz Barber */;
 			break;
 		
 		case 5:
-			return "S_H_06";
+			return "S_H_06" /* GXT: Hair On Hawick Barbers */;
 			break;
 		
 		case 6:
-			return "S_H_07";
+			return "S_H_07" /* GXT: Herr Kutz Barber */;
 			break;
 		
 		case 7:
-			return "S_CL_01";
+			return "S_CL_01" /* GXT: Discount Store */;
 			break;
 		
 		case 8:
-			return "S_CL_02";
+			return "S_CL_02" /* GXT: Discount Store */;
 			break;
 		
 		case 9:
-			return "S_CL_03";
+			return "S_CL_03" /* GXT: Binco Clothing */;
 			break;
 		
 		case 10:
-			return "S_CL_04";
+			return "S_CL_04" /* GXT: Discount Store */;
 			break;
 		
 		case 11:
-			return "S_CL_05";
+			return "S_CL_05" /* GXT: Discount Store */;
 			break;
 		
 		case 12:
-			return "S_CL_06";
+			return "S_CL_06" /* GXT: Binco Clothing */;
 			break;
 		
 		case 13:
-			return "S_CL_07";
+			return "S_CL_07" /* GXT: Discount Store */;
 			break;
 		
 		case 14:
-			return "S_CM_01";
+			return "S_CM_01" /* GXT: Suburban */;
 			break;
 		
 		case 15:
-			return "S_CM_03";
+			return "S_CM_03" /* GXT: Suburban */;
 			break;
 		
 		case 16:
-			return "S_CM_04";
+			return "S_CM_04" /* GXT: Suburban */;
 			break;
 		
 		case 17:
-			return "S_CM_05";
+			return "S_CM_05" /* GXT: Suburban */;
 			break;
 		
 		case 18:
-			return "S_CH_01";
+			return "S_CH_01" /* GXT: Ponsonbys */;
 			break;
 		
 		case 19:
-			return "S_CH_02";
+			return "S_CH_02" /* GXT: Ponsonbys */;
 			break;
 		
 		case 20:
-			return "S_CH_03";
+			return "S_CH_03" /* GXT: Ponsonbys */;
 			break;
 		
 		case 21:
-			return "S_CA_01";
+			return "S_CA_01" /* GXT: Vespucci Movie Masks */;
 			break;
 		
 		case 22:
-			return "S_T_01";
+			return "S_T_01" /* GXT: Blazing Tattoo */;
 			break;
 		
 		case 23:
-			return "S_T_02";
+			return "S_T_02" /* GXT: Alamo Tattoo Studio */;
 			break;
 		
 		case 24:
-			return "S_T_03";
+			return "S_T_03" /* GXT: Paleto Tattoo Studio */;
 			break;
 		
 		case 25:
-			return "S_T_04";
+			return "S_T_04" /* GXT: The Pit */;
 			break;
 		
 		case 26:
-			return "S_T_05";
+			return "S_T_05" /* GXT: Los Santos Tattoos */;
 			break;
 		
 		case 27:
-			return "S_T_06";
+			return "S_T_06" /* GXT: Ink Inc Tattoos */;
 			break;
 		
 		case 28:
-			return "S_G_01";
+			return "S_G_01" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 29:
-			return "S_G_02";
+			return "S_G_02" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 30:
-			return "S_G_03";
+			return "S_G_03" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 31:
-			return "S_G_04";
+			return "S_G_04" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 32:
-			return "S_G_05";
+			return "S_G_05" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 33:
-			return "S_G_06";
+			return "S_G_06" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 34:
-			return "S_G_07";
+			return "S_G_07" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 35:
-			return "S_G_08";
+			return "S_G_08" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 36:
-			return "S_G_09";
+			return "S_G_09" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 37:
-			return "S_G_10";
+			return "S_G_10" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 38:
-			return "S_G_11";
+			return "S_G_11" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 39:
-			return "S_MO_01";
+			return "S_MO_01" /* GXT: Los Santos Customs */;
 			break;
 		
 		case 40:
-			return "S_MO_05";
+			return "S_MO_05" /* GXT: Los Santos Customs */;
 			break;
 		
 		case 41:
-			return "S_MO_06";
+			return "S_MO_06" /* GXT: Los Santos Customs */;
 			break;
 		
 		case 42:
-			return "S_MO_07";
+			return "S_MO_07" /* GXT: Beeker's Garage */;
 			break;
 		
 		case 43:
-			return "S_MO_08";
+			return "S_MO_08" /* GXT: Los Santos Customs */;
 			break;
 		
 		case 44:
-			return "S_MO_09";
+			return "S_MO_09" /* GXT: Benny's Original Motor Works */;
 			break;
 		
 		case 45:
@@ -2181,7 +2181,7 @@ char* func_49(int iParam0, int iParam1, bool bParam2)//Position - 0x20CA
 					}
 					else
 					{
-						return "S_MO_10";
+						return "S_MO_10" /* GXT: Custom Mod Shop */;
 					}
 					break;
 				
@@ -2192,7 +2192,7 @@ char* func_49(int iParam0, int iParam1, bool bParam2)//Position - 0x20CA
 					}
 					else
 					{
-						return "S_MO_10";
+						return "S_MO_10" /* GXT: Custom Mod Shop */;
 					}
 					break;
 				
@@ -2203,7 +2203,7 @@ char* func_49(int iParam0, int iParam1, bool bParam2)//Position - 0x20CA
 					}
 					else
 					{
-						return "S_MO_B";
+						return "S_MO_B" /* GXT: Bunker Vehicle Workshop */;
 					}
 					break;
 				
@@ -2214,7 +2214,7 @@ char* func_49(int iParam0, int iParam1, bool bParam2)//Position - 0x20CA
 					}
 					else
 					{
-						return "S_MO_T";
+						return "S_MO_T" /* GXT: Weapon & Vehicle Workshop */;
 					}
 					break;
 				
@@ -2225,7 +2225,7 @@ char* func_49(int iParam0, int iParam1, bool bParam2)//Position - 0x20CA
 					}
 					else
 					{
-						return "S_MO_HA";
+						return "S_MO_HA" /* GXT: Hangar Aircraft Workshop */;
 					}
 					break;
 				
@@ -2236,7 +2236,7 @@ char* func_49(int iParam0, int iParam1, bool bParam2)//Position - 0x20CA
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -2247,7 +2247,7 @@ char* func_49(int iParam0, int iParam1, bool bParam2)//Position - 0x20CA
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -2258,7 +2258,7 @@ char* func_49(int iParam0, int iParam1, bool bParam2)//Position - 0x20CA
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -2269,7 +2269,7 @@ char* func_49(int iParam0, int iParam1, bool bParam2)//Position - 0x20CA
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -2280,7 +2280,7 @@ char* func_49(int iParam0, int iParam1, bool bParam2)//Position - 0x20CA
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -2291,7 +2291,7 @@ char* func_49(int iParam0, int iParam1, bool bParam2)//Position - 0x20CA
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -2302,7 +2302,7 @@ char* func_49(int iParam0, int iParam1, bool bParam2)//Position - 0x20CA
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -2313,59 +2313,59 @@ char* func_49(int iParam0, int iParam1, bool bParam2)//Position - 0x20CA
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 			}
-			return "S_MO_11";
+			return "S_MO_11" /* GXT: Custom Auto Shop */;
 			break;
 		
 		case 46:
-			return "S_G_12";
+			return "S_G_12" /* GXT: MOC Armory */;
 			break;
 		
 		case 47:
-			return "S_G_13";
+			return "S_G_13" /* GXT: Avenger Armory */;
 			break;
 		
 		case 48:
-			return "S_G_14";
+			return "S_G_14" /* GXT: Terrorbyte Armory */;
 			break;
 		
 		case 49:
-			return "S_G_15";
+			return "S_G_15" /* GXT: Arena Armory */;
 			break;
 		
 		case 52:
-			return "S_G_16";
+			return "S_G_16" /* GXT: Arcade Armory */;
 			break;
 		
 		case 53:
-			return "S_G_17";
+			return "S_G_17" /* GXT: Kosatka Armory */;
 			break;
 		
 		case 50:
-			return "S_H_08";
+			return "S_H_08" /* GXT: Penthouse Barber */;
 			break;
 		
 		case 51:
-			return "S_CL_09";
+			return "S_CL_09" /* GXT: Casino Store */;
 			break;
 		
 		case 54:
-			return "S_T_07";
+			return "S_T_07" /* GXT: LS Car Meet Tattoos */;
 			break;
 		
 		case 55:
-			return "S_CL_10";
+			return "S_CL_10" /* GXT: Merch Shop */;
 			break;
 		
 		case 56:
-			return "S_G_18";
+			return "S_G_18" /* GXT: Fixer Armory */;
 			break;
 		
 		case 57:
-			return "S_CL_11";
+			return "S_CL_11" /* GXT: Record A Studios */;
 			break;
 	}
 	return "SHOP_NAME_EMPTY";

@@ -484,7 +484,7 @@ void func_1()//Position - 0x245
 				{
 					if (iLocal_328 == -1)
 					{
-						func_44(&iLocal_328, 3, "SA_BED_IN", 0, 0, 0, 0);
+						func_44(&iLocal_328, 3, "SA_BED_IN" /* GXT: Press ~INPUT_CONTEXT~ to get into bed.~n~ */, 0, 0, 0, 0);
 					}
 					iLocal_322 = 1;
 				}
@@ -501,7 +501,7 @@ void func_1()//Position - 0x245
 						func_39(&iLocal_328);
 						func_38();
 						Global_1835486 = 8;
-						if (func_37("SA_BED_IN"))
+						if (func_37("SA_BED_IN" /* GXT: Press ~INPUT_CONTEXT~ to get into bed.~n~ */))
 						{
 							HUD::CLEAR_HELP(true);
 						}
@@ -527,7 +527,7 @@ void func_1()//Position - 0x245
 				else
 				{
 					func_39(&iLocal_328);
-					if (func_37("SA_BED_IN"))
+					if (func_37("SA_BED_IN" /* GXT: Press ~INPUT_CONTEXT~ to get into bed.~n~ */))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -586,9 +586,9 @@ void func_1()//Position - 0x245
 			if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_327))
 			{
 				PED::SET_SYNCHRONIZED_SCENE_LOOPED(iLocal_327, true);
-				if (!func_37("SA_BED_OUT"))
+				if (!func_37("SA_BED_OUT" /* GXT: Press ~INPUT_SCRIPT_RUP~ to get out of bed.~n~ */))
 				{
-					func_10("SA_BED_OUT");
+					func_10("SA_BED_OUT" /* GXT: Press ~INPUT_SCRIPT_RUP~ to get out of bed.~n~ */);
 				}
 				iLocal_322 = 6;
 			}
@@ -600,18 +600,18 @@ void func_1()//Position - 0x245
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 			if (!func_9(1))
 			{
-				if (!func_37("SA_BED_OUT"))
+				if (!func_37("SA_BED_OUT" /* GXT: Press ~INPUT_SCRIPT_RUP~ to get out of bed.~n~ */))
 				{
-					func_10("SA_BED_OUT");
+					func_10("SA_BED_OUT" /* GXT: Press ~INPUT_SCRIPT_RUP~ to get out of bed.~n~ */);
 				}
 			}
-			else if (func_37("SA_BED_OUT"))
+			else if (func_37("SA_BED_OUT" /* GXT: Press ~INPUT_SCRIPT_RUP~ to get out of bed.~n~ */))
 			{
 				HUD::CLEAR_HELP(true);
 			}
 			if (!func_45(PLAYER::PLAYER_ID()) && PAD::IS_CONTROL_JUST_PRESSED(2, 222))
 			{
-				if (func_37("SA_BED_OUT"))
+				if (func_37("SA_BED_OUT" /* GXT: Press ~INPUT_SCRIPT_RUP~ to get out of bed.~n~ */))
 				{
 					HUD::CLEAR_HELP(true);
 				}
@@ -2360,7 +2360,7 @@ void func_82()//Position - 0x2103
 	{
 		func_39(&iLocal_328);
 	}
-	if (func_37("SA_BED_IN") || func_37("SA_BED_OUT"))
+	if (func_37("SA_BED_IN" /* GXT: Press ~INPUT_CONTEXT~ to get into bed.~n~ */) || func_37("SA_BED_OUT" /* GXT: Press ~INPUT_SCRIPT_RUP~ to get out of bed.~n~ */))
 	{
 		HUD::CLEAR_HELP(true);
 	}

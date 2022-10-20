@@ -144,7 +144,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_61 = 2050;
 	iLocal_62 = -1;
 	iLocal_63 = -1;
-	sLocal_65 = "CC_SUBSTR";
+	sLocal_65 = "CC_SUBSTR" /* GXT: ~INPUT_CONTEXT~ */;
 	fLocal_66 = 125f;
 	iLocal_67 = 1;
 	iLocal_69 = 263;
@@ -802,7 +802,7 @@ void func_7()//Position - 0xBAA
 	}
 	else if (MISC::IS_PS3_VERSION() || func_8())
 	{
-		StringCopy(&cVar0, "PRESENCE_0_STR", 24);
+		StringCopy(&cVar0, "PRESENCE_0_STR" /* GXT: Playing story */, 24);
 		NETWORK::NETWORK_SET_RICH_PRESENCE_STRING(0, &cVar0);
 	}
 }
@@ -5320,7 +5320,7 @@ void func_118()//Position - 0x7405
 	bool bVar0;
 	
 	StringCopy(&Local_51, "Darts", 64);
-	sLocal_65 = "PLAY_DARTS";
+	sLocal_65 = "PLAY_DARTS" /* GXT: Press ~INPUT_CONTEXT~ to play darts. */;
 	iLocal_63 = 1;
 	fLocal_77 = 2.5f;
 	Local_82 = { 0f, -0.5f, 0f };

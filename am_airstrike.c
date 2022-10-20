@@ -366,9 +366,9 @@ void func_1()//Position - 0x129
 		{
 			if (!Local_238.f_56)
 			{
-				if (((!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() || func_8("AIRSTRIKE_1")) || func_8("AIRSTRIKE_2")) || func_8("AIRSTRIKE_4"))
+				if (((!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() || func_8("AIRSTRIKE_1" /* GXT: Throw a Flare to mark an area for the Airstrike to hit. If you do not mark an area with a Flare before the jet arrives it will leave without deploying any bombs. */)) || func_8("AIRSTRIKE_2" /* GXT: JET RANGE */)) || func_8("AIRSTRIKE_4" /* GXT: Throw a flare to mark an area for the airstrike to hit. If you do not mark an area with a flare before the jet arrives it will leave without deploying any bombs. You cannot throw flares while piloting an air vehicle. */))
 				{
-					func_7("AIRSTRIKE_3", -1);
+					func_7("AIRSTRIKE_3" /* GXT: If you throw a flare in an interior the jet will not be able to see it and will not deploy any bombs. */, -1);
 					Local_238.f_56 = 1;
 				}
 			}
@@ -1492,7 +1492,7 @@ void func_45()//Position - 0x1818
 		}
 		if (fLocal_62 >= 0f)
 		{
-			func_46(iVar3, "AIRSTRIKE_2", -1, iVar4, 2, 0, "AIRSTRIKE_6", 0, 0f, 0, 0, iVar4, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
+			func_46(iVar3, "AIRSTRIKE_2" /* GXT: JET RANGE */, -1, iVar4, 2, 0, "AIRSTRIKE_6" /* GXT: ~1~ m */, 0, 0f, 0, 0, iVar4, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
 		}
 	}
 }
@@ -1682,7 +1682,7 @@ void func_53()//Position - 0x1CA6
 				{
 					Local_240[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2 = { Var0 };
 				}
-				if (func_8("AIRSTRIKE_1"))
+				if (func_8("AIRSTRIKE_1" /* GXT: Throw a Flare to mark an area for the Airstrike to hit. If you do not mark an area with a Flare before the jet arrives it will leave without deploying any bombs. */))
 				{
 					HUD::CLEAR_HELP(true);
 				}
@@ -1707,11 +1707,11 @@ void func_53()//Position - 0x1CA6
 				{
 					if (func_92(PLAYER::PLAYER_PED_ID()))
 					{
-						func_7("AIRSTRIKE_4", -1);
+						func_7("AIRSTRIKE_4" /* GXT: Throw a flare to mark an area for the airstrike to hit. If you do not mark an area with a flare before the jet arrives it will leave without deploying any bombs. You cannot throw flares while piloting an air vehicle. */, -1);
 					}
 					else
 					{
-						func_7("AIRSTRIKE_1", -1);
+						func_7("AIRSTRIKE_1" /* GXT: Throw a Flare to mark an area for the Airstrike to hit. If you do not mark an area with a Flare before the jet arrives it will leave without deploying any bombs. */, -1);
 					}
 					iLocal_54 = 1;
 				}
@@ -1942,9 +1942,9 @@ char* func_60()//Position - 0x229D
 {
 	if (func_61())
 	{
-		return "PA_AIRSTRIKE_BLIP";
+		return "PA_AIRSTRIKE_BLIP" /* GXT: Bomber */;
 	}
-	return "AIRSTRIKE_5";
+	return "AIRSTRIKE_5" /* GXT: Airstrike */;
 }
 
 bool func_61()//Position - 0x22B5

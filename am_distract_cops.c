@@ -476,13 +476,13 @@ void func_14()//Position - 0x516
 			}
 			if (func_94())
 			{
-				func_81(12, "DSC_PASS0", 0, 0, -99);
+				func_81(12, "DSC_PASS0" /* GXT: Good work. You'll get your money, and they got away with it. Everyone's a winner except small businesses, property owners, and emergency services in the area... */, 0, 0, -99);
 			}
 			else
 			{
-				func_81(12, "DSC_PASS1", 0, 0, -99);
+				func_81(12, "DSC_PASS1" /* GXT: Mission accomplished. I got paid, I'm transferring your small cut to you. You probably don't want to know what they were up to, but rest assured it wasn't as bad as what you were doing to distract the cops. */, 0, 0, -99);
 			}
-			func_20(51, iVar0, "DSC_CASH", "DSC_BIGM", 1, -1, -1082130432, 2, 0);
+			func_20(51, iVar0, "DSC_CASH" /* GXT: $~1~ */, "DSC_BIGM" /* GXT: Distract Cops */, 1, -1, -1082130432, 2, 0);
 			if (BitTest(uLocal_86, 4))
 			{
 				if (!BitTest(uLocal_86, 5))
@@ -2769,7 +2769,7 @@ void func_111(int iParam0, int iParam1)//Position - 0x2F44
 						func_123(&iVar0, 0);
 						if (iParam1 == 1)
 						{
-							func_116("GB_BCUT_TICK1", func_126(), iVar0, 0, 0, 1);
+							func_116("GB_BCUT_TICK1" /* GXT: You paid ~a~ ~s~a $~1~ ~s~cut. */, func_126(), iVar0, 0, 0, 1);
 						}
 						func_115(20);
 						func_112(func_126(), iVar0, 1);
@@ -3112,11 +3112,11 @@ void func_136()//Position - 0x35B3
 	}
 	if ((Local_83.f_12 - func_140(&(Local_83.f_10), 0, 0)) >= 0)
 	{
-		func_137((Local_83.f_12 - func_140(&(Local_83.f_10), 0, 0)), "DCP_TIMER", 0, 1, -1, 0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
+		func_137((Local_83.f_12 - func_140(&(Local_83.f_10), 0, 0)), "DCP_TIMER" /* GXT: DISTRACT TIME */, 0, 1, -1, 0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 	}
 	else
 	{
-		func_137(0, "DCP_TIMER", 0, 1, -1, 0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
+		func_137(0, "DCP_TIMER" /* GXT: DISTRACT TIME */, 0, 1, -1, 0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 	}
 }
 
@@ -3221,7 +3221,7 @@ void func_143()//Position - 0x384A
 				func_196(2110, 1, -1);
 				break;
 		}
-		func_144(0, PLAYER::PLAYER_PED_ID(), "XPT_DSC", joaat("XPTYPE_COMPLETE"), joaat("XPCATEGORY_COMPLETE_DISTRACT_COPS"), (Global_262145.f_8566 * Local_83.f_16), 1, -1, 0, 0, 0);
+		func_144(0, PLAYER::PLAYER_PED_ID(), "XPT_DSC" /* GXT: Distract Cops */, joaat("XPTYPE_COMPLETE"), joaat("XPCATEGORY_COMPLETE_DISTRACT_COPS"), (Global_262145.f_8566 * Local_83.f_16), 1, -1, 0, 0, 0);
 		Local_85[NETWORK::PARTICIPANT_ID_TO_INT() /*4*/].f_2++;
 		func_5(&uLocal_88);
 	}
@@ -4968,7 +4968,7 @@ void func_200()//Position - 0x5956
 			{
 				if (!func_250())
 				{
-					func_201("DCP_LEAVE", -1);
+					func_201("DCP_LEAVE" /* GXT: You are leaving the area for distracting the Cops. */, -1);
 				}
 				MISC::SET_BIT(&uLocal_86, 0);
 			}
@@ -5631,7 +5631,7 @@ void func_251()//Position - 0x6658
 		{
 			if (!func_250())
 			{
-				func_201("DCP_HELP1", -1);
+				func_201("DCP_HELP1" /* GXT: Help Lester's contact by distracting the cops in the area marked by a purple circle. */, -1);
 			}
 			MISC::SET_BIT(&uLocal_86, 6);
 		}
@@ -5662,7 +5662,7 @@ void func_253()//Position - 0x66F3
 		HUD::SET_BLIP_COLOUR(iLocal_87, 50);
 		HUD::SET_BLIP_ALPHA(iLocal_87, 220);
 		HUD::SHOW_HEIGHT_ON_BLIP(iLocal_87, false);
-		HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_87, "DCP_BLIPN");
+		HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_87, "DCP_BLIPN" /* GXT: Distract Cops */);
 		if (func_250())
 		{
 			HUD::SET_BLIP_DISPLAY(iLocal_87, 0);
@@ -5991,7 +5991,7 @@ void func_268()//Position - 0x6C44
 	}
 	if (BitTest(Local_83.f_1, 1))
 	{
-		func_81(12, "DSC_FAIL", 0, 0, -99);
+		func_81(12, "DSC_FAIL" /* GXT: Great. Thank you for your help. Now some horrible criminals are in jail for a crime they did commit and it's all your fault!! */, 0, 0, -99);
 	}
 	func_204();
 	func_270(16, 0);

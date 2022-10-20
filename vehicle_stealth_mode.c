@@ -195,17 +195,17 @@ int func_10(var uParam0)//Position - 0x24C
 {
 	if (uParam0->f_2 != 0)
 	{
-		if (func_14("STEALTH_OFF", func_15(uParam0->f_2), func_15(uParam0->f_2)) || func_13("STEALTH_ON_P", func_15(uParam0->f_2)))
+		if (func_14("STEALTH_OFF" /* GXT: Press ~INPUT_VEH_ROOF~ to enter Stealth Mode when piloting the ~a~. All pilot and passenger weapons are unavailable in Stealth Mode as the ~a~ will not appear on enemy radars or maps. */, func_15(uParam0->f_2), func_15(uParam0->f_2)) || func_13("STEALTH_ON_P" /* GXT: The Pilot has turned on Stealth Mode. All pilot and passenger weapons are unavailable as the ~a~ will not appear on enemy radars or maps. */, func_15(uParam0->f_2)))
 		{
 			return 1;
 		}
 	}
-	return ((func_12("STEALTH_ON") || func_12(func_11())) || func_12("STEALTH_OFF_P"));
+	return ((func_12("STEALTH_ON" /* GXT: Press ~INPUT_VEH_ROOF~ to disable Stealth Mode. */) || func_12(func_11())) || func_12("STEALTH_OFF_P" /* GXT: The Pilot has disabled Stealth Mode. */));
 }
 
 char* func_11()//Position - 0x2B0
 {
-	return "STEALTH_WARN";
+	return "STEALTH_WARN" /* GXT: All pilot and passenger weapons are unavailable while the vehicle is in Stealth Mode. */;
 }
 
 bool func_12(char* sParam0)//Position - 0x2BB
@@ -233,7 +233,7 @@ char* func_15(int iParam0)//Position - 0x306
 {
 	if (iParam0 == joaat("annihilator2"))
 	{
-		return "ANNIH_2_STEALTH";
+		return "ANNIH_2_STEALTH" /* GXT: Stealth Annihilator */;
 	}
 	return VEHICLE::GET_DISPLAY_NAME_FROM_VEHICLE_MODEL(iParam0);
 }
@@ -342,9 +342,9 @@ char* func_22(int* iParam0)//Position - 0x5A3
 {
 	if (func_52(iParam0))
 	{
-		return "STEALTH_OFF";
+		return "STEALTH_OFF" /* GXT: Press ~INPUT_VEH_ROOF~ to enter Stealth Mode when piloting the ~a~. All pilot and passenger weapons are unavailable in Stealth Mode as the ~a~ will not appear on enemy radars or maps. */;
 	}
-	return "STEALTH_OFF_P";
+	return "STEALTH_OFF_P" /* GXT: The Pilot has disabled Stealth Mode. */;
 }
 
 int func_23(bool bParam0, int iParam1, int iParam2)//Position - 0x5BF
@@ -473,7 +473,7 @@ void func_34()//Position - 0x764
 {
 	if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 	{
-		func_35("STEALTH_WARN", 3000);
+		func_35("STEALTH_WARN" /* GXT: All pilot and passenger weapons are unavailable while the vehicle is in Stealth Mode. */, 3000);
 	}
 }
 
@@ -597,9 +597,9 @@ char* func_41(int* iParam0)//Position - 0x9D9
 {
 	if (func_52(iParam0))
 	{
-		return "STEALTH_ON";
+		return "STEALTH_ON" /* GXT: Press ~INPUT_VEH_ROOF~ to disable Stealth Mode. */;
 	}
-	return "STEALTH_ON_P";
+	return "STEALTH_ON_P" /* GXT: The Pilot has turned on Stealth Mode. All pilot and passenger weapons are unavailable as the ~a~ will not appear on enemy radars or maps. */;
 }
 
 void func_42(int* iParam0, int iParam1)//Position - 0x9F6

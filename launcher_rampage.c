@@ -405,7 +405,7 @@ void func_1(var* uParam0, struct<3> Param1)//Position - 0x12B
 		}
 		else
 		{
-			if (func_2("RAMP_HELP_TRIG"))
+			if (func_2("RAMP_HELP_TRIG" /* GXT: Press ~INPUT_CONTEXT~ to start this Rampage. */))
 			{
 				HUD::CLEAR_HELP(true);
 			}
@@ -6602,7 +6602,7 @@ void func_113(int iParam0, var uParam1)//Position - 0x8DAF
 			break;
 		
 		case 5:
-			func_114(uParam1, "Barry3A", func_12(iParam0), 1, 1, 0, 1199.27f, -1255.63f, 34.23f, 381, "BARSTASH", 84, 0, "", 166, 0, 7, 4, 2, 0, 2359, func_115(iParam0), 0, 1);
+			func_114(uParam1, "Barry3A", func_12(iParam0), 1, 1, 0, 1199.27f, -1255.63f, 34.23f, 381, "BARSTASH" /* GXT: Areas where you can find vehicles with a hidden stash have been marked on the map. Collect these vehicles for Barry. */, 84, 0, "", 166, 0, 7, 4, 2, 0, 2359, func_115(iParam0), 0, 1);
 			break;
 		
 		case 6:
@@ -6614,7 +6614,7 @@ void func_113(int iParam0, var uParam1)//Position - 0x8DAF
 			break;
 		
 		case 8:
-			func_114(uParam1, "Dreyfuss1", func_12(iParam0), 0, 2, 4, -1458.97f, 485.99f, 115.38f, 66, "LETTERS_HINT", 106, 0, "", 0, 0, -1, 4, 2, 0, 2359, func_115(iParam0), 0, 0);
+			func_114(uParam1, "Dreyfuss1", func_12(iParam0), 0, 2, 4, -1458.97f, 485.99f, 115.38f, 66, "LETTERS_HINT" /* GXT: The killer's identity and location have been revealed. */, 106, 0, "", 0, 0, -1, 4, 2, 0, 2359, func_115(iParam0), 0, 0);
 			break;
 		
 		case 9:
@@ -6734,7 +6734,7 @@ void func_113(int iParam0, var uParam1)//Position - 0x8DAF
 			break;
 		
 		case 38:
-			func_114(uParam1, "Nigel1A", func_12(iParam0), 0, 12, 1, -558.65f, 284.49f, 90.86f, 149, "NIGITEMS", 100, 0, "", 0, 0, 42, 4, 4, 0, 2359, func_115(iParam0), 1, 1);
+			func_114(uParam1, "Nigel1A", func_12(iParam0), 0, 12, 1, -558.65f, 284.49f, 90.86f, 149, "NIGITEMS" /* GXT: Areas where you can find celebrity items have been marked on the map. Steal these items for Nigel and Mrs. Thornhill. */, 100, 0, "", 0, 0, 42, 4, 4, 0, 2359, func_115(iParam0), 1, 1);
 			break;
 		
 		case 39:
@@ -6778,7 +6778,7 @@ void func_113(int iParam0, var uParam1)//Position - 0x8DAF
 			break;
 		
 		case 49:
-			func_114(uParam1, "Paparazzo3A", func_12(iParam0), 0, 14, 2, 305.52f, 157.19f, 102.94f, 389, "PAPPHOTO", 102, 0, "", 0, 0, 51, 4, 2, 0, 2359, func_115(iParam0), 0, 1);
+			func_114(uParam1, "Paparazzo3A", func_12(iParam0), 0, 14, 2, 305.52f, 157.19f, 102.94f, 389, "PAPPHOTO" /* GXT: Areas where you can find celebrity photo opportunities have been marked on the map. Track down and photograph these celebrities for Beverly. */, 102, 0, "", 0, 0, 51, 4, 2, 0, 2359, func_115(iParam0), 0, 1);
 			break;
 		
 		case 50:
@@ -6814,7 +6814,7 @@ void func_113(int iParam0, var uParam1)//Position - 0x8DAF
 			break;
 		
 		case 58:
-			func_114(uParam1, "Tonya1", func_12(iParam0), 0, 17, 4, -14.39f, -1472.69f, 29.58f, 66, "AM_H_RCFS", -1, 0, "ambient_TonyaCall", 24, 1, 59, 4, 2, 0, 2359, func_115(iParam0), 0, 1);
+			func_114(uParam1, "Tonya1", func_12(iParam0), 0, 17, 4, -14.39f, -1472.69f, 29.58f, 66, "AM_H_RCFS" /* GXT: Strangers and Freaks can be found throughout San Andreas at ~HUD_COLOUR_FRANKLIN~~BLIP_RANDOM_CHARACTER~~s~ */, -1, 0, "ambient_TonyaCall", 24, 1, 59, 4, 2, 0, 2359, func_115(iParam0), 0, 1);
 			break;
 		
 		case 59:
@@ -9997,7 +9997,7 @@ bool func_222()//Position - 0xD59E
 		if (iLocal_243)
 		{
 			HUD::CLEAR_HELP(true);
-			func_226("RAMP_HELP_CRIM", -1);
+			func_226("RAMP_HELP_CRIM" /* GXT: Rampages can't be triggered while wanted. Lose your wanted rating! */, -1);
 			iLocal_243 = 0;
 		}
 		bVar0 = true;
@@ -10007,14 +10007,14 @@ bool func_222()//Position - 0xD59E
 		if (iLocal_242)
 		{
 			HUD::CLEAR_HELP(true);
-			func_226("RAMP_HELP_FOOT", -1);
+			func_226("RAMP_HELP_FOOT" /* GXT: This rampage has to be triggered on-foot. */, -1);
 			iLocal_242 = 0;
 		}
 		bVar0 = true;
 	}
 	else if ((func_225(0) || STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS()) || func_224())
 	{
-		if (func_2("RAMP_HELP_TRIG"))
+		if (func_2("RAMP_HELP_TRIG" /* GXT: Press ~INPUT_CONTEXT~ to start this Rampage. */))
 		{
 			if (func_225(0))
 			{
@@ -10034,10 +10034,10 @@ bool func_222()//Position - 0xD59E
 	{
 		if (!iLocal_244)
 		{
-			if (!func_2("RAMP_HELP_TRIG"))
+			if (!func_2("RAMP_HELP_TRIG" /* GXT: Press ~INPUT_CONTEXT~ to start this Rampage. */))
 			{
 				HUD::CLEAR_HELP(true);
-				func_223("RAMP_HELP_TRIG");
+				func_223("RAMP_HELP_TRIG" /* GXT: Press ~INPUT_CONTEXT~ to start this Rampage. */);
 			}
 			iLocal_244 = 1;
 		}
@@ -19701,7 +19701,7 @@ void func_309(char* sParam0, char[8] cParam1, char[4] cParam2, char[4] cParam3, 
 		
 		case joaat("GSA_TYPE_FW1"):
 		case joaat("GSA_TYPE_FW"):
-			StringCopy(&cParam1, "GSA_TYPE_FW", 16);
+			StringCopy(&cParam1, "GSA_TYPE_FW" /* GXT: Fireworks */, 16);
 			break;
 	}
 	StringCopy(sParam0, "", 64);
@@ -19917,15 +19917,15 @@ void func_309(char* sParam0, char[8] cParam1, char[4] cParam2, char[4] cParam3, 
 				switch (iParam4)
 				{
 					case joaat("fcr2"):
-						StringCopy(&cParam1, "FCR2", 16);
+						StringCopy(&cParam1, "FCR2" /* GXT: FCR 1000 Custom */, 16);
 						break;
 					
 					case joaat("diablous2"):
-						StringCopy(&cParam1, "DIABLOUS2", 16);
+						StringCopy(&cParam1, "DIABLOUS2" /* GXT: Diabolus Custom */, 16);
 						break;
 					
 					case joaat("comet3"):
-						StringCopy(&cParam1, "COMET3", 16);
+						StringCopy(&cParam1, "COMET3" /* GXT: Comet Retro Custom */, 16);
 						break;
 					
 					default:
@@ -20472,50 +20472,50 @@ char* func_314(int iParam0, int iParam1)//Position - 0x1AB1A
 		switch (iParam0)
 		{
 			case joaat("COMPONENT_KNUCKLE_VARMOD_BASE"):
-				return "WT_KNUCKLE";
+				return "WT_KNUCKLE" /* GXT: Knuckle Duster */;
 				break;
 			
 			case joaat("COMPONENT_KNUCKLE_VARMOD_PIMP"):
-				return "WCT_KNUCK_02";
+				return "WCT_KNUCK_02" /* GXT: The Pimp */;
 				break;
 			
 			case joaat("COMPONENT_KNUCKLE_VARMOD_BALLAS"):
-				return "WCT_KNUCK_BG";
+				return "WCT_KNUCK_BG" /* GXT: The Ballas */;
 				break;
 			
 			case joaat("COMPONENT_KNUCKLE_VARMOD_DOLLAR"):
-				return "WCT_KNUCK_DLR";
+				return "WCT_KNUCK_DLR" /* GXT: The Hustler */;
 				break;
 			
 			case joaat("COMPONENT_KNUCKLE_VARMOD_DIAMOND"):
-				return "WCT_KNUCK_DMD";
+				return "WCT_KNUCK_DMD" /* GXT: The Rock */;
 				break;
 			
 			case joaat("COMPONENT_KNUCKLE_VARMOD_HATE"):
-				return "WCT_KNUCK_HT";
+				return "WCT_KNUCK_HT" /* GXT: The Hater */;
 				break;
 			
 			case joaat("COMPONENT_KNUCKLE_VARMOD_LOVE"):
-				return "WCT_KNUCK_LV";
+				return "WCT_KNUCK_LV" /* GXT: The Lover */;
 				break;
 			
 			case joaat("COMPONENT_KNUCKLE_VARMOD_PLAYER"):
-				return "WCT_KNUCK_PC";
+				return "WCT_KNUCK_PC" /* GXT: The Player */;
 				break;
 			
 			case joaat("COMPONENT_KNUCKLE_VARMOD_KING"):
-				return "WCT_KNUCK_SLG";
+				return "WCT_KNUCK_SLG" /* GXT: The King */;
 				break;
 			
 			case joaat("COMPONENT_KNUCKLE_VARMOD_VAGOS"):
-				return "WCT_KNUCK_VG";
+				return "WCT_KNUCK_VG" /* GXT: The Vagos */;
 				break;
 			}
 	}
 	switch (iParam0)
 	{
 		case 0:
-			return "WCT_NONE";
+			return "WCT_NONE" /* GXT: No Attachment */;
 			break;
 		
 		case joaat("COMPONENT_AT_RAILCOVER_01"):
@@ -20523,439 +20523,439 @@ char* func_314(int iParam0, int iParam1)//Position - 0x1AB1A
 			break;
 		
 		case joaat("COMPONENT_AT_AR_AFGRIP"):
-			return "WCT_GRIP";
+			return "WCT_GRIP" /* GXT: Grip */;
 			break;
 		
 		case joaat("COMPONENT_AT_PI_FLSH"):
-			return "WCT_FLASH";
+			return "WCT_FLASH" /* GXT: Flashlight */;
 			break;
 		
 		case joaat("COMPONENT_AT_AR_FLSH"):
-			return "WCT_FLASH";
+			return "WCT_FLASH" /* GXT: Flashlight */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_MACRO"):
-			return "WCT_SCOPE_MAC";
+			return "WCT_SCOPE_MAC" /* GXT: Scope */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_MACRO_02"):
-			return "WCT_SCOPE_MAC";
+			return "WCT_SCOPE_MAC" /* GXT: Scope */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_SMALL"):
-			return "WCT_SCOPE_SML";
+			return "WCT_SCOPE_SML" /* GXT: Scope */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_SMALL_02"):
-			return "WCT_SCOPE_SML";
+			return "WCT_SCOPE_SML" /* GXT: Scope */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_MEDIUM"):
-			return "WCT_SCOPE_MED";
+			return "WCT_SCOPE_MED" /* GXT: Scope */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_LARGE"):
-			return "WCT_SCOPE_LRG";
+			return "WCT_SCOPE_LRG" /* GXT: Scope */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_MAX"):
-			return "WCT_SCOPE_MAX";
+			return "WCT_SCOPE_MAX" /* GXT: Advanced Scope */;
 			break;
 		
 		case joaat("COMPONENT_AT_PI_SUPP"):
-			return "WCT_SUPP";
+			return "WCT_SUPP" /* GXT: Suppressor */;
 			break;
 		
 		case joaat("COMPONENT_AT_AR_SUPP"):
-			return "WCT_SUPP";
+			return "WCT_SUPP" /* GXT: Suppressor */;
 			break;
 		
 		case joaat("COMPONENT_AT_AR_SUPP_02"):
-			return "WCT_SUPP";
+			return "WCT_SUPP" /* GXT: Suppressor */;
 			break;
 		
 		case joaat("COMPONENT_AT_SR_SUPP"):
-			return "WCT_SUPP";
+			return "WCT_SUPP" /* GXT: Suppressor */;
 			break;
 		
 		case joaat("COMPONENT_PISTOL_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_PISTOL_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_COMBATPISTOL_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_COMBATPISTOL_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_APPISTOL_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_APPISTOL_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_MICROSMG_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_MICROSMG_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_SMG_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_SMG_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTRIFLE_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTRIFLE_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_CARBINERIFLE_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_CARBINERIFLE_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_ADVANCEDRIFLE_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_ADVANCEDRIFLE_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_MG_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_MG_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_COMBATMG_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_COMBATMG_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTSHOTGUN_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTSHOTGUN_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_SNIPERRIFLE_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_HEAVYSNIPER_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_MINIGUN_CLIP_01"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTSMG_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTSMG_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_PISTOL50_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_PISTOL50_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTSNIPER_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTMG_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTMG_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_PROGRAMMABLEAR_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_PROGRAMMABLEAR_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_SNSPISTOL_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_SNSPISTOL_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_VINTAGEPISTOL_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_VINTAGEPISTOL_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_HEAVYSHOTGUN_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_MARKSMANRIFLE_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_HEAVYSHOTGUN_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_MARKSMANRIFLE_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_TACTICALRIFLE_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_TACTICALRIFLE_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_LARGE_FIXED_ZOOM"):
-			return "WCT_SCOPE_LRG";
+			return "WCT_SCOPE_LRG" /* GXT: Scope */;
 			break;
 		
 		case joaat("COMPONENT_AT_PI_SUPP_02"):
-			return "WCT_SUPP";
+			return "WCT_SUPP" /* GXT: Suppressor */;
 			break;
 		
 		case joaat("COMPONENT_COMBATPDW_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_COMBATPDW_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_MARKSMANPISTOL_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_MACHINEPISTOL_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_MACHINEPISTOL_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTRIFLE_VARMOD_LUXE"):
-			return "WCT_VAR_GOLD";
+			return "WCT_VAR_GOLD" /* GXT: Yusuf Amir Luxury Finish */;
 			break;
 		
 		case joaat("COMPONENT_ADVANCEDRIFLE_VARMOD_LUXE"):
-			return "WCT_VAR_METAL";
+			return "WCT_VAR_METAL" /* GXT: Gilded Gun Metal Finish */;
 			break;
 		
 		case joaat("COMPONENT_CARBINERIFLE_VARMOD_LUXE"):
-			return "WCT_VAR_GOLD";
+			return "WCT_VAR_GOLD" /* GXT: Yusuf Amir Luxury Finish */;
 			break;
 		
 		case joaat("COMPONENT_APPISTOL_VARMOD_LUXE"):
-			return "WCT_VAR_METAL";
+			return "WCT_VAR_METAL" /* GXT: Gilded Gun Metal Finish */;
 			break;
 		
 		case joaat("COMPONENT_PISTOL_VARMOD_LUXE"):
-			return "WCT_VAR_GOLD";
+			return "WCT_VAR_GOLD" /* GXT: Yusuf Amir Luxury Finish */;
 			break;
 		
 		case joaat("COMPONENT_PISTOL50_VARMOD_LUXE"):
-			return "WCT_VAR_SIL";
+			return "WCT_VAR_SIL" /* GXT: Platinum Pearl Deluxe Finish */;
 			break;
 		
 		case joaat("COMPONENT_HEAVYPISTOL_VARMOD_LUXE"):
-			return "WCT_VAR_WOOD";
+			return "WCT_VAR_WOOD" /* GXT: Etched Wood Grip Finish */;
 			break;
 		
 		case joaat("COMPONENT_SMG_VARMOD_LUXE"):
-			return "WCT_VAR_GOLD";
+			return "WCT_VAR_GOLD" /* GXT: Yusuf Amir Luxury Finish */;
 			break;
 		
 		case joaat("COMPONENT_MICROSMG_VARMOD_LUXE"):
-			return "WCT_VAR_GOLD";
+			return "WCT_VAR_GOLD" /* GXT: Yusuf Amir Luxury Finish */;
 			break;
 		
 		case joaat("COMPONENT_SAWNOFFSHOTGUN_VARMOD_LUXE"):
-			return "WCT_VAR_METAL";
+			return "WCT_VAR_METAL" /* GXT: Gilded Gun Metal Finish */;
 			break;
 		
 		case joaat("COMPONENT_SNIPERRIFLE_VARMOD_LUXE"):
-			return "WCT_VAR_WOOD";
+			return "WCT_VAR_WOOD" /* GXT: Etched Wood Grip Finish */;
 			break;
 		
 		case joaat("COMPONENT_MARKSMANRIFLE_VARMOD_LUXE"):
-			return "WCT_VAR_GOLD";
+			return "WCT_VAR_GOLD" /* GXT: Yusuf Amir Luxury Finish */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTSMG_VARMOD_LOWRIDER"):
-			return "WCT_VAR_GOLD";
+			return "WCT_VAR_GOLD" /* GXT: Yusuf Amir Luxury Finish */;
 			break;
 		
 		case joaat("COMPONENT_BULLPUPRIFLE_VARMOD_LOW"):
-			return "WCT_VAR_METAL";
+			return "WCT_VAR_METAL" /* GXT: Gilded Gun Metal Finish */;
 			break;
 		
 		case joaat("COMPONENT_COMBATMG_VARMOD_LOWRIDER"):
-			return "WCT_VAR_ETCHM";
+			return "WCT_VAR_ETCHM" /* GXT: Etched Gun Metal Finish */;
 			break;
 		
 		case joaat("COMPONENT_COMBATPISTOL_VARMOD_LOWRIDER"):
-			return "WCT_VAR_GOLD";
+			return "WCT_VAR_GOLD" /* GXT: Yusuf Amir Luxury Finish */;
 			break;
 		
 		case joaat("COMPONENT_MG_VARMOD_LOWRIDER"):
-			return "WCT_VAR_GOLD";
+			return "WCT_VAR_GOLD" /* GXT: Yusuf Amir Luxury Finish */;
 			break;
 		
 		case joaat("COMPONENT_PUMPSHOTGUN_VARMOD_LOWRIDER"):
-			return "WCT_VAR_GOLD";
+			return "WCT_VAR_GOLD" /* GXT: Yusuf Amir Luxury Finish */;
 			break;
 		
 		case joaat("COMPONENT_SNSPISTOL_VARMOD_LOWRIDER"):
-			return "WCT_VAR_WOOD";
+			return "WCT_VAR_WOOD" /* GXT: Etched Wood Grip Finish */;
 			break;
 		
 		case joaat("COMPONENT_SPECIALCARBINE_VARMOD_LOWRIDER"):
-			return "WCT_VAR_ETCHM";
+			return "WCT_VAR_ETCHM" /* GXT: Etched Gun Metal Finish */;
 			break;
 		
 		case joaat("COMPONENT_SWITCHBLADE_VARMOD_BASE"):
-			return "WCT_SB_BASE";
+			return "WCT_SB_BASE" /* GXT: Default Handle */;
 			break;
 		
 		case joaat("COMPONENT_SWITCHBLADE_VARMOD_VAR1"):
-			return "WCT_SB_VAR1";
+			return "WCT_SB_VAR1" /* GXT: VIP Variant */;
 			break;
 		
 		case joaat("COMPONENT_SWITCHBLADE_VARMOD_VAR2"):
-			return "WCT_SB_VAR2";
+			return "WCT_SB_VAR2" /* GXT: Bodyguard Variant */;
 			break;
 		
 		case joaat("COMPONENT_REVOLVER_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_REVOLVER_VARMOD_BOSS"):
-			return "WCT_REV_VARB";
+			return "WCT_REV_VARB" /* GXT: VIP Variant */;
 			break;
 		
 		case joaat("COMPONENT_REVOLVER_VARMOD_GOON"):
-			return "WCT_REV_VARG";
+			return "WCT_REV_VARG" /* GXT: Bodyguard Variant */;
 			break;
 		
 		case joaat("COMPONENT_SMG_CLIP_03"):
-			return "WCT_CLIP_DRM";
+			return "WCT_CLIP_DRM" /* GXT: Drum magazine */;
 			break;
 		
 		case joaat("COMPONENT_CARBINERIFLE_CLIP_03"):
-			return "WCT_CLIP_BOX";
+			return "WCT_CLIP_BOX" /* GXT: Box magazine */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTRIFLE_CLIP_03"):
-			return "WCT_CLIP_DRM";
+			return "WCT_CLIP_DRM" /* GXT: Drum magazine */;
 			break;
 		
 		case joaat("COMPONENT_HEAVYSHOTGUN_CLIP_03"):
-			return "WCT_CLIP_DRM";
+			return "WCT_CLIP_DRM" /* GXT: Drum magazine */;
 			break;
 		
 		case joaat("COMPONENT_GUNRUN_MK2_UPGRADE"):
-			return "WCT_VAR_GUN";
+			return "WCT_VAR_GUN" /* GXT: Mk II */;
 			break;
 		
 		case joaat("COMPONENT_MARKSMANRIFLE_MK2_CAMO_IND_01"):
-			return "WCT_CAMO_IND";
+			return "WCT_CAMO_IND" /* GXT: Patriotic */;
 			break;
 		
 		case joaat("COMPONENT_SNSPISTOL_MK2_CAMO_IND_01"):
-			return "WCT_CAMO_IND";
+			return "WCT_CAMO_IND" /* GXT: Patriotic */;
 			break;
 		
 		case joaat("COMPONENT_SNSPISTOL_MK2_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_MACRO_02_MK2"):
-			return "WCT_SCOPE_MAC2";
+			return "WCT_SCOPE_MAC2" /* GXT: Small Scope */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_SMALL_MK2"):
-			return "WCT_SCOPE_SML2";
+			return "WCT_SCOPE_SML2" /* GXT: Medium Scope */;
 			break;
 		
 		case joaat("COMPONENT_RAYPISTOL_VARMOD_XMAS18"):
-			return "WCT_VAR_RAY18";
+			return "WCT_VAR_RAY18" /* GXT: Festive tint */;
 			break;
 		
 		case joaat("COMPONENT_CERAMICPISTOL_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_CERAMICPISTOL_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_CERAMICPISTOL_SUPP"):
-			return "WCT_SUPP";
+			return "WCT_SUPP" /* GXT: Suppressor */;
 			break;
 		
 		case joaat("COMPONENT_HEAVYRIFLE_CAMO1"):
-			return "WCT_VAR_FAM";
+			return "WCT_VAR_FAM" /* GXT: Families Finish */;
 			break;
 		
 		case joaat("COMPONENT_MICROSMG_VARMOD_SECURITY"):
-			return "WCT_VAR_WEED";
+			return "WCT_VAR_WEED" /* GXT: Organics Finish */;
 			break;
 		
 		case joaat("COMPONENT_APPISTOL_VARMOD_SECURITY"):
-			return "WCT_VAR_STUD";
+			return "WCT_VAR_STUD" /* GXT: Record A Finish */;
 			break;
 		
 		case joaat("COMPONENT_PUMPSHOTGUN_VARMOD_SECURITY"):
-			return "WCT_VAR_BONE";
+			return "WCT_VAR_BONE" /* GXT: Bone Finish */;
 			break;
 		
 		default:
@@ -24547,7 +24547,7 @@ void func_360(var* uParam0, bool bParam1)//Position - 0x1EF28
 	}
 	if (iLocal_244)
 	{
-		if (func_2("RAMP_HELP_TRIG"))
+		if (func_2("RAMP_HELP_TRIG" /* GXT: Press ~INPUT_CONTEXT~ to start this Rampage. */))
 		{
 			HUD::CLEAR_HELP(true);
 			iLocal_244 = 0;

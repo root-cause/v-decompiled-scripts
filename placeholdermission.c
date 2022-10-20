@@ -122,15 +122,15 @@ void func_4()//Position - 0x16B
 			switch (func_5())
 			{
 				case 0:
-					StringCopy(&Global_78551, "CMN_MARRE", 16);
+					StringCopy(&Global_78551, "CMN_MARRE" /* GXT: ~s~Michael was arrested. */, 16);
 					break;
 				
 				case 1:
-					StringCopy(&Global_78551, "CMN_FARRE", 16);
+					StringCopy(&Global_78551, "CMN_FARRE" /* GXT: ~s~Franklin was arrested. */, 16);
 					break;
 				
 				case 2:
-					StringCopy(&Global_78551, "CMN_TARRE", 16);
+					StringCopy(&Global_78551, "CMN_TARRE" /* GXT: ~s~Trevor was arrested. */, 16);
 					break;
 			}
 			StringCopy(&Global_78555, "", 16);
@@ -144,15 +144,15 @@ void func_4()//Position - 0x16B
 			switch (func_5())
 			{
 				case 0:
-					StringCopy(&Global_78551, "CMN_MDIED", 16);
+					StringCopy(&Global_78551, "CMN_MDIED" /* GXT: ~s~Michael died. */, 16);
 					break;
 				
 				case 1:
-					StringCopy(&Global_78551, "CMN_FDIED", 16);
+					StringCopy(&Global_78551, "CMN_FDIED" /* GXT: ~s~Franklin died. */, 16);
 					break;
 				
 				case 2:
-					StringCopy(&Global_78551, "CMN_TDIED", 16);
+					StringCopy(&Global_78551, "CMN_TDIED" /* GXT: ~s~Trevor died. */, 16);
 					break;
 			}
 			StringCopy(&Global_78555, "", 16);

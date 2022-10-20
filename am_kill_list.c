@@ -9035,7 +9035,7 @@ void func_166(bool bParam0)//Position - 0xC56A
 		}
 		if (HUD::DOES_BLIP_EXIST(Local_103[bVar0 /*8*/]))
 		{
-			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(Local_103[bVar0 /*8*/], "UW_BLIP2");
+			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(Local_103[bVar0 /*8*/], "UW_BLIP2" /* GXT: Merryweather */);
 			if (bParam0)
 			{
 			}
@@ -9046,7 +9046,7 @@ void func_166(bool bParam0)//Position - 0xC56A
 		}
 		if (HUD::DOES_BLIP_EXIST(Local_103[bVar0 /*8*/].f_1))
 		{
-			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(Local_103[bVar0 /*8*/].f_1, "UW_BLIP2");
+			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(Local_103[bVar0 /*8*/].f_1, "UW_BLIP2" /* GXT: Merryweather */);
 			if (bParam0)
 			{
 			}
@@ -9371,13 +9371,13 @@ void func_171(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, b
 	}
 	func_181();
 	func_180();
-	StringCopy(&Var0, "HUD_TEAM", 64);
+	StringCopy(&Var0, "HUD_TEAM" /* GXT: TEAM */, 64);
 	if (bParam5)
 	{
 		func_177(iParam0, &Var0, -1, iParam7, 5, 1, "", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 255, 0, 0, 0, 0, 1, -1);
 	}
-	func_176(iParam1, iParam2, "UW_KLL", -1, 1, 4, 0, 0, 0, 0, 1, 1, 1, 0, 255, 0);
-	sVar1 = "HUD_COUNTDOWN";
+	func_176(iParam1, iParam2, "UW_KLL" /* GXT: KILLS */, -1, 1, 4, 0, 0, 0, 0, 1, 1, 1, 0, 255, 0);
+	sVar1 = "HUD_COUNTDOWN" /* GXT: EVENT END */;
 	if (!func_175(sParam6))
 	{
 		sVar1 = sParam6;
@@ -9659,10 +9659,10 @@ void func_185(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4,
 	func_181();
 	if (bParam6)
 	{
-		func_177(iParam1, sParam0, -1, 1, 5, 1, "HUD_NUMKILLS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
+		func_177(iParam1, sParam0, -1, 1, 5, 1, "HUD_NUMKILLS" /* GXT: ~1~ kills */, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
 	}
-	func_176(iParam2, iParam3, "UW_KLL", -1, 1, 4, 0, 0, 0, 0, 1, 1, 1, 0, 255, 0);
-	sVar0 = "HUD_COUNTDOWN";
+	func_176(iParam2, iParam3, "UW_KLL" /* GXT: KILLS */, -1, 1, 4, 0, 0, 0, 0, 1, 1, 1, 0, 255, 0);
+	sVar0 = "HUD_COUNTDOWN" /* GXT: EVENT END */;
 	if (!func_175(sParam7))
 	{
 		sVar0 = sParam7;
@@ -9725,7 +9725,7 @@ void func_186(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 		}
 		func_177(iParam6, &Var0, -1, iVar4, 4, 1, "", 0, 0, 0, 0, iVar4, 0, 0, 0, 0, 0, 1, 0, 255, 0, 0, 0, 0, 1, -1);
 	}
-	sVar5 = "HUD_COUNTDOWN";
+	sVar5 = "HUD_COUNTDOWN" /* GXT: EVENT END */;
 	if (!func_175(sParam10))
 	{
 		sVar5 = sParam10;
@@ -9737,7 +9737,7 @@ struct<16> func_187(int iParam0)//Position - 0xD52C
 {
 	struct<16> Var0;
 	
-	StringConCat(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HUD_TEAM"), 64);
+	StringConCat(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HUD_TEAM" /* GXT: TEAM */), 64);
 	StringConCat(&Var0, " ", 64);
 	StringIntConCat(&Var0, iParam0, 64);
 	return Var0;
@@ -9793,7 +9793,7 @@ void func_188(char* sParam0, int iParam1, char* sParam2, int iParam3, char* sPar
 		}
 		func_177(iParam11, sParam6, -1, 1, 4, 1, "", 0, 0, 0, 0, iVar3, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
 	}
-	sVar4 = "HUD_COUNTDOWN";
+	sVar4 = "HUD_COUNTDOWN" /* GXT: EVENT END */;
 	if (!func_175(sParam14))
 	{
 		sVar4 = sParam14;
@@ -9803,102 +9803,102 @@ void func_188(char* sParam0, int iParam1, char* sParam2, int iParam3, char* sPar
 
 char* func_189()//Position - 0xD676
 {
-	return "HUD_COUNTDOWN";
+	return "HUD_COUNTDOWN" /* GXT: EVENT END */;
 	switch (func_191(PLAYER::PLAYER_ID()))
 	{
 		case 131:
-			return "AET_HOT_TARG";
+			return "AET_HOT_TARG" /* GXT: MOVING TARGET END */;
 		
 		case 132:
-			return "AET_CHK_COLL";
+			return "AET_CHK_COLL" /* GXT: CHECKPOINTS END */;
 		
 		case 133:
 			switch (func_190())
 			{
 				case 0:
-					return "AET_CHALL_LJ";
+					return "AET_CHALL_LJ" /* GXT: LONGEST JUMP CHALLENGE END */;
 				
 				case 1:
-					return "AET_CHALL_LS";
+					return "AET_CHALL_LS" /* GXT: LONGEST FREEFALL CHALLENGE END */;
 				
 				case 2:
-					return "AET_CHALL_HS";
+					return "AET_CHALL_HS" /* GXT: HIGHEST SPEED CHALLENGE END */;
 				
 				case 3:
-					return "AET_CHALL_LST";
+					return "AET_CHALL_LST" /* GXT: LONGEST STOPPIE CHALLENGE END */;
 				
 				case 4:
-					return "AET_CHALL_LW";
+					return "AET_CHALL_LW" /* GXT: LONGEST WHEELIE CHALLENGE END */;
 				
 				case 5:
-					return "AET_CHALL_NC";
+					return "AET_CHALL_NC" /* GXT: NO CRASHES CHALLENGE END */;
 				
 				case 6:
-					return "AET_CHALL_LP";
+					return "AET_CHALL_LP" /* GXT: LOWEST PARACHUTE CHALLENGE END */;
 				
 				case 7:
-					return "AET_CHALL_VS";
+					return "AET_CHALL_VS" /* GXT: VEHICLES STOLEN CHALLENGE END */;
 				
 				case 8:
-					return "AET_CHALL_NM";
+					return "AET_CHALL_NM" /* GXT: NEAR MISSES CHALLENGE END */;
 				
 				case 9:
-					return "AET_CHALL_RD";
+					return "AET_CHALL_RD" /* GXT: REVERSE DRIVING CHALLENGE END */;
 				
 				case 10:
-					return "AET_CHALL_LF";
+					return "AET_CHALL_LF" /* GXT: LONGEST FALL SURVIVED CHALLENGE END */;
 				
 				case 11:
-					return "AET_CHALL_LFL";
+					return "AET_CHALL_LFL" /* GXT: LOW FLYING CHALLENGE END */;
 				
 				case 12:
-					return "AET_CHALL_LFI";
+					return "AET_CHALL_LFI" /* GXT: LOW FLYING INVERTED CHALLENGE END */;
 				
 				case 13:
-					return "AET_CHALL_LB";
+					return "AET_CHALL_LB" /* GXT: LONGEST BAIL CHALLENGE END */;
 				
 				case 14:
-					return "AET_CHALL_MB";
+					return "AET_CHALL_MB" /* GXT: MOST BRIDGES CHALLENGE END */;
 				
 				case 15:
-					return "AET_CHALL_HSH";
+					return "AET_CHALL_HSH" /* GXT: HEADSHOTS CHALLENGE END */;
 				
 				case 16:
-					return "AET_CHALL_DB";
+					return "AET_CHALL_DB" /* GXT: DRIVE-BY CHALLENGE END */;
 				
 				case 17:
-					return "AET_CHALL_ML";
+					return "AET_CHALL_ML" /* GXT: MELEE CHALLENGE END */;
 				
 				case 18:
-					return "AET_CHALL_LSN";
+					return "AET_CHALL_LSN" /* GXT: SNIPER KILLS CHALLENGE END */;
 				
 				default:
 			}
 			break;
 		
 		case 136:
-			return "AET_PENNED";
+			return "AET_PENNED" /* GXT: PENNED IN END */;
 		
 		case 138:
-			return "AET_PARCEL";
+			return "AET_PARCEL" /* GXT: HOLD THE WHEEL END */;
 		
 		case 139:
-			return "AET_PROPERTY";
+			return "AET_PROPERTY" /* GXT: HOT PROPERTY END */;
 		
 		case 140:
-			return "AET_DDROP";
+			return "AET_DDROP" /* GXT: DEAD DROP END */;
 		
 		case 141:
-			return "AET_KCASTLE";
+			return "AET_KCASTLE" /* GXT: KING OF THE CASTLE END */;
 		
 		case 144:
-			return "AET_BLAST";
+			return "AET_BLAST" /* GXT: CRIMINAL DAMAGE END */;
 		
 		case 129:
-			return "AET_UWARF";
+			return "AET_UWARF" /* GXT: KILL LIST END */;
 		
 		case 146:
-			return "AET_BEAST";
+			return "AET_BEAST" /* GXT: HUNT THE BEAST END */;
 	}
 	return "";
 }
@@ -10375,11 +10375,11 @@ void func_197(int iParam0)//Position - 0xE166
 						func_198(&(iLocal_102[bVar0]), 29);
 						if (func_768())
 						{
-							HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_102[bVar0], "UW_BLIPC");
+							HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_102[bVar0], "UW_BLIPC" /* GXT: Kill List Competitive */);
 						}
 						else
 						{
-							HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_102[bVar0], "UW_BLIP");
+							HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_102[bVar0], "UW_BLIP" /* GXT: Kill List */);
 						}
 						HUD::SET_BLIP_PRIORITY(iLocal_102[bVar0], 9);
 					}
@@ -10618,7 +10618,7 @@ void func_201(int iParam0, char* sParam1)//Position - 0xE573
 	{
 		return;
 	}
-	sVar0 = "HUD_STARTING";
+	sVar0 = "HUD_STARTING" /* GXT: EVENT START */;
 	if (!func_175(sParam1))
 	{
 		sVar0 = sParam1;
@@ -10631,110 +10631,110 @@ char* func_202(int iParam0)//Position - 0xE5B3
 	char* sVar0;
 	
 	sVar0 = SCRIPT::GET_THIS_SCRIPT_NAME();
-	return "HUD_STARTING";
+	return "HUD_STARTING" /* GXT: EVENT START */;
 	if (MISC::ARE_STRINGS_EQUAL(sVar0, "am_hot_target"))
 	{
-		return "AST_HOT_TARG";
+		return "AST_HOT_TARG" /* GXT: MOVING TARGET START */;
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(sVar0, "am_cp_collection"))
 	{
-		return "AST_CHK_COLL";
+		return "AST_CHK_COLL" /* GXT: CHECKPOINTS START */;
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(sVar0, "am_challenges"))
 	{
 		switch (iParam0)
 		{
 			case 0:
-				return "AST_CHALL_LJ";
+				return "AST_CHALL_LJ" /* GXT: LONGEST JUMP CHALLENGE START */;
 			
 			case 1:
-				return "AST_CHALL_LS";
+				return "AST_CHALL_LS" /* GXT: LONGEST FREEFALL CHALLENGE START */;
 			
 			case 2:
-				return "AST_CHALL_HS";
+				return "AST_CHALL_HS" /* GXT: HIGHEST SPEED CHALLENGE START */;
 			
 			case 3:
-				return "AST_CHALL_LST";
+				return "AST_CHALL_LST" /* GXT: LONGEST STOPPIE CHALLENGE START */;
 			
 			case 4:
-				return "AST_CHALL_LW";
+				return "AST_CHALL_LW" /* GXT: LONGEST WHEELIE CHALLENGE START */;
 			
 			case 5:
-				return "AST_CHALL_NC";
+				return "AST_CHALL_NC" /* GXT: NO CRASHES CHALLENGE START */;
 			
 			case 6:
-				return "AST_CHALL_LP";
+				return "AST_CHALL_LP" /* GXT: LOWEST PARACHUTE CHALLENGE START */;
 			
 			case 7:
-				return "AST_CHALL_VS";
+				return "AST_CHALL_VS" /* GXT: VEHICLES STOLEN CHALLENGE START */;
 			
 			case 8:
-				return "AST_CHALL_NM";
+				return "AST_CHALL_NM" /* GXT: NEAR MISSES CHALLENGE START */;
 			
 			case 9:
-				return "AST_CHALL_RD";
+				return "AST_CHALL_RD" /* GXT: REVERSE DRIVING CHALLENGE START */;
 			
 			case 10:
-				return "AST_CHALL_LF";
+				return "AST_CHALL_LF" /* GXT: LONGEST FALL SURVIVED CHALLENGE START */;
 			
 			case 11:
-				return "AST_CHALL_LFL";
+				return "AST_CHALL_LFL" /* GXT: LOW FLYING CHALLENGE START */;
 			
 			case 12:
-				return "AST_CHALL_LFI";
+				return "AST_CHALL_LFI" /* GXT: LOW FLYING INVERTED CHALLENGE START */;
 			
 			case 13:
-				return "AST_CHALL_LB";
+				return "AST_CHALL_LB" /* GXT: LONGEST BAIL CHALLENGE START */;
 			
 			case 14:
-				return "AST_CHALL_MB";
+				return "AST_CHALL_MB" /* GXT: MOST BRIDGES CHALLENGE START */;
 			
 			case 15:
-				return "AST_CHALL_HSH";
+				return "AST_CHALL_HSH" /* GXT: HEADSHOTS CHALLENGE START */;
 			
 			case 16:
-				return "AST_CHALL_DB";
+				return "AST_CHALL_DB" /* GXT: DRIVE-BY CHALLENGE START */;
 			
 			case 17:
-				return "AST_CHALL_ML";
+				return "AST_CHALL_ML" /* GXT: MELEE CHALLENGE START */;
 			
 			case 18:
-				return "AST_CHALL_LSN";
+				return "AST_CHALL_LSN" /* GXT: SNIPER KILLS CHALLENGE START */;
 			
 			default:
 		}
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(sVar0, "am_penned_in"))
 	{
-		return "AST_PENNED";
+		return "AST_PENNED" /* GXT: PENNED IN START */;
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(sVar0, "am_pass_the_parcel"))
 	{
-		return "AST_PARCEL";
+		return "AST_PARCEL" /* GXT: HOLD THE WHEEL START */;
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(sVar0, "am_hot_property"))
 	{
-		return "AST_PROPERTY";
+		return "AST_PROPERTY" /* GXT: HOT PROPERTY START */;
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(sVar0, "am_dead_drop"))
 	{
-		return "AST_DDROP";
+		return "AST_DDROP" /* GXT: DEAD DROP START */;
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(sVar0, "am_king_of_the_castle"))
 	{
-		return "AST_KCASTLE";
+		return "AST_KCASTLE" /* GXT: KING OF THE CASTLE START */;
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(sVar0, "AM_CRIMINAL_DAMAGE"))
 	{
-		return "AST_BLAST";
+		return "AST_BLAST" /* GXT: CRIMINAL DAMAGE START */;
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(sVar0, "AM_KILL_LIST"))
 	{
-		return "AST_UWARF";
+		return "AST_UWARF" /* GXT: KILL LIST START */;
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(sVar0, "AM_HUNT_THE_BEAST"))
 	{
-		return "AST_BEAST";
+		return "AST_BEAST" /* GXT: HUNT THE BEAST START */;
 	}
 	return "";
 }
@@ -11958,17 +11958,17 @@ bool func_270()//Position - 0xF9EF
 		{
 			if (func_768())
 			{
-				if (!func_277("UW_ABTSC"))
+				if (!func_277("UW_ABTSC" /* GXT: ~HUD_COLOUR_NET_PLAYER2~Kill List Competitive ~s~is about to start. */))
 				{
-					func_271("UW_ABTSC", 0);
+					func_271("UW_ABTSC" /* GXT: ~HUD_COLOUR_NET_PLAYER2~Kill List Competitive ~s~is about to start. */, 0);
 				}
 			}
-			else if (!func_277("UW_ABTS"))
+			else if (!func_277("UW_ABTS" /* GXT: ~HUD_COLOUR_NET_PLAYER2~Kill List ~s~is about to start. */))
 			{
-				func_271("UW_ABTS", 0);
+				func_271("UW_ABTS" /* GXT: ~HUD_COLOUR_NET_PLAYER2~Kill List ~s~is about to start. */, 0);
 			}
 		}
-		else if (func_277("UW_ABTSC") || func_277("UW_ABTS"))
+		else if (func_277("UW_ABTSC" /* GXT: ~HUD_COLOUR_NET_PLAYER2~Kill List Competitive ~s~is about to start. */) || func_277("UW_ABTS" /* GXT: ~HUD_COLOUR_NET_PLAYER2~Kill List ~s~is about to start. */))
 		{
 			func_9();
 		}
@@ -12896,15 +12896,15 @@ void func_296(bool bParam0, char* sParam1, int* iParam2, var uParam3, int iParam
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING(sParam9);
 			if (func_300(uParam3))
 			{
-				func_299("DPAD_FRIEND");
+				func_299("DPAD_FRIEND" /* GXT: F */);
 			}
 			else if (func_298(uParam3))
 			{
-				func_299("DPAD_FRIEND");
+				func_299("DPAD_FRIEND" /* GXT: F */);
 			}
 			else if (func_297(uParam3))
 			{
-				func_299("DPAD_CREW");
+				func_299("DPAD_CREW" /* GXT: C */);
 			}
 			else
 			{
@@ -13218,28 +13218,28 @@ void func_317(int iParam0, int* iParam1, var uParam2, int iParam3, char* sParam4
 				}
 				else if (uParam2->f_108 == 6 && !MISC::IS_STRING_NULL_OR_EMPTY(sParam16))
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_ONE_INT");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_ONE_INT" /* GXT: ~a~ ~1~ */);
 					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam16);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(iParam17);
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				}
 				else if (uParam2->f_108 == 5 && !MISC::IS_STRING_NULL_OR_EMPTY(sParam16))
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_ONE_INT");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_ONE_INT" /* GXT: ~a~ ~1~ */);
 					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam16);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(iParam17);
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				}
 				else if (uParam2->f_108 == 7 && !MISC::IS_STRING_NULL_OR_EMPTY(sParam16))
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_TWO_INT");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_TWO_INT" /* GXT: ~a~ ~a~ ~1~ */);
 					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam16);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(iParam17);
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				}
 				else if (uParam2->f_108 == 8 && !MISC::IS_STRING_NULL_OR_EMPTY(&(uParam2->f_104)))
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_UNIT");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_UNIT" /* GXT: ~1~~a~ */);
 					if (fParam13 != -1f)
 					{
 						HUD::ADD_TEXT_COMPONENT_FLOAT(fParam13, 1);
@@ -13253,7 +13253,7 @@ void func_317(int iParam0, int* iParam1, var uParam2, int iParam3, char* sParam4
 				}
 				else if (uParam2->f_108 == 9)
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_CASH");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_CASH" /* GXT: $~a~ */);
 					HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER(iParam10, true);
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				}
@@ -13261,13 +13261,13 @@ void func_317(int iParam0, int* iParam1, var uParam2, int iParam3, char* sParam4
 				{
 					if (iParam10 == 0)
 					{
-						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_CASH");
+						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_CASH" /* GXT: $~a~ */);
 						HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER(iParam10, true);
 						GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 					}
 					else
 					{
-						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_NG_CASH");
+						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_NG_CASH" /* GXT: -$~a~ */);
 						HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER(iParam10, true);
 						GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 					}
@@ -13324,15 +13324,15 @@ void func_317(int iParam0, int* iParam1, var uParam2, int iParam3, char* sParam4
 				}
 				if (func_300(uParam2))
 				{
-					func_299("DPAD_FRIEND");
+					func_299("DPAD_FRIEND" /* GXT: F */);
 				}
 				else if (func_298(uParam2))
 				{
-					func_299("DPAD_FRIEND");
+					func_299("DPAD_FRIEND" /* GXT: F */);
 				}
 				else if (func_297(uParam2))
 				{
-					func_299("DPAD_CREW");
+					func_299("DPAD_CREW" /* GXT: C */);
 				}
 				else
 				{
@@ -13489,28 +13489,28 @@ char* func_325(int iParam0, bool bParam1, bool bParam2, int iParam3)//Position -
 			{
 				if (bParam1)
 				{
-					return "AMCH_M_LB";
+					return "AMCH_M_LB" /* GXT: m */;
 				}
 				else if (bParam2)
 				{
-					return "AMCH_M";
+					return "AMCH_M" /* GXT: ~1~m */;
 				}
 				else
 				{
-					return "AMCH_METRES";
+					return "AMCH_METRES" /* GXT:  meters */;
 				}
 			}
 			else if (bParam1)
 			{
-				return "AMCH_FT_LB";
+				return "AMCH_FT_LB" /* GXT: ft */;
 			}
 			else if (bParam2)
 			{
-				return "AMCH_FT";
+				return "AMCH_FT" /* GXT: ~1~ft */;
 			}
 			else
 			{
-				return "AMCH_FEET";
+				return "AMCH_FEET" /* GXT:  feet */;
 			}
 			break;
 		
@@ -13519,28 +13519,28 @@ char* func_325(int iParam0, bool bParam1, bool bParam2, int iParam3)//Position -
 			{
 				if (bParam1)
 				{
-					return "AMCH_KMH_LB";
+					return "AMCH_KMH_LB" /* GXT: km/h */;
 				}
 				else if (bParam2)
 				{
-					return "AMCH_KMHN";
+					return "AMCH_KMHN" /* GXT: ~1~km/h */;
 				}
 				else
 				{
-					return "AMCH_KMH";
+					return "AMCH_KMH" /* GXT:  km/h */;
 				}
 			}
 			else if (bParam1)
 			{
-				return "AMCH_MPH_LB";
+				return "AMCH_MPH_LB" /* GXT: mph */;
 			}
 			else if (bParam2)
 			{
-				return "AMCH_MPHN";
+				return "AMCH_MPHN" /* GXT: ~1~mph */;
 			}
 			else
 			{
-				return "AMCH_MPH";
+				return "AMCH_MPH" /* GXT:  mph */;
 			}
 			break;
 		
@@ -13551,7 +13551,7 @@ char* func_325(int iParam0, bool bParam1, bool bParam2, int iParam3)//Position -
 			}
 			else
 			{
-				return "AMCH_VEH";
+				return "AMCH_VEH" /* GXT:  vehicles */;
 			}
 			break;
 		
@@ -13565,11 +13565,11 @@ char* func_325(int iParam0, bool bParam1, bool bParam2, int iParam3)//Position -
 			}
 			else if (iParam3 != 1)
 			{
-				return "AMCH_KILLS";
+				return "AMCH_KILLS" /* GXT:  kills */;
 			}
 			else
 			{
-				return "AMCH_KILL";
+				return "AMCH_KILL" /* GXT:  kill */;
 			}
 			break;
 	}
@@ -13577,7 +13577,7 @@ char* func_325(int iParam0, bool bParam1, bool bParam2, int iParam3)//Position -
 	{
 		return "";
 	}
-	return "AMCH_EMPTY";
+	return "AMCH_EMPTY" /* GXT: ~r~~s~ */;
 }
 
 int func_326(var uParam0, float fParam1, int iParam2, int iParam3)//Position - 0x1158F
@@ -14709,7 +14709,7 @@ void func_384(int* iParam0, char* sParam1, char* sParam2, int iParam3)//Position
 		}
 		else
 		{
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_BRACKT");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_BRACKT" /* GXT: ~a~ (~a~) */);
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam1);
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam2);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -14728,19 +14728,19 @@ char* func_385()//Position - 0x1281A
 	switch (func_348(PLAYER::PLAYER_ID()))
 	{
 		case 163:
-			return "BD_SORT_1";
+			return "BD_SORT_1" /* GXT: Total Value */;
 			break;
 		
 		case 160:
-			return "BD_SORT_4";
+			return "BD_SORT_4" /* GXT: Packages Collected */;
 			break;
 		
 		case 154:
-			return "BD_SORT_3";
+			return "BD_SORT_3" /* GXT: Total Cash */;
 			break;
 		
 		case 155:
-			return "BD_SORT_3";
+			return "BD_SORT_3" /* GXT: Total Cash */;
 			break;
 	}
 	return "";
@@ -14751,254 +14751,254 @@ char* func_386(var uParam0)//Position - 0x12871
 	switch (uParam0->f_112)
 	{
 		case 0:
-			return "GR_DPD_E";
+			return "GR_DPD_E" /* GXT: Steal Cargo */;
 			break;
 		
 		case 1:
-			return "GR_DPD_F";
+			return "GR_DPD_F" /* GXT: Sell Cargo */;
 			break;
 		
 		case 2:
-			return "GR_DPD_S";
+			return "GR_DPD_S" /* GXT: Business Setup */;
 			break;
 	}
 	switch (uParam0->f_110)
 	{
 		case 0:
-			return "GR_DPD_A";
+			return "GR_DPD_A" /* GXT: Business Setup */;
 			break;
 		
 		case 1:
-			return "GR_DPD_B";
+			return "GR_DPD_B" /* GXT: Steal Supplies */;
 			break;
 		
 		case 2:
-			return "GR_DPD_C";
+			return "GR_DPD_C" /* GXT: Sell Weapons */;
 			break;
 		
 		case 3:
-			return "GR_DPD_D";
+			return "GR_DPD_D" /* GXT: Defend Business */;
 			break;
 	}
 	switch (func_348(PLAYER::PLAYER_ID()))
 	{
 		case 233:
-			return "H2_DPAD_SET";
+			return "H2_DPAD_SET" /* GXT: Heist Prep */;
 			break;
 		
 		case 180:
-			return "GB_BIGUNLOAD_T";
+			return "GB_BIGUNLOAD_T" /* GXT: Gunrunning */;
 			break;
 		
 		case 182:
-			return "DEAL_DEALN";
+			return "DEAL_DEALN" /* GXT: By the Pound */;
 			break;
 		
 		case 194:
-			return "PI_BIK_13_0";
+			return "PI_BIK_13_0" /* GXT: Rippin' it Up */;
 			break;
 		
 		case 189:
-			return "PI_BIK_4_1";
+			return "PI_BIK_4_1" /* GXT: Race to Point */;
 			break;
 		
 		case 193:
-			return "PI_BIK_13_1";
+			return "PI_BIK_13_1" /* GXT: Hit & Ride */;
 			break;
 		
 		case 205:
-			return "PI_BIK_13_3";
+			return "PI_BIK_13_3" /* GXT: Criminal Mischief */;
 			break;
 		
 		case 186:
-			return "CELL_BIKER_CK";
+			return "CELL_BIKER_CK" /* GXT: Weapon of Choice */;
 			break;
 		
 		case 207:
-			return "DV_SH_TITLE";
+			return "DV_SH_TITLE" /* GXT: Fragile Goods */;
 			break;
 		
 		case 208:
-			return "BA_SH_TITLE";
+			return "BA_SH_TITLE" /* GXT: Torched */;
 			break;
 		
 		case 209:
-			return "SHU_SH_TITLE";
+			return "SHU_SH_TITLE" /* GXT: Outrider */;
 			break;
 		
 		case 210:
-			return "PI_BIK_13_4";
+			return "PI_BIK_13_4" /* GXT: Wheelie Rider */;
 			break;
 		
 		case 183:
-			return "CELL_BIKER_RESC";
+			return "CELL_BIKER_RESC" /* GXT: P.O.W. */;
 			break;
 		
 		case 199:
-			return "CELL_BIKER_SEAR";
+			return "CELL_BIKER_SEAR" /* GXT: Search and Destroy */;
 			break;
 		
 		case 201:
-			return "CELL_BIKER_STAN";
+			return "CELL_BIKER_STAN" /* GXT: Stand Your Ground */;
 			break;
 		
 		case 142:
-			return "PIM_MAGM210";
+			return "PIM_MAGM210" /* GXT: Sightseer */;
 			break;
 		
 		case 163:
-			return "PIM_MAGM608";
+			return "PIM_MAGM608" /* GXT: Auto Buyout */;
 			break;
 		
 		case 160:
-			return "PIM_MAGM604";
+			return "PIM_MAGM604" /* GXT: Due Diligence */;
 			break;
 		
 		case 154:
-			return "PIM_MAGM602";
+			return "PIM_MAGM602" /* GXT: Market Manipulation */;
 			break;
 		
 		case 155:
-			return "PIM_MAGM603";
+			return "PIM_MAGM603" /* GXT: Courier Service */;
 			break;
 		
 		case 148:
 			if (func_389())
 			{
-				return "LBD_BKVBK";
+				return "LBD_BKVBK" /* GXT: Deathmatch */;
 			}
-			return "PIM_MAGM201";
+			return "PIM_MAGM201" /* GXT: Executive Deathmatch */;
 			break;
 		
 		case 151:
 			if (func_388(1))
 			{
-				return "GB_DPAD_BMFD";
+				return "GB_DPAD_BMFD" /* GXT: Marked For Death */;
 			}
-			return "PIM_MAGM202";
+			return "PIM_MAGM202" /* GXT: Put Out a Hit */;
 			break;
 		
 		case 152:
-			return "PIM_MAGM204";
+			return "PIM_MAGM204" /* GXT: Piracy Prevention */;
 			break;
 		
 		case 153:
 			if (func_388(1))
 			{
-				return "PI_BIK_3_2";
+				return "PI_BIK_3_2" /* GXT: On The Run */;
 			}
-			return "PIM_MAGM601";
+			return "PIM_MAGM601" /* GXT: Most Wanted */;
 			break;
 		
 		case 157:
-			return "PIM_MAGM207";
+			return "PIM_MAGM207" /* GXT: Asset Recovery */;
 			break;
 		
 		case 159:
-			return "PIM_MAGM206";
+			return "PIM_MAGM206" /* GXT: Hostile Takeover */;
 			break;
 		
 		case 162:
-			return "PIM_MAGM607";
+			return "PIM_MAGM607" /* GXT: Point to Point */;
 			break;
 		
 		case 164:
-			return "PIM_MAGM212";
+			return "PIM_MAGM212" /* GXT: Executive Search */;
 			break;
 		
 		case 166:
-			return "GB_DPAD_HEAD";
+			return "GB_DPAD_HEAD" /* GXT: Headhunter */;
 		
 		case 167:
-			return "GB_DPAD_BUY";
+			return "GB_DPAD_BUY" /* GXT: Buy Special Cargo */;
 		
 		case 168:
-			return "GB_DPAD_SELL";
+			return "GB_DPAD_SELL" /* GXT: Sell Special Cargo */;
 		
 		case 169:
-			return "GB_DPAD_DEF";
+			return "GB_DPAD_DEF" /* GXT: Defend Special Cargo */;
 		
 		case 170:
-			return "GB_DPAD_AIR";
+			return "GB_DPAD_AIR" /* GXT: Airfreight */;
 		
 		case 171:
-			return "GB_DPAD_CASH";
+			return "GB_DPAD_CASH" /* GXT: Cashing Out */;
 		
 		case 172:
-			return "GB_DPAD_SAL";
+			return "GB_DPAD_SAL" /* GXT: Salvage */;
 		
 		case 173:
-			return "GB_DPAD_FRA";
+			return "GB_DPAD_FRA" /* GXT: Haulage */;
 		
 		case 178:
-			return "VEX_TITLEa";
+			return "VEX_TITLEa" /* GXT: Steal Vehicle */;
 		
 		case 188:
-			return "VEX_TITLEb";
+			return "VEX_TITLEb" /* GXT: Export Vehicle */;
 		
 		case 218:
-			return "FRT_MODE";
+			return "FRT_MODE" /* GXT: Fortified */;
 		
 		case 217:
-			return "FRT_TRNS";
+			return "FRT_TRNS" /* GXT: Transporter */;
 		
 		case 214:
-			return "MODE_PLW";
+			return "MODE_PLW" /* GXT: Plowed */;
 		
 		case 215:
-			return "MODE_FUL";
+			return "MODE_FUL" /* GXT: Fully Loaded */;
 		
 		case 216:
-			return "MODE_AA";
+			return "MODE_AA" /* GXT: Amphibious Assault */;
 		
 		case 219:
-			return "MODE_VEL";
+			return "MODE_VEL" /* GXT: Velocity */;
 		
 		case 220:
-			return "MODE_RMP";
+			return "MODE_RMP" /* GXT: Ramped Up */;
 		
 		case 221:
-			return "MODE_STK";
+			return "MODE_STK" /* GXT: Stockpiling */;
 		
 		case 225:
-			return "GR_TITLEL";
+			return "GR_TITLEL" /* GXT: Gunrunning */;
 		
 		case 226:
-			return "GRS_TITLEL";
+			return "GRS_TITLEL" /* GXT: Gunrunning Sell */;
 		
 		case 227:
-			return "GRD_TITLEL";
+			return "GRD_TITLEL" /* GXT: Gunrunning Defend */;
 		
 		case 195:
-			return "GB_STEAL_T";
+			return "GB_STEAL_T" /* GXT: Nine Tenths Of The Law */;
 		
 		case 198:
-			return "SC_MENU_TITLE";
+			return "SC_MENU_TITLE" /* GXT: Cracked */;
 		
 		case 190:
-			return "GB_DPAD_BSEL";
+			return "GB_DPAD_BSEL" /* GXT: Biker Sell */;
 		
 		case 191:
-			return "GB_DPAD_BDEF";
+			return "GB_DPAD_BDEF" /* GXT: Biker Defend */;
 		
 		case 185:
-			return "GB_DPAD_GFH";
+			return "GB_DPAD_GFH" /* GXT: Guns For Hire */;
 		
 		case 197:
-			return "GB_DPAD_JB";
+			return "GB_DPAD_JB" /* GXT: Jailbreak */;
 		
 		case 179:
-			return "CELL_JOUST";
+			return "CELL_JOUST" /* GXT: Joust */;
 		
 		case 200:
-			return "CAG_BLIP";
+			return "CAG_BLIP" /* GXT: Caged In */;
 		
 		case 192:
 			if (func_387(Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_182))
 			{
-				return "GB_DPAD_BSET";
+				return "GB_DPAD_BSET" /* GXT: Business Setup */;
 			}
-			return "GB_DPAD_BBUY";
+			return "GB_DPAD_BBUY" /* GXT: Resupply */;
 			break;
 	}
 	return "";
@@ -15056,14 +15056,14 @@ void func_393(int* iParam0, char* sParam1, char* sParam2, int iParam3)//Position
 		}
 		else if (func_191(PLAYER::PLAYER_ID()) == 133)
 		{
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_BRACKT_C");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_BRACKT_C" /* GXT: ~a~ Challenge (~a~) */);
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam1);
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam2);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 		}
 		else
 		{
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_BRACKT");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_BRACKT" /* GXT: ~a~ (~a~) */);
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam1);
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam2);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -15095,67 +15095,67 @@ char* func_394(var uParam0)//Position - 0x12DBB
 			return "";
 		
 		case 132:
-			return "FM_AE_SORT_5";
+			return "FM_AE_SORT_5" /* GXT: Points */;
 		
 		case 133:
 			switch (func_190())
 			{
 				case 0:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 1:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 2:
-					return "FM_AE_SORT_3";
+					return "FM_AE_SORT_3" /* GXT: Speed */;
 				
 				case 3:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 4:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 5:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 6:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 7:
-					return "FM_AE_SORT_13";
+					return "FM_AE_SORT_13" /* GXT: Vehicles */;
 				
 				case 8:
-					return "FM_AE_SORT_4";
+					return "FM_AE_SORT_4" /* GXT: Misses */;
 				
 				case 9:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 10:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 11:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 12:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 13:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 14:
-					return "FM_AE_SORT_5";
+					return "FM_AE_SORT_5" /* GXT: Points */;
 				
 				case 15:
-					return "FM_AE_SORT_9";
+					return "FM_AE_SORT_9" /* GXT: Kills */;
 				
 				case 16:
-					return "FM_AE_SORT_9";
+					return "FM_AE_SORT_9" /* GXT: Kills */;
 				
 				case 17:
-					return "FM_AE_SORT_9";
+					return "FM_AE_SORT_9" /* GXT: Kills */;
 				
 				case 18:
-					return "FM_AE_SORT_9";
+					return "FM_AE_SORT_9" /* GXT: Kills */;
 				
 				default:
 			}
@@ -15168,19 +15168,19 @@ char* func_394(var uParam0)//Position - 0x12DBB
 			return "";
 		
 		case 139:
-			return "FM_AE_SORT_10";
+			return "FM_AE_SORT_10" /* GXT: Possession Time */;
 		
 		case 140:
 			return "";
 		
 		case 141:
-			return "FM_AE_SORT_5";
+			return "FM_AE_SORT_5" /* GXT: Points */;
 		
 		case 144:
-			return "FM_AE_SORT_1";
+			return "FM_AE_SORT_1" /* GXT: Destruction Value */;
 		
 		case 129:
-			return "FM_AE_SORT_9";
+			return "FM_AE_SORT_9" /* GXT: Kills */;
 	}
 	return "";
 }
@@ -15200,115 +15200,115 @@ char* func_395(var uParam0)//Position - 0x12F61
 	switch (iVar0)
 	{
 		case 131:
-			return "PIM_TA9";
+			return "PIM_TA9" /* GXT: Moving Target */;
 		
 		case 132:
 			if (func_397() == 0)
 			{
-				return "CPC_TILEL";
+				return "CPC_TILEL" /* GXT: Checkpoints */;
 			}
 			else if (func_397() == 1)
 			{
-				return "CPC_TILELA";
+				return "CPC_TILELA" /* GXT: Air Checkpoints */;
 			}
-			return "PIM_TA0";
+			return "PIM_TA0" /* GXT: Checkpoints */;
 			break;
 		
 		case 133:
 			switch (func_190())
 			{
 				case 0:
-					return "AMCH_0SLC";
+					return "AMCH_0SLC" /* GXT: Longest Jump */;
 				
 				case 1:
-					return "AMCH_1SLC";
+					return "AMCH_1SLC" /* GXT: Longest Freefall */;
 				
 				case 2:
-					return "AMCH_2SLC";
+					return "AMCH_2SLC" /* GXT: Highest Speed */;
 				
 				case 3:
-					return "AMCH_3SLC";
+					return "AMCH_3SLC" /* GXT: Longest Stoppie */;
 				
 				case 4:
-					return "AMCH_4SLC";
+					return "AMCH_4SLC" /* GXT: Longest Wheelie */;
 				
 				case 5:
-					return "AMCH_5SLC";
+					return "AMCH_5SLC" /* GXT: No Crashes */;
 				
 				case 6:
-					return "AMCH_6SLC";
+					return "AMCH_6SLC" /* GXT: Lowest Parachute */;
 				
 				case 7:
-					return "AMCH_7SLC";
+					return "AMCH_7SLC" /* GXT: Vehicles Stolen */;
 				
 				case 8:
-					return "AMCH_8SLC";
+					return "AMCH_8SLC" /* GXT: Near Misses */;
 				
 				case 9:
-					return "AMCH_12SLC";
+					return "AMCH_12SLC" /* GXT: Reverse Driving */;
 				
 				case 10:
-					return "AMCH_13SLC";
+					return "AMCH_13SLC" /* GXT: Longest Fall Survived */;
 				
 				case 11:
-					return "AMCH_15SLC";
+					return "AMCH_15SLC" /* GXT: Low Flying */;
 				
 				case 12:
-					return "AMCH_16SLC";
+					return "AMCH_16SLC" /* GXT: Inverted Flying */;
 				
 				case 13:
-					return "AMCH_23SLC";
+					return "AMCH_23SLC" /* GXT: Longest Bail */;
 				
 				case 14:
-					return "AMCH_9SLC";
+					return "AMCH_9SLC" /* GXT: Fly Under Bridges */;
 				
 				case 15:
-					return "AMCH_19SLC";
+					return "AMCH_19SLC" /* GXT: Headshot Kills */;
 				
 				case 16:
-					return "AMCH_20SLC";
+					return "AMCH_20SLC" /* GXT: Driveby */;
 				
 				case 17:
-					return "AMCH_21SLC";
+					return "AMCH_21SLC" /* GXT: Melee */;
 				
 				case 18:
-					return "AMCH_22SLC";
+					return "AMCH_22SLC" /* GXT: Sniper Kills */;
 				
 				default:
 			}
 			break;
 		
 		case 136:
-			return "PIM_TA10";
+			return "PIM_TA10" /* GXT: Penned In */;
 		
 		case 138:
-			return "PIM_TA4";
+			return "PIM_TA4" /* GXT: Hold the Wheel */;
 		
 		case 139:
-			return "PIM_TA5";
+			return "PIM_TA5" /* GXT: Hot Property */;
 		
 		case 140:
-			return "PIM_TA3";
+			return "PIM_TA3" /* GXT: Dead Drop */;
 		
 		case 141:
-			return "PIM_TA8";
+			return "PIM_TA8" /* GXT: King of the Castle */;
 		
 		case 144:
-			return "PIM_TA2";
+			return "PIM_TA2" /* GXT: Criminal Damage */;
 		
 		case 129:
 			if (func_396() == 1)
 			{
-				return "FM_AE_TITL_12";
+				return "FM_AE_TITL_12" /* GXT: Kill List Competitive */;
 			}
 			else
 			{
-				return "PIM_TA7";
+				return "PIM_TA7" /* GXT: Kill List */;
 			}
 			break;
 		
 		case 146:
-			return "PIM_TA6";
+			return "PIM_TA6" /* GXT: Hunt the Beast */;
 	}
 	return "";
 }
@@ -15361,7 +15361,7 @@ void func_398(int* iParam0, char* sParam1, char* sParam2, bool bParam3, int iPar
 				iVar0 = 1;
 				iVar1 = 2;
 			}
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("LBD_DPD_CNT");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("LBD_DPD_CNT" /* GXT: (~1~/~1~) */);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iVar0);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iVar1);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -15446,7 +15446,7 @@ char* func_403(int iParam0, char* sParam1, bool bParam2)//Position - 0x13327
 	}
 	else if (bParam2)
 	{
-		return "HUD_LBD_IMP";
+		return "HUD_LBD_IMP" /* GXT: One on One Deathmatch */;
 	}
 	else if (iParam0 == 25)
 	{
@@ -15454,7 +15454,7 @@ char* func_403(int iParam0, char* sParam1, bool bParam2)//Position - 0x13327
 		{
 			Global_1836599 = 1;
 		}
-		return "HUD_LBD_OVR";
+		return "HUD_LBD_OVR" /* GXT: Overall Results */;
 	}
 	else if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam1))
 	{
@@ -15475,15 +15475,15 @@ char* func_403(int iParam0, char* sParam1, bool bParam2)//Position - 0x13327
 			case 0:
 			case 31:
 			case 42:
-				return "HUD_LBD_DM";
+				return "HUD_LBD_DM" /* GXT: Deathmatch Leaderboard */;
 				break;
 			
 			case 1:
-				return "HUD_LBD_TDM";
+				return "HUD_LBD_TDM" /* GXT: Team Deathmatch Leaderboard */;
 				break;
 			
 			case 5:
-				return "HUD_LBD_GRCE";
+				return "HUD_LBD_GRCE" /* GXT: GTA Race Leaderboard */;
 				break;
 			
 			case 4:
@@ -15492,11 +15492,11 @@ char* func_403(int iParam0, char* sParam1, bool bParam2)//Position - 0x13327
 			case 6:
 			case 26:
 			case 11:
-				return "HUD_LBD_RCE";
+				return "HUD_LBD_RCE" /* GXT: Race Leaderboard */;
 				break;
 			
 			case 7:
-				return "HUD_LBD_BRCE";
+				return "HUD_LBD_BRCE" /* GXT: Parachute Race Leaderboard */;
 				break;
 			
 			case 18:
@@ -15511,7 +15511,7 @@ char* func_403(int iParam0, char* sParam1, bool bParam2)//Position - 0x13327
 				break;
 			
 			case 3:
-				return "HUD_LBD_HRD";
+				return "HUD_LBD_HRD" /* GXT: Survival Leaderboard */;
 				break;
 			
 			case 22:
@@ -15526,21 +15526,21 @@ char* func_404()//Position - 0x13491
 {
 	if (NETWORK::NETWORK_SESSION_IS_CLOSED_FRIENDS())
 	{
-		return "HUD_LBD_FMF";
+		return "HUD_LBD_FMF" /* GXT: GTA Online (Friend, ~1~) */;
 	}
 	if (NETWORK::NETWORK_SESSION_IS_CLOSED_CREW())
 	{
-		return "HUD_LBD_FMC";
+		return "HUD_LBD_FMC" /* GXT: GTA Online (Crew, ~1~) */;
 	}
 	if (NETWORK::NETWORK_SESSION_IS_SOLO())
 	{
-		return "HUD_LBD_FMS";
+		return "HUD_LBD_FMS" /* GXT: GTA Online (Solo, ~1~) */;
 	}
 	if (NETWORK::NETWORK_SESSION_IS_PRIVATE())
 	{
-		return "HUD_LBD_FMI";
+		return "HUD_LBD_FMI" /* GXT: GTA Online (Invite, ~1~) */;
 	}
-	return "HUD_LBD_FMP";
+	return "HUD_LBD_FMP" /* GXT: GTA Online (Public, ~1~) */;
 }
 
 void func_405()//Position - 0x134D5
@@ -15985,23 +15985,23 @@ struct<4> func_429()//Position - 0x13BF8
 	switch (Local_91.f_27)
 	{
 		case joaat("rhino"):
-			StringCopy(&Var0, "UW_TMRHN", 16);
+			StringCopy(&Var0, "UW_TMRHN" /* GXT: RHINO */, 16);
 			break;
 		
 		case joaat("hydra"):
-			StringCopy(&Var0, "UW_TMHYD", 16);
+			StringCopy(&Var0, "UW_TMHYD" /* GXT: HYDRA */, 16);
 			break;
 		
 		case joaat("savage"):
-			StringCopy(&Var0, "UW_TMSAV", 16);
+			StringCopy(&Var0, "UW_TMSAV" /* GXT: SAVAGE */, 16);
 			break;
 		
 		case joaat("valkyrie"):
-			StringCopy(&Var0, "UW_TMVALK", 16);
+			StringCopy(&Var0, "UW_TMVALK" /* GXT: VALKYRIE */, 16);
 			break;
 		
 		case joaat("buzzard"):
-			StringCopy(&Var0, "UW_TMBUZ", 16);
+			StringCopy(&Var0, "UW_TMBUZ" /* GXT: BUZZARD */, 16);
 			break;
 	}
 	return Var0;
@@ -16119,12 +16119,12 @@ void func_432()//Position - 0x13CA0
 					{
 						MISC::SET_BIT(&uLocal_96, 19);
 					}
-					if (func_277("UW_ABTSC") || func_277("UW_ABTS"))
+					if (func_277("UW_ABTSC" /* GXT: ~HUD_COLOUR_NET_PLAYER2~Kill List Competitive ~s~is about to start. */) || func_277("UW_ABTS" /* GXT: ~HUD_COLOUR_NET_PLAYER2~Kill List ~s~is about to start. */))
 					{
 						func_9();
 					}
 					NETWORK::NETWORK_SET_FRIENDLY_FIRE_OPTION(false);
-					if ((func_697("UW_MINV") || func_697("UW_TIMELA")) || func_697("UW_TIMEL"))
+					if ((func_697("UW_MINV" /* GXT: Players are required in at least two Kill List Competitive vehicles before the mode will start. */) || func_697("UW_TIMELA" /* GXT: Kill List Competitive will start when all the vehicles are full or when the time expires. */)) || func_697("UW_TIMEL" /* GXT: Kill List will start when the vehicle is full or when the time expires. */))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -16151,18 +16151,18 @@ void func_432()//Position - 0x13CA0
 					Local_94[NETWORK::PARTICIPANT_ID_TO_INT() /*18*/].f_9 = iLocal_552;
 					if (!func_768())
 					{
-						func_650(63, "UW_TITLE", "UW_DESC", func_324(), -1, func_324(), 1, 0);
+						func_650(63, "UW_TITLE" /* GXT: KILL LIST */, "UW_DESC" /* GXT: Destroy the Merryweather patrols */, func_324(), -1, func_324(), 1, 0);
 					}
 					else if (Local_91.f_27 == joaat("hydra") || Local_91.f_27 == joaat("rhino"))
 					{
-						func_650(63, "UW_TITLEC", "UW_DESCC", func_324(), -1, func_324(), 1, 0);
+						func_650(63, "UW_TITLEC" /* GXT: KILL LIST COMPETITIVE */, "UW_DESCC" /* GXT: Take out the most Merryweather patrols to win */, func_324(), -1, func_324(), 1, 0);
 					}
 					else
 					{
 						bVar1++;
 						StringCopy(&Var0, "UW_TM", 16);
 						StringIntConCat(&Var0, bVar1, 16);
-						func_649(63, &Var0, "UW_DESCCT", "UW_TITLE", 15000, -1, -1082130432, "", func_324(), func_324(), 0);
+						func_649(63, &Var0, "UW_DESCCT" /* GXT: Take out the most Merryweather patrols to win. You are on ~a~. */, "UW_TITLE" /* GXT: KILL LIST */, 15000, -1, -1082130432, "", func_324(), func_324(), 0);
 					}
 					Local_92.f_9 = NETWORK::GET_CLOUD_TIME_AS_INT();
 					func_651(0);
@@ -16173,11 +16173,11 @@ void func_432()//Position - 0x13CA0
 				else
 				{
 					func_196();
-					if (func_277("UW_ABTSC") || func_277("UW_ABTS"))
+					if (func_277("UW_ABTSC" /* GXT: ~HUD_COLOUR_NET_PLAYER2~Kill List Competitive ~s~is about to start. */) || func_277("UW_ABTS" /* GXT: ~HUD_COLOUR_NET_PLAYER2~Kill List ~s~is about to start. */))
 					{
 						func_9();
 					}
-					if (func_644("UW_HELP1", func_646(), func_645(1)) || func_644("UW_HELP1C", func_646(), func_645(1)))
+					if (func_644("UW_HELP1" /* GXT: ~s~Kill List~s~ ~HUD_COLOUR_NET_PLAYER2~~a~ ~s~is available. Enter the vehicle and destroy the Merryweather patrols for $~1~ and RP. */, func_646(), func_645(1)) || func_644("UW_HELP1C" /* GXT: ~s~Kill List Competitive~s~ ~HUD_COLOUR_NET_PLAYER2~~a~ ~s~is available. Enter one of the vehicles and destroy the Merryweather patrols for $~1~ and RP. */, func_646(), func_645(1)))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -16194,14 +16194,14 @@ void func_432()//Position - 0x13CA0
 			else if (Local_91.f_241 == 3)
 			{
 				func_651(0);
-				if (func_644("UW_HELP1", func_646(), func_645(1)) || func_644("UW_HELP1C", func_646(), func_645(1)))
+				if (func_644("UW_HELP1" /* GXT: ~s~Kill List~s~ ~HUD_COLOUR_NET_PLAYER2~~a~ ~s~is available. Enter the vehicle and destroy the Merryweather patrols for $~1~ and RP. */, func_646(), func_645(1)) || func_644("UW_HELP1C" /* GXT: ~s~Kill List Competitive~s~ ~HUD_COLOUR_NET_PLAYER2~~a~ ~s~is available. Enter one of the vehicles and destroy the Merryweather patrols for $~1~ and RP. */, func_646(), func_645(1)))
 				{
 					HUD::CLEAR_HELP(true);
 				}
 				if (!func_642())
 				{
 				}
-				if (func_277("UW_ABTSC") || func_277("UW_ABTS"))
+				if (func_277("UW_ABTSC" /* GXT: ~HUD_COLOUR_NET_PLAYER2~Kill List Competitive ~s~is about to start. */) || func_277("UW_ABTS" /* GXT: ~HUD_COLOUR_NET_PLAYER2~Kill List ~s~is about to start. */))
 				{
 					func_9();
 				}
@@ -16210,7 +16210,7 @@ void func_432()//Position - 0x13CA0
 			}
 			else if (Local_91.f_241 > 3)
 			{
-				if (func_277("UW_ABTSC") || func_277("UW_ABTS"))
+				if (func_277("UW_ABTSC" /* GXT: ~HUD_COLOUR_NET_PLAYER2~Kill List Competitive ~s~is about to start. */) || func_277("UW_ABTS" /* GXT: ~HUD_COLOUR_NET_PLAYER2~Kill List ~s~is about to start. */))
 				{
 					func_9();
 				}
@@ -16232,7 +16232,7 @@ void func_432()//Position - 0x13CA0
 				{
 					if (func_634(2, 0, 1, 0, 0))
 					{
-						if (func_277("UW_ABTSC") || func_277("UW_ABTS"))
+						if (func_277("UW_ABTSC" /* GXT: ~HUD_COLOUR_NET_PLAYER2~Kill List Competitive ~s~is about to start. */) || func_277("UW_ABTS" /* GXT: ~HUD_COLOUR_NET_PLAYER2~Kill List ~s~is about to start. */))
 						{
 							func_9();
 						}
@@ -16244,7 +16244,7 @@ void func_432()//Position - 0x13CA0
 				{
 					if (func_634(2, 0, 1, 0, 0))
 					{
-						if (func_277("UW_ABTSC") || func_277("UW_ABTS"))
+						if (func_277("UW_ABTSC" /* GXT: ~HUD_COLOUR_NET_PLAYER2~Kill List Competitive ~s~is about to start. */) || func_277("UW_ABTS" /* GXT: ~HUD_COLOUR_NET_PLAYER2~Kill List ~s~is about to start. */))
 						{
 							func_9();
 						}
@@ -16279,28 +16279,28 @@ void func_432()//Position - 0x13CA0
 							{
 								if (!func_768())
 								{
-									if (!func_277("UW_ATTK"))
+									if (!func_277("UW_ATTK" /* GXT: Destroy the ~r~Merryweather patrols. */))
 									{
-										func_271("UW_ATTK", 0);
+										func_271("UW_ATTK" /* GXT: Destroy the ~r~Merryweather patrols. */, 0);
 									}
 								}
 								else if (Local_91.f_27 == joaat("hydra") || Local_91.f_27 == joaat("rhino"))
 								{
-									if (!func_277("UW_ATTK"))
+									if (!func_277("UW_ATTK" /* GXT: Destroy the ~r~Merryweather patrols. */))
 									{
-										func_271("UW_ATTK", 0);
+										func_271("UW_ATTK" /* GXT: Destroy the ~r~Merryweather patrols. */, 0);
 									}
 								}
-								else if (!func_277("UW_ATTK"))
+								else if (!func_277("UW_ATTK" /* GXT: Destroy the ~r~Merryweather patrols. */))
 								{
 									func_700(&bVar1, &uVar2);
 									bVar1++;
 									StringCopy(&Var0, "UW_TM", 16);
 									StringIntConCat(&Var0, bVar1, 16);
-									func_271("UW_ATTK", 0);
+									func_271("UW_ATTK" /* GXT: Destroy the ~r~Merryweather patrols. */, 0);
 								}
 							}
-							else if (func_277("UW_ATTK"))
+							else if (func_277("UW_ATTK" /* GXT: Destroy the ~r~Merryweather patrols. */))
 							{
 								func_9();
 							}
@@ -16547,11 +16547,11 @@ void func_434()//Position - 0x1478A
 			{
 				if (func_768())
 				{
-					func_436("UW_TFEWC", 30000);
+					func_436("UW_TFEWC" /* GXT: Kill List Competitive is no longer available as there aren't enough valid players. */, 30000);
 				}
 				else
 				{
-					func_436("UW_TFEW", 30000);
+					func_436("UW_TFEW" /* GXT: Kill List is no longer available as there aren't enough valid players. */, 30000);
 				}
 				func_435(1);
 				MISC::SET_BIT(&uLocal_96, 5);
@@ -16700,7 +16700,7 @@ void func_443()//Position - 0x1498D
 	bool bVar1;
 	int iVar2;
 	
-	if (!func_277("UW_EXPL") && !func_277("UW_EXPLC"))
+	if (!func_277("UW_EXPL" /* GXT: Exit the Kill List vehicle before it explodes. */) && !func_277("UW_EXPLC" /* GXT: Exit the Kill List Competitive vehicle before it explodes. */))
 	{
 		func_9();
 	}
@@ -16739,7 +16739,7 @@ void func_443()//Position - 0x1498D
 								if (!func_204())
 								{
 									func_446();
-									func_172((func_447() - func_126(&(Local_91.f_324), 0, 0)), "UW_DEST", 0, 1, -1, 0, 2, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
+									func_172((func_447() - func_126(&(Local_91.f_324), 0, 0)), "UW_DEST" /* GXT: SELF-DESTRUCT */, 0, 1, -1, 0, 2, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
 								}
 							}
 						}
@@ -16753,7 +16753,7 @@ void func_443()//Position - 0x1498D
 								if (!func_204())
 								{
 									func_446();
-									func_172(0, "UW_DEST", 0, 1, -1, 0, 2, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
+									func_172(0, "UW_DEST" /* GXT: SELF-DESTRUCT */, 0, 1, -1, 0, 2, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
 								}
 							}
 						}
@@ -16793,21 +16793,21 @@ void func_443()//Position - 0x1498D
 						{
 							if (!func_768())
 							{
-								if (!func_277("UW_EXPL"))
+								if (!func_277("UW_EXPL" /* GXT: Exit the Kill List vehicle before it explodes. */))
 								{
-									func_271("UW_EXPL", 0);
+									func_271("UW_EXPL" /* GXT: Exit the Kill List vehicle before it explodes. */, 0);
 								}
 							}
-							else if (!func_277("UW_EXPLC"))
+							else if (!func_277("UW_EXPLC" /* GXT: Exit the Kill List Competitive vehicle before it explodes. */))
 							{
-								func_271("UW_EXPLC", 0);
+								func_271("UW_EXPLC" /* GXT: Exit the Kill List Competitive vehicle before it explodes. */, 0);
 							}
 							MISC::SET_BIT(&uLocal_95, 12);
 						}
 					}
 				}
 			}
-			else if (func_277("UW_EXPL") || func_277("UW_EXPLC"))
+			else if (func_277("UW_EXPL" /* GXT: Exit the Kill List vehicle before it explodes. */) || func_277("UW_EXPLC" /* GXT: Exit the Kill List Competitive vehicle before it explodes. */))
 			{
 				if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 				{
@@ -16841,7 +16841,7 @@ void func_443()//Position - 0x1498D
 										if (!bVar1)
 										{
 											func_446();
-											func_172((func_447() - func_126(&(Local_91.f_324), 0, 0)), "UW_DEST", 0, 1, -1, 0, 2, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
+											func_172((func_447() - func_126(&(Local_91.f_324), 0, 0)), "UW_DEST" /* GXT: SELF-DESTRUCT */, 0, 1, -1, 0, 2, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
 											bVar1 = true;
 										}
 									}
@@ -16859,7 +16859,7 @@ void func_443()//Position - 0x1498D
 										if (!bVar1)
 										{
 											func_446();
-											func_172(0, "UW_DEST", 0, 1, -1, 0, 2, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
+											func_172(0, "UW_DEST" /* GXT: SELF-DESTRUCT */, 0, 1, -1, 0, 2, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
 											bVar1 = true;
 										}
 									}
@@ -16902,14 +16902,14 @@ void func_443()//Position - 0x1498D
 								{
 									if (!func_768())
 									{
-										if (!func_277("UW_EXPL"))
+										if (!func_277("UW_EXPL" /* GXT: Exit the Kill List vehicle before it explodes. */))
 										{
-											func_271("UW_EXPL", 0);
+											func_271("UW_EXPL" /* GXT: Exit the Kill List vehicle before it explodes. */, 0);
 										}
 									}
-									else if (!func_277("UW_EXPLC"))
+									else if (!func_277("UW_EXPLC" /* GXT: Exit the Kill List Competitive vehicle before it explodes. */))
 									{
-										func_271("UW_EXPLC", 0);
+										func_271("UW_EXPLC" /* GXT: Exit the Kill List Competitive vehicle before it explodes. */, 0);
 									}
 									MISC::SET_BIT(&uLocal_95, 12);
 								}
@@ -16917,7 +16917,7 @@ void func_443()//Position - 0x1498D
 						}
 					}
 				}
-				else if (func_277("UW_EXPL") || func_277("UW_EXPLC"))
+				else if (func_277("UW_EXPL" /* GXT: Exit the Kill List vehicle before it explodes. */) || func_277("UW_EXPLC" /* GXT: Exit the Kill List Competitive vehicle before it explodes. */))
 				{
 					if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 					{
@@ -17194,11 +17194,11 @@ void func_457()//Position - 0x1533B
 									{
 										if (func_768())
 										{
-											func_436("UW_HELIMC", -1);
+											func_436("UW_HELIMC" /* GXT: Although you were eliminated from Kill List Competitive and are unable to return to the vehicle, your team could still win and claim the reward. */, -1);
 										}
 										else
 										{
-											func_436("UW_HELIM", -1);
+											func_436("UW_HELIM" /* GXT: Although you were eliminated from Kill List and are unable to return to the vehicle, your team could still win and claim the reward. */, -1);
 										}
 										func_435(1);
 										MISC::SET_BIT(&uLocal_96, 12);
@@ -17211,11 +17211,11 @@ void func_457()//Position - 0x1533B
 								{
 									if (!func_768())
 									{
-										func_436("UW_TAVAIL", 30000);
+										func_436("UW_TAVAIL" /* GXT: You are no longer able to take part in Kill List. */, 30000);
 									}
 									else
 									{
-										func_436("UW_TAVAILC", 30000);
+										func_436("UW_TAVAILC" /* GXT: You are no longer able to take part in Kill List Competitive. */, 30000);
 									}
 									func_435(1);
 									MISC::SET_BIT(&uLocal_95, 11);
@@ -17423,37 +17423,37 @@ void func_467()//Position - 0x156F1
 						{
 							if (bVar0)
 							{
-								func_650(65, "UW_BIGF", "UW_FAILNX", 1, 15000, 2, 1, 0);
+								func_650(65, "UW_BIGF" /* GXT: LOSER */, "UW_FAILNX" /* GXT: You failed to destroy all the Merryweather patrols */, 1, 15000, 2, 1, 0);
 							}
 							else if (bVar1)
 							{
 								if (Local_91.f_27 == joaat("rhino") || Local_91.f_27 == joaat("hydra"))
 								{
-									func_650(65, "UW_BIGF", "UW_LSELIM", 1, 15000, 2, 1, 0);
+									func_650(65, "UW_BIGF" /* GXT: LOSER */, "UW_LSELIM" /* GXT: You were eliminated from Kill List */, 1, 15000, 2, 1, 0);
 								}
 								else if (NETWORK::NETWORK_DOES_ENTITY_EXIST_WITH_NETWORK_ID(Local_91.f_7[0]) && func_109(Local_91.f_7[0]))
 								{
 									MISC::SET_BIT(&uLocal_96, 11);
 									MISC::SET_BIT(&uLocal_96, 16);
-									func_650(66, "UW_BIGE", "UW_LSELIM", 1, 15000, 2, 1, 0);
+									func_650(66, "UW_BIGE" /* GXT: ELIMINATED */, "UW_LSELIM" /* GXT: You were eliminated from Kill List */, 1, 15000, 2, 1, 0);
 								}
 								else
 								{
-									func_650(65, "UW_BIGF", "UW_LSELIM", 1, 15000, 2, 1, 0);
+									func_650(65, "UW_BIGF" /* GXT: LOSER */, "UW_LSELIM" /* GXT: You were eliminated from Kill List */, 1, 15000, 2, 1, 0);
 								}
 							}
 							else if (bVar2)
 							{
-								func_650(65, "UW_BIGF", "UW_LSELIM", 1, 15000, 2, 1, 0);
+								func_650(65, "UW_BIGF" /* GXT: LOSER */, "UW_LSELIM" /* GXT: You were eliminated from Kill List */, 1, 15000, 2, 1, 0);
 							}
 							else if (bVar3 || BitTest(Local_91.f_3, 16))
 							{
-								func_650(66, "UW_BIGO", "UW_ABAND", 1, 15000, 2, 1, 0);
+								func_650(66, "UW_BIGO" /* GXT: EVENT OVER */, "UW_ABAND" /* GXT: There aren't enough players left in your vehicle. */, 1, 15000, 2, 1, 0);
 							}
 						}
 						else if (bVar0)
 						{
-							func_650(65, "UW_BIGF", "UW_FAILNX", 1, 15000, 2, 1, 0);
+							func_650(65, "UW_BIGF" /* GXT: LOSER */, "UW_FAILNX" /* GXT: You failed to destroy all the Merryweather patrols */, 1, 15000, 2, 1, 0);
 						}
 						else if (bVar1)
 						{
@@ -17463,22 +17463,22 @@ void func_467()//Position - 0x156F1
 								{
 									MISC::SET_BIT(&uLocal_96, 11);
 									MISC::SET_BIT(&uLocal_96, 16);
-									func_650(66, "UW_BIGE", "UW_LSELIMC", 1, 15000, 2, 1, 0);
+									func_650(66, "UW_BIGE" /* GXT: ELIMINATED */, "UW_LSELIMC" /* GXT: You were eliminated from Kill List Competitive */, 1, 15000, 2, 1, 0);
 								}
 								else
 								{
-									func_650(65, "UW_BIGF", "UW_LSELIM", 1, 15000, 2, 1, 0);
+									func_650(65, "UW_BIGF" /* GXT: LOSER */, "UW_LSELIM" /* GXT: You were eliminated from Kill List */, 1, 15000, 2, 1, 0);
 								}
 							}
 							else if (func_533())
 							{
 								MISC::SET_BIT(&uLocal_96, 11);
 								MISC::SET_BIT(&uLocal_96, 16);
-								func_650(66, "UW_BIGE", "UW_LSELIMC", 1, 15000, 2, 1, 0);
+								func_650(66, "UW_BIGE" /* GXT: ELIMINATED */, "UW_LSELIMC" /* GXT: You were eliminated from Kill List Competitive */, 1, 15000, 2, 1, 0);
 							}
 							else
 							{
-								func_650(65, "UW_BIGF", "UW_LSELIMC", 1, 15000, 2, 1, 0);
+								func_650(65, "UW_BIGF" /* GXT: LOSER */, "UW_LSELIMC" /* GXT: You were eliminated from Kill List Competitive */, 1, 15000, 2, 1, 0);
 							}
 						}
 						else if (bVar2)
@@ -17487,16 +17487,16 @@ void func_467()//Position - 0x156F1
 							{
 								MISC::SET_BIT(&uLocal_96, 11);
 								MISC::SET_BIT(&uLocal_96, 16);
-								func_650(66, "UW_BIGE", "UW_LSELIMC", 1, 15000, 2, 1, 0);
+								func_650(66, "UW_BIGE" /* GXT: ELIMINATED */, "UW_LSELIMC" /* GXT: You were eliminated from Kill List Competitive */, 1, 15000, 2, 1, 0);
 							}
 							else
 							{
-								func_650(65, "UW_BIGF", "UW_LSELIMC", 1, 15000, 2, 1, 0);
+								func_650(65, "UW_BIGF" /* GXT: LOSER */, "UW_LSELIMC" /* GXT: You were eliminated from Kill List Competitive */, 1, 15000, 2, 1, 0);
 							}
 						}
 						else if (bVar3 || BitTest(Local_91.f_3, 16))
 						{
-							func_650(66, "UW_BIGO", "UW_ABAND", 1, 15000, 2, 1, 0);
+							func_650(66, "UW_BIGO" /* GXT: EVENT OVER */, "UW_ABAND" /* GXT: There aren't enough players left in your vehicle. */, 1, 15000, 2, 1, 0);
 						}
 					}
 					iVar4 = func_532(1);
@@ -20169,7 +20169,7 @@ void func_535()//Position - 0x18AC6
 								if (!func_204())
 								{
 									func_446();
-									func_172((func_447() - func_126(&(Local_91.f_349[bVar2 /*2*/]), 0, 0)), "UW_DEST", 0, 1, -1, 0, 2, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
+									func_172((func_447() - func_126(&(Local_91.f_349[bVar2 /*2*/]), 0, 0)), "UW_DEST" /* GXT: SELF-DESTRUCT */, 0, 1, -1, 0, 2, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
 								}
 							}
 						}
@@ -20183,7 +20183,7 @@ void func_535()//Position - 0x18AC6
 								if (!func_204())
 								{
 									func_446();
-									func_172(0, "UW_DEST", 0, 1, -1, 0, 2, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
+									func_172(0, "UW_DEST" /* GXT: SELF-DESTRUCT */, 0, 1, -1, 0, 2, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
 								}
 							}
 						}
@@ -20215,16 +20215,16 @@ void func_535()//Position - 0x18AC6
 						{
 							if (!BitTest(uLocal_96, 19))
 							{
-								func_436("UW_NOPILC", 30000);
+								func_436("UW_NOPILC" /* GXT: There aren't enough players left in your vehicle to continue with Kill List Competitive. */, 30000);
 							}
 							else
 							{
-								func_436("UW_NOGUN", 30000);
+								func_436("UW_NOGUN" /* GXT: You need a gunner to take part in Kill List Competitive in a Valkyrie. */, 30000);
 							}
 						}
 						else
 						{
-							func_436("UW_NOPIL", 30000);
+							func_436("UW_NOPIL" /* GXT: There aren't enough players left in your vehicle to continue with Kill List. */, 30000);
 						}
 						func_435(1);
 						MISC::SET_BIT(&uLocal_96, 6);
@@ -20246,22 +20246,22 @@ void func_535()//Position - 0x18AC6
 						{
 							if (!func_768())
 							{
-								if (!func_277("UW_EXPL"))
+								if (!func_277("UW_EXPL" /* GXT: Exit the Kill List vehicle before it explodes. */))
 								{
-									func_271("UW_EXPL", 0);
+									func_271("UW_EXPL" /* GXT: Exit the Kill List vehicle before it explodes. */, 0);
 								}
 							}
-							else if (!func_277("UW_EXPLC"))
+							else if (!func_277("UW_EXPLC" /* GXT: Exit the Kill List Competitive vehicle before it explodes. */))
 							{
-								func_271("UW_EXPLC", 0);
+								func_271("UW_EXPLC" /* GXT: Exit the Kill List Competitive vehicle before it explodes. */, 0);
 							}
 						}
-						else if (func_277("UW_EXPL") || func_277("UW_EXPLC"))
+						else if (func_277("UW_EXPL" /* GXT: Exit the Kill List vehicle before it explodes. */) || func_277("UW_EXPLC" /* GXT: Exit the Kill List Competitive vehicle before it explodes. */))
 						{
 							func_9();
 						}
 					}
-					else if (func_277("UW_EXPL") || func_277("UW_EXPLC"))
+					else if (func_277("UW_EXPL" /* GXT: Exit the Kill List vehicle before it explodes. */) || func_277("UW_EXPLC" /* GXT: Exit the Kill List Competitive vehicle before it explodes. */))
 					{
 						func_9();
 					}
@@ -20311,9 +20311,9 @@ void func_537()//Position - 0x18F95
 				}
 				else if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 				{
-					if (!func_277("UW_OOB"))
+					if (!func_277("UW_OOB" /* GXT: Get back to the combat zone. */))
 					{
-						func_271("UW_OOB", 0);
+						func_271("UW_OOB" /* GXT: Get back to the combat zone. */, 0);
 					}
 					if (!func_22(&uLocal_562))
 					{
@@ -20327,12 +20327,12 @@ void func_537()//Position - 0x18F95
 						if ((func_447() - func_126(&uLocal_562, 0, 0)) >= 0)
 						{
 							func_446();
-							func_172((func_447() - func_126(&uLocal_562, 0, 0)), "UW_DEST", 0, 1, -1, 0, 2, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
+							func_172((func_447() - func_126(&uLocal_562, 0, 0)), "UW_DEST" /* GXT: SELF-DESTRUCT */, 0, 1, -1, 0, 2, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
 						}
 						else
 						{
 							func_446();
-							func_172(0, "UW_DEST", 0, 1, -1, 0, 2, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
+							func_172(0, "UW_DEST" /* GXT: SELF-DESTRUCT */, 0, 1, -1, 0, 2, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
 							func_9();
 							MISC::SET_BIT(&(Local_94[NETWORK::PARTICIPANT_ID_TO_INT() /*18*/].f_2), 11);
 						}
@@ -20565,11 +20565,11 @@ void func_544()//Position - 0x194C0
 							{
 								if (!func_768())
 								{
-									func_555("UW_START1P", PLAYER::GET_PLAYER_NAME(Local_91.f_22[0]), 1, 30000);
+									func_555("UW_START1P" /* GXT: ~a~ ~s~has started Kill List. */, PLAYER::GET_PLAYER_NAME(Local_91.f_22[0]), 1, 30000);
 								}
 								else
 								{
-									func_555("UW_START1PC", PLAYER::GET_PLAYER_NAME(Local_91.f_22[0]), 1, 30000);
+									func_555("UW_START1PC" /* GXT: ~a~ ~s~has started Kill List Competitive. */, PLAYER::GET_PLAYER_NAME(Local_91.f_22[0]), 1, 30000);
 								}
 								func_435(1);
 							}
@@ -20579,18 +20579,18 @@ void func_544()//Position - 0x194C0
 								{
 									if (!func_768())
 									{
-										func_436("UW_STARTM", 30000);
+										func_436("UW_STARTM" /* GXT: Kill List has started without you. */, 30000);
 									}
 									else
 									{
-										func_436("UW_STARTMC", 30000);
+										func_436("UW_STARTMC" /* GXT: Kill List Competitive has started without you. */, 30000);
 									}
 									func_435(1);
 								}
 							}
 							else
 							{
-								func_555("UW_START1P", PLAYER::GET_PLAYER_NAME(Local_91.f_22[0]), 1, 30000);
+								func_555("UW_START1P" /* GXT: ~a~ ~s~has started Kill List. */, PLAYER::GET_PLAYER_NAME(Local_91.f_22[0]), 1, 30000);
 								func_435(1);
 							}
 						}
@@ -20598,11 +20598,11 @@ void func_544()//Position - 0x194C0
 						{
 							if (!func_768())
 							{
-								func_436("UW_STARTM", 30000);
+								func_436("UW_STARTM" /* GXT: Kill List has started without you. */, 30000);
 							}
 							else
 							{
-								func_436("UW_STARTMC", 30000);
+								func_436("UW_STARTMC" /* GXT: Kill List Competitive has started without you. */, 30000);
 							}
 							func_435(1);
 						}
@@ -20638,7 +20638,7 @@ void func_544()//Position - 0x194C0
 							{
 								if (!func_109(Local_91.f_7[iLocal_552]))
 								{
-									func_554("UW_TEAMV", 0);
+									func_554("UW_TEAMV" /* GXT: Your team vehicle was destroyed. */, 0);
 									MISC::SET_BIT(&uLocal_96, 10);
 								}
 							}
@@ -20673,7 +20673,7 @@ void func_544()//Position - 0x194C0
 											iVar0 = func_553(iVar1, 0);
 											if (iVar0 != func_5())
 											{
-												func_545("UW_COMP", iVar0, 1, 0, 0, 0, 1, 0);
+												func_545("UW_COMP" /* GXT: ~a~ completed Kill List. */, iVar0, 1, 0, 0, 0, 1, 0);
 											}
 											MISC::SET_BIT(&uLocal_95, (16 + iVar1));
 										}
@@ -21022,7 +21022,7 @@ void func_558()//Position - 0x19D32
 					}
 					if (func_19(&uLocal_571, 1000, 0))
 					{
-						if (func_277("UW_ATTK"))
+						if (func_277("UW_ATTK" /* GXT: Destroy the ~r~Merryweather patrols. */))
 						{
 							func_9();
 						}
@@ -21055,7 +21055,7 @@ void func_558()//Position - 0x19D32
 							Local_92.f_7 = (Local_92.f_7 + iVar11);
 							func_468(0, PLAYER::PLAYER_PED_ID(), "", joaat("XPTYPE_COMPLETE"), joaat("XPCATEGORY_KILL_LIST_KILL"), iVar11, 1, -1, 0, 0, 0);
 							Local_92.f_5 = 2;
-							func_650(65, "UW_BIGF", "UW_DRAWZ", 1, 15000, 2, 1, 0);
+							func_650(65, "UW_BIGF" /* GXT: LOSER */, "UW_DRAWZ" /* GXT: Your vehicle destroyed no Merryweather patrols */, 1, 15000, 2, 1, 0);
 						}
 						else if (!func_768())
 						{
@@ -21088,13 +21088,13 @@ void func_558()//Position - 0x19D32
 							func_516();
 							func_468(0, PLAYER::PLAYER_PED_ID(), "", joaat("XPTYPE_COMPLETE"), joaat("XPCATEGORY_KILL_LIST_KILL"), iVar11, 1, -1, 0, 0, 0);
 							Local_92.f_5 = 1;
-							func_649(64, "", "UW_BIG_BMEXP", "UW_BIGM", 15000, -1, -1082130432, 0, 1, 2, 0);
+							func_649(64, "", "UW_BIG_BMEXP" /* GXT: You destroyed all the Merryweather patrols */, "UW_BIGM" /* GXT: WINNER */, 15000, -1, -1082130432, 0, 1, 2, 0);
 						}
 						else if (func_618())
 						{
 							if (!func_617(1))
 							{
-								if (!func_277("UW_EXPL") && !func_277("UW_EXPLC"))
+								if (!func_277("UW_EXPL" /* GXT: Exit the Kill List vehicle before it explodes. */) && !func_277("UW_EXPLC" /* GXT: Exit the Kill List Competitive vehicle before it explodes. */))
 								{
 									func_9();
 								}
@@ -21123,11 +21123,11 @@ void func_558()//Position - 0x19D32
 								}
 								if (Local_91.f_27 == joaat("rhino") || Local_91.f_27 == joaat("hydra"))
 								{
-									func_649(64, "", "UW_WON1P", "UW_BIGM", 15000, -1, -1082130432, 0, 1, 2, 0);
+									func_649(64, "", "UW_WON1P" /* GXT: You destroyed the most Merryweather patrols */, "UW_BIGM" /* GXT: WINNER */, 15000, -1, -1082130432, 0, 1, 2, 0);
 								}
 								else
 								{
-									func_649(64, "", "UW_WON", "UW_BIGM", 15000, -1, -1082130432, 0, 1, 2, 0);
+									func_649(64, "", "UW_WON" /* GXT: Your vehicle destroyed the most Merryweather patrols */, "UW_BIGM" /* GXT: WINNER */, 15000, -1, -1082130432, 0, 1, 2, 0);
 								}
 								Local_92.f_5 = 1;
 								iVar11 = func_619();
@@ -21185,7 +21185,7 @@ void func_558()//Position - 0x19D32
 									}
 									else
 									{
-										func_616(68, "UW_DRAWP", PLAYER::GET_PLAYER_NAME(iVar3[0]), 1, 15000, "UW_BIGO", 2);
+										func_616(68, "UW_DRAWP" /* GXT: Your vehicle tied with <C>~a~</C> ~s~to win Kill List Competitive */, PLAYER::GET_PLAYER_NAME(iVar3[0]), 1, 15000, "UW_BIGO" /* GXT: EVENT OVER */, 2);
 									}
 								}
 								else if (iVar8 > 2)
@@ -21199,17 +21199,17 @@ void func_558()//Position - 0x19D32
 								{
 									StringCopy(&Var0, "UW_TM", 16);
 									StringIntConCat(&Var0, iVar6[0] + 1, 16);
-									func_649(68, &Var0, "UW_DRAWP", "UW_BIGO", 15000, -1, -1082130432, 0, 1, 2, 0);
+									func_649(68, &Var0, "UW_DRAWP" /* GXT: Your vehicle tied with <C>~a~</C> ~s~to win Kill List Competitive */, "UW_BIGO" /* GXT: EVENT OVER */, 15000, -1, -1082130432, 0, 1, 2, 0);
 								}
 								if (bVar9)
 								{
 									if (!func_768())
 									{
-										func_650(68, "UW_BIGO", "UW_DRAW", 1, 15000, 2, 1, 0);
+										func_650(68, "UW_BIGO" /* GXT: EVENT OVER */, "UW_DRAW" /* GXT: Kill List was drawn */, 1, 15000, 2, 1, 0);
 									}
 									else
 									{
-										func_650(68, "UW_BIGO", "UW_DRAWC", 1, 15000, 2, 1, 0);
+										func_650(68, "UW_BIGO" /* GXT: EVENT OVER */, "UW_DRAWC" /* GXT: Kill List Competitive was drawn */, 1, 15000, 2, 1, 0);
 									}
 								}
 								iVar14 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(func_645(0)) / SYSTEM::TO_FLOAT(iVar8)));
@@ -21273,7 +21273,7 @@ void func_558()//Position - 0x19D32
 							if (!func_617(0))
 							{
 								iVar5 = Local_91.f_465[0 /*4*/];
-								if (!func_277("UW_EXPL") && !func_277("UW_EXPLC"))
+								if (!func_277("UW_EXPL" /* GXT: Exit the Kill List vehicle before it explodes. */) && !func_277("UW_EXPLC" /* GXT: Exit the Kill List Competitive vehicle before it explodes. */))
 								{
 									func_9();
 								}
@@ -21296,20 +21296,20 @@ void func_558()//Position - 0x19D32
 										{
 											if (!func_768())
 											{
-												func_616(65, "UW_FWONP", PLAYER::GET_PLAYER_NAME(iVar2), 6, 15000, "UW_BIGF", 2);
+												func_616(65, "UW_FWONP" /* GXT: Kill List was won by <C>~a~</C> */, PLAYER::GET_PLAYER_NAME(iVar2), 6, 15000, "UW_BIGF" /* GXT: LOSER */, 2);
 											}
 											else
 											{
-												func_616(65, "UW_FWONPC", PLAYER::GET_PLAYER_NAME(iVar2), 6, 15000, "UW_BIGF", 2);
+												func_616(65, "UW_FWONPC" /* GXT: Kill List Competitive was won by <C>~a~</C> */, PLAYER::GET_PLAYER_NAME(iVar2), 6, 15000, "UW_BIGF" /* GXT: LOSER */, 2);
 											}
 										}
 										else if (!func_768())
 										{
-											func_606(66, "PEN_OVR", "UW_FWONG", sVar27, uVar28, 0, -1, -1, -1, 2, -1);
+											func_606(66, "PEN_OVR" /* GXT: EVENT OVER */, "UW_FWONG" /* GXT: ~a~ ~s~won Kill List */, sVar27, uVar28, 0, -1, -1, -1, 2, -1);
 										}
 										else
 										{
-											func_606(66, "PEN_OVR", "UW_FWONGC", sVar27, uVar28, 0, -1, -1, -1, 2, -1);
+											func_606(66, "PEN_OVR" /* GXT: EVENT OVER */, "UW_FWONGC" /* GXT: ~a~ ~s~won Kill List Competitive */, sVar27, uVar28, 0, -1, -1, -1, 2, -1);
 										}
 									}
 								}
@@ -21319,17 +21319,17 @@ void func_558()//Position - 0x19D32
 									StringIntConCat(&Var0, iVar5 + 1, 16);
 									if (!func_768())
 									{
-										func_649(65, &Var0, "UW_FWONT", "UW_BIGF", 15000, -1, -1082130432, "", 6, 2, 0);
+										func_649(65, &Var0, "UW_FWONT" /* GXT: Kill List was won by ~a~ */, "UW_BIGF" /* GXT: LOSER */, 15000, -1, -1082130432, "", 6, 2, 0);
 									}
 									else
 									{
-										func_649(65, &Var0, "UW_FWONTC", "UW_BIGF", 15000, -1, -1082130432, "", 6, 2, 0);
+										func_649(65, &Var0, "UW_FWONTC" /* GXT: Kill List Competitive was won by ~a~ */, "UW_BIGF" /* GXT: LOSER */, 15000, -1, -1082130432, "", 6, 2, 0);
 									}
 								}
 							}
 							else
 							{
-								if (!func_277("UW_EXPL") && !func_277("UW_EXPLC"))
+								if (!func_277("UW_EXPL" /* GXT: Exit the Kill List vehicle before it explodes. */) && !func_277("UW_EXPLC" /* GXT: Exit the Kill List Competitive vehicle before it explodes. */))
 								{
 									func_9();
 								}
@@ -21369,7 +21369,7 @@ void func_558()//Position - 0x19D32
 										{
 											if (iVar3[1] != func_5() && NETWORK::NETWORK_IS_PLAYER_ACTIVE(iVar3[1]))
 											{
-												func_564(68, func_5(), func_5(), -1, "UW_DRAW2P", "UW_BIGF", func_324(), 15000, func_324(), PLAYER::GET_PLAYER_NAME(iVar3[0]), PLAYER::GET_PLAYER_NAME(iVar3[1]), 0);
+												func_564(68, func_5(), func_5(), -1, "UW_DRAW2P" /* GXT: <C>~a~</C> and <C>~a~</C> tied to win Kill List Competitive */, "UW_BIGF" /* GXT: LOSER */, func_324(), 15000, func_324(), PLAYER::GET_PLAYER_NAME(iVar3[0]), PLAYER::GET_PLAYER_NAME(iVar3[1]), 0);
 											}
 											else
 											{
@@ -21392,7 +21392,7 @@ void func_558()//Position - 0x19D32
 									StringIntConCat(&Var0, iVar6[0] + 1, 16);
 									StringCopy(&Var1, "UW_TM", 16);
 									StringIntConCat(&Var1, iVar6[1] + 1, 16);
-									func_649(11, &Var0, "UW_DRAW2P", "UW_BIGO", 15000, -1, -1082130432, &Var1, 1, 2, 0);
+									func_649(11, &Var0, "UW_DRAW2P" /* GXT: <C>~a~</C> and <C>~a~</C> tied to win Kill List Competitive */, "UW_BIGO" /* GXT: EVENT OVER */, 15000, -1, -1082130432, &Var1, 1, 2, 0);
 									bVar9 = true;
 								}
 								else
@@ -21401,7 +21401,7 @@ void func_558()//Position - 0x19D32
 								}
 								if (bVar9)
 								{
-									func_650(68, "UW_BIGO", "UW_DRAW", 1, 15000, 2, 1, 0);
+									func_650(68, "UW_BIGO" /* GXT: EVENT OVER */, "UW_DRAW" /* GXT: Kill List was drawn */, 1, 15000, 2, 1, 0);
 								}
 							}
 						}
@@ -21418,11 +21418,11 @@ void func_558()//Position - 0x19D32
 				{
 					if (Local_94[NETWORK::PARTICIPANT_ID_TO_INT() /*18*/].f_10 != -1)
 					{
-						func_650(66, "UW_BIGO", "UW_ABAND", 1, 15000, 2, 1, 0);
+						func_650(66, "UW_BIGO" /* GXT: EVENT OVER */, "UW_ABAND" /* GXT: There aren't enough players left in your vehicle. */, 1, 15000, 2, 1, 0);
 					}
 					else
 					{
-						func_649(65, "", "UW_FAIL", "UW_BIGF", 15000, -1, -1082130432, 0, 6, 2, 0);
+						func_649(65, "", "UW_FAIL" /* GXT: You failed to destroy all the Merryweather patrols */, "UW_BIGF" /* GXT: LOSER */, 15000, -1, -1082130432, 0, 6, 2, 0);
 					}
 					func_672(0);
 					MISC::SET_BIT(&uLocal_95, 26);
@@ -21468,7 +21468,7 @@ void func_558()//Position - 0x19D32
 				}
 				else if (BitTest(Local_94[NETWORK::PARTICIPANT_ID_TO_INT() /*18*/].f_2, 11))
 				{
-					func_649(65, "", "UW_FAILD", "UW_BIGF", 15000, -1, -1082130432, 0, 6, 2, 0);
+					func_649(65, "", "UW_FAILD" /* GXT: You died before completing the objective */, "UW_BIGF" /* GXT: LOSER */, 15000, -1, -1082130432, 0, 6, 2, 0);
 					func_672(0);
 					MISC::SET_BIT(&uLocal_95, 26);
 					MISC::SET_BIT(&(Local_94[NETWORK::PARTICIPANT_ID_TO_INT() /*18*/].f_2), 8);
@@ -21512,7 +21512,7 @@ void func_558()//Position - 0x19D32
 			{
 				if (BitTest(uLocal_95, 26))
 				{
-					if (func_277("UW_ATTK"))
+					if (func_277("UW_ATTK" /* GXT: Destroy the ~r~Merryweather patrols. */))
 					{
 						func_9();
 					}
@@ -21520,7 +21520,7 @@ void func_558()//Position - 0x19D32
 					{
 						MISC::SET_BIT(&(Local_94[NETWORK::PARTICIPANT_ID_TO_INT() /*18*/].f_2), 8);
 					}
-					if (!func_277("UW_EXPL") && !func_277("UW_EXPLC"))
+					if (!func_277("UW_EXPL" /* GXT: Exit the Kill List vehicle before it explodes. */) && !func_277("UW_EXPLC" /* GXT: Exit the Kill List Competitive vehicle before it explodes. */))
 					{
 						if (Local_94[NETWORK::PARTICIPANT_ID_TO_INT() /*18*/].f_9 > -1)
 						{
@@ -21599,7 +21599,7 @@ int func_559(var uParam0, bool bParam1)//Position - 0x1AB57
 			func_560();
 			if (func_19(&(uParam0->f_1), 15000, 0))
 			{
-				if (func_697("AMEV_LBD_HELP"))
+				if (func_697("AMEV_LBD_HELP" /* GXT: Press ~INPUT_MULTIPLAYER_INFO~ to show the Freemode Event leaderboard. */))
 				{
 					HUD::CLEAR_HELP(true);
 				}
@@ -21630,7 +21630,7 @@ void func_560()//Position - 0x1ACE1
 		if (((((!HUD::IS_RADAR_HIDDEN() && !BitTest(Global_2815059.f_836, 2)) && func_869(PLAYER::PLAYER_ID(), 1, 1)) && !Global_75485) && !Global_60335) && !CAM::IS_SCREEN_FADED_OUT())
 		{
 			MISC::SET_BIT(&(Global_2815059.f_4657), 1);
-			func_436("AMEV_LBD_HELP", -1);
+			func_436("AMEV_LBD_HELP" /* GXT: Press ~INPUT_MULTIPLAYER_INFO~ to show the Freemode Event leaderboard. */, -1);
 			func_435(1);
 			MISC::CLEAR_BIT(&(Global_2815059.f_4657), 0);
 		}
@@ -22786,12 +22786,12 @@ char* func_611(int iParam0, bool bParam1)//Position - 0x1C269
 			return func_612();
 		}
 	}
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACC");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACC" /* GXT: An Organization */);
 }
 
 char* func_612()//Position - 0x1C290
 {
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACCM");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACCM" /* GXT: Motorcycle Club */);
 }
 
 var func_613(var uParam0)//Position - 0x1C2A0
@@ -22970,7 +22970,7 @@ void func_620(int iParam0, int iParam1)//Position - 0x1C55B
 						func_626(&iVar0, 0);
 						if (iParam1 == 1)
 						{
-							func_625("GB_BCUT_TICK1", func_629(), iVar0, 0, 0, 1);
+							func_625("GB_BCUT_TICK1" /* GXT: You paid ~a~ ~s~a $~1~ ~s~cut. */, func_629(), iVar0, 0, 0, 1);
 						}
 						func_624(20);
 						func_621(func_629(), iVar0, 1);
@@ -23289,17 +23289,17 @@ void func_639(char* sParam0, char* sParam1, bool bParam2)//Position - 0x1CA96
 	{
 		if (MISC::IS_STRING_NULL_OR_EMPTY(sParam0))
 		{
-			sParam0 = "FMEVEN_NUM1";
+			sParam0 = "FMEVEN_NUM1" /* GXT: EVENT OVER */;
 		}
 		if (MISC::IS_STRING_NULL_OR_EMPTY(sParam1))
 		{
 			if (bParam2)
 			{
-				sParam1 = "FMEVEN_NUM2";
+				sParam1 = "FMEVEN_NUM2" /* GXT: Not enough players in the session */;
 			}
 			else
 			{
-				sParam1 = "FMEVEN_NUM3";
+				sParam1 = "FMEVEN_NUM3" /* GXT: Not enough players available in the session */;
 			}
 		}
 		func_650(66, sParam0, sParam1, 1, -1, 2, 1, 0);
@@ -23370,13 +23370,13 @@ char* func_646()//Position - 0x1CC50
 {
 	if (Local_91.f_27 == joaat("rhino"))
 	{
-		return "ABLIP_TANK";
+		return "ABLIP_TANK" /* GXT: ~BLIP_TEMP_1~ */;
 	}
 	else if (VEHICLE::IS_THIS_MODEL_A_PLANE(Local_91.f_27))
 	{
-		return "ABLIP_PLANE";
+		return "ABLIP_PLANE" /* GXT: ~BLIP_TEMP_1~ */;
 	}
-	return "ABLIP_HELI";
+	return "ABLIP_HELI" /* GXT: ~BLIP_TEMP_1~ */;
 }
 
 void func_647(int iParam0, int iParam1, bool bParam2)//Position - 0x1CC84
@@ -28118,11 +28118,11 @@ void func_732(int iParam0)//Position - 0x21EA5
 				{
 					if (!func_768())
 					{
-						func_733("UW_HELP1", func_646(), func_645(1), 30000);
+						func_733("UW_HELP1" /* GXT: ~s~Kill List~s~ ~HUD_COLOUR_NET_PLAYER2~~a~ ~s~is available. Enter the vehicle and destroy the Merryweather patrols for $~1~ and RP. */, func_646(), func_645(1), 30000);
 					}
 					else
 					{
-						func_733("UW_HELP1C", func_646(), func_645(1), 30000);
+						func_733("UW_HELP1C" /* GXT: ~s~Kill List Competitive~s~ ~HUD_COLOUR_NET_PLAYER2~~a~ ~s~is available. Enter one of the vehicles and destroy the Merryweather patrols for $~1~ and RP. */, func_646(), func_645(1), 30000);
 					}
 					func_435(0);
 					AUDIO::PLAY_SOUND_FRONTEND(-1, "Event_Start_Text", "GTAO_FM_Events_Soundset", false);
@@ -28210,7 +28210,7 @@ void func_736(bool bParam0)//Position - 0x21FF8
 						}
 						if (PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), NETWORK::NET_TO_VEH(Local_91.f_7[bParam0]), false))
 						{
-							if (func_740("UW_HELP2", func_646()) || func_740("UW_HELP2C", func_646()))
+							if (func_740("UW_HELP2" /* GXT: Enter the vehicle ~HUD_COLOUR_NET_PLAYER2~~a~ ~s~to start Kill List. */, func_646()) || func_740("UW_HELP2C" /* GXT: Enter a vehicle ~HUD_COLOUR_NET_PLAYER2~~a~ ~s~to start Kill List Competitive. */, func_646()))
 							{
 								HUD::CLEAR_HELP(true);
 							}
@@ -28219,7 +28219,7 @@ void func_736(bool bParam0)//Position - 0x21FF8
 								func_651(1);
 							}
 							iVar0 = func_739(PLAYER::PLAYER_PED_ID(), 0);
-							if (func_644("UW_HELP1", func_646(), func_645(1)) || func_644("UW_HELP1C", func_646(), func_645(1)))
+							if (func_644("UW_HELP1" /* GXT: ~s~Kill List~s~ ~HUD_COLOUR_NET_PLAYER2~~a~ ~s~is available. Enter the vehicle and destroy the Merryweather patrols for $~1~ and RP. */, func_646(), func_645(1)) || func_644("UW_HELP1C" /* GXT: ~s~Kill List Competitive~s~ ~HUD_COLOUR_NET_PLAYER2~~a~ ~s~is available. Enter one of the vehicles and destroy the Merryweather patrols for $~1~ and RP. */, func_646(), func_645(1)))
 							{
 								HUD::CLEAR_HELP(true);
 							}
@@ -28253,11 +28253,11 @@ void func_736(bool bParam0)//Position - 0x21FF8
 										{
 											if (!func_768())
 											{
-												func_738("UW_HELP2", func_646(), 30000);
+												func_738("UW_HELP2" /* GXT: Enter the vehicle ~HUD_COLOUR_NET_PLAYER2~~a~ ~s~to start Kill List. */, func_646(), 30000);
 											}
 											else
 											{
-												func_738("UW_HELP2C", func_646(), 30000);
+												func_738("UW_HELP2C" /* GXT: Enter a vehicle ~HUD_COLOUR_NET_PLAYER2~~a~ ~s~to start Kill List Competitive. */, func_646(), 30000);
 											}
 											func_435(1);
 											MISC::SET_BIT(&uLocal_95, 1);
@@ -28287,11 +28287,11 @@ void func_736(bool bParam0)//Position - 0x21FF8
 												{
 													if (!func_768())
 													{
-														func_436("UW_COPS", 30000);
+														func_436("UW_COPS" /* GXT: Lose the Cops before starting Kill List. */, 30000);
 													}
 													else
 													{
-														func_436("UW_COPSC", 30000);
+														func_436("UW_COPSC" /* GXT: Lose the Cops before starting Kill List Competitive. */, 30000);
 													}
 													func_435(1);
 													MISC::SET_BIT(&uLocal_95, 4);
@@ -28330,11 +28330,11 @@ void func_736(bool bParam0)//Position - 0x21FF8
 										{
 											if (!func_768())
 											{
-												func_436("UW_PASSMD", 30000);
+												func_436("UW_PASSMD" /* GXT: You can't participate in this event while Passive Mode is enabled. */, 30000);
 											}
 											else
 											{
-												func_436("UW_PASSMD", 30000);
+												func_436("UW_PASSMD" /* GXT: You can't participate in this event while Passive Mode is enabled. */, 30000);
 											}
 											func_435(1);
 											MISC::SET_BIT(&uLocal_96, 2);
@@ -28371,11 +28371,11 @@ void func_736(bool bParam0)//Position - 0x21FF8
 								{
 									Local_94[NETWORK::PARTICIPANT_ID_TO_INT() /*18*/].f_9 = -1;
 								}
-								if (func_697("UW_TIMEL"))
+								if (func_697("UW_TIMEL" /* GXT: Kill List will start when the vehicle is full or when the time expires. */))
 								{
 									HUD::CLEAR_HELP(true);
 								}
-								if (func_697("UW_TIMELA"))
+								if (func_697("UW_TIMELA" /* GXT: Kill List Competitive will start when all the vehicles are full or when the time expires. */))
 								{
 									HUD::CLEAR_HELP(true);
 								}
@@ -28428,7 +28428,7 @@ void func_736(bool bParam0)//Position - 0x21FF8
 								{
 									if (BitTest(Local_91.f_3, 9) || !func_768())
 									{
-										if (func_697("UW_MINV"))
+										if (func_697("UW_MINV" /* GXT: Players are required in at least two Kill List Competitive vehicles before the mode will start. */))
 										{
 										}
 										if (!BitTest(uLocal_95, 5))
@@ -28441,11 +28441,11 @@ void func_736(bool bParam0)//Position - 0x21FF8
 													{
 														if (func_112() > 1)
 														{
-															func_436("UW_TIMELA", 30000);
+															func_436("UW_TIMELA" /* GXT: Kill List Competitive will start when all the vehicles are full or when the time expires. */, 30000);
 														}
 														else
 														{
-															func_436("UW_TIMEL", 30000);
+															func_436("UW_TIMEL" /* GXT: Kill List will start when the vehicle is full or when the time expires. */, 30000);
 														}
 														func_435(1);
 														MISC::SET_BIT(&uLocal_95, 5);
@@ -28464,7 +28464,7 @@ void func_736(bool bParam0)//Position - 0x21FF8
 												{
 													if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 													{
-														func_436("UW_MINV", 30000);
+														func_436("UW_MINV" /* GXT: Players are required in at least two Kill List Competitive vehicles before the mode will start. */, 30000);
 														func_435(1);
 														MISC::SET_BIT(&uLocal_95, 14);
 													}
@@ -28480,7 +28480,7 @@ void func_736(bool bParam0)//Position - 0x21FF8
 					{
 						if (ENTITY::GET_ENTITY_MODEL(NETWORK::NET_TO_VEH(Local_91.f_7[bParam0])) == joaat("valkyrie"))
 						{
-							if (!func_697("UW_VALK") && !func_697("UW_VALKC"))
+							if (!func_697("UW_VALK" /* GXT: At least two players are required to start Kill List in a Valkyrie. */) && !func_697("UW_VALKC" /* GXT: At least two players are required in at least two Valkyrie helicopters to start Kill List Competitive. */))
 							{
 								HUD::CLEAR_ALL_HELP_MESSAGES();
 								if (BitTest(uLocal_95, 8))
@@ -28507,11 +28507,11 @@ void func_736(bool bParam0)//Position - 0x21FF8
 									{
 										if (!func_768())
 										{
-											func_436("UW_VALK", 30000);
+											func_436("UW_VALK" /* GXT: At least two players are required to start Kill List in a Valkyrie. */, 30000);
 										}
 										else
 										{
-											func_436("UW_VALKC", 30000);
+											func_436("UW_VALKC" /* GXT: At least two players are required in at least two Valkyrie helicopters to start Kill List Competitive. */, 30000);
 										}
 										func_435(1);
 										MISC::SET_BIT(&uLocal_95, 8);
@@ -28555,7 +28555,7 @@ void func_736(bool bParam0)//Position - 0x21FF8
 											}
 											if (!bVar8)
 											{
-												func_436("UW_VALKC", 30000);
+												func_436("UW_VALKC" /* GXT: At least two players are required in at least two Valkyrie helicopters to start Kill List Competitive. */, 30000);
 												func_435(1);
 												MISC::SET_BIT(&uLocal_95, 8);
 											}
@@ -28590,11 +28590,11 @@ void func_736(bool bParam0)//Position - 0x21FF8
 												{
 													if (func_768())
 													{
-														func_436("UW_EXITVC", 30000);
+														func_436("UW_EXITVC" /* GXT: You cannot exit the vehicle while Kill List Competitive is active. */, 30000);
 													}
 													else
 													{
-														func_436("UW_EXITV", 30000);
+														func_436("UW_EXITV" /* GXT: You cannot exit the vehicle while Kill List is active. */, 30000);
 													}
 													func_435(1);
 													MISC::SET_BIT(&uLocal_95, 6);
@@ -28664,11 +28664,11 @@ void func_736(bool bParam0)//Position - 0x21FF8
 									{
 										if (!func_768())
 										{
-											func_436("UW_TUT", -1);
+											func_436("UW_TUT" /* GXT: You are unable to take part in Kill List until you have completed the tutorial. */, -1);
 										}
 										else
 										{
-											func_436("UW_TUTC", -1);
+											func_436("UW_TUTC" /* GXT: You are unable to take part in Kill List Competitive until you have completed the tutorial. */, -1);
 										}
 										func_435(1);
 										MISC::SET_BIT(&uLocal_96, 14);
@@ -28677,11 +28677,11 @@ void func_736(bool bParam0)//Position - 0x21FF8
 									{
 										if (!func_768())
 										{
-											func_436("UW_HIDE", -1);
+											func_436("UW_HIDE" /* GXT: You are unable to take part in Kill List as you have chosen to hide the event. */, -1);
 										}
 										else
 										{
-											func_436("UW_HIDEC", -1);
+											func_436("UW_HIDEC" /* GXT: You are unable to take part in Kill List Competitive as you have chosen to hide the event. */, -1);
 										}
 										func_435(1);
 										MISC::SET_BIT(&uLocal_96, 14);
@@ -30679,11 +30679,11 @@ void func_773()//Position - 0x25268
 								HUD::SET_BLIP_PRIORITY(iLocal_102[bVar0], 9);
 								if (func_768())
 								{
-									HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_102[bVar0], "UW_BLIPC");
+									HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_102[bVar0], "UW_BLIPC" /* GXT: Kill List Competitive */);
 								}
 								else
 								{
-									HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_102[bVar0], "UW_BLIP");
+									HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_102[bVar0], "UW_BLIP" /* GXT: Kill List */);
 								}
 								if (!BitTest(uLocal_96, 3))
 								{
@@ -30770,7 +30770,7 @@ void func_777()//Position - 0x25493
 			if (((!HUD::IS_RADAR_HIDDEN() && !HUD::IS_HELP_MESSAGE_BEING_DISPLAYED()) && !func_368()) && func_869(PLAYER::PLAYER_ID(), 1, 1))
 			{
 				MISC::SET_BIT(&(Global_1836844.f_1), 7);
-				func_436("FME_PASINT", 30000);
+				func_436("FME_PASINT" /* GXT: You will not be able to take part in this event in Passive Mode. */, 30000);
 				func_435(1);
 			}
 		}
@@ -30789,7 +30789,7 @@ void func_777()//Position - 0x25493
 		{
 			if (func_800())
 			{
-				func_436("AMEV_GA_RP", -1);
+				func_436("AMEV_GA_RP" /* GXT: When in an active Gang Attack location, some other players may not be attackable. */, -1);
 				if (func_348(PLAYER::PLAYER_ID()) != 200)
 				{
 					func_435(1);
@@ -30818,7 +30818,7 @@ void func_777()//Position - 0x25493
 		{
 			MISC::CLEAR_BIT(&(Global_1836844.f_1), 9);
 			func_799(0);
-			func_436("FME_TBL00", -1);
+			func_436("FME_TBL00" /* GXT: Job & Activity Triggers have been temporarily hidden as you are now an active participant in the current Freemode Event. They will return once the Event is over. */, -1);
 			func_435(1);
 		}
 	}
@@ -30837,7 +30837,7 @@ void func_777()//Position - 0x25493
 			{
 				MISC::CLEAR_BIT(&(Global_1836844.f_1), 18);
 				MISC::SET_BIT(&(Global_1836844.f_1), 19);
-				func_436("AMTT_RPAS", -1);
+				func_436("AMTT_RPAS" /* GXT: You have been removed from the current event because you triggered a Time Trial. */, -1);
 				func_435(1);
 			}
 		}
@@ -30975,7 +30975,7 @@ void func_779(int iParam0, int iParam1)//Position - 0x25A37
 		if (func_421() > 0)
 		{
 			func_782(iParam0);
-			if (func_697("AMEV_LBD_HELP"))
+			if (func_697("AMEV_LBD_HELP" /* GXT: Press ~INPUT_MULTIPLAYER_INFO~ to show the Freemode Event leaderboard. */))
 			{
 				HUD::CLEAR_HELP(true);
 			}

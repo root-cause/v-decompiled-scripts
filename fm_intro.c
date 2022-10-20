@@ -3239,12 +3239,12 @@ void func_84()//Position - 0x3035
 	{
 		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("");
 		StringCopy(&cVar1, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_8746[1 /*6*/])), 64);
-		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253");
+		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253" /* GXT: New Contact */);
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, sVar2, &cVar1);
 	}
 	else
 	{
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_255");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_255" /* GXT: New Contact: ~n~~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_8746[1 /*6*/]));
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, "", 0);
 	}
@@ -3589,7 +3589,7 @@ int func_107(var uParam0, int iParam1, int iParam2, char* sParam3, char* sParam4
 	}
 	if (iParam5 == 4)
 	{
-		StringCopy(&Var0, "CELL_226", 16);
+		StringCopy(&Var0, "CELL_226" /* GXT: Accept? */, 16);
 		return func_174(uParam0, iParam1, sParam3, sParam4, &Var0);
 	}
 	if (iParam5 == 1 || iParam5 == 7)
@@ -4268,7 +4268,7 @@ void func_121(int iParam0)//Position - 0x3E2E
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(42);
 								GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							}
-							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB")) && BitTest(Global_8137, 6))
+							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB" /* GXT: Benny's */)) && BitTest(Global_8137, 6))
 							{
 								GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT");
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
@@ -6648,7 +6648,7 @@ int func_210(int* iParam0, int* iParam1)//Position - 0x6715
 				if (!BitTest(*iParam0, 2))
 				{
 					HUD::CLEAR_HELP(true);
-					func_76("FMIC_INTRO2", -1);
+					func_76("FMIC_INTRO2" /* GXT: In GTA Online, you can carry out Jobs with, or compete against, players around the world. */, -1);
 					MISC::SET_BIT(iParam0, 2);
 				}
 				CAM::SET_CAM_PARAMS(iParam0->f_7, -259.3686f, -553.8571f, 142.6048f, 13.2752f, -0.5186f, -143.3378f, 44.9959f, 0, 1, 1, 2);
@@ -6756,7 +6756,7 @@ int func_210(int* iParam0, int* iParam1)//Position - 0x6715
 				}
 				if (!BitTest(*iParam0, 5))
 				{
-					func_76("FMIC_RACE1", -1);
+					func_76("FMIC_RACE1" /* GXT: Take part in Jobs, including Races, with your friends, Crew members or others and check your position on the global leaderboards in-game or on the Rockstar Social Club. */, -1);
 					MISC::SET_BIT(iParam0, 5);
 				}
 				func_309(iParam0, 14);
@@ -6830,7 +6830,7 @@ int func_210(int* iParam0, int* iParam1)//Position - 0x6715
 				if (!BitTest(*iParam0, 6))
 				{
 					MISC::SET_BIT(iParam0, 6);
-					func_76("FMIC_RACE2", -1);
+					func_76("FMIC_RACE2" /* GXT: You can challenge others with Jobs you have created yourself or bet on players to win and earn cash. */, -1);
 				}
 				if (!BitTest(iParam0->f_3, 0))
 				{
@@ -6986,7 +6986,7 @@ int func_210(int* iParam0, int* iParam1)//Position - 0x6715
 					STREAMING::SET_SRL_READAHEAD_TIMES(9, 13, 9, 13);
 					func_273(iParam0);
 					func_272();
-					func_76("FMIC_GAR", -1);
+					func_76("FMIC_GAR" /* GXT: You can store your own collection of cars and motorcycles in Garages that you can purchase around the Map. */, -1);
 					iParam0->f_6 = 23;
 				}
 				break;
@@ -7108,7 +7108,7 @@ int func_210(int* iParam0, int* iParam1)//Position - 0x6715
 				func_264(iParam0);
 				MISC::LOAD_CLOUD_HAT("CONTRAILS", 0f);
 				STREAMING::SET_SRL_READAHEAD_TIMES(9, 9, 9, 9);
-				func_76("FMIC_TENN", -1);
+				func_76("FMIC_TENN" /* GXT: ~s~Challenge others to Tennis, Golf and many other Activities. */, -1);
 				CUTSCENE::START_CUTSCENE(4);
 				func_256(1, 1, 1, 0, 0, 0, 0);
 				iParam0->f_6 = 30;
@@ -11878,7 +11878,7 @@ void func_323(int iParam0, bool bParam1)//Position - 0xF2F7
 	sVar0 = "NULL";
 	iVar1 = 0;
 	sVar0 = func_327(iParam0, &iVar1);
-	if (!MISC::ARE_STRINGS_EQUAL("NONE", sVar0) && iVar1 != 0)
+	if (!MISC::ARE_STRINGS_EQUAL("NONE" /* GXT: None */, sVar0) && iVar1 != 0)
 	{
 		if (bParam1)
 		{
@@ -18855,7 +18855,7 @@ void func_519()//Position - 0x18F62
 
 bool func_520()//Position - 0x18F76
 {
-	return func_197("FM_RETRY_INV");
+	return func_197("FM_RETRY_INV" /* GXT: Press ~INPUT_FRONTEND_X~ to replay the Job. Press ~INPUT_FRONTEND_CANCEL~ to start a random Job. More than half the players have to agree. */);
 }
 
 void func_521(int iParam0, int iParam1)//Position - 0x18F86

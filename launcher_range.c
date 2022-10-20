@@ -164,7 +164,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_61 = 2050;
 	iLocal_62 = -1;
 	iLocal_63 = -1;
-	sLocal_65 = "CC_SUBSTR";
+	sLocal_65 = "CC_SUBSTR" /* GXT: ~INPUT_CONTEXT~ */;
 	fLocal_66 = 125f;
 	iLocal_67 = 1;
 	iLocal_69 = 263;
@@ -420,7 +420,7 @@ void __EntryFunction__()//Position - 0x0
 								bVar2 = false;
 								if (!func_100(uLocal_58, 33554432))
 								{
-									func_55("MG_YOU_IS_BROKE", iLocal_79, -1);
+									func_55("MG_YOU_IS_BROKE" /* GXT: Can't afford this activity. $~1~ needed to start. */, iLocal_79, -1);
 									func_70(&uLocal_58, 33554432);
 								}
 							}
@@ -826,7 +826,7 @@ void func_7()//Position - 0xBEA
 	}
 	else if (MISC::IS_PS3_VERSION() || func_8())
 	{
-		StringCopy(&cVar0, "PRESENCE_0_STR", 24);
+		StringCopy(&cVar0, "PRESENCE_0_STR" /* GXT: Playing story */, 24);
 		NETWORK::NETWORK_SET_RICH_PRESENCE_STRING(0, &cVar0);
 	}
 }
@@ -3136,7 +3136,7 @@ bool func_100(var uParam0, int iParam1)//Position - 0x3B07
 void func_101()//Position - 0x3B16
 {
 	StringCopy(&Local_51, "range_modern", 64);
-	sLocal_65 = "PLAY_RANGE";
+	sLocal_65 = "PLAY_RANGE" /* GXT: Press ~INPUT_CONTEXT~ to use the Shooting Range. The entry fee is $~1~. */;
 	fLocal_77 = 2f;
 	fLocal_66 = (SYSTEM::TO_FLOAT(func_103(91)) + 5f);
 	iLocal_63 = 11;

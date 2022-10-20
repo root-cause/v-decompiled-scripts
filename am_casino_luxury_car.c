@@ -6760,7 +6760,7 @@ int func_89(int iParam0)//Position - 0x8CDC
 				iVar2 = MISC::GET_HASH_KEY(&cVar3);
 				if (iVar2 != 0)
 				{
-					if (iVar2 == MISC::GET_HASH_KEY("MNU_CAGE") || iVar2 == MISC::GET_HASH_KEY("SABRE_CAG"))
+					if (iVar2 == MISC::GET_HASH_KEY("MNU_CAGE" /* GXT: Roll Cage and Chassis Upgrade */) || iVar2 == MISC::GET_HASH_KEY("SABRE_CAG" /* GXT: Stunt Cage */))
 					{
 						return 1;
 					}
@@ -14564,7 +14564,7 @@ void func_291()//Position - 0x17EB0
 
 char* func_292()//Position - 0x17F03
 {
-	return "CASINO_VD";
+	return "CASINO_VD" /* GXT: Luxury Car */;
 }
 
 void func_293(int iParam0, int iParam1)//Position - 0x17F0E

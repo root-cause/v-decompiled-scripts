@@ -1773,7 +1773,7 @@ char* func_56(int iParam0)//Position - 0x18EB
 			break;
 		
 		case 3:
-			return "Cheetah";
+			return "Cheetah" /* GXT: Cheetah */;
 			break;
 		
 		case 4:
@@ -1781,7 +1781,7 @@ char* func_56(int iParam0)//Position - 0x18EB
 			break;
 		
 		case 5:
-			return "Infernus";
+			return "Infernus" /* GXT: Infernus */;
 			break;
 		
 		case 6:

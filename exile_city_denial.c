@@ -264,11 +264,11 @@ void __EntryFunction__()//Position - 0x0
 							{
 								if (bLocal_32)
 								{
-									func_8("CITDENAL", -1);
+									func_8("CITDENAL" /* GXT: Michael and Trevor have been exiled from the city. If they enter the city, Martin's henchmen will track them down. */, -1);
 								}
 								else
 								{
-									func_8("CITDENAL_R", -1);
+									func_8("CITDENAL_R" /* GXT: Michael and Trevor have been exiled by Martin. Approaching his ranch will cause his henchmen to attack. */, -1);
 								}
 								iVar1 = 120000;
 							}

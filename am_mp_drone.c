@@ -2745,22 +2745,22 @@ void func_112()//Position - 0x2F41
 		if (func_128(0, -1, 0))
 		{
 			func_127(-1);
-			func_126(20, "DRONE_SPACE", -1);
-			func_126(21, "DRONE_POSITION", -1);
+			func_126(20, "DRONE_SPACE" /* GXT: / */, -1);
+			func_126(21, "DRONE_POSITION" /* GXT: Move */, -1);
 			if (func_35())
 			{
 				if (!PAD::IS_USING_KEYBOARD_AND_MOUSE(0))
 				{
-					func_125(208, "DRONE_SPEEDU", -1, 0);
-					func_125(207, "DRONE_SLOWD", -1, 0);
+					func_125(208, "DRONE_SPEEDU" /* GXT: Speed Up */, -1, 0);
+					func_125(207, "DRONE_SLOWD" /* GXT: Slow Down */, -1, 0);
 				}
 				else
 				{
-					func_125(209, "DRONE_SPEEDU", -1, 0);
-					func_125(210, "DRONE_SLOWD", -1, 0);
+					func_125(209, "DRONE_SPEEDU" /* GXT: Speed Up */, -1, 0);
+					func_125(210, "DRONE_SLOWD" /* GXT: Slow Down */, -1, 0);
 				}
 			}
-			func_125(75, "MOVE_DRONE_RE", -1, 0);
+			func_125(75, "MOVE_DRONE_RE" /* GXT: Exit */, -1, 0);
 			MISC::SET_BIT(&(Local_96.f_5), 16);
 		}
 	}
@@ -3495,11 +3495,11 @@ void func_131()//Position - 0x3BC5
 	{
 		func_148(Local_96.f_20);
 	}
-	func_147(0, "DRONE_ZOOM_1");
+	func_147(0, "DRONE_ZOOM_1" /* GXT: x1 */);
 	func_147(1, "");
-	func_147(2, "DRONE_ZOOM_2");
+	func_147(2, "DRONE_ZOOM_2" /* GXT: x2 */);
 	func_147(3, "");
-	func_147(4, "DRONE_ZOOM_3");
+	func_147(4, "DRONE_ZOOM_3" /* GXT: x4 */);
 	func_145();
 	func_143();
 	func_141();
@@ -3680,7 +3680,7 @@ void func_134()//Position - 0x45BC
 			iVar0 = func_137(22045, -1);
 			if (iVar0 < 4)
 			{
-				func_136("HACK_DRONE_DIS", -1);
+				func_136("HACK_DRONE_DIS" /* GXT: The Drone is losing connection. It must remain in proximity to the Terrorbyte in order to receive a signal. If you fly it too far the Drone will be deactivated. */, -1);
 				iVar0++;
 				func_135(22045, iVar0, -1);
 				MISC::SET_BIT(&(Global_1946250.f_3), 15);
@@ -4034,27 +4034,27 @@ void func_163()//Position - 0x4BF9
 		if (func_128(0, -1, 0))
 		{
 			func_127(-1);
-			func_126(21, "DRONE_MOVE", -1);
-			func_126(20, "DRONE_POSITION", -1);
+			func_126(21, "DRONE_MOVE" /* GXT: Turn */, -1);
+			func_126(20, "DRONE_POSITION" /* GXT: Move */, -1);
 			if (!PAD::IS_USING_KEYBOARD_AND_MOUSE(0))
 			{
-				func_125(210, "CELL_284", -1, 0);
+				func_125(210, "CELL_284" /* GXT: Zoom */, -1, 0);
 				if ((!func_38() && !func_24()) && func_161())
 				{
-					func_125(209, "BOOST_DRONE_E", -1, 0);
+					func_125(209, "BOOST_DRONE_E" /* GXT: Boost */, -1, 0);
 				}
-				func_125(208, "MOVE_DRONE_UP", -1, 0);
-				func_125(207, "MOVE_DRONE_DO", -1, 0);
+				func_125(208, "MOVE_DRONE_UP" /* GXT: Move Up */, -1, 0);
+				func_125(207, "MOVE_DRONE_DO" /* GXT: Move Down */, -1, 0);
 			}
 			else
 			{
-				func_126(29, "CELL_284", -1);
+				func_126(29, "CELL_284" /* GXT: Zoom */, -1);
 				if ((!func_38() && !func_24()) && func_161())
 				{
-					func_125(203, "BOOST_DRONE_E", -1, 0);
+					func_125(203, "BOOST_DRONE_E" /* GXT: Boost */, -1, 0);
 				}
-				func_125(209, "MOVE_DRONE_UP", -1, 0);
-				func_125(210, "MOVE_DRONE_DO", -1, 0);
+				func_125(209, "MOVE_DRONE_UP" /* GXT: Move Up */, -1, 0);
+				func_125(210, "MOVE_DRONE_DO" /* GXT: Move Down */, -1, 0);
 			}
 			if (!func_38())
 			{
@@ -4065,11 +4065,11 @@ void func_163()//Position - 0x4BF9
 				}
 				if (func_24())
 				{
-					func_125(iVar0, "MOVE_DRONE_EM", -1, 0);
+					func_125(iVar0, "MOVE_DRONE_EM" /* GXT: EMP */, -1, 0);
 				}
 				else
 				{
-					func_125(iVar0, "MOVE_DRONE_ST", -1, 0);
+					func_125(iVar0, "MOVE_DRONE_ST" /* GXT: Shock */, -1, 0);
 				}
 				iVar1 = 205;
 				if (PAD::IS_USING_KEYBOARD_AND_MOUSE(0))
@@ -4078,11 +4078,11 @@ void func_163()//Position - 0x4BF9
 				}
 				if (!func_162(0))
 				{
-					func_125(iVar1, "MOVE_DRONE_EX", -1, 0);
+					func_125(iVar1, "MOVE_DRONE_EX" /* GXT: Detonate */, -1, 0);
 				}
 				else if (func_170())
 				{
-					func_125(iVar1, "MOVE_DRONE_TRG", -1, 0);
+					func_125(iVar1, "MOVE_DRONE_TRG" /* GXT: Tranquilizer Gun */, -1, 0);
 				}
 			}
 			if (!func_24())
@@ -4092,10 +4092,10 @@ void func_163()//Position - 0x4BF9
 				}
 				else
 				{
-					func_125(201, "DRONE_PHOTO", -1, 0);
+					func_125(201, "DRONE_PHOTO" /* GXT: Photo Mode */, -1, 0);
 				}
 			}
-			func_125(80, "MOVE_DRONE_RE", -1, 0);
+			func_125(80, "MOVE_DRONE_RE" /* GXT: Exit */, -1, 0);
 			MISC::SET_BIT(&(Local_96.f_5), 16);
 		}
 	}
@@ -5026,7 +5026,7 @@ int func_193()//Position - 0x5DE7
 		{
 			return 1;
 		}
-		if (func_194("AIRDEF_WARN"))
+		if (func_194("AIRDEF_WARN" /* GXT: You are entering protected air space. If you remain you will be shot. */))
 		{
 			if (func_22(&(Local_96.f_346), 2000, 0))
 			{
@@ -9110,17 +9110,17 @@ void func_312()//Position - 0xAD4D
 		{
 			if (func_314(14))
 			{
-				func_313(2, "CELL_2", 2, "appInternet", 6, 1, 1, 0, 0);
-				func_313(14, "CELL_29", 7, "appMPJobListNEW", 12, 1, 1, 0, 0);
+				func_313(2, "CELL_2" /* GXT: Internet */, 2, "appInternet", 6, 1, 1, 0, 0);
+				func_313(14, "CELL_29" /* GXT: Job List */, 7, "appMPJobListNEW", 12, 1, 1, 0, 0);
 			}
 			else
 			{
-				func_313(14, "CELL_29", 2, "appMPJobListNEW", 12, 1, 1, 0, 0);
+				func_313(14, "CELL_29" /* GXT: Job List */, 2, "appMPJobListNEW", 12, 1, 1, 0, 0);
 			}
 		}
 		else
 		{
-			func_313(4, "CELL_23", 2, "appChecklist", 39, 1, 1, 0, 0);
+			func_313(4, "CELL_23" /* GXT: Check List */, 2, "appChecklist", 39, 1, 1, 0, 0);
 		}
 	}
 }
@@ -9310,103 +9310,103 @@ void func_323()//Position - 0xB0F4
 			}
 			iVar2++;
 		}
-		func_313(7, "CELL_5", 0, "appEmail", 4, 1, 1, 0, 0);
-		func_313(1, "CELL_1", 1, "appTextMessage", 2, 1, 1, 0, 0);
-		func_313(4, "CELL_23", 2, "appChecklist", 39, 1, 1, 0, 0);
+		func_313(7, "CELL_5" /* GXT: Email */, 0, "appEmail", 4, 1, 1, 0, 0);
+		func_313(1, "CELL_1" /* GXT: Texts */, 1, "appTextMessage", 2, 1, 1, 0, 0);
+		func_313(4, "CELL_23" /* GXT: Check List */, 2, "appChecklist", 39, 1, 1, 0, 0);
 		if ((Global_43052 == 15 && func_325(0) == 0) && Global_8141 == 0)
 		{
-			func_313(20, "CELL_32", 3, "appSettings", 43, 1, 1, 0, 0);
+			func_313(20, "CELL_32" /* GXT: Quick Save */, 3, "appSettings", 43, 1, 1, 0, 0);
 			Global_20467 = 0;
 			Global_8142 = 255;
 		}
 		else
 		{
-			func_313(20, "CELL_32", 3, "appSettings", 43, 1, 1, 0, 0);
+			func_313(20, "CELL_32" /* GXT: Quick Save */, 3, "appSettings", 43, 1, 1, 0, 0);
 			Global_20467 = 1;
 			Global_8142 = 42;
 		}
 		if (iVar1 == 1)
 		{
-			func_313(0, "CELL_0", 4, "appContacts", 27, 1, 1, 0, 0);
+			func_313(0, "CELL_0" /* GXT: Contacts */, 4, "appContacts", 27, 1, 1, 0, 0);
 		}
 		else
 		{
-			func_313(0, "CELL_0", 4, "appContacts", 5, 1, 1, 0, 0);
+			func_313(0, "CELL_0" /* GXT: Contacts */, 4, "appContacts", 5, 1, 1, 0, 0);
 		}
-		func_313(10, "CELL_16", 5, "appSettings", 24, 1, 1, 0, 0);
-		func_313(3, "CELL_7", 6, "appCamera", 1, 1, 1, 0, 0);
-		func_313(2, "CELL_2", 7, "appInternet", 6, 1, 1, 0, 0);
+		func_313(10, "CELL_16" /* GXT: Settings */, 5, "appSettings", 24, 1, 1, 0, 0);
+		func_313(3, "CELL_7" /* GXT: Snapmatic */, 6, "appCamera", 1, 1, 1, 0, 0);
+		func_313(2, "CELL_2" /* GXT: Internet */, 7, "appInternet", 6, 1, 1, 0, 0);
 		if (Global_113386.f_14051.f_89 == 1)
 		{
-			func_313(17, "CELL_28", 8, "appTrackify", 42, 1, 1, 0, 0);
+			func_313(17, "CELL_28" /* GXT: Trackify */, 8, "appTrackify", 42, 1, 1, 0, 0);
 		}
 		if (Global_113386.f_14051.f_88 == 1)
 		{
-			func_313(16, "CELL_25", 0, "appContacts", 40, 2, 1, 0, 0);
+			func_313(16, "CELL_25" /* GXT: Sniper */, 0, "appContacts", 40, 2, 1, 0, 0);
 		}
-		func_313(25, "CELL_14", -99, "appContacts", 17, 2, 1, 0, 0);
-		func_313(9, "CELL_13", -99, "appContacts", 13, 2, 1, 0, 0);
-		func_313(11, "CELL_14", -99, "appContacts", 8, 2, 1, 0, 0);
-		func_313(27, "CELL_15", -99, "appContacts", 17, 2, 1, 0, 0);
-		func_313(28, "CELL_15", -99, "appContacts", 17, 2, 1, 0, 0);
-		func_313(29, "CELL_15", -99, "appSettings", 17, 2, 1, 0, 0);
-		func_313(30, "CELL_15", -99, "appContacts", 17, 2, 1, 0, 0);
-		func_313(31, "CELL_15", -99, "appContacts", 17, 2, 1, 0, 0);
-		func_313(32, "CELL_15", -99, "appSettings", 17, 2, 1, 0, 0);
+		func_313(25, "CELL_14" /* GXT: More Apps */, -99, "appContacts", 17, 2, 1, 0, 0);
+		func_313(9, "CELL_13" /* GXT: BAWSAQ */, -99, "appContacts", 13, 2, 1, 0, 0);
+		func_313(11, "CELL_14" /* GXT: More Apps */, -99, "appContacts", 8, 2, 1, 0, 0);
+		func_313(27, "CELL_15" /* GXT: Spare */, -99, "appContacts", 17, 2, 1, 0, 0);
+		func_313(28, "CELL_15" /* GXT: Spare */, -99, "appContacts", 17, 2, 1, 0, 0);
+		func_313(29, "CELL_15" /* GXT: Spare */, -99, "appSettings", 17, 2, 1, 0, 0);
+		func_313(30, "CELL_15" /* GXT: Spare */, -99, "appContacts", 17, 2, 1, 0, 0);
+		func_313(31, "CELL_15" /* GXT: Spare */, -99, "appContacts", 17, 2, 1, 0, 0);
+		func_313(32, "CELL_15" /* GXT: Spare */, -99, "appSettings", 17, 2, 1, 0, 0);
 	}
 	else
 	{
-		func_313(7, "CELL_5", 0, "appMPEmail", 4, 1, 1, 0, 0);
-		func_313(10, "CELL_16", 5, "appSettings", 24, 1, 1, 0, 0);
-		func_313(1, "CELL_1", 1, "appTextMessage", 2, 1, 1, 0, 0);
-		func_313(3, "CELL_7", 6, "appCamera", 1, 1, 1, 0, 0);
-		func_313(2, "CELL_2", 7, "appInternet", 6, 1, 1, 0, 0);
-		func_313(14, "CELL_29", 4, "appMPJobListNEW", 12, 1, 1, 0, 0);
-		func_313(0, "CELL_0", 2, "appContacts", 5, 1, 1, 0, 0);
-		func_313(21, "CELL_37", 3, "AppJIPMP", 14, 1, 1, 0, 0);
+		func_313(7, "CELL_5" /* GXT: Email */, 0, "appMPEmail", 4, 1, 1, 0, 0);
+		func_313(10, "CELL_16" /* GXT: Settings */, 5, "appSettings", 24, 1, 1, 0, 0);
+		func_313(1, "CELL_1" /* GXT: Texts */, 1, "appTextMessage", 2, 1, 1, 0, 0);
+		func_313(3, "CELL_7" /* GXT: Snapmatic */, 6, "appCamera", 1, 1, 1, 0, 0);
+		func_313(2, "CELL_2" /* GXT: Internet */, 7, "appInternet", 6, 1, 1, 0, 0);
+		func_313(14, "CELL_29" /* GXT: Job List */, 4, "appMPJobListNEW", 12, 1, 1, 0, 0);
+		func_313(0, "CELL_0" /* GXT: Contacts */, 2, "appContacts", 5, 1, 1, 0, 0);
+		func_313(21, "CELL_37" /* GXT: Quick Join */, 3, "AppJIPMP", 14, 1, 1, 0, 0);
 		if (BitTest(Global_4541229, 4) == 1)
 		{
-			func_313(17, "CELL_28", 8, "appTrackify", 42, 1, 1, 0, 0);
+			func_313(17, "CELL_28" /* GXT: Trackify */, 8, "appTrackify", 42, 1, 1, 0, 0);
 		}
-		func_313(13, "CELL_35", -99, "appMPCopBackup", 39, 1, 1, 0, 0);
+		func_313(13, "CELL_35" /* GXT: Player List */, -99, "appMPCopBackup", 39, 1, 1, 0, 0);
 		func_313(13, "CELL_20", -99, "appMPCopBackup", 16, 1, 1, 0, 0);
-		func_313(15, "CELL_18", -99, "appContacts", 8, 1, 1, 0, 0);
-		func_313(9, "CELL_13", -99, "appContacts", 13, 2, 1, 0, 0);
-		func_313(5, "CELL_4", -99, "appContacts", 12, 2, 1, 0, 0);
-		func_313(23, "CELL_15", 0, "appContacts", 17, 2, 1, 0, 0);
-		func_313(24, "CELL_15", 1, "appContacts", 17, 2, 1, 0, 0);
-		func_313(25, "CELL_15", 2, "appContacts", 17, 2, 1, 0, 0);
-		func_313(26, "CELL_15", 3, "appContacts", 17, 2, 1, 0, 0);
-		func_313(27, "CELL_15", 4, "appContacts", 17, 2, 1, 0, 0);
-		func_313(28, "CELL_15", 5, "appContacts", 17, 2, 1, 0, 0);
-		func_313(29, "CELL_15", 6, "appContacts", 17, 2, 1, 0, 0);
-		func_313(30, "CELL_15", 7, "appContacts", 17, 2, 1, 0, 0);
-		func_313(31, "CELL_15", 8, "appContacts", 17, 2, 1, 0, 0);
-		func_313(32, "CELL_15", 9, "appContacts", 17, 2, 1, 0, 0);
-		func_313(33, "CELL_15", 10, "appContacts", 17, 2, 1, 0, 0);
+		func_313(15, "CELL_18" /* GXT: Map */, -99, "appContacts", 8, 1, 1, 0, 0);
+		func_313(9, "CELL_13" /* GXT: BAWSAQ */, -99, "appContacts", 13, 2, 1, 0, 0);
+		func_313(5, "CELL_4" /* GXT: Sidetasks */, -99, "appContacts", 12, 2, 1, 0, 0);
+		func_313(23, "CELL_15" /* GXT: Spare */, 0, "appContacts", 17, 2, 1, 0, 0);
+		func_313(24, "CELL_15" /* GXT: Spare */, 1, "appContacts", 17, 2, 1, 0, 0);
+		func_313(25, "CELL_15" /* GXT: Spare */, 2, "appContacts", 17, 2, 1, 0, 0);
+		func_313(26, "CELL_15" /* GXT: Spare */, 3, "appContacts", 17, 2, 1, 0, 0);
+		func_313(27, "CELL_15" /* GXT: Spare */, 4, "appContacts", 17, 2, 1, 0, 0);
+		func_313(28, "CELL_15" /* GXT: Spare */, 5, "appContacts", 17, 2, 1, 0, 0);
+		func_313(29, "CELL_15" /* GXT: Spare */, 6, "appContacts", 17, 2, 1, 0, 0);
+		func_313(30, "CELL_15" /* GXT: Spare */, 7, "appContacts", 17, 2, 1, 0, 0);
+		func_313(31, "CELL_15" /* GXT: Spare */, 8, "appContacts", 17, 2, 1, 0, 0);
+		func_313(32, "CELL_15" /* GXT: Spare */, 9, "appContacts", 17, 2, 1, 0, 0);
+		func_313(33, "CELL_15" /* GXT: Spare */, 10, "appContacts", 17, 2, 1, 0, 0);
 		if (!BitTest(Global_4541229, 4) == 1)
 		{
 			if (Global_1836092)
 			{
-				func_313(23, "CELL_CIRCBREAK", 8, "AppVLSI", 54, 1, 1, 0, 0);
+				func_313(23, "CELL_CIRCBREAK" /* GXT: VLSI Unlock */, 8, "AppVLSI", 54, 1, 1, 0, 0);
 			}
 			else if (BitTest(Global_4541229, 20) == 1)
 			{
-				func_313(23, "CELL_SIGHTS", 8, "AppSettings", 59, 1, 1, 0, 0);
+				func_313(23, "CELL_SIGHTS" /* GXT: Sightseer */, 8, "AppSettings", 59, 1, 1, 0, 0);
 			}
 			else if (BitTest(Global_4541229, 22) == 1)
 			{
-				func_313(23, "CELL_EXTRACT", 8, "AppExtraction", 58, 1, 1, 0, 0);
+				func_313(23, "CELL_EXTRACT" /* GXT: Extraction */, 8, "AppExtraction", 58, 1, 1, 0, 0);
 			}
 			else if (BitTest(Global_4541229, 26) == 1)
 			{
 				if (func_324())
 				{
-					func_313(23, "CELL_0", -99, "appContacts", 5, 1, 1, 0, 0);
+					func_313(23, "CELL_0" /* GXT: Contacts */, -99, "appContacts", 5, 1, 1, 0, 0);
 				}
 				else
 				{
-					func_313(23, "CELL_SECHACK", 8, "AppSecuroHack", 57, 1, 1, 0, 0);
+					func_313(23, "CELL_SECHACK" /* GXT: SecuroServ Hack */, 8, "AppSecuroHack", 57, 1, 1, 0, 0);
 				}
 			}
 		}
@@ -9414,11 +9414,11 @@ void func_323()//Position - 0xB0F4
 		{
 			if (func_324())
 			{
-				func_313(23, "CELL_0", -99, "appContacts", 5, 1, 1, 0, 0);
+				func_313(23, "CELL_0" /* GXT: Contacts */, -99, "appContacts", 5, 1, 1, 0, 0);
 			}
 			else
 			{
-				func_313(23, "CELL_BOSSAGE", 8, "appMPBossAgency", 57, 1, 1, 0, 0);
+				func_313(23, "CELL_BOSSAGE" /* GXT: SecuroServ */, 8, "appMPBossAgency", 57, 1, 1, 0, 0);
 			}
 		}
 	}
@@ -11935,7 +11935,7 @@ void func_410()//Position - 0xE95F
 		else if (func_31() && !func_411())
 		{
 			HUD::CLEAR_HELP(true);
-			func_136("PIM_DRONAMOS", -1);
+			func_136("PIM_DRONAMOS" /* GXT: You are not in a safe place to launch the Nano Drone. */, -1);
 			func_298(PLAYER::PLAYER_ID(), 1, 0, 0);
 			func_383(7);
 		}
@@ -11998,7 +11998,7 @@ void func_412()//Position - 0xEAF6
 	}
 	if (func_425())
 	{
-		if (func_194("MP_SUBSEAT_2"))
+		if (func_194("MP_SUBSEAT_2" /* GXT: Press ~INPUT_CELLPHONE_SELECT~ to launch a guided missile. ~n~Press ~INPUT_CONTEXT~ to stand up. */))
 		{
 			HUD::CLEAR_HELP(true);
 		}
@@ -12836,10 +12836,10 @@ void func_455()//Position - 0xFC87
 			{
 				if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && !HUD::IS_HELP_MESSAGE_ON_SCREEN())
 				{
-					func_457("DRONE_TRIG");
+					func_457("DRONE_TRIG" /* GXT: Press ~INPUT_CONTEXT~ to launch a drone. */);
 				}
 			}
-			else if (func_194("DRONE_TRIG"))
+			else if (func_194("DRONE_TRIG" /* GXT: Press ~INPUT_CONTEXT~ to launch a drone. */))
 			{
 				HUD::CLEAR_HELP(true);
 			}
@@ -12852,7 +12852,7 @@ void func_455()//Position - 0xFC87
 					HUD::CLEAR_HELP(true);
 				}
 			}
-			else if (func_194("DRONE_TRIG"))
+			else if (func_194("DRONE_TRIG" /* GXT: Press ~INPUT_CONTEXT~ to launch a drone. */))
 			{
 				if ((PAD::IS_CONTROL_JUST_RELEASED(2, 51) || PAD::IS_DISABLED_CONTROL_JUST_RELEASED(2, 51)) || PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 				{
@@ -12867,9 +12867,9 @@ void func_455()//Position - 0xFC87
 		{
 			if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && !HUD::IS_HELP_MESSAGE_ON_SCREEN())
 			{
-				func_457("DRONE_TRIG");
+				func_457("DRONE_TRIG" /* GXT: Press ~INPUT_CONTEXT~ to launch a drone. */);
 			}
-			if (func_194("DRONE_TRIG"))
+			if (func_194("DRONE_TRIG" /* GXT: Press ~INPUT_CONTEXT~ to launch a drone. */))
 			{
 				if (PAD::IS_CONTROL_JUST_RELEASED(2, 51) || PAD::IS_DISABLED_CONTROL_JUST_RELEASED(2, 51))
 				{
@@ -12880,19 +12880,19 @@ void func_455()//Position - 0xFC87
 				}
 			}
 		}
-		else if (func_194("DRONE_TRIG"))
+		else if (func_194("DRONE_TRIG" /* GXT: Press ~INPUT_CONTEXT~ to launch a drone. */))
 		{
 			HUD::CLEAR_HELP(true);
 		}
 		if (func_456() || func_41())
 		{
-			if (func_194("DRONE_TRIG"))
+			if (func_194("DRONE_TRIG" /* GXT: Press ~INPUT_CONTEXT~ to launch a drone. */))
 			{
 				HUD::CLEAR_HELP(true);
 			}
 		}
 	}
-	else if (func_194("DRONE_TRIG"))
+	else if (func_194("DRONE_TRIG" /* GXT: Press ~INPUT_CONTEXT~ to launch a drone. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -13829,7 +13829,7 @@ void func_502(bool bParam0)//Position - 0x10EF8
 		Var1.f_4 = 0;
 		func_525(&Var1, 11);
 	}
-	if (func_194("DRONE_TRIG"))
+	if (func_194("DRONE_TRIG" /* GXT: Press ~INPUT_CONTEXT~ to launch a drone. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}

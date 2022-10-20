@@ -2730,7 +2730,7 @@ void func_76()//Position - 0x2C0E
 			func_117();
 		}
 	}
-	if ((func_116("FM_CTUT_RSP") || func_116("FM_CTUT_REP")) || func_116("FM_CTUT_LLS"))
+	if ((func_116("FM_CTUT_RSP" /* GXT: Get your vehicle resprayed. */) || func_116("FM_CTUT_REP" /* GXT: Get your vehicle repaired. */)) || func_116("FM_CTUT_LLS" /* GXT: Leave Los Santos Customs. */))
 	{
 		if (!func_115() || func_118())
 		{
@@ -2739,7 +2739,7 @@ void func_76()//Position - 0x2C0E
 	}
 	if (bLocal_95)
 	{
-		if (!func_116("FM_IHELP_LCP"))
+		if (!func_116("FM_IHELP_LCP" /* GXT: Lose the Cops. */))
 		{
 			if (!HUD::IS_MESSAGE_BEING_DISPLAYED())
 			{
@@ -2749,7 +2749,7 @@ void func_76()//Position - 0x2C0E
 					{
 						if (func_97())
 						{
-							func_91("FM_IHELP_LCP", 0);
+							func_91("FM_IHELP_LCP" /* GXT: Lose the Cops. */, 0);
 						}
 					}
 				}
@@ -2758,14 +2758,14 @@ void func_76()//Position - 0x2C0E
 	}
 	else if (!BitTest(uLocal_338, 18))
 	{
-		if (func_116("FM_IHELP_LCP"))
+		if (func_116("FM_IHELP_LCP" /* GXT: Lose the Cops. */))
 		{
-			func_84("FM_IHELP_LCP");
+			func_84("FM_IHELP_LCP" /* GXT: Lose the Cops. */);
 		}
 	}
 	if (bLocal_90)
 	{
-		if (!func_116("FM_CTUT_MOD"))
+		if (!func_116("FM_CTUT_MOD" /* GXT: Go to Los Santos Customs. */))
 		{
 			if (!HUD::IS_MESSAGE_BEING_DISPLAYED())
 			{
@@ -2775,7 +2775,7 @@ void func_76()//Position - 0x2C0E
 					{
 						if (func_97())
 						{
-							func_91("FM_CTUT_MOD", 0);
+							func_91("FM_CTUT_MOD" /* GXT: Go to Los Santos Customs. */, 0);
 						}
 					}
 				}
@@ -2784,14 +2784,14 @@ void func_76()//Position - 0x2C0E
 	}
 	else if (!BitTest(uLocal_338, 18))
 	{
-		if (func_116("FM_CTUT_MOD"))
+		if (func_116("FM_CTUT_MOD" /* GXT: Go to Los Santos Customs. */))
 		{
-			func_84("FM_CTUT_MOD");
+			func_84("FM_CTUT_MOD" /* GXT: Go to Los Santos Customs. */);
 		}
 	}
 	if (bLocal_92)
 	{
-		if (!func_116("FM_CTUT_RSP"))
+		if (!func_116("FM_CTUT_RSP" /* GXT: Get your vehicle resprayed. */))
 		{
 			if (!HUD::IS_MESSAGE_BEING_DISPLAYED())
 			{
@@ -2805,7 +2805,7 @@ void func_76()//Position - 0x2C0E
 							{
 								if (func_115())
 								{
-									func_91("FM_CTUT_RSP", 0);
+									func_91("FM_CTUT_RSP" /* GXT: Get your vehicle resprayed. */, 0);
 								}
 							}
 						}
@@ -2816,14 +2816,14 @@ void func_76()//Position - 0x2C0E
 	}
 	else if (!BitTest(uLocal_338, 18))
 	{
-		if (func_116("FM_CTUT_RSP"))
+		if (func_116("FM_CTUT_RSP" /* GXT: Get your vehicle resprayed. */))
 		{
-			func_84("FM_CTUT_RSP");
+			func_84("FM_CTUT_RSP" /* GXT: Get your vehicle resprayed. */);
 		}
 	}
 	if (bLocal_93)
 	{
-		if (!func_116("FM_CTUT_RSP"))
+		if (!func_116("FM_CTUT_RSP" /* GXT: Get your vehicle resprayed. */))
 		{
 			if (!HUD::IS_MESSAGE_BEING_DISPLAYED())
 			{
@@ -2837,7 +2837,7 @@ void func_76()//Position - 0x2C0E
 							{
 								if (func_115())
 								{
-									func_91("FM_CTUT_REP", 0);
+									func_91("FM_CTUT_REP" /* GXT: Get your vehicle repaired. */, 0);
 								}
 							}
 						}
@@ -2848,14 +2848,14 @@ void func_76()//Position - 0x2C0E
 	}
 	else if (!BitTest(uLocal_338, 18))
 	{
-		if (func_116("FM_CTUT_REP"))
+		if (func_116("FM_CTUT_REP" /* GXT: Get your vehicle repaired. */))
 		{
-			func_84("FM_CTUT_REP");
+			func_84("FM_CTUT_REP" /* GXT: Get your vehicle repaired. */);
 		}
 	}
 	if (bLocal_94)
 	{
-		if (!func_116("FM_CTUT_LLS"))
+		if (!func_116("FM_CTUT_LLS" /* GXT: Leave Los Santos Customs. */))
 		{
 			if (!HUD::IS_MESSAGE_BEING_DISPLAYED())
 			{
@@ -2873,14 +2873,14 @@ void func_76()//Position - 0x2C0E
 	}
 	else if (!BitTest(uLocal_338, 18))
 	{
-		if (func_116("FM_CTUT_LLS"))
+		if (func_116("FM_CTUT_LLS" /* GXT: Leave Los Santos Customs. */))
 		{
-			func_84("FM_CTUT_LLS");
+			func_84("FM_CTUT_LLS" /* GXT: Leave Los Santos Customs. */);
 		}
 	}
 	if (bLocal_91)
 	{
-		if (!func_116("FM_IMP_SIM"))
+		if (!func_116("FM_IMP_SIM" /* GXT: Go to Simeon's Garage. */))
 		{
 			if (!HUD::IS_MESSAGE_BEING_DISPLAYED())
 			{
@@ -2892,7 +2892,7 @@ void func_76()//Position - 0x2C0E
 						{
 							if (func_97())
 							{
-								func_91("FM_IMP_SIM", 0);
+								func_91("FM_IMP_SIM" /* GXT: Go to Simeon's Garage. */, 0);
 								if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 								{
 									if (PED::IS_PED_SITTING_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID()))
@@ -2930,9 +2930,9 @@ void func_76()//Position - 0x2C0E
 	}
 	else if (!BitTest(uLocal_338, 18))
 	{
-		if (func_116("FM_IMP_SIM"))
+		if (func_116("FM_IMP_SIM" /* GXT: Go to Simeon's Garage. */))
 		{
-			func_84("FM_IMP_SIM");
+			func_84("FM_IMP_SIM" /* GXT: Go to Simeon's Garage. */);
 		}
 	}
 }
@@ -4301,7 +4301,7 @@ void func_141()//Position - 0x47C5
 			HUD::SET_BLIP_SPRITE(Global_1931386, 293);
 			HUD::SET_BLIP_SCALE(Global_1931386, 1f);
 			HUD::SET_BLIP_AS_SHORT_RANGE(Global_1931386, false);
-			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(Global_1931386, "IMPEX_BLIP_FM");
+			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(Global_1931386, "IMPEX_BLIP_FM" /* GXT: Simeon */);
 			if (func_170())
 			{
 				HUD::SET_BLIP_FLASHES(Global_1931386, true);
@@ -4321,7 +4321,7 @@ void func_141()//Position - 0x47C5
 					{
 						if (func_118())
 						{
-							func_164("IMPEX_HIPR_DAM", -1);
+							func_164("IMPEX_HIPR_DAM" /* GXT: This vehicle is no longer required by Simeon as it's too damaged. */, -1);
 						}
 					}
 				}
@@ -6472,15 +6472,15 @@ void func_175()//Position - 0x75C7
 									if (VEHICLE::IS_THIS_MODEL_A_BIKE(ENTITY::GET_ENTITY_MODEL(NETWORK::NET_TO_VEH(Local_330.f_22))))
 									{
 										HUD::SET_BLIP_SPRITE(Global_1931397, 348);
-										func_164("IMPEX_HIPB_INT", -1);
+										func_164("IMPEX_HIPB_INT" /* GXT: Simeon wants a specific vehicle ~HUD_COLOUR_GREEN~~BLIP_GANG_BIKE~ ~s~delivered. Get it resprayed ~BLIP_CAR_MOD_SHOP~ and deliver it to him at the docks for cash. */, -1);
 									}
 									else
 									{
 										HUD::SET_BLIP_SPRITE(Global_1931397, 225);
-										func_164("IMPEX_HIPR_INT", -1);
+										func_164("IMPEX_HIPR_INT" /* GXT: Simeon wants a specific vehicle ~HUD_COLOUR_GREEN~~BLIP_GANG_VEHICLE~ ~s~delivered. Get it resprayed ~BLIP_CAR_MOD_SHOP~ and deliver it to him at the docks for cash. */, -1);
 									}
 									HUD::SET_BLIP_COLOUR(Global_1931397, 2);
-									HUD::SET_BLIP_NAME_FROM_TEXT_FILE(Global_1931397, "IMPEX_HIPR_BLP");
+									HUD::SET_BLIP_NAME_FROM_TEXT_FILE(Global_1931397, "IMPEX_HIPR_BLP" /* GXT: High Priority Vehicle */);
 									func_262(6, 1);
 									MISC::SET_BIT(&uLocal_338, 7);
 									Global_2815059.f_1721 = 1;
@@ -6545,7 +6545,7 @@ void func_175()//Position - 0x75C7
 										{
 											if (func_118())
 											{
-												func_164("FM_IMP_JAC", -1);
+												func_164("FM_IMP_JAC" /* GXT: You can jack another player from a vehicle by holding ~INPUT_ENTER~ while stood next to the vehicle. */, -1);
 											}
 											MISC::SET_BIT(&uLocal_338, 19);
 										}
@@ -6622,7 +6622,7 @@ void func_175()//Position - 0x75C7
 		}
 		if (func_239())
 		{
-			if (func_238("IMPEX_HIPR_INT"))
+			if (func_238("IMPEX_HIPR_INT" /* GXT: Simeon wants a specific vehicle ~HUD_COLOUR_GREEN~~BLIP_GANG_VEHICLE~ ~s~delivered. Get it resprayed ~BLIP_CAR_MOD_SHOP~ and deliver it to him at the docks for cash. */))
 			{
 				HUD::CLEAR_HELP(true);
 			}
@@ -8400,7 +8400,7 @@ void func_190()//Position - 0xA3C0
 					{
 						if (!func_263(PLAYER::PLAYER_ID(), 1, 0))
 						{
-							func_191("IMPEX_TICK_DHPV", iVar0, 0, 0, 0, 1, 0);
+							func_191("IMPEX_TICK_DHPV" /* GXT: ~a~ ~s~has taken the high priority Import/Export vehicle. */, iVar0, 0, 0, 0, 1, 0);
 						}
 					}
 					if (NETWORK::NETWORK_IS_HOST_OF_THIS_SCRIPT())
@@ -9755,7 +9755,7 @@ void func_247()//Position - 0xBAFD
 		HUD::SET_BLIP_SPRITE(Global_1931397, 225);
 	}
 	HUD::SET_BLIP_COLOUR(Global_1931397, 2);
-	HUD::SET_BLIP_NAME_FROM_TEXT_FILE(Global_1931397, "IMPEX_HIPR_BLP");
+	HUD::SET_BLIP_NAME_FROM_TEXT_FILE(Global_1931397, "IMPEX_HIPR_BLP" /* GXT: High Priority Vehicle */);
 	if (func_118())
 	{
 		HUD::SET_BLIP_DISPLAY(Global_1931397, 0);
@@ -10198,7 +10198,7 @@ void func_268()//Position - 0xC1DD
 										{
 											if (NETWORK::GET_TIME_DIFFERENCE(NETWORK::GET_NETWORK_TIME(), Global_2815059.f_1749) > 20000)
 											{
-												if (func_371(18, "CELL_CLTEST6", 2, "NULL", Global_2815059.f_1746, "TestSender1", 4, 0, 1, 0, 0, bLocal_105, 0, 0, 0, 0, 0))
+												if (func_371(18, "CELL_CLTEST6" /* GXT: Hello soldier, here is shopping list. Keep them looking nice yes? */, 2, "NULL", Global_2815059.f_1746, "TestSender1", 4, 0, 1, 0, 0, bLocal_105, 0, 0, 0, 0, 0))
 												{
 													MISC::SET_BIT(&iVar0, 0);
 													func_145(1200, iVar0, -1, 1, 0);
@@ -10209,7 +10209,7 @@ void func_268()//Position - 0xC1DD
 												}
 											}
 										}
-										else if (func_371(18, "CELL_CLTEST1", 2, "NULL", Global_2815059.f_1746, "TestSender1", 4, 0, 1, 0, 0, bLocal_105, 0, 0, 0, 0, 0))
+										else if (func_371(18, "CELL_CLTEST1" /* GXT: Grab these vehicles: */, 2, "NULL", Global_2815059.f_1746, "TestSender1", 4, 0, 1, 0, 0, bLocal_105, 0, 0, 0, 0, 0))
 										{
 											func_369(0f, 0f, 0f, func_370(19), "");
 											MISC::SET_BIT(&uLocal_338, 1);
@@ -10237,7 +10237,7 @@ void func_268()//Position - 0xC1DD
 			{
 				if (bLocal_105)
 				{
-					func_164("IMPEX_HELP_LNCH", -1);
+					func_164("IMPEX_HELP_LNCH" /* GXT: Check your phone for details of vehicles required at the Import/Export Garage. */, -1);
 				}
 				MISC::SET_BIT(&uLocal_315, 5);
 				func_514(&uLocal_301, 0, 0);
@@ -10254,7 +10254,7 @@ void func_268()//Position - 0xC1DD
 			}
 			else if (func_513(&uLocal_115, 10000, 0))
 			{
-				if (func_269(18, "CELL_IMPT", 0, 0))
+				if (func_269(18, "CELL_IMPT" /* GXT: Good work on that last delivery my friend, when I have more orders I will let you know. */, 0, 0))
 				{
 					iLocal_107 = 0;
 					func_46(&uLocal_115);
@@ -10419,7 +10419,7 @@ int func_278(var uParam0, int iParam1, int iParam2, char* sParam3, char* sParam4
 	}
 	if (iParam5 == 4)
 	{
-		StringCopy(&Var0, "CELL_226", 16);
+		StringCopy(&Var0, "CELL_226" /* GXT: Accept? */, 16);
 		return func_350(uParam0, iParam1, sParam3, sParam4, &Var0);
 	}
 	if (iParam5 == 1 || iParam5 == 7)
@@ -11093,7 +11093,7 @@ void func_291(int iParam0)//Position - 0xCE01
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(42);
 								GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							}
-							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB")) && BitTest(Global_8137, 6))
+							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB" /* GXT: Benny's */)) && BitTest(Global_8137, 6))
 							{
 								GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT");
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
@@ -13201,64 +13201,64 @@ char* func_376(int iParam0, bool bParam1)//Position - 0xF690
 	switch (iParam0)
 	{
 		case 0:
-			return func_377(bParam1, "IMPEX_2020_0B", "IMPEX_2020_0");
+			return func_377(bParam1, "IMPEX_2020_0B" /* GXT: Ubermacht Zion */, "IMPEX_2020_0" /* GXT: an Ubermacht Zion */);
 		
 		case 1:
-			return func_377(bParam1, "IMPEX_2020_1B", "IMPEX_2020_1");
+			return func_377(bParam1, "IMPEX_2020_1B" /* GXT: Benefactor Serrano */, "IMPEX_2020_1" /* GXT: a Benefactor Serrano */);
 		
 		case 2:
-			return func_377(bParam1, "IMPEX_2020_2B", "IMPEX_2020_2");
+			return func_377(bParam1, "IMPEX_2020_2B" /* GXT: Ocelot Jackal */, "IMPEX_2020_2" /* GXT: an Ocelot Jackal */);
 		
 		case 3:
-			return func_377(bParam1, "IMPEX_2020_3B", "IMPEX_2020_3");
+			return func_377(bParam1, "IMPEX_2020_3B" /* GXT: Benefactor Schafter */, "IMPEX_2020_3" /* GXT: a Benefactor Schafter */);
 		
 		case 4:
-			return func_377(bParam1, "IMPEX_2020_4B", "IMPEX_2020_4");
+			return func_377(bParam1, "IMPEX_2020_4B" /* GXT: Benefactor Dubsta */, "IMPEX_2020_4" /* GXT: a Benefactor Dubsta */);
 		
 		case 5:
-			return func_377(bParam1, "IMPEX_2020_5B", "IMPEX_2020_5");
+			return func_377(bParam1, "IMPEX_2020_5B" /* GXT: Ocelot F620 */, "IMPEX_2020_5" /* GXT: an Ocelot F620 */);
 		
 		case 6:
-			return func_377(bParam1, "IMPEX_2020_6B", "IMPEX_2020_6");
+			return func_377(bParam1, "IMPEX_2020_6B" /* GXT: Benefactor Schwartzer */, "IMPEX_2020_6" /* GXT: a Benefactor Schwartzer */);
 		
 		case 7:
-			return func_377(bParam1, "IMPEX_2020_7B", "IMPEX_2020_7");
+			return func_377(bParam1, "IMPEX_2020_7B" /* GXT: Obey Rocoto */, "IMPEX_2020_7" /* GXT: an Obey Rocoto */);
 		
 		case 8:
-			return func_377(bParam1, "IMPEX_2020_8B", "IMPEX_2020_8");
+			return func_377(bParam1, "IMPEX_2020_8B" /* GXT: Ubermacht Sentinel */, "IMPEX_2020_8" /* GXT: an Ubermacht Sentinel */);
 		
 		case 9:
-			return func_377(bParam1, "IMPEX_2020_9B", "IMPEX_2020_9");
+			return func_377(bParam1, "IMPEX_2020_9B" /* GXT: Lampadati Felon GT */, "IMPEX_2020_9" /* GXT: a Lampadati Felon GT */);
 		
 		case 10:
-			return func_377(bParam1, "IMPEX_2020_10B", "IMPEX_2020_10");
+			return func_377(bParam1, "IMPEX_2020_10B" /* GXT: Pfister Comet */, "IMPEX_2020_10" /* GXT: a Pfister Comet */);
 		
 		case 11:
-			return func_377(bParam1, "IMPEX_2020_11B", "IMPEX_2020_11");
+			return func_377(bParam1, "IMPEX_2020_11B" /* GXT: Bravado Banshee */, "IMPEX_2020_11" /* GXT: a Bravado Banshee */);
 		
 		case 12:
-			return func_377(bParam1, "IMPEX_2020_12B", "IMPEX_2020_12");
+			return func_377(bParam1, "IMPEX_2020_12B" /* GXT: Benefactor Surano */, "IMPEX_2020_12" /* GXT: a Benefactor Surano */);
 		
 		case 13:
-			return func_377(bParam1, "IMPEX_2020_13B", "IMPEX_2020_13");
+			return func_377(bParam1, "IMPEX_2020_13B" /* GXT: Invetero Coquette */, "IMPEX_2020_13" /* GXT: an Invetero Coquette */);
 		
 		case 14:
-			return func_377(bParam1, "IMPEX_2020_14B", "IMPEX_2020_14");
+			return func_377(bParam1, "IMPEX_2020_14B" /* GXT: Grotti Carbonizzare */, "IMPEX_2020_14" /* GXT: a Grotti Carbonizzare */);
 		
 		case 15:
-			return func_377(bParam1, "IMPEX_2020_15B", "IMPEX_2020_15");
+			return func_377(bParam1, "IMPEX_2020_15B" /* GXT: Dewbauchee Exemplar */, "IMPEX_2020_15" /* GXT: a Dewbauchee Exemplar */);
 		
 		case 16:
-			return func_377(bParam1, "IMPEX_2020_16B", "IMPEX_2020_16");
+			return func_377(bParam1, "IMPEX_2020_16B" /* GXT: Benefactor Feltzer */, "IMPEX_2020_16" /* GXT: a Benefactor Feltzer */);
 		
 		case 17:
-			return func_377(bParam1, "IMPEX_2020_17B", "IMPEX_2020_17");
+			return func_377(bParam1, "IMPEX_2020_17B" /* GXT: Vapid Bullet */, "IMPEX_2020_17" /* GXT: a Vapid Bullet */);
 		
 		case 18:
-			return func_377(bParam1, "IMPEX_2020_18B", "IMPEX_2020_18");
+			return func_377(bParam1, "IMPEX_2020_18B" /* GXT: Enus Super Diamond */, "IMPEX_2020_18" /* GXT: an Enus Super Diamond */);
 		
 		case 19:
-			return func_377(bParam1, "IMPEX_2020_19B", "IMPEX_2020_19");
+			return func_377(bParam1, "IMPEX_2020_19B" /* GXT: Pegassi Infernus */, "IMPEX_2020_19" /* GXT: a Pegassi Infernus */);
 		
 		default:
 	}
@@ -13508,7 +13508,7 @@ void func_385()//Position - 0x10259
 									{
 										if (func_256() && SYSTEM::TIMERA() > 500)
 										{
-											func_164("IMPEX_FSPRAY_FM", -1);
+											func_164("IMPEX_FSPRAY_FM" /* GXT: This vehicle is wanted by Simeon. Get it resprayed ~BLIP_CAR_MOD_SHOP~ and deliver it to him at the docks for cash. */, -1);
 											MISC::SET_BIT(&uLocal_315, 2);
 										}
 									}
@@ -13521,7 +13521,7 @@ void func_385()//Position - 0x10259
 								{
 									if (func_256() && SYSTEM::TIMERA() > 500)
 									{
-										func_164("IMPEX_CASH_FM", -1);
+										func_164("IMPEX_CASH_FM" /* GXT: Simeon wants this vehicle but you don't have enough cash for a respray. */, -1);
 										MISC::SET_BIT(&uLocal_315, 8);
 									}
 								}
@@ -13534,7 +13534,7 @@ void func_385()//Position - 0x10259
 							{
 								if (func_256() && SYSTEM::TIMERA() > 500)
 								{
-									func_164("IMPEX_WANTED_FM", -1);
+									func_164("IMPEX_WANTED_FM" /* GXT: Simeon wants this vehicle but he will not accept delivery if you have a Wanted Level. */, -1);
 									MISC::SET_BIT(&uLocal_315, 11);
 								}
 							}
@@ -13558,7 +13558,7 @@ void func_385()//Position - 0x10259
 											{
 												if (!func_248(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false), 0))
 												{
-													func_164("IMPEX_DELIVER_FM", -1);
+													func_164("IMPEX_DELIVER_FM" /* GXT: This vehicle is ready for Simeon. Deliver it to ~BLIP_SIMEON_FAMILY~ for cash. */, -1);
 													MISC::SET_BIT(&uLocal_315, 3);
 												}
 											}
@@ -13573,7 +13573,7 @@ void func_385()//Position - 0x10259
 								{
 									if (func_256() && SYSTEM::TIMERA() > 2000)
 									{
-										func_164("IMPEX_RIG_FM", -1);
+										func_164("IMPEX_RIG_FM" /* GXT: Simeon doesn't want this vehicle anymore as it's rigged with explosives. */, -1);
 										MISC::SET_BIT(&uLocal_315, 7);
 									}
 								}
@@ -13586,7 +13586,7 @@ void func_385()//Position - 0x10259
 							{
 								if (func_256() && SYSTEM::TIMERA() > 2000)
 								{
-									func_164("IMPEX_WANTED_P", -1);
+									func_164("IMPEX_WANTED_P" /* GXT: Simeon wants this vehicle but he will not accept delivery while you are with a prostitute. */, -1);
 									MISC::SET_BIT(&uLocal_315, 6);
 								}
 							}
@@ -13599,7 +13599,7 @@ void func_385()//Position - 0x10259
 						{
 							if (func_256() && SYSTEM::TIMERA() > 5000)
 							{
-								func_164("IMPEX_WANTED_FM", -1);
+								func_164("IMPEX_WANTED_FM" /* GXT: Simeon wants this vehicle but he will not accept delivery if you have a Wanted Level. */, -1);
 								MISC::SET_BIT(&uLocal_315, 4);
 							}
 						}
@@ -13611,7 +13611,7 @@ void func_385()//Position - 0x10259
 				}
 				else
 				{
-					if (func_238("IMPEX_FSPRAY_FM"))
+					if (func_238("IMPEX_FSPRAY_FM" /* GXT: This vehicle is wanted by Simeon. Get it resprayed ~BLIP_CAR_MOD_SHOP~ and deliver it to him at the docks for cash. */))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -13627,7 +13627,7 @@ void func_385()//Position - 0x10259
 			}
 			else
 			{
-				if (func_238("IMPEX_FSPRAY_FM"))
+				if (func_238("IMPEX_FSPRAY_FM" /* GXT: This vehicle is wanted by Simeon. Get it resprayed ~BLIP_CAR_MOD_SHOP~ and deliver it to him at the docks for cash. */))
 				{
 					HUD::CLEAR_HELP(true);
 				}
@@ -13644,7 +13644,7 @@ void func_385()//Position - 0x10259
 				}
 			}
 		}
-		else if (func_238("IMPEX_FSPRAY_FM"))
+		else if (func_238("IMPEX_FSPRAY_FM" /* GXT: This vehicle is wanted by Simeon. Get it resprayed ~BLIP_CAR_MOD_SHOP~ and deliver it to him at the docks for cash. */))
 		{
 			HUD::CLEAR_HELP(true);
 		}
@@ -14846,7 +14846,7 @@ void func_405()//Position - 0x114E0
 															func_487();
 															func_172(0);
 															func_485(1248, 1, -1);
-															if (func_238("IMPEX_DELIVER_FM"))
+															if (func_238("IMPEX_DELIVER_FM" /* GXT: This vehicle is ready for Simeon. Deliver it to ~BLIP_SIMEON_FAMILY~ for cash. */))
 															{
 																HUD::CLEAR_HELP(true);
 															}
@@ -15072,7 +15072,7 @@ void func_405()//Position - 0x114E0
 						}
 						if (!PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 						{
-							if ((func_238("IMPEX_NOT_NEED") || func_238("IMPEX_NO_MORE")) || func_238("IMPEX_NOT_PVEH"))
+							if ((func_238("IMPEX_NOT_NEED" /* GXT: ~s~Simeon doesn't need this vehicle. */) || func_238("IMPEX_NO_MORE" /* GXT: ~s~Simeon doesn't need this vehicle anymore. */)) || func_238("IMPEX_NOT_PVEH" /* GXT: ~s~Simeon doesn't want Personal Vehicles. */))
 							{
 								HUD::CLEAR_HELP(true);
 							}
@@ -15094,7 +15094,7 @@ void func_405()//Position - 0x114E0
 												{
 													if (bVar7 || func_74(&Local_329, ENTITY::GET_ENTITY_MODEL(iVar2)))
 													{
-														func_164("IMPEX_NOT_PVEH", -1);
+														func_164("IMPEX_NOT_PVEH" /* GXT: ~s~Simeon doesn't want Personal Vehicles. */, -1);
 														MISC::SET_BIT(&uLocal_338, 15);
 													}
 												}
@@ -15153,7 +15153,7 @@ void func_405()//Position - 0x114E0
 									{
 										if (!BitTest(uLocal_315, 10))
 										{
-											func_164("IMPEX_NOT_PVEH", -1);
+											func_164("IMPEX_NOT_PVEH" /* GXT: ~s~Simeon doesn't want Personal Vehicles. */, -1);
 											MISC::SET_BIT(&uLocal_315, 10);
 										}
 									}
@@ -15164,7 +15164,7 @@ void func_405()//Position - 0x114E0
 									{
 										if (!BitTest(uLocal_315, 12))
 										{
-											func_164("IMPEX_NOT_CREW", -1);
+											func_164("IMPEX_NOT_CREW" /* GXT: Simeon doesn't want vehicles with Crew emblems applied. */, -1);
 											MISC::SET_BIT(&uLocal_315, 12);
 										}
 									}
@@ -15173,7 +15173,7 @@ void func_405()//Position - 0x114E0
 								{
 									if (VEHICLE::GET_PED_IN_VEHICLE_SEAT(iVar2, -1, false) == PLAYER::PLAYER_PED_ID())
 									{
-										func_164("IMPEX_NOT_NEED", -1);
+										func_164("IMPEX_NOT_NEED" /* GXT: ~s~Simeon doesn't need this vehicle. */, -1);
 										MISC::SET_BIT(&uLocal_315, 9);
 									}
 								}
@@ -15197,7 +15197,7 @@ void func_405()//Position - 0x114E0
 							{
 								if (func_256())
 								{
-									func_164("IMPEX_NO_MORE", -1);
+									func_164("IMPEX_NO_MORE" /* GXT: ~s~Simeon doesn't need this vehicle anymore. */, -1);
 									MISC::CLEAR_BIT(&uLocal_338, 12);
 									func_117();
 								}
@@ -15288,13 +15288,13 @@ void func_405()//Position - 0x114E0
 					}
 					if (iLocal_295 > 0)
 					{
-						func_445("IMPEX_PASS", iLocal_298, 7000, 0);
+						func_445("IMPEX_PASS" /* GXT: Cash for vehicle $~1~. */, iLocal_298, 7000, 0);
 					}
 					else
 					{
-						func_445("IMPEX_PASS", iLocal_298, 7000, 0);
+						func_445("IMPEX_PASS" /* GXT: Cash for vehicle $~1~. */, iLocal_298, 7000, 0);
 					}
-					func_410(2, "XPT_IMPEXP", joaat("XPTYPE_COMPLETE"), -1930707410, iLocal_299, 1, -1, 0);
+					func_410(2, "XPT_IMPEXP" /* GXT: ~g~+~1~ ~a~:~s~ Import Export */, joaat("XPTYPE_COMPLETE"), -1930707410, iLocal_299, 1, -1, 0);
 					func_409(29);
 					func_490(PLAYER::PLAYER_ID(), 1, 0, 0);
 					Local_337[NETWORK::PARTICIPANT_ID_TO_INT() /*4*/].f_1 = 0;
@@ -17386,7 +17386,7 @@ void func_458(int iParam0, int iParam1)//Position - 0x148D0
 						func_464(&iVar0, 0);
 						if (iParam1 == 1)
 						{
-							func_463("GB_BCUT_TICK1", func_467(), iVar0, 0, 0, 1);
+							func_463("GB_BCUT_TICK1" /* GXT: You paid ~a~ ~s~a $~1~ ~s~cut. */, func_467(), iVar0, 0, 0, 1);
 						}
 						func_462(20);
 						func_459(func_467(), iVar0, 1);
@@ -18911,10 +18911,10 @@ void func_517(var uParam0, int iParam1)//Position - 0x161CC
 
 void func_518()//Position - 0x16251
 {
-	func_521("CELL_CLTEST1", 0);
-	func_519("CELL_CLTEST1");
-	func_521("CELL_CLTEST6", 0);
-	func_519("CELL_CLTEST6");
+	func_521("CELL_CLTEST1" /* GXT: Grab these vehicles: */, 0);
+	func_519("CELL_CLTEST1" /* GXT: Grab these vehicles: */);
+	func_521("CELL_CLTEST6" /* GXT: Hello soldier, here is shopping list. Keep them looking nice yes? */, 0);
+	func_519("CELL_CLTEST6" /* GXT: Hello soldier, here is shopping list. Keep them looking nice yes? */);
 }
 
 void func_519(char* sParam0)//Position - 0x1627B

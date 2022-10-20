@@ -515,8 +515,8 @@ void __EntryFunction__()//Position - 0x0
 	Local_74 = { -1063.605f, 4972.88f, 241.1299f };
 	fLocal_75 = 12.875f;
 	iLocal_96 = 4;
-	cLocal_261 = "REPLAY_TMG";
-	sLocal_262 = "CMN_TDIED";
+	cLocal_261 = "REPLAY_TMG" /* GXT: ~r~FAILED~s~ */;
+	sLocal_262 = "CMN_TDIED" /* GXT: ~s~Trevor died. */;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(26))
 	{
 		func_194();
@@ -1406,8 +1406,8 @@ int func_33(var uParam0, var uParam1, char* sParam2, char* sParam3, var uParam4,
 				PAD::DISABLE_ALL_CONTROL_ACTIONS(0);
 			}
 			func_51(&(uParam1->f_10), 0, 1, 1, 1);
-			func_50(&(uParam1->f_10), "IB_RETRY", 2, 201, 1, 1, 0);
-			func_50(&(uParam1->f_10), "FE_HLP16", 2, 202, 1, 1, 0);
+			func_50(&(uParam1->f_10), "IB_RETRY" /* GXT: Retry */, 2, 201, 1, 1, 0);
+			func_50(&(uParam1->f_10), "FE_HLP16" /* GXT: Exit */, 2, 202, 1, 1, 0);
 			if (func_53(iParam5, 4))
 			{
 				AUDIO::PLAY_SOUND_FRONTEND(-1, "ScreenFlash", "MissionFailedSounds", true);
@@ -2066,7 +2066,7 @@ void func_63()//Position - 0x1C0F
 			SYSTEM::WAIT(0);
 		}
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_259, "SHOW_SHARD_MIDSIZED_MESSAGE");
-		func_52("CULT_PASS");
+		func_52("CULT_PASS" /* GXT: ALTRUIST CLEARED */);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE();
 		while (!func_97())
 		{
@@ -3903,7 +3903,7 @@ int func_117(int iParam0)//Position - 0x431A
 		{
 			func_118(0);
 		}
-		HUD::SET_MISSION_NAME(true, "RE_TITLE");
+		HUD::SET_MISSION_NAME(true, "RE_TITLE" /* GXT: Random Event */);
 		if (iParam0 && func_121(Global_113375))
 		{
 			HUD::FLASH_MINIMAP_DISPLAY();
@@ -3969,15 +3969,15 @@ char* func_120(int iParam0)//Position - 0x445F
 	switch (iParam0)
 	{
 		case 0:
-			sVar0 = "AM_H_REFS";
+			sVar0 = "AM_H_REFS" /* GXT: Various events unfold across San Andreas daily. These events will become blipped on the Radar when nearby. */;
 			break;
 		
 		case 1:
-			sVar0 = "RE_FLASHBLIP";
+			sVar0 = "RE_FLASHBLIP" /* GXT: Flashing blue and red blips indicate situations around San Andreas that you can choose to help with. */;
 			break;
 		
 		case 2:
-			sVar0 = "RE_HANDOVER";
+			sVar0 = "RE_HANDOVER" /* GXT: If you retrieve a stolen item, you can choose to keep it or return it for a reward. */;
 			break;
 	}
 	return sVar0;
@@ -6498,7 +6498,7 @@ void func_164(bool bParam0)//Position - 0x723C
 	if (bVar0)
 	{
 		StringCopy(&cVar1, "CHAR_LIFEINVADER", 64);
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("COUP_RED");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("COUP_RED" /* GXT: You have redeemed your promotion for ~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(func_165(bParam0));
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar1, &cVar1, true, 0, "", 0);
 	}
@@ -6509,28 +6509,28 @@ char* func_165(bool bParam0)//Position - 0x73BC
 	switch (bParam0)
 	{
 		case 0:
-			return "COUP_HAIRC";
+			return "COUP_HAIRC" /* GXT: one free haircut. */;
 		
 		case 1:
-			return "COUP_TATTOO";
+			return "COUP_TATTOO" /* GXT: one free tattoo. */;
 		
 		case 2:
-			return "COUP_WARSTOCK";
+			return "COUP_WARSTOCK" /* GXT: 10% off your next purchase at Warstock-Cache-and-Carry.com. */;
 		
 		case 3:
-			return "COUP_MOSPORT";
+			return "COUP_MOSPORT" /* GXT: 10 percent off your next purchase at LegendaryMotorsport.net. */;
 		
 		case 4:
-			return "COUP_ELITAS";
+			return "COUP_ELITAS" /* GXT: 10 percent off your next purchase at ElitasTravel.com. */;
 		
 		case 5:
-			return "COUP_MEDSPENS";
+			return "COUP_MEDSPENS" /* GXT: 10 percent off your next medical expenses. */;
 		
 		case 6:
-			return "COUP_SPRUNK";
+			return "COUP_SPRUNK" /* GXT: one free can of Sprunk. */;
 		
 		case 7:
-			return "COUP_RESPRAY";
+			return "COUP_RESPRAY" /* GXT: one free respray. */;
 		
 		case 8:
 			return "COUP_XMAS2017";
@@ -6545,22 +6545,22 @@ char* func_165(bool bParam0)//Position - 0x73BC
 			return "COUP_CAR2_XMAS2018";
 		
 		case 12:
-			return "COUP_CAS_ELITAS";
+			return "COUP_CAS_ELITAS" /* GXT: 10 percent off your next purchase at ElitasTravel.com. */;
 		
 		case 13:
-			return "COUP_CAS_DOCKTEASE";
+			return "COUP_CAS_DOCKTEASE" /* GXT: 10 percent off your next purchase at DockTease.com. */;
 		
 		case 14:
-			return "COUP_CAS_MOSPORT";
+			return "COUP_CAS_MOSPORT" /* GXT: 10 percent off your next purchase at LegendaryMotorsport.net. */;
 		
 		case 15:
-			return "COUP_CAS_SSASA";
+			return "COUP_CAS_SSASA" /* GXT: 10 percent off your next purchase at southernsanandreassuperautos.com. */;
 		
 		case 16:
-			return "COUP_CAS_WARSTOCK";
+			return "COUP_CAS_WARSTOCK" /* GXT: 10 percent off your next purchase at Warstock-Cache-and-Carry.com. */;
 		
 		case 17:
-			return "COUP_CAS_PANDM";
+			return "COUP_CAS_PANDM" /* GXT: 10 percent off your next purchase at pandmcycles.com. */;
 			break;
 		
 		default:

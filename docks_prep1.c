@@ -3366,7 +3366,7 @@ int func_49(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 			{
 				func_67(sParam16);
 				func_67(sParam19);
-				func_67("MORE_SEATS");
+				func_67("MORE_SEATS" /* GXT: A vehicle with more seats is needed. */);
 				if (bParam18 && PLAYER::IS_PLAYER_WANTED_LEVEL_GREATER(PLAYER::PLAYER_ID(), 0))
 				{
 					if (HUD::DOES_BLIP_EXIST(iParam0->f_5))
@@ -3382,7 +3382,7 @@ int func_49(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 					{
 						if (bParam22)
 						{
-							func_61(iParam0, "LOSE_WANTED", 0);
+							func_61(iParam0, "LOSE_WANTED" /* GXT: Lose the Cops. */, 0);
 							if (!PED::IS_PED_INJURED(iParam0->f_17[0]))
 							{
 								func_59(iParam0->f_17[0], "VEHICLE_POLICE_PURSUIT", 3);
@@ -3396,7 +3396,7 @@ int func_49(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 				{
 					if (BitTest(iParam0->f_13, 0))
 					{
-						func_67("LOSE_WANTED");
+						func_67("LOSE_WANTED" /* GXT: Lose the Cops. */);
 						MISC::CLEAR_BIT(&(iParam0->f_13), 0);
 						MISC::SET_BIT(&(iParam0->f_13), 1);
 					}
@@ -3517,8 +3517,8 @@ int func_49(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 								func_67(sParam13);
 								func_67(sParam14);
 								func_67(sParam15);
-								func_67("LOSE_WANTED");
-								func_67("MORE_SEATS");
+								func_67("LOSE_WANTED" /* GXT: Lose the Cops. */);
+								func_67("MORE_SEATS" /* GXT: A vehicle with more seats is needed. */);
 								func_67(sParam19);
 								func_42(iParam0, 1, 0);
 								return 1;
@@ -3543,7 +3543,7 @@ int func_49(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 					{
 						if (bParam22)
 						{
-							func_61(iParam0, "LOSE_WANTED", 0);
+							func_61(iParam0, "LOSE_WANTED" /* GXT: Lose the Cops. */, 0);
 							if (!PED::IS_PED_INJURED(iParam0->f_17[0]))
 							{
 								func_59(iParam0->f_17[0], "VEHICLE_POLICE_PURSUIT", 3);
@@ -3557,7 +3557,7 @@ int func_49(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 				{
 					if (BitTest(iParam0->f_13, 0))
 					{
-						func_67("LOSE_WANTED");
+						func_67("LOSE_WANTED" /* GXT: Lose the Cops. */);
 						MISC::CLEAR_BIT(&(iParam0->f_13), 0);
 						MISC::SET_BIT(&(iParam0->f_13), 1);
 					}
@@ -3657,7 +3657,7 @@ int func_49(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 									{
 										func_59(iParam0->f_17[iVar7], "NEED_A_BIGGER_VEHICLE", 3);
 									}
-									func_61(iParam0, "MORE_SEATS", 0);
+									func_61(iParam0, "MORE_SEATS" /* GXT: A vehicle with more seats is needed. */, 0);
 									MISC::SET_BIT(&(iParam0->f_13), 13);
 								}
 							}
@@ -3716,7 +3716,7 @@ int func_49(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 		func_67(sParam16);
 		func_67(sParam19);
 		func_67(sParam16);
-		func_67("LOSE_WANTED");
+		func_67("LOSE_WANTED" /* GXT: Lose the Cops. */);
 		if (HUD::DOES_BLIP_EXIST(iParam0->f_5))
 		{
 			HUD::REMOVE_BLIP(&(iParam0->f_5));
@@ -4418,7 +4418,7 @@ int func_68(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 						{
 							func_59(uParam0->f_17[iVar18], "NEED_A_BIGGER_VEHICLE", 3);
 						}
-						func_61(uParam0, "MORE_SEATS", 0);
+						func_61(uParam0, "MORE_SEATS" /* GXT: A vehicle with more seats is needed. */, 0);
 						MISC::SET_BIT(&(uParam0->f_13), 13);
 					}
 				}
@@ -4429,7 +4429,7 @@ int func_68(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 		{
 			bVar9 = false;
 			MISC::CLEAR_BIT(&(uParam0->f_13), 13);
-			func_67("MORE_SEATS");
+			func_67("MORE_SEATS" /* GXT: A vehicle with more seats is needed. */);
 		}
 		if (!ENTITY::DOES_ENTITY_EXIST(iParam10))
 		{
@@ -4442,7 +4442,7 @@ int func_68(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 						iVar10 = PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false);
 						if (func_79(iVar10, uParam0))
 						{
-							func_61(uParam0, "CMN_VEHSUIT", 0);
+							func_61(uParam0, "CMN_VEHSUIT" /* GXT: ~s~Vehicle is not suitable. */, 0);
 							MISC::SET_BIT(&(uParam0->f_13), 31);
 						}
 					}
@@ -4450,7 +4450,7 @@ int func_68(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 				else if (!PED::IS_PED_SITTING_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID()))
 				{
 					MISC::CLEAR_BIT(&(uParam0->f_13), 31);
-					func_67("CMN_VEHSUIT");
+					func_67("CMN_VEHSUIT" /* GXT: ~s~Vehicle is not suitable. */);
 				}
 			}
 		}
@@ -4860,7 +4860,7 @@ int func_68(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 				}
 				iVar0++;
 			}
-			func_67("MORE_SEATS");
+			func_67("MORE_SEATS" /* GXT: A vehicle with more seats is needed. */);
 			return 1;
 		}
 	}
@@ -5500,7 +5500,7 @@ void func_93(int iParam0)//Position - 0x42C5
 			break;
 		
 		case 6:
-			sVar0 = "cmn_tdied";
+			sVar0 = "cmn_tdied" /* GXT: ~s~Trevor died. */;
 			break;
 		
 		default:
@@ -6123,15 +6123,15 @@ void func_105()//Position - 0x51AF
 			switch (func_24())
 			{
 				case 0:
-					StringCopy(&Global_78551, "CMN_MARRE", 16);
+					StringCopy(&Global_78551, "CMN_MARRE" /* GXT: ~s~Michael was arrested. */, 16);
 					break;
 				
 				case 1:
-					StringCopy(&Global_78551, "CMN_FARRE", 16);
+					StringCopy(&Global_78551, "CMN_FARRE" /* GXT: ~s~Franklin was arrested. */, 16);
 					break;
 				
 				case 2:
-					StringCopy(&Global_78551, "CMN_TARRE", 16);
+					StringCopy(&Global_78551, "CMN_TARRE" /* GXT: ~s~Trevor was arrested. */, 16);
 					break;
 			}
 			StringCopy(&Global_78555, "", 16);
@@ -6145,15 +6145,15 @@ void func_105()//Position - 0x51AF
 			switch (func_24())
 			{
 				case 0:
-					StringCopy(&Global_78551, "CMN_MDIED", 16);
+					StringCopy(&Global_78551, "CMN_MDIED" /* GXT: ~s~Michael died. */, 16);
 					break;
 				
 				case 1:
-					StringCopy(&Global_78551, "CMN_FDIED", 16);
+					StringCopy(&Global_78551, "CMN_FDIED" /* GXT: ~s~Franklin died. */, 16);
 					break;
 				
 				case 2:
-					StringCopy(&Global_78551, "CMN_TDIED", 16);
+					StringCopy(&Global_78551, "CMN_TDIED" /* GXT: ~s~Trevor died. */, 16);
 					break;
 			}
 			StringCopy(&Global_78555, "", 16);
@@ -11542,7 +11542,7 @@ void func_185(int iParam0, var uParam1)//Position - 0xC61A
 			break;
 		
 		case 5:
-			func_186(uParam1, "Barry3A", func_188(iParam0), 1, 1, 0, 1199.27f, -1255.63f, 34.23f, 381, "BARSTASH", 84, 0, "", 166, 0, 7, 4, 2, 0, 2359, func_187(iParam0), 0, 1);
+			func_186(uParam1, "Barry3A", func_188(iParam0), 1, 1, 0, 1199.27f, -1255.63f, 34.23f, 381, "BARSTASH" /* GXT: Areas where you can find vehicles with a hidden stash have been marked on the map. Collect these vehicles for Barry. */, 84, 0, "", 166, 0, 7, 4, 2, 0, 2359, func_187(iParam0), 0, 1);
 			break;
 		
 		case 6:
@@ -11554,7 +11554,7 @@ void func_185(int iParam0, var uParam1)//Position - 0xC61A
 			break;
 		
 		case 8:
-			func_186(uParam1, "Dreyfuss1", func_188(iParam0), 0, 2, 4, -1458.97f, 485.99f, 115.38f, 66, "LETTERS_HINT", 106, 0, "", 0, 0, -1, 4, 2, 0, 2359, func_187(iParam0), 0, 0);
+			func_186(uParam1, "Dreyfuss1", func_188(iParam0), 0, 2, 4, -1458.97f, 485.99f, 115.38f, 66, "LETTERS_HINT" /* GXT: The killer's identity and location have been revealed. */, 106, 0, "", 0, 0, -1, 4, 2, 0, 2359, func_187(iParam0), 0, 0);
 			break;
 		
 		case 9:
@@ -11674,7 +11674,7 @@ void func_185(int iParam0, var uParam1)//Position - 0xC61A
 			break;
 		
 		case 38:
-			func_186(uParam1, "Nigel1A", func_188(iParam0), 0, 12, 1, -558.65f, 284.49f, 90.86f, 149, "NIGITEMS", 100, 0, "", 0, 0, 42, 4, 4, 0, 2359, func_187(iParam0), 1, 1);
+			func_186(uParam1, "Nigel1A", func_188(iParam0), 0, 12, 1, -558.65f, 284.49f, 90.86f, 149, "NIGITEMS" /* GXT: Areas where you can find celebrity items have been marked on the map. Steal these items for Nigel and Mrs. Thornhill. */, 100, 0, "", 0, 0, 42, 4, 4, 0, 2359, func_187(iParam0), 1, 1);
 			break;
 		
 		case 39:
@@ -11718,7 +11718,7 @@ void func_185(int iParam0, var uParam1)//Position - 0xC61A
 			break;
 		
 		case 49:
-			func_186(uParam1, "Paparazzo3A", func_188(iParam0), 0, 14, 2, 305.52f, 157.19f, 102.94f, 389, "PAPPHOTO", 102, 0, "", 0, 0, 51, 4, 2, 0, 2359, func_187(iParam0), 0, 1);
+			func_186(uParam1, "Paparazzo3A", func_188(iParam0), 0, 14, 2, 305.52f, 157.19f, 102.94f, 389, "PAPPHOTO" /* GXT: Areas where you can find celebrity photo opportunities have been marked on the map. Track down and photograph these celebrities for Beverly. */, 102, 0, "", 0, 0, 51, 4, 2, 0, 2359, func_187(iParam0), 0, 1);
 			break;
 		
 		case 50:
@@ -11754,7 +11754,7 @@ void func_185(int iParam0, var uParam1)//Position - 0xC61A
 			break;
 		
 		case 58:
-			func_186(uParam1, "Tonya1", func_188(iParam0), 0, 17, 4, -14.39f, -1472.69f, 29.58f, 66, "AM_H_RCFS", -1, 0, "ambient_TonyaCall", 24, 1, 59, 4, 2, 0, 2359, func_187(iParam0), 0, 1);
+			func_186(uParam1, "Tonya1", func_188(iParam0), 0, 17, 4, -14.39f, -1472.69f, 29.58f, 66, "AM_H_RCFS" /* GXT: Strangers and Freaks can be found throughout San Andreas at ~HUD_COLOUR_FRANKLIN~~BLIP_RANDOM_CHARACTER~~s~ */, -1, 0, "ambient_TonyaCall", 24, 1, 59, 4, 2, 0, 2359, func_187(iParam0), 0, 1);
 			break;
 		
 		case 59:

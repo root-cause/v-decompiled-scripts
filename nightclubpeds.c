@@ -16773,7 +16773,7 @@ char* func_61(var uParam0, int iParam1, int iParam2)//Position - 0x9BA7
 					switch (MISC::GET_RANDOM_INT_IN_RANGE(0, 2))
 					{
 						case 0:
-							return "WELCOME";
+							return "WELCOME" /* GXT: Welcome */;
 							break;
 						
 						case 1:

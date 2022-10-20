@@ -146,7 +146,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_61 = 2050;
 	iLocal_62 = -1;
 	iLocal_63 = -1;
-	sLocal_65 = "CC_SUBSTR";
+	sLocal_65 = "CC_SUBSTR" /* GXT: ~INPUT_CONTEXT~ */;
 	fLocal_66 = 125f;
 	iLocal_67 = 1;
 	iLocal_69 = 263;
@@ -908,7 +908,7 @@ void func_9()//Position - 0xE59
 	}
 	else if (MISC::IS_PS3_VERSION() || func_10())
 	{
-		StringCopy(&cVar0, "PRESENCE_0_STR", 24);
+		StringCopy(&cVar0, "PRESENCE_0_STR" /* GXT: Playing story */, 24);
 		NETWORK::NETWORK_SET_RICH_PRESENCE_STRING(0, &cVar0);
 	}
 }
@@ -2993,7 +2993,7 @@ void func_112()//Position - 0x37E8
 	iLocal_69 = 95;
 	MISC::CLEAR_AREA_OF_VEHICLES(Local_76, 10f, false, false, false, false, false, false, 0);
 	iLocal_63 = 10;
-	sLocal_65 = "PLAY_STUNT";
+	sLocal_65 = "PLAY_STUNT" /* GXT: Approach the plane and press ~INPUT_ENTER~ to begin stunt plane time trials. */;
 	fLocal_77 = 6f;
 	iLocal_61 = 51000;
 }

@@ -53,7 +53,7 @@ void __EntryFunction__()//Position - 0x0
 	func_18();
 	Global_20266.f_1 = 7;
 	func_17(Global_20247, "DISPLAY_VIEW", 14f, -1082130432, -1082130432, -1082130432, -1082130432);
-	func_16(Global_20247, "SET_HEADER", "CELL_4", 0, 0, 0, 0);
+	func_16(Global_20247, "SET_HEADER", "CELL_4" /* GXT: Sidetasks */, 0, 0, 0, 0);
 	while (true)
 	{
 		SYSTEM::WAIT(0);
@@ -98,7 +98,7 @@ void __EntryFunction__()//Position - 0x0
 				Global_20266.f_1 = 7;
 				func_18();
 				func_17(Global_20247, "DISPLAY_VIEW", 14f, -1082130432, -1082130432, -1082130432, -1082130432);
-				func_16(Global_20247, "SET_HEADER", "CELL_4", 0, 0, 0, 0);
+				func_16(Global_20247, "SET_HEADER", "CELL_4" /* GXT: Sidetasks */, 0, 0, 0, 0);
 			}
 		}
 		if (func_1())
@@ -175,15 +175,15 @@ void func_6()//Position - 0x277
 	func_10(255, 255, 255, 205);
 	if (Global_22893[iLocal_21 /*9*/].f_2.f_1 < 10)
 	{
-		func_7(fLocal_25, fLocal_26, "CELL_506", Global_22893[iLocal_21 /*9*/].f_2.f_2, Global_22893[iLocal_21 /*9*/].f_2.f_1);
+		func_7(fLocal_25, fLocal_26, "CELL_506" /* GXT: ~1~:0~1~ */, Global_22893[iLocal_21 /*9*/].f_2.f_2, Global_22893[iLocal_21 /*9*/].f_2.f_1);
 	}
 	else
 	{
-		func_7(fLocal_25, fLocal_26, "CELL_503", Global_22893[iLocal_21 /*9*/].f_2.f_2, Global_22893[iLocal_21 /*9*/].f_2.f_1);
+		func_7(fLocal_25, fLocal_26, "CELL_503" /* GXT: ~1~:~1~ */, Global_22893[iLocal_21 /*9*/].f_2.f_2, Global_22893[iLocal_21 /*9*/].f_2.f_1);
 	}
 	fLocal_25 = (fLocal_25 + 0.07f);
 	func_10(255, 255, 255, 205);
-	func_7(fLocal_25, fLocal_26, "CELL_505", Global_22893[iLocal_21 /*9*/].f_2.f_3, Global_22893[iLocal_21 /*9*/].f_2.f_4);
+	func_7(fLocal_25, fLocal_26, "CELL_505" /* GXT: ~1~/~1~ */, Global_22893[iLocal_21 /*9*/].f_2.f_3, Global_22893[iLocal_21 /*9*/].f_2.f_4);
 	fLocal_25 = fLocal_23;
 	func_10(255, 255, 255, 205);
 	fLocal_26 = (fLocal_26 + 0.02f);
@@ -248,9 +248,9 @@ void func_11()//Position - 0x4FC
 	{
 		iLocal_21 = iLocal_18[iLocal_20];
 		Global_22671 = 1;
-		func_12(Global_20247, "SET_DATA_SLOT", 15f, 0f, -1f, -1f, -1f, "CELL_287", "CELL_280", "CELL_285", "CELL_284", 0);
+		func_12(Global_20247, "SET_DATA_SLOT", 15f, 0f, -1f, -1f, -1f, "CELL_287" /* GXT: Send Photo(s) */, "CELL_280" /* GXT: Take Photo */, "CELL_285" /* GXT: Move */, "CELL_284" /* GXT: Zoom */, 0);
 		func_17(Global_20247, "DISPLAY_VIEW", 15f, -1082130432, -1082130432, -1082130432, -1082130432);
-		func_16(Global_20247, "SET_HEADER", "CELL_4", 0, 0, 0, 0);
+		func_16(Global_20247, "SET_HEADER", "CELL_4" /* GXT: Sidetasks */, 0, 0, 0, 0);
 		Global_20266.f_1 = 8;
 		Global_22671 = 1;
 	}
@@ -376,15 +376,15 @@ void func_15()//Position - 0x6DC
 		func_10(255, 255, 255, 205);
 		if (Global_22893[iLocal_18[iVar0] /*9*/].f_2.f_1 < 10)
 		{
-			func_7(fLocal_25, fLocal_26, "CELL_506", Global_22893[iLocal_18[iVar0] /*9*/].f_2.f_2, Global_22893[iLocal_18[iVar0] /*9*/].f_2.f_1);
+			func_7(fLocal_25, fLocal_26, "CELL_506" /* GXT: ~1~:0~1~ */, Global_22893[iLocal_18[iVar0] /*9*/].f_2.f_2, Global_22893[iLocal_18[iVar0] /*9*/].f_2.f_1);
 		}
 		else
 		{
-			func_7(fLocal_25, fLocal_26, "CELL_503", Global_22893[iLocal_18[iVar0] /*9*/].f_2.f_2, Global_22893[iLocal_18[iVar0] /*9*/].f_2.f_1);
+			func_7(fLocal_25, fLocal_26, "CELL_503" /* GXT: ~1~:~1~ */, Global_22893[iLocal_18[iVar0] /*9*/].f_2.f_2, Global_22893[iLocal_18[iVar0] /*9*/].f_2.f_1);
 		}
 		fLocal_25 = (fLocal_25 + 0.07f);
 		func_10(255, 255, 255, 205);
-		func_7(fLocal_25, fLocal_26, "CELL_505", Global_22893[iLocal_18[iVar0] /*9*/].f_2.f_3, Global_22893[iLocal_18[iVar0] /*9*/].f_2.f_4);
+		func_7(fLocal_25, fLocal_26, "CELL_505" /* GXT: ~1~/~1~ */, Global_22893[iLocal_18[iVar0] /*9*/].f_2.f_3, Global_22893[iLocal_18[iVar0] /*9*/].f_2.f_4);
 		fLocal_25 = fLocal_23;
 		func_10(255, 255, 255, 205);
 		if (iVar0 == iLocal_20)
@@ -485,7 +485,7 @@ void func_18()//Position - 0x8FD
 		}
 		iVar1++;
 	}
-	func_12(Global_20247, "SET_DATA_SLOT", 14f, 0f, 25f, -1f, -1f, "CELL_287", "CELL_280", 0, 0, 0);
+	func_12(Global_20247, "SET_DATA_SLOT", 14f, 0f, 25f, -1f, -1f, "CELL_287" /* GXT: Send Photo(s) */, "CELL_280" /* GXT: Take Photo */, 0, 0, 0);
 }
 
 int func_19(struct<6> Param0, struct<6> Param1)//Position - 0x9E8

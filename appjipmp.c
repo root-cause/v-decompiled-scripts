@@ -260,11 +260,11 @@ void __EntryFunction__()//Position - 0x0
 	fLocal_160 = 2f;
 	fLocal_161 = 100f;
 	fLocal_171 = 0.5f;
-	StringCopy(&Local_179, "CELL_37", 16);
-	StringCopy(&Local_182, "CELL_249", 16);
-	StringCopy(&Local_185, "CELL_206", 16);
-	StringCopy(&Local_188, "CELL_212", 16);
-	StringCopy(&Local_191, "CELL_213", 16);
+	StringCopy(&Local_179, "CELL_37" /* GXT: Quick Join */, 16);
+	StringCopy(&Local_182, "CELL_249" /* GXT: Are you sure? */, 16);
+	StringCopy(&Local_185, "CELL_206" /* GXT: BACK */, 16);
+	StringCopy(&Local_188, "CELL_212" /* GXT: YES */, 16);
+	StringCopy(&Local_191, "CELL_213" /* GXT: NO */, 16);
 	StringCopy(&Local_194, "", 24);
 	iLocal_199 = 6;
 	iLocal_208 = -1;
@@ -6008,22 +6008,22 @@ void func_174()//Position - 0x68CA
 	{
 		if (func_180(1))
 		{
-			StringCopy(&Local_194, "PHINVQUITBBB", 24);
+			StringCopy(&Local_194, "PHINVQUITBBB" /* GXT: You will be given a Bad Sport increase for leaving during Club Work, are you sure? */, 24);
 		}
 		else
 		{
-			StringCopy(&Local_194, "PHINVQUITBB", 24);
+			StringCopy(&Local_194, "PHINVQUITBB" /* GXT: You will be given a Bad Sport increase for leaving during CEO business, are you sure? */, 24);
 		}
 		bVar0 = true;
 	}
 	else if (func_179(PLAYER::PLAYER_ID()))
 	{
-		StringCopy(&Local_194, "PHINVQUITB", 24);
+		StringCopy(&Local_194, "PHINVQUITB" /* GXT: You will be given a Bad Sport increase for leaving during a Freemode Event, are you sure? */, 24);
 		bVar0 = true;
 	}
 	if (func_176())
 	{
-		StringCopy(&Local_194, "PHINVQUIT", 24);
+		StringCopy(&Local_194, "PHINVQUIT" /* GXT: You will be removed from the Event, are you sure? */, 24);
 		bVar0 = true;
 	}
 	if (bVar0)
@@ -6161,7 +6161,7 @@ void func_187()//Position - 0x6AFD
 	
 	bLocal_201 = false;
 	func_205(Global_20247, "SET_DATA_SLOT_EMPTY", 18f, -1082130432, -1082130432, -1082130432, -1082130432);
-	func_204(Global_20247, "SET_DATA_SLOT", 18f, 0f, 0f, -1f, -1f, "CELL_208", 0, 0, 0, 0);
+	func_204(Global_20247, "SET_DATA_SLOT", 18f, 0f, 0f, -1f, -1f, "CELL_208" /* GXT: Call */, 0, 0, 0, 0);
 	bVar1 = true;
 	if ((iLocal_178 == 1 && uLocal_211[iLocal_207] == 0) && !Global_262145.f_4706)
 	{
@@ -6171,7 +6171,7 @@ void func_187()//Position - 0x6AFD
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(18);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar0);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_JIP_F");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_JIP_F" /* GXT: Friends in Session */);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			iVar0++;
@@ -6180,7 +6180,7 @@ void func_187()//Position - 0x6AFD
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(18);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("JIPMP_HEISTQ");
+		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("JIPMP_HEISTQ" /* GXT: Join On Call */);
 		GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		iVar0++;
@@ -6188,7 +6188,7 @@ void func_187()//Position - 0x6AFD
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(18);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("JIPMP_HEISTD");
+		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("JIPMP_HEISTD" /* GXT: Join Lobby Direct */);
 		GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		iVar0++;
@@ -6201,7 +6201,7 @@ void func_187()//Position - 0x6AFD
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(18);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar0);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_JIP_F");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_JIP_F" /* GXT: Friends in Session */);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			iVar0++;
@@ -6216,41 +6216,41 @@ void func_187()//Position - 0x6AFD
 			{
 				if (Global_1836751.f_30 == -2)
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_JIPPRP");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_JIPPRP" /* GXT: You don't own a Personal Vehicle. */);
 					bVar1 = false;
 				}
 				else if (Global_1836751.f_30 == -3)
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_JIPPRV");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_JIPPRV" /* GXT: You don't own the ~a~. */);
 					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(VEHICLE::GET_DISPLAY_NAME_FROM_VEHICLE_MODEL(Global_1836751.f_72));
 					bVar1 = false;
 				}
 				else if (Global_1836751.f_30 == 0)
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_JIPPRC");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_JIPPRC" /* GXT: You don't own a vehicle in the ~a~ class. */);
 					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(func_202(func_203()));
 					bVar1 = false;
 				}
 				else if (Global_1836751.f_30 == -4)
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FMSPR_HLP9P");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FMSPR_HLP9P" /* GXT: Your Personal Vehicle is destroyed or impounded. */);
 					bVar1 = false;
 				}
 				else if (!func_200())
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_JIPPRN");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_JIPPRN" /* GXT: You can't afford the entrance fee $~1~. */);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(func_199());
 					bVar1 = false;
 				}
 				else if (func_197())
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PIM_DMAGUT");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PIM_DMAGUT" /* GXT: Available again in ~a~ */);
 					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TIME((Global_1836751.f_3 - NETWORK::GET_CLOUD_TIME_AS_INT()) * 1000, 14);
 					bVar1 = false;
 				}
 				else
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_JIP_PR");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_JIP_PR" /* GXT: Pay entrance fee $~1~? */);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(func_199());
 					bVar1 = true;
 				}
@@ -6260,23 +6260,23 @@ void func_187()//Position - 0x6AFD
 				bVar1 = true;
 				if ((iLocal_178 == 1 && uLocal_211[iLocal_207] == 2) && !func_196())
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PIM_DMAGUT");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PIM_DMAGUT" /* GXT: Available again in ~a~ */);
 					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TIME((func_195(joaat("MPPLY_H3_COOLDOWN")) - NETWORK::GET_CLOUD_TIME_AS_INT()) * 1000, 14);
 					bVar1 = false;
 				}
 				else if ((iLocal_178 == 1 && uLocal_211[iLocal_207] == 3) && !func_194())
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PIM_DMAGUT");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PIM_DMAGUT" /* GXT: Available again in ~a~ */);
 					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TIME((func_195(joaat("MPPLY_H4_COOLDOWN")) - NETWORK::GET_CLOUD_TIME_AS_INT()) * 1000, 14);
 					bVar1 = false;
 				}
 				else if (iLocal_178 == 2 && (uLocal_212[iLocal_207] == 4 || uLocal_212[iLocal_207] == 3))
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("JIPMP_SVMH");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("JIPMP_SVMH" /* GXT: Join an Organization as an Associate on this Job. */);
 				}
 				else
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_JIP_A");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_JIP_A" /* GXT: Alone */);
 				}
 			}
 			bLocal_201 = !bVar1;
@@ -6292,7 +6292,7 @@ void func_187()//Position - 0x6AFD
 		{
 			if (!BitTest(Global_2815059.f_1809, 30))
 			{
-				func_175("CH_QM_PHONEN", -1);
+				func_175("CH_QM_PHONEN" /* GXT: There's a delay before you can play The Diamond Casino Heist again via the Quick Join menu. */, -1);
 				MISC::SET_BIT(&(Global_2815059.f_1809), 30);
 			}
 		}
@@ -6300,7 +6300,7 @@ void func_187()//Position - 0x6AFD
 		{
 			if (!BitTest(Global_2815059.f_1809, 31))
 			{
-				func_175("IH_QM_PHONEN", -1);
+				func_175("IH_QM_PHONEN" /* GXT: There is a delay before you can play The Cayo Perico Heist again via the Quick Join menu. */, -1);
 				MISC::SET_BIT(&(Global_2815059.f_1809), 31);
 			}
 		}
@@ -6466,61 +6466,61 @@ char* func_202(int iParam0)//Position - 0x7171
 	switch (iParam0)
 	{
 		case 0:
-			return "FMSTP_PRC0";
+			return "FMSTP_PRC0" /* GXT: Compacts */;
 		
 		case 1:
-			return "FMSTP_PRC1";
+			return "FMSTP_PRC1" /* GXT: Sedans */;
 		
 		case 2:
-			return "FMSTP_PRC2";
+			return "FMSTP_PRC2" /* GXT: SUV */;
 		
 		case 3:
-			return "FMSTP_PRC3";
+			return "FMSTP_PRC3" /* GXT: Coupes */;
 		
 		case 4:
-			return "FMSTP_PRC4";
+			return "FMSTP_PRC4" /* GXT: Muscle */;
 		
 		case 5:
-			return "FMSTP_PRC5";
+			return "FMSTP_PRC5" /* GXT: Classics */;
 		
 		case 6:
-			return "FMSTP_PRC6";
+			return "FMSTP_PRC6" /* GXT: Sports */;
 		
 		case 7:
-			return "FMSTP_PRC7";
+			return "FMSTP_PRC7" /* GXT: Super */;
 		
 		case 8:
-			return "FMSTP_PRC8";
+			return "FMSTP_PRC8" /* GXT: Motorcycles */;
 		
 		case 9:
-			return "FMSTP_PRC9";
+			return "FMSTP_PRC9" /* GXT: Off Road */;
 		
 		case 10:
-			return "FMSTP_PRC10";
+			return "FMSTP_PRC10" /* GXT: Industrial */;
 		
 		case 11:
-			return "FMSTP_PRC11";
+			return "FMSTP_PRC11" /* GXT: Utility */;
 		
 		case 12:
-			return "FMSTP_PRC12";
+			return "FMSTP_PRC12" /* GXT: Vans */;
 		
 		case 13:
-			return "FMSTP_PRC13";
+			return "FMSTP_PRC13" /* GXT: Cycles */;
 		
 		case 14:
-			return "FMSTP_PRC14";
+			return "FMSTP_PRC14" /* GXT: Open */;
 		
 		case 15:
-			return "FMSTP_PRC15";
+			return "FMSTP_PRC15" /* GXT: Special */;
 		
 		case 16:
-			return "FMSTP_PRC16";
+			return "FMSTP_PRC16" /* GXT: Weaponized */;
 		
 		case 17:
-			return "FMSTP_PRC17";
+			return "FMSTP_PRC17" /* GXT: Arena Contender */;
 		
 		case 18:
-			return "FMSTP_PRC18";
+			return "FMSTP_PRC18" /* GXT: Open Wheel */;
 		
 		case 19:
 			return "FMSTP_PRC19";
@@ -6530,7 +6530,7 @@ char* func_202(int iParam0)//Position - 0x7171
 		
 		default:
 	}
-	return "FMSTP_PRC14";
+	return "FMSTP_PRC14" /* GXT: Open */;
 }
 
 int func_203()//Position - 0x7295
@@ -6851,7 +6851,7 @@ void func_217()//Position - 0x7828
 {
 	if (iLocal_178 == 1 && uLocal_211[iLocal_207] == 0)
 	{
-		func_191("JIPMP_HEISTT");
+		func_191("JIPMP_HEISTT" /* GXT: Quick Heist */);
 	}
 	else
 	{
@@ -7190,7 +7190,7 @@ void func_230(int iParam0)//Position - 0x7D9A
 		}
 	}
 	func_205(Global_20247, "SET_DATA_SLOT_EMPTY", 18f, -1082130432, -1082130432, -1082130432, -1082130432);
-	func_204(Global_20247, "SET_DATA_SLOT", 18f, 0f, 0f, -1f, -1f, "CELL_208", 0, 0, 0, 0);
+	func_204(Global_20247, "SET_DATA_SLOT", 18f, 0f, 0f, -1f, -1f, "CELL_208" /* GXT: Call */, 0, 0, 0, 0);
 	func_232(iParam0);
 	func_205(Global_20247, "DISPLAY_VIEW", 18f, -1082130432, -1082130432, -1082130432, -1082130432);
 	func_191(func_231(iParam0));
@@ -7210,25 +7210,25 @@ char* func_231(int iParam0)//Position - 0x7E5E
 	switch (iParam0)
 	{
 		case 0:
-			return "TUN_CELL_SERIES";
+			return "TUN_CELL_SERIES" /* GXT: Series Modes */;
 		
 		case 1:
-			return "TUN_CELL_HEISTS";
+			return "TUN_CELL_HEISTS" /* GXT: Heists */;
 		
 		case 2:
-			return "TUN_CELL_CONTACT_M";
+			return "TUN_CELL_CONTACT_M" /* GXT: Contact Missions */;
 		
 		case 3:
-			return "TUN_CELL_JOBS";
+			return "TUN_CELL_JOBS" /* GXT: Jobs */;
 		
 		case 4:
-			return "TUN_CELL_ACTIVITIES";
+			return "TUN_CELL_ACTIVITIES" /* GXT: Activities */;
 		
 		case 5:
-			return "JIPMP_PL";
+			return "JIPMP_PL" /* GXT: Playlist */;
 		
 		case 6:
-			return "JIPMP_ANY";
+			return "JIPMP_ANY" /* GXT: Random */;
 		
 		default:
 	}
@@ -7311,7 +7311,7 @@ void func_232(int iParam0)//Position - 0x7ECB
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(18);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("JIPMP_NA");
+		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("JIPMP_NA" /* GXT: Not Available */);
 		GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
@@ -7340,74 +7340,74 @@ char* func_234(int iParam0, int iParam1)//Position - 0x8055
 				case 0:
 					if (func_157(func_158()))
 					{
-						return "JIPMP_STNTAM";
+						return "JIPMP_STNTAM" /* GXT: Featured Series */;
 					}
 					else
 					{
-						return "JIPMP_MISS_NV";
+						return "JIPMP_MISS_NV" /* GXT: Adversary Mode */;
 					}
 					break;
 				
 				case 1:
-					return "COM_SERIES";
+					return "COM_SERIES" /* GXT: Community Series */;
 				
 				case 2:
-					return "CAY_SERIES";
+					return "CAY_SERIES" /* GXT: Cayo Perico Series */;
 				
 				case 3:
-					return "SR_SERIES";
+					return "SR_SERIES" /* GXT: Street Race Series */;
 				
 				case 4:
-					return "PU_SERIES";
+					return "PU_SERIES" /* GXT: Pursuit Series */;
 				
 				case 5:
-					return "OW_SERIES";
+					return "OW_SERIES" /* GXT: Open Wheel Series */;
 				
 				case 6:
-					return "RACE_SERIES";
+					return "RACE_SERIES" /* GXT: Race Series */;
 				
 				case 7:
-					return "SURV_SERIES";
+					return "SURV_SERIES" /* GXT: Survival Series */;
 				
 				case 8:
-					return "ARENA_SERIES";
+					return "ARENA_SERIES" /* GXT: Arena War Series */;
 				
 				case 9:
-					return "JIPMP_SVR";
+					return "JIPMP_SVR" /* GXT: Special Race Series */;
 				
 				case 10:
-					return "HOT_SERIES";
+					return "HOT_SERIES" /* GXT: S.A. Super Sport Series */;
 				
 				case 11:
-					return "TRAN_SERIES";
+					return "TRAN_SERIES" /* GXT: Transform Series */;
 				
 				case 12:
-					return "BNKR_SERIES";
+					return "BNKR_SERIES" /* GXT: Bunker Series */;
 				
 				case 13:
 					if (Global_262145.f_10081)
 					{
-						return "JIPMP_STNTRD";
+						return "JIPMP_STNTRD" /* GXT: Active Stunt Series */;
 					}
 					else
 					{
-						return "JIPMP_STNTR";
+						return "JIPMP_STNTR" /* GXT: Stunt Series */;
 					}
 					break;
 				
 				case 14:
 					if (Global_262145.f_10081)
 					{
-						return "JIPMP_ADVSD";
+						return "JIPMP_ADVSD" /* GXT: Active Adversary Series */;
 					}
 					else
 					{
-						return "JIPMP_ADVSR";
+						return "JIPMP_ADVSR" /* GXT: Adversary Series */;
 					}
 					break;
 				
 				case 15:
-					return "JIPMP_STNTPR";
+					return "JIPMP_STNTPR" /* GXT: Active Premium Race */;
 			}
 			break;
 		
@@ -7415,16 +7415,16 @@ char* func_234(int iParam0, int iParam1)//Position - 0x8055
 			switch (iParam1)
 			{
 				case 0:
-					return "JIPMP_HEIST";
+					return "JIPMP_HEIST" /* GXT: Heist */;
 				
 				case 1:
-					return "HUD_AWD_GANGOP";
+					return "HUD_AWD_GANGOP" /* GXT: The Doomsday Heist */;
 				
 				case 2:
-					return "CH_QM_PHONE";
+					return "CH_QM_PHONE" /* GXT: Diamond Casino Heist */;
 				
 				case 3:
-					return "IH_END_NAME";
+					return "IH_END_NAME" /* GXT: The Cayo Perico Heist */;
 				
 				default:
 			}
@@ -7434,22 +7434,22 @@ char* func_234(int iParam0, int iParam1)//Position - 0x8055
 			switch (iParam1)
 			{
 				case 0:
-					return "JIPMP_MISS";
+					return "JIPMP_MISS" /* GXT: Contact Mission */;
 				
 				case 1:
-					return "JIPMP_STRIP";
+					return "JIPMP_STRIP" /* GXT: Short Trip */;
 				
 				case 2:
-					return "TUN_ROB_CONTR";
+					return "TUN_ROB_CONTR" /* GXT: Auto Shop Robbery */;
 				
 				case 3:
-					return "JIPMP_WVM";
+					return "JIPMP_WVM" /* GXT: Mobile Operation */;
 				
 				case 4:
-					return "JIPMP_SVM";
+					return "JIPMP_SVM" /* GXT: Special Vehicle Mission */;
 				
 				case 5:
-					return "JIPMP_MISS_FL";
+					return "JIPMP_MISS_FL" /* GXT: Lamar Mission */;
 				
 				default:
 			}
@@ -7459,25 +7459,25 @@ char* func_234(int iParam0, int iParam1)//Position - 0x8055
 			switch (iParam1)
 			{
 				case 0:
-					return "JIPMP_RACE";
+					return "JIPMP_RACE" /* GXT: Race */;
 				
 				case 1:
-					return "JIPMP_DM";
+					return "JIPMP_DM" /* GXT: Deathmatch */;
 				
 				case 2:
-					return "JIPMP_MISS_V";
+					return "JIPMP_MISS_V" /* GXT: Versus Mission */;
 				
 				case 3:
-					return "JIPMP_MISS_L";
+					return "JIPMP_MISS_L" /* GXT: LTS */;
 				
 				case 4:
-					return "JIPMP_MISS_C";
+					return "JIPMP_MISS_C" /* GXT: Capture */;
 				
 				case 5:
-					return "JIPMP_SURV";
+					return "JIPMP_SURV" /* GXT: Survival */;
 				
 				case 6:
-					return "JIPMP_PARA";
+					return "JIPMP_PARA" /* GXT: Parachuting */;
 				
 				default:
 			}
@@ -7487,19 +7487,19 @@ char* func_234(int iParam0, int iParam1)//Position - 0x8055
 			switch (iParam1)
 			{
 				case 0:
-					return "JIPMP_ARM";
+					return "JIPMP_ARM" /* GXT: Arm Wrestling */;
 				
 				case 1:
-					return "JIPMP_DARTS";
+					return "JIPMP_DARTS" /* GXT: Darts */;
 				
 				case 2:
-					return "JIPMP_GOLF";
+					return "JIPMP_GOLF" /* GXT: Golf */;
 				
 				case 3:
-					return "JIPMP_RANG";
+					return "JIPMP_RANG" /* GXT: Shooting Range */;
 				
 				case 4:
-					return "JIPMP_TEN";
+					return "JIPMP_TEN" /* GXT: Tennis */;
 				
 				default:
 			}
@@ -9394,7 +9394,7 @@ void func_253()//Position - 0xA2B5
 		}
 	}
 	func_205(Global_20247, "SET_DATA_SLOT_EMPTY", 18f, -1082130432, -1082130432, -1082130432, -1082130432);
-	func_204(Global_20247, "SET_DATA_SLOT", 18f, 0f, 0f, -1f, -1f, "CELL_208", 0, 0, 0, 0);
+	func_204(Global_20247, "SET_DATA_SLOT", 18f, 0f, 0f, -1f, -1f, "CELL_208" /* GXT: Call */, 0, 0, 0, 0);
 	func_254();
 	func_205(Global_20247, "DISPLAY_VIEW", 18f, -1082130432, -1082130432, -1082130432, -1082130432);
 	func_191(&Local_179);
@@ -9455,7 +9455,7 @@ void func_254()//Position - 0xA373
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(18);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iLocal_220);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("JIPMP_NA");
+		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("JIPMP_NA" /* GXT: Not Available */);
 		GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}

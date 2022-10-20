@@ -67,12 +67,12 @@ void __EntryFunction__()//Position - 0x0
 	fLocal_23 = 80f;
 	fLocal_24 = 140f;
 	fLocal_25 = 180f;
-	StringCopy(&Local_30, "CELL_212", 16);
-	StringCopy(&Local_33, "CELL_213", 16);
-	StringCopy(&Local_36, "CELL_39", 16);
-	StringCopy(&Local_39, "CELL_MP_300", 16);
-	StringCopy(&Local_42, "CELL_MP_301", 16);
-	StringCopy(&Local_45, "CELL_MP_302", 16);
+	StringCopy(&Local_30, "CELL_212" /* GXT: YES */, 16);
+	StringCopy(&Local_33, "CELL_213" /* GXT: NO */, 16);
+	StringCopy(&Local_36, "CELL_39" /* GXT: Broadcast */, 16);
+	StringCopy(&Local_39, "CELL_MP_300" /* GXT: Activate? */, 16);
+	StringCopy(&Local_42, "CELL_MP_301" /* GXT: Deactivate? */, 16);
+	StringCopy(&Local_45, "CELL_MP_302" /* GXT: Unavailable */, 16);
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
 	func_45(&iLocal_28);
 	func_36();

@@ -2937,7 +2937,7 @@ int func_83(float fParam0, int iParam1)//Position - 0x33D9
 
 char* func_84()//Position - 0x3404
 {
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREATOR_RSC");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREATOR_RSC" /* GXT: Rockstar */);
 }
 
 int func_85()//Position - 0x3413
@@ -4313,7 +4313,7 @@ int func_147(var uParam0, char* sParam1, int iParam2, bool bParam3, bool bParam4
 				if (uParam0->f_2 == 0)
 				{
 					uParam0->f_2 = 1;
-					HUD::BEGIN_TEXT_COMMAND_BUSYSPINNER_ON("FMMC_DOWNLOAD");
+					HUD::BEGIN_TEXT_COMMAND_BUSYSPINNER_ON("FMMC_DOWNLOAD" /* GXT: Downloading */);
 					HUD::END_TEXT_COMMAND_BUSYSPINNER_ON(5);
 				}
 			}
@@ -20055,7 +20055,7 @@ void func_291(int iParam0)//Position - 0x205E2
 	}
 	Global_4980736.f_69354 = DATAFILE::DATADICT_GET_INT(iVar5, "time");
 	Global_4980736.f_69355 = DATAFILE::DATADICT_GET_INT(iVar5, "pal");
-	Global_4718592.f_618 = DATAFILE::DATADICT_GET_INT(iVar5, "blip");
+	Global_4718592.f_618 = DATAFILE::DATADICT_GET_INT(iVar5, "blip" /* GXT: Blip */);
 	uVar6 = DATAFILE::DATADICT_GET_ARRAY(iVar5, "loc");
 	uVar7 = DATAFILE::DATADICT_GET_ARRAY(iVar5, "head");
 	uVar8 = DATAFILE::DATADICT_GET_ARRAY(iVar5, "rotx");
@@ -22345,12 +22345,12 @@ char* func_299(char* sParam0, int iParam1, int iParam2, bool bParam3, char* sPar
 	}
 	else if (func_357())
 	{
-		if (!MISC::ARE_STRINGS_EQUAL(sParam5, "DEFAULT"))
+		if (!MISC::ARE_STRINGS_EQUAL(sParam5, "DEFAULT" /* GXT: _ */))
 		{
 			sVar0 = sParam5;
 		}
 	}
-	else if (!MISC::ARE_STRINGS_EQUAL(sParam4, "DEFAULT"))
+	else if (!MISC::ARE_STRINGS_EQUAL(sParam4, "DEFAULT" /* GXT: _ */))
 	{
 		sVar0 = sParam4;
 	}
@@ -22906,7 +22906,7 @@ void func_308(int iParam0)//Position - 0x26430
 	var* uVar3;
 	var* uVar4;
 	
-	uVar1 = DATAFILE::DATADICT_GET_DICT(iParam0, "usj");
+	uVar1 = DATAFILE::DATADICT_GET_DICT(iParam0, "usj" /* GXT: Stunt Jump */);
 	Global_4718592.f_115311 = DATAFILE::DATADICT_GET_INT(uVar1, "no");
 	uVar2 = DATAFILE::DATADICT_GET_ARRAY(uVar1, "vto");
 	uVar3 = DATAFILE::DATADICT_GET_ARRAY(uVar1, "vld");
@@ -29585,7 +29585,7 @@ void func_366(int iParam0)//Position - 0x33F5A
 				}
 				StringCopy(&Var2, "icsrln", 16);
 				StringIntConCat(&Var2, iVar0, 16);
-				StringCopy(&(Global_4718592.f_658[iVar0 /*22957*/].f_17399[bVar1 /*16*/]), func_299(&Var2, iParam0, &iVar35, bVar1, "DEFAULT", "DEFAULT"), 64);
+				StringCopy(&(Global_4718592.f_658[iVar0 /*22957*/].f_17399[bVar1 /*16*/]), func_299(&Var2, iParam0, &iVar35, bVar1, "DEFAULT" /* GXT: _ */, "DEFAULT" /* GXT: _ */), 64);
 				if (!func_362(&iVar36, 2, bVar1))
 				{
 					Global_4718592.f_658[iVar0 /*22957*/].f_4662[bVar1 /*9*/] = DATAFILE::DATAARRAY_GET_INT(iVar36, bVar1);
@@ -34534,7 +34534,7 @@ void func_376(var* uParam0)//Position - 0x3D78B
 	Global_4718592.f_616 = DATAFILE::DATADICT_GET_INT(uVar0, "score");
 	Global_4718592.f_627 = DATAFILE::DATADICT_GET_INT(uVar0, "prule");
 	Global_4980736.f_69353 = DATAFILE::DATADICT_GET_INT(uVar0, "ptyp");
-	Global_4718592.f_617 = DATAFILE::DATADICT_GET_INT(uVar0, "blip");
+	Global_4718592.f_617 = DATAFILE::DATADICT_GET_INT(uVar0, "blip" /* GXT: Blip */);
 	Global_4718592.f_619 = DATAFILE::DATADICT_GET_INT(uVar0, "tag");
 	Global_4718592.f_620 = DATAFILE::DATADICT_GET_INT(uVar0, "voice");
 	Global_4718592.f_621 = DATAFILE::DATADICT_GET_INT(uVar0, "radio");
@@ -39315,7 +39315,7 @@ struct<16> func_396()//Position - 0x46767
 {
 	struct<16> Var0;
 	
-	StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("IH_TITLE"), 64);
+	StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("IH_TITLE" /* GXT: The Cayo Perico Heist */), 64);
 	return Var0;
 }
 
@@ -39332,18 +39332,18 @@ struct<16> func_398()//Position - 0x4679E
 {
 	struct<16> Var0;
 	
-	StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("FMMC_CH_DN"), 64);
+	StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("FMMC_CH_DN" /* GXT: The Diamond Casino Heist */), 64);
 	if (Global_1966500 == 1)
 	{
-		StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("FMMC_CH_SS"), 64);
+		StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("FMMC_CH_SS" /* GXT: The Diamond Casino Heist – Silent & Sneaky */), 64);
 	}
 	else if (Global_1966500 == 2)
 	{
-		StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("FMMC_CH_BC"), 64);
+		StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("FMMC_CH_BC" /* GXT: The Diamond Casino Heist – The Big Con */), 64);
 	}
 	else if (Global_1966500 == 3)
 	{
-		StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("FMMC_CH_AG"), 64);
+		StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("FMMC_CH_AG" /* GXT: The Diamond Casino Heist – Aggressive */), 64);
 	}
 	return Var0;
 }
@@ -39442,7 +39442,7 @@ bool func_405(bool bParam0)//Position - 0x4694B
 
 char* func_406()//Position - 0x4695C
 {
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREATOR_NO_T");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREATOR_NO_T" /* GXT: No translation. */);
 }
 
 int func_407(int iParam0)//Position - 0x4696C
@@ -39941,7 +39941,7 @@ char* func_418(char* sParam0, int iParam1, char* sParam2, char* sParam3)//Positi
 	}
 	else if (func_357())
 	{
-		if (!MISC::ARE_STRINGS_EQUAL(sParam3, "DEFAULT"))
+		if (!MISC::ARE_STRINGS_EQUAL(sParam3, "DEFAULT" /* GXT: _ */))
 		{
 			sVar0 = sParam3;
 		}

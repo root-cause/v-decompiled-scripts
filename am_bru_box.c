@@ -8532,7 +8532,7 @@ int func_200()//Position - 0xB0EB
 				}
 				if (!func_208(1))
 				{
-					func_203("ABB_BOXCT", 0);
+					func_203("ABB_BOXCT" /* GXT: ~s~Bull Shark Testosterone Collected. */, 0);
 				}
 				Var0.f_2 = -1223820331;
 				Var0.f_10 = PLAYER::PLAYER_ID();
@@ -8732,7 +8732,7 @@ void func_211()//Position - 0xB4BE
 			}
 			HUD::SET_BLIP_SPRITE(iLocal_65, 403);
 			HUD::SET_BLIP_COLOUR(iLocal_65, 2);
-			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_65, "ABB_BLIPN");
+			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_65, "ABB_BLIPN" /* GXT: Bull Shark Testosterone */);
 		}
 	}
 }

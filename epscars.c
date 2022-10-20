@@ -335,7 +335,7 @@ void __EntryFunction__()//Position - 0x0
 			
 			case 6:
 				func_54(2, 6, 1);
-				func_53(2, "EPS_LSTEMAIL", 1);
+				func_53(2, "EPS_LSTEMAIL" /* GXT: Brother Brother,~n~~n~Cris and the senior thesis holders are very happy with the vehicles you sourced to further Kraff's work.  You are firmly on the path to enlightenment and divinity but it is a long and expensive path, and there are many more trials ahead.  Are you ready to understand the technology of your existence?  Are you everything you need and less and more?  Until next time, brother.  ~n~~n~Kraff be praised! */, 1);
 				func_52(2);
 				func_96();
 				break;
@@ -355,7 +355,7 @@ void __EntryFunction__()//Position - 0x0
 				func_40();
 				func_39(&uLocal_65, 0, PLAYER::PLAYER_PED_ID(), "MICHAEL", 0, 1);
 				func_22(&uLocal_65, "EPS3AUD", "EP3_MCS1", 6, 0, 0, 0);
-				if (func_21("EPS_DROP_HELP"))
+				if (func_21("EPS_DROP_HELP" /* GXT: This vehicle is wanted by the Epsilon Program. Deliver it to the location marked ~HUD_COLOUR_MICHAEL~~BLIP_EPSILON~~s~ */))
 				{
 					HUD::CLEAR_HELP(true);
 				}
@@ -401,9 +401,9 @@ void func_1(int* iParam0, var uParam1, int iParam2)//Position - 0x3E6
 		
 		case 1:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*iParam0, "SHOW_SHARD_MIDSIZED_MESSAGE");
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("EPS_CAR_TITLE");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("EPS_CAR_TITLE" /* GXT: Vehicle Delivered~s~ */);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("EPS_CAR_NOTE");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("EPS_CAR_NOTE" /* GXT: ~1~/5 Epsilon Vehicles Delivered */);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(func_3());
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -558,15 +558,15 @@ void func_5(int iParam0)//Position - 0x631
 		switch (iVar1)
 		{
 			case 249:
-				sVar5 = "PW_FEED_EM_1";
+				sVar5 = "PW_FEED_EM_1" /* GXT: You've been nominated to take part in Southern San Andreas' premier amateur photography competition in the wildlife sector. You'll join hundreds of other young, talented... */;
 				break;
 			
 			case 269:
-				sVar5 = "PW_FEED_EM_3";
+				sVar5 = "PW_FEED_EM_3" /* GXT: Hello Franklin,~n~The Southern San Andreas Tourist Board Young Amateur Wildlife Photographer of the Year Competition is over.~n~Some of our photographers fell off cli... */;
 				break;
 			
 			default:
-				sVar5 = "PW_FEED_EM_2";
+				sVar5 = "PW_FEED_EM_2" /* GXT: Dear contestant,~n~Thank you for your recent photographic submission. Our image licensing department is already maximizing its profit-making potential. And you're a step clos... */;
 				break;
 		}
 		func_6(1, Global_44257[iVar1 /*12*/].f_2, iVar1, sVar5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -608,15 +608,15 @@ void func_6(int iParam0, int iParam1, int iParam2, char* sParam3, char* sParam4,
 		switch (iParam2)
 		{
 			case 72:
-				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL1");
+				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL1" /* GXT: Dear Mr. De Santa, please find below your weekly income from owned properties:~n~ */);
 				break;
 			
 			case 73:
-				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL3");
+				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL3" /* GXT: Dear Mr. Clinton, please find below your weekly income from owned properties:~n~ */);
 				break;
 			
 			case 74:
-				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL2");
+				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL2" /* GXT: Dear Mr. Philips, please find below your weekly income from owned properties:~n~ */);
 				break;
 			
 			default:
@@ -725,202 +725,202 @@ char* func_8(int iParam0)//Position - 0xBB2
 	switch (iParam0)
 	{
 		case 0:
-			return "EMSTR_0";
+			return "EMSTR_0" /* GXT: Mike */;
 		
 		case 3:
-			return "EMSTR_3";
+			return "EMSTR_3" /* GXT: Jimmy */;
 		
 		case 1:
-			return "EMSTR_6";
+			return "EMSTR_6" /* GXT: Franklin */;
 		
 		case 2:
-			return "EMSTR_9";
+			return "EMSTR_9" /* GXT: Trevor */;
 		
 		case 4:
-			return "EMSTR_12";
+			return "EMSTR_12" /* GXT: Marnie */;
 		
 		case 5:
-			return "EMSTR_29";
+			return "EMSTR_29" /* GXT: Epsilon Store */;
 		
 		case 6:
-			return "EMSTR_36";
+			return "EMSTR_36" /* GXT: Maude */;
 		
 		case 7:
-			return "EMSTR_39";
+			return "EMSTR_39" /* GXT: Lester */;
 		
 		case 8:
-			return "EMSTR_52";
+			return "EMSTR_52" /* GXT: Maze Bank */;
 		
 		case 9:
-			return "EMSTR_55";
+			return "EMSTR_55" /* GXT: Fleeca */;
 		
 		case 10:
-			return "EMSTR_58";
+			return "EMSTR_58" /* GXT: Bank of Liberty */;
 		
 		case 11:
-			return "EMSTR_78";
+			return "EMSTR_78" /* GXT: Legendary Motorsport Sales */;
 		
 		case 12:
-			return "EMSTR_81";
+			return "EMSTR_81" /* GXT: Elitas Sales */;
 		
 		case 13:
-			return "EMSTR_84";
+			return "EMSTR_84" /* GXT: Cache & Carry */;
 		
 		case 14:
-			return "EMSTR_87";
+			return "EMSTR_87" /* GXT: Dock Tease */;
 		
 		case 15:
-			return "EMSTR_106";
+			return "EMSTR_106" /* GXT: LSC */;
 		
 		case 16:
-			return "EMSTR_114";
+			return "EMSTR_114" /* GXT: AMMU-NATION */;
 		
 		case 17:
-			return "EMSTR_142";
+			return "EMSTR_142" /* GXT: Christian Feltz */;
 		
 		case 18:
-			return "EMSTR_145";
+			return "EMSTR_145" /* GXT: Paige Harris */;
 		
 		case 19:
-			return "EMSTR_152";
+			return "EMSTR_152" /* GXT: Los Santos Tourist Info */;
 		
 		case 20:
-			return "EMSTR_157";
+			return "EMSTR_157" /* GXT: Rickie Luckens */;
 		
 		case 21:
-			return "EMSTR_163";
+			return "EMSTR_163" /* GXT: Minotaur Property Management */;
 		
 		case 22:
-			return "EMSTR_182";
+			return "EMSTR_182" /* GXT: Saeeda Kadam */;
 		
 		case 23:
-			return "EMSTR_187";
+			return "EMSTR_187" /* GXT: Vanilla Unicorn */;
 		
 		case 24:
-			return "EMSTR_190";
+			return "EMSTR_190" /* GXT: Dr Isiah Friedlander */;
 		
 		case 25:
-			return "EMSTR_206";
+			return "EMSTR_206" /* GXT: TRACEYHEARTSTEALER */;
 		
 		case 26:
-			return "EMSTR_219";
+			return "EMSTR_219" /* GXT: Dave Norton */;
 		
 		case 27:
-			return "EMSTR_226";
+			return "EMSTR_226" /* GXT: Amanda De Santa */;
 		
 		case 28:
-			return "EMSTR_233";
+			return "EMSTR_233" /* GXT: Donald Percival */;
 		
 		case 29:
-			return "EMSTR_242";
+			return "EMSTR_242" /* GXT: Ron */;
 		
 		case 30:
-			return "EMSTR_249";
+			return "EMSTR_249" /* GXT: Tanisha Marks */;
 		
 		case 31:
-			return "EMSTR_262";
+			return "EMSTR_262" /* GXT: Denise */;
 		
 		case 32:
-			return "EMSTR_269";
+			return "EMSTR_269" /* GXT: Lamar Davis */;
 		
 		case 33:
-			return "EMSTR_319";
+			return "EMSTR_319" /* GXT: Brad */;
 		
 		case 34:
-			return "EMSTR_340";
+			return "EMSTR_340" /* GXT: Patricia Madrazo */;
 		
 		case 35:
-			return "EMSTR_348";
+			return "EMSTR_348" /* GXT: Eileen Haworth */;
 		
 		case 36:
-			return "EMSTR_182";
+			return "EMSTR_182" /* GXT: Saeeda Kadam */;
 		
 		case 37:
-			return "EMSTR_357";
+			return "EMSTR_357" /* GXT: Gray Nicholson */;
 		
 		case 38:
-			return "EMSTR_360";
+			return "EMSTR_360" /* GXT: Nigel */;
 		
 		case 39:
-			return "EMSTR_369";
+			return "EMSTR_369" /* GXT: Hookies */;
 		
 		case 40:
-			return "EMSTR_376";
+			return "EMSTR_376" /* GXT: Towing Impound */;
 		
 		case 41:
-			return "EMSTR_379";
+			return "EMSTR_379" /* GXT: Downtown Cab Co, */;
 		
 		case 42:
-			return "EMSTR_382";
+			return "EMSTR_382" /* GXT: McKenzie Field Hangar */;
 		
 		case 43:
-			return "EMSTR_384";
+			return "EMSTR_384" /* GXT: Sonar Collections Dock */;
 		
 		case 44:
-			return "EMSTR_387";
+			return "EMSTR_387" /* GXT: Los Santos Customs */;
 		
 		case 45:
-			return "EMSTR_390";
+			return "EMSTR_390" /* GXT: Cinema Doppler */;
 		
 		case 46:
-			return "EMSTR_393";
+			return "EMSTR_393" /* GXT: Ten Cent Theater */;
 		
 		case 47:
-			return "EMSTR_396";
+			return "EMSTR_396" /* GXT: Tivoli Cinema */;
 		
 		case 48:
-			return "EMSTR_399";
+			return "EMSTR_399" /* GXT: Los Santos Golf Club */;
 		
 		case 49:
-			return "EMSTR_402";
+			return "EMSTR_402" /* GXT: Car Scrap Yard */;
 		
 		case 50:
-			return "EMSTR_405";
+			return "EMSTR_405" /* GXT: Smoke on the Water */;
 		
 		case 51:
-			return "EMSTR_408";
+			return "EMSTR_408" /* GXT: Tequi-la-la */;
 		
 		case 52:
-			return "EMSTR_411";
+			return "EMSTR_411" /* GXT: Pitchers */;
 		
 		case 53:
-			return "EMSTR_414";
+			return "EMSTR_414" /* GXT: The Hen House */;
 		
 		case 54:
-			return "EMSTR_465";
+			return "EMSTR_465" /* GXT: Pedal & Metal Sales */;
 		
 		case 55:
-			return "EMSTR_468";
+			return "EMSTR_468" /* GXT: SSA Super Autos Sales */;
 		
 		case 56:
-			return "EMSTR_489";
+			return "EMSTR_489" /* GXT: Hush Smush */;
 		
 		case 57:
-			return "EMSTR_492";
+			return "EMSTR_492" /* GXT: foxymama21 */;
 		
 		case 58:
-			return "EMSTR_495";
+			return "EMSTR_495" /* GXT: Altarego12 */;
 		
 		case 59:
-			return "EMSTR_498";
+			return "EMSTR_498" /* GXT: BadKitty11 */;
 		
 		case 60:
-			return "EMSTR_501";
+			return "EMSTR_501" /* GXT: 7yearbitch */;
 		
 		case 61:
-			return "EMSTR_504";
+			return "EMSTR_504" /* GXT: Froggy69 */;
 		
 		case 62:
-			return "EMSTR_507";
+			return "EMSTR_507" /* GXT: Misscuddles */;
 		
 		case 63:
-			return "EMSTR_640";
+			return "EMSTR_640" /* GXT: Offroad Events */;
 		
 		case 64:
-			return "EMSTR_643";
+			return "EMSTR_643" /* GXT: Dock Tease */;
 		
 		case 65:
-			return "EMSTR_652";
+			return "EMSTR_652" /* GXT: Brother Adrian */;
 		
 		default:
 	}
@@ -1005,7 +1005,7 @@ char* func_9(int iParam0, int iParam1)//Position - 0xF1D
 			return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_1998[40 /*29*/].f_7));
 		
 		case 36:
-			return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_E_381");
+			return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_E_381" /* GXT: CHAR_SAEEDA */);
 		
 		case 38:
 			return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_1998[64 /*29*/].f_7));
@@ -1156,25 +1156,25 @@ char* func_13(int iParam0)//Position - 0x1432
 {
 	if (iParam0 == iLocal_43[0])
 	{
-		return "EPS_CARNME_0";
+		return "EPS_CARNME_0" /* GXT: ~n~Pegassi Vacca~nrt~~n~<img src='img://Epsilon_Cars/Eps3Vacca' vspace='0' height='128' width='244'/>~nrt~ */;
 	}
 	if (iParam0 == iLocal_43[1])
 	{
-		return "EPS_CARNME_1";
+		return "EPS_CARNME_1" /* GXT: ~n~Benefactor Surano~nrt~~n~<img src='img://Epsilon_Cars/Eps3Surano' vspace='0' height='128' width='244'/>~nrt~ */;
 	}
 	if (iParam0 == iLocal_43[2])
 	{
-		return "EPS_CARNME_2";
+		return "EPS_CARNME_2" /* GXT: ~n~Declasse Tornado~nrt~~n~<img src='img://Epsilon_Cars/Eps3Tornado2' vspace='0' height='128' width='244'/>~nrt~ */;
 	}
 	if (iParam0 == iLocal_43[3])
 	{
-		return "EPS_CARNME_3";
+		return "EPS_CARNME_3" /* GXT: ~n~Enus Super Diamond~nrt~~n~<img src='img://Epsilon_Cars/Eps3SuperD' vspace='0' height='128' width='244'/>~nrt~ */;
 	}
 	if (iParam0 == iLocal_43[4])
 	{
-		return "EPS_CARNME_4";
+		return "EPS_CARNME_4" /* GXT: ~n~Dinka Double-T~nrt~~n~<img src='img://Epsilon_Cars/Eps3Carbon' vspace='0' height='128' width='244'/>~nrt~ */;
 	}
-	return "EPS_CARNME_N";
+	return "EPS_CARNME_N" /* GXT: ~n~ */;
 }
 
 bool func_14(int iParam0)//Position - 0x1493
@@ -2382,7 +2382,7 @@ void func_55(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4)
 				case 1:
 					if (iVar2 == 249)
 					{
-						func_6(1, iVar1, iVar2, "PW_FEED_EM_1", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+						func_6(1, iVar1, iVar2, "PW_FEED_EM_1" /* GXT: You've been nominated to take part in Southern San Andreas' premier amateur photography competition in the wildlife sector. You'll join hundreds of other young, talented... */, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 					}
 					else
 					{
@@ -2532,7 +2532,7 @@ void func_57(int iParam0)//Position - 0x2C3B
 	{
 		case 1:
 			func_60(&iLocal_44);
-			func_59("EPS_DROP_PERSON", -1);
+			func_59("EPS_DROP_PERSON" /* GXT: This vehicle can't be delivered while there are passengers in it. */, -1);
 			*iParam0 = 2;
 			break;
 		
@@ -2562,7 +2562,7 @@ void func_57(int iParam0)//Position - 0x2C3B
 			}
 			else
 			{
-				func_59("EPS_DROP_ESCAPE", -1);
+				func_59("EPS_DROP_ESCAPE" /* GXT: Deliver the vehicle to the location marked ~HUD_COLOUR_MICHAEL~~BLIP_EPSILON~~s~ */, -1);
 				func_82(2);
 			}
 			break;
@@ -2600,7 +2600,7 @@ int func_58()//Position - 0x2CD6
 				{
 					if (!iLocal_54)
 					{
-						func_59("EPS_DROP_FAIL", -1);
+						func_59("EPS_DROP_FAIL" /* GXT: The vehicle is too damaged for the Epsilon Program. Find another one or repair it. */, -1);
 						iLocal_54 = 1;
 					}
 					return 0;
@@ -2652,7 +2652,7 @@ void func_61(int iParam0)//Position - 0x2DA3
 				case 0:
 					if (iLocal_55 == 1 && !Local_41.f_26)
 					{
-						if (func_21("EPS_DROP_MESS"))
+						if (func_21("EPS_DROP_MESS" /* GXT: Clear obstructions away from the garage or park closer to the wall. */))
 						{
 							HUD::CLEAR_HELP(true);
 						}
@@ -2682,7 +2682,7 @@ void func_61(int iParam0)//Position - 0x2DA3
 							{
 								if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(iVar0, Local_41.f_6[0 /*3*/], Local_41.f_6[1 /*3*/], Local_41.f_6.f_7, false, true, 0))
 								{
-									func_64("EPS_DROP_EXIT", 7500, 1);
+									func_64("EPS_DROP_EXIT" /* GXT: Exit the vehicle. */, 7500, 1);
 									iLocal_58 = 0;
 									iLocal_56 = 1;
 									iLocal_55 = 0;
@@ -2723,7 +2723,7 @@ void func_61(int iParam0)//Position - 0x2DA3
 							if (iLocal_55 == 0)
 							{
 								HUD::CLEAR_PRINTS();
-								func_59("EPS_DROP_MESS", -1);
+								func_59("EPS_DROP_MESS" /* GXT: Clear obstructions away from the garage or park closer to the wall. */, -1);
 								iLocal_55 = 1;
 								iLocal_56 = 0;
 							}
@@ -2853,7 +2853,7 @@ void func_68(int iParam0)//Position - 0x3176
 			func_60(&iLocal_44);
 			if (iLocal_57 == 0)
 			{
-				func_59("EPS_DROP_WANTED", -1);
+				func_59("EPS_DROP_WANTED" /* GXT: This vehicle can't be delivered while wanted. Lose your wanted rating. */, -1);
 			}
 			*iParam0 = 2;
 			break;
@@ -2874,7 +2874,7 @@ void func_68(int iParam0)//Position - 0x3176
 			{
 				if (iLocal_57 == 0)
 				{
-					func_59("EPS_DROP_ESCAPE", -1);
+					func_59("EPS_DROP_ESCAPE" /* GXT: Deliver the vehicle to the location marked ~HUD_COLOUR_MICHAEL~~BLIP_EPSILON~~s~ */, -1);
 				}
 				func_82(2);
 			}
@@ -2929,7 +2929,7 @@ void func_69(int iParam0)//Position - 0x31F1
 				if (iLocal_63 != PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), true))
 				{
 					iLocal_63 = PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), true);
-					func_59("EPS_DROP_HELP", -1);
+					func_59("EPS_DROP_HELP" /* GXT: This vehicle is wanted by the Epsilon Program. Deliver it to the location marked ~HUD_COLOUR_MICHAEL~~BLIP_EPSILON~~s~ */, -1);
 					iLocal_53 = 1;
 				}
 			}
@@ -3237,20 +3237,20 @@ void func_93()//Position - 0x3892
 	iLocal_43[3] = joaat("superd");
 	iLocal_43[4] = joaat("double");
 	Local_42[0 /*3*/] = 1;
-	Local_42[0 /*3*/].f_1 = "EPS_GMAIL_G5";
-	Local_42[0 /*3*/].f_2 = "EPS_BMAIL_G5";
+	Local_42[0 /*3*/].f_1 = "EPS_GMAIL_G5" /* GXT: Brother,~n~~n~These are the vehicles that the higher beings require:~a~ ~a~ ~a~ ~a~ ~a~ ~n~Make sure these vehicles are delivered in a condition befitting the level of divine understanding that our thesis holders have reached.  Carry out this small task for us and you will be rewarded with knowledge of infinitely greater value.  Kraff be praised! */;
+	Local_42[0 /*3*/].f_2 = "EPS_BMAIL_G5" /* GXT: Brother, ~n~~n~These are the vehicles that the higher beings require:~a~ ~a~ ~a~ ~a~ ~a~ ~n~Make sure these vehicles are delivered in a condition befitting the level of divine understanding that our thesis holders have reached.  Carry out this small task for us and you will be rewarded with knowledge of infinitely greater value.  Kraff be praised! */;
 	Local_42[1 /*3*/] = 2;
-	Local_42[1 /*3*/].f_1 = "EPS_GMAIL_G4";
-	Local_42[1 /*3*/].f_2 = "EPS_BMAIL_G4";
+	Local_42[1 /*3*/].f_1 = "EPS_GMAIL_G4" /* GXT: Kifflom Brother,~n~~n~The higher beings now require these vehicles:~a~ ~a~ ~a~ ~a~ ~n~The color is of no consequence.  We will judge you in many ways but none so superficial. ~n~~n~Kraff be praised! */;
+	Local_42[1 /*3*/].f_2 = "EPS_BMAIL_G4" /* GXT: Very disappointing, Brother,~n~~n~The offering you made was not what we were expecting of you.  The higher beings have now requested these vehicles:~a~ ~a~ ~a~ ~a~ ~n~Accomplish this and you might still be Saveable.  Unlimit your limitations! ~n~~n~Kraff be praised! */;
 	Local_42[2 /*3*/] = 3;
-	Local_42[2 /*3*/].f_1 = "EPS_GMAIL_G3";
-	Local_42[2 /*3*/].f_2 = "EPS_BMAIL_G3";
+	Local_42[2 /*3*/].f_1 = "EPS_GMAIL_G3" /* GXT: Brother,~n~~n~Kraff desires these vehicles:~a~ ~a~ ~a~ ~n~Know that Cris and the other higher beings recognize your commitment to the divine truth.  Find these vehicles and you will be richly rewarded with powerful tools that you do not understand. ~n~~n~Kraff be praised! */;
+	Local_42[2 /*3*/].f_2 = "EPS_BMAIL_G3" /* GXT: Have we over-estimated your capabilities? ~n~~n~Your last offering was not received well and the senior thesis holders now requested these vehicles:~a~ ~a~ ~a~ ~n~Carry out these wishes and prove that you are not an Objectionable Person.~n~~n~Kraff be praised! */;
 	Local_42[3 /*3*/] = 4;
-	Local_42[3 /*3*/].f_1 = "EPS_GMAIL_G2";
-	Local_42[3 /*3*/].f_2 = "EPS_BMAIL_G2";
+	Local_42[3 /*3*/].f_1 = "EPS_GMAIL_G2" /* GXT: Dear Brother,~n~~n~Cris has requested delivery of these vehicles as swiftly as possible:~a~ ~a~ ~n~Many are relying on you to fulfill these requirements.  Do not disappoint.~n~~n~Kraff be praised! */;
+	Local_42[3 /*3*/].f_2 = "EPS_BMAIL_G2" /* GXT: Brother,~n~~n~All evidence points to you being an Unsaveable.  You have one more chance to prove us wrong by sourcing these vehicles:~a~ ~a~ ~n~Spare yourself the wrath of Kraff, for it will not spare you! */;
 	Local_42[4 /*3*/] = 5;
-	Local_42[4 /*3*/].f_1 = "EPS_GMAIL_G1";
-	Local_42[4 /*3*/].f_2 = "EPS_BMAIL_G1";
+	Local_42[4 /*3*/].f_1 = "EPS_GMAIL_G1" /* GXT: Kifflom Brother,~n~~n~One of our highest thesis holders has requested this vehicle:~a~ ~n~Prove to us that you are ready to understand the technology of your existence with this act of selflessness.~n~~n~Kraff be praised! */;
+	Local_42[4 /*3*/].f_2 = "EPS_BMAIL_G1" /* GXT: Brother,~n~~n~Cris demands that you deliver this vehicle as a sign of your commitment to the divine truth:~a~ ~n~What would you rather do?  Carry out this simple task or die without ever knowing your eternal self?  The choice is yours.~n~~n~Kraff be praised! */;
 }
 
 void func_94()//Position - 0x3958

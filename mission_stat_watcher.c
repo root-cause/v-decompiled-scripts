@@ -471,10 +471,10 @@ void __EntryFunction__()//Position - 0x0
 					}
 					if (!func_16(0))
 					{
-						switch (func_14("AM_H_PASS"))
+						switch (func_14("AM_H_PASS" /* GXT: On passing a mission you will be awarded a score based on mission challenges. Missions can be replayed to obtain better scores. Mission results cannot be uploaded to Rockstar Social Club or saved if a retry is used. */))
 						{
 							case 2:
-								func_11("AM_H_PASS", 3, 2000, 2500, 10000, 7, 0, 0, 0);
+								func_11("AM_H_PASS" /* GXT: On passing a mission you will be awarded a score based on mission challenges. Missions can be replayed to obtain better scores. Mission results cannot be uploaded to Rockstar Social Club or saved if a retry is used. */, 3, 2000, 2500, 10000, 7, 0, 0, 0);
 								break;
 							
 							case 1:
@@ -1105,7 +1105,7 @@ void func_22(var uParam0, bool bParam1)//Position - 0x1554
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_4, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 	func_24(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 215, true));
-	func_23("ES_HELP");
+	func_23("ES_HELP" /* GXT: Continue */);
 	if (MISC::IS_PC_VERSION())
 	{
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
@@ -1117,7 +1117,7 @@ void func_22(var uParam0, bool bParam1)//Position - 0x1554
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_4, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 		func_24(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 216, true));
-		func_23("ES_XPAND");
+		func_23("ES_XPAND" /* GXT: Expand */);
 		if (MISC::IS_PC_VERSION())
 		{
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
@@ -1341,7 +1341,7 @@ void func_26(var uParam0, float fParam1, bool bParam2)//Position - 0x165E
 				{
 					if ((uParam0->f_574 - uParam0->f_576) > 0)
 					{
-						func_42((uParam0->f_574 - uParam0->f_576), "TIMER_TIME", 0, 0, -1, 0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
+						func_42((uParam0->f_574 - uParam0->f_576), "TIMER_TIME" /* GXT: TIME */, 0, 0, -1, 0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 					}
 					else
 					{
@@ -1572,26 +1572,26 @@ void func_26(var uParam0, float fParam1, bool bParam2)//Position - 0x165E
 			switch (uParam0->f_560)
 			{
 				case 0:
-					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("PERCENTAGE");
+					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("PERCENTAGE" /* GXT: ~1~% */);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(uParam0->f_558);
 					HUD::END_TEXT_COMMAND_DISPLAY_TEXT(fVar20, (fVar1 + func_50((2f * 2f))), 0);
 					break;
 				
 				case 1:
-					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("FO_TWO_NUM");
+					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("FO_TWO_NUM" /* GXT: ~1~/~1~ */);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(uParam0->f_558);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(uParam0->f_559);
 					HUD::END_TEXT_COMMAND_DISPLAY_TEXT(fVar20, (fVar1 + func_50((2f * 2f))), 0);
 					break;
 				
 				case 2:
-					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("MTPHPER_XPNO");
+					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("MTPHPER_XPNO" /* GXT: ~1~RP */);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(uParam0->f_558);
 					HUD::END_TEXT_COMMAND_DISPLAY_TEXT(fVar20, (fVar1 + func_50((2f * 2f))), 0);
 					break;
 				
 				case 5:
-					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("ESDOLLA");
+					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("ESDOLLA" /* GXT: $~a~ */);
 					HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER(uParam0->f_558, true);
 					HUD::END_TEXT_COMMAND_DISPLAY_TEXT(fVar20, (fVar1 + func_50((2f * 2f))), 0);
 					break;
@@ -2200,13 +2200,13 @@ void func_39(int iParam0, int iParam1, float fParam2, float fParam3, char* sPara
 			HUD::SET_TEXT_FONT(4);
 			if (iParam0 < 0)
 			{
-				HUD::BEGIN_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT("ESMINDOLLA");
+				HUD::BEGIN_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT("ESMINDOLLA" /* GXT: -$~a~ */);
 				HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER((-1 * iParam0), true);
 				fVar1 = HUD::END_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT(false);
 			}
 			else
 			{
-				HUD::BEGIN_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT("ESDOLLA");
+				HUD::BEGIN_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT("ESDOLLA" /* GXT: $~a~ */);
 				HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER(iParam0, true);
 				fVar1 = HUD::END_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT(false);
 			}
@@ -2221,19 +2221,19 @@ void func_39(int iParam0, int iParam1, float fParam2, float fParam3, char* sPara
 	switch (iParam5)
 	{
 		case 11:
-			HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("PERCENTAGE");
+			HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("PERCENTAGE" /* GXT: ~1~% */);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iParam0);
 			break;
 		
 		case 1:
 			HUD::SET_TEXT_FONT(5);
-			HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("FO_NUM");
+			HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("FO_NUM" /* GXT: ~1~ */);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iParam0);
 			break;
 		
 		case 2:
 			HUD::SET_TEXT_FONT(5);
-			HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("FO_TWO_NUM");
+			HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("FO_TWO_NUM" /* GXT: ~1~/~1~ */);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iParam0);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iParam1);
 			break;
@@ -2245,12 +2245,12 @@ void func_39(int iParam0, int iParam1, float fParam2, float fParam3, char* sPara
 		case 3:
 			if (iParam0 < 0)
 			{
-				HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("ESMINDOLLA");
+				HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("ESMINDOLLA" /* GXT: -$~a~ */);
 				HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER((-1 * iParam0), true);
 			}
 			else
 			{
-				HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("ESDOLLA");
+				HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("ESDOLLA" /* GXT: $~a~ */);
 				HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER(iParam0, true);
 			}
 			break;
@@ -2804,17 +2804,17 @@ void func_68(var uParam0)//Position - 0x3A3B
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_4, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 	func_24(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 188, true));
-	func_23("ES_HELP_TU");
+	func_23("ES_HELP_TU" /* GXT: Like */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_4, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 	func_24(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 187, true));
-	func_23("ES_HELP_TD");
+	func_23("ES_HELP_TD" /* GXT: Dislike */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_4, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 	func_24(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 202, true));
-	func_23("ES_HELP_AB");
+	func_23("ES_HELP_AB" /* GXT: Don't Vote */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_4, "DRAW_INSTRUCTIONAL_BUTTONS");
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -6439,19 +6439,19 @@ int func_88(var uParam0, int iParam1)//Position - 0xBF5B
 		{
 			func_90(-1, Global_75250[iParam1 /*9*/]);
 		}
-		sVar8 = "MTPHPERRET";
+		sVar8 = "MTPHPERRET" /* GXT: Checkpoint */;
 		switch (Global_75250[iParam1 /*9*/].f_3)
 		{
 			case 4:
-				sVar8 = "MTPHPERCHE";
+				sVar8 = "MTPHPERCHE" /* GXT: Cheats */;
 				break;
 			
 			case 2:
-				sVar8 = "MTPHPERSKI";
+				sVar8 = "MTPHPERSKI" /* GXT: Skip */;
 				break;
 			
 			case 3:
-				sVar8 = "MTPHPERTAX";
+				sVar8 = "MTPHPERTAX" /* GXT: Taxi */;
 				break;
 			
 			case 5:

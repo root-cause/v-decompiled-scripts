@@ -644,7 +644,7 @@ int func_1(int* iParam0, int* iParam1)//Position - 0xD8
 				if (!BitTest(*iParam0, 2))
 				{
 					HUD::CLEAR_HELP(true);
-					func_129("FMIC_INTRO2", -1);
+					func_129("FMIC_INTRO2" /* GXT: In GTA Online, you can carry out Jobs with, or compete against, players around the world. */, -1);
 					MISC::SET_BIT(iParam0, 2);
 				}
 				CAM::SET_CAM_PARAMS(iParam0->f_7, -259.3686f, -553.8571f, 142.6048f, 13.2752f, -0.5186f, -143.3378f, 44.9959f, 0, 1, 1, 2);
@@ -752,7 +752,7 @@ int func_1(int* iParam0, int* iParam1)//Position - 0xD8
 				}
 				if (!BitTest(*iParam0, 5))
 				{
-					func_129("FMIC_RACE1", -1);
+					func_129("FMIC_RACE1" /* GXT: Take part in Jobs, including Races, with your friends, Crew members or others and check your position on the global leaderboards in-game or on the Rockstar Social Club. */, -1);
 					MISC::SET_BIT(iParam0, 5);
 				}
 				func_132(iParam0, 14);
@@ -826,7 +826,7 @@ int func_1(int* iParam0, int* iParam1)//Position - 0xD8
 				if (!BitTest(*iParam0, 6))
 				{
 					MISC::SET_BIT(iParam0, 6);
-					func_129("FMIC_RACE2", -1);
+					func_129("FMIC_RACE2" /* GXT: You can challenge others with Jobs you have created yourself or bet on players to win and earn cash. */, -1);
 				}
 				if (!BitTest(iParam0->f_3, 0))
 				{
@@ -982,7 +982,7 @@ int func_1(int* iParam0, int* iParam1)//Position - 0xD8
 					STREAMING::SET_SRL_READAHEAD_TIMES(9, 13, 9, 13);
 					func_94(iParam0);
 					func_93();
-					func_129("FMIC_GAR", -1);
+					func_129("FMIC_GAR" /* GXT: You can store your own collection of cars and motorcycles in Garages that you can purchase around the Map. */, -1);
 					iParam0->f_6 = 23;
 				}
 				break;
@@ -1104,7 +1104,7 @@ int func_1(int* iParam0, int* iParam1)//Position - 0xD8
 				func_85(iParam0);
 				MISC::LOAD_CLOUD_HAT("CONTRAILS", 0f);
 				STREAMING::SET_SRL_READAHEAD_TIMES(9, 9, 9, 9);
-				func_129("FMIC_TENN", -1);
+				func_129("FMIC_TENN" /* GXT: ~s~Challenge others to Tennis, Golf and many other Activities. */, -1);
 				CUTSCENE::START_CUTSCENE(4);
 				func_77(1, 1, 1, 0, 0, 0, 0);
 				iParam0->f_6 = 30;
@@ -6647,7 +6647,7 @@ void func_152(int iParam0, bool bParam1)//Position - 0x9810
 	sVar0 = "NULL";
 	iVar1 = 0;
 	sVar0 = func_156(iParam0, &iVar1);
-	if (!MISC::ARE_STRINGS_EQUAL("NONE", sVar0) && iVar1 != 0)
+	if (!MISC::ARE_STRINGS_EQUAL("NONE" /* GXT: None */, sVar0) && iVar1 != 0)
 	{
 		if (bParam1)
 		{

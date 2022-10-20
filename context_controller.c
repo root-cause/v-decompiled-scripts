@@ -149,7 +149,7 @@ void __EntryFunction__()//Position - 0x0
 	SYSTEM::SETTIMERA(0);
 	Global_43986 = 0;
 	func_41();
-	StringCopy(&Global_43987, "CC_SUBSTR", 16);
+	StringCopy(&Global_43987, "CC_SUBSTR" /* GXT: ~INPUT_CONTEXT~ */, 16);
 	iVar2 = -1;
 	iVar3 = -1;
 	bVar4 = false;

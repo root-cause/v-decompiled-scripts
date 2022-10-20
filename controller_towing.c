@@ -6566,7 +6566,7 @@ void func_118()//Position - 0x8F1D
 			if (func_136(&iLocal_58) >= 6f)
 			{
 				AUDIO::SET_FRONTEND_RADIO_ACTIVE(true);
-				func_119("TOW_JOBOFFRD", -1);
+				func_119("TOW_JOBOFFRD" /* GXT: ~s~To accept towing jobs press ~INPUT_VEH_HORN~~s~ */, -1);
 				iLocal_70 = 4;
 			}
 			break;
@@ -6576,7 +6576,7 @@ void func_118()//Position - 0x8F1D
 			{
 				if (!func_22(Global_113386.f_19973.f_1, 1024))
 				{
-					func_119("TOW_MISSEDJOB", -1);
+					func_119("TOW_MISSEDJOB" /* GXT: ~s~The towing job has expired. There is only a short time to accept before dispatch takes silence as a no. However, more jobs can be accessed by pressing ~INPUT_VEH_HORN~~s~ */, -1);
 					func_108(&(Global_113386.f_19973.f_1), 1024);
 				}
 				iLocal_70 = 5;
@@ -7411,7 +7411,7 @@ int func_150(var uParam0, bool bParam1, bool bParam2)//Position - 0x9D93
 		{
 			if (Global_113386.f_19973.f_3 >= 5)
 			{
-				func_119("TOW_WANTED", -1);
+				func_119("TOW_WANTED" /* GXT: ~s~Towing jobs unavailable when Wanted. The towing job has ended.~s~ */, -1);
 			}
 		}
 		iLocal_248 = MISC::GET_GAME_TIMER();

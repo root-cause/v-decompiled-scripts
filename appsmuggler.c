@@ -544,27 +544,27 @@ void func_7(int iParam0)//Position - 0x3D5
 	
 	if (func_201(PLAYER::PLAYER_ID()))
 	{
-		func_198("HAPP_STEAL_T", "HAPP_STEAL_D", "OR_OVRLY_OK", "", 1, 0, -1, 0, -1, 0);
+		func_198("HAPP_STEAL_T" /* GXT: SOURCE CARGO */, "HAPP_STEAL_D" /* GXT: Your Cargo storage area is full. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, -1, 0);
 	}
 	else if (iParam0 != 8 && func_196(iParam0))
 	{
-		func_198("HAPP_STEAL_T", "HAPP_STEAL_D1", "OR_OVRLY_OK", "", 1, 0, -1, 0, -1, 0);
+		func_198("HAPP_STEAL_T" /* GXT: SOURCE CARGO */, "HAPP_STEAL_D1" /* GXT: There is a short waiting period while Ron sources additional Cargo for you to steal. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, -1, 0);
 	}
 	else if (!func_12(229))
 	{
-		func_198("HAPP_STEAL_T", func_11(), "OR_OVRLY_OK", "", 1, 0, -1, 0, -1, 0);
+		func_198("HAPP_STEAL_T" /* GXT: SOURCE CARGO */, func_11(), "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, -1, 0);
 	}
 	else
 	{
 		func_10(iParam0);
-		StringCopy(&Var0, "HAPP_STEAL_C1", 16);
+		StringCopy(&Var0, "HAPP_STEAL_C1" /* GXT: Are you sure you'd like to source Cargo for your Hangar? */, 16);
 		StringCopy(&Var1, "", 16);
 		if (iParam0 != 8)
 		{
-			StringCopy(&Var0, "HAPP_STEAL_C0", 16);
+			StringCopy(&Var0, "HAPP_STEAL_C0" /* GXT: Are you sure you'd like to source ~a~? */, 16);
 			Var1 = { func_9(iParam0) };
 		}
-		func_198("HAPP_STEAL_T", &Var0, "WHOUSE_CONF", "WHOUSE_CANC", 0, 1, -1, 2, -1, &Var1);
+		func_198("HAPP_STEAL_T" /* GXT: SOURCE CARGO */, &Var0, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 1, -1, 2, -1, &Var1);
 	}
 	func_8();
 }
@@ -582,39 +582,39 @@ struct<4> func_9(int iParam0)//Position - 0x49F
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var0, "HAPPT_ANIMAL", 16);
+			StringCopy(&Var0, "HAPPT_ANIMAL" /* GXT: Animal Materials */, 16);
 			break;
 		
 		case 1:
-			StringCopy(&Var0, "HAPPT_ART", 16);
+			StringCopy(&Var0, "HAPPT_ART" /* GXT: Art & Antiques */, 16);
 			break;
 		
 		case 2:
-			StringCopy(&Var0, "HAPPT_CHEMS", 16);
+			StringCopy(&Var0, "HAPPT_CHEMS" /* GXT: Chemicals */, 16);
 			break;
 		
 		case 3:
-			StringCopy(&Var0, "HAPPT_GOODS", 16);
+			StringCopy(&Var0, "HAPPT_GOODS" /* GXT: Counterfeit Goods */, 16);
 			break;
 		
 		case 4:
-			StringCopy(&Var0, "HAPPT_JEWEL", 16);
+			StringCopy(&Var0, "HAPPT_JEWEL" /* GXT: Jewelry & Gemstones */, 16);
 			break;
 		
 		case 5:
-			StringCopy(&Var0, "HAPPT_MEDS", 16);
+			StringCopy(&Var0, "HAPPT_MEDS" /* GXT: Medical Supplies */, 16);
 			break;
 		
 		case 6:
-			StringCopy(&Var0, "HAPPT_NARC", 16);
+			StringCopy(&Var0, "HAPPT_NARC" /* GXT: Narcotics */, 16);
 			break;
 		
 		case 7:
-			StringCopy(&Var0, "HAPPT_TOBAC", 16);
+			StringCopy(&Var0, "HAPPT_TOBAC" /* GXT: Tobacco & Alcohol */, 16);
 			break;
 		
 		case 8:
-			StringCopy(&Var0, "HAPPT_MIXED", 16);
+			StringCopy(&Var0, "HAPPT_MIXED" /* GXT: Cargo */, 16);
 			break;
 	}
 	return Var0;
@@ -641,66 +641,66 @@ int func_12(int iParam0)//Position - 0x565
 		{
 			if (func_19(PLAYER::PLAYER_ID()))
 			{
-				func_18("UA_ML_F_GOON1");
+				func_18("UA_ML_F_GOON1" /* GXT: Can't launch this mission whilst one of your Club Members is active in a Freemode Event. */);
 			}
 			else if (func_17(PLAYER::PLAYER_ID()))
 			{
-				func_18("UA_ML_F_GOON2");
+				func_18("UA_ML_F_GOON2" /* GXT: Can't launch this mission whilst one of your Associates is active in a Freemode Event. */);
 			}
 			else
 			{
-				func_18("UA_ML_F_GOON3");
+				func_18("UA_ML_F_GOON3" /* GXT: Can't launch this mission whilst one of your Bodyguards is active in a Freemode Event. */);
 			}
 		}
 		else if (iVar0 == 15)
 		{
 			if (func_19(PLAYER::PLAYER_ID()))
 			{
-				func_18("GENERAL_MLF_G1");
+				func_18("GENERAL_MLF_G1" /* GXT: Can't launch this mission whilst one of your Club Members is currently at one with the animals. */);
 			}
 			else if (func_17(PLAYER::PLAYER_ID()))
 			{
-				func_18("GENERAL_MLF_G2");
+				func_18("GENERAL_MLF_G2" /* GXT: Can't launch this mission whilst one of your Associates is currently at one with the animals. */);
 			}
 			else
 			{
-				func_18("GENERAL_MLF_G3");
+				func_18("GENERAL_MLF_G3" /* GXT: Can't launch this mission whilst one of your Bodyguards is currently at one with the animals. */);
 			}
 		}
 		else if (iVar0 == 16)
 		{
 			if (func_19(PLAYER::PLAYER_ID()))
 			{
-				func_18("GENERAL_MLF_G4");
+				func_18("GENERAL_MLF_G4" /* GXT: Can't launch this mission whilst one of your Club Members is playing a casino game. */);
 			}
 			else if (func_17(PLAYER::PLAYER_ID()))
 			{
-				func_18("GENERAL_MLF_G5");
+				func_18("GENERAL_MLF_G5" /* GXT: Can't launch this mission whilst one of your Associates is playing a casino game. */);
 			}
 			else
 			{
-				func_18("GENERAL_MLF_G6");
+				func_18("GENERAL_MLF_G6" /* GXT: Can't launch this mission whilst one of your Bodyguards is playing a casino game. */);
 			}
 		}
 		else
 		{
-			func_18("BKR_TF_R6");
+			func_18("BKR_TF_R6" /* GXT: Unable to launch the mission. */);
 		}
 		return 0;
 	}
 	if (!func_15(PLAYER::PLAYER_ID()))
 	{
-		func_18("DBG_BUN_NB");
+		func_18("DBG_BUN_NB" /* GXT: You can only launch this mission as the boss of a gang. */);
 		return 0;
 	}
 	if (func_13(PLAYER::PLAYER_ID()))
 	{
-		func_18("BKR_TF_R3");
+		func_18("BKR_TF_R3" /* GXT: Unable to launch a mission whilst you're on another job. */);
 		return 0;
 	}
 	if (NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 	{
-		func_18("BKR_TF_R3");
+		func_18("BKR_TF_R3" /* GXT: Unable to launch a mission whilst you're on another job. */);
 		return 0;
 	}
 	return 1;
@@ -10166,31 +10166,31 @@ void func_203(int iParam0, bool bParam1)//Position - 0x8BA1
 	}
 	if (!func_215(iParam0))
 	{
-		StringCopy(&Var1, "HAPP_SELL_D1", 16);
+		StringCopy(&Var1, "HAPP_SELL_D1" /* GXT: You have no Cargo to sell. */, 16);
 		StringCopy(&Var2, "", 16);
 		if (iParam0 != 8)
 		{
-			StringCopy(&Var1, "HAPP_SELL_D0", 16);
+			StringCopy(&Var1, "HAPP_SELL_D0" /* GXT: You have no ~a~ to sell. */, 16);
 			Var2 = { func_9(iParam0) };
 		}
-		func_198("HAPP_SELL_T", &Var1, "OR_OVRLY_OK", "", 1, 0, -1, 0, -1, &Var2);
+		func_198("HAPP_SELL_T" /* GXT: SELL CARGO */, &Var1, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, -1, &Var2);
 	}
 	else if (func_214())
 	{
-		func_198("HAPP_SELL_T", "HAPP_SELL_C3", "OR_OVRLY_OK", "", 1, 0, -1, 0, -1, 0);
+		func_198("HAPP_SELL_T" /* GXT: SELL CARGO */, "HAPP_SELL_C3" /* GXT: There is a short waiting period while Ron searches for Buyers before you can sell additional Cargo from the Hangar. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, -1, 0);
 	}
 	else if (!func_12(230))
 	{
-		func_198("HAPP_SELL_T", func_11(), "OR_OVRLY_OK", "", 1, 0, -1, 0, -1, 0);
+		func_198("HAPP_SELL_T" /* GXT: SELL CARGO */, func_11(), "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, -1, 0);
 	}
 	else if (func_108(iVar0) != 1 && !bParam1)
 	{
 		func_10(iParam0);
-		func_198("HAPP_SELL_T", "HAPP_SELL_GDB", "OR_OVRLY_OK", "", 0, 1, -1, 4, -1, 0);
+		func_198("HAPP_SELL_T" /* GXT: SELL CARGO */, "HAPP_SELL_GDB" /* GXT: Larger sales may require multiple aircraft. Ensure you have additional Members prior to starting this mission. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 0, 1, -1, 4, -1, 0);
 	}
 	else
 	{
-		StringCopy(&Var3, "HAPP_SELL_C2", 16);
+		StringCopy(&Var3, "HAPP_SELL_C2" /* GXT: You will forfeit any bonuses for individual Cargo type collections when selling a mix of Cargo types. Are you sure you would like to sell all of your Cargo? */, 16);
 		StringCopy(&Var4, "", 16);
 		iVar5 = -1;
 		iVar6 = -1;
@@ -10202,13 +10202,13 @@ void func_203(int iParam0, bool bParam1)//Position - 0x8BA1
 				iVar0 = uLocal_297[func_217(iParam0)];
 			}
 			iVar6 = func_209(iParam0, iVar0);
-			StringCopy(&Var3, "HAPP_SELL_C0", 16);
+			StringCopy(&Var3, "HAPP_SELL_C0" /* GXT: Are you sure you'd like to sell your stock of ~a~ for $~1~? */, 16);
 			fVar7 = (func_208(iParam0, iVar0) * 100f);
 			if (fVar7 > 0f)
 			{
 				iVar5 = func_207(iParam0, iVar0);
 				iVar6 = (iVar6 + iVar5);
-				StringCopy(&Var3, "HAPP_SELL_C1", 16);
+				StringCopy(&Var3, "HAPP_SELL_C1" /* GXT: The Buyer has offered an additional bonus of ~1~% for your collection of ~a~. Are you sure you would like to sell your stock for $~1~? */, 16);
 				iVar5 = SYSTEM::ROUND(fVar7);
 			}
 			Var4 = { func_9(iParam0) };
@@ -10222,9 +10222,9 @@ void func_203(int iParam0, bool bParam1)//Position - 0x8BA1
 		{
 			if (!func_202(34710, -1))
 			{
-				if (!func_206("APP_SG_HELP", 0, 0))
+				if (!func_206("APP_SG_HELP" /* GXT: You are currently in a private session. Sales made in populated public sessions with rival players will earn an additional "High Demand" cash bonus on your sale value. */, 0, 0))
 				{
-					func_205("APP_SG_HELP", -1);
+					func_205("APP_SG_HELP" /* GXT: You are currently in a private session. Sales made in populated public sessions with rival players will earn an additional "High Demand" cash bonus on your sale value. */, -1);
 				}
 				func_204(34710, 1, -1);
 			}
@@ -10232,11 +10232,11 @@ void func_203(int iParam0, bool bParam1)//Position - 0x8BA1
 		if (iVar5 > 0)
 		{
 			MISC::SET_BIT(&uLocal_109, 12);
-			func_198("HAPP_SELL_T", &Var3, "WHOUSE_CONF", "WHOUSE_CANC", 0, 1, iVar5, 1, iVar6, &Var4);
+			func_198("HAPP_SELL_T" /* GXT: SELL CARGO */, &Var3, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 1, iVar5, 1, iVar6, &Var4);
 		}
 		else
 		{
-			func_198("HAPP_SELL_T", &Var3, "WHOUSE_CONF", "WHOUSE_CANC", 0, 1, iVar6, 1, iVar5, &Var4);
+			func_198("HAPP_SELL_T" /* GXT: SELL CARGO */, &Var3, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 1, iVar6, 1, iVar5, &Var4);
 		}
 	}
 	func_8();
@@ -10585,7 +10585,7 @@ void func_221()//Position - 0x92E7
 			}
 			else
 			{
-				func_198("", "BKR_TF_R6", "OR_OVRLY_OK", "", 1, 0, -1, 0, -1, 0);
+				func_198("", "BKR_TF_R6" /* GXT: Unable to launch the mission. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, -1, 0);
 			}
 			break;
 		
@@ -10598,7 +10598,7 @@ void func_221()//Position - 0x92E7
 			}
 			else
 			{
-				func_198("", "BKR_TF_R6", "OR_OVRLY_OK", "", 1, 0, -1, 0, -1, 0);
+				func_198("", "BKR_TF_R6" /* GXT: Unable to launch the mission. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, -1, 0);
 			}
 			break;
 		
@@ -10613,7 +10613,7 @@ void func_221()//Position - 0x92E7
 		case 5:
 			if (!func_12(229))
 			{
-				func_198("HAPP_T1", func_11(), "OR_OVRLY_OK", "", 1, 0, -1, 0, -1, 0);
+				func_198("HAPP_T1" /* GXT: ACCESS DENIED */, func_11(), "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, -1, 0);
 			}
 			else if (func_246(0))
 			{
@@ -10624,7 +10624,7 @@ void func_221()//Position - 0x92E7
 			}
 			else
 			{
-				func_198("HAPP_T1", "BKR_TF_R6", "OR_OVRLY_OK", "", 1, 0, -1, 0, -1, 0);
+				func_198("HAPP_T1" /* GXT: ACCESS DENIED */, "BKR_TF_R6" /* GXT: Unable to launch the mission. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, -1, 0);
 			}
 			break;
 		
@@ -12118,12 +12118,12 @@ char* func_295(int iParam0, bool bParam1)//Position - 0xAE76
 			return func_296();
 		}
 	}
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACC");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACC" /* GXT: An Organization */);
 }
 
 char* func_296()//Position - 0xAE9D
 {
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACCM");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACCM" /* GXT: Motorcycle Club */);
 }
 
 bool func_297(int iParam0, bool bParam1)//Position - 0xAEAD
@@ -13274,10 +13274,10 @@ void func_342()//Position - 0xC25C
 			if (!func_379())
 			{
 				MISC::SET_BIT(&uLocal_109, 13);
-				func_198("HAPP_T1", "HAPP_D1", "HAPP_SU", "", 0, 0, -1, 5, -1, 0);
+				func_198("HAPP_T1" /* GXT: ACCESS DENIED */, "HAPP_D1" /* GXT: Authentication must be granted by Ronald.Jakowski. Please progress with the Air-Freight Business setup. */, "HAPP_SU" /* GXT: Set Up */, "", 0, 0, -1, 5, -1, 0);
 				if ((!func_346(2) && !BitTest(Global_1946102, 2)) && BitTest(uLocal_109, 13))
 				{
-					func_345("HAPP_HELP_3", 14000);
+					func_345("HAPP_HELP_3" /* GXT: Before you can gain access to the Free Trade Shipping app you must complete a job for Ron. Click the Set Up button to accept the job. */, 14000);
 					MISC::SET_BIT(&Global_1946102, 2);
 					func_343(2);
 				}
@@ -13514,39 +13514,39 @@ struct<4> func_351(int iParam0)//Position - 0xC648
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var0, "HAPP_HELP_1", 16);
+			StringCopy(&Var0, "HAPP_HELP_1" /* GXT: Bonuses applied to individual collections of Cargo types will be lost when selling all. Buyers only pay bonuses for collections of a specific type of Cargo. */, 16);
 			break;
 		
 		case 1:
-			StringCopy(&Var0, "HAPP_HELP_2", 16);
+			StringCopy(&Var0, "HAPP_HELP_2" /* GXT: Interested Buyers will pay a bonus for collections of the same Cargo type. The more you have in stock of the same Cargo type the bigger the bonus will be. Buyers will also pay bigger Bonuses depending on the Cargo type. */, 16);
 			break;
 		
 		case 2:
-			StringCopy(&Var0, "HAPP_HELP_3", 16);
+			StringCopy(&Var0, "HAPP_HELP_3" /* GXT: Before you can gain access to the Free Trade Shipping app you must complete a job for Ron. Click the Set Up button to accept the job. */, 16);
 			break;
 		
 		case 3:
-			StringCopy(&Var0, "HAPP_HELP_4", 16);
+			StringCopy(&Var0, "HAPP_HELP_4" /* GXT: The Overview page tracks your stock levels, Cargo types and performance statistics for the Business. Rival Smugglers operating in your session are also listed for you to keep tabs on. */, 16);
 			break;
 		
 		case 4:
-			StringCopy(&Var0, "HAPP_HELP_5", 16);
+			StringCopy(&Var0, "HAPP_HELP_5" /* GXT: The Source page allows you to view the various types of Cargo being smuggled in and out of the state. Choose a type and Ron will source its location for you. */, 16);
 			break;
 		
 		case 5:
-			StringCopy(&Var0, "HAPP_HELP_6", 16);
+			StringCopy(&Var0, "HAPP_HELP_6" /* GXT: Mission difficulty scales depending on the type of Cargo you have chosen to steal. Hire additional members to recover more Cargo and help guarantee success. */, 16);
 			break;
 		
 		case 6:
-			StringCopy(&Var0, "HAPP_HELP_7", 16);
+			StringCopy(&Var0, "HAPP_HELP_7" /* GXT: The Sell page allows you to view and sell the Cargo types you've stockpiled. The value of each type is shown along with Bonuses for the amount you have collected of a type. */, 16);
 			break;
 		
 		case 7:
-			StringCopy(&Var0, "HAPP_HELP_8", 16);
+			StringCopy(&Var0, "HAPP_HELP_8" /* GXT: Mission difficulty scales depending on the type of Cargo you have chosen to sell. Larger sales may also require multiple delivery vehicles. Hire additional members to help move and protect your Cargo when choosing to sell big. */, 16);
 			break;
 		
 		case 8:
-			StringCopy(&Var0, "HAPP_HELP_9", 16);
+			StringCopy(&Var0, "HAPP_HELP_9" /* GXT: A collection of your Cargo has attracted an interested buyer willing to pay a Bonus for it. Buyers will pay Bonuses depending on the amount and type of Cargo you have stockpiled. */, 16);
 			break;
 	}
 	return Var0;

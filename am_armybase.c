@@ -1578,13 +1578,13 @@ void func_50(bool bParam0, bool bParam1)//Position - 0x2902
 			{
 				if (func_56())
 				{
-					func_54("AB_ENTRY_HT");
+					func_54("AB_ENTRY_HT" /* GXT: Your Hangar includes low-level clearance to Fort Zancudo. This allows access to the base, however actions deemed beyond this clearance level will result in a Wanted Level. */);
 					Local_119.f_180 = 1;
 				}
 			}
 			else if (func_56())
 			{
-				func_53("AB_ENTRY_HT", -1);
+				func_53("AB_ENTRY_HT" /* GXT: Your Hangar includes low-level clearance to Fort Zancudo. This allows access to the base, however actions deemed beyond this clearance level will result in a Wanted Level. */, -1);
 			}
 		}
 		else if (!func_63(16001, -1))
@@ -1594,13 +1594,13 @@ void func_50(bool bParam0, bool bParam1)//Position - 0x2902
 			{
 				if (func_56())
 				{
-					func_54("AB_ENTRY_HT");
+					func_54("AB_ENTRY_HT" /* GXT: Your Hangar includes low-level clearance to Fort Zancudo. This allows access to the base, however actions deemed beyond this clearance level will result in a Wanted Level. */);
 					Local_119.f_180 = 1;
 				}
 			}
 			else if (func_56())
 			{
-				func_53("AB_ENTRY_HT", -1);
+				func_53("AB_ENTRY_HT" /* GXT: Your Hangar includes low-level clearance to Fort Zancudo. This allows access to the base, however actions deemed beyond this clearance level will result in a Wanted Level. */, -1);
 			}
 		}
 		Local_119.f_178 = 1;
@@ -1614,13 +1614,13 @@ void func_50(bool bParam0, bool bParam1)//Position - 0x2902
 			{
 				if (func_56())
 				{
-					func_54("AB_ENTRY_HT");
+					func_54("AB_ENTRY_HT" /* GXT: Your Hangar includes low-level clearance to Fort Zancudo. This allows access to the base, however actions deemed beyond this clearance level will result in a Wanted Level. */);
 					Local_119.f_180 = 1;
 				}
 			}
 			else if (func_56())
 			{
-				func_53("AB_ENTRY_HT", -1);
+				func_53("AB_ENTRY_HT" /* GXT: Your Hangar includes low-level clearance to Fort Zancudo. This allows access to the base, however actions deemed beyond this clearance level will result in a Wanted Level. */, -1);
 			}
 		}
 		else if (Local_119.f_181 == 1)
@@ -1632,13 +1632,13 @@ void func_50(bool bParam0, bool bParam1)//Position - 0x2902
 				{
 					if (func_56())
 					{
-						func_54("AB_ENTRY_HT");
+						func_54("AB_ENTRY_HT" /* GXT: Your Hangar includes low-level clearance to Fort Zancudo. This allows access to the base, however actions deemed beyond this clearance level will result in a Wanted Level. */);
 						Local_119.f_180 = 1;
 					}
 				}
 				else if (func_56())
 				{
-					func_53("AB_ENTRY_HT", -1);
+					func_53("AB_ENTRY_HT" /* GXT: Your Hangar includes low-level clearance to Fort Zancudo. This allows access to the base, however actions deemed beyond this clearance level will result in a Wanted Level. */, -1);
 				}
 			}
 		}
@@ -1651,13 +1651,13 @@ void func_50(bool bParam0, bool bParam1)//Position - 0x2902
 				{
 					if (func_56())
 					{
-						func_54("AB_ENTRY_HT");
+						func_54("AB_ENTRY_HT" /* GXT: Your Hangar includes low-level clearance to Fort Zancudo. This allows access to the base, however actions deemed beyond this clearance level will result in a Wanted Level. */);
 						Local_119.f_180 = 1;
 					}
 				}
 				else if (func_56())
 				{
-					func_53("AB_ENTRY_HT", -1);
+					func_53("AB_ENTRY_HT" /* GXT: Your Hangar includes low-level clearance to Fort Zancudo. This allows access to the base, however actions deemed beyond this clearance level will result in a Wanted Level. */, -1);
 				}
 			}
 		}
@@ -2586,14 +2586,14 @@ void func_98()//Position - 0x3A86
 		}
 		else if (!func_100(&(Local_119.f_183), 17000, 0))
 		{
-			if (!func_55("AB_ENTRY_HT"))
+			if (!func_55("AB_ENTRY_HT" /* GXT: Your Hangar includes low-level clearance to Fort Zancudo. This allows access to the base, however actions deemed beyond this clearance level will result in a Wanted Level. */))
 			{
-				func_53("AB_ENTRY_HT", -1);
+				func_53("AB_ENTRY_HT" /* GXT: Your Hangar includes low-level clearance to Fort Zancudo. This allows access to the base, however actions deemed beyond this clearance level will result in a Wanted Level. */, -1);
 			}
 		}
 		else if (func_100(&(Local_119.f_183), 17000, 0))
 		{
-			if (func_55("AB_ENTRY_HT"))
+			if (func_55("AB_ENTRY_HT" /* GXT: Your Hangar includes low-level clearance to Fort Zancudo. This allows access to the base, however actions deemed beyond this clearance level will result in a Wanted Level. */))
 			{
 				HUD::CLEAR_HELP(true);
 			}
@@ -3929,7 +3929,7 @@ void func_147()//Position - 0x5470
 			if (!Global_2815059.f_6737)
 			{
 				Global_2815059.f_6737 = 1;
-				func_53("BASE_EXP_WARN", -1);
+				func_53("BASE_EXP_WARN" /* GXT: WARNING: Your clearance level does not permit you to fire explosives inside Fort Zancudo. Continuing to fire explosives will result in a Wanted Level. */, -1);
 			}
 			if (!iLocal_126)
 			{

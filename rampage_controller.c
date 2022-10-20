@@ -82,10 +82,10 @@ void __EntryFunction__()//Position - 0x0
 		SYSTEM::WAIT(0);
 		if (!func_18(40))
 		{
-			switch (func_16("RAMP_NEW_ALL"))
+			switch (func_16("RAMP_NEW_ALL" /* GXT: All rampages are now unlocked. */))
 			{
 				case 2:
-					func_13("RAMP_NEW_ALL", 1, 0, 2000, 10000, 4, 0, 0, 0);
+					func_13("RAMP_NEW_ALL" /* GXT: All rampages are now unlocked. */, 1, 0, 2000, 10000, 4, 0, 0, 0);
 					break;
 				
 				case 1:

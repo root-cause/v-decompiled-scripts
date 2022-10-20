@@ -445,7 +445,7 @@ void func_4()//Position - 0x1C7
 				case 3:
 					if (func_361(0))
 					{
-						func_359("HT_BW_LT", "HT_BW_DIS", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_359("HT_BW_LT" /* GXT: ACCEPT JOB */, "HT_BW_DIS" /* GXT: These Jobs are not available at this time. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					else if (func_358())
 					{
@@ -455,18 +455,18 @@ void func_4()//Position - 0x1C7
 					}
 					else
 					{
-						func_359("HT_BW_LT", "HT_BW_L5", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_359("HT_BW_LT" /* GXT: ACCEPT JOB */, "HT_BW_L5" /* GXT: You need to become an MC President, CEO or VIP in order to start any of these jobs. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					break;
 				
 				case 4:
 					if (func_361(1))
 					{
-						func_359("HT_BW_LT", "HT_BW_DIS", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_359("HT_BW_LT" /* GXT: ACCEPT JOB */, "HT_BW_DIS" /* GXT: These Jobs are not available at this time. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					else if (func_347())
 					{
-						func_359("HT_AF_P1", "NC_PRIV_SES_0", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_359("HT_AF_P1" /* GXT: SOURCE AIR-FREIGHT CARGO */, "NC_PRIV_SES_0" /* GXT: Join a public session to access Air-Freight Cargo missions. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					else if (func_358())
 					{
@@ -480,28 +480,28 @@ void func_4()//Position - 0x1C7
 							}
 							else
 							{
-								func_359("HT_AF_P1", "HT_AF_P1_D4", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+								func_359("HT_AF_P1" /* GXT: SOURCE AIR-FREIGHT CARGO */, "HT_AF_P1_D4" /* GXT: You need to set up your Air-Freight Business in order to store Air-Freight Cargo. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 							}
 						}
 						else
 						{
-							func_359("HT_AF_P1", "HT_AF_P1_D1", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+							func_359("HT_AF_P1" /* GXT: SOURCE AIR-FREIGHT CARGO */, "HT_AF_P1_D1" /* GXT: You need to purchase a Hangar from foreclosures.maze-bank.com in order to store Air-Freight Cargo. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 						}
 					}
 					else
 					{
-						func_359("HT_AF_P1", "HT_BW_L5", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_359("HT_AF_P1" /* GXT: SOURCE AIR-FREIGHT CARGO */, "HT_BW_L5" /* GXT: You need to become an MC President, CEO or VIP in order to start any of these jobs. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					break;
 				
 				case 5:
 					if (func_361(2))
 					{
-						func_359("HT_BW_LT", "HT_BW_DIS", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_359("HT_BW_LT" /* GXT: ACCEPT JOB */, "HT_BW_DIS" /* GXT: These Jobs are not available at this time. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					else if (func_347())
 					{
-						func_359("HT_SC_P1", "NC_PRIV_SES_1", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_359("HT_SC_P1" /* GXT: SOURCE SPECIAL CARGO */, "NC_PRIV_SES_1" /* GXT: Join a public session to access Special Cargo missions. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					else if (func_340(0))
 					{
@@ -513,23 +513,23 @@ void func_4()//Position - 0x1C7
 						}
 						else
 						{
-							func_359("HT_SC_P1", "HT_SC_P1_D1", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+							func_359("HT_SC_P1" /* GXT: SOURCE SPECIAL CARGO */, "HT_SC_P1_D1" /* GXT: You need to purchase a Special Cargo Warehouse from SecuroServ in order to store Special Cargo. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 						}
 					}
 					else
 					{
-						func_359("HT_BW_LT", "HT_BW_L11", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_359("HT_BW_LT" /* GXT: ACCEPT JOB */, "HT_BW_L11" /* GXT: You need to register as a CEO to begin sourcing special cargo. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					break;
 				
 				case 6:
 					if (func_361(3))
 					{
-						func_359("HT_BW_LT", "HT_BW_DIS", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_359("HT_BW_LT" /* GXT: ACCEPT JOB */, "HT_BW_DIS" /* GXT: These Jobs are not available at this time. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					else if (func_347())
 					{
-						func_359("HT_VC_P1", "NC_PRIV_SES_2", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_359("HT_VC_P1" /* GXT: SOURCE VEHICLE CARGO */, "NC_PRIV_SES_2" /* GXT: Join a public session to access Vehicle Cargo missions. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					else if (func_340(0))
 					{
@@ -540,23 +540,23 @@ void func_4()//Position - 0x1C7
 						}
 						else
 						{
-							func_359("HT_VC_P1", "HT_VC_P1_D1", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+							func_359("HT_VC_P1" /* GXT: SOURCE VEHICLE CARGO */, "HT_VC_P1_D1" /* GXT: You need to purchase a Vehicle Warehouse from SecuroServ in order to store Vehicle Cargo. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 						}
 					}
 					else
 					{
-						func_359("HT_VC_P1", "HT_BW_L10", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_359("HT_VC_P1" /* GXT: SOURCE VEHICLE CARGO */, "HT_BW_L10" /* GXT: You need to register as a CEO to begin sourcing vehicle cargo. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					break;
 				
 				case 7:
 					if (func_361(4))
 					{
-						func_359("HT_BW_LT", "HT_BW_DIS", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_359("HT_BW_LT" /* GXT: ACCEPT JOB */, "HT_BW_DIS" /* GXT: These Jobs are not available at this time. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					else if (func_347())
 					{
-						func_359("HT_GR_P1", "NC_PRIV_SES_3", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_359("HT_GR_P1" /* GXT: STEAL SUPPLIES */, "NC_PRIV_SES_3" /* GXT: Join a public session to access Gunrunning missions. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					else if (func_358())
 					{
@@ -567,23 +567,23 @@ void func_4()//Position - 0x1C7
 						}
 						else
 						{
-							func_359("HT_GR_P1", "HT_GR_P1_D1", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+							func_359("HT_GR_P1" /* GXT: STEAL SUPPLIES */, "HT_GR_P1_D1" /* GXT: You need to purchase a Bunker from foreclosures.maze-bank.com in order to steal supplies. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 						}
 					}
 					else
 					{
-						func_359("HT_GR_P1", "HT_BW_L5", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_359("HT_GR_P1" /* GXT: STEAL SUPPLIES */, "HT_BW_L5" /* GXT: You need to become an MC President, CEO or VIP in order to start any of these jobs. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					break;
 				
 				case 8:
 					if (func_361(5))
 					{
-						func_359("HT_BW_LT", "HT_BW_DIS", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_359("HT_BW_LT" /* GXT: ACCEPT JOB */, "HT_BW_DIS" /* GXT: These Jobs are not available at this time. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					else if (func_347())
 					{
-						func_359("HT_DW_P1", "NC_PRIV_SES_4", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_359("HT_DW_P1" /* GXT: BUSINESS RESUPPLY */, "NC_PRIV_SES_4" /* GXT: Join a public session to access Biker missions. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					else if (func_31())
 					{
@@ -595,16 +595,16 @@ void func_4()//Position - 0x1C7
 						}
 						else if (func_5(PLAYER::PLAYER_ID()))
 						{
-							func_359("HT_DW_P1", "HT_DW_P1_D2", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+							func_359("HT_DW_P1" /* GXT: BUSINESS RESUPPLY */, "HT_DW_P1_D2" /* GXT: You need to purchase a business on The Open Road site in your clubhouse to access these jobs. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 						}
 						else
 						{
-							func_359("HT_DW_P1", "HT_DW_P1_D1", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+							func_359("HT_DW_P1" /* GXT: BUSINESS RESUPPLY */, "HT_DW_P1_D1" /* GXT: You need to purchase a clubhouse on foreclosures.maze-bank.com and a business on The Open Road site to access these jobs. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 						}
 					}
 					else
 					{
-						func_359("HT_DW_P1", "HT_BW_L7", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_359("HT_DW_P1" /* GXT: BUSINESS RESUPPLY */, "HT_BW_L7" /* GXT: You need to become an MC President in order to start any of these jobs. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					break;
 				
@@ -670,7 +670,7 @@ void func_6()//Position - 0x654
 		iVar8 = func_13(iVar0);
 		if (!func_28(PLAYER::PLAYER_ID(), iVar2))
 		{
-			StringCopy(&Var7, "HT_DW_P1_D3", 16);
+			StringCopy(&Var7, "HT_DW_P1_D3" /* GXT: You need to purchase a ~a~ on The Open Road site in your clubhouse to access these jobs. */, 16);
 			Var6 = { func_12(iVar2, 0) };
 		}
 		else if (iVar8 != 0)
@@ -697,7 +697,7 @@ void func_6()//Position - 0x654
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		iVar0++;
 	}
-	func_7(5, "HT_DW_MT");
+	func_7(5, "HT_DW_MT" /* GXT: SELECT A BUSINESS */);
 	MISC::SET_BIT(&uLocal_109, 4);
 }
 
@@ -742,91 +742,91 @@ struct<4> func_10(int iParam0, int iParam1)//Position - 0x7E4
 			break;
 		
 		case 2:
-			StringCopy(&Var0, "HT_JOB_CD_0", 16);
+			StringCopy(&Var0, "HT_JOB_CD_0" /* GXT: Unavailable. You cannot launch this job until the cooldown is over. */, 16);
 			break;
 		
 		case 4:
-			StringCopy(&Var0, "HT_JOB_R3", 16);
+			StringCopy(&Var0, "HT_JOB_R3" /* GXT: Unavailable. Purchase the Drone from www.warstock-cache-and-carry.com to unlock this Client Job. */, 16);
 			break;
 		
 		case 6:
-			StringCopy(&Var0, "HT_JOB_R2", 16);
+			StringCopy(&Var0, "HT_JOB_R2" /* GXT: Unavailable. The job location is currently occupied. */, 16);
 			break;
 		
 		case 8:
-			StringCopy(&Var0, "HT_JOB_R6", 16);
+			StringCopy(&Var0, "HT_JOB_R6" /* GXT: Unavailable. This job cannot be started from this location. */, 16);
 			break;
 		
 		case 1:
-			StringCopy(&Var0, "HT_BW_L1", 16);
+			StringCopy(&Var0, "HT_BW_L1" /* GXT: This job is not available at the moment. Please try again later. */, 16);
 			break;
 		
 		case 3:
 			if (func_11(iParam1))
 			{
-				StringCopy(&Var0, "HT_JOB_CD_1", 16);
+				StringCopy(&Var0, "HT_JOB_CD_1" /* GXT: Unavailable. You cannot launch another Client Job until the cooldown is over. */, 16);
 			}
 			else
 			{
-				StringCopy(&Var0, "HT_JOB_CD_2", 16);
+				StringCopy(&Var0, "HT_JOB_CD_2" /* GXT: Unavailable. You cannot launch another challenge until the cooldown is over. */, 16);
 			}
 			break;
 		
 		case 7:
 			if (func_31())
 			{
-				StringCopy(&Var0, "HT_JOB_R4", 16);
+				StringCopy(&Var0, "HT_JOB_R4" /* GXT: Unavailable. You need another player in your Motorcycle Club to launch this challenge. */, 16);
 			}
 			else
 			{
-				StringCopy(&Var0, "HT_JOB_R5", 16);
+				StringCopy(&Var0, "HT_JOB_R5" /* GXT: Unavailable. You need another player in your Organization to launch this challenge. */, 16);
 			}
 			break;
 		
 		case 5:
 			if (func_31())
 			{
-				StringCopy(&Var0, "HT_JOB_R1", 16);
+				StringCopy(&Var0, "HT_JOB_R1" /* GXT: Unavailable. Your Motorcycle Club is too close to the job location. */, 16);
 			}
 			else
 			{
-				StringCopy(&Var0, "HT_JOB_R1a", 16);
+				StringCopy(&Var0, "HT_JOB_R1a" /* GXT: Unavailable. Your Organization is too close to the job location. */, 16);
 			}
 			break;
 		
 		case 9:
-			StringCopy(&Var0, "HT_DW_P1_D5", 16);
+			StringCopy(&Var0, "HT_DW_P1_D5" /* GXT: You need to set up your ~a~ in order to steal supplies for it. */, 16);
 			break;
 		
 		case 10:
-			StringCopy(&Var0, "HT_DW_P1_D7", 16);
+			StringCopy(&Var0, "HT_DW_P1_D7" /* GXT: No supplies are required for your ~a~ at this time. */, 16);
 			break;
 		
 		case 11:
-			StringCopy(&Var0, "HT_DW_P1_D6", 16);
+			StringCopy(&Var0, "HT_DW_P1_D6" /* GXT: You need to restart production at your ~a~ before you can acquire more supplies. */, 16);
 			break;
 		
 		case 12:
-			StringCopy(&Var0, "HT_DW_P1_D8", 16);
+			StringCopy(&Var0, "HT_DW_P1_D8" /* GXT: A shipment of supplies is already on its way to your ~a~. */, 16);
 			break;
 		
 		case 15:
 			if (iLocal_286 == 1)
 			{
-				StringCopy(&Var0, "HT_DW_P1_D9", 16);
+				StringCopy(&Var0, "HT_DW_P1_D9" /* GXT: The ~a~ does not have the capacity remaining for any more Special Cargo. */, 16);
 			}
 			else if (iLocal_286 == 2)
 			{
-				StringCopy(&Var0, "HT_DW_P1_D10", 16);
+				StringCopy(&Var0, "HT_DW_P1_D10" /* GXT: The ~a~ does not have the capacity remaining for a medium sized shipment of Special Cargo. */, 16);
 			}
 			else
 			{
-				StringCopy(&Var0, "HT_DW_P1_D11", 16);
+				StringCopy(&Var0, "HT_DW_P1_D11" /* GXT: The ~a~ does not have the capacity remaining for a Large shipment of Special Cargo. */, 16);
 			}
 			break;
 		
 		case 16:
-			StringCopy(&Var0, "HT_SC_P1_D3", 16);
+			StringCopy(&Var0, "HT_SC_P1_D3" /* GXT: Please wait until more items are available for purchase in this area. */, 16);
 			break;
 	}
 	return Var0;
@@ -851,23 +851,23 @@ struct<4> func_12(int iParam0, int iParam1)//Position - 0x988
 		switch (iParam0)
 		{
 			case 4:
-				StringCopy(&Var0, "HAPP_BTYPE_P2", 16);
+				StringCopy(&Var0, "HAPP_BTYPE_P2" /* GXT: Cocaine Lockup */, 16);
 				break;
 			
 			case 3:
-				StringCopy(&Var0, "HAPP_BTYPE_P3", 16);
+				StringCopy(&Var0, "HAPP_BTYPE_P3" /* GXT: Methamphetamine Lab */, 16);
 				break;
 			
 			case 1:
-				StringCopy(&Var0, "HAPP_BTYPE_P4", 16);
+				StringCopy(&Var0, "HAPP_BTYPE_P4" /* GXT: Weed Farm */, 16);
 				break;
 			
 			case 0:
-				StringCopy(&Var0, "HAPP_BTYPE_P5", 16);
+				StringCopy(&Var0, "HAPP_BTYPE_P5" /* GXT: Document Forgery Office */, 16);
 				break;
 			
 			case 2:
-				StringCopy(&Var0, "HAPP_BTYPE_P6", 16);
+				StringCopy(&Var0, "HAPP_BTYPE_P6" /* GXT: Counterfeit Cash Factory */, 16);
 				break;
 		}
 	}
@@ -876,23 +876,23 @@ struct<4> func_12(int iParam0, int iParam1)//Position - 0x988
 		switch (iParam0)
 		{
 			case 4:
-				StringCopy(&Var0, "HAPP_BTYPE_HP2", 16);
+				StringCopy(&Var0, "HAPP_BTYPE_HP2" /* GXT: Cocaine Lockup */, 16);
 				break;
 			
 			case 3:
-				StringCopy(&Var0, "HAPP_BTYPE_HP3", 16);
+				StringCopy(&Var0, "HAPP_BTYPE_HP3" /* GXT: Methamphetamine Lab */, 16);
 				break;
 			
 			case 1:
-				StringCopy(&Var0, "HAPP_BTYPE_HP4", 16);
+				StringCopy(&Var0, "HAPP_BTYPE_HP4" /* GXT: Weed Farm */, 16);
 				break;
 			
 			case 0:
-				StringCopy(&Var0, "HAPP_BTYPE_HP5", 16);
+				StringCopy(&Var0, "HAPP_BTYPE_HP5" /* GXT: Document Forgery Office */, 16);
 				break;
 			
 			case 2:
-				StringCopy(&Var0, "HAPP_BTYPE_HP6", 16);
+				StringCopy(&Var0, "HAPP_BTYPE_HP6" /* GXT: Counterfeit Cash Factory */, 16);
 				break;
 			}
 	}
@@ -1349,12 +1349,12 @@ void func_37(int iParam0)//Position - 0x10DA
 		}
 		else if (!func_39(192))
 		{
-			func_359("HT_DW_P1", func_38(), "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+			func_359("HT_DW_P1" /* GXT: BUSINESS RESUPPLY */, func_38(), "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 		}
 		else
 		{
 			Var2 = { func_12(iVar0, 1) };
-			func_359("HT_DW_P1", "HT_DW_P1_D4", "WHOUSE_CONF", "WHOUSE_CANC", 0, 1, 6, -1, -1, &Var2, 0);
+			func_359("HT_DW_P1" /* GXT: BUSINESS RESUPPLY */, "HT_DW_P1_D4" /* GXT: Are you sure you want to steal Supplies for your ~a~? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 1, 6, -1, -1, &Var2, 0);
 		}
 	}
 	else
@@ -1379,70 +1379,70 @@ int func_39(int iParam0)//Position - 0x11D4
 		{
 			if (func_32(PLAYER::PLAYER_ID()))
 			{
-				func_44("UA_ML_F_GOON1");
+				func_44("UA_ML_F_GOON1" /* GXT: Can't launch this mission whilst one of your Club Members is active in a Freemode Event. */);
 			}
 			else if (func_43(PLAYER::PLAYER_ID()))
 			{
-				func_44("UA_ML_F_GOON2");
+				func_44("UA_ML_F_GOON2" /* GXT: Can't launch this mission whilst one of your Associates is active in a Freemode Event. */);
 			}
 			else
 			{
-				func_44("UA_ML_F_GOON3");
+				func_44("UA_ML_F_GOON3" /* GXT: Can't launch this mission whilst one of your Bodyguards is active in a Freemode Event. */);
 			}
 		}
 		else if (iVar0 == 14)
 		{
-			func_44("BKR_TF_R6");
+			func_44("BKR_TF_R6" /* GXT: Unable to launch the mission. */);
 		}
 		else if (iVar0 == 15)
 		{
 			if (func_32(PLAYER::PLAYER_ID()))
 			{
-				func_44("GENERAL_MLF_G1");
+				func_44("GENERAL_MLF_G1" /* GXT: Can't launch this mission whilst one of your Club Members is currently at one with the animals. */);
 			}
 			else if (func_43(PLAYER::PLAYER_ID()))
 			{
-				func_44("GENERAL_MLF_G2");
+				func_44("GENERAL_MLF_G2" /* GXT: Can't launch this mission whilst one of your Associates is currently at one with the animals. */);
 			}
 			else
 			{
-				func_44("GENERAL_MLF_G3");
+				func_44("GENERAL_MLF_G3" /* GXT: Can't launch this mission whilst one of your Bodyguards is currently at one with the animals. */);
 			}
 		}
 		else if (iVar0 == 16)
 		{
 			if (func_32(PLAYER::PLAYER_ID()))
 			{
-				func_44("GENERAL_MLF_G4");
+				func_44("GENERAL_MLF_G4" /* GXT: Can't launch this mission whilst one of your Club Members is playing a casino game. */);
 			}
 			else if (func_43(PLAYER::PLAYER_ID()))
 			{
-				func_44("GENERAL_MLF_G5");
+				func_44("GENERAL_MLF_G5" /* GXT: Can't launch this mission whilst one of your Associates is playing a casino game. */);
 			}
 			else
 			{
-				func_44("GENERAL_MLF_G6");
+				func_44("GENERAL_MLF_G6" /* GXT: Can't launch this mission whilst one of your Bodyguards is playing a casino game. */);
 			}
 		}
 		else
 		{
-			func_44("BKR_TF_R6");
+			func_44("BKR_TF_R6" /* GXT: Unable to launch the mission. */);
 		}
 		return 0;
 	}
 	if (!func_42(PLAYER::PLAYER_ID()))
 	{
-		func_44("DBG_BUN_NB");
+		func_44("DBG_BUN_NB" /* GXT: You can only launch this mission as the boss of a gang. */);
 		return 0;
 	}
 	if (func_40(PLAYER::PLAYER_ID()))
 	{
-		func_44("BKR_TF_R3");
+		func_44("BKR_TF_R3" /* GXT: Unable to launch a mission whilst you're on another job. */);
 		return 0;
 	}
 	if (NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 	{
-		func_44("BKR_TF_R3");
+		func_44("BKR_TF_R3" /* GXT: Unable to launch a mission whilst you're on another job. */);
 		return 0;
 	}
 	return 1;
@@ -10824,27 +10824,27 @@ void func_221()//Position - 0x961C
 {
 	if (!func_24(PLAYER::PLAYER_ID(), func_35(PLAYER::PLAYER_ID())))
 	{
-		func_359("HT_GR_P1", "HT_GR_P1_D2", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+		func_359("HT_GR_P1" /* GXT: STEAL SUPPLIES */, "HT_GR_P1_D2" /* GXT: You need to set up your Bunker in order to steal supplies for it. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 	}
 	else if (func_222())
 	{
-		func_359("HT_GR_P1", "OR_RESUP_RES", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+		func_359("HT_GR_P1" /* GXT: STEAL SUPPLIES */, "OR_RESUP_RES" /* GXT: You need to restart weapons manufacturing or research before you can acquire more supplies. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 	}
 	else if (Global_1640666[5] >= Global_262145.f_18433)
 	{
-		func_359("HT_GR_P1", "OR_MIS_NA_B", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+		func_359("HT_GR_P1" /* GXT: STEAL SUPPLIES */, "OR_MIS_NA_B" /* GXT: No supplies are required at this time. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 	}
 	else if (func_15(5))
 	{
-		func_359("HT_GR_P1", "OR_MIS_NA_C", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+		func_359("HT_GR_P1" /* GXT: STEAL SUPPLIES */, "OR_MIS_NA_C" /* GXT: A shipment of supplies is already on its way. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 	}
 	else if (!func_39(225))
 	{
-		func_359("HT_GR_P1", func_38(), "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+		func_359("HT_GR_P1" /* GXT: STEAL SUPPLIES */, func_38(), "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 	}
 	else
 	{
-		func_359("HT_GR_P1", "BU_STEAL_SUP", "WHOUSE_CONF", "WHOUSE_CANC", 0, 1, 5, -1, -1, 0, 0);
+		func_359("HT_GR_P1" /* GXT: STEAL SUPPLIES */, "BU_STEAL_SUP" /* GXT: Are you sure you want to steal Supplies for your business? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 1, 5, -1, -1, 0, 0);
 	}
 }
 
@@ -10866,22 +10866,22 @@ void func_223()//Position - 0x9730
 		iVar0 = func_45(PLAYER::PLAYER_ID(), 178, 0);
 		if (iVar0 == 14)
 		{
-			func_359("HT_VC_P1", "BKR_TF_R6", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+			func_359("HT_VC_P1" /* GXT: SOURCE VEHICLE CARGO */, "BKR_TF_R6" /* GXT: Unable to launch the mission. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 			return;
 		}
 		else if (iVar0 == 15)
 		{
 			if (func_32(PLAYER::PLAYER_ID()))
 			{
-				func_359("HT_VC_P1", "GENERAL_MLF_G1", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+				func_359("HT_VC_P1" /* GXT: SOURCE VEHICLE CARGO */, "GENERAL_MLF_G1" /* GXT: Can't launch this mission whilst one of your Club Members is currently at one with the animals. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 			}
 			else if (func_43(PLAYER::PLAYER_ID()))
 			{
-				func_359("HT_VC_P1", "GENERAL_MLF_G2", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+				func_359("HT_VC_P1" /* GXT: SOURCE VEHICLE CARGO */, "GENERAL_MLF_G2" /* GXT: Can't launch this mission whilst one of your Associates is currently at one with the animals. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 			}
 			else
 			{
-				func_359("HT_VC_P1", "GENERAL_MLF_G3", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+				func_359("HT_VC_P1" /* GXT: SOURCE VEHICLE CARGO */, "GENERAL_MLF_G3" /* GXT: Can't launch this mission whilst one of your Bodyguards is currently at one with the animals. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 			}
 			return;
 		}
@@ -10889,30 +10889,30 @@ void func_223()//Position - 0x9730
 		{
 			if (func_32(PLAYER::PLAYER_ID()))
 			{
-				func_359("HT_VC_P1", "GENERAL_MLF_G4", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+				func_359("HT_VC_P1" /* GXT: SOURCE VEHICLE CARGO */, "GENERAL_MLF_G4" /* GXT: Can't launch this mission whilst one of your Club Members is playing a casino game. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 			}
 			else if (func_43(PLAYER::PLAYER_ID()))
 			{
-				func_359("HT_VC_P1", "GENERAL_MLF_G5", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+				func_359("HT_VC_P1" /* GXT: SOURCE VEHICLE CARGO */, "GENERAL_MLF_G5" /* GXT: Can't launch this mission whilst one of your Associates is playing a casino game. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 			}
 			else
 			{
-				func_359("HT_VC_P1", "GENERAL_MLF_G6", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+				func_359("HT_VC_P1" /* GXT: SOURCE VEHICLE CARGO */, "GENERAL_MLF_G6" /* GXT: Can't launch this mission whilst one of your Bodyguards is playing a casino game. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 			}
 			return;
 		}
 	}
 	if (!func_228(12))
 	{
-		func_359("HT_VC_P1", "SEC_V_STEAL_F", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+		func_359("HT_VC_P1" /* GXT: SOURCE VEHICLE CARGO */, "SEC_V_STEAL_F" /* GXT: No vehicles can be found at this time. Try again later. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 	}
 	else if (func_224(PLAYER::PLAYER_ID(), func_227(PLAYER::PLAYER_ID())))
 	{
-		func_359("HT_VC_P1", "HT_VC_P1_D2", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+		func_359("HT_VC_P1" /* GXT: SOURCE VEHICLE CARGO */, "HT_VC_P1_D2" /* GXT: You do not have the capacity to store any more vehicles in your warehouse. Sell some vehicles to free up some space. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 	}
 	else
 	{
-		func_359("SEC_VEH_STEAL", "SEC_VEH_STEALQ", "WHOUSE_CONF", "WHOUSE_CANC", 0, 1, 4, -1, -1, 0, 0);
+		func_359("SEC_VEH_STEAL" /* GXT: SOURCE VEHICLE */, "SEC_VEH_STEALQ" /* GXT: Are you sure you'd like to source a vehicle to steal? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 1, 4, -1, -1, 0, 0);
 	}
 }
 
@@ -10981,12 +10981,12 @@ void func_229(int iParam0)//Position - 0x99A4
 		}
 		else if (!func_39(167))
 		{
-			func_359("HT_SC_P1", func_38(), "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+			func_359("HT_SC_P1" /* GXT: SOURCE SPECIAL CARGO */, func_38(), "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 		}
 		else
 		{
 			Var0 = { func_246(iLocal_287, iLocal_286, func_248()) };
-			func_359("HT_SC_P2", &Var0, "WHOUSE_CONF", "WHOUSE_CANC", 0, 1, 3, -1, -1, 0, 0);
+			func_359("HT_SC_P2" /* GXT: CONFIRM PURCHASE */, &Var0, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 1, 3, -1, -1, 0, 0);
 		}
 	}
 	else
@@ -10994,11 +10994,11 @@ void func_229(int iParam0)//Position - 0x99A4
 		iLocal_286 = iParam0 + 1;
 		if (!func_339(PLAYER::PLAYER_ID()))
 		{
-			func_359("HT_SC_P1", "HT_SC_P1_D1", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+			func_359("HT_SC_P1" /* GXT: SOURCE SPECIAL CARGO */, "HT_SC_P1_D1" /* GXT: You need to purchase a Special Cargo Warehouse from SecuroServ in order to store Special Cargo. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 		}
 		else if (!func_250(iLocal_286))
 		{
-			func_359("HT_SC_P1", "HT_SC_P1_D2", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+			func_359("HT_SC_P1" /* GXT: SOURCE SPECIAL CARGO */, "HT_SC_P1_D2" /* GXT: You do not own a Special Cargo Warehouse with the capacity remaining to store a shipment of this size. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 		}
 		else
 		{
@@ -11053,7 +11053,7 @@ void func_230()//Position - 0x9A91
 			cVar7 = { func_240(iLocal_287) };
 			if (iLocal_286 == 1 && func_248())
 			{
-				StringCopy(&Var6, "HT_SCW_D3", 16);
+				StringCopy(&Var6, "HT_SCW_D3" /* GXT: Source a special item to be stored in this ~a~ warehouse. */, 16);
 				cVar7 = { func_238(func_239(iVar2)) };
 			}
 			else
@@ -11108,7 +11108,7 @@ void func_230()//Position - 0x9A91
 			iVar0++;
 		}
 	}
-	func_7(2, "HT_SC_MTW");
+	func_7(2, "HT_SC_MTW" /* GXT: SELECT WAREHOUSE */);
 	MISC::SET_BIT(&uLocal_109, 4);
 }
 
@@ -11230,15 +11230,15 @@ struct<6> func_238(int iParam0)//Position - 0x9DE9
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var0, "HT_SCW_DS0", 24);
+			StringCopy(&Var0, "HT_SCW_DS0" /* GXT: small */, 24);
 			break;
 		
 		case 1:
-			StringCopy(&Var0, "HT_SCW_DS1", 24);
+			StringCopy(&Var0, "HT_SCW_DS1" /* GXT: medium sized */, 24);
 			break;
 		
 		case 2:
-			StringCopy(&Var0, "HT_SCW_DS2", 24);
+			StringCopy(&Var0, "HT_SCW_DS2" /* GXT: large */, 24);
 			break;
 	}
 	return Var0;
@@ -11342,91 +11342,91 @@ char* func_243(int iParam0)//Position - 0x9F97
 	switch (iParam0)
 	{
 		case 1:
-			return "MP_WHOUSE_HT0";
+			return "MP_WHOUSE_HT0" /* GXT: Pacific Bait Storage */;
 			break;
 		
 		case 2:
-			return "MP_WHOUSE_HT1";
+			return "MP_WHOUSE_HT1" /* GXT: White Widow Garage */;
 			break;
 		
 		case 3:
-			return "MP_WHOUSE_HT2";
+			return "MP_WHOUSE_HT2" /* GXT: Celltowa Unit */;
 			break;
 		
 		case 4:
-			return "MP_WHOUSE_HT3";
+			return "MP_WHOUSE_HT3" /* GXT: Convenience Store Lockup */;
 			break;
 		
 		case 5:
-			return "MP_WHOUSE_HT4";
+			return "MP_WHOUSE_HT4" /* GXT: Foreclosed Garage */;
 			break;
 		
 		case 6:
-			return "MP_WHOUSE_HT5";
+			return "MP_WHOUSE_HT5" /* GXT: Xero Gas Factory */;
 			break;
 		
 		case 7:
-			return "MP_WHOUSE_HT6";
+			return "MP_WHOUSE_HT6" /* GXT: Derriere Lingerie Backlot */;
 			break;
 		
 		case 8:
-			return "MP_WHOUSE_HT7";
+			return "MP_WHOUSE_HT7" /* GXT: Bilgeco Warehouse */;
 			break;
 		
 		case 9:
-			return "MP_WHOUSE_HT8";
+			return "MP_WHOUSE_HT8" /* GXT: Pier 400 Utility Building */;
 			break;
 		
 		case 10:
-			return "MP_WHOUSE_HT9";
+			return "MP_WHOUSE_HT9" /* GXT: GEE Warehouse */;
 			break;
 		
 		case 11:
-			return "MP_WHOUSE_HT10";
+			return "MP_WHOUSE_HT10" /* GXT: LS Marine Building 3 */;
 			break;
 		
 		case 12:
-			return "MP_WHOUSE_HT11";
+			return "MP_WHOUSE_HT11" /* GXT: Railyard Warehouse */;
 			break;
 		
 		case 13:
-			return "MP_WHOUSE_HT12";
+			return "MP_WHOUSE_HT12" /* GXT: Fridgit Annexe */;
 			break;
 		
 		case 14:
-			return "MP_WHOUSE_HT13";
+			return "MP_WHOUSE_HT13" /* GXT: Disused Factory Outlet */;
 			break;
 		
 		case 15:
-			return "MP_WHOUSE_HT14";
+			return "MP_WHOUSE_HT14" /* GXT: Discount Retail Unit */;
 			break;
 		
 		case 16:
-			return "MP_WHOUSE_HT15";
+			return "MP_WHOUSE_HT15" /* GXT: Logistics Depot */;
 			break;
 		
 		case 17:
-			return "MP_WHOUSE_HT16";
+			return "MP_WHOUSE_HT16" /* GXT: Darnell Bros Warehouse */;
 			break;
 		
 		case 18:
-			return "MP_WHOUSE_HT17";
+			return "MP_WHOUSE_HT17" /* GXT: Wholesale Furniture */;
 			break;
 		
 		case 19:
-			return "MP_WHOUSE_HT18";
+			return "MP_WHOUSE_HT18" /* GXT: Cypress Warehouses */;
 			break;
 		
 		case 20:
-			return "MP_WHOUSE_HT19";
+			return "MP_WHOUSE_HT19" /* GXT: West Vinewood Backlot */;
 			break;
 		
 		case 21:
-			return "MP_WHOUSE_HT20";
+			return "MP_WHOUSE_HT20" /* GXT: Old Power Station */;
 			break;
 		
 		case 22:
-			return "MP_WHOUSE_HT21";
+			return "MP_WHOUSE_HT21" /* GXT: Walker & Sons Warehouse */;
 			break;
 	}
 	return "";
@@ -11437,91 +11437,91 @@ char* func_244(int iParam0)//Position - 0xA108
 	switch (iParam0)
 	{
 		case 1:
-			return "MP_WHOUSE_0";
+			return "MP_WHOUSE_0" /* GXT: Pacific Bait Storage */;
 			break;
 		
 		case 2:
-			return "MP_WHOUSE_1";
+			return "MP_WHOUSE_1" /* GXT: White Widow Garage */;
 			break;
 		
 		case 3:
-			return "MP_WHOUSE_2";
+			return "MP_WHOUSE_2" /* GXT: Celltowa Unit */;
 			break;
 		
 		case 4:
-			return "MP_WHOUSE_3";
+			return "MP_WHOUSE_3" /* GXT: Convenience Store Lockup */;
 			break;
 		
 		case 5:
-			return "MP_WHOUSE_4";
+			return "MP_WHOUSE_4" /* GXT: Foreclosed Garage */;
 			break;
 		
 		case 6:
-			return "MP_WHOUSE_5";
+			return "MP_WHOUSE_5" /* GXT: Xero Gas Factory */;
 			break;
 		
 		case 7:
-			return "MP_WHOUSE_6";
+			return "MP_WHOUSE_6" /* GXT: Derriere Lingerie Backlot */;
 			break;
 		
 		case 8:
-			return "MP_WHOUSE_7";
+			return "MP_WHOUSE_7" /* GXT: Bilgeco Warehouse */;
 			break;
 		
 		case 9:
-			return "MP_WHOUSE_8";
+			return "MP_WHOUSE_8" /* GXT: Pier 400 Utility Building */;
 			break;
 		
 		case 10:
-			return "MP_WHOUSE_9";
+			return "MP_WHOUSE_9" /* GXT: GEE Warehouse */;
 			break;
 		
 		case 11:
-			return "MP_WHOUSE_10";
+			return "MP_WHOUSE_10" /* GXT: LS Marine Building 3 */;
 			break;
 		
 		case 12:
-			return "MP_WHOUSE_11";
+			return "MP_WHOUSE_11" /* GXT: Railyard Warehouse */;
 			break;
 		
 		case 13:
-			return "MP_WHOUSE_12";
+			return "MP_WHOUSE_12" /* GXT: Fridgit Annexe */;
 			break;
 		
 		case 14:
-			return "MP_WHOUSE_13";
+			return "MP_WHOUSE_13" /* GXT: Disused Factory Outlet */;
 			break;
 		
 		case 15:
-			return "MP_WHOUSE_14";
+			return "MP_WHOUSE_14" /* GXT: Discount Retail Unit */;
 			break;
 		
 		case 16:
-			return "MP_WHOUSE_15";
+			return "MP_WHOUSE_15" /* GXT: Logistics Depot */;
 			break;
 		
 		case 17:
-			return "MP_WHOUSE_16";
+			return "MP_WHOUSE_16" /* GXT: Darnell Bros Warehouse */;
 			break;
 		
 		case 18:
-			return "MP_WHOUSE_17";
+			return "MP_WHOUSE_17" /* GXT: Wholesale Furniture */;
 			break;
 		
 		case 19:
-			return "MP_WHOUSE_18";
+			return "MP_WHOUSE_18" /* GXT: Cypress Warehouses */;
 			break;
 		
 		case 20:
-			return "MP_WHOUSE_19";
+			return "MP_WHOUSE_19" /* GXT: West Vinewood Backlot */;
 			break;
 		
 		case 21:
-			return "MP_WHOUSE_20";
+			return "MP_WHOUSE_20" /* GXT: Old Power Station */;
 			break;
 		
 		case 22:
-			return "MP_WHOUSE_21";
+			return "MP_WHOUSE_21" /* GXT: Walker & Sons Warehouse */;
 			break;
 	}
 	return "";
@@ -11563,7 +11563,7 @@ struct<4> func_246(int iParam0, int iParam1, var uParam2)//Position - 0xA2B6
 	}
 	else
 	{
-		StringCopy(&Var0, "WHOUSE_SHI", 16);
+		StringCopy(&Var0, "WHOUSE_SHI" /* GXT: CONFIRM PURCHASE */, 16);
 		StringIntConCat(&Var0, iVar3, 16);
 		StringConCat(&Var0, "D", 16);
 		StringIntConCat(&Var0, iVar1, 16);
@@ -11655,18 +11655,18 @@ void func_252(int iParam0)//Position - 0xA3F6
 	}
 	else if (!func_39(229))
 	{
-		func_359("HT_AF_P1", func_38(), "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+		func_359("HT_AF_P1" /* GXT: SOURCE AIR-FREIGHT CARGO */, func_38(), "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 	}
 	else
 	{
-		StringCopy(&Var0, "HAPP_STEAL_C1", 16);
+		StringCopy(&Var0, "HAPP_STEAL_C1" /* GXT: Are you sure you'd like to source Cargo for your Hangar? */, 16);
 		StringCopy(&Var1, "", 16);
 		if (iLocal_288 != 8)
 		{
-			StringCopy(&Var0, "HAPP_STEAL_C0", 16);
+			StringCopy(&Var0, "HAPP_STEAL_C0" /* GXT: Are you sure you'd like to source ~a~? */, 16);
 			Var1 = { func_253(iLocal_288) };
 		}
-		func_359("HT_AF_P1", &Var0, "WHOUSE_CONF", "WHOUSE_CANC", 0, 1, 2, -1, -1, &Var1, 0);
+		func_359("HT_AF_P1" /* GXT: SOURCE AIR-FREIGHT CARGO */, &Var0, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 1, 2, -1, -1, &Var1, 0);
 	}
 }
 
@@ -11678,39 +11678,39 @@ struct<4> func_253(int iParam0)//Position - 0xA49B
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&Var0, "HAPPT_ANIMAL", 16);
+			StringCopy(&Var0, "HAPPT_ANIMAL" /* GXT: Animal Materials */, 16);
 			break;
 		
 		case 1:
-			StringCopy(&Var0, "HAPPT_ART", 16);
+			StringCopy(&Var0, "HAPPT_ART" /* GXT: Art & Antiques */, 16);
 			break;
 		
 		case 2:
-			StringCopy(&Var0, "HAPPT_CHEMS", 16);
+			StringCopy(&Var0, "HAPPT_CHEMS" /* GXT: Chemicals */, 16);
 			break;
 		
 		case 3:
-			StringCopy(&Var0, "HAPPT_GOODS", 16);
+			StringCopy(&Var0, "HAPPT_GOODS" /* GXT: Counterfeit Goods */, 16);
 			break;
 		
 		case 4:
-			StringCopy(&Var0, "HAPPT_JEWEL", 16);
+			StringCopy(&Var0, "HAPPT_JEWEL" /* GXT: Jewelry & Gemstones */, 16);
 			break;
 		
 		case 5:
-			StringCopy(&Var0, "HAPPT_MEDS", 16);
+			StringCopy(&Var0, "HAPPT_MEDS" /* GXT: Medical Supplies */, 16);
 			break;
 		
 		case 6:
-			StringCopy(&Var0, "HAPPT_NARC", 16);
+			StringCopy(&Var0, "HAPPT_NARC" /* GXT: Narcotics */, 16);
 			break;
 		
 		case 7:
-			StringCopy(&Var0, "HAPPT_TOBAC", 16);
+			StringCopy(&Var0, "HAPPT_TOBAC" /* GXT: Tobacco & Alcohol */, 16);
 			break;
 		
 		case 8:
-			StringCopy(&Var0, "HAPPT_MIXED", 16);
+			StringCopy(&Var0, "HAPPT_MIXED" /* GXT: Cargo */, 16);
 			break;
 	}
 	return Var0;
@@ -11784,13 +11784,13 @@ void func_258(int iParam0)//Position - 0xA626
 	}
 	else if (!func_260(iVar0))
 	{
-		func_359("HT_BW_LT", func_38(), "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+		func_359("HT_BW_LT" /* GXT: ACCEPT JOB */, func_38(), "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 	}
 	else
 	{
 		StringCopy(&Var1, "HT_BW_T", 16);
 		StringIntConCat(&Var1, iParam0, 16);
-		func_359("HT_BW_LT", "HT_BW_L0", "WHOUSE_CONF", "WHOUSE_CANC", 0, 1, 1, -1, -1, &Var1, 0);
+		func_359("HT_BW_LT" /* GXT: ACCEPT JOB */, "HT_BW_L0" /* GXT: Are you sure you'd like to start ~a~? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 1, 1, -1, -1, &Var1, 0);
 		func_259(iVar0);
 	}
 }
@@ -11811,70 +11811,70 @@ int func_260(int iParam0)//Position - 0xA6A7
 		{
 			if (func_32(PLAYER::PLAYER_ID()))
 			{
-				func_44("HT_BW_L2");
+				func_44("HT_BW_L2" /* GXT: You can't start this job whilst one of your Club Members is active in a Freemode Event. */);
 			}
 			else if (func_43(PLAYER::PLAYER_ID()))
 			{
-				func_44("HT_BW_L3");
+				func_44("HT_BW_L3" /* GXT: You can't start this job whilst one of your Associates is active in a Freemode Event. */);
 			}
 			else
 			{
-				func_44("HT_BW_L4");
+				func_44("HT_BW_L4" /* GXT: You can't start this job whilst one of your Bodyguards is active in a Freemode Event. */);
 			}
 		}
 		else if (iVar0 == 14)
 		{
-			func_44("BKR_TF_R6");
+			func_44("BKR_TF_R6" /* GXT: Unable to launch the mission. */);
 		}
 		else if (iVar0 == 15)
 		{
 			if (func_32(PLAYER::PLAYER_ID()))
 			{
-				func_44("GENERAL_MLF_G1");
+				func_44("GENERAL_MLF_G1" /* GXT: Can't launch this mission whilst one of your Club Members is currently at one with the animals. */);
 			}
 			else if (func_43(PLAYER::PLAYER_ID()))
 			{
-				func_44("GENERAL_MLF_G2");
+				func_44("GENERAL_MLF_G2" /* GXT: Can't launch this mission whilst one of your Associates is currently at one with the animals. */);
 			}
 			else
 			{
-				func_44("GENERAL_MLF_G3");
+				func_44("GENERAL_MLF_G3" /* GXT: Can't launch this mission whilst one of your Bodyguards is currently at one with the animals. */);
 			}
 		}
 		else if (iVar0 == 16)
 		{
 			if (func_32(PLAYER::PLAYER_ID()))
 			{
-				func_44("GENERAL_MLF_G4");
+				func_44("GENERAL_MLF_G4" /* GXT: Can't launch this mission whilst one of your Club Members is playing a casino game. */);
 			}
 			else if (func_43(PLAYER::PLAYER_ID()))
 			{
-				func_44("GENERAL_MLF_G5");
+				func_44("GENERAL_MLF_G5" /* GXT: Can't launch this mission whilst one of your Associates is playing a casino game. */);
 			}
 			else
 			{
-				func_44("GENERAL_MLF_G6");
+				func_44("GENERAL_MLF_G6" /* GXT: Can't launch this mission whilst one of your Bodyguards is playing a casino game. */);
 			}
 		}
 		else
 		{
-			func_44("HT_BW_L1");
+			func_44("HT_BW_L1" /* GXT: This job is not available at the moment. Please try again later. */);
 		}
 		return 0;
 	}
 	if (!func_42(PLAYER::PLAYER_ID()))
 	{
-		func_44("HT_BW_L5");
+		func_44("HT_BW_L5" /* GXT: You need to become an MC President, CEO or VIP in order to start any of these jobs. */);
 		return 0;
 	}
 	if (func_40(PLAYER::PLAYER_ID()))
 	{
-		func_44("HT_BW_L6");
+		func_44("HT_BW_L6" /* GXT: You can't start this job whilst you're already on another job. */);
 		return 0;
 	}
 	if (NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 	{
-		func_44("HT_BW_L6");
+		func_44("HT_BW_L6" /* GXT: You can't start this job whilst you're already on another job. */);
 		return 0;
 	}
 	return 1;
@@ -14484,8 +14484,8 @@ void func_331()//Position - 0xD801
 		StringIntConCat(&Var7, iVar0, 16);
 		if (iVar2 == 1 && func_248())
 		{
-			StringCopy(&Var6, "HT_SC_T3", 16);
-			StringCopy(&Var7, "HT_SC_D3", 16);
+			StringCopy(&Var6, "HT_SC_T3" /* GXT: Special Item */, 16);
+			StringCopy(&Var7, "HT_SC_D3" /* GXT: Source a Special item. */, 16);
 			StringCopy(&cVar1, "", 24);
 		}
 		bVar8 = func_339(PLAYER::PLAYER_ID());
@@ -14518,7 +14518,7 @@ void func_331()//Position - 0xD801
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		iVar0++;
 	}
-	func_7(2, "HT_SC_MT");
+	func_7(2, "HT_SC_MT" /* GXT: SELECT SHIPMENT SIZE */);
 	MISC::SET_BIT(&uLocal_109, 4);
 }
 
@@ -14700,11 +14700,11 @@ void func_342()//Position - 0xDBA5
 		{
 			iVar5 = 2;
 			func_22(13, iVar0);
-			StringCopy(&Var3, "HT_JOB_CD_3", 16);
+			StringCopy(&Var3, "HT_JOB_CD_3" /* GXT: There is a short waiting period whilst additional ~a~ is sourced. */, 16);
 		}
 		else if (func_256(PLAYER::PLAYER_ID()))
 		{
-			StringCopy(&Var3, "HT_AF_P1_D2", 16);
+			StringCopy(&Var3, "HT_AF_P1_D2" /* GXT: You do not have the capacity remaining to store any more Air-Freight Cargo. */, 16);
 			func_22(14, iVar0);
 		}
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_290, "ADD_JOB");
@@ -14726,7 +14726,7 @@ void func_342()//Position - 0xDBA5
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		iVar0++;
 	}
-	func_7(1, "HT_AF_MT");
+	func_7(1, "HT_AF_MT" /* GXT: SELECT A TYPE */);
 	MISC::SET_BIT(&uLocal_109, 4);
 }
 
@@ -14836,7 +14836,7 @@ void func_350()//Position - 0xDDC2
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		iVar0++;
 	}
-	func_7(0, "HT_BW_MT");
+	func_7(0, "HT_BW_MT" /* GXT: SELECT A JOB */);
 	MISC::SET_BIT(&uLocal_109, 4);
 }
 
@@ -15065,7 +15065,7 @@ void func_363()//Position - 0xE1F8
 			else
 			{
 				func_456();
-				func_359("HT_BW_LT", "HT_BW_L1", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+				func_359("HT_BW_LT" /* GXT: ACCEPT JOB */, "HT_BW_L1" /* GXT: This job is not available at the moment. Please try again later. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 				return;
 			}
 			break;
@@ -15089,7 +15089,7 @@ void func_363()//Position - 0xE1F8
 		case 4:
 			if (func_224(PLAYER::PLAYER_ID(), func_227(PLAYER::PLAYER_ID())))
 			{
-				func_359("HT_VC_P1", "SEC_V_STEAL_F", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+				func_359("HT_VC_P1" /* GXT: SOURCE VEHICLE CARGO */, "SEC_V_STEAL_F" /* GXT: No vehicles can be found at this time. Try again later. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 			}
 			else if (func_398())
 			{
@@ -15100,7 +15100,7 @@ void func_363()//Position - 0xE1F8
 			}
 			else
 			{
-				func_359("SEC_VEH_STEAL", "SEC_MISS_L_F", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+				func_359("SEC_VEH_STEAL" /* GXT: SOURCE VEHICLE */, "SEC_MISS_L_F" /* GXT: No vehicles could be found. Try again later. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 			}
 			break;
 		
@@ -15113,7 +15113,7 @@ void func_363()//Position - 0xE1F8
 			}
 			else
 			{
-				func_359("HT_GR_P1", func_38(), "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+				func_359("HT_GR_P1" /* GXT: STEAL SUPPLIES */, func_38(), "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 			}
 			break;
 		
@@ -15260,7 +15260,7 @@ int func_371(int iParam0, int iParam1)//Position - 0xE54B
 		if (iVar0 == 3)
 		{
 			AUDIO::PLAY_SOUND_FRONTEND(-1, "Select_Mission_Unavailable", "DLC_GR_MOC_Computer_Sounds", true);
-			func_44("BKR_TF_R6");
+			func_44("BKR_TF_R6" /* GXT: Unable to launch the mission. */);
 			return 0;
 		}
 		else if (iVar0 == 2)

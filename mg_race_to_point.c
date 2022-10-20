@@ -569,7 +569,7 @@ int func_8()//Position - 0x602
 			}
 			else
 			{
-				AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
+				AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 				return 1;
 			}
 		}
@@ -1269,7 +1269,7 @@ void func_27()//Position - 0x1197
 					func_186(&(Local_142.f_2));
 					func_185(&Local_142);
 					Global_2815059.f_28.f_80 = 0;
-					HUD::SET_MISSION_NAME(true, "R2P_MENU");
+					HUD::SET_MISSION_NAME(true, "R2P_MENU" /* GXT: IMPROMPTU RACE */);
 					Local_91[NETWORK::PARTICIPANT_ID_TO_INT() /*4*/].f_3 = 2;
 				}
 				else if (!ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), Local_112, 7.5f, 7.5f, 7.5f, false, true, 0))
@@ -1278,7 +1278,7 @@ void func_27()//Position - 0x1197
 					func_186(&(Local_142.f_2));
 					func_185(&Local_142);
 					MISC::SET_BIT(&uLocal_92, 7);
-					func_184(27, "R2P_DQBIG", "R2P_DQSTR", 1, -1, 2, 1, 0);
+					func_184(27, "R2P_DQBIG" /* GXT: Disqualified */, "R2P_DQSTR" /* GXT: Impromptu Race */, 1, -1, 2, 1, 0);
 					func_566();
 				}
 			}
@@ -1343,7 +1343,7 @@ void func_28()//Position - 0x1494
 				}
 			}
 			func_113(0, PLAYER::PLAYER_PED_ID(), "XPT_MEDIUMT", joaat("XPTYPE_COMPLETE"), 883210409, SYSTEM::ROUND((150f * Global_262145.f_4248)), 1, -1, 0, 0, 0);
-			func_112(25, Local_87.f_3, "R2P_IWSTR", 0, 1, -1, -1082130432, 2, 0);
+			func_112(25, Local_87.f_3, "R2P_IWSTR" /* GXT: Impromptu Race: $~1~ */, 0, 1, -1, -1082130432, 2, 0);
 			Var0.f_3 = 1;
 			STATS::PLAYSTATS_RACE_TO_POINT_MISSION_DONE(32, 150, Local_87.f_3, &Var0);
 			func_107(joaat("MPPLY_RACE_2_POINT_WINS"), 1);
@@ -1351,14 +1351,14 @@ void func_28()//Position - 0x1494
 		}
 		else
 		{
-			func_84(26, "R2P_ILSTR", PLAYER::GET_PLAYER_NAME(NETWORK::NETWORK_GET_PLAYER_INDEX(PLAYER::INT_TO_PARTICIPANTINDEX(Local_87.f_2))), 1, -1, 0, 2);
+			func_84(26, "R2P_ILSTR" /* GXT: Impromptu Race */, PLAYER::GET_PLAYER_NAME(NETWORK::NETWORK_GET_PLAYER_INDEX(PLAYER::INT_TO_PARTICIPANTINDEX(Local_87.f_2))), 1, -1, 0, 2);
 			Var0.f_3 = 0;
 			STATS::PLAYSTATS_RACE_TO_POINT_MISSION_DONE(32, 0, 0, &Var0);
 			if (Local_87.f_2 != -1)
 			{
 				if (NETWORK::NETWORK_IS_PARTICIPANT_ACTIVE(PLAYER::INT_TO_PARTICIPANTINDEX(Local_87.f_2)))
 				{
-					func_33("R2P_PWTIC", NETWORK::NETWORK_GET_PLAYER_INDEX(PLAYER::INT_TO_PARTICIPANTINDEX(Local_87.f_2)), 0, 0, 0, 1, 0);
+					func_33("R2P_PWTIC" /* GXT: ~a~ ~s~won the Impromptu Race. */, NETWORK::NETWORK_GET_PLAYER_INDEX(PLAYER::INT_TO_PARTICIPANTINDEX(Local_87.f_2)), 0, 0, 0, 1, 0);
 				}
 			}
 			func_107(joaat("MPPLY_RACE_2_POINT_LOST"), 1);
@@ -4741,7 +4741,7 @@ void func_165(var uParam0, int iParam1)//Position - 0x54FC
 						func_172(&iVar0, 0);
 						if (iParam1 == 1)
 						{
-							func_171("GB_BCUT_TICK1", func_175(), iVar0, 0, 0, 1);
+							func_171("GB_BCUT_TICK1" /* GXT: You paid ~a~ ~s~a $~1~ ~s~cut. */, func_175(), iVar0, 0, 0, 1);
 						}
 						func_170(20);
 						func_166(func_175(), iVar0, 1);
@@ -5067,7 +5067,7 @@ int func_187(var uParam0, bool bParam1, int iParam2, bool bParam3, int iParam4, 
 						func_87(&(uParam0->f_1), 8);
 						HUD::GET_HUD_COLOUR(18, &iVar5, &iVar6, &iVar7, &uVar8);
 						GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*uParam0, "SET_MESSAGE");
-						func_191("CNTDWN_GO");
+						func_191("CNTDWN_GO" /* GXT: Go! */);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar5);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar6);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar7);
@@ -5131,7 +5131,7 @@ int func_187(var uParam0, bool bParam1, int iParam2, bool bParam3, int iParam4, 
 			func_87(&(uParam0->f_1), 8);
 			HUD::GET_HUD_COLOUR(18, &iVar11, &iVar12, &iVar13, &uVar14);
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*uParam0, "SET_MESSAGE");
-			func_191("CNTDWN_GO");
+			func_191("CNTDWN_GO" /* GXT: Go! */);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar11);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar12);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar13);
@@ -6453,7 +6453,7 @@ void func_232()//Position - 0x72ED
 		}
 		if (func_24(&uLocal_150))
 		{
-			func_449("R2P_WARNH", 0, 0);
+			func_449("R2P_WARNH" /* GXT: ~s~You are leaving the Impromptu Race start location. */, 0, 0);
 		}
 		else if (bVar0)
 		{
@@ -6461,25 +6461,25 @@ void func_232()//Position - 0x72ED
 			{
 				if (bLocal_100 == 1)
 				{
-					func_449("R2P_MENU_IVP", 0, 0);
+					func_449("R2P_MENU_IVP" /* GXT: Send an invite to the selected player. Once an invite is sent the destination can't be changed. */, 0, 0);
 				}
 			}
 			else if ((Local_87.f_15[2] <= 0 || Local_87.f_15[2] > iLocal_85) && iLocal_147 == 1)
 			{
-				func_449("R2P_MENU_WAY", 0, 0);
+				func_449("R2P_MENU_WAY" /* GXT: The waypoint needs to be outside of the red area shown on the Map. */, 0, 0);
 			}
 			else if (Local_87.f_14 < 2)
 			{
-				func_449("R2P_MENU_MPL", 0, 0);
+				func_449("R2P_MENU_MPL" /* GXT: An Impromptu Race requires at least two players. Once an invite is sent the destination can't be changed. */, 0, 0);
 			}
 			else
 			{
-				func_449("R2P_MENU_DSQ", 0, 0);
+				func_449("R2P_MENU_DSQ" /* GXT: Invite more players or start the Race. You will be disqualified if you move too far during the countdown. */, 0, 0);
 			}
 		}
 		else
 		{
-			func_449("R2P_MENU_WAI", 0, 0);
+			func_449("R2P_MENU_WAI" /* GXT: Waiting for ~a~ ~s~to set the options. You will be disqualified if you move too far during the countdown. */, 0, 0);
 			func_448(PLAYER::GET_PLAYER_NAME(NETWORK::NETWORK_GET_PLAYER_INDEX(NETWORK::NETWORK_GET_HOST_OF_THIS_SCRIPT())));
 		}
 		if (bVar0 == 1)
@@ -6696,7 +6696,7 @@ void func_235(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 	{
 		if (Global_23150.f_5609 <= 1)
 		{
-			func_256(Global_23150.f_5609 + 1, "DFLT_MNU_OPT", 0, 1, 0, 0, 0);
+			func_256(Global_23150.f_5609 + 1, "DFLT_MNU_OPT" /* GXT: Exit */, 0, 1, 0, 0, 0);
 			Global_23150.f_6405 = 1;
 		}
 	}
@@ -6799,14 +6799,14 @@ void func_235(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 				if (Global_23150.f_6126)
 				{
 					func_251();
-					func_249((((Global_23147 + fParam5) - 0.00390625f) - func_250("CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128);
+					func_249((((Global_23147 + fParam5) - 0.00390625f) - func_250("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128);
 				}
 				else if (Global_23150.f_6122 > Global_23150.f_5616)
 				{
 					if (Global_23150.f_6125 != 0)
 					{
 						func_251();
-						func_249((((Global_23147 + fParam5) - 0.00390625f) - func_250("CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124);
+						func_249((((Global_23147 + fParam5) - 0.00390625f) - func_250("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124);
 					}
 				}
 			}
@@ -16726,11 +16726,11 @@ void func_450(bool bParam0)//Position - 0x15B33
 	func_463(0, 0);
 	if (bParam0)
 	{
-		func_462("R2P_MENU_S");
+		func_462("R2P_MENU_S" /* GXT: IMPROMPTU RACE OPTIONS */);
 	}
 	else
 	{
-		func_462("R2P_MENU");
+		func_462("R2P_MENU" /* GXT: IMPROMPTU RACE */);
 	}
 	func_461(1, 1, 0, 0, 0);
 	func_460(1, 2, 1, 1, 1);
@@ -16739,43 +16739,43 @@ void func_450(bool bParam0)//Position - 0x15B33
 	bVar4 = false;
 	bVar5 = false;
 	iLocal_147 = 0;
-	StringCopy(&(Local_138.f_6), "R2P_MENU_DEST", 16);
-	StringCopy(&(Local_138.f_10), "R2P_MENU_DE", 16);
+	StringCopy(&(Local_138.f_6), "R2P_MENU_DEST" /* GXT: Destination */, 16);
+	StringCopy(&(Local_138.f_10), "R2P_MENU_DE" /* GXT: ~a~ - ~1~m */, 16);
 	if (Local_87.f_15[2] <= 0 || Local_87.f_15[2] > iLocal_85)
 	{
 		Local_87.f_15[2] = 0;
 		if (!bParam0)
 		{
-			StringCopy(&(Local_138.f_6), "R2P_MENU_DE0", 16);
+			StringCopy(&(Local_138.f_6), "R2P_MENU_DE0" /* GXT: Waypoint */, 16);
 		}
 		else if (HUD::IS_WAYPOINT_ACTIVE() || BitTest(Local_87.f_1, 10))
 		{
 			if ((func_10(func_11(), 0f, 0f, -2000f, 0) || func_10(func_11(), 0f, 0f, 0f, 0)) || MISC::GET_DISTANCE_BETWEEN_COORDS(Local_87.f_4, func_11(), true) < 1000f)
 			{
 				iLocal_147 = 1;
-				StringCopy(&(Local_138.f_10), "R2P_MENU_DE0S", 16);
+				StringCopy(&(Local_138.f_10), "R2P_MENU_DE0S" /* GXT: Waypoint - Set on Map */, 16);
 			}
 			else
 			{
-				StringCopy(&(Local_138.f_6), "R2P_MENU_DE0", 16);
+				StringCopy(&(Local_138.f_6), "R2P_MENU_DE0" /* GXT: Waypoint */, 16);
 			}
 		}
 		else
 		{
 			iLocal_147 = 1;
-			StringCopy(&(Local_138.f_10), "R2P_MENU_DE0S", 16);
+			StringCopy(&(Local_138.f_10), "R2P_MENU_DE0S" /* GXT: Waypoint - Set on Map */, 16);
 		}
 	}
 	else
 	{
-		StringCopy(&(Local_138.f_6), "R2P_MENU_DE", 16);
+		StringCopy(&(Local_138.f_6), "R2P_MENU_DE" /* GXT: ~a~ - ~1~m */, 16);
 		StringIntConCat(&(Local_138.f_6), Local_87.f_15[2], 16);
 		StringConCat(&(Local_138.f_6), "F", 16);
 		if (Local_87.f_15[2] == 2)
 		{
 			if (Global_1853348[PLAYER::PLAYER_ID() /*834*/] == 0 || BitTest(Global_2815059.f_1794, 24))
 			{
-				StringCopy(&(Local_138.f_6), "R2P_MENU_DE99F", 16);
+				StringCopy(&(Local_138.f_6), "R2P_MENU_DE99F" /* GXT: Objective */, 16);
 			}
 		}
 	}
@@ -16787,8 +16787,8 @@ void func_450(bool bParam0)//Position - 0x15B33
 			bVar4 = func_506(&uLocal_139, iLocal_141, 0);
 		}
 		bLocal_100 = bVar4;
-		func_256(0, "R2P_MENU_IN", 0, bVar4, 0, 0, 0);
-		func_256(1, "R2P_MENU_IN2", 0, bVar4, 0, 0, 0);
+		func_256(0, "R2P_MENU_IN" /* GXT: Invite All Players in Range */, 0, bVar4, 0, 0, 0);
+		func_256(1, "R2P_MENU_IN2" /* GXT: List of Players in Range */, 0, bVar4, 0, 0, 0);
 	}
 	bVar4 = bParam0;
 	if (BitTest(Local_87.f_1, 11))
@@ -16796,8 +16796,8 @@ void func_450(bool bParam0)//Position - 0x15B33
 		bVar4 = false;
 	}
 	bVar5 = bVar4;
-	func_256(2, "R2P_MENU_DEST", 0, 1, 0, 0, 0);
-	if (MISC::ARE_STRINGS_EQUAL(&(Local_138.f_10), "R2P_MENU_DE0S"))
+	func_256(2, "R2P_MENU_DEST" /* GXT: Destination */, 0, 1, 0, 0, 0);
+	if (MISC::ARE_STRINGS_EQUAL(&(Local_138.f_10), "R2P_MENU_DE0S" /* GXT: Waypoint - Set on Map */))
 	{
 		func_256(2, &(Local_138.f_10), 0, bVar4, 0, 0, 0);
 	}
@@ -16807,8 +16807,8 @@ void func_450(bool bParam0)//Position - 0x15B33
 		func_458(&(Local_138.f_6), 0);
 		func_454(func_457(), 0);
 	}
-	func_256(3, "R2P_MENU_SCT", 0, 1, 0, 0, 0);
-	StringCopy(&(Local_138.f_6), "R2P_MENU_SC", 16);
+	func_256(3, "R2P_MENU_SCT" /* GXT: Cash Pot */, 0, 1, 0, 0, 0);
+	StringCopy(&(Local_138.f_6), "R2P_MENU_SC" /* GXT: $~1~ */, 16);
 	func_256(3, &(Local_138.f_6), 1, 0, 0, 0, 0);
 	if (Local_87.f_3 >= 50)
 	{
@@ -16836,7 +16836,7 @@ void func_450(bool bParam0)//Position - 0x15B33
 		{
 			bVar4 = false;
 		}
-		func_256(4, "R2P_MENU_STT", 0, bVar4, 0, 0, 0);
+		func_256(4, "R2P_MENU_STT" /* GXT: Start */, 0, bVar4, 0, 0, 0);
 	}
 	if (bParam0)
 	{
@@ -16848,11 +16848,11 @@ void func_450(bool bParam0)//Position - 0x15B33
 				{
 					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 					{
-						func_453(237, "R2P_MENU_LAU", -1, 0);
+						func_453(237, "R2P_MENU_LAU" /* GXT: Start */, -1, 0);
 					}
 					else
 					{
-						func_452(176, "R2P_MENU_LAU", -1);
+						func_452(176, "R2P_MENU_LAU" /* GXT: Start */, -1);
 					}
 				}
 			}
@@ -16861,43 +16861,43 @@ void func_450(bool bParam0)//Position - 0x15B33
 		{
 			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 			{
-				func_453(237, "R2P_CTRL_INV", -1, 0);
+				func_453(237, "R2P_CTRL_INV" /* GXT: Invite */, -1, 0);
 			}
 			else
 			{
-				func_452(176, "R2P_CTRL_INV", -1);
+				func_452(176, "R2P_CTRL_INV" /* GXT: Invite */, -1);
 			}
 		}
 		else if (Local_138.f_14 == 1)
 		{
 			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 			{
-				func_453(237, "R2P_CTRL_SEL", -1, 0);
+				func_453(237, "R2P_CTRL_SEL" /* GXT: Select */, -1, 0);
 			}
 			else
 			{
-				func_452(176, "R2P_CTRL_SEL", -1);
+				func_452(176, "R2P_CTRL_SEL" /* GXT: Select */, -1);
 			}
 		}
 		else if (Local_138.f_14 == 2)
 		{
 			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 			{
-				func_453(237, "R2P_CTRL_NXT", -1, 0);
+				func_453(237, "R2P_CTRL_NXT" /* GXT: Next */, -1, 0);
 			}
 			else
 			{
-				func_452(176, "R2P_CTRL_NXT", -1);
+				func_452(176, "R2P_CTRL_NXT" /* GXT: Next */, -1);
 			}
 		}
 		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 		{
-			func_453(238, "R2P_MENU_EXI", -1, 0);
-			func_452(199, "SPEC_PAUSE", -1);
+			func_453(238, "R2P_MENU_EXI" /* GXT: Exit */, -1, 0);
+			func_452(199, "SPEC_PAUSE" /* GXT: Pause */, -1);
 		}
 		else
 		{
-			func_452(177, "R2P_MENU_EXI", -1);
+			func_452(177, "R2P_MENU_EXI" /* GXT: Exit */, -1);
 		}
 		if (Local_138.f_14 == 2 && bVar5 == 1)
 		{
@@ -16910,11 +16910,11 @@ void func_450(bool bParam0)//Position - 0x15B33
 	}
 	else if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 	{
-		func_453(238, "R2P_MENU_EXI", -1, 0);
+		func_453(238, "R2P_MENU_EXI" /* GXT: Exit */, -1, 0);
 	}
 	else
 	{
-		func_452(177, "R2P_MENU_EXI", -1);
+		func_452(177, "R2P_MENU_EXI" /* GXT: Exit */, -1);
 	}
 	if (bParam0)
 	{
@@ -17568,7 +17568,7 @@ void func_464()//Position - 0x16F7A
 	
 	func_463(0, 0);
 	func_451(0, 0, 0, 0, 0);
-	func_462("R2P_MENU_TINV");
+	func_462("R2P_MENU_TINV" /* GXT: PLAYER LIST */);
 	func_461(1, 1, 0, 0, 0);
 	func_460(1, 2, 1, 1, 1);
 	iVar1 = 0;
@@ -17620,7 +17620,7 @@ void func_464()//Position - 0x16F7A
 	}
 	if (iVar1 == 0)
 	{
-		func_256(iVar1, "PIM_R2PNON", 1, 1, 0, 0, 0);
+		func_256(iVar1, "PIM_R2PNON" /* GXT: No Players in Range */, 1, 1, 0, 0, 0);
 		bLocal_100 = false;
 		iVar1++;
 	}
@@ -17629,7 +17629,7 @@ void func_464()//Position - 0x16F7A
 		iVar0 = 0;
 		while (iVar0 < iVar1)
 		{
-			func_256(iVar0, "PIM_PLNM", 1, 1, 0, 0, 0);
+			func_256(iVar0, "PIM_PLNM" /* GXT: ~a~ */, 1, 1, 0, 0, 0);
 			func_465(PLAYER::GET_PLAYER_NAME(iVar3[iVar0]), 0, 1, 1);
 			if (Local_138.f_14 == iVar0)
 			{
@@ -17643,20 +17643,20 @@ void func_464()//Position - 0x16F7A
 	{
 		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 		{
-			func_453(237, "R2P_CTRL_INV", -1, 0);
+			func_453(237, "R2P_CTRL_INV" /* GXT: Invite */, -1, 0);
 		}
 		else
 		{
-			func_452(176, "R2P_CTRL_INV", -1);
+			func_452(176, "R2P_CTRL_INV" /* GXT: Invite */, -1);
 		}
 	}
 	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 	{
-		func_453(238, "R2P_MENU_BAC", -1, 0);
+		func_453(238, "R2P_MENU_BAC" /* GXT: Back */, -1, 0);
 	}
 	else
 	{
-		func_452(177, "R2P_MENU_BAC", -1);
+		func_452(177, "R2P_MENU_BAC" /* GXT: Back */, -1);
 	}
 	func_489(Local_138.f_14, 1, 1);
 	func_449("", 0, 0);
@@ -18297,7 +18297,7 @@ void func_480()//Position - 0x17CE4
 					{
 						if (Local_138.f_14 == 1)
 						{
-							AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
+							AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 							iLocal_98 = 1;
 							Local_138.f_14 = 0;
 							iLocal_96 = 1;
@@ -18307,16 +18307,16 @@ void func_480()//Position - 0x17CE4
 						{
 							return;
 						}
-						AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
+						AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 						func_484(Local_87.f_4, Local_87.f_7, Local_111, NETWORK::NETWORK_GET_INSTANCE_ID_OF_THIS_SCRIPT(), func_5(PLAYER::GET_PLAYER_TEAM(PLAYER::PLAYER_ID()), 300));
 						iVar0 = func_483();
 						if (iVar0 != 1)
 						{
-							func_482("R2P_TINVS", iVar0, 0);
+							func_482("R2P_TINVS" /* GXT: Your invite has been sent to ~1~ players. */, iVar0, 0);
 						}
 						else
 						{
-							func_481("R2P_TINVS1", 0);
+							func_481("R2P_TINVS1" /* GXT: Your invite has been sent to 1 player. */, 0);
 						}
 						func_23(&uLocal_139);
 						func_21(&uLocal_139, 0, 0);
@@ -18331,8 +18331,8 @@ void func_480()//Position - 0x17CE4
 			case 1:
 				if (bLocal_100 == 1)
 				{
-					AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
-					func_33("R2P_TINVP", iLocal_99, 0, 0, 0, 1, 0);
+					AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
+					func_33("R2P_TINVP" /* GXT: Your invite has been sent to ~a~. */, iLocal_99, 0, 0, 0, 1, 0);
 					func_484(Local_87.f_4, Local_87.f_7, Local_111, NETWORK::NETWORK_GET_INSTANCE_ID_OF_THIS_SCRIPT(), func_167(iLocal_99));
 					MISC::SET_BIT(&(Local_87.f_1), 11);
 				}
@@ -18955,7 +18955,7 @@ void func_503()//Position - 0x18975
 				HUD::SET_BLIP_SPRITE(iLocal_93, 38);
 				HUD::SET_BLIP_SCALE(iLocal_93, 1.2f);
 				HUD::SET_BLIP_PRIORITY(iLocal_93, 5);
-				HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_93, "R2P_BLIP");
+				HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_93, "R2P_BLIP" /* GXT: Finish Line */);
 				PATHFIND::SET_IGNORE_NO_GPS_FLAG_UNTIL_FIRST_NORMAL_NODE(true);
 				HUD::SET_BLIP_ROUTE(iLocal_93, true);
 				iLocal_94 = GRAPHICS::CREATE_CHECKPOINT(10, Var0 + Vector(4f, 0f, 0f), Var0, 10f, iVar1, iVar2, iVar3, 75, 0);
@@ -18978,7 +18978,7 @@ void func_504()//Position - 0x18AA1
 		iLocal_95 = HUD::ADD_BLIP_FOR_RADIUS(Local_87.f_4, 1000f);
 		HUD::SET_BLIP_COLOUR(iLocal_95, 1);
 		HUD::SET_BLIP_ALPHA(iLocal_95, 220);
-		HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_95, "R2P_BLIPR");
+		HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_95, "R2P_BLIPR" /* GXT: Invalid Area */);
 		HUD::SET_BLIP_DISPLAY(iLocal_95, 3);
 	}
 }
@@ -20084,7 +20084,7 @@ void func_566()//Position - 0x19BAF
 	{
 		AUDIO::SET_USER_RADIO_CONTROL_ENABLED(true);
 	}
-	if (func_576("R2P_WARNH"))
+	if (func_576("R2P_WARNH" /* GXT: ~s~You are leaving the Impromptu Race start location. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}

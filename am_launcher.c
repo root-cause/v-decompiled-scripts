@@ -15693,11 +15693,11 @@ void func_332()//Position - 0x113E0
 					{
 						if (Global_262145.f_45 < 3)
 						{
-							func_333("ACD_TSCH", Global_262145.f_45, 0);
+							func_333("ACD_TSCH" /* GXT: ~y~Special Crate Drop in ~1~ hours. */, Global_262145.f_45, 0);
 						}
 						else
 						{
-							func_333("ACD_TSCH", 3, 0);
+							func_333("ACD_TSCH" /* GXT: ~y~Special Crate Drop in ~1~ hours. */, 3, 0);
 						}
 					}
 					MISC::SET_BIT(&(Global_2815059.f_206.f_1), 1);
@@ -15709,7 +15709,7 @@ void func_332()//Position - 0x113E0
 				{
 					if (func_339(31, 0, 0) && !func_338())
 					{
-						func_333("ACD_TSCH", 5, 0);
+						func_333("ACD_TSCH" /* GXT: ~y~Special Crate Drop in ~1~ hours. */, 5, 0);
 					}
 					MISC::SET_BIT(&(Global_2815059.f_206.f_1), 2);
 				}
@@ -15720,7 +15720,7 @@ void func_332()//Position - 0x113E0
 				{
 					if (func_339(31, 0, 0) && !func_338())
 					{
-						func_333("ACD_TSCH", 10, 0);
+						func_333("ACD_TSCH" /* GXT: ~y~Special Crate Drop in ~1~ hours. */, 10, 0);
 					}
 					MISC::SET_BIT(&(Global_2815059.f_206.f_1), 3);
 				}

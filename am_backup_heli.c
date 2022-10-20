@@ -1606,7 +1606,7 @@ void func_60()//Position - 0x1821
 					iLocal_47 = HUD::ADD_BLIP_FOR_ENTITY(iVar1);
 					HUD::SET_BLIP_SPRITE(iLocal_47, 422);
 					HUD::SHOW_HEIGHT_ON_BLIP(iLocal_47, false);
-					HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_47, "MPCT_MERRY3");
+					HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_47, "MPCT_MERRY3" /* GXT: Backup Helicopter */);
 					func_86(&iLocal_47, 1);
 				}
 				if (func_85(Local_227.f_1))

@@ -369,7 +369,7 @@ void func_1()//Position - 0xBF
 				{
 					if (!iLocal_217)
 					{
-						func_48("LOSE_WANTED", 7500, 1);
+						func_48("LOSE_WANTED" /* GXT: Lose the Cops. */, 7500, 1);
 						iLocal_217 = 1;
 					}
 				}

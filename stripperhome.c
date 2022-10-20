@@ -1785,7 +1785,7 @@ void func_66(int iParam0)//Position - 0x1ABE
 	switch (iParam0)
 	{
 		case 0:
-			func_84("SCLUB_HOME_D", uLocal_74[0]);
+			func_84("SCLUB_HOME_D" /* GXT: ~r~~a~ died. */, uLocal_74[0]);
 			func_88(uLocal_74[0], 0);
 			func_72(uLocal_74[0], 1);
 			iLocal_72 = 6;
@@ -1793,7 +1793,7 @@ void func_66(int iParam0)//Position - 0x1ABE
 		
 		case 1:
 			HUD::CLEAR_PRINTS();
-			func_67("SCLUB_HOME_A", uLocal_74[0], 0);
+			func_67("SCLUB_HOME_A" /* GXT: ~a~ was abandoned. */, uLocal_74[0], 0);
 			iLocal_72 = 5;
 			break;
 		
@@ -1802,7 +1802,7 @@ void func_66(int iParam0)//Position - 0x1ABE
 			break;
 		
 		case 4:
-			func_84("SCLUB_HOME_D3", uLocal_74[0]);
+			func_84("SCLUB_HOME_D3" /* GXT: ~r~~a~ was scared. */, uLocal_74[0]);
 			iLocal_72 = 6;
 			break;
 		
@@ -2164,7 +2164,7 @@ void func_91(bool bParam0)//Position - 0x20BF
 		case 7:
 			if (bParam0)
 			{
-				func_84("SCLUB_HOME_GO", uLocal_74[0]);
+				func_84("SCLUB_HOME_GO" /* GXT: Take ~a~ ~y~home.~s~ */, uLocal_74[0]);
 			}
 			else
 			{
@@ -2174,7 +2174,7 @@ void func_91(bool bParam0)//Position - 0x20BF
 		
 		case 8:
 		case 9:
-			func_92("SCLUB_HOME_GO3", 7500, 1);
+			func_92("SCLUB_HOME_GO3" /* GXT: Take her ~y~home. */, 7500, 1);
 			break;
 	}
 }
@@ -3305,11 +3305,11 @@ void func_108()//Position - 0x2CCC
 				{
 					if (uLocal_74[0] == 5)
 					{
-						func_67("SCLUB_PHON_HELP_ALT", uLocal_74[0], 0);
+						func_67("SCLUB_PHON_HELP_ALT" /* GXT: ~a~' number has been added to your phone. */, uLocal_74[0], 0);
 					}
 					else
 					{
-						func_67("SCLUB_PHON_HELP", uLocal_74[0], 0);
+						func_67("SCLUB_PHON_HELP" /* GXT: ~a~'s number has been added to your phone. */, uLocal_74[0], 0);
 					}
 					func_119(uLocal_74[0], 1, -1);
 					SYSTEM::WAIT(4000);
@@ -3878,12 +3878,12 @@ void func_130()//Position - 0x3EAF
 	{
 		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("");
 		StringCopy(&cVar1, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_8746[1 /*6*/])), 64);
-		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253");
+		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253" /* GXT: New Contact */);
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, sVar2, &cVar1);
 	}
 	else
 	{
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_255");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_255" /* GXT: New Contact: ~n~~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_8746[1 /*6*/]));
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, "", 0);
 	}
@@ -5491,7 +5491,7 @@ char* func_194(int iParam0)//Position - 0x5A0C
 			break;
 		
 		case 3:
-			return "Cheetah";
+			return "Cheetah" /* GXT: Cheetah */;
 			break;
 		
 		case 4:
@@ -5499,7 +5499,7 @@ char* func_194(int iParam0)//Position - 0x5A0C
 			break;
 		
 		case 5:
-			return "Infernus";
+			return "Infernus" /* GXT: Infernus */;
 			break;
 		
 		case 6:
@@ -6100,7 +6100,7 @@ void func_215(bool bParam0)//Position - 0x68DC
 				HUD::REMOVE_BLIP(&iLocal_276);
 			}
 			func_251(0);
-			func_84("SCLUB_HOME_R", uLocal_74[0]);
+			func_84("SCLUB_HOME_R" /* GXT: Return to ~b~~a~.~s~ */, uLocal_74[0]);
 			iLocal_75 = 9;
 		}
 	}
@@ -6136,7 +6136,7 @@ void func_215(bool bParam0)//Position - 0x68DC
 				if (!func_267(uLocal_300, 1))
 				{
 					ENTITY::FREEZE_ENTITY_POSITION(iLocal_271[0], true);
-					func_84("SCLUB_HOME_MEET", uLocal_74[0]);
+					func_84("SCLUB_HOME_MEET" /* GXT: Meet ~b~~a~~s~ behind the club. */, uLocal_74[0]);
 					func_251(0);
 					func_27(&uLocal_300, 1);
 				}
@@ -6157,9 +6157,9 @@ void func_215(bool bParam0)//Position - 0x68DC
 				ENTITY::FREEZE_ENTITY_POSITION(iLocal_271[0], false);
 				if (ENTITY::DOES_ENTITY_EXIST(iLocal_307) && (VEHICLE::GET_VEHICLE_MAX_NUMBER_OF_PASSENGERS(iLocal_307) < 1 || (!bParam0 && !VEHICLE::IS_THIS_MODEL_A_CAR(ENTITY::GET_ENTITY_MODEL(iLocal_307)))))
 				{
-					if (!func_70("SCLUB_SMALL_CAR", &Var0))
+					if (!func_70("SCLUB_SMALL_CAR" /* GXT: Get a larger vehicle to take ~a~ home. */, &Var0))
 					{
-						func_67("SCLUB_SMALL_CAR", uLocal_74[0], 0);
+						func_67("SCLUB_SMALL_CAR" /* GXT: Get a larger vehicle to take ~a~ home. */, uLocal_74[0], 0);
 						func_173(iLocal_271[0], "NEED_A_VEHICLE", 10);
 					}
 				}
@@ -6183,7 +6183,7 @@ void func_215(bool bParam0)//Position - 0x68DC
 					iLocal_75 = 2;
 				}
 			}
-			else if (func_70("SCLUB_SMALL_CAR", &Var0))
+			else if (func_70("SCLUB_SMALL_CAR" /* GXT: Get a larger vehicle to take ~a~ home. */, &Var0))
 			{
 				HUD::CLEAR_HELP(true);
 			}
@@ -6258,7 +6258,7 @@ void func_215(bool bParam0)//Position - 0x68DC
 					HUD::REMOVE_BLIP(&iLocal_276);
 				}
 				func_251(0);
-				func_84("SCLUB_HOME_R", uLocal_74[0]);
+				func_84("SCLUB_HOME_R" /* GXT: Return to ~b~~a~.~s~ */, uLocal_74[0]);
 				iLocal_75 = 9;
 			}
 			else if (ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), Local_287, 3f, 3f, 2f, true, true, 2) || ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), Local_286, 5f, 5f, 2f, true, true, 1))
@@ -6293,7 +6293,7 @@ void func_215(bool bParam0)//Position - 0x68DC
 				{
 					func_61(Local_287);
 				}
-				if (func_107("SCLUB_HOME_WALK"))
+				if (func_107("SCLUB_HOME_WALK" /* GXT: Walk her to the door. */))
 				{
 					HUD::CLEAR_HELP(true);
 				}
@@ -6334,7 +6334,7 @@ void func_215(bool bParam0)//Position - 0x68DC
 			if ((!func_171() && !HUD::IS_MESSAGE_BEING_DISPLAYED()) && !func_267(uLocal_300, 2048))
 			{
 				Var0 = { func_71(uLocal_74[0]) };
-				func_85("SCLUB_FOLLOW_H", &Var0, 7500, 1);
+				func_85("SCLUB_FOLLOW_H" /* GXT: Follow ~b~~a~~s~ to her home. */, &Var0, 7500, 1);
 				func_86();
 				func_251(0);
 				func_27(&uLocal_300, 2048);
@@ -6557,7 +6557,7 @@ int func_219(int iParam0)//Position - 0x7421
 						iVar2 = MISC::GET_HASH_KEY(&cVar3);
 						if (iVar2 != 0)
 						{
-							if (iVar2 == MISC::GET_HASH_KEY("SABRE_CAG"))
+							if (iVar2 == MISC::GET_HASH_KEY("SABRE_CAG" /* GXT: Stunt Cage */))
 							{
 								return 0;
 							}
@@ -8373,7 +8373,7 @@ int func_268(var uParam0, bool bParam1)//Position - 0x9551
 			{
 				if (!func_33(0))
 				{
-					func_67("SCLUB_HOME_C_H", uLocal_74[0], 0);
+					func_67("SCLUB_HOME_C_H" /* GXT: To cancel the booty call, call ~a~ back. */, uLocal_74[0], 0);
 					func_27(&uLocal_300, 128);
 				}
 			}
@@ -8742,20 +8742,20 @@ void func_277(bool bParam0)//Position - 0x9F4E
 		case 7:
 			if (bParam0)
 			{
-				func_84("SCLUB_HOME_MEE4", uLocal_74[0]);
+				func_84("SCLUB_HOME_MEE4" /* GXT: Meet ~b~~a~~s~ at her home. */, uLocal_74[0]);
 			}
 			else
 			{
-				func_84("SCLUB_HOME_MEET", uLocal_74[0]);
+				func_84("SCLUB_HOME_MEET" /* GXT: Meet ~b~~a~~s~ behind the club. */, uLocal_74[0]);
 			}
 			break;
 		
 		case 8:
-			func_84("SCLUB_HOME_LIZ", uLocal_74[0]);
+			func_84("SCLUB_HOME_LIZ" /* GXT: Meet ~b~~a~~s~ at the college. */, uLocal_74[0]);
 			break;
 		
 		case 9:
-			func_84("SCLUB_HOME_HITCH", uLocal_74[0]);
+			func_84("SCLUB_HOME_HITCH" /* GXT: Meet ~b~~a~~s~ at the marina. */, uLocal_74[0]);
 			break;
 	}
 }

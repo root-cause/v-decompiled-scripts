@@ -1993,7 +1993,7 @@ char* func_21(int iParam0)//Position - 0x137B
 			return "CHALLENGE_PLAYER_LEFT";
 			break;
 	}
-	return "DEFAULT";
+	return "DEFAULT" /* GXT: _ */;
 }
 
 char* func_22(int iParam0)//Position - 0x1405
@@ -2053,7 +2053,7 @@ char* func_22(int iParam0)//Position - 0x1405
 		
 		default:
 	}
-	return "DEFAULT";
+	return "DEFAULT" /* GXT: _ */;
 }
 
 int func_23(int iParam0)//Position - 0x14EB
@@ -3859,7 +3859,7 @@ void func_75()//Position - 0x3808
 					{
 						if ((ENTITY::IS_ENTITY_AT_ENTITY(PLAYER::PLAYER_PED_ID(), NETWORK::NET_TO_VEH(Local_63.f_2), 10f, 10f, 3f, false, true, 0) && !PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false)) && !func_86(NETWORK::NET_TO_VEH(Local_63.f_2), 0))
 						{
-							func_85(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 23, true), "BTX_ENTER", &uLocal_72, 0);
+							func_85(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 23, true), "BTX_ENTER" /* GXT: Enter */, &uLocal_72, 0);
 						}
 					}
 				}
@@ -4340,7 +4340,7 @@ void func_97()//Position - 0x40B1
 		iVar0 = func_26(1191, -1, 0);
 		if (!BitTest(iVar0, 15))
 		{
-			func_99("BTX_HELP1", -1);
+			func_99("BTX_HELP1" /* GXT: ~s~The boat ~BLIP_DOCK~ will take you to the nearest drop-off location. */, -1);
 			MISC::SET_BIT(&iVar0, 15);
 			func_98(1191, iVar0, -1, 1, 0);
 		}
@@ -5481,7 +5481,7 @@ void func_132()//Position - 0x5708
 		{
 			iLocal_67 = HUD::ADD_BLIP_FOR_ENTITY(NETWORK::NET_TO_VEH(Local_63.f_2));
 			HUD::SET_BLIP_SPRITE(iLocal_67, 356);
-			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_67, "BTX_BLIP");
+			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_67, "BTX_BLIP" /* GXT: Boat */);
 			HUD::SET_BLIP_FLASHES(iLocal_67, true);
 			HUD::SET_BLIP_CATEGORY(iLocal_67, 6);
 		}

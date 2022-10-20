@@ -3056,7 +3056,7 @@ void func_80(bool bParam0)//Position - 0x36C1
 	if (bVar0)
 	{
 		StringCopy(&cVar1, "CHAR_LIFEINVADER", 64);
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("COUP_RED");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("COUP_RED" /* GXT: You have redeemed your promotion for ~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(func_81(bParam0));
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar1, &cVar1, true, 0, "", 0);
 	}
@@ -3067,28 +3067,28 @@ char* func_81(bool bParam0)//Position - 0x3841
 	switch (bParam0)
 	{
 		case 0:
-			return "COUP_HAIRC";
+			return "COUP_HAIRC" /* GXT: one free haircut. */;
 		
 		case 1:
-			return "COUP_TATTOO";
+			return "COUP_TATTOO" /* GXT: one free tattoo. */;
 		
 		case 2:
-			return "COUP_WARSTOCK";
+			return "COUP_WARSTOCK" /* GXT: 10% off your next purchase at Warstock-Cache-and-Carry.com. */;
 		
 		case 3:
-			return "COUP_MOSPORT";
+			return "COUP_MOSPORT" /* GXT: 10 percent off your next purchase at LegendaryMotorsport.net. */;
 		
 		case 4:
-			return "COUP_ELITAS";
+			return "COUP_ELITAS" /* GXT: 10 percent off your next purchase at ElitasTravel.com. */;
 		
 		case 5:
-			return "COUP_MEDSPENS";
+			return "COUP_MEDSPENS" /* GXT: 10 percent off your next medical expenses. */;
 		
 		case 6:
-			return "COUP_SPRUNK";
+			return "COUP_SPRUNK" /* GXT: one free can of Sprunk. */;
 		
 		case 7:
-			return "COUP_RESPRAY";
+			return "COUP_RESPRAY" /* GXT: one free respray. */;
 		
 		case 8:
 			return "COUP_XMAS2017";
@@ -3103,22 +3103,22 @@ char* func_81(bool bParam0)//Position - 0x3841
 			return "COUP_CAR2_XMAS2018";
 		
 		case 12:
-			return "COUP_CAS_ELITAS";
+			return "COUP_CAS_ELITAS" /* GXT: 10 percent off your next purchase at ElitasTravel.com. */;
 		
 		case 13:
-			return "COUP_CAS_DOCKTEASE";
+			return "COUP_CAS_DOCKTEASE" /* GXT: 10 percent off your next purchase at DockTease.com. */;
 		
 		case 14:
-			return "COUP_CAS_MOSPORT";
+			return "COUP_CAS_MOSPORT" /* GXT: 10 percent off your next purchase at LegendaryMotorsport.net. */;
 		
 		case 15:
-			return "COUP_CAS_SSASA";
+			return "COUP_CAS_SSASA" /* GXT: 10 percent off your next purchase at southernsanandreassuperautos.com. */;
 		
 		case 16:
-			return "COUP_CAS_WARSTOCK";
+			return "COUP_CAS_WARSTOCK" /* GXT: 10 percent off your next purchase at Warstock-Cache-and-Carry.com. */;
 		
 		case 17:
-			return "COUP_CAS_PANDM";
+			return "COUP_CAS_PANDM" /* GXT: 10 percent off your next purchase at pandmcycles.com. */;
 			break;
 		
 		default:
@@ -3953,12 +3953,12 @@ void func_120()//Position - 0x47D3
 	{
 		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("");
 		StringCopy(&cVar1, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_8746[1 /*6*/])), 64);
-		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253");
+		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253" /* GXT: New Contact */);
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, sVar2, &cVar1);
 	}
 	else
 	{
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_255");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_255" /* GXT: New Contact: ~n~~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_8746[1 /*6*/]));
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, "", 0);
 	}
@@ -6361,7 +6361,7 @@ void func_220()//Position - 0x7538
 	iVar0 = PLAYER::GET_PLAYERS_LAST_VEHICLE();
 	if (VEHICLE::IS_VEHICLE_DRIVEABLE(iVar0, false))
 	{
-		AUDIO::PLAY_SOUND_FROM_ENTITY(-1, "Radio_Off", iVar0, "TAXI_SOUNDS", false, 0);
+		AUDIO::PLAY_SOUND_FROM_ENTITY(-1, "Radio_Off" /* GXT: Off */, iVar0, "TAXI_SOUNDS", false, 0);
 	}
 }
 
@@ -8705,7 +8705,7 @@ int func_307(var uParam0)//Position - 0xA7F8
 		uParam0->f_8 = func_163(uParam0->f_3, 0, 0);
 		HUD::SET_GPS_FLAGS(1, 0f);
 		HUD::SET_BLIP_ROUTE(uParam0->f_8, true);
-		HUD::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_8, "TAXI_BLIP_PASS");
+		HUD::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_8, "TAXI_BLIP_PASS" /* GXT: Passenger */);
 		TASK::TASK_LOOK_AT_ENTITY(uParam0->f_3, PLAYER::PLAYER_PED_ID(), -1, 2048, 4);
 	}
 	return 1;
@@ -8815,7 +8815,7 @@ void func_313(bool bParam0)//Position - 0xAA62
 	STREAMING::REQUEST_ANIM_DICT("oddjobs@taxi@");
 	STREAMING::REQUEST_ANIM_DICT("oddjobs@towingcome_here");
 	STREAMING::REQUEST_ANIM_DICT("misscommon@response");
-	HUD::REQUEST_ADDITIONAL_TEXT("TAXI", 2);
+	HUD::REQUEST_ADDITIONAL_TEXT("TAXI" /* GXT: Taxi */, 2);
 	if (!func_152(Global_113386.f_19097, 128))
 	{
 		func_58(&(Global_113386.f_19097), 128);
@@ -14831,7 +14831,7 @@ void func_425(var uParam0, int iParam1)//Position - 0x12AB2
 	uParam0->f_102 = (func_426(uParam0->f_411) % uParam0->f_101);
 	uParam0->f_80 = 0;
 	uParam0->f_428 = func_2();
-	HUD::REQUEST_ADDITIONAL_TEXT("TAXI", 2);
+	HUD::REQUEST_ADDITIONAL_TEXT("TAXI" /* GXT: Taxi */, 2);
 }
 
 int func_426(int iParam0)//Position - 0x12B34
@@ -14844,47 +14844,47 @@ void func_427(var uParam0)//Position - 0x12B49
 	switch (func_57(uParam0))
 	{
 		case 0:
-			func_428(uParam0, "EXC", "Txm2", "Txm2aud");
+			func_428(uParam0, "EXC", "Txm2" /* GXT: Taxi - I Need Excitement! */, "Txm2aud");
 			uParam0->f_101 = 2;
 			break;
 		
 		case 1:
-			func_428(uParam0, "TIE", "Txm1", "txm1aud");
+			func_428(uParam0, "TIE", "Txm1" /* GXT: Taxi - Take It Easy */, "txm1aud");
 			uParam0->f_101 = 1;
 			break;
 		
 		case 2:
-			func_428(uParam0, "DED", "Txm3", "Txm3aud");
+			func_428(uParam0, "DED", "Txm3" /* GXT: Taxi - Deadline */, "Txm3aud");
 			uParam0->f_101 = 1;
 			break;
 		
 		case 3:
-			func_428(uParam0, "GYB", "Txm12", "Txm12au");
+			func_428(uParam0, "GYB", "Txm12" /* GXT: Taxi - Got Your Back */, "Txm12au");
 			uParam0->f_101 = 2;
 			break;
 		
 		case 4:
-			func_428(uParam0, "TTB", "Txm6", "Txm6aud");
+			func_428(uParam0, "TTB", "Txm6" /* GXT: Taxi - Take Me to the Best... */, "Txm6aud");
 			uParam0->f_101 = 2;
 			break;
 		
 		case 5:
-			func_428(uParam0, "CUI", "Txm8", "Txm8aud");
+			func_428(uParam0, "CUI", "Txm8" /* GXT: Taxi - I'll Cut You In */, "Txm8aud");
 			uParam0->f_101 = 1;
 			break;
 		
 		case 6:
-			func_428(uParam0, "GYN", "Txm9", "Txm9aud");
+			func_428(uParam0, "GYN", "Txm9" /* GXT: Taxi - Got You Now */, "Txm9aud");
 			uParam0->f_101 = 1;
 			break;
 		
 		case 7:
-			func_428(uParam0, "TCC", "Txm10", "Txm10au");
+			func_428(uParam0, "TCC", "Txm10" /* GXT: Taxi - Clown Car */, "Txm10au");
 			uParam0->f_101 = 2;
 			break;
 		
 		case 8:
-			func_428(uParam0, "TFC", "Txm4", "Txm4aud");
+			func_428(uParam0, "TFC", "Txm4" /* GXT: Taxi - Follow That Car! */, "Txm4aud");
 			uParam0->f_101 = 1;
 			break;
 		

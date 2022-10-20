@@ -1807,31 +1807,31 @@ void func_65()//Position - 0x2091
 
 void func_66(var uParam0, int iParam1)//Position - 0x2120
 {
-	*uParam0 = "CWASH_RIDEHLP";
+	*uParam0 = "CWASH_RIDEHLP" /* GXT: Press ~INPUT_CONTEXT~ to use the Car Wash. The cost is $~1~. */;
 	uParam0->f_1 = "";
-	uParam0->f_3 = "CWASH_NOWAY";
-	uParam0->f_4 = "CWASH_WANTED";
-	uParam0->f_5 = "CWASH_CARBROKE";
-	uParam0->f_6 = "CWASH_BLOCKED";
-	uParam0->f_7 = "CWASH_WRONGWAY";
-	uParam0->f_8 = "CWASH_UPSIDEDO";
+	uParam0->f_3 = "CWASH_NOWAY" /* GXT: This vehicle cannot be used with the Car Wash. */;
+	uParam0->f_4 = "CWASH_WANTED" /* GXT: You can't use the Car Wash while Wanted. */;
+	uParam0->f_5 = "CWASH_CARBROKE" /* GXT: This vehicle is too damaged to be used with the Car Wash. */;
+	uParam0->f_6 = "CWASH_BLOCKED" /* GXT: The Car Wash is blocked. Please come back later. */;
+	uParam0->f_7 = "CWASH_WRONGWAY" /* GXT: Your vehicle needs to be pointing towards the Car Wash. */;
+	uParam0->f_8 = "CWASH_UPSIDEDO" /* GXT: Your vehicle needs to be upright to use the Car Wash. */;
 	uParam0->f_16 = iParam1;
 	if (!Global_78319)
 	{
-		uParam0->f_2 = "CWASH_NOMONEY";
+		uParam0->f_2 = "CWASH_NOMONEY" /* GXT: You do not have enough money. It costs $~1~ to use the Car Wash. */;
 		return;
 	}
 	if (MISC::IS_PS3_VERSION() || func_68())
 	{
-		uParam0->f_2 = "CWASH_POOR_PSN";
+		uParam0->f_2 = "CWASH_POOR_PSN" /* GXT: It costs $~1~ to use the Car Wash.~n~You can buy additional GTA dollars from PlayStation®Store in the Pause Menu. */;
 	}
 	else if (MISC::IS_XBOX360_VERSION() || func_67())
 	{
-		uParam0->f_2 = "CWASH_POOR_XBX";
+		uParam0->f_2 = "CWASH_POOR_XBX" /* GXT: It costs $~1~ to use the Car Wash.~n~You can buy additional GTA dollars from the Xbox Store in the Pause Menu. */;
 	}
 	else
 	{
-		uParam0->f_2 = "CWASH_POOR_STD";
+		uParam0->f_2 = "CWASH_POOR_STD" /* GXT: It costs $~1~ to use the Car Wash.~n~You can buy additional GTA dollars from the Store in the Pause Menu. */;
 	}
 }
 

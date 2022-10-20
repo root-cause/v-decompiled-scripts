@@ -285,56 +285,56 @@ int func_1(var uParam0)//Position - 0x188
 			break;
 		
 		case 2:
-			func_16(&iVar0, "PM_UCON_T21", func_18(31, 0, 0));
-			func_16(&iVar0, "PM_UCON_T22", func_18(32, 0, 0));
-			func_16(&iVar0, "PM_UCON_T0", func_18(1, 0, 0));
-			func_16(&iVar0, "PM_UCON_T1", func_18(2, 0, 0));
-			func_16(&iVar0, "PM_UCON_T2", func_18(21, 0, 0));
-			func_16(&iVar0, "PM_UCON_T3", func_18(59, 0, 0));
-			func_16(&iVar0, "PM_UCON_T4", func_18(30, 0, 0));
-			func_16(&iVar0, "PM_UCON_T6", func_18(1, 0, 0));
-			func_16(&iVar0, "PM_UCON_T5", func_18(90, 0, 0));
-			func_16(&iVar0, "PM_UCON_T8", func_18(13, 0, 0));
-			func_16(&iVar0, "PM_UCON_T7", func_18(22, 0, 0));
-			func_16(&iVar0, "PM_UCON_T9", func_18(60, 0, 0));
-			func_16(&iVar0, "PM_UCON_T11", func_18(23, 0, 0));
-			func_16(&iVar0, "PM_UCON_T10", func_18(76, 0, 0));
-			func_16(&iVar0, "PM_UCON_T15", func_18(15, 0, 0));
-			func_16(&iVar0, "PM_UCON_T14", func_18(14, 0, 0));
-			func_16(&iVar0, "PM_UCON_T13", func_18(11, 0, 0));
-			func_16(&iVar0, "PM_UCON_T38", func_18(122, 0, 0));
-			func_16(&iVar0, "PM_UCON_T16", func_18(27, 0, 0));
-			func_16(&iVar0, "PM_UCON_T12", func_18(12, 0, 0));
-			func_16(&iVar0, "PM_UCON_T43", func_18(4, 0, 0));
-			func_16(&iVar0, "PM_UCON_T17", func_18(19, 0, 0));
-			func_16(&iVar0, "PM_UCON_T18", func_18(29, 0, 0));
-			func_16(&iVar0, "PM_UCON_T19", func_18(8, 0, 0));
-			func_16(&iVar0, "PM_UCON_T20", func_18(61, 0, 0));
-			func_16(&iVar0, "PM_UCON_T42", func_18(119, 0, 0));
-			func_16(&iVar0, "PM_UCON_T49", func_18(96, 0, 0));
-			func_16(&iVar0, "PM_UCON_T41", func_18(127, 0, 0));
-			func_16(&iVar0, "PM_UCON_T39", func_18(126, 0, 0));
-			func_16(&iVar0, "PM_UCON_T48", func_18(78, 0, 0));
-			func_16(&iVar0, "PM_UCON_T40", func_18(124, 0, 0));
-			func_16(&iVar0, "PM_UCON_T44", func_18(103, 0, 0));
-			func_16(&iVar0, "PM_UCON_T23", func_18(3, 0, 0));
-			func_16(&iVar0, "PM_UCON_T24", func_18(74, 0, 0));
-			func_16(&iVar0, "PM_UCON_T25", func_18(6, 0, 0));
-			func_16(&iVar0, "PM_UCON_T26", func_18(20, 0, 0));
-			func_16(&iVar0, "PM_UCON_T27", func_18(62, 0, 0));
-			func_16(&iVar0, "PM_UCON_T28", func_18(65, 0, 0));
-			func_16(&iVar0, "PM_UCON_T29", func_18(63, 0, 0));
-			func_16(&iVar0, "PM_UCON_T45", func_18(104, 0, 0));
-			func_16(&iVar0, "PM_UCON_T30", func_18(77, 0, 0));
-			func_16(&iVar0, "PM_UCON_T46", func_18(98, 0, 0));
-			func_16(&iVar0, "PM_UCON_T31", func_18(81, 0, 0));
-			func_16(&iVar0, "PM_UCON_T32", func_18(75, 0, 0));
-			func_16(&iVar0, "PM_UCON_T33", func_18(95, 0, 0));
-			func_16(&iVar0, "PM_UCON_T47", func_18(105, 0, 0));
-			func_16(&iVar0, "PM_UCON_T35", func_18(64, 0, 0));
-			func_16(&iVar0, "PM_UCON_T34", func_18(67, 0, 0));
-			func_16(&iVar0, "PM_UCON_T37", func_9(func_11(PLAYER::PLAYER_ID(), 1), 0) >= 100);
-			func_16(&iVar0, "PM_UCON_T36", func_9(func_11(PLAYER::PLAYER_ID(), 1), 0) >= func_8(4, 170));
+			func_16(&iVar0, "PM_UCON_T21" /* GXT: Crate Drop */, func_18(31, 0, 0));
+			func_16(&iVar0, "PM_UCON_T22" /* GXT: Impromptu Race */, func_18(32, 0, 0));
+			func_16(&iVar0, "PM_UCON_T0" /* GXT: Deathmatch (from Rank 1) */, func_18(1, 0, 0));
+			func_16(&iVar0, "PM_UCON_T1" /* GXT: Race (from Rank 1) */, func_18(2, 0, 0));
+			func_16(&iVar0, "PM_UCON_T2" /* GXT: Stunt Jumps (from Rank 2) */, func_18(21, 0, 0));
+			func_16(&iVar0, "PM_UCON_T3" /* GXT: Car Mod Shop (from Rank 3) */, func_18(59, 0, 0));
+			func_16(&iVar0, "PM_UCON_T4" /* GXT: Hold Ups (from Rank 3) */, func_18(30, 0, 0));
+			func_16(&iVar0, "PM_UCON_T6" /* GXT: One on One Deathmatch (from Rank 3) */, func_18(1, 0, 0));
+			func_16(&iVar0, "PM_UCON_T5" /* GXT: Pegasus (from Rank 3) */, func_18(90, 0, 0));
+			func_16(&iVar0, "PM_UCON_T8" /* GXT: Shooting Range (from Rank 3) */, func_18(13, 0, 0));
+			func_16(&iVar0, "PM_UCON_T7" /* GXT: Shops (from Rank 3) */, func_18(22, 0, 0));
+			func_16(&iVar0, "PM_UCON_T9" /* GXT: Garages (from Rank 5) */, func_18(60, 0, 0));
+			func_16(&iVar0, "PM_UCON_T11" /* GXT: Movies (from Rank 5) */, func_18(23, 0, 0));
+			func_16(&iVar0, "PM_UCON_T10" /* GXT: Personal Vehicle Delivery (from Rank 5) */, func_18(76, 0, 0));
+			func_16(&iVar0, "PM_UCON_T15" /* GXT: Arm Wrestling (from Rank 6) */, func_18(15, 0, 0));
+			func_16(&iVar0, "PM_UCON_T14" /* GXT: Darts (from Rank 6) */, func_18(14, 0, 0));
+			func_16(&iVar0, "PM_UCON_T13" /* GXT: Golf (from Rank 6) */, func_18(11, 0, 0));
+			func_16(&iVar0, "PM_UCON_T38" /* GXT: San Andreas Flight School (from Rank 6) */, func_18(122, 0, 0));
+			func_16(&iVar0, "PM_UCON_T16" /* GXT: Strip Club (from Rank 6) */, func_18(27, 0, 0));
+			func_16(&iVar0, "PM_UCON_T12" /* GXT: Tennis (from Rank 6) */, func_18(12, 0, 0));
+			func_16(&iVar0, "PM_UCON_T43" /* GXT: Captures (From Rank 8) */, func_18(4, 0, 0));
+			func_16(&iVar0, "PM_UCON_T17" /* GXT: Import/Export (from Rank 8) */, func_18(19, 0, 0));
+			func_16(&iVar0, "PM_UCON_T18" /* GXT: Bounties (from Rank 10) */, func_18(29, 0, 0));
+			func_16(&iVar0, "PM_UCON_T19" /* GXT: Parachuting (from Rank 11) */, func_18(8, 0, 0));
+			func_16(&iVar0, "PM_UCON_T20" /* GXT: Ammo Drop (from Rank 12) */, func_18(61, 0, 0));
+			func_16(&iVar0, "PM_UCON_T42" /* GXT: Cops Turn Blind Eye (From Rank 12) */, func_18(119, 0, 0));
+			func_16(&iVar0, "PM_UCON_T49" /* GXT: Heists (from Rank 12) */, func_18(96, 0, 0));
+			func_16(&iVar0, "PM_UCON_T41" /* GXT: Destroy Vehicle (from Rank 15) */, func_18(127, 0, 0));
+			func_16(&iVar0, "PM_UCON_T39" /* GXT: Distract Cops (from Rank 15) */, func_18(126, 0, 0));
+			func_16(&iVar0, "PM_UCON_T48" /* GXT: Daily Objectives (from Rank 15) */, func_18(78, 0, 0));
+			func_16(&iVar0, "PM_UCON_T40" /* GXT: Plane Takedown (from Rank 15) */, func_18(124, 0, 0));
+			func_16(&iVar0, "PM_UCON_T44" /* GXT: Locate a Car (From Rank 15) */, func_18(103, 0, 0));
+			func_16(&iVar0, "PM_UCON_T23" /* GXT: Survival (from Rank 15) */, func_18(3, 0, 0));
+			func_16(&iVar0, "PM_UCON_T24" /* GXT: Bull Shark Testosterone (from Rank 17) */, func_18(74, 0, 0));
+			func_16(&iVar0, "PM_UCON_T25" /* GXT: Gang Attack (from Rank 18) */, func_18(6, 0, 0));
+			func_16(&iVar0, "PM_UCON_T26" /* GXT: Armored Truck (from Rank 19) */, func_18(20, 0, 0));
+			func_16(&iVar0, "PM_UCON_T27" /* GXT: Backup Helicopter (from Rank 20) */, func_18(62, 0, 0));
+			func_16(&iVar0, "PM_UCON_T28" /* GXT: Remove Wanted Level (from Rank 21) */, func_18(65, 0, 0));
+			func_16(&iVar0, "PM_UCON_T29" /* GXT: Boat Pickup (from Rank 25) */, func_18(63, 0, 0));
+			func_16(&iVar0, "PM_UCON_T45" /* GXT: Locate a Boat (From Rank 25) */, func_18(104, 0, 0));
+			func_16(&iVar0, "PM_UCON_T30" /* GXT: Helicopter Pickup (from Rank 30) */, func_18(77, 0, 0));
+			func_16(&iVar0, "PM_UCON_T46" /* GXT: Locate a Helicopter (From Rank 35) */, func_18(98, 0, 0));
+			func_16(&iVar0, "PM_UCON_T31" /* GXT: Send Mercenaries (from Rank 35) */, func_18(81, 0, 0));
+			func_16(&iVar0, "PM_UCON_T32" /* GXT: Off the Radar (from Rank 40) */, func_18(75, 0, 0));
+			func_16(&iVar0, "PM_UCON_T33" /* GXT: Reveal Players (from Rank 40) */, func_18(95, 0, 0));
+			func_16(&iVar0, "PM_UCON_T47" /* GXT: Locate a Plane (From Rank 45) */, func_18(105, 0, 0));
+			func_16(&iVar0, "PM_UCON_T35" /* GXT: Airstrike (from Rank 50) */, func_18(64, 0, 0));
+			func_16(&iVar0, "PM_UCON_T34" /* GXT: Mugger (from Rank 50) */, func_18(67, 0, 0));
+			func_16(&iVar0, "PM_UCON_T37" /* GXT: Benefactor Dubsta 6x6 Vehicle (from Rank 100) */, func_9(func_11(PLAYER::PLAYER_ID(), 1), 0) >= 100);
+			func_16(&iVar0, "PM_UCON_T36" /* GXT: Gold Metal Vehicle Resprays (from Rank 100) */, func_9(func_11(PLAYER::PLAYER_ID(), 1), 0) >= func_8(4, 170));
 			break;
 	}
 	if (iVar0 > 16)
@@ -762,20 +762,20 @@ void func_17(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4, 
 		{
 			if (iParam6 == 0)
 			{
-				func_6("PM_UJOB_YES");
+				func_6("PM_UJOB_YES" /* GXT: Yes */);
 			}
 			else
 			{
-				func_6("PM_UCON_ULK");
+				func_6("PM_UCON_ULK" /* GXT: Unlocked */);
 			}
 		}
 		else if (iParam6 == 0)
 		{
-			func_6("PM_UJOB_NO");
+			func_6("PM_UJOB_NO" /* GXT: No */);
 		}
 		else
 		{
-			func_6("PM_UCON_LCK");
+			func_6("PM_UCON_LCK" /* GXT: Locked */);
 		}
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
@@ -1344,7 +1344,7 @@ void func_37(int iParam0, int iParam1, int iParam2)//Position - 0x14AC
 	
 	StringCopy(&Var0, "PM_UGEN_T", 16);
 	StringIntConCat(&Var0, *iParam0, 16);
-	func_38(1, *iParam0, iLocal_133, *iParam0, &Var0, "PM_UGEN_NUM", iParam1, iParam2);
+	func_38(1, *iParam0, iLocal_133, *iParam0, &Var0, "PM_UGEN_NUM" /* GXT: ~1~/~1~ */, iParam1, iParam2);
 	*iParam0++;
 }
 
@@ -1580,9 +1580,9 @@ void func_45()//Position - 0x18E4
 	HUD::GET_MENU_LAYOUT_CHANGED_EVENT_DETAILS(&uVar0, &uVar1, &uVar2);
 	func_43(0);
 	iLocal_138 = 0;
-	func_47(0, 0, iLocal_132, 0, 1, "PM_UL_D0", 0, 0, 0);
-	func_47(0, 1, iLocal_132, 1, 1, "PM_UL_D1", 0, 0, 0);
-	func_47(0, 2, iLocal_132, 2, 1, "PM_UL_D2", 0, 0, 0);
+	func_47(0, 0, iLocal_132, 0, 1, "PM_UL_D0" /* GXT: General */, 0, 0, 0);
+	func_47(0, 1, iLocal_132, 1, 1, "PM_UL_D1" /* GXT: Progress */, 0, 0, 0);
+	func_47(0, 2, iLocal_132, 2, 1, "PM_UL_D2" /* GXT: Content */, 0, 0, 0);
 	func_2(0);
 	func_46(2);
 	func_46(3);

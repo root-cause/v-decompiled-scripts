@@ -1913,7 +1913,7 @@ void func_13()//Position - 0x666
 							{
 								if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 								{
-									func_168("AMRC_ENTER", Global_262145.f_8252, -1);
+									func_168("AMRC_ENTER" /* GXT: Press ~INPUT_CONTEXT~ to ride the Leviathan. The cost is $~1~. */, Global_262145.f_8252, -1);
 								}
 								Global_2815059.f_5193 = 1;
 								if (PAD::IS_CONTROL_JUST_PRESSED(0, 51))
@@ -2026,7 +2026,7 @@ void func_13()//Position - 0x666
 					{
 						if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 						{
-							func_58("AMRC_HELPTEXT", -1);
+							func_58("AMRC_HELPTEXT" /* GXT: Press ~INPUT_FRONTEND_X~ to raise your hands.~n~Scream into your headset to earn RP.~n~ */, -1);
 							MISC::SET_BIT(&uLocal_31, 3);
 						}
 					}
@@ -3345,7 +3345,7 @@ void func_60()//Position - 0x2330
 	{
 		if (NETWORK::NETWORK_PLAYER_HAS_HEADSET(PLAYER::PLAYER_ID()))
 		{
-			func_120(iLocal_32, 300, "AMRC_SCRM_L", 1, -1, 2, -1082130432, -1082130432, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, -1, 0, -1, -1082130432, -1082130432, 0, 1, 0, 0, 1, -1, 0, -1, 1);
+			func_120(iLocal_32, 300, "AMRC_SCRM_L" /* GXT: SCREAMING */, 1, -1, 2, -1082130432, -1082130432, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, -1, 0, -1, -1082130432, -1082130432, 0, 1, 0, 0, 1, -1, 0, -1, 1);
 			fLocal_34 = NETWORK::NETWORK_GET_PLAYER_LOUDNESS(PLAYER::PLAYER_ID());
 			if (fLocal_34 > 0f)
 			{
@@ -3353,7 +3353,7 @@ void func_60()//Position - 0x2330
 				if (iLocal_32 >= 300)
 				{
 					func_119(1);
-					func_61(0, PLAYER::PLAYER_PED_ID(), "AMRC_SCRM_R", joaat("XPTYPE_SKILL"), joaat("XPCATEGORY_COMPLETED_ROLLERCOASTER"), Global_262145.f_8254, 1, -1, 0, 0, 0);
+					func_61(0, PLAYER::PLAYER_PED_ID(), "AMRC_SCRM_R" /* GXT: ~g~+~1~ Screamed. */, joaat("XPTYPE_SKILL"), joaat("XPCATEGORY_COMPLETED_ROLLERCOASTER"), Global_262145.f_8254, 1, -1, 0, 0, 0);
 					iLocal_35 = (iLocal_35 + Global_262145.f_8254);
 					iLocal_32 = 0;
 				}
@@ -5292,28 +5292,28 @@ void func_123()//Position - 0x48AA
 					{
 						if (BitTest(Local_1464[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2, 1))
 						{
-							func_133(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 203, true), "AMRC_HANDSLOWER", &uLocal_725, 0);
+							func_133(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 203, true), "AMRC_HANDSLOWER" /* GXT: Lower Hands */, &uLocal_725, 0);
 						}
 						else
 						{
-							func_133(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 203, true), "AMRC_HANDSRAISE", &uLocal_725, 0);
+							func_133(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 203, true), "AMRC_HANDSRAISE" /* GXT: Raise Hands */, &uLocal_725, 0);
 						}
 					}
 					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 					{
-						func_133(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 80, true), "AMRC_CINEMATIC", &uLocal_725, 0);
+						func_133(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 80, true), "AMRC_CINEMATIC" /* GXT: Cinematic Camera */, &uLocal_725, 0);
 					}
 					else
 					{
-						func_133(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 202, true), "AMRC_CINEMATIC", &uLocal_725, 0);
+						func_133(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 202, true), "AMRC_CINEMATIC" /* GXT: Cinematic Camera */, &uLocal_725, 0);
 					}
 					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 					{
-						func_133(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 0, true), "AMRC_CHANGEVIEW", &uLocal_725, 0);
+						func_133(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 0, true), "AMRC_CHANGEVIEW" /* GXT: Change View */, &uLocal_725, 0);
 					}
 					else
 					{
-						func_133(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "AMRC_CHANGEVIEW", &uLocal_725, 0);
+						func_133(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "AMRC_CHANGEVIEW" /* GXT: Change View */, &uLocal_725, 0);
 					}
 					iLocal_723 = 0;
 				}
@@ -5922,11 +5922,11 @@ void func_148()//Position - 0x5633
 	{
 		if ((30000 - func_8(&(Local_1462.f_93), 0, 0)) >= 0)
 		{
-			func_149((30000 - func_8(&(Local_1462.f_93), 0, 0)), "AMRC_TIMER", 0, 0, -1, 0, 13, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
+			func_149((30000 - func_8(&(Local_1462.f_93), 0, 0)), "AMRC_TIMER" /* GXT: ROLLERCOASTER */, 0, 0, -1, 0, 13, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 		}
 		else
 		{
-			func_149(0, "AMRC_TIMER", 0, 0, -1, 0, 13, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
+			func_149(0, "AMRC_TIMER" /* GXT: ROLLERCOASTER */, 0, 0, -1, 0, 13, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 		}
 	}
 }
@@ -6019,7 +6019,7 @@ void func_150(int iParam0, int iParam1, int iParam2)//Position - 0x5841
 		if (!Global_100493.f_1458 && !NETWORK::IS_COMMERCE_STORE_OPEN())
 		{
 			iVar0 = 18;
-			HUD::SET_WARNING_MESSAGE_WITH_HEADER("BRSCRWTEX", "BRDISTEX", iVar0, "BRSHETEX", false, -1, 0, 0, true, 0);
+			HUD::SET_WARNING_MESSAGE_WITH_HEADER("BRSCRWTEX" /* GXT: Alert */, "BRDISTEX" /* GXT: You have insufficient funds. You can add GTA Dollars to your in-game account. */, iVar0, "BRSHETEX" /* GXT: Would you like to visit the Store? */, false, -1, 0, 0, true, 0);
 			Global_2726592 = iParam1;
 			Global_100493.f_1458 = 1;
 			Global_100493.f_1459 = iParam2;

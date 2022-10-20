@@ -4978,18 +4978,18 @@ int func_125(var uParam0)//Position - 0x4146
 				if (BitTest(uParam0->f_5, 13) || PAD::HAVE_CONTROLS_CHANGED(0))
 				{
 					func_138(&(uParam0->f_23));
-					func_137(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 202, true), "HUD_INPUT3", &(uParam0->f_23), 0);
-					func_137(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 203, true), "ORB_CAN_RE", &(uParam0->f_23), 0);
+					func_137(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 202, true), "HUD_INPUT3" /* GXT: Back */, &(uParam0->f_23), 0);
+					func_137(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 203, true), "ORB_CAN_RE" /* GXT: Reset */, &(uParam0->f_23), 0);
 					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 					{
-						func_137(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, iVar3, true), "ORB_CAN_ZOOMO", &(uParam0->f_23), 0);
-						func_137(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, iVar2, true), "ORB_CAN_ZOOMI", &(uParam0->f_23), 0);
+						func_137(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, iVar3, true), "ORB_CAN_ZOOMO" /* GXT: Zoom Out */, &(uParam0->f_23), 0);
+						func_137(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, iVar2, true), "ORB_CAN_ZOOMI" /* GXT: Zoom In */, &(uParam0->f_23), 0);
 					}
 					else
 					{
-						func_137(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, iVar2, true), "ORB_CAN_ZOOM", &(uParam0->f_23), 0);
+						func_137(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, iVar2, true), "ORB_CAN_ZOOM" /* GXT: Zoom */, &(uParam0->f_23), 0);
 					}
-					func_137(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 24, true), "ORB_CAN_FIRE", &(uParam0->f_23), 0);
+					func_137(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 24, true), "ORB_CAN_FIRE" /* GXT: Fire */, &(uParam0->f_23), 0);
 					MISC::CLEAR_BIT(&(uParam0->f_5), 13);
 				}
 				Var5 = { func_136() };
@@ -6167,7 +6167,7 @@ int func_220(var uParam0)//Position - 0x5CA7
 	{
 		if (uParam0->f_18 == -1)
 		{
-			func_226(&(uParam0->f_18), 4, "ORB_CAN_START", 0, 0, 0, 0);
+			func_226(&(uParam0->f_18), 4, "ORB_CAN_START" /* GXT: Press ~INPUT_CONTEXT~ to use the Orbital Cannon. */, 0, 0, 0, 0);
 		}
 		else if (func_225(uParam0->f_18, 1))
 		{

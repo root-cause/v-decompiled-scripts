@@ -2308,56 +2308,56 @@ char* func_61()//Position - 0x2314
 		case joaat("prop_bong_01"):
 			if (bLocal_34)
 			{
-				sVar0 = "SA_BONG2";
+				sVar0 = "SA_BONG2" /* GXT: Press ~INPUT_CONTEXT~ to take a hit from the bong. */;
 			}
 			else
 			{
-				sVar0 = "SA_BONG";
+				sVar0 = "SA_BONG" /* GXT: Press ~INPUT_CONTEXT~ to take a hit from Jimmy's bong. */;
 			}
 			break;
 		
 		case joaat("prop_cigar_03"):
-			sVar0 = "SA_CIGAR";
+			sVar0 = "SA_CIGAR" /* GXT: Press ~INPUT_CONTEXT~ to smoke a cigar. */;
 			break;
 		
 		case joaat("prop_cs_beer_bot_01"):
-			sVar0 = "SA_BEER";
+			sVar0 = "SA_BEER" /* GXT: Press ~INPUT_CONTEXT~ to drink a beer. */;
 			break;
 		
 		case joaat("p_cs_joint_01"):
-			sVar0 = "SA_SPLFF";
+			sVar0 = "SA_SPLFF" /* GXT: Press ~INPUT_CONTEXT~ to smoke a joint. */;
 			break;
 		
 		case joaat("p_tumbler_02_s1"):
-			sVar0 = "SA_WHSKY";
+			sVar0 = "SA_WHSKY" /* GXT: Press ~INPUT_CONTEXT~ to drink whiskey. */;
 			break;
 		
 		case joaat("p_tumbler_cs2_s"):
-			sVar0 = "SA_WHSKY";
+			sVar0 = "SA_WHSKY" /* GXT: Press ~INPUT_CONTEXT~ to drink whiskey. */;
 			break;
 		
 		case joaat("p_tumbler_cs2_s_trev"):
-			sVar0 = "SA_WHSKY";
+			sVar0 = "SA_WHSKY" /* GXT: Press ~INPUT_CONTEXT~ to drink whiskey. */;
 			break;
 		
 		case joaat("prop_rolled_sock_02"):
-			sVar0 = "SA_GAS";
+			sVar0 = "SA_GAS" /* GXT: Press ~INPUT_CONTEXT~ to huff gas. */;
 			break;
 		
 		case joaat("prop_mr_raspberry_01"):
-			sVar0 = "SA_MRJAM";
+			sVar0 = "SA_MRJAM" /* GXT: Press ~INPUT_CONTEXT~ to play with Mr. Raspberry Jam. */;
 			break;
 		
 		case joaat("prop_radio_01"):
-			sVar0 = "SA_BEER";
+			sVar0 = "SA_BEER" /* GXT: Press ~INPUT_CONTEXT~ to drink a beer. */;
 			break;
 		
 		case joaat("p_w_grass_gls_s"):
-			sVar0 = "SA_WHEAT";
+			sVar0 = "SA_WHEAT" /* GXT: Press ~INPUT_CONTEXT~ to drink green juice. */;
 			break;
 		
 		case joaat("p_wine_glass_s"):
-			sVar0 = "SA_WINE";
+			sVar0 = "SA_WINE" /* GXT: Press ~INPUT_CONTEXT~ to drink some wine. */;
 			break;
 		
 		default:

@@ -167,11 +167,11 @@ void __EntryFunction__()//Position - 0x0
 						{
 							if (!VEHICLE::IS_THIS_MODEL_A_BIKE(Local_83.f_10))
 							{
-								func_204("DSV_HELP1", -1);
+								func_204("DSV_HELP1" /* GXT: A target vehicle ~HUD_COLOUR_RED~~BLIP_GANG_VEHICLE~ ~s~has been located in Los Santos. Destroy it. */, -1);
 							}
 							else
 							{
-								func_204("DSV_HELP2", -1);
+								func_204("DSV_HELP2" /* GXT: A target vehicle ~HUD_COLOUR_RED~~BLIP_GANG_BIKE~ ~s~has been located in Los Santos. Destroy it. */, -1);
 							}
 						}
 					}
@@ -1784,14 +1784,14 @@ void func_51()//Position - 0x1E5A
 				{
 					func_201(2106, 1, -1);
 					func_198(68, 1, -1);
-					func_148(0, PLAYER::PLAYER_PED_ID(), "XPT_KAIE", joaat("XPTYPE_SKILL"), joaat("XPCATEGORY_COMPLETE_DESTROY_VEH"), Global_262145.f_8567, 1, -1, 0, 0, 0);
+					func_148(0, PLAYER::PLAYER_PED_ID(), "XPT_KAIE" /* GXT: ~g~+~1~ ~a~:~s~ Killed Hostile */, joaat("XPTYPE_SKILL"), joaat("XPCATEGORY_COMPLETE_DESTROY_VEH"), Global_262145.f_8567, 1, -1, 0, 0, 0);
 					if (func_14())
 					{
-						func_135(86, "DSV_PASS0", 0, 0, -99);
+						func_135(86, "DSV_PASS0" /* GXT: Oh shit! All of a sudden the price of molly's gone up.  That's tight work. */, 0, 0, -99);
 					}
 					else
 					{
-						func_135(86, "DSV_PASS1", 0, 0, -99);
+						func_135(86, "DSV_PASS1" /* GXT: Haha. Them idiots had a note on that stash. They goin be paying that for a long time. You real, you know that. */, 0, 0, -99);
 					}
 					iVar1 = Global_262145.f_8568;
 					Global_2727753 = iVar1;
@@ -2677,7 +2677,7 @@ void func_76(var uParam0, int iParam1)//Position - 0x3062
 						func_125(&iVar0, 0);
 						if (iParam1 == 1)
 						{
-							func_81("GB_BCUT_TICK1", func_128(), iVar0, 0, 0, 1);
+							func_81("GB_BCUT_TICK1" /* GXT: You paid ~a~ ~s~a $~1~ ~s~cut. */, func_128(), iVar0, 0, 0, 1);
 						}
 						func_80(20);
 						func_77(func_128(), iVar0, 1);
@@ -5750,7 +5750,7 @@ void func_207()//Position - 0x66DF
 			HUD::SET_BLIP_COLOUR(iLocal_89, 1);
 			HUD::SET_BLIP_FLASH_TIMER(iLocal_89, 7000);
 			HUD::SET_BLIP_PRIORITY(iLocal_89, 6);
-			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_89, "DSV_BLIP");
+			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_89, "DSV_BLIP" /* GXT: Target Vehicle */);
 			if (func_205())
 			{
 				HUD::SET_BLIP_DISPLAY(iLocal_89, 0);

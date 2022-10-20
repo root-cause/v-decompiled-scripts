@@ -210,7 +210,7 @@ void func_1()//Position - 0x78
 	}
 	else if (bVar0)
 	{
-		StringCopy(&(Local_41.f_1), "HUD_TRANSP", 64);
+		StringCopy(&(Local_41.f_1), "HUD_TRANSP" /* GXT: Transaction Pending */, 64);
 		func_2(&Local_41, func_4(&Local_41));
 	}
 	else

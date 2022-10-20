@@ -1291,43 +1291,43 @@ char* func_45(int iParam0)//Position - 0xFAD
 	switch (iParam0)
 	{
 		case 3:
-			return "ABH_MNG_STOCK_SUPP";
+			return "ABH_MNG_STOCK_SUPP" /* GXT: MANAGE STOCK & SUPPLIES */;
 			break;
 		
 		case 4:
-			return "ABH_MNG_STOCK_SUPP";
+			return "ABH_MNG_STOCK_SUPP" /* GXT: MANAGE STOCK & SUPPLIES */;
 			break;
 		
 		case 6:
-			return "ABH_MNG_STOCK_SUPP";
+			return "ABH_MNG_STOCK_SUPP" /* GXT: MANAGE STOCK & SUPPLIES */;
 			break;
 		
 		case 5:
-			return "ABH_MNG_STOCK_SUPP";
+			return "ABH_MNG_STOCK_SUPP" /* GXT: MANAGE STOCK & SUPPLIES */;
 			break;
 		
 		case 7:
-			return "ABH_MNG_STOCK_SUPP";
+			return "ABH_MNG_STOCK_SUPP" /* GXT: MANAGE STOCK & SUPPLIES */;
 			break;
 		
 		case 2:
-			return "ABH_MNG_STOCK_SUPP";
+			return "ABH_MNG_STOCK_SUPP" /* GXT: MANAGE STOCK & SUPPLIES */;
 			break;
 		
 		case 10:
-			return "ABH_MNG_STOCK";
+			return "ABH_MNG_STOCK" /* GXT: MANAGE STOCK */;
 			break;
 		
 		case 8:
-			return "ABH_MNG_VEH";
+			return "ABH_MNG_VEH" /* GXT: MANAGE VEHICLE STORAGE */;
 			break;
 		
 		case 1:
-			return "ABH_MNG_STOCK";
+			return "ABH_MNG_STOCK" /* GXT: MANAGE STOCK */;
 			break;
 		
 		case 9:
-			return "ABH_MNG";
+			return "ABH_MNG" /* GXT: MANAGE */;
 			break;
 	}
 	return "INVALID";
@@ -1385,43 +1385,43 @@ char* func_47(int iParam0)//Position - 0x10FD
 	switch (iParam0)
 	{
 		case 3:
-			return "ABH_BUS_GAK";
+			return "ABH_BUS_GAK" /* GXT: COCAINE LOCKUP */;
 			break;
 		
 		case 4:
-			return "ABH_BUS_METH";
+			return "ABH_BUS_METH" /* GXT: METH LAB */;
 			break;
 		
 		case 6:
-			return "ABH_BUS_CASH";
+			return "ABH_BUS_CASH" /* GXT: COUNTERFEIT CASH FACTORY */;
 			break;
 		
 		case 5:
-			return "ABH_BUS_WEED";
+			return "ABH_BUS_WEED" /* GXT: WEED FARM */;
 			break;
 		
 		case 7:
-			return "ABH_BUS_DOCS";
+			return "ABH_BUS_DOCS" /* GXT: DOCUMENT FORGERY OFFICE */;
 			break;
 		
 		case 2:
-			return "ABH_BUS_GUNS";
+			return "ABH_BUS_GUNS" /* GXT: GUNRUNNING SUPPLIES */;
 			break;
 		
 		case 10:
-			return "ABH_BUS_AIR";
+			return "ABH_BUS_AIR" /* GXT: AIR-FREIGHT CARGO */;
 			break;
 		
 		case 8:
-			return "ABH_BUS_VEH";
+			return "ABH_BUS_VEH" /* GXT: VEHICLE CARGO */;
 			break;
 		
 		case 1:
-			return "ABH_BUS_CLUB";
+			return "ABH_BUS_CLUB" /* GXT: NIGHTCLUB */;
 			break;
 		
 		case 9:
-			return "ABH_BUS_SC";
+			return "ABH_BUS_SC" /* GXT: SPECIAL CARGO */;
 			break;
 	}
 	return "INVALID";
@@ -1849,29 +1849,29 @@ char* func_67(int iParam0, var uParam1, bool bParam2)//Position - 0x1887
 			{
 				if (func_64(PLAYER::PLAYER_ID()))
 				{
-					return "ARC_HT_3C";
+					return "ARC_HT_3C" /* GXT: You need to be a VIP or Motorcycle Club President to manage this business.~n~Press ~INPUT_SCRIPT_RLEFT~ to start a Motorcycle Club. */;
 				}
 				else
 				{
-					return "ARC_HT_3D";
+					return "ARC_HT_3D" /* GXT: You need to be a CEO or Motorcycle Club President to manage this business.~n~Press ~INPUT_SCRIPT_RLEFT~ to start a Motorcycle Club. */;
 				}
 			}
 			else if (func_64(PLAYER::PLAYER_ID()))
 			{
-				return "ARC_HT_3B";
+				return "ARC_HT_3B" /* GXT: You need to be a CEO or Motorcycle Club President to manage this business.~n~Press ~INPUT_SCRIPT_RLEFT~ to register as a CEO. */;
 			}
 			else
 			{
-				return "ARC_HT_3";
+				return "ARC_HT_3" /* GXT: You need to be a VIP or Motorcycle Club President to manage this business.~n~Press ~INPUT_SCRIPT_RLEFT~ to register as a VIP. */;
 			}
 		}
 		else if (func_64(PLAYER::PLAYER_ID()))
 		{
-			return "ARC_HT_3NR";
+			return "ARC_HT_3NR" /* GXT: You need to be a CEO or Motorcycle Club President to manage this business. */;
 		}
 		else
 		{
-			return "ARC_HT_3NRB";
+			return "ARC_HT_3NRB" /* GXT: You need to be a VIP or Motorcycle Club President to manage this business. */;
 		}
 	}
 	else
@@ -1882,11 +1882,11 @@ char* func_67(int iParam0, var uParam1, bool bParam2)//Position - 0x1887
 				if (!func_68(PLAYER::PLAYER_ID(), 1) && func_70() < func_69())
 				{
 					*uParam1 = 1;
-					return "ARC_HT_1";
+					return "ARC_HT_1" /* GXT: You need to be a Motorcycle Club President to manage this business.~n~Press ~INPUT_SCRIPT_RLEFT~ to start a Motorcycle Club. */;
 				}
 				else
 				{
-					return "ARC_HT_1B";
+					return "ARC_HT_1B" /* GXT: You need to be a Motorcycle Club President to manage this business. */;
 				}
 				break;
 			
@@ -1896,20 +1896,20 @@ char* func_67(int iParam0, var uParam1, bool bParam2)//Position - 0x1887
 					*uParam1 = 1;
 					if (func_64(PLAYER::PLAYER_ID()))
 					{
-						return "ARC_HT_0";
+						return "ARC_HT_0" /* GXT: You need to be a CEO to manage this business.~n~Press ~INPUT_SCRIPT_RLEFT~ to register as a CEO. */;
 					}
 					else
 					{
-						return "ARC_HT_2";
+						return "ARC_HT_2" /* GXT: You need to be a VIP to manage this business.~n~Press ~INPUT_SCRIPT_RLEFT~ to register as a VIP. */;
 					}
 				}
 				else if (func_64(PLAYER::PLAYER_ID()))
 				{
-					return "ARC_HT_0B";
+					return "ARC_HT_0B" /* GXT: You need to be a CEO to manage this business. */;
 				}
 				else
 				{
-					return "ARC_HT_2B";
+					return "ARC_HT_2B" /* GXT: You need to be a VIP to manage this business. */;
 				}
 				break;
 			}
@@ -2266,11 +2266,11 @@ void func_91()//Position - 0x1EFF
 					{
 						if (func_63(PLAYER::PLAYER_ID()))
 						{
-							func_101("ARC_H_OV_3_T", "ARC_H_OV_3_MD", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+							func_101("ARC_H_OV_3_T" /* GXT: Cocaine Lockup */, "ARC_H_OV_3_MD" /* GXT: Purchase a Cocaine Lockup from the The Open Road site inside your clubhouse to manage it from the Master Control Terminal. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 						}
 						else
 						{
-							func_101("ARC_H_OV_3_T", "ARC_H_OV_3_MC", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+							func_101("ARC_H_OV_3_T" /* GXT: Cocaine Lockup */, "ARC_H_OV_3_MC" /* GXT: Purchase a Clubhouse from foreclosures.maze-bank.com and a Cocaine Lockup from The Open Road site to manage it from the Master Control Terminal. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 						}
 					}
 					else if (func_71(func_37(PLAYER::PLAYER_ID(), 4)))
@@ -2282,7 +2282,7 @@ void func_91()//Position - 0x1EFF
 					}
 					else
 					{
-						func_101("ARC_H_OV_3_T", "ARC_H_OV_3_M", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_101("ARC_H_OV_3_T" /* GXT: Cocaine Lockup */, "ARC_H_OV_3_M" /* GXT: Complete the setup for this business to be granted access. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					break;
 				
@@ -2291,11 +2291,11 @@ void func_91()//Position - 0x1EFF
 					{
 						if (func_63(PLAYER::PLAYER_ID()))
 						{
-							func_101("ARC_H_OV_3B_T", "ARC_H_OV_3B_MB", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+							func_101("ARC_H_OV_3B_T" /* GXT: Meth Lab */, "ARC_H_OV_3B_MB" /* GXT: Purchase a Meth Lab from the The Open Road site inside your clubhouse to manage it from the Master Control Terminal. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 						}
 						else
 						{
-							func_101("ARC_H_OV_3B_T", "ARC_H_OV_3B_M", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+							func_101("ARC_H_OV_3B_T" /* GXT: Meth Lab */, "ARC_H_OV_3B_M" /* GXT: Purchase a Clubhouse from foreclosures.maze-bank.com and a Meth Lab from The Open Road site to manage it from the Master Control Terminal. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 						}
 					}
 					else if (func_71(func_37(PLAYER::PLAYER_ID(), 3)))
@@ -2307,7 +2307,7 @@ void func_91()//Position - 0x1EFF
 					}
 					else
 					{
-						func_101("ARC_H_OV_3B_T", "ARC_H_OV_3_M", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_101("ARC_H_OV_3B_T" /* GXT: Meth Lab */, "ARC_H_OV_3_M" /* GXT: Complete the setup for this business to be granted access. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					break;
 				
@@ -2316,11 +2316,11 @@ void func_91()//Position - 0x1EFF
 					{
 						if (func_63(PLAYER::PLAYER_ID()))
 						{
-							func_101("ARC_H_OV_3C_T", "ARC_H_OV_3C_MB", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+							func_101("ARC_H_OV_3C_T" /* GXT: Counterfeit Cash Factory */, "ARC_H_OV_3C_MB" /* GXT: Purchase a Counterfeit Cash Factory from the The Open Road site inside your clubhouse to manage it from the Master Control Terminal. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 						}
 						else
 						{
-							func_101("ARC_H_OV_3C_T", "ARC_H_OV_3C_M", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+							func_101("ARC_H_OV_3C_T" /* GXT: Counterfeit Cash Factory */, "ARC_H_OV_3C_M" /* GXT: Purchase a Clubhouse from foreclosures.maze-bank.com and a Counterfeit Cash Factory from The Open Road site to manage it from the Master Control Terminal. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 						}
 					}
 					else if (func_71(func_37(PLAYER::PLAYER_ID(), 2)))
@@ -2332,7 +2332,7 @@ void func_91()//Position - 0x1EFF
 					}
 					else
 					{
-						func_101("ARC_H_OV_3C_T", "ARC_H_OV_3_M", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_101("ARC_H_OV_3C_T" /* GXT: Counterfeit Cash Factory */, "ARC_H_OV_3_M" /* GXT: Complete the setup for this business to be granted access. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					break;
 				
@@ -2341,11 +2341,11 @@ void func_91()//Position - 0x1EFF
 					{
 						if (func_63(PLAYER::PLAYER_ID()))
 						{
-							func_101("ARC_H_OV_3D_T", "ARC_H_OV_3D_MB", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+							func_101("ARC_H_OV_3D_T" /* GXT: Weed Farm */, "ARC_H_OV_3D_MB" /* GXT: Purchase a Weed Farm from the The Open Road site inside your clubhouse to manage it from the Master Control Terminal. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 						}
 						else
 						{
-							func_101("ARC_H_OV_3D_T", "ARC_H_OV_3D_M", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+							func_101("ARC_H_OV_3D_T" /* GXT: Weed Farm */, "ARC_H_OV_3D_M" /* GXT: Purchase a Clubhouse from foreclosures.maze-bank.com and a Weed Farm from The Open Road site to manage it from the Master Control Terminal. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 						}
 					}
 					else if (func_71(func_37(PLAYER::PLAYER_ID(), 1)))
@@ -2357,7 +2357,7 @@ void func_91()//Position - 0x1EFF
 					}
 					else
 					{
-						func_101("ARC_H_OV_3D_T", "ARC_H_OV_3_M", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_101("ARC_H_OV_3D_T" /* GXT: Weed Farm */, "ARC_H_OV_3_M" /* GXT: Complete the setup for this business to be granted access. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					break;
 				
@@ -2366,11 +2366,11 @@ void func_91()//Position - 0x1EFF
 					{
 						if (func_63(PLAYER::PLAYER_ID()))
 						{
-							func_101("ARC_H_OV_3E_T", "ARC_H_OV_3E_MB", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+							func_101("ARC_H_OV_3E_T" /* GXT: Document Forgery Office */, "ARC_H_OV_3E_MB" /* GXT: Purchase a Document Forgery Office from the The Open Road site inside your clubhouse to manage it from the Master Control Terminal. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 						}
 						else
 						{
-							func_101("ARC_H_OV_3E_T", "ARC_H_OV_3E_M", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+							func_101("ARC_H_OV_3E_T" /* GXT: Document Forgery Office */, "ARC_H_OV_3E_M" /* GXT: Purchase a Clubhouse from foreclosures.maze-bank.com and a Document Forgery Office from The Open Road site to manage it from the Master Control Terminal. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 						}
 					}
 					else if (func_71(func_37(PLAYER::PLAYER_ID(), 0)))
@@ -2382,14 +2382,14 @@ void func_91()//Position - 0x1EFF
 					}
 					else
 					{
-						func_101("ARC_H_OV_3E_T", "ARC_H_OV_3_M", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_101("ARC_H_OV_3E_T" /* GXT: Document Forgery Office */, "ARC_H_OV_3_M" /* GXT: Complete the setup for this business to be granted access. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					break;
 				
 				case 2:
 					if (!func_93(PLAYER::PLAYER_ID()))
 					{
-						func_101("ARC_H_OV_4_T", "ARC_H_OV_4_M", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_101("ARC_H_OV_4_T" /* GXT: Gunrunning Supplies */, "ARC_H_OV_4_M" /* GXT: Purchase a Bunker from foreclosures.maze-bank.com to manage it from the Master Control Terminal. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					else if (func_71(func_37(PLAYER::PLAYER_ID(), 5)))
 					{
@@ -2400,14 +2400,14 @@ void func_91()//Position - 0x1EFF
 					}
 					else
 					{
-						func_101("ARC_H_OV_4_T", "ARC_H_OV_3_M", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_101("ARC_H_OV_4_T" /* GXT: Gunrunning Supplies */, "ARC_H_OV_3_M" /* GXT: Complete the setup for this business to be granted access. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					break;
 				
 				case 10:
 					if (!func_15(PLAYER::PLAYER_ID()))
 					{
-						func_101("ARC_H_OV_5_T", "ARC_H_OV_5_M", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_101("ARC_H_OV_5_T" /* GXT: Air-Freight Cargo */, "ARC_H_OV_5_M" /* GXT: Purchase a Hangar from foreclosures.maze-bank.com to manage it from the Master Control Terminal. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					else if (func_92(PLAYER::PLAYER_ID()))
 					{
@@ -2418,7 +2418,7 @@ void func_91()//Position - 0x1EFF
 					}
 					else
 					{
-						func_101("ARC_H_OV_5_T", "HAPP_D1", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_101("ARC_H_OV_5_T" /* GXT: Air-Freight Cargo */, "HAPP_D1" /* GXT: Authentication must be granted by Ronald.Jakowski. Please progress with the Air-Freight Business setup. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					break;
 				
@@ -2427,11 +2427,11 @@ void func_91()//Position - 0x1EFF
 					{
 						if (func_64(PLAYER::PLAYER_ID()))
 						{
-							func_101("ARC_H_OV_7_T", "ARC_H_OV_7_MB", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+							func_101("ARC_H_OV_7_T" /* GXT: Vehicle Cargo */, "ARC_H_OV_7_MB" /* GXT: Purchase a Vehicle Warehouse from the SecuroServ terminal in your office to manage it from the Master Control Terminal. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 						}
 						else
 						{
-							func_101("ARC_H_OV_7_T", "ARC_H_OV_7_M", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+							func_101("ARC_H_OV_7_T" /* GXT: Vehicle Cargo */, "ARC_H_OV_7_M" /* GXT: Purchase an Office from www.dynasty8executiverealty.com and a Vehicle Warehouse from SecuroServ to manage it from the Master Control Terminal. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 						}
 					}
 					else if (func_61() && !func_89())
@@ -2443,7 +2443,7 @@ void func_91()//Position - 0x1EFF
 				case 1:
 					if (!func_11(PLAYER::PLAYER_ID()))
 					{
-						func_101("ARC_H_OV_6_T", "ARC_H_OV_6_M", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_101("ARC_H_OV_6_T" /* GXT: Nightclub */, "ARC_H_OV_6_M" /* GXT: Purchase a Nightclub from foreclosures.maze-bank.com to manage it from the Master Control Terminal. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					else if (func_58(PLAYER::PLAYER_ID()))
 					{
@@ -2454,7 +2454,7 @@ void func_91()//Position - 0x1EFF
 					}
 					else
 					{
-						func_101("ARC_H_OV_6_T", "HAPP_SETUP_1", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+						func_101("ARC_H_OV_6_T" /* GXT: Nightclub */, "HAPP_SETUP_1" /* GXT: Access must be granted by Tony Prince. Please complete the Nightclub setup. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 					}
 					break;
 				
@@ -2463,16 +2463,16 @@ void func_91()//Position - 0x1EFF
 					{
 						if (func_64(PLAYER::PLAYER_ID()))
 						{
-							func_101("ARC_H_OV_1_T", "ARC_H_OV_0_MC", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+							func_101("ARC_H_OV_1_T" /* GXT: Special Cargo */, "ARC_H_OV_0_MC" /* GXT: Purchase a Warehouse from the SecuroServ terminal in your office to manage it from the Master Control Terminal. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 						}
 						else
 						{
-							func_101("ARC_H_OV_1_T", "ARC_H_OV_0_MB", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
+							func_101("ARC_H_OV_1_T" /* GXT: Special Cargo */, "ARC_H_OV_0_MB" /* GXT: Purchase an Office from www.dynasty8executiverealty.com and a Warehouse from SecuroServ to manage warehouses from the Master Control Terminal. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, 0, -1, -1, 0, 0);
 						}
 					}
 					else if (func_61() && !func_89())
 					{
-						func_101("ARC_H_OV_1_T", "ARC_H_OV_0_M", "ARC_H_OV_0_B1", "ARC_H_OV_0_B2", 0, 1, 2, -1, -1, 0, 0);
+						func_101("ARC_H_OV_1_T" /* GXT: Special Cargo */, "ARC_H_OV_0_M" /* GXT: Select which side of the business to manage: */, "ARC_H_OV_0_B1" /* GXT: Source Cargo */, "ARC_H_OV_0_B2" /* GXT: Sell Cargo */, 0, 1, 2, -1, -1, 0, 0);
 					}
 					break;
 				
@@ -2811,8 +2811,8 @@ void func_106()//Position - 0x2947
 	int iVar0;
 	
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_125, "SHOW_SPECIAL_CARGO_OVERLAY");
-	func_8("ARC_H_OV_1_T");
-	func_8("ARC_H_OV_2_M");
+	func_8("ARC_H_OV_1_T" /* GXT: Special Cargo */);
+	func_8("ARC_H_OV_2_M" /* GXT: Select a Warehouse */);
 	iVar0 = 0;
 	while (iVar0 <= 4)
 	{
@@ -2830,91 +2830,91 @@ char* func_107(int iParam0)//Position - 0x29B4
 	switch (iParam0)
 	{
 		case 1:
-			return "MP_WHOUSE_0";
+			return "MP_WHOUSE_0" /* GXT: Pacific Bait Storage */;
 			break;
 		
 		case 2:
-			return "MP_WHOUSE_1";
+			return "MP_WHOUSE_1" /* GXT: White Widow Garage */;
 			break;
 		
 		case 3:
-			return "MP_WHOUSE_2";
+			return "MP_WHOUSE_2" /* GXT: Celltowa Unit */;
 			break;
 		
 		case 4:
-			return "MP_WHOUSE_3";
+			return "MP_WHOUSE_3" /* GXT: Convenience Store Lockup */;
 			break;
 		
 		case 5:
-			return "MP_WHOUSE_4";
+			return "MP_WHOUSE_4" /* GXT: Foreclosed Garage */;
 			break;
 		
 		case 6:
-			return "MP_WHOUSE_5";
+			return "MP_WHOUSE_5" /* GXT: Xero Gas Factory */;
 			break;
 		
 		case 7:
-			return "MP_WHOUSE_6";
+			return "MP_WHOUSE_6" /* GXT: Derriere Lingerie Backlot */;
 			break;
 		
 		case 8:
-			return "MP_WHOUSE_7";
+			return "MP_WHOUSE_7" /* GXT: Bilgeco Warehouse */;
 			break;
 		
 		case 9:
-			return "MP_WHOUSE_8";
+			return "MP_WHOUSE_8" /* GXT: Pier 400 Utility Building */;
 			break;
 		
 		case 10:
-			return "MP_WHOUSE_9";
+			return "MP_WHOUSE_9" /* GXT: GEE Warehouse */;
 			break;
 		
 		case 11:
-			return "MP_WHOUSE_10";
+			return "MP_WHOUSE_10" /* GXT: LS Marine Building 3 */;
 			break;
 		
 		case 12:
-			return "MP_WHOUSE_11";
+			return "MP_WHOUSE_11" /* GXT: Railyard Warehouse */;
 			break;
 		
 		case 13:
-			return "MP_WHOUSE_12";
+			return "MP_WHOUSE_12" /* GXT: Fridgit Annexe */;
 			break;
 		
 		case 14:
-			return "MP_WHOUSE_13";
+			return "MP_WHOUSE_13" /* GXT: Disused Factory Outlet */;
 			break;
 		
 		case 15:
-			return "MP_WHOUSE_14";
+			return "MP_WHOUSE_14" /* GXT: Discount Retail Unit */;
 			break;
 		
 		case 16:
-			return "MP_WHOUSE_15";
+			return "MP_WHOUSE_15" /* GXT: Logistics Depot */;
 			break;
 		
 		case 17:
-			return "MP_WHOUSE_16";
+			return "MP_WHOUSE_16" /* GXT: Darnell Bros Warehouse */;
 			break;
 		
 		case 18:
-			return "MP_WHOUSE_17";
+			return "MP_WHOUSE_17" /* GXT: Wholesale Furniture */;
 			break;
 		
 		case 19:
-			return "MP_WHOUSE_18";
+			return "MP_WHOUSE_18" /* GXT: Cypress Warehouses */;
 			break;
 		
 		case 20:
-			return "MP_WHOUSE_19";
+			return "MP_WHOUSE_19" /* GXT: West Vinewood Backlot */;
 			break;
 		
 		case 21:
-			return "MP_WHOUSE_20";
+			return "MP_WHOUSE_20" /* GXT: Old Power Station */;
 			break;
 		
 		case 22:
-			return "MP_WHOUSE_21";
+			return "MP_WHOUSE_21" /* GXT: Walker & Sons Warehouse */;
 			break;
 	}
 	return "";
@@ -4154,18 +4154,18 @@ void func_168()//Position - 0x3FFC
 			if (func_74(PLAYER::PLAYER_ID()))
 			{
 				sVar1 = func_170();
-				func_169("GB_BECOMEB", sVar1, func_181(PLAYER::PLAYER_ID(), -2, 0, 0, 0), -1, 1);
+				func_169("GB_BECOMEB" /* GXT: You are now the President of ~a~~s~ */, sVar1, func_181(PLAYER::PLAYER_ID(), -2, 0, 0, 0), -1, 1);
 			}
 			else if (func_62(PLAYER::PLAYER_ID()))
 			{
 				sVar2 = func_170();
 				if (func_64(PLAYER::PLAYER_ID()))
 				{
-					func_169("GB_BECOMEC", sVar2, func_181(PLAYER::PLAYER_ID(), -2, 0, 0, 0), -1, 1);
+					func_169("GB_BECOMEC" /* GXT: You are now the CEO of ~a~~s~ */, sVar2, func_181(PLAYER::PLAYER_ID(), -2, 0, 0, 0), -1, 1);
 				}
 				else
 				{
-					func_169("GB_BECOME", sVar2, func_181(PLAYER::PLAYER_ID(), -2, 0, 0, 0), -1, 1);
+					func_169("GB_BECOME" /* GXT: You are now the VIP of ~a~~s~ */, sVar2, func_181(PLAYER::PLAYER_ID(), -2, 0, 0, 0), -1, 1);
 				}
 			}
 			MISC::CLEAR_BIT(&uLocal_109, 10);
@@ -4235,12 +4235,12 @@ char* func_173(int iParam0, bool bParam1)//Position - 0x4239
 			return func_174();
 		}
 	}
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACC");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACC" /* GXT: An Organization */);
 }
 
 char* func_174()//Position - 0x4260
 {
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACCM");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACCM" /* GXT: Motorcycle Club */);
 }
 
 bool func_175(int iParam0, bool bParam1)//Position - 0x4270
@@ -5312,7 +5312,7 @@ void func_219(bool bParam0, int iParam1)//Position - 0x52E8
 		func_234();
 		if (!func_64(PLAYER::PLAYER_ID()) && iParam1 != 1)
 		{
-			func_220(82, "GB_TXTMSG_INIT2", 2, 0, 0, 0, 0, 1, 0, 1);
+			func_220(82, "GB_TXTMSG_INIT2" /* GXT: Thank you for registering with SecuroServ as a VIP. Recruit your Protection Detail immediately to start feeling the benefits of having a troop of armed Bodyguards at your beck and call. But what now? Take your operation to the next level by getting an office on dynasty8realestate.com, of course! You'll become a CEO with access to Special Cargo, Vehicle Cargo, Special Vehicle Work and many other benefits. */, 2, 0, 0, 0, 0, 1, 0, 1);
 		}
 	}
 }
@@ -5834,7 +5834,7 @@ void func_225(int iParam0)//Position - 0x5949
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(42);
 								GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							}
-							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB")) && BitTest(Global_8137, 6))
+							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB" /* GXT: Benny's */)) && BitTest(Global_8137, 6))
 							{
 								GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT");
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
@@ -6117,11 +6117,11 @@ void func_234()//Position - 0x63D4
 	{
 		if (func_89())
 		{
-			func_235("GB_INFO_MC_L", 0);
+			func_235("GB_INFO_MC_L" /* GXT: There are players looking to join a MC in this session. */, 0);
 		}
 		else
 		{
-			func_235("GB_INFO_LFG", 0);
+			func_235("GB_INFO_LFG" /* GXT: There are players looking for work as Bodyguards in this session. */, 0);
 		}
 	}
 }
@@ -6867,12 +6867,12 @@ void func_274()//Position - 0x7054
 	{
 		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("");
 		StringCopy(&cVar1, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_8746[1 /*6*/])), 64);
-		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253");
+		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253" /* GXT: New Contact */);
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, sVar2, &cVar1);
 	}
 	else
 	{
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_255");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_255" /* GXT: New Contact: ~n~~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_8746[1 /*6*/]));
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, "", 0);
 	}
@@ -7771,7 +7771,7 @@ int func_332(var uParam0, int iParam1, bool bParam2, char* sParam3, bool bParam4
 			Var0 = { func_345(PLAYER::PLAYER_ID()) };
 			if (MISC::IS_STRING_NULL_OR_EMPTY(&Var0))
 			{
-				StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACC"), 64);
+				StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACC" /* GXT: An Organization */), 64);
 			}
 		}
 		else
@@ -7808,7 +7808,7 @@ int func_332(var uParam0, int iParam1, bool bParam2, char* sParam3, bool bParam4
 		{
 			if (MISC::IS_STRING_NULL_OR_EMPTY(sParam3))
 			{
-				StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACC"), 64);
+				StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACC" /* GXT: An Organization */), 64);
 			}
 			else
 			{
@@ -7962,7 +7962,7 @@ int func_334(char* sParam0)//Position - 0x82FA
 	
 	if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam0))
 	{
-		if (MISC::ARE_STRINGS_EQUAL(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACCM"), sParam0) || MISC::ARE_STRINGS_EQUAL(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACC"), sParam0))
+		if (MISC::ARE_STRINGS_EQUAL(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACCM" /* GXT: Motorcycle Club */), sParam0) || MISC::ARE_STRINGS_EQUAL(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACC" /* GXT: An Organization */), sParam0))
 		{
 			return 0;
 		}
@@ -8446,7 +8446,7 @@ int func_337(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4,
 					}
 					else if (iParam7 == 6)
 					{
-						sVar4 = "FMMC_KEY_TIP10";
+						sVar4 = "FMMC_KEY_TIP10" /* GXT: Enter Synopsis (MAX 125 characters): */;
 					}
 					else if (iParam7 == 8)
 					{
@@ -8517,7 +8517,7 @@ int func_337(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4,
 					}
 					else
 					{
-						sVar4 = "WEB_SEARCH";
+						sVar4 = "WEB_SEARCH" /* GXT: Search... */;
 					}
 				}
 				if (MISC::IS_STRING_NULL_OR_EMPTY(sParam5))
@@ -8791,49 +8791,49 @@ int func_337(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4,
 						{
 							if (*iParam1 == 0)
 							{
-								sVar4 = "CELL_EMASH_SOD";
+								sVar4 = "CELL_EMASH_SOD" /* GXT: Enter your Eyefind subject: */;
 							}
 							else if (*iParam1 == -1)
 							{
-								sVar4 = "CELL_EMASH_SODE";
+								sVar4 = "CELL_EMASH_SODE" /* GXT: Subject too long. Try again: */;
 							}
 							else
 							{
-								sVar4 = "CELL_EMASH_SODF";
+								sVar4 = "CELL_EMASH_SODF" /* GXT: Forbidden text. Try again: */;
 							}
 						}
 						else if (*iParam1 == 0)
 						{
-							sVar4 = "CELL_EMAIL_SOD";
+							sVar4 = "CELL_EMAIL_SOD" /* GXT: Enter your Eyefind subject (MAX 60 characters): */;
 						}
 						else if (*iParam1 == -1)
 						{
-							sVar4 = "CELL_EMAIL_SODE";
+							sVar4 = "CELL_EMAIL_SODE" /* GXT: Subject too long. Try again (MAX 60 characters): */;
 						}
 						else
 						{
-							sVar4 = "CELL_EMAIL_SODF";
+							sVar4 = "CELL_EMAIL_SODF" /* GXT: Forbidden text. Try again (MAX 60 characters): */;
 						}
 						if (MISC::IS_XBOX360_VERSION() || func_172())
 						{
 							sVar5 = sVar4;
-							sVar4 = "CELL_EMAIL_DESC";
+							sVar4 = "CELL_EMAIL_DESC" /* GXT: Description */;
 						}
 					}
 					else if (func_342())
 					{
 						if (*iParam1 == 0)
 						{
-							sVar4 = "FMMC_KEY_TIP8S";
+							sVar4 = "FMMC_KEY_TIP8S" /* GXT: Enter Message (MAX 20 characters): */;
 						}
 						else
 						{
-							sVar4 = "FMMC_KEY_TIP8FS";
+							sVar4 = "FMMC_KEY_TIP8FS" /* GXT: Invalid Message. Try again (MAX 20 characters): */;
 						}
 						if (MISC::IS_XBOX360_VERSION() || func_172())
 						{
 							sVar5 = sVar4;
-							sVar4 = "FMMC_SMS4";
+							sVar4 = "FMMC_SMS4" /* GXT: Message */;
 						}
 						iVar9 = 21;
 					}
@@ -8841,16 +8841,16 @@ int func_337(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4,
 					{
 						if (*iParam1 == 0)
 						{
-							sVar4 = "FMMC_KEY_TIP8";
+							sVar4 = "FMMC_KEY_TIP8" /* GXT: Enter Message (MAX 60 characters): */;
 						}
 						else
 						{
-							sVar4 = "FMMC_KEY_TIP8F";
+							sVar4 = "FMMC_KEY_TIP8F" /* GXT: Forbidden Text. Try again (MAX 60 characters): */;
 						}
 						if (MISC::IS_XBOX360_VERSION())
 						{
 							sVar5 = sVar4;
-							sVar4 = "FMMC_SMS4";
+							sVar4 = "FMMC_SMS4" /* GXT: Message */;
 						}
 					}
 					if (MISC::IS_STRING_NULL_OR_EMPTY(sParam5))
@@ -8866,16 +8866,16 @@ int func_337(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4,
 				{
 					if (*iParam1 == 0)
 					{
-						sVar4 = "FMMC_KEY_TIP9";
+						sVar4 = "FMMC_KEY_TIP9" /* GXT: Enter Outfit Name (MAX 15 characters): */;
 					}
 					else
 					{
-						sVar4 = "FMMC_KEY_TIP9F";
+						sVar4 = "FMMC_KEY_TIP9F" /* GXT: Invalid Outfit Name. Try again (MAX 15 characters): */;
 					}
 					if (MISC::IS_XBOX360_VERSION())
 					{
 						sVar5 = sVar4;
-						sVar4 = "FMMC_KEY_TIP9N";
+						sVar4 = "FMMC_KEY_TIP9N" /* GXT: Outfit Name */;
 					}
 					if (MISC::IS_STRING_NULL_OR_EMPTY(sParam5))
 					{
@@ -8891,16 +8891,16 @@ int func_337(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4,
 					iVar9 = 16;
 					if (*iParam1 == 0)
 					{
-						sVar4 = "FMMC_KEY_TIP12";
+						sVar4 = "FMMC_KEY_TIP12" /* GXT: Enter Custom Team Name (MAX 15 characters): */;
 					}
 					else
 					{
-						sVar4 = "FMMC_KEY_TIP12F";
+						sVar4 = "FMMC_KEY_TIP12F" /* GXT: Forbidden Text. Try again (MAX 15 characters): */;
 					}
 					if (MISC::IS_XBOX360_VERSION())
 					{
 						sVar5 = sVar4;
-						sVar4 = "FMMC_KEY_TIP12N";
+						sVar4 = "FMMC_KEY_TIP12N" /* GXT: Custom Team Name */;
 					}
 					if (MISC::IS_STRING_NULL_OR_EMPTY(sParam5))
 					{
@@ -8936,11 +8936,11 @@ int func_337(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4,
 					iVar9 = 61;
 					if (*iParam1 == 0)
 					{
-						sVar4 = "FMMC_KEY_TIP12";
+						sVar4 = "FMMC_KEY_TIP12" /* GXT: Enter Custom Team Name (MAX 15 characters): */;
 					}
 					else
 					{
-						sVar4 = "FMMC_KEY_TIP12F";
+						sVar4 = "FMMC_KEY_TIP12F" /* GXT: Forbidden Text. Try again (MAX 15 characters): */;
 					}
 					if (MISC::IS_STRING_NULL_OR_EMPTY(sParam5))
 					{
@@ -8963,24 +8963,24 @@ int func_337(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4,
 					}
 					if (*iParam1 == 0)
 					{
-						sVar4 = "FMMC_KEY_TIP14S";
+						sVar4 = "FMMC_KEY_TIP14S" /* GXT: Enter Yacht Name (MAX 20 characters): */;
 					}
 					else if (*iParam1 == -1)
 					{
-						sVar4 = "FMMC_KEY_TIP14ES";
+						sVar4 = "FMMC_KEY_TIP14ES" /* GXT: Subject too long. Try again (MAX 20 characters): */;
 					}
 					else if (*iParam1 == -2)
 					{
-						sVar4 = "FMMC_KEY_TIP14OS";
+						sVar4 = "FMMC_KEY_TIP14OS" /* GXT: Empty Text. Try again (MAX 20 characters): */;
 					}
 					else
 					{
-						sVar4 = "FMMC_KEY_TIP14FS";
+						sVar4 = "FMMC_KEY_TIP14FS" /* GXT: Forbidden Text. Try again (MAX 20 characters): */;
 					}
 					if (MISC::IS_XBOX360_VERSION())
 					{
 						sVar5 = sVar4;
-						sVar4 = "FMMC_KEY_TIP14N";
+						sVar4 = "FMMC_KEY_TIP14N" /* GXT: Yacht Name */;
 					}
 					if (MISC::IS_STRING_NULL_OR_EMPTY(sParam5))
 					{
@@ -8996,23 +8996,23 @@ int func_337(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4,
 					iVar9 = 15;
 					if (*iParam1 == 0)
 					{
-						sVar4 = "FMMC_KEY_TIP16S";
+						sVar4 = "FMMC_KEY_TIP16S" /* GXT: Enter Vehicle Name (MAX 15 characters): */;
 					}
 					else if (*iParam1 == -1)
 					{
-						sVar4 = "FMMC_KEY_TIP16ES";
+						sVar4 = "FMMC_KEY_TIP16ES" /* GXT: Subject too long. Try again (MAX 15 characters): */;
 					}
 					else if (*iParam1 == -2)
 					{
-						sVar4 = "FMMC_KEY_TIP16OS";
+						sVar4 = "FMMC_KEY_TIP16OS" /* GXT: Empty Text. Try again (MAX 15 characters): */;
 					}
 					else
 					{
-						sVar4 = "FMMC_KEY_TIP16FS";
+						sVar4 = "FMMC_KEY_TIP16FS" /* GXT: Forbidden Text. Try again (MAX 15 characters): */;
 					}
 					if (bParam23)
 					{
-						sVar4 = "FMMC_KEY_TIP16IS";
+						sVar4 = "FMMC_KEY_TIP16IS" /* GXT: Invalid Character. Try again (MAX 15 characters): */;
 					}
 					if (MISC::IS_XBOX360_VERSION())
 					{
@@ -9041,34 +9041,34 @@ int func_337(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4,
 					}
 					if (bParam20)
 					{
-						sVar4 = "FMMC_KEY_TIP15B";
+						sVar4 = "FMMC_KEY_TIP15B" /* GXT: You must enter a name (MAX 15 characters): */;
 					}
 					else if (bParam21)
 					{
-						sVar4 = "FMMC_KEY_TIP15U";
+						sVar4 = "FMMC_KEY_TIP15U" /* GXT: Name already in use. Try again (MAX 15 characters): */;
 					}
 					else if (bParam19)
 					{
-						sVar4 = "FMMC_KEY_TIP15N";
+						sVar4 = "FMMC_KEY_TIP15N" /* GXT: Name Too Short. Try again (MAX 15 characters): */;
 					}
 					else if (bParam23)
 					{
-						sVar4 = "FMMC_KEY_TIP15I";
+						sVar4 = "FMMC_KEY_TIP15I" /* GXT: Invalid Character. Try again (MAX 15 characters): */;
 					}
 					else if (*iParam1 == 0)
 					{
 						if (iParam18 == 2)
 						{
-							sVar4 = "FMMC_MCK_TIP15";
+							sVar4 = "FMMC_MCK_TIP15" /* GXT: Enter MC Name (MAX 15 characters): */;
 						}
 						else
 						{
-							sVar4 = "FMMC_KEY_TIP15";
+							sVar4 = "FMMC_KEY_TIP15" /* GXT: Enter Organization Name (MAX 15 characters): */;
 						}
 					}
 					else
 					{
-						sVar4 = "FMMC_KEY_TIP15F";
+						sVar4 = "FMMC_KEY_TIP15F" /* GXT: Forbidden Text. Try again (MAX 15 characters): */;
 					}
 					if (MISC::IS_STRING_NULL_OR_EMPTY(sParam5))
 					{
@@ -9090,28 +9090,28 @@ int func_337(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4,
 							{
 								if (*iParam1 == 0)
 								{
-									sVar4 = "CELL_EMASH_BOD";
+									sVar4 = "CELL_EMASH_BOD" /* GXT: Enter your Eyefind message: */;
 								}
 								else if (*iParam1 == -1)
 								{
-									sVar4 = "CELL_EMASH_BODE";
+									sVar4 = "CELL_EMASH_BODE" /* GXT: Message too long. Try again: */;
 								}
 								else
 								{
-									sVar4 = "CELL_EMASH_BODF";
+									sVar4 = "CELL_EMASH_BODF" /* GXT: Forbidden message. Try again: */;
 								}
 							}
 							else if (*iParam1 == 0)
 							{
-								sVar4 = "CELL_EMAIL_BOD";
+								sVar4 = "CELL_EMAIL_BOD" /* GXT: Enter your Eyefind message (MAX 500 characters): */;
 							}
 							else if (*iParam1 == -1)
 							{
-								sVar4 = "CELL_EMAIL_BODE";
+								sVar4 = "CELL_EMAIL_BODE" /* GXT: Message too long. Try again (MAX 500 characters): */;
 							}
 							else
 							{
-								sVar4 = "CELL_EMAIL_BODF";
+								sVar4 = "CELL_EMAIL_BODF" /* GXT: Forbidden message. Try again (MAX 500 characters): */;
 							}
 						}
 						else if (*iParam1 == 0)
@@ -9138,15 +9138,15 @@ int func_337(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4,
 						{
 							if (*iParam1 == 0)
 							{
-								sVar4 = "CELL_EMASH_BOD";
+								sVar4 = "CELL_EMASH_BOD" /* GXT: Enter your Eyefind message: */;
 							}
 							else if (*iParam1 == -1)
 							{
-								sVar4 = "CELL_EMASH_BODE";
+								sVar4 = "CELL_EMASH_BODE" /* GXT: Message too long. Try again: */;
 							}
 							else
 							{
-								sVar4 = "CELL_EMASH_BODF";
+								sVar4 = "CELL_EMASH_BODF" /* GXT: Forbidden message. Try again: */;
 							}
 						}
 						else if (func_342())
@@ -9183,7 +9183,7 @@ int func_337(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4,
 						sVar4 = "FMMC_T0_M20";
 						if (bParam11)
 						{
-							sVar4 = "CELL_EMAIL_DESC";
+							sVar4 = "CELL_EMAIL_DESC" /* GXT: Description */;
 						}
 					}
 					iVar13 = 0;
@@ -9378,17 +9378,17 @@ int func_337(var uParam0, int* iParam1, var uParam2, bool bParam3, bool bParam4,
 					}
 					if (bParam17)
 					{
-						HUD::BEGIN_TEXT_COMMAND_BUSYSPINNER_ON("ERROR_CHECKYACHTNAME");
+						HUD::BEGIN_TEXT_COMMAND_BUSYSPINNER_ON("ERROR_CHECKYACHTNAME" /* GXT: Registering your yacht's name.  Please wait... */);
 						HUD::END_TEXT_COMMAND_BUSYSPINNER_ON(1);
 					}
 					else if (bParam29)
 					{
-						HUD::BEGIN_TEXT_COMMAND_BUSYSPINNER_ON("ERROR_CHECKVEHICLENAME");
+						HUD::BEGIN_TEXT_COMMAND_BUSYSPINNER_ON("ERROR_CHECKVEHICLENAME" /* GXT: Registering your vehicle's name.  Please wait... */);
 						HUD::END_TEXT_COMMAND_BUSYSPINNER_ON(1);
 					}
 					else
 					{
-						HUD::BEGIN_TEXT_COMMAND_BUSYSPINNER_ON("ERROR_CHECKPROFANITY");
+						HUD::BEGIN_TEXT_COMMAND_BUSYSPINNER_ON("ERROR_CHECKPROFANITY" /* GXT: Checking your text for profanity.  Please wait... */);
 						HUD::END_TEXT_COMMAND_BUSYSPINNER_ON(1);
 					}
 					if (!SOCIALCLUB::SC_PROFANITY_GET_CHECK_IS_VALID(*iParam1))

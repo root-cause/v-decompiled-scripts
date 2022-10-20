@@ -856,7 +856,7 @@ void func_23()//Position - 0xBAB
 				func_160();
 				if (iLocal_117 == -1)
 				{
-					func_159(&iLocal_117, 4, "JBOX_INTERACT", 0, 0, 0, 0);
+					func_159(&iLocal_117, 4, "JBOX_INTERACT" /* GXT: Press ~INPUT_CONTEXT~ to use the jukebox. */, 0, 0, 0, 0);
 				}
 				else if ((iLocal_117 != -1 && func_158(iLocal_117, 1)) && !TASK::IS_PED_RUNNING(PLAYER::PLAYER_PED_ID()))
 				{
@@ -875,7 +875,7 @@ void func_23()//Position - 0xBAB
 			}
 			else if (!func_162() && func_163())
 			{
-				func_144("JBOX_NO_MONEY");
+				func_144("JBOX_NO_MONEY" /* GXT: You need $1 in cash to use the jukebox. */);
 				MISC::CLEAR_BIT(&Global_2787701, 3);
 			}
 			else
@@ -1461,7 +1461,7 @@ void func_44(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 	{
 		if (Global_23150.f_5609 <= 1)
 		{
-			func_70(Global_23150.f_5609 + 1, "DFLT_MNU_OPT", 0, 1, 0, 0, 0);
+			func_70(Global_23150.f_5609 + 1, "DFLT_MNU_OPT" /* GXT: Exit */, 0, 1, 0, 0, 0);
 			Global_23150.f_6405 = 1;
 		}
 	}
@@ -1564,14 +1564,14 @@ void func_44(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 				if (Global_23150.f_6126)
 				{
 					func_64();
-					func_62((((Global_23147 + fParam5) - 0.00390625f) - func_63("CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128);
+					func_62((((Global_23147 + fParam5) - 0.00390625f) - func_63("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128);
 				}
 				else if (Global_23150.f_6122 > Global_23150.f_5616)
 				{
 					if (Global_23150.f_6125 != 0)
 					{
 						func_64();
-						func_62((((Global_23147 + fParam5) - 0.00390625f) - func_63("CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124);
+						func_62((((Global_23147 + fParam5) - 0.00390625f) - func_63("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124);
 					}
 				}
 			}
@@ -4255,31 +4255,31 @@ void func_82()//Position - 0x5BB4
 	{
 		if (iLocal_114 == 0)
 		{
-			func_83("JBOX_CONF_ON", 0, 0);
+			func_83("JBOX_CONF_ON" /* GXT: Would you like to turn the jukebox on and start the playlist for $1? */, 0, 0);
 		}
 		else
 		{
-			func_83("JBOX_CANC_PUR", 0, 0);
+			func_83("JBOX_CANC_PUR" /* GXT: Go back to playlist selection. */, 0, 0);
 		}
 	}
 	else if (iLocal_113 == iLocal_124)
 	{
 		if (iLocal_114 == 0)
 		{
-			func_83("JBOX_CONF_OFF", 0, 0);
+			func_83("JBOX_CONF_OFF" /* GXT: Would you like to turn off the jukebox? */, 0, 0);
 		}
 		else
 		{
-			func_83("JBOX_CANC_PUR", 0, 0);
+			func_83("JBOX_CANC_PUR" /* GXT: Go back to playlist selection. */, 0, 0);
 		}
 	}
 	else if (iLocal_114 == 0)
 	{
-		func_83("JBOX_CONF_PUR", 0, 0);
+		func_83("JBOX_CONF_PUR" /* GXT: Start your selected playlist. */, 0, 0);
 	}
 	else
 	{
-		func_83("JBOX_CANC_PUR", 0, 0);
+		func_83("JBOX_CANC_PUR" /* GXT: Go back to playlist selection. */, 0, 0);
 	}
 }
 
@@ -4309,11 +4309,11 @@ void func_84()//Position - 0x5C8D
 	
 	if (iLocal_114 == Local_137.f_3 && func_174())
 	{
-		func_83("JBOX_PLIST_PLY", 0, 0);
+		func_83("JBOX_PLIST_PLY" /* GXT: Currently playing. */, 0, 0);
 	}
 	else if (iLocal_114 == iLocal_124)
 	{
-		func_83("JBOX_TOFF", 0, 0);
+		func_83("JBOX_TOFF" /* GXT: Turn the jukebox off. */, 0, 0);
 	}
 	else
 	{
@@ -4364,7 +4364,7 @@ bool func_87(int iParam0, int iParam1)//Position - 0x5DDE
 
 void func_88()//Position - 0x5DFA
 {
-	func_83("JBOX_TOFF_NM", 0, 0);
+	func_83("JBOX_TOFF_NM" /* GXT: You need $1 in cash to use the jukebox. */, 0, 0);
 }
 
 void func_89(int iParam0, bool bParam1, int iParam2)//Position - 0x5E0C
@@ -4439,12 +4439,12 @@ void func_90()//Position - 0x5F5C
 
 void func_91()//Position - 0x5F92
 {
-	func_93("JBOX_CONF_T");
-	func_70(0, "JBOX_MENU_0", 0, 1, 0, 0, 0);
-	func_70(1, "JBOX_MENU_1", 0, 1, 0, 0, 0);
+	func_93("JBOX_CONF_T" /* GXT: CONFIRM SELECTION */);
+	func_70(0, "JBOX_MENU_0" /* GXT: Yes */, 0, 1, 0, 0, 0);
+	func_70(1, "JBOX_MENU_1" /* GXT: No */, 0, 1, 0, 0, 0);
 	func_89(iLocal_114, 1, 1);
-	func_92(201, "ITEM_SELECT", -1, 0);
-	func_92(202, "ITEM_BACK", -1, 0);
+	func_92(201, "ITEM_SELECT" /* GXT: Select */, -1, 0);
+	func_92(202, "ITEM_BACK" /* GXT: Back */, -1, 0);
 }
 
 void func_92(int iParam0, char* sParam1, int iParam2, bool bParam3)//Position - 0x5FDE
@@ -4750,7 +4750,7 @@ void func_98()//Position - 0x66D7
 	struct<2> Var2;
 	bool bVar3;
 	
-	func_93("JBOX_MENU_T");
+	func_93("JBOX_MENU_T" /* GXT: JUKEBOX */);
 	iVar0 = func_85();
 	iVar1 = 0;
 	while (iVar1 < iVar0)
@@ -4769,20 +4769,20 @@ void func_98()//Position - 0x66D7
 		func_70(iVar1, &Var2, 0, bVar3, 0, 0, 0);
 		if (bVar3)
 		{
-			func_70(iVar1, "JBOX_CHARGE", 0, bVar3, 0, 0, 0);
+			func_70(iVar1, "JBOX_CHARGE" /* GXT: $1 */, 0, bVar3, 0, 0, 0);
 		}
 		iVar1++;
 	}
 	if (func_174())
 	{
-		func_70(iVar1, "JBOX_M_OFF", 0, 1, 0, 0, 0);
+		func_70(iVar1, "JBOX_M_OFF" /* GXT: Turn Off */, 0, 1, 0, 0, 0);
 	}
 	func_89(iLocal_114, 1, 1);
-	func_92(201, "ITEM_SELECT", -1, 0);
-	func_92(202, "ITEM_BACK", -1, 0);
+	func_92(201, "ITEM_SELECT" /* GXT: Select */, -1, 0);
+	func_92(202, "ITEM_BACK" /* GXT: Back */, -1, 0);
 	if (iLocal_115 == 126 && func_174())
 	{
-		func_99(8, "HUD_INPUT77", -1);
+		func_99(8, "HUD_INPUT77" /* GXT: Change Volume */, -1);
 	}
 }
 
@@ -4810,11 +4810,11 @@ void func_99(int iParam0, char* sParam1, int iParam2)//Position - 0x67CA
 
 void func_100()//Position - 0x687A
 {
-	func_93("JBOX_MENU_T");
-	func_70(0, "JBOX_M_OFF", 0, 1, 0, 0, 0);
+	func_93("JBOX_MENU_T" /* GXT: JUKEBOX */);
+	func_70(0, "JBOX_M_OFF" /* GXT: Turn Off */, 0, 1, 0, 0, 0);
 	func_89(iLocal_114, 1, 1);
-	func_92(201, "ITEM_SELECT", -1, 0);
-	func_92(202, "ITEM_BACK", -1, 0);
+	func_92(201, "ITEM_SELECT" /* GXT: Select */, -1, 0);
+	func_92(202, "ITEM_BACK" /* GXT: Back */, -1, 0);
 }
 
 bool func_101(char* sParam0, int iParam1, bool bParam2)//Position - 0x68B8
@@ -5043,7 +5043,7 @@ void func_103()//Position - 0x6A4C
 		}
 		else
 		{
-			AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
+			AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 		}
 	}
 	if (bVar7)
@@ -5788,7 +5788,7 @@ char* func_118(int iParam0)//Position - 0x7B70
 			return "HIDDEN_RADIO_ARCADE_WWFM";
 		
 		case 9:
-			return "RADIO_36_AUDIOPLAYER";
+			return "RADIO_36_AUDIOPLAYER" /* GXT: Media Player */;
 		
 		default:
 	}
@@ -5812,7 +5812,7 @@ char* func_119(int iParam0)//Position - 0x7C05
 			return "HIDDEN_RADIO_BIKER_PUNK";
 		
 		case 4:
-			return "RADIO_36_AUDIOPLAYER";
+			return "RADIO_36_AUDIOPLAYER" /* GXT: Media Player */;
 		
 		default:
 	}
@@ -6999,7 +6999,7 @@ void func_159(int iParam0, int iParam1, char* sParam2, int iParam3, char* sParam
 
 void func_160()//Position - 0x8FAC
 {
-	if (HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && func_161("JBOX_NO_MONEY"))
+	if (HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && func_161("JBOX_NO_MONEY" /* GXT: You need $1 in cash to use the jukebox. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -8112,7 +8112,7 @@ void func_211(bool bParam0)//Position - 0xA2B6
 	{
 		func_8(iLocal_112);
 	}
-	if (HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && func_161("JBOX_NO_MONEY"))
+	if (HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && func_161("JBOX_NO_MONEY" /* GXT: You need $1 in cash to use the jukebox. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}

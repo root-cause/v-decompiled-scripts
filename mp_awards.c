@@ -1699,7 +1699,7 @@ void func_15(var uParam0)//Position - 0xE9A
 								{
 									iVar2 = 1;
 								}
-								func_62("CLO_LTS_T_0", "CLO_LTS_TD_0", "Elitas_Tshirt", "MPTshirtAwardLTS", 1, iVar2, -1, 1, &Global_1646672, 152, 144);
+								func_62("CLO_LTS_T_0" /* GXT: Elitas T-Shirt */, "CLO_LTS_TD_0" /* GXT: Complete the San Andreas Flight School. */, "Elitas_Tshirt", "MPTshirtAwardLTS", 1, iVar2, -1, 1, &Global_1646672, 152, 144);
 								func_59(0);
 								func_59(1);
 								func_59(2);
@@ -1708,7 +1708,7 @@ void func_15(var uParam0)//Position - 0xE9A
 								{
 									iVar2 = 1;
 								}
-								func_62("CLO_HST_A_4", "CLO_HST_AD_5", "CantTouchThis", "MPTShirtAwards2", 1, iVar2, -1, 1, &Global_1646672, 152, 144);
+								func_62("CLO_HST_A_4" /* GXT: Can't Touch This T-Shirt */, "CLO_HST_AD_5" /* GXT: Complete the Can't Touch This platinum Award.~n~Complete a Heist Finale without taking any damage. */, "CantTouchThis", "MPTShirtAwards2", 1, iVar2, -1, 1, &Global_1646672, 152, 144);
 								func_59(5);
 								func_59(7);
 								func_59(6);
@@ -1758,17 +1758,17 @@ void func_15(var uParam0)//Position - 0xE9A
 							{
 								iVar2 = 1;
 							}
-							func_62("CLO_HST_A_9", "CLO_HST_AD_9", "Showroom", "MPTShirtAwards2", 1, iVar2, -1, 1, &Global_1646672, 152, 144);
-							func_62("CHR_HST_A_0", "CHR_HST_AD_0", "SportMod", "MPAwardMods", func_49(126, 5, 0), func_48(126, -1), -1, 1, &Global_1646672, 152, 144);
-							func_62("CHR_HST_A_1", "CHR_HST_AD_1", "LowriderMod", "MPAwardMods", func_49(127, 5, 0), func_48(127, -1), -1, 1, &Global_1646672, 152, 144);
-							func_62("CHR_HST_A_2", "CHR_HST_AD_2", "OffroadMod", "MPAwardMods", func_49(129, 5, 0), func_48(129, -1), -1, 1, &Global_1646672, 152, 144);
-							func_62("CHR_HST_A_3", "CHR_HST_AD_3", "HighendMod", "MPAwardMods", func_49(120, 5, 0), func_48(120, -1), -1, 1, &Global_1646672, 152, 144);
-							func_62("CHR_HST_A_4", "CHR_HST_AD_4", "TunerMod", "MPAwardMods", func_49(121, 5, 0), func_48(121, -1), -1, 1, &Global_1646672, 152, 144);
-							func_62("CHR_HST_A_5", "CHR_HST_AD_5", "BikeMod", "MPAwardMods", func_49(131, 5, 0), func_48(131, -1), -1, 1, &Global_1646672, 152, 144);
-							func_62("CHR_HST_A_6", "CHR_HST_AD_6", "SUVMod", "MPAwardMods", func_49(135, 5, 0), func_48(135, -1), -1, 1, &Global_1646672, 152, 144);
-							func_62("CHR_HST_A_7", "CHR_HST_AD_7", "MuscleMod", "MPAwardMods", func_49(136, 5, 0), func_48(136, -1), -1, 1, &Global_1646672, 152, 144);
+							func_62("CLO_HST_A_9" /* GXT: Showroom T-Shirt */, "CLO_HST_AD_9" /* GXT: Complete the Showroom platinum Award.~n~Store 30 vehicles. */, "Showroom", "MPTShirtAwards2", 1, iVar2, -1, 1, &Global_1646672, 152, 144);
+							func_62("CHR_HST_A_0" /* GXT: Chrome Rims - Sport */, "CHR_HST_AD_0" /* GXT: Complete the Captured platinum Award to gain access to the Sport Chrome Rims for free.~n~Win 50 Captures. */, "SportMod", "MPAwardMods", func_49(126, 5, 0), func_48(126, -1), -1, 1, &Global_1646672, 152, 144);
+							func_62("CHR_HST_A_1" /* GXT: Chrome Rims - Lowrider */, "CHR_HST_AD_1" /* GXT: Complete The Postman platinum Award to gain access to the Lowrider Chrome Rims for free.~n~Drop off 100 packages in Captures. */, "LowriderMod", "MPAwardMods", func_49(127, 5, 0), func_48(127, -1), -1, 1, &Global_1646672, 152, 144);
+							func_62("CHR_HST_A_2" /* GXT: Chrome Rims - Offroad */, "CHR_HST_AD_2" /* GXT: Complete the No You Don't platinum Award to gain access to the Offroad Chrome Rims for free.~n~Kill 100 package carriers in Captures. */, "OffroadMod", "MPAwardMods", func_49(129, 5, 0), func_48(129, -1), -1, 1, &Global_1646672, 152, 144);
+							func_62("CHR_HST_A_3" /* GXT: Chrome Rims - High End */, "CHR_HST_AD_3" /* GXT: Complete The Big Time platinum Award to gain access to the High End Chrome Rims for free.~n~Complete 50 Heist Finales. */, "HighendMod", "MPAwardMods", func_49(120, 5, 0), func_48(120, -1), -1, 1, &Global_1646672, 152, 144);
+							func_62("CHR_HST_A_4" /* GXT: Chrome Rims - Tuner */, "CHR_HST_AD_4" /* GXT: Complete the Be Prepared platinum Award to gain access to the Tuner Chrome Rims for free.~n~Complete 50 Heist Setups. */, "TunerMod", "MPAwardMods", func_49(121, 5, 0), func_48(121, -1), -1, 1, &Global_1646672, 152, 144);
+							func_62("CHR_HST_A_5" /* GXT: Chrome Rims - Bike */, "CHR_HST_AD_5" /* GXT: Complete the Lights Out platinum Award to gain access to the Bike Chrome Rims for free.~n~Get 100 kills while wearing Night Vision. */, "BikeMod", "MPAwardMods", func_49(131, 5, 0), func_48(131, -1), -1, 1, &Global_1646672, 152, 144);
+							func_62("CHR_HST_A_6" /* GXT: Chrome Rims - SUV */, "CHR_HST_AD_6" /* GXT: Complete the Still Standing platinum Award to gain access to the SUV Chrome Rims for free.~n~Win 50 LTS matches. */, "SUVMod", "MPAwardMods", func_49(135, 5, 0), func_48(135, -1), -1, 1, &Global_1646672, 152, 144);
+							func_62("CHR_HST_A_7" /* GXT: Chrome Rims - Muscle */, "CHR_HST_AD_7" /* GXT: Complete the One and Only platinum Award to gain access to the Muscle Chrome Rims for free.~n~Be the last player alive in an LTS 50 times. */, "MuscleMod", "MPAwardMods", func_49(136, 5, 0), func_48(136, -1), -1, 1, &Global_1646672, 152, 144);
 							func_59(34);
-							func_62("CLO_S1M_DEC_25", "CLO_S1M_D_24_25", "BennyTshirt01", "MPTShirtAwards4", 8, iVar2, -1, 1, &Global_1646672, 152, 144);
+							func_62("CLO_S1M_DEC_25" /* GXT: White Benny's T-Shirt */, "CLO_S1M_D_24_25" /* GXT: Complete all the Lowriders Lamar missions. */, "BennyTshirt01", "MPTShirtAwards4", 8, iVar2, -1, 1, &Global_1646672, 152, 144);
 							break;
 					}
 					break;
@@ -1806,7 +1806,7 @@ void func_15(var uParam0)//Position - 0xE9A
 										iVar2 = (iVar2 - 1);
 									}
 								}
-								func_62("CLO_S1M_DEC_24", "CLO_S1M_D_24_25", "BennyTshirt02", "MPTShirtAwards4", 8, iVar2, -1, 1, &Global_1646672, 152, 144);
+								func_62("CLO_S1M_DEC_24" /* GXT: Black Benny's T-Shirt */, "CLO_S1M_D_24_25" /* GXT: Complete all the Lowriders Lamar missions. */, "BennyTshirt02", "MPTShirtAwards4", 8, iVar2, -1, 1, &Global_1646672, 152, 144);
 							}
 							break;
 					}
@@ -2320,26 +2320,26 @@ void func_15(var uParam0)//Position - 0xE9A
 			func_28(1, &Global_1647601);
 			func_27(1, &Global_1647601);
 			func_26(1, &Global_1647601);
-			func_25(0, "HUD_AWDLIST1", &Global_1647601);
-			func_25(1, "HUD_AWDLIST12", &Global_1647601);
-			func_25(2, "HUD_AWDLIST3b", &Global_1647601);
-			func_25(3, "HUD_AWDLIST6", &Global_1647601);
-			func_25(4, "HUD_AWDLIST9", &Global_1647601);
-			func_25(5, "HUD_AWDLIST10", &Global_1647601);
-			func_25(6, "HUD_AWDLIST13", &Global_1647601);
-			func_25(7, "HUD_AWD_GANGOP", &Global_1647601);
-			func_25(8, "HUD_AWD_NIGHTCLUB", &Global_1647601);
-			func_25(9, "PM_ARENA", &Global_1647601);
-			func_25(10, "AWDGBC_VC", &Global_1647601);
-			func_25(11, "FMMC_CH_DN", &Global_1647601);
+			func_25(0, "HUD_AWDLIST1" /* GXT: All Awards */, &Global_1647601);
+			func_25(1, "HUD_AWDLIST12" /* GXT: Victory */, &Global_1647601);
+			func_25(2, "HUD_AWDLIST3b" /* GXT: General */, &Global_1647601);
+			func_25(3, "HUD_AWDLIST6" /* GXT: Crimes */, &Global_1647601);
+			func_25(4, "HUD_AWDLIST9" /* GXT: Vehicle */, &Global_1647601);
+			func_25(5, "HUD_AWDLIST10" /* GXT: Combat */, &Global_1647601);
+			func_25(6, "HUD_AWDLIST13" /* GXT: Heists */, &Global_1647601);
+			func_25(7, "HUD_AWD_GANGOP" /* GXT: The Doomsday Heist */, &Global_1647601);
+			func_25(8, "HUD_AWD_NIGHTCLUB" /* GXT: After Hours */, &Global_1647601);
+			func_25(9, "PM_ARENA" /* GXT: Arena War */, &Global_1647601);
+			func_25(10, "AWDGBC_VC" /* GXT: The Diamond Casino & Resort */, &Global_1647601);
+			func_25(11, "FMMC_CH_DN" /* GXT: The Diamond Casino Heist */, &Global_1647601);
 			if (Global_262145.f_29264)
 			{
-				func_25(12, "SUM20AWARDPAGE", &Global_1647601);
+				func_25(12, "SUM20AWARDPAGE" /* GXT: Los Santos Summer Special */, &Global_1647601);
 			}
-			func_25(13, "HEISTISLAWDPAGE", &Global_1647601);
-			func_25(14, "TUNEAWDPAGE", &Global_1647601);
-			func_25(15, "FIXAWDPAGE", &Global_1647601);
-			func_25(16, "HUD_AWDLIST6b", &Global_1647601);
+			func_25(13, "HEISTISLAWDPAGE" /* GXT: The Cayo Perico Heist */, &Global_1647601);
+			func_25(14, "TUNEAWDPAGE" /* GXT: Los Santos Tuners */, &Global_1647601);
+			func_25(15, "FIXAWDPAGE" /* GXT: The Contract */, &Global_1647601);
+			func_25(16, "HUD_AWDLIST6b" /* GXT: Rewards */, &Global_1647601);
 			func_16(&Global_1647601, func_24(&Global_1647601));
 		}
 	}
@@ -2551,28 +2551,28 @@ void func_29(var uParam0, int iParam1)//Position - 0x4057
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar1);
 					if (func_37(&Var3))
 					{
-						func_22("HUD_AWDPROG_S");
+						func_22("HUD_AWDPROG_S" /* GXT: Progress */);
 					}
 					else
 					{
-						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("HUD_AWDPROG");
+						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("HUD_AWDPROG" /* GXT: ~a~ Progress */);
 						HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&Var3);
 						GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 					}
 					if (uParam0->f_221[iVar0] >= uParam0->f_208[iVar0])
 					{
-						func_22("TR_COMPLETE");
+						func_22("TR_COMPLETE" /* GXT: Completed */);
 					}
 					else
 					{
-						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("TIMER_DASHES");
+						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("TIMER_DASHES" /* GXT: ~1~/~1~ */);
 						HUD::ADD_TEXT_COMPONENT_INTEGER(uParam0->f_221[iVar0]);
 						HUD::ADD_TEXT_COMPONENT_INTEGER(uParam0->f_208[iVar0]);
 						GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 					}
 					if (iVar2 >= 0)
 					{
-						func_22("HUD_AWDAWARD");
+						func_22("HUD_AWDAWARD" /* GXT: Award */);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar2);
 					}
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -2683,19 +2683,19 @@ char* func_38(int iParam0)//Position - 0x43BE
 	switch (iParam0)
 	{
 		case 107:
-			return "HUD_MED_BRON";
+			return "HUD_MED_BRON" /* GXT: Bronze */;
 			break;
 		
 		case 108:
-			return "HUD_MED_SILV";
+			return "HUD_MED_SILV" /* GXT: Silver */;
 			break;
 		
 		case 109:
-			return "HUD_MED_GOLD";
+			return "HUD_MED_GOLD" /* GXT: Gold */;
 			break;
 		
 		case 110:
-			return "HUD_MED_PLAT";
+			return "HUD_MED_PLAT" /* GXT: Platinum */;
 			break;
 	}
 	return "";
@@ -6932,64 +6932,64 @@ void func_59(int iParam0)//Position - 0x7994
 	switch (iParam0)
 	{
 		case 0:
-			sVar0 = "CLO_HST_A_0";
-			sVar1 = "CLO_HST_AD_0";
+			sVar0 = "CLO_HST_A_0" /* GXT: Death Defying T-Shirt */;
+			sVar1 = "CLO_HST_AD_0" /* GXT: Complete the Death Defying platinum Award.~n~Win 25 Captures without dying. */;
 			sVar2 = "DeathDefying";
 			sVar3 = "MPTShirtAwards2";
 			iVar4 = 130;
 			break;
 		
 		case 1:
-			sVar0 = "CLO_HST_A_1";
-			sVar1 = "CLO_HST_AD_1";
+			sVar0 = "CLO_HST_A_1" /* GXT: For Hire T-Shirt */;
+			sVar1 = "CLO_HST_AD_1" /* GXT: Complete the For Hire platinum Award.~n~Be a Heist crew member 25 times. */;
 			sVar2 = "ForHire";
 			sVar3 = "MPTShirtAwards2";
 			iVar4 = 122;
 			break;
 		
 		case 2:
-			sVar0 = "CLO_HST_A_2";
-			sVar1 = "CLO_HST_AD_3";
+			sVar0 = "CLO_HST_A_2" /* GXT: Gimme That T-Shirt */;
+			sVar1 = "CLO_HST_AD_3" /* GXT: Complete the Gimme That platinum Award.~n~Collect 100 packages in any Capture mode. */;
 			sVar2 = "LiveALittle";
 			sVar3 = "MPTShirtAwards2";
 			iVar4 = 128;
 			break;
 		
 		case 5:
-			sVar0 = "CLO_HST_A_5";
-			sVar1 = "CLO_HST_AD_6";
+			sVar0 = "CLO_HST_A_5" /* GXT: Decorated T-Shirt */;
+			sVar1 = "CLO_HST_AD_6" /* GXT: Complete the Decorated platinum Award.~n~Win 25 platinum medals during Heist Setups and Heist Finales. */;
 			sVar2 = "Decorated";
 			sVar3 = "MPTShirtAwards2";
 			iVar4 = 125;
 			break;
 		
 		case 7:
-			sVar0 = "CLO_HST_A_7";
-			sVar1 = "CLO_HST_AD_8";
+			sVar0 = "CLO_HST_A_7" /* GXT: One Man Army T-Shirt */;
+			sVar1 = "CLO_HST_AD_8" /* GXT: Complete the One Man Army platinum Award.~n~Kill the entire opposing team yourself in LTS matches 25 times. */;
 			sVar2 = "OneManArmy";
 			sVar3 = "MPTShirtAwards2";
 			iVar4 = 137;
 			break;
 		
 		case 6:
-			sVar0 = "CLO_HST_A_6";
-			sVar1 = "CLO_HST_AD_7";
+			sVar0 = "CLO_HST_A_6" /* GXT: Psycho Killer T-Shirt */;
+			sVar1 = "CLO_HST_AD_7" /* GXT: Complete the Psycho Killer platinum Award.~n~Kill 100 players with Psychopath Mental State. */;
 			sVar2 = "PsychoKiller";
 			sVar3 = "MPTShirtAwards2";
 			iVar4 = 133;
 			break;
 		
 		case 8:
-			sVar0 = "CLO_HST_A_8";
-			sVar1 = "CLO_HST_AD_2";
+			sVar0 = "CLO_HST_A_8" /* GXT: Shot Caller T-Shirt */;
+			sVar1 = "CLO_HST_AD_2" /* GXT: Complete the Shot Caller platinum Award.~n~Be the Heist leader 25 times. */;
 			sVar2 = "ShotCaller";
 			sVar3 = "MPTShirtAwards2";
 			iVar4 = 123;
 			break;
 		
 		case 34:
-			sVar0 = "CLO_HSTM_U_3_0";
-			sVar1 = "CLO_HST_AD_10";
+			sVar0 = "CLO_HSTM_U_3_0" /* GXT: Elite Challenge T-Shirt */;
+			sVar1 = "CLO_HST_AD_10" /* GXT: Complete the Elite Heist Challenges. */;
 			sVar2 = "EliteTshirt1";
 			sVar3 = "MPTShirtAwards2";
 			break;
@@ -8336,293 +8336,293 @@ char* func_82(int iParam0, int iParam1)//Position - 0x8DF6
 	switch (iParam0)
 	{
 		case 7:
-			return "TAT_FM_REVENKIL_D";
+			return "TAT_FM_REVENKIL_D" /* GXT: Complete The Equalizer platinum Award. ~n~Get 50 Revenge kills in Deathmatch. */;
 			break;
 		
 		case 6:
-			return "TAT_FM_RECHOLD_d";
+			return "TAT_FM_RECHOLD_d" /* GXT: Complete The Record Holder platinum Award. ~n~Hold a World Record in a Rockstar Race. */;
 			break;
 		
 		case 8:
-			return "TAT_FM_KIL3RACE_D";
+			return "TAT_FM_KIL3RACE_D" /* GXT: Complete the Road Rage platinum Award. ~n~Kill at least 3 other racers in a GTA Race and win. */;
 			break;
 		
 		case 5:
-			return "TAT_FM_KILb_D";
+			return "TAT_FM_KILb_D" /* GXT: Complete The Bounty Hunter platinum Award. ~n~Kill 25 Bounty Targets. */;
 			break;
 		
 		case 0:
-			return "TAT_FM_HEADBANG_D";
+			return "TAT_FM_HEADBANG_D" /* GXT: Complete the Head Banger platinum Award. ~n~Get 500 player headshots. */;
 			break;
 		
 		case 12:
-			return "TAT_RACE50_D";
+			return "TAT_RACE50_D" /* GXT: Complete The Champion platinum Award. ~n~Win 50 Races. */;
 			break;
 		
 		case 2:
-			return "TAT_CLEAROUT_D";
+			return "TAT_CLEAROUT_D" /* GXT: Complete the Clear Out platinum Award. ~n~Clear 5 Gang Attacks in one day, in a single session. */;
 			break;
 		
 		case 9:
-			return "TAT_FM_RANK1_D";
+			return "TAT_FM_RANK1_D" /* GXT: Complete The Widow Maker silver Award. ~n~Get 250 player kills. */;
 			break;
 		
 		case 10:
-			return "TAT_FM_RANK2_D";
+			return "TAT_FM_RANK2_D" /* GXT: Complete The Widow Maker gold Award. ~n~Get 500 player kills. */;
 			break;
 		
 		case 11:
-			return "TAT_FM_RANK3_D";
+			return "TAT_FM_RANK3_D" /* GXT: Complete The Widow Maker platinum Award. ~n~Get 1000 player kills. */;
 			break;
 		
 		case 4:
-			return "TAT_FM_HUST_D";
+			return "TAT_FM_HUST_D" /* GXT: Complete The Hustler platinum Award. ~n~Earn $50,000 winnings from betting. */;
 			break;
 		
 		case 1:
-			return "TAT_FM_SLAY_D";
+			return "TAT_FM_SLAY_D" /* GXT: Complete The Slayer platinum Award. ~n~Win 50 Deathmatches. */;
 			break;
 		
 		case 54:
-			return "TAT_FM_EVERMODE1_D";
+			return "TAT_FM_EVERMODE1_D" /* GXT: Complete the All Rounder platinum Award. ~n~Win every game mode. */;
 			break;
 		
 		case 3:
-			return "TAT_FM_ARVANTAKE_D";
+			return "TAT_FM_ARVANTAKE_D" /* GXT: Complete the Full Metal Jacket platinum Award. ~n~Rob 25 Armored Trucks. */;
 			break;
 		
 		case 56:
-			return "TAT_CHEATER_D";
+			return "TAT_CHEATER_D" /* GXT: Complete The Car Bomber platinum Award. ~n~Kill 25 players using vehicle explosives. */;
 			break;
 		
 		case 13:
-			return "TAT_CRANKA_D";
+			return "TAT_CRANKA_D" /* GXT: Reached Crew Rank 26. */;
 			break;
 		
 		case 14:
-			return "TAT_CRANKB_D";
+			return "TAT_CRANKB_D" /* GXT: Reached Crew Rank 45. */;
 			break;
 		
 		case 15:
-			return "TAT_CRANKC_D";
+			return "TAT_CRANKC_D" /* GXT: Reached Crew Rank 18. */;
 			break;
 		
 		case 16:
-			return "TAT_CRANKD_D";
+			return "TAT_CRANKD_D" /* GXT: Reached Crew Rank 52. */;
 			break;
 		
 		case 89:
-			return "TAT_FM_ROCKSTAR_D";
+			return "TAT_FM_ROCKSTAR_D" /* GXT: Create a Race, Deathmatch, Capture, or Last Team Standing and get it verified by Rockstar Games. */;
 			break;
 		
 		case 87:
-			return "TAT_FM_REDSKULL_D";
+			return "TAT_FM_REDSKULL_D" /* GXT: Complete The Survivor platinum Award. ~n~Complete a Survival. */;
 			break;
 		
 		case 55:
-			return "TAT_FM_MODDED_D";
+			return "TAT_FM_MODDED_D" /* GXT: Complete the Suped Up platinum Award. ~n~Apply each type of mod to a single vehicle. */;
 			break;
 	}
 	switch (iParam0)
 	{
 		case 17:
-			return "TAT_RANK10_D";
+			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
 		
 		case 18:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 19:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 20:
-			return "TAT_RANK10_D";
+			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
 		
 		case 21:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 22:
-			return "TAT_RANK10_D";
+			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
 		
 		case 23:
-			return "TAT_RANK10_D";
+			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
 		
 		case 24:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 25:
-			return "TAT_FM_TAT9D";
+			return "TAT_FM_TAT9D" /* GXT: Complete the Death Toll platinum Award. ~n~Get 500 kills in Deathmatch. */;
 			break;
 		
 		case 26:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 27:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 28:
-			return "TAT_RANK10_D";
+			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
 		
 		case 61:
-			return "TAT_RANK10_D";
+			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
 		
 		case 62:
-			return "TAT_RANK10_D";
+			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
 		
 		case 63:
-			return "TAT_RANK10_D";
+			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
 		
 		case 64:
-			return "TAT_RANK10_D";
+			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
 		
 		case 65:
-			return "TAT_FM_TAT17D";
+			return "TAT_FM_TAT17D" /* GXT: Complete the Bloodiest Of The Bunch platinum Award. ~n~Get the most kills in a 4 player Survival. */;
 			break;
 		
 		case 29:
-			return "TAT_RANK10_D";
+			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
 		
 		case 30:
-			return "TAT_RANK10_D";
+			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
 		
 		case 31:
-			return "TAT_RANK10_D";
+			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
 		
 		case 66:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 32:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 33:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 34:
-			return "TAT_FM_TAT24D";
+			return "TAT_FM_TAT24D" /* GXT: Complete the Lapping It Up platinum Award. ~n~Get 25 Private Dances. */;
 			break;
 		
 		case 35:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 36:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 37:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 38:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 39:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 40:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 67:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 41:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 68:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 42:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 43:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 44:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 45:
-			return "TAT_FM_TAT37D";
+			return "TAT_FM_TAT37D" /* GXT: Complete the Pistol Whipped platinum Award. ~n~Get 500 Pistol kills. */;
 			break;
 		
 		case 46:
-			return "TAT_FM_TAT38D";
+			return "TAT_FM_TAT38D" /* GXT: Complete the Team Carrier platinum Award. ~n~Earn 50 MVPs in Team Deathmatch. */;
 			break;
 		
 		case 47:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 48:
-			return "TAT_FM_TAT40D";
+			return "TAT_FM_TAT40D" /* GXT: Complete the Scoping Out platinum Award. ~n~Get 100 Sniper kills. */;
 			break;
 		
 		case 49:
-			return "TAT_FM_TAT41D";
+			return "TAT_FM_TAT41D" /* GXT: Complete the Killstreaker platinum Award. ~n~Earn a 10 plus killstreak in Deathmatch. */;
 			break;
 		
 		case 50:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 51:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 52:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 53:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 69:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 57:
-			return "TAT_HOLDUP1V_D";
+			return "TAT_HOLDUP1V_D" /* GXT: Complete the Armed Robber bronze Award. ~n~Hold up 5 stores. */;
 			break;
 		
 		case 58:
-			return "TAT_HOLDUP5V_D";
+			return "TAT_HOLDUP5V_D" /* GXT: Complete the Armed Robber silver Award. ~n~Hold up 10 stores. */;
 			break;
 		
 		case 59:
-			return "TAT_HOLDUP10V_D";
+			return "TAT_HOLDUP10V_D" /* GXT: Complete the Armed Robber gold Award. ~n~Hold up 15 stores. */;
 			break;
 		
 		case 60:
-			return "TAT_HOLDUP20V_D";
+			return "TAT_HOLDUP20V_D" /* GXT: Complete the Armed Robber platinum Award. ~n~Hold up 20 stores. */;
 			break;
 	}
 	return sVar0;
@@ -8642,169 +8642,169 @@ char* func_83(int iParam0, int iParam1)//Position - 0x92A2
 	switch (iParam0)
 	{
 		case 0:
-			return "TAT_FM_HEADBANG";
+			return "TAT_FM_HEADBANG" /* GXT: Skull */;
 			break;
 		
 		case 2:
-			return "TAT_CLEAROUT";
+			return "TAT_CLEAROUT" /* GXT: Grim Reaper Smoking Gun */;
 			break;
 		
 		case 9:
-			return "TAT_FM_RANK1";
+			return "TAT_FM_RANK1" /* GXT: Blank Scroll */;
 			break;
 		
 		case 10:
-			return "TAT_FM_RANK2";
+			return "TAT_FM_RANK2" /* GXT: Embellished Scroll */;
 			break;
 		
 		case 11:
-			return "TAT_FM_RANK3";
+			return "TAT_FM_RANK3" /* GXT: Seven Deadly Sins */;
 			break;
 		
 		case 4:
-			return "TAT_FM_HUST";
+			return "TAT_FM_HUST" /* GXT: Hustler */;
 			break;
 		
 		case 1:
-			return "TAT_FM_SLAY";
+			return "TAT_FM_SLAY" /* GXT: Burning Heart */;
 			break;
 		
 		case 54:
-			return "TAT_FM_EVERMODE1";
+			return "TAT_FM_EVERMODE1" /* GXT: Angel */;
 			break;
 		
 		case 3:
-			return "TAT_FM_ARVANTAKE";
+			return "TAT_FM_ARVANTAKE" /* GXT: Blackjack */;
 			break;
 		
 		case 7:
-			return "TAT_FM_REVENKIL";
+			return "TAT_FM_REVENKIL" /* GXT: Dragon and Dagger */;
 			break;
 		
 		case 5:
-			return "TAT_FM_KILb";
+			return "TAT_FM_KILb" /* GXT: Skull and Sword */;
 			break;
 		
 		case 8:
-			return "TAT_FM_KIL3RACE";
+			return "TAT_FM_KIL3RACE" /* GXT: Ride or Die */;
 			break;
 		
 		case 6:
-			return "TAT_FM_RECHOLD";
+			return "TAT_FM_RECHOLD" /* GXT: Racing Blonde */;
 			break;
 		
 		case 12:
-			return "TAT_RACE50";
+			return "TAT_RACE50" /* GXT: Racing Brunette */;
 			break;
 		
 		case 13:
-			return "TAT_CRANKA";
+			return "TAT_CRANKA" /* GXT: Crew Rank 1 */;
 			break;
 		
 		case 14:
-			return "TAT_CRANKB";
+			return "TAT_CRANKB" /* GXT: Crew Rank 2 */;
 			break;
 		
 		case 15:
-			return "TAT_CRANKC";
+			return "TAT_CRANKC" /* GXT: Crew Rank 3 */;
 			break;
 		
 		case 16:
-			return "TAT_CRANKD";
+			return "TAT_CRANKD" /* GXT: Crew Rank 4 */;
 			break;
 		
 		case 87:
-			return "TAT_FM_REDSKULL";
+			return "TAT_FM_REDSKULL" /* GXT: Red Skull T-Shirt */;
 			break;
 		
 		case 88:
-			return "TAT_FM_BELLE";
+			return "TAT_FM_BELLE" /* GXT: Los Santos Belle T-Shirt */;
 			break;
 		
 		case 89:
-			return "TAT_FM_ROCKSTAR";
+			return "TAT_FM_ROCKSTAR" /* GXT: Rockstar T-Shirt */;
 			break;
 		
 		case 55:
-			return "TAT_FM_MODDED";
+			return "TAT_FM_MODDED" /* GXT: Los Santos Customs */;
 			break;
 		
 		case 17:
-			return "TAT_FM_TAT1";
+			return "TAT_FM_TAT1" /* GXT: Tattoo 1 */;
 			break;
 		
 		case 18:
-			return "TAT_FM_TAT2";
+			return "TAT_FM_TAT2" /* GXT: Tattoo 2 */;
 			break;
 		
 		case 19:
-			return "TAT_FM_TAT3";
+			return "TAT_FM_TAT3" /* GXT: Tattoo 3 */;
 			break;
 		
 		case 20:
-			return "TAT_FM_TAT4";
+			return "TAT_FM_TAT4" /* GXT: Tattoo 4 */;
 			break;
 		
 		case 21:
-			return "TAT_FM_TAT5";
+			return "TAT_FM_TAT5" /* GXT: Tattoo 5 */;
 			break;
 		
 		case 22:
-			return "TAT_FM_TAT6";
+			return "TAT_FM_TAT6" /* GXT: Tattoo 6 */;
 			break;
 		
 		case 56:
-			return "TAT_CHEATER";
+			return "TAT_CHEATER" /* GXT: Trust No One */;
 			break;
 	}
 	switch (iParam0)
 	{
 		case 23:
-			return "TAT_FM_TAT7";
+			return "TAT_FM_TAT7" /* GXT: Tattoo 7 */;
 			break;
 		
 		case 24:
-			return "TAT_FM_TAT8";
+			return "TAT_FM_TAT8" /* GXT: Tattoo 8 */;
 			break;
 		
 		case 25:
-			return "TAT_FM_TAT9";
+			return "TAT_FM_TAT9" /* GXT: Melting Skull */;
 			break;
 		
 		case 26:
-			return "TAT_FM_TAT10";
+			return "TAT_FM_TAT10" /* GXT: Tattoo 10 */;
 			break;
 		
 		case 27:
-			return "TAT_FM_TAT11";
+			return "TAT_FM_TAT11" /* GXT: Tattoo 11 */;
 			break;
 		
 		case 28:
-			return "TAT_FM_TAT12";
+			return "TAT_FM_TAT12" /* GXT: Tattoo 12 */;
 			break;
 		
 		case 61:
-			return "TAT_FM_TAT13";
+			return "TAT_FM_TAT13" /* GXT: Tattoo 13 */;
 			break;
 		
 		case 62:
-			return "TAT_FM_TAT14";
+			return "TAT_FM_TAT14" /* GXT: Tattoo 14 */;
 			break;
 		
 		case 63:
-			return "TAT_FM_TAT15";
+			return "TAT_FM_TAT15" /* GXT: Tattoo 1 */;
 			break;
 		
 		case 64:
-			return "TAT_FM_TAT16";
+			return "TAT_FM_TAT16" /* GXT: Tattoo 16 */;
 			break;
 		
 		case 65:
-			return "TAT_FM_TAT38";
+			return "TAT_FM_TAT38" /* GXT: The Wages of Sin */;
 			break;
 		
 		case 29:
-			return "TAT_FM_TAT18";
+			return "TAT_FM_TAT18" /* GXT: Tattoo 19 */;
 			break;
 		
 		case 30:
@@ -8812,127 +8812,127 @@ char* func_83(int iParam0, int iParam1)//Position - 0x92A2
 			break;
 		
 		case 31:
-			return "TAT_FM_TAT20";
+			return "TAT_FM_TAT20" /* GXT: Tattoo 20 */;
 			break;
 		
 		case 66:
-			return "TAT_FM_TAT21";
+			return "TAT_FM_TAT21" /* GXT: Tattoo 21 */;
 			break;
 		
 		case 32:
-			return "TAT_FM_TAT22";
+			return "TAT_FM_TAT22" /* GXT: Tattoo 22 */;
 			break;
 		
 		case 33:
-			return "TAT_FM_TAT23";
+			return "TAT_FM_TAT23" /* GXT: Tattoo 23 */;
 			break;
 		
 		case 34:
-			return "TAT_FM_TAT24";
+			return "TAT_FM_TAT24" /* GXT: Hottie */;
 			break;
 		
 		case 35:
-			return "TAT_FM_TAT25";
+			return "TAT_FM_TAT25" /* GXT: Tattoo 25 */;
 			break;
 		
 		case 36:
-			return "TAT_FM_TAT26";
+			return "TAT_FM_TAT26" /* GXT: Tattoo 26 */;
 			break;
 		
 		case 37:
-			return "TAT_FM_TAT27";
+			return "TAT_FM_TAT27" /* GXT: Tattoo 27 */;
 			break;
 		
 		case 38:
-			return "TAT_FM_TAT28";
+			return "TAT_FM_TAT28" /* GXT: Tattoo 28 */;
 			break;
 		
 		case 39:
-			return "TAT_FM_TAT29";
+			return "TAT_FM_TAT29" /* GXT: Tattoo 29 */;
 			break;
 		
 		case 40:
-			return "TAT_FM_TAT30";
+			return "TAT_FM_TAT30" /* GXT: Tattoo 30 */;
 			break;
 		
 		case 67:
-			return "TAT_FM_TAT31";
+			return "TAT_FM_TAT31" /* GXT: Tattoo 31 */;
 			break;
 		
 		case 41:
-			return "TAT_FM_TAT32";
+			return "TAT_FM_TAT32" /* GXT: Tattoo 32 */;
 			break;
 		
 		case 68:
-			return "TAT_FM_TAT33";
+			return "TAT_FM_TAT33" /* GXT: Tattoo 33 */;
 			break;
 		
 		case 42:
-			return "TAT_FM_TAT34";
+			return "TAT_FM_TAT34" /* GXT: Tattoo 34 */;
 			break;
 		
 		case 43:
-			return "TAT_FM_TAT35";
+			return "TAT_FM_TAT35" /* GXT: Tattoo 35 */;
 			break;
 		
 		case 44:
-			return "TAT_FM_TAT36";
+			return "TAT_FM_TAT36" /* GXT: Tattoo 36 */;
 			break;
 		
 		case 45:
-			return "TAT_FM_TAT37";
+			return "TAT_FM_TAT37" /* GXT: Way Of The Gun */;
 			break;
 		
 		case 46:
-			return "TAT_FM_TAT41";
+			return "TAT_FM_TAT41" /* GXT: Grim Reaper */;
 			break;
 		
 		case 47:
-			return "TAT_FM_TAT39";
+			return "TAT_FM_TAT39" /* GXT: Tattoo 39 */;
 			break;
 		
 		case 48:
-			return "TAT_FM_TAT40";
+			return "TAT_FM_TAT40" /* GXT: Broken Skull */;
 			break;
 		
 		case 49:
-			return "TAT_FM_TAT17";
+			return "TAT_FM_TAT17" /* GXT: Flaming Skull */;
 			break;
 		
 		case 50:
-			return "TAT_FM_TAT42";
+			return "TAT_FM_TAT42" /* GXT: Tattoo 42 */;
 			break;
 		
 		case 51:
-			return "TAT_FM_TAT43";
+			return "TAT_FM_TAT43" /* GXT: Tattoo 43 */;
 			break;
 		
 		case 52:
-			return "TAT_FM_TAT44";
+			return "TAT_FM_TAT44" /* GXT: Tattoo 44 */;
 			break;
 		
 		case 53:
-			return "TAT_FM_TAT45";
+			return "TAT_FM_TAT45" /* GXT: Tattoo 45 */;
 			break;
 		
 		case 69:
-			return "TAT_FM_TAT46";
+			return "TAT_FM_TAT46" /* GXT: Tattoo 46 */;
 			break;
 		
 		case 57:
-			return "TAT_HOLDUP1V";
+			return "TAT_HOLDUP1V" /* GXT: Clown */;
 			break;
 		
 		case 58:
-			return "TAT_HOLDUP5V";
+			return "TAT_HOLDUP5V" /* GXT: Clown and Gun */;
 			break;
 		
 		case 59:
-			return "TAT_HOLDUP10V";
+			return "TAT_HOLDUP10V" /* GXT: Clown Dual Wield */;
 			break;
 		
 		case 60:
-			return "TAT_HOLDUP20V";
+			return "TAT_HOLDUP20V" /* GXT: Clown Dual Wield Dollars */;
 			break;
 	}
 	return sVar0;
@@ -9629,67 +9629,67 @@ char* func_95(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 	switch (iParam0)
 	{
 		case 12:
-			return "AWS_775";
+			return "AWS_775" /* GXT: Learn the ropes in this two man bank Heist. It will help prepare you for the bigger Heists that Lester may pass your way. Complete The Fleeca Job Heist Finale. */;
 		
 		case 13:
-			return "AWS_767";
+			return "AWS_767" /* GXT: Most Los Santos citizens plan to stay out of jail, but this Heist sends you straight to Bolingbroke Penitentiary. Complete The Prison Break Heist Finale. */;
 		
 		case 14:
-			return "AWS_768";
+			return "AWS_768" /* GXT: The research facility is heavily protected so you'll need some serious muscle to pull this off. Complete The Humane Labs Raid Heist Finale. */;
 		
 		case 15:
-			return "AWS_776";
+			return "AWS_776" /* GXT: This Heist is all about redistribution of assets and it looks like you'll need to get your hands dirty. Complete Series A Funding Heist Finale. */;
 		
 		case 16:
-			return "AWS_780";
+			return "AWS_780" /* GXT: Prove your ability to pull off the classic bank job. Crack the vault, grab the cash and get out of there. Complete The Pacific Standard Job Heist Finale. */;
 		
 		case 17:
-			return "AWS_777";
+			return "AWS_777" /* GXT: See all the Heists through from beginning to end and earn a handsome cash bonus. Complete all 5 Heists in order including all Setups and Finales. */;
 		
 		case 18:
-			return "AWS_778";
+			return "AWS_778" /* GXT: Trusting a stranger as back up on a Heist could go disastrously wrong. Find a loyal crew and pull off all 5 Heists back to back with the same team of players. */;
 		
 		case 19:
-			return "AWS_779";
+			return "AWS_779" /* GXT: Only professionals need apply. This is the ultimate challenge. Complete all 5 Heists in full on hard difficulty, in order, with the same team and without losing a single life. */;
 		
 		case 20:
-			return "AWS_785";
+			return "AWS_785" /* GXT: Complete all Heist setups and Finales in first person mode. The leader must lock the camera option to first person when setting up the Heist. */;
 		
 		case 21:
-			return "AWS_786";
+			return "AWS_786" /* GXT: Leave the logistics to the leader. Get your hands dirty and get paid for it. Complete all Heist Setups and Finales as a member. */;
 		
 		case 1:
-			return "AWD_GANGOP0d";
+			return "AWD_GANGOP0d" /* GXT: Complete Act I of The Doomsday Heist for the first time. */;
 		
 		case 2:
-			return "AWD_GANGOP1d";
+			return "AWD_GANGOP1d" /* GXT: Complete Act II of The Doomsday Heist for the first time. */;
 		
 		case 6:
-			return "AWD_GANGOP2d";
+			return "AWD_GANGOP2d" /* GXT: Complete Act III of The Doomsday Heist for the first time. */;
 		
 		case 3:
-			return "AWD_GANGOP3d";
+			return "AWD_GANGOP3d" /* GXT: Complete The Doomsday Heist in order. */;
 		
 		case 4:
-			return "AWD_GANGOP7d";
+			return "AWD_GANGOP7d" /* GXT: Complete The Doomsday Heist in order with the same team of 4 players. */;
 		
 		case 5:
-			return "AWD_GANGOP9d";
+			return "AWD_GANGOP9d" /* GXT: Complete The Doomsday Heist in order, with the same team of 4 players, on hard difficulty, without losing any lives on Setups and Finales. */;
 		
 		case 7:
-			return "AWD_GANGOP4d";
+			return "AWD_GANGOP4d" /* GXT: Complete The Doomsday Heist in order with the same team of 2 players. */;
 		
 		case 8:
-			return "AWD_GANGOP6d";
+			return "AWD_GANGOP6d" /* GXT: Complete The Doomsday Heist in order with the same team of 3 players. */;
 		
 		case 9:
-			return "AWD_GANGOP5d";
+			return "AWD_GANGOP5d" /* GXT: Complete The Doomsday Heist in order, with the same team of 2 players, on hard difficulty, without losing any lives on Setups and Finales. */;
 		
 		case 10:
-			return "AWD_GANGOP8d";
+			return "AWD_GANGOP8d" /* GXT: Complete The Doomsday Heist in order, with the same team of 3 players, on hard difficulty, without losing any lives on Setups and Finales. */;
 		
 		case 11:
-			return "AWD_GANGO10d";
+			return "AWD_GANGO10d" /* GXT: Complete all acts of The Doomsday Heist as a crew member, ending with completion of the Act III finale. */;
 		
 		default:
 	}
@@ -9707,34 +9707,34 @@ char* func_96(int iParam0, int iParam1, bool bParam2)//Position - 0xA271
 	switch (iParam0)
 	{
 		case 12:
-			return "AWT_775";
+			return "AWT_775" /* GXT: Head For Heists */;
 		
 		case 13:
-			return "AWT_767";
+			return "AWT_767" /* GXT: Go To Jail */;
 		
 		case 14:
-			return "AWT_768";
+			return "AWT_768" /* GXT: Lab Report */;
 		
 		case 15:
-			return "AWT_776";
+			return "AWT_776" /* GXT: Product Placement */;
 		
 		case 16:
-			return "AWT_780";
+			return "AWT_780" /* GXT: Smooth Sailing */;
 		
 		case 17:
-			return "AWT_777";
+			return "AWT_777" /* GXT: All In Order */;
 		
 		case 18:
-			return "AWT_778";
+			return "AWT_778" /* GXT: Loyalty */;
 		
 		case 19:
-			return "AWT_779";
+			return "AWT_779" /* GXT: Criminal Mastermind */;
 		
 		case 20:
-			return "AWT_785";
+			return "AWT_785" /* GXT: Another Perspective */;
 		
 		case 21:
-			return "AWT_786";
+			return "AWT_786" /* GXT: Supporting Role */;
 		
 		case 1:
 		case 2:
@@ -9759,37 +9759,37 @@ char* func_97(int iParam0)//Position - 0xA35D
 	switch (iParam0)
 	{
 		case 1:
-			return "AWD_GANGOPF0";
+			return "AWD_GANGOPF0" /* GXT: Act I */;
 		
 		case 2:
-			return "AWD_GANGOPF1";
+			return "AWD_GANGOPF1" /* GXT: Act II */;
 		
 		case 6:
-			return "AWD_GANGOPF2";
+			return "AWD_GANGOPF2" /* GXT: Act III */;
 		
 		case 3:
-			return "AWD_GANGOPA";
+			return "AWD_GANGOPA" /* GXT: All In Order II */;
 		
 		case 4:
-			return "AWD_GANGOPL4";
+			return "AWD_GANGOPL4" /* GXT: Loyalty IV */;
 		
 		case 7:
-			return "AWD_GANGOPL2";
+			return "AWD_GANGOPL2" /* GXT: Loyalty II */;
 		
 		case 8:
-			return "AWD_GANGOPL3";
+			return "AWD_GANGOPL3" /* GXT: Loyalty III */;
 		
 		case 5:
-			return "AWD_GANGOPM4";
+			return "AWD_GANGOPM4" /* GXT: Criminal Mastermind IV */;
 		
 		case 9:
-			return "AWD_GANGOPM2";
+			return "AWD_GANGOPM2" /* GXT: Criminal Mastermind II */;
 		
 		case 10:
-			return "AWD_GANGOPM3";
+			return "AWD_GANGOPM3" /* GXT: Criminal Mastermind III */;
 		
 		case 11:
-			return "AWD_GANGOPSR";
+			return "AWD_GANGOPSR" /* GXT: Supporting Role II */;
 		
 		default:
 	}
@@ -11051,7 +11051,7 @@ char* func_108(int iParam0, int iParam1)//Position - 0xB3FB
 			return "TrueLove";
 		
 		case 87:
-			return "Nemesis";
+			return "Nemesis" /* GXT: Nemesis */;
 		
 		case 88:
 			return "Friendzoned";
@@ -11316,19 +11316,19 @@ char* func_109(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 
 			return "AWS_771";
 		
 		case 144:
-			return "AWS_751";
+			return "AWS_751" /* GXT: Take your time and complete a Heist Finale without taking any damage. Be cautious but don't be a coward, your team still need you. */;
 		
 		case 148:
-			return "AWS_763";
+			return "AWS_763" /* GXT: Every car enthusiast would love to have 30 modded rides at their fingertips. Fill out three of the large Garages that Los Santos has to offer. */;
 		
 		case 143:
-			return "AWS_754";
+			return "AWS_754" /* GXT: Good karma may come your way if you share more of your profits with your Heist crew members. Split a Finale take evenly between 4 players. */;
 		
 		case 146:
-			return "AWS_765";
+			return "AWS_765" /* GXT: Versatility is the key. Perform every possible role in The Prison Break, The Humane Labs Raid, Series A Funding and The Pacific Standard Job Heists. */;
 		
 		case 147:
-			return "AWS_756";
+			return "AWS_756" /* GXT: You can't do this alone. Activate a two person key switch. */;
 		
 		case 149:
 			return "AWS_793";
@@ -11409,274 +11409,274 @@ char* func_109(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 
 			return "AWS_820";
 		
 		case 53:
-			return "AWS_836";
+			return "AWS_836" /* GXT: Complete Loose Cheng for the first time and earn $50,000. */;
 		
 		case 54:
-			return "AWS_837";
+			return "AWS_837" /* GXT: Complete House Keeping for the first time and earn $50,000. */;
 		
 		case 55:
-			return "AWS_838";
+			return "AWS_838" /* GXT: Complete Strong Arm Tactics for the first time and earn $50,000. */;
 		
 		case 56:
-			return "AWS_839";
+			return "AWS_839" /* GXT: Complete Play to Win for the first time and earn $50,000. */;
 		
 		case 57:
-			return "AWS_840";
+			return "AWS_840" /* GXT: Complete Bad Beat for the first time and earn $50,000. */;
 		
 		case 58:
-			return "AWS_841";
+			return "AWS_841" /* GXT: Complete Cashing Out for the first time and earn $100,000. */;
 		
 		case 59:
-			return "AWS_842";
+			return "AWS_842" /* GXT: Complete all Casino Story Missions in order and earn $500,000. */;
 		
 		case 62:
-			return "AWS_846";
+			return "AWS_846" /* GXT: Complete a Casino Story Mission without losing a life and earn $50,000. */;
 		
 		case 60:
-			return "AWS_843";
+			return "AWS_843" /* GXT: Complete all Casino Story Missions as a Crew member and earn $100,000. */;
 		
 		case 61:
-			return "AWS_844";
+			return "AWS_844" /* GXT: Complete all Casino Story Missions as Leader to earn $100,000 and a bonus item. */;
 		
 		case 63:
-			return "AWS_857";
+			return "AWS_857" /* GXT: Scope all entrances and exits for The Diamond Casino Heist. */;
 		
 		case 64:
-			return "AWS_858";
+			return "AWS_858" /* GXT: Unlock all possible crew members for The Diamond Casino Heist. */;
 		
 		case 65:
-			return "AWS_859";
+			return "AWS_859" /* GXT: Stop a mall cop being fired again during The Diamond Casino Heist. */;
 		
 		case 66:
-			return "AWS_860";
+			return "AWS_860" /* GXT: Use someone famous to get into the Casino back area. */;
 		
 		case 67:
-			return "AWS_861";
+			return "AWS_861" /* GXT: Find and help break out an old accomplice for The Diamond Casino Heist. */;
 		
 		case 68:
-			return "AWS_862";
+			return "AWS_862" /* GXT: Complete the Aggressive approach to The Diamond Casino Heist and earn $100000. */;
 		
 		case 69:
-			return "AWS_863";
+			return "AWS_863" /* GXT: Complete The Big Con approach to The Diamond Casino Heist without breaking your disguise inside the Casino and earn $150000. */;
 		
 		case 70:
-			return "AWS_864";
+			return "AWS_864" /* GXT: Complete the Silent & Sneaky approach to The Diamond Casino Heist without ever being detected and earn $200000. */;
 		
 		case 71:
-			return "AWS_865";
+			return "AWS_865" /* GXT: Complete the Aggressive, The Big Con and Silent & Sneaky approaches to The Diamond Casino Heist and earn $300000. */;
 		
 		case 72:
-			return "AWS_866";
+			return "AWS_866" /* GXT: Complete the elite challenges for the Aggressive, The Big Con and Silent & Sneaky approaches to The Diamond Casino Heist and earn $350000. */;
 		
 		case 73:
-			return "AWS_867";
+			return "AWS_867" /* GXT: Complete The Diamond Casino Heist on Hard and without losing a life and earn $250,000. */;
 		
 		case 74:
-			return "AWS_868";
+			return "AWS_868" /* GXT: Complete The Diamond Casino Heist as a crew member. */;
 		
 		case 75:
-			return "AWS_869";
+			return "AWS_869" /* GXT: Use the elevator shaft to reach the staff lobby during The Diamond Casino Heist. */;
 		
 		case 76:
-			return "AWS_870";
+			return "AWS_870" /* GXT: Steal all variations of loot from the vault during The Diamond Casino Heist. */;
 		
 		case 77:
-			return "AWS_871";
+			return "AWS_871" /* GXT: Get over 90% accuracy for an entire playthrough of Badlands Revenge II. */;
 		
 		case 78:
-			return "AWS_872";
+			return "AWS_872" /* GXT: Complete Badlands Revenge II using only pistols. */;
 		
 		case 79:
-			return "AWS_873";
+			return "AWS_873" /* GXT: Complete the full race without crashing in Race And Chase. */;
 		
 		case 80:
-			return "AWS_874";
+			return "AWS_874" /* GXT: Complete Race And Chase with all vehicle types. */;
 		
 		case 81:
-			return "AWS_875";
+			return "AWS_875" /* GXT: Complete The Wizard's Ruin adventure as Grog. */;
 		
 		case 82:
-			return "AWS_876";
+			return "AWS_876" /* GXT: Survive any stage without taking any damage in Space Monkey 3: Bananas Gone Bad. */;
 		
 		case 83:
-			return "AWS_877";
+			return "AWS_877" /* GXT: Complete Space Monkey 3: Bananas Gone Bad without the use of any powerups or pickups. */;
 		
 		case 84:
-			return "AWS_878";
+			return "AWS_878" /* GXT: Complete the underwater level in Monkey Paradise. */;
 		
 		case 85:
-			return "AWS_879";
+			return "AWS_879" /* GXT: Complete a level of Defender of the Faith by only pressing right. */;
 		
 		case 86:
-			return "AWS_880";
+			return "AWS_880" /* GXT: Get a true love rating on The Love Professor. */;
 		
 		case 87:
-			return "AWS_881";
+			return "AWS_881" /* GXT: Find your nemesis using The Love Professor Cabinet. */;
 		
 		case 88:
-			return "AWS_882";
+			return "AWS_882" /* GXT: The friendzone doesn't exist but perhaps you can find yourself in it using The Love Professor. */;
 		
 		case 89:
-			return "AWS_886";
+			return "AWS_886" /* GXT: Get first place on the QUB3D leaderboard. */;
 		
 		case 90:
-			return "AWS_887";
+			return "AWS_887" /* GXT: Reach level 20 in QUB3D without using special abilities. */;
 		
 		case 93:
-			return "AWS_888";
+			return "AWS_888" /* GXT: Get the highest score in Axe of Fury. */;
 		
 		case 92:
-			return "AWS_889";
+			return "AWS_889" /* GXT: Get a score of 19000 in a single play of QUB3D. */;
 		
 		case 91:
-			return "AWS_890";
+			return "AWS_890" /* GXT: Reach level 20 without removing any blocks from play. */;
 		
 		case 94:
-			return "AWS_891";
+			return "AWS_891" /* GXT: Get the highest score in Axe of Fury 11 times. */;
 		
 		case 95:
-			return "AWS_917";
+			return "AWS_917" /* GXT: Scope out all infiltration and escape points on Cayo Perico. */;
 		
 		case 96:
-			return "AWS_918";
+			return "AWS_918" /* GXT: Scope out all entry points into El Rubio's compound on Cayo Perico. */;
 		
 		case 97:
-			return "AWS_919";
+			return "AWS_919" /* GXT: Scope out all the secondary target locations in a single playthrough of The Cayo Perico Heist. */;
 		
 		case 98:
-			return "AWS_920";
+			return "AWS_920" /* GXT: Complete all three disruption prep missions in a single playthrough of The Cayo Perico Heist. */;
 		
 		case 99:
-			return "AWS_921";
+			return "AWS_921" /* GXT: Complete The Cayo Perico Heist for the first time to earn $200,000. */;
 		
 		case 100:
-			return "AWS_922";
+			return "AWS_922" /* GXT: Complete The Cayo Perico Heist with one player to earn $100,000. */;
 		
 		case 101:
-			return "AWS_923";
+			return "AWS_923" /* GXT: Complete The Cayo Perico Heist with four players to earn $100,000. */;
 		
 		case 102:
-			return "AWS_924";
+			return "AWS_924" /* GXT: Approach The Cayo Perico Heist using all of the different vehicles to earn $250,000. */;
 		
 		case 103:
-			return "AWS_925";
+			return "AWS_925" /* GXT: Steal all variations of the primary target during The Cayo Perico Heist to earn $150,000. */;
 		
 		case 104:
-			return "AWS_926";
+			return "AWS_926" /* GXT: Complete The Cayo Perico Heist without ever alerting the guards to earn $200,000. */;
 		
 		case 105:
-			return "AWS_927";
+			return "AWS_927" /* GXT: Enter the compound using a stolen disguise during The Cayo Perico Heist. */;
 		
 		case 106:
-			return "AWS_928";
+			return "AWS_928" /* GXT: Steal El Rubio's prized weapon during The Cayo Perico Heist. */;
 		
 		case 107:
-			return "AWS_929";
+			return "AWS_929" /* GXT: Complete the elite challenge for The Cayo Perico Heist to earn $200,000. */;
 		
 		case 108:
-			return "AWS_930";
+			return "AWS_930" /* GXT: Complete The Cayo Perico Heist on Hard and without losing a life to earn $200,000. */;
 		
 		case 109:
-			return "AWS_931";
+			return "AWS_931" /* GXT: Complete all Palms Trax requests sent by Tom Connors. */;
 		
 		case 110:
-			return "AWS_932";
+			return "AWS_932" /* GXT: Complete all Keinemusik's requests sent by English Dave. */;
 		
 		case 111:
-			return "AWS_933";
+			return "AWS_933" /* GXT: Revisit the Cayo Perico beach party after completing The Cayo Perico Heist. */;
 		
 		case 112:
-			return "AWS_934";
+			return "AWS_934" /* GXT: Complete all Moodymann's requests sent by Tom Connors. */;
 		
 		case 113:
-			return "AWS_944";
+			return "AWS_944" /* GXT: Visit The LS Car Meet for the first time. */;
 		
 		case 114:
-			return "AWS_951";
+			return "AWS_951" /* GXT: Deliver all 10 Exotic Exports Vehicles to the Docks in a single day. */;
 		
 		case 115:
-			return "AWS_953";
+			return "AWS_953" /* GXT: Complete The Union Depository Contract as leader to earn $75,000. */;
 		
 		case 116:
-			return "AWS_954";
+			return "AWS_954" /* GXT: Complete The Superdollar Deal as leader to earn $75,000. */;
 		
 		case 117:
-			return "AWS_955";
+			return "AWS_955" /* GXT: Complete The Bank Contract as leader to earn $75,000. */;
 		
 		case 118:
-			return "AWS_956";
+			return "AWS_956" /* GXT: Complete The E.C.U. Job as leader to earn $75,000. */;
 		
 		case 119:
-			return "AWS_957";
+			return "AWS_957" /* GXT: Complete The Prison Contract as leader to earn $75,000. */;
 		
 		case 120:
-			return "AWS_958";
+			return "AWS_958" /* GXT: Complete The Agency Deal as leader to earn $75,000. */;
 		
 		case 121:
-			return "AWS_959";
+			return "AWS_959" /* GXT: Complete The Lost Contract as leader to earn $75,000. */;
 		
 		case 122:
-			return "AWS_960";
+			return "AWS_960" /* GXT: Complete The Data Contract as leader to earn $75,000. */;
 		
 		case 123:
-			return "AWS_963";
+			return "AWS_963" /* GXT: Complete all levels using only the pistol in Camhedz. */;
 		
 		case 124:
-			return "AWS_964";
+			return "AWS_964" /* GXT: Kill all costumed weirdos across all scenes in Camhedz. */;
 		
 		case 125:
-			return "AWS_965";
+			return "AWS_965" /* GXT: Get an average of 60% accuracy across all scenes in Camhedz. */;
 		
 		case 126:
-			return "AWS_966";
+			return "AWS_966" /* GXT: Get a 5-star rating on each of the scenes in Camhedz. */;
 		
 		case 127:
-			return "AWS_968";
+			return "AWS_968" /* GXT: Meet Dr. Dre at the Los Santos Golf Club as leader to earn $50,000. */;
 		
 		case 128:
-			return "AWS_969";
+			return "AWS_969" /* GXT: Locate this copy of Dr. Dre's stolen music as leader to earn $100,000. */;
 		
 		case 129:
-			return "AWS_970";
+			return "AWS_970" /* GXT: Locate this copy of Dr. Dre's stolen music as leader to earn $100,000. */;
 		
 		case 130:
-			return "AWS_971";
+			return "AWS_971" /* GXT: Locate this copy of Dr. Dre's stolen music as leader to earn $100,000. */;
 		
 		case 131:
-			return "AWS_972";
+			return "AWS_972" /* GXT: Help Dr. Dre at Record A Studios as leader to earn $100,000. */;
 		
 		case 132:
-			return "AWS_973";
+			return "AWS_973" /* GXT: Track down the thief who stole Dr. Dre's music as leader to earn $250,000. */;
 		
 		case 133:
-			return "AWS_974";
+			return "AWS_974" /* GXT: Complete all of Dr. Dre's Story missions as a member of an Organization or Motorcycle Club to earn $100,000. */;
 		
 		case 134:
-			return "AWS_975";
+			return "AWS_975" /* GXT: Complete Seed Capital as Franklin to earn $100,000. */;
 		
 		case 135:
-			return "AWS_977";
+			return "AWS_977" /* GXT: Complete Fire It Up as Franklin to earn $100,000. */;
 		
 		case 136:
-			return "AWS_984";
+			return "AWS_984" /* GXT: Complete OG Kush as Franklin to earn $100,000. */;
 		
 		case 137:
-			return "AWS_980";
+			return "AWS_980" /* GXT: Complete every Payphone Hit with the Assassination Bonus. */;
 		
 		case 138:
-			return "AWS_981";
+			return "AWS_981" /* GXT: Pet Chop. */;
 		
 		case 139:
-			return "AWS_982";
+			return "AWS_982" /* GXT: Visit Record A Studios. */;
 		
 		case 140:
-			return "AWS_976";
+			return "AWS_976" /* GXT: Complete Seed Capital as Lamar to earn $100,000. */;
 		
 		case 141:
-			return "AWS_986";
+			return "AWS_986" /* GXT: Complete Fire It Up as Lamar to earn $100,000. */;
 		
 		case 142:
-			return "AWS_985";
+			return "AWS_985" /* GXT: Complete OG Kush as Lamar to earn $100,000. */;
 	}
 	return "";
 }
@@ -11761,19 +11761,19 @@ char* func_110(int iParam0, int iParam1, bool bParam2)//Position - 0xC310
 			return "AWT_784";
 		
 		case 144:
-			return "AWT_751";
+			return "AWT_751" /* GXT: Can't Touch This */;
 		
 		case 143:
-			return "AWT_754";
+			return "AWT_754" /* GXT: Four Way */;
 		
 		case 146:
-			return "AWT_765";
+			return "AWT_765" /* GXT: Jack Of All Trades */;
 		
 		case 148:
-			return "AWT_763";
+			return "AWT_763" /* GXT: Showroom */;
 		
 		case 147:
-			return "AWT_756";
+			return "AWT_756" /* GXT: It Takes Two */;
 			break;
 		
 		case 149:
@@ -11855,274 +11855,274 @@ char* func_110(int iParam0, int iParam1, bool bParam2)//Position - 0xC310
 			return "AWT_820";
 		
 		case 53:
-			return "AWT_836";
+			return "AWT_836" /* GXT: Loose Cheng */;
 		
 		case 54:
-			return "AWT_837";
+			return "AWT_837" /* GXT: House Keeping */;
 		
 		case 55:
-			return "AWT_838";
+			return "AWT_838" /* GXT: Strong Arm Tactics */;
 		
 		case 56:
-			return "AWT_839";
+			return "AWT_839" /* GXT: Play to Win */;
 		
 		case 57:
-			return "AWT_840";
+			return "AWT_840" /* GXT: Bad Beat */;
 		
 		case 58:
-			return "AWT_841";
+			return "AWT_841" /* GXT: Cashing Out */;
 		
 		case 59:
-			return "AWT_842";
+			return "AWT_842" /* GXT: Straight */;
 		
 		case 62:
-			return "AWT_846";
+			return "AWT_846" /* GXT: Lucky Lucky */;
 		
 		case 60:
-			return "AWT_843";
+			return "AWT_843" /* GXT: Top Pair */;
 		
 		case 61:
-			return "AWT_844";
+			return "AWT_844" /* GXT: Full House */;
 		
 		case 63:
-			return "AWT_857";
+			return "AWT_857" /* GXT: Scope Out */;
 		
 		case 64:
-			return "AWT_858";
+			return "AWT_858" /* GXT: All Crewed Up */;
 		
 		case 65:
-			return "AWT_859";
+			return "AWT_859" /* GXT: Moving On */;
 		
 		case 66:
-			return "AWT_860";
+			return "AWT_860" /* GXT: After Party */;
 		
 		case 67:
-			return "AWT_861";
+			return "AWT_861" /* GXT: Gunman */;
 		
 		case 68:
-			return "AWT_862";
+			return "AWT_862" /* GXT: Smash & Grab */;
 		
 		case 69:
-			return "AWT_863";
+			return "AWT_863" /* GXT: Hidden In Plain Sight */;
 		
 		case 70:
-			return "AWT_864";
+			return "AWT_864" /* GXT: Undetected */;
 		
 		case 71:
-			return "AWT_865";
+			return "AWT_865" /* GXT: All Rounder */;
 		
 		case 72:
-			return "AWT_866";
+			return "AWT_866" /* GXT: Elite Thief */;
 		
 		case 73:
-			return "AWT_867";
+			return "AWT_867" /* GXT: Professional */;
 		
 		case 74:
-			return "AWT_868";
+			return "AWT_868" /* GXT: Support Act */;
 		
 		case 75:
-			return "AWT_869";
+			return "AWT_869" /* GXT: Shafted */;
 		
 		case 76:
-			return "AWT_870";
+			return "AWT_870" /* GXT: Collector */;
 		
 		case 77:
-			return "AWT_871";
+			return "AWT_871" /* GXT: Dead Eye */;
 		
 		case 78:
-			return "AWT_872";
+			return "AWT_872" /* GXT: Pistols At Dawn */;
 		
 		case 79:
-			return "AWT_873";
+			return "AWT_873" /* GXT: Beat The Traffic */;
 		
 		case 80:
-			return "AWT_874";
+			return "AWT_874" /* GXT: All Wheels */;
 		
 		case 81:
-			return "AWT_875";
+			return "AWT_875" /* GXT: Feelin' Groggy */;
 		
 		case 82:
-			return "AWT_876";
+			return "AWT_876" /* GXT: Ape Escape */;
 		
 		case 83:
-			return "AWT_877";
+			return "AWT_877" /* GXT: Monkey Mind */;
 		
 		case 84:
-			return "AWT_878";
+			return "AWT_878" /* GXT: Aquatic Ape */;
 		
 		case 85:
-			return "AWT_879";
+			return "AWT_879" /* GXT: Keeping The Faith */;
 		
 		case 86:
-			return "AWT_880";
+			return "AWT_880" /* GXT: True Love */;
 		
 		case 87:
-			return "AWT_881";
+			return "AWT_881" /* GXT: Nemesis */;
 		
 		case 88:
-			return "AWT_882";
+			return "AWT_882" /* GXT: Friendzoned */;
 		
 		case 89:
-			return "AWT_886";
+			return "AWT_886" /* GXT: King Of QUB3D */;
 		
 		case 90:
-			return "AWT_887";
+			return "AWT_887" /* GXT: Qubism */;
 		
 		case 93:
-			return "AWT_888";
+			return "AWT_888" /* GXT: Crank It To 11 */;
 		
 		case 92:
-			return "AWT_889";
+			return "AWT_889" /* GXT: God of QUB3D */;
 		
 		case 91:
-			return "AWT_890";
+			return "AWT_890" /* GXT: Qubits */;
 		
 		case 94:
-			return "AWT_891";
+			return "AWT_891" /* GXT: 11 11 */;
 		
 		case 95:
-			return "AWT_917";
+			return "AWT_917" /* GXT: In And Out */;
 		
 		case 96:
-			return "AWT_918";
+			return "AWT_918" /* GXT: Easy Access */;
 		
 		case 97:
-			return "AWT_919";
+			return "AWT_919" /* GXT: Its A Steal */;
 		
 		case 98:
-			return "AWT_920";
+			return "AWT_920" /* GXT: Maximum Disruption */;
 		
 		case 99:
-			return "AWT_921";
+			return "AWT_921" /* GXT: The Cayo Perico Heist */;
 		
 		case 100:
-			return "AWT_922";
+			return "AWT_922" /* GXT: Going Alone */;
 		
 		case 101:
-			return "AWT_923";
+			return "AWT_923" /* GXT: Teamwork */;
 		
 		case 102:
-			return "AWT_924";
+			return "AWT_924" /* GXT: Travel Plans */;
 		
 		case 103:
-			return "AWT_925";
+			return "AWT_925" /* GXT: Professional Thief */;
 		
 		case 104:
-			return "AWT_926";
+			return "AWT_926" /* GXT: Cat Burglar */;
 		
 		case 105:
-			return "AWT_927";
+			return "AWT_927" /* GXT: One Of Them */;
 		
 		case 106:
-			return "AWT_928";
+			return "AWT_928" /* GXT: Go For Gold */;
 		
 		case 107:
-			return "AWT_929";
+			return "AWT_929" /* GXT: Elitist */;
 		
 		case 108:
-			return "AWT_930";
+			return "AWT_930" /* GXT: Blow Hard */;
 		
 		case 109:
-			return "AWT_931";
+			return "AWT_931" /* GXT: Helping Out */;
 		
 		case 110:
-			return "AWT_932";
+			return "AWT_932" /* GXT: Courier */;
 		
 		case 111:
-			return "AWT_933";
+			return "AWT_933" /* GXT: Party Vibes */;
 		
 		case 112:
-			return "AWT_934";
+			return "AWT_934" /* GXT: Helping Hand */;
 		
 		case 113:
-			return "AWT_944";
+			return "AWT_944" /* GXT: LS Car Meet */;
 		
 		case 114:
-			return "AWT_951";
+			return "AWT_951" /* GXT: Pro Car Exporter */;
 		
 		case 115:
-			return "AWT_953";
+			return "AWT_953" /* GXT: The Union Depository Contract */;
 		
 		case 116:
-			return "AWT_954";
+			return "AWT_954" /* GXT: The Superdollar Deal */;
 		
 		case 117:
-			return "AWT_955";
+			return "AWT_955" /* GXT: The Bank Contract */;
 		
 		case 118:
-			return "AWT_956";
+			return "AWT_956" /* GXT: The E.C.U. Job */;
 		
 		case 119:
-			return "AWT_957";
+			return "AWT_957" /* GXT: The Prison Contract */;
 		
 		case 120:
-			return "AWT_958";
+			return "AWT_958" /* GXT: The Agency Deal */;
 		
 		case 121:
-			return "AWT_959";
+			return "AWT_959" /* GXT: The Lost Contract */;
 		
 		case 122:
-			return "AWT_960";
+			return "AWT_960" /* GXT: The Data Contract */;
 		
 		case 123:
-			return "AWT_963";
+			return "AWT_963" /* GXT: Straight To Video */;
 		
 		case 124:
-			return "AWT_964";
+			return "AWT_964" /* GXT: Monkey See Monkey Do */;
 		
 		case 125:
-			return "AWT_965";
+			return "AWT_965" /* GXT: Trained To Kill */;
 		
 		case 126:
-			return "AWT_966";
+			return "AWT_966" /* GXT: The Director */;
 		
 		case 127:
-			return "AWT_968";
+			return "AWT_968" /* GXT: On Course */;
 		
 		case 128:
-			return "AWT_969";
+			return "AWT_969" /* GXT: Nightlife Leak */;
 		
 		case 129:
-			return "AWT_970";
+			return "AWT_970" /* GXT: High Society Leak */;
 		
 		case 130:
-			return "AWT_971";
+			return "AWT_971" /* GXT: South Central Leak */;
 		
 		case 131:
-			return "AWT_972";
+			return "AWT_972" /* GXT: Studio Time */;
 		
 		case 132:
-			return "AWT_973";
+			return "AWT_973" /* GXT: Don't Fuck With Dre */;
 		
 		case 133:
-			return "AWT_974";
+			return "AWT_974" /* GXT: Backup */;
 		
 		case 134:
-			return "AWT_975";
+			return "AWT_975" /* GXT: Seed Capital - Franklin */;
 		
 		case 135:
-			return "AWT_977";
+			return "AWT_977" /* GXT: Fire It Up - Franklin */;
 		
 		case 136:
-			return "AWT_984";
+			return "AWT_984" /* GXT: OG Kush  - Franklin */;
 		
 		case 137:
-			return "AWT_980";
+			return "AWT_980" /* GXT: Contract Killer */;
 		
 		case 138:
-			return "AWT_981";
+			return "AWT_981" /* GXT: A Dog's Best Friend */;
 		
 		case 139:
-			return "AWT_982";
+			return "AWT_982" /* GXT: Sound Check */;
 		
 		case 140:
-			return "AWT_976";
+			return "AWT_976" /* GXT: Seed Capital - Lamar */;
 		
 		case 141:
-			return "AWT_986";
+			return "AWT_986" /* GXT: Fire It Up - Lamar */;
 		
 		case 142:
-			return "AWT_985";
+			return "AWT_985" /* GXT: OG Kush  - Lamar */;
 	}
 	return "";
 }
@@ -13085,7 +13085,7 @@ char* func_116(int iParam0, int iParam1, int iParam2)//Position - 0xD7A7
 			return "KillMeleeWeapons";
 		
 		case 9:
-			return "Headshots";
+			return "Headshots" /* GXT: Headshot kills */;
 		
 		case 10:
 			return "BlowupVehicles";
@@ -13623,64 +13623,64 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 			return "AWS_716";
 		
 		case 126:
-			return "AWS_740";
+			return "AWS_740" /* GXT: This mode is all about teamwork, whether you choose to attack or defend, everyone has a part to play. Get a team together and win Captures. */;
 		
 		case 127:
-			return "AWS_741";
+			return "AWS_741" /* GXT: Watch your back when transporting a package or vehicle. The opposition will be after you. Drop off packages in any Capture mode. */;
 		
 		case 128:
-			return "AWS_742";
+			return "AWS_742" /* GXT: In order to win at Capture, someone has to get the goods. Pick up a package or vehicle in any Capture mode. */;
 		
 		case 129:
-			return "AWS_743";
+			return "AWS_743" /* GXT: Don't let the enemy get the merchandise back to their base. A strategic ambush could turn the match in your favor. Kill package carriers. */;
 		
 		case 130:
-			return "AWS_744";
+			return "AWS_744" /* GXT: Whether you choose a stealthy approach or a full on assault, assert your dominance by winning Capture without dying. */;
 		
 		case 67:
 			return "AWS_782";
 		
 		case 120:
-			return "AWS_745";
+			return "AWS_745" /* GXT: Pulling off a Heist is the ultimate Job. With the right team and some cooperation you will reap the rewards. Successfully complete Heist Finales. */;
 		
 		case 121:
-			return "AWS_746";
+			return "AWS_746" /* GXT: Every Heist requires planning. Help with the Heist Setups in the run up to the final showdown. */;
 		
 		case 122:
-			return "AWS_747";
+			return "AWS_747" /* GXT: Leaders need to hire a solid crew. Crew members get paid for Heist Setups and can negotiate a share of the profits in the Finale. Be a Heist crew member. */;
 		
 		case 123:
-			return "AWS_748";
+			return "AWS_748" /* GXT: The Heist leader needs to stump up the cash to cover the costs, on the plus side, they have full control of the rewards. Be the Heist leader. */;
 		
 		case 124:
 			return "AWS_749";
 		
 		case 125:
-			return "AWS_752";
+			return "AWS_752" /* GXT: If something is worth doing, it is worth doing right. Earn platinum medals for your performance during a Heist. The Bonus RP may come in handy. */;
 		
 		case 131:
-			return "AWS_755";
+			return "AWS_755" /* GXT: This new kit will give you the advantage over your enemies. Get kills while wearing Night Vision. */;
 		
 		case 132:
-			return "AWS_757";
+			return "AWS_757" /* GXT: Shoot, aim, shout at the crowd to keep them under control. If an alarm is raised or the police are called, you have failed. */;
 		
 		case 133:
-			return "AWS_758";
+			return "AWS_758" /* GXT: Psychopaths are marked as red blips on the Radar in Freemode. Kill them for an RP reward and a sense of satisfaction. */;
 		
 		case 134:
-			return "AWS_759";
+			return "AWS_759" /* GXT: Becoming Unstable encourages others to play rough with you. Try to stay calm for an easier life. Return your Mental State to Normal. */;
 		
 		case 135:
-			return "AWS_760";
+			return "AWS_760" /* GXT: No respawns in this mode. You will have to cheer on your teammates if you are out of the game. Win Last Team Standings. */;
 		
 		case 136:
-			return "AWS_761";
+			return "AWS_761" /* GXT: The true definition of Last Man Standing. Be the last player alive at the end of the match. */;
 		
 		case 137:
-			return "AWS_762";
+			return "AWS_762" /* GXT: Sometimes you have to take matters into your own hands. Wipe out an entire enemy team yourself in LTS. */;
 		
 		case 138:
-			return "AWS_764";
+			return "AWS_764" /* GXT: Staying in the same place for too long can become dull.  Either move up the property ladder or downscale for some cash. Trade in your property. */;
 		
 		case 139:
 			if (iParam1 == 5)
@@ -13815,594 +13815,594 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 		case 87:
 			if (iParam1 == 5)
 			{
-				return "AWS_845_4";
+				return "AWS_845_4" /* GXT: Complete 50 Casino Work missions for Agatha and earn $100,000. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_845_3";
+				return "AWS_845_3" /* GXT: Complete 25 Casino Work missions for Agatha and earn $50,000. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_845_2";
+				return "AWS_845_2" /* GXT: Complete 10 Casino Work missions for Agatha and earn $20,000. */;
 			}
 			else
 			{
-				return "AWS_845_1";
+				return "AWS_845_1" /* GXT: Complete 5 Casino Work missions for Agatha and earn $10,000. */;
 			}
 			break;
 		
 		case 88:
 			if (iParam1 == 5)
 			{
-				return "AWS_847_4";
+				return "AWS_847_4" /* GXT: Complete 40 prep missions as part of The Diamond Casino Heist. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_847_3";
+				return "AWS_847_3" /* GXT: Complete 20 prep missions as part of The Diamond Casino Heist. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_847_2";
+				return "AWS_847_2" /* GXT: Complete 10 prep missions as part of The Diamond Casino Heist. */;
 			}
 			else
 			{
-				return "AWS_847_1";
+				return "AWS_847_1" /* GXT: Complete 5 prep missions as part of The Diamond Casino Heist. */;
 			}
 			break;
 		
 		case 89:
 			if (iParam1 == 5)
 			{
-				return "AWS_848_4";
+				return "AWS_848_4" /* GXT: Use the Drone to tranquilize 20 guards during The Diamond Casino Heist. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_848_3";
+				return "AWS_848_3" /* GXT: Use the Drone to tranquilize 15 guards during The Diamond Casino Heist. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_848_2";
+				return "AWS_848_2" /* GXT: Use the Drone to tranquilize 10 guards during The Diamond Casino Heist. */;
 			}
 			else
 			{
-				return "AWS_848_1";
+				return "AWS_848_1" /* GXT: Use the Drone to tranquilize 5 guards during The Diamond Casino Heist. */;
 			}
 			break;
 		
 		case 90:
 			if (iParam1 == 5)
 			{
-				return "AWS_849_4";
+				return "AWS_849_4" /* GXT: Steal a total of $100000 from the Daily Vault during The Diamond Casino Heist. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_849_3";
+				return "AWS_849_3" /* GXT: Steal a total of $75000 from the Daily Vault during The Diamond Casino Heist. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_849_2";
+				return "AWS_849_2" /* GXT: Steal a total of $50000 from the Daily Vault during The Diamond Casino Heist. */;
 			}
 			else
 			{
-				return "AWS_849_1";
+				return "AWS_849_1" /* GXT: Steal a total of $25000 from the Daily Vault during The Diamond Casino Heist. */;
 			}
 			break;
 		
 		case 91:
 			if (iParam1 == 5)
 			{
-				return "AWS_850_4";
+				return "AWS_850_4" /* GXT: Destroy 40 security cameras during The Diamond Casino Heist. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_850_3";
+				return "AWS_850_3" /* GXT: Destroy 30 security cameras during The Diamond Casino Heist. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_850_2";
+				return "AWS_850_2" /* GXT: Destroy 20 security cameras during The Diamond Casino Heist. */;
 			}
 			else
 			{
-				return "AWS_850_1";
+				return "AWS_850_1" /* GXT: Destroy 10 security cameras during The Diamond Casino Heist. */;
 			}
 			break;
 		
 		case 92:
 			if (iParam1 == 5)
 			{
-				return "AWS_851_4";
+				return "AWS_851_4" /* GXT: Kill 40 flying critters across all levels of Badlands Revenge II. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_851_3";
+				return "AWS_851_3" /* GXT: Kill 20 flying critters across all levels of Badlands Revenge II. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_851_2";
+				return "AWS_851_2" /* GXT: Kill 10 flying critters across all levels of Badlands Revenge II. */;
 			}
 			else
 			{
-				return "AWS_851_1";
+				return "AWS_851_1" /* GXT: Kill 5 flying critters across all levels of Badlands Revenge II. */;
 			}
 			break;
 		
 		case 93:
 			if (iParam1 == 5)
 			{
-				return "AWS_852_4";
+				return "AWS_852_4" /* GXT: Win 40 races against an opponent in Race And Chase. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_852_3";
+				return "AWS_852_3" /* GXT: Win 20 races against an opponent in Race And Chase. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_852_2";
+				return "AWS_852_2" /* GXT: Win 10 races against an opponent in Race And Chase. */;
 			}
 			else
 			{
-				return "AWS_852_1";
+				return "AWS_852_1" /* GXT: Win 5 races against an opponent in Race And Chase. */;
 			}
 			break;
 		
 		case 94:
 			if (iParam1 == 5)
 			{
-				return "AWS_853_4";
+				return "AWS_853_4" /* GXT: Score at least 1000000 during a single play of The Wizard's Ruin. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_853_3";
+				return "AWS_853_3" /* GXT: Score at least 750000 during a single play of The Wizard's Ruin. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_853_2";
+				return "AWS_853_2" /* GXT: Score at least 500000 during a single play of The Wizard's Ruin. */;
 			}
 			else
 			{
-				return "AWS_853_1";
+				return "AWS_853_1" /* GXT: Score at least 250000 during a single play of The Wizard's Ruin. */;
 			}
 			break;
 		
 		case 95:
 			if (iParam1 == 5)
 			{
-				return "AWS_854_4";
+				return "AWS_854_4" /* GXT: Collect 950000 treasures during a single play of The Wizard's Ruin. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_854_3";
+				return "AWS_854_3" /* GXT: Collect 700000 treasures during a single play of The Wizard's Ruin. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_854_2";
+				return "AWS_854_2" /* GXT: Collect 450000 treasures during a single play of The Wizard's Ruin. */;
 			}
 			else
 			{
-				return "AWS_854_1";
+				return "AWS_854_1" /* GXT: Collect 200000 treasures during a single play of The Wizard's Ruin. */;
 			}
 			break;
 		
 		case 96:
 			if (iParam1 == 5)
 			{
-				return "AWS_855_4";
+				return "AWS_855_4" /* GXT: Score over 3000000 points in a single game of Space Monkey 3: Bananas Gone Bad. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_855_3";
+				return "AWS_855_3" /* GXT: Score over 2500000 points in a single game of Space Monkey 3: Bananas Gone Bad. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_855_2";
+				return "AWS_855_2" /* GXT: Score over 2000000 points in a single game of Space Monkey 3: Bananas Gone Bad. */;
 			}
 			else
 			{
-				return "AWS_855_1";
+				return "AWS_855_1" /* GXT: Score over 1500000 points in a single game of Space Monkey 3: Bananas Gone Bad. */;
 			}
 			break;
 		
 		case 97:
 			if (iParam1 == 5)
 			{
-				return "AWS_856_4";
+				return "AWS_856_4" /* GXT: Score over 40000 points in a single play of Penetrator. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_856_3";
+				return "AWS_856_3" /* GXT: Score over 20000 points in a single play of Penetrator. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_856_2";
+				return "AWS_856_2" /* GXT: Score over 10000 points in a single play of Penetrator. */;
 			}
 			else
 			{
-				return "AWS_856_1";
+				return "AWS_856_1" /* GXT: Score over 5000 points in a single play of Penetrator. */;
 			}
 			break;
 		
 		case 99:
 			if (iParam1 == 5)
 			{
-				return "AWS_936d";
+				return "AWS_936d" /* GXT: Dance to Keinemusik's set at the Cayo Perico beach party for 60 minutes. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_936c";
+				return "AWS_936c" /* GXT: Dance to Keinemusik's set at the Cayo Perico beach party for 30 minutes. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_936b";
+				return "AWS_936b" /* GXT: Dance to Keinemusik's set at the Cayo Perico beach party for 15 minutes. */;
 			}
 			else
 			{
-				return "AWS_936a";
+				return "AWS_936a" /* GXT: Dance to Keinemusik's set at the Cayo Perico beach party for 5 minutes. */;
 			}
 			break;
 		
 		case 100:
 			if (iParam1 == 5)
 			{
-				return "AWS_937d";
+				return "AWS_937d" /* GXT: Steal the loot from 50 treasure chests found on Cayo Perico. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_937c";
+				return "AWS_937c" /* GXT: Steal the loot from 20 treasure chests found on Cayo Perico. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_937b";
+				return "AWS_937b" /* GXT: Steal the loot from 10 treasure chests found on Cayo Perico. */;
 			}
 			else
 			{
-				return "AWS_937a";
+				return "AWS_937a" /* GXT: Steal the loot from 5 treasure chests found on Cayo Perico. */;
 			}
 			break;
 		
 		case 101:
 			if (iParam1 == 5)
 			{
-				return "AWS_938d";
+				return "AWS_938d" /* GXT: Steal a total of $1,000,000 from hidden caches found around the San Andreas coast. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_938c";
+				return "AWS_938c" /* GXT: Steal a total of $750,000 from hidden caches found around the San Andreas coast. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_938b";
+				return "AWS_938b" /* GXT: Steal a total of $250,000 from hidden caches found around the San Andreas coast. */;
 			}
 			else
 			{
-				return "AWS_938a";
+				return "AWS_938a" /* GXT: Steal a total of $50,000 from hidden caches found around the San Andreas coast. */;
 			}
 			break;
 		
 		case 102:
 			if (iParam1 == 5)
 			{
-				return "AWS_939d";
+				return "AWS_939d" /* GXT: Dance to Keinemusik's set in The Music Locker for 60 minutes. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_939c";
+				return "AWS_939c" /* GXT: Dance to Keinemusik's set in The Music Locker for 30 minutes. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_939b";
+				return "AWS_939b" /* GXT: Dance to Keinemusik's set in The Music Locker for 15 minutes. */;
 			}
 			else
 			{
-				return "AWS_939a";
+				return "AWS_939a" /* GXT: Dance to Keinemusik's set in The Music Locker for 5 minutes. */;
 			}
 			break;
 		
 		case 103:
 			if (iParam1 == 5)
 			{
-				return "AWS_940d";
+				return "AWS_940d" /* GXT: Dance to Palms Trax set in The Music Locker for 60 minutes. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_940c";
+				return "AWS_940c" /* GXT: Dance to Palms Trax set in The Music Locker for 30 minutes. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_940b";
+				return "AWS_940b" /* GXT: Dance to Palms Trax set in The Music Locker for 15 minutes. */;
 			}
 			else
 			{
-				return "AWS_940a";
+				return "AWS_940a" /* GXT: Dance to Palms Trax set in The Music Locker for 5 minutes. */;
 			}
 			break;
 		
 		case 104:
 			if (iParam1 == 5)
 			{
-				return "AWS_941d";
+				return "AWS_941d" /* GXT: Dance to Moodymann's set in The Music Locker for 60 minutes. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_941c";
+				return "AWS_941c" /* GXT: Dance to Moodymann's set in The Music Locker for 30 minutes. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_941b";
+				return "AWS_941b" /* GXT: Dance to Moodymann's set in The Music Locker for 15 minutes. */;
 			}
 			else
 			{
-				return "AWS_941a";
+				return "AWS_941a" /* GXT: Dance to Moodymann's set in The Music Locker for 5 minutes. */;
 			}
 			break;
 		
 		case 105:
 			if (iParam1 == 5)
 			{
-				return "AWS_942d";
+				return "AWS_942d" /* GXT: Steal a total of $20,000,000 in secondary targets during The Cayo Perico Heist. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_942c";
+				return "AWS_942c" /* GXT: Steal a total of $10,000,000 in secondary targets during The Cayo Perico Heist. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_942b";
+				return "AWS_942b" /* GXT: Steal a total of $5,000,000 in secondary targets during The Cayo Perico Heist. */;
 			}
 			else
 			{
-				return "AWS_942a";
+				return "AWS_942a" /* GXT: Steal a total of $1,000,000 in secondary targets during The Cayo Perico Heist. */;
 			}
 			break;
 		
 		case 106:
 			if (iParam1 == 5)
 			{
-				return "AWS_943d";
+				return "AWS_943d" /* GXT: Complete 50 prep missions as part of The Cayo Perico Heist. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_943c";
+				return "AWS_943c" /* GXT: Complete 20 prep missions as part of The Cayo Perico Heist. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_943b";
+				return "AWS_943b" /* GXT: Complete 10 prep missions as part of The Cayo Perico Heist. */;
 			}
 			else
 			{
-				return "AWS_943a";
+				return "AWS_943a" /* GXT: Complete 5 prep missions as part of The Cayo Perico Heist. */;
 			}
 			break;
 		
 		case 107:
 			if (iParam1 == 5)
 			{
-				return "AWS_945d";
+				return "AWS_945d" /* GXT: Reach LS Car Meet Reputation Level 100. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_945c";
+				return "AWS_945c" /* GXT: Reach LS Car Meet Reputation Level 50. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_945b";
+				return "AWS_945b" /* GXT: Reach LS Car Meet Reputation Level 25. */;
 			}
 			else
 			{
-				return "AWS_945a";
+				return "AWS_945a" /* GXT: Reach LS Car Meet Reputation Level 5. */;
 			}
 			break;
 		
 		case 108:
 			if (iParam1 == 5)
 			{
-				return "AWS_967d";
+				return "AWS_967d" /* GXT: Win 50 Sprints. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_967c";
+				return "AWS_967c" /* GXT: Win 25 Sprints. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_967b";
+				return "AWS_967b" /* GXT: Win 10 Sprints. */;
 			}
 			else
 			{
-				return "AWS_967a";
+				return "AWS_967a" /* GXT: Win 5 Sprints. */;
 			}
 			break;
 		
 		case 109:
 			if (iParam1 == 5)
 			{
-				return "AWS_946d";
+				return "AWS_946d" /* GXT: Win 50 races in the Street Race Series. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_946c";
+				return "AWS_946c" /* GXT: Win 25 races in the Street Race Series. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_946b";
+				return "AWS_946b" /* GXT: Win 10 races in the Street Race Series. */;
 			}
 			else
 			{
-				return "AWS_946a";
+				return "AWS_946a" /* GXT: Win 5 races in the Street Race Series. */;
 			}
 			break;
 		
 		case 110:
 			if (iParam1 == 5)
 			{
-				return "AWS_947d";
+				return "AWS_947d" /* GXT: Win 50 races in the Pursuit Series. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_947c";
+				return "AWS_947c" /* GXT: Win 25 races in the Pursuit Series. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_947b";
+				return "AWS_947b" /* GXT: Win 10 races in the Pursuit Series. */;
 			}
 			else
 			{
-				return "AWS_947a";
+				return "AWS_947a" /* GXT: Win 5 races in the Pursuit Series. */;
 			}
 			break;
 		
 		case 112:
 			if (iParam1 == 5)
 			{
-				return "AWS_949d";
+				return "AWS_949d" /* GXT: Successfully mod and deliver 50 customer vehicles from your Auto Shop. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_949c";
+				return "AWS_949c" /* GXT: Successfully mod and deliver 25 customer vehicles from your Auto Shop. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_949b";
+				return "AWS_949b" /* GXT: Successfully mod and deliver 10 customer vehicles from your Auto Shop. */;
 			}
 			else
 			{
-				return "AWS_949a";
+				return "AWS_949a" /* GXT: Successfully mod and deliver 5 customer vehicles from your Auto Shop. */;
 			}
 			break;
 		
 		case 114:
 			if (iParam1 == 5)
 			{
-				return "AWS_952d";
+				return "AWS_952d" /* GXT: Complete 40 Planning Work missions as leader as part of the Contracts for KDJ and Sessanta. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_952c";
+				return "AWS_952c" /* GXT: Complete 20 Planning Work missions as leader as part of the Contracts for KDJ and Sessanta. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_952b";
+				return "AWS_952b" /* GXT: Complete 10 Planning Work missions as leader as part of the Contracts for KDJ and Sessanta. */;
 			}
 			else
 			{
-				return "AWS_952a";
+				return "AWS_952a" /* GXT: Complete 5 Planning Work missions as leader as part of the Contracts for KDJ and Sessanta. */;
 			}
 			break;
 		
 		case 115:
 			if (iParam1 == 5)
 			{
-				return "AWS_961d";
+				return "AWS_961d" /* GXT: Complete 100 Contracts for KDJ and Sessanta. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_961c";
+				return "AWS_961c" /* GXT: Complete 50 Contracts for KDJ and Sessanta. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_961b";
+				return "AWS_961b" /* GXT: Complete 25 Contracts for KDJ and Sessanta. */;
 			}
 			else
 			{
-				return "AWS_961a";
+				return "AWS_961a" /* GXT: Complete 5 Contracts for KDJ and Sessanta. */;
 			}
 			break;
 		
 		case 116:
 			if (iParam1 == 5)
 			{
-				return "AWS_962d";
+				return "AWS_962d" /* GXT: Carry out over 30 headshots across all scenes in Camhedz. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_962c";
+				return "AWS_962c" /* GXT: Carry out over 20 headshots across all scenes in Camhedz. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_962b";
+				return "AWS_962b" /* GXT: Carry out over 10 headshots across all scenes in Camhedz. */;
 			}
 			else
 			{
-				return "AWS_962a";
+				return "AWS_962a" /* GXT: Carry out over 5 headshots across all scenes in Camhedz. */;
 			}
 			break;
 		
 		case 111:
 			if (iParam1 == 5)
 			{
-				return "AWS_948d";
+				return "AWS_948d" /* GXT: Drive one of the test rides for 240 minutes inside the Test Track. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_948c";
+				return "AWS_948c" /* GXT: Drive one of the test rides for 120 minutes inside the Test Track. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_948b";
+				return "AWS_948b" /* GXT: Drive one of the test rides for 60 minutes inside the Test Track. */;
 			}
 			else
 			{
-				return "AWS_948a";
+				return "AWS_948a" /* GXT: Drive one of the test rides for 30 minutes inside the Test Track. */;
 			}
 			break;
 		
 		case 113:
 			if (iParam1 == 5)
 			{
-				return "AWS_950d";
+				return "AWS_950d" /* GXT: Deliver 100 Exotic Exports Vehicles to the Docks for Sessanta's partner. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_950c";
+				return "AWS_950c" /* GXT: Deliver 50 Exotic Exports Vehicles to the Docks for Sessanta's partner. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_950b";
+				return "AWS_950b" /* GXT: Deliver 25 Exotic Exports Vehicles to the Docks for Sessanta's partner. */;
 			}
 			else
 			{
-				return "AWS_950a";
+				return "AWS_950a" /* GXT: Deliver 10 Exotic Exports Vehicles to the Docks for Sessanta's partner. */;
 			}
 			break;
 		
 		case 117:
 			if (iParam1 == 5)
 			{
-				return "AWS_978d";
+				return "AWS_978d" /* GXT: Complete 50 Security Contracts. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_978c";
+				return "AWS_978c" /* GXT: Complete 25 Security Contracts. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_978b";
+				return "AWS_978b" /* GXT: Complete 15 Security Contracts. */;
 			}
 			else
 			{
-				return "AWS_978a";
+				return "AWS_978a" /* GXT: Complete 5 Security Contracts. */;
 			}
 			break;
 		
 		case 118:
 			if (iParam1 == 5)
 			{
-				return "AWS_979d";
+				return "AWS_979d" /* GXT: Complete 50 Payphone Hits. */;
 			}
 			else if (iParam1 == 4)
 			{
-				return "AWS_979c";
+				return "AWS_979c" /* GXT: Complete 25 Payphone Hits. */;
 			}
 			else if (iParam1 == 3)
 			{
-				return "AWS_979b";
+				return "AWS_979b" /* GXT: Complete 15 Payphone Hits. */;
 			}
 			else
 			{
-				return "AWS_979a";
+				return "AWS_979a" /* GXT: Complete 5 Payphone Hits. */;
 			}
 			break;
 		
 		case 119:
-			return "AWS_983";
+			return "AWS_983" /* GXT: Watch Dr. Dre working in Record A Studios. */;
 			break;
 	}
 	return "";
@@ -14607,64 +14607,64 @@ char* func_118(int iParam0, int iParam1)//Position - 0xECC7
 			return "AWT_716";
 		
 		case 126:
-			return "AWT_740";
+			return "AWT_740" /* GXT: Captured */;
 		
 		case 127:
-			return "AWT_741";
+			return "AWT_741" /* GXT: The Postman */;
 		
 		case 128:
-			return "AWT_742";
+			return "AWT_742" /* GXT: Gimme That */;
 		
 		case 129:
-			return "AWT_743";
+			return "AWT_743" /* GXT: No You Don't */;
 		
 		case 130:
-			return "AWT_744";
+			return "AWT_744" /* GXT: Death Defying */;
 		
 		case 67:
 			return "AWT_782";
 		
 		case 120:
-			return "AWT_745";
+			return "AWT_745" /* GXT: The Big Time */;
 		
 		case 121:
-			return "AWT_746";
+			return "AWT_746" /* GXT: Be Prepared */;
 		
 		case 122:
-			return "AWT_747";
+			return "AWT_747" /* GXT: For Hire */;
 		
 		case 123:
-			return "AWT_748";
+			return "AWT_748" /* GXT: Shot Caller */;
 		
 		case 124:
 			return "AWT_749";
 		
 		case 125:
-			return "AWT_752";
+			return "AWT_752" /* GXT: Decorated */;
 		
 		case 131:
-			return "AWT_755";
+			return "AWT_755" /* GXT: Lights Out */;
 		
 		case 132:
-			return "AWT_757";
+			return "AWT_757" /* GXT: In Control */;
 		
 		case 133:
-			return "AWT_758";
+			return "AWT_758" /* GXT: Psycho Killer */;
 		
 		case 134:
-			return "AWT_759";
+			return "AWT_759" /* GXT: Calm Down */;
 		
 		case 135:
-			return "AWT_760";
+			return "AWT_760" /* GXT: Still Standing */;
 		
 		case 136:
-			return "AWT_761";
+			return "AWT_761" /* GXT: One and Only */;
 		
 		case 137:
-			return "AWT_762";
+			return "AWT_762" /* GXT: One Man Army */;
 		
 		case 138:
-			return "AWT_764";
+			return "AWT_764" /* GXT: Moving Day */;
 		
 		case 139:
 			return "AWT_788";
@@ -14733,112 +14733,112 @@ char* func_118(int iParam0, int iParam1)//Position - 0xECC7
 			return "AWT_835";
 		
 		case 87:
-			return "AWT_845";
+			return "AWT_845" /* GXT: High Roller */;
 		
 		case 88:
-			return "AWT_847";
+			return "AWT_847" /* GXT: Preparation */;
 		
 		case 89:
-			return "AWT_848";
+			return "AWT_848" /* GXT: Asleep On The Job */;
 		
 		case 90:
-			return "AWT_849";
+			return "AWT_849" /* GXT: Daily Cash Grab */;
 		
 		case 91:
-			return "AWT_850";
+			return "AWT_850" /* GXT: Big Brother */;
 		
 		case 92:
-			return "AWT_851";
+			return "AWT_851" /* GXT: Sharpshooter */;
 		
 		case 93:
-			return "AWT_852";
+			return "AWT_852" /* GXT: Race Champion */;
 		
 		case 94:
-			return "AWT_853";
+			return "AWT_853" /* GXT: Platinum Sword */;
 		
 		case 95:
-			return "AWT_854";
+			return "AWT_854" /* GXT: Coin Purse */;
 		
 		case 96:
-			return "AWT_855";
+			return "AWT_855" /* GXT: Astrochimp */;
 		
 		case 97:
-			return "AWT_856";
+			return "AWT_856" /* GXT: Masterful */;
 		
 		case 99:
-			return "AWT_936";
+			return "AWT_936" /* GXT: Sun Set */;
 		
 		case 100:
-			return "AWT_937";
+			return "AWT_937" /* GXT: Treasure Hunter */;
 		
 		case 101:
-			return "AWT_938";
+			return "AWT_938" /* GXT: Wreck Diving */;
 		
 		case 102:
-			return "AWT_939";
+			return "AWT_939" /* GXT: Keinemusik */;
 		
 		case 103:
-			return "AWT_940";
+			return "AWT_940" /* GXT: Palms Trax */;
 		
 		case 104:
-			return "AWT_941";
+			return "AWT_941" /* GXT: Moodymann */;
 		
 		case 105:
-			return "AWT_942";
+			return "AWT_942" /* GXT: Fill Your Bags */;
 		
 		case 106:
-			return "AWT_943";
+			return "AWT_943" /* GXT: Prepped */;
 		
 		case 107:
-			return "AWT_945";
+			return "AWT_945" /* GXT: LS Car Meet Member */;
 			break;
 		
 		case 108:
-			return "AWT_967";
+			return "AWT_967" /* GXT: Sprint Racer */;
 			break;
 		
 		case 109:
-			return "AWT_946";
+			return "AWT_946" /* GXT: Street Racer */;
 			break;
 		
 		case 110:
-			return "AWT_947";
+			return "AWT_947" /* GXT: Pursuit Racer */;
 			break;
 		
 		case 112:
-			return "AWT_949";
+			return "AWT_949" /* GXT: Special Delivery */;
 			break;
 		
 		case 114:
-			return "AWT_952";
+			return "AWT_952" /* GXT: Groundwork */;
 			break;
 		
 		case 115:
-			return "AWT_961";
+			return "AWT_961" /* GXT: Contractual Criminal */;
 			break;
 		
 		case 116:
-			return "AWT_962";
+			return "AWT_962" /* GXT: Faces Of Death */;
 			break;
 		
 		case 111:
-			return "AWT_948";
+			return "AWT_948" /* GXT: Tried and Tested */;
 			break;
 		
 		case 113:
-			return "AWT_950";
+			return "AWT_950" /* GXT: Car Exporter */;
 			break;
 		
 		case 117:
-			return "AWT_978";
+			return "AWT_978" /* GXT: Contractual Obligations */;
 			break;
 		
 		case 118:
-			return "AWT_979";
+			return "AWT_979" /* GXT: Cold Caller */;
 			break;
 		
 		case 119:
-			return "AWT_983";
+			return "AWT_983" /* GXT: Producer */;
 			break;
 	}
 	return "";
@@ -14955,7 +14955,7 @@ void func_123(var uParam0, var uParam1)//Position - 0xF511
 	}
 	iVar4 = uParam1->f_5 + 1;
 	iVar5 = iLocal_110 + 1;
-	func_124(0, iVar4, iVar5, "HUD_PAGE", 0);
+	func_124(0, iVar4, iVar5, "HUD_PAGE" /* GXT: Page ~1~ of ~1~ */, 0);
 }
 
 void func_124(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4)//Position - 0xF66A

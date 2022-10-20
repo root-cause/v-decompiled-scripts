@@ -135,12 +135,12 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_42 = 49;
 	iLocal_43 = 64;
 	fLocal_47 = ((0.05f + 0.275f) - 0.01f);
-	StringCopy(&Local_84, "CELL_206", 16);
-	StringCopy(&Local_87, "CELL_214", 16);
-	StringCopy(&Local_90, "CELL_243", 16);
-	StringCopy(&Local_93, "CELL_244", 16);
-	StringCopy(&Local_96, "CELL_265", 16);
-	StringCopy(&Local_99, "CELL_300", 16);
+	StringCopy(&Local_84, "CELL_206" /* GXT: BACK */, 16);
+	StringCopy(&Local_87, "CELL_214" /* GXT: OPTIONS */, 16);
+	StringCopy(&Local_90, "CELL_243" /* GXT: ACCEPT JOB */, 16);
+	StringCopy(&Local_93, "CELL_244" /* GXT: CANCEL JOB */, 16);
+	StringCopy(&Local_96, "CELL_265" /* GXT: INVITATION */, 16);
+	StringCopy(&Local_99, "CELL_300" /* GXT: CHAR_DEFAULT */, 16);
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
 	func_98(&iLocal_105);
 	iLocal_102 = 0;
@@ -245,7 +245,7 @@ void func_5()//Position - 0x1F7
 		iLocal_83 = 1;
 		return;
 	}
-	HUD::SET_WARNING_MESSAGE_WITH_HEADER("HUD_INPUT23", "BA_APP_PASS_W", 36, 0, false, -1, 0, 0, true, 0);
+	HUD::SET_WARNING_MESSAGE_WITH_HEADER("HUD_INPUT23" /* GXT: Confirm */, "BA_APP_PASS_W" /* GXT: Are you sure you want to become a Bodyguard? Passive Mode is disabled when playing as a Bodyguard. */, 36, 0, false, -1, 0, 0, true, 0);
 }
 
 void func_6(int iParam0)//Position - 0x25E
@@ -681,7 +681,7 @@ void func_20(int iParam0)//Position - 0x607
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(42);
 								GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							}
-							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB")) && BitTest(Global_8137, 6))
+							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB" /* GXT: Benny's */)) && BitTest(Global_8137, 6))
 							{
 								GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT");
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
@@ -1271,40 +1271,40 @@ void func_49()//Position - 0x12A4
 			{
 				if (bVar7)
 				{
-					func_22("BA_APP_BODYCTA");
+					func_22("BA_APP_BODYCTA" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become an Associate.~s~ */);
 				}
 				else
 				{
-					func_22("BA_APP_BODY_TA");
+					func_22("BA_APP_BODY_TA" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become a Bodyguard.~s~ */);
 				}
 			}
 			else
 			{
-				StringCopy(&cVar10, "BA_APP_BODY_T4", 16);
+				StringCopy(&cVar10, "BA_APP_BODY_T4" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become a Bodyguard.~n~~n~Other Bodyguards:~n~~a~~s~ */, 16);
 				if (bVar7)
 				{
-					StringCopy(&cVar10, "BA_APP_BODYCT4", 16);
+					StringCopy(&cVar10, "BA_APP_BODYCT4" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become an Associate.~n~~n~Other Associates:~n~~a~~s~ */, 16);
 				}
 				if (iVar9 == 2)
 				{
 					if (bVar7)
 					{
-						StringCopy(&cVar10, "BA_APP_BODYCT5", 16);
+						StringCopy(&cVar10, "BA_APP_BODYCT5" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become an Associate.~n~~n~Other Associates:~n~~a~~n~~a~~s~ */, 16);
 					}
 					else
 					{
-						StringCopy(&cVar10, "BA_APP_BODY_T5", 16);
+						StringCopy(&cVar10, "BA_APP_BODY_T5" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become a Bodyguard.~n~~n~Other Bodyguards:~n~~a~~n~~a~~s~ */, 16);
 					}
 				}
 				else if (iVar9 > 2)
 				{
 					if (bVar7)
 					{
-						StringCopy(&cVar10, "BA_APP_BODYCT6", 16);
+						StringCopy(&cVar10, "BA_APP_BODYCT6" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become an Associate.~n~~n~Other Associates:~n~~a~~n~~a~~n~~a~~s~ */, 16);
 					}
 					else
 					{
-						StringCopy(&cVar10, "BA_APP_BODY_T6", 16);
+						StringCopy(&cVar10, "BA_APP_BODY_T6" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become a Bodyguard.~n~~n~Other Bodyguards:~n~~a~~n~~a~~n~~a~~s~ */, 16);
 					}
 				}
 				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(&cVar10);
@@ -1324,20 +1324,20 @@ void func_49()//Position - 0x12A4
 			{
 				if (Global_1888478.f_88[iVar3 /*5*/].f_2)
 				{
-					StringCopy(&cVar12, "BA_APP_BODY_T9", 16);
+					StringCopy(&cVar12, "BA_APP_BODY_T9" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become an Associate.~n~~n~- Wage: $~1~ ~n~- Associate(s): ~1~ ~n~- Yacht: Yes~n~- Office: Yes ~n~- Warehouse(s): ~1~ ~n~- Vehicle(s): ~1~ */, 16);
 				}
 				else
 				{
-					StringCopy(&cVar12, "BA_APP_BODY_T8", 16);
+					StringCopy(&cVar12, "BA_APP_BODY_T8" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become a Bodyguard.~n~~n~- Wage: $~1~ ~n~- Bodyguard(s): ~1~ ~n~- Yacht: Yes~n~- Office: No ~n~- Warehouse(s): ~1~ ~n~- Vehicle(s): ~1~ */, 16);
 				}
 			}
 			else if (Global_1888478.f_88[iVar3 /*5*/].f_2)
 			{
-				StringCopy(&cVar12, "BA_APP_BODY_T7", 16);
+				StringCopy(&cVar12, "BA_APP_BODY_T7" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become an Associate.~n~~n~- Wage: $~1~ ~n~- Associate(s): ~1~ ~n~- Yacht: No~n~- Office: Yes ~n~- Warehouse(s): ~1~ ~n~- Vehicle(s): ~1~ */, 16);
 			}
 			else
 			{
-				StringCopy(&cVar12, "BA_APP_BODY_T10", 16);
+				StringCopy(&cVar12, "BA_APP_BODY_T10" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become a Bodyguard.~n~~n~- Wage: $~1~ ~n~- Bodyguard(s): ~1~ ~n~- Yacht: No~n~- Office: No~n~- Warehouse(s): ~1~ ~n~- Vehicle(s): ~1~ */, 16);
 			}
 			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(&cVar12);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(Global_1888478.f_88[iVar3 /*5*/]);
@@ -1349,7 +1349,7 @@ void func_49()//Position - 0x12A4
 	}
 	else if (Global_1888478.f_7[iVar3 /*8*/] == 1)
 	{
-		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("BA_APP_BODY_DM2");
+		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("BA_APP_BODY_DM2" /* GXT: ~HUD_COLOUR_WHITE~The VIP of ~a~~HUD_COLOUR_WHITE~ has challenged you to an Executive Deathmatch.~s~ */);
 		HUD::SET_COLOUR_OF_NEXT_TEXT_COMPONENT(func_76(Global_1888478.f_7[iVar3 /*8*/].f_2));
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(func_61(Global_1888478.f_7[iVar3 /*8*/].f_2));
 		GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -1720,12 +1720,12 @@ char* func_68(int iParam0, bool bParam1)//Position - 0x1BB9
 			return func_69();
 		}
 	}
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACC");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACC" /* GXT: An Organization */);
 }
 
 char* func_69()//Position - 0x1BE0
 {
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACCM");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACCM" /* GXT: Motorcycle Club */);
 }
 
 bool func_70(int iParam0, bool bParam1)//Position - 0x1BF0
@@ -1972,7 +1972,7 @@ void func_85(bool bParam0)//Position - 0x1EEE
 	}
 	func_86();
 	func_95(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(25), SYSTEM::TO_FLOAT(iVar0), -1082130432, -1082130432, -1082130432);
-	func_53("CELL_BOSSAGE");
+	func_53("CELL_BOSSAGE" /* GXT: SecuroServ */);
 	bVar2 = false;
 	if (iVar1 > 0)
 	{
@@ -2035,11 +2035,11 @@ void func_87()//Position - 0x208D
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 	if (func_81(PLAYER::PLAYER_ID()))
 	{
-		func_22("BA_APP_NONEB");
+		func_22("BA_APP_NONEB" /* GXT: No Invites */);
 	}
 	else
 	{
-		func_22("BA_APP_NONE");
+		func_22("BA_APP_NONE" /* GXT: No VIP Invites */);
 	}
 	func_22("");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(-1);
@@ -2064,7 +2064,7 @@ int func_88(int iParam0, int iParam1)//Position - 0x20EB
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam1);
 	Var0 = { func_82(Global_1888478.f_7[iParam0 /*8*/].f_2) };
 	func_89(&Var0);
-	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("BA_APP_BODY_DM1");
+	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("BA_APP_BODY_DM1" /* GXT: Has challenged you to an Executive Deathmatch. */);
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(-1);
 	iVar1 = 1;
@@ -2107,22 +2107,22 @@ int func_90(int iParam0, int iParam1)//Position - 0x21A8
 	{
 		if (bVar1)
 		{
-			func_22("BA_APP_BODYCT");
+			func_22("BA_APP_BODYCT" /* GXT: Wants you to become an Associate. */);
 		}
 		else
 		{
-			func_22("BA_APP_BODY_T");
+			func_22("BA_APP_BODY_T" /* GXT: Wants you to become a Bodyguard. */);
 		}
 	}
 	else if (iVar2 == 1)
 	{
 		if (bVar1)
 		{
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("BA_APP_BODYCT3");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("BA_APP_BODYCT3" /* GXT: Wants you to become an Associate.~n~~1~ other in this Organization. */);
 		}
 		else
 		{
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("BA_APP_BODY_T3");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("BA_APP_BODY_T3" /* GXT: Wants you to become a Bodyguard.~n~~1~ other in this Organization. */);
 		}
 		HUD::ADD_TEXT_COMPONENT_INTEGER(iVar2);
 		GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -2131,11 +2131,11 @@ int func_90(int iParam0, int iParam1)//Position - 0x21A8
 	{
 		if (bVar1)
 		{
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("BA_APP_BODYCT2");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("BA_APP_BODYCT2" /* GXT: Wants you to become an Associate.~n~~1~ others in this Organization. */);
 		}
 		else
 		{
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("BA_APP_BODY_T2");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("BA_APP_BODY_T2" /* GXT: Wants you to become a Bodyguard.~n~~1~ others in this Organization. */);
 		}
 		HUD::ADD_TEXT_COMPONENT_INTEGER(iVar2);
 		GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -2163,11 +2163,11 @@ void func_91()//Position - 0x22DD
 	HUD::SET_COLOUR_OF_NEXT_TEXT_COMPONENT(func_76(PLAYER::PLAYER_ID()));
 	HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(func_92());
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
-	func_22("BA_APP_NONEG");
-	func_22("CELL_AGBOSSPIC");
+	func_22("BA_APP_NONEG" /* GXT: You are already a member of this Organization. */);
+	func_22("CELL_AGBOSSPIC" /* GXT: CHAR_GANGAPP */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	func_95(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(26), -1082130432, -1082130432, -1082130432, -1082130432);
-	func_53("CELL_BOSSAGE");
+	func_53("CELL_BOSSAGE" /* GXT: SecuroServ */);
 	func_50(1, "", 1, "", 4, &Local_84, &iLocal_105);
 	iLocal_83 = 2;
 }

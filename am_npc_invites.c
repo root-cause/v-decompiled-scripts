@@ -6117,7 +6117,7 @@ int func_188(struct<30> Param0, struct<3> Param1, bool bParam2)//Position - 0x58
 		HUD::SET_BLIP_AS_SHORT_RANGE(iVar1, true);
 		HUD::SET_BLIP_PRIORITY(iVar1, 10);
 		HUD::SET_BLIP_FLASH_TIMER(iVar1, 10000);
-		HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iVar1, "FMMC_RSTAR_MSL");
+		HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iVar1, "FMMC_RSTAR_MSL" /* GXT: Lamar */);
 		iVar2 = (func_190(0) - 1);
 		if (iVar2 >= 0 && iVar2 <= 7)
 		{
@@ -7435,14 +7435,14 @@ void func_248(var uParam0, int iParam1, int iParam2, char* sParam3, char* sParam
 			{
 				*iParam1 = 94;
 				*iParam2 = 2;
-				StringCopy(sParam3, "FMMC_RSTAR_BJ", 24);
+				StringCopy(sParam3, "FMMC_RSTAR_BJ" /* GXT: Parachuting */, 24);
 				*iParam6 = 1;
 			}
 			else if (uParam0->f_2 == 62)
 			{
 				*iParam1 = 94;
 				*iParam2 = 2;
-				StringCopy(sParam3, "FMMC_RSTAR_BJ", 24);
+				StringCopy(sParam3, "FMMC_RSTAR_BJ" /* GXT: Parachuting */, 24);
 				*iParam6 = 1;
 			}
 			else if (uParam0->f_2 < 32)
@@ -7452,11 +7452,11 @@ void func_248(var uParam0, int iParam1, int iParam2, char* sParam3, char* sParam
 				*iParam6 = 1;
 				if (bVar0)
 				{
-					StringCopy(sParam3, "FMMC_BM_BASE", 24);
+					StringCopy(sParam3, "FMMC_BM_BASE" /* GXT: Bookmarked Parachuting */, 24);
 				}
 				else
 				{
-					StringCopy(sParam3, "FMMC_PL_BASE", 24);
+					StringCopy(sParam3, "FMMC_PL_BASE" /* GXT: ~a~ Parachuting */, 24);
 					StringCopy(sParam4, func_256(uParam0), 64);
 				}
 			}
@@ -7470,7 +7470,7 @@ void func_248(var uParam0, int iParam1, int iParam2, char* sParam3, char* sParam
 		case 186:
 			*iParam1 = 90;
 			*iParam2 = 1;
-			StringCopy(sParam3, "HUD_MG_PILOT", 24);
+			StringCopy(sParam3, "HUD_MG_PILOT" /* GXT: San Andreas Flight School */, 24);
 			return;
 		
 		case 189:
@@ -7502,14 +7502,14 @@ void func_248(var uParam0, int iParam1, int iParam2, char* sParam3, char* sParam
 			{
 				*iParam1 = 406;
 				*iParam2 = 2;
-				StringCopy(sParam3, "FMMC_RSTAR_GA", 24);
+				StringCopy(sParam3, "FMMC_RSTAR_GA" /* GXT: Gang Attack */, 24);
 				*iParam6 = 1;
 			}
 			else if (uParam0->f_2 == 62)
 			{
 				*iParam1 = 406;
 				*iParam2 = 2;
-				StringCopy(sParam3, "FMMC_RSTAR_GA", 24);
+				StringCopy(sParam3, "FMMC_RSTAR_GA" /* GXT: Gang Attack */, 24);
 				*iParam6 = 1;
 			}
 			else if (uParam0->f_2 < 32)
@@ -7519,11 +7519,11 @@ void func_248(var uParam0, int iParam1, int iParam2, char* sParam3, char* sParam
 				*iParam6 = 1;
 				if (bVar0)
 				{
-					StringCopy(sParam3, "FMMC_BM_GH", 24);
+					StringCopy(sParam3, "FMMC_BM_GH" /* GXT: Bookmarked Gang Attack */, 24);
 				}
 				else
 				{
-					StringCopy(sParam3, "FMMC_PL_GH", 24);
+					StringCopy(sParam3, "FMMC_PL_GH" /* GXT: ~a~ Gang Attack */, 24);
 					StringCopy(sParam4, func_256(uParam0), 64);
 				}
 			}
@@ -7600,14 +7600,14 @@ void func_248(var uParam0, int iParam1, int iParam2, char* sParam3, char* sParam
 			{
 				*iParam1 = 305;
 				*iParam2 = 2;
-				StringCopy(sParam3, "FMMC_RSTAR_HM", 24);
+				StringCopy(sParam3, "FMMC_RSTAR_HM" /* GXT: Survival */, 24);
 				*iParam6 = 1;
 			}
 			else if (uParam0->f_2 == 62)
 			{
 				*iParam1 = 305;
 				*iParam2 = 2;
-				StringCopy(sParam3, "FMMC_RSTAR_HM", 24);
+				StringCopy(sParam3, "FMMC_RSTAR_HM" /* GXT: Survival */, 24);
 				*iParam6 = 1;
 			}
 			else if (uParam0->f_2 < 32)
@@ -7617,11 +7617,11 @@ void func_248(var uParam0, int iParam1, int iParam2, char* sParam3, char* sParam
 				*iParam6 = 1;
 				if (bVar0)
 				{
-					StringCopy(sParam3, "FMMC_BM_HM", 24);
+					StringCopy(sParam3, "FMMC_BM_HM" /* GXT: Bookmarked Survival */, 24);
 				}
 				else
 				{
-					StringCopy(sParam3, "FMMC_PL_HM", 24);
+					StringCopy(sParam3, "FMMC_PL_HM" /* GXT: ~a~ Survival */, 24);
 					StringCopy(sParam4, func_256(uParam0), 64);
 				}
 			}
@@ -7647,105 +7647,105 @@ struct<6> func_249(int iParam0, bool bParam1, bool bParam2)//Position - 0x70D4
 		case 1:
 			if (bParam2)
 			{
-				StringCopy(&Var0, "FMMC_BM_LR", 24);
+				StringCopy(&Var0, "FMMC_BM_LR" /* GXT: Bookmarked Land Race */, 24);
 				return Var0;
 			}
 			if (bParam1)
 			{
-				StringCopy(&Var0, "FMMC_RSTAR_LR", 24);
+				StringCopy(&Var0, "FMMC_RSTAR_LR" /* GXT: Land Race */, 24);
 				return Var0;
 			}
-			StringCopy(&Var0, "FMMC_PL_LR", 24);
+			StringCopy(&Var0, "FMMC_PL_LR" /* GXT: ~a~ Land Race */, 24);
 			return Var0;
 		
 		case 10:
 		case 11:
 			if (bParam2)
 			{
-				StringCopy(&Var0, "FMMC_BM_OFR", 24);
+				StringCopy(&Var0, "FMMC_BM_OFR" /* GXT: Bookmarked On Foot Race */, 24);
 				return Var0;
 			}
 			if (bParam1)
 			{
-				StringCopy(&Var0, "FMMC_RSTAR_OFR", 24);
+				StringCopy(&Var0, "FMMC_RSTAR_OFR" /* GXT: On Foot Race */, 24);
 				return Var0;
 			}
-			StringCopy(&Var0, "FMMC_PL_OFR", 24);
+			StringCopy(&Var0, "FMMC_PL_OFR" /* GXT: ~a~ On Foot Race */, 24);
 			return Var0;
 		
 		case 12:
 		case 13:
 			if (bParam2)
 			{
-				StringCopy(&Var0, "FMMC_BM_BR", 24);
+				StringCopy(&Var0, "FMMC_BM_BR" /* GXT: Bookmarked Bike Race */, 24);
 				return Var0;
 			}
 			if (bParam1)
 			{
-				StringCopy(&Var0, "FMMC_RSTAR_BR", 24);
+				StringCopy(&Var0, "FMMC_RSTAR_BR" /* GXT: Bike Race */, 24);
 				return Var0;
 			}
-			StringCopy(&Var0, "FMMC_PL_BR", 24);
+			StringCopy(&Var0, "FMMC_PL_BR" /* GXT: ~a~ Bike Race */, 24);
 			return Var0;
 		
 		case 6:
 		case 7:
 			if (bParam2)
 			{
-				StringCopy(&Var0, "FMMC_BM_SR", 24);
+				StringCopy(&Var0, "FMMC_BM_SR" /* GXT: Bookmarked Stunt Race */, 24);
 				return Var0;
 			}
 			if (bParam1)
 			{
-				StringCopy(&Var0, "FMMC_RSTAR_STR", 24);
+				StringCopy(&Var0, "FMMC_RSTAR_STR" /* GXT: Stunt Race */, 24);
 				return Var0;
 			}
-			StringCopy(&Var0, "FMMC_PL_SR", 24);
+			StringCopy(&Var0, "FMMC_PL_SR" /* GXT: ~a~ Stunt Race */, 24);
 			return Var0;
 		
 		case 18:
 		case 19:
 			if (bParam2)
 			{
-				StringCopy(&Var0, "FMMC_BM_TAR", 24);
+				StringCopy(&Var0, "FMMC_BM_TAR" /* GXT: Bookmarked Target Assault Race */, 24);
 				return Var0;
 			}
 			if (bParam1)
 			{
-				StringCopy(&Var0, "FMMC_RSTAR_TAR", 24);
+				StringCopy(&Var0, "FMMC_RSTAR_TAR" /* GXT: Target Assault Race */, 24);
 				return Var0;
 			}
-			StringCopy(&Var0, "FMMC_PL_TAR", 24);
+			StringCopy(&Var0, "FMMC_PL_TAR" /* GXT: ~a~ Target Assault Race */, 24);
 			return Var0;
 		
 		case 2:
 		case 3:
 			if (bParam2)
 			{
-				StringCopy(&Var0, "FMMC_BM_WR", 24);
+				StringCopy(&Var0, "FMMC_BM_WR" /* GXT: Bookmarked Sea Race */, 24);
 				return Var0;
 			}
 			if (bParam1)
 			{
-				StringCopy(&Var0, "FMMC_RSTAR_WR", 24);
+				StringCopy(&Var0, "FMMC_RSTAR_WR" /* GXT: Sea Race */, 24);
 				return Var0;
 			}
-			StringCopy(&Var0, "FMMC_PL_WR", 24);
+			StringCopy(&Var0, "FMMC_PL_WR" /* GXT: ~a~ Sea Race */, 24);
 			return Var0;
 		
 		case 4:
 		case 5:
 			if (bParam2)
 			{
-				StringCopy(&Var0, "FMMC_BM_AR", 24);
+				StringCopy(&Var0, "FMMC_BM_AR" /* GXT: Bookmarked Air Race */, 24);
 				return Var0;
 			}
 			if (bParam1)
 			{
-				StringCopy(&Var0, "FMMC_RSTAR_AR", 24);
+				StringCopy(&Var0, "FMMC_RSTAR_AR" /* GXT: Air Race */, 24);
 				return Var0;
 			}
-			StringCopy(&Var0, "FMMC_PL_AR", 24);
+			StringCopy(&Var0, "FMMC_PL_AR" /* GXT: ~a~ Air Race */, 24);
 			return Var0;
 		
 		case 20:
@@ -7754,63 +7754,63 @@ struct<6> func_249(int iParam0, bool bParam1, bool bParam2)//Position - 0x70D4
 		case 23:
 			if (bParam2)
 			{
-				StringCopy(&Var0, "FMMC_BM_AW", 24);
+				StringCopy(&Var0, "FMMC_BM_AW" /* GXT: Bookmarked Arena Race */, 24);
 				return Var0;
 			}
 			if (bParam1)
 			{
-				StringCopy(&Var0, "FMMC_RSTARAWR", 24);
+				StringCopy(&Var0, "FMMC_RSTARAWR" /* GXT: Arena Race */, 24);
 				return Var0;
 			}
-			StringCopy(&Var0, "FMMC_PL_AW", 24);
+			StringCopy(&Var0, "FMMC_PL_AW" /* GXT: ~a~ Arena Race */, 24);
 			return Var0;
 		
 		case 24:
 		case 25:
 			if (bParam2)
 			{
-				StringCopy(&Var0, "FMMC_BM_OW", 24);
+				StringCopy(&Var0, "FMMC_BM_OW" /* GXT: Bookmarked Open Wheel Race */, 24);
 				return Var0;
 			}
 			if (bParam1)
 			{
-				StringCopy(&Var0, "FMMC_RSTAR_OW", 24);
+				StringCopy(&Var0, "FMMC_RSTAR_OW" /* GXT: Open Wheel Race */, 24);
 				return Var0;
 			}
-			StringCopy(&Var0, "FMMC_PL_OW", 24);
+			StringCopy(&Var0, "FMMC_PL_OW" /* GXT: ~a~ Open Wheel Race */, 24);
 			return Var0;
 		
 		case 26:
 			if (bParam2)
 			{
-				StringCopy(&Var0, "FMMC_BM_PU", 24);
+				StringCopy(&Var0, "FMMC_BM_PU" /* GXT: Bookmarked Pursuit Race */, 24);
 				return Var0;
 			}
 			if (bParam1)
 			{
-				StringCopy(&Var0, "FMMC_RSTAR_PU", 24);
+				StringCopy(&Var0, "FMMC_RSTAR_PU" /* GXT: Pursuit Race */, 24);
 				return Var0;
 			}
-			StringCopy(&Var0, "FMMC_PL_PU", 24);
+			StringCopy(&Var0, "FMMC_PL_PU" /* GXT: ~a~ Pursuit Race */, 24);
 			return Var0;
 		
 		case 27:
 			if (bParam2)
 			{
-				StringCopy(&Var0, "FMMC_BM_ST", 24);
+				StringCopy(&Var0, "FMMC_BM_ST" /* GXT: Bookmarked Street Race */, 24);
 				return Var0;
 			}
 			if (bParam1)
 			{
-				StringCopy(&Var0, "FMMC_RSTAR_ST", 24);
+				StringCopy(&Var0, "FMMC_RSTAR_ST" /* GXT: Street Race */, 24);
 				return Var0;
 			}
-			StringCopy(&Var0, "FMMC_PL_ST", 24);
+			StringCopy(&Var0, "FMMC_PL_ST" /* GXT: ~a~ Street Race */, 24);
 			return Var0;
 		
 		default:
 	}
-	StringCopy(&Var0, "FMMC_RSTAR_LR", 24);
+	StringCopy(&Var0, "FMMC_RSTAR_LR" /* GXT: Land Race */, 24);
 	return Var0;
 }
 
@@ -7875,54 +7875,54 @@ struct<6> func_251(int iParam0, bool bParam1, bool bParam2, int iParam3)//Positi
 	switch (iParam0)
 	{
 		case 1:
-			StringCopy(&Var0, "FMMC_RSTAR_MHST", 24);
+			StringCopy(&Var0, "FMMC_RSTAR_MHST" /* GXT: Heist */, 24);
 			return Var0;
 		
 		case 7:
-			StringCopy(&Var0, "FMMC_RSTAR_HP", 24);
+			StringCopy(&Var0, "FMMC_RSTAR_HP" /* GXT: Setup */, 24);
 			return Var0;
 		
 		case 5:
 			if (bParam2)
 			{
-				StringCopy(&Var0, "FMMC_BM_LTS", 24);
+				StringCopy(&Var0, "FMMC_BM_LTS" /* GXT: Bookmarked LTS */, 24);
 				return Var0;
 			}
 			if (bParam1)
 			{
-				StringCopy(&Var0, "FMMC_RSTAR_MLTS", 24);
+				StringCopy(&Var0, "FMMC_RSTAR_MLTS" /* GXT: Last Team Standing */, 24);
 				return Var0;
 			}
-			StringCopy(&Var0, "FMMC_PL_LTS", 24);
+			StringCopy(&Var0, "FMMC_PL_LTS" /* GXT: ~a~ Last Team Standing */, 24);
 			return Var0;
 		
 		case 6:
 			if (bParam2)
 			{
-				StringCopy(&Var0, "FMMC_BM_CTF", 24);
+				StringCopy(&Var0, "FMMC_BM_CTF" /* GXT: Bookmarked Capture */, 24);
 				return Var0;
 			}
 			if (bParam1)
 			{
-				StringCopy(&Var0, "FMMC_RSTAR_MCTF", 24);
+				StringCopy(&Var0, "FMMC_RSTAR_MCTF" /* GXT: Capture */, 24);
 				return Var0;
 			}
-			StringCopy(&Var0, "FMMC_PL_CTF", 24);
+			StringCopy(&Var0, "FMMC_PL_CTF" /* GXT: ~a~ Capture */, 24);
 			return Var0;
 		
 		case 8:
 			if (iParam3 == 0)
 			{
-				StringCopy(&Var0, "FMMC_RSTAR_MSL", 24);
+				StringCopy(&Var0, "FMMC_RSTAR_MSL" /* GXT: Lamar */, 24);
 			}
 			else
 			{
-				StringCopy(&Var0, "FMMC_RSTAR_MS", 24);
+				StringCopy(&Var0, "FMMC_RSTAR_MS" /* GXT: Mission */, 24);
 			}
 			return Var0;
 		
 		case 129:
-			StringCopy(&Var0, "FMMC_RSTAR_MSA", 24);
+			StringCopy(&Var0, "FMMC_RSTAR_MSA" /* GXT: Adversary Mode */, 24);
 			return Var0;
 		
 		case 2:
@@ -7932,17 +7932,17 @@ struct<6> func_251(int iParam0, bool bParam1, bool bParam2, int iParam3)//Positi
 		case 9:
 			if (bParam2)
 			{
-				StringCopy(&Var0, "FMMC_BM_MISS", 24);
+				StringCopy(&Var0, "FMMC_BM_MISS" /* GXT: Bookmarked Mission */, 24);
 			}
 			else
 			{
-				StringCopy(&Var0, "FMMC_RSTAR_MS", 24);
+				StringCopy(&Var0, "FMMC_RSTAR_MS" /* GXT: Mission */, 24);
 			}
 			return Var0;
 		
 		default:
 	}
-	StringCopy(&Var0, "FMMC_RSTAR_MS", 24);
+	StringCopy(&Var0, "FMMC_RSTAR_MS" /* GXT: Mission */, 24);
 	return Var0;
 }
 
@@ -8010,76 +8010,76 @@ struct<6> func_254(int iParam0, bool bParam1, bool bParam2)//Position - 0x76C7
 		case 0:
 			if (bParam2)
 			{
-				StringCopy(&Var0, "FMMC_BM_DM", 24);
+				StringCopy(&Var0, "FMMC_BM_DM" /* GXT: Bookmarked Deathmatch */, 24);
 				return Var0;
 			}
 			if (bParam1)
 			{
-				StringCopy(&Var0, "FMMC_RSTAR_DM", 24);
+				StringCopy(&Var0, "FMMC_RSTAR_DM" /* GXT: Deathmatch */, 24);
 				return Var0;
 			}
-			StringCopy(&Var0, "FMMC_PL_DM", 24);
+			StringCopy(&Var0, "FMMC_PL_DM" /* GXT: ~a~ Deathmatch */, 24);
 			return Var0;
 		
 		case 1:
 			if (bParam2)
 			{
-				StringCopy(&Var0, "FMMC_BM_TDM", 24);
+				StringCopy(&Var0, "FMMC_BM_TDM" /* GXT: Bookmarked Team Deathmatch */, 24);
 				return Var0;
 			}
 			if (bParam1)
 			{
-				StringCopy(&Var0, "FMMC_RSTAR_TDM", 24);
+				StringCopy(&Var0, "FMMC_RSTAR_TDM" /* GXT: Team Deathmatch */, 24);
 				return Var0;
 			}
-			StringCopy(&Var0, "FMMC_PL_TDM", 24);
+			StringCopy(&Var0, "FMMC_PL_TDM" /* GXT: ~a~ Team Deathmatch */, 24);
 			return Var0;
 		
 		case 2:
 			if (bParam2)
 			{
-				StringCopy(&Var0, "FMMC_BM_VDM", 24);
+				StringCopy(&Var0, "FMMC_BM_VDM" /* GXT: Bookmarked Vehicle Deathmatch */, 24);
 				return Var0;
 			}
 			if (bParam1)
 			{
-				StringCopy(&Var0, "FMMC_RSTAR_VDM", 24);
+				StringCopy(&Var0, "FMMC_RSTAR_VDM" /* GXT: Vehicle Deathmatch */, 24);
 				return Var0;
 			}
-			StringCopy(&Var0, "FMMC_PL_VDM", 24);
+			StringCopy(&Var0, "FMMC_PL_VDM" /* GXT: ~a~ Vehicle Deathmatch */, 24);
 			return Var0;
 		
 		case 3:
 			if (bParam2)
 			{
-				StringCopy(&Var0, "FMMC_BM_KOTH", 24);
+				StringCopy(&Var0, "FMMC_BM_KOTH" /* GXT: Bookmarked King of the Hill */, 24);
 				return Var0;
 			}
 			if (bParam1)
 			{
-				StringCopy(&Var0, "FMMC_RSTAR_KOTH", 24);
+				StringCopy(&Var0, "FMMC_RSTAR_KOTH" /* GXT: King of the Hill */, 24);
 				return Var0;
 			}
-			StringCopy(&Var0, "FMMC_PL_KOTH", 24);
+			StringCopy(&Var0, "FMMC_PL_KOTH" /* GXT: ~a~ King of the Hill */, 24);
 			return Var0;
 		
 		case 4:
 			if (bParam2)
 			{
-				StringCopy(&Var0, "FMMC_BM_TKOTH", 24);
+				StringCopy(&Var0, "FMMC_BM_TKOTH" /* GXT: Bookmarked Team King of the Hill */, 24);
 				return Var0;
 			}
 			if (bParam1)
 			{
-				StringCopy(&Var0, "FMMC_RSTR_TKOTH", 24);
+				StringCopy(&Var0, "FMMC_RSTR_TKOTH" /* GXT: Team King of the Hill */, 24);
 				return Var0;
 			}
-			StringCopy(&Var0, "FMMC_PL_TKOTH", 24);
+			StringCopy(&Var0, "FMMC_PL_TKOTH" /* GXT: ~a~ Team King of the Hill */, 24);
 			return Var0;
 		
 		default:
 	}
-	StringCopy(&Var0, "FMMC_RSTAR_DM", 24);
+	StringCopy(&Var0, "FMMC_RSTAR_DM" /* GXT: Deathmatch */, 24);
 	return Var0;
 }
 
@@ -8115,7 +8115,7 @@ char* func_256(var uParam0)//Position - 0x7867
 	
 	if (func_259(uParam0->f_2))
 	{
-		return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("FM_LOC_ROCKS");
+		return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("FM_LOC_ROCKS" /* GXT: Rockstar */);
 	}
 	if (uParam0->f_2 < 32 && !func_40(uParam0->f_1))
 	{

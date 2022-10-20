@@ -12738,7 +12738,7 @@ char* func_334(int iParam0)//Position - 0xFBDA
 			return "CHALLENGE_PLAYER_LEFT";
 			break;
 	}
-	return "DEFAULT";
+	return "DEFAULT" /* GXT: _ */;
 }
 
 char* func_335(int iParam0)//Position - 0xFC64
@@ -12798,7 +12798,7 @@ char* func_335(int iParam0)//Position - 0xFC64
 		
 		default:
 	}
-	return "DEFAULT";
+	return "DEFAULT" /* GXT: _ */;
 }
 
 void func_336(int iParam0, int iParam1, int iParam2, float fParam3)//Position - 0xFD52
@@ -13218,7 +13218,7 @@ int func_343()//Position - 0x103E4
 		{
 			if (!BitTest(Local_63.f_3, 7))
 			{
-				func_344("HS_UNABLE", iLocal_71, 0, 0, 0, 1, 0);
+				func_344("HS_UNABLE" /* GXT: ~s~Unable to send a Hit Squad to attack ~a~.~s~ */, iLocal_71, 0, 0, 0, 1, 0);
 			}
 		}
 		return 1;
@@ -14379,7 +14379,7 @@ int func_393(var uParam0, int iParam1, int iParam2, char* sParam3, char* sParam4
 	}
 	if (iParam5 == 4)
 	{
-		StringCopy(&Var0, "CELL_226", 16);
+		StringCopy(&Var0, "CELL_226" /* GXT: Accept? */, 16);
 		return func_466(uParam0, iParam1, sParam3, sParam4, &Var0);
 	}
 	if (iParam5 == 1 || iParam5 == 7)
@@ -15053,7 +15053,7 @@ void func_406(int iParam0)//Position - 0x11F3C
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(42);
 								GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							}
-							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB")) && BitTest(Global_8137, 6))
+							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB" /* GXT: Benny's */)) && BitTest(Global_8137, 6))
 							{
 								GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT");
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
@@ -18196,7 +18196,7 @@ void func_524()//Position - 0x159E7
 						{
 							if (!BitTest(iLocal_66, 6))
 							{
-								HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_78, "FM_MGR_BLP");
+								HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_78, "FM_MGR_BLP" /* GXT: Mugger */);
 								MISC::SET_BIT(&iLocal_66, 6);
 							}
 						}
@@ -18569,7 +18569,7 @@ void func_537()//Position - 0x1617B
 				{
 					if (func_6(iLocal_71, 1, 1))
 					{
-						func_344("GC_TCK_60", iLocal_71, 0, 0, 0, 1, 0);
+						func_344("GC_TCK_60" /* GXT: ~s~Mugger successfully acquired. They will approach ~a~~s~ soon. */, iLocal_71, 0, 0, 0, 1, 0);
 						MISC::SET_BIT(&iLocal_66, 11);
 					}
 				}
@@ -18582,7 +18582,7 @@ void func_537()//Position - 0x1617B
 					{
 						if (func_6(iLocal_71, 1, 1))
 						{
-							func_344("GC_TCK_62", iLocal_71, 0, 0, 0, 1, 0);
+							func_344("GC_TCK_62" /* GXT: ~s~Your Mugger is approaching ~a~.~s~ */, iLocal_71, 0, 0, 0, 1, 0);
 							MISC::SET_BIT(&iLocal_66, 12);
 						}
 					}
@@ -18596,7 +18596,7 @@ void func_537()//Position - 0x1617B
 					{
 						if (func_6(iLocal_71, 1, 1))
 						{
-							func_344("GC_TCK_65", iLocal_71, 0, 0, 0, 1, 0);
+							func_344("GC_TCK_65" /* GXT: ~s~Your Mugger is unable to reach ~a~'s~s~ current position. They will attempt again soon. */, iLocal_71, 0, 0, 0, 1, 0);
 							MISC::SET_BIT(&iLocal_66, 8);
 						}
 					}
@@ -18614,7 +18614,7 @@ void func_537()//Position - 0x1617B
 							{
 								if (func_6(iLocal_71, 1, 1))
 								{
-									func_344("GC_TCK_63", iLocal_71, 0, 0, 0, 1, 0);
+									func_344("GC_TCK_63" /* GXT: ~s~~a~~s~ has escaped from your Mugger. They will approach again soon. */, iLocal_71, 0, 0, 0, 1, 0);
 									MISC::SET_BIT(&iLocal_66, 13);
 								}
 							}
@@ -18633,15 +18633,15 @@ void func_537()//Position - 0x1617B
 					{
 						if (Local_63.f_50)
 						{
-							func_344("HS_SUCC", iLocal_71, 0, 0, 0, 1, 0);
+							func_344("HS_SUCC" /* GXT: ~s~A Hit Squad was successfully sent to attack ~a~.~s~ */, iLocal_71, 0, 0, 0, 1, 0);
 						}
 						else if (Local_63.f_52)
 						{
-							func_344("GO_ASS_SUCC", iLocal_71, 0, 0, 0, 1, 0);
+							func_344("GO_ASS_SUCC" /* GXT: ~s~A Strike Team was successfully sent to attack ~a~.~s~ */, iLocal_71, 0, 0, 0, 1, 0);
 						}
 						else
 						{
-							func_344("GC_TCK_70", iLocal_71, 0, 0, 0, 1, 0);
+							func_344("GC_TCK_70" /* GXT: ~s~Mercenaries were successfully sent to attack ~a~.~s~ */, iLocal_71, 0, 0, 0, 1, 0);
 						}
 						MISC::SET_BIT(&iLocal_66, 11);
 					}
@@ -18654,20 +18654,20 @@ void func_537()//Position - 0x1617B
 						{
 							if (Local_63.f_51)
 							{
-								func_539("HS_A_SUCC", 0);
+								func_539("HS_A_SUCC" /* GXT: A Hit Squad has been sent to attack you for abandoning your Motorcycle Club. */, 0);
 							}
 							else
 							{
-								func_344("HS_SENT", iLocal_70, 0, 0, 0, 1, 0);
+								func_344("HS_SENT" /* GXT: ~s~~a~~s~ has sent a Hit Squad to attack you. */, iLocal_70, 0, 0, 0, 1, 0);
 							}
 						}
 						else if (Local_63.f_52)
 						{
-							func_344("GO_ASS_SENT", iLocal_70, 0, 0, 0, 1, 0);
+							func_344("GO_ASS_SENT" /* GXT: ~s~~a~~s~ has sent a Strike Team to attack you. */, iLocal_70, 0, 0, 0, 1, 0);
 						}
 						else
 						{
-							func_344("GC_TCK_71", iLocal_70, 0, 0, 0, 1, 0);
+							func_344("GC_TCK_71" /* GXT: ~s~~a~~s~ has sent Mercenaries to attack you. */, iLocal_70, 0, 0, 0, 1, 0);
 						}
 						MISC::SET_BIT(&iLocal_66, 11);
 					}
@@ -18688,16 +18688,16 @@ void func_537()//Position - 0x1617B
 								{
 									if (!Local_63.f_51)
 									{
-										func_344("HS_KILLED", iLocal_71, 0, 0, 0, 1, 0);
+										func_344("HS_KILLED" /* GXT: ~s~~a~~s~ has been killed by the Hit Squad. */, iLocal_71, 0, 0, 0, 1, 0);
 									}
 								}
 								else if (Local_63.f_52)
 								{
-									func_344("GO_ASS_KILL", iLocal_71, 0, 0, 0, 1, 0);
+									func_344("GO_ASS_KILL" /* GXT: ~s~~a~~s~ has been killed by the Strike Team. */, iLocal_71, 0, 0, 0, 1, 0);
 								}
 								else
 								{
-									func_344("GC_TCK_73", iLocal_71, 0, 0, 0, 1, 0);
+									func_344("GC_TCK_73" /* GXT: ~s~~a~~s~ has been killed by Mercenaries. */, iLocal_71, 0, 0, 0, 1, 0);
 								}
 								MISC::SET_BIT(&iLocal_66, 10);
 							}
@@ -18717,15 +18717,15 @@ void func_537()//Position - 0x1617B
 							{
 								if (Local_63.f_50)
 								{
-									func_344("HS_ESCAPED", iLocal_71, 0, 0, 0, 1, 0);
+									func_344("HS_ESCAPED" /* GXT: ~s~~a~~s~ has escaped the Hit Squad. */, iLocal_71, 0, 0, 0, 1, 0);
 								}
 								else if (Local_63.f_52)
 								{
-									func_344("GO_ASS_ESC", iLocal_71, 0, 0, 0, 1, 0);
+									func_344("GO_ASS_ESC" /* GXT: ~s~~a~~s~ has escaped the Strike Team. */, iLocal_71, 0, 0, 0, 1, 0);
 								}
 								else
 								{
-									func_344("GC_TCK_75", iLocal_71, 0, 0, 0, 1, 0);
+									func_344("GC_TCK_75" /* GXT: ~s~~a~~s~ has escaped the Mercenaries. */, iLocal_71, 0, 0, 0, 1, 0);
 								}
 								MISC::SET_BIT(&iLocal_66, 9);
 							}

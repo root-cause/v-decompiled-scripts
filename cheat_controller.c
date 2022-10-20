@@ -212,7 +212,7 @@ void func_3(int iParam0)//Position - 0x1A1
 		case 2:
 			if (INTERIOR::IS_INTERIOR_SCENE())
 			{
-				func_21("CHEAT_VEHICLE_SPAWN_DENIED");
+				func_21("CHEAT_VEHICLE_SPAWN_DENIED" /* GXT: Can't spawn that vehicle here. */);
 				iLocal_46 = 1;
 			}
 			else
@@ -283,7 +283,7 @@ void func_4(int iParam0)//Position - 0x1F6
 			else
 			{
 				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iParam0);
-				func_21("CHEAT_VEHICLE_SPAWN_DENIED");
+				func_21("CHEAT_VEHICLE_SPAWN_DENIED" /* GXT: Can't spawn that vehicle here. */);
 			}
 			iLocal_46 = 1;
 		}
@@ -417,11 +417,11 @@ int func_14(char* sParam0)//Position - 0x570
 	{
 		if (func_15(14) && CAM::IS_SCREEN_FADED_IN())
 		{
-			if (MISC::ARE_STRINGS_EQUAL(sParam0, "CHEAT_SUPER_JUMP") && INTERIOR::IS_INTERIOR_SCENE())
+			if (MISC::ARE_STRINGS_EQUAL(sParam0, "CHEAT_SUPER_JUMP" /* GXT: Super jump. */) && INTERIOR::IS_INTERIOR_SCENE())
 			{
 				return 0;
 			}
-			if ((MISC::ARE_STRINGS_EQUAL(sParam0, "CHEAT_GRAVITY_MOON") && !ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false)) && ENTITY::IS_ENTITY_IN_WATER(PLAYER::PLAYER_PED_ID()))
+			if ((MISC::ARE_STRINGS_EQUAL(sParam0, "CHEAT_GRAVITY_MOON" /* GXT: Moon gravity. */) && !ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false)) && ENTITY::IS_ENTITY_IN_WATER(PLAYER::PLAYER_PED_ID()))
 			{
 				return 0;
 			}
@@ -443,7 +443,7 @@ void func_16(char* sParam0)//Position - 0x5E8
 	}
 	else
 	{
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CHEAT_ACTIVATED");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CHEAT_ACTIVATED" /* GXT: Cheat activated:~n~~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam0);
 		func_17(HUD::END_TEXT_COMMAND_THEFEED_POST_TICKER(false, true));
 		STATS::PLAYSTATS_CHEAT_APPLIED(sParam0);
@@ -561,7 +561,7 @@ void func_21(char* sParam0)//Position - 0x92C
 {
 	if (!func_15(14))
 	{
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CHEAT_DENIED");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CHEAT_DENIED" /* GXT: Cheat denied:~n~~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam0);
 		func_17(HUD::END_TEXT_COMMAND_THEFEED_POST_TICKER(false, true));
 	}
@@ -602,7 +602,7 @@ void func_23()//Position - 0x984
 			break;
 		
 		case 9:
-			func_24("CHEAT_AIM_SLOW_MO");
+			func_24("CHEAT_AIM_SLOW_MO" /* GXT: Slow motion aim. */);
 			func_31(19, 0);
 			MISC::SET_TIME_SCALE(1f);
 			iLocal_77 = 0;
@@ -621,7 +621,7 @@ void func_24(char* sParam0)//Position - 0xA23
 	}
 	else
 	{
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CHEAT_DEACTIVATED");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CHEAT_DEACTIVATED" /* GXT: Cheat deactivated:~n~~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam0);
 		func_17(HUD::END_TEXT_COMMAND_THEFEED_POST_TICKER(false, true));
 	}
@@ -696,17 +696,17 @@ void func_30()//Position - 0xB62
 	switch (iLocal_77)
 	{
 		case 1:
-			func_16("CHEAT_AIM_SLOW_MO1");
+			func_16("CHEAT_AIM_SLOW_MO1" /* GXT: Slow motion aim level 1. */);
 			fLocal_78 = 0.6f;
 			break;
 		
 		case 2:
-			func_16("CHEAT_AIM_SLOW_MO2");
+			func_16("CHEAT_AIM_SLOW_MO2" /* GXT: Slow motion aim level 2. */);
 			fLocal_78 = 0.4f;
 			break;
 		
 		case 3:
-			func_16("CHEAT_AIM_SLOW_MO3");
+			func_16("CHEAT_AIM_SLOW_MO3" /* GXT: Slow motion aim level 3. */);
 			fLocal_78 = 0.2f;
 			break;
 		
@@ -753,7 +753,7 @@ void func_32()//Position - 0xBFA
 		case 9:
 			PAD::DISABLE_CONTROL_ACTION(2, 37, true);
 			PAD::DISABLE_CONTROL_ACTION(2, 19, true);
-			func_24("CHEAT_SLOW_MO");
+			func_24("CHEAT_SLOW_MO" /* GXT: Slow Motion. */);
 			func_31(16, 0);
 			iLocal_76 = 0;
 			MISC::SET_TIME_SCALE(1f);
@@ -794,17 +794,17 @@ void func_35()//Position - 0xD26
 	switch (iLocal_76)
 	{
 		case 1:
-			func_16("CHEAT_SLOW_MO1");
+			func_16("CHEAT_SLOW_MO1" /* GXT: Slow motion level 1. */);
 			MISC::SET_TIME_SCALE(0.6f);
 			break;
 		
 		case 2:
-			func_16("CHEAT_SLOW_MO2");
+			func_16("CHEAT_SLOW_MO2" /* GXT: Slow motion level 2. */);
 			MISC::SET_TIME_SCALE(0.4f);
 			break;
 		
 		case 3:
-			func_16("CHEAT_SLOW_MO3");
+			func_16("CHEAT_SLOW_MO3" /* GXT: Slow motion level 3. */);
 			MISC::SET_TIME_SCALE(0.2f);
 			break;
 		
@@ -867,7 +867,7 @@ void func_36()//Position - 0xD99
 				}
 				CAM::DO_SCREEN_FADE_IN(250);
 				iLocal_72 = MISC::GET_GAME_TIMER();
-				func_16("CHEAT_SKYFALL");
+				func_16("CHEAT_SKYFALL" /* GXT: Skyfall. */);
 				MISC::SET_INSTANCE_PRIORITY_HINT(2);
 				iLocal_64 = 5;
 			}
@@ -897,7 +897,7 @@ void func_36()//Position - 0xD99
 		
 		case 9:
 			func_37();
-			func_24("CHEAT_SKYFALL");
+			func_24("CHEAT_SKYFALL" /* GXT: Skyfall. */);
 			func_31(17, 0);
 			iLocal_64 = 1;
 			break;
@@ -945,7 +945,7 @@ void func_39()//Position - 0xFFF
 			break;
 		
 		case 4:
-			func_16("CHEAT_INVINCIBILITY");
+			func_16("CHEAT_INVINCIBILITY" /* GXT: Invincible for 5 minutes. */);
 			func_31(15, 1);
 			iLocal_62 = 5;
 			iLocal_74 = MISC::GET_GAME_TIMER();
@@ -968,7 +968,7 @@ void func_39()//Position - 0xFFF
 			iLocal_75 = (MISC::GET_GAME_TIMER() - iLocal_74);
 			if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("appinternet")) == 0)
 			{
-				func_40((iLocal_73 - iLocal_75), "CHEAT_INV", 0, 0, 1000, 0, 2, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, -1);
+				func_40((iLocal_73 - iLocal_75), "CHEAT_INV" /* GXT: INVINCIBILITY */, 0, 0, 1000, 0, 2, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 			}
 			if (iLocal_75 >= (iLocal_73 - 1000))
 			{
@@ -981,7 +981,7 @@ void func_39()//Position - 0xFFF
 			break;
 		
 		case 9:
-			func_24("CHEAT_INVINCIBILITY_OFF");
+			func_24("CHEAT_INVINCIBILITY_OFF" /* GXT: Invincibility */);
 			func_31(15, 0);
 			iLocal_62 = 1;
 			if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
@@ -1057,7 +1057,7 @@ void func_43()//Position - 0x1306
 			break;
 		
 		case 4:
-			func_16("CHEAT_FLAMING_BULLETS");
+			func_16("CHEAT_FLAMING_BULLETS" /* GXT: Flaming bullets. */);
 			func_31(12, 1);
 			iLocal_59 = 5;
 			break;
@@ -1077,7 +1077,7 @@ void func_43()//Position - 0x1306
 			break;
 		
 		case 9:
-			func_24("CHEAT_FLAMING_BULLETS");
+			func_24("CHEAT_FLAMING_BULLETS" /* GXT: Flaming bullets. */);
 			func_31(12, 0);
 			iLocal_59 = 1;
 			break;
@@ -1095,7 +1095,7 @@ void func_44()//Position - 0x13AD
 			break;
 		
 		case 4:
-			func_16("CHEAT_EXPLOSIVE_MELEE");
+			func_16("CHEAT_EXPLOSIVE_MELEE" /* GXT: Explosive melee attacks. */);
 			func_31(13, 1);
 			iLocal_60 = 5;
 			break;
@@ -1110,7 +1110,7 @@ void func_44()//Position - 0x13AD
 			break;
 		
 		case 9:
-			func_24("CHEAT_EXPLOSIVE_MELEE");
+			func_24("CHEAT_EXPLOSIVE_MELEE" /* GXT: Explosive melee attacks. */);
 			func_31(13, 0);
 			iLocal_60 = 1;
 			break;
@@ -1128,7 +1128,7 @@ void func_45()//Position - 0x1450
 			break;
 		
 		case 4:
-			func_16("CHEAT_DRUNK");
+			func_16("CHEAT_DRUNK" /* GXT: Drunk mode. */);
 			func_31(18, 1);
 			func_60(PLAYER::PLAYER_PED_ID());
 			func_58(30000, 1050253722, 1065353216, 0);
@@ -1143,7 +1143,7 @@ void func_45()//Position - 0x1450
 			break;
 		
 		case 9:
-			func_24("CHEAT_DRUNK");
+			func_24("CHEAT_DRUNK" /* GXT: Drunk mode. */);
 			func_31(18, 0);
 			func_49(PLAYER::PLAYER_PED_ID());
 			func_48(1000);
@@ -1581,7 +1581,7 @@ void func_64()//Position - 0x1AF3
 			break;
 		
 		case 4:
-			func_16("CHEAT_BANG_BANG");
+			func_16("CHEAT_BANG_BANG" /* GXT: Bang bang! */);
 			func_31(11, 1);
 			iLocal_58 = 5;
 			break;
@@ -1601,7 +1601,7 @@ void func_64()//Position - 0x1AF3
 			break;
 		
 		case 9:
-			func_24("CHEAT_BANG_BANG");
+			func_24("CHEAT_BANG_BANG" /* GXT: Bang bang! */);
 			func_31(11, 0);
 			iLocal_58 = 1;
 			break;
@@ -1639,7 +1639,7 @@ void func_65()//Position - 0x1B9A
 			break;
 		
 		case 9:
-			func_24("CHEAT_GRAVITY_MOON");
+			func_24("CHEAT_GRAVITY_MOON" /* GXT: Moon gravity. */);
 			func_31(14, 0);
 			MISC::SET_GRAVITY_LEVEL(0);
 			iLocal_79 = 0;
@@ -1671,7 +1671,7 @@ void func_67()//Position - 0x1C7B
 	switch (iLocal_79)
 	{
 		case 1:
-			func_16("CHEAT_GRAVITY_MOON");
+			func_16("CHEAT_GRAVITY_MOON" /* GXT: Moon gravity. */);
 			MISC::SET_GRAVITY_LEVEL(1);
 			break;
 		
@@ -1703,17 +1703,17 @@ void func_69()//Position - 0x1CEC
 		iLocal_57 = 1;
 		if ((func_27(23) || func_27(22)) || func_27(10))
 		{
-			func_21("CHEAT_NOT_NOW");
+			func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 			return;
 		}
 		if (func_70())
 		{
-			func_21("CHEAT_PHONE_DENIED");
+			func_21("CHEAT_PHONE_DENIED" /* GXT: Can't activate cheats while using the cellphone. */);
 			return;
 		}
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			func_16("CHEAT_GIVE_PARACHUTE");
+			func_16("CHEAT_GIVE_PARACHUTE" /* GXT: Parachute given. */);
 			WEAPON::GIVE_WEAPON_TO_PED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE"), 1, true, true);
 			func_5(10);
 		}
@@ -1774,31 +1774,31 @@ void func_72()//Position - 0x1DDC
 		iLocal_56 = 1;
 		if ((func_27(23) || func_27(22)) || func_27(9))
 		{
-			func_21("CHEAT_NOT_NOW");
+			func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 			return;
 		}
 		if (func_70())
 		{
-			func_21("CHEAT_PHONE_DENIED");
+			func_21("CHEAT_PHONE_DENIED" /* GXT: Can't activate cheats while using the cellphone. */);
 			return;
 		}
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
 			if (PLAYER::GET_MAX_WANTED_LEVEL() == 0)
 			{
-				func_21("CHEAT_NOT_NOW");
+				func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 				return;
 			}
 			iVar0 = PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID());
 			if (iVar0 > 0)
 			{
-				func_16("CHEAT_WANTED_DOWN");
+				func_16("CHEAT_WANTED_DOWN" /* GXT: Wanted Level down. */);
 				PLAYER::SET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID(), (iVar0 - 1), false);
 				func_5(9);
 			}
 			else
 			{
-				func_21("CHEAT_WANTED_DOWN_DENIED");
+				func_21("CHEAT_WANTED_DOWN_DENIED" /* GXT: No Wanted Level active. */);
 			}
 		}
 	}
@@ -1813,19 +1813,19 @@ void func_73()//Position - 0x1E7F
 		iLocal_55 = 1;
 		if ((func_27(23) || func_27(22)) || func_27(8))
 		{
-			func_21("CHEAT_NOT_NOW");
+			func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 			return;
 		}
 		if (func_70())
 		{
-			func_21("CHEAT_PHONE_DENIED");
+			func_21("CHEAT_PHONE_DENIED" /* GXT: Can't activate cheats while using the cellphone. */);
 			return;
 		}
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
 			if (PLAYER::GET_MAX_WANTED_LEVEL() == 0)
 			{
-				func_21("CHEAT_NOT_NOW");
+				func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 				return;
 			}
 			iVar0 = PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID());
@@ -1833,12 +1833,12 @@ void func_73()//Position - 0x1E7F
 			{
 				PLAYER::SET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID(), iVar0 + 1, false);
 				PLAYER::SET_PLAYER_WANTED_LEVEL_NOW(PLAYER::PLAYER_ID(), false);
-				func_16("CHEAT_WANTED_UP");
+				func_16("CHEAT_WANTED_UP" /* GXT: Wanted Level up. */);
 				func_5(8);
 			}
 			else
 			{
-				func_21("CHEAT_WANTED_UP_DENIED");
+				func_21("CHEAT_WANTED_UP_DENIED" /* GXT: Current max Wanted Level reached. */);
 			}
 		}
 	}
@@ -1851,18 +1851,18 @@ void func_74()//Position - 0x1F2E
 		iLocal_54 = 1;
 		if ((((((func_27(23) || func_27(22)) || func_27(7)) || func_15(9)) || func_15(10)) || !PLAYER::IS_SPECIAL_ABILITY_UNLOCKED(func_75())) || !PLAYER::IS_SPECIAL_ABILITY_ENABLED(PLAYER::PLAYER_ID(), 0))
 		{
-			func_21("CHEAT_NOT_NOW");
+			func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 			return;
 		}
 		if (func_70())
 		{
-			func_21("CHEAT_PHONE_DENIED");
+			func_21("CHEAT_PHONE_DENIED" /* GXT: Can't activate cheats while using the cellphone. */);
 			return;
 		}
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
 			PLAYER::SPECIAL_ABILITY_FILL_METER(PLAYER::PLAYER_ID(), true, 0);
-			func_16("CHEAT_SPECIAL_ABILITY");
+			func_16("CHEAT_SPECIAL_ABILITY" /* GXT: Special ability recharged. */);
 			func_5(7);
 		}
 	}
@@ -1882,17 +1882,17 @@ void func_76()//Position - 0x1FE5
 		iLocal_53 = 1;
 		if ((((func_27(23) || func_27(22)) || func_27(6)) || func_15(9)) || func_15(10))
 		{
-			func_21("CHEAT_NOT_NOW");
+			func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 			return;
 		}
 		if (func_70())
 		{
-			func_21("CHEAT_PHONE_DENIED");
+			func_21("CHEAT_PHONE_DENIED" /* GXT: Can't activate cheats while using the cellphone. */);
 			return;
 		}
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
-			func_16("CHEAT_HEALTH_ARMOR");
+			func_16("CHEAT_HEALTH_ARMOR" /* GXT: Max health and armor. */);
 			func_5(6);
 			ENTITY::SET_ENTITY_HEALTH(PLAYER::PLAYER_PED_ID(), ENTITY::GET_ENTITY_MAX_HEALTH(PLAYER::PLAYER_PED_ID()), 0);
 			PED::ADD_ARMOUR_TO_PED(PLAYER::PLAYER_PED_ID(), (PLAYER::GET_PLAYER_MAX_ARMOUR(PLAYER::PLAYER_ID()) - PED::GET_PED_ARMOUR(PLAYER::PLAYER_PED_ID())));
@@ -1918,12 +1918,12 @@ void func_77()//Position - 0x20BD
 		iLocal_52 = 1;
 		if ((func_27(23) || func_27(22)) || func_27(5))
 		{
-			func_21("CHEAT_NOT_NOW");
+			func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 			return;
 		}
 		if (func_70())
 		{
-			func_21("CHEAT_PHONE_DENIED");
+			func_21("CHEAT_PHONE_DENIED" /* GXT: Can't activate cheats while using the cellphone. */);
 			return;
 		}
 		func_5(5);
@@ -1935,42 +1935,42 @@ void func_77()//Position - 0x20BD
 			case 1:
 				MISC::SET_WEATHER_TYPE_NOW_PERSIST("EXTRASUNNY");
 				MISC::CLEAR_WEATHER_TYPE_PERSIST();
-				func_16("CHEAT_ADVANCE_WEATHER_EXTRA_SUNNY");
+				func_16("CHEAT_ADVANCE_WEATHER_EXTRA_SUNNY" /* GXT: Extra sunny weather. */);
 				iLocal_71 = 2;
 				break;
 			
 			case 2:
 				MISC::SET_WEATHER_TYPE_NOW_PERSIST("CLEAR");
 				MISC::CLEAR_WEATHER_TYPE_PERSIST();
-				func_16("CHEAT_ADVANCE_WEATHER_CLEAR");
+				func_16("CHEAT_ADVANCE_WEATHER_CLEAR" /* GXT: Clear weather. */);
 				iLocal_71 = 3;
 				break;
 			
 			case 3:
 				MISC::SET_WEATHER_TYPE_NOW_PERSIST("CLOUDS");
 				MISC::CLEAR_WEATHER_TYPE_PERSIST();
-				func_16("CHEAT_ADVANCE_WEATHER_CLOUDY");
+				func_16("CHEAT_ADVANCE_WEATHER_CLOUDY" /* GXT: Cloudy weather. */);
 				iLocal_71 = 4;
 				break;
 			
 			case 4:
 				MISC::SET_WEATHER_TYPE_NOW_PERSIST("SMOG");
 				MISC::CLEAR_WEATHER_TYPE_PERSIST();
-				func_16("CHEAT_ADVANCE_WEATHER_SMOGGY");
+				func_16("CHEAT_ADVANCE_WEATHER_SMOGGY" /* GXT: Smoggy weather. */);
 				iLocal_71 = 6;
 				break;
 			
 			case 6:
 				MISC::SET_WEATHER_TYPE_NOW_PERSIST("OVERCAST");
 				MISC::CLEAR_WEATHER_TYPE_PERSIST();
-				func_16("CHEAT_ADVANCE_WEATHER_OVERCAST");
+				func_16("CHEAT_ADVANCE_WEATHER_OVERCAST" /* GXT: Overcast weather. */);
 				iLocal_71 = 7;
 				break;
 			
 			case 7:
 				MISC::SET_WEATHER_TYPE_NOW_PERSIST("RAIN");
 				MISC::CLEAR_WEATHER_TYPE_PERSIST();
-				func_16("CHEAT_ADVANCE_WEATHER_RAIN");
+				func_16("CHEAT_ADVANCE_WEATHER_RAIN" /* GXT: Rainy weather. */);
 				func_31(5, 1);
 				iLocal_71 = 8;
 				break;
@@ -1978,21 +1978,21 @@ void func_77()//Position - 0x20BD
 			case 8:
 				MISC::SET_WEATHER_TYPE_NOW_PERSIST("THUNDER");
 				MISC::CLEAR_WEATHER_TYPE_PERSIST();
-				func_16("CHEAT_ADVANCE_WEATHER_THUNDER");
+				func_16("CHEAT_ADVANCE_WEATHER_THUNDER" /* GXT: Thundery weather. */);
 				iLocal_71 = 9;
 				break;
 			
 			case 9:
 				MISC::SET_WEATHER_TYPE_NOW_PERSIST("CLEARING");
 				MISC::CLEAR_WEATHER_TYPE_PERSIST();
-				func_16("CHEAT_ADVANCE_WEATHER_CLEARING");
+				func_16("CHEAT_ADVANCE_WEATHER_CLEARING" /* GXT: Clearing weather. */);
 				iLocal_71 = 11;
 				break;
 			
 			case 11:
 				MISC::SET_WEATHER_TYPE_NOW_PERSIST("XMAS");
 				MISC::CLEAR_WEATHER_TYPE_PERSIST();
-				func_16("CHEAT_ADVANCE_WEATHER_SNOW");
+				func_16("CHEAT_ADVANCE_WEATHER_SNOW" /* GXT: Snowy weather. */);
 				iLocal_71 = 0;
 				break;
 			
@@ -2009,15 +2009,15 @@ void func_78()//Position - 0x224C
 		iLocal_51 = 1;
 		if ((func_27(23) || func_27(22)) || func_27(4))
 		{
-			func_21("CHEAT_NOT_NOW");
+			func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 			return;
 		}
 		if (func_70())
 		{
-			func_21("CHEAT_PHONE_DENIED");
+			func_21("CHEAT_PHONE_DENIED" /* GXT: Can't activate cheats while using the cellphone. */);
 			return;
 		}
-		func_16("CHEAT_GIVE_WEAPONS");
+		func_16("CHEAT_GIVE_WEAPONS" /* GXT: Give weapons. */);
 		func_5(4);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
@@ -2040,7 +2040,7 @@ void func_79()//Position - 0x2321
 			break;
 		
 		case 4:
-			func_16("CHEAT_FAST_SWIM");
+			func_16("CHEAT_FAST_SWIM" /* GXT: Fast swim. */);
 			func_31(3, 1);
 			iLocal_50 = 5;
 			break;
@@ -2059,7 +2059,7 @@ void func_79()//Position - 0x2321
 		
 		case 9:
 			PLAYER::SET_SWIM_MULTIPLIER_FOR_PLAYER(PLAYER::PLAYER_ID(), 1f);
-			func_24("CHEAT_FAST_SWIM");
+			func_24("CHEAT_FAST_SWIM" /* GXT: Fast swim. */);
 			func_31(3, 0);
 			iLocal_50 = 1;
 			break;
@@ -2077,7 +2077,7 @@ void func_80()//Position - 0x23C9
 			break;
 		
 		case 4:
-			func_16("CHEAT_FAST_RUN");
+			func_16("CHEAT_FAST_RUN" /* GXT: Fast run. */);
 			func_31(2, 1);
 			iLocal_49 = 5;
 			break;
@@ -2103,7 +2103,7 @@ void func_80()//Position - 0x23C9
 		
 		case 9:
 			PLAYER::SET_RUN_SPRINT_MULTIPLIER_FOR_PLAYER(PLAYER::PLAYER_ID(), 1f);
-			func_24("CHEAT_FAST_RUN");
+			func_24("CHEAT_FAST_RUN" /* GXT: Fast run. */);
 			func_31(2, 0);
 			iLocal_49 = 1;
 			break;
@@ -2123,7 +2123,7 @@ void func_81()//Position - 0x24B2
 			break;
 		
 		case 4:
-			func_16("CHEAT_SLIDEY_CARS");
+			func_16("CHEAT_SLIDEY_CARS" /* GXT: Slidey cars. */);
 			func_31(1, 1);
 			iLocal_48 = 5;
 			break;
@@ -2169,7 +2169,7 @@ void func_81()//Position - 0x24B2
 			break;
 		
 		case 9:
-			func_24("CHEAT_SLIDEY_CARS");
+			func_24("CHEAT_SLIDEY_CARS" /* GXT: Slidey cars. */);
 			iLocal_48 = 10;
 			break;
 		
@@ -2538,7 +2538,7 @@ void func_87()//Position - 0x2BBE
 			break;
 		
 		case 4:
-			func_16("CHEAT_SUPER_JUMP");
+			func_16("CHEAT_SUPER_JUMP" /* GXT: Super jump. */);
 			func_31(0, 1);
 			iLocal_47 = 5;
 			break;
@@ -2554,7 +2554,7 @@ void func_87()//Position - 0x2BBE
 			break;
 		
 		case 9:
-			func_24("CHEAT_SUPER_JUMP");
+			func_24("CHEAT_SUPER_JUMP" /* GXT: Super jump. */);
 			func_31(0, 0);
 			iLocal_47 = 1;
 			break;
@@ -2604,61 +2604,61 @@ void func_88()//Position - 0x2C67
 	iLocal_83 = 0;
 	if ((func_107(988027572, 12) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("buzzoff"))) || func_106(20, joaat("buzzard")))
 	{
-		func_103(joaat("buzzard"), "CHEAT_SPAWN_VEH1");
+		func_103(joaat("buzzard"), "CHEAT_SPAWN_VEH1" /* GXT: Spawn Buzzard. */);
 	}
 	if ((func_107(-1134279030, 11) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("bandit"))) || func_106(20, joaat("bmx")))
 	{
-		func_103(joaat("bmx"), "CHEAT_SPAWN_VEH2");
+		func_103(joaat("bmx"), "CHEAT_SPAWN_VEH2" /* GXT: Spawn BMX. */);
 	}
 	if ((func_107(971352167, 10) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("holein1"))) || func_106(20, joaat("caddy")))
 	{
-		func_103(joaat("caddy"), "CHEAT_SPAWN_VEH3");
+		func_103(joaat("caddy"), "CHEAT_SPAWN_VEH3" /* GXT: Spawn Caddy. */);
 	}
 	if ((func_107(-269863225, 10) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("comet"))) || func_106(20, joaat("comet2")))
 	{
-		func_103(joaat("comet2"), "CHEAT_SPAWN_VEH4");
+		func_103(joaat("comet2"), "CHEAT_SPAWN_VEH4" /* GXT: Spawn Comet. */);
 	}
 	if ((func_107(458579068, 12) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("flyspray"))) || func_106(20, joaat("duster")))
 	{
-		func_103(joaat("duster"), "CHEAT_SPAWN_VEH5");
+		func_103(joaat("duster"), "CHEAT_SPAWN_VEH5" /* GXT: Spawn Duster. */);
 	}
 	if ((func_107(-666513193, 12) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("rocket"))) || func_106(20, joaat("pcj")))
 	{
-		func_103(joaat("pcj"), "CHEAT_SPAWN_VEH6");
+		func_103(joaat("pcj"), "CHEAT_SPAWN_VEH6" /* GXT: Spawn PCJ. */);
 	}
 	if ((func_107(-1245984749, 10) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("rapidgt"))) || func_106(20, joaat("rapidgt")))
 	{
-		func_103(joaat("rapidgt"), "CHEAT_SPAWN_VEH7");
+		func_103(joaat("rapidgt"), "CHEAT_SPAWN_VEH7" /* GXT: Spawn Rapid GT. */);
 	}
 	if ((func_107(2076774618, 12) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("offroad"))) || func_106(20, joaat("sanchez")))
 	{
-		func_103(joaat("sanchez"), "CHEAT_SPAWN_VEH8");
+		func_103(joaat("sanchez"), "CHEAT_SPAWN_VEH8" /* GXT: Spawn Sanchez. */);
 	}
 	if ((func_107(855685457, 9) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("vinewood"))) || func_106(20, joaat("stretch")))
 	{
-		func_103(joaat("stretch"), "CHEAT_SPAWN_VEH9");
+		func_103(joaat("stretch"), "CHEAT_SPAWN_VEH9" /* GXT: Spawn Stretch Limo. */);
 	}
 	if ((func_107(-591395876, 12) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("barnstorm"))) || func_106(20, joaat("stunt")))
 	{
-		func_103(joaat("stunt"), "CHEAT_SPAWN_VEH10");
+		func_103(joaat("stunt"), "CHEAT_SPAWN_VEH10" /* GXT: Spawn Stunt Plane. */);
 	}
 	if ((func_107(-1399217582, 10) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("trashed"))) || func_106(20, joaat("trash")))
 	{
-		func_103(joaat("trash"), "CHEAT_SPAWN_VEH11");
+		func_103(joaat("trash"), "CHEAT_SPAWN_VEH11" /* GXT: Spawn Trashmaster. */);
 	}
 	if (func_102())
 	{
 		if ((func_107(-375917581, 10) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("extinct"))) || func_106(20, joaat("dodo")))
 		{
-			func_103(joaat("dodo"), "CHEAT_SPAWN_VEH12");
+			func_103(joaat("dodo"), "CHEAT_SPAWN_VEH12" /* GXT: Spawn Dodo Sea Plane. */);
 		}
 		if ((func_107(-2124307881, 10) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("deathcar"))) || func_106(20, joaat("dukes2")))
 		{
-			func_103(joaat("dukes2"), "CHEAT_SPAWN_VEH13");
+			func_103(joaat("dukes2"), "CHEAT_SPAWN_VEH13" /* GXT: Spawn Duke O'Death. */);
 		}
 		if ((func_107(1028964594, 9) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("bubbles"))) || func_106(20, joaat("submersible2")))
 		{
-			func_103(joaat("submersible2"), "CHEAT_SPAWN_VEH14");
+			func_103(joaat("submersible2"), "CHEAT_SPAWN_VEH14" /* GXT: Spawn Kraken submersible. */);
 		}
 	}
 	if ((func_107(-393416581, 11) || MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(joaat("hoptoit"))) || func_106(0, 0))
@@ -2747,22 +2747,22 @@ void func_89()//Position - 0x33CB
 {
 	if (func_28())
 	{
-		func_21("CHEAT_MISSION_DENIED");
+		func_21("CHEAT_MISSION_DENIED" /* GXT: Not available on a mission or pastime. */);
 		return;
 	}
 	if (func_70())
 	{
-		func_21("CHEAT_PHONE_DENIED");
+		func_21("CHEAT_PHONE_DENIED" /* GXT: Can't activate cheats while using the cellphone. */);
 		return;
 	}
 	if ((func_27(23) || func_27(21)) || func_27(16))
 	{
-		func_21("CHEAT_NOT_NOW");
+		func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 		return;
 	}
 	if (iLocal_63 != 1)
 	{
-		func_21("CHEAT_NOT_NOW");
+		func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 	}
 	else
 	{
@@ -2774,19 +2774,19 @@ void func_90()//Position - 0x3437
 {
 	if (func_28())
 	{
-		func_21("CHEAT_MISSION_DENIED");
+		func_21("CHEAT_MISSION_DENIED" /* GXT: Not available on a mission or pastime. */);
 		iLocal_65 = 1;
 		return;
 	}
 	if (func_70())
 	{
-		func_21("CHEAT_PHONE_DENIED");
+		func_21("CHEAT_PHONE_DENIED" /* GXT: Can't activate cheats while using the cellphone. */);
 		iLocal_65 = 1;
 		return;
 	}
 	if ((func_27(23) || func_27(21)) || func_27(18))
 	{
-		func_21("CHEAT_NOT_NOW");
+		func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 		iLocal_65 = 1;
 		return;
 	}
@@ -2804,32 +2804,32 @@ void func_91()//Position - 0x34AE
 {
 	if (func_28())
 	{
-		func_21("CHEAT_MISSION_DENIED");
+		func_21("CHEAT_MISSION_DENIED" /* GXT: Not available on a mission or pastime. */);
 		return;
 	}
 	if (func_70())
 	{
-		func_21("CHEAT_PHONE_DENIED");
+		func_21("CHEAT_PHONE_DENIED" /* GXT: Can't activate cheats while using the cellphone. */);
 		return;
 	}
 	if (INTERIOR::IS_INTERIOR_SCENE())
 	{
-		func_21("CHEAT_NOT_HERE");
+		func_21("CHEAT_NOT_HERE" /* GXT: Can't activate that cheat here. */);
 		return;
 	}
 	if (iLocal_64 != 1)
 	{
-		func_21("CHEAT_ALREADY_ACTIVE");
+		func_21("CHEAT_ALREADY_ACTIVE" /* GXT: Cheat already active. */);
 		return;
 	}
 	if (((((func_27(23) || func_27(21)) || func_27(17)) || func_66(0)) || PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false)) || !CAM::IS_GAMEPLAY_CAM_RENDERING())
 	{
-		func_21("CHEAT_NOT_NOW");
+		func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 		return;
 	}
 	if ((PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()) || PLAYER::IS_PLAYER_BEING_ARRESTED(PLAYER::PLAYER_ID(), false)) || SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("respawn_controller")) > 0)
 	{
-		func_21("CHEAT_NOT_NOW");
+		func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 		return;
 	}
 	iLocal_64 = 2;
@@ -2839,22 +2839,22 @@ void func_92()//Position - 0x3587
 {
 	if (func_28())
 	{
-		func_21("CHEAT_MISSION_DENIED");
+		func_21("CHEAT_MISSION_DENIED" /* GXT: Not available on a mission or pastime. */);
 		return;
 	}
 	if (func_70())
 	{
-		func_21("CHEAT_PHONE_DENIED");
+		func_21("CHEAT_PHONE_DENIED" /* GXT: Can't activate cheats while using the cellphone. */);
 		return;
 	}
 	if ((func_27(23) || func_27(21)) || func_27(16))
 	{
-		func_21("CHEAT_NOT_NOW");
+		func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 		return;
 	}
 	if (iLocal_66 != 1)
 	{
-		func_21("CHEAT_NOT_NOW");
+		func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 	}
 	else
 	{
@@ -2869,17 +2869,17 @@ void func_93()//Position - 0x35F3
 	Var0 = { func_19(PLAYER::PLAYER_ID()) };
 	if (func_28())
 	{
-		func_21("CHEAT_MISSION_DENIED");
+		func_21("CHEAT_MISSION_DENIED" /* GXT: Not available on a mission or pastime. */);
 		return;
 	}
 	if (func_70())
 	{
-		func_21("CHEAT_PHONE_DENIED");
+		func_21("CHEAT_PHONE_DENIED" /* GXT: Can't activate cheats while using the cellphone. */);
 		return;
 	}
 	if (((func_27(23) || func_27(21)) || func_27(15)) || Var0.f_2 <= -170f)
 	{
-		func_21("CHEAT_NOT_NOW");
+		func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 		return;
 	}
 	if (iLocal_62 == 1)
@@ -2896,17 +2896,17 @@ void func_94()//Position - 0x367D
 {
 	if (func_28())
 	{
-		func_21("CHEAT_MISSION_DENIED");
+		func_21("CHEAT_MISSION_DENIED" /* GXT: Not available on a mission or pastime. */);
 		return;
 	}
 	if (func_70())
 	{
-		func_21("CHEAT_PHONE_DENIED");
+		func_21("CHEAT_PHONE_DENIED" /* GXT: Can't activate cheats while using the cellphone. */);
 		return;
 	}
 	if ((((func_27(23) || func_27(21)) || func_27(14)) || func_66(17)) || ENTITY::IS_ENTITY_IN_WATER(PLAYER::PLAYER_PED_ID()))
 	{
-		func_21("CHEAT_NOT_NOW");
+		func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 		return;
 	}
 	iLocal_61 = 4;
@@ -2916,19 +2916,19 @@ void func_95()//Position - 0x36F2
 {
 	if (func_28())
 	{
-		func_21("CHEAT_MISSION_DENIED");
+		func_21("CHEAT_MISSION_DENIED" /* GXT: Not available on a mission or pastime. */);
 		iLocal_60 = 1;
 		return;
 	}
 	if (func_70())
 	{
-		func_21("CHEAT_PHONE_DENIED");
+		func_21("CHEAT_PHONE_DENIED" /* GXT: Can't activate cheats while using the cellphone. */);
 		iLocal_60 = 1;
 		return;
 	}
 	if ((func_27(23) || func_27(21)) || func_27(13))
 	{
-		func_21("CHEAT_NOT_NOW");
+		func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 		iLocal_60 = 1;
 		return;
 	}
@@ -2946,19 +2946,19 @@ void func_96()//Position - 0x3769
 {
 	if (func_28())
 	{
-		func_21("CHEAT_MISSION_DENIED");
+		func_21("CHEAT_MISSION_DENIED" /* GXT: Not available on a mission or pastime. */);
 		iLocal_59 = 1;
 		return;
 	}
 	if (func_70())
 	{
-		func_21("CHEAT_PHONE_DENIED");
+		func_21("CHEAT_PHONE_DENIED" /* GXT: Can't activate cheats while using the cellphone. */);
 		iLocal_59 = 1;
 		return;
 	}
 	if ((func_27(23) || func_27(21)) || func_27(12))
 	{
-		func_21("CHEAT_NOT_NOW");
+		func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 		iLocal_59 = 1;
 		return;
 	}
@@ -2976,19 +2976,19 @@ void func_97()//Position - 0x37E0
 {
 	if (func_28())
 	{
-		func_21("CHEAT_MISSION_DENIED");
+		func_21("CHEAT_MISSION_DENIED" /* GXT: Not available on a mission or pastime. */);
 		iLocal_58 = 1;
 		return;
 	}
 	if (func_70())
 	{
-		func_21("CHEAT_PHONE_DENIED");
+		func_21("CHEAT_PHONE_DENIED" /* GXT: Can't activate cheats while using the cellphone. */);
 		iLocal_58 = 1;
 		return;
 	}
 	if ((func_27(23) || func_27(21)) || func_27(11))
 	{
-		func_21("CHEAT_NOT_NOW");
+		func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 		iLocal_58 = 1;
 		return;
 	}
@@ -3006,12 +3006,12 @@ void func_98()//Position - 0x3857
 {
 	if ((((func_27(23) || func_27(22)) || func_27(3)) || func_15(9)) || func_15(10))
 	{
-		func_21("CHEAT_NOT_NOW");
+		func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 		return;
 	}
 	if (func_70())
 	{
-		func_21("CHEAT_PHONE_DENIED");
+		func_21("CHEAT_PHONE_DENIED" /* GXT: Can't activate cheats while using the cellphone. */);
 		return;
 	}
 	if (iLocal_50 == 1)
@@ -3028,12 +3028,12 @@ void func_99()//Position - 0x38CA
 {
 	if ((((func_27(23) || func_27(22)) || func_27(2)) || func_15(9)) || func_15(10))
 	{
-		func_21("CHEAT_NOT_NOW");
+		func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 		return;
 	}
 	if (func_70())
 	{
-		func_21("CHEAT_PHONE_DENIED");
+		func_21("CHEAT_PHONE_DENIED" /* GXT: Can't activate cheats while using the cellphone. */);
 		return;
 	}
 	if (iLocal_49 == 1)
@@ -3050,12 +3050,12 @@ void func_100()//Position - 0x393D
 {
 	if ((func_27(23) || func_27(22)) || func_27(1))
 	{
-		func_21("CHEAT_NOT_NOW");
+		func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 		return;
 	}
 	if (func_70())
 	{
-		func_21("CHEAT_PHONE_DENIED");
+		func_21("CHEAT_PHONE_DENIED" /* GXT: Can't activate cheats while using the cellphone. */);
 		return;
 	}
 	if (iLocal_48 == 1)
@@ -3072,12 +3072,12 @@ void func_101()//Position - 0x3998
 {
 	if (((func_27(23) || func_27(22)) || func_27(0)) || INTERIOR::IS_INTERIOR_SCENE())
 	{
-		func_21("CHEAT_NOT_NOW");
+		func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 		return;
 	}
 	if (func_70())
 	{
-		func_21("CHEAT_PHONE_DENIED");
+		func_21("CHEAT_PHONE_DENIED" /* GXT: Can't activate cheats while using the cellphone. */);
 		return;
 	}
 	if (iLocal_47 == 1)
@@ -3142,17 +3142,17 @@ void func_103(int iParam0, char* sParam1)//Position - 0x3AB5
 	{
 		if (((((func_15(9) || SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("barry1")) > 0) || SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("tennis")) > 0) || func_27(23)) || func_27(22)) || func_27(20))
 		{
-			func_21("CHEAT_NOT_NOW");
+			func_21("CHEAT_NOT_NOW" /* GXT: Can't activate that cheat right now. */);
 			return;
 		}
 		if (func_70())
 		{
-			func_21("CHEAT_PHONE_DENIED");
+			func_21("CHEAT_PHONE_DENIED" /* GXT: Can't activate cheats while using the cellphone. */);
 			return;
 		}
 		if (!func_104(iParam0))
 		{
-			func_21("CHEAT_VEHICLE_LOCKED_DENIED");
+			func_21("CHEAT_VEHICLE_LOCKED_DENIED" /* GXT: Vehicle is not unlocked yet. */);
 			return;
 		}
 		iLocal_67 = iParam0;

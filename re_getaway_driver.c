@@ -2264,12 +2264,12 @@ void func_3(int iParam0, bool bParam1)//Position - 0x36AB
 				break;
 		}
 		sVar1 = func_15(iParam0);
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("FEED_CREW_U");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("FEED_CREW_U" /* GXT: Heist crew member ~a~ unlocked. */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(func_15(iParam0));
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(sVar1, sVar1, false, iVar0, "", 0);
 		if (!func_14(45))
 		{
-			func_4("AM_H_CREWU", 2, 0, 20000, 10000, func_7(), 0, 131, 0);
+			func_4("AM_H_CREWU" /* GXT: Throughout the game you may meet contacts who can help on heists. This will give you extra crew members to pick from. */, 2, 0, 20000, 10000, func_7(), 0, 131, 0);
 		}
 	}
 }
@@ -2511,55 +2511,55 @@ char* func_16(int iParam0)//Position - 0x3CD2
 	switch (iParam0)
 	{
 		case 1:
-			return "HC_N_GUS";
+			return "HC_N_GUS" /* GXT: Gustavo Mota */;
 			break;
 		
 		case 2:
-			return "HC_N_KAR";
+			return "HC_N_KAR" /* GXT: Karl Abolaji */;
 			break;
 		
 		case 10:
-			return "HC_N_PAC";
+			return "HC_N_PAC" /* GXT: Packie McReary */;
 			break;
 		
 		case 11:
-			return "HC_N_CHE";
+			return "HC_N_CHE" /* GXT: Chef */;
 			break;
 		
 		case 3:
-			return "HC_N_HUG";
+			return "HC_N_HUG" /* GXT: Hugh Welsh */;
 			break;
 		
 		case 4:
-			return "HC_N_NOR";
+			return "HC_N_NOR" /* GXT: Norm Richards */;
 			break;
 		
 		case 5:
-			return "HC_N_DAR";
+			return "HC_N_DAR" /* GXT: Daryl Johns */;
 			break;
 		
 		case 6:
-			return "HC_N_PAI";
+			return "HC_N_PAI" /* GXT: Paige Harris */;
 			break;
 		
 		case 7:
-			return "HC_N_CHR";
+			return "HC_N_CHR" /* GXT: Christian Feltz */;
 			break;
 		
 		case 12:
-			return "HC_N_RIC";
+			return "HC_N_RIC" /* GXT: Rickie Lukens */;
 			break;
 		
 		case 8:
-			return "HC_N_EDD";
+			return "HC_N_EDD" /* GXT: Eddie Toh */;
 			break;
 		
 		case 13:
-			return "HC_N_TAL";
+			return "HC_N_TAL" /* GXT: Taliana Martinez */;
 			break;
 		
 		case 9:
-			return "HC_N_KRM";
+			return "HC_N_KRM" /* GXT: Karim Denz */;
 			break;
 	}
 	return "ERROR!";
@@ -3099,7 +3099,7 @@ void func_22(bool bParam0)//Position - 0x4772
 	if (bVar0)
 	{
 		StringCopy(&cVar1, "CHAR_LIFEINVADER", 64);
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("COUP_RED");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("COUP_RED" /* GXT: You have redeemed your promotion for ~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(func_23(bParam0));
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar1, &cVar1, true, 0, "", 0);
 	}
@@ -3110,28 +3110,28 @@ char* func_23(bool bParam0)//Position - 0x48F2
 	switch (bParam0)
 	{
 		case 0:
-			return "COUP_HAIRC";
+			return "COUP_HAIRC" /* GXT: one free haircut. */;
 		
 		case 1:
-			return "COUP_TATTOO";
+			return "COUP_TATTOO" /* GXT: one free tattoo. */;
 		
 		case 2:
-			return "COUP_WARSTOCK";
+			return "COUP_WARSTOCK" /* GXT: 10% off your next purchase at Warstock-Cache-and-Carry.com. */;
 		
 		case 3:
-			return "COUP_MOSPORT";
+			return "COUP_MOSPORT" /* GXT: 10 percent off your next purchase at LegendaryMotorsport.net. */;
 		
 		case 4:
-			return "COUP_ELITAS";
+			return "COUP_ELITAS" /* GXT: 10 percent off your next purchase at ElitasTravel.com. */;
 		
 		case 5:
-			return "COUP_MEDSPENS";
+			return "COUP_MEDSPENS" /* GXT: 10 percent off your next medical expenses. */;
 		
 		case 6:
-			return "COUP_SPRUNK";
+			return "COUP_SPRUNK" /* GXT: one free can of Sprunk. */;
 		
 		case 7:
-			return "COUP_RESPRAY";
+			return "COUP_RESPRAY" /* GXT: one free respray. */;
 		
 		case 8:
 			return "COUP_XMAS2017";
@@ -3146,22 +3146,22 @@ char* func_23(bool bParam0)//Position - 0x48F2
 			return "COUP_CAR2_XMAS2018";
 		
 		case 12:
-			return "COUP_CAS_ELITAS";
+			return "COUP_CAS_ELITAS" /* GXT: 10 percent off your next purchase at ElitasTravel.com. */;
 		
 		case 13:
-			return "COUP_CAS_DOCKTEASE";
+			return "COUP_CAS_DOCKTEASE" /* GXT: 10 percent off your next purchase at DockTease.com. */;
 		
 		case 14:
-			return "COUP_CAS_MOSPORT";
+			return "COUP_CAS_MOSPORT" /* GXT: 10 percent off your next purchase at LegendaryMotorsport.net. */;
 		
 		case 15:
-			return "COUP_CAS_SSASA";
+			return "COUP_CAS_SSASA" /* GXT: 10 percent off your next purchase at southernsanandreassuperautos.com. */;
 		
 		case 16:
-			return "COUP_CAS_WARSTOCK";
+			return "COUP_CAS_WARSTOCK" /* GXT: 10 percent off your next purchase at Warstock-Cache-and-Carry.com. */;
 		
 		case 17:
-			return "COUP_CAS_PANDM";
+			return "COUP_CAS_PANDM" /* GXT: 10 percent off your next purchase at pandmcycles.com. */;
 			break;
 		
 		default:
@@ -3814,7 +3814,7 @@ void func_57()//Position - 0x540E
 	{
 		if (!Global_32199)
 		{
-			func_58("CULT_BLIP_HELP", -1);
+			func_58("CULT_BLIP_HELP" /* GXT: Trevor can sometimes deliver Random Event passengers to the Altruist Cult, located at ~BLIP_ALTRUIST~ */, -1);
 			Global_32199 = 1;
 		}
 	}
@@ -7536,7 +7536,7 @@ int func_106(int iParam0)//Position - 0xA6F5
 		{
 			func_107(0);
 		}
-		HUD::SET_MISSION_NAME(true, "RE_TITLE");
+		HUD::SET_MISSION_NAME(true, "RE_TITLE" /* GXT: Random Event */);
 		if (iParam0 && func_109(Global_113375))
 		{
 			HUD::FLASH_MINIMAP_DISPLAY();
@@ -7596,15 +7596,15 @@ char* func_108(int iParam0)//Position - 0xA823
 	switch (iParam0)
 	{
 		case 0:
-			sVar0 = "AM_H_REFS";
+			sVar0 = "AM_H_REFS" /* GXT: Various events unfold across San Andreas daily. These events will become blipped on the Radar when nearby. */;
 			break;
 		
 		case 1:
-			sVar0 = "RE_FLASHBLIP";
+			sVar0 = "RE_FLASHBLIP" /* GXT: Flashing blue and red blips indicate situations around San Andreas that you can choose to help with. */;
 			break;
 		
 		case 2:
-			sVar0 = "RE_HANDOVER";
+			sVar0 = "RE_HANDOVER" /* GXT: If you retrieve a stolen item, you can choose to keep it or return it for a reward. */;
 			break;
 	}
 	return sVar0;
@@ -9104,7 +9104,7 @@ void func_156(int iParam0, var uParam1)//Position - 0xC3EF
 			break;
 		
 		case 5:
-			func_157(uParam1, "Barry3A", func_159(iParam0), 1, 1, 0, 1199.27f, -1255.63f, 34.23f, 381, "BARSTASH", 84, 0, "", 166, 0, 7, 4, 2, 0, 2359, func_158(iParam0), 0, 1);
+			func_157(uParam1, "Barry3A", func_159(iParam0), 1, 1, 0, 1199.27f, -1255.63f, 34.23f, 381, "BARSTASH" /* GXT: Areas where you can find vehicles with a hidden stash have been marked on the map. Collect these vehicles for Barry. */, 84, 0, "", 166, 0, 7, 4, 2, 0, 2359, func_158(iParam0), 0, 1);
 			break;
 		
 		case 6:
@@ -9116,7 +9116,7 @@ void func_156(int iParam0, var uParam1)//Position - 0xC3EF
 			break;
 		
 		case 8:
-			func_157(uParam1, "Dreyfuss1", func_159(iParam0), 0, 2, 4, -1458.97f, 485.99f, 115.38f, 66, "LETTERS_HINT", 106, 0, "", 0, 0, -1, 4, 2, 0, 2359, func_158(iParam0), 0, 0);
+			func_157(uParam1, "Dreyfuss1", func_159(iParam0), 0, 2, 4, -1458.97f, 485.99f, 115.38f, 66, "LETTERS_HINT" /* GXT: The killer's identity and location have been revealed. */, 106, 0, "", 0, 0, -1, 4, 2, 0, 2359, func_158(iParam0), 0, 0);
 			break;
 		
 		case 9:
@@ -9236,7 +9236,7 @@ void func_156(int iParam0, var uParam1)//Position - 0xC3EF
 			break;
 		
 		case 38:
-			func_157(uParam1, "Nigel1A", func_159(iParam0), 0, 12, 1, -558.65f, 284.49f, 90.86f, 149, "NIGITEMS", 100, 0, "", 0, 0, 42, 4, 4, 0, 2359, func_158(iParam0), 1, 1);
+			func_157(uParam1, "Nigel1A", func_159(iParam0), 0, 12, 1, -558.65f, 284.49f, 90.86f, 149, "NIGITEMS" /* GXT: Areas where you can find celebrity items have been marked on the map. Steal these items for Nigel and Mrs. Thornhill. */, 100, 0, "", 0, 0, 42, 4, 4, 0, 2359, func_158(iParam0), 1, 1);
 			break;
 		
 		case 39:
@@ -9280,7 +9280,7 @@ void func_156(int iParam0, var uParam1)//Position - 0xC3EF
 			break;
 		
 		case 49:
-			func_157(uParam1, "Paparazzo3A", func_159(iParam0), 0, 14, 2, 305.52f, 157.19f, 102.94f, 389, "PAPPHOTO", 102, 0, "", 0, 0, 51, 4, 2, 0, 2359, func_158(iParam0), 0, 1);
+			func_157(uParam1, "Paparazzo3A", func_159(iParam0), 0, 14, 2, 305.52f, 157.19f, 102.94f, 389, "PAPPHOTO" /* GXT: Areas where you can find celebrity photo opportunities have been marked on the map. Track down and photograph these celebrities for Beverly. */, 102, 0, "", 0, 0, 51, 4, 2, 0, 2359, func_158(iParam0), 0, 1);
 			break;
 		
 		case 50:
@@ -9316,7 +9316,7 @@ void func_156(int iParam0, var uParam1)//Position - 0xC3EF
 			break;
 		
 		case 58:
-			func_157(uParam1, "Tonya1", func_159(iParam0), 0, 17, 4, -14.39f, -1472.69f, 29.58f, 66, "AM_H_RCFS", -1, 0, "ambient_TonyaCall", 24, 1, 59, 4, 2, 0, 2359, func_158(iParam0), 0, 1);
+			func_157(uParam1, "Tonya1", func_159(iParam0), 0, 17, 4, -14.39f, -1472.69f, 29.58f, 66, "AM_H_RCFS" /* GXT: Strangers and Freaks can be found throughout San Andreas at ~HUD_COLOUR_FRANKLIN~~BLIP_RANDOM_CHARACTER~~s~ */, -1, 0, "ambient_TonyaCall", 24, 1, 59, 4, 2, 0, 2359, func_158(iParam0), 0, 1);
 			break;
 		
 		case 59:
@@ -10632,7 +10632,7 @@ void func_190(int iParam0, int iParam1)//Position - 0xEB18
 		func_195(iParam0, iParam1);
 		if (!func_14(51))
 		{
-			func_4("RE_REWARD", 1, 0, 4000, 10000, func_7(), 0, 138, 0);
+			func_4("RE_REWARD" /* GXT: Some Random Events will reward the player with stat boosts or money. */, 1, 0, 4000, 10000, func_7(), 0, 138, 0);
 			func_194(51);
 		}
 		if (func_109(iParam0))
@@ -11432,7 +11432,7 @@ void func_199(int iParam0, bool bParam1)//Position - 0xF839
 void func_200(char* sParam0)//Position - 0xF882
 {
 	HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("");
-	HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_SUBTITLE_LABEL("CHAR_ACTING_UP", "CHAR_ACTING_UP", false, 0, "DI_FEED_CHAR", sParam0);
+	HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_SUBTITLE_LABEL("CHAR_ACTING_UP", "CHAR_ACTING_UP", false, 0, "DI_FEED_CHAR" /* GXT: Director Mode Actor Unlock */, sParam0);
 }
 
 char* func_201(int iParam0)//Position - 0xF8A7
@@ -11440,55 +11440,55 @@ char* func_201(int iParam0)//Position - 0xF8A7
 	switch (iParam0)
 	{
 		case 0:
-			return "CM_HSTCHE";
+			return "CM_HSTCHE" /* GXT: Chef */;
 			break;
 		
 		case 1:
-			return "CM_HSTCHR";
+			return "CM_HSTCHR" /* GXT: Christian Feltz */;
 			break;
 		
 		case 2:
-			return "CM_HSTDAR";
+			return "CM_HSTDAR" /* GXT: Daryl Johns */;
 			break;
 		
 		case 3:
-			return "CM_HSTEDD";
+			return "CM_HSTEDD" /* GXT: Eddie Toh */;
 			break;
 		
 		case 4:
-			return "CM_HSTGUS";
+			return "CM_HSTGUS" /* GXT: Gustavo Mota */;
 			break;
 		
 		case 5:
-			return "CM_HSTHUG";
+			return "CM_HSTHUG" /* GXT: Hugh Welsh */;
 			break;
 		
 		case 6:
-			return "CM_HSTKRM";
+			return "CM_HSTKRM" /* GXT: Karim Denz */;
 			break;
 		
 		case 7:
-			return "CM_HSTKAR";
+			return "CM_HSTKAR" /* GXT: Karl Abolaji */;
 			break;
 		
 		case 8:
-			return "CM_HSTNOR";
+			return "CM_HSTNOR" /* GXT: Norm Richards */;
 			break;
 		
 		case 9:
-			return "CM_HSTPAC";
+			return "CM_HSTPAC" /* GXT: Packie McReary */;
 			break;
 		
 		case 10:
-			return "CM_HSTPAI";
+			return "CM_HSTPAI" /* GXT: Paige Harris */;
 			break;
 		
 		case 11:
-			return "CM_HSTRIC";
+			return "CM_HSTRIC" /* GXT: Rickie Lukens */;
 			break;
 		
 		case 12:
-			return "CM_HSTTAL";
+			return "CM_HSTTAL" /* GXT: Taliana Martinez */;
 			break;
 	}
 	return "ERROR!";

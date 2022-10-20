@@ -5507,44 +5507,44 @@ void func_91()//Position - 0xA193
 				{
 					if (func_338(2, &uVar1))
 					{
-						if (!func_337("TCP_NA"))
+						if (!func_337("TCP_NA" /* GXT: This feature is not available for you. */))
 						{
-							func_336("TCP_NA");
+							func_336("TCP_NA" /* GXT: This feature is not available for you. */);
 						}
 					}
 					else if (Local_109.f_117[Local_152.f_18] != func_413())
 					{
-						if (!func_337("TCP_USED"))
+						if (!func_337("TCP_USED" /* GXT: This seat is currently in use. */))
 						{
-							func_336("TCP_USED");
+							func_336("TCP_USED" /* GXT: This seat is currently in use. */);
 						}
 					}
 					else if (func_335())
 					{
 						if (func_331() == 2)
 						{
-							if (!func_337("CAS_MG_CTIME"))
+							if (!func_337("CAS_MG_CTIME" /* GXT: This feature is not available now.  Please come back later. */))
 							{
-								func_336("CAS_MG_CTIME");
+								func_336("CAS_MG_CTIME" /* GXT: This feature is not available now.  Please come back later. */);
 							}
 						}
-						else if (!func_337("CAS_MG_CBAN"))
+						else if (!func_337("CAS_MG_CBAN" /* GXT: This feature is not available now.  Please come back later. */))
 						{
-							func_336("CAS_MG_CBAN");
+							func_336("CAS_MG_CBAN" /* GXT: This feature is not available now.  Please come back later. */);
 						}
 					}
 					else if ((!func_330(PLAYER::PLAYER_ID()) && (func_384(Local_152.f_18) == 2 || func_384(Local_152.f_18) == 3)) && !(func_329(1) && func_330(func_328())))
 					{
-						if (!func_337("CAS_MG_SUITE2"))
+						if (!func_337("CAS_MG_SUITE2" /* GXT: A VIP Membership is required to play High Limit. Purchase a Penthouse from www.thediamondcasinoandresort.com to become a VIP member. */))
 						{
-							func_336("CAS_MG_SUITE2");
+							func_336("CAS_MG_SUITE2" /* GXT: A VIP Membership is required to play High Limit. Purchase a Penthouse from www.thediamondcasinoandresort.com to become a VIP member. */);
 						}
 					}
 					else if (!func_327() && !(func_329(1) && func_326(func_328())))
 					{
-						if (!func_324("CAS_MG_MEMB2", func_325(1)))
+						if (!func_324("CAS_MG_MEMB2" /* GXT: A Standard Membership is required to play. Speak to Guest Services ~BLIP_CASINO_CONCIERGE~ to purchase this or press ~INPUT_CONTEXT_SECONDARY~ to buy now for $~1~. */, func_325(1)))
 						{
-							func_323("CAS_MG_MEMB2", func_325(1));
+							func_323("CAS_MG_MEMB2" /* GXT: A Standard Membership is required to play. Speak to Guest Services ~BLIP_CASINO_CONCIERGE~ to purchase this or press ~INPUT_CONTEXT_SECONDARY~ to buy now for $~1~. */, func_325(1));
 						}
 						else if (PAD::IS_CONTROL_JUST_PRESSED(2, 52))
 						{
@@ -5557,28 +5557,28 @@ void func_91()//Position - 0xA193
 					{
 						if (func_419(PLAYER::PLAYER_ID()))
 						{
-							if (!func_337("CAS_MG_NOCHIPS7"))
+							if (!func_337("CAS_MG_NOCHIPS7" /* GXT: Chips are required to play Three Card Poker. Use the Phone Services ~BLIP_CASINO_CONCIERGE~ to acquire them. */))
 							{
-								func_336("CAS_MG_NOCHIPS7");
+								func_336("CAS_MG_NOCHIPS7" /* GXT: Chips are required to play Three Card Poker. Use the Phone Services ~BLIP_CASINO_CONCIERGE~ to acquire them. */);
 							}
 						}
-						else if (!func_337("CAS_MG_NOCHIPS3"))
+						else if (!func_337("CAS_MG_NOCHIPS3" /* GXT: Chips are required to play Three Card Poker. Speak to the Cashier ~BLIP_CASINO_CHIPS~ to acquire them. */))
 						{
-							func_336("CAS_MG_NOCHIPS3");
+							func_336("CAS_MG_NOCHIPS3" /* GXT: Chips are required to play Three Card Poker. Speak to the Cashier ~BLIP_CASINO_CHIPS~ to acquire them. */);
 						}
 					}
 					else if (Local_152.f_19 < Local_152.f_28)
 					{
 						if (func_419(PLAYER::PLAYER_ID()))
 						{
-							if (!func_337("CAS_MG_LOWCHIPS7"))
+							if (!func_337("CAS_MG_LOWCHIPS7" /* GXT: You don't have enough Chips to play Three Card Poker. Use the Phone Services ~BLIP_CASINO_CONCIERGE~ to acquire more. */))
 							{
-								func_336("CAS_MG_LOWCHIPS7");
+								func_336("CAS_MG_LOWCHIPS7" /* GXT: You don't have enough Chips to play Three Card Poker. Use the Phone Services ~BLIP_CASINO_CONCIERGE~ to acquire more. */);
 							}
 						}
-						else if (!func_337("CAS_MG_LOWCHIPS3"))
+						else if (!func_337("CAS_MG_LOWCHIPS3" /* GXT: You don't have enough Chips to play Three Card Poker. Speak to the Cashier ~BLIP_CASINO_CHIPS~ to acquire more. */))
 						{
-							func_336("CAS_MG_LOWCHIPS3");
+							func_336("CAS_MG_LOWCHIPS3" /* GXT: You don't have enough Chips to play Three Card Poker. Speak to the Cashier ~BLIP_CASINO_CHIPS~ to acquire more. */);
 						}
 					}
 					else if (Local_152.f_31 == -1)
@@ -5592,23 +5592,23 @@ void func_91()//Position - 0xA193
 							if (func_318(func_328()) == 1)
 							{
 								Local_152.f_25 = 1;
-								func_317(&(Local_152.f_31), 4, "TCP_PLAY_A", 0, 0, 0, 0);
+								func_317(&(Local_152.f_31), 4, "TCP_PLAY_A" /* GXT: Press ~INPUT_CONTEXT~ to play Three Card Poker using your MC President's casino membership. */, 0, 0, 0, 0);
 							}
 							else if (func_316(func_328()))
 							{
 								Local_152.f_25 = 2;
-								func_317(&(Local_152.f_31), 4, "TCP_PLAY_B", 0, 0, 0, 0);
+								func_317(&(Local_152.f_31), 4, "TCP_PLAY_B" /* GXT: Press ~INPUT_CONTEXT~ to play Three Card Poker using your CEO's casino membership. */, 0, 0, 0, 0);
 							}
 							else
 							{
 								Local_152.f_25 = 3;
-								func_317(&(Local_152.f_31), 4, "TCP_PLAY_C", 0, 0, 0, 0);
+								func_317(&(Local_152.f_31), 4, "TCP_PLAY_C" /* GXT: Press ~INPUT_CONTEXT~ to play Three Card Poker using your VIP's casino membership. */, 0, 0, 0, 0);
 							}
 						}
 						else
 						{
 							Local_152.f_25 = 0;
-							func_317(&(Local_152.f_31), 4, "TCP_PLAY", 0, 0, 0, 0);
+							func_317(&(Local_152.f_31), 4, "TCP_PLAY" /* GXT: Press ~INPUT_CONTEXT~ to play Three Card Poker. */, 0, 0, 0, 0);
 						}
 					}
 					else if (func_315(Local_152.f_31, 1))
@@ -5695,14 +5695,14 @@ void func_91()//Position - 0xA193
 						AUDIO::PLAY_SOUND_FRONTEND(-1, "DLC_VW_RULES", "dlc_vw_table_games_frontend_sounds", true);
 						func_297(0, 0);
 						func_295(1, sVar2, sVar2);
-						func_294("TCP_TITLE");
+						func_294("TCP_TITLE" /* GXT: THREE CARD POKER */);
 						func_293(-1, 1, 1);
-						func_292("TCP_DIS", 0, 0);
-						func_291("TCP_DIS1");
-						func_291("TCP_DIS2");
-						func_291("TCP_DIS3");
-						func_290(202, "TCP_EXIT", -1);
-						func_290(201, "TCP_CONT", -1);
+						func_292("TCP_DIS" /* GXT: ~a~~n~~n~~a~~n~~n~~a~ */, 0, 0);
+						func_291("TCP_DIS1" /* GXT: The aim of Three Card Poker is to make the best poker hand possible with three cards, comparing your hand against the Dealer's hand. */);
+						func_291("TCP_DIS2" /* GXT: Bets can be placed on the Ante, Pair Plus, or both. Play and Ante bets pay out 1 to 1 if your hand beats the Dealer's hand. A Straight or higher is needed to receive the Ante Bonus. */);
+						func_291("TCP_DIS3" /* GXT: For Pair Plus, you are betting on your own hand only, and must have a Pair or better to receive a payout. */);
+						func_290(202, "TCP_EXIT" /* GXT: Quit */, -1);
+						func_290(201, "TCP_CONT" /* GXT: Continue */, -1);
 						iLocal_180 = 1;
 					}
 					func_263(1, -1, 1, 0, 1, -1082130432, 0, 0, -1);
@@ -6014,7 +6014,7 @@ void func_95()//Position - 0xB371
 	{
 		if (func_225(Local_151[PLAYER::PLAYER_ID() /*9*/].f_2))
 		{
-			func_224("TCP_ERROR", -1);
+			func_224("TCP_ERROR" /* GXT: Something went wrong with the game. */, -1);
 			return;
 		}
 	}
@@ -6109,11 +6109,11 @@ void func_95()//Position - 0xB371
 		func_201(&(Local_152.f_90));
 		if (!BitTest(Local_152.f_20, 0) && !BitTest(Local_152.f_20, 3))
 		{
-			func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 202, true), "TCP_EXIT", &(Local_152.f_90), 0);
+			func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 202, true), "TCP_EXIT" /* GXT: Quit */, &(Local_152.f_90), 0);
 			if (((((Local_152.f_797 == 3 && Local_151[PLAYER::PLAYER_ID() /*9*/].f_3 > 0) && !BitTest(Local_152.f_22, 2)) && !BitTest(Local_151[PLAYER::PLAYER_ID() /*9*/], 1)) && !BitTest(Local_152.f_22, 1)) && !BitTest(Local_151[PLAYER::PLAYER_ID() /*9*/], 3))
 			{
-				func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 201, true), "TCP_PLAY_HAND", &(Local_152.f_90), 0);
-				func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 203, true), "TCP_FOLD_HAND", &(Local_152.f_90), 0);
+				func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 201, true), "TCP_PLAY_HAND" /* GXT: Play */, &(Local_152.f_90), 0);
+				func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 203, true), "TCP_FOLD_HAND" /* GXT: Fold */, &(Local_152.f_90), 0);
 			}
 			if (Local_109.f_576[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2] == 3 && ((Local_152.f_19 >= Local_152.f_28 || Local_151[PLAYER::PLAYER_ID() /*9*/].f_3 != 0) || Local_151[PLAYER::PLAYER_ID() /*9*/].f_5 != 0))
 			{
@@ -6121,61 +6121,61 @@ void func_95()//Position - 0xB371
 				{
 					if (Local_152.f_19 >= Local_152.f_17 * 2)
 					{
-						func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 201, true), "TCP_PLACE", &(Local_152.f_90), 0);
+						func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 201, true), "TCP_PLACE" /* GXT: Place Ante Bet */, &(Local_152.f_90), 0);
 					}
-					func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 203, true), "TCP_DECLINEA", &(Local_152.f_90), 0);
+					func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 203, true), "TCP_DECLINEA" /* GXT: Decline Ante Bet */, &(Local_152.f_90), 0);
 					if (Local_152.f_19 >= Local_152.f_17 * 2)
 					{
 						if (!BitTest(Local_152.f_22, 8))
 						{
-							func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 204, true), "TCP_BET_MAX", &(Local_152.f_90), 0);
+							func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 204, true), "TCP_BET_MAX" /* GXT: Max Bet */, &(Local_152.f_90), 0);
 						}
-						func_199(2, 7, "TCP_BET_NUM", &(Local_152.f_90));
+						func_199(2, 7, "TCP_BET_NUM" /* GXT: Adjust Bet */, &(Local_152.f_90));
 					}
 				}
 				else if ((!BitTest(Local_151[PLAYER::PLAYER_ID() /*9*/], 2) && Local_152.f_19 >= (Local_151[PLAYER::PLAYER_ID() /*9*/].f_3 + Local_152.f_28)) && !BitTest(Local_152.f_22, 0))
 				{
-					func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 201, true), "TCP_PLACE_PP", &(Local_152.f_90), 0);
-					func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 203, true), "TCP_DECLINE", &(Local_152.f_90), 0);
+					func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 201, true), "TCP_PLACE_PP" /* GXT: Place Pair Plus Bet */, &(Local_152.f_90), 0);
+					func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 203, true), "TCP_DECLINE" /* GXT: Decline Pair Plus Bet */, &(Local_152.f_90), 0);
 					if (!BitTest(Local_152.f_22, 8))
 					{
-						func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 204, true), "TCP_BET_MAX", &(Local_152.f_90), 0);
+						func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 204, true), "TCP_BET_MAX" /* GXT: Max Bet */, &(Local_152.f_90), 0);
 					}
-					func_199(2, 7, "TCP_BET_NUM", &(Local_152.f_90));
+					func_199(2, 7, "TCP_BET_NUM" /* GXT: Adjust Bet */, &(Local_152.f_90));
 				}
 			}
 		}
 		if (BitTest(Local_152.f_20, 0))
 		{
-			func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 202, true), "IB_BACK", &(Local_152.f_90), 0);
-			func_199(2, 8, "IB_TAB", &(Local_152.f_90));
+			func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 202, true), "IB_BACK" /* GXT: Back */, &(Local_152.f_90), 0);
+			func_199(2, 8, "IB_TAB" /* GXT: Previous/Next Page */, &(Local_152.f_90));
 		}
 		else if (BitTest(Local_152.f_20, 3))
 		{
-			func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 202, true), "IB_BACK", &(Local_152.f_90), 0);
+			func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 202, true), "IB_BACK" /* GXT: Back */, &(Local_152.f_90), 0);
 		}
 		if (Local_109.f_576[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2] < 12)
 		{
 			if (Local_109.f_389[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*5*/] > 0)
 			{
-				func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 208, true), "TCP_DLR", &(Local_152.f_90), 0);
+				func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 208, true), "TCP_DLR" /* GXT: Dealer's Cards */, &(Local_152.f_90), 0);
 			}
 			if (Local_109.f_410[PLAYER::PLAYER_ID() /*5*/] > 0)
 			{
 				if (BitTest(Local_152.f_22, 4) || BitTest(Local_109.f_20[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2], func_198(Local_151[PLAYER::PLAYER_ID() /*9*/].f_1)))
 				{
-					func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 207, true), "TCP_CARDS", &(Local_152.f_90), 0);
+					func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 207, true), "TCP_CARDS" /* GXT: Your Cards */, &(Local_152.f_90), 0);
 				}
 				else if (((((Local_151[PLAYER::PLAYER_ID() /*9*/].f_3 > 0 && Local_152.f_797 == 3) && !BitTest(Local_152.f_22, 2)) && !BitTest(Local_151[PLAYER::PLAYER_ID() /*9*/], 1)) && !BitTest(Local_152.f_22, 1)) && !BitTest(Local_151[PLAYER::PLAYER_ID() /*9*/], 3))
 				{
-					func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 207, true), "TCP_PICK_UP", &(Local_152.f_90), 0);
+					func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 207, true), "TCP_PICK_UP" /* GXT: Pick Up Cards */, &(Local_152.f_90), 0);
 				}
 			}
 		}
 		if (!BitTest(Local_152.f_20, 0) && !BitTest(Local_152.f_20, 3))
 		{
-			func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 210, true), "TCP_RULESb", &(Local_152.f_90), 0);
-			func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 209, true), "TCP_HANDSb", &(Local_152.f_90), 0);
+			func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 210, true), "TCP_RULESb" /* GXT: Rules */, &(Local_152.f_90), 0);
+			func_200(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 209, true), "TCP_HANDSb" /* GXT: Hand Rankings */, &(Local_152.f_90), 0);
 		}
 		Var1 = { func_197() };
 		func_196(&(Local_152.f_90), 1f);
@@ -6259,15 +6259,15 @@ void func_95()//Position - 0xB371
 				HUD::CLEAR_HELP(true);
 				if (Local_152.f_25 == 1)
 				{
-					func_224("IT_MEMBOc", -1);
+					func_224("IT_MEMBOc" /* GXT: You have been removed from the game because you no longer have access to your MC President's casino membership. */, -1);
 				}
 				else if (Local_152.f_25 == 2)
 				{
-					func_224("IT_MEMBOa", -1);
+					func_224("IT_MEMBOa" /* GXT: You have been removed from the game because you no longer have access to your CEO's casino membership. */, -1);
 				}
 				else if (Local_152.f_25 == 3)
 				{
-					func_224("IT_MEMBOb", -1);
+					func_224("IT_MEMBOb" /* GXT: You have been removed from the game because you no longer have access to your VIP's casino membership. */, -1);
 				}
 				return;
 			}
@@ -6293,20 +6293,20 @@ void func_95()//Position - 0xB371
 				{
 					if (Local_152.f_19 <= 0)
 					{
-						func_224("CAS_MG_NOCHIPS7", -1);
+						func_224("CAS_MG_NOCHIPS7" /* GXT: Chips are required to play Three Card Poker. Use the Phone Services ~BLIP_CASINO_CONCIERGE~ to acquire them. */, -1);
 					}
 					else
 					{
-						func_224("CAS_MG_LOWCHIPS7", -1);
+						func_224("CAS_MG_LOWCHIPS7" /* GXT: You don't have enough Chips to play Three Card Poker. Use the Phone Services ~BLIP_CASINO_CONCIERGE~ to acquire more. */, -1);
 					}
 				}
 				else if (Local_152.f_19 <= 0)
 				{
-					func_224("CAS_MG_NOCHIPS3", -1);
+					func_224("CAS_MG_NOCHIPS3" /* GXT: Chips are required to play Three Card Poker. Speak to the Cashier ~BLIP_CASINO_CHIPS~ to acquire them. */, -1);
 				}
 				else
 				{
-					func_224("CAS_MG_LOWCHIPS3", -1);
+					func_224("CAS_MG_LOWCHIPS3" /* GXT: You don't have enough Chips to play Three Card Poker. Speak to the Cashier ~BLIP_CASINO_CHIPS~ to acquire more. */, -1);
 				}
 				return;
 			}
@@ -6356,11 +6356,11 @@ void func_95()//Position - 0xB371
 				HUD::CLEAR_HELP(true);
 				if (func_331() == 2)
 				{
-					func_224("CAS_MG_CTIME", -1);
+					func_224("CAS_MG_CTIME" /* GXT: This feature is not available now.  Please come back later. */, -1);
 				}
 				else
 				{
-					func_224("CAS_MG_CBAN", -1);
+					func_224("CAS_MG_CBAN" /* GXT: This feature is not available now.  Please come back later. */, -1);
 				}
 				return;
 			}
@@ -6607,41 +6607,41 @@ void func_95()//Position - 0xB371
 						{
 							if (func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0) <= 24000)
 							{
-								func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME", 0, 0, -1, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1);
+								func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME" /* GXT: TIME */, 0, 0, -1, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 							}
 							else
 							{
-								func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME", 0, 0, -1, 0, 3, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
+								func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME" /* GXT: TIME */, 0, 0, -1, 0, 3, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
 							}
 						}
 						if (Local_152.f_19 < Local_152.f_17 * 2)
 						{
-							if (((!func_337("TCP_LOW") && !bLocal_170) && !bLocal_171) && !bLocal_166)
+							if (((!func_337("TCP_LOW" /* GXT: You do not have enough Chips to place the Ante and Play Bet.~n~You can still bet on Pair Plus. */) && !bLocal_170) && !bLocal_171) && !bLocal_166)
 							{
-								func_158("TCP_LOW");
+								func_158("TCP_LOW" /* GXT: You do not have enough Chips to place the Ante and Play Bet.~n~You can still bet on Pair Plus. */);
 							}
 						}
-						else if (((!func_337("TCP_PLACE_ANTE") && !bLocal_170) && !bLocal_171) && !bLocal_166)
+						else if (((!func_337("TCP_PLACE_ANTE" /* GXT: Place an Ante bet to receive a hand that can be played against the Dealer. */) && !bLocal_170) && !bLocal_171) && !bLocal_166)
 						{
-							func_158("TCP_PLACE_ANTE");
+							func_158("TCP_PLACE_ANTE" /* GXT: Place an Ante bet to receive a hand that can be played against the Dealer. */);
 						}
 					}
 				}
 				else
 				{
-					if (((!func_337("TCP_PLACE_ANTE") && !bLocal_170) && !bLocal_171) && !bLocal_166)
+					if (((!func_337("TCP_PLACE_ANTE" /* GXT: Place an Ante bet to receive a hand that can be played against the Dealer. */) && !bLocal_170) && !bLocal_171) && !bLocal_166)
 					{
-						func_158("TCP_PLACE_ANTE");
+						func_158("TCP_PLACE_ANTE" /* GXT: Place an Ante bet to receive a hand that can be played against the Dealer. */);
 					}
 					if (func_72(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/])) && (30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)) >= 0)
 					{
 						if (func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0) <= 24000)
 						{
-							func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME", 0, 0, -1, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1);
+							func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME" /* GXT: TIME */, 0, 0, -1, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 						}
 						else
 						{
-							func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME", 0, 0, -1, 0, 3, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
+							func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME" /* GXT: TIME */, 0, 0, -1, 0, 3, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
 						}
 					}
 					if (Local_152.f_30 != -1 && !BitTest(Local_151[PLAYER::PLAYER_ID() /*9*/], 0))
@@ -6708,7 +6708,7 @@ void func_95()//Position - 0xB371
 						}
 					}
 				}
-				func_151(Local_152.f_15, "TCP_BET2", -1, 1, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, -1);
+				func_151(Local_152.f_15, "TCP_BET2" /* GXT: ANTE BET */, -1, 1, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, -1);
 			}
 			else if (!BitTest(Local_151[PLAYER::PLAYER_ID() /*9*/], 2))
 			{
@@ -6970,34 +6970,34 @@ void func_95()//Position - 0xB371
 						{
 							if (func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0) <= 24000)
 							{
-								func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME", 0, 0, -1, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1);
+								func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME" /* GXT: TIME */, 0, 0, -1, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 							}
 							else
 							{
-								func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME", 0, 0, -1, 0, 3, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
+								func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME" /* GXT: TIME */, 0, 0, -1, 0, 3, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
 							}
 						}
-						if (((!func_337("TCP_PLACE_PAIR") && !bLocal_170) && !bLocal_171) && !bLocal_166)
+						if (((!func_337("TCP_PLACE_PAIR" /* GXT: Pair Plus is a side bet. This will win if your hand has a Pair or higher. */) && !bLocal_170) && !bLocal_171) && !bLocal_166)
 						{
-							func_158("TCP_PLACE_PAIR");
+							func_158("TCP_PLACE_PAIR" /* GXT: Pair Plus is a side bet. This will win if your hand has a Pair or higher. */);
 						}
 					}
 				}
 				else
 				{
-					if (((!func_337("TCP_PLACE_PAIR") && !bLocal_170) && !bLocal_171) && !bLocal_166)
+					if (((!func_337("TCP_PLACE_PAIR" /* GXT: Pair Plus is a side bet. This will win if your hand has a Pair or higher. */) && !bLocal_170) && !bLocal_171) && !bLocal_166)
 					{
-						func_158("TCP_PLACE_PAIR");
+						func_158("TCP_PLACE_PAIR" /* GXT: Pair Plus is a side bet. This will win if your hand has a Pair or higher. */);
 					}
 					if (func_72(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/])) && (30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)) >= 0)
 					{
 						if (func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0) <= 24000)
 						{
-							func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME", 0, 0, -1, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1);
+							func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME" /* GXT: TIME */, 0, 0, -1, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 						}
 						else
 						{
-							func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME", 0, 0, -1, 0, 3, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
+							func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME" /* GXT: TIME */, 0, 0, -1, 0, 3, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
 						}
 					}
 					if (Local_152.f_30 != -1 && !BitTest(Local_151[PLAYER::PLAYER_ID() /*9*/], 2))
@@ -7060,7 +7060,7 @@ void func_95()//Position - 0xB371
 						}
 					}
 				}
-				func_151(Local_152.f_23, "TCP_BET3", -1, 1, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, -1);
+				func_151(Local_152.f_23, "TCP_BET3" /* GXT: PAIR PLUS BET */, -1, 1, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, -1);
 			}
 			else
 			{
@@ -7078,19 +7078,19 @@ void func_95()//Position - 0xB371
 					}
 					iVar16++;
 				}
-				if ((((!func_337("TCP_WAIT") && !bVar15) && !bLocal_170) && !bLocal_171) && !bLocal_166)
+				if ((((!func_337("TCP_WAIT" /* GXT: Waiting for other players. */) && !bVar15) && !bLocal_170) && !bLocal_171) && !bLocal_166)
 				{
-					func_158("TCP_WAIT");
+					func_158("TCP_WAIT" /* GXT: Waiting for other players. */);
 				}
 				if (func_72(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/])) && (30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)) >= 0)
 				{
 					if (func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0) <= 24000)
 					{
-						func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME", 0, 0, -1, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1);
+						func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME" /* GXT: TIME */, 0, 0, -1, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 					}
 					else
 					{
-						func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME", 0, 0, -1, 0, 3, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
+						func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME" /* GXT: TIME */, 0, 0, -1, 0, 3, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
 					}
 				}
 			}
@@ -7122,19 +7122,19 @@ void func_95()//Position - 0xB371
 						}
 						iVar19++;
 					}
-					if ((((!func_337("TCP_WAIT") && !bVar18) && !bLocal_170) && !bLocal_171) && !bLocal_166)
+					if ((((!func_337("TCP_WAIT" /* GXT: Waiting for other players. */) && !bVar18) && !bLocal_170) && !bLocal_171) && !bLocal_166)
 					{
-						func_158("TCP_WAIT");
+						func_158("TCP_WAIT" /* GXT: Waiting for other players. */);
 					}
 					if (func_72(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/])) && (30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)) >= 0)
 					{
 						if (func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0) <= 24000)
 						{
-							func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME", 0, 0, -1, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1);
+							func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME" /* GXT: TIME */, 0, 0, -1, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 						}
 						else
 						{
-							func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME", 0, 0, -1, 0, 3, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
+							func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME" /* GXT: TIME */, 0, 0, -1, 0, 3, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
 						}
 					}
 				}
@@ -7216,16 +7216,16 @@ void func_95()//Position - 0xB371
 							{
 								if (func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0) <= 24000)
 								{
-									func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME", 0, 0, -1, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1);
+									func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME" /* GXT: TIME */, 0, 0, -1, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 								}
 								else
 								{
-									func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME", 0, 0, -1, 0, 3, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
+									func_159((30000 - func_207(&(Local_109.f_150[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*2*/]), 0, 0)), "TCP_TIME" /* GXT: TIME */, 0, 0, -1, 0, 3, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
 								}
 							}
-							if (((!func_337("TCP_PLACE_PLAY") && !bLocal_170) && !bLocal_171) && !bLocal_166)
+							if (((!func_337("TCP_PLACE_PLAY" /* GXT: Place a Play bet equal to your Ante to compare your hand against the Dealer. Folding will forfeit your Ante bet. */) && !bLocal_170) && !bLocal_171) && !bLocal_166)
 							{
-								func_158("TCP_PLACE_PLAY");
+								func_158("TCP_PLACE_PLAY" /* GXT: Place a Play bet equal to your Ante to compare your hand against the Dealer. Folding will forfeit your Ante bet. */);
 							}
 							if ((((!NETWORK::NETWORK_TEXT_CHAT_IS_TYPING() && !func_339()) && !HUD::IS_WARNING_MESSAGE_ACTIVE()) && !BitTest(Local_152.f_20, 0)) && !BitTest(Local_152.f_20, 3))
 							{
@@ -7399,7 +7399,7 @@ void func_95()//Position - 0xB371
 				}
 				if (Local_151[PLAYER::PLAYER_ID() /*9*/].f_3 > 0)
 				{
-					func_151(Local_151[PLAYER::PLAYER_ID() /*9*/].f_3, "TCP_BET4", -1, 1, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, -1);
+					func_151(Local_151[PLAYER::PLAYER_ID() /*9*/].f_3, "TCP_BET4" /* GXT: PLAY WAGER */, -1, 1, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, -1);
 				}
 			}
 			break;
@@ -7423,12 +7423,12 @@ void func_95()//Position - 0xB371
 				}
 				if (Local_109.f_576[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2] == 9 && !bVar22)
 				{
-					if (((!func_337("TCP_WAIT") && !bLocal_170) && !bLocal_171) && !bLocal_166)
+					if (((!func_337("TCP_WAIT" /* GXT: Waiting for other players. */) && !bLocal_170) && !bLocal_171) && !bLocal_166)
 					{
-						func_158("TCP_WAIT");
+						func_158("TCP_WAIT" /* GXT: Waiting for other players. */);
 					}
 				}
-				else if (func_337("TCP_WAIT") || func_337("TCP_PLACE_PLAY"))
+				else if (func_337("TCP_WAIT" /* GXT: Waiting for other players. */) || func_337("TCP_PLACE_PLAY" /* GXT: Place a Play bet equal to your Ante to compare your hand against the Dealer. Folding will forfeit your Ante bet. */))
 				{
 					HUD::CLEAR_HELP(true);
 				}
@@ -7510,11 +7510,11 @@ void func_95()//Position - 0xB371
 						HUD::CLEAR_HELP(true);
 						if (func_331() == 2)
 						{
-							func_224("CAS_MG_CTIME", -1);
+							func_224("CAS_MG_CTIME" /* GXT: This feature is not available now.  Please come back later. */, -1);
 						}
 						else
 						{
-							func_224("CAS_MG_CBAN", -1);
+							func_224("CAS_MG_CBAN" /* GXT: This feature is not available now.  Please come back later. */, -1);
 						}
 						return;
 					}
@@ -7609,9 +7609,9 @@ void func_95()//Position - 0xB371
 							{
 								if ((((((Local_152.f_2 && Local_152.f_3) && Local_152.f_4) && Local_152.f_6) && !bLocal_170) && !bLocal_171) && !bLocal_166)
 								{
-									if (!func_100("TCP_WIN_NP", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0), Local_161.f_14))
+									if (!func_100("TCP_WIN_NP" /* GXT: The Dealer has less than Queen High and does not play. You have ~a~. You win ~1~ Chips! */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0), Local_161.f_14))
 									{
-										func_99("TCP_WIN_NP", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0), Local_161.f_14);
+										func_99("TCP_WIN_NP" /* GXT: The Dealer has less than Queen High and does not play. You have ~a~. You win ~1~ Chips! */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0), Local_161.f_14);
 									}
 								}
 								if (!Local_152.f_2)
@@ -7660,14 +7660,14 @@ void func_95()//Position - 0xB371
 									}
 									if (bVar30)
 									{
-										if (!func_100("TCP_WIN2", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 1), Local_161.f_14))
+										if (!func_100("TCP_WIN2" /* GXT: You have ~a~ higher than the Dealer's. You win ~1~ Chips! */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 1), Local_161.f_14))
 										{
-											func_99("TCP_WIN2", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 1), Local_161.f_14);
+											func_99("TCP_WIN2" /* GXT: You have ~a~ higher than the Dealer's. You win ~1~ Chips! */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 1), Local_161.f_14);
 										}
 									}
-									else if (!func_100("TCP_WIN", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0), Local_161.f_14))
+									else if (!func_100("TCP_WIN" /* GXT: You have ~a~. You win ~1~ Chips! */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0), Local_161.f_14))
 									{
-										func_99("TCP_WIN", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0), Local_161.f_14);
+										func_99("TCP_WIN" /* GXT: You have ~a~. You win ~1~ Chips! */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0), Local_161.f_14);
 									}
 								}
 								if (!Local_152.f_2)
@@ -7702,9 +7702,9 @@ void func_95()//Position - 0xB371
 									{
 										if ((((((Local_152.f_2 && Local_152.f_3) && Local_152.f_4) && Local_152.f_6) && !bLocal_170) && !bLocal_171) && !bLocal_166)
 										{
-											if (!func_100("TCP_WIN2", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 1), Local_161.f_14))
+											if (!func_100("TCP_WIN2" /* GXT: You have ~a~ higher than the Dealer's. You win ~1~ Chips! */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 1), Local_161.f_14))
 											{
-												func_99("TCP_WIN2", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 1), Local_161.f_14);
+												func_99("TCP_WIN2" /* GXT: You have ~a~ higher than the Dealer's. You win ~1~ Chips! */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 1), Local_161.f_14);
 											}
 										}
 										if (!Local_152.f_2)
@@ -7731,9 +7731,9 @@ void func_95()//Position - 0xB371
 									{
 										if ((((((Local_152.f_2 && Local_152.f_3) && Local_152.f_4) && Local_152.f_6) && !bLocal_170) && !bLocal_171) && !bLocal_166)
 										{
-											if (!func_337("TCP_LOSE_PUSH"))
+											if (!func_337("TCP_LOSE_PUSH" /* GXT: You and the Dealer have the same hand. The hand is a push. */))
 											{
-												func_158("TCP_LOSE_PUSH");
+												func_158("TCP_LOSE_PUSH" /* GXT: You and the Dealer have the same hand. The hand is a push. */);
 											}
 										}
 										if (!Local_152.f_2)
@@ -7764,14 +7764,14 @@ void func_95()//Position - 0xB371
 										{
 											if (Local_161.f_14 > 0)
 											{
-												if (!func_100("TCP_WIN", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 1), Local_161.f_14))
+												if (!func_100("TCP_WIN" /* GXT: You have ~a~. You win ~1~ Chips! */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 1), Local_161.f_14))
 												{
-													func_99("TCP_WIN", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 1), Local_161.f_14);
+													func_99("TCP_WIN" /* GXT: You have ~a~. You win ~1~ Chips! */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 1), Local_161.f_14);
 												}
 											}
-											else if (!func_98("TCP_LOSE_PLAY2", func_101(func_9(&(Local_109.f_389[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*5*/].f_1), 0, 0), 1)))
+											else if (!func_98("TCP_LOSE_PLAY2" /* GXT: The Dealer has ~a~ higher than yours. You lose. */, func_101(func_9(&(Local_109.f_389[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*5*/].f_1), 0, 0), 1)))
 											{
-												func_97("TCP_LOSE_PLAY2", func_101(func_9(&(Local_109.f_389[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*5*/].f_1), 0, 0), 1));
+												func_97("TCP_LOSE_PLAY2" /* GXT: The Dealer has ~a~ higher than yours. You lose. */, func_101(func_9(&(Local_109.f_389[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*5*/].f_1), 0, 0), 1));
 											}
 										}
 										Local_161.f_4 = joaat("lose");
@@ -7788,9 +7788,9 @@ void func_95()//Position - 0xB371
 								{
 									if ((((((Local_152.f_2 && Local_152.f_3) && Local_152.f_4) && Local_152.f_6) && !bLocal_170) && !bLocal_171) && !bLocal_166)
 									{
-										if (!func_100("TCP_WIN2", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 1), Local_161.f_14))
+										if (!func_100("TCP_WIN2" /* GXT: You have ~a~ higher than the Dealer's. You win ~1~ Chips! */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 1), Local_161.f_14))
 										{
-											func_99("TCP_WIN2", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 1), Local_161.f_14);
+											func_99("TCP_WIN2" /* GXT: You have ~a~ higher than the Dealer's. You win ~1~ Chips! */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 1), Local_161.f_14);
 										}
 									}
 									if (!Local_152.f_2)
@@ -7819,14 +7819,14 @@ void func_95()//Position - 0xB371
 									{
 										if (Local_161.f_14 > 0)
 										{
-											if (!func_100("TCP_WIN", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 1), Local_161.f_14))
+											if (!func_100("TCP_WIN" /* GXT: You have ~a~. You win ~1~ Chips! */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 1), Local_161.f_14))
 											{
-												func_99("TCP_WIN", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 1), Local_161.f_14);
+												func_99("TCP_WIN" /* GXT: You have ~a~. You win ~1~ Chips! */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 1), Local_161.f_14);
 											}
 										}
-										else if (!func_98("TCP_LOSE_PLAY2", func_101(func_9(&(Local_109.f_389[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*5*/].f_1), 0, 0), 1)))
+										else if (!func_98("TCP_LOSE_PLAY2" /* GXT: The Dealer has ~a~ higher than yours. You lose. */, func_101(func_9(&(Local_109.f_389[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*5*/].f_1), 0, 0), 1)))
 										{
-											func_97("TCP_LOSE_PLAY2", func_101(func_9(&(Local_109.f_389[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*5*/].f_1), 0, 0), 1));
+											func_97("TCP_LOSE_PLAY2" /* GXT: The Dealer has ~a~ higher than yours. You lose. */, func_101(func_9(&(Local_109.f_389[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*5*/].f_1), 0, 0), 1));
 										}
 									}
 									Local_161.f_4 = joaat("lose");
@@ -7867,26 +7867,26 @@ void func_95()//Position - 0xB371
 									{
 										if (Local_161.f_14 > 0)
 										{
-											if (!func_100("TCP_WIN", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 1), Local_161.f_14))
+											if (!func_100("TCP_WIN" /* GXT: You have ~a~. You win ~1~ Chips! */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 1), Local_161.f_14))
 											{
-												func_99("TCP_WIN", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 1), Local_161.f_14);
+												func_99("TCP_WIN" /* GXT: You have ~a~. You win ~1~ Chips! */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 1), Local_161.f_14);
 											}
 										}
-										else if (!func_98("TCP_LOSE_PLAY2", func_101(func_9(&(Local_109.f_389[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*5*/].f_1), 0, 0), 1)))
+										else if (!func_98("TCP_LOSE_PLAY2" /* GXT: The Dealer has ~a~ higher than yours. You lose. */, func_101(func_9(&(Local_109.f_389[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*5*/].f_1), 0, 0), 1)))
 										{
-											func_97("TCP_LOSE_PLAY2", func_101(func_9(&(Local_109.f_389[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*5*/].f_1), 0, 0), 1));
+											func_97("TCP_LOSE_PLAY2" /* GXT: The Dealer has ~a~ higher than yours. You lose. */, func_101(func_9(&(Local_109.f_389[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*5*/].f_1), 0, 0), 1));
 										}
 									}
 									else if (Local_161.f_14 > 0)
 									{
-										if (!func_100("TCP_WIN", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0), Local_161.f_14))
+										if (!func_100("TCP_WIN" /* GXT: You have ~a~. You win ~1~ Chips! */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0), Local_161.f_14))
 										{
-											func_99("TCP_WIN", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0), Local_161.f_14);
+											func_99("TCP_WIN" /* GXT: You have ~a~. You win ~1~ Chips! */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0), Local_161.f_14);
 										}
 									}
-									else if (!func_98("TCP_LOSE_PLAY", func_101(func_9(&(Local_109.f_389[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*5*/].f_1), 0, 0), 0)))
+									else if (!func_98("TCP_LOSE_PLAY" /* GXT: The Dealer has ~a~. You lose. */, func_101(func_9(&(Local_109.f_389[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*5*/].f_1), 0, 0), 0)))
 									{
-										func_97("TCP_LOSE_PLAY", func_101(func_9(&(Local_109.f_389[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*5*/].f_1), 0, 0), 0));
+										func_97("TCP_LOSE_PLAY" /* GXT: The Dealer has ~a~. You lose. */, func_101(func_9(&(Local_109.f_389[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*5*/].f_1), 0, 0), 0));
 									}
 								}
 								Local_161.f_4 = joaat("lose");
@@ -7923,14 +7923,14 @@ void func_95()//Position - 0xB371
 							{
 								if (Local_161.f_14 > 0)
 								{
-									if (!func_100("TCP_WIN", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0), Local_161.f_14))
+									if (!func_100("TCP_WIN" /* GXT: You have ~a~. You win ~1~ Chips! */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0), Local_161.f_14))
 									{
-										func_99("TCP_WIN", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0), Local_161.f_14);
+										func_99("TCP_WIN" /* GXT: You have ~a~. You win ~1~ Chips! */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0), Local_161.f_14);
 									}
 								}
-								else if (!func_98("TCP_LOSE_FOLD", func_101(func_9(&(Local_109.f_389[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*5*/].f_1), 0, 0), 0)))
+								else if (!func_98("TCP_LOSE_FOLD" /* GXT: The Dealer has ~a~. You folded your hand. You lose. */, func_101(func_9(&(Local_109.f_389[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*5*/].f_1), 0, 0), 0)))
 								{
-									func_97("TCP_LOSE_FOLD", func_101(func_9(&(Local_109.f_389[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*5*/].f_1), 0, 0), 0));
+									func_97("TCP_LOSE_FOLD" /* GXT: The Dealer has ~a~. You folded your hand. You lose. */, func_101(func_9(&(Local_109.f_389[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*5*/].f_1), 0, 0), 0));
 								}
 							}
 							if (!Local_152.f_3)
@@ -7959,9 +7959,9 @@ void func_95()//Position - 0xB371
 							{
 								if ((((((Local_152.f_2 && Local_152.f_3) && Local_152.f_4) && Local_152.f_6) && !bLocal_170) && !bLocal_171) && !bLocal_166)
 								{
-									if (!func_100("TCP_WIN", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0), Local_161.f_14))
+									if (!func_100("TCP_WIN" /* GXT: You have ~a~. You win ~1~ Chips! */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0), Local_161.f_14))
 									{
-										func_99("TCP_WIN", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0), Local_161.f_14);
+										func_99("TCP_WIN" /* GXT: You have ~a~. You win ~1~ Chips! */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0), Local_161.f_14);
 									}
 								}
 							}
@@ -7984,9 +7984,9 @@ void func_95()//Position - 0xB371
 								Local_161.f_4 = joaat("lose");
 								if ((((((Local_152.f_2 && Local_152.f_3) && Local_152.f_4) && Local_152.f_6) && !bLocal_170) && !bLocal_171) && !bLocal_166)
 								{
-									if (!func_98("TCP_LOSE_PP", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0)))
+									if (!func_98("TCP_LOSE_PP" /* GXT: You have ~a~. You lose. */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0)))
 									{
-										func_97("TCP_LOSE_PP", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0));
+										func_97("TCP_LOSE_PP" /* GXT: You have ~a~. You lose. */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0));
 									}
 								}
 							}
@@ -8088,147 +8088,147 @@ char* func_101(int iParam0, bool bParam1)//Position - 0x10842
 	{
 		if (iParam0 > 500)
 		{
-			return "TCP_STRAIGHTF_F";
+			return "TCP_STRAIGHTF_F" /* GXT: a Straight Flush */;
 		}
 		else if (iParam0 > 400)
 		{
-			return "TCP_TOFAKIND_F";
+			return "TCP_TOFAKIND_F" /* GXT: Three of a Kind */;
 		}
 		else if (iParam0 > 300)
 		{
-			return "TCP_STRAIGHT_F";
+			return "TCP_STRAIGHT_F" /* GXT: a Straight */;
 		}
 		else if (iParam0 > 200)
 		{
-			return "TCP_FLUSH_F";
+			return "TCP_FLUSH_F" /* GXT: a Flush */;
 		}
 		else if (iParam0 > 100)
 		{
-			return "TCP_PAIR_F";
+			return "TCP_PAIR_F" /* GXT: a Pair */;
 		}
 		else if (iParam0 == 12)
 		{
-			return "TCP_HIGH_Q_F";
+			return "TCP_HIGH_Q_F" /* GXT: Queen High */;
 		}
 		else if (iParam0 == 13)
 		{
-			return "TCP_HIGH_K_F";
+			return "TCP_HIGH_K_F" /* GXT: King High */;
 		}
 		else
 		{
-			return "TCP_HIGH_A_F";
+			return "TCP_HIGH_A_F" /* GXT: Ace High */;
 		}
 	}
 	else if (iParam0 > 500)
 	{
-		return "TCP_STRAIGHTF";
+		return "TCP_STRAIGHTF" /* GXT: a Straight Flush */;
 	}
 	else if (iParam0 > 400)
 	{
-		return "TCP_TOFAKIND";
+		return "TCP_TOFAKIND" /* GXT: Three of a Kind */;
 	}
 	else if (iParam0 > 300)
 	{
-		return "TCP_STRAIGHT";
+		return "TCP_STRAIGHT" /* GXT: a Straight */;
 	}
 	else if (iParam0 > 200)
 	{
-		return "TCP_FLUSH";
+		return "TCP_FLUSH" /* GXT: a Flush */;
 	}
 	else if (iParam0 > 100)
 	{
 		if (iParam0 == 128)
 		{
-			return "TCP_PAIR_A";
+			return "TCP_PAIR_A" /* GXT: a Pair of Aces */;
 		}
 		else if (iParam0 == 104)
 		{
-			return "TCP_PAIR_2";
+			return "TCP_PAIR_2" /* GXT: a Pair of 2s */;
 		}
 		else if (iParam0 == 106)
 		{
-			return "TCP_PAIR_3";
+			return "TCP_PAIR_3" /* GXT: a Pair of 3s */;
 		}
 		else if (iParam0 == 108)
 		{
-			return "TCP_PAIR_4";
+			return "TCP_PAIR_4" /* GXT: a Pair of 4s */;
 		}
 		else if (iParam0 == 110)
 		{
-			return "TCP_PAIR_5";
+			return "TCP_PAIR_5" /* GXT: a Pair of 5s */;
 		}
 		else if (iParam0 == 112)
 		{
-			return "TCP_PAIR_6";
+			return "TCP_PAIR_6" /* GXT: a Pair of 6s */;
 		}
 		else if (iParam0 == 114)
 		{
-			return "TCP_PAIR_7";
+			return "TCP_PAIR_7" /* GXT: a Pair of 7s */;
 		}
 		else if (iParam0 == 116)
 		{
-			return "TCP_PAIR_8";
+			return "TCP_PAIR_8" /* GXT: a Pair of 8s */;
 		}
 		else if (iParam0 == 118)
 		{
-			return "TCP_PAIR_9";
+			return "TCP_PAIR_9" /* GXT: a Pair of 9s */;
 		}
 		else if (iParam0 == 120)
 		{
-			return "TCP_PAIR_10";
+			return "TCP_PAIR_10" /* GXT: a Pair of 10s */;
 		}
 		else if (iParam0 == 122)
 		{
-			return "TCP_PAIR_J";
+			return "TCP_PAIR_J" /* GXT: a Pair of Jacks */;
 		}
 		else if (iParam0 == 124)
 		{
-			return "TCP_PAIR_Q";
+			return "TCP_PAIR_Q" /* GXT: a Pair of Queens */;
 		}
 		else if (iParam0 == 126)
 		{
-			return "TCP_PAIR_K";
+			return "TCP_PAIR_K" /* GXT: a Pair of Kings */;
 		}
 	}
 	else if (iParam0 == 5)
 	{
-		return "TCP_HIGH_5";
+		return "TCP_HIGH_5" /* GXT: 5 High */;
 	}
 	else if (iParam0 == 6)
 	{
-		return "TCP_HIGH_6";
+		return "TCP_HIGH_6" /* GXT: 6 High */;
 	}
 	else if (iParam0 == 7)
 	{
-		return "TCP_HIGH_7";
+		return "TCP_HIGH_7" /* GXT: 7 High */;
 	}
 	else if (iParam0 == 8)
 	{
-		return "TCP_HIGH_8";
+		return "TCP_HIGH_8" /* GXT: 8 High */;
 	}
 	else if (iParam0 == 9)
 	{
-		return "TCP_HIGH_9";
+		return "TCP_HIGH_9" /* GXT: 9 High */;
 	}
 	else if (iParam0 == 10)
 	{
-		return "TCP_HIGH_10";
+		return "TCP_HIGH_10" /* GXT: 10 High */;
 	}
 	else if (iParam0 == 11)
 	{
-		return "TCP_HIGH_J";
+		return "TCP_HIGH_J" /* GXT: Jack High */;
 	}
 	else if (iParam0 == 12)
 	{
-		return "TCP_HIGH_Q";
+		return "TCP_HIGH_Q" /* GXT: Queen High */;
 	}
 	else if (iParam0 == 13)
 	{
-		return "TCP_HIGH_K";
+		return "TCP_HIGH_K" /* GXT: King High */;
 	}
 	else
 	{
-		return "TCP_HIGH_A";
+		return "TCP_HIGH_A" /* GXT: Ace High */;
 	}
 	return "";
 }
@@ -10264,56 +10264,56 @@ void func_162()//Position - 0x12CC4
 			{
 				func_297(0, 0);
 				func_295(1, sVar0, sVar0);
-				func_294("TCP_HANDS");
+				func_294("TCP_HANDS" /* GXT: HAND RANKINGS */);
 				func_181(1, 2, 2, 2, 1);
 				func_180(1, 1, 1, 1, 0);
 				iVar1 = 0;
-				func_176(iVar1, "TCP_HAND1", 0, 1, 0, 0, 0);
-				func_176(iVar1, "TCP_10", 1, 1, 0, 0, 0);
+				func_176(iVar1, "TCP_HAND1" /* GXT: Straight Flush */, 0, 1, 0, 0, 0);
+				func_176(iVar1, "TCP_10" /* GXT: 10 */, 1, 1, 0, 0, 0);
 				func_163(59, 0);
-				func_176(iVar1, "TCP_9", 1, 1, 0, 0, 0);
+				func_176(iVar1, "TCP_9" /* GXT: 9 */, 1, 1, 0, 0, 0);
 				func_163(59, 0);
-				func_176(iVar1, "TCP_8", 1, 1, 0, 0, 0);
+				func_176(iVar1, "TCP_8" /* GXT: 8 */, 1, 1, 0, 0, 0);
 				func_163(59, 0);
 				iVar1 = 1;
-				func_176(iVar1, "TCP_HAND2", 0, 1, 0, 0, 0);
-				func_176(iVar1, "TCP_5", 1, 1, 0, 0, 0);
+				func_176(iVar1, "TCP_HAND2" /* GXT: Three of a Kind */, 0, 1, 0, 0, 0);
+				func_176(iVar1, "TCP_5" /* GXT: 5 */, 1, 1, 0, 0, 0);
 				func_163(57, 0);
-				func_176(iVar1, "TCP_5", 1, 1, 0, 0, 0);
+				func_176(iVar1, "TCP_5" /* GXT: 5 */, 1, 1, 0, 0, 0);
 				func_163(58, 0);
-				func_176(iVar1, "TCP_5", 1, 1, 0, 0, 0);
+				func_176(iVar1, "TCP_5" /* GXT: 5 */, 1, 1, 0, 0, 0);
 				func_163(56, 0);
 				iVar1 = 2;
-				func_176(iVar1, "TCP_HAND3", 0, 1, 0, 0, 0);
-				func_176(iVar1, "TCP_2", 1, 1, 0, 0, 0);
+				func_176(iVar1, "TCP_HAND3" /* GXT: Straight */, 0, 1, 0, 0, 0);
+				func_176(iVar1, "TCP_2" /* GXT: 2 */, 1, 1, 0, 0, 0);
 				func_163(57, 0);
-				func_176(iVar1, "TCP_3", 1, 1, 0, 0, 0);
+				func_176(iVar1, "TCP_3" /* GXT: 3 */, 1, 1, 0, 0, 0);
 				func_163(59, 0);
-				func_176(iVar1, "TCP_4", 1, 1, 0, 0, 0);
+				func_176(iVar1, "TCP_4" /* GXT: 4 */, 1, 1, 0, 0, 0);
 				func_163(57, 0);
 				iVar1 = 3;
-				func_176(iVar1, "TCP_HAND4", 0, 1, 0, 0, 0);
-				func_176(iVar1, "TCP_A", 1, 1, 0, 0, 0);
+				func_176(iVar1, "TCP_HAND4" /* GXT: Flush */, 0, 1, 0, 0, 0);
+				func_176(iVar1, "TCP_A" /* GXT: A */, 1, 1, 0, 0, 0);
 				func_163(59, 0);
-				func_176(iVar1, "TCP_Q", 1, 1, 0, 0, 0);
+				func_176(iVar1, "TCP_Q" /* GXT: Q */, 1, 1, 0, 0, 0);
 				func_163(59, 0);
-				func_176(iVar1, "TCP_9", 1, 1, 0, 0, 0);
+				func_176(iVar1, "TCP_9" /* GXT: 9 */, 1, 1, 0, 0, 0);
 				func_163(59, 0);
 				iVar1 = 4;
-				func_176(iVar1, "TCP_HAND5", 0, 1, 0, 0, 0);
-				func_176(iVar1, "TCP_K", 1, 1, 0, 0, 0);
+				func_176(iVar1, "TCP_HAND5" /* GXT: Pair */, 0, 1, 0, 0, 0);
+				func_176(iVar1, "TCP_K" /* GXT: K */, 1, 1, 0, 0, 0);
 				func_163(57, 0);
-				func_176(iVar1, "TCP_K", 1, 1, 0, 0, 0);
+				func_176(iVar1, "TCP_K" /* GXT: K */, 1, 1, 0, 0, 0);
 				func_163(59, 0);
-				func_176(iVar1, "TCP_7", 1, 1, 0, 0, 0);
+				func_176(iVar1, "TCP_7" /* GXT: 7 */, 1, 1, 0, 0, 0);
 				func_163(56, 0);
 				iVar1 = 5;
-				func_176(iVar1, "TCP_HAND6", 0, 1, 0, 0, 0);
-				func_176(iVar1, "TCP_A", 1, 1, 0, 0, 0);
+				func_176(iVar1, "TCP_HAND6" /* GXT: High Card */, 0, 1, 0, 0, 0);
+				func_176(iVar1, "TCP_A" /* GXT: A */, 1, 1, 0, 0, 0);
 				func_163(56, 0);
-				func_176(iVar1, "TCP_7", 1, 1, 0, 0, 0);
+				func_176(iVar1, "TCP_7" /* GXT: 7 */, 1, 1, 0, 0, 0);
 				func_163(57, 0);
-				func_176(iVar1, "TCP_3", 1, 1, 0, 0, 0);
+				func_176(iVar1, "TCP_3" /* GXT: 3 */, 1, 1, 0, 0, 0);
 				func_163(59, 0);
 				func_293(-1, 1, 1);
 				MISC::SET_BIT(&(Local_152.f_20), 4);
@@ -11451,7 +11451,7 @@ void func_182()//Position - 0x1467C
 			{
 				func_297(0, 0);
 				func_295(1, sVar0, sVar0);
-				func_294("TCP_RULES");
+				func_294("TCP_RULES" /* GXT: RULES */);
 				func_186(1, iLocal_165, 6);
 				func_185(1, 1, 1, 1, 1);
 				func_293(-1, 1, 1);
@@ -11496,28 +11496,28 @@ char* func_183(int iParam0)//Position - 0x14840
 	switch (iParam0)
 	{
 		case 1:
-			return "TCP_RULE_1";
+			return "TCP_RULE_1" /* GXT: A single standard 52-card pack is used. This is shuffled at the start of every hand. */;
 		
 		case 2:
-			return "TCP_RULE_2";
+			return "TCP_RULE_2" /* GXT: The Dealer must have a Queen high or better to play. If the Dealer does not play, Ante wagers are paid 1 to 1 and Play wagers are returned. */;
 		
 		case 3:
-			return "TCP_RULE_3";
+			return "TCP_RULE_3" /* GXT: Players can choose to bet on the Ante, Pair Plus, or both. After being dealt their cards, players that have bet the Ante must place an equal Play bet to compare their hand with the Dealer.~n~~n~Play and Ante bets pay out 1 to 1 if the player's hand beats the Dealer. The player needs a Straight or better to receive the Ante Bonus. For Pair Plus, the player must have a Pair or better to receive a payout. This is paid independently of what hand the Dealer has. */;
 		
 		case 4:
-			return "TCP_RULE_4";
+			return "TCP_RULE_4" /* GXT: Straight Flush: 40 to 1~n~Three of a Kind: 30 to 1~n~Straight: 6 to 1~n~Flush: 4 to 1~n~Pair: 1 to 1 */;
 		
 		case 5:
-			return "TCP_RULE_5";
+			return "TCP_RULE_5" /* GXT: Straight Flush: 5 to 1~n~Three of a Kind: 4 to 1~n~Straight: 1 to 1 */;
 		
 		case 6:
 			if ((func_384(Local_152.f_18) == 2 || func_384(Local_152.f_18) == 3) || func_419(PLAYER::PLAYER_ID()))
 			{
-				return "TCP_RULE_6b";
+				return "TCP_RULE_6b" /* GXT: Ante and Play:~n~- Minimum: 1000 Chips~n~- Maximum: 50000 Chips~n~~n~Pair Plus:~n~- Minimum: 1000 Chips~n~- Maximum: 5000 Chips */;
 			}
 			else
 			{
-				return "TCP_RULE_6a";
+				return "TCP_RULE_6a" /* GXT: Ante and Play:~n~- Minimum: 10 Chips~n~- Maximum: 5000 Chips~n~~n~Pair Plus:~n~- Minimum: 10 Chips~n~- Maximum: 500 Chips */;
 			}
 			break;
 	}
@@ -11529,28 +11529,28 @@ char* func_184(int iParam0)//Position - 0x148DB
 	switch (iParam0)
 	{
 		case 1:
-			return "TCP_RULE_1T";
+			return "TCP_RULE_1T" /* GXT: The Pack~n~~a~ */;
 		
 		case 2:
-			return "TCP_RULE_2T";
+			return "TCP_RULE_2T" /* GXT: Dealer Hand~n~~a~ */;
 		
 		case 3:
-			return "TCP_RULE_3T";
+			return "TCP_RULE_3T" /* GXT: Player Hand~n~~a~ */;
 		
 		case 4:
-			return "TCP_RULE_4T";
+			return "TCP_RULE_4T" /* GXT: Pair Plus Payouts~n~~a~ */;
 		
 		case 5:
-			return "TCP_RULE_5T";
+			return "TCP_RULE_5T" /* GXT: Ante Bonus Payouts~n~~a~ */;
 		
 		case 6:
 			if ((func_384(Local_152.f_18) == 2 || func_384(Local_152.f_18) == 3) || func_419(PLAYER::PLAYER_ID()))
 			{
-				return "TCP_RULE_6Tb";
+				return "TCP_RULE_6Tb" /* GXT: Bet Limits~n~~a~ */;
 			}
 			else
 			{
-				return "TCP_RULE_6Ta";
+				return "TCP_RULE_6Ta" /* GXT: Bet Limits~n~~a~ */;
 			}
 			break;
 	}
@@ -12212,14 +12212,14 @@ void func_211()//Position - 0x153B6
 		{
 			if (Local_109.f_5[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2])
 			{
-				if (!func_98("TCP_D_HAND", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0)))
+				if (!func_98("TCP_D_HAND" /* GXT: The Dealer has ~a~. */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0)))
 				{
-					func_97("TCP_D_HAND", func_101(func_9(&(Local_109.f_389[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*5*/].f_1), 0, 0), 0));
+					func_97("TCP_D_HAND" /* GXT: The Dealer has ~a~. */, func_101(func_9(&(Local_109.f_389[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2 /*5*/].f_1), 0, 0), 0));
 				}
 			}
-			else if (!func_337("TCP_D_HAND_D"))
+			else if (!func_337("TCP_D_HAND_D" /* GXT: The Dealer's cards will be shown once all players have made their decisions. */))
 			{
-				func_158("TCP_D_HAND_D");
+				func_158("TCP_D_HAND_D" /* GXT: The Dealer's cards will be shown once all players have made their decisions. */);
 			}
 			fVar0 = CAM::GET_CAM_FOV(Local_152.f_13);
 			fVar1 = 50f;
@@ -12304,9 +12304,9 @@ void func_211()//Position - 0x153B6
 	{
 		if (BitTest(Local_152.f_22, 4) || BitTest(Local_109.f_20[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2], func_198(Local_151[PLAYER::PLAYER_ID() /*9*/].f_1)))
 		{
-			if (!func_98("TCP_P_HAND", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0)))
+			if (!func_98("TCP_P_HAND" /* GXT: You have ~a~. */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0)))
 			{
-				func_97("TCP_P_HAND", func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0));
+				func_97("TCP_P_HAND" /* GXT: You have ~a~. */, func_101(func_9(&(Local_109.f_410[PLAYER::PLAYER_ID() /*5*/].f_1), 0, 0), 0));
 			}
 		}
 	}
@@ -13379,7 +13379,7 @@ void func_263(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 	{
 		if (Global_23150.f_5609 <= 1)
 		{
-			func_176(Global_23150.f_5609 + 1, "DFLT_MNU_OPT", 0, 1, 0, 0, 0);
+			func_176(Global_23150.f_5609 + 1, "DFLT_MNU_OPT" /* GXT: Exit */, 0, 1, 0, 0, 0);
 			Global_23150.f_6405 = 1;
 		}
 	}
@@ -13482,14 +13482,14 @@ void func_263(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 				if (Global_23150.f_6126)
 				{
 					func_285();
-					func_283((((Global_23147 + fParam5) - 0.00390625f) - func_284("CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128);
+					func_283((((Global_23147 + fParam5) - 0.00390625f) - func_284("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128);
 				}
 				else if (Global_23150.f_6122 > Global_23150.f_5616)
 				{
 					if (Global_23150.f_6125 != 0)
 					{
 						func_285();
-						func_283((((Global_23147 + fParam5) - 0.00390625f) - func_284("CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124);
+						func_283((((Global_23147 + fParam5) - 0.00390625f) - func_284("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124);
 					}
 				}
 			}
@@ -16544,7 +16544,7 @@ int func_320(int iParam0)//Position - 0x1B945
 
 int func_321()//Position - 0x1B97A
 {
-	if (((((((((func_337("TCP_USED") || func_337("CAS_MG_CBAN")) || func_337("CAS_MG_CTIME")) || func_324("CAS_MG_MEMB2", func_325(1))) || func_337("CAS_MG_SUITE2")) || func_337("CAS_MG_NOCHIPS3")) || func_337("CAS_MG_LOWCHIPS3")) || func_337("CAS_MG_NOCHIPS7")) || func_337("CAS_MG_LOWCHIPS7")) || func_337("TCP_NA"))
+	if (((((((((func_337("TCP_USED" /* GXT: This seat is currently in use. */) || func_337("CAS_MG_CBAN" /* GXT: This feature is not available now.  Please come back later. */)) || func_337("CAS_MG_CTIME" /* GXT: This feature is not available now.  Please come back later. */)) || func_324("CAS_MG_MEMB2" /* GXT: A Standard Membership is required to play. Speak to Guest Services ~BLIP_CASINO_CONCIERGE~ to purchase this or press ~INPUT_CONTEXT_SECONDARY~ to buy now for $~1~. */, func_325(1))) || func_337("CAS_MG_SUITE2" /* GXT: A VIP Membership is required to play High Limit. Purchase a Penthouse from www.thediamondcasinoandresort.com to become a VIP member. */)) || func_337("CAS_MG_NOCHIPS3" /* GXT: Chips are required to play Three Card Poker. Speak to the Cashier ~BLIP_CASINO_CHIPS~ to acquire them. */)) || func_337("CAS_MG_LOWCHIPS3" /* GXT: You don't have enough Chips to play Three Card Poker. Speak to the Cashier ~BLIP_CASINO_CHIPS~ to acquire more. */)) || func_337("CAS_MG_NOCHIPS7" /* GXT: Chips are required to play Three Card Poker. Use the Phone Services ~BLIP_CASINO_CONCIERGE~ to acquire them. */)) || func_337("CAS_MG_LOWCHIPS7" /* GXT: You don't have enough Chips to play Three Card Poker. Use the Phone Services ~BLIP_CASINO_CONCIERGE~ to acquire more. */)) || func_337("TCP_NA" /* GXT: This feature is not available for you. */))
 	{
 		return 1;
 	}
@@ -16555,7 +16555,7 @@ void func_322()//Position - 0x1BA15
 {
 	if (!MONEY::NETWORK_CAN_SPEND_MONEY(func_325(0), false, true, false, -1, 0))
 	{
-		func_224("MAITRD_M_D0E", -1);
+		func_224("MAITRD_M_D0E" /* GXT: You do not have enough money to purchase the Casino Membership. */, -1);
 	}
 	else if (func_326(PLAYER::PLAYER_ID()))
 	{

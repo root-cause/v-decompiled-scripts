@@ -1921,11 +1921,11 @@ void func_47(struct<21> Param0, bool bParam1)//Position - 0x207F
 						{
 							if (((!Local_136.f_4 && Local_136.f_5) || (Local_136.f_4 && Local_136.f_6)) && BitTest(Local_156.f_1, Param0.f_0))
 							{
-								func_105("ARMW_A_SIDE", 1);
+								func_105("ARMW_A_SIDE" /* GXT: Join the player for an Arm Wrestle on the opposite side of the table. */, 1);
 							}
 							else
 							{
-								func_105("ARMW_A_SIDE", 0);
+								func_105("ARMW_A_SIDE" /* GXT: Join the player for an Arm Wrestle on the opposite side of the table. */, 0);
 							}
 						}
 					}
@@ -1937,7 +1937,7 @@ void func_47(struct<21> Param0, bool bParam1)//Position - 0x207F
 				}
 				else if (Param0.f_0 == 1)
 				{
-					func_105("ARMW_A_SIDE", 0);
+					func_105("ARMW_A_SIDE" /* GXT: Join the player for an Arm Wrestle on the opposite side of the table. */, 0);
 				}
 			}
 		}
@@ -2241,7 +2241,7 @@ void func_47(struct<21> Param0, bool bParam1)//Position - 0x207F
 		func_105(func_104(Param0, 4), 0);
 		func_105(func_104(Param0, 5), 0);
 		func_105(func_104(Param0, 6), 0);
-		func_105("ARMW_A_SIDE", 0);
+		func_105("ARMW_A_SIDE" /* GXT: Join the player for an Arm Wrestle on the opposite side of the table. */, 0);
 	}
 }
 
@@ -2434,7 +2434,7 @@ void func_51(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 	{
 		if (Global_23150.f_5609 <= 1)
 		{
-			func_78(Global_23150.f_5609 + 1, "DFLT_MNU_OPT", 0, 1, 0, 0, 0);
+			func_78(Global_23150.f_5609 + 1, "DFLT_MNU_OPT" /* GXT: Exit */, 0, 1, 0, 0, 0);
 			Global_23150.f_6405 = 1;
 		}
 	}
@@ -2537,14 +2537,14 @@ void func_51(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 				if (Global_23150.f_6126)
 				{
 					func_72();
-					func_70((((Global_23147 + fParam5) - 0.00390625f) - func_71("CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128);
+					func_70((((Global_23147 + fParam5) - 0.00390625f) - func_71("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128);
 				}
 				else if (Global_23150.f_6122 > Global_23150.f_5616)
 				{
 					if (Global_23150.f_6125 != 0)
 					{
 						func_72();
-						func_70((((Global_23147 + fParam5) - 0.00390625f) - func_71("CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124);
+						func_70((((Global_23147 + fParam5) - 0.00390625f) - func_71("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124);
 					}
 				}
 			}
@@ -5261,7 +5261,7 @@ void func_90(struct<21> Param0)//Position - 0x7322
 	func_34(0, 0);
 	func_97(1, 1, 0, 0, 0);
 	func_96(1, 2, 1, 1, 1);
-	func_95("DART_A_SET");
+	func_95("DART_A_SET" /* GXT: DARTS GAME SETUP */);
 	func_78(0, Local_145[0 /*3*/], 0, 1, 0, 0, 0);
 	StringCopy(&Var0, "DART_A_S", 16);
 	StringIntConCat(&Var0, iLocal_138, 16);
@@ -5282,10 +5282,10 @@ void func_90(struct<21> Param0)//Position - 0x7322
 	{
 		iVar1 = 202;
 	}
-	func_94(iVar1, "DART_A_MENU_C", -1, 0);
+	func_94(iVar1, "DART_A_MENU_C" /* GXT: Cancel */, -1, 0);
 	func_93(0, 1, 0, 0, 0);
 	func_92(iLocal_93, 1, 1);
-	func_91("DART_A_GNT", 0, 0);
+	func_91("DART_A_GNT" /* GXT: Select how many individual games to play. You can play Darts alone or wait for another player to join. */, 0, 0);
 }
 
 void func_91(char* sParam0, int iParam1, int iParam2)//Position - 0x73E5
@@ -5457,12 +5457,12 @@ void func_98()//Position - 0x77C0
 	
 	if (!iLocal_95)
 	{
-		AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
+		AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 		iLocal_95 = 1;
 	}
 	if (PAD::IS_CONTROL_JUST_PRESSED(2, 201))
 	{
-		AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
+		AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 	}
 	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 	{
@@ -5606,22 +5606,22 @@ var func_104(struct<13> Param0, var uParam1, var uParam2, var uParam3, var uPara
 			case 5:
 				if (Param0.f_0 == 0)
 				{
-					return "DART_A_LWAITPC";
+					return "DART_A_LWAITPC" /* GXT: Wait for your opponent to start Darts. Press ~INPUT_SCRIPT_RRIGHT~ to cancel. */;
 				}
 				else
 				{
-					return "ARMW_A_LWAITPC";
+					return "ARMW_A_LWAITPC" /* GXT: Wait for your opponent to start Arm Wrestling. Press ~INPUT_SCRIPT_RRIGHT~ to cancel. */;
 				}
 				break;
 			
 			case 2:
 				if (Param0.f_0 == 0)
 				{
-					return "DART_A_TWO";
+					return "DART_A_TWO" /* GXT: Play Darts with two players. */;
 				}
 				else
 				{
-					return "ARMW_A_TWOPC";
+					return "ARMW_A_TWOPC" /* GXT: Press ~INPUT_FRONTEND_ACCEPT~ to play Arm Wrestling. Press ~INPUT_SCRIPT_RRIGHT~ to cancel. */;
 				}
 				break;
 			
@@ -5632,7 +5632,7 @@ var func_104(struct<13> Param0, var uParam1, var uParam2, var uParam3, var uPara
 				}
 				else
 				{
-					return "ARMW_A_PWAITPC";
+					return "ARMW_A_PWAITPC" /* GXT: Wait for an opponent to start Arm Wrestling. Press ~INPUT_SCRIPT_RRIGHT~ to cancel. */;
 				}
 				break;
 			}
@@ -6143,14 +6143,14 @@ void func_127(var uParam0, int iParam1)//Position - 0x840F
 	Var0.f_9 = 0;
 	Var0.f_10 = 1;
 	Var0.f_11 = 2;
-	Var0.f_12[0] = "DART_A_PROG";
-	Var0.f_12[1] = "DART_A_ONE";
-	Var0.f_12[2] = "DART_A_TWO";
-	Var0.f_12[3] = "DART_A_JOIN";
+	Var0.f_12[0] = "DART_A_PROG" /* GXT: Unavailable. Darts is already in progress. */;
+	Var0.f_12[1] = "DART_A_ONE" /* GXT: Play Darts */;
+	Var0.f_12[2] = "DART_A_TWO" /* GXT: Play Darts with two players. */;
+	Var0.f_12[3] = "DART_A_JOIN" /* GXT: A player is available to play Darts. Go to the dartboard to play. */;
 	Var0.f_12[4] = "";
-	Var0.f_12[5] = "DART_A_LWAIT";
-	Var0.f_12[6] = "DART_A_PREP";
-	Var0.f_12[7] = "DART_A_MANY";
+	Var0.f_12[5] = "DART_A_LWAIT" /* GXT: Wait for your opponent to start Darts. Press ~INPUT_FRONTEND_CANCEL~ to cancel. */;
+	Var0.f_12[6] = "DART_A_PREP" /* GXT: Press ~INPUT_CONTEXT~ to play Darts. */;
+	Var0.f_12[7] = "DART_A_MANY" /* GXT: Too many players trying to play Darts. */;
 	*(uParam0[0 /*21*/]) = { Var0 };
 	Var0.f_0 = 1;
 	Var0.f_1 = "AM_Armwrestling_Apartment";
@@ -6160,14 +6160,14 @@ void func_127(var uParam0, int iParam1)//Position - 0x840F
 	Var0.f_9 = 0;
 	Var0.f_10 = 2;
 	Var0.f_11 = 2;
-	Var0.f_12[0] = "ARMW_A_PROG";
+	Var0.f_12[0] = "ARMW_A_PROG" /* GXT: Unavailable. Arm Wrestling is already in progress. */;
 	Var0.f_12[1] = "";
-	Var0.f_12[2] = "ARMW_A_TWO";
-	Var0.f_12[3] = "ARMW_A_JOIN";
-	Var0.f_12[4] = "ARMW_A_PWAIT";
-	Var0.f_12[5] = "ARMW_A_LWAIT";
-	Var0.f_12[6] = "ARMW_A_PREP";
-	Var0.f_12[7] = "ARMW_A_MANY";
+	Var0.f_12[2] = "ARMW_A_TWO" /* GXT: Press ~INPUT_FRONTEND_ACCEPT~ to play Arm Wrestling. Press ~INPUT_FRONTEND_CANCEL~ to cancel. */;
+	Var0.f_12[3] = "ARMW_A_JOIN" /* GXT: A player is waiting to play Arm Wrestling. Go to the wrestling table to play. */;
+	Var0.f_12[4] = "ARMW_A_PWAIT" /* GXT: Wait for an opponent to start Arm Wrestling. Press ~INPUT_FRONTEND_CANCEL~ to cancel. */;
+	Var0.f_12[5] = "ARMW_A_LWAIT" /* GXT: Wait for your opponent to start Arm Wrestling. Press ~INPUT_FRONTEND_CANCEL~ to cancel. */;
+	Var0.f_12[6] = "ARMW_A_PREP" /* GXT: Press ~INPUT_CONTEXT~ to play Arm Wrestling. */;
+	Var0.f_12[7] = "ARMW_A_MANY" /* GXT: Too many players trying to play Arm Wrestling. */;
 	*(uParam0[1 /*21*/]) = { Var0 };
 }
 
@@ -6271,7 +6271,7 @@ void func_131(var uParam0, var uParam1)//Position - 0x86C8
 
 void func_132(var uParam0)//Position - 0x8700
 {
-	(*uParam0)[0 /*3*/] = "DART_A_GN";
+	(*uParam0)[0 /*3*/] = "DART_A_GN" /* GXT: Number Of Games */;
 	(uParam0[0 /*3*/])->f_1 = 5;
 	(uParam0[0 /*3*/])->f_2 = 0;
 }

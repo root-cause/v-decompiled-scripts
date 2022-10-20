@@ -1284,10 +1284,10 @@ void func_42()//Position - 0x14AF
 					{
 						if (Global_113386.f_7688[Global_43599 /*15*/] == joaat("CALL_ARM2_UNLOCK") || Global_113386.f_7688[Global_43599 /*15*/] == 742578279)
 						{
-							switch (func_52("AM_H_FCAL1"))
+							switch (func_52("AM_H_FCAL1" /* GXT: Press ~INPUT_CELLPHONE_SELECT~ to answer Simeon's call.~n~Press ~INPUT_CELLPHONE_CANCEL~ to hang up. */))
 							{
 								case 2:
-									func_50("AM_H_FCAL1", 2, 0, 1000, 7500, 7, 0, 0, 0);
+									func_50("AM_H_FCAL1" /* GXT: Press ~INPUT_CELLPHONE_SELECT~ to answer Simeon's call.~n~Press ~INPUT_CELLPHONE_CANCEL~ to hang up. */, 2, 0, 1000, 7500, 7, 0, 0, 0);
 									break;
 								
 								case 1:
@@ -1316,16 +1316,16 @@ void func_42()//Position - 0x14AF
 							{
 								if (func_145())
 								{
-									if (func_48("AM_H_FCAL1"))
+									if (func_48("AM_H_FCAL1" /* GXT: Press ~INPUT_CELLPHONE_SELECT~ to answer Simeon's call.~n~Press ~INPUT_CELLPHONE_CANCEL~ to hang up. */))
 									{
-										func_44("AM_H_FCAL1", 1);
+										func_44("AM_H_FCAL1" /* GXT: Press ~INPUT_CELLPHONE_SELECT~ to answer Simeon's call.~n~Press ~INPUT_CELLPHONE_CANCEL~ to hang up. */, 1);
 									}
-									if (func_43("AM_H_FCAL1"))
+									if (func_43("AM_H_FCAL1" /* GXT: Press ~INPUT_CELLPHONE_SELECT~ to answer Simeon's call.~n~Press ~INPUT_CELLPHONE_CANCEL~ to hang up. */))
 									{
 										HUD::CLEAR_HELP(false);
 									}
 									func_49(2);
-									func_50("AM_H_FCAL2", 2, 0, 1000, 7500, 7, 0, 0, 0);
+									func_50("AM_H_FCAL2" /* GXT: Press ~INPUT_CELLPHONE_DOWN~ to skip lines in the phone call. Press ~INPUT_CELLPHONE_CANCEL~ to end the call early. */, 2, 0, 1000, 7500, 7, 0, 0, 0);
 									iLocal_47 = 1;
 								}
 							}
@@ -1336,18 +1336,18 @@ void func_42()//Position - 0x14AF
 		}
 		else
 		{
-			if (func_52("AM_H_FCAL2") == 2)
+			if (func_52("AM_H_FCAL2" /* GXT: Press ~INPUT_CELLPHONE_DOWN~ to skip lines in the phone call. Press ~INPUT_CELLPHONE_CANCEL~ to end the call early. */) == 2)
 			{
 				iLocal_47 = 0;
 			}
-			else if (func_52("AM_H_FCAL2") == 1)
+			else if (func_52("AM_H_FCAL2" /* GXT: Press ~INPUT_CELLPHONE_DOWN~ to skip lines in the phone call. Press ~INPUT_CELLPHONE_CANCEL~ to end the call early. */) == 1)
 			{
 				func_49(3);
 			}
 			if (!func_145())
 			{
-				func_44("AM_H_FCAL2", 1);
-				if (func_43("AM_H_FCAL2"))
+				func_44("AM_H_FCAL2" /* GXT: Press ~INPUT_CELLPHONE_DOWN~ to skip lines in the phone call. Press ~INPUT_CELLPHONE_CANCEL~ to end the call early. */, 1);
+				if (func_43("AM_H_FCAL2" /* GXT: Press ~INPUT_CELLPHONE_DOWN~ to skip lines in the phone call. Press ~INPUT_CELLPHONE_CANCEL~ to end the call early. */))
 				{
 					HUD::CLEAR_HELP(false);
 				}
@@ -1358,19 +1358,19 @@ void func_42()//Position - 0x14AF
 		{
 			func_49(3);
 			func_49(2);
-			if (func_48("AM_H_FCAL1"))
+			if (func_48("AM_H_FCAL1" /* GXT: Press ~INPUT_CELLPHONE_SELECT~ to answer Simeon's call.~n~Press ~INPUT_CELLPHONE_CANCEL~ to hang up. */))
 			{
-				func_44("AM_H_FCAL1", 1);
+				func_44("AM_H_FCAL1" /* GXT: Press ~INPUT_CELLPHONE_SELECT~ to answer Simeon's call.~n~Press ~INPUT_CELLPHONE_CANCEL~ to hang up. */, 1);
 			}
-			if (func_43("AM_H_FCAL1"))
+			if (func_43("AM_H_FCAL1" /* GXT: Press ~INPUT_CELLPHONE_SELECT~ to answer Simeon's call.~n~Press ~INPUT_CELLPHONE_CANCEL~ to hang up. */))
 			{
 				HUD::CLEAR_HELP(false);
 			}
-			if (func_48("AM_H_FCAL2"))
+			if (func_48("AM_H_FCAL2" /* GXT: Press ~INPUT_CELLPHONE_DOWN~ to skip lines in the phone call. Press ~INPUT_CELLPHONE_CANCEL~ to end the call early. */))
 			{
-				func_44("AM_H_FCAL2", 1);
+				func_44("AM_H_FCAL2" /* GXT: Press ~INPUT_CELLPHONE_DOWN~ to skip lines in the phone call. Press ~INPUT_CELLPHONE_CANCEL~ to end the call early. */, 1);
 			}
-			if (func_43("AM_H_FCAL2"))
+			if (func_43("AM_H_FCAL2" /* GXT: Press ~INPUT_CELLPHONE_DOWN~ to skip lines in the phone call. Press ~INPUT_CELLPHONE_CANCEL~ to end the call early. */))
 			{
 				HUD::CLEAR_HELP(false);
 			}
@@ -1827,12 +1827,12 @@ void func_62()//Position - 0x20BD
 	{
 		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("");
 		StringCopy(&cVar1, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_8746[1 /*6*/])), 64);
-		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253");
+		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253" /* GXT: New Contact */);
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, sVar2, &cVar1);
 	}
 	else
 	{
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_255");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_255" /* GXT: New Contact: ~n~~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_8746[1 /*6*/]));
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, "", 0);
 	}
@@ -2000,287 +2000,287 @@ void func_72(int iParam0, char* sParam1)//Position - 0x23F7
 		switch (iParam0)
 		{
 			case joaat("TEXT_AGENCY_1_UNLOCK"):
-				StringCopy(sParam1, "AH_1_U", 16);
+				StringCopy(sParam1, "AH_1_U" /* GXT: Michael, your Bureau friends want to discuss something with us. I told them to meet at the garment factory. Get over there as soon as you can. */, 16);
 				break;
 			
 			case joaat("TEXT_AGENCY_2_UNLOCK"):
-				StringCopy(sParam1, "AH_2_U", 16);
+				StringCopy(sParam1, "AH_2_U" /* GXT: I been looking into that Chip Peterson thing, I might have something. */, 16);
 				break;
 			
 			case joaat("TEXT_AGENCY_P_UNLOCK"):
-				StringCopy(sParam1, "AH_P_U", 16);
+				StringCopy(sParam1, "AH_P_U" /* GXT: We need an LSFD fire engine. Fake an emergency call or find one at a station. Whatever works. */, 16);
 				break;
 			
 			case 639116137:
-				StringCopy(sParam1, "AH_GETA_R", 16);
+				StringCopy(sParam1, "AH_GETA_R" /* GXT: Don't forget to set up a getaway vehicle. Get hold of something inconspicuous, park it someowhere secluded, then call with the location. */, 16);
 				break;
 			
 			case joaat("TEXT_AGENCY_3B_UNLOCK"):
-				StringCopy(sParam1, "AH3B_UNLK", 16);
+				StringCopy(sParam1, "AH3B_UNLK" /* GXT: We're on - L */, 16);
 				break;
 			
 			case 1635608802:
-				StringCopy(sParam1, "ASS1_MIS", 16);
+				StringCopy(sParam1, "ASS1_MIS" /* GXT: I've got an opportunity for you. Meet me at Del Perro pier. */, 16);
 				break;
 			
 			case joaat("TEXT_ASS_FIN_A"):
-				StringCopy(sParam1, "ASS_FINA", 16);
+				StringCopy(sParam1, "ASS_FINA" /* GXT: You did what you had to do.  I understand that.  So let's move on, business as usual.  We never mention this again. */, 16);
 				break;
 			
 			case joaat("TEXT_ASS_FIN_B"):
-				StringCopy(sParam1, "ASS_FINB", 16);
+				StringCopy(sParam1, "ASS_FINB" /* GXT: I know what you did.  I can't say I'm happy but it's done.  So let's move on, business as usual.  We never mention this again.  Lester. */, 16);
 				break;
 			
 			case joaat("TEXT_ARM2_END"):
-				StringCopy(sParam1, "ARM2_END", 16);
+				StringCopy(sParam1, "ARM2_END" /* GXT: Stretch is getting out homie! Strizzzzzzetch! His bid's almost done. We goin holla at u dawg. */, 16);
 				break;
 			
 			case 866793964:
-				StringCopy(sParam1, "ARM3_END2", 16);
+				StringCopy(sParam1, "ARM3_END2" /* GXT: Eh, u moody motherfuka. Im givin u tht bagger we boosted. left it at yr auntz crib ;P */, 16);
 				break;
 			
 			case 410510653:
-				StringCopy(sParam1, "ARM3_END1", 16);
+				StringCopy(sParam1, "ARM3_END1" /* GXT: You were like a son to me. Employee of the month! Does that mean nothing to you? You're fucked my boy! */, 16);
 				break;
 			
 			case joaat("TEXT_CAR1_UNLOCK"):
-				StringCopy(sParam1, "CAR1_ALL", 16);
+				StringCopy(sParam1, "CAR1_ALL" /* GXT: Confirming your appointment with Devin Weston at his new development on Power St in Alta.  Please be prompt, and arrive ready to work. */, 16);
 				break;
 			
 			case joaat("TEXT_CARS2_DONE"):
-				StringCopy(sParam1, "CAR2_DONE", 16);
+				StringCopy(sParam1, "CAR2_DONE" /* GXT: I did you a solid, kid. Martin Madrazo needs help w sumthin, he wanted you, I got Trevor on board.  Don't mention it. we gotta go up to his ranch off Senora Rd. */, 16);
 				break;
 			
 			case joaat("TEXT_CAR3_F_REM"):
-				StringCopy(sParam1, "CAR3_F_REM", 16);
+				StringCopy(sParam1, "CAR3_F_REM" /* GXT: Mr Westin would like to remind you that the JB700 at Richard's Majestic is still outstanding.  He would be grateful if you could secure it as soon as possible. */, 16);
 				break;
 			
 			case joaat("TEXT_CAR3_MT_REM"):
-				StringCopy(sParam1, "CAR3_MT_REM", 16);
+				StringCopy(sParam1, "CAR3_MT_REM" /* GXT: Mr Westin is concerned that Mr Clinton still has not secured the JB700 from Richards Majestic.   You will receive payment as soon as we have all the cars. */, 16);
 				break;
 			
 			case 1761525528:
-				StringCopy(sParam1, "MIC2_MIS", 16);
+				StringCopy(sParam1, "MIC2_MIS" /* GXT: Franklin needs to speak to Michael. I don't know why, but I thought you might have some information on his whereabouts. Meet him at his old place on Forum Dr. */, 16);
 				break;
 			
 			case joaat("TEXT_CHOP_UNLOCK"):
-				StringCopy(sParam1, "CHOP_UNLOCK", 16);
+				StringCopy(sParam1, "CHOP_UNLOCK" /* GXT: Chop got to stay round ur crib 4 a time. Trill? */, 16);
 				break;
 			
 			case 152157591:
-				StringCopy(sParam1, "CITY_RON", 16);
+				StringCopy(sParam1, "CITY_RON" /* GXT: Some Chinese folks stopped by the trailer today. They seemed a little angry. Did you do something to upset them? Ron */, 16);
 				break;
 			
 			case joaat("TEXT_CREW_CHEF_UNLOCK"):
-				StringCopy(sParam1, "CHEF_U", 16);
+				StringCopy(sParam1, "CHEF_U" /* GXT: Boss, I know we ain't cooking, but since I helped when the Aztecas attacked the lab, I thought you might think of me if u need a xtra gun on a job or sumthing?  - Chef */, 16);
 				break;
 			
 			case joaat("TEXT_DOCKS_F_SHOOT"):
-				StringCopy(sParam1, "DOCKS1_F_SHT", 16);
+				StringCopy(sParam1, "DOCKS1_F_SHT" /* GXT: I don't know what Michael's been teaching u but this job I got planned u gotta no how 2 shoot. get ur ass to an Ammunation shooting range */, 16);
 				break;
 			
 			case joaat("TEXT_DOCKS_P1_UNLOCK"):
-				StringCopy(sParam1, "DCKP1_U", 16);
+				StringCopy(sParam1, "DCKP1_U" /* GXT: I seen a sub, Trevor. Down at the docks on a ship called Daisy-Lee. U cld like snap the ropes somehow or maybe they is some switch to drop it. W4de \m/ */, 16);
 				break;
 			
 			case joaat("TEXT_DOCKS_P2B_UNLOCK"):
-				StringCopy(sParam1, "DCKP2B_U", 16);
+				StringCopy(sParam1, "DCKP2B_U" /* GXT: Only place to get the kind of chopper you need is Fort Zancudo, boss. Watch out for other helis in the area. Might be easier if you take em out first. W4de */, 16);
 				break;
 			
 			case -549935988:
-				StringCopy(sParam1, "DCKP2B_R", 16);
+				StringCopy(sParam1, "DCKP2B_R" /* GXT: Boss, you asked me to remind you about getting that chopper from Fort Zancudo. I know you haven't forgotten have you? */, 16);
 				break;
 			
 			case 1759805585:
-				StringCopy(sParam1, "DOCKS1_M_FLY", 16);
+				StringCopy(sParam1, "DOCKS1_M_FLY" /* GXT: Mike. We both no ur flying aint so gud, so get some air time at the flight scool before we mov on this or ill b angree. */, 16);
 				break;
 			
 			case joaat("TEXT_DOCKS_2_MF_UNLOCK"):
-				StringCopy(sParam1, "DCK2_U", 16);
+				StringCopy(sParam1, "DCK2_U" /* GXT: Lets do this ladeez. The sub is in position. We have everything we need. Meet at my Vespucci Beech holeyday homm */, 16);
 				break;
 			
 			case joaat("TEXT_EXILE2_UNLOCK"):
-				StringCopy(sParam1, "EXIL2_U", 16);
+				StringCopy(sParam1, "EXIL2_U" /* GXT: Eh T, theres some hick type dudes round here asking questions about you. I'm looking into it. */, 16);
 				break;
 			
 			case joaat("TEXT_EXILE2_OSCAR"):
-				StringCopy(sParam1, "EXIL2_OSC", 16);
+				StringCopy(sParam1, "EXIL2_OSC" /* GXT: What's this about you beefing with Martin Madrazo, If he connects us we're finished. Watch out, Okay? */, 16);
 				break;
 			
 			case -1293573249:
-				StringCopy(sParam1, "RBH_PAT", 16);
+				StringCopy(sParam1, "RBH_PAT" /* GXT: I spose u shld know I hv feelings 4 Patricha.  we will deal w Mdrazzo 1 way or n thr!  r luv is the butiful flowr that grws out th shit! */, 16);
 				break;
 			
 			case joaat("TEXT_EXILE_WADE_CHINESE"):
-				StringCopy(sParam1, "EXIL_WAD", 16);
+				StringCopy(sParam1, "EXIL_WAD" /* GXT: Trevor, some of Mr. Cheng's people came by your place. They seemed a whole lot tougher than the guys you met at the inn, and they're eager to talk to you... */, 16);
 				break;
 			
 			case joaat("TEXT_EXILE_HUNTER_PIE"):
-				StringCopy(sParam1, "EXL_HUNT_PIE", 16);
+				StringCopy(sParam1, "EXL_HUNT_PIE" /* GXT: I left a pie at your trailer with Patricia. Good to see you've settled down with a lovely woman. */, 16);
 				break;
 			
 			case 981904836:
-				StringCopy(sParam1, "EXL_JIM_MCAR", 16);
+				StringCopy(sParam1, "EXL_JIM_MCAR" /* GXT: I dropped ur car back at the house. even with my improvements, it's still a old man ride :(  Jizz don't get down like dat, but thank me later, and why r there some beast hispanic dudes outside tha crib? */, 16);
 				break;
 			
 			case joaat("TEXT_FAMILY1_END"):
-				StringCopy(sParam1, "FAM1_END", 16);
+				StringCopy(sParam1, "FAM1_END" /* GXT: Yo F-dog! Ive added you on Lifeinvader accept my request and we can hang! hit me up anytime bro... ANYTIME and we goin chop it. Peace - Jizzle */, 16);
 				break;
 			
 			case -1608680660:
-				StringCopy(sParam1, "FAM3_INIT", 16);
+				StringCopy(sParam1, "FAM3_INIT" /* GXT: I'm trying to locate that equipment, it's gonna take some time before we're ready to go jewelry shopping, so  spend your last few moments of retirement with your family. */, 16);
 				break;
 			
 			case joaat("TEXT_FAMILY5_END"):
-				StringCopy(sParam1, "FAM5_END", 16);
+				StringCopy(sParam1, "FAM5_END" /* GXT: I got no wheels, pop. Itz 2 much to deal with as well as moving out so I took urz until im on my feet. ill bring it bck when im all set up - J dog */, 16);
 				break;
 			
 			case joaat("TEXT_FIB4I_UNLOCK"):
-				StringCopy(sParam1, "FBI4I_U", 16);
+				StringCopy(sParam1, "FBI4I_U" /* GXT: I need you all at the lot in El Burro Heights for a face to face. Don't be late. */, 16);
 				break;
 			
 			case -655205392:
-				StringCopy(sParam1, "FB4_RM_M", 16);
+				StringCopy(sParam1, "FB4_RM_M" /* GXT: Mike, remember we still need to set up a getaway car. Find one, take it somewhere secluded, then call to say where it is. */, 16);
 				break;
 			
 			case 1266526796:
-				StringCopy(sParam1, "FB4_RM_FT", 16);
+				StringCopy(sParam1, "FB4_RM_FT" /* GXT: Guys, remember we still need to set up a getaway car. Find one, leave it somewhere secluded, then call the others to say where it is. */, 16);
 				break;
 			
 			case joaat("TEXT_FIB4_M_UNLOCK"):
-				StringCopy(sParam1, "FBI4_UM", 16);
+				StringCopy(sParam1, "FBI4_UM" /* GXT: Meet us at Ladera Heights. The job is ready to go. - Agent Haines */, 16);
 				break;
 			
 			case joaat("TEXT_FIB4_FT_UNLOCK"):
-				StringCopy(sParam1, "FBI4_UFT", 16);
+				StringCopy(sParam1, "FBI4_UFT" /* GXT: T, F we're fully prepped. Get tooled up and meet at the depot. */, 16);
 				break;
 			
 			case joaat("TEXT_FIB4_F_ASS1"):
-				StringCopy(sParam1, "FBI4_ASS", 16);
+				StringCopy(sParam1, "FBI4_ASS" /* GXT: Franklin, I need your help with something asap! Come meet me before you move on that job for the FIB. */, 16);
 				break;
 			
 			case joaat("TEXT_FIB4_MT_ASS1"):
-				StringCopy(sParam1, "FBI4_MTASS", 16);
+				StringCopy(sParam1, "FBI4_MTASS" /* GXT: M,T we gotta stall on this FIB job. Don't tell him I told you, but I got something to do for Lester before we can move. */, 16);
 				break;
 			
 			case joaat("TEXT_FINH_PA_UNLOCK"):
-				StringCopy(sParam1, "FIH_PA_U", 16);
+				StringCopy(sParam1, "FIH_PA_U" /* GXT: There's an LSPD van holding spike strips in the rear carpark at the South LS police station. I've got the hacker looking for some Gauntlet muscle cars that we can modify - expect an email about that soon. */, 16);
 				break;
 			
 			case joaat("TEXT_FINH_PB_UNLOCK"):
-				StringCopy(sParam1, "FIH_PB_U", 16);
+				StringCopy(sParam1, "FIH_PB_U" /* GXT: Ok, there's a tunnel bore machine at a depot in East LS. It's out in the yard, there are guys working there around the clock, and guards as well. Try and get in and out without drawing attention to yourself. lol */, 16);
 				break;
 			
 			case joaat("TEXT_FINH_PD_UNLOCK"):
-				StringCopy(sParam1, "FIH_PD_U", 16);
+				StringCopy(sParam1, "FIH_PD_U" /* GXT: This train... any locomotive and flatbed car will do. I've sourced a sky crane to do the pickup, just divert a train at Davis Quartz, and call one of the others to fly in. Deal with any station workers as you see fit. */, 16);
 				break;
 			
 			case -1216150262:
-				StringCopy(sParam1, "FIH_GETA_R", 16);
+				StringCopy(sParam1, "FIH_GETA_R" /* GXT: You haven't forgotten the getaway vehicle have you? Give me a call when you've found something that might work. */, 16);
 				break;
 			
 			case joaat("TEXT_FINH_KILLM"):
-				StringCopy(sParam1, "FIH_KILLM", 16);
+				StringCopy(sParam1, "FIH_KILLM" /* GXT: Michael is dead. For real this time. I hope you two weren't involved. I've transfered his cut of the job to his family... it felt like the right thing to do - L */, 16);
 				break;
 			
 			case joaat("TEXT_FINH_KILLT"):
-				StringCopy(sParam1, "FIH_KILLT", 16);
+				StringCopy(sParam1, "FIH_KILLT" /* GXT: Trevor's fallen off the grid. I don't know what's going on, and I don't want to. I split his take from that last job between you two, hold onto it for him. */, 16);
 				break;
 			
 			case joaat("TEXT_FORSALESIGNS_DONE"):
-				StringCopy(sParam1, "FORSALE_TXT", 16);
+				StringCopy(sParam1, "FORSALE_TXT" /* GXT: I'm seeing so few Lenny Avery signs around town that anyone might think he's got out of the realty business! come see me at the billingsgate motel in east LS */, 16);
 				break;
 			
 			case joaat("TEXT_FRAN0_END"):
-				StringCopy(sParam1, "FRAN0_END", 16);
+				StringCopy(sParam1, "FRAN0_END" /* GXT: Franklin, got a new phone after u thru last 1 away! eh listen, Stretch is comin out soon! holla! */, 16);
 				break;
 			
 			case joaat("TEXT_FRAN1_END"):
-				StringCopy(sParam1, "FRA1_END", 16);
+				StringCopy(sParam1, "FRA1_END" /* GXT: eh loco, u scare me but u kinda cool. we should chop it up sum time. wit Franklin or witout him, whatever dawg */, 16);
 				break;
 			
 			case joaat("TEXT_JEWEL_P1A_UNLOCK"):
-				StringCopy(sParam1, "JP1A_U", 16);
+				StringCopy(sParam1, "JP1A_U" /* GXT: Bugstars Pest Control have some vans at their warehouse in the Port of Los Santos. There's security in the port, so go in quiet around the back, or hit em hard and fast. */, 16);
 				break;
 			
 			case joaat("TEXT_JEWEL_FRANK_PREP"):
-				StringCopy(sParam1, "JH1A_FRNK", 16);
+				StringCopy(sParam1, "JH1A_FRNK" /* GXT: Hey kid, the prep work is underway for this job, just one loose end to tie up. Be ready to move. */, 16);
 				break;
 			
 			case joaat("TEXT_JEWEL_P2A_UNLOCK"):
-				StringCopy(sParam1, "JP2A_U", 16);
+				StringCopy(sParam1, "JP2A_U" /* GXT: Knockout gas shipments being transported to LSX every 2 hrs. Intercept and steal the van, or blow it up and grab the gas. */, 16);
 				break;
 			
 			case joaat("TEXT_JEWEL_P1B_UNLOCK"):
-				StringCopy(sParam1, "JP1B_U", 16);
+				StringCopy(sParam1, "JP1B_U" /* GXT: I'm on the LSPD's secure communication channel. They've got a tactical team going toward Palomino Ave. Intercept it, steal the truck, and bring it back to my factory. */, 16);
 				break;
 			
 			case joaat("TEXT_JEWEL_P1B_HOSTAGE_END"):
-				StringCopy(sParam1, "JP1B_HOST", 16);
+				StringCopy(sParam1, "JP1B_HOST" /* GXT: You missed your chance to intercept the tactical team. I'll let you know when there's another opportunity. Try not to miss this one. */, 16);
 				break;
 			
 			case joaat("TEXT_JEWEL_2_DONE"):
-				StringCopy(sParam1, "JH2_P", 16);
+				StringCopy(sParam1, "JH2_P" /* GXT: Meet me at my place. Your cut will be in your account as soon as Lester's done some creative accounting. */, 16);
 				break;
 			
 			case joaat("TEXT_JOSH_1"):
-				StringCopy(sParam1, "JOSH1_TXT", 16);
+				StringCopy(sParam1, "JOSH1_TXT" /* GXT: BTW buddy, Avery has a website with all his real estate listings around the city, you might find it useful - ~b~<u>www.lennyavery-realty.com</u>~w~ */, 16);
 				break;
 			
 			case -474700046:
-				StringCopy(sParam1, "MAR1_U", 16);
+				StringCopy(sParam1, "MAR1_U" /* GXT: Michael, my old friend, we have business to discuss. Come to La Fuente Blanca ranch. MM */, 16);
 				break;
 			
 			case joaat("TEXT_MARTIN_THREAT"):
-				StringCopy(sParam1, "MAR_CASH1", 16);
+				StringCopy(sParam1, "MAR_CASH1" /* GXT: Michael. My money - where is it? You do not want me to visit you again... next time will be so much worse. MM */, 16);
 				break;
 			
 			case -1235391473:
-				StringCopy(sParam1, "MAR_CASH2", 16);
+				StringCopy(sParam1, "MAR_CASH2" /* GXT: Finally, I have received your payment. The house will soon be restored to its former condition. I am pleased you are a man of your word. MM */, 16);
 				break;
 			
 			case 251204761:
-				StringCopy(sParam1, "MAR_TREV", 16);
+				StringCopy(sParam1, "MAR_TREV" /* GXT: Michael De Santa has recommended you for a job. It would be prudent to come to Rancho La Fuente Blanca off Senora Road. MM */, 16);
 				break;
 			
 			case joaat("TEXT_ME_AMANDA_FAIL"):
-				StringCopy(sParam1, "ME_A_FAIL", 16);
+				StringCopy(sParam1, "ME_A_FAIL" /* GXT: I was in trouble with the cops, and I needed help. THANKS FOR BEING SO AVAILABLE. Lawyer's fee coming out your account. */, 16);
 				break;
 			
 			case 809731919:
-				StringCopy(sParam1, "ME_A_FAIL2", 16);
+				StringCopy(sParam1, "ME_A_FAIL2" /* GXT: There wasn't enough in your account to pay a lawyer. You're lucky I'm a resourceful woman! THANKS FOR NOTHING! */, 16);
 				break;
 			
 			case joaat("TEXT_ME_JIMMY_FAIL"):
-				StringCopy(sParam1, "ME_J_FAIL", 16);
+				StringCopy(sParam1, "ME_J_FAIL" /* GXT: Thanks a lot dad. My ass hurts and ur accounts four figures lighter. FU! */, 16);
 				break;
 			
 			case joaat("TEXT_ME_TRACEY_FAIL"):
-				StringCopy(sParam1, "ME_T_FAIL", 16);
+				StringCopy(sParam1, "ME_T_FAIL" /* GXT: I had to pay sum dudes to beat that dude. Thank god I still have your Maze deets. Bad dad! */, 16);
 				break;
 			
 			case -1589024007:
-				StringCopy(sParam1, "MIC4_M", 16);
+				StringCopy(sParam1, "MIC4_M" /* GXT: A messenger brought the invites to the premier around? Tha girlz are freakin! Pretty cool old man. go pick up a tux and Ill meet u on Portola Drive. We goin get our swag on! */, 16);
 				break;
 			
 			case -658009473:
-				StringCopy(sParam1, "MIC4_F", 16);
+				StringCopy(sParam1, "MIC4_F" /* GXT: F-Dog – so my dad's not a like complete asshole. I'm going to the premiere of his movie!! Church, bro! Gotta meet him at Ponsonbys so he can get a tux, then next stop's the red carpet! #swag */, 16);
 				break;
 			
 			case joaat("TEXT_PILOTS_UNLOCK"):
-				StringCopy(sParam1, "PLTSC_U", 16);
+				StringCopy(sParam1, "PLTSC_U" /* GXT: I just heard a radio advert about the flying school its in Los Santos not saying you need to learn new things just saying you might like it */, 16);
 				break;
 			
 			case joaat("TEXT_RBH_UNLOCK"):
-				StringCopy(sParam1, "RBH_U", 16);
+				StringCopy(sParam1, "RBH_U" /* GXT: We might be ready to move on this thing. Meet me up in the lab. */, 16);
 				break;
 			
 			case joaat("TEXT_RBH_PREP_UNLOCK"):
-				StringCopy(sParam1, "RBH_P_U", 16);
+				StringCopy(sParam1, "RBH_P_U" /* GXT: I've made most the arrangements for the Paleto Score, all we need is that military hardware, so move on the convoy when u can. */, 16);
 				break;
 			
 			case joaat("TEXT_SRANGE_UNLOCK"):
-				StringCopy(sParam1, "SHOOT_U", 16);
+				StringCopy(sParam1, "SHOOT_U" /* GXT: Franklin. You gotta sharpen up on your shooting. Put some time in at the range if you can. */, 16);
 				break;
 			
 			case joaat("TEXT_SEXT"):
@@ -2340,111 +2340,111 @@ void func_72(int iParam0, char* sParam1)//Position - 0x23F7
 				break;
 			
 			case 483349085:
-				StringCopy(sParam1, "BARR3_U", 16);
+				StringCopy(sParam1, "BARR3_U" /* GXT: Thanks for joining the fight! Here are the deets for the pick-ups. Move fast and keep an eye out for cops...henchmen of the totalitarian regime! */, 16);
 				break;
 			
 			case 1800466587:
-				StringCopy(sParam1, "BARR4_U", 16);
+				StringCopy(sParam1, "BARR4_U" /* GXT: Smoke-in! The people are amassing soon at City Hall. Fight the power! */, 16);
 				break;
 			
 			case 2106164812:
-				StringCopy(sParam1, "EPSI6_U", 16);
+				StringCopy(sParam1, "EPSI6_U" /* GXT: Hey Zondar, we need your help retrieving one of our sacred vessels - head out towards the coast near the Military Base. A fellow acolyte will meet you there. */, 16);
 				break;
 			
 			case -1783809705:
-				StringCopy(sParam1, "EXTR2_U", 16);
+				StringCopy(sParam1, "EXTR2_U" /* GXT: hey Bro meet me at the airport got some more crazy shit to do! */, 16);
 				break;
 			
 			case -1159983966:
-				StringCopy(sParam1, "EXTR3_U", 16);
+				StringCopy(sParam1, "EXTR3_U" /* GXT: Free climbed the Maze Bank, waiting on the roof. Spiritual. You should hitch a flight up and join me, I need someone to tag in the post. */, 16);
 				break;
 			
 			case -1134717682:
-				StringCopy(sParam1, "HUNT1_U", 16);
+				StringCopy(sParam1, "HUNT1_U" /* GXT: Hey Trevor, meet me down at the lodge and we'll go hunt some real game. */, 16);
 				break;
 			
 			case -1444331296:
-				StringCopy(sParam1, "PAP3_U", 16);
+				StringCopy(sParam1, "PAP3_U" /* GXT: Hey homie, heard a few rumors on the celebrity grapevine. Opportunity to get some real money shots! Sent over the locations, call me when you get there. */, 16);
 				break;
 			
 			case 969002696:
-				StringCopy(sParam1, "TON3_U", 16);
+				StringCopy(sParam1, "TON3_U" /* GXT: JB missing PLZ help a sista out with another job. call me and ill explain. tonya xoxoxoxo */, 16);
 				break;
 			
 			case 1794975438:
-				StringCopy(sParam1, "TON4_U", 16);
+				StringCopy(sParam1, "TON4_U" /* GXT: me and JB getting clean but JB fiending bad sick as a dog can u do one more job for us? gimme a call. Tonya xoxox */, 16);
 				break;
 			
 			case 1988415324:
-				StringCopy(sParam1, "RE_BUR_MIS", 16);
+				StringCopy(sParam1, "RE_BUR_MIS" /* GXT: It's Antonia Bottino, you saved my life out at Paleto Bay. My father wanted to thank you – he's wiring some cash to your account now. */, 16);
 				break;
 			
 			case joaat("TEXT_SOL2_END"):
-				StringCopy(sParam1, "SOL2_PASS", 16);
+				StringCopy(sParam1, "SOL2_PASS" /* GXT: Michael I have put your name in the credits for the film. ~nrt~ <img src='img://ExecutiveProducer/executiveproducer' vspace='0' width='252' height='150'/> ~nrt~ */, 16);
 				break;
 			
 			case joaat("TEXT_SHRINK3_UNLOCK"):
-				StringCopy(sParam1, "DRF3_U", 16);
+				StringCopy(sParam1, "DRF3_U" /* GXT: Michael, I haven't heard from you. I trust you're keeping in fine mental health, but I worry.  Phone session? */, 16);
 				break;
 			
 			case joaat("TEXT_SHRINK4_UNLOCK"):
-				StringCopy(sParam1, "DRF4_U", 16);
+				StringCopy(sParam1, "DRF4_U" /* GXT: Michael, your last session was... concerning. I think we should have another chat. Call me. */, 16);
 				break;
 			
 			case joaat("TEXT_STREET_RACE_AIRPORT"):
-				StringCopy(sParam1, "SR_AIRPORT", 16);
+				StringCopy(sParam1, "SR_AIRPORT" /* GXT: I heard about you racing. Check out the airport this evening for a real challenge. */, 16);
 				break;
 			
 			case joaat("TEXT_STREET_RACE_FREEWAY"):
-				StringCopy(sParam1, "SR_FREEWAY", 16);
+				StringCopy(sParam1, "SR_FREEWAY" /* GXT: Think you're man enough for a faster race? There's one going down on the freeway tonight. */, 16);
 				break;
 			
 			case joaat("TEXT_STREET_RACE_CANALS"):
-				StringCopy(sParam1, "SR_CANALS", 16);
+				StringCopy(sParam1, "SR_CANALS" /* GXT: Cars are for pussies, bike race this evening at Vespucci Canals. */, 16);
 				break;
 			
 			case joaat("TEXT_TENNIS_UNLOCK"):
-				StringCopy(sParam1, "MGTNS_U", 16);
+				StringCopy(sParam1, "MGTNS_U" /* GXT: Michael you bought that court but never use it. My grip and ball control has def improved. Coach is V hard on me. xx */, 16);
 				break;
 			
 			case -1845612607:
-				StringCopy(sParam1, "MGTNS_U2", 16);
+				StringCopy(sParam1, "MGTNS_U2" /* GXT: Too soon to bring up tennis? Assume I'm not getting another coach any time soon so need someone to play with. Worried my grip is getting loose. xx */, 16);
 				break;
 			
 			case joaat("TEXT_TREV_LOST_HANGER"):
-				StringCopy(sParam1, "T_LOST_HANGER", 16);
+				StringCopy(sParam1, "T_LOST_HANGER" /* GXT: You shoulda recieved payment from Oscar Guzman already, right. You know, I'm thinking that runway we took off from, Sandy Shores Airfield, the Lost're all cleared out from there, so we can have exclusive usage - go over and check it out. */, 16);
 				break;
 			
 			case joaat("TEXT_UFOPARTS_DONE"):
-				StringCopy(sParam1, "OMEGA_TXT1", 16);
+				StringCopy(sParam1, "OMEGA_TXT1" /* GXT: CBL, as soon as you've located the final piece make haste for my control center (trailer) at the Wind Farm. */, 16);
 				break;
 			
 			case 65881433:
-				StringCopy(sParam1, "BLAZER3_U", 16);
+				StringCopy(sParam1, "BLAZER3_U" /* GXT: Hey Trevor, just dropped off something cool by the trailer. Check it out when you get the chance. Forever, Ron. */, 16);
 				break;
 			
 			case joaat("TEXT_ABIGAIL_MISSED"):
-				StringCopy(sParam1, "ABI1_MISS", 16);
+				StringCopy(sParam1, "ABI1_MISS" /* GXT: Hello Michael, I heard that you found my late husband's wrecked submarine - come see me down at the docks. */, 16);
 				break;
 			
 			case joaat("TEXT_HAO1"):
-				StringCopy(sParam1, "HAO1_ENDT", 16);
+				StringCopy(sParam1, "HAO1_ENDT" /* GXT: You got lucky there. There are always races going down in LS. If you're interested, head to a meet. Hao */, 16);
 				break;
 			
 			case 552744224:
-				StringCopy(sParam1, "PHT_WLD_BEV1", 16);
+				StringCopy(sParam1, "PHT_WLD_BEV1" /* GXT: Not everyone's cut out for snapping the stars, homie. So I signed you up to a wildlife photography competition!! :-P  lol Enjoy the little leagues! */, 16);
 				break;
 			
 			case joaat("TEXT_MONKEY_CAR_UNLOCK"):
-				StringCopy(sParam1, "MNKY_CAR_UNLK", 16);
+				StringCopy(sParam1, "MNKY_CAR_UNLK" /* GXT: "Holla!" You found all Space Monkey's tags in "da hood" and made them go viral! And you even met our marketing intern!! There's a limited edition Dinka Go Go Monkey Blista, Sports for you in your garage. Strap in, and get ready for the transmedia release of the decade when Monkey hits screens of all sizes this holiday! */, 16);
 				break;
 			
 			case joaat("TEXT_MONKEY_MOSAIC_LAMAR"):
-				StringCopy(sParam1, "MNKY_LAMAR", 16);
+				StringCopy(sParam1, "MNKY_LAMAR" /* GXT: Dawg, you seen this monkey dude doin his street art shit round the city? Dude is real, man. Them some authentic ass lines. */, 16);
 				break;
 			
 			case joaat("TEXT_COUNTRY_RACE_UNLOCK"):
-				StringCopy(sParam1, "CRACE_UNLK", 16);
+				StringCopy(sParam1, "CRACE_UNLK" /* GXT: Boss, there's some guys stock car racing round the way. You should try it. Unless you don't wanna. It could be fun, or not... you'll win a car, if you're good, but of course you'll be good. Please don't hurt me for this. */, 16);
 				break;
 			
 			default:
@@ -3010,7 +3010,7 @@ void func_76()//Position - 0x3751
 					case 1635046052:
 					case -464957327:
 					case 178720519:
-						func_83("AM_H_FDEC", -1);
+						func_83("AM_H_FDEC" /* GXT: You can now make a choice whether to help Michael's family member or not. Press ~INPUT_CELLPHONE_SELECT~ to help, press ~INPUT_CELLPHONE_CANCEL~ to refuse. */, -1);
 						func_49(26);
 						break;
 					}
@@ -3020,7 +3020,7 @@ void func_76()//Position - 0x3751
 		{
 			if (func_82() != 0)
 			{
-				if (func_43("AM_H_FDEC"))
+				if (func_43("AM_H_FDEC" /* GXT: You can now make a choice whether to help Michael's family member or not. Press ~INPUT_CELLPHONE_SELECT~ to help, press ~INPUT_CELLPHONE_CANCEL~ to refuse. */))
 				{
 					HUD::CLEAR_HELP(false);
 				}
@@ -5228,7 +5228,7 @@ void func_128(int iParam0)//Position - 0x5E65
 			{
 				if (!func_53(1))
 				{
-					if (func_43("AM_H_FCAL2"))
+					if (func_43("AM_H_FCAL2" /* GXT: Press ~INPUT_CELLPHONE_DOWN~ to skip lines in the phone call. Press ~INPUT_CELLPHONE_CANCEL~ to end the call early. */))
 					{
 						HUD::CLEAR_HELP(false);
 					}
@@ -5616,7 +5616,7 @@ void func_150(int iParam0, int iParam1)//Position - 0x64B5
 	int iVar1;
 	
 	func_133(0);
-	if (func_43("AM_H_FCAL1"))
+	if (func_43("AM_H_FCAL1" /* GXT: Press ~INPUT_CELLPHONE_SELECT~ to answer Simeon's call.~n~Press ~INPUT_CELLPHONE_CANCEL~ to hang up. */))
 	{
 		HUD::CLEAR_HELP(false);
 	}
@@ -7243,7 +7243,7 @@ void func_193(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 				case 1:
 					if (iVar2 == 249)
 					{
-						func_194(1, iVar1, iVar2, "PW_FEED_EM_1", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+						func_194(1, iVar1, iVar2, "PW_FEED_EM_1" /* GXT: You've been nominated to take part in Southern San Andreas' premier amateur photography competition in the wildlife sector. You'll join hundreds of other young, talented... */, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 					}
 					else
 					{
@@ -7277,15 +7277,15 @@ void func_194(int iParam0, int iParam1, int iParam2, char* sParam3, char* sParam
 		switch (iParam2)
 		{
 			case 72:
-				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL1");
+				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL1" /* GXT: Dear Mr. De Santa, please find below your weekly income from owned properties:~n~ */);
 				break;
 			
 			case 73:
-				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL3");
+				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL3" /* GXT: Dear Mr. Clinton, please find below your weekly income from owned properties:~n~ */);
 				break;
 			
 			case 74:
-				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL2");
+				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL2" /* GXT: Dear Mr. Philips, please find below your weekly income from owned properties:~n~ */);
 				break;
 			
 			default:
@@ -7394,202 +7394,202 @@ char* func_196(int iParam0)//Position - 0x84AC
 	switch (iParam0)
 	{
 		case 0:
-			return "EMSTR_0";
+			return "EMSTR_0" /* GXT: Mike */;
 		
 		case 3:
-			return "EMSTR_3";
+			return "EMSTR_3" /* GXT: Jimmy */;
 		
 		case 1:
-			return "EMSTR_6";
+			return "EMSTR_6" /* GXT: Franklin */;
 		
 		case 2:
-			return "EMSTR_9";
+			return "EMSTR_9" /* GXT: Trevor */;
 		
 		case 4:
-			return "EMSTR_12";
+			return "EMSTR_12" /* GXT: Marnie */;
 		
 		case 5:
-			return "EMSTR_29";
+			return "EMSTR_29" /* GXT: Epsilon Store */;
 		
 		case 6:
-			return "EMSTR_36";
+			return "EMSTR_36" /* GXT: Maude */;
 		
 		case 7:
-			return "EMSTR_39";
+			return "EMSTR_39" /* GXT: Lester */;
 		
 		case 8:
-			return "EMSTR_52";
+			return "EMSTR_52" /* GXT: Maze Bank */;
 		
 		case 9:
-			return "EMSTR_55";
+			return "EMSTR_55" /* GXT: Fleeca */;
 		
 		case 10:
-			return "EMSTR_58";
+			return "EMSTR_58" /* GXT: Bank of Liberty */;
 		
 		case 11:
-			return "EMSTR_78";
+			return "EMSTR_78" /* GXT: Legendary Motorsport Sales */;
 		
 		case 12:
-			return "EMSTR_81";
+			return "EMSTR_81" /* GXT: Elitas Sales */;
 		
 		case 13:
-			return "EMSTR_84";
+			return "EMSTR_84" /* GXT: Cache & Carry */;
 		
 		case 14:
-			return "EMSTR_87";
+			return "EMSTR_87" /* GXT: Dock Tease */;
 		
 		case 15:
-			return "EMSTR_106";
+			return "EMSTR_106" /* GXT: LSC */;
 		
 		case 16:
-			return "EMSTR_114";
+			return "EMSTR_114" /* GXT: AMMU-NATION */;
 		
 		case 17:
-			return "EMSTR_142";
+			return "EMSTR_142" /* GXT: Christian Feltz */;
 		
 		case 18:
-			return "EMSTR_145";
+			return "EMSTR_145" /* GXT: Paige Harris */;
 		
 		case 19:
-			return "EMSTR_152";
+			return "EMSTR_152" /* GXT: Los Santos Tourist Info */;
 		
 		case 20:
-			return "EMSTR_157";
+			return "EMSTR_157" /* GXT: Rickie Luckens */;
 		
 		case 21:
-			return "EMSTR_163";
+			return "EMSTR_163" /* GXT: Minotaur Property Management */;
 		
 		case 22:
-			return "EMSTR_182";
+			return "EMSTR_182" /* GXT: Saeeda Kadam */;
 		
 		case 23:
-			return "EMSTR_187";
+			return "EMSTR_187" /* GXT: Vanilla Unicorn */;
 		
 		case 24:
-			return "EMSTR_190";
+			return "EMSTR_190" /* GXT: Dr Isiah Friedlander */;
 		
 		case 25:
-			return "EMSTR_206";
+			return "EMSTR_206" /* GXT: TRACEYHEARTSTEALER */;
 		
 		case 26:
-			return "EMSTR_219";
+			return "EMSTR_219" /* GXT: Dave Norton */;
 		
 		case 27:
-			return "EMSTR_226";
+			return "EMSTR_226" /* GXT: Amanda De Santa */;
 		
 		case 28:
-			return "EMSTR_233";
+			return "EMSTR_233" /* GXT: Donald Percival */;
 		
 		case 29:
-			return "EMSTR_242";
+			return "EMSTR_242" /* GXT: Ron */;
 		
 		case 30:
-			return "EMSTR_249";
+			return "EMSTR_249" /* GXT: Tanisha Marks */;
 		
 		case 31:
-			return "EMSTR_262";
+			return "EMSTR_262" /* GXT: Denise */;
 		
 		case 32:
-			return "EMSTR_269";
+			return "EMSTR_269" /* GXT: Lamar Davis */;
 		
 		case 33:
-			return "EMSTR_319";
+			return "EMSTR_319" /* GXT: Brad */;
 		
 		case 34:
-			return "EMSTR_340";
+			return "EMSTR_340" /* GXT: Patricia Madrazo */;
 		
 		case 35:
-			return "EMSTR_348";
+			return "EMSTR_348" /* GXT: Eileen Haworth */;
 		
 		case 36:
-			return "EMSTR_182";
+			return "EMSTR_182" /* GXT: Saeeda Kadam */;
 		
 		case 37:
-			return "EMSTR_357";
+			return "EMSTR_357" /* GXT: Gray Nicholson */;
 		
 		case 38:
-			return "EMSTR_360";
+			return "EMSTR_360" /* GXT: Nigel */;
 		
 		case 39:
-			return "EMSTR_369";
+			return "EMSTR_369" /* GXT: Hookies */;
 		
 		case 40:
-			return "EMSTR_376";
+			return "EMSTR_376" /* GXT: Towing Impound */;
 		
 		case 41:
-			return "EMSTR_379";
+			return "EMSTR_379" /* GXT: Downtown Cab Co, */;
 		
 		case 42:
-			return "EMSTR_382";
+			return "EMSTR_382" /* GXT: McKenzie Field Hangar */;
 		
 		case 43:
-			return "EMSTR_384";
+			return "EMSTR_384" /* GXT: Sonar Collections Dock */;
 		
 		case 44:
-			return "EMSTR_387";
+			return "EMSTR_387" /* GXT: Los Santos Customs */;
 		
 		case 45:
-			return "EMSTR_390";
+			return "EMSTR_390" /* GXT: Cinema Doppler */;
 		
 		case 46:
-			return "EMSTR_393";
+			return "EMSTR_393" /* GXT: Ten Cent Theater */;
 		
 		case 47:
-			return "EMSTR_396";
+			return "EMSTR_396" /* GXT: Tivoli Cinema */;
 		
 		case 48:
-			return "EMSTR_399";
+			return "EMSTR_399" /* GXT: Los Santos Golf Club */;
 		
 		case 49:
-			return "EMSTR_402";
+			return "EMSTR_402" /* GXT: Car Scrap Yard */;
 		
 		case 50:
-			return "EMSTR_405";
+			return "EMSTR_405" /* GXT: Smoke on the Water */;
 		
 		case 51:
-			return "EMSTR_408";
+			return "EMSTR_408" /* GXT: Tequi-la-la */;
 		
 		case 52:
-			return "EMSTR_411";
+			return "EMSTR_411" /* GXT: Pitchers */;
 		
 		case 53:
-			return "EMSTR_414";
+			return "EMSTR_414" /* GXT: The Hen House */;
 		
 		case 54:
-			return "EMSTR_465";
+			return "EMSTR_465" /* GXT: Pedal & Metal Sales */;
 		
 		case 55:
-			return "EMSTR_468";
+			return "EMSTR_468" /* GXT: SSA Super Autos Sales */;
 		
 		case 56:
-			return "EMSTR_489";
+			return "EMSTR_489" /* GXT: Hush Smush */;
 		
 		case 57:
-			return "EMSTR_492";
+			return "EMSTR_492" /* GXT: foxymama21 */;
 		
 		case 58:
-			return "EMSTR_495";
+			return "EMSTR_495" /* GXT: Altarego12 */;
 		
 		case 59:
-			return "EMSTR_498";
+			return "EMSTR_498" /* GXT: BadKitty11 */;
 		
 		case 60:
-			return "EMSTR_501";
+			return "EMSTR_501" /* GXT: 7yearbitch */;
 		
 		case 61:
-			return "EMSTR_504";
+			return "EMSTR_504" /* GXT: Froggy69 */;
 		
 		case 62:
-			return "EMSTR_507";
+			return "EMSTR_507" /* GXT: Misscuddles */;
 		
 		case 63:
-			return "EMSTR_640";
+			return "EMSTR_640" /* GXT: Offroad Events */;
 		
 		case 64:
-			return "EMSTR_643";
+			return "EMSTR_643" /* GXT: Dock Tease */;
 		
 		case 65:
-			return "EMSTR_652";
+			return "EMSTR_652" /* GXT: Brother Adrian */;
 		
 		default:
 	}
@@ -7674,7 +7674,7 @@ char* func_197(int iParam0, int iParam1)//Position - 0x8817
 			return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_1998[40 /*29*/].f_7));
 		
 		case 36:
-			return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_E_381");
+			return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_E_381" /* GXT: CHAR_SAEEDA */);
 		
 		case 38:
 			return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_1998[64 /*29*/].f_7));
@@ -8597,7 +8597,7 @@ void func_208(int iParam0, var uParam1)//Position - 0x9880
 			break;
 		
 		case 5:
-			func_209(uParam1, "Barry3A", func_211(iParam0), 1, 1, 0, 1199.27f, -1255.63f, 34.23f, 381, "BARSTASH", 84, 0, "", 166, 0, 7, 4, 2, 0, 2359, func_210(iParam0), 0, 1);
+			func_209(uParam1, "Barry3A", func_211(iParam0), 1, 1, 0, 1199.27f, -1255.63f, 34.23f, 381, "BARSTASH" /* GXT: Areas where you can find vehicles with a hidden stash have been marked on the map. Collect these vehicles for Barry. */, 84, 0, "", 166, 0, 7, 4, 2, 0, 2359, func_210(iParam0), 0, 1);
 			break;
 		
 		case 6:
@@ -8609,7 +8609,7 @@ void func_208(int iParam0, var uParam1)//Position - 0x9880
 			break;
 		
 		case 8:
-			func_209(uParam1, "Dreyfuss1", func_211(iParam0), 0, 2, 4, -1458.97f, 485.99f, 115.38f, 66, "LETTERS_HINT", 106, 0, "", 0, 0, -1, 4, 2, 0, 2359, func_210(iParam0), 0, 0);
+			func_209(uParam1, "Dreyfuss1", func_211(iParam0), 0, 2, 4, -1458.97f, 485.99f, 115.38f, 66, "LETTERS_HINT" /* GXT: The killer's identity and location have been revealed. */, 106, 0, "", 0, 0, -1, 4, 2, 0, 2359, func_210(iParam0), 0, 0);
 			break;
 		
 		case 9:
@@ -8729,7 +8729,7 @@ void func_208(int iParam0, var uParam1)//Position - 0x9880
 			break;
 		
 		case 38:
-			func_209(uParam1, "Nigel1A", func_211(iParam0), 0, 12, 1, -558.65f, 284.49f, 90.86f, 149, "NIGITEMS", 100, 0, "", 0, 0, 42, 4, 4, 0, 2359, func_210(iParam0), 1, 1);
+			func_209(uParam1, "Nigel1A", func_211(iParam0), 0, 12, 1, -558.65f, 284.49f, 90.86f, 149, "NIGITEMS" /* GXT: Areas where you can find celebrity items have been marked on the map. Steal these items for Nigel and Mrs. Thornhill. */, 100, 0, "", 0, 0, 42, 4, 4, 0, 2359, func_210(iParam0), 1, 1);
 			break;
 		
 		case 39:
@@ -8773,7 +8773,7 @@ void func_208(int iParam0, var uParam1)//Position - 0x9880
 			break;
 		
 		case 49:
-			func_209(uParam1, "Paparazzo3A", func_211(iParam0), 0, 14, 2, 305.52f, 157.19f, 102.94f, 389, "PAPPHOTO", 102, 0, "", 0, 0, 51, 4, 2, 0, 2359, func_210(iParam0), 0, 1);
+			func_209(uParam1, "Paparazzo3A", func_211(iParam0), 0, 14, 2, 305.52f, 157.19f, 102.94f, 389, "PAPPHOTO" /* GXT: Areas where you can find celebrity photo opportunities have been marked on the map. Track down and photograph these celebrities for Beverly. */, 102, 0, "", 0, 0, 51, 4, 2, 0, 2359, func_210(iParam0), 0, 1);
 			break;
 		
 		case 50:
@@ -8809,7 +8809,7 @@ void func_208(int iParam0, var uParam1)//Position - 0x9880
 			break;
 		
 		case 58:
-			func_209(uParam1, "Tonya1", func_211(iParam0), 0, 17, 4, -14.39f, -1472.69f, 29.58f, 66, "AM_H_RCFS", -1, 0, "ambient_TonyaCall", 24, 1, 59, 4, 2, 0, 2359, func_210(iParam0), 0, 1);
+			func_209(uParam1, "Tonya1", func_211(iParam0), 0, 17, 4, -14.39f, -1472.69f, 29.58f, 66, "AM_H_RCFS" /* GXT: Strangers and Freaks can be found throughout San Andreas at ~HUD_COLOUR_FRANKLIN~~BLIP_RANDOM_CHARACTER~~s~ */, -1, 0, "ambient_TonyaCall", 24, 1, 59, 4, 2, 0, 2359, func_210(iParam0), 0, 1);
 			break;
 		
 		case 59:
@@ -11339,7 +11339,7 @@ char* func_250(int iParam0)//Position - 0xDD2B
 			break;
 		
 		case 39:
-			return "ONEIL";
+			return "ONEIL" /* GXT: O'Neil Way */;
 			break;
 		
 		case 34:
@@ -11367,7 +11367,7 @@ char* func_250(int iParam0)//Position - 0xDD2B
 			break;
 		
 		case 37:
-			return "STRETCH";
+			return "STRETCH" /* GXT: Stretch */;
 			break;
 		
 		case 43:
@@ -11395,7 +11395,7 @@ char* func_250(int iParam0)//Position - 0xDD2B
 			break;
 		
 		case 107:
-			return "CHEETAH";
+			return "CHEETAH" /* GXT: Cheetah */;
 			break;
 		
 		case 108:
@@ -11403,7 +11403,7 @@ char* func_250(int iParam0)//Position - 0xDD2B
 			break;
 		
 		case 109:
-			return "INFERNUS";
+			return "INFERNUS" /* GXT: Infernus */;
 			break;
 		
 		case 110:
@@ -11799,73 +11799,73 @@ void func_259(int iParam0, char* sParam1)//Position - 0xE580
 			case 1635046052:
 				StringCopy(sParam1, "MEFLAUD", 16);
 				StringCopy(&(sParam1->f_4), "MEFL_CALL1", 16);
-				StringCopy(&(sParam1->f_8), "MEFL_C1Q", 16);
+				StringCopy(&(sParam1->f_8), "MEFL_C1Q" /* GXT: Help Amanda? */, 16);
 				break;
 			
 			case -464957327:
 				StringCopy(sParam1, "MEFLAUD", 16);
 				StringCopy(&(sParam1->f_4), "MEFL_CALL2", 16);
-				StringCopy(&(sParam1->f_8), "MEFL_C2Q", 16);
+				StringCopy(&(sParam1->f_8), "MEFL_C2Q" /* GXT: Help Jimmy? */, 16);
 				break;
 			
 			case 178720519:
 				StringCopy(sParam1, "MEFLAUD", 16);
 				StringCopy(&(sParam1->f_4), "MEFL_CALL3", 16);
-				StringCopy(&(sParam1->f_8), "MEFL_C3Q", 16);
+				StringCopy(&(sParam1->f_8), "MEFL_C3Q" /* GXT: Help Tracey? */, 16);
 				break;
 			
 			case 738411510:
 				StringCopy(sParam1, "OJTXAUD", 16);
 				StringCopy(&(sParam1->f_4), "OJTX_TIE_OFF", 16);
-				StringCopy(&(sParam1->f_8), "PROPR_PHONEQ", 16);
+				StringCopy(&(sParam1->f_8), "PROPR_PHONEQ" /* GXT: Accept the mission? */, 16);
 				break;
 			
 			case -100973682:
 				StringCopy(sParam1, "OJTXAUD", 16);
 				StringCopy(&(sParam1->f_4), "OJTX_EXC_OFF", 16);
-				StringCopy(&(sParam1->f_8), "PROPR_PHONEQ", 16);
+				StringCopy(&(sParam1->f_8), "PROPR_PHONEQ" /* GXT: Accept the mission? */, 16);
 				break;
 			
 			case 1752783247:
 				StringCopy(sParam1, "OJTXAUD", 16);
 				StringCopy(&(sParam1->f_4), "OJTX_DL_OFF", 16);
-				StringCopy(&(sParam1->f_8), "PROPR_PHONEQ", 16);
+				StringCopy(&(sParam1->f_8), "PROPR_PHONEQ" /* GXT: Accept the mission? */, 16);
 				break;
 			
 			case 1016954269:
 				StringCopy(sParam1, "OJTXAUD", 16);
 				StringCopy(&(sParam1->f_4), "OJTX_FC_OFF", 16);
-				StringCopy(&(sParam1->f_8), "PROPR_PHONEQ", 16);
+				StringCopy(&(sParam1->f_8), "PROPR_PHONEQ" /* GXT: Accept the mission? */, 16);
 				break;
 			
 			case -456311088:
 				StringCopy(sParam1, "OJTXAUD", 16);
 				StringCopy(&(sParam1->f_4), "OJTX_GB_OFF", 16);
-				StringCopy(&(sParam1->f_8), "PROPR_PHONEQ", 16);
+				StringCopy(&(sParam1->f_8), "PROPR_PHONEQ" /* GXT: Accept the mission? */, 16);
 				break;
 			
 			case 2129099422:
 				StringCopy(sParam1, "OJTXAUD", 16);
 				StringCopy(&(sParam1->f_4), "OJTX_TB_OFF", 16);
-				StringCopy(&(sParam1->f_8), "PROPR_PHONEQ", 16);
+				StringCopy(&(sParam1->f_8), "PROPR_PHONEQ" /* GXT: Accept the mission? */, 16);
 				break;
 			
 			case 1357642229:
 				StringCopy(sParam1, "OJTXAUD", 16);
 				StringCopy(&(sParam1->f_4), "OJTX_CI_OFF", 16);
-				StringCopy(&(sParam1->f_8), "PROPR_PHONEQ", 16);
+				StringCopy(&(sParam1->f_8), "PROPR_PHONEQ" /* GXT: Accept the mission? */, 16);
 				break;
 			
 			case -767033321:
 				StringCopy(sParam1, "OJTXAUD", 16);
 				StringCopy(&(sParam1->f_4), "OJTX_GN_OFF", 16);
-				StringCopy(&(sParam1->f_8), "PROPR_PHONEQ", 16);
+				StringCopy(&(sParam1->f_8), "PROPR_PHONEQ" /* GXT: Accept the mission? */, 16);
 				break;
 			
 			case -1240893790:
 				StringCopy(sParam1, "OJTXAUD", 16);
 				StringCopy(&(sParam1->f_4), "OJTX_CC_OFF", 16);
-				StringCopy(&(sParam1->f_8), "PROPR_PHONEQ", 16);
+				StringCopy(&(sParam1->f_8), "PROPR_PHONEQ" /* GXT: Accept the mission? */, 16);
 				break;
 			
 			default:
@@ -12131,15 +12131,15 @@ int func_265(var uParam0)//Position - 0xE9F9
 					switch (func_66())
 					{
 						case 0:
-							func_50("AM_H_FTXT", 2, 3000, -1, 7500, 1, 0, 0, 1);
+							func_50("AM_H_FTXT" /* GXT: A new text message has been received. Bring up the phone with ~INPUT_PHONE~ to read it. New text messages and emails also show on the Feed. */, 2, 3000, -1, 7500, 1, 0, 0, 1);
 							break;
 						
 						case 1:
-							func_50("AM_H_FTXT", 2, 3000, -1, 7500, 2, 0, 0, 1);
+							func_50("AM_H_FTXT" /* GXT: A new text message has been received. Bring up the phone with ~INPUT_PHONE~ to read it. New text messages and emails also show on the Feed. */, 2, 3000, -1, 7500, 2, 0, 0, 1);
 							break;
 						
 						case 2:
-							func_50("AM_H_FTXT", 2, 3000, -1, 7500, 4, 0, 0, 1);
+							func_50("AM_H_FTXT" /* GXT: A new text message has been received. Bring up the phone with ~INPUT_PHONE~ to read it. New text messages and emails also show on the Feed. */, 2, 3000, -1, 7500, 4, 0, 0, 1);
 							break;
 					}
 					func_49(4);
@@ -12707,7 +12707,7 @@ void func_270(int iParam0)//Position - 0xF2A2
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(42);
 								GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							}
-							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB")) && BitTest(Global_8137, 6))
+							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB" /* GXT: Benny's */)) && BitTest(Global_8137, 6))
 							{
 								GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT");
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);

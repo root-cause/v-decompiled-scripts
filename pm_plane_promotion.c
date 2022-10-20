@@ -1243,7 +1243,7 @@ int func_31(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 			{
 				func_53(sParam16);
 				func_53(sParam19);
-				func_53("MORE_SEATS");
+				func_53("MORE_SEATS" /* GXT: A vehicle with more seats is needed. */);
 				if (bParam18 && PLAYER::IS_PLAYER_WANTED_LEVEL_GREATER(PLAYER::PLAYER_ID(), 0))
 				{
 					if (HUD::DOES_BLIP_EXIST(iParam0->f_5))
@@ -1259,7 +1259,7 @@ int func_31(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 					{
 						if (bParam22)
 						{
-							func_46(iParam0, "LOSE_WANTED", 0);
+							func_46(iParam0, "LOSE_WANTED" /* GXT: Lose the Cops. */, 0);
 							if (!PED::IS_PED_INJURED(iParam0->f_17[0]))
 							{
 								func_44(iParam0->f_17[0], "VEHICLE_POLICE_PURSUIT", 3);
@@ -1273,7 +1273,7 @@ int func_31(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 				{
 					if (BitTest(iParam0->f_13, 0))
 					{
-						func_53("LOSE_WANTED");
+						func_53("LOSE_WANTED" /* GXT: Lose the Cops. */);
 						MISC::CLEAR_BIT(&(iParam0->f_13), 0);
 						MISC::SET_BIT(&(iParam0->f_13), 1);
 					}
@@ -1394,8 +1394,8 @@ int func_31(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 								func_53(sParam13);
 								func_53(sParam14);
 								func_53(sParam15);
-								func_53("LOSE_WANTED");
-								func_53("MORE_SEATS");
+								func_53("LOSE_WANTED" /* GXT: Lose the Cops. */);
+								func_53("MORE_SEATS" /* GXT: A vehicle with more seats is needed. */);
 								func_53(sParam19);
 								func_135(iParam0, 1, 0);
 								return 1;
@@ -1420,7 +1420,7 @@ int func_31(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 					{
 						if (bParam22)
 						{
-							func_46(iParam0, "LOSE_WANTED", 0);
+							func_46(iParam0, "LOSE_WANTED" /* GXT: Lose the Cops. */, 0);
 							if (!PED::IS_PED_INJURED(iParam0->f_17[0]))
 							{
 								func_44(iParam0->f_17[0], "VEHICLE_POLICE_PURSUIT", 3);
@@ -1434,7 +1434,7 @@ int func_31(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 				{
 					if (BitTest(iParam0->f_13, 0))
 					{
-						func_53("LOSE_WANTED");
+						func_53("LOSE_WANTED" /* GXT: Lose the Cops. */);
 						MISC::CLEAR_BIT(&(iParam0->f_13), 0);
 						MISC::SET_BIT(&(iParam0->f_13), 1);
 					}
@@ -1534,7 +1534,7 @@ int func_31(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 									{
 										func_44(iParam0->f_17[iVar7], "NEED_A_BIGGER_VEHICLE", 3);
 									}
-									func_46(iParam0, "MORE_SEATS", 0);
+									func_46(iParam0, "MORE_SEATS" /* GXT: A vehicle with more seats is needed. */, 0);
 									MISC::SET_BIT(&(iParam0->f_13), 13);
 								}
 							}
@@ -1593,7 +1593,7 @@ int func_31(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 		func_53(sParam16);
 		func_53(sParam19);
 		func_53(sParam16);
-		func_53("LOSE_WANTED");
+		func_53("LOSE_WANTED" /* GXT: Lose the Cops. */);
 		if (HUD::DOES_BLIP_EXIST(iParam0->f_5))
 		{
 			HUD::REMOVE_BLIP(&(iParam0->f_5));
@@ -2351,7 +2351,7 @@ int func_54(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 						{
 							func_44(uParam0->f_17[iVar18], "NEED_A_BIGGER_VEHICLE", 3);
 						}
-						func_46(uParam0, "MORE_SEATS", 0);
+						func_46(uParam0, "MORE_SEATS" /* GXT: A vehicle with more seats is needed. */, 0);
 						MISC::SET_BIT(&(uParam0->f_13), 13);
 					}
 				}
@@ -2362,7 +2362,7 @@ int func_54(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 		{
 			bVar9 = false;
 			MISC::CLEAR_BIT(&(uParam0->f_13), 13);
-			func_53("MORE_SEATS");
+			func_53("MORE_SEATS" /* GXT: A vehicle with more seats is needed. */);
 		}
 		if (!ENTITY::DOES_ENTITY_EXIST(iParam10))
 		{
@@ -2375,7 +2375,7 @@ int func_54(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 						iVar10 = PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false);
 						if (func_66(iVar10, uParam0))
 						{
-							func_46(uParam0, "CMN_VEHSUIT", 0);
+							func_46(uParam0, "CMN_VEHSUIT" /* GXT: ~s~Vehicle is not suitable. */, 0);
 							MISC::SET_BIT(&(uParam0->f_13), 31);
 						}
 					}
@@ -2383,7 +2383,7 @@ int func_54(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 				else if (!PED::IS_PED_SITTING_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID()))
 				{
 					MISC::CLEAR_BIT(&(uParam0->f_13), 31);
-					func_53("CMN_VEHSUIT");
+					func_53("CMN_VEHSUIT" /* GXT: ~s~Vehicle is not suitable. */);
 				}
 			}
 		}
@@ -2793,7 +2793,7 @@ int func_54(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 				}
 				iVar0++;
 			}
-			func_53("MORE_SEATS");
+			func_53("MORE_SEATS" /* GXT: A vehicle with more seats is needed. */);
 			return 1;
 		}
 	}

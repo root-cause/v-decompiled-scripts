@@ -25,8 +25,8 @@ void __EntryFunction__()//Position - 0x0
 		case 1:
 			if (ScriptParam_0.f_1 == -1931845307)
 			{
-				func_2(1, 0, -1029819160, 0, 1, "PM_PANE_AUD");
-				func_2(1, 1, -1029819160, 1, 0, "PM_PANE_DIS");
+				func_2(1, 0, -1029819160, 0, 1, "PM_PANE_AUD" /* GXT: Audio */);
+				func_2(1, 1, -1029819160, 1, 0, "PM_PANE_DIS" /* GXT: Display */);
 				func_1(1);
 			}
 			if (ScriptParam_0.f_1 == -1029820160)

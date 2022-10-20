@@ -460,7 +460,7 @@ void func_3()//Position - 0x341
 					if (PAD::IS_CONTROL_JUST_PRESSED(2, 203))
 					{
 						HUD::TAKE_CONTROL_OF_FRONTEND();
-						AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
+						AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 						MISC::SET_BIT(&(Global_1976978.f_3), iVar0);
 						HUD::SET_FRONTEND_ACTIVE(false);
 						HUD::RELEASE_CONTROL_OF_FRONTEND();
@@ -681,7 +681,7 @@ void func_6(int iParam0, char* sParam1, char* sParam2, int iParam3, char* sParam
 			}
 			if (bVar6)
 			{
-				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_MULTI");
+				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_MULTI" /* GXT: ~1~ x */);
 				HUD::ADD_TEXT_COMPONENT_FLOAT(fVar1, 0);
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 			}
@@ -691,7 +691,7 @@ void func_6(int iParam0, char* sParam1, char* sParam2, int iParam3, char* sParam
 			}
 			if (bVar7)
 			{
-				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_MULTI");
+				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_MULTI" /* GXT: ~1~ x */);
 				HUD::ADD_TEXT_COMPONENT_FLOAT(fVar2, 0);
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 			}
@@ -701,7 +701,7 @@ void func_6(int iParam0, char* sParam1, char* sParam2, int iParam3, char* sParam
 			}
 			if (bVar8)
 			{
-				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_MULTI");
+				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_MULTI" /* GXT: ~1~ x */);
 				HUD::ADD_TEXT_COMPONENT_FLOAT(fVar3, 0);
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 			}
@@ -2159,7 +2159,7 @@ void func_50()//Position - 0x1E12
 					{
 						if (bLocal_223)
 						{
-							AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
+							AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 							iLocal_246 = func_169(&uLocal_234, iLocal_211);
 							if (iLocal_246 == 0)
 							{
@@ -2266,7 +2266,7 @@ void func_50()//Position - 0x1E12
 			HUD::TAKE_CONTROL_OF_FRONTEND();
 			StringCopy(&cVar0, "PM_INF_QMF", 16);
 			StringIntConCat(&cVar0, iLocal_246, 16);
-			HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT", &cVar0, 16, 0, false, -1, 0, 0, true, 0);
+			HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT" /* GXT: Alert */, &cVar0, 16, 0, false, -1, 0, 0, true, 0);
 			if (PAD::IS_CONTROL_JUST_RELEASED(2, 202) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 			{
 				iLocal_229 = 0;
@@ -2277,7 +2277,7 @@ void func_50()//Position - 0x1E12
 	else
 	{
 		HUD::TAKE_CONTROL_OF_FRONTEND();
-		HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_QUIT_K1", "PM_QUIT_WARN7", 18, 0, false, -1, 0, 0, true, 0);
+		HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_QUIT_K1" /* GXT: Confirm */, "PM_QUIT_WARN7" /* GXT: Are you sure you want to start this Job? */, 18, 0, false, -1, 0, 0, true, 0);
 		if (PAD::IS_CONTROL_JUST_RELEASED(2, 201) || iLocal_230)
 		{
 			if (!iLocal_230)
@@ -7809,21 +7809,21 @@ void func_223(int iParam0, int iParam1, var uParam2)//Position - 0x8563
 	}
 	func_255(iVar0);
 	func_6(iVar0, "", HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(func_236(iParam0)), 0, func_2(), func_235(iParam0), 1, 1, -1, -1, 0, 0, 0, 0);
-	func_230(iVar0, iVar1, iVar2, iVar1, 0, "DLCC_CONTACT", func_234(iParam0), 0, 0, 0, 0);
+	func_230(iVar0, iVar1, iVar2, iVar1, 0, "DLCC_CONTACT" /* GXT: Contact */, func_234(iParam0), 0, 0, 0, 0);
 	iVar1++;
 	if (!MISC::IS_STRING_NULL_OR_EMPTY(func_229(iParam0)))
 	{
-		func_230(iVar0, iVar1, iVar2, iVar1, 0, "DLCC_PROPERTY", func_229(iParam0), 0, 0, 0, 0);
+		func_230(iVar0, iVar1, iVar2, iVar1, 0, "DLCC_PROPERTY" /* GXT: Property */, func_229(iParam0), 0, 0, 0, 0);
 		iVar1++;
 	}
 	if (!MISC::IS_STRING_NULL_OR_EMPTY(func_228(iParam0)))
 	{
-		func_230(iVar0, iVar1, iVar2, iVar1, 0, "DLCC_WEBSITE", func_228(iParam0), 0, 0, 0, 0);
+		func_230(iVar0, iVar1, iVar2, iVar1, 0, "DLCC_WEBSITE" /* GXT: Website */, func_228(iParam0), 0, 0, 0, 0);
 		iVar1++;
 	}
 	if (!MISC::IS_STRING_NULL_OR_EMPTY(func_227(iParam0)))
 	{
-		func_230(iVar0, iVar1, iVar2, iVar1, 0, "DLCC_TYPE", func_227(iParam0), 0, 0, 0, 0);
+		func_230(iVar0, iVar1, iVar2, iVar1, 0, "DLCC_TYPE" /* GXT: Type */, func_227(iParam0), 0, 0, 0, 0);
 		iVar1++;
 	}
 	func_226(iVar0, iVar1, iVar2, iVar1, 0, " ", 0, 4);
@@ -7848,49 +7848,49 @@ char* func_225(int iParam0)//Position - 0x86E5
 	switch (iParam0)
 	{
 		case 0:
-			return "DLCC_HEIST_RC";
+			return "DLCC_HEIST_RC" /* GXT: Purchase a high-end Apartment to work with Lester Crest and other contacts to carry out a series of daring heists, raids and robberies across Los Santos and Blaine County. */;
 		
 		case 1:
-			return "DLCC_LOWRI_RC";
+			return "DLCC_LOWRI_RC" /* GXT: Help Lamar Davis take on the biggest gangs in the city and become the ruler of Los Santos' Lowrider scene. */;
 		
 		case 2:
-			return "DLCC_FAIFA_RC";
+			return "DLCC_FAIFA_RC" /* GXT: Become a CEO and leave your mark on the dirty money of Los Santos by running Special Cargo, Vehicle Cargo, and Special Vehicle Works from your Executive Office. */;
 		
 		case 3:
-			return "DLCC_BIKER_RC";
+			return "DLCC_BIKER_RC" /* GXT: With the help of Malc, run your own MC. Purchase a Clubhouse, promote your members, then produce and sell narcotics, forged documents and counterfeit cash. */;
 		
 		case 4:
-			return "DLCC_GUNRU_RC";
+			return "DLCC_GUNRU_RC" /* GXT: Work with Agent 14 to become an arms dealer. Purchase a Bunker to research and manufacture weapons to dominate the illegal arms trade in Southern San Andreas. */;
 		
 		case 5:
-			return "DLCC_SMUGG_RC";
+			return "DLCC_SMUGG_RC" /* GXT: With the help of Ron Jakowski, take to the skies and operate a profitable air freight smuggling ring. Use profits to upgrade your Hangar and your fleet of aircrafts with the Hangar Workshop. */;
 		
 		case 6:
-			return "DLCC_DOOMS_RC";
+			return "DLCC_DOOMS_RC" /* GXT: Work with Lester Crest to save the world from total annihilation. Purchase a Facility to access the adrenaline-fueled Doomsday Heist and a range of high-tech vehicles. */;
 		
 		case 7:
-			return "DLCC_AFTER_RC";
+			return "DLCC_AFTER_RC" /* GXT: Partner with Tony Prince to purchase a Nightclub and manage the hottest spot in town. All while running the most concentrated network of criminal enterprises to hit San Andreas. */;
 		
 		case 8:
-			return "DLCC_ARENA_RC";
+			return "DLCC_ARENA_RC" /* GXT: Bryony is looking for contenders to take part in the deadly Arena War. Purchase an Arena Workshop and customize your own fleet of death machines to conquer the Arena War modes. */;
 		
 		case 9:
-			return "DLCC_CASIN_RC";
+			return "DLCC_CASIN_RC" /* GXT: The lavish Diamond Casino is the one-stop destination for quality entertainment and high-end living. Use Chips to play games or purchase a Penthouse, the most luxurious residence in the state. */;
 		
 		case 10:
-			return "DLCC_CASHT_RC";
+			return "DLCC_CASHT_RC" /* GXT: With the help of Lester Crest, purchase an Arcade as a front for planning the most sophisticated robbery the city of Los Santos has ever seen: breaking into The Diamond Casino's vault. */;
 		
 		case 11:
-			return "DLCC_ISLAN_RC";
+			return "DLCC_ISLAN_RC" /* GXT: Under the employ of Miguel Madrazo, leave the lights of Los Santos for the sands of Cayo Perico. Purchase a Kosatka Submarine to begin your Heist: raiding El Rubio's island fortress. */;
 		
 		case 12:
-			return "DLCC_MADRA_RC";
+			return "DLCC_MADRA_RC" /* GXT: Take on assignments for Martin Madrazo, from infiltrating LSPD holding cells to launching an assault on Merryweather HQ as you seek to silence a few names on his hit list. */;
 		
 		case 13:
-			return "DLCC_SIMEO_RC";
+			return "DLCC_SIMEO_RC" /* GXT: Complete repo work for Simeon, from boosting vehicles out of a police auction to stealing them with the help of a Cargobob. */;
 		
 		case 14:
-			return "DLCC_GERAL_RC";
+			return "DLCC_GERAL_RC" /* GXT: Help Gerald score big, and ensure his criminal endeavors run smoothly across Los Santos. */;
 		
 		case 15:
 			return "";
@@ -7902,13 +7902,13 @@ char* func_225(int iParam0)//Position - 0x86E5
 			return "";
 		
 		case 18:
-			return "DLCC_TUNER_RC";
+			return "DLCC_TUNER_RC" /* GXT: Take over the streets with the LS Car Meet, a space to test, mod and admire your wheels. Purchase an Auto Shop and run a legitimate business or carry out criminal contracts to make serious money. */;
 		
 		case 19:
-			return "DLCC_CONTR_RC";
+			return "DLCC_CONTR_RC" /* GXT: Partner with Franklin Clinton, run your own Celebrity Solutions Agency, and do whatever it takes to fix the problems of the LS elite. */;
 		
 		case 20:
-			return "DLCC_PREMI_RC";
+			return "DLCC_PREMI_RC" /* GXT: View, test drive, and purchase the vehicles at Premium Deluxe Motorsport, or hit up Simeon for repo work if you need some fast cash. */;
 		
 		default:
 	}
@@ -7950,49 +7950,49 @@ char* func_227(int iParam0)//Position - 0x886A
 	switch (iParam0)
 	{
 		case 0:
-			return "DLCC_HEIST_TY";
+			return "DLCC_HEIST_TY" /* GXT: Heist */;
 		
 		case 1:
-			return "DLCC_LOWRI_TY";
+			return "DLCC_LOWRI_TY" /* GXT: Contact Mission */;
 		
 		case 2:
-			return "DLCC_FAIFA_TY";
+			return "DLCC_FAIFA_TY" /* GXT: Business */;
 		
 		case 3:
-			return "DLCC_BIKER_TY";
+			return "DLCC_BIKER_TY" /* GXT: Business */;
 		
 		case 4:
-			return "DLCC_GUNRU_TY";
+			return "DLCC_GUNRU_TY" /* GXT: Business */;
 		
 		case 5:
-			return "DLCC_SMUGG_TY";
+			return "DLCC_SMUGG_TY" /* GXT: Business */;
 		
 		case 6:
-			return "DLCC_DOOMS_TY";
+			return "DLCC_DOOMS_TY" /* GXT: Heist */;
 		
 		case 7:
-			return "DLCC_AFTER_TY";
+			return "DLCC_AFTER_TY" /* GXT: Business */;
 		
 		case 8:
-			return "DLCC_ARENA_TY";
+			return "DLCC_ARENA_TY" /* GXT: Series Mode */;
 		
 		case 9:
 			return "";
 		
 		case 10:
-			return "DLCC_CASHT_TY";
+			return "DLCC_CASHT_TY" /* GXT: Heist */;
 		
 		case 11:
-			return "DLCC_ISLAN_TY";
+			return "DLCC_ISLAN_TY" /* GXT: Heist */;
 		
 		case 12:
-			return "DLCC_MADRA_TY";
+			return "DLCC_MADRA_TY" /* GXT: Contact Mission */;
 		
 		case 13:
-			return "DLCC_SIMEO_TY";
+			return "DLCC_SIMEO_TY" /* GXT: Contact Mission */;
 		
 		case 14:
-			return "DLCC_GERAL_TY";
+			return "DLCC_GERAL_TY" /* GXT: Contact Mission */;
 		
 		case 15:
 			return "";
@@ -8007,7 +8007,7 @@ char* func_227(int iParam0)//Position - 0x886A
 			return "";
 		
 		case 19:
-			return "DLCC_CONTR_TY";
+			return "DLCC_CONTR_TY" /* GXT: Business */;
 		
 		case 20:
 			return "";
@@ -8022,40 +8022,40 @@ char* func_228(int iParam0)//Position - 0x898E
 	switch (iParam0)
 	{
 		case 0:
-			return "DLCC_HEIST_WS";
+			return "DLCC_HEIST_WS" /* GXT: Dynasty 8 */;
 		
 		case 1:
 			return "";
 		
 		case 2:
-			return "DLCC_FAIFA_WS";
+			return "DLCC_FAIFA_WS" /* GXT: Dynasty 8 Executive */;
 		
 		case 3:
-			return "DLCC_BIKER_WS";
+			return "DLCC_BIKER_WS" /* GXT: Maze Bank Foreclosures */;
 		
 		case 4:
-			return "DLCC_GUNRU_WS";
+			return "DLCC_GUNRU_WS" /* GXT: Maze Bank Foreclosures */;
 		
 		case 5:
-			return "DLCC_SMUGG_WS";
+			return "DLCC_SMUGG_WS" /* GXT: Maze Bank Foreclosures */;
 		
 		case 6:
-			return "DLCC_DOOMS_WS";
+			return "DLCC_DOOMS_WS" /* GXT: Maze Bank Foreclosures */;
 		
 		case 7:
-			return "DLCC_AFTER_WS";
+			return "DLCC_AFTER_WS" /* GXT: Maze Bank Foreclosures */;
 		
 		case 8:
-			return "DLCC_ARENA_WS";
+			return "DLCC_ARENA_WS" /* GXT: Arena War */;
 		
 		case 9:
-			return "DLCC_CASIN_WS";
+			return "DLCC_CASIN_WS" /* GXT: The Diamond Casino and Resort */;
 		
 		case 10:
-			return "DLCC_CASHT_WS";
+			return "DLCC_CASHT_WS" /* GXT: Maze Bank Foreclosures */;
 		
 		case 11:
-			return "DLCC_ISLAN_WS";
+			return "DLCC_ISLAN_WS" /* GXT: Warstock */;
 		
 		case 12:
 			return "";
@@ -8076,10 +8076,10 @@ char* func_228(int iParam0)//Position - 0x898E
 			return "";
 		
 		case 18:
-			return "DLCC_TUNER_WS";
+			return "DLCC_TUNER_WS" /* GXT: Maze Bank Foreclosures */;
 		
 		case 19:
-			return "DLCC_CONTR_WS";
+			return "DLCC_CONTR_WS" /* GXT: Dynasty 8 Executive */;
 		
 		case 20:
 			return "";
@@ -8094,40 +8094,40 @@ char* func_229(int iParam0)//Position - 0x8AB2
 	switch (iParam0)
 	{
 		case 0:
-			return "DLCC_HEIST_PR";
+			return "DLCC_HEIST_PR" /* GXT: High-End Apartment */;
 		
 		case 1:
 			return "";
 		
 		case 2:
-			return "DLCC_FAIFA_PR";
+			return "DLCC_FAIFA_PR" /* GXT: Executive Office */;
 		
 		case 3:
-			return "DLCC_BIKER_PR";
+			return "DLCC_BIKER_PR" /* GXT: Clubhouse */;
 		
 		case 4:
-			return "DLCC_GUNRU_PR";
+			return "DLCC_GUNRU_PR" /* GXT: Bunker */;
 		
 		case 5:
-			return "DLCC_SMUGG_PR";
+			return "DLCC_SMUGG_PR" /* GXT: Hangar */;
 		
 		case 6:
-			return "DLCC_DOOMS_PR";
+			return "DLCC_DOOMS_PR" /* GXT: Facility */;
 		
 		case 7:
-			return "DLCC_AFTER_PR";
+			return "DLCC_AFTER_PR" /* GXT: Nightclub */;
 		
 		case 8:
-			return "DLCC_ARENA_PR";
+			return "DLCC_ARENA_PR" /* GXT: Arena Workshop */;
 		
 		case 9:
-			return "DLCC_CASIN_PR";
+			return "DLCC_CASIN_PR" /* GXT: Penthouse */;
 		
 		case 10:
-			return "DLCC_CASHT_PR";
+			return "DLCC_CASHT_PR" /* GXT: Arcade */;
 		
 		case 11:
-			return "DLCC_ISLAN_PR";
+			return "DLCC_ISLAN_PR" /* GXT: Kosatka */;
 		
 		case 12:
 			return "";
@@ -8148,10 +8148,10 @@ char* func_229(int iParam0)//Position - 0x8AB2
 			return "";
 		
 		case 18:
-			return "DLCC_TUNER_PR";
+			return "DLCC_TUNER_PR" /* GXT: Auto Shop */;
 		
 		case 19:
-			return "DLCC_CONTR_PR";
+			return "DLCC_CONTR_PR" /* GXT: Agency */;
 		
 		case 20:
 			return "";
@@ -8242,12 +8242,12 @@ int func_231(char* sParam0)//Position - 0x8CBA
 
 char* func_232()//Position - 0x8CF4
 {
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREATOR_RSV");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREATOR_RSV" /* GXT: Rockstar Verified */);
 }
 
 char* func_233()//Position - 0x8D04
 {
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREATOR_RSC");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREATOR_RSC" /* GXT: Rockstar */);
 }
 
 char* func_234(int iParam0)//Position - 0x8D14
@@ -8255,67 +8255,67 @@ char* func_234(int iParam0)//Position - 0x8D14
 	switch (iParam0)
 	{
 		case 0:
-			return "DLCC_HEIST_CT";
+			return "DLCC_HEIST_CT" /* GXT: Lester Crest */;
 		
 		case 1:
-			return "DLCC_LOWRI_CT";
+			return "DLCC_LOWRI_CT" /* GXT: Lamar Davis */;
 		
 		case 2:
-			return "DLCC_FAIFA_CT";
+			return "DLCC_FAIFA_CT" /* GXT: SecuroServ */;
 		
 		case 3:
-			return "DLCC_BIKER_CT";
+			return "DLCC_BIKER_CT" /* GXT: Malc */;
 		
 		case 4:
-			return "DLCC_GUNRU_CT";
+			return "DLCC_GUNRU_CT" /* GXT: Agent 14 */;
 		
 		case 5:
-			return "DLCC_SMUGG_CT";
+			return "DLCC_SMUGG_CT" /* GXT: Ron Jakowski */;
 		
 		case 6:
-			return "DLCC_DOOMS_CT";
+			return "DLCC_DOOMS_CT" /* GXT: Lester Crest */;
 		
 		case 7:
-			return "DLCC_AFTER_CT";
+			return "DLCC_AFTER_CT" /* GXT: Tony Prince */;
 		
 		case 8:
-			return "DLCC_ARENA_CT";
+			return "DLCC_ARENA_CT" /* GXT: Bryony */;
 		
 		case 9:
-			return "DLCC_CASIN_CT";
+			return "DLCC_CASIN_CT" /* GXT: Tom Connors */;
 		
 		case 10:
-			return "DLCC_CASHT_CT";
+			return "DLCC_CASHT_CT" /* GXT: Lester Crest */;
 		
 		case 11:
-			return "DLCC_ISLAN_CT";
+			return "DLCC_ISLAN_CT" /* GXT: Miguel Madrazo */;
 		
 		case 12:
-			return "DLCC_MADRA_CT";
+			return "DLCC_MADRA_CT" /* GXT: Martin Madrazo */;
 		
 		case 13:
-			return "DLCC_SIMEO_CT";
+			return "DLCC_SIMEO_CT" /* GXT: Simeon Yetarian */;
 		
 		case 14:
-			return "DLCC_GERAL_CT";
+			return "DLCC_GERAL_CT" /* GXT: Gerald */;
 		
 		case 15:
-			return "DLCC_BOUNT_CT";
+			return "DLCC_BOUNT_CT" /* GXT: Maude Eccles */;
 		
 		case 16:
-			return "DLCC_ACTIO_CT";
+			return "DLCC_ACTIO_CT" /* GXT: Hardcore Comic Store */;
 		
 		case 17:
-			return "DLCC_MOVIE_CT";
+			return "DLCC_MOVIE_CT" /* GXT: Richards Majestic */;
 		
 		case 18:
-			return "DLCC_TUNER_CT";
+			return "DLCC_TUNER_CT" /* GXT: Mimi */;
 		
 		case 19:
-			return "DLCC_CONTR_CT";
+			return "DLCC_CONTR_CT" /* GXT: Lamar Davis */;
 		
 		case 20:
-			return "DLCC_PREMI_CT";
+			return "DLCC_PREMI_CT" /* GXT: Simeon Yetarian */;
 		
 		default:
 	}
@@ -8399,67 +8399,67 @@ char* func_236(int iParam0)//Position - 0x8F5C
 	switch (iParam0)
 	{
 		case 0:
-			return "DLCC_HEIST";
+			return "DLCC_HEIST" /* GXT: Heists */;
 		
 		case 1:
-			return "DLCC_LOWRI";
+			return "DLCC_LOWRI" /* GXT: Lowriders */;
 		
 		case 2:
-			return "DLCC_FAIFA";
+			return "DLCC_FAIFA" /* GXT: Further Adventures in Finance and Felony */;
 		
 		case 3:
-			return "DLCC_BIKER";
+			return "DLCC_BIKER" /* GXT: Bikers */;
 		
 		case 4:
-			return "DLCC_GUNRU";
+			return "DLCC_GUNRU" /* GXT: Gunrunning */;
 		
 		case 5:
-			return "DLCC_SMUGG";
+			return "DLCC_SMUGG" /* GXT: Smuggler's Run */;
 		
 		case 6:
-			return "DLCC_DOOMS";
+			return "DLCC_DOOMS" /* GXT: The Doomsday Heist */;
 		
 		case 7:
-			return "DLCC_AFTER";
+			return "DLCC_AFTER" /* GXT: After Hours */;
 		
 		case 8:
-			return "DLCC_ARENA";
+			return "DLCC_ARENA" /* GXT: Arena War */;
 		
 		case 9:
-			return "DLCC_CASIN";
+			return "DLCC_CASIN" /* GXT: The Diamond Casino & Resort */;
 		
 		case 10:
-			return "DLCC_CASHT";
+			return "DLCC_CASHT" /* GXT: The Diamond Casino Heist */;
 		
 		case 11:
-			return "DLCC_ISLAN";
+			return "DLCC_ISLAN" /* GXT: The Cayo Perico Heist */;
 		
 		case 12:
-			return "DLCC_MADRA";
+			return "DLCC_MADRA" /* GXT: Madrazo Dispatch Services */;
 		
 		case 13:
-			return "DLCC_SIMEO";
+			return "DLCC_SIMEO" /* GXT: Simeon's Premium Deluxe Repo Work */;
 		
 		case 14:
-			return "DLCC_GERAL";
+			return "DLCC_GERAL" /* GXT: Gerald's Last Play */;
 		
 		case 15:
-			return "DLCC_BOUNT";
+			return "DLCC_BOUNT" /* GXT: Bounty Hunter */;
 		
 		case 16:
-			return "DLCC_ACTIO";
+			return "DLCC_ACTIO" /* GXT: Action Figures */;
 		
 		case 17:
-			return "DLCC_MOVIE";
+			return "DLCC_MOVIE" /* GXT: Movie Props */;
 		
 		case 18:
-			return "DLCC_TUNER";
+			return "DLCC_TUNER" /* GXT: Los Santos Tuners */;
 		
 		case 19:
-			return "DLCC_CONTR";
+			return "DLCC_CONTR" /* GXT: The Contract */;
 		
 		case 20:
-			return "DLCC_PREMI";
+			return "DLCC_PREMI" /* GXT: Premium Deluxe Motorsport */;
 		
 		default:
 	}
@@ -8701,34 +8701,34 @@ char* func_246(int iParam0)//Position - 0x94E9
 	switch (iParam0)
 	{
 		case 0:
-			return "AMRCTT_DESC0";
+			return "AMRCTT_DESC0" /* GXT: Ever wonder why large-scale construction projects take so long? It's obvious when you think about it: they make such damn good RC tracks... */;
 		
 		case 1:
-			return "AMRCTT_DESC1";
+			return "AMRCTT_DESC1" /* GXT: Sociologists have concluded that one of the few ways to make the back alleys around Cypress Flats even less safe would be the presence of high-speed, knee-high RC cars... */;
 		
 		case 2:
-			return "AMRCTT_DESC2";
+			return "AMRCTT_DESC2" /* GXT: Don't worry. It's almost certainly what they would have wanted... */;
 		
 		case 3:
-			return "AMRCTT_DESC3";
+			return "AMRCTT_DESC3" /* GXT: How do you piss off a cartel lord without putting yourself in line to be decapitated? Step one, grab an RC car... */;
 		
 		case 4:
-			return "AMRCTT_DESC4";
+			return "AMRCTT_DESC4" /* GXT: Bonus points available if you manage to knock someone off the half pipe. */;
 		
 		case 5:
-			return "AMRCTT_DESC5";
+			return "AMRCTT_DESC5" /* GXT: This is one of the few ways to enjoy a race through Davis Quartz while also avoiding preventable lung disease... */;
 		
 		case 6:
-			return "AMRCTT_DESC6";
+			return "AMRCTT_DESC6" /* GXT: Time to take your long-awaited revenge and kick up sand in the face of all the good-looking, socially competent beachgoers... */;
 		
 		case 7:
-			return "AMRCTT_DESC7";
+			return "AMRCTT_DESC7" /* GXT: Sure, if this is your day job, the unsecured scaffolding and lack of guardrails are hazards. But you're driving an RC car at high speed. And that makes them features... */;
 		
 		case 8:
-			return "AMRCTT_DESC8";
+			return "AMRCTT_DESC8" /* GXT: If there's anything that complements the urbanity of a studio apartment overlooking the canals, it's an RC right through your front window... */;
 		
 		case 9:
-			return "AMRCTT_DESC9";
+			return "AMRCTT_DESC9" /* GXT: Yet another unintended benefit of the fossil fuel economy: really tricky RC tracks. */;
 		
 		default:
 	}
@@ -8740,34 +8740,34 @@ char* func_247(int iParam0)//Position - 0x957E
 	switch (iParam0)
 	{
 		case 0:
-			return "AMRCTT_ROUTE0";
+			return "AMRCTT_ROUTE0" /* GXT: Construction Site I */;
 		
 		case 1:
-			return "AMRCTT_ROUTE1";
+			return "AMRCTT_ROUTE1" /* GXT: Cypress Flats */;
 		
 		case 2:
-			return "AMRCTT_ROUTE2";
+			return "AMRCTT_ROUTE2" /* GXT: Cemetery */;
 		
 		case 3:
-			return "AMRCTT_ROUTE3";
+			return "AMRCTT_ROUTE3" /* GXT: La Fuente Blanca */;
 		
 		case 4:
-			return "AMRCTT_ROUTE4";
+			return "AMRCTT_ROUTE4" /* GXT: Little Seoul Park */;
 		
 		case 5:
-			return "AMRCTT_ROUTE5";
+			return "AMRCTT_ROUTE5" /* GXT: Davis Quartz */;
 		
 		case 6:
-			return "AMRCTT_ROUTE6";
+			return "AMRCTT_ROUTE6" /* GXT: Vespucci Beach */;
 		
 		case 7:
-			return "AMRCTT_ROUTE7";
+			return "AMRCTT_ROUTE7" /* GXT: Construction Site II */;
 		
 		case 8:
-			return "AMRCTT_ROUTE8";
+			return "AMRCTT_ROUTE8" /* GXT: Vespucci Canals */;
 		
 		case 9:
-			return "AMRCTT_ROUTE9";
+			return "AMRCTT_ROUTE9" /* GXT: Power Station */;
 		
 		default:
 	}
@@ -9219,20 +9219,20 @@ void func_257(int iParam0, int iParam1, struct<3> Param2, int iParam3, char* sPa
 	if (iParam10 == 134)
 	{
 		iVar0 = 29;
-		func_267(iParam0, 0, iParam1, 0, "PM_PLAYERS", iParam8, iParam9);
-		func_264(iParam0, 1, iParam1, 1, "PM_TYPE", func_265(iParam10, iParam11, iParam12, iParam13, 0, iParam24), sVar2, iVar0, BitTest(iParam12, 14));
-		func_262(iParam0, 2, iParam1, 2, "PM_PTIME", "STRTNM1", func_263(func_45()));
-		func_230(iParam0, 3, iParam1, 3, 0, "PM_AREA", ZONE::GET_NAME_OF_ZONE(Param2), 0, 0, 0, 0);
+		func_267(iParam0, 0, iParam1, 0, "PM_PLAYERS" /* GXT: Players */, iParam8, iParam9);
+		func_264(iParam0, 1, iParam1, 1, "PM_TYPE" /* GXT: Type */, func_265(iParam10, iParam11, iParam12, iParam13, 0, iParam24), sVar2, iVar0, BitTest(iParam12, 14));
+		func_262(iParam0, 2, iParam1, 2, "PM_PTIME" /* GXT: Par Time */, "STRTNM1" /* GXT: ~a~ */, func_263(func_45()));
+		func_230(iParam0, 3, iParam1, 3, 0, "PM_AREA" /* GXT: Area */, ZONE::GET_NAME_OF_ZONE(Param2), 0, 0, 0, 0);
 		func_226(iParam0, 4, iParam1, 4, 0, " ", 0, 4);
 		func_226(iParam0, 5, iParam1, 5, 0, sParam6, iParam22, 5);
 	}
 	else if (iParam10 == 254)
 	{
 		iVar0 = 29;
-		func_267(iParam0, 0, iParam1, 0, "PM_PLAYERS", iParam8, iParam9);
-		func_264(iParam0, 1, iParam1, 1, "PM_TYPE", func_265(iParam10, iParam11, iParam12, iParam13, 0, iParam24), sVar2, iVar0, BitTest(iParam12, 14));
-		func_262(iParam0, 2, iParam1, 2, "PM_PTIME", "STRTNM1", func_261(func_43()));
-		func_230(iParam0, 3, iParam1, 3, 0, "PM_AREA", ZONE::GET_NAME_OF_ZONE(func_260(func_43())), 0, 0, 0, 0);
+		func_267(iParam0, 0, iParam1, 0, "PM_PLAYERS" /* GXT: Players */, iParam8, iParam9);
+		func_264(iParam0, 1, iParam1, 1, "PM_TYPE" /* GXT: Type */, func_265(iParam10, iParam11, iParam12, iParam13, 0, iParam24), sVar2, iVar0, BitTest(iParam12, 14));
+		func_262(iParam0, 2, iParam1, 2, "PM_PTIME" /* GXT: Par Time */, "STRTNM1" /* GXT: ~a~ */, func_261(func_43()));
+		func_230(iParam0, 3, iParam1, 3, 0, "PM_AREA" /* GXT: Area */, ZONE::GET_NAME_OF_ZONE(func_260(func_43())), 0, 0, 0, 0);
 		func_226(iParam0, 4, iParam1, 4, 0, " ", 0, 4);
 		func_226(iParam0, 5, iParam1, 5, 0, sParam6, iParam22, 5);
 	}
@@ -9241,30 +9241,30 @@ void func_257(int iParam0, int iParam1, struct<3> Param2, int iParam3, char* sPa
 		iVar3 = 0;
 		if (iParam3 == -1)
 		{
-			func_230(iParam0, iVar3, iParam1, iVar3, 1, "PM_RATING", "PM_RATING_N", 0, 0, 0, 0);
+			func_230(iParam0, iVar3, iParam1, iVar3, 1, "PM_RATING" /* GXT: Rating */, "PM_RATING_N" /* GXT: Not yet rated */, 0, 0, 0, 0);
 		}
 		else
 		{
-			func_230(iParam0, iVar3, iParam1, iVar3, 1, "PM_RATING", "PM_RATING_V", iParam3, 0, 0, 0);
+			func_230(iParam0, iVar3, iParam1, iVar3, 1, "PM_RATING" /* GXT: Rating */, "PM_RATING_V" /* GXT: ~1~% */, iParam3, 0, 0, 0);
 		}
 		iVar3++;
-		func_230(iParam0, iVar3, iParam1, iVar3, 0, "PM_CREATED", sParam4, 0, 1, 1, bParam20);
+		func_230(iParam0, iVar3, iParam1, iVar3, 0, "PM_CREATED" /* GXT: Created by */, sParam4, 0, 1, 1, bParam20);
 		iVar3++;
-		func_259(iParam0, iVar3, iParam1, iVar3, "PM_RANK", "NUMBER", iParam7);
+		func_259(iParam0, iVar3, iParam1, iVar3, "PM_RANK" /* GXT: Opens at Rank */, "NUMBER", iParam7);
 		iVar3++;
 		if (iParam9 > func_258())
 		{
 			iParam9 = func_258();
 		}
-		func_267(iParam0, iVar3, iParam1, iVar3, "PM_PLAYERS", iParam8, iParam9);
+		func_267(iParam0, iVar3, iParam1, iVar3, "PM_PLAYERS" /* GXT: Players */, iParam8, iParam9);
 		iVar3++;
 		if (iParam19 > 1)
 		{
-			func_259(iParam0, iVar3, iParam1, iVar3, "PM_TEAMS", "NUMBER", iParam19);
+			func_259(iParam0, iVar3, iParam1, iVar3, "PM_TEAMS" /* GXT: Teams */, "NUMBER", iParam19);
 			iVar3++;
-			func_264(iParam0, iVar3, iParam1, iVar3, "PM_TYPE", func_265(iParam10, iParam11, iParam12, iParam13, 0, iParam24), sVar2, iVar0, BitTest(iParam12, 14));
+			func_264(iParam0, iVar3, iParam1, iVar3, "PM_TYPE" /* GXT: Type */, func_265(iParam10, iParam11, iParam12, iParam13, 0, iParam24), sVar2, iVar0, BitTest(iParam12, 14));
 			iVar3++;
-			func_230(iParam0, iVar3, iParam1, iVar3, 0, "PM_AREA", ZONE::GET_NAME_OF_ZONE(Param2), 0, 0, 0, 0);
+			func_230(iParam0, iVar3, iParam1, iVar3, 0, "PM_AREA" /* GXT: Area */, ZONE::GET_NAME_OF_ZONE(Param2), 0, 0, 0, 0);
 			iVar3++;
 			if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam6))
 			{
@@ -9283,9 +9283,9 @@ void func_257(int iParam0, int iParam1, struct<3> Param2, int iParam3, char* sPa
 		}
 		else
 		{
-			func_264(iParam0, iVar3, iParam1, iVar3, "PM_TYPE", func_265(iParam10, iParam11, iParam12, iParam13, 0, iParam24), sVar2, iVar0, BitTest(iParam12, 14));
+			func_264(iParam0, iVar3, iParam1, iVar3, "PM_TYPE" /* GXT: Type */, func_265(iParam10, iParam11, iParam12, iParam13, 0, iParam24), sVar2, iVar0, BitTest(iParam12, 14));
 			iVar3++;
-			func_230(iParam0, iVar3, iParam1, iVar3, 0, "PM_AREA", ZONE::GET_NAME_OF_ZONE(Param2), 0, 0, 0, 0);
+			func_230(iParam0, iVar3, iParam1, iVar3, 0, "PM_AREA" /* GXT: Area */, ZONE::GET_NAME_OF_ZONE(Param2), 0, 0, 0, 0);
 			iVar3++;
 			if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam6))
 			{
@@ -9587,80 +9587,80 @@ char* func_265(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 {
 	if (func_266(iParam0, iParam1, iParam5))
 	{
-		return "PM_ARENA";
+		return "PM_ARENA" /* GXT: Arena War */;
 	}
 	else if (iParam0 == 1)
 	{
 		if (iParam1 == 1)
 		{
-			return "FMMC_RSTAR_TDM";
+			return "FMMC_RSTAR_TDM" /* GXT: Team Deathmatch */;
 		}
 		else if (iParam1 == 2)
 		{
-			return "FMMC_RSTAR_VDM";
+			return "FMMC_RSTAR_VDM" /* GXT: Vehicle Deathmatch */;
 		}
 		else if (iParam1 == 3)
 		{
-			return "FMMC_RSTAR_KOT";
+			return "FMMC_RSTAR_KOT" /* GXT: King of the Hill */;
 		}
 		else if (iParam1 == 4)
 		{
-			return "FMMC_RSTAR_KOTT";
+			return "FMMC_RSTAR_KOTT" /* GXT: Team King of the Hill */;
 		}
 		else
 		{
-			return "FMMC_RSTAR_DM";
+			return "FMMC_RSTAR_DM" /* GXT: Deathmatch */;
 		}
 	}
 	else if (iParam0 == 2)
 	{
 		if (iParam1 == 0 || iParam1 == 1)
 		{
-			return "FMMC_RSTAR_LR";
+			return "FMMC_RSTAR_LR" /* GXT: Land Race */;
 		}
 		else if (iParam1 == 10 || iParam1 == 11)
 		{
-			return "FMMC_RSTAR_OFR";
+			return "FMMC_RSTAR_OFR" /* GXT: On Foot Race */;
 		}
 		else if (iParam1 == 6 || iParam1 == 7)
 		{
-			return "FMMC_RSTAR_STR";
+			return "FMMC_RSTAR_STR" /* GXT: Stunt Race */;
 		}
 		else if (iParam1 == 18 || iParam1 == 19)
 		{
-			return "FMMC_RSTAR_TAR";
+			return "FMMC_RSTAR_TAR" /* GXT: Target Assault Race */;
 		}
 		else if (iParam1 == 12 || iParam1 == 13)
 		{
-			return "FMMC_RSTAR_BR";
+			return "FMMC_RSTAR_BR" /* GXT: Bike Race */;
 		}
 		else if (iParam1 == 2 || iParam1 == 3)
 		{
-			return "FMMC_RSTAR_WR";
+			return "FMMC_RSTAR_WR" /* GXT: Sea Race */;
 		}
 		else if (iParam1 == 4 || iParam1 == 5)
 		{
-			return "FMMC_RSTAR_AR";
+			return "FMMC_RSTAR_AR" /* GXT: Air Race */;
 		}
 		else if (iParam1 == 24 || iParam1 == 25)
 		{
-			return "FMMC_RSTAR_OW";
+			return "FMMC_RSTAR_OW" /* GXT: Open Wheel Race */;
 		}
 		else if (iParam1 == 26)
 		{
-			return "FMMC_RSTAR_PR";
+			return "FMMC_RSTAR_PR" /* GXT: Pursuit Race */;
 		}
 		else if (iParam1 == 27)
 		{
-			return "FMMC_RSTAR_STRTR";
+			return "FMMC_RSTAR_STRTR" /* GXT: Street Race */;
 		}
-		return "FMMC_RSTAR_RA";
+		return "FMMC_RSTAR_RA" /* GXT: Race */;
 	}
 	else if (iParam0 == 0 || iParam0 == 9)
 	{
 		if (iParam1 == 5)
 		{
-			return "FMMC_RSTAR_MLTS";
+			return "FMMC_RSTAR_MLTS" /* GXT: Last Team Standing */;
 		}
 		else if (iParam1 == 9)
 		{
@@ -9670,74 +9670,74 @@ char* func_265(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 		{
 			if (BitTest(iParam2, 20))
 			{
-				return "FMMC_RSTAR_CTNT";
+				return "FMMC_RSTAR_CTNT" /* GXT: Capture - Contend */;
 			}
 			else if (BitTest(iParam2, 21))
 			{
-				return "FMMC_RSTAR_GTA";
+				return "FMMC_RSTAR_GTA" /* GXT: Capture - GTA */;
 			}
 			else if (BitTest(iParam2, 22))
 			{
-				return "FMMC_RSTAR_HOLD";
+				return "FMMC_RSTAR_HOLD" /* GXT: Capture - Hold */;
 			}
 			else if (BitTest(iParam2, 23))
 			{
-				return "FMMC_RSTAR_RAID";
+				return "FMMC_RSTAR_RAID" /* GXT: Capture - Raid */;
 			}
 			else
 			{
-				return "FMMC_RSTAR_MCTF";
+				return "FMMC_RSTAR_MCTF" /* GXT: Capture */;
 			}
 		}
 		else if (iParam1 == 4)
 		{
 			if ((((((iParam5 > 0 || iParam3 != 0) || BitTest(iParam2, 15)) || BitTest(iParam2, 18)) || BitTest(iParam2, 19)) || BitTest(iParam2, 29)) || BitTest(iParam2, 28))
 			{
-				return "FMMC_RSTAR_MAM";
+				return "FMMC_RSTAR_MAM" /* GXT: Adversary Mode */;
 			}
 			else
 			{
-				return "FMMC_RSTAR_MVS";
+				return "FMMC_RSTAR_MVS" /* GXT: Versus Mission */;
 			}
 		}
 		else if (iParam1 == 1)
 		{
 			if (bParam4)
 			{
-				return "FMMC_RSTAR_HFS";
+				return "FMMC_RSTAR_HFS" /* GXT: Heists */;
 			}
 			else
 			{
-				return "FMMC_RSTAR_HF";
+				return "FMMC_RSTAR_HF" /* GXT: Heist */;
 			}
 		}
 		else if (iParam1 == 7)
 		{
 			if (bParam4)
 			{
-				return "FMMC_RSTAR_HPS";
+				return "FMMC_RSTAR_HPS" /* GXT: Setups */;
 			}
 			else
 			{
-				return "FMMC_RSTAR_HP";
+				return "FMMC_RSTAR_HP" /* GXT: Setup */;
 			}
 		}
 	}
 	else if (iParam0 == 6)
 	{
-		return "FMMC_RSTAR_GA";
+		return "FMMC_RSTAR_GA" /* GXT: Gang Attack */;
 	}
 	else if (iParam0 == 3)
 	{
-		return "FMMC_RSTAR_HM";
+		return "FMMC_RSTAR_HM" /* GXT: Survival */;
 	}
 	else if (iParam0 == 8)
 	{
-		return "FMMC_RSTAR_BJ";
+		return "FMMC_RSTAR_BJ" /* GXT: Parachuting */;
 	}
 	else if (iParam0 == 7)
 	{
-		return "FMMC_RSTAR_MLTS";
+		return "FMMC_RSTAR_MLTS" /* GXT: Last Team Standing */;
 	}
 	else if (iParam0 == 165)
 	{
@@ -9745,17 +9745,17 @@ char* func_265(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 	}
 	else if (iParam0 == 134)
 	{
-		return "AMTT_BLIP";
+		return "AMTT_BLIP" /* GXT: Time Trial */;
 	}
 	else if (iParam0 == 254)
 	{
-		return "RC_AMTT_BLIP";
+		return "RC_AMTT_BLIP" /* GXT: RC Bandito Time Trial */;
 	}
 	if (bParam4)
 	{
-		return "FMMC_RSTAR_OM";
+		return "FMMC_RSTAR_OM" /* GXT: Other Missions */;
 	}
-	return "FMMC_RSTAR_MS";
+	return "FMMC_RSTAR_MS" /* GXT: Mission */;
 }
 
 int func_266(int iParam0, int iParam1, int iParam2)//Position - 0xAF2E
@@ -9816,7 +9816,7 @@ void func_267(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4,
 		func_41(sParam4);
 		if (iParam5 != iParam6)
 		{
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_PLAYERS_V");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_PLAYERS_V" /* GXT: ~1~ - ~1~ */);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iParam5);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iParam6);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -9963,7 +9963,7 @@ char* func_269(int iParam0, int iParam1)//Position - 0xB29F
 
 char* func_270()//Position - 0xB2BF
 {
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREATOR_NO_T");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREATOR_NO_T" /* GXT: No translation. */);
 }
 
 int func_271(int iParam0, var uParam1)//Position - 0xB2CF
@@ -10037,21 +10037,21 @@ void func_272(int iParam0)//Position - 0xB36E
 		}
 		else
 		{
-			func_230(iVar0, iVar1, iVar2, iVar1, 0, "FMMC_VEH_CL", func_277(Global_262145.f_6230[Global_1977014]), 0, 0, 0, 0);
+			func_230(iVar0, iVar1, iVar2, iVar1, 0, "FMMC_VEH_CL" /* GXT: Class */, func_277(Global_262145.f_6230[Global_1977014]), 0, 0, 0, 0);
 			iVar1++;
 		}
 	}
 	if (func_276(iParam0) == func_275(iParam0))
 	{
-		func_259(iVar0, iVar1, iVar2, iVar1, "PM_PLAYERS", "NUMBER", func_276(iParam0));
+		func_259(iVar0, iVar1, iVar2, iVar1, "PM_PLAYERS" /* GXT: Players */, "NUMBER", func_276(iParam0));
 		iVar1++;
 	}
 	else
 	{
-		func_267(iVar0, iVar1, iVar2, iVar1, "PM_PLAYERS", func_276(iParam0), func_275(iParam0));
+		func_267(iVar0, iVar1, iVar2, iVar1, "PM_PLAYERS" /* GXT: Players */, func_276(iParam0), func_275(iParam0));
 		iVar1++;
 	}
-	func_230(iVar0, iVar1, iVar2, iVar1, 0, "DLCC_TYPE", func_274(iParam0), 0, 0, 0, 0);
+	func_230(iVar0, iVar1, iVar2, iVar1, 0, "DLCC_TYPE" /* GXT: Type */, func_274(iParam0), 0, 0, 0, 0);
 	iVar1++;
 	func_226(iVar0, iVar1, iVar2, iVar1, 0, " ", 0, 4);
 	iVar1++;
@@ -10066,61 +10066,61 @@ char* func_273(int iParam0)//Position - 0xB506
 	switch (iParam0)
 	{
 		case 99:
-			return "SIR_STUNT";
+			return "SIR_STUNT" /* GXT: Strap in for a series of gravity-defying Stunt Races. */;
 		
 		case 0:
-			return "SIR_PREMIUM";
+			return "SIR_PREMIUM" /* GXT: Big risk. Big Reward. Take part in this weekly race challenge. */;
 		
 		case 1:
-			return "SIR_FEATURED";
+			return "SIR_FEATURED" /* GXT: Join the featured modes of the day. */;
 		
 		case 2:
-			return "SIR_ADVLARGE";
+			return "SIR_ADVLARGE" /* GXT: Get ready for an all-out war in a series of Adversary Modes for up to 16 players. */;
 		
 		case 3:
-			return "SIR_ADVMEDIUM";
+			return "SIR_ADVMEDIUM" /* GXT: Up the stakes and take on the competition in a series of Adversary Modes for up to 8 players. */;
 		
 		case 4:
-			return "SIR_ADVSMALL";
+			return "SIR_ADVSMALL" /* GXT: Put your skills to the test in a series of savage Adversary Modes for up to 4 players. */;
 		
 		case 5:
-			return "SIR_SPECIAL";
+			return "SIR_SPECIAL" /* GXT: Buckle up, fly or submerge under water in a series of Special Races. */;
 		
 		case 6:
-			return "SIR_BUNKER";
+			return "SIR_BUNKER" /* GXT: Head indoors for a series of brutal Adversary Modes. */;
 		
 		case 7:
-			return "SIR_TRANSFORM";
+			return "SIR_TRANSFORM" /* GXT: Take to land, sea and sky in a series of Transform Races. */;
 		
 		case 8:
-			return "SIR_TASSAULT";
+			return "SIR_TASSAULT" /* GXT: Prepare for battle in a series of Target Assault jobs. */;
 		
 		case 9:
-			return "SIR_HOTRING";
+			return "SIR_HOTRING" /* GXT: Hurtle to the finish line in a series of Hotring Circuit Races. */;
 		
 		case 10:
-			return "SIR_ARENAWAR";
+			return "SIR_ARENAWAR" /* GXT: Be the last contender standing in a series of monstrous Arena War Modes. */;
 		
 		case 11:
-			return "SIR_RACE";
+			return "SIR_RACE" /* GXT: Hit the gas in a series of high-octane Races. */;
 		
 		case 12:
-			return "SIR_SURVIVAL";
+			return "SIR_SURVIVAL" /* GXT: Hunker down and test your mettle in a series of Survivals. */;
 		
 		case 13:
-			return "SIR_OPENWHEEL";
+			return "SIR_OPENWHEEL" /* GXT: Race to the finish in a series of high-speed Open Wheel Races. */;
 		
 		case 14:
-			return "SIR_STREETRACE";
+			return "SIR_STREETRACE" /* GXT: Weave through the city in a series of urban Street Races. */;
 		
 		case 15:
-			return "SIR_PURSUIT";
+			return "SIR_PURSUIT" /* GXT: Dodge the cops and rule the streets in a series of Pursuit Races. */;
 		
 		case 17:
-			return "SIR_COMMUN";
+			return "SIR_COMMUN" /* GXT: Test your skills to the limit in a series of white-knuckle races and Adversary Modes, created entirely by the Grand Theft Auto Online community. It's anyone's game... */;
 		
 		case 18:
-			return "SIR_CAYO";
+			return "SIR_CAYO" /* GXT: Head to the beautiful, bloodstained shores of Cayo Perico for a welcome dose of sun, sea and unbridled mayhem. */;
 		
 		default:
 	}
@@ -10132,61 +10132,61 @@ char* func_274(int iParam0)//Position - 0xB610
 	switch (iParam0)
 	{
 		case 99:
-			return "SIT_SERIES";
+			return "SIT_SERIES" /* GXT: Series Mode */;
 		
 		case 0:
-			return "SIT_SERIES";
+			return "SIT_SERIES" /* GXT: Series Mode */;
 		
 		case 1:
-			return "SIT_SERIES";
+			return "SIT_SERIES" /* GXT: Series Mode */;
 		
 		case 2:
-			return "SIT_SERIES";
+			return "SIT_SERIES" /* GXT: Series Mode */;
 		
 		case 3:
-			return "SIT_SERIES";
+			return "SIT_SERIES" /* GXT: Series Mode */;
 		
 		case 4:
-			return "SIT_SERIES";
+			return "SIT_SERIES" /* GXT: Series Mode */;
 		
 		case 5:
-			return "SIT_SERIES";
+			return "SIT_SERIES" /* GXT: Series Mode */;
 		
 		case 6:
-			return "SIT_SERIES";
+			return "SIT_SERIES" /* GXT: Series Mode */;
 		
 		case 7:
-			return "SIT_SERIES";
+			return "SIT_SERIES" /* GXT: Series Mode */;
 		
 		case 8:
-			return "SIT_SERIES";
+			return "SIT_SERIES" /* GXT: Series Mode */;
 		
 		case 9:
-			return "SIT_SERIES";
+			return "SIT_SERIES" /* GXT: Series Mode */;
 		
 		case 10:
-			return "SIT_SERIES";
+			return "SIT_SERIES" /* GXT: Series Mode */;
 		
 		case 11:
-			return "SIT_SERIES";
+			return "SIT_SERIES" /* GXT: Series Mode */;
 		
 		case 12:
-			return "SIT_SERIES";
+			return "SIT_SERIES" /* GXT: Series Mode */;
 		
 		case 13:
-			return "SIT_SERIES";
+			return "SIT_SERIES" /* GXT: Series Mode */;
 		
 		case 14:
-			return "SIT_SERIES";
+			return "SIT_SERIES" /* GXT: Series Mode */;
 		
 		case 15:
-			return "SIT_SERIES";
+			return "SIT_SERIES" /* GXT: Series Mode */;
 		
 		case 17:
-			return "SIT_SERIES";
+			return "SIT_SERIES" /* GXT: Series Mode */;
 		
 		case 18:
-			return "SIT_SERIES";
+			return "SIT_SERIES" /* GXT: Series Mode */;
 		
 		default:
 	}
@@ -10330,61 +10330,61 @@ char* func_277(int iParam0)//Position - 0xB8CA
 	switch (iParam0)
 	{
 		case 0:
-			return "FMSTP_PRC0";
+			return "FMSTP_PRC0" /* GXT: Compacts */;
 		
 		case 1:
-			return "FMSTP_PRC1";
+			return "FMSTP_PRC1" /* GXT: Sedans */;
 		
 		case 2:
-			return "FMSTP_PRC2";
+			return "FMSTP_PRC2" /* GXT: SUV */;
 		
 		case 3:
-			return "FMSTP_PRC3";
+			return "FMSTP_PRC3" /* GXT: Coupes */;
 		
 		case 4:
-			return "FMSTP_PRC4";
+			return "FMSTP_PRC4" /* GXT: Muscle */;
 		
 		case 5:
-			return "FMSTP_PRC5";
+			return "FMSTP_PRC5" /* GXT: Classics */;
 		
 		case 6:
-			return "FMSTP_PRC6";
+			return "FMSTP_PRC6" /* GXT: Sports */;
 		
 		case 7:
-			return "FMSTP_PRC7";
+			return "FMSTP_PRC7" /* GXT: Super */;
 		
 		case 8:
-			return "FMSTP_PRC8";
+			return "FMSTP_PRC8" /* GXT: Motorcycles */;
 		
 		case 9:
-			return "FMSTP_PRC9";
+			return "FMSTP_PRC9" /* GXT: Off Road */;
 		
 		case 10:
-			return "FMSTP_PRC10";
+			return "FMSTP_PRC10" /* GXT: Industrial */;
 		
 		case 11:
-			return "FMSTP_PRC11";
+			return "FMSTP_PRC11" /* GXT: Utility */;
 		
 		case 12:
-			return "FMSTP_PRC12";
+			return "FMSTP_PRC12" /* GXT: Vans */;
 		
 		case 13:
-			return "FMSTP_PRC13";
+			return "FMSTP_PRC13" /* GXT: Cycles */;
 		
 		case 14:
-			return "FMSTP_PRC14";
+			return "FMSTP_PRC14" /* GXT: Open */;
 		
 		case 15:
-			return "FMSTP_PRC15";
+			return "FMSTP_PRC15" /* GXT: Special */;
 		
 		case 16:
-			return "FMSTP_PRC16";
+			return "FMSTP_PRC16" /* GXT: Weaponized */;
 		
 		case 17:
-			return "FMSTP_PRC17";
+			return "FMSTP_PRC17" /* GXT: Arena Contender */;
 		
 		case 18:
-			return "FMSTP_PRC18";
+			return "FMSTP_PRC18" /* GXT: Open Wheel */;
 		
 		case 19:
 			return "FMSTP_PRC19";
@@ -10394,7 +10394,7 @@ char* func_277(int iParam0)//Position - 0xB8CA
 		
 		default:
 	}
-	return "FMSTP_PRC14";
+	return "FMSTP_PRC14" /* GXT: Open */;
 }
 
 char* func_278(int iParam0)//Position - 0xB9EE
@@ -10468,61 +10468,61 @@ char* func_279(int iParam0)//Position - 0xBAF8
 	switch (iParam0)
 	{
 		case 99:
-			return "SIN_STUNT";
+			return "SIN_STUNT" /* GXT: Stunt Series */;
 		
 		case 0:
-			return "SIN_PREMIUM";
+			return "SIN_PREMIUM" /* GXT: Premium Race */;
 		
 		case 1:
-			return "SIN_FEATURED";
+			return "SIN_FEATURED" /* GXT: Featured Series */;
 		
 		case 2:
-			return "SIN_ADVLARGE";
+			return "SIN_ADVLARGE" /* GXT: Adversary Series (16) */;
 		
 		case 3:
-			return "SIN_ADVMEDIUM";
+			return "SIN_ADVMEDIUM" /* GXT: Adversary Series (8) */;
 		
 		case 4:
-			return "SIN_ADVSMALL";
+			return "SIN_ADVSMALL" /* GXT: Adversary Series (4) */;
 		
 		case 5:
-			return "SIN_SPECIAL";
+			return "SIN_SPECIAL" /* GXT: Special Race Series */;
 		
 		case 6:
-			return "SIN_BUNKER";
+			return "SIN_BUNKER" /* GXT: Bunker Series */;
 		
 		case 7:
-			return "SIN_TRANSFORM";
+			return "SIN_TRANSFORM" /* GXT: Transform Series */;
 		
 		case 8:
-			return "SIN_TASSAULT";
+			return "SIN_TASSAULT" /* GXT: Target Assault Series */;
 		
 		case 9:
-			return "SIN_HOTRING";
+			return "SIN_HOTRING" /* GXT: San Andreas Super Sport Series */;
 		
 		case 10:
-			return "SIN_ARENAWAR";
+			return "SIN_ARENAWAR" /* GXT: Arena War Series */;
 		
 		case 11:
-			return "SIN_RACE";
+			return "SIN_RACE" /* GXT: Race Series */;
 		
 		case 12:
-			return "SIN_SURVIVAL";
+			return "SIN_SURVIVAL" /* GXT: Survival Series */;
 		
 		case 13:
-			return "SIN_OPENWHEEL";
+			return "SIN_OPENWHEEL" /* GXT: Open Wheel Series */;
 		
 		case 14:
-			return "SIN_STREETRACE";
+			return "SIN_STREETRACE" /* GXT: Street Race Series */;
 		
 		case 15:
-			return "SIN_PURSUIT";
+			return "SIN_PURSUIT" /* GXT: Pursuit Series */;
 		
 		case 17:
-			return "SIN_COMMUN";
+			return "SIN_COMMUN" /* GXT: Community Series */;
 		
 		case 18:
-			return "SIN_CAYO";
+			return "SIN_CAYO" /* GXT: Cayo Perico Series */;
 		
 		default:
 	}

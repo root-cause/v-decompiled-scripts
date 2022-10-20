@@ -1238,7 +1238,7 @@ void func_42(int iParam0)//Position - 0x10AA
 
 void func_43()//Position - 0x10FD
 {
-	if (func_71("ARC_CAB_FRT_TLL_H"))
+	if (func_71("ARC_CAB_FRT_TLL_H" /* GXT: Press ~INPUT_FRONTEND_ACCEPT~ to receive fortune. ~n~Press ~INPUT_FRONTEND_CANCEL~ to exit. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}

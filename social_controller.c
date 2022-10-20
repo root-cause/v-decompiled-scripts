@@ -404,7 +404,7 @@ void func_2()//Position - 0x134
 				if (!func_4())
 				{
 					func_3(&uLocal_294);
-					HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("SC_PLAY_REM");
+					HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("SC_PLAY_REM" /* GXT: Enter a Rockstar Tournament for a chance to win numerous in-game prizes! Launch the Qualification Playlist from the Online Menu for a chance to compete. */);
 					HUD::END_TEXT_COMMAND_THEFEED_POST_TICKER(false, true);
 				}
 			}
@@ -2665,7 +2665,7 @@ void func_53(var uParam0, bool bParam1)//Position - 0x2754
 												if (func_51() && func_48())
 												{
 													SOCIALCLUB::SC_INBOX_MESSAGE_DO_APPLY(iVar1);
-													func_113(0, "XPT_MISSVER", joaat("XPTYPE_SOCIALCLUB"), 475954354, 5000, 1, -1, 0);
+													func_113(0, "XPT_MISSVER" /* GXT: RP for verified mission: ~1~. */, joaat("XPTYPE_SOCIALCLUB"), 475954354, 5000, 1, -1, 0);
 													if (SOCIALCLUB::SC_INBOX_MESSAGE_GET_DATA_STRING(iVar1, "msg", &uVar3))
 													{
 													}
@@ -2751,7 +2751,7 @@ void func_53(var uParam0, bool bParam1)//Position - 0x2754
 										{
 											if (SOCIALCLUB::SC_INBOX_MESSAGE_GET_DATA_STRING(iVar1, "gtag", &sVar4))
 											{
-												func_75("SC_PUBLISH", &sVar4, &cVar5, 0, 0);
+												func_75("SC_PUBLISH" /* GXT: ~a~ published the Job "~a~". */, &sVar4, &cVar5, 0, 0);
 												SOCIALCLUB::SC_INBOX_SET_MESSAGE_AS_READ_AT_INDEX(iVar1);
 												uParam0->f_168 = 1;
 											}
@@ -2783,7 +2783,7 @@ void func_53(var uParam0, bool bParam1)//Position - 0x2754
 									{
 										if (func_51() && func_48())
 										{
-											func_73("FM_TXT_BNTY7", &Var6, Var6.f_17, 0, 0);
+											func_73("FM_TXT_BNTY7" /* GXT: ~a~ survived the $~1~ Bounty you placed on them. */, &Var6, Var6.f_17, 0, 0);
 										}
 										func_66("LESTER", "3", 12, "CT_AUD", "MPCT_BNTFL");
 									}
@@ -2792,7 +2792,7 @@ void func_53(var uParam0, bool bParam1)//Position - 0x2754
 										func_66("LESTER", "3", 12, "CT_AUD", "MPCT_BNTSuc");
 										if (func_51() && func_48())
 										{
-											func_63("FM_TXT_BNTY5", &Var6, &(Var6.f_8), Var6.f_17, 0);
+											func_63("FM_TXT_BNTY5" /* GXT: The $~1~ Bounty on ~a~ has been claimed by ~a~. */, &Var6, &(Var6.f_8), Var6.f_17, 0);
 										}
 									}
 									SOCIALCLUB::SC_INBOX_SET_MESSAGE_AS_READ_AT_INDEX(iVar1);
@@ -2812,7 +2812,7 @@ void func_53(var uParam0, bool bParam1)//Position - 0x2754
 								{
 									if (!uParam0->f_168)
 									{
-										func_56("SC_WON_TOURN", 0);
+										func_56("SC_WON_TOURN" /* GXT: Congratulations! Your Tournament Winners T-shirt can be purchased in any Clothes Shop. */, 0);
 									}
 								}
 							}
@@ -3211,7 +3211,7 @@ void func_76(char* sParam0, int iParam1, int iParam2, int iParam3, char* sParam4
 	switch (iParam2)
 	{
 		case 3:
-			func_78("SC_BTRSCR_SUR", sParam0, sParam4, iParam1, 0, 0);
+			func_78("SC_BTRSCR_SUR" /* GXT: ~a~ beat your best score in the Survival ~a~ with a score of ~1~. */, sParam0, sParam4, iParam1, 0, 0);
 			break;
 		
 		case 1:
@@ -3219,16 +3219,16 @@ void func_76(char* sParam0, int iParam1, int iParam2, int iParam3, char* sParam4
 			{
 				case 0:
 				case 3:
-					func_78("SC_BTRSCR_DMN", sParam0, sParam4, iParam1, 0, 0);
+					func_78("SC_BTRSCR_DMN" /* GXT: ~a~ beat your best score in the standard Deathmatch ~a~ with a score of ~1~. */, sParam0, sParam4, iParam1, 0, 0);
 					break;
 				
 				case 1:
 				case 4:
-					func_78("SC_BTRSCR_DMT", sParam0, sParam4, iParam1, 0, 0);
+					func_78("SC_BTRSCR_DMT" /* GXT: ~a~ beat your best score in the Team Deathmatch ~a~ with a score of ~1~. */, sParam0, sParam4, iParam1, 0, 0);
 					break;
 				
 				case 2:
-					func_78("SC_BTRSCR_DMV", sParam0, sParam4, iParam1, 0, 0);
+					func_78("SC_BTRSCR_DMV" /* GXT: ~a~ beat your best score in the Vehicle Deathmatch ~a~ with a score of ~1~. */, sParam0, sParam4, iParam1, 0, 0);
 					break;
 			}
 			break;
@@ -3237,29 +3237,29 @@ void func_76(char* sParam0, int iParam1, int iParam2, int iParam3, char* sParam4
 			switch (iParam3)
 			{
 				case 0:
-					func_77("SC_BTRSCR_RACN", sParam0, iParam1, sParam4, 0);
+					func_77("SC_BTRSCR_RACN" /* GXT: ~a~ beat your best lap time in the Non-Contact Race ~a~ with a time of ~a~. */, sParam0, iParam1, sParam4, 0);
 					break;
 				
 				case 1:
-					func_77("SC_BTRSCR_RACG", sParam0, iParam1, sParam4, 0);
+					func_77("SC_BTRSCR_RACG" /* GXT: ~a~ beat your best lap time in the GTA Race ~a~ with a time of ~a~. */, sParam0, iParam1, sParam4, 0);
 					break;
 				
 				case 2:
-					func_77("SC_BTRSCR_RACR", sParam0, iParam1, sParam4, 0);
+					func_77("SC_BTRSCR_RACR" /* GXT: ~a~ beat your best lap time in the Rally Race ~a~ with a time of ~a~. */, sParam0, iParam1, sParam4, 0);
 					break;
 				
 				case 3:
-					func_77("SC_BTRSCR_RACN", sParam0, iParam1, sParam4, 0);
+					func_77("SC_BTRSCR_RACN" /* GXT: ~a~ beat your best lap time in the Non-Contact Race ~a~ with a time of ~a~. */, sParam0, iParam1, sParam4, 0);
 					break;
 			}
 			break;
 		
 		case 8:
-			func_77("SC_BTRSCR_BJP", sParam0, iParam1, sParam4, 0);
+			func_77("SC_BTRSCR_BJP" /* GXT: ~a~ beat your best time in the Parachute Jump ~a~ with a time of ~a~. */, sParam0, iParam1, sParam4, 0);
 			break;
 		
 		case 0:
-			func_78("SC_BTRSCR_SUR", sParam0, sParam4, iParam1, 0, 0);
+			func_78("SC_BTRSCR_SUR" /* GXT: ~a~ beat your best score in the Survival ~a~ with a score of ~1~. */, sParam0, sParam4, iParam1, 0, 0);
 			break;
 	}
 }
@@ -5622,7 +5622,7 @@ void func_167(struct<36> Param0, int iParam1)//Position - 0x5E32
 				{
 					if (func_51())
 					{
-						HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_FEED_F100PC_COMP");
+						HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_FEED_F100PC_COMP" /* GXT: ...completed GTAV~n~100 percent. */);
 						StringCopy(&cVar0, "<C>", 64);
 						StringConCat(&cVar0, "~HUD_COLOUR_SOCIAL_CLUB~", 64);
 						StringConCat(&cVar0, &(Param0.f_1), 64);
@@ -5644,7 +5644,7 @@ void func_167(struct<36> Param0, int iParam1)//Position - 0x5E32
 						{
 							if (func_51())
 							{
-								HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_FEED_DRIVEN_ALL_VEH");
+								HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_FEED_DRIVEN_ALL_VEH" /* GXT: ...has driven all vehicles in San Andreas. */);
 								StringCopy(&cVar1, "<C>", 64);
 								StringConCat(&cVar1, "~HUD_COLOUR_SOCIAL_CLUB~", 64);
 								StringConCat(&cVar1, &(Param0.f_1), 64);
@@ -5670,7 +5670,7 @@ void func_167(struct<36> Param0, int iParam1)//Position - 0x5E32
 					{
 						if (func_51())
 						{
-							HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_FEED_RNDEV_COMP");
+							HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_FEED_RNDEV_COMP" /* GXT: ...has completed all Random Events in San Andreas. */);
 							StringCopy(&cVar2, "<C>", 64);
 							StringConCat(&cVar2, "~HUD_COLOUR_SOCIAL_CLUB~", 64);
 							StringConCat(&cVar2, &(Param0.f_1), 64);
@@ -5690,157 +5690,157 @@ void func_167(struct<36> Param0, int iParam1)//Position - 0x5E32
 			case joaat("NUM_HIDDEN_PACKAGES_0"):
 				if (Param0.f_17 == 50)
 				{
-					func_168(Param0, "CELL_FEED_LETTER_SCRAPS");
+					func_168(Param0, "CELL_FEED_LETTER_SCRAPS" /* GXT: ...has collected all Letter Scraps. */);
 				}
 				break;
 			
 			case joaat("NUM_HIDDEN_PACKAGES_1"):
 				if (Param0.f_17 == 50)
 				{
-					func_168(Param0, "CELL_FEED_SPACESHIP_PARTS");
+					func_168(Param0, "CELL_FEED_SPACESHIP_PARTS" /* GXT: ...has collected all Spaceship Parts. */);
 				}
 				break;
 			
 			case joaat("NUM_HIDDEN_PACKAGES_3"):
 				if (Param0.f_17 == 50)
 				{
-					func_168(Param0, "CELL_FEED_SONAR_COLL");
+					func_168(Param0, "CELL_FEED_SONAR_COLL" /* GXT: ...has found all Sonar Collectibles. */);
 				}
 				break;
 			
 			case joaat("SP0_DIST_DRIVING_CAR"):
 				if (Param0.f_18 == 500f)
 				{
-					func_168(Param0, "CELL_FEED_DRIVEN_500");
+					func_168(Param0, "CELL_FEED_DRIVEN_500" /* GXT: ...has driven more than 500 miles in San Andreas. */);
 				}
 				if (Param0.f_18 == 5000f)
 				{
-					func_168(Param0, "CELL_FEED_DRIVEN_5000");
+					func_168(Param0, "CELL_FEED_DRIVEN_5000" /* GXT: ...has driven more than 5000 miles in San Andreas. */);
 				}
 				if (Param0.f_18 == 50000f)
 				{
-					func_168(Param0, "CELL_FEED_DRIVEN_50000");
+					func_168(Param0, "CELL_FEED_DRIVEN_50000" /* GXT: ...has driven more than 50000 miles in San Andreas. */);
 				}
 				break;
 			
 			case joaat("SP0_DIST_DRIVING_PLANE"):
 				if (Param0.f_18 == 500f)
 				{
-					func_168(Param0, "CELL_FEED_FLOWN_500");
+					func_168(Param0, "CELL_FEED_FLOWN_500" /* GXT: ...has flown more than 500 miles in San Andreas. */);
 				}
 				if (Param0.f_18 == 5000f)
 				{
-					func_168(Param0, "CELL_FEED_FLOWN_5000");
+					func_168(Param0, "CELL_FEED_FLOWN_5000" /* GXT: ...has flown more than 5000 miles in San Andreas. */);
 				}
 				if (Param0.f_18 == 50000f)
 				{
-					func_168(Param0, "CELL_FEED_FLOWN_50000");
+					func_168(Param0, "CELL_FEED_FLOWN_50000" /* GXT: ...has flown more than 50000 miles in San Andreas. */);
 				}
 				break;
 			
 			case joaat("SP0_DIST_RUNNING"):
 				if (Param0.f_18 == 50f)
 				{
-					func_168(Param0, "CELL_FEED_RAN_50");
+					func_168(Param0, "CELL_FEED_RAN_50" /* GXT: ...has run more than 50 miles in San Andreas. */);
 				}
 				if (Param0.f_18 == 100f)
 				{
-					func_168(Param0, "CELL_FEED_RAN_100");
+					func_168(Param0, "CELL_FEED_RAN_100" /* GXT: ...has run more than 100 miles in San Andreas. */);
 				}
 				if (Param0.f_18 == 1000f)
 				{
-					func_168(Param0, "CELL_FEED_RAN_1000");
+					func_168(Param0, "CELL_FEED_RAN_1000" /* GXT: ...has run more than 1000 miles in San Andreas. */);
 				}
 				break;
 			
 			case joaat("SP0_DIST_SWIMMING"):
 				if (Param0.f_18 == 50f)
 				{
-					func_168(Param0, "CELL_FEED_SWAM_50");
+					func_168(Param0, "CELL_FEED_SWAM_50" /* GXT: ...has swum more than 50 miles in San Andreas. */);
 				}
 				if (Param0.f_18 == 100f)
 				{
-					func_168(Param0, "CELL_FEED_SWAM_100");
+					func_168(Param0, "CELL_FEED_SWAM_100" /* GXT: ...has swum more than 100 miles in San Andreas. */);
 				}
 				if (Param0.f_18 == 1000f)
 				{
-					func_168(Param0, "CELL_FEED_SWAM_1000");
+					func_168(Param0, "CELL_FEED_SWAM_1000" /* GXT: ...has swum more than 1000 miles in San Andreas. */);
 				}
 				break;
 			
 			case joaat("SP0_BUSTED"):
 				if (Param0.f_17 == 10)
 				{
-					func_168(Param0, "CELL_FEED_BUSTED_10");
+					func_168(Param0, "CELL_FEED_BUSTED_10" /* GXT: ...has been busted 10 times. */);
 				}
 				if (Param0.f_17 == 25)
 				{
-					func_168(Param0, "CELL_FEED_BUSTED_25");
+					func_168(Param0, "CELL_FEED_BUSTED_25" /* GXT: ...has been busted 25 times. */);
 				}
 				if (Param0.f_17 == 50)
 				{
-					func_168(Param0, "CELL_FEED_BUSTED_50");
+					func_168(Param0, "CELL_FEED_BUSTED_50" /* GXT: ...has been busted 50 times. */);
 				}
 				if (Param0.f_17 == 100)
 				{
-					func_168(Param0, "CELL_FEED_BUSTED_100");
+					func_168(Param0, "CELL_FEED_BUSTED_100" /* GXT: ...has been busted 100 times. */);
 				}
 				if (Param0.f_17 == 250)
 				{
-					func_168(Param0, "CELL_FEED_BUSTED_250");
+					func_168(Param0, "CELL_FEED_BUSTED_250" /* GXT: ...has been busted 250 times. */);
 				}
 				break;
 			
 			case joaat("SP0_DEATHS"):
 				if (Param0.f_17 == 10)
 				{
-					func_168(Param0, "CELL_FEED_WASTED_10");
+					func_168(Param0, "CELL_FEED_WASTED_10" /* GXT: ...has been wasted 10 times. */);
 				}
 				if (Param0.f_17 == 25)
 				{
-					func_168(Param0, "CELL_FEED_WASTED_25");
+					func_168(Param0, "CELL_FEED_WASTED_25" /* GXT: ...has been wasted 25 times. */);
 				}
 				if (Param0.f_17 == 50)
 				{
-					func_168(Param0, "CELL_FEED_WASTED_50");
+					func_168(Param0, "CELL_FEED_WASTED_50" /* GXT: ...has been wasted 50 times. */);
 				}
 				if (Param0.f_17 == 100)
 				{
-					func_168(Param0, "CELL_FEED_WASTED_100");
+					func_168(Param0, "CELL_FEED_WASTED_100" /* GXT: ...has been wasted 100 times. */);
 				}
 				if (Param0.f_17 == 250)
 				{
-					func_168(Param0, "CELL_FEED_WASTED_250");
+					func_168(Param0, "CELL_FEED_WASTED_250" /* GXT: ...has been wasted 250 times. */);
 				}
 				break;
 			
 			case joaat("SP0_SHOTS"):
 				if (Param0.f_17 == 1000000)
 				{
-					func_168(Param0, "CELL_FEED_SHOTS_1ML");
+					func_168(Param0, "CELL_FEED_SHOTS_1ML" /* GXT: ...has fired their 1 millionth round of ammunition. */);
 				}
 				if (Param0.f_17 == 2000000)
 				{
-					func_168(Param0, "CELL_FEED_SHOTS_2ML");
+					func_168(Param0, "CELL_FEED_SHOTS_2ML" /* GXT: ...has fired their 2 millionth round of ammunition. */);
 				}
 				if (Param0.f_17 == 3000000)
 				{
-					func_168(Param0, "CELL_FEED_SHOTS_3ML");
+					func_168(Param0, "CELL_FEED_SHOTS_3ML" /* GXT: ...has fired their 3 millionth round of ammunition. */);
 				}
 				if (Param0.f_17 == 4000000)
 				{
-					func_168(Param0, "CELL_FEED_SHOTS_4ML");
+					func_168(Param0, "CELL_FEED_SHOTS_4ML" /* GXT: ...has fired their 4 millionth round of ammunition. */);
 				}
 				if (Param0.f_17 == 5000000)
 				{
-					func_168(Param0, "CELL_FEED_SHOTS_5ML");
+					func_168(Param0, "CELL_FEED_SHOTS_5ML" /* GXT: ...has fired their 5 millionth round of ammunition. */);
 				}
 				break;
 			
 			case joaat("SP0_STARS_EVADED"):
 				if (Param0.f_17 == 5)
 				{
-					func_168(Param0, "CELL_FEED_5STARS_WL");
+					func_168(Param0, "CELL_FEED_5STARS_WL" /* GXT: ...has just evaded a 5 star Wanted Level. */);
 				}
 				break;
 			
@@ -5849,7 +5849,7 @@ void func_167(struct<36> Param0, int iParam1)//Position - 0x5E32
 				{
 					if (!BitTest(Global_113386.f_10194.f_3856, 0))
 					{
-						func_168(Param0, "CELL_FEED_WEB_CAR");
+						func_168(Param0, "CELL_FEED_WEB_CAR" /* GXT: ...has just purchased a car online. */);
 						MISC::SET_BIT(&(Global_113386.f_10194.f_3856), 0);
 					}
 				}
@@ -5857,7 +5857,7 @@ void func_167(struct<36> Param0, int iParam1)//Position - 0x5E32
 				{
 					if (!BitTest(Global_113386.f_10194.f_3856, 1))
 					{
-						func_168(Param0, "CELL_FEED_WEB_RHINO");
+						func_168(Param0, "CELL_FEED_WEB_RHINO" /* GXT: ...has just purchased a Rhino online. */);
 						MISC::SET_BIT(&(Global_113386.f_10194.f_3856), 1);
 					}
 				}
@@ -5865,7 +5865,7 @@ void func_167(struct<36> Param0, int iParam1)//Position - 0x5E32
 				{
 					if (!BitTest(Global_113386.f_10194.f_3856, 2))
 					{
-						func_168(Param0, "CELL_FEED_WEB_BUZZARD");
+						func_168(Param0, "CELL_FEED_WEB_BUZZARD" /* GXT: ...has just purchased a Buzzard online. */);
 						MISC::SET_BIT(&(Global_113386.f_10194.f_3856), 2);
 					}
 				}
@@ -5876,7 +5876,7 @@ void func_167(struct<36> Param0, int iParam1)//Position - 0x5E32
 				{
 					if (!BitTest(Global_113386.f_10194.f_3856, 3))
 					{
-						func_168(Param0, "CELL_FEED_STOCK_INV");
+						func_168(Param0, "CELL_FEED_STOCK_INV" /* GXT: ...has invested a large sum in the stock market. */);
 						MISC::SET_BIT(&(Global_113386.f_10194.f_3856), 3);
 					}
 				}
@@ -5884,7 +5884,7 @@ void func_167(struct<36> Param0, int iParam1)//Position - 0x5E32
 				{
 					if (!BitTest(Global_113386.f_10194.f_3856, 4))
 					{
-						func_168(Param0, "CELL_FEED_STOCK_WIN");
+						func_168(Param0, "CELL_FEED_STOCK_WIN" /* GXT: ...has had a big win playing the stock market. */);
 						MISC::SET_BIT(&(Global_113386.f_10194.f_3856), 4);
 					}
 				}
@@ -5892,7 +5892,7 @@ void func_167(struct<36> Param0, int iParam1)//Position - 0x5E32
 				{
 					if (!BitTest(Global_113386.f_10194.f_3856, 5))
 					{
-						func_168(Param0, "CELL_FEED_STOCK_LOSS");
+						func_168(Param0, "CELL_FEED_STOCK_LOSS" /* GXT: ...has suffered a major loss playing the stock market. */);
 						MISC::SET_BIT(&(Global_113386.f_10194.f_3856), 5);
 					}
 				}
@@ -5903,7 +5903,7 @@ void func_167(struct<36> Param0, int iParam1)//Position - 0x5E32
 				{
 					if (!BitTest(Global_113386.f_10194.f_3856, 10))
 					{
-						func_168(Param0, "CELL_FEED_STNJ_25");
+						func_168(Param0, "CELL_FEED_STNJ_25" /* GXT: ...has completed 25 percent of the stunt jumps in San Andreas. */);
 						MISC::SET_BIT(&(Global_113386.f_10194.f_3856), 10);
 					}
 				}
@@ -5911,7 +5911,7 @@ void func_167(struct<36> Param0, int iParam1)//Position - 0x5E32
 				{
 					if (!BitTest(Global_113386.f_10194.f_3856, 11))
 					{
-						func_168(Param0, "CELL_FEED_STNJ_50");
+						func_168(Param0, "CELL_FEED_STNJ_50" /* GXT: ...has completed 50 percent of the stunt jumps in San Andreas. */);
 						MISC::SET_BIT(&(Global_113386.f_10194.f_3856), 11);
 					}
 				}
@@ -5919,7 +5919,7 @@ void func_167(struct<36> Param0, int iParam1)//Position - 0x5E32
 				{
 					if (!BitTest(Global_113386.f_10194.f_3856, 12))
 					{
-						func_168(Param0, "CELL_FEED_STNJ_75");
+						func_168(Param0, "CELL_FEED_STNJ_75" /* GXT: ...has completed 75 percent of the stunt jumps in San Andreas. */);
 						MISC::SET_BIT(&(Global_113386.f_10194.f_3856), 12);
 					}
 				}
@@ -5927,7 +5927,7 @@ void func_167(struct<36> Param0, int iParam1)//Position - 0x5E32
 				{
 					if (!BitTest(Global_113386.f_10194.f_3856, 13))
 					{
-						func_168(Param0, "CELL_FEED_STNJ_100");
+						func_168(Param0, "CELL_FEED_STNJ_100" /* GXT: ...has completed 100 percent of the stunt jumps in San Andreas. */);
 						MISC::SET_BIT(&(Global_113386.f_10194.f_3856), 13);
 					}
 				}
@@ -5938,7 +5938,7 @@ void func_167(struct<36> Param0, int iParam1)//Position - 0x5E32
 				{
 					if (!BitTest(Global_113386.f_10194.f_3856, 6))
 					{
-						func_168(Param0, "CELL_FEED_UTB_25");
+						func_168(Param0, "CELL_FEED_UTB_25" /* GXT: ...has completed 25 percent of Under The Bridges in San Andreas. */);
 						MISC::SET_BIT(&(Global_113386.f_10194.f_3856), 6);
 					}
 				}
@@ -5946,7 +5946,7 @@ void func_167(struct<36> Param0, int iParam1)//Position - 0x5E32
 				{
 					if (!BitTest(Global_113386.f_10194.f_3856, 7))
 					{
-						func_168(Param0, "CELL_FEED_UTB_50");
+						func_168(Param0, "CELL_FEED_UTB_50" /* GXT: ...has completed 50 percent of Under The Bridges in San Andreas. */);
 						MISC::SET_BIT(&(Global_113386.f_10194.f_3856), 7);
 					}
 				}
@@ -5954,7 +5954,7 @@ void func_167(struct<36> Param0, int iParam1)//Position - 0x5E32
 				{
 					if (!BitTest(Global_113386.f_10194.f_3856, 8))
 					{
-						func_168(Param0, "CELL_FEED_UTB_75");
+						func_168(Param0, "CELL_FEED_UTB_75" /* GXT: ...has completed 75 percent of Under The Bridges in San Andreas. */);
 						MISC::SET_BIT(&(Global_113386.f_10194.f_3856), 8);
 					}
 				}
@@ -5962,7 +5962,7 @@ void func_167(struct<36> Param0, int iParam1)//Position - 0x5E32
 				{
 					if (!BitTest(Global_113386.f_10194.f_3856, 9))
 					{
-						func_168(Param0, "CELL_FEED_UTB_100");
+						func_168(Param0, "CELL_FEED_UTB_100" /* GXT: ...has completed 100 percent of Under The Bridges in San Andreas. */);
 						MISC::SET_BIT(&(Global_113386.f_10194.f_3856), 9);
 					}
 				}
@@ -6033,63 +6033,63 @@ void func_170(struct<36> Param0, int iParam1)//Position - 0x672A
 		switch (iParam1)
 		{
 			case 53:
-				StringCopy(&cVar2, "CELL_F_PROLOGUE", 24);
+				StringCopy(&cVar2, "CELL_F_PROLOGUE" /* GXT: ...has fumbled a heist. */, 24);
 				break;
 			
 			case 44:
-				StringCopy(&cVar2, "CELL_F_LESTER1", 24);
+				StringCopy(&cVar2, "CELL_F_LESTER1" /* GXT: ...has discovered social networking is dangerous. */, 24);
 				break;
 			
 			case 20:
-				StringCopy(&cVar2, "CELL_F_FAMILY4", 24);
+				StringCopy(&cVar2, "CELL_F_FAMILY4" /* GXT: ...has reunited with an old friend. */, 24);
 				break;
 			
 			case 75:
-				StringCopy(&cVar2, "CELL_F_DOCKH2B", 24);
+				StringCopy(&cVar2, "CELL_F_DOCKH2B" /* GXT: ...has explored the depths and discovered a great treasure. */, 24);
 				break;
 			
 			case 38:
-				StringCopy(&cVar2, "CELL_F_FIB4", 24);
+				StringCopy(&cVar2, "CELL_F_FIB4" /* GXT: ...has performed a classic blitz play. */, 24);
 				break;
 			
 			case 93:
-				StringCopy(&cVar2, "CELL_F_RURALH2", 24);
+				StringCopy(&cVar2, "CELL_F_RURALH2" /* GXT: ...was a big hit at Paleto Bay's Chicken Festival. */, 24);
 				break;
 			
 			case 69:
-				StringCopy(&cVar2, "CELL_F_AGENCYH3A", 24);
+				StringCopy(&cVar2, "CELL_F_AGENCYH3A" /* GXT: ...has just responded to a 911. */, 24);
 				break;
 			
 			case 70:
-				StringCopy(&cVar2, "CELL_F_AGENCYH3B", 24);
+				StringCopy(&cVar2, "CELL_F_AGENCYH3B" /* GXT: ...has dropped in on the Bureau. */, 24);
 				break;
 			
 			case 47:
-				StringCopy(&cVar2, "CELL_F_MICHAEL2", 24);
+				StringCopy(&cVar2, "CELL_F_MICHAEL2" /* GXT: ...has discovered an abattoir where the meat certainly ain't fresh. */, 24);
 				break;
 			
 			case 42:
-				StringCopy(&cVar2, "CELL_F_FRANKLIN2", 24);
+				StringCopy(&cVar2, "CELL_F_FRANKLIN2" /* GXT: ...has saved a homeboy with a little help from his friends. */, 24);
 				break;
 			
 			case 84:
-				StringCopy(&cVar2, "CELL_F_FINALEH2A", 24);
+				StringCopy(&cVar2, "CELL_F_FINALEH2A" /* GXT: ...has brought traffic to a standstill. */, 24);
 				break;
 			
 			case 85:
-				StringCopy(&cVar2, "CELL_F_FINALEH2B", 24);
+				StringCopy(&cVar2, "CELL_F_FINALEH2B" /* GXT: ...has tunneled to victory. */, 24);
 				break;
 			
 			case 24:
-				StringCopy(&cVar2, "CELL_F_ENDCHOICE", 24);
+				StringCopy(&cVar2, "CELL_F_ENDCHOICE" /* GXT: ...has made an extreme choice and faced the consequences. */, 24);
 				break;
 			
 			case 25:
-				StringCopy(&cVar2, "CELL_F_ENDCHOICE", 24);
+				StringCopy(&cVar2, "CELL_F_ENDCHOICE" /* GXT: ...has made an extreme choice and faced the consequences. */, 24);
 				break;
 			
 			case 27:
-				StringCopy(&cVar2, "CELL_F_ENDCHOICE", 24);
+				StringCopy(&cVar2, "CELL_F_ENDCHOICE" /* GXT: ...has made an extreme choice and faced the consequences. */, 24);
 				break;
 		}
 		Global_113327 = MISC::GET_GAME_TIMER();
@@ -6110,7 +6110,7 @@ void func_170(struct<36> Param0, int iParam1)//Position - 0x672A
 				iVar0 = func_171(iParam1);
 				if (Param0.f_17 > iVar0)
 				{
-					HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_FEED_BEAT_MIS_SCORE");
+					HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_FEED_BEAT_MIS_SCORE" /* GXT: ...beat your high score in the Story mission "~a~". */);
 					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&uVar1);
 					StringCopy(&cVar4, "<C>", 64);
 					StringConCat(&cVar4, "~HUD_COLOUR_SOCIAL_CLUB~", 64);
@@ -6257,12 +6257,12 @@ void func_177(int iParam0, var uParam1, bool bParam2)//Position - 0x6AD2
 		{
 			if (Var0.f_1)
 			{
-				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CREWKICK_TA");
+				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CREWKICK_TA" /* GXT: You have been kicked from your active Crew. */);
 				HUD::END_TEXT_COMMAND_THEFEED_POST_MPTICKER(false, true);
 			}
 			else
 			{
-				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CREWKICK_TI");
+				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CREWKICK_TI" /* GXT: You have been kicked from an inactive Crew. */);
 				HUD::END_TEXT_COMMAND_THEFEED_POST_MPTICKER(false, true);
 			}
 		}
@@ -6287,12 +6287,12 @@ void func_178(int iParam0, var uParam1, bool bParam2)//Position - 0x6B48
 		{
 			if (Var0.f_1)
 			{
-				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CREWLEFT_TA");
+				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CREWLEFT_TA" /* GXT: You have left your Crew. */);
 				HUD::END_TEXT_COMMAND_THEFEED_POST_TICKER(false, true);
 			}
 			else
 			{
-				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CREWLEFT_TA");
+				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CREWLEFT_TA" /* GXT: You have left your Crew. */);
 				HUD::END_TEXT_COMMAND_THEFEED_POST_TICKER(false, true);
 			}
 		}
@@ -6328,35 +6328,35 @@ void func_179(int iParam0, var uParam1, bool bParam2)//Position - 0x6BBE
 				{
 					if (Var1.f_2)
 					{
-						StringCopy(&Var4, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HIGHER_RANK"), 32);
+						StringCopy(&Var4, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HIGHER_RANK" /* GXT: a higher rank */), 32);
 					}
 					else
 					{
-						StringCopy(&Var4, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("LOWER_RANK"), 32);
+						StringCopy(&Var4, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("LOWER_RANK" /* GXT: a lower rank */), 32);
 					}
 					if (MISC::ARE_STRINGS_EQUAL(&(Var1.f_3), "Rank4"))
 					{
-						StringCopy(&Var4, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREW_RANK4"), 32);
+						StringCopy(&Var4, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREW_RANK4" /* GXT: Muscle */), 32);
 					}
 					if (MISC::ARE_STRINGS_EQUAL(&(Var1.f_3), "Rank3"))
 					{
-						StringCopy(&Var4, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREW_RANK3"), 32);
+						StringCopy(&Var4, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREW_RANK3" /* GXT: Representative */), 32);
 					}
 					if (MISC::ARE_STRINGS_EQUAL(&(Var1.f_3), "Rank2"))
 					{
-						StringCopy(&Var4, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREW_RANK2"), 32);
+						StringCopy(&Var4, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREW_RANK2" /* GXT: Lieutenant */), 32);
 					}
 					if (MISC::ARE_STRINGS_EQUAL(&(Var1.f_3), "Rank1"))
 					{
-						StringCopy(&Var4, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREW_RANK1"), 32);
+						StringCopy(&Var4, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CREW_RANK1" /* GXT: Commissioner */), 32);
 					}
 					if (Var1.f_2)
 					{
-						func_180("CREWPROM", &Var4, &(Var0.f_1));
+						func_180("CREWPROM" /* GXT: You have been promoted to ~a~ status in the hierarchy of Crew ~a~. */, &Var4, &(Var0.f_1));
 					}
 					else
 					{
-						func_180("CREWDEMO", &Var4, &(Var0.f_1));
+						func_180("CREWDEMO" /* GXT: You have been demoted to ~a~ status in the hierarchy of Crew ~a~. */, &Var4, &(Var0.f_1));
 					}
 					uParam1->f_168 = 1;
 				}
@@ -6412,11 +6412,11 @@ void func_181(int iParam0, var uParam1, bool bParam2)//Position - 0x6D2C
 					{
 						if (Var1.f_17 > 1)
 						{
-							func_186("SCFEED_13", &(Var1.f_1), Var1.f_17, iVar0, 0, 1);
+							func_186("SCFEED_13" /* GXT: ~a~ has blown up ~1~ vehicles in GTA Online. You've blown up ~1~. */, &(Var1.f_1), Var1.f_17, iVar0, 0, 1);
 						}
 						else
 						{
-							func_186("SCFEED_13b", &(Var1.f_1), Var1.f_17, iVar0, 0, 1);
+							func_186("SCFEED_13b" /* GXT: ~a~ has blown up ~1~ vehicle in GTA Online. You've blown up ~1~. */, &(Var1.f_1), Var1.f_17, iVar0, 0, 1);
 						}
 						uParam1->f_168 = 1;
 					}
@@ -6429,11 +6429,11 @@ void func_181(int iParam0, var uParam1, bool bParam2)//Position - 0x6D2C
 					{
 						if (Var1.f_17 > 1)
 						{
-							func_186("SCFEED_10", &(Var1.f_1), Var1.f_17, iVar0, 0, 1);
+							func_186("SCFEED_10" /* GXT: ~a~ has stolen ~1~ vehicles in GTA Online. You've stolen ~1~. */, &(Var1.f_1), Var1.f_17, iVar0, 0, 1);
 						}
 						else
 						{
-							func_186("SCFEED_10b", &(Var1.f_1), Var1.f_17, iVar0, 0, 1);
+							func_186("SCFEED_10b" /* GXT: ~a~ has stolen ~1~ vehicle in GTA Online. You've stolen ~1~. */, &(Var1.f_1), Var1.f_17, iVar0, 0, 1);
 						}
 						uParam1->f_168 = 1;
 					}
@@ -6444,7 +6444,7 @@ void func_181(int iParam0, var uParam1, bool bParam2)//Position - 0x6D2C
 					iVar0 = func_46(60, -1);
 					if (Var1.f_17 > iVar0)
 					{
-						func_186("SCFEED_4", &(Var1.f_1), Var1.f_17, iVar0, 0, 1);
+						func_186("SCFEED_4" /* GXT: ~a~ survived a 5 star Wanted Level for ~1~ minutes in GTA Online. Your best time is ~1~ minutes. */, &(Var1.f_1), Var1.f_17, iVar0, 0, 1);
 						uParam1->f_168 = 1;
 					}
 					break;
@@ -6461,11 +6461,11 @@ void func_181(int iParam0, var uParam1, bool bParam2)//Position - 0x6D2C
 						{
 							if (MISC::SHOULD_USE_METRIC_MEASUREMENTS())
 							{
-								func_186("SCFEED_5", &(Var1.f_1), Var1.f_17, iVar0, 0, 1);
+								func_186("SCFEED_5" /* GXT: ~a~ did a wheelie for ~1~m in GTA Online. Your furthest distance is ~1~m. */, &(Var1.f_1), Var1.f_17, iVar0, 0, 1);
 							}
 							else
 							{
-								func_186("SCFEED_5b", &(Var1.f_1), Var1.f_17, iVar0, 0, 1);
+								func_186("SCFEED_5b" /* GXT: ~a~ did a wheelie for ~1~ft in GTA Online. Your furthest distance is ~1~ft. */, &(Var1.f_1), Var1.f_17, iVar0, 0, 1);
 							}
 							uParam1->f_168 = 1;
 						}
@@ -6477,7 +6477,7 @@ void func_181(int iParam0, var uParam1, bool bParam2)//Position - 0x6D2C
 					iVar0 = func_46(61, -1);
 					if (Var1.f_17 > iVar0)
 					{
-						func_186("SCFEED_6", &(Var1.f_1), Var1.f_17, iVar0, 0, 1);
+						func_186("SCFEED_6" /* GXT: ~a~ drove without crashing for ~1~ minutes in GTA Online. Your best time is ~1~ minutes. */, &(Var1.f_1), Var1.f_17, iVar0, 0, 1);
 						uParam1->f_168 = 1;
 					}
 					break;
@@ -6489,11 +6489,11 @@ void func_181(int iParam0, var uParam1, bool bParam2)//Position - 0x6D2C
 					{
 						if (Var1.f_17 > 1)
 						{
-							func_186("SCFEED_7", &(Var1.f_1), Var1.f_17, iVar0, 0, 1);
+							func_186("SCFEED_7" /* GXT: ~a~ did ~1~ flips in 1 jump in GTA Online. Your highest amount is ~1~. */, &(Var1.f_1), Var1.f_17, iVar0, 0, 1);
 						}
 						else
 						{
-							func_186("SCFEED_7b", &(Var1.f_1), Var1.f_17, iVar0, 0, 1);
+							func_186("SCFEED_7b" /* GXT: ~a~ did ~1~ flip in 1 jump in GTA Online. Your highest amount is ~1~. */, &(Var1.f_1), Var1.f_17, iVar0, 0, 1);
 						}
 						uParam1->f_168 = 1;
 					}
@@ -6506,11 +6506,11 @@ void func_181(int iParam0, var uParam1, bool bParam2)//Position - 0x6D2C
 					{
 						if (Var1.f_17 > 1)
 						{
-							func_186("SCFEED_8", &(Var1.f_1), Var1.f_17, iVar0, 0, 1);
+							func_186("SCFEED_8" /* GXT: ~a~ did ~1~ spins in 1 jump in GTA Online. Your highest amount is ~1~. */, &(Var1.f_1), Var1.f_17, iVar0, 0, 1);
 						}
 						else
 						{
-							func_186("SCFEED_8b", &(Var1.f_1), Var1.f_17, iVar0, 0, 1);
+							func_186("SCFEED_8b" /* GXT: ~a~ did ~1~ spin in 1 jump in GTA Online. Your highest amount is ~1~. */, &(Var1.f_1), Var1.f_17, iVar0, 0, 1);
 						}
 						uParam1->f_168 = 1;
 					}
@@ -6532,7 +6532,7 @@ void func_181(int iParam0, var uParam1, bool bParam2)//Position - 0x6D2C
 						{
 							if (Var2.f_0)
 							{
-								func_183("SCFEED_11", &(Var1.f_1), Var1.f_17, &(Var3.f_22), 1, 2f);
+								func_183("SCFEED_11" /* GXT: ~a~ set a Race World Record on ~a~ with the time: ~a~. */, &(Var1.f_1), Var1.f_17, &(Var3.f_22), 1, 2f);
 								if (!func_182(0))
 								{
 									AUDIO::PLAY_SOUND_FRONTEND(-1, "OTHER_TEXT", "HUD_AWARDS", true);
@@ -7628,7 +7628,7 @@ void func_201(int iParam0)//Position - 0x7AB8
 					}
 					else if (Var12.f_38)
 					{
-						if (func_403(96, "SOCIAL_CARAPP2", 0, 0))
+						if (func_403(96, "SOCIAL_CARAPP2" /* GXT: The plate you ordered is inappropriate. Please choose another and try again. */, 0, 0))
 						{
 							Var12.f_33 = 0;
 							Var12.f_36 = 0;
@@ -7662,7 +7662,7 @@ void func_201(int iParam0)//Position - 0x7AB8
 								func_367(iVar25, &(Global_1585857[iVar25 /*142*/]), 1, -1, 0, 0);
 								func_127(407109726, 3, 0);
 							}
-							if (func_290(96, "SOCIAL_CARAPP1", VEHICLE::GET_DISPLAY_NAME_FROM_VEHICLE_MODEL(Var12.f_0), 0, -99, 0, 0, 0, 0))
+							if (func_290(96, "SOCIAL_CARAPP1" /* GXT: Your Los Santos Customs order has been processed for your ~a~. */, VEHICLE::GET_DISPLAY_NAME_FROM_VEHICLE_MODEL(Var12.f_0), 0, -99, 0, 0, 0, 0))
 							{
 								bVar26 = MONEY::NETWORK_GET_VC_BANK_BALANCE() >= Var12.f_27;
 								bVar27 = (!bVar26 && MONEY::NETWORK_GET_VC_BANK_BALANCE() > 0);
@@ -7684,7 +7684,7 @@ void func_201(int iParam0)//Position - 0x7AB8
 					}
 					else if (Var12.f_39)
 					{
-						if (func_290(96, "SOCIAL_CARAPP3", VEHICLE::GET_DISPLAY_NAME_FROM_VEHICLE_MODEL(Var12.f_0), 0, -99, 0, 0, 0, 0))
+						if (func_290(96, "SOCIAL_CARAPP3" /* GXT: We could not process your Los Santos Customs order due to lack of funds. Drop by one of our garages with your ~a~ when you have enough money. */, VEHICLE::GET_DISPLAY_NAME_FROM_VEHICLE_MODEL(Var12.f_0), 0, -99, 0, 0, 0, 0))
 						{
 							Var12.f_33 = 0;
 							Var12.f_36 = 1;
@@ -7692,7 +7692,7 @@ void func_201(int iParam0)//Position - 0x7AB8
 							Var12.f_34 = 0;
 						}
 					}
-					else if (func_290(96, "SOCIAL_CARAPP", VEHICLE::GET_DISPLAY_NAME_FROM_VEHICLE_MODEL(Var12.f_0), 0, -99, 0, 0, 0, 0))
+					else if (func_290(96, "SOCIAL_CARAPP" /* GXT: Drop by Los Santos Customs to have your ~a~ order fulfilled. */, VEHICLE::GET_DISPLAY_NAME_FROM_VEHICLE_MODEL(Var12.f_0), 0, -99, 0, 0, 0, 0))
 					{
 						Var12.f_33 = 0;
 						Var12.f_36 = 1;
@@ -7768,7 +7768,7 @@ void func_201(int iParam0)//Position - 0x7AB8
 				{
 					if ((!func_454(0) && !func_454(3)) && !func_454(2))
 					{
-						if (func_282(96, "SOCIAL_CARAPP2", 2, 0, 0, 0, 0, 1, 0, 1))
+						if (func_282(96, "SOCIAL_CARAPP2" /* GXT: The plate you ordered is inappropriate. Please choose another and try again. */, 2, 0, 0, 0, 0, 1, 0, 1))
 						{
 							Var12.f_33 = 0;
 							Var12.f_36 = 0;
@@ -7799,7 +7799,7 @@ void func_201(int iParam0)//Position - 0x7AB8
 				{
 					if ((!func_454(0) && !func_454(3)) && !func_454(2))
 					{
-						if (func_260(96, "SOCIAL_CARAPP3", 2, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(VEHICLE::GET_DISPLAY_NAME_FROM_VEHICLE_MODEL(Global_113386.f_20118.f_130[iParam0 /*41*/])), -99, "NULL", 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0))
+						if (func_260(96, "SOCIAL_CARAPP3" /* GXT: We could not process your Los Santos Customs order due to lack of funds. Drop by one of our garages with your ~a~ when you have enough money. */, 2, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(VEHICLE::GET_DISPLAY_NAME_FROM_VEHICLE_MODEL(Global_113386.f_20118.f_130[iParam0 /*41*/])), -99, "NULL", 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0))
 						{
 							Var12.f_33 = 0;
 							Var12.f_36 = 1;
@@ -7810,10 +7810,10 @@ void func_201(int iParam0)//Position - 0x7AB8
 				}
 				else if ((!func_454(0) && !func_454(3)) && !func_454(2))
 				{
-					StringCopy(&Var28, "SOCIAL_CARAPP", 16);
+					StringCopy(&Var28, "SOCIAL_CARAPP" /* GXT: Drop by Los Santos Customs to have your ~a~ order fulfilled. */, 16);
 					if (iParam0 == 1 && !Global_113386.f_20118.f_281[iParam0])
 					{
-						StringCopy(&Var28, "SOCIAL_FREE", 16);
+						StringCopy(&Var28, "SOCIAL_FREE" /* GXT: Drop by Los Santos Customs to have your ~a~ order fulfilled. This one's on the house. */, 16);
 					}
 					if (func_260(96, &Var28, 2, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(VEHICLE::GET_DISPLAY_NAME_FROM_VEHICLE_MODEL(Global_113386.f_20118.f_130[iParam0 /*41*/])), -99, "NULL", 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0))
 					{
@@ -8074,7 +8074,7 @@ void func_201(int iParam0)//Position - 0x7AB8
 				{
 					case joaat("MP_M_Freemode_01"):
 					case joaat("MP_F_Freemode_01"):
-						func_450("playerGang", "None");
+						func_450("playerGang", "None" /* GXT: None */);
 						HUD::GET_HUD_COLOUR(116, &iVar4, &iVar5, &iVar6, &uVar7);
 						break;
 				}
@@ -12386,7 +12386,7 @@ void func_268(int iParam0)//Position - 0xD50A
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(42);
 								GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							}
-							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB")) && BitTest(Global_8137, 6))
+							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB" /* GXT: Benny's */)) && BitTest(Global_8137, 6))
 							{
 								GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT");
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
@@ -12914,187 +12914,187 @@ char* func_289(int iParam0, int iParam1, bool bParam2)//Position - 0xE47D
 	switch (iParam0)
 	{
 		case -1:
-			return "S_N_EM";
+			return "S_N_EM" /* GXT: Empty Shop */;
 			break;
 		
 		case 0:
-			return "S_H_01";
+			return "S_H_01" /* GXT: Bob Mulét Hair & Beauty */;
 			break;
 		
 		case 1:
-			return "S_H_02";
+			return "S_H_02" /* GXT: Herr Kutz Barber */;
 			break;
 		
 		case 2:
-			return "S_H_03";
+			return "S_H_03" /* GXT: Beachcombover Barbers */;
 			break;
 		
 		case 3:
-			return "S_H_04";
+			return "S_H_04" /* GXT: O'Sheas Barbers */;
 			break;
 		
 		case 4:
-			return "S_H_05";
+			return "S_H_05" /* GXT: Herr Kutz Barber */;
 			break;
 		
 		case 5:
-			return "S_H_06";
+			return "S_H_06" /* GXT: Hair On Hawick Barbers */;
 			break;
 		
 		case 6:
-			return "S_H_07";
+			return "S_H_07" /* GXT: Herr Kutz Barber */;
 			break;
 		
 		case 7:
-			return "S_CL_01";
+			return "S_CL_01" /* GXT: Discount Store */;
 			break;
 		
 		case 8:
-			return "S_CL_02";
+			return "S_CL_02" /* GXT: Discount Store */;
 			break;
 		
 		case 9:
-			return "S_CL_03";
+			return "S_CL_03" /* GXT: Binco Clothing */;
 			break;
 		
 		case 10:
-			return "S_CL_04";
+			return "S_CL_04" /* GXT: Discount Store */;
 			break;
 		
 		case 11:
-			return "S_CL_05";
+			return "S_CL_05" /* GXT: Discount Store */;
 			break;
 		
 		case 12:
-			return "S_CL_06";
+			return "S_CL_06" /* GXT: Binco Clothing */;
 			break;
 		
 		case 13:
-			return "S_CL_07";
+			return "S_CL_07" /* GXT: Discount Store */;
 			break;
 		
 		case 14:
-			return "S_CM_01";
+			return "S_CM_01" /* GXT: Suburban */;
 			break;
 		
 		case 15:
-			return "S_CM_03";
+			return "S_CM_03" /* GXT: Suburban */;
 			break;
 		
 		case 16:
-			return "S_CM_04";
+			return "S_CM_04" /* GXT: Suburban */;
 			break;
 		
 		case 17:
-			return "S_CM_05";
+			return "S_CM_05" /* GXT: Suburban */;
 			break;
 		
 		case 18:
-			return "S_CH_01";
+			return "S_CH_01" /* GXT: Ponsonbys */;
 			break;
 		
 		case 19:
-			return "S_CH_02";
+			return "S_CH_02" /* GXT: Ponsonbys */;
 			break;
 		
 		case 20:
-			return "S_CH_03";
+			return "S_CH_03" /* GXT: Ponsonbys */;
 			break;
 		
 		case 21:
-			return "S_CA_01";
+			return "S_CA_01" /* GXT: Vespucci Movie Masks */;
 			break;
 		
 		case 22:
-			return "S_T_01";
+			return "S_T_01" /* GXT: Blazing Tattoo */;
 			break;
 		
 		case 23:
-			return "S_T_02";
+			return "S_T_02" /* GXT: Alamo Tattoo Studio */;
 			break;
 		
 		case 24:
-			return "S_T_03";
+			return "S_T_03" /* GXT: Paleto Tattoo Studio */;
 			break;
 		
 		case 25:
-			return "S_T_04";
+			return "S_T_04" /* GXT: The Pit */;
 			break;
 		
 		case 26:
-			return "S_T_05";
+			return "S_T_05" /* GXT: Los Santos Tattoos */;
 			break;
 		
 		case 27:
-			return "S_T_06";
+			return "S_T_06" /* GXT: Ink Inc Tattoos */;
 			break;
 		
 		case 28:
-			return "S_G_01";
+			return "S_G_01" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 29:
-			return "S_G_02";
+			return "S_G_02" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 30:
-			return "S_G_03";
+			return "S_G_03" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 31:
-			return "S_G_04";
+			return "S_G_04" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 32:
-			return "S_G_05";
+			return "S_G_05" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 33:
-			return "S_G_06";
+			return "S_G_06" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 34:
-			return "S_G_07";
+			return "S_G_07" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 35:
-			return "S_G_08";
+			return "S_G_08" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 36:
-			return "S_G_09";
+			return "S_G_09" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 37:
-			return "S_G_10";
+			return "S_G_10" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 38:
-			return "S_G_11";
+			return "S_G_11" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 39:
-			return "S_MO_01";
+			return "S_MO_01" /* GXT: Los Santos Customs */;
 			break;
 		
 		case 40:
-			return "S_MO_05";
+			return "S_MO_05" /* GXT: Los Santos Customs */;
 			break;
 		
 		case 41:
-			return "S_MO_06";
+			return "S_MO_06" /* GXT: Los Santos Customs */;
 			break;
 		
 		case 42:
-			return "S_MO_07";
+			return "S_MO_07" /* GXT: Beeker's Garage */;
 			break;
 		
 		case 43:
-			return "S_MO_08";
+			return "S_MO_08" /* GXT: Los Santos Customs */;
 			break;
 		
 		case 44:
-			return "S_MO_09";
+			return "S_MO_09" /* GXT: Benny's Original Motor Works */;
 			break;
 		
 		case 45:
@@ -13107,7 +13107,7 @@ char* func_289(int iParam0, int iParam1, bool bParam2)//Position - 0xE47D
 					}
 					else
 					{
-						return "S_MO_10";
+						return "S_MO_10" /* GXT: Custom Mod Shop */;
 					}
 					break;
 				
@@ -13118,7 +13118,7 @@ char* func_289(int iParam0, int iParam1, bool bParam2)//Position - 0xE47D
 					}
 					else
 					{
-						return "S_MO_10";
+						return "S_MO_10" /* GXT: Custom Mod Shop */;
 					}
 					break;
 				
@@ -13129,7 +13129,7 @@ char* func_289(int iParam0, int iParam1, bool bParam2)//Position - 0xE47D
 					}
 					else
 					{
-						return "S_MO_B";
+						return "S_MO_B" /* GXT: Bunker Vehicle Workshop */;
 					}
 					break;
 				
@@ -13140,7 +13140,7 @@ char* func_289(int iParam0, int iParam1, bool bParam2)//Position - 0xE47D
 					}
 					else
 					{
-						return "S_MO_T";
+						return "S_MO_T" /* GXT: Weapon & Vehicle Workshop */;
 					}
 					break;
 				
@@ -13151,7 +13151,7 @@ char* func_289(int iParam0, int iParam1, bool bParam2)//Position - 0xE47D
 					}
 					else
 					{
-						return "S_MO_HA";
+						return "S_MO_HA" /* GXT: Hangar Aircraft Workshop */;
 					}
 					break;
 				
@@ -13162,7 +13162,7 @@ char* func_289(int iParam0, int iParam1, bool bParam2)//Position - 0xE47D
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -13173,7 +13173,7 @@ char* func_289(int iParam0, int iParam1, bool bParam2)//Position - 0xE47D
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -13184,7 +13184,7 @@ char* func_289(int iParam0, int iParam1, bool bParam2)//Position - 0xE47D
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -13195,7 +13195,7 @@ char* func_289(int iParam0, int iParam1, bool bParam2)//Position - 0xE47D
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -13206,7 +13206,7 @@ char* func_289(int iParam0, int iParam1, bool bParam2)//Position - 0xE47D
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -13217,7 +13217,7 @@ char* func_289(int iParam0, int iParam1, bool bParam2)//Position - 0xE47D
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -13228,7 +13228,7 @@ char* func_289(int iParam0, int iParam1, bool bParam2)//Position - 0xE47D
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -13239,59 +13239,59 @@ char* func_289(int iParam0, int iParam1, bool bParam2)//Position - 0xE47D
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 			}
-			return "S_MO_11";
+			return "S_MO_11" /* GXT: Custom Auto Shop */;
 			break;
 		
 		case 46:
-			return "S_G_12";
+			return "S_G_12" /* GXT: MOC Armory */;
 			break;
 		
 		case 47:
-			return "S_G_13";
+			return "S_G_13" /* GXT: Avenger Armory */;
 			break;
 		
 		case 48:
-			return "S_G_14";
+			return "S_G_14" /* GXT: Terrorbyte Armory */;
 			break;
 		
 		case 49:
-			return "S_G_15";
+			return "S_G_15" /* GXT: Arena Armory */;
 			break;
 		
 		case 52:
-			return "S_G_16";
+			return "S_G_16" /* GXT: Arcade Armory */;
 			break;
 		
 		case 53:
-			return "S_G_17";
+			return "S_G_17" /* GXT: Kosatka Armory */;
 			break;
 		
 		case 50:
-			return "S_H_08";
+			return "S_H_08" /* GXT: Penthouse Barber */;
 			break;
 		
 		case 51:
-			return "S_CL_09";
+			return "S_CL_09" /* GXT: Casino Store */;
 			break;
 		
 		case 54:
-			return "S_T_07";
+			return "S_T_07" /* GXT: LS Car Meet Tattoos */;
 			break;
 		
 		case 55:
-			return "S_CL_10";
+			return "S_CL_10" /* GXT: Merch Shop */;
 			break;
 		
 		case 56:
-			return "S_G_18";
+			return "S_G_18" /* GXT: Fixer Armory */;
 			break;
 		
 		case 57:
-			return "S_CL_11";
+			return "S_CL_11" /* GXT: Record A Studios */;
 			break;
 	}
 	return "SHOP_NAME_EMPTY";
@@ -13440,7 +13440,7 @@ int func_298(var uParam0, int iParam1, int iParam2, char* sParam3, char* sParam4
 	}
 	if (iParam5 == 4)
 	{
-		StringCopy(&Var0, "CELL_226", 16);
+		StringCopy(&Var0, "CELL_226" /* GXT: Accept? */, 16);
 		return func_346(uParam0, iParam1, sParam3, sParam4, &Var0);
 	}
 	if (iParam5 == 1 || iParam5 == 7)
@@ -25311,1232 +25311,1232 @@ bool func_388(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4)
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(sParam1, "BR BLACK_STEEL", 16);
+			StringCopy(sParam1, "BR BLACK_STEEL" /* GXT: Brushed Black Steel */, 16);
 			*iParam2 = 3;
 			*iParam3 = 118;
 			*iParam4 = 3;
 			break;
 		
 		case 1:
-			StringCopy(sParam1, "BLACK_GRAPHITE", 16);
+			StringCopy(sParam1, "BLACK_GRAPHITE" /* GXT: Carbon Black */, 16);
 			*iParam2 = 0;
 			*iParam3 = 147;
 			*iParam4 = 4;
 			break;
 		
 		case 2:
-			StringCopy(sParam1, "CHOCOLATE_BROWN", 16);
+			StringCopy(sParam1, "CHOCOLATE_BROWN" /* GXT: Chocolate Brown */, 16);
 			*iParam2 = 1;
 			*iParam3 = 96;
 			*iParam4 = 0;
 			break;
 		
 		case 3:
-			StringCopy(sParam1, "PURPLE", 16);
+			StringCopy(sParam1, "PURPLE" /* GXT: Schafter Purple */, 16);
 			*iParam2 = 0;
 			*iParam3 = 71;
 			*iParam4 = 145;
 			break;
 		
 		case 4:
-			StringCopy(sParam1, "HOT PINK", 16);
+			StringCopy(sParam1, "HOT PINK" /* GXT: Hot Pink */, 16);
 			*iParam2 = 0;
 			*iParam3 = 135;
 			*iParam4 = 135;
 			break;
 		
 		case 5:
-			StringCopy(sParam1, "FORMULA_RED", 16);
+			StringCopy(sParam1, "FORMULA_RED" /* GXT: Formula Red */, 16);
 			*iParam2 = 0;
 			*iParam3 = 29;
 			*iParam4 = 28;
 			break;
 		
 		case 6:
-			StringCopy(sParam1, "BLUE", 16);
+			StringCopy(sParam1, "BLUE" /* GXT: Blue */, 16);
 			*iParam2 = 0;
 			*iParam3 = 64;
 			*iParam4 = 68;
 			break;
 		
 		case 7:
-			StringCopy(sParam1, "ULTRA_BLUE", 16);
+			StringCopy(sParam1, "ULTRA_BLUE" /* GXT: Ultra Blue */, 16);
 			*iParam2 = 1;
 			*iParam3 = 70;
 			*iParam4 = 0;
 			break;
 		
 		case 8:
-			StringCopy(sParam1, "RACING_GREEN", 16);
+			StringCopy(sParam1, "RACING_GREEN" /* GXT: Racing Green */, 16);
 			*iParam2 = 1;
 			*iParam3 = 50;
 			*iParam4 = 0;
 			break;
 		
 		case 9:
-			StringCopy(sParam1, "LIME_GREEN", 16);
+			StringCopy(sParam1, "LIME_GREEN" /* GXT: Lime Green */, 16);
 			*iParam2 = 2;
 			*iParam3 = 55;
 			*iParam4 = 0;
 			break;
 		
 		case 10:
-			StringCopy(sParam1, "RACE_YELLOW", 16);
+			StringCopy(sParam1, "RACE_YELLOW" /* GXT: Race Yellow */, 16);
 			*iParam2 = 1;
 			*iParam3 = 89;
 			*iParam4 = 0;
 			break;
 		
 		case 11:
-			StringCopy(sParam1, "ORANGE", 16);
+			StringCopy(sParam1, "ORANGE" /* GXT: Orange */, 16);
 			*iParam2 = 1;
 			*iParam3 = 38;
 			*iParam4 = 0;
 			break;
 		
 		case 12:
-			StringCopy(sParam1, "GOLD", 16);
+			StringCopy(sParam1, "GOLD" /* GXT: Gold */, 16);
 			*iParam2 = 0;
 			*iParam3 = 37;
 			*iParam4 = 106;
 			break;
 		
 		case 13:
-			StringCopy(sParam1, "SILVER", 16);
+			StringCopy(sParam1, "SILVER" /* GXT: Silver */, 16);
 			*iParam2 = 0;
 			*iParam3 = 4;
 			*iParam4 = 111;
 			break;
 		
 		case 14:
-			StringCopy(sParam1, "CHROME", 16);
+			StringCopy(sParam1, "CHROME" /* GXT: Chrome */, 16);
 			*iParam2 = 4;
 			*iParam3 = 120;
 			*iParam4 = 0;
 			break;
 		
 		case 15:
-			StringCopy(sParam1, "WHITE", 16);
+			StringCopy(sParam1, "WHITE" /* GXT: Ice White */, 16);
 			*iParam2 = 1;
 			*iParam3 = 111;
 			*iParam4 = 0;
 			break;
 		
 		case 16:
-			StringCopy(sParam1, "BLACK", 16);
+			StringCopy(sParam1, "BLACK" /* GXT: Black */, 16);
 			*iParam2 = 0;
 			*iParam3 = 0;
 			*iParam4 = 10;
 			break;
 		
 		case 17:
-			StringCopy(sParam1, "GRAPHITE", 16);
+			StringCopy(sParam1, "GRAPHITE" /* GXT: Graphite */, 16);
 			*iParam2 = 0;
 			*iParam3 = 1;
 			*iParam4 = 5;
 			break;
 		
 		case 18:
-			StringCopy(sParam1, "ANTHR_BLACK", 16);
+			StringCopy(sParam1, "ANTHR_BLACK" /* GXT: Anthracite Black */, 16);
 			*iParam2 = 0;
 			*iParam3 = 11;
 			*iParam4 = 2;
 			break;
 		
 		case 19:
-			StringCopy(sParam1, "BLACK_STEEL", 16);
+			StringCopy(sParam1, "BLACK_STEEL" /* GXT: Black Steel */, 16);
 			*iParam2 = 0;
 			*iParam3 = 2;
 			*iParam4 = 5;
 			break;
 		
 		case 20:
-			StringCopy(sParam1, "DARK_SILVER", 16);
+			StringCopy(sParam1, "DARK_SILVER" /* GXT: Dark Steel */, 16);
 			*iParam2 = 0;
 			*iParam3 = 3;
 			*iParam4 = 6;
 			break;
 		
 		case 21:
-			StringCopy(sParam1, "BLUE_SILVER", 16);
+			StringCopy(sParam1, "BLUE_SILVER" /* GXT: Bluish Silver */, 16);
 			*iParam2 = 0;
 			*iParam3 = 5;
 			*iParam4 = 111;
 			break;
 		
 		case 22:
-			StringCopy(sParam1, "ROLLED_STEEL", 16);
+			StringCopy(sParam1, "ROLLED_STEEL" /* GXT: Rolled Steel */, 16);
 			*iParam2 = 0;
 			*iParam3 = 6;
 			*iParam4 = 4;
 			break;
 		
 		case 23:
-			StringCopy(sParam1, "SHADOW_SILVER", 16);
+			StringCopy(sParam1, "SHADOW_SILVER" /* GXT: Shadow Silver */, 16);
 			*iParam2 = 0;
 			*iParam3 = 7;
 			*iParam4 = 5;
 			break;
 		
 		case 24:
-			StringCopy(sParam1, "STONE_SILVER", 16);
+			StringCopy(sParam1, "STONE_SILVER" /* GXT: Stone Silver */, 16);
 			*iParam2 = 0;
 			*iParam3 = 8;
 			*iParam4 = 5;
 			break;
 		
 		case 25:
-			StringCopy(sParam1, "MIDNIGHT_SILVER", 16);
+			StringCopy(sParam1, "MIDNIGHT_SILVER" /* GXT: Midnight Silver */, 16);
 			*iParam2 = 0;
 			*iParam3 = 9;
 			*iParam4 = 7;
 			break;
 		
 		case 26:
-			StringCopy(sParam1, "CAST_IRON_SIL", 16);
+			StringCopy(sParam1, "CAST_IRON_SIL" /* GXT: Cast Iron Silver */, 16);
 			*iParam2 = 0;
 			*iParam3 = 10;
 			*iParam4 = 7;
 			break;
 		
 		case 27:
-			StringCopy(sParam1, "RED", 16);
+			StringCopy(sParam1, "RED" /* GXT: Red */, 16);
 			*iParam2 = 0;
 			*iParam3 = 27;
 			*iParam4 = 36;
 			break;
 		
 		case 28:
-			StringCopy(sParam1, "TORINO_RED", 16);
+			StringCopy(sParam1, "TORINO_RED" /* GXT: Torino Red */, 16);
 			*iParam2 = 0;
 			*iParam3 = 28;
 			*iParam4 = 28;
 			break;
 		
 		case 29:
-			StringCopy(sParam1, "LAVA_RED", 16);
+			StringCopy(sParam1, "LAVA_RED" /* GXT: Lava Red */, 16);
 			*iParam2 = 0;
 			*iParam3 = 150;
 			*iParam4 = 42;
 			break;
 		
 		case 30:
-			StringCopy(sParam1, "BLAZE_RED", 16);
+			StringCopy(sParam1, "BLAZE_RED" /* GXT: Blaze Red */, 16);
 			*iParam2 = 0;
 			*iParam3 = 30;
 			*iParam4 = 36;
 			break;
 		
 		case 31:
-			StringCopy(sParam1, "GRACE_RED", 16);
+			StringCopy(sParam1, "GRACE_RED" /* GXT: Grace Red */, 16);
 			*iParam2 = 0;
 			*iParam3 = 31;
 			*iParam4 = 27;
 			break;
 		
 		case 32:
-			StringCopy(sParam1, "GARNET_RED", 16);
+			StringCopy(sParam1, "GARNET_RED" /* GXT: Garnet Red */, 16);
 			*iParam2 = 0;
 			*iParam3 = 32;
 			*iParam4 = 25;
 			break;
 		
 		case 33:
-			StringCopy(sParam1, "SUNSET_RED", 16);
+			StringCopy(sParam1, "SUNSET_RED" /* GXT: Sunset Red */, 16);
 			*iParam2 = 0;
 			*iParam3 = 33;
 			*iParam4 = 47;
 			break;
 		
 		case 34:
-			StringCopy(sParam1, "CABERNET_RED", 16);
+			StringCopy(sParam1, "CABERNET_RED" /* GXT: Cabernet Red */, 16);
 			*iParam2 = 0;
 			*iParam3 = 34;
 			*iParam4 = 47;
 			break;
 		
 		case 35:
-			StringCopy(sParam1, "WINE_RED", 16);
+			StringCopy(sParam1, "WINE_RED" /* GXT: Wine Red */, 16);
 			*iParam2 = 0;
 			*iParam3 = 143;
 			*iParam4 = 31;
 			break;
 		
 		case 36:
-			StringCopy(sParam1, "CANDY_RED", 16);
+			StringCopy(sParam1, "CANDY_RED" /* GXT: Candy Red */, 16);
 			*iParam2 = 0;
 			*iParam3 = 35;
 			*iParam4 = 25;
 			break;
 		
 		case 37:
-			StringCopy(sParam1, "PINK", 16);
+			StringCopy(sParam1, "PINK" /* GXT: Pfister Pink */, 16);
 			*iParam2 = 0;
 			*iParam3 = 137;
 			*iParam4 = 3;
 			break;
 		
 		case 38:
-			StringCopy(sParam1, "SALMON_PINK", 16);
+			StringCopy(sParam1, "SALMON_PINK" /* GXT: Salmon Pink */, 16);
 			*iParam2 = 0;
 			*iParam3 = 136;
 			*iParam4 = 5;
 			break;
 		
 		case 39:
-			StringCopy(sParam1, "SUNRISE_ORANGE", 16);
+			StringCopy(sParam1, "SUNRISE_ORANGE" /* GXT: Sunrise Orange */, 16);
 			*iParam2 = 0;
 			*iParam3 = 36;
 			*iParam4 = 26;
 			break;
 		
 		case 40:
-			StringCopy(sParam1, "ORANGE", 16);
+			StringCopy(sParam1, "ORANGE" /* GXT: Orange */, 16);
 			*iParam2 = 0;
 			*iParam3 = 38;
 			*iParam4 = 37;
 			break;
 		
 		case 41:
-			StringCopy(sParam1, "BRIGHT_ORANGE", 16);
+			StringCopy(sParam1, "BRIGHT_ORANGE" /* GXT: Bright Orange */, 16);
 			*iParam2 = 0;
 			*iParam3 = 138;
 			*iParam4 = 89;
 			break;
 		
 		case 42:
-			StringCopy(sParam1, "BRONZE", 16);
+			StringCopy(sParam1, "BRONZE" /* GXT: Bronze */, 16);
 			*iParam2 = 0;
 			*iParam3 = 90;
 			*iParam4 = 102;
 			break;
 		
 		case 43:
-			StringCopy(sParam1, "YELLOW", 16);
+			StringCopy(sParam1, "YELLOW" /* GXT: Yellow */, 16);
 			*iParam2 = 0;
 			*iParam3 = 88;
 			*iParam4 = 88;
 			break;
 		
 		case 44:
-			StringCopy(sParam1, "RACE_YELLOW", 16);
+			StringCopy(sParam1, "RACE_YELLOW" /* GXT: Race Yellow */, 16);
 			*iParam2 = 0;
 			*iParam3 = 89;
 			*iParam4 = 88;
 			break;
 		
 		case 45:
-			StringCopy(sParam1, "FLUR_YELLOW", 16);
+			StringCopy(sParam1, "FLUR_YELLOW" /* GXT: Dew Yellow */, 16);
 			*iParam2 = 0;
 			*iParam3 = 91;
 			*iParam4 = 91;
 			break;
 		
 		case 46:
-			StringCopy(sParam1, "DARK_GREEN", 16);
+			StringCopy(sParam1, "DARK_GREEN" /* GXT: Dark Green */, 16);
 			*iParam2 = 0;
 			*iParam3 = 49;
 			*iParam4 = 52;
 			break;
 		
 		case 47:
-			StringCopy(sParam1, "RACING_GREEN", 16);
+			StringCopy(sParam1, "RACING_GREEN" /* GXT: Racing Green */, 16);
 			*iParam2 = 0;
 			*iParam3 = 50;
 			*iParam4 = 53;
 			break;
 		
 		case 48:
-			StringCopy(sParam1, "SEA_GREEN", 16);
+			StringCopy(sParam1, "SEA_GREEN" /* GXT: Sea Green */, 16);
 			*iParam2 = 0;
 			*iParam3 = 51;
 			*iParam4 = 66;
 			break;
 		
 		case 49:
-			StringCopy(sParam1, "OLIVE_GREEN", 16);
+			StringCopy(sParam1, "OLIVE_GREEN" /* GXT: Olive Green */, 16);
 			*iParam2 = 0;
 			*iParam3 = 52;
 			*iParam4 = 59;
 			break;
 		
 		case 50:
-			StringCopy(sParam1, "BRIGHT_GREEN", 16);
+			StringCopy(sParam1, "BRIGHT_GREEN" /* GXT: Bright Green */, 16);
 			*iParam2 = 0;
 			*iParam3 = 53;
 			*iParam4 = 59;
 			break;
 		
 		case 51:
-			StringCopy(sParam1, "PETROL_GREEN", 16);
+			StringCopy(sParam1, "PETROL_GREEN" /* GXT: Gasoline Green */, 16);
 			*iParam2 = 0;
 			*iParam3 = 54;
 			*iParam4 = 60;
 			break;
 		
 		case 52:
-			StringCopy(sParam1, "LIME_GREEN", 16);
+			StringCopy(sParam1, "LIME_GREEN" /* GXT: Lime Green */, 16);
 			*iParam2 = 0;
 			*iParam3 = 92;
 			*iParam4 = 92;
 			break;
 		
 		case 53:
-			StringCopy(sParam1, "MIDNIGHT_BLUE", 16);
+			StringCopy(sParam1, "MIDNIGHT_BLUE" /* GXT: Midnight Blue */, 16);
 			*iParam2 = 0;
 			*iParam3 = 141;
 			*iParam4 = 73;
 			break;
 		
 		case 54:
-			StringCopy(sParam1, "GALAXY_BLUE", 16);
+			StringCopy(sParam1, "GALAXY_BLUE" /* GXT: Galaxy Blue */, 16);
 			*iParam2 = 0;
 			*iParam3 = 61;
 			*iParam4 = 63;
 			break;
 		
 		case 55:
-			StringCopy(sParam1, "DARK_BLUE", 16);
+			StringCopy(sParam1, "DARK_BLUE" /* GXT: Dark Blue */, 16);
 			*iParam2 = 0;
 			*iParam3 = 62;
 			*iParam4 = 68;
 			break;
 		
 		case 56:
-			StringCopy(sParam1, "SAXON_BLUE", 16);
+			StringCopy(sParam1, "SAXON_BLUE" /* GXT: Saxon Blue */, 16);
 			*iParam2 = 0;
 			*iParam3 = 63;
 			*iParam4 = 87;
 			break;
 		
 		case 57:
-			StringCopy(sParam1, "MARINER_BLUE", 16);
+			StringCopy(sParam1, "MARINER_BLUE" /* GXT: Mariner Blue */, 16);
 			*iParam2 = 0;
 			*iParam3 = 65;
 			*iParam4 = 87;
 			break;
 		
 		case 58:
-			StringCopy(sParam1, "HARBOR_BLUE", 16);
+			StringCopy(sParam1, "HARBOR_BLUE" /* GXT: Harbor Blue */, 16);
 			*iParam2 = 0;
 			*iParam3 = 66;
 			*iParam4 = 60;
 			break;
 		
 		case 59:
-			StringCopy(sParam1, "DIAMOND_BLUE", 16);
+			StringCopy(sParam1, "DIAMOND_BLUE" /* GXT: Diamond Blue */, 16);
 			*iParam2 = 0;
 			*iParam3 = 67;
 			*iParam4 = 67;
 			break;
 		
 		case 60:
-			StringCopy(sParam1, "SURF_BLUE", 16);
+			StringCopy(sParam1, "SURF_BLUE" /* GXT: Surf Blue */, 16);
 			*iParam2 = 0;
 			*iParam3 = 68;
 			*iParam4 = 68;
 			break;
 		
 		case 61:
-			StringCopy(sParam1, "NAUTICAL_BLUE", 16);
+			StringCopy(sParam1, "NAUTICAL_BLUE" /* GXT: Nautical Blue */, 16);
 			*iParam2 = 0;
 			*iParam3 = 69;
 			*iParam4 = 74;
 			break;
 		
 		case 62:
-			StringCopy(sParam1, "RACING_BLUE", 16);
+			StringCopy(sParam1, "RACING_BLUE" /* GXT: Racing Blue */, 16);
 			*iParam2 = 0;
 			*iParam3 = 73;
 			*iParam4 = 73;
 			break;
 		
 		case 63:
-			StringCopy(sParam1, "ULTRA_BLUE", 16);
+			StringCopy(sParam1, "ULTRA_BLUE" /* GXT: Ultra Blue */, 16);
 			*iParam2 = 0;
 			*iParam3 = 70;
 			*iParam4 = 70;
 			break;
 		
 		case 64:
-			StringCopy(sParam1, "LIGHT_BLUE", 16);
+			StringCopy(sParam1, "LIGHT_BLUE" /* GXT: Light Blue */, 16);
 			*iParam2 = 0;
 			*iParam3 = 74;
 			*iParam4 = 74;
 			break;
 		
 		case 65:
-			StringCopy(sParam1, "CHOCOLATE_BROWN", 16);
+			StringCopy(sParam1, "CHOCOLATE_BROWN" /* GXT: Chocolate Brown */, 16);
 			*iParam2 = 0;
 			*iParam3 = 96;
 			*iParam4 = 95;
 			break;
 		
 		case 66:
-			StringCopy(sParam1, "BISON_BROWN", 16);
+			StringCopy(sParam1, "BISON_BROWN" /* GXT: Bison Brown */, 16);
 			*iParam2 = 0;
 			*iParam3 = 101;
 			*iParam4 = 95;
 			break;
 		
 		case 67:
-			StringCopy(sParam1, "CREEK_BROWN", 16);
+			StringCopy(sParam1, "CREEK_BROWN" /* GXT: Creek Brown */, 16);
 			*iParam2 = 0;
 			*iParam3 = 95;
 			*iParam4 = 97;
 			break;
 		
 		case 68:
-			StringCopy(sParam1, "UMBER_BROWN", 16);
+			StringCopy(sParam1, "UMBER_BROWN" /* GXT: Feltzer Brown */, 16);
 			*iParam2 = 0;
 			*iParam3 = 94;
 			*iParam4 = 104;
 			break;
 		
 		case 69:
-			StringCopy(sParam1, "MAPLE_BROWN", 16);
+			StringCopy(sParam1, "MAPLE_BROWN" /* GXT: Maple Brown */, 16);
 			*iParam2 = 0;
 			*iParam3 = 97;
 			*iParam4 = 98;
 			break;
 		
 		case 70:
-			StringCopy(sParam1, "BEECHWOOD_BROWN", 16);
+			StringCopy(sParam1, "BEECHWOOD_BROWN" /* GXT: Beechwood Brown */, 16);
 			*iParam2 = 0;
 			*iParam3 = 103;
 			*iParam4 = 104;
 			break;
 		
 		case 71:
-			StringCopy(sParam1, "SIENNA_BROWN", 16);
+			StringCopy(sParam1, "SIENNA_BROWN" /* GXT: Sienna Brown */, 16);
 			*iParam2 = 0;
 			*iParam3 = 104;
 			*iParam4 = 104;
 			break;
 		
 		case 72:
-			StringCopy(sParam1, "SADDLE_BROWN", 16);
+			StringCopy(sParam1, "SADDLE_BROWN" /* GXT: Saddle Brown */, 16);
 			*iParam2 = 0;
 			*iParam3 = 98;
 			*iParam4 = 95;
 			break;
 		
 		case 73:
-			StringCopy(sParam1, "MOSS_BROWN", 16);
+			StringCopy(sParam1, "MOSS_BROWN" /* GXT: Moss Brown */, 16);
 			*iParam2 = 0;
 			*iParam3 = 100;
 			*iParam4 = 100;
 			break;
 		
 		case 74:
-			StringCopy(sParam1, "WOODBEECH_BROWN", 16);
+			StringCopy(sParam1, "WOODBEECH_BROWN" /* GXT: Woodbeech Brown */, 16);
 			*iParam2 = 0;
 			*iParam3 = 102;
 			*iParam4 = 105;
 			break;
 		
 		case 75:
-			StringCopy(sParam1, "STRAW_BROWN", 16);
+			StringCopy(sParam1, "STRAW_BROWN" /* GXT: Straw Brown */, 16);
 			*iParam2 = 0;
 			*iParam3 = 99;
 			*iParam4 = 106;
 			break;
 		
 		case 76:
-			StringCopy(sParam1, "SANDY_BROWN", 16);
+			StringCopy(sParam1, "SANDY_BROWN" /* GXT: Sandy Brown */, 16);
 			*iParam2 = 0;
 			*iParam3 = 105;
 			*iParam4 = 105;
 			break;
 		
 		case 77:
-			StringCopy(sParam1, "BLEECHED_BROWN", 16);
+			StringCopy(sParam1, "BLEECHED_BROWN" /* GXT: Bleached Brown */, 16);
 			*iParam2 = 0;
 			*iParam3 = 106;
 			*iParam4 = 106;
 			break;
 		
 		case 78:
-			StringCopy(sParam1, "SPIN_PURPLE", 16);
+			StringCopy(sParam1, "SPIN_PURPLE" /* GXT: Spinnaker Purple */, 16);
 			*iParam2 = 0;
 			*iParam3 = 72;
 			*iParam4 = 64;
 			break;
 		
 		case 79:
-			StringCopy(sParam1, "MIGHT_PURPLE", 16);
+			StringCopy(sParam1, "MIGHT_PURPLE" /* GXT: Midnight Purple */, 16);
 			*iParam2 = 0;
 			*iParam3 = 146;
 			*iParam4 = 145;
 			break;
 		
 		case 80:
-			StringCopy(sParam1, "BRIGHT_PURPLE", 16);
+			StringCopy(sParam1, "BRIGHT_PURPLE" /* GXT: Bright Purple */, 16);
 			*iParam2 = 0;
 			*iParam3 = 145;
 			*iParam4 = 74;
 			break;
 		
 		case 81:
-			StringCopy(sParam1, "CREAM", 16);
+			StringCopy(sParam1, "CREAM" /* GXT: Cream */, 16);
 			*iParam2 = 0;
 			*iParam3 = 107;
 			*iParam4 = 107;
 			break;
 		
 		case 82:
-			StringCopy(sParam1, "WHITE", 16);
+			StringCopy(sParam1, "WHITE" /* GXT: Ice White */, 16);
 			*iParam2 = 0;
 			*iParam3 = 111;
 			*iParam4 = 0;
 			break;
 		
 		case 83:
-			StringCopy(sParam1, "FROST_WHITE", 16);
+			StringCopy(sParam1, "FROST_WHITE" /* GXT: Frost White */, 16);
 			*iParam2 = 0;
 			*iParam3 = 112;
 			*iParam4 = 0;
 			break;
 		
 		case 84:
-			StringCopy(sParam1, "BLACK", 16);
+			StringCopy(sParam1, "BLACK" /* GXT: Black */, 16);
 			*iParam2 = 1;
 			*iParam3 = 0;
 			*iParam4 = 0;
 			break;
 		
 		case 85:
-			StringCopy(sParam1, "BLACK_GRAPHITE", 16);
+			StringCopy(sParam1, "BLACK_GRAPHITE" /* GXT: Carbon Black */, 16);
 			*iParam2 = 1;
 			*iParam3 = 147;
 			*iParam4 = 0;
 			break;
 		
 		case 86:
-			StringCopy(sParam1, "GRAPHITE", 16);
+			StringCopy(sParam1, "GRAPHITE" /* GXT: Graphite */, 16);
 			*iParam2 = 1;
 			*iParam3 = 1;
 			*iParam4 = 0;
 			break;
 		
 		case 87:
-			StringCopy(sParam1, "ANTHR_BLACK", 16);
+			StringCopy(sParam1, "ANTHR_BLACK" /* GXT: Anthracite Black */, 16);
 			*iParam2 = 1;
 			*iParam3 = 11;
 			*iParam4 = 0;
 			break;
 		
 		case 88:
-			StringCopy(sParam1, "BLACK_STEEL", 16);
+			StringCopy(sParam1, "BLACK_STEEL" /* GXT: Black Steel */, 16);
 			*iParam2 = 1;
 			*iParam3 = 2;
 			*iParam4 = 0;
 			break;
 		
 		case 89:
-			StringCopy(sParam1, "DARK_SILVER", 16);
+			StringCopy(sParam1, "DARK_SILVER" /* GXT: Dark Steel */, 16);
 			*iParam2 = 1;
 			*iParam3 = 3;
 			*iParam4 = 2;
 			break;
 		
 		case 90:
-			StringCopy(sParam1, "SILVER", 16);
+			StringCopy(sParam1, "SILVER" /* GXT: Silver */, 16);
 			*iParam2 = 1;
 			*iParam3 = 4;
 			*iParam4 = 4;
 			break;
 		
 		case 91:
-			StringCopy(sParam1, "BLUE_SILVER", 16);
+			StringCopy(sParam1, "BLUE_SILVER" /* GXT: Bluish Silver */, 16);
 			*iParam2 = 1;
 			*iParam3 = 5;
 			*iParam4 = 5;
 			break;
 		
 		case 92:
-			StringCopy(sParam1, "ROLLED_STEEL", 16);
+			StringCopy(sParam1, "ROLLED_STEEL" /* GXT: Rolled Steel */, 16);
 			*iParam2 = 1;
 			*iParam3 = 6;
 			*iParam4 = 0;
 			break;
 		
 		case 93:
-			StringCopy(sParam1, "SHADOW_SILVER", 16);
+			StringCopy(sParam1, "SHADOW_SILVER" /* GXT: Shadow Silver */, 16);
 			*iParam2 = 1;
 			*iParam3 = 7;
 			*iParam4 = 0;
 			break;
 		
 		case 94:
-			StringCopy(sParam1, "STONE_SILVER", 16);
+			StringCopy(sParam1, "STONE_SILVER" /* GXT: Stone Silver */, 16);
 			*iParam2 = 1;
 			*iParam3 = 8;
 			*iParam4 = 0;
 			break;
 		
 		case 95:
-			StringCopy(sParam1, "MIDNIGHT_SILVER", 16);
+			StringCopy(sParam1, "MIDNIGHT_SILVER" /* GXT: Midnight Silver */, 16);
 			*iParam2 = 1;
 			*iParam3 = 9;
 			*iParam4 = 0;
 			break;
 		
 		case 96:
-			StringCopy(sParam1, "CAST_IRON_SIL", 16);
+			StringCopy(sParam1, "CAST_IRON_SIL" /* GXT: Cast Iron Silver */, 16);
 			*iParam2 = 1;
 			*iParam3 = 10;
 			*iParam4 = 0;
 			break;
 		
 		case 97:
-			StringCopy(sParam1, "RED", 16);
+			StringCopy(sParam1, "RED" /* GXT: Red */, 16);
 			*iParam2 = 1;
 			*iParam3 = 27;
 			*iParam4 = 0;
 			break;
 		
 		case 98:
-			StringCopy(sParam1, "TORINO_RED", 16);
+			StringCopy(sParam1, "TORINO_RED" /* GXT: Torino Red */, 16);
 			*iParam2 = 1;
 			*iParam3 = 28;
 			*iParam4 = 0;
 			break;
 		
 		case 99:
-			StringCopy(sParam1, "FORMULA_RED", 16);
+			StringCopy(sParam1, "FORMULA_RED" /* GXT: Formula Red */, 16);
 			*iParam2 = 1;
 			*iParam3 = 29;
 			*iParam4 = 0;
 			break;
 		
 		case 100:
-			StringCopy(sParam1, "LAVA_RED", 16);
+			StringCopy(sParam1, "LAVA_RED" /* GXT: Lava Red */, 16);
 			*iParam2 = 1;
 			*iParam3 = 150;
 			*iParam4 = 0;
 			break;
 		
 		case 101:
-			StringCopy(sParam1, "BLAZE_RED", 16);
+			StringCopy(sParam1, "BLAZE_RED" /* GXT: Blaze Red */, 16);
 			*iParam2 = 1;
 			*iParam3 = 30;
 			*iParam4 = 0;
 			break;
 		
 		case 102:
-			StringCopy(sParam1, "GRACE_RED", 16);
+			StringCopy(sParam1, "GRACE_RED" /* GXT: Grace Red */, 16);
 			*iParam2 = 1;
 			*iParam3 = 31;
 			*iParam4 = 0;
 			break;
 		
 		case 103:
-			StringCopy(sParam1, "GARNET_RED", 16);
+			StringCopy(sParam1, "GARNET_RED" /* GXT: Garnet Red */, 16);
 			*iParam2 = 1;
 			*iParam3 = 32;
 			*iParam4 = 0;
 			break;
 		
 		case 104:
-			StringCopy(sParam1, "SUNSET_RED", 16);
+			StringCopy(sParam1, "SUNSET_RED" /* GXT: Sunset Red */, 16);
 			*iParam2 = 1;
 			*iParam3 = 33;
 			*iParam4 = 0;
 			break;
 		
 		case 105:
-			StringCopy(sParam1, "CABERNET_RED", 16);
+			StringCopy(sParam1, "CABERNET_RED" /* GXT: Cabernet Red */, 16);
 			*iParam2 = 1;
 			*iParam3 = 34;
 			*iParam4 = 0;
 			break;
 		
 		case 106:
-			StringCopy(sParam1, "WINE_RED", 16);
+			StringCopy(sParam1, "WINE_RED" /* GXT: Wine Red */, 16);
 			*iParam2 = 1;
 			*iParam3 = 143;
 			*iParam4 = 0;
 			break;
 		
 		case 107:
-			StringCopy(sParam1, "CANDY_RED", 16);
+			StringCopy(sParam1, "CANDY_RED" /* GXT: Candy Red */, 16);
 			*iParam2 = 1;
 			*iParam3 = 35;
 			*iParam4 = 0;
 			break;
 		
 		case 108:
-			StringCopy(sParam1, "HOT PINK", 16);
+			StringCopy(sParam1, "HOT PINK" /* GXT: Hot Pink */, 16);
 			*iParam2 = 1;
 			*iParam3 = 135;
 			*iParam4 = 0;
 			break;
 		
 		case 109:
-			StringCopy(sParam1, "PINK", 16);
+			StringCopy(sParam1, "PINK" /* GXT: Pfister Pink */, 16);
 			*iParam2 = 1;
 			*iParam3 = 137;
 			*iParam4 = 0;
 			break;
 		
 		case 110:
-			StringCopy(sParam1, "SALMON_PINK", 16);
+			StringCopy(sParam1, "SALMON_PINK" /* GXT: Salmon Pink */, 16);
 			*iParam2 = 1;
 			*iParam3 = 136;
 			*iParam4 = 0;
 			break;
 		
 		case 111:
-			StringCopy(sParam1, "SUNRISE_ORANGE", 16);
+			StringCopy(sParam1, "SUNRISE_ORANGE" /* GXT: Sunrise Orange */, 16);
 			*iParam2 = 1;
 			*iParam3 = 36;
 			*iParam4 = 0;
 			break;
 		
 		case 112:
-			StringCopy(sParam1, "BRIGHT_ORANGE", 16);
+			StringCopy(sParam1, "BRIGHT_ORANGE" /* GXT: Bright Orange */, 16);
 			*iParam2 = 1;
 			*iParam3 = 138;
 			*iParam4 = 0;
 			break;
 		
 		case 113:
-			StringCopy(sParam1, "GOLD", 16);
+			StringCopy(sParam1, "GOLD" /* GXT: Gold */, 16);
 			*iParam2 = 1;
 			*iParam3 = 99;
 			*iParam4 = 99;
 			break;
 		
 		case 114:
-			StringCopy(sParam1, "BRONZE", 16);
+			StringCopy(sParam1, "BRONZE" /* GXT: Bronze */, 16);
 			*iParam2 = 1;
 			*iParam3 = 90;
 			*iParam4 = 102;
 			break;
 		
 		case 115:
-			StringCopy(sParam1, "YELLOW", 16);
+			StringCopy(sParam1, "YELLOW" /* GXT: Yellow */, 16);
 			*iParam2 = 1;
 			*iParam3 = 88;
 			*iParam4 = 0;
 			break;
 		
 		case 116:
-			StringCopy(sParam1, "FLUR_YELLOW", 16);
+			StringCopy(sParam1, "FLUR_YELLOW" /* GXT: Dew Yellow */, 16);
 			*iParam2 = 1;
 			*iParam3 = 91;
 			*iParam4 = 0;
 			break;
 		
 		case 117:
-			StringCopy(sParam1, "DARK_GREEN", 16);
+			StringCopy(sParam1, "DARK_GREEN" /* GXT: Dark Green */, 16);
 			*iParam2 = 1;
 			*iParam3 = 49;
 			*iParam4 = 0;
 			break;
 		
 		case 118:
-			StringCopy(sParam1, "SEA_GREEN", 16);
+			StringCopy(sParam1, "SEA_GREEN" /* GXT: Sea Green */, 16);
 			*iParam2 = 1;
 			*iParam3 = 51;
 			*iParam4 = 0;
 			break;
 		
 		case 119:
-			StringCopy(sParam1, "OLIVE_GREEN", 16);
+			StringCopy(sParam1, "OLIVE_GREEN" /* GXT: Olive Green */, 16);
 			*iParam2 = 1;
 			*iParam3 = 52;
 			*iParam4 = 0;
 			break;
 		
 		case 120:
-			StringCopy(sParam1, "BRIGHT_GREEN", 16);
+			StringCopy(sParam1, "BRIGHT_GREEN" /* GXT: Bright Green */, 16);
 			*iParam2 = 1;
 			*iParam3 = 53;
 			*iParam4 = 0;
 			break;
 		
 		case 121:
-			StringCopy(sParam1, "PETROL_GREEN", 16);
+			StringCopy(sParam1, "PETROL_GREEN" /* GXT: Gasoline Green */, 16);
 			*iParam2 = 1;
 			*iParam3 = 54;
 			*iParam4 = 0;
 			break;
 		
 		case 122:
-			StringCopy(sParam1, "LIME_GREEN", 16);
+			StringCopy(sParam1, "LIME_GREEN" /* GXT: Lime Green */, 16);
 			*iParam2 = 1;
 			*iParam3 = 92;
 			*iParam4 = 0;
 			break;
 		
 		case 123:
-			StringCopy(sParam1, "MIDNIGHT_BLUE", 16);
+			StringCopy(sParam1, "MIDNIGHT_BLUE" /* GXT: Midnight Blue */, 16);
 			*iParam2 = 1;
 			*iParam3 = 141;
 			*iParam4 = 0;
 			break;
 		
 		case 124:
-			StringCopy(sParam1, "GALAXY_BLUE", 16);
+			StringCopy(sParam1, "GALAXY_BLUE" /* GXT: Galaxy Blue */, 16);
 			*iParam2 = 1;
 			*iParam3 = 61;
 			*iParam4 = 0;
 			break;
 		
 		case 125:
-			StringCopy(sParam1, "DARK_BLUE", 16);
+			StringCopy(sParam1, "DARK_BLUE" /* GXT: Dark Blue */, 16);
 			*iParam2 = 1;
 			*iParam3 = 62;
 			*iParam4 = 0;
 			break;
 		
 		case 126:
-			StringCopy(sParam1, "SAXON_BLUE", 16);
+			StringCopy(sParam1, "SAXON_BLUE" /* GXT: Saxon Blue */, 16);
 			*iParam2 = 1;
 			*iParam3 = 63;
 			*iParam4 = 0;
 			break;
 		
 		case 127:
-			StringCopy(sParam1, "BLUE", 16);
+			StringCopy(sParam1, "BLUE" /* GXT: Blue */, 16);
 			*iParam2 = 1;
 			*iParam3 = 64;
 			*iParam4 = 0;
 			break;
 		
 		case 128:
-			StringCopy(sParam1, "MARINER_BLUE", 16);
+			StringCopy(sParam1, "MARINER_BLUE" /* GXT: Mariner Blue */, 16);
 			*iParam2 = 1;
 			*iParam3 = 65;
 			*iParam4 = 0;
 			break;
 		
 		case 129:
-			StringCopy(sParam1, "HARBOR_BLUE", 16);
+			StringCopy(sParam1, "HARBOR_BLUE" /* GXT: Harbor Blue */, 16);
 			*iParam2 = 1;
 			*iParam3 = 66;
 			*iParam4 = 0;
 			break;
 		
 		case 130:
-			StringCopy(sParam1, "DIAMOND_BLUE", 16);
+			StringCopy(sParam1, "DIAMOND_BLUE" /* GXT: Diamond Blue */, 16);
 			*iParam2 = 1;
 			*iParam3 = 67;
 			*iParam4 = 0;
 			break;
 		
 		case 131:
-			StringCopy(sParam1, "SURF_BLUE", 16);
+			StringCopy(sParam1, "SURF_BLUE" /* GXT: Surf Blue */, 16);
 			*iParam2 = 1;
 			*iParam3 = 68;
 			*iParam4 = 0;
 			break;
 		
 		case 132:
-			StringCopy(sParam1, "NAUTICAL_BLUE", 16);
+			StringCopy(sParam1, "NAUTICAL_BLUE" /* GXT: Nautical Blue */, 16);
 			*iParam2 = 1;
 			*iParam3 = 69;
 			*iParam4 = 0;
 			break;
 		
 		case 133:
-			StringCopy(sParam1, "RACING_BLUE", 16);
+			StringCopy(sParam1, "RACING_BLUE" /* GXT: Racing Blue */, 16);
 			*iParam2 = 1;
 			*iParam3 = 73;
 			*iParam4 = 0;
 			break;
 		
 		case 134:
-			StringCopy(sParam1, "LIGHT_BLUE", 16);
+			StringCopy(sParam1, "LIGHT_BLUE" /* GXT: Light Blue */, 16);
 			*iParam2 = 1;
 			*iParam3 = 74;
 			*iParam4 = 0;
 			break;
 		
 		case 135:
-			StringCopy(sParam1, "BISON_BROWN", 16);
+			StringCopy(sParam1, "BISON_BROWN" /* GXT: Bison Brown */, 16);
 			*iParam2 = 1;
 			*iParam3 = 101;
 			*iParam4 = 0;
 			break;
 		
 		case 136:
-			StringCopy(sParam1, "CREEK_BROWN", 16);
+			StringCopy(sParam1, "CREEK_BROWN" /* GXT: Creek Brown */, 16);
 			*iParam2 = 1;
 			*iParam3 = 95;
 			*iParam4 = 0;
 			break;
 		
 		case 137:
-			StringCopy(sParam1, "UMBER_BROWN", 16);
+			StringCopy(sParam1, "UMBER_BROWN" /* GXT: Feltzer Brown */, 16);
 			*iParam2 = 1;
 			*iParam3 = 94;
 			*iParam4 = 0;
 			break;
 		
 		case 138:
-			StringCopy(sParam1, "MAPLE_BROWN", 16);
+			StringCopy(sParam1, "MAPLE_BROWN" /* GXT: Maple Brown */, 16);
 			*iParam2 = 1;
 			*iParam3 = 97;
 			*iParam4 = 0;
 			break;
 		
 		case 139:
-			StringCopy(sParam1, "BEECHWOOD_BROWN", 16);
+			StringCopy(sParam1, "BEECHWOOD_BROWN" /* GXT: Beechwood Brown */, 16);
 			*iParam2 = 1;
 			*iParam3 = 103;
 			*iParam4 = 0;
 			break;
 		
 		case 140:
-			StringCopy(sParam1, "SIENNA_BROWN", 16);
+			StringCopy(sParam1, "SIENNA_BROWN" /* GXT: Sienna Brown */, 16);
 			*iParam2 = 1;
 			*iParam3 = 104;
 			*iParam4 = 0;
 			break;
 		
 		case 141:
-			StringCopy(sParam1, "SADDLE_BROWN", 16);
+			StringCopy(sParam1, "SADDLE_BROWN" /* GXT: Saddle Brown */, 16);
 			*iParam2 = 1;
 			*iParam3 = 98;
 			*iParam4 = 0;
 			break;
 		
 		case 142:
-			StringCopy(sParam1, "MOSS_BROWN", 16);
+			StringCopy(sParam1, "MOSS_BROWN" /* GXT: Moss Brown */, 16);
 			*iParam2 = 1;
 			*iParam3 = 100;
 			*iParam4 = 0;
 			break;
 		
 		case 143:
-			StringCopy(sParam1, "WOODBEECH_BROWN", 16);
+			StringCopy(sParam1, "WOODBEECH_BROWN" /* GXT: Woodbeech Brown */, 16);
 			*iParam2 = 1;
 			*iParam3 = 102;
 			*iParam4 = 0;
 			break;
 		
 		case 144:
-			StringCopy(sParam1, "STRAW_BROWN", 16);
+			StringCopy(sParam1, "STRAW_BROWN" /* GXT: Straw Brown */, 16);
 			*iParam2 = 1;
 			*iParam3 = 99;
 			*iParam4 = 0;
 			break;
 		
 		case 145:
-			StringCopy(sParam1, "SANDY_BROWN", 16);
+			StringCopy(sParam1, "SANDY_BROWN" /* GXT: Sandy Brown */, 16);
 			*iParam2 = 1;
 			*iParam3 = 105;
 			*iParam4 = 0;
 			break;
 		
 		case 146:
-			StringCopy(sParam1, "BLEECHED_BROWN", 16);
+			StringCopy(sParam1, "BLEECHED_BROWN" /* GXT: Bleached Brown */, 16);
 			*iParam2 = 1;
 			*iParam3 = 106;
 			*iParam4 = 0;
 			break;
 		
 		case 147:
-			StringCopy(sParam1, "PURPLE", 16);
+			StringCopy(sParam1, "PURPLE" /* GXT: Schafter Purple */, 16);
 			*iParam2 = 1;
 			*iParam3 = 71;
 			*iParam4 = 0;
 			break;
 		
 		case 148:
-			StringCopy(sParam1, "SPIN_PURPLE", 16);
+			StringCopy(sParam1, "SPIN_PURPLE" /* GXT: Spinnaker Purple */, 16);
 			*iParam2 = 1;
 			*iParam3 = 72;
 			*iParam4 = 0;
 			break;
 		
 		case 149:
-			StringCopy(sParam1, "MIGHT_PURPLE", 16);
+			StringCopy(sParam1, "MIGHT_PURPLE" /* GXT: Midnight Purple */, 16);
 			*iParam2 = 1;
 			*iParam3 = 142;
 			*iParam4 = 0;
 			break;
 		
 		case 150:
-			StringCopy(sParam1, "BRIGHT_PURPLE", 16);
+			StringCopy(sParam1, "BRIGHT_PURPLE" /* GXT: Bright Purple */, 16);
 			*iParam2 = 1;
 			*iParam3 = 145;
 			*iParam4 = 0;
 			break;
 		
 		case 151:
-			StringCopy(sParam1, "CREAM", 16);
+			StringCopy(sParam1, "CREAM" /* GXT: Cream */, 16);
 			*iParam2 = 1;
 			*iParam3 = 107;
 			*iParam4 = 0;
 			break;
 		
 		case 152:
-			StringCopy(sParam1, "FROST_WHITE", 16);
+			StringCopy(sParam1, "FROST_WHITE" /* GXT: Frost White */, 16);
 			*iParam2 = 1;
 			*iParam3 = 112;
 			*iParam4 = 0;
 			break;
 		
 		case 153:
-			StringCopy(sParam1, "BLACK", 16);
+			StringCopy(sParam1, "BLACK" /* GXT: Black */, 16);
 			*iParam2 = 2;
 			*iParam3 = 12;
 			*iParam4 = 0;
 			break;
 		
 		case 154:
-			StringCopy(sParam1, "GREY", 16);
+			StringCopy(sParam1, "GREY" /* GXT: Gray */, 16);
 			*iParam2 = 2;
 			*iParam3 = 13;
 			*iParam4 = 0;
 			break;
 		
 		case 155:
-			StringCopy(sParam1, "LIGHT_GREY", 16);
+			StringCopy(sParam1, "LIGHT_GREY" /* GXT: Light Gray */, 16);
 			*iParam2 = 2;
 			*iParam3 = 14;
 			*iParam4 = 0;
 			break;
 		
 		case 156:
-			StringCopy(sParam1, "WHITE", 16);
+			StringCopy(sParam1, "WHITE" /* GXT: Ice White */, 16);
 			*iParam2 = 2;
 			*iParam3 = 131;
 			*iParam4 = 0;
 			break;
 		
 		case 157:
-			StringCopy(sParam1, "BLUE", 16);
+			StringCopy(sParam1, "BLUE" /* GXT: Blue */, 16);
 			*iParam2 = 2;
 			*iParam3 = 83;
 			*iParam4 = 0;
 			break;
 		
 		case 158:
-			StringCopy(sParam1, "DARK_BLUE", 16);
+			StringCopy(sParam1, "DARK_BLUE" /* GXT: Dark Blue */, 16);
 			*iParam2 = 2;
 			*iParam3 = 82;
 			*iParam4 = 0;
 			break;
 		
 		case 159:
-			StringCopy(sParam1, "MIDNIGHT_BLUE", 16);
+			StringCopy(sParam1, "MIDNIGHT_BLUE" /* GXT: Midnight Blue */, 16);
 			*iParam2 = 2;
 			*iParam3 = 84;
 			*iParam4 = 0;
 			break;
 		
 		case 160:
-			StringCopy(sParam1, "MIGHT_PURPLE", 16);
+			StringCopy(sParam1, "MIGHT_PURPLE" /* GXT: Midnight Purple */, 16);
 			*iParam2 = 2;
 			*iParam3 = 149;
 			*iParam4 = 0;
 			break;
 		
 		case 161:
-			StringCopy(sParam1, "Purple", 16);
+			StringCopy(sParam1, "Purple" /* GXT: Schafter Purple */, 16);
 			*iParam2 = 2;
 			*iParam3 = 148;
 			*iParam4 = 0;
 			break;
 		
 		case 162:
-			StringCopy(sParam1, "RED", 16);
+			StringCopy(sParam1, "RED" /* GXT: Red */, 16);
 			*iParam2 = 2;
 			*iParam3 = 39;
 			*iParam4 = 0;
 			break;
 		
 		case 163:
-			StringCopy(sParam1, "DARK_RED", 16);
+			StringCopy(sParam1, "DARK_RED" /* GXT: Dark Red */, 16);
 			*iParam2 = 2;
 			*iParam3 = 40;
 			*iParam4 = 0;
 			break;
 		
 		case 164:
-			StringCopy(sParam1, "ORANGE", 16);
+			StringCopy(sParam1, "ORANGE" /* GXT: Orange */, 16);
 			*iParam2 = 2;
 			*iParam3 = 41;
 			*iParam4 = 0;
 			break;
 		
 		case 165:
-			StringCopy(sParam1, "YELLOW", 16);
+			StringCopy(sParam1, "YELLOW" /* GXT: Yellow */, 16);
 			*iParam2 = 2;
 			*iParam3 = 42;
 			*iParam4 = 0;
 			break;
 		
 		case 166:
-			StringCopy(sParam1, "GREEN", 16);
+			StringCopy(sParam1, "GREEN" /* GXT: Green */, 16);
 			*iParam2 = 2;
 			*iParam3 = 128;
 			*iParam4 = 0;
 			break;
 		
 		case 167:
-			StringCopy(sParam1, "MATTE_FOR", 16);
+			StringCopy(sParam1, "MATTE_FOR" /* GXT: Forest Green */, 16);
 			*iParam2 = 2;
 			*iParam3 = 151;
 			*iParam4 = 0;
 			break;
 		
 		case 168:
-			StringCopy(sParam1, "MATTE_FOIL", 16);
+			StringCopy(sParam1, "MATTE_FOIL" /* GXT: Foliage Green */, 16);
 			*iParam2 = 2;
 			*iParam3 = 155;
 			*iParam4 = 0;
 			break;
 		
 		case 169:
-			StringCopy(sParam1, "MATTE_OD", 16);
+			StringCopy(sParam1, "MATTE_OD" /* GXT: Olive Drab */, 16);
 			*iParam2 = 2;
 			*iParam3 = 152;
 			*iParam4 = 0;
 			break;
 		
 		case 170:
-			StringCopy(sParam1, "MATTE_DIRT", 16);
+			StringCopy(sParam1, "MATTE_DIRT" /* GXT: Dark Earth */, 16);
 			*iParam2 = 2;
 			*iParam3 = 153;
 			*iParam4 = 0;
 			break;
 		
 		case 171:
-			StringCopy(sParam1, "MATTE_DESERT", 16);
+			StringCopy(sParam1, "MATTE_DESERT" /* GXT: Desert Tan */, 16);
 			*iParam2 = 2;
 			*iParam3 = 154;
 			*iParam4 = 0;
 			break;
 		
 		case 172:
-			StringCopy(sParam1, "BR_STEEL", 16);
+			StringCopy(sParam1, "BR_STEEL" /* GXT: Brushed Steel */, 16);
 			*iParam2 = 3;
 			*iParam3 = 117;
 			*iParam4 = 18;
 			break;
 		
 		case 173:
-			StringCopy(sParam1, "BR_ALUMINIUM", 16);
+			StringCopy(sParam1, "BR_ALUMINIUM" /* GXT: Brushed Aluminum */, 16);
 			*iParam2 = 3;
 			*iParam3 = 119;
 			*iParam4 = 5;
 			break;
 		
 		case 174:
-			StringCopy(sParam1, "GOLD_P", 16);
+			StringCopy(sParam1, "GOLD_P" /* GXT: Pure Gold */, 16);
 			*iParam2 = 3;
 			*iParam3 = 158;
 			*iParam4 = 160;
 			break;
 		
 		case 175:
-			StringCopy(sParam1, "GOLD_S", 16);
+			StringCopy(sParam1, "GOLD_S" /* GXT: Brushed Gold */, 16);
 			*iParam2 = 3;
 			*iParam3 = 159;
 			*iParam4 = 160;
@@ -34407,7 +34407,7 @@ void func_487(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4,
 		}
 		if (iParam5 == 58 && iParam4 == 2)
 		{
-			if (MISC::ARE_STRINGS_EQUAL(sParam2, "CMOD_TYR_LG"))
+			if (MISC::ARE_STRINGS_EQUAL(sParam2, "CMOD_TYR_LG" /* GXT: Low Grip Tires */))
 			{
 				if (func_481(iParam0) && func_491(PLAYER::PLAYER_ID()))
 				{

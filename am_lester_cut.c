@@ -979,7 +979,7 @@ void func_19()//Position - 0x830
 										{
 											if (func_188(1, 1, 1, 1))
 											{
-												func_187("FM_LCUT_LRB", -1);
+												func_187("FM_LCUT_LRB" /* GXT: ~s~Lester is currently busy. This is shown on the map with ~HUD_COLOUR_INACTIVE_MISSION~~BLIP_LESTER_FAMILY~ */, -1);
 												MISC::SET_BIT(&uLocal_333, 13);
 											}
 										}
@@ -989,9 +989,9 @@ void func_19()//Position - 0x830
 						}
 						else if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 						{
-							if (!func_186("FM_LCUT_LCP"))
+							if (!func_186("FM_LCUT_LCP" /* GXT: ~s~You need to lose the Cops before Lester will speak to you. */))
 							{
-								func_187("FM_LCUT_LCP", -1);
+								func_187("FM_LCUT_LCP" /* GXT: ~s~You need to lose the Cops before Lester will speak to you. */, -1);
 							}
 						}
 					}
@@ -1003,7 +1003,7 @@ void func_19()//Position - 0x830
 							{
 								if (!func_218())
 								{
-									func_187("FM_LCUT_LBLP", -1);
+									func_187("FM_LCUT_LBLP" /* GXT: ~s~Lester is now a Contact you can go and visit. He is marked with ~BLIP_LESTER_FAMILY~ on the Radar. */, -1);
 									if (!HUD::DOES_BLIP_EXIST(Global_1931382))
 									{
 										Global_1931382 = HUD::ADD_BLIP_FOR_COORD(Global_1931383);
@@ -3700,8 +3700,8 @@ int func_87()//Position - 0x383E
 				{
 					iLocal_335 = HUD::ADD_BLIP_FOR_ENTITY(iLocal_162);
 					HUD::SET_BLIP_AS_FRIENDLY(iLocal_335, true);
-					HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_335, "FM_LEST_BLP");
-					func_136("FM_LEST_GTL", 0);
+					HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_335, "FM_LEST_BLP" /* GXT: Lester */);
+					func_136("FM_LEST_GTL" /* GXT: ~s~Go to ~b~Lester. */, 0);
 					MISC::SET_BIT(&uLocal_333, 18);
 				}
 			}
@@ -5063,10 +5063,10 @@ int func_142()//Position - 0x4E92
 				CAM::SET_CAM_PARAMS(iLocal_342, 1276.409f, -1719.918f, 56.1054f, -29.932f, 0f, 137.9132f, 50f, 0, 1, 1, 2);
 				CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_341, "SET_DETAILS");
-				func_167("FM_LEST_CAM");
+				func_167("FM_LEST_CAM" /* GXT: ~s~CAM: 02 */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_341, "SET_LOCATION");
-				func_167("FM_LEST_CAM2");
+				func_167("FM_LEST_CAM2" /* GXT: ~s~FRONT DOOR */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				if (GRAPHICS::GET_TIMECYCLE_MODIFIER_INDEX() == -1)
 				{
@@ -5199,11 +5199,11 @@ int func_142()//Position - 0x4E92
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 			if (CLOCK::GET_CLOCK_HOURS() >= 0 && CLOCK::GET_CLOCK_HOURS() < 12)
 			{
-				func_167("FM_LEST_AM");
+				func_167("FM_LEST_AM" /* GXT: ~s~AM */);
 			}
 			else
 			{
-				func_167("FM_LEST_PM");
+				func_167("FM_LEST_PM" /* GXT: ~s~PM */);
 			}
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::DRAW_SCALEFORM_MOVIE_FULLSCREEN(iLocal_341, 255, 255, 255, 255, 0);

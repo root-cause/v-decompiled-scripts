@@ -1067,7 +1067,7 @@ void func_11()//Position - 0x591
 	}
 	if (iLocal_511 == 3014 && func_419())
 	{
-		HUD::BEGIN_TEXT_COMMAND_DISPLAY_HELP("OR_RSP_TUT");
+		HUD::BEGIN_TEXT_COMMAND_DISPLAY_HELP("OR_RSP_TUT" /* GXT: Supplies can be purchased directly. Once delivered your supply level will be topped up automatically. */);
 		HUD::END_TEXT_COMMAND_DISPLAY_HELP(0, false, true, 8000);
 		iVar0 = func_418(9356, -1) + 1;
 		func_417(9356, iVar0, -1);
@@ -1102,29 +1102,29 @@ void func_11()//Position - 0x591
 				case 3001:
 					if (Global_1640666[iVar3] >= Global_262145.f_18433)
 					{
-						func_221(0, "OR_MIS_NA_B", "OR_OVRLY_OK", "", -1, 1);
+						func_221(0, "OR_MIS_NA_B" /* GXT: No supplies are required at this time. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 					}
 					else if (func_220(iVar3))
 					{
-						func_221(0, "OR_MIS_NA_C", "OR_OVRLY_OK", "", -1, 1);
+						func_221(0, "OR_MIS_NA_C" /* GXT: A shipment of supplies is already on its way. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 					}
 					break;
 				
 				case 3002:
 					if (Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_267.f_191[iVar3 /*13*/].f_4 <= 0)
 					{
-						func_221(0, "OR_UPGR_NS", "OR_OVRLY_OK", "", -1, 1);
+						func_221(0, "OR_UPGR_NS" /* GXT: You need to set up this business before you can purchase any upgrades. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 					}
 					else if (func_209(iLocal_517) == 2)
 					{
-						func_221(0, "OR_UPGR_RES", "OR_OVRLY_OK", "", -1, 1);
+						func_221(0, "OR_UPGR_RES" /* GXT: You need to restart production at this business before you can purchase any upgrades. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 					}
 					break;
 				
 				case 3003:
 					if (func_208(PLAYER::PLAYER_ID()))
 					{
-						func_221(0, "BKR_TF_R3", "OR_OVRLY_OK", "", -1, 1);
+						func_221(0, "BKR_TF_R3" /* GXT: Unable to launch a mission whilst you're on another job. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 					}
 					else if (!func_206(192))
 					{
@@ -1134,46 +1134,46 @@ void func_11()//Position - 0x591
 						}
 						if (iVar4 == 15)
 						{
-							func_221(0, "GENERAL_MLF_G1", "OR_OVRLY_OK", "", -1, 1);
+							func_221(0, "GENERAL_MLF_G1" /* GXT: Can't launch this mission whilst one of your Club Members is currently at one with the animals. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 						}
 						else if (iVar4 == 16)
 						{
-							func_221(0, "GENERAL_MLF_G4", "OR_OVRLY_OK", "", -1, 1);
+							func_221(0, "GENERAL_MLF_G4" /* GXT: Can't launch this mission whilst one of your Club Members is playing a casino game. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 						}
 						else
 						{
-							func_221(0, "BKR_TF_R6", "OR_OVRLY_OK", "", -1, 1);
+							func_221(0, "BKR_TF_R6" /* GXT: Unable to launch the mission. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 						}
 					}
 					else
 					{
-						func_221(iVar1, "OR_BUS_SETUP", "WHOUSE_CONF", "WHOUSE_CANC", -1, 0);
+						func_221(iVar1, "OR_BUS_SETUP" /* GXT: Are you sure you want to set up this business? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, -1, 0);
 					}
 					break;
 				
 				case 3005:
 					if (func_220(iVar3))
 					{
-						func_221(0, "UA_CANT_SDOWN", "OR_OVRLY_OK", "", -1, 1);
+						func_221(0, "UA_CANT_SDOWN" /* GXT: You can't shut down business operations whilst acquiring supplies. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 					}
 					else
 					{
-						func_221(iVar1, "OR_STOP_PROD", "WHOUSE_CONF", "WHOUSE_CANC", -1, 0);
+						func_221(iVar1, "OR_STOP_PROD" /* GXT: All product will be lost, are you sure you want to shut down? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, -1, 0);
 					}
 					break;
 				
 				case 3006:
 					if (Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_267.f_191[iVar3 /*13*/].f_4 <= 0)
 					{
-						func_221(0, "OR_BS_NOT_SETUP", "OR_OVRLY_OK", "", -1, 1);
+						func_221(0, "OR_BS_NOT_SETUP" /* GXT: You need to set up this business before production can begin. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 					}
 					else if (Global_1640666[iVar3] <= 0)
 					{
-						func_221(iVar1, "OR_START_PRD_NS", "WHOUSE_CONF", "WHOUSE_CANC", -1, 0);
+						func_221(iVar1, "OR_START_PRD_NS" /* GXT: No goods can be produced until you acquire the necessary supplies. Are you sure you want to start production? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, -1, 0);
 					}
 					else
 					{
-						func_221(iVar1, "OR_START_PROD", "WHOUSE_CONF", "WHOUSE_CANC", -1, 0);
+						func_221(iVar1, "OR_START_PROD" /* GXT: Are you sure you want to start production? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, -1, 0);
 					}
 					break;
 				
@@ -1195,23 +1195,23 @@ void func_11()//Position - 0x591
 					iVar7 = func_13(0, iVar6, 0);
 					if (Global_262145.f_18997)
 					{
-						func_221(0, "OR_BS_PAY_NA", "OR_OVRLY_OK", "", -1, 1);
+						func_221(0, "OR_BS_PAY_NA" /* GXT: No suppliers are available at this time. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 					}
 					else if (Global_1640666[iVar3] >= Global_262145.f_18433)
 					{
-						func_221(0, "OR_MIS_NA_B", "OR_OVRLY_OK", "", -1, 1);
+						func_221(0, "OR_MIS_NA_B" /* GXT: No supplies are required at this time. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 					}
 					else if (func_220(iVar3))
 					{
-						func_221(0, "OR_MIS_NA_C", "OR_OVRLY_OK", "", -1, 1);
+						func_221(0, "OR_MIS_NA_C" /* GXT: A shipment of supplies is already on its way. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 					}
 					else if (!MONEY::NETWORK_CAN_SPEND_MONEY(iVar7, false, true, false, -1, 0))
 					{
-						func_221(0, "OR_BS_PAY_NM", "OR_OVRLY_OK", "", -1, 1);
+						func_221(0, "OR_BS_PAY_NM" /* GXT: You do not have enough money to purchase supplies. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 					}
 					else
 					{
-						func_221(iVar1, "OR_BUY_SUP", "WHOUSE_CONF", "WHOUSE_CANC", iVar7, 0);
+						func_221(iVar1, "OR_BUY_SUP" /* GXT: Are you sure you want to buy Supplies for $~1~? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, iVar7, 0);
 					}
 					break;
 				
@@ -1230,11 +1230,11 @@ void func_12(int iParam0)//Position - 0xA5C
 	
 	if (Global_1640666[func_466(iLocal_517)] >= Global_262145.f_18433)
 	{
-		func_221(0, "OR_MIS_NA_B", "OR_OVRLY_OK", "", -1, 1);
+		func_221(0, "OR_MIS_NA_B" /* GXT: No supplies are required at this time. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 	}
 	else if (func_220(func_466(iLocal_517)))
 	{
-		func_221(0, "OR_MIS_NA_C", "OR_OVRLY_OK", "", -1, 1);
+		func_221(0, "OR_MIS_NA_C" /* GXT: A shipment of supplies is already on its way. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 	}
 	else if (!func_206(192))
 	{
@@ -1244,21 +1244,21 @@ void func_12(int iParam0)//Position - 0xA5C
 		}
 		if (iVar0 == 15)
 		{
-			func_221(0, "GENERAL_MLF_G1", "OR_OVRLY_OK", "", -1, 1);
+			func_221(0, "GENERAL_MLF_G1" /* GXT: Can't launch this mission whilst one of your Club Members is currently at one with the animals. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 		}
 		else if (iVar0 == 16)
 		{
-			func_221(0, "GENERAL_MLF_G4", "OR_OVRLY_OK", "", -1, 1);
+			func_221(0, "GENERAL_MLF_G4" /* GXT: Can't launch this mission whilst one of your Club Members is playing a casino game. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 		}
 		else
 		{
-			func_221(0, "OR_MIS_NA_B", "OR_OVRLY_OK", "", -1, 1);
+			func_221(0, "OR_MIS_NA_B" /* GXT: No supplies are required at this time. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 		}
 		iLocal_512 = 0;
 	}
 	else
 	{
-		func_221(iParam0, "OR_STEAL_SUP", "WHOUSE_CONF", "WHOUSE_CANC", -1, 0);
+		func_221(iParam0, "OR_STEAL_SUP" /* GXT: Are you sure you want to steal Supplies for your business? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, -1, 0);
 	}
 }
 
@@ -1312,7 +1312,7 @@ void func_15(int iParam0, bool bParam1)//Position - 0xBD0
 	
 	if (func_17(iLocal_517))
 	{
-		func_221(0, "OR_BUS_EMPTY", "OR_OVRLY_OK", "", -1, 1);
+		func_221(0, "OR_BUS_EMPTY" /* GXT: You have no goods to sell. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 	}
 	else if (!func_206(190))
 	{
@@ -1322,31 +1322,31 @@ void func_15(int iParam0, bool bParam1)//Position - 0xBD0
 		}
 		if (iVar0 == 15)
 		{
-			func_221(0, "GENERAL_MLF_G1", "OR_OVRLY_OK", "", -1, 1);
+			func_221(0, "GENERAL_MLF_G1" /* GXT: Can't launch this mission whilst one of your Club Members is currently at one with the animals. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 		}
 		else if (iVar0 == 16)
 		{
-			func_221(0, "GENERAL_MLF_G4", "OR_OVRLY_OK", "", -1, 1);
+			func_221(0, "GENERAL_MLF_G4" /* GXT: Can't launch this mission whilst one of your Club Members is playing a casino game. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 		}
 		else
 		{
-			func_221(0, "OR_MIS_NA", "OR_OVRLY_OK", "", -1, 1);
+			func_221(0, "OR_MIS_NA" /* GXT: There are no buyers available for your goods at this time. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 		}
 	}
 	else if (func_16(iLocal_517) > 25)
 	{
 		if (bParam1)
 		{
-			func_221(1003, "OR_SELL_GDB", "OR_OVRLY_OK", "", -1, 0);
+			func_221(1003, "OR_SELL_GDB" /* GXT: Larger sales may require multiple vehicles. Ensure you have additional Members prior to starting this mission. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 0);
 		}
 		else
 		{
-			func_221(1002, "OR_SELL_GDB", "OR_OVRLY_OK", "", -1, 0);
+			func_221(1002, "OR_SELL_GDB" /* GXT: Larger sales may require multiple vehicles. Ensure you have additional Members prior to starting this mission. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 0);
 		}
 	}
 	else
 	{
-		func_221(iParam0, "OR_SELL_GD", "WHOUSE_CONF", "WHOUSE_CANC", -1, 0);
+		func_221(iParam0, "OR_SELL_GD" /* GXT: Are you sure you want to sell your goods from this business? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, -1, 0);
 	}
 }
 
@@ -1381,27 +1381,27 @@ void func_18(int iParam0, int iParam1)//Position - 0xD30
 	iVar0 = func_466(iLocal_517);
 	if (!func_30(iVar0))
 	{
-		func_221(0, "OR_UPGR_NA", "OR_OVRLY_OK", "", -1, 1);
+		func_221(0, "OR_UPGR_NA" /* GXT: This upgrade is currently unavailable. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 	}
 	else if (Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_267.f_191[iVar0 /*13*/].f_4 <= 0)
 	{
-		func_221(0, "OR_UPGR_NS", "OR_OVRLY_OK", "", -1, 1);
+		func_221(0, "OR_UPGR_NS" /* GXT: You need to set up this business before you can purchase any upgrades. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 	}
 	else if (func_29(iParam0, iLocal_517))
 	{
-		func_221(0, "OR_UPGR_NA", "OR_OVRLY_OK", "", -1, 1);
+		func_221(0, "OR_UPGR_NA" /* GXT: This upgrade is currently unavailable. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 	}
 	else if (func_28(PLAYER::PLAYER_ID(), iLocal_517, iParam0))
 	{
-		func_221(0, "OR_UPGR_OWN", "OR_OVRLY_OK", "", -1, 1);
+		func_221(0, "OR_UPGR_OWN" /* GXT: You already own this upgrade. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 	}
 	else if (MONEY::NETWORK_CAN_SPEND_MONEY(func_19(iParam0, iLocal_517), false, true, false, -1, 0))
 	{
-		func_221(iParam1, "OR_BUY_UPGR", "WHOUSE_CONF", "WHOUSE_CANC", -1, 0);
+		func_221(iParam1, "OR_BUY_UPGR" /* GXT: Are you sure you want to purchase this upgrade? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, -1, 0);
 	}
 	else
 	{
-		func_221(0, "OR_UPG_NO_MONEY", "OR_OVRLY_OK", "", -1, 1);
+		func_221(0, "OR_UPG_NO_MONEY" /* GXT: You do not have enough money to purchase this upgrade. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 	}
 }
 
@@ -11533,22 +11533,22 @@ void func_222(int iParam0, int iParam1)//Position - 0x9E5A
 	}
 	if (iVar2 > 0 && !MONEY::NETWORK_CAN_SPEND_MONEY(iVar2, false, true, false, -1, 0))
 	{
-		func_221(0, "OR_BUS_AFF", "OR_OVRLY_OK", "", -1, 1);
+		func_221(0, "OR_BUS_AFF" /* GXT: You can't afford this business. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 	}
 	else if (func_223(iVar0))
 	{
 		if (func_238(PLAYER::PLAYER_ID(), func_27(iVar0)))
 		{
-			func_221(1001, "OR_BUY_BUSB", "WHOUSE_CONF", "WHOUSE_CANC", -1, 0);
+			func_221(1001, "OR_BUY_BUSB" /* GXT: You will lose all product, supplies and upgrades when trading. Are you sure you want to trade this business? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, -1, 0);
 		}
 		else
 		{
-			func_221(iParam1, "OR_BUY_BUS", "WHOUSE_CONF", "WHOUSE_CANC", -1, 0);
+			func_221(iParam1, "OR_BUY_BUS" /* GXT: Are you sure you want to buy this business? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, -1, 0);
 		}
 	}
 	else
 	{
-		func_221(0, "OR_BUS_NA", "OR_OVRLY_OK", "", -1, 1);
+		func_221(0, "OR_BUS_NA" /* GXT: This business is currently unavailable. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 	}
 }
 
@@ -12069,127 +12069,127 @@ char* func_240(int iParam0)//Position - 0xA7AF
 	switch (iParam0)
 	{
 		case 2:
-			sVar0 = "MP_BWH_WEED_1";
+			sVar0 = "MP_BWH_WEED_1" /* GXT: Mount Chiliad Weed Farm */;
 			break;
 		
 		case 1:
-			sVar0 = "MP_BWH_METH_1";
+			sVar0 = "MP_BWH_METH_1" /* GXT: Paleto Bay Meth Lab */;
 			break;
 		
 		case 3:
-			sVar0 = "MP_BWH_CRACK_1";
+			sVar0 = "MP_BWH_CRACK_1" /* GXT: Paleto Bay Cocaine Lockup */;
 			break;
 		
 		case 5:
-			sVar0 = "MP_BWH_FAKEID_1";
+			sVar0 = "MP_BWH_FAKEID_1" /* GXT: Paleto Bay Forgery Office */;
 			break;
 		
 		case 4:
-			sVar0 = "MP_BWH_CASH_1";
+			sVar0 = "MP_BWH_CASH_1" /* GXT: Paleto Bay Counterfeit Cash Factory */;
 			break;
 		
 		case 7:
-			sVar0 = "MP_BWH_WEED_2";
+			sVar0 = "MP_BWH_WEED_2" /* GXT: Downtown Vinewood Weed Farm */;
 			break;
 		
 		case 6:
-			sVar0 = "MP_BWH_METH_2";
+			sVar0 = "MP_BWH_METH_2" /* GXT: El Burro Heights Meth Lab */;
 			break;
 		
 		case 8:
-			sVar0 = "MP_BWH_CRACK_2";
+			sVar0 = "MP_BWH_CRACK_2" /* GXT: Morningwood Cocaine Lockup */;
 			break;
 		
 		case 10:
-			sVar0 = "MP_BWH_FAKEID_2";
+			sVar0 = "MP_BWH_FAKEID_2" /* GXT: Textile City Forgery Office */;
 			break;
 		
 		case 9:
-			sVar0 = "MP_BWH_CASH_2";
+			sVar0 = "MP_BWH_CASH_2" /* GXT: Vespucci Canals Counterfeit Cash Factory */;
 			break;
 		
 		case 12:
-			sVar0 = "MP_BWH_WEED_3";
+			sVar0 = "MP_BWH_WEED_3" /* GXT: San Chianski Weed Farm */;
 			break;
 		
 		case 11:
-			sVar0 = "MP_BWH_METH_3";
+			sVar0 = "MP_BWH_METH_3" /* GXT: Senora Desert Meth Lab */;
 			break;
 		
 		case 13:
-			sVar0 = "MP_BWH_CRACK_3";
+			sVar0 = "MP_BWH_CRACK_3" /* GXT: Zancudo River Cocaine Lockup */;
 			break;
 		
 		case 15:
-			sVar0 = "MP_BWH_FAKEID_3";
+			sVar0 = "MP_BWH_FAKEID_3" /* GXT: Grapeseed Forgery Office */;
 			break;
 		
 		case 14:
-			sVar0 = "MP_BWH_CASH_3";
+			sVar0 = "MP_BWH_CASH_3" /* GXT: Senora Desert Counterfeit Cash Factory */;
 			break;
 		
 		case 17:
-			sVar0 = "MP_BWH_WEED_4";
+			sVar0 = "MP_BWH_WEED_4" /* GXT: Elysian Island Weed Farm */;
 			break;
 		
 		case 16:
-			sVar0 = "MP_BWH_METH_4";
+			sVar0 = "MP_BWH_METH_4" /* GXT: Terminal Meth Lab */;
 			break;
 		
 		case 18:
-			sVar0 = "MP_BWH_CRACK_4";
+			sVar0 = "MP_BWH_CRACK_4" /* GXT: Elysian Island Cocaine Lockup */;
 			break;
 		
 		case 20:
-			sVar0 = "MP_BWH_FAKEID_4";
+			sVar0 = "MP_BWH_FAKEID_4" /* GXT: Elysian Island Forgery Office */;
 			break;
 		
 		case 19:
-			sVar0 = "MP_BWH_CASH_4";
+			sVar0 = "MP_BWH_CASH_4" /* GXT: Cypress Flats Counterfeit Cash Factory */;
 			break;
 		
 		case 21:
-			sVar0 = "MP_BUNKER_1";
+			sVar0 = "MP_BUNKER_1" /* GXT: Grand Senora Oilfields Bunker */;
 			break;
 		
 		case 22:
-			sVar0 = "MP_BUNKER_2";
+			sVar0 = "MP_BUNKER_2" /* GXT: Grand Senora Desert Bunker */;
 			break;
 		
 		case 23:
-			sVar0 = "MP_BUNKER_3";
+			sVar0 = "MP_BUNKER_3" /* GXT: Route 68 Bunker */;
 			break;
 		
 		case 24:
-			sVar0 = "MP_BUNKER_4";
+			sVar0 = "MP_BUNKER_4" /* GXT: Farmhouse Bunker */;
 			break;
 		
 		case 25:
-			sVar0 = "MP_BUNKER_5";
+			sVar0 = "MP_BUNKER_5" /* GXT: Smoke Tree Road Bunker */;
 			break;
 		
 		case 26:
-			sVar0 = "MP_BUNKER_6";
+			sVar0 = "MP_BUNKER_6" /* GXT: Thomson Scrapyard Bunker */;
 			break;
 		
 		case 27:
-			sVar0 = "MP_BUNKER_7";
+			sVar0 = "MP_BUNKER_7" /* GXT: Grapeseed Bunker */;
 			break;
 		
 		case 28:
-			sVar0 = "MP_BUNKER_9";
+			sVar0 = "MP_BUNKER_9" /* GXT: Paleto Forest Bunker */;
 			break;
 		
 		case 29:
-			sVar0 = "MP_BUNKER_10";
+			sVar0 = "MP_BUNKER_10" /* GXT: Raton Canyon Bunker */;
 			break;
 		
 		case 30:
-			sVar0 = "MP_BUNKER_11";
+			sVar0 = "MP_BUNKER_11" /* GXT: Lago Zancudo Bunker */;
 			break;
 		
 		case 31:
-			sVar0 = "MP_BUNKER_12";
+			sVar0 = "MP_BUNKER_12" /* GXT: Chumash Bunker */;
 			break;
 	}
 	return sVar0;
@@ -12288,7 +12288,7 @@ void func_246(bool bParam0, int iParam1)//Position - 0xAA55
 				break;
 			
 			case 1001:
-				func_221(2001, "OR_BUY_SAV", "WHOUSE_CONF", "WHOUSE_CANC", func_355(iParam1), 0);
+				func_221(2001, "OR_BUY_SAV" /* GXT: Trading in will refund you $~1~. Are you sure you want to trade? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, func_355(iParam1), 0);
 				break;
 			
 			case 1002:
@@ -12300,21 +12300,21 @@ void func_246(bool bParam0, int iParam1)//Position - 0xAA55
 					}
 					if (iVar1 == 15)
 					{
-						func_221(0, "GENERAL_MLF_G1", "OR_OVRLY_OK", "", -1, 1);
+						func_221(0, "GENERAL_MLF_G1" /* GXT: Can't launch this mission whilst one of your Club Members is currently at one with the animals. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 					}
 					else if (iVar1 == 16)
 					{
-						func_221(0, "GENERAL_MLF_G4", "OR_OVRLY_OK", "", -1, 1);
+						func_221(0, "GENERAL_MLF_G4" /* GXT: Can't launch this mission whilst one of your Club Members is playing a casino game. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 					}
 					else
 					{
-						func_221(0, "OR_MIS_NA", "OR_OVRLY_OK", "", -1, 1);
+						func_221(0, "OR_MIS_NA" /* GXT: There are no buyers available for your goods at this time. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 					}
 				}
 				else
 				{
 					func_352();
-					func_221(3011, "OR_SELL_GD", "WHOUSE_CONF", "WHOUSE_CANC", -1, 0);
+					func_221(3011, "OR_SELL_GD" /* GXT: Are you sure you want to sell your goods from this business? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, -1, 0);
 				}
 				break;
 			
@@ -12327,21 +12327,21 @@ void func_246(bool bParam0, int iParam1)//Position - 0xAA55
 					}
 					if (iVar1 == 15)
 					{
-						func_221(0, "GENERAL_MLF_G1", "OR_OVRLY_OK", "", -1, 1);
+						func_221(0, "GENERAL_MLF_G1" /* GXT: Can't launch this mission whilst one of your Club Members is currently at one with the animals. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 					}
 					else if (iVar1 == 16)
 					{
-						func_221(0, "GENERAL_MLF_G4", "OR_OVRLY_OK", "", -1, 1);
+						func_221(0, "GENERAL_MLF_G4" /* GXT: Can't launch this mission whilst one of your Club Members is playing a casino game. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 					}
 					else
 					{
-						func_221(0, "OR_MIS_NA", "OR_OVRLY_OK", "", -1, 1);
+						func_221(0, "OR_MIS_NA" /* GXT: There are no buyers available for your goods at this time. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 					}
 				}
 				else
 				{
 					func_352();
-					func_221(3012, "OR_SELL_GD", "WHOUSE_CONF", "WHOUSE_CANC", -1, 0);
+					func_221(3012, "OR_SELL_GD" /* GXT: Are you sure you want to sell your goods from this business? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, -1, 0);
 				}
 				break;
 			
@@ -12397,7 +12397,7 @@ void func_246(bool bParam0, int iParam1)//Position - 0xAA55
 					{
 						func_303(1);
 						func_472();
-						func_221(0, "OR_SUS_P_STAF", "OR_OVRLY_OK", "", -1, 1);
+						func_221(0, "OR_SUS_P_STAF" /* GXT: Your new staff will arrive shortly. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 					}
 				}
 				break;
@@ -12422,7 +12422,7 @@ void func_246(bool bParam0, int iParam1)//Position - 0xAA55
 				}
 				else
 				{
-					func_221(0, func_264(iLocal_699), "OR_OVRLY_OK", "", -1, 1);
+					func_221(0, func_264(iLocal_699), "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 				}
 				break;
 			
@@ -12436,7 +12436,7 @@ void func_246(bool bParam0, int iParam1)//Position - 0xAA55
 				}
 				else
 				{
-					func_221(0, func_264(iLocal_699), "OR_OVRLY_OK", "", -1, 1);
+					func_221(0, func_264(iLocal_699), "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 				}
 				break;
 			
@@ -12447,22 +12447,22 @@ void func_246(bool bParam0, int iParam1)//Position - 0xAA55
 				if (func_250())
 				{
 					func_247(iVar0);
-					func_221(0, "OR_RSP_PAID", "OR_OVRLY_OK", "", -1, 0);
+					func_221(0, "OR_RSP_PAID" /* GXT: Supplies are on their way to your business. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 0);
 					func_472();
 					HUD::CLEAR_HELP(true);
 					if (func_17(iLocal_517))
 					{
-						HUD::BEGIN_TEXT_COMMAND_DISPLAY_HELP("OR_PSUP_OTW0");
+						HUD::BEGIN_TEXT_COMMAND_DISPLAY_HELP("OR_PSUP_OTW0" /* GXT: A supply shipment is en route to the business and will arrive shortly. Production will restart once they arrive. */);
 					}
 					else
 					{
-						HUD::BEGIN_TEXT_COMMAND_DISPLAY_HELP("OR_PSUP_OTW1");
+						HUD::BEGIN_TEXT_COMMAND_DISPLAY_HELP("OR_PSUP_OTW1" /* GXT: A supply shipment is en route to the business and will arrive shortly. Production will be suspended if you run out in the meantime but will continue once the supplies arrive. */);
 					}
 					HUD::END_TEXT_COMMAND_DISPLAY_HELP(0, false, true, 8000);
 				}
 				else
 				{
-					func_221(0, "UA_PSUP_FAIL", "OR_OVRLY_OK", "", -1, 1);
+					func_221(0, "UA_PSUP_FAIL" /* GXT: Unable to purchase supplies at this time. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 1);
 				}
 				break;
 			
@@ -13283,26 +13283,26 @@ char* func_264(int iParam0)//Position - 0xBF42
 	switch (iParam0)
 	{
 		case 0:
-			return "BKR_TF_R1";
+			return "BKR_TF_R1" /* GXT: You have no product to sell. */;
 		
 		case 1:
-			return "BKR_TF_R2";
+			return "BKR_TF_R2" /* GXT: You don't have enough money to buy this business. */;
 		
 		case 13:
-			return "BKR_TF_R3";
+			return "BKR_TF_R3" /* GXT: Unable to launch a mission whilst you're on another job. */;
 		
 		case 2:
-			return "BKR_TF_R4";
+			return "BKR_TF_R4" /* GXT: You already own this business. */;
 		
 		case 3:
-			return "BKR_TF_R5";
+			return "BKR_TF_R5" /* GXT: This business is currently unavailable for purchase. */;
 		
 		case 4:
-			return "BKR_TF_R6";
+			return "BKR_TF_R6" /* GXT: Unable to launch the mission. */;
 		
 		default:
 	}
-	return "BKR_TF_R1";
+	return "BKR_TF_R1" /* GXT: You have no product to sell. */;
 }
 
 void func_265(int iParam0, int iParam1)//Position - 0xBFA2
@@ -15921,9 +15921,9 @@ void func_352()//Position - 0xEA71
 	{
 		if (!func_471(34712, -1))
 		{
-			if (!func_354("APP_SG_HELP", 0, 0))
+			if (!func_354("APP_SG_HELP" /* GXT: You are currently in a private session. Sales made in populated public sessions with rival players will earn an additional "High Demand" cash bonus on your sale value. */, 0, 0))
 			{
-				func_353("APP_SG_HELP", -1);
+				func_353("APP_SG_HELP" /* GXT: You are currently in a private session. Sales made in populated public sessions with rival players will earn an additional "High Demand" cash bonus on your sale value. */, -1);
 			}
 			func_435(34712, 1, -1);
 		}
@@ -15991,11 +15991,11 @@ void func_356(int iParam0)//Position - 0xEB09
 		func_358(iVar1);
 		func_357();
 		iLocal_503 = 1;
-		func_221(2001, "OR_PUR_SUC", "OR_OVRLY_OK", "", -1, 0);
+		func_221(2001, "OR_PUR_SUC" /* GXT: Purchase successful! */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 0);
 	}
 	else
 	{
-		func_221(0, "BKR_TF_R5", "OR_OVRLY_OK", "", -1, 0);
+		func_221(0, "BKR_TF_R5" /* GXT: This business is currently unavailable for purchase. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 0);
 	}
 }
 
@@ -18128,11 +18128,11 @@ void func_414(int iParam0)//Position - 0x10F16
 		func_365(iParam0);
 		iLocal_506 = 1;
 		iLocal_503 = 1;
-		func_221(2001, "OR_PUR_SUC", "OR_OVRLY_OK", "", -1, 0);
+		func_221(2001, "OR_PUR_SUC" /* GXT: Purchase successful! */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 0);
 	}
 	else
 	{
-		func_221(0, "BKR_TF_R5", "OR_OVRLY_OK", "", -1, 0);
+		func_221(0, "BKR_TF_R5" /* GXT: This business is currently unavailable for purchase. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, 0);
 	}
 }
 
@@ -19565,13 +19565,13 @@ char* func_474(int iParam0)//Position - 0x12A95
 	switch (iParam0)
 	{
 		case 0:
-			return "OR_UPG_0";
+			return "OR_UPG_0" /* GXT: Equipment Upgrade */;
 		
 		case 2:
-			return "OR_UPG_1";
+			return "OR_UPG_1" /* GXT: Security Upgrade */;
 		
 		case 1:
-			return "OR_UPG_2";
+			return "OR_UPG_2" /* GXT: Staff Upgrade */;
 		
 		default:
 	}
@@ -19789,13 +19789,13 @@ void func_479(bool bParam0, char* sParam1, char* sParam2)//Position - 0x12E13
 {
 	if (bParam0)
 	{
-		StringCopy(sParam1, "OR_GOODS_BYR2", 16);
-		StringCopy(sParam2, "OR_BYR_DETAILS2", 16);
+		StringCopy(sParam1, "OR_GOODS_BYR2" /* GXT: FoxHen Enterprises Ltd */, 16);
+		StringCopy(sParam2, "OR_BYR_DETAILS2" /* GXT: Location: Los Santos */, 16);
 	}
 	else
 	{
-		StringCopy(sParam1, "OR_GOODS_BYR1", 16);
-		StringCopy(sParam2, "OR_BYR_DETAILS1", 16);
+		StringCopy(sParam1, "OR_GOODS_BYR1" /* GXT: Pacific Rim Finance */, 16);
+		StringCopy(sParam2, "OR_BYR_DETAILS1" /* GXT: Location: Blaine County */, 16);
 	}
 }
 
@@ -19816,7 +19816,7 @@ void func_480(bool bParam0)//Position - 0x12E43
 
 char* func_481()//Position - 0x12E80
 {
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACCM");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACCM" /* GXT: Motorcycle Club */);
 }
 
 char* func_482(int iParam0)//Position - 0x12E90

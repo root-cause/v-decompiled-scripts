@@ -158,7 +158,7 @@ void __EntryFunction__()//Position - 0x0
 				{
 					if (iVar5 == 0)
 					{
-						AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
+						AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 						Global_1643950.f_1 = 0;
 						Global_1643950.f_3 = 0;
 						iVar5 = 1;
@@ -720,7 +720,7 @@ void func_10(var uParam0, int iParam1)//Position - 0xBF1
 						func_63(iVar4, uParam0->f_85[iVar0], 0);
 						func_57(iVar4, uParam0->f_85[iVar0], 0);
 					}
-					if (MISC::ARE_STRINGS_EQUAL(func_56(iVar4, uParam0->f_85[iVar0]), "WCT_CLIP1"))
+					if (MISC::ARE_STRINGS_EQUAL(func_56(iVar4, uParam0->f_85[iVar0]), "WCT_CLIP1" /* GXT: Default Clip */))
 					{
 						func_67(iVar4, uParam0->f_85[iVar0], 1, 0, 0);
 						if (!bVar3)
@@ -729,7 +729,7 @@ void func_10(var uParam0, int iParam1)//Position - 0xBF1
 							func_57(iVar4, uParam0->f_85[iVar0], 1);
 						}
 					}
-					if (MISC::ARE_STRINGS_EQUAL(func_56(iVar4, uParam0->f_85[iVar0]), "WCT_SCOPE_LRG"))
+					if (MISC::ARE_STRINGS_EQUAL(func_56(iVar4, uParam0->f_85[iVar0]), "WCT_SCOPE_LRG" /* GXT: Scope */))
 					{
 						func_67(iVar4, uParam0->f_85[iVar0], 1, 0, 0);
 						if (!bVar3)
@@ -944,32 +944,32 @@ void func_14(var uParam0, int iParam1)//Position - 0x10D4
 			{
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("SET_COLUMN_TITLE");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				func_18("PM_ACCURACY");
+				func_18("PM_ACCURACY" /* GXT: Accuracy */);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("SET_COLUMN_TITLE");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				func_18("PM_RANGE");
+				func_18("PM_RANGE" /* GXT: Range */);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(3);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("SET_COLUMN_TITLE");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				func_18("PM_CLIPSIZE");
+				func_18("PM_CLIPSIZE" /* GXT: Clip Size */);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(4);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("SET_COLUMN_TITLE");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				func_18("PM_KD_RATIO");
+				func_18("PM_KD_RATIO" /* GXT: K/D Ratio */);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(7);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("SET_COLUMN_TITLE");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				func_18("PM_HEADSHOTS");
+				func_18("PM_HEADSHOTS" /* GXT: Headshots */);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(8);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("SET_COLUMN_TITLE");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				func_18("PM_MY_ACCURACY");
+				func_18("PM_MY_ACCURACY" /* GXT: My Accuracy */);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(9);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			}
@@ -1215,293 +1215,293 @@ char* func_24(int iParam0, bool bParam1)//Position - 0x16B3
 			}
 			else
 			{
-				return "WT_INVALID";
+				return "WT_INVALID" /* GXT: Invalid */;
 			}
 			break;
 		
 		case joaat("WEAPON_UNARMED"):
 			if (bParam1)
 			{
-				return "WTU_UNARMED";
+				return "WTU_UNARMED" /* GXT: UNARMED */;
 			}
 			else
 			{
-				return "WT_UNARMED";
+				return "WT_UNARMED" /* GXT: Unarmed */;
 			}
 			break;
 		
 		case joaat("WEAPON_PISTOL"):
 			if (bParam1)
 			{
-				return "WTU_PIST";
+				return "WTU_PIST" /* GXT: PISTOL */;
 			}
 			else
 			{
-				return "WT_PIST";
+				return "WT_PIST" /* GXT: Pistol */;
 			}
 			break;
 		
 		case joaat("WEAPON_COMBATPISTOL"):
 			if (bParam1)
 			{
-				return "WTU_PIST_CBT";
+				return "WTU_PIST_CBT" /* GXT: COMBAT PISTOL */;
 			}
 			else
 			{
-				return "WT_PIST_CBT";
+				return "WT_PIST_CBT" /* GXT: Combat Pistol */;
 			}
 			break;
 		
 		case joaat("WEAPON_APPISTOL"):
 			if (bParam1)
 			{
-				return "WTU_PIST_AP";
+				return "WTU_PIST_AP" /* GXT: AP PISTOL */;
 			}
 			else
 			{
-				return "WT_PIST_AP";
+				return "WT_PIST_AP" /* GXT: AP Pistol */;
 			}
 			break;
 		
 		case joaat("WEAPON_SMG"):
 			if (bParam1)
 			{
-				return "WTU_SMG";
+				return "WTU_SMG" /* GXT: SMG */;
 			}
 			else
 			{
-				return "WT_SMG";
+				return "WT_SMG" /* GXT: SMG */;
 			}
 			break;
 		
 		case joaat("WEAPON_MICROSMG"):
 			if (bParam1)
 			{
-				return "WTU_SMG_MCR";
+				return "WTU_SMG_MCR" /* GXT: MICRO SMG */;
 			}
 			else
 			{
-				return "WT_SMG_MCR";
+				return "WT_SMG_MCR" /* GXT: Micro SMG */;
 			}
 			break;
 		
 		case joaat("WEAPON_ASSAULTRIFLE"):
 			if (bParam1)
 			{
-				return "WTU_RIFLE_ASL";
+				return "WTU_RIFLE_ASL" /* GXT: ASSAULT RIFLE */;
 			}
 			else
 			{
-				return "WT_RIFLE_ASL";
+				return "WT_RIFLE_ASL" /* GXT: Assault Rifle */;
 			}
 			break;
 		
 		case joaat("WEAPON_CARBINERIFLE"):
 			if (bParam1)
 			{
-				return "WTU_RIFLE_CBN";
+				return "WTU_RIFLE_CBN" /* GXT: CARBINE RIFLE */;
 			}
 			else
 			{
-				return "WT_RIFLE_CBN";
+				return "WT_RIFLE_CBN" /* GXT: Carbine Rifle */;
 			}
 			break;
 		
 		case joaat("WEAPON_ADVANCEDRIFLE"):
 			if (bParam1)
 			{
-				return "WTU_RIFLE_ADV";
+				return "WTU_RIFLE_ADV" /* GXT: ADVANCED RIFLE */;
 			}
 			else
 			{
-				return "WT_RIFLE_ADV";
+				return "WT_RIFLE_ADV" /* GXT: Advanced Rifle */;
 			}
 			break;
 		
 		case joaat("WEAPON_MG"):
 			if (bParam1)
 			{
-				return "WTU_MG";
+				return "WTU_MG" /* GXT: MG */;
 			}
 			else
 			{
-				return "WT_MG";
+				return "WT_MG" /* GXT: MG */;
 			}
 			break;
 		
 		case joaat("WEAPON_COMBATMG"):
 			if (bParam1)
 			{
-				return "WTU_MG_CBT";
+				return "WTU_MG_CBT" /* GXT: COMBAT MG */;
 			}
 			else
 			{
-				return "WT_MG_CBT";
+				return "WT_MG_CBT" /* GXT: Combat MG */;
 			}
 			break;
 		
 		case joaat("WEAPON_PUMPSHOTGUN"):
 			if (bParam1)
 			{
-				return "WTU_SG_PMP";
+				return "WTU_SG_PMP" /* GXT: PUMP SHOTGUN */;
 			}
 			else
 			{
-				return "WT_SG_PMP";
+				return "WT_SG_PMP" /* GXT: Pump Shotgun */;
 			}
 			break;
 		
 		case joaat("WEAPON_SAWNOFFSHOTGUN"):
 			if (bParam1)
 			{
-				return "WTU_SG_SOF";
+				return "WTU_SG_SOF" /* GXT: SAWED-OFF SHOTGUN */;
 			}
 			else
 			{
-				return "WT_SG_SOF";
+				return "WT_SG_SOF" /* GXT: Sawed-Off Shotgun */;
 			}
 			break;
 		
 		case joaat("WEAPON_ASSAULTSHOTGUN"):
 			if (bParam1)
 			{
-				return "WTU_SG_ASL";
+				return "WTU_SG_ASL" /* GXT: ASSAULT SHOTGUN */;
 			}
 			else
 			{
-				return "WT_SG_ASL";
+				return "WT_SG_ASL" /* GXT: Assault Shotgun */;
 			}
 			break;
 		
 		case joaat("WEAPON_HEAVYSNIPER"):
 			if (bParam1)
 			{
-				return "WTU_SNIP_HVY";
+				return "WTU_SNIP_HVY" /* GXT: HEAVY SNIPER */;
 			}
 			else
 			{
-				return "WT_SNIP_HVY";
+				return "WT_SNIP_HVY" /* GXT: Heavy Sniper */;
 			}
 			break;
 		
 		case joaat("WEAPON_REMOTESNIPER"):
 			if (bParam1)
 			{
-				return "WTU_SNIP_RMT";
+				return "WTU_SNIP_RMT" /* GXT: REMOTE SNIPER */;
 			}
 			else
 			{
-				return "WT_SNIP_RMT";
+				return "WT_SNIP_RMT" /* GXT: Remote Sniper */;
 			}
 			break;
 		
 		case joaat("WEAPON_SNIPERRIFLE"):
 			if (bParam1)
 			{
-				return "WTU_SNIP_RIF";
+				return "WTU_SNIP_RIF" /* GXT: SNIPER RIFLE */;
 			}
 			else
 			{
-				return "WT_SNIP_RIF";
+				return "WT_SNIP_RIF" /* GXT: Sniper Rifle */;
 			}
 			break;
 		
 		case joaat("WEAPON_GRENADELAUNCHER"):
 			if (bParam1)
 			{
-				return "WTU_GL";
+				return "WTU_GL" /* GXT: GRENADE LAUNCHER */;
 			}
 			else
 			{
-				return "WT_GL";
+				return "WT_GL" /* GXT: Grenade Launcher */;
 			}
 			break;
 		
 		case joaat("WEAPON_RPG"):
 			if (bParam1)
 			{
-				return "WTU_RPG";
+				return "WTU_RPG" /* GXT: RPG */;
 			}
 			else
 			{
-				return "WT_RPG";
+				return "WT_RPG" /* GXT: RPG */;
 			}
 			break;
 		
 		case joaat("WEAPON_MINIGUN"):
 			if (bParam1)
 			{
-				return "WTU_MINIGUN";
+				return "WTU_MINIGUN" /* GXT: MINIGUN */;
 			}
 			else
 			{
-				return "WT_MINIGUN";
+				return "WT_MINIGUN" /* GXT: Minigun */;
 			}
 			break;
 		
 		case joaat("WEAPON_GRENADE"):
 			if (bParam1)
 			{
-				return "WTU_GNADE";
+				return "WTU_GNADE" /* GXT: GRENADE */;
 			}
 			else
 			{
-				return "WT_GNADE";
+				return "WT_GNADE" /* GXT: Grenade */;
 			}
 			break;
 		
 		case joaat("WEAPON_SMOKEGRENADE"):
 			if (bParam1)
 			{
-				return "WTU_GNADE_SMK";
+				return "WTU_GNADE_SMK" /* GXT: TEAR GAS */;
 			}
 			else
 			{
-				return "WT_GNADE_SMK";
+				return "WT_GNADE_SMK" /* GXT: Tear Gas */;
 			}
 			break;
 		
 		case joaat("WEAPON_STICKYBOMB"):
 			if (bParam1)
 			{
-				return "WTU_GNADE_STK";
+				return "WTU_GNADE_STK" /* GXT: STICKY BOMB */;
 			}
 			else
 			{
-				return "WT_GNADE_STK";
+				return "WT_GNADE_STK" /* GXT: Sticky Bomb */;
 			}
 			break;
 		
 		case joaat("WEAPON_MOLOTOV"):
 			if (bParam1)
 			{
-				return "WTU_MOLOTOV";
+				return "WTU_MOLOTOV" /* GXT: MOLOTOV */;
 			}
 			else
 			{
-				return "WT_MOLOTOV";
+				return "WT_MOLOTOV" /* GXT: Molotov */;
 			}
 			break;
 		
 		case joaat("WEAPON_STUNGUN"):
 			if (bParam1)
 			{
-				return "WTU_STUN";
+				return "WTU_STUN" /* GXT: STUN GUN */;
 			}
 			else
 			{
-				return "WT_STUN";
+				return "WT_STUN" /* GXT: Stun Gun */;
 			}
 			break;
 		
 		case joaat("WEAPON_PETROLCAN"):
 			if (bParam1)
 			{
-				return "WTU_PETROL";
+				return "WTU_PETROL" /* GXT: JERRY CAN */;
 			}
 			else
 			{
-				return "WT_PETROL";
+				return "WT_PETROL" /* GXT: Jerry Can */;
 			}
 			break;
 		
@@ -1519,33 +1519,33 @@ char* func_24(int iParam0, bool bParam1)//Position - 0x16B3
 		case joaat("VEHICLE_WEAPON_TANK"):
 			if (bParam1)
 			{
-				return "WTU_V_TANK";
+				return "WTU_V_TANK" /* GXT: TANK CANNON */;
 			}
 			else
 			{
-				return "WT_V_TANK";
+				return "WT_V_TANK" /* GXT: Tank Cannon */;
 			}
 			break;
 		
 		case joaat("VEHICLE_WEAPON_SPACE_ROCKET"):
 			if (bParam1)
 			{
-				return "WTU_V_SPACERKT";
+				return "WTU_V_SPACERKT" /* GXT: ROCKETS */;
 			}
 			else
 			{
-				return "WT_V_SPACERKT";
+				return "WT_V_SPACERKT" /* GXT: Rockets */;
 			}
 			break;
 		
 		case joaat("VEHICLE_WEAPON_PLAYER_LASER"):
 			if (bParam1)
 			{
-				return "WTU_V_PLRLSR";
+				return "WTU_V_PLRLSR" /* GXT: LASER */;
 			}
 			else
 			{
-				return "WT_V_PLRLSR";
+				return "WT_V_PLRLSR" /* GXT: Laser */;
 			}
 			break;
 		
@@ -1556,818 +1556,818 @@ char* func_24(int iParam0, bool bParam1)//Position - 0x16B3
 			}
 			else
 			{
-				return "WT_OBJECT";
+				return "WT_OBJECT" /* GXT: Object */;
 			}
 			break;
 		
 		case joaat("GADGET_PARACHUTE"):
 			if (bParam1)
 			{
-				return "WTU_PARA";
+				return "WTU_PARA" /* GXT: PARACHUTE */;
 			}
 			else
 			{
-				return "WT_PARA";
+				return "WT_PARA" /* GXT: Parachute */;
 			}
 			break;
 		
 		case joaat("AMMO_RPG"):
 			if (bParam1)
 			{
-				return "WTU_A_RPG";
+				return "WTU_A_RPG" /* GXT: ROCKET */;
 			}
 			else
 			{
-				return "WT_A_RPG";
+				return "WT_A_RPG" /* GXT: Rocket */;
 			}
 			break;
 		
 		case joaat("AMMO_TANK"):
 			if (bParam1)
 			{
-				return "WTU_A_TANK";
+				return "WTU_A_TANK" /* GXT: TANK */;
 			}
 			else
 			{
-				return "WT_A_TANK";
+				return "WT_A_TANK" /* GXT: Tank */;
 			}
 			break;
 		
 		case joaat("AMMO_SPACE_ROCKET"):
 			if (bParam1)
 			{
-				return "WTU_A_SPACERKT";
+				return "WTU_A_SPACERKT" /* GXT: ROCKET */;
 			}
 			else
 			{
-				return "WT_A_SPACERKT";
+				return "WT_A_SPACERKT" /* GXT: Rocket */;
 			}
 			break;
 		
 		case joaat("AMMO_PLAYER_LASER"):
 			if (bParam1)
 			{
-				return "WTU_A_PLRLSR";
+				return "WTU_A_PLRLSR" /* GXT: LASER */;
 			}
 			else
 			{
-				return "WT_A_PLRLSR";
+				return "WT_A_PLRLSR" /* GXT: Laser */;
 			}
 			break;
 		
 		case joaat("AMMO_ENEMY_LASER"):
 			if (bParam1)
 			{
-				return "WTU_A_ENMYLSR";
+				return "WTU_A_ENMYLSR" /* GXT: LASER */;
 			}
 			else
 			{
-				return "WT_A_ENMYLSR";
+				return "WT_A_ENMYLSR" /* GXT: Laser */;
 			}
 			break;
 		
 		case joaat("WEAPON_KNIFE"):
 			if (bParam1)
 			{
-				return "WTU_KNIFE";
+				return "WTU_KNIFE" /* GXT: KNIFE */;
 			}
 			else
 			{
-				return "WT_KNIFE";
+				return "WT_KNIFE" /* GXT: Knife */;
 			}
 			break;
 		
 		case joaat("WEAPON_NIGHTSTICK"):
 			if (bParam1)
 			{
-				return "WTU_NGTSTK";
+				return "WTU_NGTSTK" /* GXT: NIGHTSTICK */;
 			}
 			else
 			{
-				return "WT_NGTSTK";
+				return "WT_NGTSTK" /* GXT: Nightstick */;
 			}
 			break;
 		
 		case joaat("WEAPON_HAMMER"):
 			if (bParam1)
 			{
-				return "WTU_HAMMER";
+				return "WTU_HAMMER" /* GXT: HAMMER */;
 			}
 			else
 			{
-				return "WT_HAMMER";
+				return "WT_HAMMER" /* GXT: Hammer */;
 			}
 			break;
 		
 		case joaat("WEAPON_BAT"):
 			if (bParam1)
 			{
-				return "WTU_BAT";
+				return "WTU_BAT" /* GXT: BASEBALL BAT */;
 			}
 			else
 			{
-				return "WT_BAT";
+				return "WT_BAT" /* GXT: Baseball Bat */;
 			}
 			break;
 		
 		case joaat("WEAPON_CROWBAR"):
 			if (bParam1)
 			{
-				return "WTU_CROWBAR";
+				return "WTU_CROWBAR" /* GXT: CROWBAR */;
 			}
 			else
 			{
-				return "WT_CROWBAR";
+				return "WT_CROWBAR" /* GXT: Crowbar */;
 			}
 			break;
 		
 		case joaat("WEAPON_GOLFCLUB"):
 			if (bParam1)
 			{
-				return "WTU_GOLFCLUB";
+				return "WTU_GOLFCLUB" /* GXT: GOLF CLUB */;
 			}
 			else
 			{
-				return "WT_GOLFCLUB";
+				return "WT_GOLFCLUB" /* GXT: Golf Club */;
 			}
 			break;
 		
 		case joaat("WEAPON_RAMMED_BY_CAR"):
 			if (bParam1)
 			{
-				return "WTU_PIST";
+				return "WTU_PIST" /* GXT: PISTOL */;
 			}
 			else
 			{
-				return "WT_PIST";
+				return "WT_PIST" /* GXT: Pistol */;
 			}
 			break;
 		
 		case joaat("WEAPON_RUN_OVER_BY_CAR"):
 			if (bParam1)
 			{
-				return "WTU_PIST";
+				return "WTU_PIST" /* GXT: PISTOL */;
 			}
 			else
 			{
-				return "WT_PIST";
+				return "WT_PIST" /* GXT: Pistol */;
 			}
 			break;
 		
 		case joaat("WEAPON_ASSAULTSMG"):
 			if (bParam1)
 			{
-				return "WTU_SMG_ASL";
+				return "WTU_SMG_ASL" /* GXT: ASSAULT SMG */;
 			}
 			else
 			{
-				return "WT_SMG_ASL";
+				return "WT_SMG_ASL" /* GXT: Assault SMG */;
 			}
 			break;
 		
 		case joaat("WEAPON_BULLPUPSHOTGUN"):
 			if (bParam1)
 			{
-				return "WTU_SG_BLP";
+				return "WTU_SG_BLP" /* GXT: BULLPUP SHOTGUN */;
 			}
 			else
 			{
-				return "WT_SG_BLP";
+				return "WT_SG_BLP" /* GXT: Bullpup Shotgun */;
 			}
 			break;
 		
 		case joaat("WEAPON_PISTOL50"):
 			if (bParam1)
 			{
-				return "WTU_PIST_50";
+				return "WTU_PIST_50" /* GXT: PISTOL .50 */;
 			}
 			else
 			{
-				return "WT_PIST_50";
+				return "WT_PIST_50" /* GXT: Pistol .50 */;
 			}
 			break;
 		
 		case joaat("WEAPON_BOTTLE"):
 			if (bParam1)
 			{
-				return "WTU_BOTTLE";
+				return "WTU_BOTTLE" /* GXT: BOTTLE */;
 			}
 			else
 			{
-				return "WT_BOTTLE";
+				return "WT_BOTTLE" /* GXT: Bottle */;
 			}
 			break;
 		
 		case joaat("WEAPON_GUSENBERG"):
 			if (bParam1)
 			{
-				return "WTU_GUSENBERG";
+				return "WTU_GUSENBERG" /* GXT: GUSENBERG SWEEPER */;
 			}
 			else
 			{
-				return "WT_GUSENBERG";
+				return "WT_GUSENBERG" /* GXT: Gusenberg Sweeper */;
 			}
 			break;
 		
 		case joaat("WEAPON_SNSPISTOL"):
 			if (bParam1)
 			{
-				return "WTU_SNSPISTOL";
+				return "WTU_SNSPISTOL" /* GXT: SNS PISTOL */;
 			}
 			else
 			{
-				return "WT_SNSPISTOL";
+				return "WT_SNSPISTOL" /* GXT: SNS Pistol */;
 			}
 			break;
 		
 		case joaat("WEAPON_VINTAGEPISTOL"):
 			if (bParam1)
 			{
-				return "WTU_VPISTOL";
+				return "WTU_VPISTOL" /* GXT: VINTAGE PISTOL */;
 			}
 			else
 			{
-				return "WT_VPISTOL";
+				return "WT_VPISTOL" /* GXT: Vintage Pistol */;
 			}
 			break;
 		
 		case joaat("WEAPON_DAGGER"):
 			if (bParam1)
 			{
-				return "WTU_DAGGER";
+				return "WTU_DAGGER" /* GXT: ANTIQUE CAVALRY DAGGER */;
 			}
 			else
 			{
-				return "WT_DAGGER";
+				return "WT_DAGGER" /* GXT: Antique Cavalry Dagger */;
 			}
 			break;
 		
 		case joaat("WEAPON_FLAREGUN"):
 			if (bParam1)
 			{
-				return "WTU_FLAREGUN";
+				return "WTU_FLAREGUN" /* GXT: FLARE GUN */;
 			}
 			else
 			{
-				return "WT_FLAREGUN";
+				return "WT_FLAREGUN" /* GXT: Flare Gun */;
 			}
 			break;
 		
 		case joaat("WEAPON_HEAVYPISTOL"):
 			if (bParam1)
 			{
-				return "WTU_HEAVYPSTL";
+				return "WTU_HEAVYPSTL" /* GXT: HEAVY PISTOL */;
 			}
 			else
 			{
-				return "WT_HEAVYPSTL";
+				return "WT_HEAVYPSTL" /* GXT: Heavy Pistol */;
 			}
 			break;
 		
 		case joaat("WEAPON_SPECIALCARBINE"):
 			if (bParam1)
 			{
-				return "WTU_RIFLE_SCBN";
+				return "WTU_RIFLE_SCBN" /* GXT: SPECIAL CARBINE */;
 			}
 			else
 			{
-				return "WT_RIFLE_SCBN";
+				return "WT_RIFLE_SCBN" /* GXT: Special Carbine */;
 			}
 			break;
 		
 		case joaat("WEAPON_MUSKET"):
 			if (bParam1)
 			{
-				return "WTU_MUSKET";
+				return "WTU_MUSKET" /* GXT: MUSKET */;
 			}
 			else
 			{
-				return "WT_MUSKET";
+				return "WT_MUSKET" /* GXT: Musket */;
 			}
 			break;
 		
 		case joaat("WEAPON_FIREWORK"):
 			if (bParam1)
 			{
-				return "WTU_FWRKLNCHR";
+				return "WTU_FWRKLNCHR" /* GXT: FIREWORK LAUNCHER */;
 			}
 			else
 			{
-				return "WT_FWRKLNCHR";
+				return "WT_FWRKLNCHR" /* GXT: Firework Launcher */;
 			}
 			break;
 		
 		case joaat("WEAPON_MARKSMANRIFLE"):
 			if (bParam1)
 			{
-				return "WTU_MKRIFLE";
+				return "WTU_MKRIFLE" /* GXT: MARKSMAN RIFLE */;
 			}
 			else
 			{
-				return "WT_MKRIFLE";
+				return "WT_MKRIFLE" /* GXT: Marksman Rifle */;
 			}
 			break;
 		
 		case joaat("WEAPON_HEAVYSHOTGUN"):
 			if (bParam1)
 			{
-				return "WTU_HVYSHOT";
+				return "WTU_HVYSHOT" /* GXT: HEAVY SHOTGUN */;
 			}
 			else
 			{
-				return "WT_HVYSHOT";
+				return "WT_HVYSHOT" /* GXT: Heavy Shotgun */;
 			}
 			break;
 		
 		case joaat("WEAPON_PROXMINE"):
 			if (bParam1)
 			{
-				return "WTU_PRXMINE";
+				return "WTU_PRXMINE" /* GXT: PROXIMITY MINE */;
 			}
 			else
 			{
-				return "WT_PRXMINE";
+				return "WT_PRXMINE" /* GXT: Proximity Mine */;
 			}
 			break;
 		
 		case joaat("WEAPON_HOMINGLAUNCHER"):
 			if (bParam1)
 			{
-				return "WTU_HOMLNCH";
+				return "WTU_HOMLNCH" /* GXT: HOMING LAUNCHER */;
 			}
 			else
 			{
-				return "WT_HOMLNCH";
+				return "WT_HOMLNCH" /* GXT: Homing Launcher */;
 			}
 			break;
 		
 		case joaat("WEAPON_HATCHET"):
 			if (bParam1)
 			{
-				return "WTU_HATCHET";
+				return "WTU_HATCHET" /* GXT: HATCHET */;
 			}
 			else
 			{
-				return "WT_HATCHET";
+				return "WT_HATCHET" /* GXT: Hatchet */;
 			}
 			break;
 		
 		case joaat("WEAPON_RAILGUN"):
 			if (bParam1)
 			{
-				return "WTU_RAILGUN";
+				return "WTU_RAILGUN" /* GXT: RAILGUN */;
 			}
 			else
 			{
-				return "WT_RAILGUN";
+				return "WT_RAILGUN" /* GXT: Railgun */;
 			}
 			break;
 		
 		case joaat("WEAPON_COMBATPDW"):
 			if (bParam1)
 			{
-				return "WTU_COMBATPDW";
+				return "WTU_COMBATPDW" /* GXT: COMBAT PDW */;
 			}
 			else
 			{
-				return "WT_COMBATPDW";
+				return "WT_COMBATPDW" /* GXT: Combat PDW */;
 			}
 			break;
 		
 		case joaat("WEAPON_KNUCKLE"):
 			if (bParam1)
 			{
-				return "WTU_KNUCKLE";
+				return "WTU_KNUCKLE" /* GXT: KNUCKLE DUSTER */;
 			}
 			else
 			{
-				return "WT_KNUCKLE";
+				return "WT_KNUCKLE" /* GXT: Knuckle Duster */;
 			}
 			break;
 		
 		case joaat("WEAPON_MARKSMANPISTOL"):
 			if (bParam1)
 			{
-				return "WTU_MKPISTOL";
+				return "WTU_MKPISTOL" /* GXT: MARKSMAN PISTOL */;
 			}
 			else
 			{
-				return "WT_MKPISTOL";
+				return "WT_MKPISTOL" /* GXT: Marksman Pistol */;
 			}
 			break;
 		
 		case joaat("WEAPON_BULLPUPRIFLE"):
 			if (bParam1)
 			{
-				return "WTU_BULLRIFLE";
+				return "WTU_BULLRIFLE" /* GXT: BULLPUP RIFLE */;
 			}
 			else
 			{
-				return "WT_BULLRIFLE";
+				return "WT_BULLRIFLE" /* GXT: Bullpup Rifle */;
 			}
 			break;
 		
 		case joaat("WEAPON_MACHETE"):
 			if (bParam1)
 			{
-				return "WTU_MACHETE";
+				return "WTU_MACHETE" /* GXT: MACHETE */;
 			}
 			else
 			{
-				return "WT_MACHETE";
+				return "WT_MACHETE" /* GXT: Machete */;
 			}
 			break;
 		
 		case joaat("WEAPON_MACHINEPISTOL"):
 			if (bParam1)
 			{
-				return "WTU_MCHPIST";
+				return "WTU_MCHPIST" /* GXT: MACHINE PISTOL */;
 			}
 			else
 			{
-				return "WT_MCHPIST";
+				return "WT_MCHPIST" /* GXT: Machine Pistol */;
 			}
 			break;
 		
 		case joaat("WEAPON_FLASHLIGHT"):
 			if (bParam1)
 			{
-				return "WTU_FLASHLIGHT";
+				return "WTU_FLASHLIGHT" /* GXT: FLASHLIGHT */;
 			}
 			else
 			{
-				return "WT_FLASHLIGHT";
+				return "WT_FLASHLIGHT" /* GXT: Flashlight */;
 			}
 			break;
 		
 		case joaat("WEAPON_DBSHOTGUN"):
 			if (bParam1)
 			{
-				return "WTU_DBSHGN";
+				return "WTU_DBSHGN" /* GXT: DOUBLE BARREL SHOTGUN */;
 			}
 			else
 			{
-				return "WT_DBSHGN";
+				return "WT_DBSHGN" /* GXT: Double Barrel Shotgun */;
 			}
 			break;
 		
 		case joaat("WEAPON_COMPACTRIFLE"):
 			if (bParam1)
 			{
-				return "WTU_CMPRIFLE";
+				return "WTU_CMPRIFLE" /* GXT: COMPACT RIFLE */;
 			}
 			else
 			{
-				return "WT_CMPRIFLE";
+				return "WT_CMPRIFLE" /* GXT: Compact Rifle */;
 			}
 			break;
 		
 		case joaat("WEAPON_SWITCHBLADE"):
 			if (bParam1)
 			{
-				return "WTU_SWBLADE";
+				return "WTU_SWBLADE" /* GXT: SWITCHBLADE */;
 			}
 			else
 			{
-				return "WT_SWBLADE";
+				return "WT_SWBLADE" /* GXT: Switchblade */;
 			}
 			break;
 		
 		case joaat("WEAPON_REVOLVER"):
 			if (bParam1)
 			{
-				return "WTU_REVOLVER";
+				return "WTU_REVOLVER" /* GXT: HEAVY REVOLVER */;
 			}
 			else
 			{
-				return "WT_REVOLVER";
+				return "WT_REVOLVER" /* GXT: Heavy Revolver */;
 			}
 			break;
 		
 		case joaat("WEAPON_AUTOSHOTGUN"):
 			if (bParam1)
 			{
-				return "WTU_AUTOSHGN";
+				return "WTU_AUTOSHGN" /* GXT: SWEEPER SHOTGUN */;
 			}
 			else
 			{
-				return "WT_AUTOSHGN";
+				return "WT_AUTOSHGN" /* GXT: Sweeper Shotgun */;
 			}
 			break;
 		
 		case joaat("WEAPON_BATTLEAXE"):
 			if (bParam1)
 			{
-				return "WTU_BATTLEAXE";
+				return "WTU_BATTLEAXE" /* GXT: BATTLE AXE */;
 			}
 			else
 			{
-				return "WT_BATTLEAXE";
+				return "WT_BATTLEAXE" /* GXT: Battle Axe */;
 			}
 			break;
 		
 		case joaat("WEAPON_COMPACTLAUNCHER"):
 			if (bParam1)
 			{
-				return "WTU_CMPGL";
+				return "WTU_CMPGL" /* GXT: COMPACT GRENADE LAUNCHER */;
 			}
 			else
 			{
-				return "WT_CMPGL";
+				return "WT_CMPGL" /* GXT: Compact Grenade Launcher */;
 			}
 			break;
 		
 		case joaat("WEAPON_MINISMG"):
 			if (bParam1)
 			{
-				return "WTU_MINISMG";
+				return "WTU_MINISMG" /* GXT: MINI SMG */;
 			}
 			else
 			{
-				return "WT_MINISMG";
+				return "WT_MINISMG" /* GXT: Mini SMG */;
 			}
 			break;
 		
 		case joaat("WEAPON_PIPEBOMB"):
 			if (bParam1)
 			{
-				return "WTU_PIPEBOMB";
+				return "WTU_PIPEBOMB" /* GXT: PIPE BOMB */;
 			}
 			else
 			{
-				return "WT_PIPEBOMB";
+				return "WT_PIPEBOMB" /* GXT: Pipe Bomb */;
 			}
 			break;
 		
 		case joaat("WEAPON_POOLCUE"):
 			if (bParam1)
 			{
-				return "WTU_POOLCUE";
+				return "WTU_POOLCUE" /* GXT: POOL CUE */;
 			}
 			else
 			{
-				return "WT_POOLCUE";
+				return "WT_POOLCUE" /* GXT: Pool Cue */;
 			}
 			break;
 		
 		case joaat("WEAPON_WRENCH"):
 			if (bParam1)
 			{
-				return "WTU_WRENCH";
+				return "WTU_WRENCH" /* GXT: PIPE WRENCH */;
 			}
 			else
 			{
-				return "WT_WRENCH";
+				return "WT_WRENCH" /* GXT: Pipe Wrench */;
 			}
 			break;
 		
 		case joaat("WEAPON_COUGAR"):
-			return "WT_RAGE";
+			return "WT_RAGE" /* GXT: Rage Pickup */;
 			break;
 		
 		case joaat("VEHICLE_WEAPON_TORPEDO"):
-			return "WT_VEH_WEP";
+			return "WT_VEH_WEP" /* GXT: Vehicle Weapon */;
 			break;
 		
 		case joaat("WEAPON_PISTOL_MK2"):
 			if (bParam1)
 			{
-				return "WTU_PIST2";
+				return "WTU_PIST2" /* GXT: PISTOL MK II */;
 			}
 			else
 			{
-				return "WT_PIST2";
+				return "WT_PIST2" /* GXT: Pistol Mk II */;
 			}
 			break;
 		
 		case joaat("WEAPON_SMG_MK2"):
 			if (bParam1)
 			{
-				return "WTU_SMG2";
+				return "WTU_SMG2" /* GXT: SMG MK II */;
 			}
 			else
 			{
-				return "WT_SMG2";
+				return "WT_SMG2" /* GXT: SMG Mk II */;
 			}
 			break;
 		
 		case joaat("WEAPON_HEAVYSNIPER_MK2"):
 			if (bParam1)
 			{
-				return "WTU_SNIP_HVY2";
+				return "WTU_SNIP_HVY2" /* GXT: HEAVY SNIPER MK II */;
 			}
 			else
 			{
-				return "WT_SNIP_HVY2";
+				return "WT_SNIP_HVY2" /* GXT: Heavy Sniper Mk II */;
 			}
 			break;
 		
 		case joaat("WEAPON_COMBATMG_MK2"):
 			if (bParam1)
 			{
-				return "WTU_MG_CBT2";
+				return "WTU_MG_CBT2" /* GXT: COMBAT MG MK II */;
 			}
 			else
 			{
-				return "WT_MG_CBT2";
+				return "WT_MG_CBT2" /* GXT: Combat MG Mk II */;
 			}
 			break;
 		
 		case joaat("WEAPON_ASSAULTRIFLE_MK2"):
 			if (bParam1)
 			{
-				return "WTU_RIFLE_ASL2";
+				return "WTU_RIFLE_ASL2" /* GXT: ASSAULT RIFLE MK II */;
 			}
 			else
 			{
-				return "WT_RIFLE_ASL2";
+				return "WT_RIFLE_ASL2" /* GXT: Assault Rifle Mk II */;
 			}
 			break;
 		
 		case joaat("WEAPON_CARBINERIFLE_MK2"):
 			if (bParam1)
 			{
-				return "WTU_RIFLE_CBN2";
+				return "WTU_RIFLE_CBN2" /* GXT: CARBINE RIFLE MK II */;
 			}
 			else
 			{
-				return "WT_RIFLE_CBN2";
+				return "WT_RIFLE_CBN2" /* GXT: Carbine Rifle Mk II */;
 			}
 			break;
 		
 		case joaat("WEAPON_PUMPSHOTGUN_MK2"):
 			if (bParam1)
 			{
-				return "WTU_SG_PMP2";
+				return "WTU_SG_PMP2" /* GXT: PUMP SHOTGUN MK II */;
 			}
 			else
 			{
-				return "WT_SG_PMP2";
+				return "WT_SG_PMP2" /* GXT: Pump Shotgun Mk II */;
 			}
 			break;
 		
 		case joaat("WEAPON_SPECIALCARBINE_MK2"):
 			if (bParam1)
 			{
-				return "WTU_SPCARBINE2";
+				return "WTU_SPCARBINE2" /* GXT: SPECIAL CARBINE MK II */;
 			}
 			else
 			{
-				return "WT_SPCARBINE2";
+				return "WT_SPCARBINE2" /* GXT: Special Carbine Mk II */;
 			}
 			break;
 		
 		case joaat("WEAPON_SNSPISTOL_MK2"):
 			if (bParam1)
 			{
-				return "WTU_SNSPISTOL2";
+				return "WTU_SNSPISTOL2" /* GXT: SNS PISTOL MK II */;
 			}
 			else
 			{
-				return "WT_SNSPISTOL2";
+				return "WT_SNSPISTOL2" /* GXT: SNS Pistol Mk II */;
 			}
 			break;
 		
 		case joaat("WEAPON_MARKSMANRIFLE_MK2"):
 			if (bParam1)
 			{
-				return "WTU_MKRIFLE2";
+				return "WTU_MKRIFLE2" /* GXT: MARKSMAN RIFLE MK II */;
 			}
 			else
 			{
-				return "WT_MKRIFLE2";
+				return "WT_MKRIFLE2" /* GXT: Marksman Rifle Mk II */;
 			}
 			break;
 		
 		case joaat("WEAPON_REVOLVER_MK2"):
 			if (bParam1)
 			{
-				return "WTU_REVOLVER2";
+				return "WTU_REVOLVER2" /* GXT: HEAVY REVOLVER MK II */;
 			}
 			else
 			{
-				return "WT_REVOLVER2";
+				return "WT_REVOLVER2" /* GXT: Heavy Revolver Mk II */;
 			}
 			break;
 		
 		case joaat("WEAPON_BULLPUPRIFLE_MK2"):
 			if (bParam1)
 			{
-				return "WTU_BULLRIFLE2";
+				return "WTU_BULLRIFLE2" /* GXT: BULLPUP RIFLE MK II */;
 			}
 			else
 			{
-				return "WT_BULLRIFLE2";
+				return "WT_BULLRIFLE2" /* GXT: Bullpup Rifle Mk II */;
 			}
 			break;
 		
 		case joaat("WEAPON_DOUBLEACTION"):
 			if (bParam1)
 			{
-				return "WTU_REV_DA";
+				return "WTU_REV_DA" /* GXT: DOUBLE-ACTION REVOLVER */;
 			}
 			else
 			{
-				return "WT_REV_DA";
+				return "WT_REV_DA" /* GXT: Double-Action Revolver */;
 			}
 			break;
 		
 		case joaat("WEAPON_STONE_HATCHET"):
 			if (bParam1)
 			{
-				return "WTU_SHATCHET";
+				return "WTU_SHATCHET" /* GXT: STONE HATCHET */;
 			}
 			else
 			{
-				return "WT_SHATCHET";
+				return "WT_SHATCHET" /* GXT: Stone Hatchet */;
 			}
 			break;
 		
 		case joaat("WEAPON_RAYPISTOL"):
 			if (bParam1)
 			{
-				return "WTU_RAYPISTOL";
+				return "WTU_RAYPISTOL" /* GXT: UP-N-ATOMIZER */;
 			}
 			else
 			{
-				return "WT_RAYPISTOL";
+				return "WT_RAYPISTOL" /* GXT: Up-n-Atomizer */;
 			}
 			break;
 		
 		case joaat("WEAPON_RAYCARBINE"):
 			if (bParam1)
 			{
-				return "WTU_RAYCARBINE";
+				return "WTU_RAYCARBINE" /* GXT: UNHOLY HELLBRINGER */;
 			}
 			else
 			{
-				return "WT_RAYCARBINE";
+				return "WT_RAYCARBINE" /* GXT: Unholy Hellbringer */;
 			}
 			break;
 		
 		case joaat("WEAPON_RAYMINIGUN"):
 			if (bParam1)
 			{
-				return "WTU_RAYMINIGUN";
+				return "WTU_RAYMINIGUN" /* GXT: WIDOWMAKER */;
 			}
 			else
 			{
-				return "WT_RAYMINIGUN";
+				return "WT_RAYMINIGUN" /* GXT: Widowmaker */;
 			}
 			break;
 		
 		case joaat("WEAPON_NAVYREVOLVER"):
 			if (bParam1)
 			{
-				return "WTU_REV_NV";
+				return "WTU_REV_NV" /* GXT: NAVY REVOLVER */;
 			}
 			else
 			{
-				return "WT_REV_NV";
+				return "WT_REV_NV" /* GXT: Navy Revolver */;
 			}
 			break;
 		
 		case joaat("WEAPON_CERAMICPISTOL"):
 			if (bParam1)
 			{
-				return "WTU_CERPST";
+				return "WTU_CERPST" /* GXT: CERAMIC PISTOL */;
 			}
 			else
 			{
-				return "WT_CERPST";
+				return "WT_CERPST" /* GXT: Ceramic Pistol */;
 			}
 			break;
 		
 		case joaat("WEAPON_GADGETPISTOL"):
 			if (bParam1)
 			{
-				return "WTU_GDGTPST";
+				return "WTU_GDGTPST" /* GXT: PERICO PISTOL */;
 			}
 			else
 			{
-				return "WT_GDGTPST";
+				return "WT_GDGTPST" /* GXT: Perico Pistol */;
 			}
 			break;
 		
 		case joaat("WEAPON_MILITARYRIFLE"):
 			if (bParam1)
 			{
-				return "WTU_MLTRYRFL";
+				return "WTU_MLTRYRFL" /* GXT: MILITARY RIFLE */;
 			}
 			else
 			{
-				return "WT_MLTRYRFL";
+				return "WT_MLTRYRFL" /* GXT: Military Rifle */;
 			}
 			break;
 		
 		case joaat("WEAPON_COMBATSHOTGUN"):
 			if (bParam1)
 			{
-				return "WTU_CMBSHGN";
+				return "WTU_CMBSHGN" /* GXT: COMBAT SHOTGUN */;
 			}
 			else
 			{
-				return "WT_CMBSHGN";
+				return "WT_CMBSHGN" /* GXT: Combat Shotgun */;
 			}
 			break;
 		
@@ -2385,77 +2385,77 @@ char* func_24(int iParam0, bool bParam1)//Position - 0x16B3
 		case joaat("WEAPON_FERTILIZERCAN"):
 			if (bParam1)
 			{
-				return "WTU_FERTCAN";
+				return "WTU_FERTCAN" /* GXT: FERTILIZER CAN */;
 			}
 			else
 			{
-				return "WT_FERTCAN";
+				return "WT_FERTCAN" /* GXT: Fertilizer Can */;
 			}
 			break;
 		
 		case joaat("WEAPON_HEAVYRIFLE"):
 			if (bParam1)
 			{
-				return "WTU_HEAVYRIFLE";
+				return "WTU_HEAVYRIFLE" /* GXT: HEAVY RIFLE */;
 			}
 			else
 			{
-				return "WT_HEAVYRIFLE";
+				return "WT_HEAVYRIFLE" /* GXT: Heavy Rifle */;
 			}
 			break;
 		
 		case joaat("WEAPON_EMPLAUNCHER"):
 			if (bParam1)
 			{
-				return "WTU_EMPL";
+				return "WTU_EMPL" /* GXT: COMPACT EMP LAUNCHER */;
 			}
 			else
 			{
-				return "WT_EMPL";
+				return "WT_EMPL" /* GXT: Compact EMP Launcher */;
 			}
 			break;
 		
 		case joaat("WEAPON_STUNGUN_MP"):
 			if (bParam1)
 			{
-				return "WTU_STNGUNMP";
+				return "WTU_STNGUNMP" /* GXT: STUN GUN */;
 			}
 			else
 			{
-				return "WT_STNGUNMP";
+				return "WT_STNGUNMP" /* GXT: Stun Gun */;
 			}
 			break;
 		
 		case joaat("WEAPON_TACTICALRIFLE"):
 			if (bParam1)
 			{
-				return "WTU_TACRIFLE";
+				return "WTU_TACRIFLE" /* GXT: SERVICE CARBINE */;
 			}
 			else
 			{
-				return "WT_TACRIFLE";
+				return "WT_TACRIFLE" /* GXT: Service Carbine */;
 			}
 			break;
 		
 		case joaat("WEAPON_PRECISIONRIFLE"):
 			if (bParam1)
 			{
-				return "WTU_PRCSRIFLE";
+				return "WTU_PRCSRIFLE" /* GXT: PRECISION RIFLE */;
 			}
 			else
 			{
-				return "WT_PRCSRIFLE";
+				return "WT_PRCSRIFLE" /* GXT: Precision Rifle */;
 			}
 			break;
 		
 		case joaat("WEAPON_BZGAS"):
 			if (bParam1)
 			{
-				return "WTU_BZGAS";
+				return "WTU_BZGAS" /* GXT: BZ GAS */;
 			}
 			else
 			{
-				return "WTU_BZGAS";
+				return "WTU_BZGAS" /* GXT: BZ GAS */;
 			}
 			break;
 		
@@ -2495,7 +2495,7 @@ char* func_24(int iParam0, bool bParam1)//Position - 0x16B3
 			}
 			break;
 	}
-	return "WT_INVALID";
+	return "WT_INVALID" /* GXT: Invalid */;
 }
 
 var func_25(var uParam0)//Position - 0x2500
@@ -7590,50 +7590,50 @@ char* func_56(int iParam0, int iParam1)//Position - 0x6AD6
 		switch (iParam0)
 		{
 			case joaat("COMPONENT_KNUCKLE_VARMOD_BASE"):
-				return "WT_KNUCKLE";
+				return "WT_KNUCKLE" /* GXT: Knuckle Duster */;
 				break;
 			
 			case joaat("COMPONENT_KNUCKLE_VARMOD_PIMP"):
-				return "WCT_KNUCK_02";
+				return "WCT_KNUCK_02" /* GXT: The Pimp */;
 				break;
 			
 			case joaat("COMPONENT_KNUCKLE_VARMOD_BALLAS"):
-				return "WCT_KNUCK_BG";
+				return "WCT_KNUCK_BG" /* GXT: The Ballas */;
 				break;
 			
 			case joaat("COMPONENT_KNUCKLE_VARMOD_DOLLAR"):
-				return "WCT_KNUCK_DLR";
+				return "WCT_KNUCK_DLR" /* GXT: The Hustler */;
 				break;
 			
 			case joaat("COMPONENT_KNUCKLE_VARMOD_DIAMOND"):
-				return "WCT_KNUCK_DMD";
+				return "WCT_KNUCK_DMD" /* GXT: The Rock */;
 				break;
 			
 			case joaat("COMPONENT_KNUCKLE_VARMOD_HATE"):
-				return "WCT_KNUCK_HT";
+				return "WCT_KNUCK_HT" /* GXT: The Hater */;
 				break;
 			
 			case joaat("COMPONENT_KNUCKLE_VARMOD_LOVE"):
-				return "WCT_KNUCK_LV";
+				return "WCT_KNUCK_LV" /* GXT: The Lover */;
 				break;
 			
 			case joaat("COMPONENT_KNUCKLE_VARMOD_PLAYER"):
-				return "WCT_KNUCK_PC";
+				return "WCT_KNUCK_PC" /* GXT: The Player */;
 				break;
 			
 			case joaat("COMPONENT_KNUCKLE_VARMOD_KING"):
-				return "WCT_KNUCK_SLG";
+				return "WCT_KNUCK_SLG" /* GXT: The King */;
 				break;
 			
 			case joaat("COMPONENT_KNUCKLE_VARMOD_VAGOS"):
-				return "WCT_KNUCK_VG";
+				return "WCT_KNUCK_VG" /* GXT: The Vagos */;
 				break;
 			}
 	}
 	switch (iParam0)
 	{
 		case 0:
-			return "WCT_NONE";
+			return "WCT_NONE" /* GXT: No Attachment */;
 			break;
 		
 		case joaat("COMPONENT_AT_RAILCOVER_01"):
@@ -7641,439 +7641,439 @@ char* func_56(int iParam0, int iParam1)//Position - 0x6AD6
 			break;
 		
 		case joaat("COMPONENT_AT_AR_AFGRIP"):
-			return "WCT_GRIP";
+			return "WCT_GRIP" /* GXT: Grip */;
 			break;
 		
 		case joaat("COMPONENT_AT_PI_FLSH"):
-			return "WCT_FLASH";
+			return "WCT_FLASH" /* GXT: Flashlight */;
 			break;
 		
 		case joaat("COMPONENT_AT_AR_FLSH"):
-			return "WCT_FLASH";
+			return "WCT_FLASH" /* GXT: Flashlight */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_MACRO"):
-			return "WCT_SCOPE_MAC";
+			return "WCT_SCOPE_MAC" /* GXT: Scope */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_MACRO_02"):
-			return "WCT_SCOPE_MAC";
+			return "WCT_SCOPE_MAC" /* GXT: Scope */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_SMALL"):
-			return "WCT_SCOPE_SML";
+			return "WCT_SCOPE_SML" /* GXT: Scope */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_SMALL_02"):
-			return "WCT_SCOPE_SML";
+			return "WCT_SCOPE_SML" /* GXT: Scope */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_MEDIUM"):
-			return "WCT_SCOPE_MED";
+			return "WCT_SCOPE_MED" /* GXT: Scope */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_LARGE"):
-			return "WCT_SCOPE_LRG";
+			return "WCT_SCOPE_LRG" /* GXT: Scope */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_MAX"):
-			return "WCT_SCOPE_MAX";
+			return "WCT_SCOPE_MAX" /* GXT: Advanced Scope */;
 			break;
 		
 		case joaat("COMPONENT_AT_PI_SUPP"):
-			return "WCT_SUPP";
+			return "WCT_SUPP" /* GXT: Suppressor */;
 			break;
 		
 		case joaat("COMPONENT_AT_AR_SUPP"):
-			return "WCT_SUPP";
+			return "WCT_SUPP" /* GXT: Suppressor */;
 			break;
 		
 		case joaat("COMPONENT_AT_AR_SUPP_02"):
-			return "WCT_SUPP";
+			return "WCT_SUPP" /* GXT: Suppressor */;
 			break;
 		
 		case joaat("COMPONENT_AT_SR_SUPP"):
-			return "WCT_SUPP";
+			return "WCT_SUPP" /* GXT: Suppressor */;
 			break;
 		
 		case joaat("COMPONENT_PISTOL_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_PISTOL_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_COMBATPISTOL_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_COMBATPISTOL_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_APPISTOL_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_APPISTOL_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_MICROSMG_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_MICROSMG_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_SMG_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_SMG_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTRIFLE_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTRIFLE_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_CARBINERIFLE_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_CARBINERIFLE_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_ADVANCEDRIFLE_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_ADVANCEDRIFLE_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_MG_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_MG_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_COMBATMG_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_COMBATMG_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTSHOTGUN_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTSHOTGUN_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_SNIPERRIFLE_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_HEAVYSNIPER_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_MINIGUN_CLIP_01"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTSMG_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTSMG_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_PISTOL50_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_PISTOL50_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTSNIPER_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTMG_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTMG_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_PROGRAMMABLEAR_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_PROGRAMMABLEAR_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_SNSPISTOL_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_SNSPISTOL_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_VINTAGEPISTOL_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_VINTAGEPISTOL_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_HEAVYSHOTGUN_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_MARKSMANRIFLE_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_HEAVYSHOTGUN_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_MARKSMANRIFLE_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_TACTICALRIFLE_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_TACTICALRIFLE_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_LARGE_FIXED_ZOOM"):
-			return "WCT_SCOPE_LRG";
+			return "WCT_SCOPE_LRG" /* GXT: Scope */;
 			break;
 		
 		case joaat("COMPONENT_AT_PI_SUPP_02"):
-			return "WCT_SUPP";
+			return "WCT_SUPP" /* GXT: Suppressor */;
 			break;
 		
 		case joaat("COMPONENT_COMBATPDW_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_COMBATPDW_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_MARKSMANPISTOL_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_MACHINEPISTOL_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_MACHINEPISTOL_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTRIFLE_VARMOD_LUXE"):
-			return "WCT_VAR_GOLD";
+			return "WCT_VAR_GOLD" /* GXT: Yusuf Amir Luxury Finish */;
 			break;
 		
 		case joaat("COMPONENT_ADVANCEDRIFLE_VARMOD_LUXE"):
-			return "WCT_VAR_METAL";
+			return "WCT_VAR_METAL" /* GXT: Gilded Gun Metal Finish */;
 			break;
 		
 		case joaat("COMPONENT_CARBINERIFLE_VARMOD_LUXE"):
-			return "WCT_VAR_GOLD";
+			return "WCT_VAR_GOLD" /* GXT: Yusuf Amir Luxury Finish */;
 			break;
 		
 		case joaat("COMPONENT_APPISTOL_VARMOD_LUXE"):
-			return "WCT_VAR_METAL";
+			return "WCT_VAR_METAL" /* GXT: Gilded Gun Metal Finish */;
 			break;
 		
 		case joaat("COMPONENT_PISTOL_VARMOD_LUXE"):
-			return "WCT_VAR_GOLD";
+			return "WCT_VAR_GOLD" /* GXT: Yusuf Amir Luxury Finish */;
 			break;
 		
 		case joaat("COMPONENT_PISTOL50_VARMOD_LUXE"):
-			return "WCT_VAR_SIL";
+			return "WCT_VAR_SIL" /* GXT: Platinum Pearl Deluxe Finish */;
 			break;
 		
 		case joaat("COMPONENT_HEAVYPISTOL_VARMOD_LUXE"):
-			return "WCT_VAR_WOOD";
+			return "WCT_VAR_WOOD" /* GXT: Etched Wood Grip Finish */;
 			break;
 		
 		case joaat("COMPONENT_SMG_VARMOD_LUXE"):
-			return "WCT_VAR_GOLD";
+			return "WCT_VAR_GOLD" /* GXT: Yusuf Amir Luxury Finish */;
 			break;
 		
 		case joaat("COMPONENT_MICROSMG_VARMOD_LUXE"):
-			return "WCT_VAR_GOLD";
+			return "WCT_VAR_GOLD" /* GXT: Yusuf Amir Luxury Finish */;
 			break;
 		
 		case joaat("COMPONENT_SAWNOFFSHOTGUN_VARMOD_LUXE"):
-			return "WCT_VAR_METAL";
+			return "WCT_VAR_METAL" /* GXT: Gilded Gun Metal Finish */;
 			break;
 		
 		case joaat("COMPONENT_SNIPERRIFLE_VARMOD_LUXE"):
-			return "WCT_VAR_WOOD";
+			return "WCT_VAR_WOOD" /* GXT: Etched Wood Grip Finish */;
 			break;
 		
 		case joaat("COMPONENT_MARKSMANRIFLE_VARMOD_LUXE"):
-			return "WCT_VAR_GOLD";
+			return "WCT_VAR_GOLD" /* GXT: Yusuf Amir Luxury Finish */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTSMG_VARMOD_LOWRIDER"):
-			return "WCT_VAR_GOLD";
+			return "WCT_VAR_GOLD" /* GXT: Yusuf Amir Luxury Finish */;
 			break;
 		
 		case joaat("COMPONENT_BULLPUPRIFLE_VARMOD_LOW"):
-			return "WCT_VAR_METAL";
+			return "WCT_VAR_METAL" /* GXT: Gilded Gun Metal Finish */;
 			break;
 		
 		case joaat("COMPONENT_COMBATMG_VARMOD_LOWRIDER"):
-			return "WCT_VAR_ETCHM";
+			return "WCT_VAR_ETCHM" /* GXT: Etched Gun Metal Finish */;
 			break;
 		
 		case joaat("COMPONENT_COMBATPISTOL_VARMOD_LOWRIDER"):
-			return "WCT_VAR_GOLD";
+			return "WCT_VAR_GOLD" /* GXT: Yusuf Amir Luxury Finish */;
 			break;
 		
 		case joaat("COMPONENT_MG_VARMOD_LOWRIDER"):
-			return "WCT_VAR_GOLD";
+			return "WCT_VAR_GOLD" /* GXT: Yusuf Amir Luxury Finish */;
 			break;
 		
 		case joaat("COMPONENT_PUMPSHOTGUN_VARMOD_LOWRIDER"):
-			return "WCT_VAR_GOLD";
+			return "WCT_VAR_GOLD" /* GXT: Yusuf Amir Luxury Finish */;
 			break;
 		
 		case joaat("COMPONENT_SNSPISTOL_VARMOD_LOWRIDER"):
-			return "WCT_VAR_WOOD";
+			return "WCT_VAR_WOOD" /* GXT: Etched Wood Grip Finish */;
 			break;
 		
 		case joaat("COMPONENT_SPECIALCARBINE_VARMOD_LOWRIDER"):
-			return "WCT_VAR_ETCHM";
+			return "WCT_VAR_ETCHM" /* GXT: Etched Gun Metal Finish */;
 			break;
 		
 		case joaat("COMPONENT_SWITCHBLADE_VARMOD_BASE"):
-			return "WCT_SB_BASE";
+			return "WCT_SB_BASE" /* GXT: Default Handle */;
 			break;
 		
 		case joaat("COMPONENT_SWITCHBLADE_VARMOD_VAR1"):
-			return "WCT_SB_VAR1";
+			return "WCT_SB_VAR1" /* GXT: VIP Variant */;
 			break;
 		
 		case joaat("COMPONENT_SWITCHBLADE_VARMOD_VAR2"):
-			return "WCT_SB_VAR2";
+			return "WCT_SB_VAR2" /* GXT: Bodyguard Variant */;
 			break;
 		
 		case joaat("COMPONENT_REVOLVER_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_REVOLVER_VARMOD_BOSS"):
-			return "WCT_REV_VARB";
+			return "WCT_REV_VARB" /* GXT: VIP Variant */;
 			break;
 		
 		case joaat("COMPONENT_REVOLVER_VARMOD_GOON"):
-			return "WCT_REV_VARG";
+			return "WCT_REV_VARG" /* GXT: Bodyguard Variant */;
 			break;
 		
 		case joaat("COMPONENT_SMG_CLIP_03"):
-			return "WCT_CLIP_DRM";
+			return "WCT_CLIP_DRM" /* GXT: Drum magazine */;
 			break;
 		
 		case joaat("COMPONENT_CARBINERIFLE_CLIP_03"):
-			return "WCT_CLIP_BOX";
+			return "WCT_CLIP_BOX" /* GXT: Box magazine */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTRIFLE_CLIP_03"):
-			return "WCT_CLIP_DRM";
+			return "WCT_CLIP_DRM" /* GXT: Drum magazine */;
 			break;
 		
 		case joaat("COMPONENT_HEAVYSHOTGUN_CLIP_03"):
-			return "WCT_CLIP_DRM";
+			return "WCT_CLIP_DRM" /* GXT: Drum magazine */;
 			break;
 		
 		case joaat("COMPONENT_GUNRUN_MK2_UPGRADE"):
-			return "WCT_VAR_GUN";
+			return "WCT_VAR_GUN" /* GXT: Mk II */;
 			break;
 		
 		case joaat("COMPONENT_MARKSMANRIFLE_MK2_CAMO_IND_01"):
-			return "WCT_CAMO_IND";
+			return "WCT_CAMO_IND" /* GXT: Patriotic */;
 			break;
 		
 		case joaat("COMPONENT_SNSPISTOL_MK2_CAMO_IND_01"):
-			return "WCT_CAMO_IND";
+			return "WCT_CAMO_IND" /* GXT: Patriotic */;
 			break;
 		
 		case joaat("COMPONENT_SNSPISTOL_MK2_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_MACRO_02_MK2"):
-			return "WCT_SCOPE_MAC2";
+			return "WCT_SCOPE_MAC2" /* GXT: Small Scope */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_SMALL_MK2"):
-			return "WCT_SCOPE_SML2";
+			return "WCT_SCOPE_SML2" /* GXT: Medium Scope */;
 			break;
 		
 		case joaat("COMPONENT_RAYPISTOL_VARMOD_XMAS18"):
-			return "WCT_VAR_RAY18";
+			return "WCT_VAR_RAY18" /* GXT: Festive tint */;
 			break;
 		
 		case joaat("COMPONENT_CERAMICPISTOL_CLIP_01"):
-			return "WCT_CLIP1";
+			return "WCT_CLIP1" /* GXT: Default Clip */;
 			break;
 		
 		case joaat("COMPONENT_CERAMICPISTOL_CLIP_02"):
-			return "WCT_CLIP2";
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
 		case joaat("COMPONENT_CERAMICPISTOL_SUPP"):
-			return "WCT_SUPP";
+			return "WCT_SUPP" /* GXT: Suppressor */;
 			break;
 		
 		case joaat("COMPONENT_HEAVYRIFLE_CAMO1"):
-			return "WCT_VAR_FAM";
+			return "WCT_VAR_FAM" /* GXT: Families Finish */;
 			break;
 		
 		case joaat("COMPONENT_MICROSMG_VARMOD_SECURITY"):
-			return "WCT_VAR_WEED";
+			return "WCT_VAR_WEED" /* GXT: Organics Finish */;
 			break;
 		
 		case joaat("COMPONENT_APPISTOL_VARMOD_SECURITY"):
-			return "WCT_VAR_STUD";
+			return "WCT_VAR_STUD" /* GXT: Record A Finish */;
 			break;
 		
 		case joaat("COMPONENT_PUMPSHOTGUN_VARMOD_SECURITY"):
-			return "WCT_VAR_BONE";
+			return "WCT_VAR_BONE" /* GXT: Bone Finish */;
 			break;
 		
 		default:
@@ -8964,7 +8964,7 @@ char* func_79(int iParam0, int iParam1)//Position - 0x801B
 	switch (iParam0)
 	{
 		case 0:
-			return "WCD_NONE";
+			return "WCD_NONE" /* GXT: Remove attachments. */;
 			break;
 		
 		case joaat("COMPONENT_AT_RAILCOVER_01"):
@@ -8972,151 +8972,151 @@ char* func_79(int iParam0, int iParam1)//Position - 0x801B
 			break;
 		
 		case joaat("COMPONENT_AT_AR_AFGRIP"):
-			return "WCD_GRIP";
+			return "WCD_GRIP" /* GXT: Improves weapon accuracy. */;
 			break;
 		
 		case joaat("COMPONENT_AT_PI_FLSH"):
-			return "WCD_FLASH";
+			return "WCD_FLASH" /* GXT: Aids low light target acquisition. */;
 			break;
 		
 		case joaat("COMPONENT_AT_AR_FLSH"):
-			return "WCD_FLASH";
+			return "WCD_FLASH" /* GXT: Aids low light target acquisition. */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_MACRO"):
-			return "WCD_SCOPE_MAC";
+			return "WCD_SCOPE_MAC" /* GXT: Standard-range zoom functionality. */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_MACRO_02"):
-			return "WCD_SCOPE_MAC";
+			return "WCD_SCOPE_MAC" /* GXT: Standard-range zoom functionality. */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_SMALL"):
-			return "WCD_SCOPE_SML";
+			return "WCD_SCOPE_SML" /* GXT: Medium-range zoom functionality. */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_SMALL_02"):
-			return "WCD_SCOPE_SML";
+			return "WCD_SCOPE_SML" /* GXT: Medium-range zoom functionality. */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_MEDIUM"):
-			return "WCD_SCOPE_MED";
+			return "WCD_SCOPE_MED" /* GXT: Extended-range zoom functionality. */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_LARGE"):
-			return "WCD_SCOPE_LRG";
+			return "WCD_SCOPE_LRG" /* GXT: Long-range zoom functionality. */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_MAX"):
-			return "WCD_SCOPE_MAX";
+			return "WCD_SCOPE_MAX" /* GXT: Maximum zoom functionality. */;
 			break;
 		
 		case joaat("COMPONENT_AT_PI_SUPP"):
-			return "WCD_PI_SUPP";
+			return "WCD_PI_SUPP" /* GXT: Reduces noise and muzzle flash. */;
 			break;
 		
 		case joaat("COMPONENT_AT_PI_SUPP_02"):
-			return "WCD_PI_SUPP";
+			return "WCD_PI_SUPP" /* GXT: Reduces noise and muzzle flash. */;
 			break;
 		
 		case joaat("COMPONENT_AT_AR_SUPP"):
-			return "WCD_AR_SUPP";
+			return "WCD_AR_SUPP" /* GXT: Reduces noise and muzzle flash. */;
 			break;
 		
 		case joaat("COMPONENT_AT_AR_SUPP_02"):
-			return "WCD_AR_SUPP2";
+			return "WCD_AR_SUPP2" /* GXT: Reduces noise and muzzle flash. */;
 			break;
 		
 		case joaat("COMPONENT_AT_SR_SUPP"):
-			return "WCD_SR_SUPP";
+			return "WCD_SR_SUPP" /* GXT: Reduces noise and muzzle flash. */;
 			break;
 		
 		case joaat("COMPONENT_PISTOL_CLIP_01"):
-			return "WCD_P_CLIP1";
+			return "WCD_P_CLIP1" /* GXT: Standard capacity for Pistol. */;
 			break;
 		
 		case joaat("COMPONENT_PISTOL_CLIP_02"):
-			return "WCD_P_CLIP2";
+			return "WCD_P_CLIP2" /* GXT: Extended capacity for Pistol. */;
 			break;
 		
 		case joaat("COMPONENT_COMBATPISTOL_CLIP_01"):
-			return "WCD_CP_CLIP1";
+			return "WCD_CP_CLIP1" /* GXT: Standard capacity for Combat Pistol. */;
 			break;
 		
 		case joaat("COMPONENT_COMBATPISTOL_CLIP_02"):
-			return "WCD_CP_CLIP2";
+			return "WCD_CP_CLIP2" /* GXT: Extended capacity for Combat Pistol. */;
 			break;
 		
 		case joaat("COMPONENT_APPISTOL_CLIP_01"):
-			return "WCD_AP_CLIP1";
+			return "WCD_AP_CLIP1" /* GXT: Standard capacity for AP Pistol. */;
 			break;
 		
 		case joaat("COMPONENT_APPISTOL_CLIP_02"):
-			return "WCD_AP_CLIP2";
+			return "WCD_AP_CLIP2" /* GXT: Extended capacity for AP Pistol. */;
 			break;
 		
 		case joaat("COMPONENT_MICROSMG_CLIP_01"):
-			return "WCDMSMG_CLIP1";
+			return "WCDMSMG_CLIP1" /* GXT: Standard capacity for Micro SMG. */;
 			break;
 		
 		case joaat("COMPONENT_MICROSMG_CLIP_02"):
-			return "WCDMSMG_CLIP2";
+			return "WCDMSMG_CLIP2" /* GXT: Extended capacity for Micro SMG. */;
 			break;
 		
 		case joaat("COMPONENT_SMG_CLIP_01"):
-			return "WCD_SMG_CLIP1";
+			return "WCD_SMG_CLIP1" /* GXT: Standard capacity for SMG. */;
 			break;
 		
 		case joaat("COMPONENT_SMG_CLIP_02"):
-			return "WCD_SMG_CLIP2";
+			return "WCD_SMG_CLIP2" /* GXT: Extended capacity for SMG. */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTRIFLE_CLIP_01"):
-			return "WCD_AR_CLIP1";
+			return "WCD_AR_CLIP1" /* GXT: Standard capacity for Assault Rifle. */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTRIFLE_CLIP_02"):
-			return "WCD_AR_CLIP2";
+			return "WCD_AR_CLIP2" /* GXT: Extended capacity for Assault Rifle. */;
 			break;
 		
 		case joaat("COMPONENT_CARBINERIFLE_CLIP_01"):
-			return "WCD_CR_CLIP1";
+			return "WCD_CR_CLIP1" /* GXT: Standard capacity for Carbine Rifle. */;
 			break;
 		
 		case joaat("COMPONENT_CARBINERIFLE_CLIP_02"):
-			return "WCD_CR_CLIP2";
+			return "WCD_CR_CLIP2" /* GXT: Extended capacity for Carbine Rifle. */;
 			break;
 		
 		case joaat("COMPONENT_ADVANCEDRIFLE_CLIP_01"):
-			return "WCD_ADR_CLIP1";
+			return "WCD_ADR_CLIP1" /* GXT: Standard capacity for Advanced Rifle. */;
 			break;
 		
 		case joaat("COMPONENT_ADVANCEDRIFLE_CLIP_02"):
-			return "WCD_ADR_CLIP2";
+			return "WCD_ADR_CLIP2" /* GXT: Extended capacity for Advanced Rifle. */;
 			break;
 		
 		case joaat("COMPONENT_MG_CLIP_01"):
-			return "WCD_MG_CLIP1";
+			return "WCD_MG_CLIP1" /* GXT: Standard capacity for MG. */;
 			break;
 		
 		case joaat("COMPONENT_MG_CLIP_02"):
-			return "WCD_MG_CLIP2";
+			return "WCD_MG_CLIP2" /* GXT: Extended capacity for MG. */;
 			break;
 		
 		case joaat("COMPONENT_COMBATMG_CLIP_01"):
-			return "WCDCMG_CLIP1";
+			return "WCDCMG_CLIP1" /* GXT: Standard capacity for Combat MG. */;
 			break;
 		
 		case joaat("COMPONENT_COMBATMG_CLIP_02"):
-			return "WCDCMG_CLIP2";
+			return "WCDCMG_CLIP2" /* GXT: Extended capacity for Combat MG. */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTSHOTGUN_CLIP_01"):
-			return "WCD_AS_CLIP1";
+			return "WCD_AS_CLIP1" /* GXT: Standard capacity for Assault Shotgun. */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTSHOTGUN_CLIP_02"):
-			return "WCD_AS_CLIP2";
+			return "WCD_AS_CLIP2" /* GXT: Extended capacity for Assault Shotgun. */;
 			break;
 		
 		case joaat("COMPONENT_SNIPERRIFLE_CLIP_01"):
@@ -9132,167 +9132,167 @@ char* func_79(int iParam0, int iParam1)//Position - 0x801B
 			break;
 		
 		case joaat("COMPONENT_ASSAULTSMG_CLIP_01"):
-			return "WCD_ASMG_CLIP1";
+			return "WCD_ASMG_CLIP1" /* GXT: Standard capacity for Assault SMG. */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTSMG_CLIP_02"):
-			return "WCD_ASMG_CLIP2";
+			return "WCD_ASMG_CLIP2" /* GXT: Extended capacity for Assault SMG. */;
 			break;
 		
 		case joaat("COMPONENT_PISTOL50_CLIP_01"):
-			return "WCD_P50_CLIP1";
+			return "WCD_P50_CLIP1" /* GXT: Standard capacity for Pistol .50. */;
 			break;
 		
 		case joaat("COMPONENT_PISTOL50_CLIP_02"):
-			return "WCD_P50_CLIP2";
+			return "WCD_P50_CLIP2" /* GXT: Extended capacity for Pistol .50. */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTRIFLE_VARMOD_LUXE"):
-			return "WCD_VAR_AR";
+			return "WCD_VAR_AR" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_ADVANCEDRIFLE_VARMOD_LUXE"):
-			return "WCD_VAR_ADR";
+			return "WCD_VAR_ADR" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_CARBINERIFLE_VARMOD_LUXE"):
-			return "WCD_VAR_CR";
+			return "WCD_VAR_CR" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_APPISTOL_VARMOD_LUXE"):
-			return "WCD_VAR_AP";
+			return "WCD_VAR_AP" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_PISTOL_VARMOD_LUXE"):
-			return "WCD_VAR_P";
+			return "WCD_VAR_P" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_PISTOL50_VARMOD_LUXE"):
-			return "WCD_VAR_P50";
+			return "WCD_VAR_P50" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_HEAVYPISTOL_VARMOD_LUXE"):
-			return "WCD_VAR_HPST";
+			return "WCD_VAR_HPST" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_SMG_VARMOD_LUXE"):
-			return "WCD_VAR_SMG";
+			return "WCD_VAR_SMG" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_MICROSMG_VARMOD_LUXE"):
-			return "WCD_VAR_MSMG";
+			return "WCD_VAR_MSMG" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_SAWNOFFSHOTGUN_VARMOD_LUXE"):
-			return "WCD_VAR_SOF";
+			return "WCD_VAR_SOF" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_SNIPERRIFLE_VARMOD_LUXE"):
-			return "WCD_VAR_SNP";
+			return "WCD_VAR_SNP" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_MARKSMANRIFLE_VARMOD_LUXE"):
-			return "WCD_VAR_MKRF";
+			return "WCD_VAR_MKRF" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_KNUCKLE_VARMOD_PIMP"):
-			return "WCD_VAR_DESC";
+			return "WCD_VAR_DESC" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_KNUCKLE_VARMOD_BALLAS"):
-			return "WCD_VAR_DESC";
+			return "WCD_VAR_DESC" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_KNUCKLE_VARMOD_DOLLAR"):
-			return "WCD_VAR_DESC";
+			return "WCD_VAR_DESC" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_KNUCKLE_VARMOD_DIAMOND"):
-			return "WCD_VAR_DESC";
+			return "WCD_VAR_DESC" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_KNUCKLE_VARMOD_HATE"):
-			return "WCD_VAR_DESC";
+			return "WCD_VAR_DESC" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_KNUCKLE_VARMOD_LOVE"):
-			return "WCD_VAR_DESC";
+			return "WCD_VAR_DESC" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_KNUCKLE_VARMOD_PLAYER"):
-			return "WCD_VAR_DESC";
+			return "WCD_VAR_DESC" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_KNUCKLE_VARMOD_KING"):
-			return "WCD_VAR_DESC";
+			return "WCD_VAR_DESC" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_KNUCKLE_VARMOD_VAGOS"):
-			return "WCD_VAR_DESC";
+			return "WCD_VAR_DESC" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTSMG_VARMOD_LOWRIDER"):
-			return "WCD_VAR_ASMG";
+			return "WCD_VAR_ASMG" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_BULLPUPRIFLE_VARMOD_LOW"):
-			return "WCD_VAR_BPR";
+			return "WCD_VAR_BPR" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_COMBATMG_VARMOD_LOWRIDER"):
-			return "WCD_VAR_CBMG";
+			return "WCD_VAR_CBMG" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_COMBATPISTOL_VARMOD_LOWRIDER"):
-			return "WCD_VAR_CBP";
+			return "WCD_VAR_CBP" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_MG_VARMOD_LOWRIDER"):
-			return "WCD_VAR_MG";
+			return "WCD_VAR_MG" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_PUMPSHOTGUN_VARMOD_LOWRIDER"):
-			return "WCD_VAR_PSHT";
+			return "WCD_VAR_PSHT" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_SNSPISTOL_VARMOD_LOWRIDER"):
-			return "WCD_VAR_SNS";
+			return "WCD_VAR_SNS" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_SPECIALCARBINE_VARMOD_LOWRIDER"):
-			return "WCD_VAR_SCAR";
+			return "WCD_VAR_SCAR" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_SWITCHBLADE_VARMOD_VAR1"):
-			return "WCD_VAR_DESC";
+			return "WCD_VAR_DESC" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_SWITCHBLADE_VARMOD_VAR2"):
-			return "WCD_VAR_DESC";
+			return "WCD_VAR_DESC" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_REVOLVER_CLIP_01"):
-			return "WCD_P_CLIP1";
+			return "WCD_P_CLIP1" /* GXT: Standard capacity for Pistol. */;
 			break;
 		
 		case joaat("COMPONENT_REVOLVER_VARMOD_BOSS"):
-			return "WCD_REV_VARB";
+			return "WCD_REV_VARB" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_REVOLVER_VARMOD_GOON"):
-			return "WCD_REV_VARG";
+			return "WCD_REV_VARG" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_SMG_CLIP_03"):
-			return "WCD_CLIP3";
+			return "WCD_CLIP3" /* GXT: Expanded capacity and slower reload. */;
 			break;
 		
 		case joaat("COMPONENT_CARBINERIFLE_CLIP_03"):
-			return "WCD_CLIP3";
+			return "WCD_CLIP3" /* GXT: Expanded capacity and slower reload. */;
 			break;
 		
 		case joaat("COMPONENT_ASSAULTRIFLE_CLIP_03"):
-			return "WCD_CLIP3";
+			return "WCD_CLIP3" /* GXT: Expanded capacity and slower reload. */;
 			break;
 		
 		case joaat("COMPONENT_GUNRUN_MK2_UPGRADE"):
@@ -9300,43 +9300,43 @@ char* func_79(int iParam0, int iParam1)//Position - 0x801B
 			break;
 		
 		case joaat("COMPONENT_SNSPISTOL_MK2_CLIP_02"):
-			return "WCD_CLIP2";
+			return "WCD_CLIP2" /* GXT: Extended capacity for regular ammo. */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_MACRO_02_MK2"):
-			return "WCD_SCOPE_MAC";
+			return "WCD_SCOPE_MAC" /* GXT: Standard-range zoom functionality. */;
 			break;
 		
 		case joaat("COMPONENT_AT_SCOPE_SMALL_MK2"):
-			return "WCD_SCOPE_SML";
+			return "WCD_SCOPE_SML" /* GXT: Medium-range zoom functionality. */;
 			break;
 		
 		case joaat("COMPONENT_RAYPISTOL_VARMOD_XMAS18"):
-			return "WCD_VAR_RAY18";
+			return "WCD_VAR_RAY18" /* GXT: The Festive tint for the Up-n-Atomizer. */;
 			break;
 		
 		case joaat("COMPONENT_CERAMICPISTOL_CLIP_02"):
-			return "WCD_CLIP2";
+			return "WCD_CLIP2" /* GXT: Extended capacity for regular ammo. */;
 			break;
 		
 		case joaat("COMPONENT_CERAMICPISTOL_SUPP"):
-			return "WCD_PI_SUPP";
+			return "WCD_PI_SUPP" /* GXT: Reduces noise and muzzle flash. */;
 			break;
 		
 		case joaat("COMPONENT_HEAVYRIFLE_CAMO1"):
-			return "WCD_VAR_HRF";
+			return "WCD_VAR_HRF" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_MICROSMG_VARMOD_SECURITY"):
-			return "WCD_VAR_MSMG";
+			return "WCD_VAR_MSMG" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_APPISTOL_VARMOD_SECURITY"):
-			return "WCD_VAR_AP";
+			return "WCD_VAR_AP" /* GXT: Item available to purchase. */;
 			break;
 		
 		case joaat("COMPONENT_PUMPSHOTGUN_VARMOD_SECURITY"):
-			return "WCD_VAR_PSHT";
+			return "WCD_VAR_PSHT" /* GXT: Item available to purchase. */;
 			break;
 		
 		default:
@@ -9361,7 +9361,7 @@ char* func_79(int iParam0, int iParam1)//Position - 0x801B
 			}
 			break;
 	}
-	return "WCD_INVALID";
+	return "WCD_INVALID" /* GXT: Invalid Attachment Weapon Description. */;
 }
 
 int func_80(int iParam0, int iParam1)//Position - 0x865F
@@ -13320,18 +13320,18 @@ char* func_137(int iParam0, bool bParam1)//Position - 0xD97F
 				{
 					if (WEAPON::HAS_PED_GOT_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_MARKSMANRIFLE_MK2"), false))
 					{
-						return "WCD_MK1_LOCK";
+						return "WCD_MK1_LOCK" /* GXT: Revert to the stock variant to customize this weapon. */;
 					}
 				}
-				return "WTDE2_MKRIFLE";
+				return "WTDE2_MKRIFLE" /* GXT: Whether you're up close or a disconcertingly long way away, this weapon will get the job done. A multi-range tool for tools. Part of the Last Team Standing Update. This item is permanently free as part of the Criminal Enterprise Starter Pack. */;
 				break;
 			
 			case joaat("WEAPON_COMPACTRIFLE"):
-				return "WTDE2_CMPRIFLE";
+				return "WTDE2_CMPRIFLE" /* GXT: Half the size, all the power, double the recoil: there's no riskier way to say "I'm compensating for something". Part of Lowriders: Custom Classics. This item is permanently free as part of the Criminal Enterprise Starter Pack. */;
 				break;
 			
 			case joaat("WEAPON_COMPACTLAUNCHER"):
-				return "WTDE2_CMPGL";
+				return "WTDE2_CMPGL" /* GXT: Focus groups using the regular model suggested it was too accurate and found it awkward to use with one hand on the throttle. Easy fix. Part of Bikers. This item is permanently free as part of the Criminal Enterprise Starter Pack. */;
 				break;
 			
 			default:
@@ -13349,107 +13349,107 @@ char* func_137(int iParam0, bool bParam1)//Position - 0xD97F
 			break;
 		
 		case joaat("WEAPON_PISTOL"):
-			return "WT_PIST_DESC";
+			return "WT_PIST_DESC" /* GXT: Standard handgun. A .45 caliber pistol with a magazine capacity of 12 rounds that can be extended to 16. */;
 			break;
 		
 		case joaat("WEAPON_COMBATPISTOL"):
-			return "WTD_PIST_CBT";
+			return "WTD_PIST_CBT" /* GXT: A compact, lightweight, semi-automatic pistol designed for law enforcement and personal defense. 12-round magazine with option to extend to 16 rounds. */;
 			break;
 		
 		case joaat("WEAPON_APPISTOL"):
-			return "WTD_PIST_AP";
+			return "WTD_PIST_AP" /* GXT: High-penetration, fully-automatic pistol. Holds 18 rounds in magazine with option to extend to 36 rounds. */;
 			break;
 		
 		case joaat("WEAPON_SMG"):
-			return "WTD_SMG";
+			return "WTD_SMG" /* GXT: This is known as a good all-round submachine gun. Lightweight with an accurate sight and 30-round magazine capacity. */;
 			break;
 		
 		case joaat("WEAPON_MICROSMG"):
-			return "WTD_SMG_MCR";
+			return "WTD_SMG_MCR" /* GXT: Combines compact design with a high rate of fire at approximately 700-900 rounds per minute. */;
 			break;
 		
 		case joaat("WEAPON_ASSAULTRIFLE"):
-			return "WTD_RIFLE_ASL";
+			return "WTD_RIFLE_ASL" /* GXT: This standard assault rifle boasts a large capacity magazine and long distance accuracy. */;
 			break;
 		
 		case joaat("WEAPON_CARBINERIFLE"):
-			return "WTD_RIFLE_CBN";
+			return "WTD_RIFLE_CBN" /* GXT: Combining long distance accuracy with a high-capacity magazine, the carbine rifle can be relied on to make the hit. */;
 			break;
 		
 		case joaat("WEAPON_ADVANCEDRIFLE"):
-			return "WTD_RIFLE_ADV";
+			return "WTD_RIFLE_ADV" /* GXT: The most lightweight and compact of all assault rifles, without compromising accuracy and rate of fire. */;
 			break;
 		
 		case joaat("WEAPON_MG"):
-			return "WTD_MG";
+			return "WTD_MG" /* GXT: General purpose machine gun that combines rugged design with dependable performance. Long range penetrative power. Very effective against large groups. */;
 			break;
 		
 		case joaat("WEAPON_COMBATMG"):
-			return "WTD_MG_CBT";
+			return "WTD_MG_CBT" /* GXT: Lightweight, compact machine gun that combines excellent maneuverability with a high rate of fire to devastating effect. */;
 			break;
 		
 		case joaat("WEAPON_PUMPSHOTGUN"):
-			return "WTD_SG_PMP";
+			return "WTD_SG_PMP" /* GXT: Standard shotgun ideal for short-range combat. A high-projectile spread makes up for its lower accuracy at long range. */;
 			break;
 		
 		case joaat("WEAPON_SAWNOFFSHOTGUN"):
-			return "WTD_SG_SOF";
+			return "WTD_SG_SOF" /* GXT: This single-barrel, sawed-off shotgun compensates for its low range and ammo capacity with devastating efficiency in close combat. */;
 			break;
 		
 		case joaat("WEAPON_ASSAULTSHOTGUN"):
-			return "WTD_SG_ASL";
+			return "WTD_SG_ASL" /* GXT: Fully automatic shotgun with 8 round magazine and high rate of fire. */;
 			break;
 		
 		case joaat("WEAPON_HEAVYSNIPER"):
-			return "WTD_SNIP_HVY";
+			return "WTD_SNIP_HVY" /* GXT: Features armor-piercing rounds for heavy damage. Comes with laser scope as standard. */;
 			break;
 		
 		case joaat("WEAPON_REMOTESNIPER"):
-			return "WTD_SNIP_RMT";
+			return "WTD_SNIP_RMT" /* GXT: Remote controlled sniper system. */;
 			break;
 		
 		case joaat("WEAPON_SNIPERRIFLE"):
-			return "WTD_SNIP_RIF";
+			return "WTD_SNIP_RIF" /* GXT: Standard sniper rifle. Ideal for situations that require accuracy at long range. Limitations include slow reload speed and very low rate of fire. */;
 			break;
 		
 		case joaat("WEAPON_GRENADELAUNCHER"):
-			return "WTD_GL";
+			return "WTD_GL" /* GXT: A compact, lightweight grenade launcher with semi-automatic functionality. Holds up to 10 rounds. */;
 			break;
 		
 		case joaat("WEAPON_RPG"):
-			return "WTD_RPG";
+			return "WTD_RPG" /* GXT: A portable, shoulder-launched, anti-tank weapon that fires explosive warheads. Very effective for taking down vehicles or large groups of assailants. */;
 			break;
 		
 		case joaat("WEAPON_MINIGUN"):
-			return "WTD_MINIGUN";
+			return "WTD_MINIGUN" /* GXT: A devastating 6-barrel machine gun that features Gatling-style rotating barrels. Very high rate of fire (2000 to 6000 rounds per minute). */;
 			break;
 		
 		case joaat("WEAPON_GRENADE"):
-			return "WTD_GNADE";
+			return "WTD_GNADE" /* GXT: Standard fragmentation grenade. Pull pin, throw, then find cover. Ideal for eliminating clustered assailants. */;
 			break;
 		
 		case joaat("WEAPON_SMOKEGRENADE"):
-			return "WTD_GNADE_SMK";
+			return "WTD_GNADE_SMK" /* GXT: Tear gas grenade, particularly effective at incapacitating multiple assailants. Sustained exposure can be lethal. */;
 			break;
 		
 		case joaat("WEAPON_STICKYBOMB"):
-			return "WTD_GNADE_STK";
+			return "WTD_GNADE_STK" /* GXT: A plastic explosive charge fitted with a remote detonator. Can be thrown and then detonated or attached to a vehicle then detonated. */;
 			break;
 		
 		case joaat("WEAPON_MOLOTOV"):
-			return "WTD_MOLOTOV";
+			return "WTD_MOLOTOV" /* GXT: Crude yet highly effective incendiary weapon. No happy hour with this cocktail. */;
 			break;
 		
 		case joaat("WEAPON_STUNGUN"):
-			return "WTD_STUN";
+			return "WTD_STUN" /* GXT: Fires a projectile that administers a voltage capable of temporarily stunning an assailant. Takes approximately 4 seconds to recharge after firing. */;
 			break;
 		
 		case joaat("WEAPON_PETROLCAN"):
-			return "WTD_PETROL";
+			return "WTD_PETROL" /* GXT: Leaves a trail of gasoline that can be ignited. */;
 			break;
 		
 		case joaat("WEAPON_DIGISCANNER"):
-			return "WTD_DIGI";
+			return "WTD_DIGI" /* GXT: Used to scan vehicle number plates. */;
 			break;
 		
 		case joaat("WEAPON_ELECTRIC_FENCE"):
@@ -13473,7 +13473,7 @@ char* func_137(int iParam0, bool bParam1)//Position - 0xD97F
 			break;
 		
 		case joaat("GADGET_PARACHUTE"):
-			return "WTD_PARA";
+			return "WTD_PARA" /* GXT: This nylon sports parachute features a ram-air parafoil design for increased control over direction and speed. */;
 			break;
 		
 		case joaat("AMMO_RPG"):
@@ -13497,31 +13497,31 @@ char* func_137(int iParam0, bool bParam1)//Position - 0xD97F
 			break;
 		
 		case joaat("WEAPON_KNIFE"):
-			return "WTD_KNIFE";
+			return "WTD_KNIFE" /* GXT: This carbon steel 7" bladed knife is dual edged with a serrated spine to provide improved stabbing and thrusting capabilities. */;
 			break;
 		
 		case joaat("WEAPON_NIGHTSTICK"):
-			return "WTD_NGTSTK";
+			return "WTD_NGTSTK" /* GXT: 24" polycarbonate side-handled nightstick. */;
 			break;
 		
 		case joaat("WEAPON_HAMMER"):
-			return "WTD_HAMMER";
+			return "WTD_HAMMER" /* GXT: A robust, multi-purpose hammer with wooden handle and curved claw, this old classic still nails the competition. */;
 			break;
 		
 		case joaat("WEAPON_BAT"):
-			return "WTD_BAT";
+			return "WTD_BAT" /* GXT: Aluminum baseball bat with leather grip. Lightweight yet powerful for all you big hitters out there. */;
 			break;
 		
 		case joaat("WEAPON_CROWBAR"):
-			return "WTD_CROWBAR";
+			return "WTD_CROWBAR" /* GXT: Heavy-duty crowbar forged from high quality, tempered steel for that extra leverage you need to get the job done. */;
 			break;
 		
 		case joaat("WEAPON_GOLFCLUB"):
-			return "WTD_GOLFCLUB";
+			return "WTD_GOLFCLUB" /* GXT: Standard length, mid iron golf club with rubber grip for a lethal short game. */;
 			break;
 		
 		case joaat("WEAPON_HATCHET"):
-			return "WTD_DLC_HATCHET";
+			return "WTD_DLC_HATCHET" /* GXT: Make kindling... of your pals with this easy to wield, easy to hide hatchet. */;
 			break;
 		
 		case joaat("WEAPON_RAMMED_BY_CAR"):
@@ -13533,73 +13533,73 @@ char* func_137(int iParam0, bool bParam1)//Position - 0xD97F
 			break;
 		
 		case joaat("WEAPON_ASSAULTSMG"):
-			return "WTD_SMG_ASL";
+			return "WTD_SMG_ASL" /* GXT: A high-capacity submachine gun that is both compact and lightweight. Holds up to 30 bullets in one magazine. */;
 			break;
 		
 		case joaat("WEAPON_BULLPUPSHOTGUN"):
-			return "WTD_SG_BLP";
+			return "WTD_SG_BLP" /* GXT: More than makes up for its slow, pump-action rate of fire with its range and spread.  Decimates anything in its projectile path. */;
 			break;
 		
 		case joaat("WEAPON_PISTOL50"):
-			return "WTD_PIST_50";
+			return "WTD_PIST_50" /* GXT: High-impact pistol that delivers immense power but with extremely strong recoil. Holds 9 rounds in magazine. */;
 			break;
 		
 		case joaat("WEAPON_VINTAGEPISTOL"):
-			return "WTD_VPISTOL";
+			return "WTD_VPISTOL" /* GXT: What you really need is a more recognizable gun. Stand out from the crowd at an armed robbery with this engraved pistol. Part of The "I'm Not a Hipster" Update. */;
 			break;
 		
 		case joaat("WEAPON_DAGGER"):
-			return "WTD_DAGGER";
+			return "WTD_DAGGER" /* GXT: You've been rocking the pirate-chic look for a while, but no vicious weapon to complete the look? Get this dagger with guarded hilt. Part of The "I'm Not a Hipster" Update. */;
 			break;
 		
 		case joaat("WEAPON_PROXMINE"):
-			return "WTD_PRXMINE";
+			return "WTD_PRXMINE" /* GXT: Leave a present for your friends with these motion sensor landmines. Short delay after activation. Part of the Festive Surprise. */;
 			break;
 		
 		case joaat("WEAPON_HOMINGLAUNCHER"):
-			return "WTD_HOMLNCH";
+			return "WTD_HOMLNCH" /* GXT: Infrared guided fire-and-forget missile launcher. For all your moving target needs. Part of the Festive Surprise. */;
 			break;
 		
 		case joaat("WEAPON_MACHETE"):
-			return "WTD_MACHETE";
+			return "WTD_MACHETE" /* GXT: America's West African arms trade isn't just about giving. Rediscover the simple life with this rusty cleaver. Part of Lowriders. */;
 			break;
 		
 		case joaat("WEAPON_MACHINEPISTOL"):
-			return "WTD_MCHPIST";
+			return "WTD_MCHPIST" /* GXT: This fully automatic is the snare drum to your twin-engine V8 bass: no drive-by sounds quite right without it. Part of Lowriders. */;
 			break;
 		
 		case joaat("WEAPON_FLASHLIGHT"):
-			return "WTD_FLASHLIGHT";
+			return "WTD_FLASHLIGHT" /* GXT: Intensify your fear of the dark with this short range, battery-powered light source. Handy for blunt force trauma. Part of The Halloween Surprise. */;
 			break;
 		
 		case joaat("WEAPON_DBSHOTGUN"):
-			return "WTD_DBSHGN";
+			return "WTD_DBSHGN" /* GXT: Do one thing, do it well. Who needs a high rate of fire when your first shot turns the other guy into a fine mist? Part of Lowriders: Custom Classics. */;
 			break;
 		
 		case joaat("WEAPON_COMPACTRIFLE"):
-			return "WTD_CMPRIFLE";
+			return "WTD_CMPRIFLE" /* GXT: Half the size, all the power, double the recoil: there's no riskier way to say "I'm compensating for something". Part of Lowriders: Custom Classics. */;
 			break;
 		
 		case joaat("WEAPON_SWITCHBLADE"):
-			return "WTD_SWBLADE";
+			return "WTD_SWBLADE" /* GXT: From your pocket to hilt-deep in the other guy's ribs in under a second: folding knives will never go out of style. Part of Executives and Other Criminals. */;
 			break;
 		
 		case joaat("WEAPON_REVOLVER"):
-			return "WTD_REVOLVER";
+			return "WTD_REVOLVER" /* GXT: A handgun with enough stopping power to drop a crazed rhino, and heavy enough to beat it to death if you're out of ammo. Part of Executives and Other Criminals. */;
 			break;
 		
 		case joaat("WEAPON_DOUBLEACTION"):
 			if (func_138(joaat("MPPLY_HEADSHOTCHLENGECOMPLETED")) || bParam1)
 			{
-				return "WTD_REV_DA";
+				return "WTD_REV_DA" /* GXT: Because sometimes revenge is a dish best served six times, in quick succession, right between the eyes. Part of The Doomsday Heist. */;
 			}
 			else if (NETWORK::NETWORK_HAS_SOCIAL_CLUB_ACCOUNT())
 			{
-				return "WTD_REV_DA_2";
+				return "WTD_REV_DA_2" /* GXT: Because sometimes revenge is a dish best served six times, in quick succession, right between the eyes. Get 50 headshots with the Double-Action Revolver to unlock a GTA$ reward and an exclusive variation of the revolver in Red Dead Redemption 2. */;
 			}
 			else
 			{
-				return "WTD_REV_DA_3";
+				return "WTD_REV_DA_3" /* GXT: Because sometimes revenge is a dish best served six times, in quick succession, right between the eyes. Sign up to the Rockstar Games Social Club to get access to the Double-Action Revolver headshot challenge. Beating this challenge will unlock a GTA$ reward and an exclusive variation of the weapon in Red Dead Redemption 2. Sign up now at socialclub.rockstargames.com and link your account. */;
 			}
 			break;
 		
@@ -13608,7 +13608,7 @@ char* func_137(int iParam0, bool bParam1)//Position - 0xD97F
 			{
 				if (WEAPON::HAS_PED_GOT_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_SPECIALCARBINE_MK2"), false))
 				{
-					return "WCD_MK1_LOCK";
+					return "WCD_MK1_LOCK" /* GXT: Revert to the stock variant to customize this weapon. */;
 				}
 			}
 			if (func_26(iParam0, &Var0) != -1)
@@ -13622,7 +13622,7 @@ char* func_137(int iParam0, bool bParam1)//Position - 0xD97F
 			{
 				if (WEAPON::HAS_PED_GOT_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_MARKSMANRIFLE_MK2"), false))
 				{
-					return "WCD_MK1_LOCK";
+					return "WCD_MK1_LOCK" /* GXT: Revert to the stock variant to customize this weapon. */;
 				}
 			}
 			if (func_26(iParam0, &Var1) != -1)
@@ -13636,7 +13636,7 @@ char* func_137(int iParam0, bool bParam1)//Position - 0xD97F
 			{
 				if (WEAPON::HAS_PED_GOT_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_BULLPUPRIFLE_MK2"), false))
 				{
-					return "WCD_MK1_LOCK";
+					return "WCD_MK1_LOCK" /* GXT: Revert to the stock variant to customize this weapon. */;
 				}
 			}
 			if (func_26(iParam0, &Var2) != -1)
@@ -13646,35 +13646,35 @@ char* func_137(int iParam0, bool bParam1)//Position - 0xD97F
 			break;
 		
 		case joaat("WEAPON_RAYPISTOL"):
-			return "WTD_RAYPISTOL";
+			return "WTD_RAYPISTOL" /* GXT: Republican Space Ranger Special, fresh from the galactic war on socialism: no ammo, no mag, just one brutal energy pulse after another. */;
 			break;
 		
 		case joaat("WEAPON_RAYCARBINE"):
-			return "WTD_RAYCARBINE";
+			return "WTD_RAYCARBINE" /* GXT: Republican Space Ranger Special. If you want to turn a little green man into little green goo, this is the only American way to do it. */;
 			break;
 		
 		case joaat("WEAPON_RAYMINIGUN"):
-			return "WTD_RAYMINIGUN";
+			return "WTD_RAYMINIGUN" /* GXT: Republican Space Ranger Special. GO AHEAD, SAY I'M COMPENSATING FOR SOMETHING. I DARE YOU. */;
 			break;
 		
 		case joaat("WEAPON_NAVYREVOLVER"):
-			return "WTD_REV_NV";
+			return "WTD_REV_NV" /* GXT: A true museum piece. You want to know how the West was won - slow reload speeds and a whole heap of bloodshed. */;
 			break;
 		
 		case joaat("WEAPON_CERAMICPISTOL"):
-			return "WTD_CERPST";
+			return "WTD_CERPST" /* GXT: Not your grandma's ceramics. Although this pint-sized pistol is small enough to fit into her purse and won't set off a metal detector. */;
 			break;
 		
 		case joaat("WEAPON_MILITARYRIFLE"):
-			return "WTD_MLTRYRFL";
+			return "WTD_MLTRYRFL" /* GXT: This immensely powerful assault rifle was designed for highly qualified, exceptionally skilled soldiers. Yes, you can buy it. */;
 			break;
 		
 		case joaat("WEAPON_GADGETPISTOL"):
-			return "WTD_GDGTPST";
+			return "WTD_GDGTPST" /* GXT: A deadly shot. Don't be precious. You won't scuff the titanium nitride finish. */;
 			break;
 		
 		case joaat("WEAPON_COMBATSHOTGUN"):
-			return "WTD_CMBSHGN";
+			return "WTD_CMBSHGN" /* GXT: There's only one semi-automatic shotgun with a fire rate that sets the LSFD alarm bells ringing, and you're looking at it. */;
 			break;
 		
 		default:
@@ -13684,7 +13684,7 @@ char* func_137(int iParam0, bool bParam1)//Position - 0xD97F
 			}
 			break;
 	}
-	return "WT_INVALID";
+	return "WT_INVALID" /* GXT: Invalid */;
 }
 
 int func_138(int iParam0)//Position - 0xDF72
@@ -13816,7 +13816,7 @@ void func_147(var uParam0, var uParam1)//Position - 0xE0F6
 	}
 	iVar2 = uParam1->f_5 + 1;
 	iVar3 = iLocal_64 + 1;
-	func_146(0, iVar2, iVar3, "HUD_PAGE", 0);
+	func_146(0, iVar2, iVar3, "HUD_PAGE" /* GXT: Page ~1~ of ~1~ */, 0);
 }
 
 int func_148(int iParam0)//Position - 0xE14D
@@ -14464,7 +14464,7 @@ void func_151()//Position - 0xEE17
 {
 	func_149();
 	func_152();
-	func_146(0, 1, iLocal_64 + 1, "HUD_PAGE", 0);
+	func_146(0, 1, iLocal_64 + 1, "HUD_PAGE" /* GXT: Page ~1~ of ~1~ */, 0);
 }
 
 void func_152()//Position - 0xEE36

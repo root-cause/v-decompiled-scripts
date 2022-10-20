@@ -4555,293 +4555,293 @@ char* func_112(int iParam0, int iParam1)//Position - 0x46C2
 	switch (iParam0)
 	{
 		case 7:
-			return "TAT_FM_REVENKIL_D";
+			return "TAT_FM_REVENKIL_D" /* GXT: Complete The Equalizer platinum Award. ~n~Get 50 Revenge kills in Deathmatch. */;
 			break;
 		
 		case 6:
-			return "TAT_FM_RECHOLD_d";
+			return "TAT_FM_RECHOLD_d" /* GXT: Complete The Record Holder platinum Award. ~n~Hold a World Record in a Rockstar Race. */;
 			break;
 		
 		case 8:
-			return "TAT_FM_KIL3RACE_D";
+			return "TAT_FM_KIL3RACE_D" /* GXT: Complete the Road Rage platinum Award. ~n~Kill at least 3 other racers in a GTA Race and win. */;
 			break;
 		
 		case 5:
-			return "TAT_FM_KILb_D";
+			return "TAT_FM_KILb_D" /* GXT: Complete The Bounty Hunter platinum Award. ~n~Kill 25 Bounty Targets. */;
 			break;
 		
 		case 0:
-			return "TAT_FM_HEADBANG_D";
+			return "TAT_FM_HEADBANG_D" /* GXT: Complete the Head Banger platinum Award. ~n~Get 500 player headshots. */;
 			break;
 		
 		case 12:
-			return "TAT_RACE50_D";
+			return "TAT_RACE50_D" /* GXT: Complete The Champion platinum Award. ~n~Win 50 Races. */;
 			break;
 		
 		case 2:
-			return "TAT_CLEAROUT_D";
+			return "TAT_CLEAROUT_D" /* GXT: Complete the Clear Out platinum Award. ~n~Clear 5 Gang Attacks in one day, in a single session. */;
 			break;
 		
 		case 9:
-			return "TAT_FM_RANK1_D";
+			return "TAT_FM_RANK1_D" /* GXT: Complete The Widow Maker silver Award. ~n~Get 250 player kills. */;
 			break;
 		
 		case 10:
-			return "TAT_FM_RANK2_D";
+			return "TAT_FM_RANK2_D" /* GXT: Complete The Widow Maker gold Award. ~n~Get 500 player kills. */;
 			break;
 		
 		case 11:
-			return "TAT_FM_RANK3_D";
+			return "TAT_FM_RANK3_D" /* GXT: Complete The Widow Maker platinum Award. ~n~Get 1000 player kills. */;
 			break;
 		
 		case 4:
-			return "TAT_FM_HUST_D";
+			return "TAT_FM_HUST_D" /* GXT: Complete The Hustler platinum Award. ~n~Earn $50,000 winnings from betting. */;
 			break;
 		
 		case 1:
-			return "TAT_FM_SLAY_D";
+			return "TAT_FM_SLAY_D" /* GXT: Complete The Slayer platinum Award. ~n~Win 50 Deathmatches. */;
 			break;
 		
 		case 54:
-			return "TAT_FM_EVERMODE1_D";
+			return "TAT_FM_EVERMODE1_D" /* GXT: Complete the All Rounder platinum Award. ~n~Win every game mode. */;
 			break;
 		
 		case 3:
-			return "TAT_FM_ARVANTAKE_D";
+			return "TAT_FM_ARVANTAKE_D" /* GXT: Complete the Full Metal Jacket platinum Award. ~n~Rob 25 Armored Trucks. */;
 			break;
 		
 		case 56:
-			return "TAT_CHEATER_D";
+			return "TAT_CHEATER_D" /* GXT: Complete The Car Bomber platinum Award. ~n~Kill 25 players using vehicle explosives. */;
 			break;
 		
 		case 13:
-			return "TAT_CRANKA_D";
+			return "TAT_CRANKA_D" /* GXT: Reached Crew Rank 26. */;
 			break;
 		
 		case 14:
-			return "TAT_CRANKB_D";
+			return "TAT_CRANKB_D" /* GXT: Reached Crew Rank 45. */;
 			break;
 		
 		case 15:
-			return "TAT_CRANKC_D";
+			return "TAT_CRANKC_D" /* GXT: Reached Crew Rank 18. */;
 			break;
 		
 		case 16:
-			return "TAT_CRANKD_D";
+			return "TAT_CRANKD_D" /* GXT: Reached Crew Rank 52. */;
 			break;
 		
 		case 89:
-			return "TAT_FM_ROCKSTAR_D";
+			return "TAT_FM_ROCKSTAR_D" /* GXT: Create a Race, Deathmatch, Capture, or Last Team Standing and get it verified by Rockstar Games. */;
 			break;
 		
 		case 87:
-			return "TAT_FM_REDSKULL_D";
+			return "TAT_FM_REDSKULL_D" /* GXT: Complete The Survivor platinum Award. ~n~Complete a Survival. */;
 			break;
 		
 		case 55:
-			return "TAT_FM_MODDED_D";
+			return "TAT_FM_MODDED_D" /* GXT: Complete the Suped Up platinum Award. ~n~Apply each type of mod to a single vehicle. */;
 			break;
 	}
 	switch (iParam0)
 	{
 		case 17:
-			return "TAT_RANK10_D";
+			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
 		
 		case 18:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 19:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 20:
-			return "TAT_RANK10_D";
+			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
 		
 		case 21:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 22:
-			return "TAT_RANK10_D";
+			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
 		
 		case 23:
-			return "TAT_RANK10_D";
+			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
 		
 		case 24:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 25:
-			return "TAT_TAT9U";
+			return "TAT_TAT9U" /* GXT: Get 500 kills in Deathmatch to unlock this item. */;
 			break;
 		
 		case 26:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 27:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 28:
-			return "TAT_RANK10_D";
+			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
 		
 		case 61:
-			return "TAT_RANK10_D";
+			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
 		
 		case 62:
-			return "TAT_RANK10_D";
+			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
 		
 		case 63:
-			return "TAT_RANK10_D";
+			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
 		
 		case 64:
-			return "TAT_RANK10_D";
+			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
 		
 		case 65:
-			return "TAT_TAT17U";
+			return "TAT_TAT17U" /* GXT: Get the most kills in a 4 player Survival to unlock this item. */;
 			break;
 		
 		case 29:
-			return "TAT_RANK10_D";
+			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
 		
 		case 30:
-			return "TAT_RANK10_D";
+			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
 		
 		case 31:
-			return "TAT_RANK10_D";
+			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
 		
 		case 66:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 32:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 33:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 34:
-			return "TAT_TAT24U";
+			return "TAT_TAT24U" /* GXT: Get 25 Private Dances to unlock this item. */;
 			break;
 		
 		case 35:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 36:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 37:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 38:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 39:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 40:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 67:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 41:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 68:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 42:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 43:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 44:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 45:
-			return "TAT_TAT37U";
+			return "TAT_TAT37U" /* GXT: Get 500 Pistol kills to unlock this item. */;
 			break;
 		
 		case 46:
-			return "TAT_TAT38U";
+			return "TAT_TAT38U" /* GXT: Earn 50 MVPs in Team Deathmatch to unlock this item. */;
 			break;
 		
 		case 47:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 48:
-			return "TAT_TAT40U";
+			return "TAT_TAT40U" /* GXT: Get 100 Sniper kills to unlock this item. */;
 			break;
 		
 		case 49:
-			return "TAT_TAT41U";
+			return "TAT_TAT41U" /* GXT: Earn a 10 plus killstreak in Deathmatch to unlock this item. */;
 			break;
 		
 		case 50:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 51:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 52:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 53:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 69:
-			return "TAT_RANK20_D";
+			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
 		
 		case 57:
-			return "TAT_HOLDUP1V_D";
+			return "TAT_HOLDUP1V_D" /* GXT: Complete the Armed Robber bronze Award. ~n~Hold up 5 stores. */;
 			break;
 		
 		case 58:
-			return "TAT_HOLDUP5V_D";
+			return "TAT_HOLDUP5V_D" /* GXT: Complete the Armed Robber silver Award. ~n~Hold up 10 stores. */;
 			break;
 		
 		case 59:
-			return "TAT_HOLDUP10V_D";
+			return "TAT_HOLDUP10V_D" /* GXT: Complete the Armed Robber gold Award. ~n~Hold up 15 stores. */;
 			break;
 		
 		case 60:
-			return "TAT_HOLDUP20V_D";
+			return "TAT_HOLDUP20V_D" /* GXT: Complete the Armed Robber platinum Award. ~n~Hold up 20 stores. */;
 			break;
 	}
 	return sVar0;
@@ -4861,169 +4861,169 @@ char* func_113(int iParam0, int iParam1)//Position - 0x4B6D
 	switch (iParam0)
 	{
 		case 0:
-			return "TAT_FM_HEADBANG";
+			return "TAT_FM_HEADBANG" /* GXT: Skull */;
 			break;
 		
 		case 2:
-			return "TAT_CLEAROUT";
+			return "TAT_CLEAROUT" /* GXT: Grim Reaper Smoking Gun */;
 			break;
 		
 		case 9:
-			return "TAT_FM_RANK1";
+			return "TAT_FM_RANK1" /* GXT: Blank Scroll */;
 			break;
 		
 		case 10:
-			return "TAT_FM_RANK2";
+			return "TAT_FM_RANK2" /* GXT: Embellished Scroll */;
 			break;
 		
 		case 11:
-			return "TAT_FM_RANK3";
+			return "TAT_FM_RANK3" /* GXT: Seven Deadly Sins */;
 			break;
 		
 		case 4:
-			return "TAT_FM_HUST";
+			return "TAT_FM_HUST" /* GXT: Hustler */;
 			break;
 		
 		case 1:
-			return "TAT_FM_SLAY";
+			return "TAT_FM_SLAY" /* GXT: Burning Heart */;
 			break;
 		
 		case 54:
-			return "TAT_FM_EVERMODE1";
+			return "TAT_FM_EVERMODE1" /* GXT: Angel */;
 			break;
 		
 		case 3:
-			return "TAT_FM_ARVANTAKE";
+			return "TAT_FM_ARVANTAKE" /* GXT: Blackjack */;
 			break;
 		
 		case 7:
-			return "TAT_FM_REVENKIL";
+			return "TAT_FM_REVENKIL" /* GXT: Dragon and Dagger */;
 			break;
 		
 		case 5:
-			return "TAT_FM_KILb";
+			return "TAT_FM_KILb" /* GXT: Skull and Sword */;
 			break;
 		
 		case 8:
-			return "TAT_FM_KIL3RACE";
+			return "TAT_FM_KIL3RACE" /* GXT: Ride or Die */;
 			break;
 		
 		case 6:
-			return "TAT_FM_RECHOLD";
+			return "TAT_FM_RECHOLD" /* GXT: Racing Blonde */;
 			break;
 		
 		case 12:
-			return "TAT_RACE50";
+			return "TAT_RACE50" /* GXT: Racing Brunette */;
 			break;
 		
 		case 13:
-			return "TAT_CRANKA";
+			return "TAT_CRANKA" /* GXT: Crew Rank 1 */;
 			break;
 		
 		case 14:
-			return "TAT_CRANKB";
+			return "TAT_CRANKB" /* GXT: Crew Rank 2 */;
 			break;
 		
 		case 15:
-			return "TAT_CRANKC";
+			return "TAT_CRANKC" /* GXT: Crew Rank 3 */;
 			break;
 		
 		case 16:
-			return "TAT_CRANKD";
+			return "TAT_CRANKD" /* GXT: Crew Rank 4 */;
 			break;
 		
 		case 87:
-			return "TAT_FM_REDSKULL";
+			return "TAT_FM_REDSKULL" /* GXT: Red Skull T-Shirt */;
 			break;
 		
 		case 88:
-			return "TAT_FM_BELLE";
+			return "TAT_FM_BELLE" /* GXT: Los Santos Belle T-Shirt */;
 			break;
 		
 		case 89:
-			return "TAT_FM_ROCKSTAR";
+			return "TAT_FM_ROCKSTAR" /* GXT: Rockstar T-Shirt */;
 			break;
 		
 		case 55:
-			return "TAT_FM_MODDED";
+			return "TAT_FM_MODDED" /* GXT: Los Santos Customs */;
 			break;
 		
 		case 17:
-			return "TAT_FM_TAT1";
+			return "TAT_FM_TAT1" /* GXT: Tattoo 1 */;
 			break;
 		
 		case 18:
-			return "TAT_FM_TAT2";
+			return "TAT_FM_TAT2" /* GXT: Tattoo 2 */;
 			break;
 		
 		case 19:
-			return "TAT_FM_TAT3";
+			return "TAT_FM_TAT3" /* GXT: Tattoo 3 */;
 			break;
 		
 		case 20:
-			return "TAT_FM_TAT4";
+			return "TAT_FM_TAT4" /* GXT: Tattoo 4 */;
 			break;
 		
 		case 21:
-			return "TAT_FM_TAT5";
+			return "TAT_FM_TAT5" /* GXT: Tattoo 5 */;
 			break;
 		
 		case 22:
-			return "TAT_FM_TAT6";
+			return "TAT_FM_TAT6" /* GXT: Tattoo 6 */;
 			break;
 		
 		case 56:
-			return "TAT_CHEATER";
+			return "TAT_CHEATER" /* GXT: Trust No One */;
 			break;
 	}
 	switch (iParam0)
 	{
 		case 23:
-			return "TAT_FM_TAT7";
+			return "TAT_FM_TAT7" /* GXT: Tattoo 7 */;
 			break;
 		
 		case 24:
-			return "TAT_FM_TAT8";
+			return "TAT_FM_TAT8" /* GXT: Tattoo 8 */;
 			break;
 		
 		case 25:
-			return "TAT_FM_TAT9";
+			return "TAT_FM_TAT9" /* GXT: Melting Skull */;
 			break;
 		
 		case 26:
-			return "TAT_FM_TAT10";
+			return "TAT_FM_TAT10" /* GXT: Tattoo 10 */;
 			break;
 		
 		case 27:
-			return "TAT_FM_TAT11";
+			return "TAT_FM_TAT11" /* GXT: Tattoo 11 */;
 			break;
 		
 		case 28:
-			return "TAT_FM_TAT12";
+			return "TAT_FM_TAT12" /* GXT: Tattoo 12 */;
 			break;
 		
 		case 61:
-			return "TAT_FM_TAT13";
+			return "TAT_FM_TAT13" /* GXT: Tattoo 13 */;
 			break;
 		
 		case 62:
-			return "TAT_FM_TAT14";
+			return "TAT_FM_TAT14" /* GXT: Tattoo 14 */;
 			break;
 		
 		case 63:
-			return "TAT_FM_TAT15";
+			return "TAT_FM_TAT15" /* GXT: Tattoo 1 */;
 			break;
 		
 		case 64:
-			return "TAT_FM_TAT16";
+			return "TAT_FM_TAT16" /* GXT: Tattoo 16 */;
 			break;
 		
 		case 65:
-			return "TAT_FM_TAT38";
+			return "TAT_FM_TAT38" /* GXT: The Wages of Sin */;
 			break;
 		
 		case 29:
-			return "TAT_FM_TAT18";
+			return "TAT_FM_TAT18" /* GXT: Tattoo 19 */;
 			break;
 		
 		case 30:
@@ -5031,127 +5031,127 @@ char* func_113(int iParam0, int iParam1)//Position - 0x4B6D
 			break;
 		
 		case 31:
-			return "TAT_FM_TAT20";
+			return "TAT_FM_TAT20" /* GXT: Tattoo 20 */;
 			break;
 		
 		case 66:
-			return "TAT_FM_TAT21";
+			return "TAT_FM_TAT21" /* GXT: Tattoo 21 */;
 			break;
 		
 		case 32:
-			return "TAT_FM_TAT22";
+			return "TAT_FM_TAT22" /* GXT: Tattoo 22 */;
 			break;
 		
 		case 33:
-			return "TAT_FM_TAT23";
+			return "TAT_FM_TAT23" /* GXT: Tattoo 23 */;
 			break;
 		
 		case 34:
-			return "TAT_FM_TAT24";
+			return "TAT_FM_TAT24" /* GXT: Hottie */;
 			break;
 		
 		case 35:
-			return "TAT_FM_TAT25";
+			return "TAT_FM_TAT25" /* GXT: Tattoo 25 */;
 			break;
 		
 		case 36:
-			return "TAT_FM_TAT26";
+			return "TAT_FM_TAT26" /* GXT: Tattoo 26 */;
 			break;
 		
 		case 37:
-			return "TAT_FM_TAT27";
+			return "TAT_FM_TAT27" /* GXT: Tattoo 27 */;
 			break;
 		
 		case 38:
-			return "TAT_FM_TAT28";
+			return "TAT_FM_TAT28" /* GXT: Tattoo 28 */;
 			break;
 		
 		case 39:
-			return "TAT_FM_TAT29";
+			return "TAT_FM_TAT29" /* GXT: Tattoo 29 */;
 			break;
 		
 		case 40:
-			return "TAT_FM_TAT30";
+			return "TAT_FM_TAT30" /* GXT: Tattoo 30 */;
 			break;
 		
 		case 67:
-			return "TAT_FM_TAT31";
+			return "TAT_FM_TAT31" /* GXT: Tattoo 31 */;
 			break;
 		
 		case 41:
-			return "TAT_FM_TAT32";
+			return "TAT_FM_TAT32" /* GXT: Tattoo 32 */;
 			break;
 		
 		case 68:
-			return "TAT_FM_TAT33";
+			return "TAT_FM_TAT33" /* GXT: Tattoo 33 */;
 			break;
 		
 		case 42:
-			return "TAT_FM_TAT34";
+			return "TAT_FM_TAT34" /* GXT: Tattoo 34 */;
 			break;
 		
 		case 43:
-			return "TAT_FM_TAT35";
+			return "TAT_FM_TAT35" /* GXT: Tattoo 35 */;
 			break;
 		
 		case 44:
-			return "TAT_FM_TAT36";
+			return "TAT_FM_TAT36" /* GXT: Tattoo 36 */;
 			break;
 		
 		case 45:
-			return "TAT_FM_TAT37";
+			return "TAT_FM_TAT37" /* GXT: Way Of The Gun */;
 			break;
 		
 		case 46:
-			return "TAT_FM_TAT41";
+			return "TAT_FM_TAT41" /* GXT: Grim Reaper */;
 			break;
 		
 		case 47:
-			return "TAT_FM_TAT39";
+			return "TAT_FM_TAT39" /* GXT: Tattoo 39 */;
 			break;
 		
 		case 48:
-			return "TAT_FM_TAT40";
+			return "TAT_FM_TAT40" /* GXT: Broken Skull */;
 			break;
 		
 		case 49:
-			return "TAT_FM_TAT17";
+			return "TAT_FM_TAT17" /* GXT: Flaming Skull */;
 			break;
 		
 		case 50:
-			return "TAT_FM_TAT42";
+			return "TAT_FM_TAT42" /* GXT: Tattoo 42 */;
 			break;
 		
 		case 51:
-			return "TAT_FM_TAT43";
+			return "TAT_FM_TAT43" /* GXT: Tattoo 43 */;
 			break;
 		
 		case 52:
-			return "TAT_FM_TAT44";
+			return "TAT_FM_TAT44" /* GXT: Tattoo 44 */;
 			break;
 		
 		case 53:
-			return "TAT_FM_TAT45";
+			return "TAT_FM_TAT45" /* GXT: Tattoo 45 */;
 			break;
 		
 		case 69:
-			return "TAT_FM_TAT46";
+			return "TAT_FM_TAT46" /* GXT: Tattoo 46 */;
 			break;
 		
 		case 57:
-			return "TAT_HOLDUP1V";
+			return "TAT_HOLDUP1V" /* GXT: Clown */;
 			break;
 		
 		case 58:
-			return "TAT_HOLDUP5V";
+			return "TAT_HOLDUP5V" /* GXT: Clown and Gun */;
 			break;
 		
 		case 59:
-			return "TAT_HOLDUP10V";
+			return "TAT_HOLDUP10V" /* GXT: Clown Dual Wield */;
 			break;
 		
 		case 60:
-			return "TAT_HOLDUP20V";
+			return "TAT_HOLDUP20V" /* GXT: Clown Dual Wield Dollars */;
 			break;
 	}
 	return sVar0;

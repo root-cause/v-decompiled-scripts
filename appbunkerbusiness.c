@@ -566,7 +566,7 @@ void func_11()//Position - 0x369
 					}
 					else
 					{
-						func_255("OR_RESUP_RES", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+						func_255("OR_RESUP_RES" /* GXT: You need to restart weapons manufacturing or research before you can acquire more supplies. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 					}
 					break;
 				
@@ -578,7 +578,7 @@ void func_11()//Position - 0x369
 					}
 					else
 					{
-						func_255("OR_RESEA_RES", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+						func_255("OR_RESEA_RES" /* GXT: You need to restart weapons manufacturing or research before you can manage your research unlocks. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 					}
 					break;
 				
@@ -661,7 +661,7 @@ void func_11()//Position - 0x369
 					}
 					else
 					{
-						func_255("DL_BUS_EMPTY", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+						func_255("DL_BUS_EMPTY" /* GXT: You have no weapons to sell. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 					}
 					break;
 				
@@ -811,34 +811,34 @@ void func_15()//Position - 0x7C8
 	{
 		if (func_32(PLAYER::PLAYER_ID(), iLocal_121) == 0)
 		{
-			func_255("UA_FTR_FAIL_NR1", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+			func_255("UA_FTR_FAIL_NR1" /* GXT: You have no active research projects to Fast-track, assign staff to research. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 		}
 		else if (iLocal_111 == 0)
 		{
-			func_255("UA_FTR_FAIL_NR2", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+			func_255("UA_FTR_FAIL_NR2" /* GXT: You have no active research projects to Fast-track, secure supplies to use for research. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 		}
 		else
 		{
-			func_255("UA_FTR_FAIL_NR", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+			func_255("UA_FTR_FAIL_NR" /* GXT: You have no active research projects to Fast-track. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 		}
 	}
 	else if (func_27(PLAYER::PLAYER_ID(), iLocal_121))
 	{
-		func_255("UA_FTR_FAIL_FUL", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255("UA_FTR_FAIL_FUL" /* GXT: You have already completed the current research project. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 	else if (func_20() || func_16() == -1)
 	{
-		func_255("UA_FTR_FAIL_NR", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255("UA_FTR_FAIL_NR" /* GXT: You have no active research projects to Fast-track. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 	else if (!MONEY::NETWORK_CAN_SPEND_MONEY(iVar0, false, true, false, -1, 0))
 	{
-		func_255("UA_FTR_FAIL_NM", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255("UA_FTR_FAIL_NM" /* GXT: You do not have enough money to Fast-track your current research project. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 	else
 	{
 		MISC::SET_BIT(&uLocal_109, 15);
 		iLocal_118 = iVar0;
-		func_255("UA_FTR_CONF", "WHOUSE_CONF", "WHOUSE_CANC", 0, 1, iVar0, 15, 0, 0);
+		func_255("UA_FTR_CONF" /* GXT: Are you sure you would like to pay $~1~ to Fast-track the current research project? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 1, iVar0, 15, 0, 0);
 	}
 }
 
@@ -1339,15 +1339,15 @@ void func_35()//Position - 0xF59
 {
 	if (func_32(PLAYER::PLAYER_ID(), iLocal_121) == 2)
 	{
-		func_255("UA_MODE_S_FAIL3", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255("UA_MODE_S_FAIL3" /* GXT: Your staff are already assigned to Manufacturing and Research. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 	else if (func_36())
 	{
-		func_255("UA_MODE_S_FAIL4", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255("UA_MODE_S_FAIL4" /* GXT: You can't assign staff to Research right now. All research projects are complete. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 	else
 	{
-		func_255("UA_MODE_S_CON_C", "WHOUSE_CONF", "WHOUSE_CANC", 0, 0, -1, 11, 0, 0);
+		func_255("UA_MODE_S_CON_C" /* GXT: Are you sure you would like to assign staff to both Manufacturing and Research? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 0, -1, 11, 0, 0);
 	}
 }
 
@@ -1731,15 +1731,15 @@ void func_43()//Position - 0x1616
 {
 	if (func_32(PLAYER::PLAYER_ID(), iLocal_121) == 1)
 	{
-		func_255("UA_MODE_S_FAIL2", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255("UA_MODE_S_FAIL2" /* GXT: Your staff are already assigned to Research. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 	else if (func_36())
 	{
-		func_255("UA_MODE_S_FAIL4", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255("UA_MODE_S_FAIL4" /* GXT: You can't assign staff to Research right now. All research projects are complete. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 	else
 	{
-		func_255("UA_MODE_S_CON_B", "WHOUSE_CONF", "WHOUSE_CANC", 0, 0, -1, 10, 0, 0);
+		func_255("UA_MODE_S_CON_B" /* GXT: Are you sure you would like to assign all staff to Research? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 0, -1, 10, 0, 0);
 	}
 }
 
@@ -1747,11 +1747,11 @@ void func_44()//Position - 0x1671
 {
 	if (func_32(PLAYER::PLAYER_ID(), iLocal_121) == 0)
 	{
-		func_255("UA_MODE_S_FAIL1", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255("UA_MODE_S_FAIL1" /* GXT: Your staff are already assigned to Manufacturing. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 	else
 	{
-		func_255("UA_MODE_S_CON_A", "WHOUSE_CONF", "WHOUSE_CANC", 0, 0, -1, 9, 0, 0);
+		func_255("UA_MODE_S_CON_A" /* GXT: Are you sure you would like to assign all staff to Manufacturing? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 0, -1, 9, 0, 0);
 	}
 }
 
@@ -1770,23 +1770,23 @@ void func_45(int iParam0)//Position - 0x16B2
 	}
 	if (Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_267.f_191[5 /*13*/].f_4 <= 0)
 	{
-		func_255("OR_UPGR_NS", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255("OR_UPGR_NS" /* GXT: You need to set up this business before you can purchase any upgrades. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 	else if (func_52(iParam0, iLocal_121))
 	{
-		func_255("OR_UPGR_NA", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255("OR_UPGR_NA" /* GXT: This upgrade is currently unavailable. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 	else if (func_51(PLAYER::PLAYER_ID(), iLocal_121, iParam0))
 	{
-		func_255("OR_UPGR_OWN", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255("OR_UPGR_OWN" /* GXT: You already own this upgrade. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 	else if (MONEY::NETWORK_CAN_SPEND_MONEY(func_46(iParam0, iLocal_121), false, true, false, -1, 0))
 	{
-		func_255("OR_BUY_UPGR", "WHOUSE_CONF", "WHOUSE_CANC", 0, 1, -1, iVar0, 0, 0);
+		func_255("OR_BUY_UPGR" /* GXT: Are you sure you want to purchase this upgrade? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 1, -1, iVar0, 0, 0);
 	}
 	else
 	{
-		func_255("OR_UPG_NO_MONEY", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255("OR_UPG_NO_MONEY" /* GXT: You do not have enough money to purchase this upgrade. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 }
 
@@ -2253,19 +2253,19 @@ void func_53()//Position - 0x1F3E
 {
 	if (Global_1640666[5] >= Global_262145.f_18433)
 	{
-		func_255("OR_MIS_NA_B", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255("OR_MIS_NA_B" /* GXT: No supplies are required at this time. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 	else if (func_236(5))
 	{
-		func_255("OR_MIS_NA_C", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255("OR_MIS_NA_C" /* GXT: A shipment of supplies is already on its way. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 	else if (!func_56(225))
 	{
-		func_255(func_55(), "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255(func_55(), "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 	else
 	{
-		func_255("BU_STEAL_SUP", "WHOUSE_CONF", "WHOUSE_CANC", 0, 1, -1, 3, 0, 0);
+		func_255("BU_STEAL_SUP" /* GXT: Are you sure you want to steal Supplies for your business? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 1, -1, 3, 0, 0);
 	}
 	func_54();
 }
@@ -2291,71 +2291,71 @@ int func_56(int iParam0)//Position - 0x1FD9
 		{
 			if (func_62(PLAYER::PLAYER_ID()))
 			{
-				func_61("UA_ML_F_GOON1");
+				func_61("UA_ML_F_GOON1" /* GXT: Can't launch this mission whilst one of your Club Members is active in a Freemode Event. */);
 			}
 			else if (func_60(PLAYER::PLAYER_ID()))
 			{
-				func_61("UA_ML_F_GOON2");
+				func_61("UA_ML_F_GOON2" /* GXT: Can't launch this mission whilst one of your Associates is active in a Freemode Event. */);
 			}
 			else
 			{
-				func_61("UA_ML_F_GOON3");
+				func_61("UA_ML_F_GOON3" /* GXT: Can't launch this mission whilst one of your Bodyguards is active in a Freemode Event. */);
 			}
 		}
 		else if (iVar0 == 15)
 		{
 			if (func_62(PLAYER::PLAYER_ID()))
 			{
-				func_61("GENERAL_MLF_G1");
+				func_61("GENERAL_MLF_G1" /* GXT: Can't launch this mission whilst one of your Club Members is currently at one with the animals. */);
 			}
 			else if (func_60(PLAYER::PLAYER_ID()))
 			{
-				func_61("GENERAL_MLF_G2");
+				func_61("GENERAL_MLF_G2" /* GXT: Can't launch this mission whilst one of your Associates is currently at one with the animals. */);
 			}
 			else
 			{
-				func_61("GENERAL_MLF_G3");
+				func_61("GENERAL_MLF_G3" /* GXT: Can't launch this mission whilst one of your Bodyguards is currently at one with the animals. */);
 			}
 		}
 		else if (iVar0 == 16)
 		{
 			if (func_62(PLAYER::PLAYER_ID()))
 			{
-				func_61("GENERAL_MLF_G4");
+				func_61("GENERAL_MLF_G4" /* GXT: Can't launch this mission whilst one of your Club Members is playing a casino game. */);
 			}
 			else if (func_60(PLAYER::PLAYER_ID()))
 			{
-				func_61("GENERAL_MLF_G5");
+				func_61("GENERAL_MLF_G5" /* GXT: Can't launch this mission whilst one of your Associates is playing a casino game. */);
 			}
 			else
 			{
-				func_61("GENERAL_MLF_G6");
+				func_61("GENERAL_MLF_G6" /* GXT: Can't launch this mission whilst one of your Bodyguards is playing a casino game. */);
 			}
 		}
 		else
 		{
-			func_61("BKR_TF_R6");
+			func_61("BKR_TF_R6" /* GXT: Unable to launch the mission. */);
 		}
 		return 0;
 	}
 	if (!func_59(PLAYER::PLAYER_ID()))
 	{
-		func_61("DBG_BUN_NB");
+		func_61("DBG_BUN_NB" /* GXT: You can only launch this mission as the boss of a gang. */);
 		return 0;
 	}
 	if (func_57(PLAYER::PLAYER_ID()))
 	{
-		func_61("BKR_TF_R3");
+		func_61("BKR_TF_R3" /* GXT: Unable to launch a mission whilst you're on another job. */);
 		return 0;
 	}
 	if (NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 	{
-		func_61("BKR_TF_R3");
+		func_61("BKR_TF_R3" /* GXT: Unable to launch a mission whilst you're on another job. */);
 		return 0;
 	}
 	if (Global_1640649[5] != 0)
 	{
-		func_61("BKR_TF_R6");
+		func_61("BKR_TF_R6" /* GXT: Unable to launch the mission. */);
 		return 0;
 	}
 	return 1;
@@ -11685,28 +11685,28 @@ void func_237()//Position - 0xA40B
 	iVar1 = func_238(0, iVar0, 1);
 	if (Global_262145.f_21598)
 	{
-		func_255("OR_BS_PAY_NA", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255("OR_BS_PAY_NA" /* GXT: No suppliers are available at this time. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 	else if (func_259())
 	{
-		func_255("OR_RESUP_RES", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255("OR_RESUP_RES" /* GXT: You need to restart weapons manufacturing or research before you can acquire more supplies. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 	else if (Global_1640666[5] >= Global_262145.f_18433)
 	{
-		func_255("OR_MIS_NA_B", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255("OR_MIS_NA_B" /* GXT: No supplies are required at this time. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 	else if (func_236(5))
 	{
-		func_255("OR_MIS_NA_C", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255("OR_MIS_NA_C" /* GXT: A shipment of supplies is already on its way. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 	else if (!MONEY::NETWORK_CAN_SPEND_MONEY(iVar1, false, true, false, -1, 0))
 	{
-		func_255("OR_BS_PAY_NM", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255("OR_BS_PAY_NM" /* GXT: You do not have enough money to purchase supplies. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 	else
 	{
 		iLocal_119 = iVar1;
-		func_255("OR_BUY_SUP", "WHOUSE_CONF", "WHOUSE_CANC", 0, 1, iVar1, 8, 0, 0);
+		func_255("OR_BUY_SUP" /* GXT: Are you sure you want to buy Supplies for $~1~? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 1, iVar1, 8, 0, 0);
 	}
 }
 
@@ -11758,15 +11758,15 @@ void func_240()//Position - 0xA577
 {
 	if (func_244(iLocal_121))
 	{
-		func_255("DL_BUS_EMPTY", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255("DL_BUS_EMPTY" /* GXT: You have no weapons to sell. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 	else if (!func_56(226))
 	{
-		func_255(func_55(), "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255(func_55(), "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 	else if (func_12(iLocal_121, PLAYER::PLAYER_ID()) > 25)
 	{
-		func_255("OR_SELL_GDB", "OR_OVRLY_OK", "", 0, 1, -1, 5, 0, 0);
+		func_255("OR_SELL_GDB" /* GXT: Larger sales may require multiple vehicles. Ensure you have additional Members prior to starting this mission. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 0, 1, -1, 5, 0, 0);
 	}
 	else
 	{
@@ -11774,14 +11774,14 @@ void func_240()//Position - 0xA577
 		{
 			if (!func_39(34711, -1))
 			{
-				if (!func_243("APP_SG_HELP", 0, 0))
+				if (!func_243("APP_SG_HELP" /* GXT: You are currently in a private session. Sales made in populated public sessions with rival players will earn an additional "High Demand" cash bonus on your sale value. */, 0, 0))
 				{
-					func_242("APP_SG_HELP", -1);
+					func_242("APP_SG_HELP" /* GXT: You are currently in a private session. Sales made in populated public sessions with rival players will earn an additional "High Demand" cash bonus on your sale value. */, -1);
 				}
 				func_241(34711, 1, -1);
 			}
 		}
-		func_255("UA_SELL_GD", "WHOUSE_CONF", "WHOUSE_CANC", 0, 1, -1, 2, 0, 0);
+		func_255("UA_SELL_GD" /* GXT: Are you sure you want to sell your stock of Weapons? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 1, -1, 2, 0, 0);
 	}
 	func_54();
 }
@@ -11865,34 +11865,34 @@ void func_248()//Position - 0xA736
 {
 	if (Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_267.f_191[5 /*13*/].f_4 <= 0)
 	{
-		func_255("OR_BS_NOT_SETUP", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255("OR_BS_NOT_SETUP" /* GXT: You need to set up this business before production can begin. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 	else if (Global_1640666[5] <= 0)
 	{
 		if (func_32(PLAYER::PLAYER_ID(), iLocal_121) == 0)
 		{
-			func_255("UA_START_PRD_N1", "WHOUSE_CONF", "WHOUSE_CANC", 0, 1, -1, 7, 0, 0);
+			func_255("UA_START_PRD_N1" /* GXT: No weapons can be manufactured until you acquire the necessary supplies. Are you sure you want to restart the business? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 1, -1, 7, 0, 0);
 		}
 		else if (func_32(PLAYER::PLAYER_ID(), iLocal_121) == 1)
 		{
-			func_255("UA_START_PRD_N2", "WHOUSE_CONF", "WHOUSE_CANC", 0, 1, -1, 7, 0, 0);
+			func_255("UA_START_PRD_N2" /* GXT: Weapons research cannot continue until you acquire the necessary supplies. Are you sure you want to restart the business? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 1, -1, 7, 0, 0);
 		}
 		else
 		{
-			func_255("UA_START_PRD_N3", "WHOUSE_CONF", "WHOUSE_CANC", 0, 1, -1, 7, 0, 0);
+			func_255("UA_START_PRD_N3" /* GXT: Weapons research and manufacturing cannot continue until you acquire the necessary supplies. Are you sure you want to restart the business? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 1, -1, 7, 0, 0);
 		}
 	}
 	else if (func_32(PLAYER::PLAYER_ID(), iLocal_121) == 0)
 	{
-		func_255("UA_START_PROD1", "WHOUSE_CONF", "WHOUSE_CANC", 0, 1, -1, 7, 0, 0);
+		func_255("UA_START_PROD1" /* GXT: Are you sure you want to restart manufacturing weapons? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 1, -1, 7, 0, 0);
 	}
 	else if (func_32(PLAYER::PLAYER_ID(), iLocal_121) == 1)
 	{
-		func_255("UA_START_PROD2", "WHOUSE_CONF", "WHOUSE_CANC", 0, 1, -1, 7, 0, 0);
+		func_255("UA_START_PROD2" /* GXT: Are you sure you want to restart weapons research? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 1, -1, 7, 0, 0);
 	}
 	else
 	{
-		func_255("UA_START_PROD3", "WHOUSE_CONF", "WHOUSE_CANC", 0, 1, -1, 7, 0, 0);
+		func_255("UA_START_PROD3" /* GXT: Are you sure you want to restart weapons research and manufacturing? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 1, -1, 7, 0, 0);
 	}
 }
 
@@ -11900,15 +11900,15 @@ void func_249()//Position - 0xA837
 {
 	if (func_250(PLAYER::PLAYER_ID()) == 225 || func_236(5))
 	{
-		func_255("UA_CANT_SDOWN", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255("UA_CANT_SDOWN" /* GXT: You can't shut down business operations whilst acquiring supplies. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 	else if (func_250(PLAYER::PLAYER_ID()) == 227)
 	{
-		func_255("UA_CANT_SDOWN1", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255("UA_CANT_SDOWN1" /* GXT: You can't shut down business operations whilst it is under attack. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 	else
 	{
-		func_255("OR_STOP_PRODG", "WHOUSE_CONF", "WHOUSE_CANC", 0, 1, -1, 6, 0, 0);
+		func_255("OR_STOP_PRODG" /* GXT: All stock and research progress will be lost. Are you sure you want to shut down the business? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 1, -1, 6, 0, 0);
 	}
 }
 
@@ -11934,7 +11934,7 @@ void func_252()//Position - 0xA903
 {
 	if (Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_267.f_191[5 /*13*/].f_4 <= 0)
 	{
-		func_255("OR_UPGR_NS", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+		func_255("OR_UPGR_NS" /* GXT: You need to set up this business before you can purchase any upgrades. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
 }
 
@@ -12022,11 +12022,11 @@ void func_260()//Position - 0xAA8B
 {
 	if (!func_56(225))
 	{
-		func_255(func_55(), "OR_OVRLY_OK", "", 1, 0, -1, 4, 0, 0);
+		func_255(func_55(), "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 4, 0, 0);
 	}
 	else
 	{
-		func_255("BU_BUS_SETUP", "WHOUSE_CONF", "WHOUSE_CANC", 0, 1, -1, 1, 0, 0);
+		func_255("BU_BUS_SETUP" /* GXT: Are you sure you want to set up this business? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 1, -1, 1, 0, 0);
 	}
 	func_54();
 }
@@ -12048,7 +12048,7 @@ void func_261()//Position - 0xAACB
 			}
 			else
 			{
-				func_255(func_55(), "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+				func_255(func_55(), "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 			}
 			break;
 		
@@ -12061,7 +12061,7 @@ void func_261()//Position - 0xAACB
 			}
 			else
 			{
-				func_255(func_55(), "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+				func_255(func_55(), "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 			}
 			break;
 		
@@ -12076,7 +12076,7 @@ void func_261()//Position - 0xAACB
 			}
 			else
 			{
-				func_255(func_55(), "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+				func_255(func_55(), "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 			}
 			break;
 		
@@ -12085,7 +12085,7 @@ void func_261()//Position - 0xAACB
 		
 		case 5:
 			func_480();
-			func_255("UA_SELL_GD", "WHOUSE_CONF", "WHOUSE_CANC", 0, 1, -1, 2, 0, 0);
+			func_255("UA_SELL_GD" /* GXT: Are you sure you want to sell your stock of Weapons? */, "WHOUSE_CONF" /* GXT: Confirm */, "WHOUSE_CANC" /* GXT: Cancel */, 0, 1, -1, 2, 0, 0);
 			return;
 			break;
 		
@@ -12096,22 +12096,22 @@ void func_261()//Position - 0xAACB
 			{
 				func_447();
 				func_445(5);
-				func_255("OR_RSP_PAID", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+				func_255("OR_RSP_PAID" /* GXT: Supplies are on their way to your business. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 				func_435(0);
 				HUD::CLEAR_HELP(true);
 				if (func_244(iLocal_121))
 				{
-					func_242("UA_PSUP_OTW0", 8000);
+					func_242("UA_PSUP_OTW0" /* GXT: Supplies are on route to the Bunker and will arrive shortly. Manufacturing will restart once they arrive. */, 8000);
 				}
 				else
 				{
-					func_242("UA_PSUP_OTW1", 8000);
+					func_242("UA_PSUP_OTW1" /* GXT: Supplies are on route to the Bunker and will arrive shortly. Manufacturing will be suspended if you run out in the meantime but will continue once the supplies arrive. */, 8000);
 				}
 			}
 			else
 			{
 				func_447();
-				func_255("UA_PSUP_FAIL", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+				func_255("UA_PSUP_FAIL" /* GXT: Unable to purchase supplies at this time. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 				return;
 			}
 			break;
@@ -12212,7 +12212,7 @@ void func_261()//Position - 0xAACB
 			if (!MONEY::NETWORK_CAN_SPEND_MONEY(func_34(iLocal_113, 0), false, true, false, -1, 0))
 			{
 				func_480();
-				func_255("UA_FTR_FAIL_NM", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+				func_255("UA_FTR_FAIL_NM" /* GXT: You do not have enough money to Fast-track your current research project. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 				return;
 			}
 			else
@@ -12223,7 +12223,7 @@ void func_261()//Position - 0xAACB
 				{
 					Global_2787732 = -1;
 					func_480();
-					func_255("UA_TRANS_FAIL", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
+					func_255("UA_TRANS_FAIL" /* GXT: Unable to Fast-track research at this time. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 					return;
 				}
 				Global_2787732 = -1;
@@ -13266,157 +13266,157 @@ char* func_283(int iParam0)//Position - 0xBF83
 	switch (iParam0)
 	{
 		case 0:
-			return "WT_APC_SAM";
+			return "WT_APC_SAM" /* GXT: APC SAM Battery */;
 		
 		case 1:
-			return "WT_BALLISTIC";
+			return "WT_BALLISTIC" /* GXT: Ballistic Equipment */;
 		
 		case 2:
-			return "WT_HT_QUAD_CAN";
+			return "WT_HT_QUAD_CAN" /* GXT: Half-track Quad 20mm Autocannon */;
 		
 		case 3:
-			return "WT_T_DUAL_MINI";
+			return "WT_T_DUAL_MINI" /* GXT: Tampa Dual Remote 7.62mm Minigun */;
 		
 		case 4:
-			return "WT_T_REAR_MORT";
+			return "WT_T_REAR_MORT" /* GXT: Tampa Rear-Firing Mortar */;
 		
 		case 5:
-			return "WT_T_FNT_MISSL";
+			return "WT_T_FNT_MISSL" /* GXT: Tampa Front Missile Launcher */;
 		
 		case 6:
-			return "WT_T_HVY_CHSS";
+			return "WT_T_HVY_CHSS" /* GXT: Tampa Heavy Chassis Armor */;
 		
 		case 7:
-			return "WT_D_GRND_LNCH";
+			return "WT_D_GRND_LNCH" /* GXT: Dune FAV 40mm Grenade Launcher */;
 		
 		case 8:
-			return "WT_D_MINI";
+			return "WT_D_MINI" /* GXT: Dune FAV 7.62mm Minigun */;
 		
 		case 9:
-			return "WT_I_CAL_GUN";
+			return "WT_I_CAL_GUN" /* GXT: Insurgent Pick-Up .50 Cal Minigun */;
 		
 		case 10:
-			return "WT_I_LVL3_ARMOR";
+			return "WT_I_LVL3_ARMOR" /* GXT: Insurgent Pick-Up Heavy Armor Plating */;
 		
 		case 11:
-			return "WT_TEC_MINI";
+			return "WT_TEC_MINI" /* GXT: Technical 7.62mm Minigun */;
 		
 		case 12:
-			return "WT_TEC_RAM_BAR";
+			return "WT_TEC_RAM_BAR" /* GXT: Technical Ram-bar mod */;
 		
 		case 13:
-			return "WT_TEC_BRT_BAR";
+			return "WT_TEC_BRT_BAR" /* GXT: Technical Brute-bar mod */;
 		
 		case 14:
-			return "WT_TEC_HVY_CHSS";
+			return "WT_TEC_HVY_CHSS" /* GXT: Technical Heavy Chassis Armor */;
 		
 		case 15:
-			return "WT_OPP_RKETS";
+			return "WT_OPP_RKETS" /* GXT: Oppressor Missiles */;
 		
 		case 16:
-			return "WT_LIV_FRAC";
+			return "WT_LIV_FRAC" /* GXT: Fractal Livery Set */;
 		
 		case 17:
-			return "WT_LIV_DIG";
+			return "WT_LIV_DIG" /* GXT: Digital Livery Set */;
 		
 		case 18:
-			return "WT_LIV_GEO";
+			return "WT_LIV_GEO" /* GXT: Geometric Livery Set */;
 		
 		case 19:
-			return "WT_LIV_NAT";
+			return "WT_LIV_NAT" /* GXT: Nature Reserve Livery */;
 		
 		case 20:
-			return "WT_LIV_NAV";
+			return "WT_LIV_NAV" /* GXT: Naval Battle Livery */;
 		
 		case 21:
-			return "WT_AA_FLAK";
+			return "WT_AA_FLAK" /* GXT: Anti-Aircraft Trailer Dual 20mm Flak */;
 		
 		case 22:
-			return "WT_AA_MISSL";
+			return "WT_AA_MISSL" /* GXT: Anti-Aircraft Trailer Homing Missile Battery */;
 		
 		case 23:
-			return "WT_MOC_TURR";
+			return "WT_MOC_TURR" /* GXT: Mobile Operations Center Rear Turrets */;
 		
 		case 24:
-			return "WT_AMMO_INC";
+			return "WT_AMMO_INC" /* GXT: Incendiary Rounds */;
 		
 		case 25:
-			return "WT_AMMO_HP";
+			return "WT_AMMO_HP" /* GXT: Hollow Point Rounds */;
 		
 		case 26:
-			return "WT_AMMO_AP";
+			return "WT_AMMO_AP" /* GXT: Armor Piercing Rounds */;
 		
 		case 27:
-			return "WT_AMMO_FMJ";
+			return "WT_AMMO_FMJ" /* GXT: Full Metal Jacket Rounds */;
 		
 		case 28:
-			return "WT_AMMO_EX";
+			return "WT_AMMO_EX" /* GXT: Explosive Rounds */;
 		
 		case 29:
-			return "WT_PI_RAIL";
+			return "WT_PI_RAIL" /* GXT: Pistol Mk II Mounted Scope */;
 		
 		case 30:
-			return "WT_PI_COMP";
+			return "WT_PI_COMP" /* GXT: Pistol Mk II Compensator */;
 		
 		case 31:
-			return "WT_SMG_HOLO";
+			return "WT_SMG_HOLO" /* GXT: SMG Mk II Holographic Sight */;
 		
 		case 32:
-			return "WT_SMG_BARREL";
+			return "WT_SMG_BARREL" /* GXT: SMG Mk II Heavy Barrel */;
 		
 		case 33:
-			return "WT_HS_NV";
+			return "WT_HS_NV" /* GXT: Heavy Sniper Mk II Night Vision Scope */;
 		
 		case 34:
-			return "WT_HS_THERMAL";
+			return "WT_HS_THERMAL" /* GXT: Heavy Sniper Mk II Thermal Scope */;
 		
 		case 35:
-			return "WT_HS_BARREL";
+			return "WT_HS_BARREL" /* GXT: Heavy Sniper Mk II Heavy Barrel */;
 		
 		case 36:
-			return "WT_CMG_HOLO";
+			return "WT_CMG_HOLO" /* GXT: Combat MG Mk II Holographic Sight */;
 		
 		case 37:
-			return "WT_CMG_BARREL";
+			return "WT_CMG_BARREL" /* GXT: Combat MG Mk II Heavy Barrel */;
 		
 		case 38:
-			return "WT_AR_HOLO";
+			return "WT_AR_HOLO" /* GXT: Assault Rifle Mk II Holographic Sight */;
 		
 		case 39:
-			return "WT_AR_BARREL";
+			return "WT_AR_BARREL" /* GXT: Assault Rifle Mk II Heavy Barrel */;
 		
 		case 40:
-			return "WT_CR_HOLO";
+			return "WT_CR_HOLO" /* GXT: Carbine Rifle Mk II Holographic Sight */;
 		
 		case 41:
-			return "WT_CR_BARREL";
+			return "WT_CR_BARREL" /* GXT: Carbine Rifle Mk II Heavy Barrel */;
 		
 		case 42:
-			return "WT_PROX_M";
+			return "WT_PROX_M" /* GXT: Proximity Mines */;
 		
 		case 43:
-			return "WT_WLIV_TIG";
+			return "WT_WLIV_TIG" /* GXT: Brushstroke Camo Mk II Weapon Livery */;
 		
 		case 44:
-			return "WT_WLIV_SKU";
+			return "WT_WLIV_SKU" /* GXT: Skull Mk II Weapon Livery */;
 		
 		case 45:
-			return "WT_WLIV_SSN";
+			return "WT_WLIV_SSN" /* GXT: Sessanta Nove Mk II Weapon Livery */;
 		
 		case 46:
-			return "WT_WLIV_PRS";
+			return "WT_WLIV_PRS" /* GXT: Perseus Mk II Weapon Livery */;
 		
 		case 47:
-			return "WT_WLIV_LEO";
+			return "WT_WLIV_LEO" /* GXT: Leopard Mk II Weapon Livery */;
 		
 		case 48:
-			return "WT_WLIV_ZEB";
+			return "WT_WLIV_ZEB" /* GXT: Zebra Mk II Weapon Livery */;
 		
 		case 49:
-			return "WT_WLIV_GEO";
+			return "WT_WLIV_GEO" /* GXT: Geometric Mk II Weapon Livery */;
 		
 		case 50:
-			return "WT_WLIV_KBM";
+			return "WT_WLIV_KBM" /* GXT: Boom! Mk II Weapon Livery */;
 		
 		default:
 	}
@@ -14607,127 +14607,127 @@ char* func_313(int iParam0)//Position - 0xDA75
 	switch (iParam0)
 	{
 		case 2:
-			sVar0 = "MP_BWH_WEED_1";
+			sVar0 = "MP_BWH_WEED_1" /* GXT: Mount Chiliad Weed Farm */;
 			break;
 		
 		case 1:
-			sVar0 = "MP_BWH_METH_1";
+			sVar0 = "MP_BWH_METH_1" /* GXT: Paleto Bay Meth Lab */;
 			break;
 		
 		case 3:
-			sVar0 = "MP_BWH_CRACK_1";
+			sVar0 = "MP_BWH_CRACK_1" /* GXT: Paleto Bay Cocaine Lockup */;
 			break;
 		
 		case 5:
-			sVar0 = "MP_BWH_FAKEID_1";
+			sVar0 = "MP_BWH_FAKEID_1" /* GXT: Paleto Bay Forgery Office */;
 			break;
 		
 		case 4:
-			sVar0 = "MP_BWH_CASH_1";
+			sVar0 = "MP_BWH_CASH_1" /* GXT: Paleto Bay Counterfeit Cash Factory */;
 			break;
 		
 		case 7:
-			sVar0 = "MP_BWH_WEED_2";
+			sVar0 = "MP_BWH_WEED_2" /* GXT: Downtown Vinewood Weed Farm */;
 			break;
 		
 		case 6:
-			sVar0 = "MP_BWH_METH_2";
+			sVar0 = "MP_BWH_METH_2" /* GXT: El Burro Heights Meth Lab */;
 			break;
 		
 		case 8:
-			sVar0 = "MP_BWH_CRACK_2";
+			sVar0 = "MP_BWH_CRACK_2" /* GXT: Morningwood Cocaine Lockup */;
 			break;
 		
 		case 10:
-			sVar0 = "MP_BWH_FAKEID_2";
+			sVar0 = "MP_BWH_FAKEID_2" /* GXT: Textile City Forgery Office */;
 			break;
 		
 		case 9:
-			sVar0 = "MP_BWH_CASH_2";
+			sVar0 = "MP_BWH_CASH_2" /* GXT: Vespucci Canals Counterfeit Cash Factory */;
 			break;
 		
 		case 12:
-			sVar0 = "MP_BWH_WEED_3";
+			sVar0 = "MP_BWH_WEED_3" /* GXT: San Chianski Weed Farm */;
 			break;
 		
 		case 11:
-			sVar0 = "MP_BWH_METH_3";
+			sVar0 = "MP_BWH_METH_3" /* GXT: Senora Desert Meth Lab */;
 			break;
 		
 		case 13:
-			sVar0 = "MP_BWH_CRACK_3";
+			sVar0 = "MP_BWH_CRACK_3" /* GXT: Zancudo River Cocaine Lockup */;
 			break;
 		
 		case 15:
-			sVar0 = "MP_BWH_FAKEID_3";
+			sVar0 = "MP_BWH_FAKEID_3" /* GXT: Grapeseed Forgery Office */;
 			break;
 		
 		case 14:
-			sVar0 = "MP_BWH_CASH_3";
+			sVar0 = "MP_BWH_CASH_3" /* GXT: Senora Desert Counterfeit Cash Factory */;
 			break;
 		
 		case 17:
-			sVar0 = "MP_BWH_WEED_4";
+			sVar0 = "MP_BWH_WEED_4" /* GXT: Elysian Island Weed Farm */;
 			break;
 		
 		case 16:
-			sVar0 = "MP_BWH_METH_4";
+			sVar0 = "MP_BWH_METH_4" /* GXT: Terminal Meth Lab */;
 			break;
 		
 		case 18:
-			sVar0 = "MP_BWH_CRACK_4";
+			sVar0 = "MP_BWH_CRACK_4" /* GXT: Elysian Island Cocaine Lockup */;
 			break;
 		
 		case 20:
-			sVar0 = "MP_BWH_FAKEID_4";
+			sVar0 = "MP_BWH_FAKEID_4" /* GXT: Elysian Island Forgery Office */;
 			break;
 		
 		case 19:
-			sVar0 = "MP_BWH_CASH_4";
+			sVar0 = "MP_BWH_CASH_4" /* GXT: Cypress Flats Counterfeit Cash Factory */;
 			break;
 		
 		case 21:
-			sVar0 = "MP_BUNKER_1";
+			sVar0 = "MP_BUNKER_1" /* GXT: Grand Senora Oilfields Bunker */;
 			break;
 		
 		case 22:
-			sVar0 = "MP_BUNKER_2";
+			sVar0 = "MP_BUNKER_2" /* GXT: Grand Senora Desert Bunker */;
 			break;
 		
 		case 23:
-			sVar0 = "MP_BUNKER_3";
+			sVar0 = "MP_BUNKER_3" /* GXT: Route 68 Bunker */;
 			break;
 		
 		case 24:
-			sVar0 = "MP_BUNKER_4";
+			sVar0 = "MP_BUNKER_4" /* GXT: Farmhouse Bunker */;
 			break;
 		
 		case 25:
-			sVar0 = "MP_BUNKER_5";
+			sVar0 = "MP_BUNKER_5" /* GXT: Smoke Tree Road Bunker */;
 			break;
 		
 		case 26:
-			sVar0 = "MP_BUNKER_6";
+			sVar0 = "MP_BUNKER_6" /* GXT: Thomson Scrapyard Bunker */;
 			break;
 		
 		case 27:
-			sVar0 = "MP_BUNKER_7";
+			sVar0 = "MP_BUNKER_7" /* GXT: Grapeseed Bunker */;
 			break;
 		
 		case 28:
-			sVar0 = "MP_BUNKER_9";
+			sVar0 = "MP_BUNKER_9" /* GXT: Paleto Forest Bunker */;
 			break;
 		
 		case 29:
-			sVar0 = "MP_BUNKER_10";
+			sVar0 = "MP_BUNKER_10" /* GXT: Raton Canyon Bunker */;
 			break;
 		
 		case 30:
-			sVar0 = "MP_BUNKER_11";
+			sVar0 = "MP_BUNKER_11" /* GXT: Lago Zancudo Bunker */;
 			break;
 		
 		case 31:
-			sVar0 = "MP_BUNKER_12";
+			sVar0 = "MP_BUNKER_12" /* GXT: Chumash Bunker */;
 			break;
 	}
 	return sVar0;
@@ -16499,8 +16499,8 @@ void func_356()//Position - 0xFA31
 	iVar2 = func_34(iLocal_113, 0);
 	iVar3 = func_34(iLocal_113, 1);
 	StringCopy(&Var4, "", 24);
-	StringCopy(&Var5, "RES_UNLCK_FT_D1", 16);
-	StringCopy(&Var6, "RES_UNLCK_LCK", 16);
+	StringCopy(&Var5, "RES_UNLCK_FT_D1" /* GXT: Assigned staff are progressing with the current research project. Select the Fast-track option to complete this research now. */, 16);
+	StringCopy(&Var6, "RES_UNLCK_LCK" /* GXT: LOCKED */, 16);
 	iVar7 = func_16();
 	if (iVar2 < iVar3)
 	{
@@ -16512,35 +16512,35 @@ void func_356()//Position - 0xFA31
 	}
 	if (iVar7 == -1)
 	{
-		StringCopy(&Var5, "DL_NO_PROJECT_D", 16);
-		StringCopy(&Var6, "DL_NO_PROJECT_T", 16);
+		StringCopy(&Var5, "DL_NO_PROJECT_D" /* GXT: No active research projects. */, 16);
+		StringCopy(&Var6, "DL_NO_PROJECT_T" /* GXT: Project: Inactive */, 16);
 	}
 	else if (iVar0 == 0 && func_32(PLAYER::PLAYER_ID(), iLocal_121) == 0)
 	{
-		StringCopy(&Var5, "RES_UNLCK_FT_D5", 16);
-		StringCopy(&Var6, "DL_NO_PROJECT_T", 16);
+		StringCopy(&Var5, "RES_UNLCK_FT_D5" /* GXT: Assign staff to research on the Manage Staff page in order for them to start researching the next project when supplies are available. */, 16);
+		StringCopy(&Var6, "DL_NO_PROJECT_T" /* GXT: Project: Inactive */, 16);
 	}
 	else if (iVar0 < 100)
 	{
 		if (iVar0 <= 0)
 		{
-			StringCopy(&Var6, "RES_NEXT_PROJ", 16);
+			StringCopy(&Var6, "RES_NEXT_PROJ" /* GXT: Next Project: */, 16);
 			if (func_32(PLAYER::PLAYER_ID(), iLocal_121) == 0)
 			{
-				StringCopy(&Var5, "RES_UNLCK_FT_D3", 16);
+				StringCopy(&Var5, "RES_UNLCK_FT_D3" /* GXT: Assign staff to research on the Manage Staff page in order for them to begin the next research project when supplies are available. */, 16);
 			}
 			else
 			{
-				StringCopy(&Var5, "RES_UNLCK_FT_D2", 16);
+				StringCopy(&Var5, "RES_UNLCK_FT_D2" /* GXT: Assigned staff have selected the next research project and will begin when supplies are available. */, 16);
 			}
 		}
 		else
 		{
 			if (func_32(PLAYER::PLAYER_ID(), iLocal_121) == 0)
 			{
-				StringCopy(&Var5, "RES_UNLCK_FT_D4", 16);
+				StringCopy(&Var5, "RES_UNLCK_FT_D4" /* GXT: Assign staff to research on the Manage Staff page to progress with the current research project. Select the Fast-track option to complete this research now. */, 16);
 			}
-			StringCopy(&Var6, "RES_CUR_PROJ", 16);
+			StringCopy(&Var6, "RES_CUR_PROJ" /* GXT: Current Project: */, 16);
 		}
 		iVar1 = 1;
 		StringCopy(&Var4, "UA_UNLOCK_", 24);
@@ -16551,7 +16551,7 @@ void func_356()//Position - 0xFA31
 		iVar1 = 2;
 		StringCopy(&Var4, "UA_UNLOCK_", 24);
 		StringCopy(&Var5, "RES_UNLCK_D_", 16);
-		StringCopy(&Var6, "RES_CUR_PROJ", 16);
+		StringCopy(&Var6, "RES_CUR_PROJ" /* GXT: Current Project: */, 16);
 		StringIntConCat(&Var5, iVar7, 16);
 		StringIntConCat(&Var4, iVar7 + 1, 24);
 	}
@@ -16773,12 +16773,12 @@ char* func_366(int iParam0, bool bParam1)//Position - 0xFF80
 			return func_367();
 		}
 	}
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACC");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACC" /* GXT: An Organization */);
 }
 
 char* func_367()//Position - 0xFFA7
 {
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACCM");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACCM" /* GXT: Motorcycle Club */);
 }
 
 bool func_368(int iParam0, bool bParam1)//Position - 0xFFB7
@@ -18346,7 +18346,7 @@ void func_437(int iParam0)//Position - 0x117F7
 	StringIntConCat(&Var3, iParam0, 16);
 	if (!bVar1)
 	{
-		StringCopy(&Var3, "RES_UNLCK_LCK", 16);
+		StringCopy(&Var3, "RES_UNLCK_LCK" /* GXT: LOCKED */, 16);
 		iVar0 = 1;
 	}
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_302, "ADD_RESEARCH_UNLOCKABLE");
@@ -18366,7 +18366,7 @@ struct<4> func_438(int iParam0, bool bParam1)//Position - 0x11871
 	StringIntConCat(&Var0, iParam0, 16);
 	if (bParam1)
 	{
-		StringCopy(&Var0, "RES_UNLCK_LCK_D", 16);
+		StringCopy(&Var0, "RES_UNLCK_LCK_D" /* GXT: Unlock this item for purchase via Research. */, 16);
 	}
 	return Var0;
 }
@@ -19045,7 +19045,7 @@ int func_473(int iParam0)//Position - 0x12355
 				else if (func_8(&uLocal_135, 7500, 0))
 				{
 					func_336(&uLocal_135);
-					func_61("BKR_TF_R6");
+					func_61("BKR_TF_R6" /* GXT: Unable to launch the mission. */);
 					return 0;
 				}
 			}
@@ -19055,7 +19055,7 @@ int func_473(int iParam0)//Position - 0x12355
 		if (iLocal_125 == 3)
 		{
 			AUDIO::PLAY_SOUND_FRONTEND(-1, "Popup_Confirm_Fail", "GTAO_Exec_SecuroServ_Computer_Sounds", true);
-			func_61("BKR_TF_R6");
+			func_61("BKR_TF_R6" /* GXT: Unable to launch the mission. */);
 			return 0;
 		}
 		else if (iLocal_125 == 2)
@@ -19205,7 +19205,7 @@ void func_480()//Position - 0x125C0
 		{
 			MISC::SET_BIT(&uLocal_109, 14);
 			func_481(1);
-			func_255("UA_RES_DONE", "WHOUSE_CONF", "", 0, 0, -1, 0, "ua_research", "UA_RES_DONE_T");
+			func_255("UA_RES_DONE" /* GXT: All available research projects have been unlocked for purchase. Your staff have automatically moved back to manufacturing weapons for the Gunrunning Business. */, "WHOUSE_CONF" /* GXT: Confirm */, "", 0, 0, -1, 0, "ua_research" /* GXT: Research */, "UA_RES_DONE_T" /* GXT: All Research Unlocked */);
 		}
 	}
 	MISC::CLEAR_BIT(&uLocal_109, 15);
@@ -19261,7 +19261,7 @@ void func_484()//Position - 0x12686
 				Var1 = { func_438(iLocal_127, 0) };
 				MemCopy(&sVar2, {func_439(iLocal_127, 0)}, 4);
 				func_481(1);
-				func_255(&Var1, "WHOUSE_CONF", "", 0, 0, -1, 0, &sVar2, "UA_FT_TITLE");
+				func_255(&Var1, "WHOUSE_CONF" /* GXT: Confirm */, "", 0, 0, -1, 0, &sVar2, "UA_FT_TITLE" /* GXT: Research Complete */);
 			}
 			MISC::CLEAR_BIT(&uLocal_109, 12);
 		}
@@ -19781,49 +19781,49 @@ void func_511()//Position - 0x13152
 	{
 		if (func_520(23))
 		{
-			sVar0 = "UA_TUT_RESUP";
+			sVar0 = "UA_TUT_RESUP" /* GXT: This is the Resupply page. If you run out of supplies, manufacturing and research will cease. Supplies can be stolen from various sources or you can pay to have them delivered directly to the Bunker. The cost will depend on the supplies remaining. */;
 			iLocal_115 = 9000;
 			MISC::SET_BIT(&Global_1946101, 23);
 			func_519(&iLocal_116, &iLocal_117, 39);
 		}
 		else if (func_520(24))
 		{
-			sVar0 = "UA_TUT_RESEA";
+			sVar0 = "UA_TUT_RESEA" /* GXT: This is the Research page. If you assign staff to research they will automatically select the next project and use available supplies to unlock weapon and vehicle modifications over time, making them available for purchase. */;
 			iLocal_115 = 9000;
 			MISC::SET_BIT(&Global_1946101, 24);
 			func_519(&iLocal_116, &iLocal_117, 42);
 		}
 		else if (func_520(25))
 		{
-			sVar0 = "UA_TUT_FTR";
+			sVar0 = "UA_TUT_FTR" /* GXT: You can select the Fast-track option to complete your current Research project and unlock it, making it available for purchase. The cost of fast-tracking will depend on the Research time remaining. */;
 			iLocal_115 = 8000;
 			MISC::SET_BIT(&Global_1946101, 25);
 			func_519(&iLocal_116, &iLocal_117, 45);
 		}
 		else if (func_520(26))
 		{
-			sVar0 = "UA_TUT_UNLOCK";
+			sVar0 = "UA_TUT_UNLOCK" /* GXT: Your unlocked research projects are displayed here. Highlight any unlocked modifications to see further details on where to purchase and install them. Assigned staff will continue to select a new research project from those that are still locked. */;
 			iLocal_115 = 11000;
 			MISC::SET_BIT(&Global_1946101, 26);
 			func_519(&iLocal_116, &iLocal_117, 48);
 		}
 		else if (func_520(27))
 		{
-			sVar0 = "UA_TUT_SELL";
+			sVar0 = "UA_TUT_SELL" /* GXT: You can sell your current stock of weapons at any time. Choose to sell to buyers in Blaine County or risk traveling into Los Santos for a larger payment. If some weapons are lost during a sale you can still continue on and sell the remaining stock to earn partial payment. */;
 			iLocal_115 = 9000;
 			MISC::SET_BIT(&Global_1946101, 27);
 			func_517(&iLocal_116, &iLocal_117, 51);
 		}
 		else if (func_520(28))
 		{
-			sVar0 = "UA_TUT_STAFF";
+			sVar0 = "UA_TUT_STAFF" /* GXT: This is the Manage Staff page. Here you can assign staff to use supplies for manufacturing weapons for sale, or researching the unlocking of modifications. You can split your staff across both areas which will increase manufacturing and research times. */;
 			iLocal_115 = 9000;
 			MISC::SET_BIT(&Global_1946101, 28);
 			func_519(&iLocal_116, &iLocal_117, 54);
 		}
 		else if (func_520(29))
 		{
-			sVar0 = "UA_TUT_UPGR";
+			sVar0 = "UA_TUT_UPGR" /* GXT: Purchase upgrades to enhance the Business. Install new equipment to improve stock value, hire additional staff to speed up research and manufacturing times or install security to reduce enemy attacks. */;
 			iLocal_115 = 8500;
 			MISC::SET_BIT(&Global_1946101, 29);
 			func_519(&iLocal_116, &iLocal_117, 57);
@@ -20614,7 +20614,7 @@ void func_544()//Position - 0x13F81
 			if ((!BitTest(uLocal_109, 8) && !func_253()) && func_39(15375, -1))
 			{
 				HUD::CLEAR_HELP(true);
-				func_516("DL_WEAP_SETUP", 9000);
+				func_516("DL_WEAP_SETUP" /* GXT: Click the Set Up button to locate the necessary supplies and equipment required to start the Gunrunning business. Once these are delivered to the Bunker you will be able to manufacture and sell weapons. */, 9000);
 				MISC::SET_BIT(&uLocal_109, 8);
 			}
 			if (!func_39(15375, -1))
@@ -20774,7 +20774,7 @@ void func_551()//Position - 0x14272
 	else
 	{
 		func_553(1);
-		func_552(&uLocal_137, 2, 0, "AGENT14", 0, 1);
+		func_552(&uLocal_137, 2, 0, "AGENT14" /* GXT: Agent 14 */, 0, 1);
 	}
 }
 
@@ -20913,15 +20913,15 @@ void func_559(int iParam0, bool bParam1)//Position - 0x14440
 		switch (iVar0)
 		{
 			case 0:
-				StringCopy(&Var1, "UA_TICK_MAN", 16);
+				StringCopy(&Var1, "UA_TICK_MAN" /* GXT: Staff assigned to manufacturing. */, 16);
 				break;
 			
 			case 1:
-				StringCopy(&Var1, "UA_TICK_RES", 16);
+				StringCopy(&Var1, "UA_TICK_RES" /* GXT: Staff assigned to research. */, 16);
 				break;
 			
 			case 2:
-				StringCopy(&Var1, "UA_TICK_BOTH", 16);
+				StringCopy(&Var1, "UA_TICK_BOTH" /* GXT: Staff assigned to manufacturing and research. */, 16);
 				break;
 		}
 		func_560(&Var1, 0);

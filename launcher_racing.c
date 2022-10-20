@@ -1318,7 +1318,7 @@ void func_22(bool bParam0)//Position - 0x120A
 	if (bVar0)
 	{
 		StringCopy(&cVar1, "CHAR_LIFEINVADER", 64);
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("COUP_RED");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("COUP_RED" /* GXT: You have redeemed your promotion for ~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(func_23(bParam0));
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar1, &cVar1, true, 0, "", 0);
 	}
@@ -1329,28 +1329,28 @@ char* func_23(bool bParam0)//Position - 0x138A
 	switch (bParam0)
 	{
 		case 0:
-			return "COUP_HAIRC";
+			return "COUP_HAIRC" /* GXT: one free haircut. */;
 		
 		case 1:
-			return "COUP_TATTOO";
+			return "COUP_TATTOO" /* GXT: one free tattoo. */;
 		
 		case 2:
-			return "COUP_WARSTOCK";
+			return "COUP_WARSTOCK" /* GXT: 10% off your next purchase at Warstock-Cache-and-Carry.com. */;
 		
 		case 3:
-			return "COUP_MOSPORT";
+			return "COUP_MOSPORT" /* GXT: 10 percent off your next purchase at LegendaryMotorsport.net. */;
 		
 		case 4:
-			return "COUP_ELITAS";
+			return "COUP_ELITAS" /* GXT: 10 percent off your next purchase at ElitasTravel.com. */;
 		
 		case 5:
-			return "COUP_MEDSPENS";
+			return "COUP_MEDSPENS" /* GXT: 10 percent off your next medical expenses. */;
 		
 		case 6:
-			return "COUP_SPRUNK";
+			return "COUP_SPRUNK" /* GXT: one free can of Sprunk. */;
 		
 		case 7:
-			return "COUP_RESPRAY";
+			return "COUP_RESPRAY" /* GXT: one free respray. */;
 		
 		case 8:
 			return "COUP_XMAS2017";
@@ -1365,22 +1365,22 @@ char* func_23(bool bParam0)//Position - 0x138A
 			return "COUP_CAR2_XMAS2018";
 		
 		case 12:
-			return "COUP_CAS_ELITAS";
+			return "COUP_CAS_ELITAS" /* GXT: 10 percent off your next purchase at ElitasTravel.com. */;
 		
 		case 13:
-			return "COUP_CAS_DOCKTEASE";
+			return "COUP_CAS_DOCKTEASE" /* GXT: 10 percent off your next purchase at DockTease.com. */;
 		
 		case 14:
-			return "COUP_CAS_MOSPORT";
+			return "COUP_CAS_MOSPORT" /* GXT: 10 percent off your next purchase at LegendaryMotorsport.net. */;
 		
 		case 15:
-			return "COUP_CAS_SSASA";
+			return "COUP_CAS_SSASA" /* GXT: 10 percent off your next purchase at southernsanandreassuperautos.com. */;
 		
 		case 16:
-			return "COUP_CAS_WARSTOCK";
+			return "COUP_CAS_WARSTOCK" /* GXT: 10 percent off your next purchase at Warstock-Cache-and-Carry.com. */;
 		
 		case 17:
-			return "COUP_CAS_PANDM";
+			return "COUP_CAS_PANDM" /* GXT: 10 percent off your next purchase at pandmcycles.com. */;
 			break;
 		
 		default:
@@ -2822,7 +2822,7 @@ void func_80(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 	{
 		if (Global_23150.f_5609 <= 1)
 		{
-			func_110(Global_23150.f_5609 + 1, "DFLT_MNU_OPT", 0, 1, 0, 0, 0);
+			func_110(Global_23150.f_5609 + 1, "DFLT_MNU_OPT" /* GXT: Exit */, 0, 1, 0, 0, 0);
 			Global_23150.f_6405 = 1;
 		}
 	}
@@ -2925,14 +2925,14 @@ void func_80(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 				if (Global_23150.f_6126)
 				{
 					func_104();
-					func_102((((Global_23147 + fParam5) - 0.00390625f) - func_103("CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128);
+					func_102((((Global_23147 + fParam5) - 0.00390625f) - func_103("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128);
 				}
 				else if (Global_23150.f_6122 > Global_23150.f_5616)
 				{
 					if (Global_23150.f_6125 != 0)
 					{
 						func_104();
-						func_102((((Global_23147 + fParam5) - 0.00390625f) - func_103("CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124);
+						func_102((((Global_23147 + fParam5) - 0.00390625f) - func_103("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124);
 					}
 				}
 			}
@@ -5750,17 +5750,17 @@ void func_123()//Position - 0x72CF
 	func_128(1, 1, 1, 1, 1);
 	if (Local_43.f_1 == 3)
 	{
-		func_127("SEA_MENU");
+		func_127("SEA_MENU" /* GXT: Sea Races */);
 	}
 	else
 	{
-		func_127("STREET_MENU");
+		func_127("STREET_MENU" /* GXT: Street Races */);
 	}
-	func_110(0, "RACES_OPT_SP", 0, 1, 0, 0, 0);
-	func_110(1, "RACES_OPT_MP", 0, 1, 0, 0, 0);
-	func_126(201, "ITEM_SELECT", -1);
-	func_126(202, "ITEM_EXIT", -1);
-	func_125(11, "ITEM_SCROLL", -1);
+	func_110(0, "RACES_OPT_SP" /* GXT: Standard Race */, 0, 1, 0, 0, 0);
+	func_110(1, "RACES_OPT_MP" /* GXT: Play Online */, 0, 1, 0, 0, 0);
+	func_126(201, "ITEM_SELECT" /* GXT: Select */, -1);
+	func_126(202, "ITEM_EXIT" /* GXT: Exit */, -1);
+	func_125(11, "ITEM_SCROLL" /* GXT: Scroll */, -1);
 	func_124(0);
 	func_121(0, 1, 1);
 	iLocal_50 = 0;
@@ -6527,11 +6527,11 @@ int func_146()//Position - 0x828B
 		{
 			if (Local_43.f_1 == 3)
 			{
-				func_158("SEA_NA_CASH", Local_43.f_3);
+				func_158("SEA_NA_CASH" /* GXT: Can't afford to enter this sea race. $~1~ needed to race. */, Local_43.f_3);
 			}
 			else
 			{
-				func_158("STREET_NA_CASH", Local_43.f_3);
+				func_158("STREET_NA_CASH" /* GXT: Can't afford to enter this street race. $~1~ needed to race. */, Local_43.f_3);
 			}
 			iLocal_45 = 1;
 			iLocal_48 = MISC::GET_GAME_TIMER() + 1000;
@@ -6549,7 +6549,7 @@ int func_146()//Position - 0x828B
 			}
 			else if ((ENTITY::GET_ENTITY_HEALTH(iLocal_0) <= 200 || FIRE::IS_ENTITY_ON_FIRE(iLocal_0)) || func_151())
 			{
-				func_150("RACE_VehDmg");
+				func_150("RACE_VehDmg" /* GXT: This vehicle is too damaged to race. Get it fixed, or find a vehicle in better repair to race. */);
 				iLocal_45 = 1;
 				iLocal_48 = MISC::GET_GAME_TIMER() + 1000;
 				return 0;
@@ -6569,15 +6569,15 @@ int func_146()//Position - 0x828B
 				switch (Local_43.f_1)
 				{
 					case 1:
-						func_158("STREET_PLAY_B", Local_43.f_3);
+						func_158("STREET_PLAY_B" /* GXT: Press ~INPUT_CONTEXT~ to enter a motorcycle street race. The entry fee is $~1~. */, Local_43.f_3);
 						break;
 					
 					case 2:
-						func_158("STREET_PLAY_C", Local_43.f_3);
+						func_158("STREET_PLAY_C" /* GXT: Press ~INPUT_CONTEXT~ to enter a street race. The entry fee is $~1~. */, Local_43.f_3);
 						break;
 					
 					case 3:
-						func_150("SEA_PLAY");
+						func_150("SEA_PLAY" /* GXT: Press ~INPUT_CONTEXT~ to enter a sea race. */);
 						break;
 				}
 				iLocal_45 = 1;
@@ -6603,11 +6603,11 @@ void func_147()//Position - 0x83FD
 	{
 		if (func_16(iLocal_57))
 		{
-			sVar0 = "SEA_NA_VEH";
+			sVar0 = "SEA_NA_VEH" /* GXT: Climb aboard the Seashark at the start line to enter this race. */;
 		}
 		else
 		{
-			sVar0 = "SEA_NA_VEH2";
+			sVar0 = "SEA_NA_VEH2" /* GXT: You need a Seashark to enter this race. */;
 		}
 		if (!func_149(sVar0))
 		{
@@ -6618,16 +6618,16 @@ void func_147()//Position - 0x83FD
 	}
 	else if (Local_43.f_1 == 1)
 	{
-		if (!func_149("STREET_NA_BIKE"))
+		if (!func_149("STREET_NA_BIKE" /* GXT: A motorcycle is needed to enter this street race. */))
 		{
-			func_148("STREET_NA_BIKE");
+			func_148("STREET_NA_BIKE" /* GXT: A motorcycle is needed to enter this street race. */);
 			iLocal_45 = 1;
 			iLocal_48 = MISC::GET_GAME_TIMER() + 1000;
 		}
 	}
-	else if (!func_149("STREET_NA_CAR"))
+	else if (!func_149("STREET_NA_CAR" /* GXT: A car is needed to enter this street race. */))
 	{
-		func_148("STREET_NA_CAR");
+		func_148("STREET_NA_CAR" /* GXT: A car is needed to enter this street race. */);
 		iLocal_45 = 1;
 		iLocal_48 = MISC::GET_GAME_TIMER() + 1000;
 	}
@@ -6686,12 +6686,12 @@ int func_152()//Position - 0x854C
 			iVar0 = func_156();
 			if (iVar0 == 1)
 			{
-				func_150("STREET_NA_COP");
+				func_150("STREET_NA_COP" /* GXT: Can't enter a street race in an emergency vehicle. */);
 				return 0;
 			}
 			else if (iVar0 == 2)
 			{
-				func_150("STREET_NA_BIKE");
+				func_150("STREET_NA_BIKE" /* GXT: A motorcycle is needed to enter this street race. */);
 				return 0;
 			}
 			break;
@@ -6700,12 +6700,12 @@ int func_152()//Position - 0x854C
 			iVar0 = func_154();
 			if (iVar0 == 1)
 			{
-				func_150("STREET_NA_COP");
+				func_150("STREET_NA_COP" /* GXT: Can't enter a street race in an emergency vehicle. */);
 				return 0;
 			}
 			else if (iVar0 == 2)
 			{
-				func_150("STREET_NA_CAR");
+				func_150("STREET_NA_CAR" /* GXT: A car is needed to enter this street race. */);
 				return 0;
 			}
 			break;
@@ -6715,11 +6715,11 @@ int func_152()//Position - 0x854C
 			{
 				if (func_16(iLocal_57))
 				{
-					sVar1 = "SEA_NA_VEH";
+					sVar1 = "SEA_NA_VEH" /* GXT: Climb aboard the Seashark at the start line to enter this race. */;
 				}
 				else
 				{
-					sVar1 = "SEA_NA_VEH2";
+					sVar1 = "SEA_NA_VEH2" /* GXT: You need a Seashark to enter this race. */;
 				}
 				func_150(sVar1);
 				return 0;

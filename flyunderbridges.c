@@ -577,22 +577,22 @@ void func_17()//Position - 0xA32
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_30, "SHOW_BRIDGES_KNIVES_PROGRESS");
 					if (bLocal_38)
 					{
-						func_22("FU_KNIFE");
+						func_22("FU_KNIFE" /* GXT: Knife Flight~s~ */);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(15);
 					}
 					else
 					{
-						func_22("FU_TITLE");
+						func_22("FU_TITLE" /* GXT: Under the Bridge~s~ */);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(50);
 					}
-					func_22("FU_PASS");
+					func_22("FU_PASS" /* GXT: Success! */);
 					if (bLocal_38)
 					{
-						func_22("FU_CHALL_KN");
+						func_22("FU_CHALL_KN" /* GXT: Flights completed */);
 					}
 					else
 					{
-						func_22("FU_CHALLENGE");
+						func_22("FU_CHALLENGE" /* GXT: Bridges flown under */);
 					}
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(func_30());
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();

@@ -3090,17 +3090,17 @@ void func_51(char* sParam0, char* sParam1, bool bParam2)//Position - 0x1B81
 	{
 		if (MISC::IS_STRING_NULL_OR_EMPTY(sParam0))
 		{
-			sParam0 = "FMEVEN_NUM1";
+			sParam0 = "FMEVEN_NUM1" /* GXT: EVENT OVER */;
 		}
 		if (MISC::IS_STRING_NULL_OR_EMPTY(sParam1))
 		{
 			if (bParam2)
 			{
-				sParam1 = "FMEVEN_NUM2";
+				sParam1 = "FMEVEN_NUM2" /* GXT: Not enough players in the session */;
 			}
 			else
 			{
-				sParam1 = "FMEVEN_NUM3";
+				sParam1 = "FMEVEN_NUM3" /* GXT: Not enough players available in the session */;
 			}
 		}
 		func_52(66, sParam0, sParam1, 1, -1, 2, 1, 0);
@@ -6094,8 +6094,8 @@ void func_145()//Position - 0x4AB9
 						func_406();
 						if (!func_7(PLAYER::PLAYER_ID()))
 						{
-							func_52(63, "AMCH_STARTED", func_405(Local_150.f_3), func_66(), -1, func_66(), 1, 0);
-							if (func_402("AMCH_WARN", func_404(Local_150.f_3), func_403(Local_150.f_3)))
+							func_52(63, "AMCH_STARTED" /* GXT: CHALLENGE STARTED */, func_405(Local_150.f_3), func_66(), -1, func_66(), 1, 0);
+							if (func_402("AMCH_WARN" /* GXT: The ~a~ Challenge will begin shortly. ~a~ The top 3 players will win cash and RP. */, func_404(Local_150.f_3), func_403(Local_150.f_3)))
 							{
 								HUD::CLEAR_HELP(true);
 							}
@@ -6259,7 +6259,7 @@ void func_147()//Position - 0x4EA8
 		{
 			if (!func_105(PLAYER::PLAYER_ID()))
 			{
-				func_149(func_542((30000 - func_544(&(Local_150.f_45), 0, 0)), 0), "HTV_DESTR", 0, 1, -1, 0, 2, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
+				func_149(func_542((30000 - func_544(&(Local_150.f_45), 0, 0)), 0), "HTV_DESTR" /* GXT: SELF-DESTRUCT */, 0, 1, -1, 0, 2, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
 				func_148();
 			}
 		}
@@ -6340,7 +6340,7 @@ void func_152()//Position - 0x51C0
 			}
 			else
 			{
-				func_153("AMCH_OBJLAND", 0);
+				func_153("AMCH_OBJLAND" /* GXT: Fly over land. */, 0);
 			}
 		}
 		else
@@ -6678,14 +6678,14 @@ char* func_167(int iParam0)//Position - 0x5823
 			case 13:
 				if (((((!PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false) || PED::IS_PED_IN_ANY_HELI(PLAYER::PLAYER_PED_ID())) || PED::IS_PED_IN_ANY_BOAT(PLAYER::PLAYER_PED_ID())) || PED::IS_PED_IN_ANY_PLANE(PLAYER::PLAYER_PED_ID())) || PED::IS_PED_IN_ANY_SUB(PLAYER::PLAYER_PED_ID())) || PED::IS_PED_IN_ANY_TRAIN(PLAYER::PLAYER_PED_ID()))
 				{
-					return "AMCH_PREPLAND";
+					return "AMCH_PREPLAND" /* GXT: Find a land vehicle and prepare for the ~a~ Challenge. */;
 				}
 				break;
 			
 			case 9:
 				if ((((((!PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false) || PED::IS_PED_IN_ANY_HELI(PLAYER::PLAYER_PED_ID())) || PED::IS_PED_IN_ANY_BOAT(PLAYER::PLAYER_PED_ID())) || PED::IS_PED_IN_ANY_PLANE(PLAYER::PLAYER_PED_ID())) || PED::IS_PED_IN_ANY_SUB(PLAYER::PLAYER_PED_ID())) || PED::IS_PED_IN_ANY_TRAIN(PLAYER::PLAYER_PED_ID())) || PED::IS_PED_ON_ANY_BIKE(PLAYER::PLAYER_PED_ID()))
 				{
-					return "AMCH_PREPCAR";
+					return "AMCH_PREPCAR" /* GXT: Find a car and prepare for the ~a~ Challenge. */;
 				}
 				break;
 			
@@ -6693,7 +6693,7 @@ char* func_167(int iParam0)//Position - 0x5823
 			case 4:
 				if (!PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 				{
-					return "AMCH_PREPBIKE";
+					return "AMCH_PREPBIKE" /* GXT: Find a motorcycle and prepare for the ~a~ Challenge. */;
 				}
 				else
 				{
@@ -6701,7 +6701,7 @@ char* func_167(int iParam0)//Position - 0x5823
 					iVar1 = ENTITY::GET_ENTITY_MODEL(iVar0);
 					if (VEHICLE::IS_THIS_MODEL_A_BIKE(iVar1) && VEHICLE::IS_THIS_MODEL_A_BICYCLE(iVar1))
 					{
-						return "AMCH_PREPBIKE";
+						return "AMCH_PREPBIKE" /* GXT: Find a motorcycle and prepare for the ~a~ Challenge. */;
 					}
 				}
 				break;
@@ -6709,7 +6709,7 @@ char* func_167(int iParam0)//Position - 0x5823
 			case 12:
 				if (!PED::IS_PED_IN_ANY_PLANE(PLAYER::PLAYER_PED_ID()))
 				{
-					return "AMCH_PREPPLANE";
+					return "AMCH_PREPPLANE" /* GXT: Find a plane and prepare for the ~a~ Challenge. */;
 				}
 				break;
 			
@@ -6719,26 +6719,26 @@ char* func_167(int iParam0)//Position - 0x5823
 			case 14:
 				if (!PED::IS_PED_IN_FLYING_VEHICLE(PLAYER::PLAYER_PED_ID()))
 				{
-					return "AMCH_PREPAIR";
+					return "AMCH_PREPAIR" /* GXT: Find an air vehicle and prepare for the ~a~ Challenge. */;
 				}
 				break;
 			
 			case 18:
 				if ((!WEAPON::HAS_PED_GOT_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_SNIPERRIFLE"), false) && !WEAPON::HAS_PED_GOT_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_HEAVYSNIPER"), false)) && !WEAPON::HAS_PED_GOT_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_MARKSMANRIFLE"), false))
 				{
-					return "AMCH_PREPSNIPER";
+					return "AMCH_PREPSNIPER" /* GXT: Find a sniper rifle and prepare for the ~a~ Challenge. */;
 				}
 				break;
 			
 			case 16:
 				if (((((!PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false) || PED::IS_PED_IN_ANY_HELI(PLAYER::PLAYER_PED_ID())) || PED::IS_PED_IN_ANY_BOAT(PLAYER::PLAYER_PED_ID())) || PED::IS_PED_IN_ANY_PLANE(PLAYER::PLAYER_PED_ID())) || PED::IS_PED_IN_ANY_SUB(PLAYER::PLAYER_PED_ID())) || PED::IS_PED_IN_ANY_TRAIN(PLAYER::PLAYER_PED_ID()))
 				{
-					return "AMCH_PREPLAND";
+					return "AMCH_PREPLAND" /* GXT: Find a land vehicle and prepare for the ~a~ Challenge. */;
 				}
 				break;
 			}
 	}
-	return "AMCH_PREPARE";
+	return "AMCH_PREPARE" /* GXT: Prepare for the ~a~ Challenge. */;
 }
 
 int func_168(int iParam0)//Position - 0x5A71
@@ -9338,7 +9338,7 @@ void func_247(var uParam0, int iParam1)//Position - 0x8F6E
 						func_259(&iVar0, 0);
 						if (iParam1 == 1)
 						{
-							func_252("GB_BCUT_TICK1", func_262(), iVar0, 0, 0, 1);
+							func_252("GB_BCUT_TICK1" /* GXT: You paid ~a~ ~s~a $~1~ ~s~cut. */, func_262(), iVar0, 0, 0, 1);
 						}
 						func_251(20);
 						func_248(func_262(), iVar0, 1);
@@ -9774,45 +9774,45 @@ void func_285()//Position - 0x96EC
 					{
 						if (func_18())
 						{
-							func_289(64, func_290(Local_150.f_3, 0, 0, 0), "AMCH_WINNER", "AMCH_WIN", 15000, -1, fVar1, func_404(Local_150.f_3), 1, 2, 0);
+							func_289(64, func_290(Local_150.f_3, 0, 0, 0), "AMCH_WINNER" /* GXT: You won the ~a~ Challenge with a score of ~1~~a~ */, "AMCH_WIN" /* GXT: WINNER */, 15000, -1, fVar1, func_404(Local_150.f_3), 1, 2, 0);
 						}
 						else if (func_288())
 						{
-							func_289(69, func_290(Local_150.f_3, 0, 0, 0), "AMCH_WINNER_T", "AMCH_WIN", 15000, iVar0, -1f, func_404(Local_150.f_3), 1, 2, 0);
+							func_289(69, func_290(Local_150.f_3, 0, 0, 0), "AMCH_WINNER_T" /* GXT: You won the ~a~ Challenge with a time of ~a~ */, "AMCH_WIN" /* GXT: WINNER */, 15000, iVar0, -1f, func_404(Local_150.f_3), 1, 2, 0);
 						}
 						else
 						{
-							func_289(64, func_290(Local_150.f_3, 0, 0, iVar0), "AMCH_WINNER", "AMCH_WIN", 15000, iVar0, -1f, func_404(Local_150.f_3), 1, 2, 0);
+							func_289(64, func_290(Local_150.f_3, 0, 0, iVar0), "AMCH_WINNER" /* GXT: You won the ~a~ Challenge with a score of ~1~~a~ */, "AMCH_WIN" /* GXT: WINNER */, 15000, iVar0, -1f, func_404(Local_150.f_3), 1, 2, 0);
 						}
 					}
 					else if (func_20(1))
 					{
 						if (func_18())
 						{
-							func_289(67, func_290(Local_150.f_3, 0, 0, 0), "AMCH_2ND", "AMCH_OVER", 15000, -1, fVar1, func_404(Local_150.f_3), 1, 2, 0);
+							func_289(67, func_290(Local_150.f_3, 0, 0, 0), "AMCH_2ND" /* GXT: You came second in the ~a~ Challenge with a score of ~1~~a~ */, "AMCH_OVER" /* GXT: CHALLENGE OVER */, 15000, -1, fVar1, func_404(Local_150.f_3), 1, 2, 0);
 						}
 						else if (func_288())
 						{
-							func_289(75, func_290(Local_150.f_3, 0, 0, 0), "AMCH_2ND_T", "AMCH_OVER", 15000, iVar0, -1f, func_404(Local_150.f_3), 1, 2, 0);
+							func_289(75, func_290(Local_150.f_3, 0, 0, 0), "AMCH_2ND_T" /* GXT: You came second in the ~a~ Challenge with a time of ~a~ */, "AMCH_OVER" /* GXT: CHALLENGE OVER */, 15000, iVar0, -1f, func_404(Local_150.f_3), 1, 2, 0);
 						}
 						else
 						{
-							func_289(67, func_290(Local_150.f_3, 0, 0, iVar0), "AMCH_2ND", "AMCH_OVER", 15000, iVar0, -1f, func_404(Local_150.f_3), 1, 2, 0);
+							func_289(67, func_290(Local_150.f_3, 0, 0, iVar0), "AMCH_2ND" /* GXT: You came second in the ~a~ Challenge with a score of ~1~~a~ */, "AMCH_OVER" /* GXT: CHALLENGE OVER */, 15000, iVar0, -1f, func_404(Local_150.f_3), 1, 2, 0);
 						}
 					}
 					else if (func_20(2))
 					{
 						if (func_18())
 						{
-							func_289(67, func_290(Local_150.f_3, 0, 0, 0), "AMCH_3RD", "AMCH_OVER", 15000, -1, fVar1, func_404(Local_150.f_3), 1, 2, 0);
+							func_289(67, func_290(Local_150.f_3, 0, 0, 0), "AMCH_3RD" /* GXT: You came third in the ~a~ Challenge with a score of ~1~~a~ */, "AMCH_OVER" /* GXT: CHALLENGE OVER */, 15000, -1, fVar1, func_404(Local_150.f_3), 1, 2, 0);
 						}
 						else if (func_288())
 						{
-							func_289(75, func_290(Local_150.f_3, 0, 0, 0), "AMCH_3RD_T", "AMCH_OVER", 15000, iVar0, -1f, func_404(Local_150.f_3), 1, 2, 0);
+							func_289(75, func_290(Local_150.f_3, 0, 0, 0), "AMCH_3RD_T" /* GXT: You came third in the ~a~ Challenge with a time of ~a~ */, "AMCH_OVER" /* GXT: CHALLENGE OVER */, 15000, iVar0, -1f, func_404(Local_150.f_3), 1, 2, 0);
 						}
 						else
 						{
-							func_289(67, func_290(Local_150.f_3, 0, 0, iVar0), "AMCH_3RD", "AMCH_OVER", 15000, iVar0, -1f, func_404(Local_150.f_3), 1, 2, 0);
+							func_289(67, func_290(Local_150.f_3, 0, 0, iVar0), "AMCH_3RD" /* GXT: You came third in the ~a~ Challenge with a score of ~1~~a~ */, "AMCH_OVER" /* GXT: CHALLENGE OVER */, 15000, iVar0, -1f, func_404(Local_150.f_3), 1, 2, 0);
 						}
 					}
 					else
@@ -9827,25 +9827,25 @@ void func_285()//Position - 0x96EC
 							}
 							iVar2 = Local_1516[Local_150.f_4[0] /*12*/].f_4;
 							func_291(&iVar0, &fVar1, iVar2, 1);
-							sVar5 = "AMCH_LOSE";
+							sVar5 = "AMCH_LOSE" /* GXT: <C>~a~</C>~s~ won the ~a~ Challenge with a score of ~1~~a~ */;
 							if (func_18())
 							{
-								func_287(76, func_107(), func_290(Local_150.f_3, 0, 0, 0), sVar5, "AMCH_OVER", 15000, func_404(Local_150.f_3), -1, fVar1, 1, 2, PLAYER::GET_PLAYER_NAME(iVar4));
+								func_287(76, func_107(), func_290(Local_150.f_3, 0, 0, 0), sVar5, "AMCH_OVER" /* GXT: CHALLENGE OVER */, 15000, func_404(Local_150.f_3), -1, fVar1, 1, 2, PLAYER::GET_PLAYER_NAME(iVar4));
 							}
 							else if (func_288())
 							{
-								func_287(77, func_107(), func_290(Local_150.f_3, 0, 0, 0), "AMCH_LOSE_T", "AMCH_OVER", 15000, func_404(Local_150.f_3), iVar0, -1082130432, 1, 2, PLAYER::GET_PLAYER_NAME(iVar4));
+								func_287(77, func_107(), func_290(Local_150.f_3, 0, 0, 0), "AMCH_LOSE_T" /* GXT: <C>~a~</C>~s~ won the ~a~ Challenge with a time of ~a~ */, "AMCH_OVER" /* GXT: CHALLENGE OVER */, 15000, func_404(Local_150.f_3), iVar0, -1082130432, 1, 2, PLAYER::GET_PLAYER_NAME(iVar4));
 							}
 							else
 							{
-								func_287(76, func_107(), func_290(Local_150.f_3, 0, 0, iVar0), sVar5, "AMCH_OVER", 15000, func_404(Local_150.f_3), iVar0, -1082130432, 1, 2, PLAYER::GET_PLAYER_NAME(iVar4));
+								func_287(76, func_107(), func_290(Local_150.f_3, 0, 0, iVar0), sVar5, "AMCH_OVER" /* GXT: CHALLENGE OVER */, 15000, func_404(Local_150.f_3), iVar0, -1082130432, 1, 2, PLAYER::GET_PLAYER_NAME(iVar4));
 							}
 						}
 					}
 				}
 				else
 				{
-					func_52(66, "AMCH_OVER", "AMCH_NOWIN", 1, 15000, 2, 1, 0);
+					func_52(66, "AMCH_OVER" /* GXT: CHALLENGE OVER */, "AMCH_NOWIN" /* GXT: No players achieved a score */, 1, 15000, 2, 1, 0);
 				}
 			}
 			else
@@ -9941,28 +9941,28 @@ char* func_290(int iParam0, bool bParam1, bool bParam2, int iParam3)//Position -
 			{
 				if (bParam1)
 				{
-					return "AMCH_M_LB";
+					return "AMCH_M_LB" /* GXT: m */;
 				}
 				else if (bParam2)
 				{
-					return "AMCH_M";
+					return "AMCH_M" /* GXT: ~1~m */;
 				}
 				else
 				{
-					return "AMCH_METRES";
+					return "AMCH_METRES" /* GXT:  meters */;
 				}
 			}
 			else if (bParam1)
 			{
-				return "AMCH_FT_LB";
+				return "AMCH_FT_LB" /* GXT: ft */;
 			}
 			else if (bParam2)
 			{
-				return "AMCH_FT";
+				return "AMCH_FT" /* GXT: ~1~ft */;
 			}
 			else
 			{
-				return "AMCH_FEET";
+				return "AMCH_FEET" /* GXT:  feet */;
 			}
 			break;
 		
@@ -9971,28 +9971,28 @@ char* func_290(int iParam0, bool bParam1, bool bParam2, int iParam3)//Position -
 			{
 				if (bParam1)
 				{
-					return "AMCH_KMH_LB";
+					return "AMCH_KMH_LB" /* GXT: km/h */;
 				}
 				else if (bParam2)
 				{
-					return "AMCH_KMHN";
+					return "AMCH_KMHN" /* GXT: ~1~km/h */;
 				}
 				else
 				{
-					return "AMCH_KMH";
+					return "AMCH_KMH" /* GXT:  km/h */;
 				}
 			}
 			else if (bParam1)
 			{
-				return "AMCH_MPH_LB";
+				return "AMCH_MPH_LB" /* GXT: mph */;
 			}
 			else if (bParam2)
 			{
-				return "AMCH_MPHN";
+				return "AMCH_MPHN" /* GXT: ~1~mph */;
 			}
 			else
 			{
-				return "AMCH_MPH";
+				return "AMCH_MPH" /* GXT:  mph */;
 			}
 			break;
 		
@@ -10003,7 +10003,7 @@ char* func_290(int iParam0, bool bParam1, bool bParam2, int iParam3)//Position -
 			}
 			else
 			{
-				return "AMCH_VEH";
+				return "AMCH_VEH" /* GXT:  vehicles */;
 			}
 			break;
 		
@@ -10017,11 +10017,11 @@ char* func_290(int iParam0, bool bParam1, bool bParam2, int iParam3)//Position -
 			}
 			else if (iParam3 != 1)
 			{
-				return "AMCH_KILLS";
+				return "AMCH_KILLS" /* GXT:  kills */;
 			}
 			else
 			{
-				return "AMCH_KILL";
+				return "AMCH_KILL" /* GXT:  kill */;
 			}
 			break;
 	}
@@ -10029,7 +10029,7 @@ char* func_290(int iParam0, bool bParam1, bool bParam2, int iParam3)//Position -
 	{
 		return "";
 	}
-	return "AMCH_EMPTY";
+	return "AMCH_EMPTY" /* GXT: ~r~~s~ */;
 }
 
 int func_291(int iParam0, float fParam1, int iParam2, bool bParam3)//Position - 0x9D6D
@@ -10176,7 +10176,7 @@ int func_298(var uParam0, bool bParam1)//Position - 0x9EE7
 			func_300();
 			if (func_1(&(uParam0->f_1), 15000, 0))
 			{
-				if (func_299("AMEV_LBD_HELP"))
+				if (func_299("AMEV_LBD_HELP" /* GXT: Press ~INPUT_MULTIPLAYER_INFO~ to show the Freemode Event leaderboard. */))
 				{
 					HUD::CLEAR_HELP(true);
 				}
@@ -10213,7 +10213,7 @@ void func_300()//Position - 0xA084
 		if (((((!HUD::IS_RADAR_HIDDEN() && !BitTest(Global_2815059.f_836, 2)) && func_12(PLAYER::PLAYER_ID(), 1, 1)) && !Global_75485) && !Global_60335) && !CAM::IS_SCREEN_FADED_OUT())
 		{
 			MISC::SET_BIT(&(Global_2815059.f_4657), 1);
-			func_302("AMEV_LBD_HELP", -1);
+			func_302("AMEV_LBD_HELP" /* GXT: Press ~INPUT_MULTIPLAYER_INFO~ to show the Freemode Event leaderboard. */, -1);
 			func_301(1);
 			MISC::CLEAR_BIT(&(Global_2815059.f_4657), 0);
 		}
@@ -10682,7 +10682,7 @@ void func_311()//Position - 0xA968
 				}
 			}
 		}
-		if (func_299("AMCH_FLYLOW"))
+		if (func_299("AMCH_FLYLOW" /* GXT: You must fly lower to score in the challenge. */))
 		{
 			HUD::CLEAR_HELP(true);
 		}
@@ -10712,7 +10712,7 @@ void func_312(float fParam0)//Position - 0xAA14
 		}
 		else
 		{
-			if (func_299("AMCH_FLYLOW"))
+			if (func_299("AMCH_FLYLOW" /* GXT: You must fly lower to score in the challenge. */))
 			{
 				HUD::CLEAR_HELP(true);
 			}
@@ -10833,7 +10833,7 @@ void func_315(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 	}
 	if (bParam12)
 	{
-		func_316(iParam6, "HUD_ATTEMPTS", -1, 1, 5, 0, sParam9, 0, 0, 1, iParam13, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
+		func_316(iParam6, "HUD_ATTEMPTS" /* GXT: CURRENT ATTEMPT */, -1, 1, 5, 0, sParam9, 0, 0, 1, iParam13, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
 	}
 	switch (iParam15)
 	{
@@ -10850,21 +10850,21 @@ void func_315(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 		case 1:
 			if (func_168(PLAYER::PLAYER_ID()) == 0)
 			{
-				func_316(iParam7, "HUD_USCORE", -1, 1, 4, 0, sParam9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
+				func_316(iParam7, "HUD_USCORE" /* GXT: YOUR SCORE */, -1, 1, 4, 0, sParam9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
 			}
 			break;
 		
 		case 2:
 			if (func_168(PLAYER::PLAYER_ID()) == 0)
 			{
-				func_316(iParam7, "HUD_UBEST", -1, 1, 4, 0, sParam9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
+				func_316(iParam7, "HUD_UBEST" /* GXT: YOUR BEST */, -1, 1, 4, 0, sParam9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
 			}
 			break;
 		
 		case 3:
 			break;
 	}
-	sVar2 = "HUD_COUNTDOWN";
+	sVar2 = "HUD_COUNTDOWN" /* GXT: EVENT END */;
 	if (!func_222(sParam14))
 	{
 		sVar2 = sParam14;
@@ -10994,23 +10994,23 @@ struct<16> func_319(int iParam0, char* sParam1)//Position - 0xB0E4
 			break;
 		
 		case 1:
-			StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HUD_POSFIRST"), 64);
+			StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HUD_POSFIRST" /* GXT: 1st: */), 64);
 			break;
 		
 		case 2:
-			StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HUD_POSSECOND"), 64);
+			StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HUD_POSSECOND" /* GXT: 2nd: */), 64);
 			break;
 		
 		case 3:
-			StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HUD_POSTHIRD"), 64);
+			StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HUD_POSTHIRD" /* GXT: 3rd: */), 64);
 			break;
 		
 		case 4:
-			StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HUD_POSFOURTH"), 64);
+			StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HUD_POSFOURTH" /* GXT: 4th: */), 64);
 			break;
 		
 		case 5:
-			StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HUD_POSFIFTH"), 64);
+			StringCopy(&Var0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HUD_POSFIFTH" /* GXT: 5th: */), 64);
 			break;
 	}
 	StringConCat(&Var0, " ", 64);
@@ -11116,7 +11116,7 @@ void func_324(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 	}
 	if (bParam11)
 	{
-		func_149(iParam6, "HUD_ATTEMPTS", 0, 0, -1, 0, 5, 0, 1, 1, iParam12, 0, 0, 0, 0, 0, 0, -1);
+		func_149(iParam6, "HUD_ATTEMPTS" /* GXT: CURRENT ATTEMPT */, 0, 0, -1, 0, 5, 0, 1, 1, iParam12, 0, 0, 0, 0, 0, 0, -1);
 	}
 	switch (iParam14)
 	{
@@ -11133,21 +11133,21 @@ void func_324(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 		case 1:
 			if (func_168(PLAYER::PLAYER_ID()) == 0)
 			{
-				func_149(iParam7, "HUD_USCORE", 0, 0, -1, 0, 4, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
+				func_149(iParam7, "HUD_USCORE" /* GXT: YOUR SCORE */, 0, 0, -1, 0, 4, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 			}
 			break;
 		
 		case 2:
 			if (func_168(PLAYER::PLAYER_ID()) == 0)
 			{
-				func_149(iParam7, "HUD_UBEST", 0, 0, -1, 0, 4, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
+				func_149(iParam7, "HUD_UBEST" /* GXT: YOUR BEST */, 0, 0, -1, 0, 4, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 			}
 			break;
 		
 		case 3:
 			break;
 	}
-	sVar2 = "HUD_COUNTDOWN";
+	sVar2 = "HUD_COUNTDOWN" /* GXT: EVENT END */;
 	if (!func_222(sParam13))
 	{
 		sVar2 = sParam13;
@@ -11216,7 +11216,7 @@ void func_325(int iParam0, int iParam1, int iParam2, float fParam3, float fParam
 	}
 	if (bParam12)
 	{
-		func_316(-1, "HUD_ATTEMPTS", -1, 1, 5, 0, sParam9, 1, fParam6, 1, iParam13, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
+		func_316(-1, "HUD_ATTEMPTS" /* GXT: CURRENT ATTEMPT */, -1, 1, 5, 0, sParam9, 1, fParam6, 1, iParam13, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
 	}
 	switch (iParam15)
 	{
@@ -11233,21 +11233,21 @@ void func_325(int iParam0, int iParam1, int iParam2, float fParam3, float fParam
 		case 1:
 			if (func_168(PLAYER::PLAYER_ID()) == 0)
 			{
-				func_316(-1, "HUD_USCORE", -1, 1, 4, 0, sParam9, 1, fParam7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
+				func_316(-1, "HUD_USCORE" /* GXT: YOUR SCORE */, -1, 1, 4, 0, sParam9, 1, fParam7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
 			}
 			break;
 		
 		case 2:
 			if (func_168(PLAYER::PLAYER_ID()) == 0)
 			{
-				func_316(-1, "HUD_UBEST", -1, 1, 4, 0, sParam9, 1, fParam7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
+				func_316(-1, "HUD_UBEST" /* GXT: YOUR BEST */, -1, 1, 4, 0, sParam9, 1, fParam7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
 			}
 			break;
 		
 		case 3:
 			break;
 	}
-	sVar2 = "HUD_COUNTDOWN";
+	sVar2 = "HUD_COUNTDOWN" /* GXT: EVENT END */;
 	if (!func_222(sParam14))
 	{
 		sVar2 = sParam14;
@@ -11262,102 +11262,102 @@ void func_325(int iParam0, int iParam1, int iParam2, float fParam3, float fParam
 
 char* func_326()//Position - 0xB76A
 {
-	return "HUD_COUNTDOWN";
+	return "HUD_COUNTDOWN" /* GXT: EVENT END */;
 	switch (func_328(PLAYER::PLAYER_ID()))
 	{
 		case 131:
-			return "AET_HOT_TARG";
+			return "AET_HOT_TARG" /* GXT: MOVING TARGET END */;
 		
 		case 132:
-			return "AET_CHK_COLL";
+			return "AET_CHK_COLL" /* GXT: CHECKPOINTS END */;
 		
 		case 133:
 			switch (func_327())
 			{
 				case 0:
-					return "AET_CHALL_LJ";
+					return "AET_CHALL_LJ" /* GXT: LONGEST JUMP CHALLENGE END */;
 				
 				case 1:
-					return "AET_CHALL_LS";
+					return "AET_CHALL_LS" /* GXT: LONGEST FREEFALL CHALLENGE END */;
 				
 				case 2:
-					return "AET_CHALL_HS";
+					return "AET_CHALL_HS" /* GXT: HIGHEST SPEED CHALLENGE END */;
 				
 				case 3:
-					return "AET_CHALL_LST";
+					return "AET_CHALL_LST" /* GXT: LONGEST STOPPIE CHALLENGE END */;
 				
 				case 4:
-					return "AET_CHALL_LW";
+					return "AET_CHALL_LW" /* GXT: LONGEST WHEELIE CHALLENGE END */;
 				
 				case 5:
-					return "AET_CHALL_NC";
+					return "AET_CHALL_NC" /* GXT: NO CRASHES CHALLENGE END */;
 				
 				case 6:
-					return "AET_CHALL_LP";
+					return "AET_CHALL_LP" /* GXT: LOWEST PARACHUTE CHALLENGE END */;
 				
 				case 7:
-					return "AET_CHALL_VS";
+					return "AET_CHALL_VS" /* GXT: VEHICLES STOLEN CHALLENGE END */;
 				
 				case 8:
-					return "AET_CHALL_NM";
+					return "AET_CHALL_NM" /* GXT: NEAR MISSES CHALLENGE END */;
 				
 				case 9:
-					return "AET_CHALL_RD";
+					return "AET_CHALL_RD" /* GXT: REVERSE DRIVING CHALLENGE END */;
 				
 				case 10:
-					return "AET_CHALL_LF";
+					return "AET_CHALL_LF" /* GXT: LONGEST FALL SURVIVED CHALLENGE END */;
 				
 				case 11:
-					return "AET_CHALL_LFL";
+					return "AET_CHALL_LFL" /* GXT: LOW FLYING CHALLENGE END */;
 				
 				case 12:
-					return "AET_CHALL_LFI";
+					return "AET_CHALL_LFI" /* GXT: LOW FLYING INVERTED CHALLENGE END */;
 				
 				case 13:
-					return "AET_CHALL_LB";
+					return "AET_CHALL_LB" /* GXT: LONGEST BAIL CHALLENGE END */;
 				
 				case 14:
-					return "AET_CHALL_MB";
+					return "AET_CHALL_MB" /* GXT: MOST BRIDGES CHALLENGE END */;
 				
 				case 15:
-					return "AET_CHALL_HSH";
+					return "AET_CHALL_HSH" /* GXT: HEADSHOTS CHALLENGE END */;
 				
 				case 16:
-					return "AET_CHALL_DB";
+					return "AET_CHALL_DB" /* GXT: DRIVE-BY CHALLENGE END */;
 				
 				case 17:
-					return "AET_CHALL_ML";
+					return "AET_CHALL_ML" /* GXT: MELEE CHALLENGE END */;
 				
 				case 18:
-					return "AET_CHALL_LSN";
+					return "AET_CHALL_LSN" /* GXT: SNIPER KILLS CHALLENGE END */;
 				
 				default:
 			}
 			break;
 		
 		case 136:
-			return "AET_PENNED";
+			return "AET_PENNED" /* GXT: PENNED IN END */;
 		
 		case 138:
-			return "AET_PARCEL";
+			return "AET_PARCEL" /* GXT: HOLD THE WHEEL END */;
 		
 		case 139:
-			return "AET_PROPERTY";
+			return "AET_PROPERTY" /* GXT: HOT PROPERTY END */;
 		
 		case 140:
-			return "AET_DDROP";
+			return "AET_DDROP" /* GXT: DEAD DROP END */;
 		
 		case 141:
-			return "AET_KCASTLE";
+			return "AET_KCASTLE" /* GXT: KING OF THE CASTLE END */;
 		
 		case 144:
-			return "AET_BLAST";
+			return "AET_BLAST" /* GXT: CRIMINAL DAMAGE END */;
 		
 		case 129:
-			return "AET_UWARF";
+			return "AET_UWARF" /* GXT: KILL LIST END */;
 		
 		case 146:
-			return "AET_BEAST";
+			return "AET_BEAST" /* GXT: HUNT THE BEAST END */;
 	}
 	return "";
 }
@@ -13580,61 +13580,61 @@ char* func_403(int iParam0)//Position - 0xF173
 	switch (iParam0)
 	{
 		case 0:
-			return "AMCH_0";
+			return "AMCH_0" /* GXT: Perform the longest jump in a land vehicle. */;
 		
 		case 1:
-			return "AMCH_1";
+			return "AMCH_1" /* GXT: Fall the longest distance with a parachute before opening it. */;
 		
 		case 2:
-			return "AMCH_2";
+			return "AMCH_2" /* GXT: Achieve the highest speed in a land vehicle. */;
 		
 		case 3:
-			return "AMCH_3";
+			return "AMCH_3" /* GXT: Perform the longest stoppie on a motorcycle. */;
 		
 		case 4:
-			return "AMCH_4";
+			return "AMCH_4" /* GXT: Perform the longest wheelie on a motorcycle. */;
 		
 		case 5:
-			return "AMCH_5";
+			return "AMCH_5" /* GXT: Drive the furthest distance in a land vehicle without crashing. */;
 		
 		case 6:
-			return "AMCH_6";
+			return "AMCH_6" /* GXT: Open your parachute closest to the ground while freefalling. */;
 		
 		case 7:
-			return "AMCH_7";
+			return "AMCH_7" /* GXT: Steal the most vehicles. */;
 		
 		case 8:
-			return "AMCH_8";
+			return "AMCH_8" /* GXT: Perform the most near misses with other vehicles in a land vehicle without crashing. */;
 		
 		case 14:
-			return "AMCH_9";
+			return "AMCH_9" /* GXT: Fly under the most ~y~bridges~s~ in the time limit. */;
 		
 		case 9:
-			return "AMCH_12";
+			return "AMCH_12" /* GXT: Reverse the longest distance without crashing. */;
 		
 		case 10:
-			return "AMCH_13";
+			return "AMCH_13" /* GXT: Fall the longest distance without dying. */;
 		
 		case 11:
-			return "AMCH_15";
+			return "AMCH_15" /* GXT: Fly low to the ground for the longest distance. */;
 		
 		case 12:
-			return "AMCH_16";
+			return "AMCH_16" /* GXT: Fly upside-down near the ground for the longest distance. */;
 		
 		case 15:
-			return "AMCH_19";
+			return "AMCH_19" /* GXT: Achieve the highest number of headshot kills on players. */;
 		
 		case 16:
-			return "AMCH_20";
+			return "AMCH_20" /* GXT: Achieve the highest number of driveby kills on players. */;
 		
 		case 17:
-			return "AMCH_21";
+			return "AMCH_21" /* GXT: Achieve the highest number of melee kills on players. */;
 		
 		case 18:
-			return "AMCH_22";
+			return "AMCH_22" /* GXT: Achieve the highest number of sniper rifle kills on players. */;
 		
 		case 13:
-			return "AMCH_23";
+			return "AMCH_23" /* GXT: Travel the furthest distance when bailing from a land vehicle. */;
 		
 		default:
 	}
@@ -13646,61 +13646,61 @@ char* func_404(int iParam0)//Position - 0xF27C
 	switch (iParam0)
 	{
 		case 0:
-			return "AMCH_0SLC";
+			return "AMCH_0SLC" /* GXT: Longest Jump */;
 		
 		case 1:
-			return "AMCH_1SLC";
+			return "AMCH_1SLC" /* GXT: Longest Freefall */;
 		
 		case 2:
-			return "AMCH_2SLC";
+			return "AMCH_2SLC" /* GXT: Highest Speed */;
 		
 		case 3:
-			return "AMCH_3SLC";
+			return "AMCH_3SLC" /* GXT: Longest Stoppie */;
 		
 		case 4:
-			return "AMCH_4SLC";
+			return "AMCH_4SLC" /* GXT: Longest Wheelie */;
 		
 		case 5:
-			return "AMCH_5SLC";
+			return "AMCH_5SLC" /* GXT: No Crashes */;
 		
 		case 6:
-			return "AMCH_6SLC";
+			return "AMCH_6SLC" /* GXT: Lowest Parachute */;
 		
 		case 7:
-			return "AMCH_7SLC";
+			return "AMCH_7SLC" /* GXT: Vehicles Stolen */;
 		
 		case 8:
-			return "AMCH_8SLC";
+			return "AMCH_8SLC" /* GXT: Near Misses */;
 		
 		case 14:
-			return "AMCH_9SLC";
+			return "AMCH_9SLC" /* GXT: Fly Under Bridges */;
 		
 		case 9:
-			return "AMCH_12SLC";
+			return "AMCH_12SLC" /* GXT: Reverse Driving */;
 		
 		case 10:
-			return "AMCH_13SLC";
+			return "AMCH_13SLC" /* GXT: Longest Fall Survived */;
 		
 		case 11:
-			return "AMCH_15SLC";
+			return "AMCH_15SLC" /* GXT: Low Flying */;
 		
 		case 12:
-			return "AMCH_16SLC";
+			return "AMCH_16SLC" /* GXT: Inverted Flying */;
 		
 		case 15:
-			return "AMCH_19SLC";
+			return "AMCH_19SLC" /* GXT: Headshot Kills */;
 		
 		case 16:
-			return "AMCH_20SLC";
+			return "AMCH_20SLC" /* GXT: Driveby */;
 		
 		case 17:
-			return "AMCH_21SLC";
+			return "AMCH_21SLC" /* GXT: Melee */;
 		
 		case 18:
-			return "AMCH_22SLC";
+			return "AMCH_22SLC" /* GXT: Sniper Kills */;
 		
 		case 13:
-			return "AMCH_23SLC";
+			return "AMCH_23SLC" /* GXT: Longest Bail */;
 		
 		default:
 	}
@@ -13712,61 +13712,61 @@ char* func_405(int iParam0)//Position - 0xF385
 	switch (iParam0)
 	{
 		case 0:
-			return "AMCH_BIG_0";
+			return "AMCH_BIG_0" /* GXT: Perform the longest jump in a land vehicle */;
 		
 		case 1:
-			return "AMCH_BIG_1";
+			return "AMCH_BIG_1" /* GXT: Fall the longest distance with a parachute before opening it */;
 		
 		case 2:
-			return "AMCH_BIG_2";
+			return "AMCH_BIG_2" /* GXT: Achieve the highest speed in a land vehicle */;
 		
 		case 3:
-			return "AMCH_BIG_3";
+			return "AMCH_BIG_3" /* GXT: Perform the longest stoppie on a motorcycle */;
 		
 		case 4:
-			return "AMCH_BIG_4";
+			return "AMCH_BIG_4" /* GXT: Perform the longest wheelie on a motorcycle */;
 		
 		case 5:
-			return "AMCH_BIG_5";
+			return "AMCH_BIG_5" /* GXT: Drive the furthest distance in a land vehicle without crashing */;
 		
 		case 6:
-			return "AMCH_BIG_6";
+			return "AMCH_BIG_6" /* GXT: Open your parachute closest to the ground while freefalling */;
 		
 		case 7:
-			return "AMCH_BIG_7";
+			return "AMCH_BIG_7" /* GXT: Steal the most vehicles */;
 		
 		case 8:
-			return "AMCH_BIG_8";
+			return "AMCH_BIG_8" /* GXT: Perform the most near misses with other vehicles in a land vehicle without crashing */;
 		
 		case 14:
-			return "AMCH_BIG_9";
+			return "AMCH_BIG_9" /* GXT: Fly under the most bridges in the time limit */;
 		
 		case 9:
-			return "AMCH_BIG_12";
+			return "AMCH_BIG_12" /* GXT: Reverse the longest distance without crashing */;
 		
 		case 10:
-			return "AMCH_BIG_13";
+			return "AMCH_BIG_13" /* GXT: Fall the longest distance without dying */;
 		
 		case 11:
-			return "AMCH_BIG_15";
+			return "AMCH_BIG_15" /* GXT: Fly low to the ground for the longest distance */;
 		
 		case 12:
-			return "AMCH_BIG_16";
+			return "AMCH_BIG_16" /* GXT: Fly upside-down near the ground for the longest distance */;
 		
 		case 15:
-			return "AMCH_BIG_19";
+			return "AMCH_BIG_19" /* GXT: Achieve the highest number of headshot kills on players */;
 		
 		case 16:
-			return "AMCH_BIG_20";
+			return "AMCH_BIG_20" /* GXT: Achieve the highest number of driveby kills on players */;
 		
 		case 17:
-			return "AMCH_BIG_21";
+			return "AMCH_BIG_21" /* GXT: Achieve the highest number of melee kills on players */;
 		
 		case 18:
-			return "AMCH_BIG_22";
+			return "AMCH_BIG_22" /* GXT: Achieve the highest number of sniper rifle kills on players */;
 		
 		case 13:
-			return "AMCH_BIG_23";
+			return "AMCH_BIG_23" /* GXT: Travel the furthest distance when bailing from a vehicle */;
 		
 		default:
 	}
@@ -18275,7 +18275,7 @@ void func_473(bool bParam0, bool bParam1)//Position - 0x14920
 						case 14:
 							if (!func_380(iVar4) && !func_379(iVar4))
 							{
-								func_534("AMCH_BRIDGE", bParam0, iVar0, iVar4);
+								func_534("AMCH_BRIDGE" /* GXT: Bridge */, bParam0, iVar0, iVar4);
 							}
 							break;
 					}
@@ -19664,15 +19664,15 @@ char* func_532(int iParam0)//Position - 0x16246
 {
 	if (VEHICLE::IS_THIS_MODEL_A_HELI(Local_150.f_67[iParam0 /*2*/]))
 	{
-		return "AMCH_AC";
+		return "AMCH_AC" /* GXT: Air Vehicle */;
 	}
 	else if (VEHICLE::IS_THIS_MODEL_A_PLANE(Local_150.f_67[iParam0 /*2*/]))
 	{
-		return "AMCH_AC";
+		return "AMCH_AC" /* GXT: Air Vehicle */;
 	}
 	else if (VEHICLE::IS_THIS_MODEL_A_BIKE(Local_150.f_67[iParam0 /*2*/]) && !VEHICLE::IS_THIS_MODEL_A_QUADBIKE(Local_150.f_67[iParam0 /*2*/]))
 	{
-		return "AMCH_BIKE";
+		return "AMCH_BIKE" /* GXT: Motorcycle */;
 	}
 	else
 	{
@@ -19802,7 +19802,7 @@ void func_540(var uParam0, char* sParam1)//Position - 0x1650D
 	{
 		return;
 	}
-	sVar0 = "HUD_STARTING";
+	sVar0 = "HUD_STARTING" /* GXT: EVENT START */;
 	if (!func_222(sParam1))
 	{
 		sVar0 = sParam1;
@@ -19815,110 +19815,110 @@ char* func_541(int iParam0)//Position - 0x1654D
 	char* sVar0;
 	
 	sVar0 = SCRIPT::GET_THIS_SCRIPT_NAME();
-	return "HUD_STARTING";
+	return "HUD_STARTING" /* GXT: EVENT START */;
 	if (MISC::ARE_STRINGS_EQUAL(sVar0, "am_hot_target"))
 	{
-		return "AST_HOT_TARG";
+		return "AST_HOT_TARG" /* GXT: MOVING TARGET START */;
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(sVar0, "am_cp_collection"))
 	{
-		return "AST_CHK_COLL";
+		return "AST_CHK_COLL" /* GXT: CHECKPOINTS START */;
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(sVar0, "am_challenges"))
 	{
 		switch (iParam0)
 		{
 			case 0:
-				return "AST_CHALL_LJ";
+				return "AST_CHALL_LJ" /* GXT: LONGEST JUMP CHALLENGE START */;
 			
 			case 1:
-				return "AST_CHALL_LS";
+				return "AST_CHALL_LS" /* GXT: LONGEST FREEFALL CHALLENGE START */;
 			
 			case 2:
-				return "AST_CHALL_HS";
+				return "AST_CHALL_HS" /* GXT: HIGHEST SPEED CHALLENGE START */;
 			
 			case 3:
-				return "AST_CHALL_LST";
+				return "AST_CHALL_LST" /* GXT: LONGEST STOPPIE CHALLENGE START */;
 			
 			case 4:
-				return "AST_CHALL_LW";
+				return "AST_CHALL_LW" /* GXT: LONGEST WHEELIE CHALLENGE START */;
 			
 			case 5:
-				return "AST_CHALL_NC";
+				return "AST_CHALL_NC" /* GXT: NO CRASHES CHALLENGE START */;
 			
 			case 6:
-				return "AST_CHALL_LP";
+				return "AST_CHALL_LP" /* GXT: LOWEST PARACHUTE CHALLENGE START */;
 			
 			case 7:
-				return "AST_CHALL_VS";
+				return "AST_CHALL_VS" /* GXT: VEHICLES STOLEN CHALLENGE START */;
 			
 			case 8:
-				return "AST_CHALL_NM";
+				return "AST_CHALL_NM" /* GXT: NEAR MISSES CHALLENGE START */;
 			
 			case 9:
-				return "AST_CHALL_RD";
+				return "AST_CHALL_RD" /* GXT: REVERSE DRIVING CHALLENGE START */;
 			
 			case 10:
-				return "AST_CHALL_LF";
+				return "AST_CHALL_LF" /* GXT: LONGEST FALL SURVIVED CHALLENGE START */;
 			
 			case 11:
-				return "AST_CHALL_LFL";
+				return "AST_CHALL_LFL" /* GXT: LOW FLYING CHALLENGE START */;
 			
 			case 12:
-				return "AST_CHALL_LFI";
+				return "AST_CHALL_LFI" /* GXT: LOW FLYING INVERTED CHALLENGE START */;
 			
 			case 13:
-				return "AST_CHALL_LB";
+				return "AST_CHALL_LB" /* GXT: LONGEST BAIL CHALLENGE START */;
 			
 			case 14:
-				return "AST_CHALL_MB";
+				return "AST_CHALL_MB" /* GXT: MOST BRIDGES CHALLENGE START */;
 			
 			case 15:
-				return "AST_CHALL_HSH";
+				return "AST_CHALL_HSH" /* GXT: HEADSHOTS CHALLENGE START */;
 			
 			case 16:
-				return "AST_CHALL_DB";
+				return "AST_CHALL_DB" /* GXT: DRIVE-BY CHALLENGE START */;
 			
 			case 17:
-				return "AST_CHALL_ML";
+				return "AST_CHALL_ML" /* GXT: MELEE CHALLENGE START */;
 			
 			case 18:
-				return "AST_CHALL_LSN";
+				return "AST_CHALL_LSN" /* GXT: SNIPER KILLS CHALLENGE START */;
 			
 			default:
 		}
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(sVar0, "am_penned_in"))
 	{
-		return "AST_PENNED";
+		return "AST_PENNED" /* GXT: PENNED IN START */;
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(sVar0, "am_pass_the_parcel"))
 	{
-		return "AST_PARCEL";
+		return "AST_PARCEL" /* GXT: HOLD THE WHEEL START */;
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(sVar0, "am_hot_property"))
 	{
-		return "AST_PROPERTY";
+		return "AST_PROPERTY" /* GXT: HOT PROPERTY START */;
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(sVar0, "am_dead_drop"))
 	{
-		return "AST_DDROP";
+		return "AST_DDROP" /* GXT: DEAD DROP START */;
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(sVar0, "am_king_of_the_castle"))
 	{
-		return "AST_KCASTLE";
+		return "AST_KCASTLE" /* GXT: KING OF THE CASTLE START */;
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(sVar0, "AM_CRIMINAL_DAMAGE"))
 	{
-		return "AST_BLAST";
+		return "AST_BLAST" /* GXT: CRIMINAL DAMAGE START */;
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(sVar0, "AM_KILL_LIST"))
 	{
-		return "AST_UWARF";
+		return "AST_UWARF" /* GXT: KILL LIST START */;
 	}
 	else if (MISC::ARE_STRINGS_EQUAL(sVar0, "AM_HUNT_THE_BEAST"))
 	{
-		return "AST_BEAST";
+		return "AST_BEAST" /* GXT: HUNT THE BEAST START */;
 	}
 	return "";
 }
@@ -19980,16 +19980,16 @@ void func_545(bool bParam0)//Position - 0x16807
 						{
 							if (Local_150.f_3 == 12)
 							{
-								func_302("AMCH_AIRAVI", 30000);
+								func_302("AMCH_AIRAVI" /* GXT: Air vehicles ~HUD_COLOUR_BLUE~~BLIP_PLANE_DROP~~s~ are available at several locations. These will self-destruct once the event is over. */, 30000);
 							}
 							else
 							{
-								func_302("AMCH_AIRAV", 30000);
+								func_302("AMCH_AIRAV" /* GXT: Air vehicles ~HUD_COLOUR_BLUE~~BLIP_HELICOPTER~ ~BLIP_PLANE_DROP~~s~ are available at several locations. These will self-destruct once the event is over. */, 30000);
 							}
 						}
 						else if (func_41(Local_150.f_3))
 						{
-							func_302("AMCH_BIKEAV", 30000);
+							func_302("AMCH_BIKEAV" /* GXT: Motorcycles ~HUD_COLOUR_BLUE~~BLIP_GANG_BIKE~~s~ are available at several locations. */, 30000);
 						}
 						func_301(1);
 						MISC::SET_BIT(&uLocal_144, bParam0);
@@ -20002,7 +20002,7 @@ void func_545(bool bParam0)//Position - 0x16807
 				{
 					if (!HUD::IS_PAUSE_MENU_ACTIVE())
 					{
-						func_302("AMCH_BLOW", 30000);
+						func_302("AMCH_BLOW" /* GXT: This vehicle will now self-destruct. */, 30000);
 						func_301(1);
 						MISC::SET_BIT(&uLocal_144, bParam0);
 					}
@@ -20022,7 +20022,7 @@ void func_545(bool bParam0)//Position - 0x16807
 								{
 									if (PED::IS_PED_IN_FLYING_VEHICLE(PLAYER::PLAYER_PED_ID()))
 									{
-										func_302("AMCH_ALTI", 30000);
+										func_302("AMCH_ALTI" /* GXT: When flying close to the ground, a purple box is displayed on the Radar showing the height you must remain within to score in this challenge. */, 30000);
 										func_301(1);
 										MISC::SET_BIT(&uLocal_144, bParam0);
 									}
@@ -20032,7 +20032,7 @@ void func_545(bool bParam0)//Position - 0x16807
 							case 8:
 								if (func_12(PLAYER::PLAYER_ID(), 1, 1))
 								{
-									func_302("AMCH_NMIS", 30000);
+									func_302("AMCH_NMIS" /* GXT: Points will be given for passing close to another land vehicle at speed without crashing. You must be driving a land vehicle to score. */, 30000);
 									func_301(1);
 									MISC::SET_BIT(&uLocal_144, bParam0);
 								}
@@ -20041,7 +20041,7 @@ void func_545(bool bParam0)//Position - 0x16807
 							case 1:
 								if (func_12(PLAYER::PLAYER_ID(), 1, 1))
 								{
-									func_302("AMCH_FRFALL", -1);
+									func_302("AMCH_FRFALL" /* GXT: Deploy your parachute close to the ground for a higher score. Your score will only be counted if you land safely. Secondary parachutes will not count. */, -1);
 									func_301(1);
 									MISC::SET_BIT(&uLocal_144, bParam0);
 								}
@@ -20052,7 +20052,7 @@ void func_545(bool bParam0)//Position - 0x16807
 							case 18:
 								if (func_12(PLAYER::PLAYER_ID(), 1, 1))
 								{
-									func_302("AMCH_PVPO1", -1);
+									func_302("AMCH_PVPO1" /* GXT: Points will only be given for eliminating other players and not the citizens of Los Santos and Blaine County. */, -1);
 									func_301(1);
 									MISC::SET_BIT(&uLocal_144, bParam0);
 								}
@@ -20061,7 +20061,7 @@ void func_545(bool bParam0)//Position - 0x16807
 							case 17:
 								if (func_12(PLAYER::PLAYER_ID(), 1, 1))
 								{
-									func_302("AMCH_PVPO2", -1);
+									func_302("AMCH_PVPO2" /* GXT: Points will only be given for eliminating other players and not the citizens of Los Santos and Blaine County. Points will be deducted for kills with guns. */, -1);
 									func_301(1);
 									MISC::SET_BIT(&uLocal_144, bParam0);
 								}
@@ -20070,7 +20070,7 @@ void func_545(bool bParam0)//Position - 0x16807
 							case 4:
 								if (func_12(PLAYER::PLAYER_ID(), 1, 1))
 								{
-									func_302("AMCH_WHEELIE", 30000);
+									func_302("AMCH_WHEELIE" /* GXT: Only wheelies performed on motorcycles will count towards this challenge. */, 30000);
 									func_301(1);
 									MISC::SET_BIT(&uLocal_144, bParam0);
 								}
@@ -20079,7 +20079,7 @@ void func_545(bool bParam0)//Position - 0x16807
 							case 3:
 								if (func_12(PLAYER::PLAYER_ID(), 1, 1))
 								{
-									func_302("AMCH_STOPPIE", 30000);
+									func_302("AMCH_STOPPIE" /* GXT: Only stoppies performed on motorcycles will count towards this challenge. */, 30000);
 									func_301(1);
 									MISC::SET_BIT(&uLocal_144, bParam0);
 								}
@@ -20088,7 +20088,7 @@ void func_545(bool bParam0)//Position - 0x16807
 							case 10:
 								if (func_12(PLAYER::PLAYER_ID(), 1, 1))
 								{
-									func_302("AMCH_LFALL", 30000);
+									func_302("AMCH_LFALL" /* GXT: Falls into water will not count towards this challenge. */, 30000);
 									func_301(1);
 									MISC::SET_BIT(&uLocal_144, bParam0);
 								}
@@ -20097,7 +20097,7 @@ void func_545(bool bParam0)//Position - 0x16807
 							case 6:
 								if (func_12(PLAYER::PLAYER_ID(), 1, 1))
 								{
-									func_302("AMCH_LPARA", 30000);
+									func_302("AMCH_LPARA" /* GXT: Landing in water will not count towards this challenge. */, 30000);
 									func_301(1);
 									MISC::SET_BIT(&uLocal_144, bParam0);
 								}
@@ -20122,7 +20122,7 @@ void func_545(bool bParam0)//Position - 0x16807
 									{
 										if (func_1(&uLocal_115, 1000, 0))
 										{
-											func_302("AMCH_OCEAN", 30000);
+											func_302("AMCH_OCEAN" /* GXT: Flying low over deep water will not be counted for this challenge. */, 30000);
 											func_301(1);
 											func_46(&uLocal_115);
 										}
@@ -20149,7 +20149,7 @@ void func_545(bool bParam0)//Position - 0x16807
 									{
 										if (func_529(PLAYER::PLAYER_ID()) && !func_547(PLAYER::PLAYER_ID()))
 										{
-											func_302("AMCH_ALTIEXP", 30000);
+											func_302("AMCH_ALTIEXP" /* GXT: The altimeter won't display on the expanded Radar. Return to the normal Radar to track your height above ground. */, 30000);
 											func_301(1);
 											MISC::SET_BIT(&uLocal_144, bParam0);
 										}
@@ -20168,7 +20168,7 @@ void func_545(bool bParam0)//Position - 0x16807
 					{
 						if (func_1(&uLocal_115, 1000, 0))
 						{
-							func_302("AMCH_FLYLOW", 30000);
+							func_302("AMCH_FLYLOW" /* GXT: You must fly lower to score in the challenge. */, 30000);
 							func_301(1);
 							func_46(&uLocal_115);
 						}
@@ -20187,7 +20187,7 @@ void func_545(bool bParam0)//Position - 0x16807
 							{
 								if (func_12(PLAYER::PLAYER_ID(), 1, 1))
 								{
-									func_302("AMCH_MVS1", 30000);
+									func_302("AMCH_MVS1" /* GXT: Points will only be given for stealing vehicles from the citizens of Los Santos and Blaine County. */, 30000);
 									func_301(1);
 									iLocal_145 = 1;
 								}
@@ -20197,7 +20197,7 @@ void func_545(bool bParam0)//Position - 0x16807
 						{
 							if (func_12(PLAYER::PLAYER_ID(), 1, 1))
 							{
-								func_302("AMCH_MVS2", 30000);
+								func_302("AMCH_MVS2" /* GXT: Points will not be given for stealing from other players or taking vehicles that have already been stolen. */, 30000);
 								func_301(1);
 								MISC::SET_BIT(&uLocal_144, bParam0);
 							}
@@ -20211,7 +20211,7 @@ void func_545(bool bParam0)//Position - 0x16807
 							{
 								if (func_12(PLAYER::PLAYER_ID(), 1, 1))
 								{
-									func_302("AMCH_BRBL", 30000);
+									func_302("AMCH_BRBL" /* GXT: The bridges ~HUD_COLOUR_YELLOW~~BLIP_OBJECTIVE~~s~ that count towards this challenge are displayed on your Radar. */, 30000);
 									func_301(1);
 									iLocal_145 = 1;
 								}
@@ -20221,7 +20221,7 @@ void func_545(bool bParam0)//Position - 0x16807
 						{
 							if (func_12(PLAYER::PLAYER_ID(), 1, 1))
 							{
-								func_302("AMCH_BRBL2", 30000);
+								func_302("AMCH_BRBL2" /* GXT: Flying under a bridge does not deny the points for that bridge to other players. Points will not be given for flying under a bridge more than once. */, 30000);
 								func_301(1);
 								MISC::SET_BIT(&uLocal_144, bParam0);
 							}
@@ -20235,7 +20235,7 @@ void func_545(bool bParam0)//Position - 0x16807
 				{
 					if (!HUD::IS_PAUSE_MENU_ACTIVE() && !HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 					{
-						func_546("AMCH_WARN", func_404(Local_150.f_3), func_403(Local_150.f_3), 30000);
+						func_546("AMCH_WARN" /* GXT: The ~a~ Challenge will begin shortly. ~a~ The top 3 players will win cash and RP. */, func_404(Local_150.f_3), func_403(Local_150.f_3), 30000);
 						func_301(0);
 						Local_1517.f_8 = NETWORK::GET_CLOUD_TIME_AS_INT();
 						AUDIO::PLAY_SOUND_FRONTEND(-1, "Event_Start_Text", "GTAO_FM_Events_Soundset", false);
@@ -21418,15 +21418,15 @@ void func_594(bool bParam0, char* sParam1, int* iParam2, var uParam3, int iParam
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING(sParam9);
 			if (func_598(uParam3))
 			{
-				func_597("DPAD_FRIEND");
+				func_597("DPAD_FRIEND" /* GXT: F */);
 			}
 			else if (func_596(uParam3))
 			{
-				func_597("DPAD_FRIEND");
+				func_597("DPAD_FRIEND" /* GXT: F */);
 			}
 			else if (func_595(uParam3))
 			{
-				func_597("DPAD_CREW");
+				func_597("DPAD_CREW" /* GXT: C */);
 			}
 			else
 			{
@@ -21692,28 +21692,28 @@ void func_611(bool bParam0, int* iParam1, var uParam2, int iParam3, char* sParam
 				}
 				else if (uParam2->f_108 == 6 && !MISC::IS_STRING_NULL_OR_EMPTY(sParam16))
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_ONE_INT");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_ONE_INT" /* GXT: ~a~ ~1~ */);
 					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam16);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(iParam17);
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				}
 				else if (uParam2->f_108 == 5 && !MISC::IS_STRING_NULL_OR_EMPTY(sParam16))
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_ONE_INT");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_ONE_INT" /* GXT: ~a~ ~1~ */);
 					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam16);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(iParam17);
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				}
 				else if (uParam2->f_108 == 7 && !MISC::IS_STRING_NULL_OR_EMPTY(sParam16))
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_TWO_INT");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_TWO_INT" /* GXT: ~a~ ~a~ ~1~ */);
 					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam16);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(iParam17);
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				}
 				else if (uParam2->f_108 == 8 && !MISC::IS_STRING_NULL_OR_EMPTY(&(uParam2->f_104)))
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_UNIT");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_UNIT" /* GXT: ~1~~a~ */);
 					if (fParam13 != -1f)
 					{
 						HUD::ADD_TEXT_COMPONENT_FLOAT(fParam13, 1);
@@ -21727,7 +21727,7 @@ void func_611(bool bParam0, int* iParam1, var uParam2, int iParam3, char* sParam
 				}
 				else if (uParam2->f_108 == 9)
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_CASH");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_CASH" /* GXT: $~a~ */);
 					HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER(iParam10, true);
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				}
@@ -21735,13 +21735,13 @@ void func_611(bool bParam0, int* iParam1, var uParam2, int iParam3, char* sParam
 				{
 					if (iParam10 == 0)
 					{
-						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_CASH");
+						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_CASH" /* GXT: $~a~ */);
 						HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER(iParam10, true);
 						GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 					}
 					else
 					{
-						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_NG_CASH");
+						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_NG_CASH" /* GXT: -$~a~ */);
 						HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER(iParam10, true);
 						GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 					}
@@ -21798,15 +21798,15 @@ void func_611(bool bParam0, int* iParam1, var uParam2, int iParam3, char* sParam
 				}
 				if (func_598(uParam2))
 				{
-					func_597("DPAD_FRIEND");
+					func_597("DPAD_FRIEND" /* GXT: F */);
 				}
 				else if (func_596(uParam2))
 				{
-					func_597("DPAD_FRIEND");
+					func_597("DPAD_FRIEND" /* GXT: F */);
 				}
 				else if (func_595(uParam2))
 				{
-					func_597("DPAD_CREW");
+					func_597("DPAD_CREW" /* GXT: C */);
 				}
 				else
 				{
@@ -22721,7 +22721,7 @@ void func_656(int* iParam0, char* sParam1, char* sParam2, int iParam3)//Position
 		}
 		else
 		{
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_BRACKT");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_BRACKT" /* GXT: ~a~ (~a~) */);
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam1);
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam2);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -22740,19 +22740,19 @@ char* func_657()//Position - 0x19709
 	switch (func_226(PLAYER::PLAYER_ID()))
 	{
 		case 163:
-			return "BD_SORT_1";
+			return "BD_SORT_1" /* GXT: Total Value */;
 			break;
 		
 		case 160:
-			return "BD_SORT_4";
+			return "BD_SORT_4" /* GXT: Packages Collected */;
 			break;
 		
 		case 154:
-			return "BD_SORT_3";
+			return "BD_SORT_3" /* GXT: Total Cash */;
 			break;
 		
 		case 155:
-			return "BD_SORT_3";
+			return "BD_SORT_3" /* GXT: Total Cash */;
 			break;
 	}
 	return "";
@@ -22763,254 +22763,254 @@ char* func_658(var uParam0)//Position - 0x19761
 	switch (uParam0->f_112)
 	{
 		case 0:
-			return "GR_DPD_E";
+			return "GR_DPD_E" /* GXT: Steal Cargo */;
 			break;
 		
 		case 1:
-			return "GR_DPD_F";
+			return "GR_DPD_F" /* GXT: Sell Cargo */;
 			break;
 		
 		case 2:
-			return "GR_DPD_S";
+			return "GR_DPD_S" /* GXT: Business Setup */;
 			break;
 	}
 	switch (uParam0->f_110)
 	{
 		case 0:
-			return "GR_DPD_A";
+			return "GR_DPD_A" /* GXT: Business Setup */;
 			break;
 		
 		case 1:
-			return "GR_DPD_B";
+			return "GR_DPD_B" /* GXT: Steal Supplies */;
 			break;
 		
 		case 2:
-			return "GR_DPD_C";
+			return "GR_DPD_C" /* GXT: Sell Weapons */;
 			break;
 		
 		case 3:
-			return "GR_DPD_D";
+			return "GR_DPD_D" /* GXT: Defend Business */;
 			break;
 	}
 	switch (func_226(PLAYER::PLAYER_ID()))
 	{
 		case 233:
-			return "H2_DPAD_SET";
+			return "H2_DPAD_SET" /* GXT: Heist Prep */;
 			break;
 		
 		case 180:
-			return "GB_BIGUNLOAD_T";
+			return "GB_BIGUNLOAD_T" /* GXT: Gunrunning */;
 			break;
 		
 		case 182:
-			return "DEAL_DEALN";
+			return "DEAL_DEALN" /* GXT: By the Pound */;
 			break;
 		
 		case 194:
-			return "PI_BIK_13_0";
+			return "PI_BIK_13_0" /* GXT: Rippin' it Up */;
 			break;
 		
 		case 189:
-			return "PI_BIK_4_1";
+			return "PI_BIK_4_1" /* GXT: Race to Point */;
 			break;
 		
 		case 193:
-			return "PI_BIK_13_1";
+			return "PI_BIK_13_1" /* GXT: Hit & Ride */;
 			break;
 		
 		case 205:
-			return "PI_BIK_13_3";
+			return "PI_BIK_13_3" /* GXT: Criminal Mischief */;
 			break;
 		
 		case 186:
-			return "CELL_BIKER_CK";
+			return "CELL_BIKER_CK" /* GXT: Weapon of Choice */;
 			break;
 		
 		case 207:
-			return "DV_SH_TITLE";
+			return "DV_SH_TITLE" /* GXT: Fragile Goods */;
 			break;
 		
 		case 208:
-			return "BA_SH_TITLE";
+			return "BA_SH_TITLE" /* GXT: Torched */;
 			break;
 		
 		case 209:
-			return "SHU_SH_TITLE";
+			return "SHU_SH_TITLE" /* GXT: Outrider */;
 			break;
 		
 		case 210:
-			return "PI_BIK_13_4";
+			return "PI_BIK_13_4" /* GXT: Wheelie Rider */;
 			break;
 		
 		case 183:
-			return "CELL_BIKER_RESC";
+			return "CELL_BIKER_RESC" /* GXT: P.O.W. */;
 			break;
 		
 		case 199:
-			return "CELL_BIKER_SEAR";
+			return "CELL_BIKER_SEAR" /* GXT: Search and Destroy */;
 			break;
 		
 		case 201:
-			return "CELL_BIKER_STAN";
+			return "CELL_BIKER_STAN" /* GXT: Stand Your Ground */;
 			break;
 		
 		case 142:
-			return "PIM_MAGM210";
+			return "PIM_MAGM210" /* GXT: Sightseer */;
 			break;
 		
 		case 163:
-			return "PIM_MAGM608";
+			return "PIM_MAGM608" /* GXT: Auto Buyout */;
 			break;
 		
 		case 160:
-			return "PIM_MAGM604";
+			return "PIM_MAGM604" /* GXT: Due Diligence */;
 			break;
 		
 		case 154:
-			return "PIM_MAGM602";
+			return "PIM_MAGM602" /* GXT: Market Manipulation */;
 			break;
 		
 		case 155:
-			return "PIM_MAGM603";
+			return "PIM_MAGM603" /* GXT: Courier Service */;
 			break;
 		
 		case 148:
 			if (func_660())
 			{
-				return "LBD_BKVBK";
+				return "LBD_BKVBK" /* GXT: Deathmatch */;
 			}
-			return "PIM_MAGM201";
+			return "PIM_MAGM201" /* GXT: Executive Deathmatch */;
 			break;
 		
 		case 151:
 			if (func_263(1))
 			{
-				return "GB_DPAD_BMFD";
+				return "GB_DPAD_BMFD" /* GXT: Marked For Death */;
 			}
-			return "PIM_MAGM202";
+			return "PIM_MAGM202" /* GXT: Put Out a Hit */;
 			break;
 		
 		case 152:
-			return "PIM_MAGM204";
+			return "PIM_MAGM204" /* GXT: Piracy Prevention */;
 			break;
 		
 		case 153:
 			if (func_263(1))
 			{
-				return "PI_BIK_3_2";
+				return "PI_BIK_3_2" /* GXT: On The Run */;
 			}
-			return "PIM_MAGM601";
+			return "PIM_MAGM601" /* GXT: Most Wanted */;
 			break;
 		
 		case 157:
-			return "PIM_MAGM207";
+			return "PIM_MAGM207" /* GXT: Asset Recovery */;
 			break;
 		
 		case 159:
-			return "PIM_MAGM206";
+			return "PIM_MAGM206" /* GXT: Hostile Takeover */;
 			break;
 		
 		case 162:
-			return "PIM_MAGM607";
+			return "PIM_MAGM607" /* GXT: Point to Point */;
 			break;
 		
 		case 164:
-			return "PIM_MAGM212";
+			return "PIM_MAGM212" /* GXT: Executive Search */;
 			break;
 		
 		case 166:
-			return "GB_DPAD_HEAD";
+			return "GB_DPAD_HEAD" /* GXT: Headhunter */;
 		
 		case 167:
-			return "GB_DPAD_BUY";
+			return "GB_DPAD_BUY" /* GXT: Buy Special Cargo */;
 		
 		case 168:
-			return "GB_DPAD_SELL";
+			return "GB_DPAD_SELL" /* GXT: Sell Special Cargo */;
 		
 		case 169:
-			return "GB_DPAD_DEF";
+			return "GB_DPAD_DEF" /* GXT: Defend Special Cargo */;
 		
 		case 170:
-			return "GB_DPAD_AIR";
+			return "GB_DPAD_AIR" /* GXT: Airfreight */;
 		
 		case 171:
-			return "GB_DPAD_CASH";
+			return "GB_DPAD_CASH" /* GXT: Cashing Out */;
 		
 		case 172:
-			return "GB_DPAD_SAL";
+			return "GB_DPAD_SAL" /* GXT: Salvage */;
 		
 		case 173:
-			return "GB_DPAD_FRA";
+			return "GB_DPAD_FRA" /* GXT: Haulage */;
 		
 		case 178:
-			return "VEX_TITLEa";
+			return "VEX_TITLEa" /* GXT: Steal Vehicle */;
 		
 		case 188:
-			return "VEX_TITLEb";
+			return "VEX_TITLEb" /* GXT: Export Vehicle */;
 		
 		case 218:
-			return "FRT_MODE";
+			return "FRT_MODE" /* GXT: Fortified */;
 		
 		case 217:
-			return "FRT_TRNS";
+			return "FRT_TRNS" /* GXT: Transporter */;
 		
 		case 214:
-			return "MODE_PLW";
+			return "MODE_PLW" /* GXT: Plowed */;
 		
 		case 215:
-			return "MODE_FUL";
+			return "MODE_FUL" /* GXT: Fully Loaded */;
 		
 		case 216:
-			return "MODE_AA";
+			return "MODE_AA" /* GXT: Amphibious Assault */;
 		
 		case 219:
-			return "MODE_VEL";
+			return "MODE_VEL" /* GXT: Velocity */;
 		
 		case 220:
-			return "MODE_RMP";
+			return "MODE_RMP" /* GXT: Ramped Up */;
 		
 		case 221:
-			return "MODE_STK";
+			return "MODE_STK" /* GXT: Stockpiling */;
 		
 		case 225:
-			return "GR_TITLEL";
+			return "GR_TITLEL" /* GXT: Gunrunning */;
 		
 		case 226:
-			return "GRS_TITLEL";
+			return "GRS_TITLEL" /* GXT: Gunrunning Sell */;
 		
 		case 227:
-			return "GRD_TITLEL";
+			return "GRD_TITLEL" /* GXT: Gunrunning Defend */;
 		
 		case 195:
-			return "GB_STEAL_T";
+			return "GB_STEAL_T" /* GXT: Nine Tenths Of The Law */;
 		
 		case 198:
-			return "SC_MENU_TITLE";
+			return "SC_MENU_TITLE" /* GXT: Cracked */;
 		
 		case 190:
-			return "GB_DPAD_BSEL";
+			return "GB_DPAD_BSEL" /* GXT: Biker Sell */;
 		
 		case 191:
-			return "GB_DPAD_BDEF";
+			return "GB_DPAD_BDEF" /* GXT: Biker Defend */;
 		
 		case 185:
-			return "GB_DPAD_GFH";
+			return "GB_DPAD_GFH" /* GXT: Guns For Hire */;
 		
 		case 197:
-			return "GB_DPAD_JB";
+			return "GB_DPAD_JB" /* GXT: Jailbreak */;
 		
 		case 179:
-			return "CELL_JOUST";
+			return "CELL_JOUST" /* GXT: Joust */;
 		
 		case 200:
-			return "CAG_BLIP";
+			return "CAG_BLIP" /* GXT: Caged In */;
 		
 		case 192:
 			if (func_659(Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_182))
 			{
-				return "GB_DPAD_BSET";
+				return "GB_DPAD_BSET" /* GXT: Business Setup */;
 			}
-			return "GB_DPAD_BBUY";
+			return "GB_DPAD_BBUY" /* GXT: Resupply */;
 			break;
 	}
 	return "";
@@ -23063,14 +23063,14 @@ void func_664(int* iParam0, char* sParam1, char* sParam2, int iParam3)//Position
 		}
 		else if (func_328(PLAYER::PLAYER_ID()) == 133)
 		{
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_BRACKT_C");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_BRACKT_C" /* GXT: ~a~ Challenge (~a~) */);
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam1);
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam2);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 		}
 		else
 		{
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_BRACKT");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FM_AE_BRACKT" /* GXT: ~a~ (~a~) */);
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam1);
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam2);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -23102,67 +23102,67 @@ char* func_665(var uParam0)//Position - 0x19C9B
 			return "";
 		
 		case 132:
-			return "FM_AE_SORT_5";
+			return "FM_AE_SORT_5" /* GXT: Points */;
 		
 		case 133:
 			switch (func_327())
 			{
 				case 0:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 1:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 2:
-					return "FM_AE_SORT_3";
+					return "FM_AE_SORT_3" /* GXT: Speed */;
 				
 				case 3:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 4:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 5:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 6:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 7:
-					return "FM_AE_SORT_13";
+					return "FM_AE_SORT_13" /* GXT: Vehicles */;
 				
 				case 8:
-					return "FM_AE_SORT_4";
+					return "FM_AE_SORT_4" /* GXT: Misses */;
 				
 				case 9:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 10:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 11:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 12:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 13:
-					return "FM_AE_SORT_2";
+					return "FM_AE_SORT_2" /* GXT: Distance */;
 				
 				case 14:
-					return "FM_AE_SORT_5";
+					return "FM_AE_SORT_5" /* GXT: Points */;
 				
 				case 15:
-					return "FM_AE_SORT_9";
+					return "FM_AE_SORT_9" /* GXT: Kills */;
 				
 				case 16:
-					return "FM_AE_SORT_9";
+					return "FM_AE_SORT_9" /* GXT: Kills */;
 				
 				case 17:
-					return "FM_AE_SORT_9";
+					return "FM_AE_SORT_9" /* GXT: Kills */;
 				
 				case 18:
-					return "FM_AE_SORT_9";
+					return "FM_AE_SORT_9" /* GXT: Kills */;
 				
 				default:
 			}
@@ -23175,19 +23175,19 @@ char* func_665(var uParam0)//Position - 0x19C9B
 			return "";
 		
 		case 139:
-			return "FM_AE_SORT_10";
+			return "FM_AE_SORT_10" /* GXT: Possession Time */;
 		
 		case 140:
 			return "";
 		
 		case 141:
-			return "FM_AE_SORT_5";
+			return "FM_AE_SORT_5" /* GXT: Points */;
 		
 		case 144:
-			return "FM_AE_SORT_1";
+			return "FM_AE_SORT_1" /* GXT: Destruction Value */;
 		
 		case 129:
-			return "FM_AE_SORT_9";
+			return "FM_AE_SORT_9" /* GXT: Kills */;
 	}
 	return "";
 }
@@ -23212,115 +23212,115 @@ char* func_667(var uParam0)//Position - 0x19E52
 	switch (iVar0)
 	{
 		case 131:
-			return "PIM_TA9";
+			return "PIM_TA9" /* GXT: Moving Target */;
 		
 		case 132:
 			if (func_669() == 0)
 			{
-				return "CPC_TILEL";
+				return "CPC_TILEL" /* GXT: Checkpoints */;
 			}
 			else if (func_669() == 1)
 			{
-				return "CPC_TILELA";
+				return "CPC_TILELA" /* GXT: Air Checkpoints */;
 			}
-			return "PIM_TA0";
+			return "PIM_TA0" /* GXT: Checkpoints */;
 			break;
 		
 		case 133:
 			switch (func_327())
 			{
 				case 0:
-					return "AMCH_0SLC";
+					return "AMCH_0SLC" /* GXT: Longest Jump */;
 				
 				case 1:
-					return "AMCH_1SLC";
+					return "AMCH_1SLC" /* GXT: Longest Freefall */;
 				
 				case 2:
-					return "AMCH_2SLC";
+					return "AMCH_2SLC" /* GXT: Highest Speed */;
 				
 				case 3:
-					return "AMCH_3SLC";
+					return "AMCH_3SLC" /* GXT: Longest Stoppie */;
 				
 				case 4:
-					return "AMCH_4SLC";
+					return "AMCH_4SLC" /* GXT: Longest Wheelie */;
 				
 				case 5:
-					return "AMCH_5SLC";
+					return "AMCH_5SLC" /* GXT: No Crashes */;
 				
 				case 6:
-					return "AMCH_6SLC";
+					return "AMCH_6SLC" /* GXT: Lowest Parachute */;
 				
 				case 7:
-					return "AMCH_7SLC";
+					return "AMCH_7SLC" /* GXT: Vehicles Stolen */;
 				
 				case 8:
-					return "AMCH_8SLC";
+					return "AMCH_8SLC" /* GXT: Near Misses */;
 				
 				case 9:
-					return "AMCH_12SLC";
+					return "AMCH_12SLC" /* GXT: Reverse Driving */;
 				
 				case 10:
-					return "AMCH_13SLC";
+					return "AMCH_13SLC" /* GXT: Longest Fall Survived */;
 				
 				case 11:
-					return "AMCH_15SLC";
+					return "AMCH_15SLC" /* GXT: Low Flying */;
 				
 				case 12:
-					return "AMCH_16SLC";
+					return "AMCH_16SLC" /* GXT: Inverted Flying */;
 				
 				case 13:
-					return "AMCH_23SLC";
+					return "AMCH_23SLC" /* GXT: Longest Bail */;
 				
 				case 14:
-					return "AMCH_9SLC";
+					return "AMCH_9SLC" /* GXT: Fly Under Bridges */;
 				
 				case 15:
-					return "AMCH_19SLC";
+					return "AMCH_19SLC" /* GXT: Headshot Kills */;
 				
 				case 16:
-					return "AMCH_20SLC";
+					return "AMCH_20SLC" /* GXT: Driveby */;
 				
 				case 17:
-					return "AMCH_21SLC";
+					return "AMCH_21SLC" /* GXT: Melee */;
 				
 				case 18:
-					return "AMCH_22SLC";
+					return "AMCH_22SLC" /* GXT: Sniper Kills */;
 				
 				default:
 			}
 			break;
 		
 		case 136:
-			return "PIM_TA10";
+			return "PIM_TA10" /* GXT: Penned In */;
 		
 		case 138:
-			return "PIM_TA4";
+			return "PIM_TA4" /* GXT: Hold the Wheel */;
 		
 		case 139:
-			return "PIM_TA5";
+			return "PIM_TA5" /* GXT: Hot Property */;
 		
 		case 140:
-			return "PIM_TA3";
+			return "PIM_TA3" /* GXT: Dead Drop */;
 		
 		case 141:
-			return "PIM_TA8";
+			return "PIM_TA8" /* GXT: King of the Castle */;
 		
 		case 144:
-			return "PIM_TA2";
+			return "PIM_TA2" /* GXT: Criminal Damage */;
 		
 		case 129:
 			if (func_668() == 1)
 			{
-				return "FM_AE_TITL_12";
+				return "FM_AE_TITL_12" /* GXT: Kill List Competitive */;
 			}
 			else
 			{
-				return "PIM_TA7";
+				return "PIM_TA7" /* GXT: Kill List */;
 			}
 			break;
 		
 		case 146:
-			return "PIM_TA6";
+			return "PIM_TA6" /* GXT: Hunt the Beast */;
 	}
 	return "";
 }
@@ -23373,7 +23373,7 @@ void func_670(int* iParam0, char* sParam1, char* sParam2, bool bParam3, int iPar
 				iVar0 = 1;
 				iVar1 = 2;
 			}
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("LBD_DPD_CNT");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("LBD_DPD_CNT" /* GXT: (~1~/~1~) */);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iVar0);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iVar1);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -23458,7 +23458,7 @@ char* func_675(int iParam0, char* sParam1, bool bParam2)//Position - 0x1A21A
 	}
 	else if (bParam2)
 	{
-		return "HUD_LBD_IMP";
+		return "HUD_LBD_IMP" /* GXT: One on One Deathmatch */;
 	}
 	else if (iParam0 == 25)
 	{
@@ -23466,7 +23466,7 @@ char* func_675(int iParam0, char* sParam1, bool bParam2)//Position - 0x1A21A
 		{
 			Global_1836599 = 1;
 		}
-		return "HUD_LBD_OVR";
+		return "HUD_LBD_OVR" /* GXT: Overall Results */;
 	}
 	else if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam1))
 	{
@@ -23487,15 +23487,15 @@ char* func_675(int iParam0, char* sParam1, bool bParam2)//Position - 0x1A21A
 			case 0:
 			case 31:
 			case 42:
-				return "HUD_LBD_DM";
+				return "HUD_LBD_DM" /* GXT: Deathmatch Leaderboard */;
 				break;
 			
 			case 1:
-				return "HUD_LBD_TDM";
+				return "HUD_LBD_TDM" /* GXT: Team Deathmatch Leaderboard */;
 				break;
 			
 			case 5:
-				return "HUD_LBD_GRCE";
+				return "HUD_LBD_GRCE" /* GXT: GTA Race Leaderboard */;
 				break;
 			
 			case 4:
@@ -23504,11 +23504,11 @@ char* func_675(int iParam0, char* sParam1, bool bParam2)//Position - 0x1A21A
 			case 6:
 			case 26:
 			case 11:
-				return "HUD_LBD_RCE";
+				return "HUD_LBD_RCE" /* GXT: Race Leaderboard */;
 				break;
 			
 			case 7:
-				return "HUD_LBD_BRCE";
+				return "HUD_LBD_BRCE" /* GXT: Parachute Race Leaderboard */;
 				break;
 			
 			case 18:
@@ -23523,7 +23523,7 @@ char* func_675(int iParam0, char* sParam1, bool bParam2)//Position - 0x1A21A
 				break;
 			
 			case 3:
-				return "HUD_LBD_HRD";
+				return "HUD_LBD_HRD" /* GXT: Survival Leaderboard */;
 				break;
 			
 			case 22:
@@ -23538,21 +23538,21 @@ char* func_676()//Position - 0x1A384
 {
 	if (NETWORK::NETWORK_SESSION_IS_CLOSED_FRIENDS())
 	{
-		return "HUD_LBD_FMF";
+		return "HUD_LBD_FMF" /* GXT: GTA Online (Friend, ~1~) */;
 	}
 	if (NETWORK::NETWORK_SESSION_IS_CLOSED_CREW())
 	{
-		return "HUD_LBD_FMC";
+		return "HUD_LBD_FMC" /* GXT: GTA Online (Crew, ~1~) */;
 	}
 	if (NETWORK::NETWORK_SESSION_IS_SOLO())
 	{
-		return "HUD_LBD_FMS";
+		return "HUD_LBD_FMS" /* GXT: GTA Online (Solo, ~1~) */;
 	}
 	if (NETWORK::NETWORK_SESSION_IS_PRIVATE())
 	{
-		return "HUD_LBD_FMI";
+		return "HUD_LBD_FMI" /* GXT: GTA Online (Invite, ~1~) */;
 	}
-	return "HUD_LBD_FMP";
+	return "HUD_LBD_FMP" /* GXT: GTA Online (Public, ~1~) */;
 }
 
 void func_677()//Position - 0x1A3C8
@@ -24120,7 +24120,7 @@ void func_708()//Position - 0x1ACE6
 			if (((!HUD::IS_RADAR_HIDDEN() && !HUD::IS_HELP_MESSAGE_BEING_DISPLAYED()) && !func_309()) && func_12(PLAYER::PLAYER_ID(), 1, 1))
 			{
 				MISC::SET_BIT(&(Global_1836844.f_1), 7);
-				func_302("FME_PASINT", 30000);
+				func_302("FME_PASINT" /* GXT: You will not be able to take part in this event in Passive Mode. */, 30000);
 				func_301(1);
 			}
 		}
@@ -24139,7 +24139,7 @@ void func_708()//Position - 0x1ACE6
 		{
 			if (func_730())
 			{
-				func_302("AMEV_GA_RP", -1);
+				func_302("AMEV_GA_RP" /* GXT: When in an active Gang Attack location, some other players may not be attackable. */, -1);
 				if (func_226(PLAYER::PLAYER_ID()) != 200)
 				{
 					func_301(1);
@@ -24168,7 +24168,7 @@ void func_708()//Position - 0x1ACE6
 		{
 			MISC::CLEAR_BIT(&(Global_1836844.f_1), 9);
 			func_729(0);
-			func_302("FME_TBL00", -1);
+			func_302("FME_TBL00" /* GXT: Job & Activity Triggers have been temporarily hidden as you are now an active participant in the current Freemode Event. They will return once the Event is over. */, -1);
 			func_301(1);
 		}
 	}
@@ -24187,7 +24187,7 @@ void func_708()//Position - 0x1ACE6
 			{
 				MISC::CLEAR_BIT(&(Global_1836844.f_1), 18);
 				MISC::SET_BIT(&(Global_1836844.f_1), 19);
-				func_302("AMTT_RPAS", -1);
+				func_302("AMTT_RPAS" /* GXT: You have been removed from the current event because you triggered a Time Trial. */, -1);
 				func_301(1);
 			}
 		}
@@ -24325,7 +24325,7 @@ void func_710(int iParam0, int iParam1)//Position - 0x1B28A
 		if (func_691() > 0)
 		{
 			func_713(iParam0);
-			if (func_299("AMEV_LBD_HELP"))
+			if (func_299("AMEV_LBD_HELP" /* GXT: Press ~INPUT_MULTIPLAYER_INFO~ to show the Freemode Event leaderboard. */))
 			{
 				HUD::CLEAR_HELP(true);
 			}

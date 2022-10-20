@@ -503,23 +503,23 @@ void func_3(var uParam0)//Position - 0x16F
 		{
 			if (func_13(PLAYER::PLAYER_ID()))
 			{
-				if (!func_12("HIP_TOOMANY2"))
+				if (!func_12("HIP_TOOMANY2" /* GXT: This mission can only be started with a maximum of 5 Motorcycle Club members. */))
 				{
-					func_11("HIP_TOOMANY2");
+					func_11("HIP_TOOMANY2" /* GXT: This mission can only be started with a maximum of 5 Motorcycle Club members. */);
 				}
 			}
-			else if (!func_12("HIP_TOOMANY1"))
+			else if (!func_12("HIP_TOOMANY1" /* GXT: This mission can only be started with a maximum of 5 Organization members. */))
 			{
-				func_11("HIP_TOOMANY1");
+				func_11("HIP_TOOMANY1" /* GXT: This mission can only be started with a maximum of 5 Organization members. */);
 			}
 		}
-		else if (func_12("HIP_TOOMANY1") || func_12("HIP_TOOMANY2"))
+		else if (func_12("HIP_TOOMANY1" /* GXT: This mission can only be started with a maximum of 5 Organization members. */) || func_12("HIP_TOOMANY2" /* GXT: This mission can only be started with a maximum of 5 Motorcycle Club members. */))
 		{
 			HUD::CLEAR_HELP(true);
 		}
 		if ((BitTest(Local_174.f_3[(0 / 32)], (0 % 32)) && !func_10()) && !iLocal_142)
 		{
-			func_9("HIP_TIPTEXT", -1);
+			func_9("HIP_TIPTEXT" /* GXT: Access additional information by pressing ~INPUT_FRONTEND_Y~. This includes mission details and the impact completion will have on The Cayo Perico Heist. */, -1);
 			iLocal_142 = 1;
 		}
 		if ((func_8(uParam0->f_806, 2) && !BitTest(uParam0->f_1085, 11)) && !NETWORK::NETWORK_IS_ACTIVITY_SESSION())
@@ -527,7 +527,7 @@ void func_3(var uParam0)//Position - 0x16F
 			iVar0 = func_7(9511, -1, 0);
 			if (!BitTest(iVar0, 15))
 			{
-				func_9("HIF_FINALEINT", -1);
+				func_9("HIF_FINALEINT" /* GXT: Here you can preview the outcome of your scoping and Prep work. Press Start to begin The Cayo Perico Heist alone, or invite other players. */, -1);
 				MISC::SET_BIT(&iVar0, 15);
 				func_4(9511, iVar0, -1, 1, 0);
 			}
@@ -1504,7 +1504,7 @@ char* func_37(int iParam0)//Position - 0x11F9
 			return "NAV_BLOCKED";
 		
 		case 5:
-			return "SELECT";
+			return "SELECT" /* GXT: Filter List */;
 		
 		case 6:
 			return "BACK";
@@ -2230,7 +2230,7 @@ bool func_82()//Position - 0x1C24
 {
 	char* sVar0;
 	
-	sVar0 = "NHPG_PROMPT";
+	sVar0 = "NHPG_PROMPT" /* GXT: Press ~INPUT_CONTEXT~ to use the Planning Board. */;
 	if (Local_159.f_1 != 0)
 	{
 		Call_Loc(Local_159.f_1);
@@ -2870,10 +2870,10 @@ char* func_107(int iParam0)//Position - 0x2590
 	switch (iParam0)
 	{
 		case 0:
-			return "NHPG_HELP_BBOSS";
+			return "NHPG_HELP_BBOSS" /* GXT: Register as a VIP, CEO or MC President to gain access to the Planning Board. */;
 		
 		case 1:
-			return "NHPG_HELP_BGOON";
+			return "NHPG_HELP_BGOON" /* GXT: Unable to use the Planning Board. The leader has not formed an Organization or Motorcycle Club. */;
 		
 		default:
 	}
@@ -2926,7 +2926,7 @@ void func_112()//Position - 0x267F
 {
 	char* sVar0;
 	
-	sVar0 = "NHPG_PROMPT";
+	sVar0 = "NHPG_PROMPT" /* GXT: Press ~INPUT_CONTEXT~ to use the Planning Board. */;
 	if (Local_159.f_1 != 0)
 	{
 		Call_Loc(Local_159.f_1);
@@ -3029,7 +3029,7 @@ int func_113(var uParam0)//Position - 0x26AC
 
 int func_114()//Position - 0x2805
 {
-	if (func_12("H4PREP_UNVLB"))
+	if (func_12("H4PREP_UNVLB" /* GXT: Freemode Prep mission currently unavailable. Please wait or look for rival crews transporting the Heist Prep Equipment ~HUD_COLOUR_GREEN~~BLIP_ISLAND_HEIST_PREP~~s~ to steal from instead. */))
 	{
 		return 1;
 	}
@@ -3171,21 +3171,21 @@ int func_124(var uParam0, int iParam1, var uParam2)//Position - 0x29DF
 	
 	bVar5 = false;
 	iVar7 = 36;
-	StringCopy(&cVar0, "HPWARN_CONF", 64);
+	StringCopy(&cVar0, "HPWARN_CONF" /* GXT: Confirm */, 64);
 	switch (iParam1)
 	{
 		case 0:
 			Call_Loc(Local_159.f_33.f_4);
 			cVar1 = { StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal };
-			StringCopy(&cVar4, "HEIST_WARN_2", 64);
+			StringCopy(&cVar4, "HEIST_WARN_2" /* GXT: Do you wish to proceed? */, 64);
 			bVar5 = true;
 			Call_Loc(Local_159.f_33.f_3);
 			iVar6 = StackVal;
 			break;
 		
 		case 1:
-			StringCopy(&cVar0, "FM_CSC_QUIT", 64);
-			StringCopy(&cVar1, "FM_CSC_QUIT1", 64);
+			StringCopy(&cVar0, "FM_CSC_QUIT" /* GXT: Confirm */, 64);
+			StringCopy(&cVar1, "FM_CSC_QUIT1" /* GXT: Are you sure you want to quit this Job? */, 64);
 			break;
 		
 		case 2:
@@ -10416,7 +10416,7 @@ void func_356(var uParam0)//Position - 0xBC37
 	bVar0 = uParam0->f_1084 == PLAYER::PLAYER_ID();
 	if (func_351(&(Global_1974423[uParam0->f_1084 /*25*/].f_18)))
 	{
-		func_422("", "HEIST_IB_CONT", uParam0->f_823.f_245, uParam0, 0);
+		func_422("", "HEIST_IB_CONT" /* GXT: Continue (~a~) */, uParam0->f_823.f_245, uParam0, 0);
 	}
 	iVar1 = uParam0->f_806;
 	bLocal_141 = true;
@@ -10424,54 +10424,54 @@ void func_356(var uParam0)//Position - 0xBC37
 	{
 		if (((func_421(iLocal_152) || iLocal_152 == -2) || iLocal_152 == -3) || iLocal_152 == -4)
 		{
-			func_420(2, 201, "CH_INSTR_SEL", uParam0, 1, 363);
+			func_420(2, 201, "CH_INSTR_SEL" /* GXT: Select */, uParam0, 1, 363);
 		}
 		else if (iVar1 == 1002)
 		{
-			func_420(2, 201, "CH_INSTR_LM", uParam0, 1, 363);
+			func_420(2, 201, "CH_INSTR_LM" /* GXT: Launch Mission */, uParam0, 1, 363);
 		}
 		else
 		{
-			func_420(2, 201, "CH_INSTR_SEL", uParam0, 1, 363);
+			func_420(2, 201, "CH_INSTR_SEL" /* GXT: Select */, uParam0, 1, 363);
 		}
-		func_420(2, 202, "CH_INSTR_BACK", uParam0, 1, 363);
+		func_420(2, 202, "CH_INSTR_BACK" /* GXT: Back */, uParam0, 1, 363);
 		if ((iLocal_152 != -2 && iLocal_152 != -3) && iLocal_152 != -4)
 		{
-			func_419(2, 0, "HEIST_IB_NAV", uParam0);
+			func_419(2, 0, "HEIST_IB_NAV" /* GXT: Navigate */, uParam0);
 		}
 		return;
 	}
 	if (func_418(uParam0, iVar1))
 	{
-		func_420(2, 201, "H4P_INSTR_EQU", uParam0, 1, 363);
+		func_420(2, 201, "H4P_INSTR_EQU" /* GXT: Equip */, uParam0, 1, 363);
 	}
 	else if (func_417(uParam0, iVar1))
 	{
-		func_420(2, 201, "H4P_INSTR_REM", uParam0, 1, 363);
+		func_420(2, 201, "H4P_INSTR_REM" /* GXT: Remove */, uParam0, 1, 363);
 	}
 	else if (func_416(uParam0, iVar1))
 	{
-		func_420(2, 201, "CH_INSTR_PREV", uParam0, 1, 363);
+		func_420(2, 201, "CH_INSTR_PREV" /* GXT: Preview */, uParam0, 1, 363);
 	}
 	else if (func_415(uParam0, iVar1))
 	{
-		func_420(2, 201, "CH_INSTR_SEL", uParam0, 1, 363);
+		func_420(2, 201, "CH_INSTR_SEL" /* GXT: Select */, uParam0, 1, 363);
 	}
 	else if (bVar0 && func_414(uParam0, iVar1))
 	{
-		func_420(2, 201, "CH_INSTR_LM", uParam0, 1, 363);
+		func_420(2, 201, "CH_INSTR_LM" /* GXT: Launch Mission */, uParam0, 1, 363);
 	}
 	else if (bVar0 && func_411(uParam0, iVar1))
 	{
-		func_420(2, 201, "H4P_INSTR_PUR", uParam0, 1, 363);
+		func_420(2, 201, "H4P_INSTR_PUR" /* GXT: Purchase */, uParam0, 1, 363);
 	}
 	else if (!bVar0 && func_410(uParam0, iVar1))
 	{
-		func_420(2, 201, "HEIST_IB_RDY", uParam0, 1, 363);
+		func_420(2, 201, "HEIST_IB_RDY" /* GXT: Ready */, uParam0, 1, 363);
 	}
 	else if (!bVar0 && func_408(uParam0, iVar1))
 	{
-		func_420(2, 201, "HEIST_IB_UNRDY", uParam0, 1, 363);
+		func_420(2, 201, "HEIST_IB_UNRDY" /* GXT: Unready */, uParam0, 1, 363);
 	}
 	else
 	{
@@ -10479,37 +10479,37 @@ void func_356(var uParam0)//Position - 0xBC37
 	}
 	if (func_407(iVar1))
 	{
-		func_420(2, 202, "CH_INSTR_QUIT", uParam0, 1, 363);
+		func_420(2, 202, "CH_INSTR_QUIT" /* GXT: Quit */, uParam0, 1, 363);
 	}
 	else
 	{
-		func_420(2, 202, "CH_INSTR_BACK", uParam0, 1, 363);
+		func_420(2, 202, "CH_INSTR_BACK" /* GXT: Back */, uParam0, 1, 363);
 	}
 	if (func_406(uParam0))
 	{
-		func_420(2, 203, "HP_MAP", uParam0, 1, 363);
+		func_420(2, 203, "HP_MAP" /* GXT: Map */, uParam0, 1, 363);
 	}
 	if (func_360(uParam0, iVar1))
 	{
-		func_420(2, 204, "CH_INSTR_INFO", uParam0, 1, 363);
+		func_420(2, 204, "CH_INSTR_INFO" /* GXT: Info */, uParam0, 1, 363);
 	}
 	if (func_17(uParam0->f_1084, 0))
 	{
-		func_419(2, 14, "H4P_INSTR_SCR", uParam0);
+		func_419(2, 14, "H4P_INSTR_SCR" /* GXT: Screens */, uParam0);
 	}
 	if (func_17(uParam0->f_1084, 0) || func_359(uParam0->f_1084))
 	{
-		func_419(2, 0, "HEIST_IB_NAV", uParam0);
+		func_419(2, 0, "HEIST_IB_NAV" /* GXT: Navigate */, uParam0);
 	}
 	if (func_358(iVar1))
 	{
 		if ((MISC::IS_PS3_VERSION() || func_62()) || MISC::IS_PC_VERSION())
 		{
-			func_420(2, 217, "HEIST_IB_PSN", uParam0, 1, 363);
+			func_420(2, 217, "HEIST_IB_PSN" /* GXT: View Profile */, uParam0, 1, 363);
 		}
 		else if (MISC::IS_XBOX360_VERSION() || func_63())
 		{
-			func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "HEIST_IB_XBL", uParam0, 0);
+			func_357(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "HEIST_IB_XBL" /* GXT: View gamer card */, uParam0, 0);
 		}
 		else
 		{
@@ -10571,109 +10571,109 @@ char* func_361(var uParam0, int iParam1)//Position - 0xC024
 	switch (iParam1)
 	{
 		case 1:
-			return "H4P_INT0_GATH_I";
+			return "H4P_INT0_GATH_I" /* GXT: Mission Details:~n~Under a disguise, scope the island for the primary target, secondary targets and other areas that may be useful during the heist.~n~~n~Heist Impact:~n~Identifies the locations of the primary target, different routes on and off the island, secondary targets to steal, and other points of interest that can open up extra opportunities during the heist. */;
 		
 		case 2:
-			return "H4P_INT0_LOOT_I";
+			return "H4P_INT0_LOOT_I" /* GXT: Heist Impact:~n~Secondary targets can be stolen and sold alongside the primary target. Each player will only be able to carry a certain amount in their bag. */;
 		
 		case 3:
-			return "H4P_INT0_ENTR_I";
+			return "H4P_INT0_ENTR_I" /* GXT: Heist Impact:~n~Opens up additional infiltration points for getting on the island during the Heist. */;
 		
 		case 4:
-			return "H4P_INT0_EXIT_I";
+			return "H4P_INT0_EXIT_I" /* GXT: Heist Impact:~n~Opens up additional escape points for getting off the island during the Heist. */;
 		
 		case 5:
-			return "H4P_INT0_COMP_I";
+			return "H4P_INT0_COMP_I" /* GXT: Heist Impact:~n~Entry points into El Rubio's compound.  Additional equipment may need to be acquired during the heist to access some of these entry points. */;
 		
 		case 6:
-			return "H4P_INT0_ITEM_I";
+			return "H4P_INT0_ITEM_I" /* GXT: Heist Impact:~n~Areas, equipment and vehicles that can be used during the heist to open up additional opportunities. */;
 		
 		case 7:
-			return "H4P_INT2_CASH_I";
+			return "H4P_INT2_CASH_I" /* GXT: Heist Impact:~n~Steal cash from locked storage spaces to increase your overall take.~n~~n~Please note:~n~Each player will only be able to carry a certain amount of this in their bag. */;
 		
 		case 8:
-			return "H4P_INT2_WEED_I";
+			return "H4P_INT2_WEED_I" /* GXT: Heist Impact:~n~Steal weed from locked storage spaces to increase your overall take.~n~~n~Please note:~n~Each player will only be able to carry a certain amount of this in their bag. */;
 		
 		case 9:
-			return "H4P_INT2_COKE_I";
+			return "H4P_INT2_COKE_I" /* GXT: Heist Impact:~n~Steal cocaine from locked storage spaces to increase your overall take.~n~~n~Please note:~n~Each player will only be able to carry a certain amount of this in their bag. */;
 		
 		case 10:
-			return "H4P_INT2_GOLD_I";
+			return "H4P_INT2_GOLD_I" /* GXT: Heist Impact:~n~Steal gold from locked storage spaces to increase your overall take.~n~~n~Please note:~n~Each player will only be able to carry a certain amount of this in their bag. */;
 		
 		case 11:
-			return "H4P_INT2_PAIN_I";
+			return "H4P_INT2_PAIN_I" /* GXT: Heist Impact:~n~Steal paintings from inside El Rubio's compound to increase your overall take.~n~~n~Please note:~n~Each player will only be able to carry a certain amount of this in their bag. */;
 		
 		case 12:
-			return "H4P_INT3_AIRS_I";
+			return "H4P_INT3_AIRS_I" /* GXT: Heist Impact:~n~Infiltrate the airstrip using one of the following approach vehicles if acquired: ~n~ - Velum */;
 		
 		case 13:
-			return "H4P_INT3_PARA_I";
+			return "H4P_INT3_PARA_I" /* GXT: Heist Impact:~n~Infiltrate at high altitude above the island using one of the following approach vehicles if acquired: ~n~ - RO-86 Alkonost */;
 		
 		case 14:
-			return "H4P_INT3_BEAC_I";
+			return "H4P_INT3_BEAC_I" /* GXT: Heist Impact:~n~Infiltrate the west beach using one of the following approach vehicles if acquired: ~n~ - Kosatka ~n~ - Patrol Boat */;
 		
 		case 15:
-			return "H4P_INT3_MDCK_I";
+			return "H4P_INT3_MDCK_I" /* GXT: Heist Impact:~n~Infiltrate the main dock using one of the following approach vehicles if acquired: ~n~ - Kosatka ~n~ - Patrol Boat ~n~ - Longfin */;
 		
 		case 16:
-			return "H4P_INT3_NDCK_I";
+			return "H4P_INT3_NDCK_I" /* GXT: Heist Impact:~n~Infiltrate the north dock using one of the following approach vehicles if acquired: ~n~ - Kosatka ~n~ - Patrol Boat ~n~ - Longfin */;
 		
 		case 17:
-			return "H4P_INT3_NDRP_I";
+			return "H4P_INT3_NDRP_I" /* GXT: Heist Impact:~n~Infiltrate the north drop zone using one of the following approach vehicles if acquired: ~n~ - Stealth Annihilator */;
 		
 		case 18:
-			return "H4P_INT3_SDRP_I";
+			return "H4P_INT3_SDRP_I" /* GXT: Heist Impact:~n~Infiltrate the south drop zone using one of the following approach vehicles if acquired: ~n~ - Stealth Annihilator */;
 		
 		case 19:
-			return "H4P_INT3_DTUN_I";
+			return "H4P_INT3_DTUN_I" /* GXT: Heist Impact:~n~Infiltrate the drainage tunnel using one of the following approach vehicles if acquired: ~n~ - Kosatka */;
 		
 		case 20:
-			return "H4P_INT4_AIRS_I";
+			return "H4P_INT4_AIRS_I" /* GXT: Heist Impact:~n~After acquiring the primary target, find an aircraft at the airstrip to escape from the island. ~n~~n~You can escape by any other means if plans change during the heist. */;
 		
 		case 21:
-			return "H4P_INT4_MDCK_I";
+			return "H4P_INT4_MDCK_I" /* GXT: Heist Impact:~n~After acquiring the primary target, find a boat at the main dock to escape from the island. ~n~~n~You can escape by any other means if plans change during the heist. */;
 		
 		case 22:
-			return "H4P_INT4_NDCK_I";
+			return "H4P_INT4_NDCK_I" /* GXT: Heist Impact:~n~After acquiring the primary target, find a boat at the north dock to escape from the island. ~n~~n~You can escape by any other means if plans change during the heist. */;
 		
 		case 23:
-			return "H4P_INT4_SUBM_I";
+			return "H4P_INT4_SUBM_I" /* GXT: Heist Impact:~n~After acquiring the primary target, get back to your Kosatka to escape from the island. ~n~~n~ You can escape by any other means if plans change during the heist.~n~~n~Please note:~n~To escape with your Kosatka, it must also be used as your approach vehicle. */;
 		
 		case 30:
-			return func_404(func_405(uParam0->f_1084), "H4P_INT6_PWRS_I", "");
+			return func_404(func_405(uParam0->f_1084), "H4P_INT6_PWRS_I" /* GXT: Heist Impact:~n~Disables security cameras and all lights on the island to reduce the guards' range of sight at night. */, "");
 		
 		case 31:
-			return func_404(func_403(uParam0->f_1084), "H4P_INT6_CTOW_I", "");
+			return func_404(func_403(uParam0->f_1084), "H4P_INT6_CTOW_I" /* GXT: Heist Impact:~n~Disables air defenses around the island and allows hired support crew to be called in via the Interaction Menu. */, "");
 		
 		case 32:
-			return func_404(func_397(uParam0->f_1084), "H4P_INT6_BCUT_I", "");
+			return func_404(func_397(uParam0->f_1084), "H4P_INT6_BCUT_I" /* GXT: Heist Impact:~n~If stolen during the heist, these can help you break into padlocked storage lockups containing secondary targets without alerting nearby guards. */, "");
 		
 		case 33:
-			return func_404(func_391(uParam0->f_1084), "H4P_INT6_GRAP_I", "");
+			return func_404(func_391(uParam0->f_1084), "H4P_INT6_GRAP_I" /* GXT: Heist Impact:~n~If stolen during the heist, this can be used to climb broken parts of the wall into El Rubio's compound. */, "");
 		
 		case 34:
-			return func_404(func_385(uParam0->f_1084), "H4P_INT6_UNIF_I", "");
+			return func_404(func_385(uParam0->f_1084), "H4P_INT6_UNIF_I" /* GXT: Heist Impact:~n~If stolen during the heist, the guard clothing can be worn as a disguise and the guards will take longer to spot you. It also allows entry into El Rubio's compound through the main gate without alerting the guards, if used alongside a supply truck. */, "");
 		
 		case 35:
-			return func_404(func_384(uParam0->f_1084), "H4P_INT6_TROJ_I", "");
+			return func_404(func_384(uParam0->f_1084), "H4P_INT6_TROJ_I" /* GXT: Heist Impact:~n~If stolen during the heist, this will allow you to enter El Rubio's compound through the main gate without alerting the guards. You must also acquire the guard clothing to avoid detection. */, "");
 		
 		case 24:
-			return "H4P_INT5_MGAT_I";
+			return "H4P_INT5_MGAT_I" /* GXT: Heist Impact:~n~Enter the courtyard of El Rubio's compound by destroying the main gate or stay undetected under the cover of a disguise. */;
 		
 		case 25:
-			return "H4P_INT5_NWAL_I";
+			return "H4P_INT5_NWAL_I" /* GXT: Heist Impact:~n~Enter El Rubio's compound undetected by climbing the broken wall.~n~~n~Please note:~n~This entry point cannot be selected at the start of the heist. It only be used if grappling equipment is acquired during the job. */;
 		
 		case 26:
-			return "H4P_INT5_NSGT_I";
+			return "H4P_INT5_NSGT_I" /* GXT: Heist Impact:~n~Enter El Rubio's compound undetected by unlocking the side gate.~n~~n~Please note:~n~This entry point cannot be selected at the start of the heist. It only be used if the code to the gate is acquired from a guard during the job. */;
 		
 		case 27:
-			return "H4P_INT5_SWAL_I";
+			return "H4P_INT5_SWAL_I" /* GXT: Heist Impact:~n~Enter El Rubio's compound undetected by climbing the broken wall.~n~~n~Please note:~n~This entry point cannot be selected at the start of the heist. It only be used if grappling equipment is acquired during the job. */;
 		
 		case 28:
-			return "H4P_INT5_SSGT_I";
+			return "H4P_INT5_SSGT_I" /* GXT: Heist Impact:~n~Enter El Rubio's compound undetected by unlocking the side gate.~n~~n~Please note:~n~This entry point cannot be selected at the start of the heist. It only be used if the code to the gate is acquired from a guard during the job. */;
 		
 		case 29:
-			return "H4P_INT5_DTUN_I";
+			return "H4P_INT5_DTUN_I" /* GXT: Heist Impact:~n~Enter El Rubio's compound undetected through the underwater drainage tunnel. */;
 		
 		case 36:
 			return "";
@@ -10688,73 +10688,73 @@ char* func_361(var uParam0, int iParam1)//Position - 0xC024
 			return "";
 		
 		case 40:
-			return "H4P_PRP1_SUBM_I";
+			return "H4P_PRP1_SUBM_I" /* GXT: Mission Details:~n~Steal sonar jamming equipment. This will allow your Kosatka to remain undetected off the coast of Cayo Perico.~n~~n~Heist Impact:~n~With your Kosatka submerged off the coast, approach the island undetected in scuba gear. */;
 		
 		case 41:
 			return "";
 		
 		case 42:
-			return "H4P_PRP1_SPLA_I";
+			return "H4P_PRP1_SPLA_I" /* GXT: Mission Details:~n~Steal one of El Rubio's smuggler planes to use as an approach vehicle when infiltrating the island.~n~~n~Heist Impact:~n~Land on the island's airstrip in the Velum while disguised as one of El Rubio's smugglers. While unarmed, guards will let you travel around the airstrip but will attack if they spot you elsewhere. */;
 		
 		case 43:
 			return "";
 		
 		case 44:
-			return "H4P_PRP1_PBOA_I";
+			return "H4P_PRP1_PBOA_I" /* GXT: Mission Details:~n~Steal a weaponized patrol boat to use as an approach vehicle when infiltrating the island.~n~~n~Heist Impact:~n~Approach your chosen dock in a heavily armed Patrol Boat equipped with heavy machine guns. */;
 		
 		case 45:
-			return "H4P_PRP1_SBOA_I";
+			return "H4P_PRP1_SBOA_I" /* GXT: Mission Details:~n~Steal one of El Rubio's smuggler boats to use as an approach vehicle when infiltrating the island.~n~~n~Heist Impact:~n~Approach your chosen dock in the Longfin while disguised as one of El Rubio's smugglers. While unarmed, some guards will let you travel around select areas of the docks but will attack if they spot you elsewhere. */;
 		
 		case 46:
-			return "H4P_PRP1_BOM1_I";
+			return "H4P_PRP1_BOM1_I" /* GXT: Mission Details:~n~Steal an RO-86 Alkonost to use as an approach vehicle when infiltrating the island.~n~~n~Heist Impact:~n~Parachute from the RO-86 Alkonost's cargo hold as your pilot flies you at high altitude over the island while staying undetected. */;
 		
 		case 47:
-			return "H4P_PRP1_BOM2_I";
+			return "H4P_PRP1_BOM2_I" /* GXT: Mission Details:~n~Help a pilot who can fly you to the island.~n~~n~Heist Impact:~n~The pilot will fly you in undetected to get on to the island. */;
 		
 		case 48:
-			return "H4P_PRP1_HEL1_I";
+			return "H4P_PRP1_HEL1_I" /* GXT: Mission Details:~n~Steal a Stealth Annihilator to use as an approach vehicle when infiltrating the island.~n~~n~Heist Impact:~n~Rappel out of the Stealth Annihilator undetected as your pilot hovers over your chosen drop zone. */;
 		
 		case 49:
-			return "H4P_PRP1_HEL2_I";
+			return "H4P_PRP1_HEL2_I" /* GXT: Mission Details:~n~Help a pilot who can fly you to the island.~n~~n~Heist Impact:~n~The pilot will fly you in undetected to get on to the island. */;
 		
 		case 50:
-			return "H4P_PRP2_DEMC_I";
+			return "H4P_PRP2_DEMC_I" /* GXT: Mission Details:~n~Steal demolition charges that can destroy the reinforced main gate to El Rubio's compound.~n~~n~Heist Impact:~n~Gain access to El Rubio's compound through the main gate and destroy padlocks to access secondary targets. */;
 		
 		case 53:
-			return "H4P_PRP2_ATOR_I";
+			return "H4P_PRP2_ATOR_I" /* GXT: Mission Details:~n~Steal a cutting torch that can burn through metal on land and underwater.~n~~n~Heist Impact:~n~Gain access to the underwater drainage tunnel beneath El Rubio's compound and burn through padlocks to access secondary targets. */;
 		
 		case 51:
-			return func_404(func_383(uParam0->f_1084) == 11, "H4P_PRP2_TAR1_I", "H4P_PRP2_TAR2_I");
+			return func_404(func_383(uParam0->f_1084) == 11, "H4P_PRP2_TAR1_I" /* GXT: Mission Details:~n~Steal the code to the safe in El Rubio's secure vault.~n~~n~Heist Impact:~n~Unlocks the safe in El Rubio's secure vault, allowing you to access the primary target inside. */, "H4P_PRP2_TAR2_I" /* GXT: Mission Details:~n~Steal a plasma cutter that can cut through the reinforced display case in El Rubio's secure vault.~n~~n~Heist Impact:~n~Cuts through the reinforced glass display case in El Rubio's secure vault, allowing you to access the primary target inside. */);
 		
 		case 52:
-			return "H4P_PRP2_FING_I";
+			return "H4P_PRP2_FING_I" /* GXT: Mission Details:~n~Steal a fingerprint cloning device that can give you access to El Rubio's secure vault.~n~~n~Heist Impact:~n~Access El Rubio's secure basement via the elevator in his office. */;
 		
 		case 54:
-			return "H4P_PRP3_SHOT_I";
+			return "H4P_PRP3_SHOT_I" /* GXT: Mission Details:~n~Steal unmarked weapons that can be used during The Cayo Perico Heist~n~~n~Heist Impact:~n~Access to the following weapons:~n~- Assault Shotgun~n~- Machine Pistol~n~- Grenades~n~- Machete */;
 		
 		case 55:
-			return "H4P_PRP3_RIFL_I";
+			return "H4P_PRP3_RIFL_I" /* GXT: Mission Details:~n~Steal unmarked weapons that can be used during The Cayo Perico Heist~n~~n~Heist Impact:~n~Access to the following weapons:~n~- Military Rifle~n~- Pistol .50~n~- Sticky Bombs~n~- Knuckle Duster */;
 		
 		case 56:
-			return "H4P_PRP3_SNIP_I";
+			return "H4P_PRP3_SNIP_I" /* GXT: Mission Details:~n~Steal unmarked weapons that can be used during The Cayo Perico Heist~n~~n~Heist Impact:~n~Access to the following weapons:~n~- Sniper Rifle~n~- AP Pistol~n~- Molotov Cocktails~n~- Knife */;
 		
 		case 57:
-			return func_404(func_367(uParam0, iParam1), "H4P_PRP3_M2SM_2", "H4P_PRP3_M2SM_I");
+			return func_404(func_367(uParam0, iParam1), "H4P_PRP3_M2SM_2" /* GXT: Locked:~n~Meet Chester McCoy as the owner of a Bunker or Arena Workshop. */, "H4P_PRP3_M2SM_I" /* GXT: Mission Details:~n~Steal unmarked weapons that can be used during The Cayo Perico Heist~n~~n~Heist Impact:~n~Access to the following weapons:~n~- SMG Mk II~n~- SNS Pistol Mk II~n~- Pipe Bombs~n~- Knife */);
 		
 		case 58:
-			return func_404(func_367(uParam0, iParam1), "H4P_PRP3_M2RI_2", "H4P_PRP3_M2RI_I");
+			return func_404(func_367(uParam0, iParam1), "H4P_PRP3_M2RI_2" /* GXT: Locked:~n~Meet Chester McCoy as the owner of a Bunker or Arena Workshop. */, "H4P_PRP3_M2RI_I" /* GXT: Mission Details:~n~Steal unmarked weapons that can be used during The Cayo Perico Heist~n~~n~Heist Impact:~n~Access to the following weapons:~n~- Assault Rifle Mk II~n~- Pistol MKII~n~- Pipe Bombs~n~- Machete */);
 		
 		case 59:
-			return "H4P_PRP3_SUPP_I";
+			return "H4P_PRP3_SUPP_I" /* GXT: Mission Details:~n~Purchase suppressors that can be attached to your weapons for The Cayo Perico Heist. ~n~~n~ Cost: $5000~n~~n~Heist Impact:~n~Reduces the range that enemies can hear you shooting. */;
 		
 		case 60:
-			return "H4P_PRP4_WEAP_I";
+			return "H4P_PRP4_WEAP_I" /* GXT: Mission Details:~n~Take out the arms dealers supplying El Rubio with weapons. This prep can only be attempted once.~n~~n~Heist Impact:~n~The weapons used by El Rubio's security will be weakened during the heist. */;
 		
 		case 61:
-			return "H4P_PRP4_ARMR_I";
+			return "H4P_PRP4_ARMR_I" /* GXT: Mission Details:~n~Destroy all the armor shipments that are intended for El Rubio's security on the island. This prep can only be attempted once.~n~~n~Heist Impact:~n~El Rubio's security will not be equipped with body armor during the heist. */;
 		
 		case 62:
-			return "H4P_PRP4_BRES_I";
+			return "H4P_PRP4_BRES_I" /* GXT: Mission Details:~n~Destroy all the Buzzards that are intended for El Rubio's security on the island. This prep can only be attempted once.~n~~n~Heist Impact:~n~If alerted, El Rubio's security will not have access to Buzzards during the heist. */;
 		
 		case 63:
 			return "";
@@ -10781,106 +10781,106 @@ char* func_361(var uParam0, int iParam1)//Position - 0xC024
 			return "";
 		
 		case 71:
-			return "H4P_FIN1_SUBM_I";
+			return "H4P_FIN1_SUBM_I" /* GXT: Heist Impact:~n~With your Kosatka submerged off the coast, approach the island undetected in scuba gear. */;
 		
 		case 72:
-			return "H4P_FIN1_BOMB_I";
+			return "H4P_FIN1_BOMB_I" /* GXT: Heist Impact:~n~Parachute from the RO-86 Alkonost's cargo hold as your pilot flies you at high altitude over the island while staying undetected. */;
 		
 		case 73:
-			return "H4P_FIN1_SMPL_I";
+			return "H4P_FIN1_SMPL_I" /* GXT: Heist Impact:~n~Land on the island's airstrip in the Velum while disguised as one of El Rubio's smugglers. While unarmed, guards will let you travel around the airstrip but will attack if they spot you elsewhere.~n~~n~Please note:~n~You must hire the Weapon Stash support crew member to avoid the guard's catching you with weapons when you land. */;
 		
 		case 74:
-			return "H4P_FIN1_SHEL_I";
+			return "H4P_FIN1_SHEL_I" /* GXT: Heist Impact:~n~Rappel out of the Stealth Annihilator undetected as your pilot hovers over your chosen drop zone. */;
 		
 		case 75:
-			return "H4P_FIN1_PBOA_I";
+			return "H4P_FIN1_PBOA_I" /* GXT: Heist Impact:~n~Approach your chosen dock in a heavily armed Patrol Boat equipped with heavy machine guns. */;
 		
 		case 76:
-			return "H4P_FIN1_SBOA_I";
+			return "H4P_FIN1_SBOA_I" /* GXT: Heist Impact:~n~Approach your chosen dock in the Longfin while disguised as one of El Rubio's smugglers. While unarmed, some guards will let you travel around select areas of the docks but will attack if they spot you elsewhere. */;
 		
 		case 77:
-			return "H4P_FIN2_AIRS_I";
+			return "H4P_FIN2_AIRS_I" /* GXT: Heist Impact:~n~Infiltrate the airstrip using one of the following approach vehicles if acquired: ~n~ - Velum */;
 		
 		case 78:
-			return "H4P_FIN2_PARA_I";
+			return "H4P_FIN2_PARA_I" /* GXT: Heist Impact:~n~Infiltrate from high altitude above the island using one of the following approach vehicles if acquired: ~n~ - RO-86 Alkonost */;
 		
 		case 79:
-			return "H4P_FIN2_WBEA_I";
+			return "H4P_FIN2_WBEA_I" /* GXT: Heist Impact:~n~Infiltrate the west beach using one of the following approach vehicles if acquired: ~n~ - Kosatka ~n~ - Patrol Boat */;
 		
 		case 80:
-			return "H4P_FIN2_MDOC_I";
+			return "H4P_FIN2_MDOC_I" /* GXT: Heist Impact:~n~Infiltrate the main dock using one of the following approach vehicles if acquired: ~n~ - Kosatka ~n~ - Patrol Boat ~n~ - Longfin */;
 		
 		case 81:
-			return "H4P_FIN2_NDOC_I";
+			return "H4P_FIN2_NDOC_I" /* GXT: Heist Impact:~n~Infiltrate the north dock using one of the following approach vehicles if acquired: ~n~ - Kosatka ~n~ - Patrol Boat ~n~ - Longfin */;
 		
 		case 82:
-			return "H4P_FIN2_NDRP_I";
+			return "H4P_FIN2_NDRP_I" /* GXT: Heist Impact:~n~Infiltrate the north drop zone using one of the following approach vehicles if acquired: ~n~ - Stealth Annihilator */;
 		
 		case 83:
-			return "H4P_FIN2_SDRP_I";
+			return "H4P_FIN2_SDRP_I" /* GXT: Heist Impact:~n~Infiltrate the south drop zone using one of the following approach vehicles if acquired: ~n~ - Stealth Annihilator */;
 		
 		case 84:
-			return "H4P_FIN2_DTUN_I";
+			return "H4P_FIN2_DTUN_I" /* GXT: Heist Impact:~n~Infiltrate the drainage tunnel using one of the following approach vehicles if acquired: ~n~ - Kosatka */;
 		
 		case 85:
-			return "H4P_FIN3_MGAT_I";
+			return "H4P_FIN3_MGAT_I" /* GXT: Heist Impact:~n~Enter the courtyard of El Rubio's compound by destroying the main gate or stay undetected under the cover of a disguise.~n~~n~Please note:~n~You must be driving a supply truck and wearing guard clothing to enter undetected. */;
 		
 		case 86:
-			return "H4P_FIN3_DTUN_I";
+			return "H4P_FIN3_DTUN_I" /* GXT: Heist Impact:~n~Enter El Rubio's compound undetected through the underwater drainage tunnel. */;
 		
 		case 87:
-			return "H4P_FIN4_AIRS_I";
+			return "H4P_FIN4_AIRS_I" /* GXT: Heist Impact:~n~After acquiring the primary target, find an aircraft at the airstrip to escape from the island. ~n~~n~You can escape by any other means if plans change during the heist. */;
 		
 		case 88:
-			return "H4P_FIN4_MDOC_I";
+			return "H4P_FIN4_MDOC_I" /* GXT: Heist Impact:~n~After acquiring the primary target, find a boat at the main dock to escape from the island. ~n~~n~You can escape by any other means if plans change during the heist. */;
 		
 		case 89:
-			return "H4P_FIN4_NDOC_I";
+			return "H4P_FIN4_NDOC_I" /* GXT: Heist Impact:~n~After acquiring the primary target, find a boat at the north dock to escape from the island. ~n~~n~You can escape by any other means if plans change during the heist. */;
 		
 		case 90:
-			return "H4P_FIN4_SUBM_I";
+			return "H4P_FIN4_SUBM_I" /* GXT: Heist Impact:~n~After acquiring the primary target, get back to your Kosatka to escape from the island. ~n~~n~You can escape by any other means if plans change during the heist.~n~~n~Please note:~n~To escape with your Kosatka, it must also be used as your approach vehicle. */;
 		
 		case 91:
-			return "H4P_FIN5_TDAY_I";
+			return "H4P_FIN5_TDAY_I" /* GXT: Heist Impact:~n~The guards can see further during the day but will be more visible to you too. */;
 		
 		case 92:
-			return "H4P_FIN5_TNGT_I";
+			return "H4P_FIN5_TNGT_I" /* GXT: Heist Impact:~n~The guards can't see as far at night but they will be less visible to you too. */;
 		
 		case 93:
-			return "H4P_FIN6_SHOT_I";
+			return "H4P_FIN6_SHOT_I" /* GXT: Details:~n~Access to the following weapons:~n~- Assault Shotgun~n~- Machine Pistol~n~- Grenades~n~- Machete */;
 		
 		case 94:
-			return "H4P_FIN6_RIFL_I";
+			return "H4P_FIN6_RIFL_I" /* GXT: Details:~n~Access to the following weapons:~n~- Military Rifle~n~- Pistol .50~n~- Sticky Bombs~n~- Knuckle Duster */;
 		
 		case 95:
-			return "H4P_FIN6_SNIP_I";
+			return "H4P_FIN6_SNIP_I" /* GXT: Details:~n~Access to the following weapons:~n~- Sniper Rifle~n~- AP Pistol~n~- Molotov Cocktails~n~- Knife */;
 		
 		case 96:
-			return "H4P_FIN6_MKSM_I";
+			return "H4P_FIN6_MKSM_I" /* GXT: Details:~n~Access to the following weapons:~n~- SMG Mk II~n~- SNS Pistol Mk II~n~- Pipe Bombs~n~- Knife */;
 		
 		case 97:
-			return "H4P_FIN6_MKAR_I";
+			return "H4P_FIN6_MKAR_I" /* GXT: Details:~n~Access to the following weapons:~n~- Assault Rifle Mk II~n~- Pistol Mk II~n~- Pipe Bombs~n~- Machete */;
 		
 		case 98:
-			return "H4P_FIN6_SUPP_I";
+			return "H4P_FIN6_SUPP_I" /* GXT: Heist Impact:~n~Reduces the range at which enemies can hear you shooting. */;
 		
 		case 99:
-			return func_404(func_362(uParam0, iParam1), "H4P_FIN7_AIRS_I", "H4P_FIN7_AIRS_2");
+			return func_404(func_362(uParam0, iParam1), "H4P_FIN7_AIRS_I" /* GXT: Details:~n~From the Interaction Menu, call in an airstrike at your chosen location. ~n~~n~Please Note:~n~To use this, the island's air defenses must first be disabled at the control tower during the heist. */, "H4P_FIN7_AIRS_2" /* GXT: Locked:~n~Meet this support crew member as the owner of a Hangar. */);
 		
 		case 100:
-			return "H4P_FIN7_WDRP_I";
+			return "H4P_FIN7_WDRP_I" /* GXT: Details:~n~From the Interaction Menu, call in a weapons supply drop containing a minigun, RPG and explosives. ~n~~n~Please Note:~n~To use this, the island's air defenses must first be disabled at the control tower during the heist. */;
 		
 		case 101:
-			return "H4P_FIN7_SNIP_I";
+			return "H4P_FIN7_SNIP_I" /* GXT: Details:~n~From the Interaction Menu, call in a temporary support sniper who can silently take out marked enemies.~n~~n~Please Note:~n~To use this, the island's air defenses must first be disabled at the control tower during the heist. */;
 		
 		case 102:
-			return "H4P_FIN7_HELI_I";
+			return "H4P_FIN7_HELI_I" /* GXT: Details:~n~From the Interaction Menu, call in a temporary piloted helicopter that can take out El Rubio's security.~n~~n~Please Note:~n~To use this, the island's air defenses must first be disabled at the control tower during the heist. */;
 		
 		case 103:
-			return func_404(func_362(uParam0, iParam1), "H4P_FIN7_SPYD_I", "H4P_FIN7_SPYD_2");
+			return func_404(func_362(uParam0, iParam1), "H4P_FIN7_SPYD_I" /* GXT: Details:~n~From the Interaction Menu, call in an airborne drone to reveal the locations of nearby guards on the island. ~n~~n~Please Note:~n~To use this, the island's air defenses must first be disabled at the control tower during the heist. */, "H4P_FIN7_SPYD_2" /* GXT: Locked:~n~Meet this support crew member as the owner of a Terrorbyte. */);
 		
 		case 104:
-			return "H4P_FIN7_WEAP_I";
+			return "H4P_FIN7_WEAP_I" /* GXT: Details:~n~Have your weapons stashed at the island's airstrip so you don't alert El Rubio's guards when landing in the Velum.~n~~n~Please Note:~n~This only works with the Velum approach vehicle. */;
 		
 		default:
 	}
@@ -12532,25 +12532,25 @@ void func_435(var uParam0)//Position - 0xE330
 	iVar1 = uParam0->f_806;
 	if (func_416(uParam0, iVar1))
 	{
-		func_420(2, 201, "CH_INSTR_PREV", uParam0, 1, 363);
+		func_420(2, 201, "CH_INSTR_PREV" /* GXT: Preview */, uParam0, 1, 363);
 	}
 	else if (func_415(uParam0, iVar1))
 	{
-		func_420(2, 201, "CH_INSTR_SEL", uParam0, 1, 363);
+		func_420(2, 201, "CH_INSTR_SEL" /* GXT: Select */, uParam0, 1, 363);
 	}
 	if (func_407(iVar1))
 	{
-		func_420(2, 202, "CH_INSTR_QUIT", uParam0, 1, 363);
+		func_420(2, 202, "CH_INSTR_QUIT" /* GXT: Quit */, uParam0, 1, 363);
 	}
 	else
 	{
-		func_420(2, 202, "CH_INSTR_BACK", uParam0, 1, 363);
+		func_420(2, 202, "CH_INSTR_BACK" /* GXT: Back */, uParam0, 1, 363);
 	}
 	if (func_406(uParam0))
 	{
-		func_420(2, 203, "HP_MAP", uParam0, 1, 363);
+		func_420(2, 203, "HP_MAP" /* GXT: Map */, uParam0, 1, 363);
 	}
-	func_419(2, 0, "HEIST_IB_NAV", uParam0);
+	func_419(2, 0, "HEIST_IB_NAV" /* GXT: Navigate */, uParam0);
 	func_426(&(uParam0->f_712), &Var0, uParam0, 1);
 	if (!iLocal_342)
 	{
@@ -13387,7 +13387,7 @@ var func_483()//Position - 0xF541
 
 char* func_484()//Position - 0xF54D
 {
-	return "HIP_SETUP_CASH";
+	return "HIP_SETUP_CASH" /* GXT: You do not have enough cash. The setup cost for The Cayo Perico Heist is $~1~. */;
 }
 
 int func_485()//Position - 0xF559
@@ -14106,7 +14106,7 @@ int func_500()//Position - 0x10412
 
 char* func_501()//Position - 0x10442
 {
-	return "HIP_COOLDOWN";
+	return "HIP_COOLDOWN" /* GXT: Pavel will contact you when The Cayo Perico Heist is available again. */;
 }
 
 var func_502()//Position - 0x1044E
@@ -14118,17 +14118,17 @@ struct<16> func_503()//Position - 0x1045E
 {
 	struct<16> Var0;
 	
-	StringCopy(&Var0, "HIP_WARN_SETUP", 64);
+	StringCopy(&Var0, "HIP_WARN_SETUP" /* GXT: The setup cost for The Cayo Perico Heist is $~1~. */, 64);
 	if (BitTest(Global_1976921.f_10, 7))
 	{
-		StringCopy(&Var0, "HIP_WARN_SETUP2", 64);
+		StringCopy(&Var0, "HIP_WARN_SETUP2" /* GXT: The setup cost for The Cayo Perico Heist is $~1~. Setting up now will set the heist to Hard Mode. */, 64);
 	}
 	return Var0;
 }
 
 char* func_504()//Position - 0x10486
 {
-	return "HIP_PROMPT_S";
+	return "HIP_PROMPT_S" /* GXT: Press ~INPUT_CONTEXT~ to set up The Cayo Perico Heist. */;
 }
 
 var func_505()//Position - 0x10492
@@ -14777,9 +14777,9 @@ char* func_532(int iParam0)//Position - 0x1114B
 		case 0:
 			if (!func_359(iLocal_158) && !func_17(iLocal_158, 0))
 			{
-				return "HIP_HELP_BBOSS2";
+				return "HIP_HELP_BBOSS2" /* GXT: Register as a VIP, CEO or MC President to access the Planning Screen ~HUD_COLOUR_GREEN~~BLIP_MP_HEIST~~s~ and begin the setup for The Cayo Perico Heist. */;
 			}
-			return "HIP_HELP_BBOSS";
+			return "HIP_HELP_BBOSS" /* GXT: Register as a VIP, CEO or MC President to gain access to the Planning Screen. */;
 		
 		default:
 	}
@@ -15167,10 +15167,10 @@ void func_547(var uParam0, int iParam1, int iParam2)//Position - 0x1167A
 		}
 		if (uParam0->f_823.f_56[iParam1] <= iVar0)
 		{
-			if (!func_12("HEIST_NOTE_6"))
+			if (!func_12("HEIST_NOTE_6" /* GXT: The selected Heist member is at minimum cut. */))
 			{
 				HUD::CLEAR_HELP(true);
-				func_9("HEIST_NOTE_6", 5000);
+				func_9("HEIST_NOTE_6" /* GXT: The selected Heist member is at minimum cut. */, 5000);
 			}
 		}
 	}
@@ -15209,10 +15209,10 @@ void func_547(var uParam0, int iParam1, int iParam2)//Position - 0x1167A
 		}
 		if (uParam0->f_823.f_56[iParam1] >= iVar1)
 		{
-			if (!func_12("HEIST_NOTE_5"))
+			if (!func_12("HEIST_NOTE_5" /* GXT: The selected Heist member is at maximum cut. */))
 			{
 				HUD::CLEAR_HELP(true);
-				func_9("HEIST_NOTE_5", 5000);
+				func_9("HEIST_NOTE_5" /* GXT: The selected Heist member is at maximum cut. */, 5000);
 			}
 		}
 	}
@@ -16117,7 +16117,7 @@ char* func_582(var uParam0, int iParam1)//Position - 0x12926
 			return "COCAINE";
 		
 		case 10:
-			return "GOLD";
+			return "GOLD" /* GXT: Gold */;
 		
 		case 11:
 			return "PAINTINGS";
@@ -16445,331 +16445,331 @@ char* func_584(var uParam0, int iParam1)//Position - 0x12F0C
 			{
 				if (!func_17(uParam0->f_1084, 0))
 				{
-					return "H4P_INT0_GAT_D1";
+					return "H4P_INT0_GAT_D1" /* GXT: Find the Madrazo Files on Cayo Perico. */;
 				}
 			}
 			else if (!func_17(uParam0->f_1084, 0))
 			{
-				return "H4P_INT0_GAT_D2";
+				return "H4P_INT0_GAT_D2" /* GXT: Find the primary target on Cayo Perico. */;
 			}
-			return "H4P_INT0_GAT_D3";
+			return "H4P_INT0_GAT_D3" /* GXT: Gather additional intel on Cayo Perico. */;
 		
 		case 2:
-			return "H4P_INT0_LOOT_D";
+			return "H4P_INT0_LOOT_D" /* GXT: Secondary targets scoped */;
 		
 		case 3:
-			return "H4P_INT0_ENTR_D";
+			return "H4P_INT0_ENTR_D" /* GXT: Infiltration points scoped */;
 		
 		case 4:
-			return "H4P_INT0_EXIT_D";
+			return "H4P_INT0_EXIT_D" /* GXT: Escape points scoped */;
 		
 		case 5:
-			return "H4P_INT0_COMP_D";
+			return "H4P_INT0_COMP_D" /* GXT: Compound entry points scoped */;
 		
 		case 6:
-			return "H4P_INT0_ITEM_D";
+			return "H4P_INT0_ITEM_D" /* GXT: Points of interest scoped */;
 		
 		case 7:
-			return "H4P_INT2_CASH_D";
+			return "H4P_INT2_CASH_D" /* GXT: Secondary target scoped: Cash */;
 		
 		case 8:
-			return "H4P_INT2_WEED_D";
+			return "H4P_INT2_WEED_D" /* GXT: Secondary target scoped: Weed */;
 		
 		case 9:
-			return "H4P_INT2_COKE_D";
+			return "H4P_INT2_COKE_D" /* GXT: Secondary target scoped: Cocaine */;
 		
 		case 10:
-			return "H4P_INT2_GOLD_D";
+			return "H4P_INT2_GOLD_D" /* GXT: Secondary target scoped: Gold */;
 		
 		case 11:
-			return "H4P_INT2_PAIN_D";
+			return "H4P_INT2_PAIN_D" /* GXT: Secondary target scoped: Painting */;
 		
 		case 12:
-			return "H4P_INT3_AIRS_D";
+			return "H4P_INT3_AIRS_D" /* GXT: Infiltration Point: Airstrip */;
 		
 		case 13:
-			return "H4P_INT3_PARA_D";
+			return "H4P_INT3_PARA_D" /* GXT: Infiltration Point: HALO Jump */;
 		
 		case 14:
-			return "H4P_INT3_BEAC_D";
+			return "H4P_INT3_BEAC_D" /* GXT: Infiltration Point: West Beach */;
 		
 		case 15:
-			return "H4P_INT3_MDCK_D";
+			return "H4P_INT3_MDCK_D" /* GXT: Infiltration Point: Main Dock */;
 		
 		case 16:
-			return "H4P_INT3_NDCK_D";
+			return "H4P_INT3_NDCK_D" /* GXT: Infiltration Point: North Dock */;
 		
 		case 17:
-			return "H4P_INT3_NDRP_D";
+			return "H4P_INT3_NDRP_D" /* GXT: Infiltration Point: North Drop Zone */;
 		
 		case 18:
-			return "H4P_INT3_SDRP_D";
+			return "H4P_INT3_SDRP_D" /* GXT: Infiltration Point: South Drop Zone */;
 		
 		case 19:
-			return "H4P_INT3_DTUN_D";
+			return "H4P_INT3_DTUN_D" /* GXT: Infiltration Point: Drainage Tunnel */;
 		
 		case 20:
-			return "H4P_INT4_AIRS_D";
+			return "H4P_INT4_AIRS_D" /* GXT: Escape point: Airstrip */;
 		
 		case 21:
-			return "H4P_INT4_MDCK_D";
+			return "H4P_INT4_MDCK_D" /* GXT: Escape point: Main Dock */;
 		
 		case 22:
-			return "H4P_INT4_NDCK_D";
+			return "H4P_INT4_NDCK_D" /* GXT: Escape point: North Dock */;
 		
 		case 23:
-			return "H4P_INT4_SUBM_D";
+			return "H4P_INT4_SUBM_D" /* GXT: Escape point: Kosatka */;
 		
 		case 30:
-			return "H4P_INT6_PWRS_D";
+			return "H4P_INT6_PWRS_D" /* GXT: Point of interest: Power Station */;
 		
 		case 31:
-			return "H4P_INT6_CTOW_D";
+			return "H4P_INT6_CTOW_D" /* GXT: Point of interest: Control Tower */;
 		
 		case 32:
-			return "H4P_INT6_BCUT_D";
+			return "H4P_INT6_BCUT_D" /* GXT: Point of interest: Bolt Cutters */;
 		
 		case 33:
-			return "H4P_INT6_GRAP_D";
+			return "H4P_INT6_GRAP_D" /* GXT: Point of interest: Grappling Equipment */;
 		
 		case 34:
-			return "H4P_INT6_UNIF_D";
+			return "H4P_INT6_UNIF_D" /* GXT: Point of interest: Guard Clothing */;
 		
 		case 35:
-			return "H4P_INT6_TROJ_D";
+			return "H4P_INT6_TROJ_D" /* GXT: Point of interest: Supply Truck */;
 		
 		case 24:
-			return "H4P_INT5_MGAT_D";
+			return "H4P_INT5_MGAT_D" /* GXT: Compound entry point: Main Gate */;
 		
 		case 25:
-			return "H4P_INT5_NWAL_D";
+			return "H4P_INT5_NWAL_D" /* GXT: Compound entry point: North Wall */;
 		
 		case 26:
-			return "H4P_INT5_NSGT_D";
+			return "H4P_INT5_NSGT_D" /* GXT: Compound entry point: North Gate */;
 		
 		case 27:
-			return "H4P_INT5_SWAL_D";
+			return "H4P_INT5_SWAL_D" /* GXT: Compound entry point: South Wall */;
 		
 		case 28:
-			return "H4P_INT5_SSGT_D";
+			return "H4P_INT5_SSGT_D" /* GXT: Compound entry point: South Gate */;
 		
 		case 29:
-			return "H4P_INT5_DTUN_D";
+			return "H4P_INT5_DTUN_D" /* GXT: Compound entry point: Drainage Tunnel */;
 		
 		case 36:
-			return "H4P_PRP0_APVH_D";
+			return "H4P_PRP0_APVH_D" /* GXT: Acquire an approach vehicle to get to Cayo Perico */;
 		
 		case 37:
-			return "H4P_PRP0_EQUI_D";
+			return "H4P_PRP0_EQUI_D" /* GXT: Acquire the equipment needed for the heist */;
 		
 		case 38:
-			return "H4P_PRP0_WEPL_D";
+			return "H4P_PRP0_WEPL_D" /* GXT: Acquire a weapon loadout to be used during the heist */;
 		
 		case 39:
-			return "H4P_PRP0_DISR_D";
+			return "H4P_PRP0_DISR_D" /* GXT: Disrupt El Rubio's security on Cayo Perico */;
 		
 		case 40:
-			return func_404(func_585(uParam0->f_1084, 1), "H4P_PREP_OPT", "H4P_PREP_MAND");
+			return func_404(func_585(uParam0->f_1084, 1), "H4P_PREP_OPT" /* GXT: PREP: OPTIONAL */, "H4P_PREP_MAND" /* GXT: PREP: MANDATORY */);
 		
 		case 41:
-			return func_404(func_585(uParam0->f_1084, 1), "H4P_PREP_OPT", "H4P_PREP_MAND");
+			return func_404(func_585(uParam0->f_1084, 1), "H4P_PREP_OPT" /* GXT: PREP: OPTIONAL */, "H4P_PREP_MAND" /* GXT: PREP: MANDATORY */);
 		
 		case 42:
-			return func_404(func_585(uParam0->f_1084, 1), "H4P_PREP_OPT", "H4P_PREP_MAND");
+			return func_404(func_585(uParam0->f_1084, 1), "H4P_PREP_OPT" /* GXT: PREP: OPTIONAL */, "H4P_PREP_MAND" /* GXT: PREP: MANDATORY */);
 		
 		case 43:
-			return func_404(func_585(uParam0->f_1084, 1), "H4P_PREP_OPT", "H4P_PREP_MAND");
+			return func_404(func_585(uParam0->f_1084, 1), "H4P_PREP_OPT" /* GXT: PREP: OPTIONAL */, "H4P_PREP_MAND" /* GXT: PREP: MANDATORY */);
 		
 		case 44:
-			return func_404(func_585(uParam0->f_1084, 1), "H4P_PREP_OPT", "H4P_PREP_MAND");
+			return func_404(func_585(uParam0->f_1084, 1), "H4P_PREP_OPT" /* GXT: PREP: OPTIONAL */, "H4P_PREP_MAND" /* GXT: PREP: MANDATORY */);
 		
 		case 45:
-			return func_404(func_585(uParam0->f_1084, 1), "H4P_PREP_OPT", "H4P_PREP_MAND");
+			return func_404(func_585(uParam0->f_1084, 1), "H4P_PREP_OPT" /* GXT: PREP: OPTIONAL */, "H4P_PREP_MAND" /* GXT: PREP: MANDATORY */);
 		
 		case 46:
-			return func_404(func_585(uParam0->f_1084, 1), "H4P_PREP_OPT", "H4P_PREP_MAND");
+			return func_404(func_585(uParam0->f_1084, 1), "H4P_PREP_OPT" /* GXT: PREP: OPTIONAL */, "H4P_PREP_MAND" /* GXT: PREP: MANDATORY */);
 		
 		case 47:
-			return func_404(func_585(uParam0->f_1084, 1), "H4P_PREP_OPT", "H4P_PREP_MAND");
+			return func_404(func_585(uParam0->f_1084, 1), "H4P_PREP_OPT" /* GXT: PREP: OPTIONAL */, "H4P_PREP_MAND" /* GXT: PREP: MANDATORY */);
 		
 		case 48:
-			return func_404(func_585(uParam0->f_1084, 1), "H4P_PREP_OPT", "H4P_PREP_MAND");
+			return func_404(func_585(uParam0->f_1084, 1), "H4P_PREP_OPT" /* GXT: PREP: OPTIONAL */, "H4P_PREP_MAND" /* GXT: PREP: MANDATORY */);
 		
 		case 49:
-			return func_404(func_585(uParam0->f_1084, 1), "H4P_PREP_OPT", "H4P_PREP_MAND");
+			return func_404(func_585(uParam0->f_1084, 1), "H4P_PREP_OPT" /* GXT: PREP: OPTIONAL */, "H4P_PREP_MAND" /* GXT: PREP: MANDATORY */);
 		
 		case 50:
-			return func_404(func_17(uParam0->f_1084, 9), "H4P_PREP_OPT", "H4P_PREP_MAND");
+			return func_404(func_17(uParam0->f_1084, 9), "H4P_PREP_OPT" /* GXT: PREP: OPTIONAL */, "H4P_PREP_MAND" /* GXT: PREP: MANDATORY */);
 		
 		case 53:
-			return func_404(func_17(uParam0->f_1084, 8), "H4P_PREP_OPT", "H4P_PREP_MAND");
+			return func_404(func_17(uParam0->f_1084, 8), "H4P_PREP_OPT" /* GXT: PREP: OPTIONAL */, "H4P_PREP_MAND" /* GXT: PREP: MANDATORY */);
 		
 		case 51:
-			return "H4P_PREP_MAND";
+			return "H4P_PREP_MAND" /* GXT: PREP: MANDATORY */;
 		
 		case 52:
-			return "H4P_PREP_MAND";
+			return "H4P_PREP_MAND" /* GXT: PREP: MANDATORY */;
 		
 		case 54:
-			return "H4P_PREP_MAND";
+			return "H4P_PREP_MAND" /* GXT: PREP: MANDATORY */;
 		
 		case 55:
-			return "H4P_PREP_MAND";
+			return "H4P_PREP_MAND" /* GXT: PREP: MANDATORY */;
 		
 		case 56:
-			return "H4P_PREP_MAND";
+			return "H4P_PREP_MAND" /* GXT: PREP: MANDATORY */;
 		
 		case 57:
 			if (!func_374(uParam0->f_1084) || !func_370(uParam0->f_1084, func_264(uParam0->f_1084)))
 			{
-				return "H4P_PRP3_UKNW_D";
+				return "H4P_PRP3_UKNW_D" /* GXT: ERROR: UNKNOWN */;
 			}
-			return "H4P_PREP_MAND";
+			return "H4P_PREP_MAND" /* GXT: PREP: MANDATORY */;
 		
 		case 58:
 			if (!func_374(uParam0->f_1084) || !func_370(uParam0->f_1084, func_264(uParam0->f_1084)))
 			{
-				return "H4P_PRP3_UKNW_D";
+				return "H4P_PRP3_UKNW_D" /* GXT: ERROR: UNKNOWN */;
 			}
-			return "H4P_PREP_MAND";
+			return "H4P_PREP_MAND" /* GXT: PREP: MANDATORY */;
 		
 		case 59:
-			return "H4P_PRP3_SUPP_D";
+			return "H4P_PRP3_SUPP_D" /* GXT: SUPPRESSORS. Cost: $5,000 */;
 		
 		case 60:
-			return "H4P_PREP_OPT";
+			return "H4P_PREP_OPT" /* GXT: PREP: OPTIONAL */;
 		
 		case 61:
-			return "H4P_PREP_OPT";
+			return "H4P_PREP_OPT" /* GXT: PREP: OPTIONAL */;
 		
 		case 62:
-			return "H4P_PREP_OPT";
+			return "H4P_PREP_OPT" /* GXT: PREP: OPTIONAL */;
 		
 		case 63:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN0_APRV_2", "H4P_FIN0_APRV_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN0_APRV_2" /* GXT: Select your approach vehicle */, "H4P_FIN0_APRV_D" /* GXT: Approach vehicles acquired */);
 		
 		case 64:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN0_INFI_2", "H4P_FIN0_INFI_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN0_INFI_2" /* GXT: Select your infiltration point */, "H4P_FIN0_INFI_D" /* GXT: Infiltration points scoped */);
 		
 		case 65:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN0_CENT_2", "H4P_FIN0_CENT_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN0_CENT_2" /* GXT: Select your compound entry point */, "H4P_FIN0_CENT_D" /* GXT: Compound entry points scoped */);
 		
 		case 66:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN0_ESCA_2", "H4P_FIN0_ESCA_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN0_ESCA_2" /* GXT: Select your escape point */, "H4P_FIN0_ESCA_D" /* GXT: Escape points scoped */);
 		
 		case 67:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN0_TIMD_2", "H4P_FIN0_TIMD_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN0_TIMD_2" /* GXT: Select time of day */, "H4P_FIN0_TIMD_D" /* GXT: Time of day */);
 		
 		case 68:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN0_WEAP_2", "H4P_FIN0_WEAP_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN0_WEAP_2" /* GXT: Weapon loadout acquired */, "H4P_FIN0_WEAP_D" /* GXT: Weapon loadout acquired */);
 		
 		case 69:
-			return "H4P_FIN0_SUPP_D";
+			return "H4P_FIN0_SUPP_D" /* GXT: Hire Support Crew */;
 		
 		case 70:
-			return "H4P_FIN0_CREW_D";
+			return "H4P_FIN0_CREW_D" /* GXT: Assign crew cuts */;
 		
 		case 71:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN1_SUBM_D", "H4P_FIN1_APRV_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN1_SUBM_D" /* GXT: Select Kosatka */, "H4P_FIN1_APRV_D" /* GXT: Approach vehicle acquired */);
 		
 		case 72:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN1_BOMB_D", "H4P_FIN1_APRV_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN1_BOMB_D" /* GXT: Select Alkonost */, "H4P_FIN1_APRV_D" /* GXT: Approach vehicle acquired */);
 		
 		case 73:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN1_SMPL_D", "H4P_FIN1_APRV_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN1_SMPL_D" /* GXT: Select Velum */, "H4P_FIN1_APRV_D" /* GXT: Approach vehicle acquired */);
 		
 		case 74:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN1_SHEL_D", "H4P_FIN1_APRV_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN1_SHEL_D" /* GXT: Select Stealth Annihilator */, "H4P_FIN1_APRV_D" /* GXT: Approach vehicle acquired */);
 		
 		case 75:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN1_PBOA_D", "H4P_FIN1_APRV_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN1_PBOA_D" /* GXT: Select Patrol Boat */, "H4P_FIN1_APRV_D" /* GXT: Approach vehicle acquired */);
 		
 		case 76:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN1_SBOA_D", "H4P_FIN1_APRV_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN1_SBOA_D" /* GXT: Select Longfin */, "H4P_FIN1_APRV_D" /* GXT: Approach vehicle acquired */);
 		
 		case 77:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN2_AIRS_D", "H4P_FIN2_INFI_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN2_AIRS_D" /* GXT: Select airstrip */, "H4P_FIN2_INFI_D" /* GXT: Infiltration point scoped */);
 		
 		case 78:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN2_PARA_D", "H4P_FIN2_INFI_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN2_PARA_D" /* GXT: Select HALO jump */, "H4P_FIN2_INFI_D" /* GXT: Infiltration point scoped */);
 		
 		case 79:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN2_WBEA_D", "H4P_FIN2_INFI_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN2_WBEA_D" /* GXT: Select west beach */, "H4P_FIN2_INFI_D" /* GXT: Infiltration point scoped */);
 		
 		case 80:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN2_MDOC_D", "H4P_FIN2_INFI_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN2_MDOC_D" /* GXT: Select main dock */, "H4P_FIN2_INFI_D" /* GXT: Infiltration point scoped */);
 		
 		case 81:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN2_NDOC_D", "H4P_FIN2_INFI_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN2_NDOC_D" /* GXT: Select north dock */, "H4P_FIN2_INFI_D" /* GXT: Infiltration point scoped */);
 		
 		case 82:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN2_NDRP_D", "H4P_FIN2_INFI_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN2_NDRP_D" /* GXT: Select north drop zone */, "H4P_FIN2_INFI_D" /* GXT: Infiltration point scoped */);
 		
 		case 83:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN2_SDRP_D", "H4P_FIN2_INFI_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN2_SDRP_D" /* GXT: Select south drop zone */, "H4P_FIN2_INFI_D" /* GXT: Infiltration point scoped */);
 		
 		case 84:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN2_DTUN_D", "H4P_FIN2_INFI_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN2_DTUN_D" /* GXT: Select drainage tunnel */, "H4P_FIN2_INFI_D" /* GXT: Infiltration point scoped */);
 		
 		case 85:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN3_MGAT_D", "H4P_FIN3_CENT_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN3_MGAT_D" /* GXT: Select main gate */, "H4P_FIN3_CENT_D" /* GXT: Compound entry point scoped */);
 		
 		case 86:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN3_DTUN_D", "H4P_FIN3_CENT_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN3_DTUN_D" /* GXT: Select drainage tunnel */, "H4P_FIN3_CENT_D" /* GXT: Compound entry point scoped */);
 		
 		case 87:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN4_AIRS_D", "H4P_FIN4_ESCA_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN4_AIRS_D" /* GXT: Select airstrip */, "H4P_FIN4_ESCA_D" /* GXT: Escape points scoped */);
 		
 		case 88:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN4_MDOC_D", "H4P_FIN4_ESCA_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN4_MDOC_D" /* GXT: Select main dock */, "H4P_FIN4_ESCA_D" /* GXT: Escape points scoped */);
 		
 		case 89:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN4_NDOC_D", "H4P_FIN4_ESCA_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN4_NDOC_D" /* GXT: Select north dock */, "H4P_FIN4_ESCA_D" /* GXT: Escape points scoped */);
 		
 		case 90:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN4_SUBM_D", "H4P_FIN4_ESCA_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN4_SUBM_D" /* GXT: Select Kosatka */, "H4P_FIN4_ESCA_D" /* GXT: Escape points scoped */);
 		
 		case 91:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN5_TDAY_D", "H4P_FIN5_TIMD_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN5_TDAY_D" /* GXT: Select day */, "H4P_FIN5_TIMD_D" /* GXT: Time of day */);
 		
 		case 92:
-			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN5_TNGT_D", "H4P_FIN5_TIMD_D");
+			return func_404(NETWORK::NETWORK_IS_ACTIVITY_SESSION(), "H4P_FIN5_TNGT_D" /* GXT: Select night */, "H4P_FIN5_TIMD_D" /* GXT: Time of day */);
 		
 		case 93:
-			return "H4P_FIN6_SHOT_D";
+			return "H4P_FIN6_SHOT_D" /* GXT: Acquired Aggressor loadout */;
 		
 		case 94:
-			return "H4P_FIN6_RIFL_D";
+			return "H4P_FIN6_RIFL_D" /* GXT: Acquired Conspirator loadout */;
 		
 		case 95:
-			return "H4P_FIN6_SNIP_D";
+			return "H4P_FIN6_SNIP_D" /* GXT: Acquired Crack Shot loadout */;
 		
 		case 96:
-			return "H4P_FIN6_MKSM_D";
+			return "H4P_FIN6_MKSM_D" /* GXT: Acquired Saboteur loadout */;
 		
 		case 97:
-			return "H4P_FIN6_MKAR_D";
+			return "H4P_FIN6_MKAR_D" /* GXT: Acquired Marksman loadout */;
 		
 		case 98:
-			return "H4P_FIN6_SUPP_D";
+			return "H4P_FIN6_SUPP_D" /* GXT: Choose to use suppressors */;
 		
 		case 99:
-			return func_404(func_367(uParam0, iParam1), "H4P_PRP3_UKNW_D", "H4P_FIN7_AIRS_D");
+			return func_404(func_367(uParam0, iParam1), "H4P_PRP3_UKNW_D" /* GXT: ERROR: UNKNOWN */, "H4P_FIN7_AIRS_D" /* GXT: AIRSTRIKE. Cost: $12,000 */);
 		
 		case 100:
-			return "H4P_FIN7_WDRP_D";
+			return "H4P_FIN7_WDRP_D" /* GXT: SUPPLY DROP. Cost: $15,000 */;
 		
 		case 101:
-			return "H4P_FIN7_SNIP_D";
+			return "H4P_FIN7_SNIP_D" /* GXT: SNIPER. Cost: $25,000 */;
 		
 		case 102:
-			return "H4P_FIN7_HELI_D";
+			return "H4P_FIN7_HELI_D" /* GXT: HELICOPTER BACKUP. Cost: $30,000 */;
 		
 		case 103:
-			return func_404(func_367(uParam0, iParam1), "H4P_PRP3_UKNW_D", "H4P_FIN7_SPYD_D");
+			return func_404(func_367(uParam0, iParam1), "H4P_PRP3_UKNW_D" /* GXT: ERROR: UNKNOWN */, "H4P_FIN7_SPYD_D" /* GXT: RECON DRONE. Cost: $25,000 */);
 		
 		case 104:
-			return "H4P_FIN7_WEAP_D";
+			return "H4P_FIN7_WEAP_D" /* GXT: WEAPON STASH. Cost: $10,000 */;
 		
 		default:
 	}
@@ -16801,316 +16801,316 @@ char* func_586(var uParam0, int iParam1)//Position - 0x137B0
 	switch (iParam1)
 	{
 		case 1:
-			return "H4P_INT0_GATH_T";
+			return "H4P_INT0_GATH_T" /* GXT: GATHER INTEL */;
 		
 		case 2:
-			return "H4P_INT0_LOOT_T";
+			return "H4P_INT0_LOOT_T" /* GXT: SECONDARY TARGETS */;
 		
 		case 3:
-			return "H4P_INT0_ENTR_T";
+			return "H4P_INT0_ENTR_T" /* GXT: INFILTRATION POINTS */;
 		
 		case 4:
-			return "H4P_INT0_EXIT_T";
+			return "H4P_INT0_EXIT_T" /* GXT: ESCAPE POINTS */;
 		
 		case 5:
-			return "H4P_INT0_COMP_T";
+			return "H4P_INT0_COMP_T" /* GXT: COMPOUND ENTRY POINTS */;
 		
 		case 6:
-			return "H4P_INT0_ITEM_T";
+			return "H4P_INT0_ITEM_T" /* GXT: POINTS OF INTEREST */;
 		
 		case 7:
-			return "H4P_INT2_CASH_T";
+			return "H4P_INT2_CASH_T" /* GXT: CASH */;
 		
 		case 8:
-			return "H4P_INT2_WEED_T";
+			return "H4P_INT2_WEED_T" /* GXT: WEED */;
 		
 		case 9:
-			return "H4P_INT2_COKE_T";
+			return "H4P_INT2_COKE_T" /* GXT: COCAINE */;
 		
 		case 10:
-			return "H4P_INT2_GOLD_T";
+			return "H4P_INT2_GOLD_T" /* GXT: GOLD */;
 		
 		case 11:
-			return "H4P_INT2_PAIN_T";
+			return "H4P_INT2_PAIN_T" /* GXT: PAINTINGS */;
 		
 		case 12:
-			return "H4P_INT3_AIRS_T";
+			return "H4P_INT3_AIRS_T" /* GXT: AIRSTRIP */;
 		
 		case 13:
-			return "H4P_INT3_PARA_T";
+			return "H4P_INT3_PARA_T" /* GXT: HALO JUMP */;
 		
 		case 14:
-			return "H4P_INT3_BEAC_T";
+			return "H4P_INT3_BEAC_T" /* GXT: WEST BEACH */;
 		
 		case 15:
-			return "H4P_INT3_MDCK_T";
+			return "H4P_INT3_MDCK_T" /* GXT: MAIN DOCK */;
 		
 		case 16:
-			return "H4P_INT3_NDCK_T";
+			return "H4P_INT3_NDCK_T" /* GXT: NORTH DOCK */;
 		
 		case 17:
-			return "H4P_INT3_NDRP_T";
+			return "H4P_INT3_NDRP_T" /* GXT: NORTH DROP ZONE */;
 		
 		case 18:
-			return "H4P_INT3_SDRP_T";
+			return "H4P_INT3_SDRP_T" /* GXT: SOUTH DROP ZONE */;
 		
 		case 19:
-			return "H4P_INT3_DTUN_T";
+			return "H4P_INT3_DTUN_T" /* GXT: DRAINAGE TUNNEL */;
 		
 		case 20:
-			return "H4P_INT4_AIRS_T";
+			return "H4P_INT4_AIRS_T" /* GXT: AIRSTRIP */;
 		
 		case 21:
-			return "H4P_INT4_MDCK_T";
+			return "H4P_INT4_MDCK_T" /* GXT: MAIN DOCK */;
 		
 		case 22:
-			return "H4P_INT4_NDCK_T";
+			return "H4P_INT4_NDCK_T" /* GXT: NORTH DOCK */;
 		
 		case 23:
-			return "H4P_INT4_SUBM_T";
+			return "H4P_INT4_SUBM_T" /* GXT: KOSATKA */;
 		
 		case 30:
-			return "H4P_INT6_PWRS_T";
+			return "H4P_INT6_PWRS_T" /* GXT: POWER STATION */;
 		
 		case 31:
-			return "H4P_INT6_CTOW_T";
+			return "H4P_INT6_CTOW_T" /* GXT: CONTROL TOWER */;
 		
 		case 32:
-			return "H4P_INT6_BCUT_T";
+			return "H4P_INT6_BCUT_T" /* GXT: BOLT CUTTERS */;
 		
 		case 33:
-			return "H4P_INT6_GRAP_T";
+			return "H4P_INT6_GRAP_T" /* GXT: GRAPPLING EQUIPMENT */;
 		
 		case 34:
-			return "H4P_INT6_UNIF_T";
+			return "H4P_INT6_UNIF_T" /* GXT: GUARD CLOTHING */;
 		
 		case 35:
-			return "H4P_INT6_TROJ_T";
+			return "H4P_INT6_TROJ_T" /* GXT: SUPPLY TRUCK */;
 		
 		case 24:
-			return "H4P_INT5_MGAT_T";
+			return "H4P_INT5_MGAT_T" /* GXT: MAIN GATE */;
 		
 		case 25:
-			return "H4P_INT5_NWAL_T";
+			return "H4P_INT5_NWAL_T" /* GXT: NORTH WALL */;
 		
 		case 26:
-			return "H4P_INT5_NSGT_T";
+			return "H4P_INT5_NSGT_T" /* GXT: NORTH GATE */;
 		
 		case 27:
-			return "H4P_INT5_SWAL_T";
+			return "H4P_INT5_SWAL_T" /* GXT: SOUTH WALL */;
 		
 		case 28:
-			return "H4P_INT5_SSGT_T";
+			return "H4P_INT5_SSGT_T" /* GXT: SOUTH GATE */;
 		
 		case 29:
-			return "H4P_INT5_DTUN_T";
+			return "H4P_INT5_DTUN_T" /* GXT: DRAINAGE TUNNEL */;
 		
 		case 36:
-			return "H4P_PRP0_APVH_T";
+			return "H4P_PRP0_APVH_T" /* GXT: APPROACH VEHICLES */;
 		
 		case 37:
-			return "H4P_PRP0_EQUI_T";
+			return "H4P_PRP0_EQUI_T" /* GXT: EQUIPMENT */;
 		
 		case 38:
-			return "H4P_PRP0_WEPL_T";
+			return "H4P_PRP0_WEPL_T" /* GXT: WEAPON LOADOUT */;
 		
 		case 39:
-			return "H4P_PRP0_DISR_T";
+			return "H4P_PRP0_DISR_T" /* GXT: DISRUPTION */;
 		
 		case 40:
-			return "H4P_PRP1_SUBM_T";
+			return "H4P_PRP1_SUBM_T" /* GXT: SUBMARINE: KOSATKA */;
 		
 		case 41:
-			return "H4P_PRP1_SBOM_T";
+			return "H4P_PRP1_SBOM_T" /* GXT: PLANE: ALKONOST */;
 		
 		case 42:
-			return "H4P_PRP1_SPLA_T";
+			return "H4P_PRP1_SPLA_T" /* GXT: PLANE: VELUM */;
 		
 		case 43:
-			return "H4P_PRP1_SHEL_T";
+			return "H4P_PRP1_SHEL_T" /* GXT: HELICOPTER: STEALTH ANNIHILATOR */;
 		
 		case 44:
-			return "H4P_PRP1_PBOA_T";
+			return "H4P_PRP1_PBOA_T" /* GXT: BOAT: PATROL BOAT */;
 		
 		case 45:
-			return "H4P_PRP1_SBOA_T";
+			return "H4P_PRP1_SBOA_T" /* GXT: BOAT: LONGFIN */;
 		
 		case 46:
-			return "H4P_PRP1_BOM1_T";
+			return "H4P_PRP1_BOM1_T" /* GXT: PART 1: ALKONOST */;
 		
 		case 47:
-			return "H4P_PRP1_BOM2_T";
+			return "H4P_PRP1_BOM2_T" /* GXT: PART 2: PILOT */;
 		
 		case 48:
-			return "H4P_PRP1_HEL1_T";
+			return "H4P_PRP1_HEL1_T" /* GXT: PART 1: STEALTH ANNIHILATOR */;
 		
 		case 49:
-			return "H4P_PRP1_HEL2_T";
+			return "H4P_PRP1_HEL2_T" /* GXT: PART 2: PILOT */;
 		
 		case 50:
-			return "H4P_PRP2_DEMC_T";
+			return "H4P_PRP2_DEMC_T" /* GXT: DEMOLITION CHARGES */;
 		
 		case 53:
-			return "H4P_PRP2_ATOR_T";
+			return "H4P_PRP2_ATOR_T" /* GXT: CUTTING TORCH */;
 		
 		case 51:
-			return func_404(func_383(uParam0->f_1084) == 11, "H4P_PRP2_TAR1_T", "H4P_PRP2_TAR2_T");
+			return func_404(func_383(uParam0->f_1084) == 11, "H4P_PRP2_TAR1_T" /* GXT: SAFE CODE */, "H4P_PRP2_TAR2_T" /* GXT: PLASMA CUTTER */);
 		
 		case 52:
-			return "H4P_PRP2_FING_T";
+			return "H4P_PRP2_FING_T" /* GXT: FINGERPRINT CLONER */;
 		
 		case 54:
-			return "H4P_PRP3_SHOT_T";
+			return "H4P_PRP3_SHOT_T" /* GXT: AGGRESSOR */;
 		
 		case 55:
-			return "H4P_PRP3_RIFL_T";
+			return "H4P_PRP3_RIFL_T" /* GXT: CONSPIRATOR */;
 		
 		case 56:
-			return "H4P_PRP3_SNIP_T";
+			return "H4P_PRP3_SNIP_T" /* GXT: CRACK SHOT */;
 		
 		case 57:
-			return "H4P_PRP3_M2SM_T";
+			return "H4P_PRP3_M2SM_T" /* GXT: SABOTEUR */;
 		
 		case 58:
-			return "H4P_PRP3_M2RI_T";
+			return "H4P_PRP3_M2RI_T" /* GXT: MARKSMAN */;
 		
 		case 59:
-			return "H4P_PRP3_SUPP_T";
+			return "H4P_PRP3_SUPP_T" /* GXT: SUPPRESSORS */;
 		
 		case 60:
-			return "H4P_PRP4_WEAP_T";
+			return "H4P_PRP4_WEAP_T" /* GXT: WEAPONS */;
 		
 		case 61:
-			return "H4P_PRP4_ARMR_T";
+			return "H4P_PRP4_ARMR_T" /* GXT: ARMOR */;
 		
 		case 62:
-			return "H4P_PRP4_BRES_T";
+			return "H4P_PRP4_BRES_T" /* GXT: AIR SUPPORT */;
 		
 		case 63:
-			return "H4P_FIN0_APRV_T";
+			return "H4P_FIN0_APRV_T" /* GXT: APPROACH VEHICLE */;
 		
 		case 64:
-			return "H4P_FIN0_INFI_T";
+			return "H4P_FIN0_INFI_T" /* GXT: INFILTRATION POINT */;
 		
 		case 65:
-			return "H4P_FIN0_CENT_T";
+			return "H4P_FIN0_CENT_T" /* GXT: COMPOUND ENTRY POINT */;
 		
 		case 66:
-			return "H4P_FIN0_ESCA_T";
+			return "H4P_FIN0_ESCA_T" /* GXT: ESCAPE POINT */;
 		
 		case 67:
-			return "H4P_FIN0_TIMD_T";
+			return "H4P_FIN0_TIMD_T" /* GXT: TIME OF DAY */;
 		
 		case 68:
-			return "H4P_FIN0_WEAP_T";
+			return "H4P_FIN0_WEAP_T" /* GXT: WEAPON LOADOUT */;
 		
 		case 69:
-			return "H4P_FIN0_SUPP_T";
+			return "H4P_FIN0_SUPP_T" /* GXT: HIRE SUPPORT CREW */;
 		
 		case 70:
-			return "H4P_FIN0_CREW_T";
+			return "H4P_FIN0_CREW_T" /* GXT: ASSIGN CREW CUTS */;
 		
 		case 71:
-			return "H4P_FIN1_SUBM_T";
+			return "H4P_FIN1_SUBM_T" /* GXT: KOSATKA */;
 		
 		case 72:
-			return "H4P_FIN1_BOMB_T";
+			return "H4P_FIN1_BOMB_T" /* GXT: ALKONOST */;
 		
 		case 73:
-			return "H4P_FIN1_SMPL_T";
+			return "H4P_FIN1_SMPL_T" /* GXT: VELUM */;
 		
 		case 74:
-			return "H4P_FIN1_SHEL_T";
+			return "H4P_FIN1_SHEL_T" /* GXT: STEALTH ANNIHILATOR */;
 		
 		case 75:
-			return "H4P_FIN1_PBOA_T";
+			return "H4P_FIN1_PBOA_T" /* GXT: PATROL BOAT */;
 		
 		case 76:
-			return "H4P_FIN1_SBOA_T";
+			return "H4P_FIN1_SBOA_T" /* GXT: LONGFIN */;
 		
 		case 77:
-			return "H4P_FIN2_AIRS_T";
+			return "H4P_FIN2_AIRS_T" /* GXT: AIRSTRIP */;
 		
 		case 78:
-			return "H4P_FIN2_PARA_T";
+			return "H4P_FIN2_PARA_T" /* GXT: HALO JUMP */;
 		
 		case 79:
-			return "H4P_FIN2_WBEA_T";
+			return "H4P_FIN2_WBEA_T" /* GXT: WEST BEACH */;
 		
 		case 80:
-			return "H4P_FIN2_MDOC_T";
+			return "H4P_FIN2_MDOC_T" /* GXT: MAIN DOCK */;
 		
 		case 81:
-			return "H4P_FIN2_NDOC_T";
+			return "H4P_FIN2_NDOC_T" /* GXT: NORTH DOCK */;
 		
 		case 82:
-			return "H4P_FIN2_NDRP_T";
+			return "H4P_FIN2_NDRP_T" /* GXT: NORTH DROP ZONE */;
 		
 		case 83:
-			return "H4P_FIN2_SDRP_T";
+			return "H4P_FIN2_SDRP_T" /* GXT: SOUTH DROP ZONE */;
 		
 		case 84:
-			return "H4P_FIN2_DTUN_T";
+			return "H4P_FIN2_DTUN_T" /* GXT: DRAINAGE TUNNEL */;
 		
 		case 85:
-			return "H4P_FIN3_MGAT_T";
+			return "H4P_FIN3_MGAT_T" /* GXT: MAIN GATE */;
 		
 		case 86:
-			return "H4P_FIN3_DTUN_T";
+			return "H4P_FIN3_DTUN_T" /* GXT: DRAINAGE TUNNEL */;
 		
 		case 87:
-			return "H4P_FIN4_AIRS_T";
+			return "H4P_FIN4_AIRS_T" /* GXT: AIRSTRIP */;
 		
 		case 88:
-			return "H4P_FIN4_MDOC_T";
+			return "H4P_FIN4_MDOC_T" /* GXT: MAIN DOCK */;
 		
 		case 89:
-			return "H4P_FIN4_NDOC_T";
+			return "H4P_FIN4_NDOC_T" /* GXT: NORTH DOCK */;
 		
 		case 90:
-			return "H4P_FIN4_SUBM_T";
+			return "H4P_FIN4_SUBM_T" /* GXT: KOSATKA */;
 		
 		case 91:
-			return "H4P_FIN5_TDAY_T";
+			return "H4P_FIN5_TDAY_T" /* GXT: DAY */;
 		
 		case 92:
-			return "H4P_FIN5_TNGT_T";
+			return "H4P_FIN5_TNGT_T" /* GXT: NIGHT */;
 		
 		case 93:
-			return "H4P_FIN6_SHOT_T";
+			return "H4P_FIN6_SHOT_T" /* GXT: AGGRESSOR */;
 		
 		case 94:
-			return "H4P_FIN6_RIFL_T";
+			return "H4P_FIN6_RIFL_T" /* GXT: CONSPIRATOR */;
 		
 		case 95:
-			return "H4P_FIN6_SNIP_T";
+			return "H4P_FIN6_SNIP_T" /* GXT: CRACK SHOT */;
 		
 		case 96:
-			return "H4P_FIN6_MKSM_T";
+			return "H4P_FIN6_MKSM_T" /* GXT: SABOTEUR */;
 		
 		case 97:
-			return "H4P_FIN6_MKAR_T";
+			return "H4P_FIN6_MKAR_T" /* GXT: MARKSMAN */;
 		
 		case 98:
-			return "H4P_FIN6_SUPP_T";
+			return "H4P_FIN6_SUPP_T" /* GXT: SUPPRESSORS */;
 		
 		case 99:
-			return "H4P_FIN7_AIRS_T";
+			return "H4P_FIN7_AIRS_T" /* GXT: AIRSTRIKE */;
 		
 		case 100:
-			return "H4P_FIN7_WDRP_T";
+			return "H4P_FIN7_WDRP_T" /* GXT: SUPPLY DROP */;
 		
 		case 101:
-			return "H4P_FIN7_SNIP_T";
+			return "H4P_FIN7_SNIP_T" /* GXT: SNIPER */;
 		
 		case 102:
-			return "H4P_FIN7_HELI_T";
+			return "H4P_FIN7_HELI_T" /* GXT: HELICOPTER BACKUP */;
 		
 		case 103:
-			return "H4P_FIN7_SPYD_T";
+			return "H4P_FIN7_SPYD_T" /* GXT: RECON DRONE */;
 		
 		case 104:
-			return "H4P_FIN7_WEAP_T";
+			return "H4P_FIN7_WEAP_T" /* GXT: WEAPON STASH */;
 		
 		default:
 	}
@@ -17940,21 +17940,21 @@ char* func_612(var uParam0)//Position - 0x14C89
 	{
 		if (uParam0->f_1084 == PLAYER::PLAYER_ID())
 		{
-			return "H4_FINALE_CONT";
+			return "H4_FINALE_CONT" /* GXT: CONTINUE */;
 		}
 		else if (func_409(uParam0, PLAYER::PLAYER_ID()) != -1)
 		{
 			if (uParam0->f_823.f_67[func_409(uParam0, PLAYER::PLAYER_ID())] == 0)
 			{
-				return "H4_FINALE_RDY";
+				return "H4_FINALE_RDY" /* GXT: READY */;
 			}
 			else
 			{
-				return "H4_FINALE_NRDY";
+				return "H4_FINALE_NRDY" /* GXT: UNREADY */;
 			}
 		}
 	}
-	return "CH_FINALE_LBS";
+	return "CH_FINALE_LBS" /* GXT: START */;
 }
 
 void func_613(var uParam0)//Position - 0x14CE8
@@ -18001,12 +18001,12 @@ void func_615(int iParam0, char* sParam1, char* sParam2, char* sParam3, char* sP
 
 char* func_616()//Position - 0x14DAE
 {
-	return "H4P_OVERLAY_CAN";
+	return "H4P_OVERLAY_CAN" /* GXT: CANCEL */;
 }
 
 char* func_617()//Position - 0x14DBA
 {
-	return "H4P_OVERLAY_CON";
+	return "H4P_OVERLAY_CON" /* GXT: CONFIRM */;
 }
 
 char* func_618(int iParam0)//Position - 0x14DC6
@@ -18014,22 +18014,22 @@ char* func_618(int iParam0)//Position - 0x14DC6
 	switch (iParam0)
 	{
 		case 99:
-			return "H4P_OVR_SC1_M";
+			return "H4P_OVR_SC1_M" /* GXT: //Loading...~n~~n~......................................................................................................~n~&gt;/Are you sure you wish to purchase an Airstrike?~n~~n~Please note: To use this, the island's air defenses must first be disabled at the control tower during the heist.~n~~n~Cost: $12,000~n~&lt;\ */;
 		
 		case 100:
-			return "H4P_OVR_SC2_M";
+			return "H4P_OVR_SC2_M" /* GXT: //Loading...~n~~n~......................................................................................................~n~&gt;/Are you sure you wish to purchase the Supply Drop?~n~~n~Please note: To use this, the island's air defenses must first be disabled at the control tower during the heist.~n~~n~Cost: $15,000~n~&lt;\ */;
 		
 		case 101:
-			return "H4P_OVR_SC3_M";
+			return "H4P_OVR_SC3_M" /* GXT: //Loading...~n~~n~......................................................................................................~n~&gt;/Are you sure you wish to purchase the Sniper?~n~~n~Please note: To use this, the island's air defenses must first be disabled at the control tower during the heist.~n~~n~Cost: $25,000~n~&lt;\ */;
 		
 		case 102:
-			return "H4P_OVR_SC4_M";
+			return "H4P_OVR_SC4_M" /* GXT: //Loading...~n~~n~......................................................................................................~n~&gt;/Are you sure you wish to purchase Helicopter Backup?~n~~n~Please note: To use this, the island's air defenses must first be disabled at the control tower during the heist.~n~~n~Cost: $30,000~n~&lt;\ */;
 		
 		case 103:
-			return "H4P_OVR_SC5_M";
+			return "H4P_OVR_SC5_M" /* GXT: //Loading...~n~~n~......................................................................................................~n~&gt;/Are you sure you wish to purchase the Recon Drone?~n~~n~Please note: To use this, the island's air defenses must first be disabled at the control tower during the heist.~n~~n~Cost: $25,000~n~&lt;\ */;
 		
 		case 104:
-			return "H4P_OVR_SC6_M";
+			return "H4P_OVR_SC6_M" /* GXT: //Loading...~n~~n~......................................................................................................~n~&gt;/Are you sure you wish to purchase the Weapon Stash?~n~~n~Please note: This can only be used with the Velum approach vehicle.~n~~n~Cost: $10,000~n~&lt;\ */;
 		
 		default:
 	}
@@ -18041,22 +18041,22 @@ char* func_619(int iParam0)//Position - 0x14E27
 	switch (iParam0)
 	{
 		case 99:
-			return "H4P_OVR_SC1_T";
+			return "H4P_OVR_SC1_T" /* GXT: SUPPORT CREW */;
 		
 		case 100:
-			return "H4P_OVR_SC2_T";
+			return "H4P_OVR_SC2_T" /* GXT: SUPPORT CREW */;
 		
 		case 101:
-			return "H4P_OVR_SC3_T";
+			return "H4P_OVR_SC3_T" /* GXT: SUPPORT CREW */;
 		
 		case 102:
-			return "H4P_OVR_SC4_T";
+			return "H4P_OVR_SC4_T" /* GXT: SUPPORT CREW */;
 		
 		case 103:
-			return "H4P_OVR_SC5_T";
+			return "H4P_OVR_SC5_T" /* GXT: SUPPORT CREW */;
 		
 		case 104:
-			return "H4P_OVR_SC6_T";
+			return "H4P_OVR_SC6_T" /* GXT: SUPPORT CREW */;
 		
 		default:
 	}
@@ -18091,14 +18091,14 @@ void func_621(var uParam0)//Position - 0x14EE5
 	{
 		return;
 	}
-	func_615(uParam0->f_711, "H4P_OVR_SUP_T", "H4P_OVR_SUP_M", func_622(), func_616());
+	func_615(uParam0->f_711, "H4P_OVR_SUP_T" /* GXT: SUPPRESSORS */, "H4P_OVR_SUP_M" /* GXT: //Loading...~n~~n~......................................................................................................~n~&gt;/Are you sure you wish to purchase suppressors for $5000? You will be given the option to use them when setting up the finale.~n~&lt;\ */, func_622(), func_616());
 	uParam0->f_707 = 1;
 	iLocal_152 = 59;
 }
 
 char* func_622()//Position - 0x14F37
 {
-	return "H4P_OVERLAY_ACC";
+	return "H4P_OVERLAY_ACC" /* GXT: ACCEPT */;
 }
 
 void func_623(var uParam0, int iParam1)//Position - 0x14F43
@@ -18120,19 +18120,19 @@ char* func_624(int iParam0)//Position - 0x14F9A
 	switch (iParam0)
 	{
 		case 54:
-			return "H4P_OVR_WL1_M";
+			return "H4P_OVR_WL1_M" /* GXT: //Loading...~n~~n~Target confirmation:[unmarked weapons]~n~......................................................................................................~n~&gt;/Loadout: Aggressor::~n~- Assault Shotgun~n~- Machine Pistol~n~- Grenades~n~- Machete~n~&lt;\ ~n~~n~&gt;/ Confirm Prep work? */;
 		
 		case 55:
-			return "H4P_OVR_WL2_M";
+			return "H4P_OVR_WL2_M" /* GXT: //Loading...~n~~n~Target confirmation:[unmarked weapons]~n~......................................................................................................~n~&gt;/Loadout: Conspirator::~n~- Military Rifle~n~- Pistol .50~n~- Sticky Bombs~n~- Knuckle Duster~n~&lt;\ ~n~~n~&gt;/ Confirm Prep work? */;
 		
 		case 56:
-			return "H4P_OVR_WL3_M";
+			return "H4P_OVR_WL3_M" /* GXT: //Loading...~n~~n~Target confirmation:[unmarked weapons]~n~......................................................................................................~n~&gt;/Loadout: Crack Shot::~n~- Sniper Rifle~n~- AP Pistol~n~- Molotov Cocktails~n~- Knife~n~&lt;\ ~n~~n~&gt;/ Confirm Prep work? */;
 		
 		case 57:
-			return "H4P_OVR_WL4_M";
+			return "H4P_OVR_WL4_M" /* GXT: //Loading...~n~~n~Target confirmation:[unmarked weapons]~n~......................................................................................................~n~&gt;/Loadout: Saboteur::~n~- SMG Mk II~n~- SNS Pistol Mk II~n~- Pipe Bombs~n~- Knife~n~&lt;\ ~n~~n~&gt;/ Confirm Prep work? */;
 		
 		case 58:
-			return "H4P_OVR_WL5_M";
+			return "H4P_OVR_WL5_M" /* GXT: //Loading...~n~~n~Target confirmation:[unmarked weapons]~n~......................................................................................................~n~&gt;/Loadout: Marksman::~n~- Assault Rifle Mk II~n~- Pistol Mk II~n~- Pipe Bombs~n~- Machete~n~&lt;\ ~n~~n~&gt;/ Confirm Prep work? */;
 		
 		default:
 	}
@@ -18144,19 +18144,19 @@ char* func_625(int iParam0)//Position - 0x14FEE
 	switch (iParam0)
 	{
 		case 54:
-			return "H4P_OVR_WL1_T";
+			return "H4P_OVR_WL1_T" /* GXT: AGGRESSOR */;
 		
 		case 55:
-			return "H4P_OVR_WL2_T";
+			return "H4P_OVR_WL2_T" /* GXT: CONSPIRATOR */;
 		
 		case 56:
-			return "H4P_OVR_WL3_T";
+			return "H4P_OVR_WL3_T" /* GXT: CRACK SHOT */;
 		
 		case 57:
-			return "H4P_OVR_WL4_T";
+			return "H4P_OVR_WL4_T" /* GXT: SABOTEUR */;
 		
 		case 58:
-			return "H4P_OVR_WL5_T";
+			return "H4P_OVR_WL5_T" /* GXT: MARKSMAN */;
 		
 		default:
 	}
@@ -18442,41 +18442,41 @@ void func_642(var uParam0, int iParam1, int iParam2)//Position - 0x15544
 		case 15:
 			if (func_13(iLocal_158))
 			{
-				func_9("GENERAL_MLF_G1", -1);
+				func_9("GENERAL_MLF_G1" /* GXT: Can't launch this mission whilst one of your Club Members is currently at one with the animals. */, -1);
 			}
 			else if (func_644(iLocal_158))
 			{
-				func_9("GENERAL_MLF_G2", -1);
+				func_9("GENERAL_MLF_G2" /* GXT: Can't launch this mission whilst one of your Associates is currently at one with the animals. */, -1);
 			}
 			else
 			{
-				func_9("GENERAL_MLF_G3", -1);
+				func_9("GENERAL_MLF_G3" /* GXT: Can't launch this mission whilst one of your Bodyguards is currently at one with the animals. */, -1);
 			}
 			break;
 		
 		case 16:
 			if (func_13(iLocal_158))
 			{
-				func_9("GENERAL_MLF_G4", -1);
+				func_9("GENERAL_MLF_G4" /* GXT: Can't launch this mission whilst one of your Club Members is playing a casino game. */, -1);
 			}
 			else if (func_644(iLocal_158))
 			{
-				func_9("GENERAL_MLF_G5", -1);
+				func_9("GENERAL_MLF_G5" /* GXT: Can't launch this mission whilst one of your Associates is playing a casino game. */, -1);
 			}
 			else
 			{
-				func_9("GENERAL_MLF_G6", -1);
+				func_9("GENERAL_MLF_G6" /* GXT: Can't launch this mission whilst one of your Bodyguards is playing a casino game. */, -1);
 			}
 			break;
 		
 		default:
 			if (func_643(func_809(uParam0, iParam1)))
 			{
-				func_9("CSH_LAUNCHF_0", -1);
+				func_9("CSH_LAUNCHF_0" /* GXT: The mission you have selected is currently unavailable. The maximum number of missions with this Heist Prep Equipment have already been sourced in session. Please wait or look for rival Heist crews transporting Heist Prep Equipment ~BLIP_NHP_BAG~ to steal from. */, -1);
 			}
 			else
 			{
-				func_9("CSH_LAUNCHF_1", -1);
+				func_9("CSH_LAUNCHF_1" /* GXT: The mission you have selected is currently unavailable. The maximum number of missions with this Heist Prep Equipment have already been sourced in session. Please try again soon. */, -1);
 			}
 			break;
 	}
@@ -27411,7 +27411,7 @@ int func_809(var uParam0, int iParam1)//Position - 0x1D026
 
 void func_810(var uParam0)//Position - 0x1D126
 {
-	func_615(uParam0->f_711, "H4P_OVR_GAT_T", func_811(uParam0), func_622(), func_616());
+	func_615(uParam0->f_711, "H4P_OVR_GAT_T" /* GXT: GATHER INTEL */, func_811(uParam0), func_622(), func_616());
 	uParam0->f_707 = 1;
 	iLocal_152 = 1;
 }
@@ -27420,9 +27420,9 @@ char* func_811(var uParam0)//Position - 0x1D153
 {
 	if (func_812(uParam0->f_1084))
 	{
-		return "H4P_OVR_GAT_2";
+		return "H4P_OVR_GAT_2" /* GXT: //Loading...~n~~n~Stage:[return]~n~......................................................................................................~n~&gt;/Return to Cayo Perico?~n~Data indicates all essential scoping information has been gathered. Continued exploration of the island is optional.~n~&lt;\ */;
 	}
-	return "H4P_OVR_GAT_M";
+	return "H4P_OVR_GAT_M" /* GXT: //Loading...~n~~n~Stage:[return]~n~......................................................................................................~n~&gt;/Return to Cayo Perico?~n~Continue to scope for additional intel. Submit photographic evidence to Pavel to update plans.~n~&lt;\ */;
 }
 
 int func_812(int iParam0)//Position - 0x1D172
@@ -27702,7 +27702,7 @@ void func_823(var uParam0, int iParam1)//Position - 0x1D53E
 
 void func_824(var uParam0)//Position - 0x1D68E
 {
-	func_615(uParam0->f_711, "H4P_OVR_CRE_T", "H4P_OVR_CRE_M", func_617(), "");
+	func_615(uParam0->f_711, "H4P_OVR_CRE_T" /* GXT: NEW SUPPORT CREW UNLOCKED */, "H4P_OVR_CRE_M" /* GXT: //Loading...~n~~n~......................................................................................................~n~&gt;/You have unlocked a new support crew member for hire.~n~&lt;\ */, func_617(), "");
 	uParam0->f_707 = 1;
 	uParam0->f_806 = 1002;
 	iLocal_152 = -4;
@@ -28564,7 +28564,7 @@ void func_858(var uParam0)//Position - 0x1E561
 		iVar0 = func_7(9511, -1, 0);
 		if (!BitTest(iVar0, 13))
 		{
-			func_9("HIF_INTROVIBE", -1);
+			func_9("HIF_INTROVIBE" /* GXT: Dave and Keinemusik will allow you to infiltrate El Rubio's island and scope it to prepare for The Cayo Perico Heist. Press ~INPUT_FRONTEND_ACCEPT~ when ready to begin. */, -1);
 			MISC::SET_BIT(&iVar0, 13);
 			func_4(9511, iVar0, -1, 1, 0);
 		}
@@ -28658,7 +28658,7 @@ void func_860(var uParam0)//Position - 0x1E7FD
 	iVar0 = func_7(9511, -1, 0);
 	if (func_17(uParam0->f_1084, 0) && !BitTest(iVar0, 16))
 	{
-		func_615(uParam0->f_711, "H4P_OVR_INT_T", "H4P_OVR_INT_M", func_622(), "");
+		func_615(uParam0->f_711, "H4P_OVR_INT_T" /* GXT: INTEL COMPLETE */, "H4P_OVR_INT_M" /* GXT: //Loading...~n~~n~Stage:[equipment]~n~......................................................................................................~n~&gt;/Madrazo files located.~n~Prep equipment phase can now be initiated.~n~Mandatory Prep work must be completed to unlock the Finale.~n~&lt;\ */, func_622(), "");
 		uParam0->f_707 = 1;
 		uParam0->f_806 = 1002;
 		iLocal_152 = -2;
@@ -28666,7 +28666,7 @@ void func_860(var uParam0)//Position - 0x1E7FD
 	}
 	if (func_861(uParam0->f_1084) && !BitTest(iVar0, 14))
 	{
-		func_615(uParam0->f_711, "H4P_OVR_MAN_T", "H4P_OVR_MAN_M", func_622(), "");
+		func_615(uParam0->f_711, "H4P_OVR_MAN_T" /* GXT: MANDATORY PREPS COMPLETE */, "H4P_OVR_MAN_M" /* GXT: //Loading...~n~~n~Stage:[finale]~n~......................................................................................................~n~&gt;/Mandatory prep work complete. Finale access granted. Planning phase can now be initiated.~n~To increase chance of success:~n~- Continue scoping for additional intel.~n~- Complete optional prep work.~n~&lt;\ */, func_622(), "");
 		uParam0->f_707 = 1;
 		uParam0->f_806 = 1002;
 		iLocal_152 = -3;
@@ -28788,13 +28788,13 @@ char* func_869(int iParam0)//Position - 0x1EA9E
 	switch (iParam0)
 	{
 		case 0:
-			return "H4P_INTEL_TAB";
+			return "H4P_INTEL_TAB" /* GXT: INTEL */;
 		
 		case 1:
-			return "H4P_PREP_TAB";
+			return "H4P_PREP_TAB" /* GXT: PREP */;
 		
 		case 2:
-			return "H4P_FINALE_TAB";
+			return "H4P_FINALE_TAB" /* GXT: FINALE */;
 		
 		default:
 	}
@@ -28837,9 +28837,9 @@ char* func_874(var uParam0)//Position - 0x1EB4F
 {
 	if (!NETWORK::NETWORK_IS_ACTIVITY_SESSION() || uParam0->f_1084 != PLAYER::PLAYER_ID())
 	{
-		return "H4P_LIST_PREV";
+		return "H4P_LIST_PREV" /* GXT: PREVIEW SELECTIONS */;
 	}
-	return "H4P_LIST_MAKE";
+	return "H4P_LIST_MAKE" /* GXT: MAKE SELECTIONS */;
 }
 
 void func_875(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7, int iParam8)//Position - 0x1EB7A
@@ -28877,7 +28877,7 @@ void func_877(int iParam0, bool bParam1, int iParam2, int iParam3, char* sParam4
 
 char* func_878()//Position - 0x1EC19
 {
-	return "H4_LOOT_ADD";
+	return "H4_LOOT_ADD" /* GXT: SECONDARY TARGETS */;
 }
 
 char* func_879(var uParam0)//Position - 0x1EC25
@@ -28885,22 +28885,22 @@ char* func_879(var uParam0)//Position - 0x1EC25
 	switch (func_516(uParam0->f_1084))
 	{
 		case 0:
-			return "H4_LOOT_TEQ";
+			return "H4_LOOT_TEQ" /* GXT: SINSIMITO TEQUILA */;
 		
 		case 1:
-			return "H4_LOOT_NKLC";
+			return "H4_LOOT_NKLC" /* GXT: RUBY NECKLACE */;
 		
 		case 2:
-			return "H4_LOOT_BONDS";
+			return "H4_LOOT_BONDS" /* GXT: BEARER BONDS */;
 		
 		case 3:
-			return "H4_LOOT_DIAM";
+			return "H4_LOOT_DIAM" /* GXT: PINK DIAMOND */;
 		
 		case 4:
-			return "H4_LOOT_FILES";
+			return "H4_LOOT_FILES" /* GXT: MADRAZO FILES */;
 		
 		case 5:
-			return "H4_LOOT_STAT";
+			return "H4_LOOT_STAT" /* GXT: PANTHER STATUE */;
 		
 		default:
 	}
@@ -30879,12 +30879,12 @@ void func_938(var uParam0, var uParam1, int iParam2, int iParam3, int iParam4, b
 	uParam1->f_3 = iParam4;
 	if (bParam5)
 	{
-		uParam1->f_4 = "CH_LIST_BLANK";
+		uParam1->f_4 = "CH_LIST_BLANK" /* GXT: ??? */;
 		uParam1->f_5 = 0;
 		uParam1->f_6 = 0;
 		uParam1->f_7 = 2;
 		uParam1->f_8 = 0;
-		uParam1->f_9 = "CH_LIST_BLANK";
+		uParam1->f_9 = "CH_LIST_BLANK" /* GXT: ??? */;
 		uParam1->f_10 = "";
 		uParam1->f_11 = 0;
 		uParam1->f_12 = -1;
@@ -32093,9 +32093,9 @@ char* func_962()//Position - 0x22D91
 {
 	if (!func_359(iLocal_158) && !func_17(iLocal_158, 0))
 	{
-		return "HIP_PROMPT2";
+		return "HIP_PROMPT2" /* GXT: Press ~INPUT_CONTEXT~ to access the Planning Screen ~HUD_COLOUR_GREEN~~BLIP_MP_HEIST~~s~ and begin the setup for The Cayo Perico Heist. */;
 	}
-	return "HIP_PROMPT";
+	return "HIP_PROMPT" /* GXT: Press ~INPUT_CONTEXT~ to use the Planning Screen. */;
 }
 
 int func_963()//Position - 0x22DBD

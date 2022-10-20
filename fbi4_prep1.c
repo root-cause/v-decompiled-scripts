@@ -1272,15 +1272,15 @@ void func_24()//Position - 0x12A5
 			switch (func_25())
 			{
 				case 0:
-					StringCopy(&Global_78551, "CMN_MARRE", 16);
+					StringCopy(&Global_78551, "CMN_MARRE" /* GXT: ~s~Michael was arrested. */, 16);
 					break;
 				
 				case 1:
-					StringCopy(&Global_78551, "CMN_FARRE", 16);
+					StringCopy(&Global_78551, "CMN_FARRE" /* GXT: ~s~Franklin was arrested. */, 16);
 					break;
 				
 				case 2:
-					StringCopy(&Global_78551, "CMN_TARRE", 16);
+					StringCopy(&Global_78551, "CMN_TARRE" /* GXT: ~s~Trevor was arrested. */, 16);
 					break;
 			}
 			StringCopy(&Global_78555, "", 16);
@@ -1294,15 +1294,15 @@ void func_24()//Position - 0x12A5
 			switch (func_25())
 			{
 				case 0:
-					StringCopy(&Global_78551, "CMN_MDIED", 16);
+					StringCopy(&Global_78551, "CMN_MDIED" /* GXT: ~s~Michael died. */, 16);
 					break;
 				
 				case 1:
-					StringCopy(&Global_78551, "CMN_FDIED", 16);
+					StringCopy(&Global_78551, "CMN_FDIED" /* GXT: ~s~Franklin died. */, 16);
 					break;
 				
 				case 2:
-					StringCopy(&Global_78551, "CMN_TDIED", 16);
+					StringCopy(&Global_78551, "CMN_TDIED" /* GXT: ~s~Trevor died. */, 16);
 					break;
 			}
 			StringCopy(&Global_78555, "", 16);
@@ -3488,7 +3488,7 @@ char* func_115(int iParam0, bool bParam1)//Position - 0x35B9
 			break;
 		
 		case 78:
-			sVar0 = "PR_TAKBACK";
+			sVar0 = "PR_TAKBACK" /* GXT: Titanium Infinity Exhaust */;
 			break;
 		
 		case 80:
@@ -3608,7 +3608,7 @@ void func_120(int* iParam0, struct<3> Param1, int iParam2, int iParam3, int iPar
 			if ((iParam3 == 1 || iParam3 == 2) || iParam3 == 3)
 			{
 				HUD::CLEAR_PRINTS();
-				func_105("LOSE_WANTED", 7500, 0);
+				func_105("LOSE_WANTED" /* GXT: Lose the Cops. */, 7500, 0);
 				*iParam2 = 2;
 			}
 			break;
@@ -4256,11 +4256,11 @@ void func_145(var uParam0, int iParam1, bool bParam2)//Position - 0x440B
 	{
 		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
-			sVar0 = "CMN_HINT";
+			sVar0 = "CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */;
 		}
 		else
 		{
-			sVar0 = "FM_IHELP_HNT";
+			sVar0 = "FM_IHELP_HNT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus. */;
 		}
 	}
 	if (!MISC::IS_STRING_NULL(uParam0->f_3))
@@ -7772,11 +7772,11 @@ void func_245(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iPa
 	{
 		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
-			iVar0 = "CMN_HINT";
+			iVar0 = "CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */;
 		}
 		else
 		{
-			iVar0 = "FM_IHELP_HNT";
+			iVar0 = "FM_IHELP_HNT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus. */;
 		}
 	}
 	if (func_146(iVar0))
@@ -7833,7 +7833,7 @@ void func_245(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iPa
 							{
 								func_249(iVar0, -1);
 								uParam0->f_3 = iVar0;
-								if (MISC::ARE_STRINGS_EQUAL("CMN_HINT", iVar0))
+								if (MISC::ARE_STRINGS_EQUAL("CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */, iVar0))
 								{
 									func_248(1);
 								}
@@ -7852,7 +7852,7 @@ void func_245(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iPa
 						{
 							func_249(iVar0, -1);
 							uParam0->f_3 = iVar0;
-							if (MISC::ARE_STRINGS_EQUAL("CMN_HINT", iVar0))
+							if (MISC::ARE_STRINGS_EQUAL("CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */, iVar0))
 							{
 								func_248(1);
 							}
@@ -8011,7 +8011,7 @@ int func_250(char* sParam0)//Position - 0x91AE
 {
 	if (!func_251(1, 1, 0))
 	{
-		if ((!MISC::IS_STRING_NULL_OR_EMPTY(sParam0) && func_146(sParam0)) || func_146("CMN_HINT"))
+		if ((!MISC::IS_STRING_NULL_OR_EMPTY(sParam0) && func_146(sParam0)) || func_146("CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */))
 		{
 			HUD::CLEAR_HELP(true);
 		}

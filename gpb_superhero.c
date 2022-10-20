@@ -2407,7 +2407,7 @@ void func_68(int iParam0, bool bParam1)//Position - 0x268E
 					func_73(func_74(iParam0));
 					if (!func_72(70))
 					{
-						func_69("DI_HLP_SPCL", 2, 0, 20000, 10000, 7, 0, 210, 0);
+						func_69("DI_HLP_SPCL" /* GXT: Unique characters become available in Rockstar Editor's 'Director Mode' as you meet them around Los Santos. */, 2, 0, 20000, 10000, 7, 0, 210, 0);
 					}
 				}
 			}
@@ -2545,7 +2545,7 @@ int func_72(int iParam0)//Position - 0x2A08
 void func_73(char* sParam0)//Position - 0x2A48
 {
 	HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("");
-	HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_SUBTITLE_LABEL("CHAR_ACTING_UP", "CHAR_ACTING_UP", false, 0, "DI_FEED_CHAR", sParam0);
+	HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_SUBTITLE_LABEL("CHAR_ACTING_UP", "CHAR_ACTING_UP", false, 0, "DI_FEED_CHAR" /* GXT: Director Mode Actor Unlock */, sParam0);
 }
 
 char* func_74(int iParam0)//Position - 0x2A6B
@@ -2553,55 +2553,55 @@ char* func_74(int iParam0)//Position - 0x2A6B
 	switch (iParam0)
 	{
 		case 0:
-			return "CM_SPEAND";
+			return "CM_SPEAND" /* GXT: Andy Moon */;
 			break;
 		
 		case 1:
-			return "CM_SPEBAY";
+			return "CM_SPEBAY" /* GXT: Baygor */;
 			break;
 		
 		case 2:
-			return "CM_SPEBIL";
+			return "CM_SPEBIL" /* GXT: Bill Binder */;
 			break;
 		
 		case 3:
-			return "CM_SPECLI";
+			return "CM_SPECLI" /* GXT: Clinton */;
 			break;
 		
 		case 4:
-			return "CM_SPEGRI";
+			return "CM_SPEGRI" /* GXT: Griff */;
 			break;
 		
 		case 5:
-			return "CM_SPEJAN";
+			return "CM_SPEJAN" /* GXT: Jane */;
 			break;
 		
 		case 6:
-			return "CM_SPEJER";
+			return "CM_SPEJER" /* GXT: Jerome */;
 			break;
 		
 		case 7:
-			return "CM_SPEJES";
+			return "CM_SPEJES" /* GXT: Jesse */;
 			break;
 		
 		case 8:
-			return "CM_SPEMAN";
+			return "CM_SPEMAN" /* GXT: Mani */;
 			break;
 		
 		case 9:
-			return "CM_SPEMIM";
+			return "CM_SPEMIM" /* GXT: Mime */;
 			break;
 		
 		case 10:
-			return "CM_SPEPAM";
+			return "CM_SPEPAM" /* GXT: Pamela Drake */;
 			break;
 		
 		case 11:
-			return "CM_SPEIMP";
+			return "CM_SPEIMP" /* GXT: Impotent Rage */;
 			break;
 		
 		case 12:
-			return "CM_SPEZOM";
+			return "CM_SPEZOM" /* GXT: Zombie */;
 			break;
 	}
 	return "ERROR!";
@@ -3070,7 +3070,7 @@ void func_105()//Position - 0x31E3
 	bLocal_267 = true;
 	iLocal_218 = 15;
 	iLocal_219 = 6;
-	sLocal_226 = "PBSH_INTERACT";
+	sLocal_226 = "PBSH_INTERACT" /* GXT: Press ~INPUT_CONTEXT~ to talk to Impotent Rage. */;
 	StringCopy(&Local_231, "PBSH_CONV_M1", 16);
 	StringCopy(&Local_232, "PBSH_CONV_T1", 16);
 	StringCopy(&Local_233, "PBSH_CONV_F1", 16);

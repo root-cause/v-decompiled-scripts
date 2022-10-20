@@ -2269,14 +2269,14 @@ void func_85()//Position - 0x28CA
 		if (bVar1)
 		{
 			iVar2 = 6;
-			sVar3 = "TC_RELOAD";
+			sVar3 = "TC_RELOAD" /* GXT: RELOADING */;
 			iVar5 = Local_64.f_13.f_2;
 			iVar4 = func_94(&(Local_65.f_19), 0, 0);
 		}
 		else
 		{
 			iVar2 = 1;
-			sVar3 = "TC_AMMO";
+			sVar3 = "TC_AMMO" /* GXT: AMMO */;
 			iVar5 = Local_64.f_13.f_1;
 			iVar4 = (iVar5 - Local_65.f_19.f_2);
 		}

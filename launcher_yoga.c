@@ -155,7 +155,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_69 = 2050;
 	iLocal_70 = -1;
 	iLocal_71 = -1;
-	sLocal_73 = "CC_SUBSTR";
+	sLocal_73 = "CC_SUBSTR" /* GXT: ~INPUT_CONTEXT~ */;
 	fLocal_74 = 125f;
 	iLocal_75 = 1;
 	iLocal_77 = 263;
@@ -778,7 +778,7 @@ void func_7()//Position - 0xB3B
 	}
 	else if (MISC::IS_PS3_VERSION() || func_8())
 	{
-		StringCopy(&cVar0, "PRESENCE_0_STR", 24);
+		StringCopy(&cVar0, "PRESENCE_0_STR" /* GXT: Playing story */, 24);
 		NETWORK::NETWORK_SET_RICH_PRESENCE_STRING(0, &cVar0);
 	}
 }
@@ -2222,7 +2222,7 @@ bool func_86(var uParam0, int iParam1)//Position - 0x26FB
 void func_87()//Position - 0x270A
 {
 	StringCopy(&Local_51, "Yoga", 64);
-	sLocal_73 = "PLAY_YOGA";
+	sLocal_73 = "PLAY_YOGA" /* GXT: Press ~INPUT_CONTEXT~ to do Yoga. */;
 	iLocal_71 = 18;
 	fLocal_85 = 2.5f;
 	fLocal_74 = 20f;

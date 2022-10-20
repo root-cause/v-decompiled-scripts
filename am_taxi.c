@@ -2428,9 +2428,9 @@ void func_39(int iParam0, int iParam1, int iParam2)//Position - 0x1FD6
 	{
 		MISC::CLEAR_BIT(&(Global_2815059.f_836), 2);
 	}
-	if (HUD::IS_NAMED_RENDERTARGET_REGISTERED("taxi"))
+	if (HUD::IS_NAMED_RENDERTARGET_REGISTERED("taxi" /* GXT: Taxi */))
 	{
-		HUD::RELEASE_NAMED_RENDERTARGET("taxi");
+		HUD::RELEASE_NAMED_RENDERTARGET("taxi" /* GXT: Taxi */);
 	}
 	if (ENTITY::DOES_ENTITY_EXIST(iLocal_87))
 	{
@@ -2622,7 +2622,7 @@ void func_46(bool bParam0)//Position - 0x2633
 		{
 			func_32(&uLocal_79);
 		}
-		if (func_50("TXM_H02"))
+		if (func_50("TXM_H02" /* GXT: Press ~INPUT_ENTER~ to enter the taxi as a passenger. */))
 		{
 			HUD::CLEAR_HELP(true);
 		}
@@ -2862,7 +2862,7 @@ void func_57(bool bParam0)//Position - 0x2AA6
 			{
 				Local_813 = { func_70() };
 				func_68(&uLocal_113);
-				func_67(0, 75, "TXM_EXIT", &uLocal_113, 0, 363);
+				func_67(0, 75, "TXM_EXIT" /* GXT: Exit */, &uLocal_113, 0, 363);
 				if (Local_68.f_2[bParam0 /*23*/].f_3 == iLocal_71)
 				{
 					if (Local_68.f_2[bParam0 /*23*/].f_7 != 6)
@@ -2871,31 +2871,31 @@ void func_57(bool bParam0)//Position - 0x2AA6
 						{
 							if (iLocal_82 > 1)
 							{
-								func_67(2, 218, "TXM_CDES", &uLocal_113, 0, 363);
+								func_67(2, 218, "TXM_CDES" /* GXT: Change Destination */, &uLocal_113, 0, 363);
 							}
 						}
 						if (!bLocal_100)
 						{
 							if (Local_70[iLocal_71 /*44*/].f_4.f_15 != Local_97[iLocal_83 /*3*/])
 							{
-								func_67(0, 176, "TXM_SLCT", &uLocal_113, 0, 363);
+								func_67(0, 176, "TXM_SLCT" /* GXT: Choose Destination */, &uLocal_113, 0, 363);
 							}
 						}
 						else if (Local_68.f_2[bParam0 /*23*/].f_7 == 5)
 						{
 							if (!BitTest(Local_70[iLocal_71 /*44*/].f_4.f_2, 4))
 							{
-								func_67(0, 177, "TXM_STOP", &uLocal_113, 0, 363);
+								func_67(0, 177, "TXM_STOP" /* GXT: Stop */, &uLocal_113, 0, 363);
 							}
 							if (bLocal_98)
 							{
-								func_67(0, 176, "TXM_SLCT", &uLocal_113, 0, 363);
+								func_67(0, 176, "TXM_SLCT" /* GXT: Choose Destination */, &uLocal_113, 0, 363);
 							}
 							if (!BitTest(Local_68.f_2[bParam0 /*23*/].f_6, 3) && !BitTest(Local_70[iLocal_71 /*44*/].f_4.f_2, 3))
 							{
 								if (Local_68.f_2[bParam0 /*23*/].f_7 == 5)
 								{
-									func_67(0, 179, "TXM_HURY", &uLocal_113, 0, 363);
+									func_67(0, 179, "TXM_HURY" /* GXT: Hurry */, &uLocal_113, 0, 363);
 								}
 							}
 						}
@@ -2903,16 +2903,16 @@ void func_57(bool bParam0)//Position - 0x2AA6
 						{
 							if (!BitTest(Local_70[iLocal_71 /*44*/].f_4.f_2, 5))
 							{
-								func_67(0, 177, "TXM_STRT", &uLocal_113, 0, 363);
+								func_67(0, 177, "TXM_STRT" /* GXT: Start */, &uLocal_113, 0, 363);
 							}
 							if (bLocal_98)
 							{
-								func_67(0, 176, "TXM_SLCT", &uLocal_113, 0, 363);
+								func_67(0, 176, "TXM_SLCT" /* GXT: Choose Destination */, &uLocal_113, 0, 363);
 							}
 						}
 						if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 						{
-							func_67(2, 199, "SPEC_PAUSE", &uLocal_113, 0, 363);
+							func_67(2, 199, "SPEC_PAUSE" /* GXT: Pause */, &uLocal_113, 0, 363);
 						}
 					}
 				}
@@ -3653,7 +3653,7 @@ void func_89(bool bParam0)//Position - 0x37E4
 					if (func_11(Var6, Global_1312193[iVar9 /*1951*/].f_3[0 /*3*/], 0))
 					{
 						iVar8 = 128;
-						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("STRTNM1");
+						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("STRTNM1" /* GXT: ~a~ */);
 						HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_1312193[iVar9 /*1951*/].f_16));
 						GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 						func_61("");
@@ -3665,7 +3665,7 @@ void func_89(bool bParam0)//Position - 0x37E4
 			{
 				if (Local_97[iVar1 /*3*/].f_1 != 0)
 				{
-					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("STRTNM1");
+					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("STRTNM1" /* GXT: ~a~ */);
 					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL_HASH_KEY(Local_97[iVar1 /*3*/].f_1);
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 					func_61("");
@@ -3673,7 +3673,7 @@ void func_89(bool bParam0)//Position - 0x37E4
 			}
 			else
 			{
-				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("STRTNM2");
+				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("STRTNM2" /* GXT: ~a~ and ~a~ */);
 				HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL_HASH_KEY(Local_97[iVar1 /*3*/].f_1);
 				HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL_HASH_KEY(Local_97[iVar1 /*3*/].f_2);
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -3748,31 +3748,31 @@ char* func_90(int iParam0)//Position - 0x3D24
 	switch (iParam0)
 	{
 		case 0:
-			return "SB_SAL";
+			return "SB_SAL" /* GXT: Barber Shop */;
 			break;
 		
 		case 1:
-			return "SB_BAR";
+			return "SB_BAR" /* GXT: Barber Shop */;
 			break;
 		
 		case 2:
-			return "SB_BAR";
+			return "SB_BAR" /* GXT: Barber Shop */;
 			break;
 		
 		case 3:
-			return "SB_BAR";
+			return "SB_BAR" /* GXT: Barber Shop */;
 			break;
 		
 		case 4:
-			return "SB_BAR";
+			return "SB_BAR" /* GXT: Barber Shop */;
 			break;
 		
 		case 5:
-			return "SB_BAR";
+			return "SB_BAR" /* GXT: Barber Shop */;
 			break;
 		
 		case 6:
-			return "SB_BAR";
+			return "SB_BAR" /* GXT: Barber Shop */;
 			break;
 		
 		case 7:
@@ -3836,71 +3836,71 @@ char* func_90(int iParam0)//Position - 0x3D24
 			break;
 		
 		case 22:
-			return "SB_TAT";
+			return "SB_TAT" /* GXT: Tattoo Parlor */;
 			break;
 		
 		case 23:
-			return "SB_TAT";
+			return "SB_TAT" /* GXT: Tattoo Parlor */;
 			break;
 		
 		case 24:
-			return "SB_TAT";
+			return "SB_TAT" /* GXT: Tattoo Parlor */;
 			break;
 		
 		case 25:
-			return "SB_TAT";
+			return "SB_TAT" /* GXT: Tattoo Parlor */;
 			break;
 		
 		case 26:
-			return "SB_TAT";
+			return "SB_TAT" /* GXT: Tattoo Parlor */;
 			break;
 		
 		case 27:
-			return "SB_TAT";
+			return "SB_TAT" /* GXT: Tattoo Parlor */;
 			break;
 		
 		case 28:
-			return "SB_AMU2";
+			return "SB_AMU2" /* GXT: Ammu-Nation with Range */;
 			break;
 		
 		case 29:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 30:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 31:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 32:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 33:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 34:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 35:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 36:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 37:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 38:
-			return "SB_AMU2";
+			return "SB_AMU2" /* GXT: Ammu-Nation with Range */;
 			break;
 		
 		case 39:
@@ -3932,39 +3932,39 @@ char* func_90(int iParam0)//Position - 0x3D24
 			break;
 		
 		case 46:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 47:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 48:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 49:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 52:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 50:
-			return "SB_BAR";
+			return "SB_BAR" /* GXT: Barber Shop */;
 			break;
 		
 		case 51:
-			return "S_CL_BL";
+			return "S_CL_BL" /* GXT: Casino Store */;
 			break;
 		
 		case 53:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 54:
-			return "SB_TAT";
+			return "SB_TAT" /* GXT: Tattoo Parlor */;
 			break;
 		
 		case 55:
@@ -3972,7 +3972,7 @@ char* func_90(int iParam0)//Position - 0x3D24
 			break;
 		
 		case 56:
-			return "SB_AMU";
+			return "SB_AMU" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 57:
@@ -3987,187 +3987,187 @@ char* func_91(int iParam0, int iParam1, bool bParam2)//Position - 0x4139
 	switch (iParam0)
 	{
 		case -1:
-			return "S_N_EM";
+			return "S_N_EM" /* GXT: Empty Shop */;
 			break;
 		
 		case 0:
-			return "S_H_01";
+			return "S_H_01" /* GXT: Bob Mulét Hair & Beauty */;
 			break;
 		
 		case 1:
-			return "S_H_02";
+			return "S_H_02" /* GXT: Herr Kutz Barber */;
 			break;
 		
 		case 2:
-			return "S_H_03";
+			return "S_H_03" /* GXT: Beachcombover Barbers */;
 			break;
 		
 		case 3:
-			return "S_H_04";
+			return "S_H_04" /* GXT: O'Sheas Barbers */;
 			break;
 		
 		case 4:
-			return "S_H_05";
+			return "S_H_05" /* GXT: Herr Kutz Barber */;
 			break;
 		
 		case 5:
-			return "S_H_06";
+			return "S_H_06" /* GXT: Hair On Hawick Barbers */;
 			break;
 		
 		case 6:
-			return "S_H_07";
+			return "S_H_07" /* GXT: Herr Kutz Barber */;
 			break;
 		
 		case 7:
-			return "S_CL_01";
+			return "S_CL_01" /* GXT: Discount Store */;
 			break;
 		
 		case 8:
-			return "S_CL_02";
+			return "S_CL_02" /* GXT: Discount Store */;
 			break;
 		
 		case 9:
-			return "S_CL_03";
+			return "S_CL_03" /* GXT: Binco Clothing */;
 			break;
 		
 		case 10:
-			return "S_CL_04";
+			return "S_CL_04" /* GXT: Discount Store */;
 			break;
 		
 		case 11:
-			return "S_CL_05";
+			return "S_CL_05" /* GXT: Discount Store */;
 			break;
 		
 		case 12:
-			return "S_CL_06";
+			return "S_CL_06" /* GXT: Binco Clothing */;
 			break;
 		
 		case 13:
-			return "S_CL_07";
+			return "S_CL_07" /* GXT: Discount Store */;
 			break;
 		
 		case 14:
-			return "S_CM_01";
+			return "S_CM_01" /* GXT: Suburban */;
 			break;
 		
 		case 15:
-			return "S_CM_03";
+			return "S_CM_03" /* GXT: Suburban */;
 			break;
 		
 		case 16:
-			return "S_CM_04";
+			return "S_CM_04" /* GXT: Suburban */;
 			break;
 		
 		case 17:
-			return "S_CM_05";
+			return "S_CM_05" /* GXT: Suburban */;
 			break;
 		
 		case 18:
-			return "S_CH_01";
+			return "S_CH_01" /* GXT: Ponsonbys */;
 			break;
 		
 		case 19:
-			return "S_CH_02";
+			return "S_CH_02" /* GXT: Ponsonbys */;
 			break;
 		
 		case 20:
-			return "S_CH_03";
+			return "S_CH_03" /* GXT: Ponsonbys */;
 			break;
 		
 		case 21:
-			return "S_CA_01";
+			return "S_CA_01" /* GXT: Vespucci Movie Masks */;
 			break;
 		
 		case 22:
-			return "S_T_01";
+			return "S_T_01" /* GXT: Blazing Tattoo */;
 			break;
 		
 		case 23:
-			return "S_T_02";
+			return "S_T_02" /* GXT: Alamo Tattoo Studio */;
 			break;
 		
 		case 24:
-			return "S_T_03";
+			return "S_T_03" /* GXT: Paleto Tattoo Studio */;
 			break;
 		
 		case 25:
-			return "S_T_04";
+			return "S_T_04" /* GXT: The Pit */;
 			break;
 		
 		case 26:
-			return "S_T_05";
+			return "S_T_05" /* GXT: Los Santos Tattoos */;
 			break;
 		
 		case 27:
-			return "S_T_06";
+			return "S_T_06" /* GXT: Ink Inc Tattoos */;
 			break;
 		
 		case 28:
-			return "S_G_01";
+			return "S_G_01" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 29:
-			return "S_G_02";
+			return "S_G_02" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 30:
-			return "S_G_03";
+			return "S_G_03" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 31:
-			return "S_G_04";
+			return "S_G_04" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 32:
-			return "S_G_05";
+			return "S_G_05" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 33:
-			return "S_G_06";
+			return "S_G_06" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 34:
-			return "S_G_07";
+			return "S_G_07" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 35:
-			return "S_G_08";
+			return "S_G_08" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 36:
-			return "S_G_09";
+			return "S_G_09" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 37:
-			return "S_G_10";
+			return "S_G_10" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 38:
-			return "S_G_11";
+			return "S_G_11" /* GXT: Ammu-Nation */;
 			break;
 		
 		case 39:
-			return "S_MO_01";
+			return "S_MO_01" /* GXT: Los Santos Customs */;
 			break;
 		
 		case 40:
-			return "S_MO_05";
+			return "S_MO_05" /* GXT: Los Santos Customs */;
 			break;
 		
 		case 41:
-			return "S_MO_06";
+			return "S_MO_06" /* GXT: Los Santos Customs */;
 			break;
 		
 		case 42:
-			return "S_MO_07";
+			return "S_MO_07" /* GXT: Beeker's Garage */;
 			break;
 		
 		case 43:
-			return "S_MO_08";
+			return "S_MO_08" /* GXT: Los Santos Customs */;
 			break;
 		
 		case 44:
-			return "S_MO_09";
+			return "S_MO_09" /* GXT: Benny's Original Motor Works */;
 			break;
 		
 		case 45:
@@ -4180,7 +4180,7 @@ char* func_91(int iParam0, int iParam1, bool bParam2)//Position - 0x4139
 					}
 					else
 					{
-						return "S_MO_10";
+						return "S_MO_10" /* GXT: Custom Mod Shop */;
 					}
 					break;
 				
@@ -4191,7 +4191,7 @@ char* func_91(int iParam0, int iParam1, bool bParam2)//Position - 0x4139
 					}
 					else
 					{
-						return "S_MO_10";
+						return "S_MO_10" /* GXT: Custom Mod Shop */;
 					}
 					break;
 				
@@ -4202,7 +4202,7 @@ char* func_91(int iParam0, int iParam1, bool bParam2)//Position - 0x4139
 					}
 					else
 					{
-						return "S_MO_B";
+						return "S_MO_B" /* GXT: Bunker Vehicle Workshop */;
 					}
 					break;
 				
@@ -4213,7 +4213,7 @@ char* func_91(int iParam0, int iParam1, bool bParam2)//Position - 0x4139
 					}
 					else
 					{
-						return "S_MO_T";
+						return "S_MO_T" /* GXT: Weapon & Vehicle Workshop */;
 					}
 					break;
 				
@@ -4224,7 +4224,7 @@ char* func_91(int iParam0, int iParam1, bool bParam2)//Position - 0x4139
 					}
 					else
 					{
-						return "S_MO_HA";
+						return "S_MO_HA" /* GXT: Hangar Aircraft Workshop */;
 					}
 					break;
 				
@@ -4235,7 +4235,7 @@ char* func_91(int iParam0, int iParam1, bool bParam2)//Position - 0x4139
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -4246,7 +4246,7 @@ char* func_91(int iParam0, int iParam1, bool bParam2)//Position - 0x4139
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -4257,7 +4257,7 @@ char* func_91(int iParam0, int iParam1, bool bParam2)//Position - 0x4139
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -4268,7 +4268,7 @@ char* func_91(int iParam0, int iParam1, bool bParam2)//Position - 0x4139
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -4279,7 +4279,7 @@ char* func_91(int iParam0, int iParam1, bool bParam2)//Position - 0x4139
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -4290,7 +4290,7 @@ char* func_91(int iParam0, int iParam1, bool bParam2)//Position - 0x4139
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -4301,7 +4301,7 @@ char* func_91(int iParam0, int iParam1, bool bParam2)//Position - 0x4139
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 				
@@ -4312,59 +4312,59 @@ char* func_91(int iParam0, int iParam1, bool bParam2)//Position - 0x4139
 					}
 					else
 					{
-						return "S_MO_AOC";
+						return "S_MO_AOC" /* GXT: Vehicle Workshop */;
 					}
 					break;
 			}
-			return "S_MO_11";
+			return "S_MO_11" /* GXT: Custom Auto Shop */;
 			break;
 		
 		case 46:
-			return "S_G_12";
+			return "S_G_12" /* GXT: MOC Armory */;
 			break;
 		
 		case 47:
-			return "S_G_13";
+			return "S_G_13" /* GXT: Avenger Armory */;
 			break;
 		
 		case 48:
-			return "S_G_14";
+			return "S_G_14" /* GXT: Terrorbyte Armory */;
 			break;
 		
 		case 49:
-			return "S_G_15";
+			return "S_G_15" /* GXT: Arena Armory */;
 			break;
 		
 		case 52:
-			return "S_G_16";
+			return "S_G_16" /* GXT: Arcade Armory */;
 			break;
 		
 		case 53:
-			return "S_G_17";
+			return "S_G_17" /* GXT: Kosatka Armory */;
 			break;
 		
 		case 50:
-			return "S_H_08";
+			return "S_H_08" /* GXT: Penthouse Barber */;
 			break;
 		
 		case 51:
-			return "S_CL_09";
+			return "S_CL_09" /* GXT: Casino Store */;
 			break;
 		
 		case 54:
-			return "S_T_07";
+			return "S_T_07" /* GXT: LS Car Meet Tattoos */;
 			break;
 		
 		case 55:
-			return "S_CL_10";
+			return "S_CL_10" /* GXT: Merch Shop */;
 			break;
 		
 		case 56:
-			return "S_G_18";
+			return "S_G_18" /* GXT: Fixer Armory */;
 			break;
 		
 		case 57:
-			return "S_CL_11";
+			return "S_CL_11" /* GXT: Record A Studios */;
 			break;
 	}
 	return "SHOP_NAME_EMPTY";
@@ -6672,7 +6672,7 @@ void func_154(bool bParam0)//Position - 0x70F9
 									PLAYER::REPORT_CRIME(NETWORK::NETWORK_GET_PLAYER_INDEX(PLAYER::INT_TO_PARTICIPANTINDEX(Local_68.f_2[bParam0 /*23*/].f_3)), 37, PLAYER::GET_WANTED_LEVEL_THRESHOLD(2));
 									if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 									{
-										func_175("TXI_HWRUN", -1);
+										func_175("TXI_HWRUN" /* GXT: ~s~You didn't pay the taxi fare.~n~The Cops have been alerted. */, -1);
 									}
 								}
 							}
@@ -6708,7 +6708,7 @@ void func_154(bool bParam0)//Position - 0x70F9
 									PLAYER::REPORT_CRIME(NETWORK::NETWORK_GET_PLAYER_INDEX(PLAYER::INT_TO_PARTICIPANTINDEX(Local_68.f_2[bParam0 /*23*/].f_3)), 37, PLAYER::GET_WANTED_LEVEL_THRESHOLD(2));
 									if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 									{
-										func_175("TXI_HNMON", -1);
+										func_175("TXI_HNMON" /* GXT: ~s~You don't have enough cash to pay the taxi fare.~n~The Cops have been alerted. */, -1);
 									}
 								}
 							}
@@ -7497,15 +7497,15 @@ int func_176(bool bParam0)//Position - 0x828C
 			{
 				iLocal_87 = OBJECT::CREATE_OBJECT(iLocal_88, ENTITY::GET_ENTITY_COORDS(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/]), true), false, false, false);
 				ENTITY::ATTACH_ENTITY_TO_ENTITY(iLocal_87, NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/]), ENTITY::GET_ENTITY_BONE_INDEX_BY_NAME(NETWORK::NET_TO_VEH(Local_68.f_2[bParam0 /*23*/]), "Chassis"), Local_820, Local_821, false, false, false, false, 2, true, 0);
-				if (!HUD::IS_NAMED_RENDERTARGET_REGISTERED("taxi"))
+				if (!HUD::IS_NAMED_RENDERTARGET_REGISTERED("taxi" /* GXT: Taxi */))
 				{
-					HUD::REGISTER_NAMED_RENDERTARGET("taxi", false);
+					HUD::REGISTER_NAMED_RENDERTARGET("taxi" /* GXT: Taxi */, false);
 					if (!HUD::IS_NAMED_RENDERTARGET_LINKED(ENTITY::GET_ENTITY_MODEL(iLocal_87)))
 					{
 						HUD::LINK_NAMED_RENDERTARGET(ENTITY::GET_ENTITY_MODEL(iLocal_87));
 					}
 				}
-				iLocal_84 = HUD::GET_NAMED_RENDERTARGET_RENDER_ID("taxi");
+				iLocal_84 = HUD::GET_NAMED_RENDERTARGET_RENDER_ID("taxi" /* GXT: Taxi */);
 				return 1;
 			}
 		}
@@ -7526,7 +7526,7 @@ void func_177(int iParam0)//Position - 0x8373
 			{
 				if (uLocal_74[iParam0] == -1)
 				{
-					func_179(&(uLocal_74[iParam0]), 0, "TXM_H01", 1, 0, 0, 0);
+					func_179(&(uLocal_74[iParam0]), 0, "TXM_H01" /* GXT: Press ~INPUT_CONTEXT~ to hail a taxi. */, 1, 0, 0, 0);
 				}
 				if (func_178(uLocal_74[iParam0], 1))
 				{
@@ -7544,7 +7544,7 @@ void func_177(int iParam0)//Position - 0x8373
 					{
 						TASK::TASK_PLAY_ANIM(PLAYER::PLAYER_PED_ID(), "TAXI_HAIL", "HAIL_TAXI", 8f, -8f, -1, 48, 0f, false, false, false);
 					}
-					if (func_50("TXM_H01"))
+					if (func_50("TXM_H01" /* GXT: Press ~INPUT_CONTEXT~ to hail a taxi. */))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -7794,7 +7794,7 @@ void func_184(int iParam0)//Position - 0x87B9
 						{
 							if ((((INTERIOR::GET_INTERIOR_FROM_ENTITY(NETWORK::NET_TO_VEH(Local_68.f_2[iParam0 /*23*/])) == INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) && ENTITY::IS_ENTITY_UPRIGHT(NETWORK::NET_TO_VEH(Local_68.f_2[iParam0 /*23*/]), 90f)) && !ENTITY::IS_ENTITY_IN_WATER(NETWORK::NET_TO_VEH(Local_68.f_2[iParam0 /*23*/]))) && PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) && !func_188(PLAYER::PLAYER_ID()))
 							{
-								func_175("TXM_H02", -1);
+								func_175("TXM_H02" /* GXT: Press ~INPUT_ENTER~ to enter the taxi as a passenger. */, -1);
 								if (!BitTest(iVar5, 7))
 								{
 									MISC::SET_BIT(&iVar5, 7);
@@ -7866,7 +7866,7 @@ void func_184(int iParam0)//Position - 0x87B9
 		if (BitTest(uLocal_72, (0 + iParam0)))
 		{
 			MISC::CLEAR_BIT(&uLocal_72, (0 + iParam0));
-			if (func_50("TXM_H02"))
+			if (func_50("TXM_H02" /* GXT: Press ~INPUT_ENTER~ to enter the taxi as a passenger. */))
 			{
 				HUD::CLEAR_HELP(true);
 			}
@@ -8047,7 +8047,7 @@ void func_193(int iParam0)//Position - 0x8DBA
 	{
 		iLocal_73[iParam0] = HUD::ADD_BLIP_FOR_ENTITY(NETWORK::NET_TO_VEH(Local_68.f_2[iParam0 /*23*/]));
 		HUD::SET_BLIP_SPRITE(iLocal_73[iParam0], 198);
-		HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_73[iParam0], "TXM_BLIP");
+		HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_73[iParam0], "TXM_BLIP" /* GXT: Taxi */);
 		HUD::SET_BLIP_FLASHES(iLocal_73[iParam0], true);
 		HUD::SET_BLIP_FLASH_TIMER(iLocal_73[iParam0], 7000);
 		MISC::SET_BIT(&(Local_70[iLocal_71 /*44*/].f_4.f_2), 12);
@@ -8717,7 +8717,7 @@ int func_198(struct<3> Param0)//Position - 0xA69E
 	char* sVar0;
 	
 	sVar0 = ZONE::GET_NAME_OF_ZONE(Param0);
-	if (((((((((((((((((((((((((((((((((((((((((((((MISC::ARE_STRINGS_EQUAL("SanAnd", sVar0) || MISC::ARE_STRINGS_EQUAL("Alamo", sVar0)) || MISC::ARE_STRINGS_EQUAL("ArmyB", sVar0)) || MISC::ARE_STRINGS_EQUAL("BhamCa", sVar0)) || MISC::ARE_STRINGS_EQUAL("Baytre", sVar0)) || MISC::ARE_STRINGS_EQUAL("BradT", sVar0)) || MISC::ARE_STRINGS_EQUAL("BradP", sVar0)) || MISC::ARE_STRINGS_EQUAL("CANNY", sVar0)) || MISC::ARE_STRINGS_EQUAL("CCreak", sVar0)) || MISC::ARE_STRINGS_EQUAL("ChamH", sVar0)) || MISC::ARE_STRINGS_EQUAL("CHU", sVar0)) || MISC::ARE_STRINGS_EQUAL("COSI", sVar0)) || MISC::ARE_STRINGS_EQUAL("CMSW", sVar0)) || MISC::ARE_STRINGS_EQUAL("Cypre", sVar0)) || MISC::ARE_STRINGS_EQUAL("Desrt", sVar0)) || MISC::ARE_STRINGS_EQUAL("ELGorl", sVar0)) || MISC::ARE_STRINGS_EQUAL("Galli", sVar0)) || MISC::ARE_STRINGS_EQUAL("Galfish", sVar0)) || MISC::ARE_STRINGS_EQUAL("Harmo", sVar0)) || MISC::ARE_STRINGS_EQUAL("HumLab", sVar0)) || MISC::ARE_STRINGS_EQUAL("Jail", sVar0)) || MISC::ARE_STRINGS_EQUAL("LAct", sVar0)) || MISC::ARE_STRINGS_EQUAL("LDam", sVar0)) || MISC::ARE_STRINGS_EQUAL("Lago", sVar0)) || MISC::ARE_STRINGS_EQUAL("MTChil", sVar0)) || MISC::ARE_STRINGS_EQUAL("MTJose", sVar0)) || MISC::ARE_STRINGS_EQUAL("MTGordo", sVar0)) || MISC::ARE_STRINGS_EQUAL("NCHU", sVar0)) || MISC::ARE_STRINGS_EQUAL("Oceana", sVar0)) || MISC::ARE_STRINGS_EQUAL("Palmpow", sVar0)) || MISC::ARE_STRINGS_EQUAL("PBluff", sVar0)) || MISC::ARE_STRINGS_EQUAL("Paleto", sVar0)) || MISC::ARE_STRINGS_EQUAL("PalCov", sVar0)) || MISC::ARE_STRINGS_EQUAL("PalFor", sVar0)) || MISC::ARE_STRINGS_EQUAL("PalHigh", sVar0)) || MISC::ARE_STRINGS_EQUAL("RTRAK", sVar0)) || MISC::ARE_STRINGS_EQUAL("Rancho", sVar0)) || MISC::ARE_STRINGS_EQUAL("SANDY", sVar0)) || MISC::ARE_STRINGS_EQUAL("TongvaH", sVar0)) || MISC::ARE_STRINGS_EQUAL("TongvaV", sVar0)) || MISC::ARE_STRINGS_EQUAL("Zenora", sVar0)) || MISC::ARE_STRINGS_EQUAL("Slab", sVar0)) || MISC::ARE_STRINGS_EQUAL("WindF", sVar0)) || MISC::ARE_STRINGS_EQUAL("Zancudo", sVar0)) || MISC::ARE_STRINGS_EQUAL("SanChia", sVar0)) || MISC::ARE_STRINGS_EQUAL("zQ_UAR", sVar0))
+	if (((((((((((((((((((((((((((((((((((((((((((((MISC::ARE_STRINGS_EQUAL("SanAnd" /* GXT: San Andreas */, sVar0) || MISC::ARE_STRINGS_EQUAL("Alamo" /* GXT: Alamo Sea */, sVar0)) || MISC::ARE_STRINGS_EQUAL("ArmyB" /* GXT: Fort Zancudo */, sVar0)) || MISC::ARE_STRINGS_EQUAL("BhamCa" /* GXT: Banham Canyon */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Baytre" /* GXT: Baytree Canyon */, sVar0)) || MISC::ARE_STRINGS_EQUAL("BradT" /* GXT: Braddock Tunnel */, sVar0)) || MISC::ARE_STRINGS_EQUAL("BradP" /* GXT: Braddock Pass */, sVar0)) || MISC::ARE_STRINGS_EQUAL("CANNY" /* GXT: Raton Canyon */, sVar0)) || MISC::ARE_STRINGS_EQUAL("CCreak" /* GXT: Cassidy Creek */, sVar0)) || MISC::ARE_STRINGS_EQUAL("ChamH" /* GXT: Chamberlain Hills */, sVar0)) || MISC::ARE_STRINGS_EQUAL("CHU" /* GXT: Chumash */, sVar0)) || MISC::ARE_STRINGS_EQUAL("COSI" /* GXT: Countryside */, sVar0)) || MISC::ARE_STRINGS_EQUAL("CMSW" /* GXT: Chiliad Mountain State Wilderness */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Cypre" /* GXT: Cypress Flats */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Desrt" /* GXT: Grand Senora Desert */, sVar0)) || MISC::ARE_STRINGS_EQUAL("ELGorl" /* GXT: El Gordo Lighthouse */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Galli" /* GXT: Galileo Park */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Galfish" /* GXT: Galilee */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Harmo" /* GXT: Harmony */, sVar0)) || MISC::ARE_STRINGS_EQUAL("HumLab" /* GXT: Humane Labs and Research */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Jail" /* GXT: Bolingbroke Penitentiary */, sVar0)) || MISC::ARE_STRINGS_EQUAL("LAct" /* GXT: Land Act Reservoir */, sVar0)) || MISC::ARE_STRINGS_EQUAL("LDam" /* GXT: Land Act Dam */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Lago" /* GXT: Lago Zancudo */, sVar0)) || MISC::ARE_STRINGS_EQUAL("MTChil" /* GXT: Mount Chiliad */, sVar0)) || MISC::ARE_STRINGS_EQUAL("MTJose" /* GXT: Mount Josiah */, sVar0)) || MISC::ARE_STRINGS_EQUAL("MTGordo" /* GXT: Mount Gordo */, sVar0)) || MISC::ARE_STRINGS_EQUAL("NCHU" /* GXT: North Chumash */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Oceana" /* GXT: Pacific Ocean */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Palmpow" /* GXT: Palmer-Taylor Power Station */, sVar0)) || MISC::ARE_STRINGS_EQUAL("PBluff" /* GXT: Pacific Bluffs */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Paleto" /* GXT: Paleto Bay */, sVar0)) || MISC::ARE_STRINGS_EQUAL("PalCov" /* GXT: Paleto Cove */, sVar0)) || MISC::ARE_STRINGS_EQUAL("PalFor" /* GXT: Paleto Forest */, sVar0)) || MISC::ARE_STRINGS_EQUAL("PalHigh" /* GXT: Palomino Highlands */, sVar0)) || MISC::ARE_STRINGS_EQUAL("RTRAK" /* GXT: Redwood Lights Track */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Rancho" /* GXT: Rancho */, sVar0)) || MISC::ARE_STRINGS_EQUAL("SANDY" /* GXT: Sandy Shores */, sVar0)) || MISC::ARE_STRINGS_EQUAL("TongvaH" /* GXT: Tongva Hills */, sVar0)) || MISC::ARE_STRINGS_EQUAL("TongvaV" /* GXT: Tongva Valley */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Zenora" /* GXT: Senora Freeway */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Slab" /* GXT: Stab City */, sVar0)) || MISC::ARE_STRINGS_EQUAL("WindF" /* GXT: Ron Alternates Wind Farm */, sVar0)) || MISC::ARE_STRINGS_EQUAL("Zancudo" /* GXT: Zancudo River */, sVar0)) || MISC::ARE_STRINGS_EQUAL("SanChia" /* GXT: San Chianski Mountain Range */, sVar0)) || MISC::ARE_STRINGS_EQUAL("zQ_UAR" /* GXT: Davis Quartz */, sVar0))
 	{
 		return 1;
 	}
@@ -10648,7 +10648,7 @@ int func_229(var uParam0, int iParam1, int iParam2, char* sParam3, char* sParam4
 	}
 	if (iParam5 == 4)
 	{
-		StringCopy(&Var0, "CELL_226", 16);
+		StringCopy(&Var0, "CELL_226" /* GXT: Accept? */, 16);
 		return func_281(uParam0, iParam1, sParam3, sParam4, &Var0);
 	}
 	if (iParam5 == 1 || iParam5 == 7)
@@ -11288,7 +11288,7 @@ void func_240(int iParam0)//Position - 0xECCD
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(42);
 								GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							}
-							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB")) && BitTest(Global_8137, 6))
+							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB" /* GXT: Benny's */)) && BitTest(Global_8137, 6))
 							{
 								GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT");
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
@@ -14180,7 +14180,7 @@ int func_341()//Position - 0x12BBD
 		{
 			if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 			{
-				func_175("TXM_H03", -1);
+				func_175("TXM_H03" /* GXT: You don't have enough cash to pay for a basic taxi fare. */, -1);
 			}
 			return 9;
 		}
@@ -14576,9 +14576,9 @@ void func_364()//Position - 0x1311B
 		OBJECT::DELETE_OBJECT(&iLocal_87);
 		STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_88);
 	}
-	if (HUD::IS_NAMED_RENDERTARGET_REGISTERED("taxi"))
+	if (HUD::IS_NAMED_RENDERTARGET_REGISTERED("taxi" /* GXT: Taxi */))
 	{
-		HUD::RELEASE_NAMED_RENDERTARGET("taxi");
+		HUD::RELEASE_NAMED_RENDERTARGET("taxi" /* GXT: Taxi */);
 	}
 	func_365();
 }
@@ -14697,12 +14697,12 @@ void func_368()//Position - 0x133D0
 	{
 		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("");
 		StringCopy(&cVar1, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_8746[1 /*6*/])), 64);
-		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253");
+		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253" /* GXT: New Contact */);
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, sVar2, &cVar1);
 	}
 	else
 	{
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_255");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("CELL_255" /* GXT: New Contact: ~n~~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_8746[1 /*6*/]));
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, "", 0);
 	}

@@ -393,10 +393,10 @@ void __EntryFunction__()//Position - 0x0
 									{
 										if (!func_84(Global_113386.f_19097, 1))
 										{
-											switch (func_69("TC_H_TOODAMAGED"))
+											switch (func_69("TC_H_TOODAMAGED" /* GXT: This taxi is too damaged. Repair it, or get a taxi in better condition to be offered or ask for taxi jobs. */))
 											{
 												case 2:
-													func_67("TC_H_TOODAMAGED", 1, 0, 1000, 10000, 7, 0, 0, 0);
+													func_67("TC_H_TOODAMAGED" /* GXT: This taxi is too damaged. Repair it, or get a taxi in better condition to be offered or ask for taxi jobs. */, 1, 0, 1000, 10000, 7, 0, 0, 0);
 													break;
 												
 												case 1:
@@ -419,10 +419,10 @@ void __EntryFunction__()//Position - 0x0
 								{
 									if (!func_84(Global_113386.f_19097, 16384))
 									{
-										switch (func_69("TC_ANOTHERJOB"))
+										switch (func_69("TC_ANOTHERJOB" /* GXT: ~s~For another taxi job, press ~INPUT_VEH_HORN~ */))
 										{
 											case 2:
-												func_67("TC_ANOTHERJOB", 1, 0, 1000, 10000, 7, 0, 0, 0);
+												func_67("TC_ANOTHERJOB" /* GXT: ~s~For another taxi job, press ~INPUT_VEH_HORN~ */, 1, 0, 1000, 10000, 7, 0, 0, 0);
 												break;
 											
 											case 1:
@@ -435,16 +435,16 @@ void __EntryFunction__()//Position - 0x0
 								{
 									if (!iLocal_112)
 									{
-										switch (func_69("TC_HOWTOSTART"))
+										switch (func_69("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */))
 										{
 											case 2:
-												func_67("TC_HOWTOSTART", 1, 0, 1000, 10000, 7, 0, 0, 0);
+												func_67("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */, 1, 0, 1000, 10000, 7, 0, 0, 0);
 												break;
 											
 											case 1:
 												iLocal_106 = MISC::GET_GAME_TIMER();
 												iLocal_112 = 1;
-												if (func_66("TC_HOWTOSTART"))
+												if (func_66("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */))
 												{
 													Global_113386.f_19097.f_22[15]++;
 												}
@@ -501,10 +501,10 @@ void __EntryFunction__()//Position - 0x0
 										}
 										if (func_61(&iLocal_114) >= 6f)
 										{
-											switch (func_69("TC_JOBOFFERED"))
+											switch (func_69("TC_JOBOFFERED" /* GXT: ~s~Taxi job offered. To accept, press ~INPUT_VEH_HORN~~s~ */))
 											{
 												case 2:
-													func_67("TC_JOBOFFERED", 1, 0, 1000, 10000, 7, 0, 0, 0);
+													func_67("TC_JOBOFFERED" /* GXT: ~s~Taxi job offered. To accept, press ~INPUT_VEH_HORN~~s~ */, 1, 0, 1000, 10000, 7, 0, 0, 0);
 													break;
 												
 												case 1:
@@ -528,7 +528,7 @@ void __EntryFunction__()//Position - 0x0
 										{
 											if (!func_84(Global_113386.f_19097, 32))
 											{
-												func_57("TC_MISSEDJOB", -1);
+												func_57("TC_MISSEDJOB" /* GXT: ~s~The taxi job you were offered has expired. There is only a short time to accept before another driver takes the job. However, more jobs can be accessed by pressing ~INPUT_VEH_HORN~~s~ */, -1);
 												func_82(&(Global_113386.f_19097), 32);
 											}
 											fLocal_107 = (MISC::GET_RANDOM_FLOAT_IN_RANGE(10f, 40f) + func_61(&iLocal_114));
@@ -587,18 +587,18 @@ void __EntryFunction__()//Position - 0x0
 									{
 										if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 										{
-											func_57("TXC_HEALTH_GONE", -1);
+											func_57("TXC_HEALTH_GONE" /* GXT: Taxi has too much damage to start a Taxi job. */, -1);
 										}
 									}
 									else if (iVar4 == 3)
 									{
 										if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 										{
-											if (!func_66("TXC_WANTED_WARN"))
+											if (!func_66("TXC_WANTED_WARN" /* GXT: Taxi jobs are not available while wanted. */))
 											{
 												if (!func_84(Global_113386.f_19097, 32768))
 												{
-													func_57("TXC_WANTED_WARN", -1);
+													func_57("TXC_WANTED_WARN" /* GXT: Taxi jobs are not available while wanted. */, -1);
 													func_82(&(Global_113386.f_19097), 32768);
 												}
 											}
@@ -625,23 +625,23 @@ void __EntryFunction__()//Position - 0x0
 										iLocal_102 = 0;
 									}
 								}
-								if (func_34("TC_HOWTOSTART"))
+								if (func_34("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */))
 								{
-									func_30("TC_HOWTOSTART", 1);
+									func_30("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */, 1);
 								}
-								if (func_34("TC_JOBOFFERED"))
+								if (func_34("TC_JOBOFFERED" /* GXT: ~s~Taxi job offered. To accept, press ~INPUT_VEH_HORN~~s~ */))
 								{
-									func_30("TC_JOBOFFERED", 1);
+									func_30("TC_JOBOFFERED" /* GXT: ~s~Taxi job offered. To accept, press ~INPUT_VEH_HORN~~s~ */, 1);
 								}
-								if (func_34("TC_H_TOODAMAGED"))
+								if (func_34("TC_H_TOODAMAGED" /* GXT: This taxi is too damaged. Repair it, or get a taxi in better condition to be offered or ask for taxi jobs. */))
 								{
-									func_30("TC_H_TOODAMAGED", 1);
+									func_30("TC_H_TOODAMAGED" /* GXT: This taxi is too damaged. Repair it, or get a taxi in better condition to be offered or ask for taxi jobs. */, 1);
 								}
-								if (func_34("TC_ANOTHERJOB"))
+								if (func_34("TC_ANOTHERJOB" /* GXT: ~s~For another taxi job, press ~INPUT_VEH_HORN~ */))
 								{
-									func_30("TC_ANOTHERJOB", 1);
+									func_30("TC_ANOTHERJOB" /* GXT: ~s~For another taxi job, press ~INPUT_VEH_HORN~ */, 1);
 								}
-								if (((MISC::GET_GAME_TIMER() - iLocal_106) > 60000 && !func_66("TC_HOWTOSTART")) && iLocal_112)
+								if (((MISC::GET_GAME_TIMER() - iLocal_106) > 60000 && !func_66("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */)) && iLocal_112)
 								{
 									iLocal_112 = 0;
 								}
@@ -726,9 +726,9 @@ void __EntryFunction__()//Position - 0x0
 					if (!func_23())
 					{
 						bLocal_110 = false;
-						if (func_34("TC_HOWTOSTART"))
+						if (func_34("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */))
 						{
-							func_30("TC_HOWTOSTART", 1);
+							func_30("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */, 1);
 						}
 						iLocal_96 = SYSTEM::START_NEW_SCRIPT(&Local_97, 51000);
 						SCRIPT::SET_SCRIPT_AS_NO_LONGER_NEEDED(&Local_97);
@@ -841,7 +841,7 @@ void func_2()//Position - 0x9EB
 	}
 	else if (MISC::IS_PS3_VERSION() || func_3())
 	{
-		StringCopy(&cVar0, "PRESENCE_0_STR", 24);
+		StringCopy(&cVar0, "PRESENCE_0_STR" /* GXT: Playing story */, 24);
 		NETWORK::NETWORK_SET_RICH_PRESENCE_STRING(0, &cVar0);
 	}
 }
@@ -2713,7 +2713,7 @@ void func_74()//Position - 0x2AA2
 	iVar0 = PLAYER::GET_PLAYERS_LAST_VEHICLE();
 	if (VEHICLE::IS_VEHICLE_DRIVEABLE(iVar0, false))
 	{
-		AUDIO::PLAY_SOUND_FROM_ENTITY(-1, "Radio_Off", iVar0, "TAXI_SOUNDS", false, 0);
+		AUDIO::PLAY_SOUND_FROM_ENTITY(-1, "Radio_Off" /* GXT: Off */, iVar0, "TAXI_SOUNDS", false, 0);
 	}
 }
 

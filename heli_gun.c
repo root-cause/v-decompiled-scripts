@@ -951,7 +951,7 @@ void func_1()//Position - 0x20B
 					iVar8 = 225;
 					PAD::DISABLE_CONTROL_ACTION(0, 80, true);
 				}
-				if ((((PAD::IS_CONTROL_JUST_PRESSED(iVar9, iVar8) || !VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_121, false)) || func_43(iLocal_121, 0)) || func_42("HUNTGUN_T_3")) || func_27())
+				if ((((PAD::IS_CONTROL_JUST_PRESSED(iVar9, iVar8) || !VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_121, false)) || func_43(iLocal_121, 0)) || func_42("HUNTGUN_T_3" /* GXT: Turrets are disabled inside of the Bunker. */)) || func_27())
 				{
 					iLocal_80 = 0;
 					if (func_194(iLocal_121))
@@ -1194,11 +1194,11 @@ char* func_9(int iParam0)//Position - 0x1960
 	{
 		if (func_44(Global_1853185) && !BitTest(Global_4718592.f_25, 7))
 		{
-			return "HUNTGUN_T_3";
+			return "HUNTGUN_T_3" /* GXT: Turrets are disabled inside of the Bunker. */;
 		}
 		else
 		{
-			return "HUNTGUN_T_2b";
+			return "HUNTGUN_T_2b" /* GXT: You are using the Mobile Operations Center Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. */;
 		}
 	}
 	if (func_125(3))
@@ -1296,76 +1296,76 @@ char* func_9(int iParam0)//Position - 0x1960
 			case 1:
 				if (bVar0 && bVar1)
 				{
-					return "IAA_T_2_OSM1";
+					return "IAA_T_2_OSM1" /* GXT: You are using the Entrance Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire the cannon. ~n~Press ~INPUT_SCRIPT_LT~ to fire the machine gun. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. ~n~Press ~INPUT_FRONTEND_LB~ or ~INPUT_FRONTEND_RB~ to switch cameras. */;
 				}
 				else if (bVar1)
 				{
-					return "IAA_T_2_OSL1";
+					return "IAA_T_2_OSL1" /* GXT: You are using the Entrance Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire the cannon. ~n~Press ~INPUT_SCRIPT_LT~ to fire the machine gun. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. ~n~Press ~INPUT_FRONTEND_RB~ to switch cameras. */;
 				}
 				else if (bVar0)
 				{
-					return "IAA_T_2_OSR1";
+					return "IAA_T_2_OSR1" /* GXT: You are using the Entrance Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire the cannon. ~n~Press ~INPUT_SCRIPT_LT~ to fire the machine gun. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. ~n~Press ~INPUT_FRONTEND_LB~ to switch cameras. */;
 				}
 				else
 				{
-					return "IAA_T_2_OSN1";
+					return "IAA_T_2_OSN1" /* GXT: You are using the Entrance Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire the cannon. ~n~Press ~INPUT_SCRIPT_LT~ to fire the machine gun. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. */;
 				}
 				break;
 			
 			case 2:
 				if (bVar0 && bVar1)
 				{
-					return "IAA_T_2_OSM2";
+					return "IAA_T_2_OSM2" /* GXT: You are using the South Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire the cannon. ~n~Press ~INPUT_SCRIPT_LT~ to fire the machine gun. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. ~n~Press ~INPUT_FRONTEND_LB~ or ~INPUT_FRONTEND_RB~ to switch cameras. */;
 				}
 				else if (bVar1)
 				{
-					return "IAA_T_2_OSL2";
+					return "IAA_T_2_OSL2" /* GXT: You are using the South Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire the cannon. ~n~Press ~INPUT_SCRIPT_LT~ to fire the machine gun. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. ~n~Press ~INPUT_FRONTEND_RB~ to switch cameras. */;
 				}
 				else if (bVar0)
 				{
-					return "IAA_T_2_OSR2";
+					return "IAA_T_2_OSR2" /* GXT: You are using the South Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire the cannon. ~n~Press ~INPUT_SCRIPT_LT~ to fire the machine gun. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. ~n~Press ~INPUT_FRONTEND_LB~ to switch cameras. */;
 				}
 				else
 				{
-					return "IAA_T_2_OSN2";
+					return "IAA_T_2_OSN2" /* GXT: You are using the South Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire the cannon. ~n~Press ~INPUT_SCRIPT_LT~ to fire the machine gun. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. */;
 				}
 				break;
 			
 			case 3:
 				if (bVar0 && bVar1)
 				{
-					return "IAA_T_2_OSM3";
+					return "IAA_T_2_OSM3" /* GXT: You are using the West Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire the cannon. ~n~Press ~INPUT_SCRIPT_LT~ to fire the machine gun. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. ~n~Press ~INPUT_FRONTEND_LB~ or ~INPUT_FRONTEND_RB~ to switch cameras. */;
 				}
 				else if (bVar1)
 				{
-					return "IAA_T_2_OSL3";
+					return "IAA_T_2_OSL3" /* GXT: You are using the West Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire the cannon. ~n~Press ~INPUT_SCRIPT_LT~ to fire the machine gun. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. ~n~Press ~INPUT_FRONTEND_RB~ to switch cameras. */;
 				}
 				else if (bVar0)
 				{
-					return "IAA_T_2_OSR3";
+					return "IAA_T_2_OSR3" /* GXT: You are using the West Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire the cannon. ~n~Press ~INPUT_SCRIPT_LT~ to fire the machine gun. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. ~n~Press ~INPUT_FRONTEND_LB~ to switch cameras. */;
 				}
 				else
 				{
-					return "IAA_T_2_OSN3";
+					return "IAA_T_2_OSN3" /* GXT: You are using the West Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire the cannon. ~n~Press ~INPUT_SCRIPT_LT~ to fire the machine gun. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. */;
 				}
 				break;
 			
 			case 4:
 				if (bVar0 && bVar1)
 				{
-					return "IAA_T_2_OSM4";
+					return "IAA_T_2_OSM4" /* GXT: You are using the East Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire the cannon. ~n~Press ~INPUT_SCRIPT_LT~ to fire the machine gun. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. ~n~Press ~INPUT_FRONTEND_LB~ or ~INPUT_FRONTEND_RB~ to switch cameras. */;
 				}
 				else if (bVar1)
 				{
-					return "IAA_T_2_OSL4";
+					return "IAA_T_2_OSL4" /* GXT: You are using the East Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire the cannon. ~n~Press ~INPUT_SCRIPT_LT~ to fire the machine gun. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. ~n~Press ~INPUT_FRONTEND_RB~ to switch cameras. */;
 				}
 				else if (bVar0)
 				{
-					return "IAA_T_2_OSR4";
+					return "IAA_T_2_OSR4" /* GXT: You are using the East Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire the cannon. ~n~Press ~INPUT_SCRIPT_LT~ to fire the machine gun. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. ~n~Press ~INPUT_FRONTEND_LB~ to switch cameras. */;
 				}
 				else
 				{
-					return "IAA_T_2_OSN4";
+					return "IAA_T_2_OSN4" /* GXT: You are using the East Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire the cannon. ~n~Press ~INPUT_SCRIPT_LT~ to fire the machine gun. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. */;
 				}
 				break;
 			}
@@ -1453,57 +1453,57 @@ char* func_9(int iParam0)//Position - 0x1960
 			case 1:
 				if (bVar0 && bVar1)
 				{
-					return "HUNTGUN_T_2_OSM1";
+					return "HUNTGUN_T_2_OSM1" /* GXT: You are using the Front Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. ~n~Press ~INPUT_FRONTEND_LB~ or ~INPUT_FRONTEND_RB~ to switch cameras. */;
 				}
 				else if (bVar1)
 				{
-					return "HUNTGUN_T_2_OSL1";
+					return "HUNTGUN_T_2_OSL1" /* GXT: You are using the Front Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. ~n~Press ~INPUT_FRONTEND_RB~ to switch cameras. */;
 				}
 				else if (bVar0)
 				{
-					return "HUNTGUN_T_2_OSR1";
+					return "HUNTGUN_T_2_OSR1" /* GXT: You are using the Front Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. ~n~Press ~INPUT_FRONTEND_LB~ to switch cameras. */;
 				}
 				else
 				{
-					return "HUNTGUN_T_2_OSN1";
+					return "HUNTGUN_T_2_OSN1" /* GXT: You are using the Front Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. */;
 				}
 				break;
 			
 			case 2:
 				if (bVar0 && bVar1)
 				{
-					return "HUNTGUN_T_2_OSM3";
+					return "HUNTGUN_T_2_OSM3" /* GXT: You are using the Top Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. ~n~Press ~INPUT_FRONTEND_LB~ or ~INPUT_FRONTEND_RB~ to switch cameras. */;
 				}
 				else if (bVar1)
 				{
-					return "HUNTGUN_T_2_OSL3";
+					return "HUNTGUN_T_2_OSL3" /* GXT: You are using the Top Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. ~n~Press ~INPUT_FRONTEND_RB~ to switch cameras. */;
 				}
 				else if (bVar0)
 				{
-					return "HUNTGUN_T_2_OSR3";
+					return "HUNTGUN_T_2_OSR3" /* GXT: You are using the Top Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. ~n~Press ~INPUT_FRONTEND_LB~ to switch cameras. */;
 				}
 				else
 				{
-					return "HUNTGUN_T_2_OSN3";
+					return "HUNTGUN_T_2_OSN3" /* GXT: You are using the Top Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. */;
 				}
 				break;
 			
 			case 3:
 				if (bVar0 && bVar1)
 				{
-					return "HUNTGUN_T_2_OSM2";
+					return "HUNTGUN_T_2_OSM2" /* GXT: You are using the Rear Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. ~n~Press ~INPUT_FRONTEND_LB~ or ~INPUT_FRONTEND_RB~ to switch cameras. */;
 				}
 				else if (bVar1)
 				{
-					return "HUNTGUN_T_2_OSL2";
+					return "HUNTGUN_T_2_OSL2" /* GXT: You are using the Rear Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. ~n~Press ~INPUT_FRONTEND_RB~ to switch cameras. */;
 				}
 				else if (bVar0)
 				{
-					return "HUNTGUN_T_2_OSR2";
+					return "HUNTGUN_T_2_OSR2" /* GXT: You are using the Rear Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. ~n~Press ~INPUT_FRONTEND_LB~ to switch cameras. */;
 				}
 				else
 				{
-					return "HUNTGUN_T_2_OSN2";
+					return "HUNTGUN_T_2_OSN2" /* GXT: You are using the Rear Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. */;
 				}
 				break;
 			}
@@ -1513,15 +1513,15 @@ char* func_9(int iParam0)//Position - 0x1960
 		switch (ENTITY::GET_ENTITY_MODEL(iParam0))
 		{
 			case joaat("bombushka"):
-				return "BOMBGUN_T_2c";
+				return "BOMBGUN_T_2c" /* GXT: You are using the Bombushka Dual .50 Cal Top Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. */;
 				break;
 			
 			case joaat("rhino"):
-				return "BOMBGUN_T_2c";
+				return "BOMBGUN_T_2c" /* GXT: You are using the Bombushka Dual .50 Cal Top Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. */;
 				break;
 			
 			case joaat("akula"):
-				return "AKULAGUN_P2";
+				return "AKULAGUN_P2" /* GXT: You are using the Akula's mounted gun.~n~Press ~INPUT_ATTACK~ to fire.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out.~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. */;
 				break;
 			}
 	}
@@ -2592,11 +2592,11 @@ void func_48(float fParam0, float fParam1)//Position - 0x3091
 	func_50(&uVar0, &uVar1, fParam0, fParam1);
 	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(0))
 	{
-		func_49("HUNTGUN_5_KM", -1);
+		func_49("HUNTGUN_5_KM" /* GXT: Press ~INPUT_AIM~ to tag. */, -1);
 	}
 	else
 	{
-		func_49("HUNTGUN_5", -1);
+		func_49("HUNTGUN_5" /* GXT: Press ~INPUT_FRONTEND_ACCEPT~ to tag.~n~Press ~INPUT_FRONTEND_RIGHT~ to go back. */, -1);
 	}
 }
 
@@ -3465,58 +3465,58 @@ void func_71()//Position - 0x4338
 
 void func_72()//Position - 0x441C
 {
-	if (func_42("HUNTGUN_2"))
+	if (func_42("HUNTGUN_2" /* GXT: You are using the helicopter's rocket launcher.~n~Press ~INPUT_ATTACK~ to fire.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out.~n~Press ~INPUT_CONTEXT~ to go back. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
-	if (func_42("HUNTGUN_2b"))
+	if (func_42("HUNTGUN_2b" /* GXT: You are using the helicopter's mounted surveillance camera.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out.~n~Press ~INPUT_CONTEXT~ to go back. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
-	if (func_42("HUNTGUN_2c"))
+	if (func_42("HUNTGUN_2c" /* GXT: You are using the helicopter's gun.~n~Press ~INPUT_ATTACK~ to fire.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out.~n~Press ~INPUT_CONTEXT~ to go back. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
-	if (func_42("HUNTGUN_4"))
+	if (func_42("HUNTGUN_4" /* GXT: You are viewing the co-pilot's rocket launcher. Press ~INPUT_CONTEXT~ to go back. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
-	if (func_42("HUNTGUN_4b"))
+	if (func_42("HUNTGUN_4b" /* GXT: You are viewing the co-pilot's mounted surveillance camera. Press ~INPUT_CONTEXT~ to go back. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
-	if (func_42("HUNTGUN_4c"))
+	if (func_42("HUNTGUN_4c" /* GXT: You are viewing the co-pilot's gun. Press ~INPUT_CONTEXT~ to go back. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
-	if (func_42("HUNTGUN_5"))
+	if (func_42("HUNTGUN_5" /* GXT: Press ~INPUT_FRONTEND_ACCEPT~ to tag.~n~Press ~INPUT_FRONTEND_RIGHT~ to go back. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
-	if (func_42("HUNTGUN_6"))
+	if (func_42("HUNTGUN_6" /* GXT: You can tag other players for the pilot to see. To tag a player, target them with the camera and press ~INPUT_FRONTEND_ACCEPT~. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
-	if (func_42("AKULAGUN_P1"))
+	if (func_42("AKULAGUN_P1" /* GXT: You are using the Akula Passenger Cam.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_FRONTEND_LB~ or ~INPUT_FRONTEND_RB~to switch camera modes. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
-	if (func_42("AKULAGUN_P2"))
+	if (func_42("AKULAGUN_P2" /* GXT: You are using the Akula's mounted gun.~n~Press ~INPUT_ATTACK~ to fire.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out.~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
 	if (MISC::IS_PC_VERSION())
 	{
-		if (func_42("HUNTGUN_5_KM"))
+		if (func_42("HUNTGUN_5_KM" /* GXT: Press ~INPUT_AIM~ to tag. */))
 		{
 			HUD::CLEAR_HELP(true);
 		}
-		if (func_42("HUNTGUN_6_KM"))
+		if (func_42("HUNTGUN_6_KM" /* GXT: You can tag other players for the pilot to see. To tag a player, target them with the camera and press ~INPUT_AIM~. */))
 		{
 			HUD::CLEAR_HELP(true);
 		}
 	}
-	if ((((func_42("BOMBGUN_T_2b") || func_42("BOMBGUN_T_2c")) || func_42("BOMBGUN_T_2d")) || func_42("VOLGUN_T_2b")) || func_42("VOLGUN_T_2c"))
+	if ((((func_42("BOMBGUN_T_2b" /* GXT: You are using the Bombushka Dual .50 Cal Nose Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. */) || func_42("BOMBGUN_T_2c" /* GXT: You are using the Bombushka Dual .50 Cal Top Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. */)) || func_42("BOMBGUN_T_2d" /* GXT: You are using the Bombushka Dual .50 Cal Rear Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. */)) || func_42("VOLGUN_T_2b" /* GXT: You are using the Volatol Dual .50 Cal Nose Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. */)) || func_42("VOLGUN_T_2c" /* GXT: You are using the Volatol Dual .50 Cal Top Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -5092,7 +5092,7 @@ void func_100(var uParam0, float fParam1, float fParam2, float fParam3, float fP
 								{
 									if (Global_1581350 != -1 || Global_1581356 != -1)
 									{
-										func_49("TUR_WATER", -1);
+										func_49("TUR_WATER" /* GXT: Turret is underwater. You cannot use this turret while it is under water. */, -1);
 										uParam0->f_34 = 1;
 									}
 								}
@@ -5103,7 +5103,7 @@ void func_100(var uParam0, float fParam1, float fParam2, float fParam3, float fP
 								{
 									if (Global_1581356 != -1)
 									{
-										func_49("TUR_GR", -1);
+										func_49("TUR_GR" /* GXT: Turret is underground. You cannot use this turret while it is underground. */, -1);
 									}
 									uParam0->f_34 = 1;
 								}
@@ -6121,15 +6121,15 @@ void func_109()//Position - 0x8296
 				{
 					if (iLocal_78 == joaat("buzzard") || iLocal_78 == joaat("savage"))
 					{
-						func_49("HUNTGUN_2", -1);
+						func_49("HUNTGUN_2" /* GXT: You are using the helicopter's rocket launcher.~n~Press ~INPUT_ATTACK~ to fire.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out.~n~Press ~INPUT_CONTEXT~ to go back. */, -1);
 					}
 					else if (iLocal_78 == joaat("valkyrie"))
 					{
-						func_49("HUNTGUN_2c", -1);
+						func_49("HUNTGUN_2c" /* GXT: You are using the helicopter's gun.~n~Press ~INPUT_ATTACK~ to fire.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out.~n~Press ~INPUT_CONTEXT~ to go back. */, -1);
 					}
 					else if (iLocal_78 == joaat("hunter"))
 					{
-						func_49("HUNTGUN_2c", -1);
+						func_49("HUNTGUN_2c" /* GXT: You are using the helicopter's gun.~n~Press ~INPUT_ATTACK~ to fire.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out.~n~Press ~INPUT_CONTEXT~ to go back. */, -1);
 					}
 					else if (func_194(iLocal_121))
 					{
@@ -6141,56 +6141,56 @@ void func_109()//Position - 0x8296
 					}
 					else
 					{
-						func_49("HUNTGUN_2b", -1);
+						func_49("HUNTGUN_2b" /* GXT: You are using the helicopter's mounted surveillance camera.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out.~n~Press ~INPUT_CONTEXT~ to go back. */, -1);
 					}
 				}
 				else if (bLocal_86)
 				{
 					if (ENTITY::GET_ENTITY_MODEL(iLocal_121) == joaat("bombushka"))
 					{
-						func_49("BOMBGUN_T_2b", -1);
+						func_49("BOMBGUN_T_2b" /* GXT: You are using the Bombushka Dual .50 Cal Nose Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. */, -1);
 					}
 					if (ENTITY::GET_ENTITY_MODEL(iLocal_121) == joaat("akula"))
 					{
-						func_49("AKULAGUN_P1", -1);
+						func_49("AKULAGUN_P1" /* GXT: You are using the Akula Passenger Cam.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_FRONTEND_LB~ or ~INPUT_FRONTEND_RB~to switch camera modes. */, -1);
 					}
 					if (ENTITY::GET_ENTITY_MODEL(iLocal_121) == joaat("volatol"))
 					{
-						func_49("VOLGUN_T_2b", -1);
+						func_49("VOLGUN_T_2b" /* GXT: You are using the Volatol Dual .50 Cal Nose Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. */, -1);
 					}
 				}
 				else if (bLocal_87)
 				{
 					if (ENTITY::GET_ENTITY_MODEL(iLocal_121) == joaat("bombushka"))
 					{
-						func_49("BOMBGUN_T_2d", -1);
+						func_49("BOMBGUN_T_2d" /* GXT: You are using the Bombushka Dual .50 Cal Rear Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. */, -1);
 					}
 					if (ENTITY::GET_ENTITY_MODEL(iLocal_121) == joaat("akula"))
 					{
-						func_49("AKULAGUN_P1", -1);
+						func_49("AKULAGUN_P1" /* GXT: You are using the Akula Passenger Cam.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_FRONTEND_LB~ or ~INPUT_FRONTEND_RB~to switch camera modes. */, -1);
 					}
 					if (ENTITY::GET_ENTITY_MODEL(iLocal_121) == joaat("volatol"))
 					{
-						func_49("VOLGUN_T_2c", -1);
+						func_49("VOLGUN_T_2c" /* GXT: You are using the Volatol Dual .50 Cal Top Turret.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire. ~n~Press ~INPUT_SCRIPT_RRIGHT~ to go back. */, -1);
 					}
 				}
 				else if (!func_194(iLocal_121))
 				{
 					if (iLocal_78 == joaat("buzzard") || iLocal_78 == joaat("savage"))
 					{
-						func_49("HUNTGUN_4", -1);
+						func_49("HUNTGUN_4" /* GXT: You are viewing the co-pilot's rocket launcher. Press ~INPUT_CONTEXT~ to go back. */, -1);
 					}
 					else if (iLocal_78 == joaat("valkyrie") || iLocal_78 == joaat("hunter"))
 					{
-						func_49("HUNTGUN_4c", -1);
+						func_49("HUNTGUN_4c" /* GXT: You are viewing the co-pilot's gun. Press ~INPUT_CONTEXT~ to go back. */, -1);
 					}
 					else if (func_125(3))
 					{
-						func_49("IAAGUN_1", -1);
+						func_49("IAAGUN_1" /* GXT: You are viewing the IAA turret camera. ~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out. ~n~Press ~INPUT_ATTACK~ to fire the cannon. ~n~Hold ~INPUT_AIM~ to fire the machine gun. ~n~Press ~INPUT_FRONTEND_CANCEL~ to go back. */, -1);
 					}
 					else
 					{
-						func_49("HUNTGUN_4b", -1);
+						func_49("HUNTGUN_4b" /* GXT: You are viewing the co-pilot's mounted surveillance camera. Press ~INPUT_CONTEXT~ to go back. */, -1);
 					}
 				}
 				iLocal_119++;
@@ -6198,7 +6198,7 @@ void func_109()//Position - 0x8296
 			break;
 		
 		case 1:
-			if ((((func_42("HUNTGUN_2") || func_42("HUNTGUN_4")) || func_42("HUNTGUN_2b")) || func_42("HUNTGUN_4b")) && Global_1581356 == -1)
+			if ((((func_42("HUNTGUN_2" /* GXT: You are using the helicopter's rocket launcher.~n~Press ~INPUT_ATTACK~ to fire.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out.~n~Press ~INPUT_CONTEXT~ to go back. */) || func_42("HUNTGUN_4" /* GXT: You are viewing the co-pilot's rocket launcher. Press ~INPUT_CONTEXT~ to go back. */)) || func_42("HUNTGUN_2b" /* GXT: You are using the helicopter's mounted surveillance camera.~n~Use ~INPUT_SNIPER_ZOOM~ to zoom in/out.~n~Press ~INPUT_CONTEXT~ to go back. */)) || func_42("HUNTGUN_4b" /* GXT: You are viewing the co-pilot's mounted surveillance camera. Press ~INPUT_CONTEXT~ to go back. */)) && Global_1581356 == -1)
 			{
 				iLocal_119++;
 			}
@@ -6234,11 +6234,11 @@ void func_109()//Position - 0x8296
 						{
 							if (PAD::IS_USING_KEYBOARD_AND_MOUSE(0))
 							{
-								func_49("HUNTGUN_6_KM", -1);
+								func_49("HUNTGUN_6_KM" /* GXT: You can tag other players for the pilot to see. To tag a player, target them with the camera and press ~INPUT_AIM~. */, -1);
 							}
 							else
 							{
-								func_49("HUNTGUN_6", -1);
+								func_49("HUNTGUN_6" /* GXT: You can tag other players for the pilot to see. To tag a player, target them with the camera and press ~INPUT_FRONTEND_ACCEPT~. */, -1);
 							}
 						}
 					}
@@ -7122,35 +7122,35 @@ void func_146(bool bParam0)//Position - 0x969E
 
 void func_147()//Position - 0x96F8
 {
-	if (func_42("HUNTGUN_1"))
+	if (func_42("HUNTGUN_1" /* GXT: You are the co-pilot of a combat helicopter. Press ~INPUT_CONTEXT~ to use the rocket launcher. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
-	if (func_42("HUNTGUN_1b"))
+	if (func_42("HUNTGUN_1b" /* GXT: You are the co-pilot of a helicopter. Press ~INPUT_CONTEXT~ to use the mounted surveillance camera. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
-	if (func_42("HUNTGUN_1c"))
+	if (func_42("HUNTGUN_1c" /* GXT: You are the co-pilot of a Valkyrie helicopter. Press ~INPUT_CONTEXT~ to enter and exit the gun camera. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
-	if (func_42("HUNTGUN_3"))
+	if (func_42("HUNTGUN_3" /* GXT: Your co-pilot is operating the helicopter's rocket launcher. Press ~INPUT_CONTEXT~ to view the camera. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
-	if (func_42("HUNTGUN_3b"))
+	if (func_42("HUNTGUN_3b" /* GXT: Your co-pilot is operating the helicopter's mounted surveillance camera. Press ~INPUT_CONTEXT~ to view the camera. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
-	if (func_42("HUNTGUN_3c"))
+	if (func_42("HUNTGUN_3c" /* GXT: Your co-pilot is operating the helicopter's gun. Press ~INPUT_CONTEXT~ to view the camera. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
-	if (((((((((((((((((((((func_42("BOMBGUN_1c") || func_42("BOMBGUN_1c1")) || func_42("BOMBGUN_1c2")) || func_42("BOMBGUN_2c")) || func_42("BOMBGUN_2c1")) || func_42("BOMBGUN_2c2")) || func_42("BOMBGUN_3c")) || func_42("BOMBGUN_3c1")) || func_42("BOMBGUN_3c2")) || func_42("BOMBGUN_FULL")) || func_42("BOMBGUN_BUSY")) || func_42("AKULAGUN_2")) || func_42("AKULAGUN_1")) || func_42("VOLGUN_1c")) || func_42("VOLGUN_1c1")) || func_42("VOLGUN_1c2")) || func_42("VOLGUN_2c")) || func_42("VOLGUN_2c1")) || func_42("VOLGUN_2c2")) || func_42("VOLGUN_3c")) || func_42("VOLGUN_3c1")) || func_42("VOLGUN_3c2"))
+	if (((((((((((((((((((((func_42("BOMBGUN_1c" /* GXT: You are the co-pilot of a Bombushka. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. */) || func_42("BOMBGUN_1c1" /* GXT: You are the co-pilot of a Bombushka. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. ~n~Hold ~INPUT_CONTEXT~ to move to the Nose Turret seat. */)) || func_42("BOMBGUN_1c2" /* GXT: You are the co-pilot of a Bombushka. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. ~n~Hold ~INPUT_CONTEXT~ to move to the Rear Turret seat. */)) || func_42("BOMBGUN_2c" /* GXT: You are sitting in the Nose Turret seat of a Bombushka. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. */)) || func_42("BOMBGUN_2c1" /* GXT: You are sitting in the Nose Turret seat of a Bombushka. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. ~n~Hold ~INPUT_CONTEXT~ to move to the Top Turret seat. */)) || func_42("BOMBGUN_2c2" /* GXT: You are sitting in the Nose Turret seat of a Bombushka. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. ~n~Hold ~INPUT_CONTEXT~ to move to the Rear Turret seat. */)) || func_42("BOMBGUN_3c" /* GXT: You are sitting in the Rear Turret seat of a Bombushka. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. */)) || func_42("BOMBGUN_3c1" /* GXT: You are sitting in the Rear Turret seat of a Bombushka. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. ~n~Hold ~INPUT_CONTEXT~ to move to the Top Turret seat. */)) || func_42("BOMBGUN_3c2" /* GXT: You are sitting in the Rear Turret seat of a Bombushka. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. ~n~Hold ~INPUT_CONTEXT~ to move to the Nose Turret seat. */)) || func_42("BOMBGUN_FULL" /* GXT: That seat is taken. You cannot move to it. */)) || func_42("BOMBGUN_BUSY" /* GXT: You cannot move to another seat or enter the turret camera while moving to another seat. */)) || func_42("AKULAGUN_2" /* GXT: You are a passenger of an Akula. ~n~Press ~INPUT_CONTEXT~ to enter the passenger camera. */)) || func_42("AKULAGUN_1" /* GXT: You are the co-pilot of an Akula. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. */)) || func_42("VOLGUN_1c" /* GXT: You are sitting in the Nose Turret seat of a Volatol. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera  ~n~You cannot swap between turrets as the other stations are currently in use. */)) || func_42("VOLGUN_1c1" /* GXT: You are sitting in the Nose Turret seat of a Volatol. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. ~n~Hold ~INPUT_CONTEXT~ to move to the Co-Pilot seat. */)) || func_42("VOLGUN_1c2" /* GXT: You are sitting in the Nose Turret seat of a Volatol. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. ~n~Hold ~INPUT_CONTEXT~ to move to the Top Turret seat. */)) || func_42("VOLGUN_2c" /* GXT: You are sitting in the Top Turret seat of a Volatol. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. ~n~You cannot swap between turrets as the other stations are currently in use. */)) || func_42("VOLGUN_2c1" /* GXT: You are sitting in the Top Turret seat of a Volatol. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. ~n~Hold ~INPUT_CONTEXT~ to move to the Nose Turret seat. */)) || func_42("VOLGUN_2c2" /* GXT: You are sitting in the Top Turret seat of a Volatol. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. ~n~Hold ~INPUT_CONTEXT~ to move to the Co-Pilot seat. */)) || func_42("VOLGUN_3c" /* GXT: You are the Co-Pilot of a Volatol. ~n~You cannot swap between turrets as the other stations are currently in use. */)) || func_42("VOLGUN_3c1" /* GXT: You are the Co-Pilot of a Volatol. ~n~Hold ~INPUT_CONTEXT~ to move to the Nose Turret seat. */)) || func_42("VOLGUN_3c2" /* GXT: You are the Co-Pilot of a Volatol. ~n~Hold ~INPUT_CONTEXT~ to move to the Top Turret seat. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
-	if (func_42("HUNTGUNH_1c"))
+	if (func_42("HUNTGUNH_1c" /* GXT: You are the co-pilot of a Hunter helicopter. Press ~INPUT_CONTEXT~ to enter and exit the gun camera. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -7224,7 +7224,7 @@ int func_151()//Position - 0x9932
 	{
 		return 0;
 	}
-	if (func_42("TUR_GR") || func_42("TUR_WATER"))
+	if (func_42("TUR_GR" /* GXT: Turret is underground. You cannot use this turret while it is underground. */) || func_42("TUR_WATER" /* GXT: Turret is underwater. You cannot use this turret while it is under water. */))
 	{
 		return 0;
 	}
@@ -7235,7 +7235,7 @@ int func_151()//Position - 0x9932
 			if (PAD::IS_CONTROL_JUST_PRESSED(0, 51) && iLocal_89 < 1)
 			{
 				func_147();
-				func_49("BOMBGUN_BUSY", -1);
+				func_49("BOMBGUN_BUSY" /* GXT: You cannot move to another seat or enter the turret camera while moving to another seat. */, -1);
 				iLocal_89++;
 			}
 		}
@@ -7465,7 +7465,7 @@ int func_158()//Position - 0x9EF0
 {
 	if (!func_161(PLAYER::PLAYER_ID()))
 	{
-		if (func_42("BHH_LEFTRANGE"))
+		if (func_42("BHH_LEFTRANGE" /* GXT: You are out of range of the Business Battle that is currently in progress. Press ~INPUT_CONTEXT~ to continue participating. */))
 		{
 			return 1;
 		}
@@ -7548,7 +7548,7 @@ void func_163()//Position - 0xA00B
 			}
 			else if (iLocal_88 < 1)
 			{
-				func_49("BOMBGUN_FULL", -1);
+				func_49("BOMBGUN_FULL" /* GXT: That seat is taken. You cannot move to it. */, -1);
 				iLocal_88++;
 			}
 		}
@@ -7566,7 +7566,7 @@ void func_163()//Position - 0xA00B
 			}
 			else if (iLocal_88 < 1)
 			{
-				func_49("BOMBGUN_FULL", -1);
+				func_49("BOMBGUN_FULL" /* GXT: That seat is taken. You cannot move to it. */, -1);
 				iLocal_88++;
 			}
 		}
@@ -7584,7 +7584,7 @@ void func_163()//Position - 0xA00B
 			}
 			else if (iLocal_88 < 1)
 			{
-				func_49("BOMBGUN_FULL", -1);
+				func_49("BOMBGUN_FULL" /* GXT: That seat is taken. You cannot move to it. */, -1);
 				iLocal_88++;
 			}
 		}
@@ -7605,15 +7605,15 @@ void func_163()//Position - 0xA00B
 				switch (iLocal_112)
 				{
 					case 0:
-						func_49("BOMBGUN_1o", 1000);
+						func_49("BOMBGUN_1o" /* GXT: There is a player already occupying the Top Turret seat. */, 1000);
 						break;
 					
 					case 1:
-						func_49("BOMBGUN_2o", 1000);
+						func_49("BOMBGUN_2o" /* GXT: There is a player already occupying the Nose Turret seat. */, 1000);
 						break;
 					
 					case 2:
-						func_49("BOMBGUN_3o", 1000);
+						func_49("BOMBGUN_3o" /* GXT: There is a player already occupying the Rear Turret seat. */, 1000);
 						break;
 				}
 				iLocal_113 = 0;
@@ -7644,7 +7644,7 @@ void func_164()//Position - 0xA1F4
 			}
 			else if (iLocal_88 < 1)
 			{
-				func_49("BOMBGUN_FULL", -1);
+				func_49("BOMBGUN_FULL" /* GXT: That seat is taken. You cannot move to it. */, -1);
 				iLocal_88++;
 			}
 		}
@@ -7657,7 +7657,7 @@ void func_164()//Position - 0xA1F4
 			}
 			else if (iLocal_88 < 1)
 			{
-				func_49("BOMBGUN_FULL", -1);
+				func_49("BOMBGUN_FULL" /* GXT: That seat is taken. You cannot move to it. */, -1);
 				iLocal_88++;
 			}
 		}
@@ -7678,11 +7678,11 @@ void func_164()//Position - 0xA1F4
 				switch (iLocal_112)
 				{
 					case 1:
-						func_49("BOMBGUN_2o", 1000);
+						func_49("BOMBGUN_2o" /* GXT: There is a player already occupying the Nose Turret seat. */, 1000);
 						break;
 					
 					case 2:
-						func_49("BOMBGUN_1o", 1000);
+						func_49("BOMBGUN_1o" /* GXT: There is a player already occupying the Top Turret seat. */, 1000);
 						break;
 				}
 				iLocal_113 = 0;
@@ -7728,7 +7728,7 @@ void func_165()//Position - 0xA319
 						}
 						if (!bVar0)
 						{
-							func_49("HUNTGUN_1", -1);
+							func_49("HUNTGUN_1" /* GXT: You are the co-pilot of a combat helicopter. Press ~INPUT_CONTEXT~ to use the rocket launcher. */, -1);
 						}
 					}
 					else if (iLocal_78 == joaat("valkyrie"))
@@ -7742,7 +7742,7 @@ void func_165()//Position - 0xA319
 						}
 						if (!bVar0)
 						{
-							func_49("HUNTGUN_1c", -1);
+							func_49("HUNTGUN_1c" /* GXT: You are the co-pilot of a Valkyrie helicopter. Press ~INPUT_CONTEXT~ to enter and exit the gun camera. */, -1);
 						}
 					}
 					else if (iLocal_78 == joaat("hunter"))
@@ -7756,7 +7756,7 @@ void func_165()//Position - 0xA319
 						}
 						if (!bVar0)
 						{
-							func_49("HUNTGUNH_1c", -1);
+							func_49("HUNTGUNH_1c" /* GXT: You are the co-pilot of a Hunter helicopter. Press ~INPUT_CONTEXT~ to enter and exit the gun camera. */, -1);
 						}
 					}
 					else if (Global_1581350 != -1)
@@ -7770,15 +7770,15 @@ void func_165()//Position - 0xA319
 							{
 								if (bLocal_85)
 								{
-									func_49("AKULAGUN_1", -1);
+									func_49("AKULAGUN_1" /* GXT: You are the co-pilot of an Akula. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. */, -1);
 								}
 								else if (bLocal_86)
 								{
-									func_49("AKULAGUN_2", -1);
+									func_49("AKULAGUN_2" /* GXT: You are a passenger of an Akula. ~n~Press ~INPUT_CONTEXT~ to enter the passenger camera. */, -1);
 								}
 								else if (bLocal_87)
 								{
-									func_49("AKULAGUN_2", -1);
+									func_49("AKULAGUN_2" /* GXT: You are a passenger of an Akula. ~n~Press ~INPUT_CONTEXT~ to enter the passenger camera. */, -1);
 								}
 							}
 							else if (iLocal_78 == joaat("volatol"))
@@ -7787,22 +7787,22 @@ void func_165()//Position - 0xA319
 								{
 									if (!bLocal_103)
 									{
-										func_49("VOLGUN_1c2", -1);
+										func_49("VOLGUN_1c2" /* GXT: You are sitting in the Nose Turret seat of a Volatol. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. ~n~Hold ~INPUT_CONTEXT~ to move to the Top Turret seat. */, -1);
 									}
 									else
 									{
-										func_49("VOLGUN_1c", -1);
+										func_49("VOLGUN_1c" /* GXT: You are sitting in the Nose Turret seat of a Volatol. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera  ~n~You cannot swap between turrets as the other stations are currently in use. */, -1);
 									}
 								}
 								else if (bLocal_87)
 								{
 									if (!bLocal_99)
 									{
-										func_49("VOLGUN_2c1", -1);
+										func_49("VOLGUN_2c1" /* GXT: You are sitting in the Top Turret seat of a Volatol. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. ~n~Hold ~INPUT_CONTEXT~ to move to the Nose Turret seat. */, -1);
 									}
 									else
 									{
-										func_49("VOLGUN_2c", -1);
+										func_49("VOLGUN_2c" /* GXT: You are sitting in the Top Turret seat of a Volatol. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. ~n~You cannot swap between turrets as the other stations are currently in use. */, -1);
 									}
 								}
 							}
@@ -7810,52 +7810,52 @@ void func_165()//Position - 0xA319
 							{
 								if (!bLocal_99)
 								{
-									func_49("BOMBGUN_1c1", -1);
+									func_49("BOMBGUN_1c1" /* GXT: You are the co-pilot of a Bombushka. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. ~n~Hold ~INPUT_CONTEXT~ to move to the Nose Turret seat. */, -1);
 								}
 								else if (!bLocal_103)
 								{
-									func_49("BOMBGUN_1c2", -1);
+									func_49("BOMBGUN_1c2" /* GXT: You are the co-pilot of a Bombushka. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. ~n~Hold ~INPUT_CONTEXT~ to move to the Rear Turret seat. */, -1);
 								}
 								else
 								{
-									func_49("BOMBGUN_1c", -1);
+									func_49("BOMBGUN_1c" /* GXT: You are the co-pilot of a Bombushka. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. */, -1);
 								}
 							}
 							else if (bLocal_86)
 							{
 								if (!bLocal_103)
 								{
-									func_49("BOMBGUN_2c2", -1);
+									func_49("BOMBGUN_2c2" /* GXT: You are sitting in the Nose Turret seat of a Bombushka. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. ~n~Hold ~INPUT_CONTEXT~ to move to the Rear Turret seat. */, -1);
 								}
 								else if (!bLocal_92)
 								{
-									func_49("BOMBGUN_2c1", -1);
+									func_49("BOMBGUN_2c1" /* GXT: You are sitting in the Nose Turret seat of a Bombushka. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. ~n~Hold ~INPUT_CONTEXT~ to move to the Top Turret seat. */, -1);
 								}
 								else
 								{
-									func_49("BOMBGUN_2c", -1);
+									func_49("BOMBGUN_2c" /* GXT: You are sitting in the Nose Turret seat of a Bombushka. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. */, -1);
 								}
 							}
 							else if (bLocal_87)
 							{
 								if (!bLocal_92)
 								{
-									func_49("BOMBGUN_3c1", -1);
+									func_49("BOMBGUN_3c1" /* GXT: You are sitting in the Rear Turret seat of a Bombushka. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. ~n~Hold ~INPUT_CONTEXT~ to move to the Top Turret seat. */, -1);
 								}
 								else if (!bLocal_99)
 								{
-									func_49("BOMBGUN_3c2", -1);
+									func_49("BOMBGUN_3c2" /* GXT: You are sitting in the Rear Turret seat of a Bombushka. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. ~n~Hold ~INPUT_CONTEXT~ to move to the Nose Turret seat. */, -1);
 								}
 								else
 								{
-									func_49("BOMBGUN_3c", -1);
+									func_49("BOMBGUN_3c" /* GXT: You are sitting in the Rear Turret seat of a Bombushka. ~n~Press ~INPUT_CONTEXT~ to enter the gun camera. */, -1);
 								}
 							}
 						}
 					}
 					else
 					{
-						func_49("HUNTGUN_1b", -1);
+						func_49("HUNTGUN_1b" /* GXT: You are the co-pilot of a helicopter. Press ~INPUT_CONTEXT~ to use the mounted surveillance camera. */, -1);
 					}
 					iLocal_80 = 1;
 				}
@@ -7865,11 +7865,11 @@ void func_165()//Position - 0xA319
 					{
 						if (func_171(PLAYER::PLAYER_ID()) == 2)
 						{
-							func_49("TR_HT_VKCHCAM", -1);
+							func_49("TR_HT_VKCHCAM" /* GXT: Press ~INPUT_CONTEXT~ to use the helicopter's mounted surveillance camera to scan license plates and locate the bank manager's vehicle. ~INPUT_VEH_HORN~ can be used to make the helicopter hover in place. */, -1);
 						}
 						else
 						{
-							func_49("TR_HT_HCAM", -1);
+							func_49("TR_HT_HCAM" /* GXT: Press ~INPUT_CONTEXT~ to use the mounted surveillance camera. */, -1);
 						}
 						iLocal_80 = 1;
 						Global_2825431 = 1;
@@ -7879,20 +7879,20 @@ void func_165()//Position - 0xA319
 				{
 					if (iLocal_78 == joaat("buzzard") || iLocal_78 == joaat("savage"))
 					{
-						func_49("HUNTGUN_3", -1);
+						func_49("HUNTGUN_3" /* GXT: Your co-pilot is operating the helicopter's rocket launcher. Press ~INPUT_CONTEXT~ to view the camera. */, -1);
 					}
 					else if (iLocal_78 == joaat("valkyrie"))
 					{
-						func_49("HUNTGUN_3c", -1);
+						func_49("HUNTGUN_3c" /* GXT: Your co-pilot is operating the helicopter's gun. Press ~INPUT_CONTEXT~ to view the camera. */, -1);
 					}
 					else
 					{
-						func_49("HUNTGUN_3b", -1);
+						func_49("HUNTGUN_3b" /* GXT: Your co-pilot is operating the helicopter's mounted surveillance camera. Press ~INPUT_CONTEXT~ to view the camera. */, -1);
 					}
 					iLocal_80 = 1;
 				}
 			}
-			else if (func_42("VEX_EYEHLPe"))
+			else if (func_42("VEX_EYEHLPe" /* GXT: Enter the camera with ~INPUT_CONTEXT~ to access the vehicle scanner. */))
 			{
 				iLocal_80 = 1;
 			}
@@ -8129,7 +8129,7 @@ void func_178()//Position - 0xAA4C
 			{
 				if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 				{
-					func_49("HUNTGUN_8", -1);
+					func_49("HUNTGUN_8" /* GXT: Only the gun is available as your co-pilot is operating the helicopter's rocket launcher. */, -1);
 					iLocal_82 = 1;
 				}
 			}

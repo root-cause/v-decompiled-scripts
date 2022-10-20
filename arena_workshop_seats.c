@@ -227,7 +227,7 @@ void func_4(int iParam0)//Position - 0x10A
 
 void func_5(var uParam0, int iParam1)//Position - 0x128
 {
-	if (((((((((((((((func_6("MPOF_AC_PC_EXIT") || func_6("MPOF_AC_EXIT")) || func_6("MPOFSEAT_PCEXIT")) || func_6("MPOFSEAT_EXIT")) || func_6("DJ_SEAT_PC")) || func_6("DJ_SEAT")) || func_6("DJ_PSEAT_PC")) || func_6("DJ_PSEAT")) || func_6("DJ_SEAT_PC_BM")) || func_6("DJ_SEAT_BM")) || func_6("DJ_PSEAT_PC_BM")) || func_6("DJ_PSEAT_BM")) || func_6("DJ_SEAT_PC_TOU")) || func_6("DJ_SEAT_TOU")) || func_6("DJ_PSEAT_PC_TOU")) || func_6("DJ_PSEAT_TOU"))
+	if (((((((((((((((func_6("MPOF_AC_PC_EXIT" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */) || func_6("MPOF_AC_EXIT" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || func_6("MPOFSEAT_PCEXIT" /* GXT: Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */)) || func_6("MPOFSEAT_EXIT" /* GXT: Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || func_6("DJ_SEAT_PC" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */)) || func_6("DJ_SEAT" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || func_6("DJ_PSEAT_PC" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */)) || func_6("DJ_PSEAT" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || func_6("DJ_SEAT_PC_BM" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */)) || func_6("DJ_SEAT_BM" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || func_6("DJ_PSEAT_PC_BM" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */)) || func_6("DJ_PSEAT_BM" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || func_6("DJ_SEAT_PC_TOU" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */)) || func_6("DJ_SEAT_TOU" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || func_6("DJ_PSEAT_PC_TOU" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */)) || func_6("DJ_PSEAT_TOU" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -339,7 +339,7 @@ void func_9(var uParam0)//Position - 0x2C9
 					{
 						if ((MISC::GET_GAME_TIMER() - uParam0->f_43.f_6) > 150)
 						{
-							func_54(&(uParam0->f_43.f_5), 4, "MPJAC_SIT", 0, 0, 0, 0);
+							func_54(&(uParam0->f_43.f_5), 4, "MPJAC_SIT" /* GXT: Press ~INPUT_CONTEXT~ to sit down. */, 0, 0, 0, 0);
 						}
 					}
 					else if (PAD::IS_CONTROL_JUST_PRESSED(0, 51))
@@ -670,40 +670,40 @@ void func_16(var uParam0)//Position - 0x98D
 							{
 								if (func_17(PLAYER::PLAYER_ID()) == 3)
 								{
-									func_54(&(uParam0->f_43.f_5), 4, "DJ_SEAT_PC_BM", 0, 0, 0, 0);
+									func_54(&(uParam0->f_43.f_5), 4, "DJ_SEAT_PC_BM" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
 								}
 								else if (func_17(PLAYER::PLAYER_ID()) == 2)
 								{
-									func_54(&(uParam0->f_43.f_5), 4, "DJ_SEAT_PC_TOU", 0, 0, 0, 0);
+									func_54(&(uParam0->f_43.f_5), 4, "DJ_SEAT_PC_TOU" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
 								}
 								else
 								{
-									func_54(&(uParam0->f_43.f_5), 4, "DJ_SEAT_PC", 0, 0, 0, 0);
+									func_54(&(uParam0->f_43.f_5), 4, "DJ_SEAT_PC" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
 								}
 							}
 							else
 							{
-								func_54(&(uParam0->f_43.f_5), 4, "MPOF_AC_PC_EXIT", 0, 0, 0, 0);
+								func_54(&(uParam0->f_43.f_5), 4, "MPOF_AC_PC_EXIT" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
 							}
 						}
 						else if (bVar2)
 						{
 							if (func_17(PLAYER::PLAYER_ID()) == 3)
 							{
-								func_54(&(uParam0->f_43.f_5), 4, "DJ_SEAT_BM", 0, 0, 0, 0);
+								func_54(&(uParam0->f_43.f_5), 4, "DJ_SEAT_BM" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
 							}
 							else if (func_17(PLAYER::PLAYER_ID()) == 2)
 							{
-								func_54(&(uParam0->f_43.f_5), 4, "DJ_SEAT_TOU", 0, 0, 0, 0);
+								func_54(&(uParam0->f_43.f_5), 4, "DJ_SEAT_TOU" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
 							}
 							else
 							{
-								func_54(&(uParam0->f_43.f_5), 4, "DJ_SEAT", 0, 0, 0, 0);
+								func_54(&(uParam0->f_43.f_5), 4, "DJ_SEAT" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
 							}
 						}
 						else
 						{
-							func_54(&(uParam0->f_43.f_5), 4, "MPOF_AC_EXIT", 0, 0, 0, 0);
+							func_54(&(uParam0->f_43.f_5), 4, "MPOF_AC_EXIT" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
 						}
 					}
 					else if (uParam0->f_43.f_8 == 2)
@@ -714,40 +714,40 @@ void func_16(var uParam0)//Position - 0x98D
 							{
 								if (func_17(PLAYER::PLAYER_ID()) == 3)
 								{
-									func_54(&(uParam0->f_43.f_5), 4, "DJ_PSEAT_PC_BM", 0, 0, 0, 0);
+									func_54(&(uParam0->f_43.f_5), 4, "DJ_PSEAT_PC_BM" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
 								}
 								else if (func_17(PLAYER::PLAYER_ID()) == 2)
 								{
-									func_54(&(uParam0->f_43.f_5), 4, "DJ_PSEAT_PC_TOU", 0, 0, 0, 0);
+									func_54(&(uParam0->f_43.f_5), 4, "DJ_PSEAT_PC_TOU" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
 								}
 								else
 								{
-									func_54(&(uParam0->f_43.f_5), 4, "DJ_PSEAT_PC", 0, 0, 0, 0);
+									func_54(&(uParam0->f_43.f_5), 4, "DJ_PSEAT_PC" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
 								}
 							}
 							else
 							{
-								func_54(&(uParam0->f_43.f_5), 4, "MPOFSEAT_PCEXIT", 0, 0, 0, 0);
+								func_54(&(uParam0->f_43.f_5), 4, "MPOFSEAT_PCEXIT" /* GXT: Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
 							}
 						}
 						else if (bVar2)
 						{
 							if (func_17(PLAYER::PLAYER_ID()) == 3)
 							{
-								func_54(&(uParam0->f_43.f_5), 4, "DJ_PSEAT_BM", 0, 0, 0, 0);
+								func_54(&(uParam0->f_43.f_5), 4, "DJ_PSEAT_BM" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
 							}
 							else if (func_17(PLAYER::PLAYER_ID()) == 2)
 							{
-								func_54(&(uParam0->f_43.f_5), 4, "DJ_PSEAT_TOU", 0, 0, 0, 0);
+								func_54(&(uParam0->f_43.f_5), 4, "DJ_PSEAT_TOU" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
 							}
 							else
 							{
-								func_54(&(uParam0->f_43.f_5), 4, "DJ_PSEAT", 0, 0, 0, 0);
+								func_54(&(uParam0->f_43.f_5), 4, "DJ_PSEAT" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
 							}
 						}
 						else
 						{
-							func_54(&(uParam0->f_43.f_5), 4, "MPOFSEAT_EXIT", 0, 0, 0, 0);
+							func_54(&(uParam0->f_43.f_5), 4, "MPOFSEAT_EXIT" /* GXT: Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
 						}
 					}
 				}

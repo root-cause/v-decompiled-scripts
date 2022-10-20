@@ -153,7 +153,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_69 = 2050;
 	iLocal_70 = -1;
 	iLocal_71 = -1;
-	sLocal_73 = "CC_SUBSTR";
+	sLocal_73 = "CC_SUBSTR" /* GXT: ~INPUT_CONTEXT~ */;
 	fLocal_74 = 125f;
 	iLocal_75 = 1;
 	iLocal_77 = 263;
@@ -421,7 +421,7 @@ void __EntryFunction__()//Position - 0x0
 									{
 										if (!func_90(uLocal_66, 134217728))
 										{
-											func_55("MG_NA_TIME", iLocal_86, iLocal_87);
+											func_55("MG_NA_TIME" /* GXT: This activity is not available at this time of day. Come back between ~1~:00 and ~1~:00 to participate in this activity. */, iLocal_86, iLocal_87);
 											func_62(&uLocal_66, 134217728);
 										}
 									}
@@ -439,7 +439,7 @@ void __EntryFunction__()//Position - 0x0
 								{
 									if (!func_90(uLocal_66, 134217728))
 									{
-										func_55("MG_NA_TIME", iLocal_86, iLocal_87);
+										func_55("MG_NA_TIME" /* GXT: This activity is not available at this time of day. Come back between ~1~:00 and ~1~:00 to participate in this activity. */, iLocal_86, iLocal_87);
 										func_62(&uLocal_66, 134217728);
 									}
 								}
@@ -454,7 +454,7 @@ void __EntryFunction__()//Position - 0x0
 								bVar2 = false;
 								if (!func_90(uLocal_66, 33554432))
 								{
-									func_47("MG_YOU_IS_BROKE", iLocal_88, -1);
+									func_47("MG_YOU_IS_BROKE" /* GXT: Can't afford this activity. $~1~ needed to start. */, iLocal_88, -1);
 									func_62(&uLocal_66, 33554432);
 								}
 							}
@@ -841,7 +841,7 @@ void func_7()//Position - 0xC98
 	}
 	else if (MISC::IS_PS3_VERSION() || func_8())
 	{
-		StringCopy(&cVar0, "PRESENCE_0_STR", 24);
+		StringCopy(&cVar0, "PRESENCE_0_STR" /* GXT: Playing story */, 24);
 		NETWORK::NETWORK_SET_RICH_PRESENCE_STRING(0, &cVar0);
 	}
 }
@@ -1441,7 +1441,7 @@ void func_39()//Position - 0x157B
 		if (func_40(8) == func_49())
 		{
 			iLocal_88 = 0;
-			sLocal_73 = "PLAY_GOLF";
+			sLocal_73 = "PLAY_GOLF" /* GXT: Press ~INPUT_CONTEXT~ to play Golf. */;
 		}
 	}
 }
@@ -2349,7 +2349,7 @@ bool func_90(var uParam0, int iParam1)//Position - 0x295F
 
 void func_91()//Position - 0x296E
 {
-	StringCopy(&Local_51, "golf", 64);
+	StringCopy(&Local_51, "golf" /* GXT: GWC and Golfing Society */, 64);
 	iLocal_71 = 2;
 	fLocal_85 = 7f;
 	func_79(&uLocal_66, 1);
@@ -2360,12 +2360,12 @@ void func_91()//Position - 0x296E
 	if (func_40(8) == func_49())
 	{
 		iLocal_88 = 0;
-		sLocal_73 = "PLAY_GOLF";
+		sLocal_73 = "PLAY_GOLF" /* GXT: Press ~INPUT_CONTEXT~ to play Golf. */;
 	}
 	else
 	{
 		iLocal_88 = func_93(ENTITY::DOES_ENTITY_EXIST(func_75()));
-		sLocal_73 = "PAY_PLAY_GOLF";
+		sLocal_73 = "PAY_PLAY_GOLF" /* GXT: Press ~INPUT_CONTEXT~ to play Golf. The entry fee is $~1~. */;
 	}
 	iLocal_77 = 68;
 	fLocal_74 = (SYSTEM::TO_FLOAT(func_92(iLocal_77)) + 5f);

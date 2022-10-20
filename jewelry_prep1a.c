@@ -2952,7 +2952,7 @@ int func_56(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 			{
 				func_77(sParam16);
 				func_77(sParam19);
-				func_77("MORE_SEATS");
+				func_77("MORE_SEATS" /* GXT: A vehicle with more seats is needed. */);
 				if (bParam18 && PLAYER::IS_PLAYER_WANTED_LEVEL_GREATER(PLAYER::PLAYER_ID(), 0))
 				{
 					if (HUD::DOES_BLIP_EXIST(iParam0->f_5))
@@ -2968,7 +2968,7 @@ int func_56(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 					{
 						if (bParam22)
 						{
-							func_70(iParam0, "LOSE_WANTED", 0);
+							func_70(iParam0, "LOSE_WANTED" /* GXT: Lose the Cops. */, 0);
 							if (!PED::IS_PED_INJURED(iParam0->f_17[0]))
 							{
 								func_68(iParam0->f_17[0], "VEHICLE_POLICE_PURSUIT", 3);
@@ -2982,7 +2982,7 @@ int func_56(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 				{
 					if (BitTest(iParam0->f_13, 0))
 					{
-						func_77("LOSE_WANTED");
+						func_77("LOSE_WANTED" /* GXT: Lose the Cops. */);
 						MISC::CLEAR_BIT(&(iParam0->f_13), 0);
 						MISC::SET_BIT(&(iParam0->f_13), 1);
 					}
@@ -3103,8 +3103,8 @@ int func_56(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 								func_77(sParam13);
 								func_77(sParam14);
 								func_77(sParam15);
-								func_77("LOSE_WANTED");
-								func_77("MORE_SEATS");
+								func_77("LOSE_WANTED" /* GXT: Lose the Cops. */);
+								func_77("MORE_SEATS" /* GXT: A vehicle with more seats is needed. */);
 								func_77(sParam19);
 								func_13(iParam0, 1, 0);
 								return 1;
@@ -3129,7 +3129,7 @@ int func_56(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 					{
 						if (bParam22)
 						{
-							func_70(iParam0, "LOSE_WANTED", 0);
+							func_70(iParam0, "LOSE_WANTED" /* GXT: Lose the Cops. */, 0);
 							if (!PED::IS_PED_INJURED(iParam0->f_17[0]))
 							{
 								func_68(iParam0->f_17[0], "VEHICLE_POLICE_PURSUIT", 3);
@@ -3143,7 +3143,7 @@ int func_56(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 				{
 					if (BitTest(iParam0->f_13, 0))
 					{
-						func_77("LOSE_WANTED");
+						func_77("LOSE_WANTED" /* GXT: Lose the Cops. */);
 						MISC::CLEAR_BIT(&(iParam0->f_13), 0);
 						MISC::SET_BIT(&(iParam0->f_13), 1);
 					}
@@ -3243,7 +3243,7 @@ int func_56(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 									{
 										func_68(iParam0->f_17[iVar7], "NEED_A_BIGGER_VEHICLE", 3);
 									}
-									func_70(iParam0, "MORE_SEATS", 0);
+									func_70(iParam0, "MORE_SEATS" /* GXT: A vehicle with more seats is needed. */, 0);
 									MISC::SET_BIT(&(iParam0->f_13), 13);
 								}
 							}
@@ -3302,7 +3302,7 @@ int func_56(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 		func_77(sParam16);
 		func_77(sParam19);
 		func_77(sParam16);
-		func_77("LOSE_WANTED");
+		func_77("LOSE_WANTED" /* GXT: Lose the Cops. */);
 		if (HUD::DOES_BLIP_EXIST(iParam0->f_5))
 		{
 			HUD::REMOVE_BLIP(&(iParam0->f_5));
@@ -4055,7 +4055,7 @@ int func_78(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 						{
 							func_68(uParam0->f_17[iVar18], "NEED_A_BIGGER_VEHICLE", 3);
 						}
-						func_70(uParam0, "MORE_SEATS", 0);
+						func_70(uParam0, "MORE_SEATS" /* GXT: A vehicle with more seats is needed. */, 0);
 						MISC::SET_BIT(&(uParam0->f_13), 13);
 					}
 				}
@@ -4066,7 +4066,7 @@ int func_78(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 		{
 			bVar9 = false;
 			MISC::CLEAR_BIT(&(uParam0->f_13), 13);
-			func_77("MORE_SEATS");
+			func_77("MORE_SEATS" /* GXT: A vehicle with more seats is needed. */);
 		}
 		if (!ENTITY::DOES_ENTITY_EXIST(iParam10))
 		{
@@ -4079,7 +4079,7 @@ int func_78(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 						iVar10 = PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false);
 						if (func_89(iVar10, uParam0))
 						{
-							func_70(uParam0, "CMN_VEHSUIT", 0);
+							func_70(uParam0, "CMN_VEHSUIT" /* GXT: ~s~Vehicle is not suitable. */, 0);
 							MISC::SET_BIT(&(uParam0->f_13), 31);
 						}
 					}
@@ -4087,7 +4087,7 @@ int func_78(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 				else if (!PED::IS_PED_SITTING_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID()))
 				{
 					MISC::CLEAR_BIT(&(uParam0->f_13), 31);
-					func_77("CMN_VEHSUIT");
+					func_77("CMN_VEHSUIT" /* GXT: ~s~Vehicle is not suitable. */);
 				}
 			}
 		}
@@ -4497,7 +4497,7 @@ int func_78(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 				}
 				iVar0++;
 			}
-			func_77("MORE_SEATS");
+			func_77("MORE_SEATS" /* GXT: A vehicle with more seats is needed. */);
 			return 1;
 		}
 	}
@@ -11891,7 +11891,7 @@ int func_213(int iParam0)//Position - 0xE5BC
 				iVar2 = MISC::GET_HASH_KEY(&cVar3);
 				if (iVar2 != 0)
 				{
-					if (iVar2 == MISC::GET_HASH_KEY("MNU_CAGE") || iVar2 == MISC::GET_HASH_KEY("SABRE_CAG"))
+					if (iVar2 == MISC::GET_HASH_KEY("MNU_CAGE" /* GXT: Roll Cage and Chassis Upgrade */) || iVar2 == MISC::GET_HASH_KEY("SABRE_CAG" /* GXT: Stunt Cage */))
 					{
 						return 1;
 					}
@@ -17650,15 +17650,15 @@ void func_308()//Position - 0x167A6
 			switch (func_167())
 			{
 				case 0:
-					StringCopy(&Global_78551, "CMN_MARRE", 16);
+					StringCopy(&Global_78551, "CMN_MARRE" /* GXT: ~s~Michael was arrested. */, 16);
 					break;
 				
 				case 1:
-					StringCopy(&Global_78551, "CMN_FARRE", 16);
+					StringCopy(&Global_78551, "CMN_FARRE" /* GXT: ~s~Franklin was arrested. */, 16);
 					break;
 				
 				case 2:
-					StringCopy(&Global_78551, "CMN_TARRE", 16);
+					StringCopy(&Global_78551, "CMN_TARRE" /* GXT: ~s~Trevor was arrested. */, 16);
 					break;
 			}
 			StringCopy(&Global_78555, "", 16);
@@ -17672,15 +17672,15 @@ void func_308()//Position - 0x167A6
 			switch (func_167())
 			{
 				case 0:
-					StringCopy(&Global_78551, "CMN_MDIED", 16);
+					StringCopy(&Global_78551, "CMN_MDIED" /* GXT: ~s~Michael died. */, 16);
 					break;
 				
 				case 1:
-					StringCopy(&Global_78551, "CMN_FDIED", 16);
+					StringCopy(&Global_78551, "CMN_FDIED" /* GXT: ~s~Franklin died. */, 16);
 					break;
 				
 				case 2:
-					StringCopy(&Global_78551, "CMN_TDIED", 16);
+					StringCopy(&Global_78551, "CMN_TDIED" /* GXT: ~s~Trevor died. */, 16);
 					break;
 			}
 			StringCopy(&Global_78555, "", 16);

@@ -489,7 +489,7 @@ void func_1()//Position - 0x2A6
 	switch (iLocal_304)
 	{
 		case 0:
-			if (((func_46(Local_348, Var0) && func_45()) && !func_44()) && !func_43("FAM_WEAPDIS"))
+			if (((func_46(Local_348, Var0) && func_45()) && !func_44()) && !func_43("FAM_WEAPDIS" /* GXT: A weapon cannot be equipped when in a safehouse. */))
 			{
 				if (PED::IS_PED_HEADING_TOWARDS_POSITION(PLAYER::PLAYER_PED_ID(), Local_349, 90f) || iLocal_313)
 				{
@@ -497,7 +497,7 @@ void func_1()//Position - 0x2A6
 					{
 						AUDIO::START_AUDIO_SCENE("MICHAEL_SAFEHOUSE_ACTIVITIES_SCENE");
 					}
-					func_42("TV_HLP0");
+					func_42("TV_HLP0" /* GXT: Press ~INPUT_CONTEXT~ to sit on the couch. */);
 					iLocal_304 = 1;
 				}
 			}
@@ -521,7 +521,7 @@ void func_1()//Position - 0x2A6
 							{
 								iLocal_331 = PATHFIND::ADD_NAVMESH_BLOCKING_OBJECT(-804.05f, 173.54f, 72.17f, 1.02f, 1f, 1f, func_40(-52.4f), false, 7);
 							}
-							if (func_43("TV_HLP0"))
+							if (func_43("TV_HLP0" /* GXT: Press ~INPUT_CONTEXT~ to sit on the couch. */))
 							{
 								HUD::CLEAR_HELP(true);
 							}
@@ -545,7 +545,7 @@ void func_1()//Position - 0x2A6
 				}
 				else
 				{
-					if (func_43("TV_HLP0"))
+					if (func_43("TV_HLP0" /* GXT: Press ~INPUT_CONTEXT~ to sit on the couch. */))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -622,7 +622,7 @@ void func_1()//Position - 0x2A6
 			{
 				if (!Global_32020[4 /*11*/].f_2)
 				{
-					func_42("TV_HLP3");
+					func_42("TV_HLP3" /* GXT: Press ~INPUT_CONTEXT~ to watch the TV.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */);
 					iLocal_304 = 5;
 				}
 				else if (PED::GET_SYNCHRONIZED_SCENE_PHASE(iLocal_327) > 0.8f)
@@ -634,12 +634,12 @@ void func_1()//Position - 0x2A6
 					{
 						PED::SET_SYNCHRONIZED_SCENE_HOLD_LAST_FRAME(iLocal_327, false);
 					}
-					if (func_43("TV_HLP3"))
+					if (func_43("TV_HLP3" /* GXT: Press ~INPUT_CONTEXT~ to watch the TV.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */))
 					{
 						HUD::CLEAR_HELP(true);
 					}
 					GRAPHICS::ENABLE_MOVIE_SUBTITLES(true);
-					func_42("TV_HLP4");
+					func_42("TV_HLP4" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_CONTEXT~ to stop watching.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */);
 					iLocal_304 = 6;
 				}
 			}
@@ -657,9 +657,9 @@ void func_1()//Position - 0x2A6
 			if (!func_22())
 			{
 				func_20();
-				if (!func_43("TV_HLP3"))
+				if (!func_43("TV_HLP3" /* GXT: Press ~INPUT_CONTEXT~ to watch the TV.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */))
 				{
-					func_42("TV_HLP3");
+					func_42("TV_HLP3" /* GXT: Press ~INPUT_CONTEXT~ to watch the TV.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */);
 				}
 				if (PAD::IS_CONTROL_JUST_PRESSED(2, 51))
 				{
@@ -710,7 +710,7 @@ void func_1()//Position - 0x2A6
 						AUDIO::START_AUDIO_SCENE("TV_MICHAELS_HOUSE");
 					}
 					GRAPHICS::ENABLE_MOVIE_SUBTITLES(true);
-					func_42("TV_HLP4");
+					func_42("TV_HLP4" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_CONTEXT~ to stop watching.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */);
 				}
 			}
 			break;
@@ -723,9 +723,9 @@ void func_1()//Position - 0x2A6
 			GRAPHICS::SET_TV_PLAYER_WATCHING_THIS_FRAME(PLAYER::PLAYER_PED_ID());
 			if (!func_22())
 			{
-				if (!func_43("TV_HLP4"))
+				if (!func_43("TV_HLP4" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_CONTEXT~ to stop watching.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */))
 				{
-					func_42("TV_HLP4");
+					func_42("TV_HLP4" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_CONTEXT~ to stop watching.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */);
 				}
 				func_20();
 				func_16(0, 1);
@@ -815,7 +815,7 @@ void func_1()//Position - 0x2A6
 						{
 							AUDIO::STOP_AUDIO_SCENE("TV_MICHAELS_HOUSE");
 						}
-						if (func_43("TV_HLP4"))
+						if (func_43("TV_HLP4" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_CONTEXT~ to stop watching.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */))
 						{
 							HUD::CLEAR_HELP(true);
 						}
@@ -844,7 +844,7 @@ void func_1()//Position - 0x2A6
 			switch (iLocal_305)
 			{
 				case 0:
-					if (func_43("TV_HLP4") || func_43("TV_HLP3"))
+					if (func_43("TV_HLP4" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_CONTEXT~ to stop watching.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */) || func_43("TV_HLP3" /* GXT: Press ~INPUT_CONTEXT~ to watch the TV.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -859,7 +859,7 @@ void func_1()//Position - 0x2A6
 					break;
 				
 				case 1:
-					if (func_43("TV_HLP4") || func_43("TV_HLP3"))
+					if (func_43("TV_HLP4" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_CONTEXT~ to stop watching.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */) || func_43("TV_HLP3" /* GXT: Press ~INPUT_CONTEXT~ to watch the TV.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -1012,7 +1012,7 @@ void func_1()//Position - 0x2A6
 							TASK::TASK_SYNCHRONIZED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_327, sLocal_334, "tv_base_michael", 8f, -8f, 64, 0, 1000f, 0);
 							ENTITY::PLAY_SYNCHRONIZED_ENTITY_ANIM(func_24(), iLocal_327, "tv_base_remote", sLocal_334, 8f, -8f, 64, 1000f);
 							PED::SET_SYNCHRONIZED_SCENE_LOOPED(iLocal_327, true);
-							func_42("TV_HLP4");
+							func_42("TV_HLP4" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_CONTEXT~ to stop watching.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */);
 							iLocal_304 = 7;
 						}
 						else
@@ -1020,7 +1020,7 @@ void func_1()//Position - 0x2A6
 							TASK::TASK_SYNCHRONIZED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_327, sLocal_334, "base_michael", 4f, -8f, 64, 0, 1000f, 0);
 							ENTITY::PLAY_SYNCHRONIZED_ENTITY_ANIM(func_24(), iLocal_327, "base_remote", sLocal_334, 8f, -8f, 64, 1000f);
 							PED::SET_SYNCHRONIZED_SCENE_LOOPED(iLocal_327, true);
-							func_42("TV_HLP3");
+							func_42("TV_HLP3" /* GXT: Press ~INPUT_CONTEXT~ to watch the TV.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */);
 							iLocal_304 = 5;
 						}
 					}
@@ -1753,7 +1753,7 @@ int func_22()//Position - 0x1FD5
 {
 	if (PAD::IS_CONTROL_JUST_PRESSED(2, 222))
 	{
-		if (func_43("TV_HLP4") || func_43("TV_HLP3"))
+		if (func_43("TV_HLP4" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_CONTEXT~ to stop watching.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */) || func_43("TV_HLP3" /* GXT: Press ~INPUT_CONTEXT~ to watch the TV.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */))
 		{
 			HUD::CLEAR_HELP(true);
 		}
@@ -4104,7 +4104,7 @@ void func_87()//Position - 0x4BF0
 	{
 		ENTITY::STOP_ENTITY_ANIM(func_24(), "tv_base_remote", func_5(), -1000f);
 	}
-	if (((((func_43(func_89()) || func_43("TV_HLP0")) || func_43("TV_HLP1")) || func_43("TV_HLP2")) || func_43("TV_HLP3")) || func_43("TV_HLP4"))
+	if (((((func_43(func_89()) || func_43("TV_HLP0" /* GXT: Press ~INPUT_CONTEXT~ to sit on the couch. */)) || func_43("TV_HLP1" /* GXT: Press ~INPUT_CONTEXT~ to turn on the TV. */)) || func_43("TV_HLP2" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_NEXT_CAMERA~ to change view.~n~Press ~INPUT_CONTEXT~ to stop watching.~n~ */)) || func_43("TV_HLP3" /* GXT: Press ~INPUT_CONTEXT~ to watch the TV.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */)) || func_43("TV_HLP4" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_CONTEXT~ to stop watching.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -4173,56 +4173,56 @@ char* func_89()//Position - 0x4D6E
 		case joaat("prop_bong_01"):
 			if (bLocal_49)
 			{
-				sVar0 = "SA_BONG2";
+				sVar0 = "SA_BONG2" /* GXT: Press ~INPUT_CONTEXT~ to take a hit from the bong. */;
 			}
 			else
 			{
-				sVar0 = "SA_BONG";
+				sVar0 = "SA_BONG" /* GXT: Press ~INPUT_CONTEXT~ to take a hit from Jimmy's bong. */;
 			}
 			break;
 		
 		case joaat("prop_cigar_03"):
-			sVar0 = "SA_CIGAR";
+			sVar0 = "SA_CIGAR" /* GXT: Press ~INPUT_CONTEXT~ to smoke a cigar. */;
 			break;
 		
 		case joaat("prop_cs_beer_bot_01"):
-			sVar0 = "SA_BEER";
+			sVar0 = "SA_BEER" /* GXT: Press ~INPUT_CONTEXT~ to drink a beer. */;
 			break;
 		
 		case joaat("p_cs_joint_01"):
-			sVar0 = "SA_SPLFF";
+			sVar0 = "SA_SPLFF" /* GXT: Press ~INPUT_CONTEXT~ to smoke a joint. */;
 			break;
 		
 		case joaat("p_tumbler_02_s1"):
-			sVar0 = "SA_WHSKY";
+			sVar0 = "SA_WHSKY" /* GXT: Press ~INPUT_CONTEXT~ to drink whiskey. */;
 			break;
 		
 		case joaat("p_tumbler_cs2_s"):
-			sVar0 = "SA_WHSKY";
+			sVar0 = "SA_WHSKY" /* GXT: Press ~INPUT_CONTEXT~ to drink whiskey. */;
 			break;
 		
 		case joaat("p_tumbler_cs2_s_trev"):
-			sVar0 = "SA_WHSKY";
+			sVar0 = "SA_WHSKY" /* GXT: Press ~INPUT_CONTEXT~ to drink whiskey. */;
 			break;
 		
 		case joaat("prop_rolled_sock_02"):
-			sVar0 = "SA_GAS";
+			sVar0 = "SA_GAS" /* GXT: Press ~INPUT_CONTEXT~ to huff gas. */;
 			break;
 		
 		case joaat("prop_mr_raspberry_01"):
-			sVar0 = "SA_MRJAM";
+			sVar0 = "SA_MRJAM" /* GXT: Press ~INPUT_CONTEXT~ to play with Mr. Raspberry Jam. */;
 			break;
 		
 		case joaat("prop_radio_01"):
-			sVar0 = "SA_BEER";
+			sVar0 = "SA_BEER" /* GXT: Press ~INPUT_CONTEXT~ to drink a beer. */;
 			break;
 		
 		case joaat("p_w_grass_gls_s"):
-			sVar0 = "SA_WHEAT";
+			sVar0 = "SA_WHEAT" /* GXT: Press ~INPUT_CONTEXT~ to drink green juice. */;
 			break;
 		
 		case joaat("p_wine_glass_s"):
-			sVar0 = "SA_WINE";
+			sVar0 = "SA_WINE" /* GXT: Press ~INPUT_CONTEXT~ to drink some wine. */;
 			break;
 		
 		default:

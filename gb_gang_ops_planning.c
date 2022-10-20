@@ -455,7 +455,7 @@ int func_11(var uParam0, int iParam1, int iParam2)//Position - 0x345
 				func_109();
 			}
 			func_108();
-			HUD::BEGIN_TEXT_COMMAND_BUSYSPINNER_ON("FMMC_PLYLOAD");
+			HUD::BEGIN_TEXT_COMMAND_BUSYSPINNER_ON("FMMC_PLYLOAD" /* GXT: Initializing */);
 			HUD::END_TEXT_COMMAND_BUSYSPINNER_ON(5);
 			func_106(func_107(), 0, 0, 0);
 			func_13(uParam0, 0, 0, 0f, 0f, 0f, &uVar2, 0f, 0f, 0f, 1, 0, &uVar2, &iVar3, iVar3, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -4592,11 +4592,11 @@ void func_144()//Position - 0x56FA
 	{
 		if (BitTest(Global_1836144, 1))
 		{
-			func_168("HFBOARD_REGb");
+			func_168("HFBOARD_REGb" /* GXT: Register as a VIP, CEO or MC President to gain access to the Finale Screen.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */);
 		}
 		else
 		{
-			func_168("HFBOARD_REG");
+			func_168("HFBOARD_REG" /* GXT: Register as a VIP, CEO or MC President to gain access to the Finale Screen. */);
 		}
 		iLocal_177 = 1;
 	}
@@ -4729,7 +4729,7 @@ void func_155()//Position - 0x58DD
 
 void func_156()//Position - 0x58F0
 {
-	if ((func_170("HPCONTEXT_FIN") || func_170("HPCONTEXT_FINb")) || func_170("HPCONTEXT_FINc"))
+	if ((func_170("HPCONTEXT_FIN" /* GXT: Press ~INPUT_CONTEXT~ to access the Finale Screen. */) || func_170("HPCONTEXT_FINb" /* GXT: Press ~INPUT_CONTEXT~ to access the Finale Screen.~n~Press ~INPUT_CONTEXT_SECONDARY~ to quickly join as a Crew Member. */)) || func_170("HPCONTEXT_FINc" /* GXT: Press ~INPUT_CONTEXT~ to access the Finale Screen.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -4823,7 +4823,7 @@ struct<16> func_171()//Position - 0x5A67
 {
 	struct<16> Var0;
 	
-	StringCopy(&Var0, "HPCONTEXT_FIN", 64);
+	StringCopy(&Var0, "HPCONTEXT_FIN" /* GXT: Press ~INPUT_CONTEXT~ to access the Finale Screen. */, 64);
 	if (BitTest(Global_1836144, 1))
 	{
 		StringConCat(&Var0, "c", 64);
@@ -4837,7 +4837,7 @@ struct<16> func_171()//Position - 0x5A67
 
 void func_172()//Position - 0x5AA0
 {
-	if (func_170("HFBOARD_REG") || func_170("HFBOARD_REGb"))
+	if (func_170("HFBOARD_REG" /* GXT: Register as a VIP, CEO or MC President to gain access to the Finale Screen. */) || func_170("HFBOARD_REGb" /* GXT: Register as a VIP, CEO or MC President to gain access to the Finale Screen.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -5495,12 +5495,12 @@ void func_206(var uParam0)//Position - 0x6604
 	{
 		if (bVar1)
 		{
-			if (!func_170("HP_TUT_WAIT"))
+			if (!func_170("HP_TUT_WAIT" /* GXT: Please wait for all players to complete the Finale Screen Tutorial. */))
 			{
-				func_168("HP_TUT_WAIT");
+				func_168("HP_TUT_WAIT" /* GXT: Please wait for all players to complete the Finale Screen Tutorial. */);
 			}
 		}
-		else if (func_170("HP_TUT_WAIT"))
+		else if (func_170("HP_TUT_WAIT" /* GXT: Please wait for all players to complete the Finale Screen Tutorial. */))
 		{
 			HUD::CLEAR_HELP(true);
 		}
@@ -5553,12 +5553,12 @@ void func_207(var uParam0)//Position - 0x6691
 	{
 		if (bVar2)
 		{
-			if (!func_170("HP_TUT_WAIT"))
+			if (!func_170("HP_TUT_WAIT" /* GXT: Please wait for all players to complete the Finale Screen Tutorial. */))
 			{
-				func_168("HP_TUT_WAIT");
+				func_168("HP_TUT_WAIT" /* GXT: Please wait for all players to complete the Finale Screen Tutorial. */);
 			}
 		}
-		else if (func_170("HP_TUT_WAIT"))
+		else if (func_170("HP_TUT_WAIT" /* GXT: Please wait for all players to complete the Finale Screen Tutorial. */))
 		{
 			HUD::CLEAR_HELP(true);
 		}
@@ -5569,7 +5569,7 @@ void func_207(var uParam0)//Position - 0x6691
 		{
 			if (!BitTest(uParam0->f_1247, 10))
 			{
-				func_214("HP_FIN_EXPLCUT", -1);
+				func_214("HP_FIN_EXPLCUT" /* GXT: You must assign 100% of the Heist reward before you can launch the Finale. */, -1);
 				MISC::SET_BIT(&(uParam0->f_1247), 10);
 			}
 			bVar0 = false;
@@ -5642,7 +5642,7 @@ void func_207(var uParam0)//Position - 0x6691
 			func_211(uParam0);
 			func_210(uParam0->f_714, 1, 0);
 			uParam0->f_812.f_416 = 1;
-			func_214("HPFIN_RTL", -1);
+			func_214("HPFIN_RTL" /* GXT: All players are ready. Navigate to the launch mission button to start the Finale. */, -1);
 			func_209(uParam0, 1);
 		}
 	}
@@ -6306,7 +6306,7 @@ void func_233(var uParam0)//Position - 0x76DC
 	bVar9 = (((uVar5 || uVar6) || uVar7) || bVar8);
 	iVar0 = uParam0->f_812.f_41;
 	Var1 = { func_247(uParam0, iVar0) };
-	StringCopy(&Var2, "HEIST_RL_NONE", 16);
+	StringCopy(&Var2, "HEIST_RL_NONE" /* GXT: UNASSIGNED */, 16);
 	bVar4 = false;
 	bVar3 = iVar0 == PLAYER::PLAYER_ID();
 	if (!bVar9)
@@ -9019,7 +9019,7 @@ struct<4> func_282(int iParam0, bool bParam1)//Position - 0xA915
 {
 	struct<4> Var0;
 	
-	StringCopy(&Var0, "HEIST_RL_NONE", 16);
+	StringCopy(&Var0, "HEIST_RL_NONE" /* GXT: UNASSIGNED */, 16);
 	if (iParam0 < 0)
 	{
 		return Var0;
@@ -9134,7 +9134,7 @@ void func_283(var uParam0)//Position - 0xA981
 			{
 				iVar1 = PLAYER::INT_TO_PLAYERINDEX(uParam0->f_812.f_45[uParam0->f_794.f_3]);
 				Var2 = { func_123(iVar1) };
-				AUDIO::PLAY_SOUND_FROM_COORD(-1, "Select", func_158(), func_157(), false, 0, false);
+				AUDIO::PLAY_SOUND_FROM_COORD(-1, "Select" /* GXT: Filter List */, func_158(), func_157(), false, 0, false);
 				NETWORK::NETWORK_SHOW_PROFILE_UI(&Var2);
 			}
 			break;
@@ -9159,7 +9159,7 @@ void func_284(var uParam0)//Position - 0xAB5D
 		else
 		{
 			uParam0->f_812.f_61[iVar0] = 1;
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "Select", func_158(), func_157(), false, 0, false);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "Select" /* GXT: Filter List */, func_158(), func_157(), false, 0, false);
 		}
 		iVar0++;
 	}
@@ -9621,10 +9621,10 @@ void func_294(var uParam0, int iParam1, int iParam2)//Position - 0xB56D
 		}
 		if (uParam0->f_50[iParam1] <= iVar0)
 		{
-			if (!func_170("HEIST_NOTE_6"))
+			if (!func_170("HEIST_NOTE_6" /* GXT: The selected Heist member is at minimum cut. */))
 			{
 				HUD::CLEAR_HELP(true);
-				func_214("HEIST_NOTE_6", 5000);
+				func_214("HEIST_NOTE_6" /* GXT: The selected Heist member is at minimum cut. */, 5000);
 			}
 		}
 	}
@@ -9663,10 +9663,10 @@ void func_294(var uParam0, int iParam1, int iParam2)//Position - 0xB56D
 		}
 		if (uParam0->f_50[iParam1] >= iVar1)
 		{
-			if (!func_170("HEIST_NOTE_5"))
+			if (!func_170("HEIST_NOTE_5" /* GXT: The selected Heist member is at maximum cut. */))
 			{
 				HUD::CLEAR_HELP(true);
-				func_214("HEIST_NOTE_5", 5000);
+				func_214("HEIST_NOTE_5" /* GXT: The selected Heist member is at maximum cut. */, 5000);
 			}
 		}
 	}
@@ -9954,67 +9954,67 @@ int func_301(int iParam0, bool bParam1, int iParam2, int iParam3, bool bParam4)/
 	
 	bVar5 = false;
 	iVar7 = 36;
-	StringCopy(&cVar0, "HPWARN_CONF", 64);
+	StringCopy(&cVar0, "HPWARN_CONF" /* GXT: Confirm */, 64);
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(&cVar1, "HPWARN_SKIP", 64);
+			StringCopy(&cVar1, "HPWARN_SKIP" /* GXT: Are you sure you want to pay $~1~ for this Heist Prep Equipment? Purchasing equipment will prevent you from progressing The Doomsday Heist challenges. */, 64);
 			bVar5 = true;
 			bVar6 = func_315();
 			break;
 		
 		case 1:
-			StringCopy(&cVar1, "HPWARN_START_P", 64);
+			StringCopy(&cVar1, "HPWARN_START_P" /* GXT: Are you sure you want to start the ~a~ prep mission? */, 64);
 			cVar2 = { func_314(iParam2) };
 			break;
 		
 		case 2:
-			StringCopy(&cVar1, "HPWARN_START_I", 64);
+			StringCopy(&cVar1, "HPWARN_START_I" /* GXT: Are you sure you want to start this mission? */, 64);
 			break;
 		
 		case 3:
-			StringCopy(&cVar1, "HPWARN_LAUNCH_F", 64);
+			StringCopy(&cVar1, "HPWARN_LAUNCH_F" /* GXT: Are you sure you want to launch the finale? */, 64);
 			break;
 		
 		case 4:
-			StringCopy(&cVar0, "FM_CSC_QUIT", 64);
-			StringCopy(&cVar1, "FM_CSC_QUIT1", 64);
+			StringCopy(&cVar0, "FM_CSC_QUIT" /* GXT: Confirm */, 64);
+			StringCopy(&cVar1, "FM_CSC_QUIT1" /* GXT: Are you sure you want to quit this Job? */, 64);
 			break;
 		
 		case 5:
 			func_313(&cVar1, &cVar2, &cVar3, 0, BitTest(bParam4, 0), BitTest(bParam4, 1), BitTest(bParam4, 2));
-			StringCopy(&cVar4, "FMMC_HCBCP_WY", 64);
+			StringCopy(&cVar4, "FMMC_HCBCP_WY" /* GXT: Are you sure you wish to continue? */, 64);
 			break;
 		
 		case 6:
 			func_313(&cVar1, &cVar2, &cVar3, 1, func_309(3), func_308(), func_307());
-			StringCopy(&cVar4, "FMMC_HCBCP_WY", 64);
+			StringCopy(&cVar4, "FMMC_HCBCP_WY" /* GXT: Are you sure you wish to continue? */, 64);
 			break;
 		
 		case 10:
 			func_303(&cVar1, &cVar2, &cVar3);
-			StringCopy(&cVar4, "FMMC_HCBCP_WY", 64);
+			StringCopy(&cVar4, "FMMC_HCBCP_WY" /* GXT: Are you sure you wish to continue? */, 64);
 			break;
 		
 		case 7:
-			StringCopy(&cVar1, "HCOST_BODY", 64);
-			StringCopy(&cVar4, "HEIST_WARN_2", 64);
+			StringCopy(&cVar1, "HCOST_BODY" /* GXT: The setup cost for ~a~ is $~1~. */, 64);
+			StringCopy(&cVar4, "HEIST_WARN_2" /* GXT: Do you wish to proceed? */, 64);
 			bVar5 = true;
 			bVar6 = bParam4;
 			cVar2 = { func_302(iParam3, 0) };
 			break;
 		
 		case 8:
-			StringCopy(&cVar0, "HPWARN_ALRT", 64);
-			StringCopy(&cVar1, "HPWARN_CASH_E", 64);
+			StringCopy(&cVar0, "HPWARN_ALRT" /* GXT: Alert */, 64);
+			StringCopy(&cVar1, "HPWARN_CASH_E" /* GXT: You don't have enough cash. This Heist Prep Equipment costs $~1~. */, 64);
 			bVar5 = true;
 			bVar6 = func_315();
 			iVar7 = 10;
 			break;
 		
 		case 9:
-			StringCopy(&cVar0, "HPWARN_ALRT", 64);
-			StringCopy(&cVar1, "HPWARN_CASH_S", 64);
+			StringCopy(&cVar0, "HPWARN_ALRT" /* GXT: Alert */, 64);
+			StringCopy(&cVar1, "HPWARN_CASH_S" /* GXT: You don't have enough cash. This Heist costs $~1~. */, 64);
 			bVar5 = true;
 			bVar6 = bParam4;
 			iVar7 = 10;
@@ -10035,7 +10035,7 @@ int func_301(int iParam0, bool bParam1, int iParam2, int iParam3, bool bParam4)/
 	{
 		if (iParam0 != 0)
 		{
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "Select", func_158(), func_157(), false, 0, false);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "Select" /* GXT: Filter List */, func_158(), func_157(), false, 0, false);
 		}
 		*bParam1 = 1;
 		return 1;
@@ -10052,33 +10052,33 @@ struct<16> func_302(int iParam0, bool bParam1)//Position - 0xBE30
 		case 0:
 			if (bParam1)
 			{
-				StringCopy(&Var0, "HPSTRAND_IAA", 64);
+				StringCopy(&Var0, "HPSTRAND_IAA" /* GXT: THE DATA BREACHES */, 64);
 			}
 			else
 			{
-				StringCopy(&Var0, "HPSTRAND_IAAb", 64);
+				StringCopy(&Var0, "HPSTRAND_IAAb" /* GXT: The Data Breaches */, 64);
 			}
 			break;
 		
 		case 1:
 			if (bParam1)
 			{
-				StringCopy(&Var0, "HPSTRAND_SUB", 64);
+				StringCopy(&Var0, "HPSTRAND_SUB" /* GXT: THE BOGDAN PROBLEM */, 64);
 			}
 			else
 			{
-				StringCopy(&Var0, "HPSTRAND_SUBb", 64);
+				StringCopy(&Var0, "HPSTRAND_SUBb" /* GXT: The Bogdan Problem */, 64);
 			}
 			break;
 		
 		case 2:
 			if (bParam1)
 			{
-				StringCopy(&Var0, "HPSTRAND_MSIL", 64);
+				StringCopy(&Var0, "HPSTRAND_MSIL" /* GXT: THE DOOMSDAY SCENARIO */, 64);
 			}
 			else
 			{
-				StringCopy(&Var0, "HPSTRAND_MSILb", 64);
+				StringCopy(&Var0, "HPSTRAND_MSILb" /* GXT: The Doomsday Scenario */, 64);
 			}
 			break;
 	}
@@ -10092,19 +10092,19 @@ void func_303(char* sParam0, char* sParam1, char* sParam2)//Position - 0xBEA7
 	bVar0 = func_308();
 	if (bVar0)
 	{
-		StringCopy(sParam0, "HPWARN_CHT_1", 64);
+		StringCopy(sParam0, "HPWARN_CHT_1" /* GXT: Playing this mission with this team will reset your ~a~ challenge progress. */, 64);
 		StringCopy(sParam1, func_305(func_306()), 64);
 	}
 	if (func_307())
 	{
 		if (!bVar0)
 		{
-			StringCopy(sParam0, "HPWARN_CHT_1", 64);
+			StringCopy(sParam0, "HPWARN_CHT_1" /* GXT: Playing this mission with this team will reset your ~a~ challenge progress. */, 64);
 			StringCopy(sParam1, func_305(func_304()), 64);
 		}
 		else
 		{
-			StringCopy(sParam0, "HPWARN_CHT_2", 64);
+			StringCopy(sParam0, "HPWARN_CHT_2" /* GXT: Playing this mission with this team will reset your ~a~ and ~a~ challenge progress. */, 64);
 			StringCopy(sParam2, func_305(func_304()), 64);
 		}
 	}
@@ -10132,37 +10132,37 @@ char* func_305(int iParam0)//Position - 0xBF3D
 	switch (iParam0)
 	{
 		case 1:
-			return "AWD_GANGOPF0";
+			return "AWD_GANGOPF0" /* GXT: Act I */;
 		
 		case 2:
-			return "AWD_GANGOPF1";
+			return "AWD_GANGOPF1" /* GXT: Act II */;
 		
 		case 6:
-			return "AWD_GANGOPF2";
+			return "AWD_GANGOPF2" /* GXT: Act III */;
 		
 		case 3:
-			return "AWD_GANGOPA";
+			return "AWD_GANGOPA" /* GXT: All In Order II */;
 		
 		case 4:
-			return "AWD_GANGOPL4";
+			return "AWD_GANGOPL4" /* GXT: Loyalty IV */;
 		
 		case 7:
-			return "AWD_GANGOPL2";
+			return "AWD_GANGOPL2" /* GXT: Loyalty II */;
 		
 		case 8:
-			return "AWD_GANGOPL3";
+			return "AWD_GANGOPL3" /* GXT: Loyalty III */;
 		
 		case 5:
-			return "AWD_GANGOPM4";
+			return "AWD_GANGOPM4" /* GXT: Criminal Mastermind IV */;
 		
 		case 9:
-			return "AWD_GANGOPM2";
+			return "AWD_GANGOPM2" /* GXT: Criminal Mastermind II */;
 		
 		case 10:
-			return "AWD_GANGOPM3";
+			return "AWD_GANGOPM3" /* GXT: Criminal Mastermind III */;
 		
 		case 11:
-			return "AWD_GANGOPSR";
+			return "AWD_GANGOPSR" /* GXT: Supporting Role II */;
 		
 		default:
 	}
@@ -10268,11 +10268,11 @@ void func_313(char* sParam0, char* sParam1, char* sParam2, bool bParam3, bool bP
 	{
 		if (bParam3)
 		{
-			StringCopy(sParam0, "HPWARN_CHS_1", 64);
+			StringCopy(sParam0, "HPWARN_CHS_1" /* GXT: Skipping this Freemode Prep will reset your ~a~ challenge progress. */, 64);
 		}
 		else
 		{
-			StringCopy(sParam0, "HPWARN_CH_1", 64);
+			StringCopy(sParam0, "HPWARN_CH_1" /* GXT: Playing this mission will reset your ~a~ challenge progress. */, 64);
 		}
 		StringCopy(sParam1, func_305(3), 64);
 	}
@@ -10282,11 +10282,11 @@ void func_313(char* sParam0, char* sParam1, char* sParam2, bool bParam3, bool bP
 		{
 			if (bParam3)
 			{
-				StringCopy(sParam0, "HPWARN_CHS_1", 64);
+				StringCopy(sParam0, "HPWARN_CHS_1" /* GXT: Skipping this Freemode Prep will reset your ~a~ challenge progress. */, 64);
 			}
 			else
 			{
-				StringCopy(sParam0, "HPWARN_CH_1", 64);
+				StringCopy(sParam0, "HPWARN_CH_1" /* GXT: Playing this mission will reset your ~a~ challenge progress. */, 64);
 			}
 			StringCopy(sParam1, func_305(func_306()), 64);
 		}
@@ -10294,11 +10294,11 @@ void func_313(char* sParam0, char* sParam1, char* sParam2, bool bParam3, bool bP
 		{
 			if (bParam3)
 			{
-				StringCopy(sParam0, "HPWARN_CHS_2", 64);
+				StringCopy(sParam0, "HPWARN_CHS_2" /* GXT: Skipping this Freemode Prep will reset your ~a~ and ~a~ challenge progress. */, 64);
 			}
 			else
 			{
-				StringCopy(sParam0, "HPWARN_CH_2", 64);
+				StringCopy(sParam0, "HPWARN_CH_2" /* GXT: Playing this mission will reset your ~a~ and ~a~ challenge progress. */, 64);
 			}
 			StringCopy(sParam2, func_305(func_306()), 64);
 		}
@@ -10309,11 +10309,11 @@ void func_313(char* sParam0, char* sParam1, char* sParam2, bool bParam3, bool bP
 		{
 			if (bParam3)
 			{
-				StringCopy(sParam0, "HPWARN_CHS_1", 64);
+				StringCopy(sParam0, "HPWARN_CHS_1" /* GXT: Skipping this Freemode Prep will reset your ~a~ challenge progress. */, 64);
 			}
 			else
 			{
-				StringCopy(sParam0, "HPWARN_CH_1", 64);
+				StringCopy(sParam0, "HPWARN_CH_1" /* GXT: Playing this mission will reset your ~a~ challenge progress. */, 64);
 			}
 			StringCopy(sParam1, func_305(func_304()), 64);
 		}
@@ -10321,21 +10321,21 @@ void func_313(char* sParam0, char* sParam1, char* sParam2, bool bParam3, bool bP
 		{
 			if (bParam3)
 			{
-				StringCopy(sParam0, "HPWARN_CHS_2", 64);
+				StringCopy(sParam0, "HPWARN_CHS_2" /* GXT: Skipping this Freemode Prep will reset your ~a~ and ~a~ challenge progress. */, 64);
 			}
 			else
 			{
-				StringCopy(sParam0, "HPWARN_CH_2", 64);
+				StringCopy(sParam0, "HPWARN_CH_2" /* GXT: Playing this mission will reset your ~a~ and ~a~ challenge progress. */, 64);
 			}
 			StringCopy(sParam2, func_305(func_304()), 64);
 		}
 		else if (bParam3)
 		{
-			StringCopy(sParam0, "HPWARN_CHS_3", 64);
+			StringCopy(sParam0, "HPWARN_CHS_3" /* GXT: Skipping this Freemode Prep will reset your All In Order, Loyalty and Criminal Mastermind challenge progress. */, 64);
 		}
 		else
 		{
-			StringCopy(sParam0, "HPWARN_CH_3", 64);
+			StringCopy(sParam0, "HPWARN_CH_3" /* GXT: Playing this mission will reset your All In Order, Loyalty and Criminal Mastermind challenge progress. */, 64);
 		}
 	}
 }
@@ -10347,59 +10347,59 @@ struct<16> func_314(int iParam0)//Position - 0xC263
 	switch (iParam0)
 	{
 		case 16:
-			StringCopy(&Var0, "HPPREP_MIS_0b", 64);
+			StringCopy(&Var0, "HPPREP_MIS_0b" /* GXT: Prep: Paramedic Equipment */, 64);
 			break;
 		
 		case 17:
-			StringCopy(&Var0, "HPPREP_MIS_1b", 64);
+			StringCopy(&Var0, "HPPREP_MIS_1b" /* GXT: Prep: Deluxos */, 64);
 			break;
 		
 		case 18:
-			StringCopy(&Var0, "HPPREP_MIS_2b", 64);
+			StringCopy(&Var0, "HPPREP_MIS_2b" /* GXT: Prep: Akula */, 64);
 			break;
 		
 		case 19:
-			StringCopy(&Var0, "HPPREP_MIS_3b", 64);
+			StringCopy(&Var0, "HPPREP_MIS_3b" /* GXT: Prep: Keycards */, 64);
 			break;
 		
 		case 20:
-			StringCopy(&Var0, "HPPREP_MIS_4b", 64);
+			StringCopy(&Var0, "HPPREP_MIS_4b" /* GXT: Prep: ULP Intel */, 64);
 			break;
 		
 		case 21:
-			StringCopy(&Var0, "HPPREP_MIS_5b", 64);
+			StringCopy(&Var0, "HPPREP_MIS_5b" /* GXT: Prep: Riot Control Van */, 64);
 			break;
 		
 		case 22:
-			StringCopy(&Var0, "HPPREP_MIS_6b", 64);
+			StringCopy(&Var0, "HPPREP_MIS_6b" /* GXT: Prep: Strombergs */, 64);
 			break;
 		
 		case 23:
-			StringCopy(&Var0, "HPPREP_MIS_7b", 64);
+			StringCopy(&Var0, "HPPREP_MIS_7b" /* GXT: Prep: Torpedo ECU */, 64);
 			break;
 		
 		case 24:
-			StringCopy(&Var0, "HPPREP_MIS_8b", 64);
+			StringCopy(&Var0, "HPPREP_MIS_8b" /* GXT: Prep: Marked Cash */, 64);
 			break;
 		
 		case 25:
-			StringCopy(&Var0, "HPPREP_MIS_9b", 64);
+			StringCopy(&Var0, "HPPREP_MIS_9b" /* GXT: Prep: Recon */, 64);
 			break;
 		
 		case 26:
-			StringCopy(&Var0, "HPPREP_MIS_10b", 64);
+			StringCopy(&Var0, "HPPREP_MIS_10b" /* GXT: Prep: Chernobog */, 64);
 			break;
 		
 		case 27:
-			StringCopy(&Var0, "HPPREP_MIS_11b", 64);
+			StringCopy(&Var0, "HPPREP_MIS_11b" /* GXT: Prep: Flight Path */, 64);
 			break;
 		
 		case 28:
-			StringCopy(&Var0, "HPPREP_MIS_12b", 64);
+			StringCopy(&Var0, "HPPREP_MIS_12b" /* GXT: Prep: Test Site Intel */, 64);
 			break;
 		
 		case 29:
-			StringCopy(&Var0, "HPPREP_MIS_13b", 64);
+			StringCopy(&Var0, "HPPREP_MIS_13b" /* GXT: Prep: Onboard Computer */, 64);
 			break;
 	}
 	return Var0;
@@ -10614,7 +10614,7 @@ void func_319(var uParam0)//Position - 0xC6C5
 		func_326(uParam0, 0.7f);
 	}
 	func_324(uParam0);
-	func_323("", "HEIST_IB_CONT", uParam0->f_812.f_425, uParam0, 0);
+	func_323("", "HEIST_IB_CONT" /* GXT: Continue (~a~) */, uParam0->f_812.f_425, uParam0, 0);
 	switch (uParam0->f_725.f_34)
 	{
 		case 0:
@@ -10627,51 +10627,51 @@ void func_319(var uParam0)//Position - 0xC6C5
 						{
 							if (uParam0->f_812.f_416 == 1 && uParam0->f_794 == 28)
 							{
-								func_322(2, 201, "HEIST_IB_ACCPT", uParam0, 1, 363);
+								func_322(2, 201, "HEIST_IB_ACCPT" /* GXT: Accept */, uParam0, 1, 363);
 							}
 							else
 							{
-								func_322(2, 201, "HEIST_IB_CONFPL", uParam0, 1, 363);
+								func_322(2, 201, "HEIST_IB_CONFPL" /* GXT: Modify */, uParam0, 1, 363);
 							}
 						}
 					}
 					else if (func_213(uParam0, PLAYER::PLAYER_ID()))
 					{
-						func_322(2, 201, "HEIST_IB_UNRDY", uParam0, 1, 363);
+						func_322(2, 201, "HEIST_IB_UNRDY" /* GXT: Unready */, uParam0, 1, 363);
 					}
 					else
 					{
-						func_322(2, 201, "HEIST_IB_RDY", uParam0, 1, 363);
+						func_322(2, 201, "HEIST_IB_RDY" /* GXT: Ready */, uParam0, 1, 363);
 					}
-					func_322(2, 202, "HEIST_IB_QUIT", uParam0, 1, 363);
+					func_322(2, 202, "HEIST_IB_QUIT" /* GXT: Quit */, uParam0, 1, 363);
 					if (iVar1 != 8 && uParam0->f_794 < 100)
 					{
 						if ((MISC::IS_PS3_VERSION() || func_103()) || MISC::IS_PC_VERSION())
 						{
-							func_322(2, 217, "HEIST_IB_PSN", uParam0, 1, 363);
+							func_322(2, 217, "HEIST_IB_PSN" /* GXT: View Profile */, uParam0, 1, 363);
 						}
 						else if (MISC::IS_XBOX360_VERSION() || func_104())
 						{
-							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "HEIST_IB_XBL", uParam0, 0);
+							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "HEIST_IB_XBL" /* GXT: View gamer card */, uParam0, 0);
 						}
 						else
 						{
 							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "HEIST_IB_PSNXBL", uParam0, 0);
 						}
 					}
-					func_322(2, 204, "HP_OVERVIEW", uParam0, 1, 363);
-					func_322(2, 206, "HP_SURVEIL", uParam0, 1, 363);
-					func_322(2, 205, "HP_MAP", uParam0, 1, 363);
+					func_322(2, 204, "HP_OVERVIEW" /* GXT: Overview */, uParam0, 1, 363);
+					func_322(2, 206, "HP_SURVEIL" /* GXT: Surveillance */, uParam0, 1, 363);
+					func_322(2, 205, "HP_MAP" /* GXT: Map */, uParam0, 1, 363);
 					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 					{
-						func_322(2, 39, "HEIST_IB_ZOOM", uParam0, 1, 363);
+						func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 					}
 					else
 					{
-						func_320(2, 15, "HEIST_IB_ZOOM", uParam0);
+						func_320(2, 15, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0);
 					}
-					func_320(2, 1, "HEIST_IB_LOOK", uParam0);
-					func_320(2, 0, "HEIST_IB_NAV", uParam0);
+					func_320(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, uParam0);
+					func_320(2, 0, "HEIST_IB_NAV" /* GXT: Navigate */, uParam0);
 					break;
 				
 				case 1:
@@ -10679,18 +10679,18 @@ void func_319(var uParam0)//Position - 0xC6C5
 					{
 						return;
 					}
-					func_322(2, 201, "HEIST_IB_SAVE", uParam0, 1, 363);
-					func_322(2, 202, "HEIST_IB_UNSAVE", uParam0, 1, 363);
+					func_322(2, 201, "HEIST_IB_SAVE" /* GXT: Confirm */, uParam0, 1, 363);
+					func_322(2, 202, "HEIST_IB_UNSAVE" /* GXT: Cancel */, uParam0, 1, 363);
 					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 					{
-						func_322(2, 39, "HEIST_IB_ZOOM", uParam0, 1, 363);
+						func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 					}
 					else
 					{
-						func_320(2, 15, "HEIST_IB_ZOOM", uParam0);
+						func_320(2, 15, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0);
 					}
-					func_320(2, 1, "HEIST_IB_LOOK", uParam0);
-					func_320(2, 0, "HEIST_IB_NAV", uParam0);
+					func_320(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, uParam0);
+					func_320(2, 0, "HEIST_IB_NAV" /* GXT: Navigate */, uParam0);
 					break;
 			}
 			break;
@@ -10705,32 +10705,32 @@ void func_319(var uParam0)//Position - 0xC6C5
 						{
 							if (uParam0->f_812.f_416 == 1 && uParam0->f_794 == 28)
 							{
-								func_322(2, 201, "HEIST_IB_ACCPT", uParam0, 1, 363);
+								func_322(2, 201, "HEIST_IB_ACCPT" /* GXT: Accept */, uParam0, 1, 363);
 							}
 							else
 							{
-								func_322(2, 201, "HEIST_IB_CONFPL", uParam0, 1, 363);
+								func_322(2, 201, "HEIST_IB_CONFPL" /* GXT: Modify */, uParam0, 1, 363);
 							}
 						}
 					}
 					else if (func_213(uParam0, PLAYER::PLAYER_ID()))
 					{
-						func_322(2, 201, "HEIST_IB_UNRDY", uParam0, 1, 363);
+						func_322(2, 201, "HEIST_IB_UNRDY" /* GXT: Unready */, uParam0, 1, 363);
 					}
 					else
 					{
-						func_322(2, 201, "HEIST_IB_RDY", uParam0, 1, 363);
+						func_322(2, 201, "HEIST_IB_RDY" /* GXT: Ready */, uParam0, 1, 363);
 					}
-					func_322(2, 202, "HEIST_IB_QUIT", uParam0, 1, 363);
+					func_322(2, 202, "HEIST_IB_QUIT" /* GXT: Quit */, uParam0, 1, 363);
 					if (iVar1 != 8 && uParam0->f_794 < 100)
 					{
 						if ((MISC::IS_PS3_VERSION() || func_103()) || MISC::IS_PC_VERSION())
 						{
-							func_322(2, 217, "HEIST_IB_PSN", uParam0, 1, 363);
+							func_322(2, 217, "HEIST_IB_PSN" /* GXT: View Profile */, uParam0, 1, 363);
 						}
 						else if (MISC::IS_XBOX360_VERSION() || func_104())
 						{
-							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "HEIST_IB_XBL", uParam0, 0);
+							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "HEIST_IB_XBL" /* GXT: View gamer card */, uParam0, 0);
 						}
 						else
 						{
@@ -10740,27 +10740,27 @@ void func_319(var uParam0)//Position - 0xC6C5
 					switch (uParam0->f_725.f_32)
 					{
 						case 0:
-							func_322(2, 204, "HP_MEMBERS", uParam0, 1, 363);
+							func_322(2, 204, "HP_MEMBERS" /* GXT: Members */, uParam0, 1, 363);
 							break;
 						
 						case 1:
-							func_322(2, 204, "HP_MAP", uParam0, 1, 363);
+							func_322(2, 204, "HP_MAP" /* GXT: Map */, uParam0, 1, 363);
 							break;
 						
 						case 2:
-							func_322(2, 204, "HP_SURVEIL", uParam0, 1, 363);
+							func_322(2, 204, "HP_SURVEIL" /* GXT: Surveillance */, uParam0, 1, 363);
 							break;
 					}
 					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 					{
-						func_322(2, 39, "HEIST_IB_ZOOM", uParam0, 1, 363);
+						func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 					}
 					else
 					{
-						func_322(2, 208, "HEIST_IB_ZOOM", uParam0, 1, 363);
+						func_322(2, 208, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 					}
-					func_320(2, 1, "HEIST_IB_LOOK", uParam0);
-					func_320(2, 0, "HEIST_IB_NAV", uParam0);
+					func_320(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, uParam0);
+					func_320(2, 0, "HEIST_IB_NAV" /* GXT: Navigate */, uParam0);
 					break;
 				
 				case 1:
@@ -10768,18 +10768,18 @@ void func_319(var uParam0)//Position - 0xC6C5
 					{
 						return;
 					}
-					func_322(2, 201, "HEIST_IB_SAVE", uParam0, 1, 363);
-					func_322(2, 202, "HEIST_IB_UNSAVE", uParam0, 1, 363);
+					func_322(2, 201, "HEIST_IB_SAVE" /* GXT: Confirm */, uParam0, 1, 363);
+					func_322(2, 202, "HEIST_IB_UNSAVE" /* GXT: Cancel */, uParam0, 1, 363);
 					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 					{
-						func_322(2, 39, "HEIST_IB_ZOOM", uParam0, 1, 363);
+						func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 					}
 					else
 					{
-						func_320(2, 15, "HEIST_IB_ZOOM", uParam0);
+						func_320(2, 15, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0);
 					}
-					func_320(2, 1, "HEIST_IB_LOOK", uParam0);
-					func_320(2, 0, "HEIST_IB_NAV", uParam0);
+					func_320(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, uParam0);
+					func_320(2, 0, "HEIST_IB_NAV" /* GXT: Navigate */, uParam0);
 					break;
 			}
 			break;
@@ -10794,51 +10794,51 @@ void func_319(var uParam0)//Position - 0xC6C5
 						{
 							if (uParam0->f_812.f_416 == 1 && uParam0->f_794 == 28)
 							{
-								func_322(2, 201, "HEIST_IB_ACCPT", uParam0, 1, 363);
+								func_322(2, 201, "HEIST_IB_ACCPT" /* GXT: Accept */, uParam0, 1, 363);
 							}
 							else
 							{
-								func_322(2, 201, "HEIST_IB_CONFPL", uParam0, 1, 363);
+								func_322(2, 201, "HEIST_IB_CONFPL" /* GXT: Modify */, uParam0, 1, 363);
 							}
 						}
 					}
 					else if (func_213(uParam0, PLAYER::PLAYER_ID()))
 					{
-						func_322(2, 201, "HEIST_IB_UNRDY", uParam0, 1, 363);
+						func_322(2, 201, "HEIST_IB_UNRDY" /* GXT: Unready */, uParam0, 1, 363);
 					}
 					else
 					{
-						func_322(2, 201, "HEIST_IB_RDY", uParam0, 1, 363);
+						func_322(2, 201, "HEIST_IB_RDY" /* GXT: Ready */, uParam0, 1, 363);
 					}
-					func_322(2, 202, "HEIST_IB_QUIT", uParam0, 1, 363);
+					func_322(2, 202, "HEIST_IB_QUIT" /* GXT: Quit */, uParam0, 1, 363);
 					if (iVar1 != 8 && uParam0->f_794 < 100)
 					{
 						if ((MISC::IS_PS3_VERSION() || func_103()) || MISC::IS_PC_VERSION())
 						{
-							func_322(2, 217, "HEIST_IB_PSN", uParam0, 1, 363);
+							func_322(2, 217, "HEIST_IB_PSN" /* GXT: View Profile */, uParam0, 1, 363);
 						}
 						else if (MISC::IS_XBOX360_VERSION() || func_104())
 						{
-							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "HEIST_IB_XBL", uParam0, 0);
+							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "HEIST_IB_XBL" /* GXT: View gamer card */, uParam0, 0);
 						}
 						else
 						{
 							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "HEIST_IB_PSNXBL", uParam0, 0);
 						}
 					}
-					func_322(2, 204, "HP_OVERVIEW", uParam0, 1, 363);
-					func_322(2, 206, "HP_MEMBERS", uParam0, 1, 363);
-					func_322(2, 205, "HP_SURVEIL", uParam0, 1, 363);
+					func_322(2, 204, "HP_OVERVIEW" /* GXT: Overview */, uParam0, 1, 363);
+					func_322(2, 206, "HP_MEMBERS" /* GXT: Members */, uParam0, 1, 363);
+					func_322(2, 205, "HP_SURVEIL" /* GXT: Surveillance */, uParam0, 1, 363);
 					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 					{
-						func_322(2, 39, "HEIST_IB_ZOOM", uParam0, 1, 363);
+						func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 					}
 					else
 					{
-						func_320(2, 15, "HEIST_IB_ZOOM", uParam0);
+						func_320(2, 15, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0);
 					}
-					func_320(2, 1, "HEIST_IB_LOOK", uParam0);
-					func_320(2, 0, "HEIST_IB_NAV", uParam0);
+					func_320(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, uParam0);
+					func_320(2, 0, "HEIST_IB_NAV" /* GXT: Navigate */, uParam0);
 					break;
 				
 				case 1:
@@ -10846,18 +10846,18 @@ void func_319(var uParam0)//Position - 0xC6C5
 					{
 						return;
 					}
-					func_322(2, 201, "HEIST_IB_SAVE", uParam0, 1, 363);
-					func_322(2, 202, "HEIST_IB_UNSAVE", uParam0, 1, 363);
+					func_322(2, 201, "HEIST_IB_SAVE" /* GXT: Confirm */, uParam0, 1, 363);
+					func_322(2, 202, "HEIST_IB_UNSAVE" /* GXT: Cancel */, uParam0, 1, 363);
 					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 					{
-						func_322(2, 39, "HEIST_IB_ZOOM", uParam0, 1, 363);
+						func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 					}
 					else
 					{
-						func_320(2, 15, "HEIST_IB_ZOOM", uParam0);
+						func_320(2, 15, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0);
 					}
-					func_320(2, 1, "HEIST_IB_LOOK", uParam0);
-					func_320(2, 0, "HEIST_IB_NAV", uParam0);
+					func_320(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, uParam0);
+					func_320(2, 0, "HEIST_IB_NAV" /* GXT: Navigate */, uParam0);
 					break;
 			}
 			break;
@@ -10872,51 +10872,51 @@ void func_319(var uParam0)//Position - 0xC6C5
 						{
 							if (uParam0->f_812.f_416 == 1 && uParam0->f_794 == 28)
 							{
-								func_322(2, 201, "HEIST_IB_ACCPT", uParam0, 1, 363);
+								func_322(2, 201, "HEIST_IB_ACCPT" /* GXT: Accept */, uParam0, 1, 363);
 							}
 							else
 							{
-								func_322(2, 201, "HEIST_IB_CONFPL", uParam0, 1, 363);
+								func_322(2, 201, "HEIST_IB_CONFPL" /* GXT: Modify */, uParam0, 1, 363);
 							}
 						}
 					}
 					else if (func_213(uParam0, PLAYER::PLAYER_ID()))
 					{
-						func_322(2, 201, "HEIST_IB_UNRDY", uParam0, 1, 363);
+						func_322(2, 201, "HEIST_IB_UNRDY" /* GXT: Unready */, uParam0, 1, 363);
 					}
 					else
 					{
-						func_322(2, 201, "HEIST_IB_RDY", uParam0, 1, 363);
+						func_322(2, 201, "HEIST_IB_RDY" /* GXT: Ready */, uParam0, 1, 363);
 					}
-					func_322(2, 202, "HEIST_IB_QUIT", uParam0, 1, 363);
+					func_322(2, 202, "HEIST_IB_QUIT" /* GXT: Quit */, uParam0, 1, 363);
 					if (iVar1 != 8 && uParam0->f_794 < 100)
 					{
 						if ((MISC::IS_PS3_VERSION() || func_103()) || MISC::IS_PC_VERSION())
 						{
-							func_322(2, 217, "HEIST_IB_PSN", uParam0, 1, 363);
+							func_322(2, 217, "HEIST_IB_PSN" /* GXT: View Profile */, uParam0, 1, 363);
 						}
 						else if (MISC::IS_XBOX360_VERSION() || func_104())
 						{
-							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "HEIST_IB_XBL", uParam0, 0);
+							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "HEIST_IB_XBL" /* GXT: View gamer card */, uParam0, 0);
 						}
 						else
 						{
 							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "HEIST_IB_PSNXBL", uParam0, 0);
 						}
 					}
-					func_322(2, 204, "HP_OVERVIEW", uParam0, 1, 363);
-					func_322(2, 206, "HP_MAP", uParam0, 1, 363);
-					func_322(2, 205, "HP_MEMBERS", uParam0, 1, 363);
+					func_322(2, 204, "HP_OVERVIEW" /* GXT: Overview */, uParam0, 1, 363);
+					func_322(2, 206, "HP_MAP" /* GXT: Map */, uParam0, 1, 363);
+					func_322(2, 205, "HP_MEMBERS" /* GXT: Members */, uParam0, 1, 363);
 					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 					{
-						func_322(2, 39, "HEIST_IB_ZOOM", uParam0, 1, 363);
+						func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 					}
 					else
 					{
-						func_320(2, 15, "HEIST_IB_ZOOM", uParam0);
+						func_320(2, 15, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0);
 					}
-					func_320(2, 1, "HEIST_IB_LOOK", uParam0);
-					func_320(2, 0, "HEIST_IB_NAV", uParam0);
+					func_320(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, uParam0);
+					func_320(2, 0, "HEIST_IB_NAV" /* GXT: Navigate */, uParam0);
 					break;
 				
 				case 1:
@@ -10924,18 +10924,18 @@ void func_319(var uParam0)//Position - 0xC6C5
 					{
 						return;
 					}
-					func_322(2, 201, "HEIST_IB_SAVE", uParam0, 1, 363);
-					func_322(2, 202, "HEIST_IB_UNSAVE", uParam0, 1, 363);
+					func_322(2, 201, "HEIST_IB_SAVE" /* GXT: Confirm */, uParam0, 1, 363);
+					func_322(2, 202, "HEIST_IB_UNSAVE" /* GXT: Cancel */, uParam0, 1, 363);
 					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 					{
-						func_322(2, 39, "HEIST_IB_ZOOM", uParam0, 1, 363);
+						func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 					}
 					else
 					{
-						func_320(2, 15, "HEIST_IB_ZOOM", uParam0);
+						func_320(2, 15, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0);
 					}
-					func_320(2, 1, "HEIST_IB_LOOK", uParam0);
-					func_320(2, 0, "HEIST_IB_NAV", uParam0);
+					func_320(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, uParam0);
+					func_320(2, 0, "HEIST_IB_NAV" /* GXT: Navigate */, uParam0);
 					break;
 			}
 			break;
@@ -11517,7 +11517,7 @@ void func_336(var uParam0)//Position - 0xDDC7
 			switch (uParam0->f_1239)
 			{
 				case 0:
-					func_214("HP_FIN_LTUT1", 10000);
+					func_214("HP_FIN_LTUT1" /* GXT: This is the Heist Finale screen. Here you can set what percentage take each member gets, what role they will perform and the overall plan for the job. */, 10000);
 					Global_1888862[PLAYER::NETWORK_PLAYER_ID_TO_INT() /*120*/].f_38.f_30 = 1;
 					uParam0->f_1239.f_1 = 1;
 					func_341(uParam0, 0);
@@ -11525,37 +11525,37 @@ void func_336(var uParam0)//Position - 0xDDC7
 					break;
 				
 				case 1:
-					if (!func_170("HP_FIN_LTUT1") || func_185(&(uParam0->f_1239.f_2), 10000, 0))
+					if (!func_170("HP_FIN_LTUT1" /* GXT: This is the Heist Finale screen. Here you can set what percentage take each member gets, what role they will perform and the overall plan for the job. */) || func_185(&(uParam0->f_1239.f_2), 10000, 0))
 					{
 						func_340(uParam0, 4);
-						func_214("HP_FIN_TUT2", 10000);
+						func_214("HP_FIN_TUT2" /* GXT: This bar shows the total reward for the Heist and how much each member receives. The leader has a larger cut by default as they covered the initial setup cost. */, 10000);
 						func_184(&(uParam0->f_1239.f_2));
 						uParam0->f_1239++;
 					}
 					break;
 				
 				case 2:
-					if (!func_170("HP_FIN_TUT2") || func_185(&(uParam0->f_1239.f_2), 10000, 0))
+					if (!func_170("HP_FIN_TUT2" /* GXT: This bar shows the total reward for the Heist and how much each member receives. The leader has a larger cut by default as they covered the initial setup cost. */) || func_185(&(uParam0->f_1239.f_2), 10000, 0))
 					{
 						func_340(uParam0, 5);
-						func_214("HP_FIN_LTUT3", 10000);
+						func_214("HP_FIN_LTUT3" /* GXT: Here you can assign the role that each Heist member will perform and their percentage cut of the total take. */, 10000);
 						func_184(&(uParam0->f_1239.f_2));
 						uParam0->f_1239++;
 					}
 					break;
 				
 				case 3:
-					if (!func_170("HP_FIN_LTUT3") || func_185(&(uParam0->f_1239.f_2), 10000, 0))
+					if (!func_170("HP_FIN_LTUT3" /* GXT: Here you can assign the role that each Heist member will perform and their percentage cut of the total take. */) || func_185(&(uParam0->f_1239.f_2), 10000, 0))
 					{
 						func_340(uParam0, 6);
-						func_214("HP_FIN_TUT4", 10000);
+						func_214("HP_FIN_TUT4" /* GXT: You can view the plan for the selected Heist member's tasks here. These will be shown when a player has been assigned a role. */, 10000);
 						func_184(&(uParam0->f_1239.f_2));
 						uParam0->f_1239++;
 					}
 					break;
 				
 				case 4:
-					if (!func_170("HP_FIN_TUT4") || func_185(&(uParam0->f_1239.f_2), 10000, 0))
+					if (!func_170("HP_FIN_TUT4" /* GXT: You can view the plan for the selected Heist member's tasks here. These will be shown when a player has been assigned a role. */) || func_185(&(uParam0->f_1239.f_2), 10000, 0))
 					{
 						func_340(uParam0, 0);
 						func_339();
@@ -11584,7 +11584,7 @@ void func_336(var uParam0)//Position - 0xDDC7
 		switch (uParam0->f_1239)
 		{
 			case 0:
-				func_214("HP_FIN_MTUT1", 10000);
+				func_214("HP_FIN_MTUT1" /* GXT: This is the Heist Finale screen. Here you can view the set-up of the Heist, and how each member will be involved. */, 10000);
 				Global_1888862[PLAYER::NETWORK_PLAYER_ID_TO_INT() /*120*/].f_38.f_30 = 1;
 				uParam0->f_1239.f_1 = 1;
 				func_341(uParam0, 0);
@@ -11592,37 +11592,37 @@ void func_336(var uParam0)//Position - 0xDDC7
 				break;
 			
 			case 1:
-				if (!func_170("HP_FIN_MTUT1") || func_185(&(uParam0->f_1239.f_2), 10000, 0))
+				if (!func_170("HP_FIN_MTUT1" /* GXT: This is the Heist Finale screen. Here you can view the set-up of the Heist, and how each member will be involved. */) || func_185(&(uParam0->f_1239.f_2), 10000, 0))
 				{
 					func_340(uParam0, 4);
-					func_214("HP_FIN_TUT2", 10000);
+					func_214("HP_FIN_TUT2" /* GXT: This bar shows the total reward for the Heist and how much each member receives. The leader has a larger cut by default as they covered the initial setup cost. */, 10000);
 					func_184(&(uParam0->f_1239.f_2));
 					uParam0->f_1239++;
 				}
 				break;
 			
 			case 2:
-				if (!func_170("HP_FIN_TUT2") || func_185(&(uParam0->f_1239.f_2), 10000, 0))
+				if (!func_170("HP_FIN_TUT2" /* GXT: This bar shows the total reward for the Heist and how much each member receives. The leader has a larger cut by default as they covered the initial setup cost. */) || func_185(&(uParam0->f_1239.f_2), 10000, 0))
 				{
 					func_340(uParam0, 5);
-					func_214("HP_FIN_MTUT3", 10000);
+					func_214("HP_FIN_MTUT3" /* GXT: This section shows your Heist role configuration and your percentage cut of the total reward. This is set by the Heist leader. */, 10000);
 					func_184(&(uParam0->f_1239.f_2));
 					uParam0->f_1239++;
 				}
 				break;
 			
 			case 3:
-				if (!func_170("HP_FIN_MTUT3") || func_185(&(uParam0->f_1239.f_2), 10000, 0))
+				if (!func_170("HP_FIN_MTUT3" /* GXT: This section shows your Heist role configuration and your percentage cut of the total reward. This is set by the Heist leader. */) || func_185(&(uParam0->f_1239.f_2), 10000, 0))
 				{
 					func_340(uParam0, 6);
-					func_214("HP_FIN_TUT4", 10000);
+					func_214("HP_FIN_TUT4" /* GXT: You can view the plan for the selected Heist member's tasks here. These will be shown when a player has been assigned a role. */, 10000);
 					func_184(&(uParam0->f_1239.f_2));
 					uParam0->f_1239++;
 				}
 				break;
 			
 			case 4:
-				if (!func_170("HP_FIN_TUT4") || func_185(&(uParam0->f_1239.f_2), 10000, 0))
+				if (!func_170("HP_FIN_TUT4" /* GXT: You can view the plan for the selected Heist member's tasks here. These will be shown when a player has been assigned a role. */) || func_185(&(uParam0->f_1239.f_2), 10000, 0))
 				{
 					func_340(uParam0, 0);
 					func_337();
@@ -12211,12 +12211,12 @@ char* func_361(int iParam0, bool bParam1)//Position - 0xEDE3
 			return func_362();
 		}
 	}
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACC");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACC" /* GXT: An Organization */);
 }
 
 char* func_362()//Position - 0xEE0A
 {
-	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACCM");
+	return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("GB_REST_ACCM" /* GXT: Motorcycle Club */);
 }
 
 bool func_363(int iParam0, bool bParam1)//Position - 0xEE1A
@@ -13300,7 +13300,7 @@ void func_416()//Position - 0x100C7
 			if (func_173())
 			{
 				func_421();
-				if (func_170("HP_EXPLAIN"))
+				if (func_170("HP_EXPLAIN" /* GXT: This is the planning room ~HUD_COLOUR_H~~BLIP_MP_HEIST~~s~ Access the screen as a VIP, CEO or MC President to start The Doomsday Heist. */))
 				{
 					HUD::CLEAR_HELP(true);
 				}
@@ -13359,11 +13359,11 @@ void func_417()//Position - 0x101C7
 	{
 		if (BitTest(Global_1836144, 1))
 		{
-			func_168("HPBOARD_REGb");
+			func_168("HPBOARD_REGb" /* GXT: Register as a VIP, CEO or MC President to gain access to the Planning Screen.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */);
 		}
 		else
 		{
-			func_168("HPBOARD_REG");
+			func_168("HPBOARD_REG" /* GXT: Register as a VIP, CEO or MC President to gain access to the Planning Screen. */);
 		}
 		iLocal_177 = 1;
 	}
@@ -13371,7 +13371,7 @@ void func_417()//Position - 0x101C7
 
 void func_418()//Position - 0x101F4
 {
-	if ((func_170("HPCONTEXT_PLAN") || func_170("HPCONTEXT_PLANb")) || func_170("HPCONTEXT_PLANc"))
+	if ((func_170("HPCONTEXT_PLAN" /* GXT: Press ~INPUT_CONTEXT~ to access the Planning Screen. */) || func_170("HPCONTEXT_PLANb" /* GXT: Press ~INPUT_CONTEXT~ to access the Planning Screen.~n~Press ~INPUT_CONTEXT_SECONDARY~ to quickly join as a Crew Member. */)) || func_170("HPCONTEXT_PLANc" /* GXT: Press ~INPUT_CONTEXT~ to access the Planning Screen.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -13385,7 +13385,7 @@ struct<16> func_420()//Position - 0x10230
 {
 	struct<16> Var0;
 	
-	StringCopy(&Var0, "HPCONTEXT_PLAN", 64);
+	StringCopy(&Var0, "HPCONTEXT_PLAN" /* GXT: Press ~INPUT_CONTEXT~ to access the Planning Screen. */, 64);
 	if (BitTest(Global_1836144, 1))
 	{
 		StringConCat(&Var0, "c", 64);
@@ -13399,7 +13399,7 @@ struct<16> func_420()//Position - 0x10230
 
 void func_421()//Position - 0x10269
 {
-	if (func_170("HPBOARD_REG") || func_170("HPBOARD_REGb"))
+	if (func_170("HPBOARD_REG" /* GXT: Register as a VIP, CEO or MC President to gain access to the Planning Screen. */) || func_170("HPBOARD_REGb" /* GXT: Register as a VIP, CEO or MC President to gain access to the Planning Screen.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -13667,14 +13667,14 @@ void func_433(var uParam0, var uParam1)//Position - 0x10708
 	{
 		if (uParam0->f_812.f_2002 == -1)
 		{
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "Select", func_158(), func_157(), false, 0, false);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "Select" /* GXT: Filter List */, func_158(), func_157(), false, 0, false);
 			uParam0->f_812.f_2002 = 0;
 			func_430(uParam0, 0);
 		}
 	}
 	else if (uParam0->f_812.f_2002 == -1)
 	{
-		AUDIO::PLAY_SOUND_FROM_COORD(-1, "Select", func_158(), func_157(), false, 0, false);
+		AUDIO::PLAY_SOUND_FROM_COORD(-1, "Select" /* GXT: Filter List */, func_158(), func_157(), false, 0, false);
 		uParam0->f_812.f_2002 = 8;
 		func_430(uParam0, 0);
 	}
@@ -14136,7 +14136,7 @@ void func_446(var uParam0)//Position - 0x10FAA
 		{
 			if (func_438(uParam0->f_812, iVar0) == 0)
 			{
-				AUDIO::PLAY_SOUND_FROM_COORD(-1, "Select", func_158(), func_157(), false, 0, false);
+				AUDIO::PLAY_SOUND_FROM_COORD(-1, "Select" /* GXT: Filter List */, func_158(), func_157(), false, 0, false);
 				if (func_445(iVar0))
 				{
 					if (!func_447(func_456(iVar0), &(uParam0->f_812.f_2004), &(uParam0->f_812.f_2002), 1))
@@ -14156,7 +14156,7 @@ void func_446(var uParam0)//Position - 0x10FAA
 				{
 					if (!BitTest(uParam0->f_2825, 13))
 					{
-						func_214("HPLAUNCH_LOCK2", -1);
+						func_214("HPLAUNCH_LOCK2" /* GXT: Locked Freemode Prep missions on the Planning Screen cannot be started until all previous Prep and Setup missions have been completed. */, -1);
 						MISC::SET_BIT(&(uParam0->f_2825), 13);
 					}
 				}
@@ -14164,13 +14164,13 @@ void func_446(var uParam0)//Position - 0x10FAA
 				{
 					if (!BitTest(uParam0->f_2825, 12))
 					{
-						func_214("HPLAUNCH_LOCK3", -1);
+						func_214("HPLAUNCH_LOCK3" /* GXT: Join a public session to source Heist Prep Equipment or pay a fee to purchase the equipment and unlock the associated Setup immediately. */, -1);
 						MISC::SET_BIT(&(uParam0->f_2825), 12);
 					}
 				}
 				else if (!BitTest(uParam0->f_2825, 11))
 				{
-					func_214("HPLAUNCH_LOCK", -1);
+					func_214("HPLAUNCH_LOCK" /* GXT: Locked Setup missions on the Planning Screen cannot be started until all associated Freemode Prep missions have been completed. */, -1);
 					MISC::SET_BIT(&(uParam0->f_2825), 11);
 				}
 			}
@@ -14179,7 +14179,7 @@ void func_446(var uParam0)//Position - 0x10FAA
 				AUDIO::PLAY_SOUND_FROM_COORD(-1, "Error", func_158(), func_157(), false, 0, false);
 				if (!BitTest(uParam0->f_2825, 14))
 				{
-					func_214("HPLAUNCH_COMP", -1);
+					func_214("HPLAUNCH_COMP" /* GXT: The mission you have selected has already been completed. */, -1);
 					MISC::SET_BIT(&(uParam0->f_2825), 14);
 				}
 			}
@@ -14191,7 +14191,7 @@ void func_446(var uParam0)//Position - 0x10FAA
 	else
 	{
 		AUDIO::PLAY_SOUND_FROM_COORD(-1, "Error", func_158(), func_157(), false, 0, false);
-		func_214("HPLAUNCH_UNAV", -1);
+		func_214("HPLAUNCH_UNAV" /* GXT: The mission you have selected is currently unavailable. The maximum number of missions with this Heist Prep Equipment have already been sourced in session. Please wait or look for rival Heist crews transporting Heist Prep Equipment ~BLIP_NHP_BAG~ to steal from. */, -1);
 	}
 }
 
@@ -24643,112 +24643,112 @@ void func_658(var uParam0)//Position - 0x1A9AE
 		case 0:
 			if (func_438(uParam0->f_812, iVar1) == 0 && func_457(iVar1))
 			{
-				func_322(2, 201, "HEIST_IB_LAUNCH", uParam0, 1, 363);
+				func_322(2, 201, "HEIST_IB_LAUNCH" /* GXT: Launch Mission */, uParam0, 1, 363);
 			}
-			func_322(2, 202, "HEIST_IB_QUIT", uParam0, 1, 363);
+			func_322(2, 202, "HEIST_IB_QUIT" /* GXT: Quit */, uParam0, 1, 363);
 			if (func_434(iVar1))
 			{
-				func_322(2, 203, "HPPAY_SETUP", uParam0, 1, 363);
+				func_322(2, 203, "HPPAY_SETUP" /* GXT: Pay for Setup */, uParam0, 1, 363);
 			}
-			func_322(2, 204, "HP_OVERVIEW", uParam0, 1, 363);
-			func_322(2, 206, "HP_SURVEIL", uParam0, 1, 363);
-			func_322(2, 205, "HP_MAP", uParam0, 1, 363);
+			func_322(2, 204, "HP_OVERVIEW" /* GXT: Overview */, uParam0, 1, 363);
+			func_322(2, 206, "HP_SURVEIL" /* GXT: Surveillance */, uParam0, 1, 363);
+			func_322(2, 205, "HP_MAP" /* GXT: Map */, uParam0, 1, 363);
 			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 			{
-				func_322(2, 39, "HEIST_IB_ZOOM", uParam0, 1, 363);
+				func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 			}
 			else
 			{
-				func_320(2, 15, "HEIST_IB_ZOOM", uParam0);
+				func_320(2, 15, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0);
 			}
-			func_320(2, 1, "HEIST_IB_LOOK", uParam0);
-			func_320(2, 0, "HEIST_IB_NAV", uParam0);
+			func_320(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, uParam0);
+			func_320(2, 0, "HEIST_IB_NAV" /* GXT: Navigate */, uParam0);
 			break;
 		
 		case 8:
 			if (func_438(uParam0->f_812, iVar1) == 0 && func_457(iVar1))
 			{
-				func_322(2, 201, "HEIST_IB_LAUNCH", uParam0, 1, 363);
+				func_322(2, 201, "HEIST_IB_LAUNCH" /* GXT: Launch Mission */, uParam0, 1, 363);
 			}
-			func_322(2, 202, "HEIST_IB_QUIT", uParam0, 1, 363);
+			func_322(2, 202, "HEIST_IB_QUIT" /* GXT: Quit */, uParam0, 1, 363);
 			if (func_434(iVar1))
 			{
-				func_322(2, 203, "HPPAY_SETUP", uParam0, 1, 363);
+				func_322(2, 203, "HPPAY_SETUP" /* GXT: Pay for Setup */, uParam0, 1, 363);
 			}
 			switch (uParam0->f_725.f_32)
 			{
 				case 0:
-					func_322(2, 204, "HP_MISSION", uParam0, 1, 363);
+					func_322(2, 204, "HP_MISSION" /* GXT: Missions */, uParam0, 1, 363);
 					break;
 				
 				case 1:
-					func_322(2, 204, "HP_MAP", uParam0, 1, 363);
+					func_322(2, 204, "HP_MAP" /* GXT: Map */, uParam0, 1, 363);
 					break;
 				
 				case 2:
-					func_322(2, 204, "HP_SURVEIL", uParam0, 1, 363);
+					func_322(2, 204, "HP_SURVEIL" /* GXT: Surveillance */, uParam0, 1, 363);
 					break;
 			}
 			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 			{
-				func_322(2, 39, "HEIST_IB_ZOOM", uParam0, 1, 363);
+				func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 			}
 			else
 			{
-				func_322(2, 208, "HEIST_IB_ZOOM", uParam0, 1, 363);
+				func_322(2, 208, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 			}
-			func_320(2, 1, "HEIST_IB_LOOK", uParam0);
-			func_320(2, 0, "HEIST_IB_NAV", uParam0);
+			func_320(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, uParam0);
+			func_320(2, 0, "HEIST_IB_NAV" /* GXT: Navigate */, uParam0);
 			break;
 		
 		case 1:
 			if (func_438(uParam0->f_812, iVar1) == 0 && func_457(iVar1))
 			{
-				func_322(2, 201, "HEIST_IB_LAUNCH", uParam0, 1, 363);
+				func_322(2, 201, "HEIST_IB_LAUNCH" /* GXT: Launch Mission */, uParam0, 1, 363);
 			}
-			func_322(2, 202, "HEIST_IB_QUIT", uParam0, 1, 363);
+			func_322(2, 202, "HEIST_IB_QUIT" /* GXT: Quit */, uParam0, 1, 363);
 			if (func_434(iVar1))
 			{
-				func_322(2, 203, "HPPAY_SETUP", uParam0, 1, 363);
+				func_322(2, 203, "HPPAY_SETUP" /* GXT: Pay for Setup */, uParam0, 1, 363);
 			}
-			func_322(2, 204, "HP_OVERVIEW", uParam0, 1, 363);
-			func_322(2, 206, "HP_MISSION", uParam0, 1, 363);
-			func_322(2, 205, "HP_SURVEIL", uParam0, 1, 363);
+			func_322(2, 204, "HP_OVERVIEW" /* GXT: Overview */, uParam0, 1, 363);
+			func_322(2, 206, "HP_MISSION" /* GXT: Missions */, uParam0, 1, 363);
+			func_322(2, 205, "HP_SURVEIL" /* GXT: Surveillance */, uParam0, 1, 363);
 			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 			{
-				func_322(2, 39, "HEIST_IB_ZOOM", uParam0, 1, 363);
+				func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 			}
 			else
 			{
-				func_320(2, 15, "HEIST_IB_ZOOM", uParam0);
+				func_320(2, 15, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0);
 			}
-			func_320(2, 1, "HEIST_IB_LOOK", uParam0);
-			func_320(2, 0, "HEIST_IB_NAV", uParam0);
+			func_320(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, uParam0);
+			func_320(2, 0, "HEIST_IB_NAV" /* GXT: Navigate */, uParam0);
 			break;
 		
 		case 2:
 			if (func_438(uParam0->f_812, iVar1) == 0 && func_457(iVar1))
 			{
-				func_322(2, 201, "HEIST_IB_LAUNCH", uParam0, 1, 363);
+				func_322(2, 201, "HEIST_IB_LAUNCH" /* GXT: Launch Mission */, uParam0, 1, 363);
 			}
-			func_322(2, 202, "HEIST_IB_QUIT", uParam0, 1, 363);
+			func_322(2, 202, "HEIST_IB_QUIT" /* GXT: Quit */, uParam0, 1, 363);
 			if (func_434(iVar1))
 			{
-				func_322(2, 203, "HPPAY_SETUP", uParam0, 1, 363);
+				func_322(2, 203, "HPPAY_SETUP" /* GXT: Pay for Setup */, uParam0, 1, 363);
 			}
-			func_322(2, 204, "HP_OVERVIEW", uParam0, 1, 363);
-			func_322(2, 206, "HP_MAP", uParam0, 1, 363);
-			func_322(2, 205, "HP_MISSION", uParam0, 1, 363);
+			func_322(2, 204, "HP_OVERVIEW" /* GXT: Overview */, uParam0, 1, 363);
+			func_322(2, 206, "HP_MAP" /* GXT: Map */, uParam0, 1, 363);
+			func_322(2, 205, "HP_MISSION" /* GXT: Missions */, uParam0, 1, 363);
 			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 			{
-				func_322(2, 39, "HEIST_IB_ZOOM", uParam0, 1, 363);
+				func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 			}
 			else
 			{
-				func_320(2, 15, "HEIST_IB_ZOOM", uParam0);
+				func_320(2, 15, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0);
 			}
-			func_320(2, 1, "HEIST_IB_LOOK", uParam0);
-			func_320(2, 0, "HEIST_IB_NAV", uParam0);
+			func_320(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, uParam0);
+			func_320(2, 0, "HEIST_IB_NAV" /* GXT: Navigate */, uParam0);
 			break;
 	}
 	func_327(&(uParam0->f_715), &Var0, uParam0, uParam0->f_705);
@@ -24919,13 +24919,13 @@ char* func_664(int iParam0, int iParam1, int iParam2)//Position - 0x1B341
 				switch (iParam1)
 				{
 					case 0:
-						return "HPLOCK_IAA1";
+						return "HPLOCK_IAA1" /* GXT: LOCKED: COMPLETE PARAMEDIC EQUIPMENT */;
 					
 					case 1:
-						return "HPLOCK_IAA2";
+						return "HPLOCK_IAA2" /* GXT: LOCKED: COMPLETE DELUXOS */;
 					
 					case 2:
-						return "HPLOCK_IAA3";
+						return "HPLOCK_IAA3" /* GXT: LOCKED: COMPLETE AKULA */;
 					
 					default:
 				}
@@ -24935,16 +24935,16 @@ char* func_664(int iParam0, int iParam1, int iParam2)//Position - 0x1B341
 				switch (iParam1)
 				{
 					case 0:
-						return "HPLOCK_SUB1";
+						return "HPLOCK_SUB1" /* GXT: LOCKED: COMPLETE KEYCARDS */;
 					
 					case 1:
-						return "HPLOCK_SUB2";
+						return "HPLOCK_SUB2" /* GXT: LOCKED: COMPLETE ULP INTEL */;
 					
 					case 2:
-						return "HPLOCK_SUB3";
+						return "HPLOCK_SUB3" /* GXT: LOCKED: COMPLETE RIOT CONTROL VAN */;
 					
 					case 3:
-						return "HPLOCK_SUB4";
+						return "HPLOCK_SUB4" /* GXT: LOCKED: COMPLETE STROMBERGS & TORPEDO ECU */;
 					
 					default:
 				}
@@ -24954,19 +24954,19 @@ char* func_664(int iParam0, int iParam1, int iParam2)//Position - 0x1B341
 				switch (iParam1)
 				{
 					case 0:
-						return "HPLOCK_SILO1";
+						return "HPLOCK_SILO1" /* GXT: LOCKED: COMPLETE MARKED CASH & RECON */;
 					
 					case 1:
-						return "HPLOCK_SILO2";
+						return "HPLOCK_SILO2" /* GXT: LOCKED: COMPLETE CHERNOBOG */;
 					
 					case 2:
-						return "HPLOCK_SILO3";
+						return "HPLOCK_SILO3" /* GXT: LOCKED: COMPLETE FLIGHT PATH */;
 					
 					case 3:
-						return "HPLOCK_SILO4";
+						return "HPLOCK_SILO4" /* GXT: LOCKED: COMPLETE TEST SITE INTEL */;
 					
 					case 4:
-						return "HPLOCK_SILO5";
+						return "HPLOCK_SILO5" /* GXT: LOCKED: COMPLETE ONBOARD COMPUTER */;
 					
 					default:
 				}
@@ -25223,18 +25223,18 @@ void func_675(var uParam0)//Position - 0x1B9E5
 	{
 		if (func_680())
 		{
-			sVar0 = "HP_GANG_MC";
+			sVar0 = "HP_GANG_MC" /* GXT: Motorcycle Club */;
 		}
 		else
 		{
-			sVar0 = "HP_GANG_ORG";
+			sVar0 = "HP_GANG_ORG" /* GXT: Organization */;
 		}
 		switch (uParam0->f_2817)
 		{
 			case 0:
 				if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 				{
-					func_214("HP_TUT_1", 10000);
+					func_214("HP_TUT_1" /* GXT: This is the Planning Screen. Here you can view the Freemode Preps and Setups that must be completed in order to progress to the Finale. */, 10000);
 					Global_1888862[PLAYER::NETWORK_PLAYER_ID_TO_INT() /*120*/].f_38.f_30 = 1;
 					uParam0->f_2817.f_1 = 1;
 					func_430(uParam0, 0);
@@ -25244,39 +25244,39 @@ void func_675(var uParam0)//Position - 0x1B9E5
 				break;
 			
 			case 1:
-				if (!func_170("HP_TUT_1"))
+				if (!func_170("HP_TUT_1" /* GXT: This is the Planning Screen. Here you can view the Freemode Preps and Setups that must be completed in order to progress to the Finale. */))
 				{
-					func_214("HP_TUT_2", 10000);
+					func_214("HP_TUT_2" /* GXT: In order to unlock a Setup you must obtain the necessary Heist Prep Equipment from Freemode Preps. */, 10000);
 					uParam0->f_2817++;
 				}
 				break;
 			
 			case 2:
-				if (!func_170("HP_TUT_2"))
+				if (!func_170("HP_TUT_2" /* GXT: In order to unlock a Setup you must obtain the necessary Heist Prep Equipment from Freemode Preps. */))
 				{
-					func_679("HP_TUT_3", sVar0, 10000);
+					func_679("HP_TUT_3" /* GXT: There are three ways to acquire Heist Prep Equipment. By completing Freemode Preps, stealing it from rival Heist Crews or by purchasing the equipment directly. */, sVar0, 10000);
 					uParam0->f_2817++;
 				}
 				break;
 			
 			case 3:
-				if (!func_170("HP_TUT_3"))
+				if (!func_170("HP_TUT_3" /* GXT: There are three ways to acquire Heist Prep Equipment. By completing Freemode Preps, stealing it from rival Heist Crews or by purchasing the equipment directly. */))
 				{
-					func_679("HP_TUT_4", sVar0, 10000);
+					func_679("HP_TUT_4" /* GXT: Freemode Preps can be completed in any order. Setups can also be completed in any order once unlocked. */, sVar0, 10000);
 					uParam0->f_2817++;
 				}
 				break;
 			
 			case 4:
-				if (!func_170("HP_TUT_4"))
+				if (!func_170("HP_TUT_4" /* GXT: Freemode Preps can be completed in any order. Setups can also be completed in any order once unlocked. */))
 				{
-					func_679("HP_TUT_5", sVar0, 10000);
+					func_679("HP_TUT_5" /* GXT: Complete all Freemode Preps and Setups to progress to the Heist Finale Screen. */, sVar0, 10000);
 					uParam0->f_2817++;
 				}
 				break;
 			
 			case 5:
-				if (!func_678("HP_TUT_5", sVar0))
+				if (!func_678("HP_TUT_5" /* GXT: Complete all Freemode Preps and Setups to progress to the Heist Finale Screen. */, sVar0))
 				{
 					func_677();
 				}
@@ -25299,7 +25299,7 @@ void func_675(var uParam0)//Position - 0x1B9E5
 			{
 				if (!BitTest(Global_2815059.f_1805, 1))
 				{
-					func_214("HPREPLAY_AV2", -1);
+					func_214("HPREPLAY_AV2" /* GXT: You have completed The Doomsday Heist; cancel or complete your current act to access the Replay Screen. You can cancel your current act by calling Lester. */, -1);
 					MISC::SET_BIT(&(Global_2815059.f_1805), 1);
 				}
 			}
@@ -25673,7 +25673,7 @@ void func_707()//Position - 0x1C27F
 			if (func_173())
 			{
 				func_713();
-				if (func_170("HP_EXPLAIN"))
+				if (func_170("HP_EXPLAIN" /* GXT: This is the planning room ~HUD_COLOUR_H~~BLIP_MP_HEIST~~s~ Access the screen as a VIP, CEO or MC President to start The Doomsday Heist. */))
 				{
 					HUD::CLEAR_HELP(true);
 				}
@@ -25762,20 +25762,20 @@ void func_708()//Position - 0x1C409
 		{
 			if (BitTest(Global_1836144, 1))
 			{
-				func_168("HRBOARD_REGb");
+				func_168("HRBOARD_REGb" /* GXT: Register as a VIP, CEO or MC President to gain access to the Replay Screen.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */);
 			}
 			else
 			{
-				func_168("HRBOARD_REG");
+				func_168("HRBOARD_REG" /* GXT: Register as a VIP, CEO or MC President to gain access to the Replay Screen. */);
 			}
 		}
 		else if (BitTest(Global_1836144, 1))
 		{
-			func_168("HIBOARD_REGb");
+			func_168("HIBOARD_REGb" /* GXT: Register as a VIP, CEO or MC President to gain access to the Setup Screen.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */);
 		}
 		else
 		{
-			func_168("HIBOARD_REG");
+			func_168("HIBOARD_REG" /* GXT: Register as a VIP, CEO or MC President to gain access to the Setup Screen. */);
 		}
 		iLocal_177 = 1;
 	}
@@ -25785,7 +25785,7 @@ struct<16> func_709()//Position - 0x1C461
 {
 	struct<16> Var0;
 	
-	StringCopy(&Var0, "HPCONTEXT_STP", 64);
+	StringCopy(&Var0, "HPCONTEXT_STP" /* GXT: Press ~INPUT_CONTEXT~ to access the Setup Screen. */, 64);
 	if (BitTest(Global_1836144, 1))
 	{
 		StringConCat(&Var0, "c", 64);
@@ -25795,7 +25795,7 @@ struct<16> func_709()//Position - 0x1C461
 
 void func_710()//Position - 0x1C487
 {
-	if (((((func_170("HPCONTEXT_STP") || func_170("HPCONTEXT_STPb")) || func_170("HPCONTEXT_STPc")) || func_170("HPCONTEXT_RPLY")) || func_170("HPCONTEXT_RPLYb")) || func_170("HPCONTEXT_RPLYc"))
+	if (((((func_170("HPCONTEXT_STP" /* GXT: Press ~INPUT_CONTEXT~ to access the Setup Screen. */) || func_170("HPCONTEXT_STPb" /* GXT: Press ~INPUT_CONTEXT~ to access the Setup Screen.~n~Press ~INPUT_CONTEXT_SECONDARY~ to quickly join as a Crew Member. */)) || func_170("HPCONTEXT_STPc" /* GXT: Press ~INPUT_CONTEXT~ to access the Setup Screen.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */)) || func_170("HPCONTEXT_RPLY" /* GXT: Press ~INPUT_CONTEXT~ to access the Replay Screen. */)) || func_170("HPCONTEXT_RPLYb" /* GXT: Press ~INPUT_CONTEXT~ to access the Replay Screen.~n~Press ~INPUT_CONTEXT_SECONDARY~ to quickly join as a Crew Member. */)) || func_170("HPCONTEXT_RPLYc" /* GXT: Press ~INPUT_CONTEXT~ to access the Replay Screen.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -25811,7 +25811,7 @@ struct<16> func_712()//Position - 0x1C4FE
 {
 	struct<16> Var0;
 	
-	StringCopy(&Var0, "HPCONTEXT_RPLY", 64);
+	StringCopy(&Var0, "HPCONTEXT_RPLY" /* GXT: Press ~INPUT_CONTEXT~ to access the Replay Screen. */, 64);
 	if (BitTest(Global_1836144, 1))
 	{
 		StringConCat(&Var0, "c", 64);
@@ -25825,7 +25825,7 @@ struct<16> func_712()//Position - 0x1C4FE
 
 void func_713()//Position - 0x1C537
 {
-	if (((func_170("HRBOARD_REG") || func_170("HIBOARD_REG")) || func_170("HRBOARD_REGb")) || func_170("HIBOARD_REGb"))
+	if (((func_170("HRBOARD_REG" /* GXT: Register as a VIP, CEO or MC President to gain access to the Replay Screen. */) || func_170("HIBOARD_REG" /* GXT: Register as a VIP, CEO or MC President to gain access to the Setup Screen. */)) || func_170("HRBOARD_REGb" /* GXT: Register as a VIP, CEO or MC President to gain access to the Replay Screen.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */)) || func_170("HIBOARD_REGb" /* GXT: Register as a VIP, CEO or MC President to gain access to the Setup Screen.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -26637,13 +26637,13 @@ void func_741(var uParam0)//Position - 0x1D536
 	iVar0 = func_739(uParam0->f_794);
 	if (uParam0->f_812.f_141[iVar0] == 0)
 	{
-		AUDIO::PLAY_SOUND_FROM_COORD(-1, "Select", func_158(), func_157(), false, 0, false);
+		AUDIO::PLAY_SOUND_FROM_COORD(-1, "Select" /* GXT: Filter List */, func_158(), func_157(), false, 0, false);
 		uParam0->f_812.f_149 = 7;
 	}
 	else if (uParam0->f_812.f_141[iVar0] == 5)
 	{
-		AUDIO::PLAY_SOUND_FROM_COORD(-1, "Select", func_158(), func_157(), false, 0, false);
-		func_214("HPSTRAND_ONCD", -1);
+		AUDIO::PLAY_SOUND_FROM_COORD(-1, "Select" /* GXT: Filter List */, func_158(), func_157(), false, 0, false);
+		func_214("HPSTRAND_ONCD" /* GXT: There is a delay before you can replay the same Heist again. Please select a different Heist or wait for this to become available. */, -1);
 	}
 }
 
@@ -26873,107 +26873,107 @@ void func_747(var uParam0)//Position - 0x1DA2A
 		case 0:
 			if (uParam0->f_812.f_141[func_739(uParam0->f_794)] == 0)
 			{
-				func_322(2, 201, "HPSEL_STRAND", uParam0, 1, 363);
+				func_322(2, 201, "HPSEL_STRAND" /* GXT: Setup */, uParam0, 1, 363);
 			}
-			func_322(2, 202, "HEIST_IB_QUIT", uParam0, 1, 363);
-			func_322(2, 204, "HP_OVERVIEW", uParam0, 1, 363);
-			func_322(2, 206, "HP_SURVEIL", uParam0, 1, 363);
-			func_322(2, 205, "HP_MAP", uParam0, 1, 363);
+			func_322(2, 202, "HEIST_IB_QUIT" /* GXT: Quit */, uParam0, 1, 363);
+			func_322(2, 204, "HP_OVERVIEW" /* GXT: Overview */, uParam0, 1, 363);
+			func_322(2, 206, "HP_SURVEIL" /* GXT: Surveillance */, uParam0, 1, 363);
+			func_322(2, 205, "HP_MAP" /* GXT: Map */, uParam0, 1, 363);
 			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 			{
-				func_322(2, 39, "HEIST_IB_ZOOM", uParam0, 1, 363);
+				func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 			}
 			else
 			{
-				func_320(2, 15, "HEIST_IB_ZOOM", uParam0);
+				func_320(2, 15, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0);
 			}
-			func_320(2, 1, "HEIST_IB_LOOK", uParam0);
+			func_320(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, uParam0);
 			if (uParam0->f_812.f_147)
 			{
-				func_320(2, 0, "HEIST_IB_NAV", uParam0);
+				func_320(2, 0, "HEIST_IB_NAV" /* GXT: Navigate */, uParam0);
 			}
 			break;
 		
 		case 8:
 			if (uParam0->f_812.f_141[func_739(uParam0->f_794)] == 0)
 			{
-				func_322(2, 201, "HPSEL_STRAND", uParam0, 1, 363);
+				func_322(2, 201, "HPSEL_STRAND" /* GXT: Setup */, uParam0, 1, 363);
 			}
-			func_322(2, 202, "HEIST_IB_QUIT", uParam0, 1, 363);
+			func_322(2, 202, "HEIST_IB_QUIT" /* GXT: Quit */, uParam0, 1, 363);
 			switch (uParam0->f_725.f_32)
 			{
 				case 0:
-					func_322(2, 204, "HP_HEIST", uParam0, 1, 363);
+					func_322(2, 204, "HP_HEIST" /* GXT: Heists */, uParam0, 1, 363);
 					break;
 				
 				case 1:
-					func_322(2, 204, "HP_MAP", uParam0, 1, 363);
+					func_322(2, 204, "HP_MAP" /* GXT: Map */, uParam0, 1, 363);
 					break;
 				
 				case 2:
-					func_322(2, 204, "HP_SURVEIL", uParam0, 1, 363);
+					func_322(2, 204, "HP_SURVEIL" /* GXT: Surveillance */, uParam0, 1, 363);
 					break;
 			}
 			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 			{
-				func_322(2, 39, "HEIST_IB_ZOOM", uParam0, 1, 363);
+				func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 			}
 			else
 			{
-				func_322(2, 208, "HEIST_IB_ZOOM", uParam0, 1, 363);
+				func_322(2, 208, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 			}
-			func_320(2, 1, "HEIST_IB_LOOK", uParam0);
+			func_320(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, uParam0);
 			if (uParam0->f_812.f_147)
 			{
-				func_320(2, 0, "HEIST_IB_NAV", uParam0);
+				func_320(2, 0, "HEIST_IB_NAV" /* GXT: Navigate */, uParam0);
 			}
 			break;
 		
 		case 1:
 			if (uParam0->f_812.f_141[func_739(uParam0->f_794)] == 0)
 			{
-				func_322(2, 201, "HPSEL_STRAND", uParam0, 1, 363);
+				func_322(2, 201, "HPSEL_STRAND" /* GXT: Setup */, uParam0, 1, 363);
 			}
-			func_322(2, 202, "HEIST_IB_QUIT", uParam0, 1, 363);
-			func_322(2, 204, "HP_OVERVIEW", uParam0, 1, 363);
-			func_322(2, 206, "HP_HEIST", uParam0, 1, 363);
-			func_322(2, 205, "HP_SURVEIL", uParam0, 1, 363);
+			func_322(2, 202, "HEIST_IB_QUIT" /* GXT: Quit */, uParam0, 1, 363);
+			func_322(2, 204, "HP_OVERVIEW" /* GXT: Overview */, uParam0, 1, 363);
+			func_322(2, 206, "HP_HEIST" /* GXT: Heists */, uParam0, 1, 363);
+			func_322(2, 205, "HP_SURVEIL" /* GXT: Surveillance */, uParam0, 1, 363);
 			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 			{
-				func_322(2, 39, "HEIST_IB_ZOOM", uParam0, 1, 363);
+				func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 			}
 			else
 			{
-				func_320(2, 15, "HEIST_IB_ZOOM", uParam0);
+				func_320(2, 15, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0);
 			}
-			func_320(2, 1, "HEIST_IB_LOOK", uParam0);
+			func_320(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, uParam0);
 			if (uParam0->f_812.f_147)
 			{
-				func_320(2, 0, "HEIST_IB_NAV", uParam0);
+				func_320(2, 0, "HEIST_IB_NAV" /* GXT: Navigate */, uParam0);
 			}
 			break;
 		
 		case 2:
 			if (uParam0->f_812.f_141[func_739(uParam0->f_794)] == 0)
 			{
-				func_322(2, 201, "HPSEL_STRAND", uParam0, 1, 363);
+				func_322(2, 201, "HPSEL_STRAND" /* GXT: Setup */, uParam0, 1, 363);
 			}
-			func_322(2, 202, "HEIST_IB_QUIT", uParam0, 1, 363);
-			func_322(2, 204, "HP_OVERVIEW", uParam0, 1, 363);
-			func_322(2, 206, "HP_MAP", uParam0, 1, 363);
-			func_322(2, 205, "HP_HEIST", uParam0, 1, 363);
+			func_322(2, 202, "HEIST_IB_QUIT" /* GXT: Quit */, uParam0, 1, 363);
+			func_322(2, 204, "HP_OVERVIEW" /* GXT: Overview */, uParam0, 1, 363);
+			func_322(2, 206, "HP_MAP" /* GXT: Map */, uParam0, 1, 363);
+			func_322(2, 205, "HP_HEIST" /* GXT: Heists */, uParam0, 1, 363);
 			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
 			{
-				func_322(2, 39, "HEIST_IB_ZOOM", uParam0, 1, 363);
+				func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 			}
 			else
 			{
-				func_320(2, 15, "HEIST_IB_ZOOM", uParam0);
+				func_320(2, 15, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0);
 			}
-			func_320(2, 1, "HEIST_IB_LOOK", uParam0);
+			func_320(2, 1, "HEIST_IB_LOOK" /* GXT: Look Around */, uParam0);
 			if (uParam0->f_812.f_147)
 			{
-				func_320(2, 0, "HEIST_IB_NAV", uParam0);
+				func_320(2, 0, "HEIST_IB_NAV" /* GXT: Navigate */, uParam0);
 			}
 			break;
 	}
@@ -27095,7 +27095,7 @@ void func_751(int iParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam4);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING(sParam5);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bParam6);
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING("HEIST_REPLAY");
+	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING("HEIST_REPLAY" /* GXT: Call Lester to request a Heist replay. Each Heist is available for replay on the phone after completing them as Leader. There is a delay before you can replay the same Heist again. */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -27226,7 +27226,7 @@ void func_755(var uParam0)//Position - 0x1E465
 			case 0:
 				if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 				{
-					func_214("HP_SETUP_TUT1", 10000);
+					func_214("HP_SETUP_TUT1" /* GXT: An upfront setup cost is required to begin each act of The Doomsday Heist. This pays for a portion of the equipment needed and covers Lester's initial surveillance. */, 10000);
 					Global_1888862[PLAYER::NETWORK_PLAYER_ID_TO_INT() /*120*/].f_38.f_30 = 1;
 					uParam0->f_963.f_1 = 1;
 					func_722(uParam0, 0);
@@ -27236,7 +27236,7 @@ void func_755(var uParam0)//Position - 0x1E465
 				break;
 			
 			case 1:
-				if (!func_170("HP_SETUP_TUT1"))
+				if (!func_170("HP_SETUP_TUT1" /* GXT: An upfront setup cost is required to begin each act of The Doomsday Heist. This pays for a portion of the equipment needed and covers Lester's initial surveillance. */))
 				{
 					func_756();
 				}
@@ -27442,7 +27442,7 @@ void func_771()//Position - 0x1E85B
 				{
 					if (!BitTest(Global_2815059.f_1804, 24))
 					{
-						func_214("HP_EXPLAIN", -1);
+						func_214("HP_EXPLAIN" /* GXT: This is the planning room ~HUD_COLOUR_H~~BLIP_MP_HEIST~~s~ Access the screen as a VIP, CEO or MC President to start The Doomsday Heist. */, -1);
 						MISC::SET_BIT(&(Global_2815059.f_1804), 24);
 					}
 				}
@@ -27816,7 +27816,7 @@ struct<16> func_779(int iParam0)//Position - 0x1F2FA
 	{
 		if ((iParam0 == 13 && !func_435(Global_1959720.f_812, 13, 0)) && !func_435(Global_1959720.f_812, 29, 0))
 		{
-			StringCopy(&Var0, "HPSTP_DESC_11b", 64);
+			StringCopy(&Var0, "HPSTP_DESC_11b" /* GXT: Locked: Complete all available Preps and Setups to unlock Setup: Air Defenses. */, 64);
 			return Var0;
 		}
 		StringCopy(&Var0, "HPSTP_DESC_", 64);
@@ -27875,7 +27875,7 @@ struct<16> func_779(int iParam0)//Position - 0x1F2FA
 	{
 		if (iParam0 == 29 && !func_435(Global_1959720.f_812, 29, 0))
 		{
-			StringCopy(&Var0, "HPPREP_DESC_13b", 64);
+			StringCopy(&Var0, "HPPREP_DESC_13b" /* GXT: Locked: Complete all available Preps and Setups to unlock Prep: Onboard Computer. */, 64);
 			return Var0;
 		}
 		StringCopy(&Var0, "HPPREP_DESC_", 64);
@@ -28282,13 +28282,13 @@ char* func_785(int iParam0)//Position - 0x1F956
 	switch (iParam0)
 	{
 		case 0:
-			return "HPDESC_IAA";
+			return "HPDESC_IAA" /* GXT: Help Avon Hertz in tracking down multiple data breaches to protect the government from being attacked. */;
 		
 		case 1:
-			return "HPDESC_SUB";
+			return "HPDESC_SUB" /* GXT: Work with the IAA to eliminate enemy agents operating throughout San Andreas and prevent a war. */;
 		
 		case 2:
-			return "HPDESC_MSIL";
+			return "HPDESC_MSIL" /* GXT: San Andreas's defense systems have been high-jacked. Save agents and stop the build-up of weaponry to save the world from destruction. */;
 		
 		default:
 	}
@@ -28302,23 +28302,23 @@ char* func_786(int iParam0, bool bParam1)//Position - 0x1F990
 		case 0:
 			if (bParam1)
 			{
-				return "HPSTRAND_IAAb";
+				return "HPSTRAND_IAAb" /* GXT: The Data Breaches */;
 			}
-			return "HPSTRAND_IAA";
+			return "HPSTRAND_IAA" /* GXT: THE DATA BREACHES */;
 		
 		case 1:
 			if (bParam1)
 			{
-				return "HPSTRAND_SUBb";
+				return "HPSTRAND_SUBb" /* GXT: The Bogdan Problem */;
 			}
-			return "HPSTRAND_SUB";
+			return "HPSTRAND_SUB" /* GXT: THE BOGDAN PROBLEM */;
 		
 		case 2:
 			if (bParam1)
 			{
-				return "HPSTRAND_MSILb";
+				return "HPSTRAND_MSILb" /* GXT: The Doomsday Scenario */;
 			}
-			return "HPSTRAND_MSIL";
+			return "HPSTRAND_MSIL" /* GXT: THE DOOMSDAY SCENARIO */;
 		
 		default:
 	}
@@ -28386,7 +28386,7 @@ void func_788()//Position - 0x1FA2E
 	switch (iVar4)
 	{
 		case 0:
-			StringCopy(&(Global_1962546.f_812.f_78), HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HPSTRAND_IAA"), 64);
+			StringCopy(&(Global_1962546.f_812.f_78), HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HPSTRAND_IAA" /* GXT: THE DATA BREACHES */), 64);
 			iVar1 = 0;
 			while (iVar1 <= 18)
 			{
@@ -28401,7 +28401,7 @@ void func_788()//Position - 0x1FA2E
 			break;
 		
 		case 1:
-			StringCopy(&(Global_1962546.f_812.f_78), HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HPSTRAND_SUB"), 64);
+			StringCopy(&(Global_1962546.f_812.f_78), HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HPSTRAND_SUB" /* GXT: THE BOGDAN PROBLEM */), 64);
 			Global_1962546.f_812.f_415 = 0;
 			iVar1 = 0;
 			while (iVar1 <= 18)
@@ -28417,7 +28417,7 @@ void func_788()//Position - 0x1FA2E
 			break;
 		
 		case 2:
-			StringCopy(&(Global_1962546.f_812.f_78), HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HPSTRAND_MSIL"), 64);
+			StringCopy(&(Global_1962546.f_812.f_78), HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("HPSTRAND_MSIL" /* GXT: THE DOOMSDAY SCENARIO */), 64);
 			iVar1 = 0;
 			while (iVar1 <= 18)
 			{
@@ -28684,7 +28684,7 @@ void func_792()//Position - 0x20035
 	if (Global_1958748.f_812.f_147)
 	{
 		Global_1958748.f_812.f_145 = 3;
-		StringCopy(&(Global_1958748.f_812), "HPIDLE_REPLAY", 64);
+		StringCopy(&(Global_1958748.f_812), "HPIDLE_REPLAY" /* GXT: REPLAY THE DOOMSDAY HEIST */, 64);
 		iVar0 = 0;
 		while (iVar0 <= (Global_1958748.f_812.f_145 - 1))
 		{
@@ -28700,7 +28700,7 @@ void func_792()//Position - 0x20035
 	else
 	{
 		Global_1958748.f_812.f_145 = 1;
-		StringCopy(&(Global_1958748.f_812), "HPIDLE_PLAY", 64);
+		StringCopy(&(Global_1958748.f_812), "HPIDLE_PLAY" /* GXT: THE DOOMSDAY HEIST SETUP */, 64);
 		Global_1958748.f_812.f_137[iVar0] = func_793(Global_1958748.f_812.f_146);
 		Global_1958748.f_812.f_141[iVar0] = func_798(Global_1958748.f_812.f_146, func_275(Global_1958748.f_812.f_137[iVar0]));
 		StringCopy(&(Global_1958748.f_812.f_16[iVar0 /*16*/]), func_786(Global_1958748.f_812.f_137[iVar0], 0), 64);

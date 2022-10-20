@@ -1080,7 +1080,7 @@ void func_21(int iParam0, bool bParam1)//Position - 0x10A4
 	sVar0 = "NULL";
 	iVar1 = 0;
 	sVar0 = func_22(iParam0, &iVar1);
-	if (!MISC::ARE_STRINGS_EQUAL("NONE", sVar0) && iVar1 != 0)
+	if (!MISC::ARE_STRINGS_EQUAL("NONE" /* GXT: None */, sVar0) && iVar1 != 0)
 	{
 		if (bParam1)
 		{
@@ -1141,7 +1141,7 @@ void func_24(int iParam0, bool bParam1)//Position - 0x1185
 	sVar0 = "NULL";
 	iVar1 = 0;
 	sVar0 = func_22(iParam0, &iVar1);
-	if (!MISC::ARE_STRINGS_EQUAL("NONE", sVar0) && iVar1 != 0)
+	if (!MISC::ARE_STRINGS_EQUAL("NONE" /* GXT: None */, sVar0) && iVar1 != 0)
 	{
 		if (bParam1 && !INTERIOR::IS_INTERIOR_CAPPED(iVar1))
 		{

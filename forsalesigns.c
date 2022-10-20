@@ -503,9 +503,9 @@ void func_9()//Position - 0x443
 			
 			case 1:
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_41, "SHOW_SHARD_MIDSIZED_MESSAGE");
-				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FS_TITLE");
+				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FS_TITLE" /* GXT: Sign Destroyed~s~ */);
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
-				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FS_DESTROY");
+				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FS_DESTROY" /* GXT: ~1~/15 signs destroyed. */);
 				HUD::ADD_TEXT_COMPONENT_INTEGER(func_5(2));
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -1536,8 +1536,8 @@ void func_57()//Position - 0x16A5
 	{
 		func_65(88, 0, 0);
 		func_64(11);
-		func_63("JOSH1_TXT", 0);
-		func_61("JOSH1_TXT");
+		func_63("JOSH1_TXT" /* GXT: BTW buddy, Avery has a website with all his real estate listings around the city, you might find it useful - ~b~<u>www.lennyavery-realty.com</u>~w~ */, 0);
+		func_61("JOSH1_TXT" /* GXT: BTW buddy, Avery has a website with all his real estate listings around the city, you might find it useful - ~b~<u>www.lennyavery-realty.com</u>~w~ */);
 		if (func_55(105) == 0)
 		{
 			func_58(joaat("TEXT_FORSALESIGNS_DONE"), 1, 4, 58, 30000, 10000, -1, 176, -1, 0, 1);

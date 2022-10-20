@@ -89,7 +89,7 @@ void __EntryFunction__()//Position - 0x0
 	}
 	func_52(14);
 	func_50();
-	func_49(&Local_42, 0, joaat("prop_power_cell"), "SSHIP_COLLECT");
+	func_49(&Local_42, 0, joaat("prop_power_cell"), "SSHIP_COLLECT" /* GXT: ~1~/50 spaceship parts collected. */);
 	func_47(&Local_42, joaat("NUM_HIDDEN_PACKAGES_1"), 755, 50);
 	while (true)
 	{
@@ -105,7 +105,7 @@ void __EntryFunction__()//Position - 0x0
 			{
 				if (!func_4() == 1)
 				{
-					func_1("SSHIP_SWITCH", 1, 0, 20000, 10000, 3, 0, 0, 0);
+					func_1("SSHIP_SWITCH" /* GXT: Switch to Franklin to deliver the spaceship parts to Omega. */, 1, 0, 20000, 10000, 3, 0, 0, 0);
 				}
 				func_53();
 			}
@@ -506,7 +506,7 @@ int func_16(var uParam0, int iParam1)//Position - 0x86E
 		}
 		if (!Global_78579)
 		{
-			func_17(&(uParam0->f_11), &(uParam0->f_12), &(uParam0->f_9), 0, &iLocal_50, &iLocal_52, "SSHIP_TITLE", "SSHIP_COLLECT");
+			func_17(&(uParam0->f_11), &(uParam0->f_12), &(uParam0->f_9), 0, &iLocal_50, &iLocal_52, "SSHIP_TITLE" /* GXT: Part Collected~s~ */, "SSHIP_COLLECT" /* GXT: ~1~/50 spaceship parts collected. */);
 		}
 		if (!bLocal_51)
 		{

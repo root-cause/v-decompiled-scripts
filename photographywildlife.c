@@ -445,15 +445,15 @@ void func_7(int iParam0)//Position - 0x2D7
 		switch (iVar1)
 		{
 			case 249:
-				sVar5 = "PW_FEED_EM_1";
+				sVar5 = "PW_FEED_EM_1" /* GXT: You've been nominated to take part in Southern San Andreas' premier amateur photography competition in the wildlife sector. You'll join hundreds of other young, talented... */;
 				break;
 			
 			case 269:
-				sVar5 = "PW_FEED_EM_3";
+				sVar5 = "PW_FEED_EM_3" /* GXT: Hello Franklin,~n~The Southern San Andreas Tourist Board Young Amateur Wildlife Photographer of the Year Competition is over.~n~Some of our photographers fell off cli... */;
 				break;
 			
 			default:
-				sVar5 = "PW_FEED_EM_2";
+				sVar5 = "PW_FEED_EM_2" /* GXT: Dear contestant,~n~Thank you for your recent photographic submission. Our image licensing department is already maximizing its profit-making potential. And you're a step clos... */;
 				break;
 		}
 		func_8(1, Global_44257[iVar1 /*12*/].f_2, iVar1, sVar5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -495,15 +495,15 @@ void func_8(int iParam0, int iParam1, int iParam2, char* sParam3, char* sParam4,
 		switch (iParam2)
 		{
 			case 72:
-				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL1");
+				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL1" /* GXT: Dear Mr. De Santa, please find below your weekly income from owned properties:~n~ */);
 				break;
 			
 			case 73:
-				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL3");
+				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL3" /* GXT: Dear Mr. Clinton, please find below your weekly income from owned properties:~n~ */);
 				break;
 			
 			case 74:
-				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL2");
+				HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("PROPR_INCEMAIL2" /* GXT: Dear Mr. Philips, please find below your weekly income from owned properties:~n~ */);
 				break;
 			
 			default:
@@ -612,202 +612,202 @@ char* func_10(int iParam0)//Position - 0x84F
 	switch (iParam0)
 	{
 		case 0:
-			return "EMSTR_0";
+			return "EMSTR_0" /* GXT: Mike */;
 		
 		case 3:
-			return "EMSTR_3";
+			return "EMSTR_3" /* GXT: Jimmy */;
 		
 		case 1:
-			return "EMSTR_6";
+			return "EMSTR_6" /* GXT: Franklin */;
 		
 		case 2:
-			return "EMSTR_9";
+			return "EMSTR_9" /* GXT: Trevor */;
 		
 		case 4:
-			return "EMSTR_12";
+			return "EMSTR_12" /* GXT: Marnie */;
 		
 		case 5:
-			return "EMSTR_29";
+			return "EMSTR_29" /* GXT: Epsilon Store */;
 		
 		case 6:
-			return "EMSTR_36";
+			return "EMSTR_36" /* GXT: Maude */;
 		
 		case 7:
-			return "EMSTR_39";
+			return "EMSTR_39" /* GXT: Lester */;
 		
 		case 8:
-			return "EMSTR_52";
+			return "EMSTR_52" /* GXT: Maze Bank */;
 		
 		case 9:
-			return "EMSTR_55";
+			return "EMSTR_55" /* GXT: Fleeca */;
 		
 		case 10:
-			return "EMSTR_58";
+			return "EMSTR_58" /* GXT: Bank of Liberty */;
 		
 		case 11:
-			return "EMSTR_78";
+			return "EMSTR_78" /* GXT: Legendary Motorsport Sales */;
 		
 		case 12:
-			return "EMSTR_81";
+			return "EMSTR_81" /* GXT: Elitas Sales */;
 		
 		case 13:
-			return "EMSTR_84";
+			return "EMSTR_84" /* GXT: Cache & Carry */;
 		
 		case 14:
-			return "EMSTR_87";
+			return "EMSTR_87" /* GXT: Dock Tease */;
 		
 		case 15:
-			return "EMSTR_106";
+			return "EMSTR_106" /* GXT: LSC */;
 		
 		case 16:
-			return "EMSTR_114";
+			return "EMSTR_114" /* GXT: AMMU-NATION */;
 		
 		case 17:
-			return "EMSTR_142";
+			return "EMSTR_142" /* GXT: Christian Feltz */;
 		
 		case 18:
-			return "EMSTR_145";
+			return "EMSTR_145" /* GXT: Paige Harris */;
 		
 		case 19:
-			return "EMSTR_152";
+			return "EMSTR_152" /* GXT: Los Santos Tourist Info */;
 		
 		case 20:
-			return "EMSTR_157";
+			return "EMSTR_157" /* GXT: Rickie Luckens */;
 		
 		case 21:
-			return "EMSTR_163";
+			return "EMSTR_163" /* GXT: Minotaur Property Management */;
 		
 		case 22:
-			return "EMSTR_182";
+			return "EMSTR_182" /* GXT: Saeeda Kadam */;
 		
 		case 23:
-			return "EMSTR_187";
+			return "EMSTR_187" /* GXT: Vanilla Unicorn */;
 		
 		case 24:
-			return "EMSTR_190";
+			return "EMSTR_190" /* GXT: Dr Isiah Friedlander */;
 		
 		case 25:
-			return "EMSTR_206";
+			return "EMSTR_206" /* GXT: TRACEYHEARTSTEALER */;
 		
 		case 26:
-			return "EMSTR_219";
+			return "EMSTR_219" /* GXT: Dave Norton */;
 		
 		case 27:
-			return "EMSTR_226";
+			return "EMSTR_226" /* GXT: Amanda De Santa */;
 		
 		case 28:
-			return "EMSTR_233";
+			return "EMSTR_233" /* GXT: Donald Percival */;
 		
 		case 29:
-			return "EMSTR_242";
+			return "EMSTR_242" /* GXT: Ron */;
 		
 		case 30:
-			return "EMSTR_249";
+			return "EMSTR_249" /* GXT: Tanisha Marks */;
 		
 		case 31:
-			return "EMSTR_262";
+			return "EMSTR_262" /* GXT: Denise */;
 		
 		case 32:
-			return "EMSTR_269";
+			return "EMSTR_269" /* GXT: Lamar Davis */;
 		
 		case 33:
-			return "EMSTR_319";
+			return "EMSTR_319" /* GXT: Brad */;
 		
 		case 34:
-			return "EMSTR_340";
+			return "EMSTR_340" /* GXT: Patricia Madrazo */;
 		
 		case 35:
-			return "EMSTR_348";
+			return "EMSTR_348" /* GXT: Eileen Haworth */;
 		
 		case 36:
-			return "EMSTR_182";
+			return "EMSTR_182" /* GXT: Saeeda Kadam */;
 		
 		case 37:
-			return "EMSTR_357";
+			return "EMSTR_357" /* GXT: Gray Nicholson */;
 		
 		case 38:
-			return "EMSTR_360";
+			return "EMSTR_360" /* GXT: Nigel */;
 		
 		case 39:
-			return "EMSTR_369";
+			return "EMSTR_369" /* GXT: Hookies */;
 		
 		case 40:
-			return "EMSTR_376";
+			return "EMSTR_376" /* GXT: Towing Impound */;
 		
 		case 41:
-			return "EMSTR_379";
+			return "EMSTR_379" /* GXT: Downtown Cab Co, */;
 		
 		case 42:
-			return "EMSTR_382";
+			return "EMSTR_382" /* GXT: McKenzie Field Hangar */;
 		
 		case 43:
-			return "EMSTR_384";
+			return "EMSTR_384" /* GXT: Sonar Collections Dock */;
 		
 		case 44:
-			return "EMSTR_387";
+			return "EMSTR_387" /* GXT: Los Santos Customs */;
 		
 		case 45:
-			return "EMSTR_390";
+			return "EMSTR_390" /* GXT: Cinema Doppler */;
 		
 		case 46:
-			return "EMSTR_393";
+			return "EMSTR_393" /* GXT: Ten Cent Theater */;
 		
 		case 47:
-			return "EMSTR_396";
+			return "EMSTR_396" /* GXT: Tivoli Cinema */;
 		
 		case 48:
-			return "EMSTR_399";
+			return "EMSTR_399" /* GXT: Los Santos Golf Club */;
 		
 		case 49:
-			return "EMSTR_402";
+			return "EMSTR_402" /* GXT: Car Scrap Yard */;
 		
 		case 50:
-			return "EMSTR_405";
+			return "EMSTR_405" /* GXT: Smoke on the Water */;
 		
 		case 51:
-			return "EMSTR_408";
+			return "EMSTR_408" /* GXT: Tequi-la-la */;
 		
 		case 52:
-			return "EMSTR_411";
+			return "EMSTR_411" /* GXT: Pitchers */;
 		
 		case 53:
-			return "EMSTR_414";
+			return "EMSTR_414" /* GXT: The Hen House */;
 		
 		case 54:
-			return "EMSTR_465";
+			return "EMSTR_465" /* GXT: Pedal & Metal Sales */;
 		
 		case 55:
-			return "EMSTR_468";
+			return "EMSTR_468" /* GXT: SSA Super Autos Sales */;
 		
 		case 56:
-			return "EMSTR_489";
+			return "EMSTR_489" /* GXT: Hush Smush */;
 		
 		case 57:
-			return "EMSTR_492";
+			return "EMSTR_492" /* GXT: foxymama21 */;
 		
 		case 58:
-			return "EMSTR_495";
+			return "EMSTR_495" /* GXT: Altarego12 */;
 		
 		case 59:
-			return "EMSTR_498";
+			return "EMSTR_498" /* GXT: BadKitty11 */;
 		
 		case 60:
-			return "EMSTR_501";
+			return "EMSTR_501" /* GXT: 7yearbitch */;
 		
 		case 61:
-			return "EMSTR_504";
+			return "EMSTR_504" /* GXT: Froggy69 */;
 		
 		case 62:
-			return "EMSTR_507";
+			return "EMSTR_507" /* GXT: Misscuddles */;
 		
 		case 63:
-			return "EMSTR_640";
+			return "EMSTR_640" /* GXT: Offroad Events */;
 		
 		case 64:
-			return "EMSTR_643";
+			return "EMSTR_643" /* GXT: Dock Tease */;
 		
 		case 65:
-			return "EMSTR_652";
+			return "EMSTR_652" /* GXT: Brother Adrian */;
 		
 		default:
 	}
@@ -892,7 +892,7 @@ char* func_11(int iParam0, int iParam1)//Position - 0xBB4
 			return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_1998[40 /*29*/].f_7));
 		
 		case 36:
-			return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_E_381");
+			return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_E_381" /* GXT: CHAR_SAEEDA */);
 		
 		case 38:
 			return HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_1998[64 /*29*/].f_7));
@@ -1273,7 +1273,7 @@ void func_15(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4)
 				case 1:
 					if (iVar2 == 249)
 					{
-						func_8(1, iVar1, iVar2, "PW_FEED_EM_1", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+						func_8(1, iVar1, iVar2, "PW_FEED_EM_1" /* GXT: You've been nominated to take part in Southern San Andreas' premier amateur photography competition in the wildlife sector. You'll join hundreds of other young, talented... */, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 					}
 					else
 					{
@@ -1480,10 +1480,10 @@ void func_21()//Position - 0x18A6
 						SYSTEM::WAIT(0);
 					}
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_211, "SHOW_BRIDGES_KNIVES_PROGRESS");
-					func_28("PW_TITLE");
+					func_28("PW_TITLE" /* GXT: Wildlife Photography~s~ */);
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(20);
-					func_28("PW_PASS");
-					func_28("PW_CHALLENGE");
+					func_28("PW_PASS" /* GXT: Success! */);
+					func_28("PW_CHALLENGE" /* GXT: Wildlife photographs taken */);
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(func_26());
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					iLocal_222 = func_26();
@@ -1896,194 +1896,194 @@ char* func_44(int iParam0)//Position - 0x200A
 		case 0:
 			if (!BitTest(Global_113386.f_10049.f_99, 4) && !BitTest(Global_113386.f_10049.f_99, 29))
 			{
-				return "PW_STRING_1_1";
+				return "PW_STRING_1_1" /* GXT: <img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> BOAR~nrt~~n~<img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> BORDER COLLIE~nrt~ */;
 			}
 			else if (BitTest(Global_113386.f_10049.f_99, 4) && !BitTest(Global_113386.f_10049.f_99, 29))
 			{
-				return "PW_STRING_1_2";
+				return "PW_STRING_1_2" /* GXT: <img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> BOAR~nrt~~n~<img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> BORDER COLLIE~nrt~ */;
 			}
 			else if (!BitTest(Global_113386.f_10049.f_99, 4) && BitTest(Global_113386.f_10049.f_99, 29))
 			{
-				return "PW_STRING_1_3";
+				return "PW_STRING_1_3" /* GXT: <img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> BOAR~nrt~~n~<img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> BORDER COLLIE~nrt~ */;
 			}
 			else if (BitTest(Global_113386.f_10049.f_99, 4) && BitTest(Global_113386.f_10049.f_99, 29))
 			{
-				return "PW_STRING_1_4";
+				return "PW_STRING_1_4" /* GXT: <img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> BOAR~nrt~~n~<img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> BORDER COLLIE~nrt~ */;
 			}
 			break;
 		
 		case 1:
 			if (!BitTest(Global_113386.f_10049.f_99, 5) && !BitTest(Global_113386.f_10049.f_99, 6))
 			{
-				return "PW_STRING_2_1";
+				return "PW_STRING_2_1" /* GXT: <img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> CAT~nrt~~n~<img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> CHICKEN-HAWK~nrt~ */;
 			}
 			else if (BitTest(Global_113386.f_10049.f_99, 5) && !BitTest(Global_113386.f_10049.f_99, 6))
 			{
-				return "PW_STRING_2_2";
+				return "PW_STRING_2_2" /* GXT: <img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> CAT~nrt~~n~<img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> CHICKEN-HAWK~nrt~ */;
 			}
 			else if (!BitTest(Global_113386.f_10049.f_99, 5) && BitTest(Global_113386.f_10049.f_99, 6))
 			{
-				return "PW_STRING_2_3";
+				return "PW_STRING_2_3" /* GXT: <img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> CAT~nrt~~n~<img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> CHICKEN-HAWK~nrt~ */;
 			}
 			else if (BitTest(Global_113386.f_10049.f_99, 5) && BitTest(Global_113386.f_10049.f_99, 6))
 			{
-				return "PW_STRING_2_4";
+				return "PW_STRING_2_4" /* GXT: <img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> CAT~nrt~~n~<img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> CHICKEN-HAWK~nrt~ */;
 			}
 			break;
 		
 		case 2:
 			if (!BitTest(Global_113386.f_10049.f_99, 7) && !BitTest(Global_113386.f_10049.f_99, 8))
 			{
-				return "PW_STRING_3_1";
+				return "PW_STRING_3_1" /* GXT: <img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> CORMORANT~nrt~~n~<img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> COW~nrt~ */;
 			}
 			else if (BitTest(Global_113386.f_10049.f_99, 7) && !BitTest(Global_113386.f_10049.f_99, 8))
 			{
-				return "PW_STRING_3_2";
+				return "PW_STRING_3_2" /* GXT: <img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> CORMORANT~nrt~~n~<img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> COW~nrt~ */;
 			}
 			else if (!BitTest(Global_113386.f_10049.f_99, 7) && BitTest(Global_113386.f_10049.f_99, 8))
 			{
-				return "PW_STRING_3_3";
+				return "PW_STRING_3_3" /* GXT: <img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> CORMORANT~nrt~~n~<img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> COW~nrt~ */;
 			}
 			else if (BitTest(Global_113386.f_10049.f_99, 7) && BitTest(Global_113386.f_10049.f_99, 8))
 			{
-				return "PW_STRING_3_4";
+				return "PW_STRING_3_4" /* GXT: <img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> CORMORANT~nrt~~n~<img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> COW~nrt~ */;
 			}
 			break;
 		
 		case 3:
 			if (!BitTest(Global_113386.f_10049.f_99, 9) && !BitTest(Global_113386.f_10049.f_99, 10))
 			{
-				return "PW_STRING_4_1";
+				return "PW_STRING_4_1" /* GXT: <img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> COYOTE~nrt~~n~<img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> CROW~nrt~ */;
 			}
 			else if (BitTest(Global_113386.f_10049.f_99, 9) && !BitTest(Global_113386.f_10049.f_99, 10))
 			{
-				return "PW_STRING_4_2";
+				return "PW_STRING_4_2" /* GXT: <img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> COYOTE~nrt~~n~<img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> CROW~nrt~ */;
 			}
 			else if (!BitTest(Global_113386.f_10049.f_99, 9) && BitTest(Global_113386.f_10049.f_99, 10))
 			{
-				return "PW_STRING_4_3";
+				return "PW_STRING_4_3" /* GXT: <img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> COYOTE~nrt~~n~<img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> CROW~nrt~ */;
 			}
 			else if (BitTest(Global_113386.f_10049.f_99, 9) && BitTest(Global_113386.f_10049.f_99, 10))
 			{
-				return "PW_STRING_4_4";
+				return "PW_STRING_4_4" /* GXT: <img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> COYOTE~nrt~~n~<img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> CROW~nrt~ */;
 			}
 			break;
 		
 		case 4:
 			if (!BitTest(Global_113386.f_10049.f_99, 11) && !BitTest(Global_113386.f_10049.f_99, 14))
 			{
-				return "PW_STRING_5_1";
+				return "PW_STRING_5_1" /* GXT: <img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> DEER~nrt~~n~<img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> HEN~nrt~ */;
 			}
 			else if (BitTest(Global_113386.f_10049.f_99, 11) && !BitTest(Global_113386.f_10049.f_99, 14))
 			{
-				return "PW_STRING_5_2";
+				return "PW_STRING_5_2" /* GXT: <img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> DEER~nrt~~n~<img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> HEN~nrt~ */;
 			}
 			else if (!BitTest(Global_113386.f_10049.f_99, 11) && BitTest(Global_113386.f_10049.f_99, 14))
 			{
-				return "PW_STRING_5_3";
+				return "PW_STRING_5_3" /* GXT: <img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> DEER~nrt~~n~<img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> HEN~nrt~ */;
 			}
 			else if (BitTest(Global_113386.f_10049.f_99, 11) && BitTest(Global_113386.f_10049.f_99, 14))
 			{
-				return "PW_STRING_5_4";
+				return "PW_STRING_5_4" /* GXT: <img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> DEER~nrt~~n~<img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> HEN~nrt~ */;
 			}
 			break;
 		
 		case 5:
 			if (!BitTest(Global_113386.f_10049.f_99, 16) && !BitTest(Global_113386.f_10049.f_99, 18))
 			{
-				return "PW_STRING_6_1";
+				return "PW_STRING_6_1" /* GXT: <img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> HUSKY~nrt~~n~<img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> MOUNTAIN LION~nrt~ */;
 			}
 			else if (BitTest(Global_113386.f_10049.f_99, 16) && !BitTest(Global_113386.f_10049.f_99, 18))
 			{
-				return "PW_STRING_6_2";
+				return "PW_STRING_6_2" /* GXT: <img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> HUSKY~nrt~~n~<img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> MOUNTAIN LION~nrt~ */;
 			}
 			else if (!BitTest(Global_113386.f_10049.f_99, 16) && BitTest(Global_113386.f_10049.f_99, 18))
 			{
-				return "PW_STRING_6_3";
+				return "PW_STRING_6_3" /* GXT: <img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> HUSKY~nrt~~n~<img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> MOUNTAIN LION~nrt~ */;
 			}
 			else if (BitTest(Global_113386.f_10049.f_99, 16) && BitTest(Global_113386.f_10049.f_99, 18))
 			{
-				return "PW_STRING_6_4";
+				return "PW_STRING_6_4" /* GXT: <img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> HUSKY~nrt~~n~<img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> MOUNTAIN LION~nrt~ */;
 			}
 			break;
 		
 		case 6:
 			if (!BitTest(Global_113386.f_10049.f_99, 19) && !BitTest(Global_113386.f_10049.f_99, 21))
 			{
-				return "PW_STRING_7_1";
+				return "PW_STRING_7_1" /* GXT: <img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> PIG~nrt~~n~<img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> POODLE~nrt~ */;
 			}
 			else if (BitTest(Global_113386.f_10049.f_99, 19) && !BitTest(Global_113386.f_10049.f_99, 21))
 			{
-				return "PW_STRING_7_2";
+				return "PW_STRING_7_2" /* GXT: <img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> PIG~nrt~~n~<img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> POODLE~nrt~ */;
 			}
 			else if (!BitTest(Global_113386.f_10049.f_99, 19) && BitTest(Global_113386.f_10049.f_99, 21))
 			{
-				return "PW_STRING_7_3";
+				return "PW_STRING_7_3" /* GXT: <img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> PIG~nrt~~n~<img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> POODLE~nrt~ */;
 			}
 			else if (BitTest(Global_113386.f_10049.f_99, 19) && BitTest(Global_113386.f_10049.f_99, 21))
 			{
-				return "PW_STRING_7_4";
+				return "PW_STRING_7_4" /* GXT: <img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> PIG~nrt~~n~<img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> POODLE~nrt~ */;
 			}
 			break;
 		
 		case 7:
 			if (!BitTest(Global_113386.f_10049.f_99, 22) && !BitTest(Global_113386.f_10049.f_99, 23))
 			{
-				return "PW_STRING_8_1";
+				return "PW_STRING_8_1" /* GXT: <img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> PUG~nrt~~n~<img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> RABBIT~nrt~ */;
 			}
 			else if (BitTest(Global_113386.f_10049.f_99, 22) && !BitTest(Global_113386.f_10049.f_99, 23))
 			{
-				return "PW_STRING_8_2";
+				return "PW_STRING_8_2" /* GXT: <img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> PUG~nrt~~n~<img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> RABBIT~nrt~ */;
 			}
 			else if (!BitTest(Global_113386.f_10049.f_99, 22) && BitTest(Global_113386.f_10049.f_99, 23))
 			{
-				return "PW_STRING_8_3";
+				return "PW_STRING_8_3" /* GXT: <img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> PUG~nrt~~n~<img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> RABBIT~nrt~ */;
 			}
 			else if (BitTest(Global_113386.f_10049.f_99, 22) && BitTest(Global_113386.f_10049.f_99, 23))
 			{
-				return "PW_STRING_8_4";
+				return "PW_STRING_8_4" /* GXT: <img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> PUG~nrt~~n~<img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> RABBIT~nrt~ */;
 			}
 			break;
 		
 		case 8:
 			if (!BitTest(Global_113386.f_10049.f_99, 24) && !BitTest(Global_113386.f_10049.f_99, 25))
 			{
-				return "PW_STRING_9_1";
+				return "PW_STRING_9_1" /* GXT: <img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> RETRIEVER~nrt~~n~<img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> ROTTWEILER~nrt~ */;
 			}
 			else if (BitTest(Global_113386.f_10049.f_99, 24) && !BitTest(Global_113386.f_10049.f_99, 25))
 			{
-				return "PW_STRING_9_2";
+				return "PW_STRING_9_2" /* GXT: <img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> RETRIEVER~nrt~~n~<img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> ROTTWEILER~nrt~ */;
 			}
 			else if (!BitTest(Global_113386.f_10049.f_99, 24) && BitTest(Global_113386.f_10049.f_99, 25))
 			{
-				return "PW_STRING_9_3";
+				return "PW_STRING_9_3" /* GXT: <img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> RETRIEVER~nrt~~n~<img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> ROTTWEILER~nrt~ */;
 			}
 			else if (BitTest(Global_113386.f_10049.f_99, 24) && BitTest(Global_113386.f_10049.f_99, 25))
 			{
-				return "PW_STRING_9_4";
+				return "PW_STRING_9_4" /* GXT: <img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> RETRIEVER~nrt~~n~<img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> ROTTWEILER~nrt~ */;
 			}
 			break;
 		
 		case 9:
 			if (!BitTest(Global_113386.f_10049.f_99, 26) && !BitTest(Global_113386.f_10049.f_99, 31))
 			{
-				return "PW_STRING_10_1";
+				return "PW_STRING_10_1" /* GXT: <img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> SEAGULL~nrt~~n~<img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> WEST HIGHLAND TERRIER~nrt~ */;
 			}
 			else if (BitTest(Global_113386.f_10049.f_99, 26) && !BitTest(Global_113386.f_10049.f_99, 31))
 			{
-				return "PW_STRING_10_2";
+				return "PW_STRING_10_2" /* GXT: <img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> SEAGULL~nrt~~n~<img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> WEST HIGHLAND TERRIER~nrt~ */;
 			}
 			else if (!BitTest(Global_113386.f_10049.f_99, 26) && BitTest(Global_113386.f_10049.f_99, 31))
 			{
-				return "PW_STRING_10_3";
+				return "PW_STRING_10_3" /* GXT: <img src='img://CELLPHONE_BADGER/u' height="32" width="32" vspace='-10'/> SEAGULL~nrt~~n~<img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> WEST HIGHLAND TERRIER~nrt~ */;
 			}
 			else if (BitTest(Global_113386.f_10049.f_99, 26) && BitTest(Global_113386.f_10049.f_99, 31))
 			{
-				return "PW_STRING_10_4";
+				return "PW_STRING_10_4" /* GXT: <img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> SEAGULL~nrt~~n~<img src='img://CELLPHONE_BADGER/t' height="32" width="32" vspace='-10'/> WEST HIGHLAND TERRIER~nrt~ */;
 			}
 			break;
 	}
-	return "PW_STRING_NONE";
+	return "PW_STRING_NONE" /* GXT: ~nrt~ */;
 }
 
 int func_45()//Position - 0x2701
@@ -2148,15 +2148,15 @@ void func_46()//Position - 0x2710
 			switch (iLocal_80)
 			{
 				case 0:
-					func_62("PW_HELP_1", -1);
+					func_62("PW_HELP_1" /* GXT: Use ~INPUT_CELLPHONE_EXTRA_OPTION~ to email the photograph to the LS Tourist Board. */, -1);
 					if (func_61())
 					{
 						if (func_34(0))
 						{
 							func_60(99);
-							if (func_59("PW_HELP_1"))
+							if (func_59("PW_HELP_1" /* GXT: Use ~INPUT_CELLPHONE_EXTRA_OPTION~ to email the photograph to the LS Tourist Board. */))
 							{
-								HUD::CLEAR_THIS_PRINT("PW_HELP_1");
+								HUD::CLEAR_THIS_PRINT("PW_HELP_1" /* GXT: Use ~INPUT_CELLPHONE_EXTRA_OPTION~ to email the photograph to the LS Tourist Board. */);
 							}
 							iLocal_80 = 1;
 						}
@@ -2165,24 +2165,24 @@ void func_46()//Position - 0x2710
 					{
 						func_63(0);
 						func_57(99);
-						if (func_59("PW_HELP_1"))
+						if (func_59("PW_HELP_1" /* GXT: Use ~INPUT_CELLPHONE_EXTRA_OPTION~ to email the photograph to the LS Tourist Board. */))
 						{
-							HUD::CLEAR_THIS_PRINT("PW_HELP_1");
+							HUD::CLEAR_THIS_PRINT("PW_HELP_1" /* GXT: Use ~INPUT_CELLPHONE_EXTRA_OPTION~ to email the photograph to the LS Tourist Board. */);
 						}
 						iLocal_79 = 7;
 					}
 					break;
 				
 				case 1:
-					func_62("PW_HELP_2", -1);
+					func_62("PW_HELP_2" /* GXT: Use ~INPUT_CELLPHONE_SELECT~ to send the email to the LS Tourist Board. */, -1);
 					if (func_55(99))
 					{
 						iLocal_80 = 0;
 						func_63(0);
 						func_57(99);
-						if (func_59("PW_HELP_2"))
+						if (func_59("PW_HELP_2" /* GXT: Use ~INPUT_CELLPHONE_SELECT~ to send the email to the LS Tourist Board. */))
 						{
-							HUD::CLEAR_THIS_PRINT("PW_HELP_2");
+							HUD::CLEAR_THIS_PRINT("PW_HELP_2" /* GXT: Use ~INPUT_CELLPHONE_SELECT~ to send the email to the LS Tourist Board. */);
 						}
 						iLocal_79 = 6;
 					}
@@ -2191,9 +2191,9 @@ void func_46()//Position - 0x2710
 						iLocal_80 = 0;
 						func_63(0);
 						func_57(99);
-						if (func_59("PW_HELP_2"))
+						if (func_59("PW_HELP_2" /* GXT: Use ~INPUT_CELLPHONE_SELECT~ to send the email to the LS Tourist Board. */))
 						{
-							HUD::CLEAR_THIS_PRINT("PW_HELP_2");
+							HUD::CLEAR_THIS_PRINT("PW_HELP_2" /* GXT: Use ~INPUT_CELLPHONE_SELECT~ to send the email to the LS Tourist Board. */);
 						}
 						iLocal_79 = 7;
 					}
@@ -2237,13 +2237,13 @@ void func_47()//Position - 0x2952
 	Local_220 = { Local_218 };
 	func_63(0);
 	func_57(99);
-	if (func_59("PW_HELP_1"))
+	if (func_59("PW_HELP_1" /* GXT: Use ~INPUT_CELLPHONE_EXTRA_OPTION~ to email the photograph to the LS Tourist Board. */))
 	{
-		HUD::CLEAR_THIS_PRINT("PW_HELP_1");
+		HUD::CLEAR_THIS_PRINT("PW_HELP_1" /* GXT: Use ~INPUT_CELLPHONE_EXTRA_OPTION~ to email the photograph to the LS Tourist Board. */);
 	}
-	if (func_59("PW_HELP_2"))
+	if (func_59("PW_HELP_2" /* GXT: Use ~INPUT_CELLPHONE_SELECT~ to send the email to the LS Tourist Board. */))
 	{
-		HUD::CLEAR_THIS_PRINT("PW_HELP_2");
+		HUD::CLEAR_THIS_PRINT("PW_HELP_2" /* GXT: Use ~INPUT_CELLPHONE_SELECT~ to send the email to the LS Tourist Board. */);
 	}
 }
 

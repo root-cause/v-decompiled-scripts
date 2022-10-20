@@ -1477,11 +1477,11 @@ void func_40(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iPar
 	{
 		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
-			iVar0 = "CMN_HINT";
+			iVar0 = "CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */;
 		}
 		else
 		{
-			iVar0 = "FM_IHELP_HNT";
+			iVar0 = "FM_IHELP_HNT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus. */;
 		}
 	}
 	if (func_67(iVar0))
@@ -1538,7 +1538,7 @@ void func_40(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iPar
 							{
 								func_44(iVar0, -1);
 								uParam0->f_3 = iVar0;
-								if (MISC::ARE_STRINGS_EQUAL("CMN_HINT", iVar0))
+								if (MISC::ARE_STRINGS_EQUAL("CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */, iVar0))
 								{
 									func_43(1);
 								}
@@ -1557,7 +1557,7 @@ void func_40(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iPar
 						{
 							func_44(iVar0, -1);
 							uParam0->f_3 = iVar0;
-							if (MISC::ARE_STRINGS_EQUAL("CMN_HINT", iVar0))
+							if (MISC::ARE_STRINGS_EQUAL("CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */, iVar0))
 							{
 								func_43(1);
 							}
@@ -1716,7 +1716,7 @@ int func_45(char* sParam0)//Position - 0x1475
 {
 	if (!func_46(1, 1, 0))
 	{
-		if ((!MISC::IS_STRING_NULL_OR_EMPTY(sParam0) && func_67(sParam0)) || func_67("CMN_HINT"))
+		if ((!MISC::IS_STRING_NULL_OR_EMPTY(sParam0) && func_67(sParam0)) || func_67("CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */))
 		{
 			HUD::CLEAR_HELP(true);
 		}
@@ -2475,11 +2475,11 @@ void func_68(var uParam0, int iParam1, bool bParam2)//Position - 0x2064
 	{
 		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
-			sVar0 = "CMN_HINT";
+			sVar0 = "CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */;
 		}
 		else
 		{
-			sVar0 = "FM_IHELP_HNT";
+			sVar0 = "FM_IHELP_HNT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus. */;
 		}
 	}
 	if (!MISC::IS_STRING_NULL(uParam0->f_3))
@@ -3403,7 +3403,7 @@ void func_90()//Position - 0x324F
 			iLocal_461[1] = -1;
 			iLocal_461[2] = -1;
 			iLocal_461[3] = -1;
-			StringCopy(&Local_464, "CMN_HINT", 16);
+			StringCopy(&Local_464, "CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */, 16);
 			StringCopy(&Local_467, "PST_CHSCRaR", 16);
 			StringCopy(&Local_473, "PST_CHSCRaG", 16);
 			StringCopy(&Local_474, "PST_CHSCRaK", 16);
@@ -3430,7 +3430,7 @@ void func_90()//Position - 0x324F
 			iLocal_461[1] = -1;
 			iLocal_461[2] = -1;
 			iLocal_461[3] = -1;
-			StringCopy(&Local_464, "CMN_HINT", 16);
+			StringCopy(&Local_464, "CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */, 16);
 			StringCopy(&Local_467, "PST_CHSCRbR", 16);
 			StringCopy(&Local_473, "PST_CHSCRbG", 16);
 			StringCopy(&Local_474, "PST_CHSCRbK", 16);
@@ -3460,7 +3460,7 @@ void func_90()//Position - 0x324F
 			iLocal_461[1] = 3;
 			iLocal_461[2] = 4;
 			iLocal_461[3] = -1;
-			StringCopy(&Local_464, "CMN_HINT", 16);
+			StringCopy(&Local_464, "CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */, 16);
 			StringCopy(&Local_467, "PST_CHSCRcR", 16);
 			StringCopy(&Local_473, "", 16);
 			StringCopy(&Local_474, "PST_CHSCRcK", 16);
@@ -3486,7 +3486,7 @@ void func_90()//Position - 0x324F
 			iLocal_461[1] = -1;
 			iLocal_461[2] = -1;
 			iLocal_461[3] = -1;
-			StringCopy(&Local_464, "CMN_HINT", 16);
+			StringCopy(&Local_464, "CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */, 16);
 			StringCopy(&Local_467, "PST_CHSCRdR", 16);
 			StringCopy(&Local_473, "PST_CHSCRdG", 16);
 			StringCopy(&Local_474, "PST_CHSCRdK", 16);

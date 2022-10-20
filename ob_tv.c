@@ -199,7 +199,7 @@ void __EntryFunction__()//Position - 0x0
 							if (!func_64(iLocal_41))
 							{
 								func_43(&iLocal_40);
-								if (func_42("TV_HLP1"))
+								if (func_42("TV_HLP1" /* GXT: Press ~INPUT_CONTEXT~ to turn on the TV. */))
 								{
 									HUD::CLEAR_HELP(true);
 								}
@@ -348,7 +348,7 @@ void func_1()//Position - 0x4E6
 			AUDIO::SET_STATIC_EMITTER_ENABLED(&cLocal_44, true);
 		}
 	}
-	if (((func_42("TV_HLP1") || func_42("TV_HLP2")) || func_42("TV_HLP5")) || func_42("TV_HLP6"))
+	if (((func_42("TV_HLP1" /* GXT: Press ~INPUT_CONTEXT~ to turn on the TV. */) || func_42("TV_HLP2" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_NEXT_CAMERA~ to change view.~n~Press ~INPUT_CONTEXT~ to stop watching.~n~ */)) || func_42("TV_HLP5" /* GXT: Press ~INPUT_SCRIPT_RUP~ to use the TV controls.~n~Press ~INPUT_CONTEXT~ to turn off the TV.~n~ */)) || func_42("TV_HLP6" /* GXT: Press ~INPUT_SCRIPT_RUP~ to stop using the TV controls.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_CONTEXT~ to turn off the TV.~n~ */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -631,7 +631,7 @@ int func_15()//Position - 0x9CE
 			if (iLocal_40 == -1)
 			{
 				func_29();
-				func_28(&iLocal_40, 3, "TV_HLP5", 0, 0, 0, 0);
+				func_28(&iLocal_40, 3, "TV_HLP5" /* GXT: Press ~INPUT_SCRIPT_RUP~ to use the TV controls.~n~Press ~INPUT_CONTEXT~ to turn off the TV.~n~ */, 0, 0, 0, 0);
 			}
 			else if (func_26(iLocal_40, 1))
 			{
@@ -648,7 +648,7 @@ int func_15()//Position - 0x9CE
 		}
 		else
 		{
-			if (func_42("TV_HLP5"))
+			if (func_42("TV_HLP5" /* GXT: Press ~INPUT_SCRIPT_RUP~ to use the TV controls.~n~Press ~INPUT_CONTEXT~ to turn off the TV.~n~ */))
 			{
 				HUD::CLEAR_HELP(true);
 			}
@@ -667,7 +667,7 @@ void func_16()//Position - 0xADA
 		if (PAD::IS_CONTROL_JUST_PRESSED(2, 222))
 		{
 			func_43(&iLocal_40);
-			func_28(&iLocal_40, 3, "TV_HLP6", 0, 0, 0, 0);
+			func_28(&iLocal_40, 3, "TV_HLP6" /* GXT: Press ~INPUT_SCRIPT_RUP~ to stop using the TV controls.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_CONTEXT~ to turn off the TV.~n~ */, 0, 0, 0, 0);
 			func_25();
 		}
 	}
@@ -1209,7 +1209,7 @@ void func_37()//Position - 0x1345
 	{
 		AUDIO::STOP_AUDIO_SCENE(&cLocal_53);
 	}
-	if (((func_42("TV_HLP1") || func_42("TV_HLP2")) || func_42("TV_HLP5")) || func_42("TV_HLP6"))
+	if (((func_42("TV_HLP1" /* GXT: Press ~INPUT_CONTEXT~ to turn on the TV. */) || func_42("TV_HLP2" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_NEXT_CAMERA~ to change view.~n~Press ~INPUT_CONTEXT~ to stop watching.~n~ */)) || func_42("TV_HLP5" /* GXT: Press ~INPUT_SCRIPT_RUP~ to use the TV controls.~n~Press ~INPUT_CONTEXT~ to turn off the TV.~n~ */)) || func_42("TV_HLP6" /* GXT: Press ~INPUT_SCRIPT_RUP~ to stop using the TV controls.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_CONTEXT~ to turn off the TV.~n~ */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -1417,7 +1417,7 @@ int func_44()//Position - 0x15F3
 	}
 	if (iLocal_40 == -1)
 	{
-		func_28(&iLocal_40, 3, "TV_HLP1", 0, 0, 0, 0);
+		func_28(&iLocal_40, 3, "TV_HLP1" /* GXT: Press ~INPUT_CONTEXT~ to turn on the TV. */, 0, 0, 0, 0);
 		return 0;
 	}
 	if (func_26(iLocal_40, 1))
@@ -2055,7 +2055,7 @@ void func_68()//Position - 0x2406
 		Global_32020[iLocal_41 /*11*/].f_1 = 0;
 		Global_32020[iLocal_41 /*11*/].f_10 = 0;
 	}
-	if ((func_42("TV_HLP1") || func_42("TV_HLP5")) || func_42("TV_HLP6"))
+	if ((func_42("TV_HLP1" /* GXT: Press ~INPUT_CONTEXT~ to turn on the TV. */) || func_42("TV_HLP5" /* GXT: Press ~INPUT_SCRIPT_RUP~ to use the TV controls.~n~Press ~INPUT_CONTEXT~ to turn off the TV.~n~ */)) || func_42("TV_HLP6" /* GXT: Press ~INPUT_SCRIPT_RUP~ to stop using the TV controls.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_CONTEXT~ to turn off the TV.~n~ */))
 	{
 		HUD::CLEAR_HELP(true);
 	}

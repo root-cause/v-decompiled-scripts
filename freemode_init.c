@@ -2808,7 +2808,7 @@ void func_84(bool bParam0)//Position - 0x3206
 	}
 	else
 	{
-		func_85("INV_RESTRICT", -1);
+		func_85("INV_RESTRICT" /* GXT: You have received an Invite to user-generated content which is currently restricted by your control settings. */, -1);
 	}
 	Global_2657487 = (iVar0 + 1800000);
 }
@@ -4344,7 +4344,7 @@ void func_117(int iParam0)//Position - 0x4A24
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(42);
 								GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							}
-							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB")) && BitTest(Global_8137, 6))
+							else if ((iVar1 == 23 && MISC::ARE_STRINGS_EQUAL(&(Global_8143[iVar1 /*15*/]), "CELL_BENWEB" /* GXT: Benny's */)) && BitTest(Global_8137, 6))
 							{
 								GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT");
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
@@ -7053,7 +7053,7 @@ void func_223()//Position - 0x852F
 	Global_2653196 = 0;
 	Global_2653191 = 0;
 	Global_2653192 = 0;
-	if (func_224("MATC_DPADRIGHT"))
+	if (func_224("MATC_DPADRIGHT" /* GXT: Press ~INPUT_CONTEXT~ to enter. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}

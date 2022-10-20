@@ -141,10 +141,10 @@ void func_1()//Position - 0xF8
 						{
 							iLocal_58 = 0;
 							iLocal_56 = 0;
-							sLocal_57[0] = "LETTERS_PAGE_ONE";
-							sLocal_57[1] = "LETTERS_PAGE_TWO";
-							sLocal_57[2] = "LETTERS_PAGE_THREE";
-							sLocal_57[3] = "LETTERS_PAGE_FOUR";
+							sLocal_57[0] = "LETTERS_PAGE_ONE" /* GXT: March 15th, 1975~n~~n~ATTN; David Richards~n~~n~My Dear David,~n~~n~Listen, I know you're a little offended by your discovery of my 'petit indiscretion' as the French would say, but I want you to understand – that's all it is – a little indiscretion. I agree whole heartedly with you – my actions were a little inhumane. But that's not a bad thing. Inhumanity is the very watchword, the very currency, the very life blood of the artist! My inhumanity makes me human. It's thanks to my inhumanity that I'm able to speak to people with the moral authority of the sinner and the creator, all at once. I had to kill her. And I had to do it in that way. The way that would hurt me most – by torturing her slowly and painfully, then sending momentos from our date to her family. */;
+							sLocal_57[1] = "LETTERS_PAGE_TWO" /* GXT: And in the years since, I've had to, at times, goad her family into further suffering. Just to prove how very much I understand suffering and how I can represent it best as an artist – isn't it better that one family suffers so the world can be free to enjoy, to learn and to be cleansed by my masterpieces? Don't even bother answering that. The answer is obvious and if you get it wrong, well, then you're less of a man than I thought.~n~~n~But let us not concern ourselves with such trivialities – we are artists, my friend. The last of a dying breed. I dread the day when you finally retire and Solomon takes over – sure I love the kid but he's a remorseless hack with none of your passion, your creative zeal. He's a weak livered moralizer hiding in the body of a Vinewood decadent. */;
+							sLocal_57[2] = "LETTERS_PAGE_THREE" /* GXT: He understands nothing about why we act as we do! Not because we can, but because we must. And that's the thing. Some people take advantage of their position in this town for pleasure – as if sleeping with multiple young girls, or torturing hitchhikers or eating dogs could ever be fun? It's awful. I only do it to experience it so my art is truer, deeper, more meaningful, and I believe you know that.~n~~n~I cannot wait for you to read my new draft of LEARED. I have really removed the cliches that ruined Shakespeare's plays and found the power, the moment, the thing we talked about that wonderful night in Mexico when we paid the hookers to stab each other. */;
+							sLocal_57[3] = "LETTERS_PAGE_FOUR" /* GXT: Anyway, I hope you and Rachel have worked through your problems. I look forward to making Friday supper again soon.  You've always been an inspiration to me.~n~~n~Your dear friend~n~~n~Dreyfuss */;
 							iLocal_55 = GRAPHICS::REQUEST_SCALEFORM_MOVIE("LETTER_SCRAPS");
 							while (!GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(iLocal_55))
 							{
@@ -156,7 +156,7 @@ void func_1()//Position - 0xF8
 							GRAPHICS::SET_SCRIPT_GFX_DRAW_BEHIND_PAUSEMENU(true);
 							func_7(1);
 							func_6(1, 1, 1, 0);
-							HUD::DISPLAY_HELP_TEXT_THIS_FRAME("LETTERS_HELP2", false);
+							HUD::DISPLAY_HELP_TEXT_THIS_FRAME("LETTERS_HELP2" /* GXT: Press ~INPUT_FRONTEND_RIGHT~ or ~INPUT_FRONTEND_LEFT~ to cycle between pages, or press ~INPUT_FRONTEND_CANCEL~ to stop reading. */, false);
 							MISC::SET_GAME_PAUSED(true);
 							HUD::DISPLAY_RADAR(false);
 							iLocal_43 = 1;
@@ -506,7 +506,7 @@ void func_21()//Position - 0x712
 	{
 		case 0:
 			func_62();
-			func_61(&Local_44, 1, joaat("prop_ld_scrap"), "LETTERS_COLLECT");
+			func_61(&Local_44, 1, joaat("prop_ld_scrap"), "LETTERS_COLLECT" /* GXT: ~1~/50 letter scraps collected. */);
 			func_59(&Local_44, joaat("NUM_HIDDEN_PACKAGES_0"), 705, 50);
 			iLocal_43 = 1;
 			iLocal_60 = 1;
@@ -588,7 +588,7 @@ int func_23(var uParam0, int iParam1)//Position - 0x7DA
 				{
 					if (!func_37(33))
 					{
-						func_34("LETTERS_FIRST", 1, 0, -1, 10000, 7, 0, 0, 0);
+						func_34("LETTERS_FIRST" /* GXT: Part of a confession has been found. Collect all letter scraps to solve the mystery of Leonora Johnson's murder. */, 1, 0, -1, 10000, 7, 0, 0, 0);
 						func_33(33);
 					}
 				}
@@ -605,7 +605,7 @@ int func_23(var uParam0, int iParam1)//Position - 0x7DA
 	{
 		if (!Global_78579)
 		{
-			func_24(&(uParam0->f_11), &(uParam0->f_12), &(uParam0->f_9), 1, &iLocal_53, &iLocal_54, "LETTERS_TITLE", "LETTERS_COLLECT");
+			func_24(&(uParam0->f_11), &(uParam0->f_12), &(uParam0->f_9), 1, &iLocal_53, &iLocal_54, "LETTERS_TITLE" /* GXT: Scrap Collected~s~ */, "LETTERS_COLLECT" /* GXT: ~1~/50 letter scraps collected. */);
 		}
 	}
 	if (!uParam0->f_12 && !uParam0->f_11)

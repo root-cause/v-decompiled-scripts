@@ -608,12 +608,12 @@ void func_9(var uParam0)//Position - 0x607
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 					func_11(sVar2);
-					func_10("PB_H_ZOOM");
+					func_10("PB_H_ZOOM" /* GXT: Zoom */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 					func_11(sVar3);
-					func_10("PB_H_LOOK");
+					func_10("PB_H_LOOK" /* GXT: Look Around */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				}
 				else
@@ -623,17 +623,17 @@ void func_9(var uParam0)//Position - 0x607
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 					func_11(sVar2);
-					func_10("PB_H_ZOOM");
+					func_10("PB_H_ZOOM" /* GXT: Zoom */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 					func_11(sVar3);
-					func_10("PB_H_LOOK");
+					func_10("PB_H_LOOK" /* GXT: Look Around */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 					func_11(sVar5);
-					func_10("PB_H_EXIT");
+					func_10("PB_H_EXIT" /* GXT: Exit */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				}
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "DRAW_INSTRUCTIONAL_BUTTONS");
@@ -660,17 +660,17 @@ void func_9(var uParam0)//Position - 0x607
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 					func_11(sVar0);
-					func_10("PB_H_SELCT");
+					func_10("PB_H_SELCT" /* GXT: Browse */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 					func_11(sVar3);
-					func_10("PB_H_LOOK");
+					func_10("PB_H_LOOK" /* GXT: Look Around */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 					func_11(sVar4);
-					func_10("PB_H_TRIG");
+					func_10("PB_H_TRIG" /* GXT: Select */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				}
 				else
@@ -678,22 +678,22 @@ void func_9(var uParam0)//Position - 0x607
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(3);
 					func_11(sVar0);
-					func_10("PB_H_SELCT");
+					func_10("PB_H_SELCT" /* GXT: Browse */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 					func_11(sVar3);
-					func_10("PB_H_LOOK");
+					func_10("PB_H_LOOK" /* GXT: Look Around */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 					func_11(sVar5);
-					func_10("PB_H_UNDO");
+					func_10("PB_H_UNDO" /* GXT: Back */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 					func_11(sVar4);
-					func_10("PB_H_TRIG");
+					func_10("PB_H_TRIG" /* GXT: Select */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				}
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "DRAW_INSTRUCTIONAL_BUTTONS");
@@ -712,12 +712,12 @@ void func_9(var uParam0)//Position - 0x607
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 					func_11(sVar1);
-					func_10("PB_H_SELCT");
+					func_10("PB_H_SELCT" /* GXT: Browse */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 					func_11(sVar3);
-					func_10("PB_H_LOOK");
+					func_10("PB_H_LOOK" /* GXT: Look Around */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				}
 				else
@@ -727,17 +727,17 @@ void func_9(var uParam0)//Position - 0x607
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 					func_11(sVar1);
-					func_10("PB_H_SELCT");
+					func_10("PB_H_SELCT" /* GXT: Browse */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 					func_11(sVar3);
-					func_10("PB_H_LOOK");
+					func_10("PB_H_LOOK" /* GXT: Look Around */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 					func_11(sVar4);
-					func_10("PB_H_TRIG");
+					func_10("PB_H_TRIG" /* GXT: Select */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				}
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "DRAW_INSTRUCTIONAL_BUTTONS");
@@ -754,22 +754,22 @@ void func_9(var uParam0)//Position - 0x607
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(3);
 				func_11(sVar2);
-				func_10("PB_H_ZOOM");
+				func_10("PB_H_ZOOM" /* GXT: Zoom */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 				func_11(sVar3);
-				func_10("PB_H_LOOK");
+				func_10("PB_H_LOOK" /* GXT: Look Around */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 				func_11(sVar5);
-				func_10("PB_H_UNDO");
+				func_10("PB_H_UNDO" /* GXT: Back */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 				func_11(sVar4);
-				func_10("PB_H_CONF");
+				func_10("PB_H_CONF" /* GXT: Confirm */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "DRAW_INSTRUCTIONAL_BUTTONS");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(false);
@@ -987,7 +987,7 @@ void func_20(var uParam0)//Position - 0x1007
 					{
 						if (((!BitTest(uParam0->f_449, 11) && !BitTest(uParam0->f_449, 10)) && !func_21()) && uParam0->f_483 == 0)
 						{
-							HUD::BEGIN_TEXT_COMMAND_DISPLAY_HELP("PB_H_CHOICE");
+							HUD::BEGIN_TEXT_COMMAND_DISPLAY_HELP("PB_H_CHOICE" /* GXT: Select an approach for this heist. */);
 							HUD::END_TEXT_COMMAND_DISPLAY_HELP(0, true, false, -1);
 						}
 					}
@@ -1010,7 +1010,7 @@ void func_20(var uParam0)//Position - 0x1007
 					{
 						if (!BitTest(uParam0->f_449, 10))
 						{
-							if ((!func_14("PB_H_GUNM") && !func_14("PB_H_HACK")) && !func_14("PB_H_DRIV"))
+							if ((!func_14("PB_H_GUNM" /* GXT: Select a gunman to hire. */) && !func_14("PB_H_HACK" /* GXT: Select a hacker to hire. */)) && !func_14("PB_H_DRIV" /* GXT: Select a driver to hire. */))
 							{
 								iVar0 = func_66(func_32(*uParam0));
 								if (uParam0->f_417 < 5)
@@ -1020,17 +1020,17 @@ void func_20(var uParam0)//Position - 0x1007
 										switch (Global_96470[iVar0 /*19*/].f_1[uParam0->f_417])
 										{
 											case 1:
-												HUD::BEGIN_TEXT_COMMAND_DISPLAY_HELP("PB_H_GUNM");
+												HUD::BEGIN_TEXT_COMMAND_DISPLAY_HELP("PB_H_GUNM" /* GXT: Select a gunman to hire. */);
 												HUD::END_TEXT_COMMAND_DISPLAY_HELP(0, true, false, -1);
 												break;
 											
 											case 2:
-												HUD::BEGIN_TEXT_COMMAND_DISPLAY_HELP("PB_H_HACK");
+												HUD::BEGIN_TEXT_COMMAND_DISPLAY_HELP("PB_H_HACK" /* GXT: Select a hacker to hire. */);
 												HUD::END_TEXT_COMMAND_DISPLAY_HELP(0, true, false, -1);
 												break;
 											
 											case 3:
-												HUD::BEGIN_TEXT_COMMAND_DISPLAY_HELP("PB_H_DRIV");
+												HUD::BEGIN_TEXT_COMMAND_DISPLAY_HELP("PB_H_DRIV" /* GXT: Select a driver to hire. */);
 												HUD::END_TEXT_COMMAND_DISPLAY_HELP(0, true, false, -1);
 												break;
 											}
@@ -1446,90 +1446,90 @@ void func_33(var uParam0)//Position - 0x183C
 void func_34(var uParam0)//Position - 0x1AA9
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_413, "SET_LABELS");
-	func_10("H_CRW_NAME");
-	func_10("H_CRW_TYPE");
-	func_10("H_CRW_SKILLS");
+	func_10("H_CRW_NAME" /* GXT: Name */);
+	func_10("H_CRW_TYPE" /* GXT: Expertise */);
+	func_10("H_CRW_SKILLS" /* GXT: Skills */);
 	switch (*uParam0)
 	{
 		case 0:
-			func_10("H_LBL_JWL");
+			func_10("H_LBL_JWL" /* GXT: JEWEL STORE */);
 			break;
 		
 		case 1:
-			func_10("H_LBL_DOC");
+			func_10("H_LBL_DOC" /* GXT: LS PORT */);
 			break;
 		
 		case 2:
-			func_10("H_LBL_RUR");
+			func_10("H_LBL_RUR" /* GXT: PALETO */);
 			break;
 		
 		case 3:
-			func_10("H_LBL_AGN");
+			func_10("H_LBL_AGN" /* GXT: BUREAU */);
 			break;
 		
 		case 4:
-			func_10("H_LBL_FA");
-			func_10("H_LBL_FB");
+			func_10("H_LBL_FA" /* GXT: BIG SCORE A */);
+			func_10("H_LBL_FB" /* GXT: BIG SCORE B */);
 			break;
 	}
 	if (*uParam0 != 1)
 	{
-		func_10("H_LBL_CRW");
+		func_10("H_LBL_CRW" /* GXT: CREW */);
 	}
-	func_10("H_LBL_TODO");
+	func_10("H_LBL_TODO" /* GXT: TODO */);
 	if (*uParam0 != 2)
 	{
-		func_10("H_LBL_APP");
+		func_10("H_LBL_APP" /* GXT: APPROACH */);
 	}
 	switch (*uParam0)
 	{
 		case 0:
-			func_10("H_LBL_J1");
-			func_10("H_LBL_J2");
-			func_10("H_LBL_J3");
-			func_10("H_LBL_J4");
-			func_10("HC_J_IMPACT");
-			func_10("HC_J_STEALTH");
+			func_10("H_LBL_J1" /* GXT: CCTV */);
+			func_10("H_LBL_J2" /* GXT: VENT */);
+			func_10("H_LBL_J3" /* GXT: ALARM */);
+			func_10("H_LBL_J4" /* GXT: TUNNEL */);
+			func_10("HC_J_IMPACT" /* GXT: LOUD */);
+			func_10("HC_J_STEALTH" /* GXT: SMART */);
 			break;
 		
 		case 1:
-			func_10("HC_D_BLOW_UP");
-			func_10("HC_D_DEEP_SEA");
+			func_10("HC_D_BLOW_UP" /* GXT: FREIGHTER */);
+			func_10("HC_D_DEEP_SEA" /* GXT: OFFSHORE */);
 			break;
 		
 		case 2:
-			func_10("H_LBL_R1");
-			func_10("H_LBL_R2");
-			func_10("H_LBL_R3");
-			func_10("H_LBL_R4");
-			func_10("H_LBL_R5");
-			func_10("H_LBL_R6");
-			func_10("H_LBL_R7");
-			func_10("H_LBL_R8");
-			func_10("H_LBL_R9");
-			func_10("H_LBL_R10");
-			func_10("H_LBL_R11");
-			func_10("H_LBL_R12");
+			func_10("H_LBL_R1" /* GXT: plan A */);
+			func_10("H_LBL_R2" /* GXT: plan B? */);
+			func_10("H_LBL_R3" /* GXT: 67 secs */);
+			func_10("H_LBL_R4" /* GXT: 8+ Cops */);
+			func_10("H_LBL_R5" /* GXT: 4 Cars */);
+			func_10("H_LBL_R6" /* GXT: Banker's wife */);
+			func_10("H_LBL_R7" /* GXT: $$$ */);
+			func_10("H_LBL_R8" /* GXT: Need military grade hardware */);
+			func_10("H_LBL_R9" /* GXT: 8/10 Smash it! */);
+			func_10("H_LBL_R10" /* GXT: Military Hardware Route */);
+			func_10("H_LBL_R11" /* GXT: Every 2 or 3hrs */);
+			func_10("H_LBL_R12" /* GXT: BOAT */);
 			break;
 		
 		case 3:
-			func_10("H_LBL_A1");
-			func_10("H_LBL_A2");
-			func_10("H_LBL_A3");
-			func_10("H_LBL_A4");
-			func_10("H_LBL_A5");
-			func_10("HC_A_FIRETRUCK");
-			func_10("HC_A_HELICOPTER");
+			func_10("H_LBL_A1" /* GXT: Davis fire station */);
+			func_10("H_LBL_A2" /* GXT: floor 53 */);
+			func_10("H_LBL_A3" /* GXT: Bomb */);
+			func_10("H_LBL_A4" /* GXT: Drive 10 */);
+			func_10("H_LBL_A5" /* GXT: 83QSL722 */);
+			func_10("HC_A_FIRETRUCK" /* GXT: FIRE CREW */);
+			func_10("HC_A_HELICOPTER" /* GXT: ROOF ENTRY */);
 			break;
 		
 		case 4:
-			func_10("H_LBL_F1");
-			func_10("H_LBL_F2");
-			func_10("H_LBL_F3");
-			func_10("H_LBL_F4");
-			func_10("H_LBL_F5");
-			func_10("HC_F_TRAFFCONT");
-			func_10("HC_F_HELI");
+			func_10("H_LBL_F1" /* GXT: DROP-OFF */);
+			func_10("H_LBL_F2" /* GXT: HOLE */);
+			func_10("H_LBL_F3" /* GXT: SECURITY */);
+			func_10("H_LBL_F4" /* GXT: GETAWAY */);
+			func_10("H_LBL_F5" /* GXT: TUNNEL AMBUSH */);
+			func_10("HC_F_TRAFFCONT" /* GXT: SUBTLE */);
+			func_10("HC_F_HELI" /* GXT: OBVIOUS */);
 			break;
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -1743,7 +1743,7 @@ void func_42(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//P
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(func_44(iParam1, 2));
 			break;
 	}
-	func_10("H_CRW_CUT");
+	func_10("H_CRW_CUT" /* GXT: Cut */);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(func_43(iParam1));
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
@@ -1821,19 +1821,19 @@ char* func_50(int iParam0, int iParam1)//Position - 0x2264
 			switch (iParam1)
 			{
 				case 0:
-					return "HC_STA_G1";
+					return "HC_STA_G1" /* GXT: Max Health */;
 					break;
 				
 				case 1:
-					return "HC_STA_G2";
+					return "HC_STA_G2" /* GXT: Accuracy */;
 					break;
 				
 				case 2:
-					return "HC_STA_G3";
+					return "HC_STA_G3" /* GXT: Shoot Rate */;
 					break;
 				
 				case 3:
-					return "HC_STA_G4";
+					return "HC_STA_G4" /* GXT: Weapon Choice */;
 					break;
 			}
 			break;
@@ -1842,15 +1842,15 @@ char* func_50(int iParam0, int iParam1)//Position - 0x2264
 			switch (iParam1)
 			{
 				case 0:
-					return "HC_STA_H1";
+					return "HC_STA_H1" /* GXT: Sys Knowledge */;
 					break;
 				
 				case 1:
-					return "HC_STA_H2";
+					return "HC_STA_H2" /* GXT: Decryption Skill */;
 					break;
 				
 				case 2:
-					return "HC_STA_H3";
+					return "HC_STA_H3" /* GXT: Access Speed */;
 					break;
 			}
 			break;
@@ -1859,15 +1859,15 @@ char* func_50(int iParam0, int iParam1)//Position - 0x2264
 			switch (iParam1)
 			{
 				case 0:
-					return "HC_STA_D1";
+					return "HC_STA_D1" /* GXT: Driving Skill */;
 					break;
 				
 				case 1:
-					return "HC_STA_D2";
+					return "HC_STA_D2" /* GXT: Composure */;
 					break;
 				
 				case 2:
-					return "HC_STA_D3";
+					return "HC_STA_D3" /* GXT: Vehicle Choice */;
 					break;
 			}
 			break;
@@ -1960,15 +1960,15 @@ char* func_59(int iParam0)//Position - 0x2476
 	switch (Global_96316[iParam0 /*5*/])
 	{
 		case 1:
-			return "HC_TYPE_G";
+			return "HC_TYPE_G" /* GXT: Gunman */;
 			break;
 		
 		case 2:
-			return "HC_TYPE_H";
+			return "HC_TYPE_H" /* GXT: Hacker */;
 			break;
 		
 		case 3:
-			return "HC_TYPE_D";
+			return "HC_TYPE_D" /* GXT: Driver */;
 			break;
 	}
 	return "ERROR!";
@@ -1984,55 +1984,55 @@ char* func_61(int iParam0)//Position - 0x24CD
 	switch (iParam0)
 	{
 		case 1:
-			return "HC_N_GUS";
+			return "HC_N_GUS" /* GXT: Gustavo Mota */;
 			break;
 		
 		case 2:
-			return "HC_N_KAR";
+			return "HC_N_KAR" /* GXT: Karl Abolaji */;
 			break;
 		
 		case 10:
-			return "HC_N_PAC";
+			return "HC_N_PAC" /* GXT: Packie McReary */;
 			break;
 		
 		case 11:
-			return "HC_N_CHE";
+			return "HC_N_CHE" /* GXT: Chef */;
 			break;
 		
 		case 3:
-			return "HC_N_HUG";
+			return "HC_N_HUG" /* GXT: Hugh Welsh */;
 			break;
 		
 		case 4:
-			return "HC_N_NOR";
+			return "HC_N_NOR" /* GXT: Norm Richards */;
 			break;
 		
 		case 5:
-			return "HC_N_DAR";
+			return "HC_N_DAR" /* GXT: Daryl Johns */;
 			break;
 		
 		case 6:
-			return "HC_N_PAI";
+			return "HC_N_PAI" /* GXT: Paige Harris */;
 			break;
 		
 		case 7:
-			return "HC_N_CHR";
+			return "HC_N_CHR" /* GXT: Christian Feltz */;
 			break;
 		
 		case 12:
-			return "HC_N_RIC";
+			return "HC_N_RIC" /* GXT: Rickie Lukens */;
 			break;
 		
 		case 8:
-			return "HC_N_EDD";
+			return "HC_N_EDD" /* GXT: Eddie Toh */;
 			break;
 		
 		case 13:
-			return "HC_N_TAL";
+			return "HC_N_TAL" /* GXT: Taliana Martinez */;
 			break;
 		
 		case 9:
-			return "HC_N_KRM";
+			return "HC_N_KRM" /* GXT: Karim Denz */;
 			break;
 	}
 	return "ERROR!";
@@ -2221,7 +2221,7 @@ void func_69(var uParam0)//Position - 0x2786
 		{
 			if (uParam0->f_451 == -1)
 			{
-				func_139(&(uParam0->f_451), 3, "PB_H_ENT", 0, 0, 0, 0);
+				func_139(&(uParam0->f_451), 3, "PB_H_ENT" /* GXT: Press ~INPUT_CONTEXT~ to view the plans. */, 0, 0, 0, 0);
 			}
 			else if (func_138(uParam0->f_451, 1))
 			{
@@ -3678,7 +3678,7 @@ void func_110(var uParam0)//Position - 0x4280
 								{
 									func_86(5, *uParam0, 1);
 								}
-								AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
+								AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 								iVar0 = func_32(*uParam0);
 								iVar1 = func_66(iVar0);
 								iVar2 = 0;
@@ -3873,7 +3873,7 @@ void func_110(var uParam0)//Position - 0x4280
 			{
 				func_113(*uParam0);
 			}
-			AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
+			AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 			func_63(uParam0, iVar1, 0);
 			if (uParam0->f_1.f_30[iVar11] != 13)
 			{
@@ -5775,16 +5775,16 @@ void func_157(int iParam0, bool bParam1)//Position - 0x7824
 	{
 		if (!func_159(69))
 		{
-			func_23("DI_HLP_HST", 2, 0, 20000, 10000, 7, 0, 209, 0);
+			func_23("DI_HLP_HST" /* GXT: Heist characters become available in Rockstar Editor's 'Director Mode' after being up for selection on a GTAV heist. */, 2, 0, 20000, 10000, 7, 0, 209, 0);
 		}
-		func_158("DI_FEED_HST");
+		func_158("DI_FEED_HST" /* GXT: Heist crew members */);
 	}
 }
 
 void func_158(char* sParam0)//Position - 0x79EA
 {
 	HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("");
-	HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_SUBTITLE_LABEL("CHAR_ACTING_UP", "CHAR_ACTING_UP", false, 0, "DI_FEED_CHAR", sParam0);
+	HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_SUBTITLE_LABEL("CHAR_ACTING_UP", "CHAR_ACTING_UP", false, 0, "DI_FEED_CHAR" /* GXT: Director Mode Actor Unlock */, sParam0);
 }
 
 int func_159(int iParam0)//Position - 0x7A0E
@@ -5829,55 +5829,55 @@ char* func_161(int iParam0)//Position - 0x7A97
 	switch (iParam0)
 	{
 		case 0:
-			return "CM_HSTCHE";
+			return "CM_HSTCHE" /* GXT: Chef */;
 			break;
 		
 		case 1:
-			return "CM_HSTCHR";
+			return "CM_HSTCHR" /* GXT: Christian Feltz */;
 			break;
 		
 		case 2:
-			return "CM_HSTDAR";
+			return "CM_HSTDAR" /* GXT: Daryl Johns */;
 			break;
 		
 		case 3:
-			return "CM_HSTEDD";
+			return "CM_HSTEDD" /* GXT: Eddie Toh */;
 			break;
 		
 		case 4:
-			return "CM_HSTGUS";
+			return "CM_HSTGUS" /* GXT: Gustavo Mota */;
 			break;
 		
 		case 5:
-			return "CM_HSTHUG";
+			return "CM_HSTHUG" /* GXT: Hugh Welsh */;
 			break;
 		
 		case 6:
-			return "CM_HSTKRM";
+			return "CM_HSTKRM" /* GXT: Karim Denz */;
 			break;
 		
 		case 7:
-			return "CM_HSTKAR";
+			return "CM_HSTKAR" /* GXT: Karl Abolaji */;
 			break;
 		
 		case 8:
-			return "CM_HSTNOR";
+			return "CM_HSTNOR" /* GXT: Norm Richards */;
 			break;
 		
 		case 9:
-			return "CM_HSTPAC";
+			return "CM_HSTPAC" /* GXT: Packie McReary */;
 			break;
 		
 		case 10:
-			return "CM_HSTPAI";
+			return "CM_HSTPAI" /* GXT: Paige Harris */;
 			break;
 		
 		case 11:
-			return "CM_HSTRIC";
+			return "CM_HSTRIC" /* GXT: Rickie Lukens */;
 			break;
 		
 		case 12:
-			return "CM_HSTTAL";
+			return "CM_HSTTAL" /* GXT: Taliana Martinez */;
 			break;
 	}
 	return "ERROR!";
@@ -14860,19 +14860,19 @@ void func_238()//Position - 0x15C58
 		}
 		if (iVar1 == 0)
 		{
-			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iVar0, "BLIP_MICHAEL");
+			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iVar0, "BLIP_MICHAEL" /* GXT: Michael */);
 		}
 		else if (iVar1 == 1)
 		{
-			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iVar0, "BLIP_FRANKLIN");
+			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iVar0, "BLIP_FRANKLIN" /* GXT: Franklin */);
 		}
 		else if (iVar1 == 2)
 		{
-			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iVar0, "BLIP_TREV");
+			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iVar0, "BLIP_TREV" /* GXT: Trevor */);
 		}
 		else
 		{
-			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iVar0, "BLIP_PLAYER");
+			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iVar0, "BLIP_PLAYER" /* GXT: Player */);
 		}
 	}
 }
@@ -18938,12 +18938,12 @@ void func_334(var uParam0, var uParam1)//Position - 0x1AAE6
 	func_338(uParam0, 9, 2, 0, 0);
 	func_338(uParam0, 0, 3, 0, 0);
 	func_338(uParam0, 1, 3, 0, 0);
-	func_337(uParam0, 0, 1, "H_TD_JANI");
-	func_337(uParam0, 1, 3, "H_TD_BLUP");
-	func_337(uParam0, 2, 4, "H_TD_PLAN");
-	func_337(uParam0, 2, 5, "H_TD_CREW");
-	func_337(uParam0, 6, 7, "H_TD_FIRE");
-	func_337(uParam0, 6, 8, "H_TD_GETA");
+	func_337(uParam0, 0, 1, "H_TD_JANI" /* GXT: Janitor ID */);
+	func_337(uParam0, 1, 3, "H_TD_BLUP" /* GXT: Architect blueprints */);
+	func_337(uParam0, 2, 4, "H_TD_PLAN" /* GXT: Decide approach */);
+	func_337(uParam0, 2, 5, "H_TD_CREW" /* GXT: Pick crew */);
+	func_337(uParam0, 6, 7, "H_TD_FIRE" /* GXT: Fire crew equip */);
+	func_337(uParam0, 6, 8, "H_TD_GETA" /* GXT: Getaway Vehicle */);
 	func_336(uParam0, 2, 70, 71);
 	func_336(uParam0, 2, 44, 174);
 	func_336(uParam0, 2, 45, 209);

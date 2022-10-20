@@ -542,9 +542,9 @@ void func_1()//Position - 0x384
 				{
 					Global_1835486 = -1;
 				}
-				if (!func_55("SA_STRIP_CALL"))
+				if (!func_55("SA_STRIP_CALL" /* GXT: Press ~INPUT_CONTEXT~ to call stripper.~n~ */))
 				{
-					func_54("SA_STRIP_CALL");
+					func_54("SA_STRIP_CALL" /* GXT: Press ~INPUT_CONTEXT~ to call stripper.~n~ */);
 				}
 				iLocal_308 = 1;
 			}
@@ -560,7 +560,7 @@ void func_1()//Position - 0x384
 						func_52();
 						Global_1835486 = 13;
 						func_44();
-						if (func_55("SA_STRIP_CALL"))
+						if (func_55("SA_STRIP_CALL" /* GXT: Press ~INPUT_CONTEXT~ to call stripper.~n~ */))
 						{
 							HUD::CLEAR_HELP(true);
 						}
@@ -575,7 +575,7 @@ void func_1()//Position - 0x384
 				}
 				else
 				{
-					if (func_55("SA_STRIP_CALL"))
+					if (func_55("SA_STRIP_CALL" /* GXT: Press ~INPUT_CONTEXT~ to call stripper.~n~ */))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -642,9 +642,9 @@ void func_1()//Position - 0x384
 				PED::PLAY_FACIAL_ANIM(NETWORK::NET_TO_PED(iLocal_319), sLocal_373, sLocal_368);
 			}
 			NETWORK::NETWORK_START_SYNCHRONISED_SCENE(iLocal_313);
-			if (!func_55("SA_STRIP_CAM"))
+			if (!func_55("SA_STRIP_CAM" /* GXT: Press ~INPUT_CONTEXT~ to change view.~n~ */))
 			{
-				func_54("SA_STRIP_CAM");
+				func_54("SA_STRIP_CAM" /* GXT: Press ~INPUT_CONTEXT~ to change view.~n~ */);
 			}
 			iLocal_308 = 5;
 			break;
@@ -669,7 +669,7 @@ void func_1()//Position - 0x384
 					PED::PLAY_FACIAL_ANIM(NETWORK::NET_TO_PED(iLocal_319), sLocal_349, sLocal_344);
 				}
 				NETWORK::NETWORK_START_SYNCHRONISED_SCENE(iLocal_313);
-				if (func_55("SA_STRIP_CAM"))
+				if (func_55("SA_STRIP_CAM" /* GXT: Press ~INPUT_CONTEXT~ to change view.~n~ */))
 				{
 					HUD::CLEAR_HELP(true);
 				}
@@ -697,9 +697,9 @@ void func_1()//Position - 0x384
 				}
 				NETWORK::NETWORK_START_SYNCHRONISED_SCENE(iLocal_313);
 				iLocal_315++;
-				if (!func_55("SA_STRIP_MENU"))
+				if (!func_55("SA_STRIP_MENU" /* GXT: Press ~INPUT_SCRIPT_RRIGHT~ for another dance.~n~Press ~INPUT_SCRIPT_RUP~ to quit.~n~ */))
 				{
-					func_54("SA_STRIP_MENU");
+					func_54("SA_STRIP_MENU" /* GXT: Press ~INPUT_SCRIPT_RRIGHT~ for another dance.~n~Press ~INPUT_SCRIPT_RUP~ to quit.~n~ */);
 				}
 				iLocal_308 = 7;
 			}
@@ -713,7 +713,7 @@ void func_1()//Position - 0x384
 			{
 				if (PAD::IS_CONTROL_JUST_PRESSED(2, 223))
 				{
-					if (func_55("SA_STRIP_MENU"))
+					if (func_55("SA_STRIP_MENU" /* GXT: Press ~INPUT_SCRIPT_RRIGHT~ for another dance.~n~Press ~INPUT_SCRIPT_RUP~ to quit.~n~ */))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -721,7 +721,7 @@ void func_1()//Position - 0x384
 				}
 				if (PAD::IS_CONTROL_JUST_PRESSED(2, 222))
 				{
-					if (func_55("SA_STRIP_MENU"))
+					if (func_55("SA_STRIP_MENU" /* GXT: Press ~INPUT_SCRIPT_RRIGHT~ for another dance.~n~Press ~INPUT_SCRIPT_RUP~ to quit.~n~ */))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -5679,7 +5679,7 @@ void func_89()//Position - 0x8F73
 
 void func_90()//Position - 0x8F7F
 {
-	if (func_55("SA_SHWR_OUT") || func_55("SA_SHWR_IN"))
+	if (func_55("SA_SHWR_OUT" /* GXT: Press ~INPUT_SCRIPT_RUP~ to stop showering.~n~ */) || func_55("SA_SHWR_IN" /* GXT: Press ~INPUT_CONTEXT~ to take a shower.~n~ */))
 	{
 		HUD::CLEAR_HELP(true);
 	}

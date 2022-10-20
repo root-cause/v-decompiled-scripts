@@ -5174,44 +5174,44 @@ void func_86()//Position - 0x981A
 				{
 					if (func_334(1, &uVar1))
 					{
-						if (!func_333("BJACK_NA"))
+						if (!func_333("BJACK_NA" /* GXT: This feature is not available for you. */))
 						{
-							func_332("BJACK_NA");
+							func_332("BJACK_NA" /* GXT: This feature is not available for you. */);
 						}
 					}
 					else if (Local_109.f_1600[Local_119.f_247] != func_420())
 					{
-						if (!func_333("BJACK_USED"))
+						if (!func_333("BJACK_USED" /* GXT: This seat is currently in use. */))
 						{
-							func_332("BJACK_USED");
+							func_332("BJACK_USED" /* GXT: This seat is currently in use. */);
 						}
 					}
 					else if (func_331())
 					{
 						if (func_327() == 2)
 						{
-							if (!func_333("CAS_MG_CTIME"))
+							if (!func_333("CAS_MG_CTIME" /* GXT: This feature is not available now.  Please come back later. */))
 							{
-								func_332("CAS_MG_CTIME");
+								func_332("CAS_MG_CTIME" /* GXT: This feature is not available now.  Please come back later. */);
 							}
 						}
-						else if (!func_333("CAS_MG_CBAN"))
+						else if (!func_333("CAS_MG_CBAN" /* GXT: This feature is not available now.  Please come back later. */))
 						{
-							func_332("CAS_MG_CBAN");
+							func_332("CAS_MG_CBAN" /* GXT: This feature is not available now.  Please come back later. */);
 						}
 					}
 					else if ((!func_326(PLAYER::PLAYER_ID()) && (func_381(Local_119.f_247) == 2 || func_381(Local_119.f_247) == 3)) && !(func_325(1) && func_326(func_324())))
 					{
-						if (!func_333("CAS_MG_SUITE2"))
+						if (!func_333("CAS_MG_SUITE2" /* GXT: A VIP Membership is required to play High Limit. Purchase a Penthouse from www.thediamondcasinoandresort.com to become a VIP member. */))
 						{
-							func_332("CAS_MG_SUITE2");
+							func_332("CAS_MG_SUITE2" /* GXT: A VIP Membership is required to play High Limit. Purchase a Penthouse from www.thediamondcasinoandresort.com to become a VIP member. */);
 						}
 					}
 					else if (!func_323() && !(func_325(1) && func_322(func_324())))
 					{
-						if (!func_320("CAS_MG_MEMB2", func_321(1)))
+						if (!func_320("CAS_MG_MEMB2" /* GXT: A Standard Membership is required to play. Speak to Guest Services ~BLIP_CASINO_CONCIERGE~ to purchase this or press ~INPUT_CONTEXT_SECONDARY~ to buy now for $~1~. */, func_321(1)))
 						{
-							func_319("CAS_MG_MEMB2", func_321(1));
+							func_319("CAS_MG_MEMB2" /* GXT: A Standard Membership is required to play. Speak to Guest Services ~BLIP_CASINO_CONCIERGE~ to purchase this or press ~INPUT_CONTEXT_SECONDARY~ to buy now for $~1~. */, func_321(1));
 						}
 						else if (PAD::IS_CONTROL_JUST_PRESSED(2, 52))
 						{
@@ -5224,28 +5224,28 @@ void func_86()//Position - 0x981A
 					{
 						if (func_426(PLAYER::PLAYER_ID()))
 						{
-							if (!func_333("CAS_MG_NOCHIPS6"))
+							if (!func_333("CAS_MG_NOCHIPS6" /* GXT: Chips are required to play Blackjack. Use the Phone Services ~BLIP_CASINO_CONCIERGE~ to acquire them. */))
 							{
-								func_332("CAS_MG_NOCHIPS6");
+								func_332("CAS_MG_NOCHIPS6" /* GXT: Chips are required to play Blackjack. Use the Phone Services ~BLIP_CASINO_CONCIERGE~ to acquire them. */);
 							}
 						}
-						else if (!func_333("CAS_MG_NOCHIPS2"))
+						else if (!func_333("CAS_MG_NOCHIPS2" /* GXT: Chips are required to play Blackjack. Speak to the Cashier ~BLIP_CASINO_CHIPS~ to acquire them. */))
 						{
-							func_332("CAS_MG_NOCHIPS2");
+							func_332("CAS_MG_NOCHIPS2" /* GXT: Chips are required to play Blackjack. Speak to the Cashier ~BLIP_CASINO_CHIPS~ to acquire them. */);
 						}
 					}
 					else if (Local_119.f_248 < Local_119.f_246)
 					{
 						if (func_426(PLAYER::PLAYER_ID()))
 						{
-							if (!func_333("CAS_MG_LOWCHIPS6"))
+							if (!func_333("CAS_MG_LOWCHIPS6" /* GXT: You don't have enough Chips to play Blackjack. Use the Phone Services ~BLIP_CASINO_CONCIERGE~ to acquire more. */))
 							{
-								func_332("CAS_MG_LOWCHIPS6");
+								func_332("CAS_MG_LOWCHIPS6" /* GXT: You don't have enough Chips to play Blackjack. Use the Phone Services ~BLIP_CASINO_CONCIERGE~ to acquire more. */);
 							}
 						}
-						else if (!func_333("CAS_MG_LOWCHIPS2"))
+						else if (!func_333("CAS_MG_LOWCHIPS2" /* GXT: You don't have enough Chips to play Blackjack. Speak to the Cashier ~BLIP_CASINO_CHIPS~ to acquire more. */))
 						{
-							func_332("CAS_MG_LOWCHIPS2");
+							func_332("CAS_MG_LOWCHIPS2" /* GXT: You don't have enough Chips to play Blackjack. Speak to the Cashier ~BLIP_CASINO_CHIPS~ to acquire more. */);
 						}
 					}
 					else if (Local_119.f_259 == -1)
@@ -5259,23 +5259,23 @@ void func_86()//Position - 0x981A
 							if (func_314(func_324()) == 1)
 							{
 								Local_119.f_256 = 1;
-								func_313(&(Local_119.f_259), 4, "BJACK_PLAY_A", 0, 0, 0, 0);
+								func_313(&(Local_119.f_259), 4, "BJACK_PLAY_A" /* GXT: Press ~INPUT_CONTEXT~ to play Blackjack using your MC President's casino membership. */, 0, 0, 0, 0);
 							}
 							else if (func_312(func_324()))
 							{
 								Local_119.f_256 = 2;
-								func_313(&(Local_119.f_259), 4, "BJACK_PLAY_B", 0, 0, 0, 0);
+								func_313(&(Local_119.f_259), 4, "BJACK_PLAY_B" /* GXT: Press ~INPUT_CONTEXT~ to play Blackjack using your CEO's casino membership. */, 0, 0, 0, 0);
 							}
 							else
 							{
 								Local_119.f_256 = 3;
-								func_313(&(Local_119.f_259), 4, "BJACK_PLAY_C", 0, 0, 0, 0);
+								func_313(&(Local_119.f_259), 4, "BJACK_PLAY_C" /* GXT: Press ~INPUT_CONTEXT~ to play Blackjack using your VIP's casino membership. */, 0, 0, 0, 0);
 							}
 						}
 						else
 						{
 							Local_119.f_256 = 0;
-							func_313(&(Local_119.f_259), 4, "BJACK_PLAY", 0, 0, 0, 0);
+							func_313(&(Local_119.f_259), 4, "BJACK_PLAY" /* GXT: Press ~INPUT_CONTEXT~ to play Blackjack. */, 0, 0, 0, 0);
 						}
 					}
 					else if (func_311(Local_119.f_259, 1))
@@ -5362,14 +5362,14 @@ void func_86()//Position - 0x981A
 						AUDIO::PLAY_SOUND_FRONTEND(-1, "DLC_VW_RULES", "dlc_vw_table_games_frontend_sounds", true);
 						func_293(0, 0);
 						func_291(1, sVar2, sVar2);
-						func_290("BJACK_TITLE");
+						func_290("BJACK_TITLE" /* GXT: BLACKJACK */);
 						func_289(-1, 1, 1);
-						func_288("BJACK_DIS", 0, 0);
-						func_287("BJACK_DIS1");
-						func_287("BJACK_DIS2");
-						func_287("BJACK_DIS3");
-						func_286(202, "BJACK_EXIT", -1);
-						func_286(201, "BJACK_CONT", -1);
+						func_288("BJACK_DIS" /* GXT: ~a~~n~~n~~a~~n~~n~~a~ */, 0, 0);
+						func_287("BJACK_DIS1" /* GXT: The aim of Blackjack is to beat the Dealer's hand without going over 21. This game uses four standard 52-card decks, which are shuffled at the start of every hand. Insurance is not offered if the Dealer's face up card is an ace. */);
+						func_287("BJACK_DIS2" /* GXT: You can split your hand once if the first two cards have the same value. Drawing seven cards without going bust will automatically win. */);
+						func_287("BJACK_DIS3" /* GXT: The Dealer will stand on soft 17. */);
+						func_286(202, "BJACK_EXIT" /* GXT: Quit */, -1);
+						func_286(201, "BJACK_CONT" /* GXT: Continue */, -1);
 						iLocal_147 = 1;
 					}
 					func_247(1, -1, 1, 0, 1, -1082130432, 0, 0, -1);
@@ -5663,7 +5663,7 @@ void func_90()//Position - 0xA9A3
 	{
 		if (func_209(Local_118[PLAYER::PLAYER_ID() /*8*/].f_4))
 		{
-			func_208("BJACK_ERROR", -1);
+			func_208("BJACK_ERROR" /* GXT: Something went wrong with the game. */, -1);
 			return;
 		}
 	}
@@ -5768,7 +5768,7 @@ void func_90()//Position - 0xA9A3
 		{
 			if (Local_109.f_1515[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4] != 6 || Local_109.f_1575[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4] != (Local_118[PLAYER::PLAYER_ID() /*8*/].f_3 - (4 * Local_118[PLAYER::PLAYER_ID() /*8*/].f_4)))
 			{
-				func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 202, true), "BJACK_EXIT", &(Local_119.f_874), 0);
+				func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 202, true), "BJACK_EXIT" /* GXT: Quit */, &(Local_119.f_874), 0);
 			}
 			else if (((ENTITY::IS_ENTITY_PLAYING_ANIM(NETWORK::NET_TO_PED(Local_109.f_1595[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4]), func_58(), func_25(Local_118[PLAYER::PLAYER_ID() /*8*/].f_4, (Local_118[PLAYER::PLAYER_ID() /*8*/].f_3 - (4 * Local_118[PLAYER::PLAYER_ID() /*8*/].f_4)), iVar0, 0), 3) || ENTITY::IS_ENTITY_PLAYING_ANIM(NETWORK::NET_TO_PED(Local_109.f_1595[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4]), func_58(), func_25(Local_118[PLAYER::PLAYER_ID() /*8*/].f_4, (Local_118[PLAYER::PLAYER_ID() /*8*/].f_3 - (4 * Local_118[PLAYER::PLAYER_ID() /*8*/].f_4)), iVar0, 1), 3)) && !BitTest(Local_109.f_1555[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4], 12)) && !BitTest(Local_119.f_252, 0))
 			{
@@ -5776,14 +5776,14 @@ void func_90()//Position - 0xA9A3
 				{
 					if (((!BitTest(Local_118[PLAYER::PLAYER_ID() /*8*/], 12) && !(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/].f_8 == 2 && func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])) == 21)) && func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])) <= 21) && Local_109.f_899[PLAYER::PLAYER_ID() /*9*/].f_8 <= 7)
 					{
-						func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 201, true), "BJACK_HIT", &(Local_119.f_874), 0);
-						func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 203, true), "BJACK_STAND", &(Local_119.f_874), 0);
+						func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 201, true), "BJACK_HIT" /* GXT: Hit */, &(Local_119.f_874), 0);
+						func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 203, true), "BJACK_STAND" /* GXT: Stand */, &(Local_119.f_874), 0);
 					}
 				}
 				else if ((((!BitTest(Local_118[PLAYER::PLAYER_ID() /*8*/], 12) && !(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/].f_8 == 2 && func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])) == 21)) && func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])) <= 21) && Local_109.f_899[PLAYER::PLAYER_ID() /*9*/].f_8 <= 7) || (((!BitTest(Local_118[PLAYER::PLAYER_ID() /*8*/], 13) && !(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/].f_8 == 2 && func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/])) == 21)) && func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/])) <= 21) && Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/].f_8 <= 7))
 				{
-					func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 201, true), "BJACK_HIT", &(Local_119.f_874), 0);
-					func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 203, true), "BJACK_STAND", &(Local_119.f_874), 0);
+					func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 201, true), "BJACK_HIT" /* GXT: Hit */, &(Local_119.f_874), 0);
+					func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 203, true), "BJACK_STAND" /* GXT: Stand */, &(Local_119.f_874), 0);
 				}
 				if (Local_119.f_248 >= Local_119.f_244)
 				{
@@ -5791,7 +5791,7 @@ void func_90()//Position - 0xA9A3
 					{
 						if ((func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])) < 21 && Local_109.f_899[PLAYER::PLAYER_ID() /*9*/].f_8 == 2) && !BitTest(Local_118[PLAYER::PLAYER_ID() /*8*/], 10))
 						{
-							func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 204, true), "BJACK_DOUBLE", &(Local_119.f_874), 0);
+							func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 204, true), "BJACK_DOUBLE" /* GXT: Double Down */, &(Local_119.f_874), 0);
 						}
 					}
 					else if (!BitTest(Local_118[PLAYER::PLAYER_ID() /*8*/], 13) && !BitTest(Local_118[PLAYER::PLAYER_ID() /*8*/], 11))
@@ -5800,13 +5800,13 @@ void func_90()//Position - 0xA9A3
 						{
 							if (func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/])) < 21)
 							{
-								func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 204, true), "BJACK_DOUBLE", &(Local_119.f_874), 0);
+								func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 204, true), "BJACK_DOUBLE" /* GXT: Double Down */, &(Local_119.f_874), 0);
 							}
 						}
 					}
 					else if ((func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])) < 21 && Local_109.f_899[PLAYER::PLAYER_ID() /*9*/].f_8 == 2) && !BitTest(Local_118[PLAYER::PLAYER_ID() /*8*/], 10))
 					{
-						func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 204, true), "BJACK_DOUBLE", &(Local_119.f_874), 0);
+						func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 204, true), "BJACK_DOUBLE" /* GXT: Double Down */, &(Local_119.f_874), 0);
 					}
 				}
 				if (Local_109.f_899[PLAYER::PLAYER_ID() /*9*/].f_8 == 2 && !BitTest(Local_118[PLAYER::PLAYER_ID() /*8*/], 14))
@@ -5815,7 +5815,7 @@ void func_90()//Position - 0xA9A3
 					{
 						if (func_35(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/][0]) == func_35(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/][1]))
 						{
-							func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 206, true), "BJACK_SPLIT", &(Local_119.f_874), 0);
+							func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 206, true), "BJACK_SPLIT" /* GXT: Split */, &(Local_119.f_874), 0);
 						}
 					}
 				}
@@ -5825,37 +5825,37 @@ void func_90()//Position - 0xA9A3
 		{
 			if (!BitTest(Local_118[PLAYER::PLAYER_ID() /*8*/], 15) && !BitTest(Local_119.f_252, 0))
 			{
-				func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 201, true), "BJACK_PLACE", &(Local_119.f_874), 0);
+				func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 201, true), "BJACK_PLACE" /* GXT: Place Bet */, &(Local_119.f_874), 0);
 				if (!BitTest(Local_119.f_252, 20))
 				{
-					func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 204, true), "BJACK_BET_MAX", &(Local_119.f_874), 0);
+					func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 204, true), "BJACK_BET_MAX" /* GXT: Max Bet */, &(Local_119.f_874), 0);
 				}
-				func_182(2, 7, "BJACK_BET_NUM", &(Local_119.f_874));
+				func_182(2, 7, "BJACK_BET_NUM" /* GXT: Adjust Bet */, &(Local_119.f_874));
 			}
 		}
 		if (BitTest(Local_119.f_250, 0))
 		{
-			func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 202, true), "IB_BACK", &(Local_119.f_874), 0);
-			func_182(2, 8, "IB_TAB", &(Local_119.f_874));
+			func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 202, true), "IB_BACK" /* GXT: Back */, &(Local_119.f_874), 0);
+			func_182(2, 8, "IB_TAB" /* GXT: Previous/Next Page */, &(Local_119.f_874));
 		}
 		if (Local_109.f_1515[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4] < 9 || !BitTest(Local_109.f_1555[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4], 13))
 		{
 			if (Local_109.f_846[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4 /*13*/].f_12 >= 2)
 			{
-				func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 208, true), "BJACK_DLR", &(Local_119.f_874), 0);
+				func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 208, true), "BJACK_DLR" /* GXT: Dealer's Cards */, &(Local_119.f_874), 0);
 			}
 			if (Local_109.f_899[PLAYER::PLAYER_ID() /*9*/].f_8 > 0)
 			{
-				func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 207, true), "BJACK_CARDS", &(Local_119.f_874), 0);
+				func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 207, true), "BJACK_CARDS" /* GXT: Your Cards */, &(Local_119.f_874), 0);
 			}
 		}
 		if (bLocal_139 && Local_109.f_1570[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4] > 1)
 		{
-			func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 195, true), "BJACK_LR", &(Local_119.f_874), 0);
+			func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0, 195, true), "BJACK_LR" /* GXT: Look Left/Right */, &(Local_119.f_874), 0);
 		}
 		if (!BitTest(Local_119.f_250, 0))
 		{
-			func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 210, true), "BJACK_RULESb", &(Local_119.f_874), 0);
+			func_183(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 210, true), "BJACK_RULESb" /* GXT: Rules */, &(Local_119.f_874), 0);
 		}
 		Var3 = { func_181() };
 		func_180(&(Local_119.f_874), 1f);
@@ -5935,15 +5935,15 @@ void func_90()//Position - 0xA9A3
 				HUD::CLEAR_HELP(true);
 				if (Local_119.f_256 == 1)
 				{
-					func_208("IT_MEMBOc", -1);
+					func_208("IT_MEMBOc" /* GXT: You have been removed from the game because you no longer have access to your MC President's casino membership. */, -1);
 				}
 				else if (Local_119.f_256 == 2)
 				{
-					func_208("IT_MEMBOa", -1);
+					func_208("IT_MEMBOa" /* GXT: You have been removed from the game because you no longer have access to your CEO's casino membership. */, -1);
 				}
 				else if (Local_119.f_256 == 3)
 				{
-					func_208("IT_MEMBOb", -1);
+					func_208("IT_MEMBOb" /* GXT: You have been removed from the game because you no longer have access to your VIP's casino membership. */, -1);
 				}
 				return;
 			}
@@ -5969,20 +5969,20 @@ void func_90()//Position - 0xA9A3
 				{
 					if (Local_119.f_248 <= 0)
 					{
-						func_208("CAS_MG_NOCHIPS6", -1);
+						func_208("CAS_MG_NOCHIPS6" /* GXT: Chips are required to play Blackjack. Use the Phone Services ~BLIP_CASINO_CONCIERGE~ to acquire them. */, -1);
 					}
 					else
 					{
-						func_208("CAS_MG_LOWCHIPS6", -1);
+						func_208("CAS_MG_LOWCHIPS6" /* GXT: You don't have enough Chips to play Blackjack. Use the Phone Services ~BLIP_CASINO_CONCIERGE~ to acquire more. */, -1);
 					}
 				}
 				else if (Local_119.f_248 <= 0)
 				{
-					func_208("CAS_MG_NOCHIPS2", -1);
+					func_208("CAS_MG_NOCHIPS2" /* GXT: Chips are required to play Blackjack. Speak to the Cashier ~BLIP_CASINO_CHIPS~ to acquire them. */, -1);
 				}
 				else
 				{
-					func_208("CAS_MG_LOWCHIPS2", -1);
+					func_208("CAS_MG_LOWCHIPS2" /* GXT: You don't have enough Chips to play Blackjack. Speak to the Cashier ~BLIP_CASINO_CHIPS~ to acquire more. */, -1);
 				}
 				return;
 			}
@@ -6032,11 +6032,11 @@ void func_90()//Position - 0xA9A3
 				HUD::CLEAR_HELP(true);
 				if (func_327() == 2)
 				{
-					func_208("CAS_MG_CTIME", -1);
+					func_208("CAS_MG_CTIME" /* GXT: This feature is not available now.  Please come back later. */, -1);
 				}
 				else
 				{
-					func_208("CAS_MG_CBAN", -1);
+					func_208("CAS_MG_CBAN" /* GXT: This feature is not available now.  Please come back later. */, -1);
 				}
 				return;
 			}
@@ -6245,11 +6245,11 @@ void func_90()//Position - 0xA9A3
 							NETWORK::NETWORK_START_SYNCHRONISED_SCENE(Local_119.f_255);
 							HUD::CLEAR_HELP(true);
 						}
-						if (!func_333("BJACK_BET") && !BitTest(Local_119.f_252, 0))
+						if (!func_333("BJACK_BET" /* GXT: Place your bet. */) && !BitTest(Local_119.f_252, 0))
 						{
 							if ((!bLocal_138 && !bLocal_139) && !bLocal_130)
 							{
-								func_163("BJACK_BET");
+								func_163("BJACK_BET" /* GXT: Place your bet. */);
 							}
 						}
 					}
@@ -6300,11 +6300,11 @@ void func_90()//Position - 0xA9A3
 			{
 				if (func_190(&(Local_109.f_1642[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4 /*2*/]), 0, 0) <= 24000)
 				{
-					func_159((30000 - func_190(&(Local_109.f_1642[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4 /*2*/]), 0, 0)), "BJACK_TIME", 0, 0, -1, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1);
+					func_159((30000 - func_190(&(Local_109.f_1642[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4 /*2*/]), 0, 0)), "BJACK_TIME" /* GXT: TIME */, 0, 0, -1, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 				}
 				else
 				{
-					func_159((30000 - func_190(&(Local_109.f_1642[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4 /*2*/]), 0, 0)), "BJACK_TIME", 0, 0, -1, 0, 3, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
+					func_159((30000 - func_190(&(Local_109.f_1642[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4 /*2*/]), 0, 0)), "BJACK_TIME" /* GXT: TIME */, 0, 0, -1, 0, 3, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
 				}
 			}
 			if (Local_109.f_1515[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4] > 3)
@@ -6320,7 +6320,7 @@ void func_90()//Position - 0xA9A3
 					func_165(2);
 				}
 			}
-			func_155(Local_119.f_244, "BJACK_BET2", -1, 1, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, -1);
+			func_155(Local_119.f_244, "BJACK_BET2" /* GXT: BET */, -1, 1, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, -1);
 			break;
 		
 		case 2:
@@ -6373,11 +6373,11 @@ void func_90()//Position - 0xA9A3
 						{
 							if (func_190(&(Local_119.f_1576), 0, 0) <= 24000)
 							{
-								func_159((30000 - func_190(&(Local_119.f_1576), 0, 0)), "BJACK_TIME", 0, 0, -1, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1);
+								func_159((30000 - func_190(&(Local_119.f_1576), 0, 0)), "BJACK_TIME" /* GXT: TIME */, 0, 0, -1, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 							}
 							else
 							{
-								func_159((30000 - func_190(&(Local_119.f_1576), 0, 0)), "BJACK_TIME", 0, 0, -1, 0, 3, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
+								func_159((30000 - func_190(&(Local_119.f_1576), 0, 0)), "BJACK_TIME" /* GXT: TIME */, 0, 0, -1, 0, 3, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, -1);
 							}
 						}
 						if (func_65(&(Local_119.f_1576), 30000, 0))
@@ -6774,15 +6774,15 @@ void func_90()//Position - 0xA9A3
 				}
 				else if (iVar0 != PLAYER::PLAYER_ID() && iVar0 != func_420())
 				{
-					if (!func_333("BJACK_WAIT"))
+					if (!func_333("BJACK_WAIT" /* GXT: Waiting for other players. */))
 					{
 						if ((!bLocal_138 && !bLocal_139) && !bLocal_130)
 						{
-							func_163("BJACK_WAIT");
+							func_163("BJACK_WAIT" /* GXT: Waiting for other players. */);
 						}
 					}
 				}
-				else if (func_333("BJACK_WAIT"))
+				else if (func_333("BJACK_WAIT" /* GXT: Waiting for other players. */))
 				{
 					HUD::CLEAR_HELP(true);
 				}
@@ -6799,9 +6799,9 @@ void func_90()//Position - 0xA9A3
 							{
 								if ((!bLocal_138 && !bLocal_139) && !bLocal_130)
 								{
-									if (!func_333("BJACK_TURN_S"))
+									if (!func_333("BJACK_TURN_S" /* GXT: Take another card or stand with your current hand. You can also split your cards into two separate hands by doubling your bet. */))
 									{
-										func_163("BJACK_TURN_S");
+										func_163("BJACK_TURN_S" /* GXT: Take another card or stand with your current hand. You can also split your cards into two separate hands by doubling your bet. */);
 									}
 								}
 							}
@@ -6809,26 +6809,26 @@ void func_90()//Position - 0xA9A3
 							{
 								if ((!bLocal_138 && !bLocal_139) && !bLocal_130)
 								{
-									if (!func_333("BJACK_TURN_D"))
+									if (!func_333("BJACK_TURN_D" /* GXT: Take another card or stand with your current hand. Double Down will double your bet and take just one extra card. */))
 									{
-										func_163("BJACK_TURN_D");
+										func_163("BJACK_TURN_D" /* GXT: Take another card or stand with your current hand. Double Down will double your bet and take just one extra card. */);
 									}
 								}
 							}
 							else if ((!bLocal_138 && !bLocal_139) && !bLocal_130)
 							{
-								if (!func_333("BJACK_TURN"))
+								if (!func_333("BJACK_TURN" /* GXT: Take another card or stand with your current hand. */))
 								{
-									func_163("BJACK_TURN");
+									func_163("BJACK_TURN" /* GXT: Take another card or stand with your current hand. */);
 								}
 							}
 						}
-						else if ((func_333("BJACK_TURN") || func_333("BJACK_TURN_D")) || func_333("BJACK_TURN_S"))
+						else if ((func_333("BJACK_TURN" /* GXT: Take another card or stand with your current hand. */) || func_333("BJACK_TURN_D" /* GXT: Take another card or stand with your current hand. Double Down will double your bet and take just one extra card. */)) || func_333("BJACK_TURN_S" /* GXT: Take another card or stand with your current hand. You can also split your cards into two separate hands by doubling your bet. */))
 						{
 							HUD::CLEAR_HELP(true);
 						}
 					}
-					else if ((func_333("BJACK_TURN") || func_333("BJACK_TURN_D")) || func_333("BJACK_TURN_S"))
+					else if ((func_333("BJACK_TURN" /* GXT: Take another card or stand with your current hand. */) || func_333("BJACK_TURN_D" /* GXT: Take another card or stand with your current hand. Double Down will double your bet and take just one extra card. */)) || func_333("BJACK_TURN_S" /* GXT: Take another card or stand with your current hand. You can also split your cards into two separate hands by doubling your bet. */))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -6914,11 +6914,11 @@ void func_90()//Position - 0xA9A3
 						HUD::CLEAR_HELP(true);
 						if (func_327() == 2)
 						{
-							func_208("CAS_MG_CTIME", -1);
+							func_208("CAS_MG_CTIME" /* GXT: This feature is not available now.  Please come back later. */, -1);
 						}
 						else
 						{
-							func_208("CAS_MG_CBAN", -1);
+							func_208("CAS_MG_CBAN" /* GXT: This feature is not available now.  Please come back later. */, -1);
 						}
 						return;
 					}
@@ -6929,7 +6929,7 @@ void func_90()//Position - 0xA9A3
 				}
 				if (Local_109.f_1515[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4] > 6)
 				{
-					if ((func_333("BJACK_TURN") || func_333("BJACK_TURN_D")) || func_333("BJACK_TURN_S"))
+					if ((func_333("BJACK_TURN" /* GXT: Take another card or stand with your current hand. */) || func_333("BJACK_TURN_D" /* GXT: Take another card or stand with your current hand. Double Down will double your bet and take just one extra card. */)) || func_333("BJACK_TURN_S" /* GXT: Take another card or stand with your current hand. You can also split your cards into two separate hands by doubling your bet. */))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -6994,79 +6994,79 @@ void func_90()//Position - 0xA9A3
 							{
 								if (bVar19 && !bVar18)
 								{
-									if (!func_105("BJACK_WIN_2", "BJACK_BJ", Local_124.f_14))
+									if (!func_105("BJACK_WIN_2" /* GXT: You have ~a~. You win ~1~ Chips! */, "BJACK_BJ" /* GXT: Blackjack */, Local_124.f_14))
 									{
-										func_104("BJACK_WIN_2", "BJACK_BJ", Local_124.f_14);
+										func_104("BJACK_WIN_2" /* GXT: You have ~a~. You win ~1~ Chips! */, "BJACK_BJ" /* GXT: Blackjack */, Local_124.f_14);
 									}
 								}
 								else if (iVar13 <= 21 && iVar16 == 7)
 								{
-									if (!func_105("BJACK_WIN_2", "BJACK_7CC", Local_124.f_14))
+									if (!func_105("BJACK_WIN_2" /* GXT: You have ~a~. You win ~1~ Chips! */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, Local_124.f_14))
 									{
-										func_104("BJACK_WIN_2", "BJACK_7CC", Local_124.f_14);
+										func_104("BJACK_WIN_2" /* GXT: You have ~a~. You win ~1~ Chips! */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, Local_124.f_14);
 									}
 								}
 								else if (iVar13 == iVar12)
 								{
-									if (!func_333("BJACK_PUSH"))
+									if (!func_333("BJACK_PUSH" /* GXT: You and the Dealer have the same hands. The hand is a push. */))
 									{
-										func_163("BJACK_PUSH");
+										func_163("BJACK_PUSH" /* GXT: You and the Dealer have the same hands. The hand is a push. */);
 									}
 								}
-								else if (!func_103("BJACK_WIN_1", iVar13, Local_124.f_14))
+								else if (!func_103("BJACK_WIN_1" /* GXT: You have ~1~. You win ~1~ Chips! */, iVar13, Local_124.f_14))
 								{
-									func_102("BJACK_WIN_1", iVar13, Local_124.f_14);
+									func_102("BJACK_WIN_1" /* GXT: You have ~1~. You win ~1~ Chips! */, iVar13, Local_124.f_14);
 								}
 							}
 							else if ((bVar19 || bVar20) && !bVar18)
 							{
 								if (bVar19 && bVar20)
 								{
-									if (!func_101("BJACK_WIN_6", "BJACK_BJ", "BJACK_BJ", Local_124.f_14))
+									if (!func_101("BJACK_WIN_6" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. You win ~1~ Chips! */, "BJACK_BJ" /* GXT: Blackjack */, "BJACK_BJ" /* GXT: Blackjack */, Local_124.f_14))
 									{
-										func_100("BJACK_WIN_6", "BJACK_BJ", "BJACK_BJ", Local_124.f_14);
+										func_100("BJACK_WIN_6" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. You win ~1~ Chips! */, "BJACK_BJ" /* GXT: Blackjack */, "BJACK_BJ" /* GXT: Blackjack */, Local_124.f_14);
 									}
 								}
 								else if (bVar19)
 								{
 									if (iVar14 <= 21 && iVar17 == 7)
 									{
-										if (!func_101("BJACK_WIN_6", "BJACK_BJ", "BJACK_7CC", Local_124.f_14))
+										if (!func_101("BJACK_WIN_6" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. You win ~1~ Chips! */, "BJACK_BJ" /* GXT: Blackjack */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, Local_124.f_14))
 										{
-											func_100("BJACK_WIN_6", "BJACK_BJ", "BJACK_7CC", Local_124.f_14);
+											func_100("BJACK_WIN_6" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. You win ~1~ Chips! */, "BJACK_BJ" /* GXT: Blackjack */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, Local_124.f_14);
 										}
 									}
 									else if (iVar14 > 21)
 									{
-										if (!func_101("BJACK_WIN_6", "BJACK_BJ", "BJACK_BUSTED", Local_124.f_14))
+										if (!func_101("BJACK_WIN_6" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. You win ~1~ Chips! */, "BJACK_BJ" /* GXT: Blackjack */, "BJACK_BUSTED" /* GXT: gone bust */, Local_124.f_14))
 										{
-											func_100("BJACK_WIN_6", "BJACK_BJ", "BJACK_BUSTED", Local_124.f_14);
+											func_100("BJACK_WIN_6" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. You win ~1~ Chips! */, "BJACK_BJ" /* GXT: Blackjack */, "BJACK_BUSTED" /* GXT: gone bust */, Local_124.f_14);
 										}
 									}
-									else if (!func_99("BJACK_WIN_4", "BJACK_BJ", iVar14, Local_124.f_14))
+									else if (!func_99("BJACK_WIN_4" /* GXT: You have ~a~ in the left hand and have ~1~ in the right hand. You win ~1~ Chips! */, "BJACK_BJ" /* GXT: Blackjack */, iVar14, Local_124.f_14))
 									{
-										func_98("BJACK_WIN_4", "BJACK_BJ", iVar14, Local_124.f_14);
+										func_98("BJACK_WIN_4" /* GXT: You have ~a~ in the left hand and have ~1~ in the right hand. You win ~1~ Chips! */, "BJACK_BJ" /* GXT: Blackjack */, iVar14, Local_124.f_14);
 									}
 								}
 								else if (bVar20)
 								{
 									if (iVar13 <= 21 && iVar16 == 7)
 									{
-										if (!func_101("BJACK_WIN_6", "BJACK_7CC", "BJACK_BJ", Local_124.f_14))
+										if (!func_101("BJACK_WIN_6" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. You win ~1~ Chips! */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, "BJACK_BJ" /* GXT: Blackjack */, Local_124.f_14))
 										{
-											func_100("BJACK_WIN_6", "BJACK_7CC", "BJACK_BJ", Local_124.f_14);
+											func_100("BJACK_WIN_6" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. You win ~1~ Chips! */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, "BJACK_BJ" /* GXT: Blackjack */, Local_124.f_14);
 										}
 									}
 									else if (iVar13 > 21)
 									{
-										if (!func_101("BJACK_WIN_6", "BJACK_BUSTED", "BJACK_BJ", Local_124.f_14))
+										if (!func_101("BJACK_WIN_6" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. You win ~1~ Chips! */, "BJACK_BUSTED" /* GXT: gone bust */, "BJACK_BJ" /* GXT: Blackjack */, Local_124.f_14))
 										{
-											func_100("BJACK_WIN_6", "BJACK_BUSTED", "BJACK_BJ", Local_124.f_14);
+											func_100("BJACK_WIN_6" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. You win ~1~ Chips! */, "BJACK_BUSTED" /* GXT: gone bust */, "BJACK_BJ" /* GXT: Blackjack */, Local_124.f_14);
 										}
 									}
-									else if (!func_99("BJACK_WIN_5", "BJACK_BJ", iVar13, Local_124.f_14))
+									else if (!func_99("BJACK_WIN_5" /* GXT: You have ~1~ in the left hand and have ~a~ in the right hand. You win ~1~ Chips! */, "BJACK_BJ" /* GXT: Blackjack */, iVar13, Local_124.f_14))
 									{
-										func_98("BJACK_WIN_5", "BJACK_BJ", iVar13, Local_124.f_14);
+										func_98("BJACK_WIN_5" /* GXT: You have ~1~ in the left hand and have ~a~ in the right hand. You win ~1~ Chips! */, "BJACK_BJ" /* GXT: Blackjack */, iVar13, Local_124.f_14);
 									}
 								}
 							}
@@ -7074,100 +7074,100 @@ void func_90()//Position - 0xA9A3
 							{
 								if ((iVar13 <= 21 && iVar16 == 7) && (iVar14 <= 21 && iVar17 == 7))
 								{
-									if (!func_101("BJACK_WIN_6", "BJACK_7CC", "BJACK_7CC", Local_124.f_14))
+									if (!func_101("BJACK_WIN_6" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. You win ~1~ Chips! */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, Local_124.f_14))
 									{
-										func_100("BJACK_WIN_6", "BJACK_7CC", "BJACK_7CC", Local_124.f_14);
+										func_100("BJACK_WIN_6" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. You win ~1~ Chips! */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, Local_124.f_14);
 									}
 								}
 								else if (iVar13 <= 21 && iVar16 == 7)
 								{
 									if (iVar14 > 21)
 									{
-										if (!func_101("BJACK_WIN_6", "BJACK_7CC", "BJACK_BUSTED", Local_124.f_14))
+										if (!func_101("BJACK_WIN_6" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. You win ~1~ Chips! */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, "BJACK_BUSTED" /* GXT: gone bust */, Local_124.f_14))
 										{
-											func_100("BJACK_WIN_6", "BJACK_7CC", "BJACK_BUSTED", Local_124.f_14);
+											func_100("BJACK_WIN_6" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. You win ~1~ Chips! */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, "BJACK_BUSTED" /* GXT: gone bust */, Local_124.f_14);
 										}
 									}
-									else if (!func_99("BJACK_WIN_4", "BJACK_7CC", iVar14, Local_124.f_14))
+									else if (!func_99("BJACK_WIN_4" /* GXT: You have ~a~ in the left hand and have ~1~ in the right hand. You win ~1~ Chips! */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, iVar14, Local_124.f_14))
 									{
-										func_98("BJACK_WIN_4", "BJACK_7CC", iVar14, Local_124.f_14);
+										func_98("BJACK_WIN_4" /* GXT: You have ~a~ in the left hand and have ~1~ in the right hand. You win ~1~ Chips! */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, iVar14, Local_124.f_14);
 									}
 								}
 								else if (iVar14 <= 21 && iVar17 == 7)
 								{
 									if (iVar13 > 21)
 									{
-										if (!func_101("BJACK_WIN_6", "BJACK_BUSTED", "BJACK_7CC", Local_124.f_14))
+										if (!func_101("BJACK_WIN_6" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. You win ~1~ Chips! */, "BJACK_BUSTED" /* GXT: gone bust */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, Local_124.f_14))
 										{
-											func_100("BJACK_WIN_6", "BJACK_BUSTED", "BJACK_7CC", Local_124.f_14);
+											func_100("BJACK_WIN_6" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. You win ~1~ Chips! */, "BJACK_BUSTED" /* GXT: gone bust */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, Local_124.f_14);
 										}
 									}
-									else if (!func_99("BJACK_WIN_5", "BJACK_7CC", iVar13, Local_124.f_14))
+									else if (!func_99("BJACK_WIN_5" /* GXT: You have ~1~ in the left hand and have ~a~ in the right hand. You win ~1~ Chips! */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, iVar13, Local_124.f_14))
 									{
-										func_98("BJACK_WIN_5", "BJACK_7CC", iVar13, Local_124.f_14);
+										func_98("BJACK_WIN_5" /* GXT: You have ~1~ in the left hand and have ~a~ in the right hand. You win ~1~ Chips! */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, iVar13, Local_124.f_14);
 									}
 								}
 							}
 							else if (iVar13 == iVar12 && iVar14 == iVar12)
 							{
-								if (!func_333("BJACK_PUSH"))
+								if (!func_333("BJACK_PUSH" /* GXT: You and the Dealer have the same hands. The hand is a push. */))
 								{
-									func_163("BJACK_PUSH");
+									func_163("BJACK_PUSH" /* GXT: You and the Dealer have the same hands. The hand is a push. */);
 								}
 							}
 							else if (iVar13 <= 21 && iVar14 <= 21)
 							{
-								if (!func_97("BJACK_WIN_3", iVar13, iVar14, Local_124.f_14))
+								if (!func_97("BJACK_WIN_3" /* GXT: You have ~1~ in the left hand and have ~1~ in the right hand. You win ~1~ Chips! */, iVar13, iVar14, Local_124.f_14))
 								{
-									func_96("BJACK_WIN_3", iVar13, iVar14, Local_124.f_14);
+									func_96("BJACK_WIN_3" /* GXT: You have ~1~ in the left hand and have ~1~ in the right hand. You win ~1~ Chips! */, iVar13, iVar14, Local_124.f_14);
 								}
 							}
 							else if (iVar13 <= 21)
 							{
-								if (!func_99("BJACK_WIN_5", "BJACK_BUSTED", iVar13, Local_124.f_14))
+								if (!func_99("BJACK_WIN_5" /* GXT: You have ~1~ in the left hand and have ~a~ in the right hand. You win ~1~ Chips! */, "BJACK_BUSTED" /* GXT: gone bust */, iVar13, Local_124.f_14))
 								{
-									func_98("BJACK_WIN_5", "BJACK_BUSTED", iVar13, Local_124.f_14);
+									func_98("BJACK_WIN_5" /* GXT: You have ~1~ in the left hand and have ~a~ in the right hand. You win ~1~ Chips! */, "BJACK_BUSTED" /* GXT: gone bust */, iVar13, Local_124.f_14);
 								}
 							}
 							else if (iVar14 <= 21)
 							{
-								if (!func_99("BJACK_WIN_4", "BJACK_BUSTED", iVar14, Local_124.f_14))
+								if (!func_99("BJACK_WIN_4" /* GXT: You have ~a~ in the left hand and have ~1~ in the right hand. You win ~1~ Chips! */, "BJACK_BUSTED" /* GXT: gone bust */, iVar14, Local_124.f_14))
 								{
-									func_98("BJACK_WIN_4", "BJACK_BUSTED", iVar14, Local_124.f_14);
+									func_98("BJACK_WIN_4" /* GXT: You have ~a~ in the left hand and have ~1~ in the right hand. You win ~1~ Chips! */, "BJACK_BUSTED" /* GXT: gone bust */, iVar14, Local_124.f_14);
 								}
 							}
 						}
 						else if (bVar18)
 						{
-							if (!func_95("BJACK_LOSE_2", "BJACK_BJ"))
+							if (!func_95("BJACK_LOSE_2" /* GXT: The Dealer has ~a~. You lose. */, "BJACK_BJ" /* GXT: Blackjack */))
 							{
-								func_94("BJACK_LOSE_2", "BJACK_BJ");
+								func_94("BJACK_LOSE_2" /* GXT: The Dealer has ~a~. You lose. */, "BJACK_BJ" /* GXT: Blackjack */);
 							}
 						}
 						else if (Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/].f_8 <= 0)
 						{
 							if (iVar13 > 21)
 							{
-								if (!func_95("BJACK_LOSE_3", "BJACK_BUSTED"))
+								if (!func_95("BJACK_LOSE_3" /* GXT: You have ~a~. You lose. */, "BJACK_BUSTED" /* GXT: gone bust */))
 								{
-									func_94("BJACK_LOSE_3", "BJACK_BUSTED");
+									func_94("BJACK_LOSE_3" /* GXT: You have ~a~. You lose. */, "BJACK_BUSTED" /* GXT: gone bust */);
 								}
 							}
-							else if (!func_320("BJACK_LOSE_1", iVar12))
+							else if (!func_320("BJACK_LOSE_1" /* GXT: The Dealer has ~1~. You lose. */, iVar12))
 							{
-								func_93("BJACK_LOSE_1", iVar12);
+								func_93("BJACK_LOSE_1" /* GXT: The Dealer has ~1~. You lose. */, iVar12);
 							}
 						}
 						else if (iVar13 > 21 && iVar14 > 21)
 						{
-							if (!func_92("BJACK_LOSE_4", "BJACK_BUSTED", "BJACK_BUSTED"))
+							if (!func_92("BJACK_LOSE_4" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. You lose. */, "BJACK_BUSTED" /* GXT: gone bust */, "BJACK_BUSTED" /* GXT: gone bust */))
 							{
-								func_91("BJACK_LOSE_4", "BJACK_BUSTED", "BJACK_BUSTED");
+								func_91("BJACK_LOSE_4" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. You lose. */, "BJACK_BUSTED" /* GXT: gone bust */, "BJACK_BUSTED" /* GXT: gone bust */);
 							}
 						}
-						else if (!func_320("BJACK_LOSE_1", iVar12))
+						else if (!func_320("BJACK_LOSE_1" /* GXT: The Dealer has ~1~. You lose. */, iVar12))
 						{
-							func_93("BJACK_LOSE_1", iVar12);
+							func_93("BJACK_LOSE_1" /* GXT: The Dealer has ~1~. You lose. */, iVar12);
 						}
 					}
 					if (!BitTest(iLocal_142, 0))
@@ -10011,7 +10011,7 @@ void func_166()//Position - 0x11957
 			{
 				func_293(0, 0);
 				func_291(1, sVar0, sVar0);
-				func_290("BJACK_RULES");
+				func_290("BJACK_RULES" /* GXT: RULES */);
 				func_170(1, iLocal_129, 9);
 				func_169(1, 1, 1, 1, 1);
 				func_289(-1, 1, 1);
@@ -10056,37 +10056,37 @@ char* func_167(int iParam0)//Position - 0x11B04
 	switch (iParam0)
 	{
 		case 1:
-			return "BJACK_RULE_1";
+			return "BJACK_RULE_1" /* GXT: This game uses four standard 52-card decks, which are shuffled at the start of every hand. */;
 		
 		case 2:
-			return "BJACK_RULE_2";
+			return "BJACK_RULE_2" /* GXT: A player will automatically win if they manage to draw seven cards without going bust. */;
 		
 		case 3:
-			return "BJACK_RULE_3";
+			return "BJACK_RULE_3" /* GXT: After a player has been dealt their two initial cards, they can double their bet in return for one additional card. This is also available on both hands after splitting. */;
 		
 		case 4:
-			return "BJACK_RULE_4";
+			return "BJACK_RULE_4" /* GXT: You can split your hand once if the first two cards have the same value. The same bet amount must be bet for the split hand. */;
 		
 		case 5:
-			return "BJACK_RULE_5";
+			return "BJACK_RULE_5" /* GXT: Ace is worth 1 or 11 points. Face cards are all worth 10 points and 2 to 10 are worth their pip value. */;
 		
 		case 6:
-			return "BJACK_RULE_6";
+			return "BJACK_RULE_6" /* GXT: Blackjack pays 3 to 2 of the bet value. Other winning bets pay even money. */;
 		
 		case 7:
-			return "BJACK_RULE_7";
+			return "BJACK_RULE_7" /* GXT: The Dealer will continue taking cards until they hit at least soft 17 or go bust. If the Dealer and player both have Blackjack, this will result in a push. */;
 		
 		case 8:
-			return "BJACK_RULE_8";
+			return "BJACK_RULE_8" /* GXT: The combination of an ace with a card other than a ten-card is known as a "soft hand" because the player can count the ace as a 1 or 11. A soft hand cannot go bust by taking another card. */;
 		
 		case 9:
 			if ((func_381(Local_119.f_247) == 2 || func_381(Local_119.f_247) == 3) || func_426(PLAYER::PLAYER_ID()))
 			{
-				return "BJACK_RULE_9b";
+				return "BJACK_RULE_9b" /* GXT: - Minimum: 1000 Chips~n~- Maximum: 50000 Chips */;
 			}
 			else
 			{
-				return "BJACK_RULE_9a";
+				return "BJACK_RULE_9a" /* GXT: - Minimum: 10 Chips~n~- Maximum: 5000 Chips */;
 			}
 			break;
 	}
@@ -10098,37 +10098,37 @@ char* func_168(int iParam0)//Position - 0x11BC6
 	switch (iParam0)
 	{
 		case 1:
-			return "BJACK_RULE_1T";
+			return "BJACK_RULE_1T" /* GXT: The Pack~n~~a~ */;
 		
 		case 2:
-			return "BJACK_RULE_2T";
+			return "BJACK_RULE_2T" /* GXT: Seven-Card Charlie~n~~a~ */;
 		
 		case 3:
-			return "BJACK_RULE_3T";
+			return "BJACK_RULE_3T" /* GXT: Double Down~n~~a~ */;
 		
 		case 4:
-			return "BJACK_RULE_4T";
+			return "BJACK_RULE_4T" /* GXT: Split~n~~a~ */;
 		
 		case 5:
-			return "BJACK_RULE_5T";
+			return "BJACK_RULE_5T" /* GXT: Card Values~n~~a~ */;
 		
 		case 6:
-			return "BJACK_RULE_6T";
+			return "BJACK_RULE_6T" /* GXT: Payout~n~~a~ */;
 		
 		case 7:
-			return "BJACK_RULE_7T";
+			return "BJACK_RULE_7T" /* GXT: Dealer Hand~n~~a~ */;
 		
 		case 8:
-			return "BJACK_RULE_8T";
+			return "BJACK_RULE_8T" /* GXT: Soft Hand~n~~a~ */;
 		
 		case 9:
 			if ((func_381(Local_119.f_247) == 2 || func_381(Local_119.f_247) == 3) || func_426(PLAYER::PLAYER_ID()))
 			{
-				return "BJACK_RULE_9Tb";
+				return "BJACK_RULE_9Tb" /* GXT: Bet Limits~n~~a~ */;
 			}
 			else
 			{
-				return "BJACK_RULE_9Ta";
+				return "BJACK_RULE_9Ta" /* GXT: Bet Limits~n~~a~ */;
 			}
 			break;
 	}
@@ -10759,26 +10759,26 @@ void func_194()//Position - 0x1262D
 			{
 				if (func_27(&(Local_109.f_846[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4 /*13*/])) == 21 && Local_109.f_846[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4 /*13*/].f_12 == 2)
 				{
-					if (!func_95("BJACK_D_HAND2", "BJACK_BJ"))
+					if (!func_95("BJACK_D_HAND2" /* GXT: The Dealer has ~a~. */, "BJACK_BJ" /* GXT: Blackjack */))
 					{
-						func_94("BJACK_D_HAND2", "BJACK_BJ");
+						func_94("BJACK_D_HAND2" /* GXT: The Dealer has ~a~. */, "BJACK_BJ" /* GXT: Blackjack */);
 					}
 				}
 				else if (func_27(&(Local_109.f_846[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4 /*13*/])) > 21)
 				{
-					if (!func_95("BJACK_D_HAND2", "BJACK_BUSTED"))
+					if (!func_95("BJACK_D_HAND2" /* GXT: The Dealer has ~a~. */, "BJACK_BUSTED" /* GXT: gone bust */))
 					{
-						func_94("BJACK_D_HAND2", "BJACK_BUSTED");
+						func_94("BJACK_D_HAND2" /* GXT: The Dealer has ~a~. */, "BJACK_BUSTED" /* GXT: gone bust */);
 					}
 				}
-				else if (!func_320("BJACK_D_HAND1", func_27(&(Local_109.f_846[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4 /*13*/]))))
+				else if (!func_320("BJACK_D_HAND1" /* GXT: The Dealer has ~1~. */, func_27(&(Local_109.f_846[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4 /*13*/]))))
 				{
-					func_93("BJACK_D_HAND1", func_27(&(Local_109.f_846[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4 /*13*/])));
+					func_93("BJACK_D_HAND1" /* GXT: The Dealer has ~1~. */, func_27(&(Local_109.f_846[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4 /*13*/])));
 				}
 			}
-			else if (!func_320("BJACK_D_HAND1", func_35(Local_109.f_846[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4 /*13*/][1])))
+			else if (!func_320("BJACK_D_HAND1" /* GXT: The Dealer has ~1~. */, func_35(Local_109.f_846[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4 /*13*/][1])))
 			{
-				func_93("BJACK_D_HAND1", func_35(Local_109.f_846[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4 /*13*/][1]));
+				func_93("BJACK_D_HAND1" /* GXT: The Dealer has ~1~. */, func_35(Local_109.f_846[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4 /*13*/][1]));
 			}
 			fVar0 = CAM::GET_CAM_FOV(Local_119.f_242);
 			fVar1 = 50f;
@@ -10892,28 +10892,28 @@ void func_194()//Position - 0x1262D
 		{
 			if (func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/])) == 21 && Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/].f_8 == 2)
 			{
-				if (!func_95("BJACK_P_HAND2", "BJACK_BJ"))
+				if (!func_95("BJACK_P_HAND2" /* GXT: You have ~a~. */, "BJACK_BJ" /* GXT: Blackjack */))
 				{
-					func_94("BJACK_P_HAND2", "BJACK_BJ");
+					func_94("BJACK_P_HAND2" /* GXT: You have ~a~. */, "BJACK_BJ" /* GXT: Blackjack */);
 				}
 			}
 			else if (func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/])) <= 21 && Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/].f_8 == 7)
 			{
-				if (!func_95("BJACK_P_HAND2", "BJACK_7CC"))
+				if (!func_95("BJACK_P_HAND2" /* GXT: You have ~a~. */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */))
 				{
-					func_94("BJACK_P_HAND2", "BJACK_7CC");
+					func_94("BJACK_P_HAND2" /* GXT: You have ~a~. */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */);
 				}
 			}
 			else if (func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/])) > 21)
 			{
-				if (!func_95("BJACK_P_HAND2", "BJACK_BUSTED"))
+				if (!func_95("BJACK_P_HAND2" /* GXT: You have ~a~. */, "BJACK_BUSTED" /* GXT: gone bust */))
 				{
-					func_94("BJACK_P_HAND2", "BJACK_BUSTED");
+					func_94("BJACK_P_HAND2" /* GXT: You have ~a~. */, "BJACK_BUSTED" /* GXT: gone bust */);
 				}
 			}
-			else if (!func_320("BJACK_P_HAND1", func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/]))))
+			else if (!func_320("BJACK_P_HAND1" /* GXT: You have ~1~. */, func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/]))))
 			{
-				func_93("BJACK_P_HAND1", func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/])));
+				func_93("BJACK_P_HAND1" /* GXT: You have ~1~. */, func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/])));
 			}
 		}
 		else if (Local_109.f_1575[Local_118[PLAYER::PLAYER_ID() /*8*/].f_4] != (Local_118[PLAYER::PLAYER_ID() /*8*/].f_3 - (4 * Local_118[PLAYER::PLAYER_ID() /*8*/].f_4)) && Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/].f_8 >= 2)
@@ -10922,136 +10922,136 @@ void func_194()//Position - 0x1262D
 			{
 				if (func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])) == 21 && Local_109.f_899[PLAYER::PLAYER_ID() /*9*/].f_8 == 2)
 				{
-					if (!func_92("BJACK_SHOW_4", "BJACK_BJ", "BJACK_BJ"))
+					if (!func_92("BJACK_SHOW_4" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. */, "BJACK_BJ" /* GXT: Blackjack */, "BJACK_BJ" /* GXT: Blackjack */))
 					{
-						func_91("BJACK_SHOW_4", "BJACK_BJ", "BJACK_BJ");
+						func_91("BJACK_SHOW_4" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. */, "BJACK_BJ" /* GXT: Blackjack */, "BJACK_BJ" /* GXT: Blackjack */);
 					}
 				}
 				else if (func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])) <= 21 && Local_109.f_899[PLAYER::PLAYER_ID() /*9*/].f_8 == 7)
 				{
-					if (!func_92("BJACK_SHOW_4", "BJACK_7CC", "BJACK_BJ"))
+					if (!func_92("BJACK_SHOW_4" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, "BJACK_BJ" /* GXT: Blackjack */))
 					{
-						func_91("BJACK_SHOW_4", "BJACK_7CC", "BJACK_BJ");
+						func_91("BJACK_SHOW_4" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, "BJACK_BJ" /* GXT: Blackjack */);
 					}
 				}
 				else if (func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])) > 21)
 				{
-					if (!func_92("BJACK_SHOW_4", "BJACK_BUSTED", "BJACK_BJ"))
+					if (!func_92("BJACK_SHOW_4" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. */, "BJACK_BUSTED" /* GXT: gone bust */, "BJACK_BJ" /* GXT: Blackjack */))
 					{
-						func_91("BJACK_SHOW_4", "BJACK_BUSTED", "BJACK_BJ");
+						func_91("BJACK_SHOW_4" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. */, "BJACK_BUSTED" /* GXT: gone bust */, "BJACK_BJ" /* GXT: Blackjack */);
 					}
 				}
-				else if (!func_105("BJACK_SHOW_3", "BJACK_BJ", func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/]))))
+				else if (!func_105("BJACK_SHOW_3" /* GXT: You have ~1~ in the left hand and have ~a~ in the right hand. */, "BJACK_BJ" /* GXT: Blackjack */, func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/]))))
 				{
-					func_104("BJACK_SHOW_3", "BJACK_BJ", func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])));
+					func_104("BJACK_SHOW_3" /* GXT: You have ~1~ in the left hand and have ~a~ in the right hand. */, "BJACK_BJ" /* GXT: Blackjack */, func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])));
 				}
 			}
 			else if (func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/])) <= 21 && Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/].f_8 == 7)
 			{
 				if (func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])) == 21 && Local_109.f_899[PLAYER::PLAYER_ID() /*9*/].f_8 == 2)
 				{
-					if (!func_92("BJACK_SHOW_4", "BJACK_BJ", "BJACK_7CC"))
+					if (!func_92("BJACK_SHOW_4" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. */, "BJACK_BJ" /* GXT: Blackjack */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */))
 					{
-						func_91("BJACK_SHOW_4", "BJACK_BJ", "BJACK_7CC");
+						func_91("BJACK_SHOW_4" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. */, "BJACK_BJ" /* GXT: Blackjack */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */);
 					}
 				}
 				else if (func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])) <= 21 && Local_109.f_899[PLAYER::PLAYER_ID() /*9*/].f_8 == 7)
 				{
-					if (!func_92("BJACK_SHOW_4", "BJACK_7CC", "BJACK_7CC"))
+					if (!func_92("BJACK_SHOW_4" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */))
 					{
-						func_91("BJACK_SHOW_4", "BJACK_7CC", "BJACK_7CC");
+						func_91("BJACK_SHOW_4" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */);
 					}
 				}
 				else if (func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])) > 21)
 				{
-					if (!func_92("BJACK_SHOW_4", "BJACK_BUSTED", "BJACK_7CC"))
+					if (!func_92("BJACK_SHOW_4" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. */, "BJACK_BUSTED" /* GXT: gone bust */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */))
 					{
-						func_91("BJACK_SHOW_4", "BJACK_BUSTED", "BJACK_7CC");
+						func_91("BJACK_SHOW_4" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. */, "BJACK_BUSTED" /* GXT: gone bust */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */);
 					}
 				}
-				else if (!func_105("BJACK_SHOW_3", "BJACK_7CC", func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/]))))
+				else if (!func_105("BJACK_SHOW_3" /* GXT: You have ~1~ in the left hand and have ~a~ in the right hand. */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/]))))
 				{
-					func_104("BJACK_SHOW_3", "BJACK_7CC", func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])));
+					func_104("BJACK_SHOW_3" /* GXT: You have ~1~ in the left hand and have ~a~ in the right hand. */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])));
 				}
 			}
 			else if (func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/])) > 21)
 			{
 				if (func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])) == 21 && Local_109.f_899[PLAYER::PLAYER_ID() /*9*/].f_8 == 2)
 				{
-					if (!func_92("BJACK_SHOW_4", "BJACK_BJ", "BJACK_BUSTED"))
+					if (!func_92("BJACK_SHOW_4" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. */, "BJACK_BJ" /* GXT: Blackjack */, "BJACK_BUSTED" /* GXT: gone bust */))
 					{
-						func_91("BJACK_SHOW_4", "BJACK_BJ", "BJACK_BUSTED");
+						func_91("BJACK_SHOW_4" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. */, "BJACK_BJ" /* GXT: Blackjack */, "BJACK_BUSTED" /* GXT: gone bust */);
 					}
 				}
 				else if (func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])) <= 21 && Local_109.f_899[PLAYER::PLAYER_ID() /*9*/].f_8 == 7)
 				{
-					if (!func_92("BJACK_SHOW_4", "BJACK_7CC", "BJACK_BUSTED"))
+					if (!func_92("BJACK_SHOW_4" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, "BJACK_BUSTED" /* GXT: gone bust */))
 					{
-						func_91("BJACK_SHOW_4", "BJACK_7CC", "BJACK_BUSTED");
+						func_91("BJACK_SHOW_4" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, "BJACK_BUSTED" /* GXT: gone bust */);
 					}
 				}
 				else if (func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])) > 21)
 				{
-					if (!func_92("BJACK_SHOW_4", "BJACK_BUSTED", "BJACK_BUSTED"))
+					if (!func_92("BJACK_SHOW_4" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. */, "BJACK_BUSTED" /* GXT: gone bust */, "BJACK_BUSTED" /* GXT: gone bust */))
 					{
-						func_91("BJACK_SHOW_4", "BJACK_BUSTED", "BJACK_BUSTED");
+						func_91("BJACK_SHOW_4" /* GXT: You have ~a~ in the left hand and have ~a~ in the right hand. */, "BJACK_BUSTED" /* GXT: gone bust */, "BJACK_BUSTED" /* GXT: gone bust */);
 					}
 				}
-				else if (!func_105("BJACK_SHOW_3", "BJACK_BUSTED", func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/]))))
+				else if (!func_105("BJACK_SHOW_3" /* GXT: You have ~1~ in the left hand and have ~a~ in the right hand. */, "BJACK_BUSTED" /* GXT: gone bust */, func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/]))))
 				{
-					func_104("BJACK_SHOW_3", "BJACK_BUSTED", func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])));
+					func_104("BJACK_SHOW_3" /* GXT: You have ~1~ in the left hand and have ~a~ in the right hand. */, "BJACK_BUSTED" /* GXT: gone bust */, func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])));
 				}
 			}
 			else if (func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])) == 21 && Local_109.f_899[PLAYER::PLAYER_ID() /*9*/].f_8 == 2)
 			{
-				if (!func_105("BJACK_SHOW_2", "BJACK_BJ", func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/]))))
+				if (!func_105("BJACK_SHOW_2" /* GXT: You have ~a~ in the left hand and have ~1~ in the right hand. */, "BJACK_BJ" /* GXT: Blackjack */, func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/]))))
 				{
-					func_104("BJACK_SHOW_2", "BJACK_BJ", func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/])));
+					func_104("BJACK_SHOW_2" /* GXT: You have ~a~ in the left hand and have ~1~ in the right hand. */, "BJACK_BJ" /* GXT: Blackjack */, func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/])));
 				}
 			}
 			else if (func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])) <= 21 && Local_109.f_899[PLAYER::PLAYER_ID() /*9*/].f_8 == 7)
 			{
-				if (!func_105("BJACK_SHOW_2", "BJACK_7CC", func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/]))))
+				if (!func_105("BJACK_SHOW_2" /* GXT: You have ~a~ in the left hand and have ~1~ in the right hand. */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/]))))
 				{
-					func_104("BJACK_SHOW_2", "BJACK_7CC", func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/])));
+					func_104("BJACK_SHOW_2" /* GXT: You have ~a~ in the left hand and have ~1~ in the right hand. */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */, func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/])));
 				}
 			}
 			else if (func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])) > 21)
 			{
-				if (!func_105("BJACK_SHOW_2", "BJACK_BUSTED", func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/]))))
+				if (!func_105("BJACK_SHOW_2" /* GXT: You have ~a~ in the left hand and have ~1~ in the right hand. */, "BJACK_BUSTED" /* GXT: gone bust */, func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/]))))
 				{
-					func_104("BJACK_SHOW_2", "BJACK_BUSTED", func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/])));
+					func_104("BJACK_SHOW_2" /* GXT: You have ~a~ in the left hand and have ~1~ in the right hand. */, "BJACK_BUSTED" /* GXT: gone bust */, func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/])));
 				}
 			}
-			else if (!func_103("BJACK_SHOW_1", func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])), func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/]))))
+			else if (!func_103("BJACK_SHOW_1" /* GXT: You have ~1~ in the left hand and have ~1~ in the right hand. */, func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])), func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/]))))
 			{
-				func_102("BJACK_SHOW_1", func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])), func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/])));
+				func_102("BJACK_SHOW_1" /* GXT: You have ~1~ in the left hand and have ~1~ in the right hand. */, func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])), func_27(&(Local_109.f_1188[PLAYER::PLAYER_ID() /*9*/])));
 			}
 		}
 		else if (func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])) == 21 && Local_109.f_899[PLAYER::PLAYER_ID() /*9*/].f_8 == 2)
 		{
-			if (!func_95("BJACK_P_HAND2", "BJACK_BJ"))
+			if (!func_95("BJACK_P_HAND2" /* GXT: You have ~a~. */, "BJACK_BJ" /* GXT: Blackjack */))
 			{
-				func_94("BJACK_P_HAND2", "BJACK_BJ");
+				func_94("BJACK_P_HAND2" /* GXT: You have ~a~. */, "BJACK_BJ" /* GXT: Blackjack */);
 			}
 		}
 		else if (func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])) <= 21 && Local_109.f_899[PLAYER::PLAYER_ID() /*9*/].f_8 == 7)
 		{
-			if (!func_95("BJACK_P_HAND2", "BJACK_7CC"))
+			if (!func_95("BJACK_P_HAND2" /* GXT: You have ~a~. */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */))
 			{
-				func_94("BJACK_P_HAND2", "BJACK_7CC");
+				func_94("BJACK_P_HAND2" /* GXT: You have ~a~. */, "BJACK_7CC" /* GXT: a Seven-Card Charlie */);
 			}
 		}
 		else if (func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])) > 21)
 		{
-			if (!func_95("BJACK_P_HAND2", "BJACK_BUSTED"))
+			if (!func_95("BJACK_P_HAND2" /* GXT: You have ~a~. */, "BJACK_BUSTED" /* GXT: gone bust */))
 			{
-				func_94("BJACK_P_HAND2", "BJACK_BUSTED");
+				func_94("BJACK_P_HAND2" /* GXT: You have ~a~. */, "BJACK_BUSTED" /* GXT: gone bust */);
 			}
 		}
-		else if (!func_320("BJACK_P_HAND1", func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/]))))
+		else if (!func_320("BJACK_P_HAND1" /* GXT: You have ~1~. */, func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/]))))
 		{
-			func_93("BJACK_P_HAND1", func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])));
+			func_93("BJACK_P_HAND1" /* GXT: You have ~1~. */, func_27(&(Local_109.f_899[PLAYER::PLAYER_ID() /*9*/])));
 		}
 	}
 }
@@ -12428,7 +12428,7 @@ void func_247(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 	{
 		if (Global_23150.f_5609 <= 1)
 		{
-			func_275(Global_23150.f_5609 + 1, "DFLT_MNU_OPT", 0, 1, 0, 0, 0);
+			func_275(Global_23150.f_5609 + 1, "DFLT_MNU_OPT" /* GXT: Exit */, 0, 1, 0, 0, 0);
 			Global_23150.f_6405 = 1;
 		}
 	}
@@ -12531,14 +12531,14 @@ void func_247(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 				if (Global_23150.f_6126)
 				{
 					func_269();
-					func_267((((Global_23147 + fParam5) - 0.00390625f) - func_268("CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128);
+					func_267((((Global_23147 + fParam5) - 0.00390625f) - func_268("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128);
 				}
 				else if (Global_23150.f_6122 > Global_23150.f_5616)
 				{
 					if (Global_23150.f_6125 != 0)
 					{
 						func_269();
-						func_267((((Global_23147 + fParam5) - 0.00390625f) - func_268("CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124);
+						func_267((((Global_23147 + fParam5) - 0.00390625f) - func_268("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124);
 					}
 				}
 			}
@@ -16355,7 +16355,7 @@ int func_316(int iParam0)//Position - 0x1AA95
 
 int func_317()//Position - 0x1AACA
 {
-	if (((((((((func_333("BJACK_USED") || func_333("CAS_MG_CBAN")) || func_333("CAS_MG_CTIME")) || func_320("CAS_MG_MEMB2", func_321(1))) || func_333("CAS_MG_SUITE2")) || func_333("CAS_MG_NOCHIPS2")) || func_333("CAS_MG_LOWCHIPS2")) || func_333("CAS_MG_NOCHIPS6")) || func_333("CAS_MG_LOWCHIPS6")) || func_333("BJACK_NA"))
+	if (((((((((func_333("BJACK_USED" /* GXT: This seat is currently in use. */) || func_333("CAS_MG_CBAN" /* GXT: This feature is not available now.  Please come back later. */)) || func_333("CAS_MG_CTIME" /* GXT: This feature is not available now.  Please come back later. */)) || func_320("CAS_MG_MEMB2" /* GXT: A Standard Membership is required to play. Speak to Guest Services ~BLIP_CASINO_CONCIERGE~ to purchase this or press ~INPUT_CONTEXT_SECONDARY~ to buy now for $~1~. */, func_321(1))) || func_333("CAS_MG_SUITE2" /* GXT: A VIP Membership is required to play High Limit. Purchase a Penthouse from www.thediamondcasinoandresort.com to become a VIP member. */)) || func_333("CAS_MG_NOCHIPS2" /* GXT: Chips are required to play Blackjack. Speak to the Cashier ~BLIP_CASINO_CHIPS~ to acquire them. */)) || func_333("CAS_MG_LOWCHIPS2" /* GXT: You don't have enough Chips to play Blackjack. Speak to the Cashier ~BLIP_CASINO_CHIPS~ to acquire more. */)) || func_333("CAS_MG_NOCHIPS6" /* GXT: Chips are required to play Blackjack. Use the Phone Services ~BLIP_CASINO_CONCIERGE~ to acquire them. */)) || func_333("CAS_MG_LOWCHIPS6" /* GXT: You don't have enough Chips to play Blackjack. Use the Phone Services ~BLIP_CASINO_CONCIERGE~ to acquire more. */)) || func_333("BJACK_NA" /* GXT: This feature is not available for you. */))
 	{
 		return 1;
 	}
@@ -16366,7 +16366,7 @@ void func_318()//Position - 0x1AB65
 {
 	if (!MONEY::NETWORK_CAN_SPEND_MONEY(func_321(0), false, true, false, -1, 0))
 	{
-		func_208("MAITRD_M_D0E", -1);
+		func_208("MAITRD_M_D0E" /* GXT: You do not have enough money to purchase the Casino Membership. */, -1);
 	}
 	else if (func_322(PLAYER::PLAYER_ID()))
 	{

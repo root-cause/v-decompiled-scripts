@@ -1943,11 +1943,11 @@ void func_45()//Position - 0x171D
 						{
 							if (func_190() == 2)
 							{
-								func_189("CAS_MG_CTIME", -1);
+								func_189("CAS_MG_CTIME" /* GXT: This feature is not available now.  Please come back later. */, -1);
 							}
 							else
 							{
-								func_189("CAS_MG_CBAN", -1);
+								func_189("CAS_MG_CBAN" /* GXT: This feature is not available now.  Please come back later. */, -1);
 							}
 							MISC::SET_BIT(&uLocal_217, 6);
 						}
@@ -1980,7 +1980,7 @@ void func_45()//Position - 0x171D
 				}
 				else if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 				{
-					func_189("SLOTS_NOMON", -1);
+					func_189("SLOTS_NOMON" /* GXT: You do not have enough Chips to spin. Please acquire more at the cashier services. */, -1);
 				}
 			}
 			if (!BitTest(uLocal_217, 3))
@@ -2067,7 +2067,7 @@ void func_45()//Position - 0x171D
 					MISC::SET_BIT(&uLocal_218, 2);
 					if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 					{
-						func_189("SLOTS_FAILTR", -1);
+						func_189("SLOTS_FAILTR" /* GXT: Bet failed, try again. */, -1);
 					}
 					func_167(10);
 				}
@@ -2123,7 +2123,7 @@ void func_45()//Position - 0x171D
 				MISC::SET_BIT(&uLocal_218, 2);
 				if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 				{
-					func_189("SLOTS_FAILTR", -1);
+					func_189("SLOTS_FAILTR" /* GXT: Bet failed, try again. */, -1);
 				}
 				func_167(10);
 			}
@@ -4322,11 +4322,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27147;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_27", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_27" /* GXT: I've Been Shamed Tee */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_27", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_27" /* GXT: I've Been Shamed Tee */, 24);
 			}
 			uParam1->f_7 = 1;
 			break;
@@ -4335,11 +4335,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27148;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_28", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_28" /* GXT: Blue I've Been Shamed Tee */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_28", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_28" /* GXT: Blue I've Been Shamed Tee */, 24);
 			}
 			uParam1->f_7 = 1;
 			break;
@@ -4348,11 +4348,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27149;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_33", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_33" /* GXT: Fame or Shame Stars Tee */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_33", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_33" /* GXT: Fame or Shame Stars Tee */, 24);
 			}
 			uParam1->f_7 = 1;
 			break;
@@ -4361,11 +4361,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27150;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_34", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_34" /* GXT: Red Fame or Shame Stars Tee */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_34", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_34" /* GXT: Red Fame or Shame Stars Tee */, 24);
 			}
 			uParam1->f_7 = 1;
 			break;
@@ -4374,11 +4374,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27151;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_35", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_35" /* GXT: No Talent Required Tee */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_35", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_35" /* GXT: No Talent Required Tee */, 24);
 			}
 			uParam1->f_7 = 1;
 			break;
@@ -4387,11 +4387,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27152;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_36", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_36" /* GXT: Red No Talent Required Tee */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_36", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_36" /* GXT: Red No Talent Required Tee */, 24);
 			}
 			uParam1->f_7 = 1;
 			break;
@@ -4400,11 +4400,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27153;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_37", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_37" /* GXT: Team Tracey Tee */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_37", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_37" /* GXT: Team Tracey Tee */, 24);
 			}
 			uParam1->f_7 = 1;
 			break;
@@ -4413,11 +4413,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27154;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_38", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_38" /* GXT: Blue Team Tracey Tee */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_38", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_38" /* GXT: Blue Team Tracey Tee */, 24);
 			}
 			uParam1->f_7 = 1;
 			break;
@@ -4426,11 +4426,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27155;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_39", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_39" /* GXT: Monkey Business Tee */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_39", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_39" /* GXT: Monkey Business Tee */, 24);
 			}
 			uParam1->f_7 = 1;
 			break;
@@ -4439,11 +4439,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27156;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_40", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_40" /* GXT: Red Monkey Business Tee */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_40", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_40" /* GXT: Red Monkey Business Tee */, 24);
 			}
 			uParam1->f_7 = 1;
 			break;
@@ -4452,11 +4452,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27157;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_41", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_41" /* GXT: Fame or Shame Logo Tee */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_41", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_41" /* GXT: Fame or Shame Logo Tee */, 24);
 			}
 			uParam1->f_7 = 1;
 			break;
@@ -4465,11 +4465,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27158;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_42", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_42" /* GXT: Blue Fame or Shame Logo Tee */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_42", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_42" /* GXT: Blue Fame or Shame Logo Tee */, 24);
 			}
 			uParam1->f_7 = 1;
 			break;
@@ -4478,11 +4478,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27159;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_U_20_6", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_U_20_6" /* GXT: Stars Fame or Shame Robe */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_U_18_6", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_U_18_6" /* GXT: Stars Fame or Shame Robe */, 24);
 			}
 			uParam1->f_7 = 1;
 			break;
@@ -4491,11 +4491,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27160;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_U_20_7", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_U_20_7" /* GXT: Black Fame or Shame Robe */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_U_18_7", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_U_18_7" /* GXT: Black Fame or Shame Robe */, 24);
 			}
 			uParam1->f_7 = 1;
 			break;
@@ -4504,11 +4504,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27161;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_U_20_8", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_U_20_8" /* GXT: Red Stars Fame or Shame Robe */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_U_18_8", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_U_18_8" /* GXT: Red Stars Fame or Shame Robe */, 24);
 			}
 			uParam1->f_7 = 1;
 			break;
@@ -4517,11 +4517,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27162;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_U_20_9", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_U_20_9" /* GXT: Red Fame or Shame Robe */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_U_18_9", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_U_18_9" /* GXT: Red Fame or Shame Robe */, 24);
 			}
 			uParam1->f_7 = 1;
 			break;
@@ -4530,11 +4530,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27163;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_U_20_10", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_U_20_10" /* GXT: White Fame or Shame Robe */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_U_18_10", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_U_18_10" /* GXT: White Fame or Shame Robe */, 24);
 			}
 			uParam1->f_7 = 1;
 			break;
@@ -4543,11 +4543,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27164;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_PEY_116", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_PEY_116" /* GXT: Black Fame or Shame Shades */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_PEY_116", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_PEY_116" /* GXT: Black Fame or Shame Shades */, 24);
 			}
 			uParam1->f_7 = 2;
 			break;
@@ -4556,11 +4556,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27165;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_PEY_117", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_PEY_117" /* GXT: Red Fame or Shame Shades */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_PEY_117", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_PEY_117" /* GXT: Red Fame or Shame Shades */, 24);
 			}
 			uParam1->f_7 = 2;
 			break;
@@ -4569,11 +4569,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27166;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_PEY_118", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_PEY_118" /* GXT: Blue Fame or Shame Shades */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_PEY_118", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_PEY_118" /* GXT: Blue Fame or Shame Shades */, 24);
 			}
 			uParam1->f_7 = 2;
 			break;
@@ -4582,11 +4582,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27167;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_PEY_119", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_PEY_119" /* GXT: White Fame or Shame Shades */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_PEY_119", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_PEY_119" /* GXT: White Fame or Shame Shades */, 24);
 			}
 			uParam1->f_7 = 2;
 			break;
@@ -4595,11 +4595,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27168;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_PE_0_0", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_PE_0_0" /* GXT: Gold Fame or Shame Mics */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_PE_0_0", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_PE_0_0" /* GXT: Gold Fame or Shame Mics */, 24);
 			}
 			uParam1->f_7 = 2;
 			break;
@@ -4608,11 +4608,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27169;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_PE_0_1", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_PE_0_1" /* GXT: Silver Fame or Shame Mics */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_PE_0_1", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_PE_0_1" /* GXT: Silver Fame or Shame Mics */, 24);
 			}
 			uParam1->f_7 = 2;
 			break;
@@ -4621,11 +4621,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27170;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_PW_2_6", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_PW_2_6" /* GXT: Red Fame or Shame Kronos */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_PW_2_6", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_PW_2_6" /* GXT: Red Fame or Shame Kronos */, 24);
 			}
 			uParam1->f_7 = 2;
 			break;
@@ -4634,11 +4634,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27171;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_PW_2_7", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_PW_2_7" /* GXT: Green Fame or Shame Kronos */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_PW_2_7", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_PW_2_7" /* GXT: Green Fame or Shame Kronos */, 24);
 			}
 			uParam1->f_7 = 2;
 			break;
@@ -4647,11 +4647,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27172;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_PW_2_8", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_PW_2_8" /* GXT: Blue Fame or Shame Kronos */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_PW_2_8", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_PW_2_8" /* GXT: Blue Fame or Shame Kronos */, 24);
 			}
 			uParam1->f_7 = 2;
 			break;
@@ -4660,11 +4660,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27173;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_PW_2_9", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_PW_2_9" /* GXT: Black Fame or Shame Kronos */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_PW_2_9", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_PW_2_9" /* GXT: Black Fame or Shame Kronos */, 24);
 			}
 			uParam1->f_7 = 2;
 			break;
@@ -4673,11 +4673,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27174;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_24", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_24" /* GXT: America Loves You Tee */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_24", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_24" /* GXT: America Loves You Tee */, 24);
 			}
 			uParam1->f_7 = 3;
 			break;
@@ -4686,11 +4686,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27175;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_25", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_25" /* GXT: Blue America Loves You Tee */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_25", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_25" /* GXT: Blue America Loves You Tee */, 24);
 			}
 			uParam1->f_7 = 3;
 			break;
@@ -4699,11 +4699,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27176;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_26", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_26" /* GXT: Fame or Shame No Evil Tee */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_26", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_26" /* GXT: Fame or Shame No Evil Tee */, 24);
 			}
 			uParam1->f_7 = 3;
 			break;
@@ -4712,11 +4712,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27177;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_29", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_29" /* GXT: You're So Original! Tee */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_29", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_29" /* GXT: You're So Original! Tee */, 24);
 			}
 			uParam1->f_7 = 3;
 			break;
@@ -4725,11 +4725,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27178;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_30", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_30" /* GXT: Red You're So Original! Tee */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_30", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_30" /* GXT: Red You're So Original! Tee */, 24);
 			}
 			uParam1->f_7 = 3;
 			break;
@@ -4738,11 +4738,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27179;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_31", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_31" /* GXT: Oh No He Didn't! Tee */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_31", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_31" /* GXT: Oh No He Didn't! Tee */, 24);
 			}
 			uParam1->f_7 = 3;
 			break;
@@ -4751,11 +4751,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27180;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_32", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_32" /* GXT: Blue Oh No He Didn't! Tee */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_32", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_32" /* GXT: Blue Oh No He Didn't! Tee */, 24);
 			}
 			uParam1->f_7 = 3;
 			break;
@@ -4764,11 +4764,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27181;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_43", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_43" /* GXT: You're Awful Tee */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_43", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_43" /* GXT: You're Awful Tee */, 24);
 			}
 			uParam1->f_7 = 3;
 			break;
@@ -4777,11 +4777,11 @@ void func_117(int iParam0, var uParam1)//Position - 0x4A5A
 			*uParam1 = 27182;
 			if (func_118())
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_44", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWM_DECL_44" /* GXT: Red You're Awful Tee */, 24);
 			}
 			else
 			{
-				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_44", 24);
+				StringCopy(&(uParam1->f_1), "CLO_VWF_DECL_44" /* GXT: Red You're Awful Tee */, 24);
 			}
 			uParam1->f_7 = 3;
 			break;
@@ -7240,14 +7240,14 @@ void func_177(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x
 		switch (iParam0)
 		{
 			case 1:
-				func_184("SLOTS_HELPB", Local_204[iLocal_257 /*21*/].f_16, Local_204[iLocal_257 /*21*/].f_16 * 5);
+				func_184("SLOTS_HELPB" /* GXT: Bet One is ~1~ Chips. ~n~Bet Max is ~1~ Chips. */, Local_204[iLocal_257 /*21*/].f_16, Local_204[iLocal_257 /*21*/].f_16 * 5);
 				break;
 			
 			case 2:
 			case 3:
 				if (iParam1 == 1 && Local_204[iLocal_257 /*21*/].f_17 == 8)
 				{
-					StringCopy(&Var2, "SLOTS_HELPW1b", 24);
+					StringCopy(&Var2, "SLOTS_HELPW1b" /* GXT: 3 Grenades! ~n~You win ~1~ Chips. */, 24);
 				}
 				else
 				{
@@ -7311,13 +7311,13 @@ void func_177(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x
 							bVar0 = true;
 							if (iLocal_203 == -1)
 							{
-								StringCopy(&Var2, "SLOTS_HELPW74b", 24);
+								StringCopy(&Var2, "SLOTS_HELPW74b" /* GXT: You win ~1~ RP. */, 24);
 								func_183(&Var2, Global_262145.f_27888);
 							}
 							else
 							{
 								func_117(iLocal_203, &Var1);
-								StringCopy(&Var2, "SLOTS_HELPW74a", 24);
+								StringCopy(&Var2, "SLOTS_HELPW74a" /* GXT: You win ~a~. */, 24);
 								func_178(&Var2, &(Var1.f_1), iParam2);
 							}
 						}
@@ -7607,45 +7607,45 @@ int func_198(int iParam0)//Position - 0x8494
 	}
 	if (func_216(0, &uVar2))
 	{
-		StringCopy(&Var0, "SLOTS_REGBAN", 24);
+		StringCopy(&Var0, "SLOTS_REGBAN" /* GXT: This feature is not available for you. */, 24);
 		bVar1 = true;
 	}
 	else if (func_194())
 	{
 		if (func_190() == 2)
 		{
-			StringCopy(&Var0, "CAS_MG_CTIME", 24);
+			StringCopy(&Var0, "CAS_MG_CTIME" /* GXT: This feature is not available now.  Please come back later. */, 24);
 			bVar1 = true;
 		}
 		else
 		{
-			StringCopy(&Var0, "CAS_MG_CBAN", 24);
+			StringCopy(&Var0, "CAS_MG_CBAN" /* GXT: This feature is not available now.  Please come back later. */, 24);
 			bVar1 = true;
 		}
 	}
 	else if (!func_65() && !func_59())
 	{
-		StringCopy(&Var0, "CAS_MG_MEMB2", 24);
+		StringCopy(&Var0, "CAS_MG_MEMB2" /* GXT: A Standard Membership is required to play. Speak to Guest Services ~BLIP_CASINO_CONCIERGE~ to purchase this or press ~INPUT_CONTEXT_SECONDARY~ to buy now for $~1~. */, 24);
 		bVar1 = true;
 	}
 	else if (func_188() <= 0)
 	{
-		StringCopy(&Var0, "CAS_MG_NOCHIPS1", 24);
+		StringCopy(&Var0, "CAS_MG_NOCHIPS1" /* GXT: Chips are required to play Slots. Speak to the Cashier ~BLIP_CASINO_CHIPS~ to acquire them. */, 24);
 		bVar1 = true;
 	}
 	else if (func_188() < Local_204[iParam0 /*21*/].f_16)
 	{
-		StringCopy(&Var0, "CAS_MG_LOWCHIPS1", 24);
+		StringCopy(&Var0, "CAS_MG_LOWCHIPS1" /* GXT: You don't have enough Chips to play this Slot machine. Speak to the Cashier ~BLIP_CASINO_CHIPS~ to acquire more. */, 24);
 		bVar1 = true;
 	}
 	else if ((((((((Global_262145.f_26950 || (Global_262145.f_26957 && Local_204[iParam0 /*21*/].f_17 == 1)) || (Global_262145.f_26955 && Local_204[iParam0 /*21*/].f_17 == 2)) || (Global_262145.f_26952 && Local_204[iParam0 /*21*/].f_17 == 3)) || (Global_262145.f_26953 && Local_204[iParam0 /*21*/].f_17 == 4)) || (Global_262145.f_26956 && Local_204[iParam0 /*21*/].f_17 == 5)) || (Global_262145.f_26954 && Local_204[iParam0 /*21*/].f_17 == 6)) || (Global_262145.f_26951 && Local_204[iParam0 /*21*/].f_17 == 7)) || (Global_262145.f_26958 && Local_204[iParam0 /*21*/].f_17 == 8))
 	{
-		StringCopy(&Var0, "SLOTS_ENTERB", 24);
+		StringCopy(&Var0, "SLOTS_ENTERB" /* GXT: You can't play this Slot machine at this time. */, 24);
 		bVar1 = true;
 	}
 	else if (func_214())
 	{
-		StringCopy(&Var0, "SLOTS_ENTERB", 24);
+		StringCopy(&Var0, "SLOTS_ENTERB" /* GXT: You can't play this Slot machine at this time. */, 24);
 		bVar1 = true;
 	}
 	if ((((func_213() || func_212()) || func_211()) || CAM::IS_SCREEN_FADED_OUT()) || CAM::IS_SCREEN_FADING_OUT())
@@ -7660,11 +7660,11 @@ int func_198(int iParam0)//Position - 0x8494
 	}
 	if (bVar1)
 	{
-		if (MISC::ARE_STRINGS_EQUAL(&Var0, "CAS_MG_MEMB2"))
+		if (MISC::ARE_STRINGS_EQUAL(&Var0, "CAS_MG_MEMB2" /* GXT: A Standard Membership is required to play. Speak to Guest Services ~BLIP_CASINO_CONCIERGE~ to purchase this or press ~INPUT_CONTEXT_SECONDARY~ to buy now for $~1~. */))
 		{
-			if (!func_203("CAS_MG_MEMB2", func_204(1)))
+			if (!func_203("CAS_MG_MEMB2" /* GXT: A Standard Membership is required to play. Speak to Guest Services ~BLIP_CASINO_CONCIERGE~ to purchase this or press ~INPUT_CONTEXT_SECONDARY~ to buy now for $~1~. */, func_204(1)))
 			{
-				func_202("CAS_MG_MEMB2", func_204(1));
+				func_202("CAS_MG_MEMB2" /* GXT: A Standard Membership is required to play. Speak to Guest Services ~BLIP_CASINO_CONCIERGE~ to purchase this or press ~INPUT_CONTEXT_SECONDARY~ to buy now for $~1~. */, func_204(1));
 			}
 			MISC::SET_BIT(&uLocal_217, 6);
 			if (PAD::IS_CONTROL_JUST_PRESSED(2, 52))
@@ -7743,7 +7743,7 @@ void func_201()//Position - 0x87AE
 {
 	if (!MONEY::NETWORK_CAN_SPEND_MONEY(func_204(0), false, true, false, -1, 0))
 	{
-		func_189("MAITRD_M_D0E", -1);
+		func_189("MAITRD_M_D0E" /* GXT: You do not have enough money to purchase the Casino Membership. */, -1);
 	}
 	else if (func_60(PLAYER::PLAYER_ID()))
 	{
@@ -8461,15 +8461,15 @@ void func_228()//Position - 0x9623
 					func_268(-1, 1, 1);
 					if (BitTest(uLocal_217, 21))
 					{
-						func_267("SLOTS_RULEaT");
+						func_267("SLOTS_RULEaT" /* GXT: BET MULTIPLIER */);
 						StringCopy(&Var0, "SLOTS_RULEa", 24);
 						StringIntConCat(&Var0, Local_204[iLocal_257 /*21*/].f_17, 24);
 						func_266(&Var0, 0, 0);
 					}
 					else if (BitTest(uLocal_217, 22))
 					{
-						func_267("SLOTS_RULEbT");
-						func_266("SLOTS_RULEb", 0, 0);
+						func_267("SLOTS_RULEbT" /* GXT: BET LIMITS */);
+						func_266("SLOTS_RULEb" /* GXT: Minimum: ~1~ Chips~n~Maximum: ~1~ Chips */, 0, 0);
 						func_265(Local_204[iLocal_257 /*21*/].f_16);
 						func_265(Local_204[iLocal_257 /*21*/].f_16 * 5);
 					}
@@ -8481,8 +8481,8 @@ void func_228()//Position - 0x9623
 					{
 						func_264(1, 2, 2);
 					}
-					func_263(202, "SLOTS_RULEBK", -1);
-					func_262(8, "SLOTS_RULENEXT", -1);
+					func_263(202, "SLOTS_RULEBK" /* GXT: Back */, -1);
+					func_262(8, "SLOTS_RULENEXT" /* GXT: Next/Previous */, -1);
 					MISC::SET_BIT(&uLocal_217, 0);
 					func_238(1, -1, 1, 0, 1, -1082130432, 0, 0, -1);
 					func_237(1);
@@ -8493,15 +8493,15 @@ void func_228()//Position - 0x9623
 				func_166(0, 0);
 				if (!BitTest(Local_489[PLAYER::PLAYER_ID() /*11*/].f_10, 0) && (((((iLocal_221 == 4 || iLocal_221 == 10) || iLocal_221 == 11) || iLocal_221 == 12) || BitTest(uLocal_217, 31)) || ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), -278874898)))
 				{
-					func_263(202, "SLOTS_EXIT", -1);
-					func_236("SLOTS_SPIN", PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 208, true), PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 201, true), 0, 0);
-					func_263(203, "SLOTS_BET", -1);
+					func_263(202, "SLOTS_EXIT" /* GXT: Quit */, -1);
+					func_236("SLOTS_SPIN" /* GXT: Spin */, PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 208, true), PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 201, true), 0, 0);
+					func_263(203, "SLOTS_BET" /* GXT: Bet One */, -1);
 					if (iLocal_260 < 5)
 					{
-						func_263(204, "SLOTS_BETM", -1);
+						func_263(204, "SLOTS_BETM" /* GXT: Bet Max */, -1);
 					}
 				}
-				func_263(210, "SLOTS_RULEIN", -1);
+				func_263(210, "SLOTS_RULEIN" /* GXT: Rules */, -1);
 				MISC::SET_BIT(&uLocal_217, 0);
 				func_229(0, -1, -1, 1, 0, 0, 1, 1, 0);
 				func_237(1);
@@ -9010,7 +9010,7 @@ void func_238(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 	{
 		if (Global_23150.f_5609 <= 1)
 		{
-			func_254(Global_23150.f_5609 + 1, "DFLT_MNU_OPT", 0, 1, 0, 0, 0);
+			func_254(Global_23150.f_5609 + 1, "DFLT_MNU_OPT" /* GXT: Exit */, 0, 1, 0, 0, 0);
 			Global_23150.f_6405 = 1;
 		}
 	}
@@ -9113,14 +9113,14 @@ void func_238(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 				if (Global_23150.f_6126)
 				{
 					func_249();
-					func_247((((Global_23147 + fParam5) - 0.00390625f) - func_248("CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128);
+					func_247((((Global_23147 + fParam5) - 0.00390625f) - func_248("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128);
 				}
 				else if (Global_23150.f_6122 > Global_23150.f_5616)
 				{
 					if (Global_23150.f_6125 != 0)
 					{
 						func_249();
-						func_247((((Global_23147 + fParam5) - 0.00390625f) - func_248("CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124);
+						func_247((((Global_23147 + fParam5) - 0.00390625f) - func_248("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124);
 					}
 				}
 			}
@@ -12763,14 +12763,14 @@ void func_307()//Position - 0xFC79
 			StringIntConCat(&Var1, Local_204[iLocal_257 /*21*/].f_17, 24);
 			func_267(&Var1);
 			func_268(-1, 1, 1);
-			func_266("SLOTS_DIS", 0, 0);
+			func_266("SLOTS_DIS" /* GXT: ~a~~n~~n~~a~~n~~n~~a~ */, 0, 0);
 			StringCopy(&Var1, "SLOTS_DIS1", 24);
 			StringIntConCat(&Var1, Local_204[iLocal_257 /*21*/].f_17, 24);
 			func_308(&Var1);
-			func_308("SLOTS_DIS2");
-			func_308("SLOTS_DIS3");
-			func_263(202, "SLOTS_EXIT", -1);
-			func_263(201, "SLOTS_ACC", -1);
+			func_308("SLOTS_DIS2" /* GXT: The payouts displayed on the front of the machine are based on the minimum bet. */);
+			func_308("SLOTS_DIS3" /* GXT: Return to player rate: 98.7% */);
+			func_263(202, "SLOTS_EXIT" /* GXT: Quit */, -1);
+			func_263(201, "SLOTS_ACC" /* GXT: Continue */, -1);
 			MISC::SET_BIT(&uLocal_217, 19);
 			AUDIO::PLAY_SOUND_FRONTEND(-1, "DLC_VW_RULES", "dlc_vw_table_games_frontend_sounds", true);
 		}
@@ -12861,7 +12861,7 @@ void func_309(int iParam0)//Position - 0xFEDE
 			{
 				if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 				{
-					func_189("SLOTS_USED", -1);
+					func_189("SLOTS_USED" /* GXT: Slot machine currently in use. */, -1);
 					MISC::SET_BIT(&uLocal_217, 1);
 				}
 			}
@@ -13013,7 +13013,7 @@ int func_311()//Position - 0xFFE4
 				{
 					if (!BitTest(uLocal_217, 1) && !func_217())
 					{
-						func_189("SLOTS_USED", -1);
+						func_189("SLOTS_USED" /* GXT: Slot machine currently in use. */, -1);
 						MISC::SET_BIT(&uLocal_217, 1);
 					}
 				}
@@ -13063,13 +13063,13 @@ int func_311()//Position - 0xFFE4
 
 int func_312()//Position - 0x104F1
 {
-	if ((func_313("SLOTS_NOMON") || func_313("SLOTS_FAILTR")) || func_313("SLOTS_USED"))
+	if ((func_313("SLOTS_NOMON" /* GXT: You do not have enough Chips to spin. Please acquire more at the cashier services. */) || func_313("SLOTS_FAILTR" /* GXT: Bet failed, try again. */)) || func_313("SLOTS_USED" /* GXT: Slot machine currently in use. */))
 	{
 		return 1;
 	}
 	if (BitTest(uLocal_217, 6))
 	{
-		if (((((func_313("CAS_MG_CBAN") || func_313("CAS_MG_CTIME")) || func_313("CAS_MG_LOWCHIPS1")) || func_313("CAS_MG_NOCHIPS1")) || func_203("CAS_MG_MEMB2", func_204(1))) || func_313("SLOTS_REGBAN"))
+		if (((((func_313("CAS_MG_CBAN" /* GXT: This feature is not available now.  Please come back later. */) || func_313("CAS_MG_CTIME" /* GXT: This feature is not available now.  Please come back later. */)) || func_313("CAS_MG_LOWCHIPS1" /* GXT: You don't have enough Chips to play this Slot machine. Speak to the Cashier ~BLIP_CASINO_CHIPS~ to acquire more. */)) || func_313("CAS_MG_NOCHIPS1" /* GXT: Chips are required to play Slots. Speak to the Cashier ~BLIP_CASINO_CHIPS~ to acquire them. */)) || func_203("CAS_MG_MEMB2" /* GXT: A Standard Membership is required to play. Speak to Guest Services ~BLIP_CASINO_CONCIERGE~ to purchase this or press ~INPUT_CONTEXT_SECONDARY~ to buy now for $~1~. */, func_204(1))) || func_313("SLOTS_REGBAN" /* GXT: This feature is not available for you. */))
 		{
 			return 1;
 		}

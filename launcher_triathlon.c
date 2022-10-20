@@ -157,7 +157,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_61 = 2050;
 	iLocal_62 = -1;
 	iLocal_63 = -1;
-	sLocal_65 = "CC_SUBSTR";
+	sLocal_65 = "CC_SUBSTR" /* GXT: ~INPUT_CONTEXT~ */;
 	fLocal_66 = 125f;
 	iLocal_67 = 1;
 	iLocal_69 = 263;
@@ -424,20 +424,20 @@ void __EntryFunction__()//Position - 0x0
 									bVar3 = false;
 									if (!func_120(uLocal_58, 1024))
 									{
-										func_81("MG_GET_ON_FOOT", -1);
+										func_81("MG_GET_ON_FOOT" /* GXT: You cannot participate in this race with a vehicle. */, -1);
 										func_88(&uLocal_58, 1024);
 									}
 								}
 								else if (func_120(uLocal_58, 1024))
 								{
 									func_124(&uLocal_58, 1024);
-									HUD::CLEAR_THIS_PRINT("MG_GET_ON_FOOT");
+									HUD::CLEAR_THIS_PRINT("MG_GET_ON_FOOT" /* GXT: You cannot participate in this race with a vehicle. */);
 								}
 							}
 							else if (func_120(uLocal_58, 1024))
 							{
 								func_124(&uLocal_58, 1024);
-								HUD::CLEAR_THIS_PRINT("MG_GET_ON_FOOT");
+								HUD::CLEAR_THIS_PRINT("MG_GET_ON_FOOT" /* GXT: You cannot participate in this race with a vehicle. */);
 							}
 							if (!PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID()))
 							{
@@ -826,7 +826,7 @@ void func_7()//Position - 0xBEE
 				}
 				else
 				{
-					func_16("TRI_NEWRC", 0, 0, -1, 10000, 7, 0, 0, 0);
+					func_16("TRI_NEWRC" /* GXT: New Triathlon race unlocked at ~BLIP_TRIATHLON~ */, 0, 0, -1, 10000, 7, 0, 0, 0);
 					func_15(62);
 				}
 			}
@@ -3295,7 +3295,7 @@ void func_30()//Position - 0x56D3
 	}
 	else if (MISC::IS_PS3_VERSION() || func_31())
 	{
-		StringCopy(&cVar0, "PRESENCE_0_STR", 24);
+		StringCopy(&cVar0, "PRESENCE_0_STR" /* GXT: Playing story */, 24);
 		NETWORK::NETWORK_SET_RICH_PRESENCE_STRING(0, &cVar0);
 	}
 }
@@ -3892,7 +3892,7 @@ void func_62()//Position - 0x5FA9
 	}
 	else if ((PED::IS_PED_INJURED(iLocal_85) || EVENT::IS_SHOCKING_EVENT_IN_SPHERE(91, ENTITY::GET_ENTITY_COORDS(iLocal_85, true), 40f)) || EVENT::IS_SHOCKING_EVENT_IN_SPHERE(118, ENTITY::GET_ENTITY_COORDS(iLocal_85, true), 40f))
 	{
-		func_81("TRI_DEATH", -1);
+		func_81("TRI_DEATH" /* GXT: Come back later for this race. */, -1);
 		iVar0 = iLocal_69;
 		func_75(iLocal_69);
 		iLocal_69 = iVar0;
@@ -5315,7 +5315,7 @@ bool func_120(var uParam0, int iParam1)//Position - 0x7F7E
 void func_121()//Position - 0x7F8D
 {
 	StringCopy(&Local_51, "TriathlonSP", 64);
-	sLocal_65 = "PLAY_TRIATH";
+	sLocal_65 = "PLAY_TRIATH" /* GXT: Press ~INPUT_CONTEXT~ to enter the triathlon. */;
 	iLocal_63 = 17;
 	func_88(&uLocal_58, 4194304);
 	iLocal_61 = 51000;

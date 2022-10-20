@@ -346,11 +346,11 @@ void func_7()//Position - 0x4EE
 	}
 	if (MISC::GET_GAME_TIMER() >= iLocal_78)
 	{
-		func_8(iVar0, "TIMER_TIME", 0, 0, -1, 0, 2, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, -1);
+		func_8(iVar0, "TIMER_TIME" /* GXT: TIME */, 0, 0, -1, 0, 2, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 	}
 	else
 	{
-		func_8(iVar0, "TIMER_TIME", 0, 0, -1, 0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
+		func_8(iVar0, "TIMER_TIME" /* GXT: TIME */, 0, 0, -1, 0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 	}
 	switch (iLocal_75)
 	{
@@ -954,7 +954,7 @@ int func_22(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 			{
 				func_43(sParam16);
 				func_43(sParam19);
-				func_43("MORE_SEATS");
+				func_43("MORE_SEATS" /* GXT: A vehicle with more seats is needed. */);
 				if (bParam18 && PLAYER::IS_PLAYER_WANTED_LEVEL_GREATER(PLAYER::PLAYER_ID(), 0))
 				{
 					if (HUD::DOES_BLIP_EXIST(iParam0->f_5))
@@ -970,7 +970,7 @@ int func_22(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 					{
 						if (bParam22)
 						{
-							func_34(iParam0, "LOSE_WANTED", 0);
+							func_34(iParam0, "LOSE_WANTED" /* GXT: Lose the Cops. */, 0);
 							if (!PED::IS_PED_INJURED(iParam0->f_17[0]))
 							{
 								func_32(iParam0->f_17[0], "VEHICLE_POLICE_PURSUIT", 3);
@@ -984,7 +984,7 @@ int func_22(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 				{
 					if (BitTest(iParam0->f_13, 0))
 					{
-						func_43("LOSE_WANTED");
+						func_43("LOSE_WANTED" /* GXT: Lose the Cops. */);
 						MISC::CLEAR_BIT(&(iParam0->f_13), 0);
 						MISC::SET_BIT(&(iParam0->f_13), 1);
 					}
@@ -1105,8 +1105,8 @@ int func_22(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 								func_43(sParam13);
 								func_43(sParam14);
 								func_43(sParam15);
-								func_43("LOSE_WANTED");
-								func_43("MORE_SEATS");
+								func_43("LOSE_WANTED" /* GXT: Lose the Cops. */);
+								func_43("MORE_SEATS" /* GXT: A vehicle with more seats is needed. */);
 								func_43(sParam19);
 								func_14(iParam0, 1, 0);
 								return 1;
@@ -1131,7 +1131,7 @@ int func_22(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 					{
 						if (bParam22)
 						{
-							func_34(iParam0, "LOSE_WANTED", 0);
+							func_34(iParam0, "LOSE_WANTED" /* GXT: Lose the Cops. */, 0);
 							if (!PED::IS_PED_INJURED(iParam0->f_17[0]))
 							{
 								func_32(iParam0->f_17[0], "VEHICLE_POLICE_PURSUIT", 3);
@@ -1145,7 +1145,7 @@ int func_22(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 				{
 					if (BitTest(iParam0->f_13, 0))
 					{
-						func_43("LOSE_WANTED");
+						func_43("LOSE_WANTED" /* GXT: Lose the Cops. */);
 						MISC::CLEAR_BIT(&(iParam0->f_13), 0);
 						MISC::SET_BIT(&(iParam0->f_13), 1);
 					}
@@ -1245,7 +1245,7 @@ int func_22(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 									{
 										func_32(iParam0->f_17[iVar7], "NEED_A_BIGGER_VEHICLE", 3);
 									}
-									func_34(iParam0, "MORE_SEATS", 0);
+									func_34(iParam0, "MORE_SEATS" /* GXT: A vehicle with more seats is needed. */, 0);
 									MISC::SET_BIT(&(iParam0->f_13), 13);
 								}
 							}
@@ -1304,7 +1304,7 @@ int func_22(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 		func_43(sParam16);
 		func_43(sParam19);
 		func_43(sParam16);
-		func_43("LOSE_WANTED");
+		func_43("LOSE_WANTED" /* GXT: Lose the Cops. */);
 		if (HUD::DOES_BLIP_EXIST(iParam0->f_5))
 		{
 			HUD::REMOVE_BLIP(&(iParam0->f_5));
@@ -2031,7 +2031,7 @@ int func_44(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 						{
 							func_32(uParam0->f_17[iVar18], "NEED_A_BIGGER_VEHICLE", 3);
 						}
-						func_34(uParam0, "MORE_SEATS", 0);
+						func_34(uParam0, "MORE_SEATS" /* GXT: A vehicle with more seats is needed. */, 0);
 						MISC::SET_BIT(&(uParam0->f_13), 13);
 					}
 				}
@@ -2042,7 +2042,7 @@ int func_44(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 		{
 			bVar9 = false;
 			MISC::CLEAR_BIT(&(uParam0->f_13), 13);
-			func_43("MORE_SEATS");
+			func_43("MORE_SEATS" /* GXT: A vehicle with more seats is needed. */);
 		}
 		if (!ENTITY::DOES_ENTITY_EXIST(iParam10))
 		{
@@ -2055,7 +2055,7 @@ int func_44(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 						iVar10 = PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false);
 						if (func_55(iVar10, uParam0))
 						{
-							func_34(uParam0, "CMN_VEHSUIT", 0);
+							func_34(uParam0, "CMN_VEHSUIT" /* GXT: ~s~Vehicle is not suitable. */, 0);
 							MISC::SET_BIT(&(uParam0->f_13), 31);
 						}
 					}
@@ -2063,7 +2063,7 @@ int func_44(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 				else if (!PED::IS_PED_SITTING_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID()))
 				{
 					MISC::CLEAR_BIT(&(uParam0->f_13), 31);
-					func_43("CMN_VEHSUIT");
+					func_43("CMN_VEHSUIT" /* GXT: ~s~Vehicle is not suitable. */);
 				}
 			}
 		}
@@ -2473,7 +2473,7 @@ int func_44(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 				}
 				iVar0++;
 			}
-			func_43("MORE_SEATS");
+			func_43("MORE_SEATS" /* GXT: A vehicle with more seats is needed. */);
 			return 1;
 		}
 	}
@@ -3104,11 +3104,11 @@ void func_71(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iPar
 	{
 		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
-			iVar0 = "CMN_HINT";
+			iVar0 = "CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */;
 		}
 		else
 		{
-			iVar0 = "FM_IHELP_HNT";
+			iVar0 = "FM_IHELP_HNT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus. */;
 		}
 	}
 	if (func_99(iVar0))
@@ -3165,7 +3165,7 @@ void func_71(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iPar
 							{
 								func_75(iVar0, -1);
 								uParam0->f_3 = iVar0;
-								if (MISC::ARE_STRINGS_EQUAL("CMN_HINT", iVar0))
+								if (MISC::ARE_STRINGS_EQUAL("CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */, iVar0))
 								{
 									func_74(1);
 								}
@@ -3184,7 +3184,7 @@ void func_71(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iPar
 						{
 							func_75(iVar0, -1);
 							uParam0->f_3 = iVar0;
-							if (MISC::ARE_STRINGS_EQUAL("CMN_HINT", iVar0))
+							if (MISC::ARE_STRINGS_EQUAL("CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */, iVar0))
 							{
 								func_74(1);
 							}
@@ -3343,7 +3343,7 @@ int func_76(char* sParam0)//Position - 0x40D0
 {
 	if (!func_77(1, 1, 0))
 	{
-		if ((!MISC::IS_STRING_NULL_OR_EMPTY(sParam0) && func_99(sParam0)) || func_99("CMN_HINT"))
+		if ((!MISC::IS_STRING_NULL_OR_EMPTY(sParam0) && func_99(sParam0)) || func_99("CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */))
 		{
 			HUD::CLEAR_HELP(true);
 		}
@@ -4107,11 +4107,11 @@ void func_100(var uParam0, int iParam1, bool bParam2)//Position - 0x4CCD
 	{
 		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
-			sVar0 = "CMN_HINT";
+			sVar0 = "CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */;
 		}
 		else
 		{
-			sVar0 = "FM_IHELP_HNT";
+			sVar0 = "FM_IHELP_HNT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus. */;
 		}
 	}
 	if (!MISC::IS_STRING_NULL(uParam0->f_3))

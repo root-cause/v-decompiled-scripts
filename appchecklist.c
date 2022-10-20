@@ -199,19 +199,19 @@ void func_4()//Position - 0x1E2
 	}
 	if (iLocal_21 == 0)
 	{
-		func_7(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(18), SYSTEM::TO_FLOAT(0), SYSTEM::TO_FLOAT(0), -1f, -1f, "CELL_3092", 0, 0, 0, 0);
+		func_7(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(18), SYSTEM::TO_FLOAT(0), SYSTEM::TO_FLOAT(0), -1f, -1f, "CELL_3092" /* GXT: No progress made. */, 0, 0, 0, 0);
 	}
 	else
 	{
 		bLocal_31 = true;
 	}
 	func_33(Global_20247, "DISPLAY_VIEW", 18f, -1082130432, -1082130432, -1082130432, -1082130432);
-	func_5(Global_20247, "SET_HEADER", "CELL_23", 0, 0, 0, 0);
+	func_5(Global_20247, "SET_HEADER", "CELL_23" /* GXT: Check List */, 0, 0, 0, 0);
 	if (Global_20254)
 	{
-		func_7(Global_20247, "SET_SOFT_KEYS", 2f, 1f, 2f, -1f, -1f, "CELL_205", 0, 0, 0, 0);
-		func_7(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, "CELL_206", 0, 0, 0, 0);
-		func_7(Global_20247, "SET_SOFT_KEYS", 1f, 0f, 15f, -1f, -1f, "CELL_227", 0, 0, 0, 0);
+		func_7(Global_20247, "SET_SOFT_KEYS", 2f, 1f, 2f, -1f, -1f, "CELL_205" /* GXT: SELECT */, 0, 0, 0, 0);
+		func_7(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, "CELL_206" /* GXT: BACK */, 0, 0, 0, 0);
+		func_7(Global_20247, "SET_SOFT_KEYS", 1f, 0f, 15f, -1f, -1f, "CELL_227" /* GXT: SORT */, 0, 0, 0, 0);
 		MISC::SET_BIT(&Global_8136, 17);
 	}
 	else
@@ -358,7 +358,7 @@ void func_10()//Position - 0x5B3
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(18);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_3206");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_3206" /* GXT: - Total Available: ~1~ */);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iLocal_27);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -366,7 +366,7 @@ void func_10()//Position - 0x5B3
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(18);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_3101");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_3101" /* GXT: - Total Complete: ~1~ */);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iLocal_28);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -377,7 +377,7 @@ void func_10()//Position - 0x5B3
 			MISC::CLEAR_BIT(&Global_8136, 17);
 			if (Global_20254)
 			{
-				func_7(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, "CELL_206", 0, 0, 0, 0);
+				func_7(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, "CELL_206" /* GXT: BACK */, 0, 0, 0, 0);
 			}
 			else
 			{
@@ -508,7 +508,7 @@ void func_16()//Position - 0x8CD
 	func_33(Global_20247, "SET_DATA_SLOT_EMPTY", 18f, -1082130432, -1082130432, -1082130432, -1082130432);
 	if (func_17(0))
 	{
-		func_7(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(18), SYSTEM::TO_FLOAT(iVar0), SYSTEM::TO_FLOAT(0), -1f, -1f, "CELL_229", 0, 0, 0, 0);
+		func_7(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(18), SYSTEM::TO_FLOAT(iVar0), SYSTEM::TO_FLOAT(0), -1f, -1f, "CELL_229" /* GXT: On Active Mission */, 0, 0, 0, 0);
 	}
 	else
 	{
@@ -524,7 +524,7 @@ void func_16()//Position - 0x8CD
 	{
 	}
 	func_33(Global_20247, "DISPLAY_VIEW", 18f, -1082130432, -1082130432, -1082130432, -1082130432);
-	func_5(Global_20247, "SET_HEADER", "CELL_3301", 0, 0, 0, 0);
+	func_5(Global_20247, "SET_HEADER", "CELL_3301" /* GXT: Open Missions */, 0, 0, 0, 0);
 	if (func_17(0) || Global_95442 == 0)
 	{
 		func_7(Global_20247, "SET_SOFT_KEYS", 2f, 0f, 1f, -1f, -1f, 0, 0, 0, 0, 0);
@@ -533,7 +533,7 @@ void func_16()//Position - 0x8CD
 		MISC::CLEAR_BIT(&Global_8136, 17);
 		if (Global_20254)
 		{
-			func_7(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, "CELL_206", 0, 0, 0, 0);
+			func_7(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, "CELL_206" /* GXT: BACK */, 0, 0, 0, 0);
 		}
 		else
 		{
@@ -542,9 +542,9 @@ void func_16()//Position - 0x8CD
 	}
 	else if (Global_20254)
 	{
-		func_7(Global_20247, "SET_SOFT_KEYS", 2f, 0f, 2f, -1f, -1f, "CELL_205", 0, 0, 0, 0);
-		func_7(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, "CELL_206", 0, 0, 0, 0);
-		func_7(Global_20247, "SET_SOFT_KEYS", 1f, 0f, 15f, -1f, -1f, "CELL_227", 0, 0, 0, 0);
+		func_7(Global_20247, "SET_SOFT_KEYS", 2f, 0f, 2f, -1f, -1f, "CELL_205" /* GXT: SELECT */, 0, 0, 0, 0);
+		func_7(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, "CELL_206" /* GXT: BACK */, 0, 0, 0, 0);
+		func_7(Global_20247, "SET_SOFT_KEYS", 1f, 0f, 15f, -1f, -1f, "CELL_227" /* GXT: SORT */, 0, 0, 0, 0);
 	}
 	else
 	{
@@ -781,83 +781,83 @@ char* func_21(bool bParam0)//Position - 0xE10
 	switch (bParam0)
 	{
 		case 0:
-			return "MG_BJUM";
+			return "MG_BJUM" /* GXT: Base Jumping */;
 			break;
 		
 		case 1:
-			return "MG_DART";
+			return "MG_DART" /* GXT: Darts */;
 			break;
 		
 		case 2:
-			return "MG_GOLF";
+			return "MG_GOLF" /* GXT: Golf */;
 			break;
 		
 		case 3:
-			return "MG_HUNT";
+			return "MG_HUNT" /* GXT: Hunting */;
 			break;
 		
 		case 4:
-			return "MG_OFFR";
+			return "MG_OFFR" /* GXT: Offroad Races */;
 			break;
 		
 		case 5:
-			return "MG_PILO";
+			return "MG_PILO" /* GXT: Flight School */;
 			break;
 		
 		case 6:
-			return "MG_RMPG";
+			return "MG_RMPG" /* GXT: Rampages */;
 			break;
 		
 		case 7:
-			return "MG_SERA";
+			return "MG_SERA" /* GXT: Sea Races */;
 			break;
 		
 		case 8:
-			return "MG_SRAC";
+			return "MG_SRAC" /* GXT: Street Races */;
 			break;
 		
 		case 9:
-			return "MG_STRP";
+			return "MG_STRP" /* GXT: Stripclub */;
 			break;
 		
 		case 10:
-			return "MG_STNT";
+			return "MG_STNT" /* GXT: Stunt Planes */;
 			break;
 		
 		case 11:
-			return "MG_SHTR";
+			return "MG_SHTR" /* GXT: Shooting Range */;
 			break;
 		
 		case 12:
-			return "MG_TAXI";
+			return "MG_TAXI" /* GXT: Taxi Jobs */;
 			break;
 		
 		case 13:
-			return "MG_TENN";
+			return "MG_TENN" /* GXT: Tennis */;
 			break;
 		
 		case 14:
-			return "MG_TOWI";
+			return "MG_TOWI" /* GXT: Towing */;
 			break;
 		
 		case 15:
-			return "MG_TRFA";
+			return "MG_TRFA" /* GXT: Trafficking - Air */;
 			break;
 		
 		case 16:
-			return "MG_TRFG";
+			return "MG_TRFG" /* GXT: Trafficking - Ground */;
 			break;
 		
 		case 17:
-			return "MG_TRIA";
+			return "MG_TRIA" /* GXT: Triathlon */;
 			break;
 		
 		case 18:
-			return "MG_YOGA";
+			return "MG_YOGA" /* GXT: Yoga */;
 			break;
 		
 		case 19:
-			return "MG_CRCE";
+			return "MG_CRCE" /* GXT: Stock Car Races */;
 			break;
 	}
 	return "INVALID!";
@@ -1274,16 +1274,16 @@ void func_29()//Position - 0x1594
 void func_30()//Position - 0x15B7
 {
 	func_33(Global_20247, "SET_DATA_SLOT_EMPTY", 18f, -1082130432, -1082130432, -1082130432, -1082130432);
-	func_7(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(18), SYSTEM::TO_FLOAT(0), SYSTEM::TO_FLOAT(0), -1f, -1f, "CELL_3301", 0, 0, 0, 0);
-	func_7(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(18), SYSTEM::TO_FLOAT(1), SYSTEM::TO_FLOAT(0), -1f, -1f, "CELL_3302", 0, 0, 0, 0);
+	func_7(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(18), SYSTEM::TO_FLOAT(0), SYSTEM::TO_FLOAT(0), -1f, -1f, "CELL_3301" /* GXT: Open Missions */, 0, 0, 0, 0);
+	func_7(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(18), SYSTEM::TO_FLOAT(1), SYSTEM::TO_FLOAT(0), -1f, -1f, "CELL_3302" /* GXT: Progress */, 0, 0, 0, 0);
 	iLocal_21 = 2;
 	func_33(Global_20247, "DISPLAY_VIEW", 18f, -1082130432, -1082130432, -1082130432, -1082130432);
-	func_5(Global_20247, "SET_HEADER", "CELL_23", 0, 0, 0, 0);
+	func_5(Global_20247, "SET_HEADER", "CELL_23" /* GXT: Check List */, 0, 0, 0, 0);
 	if (Global_20254)
 	{
-		func_7(Global_20247, "SET_SOFT_KEYS", 2f, 1f, 2f, -1f, -1f, "CELL_205", 0, 0, 0, 0);
-		func_7(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, "CELL_206", 0, 0, 0, 0);
-		func_7(Global_20247, "SET_SOFT_KEYS", 1f, 0f, 15f, -1f, -1f, "CELL_227", 0, 0, 0, 0);
+		func_7(Global_20247, "SET_SOFT_KEYS", 2f, 1f, 2f, -1f, -1f, "CELL_205" /* GXT: SELECT */, 0, 0, 0, 0);
+		func_7(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, "CELL_206" /* GXT: BACK */, 0, 0, 0, 0);
+		func_7(Global_20247, "SET_SOFT_KEYS", 1f, 0f, 15f, -1f, -1f, "CELL_227" /* GXT: SORT */, 0, 0, 0, 0);
 	}
 	else
 	{
@@ -1296,11 +1296,11 @@ void func_30()//Position - 0x15B7
 
 void func_31()//Position - 0x16F1
 {
-	func_32(0, "CELL_3001", 1, Global_113122);
-	func_32(1, "CELL_3008", 3, Global_113122);
-	func_32(2, "CELL_3004", 7, Global_113125);
-	func_32(3, "CELL_3005", 9, Global_113126);
-	func_32(4, "CELL_3007", 11, Global_113127);
+	func_32(0, "CELL_3001" /* GXT: Missions */, 1, Global_113122);
+	func_32(1, "CELL_3008" /* GXT: Hobbies and Pastimes */, 3, Global_113122);
+	func_32(2, "CELL_3004" /* GXT: Strangers and Freaks */, 7, Global_113125);
+	func_32(3, "CELL_3005" /* GXT: Random Events */, 9, Global_113126);
+	func_32(4, "CELL_3007" /* GXT: Miscellaneous */, 11, Global_113127);
 }
 
 void func_32(int iParam0, char* sParam1, int iParam2, var uParam3)//Position - 0x1741

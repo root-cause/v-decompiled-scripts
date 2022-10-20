@@ -2184,7 +2184,7 @@ void func_46(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, in
 		}
 		if (iParam5 < 1000000)
 		{
-			if ((LOCALIZATION::GET_CURRENT_LANGUAGE() == 8 && fParam14 >= 100f) && MISC::ARE_STRINGS_EQUAL("AMCH_KMHN", sParam12))
+			if ((LOCALIZATION::GET_CURRENT_LANGUAGE() == 8 && fParam14 >= 100f) && MISC::ARE_STRINGS_EQUAL("AMCH_KMHN" /* GXT: ~1~km/h */, sParam12))
 			{
 				func_119(uParam2, 0, 0);
 			}
@@ -2201,7 +2201,7 @@ void func_46(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, in
 				func_117(uParam2, 0, 0);
 			}
 		}
-		else if (LOCALIZATION::GET_CURRENT_LANGUAGE() == 8 && (MISC::ARE_STRINGS_EQUAL("HUD_CASH", sParam12) || MISC::ARE_STRINGS_EQUAL("HUD_CASH_NEG", sParam12)))
+		else if (LOCALIZATION::GET_CURRENT_LANGUAGE() == 8 && (MISC::ARE_STRINGS_EQUAL("HUD_CASH" /* GXT: $~1~ */, sParam12) || MISC::ARE_STRINGS_EQUAL("HUD_CASH_NEG" /* GXT: -$~1~ */, sParam12)))
 		{
 			func_119(uParam2, 0, 0);
 		}
@@ -2382,15 +2382,15 @@ void func_46(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, in
 			}
 			if (iParam21 == 2 && MISC::IS_STRING_NULL_OR_EMPTY(sParam7))
 			{
-				sParam7 = "HUD_ROCKET";
+				sParam7 = "HUD_ROCKET" /* GXT: ROCKETS */;
 			}
 			else if (iParam21 == 4)
 			{
-				sParam7 = "HUD_BOOST";
+				sParam7 = "HUD_BOOST" /* GXT: BOOST */;
 			}
 			else if (iParam21 == 1)
 			{
-				sParam7 = "HUD_SPIKES";
+				sParam7 = "HUD_SPIKES" /* GXT: SPIKES */;
 			}
 			uParam1->f_6 = iParam26;
 			uParam2->f_6 = iParam26;
@@ -2780,11 +2780,11 @@ void func_46(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, in
 						}
 						else if (iParam13 == 0)
 						{
-							func_58(uParam4, uParam2, "HUD_KSMULTI", iParam5, 2);
+							func_58(uParam4, uParam2, "HUD_KSMULTI" /* GXT: ~1~x */, iParam5, 2);
 						}
 						else
 						{
-							func_56(uParam4, uParam2, "HUD_KSMULTI", fParam14, Global_2727066, 2);
+							func_56(uParam4, uParam2, "HUD_KSMULTI" /* GXT: ~1~x */, fParam14, Global_2727066, 2);
 						}
 					}
 					else if (func_55(sParam12))
@@ -2809,7 +2809,7 @@ void func_46(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, in
 						}
 						else
 						{
-							func_53(uParam4, uParam2, "TIMER_DASHES", iParam5, iParam19, 2, 0);
+							func_53(uParam4, uParam2, "TIMER_DASHES" /* GXT: ~1~/~1~ */, iParam5, iParam19, 2, 0);
 						}
 					}
 					else if (bParam35)
@@ -2819,18 +2819,18 @@ void func_46(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, in
 							func_78(&Var24, uParam3, sParam23, iParam17, iParam8, -1, bParam36, bVar7);
 						}
 					}
-					else if (MISC::ARE_STRINGS_EQUAL("HUD_CASH", sParam12) || MISC::ARE_STRINGS_EQUAL("HUD_CASH_S", sParam12))
+					else if (MISC::ARE_STRINGS_EQUAL("HUD_CASH" /* GXT: $~1~ */, sParam12) || MISC::ARE_STRINGS_EQUAL("HUD_CASH_S" /* GXT: $~a~ */, sParam12))
 					{
-						sParam12 = "HUD_CASH_S";
+						sParam12 = "HUD_CASH_S" /* GXT: $~a~ */;
 						*uParam2 = 5;
 						func_81(uParam2, 0);
 						func_48(uParam4, uParam2, sParam12, iParam5, 2);
 					}
-					else if (MISC::ARE_STRINGS_EQUAL("HUD_CASH_NEG", sParam12) || MISC::ARE_STRINGS_EQUAL("HUD_CASH_NEG_S", sParam12))
+					else if (MISC::ARE_STRINGS_EQUAL("HUD_CASH_NEG" /* GXT: -$~1~ */, sParam12) || MISC::ARE_STRINGS_EQUAL("HUD_CASH_NEG_S" /* GXT: -$~a~ */, sParam12))
 					{
 						*uParam2 = 5;
 						func_81(uParam2, 0);
-						sParam12 = "HUD_CASH_NEG_S";
+						sParam12 = "HUD_CASH_NEG_S" /* GXT: -$~a~ */;
 						func_48(uParam4, uParam2, sParam12, iParam5, 2);
 					}
 					else if (iParam13 == 0)
@@ -4788,7 +4788,7 @@ void func_132(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 		func_120(uParam1, 3);
 		if (iParam5 < 1000000)
 		{
-			if ((LOCALIZATION::GET_CURRENT_LANGUAGE() == 8 && fParam6 >= 100f) && MISC::ARE_STRINGS_EQUAL("AMCH_KMHN", sParam7))
+			if ((LOCALIZATION::GET_CURRENT_LANGUAGE() == 8 && fParam6 >= 100f) && MISC::ARE_STRINGS_EQUAL("AMCH_KMHN" /* GXT: ~1~km/h */, sParam7))
 			{
 				func_119(uParam2, 0, 0);
 			}
@@ -4805,7 +4805,7 @@ void func_132(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 				func_117(uParam2, 0, 0);
 			}
 		}
-		else if (LOCALIZATION::GET_CURRENT_LANGUAGE() == 8 && (MISC::ARE_STRINGS_EQUAL("HUD_CASH", sParam7) || MISC::ARE_STRINGS_EQUAL("HUD_CASH_NEG", sParam7)))
+		else if (LOCALIZATION::GET_CURRENT_LANGUAGE() == 8 && (MISC::ARE_STRINGS_EQUAL("HUD_CASH" /* GXT: $~1~ */, sParam7) || MISC::ARE_STRINGS_EQUAL("HUD_CASH_NEG" /* GXT: -$~1~ */, sParam7)))
 		{
 			func_119(uParam2, 0, 0);
 		}
@@ -5252,21 +5252,21 @@ void func_132(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 				}
 				else
 				{
-					func_53(uParam4, uParam2, "TIMER_DASHES", iParam5, iParam9, 2, 0);
+					func_53(uParam4, uParam2, "TIMER_DASHES" /* GXT: ~1~/~1~ */, iParam5, iParam9, 2, 0);
 				}
 			}
-			else if (MISC::ARE_STRINGS_EQUAL("HUD_CASH", sParam7) || MISC::ARE_STRINGS_EQUAL("HUD_CASH_S", sParam7))
+			else if (MISC::ARE_STRINGS_EQUAL("HUD_CASH" /* GXT: $~1~ */, sParam7) || MISC::ARE_STRINGS_EQUAL("HUD_CASH_S" /* GXT: $~a~ */, sParam7))
 			{
-				sParam7 = "HUD_CASH_S";
+				sParam7 = "HUD_CASH_S" /* GXT: $~a~ */;
 				*uParam2 = 5;
 				func_81(uParam2, 0);
 				func_48(uParam4, uParam2, sParam7, iParam5, 2);
 			}
-			else if (MISC::ARE_STRINGS_EQUAL("HUD_CASH_NEG", sParam7) || MISC::ARE_STRINGS_EQUAL("HUD_CASH_NEG_S", sParam7))
+			else if (MISC::ARE_STRINGS_EQUAL("HUD_CASH_NEG" /* GXT: -$~1~ */, sParam7) || MISC::ARE_STRINGS_EQUAL("HUD_CASH_NEG_S" /* GXT: -$~a~ */, sParam7))
 			{
 				*uParam2 = 5;
 				func_81(uParam2, 0);
-				sParam7 = "HUD_CASH_NEG_S";
+				sParam7 = "HUD_CASH_NEG_S" /* GXT: -$~a~ */;
 				func_48(uParam4, uParam2, sParam7, iParam5, 2);
 			}
 			else if (iParam8 == 0)
@@ -7701,7 +7701,7 @@ void func_191(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 			}
 			if (iParam20 > 0)
 			{
-				func_58(&Var1, &Var2, "HUD_MULTSMAL", iParam20, 2);
+				func_58(&Var1, &Var2, "HUD_MULTSMAL" /* GXT: ~1~x */, iParam20, 2);
 			}
 			if (bVar3)
 			{
@@ -7750,7 +7750,7 @@ void func_192(int iParam0, int iParam1, var uParam2, var uParam3, var uParam4, i
 	}
 	else if (iParam5 == 1)
 	{
-		func_53(uParam4, uParam3, "TIMER_DASHES", iParam0, iParam1, 2, 0);
+		func_53(uParam4, uParam3, "TIMER_DASHES" /* GXT: ~1~/~1~ */, iParam0, iParam1, 2, 0);
 	}
 	else
 	{
@@ -7768,10 +7768,10 @@ void func_192(int iParam0, int iParam1, var uParam2, var uParam3, var uParam4, i
 				func_90("TimerBars", "Circle_checkpoints_Big", uParam2[0 /*9*/], 0, 0, iParam6, 0);
 			}
 		}
-		sVar2 = "TIMER_DASHES";
+		sVar2 = "TIMER_DASHES" /* GXT: ~1~/~1~ */;
 		if ((bParam7 == 1 && iParam0 > 99) && iParam1 > 99)
 		{
-			sVar2 = "TIMER_DASHES";
+			sVar2 = "TIMER_DASHES" /* GXT: ~1~/~1~ */;
 		}
 		func_53(uParam4, uParam3, sVar2, iParam0, iParam1, 2, 0);
 	}
@@ -8441,7 +8441,7 @@ void func_204(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 					if (iParam9 > 0)
 					{
 						func_211(uParam3);
-						func_210(uParam6, uParam3, iParam9, 66, "TIMER_POS", 0, 1);
+						func_210(uParam6, uParam3, iParam9, 66, "TIMER_POS" /* GXT: +~a~ */, 0, 1);
 						func_209(uParam3);
 					}
 					else
@@ -8454,7 +8454,7 @@ void func_204(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 				else if (iParam9 > 0)
 				{
 					func_208(uParam3);
-					func_210(uParam6, uParam3, iParam9, 66, "TIMER_POS", 0, 1);
+					func_210(uParam6, uParam3, iParam9, 66, "TIMER_POS" /* GXT: +~a~ */, 0, 1);
 					func_209(uParam3);
 				}
 				else
@@ -8523,13 +8523,13 @@ void func_204(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 					case 2:
 						*uParam5 = (*uParam5 + 0.12f);
 						func_210(uParam5, uParam2, iParam7, 6, "", 0, 1);
-						func_79(&uVar1, &uVar0, "TIMER_AM_O", 0, 1);
+						func_79(&uVar1, &uVar0, "TIMER_AM_O" /* GXT: AM */, 0, 1);
 						break;
 					
 					case 3:
 						*uParam5 = (*uParam5 + 0.12f);
 						func_210(uParam5, uParam2, iParam7, 6, "", 0, 1);
-						func_79(&uVar1, &uVar0, "TIMER_PM_O", 0, 1);
+						func_79(&uVar1, &uVar0, "TIMER_PM_O" /* GXT: PM */, 0, 1);
 						break;
 					
 					case 4:

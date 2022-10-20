@@ -289,7 +289,7 @@ void func_7(var uParam0, int iParam1, char* sParam2)//Position - 0x14A
 	}
 	else
 	{
-		StringCopy(sParam2, "MPJAC_EXIT", 16);
+		StringCopy(sParam2, "MPJAC_EXIT" /* GXT: Press ~INPUT_CONTEXT~ to stand up. */, 16);
 	}
 }
 
@@ -388,7 +388,7 @@ void func_11(var uParam0)//Position - 0x219
 				{
 					if ((MISC::GET_GAME_TIMER() - uParam0->f_85.f_6) > 150)
 					{
-						func_45(&(uParam0->f_85.f_5), 4, "MPJAC_SIT", 0, 0, 0, 0);
+						func_45(&(uParam0->f_85.f_5), 4, "MPJAC_SIT" /* GXT: Press ~INPUT_CONTEXT~ to sit down. */, 0, 0, 0, 0);
 					}
 				}
 				else if (PAD::IS_CONTROL_JUST_PRESSED(0, 51))
@@ -671,7 +671,7 @@ void func_18(var uParam0)//Position - 0x817
 			{
 				if (uParam0->f_85.f_5 == -1)
 				{
-					func_45(&(uParam0->f_85.f_5), 4, "MPJAC_EXIT", 0, 0, 0, 0);
+					func_45(&(uParam0->f_85.f_5), 4, "MPJAC_EXIT" /* GXT: Press ~INPUT_CONTEXT~ to stand up. */, 0, 0, 0, 0);
 				}
 				if (uParam0->f_85.f_4 == 6)
 				{

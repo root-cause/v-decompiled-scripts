@@ -4647,8 +4647,8 @@ int func_25(var uParam0, var uParam1, char* sParam2, char* sParam3, var uParam4,
 				PAD::DISABLE_ALL_CONTROL_ACTIONS(0);
 			}
 			func_50(&(uParam1->f_10), 0, 1, 1, 1);
-			func_49(&(uParam1->f_10), "IB_RETRY", 2, 201, 1, 1, 0);
-			func_49(&(uParam1->f_10), "FE_HLP16", 2, 202, 1, 1, 0);
+			func_49(&(uParam1->f_10), "IB_RETRY" /* GXT: Retry */, 2, 201, 1, 1, 0);
+			func_49(&(uParam1->f_10), "FE_HLP16" /* GXT: Exit */, 2, 202, 1, 1, 0);
 			if (func_52(iParam5, 4))
 			{
 				AUDIO::PLAY_SOUND_FRONTEND(-1, "ScreenFlash", "MissionFailedSounds", true);
@@ -9196,7 +9196,7 @@ void func_99(var uParam0, bool bParam1)//Position - 0xBDBA
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_4, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 	func_34(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 215, true));
-	func_51("ES_HELP");
+	func_51("ES_HELP" /* GXT: Continue */);
 	if (MISC::IS_PC_VERSION())
 	{
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
@@ -9208,7 +9208,7 @@ void func_99(var uParam0, bool bParam1)//Position - 0xBDBA
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_4, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 		func_34(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 216, true));
-		func_51("ES_XPAND");
+		func_51("ES_XPAND" /* GXT: Expand */);
 		if (MISC::IS_PC_VERSION())
 		{
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
@@ -9421,7 +9421,7 @@ void func_101(var uParam0, float fParam1, bool bParam2)//Position - 0xBEA5
 				{
 					if ((uParam0->f_574 - uParam0->f_576) > 0)
 					{
-						func_117((uParam0->f_574 - uParam0->f_576), "TIMER_TIME", 0, 0, -1, 0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
+						func_117((uParam0->f_574 - uParam0->f_576), "TIMER_TIME" /* GXT: TIME */, 0, 0, -1, 0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 					}
 					else
 					{
@@ -9652,26 +9652,26 @@ void func_101(var uParam0, float fParam1, bool bParam2)//Position - 0xBEA5
 			switch (uParam0->f_560)
 			{
 				case 0:
-					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("PERCENTAGE");
+					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("PERCENTAGE" /* GXT: ~1~% */);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(uParam0->f_558);
 					HUD::END_TEXT_COMMAND_DISPLAY_TEXT(fVar20, (fVar1 + func_125((2f * 2f))), 0);
 					break;
 				
 				case 1:
-					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("FO_TWO_NUM");
+					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("FO_TWO_NUM" /* GXT: ~1~/~1~ */);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(uParam0->f_558);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(uParam0->f_559);
 					HUD::END_TEXT_COMMAND_DISPLAY_TEXT(fVar20, (fVar1 + func_125((2f * 2f))), 0);
 					break;
 				
 				case 2:
-					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("MTPHPER_XPNO");
+					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("MTPHPER_XPNO" /* GXT: ~1~RP */);
 					HUD::ADD_TEXT_COMPONENT_INTEGER(uParam0->f_558);
 					HUD::END_TEXT_COMMAND_DISPLAY_TEXT(fVar20, (fVar1 + func_125((2f * 2f))), 0);
 					break;
 				
 				case 5:
-					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("ESDOLLA");
+					HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("ESDOLLA" /* GXT: $~a~ */);
 					HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER(uParam0->f_558, true);
 					HUD::END_TEXT_COMMAND_DISPLAY_TEXT(fVar20, (fVar1 + func_125((2f * 2f))), 0);
 					break;
@@ -10280,13 +10280,13 @@ void func_114(int iParam0, int iParam1, float fParam2, float fParam3, char* sPar
 			HUD::SET_TEXT_FONT(4);
 			if (iParam0 < 0)
 			{
-				HUD::BEGIN_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT("ESMINDOLLA");
+				HUD::BEGIN_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT("ESMINDOLLA" /* GXT: -$~a~ */);
 				HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER((-1 * iParam0), true);
 				fVar1 = HUD::END_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT(false);
 			}
 			else
 			{
-				HUD::BEGIN_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT("ESDOLLA");
+				HUD::BEGIN_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT("ESDOLLA" /* GXT: $~a~ */);
 				HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER(iParam0, true);
 				fVar1 = HUD::END_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT(false);
 			}
@@ -10301,19 +10301,19 @@ void func_114(int iParam0, int iParam1, float fParam2, float fParam3, char* sPar
 	switch (iParam5)
 	{
 		case 11:
-			HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("PERCENTAGE");
+			HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("PERCENTAGE" /* GXT: ~1~% */);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iParam0);
 			break;
 		
 		case 1:
 			HUD::SET_TEXT_FONT(5);
-			HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("FO_NUM");
+			HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("FO_NUM" /* GXT: ~1~ */);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iParam0);
 			break;
 		
 		case 2:
 			HUD::SET_TEXT_FONT(5);
-			HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("FO_TWO_NUM");
+			HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("FO_TWO_NUM" /* GXT: ~1~/~1~ */);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iParam0);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(iParam1);
 			break;
@@ -10325,12 +10325,12 @@ void func_114(int iParam0, int iParam1, float fParam2, float fParam3, char* sPar
 		case 3:
 			if (iParam0 < 0)
 			{
-				HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("ESMINDOLLA");
+				HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("ESMINDOLLA" /* GXT: -$~a~ */);
 				HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER((-1 * iParam0), true);
 			}
 			else
 			{
-				HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("ESDOLLA");
+				HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("ESDOLLA" /* GXT: $~a~ */);
 				HUD::ADD_TEXT_COMPONENT_FORMATTED_INTEGER(iParam0, true);
 			}
 			break;
@@ -10599,17 +10599,17 @@ void func_127(var uParam0)//Position - 0xDE57
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_4, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 	func_34(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 188, true));
-	func_51("ES_HELP_TU");
+	func_51("ES_HELP_TU" /* GXT: Like */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_4, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 	func_34(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 187, true));
-	func_51("ES_HELP_TD");
+	func_51("ES_HELP_TD" /* GXT: Dislike */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_4, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 	func_34(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 202, true));
-	func_51("ES_HELP_AB");
+	func_51("ES_HELP_AB" /* GXT: Don't Vote */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_4, "DRAW_INSTRUCTIONAL_BUTTONS");
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -16017,7 +16017,7 @@ void func_223(int iParam0, var uParam1)//Position - 0x152C6
 			break;
 		
 		case 5:
-			func_224(uParam1, "Barry3A", func_226(iParam0), 1, 1, 0, 1199.27f, -1255.63f, 34.23f, 381, "BARSTASH", 84, 0, "", 166, 0, 7, 4, 2, 0, 2359, func_225(iParam0), 0, 1);
+			func_224(uParam1, "Barry3A", func_226(iParam0), 1, 1, 0, 1199.27f, -1255.63f, 34.23f, 381, "BARSTASH" /* GXT: Areas where you can find vehicles with a hidden stash have been marked on the map. Collect these vehicles for Barry. */, 84, 0, "", 166, 0, 7, 4, 2, 0, 2359, func_225(iParam0), 0, 1);
 			break;
 		
 		case 6:
@@ -16029,7 +16029,7 @@ void func_223(int iParam0, var uParam1)//Position - 0x152C6
 			break;
 		
 		case 8:
-			func_224(uParam1, "Dreyfuss1", func_226(iParam0), 0, 2, 4, -1458.97f, 485.99f, 115.38f, 66, "LETTERS_HINT", 106, 0, "", 0, 0, -1, 4, 2, 0, 2359, func_225(iParam0), 0, 0);
+			func_224(uParam1, "Dreyfuss1", func_226(iParam0), 0, 2, 4, -1458.97f, 485.99f, 115.38f, 66, "LETTERS_HINT" /* GXT: The killer's identity and location have been revealed. */, 106, 0, "", 0, 0, -1, 4, 2, 0, 2359, func_225(iParam0), 0, 0);
 			break;
 		
 		case 9:
@@ -16149,7 +16149,7 @@ void func_223(int iParam0, var uParam1)//Position - 0x152C6
 			break;
 		
 		case 38:
-			func_224(uParam1, "Nigel1A", func_226(iParam0), 0, 12, 1, -558.65f, 284.49f, 90.86f, 149, "NIGITEMS", 100, 0, "", 0, 0, 42, 4, 4, 0, 2359, func_225(iParam0), 1, 1);
+			func_224(uParam1, "Nigel1A", func_226(iParam0), 0, 12, 1, -558.65f, 284.49f, 90.86f, 149, "NIGITEMS" /* GXT: Areas where you can find celebrity items have been marked on the map. Steal these items for Nigel and Mrs. Thornhill. */, 100, 0, "", 0, 0, 42, 4, 4, 0, 2359, func_225(iParam0), 1, 1);
 			break;
 		
 		case 39:
@@ -16193,7 +16193,7 @@ void func_223(int iParam0, var uParam1)//Position - 0x152C6
 			break;
 		
 		case 49:
-			func_224(uParam1, "Paparazzo3A", func_226(iParam0), 0, 14, 2, 305.52f, 157.19f, 102.94f, 389, "PAPPHOTO", 102, 0, "", 0, 0, 51, 4, 2, 0, 2359, func_225(iParam0), 0, 1);
+			func_224(uParam1, "Paparazzo3A", func_226(iParam0), 0, 14, 2, 305.52f, 157.19f, 102.94f, 389, "PAPPHOTO" /* GXT: Areas where you can find celebrity photo opportunities have been marked on the map. Track down and photograph these celebrities for Beverly. */, 102, 0, "", 0, 0, 51, 4, 2, 0, 2359, func_225(iParam0), 0, 1);
 			break;
 		
 		case 50:
@@ -16229,7 +16229,7 @@ void func_223(int iParam0, var uParam1)//Position - 0x152C6
 			break;
 		
 		case 58:
-			func_224(uParam1, "Tonya1", func_226(iParam0), 0, 17, 4, -14.39f, -1472.69f, 29.58f, 66, "AM_H_RCFS", -1, 0, "ambient_TonyaCall", 24, 1, 59, 4, 2, 0, 2359, func_225(iParam0), 0, 1);
+			func_224(uParam1, "Tonya1", func_226(iParam0), 0, 17, 4, -14.39f, -1472.69f, 29.58f, 66, "AM_H_RCFS" /* GXT: Strangers and Freaks can be found throughout San Andreas at ~HUD_COLOUR_FRANKLIN~~BLIP_RANDOM_CHARACTER~~s~ */, -1, 0, "ambient_TonyaCall", 24, 1, 59, 4, 2, 0, 2359, func_225(iParam0), 0, 1);
 			break;
 		
 		case 59:
@@ -16710,7 +16710,7 @@ void func_232()//Position - 0x16C7B
 			func_262(&uLocal_217, 1050253722, 1073741824);
 			if (Global_113386.f_25073.f_2 < 2)
 			{
-				func_261("FM_IHELP_SLP", -1);
+				func_261("FM_IHELP_SLP" /* GXT: You can slipstream by driving close behind another racer. This will give you a speed boost. */, -1);
 				Global_113386.f_25073.f_2++;
 			}
 			iLocal_107++;
@@ -16990,7 +16990,7 @@ void func_236(struct<5> Param0, var uParam1, var uParam2, var uParam3, var uPara
 				break;
 			
 			case 2:
-				func_235((MISC::GET_GAME_TIMER() - iLocal_63), 1500, "RACES_RMETER", 6, 0, 10, -1f, -1f, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, -1, 0, -1, -1082130432, -1082130432, 0, 1, 0, 0, 1, -1, 0, -1, 1);
+				func_235((MISC::GET_GAME_TIMER() - iLocal_63), 1500, "RACES_RMETER" /* GXT: RESPAWNING */, 6, 0, 10, -1f, -1f, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, -1, 0, -1, -1082130432, -1082130432, 0, 1, 0, 0, 1, -1, 0, -1, 1);
 				if ((MISC::GET_GAME_TIMER() - iLocal_63) >= 1500)
 				{
 					PAD::DISABLE_CONTROL_ACTION(0, 75, true);
@@ -17414,7 +17414,7 @@ int func_255(int iParam0, bool bParam1, int iParam2, bool bParam3, int iParam4, 
 						func_258(&(iParam0->f_1), 8);
 						HUD::GET_HUD_COLOUR(18, &iVar5, &iVar6, &iVar7, &uVar8);
 						GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*iParam0, "SET_MESSAGE");
-						func_51("CNTDWN_GO");
+						func_51("CNTDWN_GO" /* GXT: Go! */);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar5);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar6);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar7);
@@ -17478,7 +17478,7 @@ int func_255(int iParam0, bool bParam1, int iParam2, bool bParam3, int iParam4, 
 			func_258(&(iParam0->f_1), 8);
 			HUD::GET_HUD_COLOUR(18, &iVar11, &iVar12, &iVar13, &uVar14);
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*iParam0, "SET_MESSAGE");
-			func_51("CNTDWN_GO");
+			func_51("CNTDWN_GO" /* GXT: Go! */);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar11);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar12);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar13);
@@ -17766,7 +17766,7 @@ int func_268()//Position - 0x18186
 				if (func_8(iLocal_365))
 				{
 					TASK::TASK_VEHICLE_DRIVE_TO_COORD(PLAYER::PLAYER_PED_ID(), iLocal_365, Local_47.f_26[5 /*3*/], 0.95f, 0, ENTITY::GET_ENTITY_MODEL(iLocal_365), 786469, 3.5f, -1f);
-					AUDIO::SET_RADIO_TO_STATION_NAME("RADIO_01_CLASS_ROCK");
+					AUDIO::SET_RADIO_TO_STATION_NAME("RADIO_01_CLASS_ROCK" /* GXT: Los Santos Rock Radio */);
 				}
 				if (AUDIO::IS_AUDIO_SCENE_ACTIVE("TOD_SHIFT_SCENE"))
 				{
@@ -17774,7 +17774,7 @@ int func_268()//Position - 0x18186
 					AUDIO::RELEASE_NAMED_SCRIPT_AUDIO_BANK("TIME_LAPSE");
 					AUDIO::STOP_AUDIO_SCENE("TOD_SHIFT_SCENE");
 				}
-				AUDIO::SET_RADIO_STATION_MUSIC_ONLY("RADIO_01_CLASS_ROCK", true);
+				AUDIO::SET_RADIO_STATION_MUSIC_ONLY("RADIO_01_CLASS_ROCK" /* GXT: Los Santos Rock Radio */, true);
 				iVar1 = 0;
 				while (iVar1 <= 7)
 				{
@@ -17899,8 +17899,8 @@ int func_268()//Position - 0x18186
 						AUDIO::RELEASE_NAMED_SCRIPT_AUDIO_BANK("TIME_LAPSE");
 						AUDIO::STOP_AUDIO_SCENE("TOD_SHIFT_SCENE");
 					}
-					AUDIO::SET_RADIO_TO_STATION_NAME("RADIO_01_CLASS_ROCK");
-					AUDIO::SET_RADIO_STATION_MUSIC_ONLY("RADIO_01_CLASS_ROCK", true);
+					AUDIO::SET_RADIO_TO_STATION_NAME("RADIO_01_CLASS_ROCK" /* GXT: Los Santos Rock Radio */);
+					AUDIO::SET_RADIO_STATION_MUSIC_ONLY("RADIO_01_CLASS_ROCK" /* GXT: Los Santos Rock Radio */, true);
 					AUDIO::START_AUDIO_SCENE("RACE_INTRO_GENERIC");
 					CAM::DESTROY_ALL_CAMS(false);
 					AUDIO::STOP_STREAM();
@@ -17986,7 +17986,7 @@ int func_272()//Position - 0x188D3
 	if (func_245(iLocal_365))
 	{
 		iVar0 = ENTITY::GET_ENTITY_MODEL(iLocal_365);
-		if (iVar0 == MISC::GET_HASH_KEY("MONSTER") || iVar0 == MISC::GET_HASH_KEY("MARSHALL"))
+		if (iVar0 == MISC::GET_HASH_KEY("MONSTER" /* GXT: The Liberator */) || iVar0 == MISC::GET_HASH_KEY("MARSHALL" /* GXT: Marshall */))
 		{
 			return 1;
 		}
@@ -18001,7 +18001,7 @@ int func_273()//Position - 0x18912
 	if (func_245(iLocal_365))
 	{
 		iVar0 = ENTITY::GET_ENTITY_MODEL(iLocal_365);
-		if (((((((((((((((((((((((((((((((iVar0 == joaat("baller") || iVar0 == joaat("baller2")) || iVar0 == joaat("bison")) || iVar0 == joaat("bison2")) || iVar0 == joaat("bison3")) || iVar0 == joaat("bobcatxl")) || iVar0 == joaat("cavalcade")) || iVar0 == joaat("cavalcade2")) || iVar0 == joaat("crusader")) || iVar0 == joaat("dubsta")) || iVar0 == joaat("dubsta2")) || iVar0 == joaat("fq2")) || iVar0 == joaat("granger")) || iVar0 == joaat("gresley")) || iVar0 == joaat("landstalker")) || iVar0 == joaat("mesa")) || iVar0 == joaat("mesa2")) || iVar0 == joaat("mesa3")) || iVar0 == joaat("patriot")) || iVar0 == joaat("radi")) || iVar0 == joaat("rancherxl")) || iVar0 == joaat("rancherxl2")) || iVar0 == joaat("rebel")) || iVar0 == joaat("rocoto")) || iVar0 == joaat("sadler")) || iVar0 == joaat("sadler2")) || iVar0 == joaat("sandking")) || iVar0 == joaat("sandking2")) || iVar0 == joaat("seminole")) || iVar0 == joaat("superd")) || iVar0 == MISC::GET_HASH_KEY("huntley")) || iVar0 == MISC::GET_HASH_KEY("DUBSTA3"))
+		if (((((((((((((((((((((((((((((((iVar0 == joaat("baller") || iVar0 == joaat("baller2")) || iVar0 == joaat("bison")) || iVar0 == joaat("bison2")) || iVar0 == joaat("bison3")) || iVar0 == joaat("bobcatxl")) || iVar0 == joaat("cavalcade")) || iVar0 == joaat("cavalcade2")) || iVar0 == joaat("crusader")) || iVar0 == joaat("dubsta")) || iVar0 == joaat("dubsta2")) || iVar0 == joaat("fq2")) || iVar0 == joaat("granger")) || iVar0 == joaat("gresley")) || iVar0 == joaat("landstalker")) || iVar0 == joaat("mesa")) || iVar0 == joaat("mesa2")) || iVar0 == joaat("mesa3")) || iVar0 == joaat("patriot")) || iVar0 == joaat("radi")) || iVar0 == joaat("rancherxl")) || iVar0 == joaat("rancherxl2")) || iVar0 == joaat("rebel")) || iVar0 == joaat("rocoto")) || iVar0 == joaat("sadler")) || iVar0 == joaat("sadler2")) || iVar0 == joaat("sandking")) || iVar0 == joaat("sandking2")) || iVar0 == joaat("seminole")) || iVar0 == joaat("superd")) || iVar0 == MISC::GET_HASH_KEY("huntley" /* GXT: Huntley S */)) || iVar0 == MISC::GET_HASH_KEY("DUBSTA3" /* GXT: Dubsta 6x6 */))
 		{
 			return 1;
 		}
@@ -18887,12 +18887,12 @@ void func_299(var uParam0, int iParam1, bool bParam2, float fParam3, int iParam4
 		if (bParam2)
 		{
 			HUD::SET_BLIP_COLOUR(*uParam0, 3);
-			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(*uParam0, "BLIP_FRIEND");
+			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(*uParam0, "BLIP_FRIEND" /* GXT: Friend */);
 		}
 		else
 		{
 			HUD::SET_BLIP_COLOUR(*uParam0, 1);
-			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(*uParam0, "BLIP_ENEMY");
+			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(*uParam0, "BLIP_ENEMY" /* GXT: Enemy */);
 		}
 		if (ENTITY::IS_ENTITY_A_PED(iParam1))
 		{
@@ -19654,7 +19654,7 @@ void func_315(var uParam0, struct<3> Param1, bool bParam2)//Position - 0x1AFC0
 			HUD::SET_BLIP_SPRITE(uParam0->f_15, 38);
 			HUD::SET_BLIP_SCALE(uParam0->f_15, 1.2f);
 		}
-		HUD::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_15, "BLIP_CPOINT");
+		HUD::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_15, "BLIP_CPOINT" /* GXT: Checkpoint */);
 	}
 }
 
@@ -19755,7 +19755,7 @@ void func_316(var uParam0, bool bParam1, bool bParam2)//Position - 0x1B036
 		}
 		GRAPHICS::SET_CHECKPOINT_CYLINDER_HEIGHT(uParam0->f_16, 9.5f, 9.5f, 30f);
 		GRAPHICS::SET_CHECKPOINT_CYLINDER_HEIGHT(uParam0->f_17, 9.5f, 9.5f, 30f);
-		HUD::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_14, "BLIP_CPOINT");
+		HUD::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_14, "BLIP_CPOINT" /* GXT: Checkpoint */);
 	}
 	if (uParam0->f_17 != 0)
 	{
@@ -19968,7 +19968,7 @@ void func_323(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4,
 	}
 	if (iParam34 != -1)
 	{
-		func_117(iParam34, "TIMER_CHALLTIME", iParam9, iVar0, iParam25, 0, 10, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
+		func_117(iParam34, "TIMER_CHALLTIME" /* GXT: CHALLENGE TIME */, iParam9, iVar0, iParam25, 0, 10, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 	}
 	func_334();
 	if (fParam27 > -1f)
@@ -19980,7 +19980,7 @@ void func_323(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4,
 		sVar1 = sParam17;
 		if (func_330(sVar1))
 		{
-			sVar1 = "TIM_DAMAGE";
+			sVar1 = "TIM_DAMAGE" /* GXT: DAMAGE */;
 		}
 		func_235(iParam15, iParam16, sVar1, iParam18, iParam25, 10, -1f, -1f, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, -1, 0, -1, -1082130432, -1082130432, 0, 1, 0, 0, 1, -1, 0, -1, 1);
 	}
@@ -19991,7 +19991,7 @@ void func_323(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4,
 			sVar2 = sParam8;
 			if (func_330(sVar2))
 			{
-				sVar2 = "TIM_POSIT";
+				sVar2 = "TIM_POSIT" /* GXT: POSITION */;
 			}
 			func_328(iParam6, iParam7, sVar2, iParam10, iParam25, 7, 0, 0, 0, iParam10, 0, 0, 0);
 		}
@@ -20001,7 +20001,7 @@ void func_323(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4,
 		sVar3 = sParam5;
 		if (func_330(sVar3))
 		{
-			sVar3 = "TIM_LAP";
+			sVar3 = "TIM_LAP" /* GXT: LAP */;
 		}
 		iParam3 = iParam3;
 		iParam4 = iParam4;
@@ -20018,7 +20018,7 @@ void func_323(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4,
 		sVar4 = sParam13;
 		if (func_330(sVar4))
 		{
-			sVar4 = "TIM_CHECKPOIN";
+			sVar4 = "TIM_CHECKPOIN" /* GXT: CHECKPOINT */;
 		}
 		iParam14 = iParam14;
 		if (Global_1836356)
@@ -20028,7 +20028,7 @@ void func_323(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4,
 	}
 	if (fParam30 > -1f)
 	{
-		sVar5 = "TIM_DISTANCE";
+		sVar5 = "TIM_DISTANCE" /* GXT: CHECKPOINT */;
 		sVar6 = "FMMC_LENGTHM";
 		func_331(0, sVar5, -1, 1, 7, 0, sVar6, 1, fParam30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
 	}
@@ -20037,7 +20037,7 @@ void func_323(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4,
 		sVar7 = sParam20;
 		if (func_330(sVar7))
 		{
-			sVar7 = "TIMER_BESLAP";
+			sVar7 = "TIMER_BESLAP" /* GXT: BEST LAP */;
 		}
 	}
 	if ((((Global_4718592.f_107227 != 1 && Global_4718592.f_107227 != 3) && Global_4718592.f_107227 != 5) && Global_4718592.f_107227 != 7) && Global_4718592.f_107227 != 19)
@@ -20049,7 +20049,7 @@ void func_323(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4,
 				sVar8 = sParam22;
 				if (func_330(sVar8))
 				{
-					sVar8 = "TIMER_CURLAP";
+					sVar8 = "TIMER_CURLAP" /* GXT: CURRENT LAP */;
 				}
 				func_117(iParam21, sVar8, 0, 1, iParam25, iParam23, 6, 0, iParam29, 0, 0, 0, 0, 0, 0, 0, 0, -1);
 			}
@@ -20106,7 +20106,7 @@ void func_323(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4,
 	sVar10 = sParam2;
 	if (func_330(sVar10))
 	{
-		sVar10 = "TIMER_TIME_RCE";
+		sVar10 = "TIMER_TIME_RCE" /* GXT: TIME */;
 	}
 	if (iParam0 > -1)
 	{
@@ -20114,7 +20114,7 @@ void func_323(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4,
 	}
 	if (func_330(sVar11))
 	{
-		sVar11 = "TIMER_CHALLTIME";
+		sVar11 = "TIMER_CHALLTIME" /* GXT: CHALLENGE TIME */;
 	}
 	iParam33 = iParam33;
 }
@@ -20129,19 +20129,19 @@ char* func_325(int iParam0)//Position - 0x1BA78
 	switch (iParam0)
 	{
 		case 0:
-			return "TIMER_WORLDTIME";
+			return "TIMER_WORLDTIME" /* GXT: WORLD RECORD */;
 			break;
 		
 		case 1:
-			return "FRIEND_WORLDTIME";
+			return "FRIEND_WORLDTIME" /* GXT: FRIEND RECORD */;
 			break;
 		
 		case 2:
-			return "CREW_WORLDTIME";
+			return "CREW_WORLDTIME" /* GXT: CREW RECORD */;
 			break;
 		
 		case 3:
-			return "PERS_WORLDTIME";
+			return "PERS_WORLDTIME" /* GXT: PERSONAL RECORD */;
 			break;
 	}
 	return "";
@@ -20370,7 +20370,7 @@ void func_334()//Position - 0x1C065
 	{
 		if (Global_1574485 == 1)
 		{
-			sVar0 = "HUD_SPIKES";
+			sVar0 = "HUD_SPIKES" /* GXT: SPIKES */;
 			iVar1 = 1;
 		}
 		else if (Global_1574492 == 1)
@@ -20379,30 +20379,30 @@ void func_334()//Position - 0x1C065
 			{
 				case 0:
 					iVar1 = 2;
-					sVar0 = "HUD_ROCKET";
+					sVar0 = "HUD_ROCKET" /* GXT: ROCKETS */;
 					break;
 				
 				case 1:
 					iVar1 = 3;
-					sVar0 = "HUD_ROCKET_H";
+					sVar0 = "HUD_ROCKET_H" /* GXT: HOMING MISSILES */;
 					break;
 				
 				case 2:
 					iVar1 = 2;
-					sVar0 = "HUD_ROCKET_NH";
+					sVar0 = "HUD_ROCKET_NH" /* GXT: NON-HOMING MISSILES */;
 					break;
 			}
 		}
 		else if (Global_1574481.f_3 == 1)
 		{
-			sVar0 = "HUD_BOOSTS";
+			sVar0 = "HUD_BOOSTS" /* GXT: BOOSTS */;
 			iVar1 = 4;
 		}
 		func_331(1, sVar0, -1, 1, 5, 0, "", 0, 0f, 0, 0, 0, 0, 0, 0, iVar1, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
 	}
 	else if (Global_1574508 == 1)
 	{
-		sVar0 = "HUD_VEH_GUN";
+		sVar0 = "HUD_VEH_GUN" /* GXT: MACHINE GUN */;
 		iVar1 = 9;
 		func_331(Global_1574508.f_1, sVar0, -1, 1, 5, 0, "", 0, 0f, 0, 0, 0, 0, 0, 0, iVar1, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
 	}
@@ -20422,9 +20422,9 @@ void func_335(int iParam0, struct<4> Param1, var uParam2, var uParam3, var uPara
 		
 		case 2:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0->f_2, "SHOW_SHARD_MIDSIZED_MESSAGE");
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("BM_LAP_STR");
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("BM_LAP_STR" /* GXT: ~a~ ~1~/~1~ */);
 			HUD::SET_COLOUR_OF_NEXT_TEXT_COMPONENT(1);
-			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL("BM_LAP");
+			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL("BM_LAP" /* GXT: LAP */);
 			HUD::SET_COLOUR_OF_NEXT_TEXT_COMPONENT(1);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(Param1.f_3 + 1);
 			HUD::SET_COLOUR_OF_NEXT_TEXT_COMPONENT(1);

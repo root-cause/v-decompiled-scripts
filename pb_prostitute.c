@@ -3686,7 +3686,7 @@ int func_93(int iParam0)//Position - 0x3231
 						iVar2 = MISC::GET_HASH_KEY(&cVar3);
 						if (iVar2 != 0)
 						{
-							if (iVar2 == MISC::GET_HASH_KEY("SABRE_CAG"))
+							if (iVar2 == MISC::GET_HASH_KEY("SABRE_CAG" /* GXT: Stunt Cage */))
 							{
 								return 0;
 							}
@@ -3968,7 +3968,7 @@ void func_98(var uParam0)//Position - 0x3925
 					func_5(&iLocal_49, 8388608);
 				}
 			}
-			else if (iLocal_287 != 0 && !func_470("PROS_NO_MONEY"))
+			else if (iLocal_287 != 0 && !func_470("PROS_NO_MONEY" /* GXT: You need more cash to pick up a prostitute. */))
 			{
 				func_64(0);
 				switch (func_23())
@@ -4169,7 +4169,7 @@ void func_103()//Position - 0x3D32
 				else
 				{
 					func_115(&iLocal_101);
-					func_114("PROS_RESPONSE");
+					func_114("PROS_RESPONSE" /* GXT: Choose response:~n~~INPUT_FRONTEND_X~ Disgust~n~~INPUT_FRONTEND_ACCEPT~ Sarcasm~n~~INPUT_FRONTEND_CANCEL~ Sympathy */);
 					iLocal_294 = 1;
 				}
 			}
@@ -4441,19 +4441,19 @@ void func_113()//Position - 0x421E
 		if (PAD::IS_CONTROL_JUST_RELEASED(2, 203))
 		{
 			HUD::CLEAR_HELP(true);
-			AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
+			AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 			iLocal_297 = 3;
 		}
 		else if (PAD::IS_CONTROL_JUST_RELEASED(2, 201))
 		{
 			HUD::CLEAR_HELP(true);
-			AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
+			AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 			iLocal_297 = 1;
 		}
 		else if (PAD::IS_CONTROL_JUST_RELEASED(2, 202))
 		{
 			HUD::CLEAR_HELP(true);
-			AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
+			AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 			iLocal_297 = 2;
 		}
 	}
@@ -4643,7 +4643,7 @@ void func_123(bool bParam0)//Position - 0x4518
 	func_124(&(Local_300[3 /*7*/]));
 	func_124(&(Local_300[2 /*7*/]));
 	func_124(&(Local_300[1 /*7*/]));
-	if (func_470("PROS_CAM_TOG") || func_470("PROS_CAM_OC"))
+	if (func_470("PROS_CAM_TOG" /* GXT: Use ~INPUTGROUP_LOOK~ to move the camera.~n~Press ~INPUT_NEXT_CAMERA~ to change view.~n~ */) || func_470("PROS_CAM_OC" /* GXT: Use ~INPUTGROUP_LOOK~ to move the camera.~n~ */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -6435,9 +6435,9 @@ void func_189(int iParam0)//Position - 0x676B
 	{
 		if (!func_551())
 		{
-			if (!func_470("PROS_CAM_OC"))
+			if (!func_470("PROS_CAM_OC" /* GXT: Use ~INPUTGROUP_LOOK~ to move the camera.~n~ */))
 			{
-				func_114("PROS_CAM_OC");
+				func_114("PROS_CAM_OC" /* GXT: Use ~INPUTGROUP_LOOK~ to move the camera.~n~ */);
 			}
 		}
 	}
@@ -6445,9 +6445,9 @@ void func_189(int iParam0)//Position - 0x676B
 	{
 		if (!func_551())
 		{
-			if (!func_470("PROS_CAM_TOG"))
+			if (!func_470("PROS_CAM_TOG" /* GXT: Use ~INPUTGROUP_LOOK~ to move the camera.~n~Press ~INPUT_NEXT_CAMERA~ to change view.~n~ */))
 			{
-				func_114("PROS_CAM_TOG");
+				func_114("PROS_CAM_TOG" /* GXT: Use ~INPUTGROUP_LOOK~ to move the camera.~n~Press ~INPUT_NEXT_CAMERA~ to change view.~n~ */);
 			}
 		}
 		if ((PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2, 0) && !HUD::IS_PAUSE_MENU_ACTIVE()) && !func_48(0, 1))
@@ -8191,7 +8191,7 @@ void func_232()//Position - 0x880C
 			}
 			else if (PAD::IS_CONTROL_JUST_RELEASED(2, 201) || iVar0 == 1)
 			{
-				AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
+				AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 				HUD::HIDE_HUD_COMPONENT_THIS_FRAME(3);
 				func_284();
 				ENTITY::CLEAR_ENTITY_LAST_DAMAGE_ENTITY(PLAYER::PLAYER_PED_ID());
@@ -9454,7 +9454,7 @@ void func_252(bool bParam0)//Position - 0xA62E
 	if (bVar0)
 	{
 		StringCopy(&cVar1, "CHAR_LIFEINVADER", 64);
-		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("COUP_RED");
+		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("COUP_RED" /* GXT: You have redeemed your promotion for ~a~ */);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(func_253(bParam0));
 		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar1, &cVar1, true, 0, "", 0);
 	}
@@ -9465,28 +9465,28 @@ char* func_253(bool bParam0)//Position - 0xA7AE
 	switch (bParam0)
 	{
 		case 0:
-			return "COUP_HAIRC";
+			return "COUP_HAIRC" /* GXT: one free haircut. */;
 		
 		case 1:
-			return "COUP_TATTOO";
+			return "COUP_TATTOO" /* GXT: one free tattoo. */;
 		
 		case 2:
-			return "COUP_WARSTOCK";
+			return "COUP_WARSTOCK" /* GXT: 10% off your next purchase at Warstock-Cache-and-Carry.com. */;
 		
 		case 3:
-			return "COUP_MOSPORT";
+			return "COUP_MOSPORT" /* GXT: 10 percent off your next purchase at LegendaryMotorsport.net. */;
 		
 		case 4:
-			return "COUP_ELITAS";
+			return "COUP_ELITAS" /* GXT: 10 percent off your next purchase at ElitasTravel.com. */;
 		
 		case 5:
-			return "COUP_MEDSPENS";
+			return "COUP_MEDSPENS" /* GXT: 10 percent off your next medical expenses. */;
 		
 		case 6:
-			return "COUP_SPRUNK";
+			return "COUP_SPRUNK" /* GXT: one free can of Sprunk. */;
 		
 		case 7:
-			return "COUP_RESPRAY";
+			return "COUP_RESPRAY" /* GXT: one free respray. */;
 		
 		case 8:
 			return "COUP_XMAS2017";
@@ -9501,22 +9501,22 @@ char* func_253(bool bParam0)//Position - 0xA7AE
 			return "COUP_CAR2_XMAS2018";
 		
 		case 12:
-			return "COUP_CAS_ELITAS";
+			return "COUP_CAS_ELITAS" /* GXT: 10 percent off your next purchase at ElitasTravel.com. */;
 		
 		case 13:
-			return "COUP_CAS_DOCKTEASE";
+			return "COUP_CAS_DOCKTEASE" /* GXT: 10 percent off your next purchase at DockTease.com. */;
 		
 		case 14:
-			return "COUP_CAS_MOSPORT";
+			return "COUP_CAS_MOSPORT" /* GXT: 10 percent off your next purchase at LegendaryMotorsport.net. */;
 		
 		case 15:
-			return "COUP_CAS_SSASA";
+			return "COUP_CAS_SSASA" /* GXT: 10 percent off your next purchase at southernsanandreassuperautos.com. */;
 		
 		case 16:
-			return "COUP_CAS_WARSTOCK";
+			return "COUP_CAS_WARSTOCK" /* GXT: 10 percent off your next purchase at Warstock-Cache-and-Carry.com. */;
 		
 		case 17:
-			return "COUP_CAS_PANDM";
+			return "COUP_CAS_PANDM" /* GXT: 10 percent off your next purchase at pandmcycles.com. */;
 			break;
 		
 		default:
@@ -10533,7 +10533,7 @@ void func_295(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 	{
 		if (Global_23150.f_5609 <= 1)
 		{
-			func_320(Global_23150.f_5609 + 1, "DFLT_MNU_OPT", 0, 1, 0, 0, 0);
+			func_320(Global_23150.f_5609 + 1, "DFLT_MNU_OPT" /* GXT: Exit */, 0, 1, 0, 0, 0);
 			Global_23150.f_6405 = 1;
 		}
 	}
@@ -10636,14 +10636,14 @@ void func_295(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 				if (Global_23150.f_6126)
 				{
 					func_315();
-					func_313((((Global_23147 + fParam5) - 0.00390625f) - func_314("CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128);
+					func_313((((Global_23147 + fParam5) - 0.00390625f) - func_314("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128);
 				}
 				else if (Global_23150.f_6122 > Global_23150.f_5616)
 				{
 					if (Global_23150.f_6125 != 0)
 					{
 						func_315();
-						func_313((((Global_23147 + fParam5) - 0.00390625f) - func_314("CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124);
+						func_313((((Global_23147 + fParam5) - 0.00390625f) - func_314("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124);
 					}
 				}
 			}
@@ -13701,34 +13701,34 @@ void func_351()//Position - 0x10661
 	func_361(0, 0);
 	func_360(1, 1, 0, 0, 0);
 	func_359(1, 2, 1, 1, 1);
-	func_358("PROS_OPTS");
-	func_357(201, "PROS_SELECT", -1, 0);
+	func_358("PROS_OPTS" /* GXT: Services Available */);
+	func_357(201, "PROS_SELECT" /* GXT: Select */, -1, 0);
 	iLocal_69 = 0;
 	iVar0 = func_233(0);
 	iVar1 = func_233(1);
 	iVar2 = func_233(2);
 	if (func_276() >= iVar0)
 	{
-		func_320(iLocal_69, "PROS_DOLLAR", 1, 1, 0, 0, 0);
+		func_320(iLocal_69, "PROS_DOLLAR" /* GXT: $~1~ */, 1, 1, 0, 0, 0);
 		func_354(iVar0, 0);
 		iLocal_283[iLocal_69] = 0;
 		iLocal_69++;
 	}
 	if (func_276() >= iVar1 && func_353(iLocal_93))
 	{
-		func_320(iLocal_69, "PROS_DOLLAR", 1, 1, 0, 0, 0);
+		func_320(iLocal_69, "PROS_DOLLAR" /* GXT: $~1~ */, 1, 1, 0, 0, 0);
 		func_354(iVar1, 0);
 		iLocal_283[iLocal_69] = 1;
 		iLocal_69++;
 	}
 	if (func_276() >= iVar2 && func_353(iLocal_93))
 	{
-		func_320(iLocal_69, "PROS_DOLLAR", 1, 1, 0, 0, 0);
+		func_320(iLocal_69, "PROS_DOLLAR" /* GXT: $~1~ */, 1, 1, 0, 0, 0);
 		func_354(iVar2, 0);
 		iLocal_283[iLocal_69] = 2;
 		iLocal_69++;
 	}
-	func_320(iLocal_69, "PROS_QUIT", 0, 1, 0, 0, 0);
+	func_320(iLocal_69, "PROS_QUIT" /* GXT: Decline Service */, 0, 1, 0, 0, 0);
 	iLocal_68 = 0;
 	func_283(iLocal_68, 1, 1);
 	func_352();
@@ -14294,12 +14294,12 @@ int func_363(char* sParam0, int iParam1)//Position - 0x115AE
 {
 	if (func_276() < func_233(iParam1))
 	{
-		StringCopy(sParam0, "PROS_NO_MONEY", 16);
+		StringCopy(sParam0, "PROS_NO_MONEY" /* GXT: You need more cash to pick up a prostitute. */, 16);
 		return 0;
 	}
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && func_364(PLAYER::PLAYER_ID()))
 	{
-		StringCopy(sParam0, "PIM_HHIDCR", 16);
+		StringCopy(sParam0, "PIM_HHIDCR" /* GXT: Not available while a key player in a Freemode Event. */, 16);
 		return 0;
 	}
 	StringCopy(sParam0, "", 16);
@@ -14994,7 +14994,7 @@ void func_389()//Position - 0x122AF
 				{
 					if (!func_491(iLocal_50, 4096))
 					{
-						func_350("PROS_SPOT", -1);
+						func_350("PROS_SPOT" /* GXT: Go somewhere more secluded. */, -1);
 						func_482(&iLocal_50, 4096);
 					}
 					func_391();
@@ -16162,7 +16162,7 @@ void func_429(var uParam0)//Position - 0x138B7
 			func_430();
 		}
 	}
-	else if (func_470("PROS_ACCEPT"))
+	else if (func_470("PROS_ACCEPT" /* GXT: Press ~INPUT_CONTEXT~ or honk your horn to invite the prostitute into the vehicle. */))
 	{
 		func_5(&iLocal_49, 1048576);
 		func_468();
@@ -16300,7 +16300,7 @@ void func_433()//Position - 0x13C20
 		{
 			if (iLocal_72 == -1)
 			{
-				func_435(&iLocal_72, 5, "PROS_ACCEPT", 0, 0, 0, 0);
+				func_435(&iLocal_72, 5, "PROS_ACCEPT" /* GXT: Press ~INPUT_CONTEXT~ or honk your horn to invite the prostitute into the vehicle. */, 0, 0, 0, 0);
 			}
 		}
 	}
@@ -16562,7 +16562,7 @@ int func_438(bool bParam0)//Position - 0x14071
 	{
 		if (!func_491(iLocal_50, 8192) && !PED::IS_PED_IN_ANY_POLICE_VEHICLE(PLAYER::PLAYER_PED_ID()))
 		{
-			func_350("PROS_COPS", -1);
+			func_350("PROS_COPS" /* GXT: Prostitutes will ignore you if police are nearby. */, -1);
 			func_482(&iLocal_50, 8192);
 		}
 		return 0;
@@ -16573,14 +16573,14 @@ int func_438(bool bParam0)//Position - 0x14071
 		{
 			if ((!iLocal_86 && !Global_112433) && func_440(PLAYER::PLAYER_PED_ID(), 0) == -1)
 			{
-				func_350("PROS_CAR", -1);
+				func_350("PROS_CAR" /* GXT: You cannot pick up Prostitutes in this vehicle. */, -1);
 				iLocal_86 = 1;
 			}
 			func_439();
 		}
 		else if (!func_524(4096))
 		{
-			func_350("PROS_CAR", -1);
+			func_350("PROS_CAR" /* GXT: You cannot pick up Prostitutes in this vehicle. */, -1);
 			func_196(4096);
 		}
 		return 0;
@@ -17000,7 +17000,7 @@ void func_455(var uParam0)//Position - 0x147D6
 			}
 			else
 			{
-				if (MISC::ARE_STRINGS_EQUAL(func_467(&sVar0), "PIM_HHIDCR"))
+				if (MISC::ARE_STRINGS_EQUAL(func_467(&sVar0), "PIM_HHIDCR" /* GXT: Not available while a key player in a Freemode Event. */))
 				{
 					func_466(&sVar0, 30000);
 					func_464(1);
@@ -17009,7 +17009,7 @@ void func_455(var uParam0)//Position - 0x147D6
 				{
 					func_350(&sVar0, -1);
 				}
-				if (!MISC::IS_STRING_NULL_OR_EMPTY(&sVar0) && MISC::ARE_STRINGS_EQUAL(&sVar0, "PROS_NO_MONEY"))
+				if (!MISC::IS_STRING_NULL_OR_EMPTY(&sVar0) && MISC::ARE_STRINGS_EQUAL(&sVar0, "PROS_NO_MONEY" /* GXT: You need more cash to pick up a prostitute. */))
 				{
 					func_456();
 				}
@@ -17083,7 +17083,7 @@ void func_457(int iParam0, int iParam1, int iParam2)//Position - 0x14918
 		if (!Global_100493.f_1458 && !NETWORK::IS_COMMERCE_STORE_OPEN())
 		{
 			iVar0 = 18;
-			HUD::SET_WARNING_MESSAGE_WITH_HEADER("BRSCRWTEX", "BRDISTEX", iVar0, "BRSHETEX", false, -1, 0, 0, true, 0);
+			HUD::SET_WARNING_MESSAGE_WITH_HEADER("BRSCRWTEX" /* GXT: Alert */, "BRDISTEX" /* GXT: You have insufficient funds. You can add GTA Dollars to your in-game account. */, iVar0, "BRSHETEX" /* GXT: Would you like to visit the Store? */, false, -1, 0, 0, true, 0);
 			Global_2726592 = iParam1;
 			Global_100493.f_1458 = 1;
 			Global_100493.f_1459 = iParam2;
@@ -17399,7 +17399,7 @@ int func_487(int iParam0, bool bParam1)//Position - 0x14E4E
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(iParam0) && (!bParam1 || VEHICLE::IS_VEHICLE_DRIVEABLE(iParam0, false)))
 		{
-			if (DECORATOR::DECOR_EXIST_ON(iParam0, "Company_SUV"))
+			if (DECORATOR::DECOR_EXIST_ON(iParam0, "Company_SUV" /* GXT: Company SUV */))
 			{
 				return 1;
 			}
@@ -18780,7 +18780,7 @@ void func_536(var uParam0)//Position - 0x16296
 			func_196(1024);
 		}
 	}
-	if (func_470("PROS_ACCEPT") && !Global_32110)
+	if (func_470("PROS_ACCEPT" /* GXT: Press ~INPUT_CONTEXT~ or honk your horn to invite the prostitute into the vehicle. */) && !Global_32110)
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -18952,7 +18952,7 @@ void func_542()//Position - 0x1650F
 	}
 	func_549();
 	func_468();
-	if (((func_470("PROS_ACCEPT") || func_470("PROS_CAM_TOG")) || func_470("PROS_RESPONSE")) || func_470("PROS_CAM_OC"))
+	if (((func_470("PROS_ACCEPT" /* GXT: Press ~INPUT_CONTEXT~ or honk your horn to invite the prostitute into the vehicle. */) || func_470("PROS_CAM_TOG" /* GXT: Use ~INPUTGROUP_LOOK~ to move the camera.~n~Press ~INPUT_NEXT_CAMERA~ to change view.~n~ */)) || func_470("PROS_RESPONSE" /* GXT: Choose response:~n~~INPUT_FRONTEND_X~ Disgust~n~~INPUT_FRONTEND_ACCEPT~ Sarcasm~n~~INPUT_FRONTEND_CANCEL~ Sympathy */)) || func_470("PROS_CAM_OC" /* GXT: Use ~INPUTGROUP_LOOK~ to move the camera.~n~ */))
 	{
 		func_5(&iLocal_49, 1048576);
 		HUD::CLEAR_HELP(true);

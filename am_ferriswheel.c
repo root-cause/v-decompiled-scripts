@@ -3859,11 +3859,11 @@ void func_31()//Position - 0x4E78
 							{
 								if (BitTest(Local_1086[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2, 0))
 								{
-									func_148("AMFW_WAIT_OFF", -1);
+									func_148("AMFW_WAIT_OFF" /* GXT: The ride will stop on the next rotation. */, -1);
 								}
 								else
 								{
-									func_148("AMFW_WAIT", -1);
+									func_148("AMFW_WAIT" /* GXT: Stopping... */, -1);
 								}
 								MISC::SET_BIT(&uLocal_369, 1);
 							}
@@ -3891,7 +3891,7 @@ void func_31()//Position - 0x4E78
 							{
 								if (ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), -1661.95f, -1127.011f, 12.6973f, 1f, 1f, 2f, false, true, 0))
 								{
-									func_136("AMFW_ENTER", Global_262145.f_8253, -1);
+									func_136("AMFW_ENTER" /* GXT: Press ~INPUT_CONTEXT~ to ride the Ferris Whale. The cost is $~1~. */, Global_262145.f_8253, -1);
 									MISC::SET_BIT(&uLocal_369, 0);
 									if (PAD::IS_CONTROL_JUST_PRESSED(2, 51))
 									{
@@ -3948,7 +3948,7 @@ void func_31()//Position - 0x4E78
 						{
 							if (!BitTest(Local_1084.f_2, 4))
 							{
-								func_148("AMFW_GET_OUT", -1);
+								func_148("AMFW_GET_OUT" /* GXT: Press ~INPUT_ENTER~ to get out. */, -1);
 							}
 							func_80(&uLocal_352, 0);
 							func_80(&uLocal_302, 0);
@@ -3994,11 +3994,11 @@ void func_31()//Position - 0x4E78
 								{
 									if (BitTest(Local_1086[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2, 8))
 									{
-										func_148("AMFW_GET_IN", -1);
+										func_148("AMFW_GET_IN" /* GXT: Press ~INPUT_ENTER~ to get in. */, -1);
 									}
 									else
 									{
-										func_136("AMFW_GET_IN_P", Global_262145.f_8253, -1);
+										func_136("AMFW_GET_IN_P" /* GXT: Press ~INPUT_ENTER~ to get in the gondola. The cost is $~1~. */, Global_262145.f_8253, -1);
 									}
 									if (PAD::IS_CONTROL_JUST_PRESSED(0, 23))
 									{
@@ -4011,7 +4011,7 @@ void func_31()//Position - 0x4E78
 								}
 								else if (!BitTest(uLocal_369, 2))
 								{
-									func_148("AMFW_CAR_FULL", -1);
+									func_148("AMFW_CAR_FULL" /* GXT: This gondola is full. You may wait for the next one. */, -1);
 									MISC::SET_BIT(&uLocal_369, 2);
 								}
 							}
@@ -5443,10 +5443,10 @@ void func_92()//Position - 0x6F99
 				{
 					Local_1081 = { func_105() };
 					func_103(&uLocal_381);
-					func_102(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 236, true), "AMFW_BTNCV", &uLocal_381, 0);
+					func_102(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 236, true), "AMFW_BTNCV" /* GXT: Change View */, &uLocal_381, 0);
 					if (!BitTest(Local_1086[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2, 3))
 					{
-						func_102(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 51, true), "AMFW_BTNEX", &uLocal_381, 0);
+						func_102(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 51, true), "AMFW_BTNEX" /* GXT: Exit */, &uLocal_381, 0);
 					}
 					iLocal_379 = 0;
 				}
@@ -6325,7 +6325,7 @@ void func_118(int iParam0, int iParam1, int iParam2)//Position - 0x8335
 		if (!Global_100493.f_1458 && !NETWORK::IS_COMMERCE_STORE_OPEN())
 		{
 			iVar0 = 18;
-			HUD::SET_WARNING_MESSAGE_WITH_HEADER("BRSCRWTEX", "BRDISTEX", iVar0, "BRSHETEX", false, -1, 0, 0, true, 0);
+			HUD::SET_WARNING_MESSAGE_WITH_HEADER("BRSCRWTEX" /* GXT: Alert */, "BRDISTEX" /* GXT: You have insufficient funds. You can add GTA Dollars to your in-game account. */, iVar0, "BRSHETEX" /* GXT: Would you like to visit the Store? */, false, -1, 0, 0, true, 0);
 			Global_2726592 = iParam1;
 			Global_100493.f_1458 = 1;
 			Global_100493.f_1459 = iParam2;

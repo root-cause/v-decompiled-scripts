@@ -5017,7 +5017,7 @@ void func_146()//Position - 0x62BA
 							{
 								if (PED::GET_SYNCHRONIZED_SCENE_PHASE(iLocal_94) < 0.4f && INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == iLocal_119)
 								{
-									func_149("FHU_HELP3", -1);
+									func_149("FHU_HELP3" /* GXT: Shout through your headset to make the store clerk fill the bag with cash faster. */, -1);
 									MISC::SET_BIT(&iVar0, 3);
 									func_124(1191, iVar0, -1, 1, 0);
 								}
@@ -5026,7 +5026,7 @@ void func_146()//Position - 0x62BA
 							{
 								if (PED::GET_SYNCHRONIZED_SCENE_PHASE(iLocal_94) < 0.7f && INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == iLocal_119)
 								{
-									func_149("FHU_HELP4", -1);
+									func_149("FHU_HELP4" /* GXT: ~s~Wait for the store clerk to empty the register to get the full amount of cash. */, -1);
 									MISC::SET_BIT(&iVar0, 5);
 									func_124(1191, iVar0, -1, 1, 0);
 									MISC::SET_BIT(&(Local_85.f_52), 23);
@@ -5052,7 +5052,7 @@ void func_146()//Position - 0x62BA
 						iVar1 = func_127(1191, -1, 0);
 						if (!BitTest(iVar1, 20) || !BitTest(iVar1, 21))
 						{
-							func_149("FHU_HELPM", -1);
+							func_149("FHU_HELPM" /* GXT: The store clerk is no longer able to empty the register. Go up to the register the store clerk was using and empty it manually with ~INPUT_CONTEXT~ */, -1);
 							if (!BitTest(iVar1, 20))
 							{
 								MISC::SET_BIT(&iVar1, 20);
@@ -5071,7 +5071,7 @@ void func_146()//Position - 0x62BA
 					}
 				}
 			}
-			else if (func_147("FHU_HELPM"))
+			else if (func_147("FHU_HELPM" /* GXT: The store clerk is no longer able to empty the register. Go up to the register the store clerk was using and empty it manually with ~INPUT_CONTEXT~ */))
 			{
 				if ((BitTest(Local_83.f_25, 20) || BitTest(Local_83.f_25, 11)) || BitTest(Local_84[NETWORK::PARTICIPANT_ID_TO_INT() /*10*/], 5))
 				{
@@ -5129,7 +5129,7 @@ void func_152()//Position - 0x6605
 						fVar0 = (fVar0 * 1000f);
 						if (fVar0 <= 890f)
 						{
-							func_153(SYSTEM::ROUND(fVar0), 890, "HUP_PROG", func_157(PLAYER::GET_PLAYER_TEAM(PLAYER::PLAYER_ID())), 0, 1, 13);
+							func_153(SYSTEM::ROUND(fVar0), 890, "HUP_PROG" /* GXT: INTIMIDATION */, func_157(PLAYER::GET_PLAYER_TEAM(PLAYER::PLAYER_ID())), 0, 1, 13);
 						}
 						fVar1 = NETWORK::NETWORK_GET_PLAYER_LOUDNESS(PLAYER::PLAYER_ID());
 						fVar1 = (fVar1 - 0.3f);
@@ -7793,7 +7793,7 @@ void func_229(int iParam0)//Position - 0xA092
 							break;
 						
 						case 23:
-							AUDIO::PLAY_PED_AMBIENT_SPEECH_WITH_VOICE_NATIVE(NETWORK::NET_TO_PED(Local_83.f_0), "SHOP_NO_ENTRY", &(Local_83.f_52), "SPEECH_PARAMS_FORCE", true);
+							AUDIO::PLAY_PED_AMBIENT_SPEECH_WITH_VOICE_NATIVE(NETWORK::NET_TO_PED(Local_83.f_0), "SHOP_NO_ENTRY" /* GXT: Friendly */, &(Local_83.f_52), "SPEECH_PARAMS_FORCE", true);
 							break;
 						
 						case 24:
@@ -8611,7 +8611,7 @@ void func_260()//Position - 0xB06E
 			{
 				if (((((((!PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false) && !func_169(0)) && !func_265()) && !HUD::IS_PAUSE_MENU_ACTIVE()) && !func_39(PLAYER::PLAYER_ID(), 146)) && !func_38(PLAYER::PLAYER_ID())) && NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_83.f_15)) && (!func_139(PLAYER::PLAYER_ID()) || func_96(PLAYER::PLAYER_ID()) == 154))
 				{
-					func_149("FHU_MANR", -1);
+					func_149("FHU_MANR" /* GXT: Press ~INPUT_CONTEXT~ to take cash. */, -1);
 					Global_2815059.f_5961.f_4 = 1;
 					iLocal_316 = 1;
 				}
@@ -8623,7 +8623,7 @@ void func_260()//Position - 0xB06E
 			{
 				if (((PAD::IS_CONTROL_JUST_PRESSED(0, 51) && !func_264(0)) && !func_265()) && !HUD::IS_PAUSE_MENU_ACTIVE())
 				{
-					if (func_147("FHU_MANR"))
+					if (func_147("FHU_MANR" /* GXT: Press ~INPUT_CONTEXT~ to take cash. */))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -8635,11 +8635,11 @@ void func_260()//Position - 0xB06E
 				{
 					if (iLocal_321 == 0)
 					{
-						func_261(&iLocal_321, 4, "FHU_MANR", 0, 0, 0, 0);
+						func_261(&iLocal_321, 4, "FHU_MANR" /* GXT: Press ~INPUT_CONTEXT~ to take cash. */, 0, 0, 0, 0);
 					}
 				}
 			}
-			else if (func_147("FHU_MANR"))
+			else if (func_147("FHU_MANR" /* GXT: Press ~INPUT_CONTEXT~ to take cash. */))
 			{
 				HUD::CLEAR_HELP(true);
 			}
@@ -9045,9 +9045,9 @@ void func_267(var uParam0, var uParam1, var uParam2, var uParam3, struct<3> Para
 										{
 											func_421();
 										}
-										if (((!func_147("SHR_HOLDUP_1") && !func_147("SHR_MENU")) && !func_398()) && func_397())
+										if (((!func_147("SHR_HOLDUP_1" /* GXT: Rob the cash register by pointing a weapon at the shop clerk. */) && !func_147("SHR_MENU" /* GXT: Press ~INPUT_CONTEXT~ to shop.~n~ */)) && !func_398()) && func_397())
 										{
-											func_149("SHR_SOLD_OUT", -1);
+											func_149("SHR_SOLD_OUT" /* GXT: Store is currently sold out. */, -1);
 											uParam0->f_54 = 10;
 										}
 									}
@@ -9057,7 +9057,7 @@ void func_267(var uParam0, var uParam1, var uParam2, var uParam3, struct<3> Para
 										{
 										}
 										uParam0->f_14 = -1;
-										func_261(&(uParam0->f_14), 4, "SHR_MENU", 0, 0, 0, 0);
+										func_261(&(uParam0->f_14), 4, "SHR_MENU" /* GXT: Press ~INPUT_CONTEXT~ to shop.~n~ */, 0, 0, 0, 0);
 										uParam0->f_54 = 2;
 									}
 								}
@@ -9085,7 +9085,7 @@ void func_267(var uParam0, var uParam1, var uParam2, var uParam3, struct<3> Para
 				}
 				else
 				{
-					if (func_147("SHR_MENU"))
+					if (func_147("SHR_MENU" /* GXT: Press ~INPUT_CONTEXT~ to shop.~n~ */))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -9093,7 +9093,7 @@ void func_267(var uParam0, var uParam1, var uParam2, var uParam3, struct<3> Para
 					{
 						if (!BitTest(uParam0->f_53, 4))
 						{
-							func_149("SHR_FM_CRIT", -1);
+							func_149("SHR_FM_CRIT" /* GXT: Convenience stores are not available while a key player in a Freemode Event. */, -1);
 							HUD::SET_HELP_MESSAGE_STYLE(3, 21, 200, 0, 0);
 							MISC::SET_BIT(&(uParam0->f_53), 4);
 						}
@@ -9109,7 +9109,7 @@ void func_267(var uParam0, var uParam1, var uParam2, var uParam3, struct<3> Para
 				Var3 = { ENTITY::GET_ENTITY_COORDS(NETWORK::NET_TO_PED(*uParam5), true) };
 				if ((!PED::IS_PED_HEADING_TOWARDS_POSITION(PLAYER::PLAYER_PED_ID(), uParam0->f_23, 135f) || MISC::ABSF((Var2.f_2 - Var3.f_2)) >= 0.25f) && !func_457(1))
 				{
-					if (func_147("SHR_MENU"))
+					if (func_147("SHR_MENU" /* GXT: Press ~INPUT_CONTEXT~ to shop.~n~ */))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -9118,7 +9118,7 @@ void func_267(var uParam0, var uParam1, var uParam2, var uParam3, struct<3> Para
 				}
 				if (HUD::IS_PAUSE_MENU_ACTIVE())
 				{
-					if (func_147("SHR_MENU"))
+					if (func_147("SHR_MENU" /* GXT: Press ~INPUT_CONTEXT~ to shop.~n~ */))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -9127,7 +9127,7 @@ void func_267(var uParam0, var uParam1, var uParam2, var uParam3, struct<3> Para
 				}
 				if (func_169(0) || func_168())
 				{
-					if (func_147("SHR_MENU"))
+					if (func_147("SHR_MENU" /* GXT: Press ~INPUT_CONTEXT~ to shop.~n~ */))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -9144,7 +9144,7 @@ void func_267(var uParam0, var uParam1, var uParam2, var uParam3, struct<3> Para
 						{
 							func_421();
 						}
-						if (func_147("SHR_MENU"))
+						if (func_147("SHR_MENU" /* GXT: Press ~INPUT_CONTEXT~ to shop.~n~ */))
 						{
 							HUD::CLEAR_HELP(true);
 						}
@@ -9219,7 +9219,7 @@ void func_267(var uParam0, var uParam1, var uParam2, var uParam3, struct<3> Para
 					}
 					else if (!bParam8)
 					{
-						func_373(iVar8, "ITEM_COST", 1, 1, 0, 0, 0);
+						func_373(iVar8, "ITEM_COST" /* GXT: $~1~ */, 1, 1, 0, 0, 0);
 						func_368(func_371(uParam0, iVar8), 0);
 					}
 					else
@@ -9249,12 +9249,12 @@ void func_267(var uParam0, var uParam1, var uParam2, var uParam3, struct<3> Para
 				{
 					func_365(func_364(uParam0->f_12), 0, 0);
 				}
-				func_363(201, "ITEM_SELECT", -1, 0);
+				func_363(201, "ITEM_SELECT" /* GXT: Select */, -1, 0);
 				if (bParam8)
 				{
-					func_363(203, "STORE_TAKE_ALL", -1, 0);
+					func_363(203, "STORE_TAKE_ALL" /* GXT: Take all */, -1, 0);
 				}
-				func_363(202, "ITEM_BACK", -1, 0);
+				func_363(202, "ITEM_BACK" /* GXT: Back */, -1, 0);
 				if (!bParam8)
 				{
 					func_363(203, "SNK_LIFT", -1, 0);
@@ -9416,7 +9416,7 @@ void func_267(var uParam0, var uParam1, var uParam2, var uParam3, struct<3> Para
 							TASK::TASK_PLAY_ANIM(PLAYER::PLAYER_PED_ID(), func_159(), func_287(), 8f, -8f, -1, 1048576, 0f, false, false, false);
 							uParam0->f_54 = 8;
 							uParam0->f_15 = MISC::GET_GAME_TIMER();
-							AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_LIQUOR_STORE_SOUNDSET", true);
+							AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_LIQUOR_STORE_SOUNDSET", true);
 							if (!bParam8)
 							{
 								func_401(uParam0, &(iParam6->f_3));
@@ -9451,7 +9451,7 @@ void func_267(var uParam0, var uParam1, var uParam2, var uParam3, struct<3> Para
 					{
 						func_401(uParam0, &(iParam6->f_3));
 					}
-					func_149("SHR_SOLD_OUT", -1);
+					func_149("SHR_SOLD_OUT" /* GXT: Store is currently sold out. */, -1);
 				}
 				iVar9 = 0;
 				while (iVar9 < uParam0->f_13)
@@ -9719,7 +9719,7 @@ void func_267(var uParam0, var uParam1, var uParam2, var uParam3, struct<3> Para
 					{
 						func_401(uParam0, &(iParam6->f_3));
 					}
-					func_149("SHR_SOLD_OUT", -1);
+					func_149("SHR_SOLD_OUT" /* GXT: Store is currently sold out. */, -1);
 				}
 				else if (uParam5->f_5[uParam0->f_12] >= 10 || func_378(uParam0->f_12))
 				{
@@ -9960,35 +9960,35 @@ int func_271(int iParam0, char* sParam1)//Position - 0xD490
 	switch (iParam0)
 	{
 		case 0:
-			StringCopy(sParam1, "PU_REWARD_S1", 32);
+			StringCopy(sParam1, "PU_REWARD_S1" /* GXT: Snack +~1~ */, 32);
 			return 1;
 		
 		case 1:
-			StringCopy(sParam1, "PU_REWARD_S2", 32);
+			StringCopy(sParam1, "PU_REWARD_S2" /* GXT: Snack +~1~ */, 32);
 			return 1;
 		
 		case 2:
-			StringCopy(sParam1, "PU_REWARD_S3", 32);
+			StringCopy(sParam1, "PU_REWARD_S3" /* GXT: Snack +~1~ */, 32);
 			return 1;
 		
 		case 3:
-			StringCopy(sParam1, "PU_REWARD_D1", 32);
+			StringCopy(sParam1, "PU_REWARD_D1" /* GXT: eCola +~1~ */, 32);
 			return 1;
 		
 		case 4:
-			StringCopy(sParam1, "PU_REWARD_D2", 32);
+			StringCopy(sParam1, "PU_REWARD_D2" /* GXT: Pisswasser +~1~ */, 32);
 			return 1;
 		
 		case 6:
-			StringCopy(sParam1, "PU_REWARD_11", 32);
+			StringCopy(sParam1, "PU_REWARD_11" /* GXT: Smokes +~1~ */, 32);
 			return 1;
 		
 		case 7:
-			StringCopy(sParam1, "PU_REWARD_PC", 32);
+			StringCopy(sParam1, "PU_REWARD_PC" /* GXT: +~1~ points */, 32);
 			return 1;
 		
 		case 5:
-			StringCopy(sParam1, "PU_REWARD_D3", 32);
+			StringCopy(sParam1, "PU_REWARD_D3" /* GXT: Sprunk +~1~ */, 32);
 			return 1;
 		
 		default:
@@ -10349,7 +10349,7 @@ void func_288(int iParam0, int iParam1, int iParam2)//Position - 0xDA40
 		if (!Global_100493.f_1458 && !NETWORK::IS_COMMERCE_STORE_OPEN())
 		{
 			iVar0 = 18;
-			HUD::SET_WARNING_MESSAGE_WITH_HEADER("BRSCRWTEX", "BRDISTEX", iVar0, "BRSHETEX", false, -1, 0, 0, true, 0);
+			HUD::SET_WARNING_MESSAGE_WITH_HEADER("BRSCRWTEX" /* GXT: Alert */, "BRDISTEX" /* GXT: You have insufficient funds. You can add GTA Dollars to your in-game account. */, iVar0, "BRSHETEX" /* GXT: Would you like to visit the Store? */, false, -1, 0, 0, true, 0);
 			Global_2726592 = iParam1;
 			Global_100493.f_1458 = 1;
 			Global_100493.f_1459 = iParam2;
@@ -11342,7 +11342,7 @@ void func_308(var uParam0, bool bParam1)//Position - 0xECEF
 	}
 	else
 	{
-		AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
+		AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 	}
 }
 
@@ -12117,7 +12117,7 @@ void func_328(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 	{
 		if (Global_23150.f_5609 <= 1)
 		{
-			func_373(Global_23150.f_5609 + 1, "DFLT_MNU_OPT", 0, 1, 0, 0, 0);
+			func_373(Global_23150.f_5609 + 1, "DFLT_MNU_OPT" /* GXT: Exit */, 0, 1, 0, 0, 0);
 			Global_23150.f_6405 = 1;
 		}
 	}
@@ -12220,14 +12220,14 @@ void func_328(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 				if (Global_23150.f_6126)
 				{
 					func_353();
-					func_351((((Global_23147 + fParam5) - 0.00390625f) - func_352("CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6127, Global_23150.f_6128);
+					func_351((((Global_23147 + fParam5) - 0.00390625f) - func_352("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6127, Global_23150.f_6128);
 				}
 				else if (Global_23150.f_6122 > Global_23150.f_5616)
 				{
 					if (Global_23150.f_6125 != 0)
 					{
 						func_353();
-						func_351((((Global_23147 + fParam5) - 0.00390625f) - func_352("CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT", Global_23150.f_6125, Global_23150.f_6124);
+						func_351((((Global_23147 + fParam5) - 0.00390625f) - func_352("CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124)), ((Global_23148 + fVar55) + 0.00416664f), "CM_ITEM_COUNT" /* GXT: ~1~ / ~1~ */, Global_23150.f_6125, Global_23150.f_6124);
 					}
 				}
 			}
@@ -16258,7 +16258,7 @@ void func_401(var uParam0, var uParam1)//Position - 0x1612B
 	}
 	func_422();
 	MISC::CLEAR_BIT(&(uParam0->f_53), 7);
-	if (func_147("SHR_MENU"))
+	if (func_147("SHR_MENU" /* GXT: Press ~INPUT_CONTEXT~ to shop.~n~ */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -18825,7 +18825,7 @@ void func_458()//Position - 0x19AAD
 	func_460();
 	STREAMING::REMOVE_ANIM_DICT("mp_am_hold_up");
 	PLAYER::RESET_LAW_RESPONSE_DELAY_OVERRIDE();
-	if (func_147("SHR_MENU"))
+	if (func_147("SHR_MENU" /* GXT: Press ~INPUT_CONTEXT~ to shop.~n~ */))
 	{
 		HUD::CLEAR_HELP(true);
 	}

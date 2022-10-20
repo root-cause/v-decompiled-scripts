@@ -320,7 +320,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_61 = 2050;
 	iLocal_62 = -1;
 	iLocal_63 = -1;
-	sLocal_65 = "CC_SUBSTR";
+	sLocal_65 = "CC_SUBSTR" /* GXT: ~INPUT_CONTEXT~ */;
 	fLocal_66 = 125f;
 	iLocal_67 = 1;
 	iLocal_69 = 263;
@@ -933,7 +933,7 @@ void func_8()//Position - 0xAE1
 	}
 	else if (MISC::IS_PS3_VERSION() || func_9())
 	{
-		StringCopy(&cVar0, "PRESENCE_0_STR", 24);
+		StringCopy(&cVar0, "PRESENCE_0_STR" /* GXT: Playing story */, 24);
 		NETWORK::NETWORK_SET_RICH_PRESENCE_STRING(0, &cVar0);
 	}
 }
@@ -3569,7 +3569,7 @@ void func_135()//Position - 0x3DB6
 	iLocal_63 = 0;
 	fLocal_66 = (SYSTEM::TO_FLOAT(func_136(iLocal_69)) + 5f);
 	fLocal_77 = 1.1f;
-	sLocal_65 = "PLAY_BASEJUMP_G";
+	sLocal_65 = "PLAY_BASEJUMP_G" /* GXT: Press ~INPUT_CONTEXT~ to start parachuting. */;
 	if (iLocal_69 != 263)
 	{
 		if (!func_131(0, iLocal_63))

@@ -148,7 +148,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_61 = 2050;
 	iLocal_62 = -1;
 	iLocal_63 = -1;
-	sLocal_65 = "CC_SUBSTR";
+	sLocal_65 = "CC_SUBSTR" /* GXT: ~INPUT_CONTEXT~ */;
 	fLocal_66 = 125f;
 	iLocal_67 = 1;
 	iLocal_69 = 263;
@@ -802,7 +802,7 @@ void func_9()//Position - 0xBA1
 	}
 	else if (MISC::IS_PS3_VERSION() || func_10())
 	{
-		StringCopy(&cVar0, "PRESENCE_0_STR", 24);
+		StringCopy(&cVar0, "PRESENCE_0_STR" /* GXT: Playing story */, 24);
 		NETWORK::NETWORK_SET_RICH_PRESENCE_STRING(0, &cVar0);
 	}
 }
@@ -2225,7 +2225,7 @@ bool func_88(var uParam0, int iParam1)//Position - 0x270F
 void func_89()//Position - 0x271E
 {
 	iLocal_63 = 5;
-	sLocal_65 = "PLAY_PSCHOOL";
+	sLocal_65 = "PLAY_PSCHOOL" /* GXT: Press ~INPUT_CONTEXT~ to enter Flight School. */;
 	StringCopy(&Local_51, "Pilot_School", 64);
 	iLocal_61 = 51000;
 }
