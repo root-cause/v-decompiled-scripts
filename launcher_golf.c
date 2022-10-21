@@ -1088,7 +1088,7 @@ void func_25()//Position - 0x104C
 	int iVar2;
 	int iVar3;
 	
-	if (PED::GET_CLOSEST_PED(-1370.625f, 56.1227f, 52.7033f, 100f, true, true, &iVar0, false, false, -1))
+	if (PED::GET_CLOSEST_PED(-1370.6245f, 56.1227f, 52.7033f, 100f, true, true, &iVar0, false, false, -1))
 	{
 		if (!PED::IS_PED_INJURED(iVar0))
 		{

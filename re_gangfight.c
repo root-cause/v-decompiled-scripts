@@ -335,7 +335,7 @@ void __EntryFunction__()//Position - 0x0
 						{
 							if ((!PED::IS_PED_INJURED(iLocal_58) && !PED::IS_PED_INJURED(iLocal_59[0])) && !PED::IS_PED_INJURED(iLocal_59[1]))
 							{
-								if (ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), 969.2191f, 3608.665f, 41.8758f, 100f, 80f, 20f, false, true, 0))
+								if (ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), 969.2191f, 3608.6648f, 41.8758f, 100f, 80f, 20f, false, true, 0))
 								{
 									iLocal_56 = func_80(iLocal_58, 0, 145);
 									HUD::SET_BLIP_PRIORITY(iLocal_56, 9);
@@ -534,7 +534,7 @@ void func_1()//Position - 0x431
 		}
 		AUDIO::STOP_AUDIO_SCENE("RE_COUNTRYSIDE_GANG_FIGHT_SCENE");
 		PLAYER::SET_WANTED_LEVEL_MULTIPLIER(1f);
-		PATHFIND::SET_ROADS_BACK_TO_ORIGINAL_IN_ANGLED_AREA(417.901f, 3578.002f, 31.176f, 1305.897f, 3604.306f, 40.1064f, 100.0625f, 1);
+		PATHFIND::SET_ROADS_BACK_TO_ORIGINAL_IN_ANGLED_AREA(417.901f, 3578.0017f, 31.176f, 1305.8972f, 3604.3062f, 40.1064f, 100.0625f, 1);
 		PED::REMOVE_SCENARIO_BLOCKING_AREAS();
 		MISC::ENABLE_DISPATCH_SERVICE(3, true);
 		MISC::ENABLE_DISPATCH_SERVICE(5, true);
@@ -2477,7 +2477,7 @@ void func_59()//Position - 0x26D8
 			if (!PED::IS_PED_INJURED(iLocal_58) && !ENTITY::IS_ENTITY_DEAD(iLocal_60, false))
 			{
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_62);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 916.5764f, 3602.146f, 31.9262f, 1f, 40000, 0.25f, 0, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 916.5764f, 3602.1462f, 31.9262f, 1f, 40000, 0.25f, 0, 40000f);
 				TASK::CLOSE_SEQUENCE_TASK(iLocal_62);
 				TASK::TASK_PERFORM_SEQUENCE(iLocal_58, iLocal_62);
 				TASK::CLEAR_SEQUENCE_TASK(&iLocal_62);
@@ -2507,7 +2507,7 @@ void func_59()//Position - 0x26D8
 		case 4:
 			if (!PED::IS_PED_INJURED(iLocal_58))
 			{
-				if (ENTITY::IS_ENTITY_AT_COORD(iLocal_58, 916.5764f, 3602.146f, 31.9262f, 3.3f, 3.3f, 3.3f, false, true, 0))
+				if (ENTITY::IS_ENTITY_AT_COORD(iLocal_58, 916.5764f, 3602.1462f, 31.9262f, 3.3f, 3.3f, 3.3f, false, true, 0))
 				{
 					if (!ENTITY::IS_ENTITY_AT_ENTITY(PLAYER::PLAYER_PED_ID(), iLocal_58, 8f, 8f, 8f, false, true, 0))
 					{
@@ -2630,7 +2630,7 @@ void func_59()//Position - 0x26D8
 				iLocal_46 = 2;
 				iLocal_45 = 2;
 			}
-			if (ENTITY::IS_ENTITY_AT_COORD(iLocal_59[2], 970.3641f, 3629.886f, 31.3694f, 5f, 5f, 5f, false, true, 0) || SYSTEM::TIMERB() > 13000)
+			if (ENTITY::IS_ENTITY_AT_COORD(iLocal_59[2], 970.3641f, 3629.8865f, 31.3694f, 5f, 5f, 5f, false, true, 0) || SYSTEM::TIMERB() > 13000)
 			{
 				func_41(2000);
 				iVar0 = 0;
@@ -2695,10 +2695,10 @@ int func_62()//Position - 0x2D39
 		AUDIO::START_AUDIO_SCENE("RE_COUNTRYSIDE_GANG_FIGHT_SCENE");
 		if (STREAMING::HAS_MODEL_LOADED(joaat("hexer")))
 		{
-			iLocal_61[2] = VEHICLE::CREATE_VEHICLE(joaat("hexer"), 863.4697f, 3633.5f, 31.9874f, 290.5797f, true, true, false);
-			iLocal_61[3] = VEHICLE::CREATE_VEHICLE(joaat("hexer"), 866.4073f, 3636.039f, 31.9514f, 270.3649f, true, true, false);
-			iLocal_61[4] = VEHICLE::CREATE_VEHICLE(joaat("hexer"), 866.3153f, 3631.587f, 31.9545f, 276.6327f, true, true, false);
-			iLocal_61[5] = VEHICLE::CREATE_VEHICLE(joaat("hexer"), 868.5937f, 3633.523f, 31.9622f, 267.0991f, true, true, false);
+			iLocal_61[2] = VEHICLE::CREATE_VEHICLE(joaat("hexer"), 863.4697f, 3633.4998f, 31.9874f, 290.5797f, true, true, false);
+			iLocal_61[3] = VEHICLE::CREATE_VEHICLE(joaat("hexer"), 866.4073f, 3636.0386f, 31.9514f, 270.3649f, true, true, false);
+			iLocal_61[4] = VEHICLE::CREATE_VEHICLE(joaat("hexer"), 866.3153f, 3631.5867f, 31.9545f, 276.6327f, true, true, false);
+			iLocal_61[5] = VEHICLE::CREATE_VEHICLE(joaat("hexer"), 868.5937f, 3633.5227f, 31.9622f, 267.0991f, true, true, false);
 			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("hexer"));
 			AUDIO::SET_AUDIO_VEHICLE_PRIORITY(iLocal_61[2], 3);
 			AUDIO::SET_AUDIO_VEHICLE_PRIORITY(iLocal_61[4], 3);
@@ -2743,7 +2743,7 @@ int func_62()//Position - 0x2D39
 						WEAPON::GIVE_WEAPON_TO_PED(iLocal_59[iVar0], joaat("WEAPON_SAWNOFFSHOTGUN"), -1, true, true);
 					}
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_62);
-					TASK::TASK_VEHICLE_DRIVE_TO_COORD(0, iLocal_61[2], 966.7098f, 3633.926f, 31.3974f, 10f, 0, joaat("hexer"), 786725, 4f, 100f);
+					TASK::TASK_VEHICLE_DRIVE_TO_COORD(0, iLocal_61[2], 966.7098f, 3633.9258f, 31.3974f, 10f, 0, joaat("hexer"), 786725, 4f, 100f);
 					TASK::TASK_LOOK_AT_COORD(0, Local_48, 5000, 0, 2);
 					TASK::CLOSE_SEQUENCE_TASK(iLocal_62);
 					TASK::TASK_PERFORM_SEQUENCE(iLocal_59[2], iLocal_62);
@@ -2762,7 +2762,7 @@ int func_62()//Position - 0x2D39
 					TASK::TASK_PERFORM_SEQUENCE(iLocal_59[4], iLocal_62);
 					TASK::CLEAR_SEQUENCE_TASK(&iLocal_62);
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_62);
-					TASK::TASK_VEHICLE_DRIVE_TO_COORD(0, iLocal_61[5], 974.8073f, 3633.771f, 31.3818f, 10f, 0, joaat("hexer"), 786725, 4f, 100f);
+					TASK::TASK_VEHICLE_DRIVE_TO_COORD(0, iLocal_61[5], 974.8073f, 3633.7708f, 31.3818f, 10f, 0, joaat("hexer"), 786725, 4f, 100f);
 					TASK::TASK_LOOK_AT_COORD(0, Local_48, 5000, 0, 2);
 					TASK::CLOSE_SEQUENCE_TASK(iLocal_62);
 					TASK::TASK_PERFORM_SEQUENCE(iLocal_59[5], iLocal_62);
@@ -3117,11 +3117,11 @@ void func_67()//Position - 0x355B
 
 void func_68()//Position - 0x3908
 {
-	if (!CAM::IS_SPHERE_VISIBLE(916.4631f, 3601.261f, 31.9327f, 3f))
+	if (!CAM::IS_SPHERE_VISIBLE(916.4631f, 3601.2615f, 31.9327f, 3f))
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(PLAYER::GET_PLAYERS_LAST_VEHICLE(), false))
 		{
-			if (ENTITY::IS_ENTITY_AT_COORD(PLAYER::GET_PLAYERS_LAST_VEHICLE(), 916.4631f, 3601.261f, 31.9327f, 2f, 2f, 2f, false, true, 0))
+			if (ENTITY::IS_ENTITY_AT_COORD(PLAYER::GET_PLAYERS_LAST_VEHICLE(), 916.4631f, 3601.2615f, 31.9327f, 2f, 2f, 2f, false, true, 0))
 			{
 				ENTITY::SET_ENTITY_COORDS(PLAYER::GET_PLAYERS_LAST_VEHICLE(), 915.6531f, 3595.061f, 32.0774f, true, false, false, true);
 			}
@@ -3627,7 +3627,7 @@ int func_83()//Position - 0x3FD8
 				return 1;
 			}
 		}
-		if (PED::IS_PED_SHOOTING_IN_AREA(PLAYER::PLAYER_PED_ID(), (973.053f - 30f), (3616.738f - 30f), (32.6181f - 30f), (973.053f + 30f), (3616.738f + 30f), (32.6181f + 30f), false, true))
+		if (PED::IS_PED_SHOOTING_IN_AREA(PLAYER::PLAYER_PED_ID(), (973.053f - 30f), (3616.7375f - 30f), (32.6181f - 30f), (973.053f + 30f), (3616.7375f + 30f), (32.6181f + 30f), false, true))
 		{
 			func_4();
 			return 1;
@@ -3747,13 +3747,13 @@ int func_85()//Position - 0x454C
 		{
 			VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(joaat("picador"), true);
 			VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(joaat("hexer"), true);
-			PATHFIND::SET_ROADS_IN_ANGLED_AREA(417.901f, 3578.002f, 31.176f, 1305.897f, 3604.306f, 40.1064f, 100.0625f, false, false, true);
+			PATHFIND::SET_ROADS_IN_ANGLED_AREA(417.901f, 3578.0017f, 31.176f, 1305.8972f, 3604.3062f, 40.1064f, 100.0625f, false, false, true);
 			PED::ADD_SCENARIO_BLOCKING_AREA(Local_48 - Vector(20f, 50f, 80f), Local_48 + Vector(20f, 50f, 70f), false, true, true, true);
 			MISC::ENABLE_DISPATCH_SERVICE(3, false);
 			MISC::ENABLE_DISPATCH_SERVICE(5, false);
 			PED::ADD_RELATIONSHIP_GROUP("rghLost", &iLocal_228);
 			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_228, joaat("PLAYER"));
-			iLocal_58 = PED::CREATE_PED(26, joaat("A_M_M_Skidrow_01"), 973.053f, 3616.738f, 31.6181f, 110.2753f, true, true);
+			iLocal_58 = PED::CREATE_PED(26, joaat("A_M_M_Skidrow_01"), 973.053f, 3616.7375f, 31.6181f, 110.275276f, true, true);
 			PED::SET_PED_COMPONENT_VARIATION(iLocal_58, 0, 0, 1, 0);
 			PED::SET_PED_COMPONENT_VARIATION(iLocal_58, 2, 1, 0, 0);
 			PED::SET_PED_COMPONENT_VARIATION(iLocal_58, 3, 1, 2, 0);
@@ -3781,7 +3781,7 @@ int func_85()//Position - 0x454C
 			func_63(&uLocal_63, 2, iLocal_59[1], "RECGFLost1", 0, 1);
 			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("G_M_Y_Lost_01"));
 			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("G_M_Y_Lost_02"));
-			iLocal_61[0] = VEHICLE::CREATE_VEHICLE(joaat("hexer"), 968.2626f, 3611.717f, 31.7874f, 296.8978f, true, true, false);
+			iLocal_61[0] = VEHICLE::CREATE_VEHICLE(joaat("hexer"), 968.2626f, 3611.7173f, 31.7874f, 296.8978f, true, true, false);
 			iLocal_61[1] = VEHICLE::CREATE_VEHICLE(joaat("hexer"), 970.8362f, 3625.563f, 31.3415f, 212.3456f, true, true, false);
 			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("hexer"));
 			TASK::TASK_PLAY_ANIM(iLocal_59[0], "random@countryside_gang_fight", "biker_02_stickup_loop", 1000f, -2f, -1, 1, 0f, false, false, false);
@@ -4980,7 +4980,7 @@ int func_104(struct<3> Param0, int iParam1, bool bParam2, bool bParam3, bool bPa
 		}
 		if (INTERIOR::IS_VALID_INTERIOR(INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID())))
 		{
-			if ((INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(377.153f, -717.567f, 10.0536f) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(320.9934f, 265.2515f, 82.1221f)) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(-1425.564f, -244.3f, 15.8053f))
+			if ((INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(377.153f, -717.567f, 10.0536f) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(320.9934f, 265.2515f, 82.1221f)) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(-1425.5645f, -244.3f, 15.8053f))
 			{
 				return 0;
 			}
@@ -4997,7 +4997,7 @@ int func_104(struct<3> Param0, int iParam1, bool bParam2, bool bParam3, bool bPa
 		{
 			if (iParam1 != 30)
 			{
-				if (SYSTEM::VDIST2(Var1, -61.2745f, -1100.468f, 25.3752f) < 176400f)
+				if (SYSTEM::VDIST2(Var1, -61.2745f, -1100.4675f, 25.3752f) < 176400f)
 				{
 					return 0;
 				}
@@ -5911,7 +5911,7 @@ void func_146()//Position - 0x7D6B
 		}
 		AUDIO::STOP_AUDIO_SCENE("RE_COUNTRYSIDE_GANG_FIGHT_SCENE");
 		PLAYER::SET_WANTED_LEVEL_MULTIPLIER(1f);
-		PATHFIND::SET_ROADS_BACK_TO_ORIGINAL_IN_ANGLED_AREA(417.901f, 3578.002f, 31.176f, 1305.897f, 3604.306f, 40.1064f, 100.0625f, 1);
+		PATHFIND::SET_ROADS_BACK_TO_ORIGINAL_IN_ANGLED_AREA(417.901f, 3578.0017f, 31.176f, 1305.8972f, 3604.3062f, 40.1064f, 100.0625f, 1);
 		PED::REMOVE_SCENARIO_BLOCKING_AREAS();
 		MISC::ENABLE_DISPATCH_SERVICE(3, true);
 		MISC::ENABLE_DISPATCH_SERVICE(5, true);

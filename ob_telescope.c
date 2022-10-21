@@ -534,7 +534,7 @@ void func_4()//Position - 0x387
 									func_370();
 									if (!Global_78319)
 									{
-										if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 14.53664f, 529.3154f, 173.6282f, 12.65681f, 528.8023f, 175.8782f, 2f, false, true, 0))
+										if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 14.536638f, 529.31537f, 173.6282f, 12.656813f, 528.8023f, 175.8782f, 2f, false, true, 0))
 										{
 											Var6 = { 0f, 0f, ENTITY::GET_ENTITY_HEADING(iLocal_79) };
 											Var7 = { PED::GET_ANIM_INITIAL_OFFSET_POSITION(sLocal_97, sLocal_103, ENTITY::GET_ENTITY_COORDS(iLocal_79, true), Var6, 0f, 2) };
@@ -641,7 +641,7 @@ void func_4()//Position - 0x387
 				}
 				if (!Global_78319)
 				{
-					if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 14.53664f, 529.3154f, 173.6282f, 12.65681f, 528.8023f, 175.8782f, 2f, false, true, 0))
+					if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 14.536638f, 529.31537f, 173.6282f, 12.656813f, 528.8023f, 175.8782f, 2f, false, true, 0))
 					{
 						func_316();
 					}
@@ -654,7 +654,7 @@ void func_4()//Position - 0x387
 				if ((TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD")) == 7 && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD")) != 0) && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD")) != 1)
 				{
 					func_288();
-					if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 14.53664f, 529.3154f, 173.6282f, 12.65681f, 528.8023f, 175.8782f, 2f, false, true, 0))
+					if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 14.536638f, 529.31537f, 173.6282f, 12.656813f, 528.8023f, 175.8782f, 2f, false, true, 0))
 					{
 						TASK::TASK_PLAY_ANIM_ADVANCED(PLAYER::PLAYER_PED_ID(), sLocal_97, sLocal_103, ENTITY::GET_ENTITY_COORDS(iLocal_79, true), ENTITY::GET_ENTITY_ROTATION(iLocal_79, 2), 2f, 0.1f, -1, 1576960, 0f, 2, 0);
 					}
@@ -733,7 +733,7 @@ void func_4()//Position - 0x387
 		case 3:
 			if ((TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_PLAY_ANIM")) == 7 && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_PLAY_ANIM")) != 0) && TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_PLAY_ANIM")) != 1)
 			{
-				if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 14.53664f, 529.3154f, 173.6282f, 12.65681f, 528.8023f, 175.8782f, 2f, false, true, 0))
+				if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 14.536638f, 529.31537f, 173.6282f, 12.656813f, 528.8023f, 175.8782f, 2f, false, true, 0))
 				{
 					TASK::TASK_PLAY_ANIM_ADVANCED(PLAYER::PLAYER_PED_ID(), sLocal_97, sLocal_104, ENTITY::GET_ENTITY_COORDS(iLocal_79, true), ENTITY::GET_ENTITY_ROTATION(iLocal_79, 2), 2f, 0.1f, -1, 1576961, 0f, 2, 0);
 				}
@@ -748,7 +748,7 @@ void func_4()//Position - 0x387
 						func_18();
 					}
 				}
-				if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 14.53664f, 529.3154f, 173.6282f, 12.65681f, 528.8023f, 175.8782f, 2f, false, true, 0))
+				if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 14.536638f, 529.31537f, 173.6282f, 12.656813f, 528.8023f, 175.8782f, 2f, false, true, 0))
 				{
 					func_324();
 				}
@@ -859,7 +859,7 @@ void func_4()//Position - 0x387
 			}
 			iLocal_68 = 0;
 			func_1();
-			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 14.53664f, 529.3154f, 173.6282f, 12.65681f, 528.8023f, 175.8782f, 2f, false, true, 0))
+			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 14.536638f, 529.31537f, 173.6282f, 12.656813f, 528.8023f, 175.8782f, 2f, false, true, 0))
 			{
 				if (CAM::GET_FOLLOW_PED_CAM_VIEW_MODE() != 4)
 				{

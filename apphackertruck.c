@@ -13496,7 +13496,7 @@ Vector3 func_319(int iParam0)//Position - 0xC55A
 			break;
 		
 		case 3:
-			Var0 = { -1443.094f, -544.7684f, 33.7424f };
+			Var0 = { -1443.0938f, -544.7684f, 33.7424f };
 			break;
 		
 		case 4:
@@ -13540,7 +13540,7 @@ Vector3 func_319(int iParam0)//Position - 0xC55A
 			break;
 		
 		case 14:
-			Var0 = { -973.3757f, -1429.425f, 6.6791f };
+			Var0 = { -973.3757f, -1429.4247f, 6.6791f };
 			break;
 		
 		case 15:
@@ -13568,7 +13568,7 @@ Vector3 func_319(int iParam0)//Position - 0xC55A
 			break;
 		
 		case 21:
-			Var0 = { -1534.025f, -324.5247f, 46.5237f };
+			Var0 = { -1534.0247f, -324.5247f, 46.5237f };
 			break;
 		
 		case 22:
@@ -13576,11 +13576,11 @@ Vector3 func_319(int iParam0)//Position - 0xC55A
 			break;
 		
 		case 23:
-			Var0 = { -1608.851f, -429.184f, 39.439f };
+			Var0 = { -1608.8514f, -429.184f, 39.439f };
 			break;
 		
 		case 24:
-			Var0 = { 964.3583f, -1034.199f, 39.8303f };
+			Var0 = { 964.3583f, -1034.1991f, 39.8303f };
 			break;
 		
 		case 25:
@@ -13596,7 +13596,7 @@ Vector3 func_319(int iParam0)//Position - 0xC55A
 			break;
 		
 		case 28:
-			Var0 = { 844.7289f, -1164.1f, 24.2681f };
+			Var0 = { 844.7289f, -1164.0997f, 24.2681f };
 			break;
 		
 		case 29:
@@ -13604,19 +13604,19 @@ Vector3 func_319(int iParam0)//Position - 0xC55A
 			break;
 		
 		case 30:
-			Var0 = { 572.0462f, -1570.736f, 27.4904f };
+			Var0 = { 572.0462f, -1570.7357f, 27.4904f };
 			break;
 		
 		case 31:
-			Var0 = { 722.2852f, -1190.617f, 23.282f };
+			Var0 = { 722.2852f, -1190.6168f, 23.282f };
 			break;
 		
 		case 32:
-			Var0 = { 497.6212f, -1494.084f, 28.2893f };
+			Var0 = { 497.6212f, -1494.0845f, 28.2893f };
 			break;
 		
 		case 33:
-			Var0 = { 480.3127f, -1549.937f, 28.2828f };
+			Var0 = { 480.3127f, -1549.9368f, 28.2828f };
 			break;
 		
 		case 34:
@@ -13628,43 +13628,43 @@ Vector3 func_319(int iParam0)//Position - 0xC55A
 			break;
 		
 		case 36:
-			Var0 = { 2554.165f, 4668.059f, 33.0233f };
+			Var0 = { 2554.1653f, 4668.059f, 33.0233f };
 			break;
 		
 		case 37:
-			Var0 = { 2461.22f, 1589.255f, 32.0443f };
+			Var0 = { 2461.2202f, 1589.2552f, 32.0443f };
 			break;
 		
 		case 38:
-			Var0 = { -2203.335f, 4244.427f, 47.3305f };
+			Var0 = { -2203.335f, 4244.4272f, 47.3305f };
 			break;
 		
 		case 39:
-			Var0 = { 218.0665f, 2601.817f, 44.7668f };
+			Var0 = { 218.0665f, 2601.8171f, 44.7668f };
 			break;
 		
 		case 40:
-			Var0 = { 186.1719f, 2786.343f, 45.0144f };
+			Var0 = { 186.1719f, 2786.3425f, 45.0144f };
 			break;
 		
 		case 41:
-			Var0 = { 642.0746f, 2791.729f, 40.9795f };
+			Var0 = { 642.0746f, 2791.7295f, 40.9795f };
 			break;
 		
 		case 42:
-			Var0 = { -1130.938f, 2701.133f, 17.8004f };
+			Var0 = { -1130.9376f, 2701.1333f, 17.8004f };
 			break;
 		
 		case 43:
-			Var0 = { -10.944f, -1646.76f, 28.3125f };
+			Var0 = { -10.944f, -1646.7601f, 28.3125f };
 			break;
 		
 		case 44:
-			Var0 = { 1024.263f, -2398.404f, 29.1261f };
+			Var0 = { 1024.2628f, -2398.4036f, 29.1261f };
 			break;
 		
 		case 45:
-			Var0 = { 870.8577f, -2232.323f, 29.5508f };
+			Var0 = { 870.8577f, -2232.3228f, 29.5508f };
 			break;
 		
 		case 46:
@@ -13672,15 +13672,15 @@ Vector3 func_319(int iParam0)//Position - 0xC55A
 			break;
 		
 		case 47:
-			Var0 = { -1088.616f, -2235.098f, 12.2182f };
+			Var0 = { -1088.6158f, -2235.0977f, 12.2182f };
 			break;
 		
 		case 48:
-			Var0 = { -342.5126f, -1468.675f, 29.6107f };
+			Var0 = { -342.5126f, -1468.6746f, 29.6107f };
 			break;
 		
 		case 49:
-			Var0 = { -1241.54f, -259.8841f, 37.9445f };
+			Var0 = { -1241.5399f, -259.8841f, 37.9445f };
 			break;
 		
 		case 50:
@@ -13688,11 +13688,11 @@ Vector3 func_319(int iParam0)//Position - 0xC55A
 			break;
 		
 		case 51:
-			Var0 = { -1405.411f, 526.8572f, 122.8361f };
+			Var0 = { -1405.4109f, 526.8572f, 122.8361f };
 			break;
 		
 		case 52:
-			Var0 = { 1341.552f, -1578.037f, 53.4443f };
+			Var0 = { 1341.5518f, -1578.0366f, 53.4443f };
 			break;
 		
 		case 53:
@@ -13708,11 +13708,11 @@ Vector3 func_319(int iParam0)//Position - 0xC55A
 			break;
 		
 		case 56:
-			Var0 = { 1899.673f, 3773.178f, 31.8829f };
+			Var0 = { 1899.6729f, 3773.1785f, 31.8829f };
 			break;
 		
 		case 57:
-			Var0 = { 1662.121f, 4776.317f, 41.0075f };
+			Var0 = { 1662.1211f, 4776.317f, 41.0075f };
 			break;
 		
 		case 58:
@@ -13748,7 +13748,7 @@ Vector3 func_319(int iParam0)//Position - 0xC55A
 			break;
 		
 		case 66:
-			Var0 = { -1292.456f, 440.9454f, 93.7572f };
+			Var0 = { -1292.4557f, 440.9454f, 93.7572f };
 			break;
 		
 		case 67:
@@ -13756,11 +13756,11 @@ Vector3 func_319(int iParam0)//Position - 0xC55A
 			break;
 		
 		case 68:
-			Var0 = { -1581.501f, -558.2578f, 33.9528f };
+			Var0 = { -1581.5015f, -558.2578f, 33.9528f };
 			break;
 		
 		case 69:
-			Var0 = { -1379.546f, -499.1783f, 32.1574f };
+			Var0 = { -1379.5457f, -499.1783f, 32.1574f };
 			break;
 		
 		case 70:
@@ -13772,31 +13772,31 @@ Vector3 func_319(int iParam0)//Position - 0xC55A
 			break;
 		
 		case 72:
-			Var0 = { 254.1892f, -1809.183f, 26.1805f };
+			Var0 = { 254.1892f, -1809.1831f, 26.1805f };
 			break;
 		
 		case 73:
-			Var0 = { -1472.278f, -920.0677f, 8.9683f };
+			Var0 = { -1472.2778f, -920.0677f, 8.9683f };
 			break;
 		
 		case 74:
-			Var0 = { 38.9478f, -1026.629f, 28.6354f };
+			Var0 = { 38.9478f, -1026.6288f, 28.6354f };
 			break;
 		
 		case 75:
-			Var0 = { 46.903f, 2789.825f, 57.1124f };
+			Var0 = { 46.903f, 2789.8247f, 57.1124f };
 			break;
 		
 		case 76:
-			Var0 = { -342.3246f, 6065.316f, 30.4895f };
+			Var0 = { -342.3246f, 6065.3164f, 30.4895f };
 			break;
 		
 		case 77:
-			Var0 = { 1737.878f, 3709.088f, 33.1348f };
+			Var0 = { 1737.8784f, 3709.0876f, 33.1348f };
 			break;
 		
 		case 78:
-			Var0 = { 939.7161f, -1459.204f, 30.467f };
+			Var0 = { 939.7161f, -1459.2039f, 30.467f };
 			break;
 		
 		case 79:
@@ -13808,11 +13808,11 @@ Vector3 func_319(int iParam0)//Position - 0xC55A
 			break;
 		
 		case 81:
-			Var0 = { 2472.22f, 4110.493f, 36.9629f };
+			Var0 = { 2472.2197f, 4110.4927f, 36.9629f };
 			break;
 		
 		case 82:
-			Var0 = { -39.3286f, 6420.603f, 30.7017f };
+			Var0 = { -39.3286f, 6420.6025f, 30.7017f };
 			break;
 		
 		case 83:
@@ -14238,10 +14238,10 @@ Vector3 func_324(int iParam0, int iParam1)//Position - 0xD427
 					return 229.197f, 213.7629f, 104.5252f;
 				
 				case 1:
-					return -1215.355f, -325.6002f, 36.6804f;
+					return -1215.3552f, -325.6002f, 36.6804f;
 				
 				case 2:
-					return 1175.598f, 2698.398f, 36.9947f;
+					return 1175.5978f, 2698.3982f, 36.9947f;
 				
 				default:
 			}
@@ -14267,7 +14267,7 @@ Vector3 func_324(int iParam0, int iParam1)//Position - 0xD427
 			switch (iParam1)
 			{
 				case 0:
-					return -1065.486f, -242.9739f, 53.01f;
+					return -1065.4856f, -242.9739f, 53.01f;
 				
 				default:
 			}
@@ -14280,25 +14280,25 @@ Vector3 func_324(int iParam0, int iParam1)//Position - 0xD427
 					return 1067.501f, -3261.654f, 4.898f;
 				
 				case 1:
-					return 68.5188f, -2482.417f, 5.0055f;
+					return 68.5188f, -2482.4172f, 5.0055f;
 				
 				case 2:
-					return -184.2188f, 6296.327f, 30.4886f;
+					return -184.2188f, 6296.3267f, 30.4886f;
 				
 				case 3:
 					return 2421.013f, 4780.2f, 33.5041f;
 				
 				case 4:
-					return 1566.581f, 3525.019f, 34.7375f;
+					return 1566.5809f, 3525.019f, 34.7375f;
 				
 				case 5:
-					return 1033.721f, 2510.754f, 46.1121f;
+					return 1033.7214f, 2510.7542f, 46.1121f;
 				
 				case 6:
-					return 2823.504f, 1502.591f, 23.5715f;
+					return 2823.5044f, 1502.5914f, 23.5715f;
 				
 				case 7:
-					return 1285.322f, 289.7219f, 80.9909f;
+					return 1285.3218f, 289.7219f, 80.9909f;
 				
 				case 8:
 					return -1024.404f, -538.3408f, 34.7084f;
@@ -16617,25 +16617,25 @@ Vector3 func_417(int iParam0)//Position - 0xFEC0
 	switch (iParam0)
 	{
 		case 19:
-			return -2597.411f, 1930.107f, 166.3086f;
+			return -2597.4106f, 1930.1073f, 166.3086f;
 		
 		case 20:
-			return -1920.153f, 2048.602f, 139.7356f;
+			return -1920.1527f, 2048.6018f, 139.7356f;
 		
 		case 21:
 			return -68.3441f, 894.488f, 234.5414f;
 		
 		case 22:
-			return 1407.563f, 1118.505f, 113.8377f;
+			return 1407.5625f, 1118.5055f, 113.8377f;
 		
 		case 23:
-			return -1788.983f, 455.5039f, 127.3081f;
+			return -1788.9834f, 455.5039f, 127.3081f;
 		
 		case 24:
 			return 217.052f, 757.9442f, 203.6637f;
 		
 		case 25:
-			return -1615.404f, 17.2934f, 61.1779f;
+			return -1615.4044f, 17.2934f, 61.1779f;
 		
 		case 26:
 			return -3102.533f, 716.4913f, 19.297f;
@@ -16644,34 +16644,34 @@ Vector3 func_417(int iParam0)//Position - 0xFEC0
 			return 880.8726f, -2919.058f, 4.9006f;
 		
 		case 1:
-			return 928.5625f, -2920.391f, 4.9021f;
+			return 928.5625f, -2920.3914f, 4.9021f;
 		
 		case 2:
-			return 972.3794f, -2920.422f, 4.9021f;
+			return 972.3794f, -2920.4219f, 4.9021f;
 		
 		case 3:
-			return 1091.055f, -2920.289f, 4.9021f;
+			return 1091.0553f, -2920.2886f, 4.9021f;
 		
 		case 4:
-			return 1148.923f, -2920.104f, 4.9021f;
+			return 1148.9227f, -2920.1045f, 4.9021f;
 		
 		case 5:
-			return 1180.085f, -2970.068f, 4.9021f;
+			return 1180.0854f, -2970.068f, 4.9021f;
 		
 		case 6:
 			return -1082.496f, -500.419f, 35.432f;
 		
 		case 7:
-			return 165.3373f, 2284.929f, 92.178f;
+			return 165.3373f, 2284.9287f, 92.178f;
 		
 		case 8:
 			return -2221.172f, 3484.129f, 29.1695f;
 		
 		case 9:
-			return 2906.938f, 4345.68f, 49.3003f;
+			return 2906.9385f, 4345.6797f, 49.3003f;
 		
 		case 10:
-			return 1579.18f, 6438.313f, 23.7935f;
+			return 1579.1799f, 6438.3135f, 23.7935f;
 		
 		case 11:
 			return 477.29f, -1889.14f, 25.0946f;
@@ -16680,10 +16680,10 @@ Vector3 func_417(int iParam0)//Position - 0xFEC0
 			return 2534.13f, 2584.07f, 36.9449f;
 		
 		case 13:
-			return 452.3711f, 3573.672f, 32.2386f;
+			return 452.3711f, 3573.6724f, 32.2386f;
 		
 		case 14:
-			return -222.6743f, 6249.478f, 30.4912f;
+			return -222.6743f, 6249.4775f, 30.4912f;
 		
 		case 15:
 			return -65.6218f, 81.307f, 70.5533f;
@@ -16692,25 +16692,25 @@ Vector3 func_417(int iParam0)//Position - 0xFEC0
 			return -28.1873f, -1083.637f, 25.5732f;
 		
 		case 17:
-			return 2510.956f, 4109.705f, 37.5692f;
+			return 2510.956f, 4109.7046f, 37.5692f;
 		
 		case 18:
 			return -763.496f, -243.3722f, 36.2426f;
 		
 		case 27:
-			return 859.9324f, -1350.51f, 25.0668f;
+			return 859.9324f, -1350.5098f, 25.0668f;
 		
 		case 28:
-			return 417.7273f, -1618.991f, 28.2898f;
+			return 417.7273f, -1618.9912f, 28.2898f;
 		
 		case 29:
 			return 452.691f, -1007.568f, 26.12f;
 		
 		case 30:
-			return -1120.411f, -842.7603f, 12.3767f;
+			return -1120.4114f, -842.7603f, 12.3767f;
 		
 		case 31:
-			return -1326.011f, -1502.188f, 3.3245f;
+			return -1326.0114f, -1502.1876f, 3.3245f;
 		
 		case 32:
 			return -576.611f, -130.9079f, 33.659f;
@@ -16722,46 +16722,46 @@ Vector3 func_417(int iParam0)//Position - 0xFEC0
 			return 1858.998f, 3676.471f, 32.546f;
 		
 		case 35:
-			return -433.4332f, 6042.402f, 30.3373f;
+			return -433.4332f, 6042.4023f, 30.3373f;
 		
 		case 36:
-			return -633.966f, -1780.525f, 23.0708f;
+			return -633.966f, -1780.5249f, 23.0708f;
 		
 		case 37:
-			return 995.0766f, -1858.65f, 29.8898f;
+			return 995.0766f, -1858.6501f, 29.8898f;
 		
 		case 38:
-			return -70.5644f, -1822.705f, 25.942f;
+			return -70.5644f, -1822.7053f, 25.942f;
 		
 		case 39:
-			return 38.8324f, -1284.2f, 28.278f;
+			return 38.8324f, -1284.2002f, 28.278f;
 		
 		case 40:
-			return 1211.217f, -1262.491f, 34.2267f;
+			return 1211.2166f, -1262.491f, 34.2267f;
 		
 		case 41:
-			return 804.3043f, -2225.151f, 28.5425f;
+			return 804.3043f, -2225.1511f, 28.5425f;
 		
 		case 42:
-			return 1764.46f, -1648.041f, 111.649f;
+			return 1764.4597f, -1648.0409f, 111.649f;
 		
 		case 43:
-			return 144.143f, -3003.358f, 6.031f;
+			return 144.143f, -3003.3582f, 6.031f;
 		
 		case 44:
-			return -513.2193f, -2200.612f, 5.394f;
+			return -513.2193f, -2200.6116f, 5.394f;
 		
 		case 45:
-			return -1153.689f, -2172.111f, 12.2625f;
+			return -1153.6888f, -2172.1113f, 12.2625f;
 		
 		case 46:
-			return -511.2002f, -1736.564f, 18.1967f;
+			return -511.2002f, -1736.5637f, 18.1967f;
 		
 		case 47:
-			return 2352.237f, 3036.937f, 47.1521f;
+			return 2352.2368f, 3036.9365f, 47.1521f;
 		
 		case 48:
-			return -194.5653f, 6268.56f, 30.4893f;
+			return -194.5653f, 6268.5596f, 30.4893f;
 		
 		default:
 	}

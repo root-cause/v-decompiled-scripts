@@ -613,17 +613,17 @@ void func_4()//Position - 0x2B1
 				switch (iLocal_282)
 				{
 					case 0:
-						Local_286 = { 1546.069f, 3821.222f, 29.9139f };
+						Local_286 = { 1546.0688f, 3821.2224f, 29.9139f };
 						fLocal_287 = 235.002f;
 						break;
 					
 					case 1:
-						Local_286 = { 2515.749f, 3783.202f, 52.0043f };
+						Local_286 = { 2515.7485f, 3783.2017f, 52.0043f };
 						fLocal_287 = 0f;
 						break;
 					
 					case 2:
-						Local_286 = { 1902.893f, 4921.095f, 47f };
+						Local_286 = { 1902.8933f, 4921.0947f, 47f };
 						fLocal_287 = 69.8293f;
 						break;
 					
@@ -633,12 +633,12 @@ void func_4()//Position - 0x2B1
 						break;
 					
 					case 4:
-						Local_286 = { 560.8397f, 2738.103f, 41.2029f };
+						Local_286 = { 560.8397f, 2738.1025f, 41.2029f };
 						fLocal_287 = 91.5686f;
 						break;
 					
 					case 5:
-						Local_286 = { -455.5521f, 1598.692f, 358.1478f };
+						Local_286 = { -455.5521f, 1598.6919f, 358.1478f };
 						fLocal_287 = 270f;
 						break;
 				}
@@ -1935,7 +1935,7 @@ Vector3 func_46()//Position - 0x1CD6
 			}
 			else
 			{
-				Var0 = { 0f, 0f, -179.9088f };
+				Var0 = { 0f, 0f, -179.90875f };
 			}
 			break;
 		
@@ -2035,7 +2035,7 @@ Vector3 func_47()//Position - 0x1DEB
 			break;
 		
 		case joaat("prop_mr_raspberry_01"):
-			Var0 = { -1146.284f, -1514.13f, 10.8468f };
+			Var0 = { -1146.284f, -1514.1305f, 10.8468f };
 			break;
 		
 		case joaat("prop_radio_01"):
@@ -2635,7 +2635,7 @@ Vector3 func_69()//Position - 0x27A3
 			break;
 		
 		case joaat("p_cs_joint_01"):
-			Var0 = { -10.6378f, -1441.314f, 30.1015f };
+			Var0 = { -10.6378f, -1441.3145f, 30.1015f };
 			break;
 		
 		case joaat("p_tumbler_02_s1"):
@@ -2643,7 +2643,7 @@ Vector3 func_69()//Position - 0x27A3
 		case joaat("p_tumbler_cs2_s_trev"):
 			if (bLocal_35)
 			{
-				Var0 = { -1154.343f, -1522.6f, 9.6327f };
+				Var0 = { -1154.343f, -1522.5997f, 9.6327f };
 			}
 			else
 			{
@@ -2652,15 +2652,15 @@ Vector3 func_69()//Position - 0x27A3
 			break;
 		
 		case joaat("prop_rolled_sock_02"):
-			Var0 = { 1972.142f, 3813.243f, 32.4271f };
+			Var0 = { 1972.1417f, 3813.243f, 32.4271f };
 			break;
 		
 		case joaat("prop_mr_raspberry_01"):
-			Var0 = { -1145.91f, -1514.944f, 9.6327f };
+			Var0 = { -1145.91f, -1514.9445f, 9.6327f };
 			break;
 		
 		case joaat("prop_radio_01"):
-			Var0 = { 1976.94f, 3821.242f, 33.3266f };
+			Var0 = { 1976.94f, 3821.2417f, 33.3266f };
 			break;
 		
 		case joaat("p_w_grass_gls_s"):

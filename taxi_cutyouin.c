@@ -407,9 +407,9 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_72 = HUD::GET_WAYPOINT_BLIP_ENUM_ID();
 	Local_77 = { 500f, 500f, 500f };
 	Local_246 = { 342.6987f, -996.7599f, 28.2438f };
-	Local_247 = { 321.1089f, -996.4285f, 28.20932f };
-	Local_248 = { -1042.946f, -2689.55f, 12.7572f };
-	Local_249 = { -1044.808f, -2694.138f, 12.728f };
+	Local_247 = { 321.10886f, -996.4285f, 28.20932f };
+	Local_248 = { -1042.9464f, -2689.5498f, 12.7572f };
+	Local_249 = { -1044.8083f, -2694.138f, 12.728f };
 	Local_250 = { 348.0136f, -993.6165f, 31.9655f };
 	iLocal_262 = 1;
 	iLocal_266 = -1;
@@ -683,7 +683,7 @@ void func_9()//Position - 0x391
 						PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_231.f_3, iLocal_328);
 						WEAPON::REMOVE_ALL_PED_WEAPONS(Local_231.f_3, true);
 					}
-					PATHFIND::SET_ROADS_IN_ANGLED_AREA(-1035.326f, -2703.305f, 12.8004f, -1056.08f, -2568.675f, 12.8181f, 125f, true, false, true);
+					PATHFIND::SET_ROADS_IN_ANGLED_AREA(-1035.326f, -2703.3054f, 12.8004f, -1056.0803f, -2568.6753f, 12.8181f, 125f, true, false, true);
 					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(0, joaat("AMBIENT_GANG_FAMILY"), Local_231.f_413);
 					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(0, joaat("AMBIENT_GANG_LOST"), Local_231.f_413);
 					PED::SET_RELATIONSHIP_BETWEEN_GROUPS(0, joaat("AMBIENT_GANG_MEXICAN"), Local_231.f_413);
@@ -746,7 +746,7 @@ void func_9()//Position - 0x391
 						{
 							if (func_199(Local_231.f_4, Local_231.f_17, 1) <= 100f)
 							{
-								MISC::CLEAR_AREA_OF_COPS(333.6208f, -955.5027f, 28.4225f, 60f, 0);
+								MISC::CLEAR_AREA_OF_COPS(333.6208f, -955.50275f, 28.4225f, 60f, 0);
 								iLocal_261 = 1;
 							}
 						}
@@ -756,7 +756,7 @@ void func_9()//Position - 0x391
 				{
 					iLocal_251 = 0;
 					HUD::SET_BLIP_ALPHA(Local_231.f_9, 0);
-					Local_231.f_26 = { -1047.518f, -2722.114f, 19.0823f };
+					Local_231.f_26 = { -1047.5184f, -2722.1135f, 19.0823f };
 					Local_231.f_34 = 238.52f;
 					func_281(&Local_231, 6, 0, 0);
 					func_177(&(Local_231.f_81), 67108864);
@@ -841,7 +841,7 @@ void func_9()//Position - 0x391
 						{
 							MISC::SET_BIT(&uLocal_306, 8);
 							WEAPON::GIVE_WEAPON_TO_PED(Local_231.f_3, joaat("WEAPON_COMBATPISTOL"), 50, false, true);
-							TASK::TASK_SHOOT_AT_COORD(Local_231.f_3, 335.5314f, -992.4785f, 28.38245f, 10000, joaat("FIRING_PATTERN_BURST_FIRE"));
+							TASK::TASK_SHOOT_AT_COORD(Local_231.f_3, 335.53137f, -992.4785f, 28.38245f, 10000, joaat("FIRING_PATTERN_BURST_FIRE"));
 							ENTITY::SET_ENTITY_VISIBLE(Local_231.f_3, false, false);
 							ENTITY::SET_ENTITY_CAN_BE_DAMAGED(Local_231.f_3, false);
 							ENTITY::SET_ENTITY_INVINCIBLE(Local_231.f_3, true);
@@ -907,7 +907,7 @@ void func_9()//Position - 0x391
 				else if ((MISC::GET_GAME_TIMER() % 1000) < 50)
 				{
 				}
-				if ((ENTITY::IS_ENTITY_AT_COORD(Local_231.f_3, 347.8621f, -983.6118f, 31.30889f, 4f, 3f, 3f, false, true, 0) && ENTITY::IS_ENTITY_AT_COORD(Local_231.f_4, Local_231.f_17, 10f, 10f, 10f, false, true, 0)) && iLocal_252)
+				if ((ENTITY::IS_ENTITY_AT_COORD(Local_231.f_3, 347.8621f, -983.6118f, 31.308886f, 4f, 3f, 3f, false, true, 0) && ENTITY::IS_ENTITY_AT_COORD(Local_231.f_4, Local_231.f_17, 10f, 10f, 10f, false, true, 0)) && iLocal_252)
 				{
 					FIRE::ADD_EXPLOSION(344.5906f, -996.409f, 28.30219f, 4, 0.5f, true, false, 1f, false);
 					AUDIO::PLAY_SOUND_FROM_COORD(iLocal_266, "Burglar_Bell", 340.8f, -965.4f, 28.4f, "Generic_Alarms", false, 0, false);
@@ -1078,22 +1078,22 @@ void func_9()//Position - 0x391
 								if (iLocal_255 && !iLocal_258)
 								{
 									MISC::CLEAR_AREA(Local_231.f_17, 3f, false, false, false, false);
-									iLocal_326 = PED::ADD_SCENARIO_BLOCKING_AREA(-1033.188f, -2743.18f, 19f, -1047.948f, -2739.18f, 20.20066f, false, true, true, true);
-									iLocal_323[0] = PED::CREATE_PED(6, func_280(3), -1036.502f, -2742.986f, 20.16969f, 0f, true, true);
-									iLocal_323[1] = PED::CREATE_PED(6, func_280(3), -1043.706f, -2739.234f, 19.16969f, 0f, true, true);
+									iLocal_326 = PED::ADD_SCENARIO_BLOCKING_AREA(-1033.1877f, -2743.1797f, 19f, -1047.9482f, -2739.1797f, 20.20066f, false, true, true, true);
+									iLocal_323[0] = PED::CREATE_PED(6, func_280(3), -1036.502f, -2742.9856f, 20.169693f, 0f, true, true);
+									iLocal_323[1] = PED::CREATE_PED(6, func_280(3), -1043.7057f, -2739.2336f, 19.16969f, 0f, true, true);
 									WEAPON::GIVE_WEAPON_TO_PED(iLocal_323[0], joaat("WEAPON_CARBINERIFLE"), -1, true, true);
 									WEAPON::GIVE_WEAPON_TO_PED(iLocal_323[1], joaat("WEAPON_CARBINERIFLE"), -1, true, true);
-									if (TASK::DOES_SCENARIO_EXIST_IN_AREA(-1036.502f, -2742.986f, 20.16969f, 5f, true))
+									if (TASK::DOES_SCENARIO_EXIST_IN_AREA(-1036.502f, -2742.9856f, 20.169693f, 5f, true))
 									{
-										TASK::TASK_USE_NEAREST_SCENARIO_TO_COORD(iLocal_323[0], -1036.502f, -2742.986f, 20.16969f, 2.5f, 0);
+										TASK::TASK_USE_NEAREST_SCENARIO_TO_COORD(iLocal_323[0], -1036.502f, -2742.9856f, 20.169693f, 2.5f, 0);
 									}
 									else
 									{
 										TASK::TASK_START_SCENARIO_IN_PLACE(iLocal_323[0], "WORLD_HUMAN_GUARD_STAND_ARMY", 0, false);
 									}
-									if (TASK::DOES_SCENARIO_EXIST_IN_AREA(-1043.706f, -2739.234f, 19.16969f, 5f, true))
+									if (TASK::DOES_SCENARIO_EXIST_IN_AREA(-1043.7057f, -2739.2336f, 19.16969f, 5f, true))
 									{
-										TASK::TASK_USE_NEAREST_SCENARIO_TO_COORD(iLocal_323[1], -1043.706f, -2739.234f, 19.16969f, 2.5f, 0);
+										TASK::TASK_USE_NEAREST_SCENARIO_TO_COORD(iLocal_323[1], -1043.7057f, -2739.2336f, 19.16969f, 2.5f, 0);
 									}
 									else
 									{
@@ -1201,11 +1201,11 @@ int func_10()//Position - 0x1564
 			TASK::CLEAR_SEQUENCE_TASK(&iVar0);
 			TASK::OPEN_SEQUENCE_TASK(&iVar0);
 			TASK::TASK_LEAVE_ANY_VEHICLE(0, 0, 256);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1041.9f, -2745.113f, 20.3644f, 1.25f, 20000, 0.25f, 0, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1041.8997f, -2745.1133f, 20.3644f, 1.25f, 20000, 0.25f, 0, 40000f);
 			TASK::CLOSE_SEQUENCE_TASK(iVar0);
 			TASK::TASK_PERFORM_SEQUENCE(Local_231.f_3, iVar0);
 			TASK::CLEAR_SEQUENCE_TASK(&iVar0);
-			iLocal_327 = VEHICLE::CREATE_VEHICLE(func_280(4), -1067.146f, -2579.632f, 19.7762f, 150f, true, true, false);
+			iLocal_327 = VEHICLE::CREATE_VEHICLE(func_280(4), -1067.1459f, -2579.6316f, 19.7762f, 150f, true, true, false);
 			iLocal_324 = PED::CREATE_PED_INSIDE_VEHICLE(iLocal_327, 26, func_280(3), -1, true, true);
 			func_281(&Local_231, 9, 0, 0);
 			iLocal_265++;
@@ -1234,7 +1234,7 @@ int func_10()//Position - 0x1564
 		case 2:
 			if ((!ENTITY::IS_ENTITY_DEAD(iLocal_323[0], false) && !ENTITY::IS_ENTITY_DEAD(iLocal_323[1], false)) && !ENTITY::IS_ENTITY_DEAD(Local_231.f_3, false))
 			{
-				if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_231.f_3, -1032.675f, -2738.775f, 19.16969f, -1041.51f, -2733.615f, 21.54504f, 2f, false, true, 0))
+				if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_231.f_3, -1032.6752f, -2738.7751f, 19.169693f, -1041.5101f, -2733.6152f, 21.545042f, 2f, false, true, 0))
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iVar0);
 					TASK::TASK_GO_TO_ENTITY_WHILE_AIMING_AT_ENTITY(0, Local_231.f_3, Local_231.f_3, 1f, false, 4f, 4f, true, false, joaat("FIRING_PATTERN_FULL_AUTO"));
@@ -1311,9 +1311,9 @@ int func_10()//Position - 0x1564
 				if (!ENTITY::IS_ENTITY_DEAD(iLocal_323[0], false))
 				{
 					TASK::CLEAR_PED_TASKS(iLocal_323[0]);
-					if (TASK::DOES_SCENARIO_EXIST_IN_AREA(-1036.502f, -2742.986f, 20.16969f, 5f, true))
+					if (TASK::DOES_SCENARIO_EXIST_IN_AREA(-1036.502f, -2742.9856f, 20.169693f, 5f, true))
 					{
-						TASK::TASK_USE_NEAREST_SCENARIO_TO_COORD(iLocal_323[0], -1036.502f, -2742.986f, 20.16969f, 1f, 0);
+						TASK::TASK_USE_NEAREST_SCENARIO_TO_COORD(iLocal_323[0], -1036.502f, -2742.9856f, 20.169693f, 1f, 0);
 					}
 					else
 					{
@@ -1399,39 +1399,39 @@ Vector3 func_11(int iParam0)//Position - 0x1C7F
 	switch (iParam0)
 	{
 		case 0:
-			Var0 = { -1040.486f, -2726.058f, 21.4491f };
+			Var0 = { -1040.4861f, -2726.0576f, 21.4491f };
 			break;
 		
 		case 4:
-			Var0 = { -1044.847f, -2726.239f, 20.2197f };
+			Var0 = { -1044.8472f, -2726.239f, 20.2197f };
 			break;
 		
 		case 6:
-			Var0 = { -1045.252f, -2733.154f, 23.9084f };
+			Var0 = { -1045.2518f, -2733.1543f, 23.9084f };
 			break;
 		
 		case 5:
-			Var0 = { -1053.653f, -2720.5f, 20.1615f };
+			Var0 = { -1053.6528f, -2720.4998f, 20.1615f };
 			break;
 		
 		case 1:
-			Var0 = { -1042.008f, -2729.232f, 21.2022f };
+			Var0 = { -1042.0082f, -2729.2322f, 21.2022f };
 			break;
 		
 		case 2:
-			Var0 = { -1049.799f, -2725.069f, 20.7481f };
+			Var0 = { -1049.7991f, -2725.0686f, 20.7481f };
 			break;
 		
 		case 3:
-			Var0 = { -1043.888f, -2723.783f, 20.6874f };
+			Var0 = { -1043.8876f, -2723.7827f, 20.6874f };
 			break;
 		
 		case 7:
-			Var0 = { -1041.917f, -2746.239f, 22.2494f };
+			Var0 = { -1041.9169f, -2746.2385f, 22.2494f };
 			break;
 		
 		case 8:
-			Var0 = { -1041.811f, -2739.353f, 21.2173f };
+			Var0 = { -1041.8114f, -2739.3528f, 21.2173f };
 			break;
 	}
 	return Var0;
@@ -6023,35 +6023,35 @@ Vector3 func_215(int iParam0)//Position - 0x73F1
 			break;
 		
 		case 1:
-			return -1020.581f, -2743.842f, 18.4049f;
+			return -1020.5814f, -2743.842f, 18.4049f;
 			break;
 		
 		case 2:
-			return -1043.947f, -2748.683f, 20.3594f;
+			return -1043.9473f, -2748.6826f, 20.3594f;
 			break;
 		
 		case 3:
-			return -1042.391f, -2731.644f, 19.1701f;
+			return -1042.3907f, -2731.6443f, 19.1701f;
 			break;
 		
 		case 4:
-			return -1045.677f, -2730.109f, 19.1701f;
+			return -1045.6769f, -2730.1091f, 19.1701f;
 			break;
 		
 		case 5:
-			return -1032.295f, -2731.449f, 19.0458f;
+			return -1032.2947f, -2731.4495f, 19.0458f;
 			break;
 		
 		case 6:
-			return -1051.045f, -2722.934f, 19.1693f;
+			return -1051.0447f, -2722.9338f, 19.1693f;
 			break;
 		
 		case 7:
-			return -1052.905f, -2723.375f, 19.1693f;
+			return -1052.9054f, -2723.3755f, 19.1693f;
 			break;
 		
 		case 8:
-			return -1042.812f, -2743.095f, 20.362f;
+			return -1042.8121f, -2743.0955f, 20.362f;
 			break;
 		
 		default:
@@ -10678,7 +10678,7 @@ void func_351(var uParam0)//Position - 0xD1F3
 			else if (uParam0->f_411 == 0)
 			{
 				TASK::TASK_CLIMB_LADDER(0, true);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 813.9421f, 1172.681f, 329.7988f, 1f, -1, 0.25f, 0, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 813.9421f, 1172.6809f, 329.7988f, 1f, -1, 0.25f, 0, 40000f);
 				TASK::TASK_ACHIEVE_HEADING(0, 151.7794f, 0);
 				TASK::TASK_START_SCENARIO_IN_PLACE(0, "WORLD_HUMAN_SMOKING_POT", 0, false);
 			}
@@ -15302,11 +15302,11 @@ void func_428(int iParam0)//Position - 0x1358C
 	func_430(&Local_231, iParam0);
 	Local_231.f_410 = 0;
 	func_429(&Local_231, 2, 8);
-	Local_231.f_23 = { -1069.277f, -2666.156f, 12.665f };
+	Local_231.f_23 = { -1069.2772f, -2666.1558f, 12.665f };
 	Local_231.f_33 = 202.9f;
 	Local_231.f_26 = { 323.9376f, -956.7155f, 28.346f };
 	Local_231.f_34 = 262.6098f;
-	Local_231.f_29 = { -1037.711f, -2748.463f, 20.3642f };
+	Local_231.f_29 = { -1037.7112f, -2748.4631f, 20.3642f };
 }
 
 void func_429(var uParam0, int iParam1, int iParam2)//Position - 0x13604

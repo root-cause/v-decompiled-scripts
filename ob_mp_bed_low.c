@@ -398,8 +398,8 @@ void __EntryFunction__()//Position - 0x0
 	sLocal_330 = "f_getin_l_bighouse";
 	sLocal_331 = "f_sleep_l_loop_bighouse";
 	sLocal_332 = "f_getout_l_bighouse";
-	Local_333 = { 262.9207f, -1002.98f, -100.0086f };
-	Local_334 = { 261.0173f, -1002.98f, -98.0086f };
+	Local_333 = { 262.9207f, -1002.9797f, -100.0086f };
+	Local_334 = { 261.0173f, -1002.9797f, -98.0086f };
 	fLocal_336 = 230.5943f;
 	Local_337 = { 262.74f, -1004.344f, -99.575f };
 	Local_338 = { 0f, 0f, -162.36f };
@@ -418,7 +418,7 @@ void __EntryFunction__()//Position - 0x0
 		MISC::SET_THIS_SCRIPT_CAN_BE_PAUSED(false);
 	}
 	Local_335 = { ScriptParam_340.f_1[0 /*3*/] };
-	Local_335 = { 261.8297f, -1002.928f, -99.0062f };
+	Local_335 = { 261.8297f, -1002.9283f, -99.0062f };
 	while (true)
 	{
 		SYSTEM::WAIT(0);

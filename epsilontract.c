@@ -1795,7 +1795,7 @@ void func_46()//Position - 0x1F1E
 	sLocal_50[4] = "TRACT_HINT5" /* GXT: In the rubble of the old religion, will be the basis for the new. */;
 	Local_49[5 /*11*/].f_3 = { -1605.03f, 5256.55f, 1.08f };
 	sLocal_50[5] = "TRACT_HINT6" /* GXT: Where the first fleet sailed, the new fleet will find its map. */;
-	Local_49[6 /*11*/].f_3 = { -1804.546f, 403.9298f, 112.1966f };
+	Local_49[6 /*11*/].f_3 = { -1804.5464f, 403.9298f, 112.1966f };
 	sLocal_50[6] = "TRACT_HINT7" /* GXT: What dwelling is worthy of Kraff? He is humble, yet we exalt him. */;
 	Local_49[7 /*11*/].f_3 = { 484.2701f, 5617.175f, 787.4708f };
 	sLocal_50[7] = "TRACT_HINT8" /* GXT: We are not dinosaurs, nor plants, but a tree in the jet stream may hold Kraff's true word. */;

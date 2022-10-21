@@ -564,20 +564,20 @@ void func_9(int iParam0, var uParam1, var uParam2, var uParam3)//Position - 0x38
 	switch (iParam0)
 	{
 		case 0:
-			*uParam1 = { -796.5573f, -234.6412f, 35.94032f };
-			*uParam2 = { -792.6026f, -241.4741f, 39.50642f };
+			*uParam1 = { -796.55725f, -234.64124f, 35.94032f };
+			*uParam2 = { -792.6026f, -241.47414f, 39.506424f };
 			*uParam3 = 3f;
 			break;
 		
 		case 1:
 			*uParam1 = { -792.1209f, -242.4434f, 35.93293f };
-			*uParam2 = { -789.0962f, -247.5213f, 39.44004f };
+			*uParam2 = { -789.0962f, -247.52126f, 39.44004f };
 			*uParam3 = 3f;
 			break;
 		
 		case 2:
-			*uParam1 = { -786.5422f, -248.4348f, 35.99127f };
-			*uParam2 = { -780.4202f, -245.9356f, 39.44004f };
+			*uParam1 = { -786.5422f, -248.43477f, 35.991272f };
+			*uParam2 = { -780.42017f, -245.93564f, 39.44004f };
 			*uParam3 = 3f;
 			break;
 	}
@@ -9417,7 +9417,7 @@ void func_35(int iParam0, var uParam1)//Position - 0xAA9A
 		}
 		if (iVar2 == joaat("jester3"))
 		{
-			(*uParam1)[0] = (VEHICLE::GET_VEHICLE_ESTIMATED_MAX_SPEED(iParam0) * 0.9890084f);
+			(*uParam1)[0] = (VEHICLE::GET_VEHICLE_ESTIMATED_MAX_SPEED(iParam0) * 0.98900837f);
 		}
 		if (iVar2 == joaat("freecrawler"))
 		{
@@ -9425,7 +9425,7 @@ void func_35(int iParam0, var uParam1)//Position - 0xAA9A
 		}
 		if (iVar2 == joaat("swinger"))
 		{
-			(*uParam1)[0] = (VEHICLE::GET_VEHICLE_ESTIMATED_MAX_SPEED(iParam0) * 0.9650553f);
+			(*uParam1)[0] = (VEHICLE::GET_VEHICLE_ESTIMATED_MAX_SPEED(iParam0) * 0.96505535f);
 		}
 		if (iVar2 == joaat("menacer"))
 		{
@@ -9433,7 +9433,7 @@ void func_35(int iParam0, var uParam1)//Position - 0xAA9A
 		}
 		if (iVar2 == joaat("speedo4"))
 		{
-			(*uParam1)[0] = (VEHICLE::GET_VEHICLE_ESTIMATED_MAX_SPEED(iParam0) * 0.9426523f);
+			(*uParam1)[0] = (VEHICLE::GET_VEHICLE_ESTIMATED_MAX_SPEED(iParam0) * 0.94265234f);
 		}
 		if (VEHICLE::IS_THIS_MODEL_A_HELI(iVar2) || VEHICLE::IS_THIS_MODEL_A_PLANE(iVar2))
 		{
@@ -86889,11 +86889,11 @@ void func_576(bool bParam0, bool bParam1)//Position - 0x64712
 	fVar2 = GRAPHICS::GET_ASPECT_RATIO(false);
 	if (bParam0)
 	{
-		Global_23149 = (0.225f * (1.777778f / fVar2));
+		Global_23149 = (0.225f * (1.7777778f / fVar2));
 	}
 	else if (fVar2 < 1.77777f)
 	{
-		Global_23149 = (0.225f * (1.777778f / fVar2));
+		Global_23149 = (0.225f * (1.7777778f / fVar2));
 	}
 	else
 	{
@@ -95895,7 +95895,7 @@ float func_691(float fParam0, float fParam1, float fParam2)//Position - 0x70E27
 {
 	float fVar0;
 	
-	fVar0 = ((1f - SYSTEM::COS(func_692((fParam2 * 3.141593f)))) * 0.5f);
+	fVar0 = ((1f - SYSTEM::COS(func_692((fParam2 * 3.1415927f)))) * 0.5f);
 	return ((fParam0 * (1f - fVar0)) + (fParam1 * fVar0));
 }
 

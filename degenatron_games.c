@@ -76237,7 +76237,7 @@ float func_423(float fParam0, float fParam1, float fParam2)//Position - 0x5A830
 {
 	float fVar0;
 	
-	fVar0 = ((1f - SYSTEM::COS(func_424((fParam2 * 3.141593f)))) * 0.5f);
+	fVar0 = ((1f - SYSTEM::COS(func_424((fParam2 * 3.1415927f)))) * 0.5f);
 	return ((fParam0 * (1f - fVar0)) + (fParam1 * fVar0));
 }
 
@@ -76884,7 +76884,7 @@ struct<2> func_449(int* iParam0, int iParam1)//Position - 0x5B5D4
 			switch (iParam1)
 			{
 				case 0:
-					func_450(&Var0, 0.2135922f, 0.3446602f);
+					func_450(&Var0, 0.21359223f, 0.3446602f);
 					break;
 				
 				case 1:
@@ -76897,7 +76897,7 @@ struct<2> func_449(int* iParam0, int iParam1)//Position - 0x5B5D4
 			switch (iParam1)
 			{
 				case 0:
-					func_450(&Var0, 0.2135922f, 0.3446602f);
+					func_450(&Var0, 0.21359223f, 0.3446602f);
 					break;
 				
 				case 1:
@@ -76905,7 +76905,7 @@ struct<2> func_449(int* iParam0, int iParam1)//Position - 0x5B5D4
 					break;
 				
 				case 2:
-					func_450(&Var0, 0.7961165f, 0.9271845f);
+					func_450(&Var0, 0.79611653f, 0.92718446f);
 					break;
 			}
 			break;
@@ -76914,11 +76914,11 @@ struct<2> func_449(int* iParam0, int iParam1)//Position - 0x5B5D4
 			switch (iParam1)
 			{
 				case 0:
-					func_450(&Var0, 0.1654135f, 0.2669173f);
+					func_450(&Var0, 0.16541353f, 0.2669173f);
 					break;
 				
 				case 1:
-					func_450(&Var0, 0.3909774f, 0.4924812f);
+					func_450(&Var0, 0.39097744f, 0.4924812f);
 					break;
 				
 				case 2:
@@ -76926,7 +76926,7 @@ struct<2> func_449(int* iParam0, int iParam1)//Position - 0x5B5D4
 					break;
 				
 				case 3:
-					func_450(&Var0, 0.8421053f, 0.943609f);
+					func_450(&Var0, 0.84210527f, 0.943609f);
 					break;
 			}
 			break;
@@ -76935,11 +76935,11 @@ struct<2> func_449(int* iParam0, int iParam1)//Position - 0x5B5D4
 			switch (iParam1)
 			{
 				case 0:
-					func_450(&Var0, 0.1349693f, 0.2177914f);
+					func_450(&Var0, 0.13496932f, 0.21779141f);
 					break;
 				
 				case 1:
-					func_450(&Var0, 0.3190184f, 0.4018405f);
+					func_450(&Var0, 0.3190184f, 0.40184048f);
 					break;
 				
 				case 2:
@@ -76947,11 +76947,11 @@ struct<2> func_449(int* iParam0, int iParam1)//Position - 0x5B5D4
 					break;
 				
 				case 3:
-					func_450(&Var0, 0.6871166f, 0.7699386f);
+					func_450(&Var0, 0.68711656f, 0.76993865f);
 					break;
 				
 				case 4:
-					func_450(&Var0, 0.8711656f, 0.9539877f);
+					func_450(&Var0, 0.87116563f, 0.9539877f);
 					break;
 			}
 			break;
@@ -76960,15 +76960,15 @@ struct<2> func_449(int* iParam0, int iParam1)//Position - 0x5B5D4
 			switch (iParam1)
 			{
 				case 0:
-					func_450(&Var0, 0.1139896f, 0.1839378f);
+					func_450(&Var0, 0.11398964f, 0.18393782f);
 					break;
 				
 				case 1:
-					func_450(&Var0, 0.26943f, 0.3393782f);
+					func_450(&Var0, 0.26943004f, 0.33937824f);
 					break;
 				
 				case 2:
-					func_450(&Var0, 0.4248705f, 0.4948187f);
+					func_450(&Var0, 0.42487046f, 0.49481866f);
 					break;
 				
 				case 3:
@@ -76976,7 +76976,7 @@ struct<2> func_449(int* iParam0, int iParam1)//Position - 0x5B5D4
 					break;
 				
 				case 4:
-					func_450(&Var0, 0.7357513f, 0.8056995f);
+					func_450(&Var0, 0.7357513f, 0.80569947f);
 					break;
 				
 				case 5:
@@ -85469,7 +85469,7 @@ void func_580(int iParam0, int iParam1, struct<2> Param2, struct<4> Param3, bool
 	int iVar6;
 	
 	Var0 = { Param2 };
-	Var1 = { func_544(69.92413f, 59.74468f) };
+	Var1 = { func_544(69.924126f, 59.744682f) };
 	bVar2 = iParam0 == false;
 	if (iParam1 == 0)
 	{
@@ -85798,92 +85798,92 @@ struct<2> func_593(int iParam0)//Position - 0x653C1
 	switch (iParam0)
 	{
 		case 0:
-			return func_544(629.3171f, 59.74468f);
+			return func_544(629.31714f, 59.744682f);
 		
 		case 1:
-			return func_544(693.4142f, 59.74468f);
+			return func_544(693.41425f, 59.744682f);
 		
 		case 2:
 			switch (Local_629.f_11)
 			{
 				case 0:
-					return func_544(745.8574f, 59.74468f);
+					return func_544(745.85736f, 59.744682f);
 				
 				case 1:
-					return func_544(973.1108f, 59.74468f);
+					return func_544(973.1108f, 59.744682f);
 				
 				case 2:
-					return func_544(710.8953f, 59.74468f);
+					return func_544(710.8953f, 59.744682f);
 				
 				default:
 			}
 			break;
 		
 		case 3:
-			return func_544(757.5114f, 59.74468f);
+			return func_544(757.51135f, 59.744682f);
 		
 		case 4:
-			return func_544(897.3596f, 59.74468f);
+			return func_544(897.3596f, 59.744682f);
 		
 		case 5:
-			return func_544(909.0137f, 59.74468f);
+			return func_544(909.0137f, 59.744682f);
 		
 		case 6:
-			return func_544(268.0425f, 59.74468f);
+			return func_544(268.04248f, 59.744682f);
 		
 		case 7:
-			return func_544(337.9666f, 59.74468f);
+			return func_544(337.9666f, 59.744682f);
 		
 		case 8:
-			return func_544(582.701f, 59.74468f);
+			return func_544(582.70105f, 59.744682f);
 		
 		case 9:
-			return func_544(1305.25f, 59.74468f);
+			return func_544(1305.2504f, 59.744682f);
 		
 		case 10:
-			return func_544(1095.478f, 59.74468f);
+			return func_544(1095.478f, 59.744682f);
 		
 		case 11:
-			return func_544(675.9332f, 59.74468f);
+			return func_544(675.9332f, 59.744682f);
 		
 		case 12:
-			return func_544(693.4142f, 59.74468f);
+			return func_544(693.41425f, 59.744682f);
 		
 		case 13:
-			return func_544(804.1274f, 59.74468f);
+			return func_544(804.12744f, 59.744682f);
 		
 		case 14:
-			return func_544(1177.056f, 59.74468f);
+			return func_544(1177.0562f, 59.744682f);
 		
 		case 15:
-			return func_544(1206.191f, 59.74468f);
+			return func_544(1206.1912f, 59.744682f);
 		
 		case 16:
-			return func_544(1112.959f, 59.74468f);
+			return func_544(1112.959f, 59.744682f);
 		
 		case 17:
-			return func_544(1136.267f, 59.74468f);
+			return func_544(1136.2671f, 59.744682f);
 		
 		case 18:
-			return func_544(1346.039f, 59.74468f);
+			return func_544(1346.0394f, 59.744682f);
 		
 		case 19:
-			return func_544(576.874f, 59.74468f);
+			return func_544(576.874f, 59.744682f);
 		
 		case 20:
-			return func_544(1130.44f, 59.74468f);
+			return func_544(1130.4401f, 59.744682f);
 		
 		case 21:
-			return func_544(804.1274f, 59.74468f);
+			return func_544(804.12744f, 59.744682f);
 		
 		case 22:
-			return func_544(874.0516f, 59.74468f);
+			return func_544(874.0516f, 59.744682f);
 		
 		case 23:
-			return func_544(938.1487f, 59.74468f);
+			return func_544(938.1487f, 59.744682f);
 		
 		case 24:
-			return func_544(1381.001f, 59.74468f);
+			return func_544(1381.0015f, 59.744682f);
 	}
 	return func_544(0f, 0f);
 }
@@ -85896,10 +85896,10 @@ struct<2> func_594(int iParam0)//Position - 0x65656
 			return func_544(960f, 352.5f);
 		
 		case 1:
-			return func_544(960f, 430.8333f);
+			return func_544(960f, 430.83334f);
 		
 		case 2:
-			return func_544(960f, 509.1667f);
+			return func_544(960f, 509.16666f);
 		
 		case 3:
 			return func_544(960f, 587.5f);
@@ -86170,7 +86170,7 @@ void func_607()//Position - 0x65DD2
 
 struct<2> func_608()//Position - 0x65DFE
 {
-	return func_544(120f, 94.64362f);
+	return func_544(120f, 94.643616f);
 }
 
 struct<2> func_609()//Position - 0x65E14
@@ -86352,7 +86352,7 @@ void func_617()//Position - 0x66345
 
 struct<2> func_618()//Position - 0x663C3
 {
-	return func_544(120f, 94.64362f);
+	return func_544(120f, 94.643616f);
 }
 
 struct<2> func_619()//Position - 0x663D9
@@ -86693,7 +86693,7 @@ struct<2> func_647()//Position - 0x66B1C
 
 float func_648()//Position - 0x66B30
 {
-	return 86.75665f;
+	return 86.756645f;
 }
 
 float func_649()//Position - 0x66B3D
@@ -86801,7 +86801,7 @@ struct<2> func_653()//Position - 0x66EDB
 
 float func_654()//Position - 0x66EEF
 {
-	return 110.4176f;
+	return 110.41756f;
 }
 
 float func_655()//Position - 0x66EFC
@@ -89289,7 +89289,7 @@ void func_738()//Position - 0x69DF7
 	}
 	Local_654.f_4.f_6.f_1 = func_718((Local_654.f_4.f_1 / func_588()), 0f, 1f);
 	Local_654.f_4.f_4 = ((Var1.f_0 - (Var2.f_0 / 2f)) + (func_591() * (0.45f + (func_740(((Local_654.f_4.f_6 + 1f) / 2f)) * (0.55f - 0.45f)))));
-	Local_654.f_4.f_4.f_1 = (((Var1.f_1 + (Var2.f_1 / 2f)) - (110.4176f / 2f)) - (((func_588() - 110.4176f) - 100f) * func_739(Local_654.f_4.f_6.f_1)));
+	Local_654.f_4.f_4.f_1 = (((Var1.f_1 + (Var2.f_1 / 2f)) - (110.41756f / 2f)) - (((func_588() - 110.41756f) - 100f) * func_739(Local_654.f_4.f_6.f_1)));
 }
 
 float func_739(float fParam0)//Position - 0x6A34D

@@ -243,10 +243,10 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_35 = 3;
 	fLocal_41 = 50f;
 	fLocal_42 = 2500f;
-	Local_43 = { 409.1539f, -1626.677f, 28.2928f };
-	Local_45 = { 409.2747f, -1623.022f, 28.29278f };
+	Local_43 = { 409.1539f, -1626.6769f, 28.2928f };
+	Local_45 = { 409.27472f, -1623.0219f, 28.29278f };
 	fLocal_46 = 202.6928f;
-	Local_47 = { 415.6071f, -1647.604f, 28.2928f };
+	Local_47 = { 415.6071f, -1647.6045f, 28.2928f };
 	fLocal_48 = 85.7173f;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(18))
 	{
@@ -324,7 +324,7 @@ int func_1()//Position - 0x1BA
 	}
 	else
 	{
-		Var1 = { 408.5002f, -1624.583f, 29.2928f };
+		Var1 = { 408.5002f, -1624.5825f, 29.2928f };
 	}
 	if ((SYSTEM::VDIST2(Var0, Var1) > 10000f || ENTITY::IS_ENTITY_DEAD(iLocal_38, false)) || func_27())
 	{
@@ -1113,7 +1113,7 @@ void func_30()//Position - 0xF6D
 			}
 			if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
 			{
-				if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 407.4285f, -1626.572f, 27.29278f, 412.8245f, -1620.167f, 33.29278f, 6f, false, true, 0))
+				if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 407.4285f, -1626.572f, 27.292778f, 412.82452f, -1620.1666f, 33.292778f, 6f, false, true, 0))
 				{
 					Local_49 = { Local_47 };
 					fLocal_50 = fLocal_48;

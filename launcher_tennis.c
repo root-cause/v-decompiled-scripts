@@ -27338,7 +27338,7 @@ int func_150(struct<3> Param0)//Position - 0x1BCF5
 	int iVar2;
 	int iVar3;
 	
-	fVar0 = 1E+07f;
+	fVar0 = 10000000f;
 	iVar3 = 0;
 	while (iVar3 < 10)
 	{
@@ -27370,22 +27370,22 @@ Vector3 func_151(int iParam0)//Position - 0x1BD39
 			return 487.5186f, -217.7697f, 52.7864f;
 		
 		case 4:
-			return -1223.908f, 338.3685f, 78.9859f;
+			return -1223.9077f, 338.3685f, 78.9859f;
 		
 		case 5:
-			return -1233.088f, 372.8109f, 78.9812f;
+			return -1233.0884f, 372.8109f, 78.9812f;
 		
 		case 6:
-			return -1618.488f, 266.4701f, 58.5552f;
+			return -1618.4875f, 266.4701f, 58.5552f;
 		
 		case 7:
-			return -936.0361f, -1261.967f, 6.9773f;
+			return -936.0361f, -1261.9667f, 6.9773f;
 		
 		case 8:
-			return -1372.016f, -101.2864f, 49.7046f;
+			return -1372.0155f, -101.2864f, 49.7046f;
 		
 		case 9:
-			return -2869.991f, 9.2297f, 10.6083f;
+			return -2869.9915f, 9.2297f, 10.6083f;
 		
 		default:
 	}
@@ -28113,8 +28113,8 @@ void func_184()//Position - 0x1CE37
 			{
 				bLocal_93 = false;
 			}
-			Local_86 = { -1164.958f, -1667.262f, 4.28f };
-			Local_87 = { -1200.919f, -1615.872f, 4.28f };
+			Local_86 = { -1164.9576f, -1667.2617f, 4.28f };
+			Local_87 = { -1200.9193f, -1615.8724f, 4.28f };
 			fLocal_88 = 65.5f;
 			fLocal_89 = 5f;
 			break;
@@ -28124,8 +28124,8 @@ void func_184()//Position - 0x1CE37
 			{
 				bLocal_93 = false;
 			}
-			Local_86 = { 491.2348f, -206.7215f, 52.78849f };
-			Local_87 = { 469.6835f, -266.507f, 53.78639f };
+			Local_86 = { 491.2348f, -206.72147f, 52.788494f };
+			Local_87 = { 469.6835f, -266.50696f, 53.786392f };
 			fLocal_88 = 14f;
 			fLocal_89 = 5f;
 			break;
@@ -28135,8 +28135,8 @@ void func_184()//Position - 0x1CE37
 			{
 				bLocal_93 = false;
 			}
-			Local_86 = { -1218.939f, 321.685f, 79.02952f };
-			Local_87 = { -1228.746f, 355.2947f, 79.98589f };
+			Local_86 = { -1218.9388f, 321.685f, 79.02952f };
+			Local_87 = { -1228.746f, 355.2947f, 79.985886f };
 			fLocal_88 = 20f;
 			fLocal_89 = 2f;
 			break;
@@ -28146,8 +28146,8 @@ void func_184()//Position - 0x1CE37
 			{
 				bLocal_93 = false;
 			}
-			Local_86 = { -1250.003f, 367.6283f, 79.94628f };
-			Local_87 = { -1216.369f, 377.5503f, 80.10213f };
+			Local_86 = { -1250.0034f, 367.62833f, 79.94628f };
+			Local_87 = { -1216.3693f, 377.55026f, 80.10213f };
 			fLocal_88 = 20f;
 			fLocal_89 = 2f;
 			break;
@@ -28157,8 +28157,8 @@ void func_184()//Position - 0x1CE37
 			{
 				bLocal_93 = false;
 			}
-			Local_86 = { -1610.862f, 249.7006f, 60.1168f };
-			Local_87 = { -1626.516f, 282.9467f, 59.83001f };
+			Local_86 = { -1610.8618f, 249.70062f, 60.116802f };
+			Local_87 = { -1626.5161f, 282.9467f, 59.83001f };
 			fLocal_88 = 32f;
 			fLocal_89 = 5f;
 			break;
@@ -28168,8 +28168,8 @@ void func_184()//Position - 0x1CE37
 			{
 				bLocal_93 = false;
 			}
-			Local_86 = { -942.1958f, -1251.207f, 7.1391f };
-			Local_87 = { -930.3892f, -1271.587f, 8.0366f };
+			Local_86 = { -942.1958f, -1251.2074f, 7.1391f };
+			Local_87 = { -930.3892f, -1271.5867f, 8.0366f };
 			fLocal_88 = 12f;
 			fLocal_89 = 5f;
 			break;
@@ -28191,7 +28191,7 @@ void func_184()//Position - 0x1CE37
 			{
 				bLocal_93 = false;
 			}
-			Local_86 = { -2860.762f, 13.3794f, 10.6083f };
+			Local_86 = { -2860.7622f, 13.3794f, 10.6083f };
 			Local_87 = { -2924.066f, 31.5452f, 10.6083f };
 			fLocal_88 = 28f;
 			fLocal_89 = 5f;

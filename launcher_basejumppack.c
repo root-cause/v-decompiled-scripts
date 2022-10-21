@@ -1695,13 +1695,13 @@ Vector3 func_48(int iParam0)//Position - 0x1A3A
 			return -829.3729f, -1289.817f, 4.0005f;
 		
 		case 1:
-			return 1208.2f, 174.3914f, 80.1245f;
+			return 1208.2003f, 174.3914f, 80.1245f;
 		
 		case 2:
-			return 2463.793f, 1509.956f, 35.0349f;
+			return 2463.7935f, 1509.9562f, 35.0349f;
 		
 		case 3:
-			return -274.6549f, 6633.898f, 7.1166f;
+			return -274.6549f, 6633.8984f, 7.1166f;
 		
 		case 4:
 			return -92.35f, -854.3f, 39.571f;
@@ -1719,13 +1719,13 @@ Vector3 func_48(int iParam0)//Position - 0x1A3A
 			return -801.3582f, 298.8532f, 84.949f;
 		
 		case 9:
-			return -1367.595f, 4381.943f, 41.132f;
+			return -1367.5952f, 4381.9434f, 41.132f;
 		
 		case 10:
-			return 2517.931f, 4971.752f, 44.7082f;
+			return 2517.9312f, 4971.7524f, 44.7082f;
 		
 		case 11:
-			return 1054.534f, -179.6562f, 70.3066f;
+			return 1054.5343f, -179.6562f, 70.3066f;
 		
 		case 12:
 			return -767.415f, 4331.792f, 147.682f;
@@ -2108,16 +2108,16 @@ Vector3 func_70(int iParam0)//Position - 0x217F
 	switch (iParam0)
 	{
 		case 0:
-			return -1143.586f, -1859.747f, 208.3878f;
+			return -1143.5859f, -1859.747f, 208.3878f;
 		
 		case 1:
 			return 877.5864f, -436.3322f, 536.9036f;
 		
 		case 2:
-			return 2041.231f, 1978.98f, 585.9358f;
+			return 2041.2306f, 1978.9803f, 585.9358f;
 		
 		case 3:
-			return 405.2326f, 5705.887f, 697.2318f;
+			return 405.2326f, 5705.8867f, 697.2318f;
 		
 		case 4:
 			return -103.8901f, -870.8046f, 298.7574f;
@@ -2126,7 +2126,7 @@ Vector3 func_70(int iParam0)//Position - 0x217F
 			return -118.2569f, -975.1133f, 297.3781f;
 		
 		case 6:
-			return -1237.465f, 4526.661f, 181.7929f;
+			return -1237.4655f, 4526.6606f, 181.7929f;
 		
 		case 7:
 			return -357.7932f, 4107.914f, 314.8059f;
@@ -2135,13 +2135,13 @@ Vector3 func_70(int iParam0)//Position - 0x217F
 			return -809.6324f, 331.3331f, 233.2818f;
 		
 		case 9:
-			return -1286.926f, 3660.203f, 1076.051f;
+			return -1286.9258f, 3660.2034f, 1076.051f;
 		
 		case 10:
-			return 1022.178f, 3975.738f, 1362.533f;
+			return 1022.1777f, 3975.7383f, 1362.5334f;
 		
 		case 11:
-			return 1608.553f, -434.5186f, 1321.916f;
+			return 1608.5526f, -434.5186f, 1321.9155f;
 		
 		case 12:
 			return -756.3533f, 4341.521f, 143.8134f;
@@ -3141,7 +3141,7 @@ Vector3 func_120(int iParam0)//Position - 0x37C2
 	switch (iParam0)
 	{
 		case 6:
-			return -1243.606f, 4543.016f, 185.9527f;
+			return -1243.6058f, 4543.0156f, 185.9527f;
 		
 		default:
 	}

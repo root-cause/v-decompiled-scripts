@@ -358,7 +358,7 @@ void __EntryFunction__()//Position - 0x0
 	fLocal_45 = -1f;
 	Local_85 = { 154.92f, 6841.12f, 19.14f };
 	iLocal_99 = 200;
-	Local_113 = { -1161.199f, 934.5912f, 196.7591f };
+	Local_113 = { -1161.1992f, 934.5912f, 196.7591f };
 	Local_114 = { -1034.6f, 4918.6f, 205.9f };
 	StringCopy(&Local_120, "", 24);
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(11))
@@ -443,7 +443,7 @@ void __EntryFunction__()//Position - 0x0
 											}
 											if (!ENTITY::IS_ENTITY_DEAD(iLocal_54, false))
 											{
-												if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 281.9148f, 6816.345f, 4.3197f, 48.3924f, 6885.921f, 43.0037f, 226.5f, false, true, 0) || ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), Local_74 - Vector(0f, 0f, 7f), 20f, 15f, 50f, false, true, 0))
+												if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 281.9148f, 6816.3447f, 4.3197f, 48.3924f, 6885.9214f, 43.0037f, 226.5f, false, true, 0) || ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), Local_74 - Vector(0f, 0f, 7f), 20f, 15f, 50f, false, true, 0))
 												{
 													func_128();
 													if (HUD::DOES_BLIP_EXIST(iLocal_88))
@@ -645,7 +645,7 @@ void __EntryFunction__()//Position - 0x0
 										STREAMING::REQUEST_MODEL(joaat("granger"));
 										if (STREAMING::HAS_MODEL_LOADED(joaat("S_M_M_HighSec_01")) && STREAMING::HAS_MODEL_LOADED(joaat("granger")))
 										{
-											iLocal_55 = VEHICLE::CREATE_VEHICLE(joaat("granger"), -1155.043f, 942.9685f, 197.4921f, 161.1247f, true, true, false);
+											iLocal_55 = VEHICLE::CREATE_VEHICLE(joaat("granger"), -1155.0431f, 942.9685f, 197.4921f, 161.1247f, true, true, false);
 											ENTITY::SET_ENTITY_LOD_DIST(iLocal_55, 200);
 											VEHICLE::SET_VEHICLE_LOD_MULTIPLIER(iLocal_55, 1.5f);
 											iLocal_53 = PED::CREATE_PED_INSIDE_VEHICLE(iLocal_55, 26, joaat("S_M_M_HighSec_01"), -1, true, true);
@@ -2716,7 +2716,7 @@ int func_50()//Position - 0x2CFC
 	{
 		if (func_10())
 		{
-			if (MISC::GET_DISTANCE_BETWEEN_COORDS(-1014.154f, 4881.411f, 245.0001f, ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::GET_PLAYER_INDEX()), false), true) < 400f)
+			if (MISC::GET_DISTANCE_BETWEEN_COORDS(-1014.1535f, 4881.411f, 245.00009f, ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::GET_PLAYER_INDEX()), false), true) < 400f)
 			{
 				if (!Global_32202)
 				{
@@ -2749,7 +2749,7 @@ int func_51(struct<3> Param0)//Position - 0x2D77
 			{
 				fLocal_45 = SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), Param0);
 			}
-			if (SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), Param0) > (fLocal_45 + 200f) || MISC::GET_DISTANCE_BETWEEN_COORDS(-1014.154f, 4881.411f, 245.0001f, ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::GET_PLAYER_INDEX()), false), true) < 400f)
+			if (SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), Param0) > (fLocal_45 + 200f) || MISC::GET_DISTANCE_BETWEEN_COORDS(-1014.1535f, 4881.411f, 245.00009f, ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::GET_PLAYER_INDEX()), false), true) < 400f)
 			{
 				Global_32200 = 1;
 				return 1;
@@ -3255,7 +3255,7 @@ void func_63()//Position - 0x391B
 				PED::REMOVE_PED_FROM_GROUP(iLocal_51);
 				if (ENTITY::IS_ENTITY_AT_COORD(iLocal_51, Local_113, 100f, 100f, 100f, false, true, 0))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_51, 1740.797f, 4648.756f, 42.6529f, 1f, -1, 0.25f, 0, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_51, 1740.7965f, 4648.7563f, 42.6529f, 1f, -1, 0.25f, 0, 40000f);
 					PED::SET_PED_KEEP_TASK(iLocal_51, true);
 				}
 				func_110();
@@ -4228,7 +4228,7 @@ void func_92()//Position - 0x4740
 			TASK::CLEAR_PED_TASKS_IMMEDIATELY(iLocal_51);
 			PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(iLocal_51, false, false);
 			PED::SET_PED_CAN_RAGDOLL(iLocal_51, true);
-			ENTITY::SET_ENTITY_COORDS(iLocal_51, 164.4963f, 6839.333f, 18.9657f, true, false, false, true);
+			ENTITY::SET_ENTITY_COORDS(iLocal_51, 164.4963f, 6839.3335f, 18.9657f, true, false, false, true);
 			ENTITY::SET_ENTITY_HEADING(iLocal_51, 73.449f);
 		}
 		CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(26.1578f);
@@ -6589,12 +6589,12 @@ void func_152()//Position - 0x7EC9
 	fLocal_77 = 0f;
 	Local_73[0 /*3*/] = { 162.8193f, 6837.257f, 18.9614f };
 	fLocal_78[0] = 297.0056f;
-	Local_73[1 /*3*/] = { 162.5046f, 6841.68f, 18.8426f };
+	Local_73[1 /*3*/] = { 162.5046f, 6841.6797f, 18.8426f };
 	fLocal_78[1] = 193.3866f;
-	Local_74 = { 169.3462f, 6837.805f, 19.1421f };
+	Local_74 = { 169.3462f, 6837.8047f, 19.1421f };
 	fLocal_79 = 265.6862f;
-	Local_75 = { 164.0896f, 6836.923f, 19.03899f };
-	Local_76 = { 168.9638f, 6834.302f, 24.99057f };
+	Local_75 = { 164.08965f, 6836.923f, 19.03899f };
+	Local_76 = { 168.9638f, 6834.3022f, 24.99057f };
 	iLocal_60 = 1;
 }
 
@@ -7751,7 +7751,7 @@ int func_170(struct<3> Param0, int iParam1, bool bParam2, bool bParam3, bool bPa
 		}
 		if (INTERIOR::IS_VALID_INTERIOR(INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID())))
 		{
-			if ((INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(377.153f, -717.567f, 10.0536f) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(320.9934f, 265.2515f, 82.1221f)) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(-1425.564f, -244.3f, 15.8053f))
+			if ((INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(377.153f, -717.567f, 10.0536f) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(320.9934f, 265.2515f, 82.1221f)) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(-1425.5645f, -244.3f, 15.8053f))
 			{
 				return 0;
 			}
@@ -7768,7 +7768,7 @@ int func_170(struct<3> Param0, int iParam1, bool bParam2, bool bParam3, bool bPa
 		{
 			if (iParam1 != 30)
 			{
-				if (SYSTEM::VDIST2(Var1, -61.2745f, -1100.468f, 25.3752f) < 176400f)
+				if (SYSTEM::VDIST2(Var1, -61.2745f, -1100.4675f, 25.3752f) < 176400f)
 				{
 					return 0;
 				}

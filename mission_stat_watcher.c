@@ -1253,7 +1253,7 @@ void func_26(var uParam0, float fParam1, bool bParam2)//Position - 0x165E
 	fVar3 = 0f;
 	if (uParam0->f_571)
 	{
-		fVar3 = (((0.1388889f + func_50((2f * 2f))) * uParam0->f_572) * (1f - uParam0->f_548));
+		fVar3 = (((0.13888888f + func_50((2f * 2f))) * uParam0->f_572) * (1f - uParam0->f_548));
 		fVar2 = (fVar2 + (3f * fVar3));
 	}
 	if (uParam0->f_548 != 0f)
@@ -1449,7 +1449,7 @@ void func_26(var uParam0, float fParam1, bool bParam2)//Position - 0x165E
 	{
 		fVar12 = func_25((fVar11 / (0.6f * func_50(25f))), 0f, 1f);
 		func_47();
-		GRAPHICS::DRAW_RECT(0.5f, (fVar1 - (func_50((2f - 0.5f)) - 0.001388889f)), fVar6, func_41(1f), iVar13, iVar14, iVar15, SYSTEM::ROUND((fVar12 * IntToFloat(iVar16))), false);
+		GRAPHICS::DRAW_RECT(0.5f, (fVar1 - (func_50((2f - 0.5f)) - 0.0013888889f)), fVar6, func_41(1f), iVar13, iVar14, iVar15, SYSTEM::ROUND((fVar12 * IntToFloat(iVar16))), false);
 	}
 	else
 	{
@@ -1617,9 +1617,9 @@ void func_26(var uParam0, float fParam1, bool bParam2)//Position - 0x165E
 						HUD::GET_HUD_COLOUR(108, &iVar25, &iVar26, &iVar27, &iVar28);
 						break;
 				}
-				fVar29 = (0.001388889f * 5f);
+				fVar29 = (0.0013888889f * 5f);
 				fVar30 = ((0.00078125f * 16f) * 2f);
-				fVar31 = ((0.001388889f * 16f) * 2f);
+				fVar31 = ((0.0013888889f * 16f) * 2f);
 				fVar32 = ((fVar21 + func_27(4f)) - 0.006f);
 				fVar33 = ((fVar1 + func_50(10f)) + fVar29);
 				if (uParam0->f_560 == -1)
@@ -2182,7 +2182,7 @@ void func_39(int iParam0, int iParam1, float fParam2, float fParam3, char* sPara
 	func_47();
 	fVar1 = 0f;
 	fVar2 = (8f * 0.00078125f);
-	fVar3 = (16f * 0.001388889f);
+	fVar3 = (16f * 0.0013888889f);
 	iVar4 = 93;
 	iVar5 = 182;
 	iVar6 = 229;
@@ -2211,9 +2211,9 @@ void func_39(int iParam0, int iParam1, float fParam2, float fParam3, char* sPara
 				fVar1 = HUD::END_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT(false);
 			}
 			fVar1 = (fVar1 - (fVar1 % 0.00078125f));
-			GRAPHICS::DRAW_SPRITE("CommonMenu", "BettingBox_Left", (fParam2 - fVar1), ((fParam3 + (fVar3 * 0.6f)) + (0.001388889f * 2f)), fVar2, fVar3, 0f, iVar4, iVar5, iVar6, 255, false, 0);
-			GRAPHICS::DRAW_SPRITE("CommonMenu", "BettingBox_Centre", ((fParam2 - (fVar1 * 0.5f)) - (0.00078125f * 2f)), ((fParam3 + (fVar3 * 0.6f)) + (0.001388889f * 2f)), (fVar1 - (fVar2 * 0.5f)), fVar3, 0f, iVar4, iVar5, iVar6, 255, false, 0);
-			GRAPHICS::DRAW_SPRITE("CommonMenu", "BettingBox_Right", (fParam2 - (0.00078125f * 4f)), ((fParam3 + (fVar3 * 0.6f)) + (0.001388889f * 2f)), fVar2, fVar3, 0f, iVar4, iVar5, iVar6, 255, false, 0);
+			GRAPHICS::DRAW_SPRITE("CommonMenu", "BettingBox_Left", (fParam2 - fVar1), ((fParam3 + (fVar3 * 0.6f)) + (0.0013888889f * 2f)), fVar2, fVar3, 0f, iVar4, iVar5, iVar6, 255, false, 0);
+			GRAPHICS::DRAW_SPRITE("CommonMenu", "BettingBox_Centre", ((fParam2 - (fVar1 * 0.5f)) - (0.00078125f * 2f)), ((fParam3 + (fVar3 * 0.6f)) + (0.0013888889f * 2f)), (fVar1 - (fVar2 * 0.5f)), fVar3, 0f, iVar4, iVar5, iVar6, 255, false, 0);
+			GRAPHICS::DRAW_SPRITE("CommonMenu", "BettingBox_Right", (fParam2 - (0.00078125f * 4f)), ((fParam3 + (fVar3 * 0.6f)) + (0.0013888889f * 2f)), fVar2, fVar3, 0f, iVar4, iVar5, iVar6, 255, false, 0);
 			HUD::SET_TEXT_SCALE(1f, func_40(14f));
 			break;
 	}
@@ -2433,7 +2433,7 @@ float func_49()//Position - 0x3454
 
 float func_50(float fParam0)//Position - 0x3468
 {
-	return (fParam0 * 0.001388889f);
+	return (fParam0 * 0.0013888889f);
 }
 
 int func_51(int iParam0)//Position - 0x3478

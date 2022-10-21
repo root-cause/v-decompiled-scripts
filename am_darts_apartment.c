@@ -6321,7 +6321,7 @@ void func_73(var uParam0, int iParam1, var uParam2, var uParam3, int iParam4)//P
 	switch (*uParam0)
 	{
 		case 0:
-			*uParam2 = { 2956.984f, -3866.815f, 140f };
+			*uParam2 = { 2956.9841f, -3866.8152f, 140f };
 			switch (Global_4718592.f_162543)
 			{
 				case 3:
@@ -6334,7 +6334,7 @@ void func_73(var uParam0, int iParam1, var uParam2, var uParam3, int iParam4)//P
 		case 1:
 			if (iParam4 == 0 || (func_77(uParam0->f_1[iParam4]) && iParam4 == 1))
 			{
-				*uParam2 = { 2966.769f, -3874.841f, 140.0011f };
+				*uParam2 = { 2966.7688f, -3874.8408f, 140.0011f };
 				*uParam3 = { 0f, 0f, 48f };
 			}
 			else
@@ -6535,18 +6535,18 @@ Vector3 func_75(var uParam0, int iParam1)//Position - 0x8931
 			switch (iParam1)
 			{
 				case 0:
-					return 2828.92f, -3901.475f, 139.3957f;
+					return 2828.9197f, -3901.4749f, 139.3957f;
 					break;
 				
 				case 1:
-					return 2829.51f, -3902.015f, 139.2491f;
+					return 2829.51f, -3902.0154f, 139.2491f;
 					break;
 				
 				case 2:
-					return 2828.365f, -3900.967f, 139.2491f;
+					return 2828.3645f, -3900.9666f, 139.2491f;
 					break;
 			}
-			return 2828.92f, -3901.475f, 139.3957f;
+			return 2828.9197f, -3901.4749f, 139.3957f;
 		}
 		switch (iParam1)
 		{
@@ -6560,13 +6560,13 @@ Vector3 func_75(var uParam0, int iParam1)//Position - 0x8931
 				return 2960.217f, -3874.703f, 140.082f;
 			
 			case 3:
-				return 2960.612f, -3873.702f, 140.0732f;
+				return 2960.6116f, -3873.702f, 140.0732f;
 			
 			case 4:
-				return 2965.272f, -3869.305f, 140.082f;
+				return 2965.2717f, -3869.3054f, 140.082f;
 			
 			case 5:
-				return 2959.643f, -3871.999f, 140.082f;
+				return 2959.6426f, -3871.9988f, 140.082f;
 			
 			case 6:
 				return 2964.449f, -3869.2f, 140.082f;
@@ -6587,7 +6587,7 @@ Vector3 func_75(var uParam0, int iParam1)//Position - 0x8931
 				return 2962.806f, -3869.486f, 140.082f;
 			
 			case 12:
-				return 2960.431f, -3871.78f, 140.082f;
+				return 2960.4307f, -3871.78f, 140.082f;
 			
 			case 13:
 				return 2959.737f, -3875.456f, 140.082f;
@@ -6596,11 +6596,11 @@ Vector3 func_75(var uParam0, int iParam1)//Position - 0x8931
 				return 2961.832f, -3870.305f, 140.082f;
 			
 			case 15:
-				return 2957.675f, -3874.198f, 140.0816f;
+				return 2957.6748f, -3874.1975f, 140.0816f;
 			
 			default:
 		}
-		return 2828.286f, -3904.493f, 139.01f;
+		return 2828.2856f, -3904.493f, 139.01f;
 	}
 	return 418.9326f, -979.3876f, -100.0042f;
 }
@@ -51139,7 +51139,7 @@ int func_451(int iParam0)//Position - 0x3A64A
 			break;
 		
 		case 2:
-			return PED::CREATE_SYNCHRONIZED_SCENE(2708.55f, -358.2208f, -54.6002f, 0f, 0f, 7.56f, 2);
+			return PED::CREATE_SYNCHRONIZED_SCENE(2708.5498f, -358.2208f, -54.6002f, 0f, 0f, 7.56f, 2);
 			break;
 	}
 	return -1;
@@ -51166,33 +51166,33 @@ void func_454(int iParam0, var uParam1, bool bParam2)//Position - 0x3A704
 		case 0:
 			if (bParam2)
 			{
-				*uParam1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1118.088f, -3159.119f, -36.3843f, -3.1143f, 0f, 45.6699f, 47.0142f, false, 2);
+				*uParam1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1118.0883f, -3159.119f, -36.3843f, -3.1143f, 0f, 45.6699f, 47.0142f, false, 2);
 			}
 			else
 			{
-				*uParam1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1118.082f, -3158.723f, -36.3498f, -5.6008f, 0f, 45.8057f, 47.0142f, false, 2);
+				*uParam1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1118.0822f, -3158.723f, -36.3498f, -5.6008f, 0f, 45.8057f, 47.0142f, false, 2);
 			}
 			break;
 		
 		case 1:
 			if (bParam2)
 			{
-				*uParam1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1002.847f, -3164.953f, -33.4244f, -3.567f, 0f, 112.2157f, 40.3693f, false, 2);
+				*uParam1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1002.8469f, -3164.9526f, -33.4244f, -3.567f, 0f, 112.2157f, 40.3693f, false, 2);
 			}
 			else
 			{
-				*uParam1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1002.333f, -3164.718f, -33.4356f, -1.6441f, 0f, 122.4329f, 40.3693f, false, 2);
+				*uParam1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1002.3334f, -3164.7175f, -33.4356f, -1.6441f, 0f, 122.4329f, 40.3693f, false, 2);
 			}
 			break;
 		
 		case 2:
 			if (bParam2)
 			{
-				*uParam1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 2710.467f, -359.8044f, -54.4121f, -3.567f, 0f, 112.2157f, 40.3693f, false, 2);
+				*uParam1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 2710.4666f, -359.8044f, -54.4121f, -3.567f, 0f, 112.2157f, 40.3693f, false, 2);
 			}
 			else
 			{
-				*uParam1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 2709.953f, -359.5693f, -54.4233f, -1.6441f, 0f, 122.4329f, 40.3693f, false, 2);
+				*uParam1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 2709.9531f, -359.5693f, -54.4233f, -1.6441f, 0f, 122.4329f, 40.3693f, false, 2);
 			}
 			break;
 	}
@@ -62628,7 +62628,7 @@ void func_635(int* iParam0)//Position - 0x46F7E
 {
 	struct<3> Var0;
 	
-	Var0 = { -1668.044f, -1056.45f, 13.1063f };
+	Var0 = { -1668.0444f, -1056.4501f, 13.1063f };
 	if (ENTITY::DOES_ENTITY_EXIST(*iParam0))
 	{
 		ENTITY::SET_ENTITY_COORDS(*iParam0, Var0, true, false, false, true);
@@ -64364,9 +64364,9 @@ void func_705(struct<3> Param0, float fParam1)//Position - 0x4909F
 	Var0 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Param0, fParam1, Var11) };
 	Var2 = { fVar13, 0f, (fParam1 - fVar12) };
 	Var4 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Param0, fParam1, Var14) };
-	Var5 = { 0.8351f, -0.0048f, (fParam1 - 186.5073f) };
+	Var5 = { 0.8351f, -0.0048f, (fParam1 - 186.50734f) };
 	Var15 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Param0, fParam1, Var16) };
-	Var6 = { 0.8351f, -0.0048f, (fParam1 - 186.5073f) };
+	Var6 = { 0.8351f, -0.0048f, (fParam1 - 186.50734f) };
 	iLocal_191 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var0, Var2, fVar7, false, 2);
 	iLocal_192 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var1, Var3, fVar7, false, 2);
 	iLocal_193 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), Var4, Var5, 65f, false, 2);
@@ -64375,7 +64375,7 @@ void func_705(struct<3> Param0, float fParam1)//Position - 0x4909F
 	iLocal_196 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 0f, 0f, 0f, 0f, 0f, 0f, 65f, false, 2);
 	iLocal_198 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 0f, 0f, 0f, 0f, 0f, 0f, 65f, false, 2);
 	iLocal_199 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 0f, 0f, 0f, 0f, 0f, 0f, 65f, false, 2);
-	iLocal_197 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1996.235f, 3048.456f, 48.0237f, -3.4831f, 0.0223f, 60.6925f, 38.1f, false, 2);
+	iLocal_197 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 1996.235f, 3048.4558f, 48.0237f, -3.4831f, 0.0223f, 60.6925f, 38.1f, false, 2);
 	CAM::SET_CAM_FOV(iLocal_193, 43.35f);
 	CAM::SET_CAM_FOV(iLocal_194, 42.35f);
 	CAM::SHAKE_CAM(iLocal_193, "HAND_SHAKE", 0.1f);
@@ -73916,11 +73916,11 @@ Vector3 func_888(int iParam0, bool bParam1)//Position - 0x524E3
 		case 2:
 			if (bParam1)
 			{
-				return 2708.21f, -360.2018f, -56.0417f;
+				return 2708.2097f, -360.2018f, -56.0417f;
 			}
 			else
 			{
-				return 2708.9f, -360.2018f, -56.0417f;
+				return 2708.8997f, -360.2018f, -56.0417f;
 			}
 			break;
 	}
@@ -76893,52 +76893,52 @@ void func_973(var uParam0, int iParam1)//Position - 0x55725
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = { 1119.88f, -3157.026f, -36.3397f };
+			*uParam0 = { 1119.8805f, -3157.0261f, -36.3397f };
 			uParam0->f_3 = -90f;
 			uParam0->f_4 = { 1119.811f, -3157.026f, -36.34f };
 			uParam0->f_4.f_3 = { 9.1023f, 0f, -90.762f };
 			uParam0->f_4.f_6 = { 1.82f, 1.328f, 1f };
 			uParam0->f_13 = { 1119.024f, -3157.138f, -36.62417f };
 			uParam0->f_13.f_3 = { 0f, 0f, -63.36f };
-			uParam0->f_29 = { 1119.764f, -3155.511f, -36.1562f };
+			uParam0->f_29 = { 1119.7642f, -3155.5112f, -36.1562f };
 			uParam0->f_29.f_3 = { -9.48f, 0f, 121.5339f };
-			uParam0->f_29.f_9 = { 1105.48f, -3155.668f, -38.0624f };
+			uParam0->f_29.f_9 = { 1105.4803f, -3155.668f, -38.0624f };
 			uParam0->f_29.f_9.f_3 = { 9.1023f, 0f, -90.762f };
-			uParam0->f_22 = { 1107.14f, -3155.748f, -36.2049f };
+			uParam0->f_22 = { 1107.1398f, -3155.7478f, -36.2049f };
 			uParam0->f_22.f_3 = { -4.3824f, 0f, 88.2424f };
 			uParam0->f_22.f_6 = 50f;
 			break;
 		
 		case 1:
-			*uParam0 = { 1000.935f, -3162.815f, -33.4827f };
+			*uParam0 = { 1000.935f, -3162.8154f, -33.4827f };
 			uParam0->f_3 = 0f;
-			uParam0->f_4 = { 1003.906f, -3162.808f, -33.4827f };
+			uParam0->f_4 = { 1003.9058f, -3162.8079f, -33.4827f };
 			uParam0->f_4.f_3 = { 9.1023f, 0f, 0f };
 			uParam0->f_4.f_6 = { 1.82f, 1.328f, 1f };
 			uParam0->f_13 = { 1003.857f, -3163.348f, -33.66635f };
 			uParam0->f_13.f_3 = { 0f, 0f, 4.32f };
-			uParam0->f_29 = { 1003.604f, -3166.181f, -35.0826f };
+			uParam0->f_29 = { 1003.6043f, -3166.181f, -35.0826f };
 			uParam0->f_29.f_3 = { 9.1023f, 0f, -90.762f };
-			uParam0->f_29.f_9 = { 1003.604f, -3166.181f, -35.0826f };
+			uParam0->f_29.f_9 = { 1003.6043f, -3166.181f, -35.0826f };
 			uParam0->f_29.f_9.f_3 = { 9.1023f, 0f, -90.762f };
-			uParam0->f_22 = { 1003.845f, -3165.825f, -33.4828f };
+			uParam0->f_22 = { 1003.8449f, -3165.8247f, -33.4828f };
 			uParam0->f_22.f_3 = { -0.0504f, 0f, -0.6806f };
 			uParam0->f_22.f_6 = 50f;
 			break;
 		
 		case 2:
-			*uParam0 = { 2708.555f, -357.6672f, -54.4704f };
+			*uParam0 = { 2708.5547f, -357.6672f, -54.4704f };
 			uParam0->f_3 = 0f;
-			uParam0->f_4 = { 2711.525f, -357.6597f, -54.4704f };
+			uParam0->f_4 = { 2711.5254f, -357.6597f, -54.4704f };
 			uParam0->f_4.f_3 = { 9.1023f, 0f, 0f };
 			uParam0->f_4.f_6 = { 1.82f, 1.328f, 1f };
-			uParam0->f_13 = { 2711.477f, -358.1998f, -54.65405f };
+			uParam0->f_13 = { 2711.4768f, -358.1998f, -54.65405f };
 			uParam0->f_13.f_3 = { 0f, 0f, 4.32f };
 			uParam0->f_29 = { 2711.224f, -361.0327f, -56.0703f };
 			uParam0->f_29.f_3 = { 9.1023f, 0f, -90.762f };
 			uParam0->f_29.f_9 = { 2711.224f, -361.0327f, -56.0703f };
 			uParam0->f_29.f_9.f_3 = { 9.1023f, 0f, -90.762f };
-			uParam0->f_22 = { 2711.465f, -360.6765f, -54.4705f };
+			uParam0->f_22 = { 2711.4646f, -360.6765f, -54.4705f };
 			uParam0->f_22.f_3 = { -0.0504f, 0f, -0.6806f };
 			uParam0->f_22.f_6 = 50f;
 			break;

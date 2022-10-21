@@ -222,7 +222,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x233
 			{
 				if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
 				{
-					TASK::TASK_PLANE_MISSION(*uParam1, *iParam0, 0, 0, ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 8, 50f, -1f, 30f, 1.401298E-43f, 7.006492E-44f, true);
+					TASK::TASK_PLANE_MISSION(*uParam1, *iParam0, 0, 0, ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 8, 50f, -1f, 30f, 1.4E-43f, 7E-44f, true);
 				}
 			}
 		}
@@ -241,14 +241,14 @@ void func_3(bool bParam0)//Position - 0x2B4
 				{
 					if ((!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()) && !ENTITY::IS_ENTITY_DEAD(iLocal_51[0], false)) && !ENTITY::IS_ENTITY_DEAD(iLocal_49[0], false))
 					{
-						TASK::TASK_PLANE_MISSION(iLocal_51[0], iLocal_49[0], 0, 0, ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 8, 50f, -1f, 90f, 1.401298E-43f, 7.006492E-44f, true);
+						TASK::TASK_PLANE_MISSION(iLocal_51[0], iLocal_49[0], 0, 0, ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 8, 50f, -1f, 90f, 1.4E-43f, 7E-44f, true);
 					}
 				}
 				else if (bParam0)
 				{
 					if ((!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()) && !ENTITY::IS_ENTITY_DEAD(iLocal_51[0], false)) && !ENTITY::IS_ENTITY_DEAD(iLocal_49[0], false))
 					{
-						TASK::TASK_PLANE_MISSION(iLocal_51[0], iLocal_49[0], 0, 0, ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 8, 50f, -1f, 90f, 1.401298E-43f, 7.006492E-44f, true);
+						TASK::TASK_PLANE_MISSION(iLocal_51[0], iLocal_49[0], 0, 0, ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 8, 50f, -1f, 90f, 1.4E-43f, 7E-44f, true);
 					}
 				}
 			}
@@ -261,14 +261,14 @@ void func_3(bool bParam0)//Position - 0x2B4
 				{
 					if ((!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()) && !ENTITY::IS_ENTITY_DEAD(iLocal_51[2], false)) && !ENTITY::IS_ENTITY_DEAD(iLocal_49[2], false))
 					{
-						TASK::TASK_PLANE_MISSION(iLocal_51[2], iLocal_49[2], 0, 0, ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 8, 50f, -1f, 90f, 1.401298E-43f, 7.006492E-44f, true);
+						TASK::TASK_PLANE_MISSION(iLocal_51[2], iLocal_49[2], 0, 0, ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 8, 50f, -1f, 90f, 1.4E-43f, 7E-44f, true);
 					}
 				}
 				else if (bParam0)
 				{
 					if ((!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()) && !ENTITY::IS_ENTITY_DEAD(iLocal_51[2], false)) && !ENTITY::IS_ENTITY_DEAD(iLocal_49[2], false))
 					{
-						TASK::TASK_PLANE_MISSION(iLocal_51[2], iLocal_49[2], 0, 0, ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 8, 50f, -1f, 90f, 1.401298E-43f, 7.006492E-44f, true);
+						TASK::TASK_PLANE_MISSION(iLocal_51[2], iLocal_49[2], 0, 0, ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 8, 50f, -1f, 90f, 1.4E-43f, 7E-44f, true);
 					}
 				}
 			}
@@ -283,11 +283,11 @@ void func_4()//Position - 0x493
 	switch (iLocal_66)
 	{
 		case 0:
-			Local_53[0 /*3*/] = { -1542.113f, -3023.802f, 23.2538f };
-			Local_53[1 /*3*/] = { -3089.888f, -1960.075f, 313.559f };
-			Local_53[2 /*3*/] = { -1037.638f, -3316.12f, 23.2475f };
-			Local_53[3 /*3*/] = { 451.174f, -4009.46f, 135.1171f };
-			Local_54 = { -1612.174f, -2688.442f, 12.9444f };
+			Local_53[0 /*3*/] = { -1542.1127f, -3023.8025f, 23.2538f };
+			Local_53[1 /*3*/] = { -3089.888f, -1960.0751f, 313.559f };
+			Local_53[2 /*3*/] = { -1037.6381f, -3316.1196f, 23.2475f };
+			Local_53[3 /*3*/] = { 451.174f, -4009.4602f, 135.1171f };
+			Local_54 = { -1612.1736f, -2688.442f, 12.9444f };
 			if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 			{
 				if ((PED::IS_PED_IN_ANY_HELI(PLAYER::PLAYER_PED_ID()) || PED::IS_PED_IN_ANY_PLANE(PLAYER::PLAYER_PED_ID())) || PLAYER::IS_PLAYER_WANTED_LEVEL_GREATER(PLAYER::PLAYER_ID(), 0))
@@ -632,7 +632,7 @@ void func_7()//Position - 0xBF2
 			{
 				if (!VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_50))
 				{
-					if ((ENTITY::IS_ENTITY_OCCLUDED(iLocal_50) && !CAM::IS_SPHERE_VISIBLE(-1602.086f, -2674.039f, 12.9444f, 50f)) && SYSTEM::VDIST2(Var0, ENTITY::GET_ENTITY_COORDS(iLocal_50, true)) > 62500f)
+					if ((ENTITY::IS_ENTITY_OCCLUDED(iLocal_50) && !CAM::IS_SPHERE_VISIBLE(-1602.0862f, -2674.0386f, 12.9444f, 50f)) && SYSTEM::VDIST2(Var0, ENTITY::GET_ENTITY_COORDS(iLocal_50, true)) > 62500f)
 					{
 						iLocal_61 = 1;
 					}

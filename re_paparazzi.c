@@ -281,14 +281,14 @@ void __EntryFunction__()//Position - 0x0
 	Local_159 = { 270.0174f, 139.1181f, 103.2195f };
 	Local_160 = { 265.4954f, 144.6143f, 103.3326f };
 	sLocal_177 = "left_";
-	Local_178 = { 261.9341f, 126.2429f, 95.15405f };
-	Local_179 = { 270.6759f, 152.4763f, 109.2356f };
+	Local_178 = { 261.93405f, 126.24293f, 95.15405f };
+	Local_179 = { 270.67587f, 152.47626f, 109.235565f };
 	fLocal_180 = 16f;
-	Local_181 = { 261.9341f, 126.2429f, 107.6541f };
-	Local_182 = { 248.354f, 87.01792f, 92.389f };
+	Local_181 = { 261.93405f, 126.24293f, 107.65405f };
+	Local_182 = { 248.35399f, 87.01792f, 92.389f };
 	fLocal_183 = 16f;
-	Local_184 = { 256.6779f, 126.573f, 99.54784f };
-	Local_185 = { 266.4471f, 123.412f, 105.6728f };
+	Local_184 = { 256.6779f, 126.57297f, 99.547844f };
+	Local_185 = { 266.44714f, 123.411964f, 105.67284f };
 	fLocal_186 = 5.75f;
 	Local_187 = { 260.242f, 127.423f, 101.65f };
 	Local_188 = { 0f, 0f, -20f };
@@ -387,7 +387,7 @@ void __EntryFunction__()//Position - 0x0
 								func_280();
 							}
 						}
-						else if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 281.0074f, 192.4805f, 58.08817f, 228.8291f, 50.88667f, 111.6104f, 82.75f, false, true, 0))
+						else if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 281.00742f, 192.48048f, 58.088165f, 228.82909f, 50.88667f, 111.61044f, 82.75f, false, true, 0))
 						{
 							func_190(1);
 							iLocal_121 = func_189(iLocal_67, 0, 145);
@@ -498,7 +498,7 @@ void __EntryFunction__()//Position - 0x0
 			iVar1 = func_30();
 			if (iVar1 != -1 && (iLocal_60 || func_24() != 0))
 			{
-				if ((!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 243.6443f, 123.7193f, 97.59898f, 262.4353f, 116.8746f, 107.4762f, 32.25f, false, true, 0) && (MISC::GET_GAME_TIMER() - iLocal_145) > 5000) && !PED::IS_PED_INJURED(Local_109[iVar1 /*18*/]))
+				if ((!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 243.64427f, 123.71928f, 97.598976f, 262.43533f, 116.87461f, 107.476166f, 32.25f, false, true, 0) && (MISC::GET_GAME_TIMER() - iLocal_145) > 5000) && !PED::IS_PED_INJURED(Local_109[iVar1 /*18*/]))
 				{
 					if (SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(Local_109[iVar1 /*18*/], true), Local_52) < (30.5f * 30.5f) && SYSTEM::VDIST2(Local_53, Local_52) > (22.5f * 22.5f))
 					{
@@ -6775,7 +6775,7 @@ void func_159()//Position - 0x8AB3
 		{
 			if (func_73() && func_178(1, 1, 1))
 			{
-				if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(iLocal_70, 225.5938f, 681.1489f, 188.4262f, 232.02f, 681.3113f, 191.9843f, 8.75f, false, true, 0) || ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), 226.6788f, 681.0637f, 189f, 1f, 1f, 2.5f, true, true, 0))
+				if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(iLocal_70, 225.59377f, 681.14886f, 188.4262f, 232.01999f, 681.3113f, 191.98428f, 8.75f, false, true, 0) || ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), 226.67882f, 681.06366f, 189f, 1f, 1f, 2.5f, true, true, 0))
 				{
 					SYSTEM::SETTIMERA(0);
 					iLocal_130 = 100;
@@ -6796,7 +6796,7 @@ void func_159()//Position - 0x8AB3
 		{
 			if (func_73() && func_178(1, 1, 1))
 			{
-				if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(iLocal_70, 225.5938f, 681.1489f, 188.4262f, 232.02f, 681.3113f, 191.9843f, 8.75f, false, true, 0) || ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), 226.6788f, 681.0637f, 189f, 1f, 1f, 2.5f, true, true, 0))
+				if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(iLocal_70, 225.59377f, 681.14886f, 188.4262f, 232.01999f, 681.3113f, 191.98428f, 8.75f, false, true, 0) || ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), 226.67882f, 681.06366f, 189f, 1f, 1f, 2.5f, true, true, 0))
 				{
 					SYSTEM::SETTIMERA(0);
 					iLocal_130 = 100;
@@ -7661,7 +7661,7 @@ void func_181()//Position - 0x9B30
 			
 			case 1:
 				func_183();
-				if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(iLocal_67, 243.5571f, 77.51265f, 90.08002f, 268.2083f, 144.2189f, 109.853f, 23.25f, false, true, 0))
+				if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(iLocal_67, 243.55705f, 77.51265f, 90.080025f, 268.2083f, 144.21886f, 109.853004f, 23.25f, false, true, 0))
 				{
 					iLocal_130++;
 					iLocal_131 = MISC::GET_GAME_TIMER();
@@ -7922,7 +7922,7 @@ void func_181()//Position - 0x9B30
 				}
 				if (Global_3 || bLocal_56)
 				{
-					if (ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), 244.2175f, 441.0128f, 126.2767f, 33.5f, 40f, 14.75f, false, true, 0) && func_73())
+					if (ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), 244.21753f, 441.01282f, 126.27671f, 33.5f, 40f, 14.75f, false, true, 0) && func_73())
 					{
 						iLocal_47 = 4;
 						iLocal_66 = MISC::GET_GAME_TIMER();
@@ -8415,7 +8415,7 @@ void func_184()//Position - 0xA763
 					{
 						if (!Global_3 && !bLocal_56)
 						{
-							if ((PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), iLocal_70, false) && !PED::IS_PED_IN_VEHICLE(iLocal_67, iLocal_70, true)) && !ENTITY::IS_ENTITY_IN_ANGLED_AREA(iLocal_70, 225.1779f, 125.6632f, 113.6647f, 262.3032f, 111.8771f, 97.16339f, 37f, false, true, 0))
+							if ((PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), iLocal_70, false) && !PED::IS_PED_IN_VEHICLE(iLocal_67, iLocal_70, true)) && !ENTITY::IS_ENTITY_IN_ANGLED_AREA(iLocal_70, 225.17787f, 125.66318f, 113.66467f, 262.30322f, 111.87705f, 97.16339f, 37f, false, true, 0))
 							{
 								if (bLocal_129)
 								{
@@ -11030,7 +11030,7 @@ int func_237(struct<3> Param0, int iParam1, bool bParam2, bool bParam3, bool bPa
 		}
 		if (INTERIOR::IS_VALID_INTERIOR(INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID())))
 		{
-			if ((INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(377.153f, -717.567f, 10.0536f) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(320.9934f, 265.2515f, 82.1221f)) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(-1425.564f, -244.3f, 15.8053f))
+			if ((INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(377.153f, -717.567f, 10.0536f) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(320.9934f, 265.2515f, 82.1221f)) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(-1425.5645f, -244.3f, 15.8053f))
 			{
 				return 0;
 			}
@@ -11047,7 +11047,7 @@ int func_237(struct<3> Param0, int iParam1, bool bParam2, bool bParam3, bool bPa
 		{
 			if (iParam1 != 30)
 			{
-				if (SYSTEM::VDIST2(Var1, -61.2745f, -1100.468f, 25.3752f) < 176400f)
+				if (SYSTEM::VDIST2(Var1, -61.2745f, -1100.4675f, 25.3752f) < 176400f)
 				{
 					return 0;
 				}

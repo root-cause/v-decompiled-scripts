@@ -317,8 +317,8 @@ void __EntryFunction__()//Position - 0x0
 					PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(iLocal_46, false, false);
 					ENTITY::FREEZE_ENTITY_POSITION(iLocal_46, true);
 					func_28(&uLocal_51, 3, iLocal_46, "LESTER", 0, 1);
-					iLocal_47 = OBJECT::CREATE_OBJECT(joaat("prop_cs_walking_stick"), 706.9874f, -967.0945f, 30.4f, false, false, false);
-					ENTITY::SET_ENTITY_COORDS(iLocal_47, 706.9874f, -967.0945f, 30.4f, true, false, false, true);
+					iLocal_47 = OBJECT::CREATE_OBJECT(joaat("prop_cs_walking_stick"), 706.98737f, -967.09454f, 30.4f, false, false, false);
+					ENTITY::SET_ENTITY_COORDS(iLocal_47, 706.98737f, -967.09454f, 30.4f, true, false, false, true);
 					ENTITY::SET_ENTITY_ROTATION(iLocal_47, 90f, 0f, 160f, 2, true);
 					ENTITY::SET_ENTITY_INVINCIBLE(iLocal_47, true);
 					ENTITY::SET_ENTITY_PROOFS(iLocal_47, true, true, true, true, true, false, false, false);
@@ -358,7 +358,7 @@ void __EntryFunction__()//Position - 0x0
 				}
 				if (Global_78583 == 86)
 				{
-					if (!Global_113381 == 1 && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 718.0749f, -976.0472f, 22.91482f, 718.0593f, -979.455f, 27.1191f, 5.75f, false, true, 0))
+					if (!Global_113381 == 1 && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 718.0749f, -976.0472f, 22.914824f, 718.05927f, -979.45496f, 27.119097f, 5.75f, false, true, 0))
 					{
 						func_3(7, 1);
 						Global_113377 = 0;

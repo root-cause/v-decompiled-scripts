@@ -5434,7 +5434,7 @@ bool func_234(struct<3> Param0, struct<3> Param1, struct<3> Param2, float fParam
 	struct<3> Var1;
 	float fVar2;
 	
-	fVar2 = (fParam3 * 0.7071068f);
+	fVar2 = (fParam3 * 0.70710677f);
 	Var0 = { Param2 - Vector(fVar2, fVar2, fVar2) };
 	Var1 = { Param2 + Vector(fVar2, fVar2, fVar2) };
 	return func_235(Param0, Param1, Var0, Var1);

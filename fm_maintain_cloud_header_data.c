@@ -2921,11 +2921,11 @@ Vector3 func_107(int iParam0)//Position - 0x30FD
 		return 0f, 0f, 0f;
 	}
 	Var0 = { func_106(iParam0, "start") };
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var0, -2233.327f, 2436.134f, -14.65155f, -2229.56f, 2399.576f, 11.99761f, 24f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var0, -2233.327f, 2436.1338f, -14.65155f, -2229.5598f, 2399.5764f, 11.997612f, 24f, false, true))
 	{
 		Var0 = { -2303.54f, 2428.09f, 2.02f };
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var0, 603.6218f, 5573.046f, 694.484f, 594.2379f, 5542.792f, 727.479f, 33.5f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var0, 603.6218f, 5573.0464f, 694.484f, 594.23785f, 5542.7915f, 727.479f, 33.5f, false, true))
 	{
 		Var0 = { 502.6f, 5537.06f, 777.05f };
 	}
@@ -35212,11 +35212,11 @@ int func_214(struct<3> Param0)//Position - 0x21D27
 {
 	int iVar0;
 	
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 986.8618f, 74.74512f, 115.0391f, 975.716f, 57.44831f, 118.0387f, 14.5625f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 986.86176f, 74.74512f, 115.03913f, 975.716f, 57.44831f, 118.0387f, 14.5625f, false, true))
 	{
 		return 1;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 1093.315f, 219.7407f, -50.98997f, 1084.527f, 219.227f, -45.92859f, 8.75f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 1093.3151f, 219.74074f, -50.989967f, 1084.5271f, 219.22704f, -45.92859f, 8.75f, false, true))
 	{
 		return 1;
 	}
@@ -36240,7 +36240,7 @@ void func_232(var uParam0, bool bParam1)//Position - 0x22E63
 	{
 		if (MISC::ARE_STRINGS_EQUAL(NETWORK::UGC_GET_CONTENT_ID(uParam0->f_7), "lUo6JFfliE-ZQ_8gd90ZxQ"))
 		{
-			Global_794709.f_4[uParam0->f_9 /*88*/].f_56 = { 897.5109f, -2340.599f, 29.4461f };
+			Global_794709.f_4[uParam0->f_9 /*88*/].f_56 = { 897.5109f, -2340.5986f, 29.4461f };
 		}
 	}
 	MISC::SET_BIT(&(Global_794709.f_4[uParam0->f_9 /*88*/].f_76), 13);
@@ -36945,29 +36945,29 @@ Vector3 func_248(int iParam0, int iParam1)//Position - 0x245DA
 					return -209.1766f, -1305.476f, 34.7404f;
 				
 				case 1:
-					return -1601.532f, -1039.506f, 17.2286f;
+					return -1601.5316f, -1039.5056f, 17.2286f;
 				
 				case 2:
-					return -8.6889f, -1727.83f, 30.3896f;
+					return -8.6889f, -1727.8302f, 30.3896f;
 				
 				case 3:
-					return 1997.496f, 3054.69f, 54.605f;
+					return 1997.4958f, 3054.6897f, 54.605f;
 				
 				case 4:
-					return 967.5151f, -1735.46f, 32.0426f;
+					return 967.5151f, -1735.4604f, 32.0426f;
 				
 				case 5:
-					return 779.6009f, -1424.604f, 32.9774f;
+					return 779.6009f, -1424.6042f, 32.9774f;
 				
 				case 6:
-					return -331.129f, -1492.046f, 30.3228f;
+					return -331.129f, -1492.0455f, 30.3228f;
 				
 				case 7:
 					return -209.1766f, -1305.476f, 34.7404f;
 				
 				default:
 			}
-			return -61.784f, -1538.702f, 43.8935f;
+			return -61.784f, -1538.7018f, 43.8935f;
 		
 		default:
 	}
@@ -36982,32 +36982,32 @@ Vector3 func_249(int iParam0, int iParam1)//Position - 0x246CB
 			switch (iParam1)
 			{
 				case 0:
-					return -210.4709f, -1306.318f, 30.336f;
+					return -210.4709f, -1306.3175f, 30.336f;
 				
 				case 1:
-					return -1598.327f, -1040.538f, 12.0183f;
+					return -1598.3271f, -1040.5378f, 12.0183f;
 				
 				case 2:
 					return -21.2711f, -1732.453f, 28.304f;
 				
 				case 3:
-					return 1992.482f, 3058.078f, 46.0576f;
+					return 1992.482f, 3058.0784f, 46.0576f;
 				
 				case 4:
-					return 960.3523f, -1745.844f, 30.2208f;
+					return 960.3523f, -1745.8442f, 30.2208f;
 				
 				case 5:
 					return 775.7347f, -1367.343f, 25.5669f;
 				
 				case 6:
-					return -321.3307f, -1495.598f, 29.6536f;
+					return -321.3307f, -1495.5978f, 29.6536f;
 				
 				case 7:
-					return -210.4709f, -1306.318f, 30.336f;
+					return -210.4709f, -1306.3175f, 30.336f;
 				
 				default:
 			}
-			return -210.4709f, -1306.318f, 30.336f;
+			return -210.4709f, -1306.3175f, 30.336f;
 		
 		default:
 	}

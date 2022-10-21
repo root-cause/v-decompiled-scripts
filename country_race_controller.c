@@ -182,7 +182,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_41 = 65;
 	iLocal_42 = 49;
 	iLocal_43 = 64;
-	Local_60 = { -1124.392f, -514.7001f, 33.21493f };
+	Local_60 = { -1124.3922f, -514.70013f, 33.21493f };
 	fLocal_61 = 200f;
 	Local_62 = { 2490f, 3777f, 2402.879f };
 	Local_63 = { -2052f, 3237f, 1450.078f };
@@ -1507,7 +1507,7 @@ float func_46()//Position - 0x196A
 
 Vector3 func_47()//Position - 0x1977
 {
-	return 1965.248f, 3114.886f, 46.1663f;
+	return 1965.2484f, 3114.886f, 46.1663f;
 }
 
 float func_48()//Position - 0x198E
@@ -1517,7 +1517,7 @@ float func_48()//Position - 0x198E
 
 Vector3 func_49()//Position - 0x199B
 {
-	return 1964.038f, 3114.635f, 46.1319f;
+	return 1964.0383f, 3114.6345f, 46.1319f;
 }
 
 int func_50()//Position - 0x19B2
@@ -1801,7 +1801,7 @@ int func_59(int iParam0, int iParam1)//Position - 0x1E29
 
 Vector3 func_60()//Position - 0x1E73
 {
-	return 1967.042f, 3116.005f, 45.8901f;
+	return 1967.042f, 3116.0051f, 45.8901f;
 }
 
 int func_61(int iParam0)//Position - 0x1E8A

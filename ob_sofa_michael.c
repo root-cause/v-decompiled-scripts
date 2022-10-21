@@ -578,7 +578,7 @@ void func_1()//Position - 0x2A6
 				PED::REMOVE_PED_HELMET(PLAYER::PLAYER_PED_ID(), true);
 			}
 			MISC::CLEAR_AREA_OF_VEHICLES(func_28(), 5f, false, false, false, false, false, false, 0);
-			PLAYER::PLAYER_ATTACH_VIRTUAL_BOUND(-804.5928f, 173.1801f, 71.68436f, 0f, 0f, 0.590625f, 1f, 0.7f);
+			PLAYER::PLAYER_ATTACH_VIRTUAL_BOUND(-804.59283f, 173.18015f, 71.68436f, 0f, 0f, 0.590625f, 1f, 0.7f);
 			PLAYER::SET_PLAYER_CLOTH_PACKAGE_INDEX(2);
 			iLocal_304 = 3;
 			break;
@@ -1394,7 +1394,7 @@ Vector3 func_11()//Position - 0x1953
 			break;
 		
 		case joaat("p_cs_joint_01"):
-			Var0 = { -10.6378f, -1441.314f, 30.1015f };
+			Var0 = { -10.6378f, -1441.3145f, 30.1015f };
 			break;
 		
 		case joaat("p_tumbler_02_s1"):
@@ -1402,7 +1402,7 @@ Vector3 func_11()//Position - 0x1953
 		case joaat("p_tumbler_cs2_s_trev"):
 			if (bLocal_50)
 			{
-				Var0 = { -1154.343f, -1522.6f, 9.6327f };
+				Var0 = { -1154.343f, -1522.5997f, 9.6327f };
 			}
 			else
 			{
@@ -1411,15 +1411,15 @@ Vector3 func_11()//Position - 0x1953
 			break;
 		
 		case joaat("prop_rolled_sock_02"):
-			Var0 = { 1972.142f, 3813.243f, 32.4271f };
+			Var0 = { 1972.1417f, 3813.243f, 32.4271f };
 			break;
 		
 		case joaat("prop_mr_raspberry_01"):
-			Var0 = { -1145.91f, -1514.944f, 9.6327f };
+			Var0 = { -1145.91f, -1514.9445f, 9.6327f };
 			break;
 		
 		case joaat("prop_radio_01"):
-			Var0 = { 1976.94f, 3821.242f, 33.3266f };
+			Var0 = { 1976.94f, 3821.2417f, 33.3266f };
 			break;
 		
 		case joaat("p_w_grass_gls_s"):
@@ -1835,7 +1835,7 @@ Vector3 func_27()//Position - 0x2148
 			}
 			else
 			{
-				Var0 = { 0f, 0f, -179.9088f };
+				Var0 = { 0f, 0f, -179.90875f };
 			}
 			break;
 		
@@ -1935,7 +1935,7 @@ Vector3 func_28()//Position - 0x225D
 			break;
 		
 		case joaat("prop_mr_raspberry_01"):
-			Var0 = { -1146.284f, -1514.13f, 10.8468f };
+			Var0 = { -1146.284f, -1514.1305f, 10.8468f };
 			break;
 		
 		case joaat("prop_radio_01"):
@@ -2135,7 +2135,7 @@ void func_39(int iParam0)//Position - 0x267C
 
 float func_40(float fParam0)//Position - 0x269F
 {
-	return (fParam0 * 0.01745329f);
+	return (fParam0 * 0.017453292f);
 }
 
 int func_41(bool bParam0, bool bParam1, bool bParam2)//Position - 0x26AF

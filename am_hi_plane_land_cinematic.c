@@ -47163,7 +47163,7 @@ void func_286()//Position - 0x33132
 {
 	NETWORK::NETWORK_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(32, false, -1);
 	func_289(&uLocal_93, joaat("nimbus"), "Plane_1");
-	func_287(&uLocal_93, 3967.423f, -4685.084f, 11.7691f, -1.6326f, 0.4627f, -70.7491f, "HS4_NIMB_LSA_ISD_REPEAT", 1, 1, 3, 0);
+	func_287(&uLocal_93, 3967.4226f, -4685.0845f, 11.7691f, -1.6326f, 0.4627f, -70.7491f, "HS4_NIMB_LSA_ISD_REPEAT", 1, 1, 3, 0);
 }
 
 void func_287(var uParam0, struct<3> Param1, struct<3> Param2, char* sParam3, int iParam4, int iParam5, int iParam6, int iParam7)//Position - 0x3317C

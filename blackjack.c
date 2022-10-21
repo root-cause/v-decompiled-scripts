@@ -4383,16 +4383,16 @@ Vector3 func_70(int iParam0)//Position - 0x8792
 		switch (iParam0)
 		{
 			case 0:
-				return 1148.837f, 269.747f, -52.8409f;
+				return 1148.8368f, 269.747f, -52.8409f;
 			
 			case 1:
 				return 1151.84f, 266.747f, -52.8409f;
 			
 			case 2:
-				return 1129.406f, 262.3578f, -52.041f;
+				return 1129.4065f, 262.3578f, -52.041f;
 			
 			case 3:
-				return 1144.429f, 247.3352f, -52.041f;
+				return 1144.4291f, 247.3352f, -52.041f;
 			}
 		
 		default:
@@ -11324,7 +11324,7 @@ float func_202(float fParam0, float fParam1, float fParam2, int iParam3)//Positi
 		
 		case 3:
 		case 8:
-			fParam2 = ((-SYSTEM::COS(func_203((3.141593f * fParam2))) / 2f) + 0.5f);
+			fParam2 = ((-SYSTEM::COS(func_203((3.1415927f * fParam2))) / 2f) + 0.5f);
 			break;
 		
 		case 4:
@@ -15599,11 +15599,11 @@ void func_293(bool bParam0, bool bParam1)//Position - 0x199F4
 	fVar2 = GRAPHICS::GET_ASPECT_RATIO(false);
 	if (bParam0)
 	{
-		Global_23149 = (0.225f * (1.777778f / fVar2));
+		Global_23149 = (0.225f * (1.7777778f / fVar2));
 	}
 	else if (fVar2 < 1.77777f)
 	{
-		Global_23149 = (0.225f * (1.777778f / fVar2));
+		Global_23149 = (0.225f * (1.7777778f / fVar2));
 	}
 	else
 	{
@@ -16769,52 +16769,52 @@ Vector3 func_355(int iParam0)//Position - 0x1B179
 		switch (iParam0)
 		{
 			case 0:
-				return 1148.367f, 269.0835f, -51.7879f;
+				return 1148.3666f, 269.0835f, -51.7879f;
 			
 			case 1:
-				return 1148.345f, 269.7643f, -51.7876f;
+				return 1148.3447f, 269.7643f, -51.7876f;
 			
 			case 2:
-				return 1148.821f, 270.2321f, -51.7708f;
+				return 1148.8214f, 270.2321f, -51.7708f;
 			
 			case 3:
-				return 1149.495f, 270.2401f, -51.7632f;
+				return 1149.4955f, 270.2401f, -51.7632f;
 			
 			case 4:
-				return 1152.317f, 267.4195f, -51.8003f;
+				return 1152.3171f, 267.4195f, -51.8003f;
 			
 			case 5:
 				return 1152.337f, 266.7202f, -51.7913f;
 			
 			case 6:
-				return 1151.849f, 266.2183f, -51.7916f;
+				return 1151.8486f, 266.2183f, -51.7916f;
 			
 			case 7:
-				return 1151.182f, 266.2501f, -51.7864f;
+				return 1151.1823f, 266.2501f, -51.7864f;
 			
 			case 8:
-				return 1128.713f, 262.8658f, -51.0035f;
+				return 1128.7131f, 262.8658f, -51.0035f;
 			
 			case 9:
-				return 1129.446f, 262.8649f, -51.0121f;
+				return 1129.4463f, 262.8649f, -51.0121f;
 			
 			case 10:
-				return 1129.932f, 262.3822f, -51.0027f;
+				return 1129.9319f, 262.3822f, -51.0027f;
 			
 			case 11:
-				return 1129.899f, 261.6921f, -51.0422f;
+				return 1129.8989f, 261.6921f, -51.0422f;
 			
 			case 12:
-				return 1143.738f, 247.8562f, -51.034f;
+				return 1143.7379f, 247.8562f, -51.034f;
 			
 			case 13:
-				return 1144.459f, 247.8673f, -51.0229f;
+				return 1144.4587f, 247.8673f, -51.0229f;
 			
 			case 14:
-				return 1144.951f, 247.3612f, -51.015f;
+				return 1144.9508f, 247.3612f, -51.015f;
 			
 			case 15:
-				return 1144.913f, 246.663f, -51.0236f;
+				return 1144.9126f, 246.663f, -51.0236f;
 			}
 		
 		default:
@@ -20709,7 +20709,7 @@ void func_404()//Position - 0x210F8
 	{
 		if (!ENTITY::DOES_ENTITY_EXIST(iLocal_144))
 		{
-			iLocal_144 = OBJECT::GET_CLOSEST_OBJECT_OF_TYPE(1129.406f, 262.3578f, -52.041f, 1f, joaat("vw_prop_casino_blckjack_01b"), false, false, false);
+			iLocal_144 = OBJECT::GET_CLOSEST_OBJECT_OF_TYPE(1129.4065f, 262.3578f, -52.041f, 1f, joaat("vw_prop_casino_blckjack_01b"), false, false, false);
 		}
 		else if (OBJECT::GET_OBJECT_TINT_INDEX(iLocal_144) != 3)
 		{
@@ -20717,7 +20717,7 @@ void func_404()//Position - 0x210F8
 		}
 		if (!ENTITY::DOES_ENTITY_EXIST(iLocal_145))
 		{
-			iLocal_145 = OBJECT::GET_CLOSEST_OBJECT_OF_TYPE(1144.429f, 247.3352f, -52.041f, 1f, joaat("vw_prop_casino_blckjack_01b"), false, false, false);
+			iLocal_145 = OBJECT::GET_CLOSEST_OBJECT_OF_TYPE(1144.4291f, 247.3352f, -52.041f, 1f, joaat("vw_prop_casino_blckjack_01b"), false, false, false);
 		}
 		else if (ENTITY::DOES_ENTITY_EXIST(iLocal_145) && OBJECT::GET_OBJECT_TINT_INDEX(iLocal_145) != 3)
 		{

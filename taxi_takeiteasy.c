@@ -376,7 +376,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_72 = HUD::GET_WAYPOINT_BLIP_ENUM_ID();
 	Local_77 = { 500f, 500f, 500f };
 	iLocal_260 = joaat("A_M_Y_SouCent_04");
-	Local_262 = { -1230.55f, -896.7814f, 11.11059f };
+	Local_262 = { -1230.5504f, -896.7814f, 11.11059f };
 	Local_263 = { 58.8213f, 293.848f, 109.6124f };
 	Local_264 = { 62.7742f, 307.4984f, 109.981f };
 	Local_265 = { 0f, 0f, 0f };
@@ -4815,7 +4815,7 @@ void func_154(var uParam0)//Position - 0x524F
 			else if (uParam0->f_411 == 0)
 			{
 				TASK::TASK_CLIMB_LADDER(0, true);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 813.9421f, 1172.681f, 329.7988f, 1f, -1, 0.25f, 0, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 813.9421f, 1172.6809f, 329.7988f, 1f, -1, 0.25f, 0, 40000f);
 				TASK::TASK_ACHIEVE_HEADING(0, 151.7794f, 0);
 				TASK::TASK_START_SCENARIO_IN_PLACE(0, "WORLD_HUMAN_SMOKING_POT", 0, false);
 			}
@@ -14902,9 +14902,9 @@ void func_426()//Position - 0x12B64
 	func_427(&Local_231, 2, 4);
 	Local_231.f_23 = { 31.3927f, 229.9863f, 108.45f };
 	Local_231.f_33 = 340.5f;
-	Local_231.f_26 = { -1239.992f, -902.0005f, 10.8342f };
+	Local_231.f_26 = { -1239.9924f, -902.0005f, 10.8342f };
 	Local_231.f_34 = 305.2155f;
-	Local_231.f_29 = { -1224.093f, -907.3411f, 11.3263f };
+	Local_231.f_29 = { -1224.0927f, -907.3411f, 11.3263f };
 }
 
 void func_427(var uParam0, int iParam1, int iParam2)//Position - 0x12BDA

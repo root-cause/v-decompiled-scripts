@@ -1016,7 +1016,7 @@ int func_40()//Position - 0xD56
 			if (iVar1 != PLAYER::PLAYER_ID())
 			{
 				iVar2 = PLAYER::GET_PLAYER_PED(iVar1);
-				if (ENTITY::DOES_ENTITY_EXIST(iVar2) && ENTITY::IS_ENTITY_IN_ANGLED_AREA(iVar2, 1109.469f, 228.9432f, -50.64041f, 1111.215f, 228.8777f, -48.39041f, 1.82f, false, true, 0))
+				if (ENTITY::DOES_ENTITY_EXIST(iVar2) && ENTITY::IS_ENTITY_IN_ANGLED_AREA(iVar2, 1109.4691f, 228.94319f, -50.640408f, 1111.2146f, 228.87773f, -48.390408f, 1.82f, false, true, 0))
 				{
 					return 0;
 				}
@@ -1115,12 +1115,12 @@ int func_48(bool bParam0)//Position - 0xEFE
 	{
 		if ((MISC::GET_FRAME_COUNT() % 3) == 0)
 		{
-			return ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 1110.995f, 228.9034f, -50.6408f, 1109.727f, 228.9352f, -48.3908f, 1.5f, false, true, 0);
+			return ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 1110.9955f, 228.90337f, -50.6408f, 1109.7274f, 228.93518f, -48.3908f, 1.5f, false, true, 0);
 		}
 	}
 	else
 	{
-		return ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 1110.995f, 228.9034f, -50.6408f, 1109.727f, 228.9352f, -48.3908f, 1.5f, false, true, 0);
+		return ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 1110.9955f, 228.90337f, -50.6408f, 1109.7274f, 228.93518f, -48.3908f, 1.5f, false, true, 0);
 	}
 	return 0;
 }
@@ -1191,7 +1191,7 @@ bool func_54()//Position - 0x1030
 
 Vector3 func_55()//Position - 0x104B
 {
-	return 1111.052f, 229.8492f, -50.6409f;
+	return 1111.0519f, 229.8492f, -50.6409f;
 }
 
 int func_56()//Position - 0x1062
@@ -1447,7 +1447,7 @@ void func_74(int iParam0)//Position - 0x1400
 	{
 		if (Local_110.f_0 != PLAYER::PLAYER_ID() || iParam0 == 1)
 		{
-			if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 1109.16f, 228.4484f, -50.63083f, 1112.186f, 228.9841f, -48.13083f, 2.75f, false, true, 0))
+			if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 1109.1597f, 228.44836f, -50.630825f, 1112.1864f, 228.98409f, -48.130825f, 2.75f, false, true, 0))
 			{
 				if (!BitTest(Local_112.f_1, 1))
 				{
@@ -1487,7 +1487,7 @@ void func_75(int iParam0, var uParam1)//Position - 0x1556
 	switch (iParam0)
 	{
 		case 0:
-			*uParam1 = { 1114.812f, 226.8861f, -50.8408f };
+			*uParam1 = { 1114.8124f, 226.8861f, -50.8408f };
 			break;
 		
 		case 1:
@@ -1495,19 +1495,19 @@ void func_75(int iParam0, var uParam1)//Position - 0x1556
 			break;
 		
 		case 2:
-			*uParam1 = { 1111.762f, 223.4791f, -50.8408f };
+			*uParam1 = { 1111.7622f, 223.4791f, -50.8408f };
 			break;
 		
 		case 3:
-			*uParam1 = { 1110.287f, 222.9306f, -50.8408f };
+			*uParam1 = { 1110.2871f, 222.9306f, -50.8408f };
 			break;
 		
 		case 4:
-			*uParam1 = { 1108.957f, 223.4897f, -50.8408f };
+			*uParam1 = { 1108.9568f, 223.4897f, -50.8408f };
 			break;
 		
 		case 5:
-			*uParam1 = { 1106.042f, 226.8098f, -50.8408f };
+			*uParam1 = { 1106.0417f, 226.8098f, -50.8408f };
 			break;
 	}
 }
@@ -35197,11 +35197,11 @@ void func_517(bool bParam0, bool bParam1)//Position - 0x27E19
 	fVar2 = GRAPHICS::GET_ASPECT_RATIO(false);
 	if (bParam0)
 	{
-		Global_23149 = (0.225f * (1.777778f / fVar2));
+		Global_23149 = (0.225f * (1.7777778f / fVar2));
 	}
 	else if (fVar2 < 1.77777f)
 	{
-		Global_23149 = (0.225f * (1.777778f / fVar2));
+		Global_23149 = (0.225f * (1.7777778f / fVar2));
 	}
 	else
 	{
@@ -57312,7 +57312,7 @@ void func_784(char* sParam0)//Position - 0x3FDB7
 
 Vector3 func_785()//Position - 0x3FDED
 {
-	return 1111.052f, 229.8579f, -49.133f;
+	return 1111.0519f, 229.8579f, -49.133f;
 }
 
 void func_786(float fParam0)//Position - 0x3FE04

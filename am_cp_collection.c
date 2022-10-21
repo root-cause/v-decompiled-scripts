@@ -2374,7 +2374,7 @@ int func_32(int iParam0, var uParam1, var uParam2)//Position - 0xF42
 	switch (iParam0)
 	{
 		case 0:
-			*uParam1 = { -1729.582f, -2943.77f, 12.9443f };
+			*uParam1 = { -1729.5818f, -2943.7695f, 12.9443f };
 			*uParam2 = 300.078f;
 			break;
 		
@@ -2384,32 +2384,32 @@ int func_32(int iParam0, var uParam1, var uParam2)//Position - 0xF42
 			break;
 		
 		case 2:
-			*uParam1 = { 1073.972f, 3003.889f, 40.5508f };
+			*uParam1 = { 1073.972f, 3003.8894f, 40.5508f };
 			*uParam2 = 333.2717f;
 			break;
 		
 		case 3:
-			*uParam1 = { 1928.635f, 4702.327f, 40.1958f };
+			*uParam1 = { 1928.635f, 4702.3267f, 40.1958f };
 			*uParam2 = 327.9112f;
 			break;
 		
 		case 4:
-			*uParam1 = { 1278.65f, 6579.366f, 1.505f };
+			*uParam1 = { 1278.6503f, 6579.366f, 1.505f };
 			*uParam2 = 84.26f;
 			break;
 		
 		case 5:
-			*uParam1 = { -1700.407f, -829.8932f, 8.2542f };
+			*uParam1 = { -1700.4066f, -829.8932f, 8.2542f };
 			*uParam2 = 70.1811f;
 			break;
 		
 		case 6:
-			*uParam1 = { -2733.589f, 2925.563f, 1.2152f };
+			*uParam1 = { -2733.5889f, 2925.5627f, 1.2152f };
 			*uParam2 = 176.5378f;
 			break;
 		
 		case 7:
-			*uParam1 = { 1493.418f, -2442.99f, 64.9693f };
+			*uParam1 = { 1493.4181f, -2442.9897f, 64.9693f };
 			*uParam2 = 52.9918f;
 			break;
 		
@@ -4167,46 +4167,46 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 						switch (iParam3)
 						{
 							case 0:
-								return 623.5349f, 1614.651f, 283.748f;
+								return 623.5349f, 1614.6509f, 283.748f;
 							
 							case 1:
-								return 742.6324f, 1271.099f, 388.9925f;
+								return 742.6324f, 1271.0992f, 388.9925f;
 							
 							case 2:
-								return 682.1757f, 1204.295f, 350.0934f;
+								return 682.1757f, 1204.2948f, 350.0934f;
 							
 							case 3:
-								return 1779.28f, 668.7821f, 276.3788f;
+								return 1779.2795f, 668.7821f, 276.3788f;
 							
 							case 4:
-								return 1927.214f, 129.7589f, 174.4281f;
+								return 1927.2144f, 129.7589f, 174.4281f;
 							
 							case 5:
-								return 1056.943f, -699.1728f, 78.8831f;
+								return 1056.9426f, -699.1728f, 78.8831f;
 							
 							case 6:
-								return 2026.536f, -1594.874f, 262.0831f;
+								return 2026.5355f, -1594.8741f, 262.0831f;
 							
 							case 7:
-								return 2139.424f, -2613.58f, 20.5914f;
+								return 2139.4236f, -2613.5798f, 20.5914f;
 							
 							case 8:
-								return 1041.685f, -2882.901f, 27.0959f;
+								return 1041.685f, -2882.9011f, 27.0959f;
 							
 							case 9:
-								return 796.1402f, -2624.645f, 95.127f;
+								return 796.1402f, -2624.6445f, 95.127f;
 							
 							case 10:
-								return 504.6169f, -3311.801f, 22.9858f;
+								return 504.6169f, -3311.8013f, 22.9858f;
 							
 							case 11:
-								return 416.9175f, -2684.419f, 10.1246f;
+								return 416.9175f, -2684.4192f, 10.1246f;
 							
 							case 12:
-								return 561.767f, -2100.675f, 60.143f;
+								return 561.767f, -2100.6746f, 60.143f;
 							
 							case 13:
-								return 872.454f, -1929.237f, 104.4083f;
+								return 872.454f, -1929.2372f, 104.4083f;
 							
 							case 14:
 								return 636.6328f, -1429.945f, 15.5f;
@@ -4221,181 +4221,181 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 533.762f, 143.6576f, 125.7511f;
 							
 							case 18:
-								return 1112.19f, 74.8892f, 117.7713f;
+								return 1112.1902f, 74.8892f, 117.7713f;
 							
 							case 19:
 								return 683.9346f, 570.1795f, 165.7115f;
 							
 							case 20:
-								return 1453.832f, 1113.675f, 134.9644f;
+								return 1453.8324f, 1113.6754f, 134.9644f;
 							
 							case 21:
-								return 1539.314f, 1716.172f, 125.0574f;
+								return 1539.3142f, 1716.1719f, 125.0574f;
 							
 							case 22:
-								return 1875.192f, 1698.918f, 109.9103f;
+								return 1875.1918f, 1698.9182f, 109.9103f;
 							
 							case 23:
-								return 2320.32f, 1669.402f, 86.7663f;
+								return 2320.32f, 1669.4021f, 86.7663f;
 							
 							case 24:
-								return 2337.891f, 1358.536f, 100.8737f;
+								return 2337.8914f, 1358.5363f, 100.8737f;
 							
 							case 25:
-								return 2727.786f, 1558.729f, 83.66f;
+								return 2727.7856f, 1558.7285f, 83.66f;
 							
 							case 26:
-								return 3112.177f, 1153.66f, 25.3827f;
+								return 3112.1768f, 1153.66f, 25.3827f;
 							
 							case 27:
-								return 2580.817f, 476.8322f, 121.7549f;
+								return 2580.8167f, 476.8322f, 121.7549f;
 							
 							case 28:
 								return 2458.7f, -384.0464f, 127.5513f;
 							
 							case 29:
-								return 2381.206f, -939.2949f, 185.6516f;
+								return 2381.2063f, -939.2949f, 185.6516f;
 							
 							case 30:
-								return 1669.294f, -1652.948f, 154.2478f;
+								return 1669.2944f, -1652.9478f, 154.2478f;
 							
 							case 31:
-								return 1096.793f, -1141.693f, 96.1055f;
+								return 1096.7933f, -1141.6932f, 96.1055f;
 							
 							case 32:
-								return 3042.9f, -291.4662f, 22.8304f;
+								return 3042.8997f, -291.4662f, 22.8304f;
 							
 							case 33:
-								return 2645.351f, -1492.043f, 30.646f;
+								return 2645.3508f, -1492.0433f, 30.646f;
 							
 							case 34:
-								return 1214.374f, -2353.274f, 66.8f;
+								return 1214.3737f, -2353.274f, 66.8f;
 							
 							case 35:
-								return 1841.616f, -2497.971f, 101.8039f;
+								return 1841.6165f, -2497.9714f, 101.8039f;
 							
 							case 36:
-								return 1872.035f, -761.149f, 105f;
+								return 1872.0353f, -761.149f, 105f;
 							
 							case 37:
-								return 1657.665f, -413.7629f, 228.448f;
+								return 1657.6649f, -413.7629f, 228.448f;
 							
 							case 38:
-								return 1589.229f, -1981.901f, 161.2293f;
+								return 1589.2289f, -1981.9009f, 161.2293f;
 							
 							case 39:
-								return 991.7729f, -1477.064f, 60.0276f;
+								return 991.7729f, -1477.0642f, 60.0276f;
 							
 							case 40:
-								return 2609.912f, -2096.358f, 35.0044f;
+								return 2609.9119f, -2096.3584f, 35.0044f;
 							
 							case 41:
-								return 1121.19f, 725.4341f, 170.3273f;
+								return 1121.1902f, 725.4341f, 170.3273f;
 							
 							case 42:
-								return 2117.316f, 1024.085f, 197f;
+								return 2117.316f, 1024.0846f, 197f;
 							
 							case 43:
 								return 727.6708f, -452.6442f, 25f;
 							
 							case 44:
-								return 1211.964f, -3285.54f, 19.5936f;
+								return 1211.9645f, -3285.5398f, 19.5936f;
 							
 							case 45:
-								return 1499.883f, -1276.207f, 131.5493f;
+								return 1499.8833f, -1276.2072f, 131.5493f;
 							
 							case 46:
-								return 3381.442f, -826.2608f, 42.8967f;
+								return 3381.4421f, -826.2608f, 42.8967f;
 							
 							case 47:
 								return 1562.097f, 292.1506f, 494.2574f;
 							
 							case 48:
-								return 2021.578f, -1993.689f, 120f;
+								return 2021.578f, -1993.6892f, 120f;
 							
 							case 49:
-								return 757.5558f, -1196.363f, 232.0553f;
+								return 757.5558f, -1196.3629f, 232.0553f;
 							
 							case 50:
-								return 1887.774f, -3474.97f, 77.8727f;
+								return 1887.7737f, -3474.9705f, 77.8727f;
 							
 							case 51:
-								return 1083.224f, -229.6182f, 68.6364f;
+								return 1083.2245f, -229.6182f, 68.6364f;
 							
 							case 52:
 								return 2344.084f, -406.1672f, 91f;
 							
 							case 53:
-								return 2184.821f, 529.1252f, 241.1723f;
+								return 2184.8213f, 529.1252f, 241.1723f;
 							
 							case 54:
-								return 1251.541f, -1883.809f, 50f;
+								return 1251.5414f, -1883.8093f, 50f;
 							
 							case 55:
-								return 847.74f, 1781.903f, 160.9508f;
+								return 847.74f, 1781.9033f, 160.9508f;
 							
 							case 56:
-								return 288.3698f, -1601.346f, 52f;
+								return 288.3698f, -1601.3456f, 52f;
 							
 							case 57:
-								return 2648.131f, -731.5316f, 99.7f;
+								return 2648.1313f, -731.5316f, 99.7f;
 							
 							case 58:
-								return 1937.117f, 1337.446f, 529.8608f;
+								return 1937.1173f, 1337.4464f, 529.8608f;
 							
 							case 59:
 								return 1512.681f, -2539.276f, 208.3091f;
 							
 							case 60:
-								return 2352.986f, -1763.908f, 136.1568f;
+								return 2352.986f, -1763.9081f, 136.1568f;
 							
 							case 61:
-								return 2099.732f, -1212.728f, 178.3343f;
+								return 2099.7317f, -1212.7279f, 178.3343f;
 							
 							case 62:
-								return 1945.16f, -957.8221f, 96.04f;
+								return 1945.1599f, -957.8221f, 96.04f;
 							
 							case 63:
-								return 1872.81f, -830.1746f, 171.44f;
+								return 1872.8097f, -830.1746f, 171.44f;
 							
 							case 64:
-								return 1256.392f, -1571.629f, 90.566f;
+								return 1256.3923f, -1571.6293f, 90.566f;
 							
 							case 65:
-								return 1818.023f, -244.6768f, 305.9837f;
+								return 1818.0228f, -244.6768f, 305.9837f;
 							
 							case 66:
-								return 2839.051f, -748.0399f, 21.5008f;
+								return 2839.0505f, -748.0399f, 21.5008f;
 							
 							case 67:
-								return 1268.646f, -2126.072f, 60.6975f;
+								return 1268.6459f, -2126.0718f, 60.6975f;
 							
 							case 68:
-								return 1088.679f, -1982.82f, 84.1204f;
+								return 1088.6792f, -1982.8197f, 84.1204f;
 							
 							case 69:
-								return 1597.218f, -2817.042f, 19.0498f;
+								return 1597.2175f, -2817.0425f, 19.0498f;
 							
 							case 70:
-								return 356.3379f, -2319.226f, 67.6058f;
+								return 356.3379f, -2319.2256f, 67.6058f;
 							
 							case 71:
-								return 692.5012f, -2330.583f, 60.7022f;
+								return 692.5012f, -2330.5833f, 60.7022f;
 							
 							case 72:
-								return 1070.4f, -1835.148f, 100.8235f;
+								return 1070.3999f, -1835.1484f, 100.8235f;
 							
 							case 73:
-								return 478.3501f, -1682.318f, 59.7763f;
+								return 478.3501f, -1682.3177f, 59.7763f;
 							
 							case 74:
-								return 845.2267f, -2186.32f, 46.5743f;
+								return 845.2267f, -2186.3203f, 46.5743f;
 							
 							case 75:
-								return 2651.639f, -1230.85f, 40.5824f;
+								return 2651.6392f, -1230.8496f, 40.5824f;
 							
 							case 76:
-								return 461.851f, -1460.173f, 65.7889f;
+								return 461.851f, -1460.1727f, 65.7889f;
 							
 							case 77:
 								return 775.8362f, -852.0386f, 31f;
@@ -4407,124 +4407,124 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 970.9194f, -2510.112f, 64f;
 							
 							case 80:
-								return 1096.666f, 1222.327f, 202.4859f;
+								return 1096.6661f, 1222.3273f, 202.4859f;
 							
 							case 81:
-								return 1978.543f, 690.4552f, 174.2517f;
+								return 1978.5428f, 690.4552f, 174.2517f;
 							
 							case 82:
-								return 1571.993f, -36.6251f, 140.5239f;
+								return 1571.9934f, -36.6251f, 140.5239f;
 							
 							case 83:
 								return 918.2688f, -675.462f, 76.6019f;
 							
 							case 84:
-								return 798.097f, -1194.02f, 32f;
+								return 798.097f, -1194.0201f, 32f;
 							
 							case 85:
 								return 382.4527f, -31.8431f, 143.6312f;
 							
 							case 86:
-								return 672.1725f, -1745.012f, 16f;
+								return 672.1725f, -1745.0121f, 16f;
 							
 							case 87:
 								return 620.2905f, -588.2725f, 22.6129f;
 							
 							case 88:
-								return 1204.318f, 196.6229f, 79.9329f;
+								return 1204.3184f, 196.6229f, 79.9329f;
 							
 							case 89:
-								return 2028.402f, -2179.396f, 105.5733f;
+								return 2028.4021f, -2179.3965f, 105.5733f;
 							
 							case 90:
-								return 1131.183f, -2929.769f, 33.2799f;
+								return 1131.1833f, -2929.7693f, 33.2799f;
 							
 							case 91:
-								return 654.5255f, -2634.736f, 26.063f;
+								return 654.5255f, -2634.7358f, 26.063f;
 							
 							case 92:
 								return 757.272f, -30.6019f, 66.9464f;
 							
 							case 93:
-								return 262.5532f, -1046.969f, 73.6448f;
+								return 262.5532f, -1046.9685f, 73.6448f;
 							
 							case 94:
-								return 638.4819f, -1021f, 43.5236f;
+								return 638.4819f, -1020.9998f, 43.5236f;
 							
 							case 95:
 								return 351.6616f, -2758.046f, 29.2267f;
 							
 							case 96:
-								return 1613.985f, -2243.761f, 136f;
+								return 1613.9851f, -2243.761f, 136f;
 							
 							case 97:
-								return 2947.746f, 792.9475f, 45f;
+								return 2947.7463f, 792.9475f, 45f;
 							
 							case 98:
-								return 2608.733f, 822.9318f, 118.6201f;
+								return 2608.7327f, 822.9318f, 118.6201f;
 							
 							case 99:
-								return 1357.208f, 674.4443f, 100f;
+								return 1357.2085f, 674.4443f, 100f;
 							
 							case 100:
 								return 978.4934f, -2073.071f, 1000f;
 							
 							case 101:
-								return 2848.513f, -2701.795f, 547.5851f;
+								return 2848.5134f, -2701.795f, 547.5851f;
 							
 							case 102:
-								return 2322.219f, -2129.611f, 13.6809f;
+								return 2322.2185f, -2129.6113f, 13.6809f;
 							
 							case 103:
-								return 1248.603f, -2675.042f, 145.6704f;
+								return 1248.603f, -2675.0422f, 145.6704f;
 							
 							case 104:
-								return 2052.692f, -252.931f, 228.334f;
+								return 2052.6917f, -252.931f, 228.334f;
 							
 							case 105:
-								return 2394.902f, 388.1578f, 194.5342f;
+								return 2394.9023f, 388.1578f, 194.5342f;
 							
 							case 106:
 								return 3337.711f, 56.3844f, 764.684f;
 							
 							case 107:
-								return 1573.049f, 1472.569f, 179.2061f;
+								return 1573.0494f, 1472.5686f, 179.2061f;
 							
 							case 108:
-								return 1898.354f, 1020.671f, 277.9648f;
+								return 1898.3542f, 1020.6713f, 277.9648f;
 							
 							case 109:
 								return 745.1586f, 232.868f, 177.0828f;
 							
 							case 110:
-								return 1551.579f, -685.6392f, 126f;
+								return 1551.5793f, -685.6392f, 126f;
 							
 							case 111:
-								return 2734.234f, 61.798f, 25.1296f;
+								return 2734.2344f, 61.798f, 25.1296f;
 							
 							case 112:
-								return 2404.63f, -1485.806f, 86.3959f;
+								return 2404.63f, -1485.8055f, 86.3959f;
 							
 							case 113:
-								return 3033.16f, 321.8385f, 908.0805f;
+								return 3033.1602f, 321.8385f, 908.0805f;
 							
 							case 114:
-								return 1353.323f, 373.6808f, 184.937f;
+								return 1353.3225f, 373.6808f, 184.937f;
 							
 							case 115:
-								return 1317.262f, -737.488f, 125.2729f;
+								return 1317.2625f, -737.488f, 125.2729f;
 							
 							case 116:
-								return 1737.696f, -966.1904f, 119.8332f;
+								return 1737.6957f, -966.1904f, 119.8332f;
 							
 							case 117:
 								return 923.2643f, 978.5736f, 605.3384f;
 							
 							case 118:
-								return 2823.777f, -1483.905f, 26.8193f;
+								return 2823.7769f, -1483.905f, 26.8193f;
 							
 							case 119:
-								return 1333.475f, -275.2598f, 1000f;
+								return 1333.4746f, -275.2598f, 1000f;
 							
 							default:
 						}
@@ -4539,67 +4539,67 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 						switch (iParam3)
 						{
 							case 0:
-								return 2360.429f, 1273.094f, 63.9814f;
+								return 2360.4287f, 1273.0941f, 63.9814f;
 							
 							case 1:
-								return 2545.422f, 342.8004f, 107.4641f;
+								return 2545.4219f, 342.8004f, 107.4641f;
 							
 							case 2:
-								return 2483.171f, -363.0696f, 92.7352f;
+								return 2483.1711f, -363.0696f, 92.7352f;
 							
 							case 3:
-								return 1491.835f, -1005.532f, 50.5682f;
+								return 1491.8348f, -1005.5316f, 50.5682f;
 							
 							case 4:
-								return 1078.853f, -688.3618f, 56.6151f;
+								return 1078.8529f, -688.3618f, 56.6151f;
 							
 							case 5:
-								return 657.7627f, -1500.858f, 8.6817f;
+								return 657.7627f, -1500.8582f, 8.6817f;
 							
 							case 6:
-								return 1216.266f, -2907.278f, 4.8661f;
+								return 1216.2662f, -2907.2776f, 4.8661f;
 							
 							case 7:
-								return 958.6841f, -3079.094f, 13.3327f;
+								return 958.6841f, -3079.0935f, 13.3327f;
 							
 							case 8:
-								return 459.5267f, -2429.235f, 4.7518f;
+								return 459.5267f, -2429.2349f, 4.7518f;
 							
 							case 9:
-								return 1130.214f, -2082.811f, 30.0089f;
+								return 1130.2137f, -2082.8108f, 30.0089f;
 							
 							case 10:
-								return 1506.701f, -2135.637f, 75.4567f;
+								return 1506.7013f, -2135.6372f, 75.4567f;
 							
 							case 11:
-								return 1759.277f, -1579.97f, 117.9f;
+								return 1759.2767f, -1579.9696f, 117.9f;
 							
 							case 12:
-								return 2510.45f, -1219.332f, 1.89f;
+								return 2510.4497f, -1219.3317f, 1.89f;
 							
 							case 13:
-								return 2855.604f, -1339.602f, 14.7183f;
+								return 2855.6038f, -1339.6016f, 14.7183f;
 							
 							case 14:
-								return 2826.41f, -743.3448f, 0.3071f;
+								return 2826.4104f, -743.3448f, 0.3071f;
 							
 							case 15:
-								return 1236.599f, -83.0057f, 58.7636f;
+								return 1236.5992f, -83.0057f, 58.7636f;
 							
 							case 16:
-								return 1660.534f, 0.3033f, 172.7744f;
+								return 1660.5343f, 0.3033f, 172.7744f;
 							
 							case 17:
-								return 1917.608f, 301.6851f, 161.8848f;
+								return 1917.6082f, 301.6851f, 161.8848f;
 							
 							case 18:
-								return 2145.003f, 146.688f, 224.1061f;
+								return 2145.0034f, 146.688f, 224.1061f;
 							
 							case 19:
-								return 1456.737f, 1111.848f, 113.334f;
+								return 1456.7374f, 1111.8481f, 113.334f;
 							
 							case 20:
-								return 1135.62f, 58.6667f, 79.7561f;
+								return 1135.6199f, 58.6667f, 79.7561f;
 							
 							case 21:
 								return 680.794f, 559.0409f, 128.0462f;
@@ -4614,49 +4614,49 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 536.7303f, -2817.502f, 5.0421f;
 							
 							case 25:
-								return 984.1771f, -2410.686f, 29.4333f;
+								return 984.1771f, -2410.6863f, 29.4333f;
 							
 							case 26:
 								return 863.2344f, -2151.808f, 29.4816f;
 							
 							case 27:
-								return 1002.942f, -1918.75f, 30.1432f;
+								return 1002.9417f, -1918.7502f, 30.1432f;
 							
 							case 28:
-								return 1183.313f, -1550.946f, 38.5953f;
+								return 1183.3127f, -1550.9458f, 38.5953f;
 							
 							case 29:
-								return 694.0918f, 1283.059f, 359.296f;
+								return 694.0918f, 1283.0587f, 359.296f;
 							
 							case 30:
-								return 745.2003f, 1199.09f, 325.4016f;
+								return 745.2003f, 1199.0901f, 325.4016f;
 							
 							case 31:
 								return 887.6219f, 873.548f, 178.5657f;
 							
 							case 32:
-								return 1828.967f, 1571.725f, 99.7219f;
+								return 1828.967f, 1571.7255f, 99.7219f;
 							
 							case 33:
-								return 2805.81f, 1676.1f, 23.5193f;
+								return 2805.81f, 1676.1002f, 23.5193f;
 							
 							case 34:
-								return 1405.691f, -601.7893f, 73.3473f;
+								return 1405.6907f, -601.7893f, 73.3473f;
 							
 							case 35:
-								return 1710.367f, -464.7253f, 169.8001f;
+								return 1710.3667f, -464.7253f, 169.8001f;
 							
 							case 36:
-								return 1946.392f, 1331.992f, 160.1707f;
+								return 1946.3922f, 1331.992f, 160.1707f;
 							
 							case 37:
-								return 2271.38f, 1711.949f, 67.0413f;
+								return 2271.3796f, 1711.9495f, 67.0413f;
 							
 							case 38:
-								return 2307.003f, -1750.421f, 133.7737f;
+								return 2307.0034f, -1750.4208f, 133.7737f;
 							
 							case 39:
-								return 2172.226f, -1069.367f, 176.0087f;
+								return 2172.2263f, -1069.3674f, 176.0087f;
 							
 							case 40:
 								return 595.0312f, -851.27f, 40.4327f;
@@ -4665,37 +4665,37 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 456.9577f, -752.8668f, 26.3578f;
 							
 							case 42:
-								return 531.9203f, -1034.797f, 27.2597f;
+								return 531.9203f, -1034.7968f, 27.2597f;
 							
 							case 43:
-								return 1289.908f, -3341.78f, 4.9016f;
+								return 1289.9077f, -3341.78f, 4.9016f;
 							
 							case 44:
-								return 533.8767f, -1969.171f, 23.9846f;
+								return 533.8767f, -1969.1707f, 23.9846f;
 							
 							case 45:
-								return 689.5218f, -1774.186f, 8.6f;
+								return 689.5218f, -1774.1862f, 8.6f;
 							
 							case 46:
-								return 848.6605f, -1211.77f, 30.3237f;
+								return 848.6605f, -1211.7699f, 30.3237f;
 							
 							case 47:
-								return 1874.741f, -2202.331f, 166.2907f;
+								return 1874.7408f, -2202.331f, 166.2907f;
 							
 							case 48:
-								return 1458.76f, -2623.696f, 47.69f;
+								return 1458.7603f, -2623.696f, 47.69f;
 							
 							case 49:
-								return 1538.907f, 784.3685f, 76.4501f;
+								return 1538.9073f, 784.3685f, 76.4501f;
 							
 							case 50:
 								return 800.149f, -109.5107f, 79.533f;
 							
 							case 51:
-								return 2687.09f, 889.5835f, 76.4359f;
+								return 2687.0898f, 889.5835f, 76.4359f;
 							
 							case 52:
-								return 939.7744f, -1496.824f, 29.1156f;
+								return 939.7744f, -1496.8242f, 29.1156f;
 							
 							case 53:
 								return 547.5936f, -455.3327f, 23.7304f;
@@ -4707,7 +4707,7 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 454.0637f, -2177.92f, 4.9177f;
 							
 							case 56:
-								return 1468.104f, -1759.198f, 78.3022f;
+								return 1468.1042f, -1759.1979f, 78.3022f;
 							
 							case 57:
 								return 1239.343f, -1097.545f, 37.5256f;
@@ -4719,10 +4719,10 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 512.4025f, 221.9917f, 103.7442f;
 							
 							case 60:
-								return 1545.082f, 1701.081f, 108.769f;
+								return 1545.082f, 1701.0814f, 108.769f;
 							
 							case 61:
-								return 1188.11f, 1556.979f, 107.8028f;
+								return 1188.1104f, 1556.9788f, 107.8028f;
 							
 							case 62:
 								return 1033.948f, -273.4799f, 49.8443f;
@@ -4731,49 +4731,49 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 743.4129f, -591.6385f, 26.0061f;
 							
 							case 64:
-								return 1975.484f, -749.9232f, 96.2513f;
+								return 1975.4843f, -749.9232f, 96.2513f;
 							
 							case 65:
 								return 1968.117f, 708.8224f, 161.8571f;
 							
 							case 66:
-								return 2296.027f, 1152.222f, 64.0942f;
+								return 2296.0273f, 1152.2218f, 64.0942f;
 							
 							case 67:
-								return 2474.09f, 1484.103f, 35.2029f;
+								return 2474.0903f, 1484.1034f, 35.2029f;
 							
 							case 68:
 								return 482.1839f, 664.4731f, 195.1235f;
 							
 							case 69:
-								return 1505.106f, -1271.169f, 121.655f;
+								return 1505.1063f, -1271.169f, 121.655f;
 							
 							case 70:
-								return 1220.729f, -1865.861f, 37.4982f;
+								return 1220.7286f, -1865.861f, 37.4982f;
 							
 							case 71:
-								return 476.6311f, -1283.433f, 28.5393f;
+								return 476.6311f, -1283.4331f, 28.5393f;
 							
 							case 72:
-								return 952.6752f, -2248.219f, 29.5831f;
+								return 952.6752f, -2248.2195f, 29.5831f;
 							
 							case 73:
-								return 1434.707f, -2315.042f, 65.927f;
+								return 1434.7068f, -2315.0417f, 65.927f;
 							
 							case 74:
-								return 1882.254f, -1873.208f, 191.477f;
+								return 1882.2542f, -1873.2075f, 191.477f;
 							
 							case 75:
-								return 2014.572f, -1591.406f, 249.303f;
+								return 2014.572f, -1591.4055f, 249.303f;
 							
 							case 76:
-								return 1969.748f, -992.8931f, 79.6204f;
+								return 1969.7476f, -992.8931f, 79.6204f;
 							
 							case 77:
-								return 2267.432f, -331.317f, 92.9784f;
+								return 2267.4316f, -331.317f, 92.9784f;
 							
 							case 78:
-								return 1205.465f, 336.8802f, 80.9909f;
+								return 1205.4655f, 336.8802f, 80.9909f;
 							
 							case 79:
 								return 531.8229f, -27.4548f, 69.6295f;
@@ -4782,46 +4782,46 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 304.7162f, 262.4799f, 104.337f;
 							
 							case 81:
-								return 572.4857f, -2147.293f, 7.9233f;
+								return 572.4857f, -2147.2932f, 7.9233f;
 							
 							case 82:
-								return 1223.13f, -2338.621f, 59.8673f;
+								return 1223.1305f, -2338.6213f, 59.8673f;
 							
 							case 83:
-								return 1747.151f, -2679.91f, 1.4587f;
+								return 1747.1515f, -2679.91f, 1.4587f;
 							
 							case 84:
 								return 939.6769f, -1342.533f, 11.4778f;
 							
 							case 85:
-								return 1435.646f, -1476.472f, 62.2245f;
+								return 1435.6455f, -1476.4724f, 62.2245f;
 							
 							case 86:
 								return 2273.048f, -539.2752f, 102.9436f;
 							
 							case 87:
-								return 1522.075f, -381.5488f, 200.3996f;
+								return 1522.0752f, -381.5488f, 200.3996f;
 							
 							case 88:
-								return 2778.579f, 1073.328f, 0.6607f;
+								return 2778.5789f, 1073.3276f, 0.6607f;
 							
 							case 89:
-								return 609.4634f, -1333.589f, 20.7017f;
+								return 609.4634f, -1333.5895f, 20.7017f;
 							
 							case 90:
-								return 1360.928f, -946.584f, 55.9209f;
+								return 1360.9276f, -946.584f, 55.9209f;
 							
 							case 91:
-								return 1147.373f, -431.5072f, 65.9987f;
+								return 1147.3726f, -431.5072f, 65.9987f;
 							
 							case 92:
 								return 2391.644f, -932.7006f, 151.3306f;
 							
 							case 93:
-								return 2897.51f, -314.7418f, 17.1346f;
+								return 2897.5105f, -314.7418f, 17.1346f;
 							
 							case 94:
-								return 2963.361f, 513.4398f, 35.0981f;
+								return 2963.3606f, 513.4398f, 35.0981f;
 							
 							case 95:
 								return 2415.814f, 763.4792f, 124.8302f;
@@ -4830,22 +4830,22 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 2054.985f, 953.5229f, 218.5845f;
 							
 							case 97:
-								return 1522.831f, 461.3894f, 224.2793f;
+								return 1522.8307f, 461.3894f, 224.2793f;
 							
 							case 98:
-								return 1301.596f, 1445.471f, 98.4293f;
+								return 1301.596f, 1445.4712f, 98.4293f;
 							
 							case 99:
-								return 1071.843f, -1841.304f, 36.3069f;
+								return 1071.8425f, -1841.3043f, 36.3069f;
 							
 							case 100:
-								return 1133.087f, -2602.795f, 17.3834f;
+								return 1133.0865f, -2602.795f, 17.3834f;
 							
 							case 101:
 								return 484.4286f, -3064.647f, 5.084f;
 							
 							case 102:
-								return 1610.912f, -2385.55f, 90.6982f;
+								return 1610.9121f, -2385.5503f, 90.6982f;
 							
 							case 103:
 								return 695.2822f, -2534.997f, 17.6967f;
@@ -4854,28 +4854,28 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 554.7129f, -1634.238f, 26.9479f;
 							
 							case 105:
-								return 1723.686f, -1038.606f, 129.0783f;
+								return 1723.686f, -1038.6063f, 129.0783f;
 							
 							case 106:
-								return 2637.012f, -1863.213f, 17.7764f;
+								return 2637.012f, -1863.2129f, 17.7764f;
 							
 							case 107:
-								return 2638.077f, 1346.641f, 25.4338f;
+								return 2638.0774f, 1346.6411f, 25.4338f;
 							
 							case 108:
-								return 1910.663f, 29.3172f, 159.5f;
+								return 1910.6632f, 29.3172f, 159.5f;
 							
 							case 109:
-								return 2952.967f, 797.8872f, 0.1f;
+								return 2952.9666f, 797.8872f, 0.1f;
 							
 							case 110:
-								return 2937.12f, 1471.532f, 0f;
+								return 2937.1196f, 1471.5317f, 0f;
 							
 							case 111:
-								return 2348.98f, -2281.005f, 0.1697f;
+								return 2348.98f, -2281.0046f, 0.1697f;
 							
 							case 112:
-								return 2681.416f, -1560.354f, -0.0123f;
+								return 2681.4158f, -1560.3545f, -0.0123f;
 							
 							case 113:
 								return 2812.644f, -27.1503f, 0.7016f;
@@ -4887,16 +4887,16 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 651.1428f, -3112.596f, 0.0233f;
 							
 							case 116:
-								return 2313.423f, -2194.061f, 0.025f;
+								return 2313.4233f, -2194.061f, 0.025f;
 							
 							case 117:
-								return 3055.192f, 185.0506f, 0.4391f;
+								return 3055.1917f, 185.0506f, 0.4391f;
 							
 							case 118:
-								return 2729.46f, -1073.702f, 0.6712f;
+								return 2729.4597f, -1073.7024f, 0.6712f;
 							
 							case 119:
-								return 1423.506f, -2790.912f, 0.7109f;
+								return 1423.5059f, -2790.9116f, 0.7109f;
 							
 							default:
 						}
@@ -4914,37 +4914,37 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 						switch (iParam3)
 						{
 							case 0:
-								return -915.445f, -2520.007f, 58f;
+								return -915.445f, -2520.0068f, 58f;
 							
 							case 1:
-								return -1343.719f, -3336.795f, 30.5601f;
+								return -1343.7191f, -3336.7954f, 30.5601f;
 							
 							case 2:
-								return -1336.239f, -3044.059f, 300.803f;
+								return -1336.2388f, -3044.0593f, 300.803f;
 							
 							case 3:
-								return -1833.852f, -1191.057f, 41.1411f;
+								return -1833.8517f, -1191.0569f, 41.1411f;
 							
 							case 4:
-								return -1955.78f, 1776.57f, 195.8577f;
+								return -1955.7803f, 1776.5697f, 195.8577f;
 							
 							case 5:
-								return -2166.629f, 1607.567f, 260f;
+								return -2166.6292f, 1607.5665f, 260f;
 							
 							case 6:
-								return -417.0685f, 1153.347f, 347.5894f;
+								return -417.0685f, 1153.3469f, 347.5894f;
 							
 							case 7:
 								return -2503.341f, 754.9435f, 342.9515f;
 							
 							case 8:
-								return -2626.127f, 136.1493f, 118.1611f;
+								return -2626.1272f, 136.1493f, 118.1611f;
 							
 							case 9:
-								return -2246.804f, 266.7578f, 194.8923f;
+								return -2246.8037f, 266.7578f, 194.8923f;
 							
 							case 10:
-								return -1364.038f, 56.9618f, 70.9416f;
+								return -1364.0376f, 56.9618f, 70.9416f;
 							
 							case 11:
 								return -94.2512f, 880.448f, 265f;
@@ -4965,40 +4965,40 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return -795.1664f, -736.1061f, 78.6788f;
 							
 							case 17:
-								return -971.361f, -1305.368f, 50f;
+								return -971.361f, -1305.3682f, 50f;
 							
 							case 18:
-								return -1357.973f, -1476.396f, 40.9274f;
+								return -1357.9733f, -1476.3955f, 40.9274f;
 							
 							case 19:
-								return -2004.334f, -556.4324f, 20.3771f;
+								return -2004.3339f, -556.4324f, 20.3771f;
 							
 							case 20:
-								return -1034.381f, 640.7464f, 163.7504f;
+								return -1034.3809f, 640.7464f, 163.7504f;
 							
 							case 21:
-								return -1238.563f, -848.6133f, 89.7682f;
+								return -1238.5632f, -848.6133f, 89.7682f;
 							
 							case 22:
 								return -1169.283f, -467.3812f, 69.0157f;
 							
 							case 23:
-								return -324.4008f, -1968.694f, 71.7904f;
+								return -324.4008f, -1968.6938f, 71.7904f;
 							
 							case 24:
 								return -269.9813f, -2425.728f, 95.05f;
 							
 							case 25:
-								return 247.3292f, -3308.082f, 59.9012f;
+								return 247.3292f, -3308.0818f, 59.9012f;
 							
 							case 26:
 								return 219.492f, -2318.923f, 43.917f;
 							
 							case 27:
-								return 18.8233f, -1504f, 54.686f;
+								return 18.8233f, -1504.0001f, 54.686f;
 							
 							case 28:
-								return 8.9788f, 1715.057f, 249.4028f;
+								return 8.9788f, 1715.0565f, 249.4028f;
 							
 							case 29:
 								return -667.7844f, 404.7751f, 125.5105f;
@@ -5010,25 +5010,25 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return -3079.696f, 766.6476f, 33.988f;
 							
 							case 32:
-								return -1105.589f, 1428.968f, 238.1016f;
+								return -1105.5894f, 1428.9675f, 238.1016f;
 							
 							case 33:
-								return -474.9906f, 1529.526f, 500.0109f;
+								return -474.9906f, 1529.5255f, 500.0109f;
 							
 							case 34:
-								return -1621.841f, 929.212f, 193.8022f;
+								return -1621.8411f, 929.212f, 193.8022f;
 							
 							case 35:
 								return -767.9827f, -21.7202f, 69.0007f;
 							
 							case 36:
-								return -472.9492f, -1444.143f, 92.8559f;
+								return -472.9492f, -1444.1433f, 92.8559f;
 							
 							case 37:
-								return -1879.575f, -2634.001f, 11.491f;
+								return -1879.5746f, -2634.0015f, 11.491f;
 							
 							case 38:
-								return -1459.734f, -2141.965f, 23.7189f;
+								return -1459.7344f, -2141.9648f, 23.7189f;
 							
 							case 39:
 								return -75.0934f, -818.6606f, 599.9617f;
@@ -5037,22 +5037,22 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return -230.7478f, -241.4196f, 76.4557f;
 							
 							case 41:
-								return -1608.013f, -537.3172f, 73.1431f;
+								return -1608.0134f, -537.3172f, 73.1431f;
 							
 							case 42:
 								return -1806.964f, -125.5317f, 118.0094f;
 							
 							case 43:
-								return -3170.222f, 1543.227f, 33.8091f;
+								return -3170.2217f, 1543.2274f, 33.8091f;
 							
 							case 44:
-								return -2753.087f, 1229.005f, 140.7239f;
+								return -2753.0872f, 1229.0054f, 140.7239f;
 							
 							case 45:
 								return -306.4009f, 202.0892f, 180.3099f;
 							
 							case 46:
-								return 396.1246f, -1528.24f, 46.6041f;
+								return 396.1246f, -1528.2404f, 46.6041f;
 							
 							case 47:
 								return 389.6704f, -356.0437f, 61.5436f;
@@ -5061,31 +5061,31 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 324.4086f, -988.9622f, 92.2799f;
 							
 							case 49:
-								return -657.5551f, -1105.199f, 67.647f;
+								return -657.5551f, -1105.1987f, 67.647f;
 							
 							case 50:
-								return -439.2123f, -1003.071f, 58.7819f;
+								return -439.2123f, -1003.0714f, 58.7819f;
 							
 							case 51:
-								return -208.3349f, -1800.983f, 12.0207f;
+								return -208.3349f, -1800.9827f, 12.0207f;
 							
 							case 52:
-								return 104.7709f, -1940.293f, 33.3786f;
+								return 104.7709f, -1940.2928f, 33.3786f;
 							
 							case 53:
 								return -80.1589f, 364.0139f, 180.4526f;
 							
 							case 54:
-								return -1064.813f, 7.4781f, 69.6885f;
+								return -1064.8127f, 7.4781f, 69.6885f;
 							
 							case 55:
-								return -1997.443f, 722.7387f, 175.1271f;
+								return -1997.4425f, 722.7387f, 175.1271f;
 							
 							case 56:
-								return -254.3736f, -3074.535f, 75.4412f;
+								return -254.3736f, -3074.5354f, 75.4412f;
 							
 							case 57:
-								return -830.1344f, -1880.055f, 33.9615f;
+								return -830.1344f, -1880.0549f, 33.9615f;
 							
 							case 58:
 								return -2775.497f, -788.6588f, 36.447f;
@@ -5094,22 +5094,22 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 43.0406f, -413.7074f, 89.5811f;
 							
 							case 60:
-								return -3209.421f, 1110.18f, 37.6606f;
+								return -3209.4211f, 1110.1798f, 37.6606f;
 							
 							case 61:
-								return -2256.718f, -339.6835f, 43.3005f;
+								return -2256.7175f, -339.6835f, 43.3005f;
 							
 							case 62:
-								return -1957.094f, 1330.48f, 236.7105f;
+								return -1957.0941f, 1330.4803f, 236.7105f;
 							
 							case 63:
-								return -1030.221f, 996.1059f, 182.364f;
+								return -1030.2206f, 996.1059f, 182.364f;
 							
 							case 64:
-								return -1529.428f, 441.7661f, 134.8705f;
+								return -1529.4282f, 441.7661f, 134.8705f;
 							
 							case 65:
-								return 145.6732f, 1154.994f, 253.3341f;
+								return 145.6732f, 1154.9943f, 253.3341f;
 							
 							case 66:
 								return -520.5256f, 659.5372f, 177.0043f;
@@ -5127,67 +5127,67 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return -402.9568f, -655.0366f, 60.6586f;
 							
 							case 71:
-								return -1034.505f, -1070.038f, 21.0905f;
+								return -1034.5049f, -1070.0377f, 21.0905f;
 							
 							case 72:
-								return -1013.909f, -1763.924f, 20.6112f;
+								return -1013.9092f, -1763.9242f, 20.6112f;
 							
 							case 73:
-								return -734.4069f, -1448.061f, 26.2766f;
+								return -734.4069f, -1448.0613f, 26.2766f;
 							
 							case 74:
-								return -202.7723f, -1322.269f, 53.6863f;
+								return -202.7723f, -1322.2694f, 53.6863f;
 							
 							case 75:
-								return 388.6693f, -1368.068f, 50.7767f;
+								return 388.6693f, -1368.0679f, 50.7767f;
 							
 							case 76:
-								return -7.0116f, -2230.674f, 39.1959f;
+								return -7.0116f, -2230.6743f, 39.1959f;
 							
 							case 77:
-								return 33.8391f, -2745.649f, 33.5782f;
+								return 33.8391f, -2745.6487f, 33.5782f;
 							
 							case 78:
-								return -1100.793f, -2846.705f, 53.132f;
+								return -1100.7927f, -2846.7046f, 53.132f;
 							
 							case 79:
-								return -1274.324f, -2448.849f, 99.9299f;
+								return -1274.3236f, -2448.8486f, 99.9299f;
 							
 							case 80:
-								return -473.7719f, -2675.318f, 19.2771f;
+								return -473.7719f, -2675.3184f, 19.2771f;
 							
 							case 81:
-								return -727.3944f, -3494.9f, 23.1103f;
+								return -727.3944f, -3494.9004f, 23.1103f;
 							
 							case 82:
-								return -1907.151f, -3034.577f, 39.2742f;
+								return -1907.1514f, -3034.5771f, 39.2742f;
 							
 							case 83:
-								return 416.2226f, -2912.834f, 5.0678f;
+								return 416.2226f, -2912.8342f, 5.0678f;
 							
 							case 84:
 								return 414.82f, -2616.128f, 22.3517f;
 							
 							case 85:
-								return 233.9356f, -1474.491f, 45.7138f;
+								return 233.9356f, -1474.4908f, 45.7138f;
 							
 							case 86:
-								return 93.563f, -1189.746f, 51.969f;
+								return 93.563f, -1189.7456f, 51.969f;
 							
 							case 87:
-								return -607.8086f, -2189.156f, 76.1713f;
+								return -607.8086f, -2189.1565f, 76.1713f;
 							
 							case 88:
-								return -1106.939f, -2019.405f, 33.3166f;
+								return -1106.9393f, -2019.405f, 33.3166f;
 							
 							case 89:
-								return -1210.83f, -1806.382f, 246.2572f;
+								return -1210.8302f, -1806.382f, 246.2572f;
 							
 							case 90:
-								return -1309.448f, -1043.763f, 29.6876f;
+								return -1309.4479f, -1043.7633f, 29.6876f;
 							
 							case 91:
-								return -1618.367f, -827.8159f, 42.3072f;
+								return -1618.3667f, -827.8159f, 42.3072f;
 							
 							case 92:
 								return -2257.555f, -9.0938f, 121.4433f;
@@ -5196,34 +5196,34 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return -777.472f, -376.5067f, 72.7751f;
 							
 							case 94:
-								return -1371.512f, -172.8742f, 99.1525f;
+								return -1371.5116f, -172.8742f, 99.1525f;
 							
 							case 95:
-								return -1842.798f, 302.3257f, 105.5376f;
+								return -1842.7985f, 302.3257f, 105.5376f;
 							
 							case 96:
-								return -1165.458f, 367.7476f, 95.3869f;
+								return -1165.4581f, 367.7476f, 95.3869f;
 							
 							case 97:
-								return -3107.359f, 276.277f, 56.9633f;
+								return -3107.3586f, 276.277f, 56.9633f;
 							
 							case 98:
-								return -2548.786f, 1441.129f, 190.8976f;
+								return -2548.7861f, 1441.129f, 190.8976f;
 							
 							case 99:
-								return -2644.523f, 1868.621f, 168.2627f;
+								return -2644.523f, 1868.6207f, 168.2627f;
 							
 							case 100:
-								return -3029.234f, 1883.871f, 35.4705f;
+								return -3029.2344f, 1883.871f, 35.4705f;
 							
 							case 101:
-								return -1119.207f, 1736.032f, 195.1095f;
+								return -1119.2069f, 1736.032f, 195.1095f;
 							
 							case 102:
-								return -644.2039f, 1743.748f, 227.7433f;
+								return -644.2039f, 1743.7484f, 227.7433f;
 							
 							case 103:
-								return -577.6026f, 2038.995f, 209.9244f;
+								return -577.6026f, 2038.9946f, 209.9244f;
 							
 							case 104:
 								return -302.0078f, 1871.026f, 196.7599f;
@@ -5232,7 +5232,7 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 351.8685f, 1748.149f, 260.866f;
 							
 							case 106:
-								return -11.935f, 1320.348f, 288.0058f;
+								return -11.935f, 1320.3481f, 288.0058f;
 							
 							case 107:
 								return 295.5885f, 753.7887f, 200.7135f;
@@ -5247,31 +5247,31 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 377.5104f, -695.2125f, 102.9432f;
 							
 							case 111:
-								return 392.4507f, -1204.239f, 50f;
+								return 392.4507f, -1204.2394f, 50f;
 							
 							case 112:
-								return 397.6461f, -1929.781f, 43.4559f;
+								return 397.6461f, -1929.7805f, 43.4559f;
 							
 							case 113:
 								return 470.8737f, -2451.431f, 30f;
 							
 							case 114:
-								return -418.7521f, -2424.396f, 20.0582f;
+								return -418.7521f, -2424.3962f, 20.0582f;
 							
 							case 115:
-								return -2440.527f, -1654.13f, 6.3248f;
+								return -2440.5273f, -1654.1301f, 6.3248f;
 							
 							case 116:
-								return -888.3994f, -2938.026f, 26.3869f;
+								return -888.3994f, -2938.0261f, 26.3869f;
 							
 							case 117:
-								return -1374.637f, -2647.817f, 26.4425f;
+								return -1374.6372f, -2647.817f, 26.4425f;
 							
 							case 118:
-								return -1082.177f, -620.1375f, 27.491f;
+								return -1082.1765f, -620.1375f, 27.491f;
 							
 							case 119:
-								return -1471.09f, 1324.141f, 193.4433f;
+								return -1471.0901f, 1324.1405f, 193.4433f;
 							
 							default:
 						}
@@ -5286,40 +5286,40 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 						switch (iParam3)
 						{
 							case 0:
-								return -2303.138f, 218.8738f, 166.6017f;
+								return -2303.1377f, 218.8738f, 166.6017f;
 							
 							case 1:
 								return -2994.291f, 39.7167f, 7.4636f;
 							
 							case 2:
-								return -3410.2f, 967.5133f, 7.3517f;
+								return -3410.2002f, 967.5133f, 7.3517f;
 							
 							case 3:
-								return -3041.96f, 1209.59f, 13.7743f;
+								return -3041.9602f, 1209.5901f, 13.7743f;
 							
 							case 4:
-								return -2502.529f, 756.2985f, 301.2459f;
+								return -2502.5288f, 756.2985f, 301.2459f;
 							
 							case 5:
-								return -1352.546f, 120.6978f, 55.2388f;
+								return -1352.5457f, 120.6978f, 55.2388f;
 							
 							case 6:
-								return -1729.21f, -193.1235f, 57.5038f;
+								return -1729.2104f, -193.1235f, 57.5038f;
 							
 							case 7:
-								return -1635.4f, -1054.226f, 12.1522f;
+								return -1635.4001f, -1054.2262f, 12.1522f;
 							
 							case 8:
-								return -1268.607f, -1915.845f, 4.8616f;
+								return -1268.6067f, -1915.845f, 4.8616f;
 							
 							case 9:
-								return -18.3427f, -1297.615f, 28.3575f;
+								return -18.3427f, -1297.6146f, 28.3575f;
 							
 							case 10:
 								return -145.3585f, 930.7858f, 234.6711f;
 							
 							case 11:
-								return -424.3762f, 1587.798f, 355.2649f;
+								return -424.3762f, 1587.7982f, 355.2649f;
 							
 							case 12:
 								return -112.2256f, 354.4933f, 111.6961f;
@@ -5328,52 +5328,52 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 67.6185f, -673.5317f, 28.7056f;
 							
 							case 14:
-								return 338.3054f, -1394.279f, 31.5093f;
+								return 338.3054f, -1394.2786f, 31.5093f;
 							
 							case 15:
 								return -19.2884f, -1426.187f, 29.6575f;
 							
 							case 16:
-								return -251.9772f, -2029.258f, 28.946f;
+								return -251.9772f, -2029.2584f, 28.946f;
 							
 							case 17:
-								return -432.7254f, -2440.489f, 5.0008f;
+								return -432.7254f, -2440.4885f, 5.0008f;
 							
 							case 18:
 								return -956.3549f, -3053.302f, 12.9451f;
 							
 							case 19:
-								return -1662.76f, -3177.918f, 12.9914f;
+								return -1662.76f, -3177.9182f, 12.9914f;
 							
 							case 20:
-								return -457.7008f, -1507.786f, 12.0586f;
+								return -457.7008f, -1507.7855f, 12.0586f;
 							
 							case 21:
 								return 188.8895f, 300.349f, 104.515f;
 							
 							case 22:
-								return 3.4946f, -2452.885f, 13.4665f;
+								return 3.4946f, -2452.8853f, 13.4665f;
 							
 							case 23:
 								return -966.3007f, -973.4243f, 2.876f;
 							
 							case 24:
-								return -1536.435f, 868.5392f, 180.16f;
+								return -1536.4352f, 868.5392f, 180.16f;
 							
 							case 25:
-								return -1521.53f, 1493.765f, 110.5947f;
+								return -1521.5298f, 1493.7648f, 110.5947f;
 							
 							case 26:
-								return -1173.264f, -2037.82f, 12.776f;
+								return -1173.2635f, -2037.8196f, 12.776f;
 							
 							case 27:
-								return -0.4394f, -1037.738f, 37.152f;
+								return -0.4394f, -1037.7375f, 37.152f;
 							
 							case 28:
-								return 137.7382f, -3092.8f, 4.8963f;
+								return 137.7382f, -3092.7996f, 4.8963f;
 							
 							case 29:
-								return -1177.272f, -507.6518f, 34.5662f;
+								return -1177.2716f, -507.6518f, 34.5662f;
 							
 							case 30:
 								return -575.4523f, -142.0386f, 36.2353f;
@@ -5385,7 +5385,7 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return -455.0906f, -999.9053f, 22.8657f;
 							
 							case 33:
-								return -1133.934f, -1447.037f, 4f;
+								return -1133.9344f, -1447.0367f, 4f;
 							
 							case 34:
 								return -231.0999f, -242.6378f, 49.0062f;
@@ -5394,46 +5394,46 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 69.8444f, -62.9348f, 67.8751f;
 							
 							case 36:
-								return -1981.162f, -296.7468f, 47.1062f;
+								return -1981.1616f, -296.7468f, 47.1062f;
 							
 							case 37:
-								return 98.9504f, -1979.664f, 19.6635f;
+								return 98.9504f, -1979.6643f, 19.6635f;
 							
 							case 38:
 								return 324.168f, -2758.195f, 5.0028f;
 							
 							case 39:
-								return 219.5919f, -2310.078f, 7.4018f;
+								return 219.5919f, -2310.0776f, 7.4018f;
 							
 							case 40:
 								return -693.2001f, -592.6827f, 30.5552f;
 							
 							case 41:
-								return -1044.535f, 500.5195f, 83.1617f;
+								return -1044.5354f, 500.5195f, 83.1617f;
 							
 							case 42:
-								return -1792.464f, 395.7471f, 111.7909f;
+								return -1792.4644f, 395.7471f, 111.7909f;
 							
 							case 43:
-								return -425.5935f, 1123.605f, 324.8547f;
+								return -425.5935f, 1123.6049f, 324.8547f;
 							
 							case 44:
-								return -523.835f, -2902.068f, 5.0004f;
+								return -523.835f, -2902.0679f, 5.0004f;
 							
 							case 45:
-								return -1213.84f, -2724.547f, 12.9541f;
+								return -1213.84f, -2724.5466f, 12.9541f;
 							
 							case 46:
-								return -656.7547f, -1708.686f, 23.8153f;
+								return -656.7547f, -1708.6864f, 23.8153f;
 							
 							case 47:
-								return -1024.89f, 1012.239f, 159.6649f;
+								return -1024.8899f, 1012.2385f, 159.6649f;
 							
 							case 48:
 								return -850.8826f, 1708.716f, 193.9906f;
 							
 							case 49:
-								return -2253.348f, 1324.29f, 291.0074f;
+								return -2253.348f, 1324.2896f, 291.0074f;
 							
 							case 50:
 								return -876.7352f, -210.6213f, 38.2135f;
@@ -5442,43 +5442,43 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return -309.9497f, -609.0406f, 32.5568f;
 							
 							case 52:
-								return -743.9313f, -2283.372f, 12.06f;
+								return -743.9313f, -2283.3716f, 12.06f;
 							
 							case 53:
-								return -2971.731f, 584.4294f, 19.423f;
+								return -2971.7314f, 584.4294f, 19.423f;
 							
 							case 54:
-								return 288.4228f, -1601.137f, 30.2709f;
+								return 288.4228f, -1601.1375f, 30.2709f;
 							
 							case 55:
 								return 97.6932f, -348.3357f, 41.3071f;
 							
 							case 56:
-								return -1065.912f, -12.7356f, 49.4423f;
+								return -1065.9119f, -12.7356f, 49.4423f;
 							
 							case 57:
-								return -388.1416f, -2283.256f, 6.6082f;
+								return -388.1416f, -2283.2563f, 6.6082f;
 							
 							case 58:
-								return -1213.121f, -945.0177f, 1.1502f;
+								return -1213.1215f, -945.0177f, 1.1502f;
 							
 							case 59:
-								return -1605.807f, -588.1375f, 32.1103f;
+								return -1605.8069f, -588.1375f, 32.1103f;
 							
 							case 60:
 								return -1573.01f, 400.7232f, 106.194f;
 							
 							case 61:
-								return -2751.19f, 1185.782f, 93.6924f;
+								return -2751.1904f, 1185.7819f, 93.6924f;
 							
 							case 62:
-								return 287.3323f, -3014.992f, 8.8106f;
+								return 287.3323f, -3014.9917f, 8.8106f;
 							
 							case 63:
 								return -96.4867f, -2744.17f, 5.1062f;
 							
 							case 64:
-								return -1350.788f, -1435.002f, 3.325f;
+								return -1350.7883f, -1435.0022f, 3.325f;
 							
 							case 65:
 								return -156.4393f, -979.7114f, 20.2769f;
@@ -5496,58 +5496,58 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return -671.4555f, -891.9421f, 23.4991f;
 							
 							case 70:
-								return -190.4528f, 1299.355f, 302.9701f;
+								return -190.4528f, 1299.3552f, 302.9701f;
 							
 							case 71:
-								return -1284.425f, -3403.299f, 12.9452f;
+								return -1284.4252f, -3403.2993f, 12.9452f;
 							
 							case 72:
-								return -825.6949f, -3337.779f, 12.9445f;
+								return -825.6949f, -3337.7793f, 12.9445f;
 							
 							case 73:
-								return -1368.524f, -2335.062f, 12.9446f;
+								return -1368.524f, -2335.0615f, 12.9446f;
 							
 							case 74:
-								return -1098.009f, -2415.526f, 12.9452f;
+								return -1098.009f, -2415.5261f, 12.9452f;
 							
 							case 75:
-								return -1336.274f, -3044.103f, 12.9444f;
+								return -1336.2744f, -3044.1025f, 12.9444f;
 							
 							case 76:
-								return -821.012f, -1992.519f, 9.6439f;
+								return -821.012f, -1992.5189f, 9.6439f;
 							
 							case 77:
 								return -350.2334f, -2640.808f, 5.0003f;
 							
 							case 78:
-								return -219.3889f, -2386.881f, 5.0014f;
+								return -219.3889f, -2386.8809f, 5.0014f;
 							
 							case 79:
-								return 109.4531f, -2816.037f, 9.7899f;
+								return 109.4531f, -2816.0366f, 9.7899f;
 							
 							case 80:
-								return 208.6273f, -3327.894f, 4.8177f;
+								return 208.6273f, -3327.8938f, 4.8177f;
 							
 							case 81:
-								return 370.2768f, -2128.437f, 15.2365f;
+								return 370.2768f, -2128.4368f, 15.2365f;
 							
 							case 82:
 								return -53.6978f, -1688.638f, 28.4917f;
 							
 							case 83:
-								return -1009.052f, -1759.302f, 5.5498f;
+								return -1009.0515f, -1759.3016f, 5.5498f;
 							
 							case 84:
-								return -988.1508f, -2106.591f, 10.5382f;
+								return -988.1508f, -2106.5906f, 10.5382f;
 							
 							case 85:
 								return -708.1929f, -1517.804f, 4.4121f;
 							
 							case 86:
-								return -228.0423f, -1514.504f, 30.4622f;
+								return -228.0423f, -1514.5037f, 30.4622f;
 							
 							case 87:
-								return 297.5852f, -1204.386f, 28.1985f;
+								return 297.5852f, -1204.3859f, 28.1985f;
 							
 							case 88:
 								return 383.1396f, -904.1862f, 28.4376f;
@@ -5556,43 +5556,43 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return -630.6f, -1071.2f, 21.7f;
 							
 							case 90:
-								return -1207.432f, -1796.611f, 2.9086f;
+								return -1207.4319f, -1796.611f, 2.9086f;
 							
 							case 91:
-								return -876.3531f, -1501.708f, 4.1775f;
+								return -876.3531f, -1501.7078f, 4.1775f;
 							
 							case 92:
-								return -1271.531f, -1099.613f, 6.5852f;
+								return -1271.531f, -1099.6127f, 6.5852f;
 							
 							case 93:
-								return -1730.83f, -725.0892f, 9.3941f;
+								return -1730.8298f, -725.0892f, 9.3941f;
 							
 							case 94:
-								return -1431.005f, -271.0002f, 45.2077f;
+								return -1431.0054f, -271.0002f, 45.2077f;
 							
 							case 95:
-								return -1966.816f, 182.3251f, 85.7706f;
+								return -1966.8158f, 182.3251f, 85.7706f;
 							
 							case 96:
-								return -2293.777f, 371.4213f, 173.6017f;
+								return -2293.7769f, 371.4213f, 173.6017f;
 							
 							case 97:
-								return -2156.688f, 1551.647f, 272.9088f;
+								return -2156.6882f, 1551.6466f, 272.9088f;
 							
 							case 98:
-								return -2780.149f, 1423.379f, 99.9284f;
+								return -2780.1494f, 1423.379f, 99.9284f;
 							
 							case 99:
-								return -2587.936f, 1930.876f, 166.0052f;
+								return -2587.9355f, 1930.8761f, 166.0052f;
 							
 							case 100:
-								return -3017.571f, 1860.058f, 28.4173f;
+								return -3017.5708f, 1860.0577f, 28.4173f;
 							
 							case 101:
-								return 142.7543f, 1689.097f, 233.0739f;
+								return 142.7543f, 1689.0972f, 233.0739f;
 							
 							case 102:
-								return 186.6585f, 1162.86f, 224.5946f;
+								return 186.6585f, 1162.8601f, 224.5946f;
 							
 							case 103:
 								return -461.6094f, 640.4639f, 143.1886f;
@@ -5610,19 +5610,19 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 156.6823f, -565.1396f, 42.893f;
 							
 							case 108:
-								return -1834.908f, -1221.919f, 0.8054f;
+								return -1834.908f, -1221.9192f, 0.8054f;
 							
 							case 109:
-								return -707.5134f, -1340.225f, -0.0558f;
+								return -707.5134f, -1340.2247f, -0.0558f;
 							
 							case 110:
-								return -544.5794f, -2580.831f, 0.2096f;
+								return -544.5794f, -2580.8306f, 0.2096f;
 							
 							case 111:
-								return 103.7708f, -2461.292f, 0.1193f;
+								return 103.7708f, -2461.2915f, 0.1193f;
 							
 							case 112:
-								return -3046.133f, 1570.539f, -0.3275f;
+								return -3046.1326f, 1570.5392f, -0.3275f;
 							
 							case 113:
 								return -2241.345f, -530.6988f, -0.3275f;
@@ -5631,19 +5631,19 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 44.8316f, 844.4984f, 195.5816f;
 							
 							case 115:
-								return -1894.231f, -2724.314f, -0.3275f;
+								return -1894.2308f, -2724.3145f, -0.3275f;
 							
 							case 116:
-								return -1029.441f, -1778.107f, -0.3275f;
+								return -1029.4409f, -1778.1066f, -0.3275f;
 							
 							case 117:
-								return -95.1061f, -2313.997f, 0.4963f;
+								return -95.1061f, -2313.9973f, 0.4963f;
 							
 							case 118:
-								return -1546.054f, -1509.913f, 0.409f;
+								return -1546.0536f, -1509.9126f, 0.409f;
 							
 							case 119:
-								return -1678.194f, -2238.986f, 0.9841f;
+								return -1678.1943f, -2238.9858f, 0.9841f;
 							
 							default:
 						}
@@ -5661,61 +5661,61 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 						switch (iParam3)
 						{
 							case 0:
-								return -1874.714f, 2055.242f, 164.0655f;
+								return -1874.714f, 2055.2424f, 164.0655f;
 							
 							case 1:
-								return -2398.244f, 2197.323f, 103.0324f;
+								return -2398.2444f, 2197.3228f, 103.0324f;
 							
 							case 2:
-								return -2470.967f, 2693.007f, 16.093f;
+								return -2470.9666f, 2693.0068f, 16.093f;
 							
 							case 3:
-								return -1417.126f, 2634.235f, 3.8116f;
+								return -1417.1256f, 2634.2346f, 3.8116f;
 							
 							case 4:
-								return -1617.519f, 3185.984f, 52.4819f;
+								return -1617.5188f, 3185.984f, 52.4819f;
 							
 							case 5:
-								return -1187.536f, 3851.927f, 510.4073f;
+								return -1187.5358f, 3851.9265f, 510.4073f;
 							
 							case 6:
-								return -1243.21f, 4536.333f, 198.2652f;
+								return -1243.2103f, 4536.3325f, 198.2652f;
 							
 							case 7:
-								return -766.5436f, 4335.334f, 181.1521f;
+								return -766.5436f, 4335.3345f, 181.1521f;
 							
 							case 8:
-								return -515.496f, 4425.549f, 56.3238f;
+								return -515.496f, 4425.5493f, 56.3238f;
 							
 							case 9:
 								return -210.6103f, 3651.887f, 80.5153f;
 							
 							case 10:
-								return 90.0834f, 3766.962f, 52.4048f;
+								return 90.0834f, 3766.9617f, 52.4048f;
 							
 							case 11:
-								return 267.8927f, 2866.58f, 81.5228f;
+								return 267.8927f, 2866.5798f, 81.5228f;
 							
 							case 12:
-								return 180.018f, 2272.227f, 109.032f;
+								return 180.018f, 2272.2268f, 109.032f;
 							
 							case 13:
-								return -618.2112f, 2031.457f, 238.4183f;
+								return -618.2112f, 2031.4565f, 238.4183f;
 							
 							case 14:
-								return -1185.328f, 2439.395f, 110.052f;
+								return -1185.3284f, 2439.395f, 110.052f;
 							
 							case 15:
-								return -2881.416f, 3363.437f, 44.4458f;
+								return -2881.4158f, 3363.4365f, 44.4458f;
 							
 							case 16:
-								return -2188.789f, 4395.888f, 71.8569f;
+								return -2188.7888f, 4395.888f, 71.8569f;
 							
 							case 17:
-								return -2166.268f, 5204.997f, 32.4229f;
+								return -2166.2676f, 5204.9966f, 32.4229f;
 							
 							case 18:
-								return 239.3275f, 5576.022f, 610.5799f;
+								return 239.3275f, 5576.0225f, 610.5799f;
 							
 							case 19:
 								return -549.4456f, 5308.46f, 118.8087f;
@@ -5724,55 +5724,55 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return -686.6255f, 5674.634f, 64.1394f;
 							
 							case 21:
-								return 25.1643f, 7643.369f, 32.4106f;
+								return 25.1643f, 7643.3687f, 32.4106f;
 							
 							case 22:
 								return -162.8882f, 6422.088f, 46.3268f;
 							
 							case 23:
-								return 269.3018f, 5863.51f, 425.1252f;
+								return 269.3018f, 5863.5103f, 425.1252f;
 							
 							case 24:
-								return 158.6423f, 4622.624f, 213.8925f;
+								return 158.6423f, 4622.6235f, 213.8925f;
 							
 							case 25:
-								return 31.6062f, 4328.141f, 56.7127f;
+								return 31.6062f, 4328.1406f, 56.7127f;
 							
 							case 26:
-								return -959.6198f, 4843.202f, 317.838f;
+								return -959.6198f, 4843.2017f, 317.838f;
 							
 							case 27:
-								return -1179.401f, 4926.922f, 230.3542f;
+								return -1179.4015f, 4926.9224f, 230.3542f;
 							
 							case 28:
-								return -1801.77f, 4513.373f, 40.2242f;
+								return -1801.7695f, 4513.373f, 40.2242f;
 							
 							case 29:
-								return -2146.721f, 3964.171f, 111.159f;
+								return -2146.7214f, 3964.1711f, 111.159f;
 							
 							case 30:
 								return -668.1703f, 3607.985f, 305.8568f;
 							
 							case 31:
-								return -409.327f, 2963.414f, 38.182f;
+								return -409.327f, 2963.4136f, 38.182f;
 							
 							case 32:
-								return -290.9469f, 2533.475f, 92.1749f;
+								return -290.9469f, 2533.4746f, 92.1749f;
 							
 							case 33:
-								return -3029.401f, 1883.96f, 35.4066f;
+								return -3029.401f, 1883.9596f, 35.4066f;
 							
 							case 34:
-								return -2597.654f, 1922.071f, 179.5395f;
+								return -2597.6538f, 1922.0712f, 179.5395f;
 							
 							case 35:
-								return 80.7072f, 5032.946f, 490.6172f;
+								return 80.7072f, 5032.9463f, 490.6172f;
 							
 							case 36:
 								return -899.8328f, 6042.451f, 53.0212f;
 							
 							case 37:
-								return -1576.676f, 5160.763f, 26.8806f;
+								return -1576.676f, 5160.7627f, 26.8806f;
 							
 							case 38:
 								return 145.5836f, 6866.114f, 38.7097f;
@@ -5781,40 +5781,40 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return -50.5306f, 6236.916f, 79.3327f;
 							
 							case 40:
-								return -368.4536f, 6104.72f, 53f;
+								return -368.4536f, 6104.7197f, 53f;
 							
 							case 41:
-								return -1599.971f, 2104.185f, 80.8163f;
+								return -1599.9713f, 2104.1846f, 80.8163f;
 							
 							case 42:
-								return -1626.487f, 2585.598f, 12.1104f;
+								return -1626.4868f, 2585.598f, 12.1104f;
 							
 							case 43:
-								return -2064f, 3361.181f, 48.6443f;
+								return -2064.0005f, 3361.181f, 48.6443f;
 							
 							case 44:
-								return -2357.318f, 3250.916f, 117.4892f;
+								return -2357.318f, 3250.9163f, 117.4892f;
 							
 							case 45:
-								return -2684.946f, 2304.948f, 39.1557f;
+								return -2684.9463f, 2304.948f, 39.1557f;
 							
 							case 46:
-								return -772.2781f, 4704.552f, 242.9476f;
+								return -772.2781f, 4704.5522f, 242.9476f;
 							
 							case 47:
 								return 125.5518f, 3365.379f, 35.8003f;
 							
 							case 48:
-								return -113.0094f, 2803.876f, 67.1096f;
+								return -113.0094f, 2803.8757f, 67.1096f;
 							
 							case 49:
-								return -179.3538f, 1907.562f, 221.1006f;
+								return -179.3538f, 1907.5616f, 221.1006f;
 							
 							case 50:
-								return -1235.554f, 1879.036f, 150.8745f;
+								return -1235.5541f, 1879.0356f, 150.8745f;
 							
 							case 51:
-								return 341.9869f, 3569.314f, 63.2875f;
+								return 341.9869f, 3569.3142f, 63.2875f;
 							
 							case 52:
 								return 391.3682f, 5485.655f, 1000f;
@@ -5826,19 +5826,19 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return -292.9588f, 5839.533f, 129.366f;
 							
 							case 55:
-								return -1502.468f, 5984.955f, 34.7383f;
+								return -1502.4677f, 5984.9546f, 34.7383f;
 							
 							case 56:
-								return -3449.053f, 2645.437f, 55.2519f;
+								return -3449.053f, 2645.4365f, 55.2519f;
 							
 							case 57:
-								return -1096.963f, 3225.607f, 147.7444f;
+								return -1096.9625f, 3225.6072f, 147.7444f;
 							
 							case 58:
 								return -278.2971f, 6637.778f, 45.611f;
 							
 							case 59:
-								return 297.8872f, 4013.252f, 33.872f;
+								return 297.8872f, 4013.2524f, 33.872f;
 							
 							case 60:
 								return -271.6442f, 5586.137f, 250.6218f;
@@ -5901,28 +5901,28 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return -3051.213f, 4178.12f, 72.7681f;
 							
 							case 80:
-								return -2606.26f, 2993.814f, 30.4219f;
+								return -2606.2598f, 2993.814f, 30.4219f;
 							
 							case 81:
-								return -2302.76f, 2011.211f, 153.3448f;
+								return -2302.7595f, 2011.2108f, 153.3448f;
 							
 							case 82:
-								return -2254.314f, 1680.506f, 298.8981f;
+								return -2254.3137f, 1680.5056f, 298.8981f;
 							
 							case 83:
-								return -1955.917f, 1772.408f, 201.629f;
+								return -1955.917f, 1772.4076f, 201.629f;
 							
 							case 84:
-								return -1751.763f, 1998.548f, 129.1121f;
+								return -1751.7631f, 1998.5481f, 129.1121f;
 							
 							case 85:
-								return -1453.889f, 2069.22f, 65.2848f;
+								return -1453.8889f, 2069.2202f, 65.2848f;
 							
 							case 86:
-								return -1479.386f, 2405.98f, 37.5402f;
+								return -1479.3862f, 2405.9797f, 37.5402f;
 							
 							case 87:
-								return -1041.601f, 3963.552f, 344.3259f;
+								return -1041.6007f, 3963.552f, 344.3259f;
 							
 							case 88:
 								return -775.5471f, 4048.385f, 310.1201f;
@@ -5931,19 +5931,19 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return -883.0366f, 4411.045f, 29.2546f;
 							
 							case 90:
-								return -1215.23f, 4370.065f, 38.5217f;
+								return -1215.2303f, 4370.065f, 38.5217f;
 							
 							case 91:
-								return -1269.523f, 4386.938f, 1000f;
+								return -1269.5232f, 4386.9385f, 1000f;
 							
 							case 92:
-								return -1508.03f, 4446.546f, 59.4166f;
+								return -1508.0304f, 4446.5464f, 59.4166f;
 							
 							case 93:
-								return -1449.331f, 4602.479f, 336.1419f;
+								return -1449.3313f, 4602.479f, 336.1419f;
 							
 							case 94:
-								return -1640.183f, 5440.63f, 43.1539f;
+								return -1640.1833f, 5440.6304f, 43.1539f;
 							
 							case 95:
 								return -891.0049f, 5157.28f, 187.01f;
@@ -5955,25 +5955,25 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 537.1121f, 4647.938f, 274.9371f;
 							
 							case 98:
-								return 64.3661f, 4022.363f, 575.3698f;
+								return 64.3661f, 4022.3625f, 575.3698f;
 							
 							case 99:
-								return 907.8411f, 3627.435f, 53.8748f;
+								return 907.8411f, 3627.4348f, 53.8748f;
 							
 							case 100:
-								return 591.9018f, 2977.436f, 82.2499f;
+								return 591.9018f, 2977.4355f, 82.2499f;
 							
 							case 101:
-								return 259.6137f, 1788.459f, 256.6769f;
+								return 259.6137f, 1788.4592f, 256.6769f;
 							
 							case 102:
-								return -2092.081f, 2518.016f, 800f;
+								return -2092.0813f, 2518.0164f, 800f;
 							
 							case 103:
-								return -2536.684f, 1678.45f, 196.0372f;
+								return -2536.6838f, 1678.4497f, 196.0372f;
 							
 							case 104:
-								return 52.1855f, 7343.64f, 518.5611f;
+								return 52.1855f, 7343.6396f, 518.5611f;
 							
 							case 105:
 								return -521.5972f, 6960.141f, 172.8203f;
@@ -5982,43 +5982,43 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return -684.2739f, 6467.878f, 165.8478f;
 							
 							case 107:
-								return -1060.232f, 5711.063f, 333.8782f;
+								return -1060.2322f, 5711.0635f, 333.8782f;
 							
 							case 108:
-								return -1786.052f, 5471.512f, 614.6761f;
+								return -1786.0522f, 5471.512f, 614.6761f;
 							
 							case 109:
-								return -1501.189f, 3295.095f, 245.8079f;
+								return -1501.1886f, 3295.0955f, 245.8079f;
 							
 							case 110:
-								return -2149.145f, 3521.295f, 186.103f;
+								return -2149.1445f, 3521.295f, 186.103f;
 							
 							case 111:
-								return 887.6612f, 5610.092f, 697.7338f;
+								return 887.6612f, 5610.0923f, 697.7338f;
 							
 							case 112:
-								return 451.4696f, 5020.989f, 610.8222f;
+								return 451.4696f, 5020.9893f, 610.8222f;
 							
 							case 113:
 								return 693.6552f, 4097.276f, 53.8927f;
 							
 							case 114:
-								return -99.6831f, 3960.636f, 80.8691f;
+								return -99.6831f, 3960.6362f, 80.8691f;
 							
 							case 115:
-								return -579.6645f, 3979.675f, 136.2872f;
+								return -579.6645f, 3979.6753f, 136.2872f;
 							
 							case 116:
 								return -996.2939f, 4194.288f, 151.0646f;
 							
 							case 117:
-								return -1542.398f, 2886.044f, 1000f;
+								return -1542.3983f, 2886.0444f, 1000f;
 							
 							case 118:
-								return -3004.988f, 2333.1f, 209.9484f;
+								return -3004.9878f, 2333.0999f, 209.9484f;
 							
 							case 119:
-								return -3622.204f, 4740.62f, 19.17f;
+								return -3622.204f, 4740.6196f, 19.17f;
 							
 							default:
 						}
@@ -6033,28 +6033,28 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 						switch (iParam3)
 						{
 							case 0:
-								return -2200.786f, 3429.213f, 31.6018f;
+								return -2200.7861f, 3429.2134f, 31.6018f;
 							
 							case 1:
-								return -1873.915f, 2090.595f, 139.9944f;
+								return -1873.9148f, 2090.5955f, 139.9944f;
 							
 							case 2:
-								return -1674.252f, 2301.497f, 59.0047f;
+								return -1674.2521f, 2301.497f, 59.0047f;
 							
 							case 3:
-								return -506.3776f, 4358.938f, 66.4342f;
+								return -506.3776f, 4358.9375f, 66.4342f;
 							
 							case 4:
 								return -83.7414f, 4580.993f, 122.1646f;
 							
 							case 5:
-								return -207.3853f, 3598.517f, 60.323f;
+								return -207.3853f, 3598.5168f, 60.323f;
 							
 							case 6:
-								return 233.0533f, 3547.927f, 30.2697f;
+								return 233.0533f, 3547.9268f, 30.2697f;
 							
 							case 7:
-								return 93.7029f, 3597.86f, 38.7393f;
+								return 93.7029f, 3597.8599f, 38.7393f;
 							
 							case 8:
 								return 327f, 2858f, 42.4386f;
@@ -6063,40 +6063,40 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 158.1294f, 3136.305f, 42.4573f;
 							
 							case 10:
-								return -210.5036f, 2955.358f, 28.941f;
+								return -210.5036f, 2955.3577f, 28.941f;
 							
 							case 11:
-								return -288.922f, 2524.722f, 73.6685f;
+								return -288.922f, 2524.7224f, 73.6685f;
 							
 							case 12:
-								return -734.5254f, 5594.983f, 34.288f;
+								return -734.5254f, 5594.9834f, 34.288f;
 							
 							case 13:
-								return 88.2503f, 6368.129f, 30.2271f;
+								return 88.2503f, 6368.1294f, 30.2271f;
 							
 							case 14:
-								return -344.4945f, 6242.846f, 30.4877f;
+								return -344.4945f, 6242.8457f, 30.4877f;
 							
 							case 15:
-								return -267.3751f, 6639.444f, 6.3939f;
+								return -267.3751f, 6639.4443f, 6.3939f;
 							
 							case 16:
-								return -1444.47f, 5418.419f, 22.2866f;
+								return -1444.4702f, 5418.419f, 22.2866f;
 							
 							case 17:
-								return -1611.041f, 5258.685f, 2.9791f;
+								return -1611.0414f, 5258.6846f, 2.9791f;
 							
 							case 18:
-								return -1823.203f, 4464.67f, 37.4717f;
+								return -1823.2031f, 4464.67f, 37.4717f;
 							
 							case 19:
-								return -2488.111f, 2740.839f, 1.8909f;
+								return -2488.1113f, 2740.8389f, 1.8909f;
 							
 							case 20:
-								return -1626.549f, 2587.924f, 1.6362f;
+								return -1626.5487f, 2587.9238f, 1.6362f;
 							
 							case 21:
-								return -1575.299f, 2105.205f, 66.0545f;
+								return -1575.2991f, 2105.205f, 66.0545f;
 							
 							case 22:
 								return -543.6063f, 1983.754f, 126.0263f;
@@ -6105,103 +6105,103 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return -563.8864f, 1886.811f, 122.0349f;
 							
 							case 24:
-								return -592.4536f, 2076.64f, 130.3709f;
+								return -592.4536f, 2076.6404f, 130.3709f;
 							
 							case 25:
-								return -2497.361f, 2307.194f, 33.1315f;
+								return -2497.361f, 2307.1936f, 33.1315f;
 							
 							case 26:
-								return -2584.923f, 1931.11f, 166.3129f;
+								return -2584.9226f, 1931.1104f, 166.3129f;
 							
 							case 27:
-								return -1618.161f, 3184.126f, 31.8513f;
+								return -1618.1613f, 3184.1265f, 31.8513f;
 							
 							case 28:
 								return -913.2203f, 2562.701f, 57.2099f;
 							
 							case 29:
-								return -1163.923f, 2408.993f, 92.402f;
+								return -1163.9229f, 2408.9934f, 92.402f;
 							
 							case 30:
-								return 188.3494f, 2295.03f, 92.7443f;
+								return 188.3494f, 2295.0298f, 92.7443f;
 							
 							case 31:
-								return -96.8265f, 2224.75f, 159.4986f;
+								return -96.8265f, 2224.7505f, 159.4986f;
 							
 							case 32:
-								return -834.779f, 4178.558f, 214.3525f;
+								return -834.779f, 4178.5576f, 214.3525f;
 							
 							case 33:
-								return -790.3221f, 2901.125f, 18.2471f;
+								return -790.3221f, 2901.1248f, 18.2471f;
 							
 							case 34:
-								return -799.6998f, 3478.014f, 172.9345f;
+								return -799.6998f, 3478.0144f, 172.9345f;
 							
 							case 35:
-								return -1347.726f, 4127.416f, 61.6295f;
+								return -1347.7264f, 4127.4155f, 61.6295f;
 							
 							case 36:
-								return -1364.709f, 4848.779f, 144.9459f;
+								return -1364.7091f, 4848.779f, 144.9459f;
 							
 							case 37:
-								return -2168.336f, 5186.728f, 14.9725f;
+								return -2168.3364f, 5186.728f, 14.9725f;
 							
 							case 38:
-								return -987.1982f, 5075.115f, 186.5395f;
+								return -987.1982f, 5075.1147f, 186.5395f;
 							
 							case 39:
-								return 231.926f, 5246.831f, 601.2042f;
+								return 231.926f, 5246.8306f, 601.2042f;
 							
 							case 40:
-								return -1.0985f, 5029.458f, 446.6905f;
+								return -1.0985f, 5029.4585f, 446.6905f;
 							
 							case 41:
 								return -134.3454f, 4916.509f, 353.0826f;
 							
 							case 42:
-								return -434.7882f, 4885.861f, 189.7331f;
+								return -434.7882f, 4885.8613f, 189.7331f;
 							
 							case 43:
 								return -592.1419f, 5361.79f, 69.3186f;
 							
 							case 44:
-								return 64.7121f, 7052.296f, 15.7854f;
+								return 64.7121f, 7052.2964f, 15.7854f;
 							
 							case 45:
 								return -577.7616f, 5954.945f, 25.1362f;
 							
 							case 46:
-								return -945.8056f, 4613.758f, 238.1628f;
+								return -945.8056f, 4613.7583f, 238.1628f;
 							
 							case 47:
-								return -2228.817f, 4218.248f, 45.7951f;
+								return -2228.8174f, 4218.2476f, 45.7951f;
 							
 							case 48:
-								return -2493.361f, 4193.219f, 1.0754f;
+								return -2493.3613f, 4193.219f, 1.0754f;
 							
 							case 49:
-								return -3073.088f, 3200.413f, 0.9527f;
+								return -3073.0884f, 3200.4133f, 0.9527f;
 							
 							case 50:
 								return 376.4925f, 6630.836f, 27.7626f;
 							
 							case 51:
-								return -1692.925f, 4597.169f, 46.8227f;
+								return -1692.9249f, 4597.169f, 46.8227f;
 							
 							case 52:
-								return -2587.798f, 3193.551f, 12.9622f;
+								return -2587.7976f, 3193.551f, 12.9622f;
 							
 							case 53:
-								return -922.5162f, 6131.097f, 6.1891f;
+								return -922.5162f, 6131.0967f, 6.1891f;
 							
 							case 54:
-								return -112.5477f, 7285.785f, 16.1674f;
+								return -112.5477f, 7285.7847f, 16.1674f;
 							
 							case 55:
-								return -170.1744f, 6049.716f, 30.1726f;
+								return -170.1744f, 6049.7163f, 30.1726f;
 							
 							case 56:
-								return 57.7188f, 6673.076f, 30.9499f;
+								return 57.7188f, 6673.0757f, 30.9499f;
 							
 							case 57:
 								return -501.3606f, 5567.93f, 70.0852f;
@@ -6213,7 +6213,7 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return -436.1143f, 5707.903f, 61.0179f;
 							
 							case 60:
-								return -494.1112f, 5290.479f, 79.6187f;
+								return -494.1112f, 5290.4795f, 79.6187f;
 							
 							case 61:
 								return -421.0542f, 5187.812f, 122.5195f;
@@ -6222,43 +6222,43 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return -835.7191f, 5261.788f, 79.1947f;
 							
 							case 63:
-								return -873.3408f, 4786.007f, 299.4599f;
+								return -873.3408f, 4786.0073f, 299.4599f;
 							
 							case 64:
 								return -299.7797f, 4676.5f, 245.6817f;
 							
 							case 65:
-								return -903.4214f, 5176.086f, 153.3577f;
+								return -903.4214f, 5176.0864f, 153.3577f;
 							
 							case 66:
-								return -869.6852f, 5553.71f, 1.4216f;
+								return -869.6852f, 5553.7104f, 1.4216f;
 							
 							case 67:
-								return -1210.241f, 5228.673f, 88.4579f;
+								return -1210.241f, 5228.6733f, 88.4579f;
 							
 							case 68:
-								return -1224.511f, 3854.173f, 488.3926f;
+								return -1224.511f, 3854.1726f, 488.3926f;
 							
 							case 69:
-								return -688.3312f, 3764.984f, 272.5302f;
+								return -688.3312f, 3764.9836f, 272.5302f;
 							
 							case 70:
-								return -1829.375f, 3982.997f, 271.9911f;
+								return -1829.375f, 3982.9968f, 271.9911f;
 							
 							case 71:
-								return -2432.337f, 3535.94f, 33.3233f;
+								return -2432.3372f, 3535.9397f, 33.3233f;
 							
 							case 72:
-								return -1440.526f, 5106.688f, 62.4016f;
+								return -1440.5262f, 5106.688f, 62.4016f;
 							
 							case 73:
-								return -2258.899f, 3831.759f, 118.1093f;
+								return -2258.899f, 3831.7593f, 118.1093f;
 							
 							case 74:
-								return -1577.494f, 5162.519f, 18.6627f;
+								return -1577.4941f, 5162.519f, 18.6627f;
 							
 							case 75:
-								return -2046.334f, 4525.601f, 27.6239f;
+								return -2046.3337f, 4525.6006f, 27.6239f;
 							
 							case 76:
 								return -2189.855f, 4616.937f, 0.5382f;
@@ -6273,40 +6273,40 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 625.9471f, 5675.894f, 747.5628f;
 							
 							case 80:
-								return -555.5328f, 5321.449f, 72.5996f;
+								return -555.5328f, 5321.4487f, 72.5996f;
 							
 							case 81:
-								return -685.9285f, 5233.738f, 92.4703f;
+								return -685.9285f, 5233.7383f, 92.4703f;
 							
 							case 82:
-								return -213.783f, 6348.989f, 30.5355f;
+								return -213.783f, 6348.9893f, 30.5355f;
 							
 							case 83:
-								return -391.0858f, 6341.175f, 25.425f;
+								return -391.0858f, 6341.1753f, 25.425f;
 							
 							case 84:
-								return 0.9189f, 3691.594f, 38.5039f;
+								return 0.9189f, 3691.5942f, 38.5039f;
 							
 							case 85:
-								return -225.4021f, 3664.75f, 63.4125f;
+								return -225.4021f, 3664.7502f, 63.4125f;
 							
 							case 86:
 								return 714.1616f, 4136.578f, 34.7842f;
 							
 							case 87:
-								return 825.1304f, 4223.49f, 50.8188f;
+								return 825.1304f, 4223.4897f, 50.8188f;
 							
 							case 88:
 								return 858.3134f, 4423.847f, 30.2196f;
 							
 							case 89:
-								return 335.1393f, 4373.471f, 63.3434f;
+								return 335.1393f, 4373.4707f, 63.3434f;
 							
 							case 90:
-								return -1474.287f, 2687.972f, 16.6437f;
+								return -1474.2874f, 2687.972f, 16.6437f;
 							
 							case 91:
-								return -1183.146f, 4927.809f, 222.0748f;
+								return -1183.1458f, 4927.8086f, 222.0748f;
 							
 							case 92:
 								return -892.4783f, 4529.449f, 113.9803f;
@@ -6315,25 +6315,25 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 761.0254f, 6455.407f, 30.7286f;
 							
 							case 94:
-								return 370.5299f, 5453.183f, 691.2834f;
+								return 370.5299f, 5453.1826f, 691.2834f;
 							
 							case 95:
-								return -376.5987f, 3840.778f, 73.9626f;
+								return -376.5987f, 3840.7778f, 73.9626f;
 							
 							case 96:
-								return -2077.635f, 3390.068f, 30.1962f;
+								return -2077.6355f, 3390.068f, 30.1962f;
 							
 							case 97:
-								return -2317.722f, 3398.114f, 29.7812f;
+								return -2317.722f, 3398.1135f, 29.7812f;
 							
 							case 98:
-								return -2686.153f, 3554.439f, 1.0289f;
+								return -2686.1533f, 3554.439f, 1.0289f;
 							
 							case 99:
-								return -1869.387f, 4649.492f, 56.0019f;
+								return -1869.3872f, 4649.4917f, 56.0019f;
 							
 							case 100:
-								return -1854.183f, 4809.846f, 1.9984f;
+								return -1854.183f, 4809.8457f, 1.9984f;
 							
 							case 101:
 								return -683.5417f, 5823.635f, 16.3313f;
@@ -6348,34 +6348,34 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 183.3372f, 7008.858f, 11.2392f;
 							
 							case 105:
-								return 50.2346f, 4325.231f, 43.3996f;
+								return 50.2346f, 4325.2314f, 43.3996f;
 							
 							case 106:
-								return -28.0941f, 4430.794f, 57.1619f;
+								return -28.0941f, 4430.7944f, 57.1619f;
 							
 							case 107:
-								return -187.3603f, 4019.421f, 30.6801f;
+								return -187.3603f, 4019.4214f, 30.6801f;
 							
 							case 108:
-								return -1804.935f, 5315.242f, 0.8688f;
+								return -1804.9352f, 5315.242f, 0.8688f;
 							
 							case 109:
-								return 81.2546f, 4050.058f, 29.4f;
+								return 81.2546f, 4050.0576f, 29.4f;
 							
 							case 110:
-								return -1191.056f, 4389.15f, 4.3f;
+								return -1191.0557f, 4389.1504f, 4.3f;
 							
 							case 111:
-								return -2188.334f, 2590.943f, -0.4f;
+								return -2188.3345f, 2590.9434f, -0.4f;
 							
 							case 112:
-								return -2825.633f, 2358.091f, 0.5703f;
+								return -2825.633f, 2358.0908f, 0.5703f;
 							
 							case 113:
-								return -2047.696f, 4852.304f, 0.6241f;
+								return -2047.6958f, 4852.3037f, 0.6241f;
 							
 							case 114:
-								return -2664.615f, 2597.589f, -0.4f;
+								return -2664.6147f, 2597.589f, -0.4f;
 							
 							case 115:
 								return 271.9201f, 7512.879f, -0.5084f;
@@ -6384,7 +6384,7 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return -215.5849f, 4284.967f, 29.5257f;
 							
 							case 117:
-								return -2879.157f, 2879.604f, 0.4205f;
+								return -2879.157f, 2879.6035f, 0.4205f;
 							
 							case 118:
 								return -920.2339f, 5871.843f, 0.4382f;
@@ -6411,154 +6411,154 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 867.3339f, 4198.743f, 75f;
 							
 							case 1:
-								return 1254.176f, 4848.075f, 247.0701f;
+								return 1254.1764f, 4848.0747f, 247.0701f;
 							
 							case 2:
-								return 1676.777f, 5140.256f, 160.2494f;
+								return 1676.7766f, 5140.2563f, 160.2494f;
 							
 							case 3:
-								return 1995.339f, 5021.67f, 68.695f;
+								return 1995.3395f, 5021.6704f, 68.695f;
 							
 							case 4:
-								return 2599.952f, 5032.021f, 112.432f;
+								return 2599.9524f, 5032.021f, 112.432f;
 							
 							case 5:
-								return 2967.309f, 5197.417f, 148.5921f;
+								return 2967.3093f, 5197.417f, 148.5921f;
 							
 							case 6:
-								return 2876.992f, 5911.252f, 378.2234f;
+								return 2876.9922f, 5911.252f, 378.2234f;
 							
 							case 7:
-								return 3438.904f, 6144.417f, 10.0202f;
+								return 3438.9043f, 6144.4165f, 10.0202f;
 							
 							case 8:
-								return 3431.106f, 5174.187f, 46.1572f;
+								return 3431.1064f, 5174.187f, 46.1572f;
 							
 							case 9:
-								return 4080.091f, 4476.533f, 17.0407f;
+								return 4080.0906f, 4476.533f, 17.0407f;
 							
 							case 10:
-								return 3492.801f, 4619.894f, 65f;
+								return 3492.8005f, 4619.8936f, 65f;
 							
 							case 11:
-								return 3378.036f, 4079.524f, 229.1767f;
+								return 3378.0361f, 4079.5244f, 229.1767f;
 							
 							case 12:
-								return 3944.403f, 3729.657f, 19.5046f;
+								return 3944.4033f, 3729.6572f, 19.5046f;
 							
 							case 13:
-								return 3556.383f, 3684.987f, 67.2346f;
+								return 3556.3828f, 3684.9868f, 67.2346f;
 							
 							case 14:
-								return 3296.121f, 3365.198f, 125f;
+								return 3296.1213f, 3365.1982f, 125f;
 							
 							case 15:
-								return 3290f, 3140.437f, 275.7202f;
+								return 3289.9995f, 3140.4368f, 275.7202f;
 							
 							case 16:
 								return 2948.726f, 2791.748f, 48.6755f;
 							
 							case 17:
-								return 1597.427f, 2599.171f, 95f;
+								return 1597.427f, 2599.1707f, 95f;
 							
 							case 18:
-								return 1397.009f, 2116.503f, 137.1597f;
+								return 1397.0093f, 2116.5027f, 137.1597f;
 							
 							case 19:
-								return 723.7358f, 2322.695f, 64.6875f;
+								return 723.7358f, 2322.6946f, 64.6875f;
 							
 							case 20:
-								return 753.2642f, 2581.414f, 161f;
+								return 753.2642f, 2581.4136f, 161f;
 							
 							case 21:
-								return 564.4257f, 3392.354f, 96.1353f;
+								return 564.4257f, 3392.3542f, 96.1353f;
 							
 							case 22:
-								return 1191.005f, 3400.265f, 78.9779f;
+								return 1191.005f, 3400.2646f, 78.9779f;
 							
 							case 23:
-								return 1279.739f, 3100.26f, 53.8507f;
+								return 1279.7393f, 3100.2595f, 53.8507f;
 							
 							case 24:
-								return 1415.487f, 3833.477f, 52.6619f;
+								return 1415.4867f, 3833.4768f, 52.6619f;
 							
 							case 25:
-								return 1488.657f, 3946.224f, 305.2148f;
+								return 1488.6566f, 3946.2244f, 305.2148f;
 							
 							case 26:
-								return 2065.697f, 6451.615f, 149.8928f;
+								return 2065.697f, 6451.6147f, 149.8928f;
 							
 							case 27:
-								return 2559.717f, 6155.792f, 171f;
+								return 2559.717f, 6155.7915f, 171f;
 							
 							case 28:
-								return 1502.546f, 6159.08f, 230.8224f;
+								return 1502.5463f, 6159.0796f, 230.8224f;
 							
 							case 29:
-								return 1163.891f, 5965.097f, 413.3012f;
+								return 1163.8906f, 5965.0967f, 413.3012f;
 							
 							case 30:
 								return 772.3428f, 5523.894f, 600f;
 							
 							case 31:
-								return 501.8089f, 5604.274f, 1000.598f;
+								return 501.8089f, 5604.274f, 1000.5984f;
 							
 							case 32:
-								return 1002.141f, 4786.271f, 185.7696f;
+								return 1002.1407f, 4786.2705f, 185.7696f;
 							
 							case 33:
 								return 587.414f, 5114.912f, 405f;
 							
 							case 34:
-								return 1345.87f, 6384.963f, 52.4688f;
+								return 1345.8699f, 6384.9634f, 52.4688f;
 							
 							case 35:
-								return 754.4042f, 6466f, 49f;
+								return 754.4042f, 6465.9995f, 49f;
 							
 							case 36:
-								return 1042.216f, 6799.529f, 40.2945f;
+								return 1042.2163f, 6799.529f, 40.2945f;
 							
 							case 37:
-								return 1779.115f, 5662.172f, 274f;
+								return 1779.1155f, 5662.172f, 274f;
 							
 							case 38:
-								return 2898.098f, 4327.457f, 107.9208f;
+								return 2898.0984f, 4327.4565f, 107.9208f;
 							
 							case 39:
-								return 2634.35f, 3661.461f, 111.1731f;
+								return 2634.3499f, 3661.461f, 111.1731f;
 							
 							case 40:
-								return 2045.418f, 3429.524f, 56.3868f;
+								return 2045.418f, 3429.5237f, 56.3868f;
 							
 							case 41:
-								return 1563.065f, 3572.822f, 41f;
+								return 1563.0648f, 3572.8215f, 41f;
 							
 							case 42:
-								return 2276.492f, 1955.542f, 146.9525f;
+								return 2276.492f, 1955.5419f, 146.9525f;
 							
 							case 43:
-								return 2379.747f, 2604.982f, 89.7836f;
+								return 2379.7468f, 2604.9822f, 89.7836f;
 							
 							case 44:
-								return 543.5116f, 3080.709f, 63f;
+								return 543.5116f, 3080.7087f, 63f;
 							
 							case 45:
-								return 2264.604f, 4455.955f, 62.2539f;
+								return 2264.6035f, 4455.955f, 62.2539f;
 							
 							case 46:
-								return 2410.187f, 2908.336f, 373.9144f;
+								return 2410.1868f, 2908.3357f, 373.9144f;
 							
 							case 47:
-								return 3510.479f, 2569.052f, 16.1615f;
+								return 3510.4792f, 2569.0525f, 16.1615f;
 							
 							case 48:
-								return 3073.721f, 2084.079f, 30f;
+								return 3073.721f, 2084.0789f, 30f;
 							
 							case 49:
-								return 3319.34f, 2272.217f, 14.2949f;
+								return 3319.3398f, 2272.2173f, 14.2949f;
 							
 							case 50:
-								return 2822.12f, 4977.335f, 70f;
+								return 2822.12f, 4977.3354f, 70f;
 							
 							case 51:
 								return 1299.971f, 4219.281f, 41f;
@@ -6567,205 +6567,205 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 503.1913f, 4450.17f, 112f;
 							
 							case 53:
-								return 2489.62f, 3760.053f, 53f;
+								return 2489.6204f, 3760.0535f, 53f;
 							
 							case 54:
-								return 1824.499f, 2031.218f, 60.1953f;
+								return 1824.4987f, 2031.218f, 60.1953f;
 							
 							case 55:
-								return 1153.765f, 2384.4f, 75.2003f;
+								return 1153.7646f, 2384.3997f, 75.2003f;
 							
 							case 56:
-								return 1339.664f, 2747.617f, 79.0765f;
+								return 1339.664f, 2747.6167f, 79.0765f;
 							
 							case 57:
-								return 542.5154f, 2488.194f, 84.9932f;
+								return 542.5154f, 2488.1936f, 84.9932f;
 							
 							case 58:
-								return 2767.542f, 2047.162f, 126.1494f;
+								return 2767.5425f, 2047.1622f, 126.1494f;
 							
 							case 59:
-								return 2061.36f, 3941.451f, 200f;
+								return 2061.3596f, 3941.4512f, 200f;
 							
 							case 60:
-								return 873.5367f, 2867.737f, 73.5925f;
+								return 873.5367f, 2867.7366f, 73.5925f;
 							
 							case 61:
-								return 1752.141f, 3052.542f, 78.6478f;
+								return 1752.1415f, 3052.5417f, 78.6478f;
 							
 							case 62:
-								return 2100.787f, 2339.885f, 133.921f;
+								return 2100.787f, 2339.8853f, 133.921f;
 							
 							case 63:
-								return 2738.826f, 3476.466f, 81.564f;
+								return 2738.826f, 3476.4663f, 81.564f;
 							
 							case 64:
-								return 2285.089f, 3289.129f, 86.2814f;
+								return 2285.0886f, 3289.1294f, 86.2814f;
 							
 							case 65:
-								return 1745.899f, 3756.127f, 53.8457f;
+								return 1745.8994f, 3756.1274f, 53.8457f;
 							
 							case 66:
-								return 2504.338f, 4418.758f, 55f;
+								return 2504.338f, 4418.7583f, 55f;
 							
 							case 67:
-								return 1552.003f, 2186.406f, 96f;
+								return 1552.003f, 2186.4058f, 96f;
 							
 							case 68:
-								return 2716.376f, 4132.656f, 63.7827f;
+								return 2716.3765f, 4132.6562f, 63.7827f;
 							
 							case 69:
-								return 3809.813f, 4462.08f, 36.1286f;
+								return 3809.8135f, 4462.08f, 36.1286f;
 							
 							case 70:
-								return 3257.82f, 4308.541f, 140f;
+								return 3257.8203f, 4308.5405f, 140f;
 							
 							case 71:
-								return 2268.876f, 5381.432f, 328.4639f;
+								return 2268.876f, 5381.4316f, 328.4639f;
 							
 							case 72:
-								return 2236.389f, 5604.683f, 71.034f;
+								return 2236.3894f, 5604.6826f, 71.034f;
 							
 							case 73:
-								return 1986.657f, 6201.739f, 66.4804f;
+								return 1986.6572f, 6201.7393f, 66.4804f;
 							
 							case 74:
 								return 3356.059f, 5696.29f, 20f;
 							
 							case 75:
-								return 2457.263f, 6684.452f, 63.14f;
+								return 2457.2634f, 6684.452f, 63.14f;
 							
 							case 76:
-								return 1914.983f, 6702.233f, 14.7976f;
+								return 1914.9834f, 6702.2334f, 14.7976f;
 							
 							case 77:
-								return 2149.811f, 3844.999f, 88.0922f;
+								return 2149.8113f, 3844.9988f, 88.0922f;
 							
 							case 78:
 								return 1880.169f, 4244.354f, 80.3363f;
 							
 							case 79:
-								return 1791.897f, 4595.955f, 48.6224f;
+								return 1791.8972f, 4595.9546f, 48.6224f;
 							
 							case 80:
-								return 1181.133f, 5151.417f, 772.3138f;
+								return 1181.1326f, 5151.4165f, 772.3138f;
 							
 							case 81:
-								return 431.2495f, 4768.536f, 665.041f;
+								return 431.2495f, 4768.5356f, 665.041f;
 							
 							case 82:
-								return 1410.651f, 6569.377f, 26.5039f;
+								return 1410.6505f, 6569.377f, 26.5039f;
 							
 							case 83:
-								return 1522.466f, 6617.973f, 8f;
+								return 1522.4656f, 6617.973f, 8f;
 							
 							case 84:
-								return 2316.162f, 6378.738f, 143.7605f;
+								return 2316.162f, 6378.7383f, 143.7605f;
 							
 							case 85:
 								return 3127.772f, 5566.866f, 317.7646f;
 							
 							case 86:
-								return 3684.367f, 4916.152f, 618.67f;
+								return 3684.367f, 4916.1523f, 618.67f;
 							
 							case 87:
-								return 3941.761f, 4652.369f, 92.7624f;
+								return 3941.7615f, 4652.369f, 92.7624f;
 							
 							case 88:
-								return 3900.581f, 4262.104f, 887.18f;
+								return 3900.5806f, 4262.1035f, 887.18f;
 							
 							case 89:
-								return 3535.166f, 3778.242f, 46.4187f;
+								return 3535.1663f, 3778.2424f, 46.4187f;
 							
 							case 90:
-								return 3638.854f, 3108.953f, 8.7037f;
+								return 3638.8545f, 3108.9526f, 8.7037f;
 							
 							case 91:
-								return 931.8565f, 2446.375f, 59f;
+								return 931.8565f, 2446.3755f, 59f;
 							
 							case 92:
-								return 1052.214f, 2277.729f, 95.5547f;
+								return 1052.2137f, 2277.729f, 95.5547f;
 							
 							case 93:
-								return 411.0964f, 4298.822f, 40.8556f;
+								return 411.0964f, 4298.8223f, 40.8556f;
 							
 							case 94:
 								return 970.339f, 5647.13f, 650.7467f;
 							
 							case 95:
-								return 2137.105f, 4785.519f, 59.9326f;
+								return 2137.105f, 4785.5186f, 59.9326f;
 							
 							case 96:
 								return 2333.533f, 4801.554f, 467.9726f;
 							
 							case 97:
-								return 2800.744f, 4745.392f, 370.3547f;
+								return 2800.7444f, 4745.3916f, 370.3547f;
 							
 							case 98:
-								return 2721.061f, 1556.416f, 101.1161f;
+								return 2721.0613f, 1556.4155f, 101.1161f;
 							
 							case 99:
-								return 1855.284f, 1600.665f, 116.8989f;
+								return 1855.2839f, 1600.6653f, 116.8989f;
 							
 							case 100:
-								return 1623.469f, 1518.122f, 294.3194f;
+								return 1623.4694f, 1518.1221f, 294.3194f;
 							
 							case 101:
-								return 923.4011f, 1635.348f, 218.3212f;
+								return 923.4011f, 1635.3481f, 218.3212f;
 							
 							case 102:
-								return 829.6124f, 1892.871f, 135.5203f;
+								return 829.6124f, 1892.8708f, 135.5203f;
 							
 							case 103:
-								return 1294.051f, 5675.865f, 472.5645f;
+								return 1294.0507f, 5675.865f, 472.5645f;
 							
 							case 104:
-								return 1716.85f, 6416.637f, 81.5075f;
+								return 1716.85f, 6416.6367f, 81.5075f;
 							
 							case 105:
 								return 2140.929f, 5892.89f, 161.9607f;
 							
 							case 106:
-								return 1604.4f, 5793.905f, 429.8526f;
+								return 1604.3999f, 5793.905f, 429.8526f;
 							
 							case 107:
-								return 1589.65f, 4160.215f, 883.122f;
+								return 1589.6504f, 4160.2153f, 883.122f;
 							
 							case 108:
-								return 2191.156f, 4208.336f, 477.8802f;
+								return 2191.1565f, 4208.336f, 477.8802f;
 							
 							case 109:
-								return 1427.64f, 4515.944f, 85.3721f;
+								return 1427.6396f, 4515.944f, 85.3721f;
 							
 							case 110:
 								return 1206.398f, 4546.814f, 83.0875f;
 							
 							case 111:
-								return 222.2962f, 4746.207f, 280.8666f;
+								return 222.2962f, 4746.2065f, 280.8666f;
 							
 							case 112:
-								return 287.655f, 5361.114f, 659.2646f;
+								return 287.655f, 5361.1143f, 659.2646f;
 							
 							case 113:
-								return 194.6948f, 7393.709f, 1000f;
+								return 194.6948f, 7393.7095f, 1000f;
 							
 							case 114:
-								return 469.5136f, 6745.105f, 14.1624f;
+								return 469.5136f, 6745.1055f, 14.1624f;
 							
 							case 115:
 								return 537.5068f, 6663.253f, 447.8182f;
 							
 							case 116:
-								return 3227.793f, 6940.11f, 111.4631f;
+								return 3227.7927f, 6940.11f, 111.4631f;
 							
 							case 117:
-								return 3614.231f, 5883.145f, 9.5207f;
+								return 3614.2307f, 5883.145f, 9.5207f;
 							
 							case 118:
-								return 3010.254f, 5697.739f, 463.4349f;
+								return 3010.2542f, 5697.739f, 463.4349f;
 							
 							case 119:
-								return 2874.324f, 6196.489f, 1000f;
+								return 2874.3237f, 6196.4893f, 1000f;
 							
 							default:
 						}
@@ -6780,124 +6780,124 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 						switch (iParam3)
 						{
 							case 0:
-								return 1581.963f, 2200.244f, 78.0226f;
+								return 1581.9629f, 2200.2444f, 78.0226f;
 							
 							case 1:
-								return 1104.104f, 2399.396f, 53.529f;
+								return 1104.1044f, 2399.3965f, 53.529f;
 							
 							case 2:
-								return 1089.489f, 2132.943f, 57.0757f;
+								return 1089.4886f, 2132.9426f, 57.0757f;
 							
 							case 3:
-								return 932.5687f, 2434.264f, 49.6778f;
+								return 932.5687f, 2434.2637f, 49.6778f;
 							
 							case 4:
-								return 586.3744f, 2935.313f, 39.9577f;
+								return 586.3744f, 2935.3125f, 39.9577f;
 							
 							case 5:
-								return 437.5278f, 3537.285f, 32.3159f;
+								return 437.5278f, 3537.2847f, 32.3159f;
 							
 							case 6:
-								return 917.2156f, 3648.117f, 35.1053f;
+								return 917.2156f, 3648.1167f, 35.1053f;
 							
 							case 7:
-								return 1528.585f, 3916.301f, 30.6709f;
+								return 1528.5854f, 3916.301f, 30.6709f;
 							
 							case 8:
-								return 1924.4f, 3468.064f, 50.6772f;
+								return 1924.3997f, 3468.0645f, 50.6772f;
 							
 							case 9:
-								return 2482.272f, 3761.54f, 40.6483f;
+								return 2482.272f, 3761.5398f, 40.6483f;
 							
 							case 10:
-								return 2722.307f, 2895.323f, 46.873f;
+								return 2722.3074f, 2895.323f, 46.873f;
 							
 							case 11:
-								return 3021.258f, 2881.75f, 85.959f;
+								return 3021.2578f, 2881.7495f, 85.959f;
 							
 							case 12:
-								return 2096.643f, 2504.604f, 89.6423f;
+								return 2096.6426f, 2504.604f, 89.6423f;
 							
 							case 13:
-								return 2974.657f, 3485.959f, 70.4429f;
+								return 2974.6575f, 3485.9587f, 70.4429f;
 							
 							case 14:
-								return 3390.08f, 3704.603f, 34.9975f;
+								return 3390.0796f, 3704.603f, 34.9975f;
 							
 							case 15:
-								return 2908.214f, 4342.968f, 49.3031f;
+								return 2908.2136f, 4342.968f, 49.3031f;
 							
 							case 16:
-								return 1796.101f, 4920.626f, 47.3851f;
+								return 1796.1014f, 4920.626f, 47.3851f;
 							
 							case 17:
-								return 2241.987f, 5382.81f, 144.0017f;
+								return 2241.987f, 5382.8096f, 144.0017f;
 							
 							case 18:
-								return 2218.899f, 5946.263f, 49.634f;
+								return 2218.899f, 5946.2627f, 49.634f;
 							
 							case 19:
-								return 1601.463f, 6624.76f, 14.7707f;
+								return 1601.4633f, 6624.7603f, 14.7707f;
 							
 							case 20:
-								return 1406.928f, 6568.621f, 19.3763f;
+								return 1406.9279f, 6568.6206f, 19.3763f;
 							
 							case 21:
-								return 439.5467f, 6459.866f, 34.8699f;
+								return 439.5467f, 6459.8657f, 34.8699f;
 							
 							case 22:
-								return 1503.687f, 6360.855f, 15.6193f;
+								return 1503.6865f, 6360.8555f, 15.6193f;
 							
 							case 23:
-								return 3316.647f, 5190.359f, 17.4152f;
+								return 3316.647f, 5190.3594f, 17.4152f;
 							
 							case 24:
-								return 3632.89f, 5003.482f, 11.6053f;
+								return 3632.8904f, 5003.482f, 11.6053f;
 							
 							case 25:
-								return 3057.659f, 5064.144f, 17.7153f;
+								return 3057.6587f, 5064.144f, 17.7153f;
 							
 							case 26:
-								return 2822.534f, 4978.232f, 62.4826f;
+								return 2822.5337f, 4978.232f, 62.4826f;
 							
 							case 27:
-								return 3930.095f, 4399.015f, 15.6116f;
+								return 3930.095f, 4399.0146f, 15.6116f;
 							
 							case 28:
-								return 3859.284f, 4226.905f, 2.7151f;
+								return 3859.2837f, 4226.9053f, 2.7151f;
 							
 							case 29:
-								return 3692.684f, 4570.595f, 24.1191f;
+								return 3692.6836f, 4570.5947f, 24.1191f;
 							
 							case 30:
-								return 1830.916f, 2542.005f, 44.8856f;
+								return 1830.9161f, 2542.0051f, 44.8856f;
 							
 							case 31:
-								return 2424.308f, 3131.437f, 47.2055f;
+								return 2424.3083f, 3131.437f, 47.2055f;
 							
 							case 32:
-								return 1340.228f, 2988.934f, 45.0809f;
+								return 1340.228f, 2988.9343f, 45.0809f;
 							
 							case 33:
-								return 817.1245f, 3379.468f, 76.9467f;
+								return 817.1245f, 3379.4683f, 76.9467f;
 							
 							case 34:
-								return 563.2202f, 2456.984f, 58.1331f;
+								return 563.2202f, 2456.9836f, 58.1331f;
 							
 							case 35:
-								return 2041.713f, 2002.479f, 84.9881f;
+								return 2041.7131f, 2002.4792f, 84.9881f;
 							
 							case 36:
-								return 2431.854f, 1986.869f, 82.1812f;
+								return 2431.8535f, 1986.8691f, 82.1812f;
 							
 							case 37:
-								return 1190.872f, 3401.189f, 67.3338f;
+								return 1190.8721f, 3401.1887f, 67.3338f;
 							
 							case 38:
-								return 1943.983f, 3817.853f, 31.0619f;
+								return 1943.9834f, 3817.8528f, 31.0619f;
 							
 							case 39:
-								return 1977.679f, 3054.874f, 49.3235f;
+								return 1977.6792f, 3054.874f, 49.3235f;
 							
 							case 40:
 								return 452.5827f, 5587.175f, 780.1891f;
@@ -6906,22 +6906,22 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 807.1406f, 5701.082f, 696.9146f;
 							
 							case 42:
-								return 1600.868f, 5804.83f, 414.5815f;
+								return 1600.8683f, 5804.8296f, 414.5815f;
 							
 							case 43:
-								return 1412.016f, 5558.528f, 459.5185f;
+								return 1412.0156f, 5558.528f, 459.5185f;
 							
 							case 44:
 								return 2279.983f, 5788.728f, 154.1637f;
 							
 							case 45:
-								return 2346.173f, 4997.547f, 41.5868f;
+								return 2346.1729f, 4997.5474f, 41.5868f;
 							
 							case 46:
-								return 2391.918f, 4296.647f, 34.1954f;
+								return 2391.9185f, 4296.647f, 34.1954f;
 							
 							case 47:
-								return 1364.943f, 4385.975f, 43.3491f;
+								return 1364.9434f, 4385.9746f, 43.3491f;
 							
 							case 48:
 								return 998.6568f, 4453.989f, 59.924f;
@@ -6933,211 +6933,211 @@ Vector3 func_117(int iParam0, bool bParam1, int iParam2, int iParam3)//Position 
 								return 870.7486f, 6627.962f, 1.1131f;
 							
 							case 51:
-								return 2721.632f, 4513.5f, 41.1966f;
+								return 2721.632f, 4513.4995f, 41.1966f;
 							
 							case 52:
-								return 1219.444f, 2744.531f, 37.0054f;
+								return 1219.4437f, 2744.5312f, 37.0054f;
 							
 							case 53:
-								return 2564.32f, 2578.493f, 36.9367f;
+								return 2564.3203f, 2578.4934f, 36.9367f;
 							
 							case 54:
-								return 2827.744f, 5963.866f, 350.6364f;
+								return 2827.7437f, 5963.866f, 350.6364f;
 							
 							case 55:
-								return 2946.397f, 5326.474f, 100.269f;
+								return 2946.3967f, 5326.4736f, 100.269f;
 							
 							case 56:
-								return 2211.154f, 3593.324f, 55.1756f;
+								return 2211.1536f, 3593.3242f, 55.1756f;
 							
 							case 57:
-								return 3079.837f, 6027.145f, 129.2854f;
+								return 3079.837f, 6027.1445f, 129.2854f;
 							
 							case 58:
-								return 3345.3f, 5555.332f, 17.907f;
+								return 3345.3003f, 5555.332f, 17.907f;
 							
 							case 59:
-								return 528.5965f, 3092.785f, 39.4652f;
+								return 528.5965f, 3092.7852f, 39.4652f;
 							
 							case 60:
-								return 2184.891f, 3724.368f, 37.4901f;
+								return 2184.8909f, 3724.3684f, 37.4901f;
 							
 							case 61:
 								return 1471.091f, 4948.712f, 75.0594f;
 							
 							case 62:
-								return 2713.996f, 4141.762f, 42.8723f;
+								return 2713.9963f, 4141.762f, 42.8723f;
 							
 							case 63:
-								return 2476.558f, 5783.607f, 68.702f;
+								return 2476.5576f, 5783.607f, 68.702f;
 							
 							case 64:
-								return 2647.75f, 3281.402f, 54.2127f;
+								return 2647.7498f, 3281.4016f, 54.2127f;
 							
 							case 65:
-								return 2210.976f, 5610.793f, 52.8602f;
+								return 2210.9763f, 5610.793f, 52.8602f;
 							
 							case 66:
-								return 2898.328f, 2389.586f, 170.4231f;
+								return 2898.3276f, 2389.586f, 170.4231f;
 							
 							case 67:
-								return 2728.33f, 2616.292f, 95.3074f;
+								return 2728.33f, 2616.2915f, 95.3074f;
 							
 							case 68:
-								return 1844.478f, 4591.953f, 29.6629f;
+								return 1844.4783f, 4591.953f, 29.6629f;
 							
 							case 69:
-								return 2432.128f, 4616.881f, 28.1137f;
+								return 2432.1277f, 4616.881f, 28.1137f;
 							
 							case 70:
-								return 2574.294f, 4653.86f, 33.0768f;
+								return 2574.2944f, 4653.86f, 33.0768f;
 							
 							case 71:
-								return 1574.009f, 3591.066f, 34.3615f;
+								return 1574.0092f, 3591.0657f, 34.3615f;
 							
 							case 72:
-								return 2008.265f, 4986.431f, 40.3378f;
+								return 2008.2645f, 4986.431f, 40.3378f;
 							
 							case 73:
-								return 1975.059f, 5182.086f, 46.8906f;
+								return 1975.0587f, 5182.086f, 46.8906f;
 							
 							case 74:
-								return 1955.895f, 4620.182f, 39.6384f;
+								return 1955.8948f, 4620.182f, 39.6384f;
 							
 							case 75:
-								return 2279.756f, 4846.217f, 39.2283f;
+								return 2279.7563f, 4846.217f, 39.2283f;
 							
 							case 76:
-								return 2418.292f, 4784.674f, 33.6784f;
+								return 2418.2915f, 4784.6743f, 33.6784f;
 							
 							case 77:
-								return 2005.109f, 3765.983f, 31.1808f;
+								return 2005.1091f, 3765.983f, 31.1808f;
 							
 							case 78:
-								return 1719.677f, 3692.743f, 33.513f;
+								return 1719.6768f, 3692.7432f, 33.513f;
 							
 							case 79:
-								return 1530.711f, 3076.231f, 39.9815f;
+								return 1530.7114f, 3076.231f, 39.9815f;
 							
 							case 80:
-								return 1686.366f, 3301.007f, 40.1368f;
+								return 1686.3663f, 3301.0066f, 40.1368f;
 							
 							case 81:
-								return 3481.603f, 3740.488f, 35.6427f;
+								return 3481.6025f, 3740.4883f, 35.6427f;
 							
 							case 82:
-								return 2392.425f, 3334.924f, 46.3672f;
+								return 2392.4253f, 3334.924f, 46.3672f;
 							
 							case 83:
-								return 2192.154f, 3168.942f, 50.5572f;
+								return 2192.1538f, 3168.9421f, 50.5572f;
 							
 							case 84:
-								return 2354.496f, 2577.063f, 45.6677f;
+								return 2354.4958f, 2577.063f, 45.6677f;
 							
 							case 85:
-								return 640.7736f, 2777.938f, 40.9601f;
+								return 640.7736f, 2777.9377f, 40.9601f;
 							
 							case 86:
-								return 2768.528f, 1701.819f, 23.6943f;
+								return 2768.528f, 1701.8193f, 23.6943f;
 							
 							case 87:
-								return 3239.663f, 3501.223f, 67.723f;
+								return 3239.6626f, 3501.2231f, 67.723f;
 							
 							case 88:
-								return 2672.952f, 3516.45f, 51.712f;
+								return 2672.9524f, 3516.45f, 51.712f;
 							
 							case 89:
-								return 2619.962f, 3661.864f, 100.2808f;
+								return 2619.9617f, 3661.8643f, 100.2808f;
 							
 							case 90:
-								return 2437.504f, 4069.23f, 37.0001f;
+								return 2437.504f, 4069.2297f, 37.0001f;
 							
 							case 91:
-								return 1685.598f, 6435.691f, 31.3515f;
+								return 1685.5979f, 6435.691f, 31.3515f;
 							
 							case 92:
-								return 1417.653f, 3818.394f, 31.1351f;
+								return 1417.6531f, 3818.3943f, 31.1351f;
 							
 							case 93:
-								return 3300.7f, 5941.647f, 93.3217f;
+								return 3300.7f, 5941.6475f, 93.3217f;
 							
 							case 94:
-								return 870.0084f, 2870.564f, 55.9249f;
+								return 870.0084f, 2870.5645f, 55.9249f;
 							
 							case 95:
-								return 1352.413f, 6401.655f, 32.4101f;
+								return 1352.4126f, 6401.655f, 32.4101f;
 							
 							case 96:
-								return 1960.858f, 5376.274f, 185.2074f;
+								return 1960.8578f, 5376.274f, 185.2074f;
 							
 							case 97:
-								return 1974.847f, 6219.958f, 41.2546f;
+								return 1974.8472f, 6219.9585f, 41.2546f;
 							
 							case 98:
-								return 3684.152f, 3795.969f, 15.0641f;
+								return 3684.152f, 3795.9685f, 15.0641f;
 							
 							case 99:
-								return 2625.796f, 2809.979f, 32.439f;
+								return 2625.7957f, 2809.9785f, 32.439f;
 							
 							case 100:
-								return 1302.932f, 4234.541f, 32.9137f;
+								return 1302.9315f, 4234.5405f, 32.9137f;
 							
 							case 101:
 								return 577.5187f, 4169.561f, 37.8946f;
 							
 							case 102:
-								return 1069.311f, 2259.363f, 43.4741f;
+								return 1069.3113f, 2259.363f, 43.4741f;
 							
 							case 103:
-								return 1381.487f, 3633.717f, 34.0073f;
+								return 1381.4872f, 3633.717f, 34.0073f;
 							
 							case 104:
-								return 3046.249f, 6219.229f, 111.0105f;
+								return 3046.2493f, 6219.2285f, 111.0105f;
 							
 							case 105:
 								return 985.3563f, 5642.3f, 627.7075f;
 							
 							case 106:
-								return 2504.378f, 5178.088f, 67.6632f;
+								return 2504.378f, 5178.0884f, 67.6632f;
 							
 							case 107:
-								return 2537.341f, 4476.488f, 36.1789f;
+								return 2537.3413f, 4476.488f, 36.1789f;
 							
 							case 108:
-								return 1291.73f, 4112.564f, 29.6645f;
+								return 1291.7302f, 4112.564f, 29.6645f;
 							
 							case 109:
-								return 2176.232f, 4605.335f, 29.194f;
+								return 2176.2324f, 4605.335f, 29.194f;
 							
 							case 110:
-								return 3456.624f, 5135.376f, -0.3837f;
+								return 3456.6238f, 5135.3765f, -0.3837f;
 							
 							case 111:
-								return 4054.226f, 4518.386f, 0.4f;
+								return 4054.2263f, 4518.3857f, 0.4f;
 							
 							case 112:
-								return 1074.313f, 6738.594f, 1.3817f;
+								return 1074.3125f, 6738.594f, 1.3817f;
 							
 							case 113:
 								return 409.7385f, 4290.737f, 29.5f;
 							
 							case 114:
-								return 2551.275f, 6151.57f, 161.1609f;
+								return 2551.2747f, 6151.5703f, 161.1609f;
 							
 							case 115:
-								return 3646.335f, 2977.049f, 0.6928f;
+								return 3646.3347f, 2977.0486f, 0.6928f;
 							
 							case 116:
-								return 1938.372f, 4287.003f, 29.6693f;
+								return 1938.3722f, 4287.003f, 29.6693f;
 							
 							case 117:
-								return 3630.215f, 5625.841f, 1.2201f;
+								return 3630.215f, 5625.8413f, 1.2201f;
 							
 							case 118:
-								return 1582.613f, 6753.431f, 0.4436f;
+								return 1582.6128f, 6753.431f, 0.4436f;
 							
 							case 119:
-								return 3449.314f, 2677.52f, 0.0895f;
+								return 3449.314f, 2677.5195f, 0.0895f;
 							
 							default:
 						}
@@ -14794,7 +14794,7 @@ int func_375(bool bParam0)//Position - 0x118EB
 			iVar0 = PLAYER::GET_PLAYER_PED(bParam0);
 			if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 			{
-				if (ENTITY::IS_ENTITY_AT_COORD(iVar0, 2056.204f, 2954.807f, -70.69892f, 110f, 90f, 15f, false, true, 0))
+				if (ENTITY::IS_ENTITY_AT_COORD(iVar0, 2056.2039f, 2954.8074f, -70.69892f, 110f, 90f, 15f, false, true, 0))
 				{
 					return 1;
 				}
@@ -16056,7 +16056,7 @@ bool func_435(struct<3> Param0, struct<3> Param1, struct<3> Param2, float fParam
 	struct<3> Var1;
 	float fVar2;
 	
-	fVar2 = (fParam3 * 0.7071068f);
+	fVar2 = (fParam3 * 0.70710677f);
 	Var0 = { Param2 - Vector(fVar2, fVar2, fVar2) };
 	Var1 = { Param2 + Vector(fVar2, fVar2, fVar2) };
 	return func_436(Param0, Param1, Var0, Var1);
@@ -16639,7 +16639,7 @@ void func_466()//Position - 0x13911
 	{
 		if ((!func_303() && !func_484(PLAYER::PLAYER_ID(), 0, -1)) && !func_483(PLAYER::PLAYER_ID()))
 		{
-			fVar3 = 2.147484E+09f;
+			fVar3 = 2.1474836E+09f;
 			iVar4 = -1;
 			Var6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
 			bVar7 = PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false);
@@ -16686,7 +16686,7 @@ void func_466()//Position - 0x13911
 			Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_7 = uVar5;
 			if ((PED::IS_PED_IN_FLYING_VEHICLE(PLAYER::PLAYER_PED_ID()) || (ENTITY::IS_ENTITY_IN_AIR(PLAYER::PLAYER_PED_ID()) && !PED::IS_PED_RAGDOLL(PLAYER::PLAYER_PED_ID()))) || Local_1497[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_4 > 0)
 			{
-				if ((fVar3 < 2.147484E+09f && iVar4 >= 0) && iVar4 < 10)
+				if ((fVar3 < 2.1474836E+09f && iVar4 >= 0) && iVar4 < 10)
 				{
 					if (func_32(iVar4, &Var0, &uVar1))
 					{
@@ -16950,16 +16950,16 @@ Vector3 func_480(int iParam0)//Position - 0x13F8A
 	switch (iParam0)
 	{
 		case 0:
-			return 1710.367f, -464.7253f, 169.8001f;
+			return 1710.3667f, -464.7253f, 169.8001f;
 		
 		case 1:
 			return -966.3996f, -973.0624f, 2.8632f;
 		
 		case 2:
-			return -1347.06f, 4123.072f, 62.2841f;
+			return -1347.0602f, 4123.0723f, 62.2841f;
 		
 		case 3:
-			return 1941.779f, 3847.167f, 34.3796f;
+			return 1941.7789f, 3847.1667f, 34.3796f;
 		
 		default:
 	}

@@ -95,7 +95,7 @@ void __EntryFunction__()//Position - 0x0
 	sLocal_21 = "CHECKPOINT_NORMAL";
 	sLocal_22 = "CHECKPOINT_MISSED";
 	sLocal_23 = "CHECKPOINT_PERFECT";
-	Local_24 = { 1694.74f, 3276.502f, 41.2796f };
+	Local_24 = { 1694.7395f, 3276.5024f, 41.2796f };
 	Local_25 = { 8.79494f, 0.59893f, 154.8464f };
 	iLocal_26 = 3;
 	fLocal_27 = 0f;

@@ -759,16 +759,16 @@ void func_9(var uParam0, int iParam1, int iParam2)//Position - 0x97F
 			{
 				case 0:
 					uParam0->f_59 = 1;
-					uParam0->f_53 = { 1119.064f, -3156.995f, -36.56f };
+					uParam0->f_53 = { 1119.064f, -3156.9946f, -36.56f };
 					uParam0->f_56 = { 0.8f, 0.8f, 0.8f };
 					*(uParam0[0 /*13*/]) = { 1117.34f, -3156.68f, -37.0669f };
-					(uParam0[0 /*13*/])->f_4 = { 1119.88f, -3157.026f, -36.3397f };
+					(uParam0[0 /*13*/])->f_4 = { 1119.8805f, -3157.0261f, -36.3397f };
 					(uParam0[0 /*13*/])->f_7 = { 1f, 1f, 1f };
 					(uParam0[0 /*13*/])->f_10 = "";
 					(uParam0[0 /*13*/])->f_11 = "darts_ig_idle_guy1";
 					(uParam0[0 /*13*/])->f_12 = "";
 					*(uParam0[1 /*13*/]) = { 1117.34f, -3157.38f, -38.0669f };
-					(uParam0[1 /*13*/])->f_4 = { 1119.88f, -3157.026f, -36.3397f };
+					(uParam0[1 /*13*/])->f_4 = { 1119.8805f, -3157.0261f, -36.3397f };
 					(uParam0[1 /*13*/])->f_4 = { 1f, 1f, 1f };
 					(uParam0[1 /*13*/])->f_10 = "";
 					(uParam0[1 /*13*/])->f_11 = "darts_ig_idle_guy1";
@@ -800,7 +800,7 @@ void func_9(var uParam0, int iParam1, int iParam2)//Position - 0x97F
 			{
 				case 0:
 					uParam0->f_59 = 1;
-					uParam0->f_53 = { 1000.851f, -3163.978f, -34.0646f };
+					uParam0->f_53 = { 1000.8506f, -3163.9783f, -34.0646f };
 					uParam0->f_56 = { 0.8f, 0.8f, 0.8f };
 					*(uParam0[0 /*13*/]) = { 1000.59f, -3165.35f, -35.054f };
 					(uParam0[0 /*13*/])->f_4 = { 1000.93f, -3162.82f, -33.4827f };
@@ -840,16 +840,16 @@ void func_9(var uParam0, int iParam1, int iParam2)//Position - 0x97F
 			{
 				case 0:
 					uParam0->f_59 = 1;
-					uParam0->f_53 = { 2708.47f, -358.8301f, -55.0523f };
+					uParam0->f_53 = { 2708.4702f, -358.8301f, -55.0523f };
 					uParam0->f_56 = { 0.8f, 0.8f, 0.8f };
-					*(uParam0[0 /*13*/]) = { 2708.21f, -360.2018f, -56.0417f };
-					(uParam0[0 /*13*/])->f_4 = { 2708.55f, -357.6718f, -54.4704f };
+					*(uParam0[0 /*13*/]) = { 2708.2097f, -360.2018f, -56.0417f };
+					(uParam0[0 /*13*/])->f_4 = { 2708.5498f, -357.6718f, -54.4704f };
 					(uParam0[0 /*13*/])->f_7 = { 1f, 1f, 1f };
 					(uParam0[0 /*13*/])->f_10 = "";
 					(uParam0[0 /*13*/])->f_11 = "darts_ig_idle_guy1";
 					(uParam0[0 /*13*/])->f_12 = "";
-					*(uParam0[1 /*13*/]) = { 2708.9f, -360.2018f, -56.0417f };
-					(uParam0[1 /*13*/])->f_4 = { 2708.55f, -357.6718f, -54.4704f };
+					*(uParam0[1 /*13*/]) = { 2708.8997f, -360.2018f, -56.0417f };
+					(uParam0[1 /*13*/])->f_4 = { 2708.5498f, -357.6718f, -54.4704f };
 					(uParam0[1 /*13*/])->f_7 = { 1f, 1f, 1f };
 					(uParam0[1 /*13*/])->f_10 = "";
 					(uParam0[1 /*13*/])->f_11 = "darts_ig_idle_guy1";
@@ -1603,11 +1603,11 @@ void func_34(bool bParam0, bool bParam1)//Position - 0x17C5
 	fVar2 = GRAPHICS::GET_ASPECT_RATIO(false);
 	if (bParam0)
 	{
-		Global_23149 = (0.225f * (1.777778f / fVar2));
+		Global_23149 = (0.225f * (1.7777778f / fVar2));
 	}
 	else if (fVar2 < 1.77777f)
 	{
-		Global_23149 = (0.225f * (1.777778f / fVar2));
+		Global_23149 = (0.225f * (1.7777778f / fVar2));
 	}
 	else
 	{
@@ -6191,13 +6191,13 @@ Vector3 func_129(int iParam0)//Position - 0x8591
 	switch (iParam0)
 	{
 		case 0:
-			return 1118.489f, -3157.188f, -37.5628f;
+			return 1118.4894f, -3157.1875f, -37.5628f;
 		
 		case 1:
 			return 1001f, -3164.3f, -33.6f;
 		
 		case 2:
-			return 2708.62f, -359.1518f, -54.5877f;
+			return 2708.6196f, -359.1518f, -54.5877f;
 		
 		default:
 	}

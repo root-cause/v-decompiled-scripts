@@ -1529,7 +1529,7 @@ bool func_68()//Position - 0x17B6
 
 bool func_69(int iParam0)//Position - 0x17C5
 {
-	return ENTITY::IS_ENTITY_IN_ANGLED_AREA(iParam0, 355.6093f, 4832.486f, -59.99951f, 338.4763f, 4841.36f, -56.99947f, 15f, false, true, 0);
+	return ENTITY::IS_ENTITY_IN_ANGLED_AREA(iParam0, 355.60925f, 4832.486f, -59.99951f, 338.4763f, 4841.36f, -56.999474f, 15f, false, true, 0);
 }
 
 int func_70()//Position - 0x17F9

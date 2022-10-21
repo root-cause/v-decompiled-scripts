@@ -2634,11 +2634,11 @@ void func_87()//Position - 0x2F09
 		{
 			if (iLocal_98 == 0)
 			{
-				iVar2 = INTERIOR::GET_INTERIOR_AT_COORDS(8.4083f, -1095.428f, 28.8554f);
+				iVar2 = INTERIOR::GET_INTERIOR_AT_COORDS(8.4083f, -1095.4281f, 28.8554f);
 			}
 			else
 			{
-				iVar2 = INTERIOR::GET_INTERIOR_AT_COORDS(824.3015f, -2162.983f, 30.906f);
+				iVar2 = INTERIOR::GET_INTERIOR_AT_COORDS(824.3015f, -2162.9832f, 30.906f);
 			}
 			if (INTERIOR::IS_VALID_INTERIOR(iVar2))
 			{
@@ -2651,15 +2651,15 @@ void func_87()//Position - 0x2F09
 			}
 			if (iLocal_98 == 0)
 			{
-				iLocal_83 = PED::CREATE_PED(26, iLocal_80, 8.4083f, -1095.428f, 28.8554f, 336.03f, true, true);
-				iLocal_84 = PED::CREATE_PED(26, iLocal_81, 10.1096f, -1096.135f, 28.8554f, 336.03f, true, true);
+				iLocal_83 = PED::CREATE_PED(26, iLocal_80, 8.4083f, -1095.4281f, 28.8554f, 336.03f, true, true);
+				iLocal_84 = PED::CREATE_PED(26, iLocal_81, 10.1096f, -1096.1354f, 28.8554f, 336.03f, true, true);
 				iLocal_85 = PED::CREATE_PED(26, iLocal_82, 13.7f, -1097.7f, 28.9f, 336.03f, true, true);
 			}
 			else
 			{
 				iLocal_83 = PED::CREATE_PED(26, iLocal_80, 817.0285f, -2163.657f, 28.6569f, 178.1556f, true, true);
-				iLocal_84 = PED::CREATE_PED(26, iLocal_81, 819.0791f, -2163.743f, 28.6568f, 187.0609f, true, true);
-				iLocal_85 = PED::CREATE_PED(26, iLocal_82, 821.4587f, -2163.616f, 28.6567f, 179.3586f, true, true);
+				iLocal_84 = PED::CREATE_PED(26, iLocal_81, 819.0791f, -2163.7432f, 28.6568f, 187.0609f, true, true);
+				iLocal_85 = PED::CREATE_PED(26, iLocal_82, 821.4587f, -2163.6165f, 28.6567f, 179.3586f, true, true);
 			}
 			func_89(iLocal_83, &uLocal_86, &uLocal_89);
 			func_89(iLocal_84, &uLocal_87, &uLocal_90);
@@ -2741,7 +2741,7 @@ void func_88(int iParam0)//Position - 0x31DD
 		fVar3 = -0.5f;
 		fVar4 = -0.2f;
 		fVar5 = 0.5f;
-		Var8 = { Vector(31.58f, -1081.513f, 16.475f) - Vector(31.58f, -1092.35f, 12.617f) };
+		Var8 = { Vector(31.58f, -1081.5134f, 16.475f) - Vector(31.58f, -1092.35f, 12.617f) };
 		Var9 = { Vector(31.58f, -1094.09f, 17.325f) - Vector(31.58f, -1092.35f, 12.617f) };
 		Var10 = { Vector(31.58f, -1092.35f, 12.617f) + Var9 * Vector(fVar3, fVar3, fVar3) };
 		Var11 = { Vector(31.58f, -1092.35f, 12.617f) + Var9 * Vector(fVar4, fVar4, fVar4) };
@@ -2752,11 +2752,11 @@ void func_88(int iParam0)//Position - 0x31DD
 		fVar3 = 1.35f;
 		fVar4 = 1.05f;
 		fVar5 = 0.5f;
-		Var8 = { Vector(31.347f, -2179.773f, 824.3217f) - Vector(31.347f, -2168.039f, 824.2375f) };
-		Var9 = { Vector(32.3f, -2168.008f, 819.2051f) - Vector(32.3f, -2168.039f, 824.2375f) };
-		Var10 = { Vector(31.347f, -2168.039f, 824.2375f) + Var9 * Vector(fVar3, fVar3, fVar3) };
-		Var11 = { Vector(31.347f, -2168.039f, 824.2375f) + Var9 * Vector(fVar4, fVar4, fVar4) };
-		Var12 = { Vector(31.347f, -2168.039f, 824.2375f) + Var9 * Vector(fVar5, fVar5, fVar5) };
+		Var8 = { Vector(31.347f, -2179.7732f, 824.3217f) - Vector(31.347f, -2168.0388f, 824.2375f) };
+		Var9 = { Vector(32.3f, -2168.0083f, 819.2051f) - Vector(32.3f, -2168.0388f, 824.2375f) };
+		Var10 = { Vector(31.347f, -2168.0388f, 824.2375f) + Var9 * Vector(fVar3, fVar3, fVar3) };
+		Var11 = { Vector(31.347f, -2168.0388f, 824.2375f) + Var9 * Vector(fVar4, fVar4, fVar4) };
+		Var12 = { Vector(31.347f, -2168.0388f, 824.2375f) + Var9 * Vector(fVar5, fVar5, fVar5) };
 	}
 	if (iParam0 == 0)
 	{
@@ -3150,7 +3150,7 @@ void func_101()//Position - 0x3B16
 	{
 		bLocal_93 = false;
 	}
-	if (SYSTEM::VDIST(6.594f, -1100.162f, 28.797f, ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false)) < 50f)
+	if (SYSTEM::VDIST(6.594f, -1100.1622f, 28.797f, ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false)) < 50f)
 	{
 		iLocal_98 = 0;
 		if (!func_102(28))

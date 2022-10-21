@@ -572,9 +572,9 @@ void __EntryFunction__()//Position - 0x0
 	func_122(&uLocal_244, joaat("S_M_M_Bouncer_01"));
 	func_119(&uLocal_244);
 	PLAYER::CLEAR_PLAYER_HAS_DAMAGED_AT_LEAST_ONE_PED(PLAYER::GET_PLAYER_INDEX());
-	MISC::CLEAR_AREA_OF_PEDS(130.8067f, -1299.166f, 28.2327f, 2f, 0);
-	MISC::CLEAR_AREA_OF_PEDS(128.1264f, -1299.691f, 28.23271f, 2f, 0);
-	iLocal_242 = PED::ADD_SCENARIO_BLOCKING_AREA(Vector(28.23271f, -1299.691f, 128.1264f) - Vector(2f, 1f, 1f), Vector(28.23271f, -1299.691f, 128.1264f) + Vector(2f, 1f, 1f), false, true, true, true);
+	MISC::CLEAR_AREA_OF_PEDS(130.8067f, -1299.1659f, 28.2327f, 2f, 0);
+	MISC::CLEAR_AREA_OF_PEDS(128.12639f, -1299.6909f, 28.23271f, 2f, 0);
+	iLocal_242 = PED::ADD_SCENARIO_BLOCKING_AREA(Vector(28.23271f, -1299.6909f, 128.12639f) - Vector(2f, 1f, 1f), Vector(28.23271f, -1299.6909f, 128.12639f) + Vector(2f, 1f, 1f), false, true, true, true);
 	func_118(0);
 	while (true)
 	{
@@ -1222,7 +1222,7 @@ void func_35()//Position - 0xC5D
 		func_18(4);
 	}
 	bVar2 = false;
-	bVar3 = SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 129.6385f, -1300.051f, 28.2327f) < (1.5f * 1.5f);
+	bVar3 = SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 129.6385f, -1300.0514f, 28.2327f) < (1.5f * 1.5f);
 	if (bLocal_240)
 	{
 		if (!PED::IS_PED_INJURED(func_91()))

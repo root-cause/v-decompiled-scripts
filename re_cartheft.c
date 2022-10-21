@@ -215,7 +215,7 @@ void __EntryFunction__()//Position - 0x0
 			if (!PED::IS_PED_IN_FLYING_VEHICLE(PLAYER::PLAYER_PED_ID()))
 			{
 				Var0 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
-				if (Var0.f_2 > 23f || ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -743.3924f, -2129.82f, 12.07619f, -708.892f, -2160.705f, 19.7035f, 124.5f, false, true, 0))
+				if (Var0.f_2 > 23f || ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -743.3924f, -2129.8203f, 12.076193f, -708.892f, -2160.7053f, 19.703499f, 124.5f, false, true, 0))
 				{
 					SCRIPT::TERMINATE_THIS_THREAD();
 				}
@@ -520,11 +520,11 @@ void __EntryFunction__()//Position - 0x0
 										{
 											if (bLocal_121 == 1)
 											{
-												Local_85 = { -2258.759f, 4274.059f, 45.9166f };
+												Local_85 = { -2258.759f, 4274.059f, 45.916603f };
 											}
 											else if (bLocal_57)
 											{
-												Local_85 = { -483.4162f, -2160.874f, 8.359f };
+												Local_85 = { -483.4162f, -2160.8735f, 8.359f };
 											}
 											else
 											{
@@ -893,12 +893,12 @@ int func_4()//Position - 0xDB3
 					{
 						if (func_45(ENTITY::GET_ENTITY_HEADING(iLocal_73), 336f, 90f))
 						{
-							Local_84 = { -2254.3f, 4273.361f, 44.9697f };
+							Local_84 = { -2254.2998f, 4273.361f, 44.9697f };
 							fLocal_89 = 336.6557f;
-							Local_83 = { -2252.683f, 4274.16f, 45.0612f };
+							Local_83 = { -2252.683f, 4274.1597f, 45.0612f };
 							Local_85 = { -2257.825f, 4269.189f, 44.6334f };
 							fLocal_90 = 272.8688f;
-							Local_97 = { -2254.588f, 4277.307f, 45.6133f };
+							Local_97 = { -2254.5876f, 4277.307f, 45.6133f };
 							Local_98 = { 6.6248f, 0.0369f, 179.5595f };
 						}
 						else
@@ -908,7 +908,7 @@ int func_4()//Position - 0xDB3
 							Local_85 = { -2255.733f, 4271.32f, 44.8166f };
 							fLocal_90 = 179.4774f;
 							Local_83 = { -2257.088f, 4268.938f, 44.6456f };
-							Local_97 = { -2255.775f, 4274.144f, 46.0666f };
+							Local_97 = { -2255.7751f, 4274.144f, 46.0666f };
 							Local_98 = { 2.8781f, 0.3464f, -146.6097f };
 						}
 					}
@@ -925,7 +925,7 @@ int func_4()//Position - 0xDB3
 				{
 					if (!func_45(ENTITY::GET_ENTITY_HEADING(iLocal_73), 64.6764f, 90f))
 					{
-						Local_97 = { -478.7095f, -2163.598f, 10.3091f };
+						Local_97 = { -478.7095f, -2163.5984f, 10.3091f };
 						Local_98 = { -7.4391f, 0.0006f, 35.6865f };
 						Local_84 = { -484.9581f, -2155.266f, 8.248f };
 						fLocal_89 = 243.308f;
@@ -935,7 +935,7 @@ int func_4()//Position - 0xDB3
 					{
 						Local_97 = { -488.0143f, -2149.419f, 9.9817f };
 						Local_98 = { -11.7475f, 0.0006f, -145.0045f };
-						Local_84 = { -484.3195f, -2154.188f, 8.2182f };
+						Local_84 = { -484.3195f, -2154.1882f, 8.2182f };
 						fLocal_89 = 64.6764f;
 						fLocal_96 = 36.9289f;
 					}
@@ -4098,7 +4098,7 @@ void func_111()//Position - 0x470E
 					else if (!PED::IS_PED_RAGDOLL(iLocal_71) && !TASK::IS_PED_GETTING_UP(iLocal_71))
 					{
 						TASK::TASK_LOOK_AT_ENTITY(iLocal_71, PLAYER::PLAYER_PED_ID(), -1, 0, 2);
-						if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -539.4566f, -2094.491f, 6.967173f, -468.4296f, -2152.549f, 18.99127f, 26.75f, false, true, 0))
+						if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -539.4566f, -2094.491f, 6.967173f, -468.4296f, -2152.5486f, 18.99127f, 26.75f, false, true, 0))
 						{
 							TASK::TASK_ACHIEVE_HEADING(iLocal_71, 345f, 0);
 							iLocal_48 = 1;
@@ -4292,7 +4292,7 @@ void func_111()//Position - 0x470E
 					}
 					else if (bLocal_57)
 					{
-						Local_85 = { -483.4162f, -2160.874f, 8.359f };
+						Local_85 = { -483.4162f, -2160.8735f, 8.359f };
 					}
 					else
 					{
@@ -6454,7 +6454,7 @@ int func_166()//Position - 0x7018
 	switch (bLocal_121)
 	{
 		case 1:
-			if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -2300.317f, 4179.612f, 36.98159f, -2191.317f, 4368.794f, 74.89676f, 70.75f, false, true, 0))
+			if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -2300.3167f, 4179.6123f, 36.981594f, -2191.317f, 4368.794f, 74.89676f, 70.75f, false, true, 0))
 			{
 				return 1;
 			}
@@ -6469,7 +6469,7 @@ int func_166()//Position - 0x7018
 			{
 				fVar0 = 80f;
 			}
-			if (ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), -487.5048f, -2157.99f, 8.2627f, fVar0, fVar0, 40f, false, true, 0))
+			if (ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), -487.5048f, -2157.9895f, 8.2627f, fVar0, fVar0, 40f, false, true, 0))
 			{
 				return 1;
 			}
@@ -6565,9 +6565,9 @@ int func_169()//Position - 0x721F
 	switch (bLocal_121)
 	{
 		case 1:
-			Local_86 = { -2257.482f, 4266.638f, 44.5095f };
+			Local_86 = { -2257.4817f, 4266.638f, 44.5095f };
 			fLocal_94 = 293.9091f;
-			Local_87 = { -2253.763f, 4273.17f, 44.977f };
+			Local_87 = { -2253.7632f, 4273.17f, 44.977f };
 			fLocal_95 = 185.5212f;
 			iVar3 = joaat("A_F_Y_Vinewood_04");
 			iVar5 = joaat("peyote");
@@ -6604,8 +6604,8 @@ int func_169()//Position - 0x721F
 			break;
 		
 		case 2:
-			Local_87 = { -538.6718f, -2183.442f, 5.2336f };
-			Local_86 = { -365.7f, -2179.26f, 9.3184f };
+			Local_87 = { -538.6718f, -2183.4421f, 5.2336f };
+			Local_86 = { -365.7f, -2179.2603f, 9.3184f };
 			iVar3 = joaat("A_F_Y_Indian_01");
 			iVar5 = joaat("rocoto");
 			iVar4 = joaat("A_M_M_SouCent_04");
@@ -6622,7 +6622,7 @@ int func_169()//Position - 0x721F
 			sLocal_79 = "RANDOM@CAR_THIEF@waiting_ig_4";
 			sLocal_80 = "RANDOM@CAR_THIEF@VICTIMPOINTS_IG_3";
 			sLocal_81 = "RANDOM@CAR_THIEF@VICTIMPOINTS_IG_3";
-			Local_88 = { -505.1966f, -2159.228f, 7.6466f };
+			Local_88 = { -505.1966f, -2159.2275f, 7.6466f };
 			fLocal_52 = 15f;
 			fLocal_53 = 3f;
 			if (SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), Local_86) < SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), Local_87))
@@ -6683,11 +6683,11 @@ int func_169()//Position - 0x721F
 			{
 				Local_84 = { -2254.413f, 4270.227f, 44.8028f };
 				fLocal_89 = 124.6557f;
-				Local_83 = { -2252.683f, 4274.16f, 45.0612f };
+				Local_83 = { -2252.683f, 4274.1597f, 45.0612f };
 				Local_85 = { -2257.825f, 4269.189f, 44.6334f };
 				fLocal_90 = 272.8688f;
-				Local_97 = { -2258.04f, 4272.244f, 45.75466f };
-				Local_98 = { 1.729481f, 0f, -114.9352f };
+				Local_97 = { -2258.0403f, 4272.2437f, 45.75466f };
+				Local_98 = { 1.729481f, 0f, -114.935196f };
 			}
 			else
 			{
@@ -6696,19 +6696,19 @@ int func_169()//Position - 0x721F
 				Local_85 = { -2255.733f, 4271.32f, 44.8166f };
 				fLocal_90 = 179.4774f;
 				Local_83 = { -2257.088f, 4268.938f, 44.6456f };
-				Local_97 = { -2254.886f, 4273.539f, 46.2282f };
-				Local_98 = { -7.492095f, 0f, -168.1909f };
+				Local_97 = { -2254.8865f, 4273.539f, 46.2282f };
+				Local_98 = { -7.492095f, 0f, -168.19087f };
 			}
 		}
 		else
 		{
 			if (bLocal_57)
 			{
-				iLocal_73 = VEHICLE::CREATE_VEHICLE(iVar5, -488.7506f, -2159.325f, 8.2581f, 15.0886f, true, true, false);
+				iLocal_73 = VEHICLE::CREATE_VEHICLE(iVar5, -488.7506f, -2159.3254f, 8.2581f, 15.0886f, true, true, false);
 			}
 			else
 			{
-				iLocal_73 = VEHICLE::CREATE_VEHICLE(iVar5, -486.3563f, -2159.942f, 8.2887f, 288.8187f, true, true, false);
+				iLocal_73 = VEHICLE::CREATE_VEHICLE(iVar5, -486.3563f, -2159.9421f, 8.2887f, 288.8187f, true, true, false);
 			}
 			VEHICLE::SET_DOOR_ALLOWED_TO_BE_BROKEN_OFF(iLocal_73, 0, false);
 			VEHICLE::SET_VEHICLE_TYRES_CAN_BURST(iLocal_73, false);
@@ -6730,9 +6730,9 @@ int func_169()//Position - 0x721F
 			VEHICLE::SET_VEHICLE_CAN_LEAK_PETROL(iLocal_73, false);
 			if (bLocal_57)
 			{
-				iLocal_71 = PED::CREATE_PED(5, iVar3, -490.4008f, -2160.755f, 8.2498f, 314.0037f, true, true);
+				iLocal_71 = PED::CREATE_PED(5, iVar3, -490.4008f, -2160.7551f, 8.2498f, 314.0037f, true, true);
 			}
-			else if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -583.0884f, -2234.249f, 4.523423f, -685.1817f, -2350.904f, 17.07073f, 178f, false, true, 0))
+			else if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -583.08844f, -2234.2488f, 4.523423f, -685.1817f, -2350.9036f, 17.070732f, 178f, false, true, 0))
 			{
 				iLocal_71 = PED::CREATE_PED(5, iVar3, -486.81f, -2156.99f, 8.27f, -172.34f, true, true);
 			}
@@ -6751,11 +6751,11 @@ int func_169()//Position - 0x721F
 			PED::SET_DRIVER_RACING_MODIFIER(iLocal_72, 1f);
 			PED::SET_PED_CONFIG_FLAG(iLocal_72, 42, true);
 			AUDIO::SET_AMBIENT_VOICE_NAME(iLocal_72, sVar8);
-			Local_84 = { -501.9105f, -2148.019f, 8.0392f };
+			Local_84 = { -501.9105f, -2148.0193f, 8.0392f };
 			fLocal_89 = 294.4744f;
-			Local_83 = { -501.0442f, -2150.799f, 8.139f };
+			Local_83 = { -501.0442f, -2150.7988f, 8.139f };
 			Local_85 = { -493.8062f, -2156.036f, 8.1978f };
-			Local_97 = { -504.365f, -2144.534f, 9.8585f };
+			Local_97 = { -504.365f, -2144.5342f, 9.8585f };
 			Local_98 = { -6.6935f, 0f, -127.8147f };
 		}
 		PED::SET_PED_CAN_BE_TARGETTED(iLocal_71, false);
@@ -8066,7 +8066,7 @@ int func_194(struct<3> Param0, int iParam1, bool bParam2, bool bParam3, bool bPa
 		}
 		if (INTERIOR::IS_VALID_INTERIOR(INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID())))
 		{
-			if ((INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(377.153f, -717.567f, 10.0536f) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(320.9934f, 265.2515f, 82.1221f)) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(-1425.564f, -244.3f, 15.8053f))
+			if ((INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(377.153f, -717.567f, 10.0536f) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(320.9934f, 265.2515f, 82.1221f)) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(-1425.5645f, -244.3f, 15.8053f))
 			{
 				return 0;
 			}
@@ -8083,7 +8083,7 @@ int func_194(struct<3> Param0, int iParam1, bool bParam2, bool bParam3, bool bPa
 		{
 			if (iParam1 != 30)
 			{
-				if (SYSTEM::VDIST2(Var1, -61.2745f, -1100.468f, 25.3752f) < 176400f)
+				if (SYSTEM::VDIST2(Var1, -61.2745f, -1100.4675f, 25.3752f) < 176400f)
 				{
 					return 0;
 				}

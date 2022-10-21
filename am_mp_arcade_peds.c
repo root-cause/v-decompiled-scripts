@@ -139,7 +139,7 @@ void func_1()//Position - 0xBB
 		}
 		if (Local_47.f_376 == 1)
 		{
-			AUDIO::PLAY_STREAM_FROM_POSITION(2729.589f, -383.9195f, -48.9951f);
+			AUDIO::PLAY_STREAM_FROM_POSITION(2729.5894f, -383.9195f, -48.9951f);
 			Local_47.f_376++;
 		}
 		if (Local_47.f_376 == 2)
@@ -5676,7 +5676,7 @@ void func_162(struct<10> Param0, var uParam1, var uParam2, var uParam3, var uPar
 					break;
 				
 				case 5:
-					uParam21->f_13 = { 2725.394f, -382.9775f, -49.9124f };
+					uParam21->f_13 = { 2725.3936f, -382.9775f, -49.9124f };
 					uParam21->f_12 = 34.9f;
 					uParam21->f_16 = 0;
 					uParam21->f_6 = 4608;
@@ -5687,7 +5687,7 @@ void func_162(struct<10> Param0, var uParam1, var uParam2, var uParam3, var uPar
 					break;
 				
 				case 6:
-					uParam21->f_13 = { 2724.975f, -382.305f, -49.9999f };
+					uParam21->f_13 = { 2724.9746f, -382.305f, -49.9999f };
 					uParam21->f_12 = 217.665f;
 					uParam21->f_16 = 1;
 					uParam21->f_6 = 65;
@@ -5698,7 +5698,7 @@ void func_162(struct<10> Param0, var uParam1, var uParam2, var uParam3, var uPar
 					break;
 				
 				case 7:
-					uParam21->f_13 = { 2729.888f, -388.92f, -49.3124f };
+					uParam21->f_13 = { 2729.8884f, -388.92f, -49.3124f };
 					uParam21->f_12 = 300f;
 					uParam21->f_16 = 0;
 					uParam21->f_6 = 37377;
@@ -5709,7 +5709,7 @@ void func_162(struct<10> Param0, var uParam1, var uParam2, var uParam3, var uPar
 					break;
 				
 				case 8:
-					uParam21->f_13 = { 2725.378f, -386.4875f, -49.2124f };
+					uParam21->f_13 = { 2725.3784f, -386.4875f, -49.2124f };
 					uParam21->f_12 = 90f;
 					uParam21->f_16 = 0;
 					uParam21->f_6 = 16781313;
@@ -5720,7 +5720,7 @@ void func_162(struct<10> Param0, var uParam1, var uParam2, var uParam3, var uPar
 					break;
 				
 				case 9:
-					uParam21->f_13 = { 2734.232f, -387.2575f, -49.3799f };
+					uParam21->f_13 = { 2734.2324f, -387.2575f, -49.3799f };
 					uParam21->f_12 = 134.565f;
 					uParam21->f_16 = 0;
 					uParam21->f_6 = 4160;
@@ -5735,7 +5735,7 @@ void func_162(struct<10> Param0, var uParam1, var uParam2, var uParam3, var uPar
 					break;
 				
 				case 10:
-					uParam21->f_13 = { 2733.669f, -387.7975f, -49.3624f };
+					uParam21->f_13 = { 2733.6694f, -387.7975f, -49.3624f };
 					uParam21->f_12 = -47.575f;
 					uParam21->f_16 = 0;
 					uParam21->f_6 = 134218241;
@@ -5750,7 +5750,7 @@ void func_162(struct<10> Param0, var uParam1, var uParam2, var uParam3, var uPar
 					break;
 				
 				case 11:
-					uParam21->f_13 = { 2725.313f, -387.165f, -49.9525f };
+					uParam21->f_13 = { 2725.3135f, -387.165f, -49.9525f };
 					uParam21->f_12 = 38.64f;
 					uParam21->f_16 = 1;
 					uParam21->f_6 = 4673;
@@ -5761,7 +5761,7 @@ void func_162(struct<10> Param0, var uParam1, var uParam2, var uParam3, var uPar
 					break;
 				
 				case 12:
-					uParam21->f_13 = { 2728.143f, -387.5425f, -49.1974f };
+					uParam21->f_13 = { 2728.1426f, -387.5425f, -49.1974f };
 					uParam21->f_12 = 180f;
 					uParam21->f_16 = 0;
 					uParam21->f_6 = 1;
@@ -5772,7 +5772,7 @@ void func_162(struct<10> Param0, var uParam1, var uParam2, var uParam3, var uPar
 					break;
 				
 				case 13:
-					uParam21->f_13 = { 2736.281f, -374.2325f, -49.9999f };
+					uParam21->f_13 = { 2736.2815f, -374.2325f, -49.9999f };
 					uParam21->f_12 = 6.48f;
 					uParam21->f_16 = 1;
 					uParam21->f_6 = 16777216;
@@ -5783,7 +5783,7 @@ void func_162(struct<10> Param0, var uParam1, var uParam2, var uParam3, var uPar
 					break;
 				
 				case 14:
-					uParam21->f_13 = { 2736.237f, -373.4775f, -50.0024f };
+					uParam21->f_13 = { 2736.2366f, -373.4775f, -50.0024f };
 					uParam21->f_12 = 190.165f;
 					uParam21->f_16 = 0;
 					uParam21->f_6 = 16777857;
@@ -5794,7 +5794,7 @@ void func_162(struct<10> Param0, var uParam1, var uParam2, var uParam3, var uPar
 					break;
 				
 				case 15:
-					uParam21->f_13 = { 2736.418f, -379.0775f, -49.3649f };
+					uParam21->f_13 = { 2736.4185f, -379.0775f, -49.3649f };
 					uParam21->f_12 = 100.64f;
 					uParam21->f_16 = 0;
 					uParam21->f_6 = 65;
@@ -5805,7 +5805,7 @@ void func_162(struct<10> Param0, var uParam1, var uParam2, var uParam3, var uPar
 					break;
 				
 				case 16:
-					uParam21->f_13 = { 2735.684f, -379.1575f, -49.3649f };
+					uParam21->f_13 = { 2735.6836f, -379.1575f, -49.3649f };
 					uParam21->f_12 = 280.63f;
 					uParam21->f_16 = 1;
 					uParam21->f_6 = 4097;

@@ -377,7 +377,7 @@ void __EntryFunction__()//Position - 0x0
 	Local_77 = { 500f, 500f, 500f };
 	iLocal_250 = joaat("G_M_M_ChiGoon_02");
 	iLocal_252 = 1;
-	Local_257 = { 344.7458f, 452.1832f, 145.9936f };
+	Local_257 = { 344.74585f, 452.18317f, 145.99359f };
 	iLocal_333 = 2;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(67))
 	{
@@ -7089,27 +7089,27 @@ Vector3 func_281(int iParam0)//Position - 0x8797
 			break;
 		
 		case 2:
-			Var0 = { 1971.246f, 3741.517f, 31.3268f };
+			Var0 = { 1971.2462f, 3741.517f, 31.3268f };
 			break;
 		
 		case 3:
-			Var0 = { 2004.278f, 3752.319f, 31.4156f };
+			Var0 = { 2004.278f, 3752.3193f, 31.4156f };
 			break;
 		
 		case 4:
-			Var0 = { 1410.891f, 3596.068f, 33.8351f };
+			Var0 = { 1410.8911f, 3596.0676f, 33.8351f };
 			break;
 		
 		case 5:
-			Var0 = { -1383.06f, -972.8339f, 8.014f };
+			Var0 = { -1383.0603f, -972.8339f, 8.014f };
 			break;
 		
 		case 6:
-			Var0 = { -1399.197f, -944.1848f, 9.4306f };
+			Var0 = { -1399.1967f, -944.1848f, 9.4306f };
 			break;
 		
 		case 7:
-			Var0 = { -1379.262f, -972.9459f, 7.8097f };
+			Var0 = { -1379.2621f, -972.9459f, 7.8097f };
 			break;
 		
 		case 8:
@@ -7117,11 +7117,11 @@ Vector3 func_281(int iParam0)//Position - 0x8797
 			break;
 		
 		case 9:
-			Var0 = { -1410.223f, -590.6025f, 29.3669f };
+			Var0 = { -1410.2234f, -590.6025f, 29.3669f };
 			break;
 		
 		case 10:
-			Var0 = { -1379.262f, -972.9459f, 7.8097f };
+			Var0 = { -1379.2621f, -972.9459f, 7.8097f };
 			break;
 	}
 	return Var0;
@@ -8004,7 +8004,7 @@ void func_303(var uParam0)//Position - 0x979D
 			else if (uParam0->f_411 == 0)
 			{
 				TASK::TASK_CLIMB_LADDER(0, true);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 813.9421f, 1172.681f, 329.7988f, 1f, -1, 0.25f, 0, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 813.9421f, 1172.6809f, 329.7988f, 1f, -1, 0.25f, 0, 40000f);
 				TASK::TASK_ACHIEVE_HEADING(0, 151.7794f, 0);
 				TASK::TASK_START_SCENARIO_IN_PLACE(0, "WORLD_HUMAN_SMOKING_POT", 0, false);
 			}
@@ -12703,54 +12703,54 @@ void func_373()//Position - 0xFEBF
 		fLocal_334[6] = 228f;
 	}
 	fLocal_335[0] = 70.05005f;
-	fLocal_336[0] = 3090.417f;
+	fLocal_336[0] = 3090.4175f;
 	fLocal_335[1] = 76.25293f;
-	fLocal_336[1] = 2929.083f;
-	fLocal_335[2] = 82.69312f;
-	fLocal_336[2] = 2759.83f;
-	fLocal_335[3] = 88.34399f;
-	fLocal_336[3] = 2576.061f;
+	fLocal_336[1] = 2929.0833f;
+	fLocal_335[2] = 82.693115f;
+	fLocal_336[2] = 2759.8303f;
+	fLocal_335[3] = 88.343994f;
+	fLocal_336[3] = 2576.0613f;
 	fLocal_335[4] = 94.97803f;
 	fLocal_336[4] = 2350.886f;
-	fLocal_335[5] = 100.7981f;
-	fLocal_336[5] = 2177.442f;
-	fLocal_335[6] = 106.467f;
-	fLocal_336[6] = 2016.681f;
-	fLocal_335[7] = 112.929f;
-	fLocal_336[7] = 1839.417f;
+	fLocal_335[5] = 100.798096f;
+	fLocal_336[5] = 2177.4424f;
+	fLocal_335[6] = 106.46704f;
+	fLocal_336[6] = 2016.6814f;
+	fLocal_335[7] = 112.928955f;
+	fLocal_336[7] = 1839.4174f;
 	fLocal_335[8] = 118.4209f;
-	fLocal_336[8] = 1689.62f;
-	fLocal_335[9] = 124.4241f;
+	fLocal_336[8] = 1689.6205f;
+	fLocal_335[9] = 124.42407f;
 	fLocal_336[9] = 1526.638f;
-	fLocal_335[10] = 130.76f;
-	fLocal_336[10] = 1356.039f;
-	fLocal_335[11] = 136.7f;
-	fLocal_336[11] = 1184.013f;
+	fLocal_335[10] = 130.76001f;
+	fLocal_336[10] = 1356.0388f;
+	fLocal_335[11] = 136.69995f;
+	fLocal_336[11] = 1184.0127f;
 	fLocal_335[12] = 142.573f;
 	fLocal_336[12] = 1034.024f;
-	fLocal_335[13] = 148.2161f;
+	fLocal_335[13] = 148.21606f;
 	fLocal_336[13] = 894.6225f;
-	fLocal_335[14] = 154.4321f;
+	fLocal_335[14] = 154.43213f;
 	fLocal_336[14] = 756.5219f;
 	fLocal_335[15] = 160.2749f;
-	fLocal_336[15] = 669.364f;
+	fLocal_336[15] = 669.36395f;
 	fLocal_335[16] = 166.25f;
-	fLocal_336[16] = 570.2953f;
-	fLocal_335[17] = 172.251f;
+	fLocal_336[16] = 570.29535f;
+	fLocal_335[17] = 172.25098f;
 	fLocal_336[17] = 521.977f;
-	fLocal_335[18] = 178.606f;
-	fLocal_336[18] = 340.7466f;
-	fLocal_335[19] = 184.6809f;
-	fLocal_336[19] = 224.3091f;
-	fLocal_335[20] = 190.708f;
-	fLocal_336[20] = 126.9535f;
-	fLocal_335[21] = 193.062f;
+	fLocal_335[18] = 178.60596f;
+	fLocal_336[18] = 340.74658f;
+	fLocal_335[19] = 184.68091f;
+	fLocal_336[19] = 224.30913f;
+	fLocal_335[20] = 190.70801f;
+	fLocal_336[20] = 126.95346f;
+	fLocal_335[21] = 193.06201f;
 	fLocal_336[21] = 81.80421f;
 	Local_230.f_23 = { func_281(iLocal_331) };
 	Local_230.f_33 = func_374(iLocal_331);
 	Local_230.f_26 = { func_281(1) };
 	Local_230.f_34 = func_374(1);
-	Local_230.f_29 = { 328.6758f, 443.9846f, 144.2298f };
+	Local_230.f_29 = { 328.67575f, 443.98456f, 144.22983f };
 }
 
 float func_374(int iParam0)//Position - 0x101C5

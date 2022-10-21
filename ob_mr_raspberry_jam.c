@@ -1530,7 +1530,7 @@ Vector3 func_36()//Position - 0x1453
 			}
 			else
 			{
-				Var0 = { 0f, 0f, -179.9088f };
+				Var0 = { 0f, 0f, -179.90875f };
 			}
 			break;
 		
@@ -1630,7 +1630,7 @@ Vector3 func_37()//Position - 0x1568
 			break;
 		
 		case joaat("prop_mr_raspberry_01"):
-			Var0 = { -1146.284f, -1514.13f, 10.8468f };
+			Var0 = { -1146.284f, -1514.1305f, 10.8468f };
 			break;
 		
 		case joaat("prop_radio_01"):
@@ -2123,7 +2123,7 @@ Vector3 func_57()//Position - 0x1DCA
 			break;
 		
 		case joaat("p_cs_joint_01"):
-			Var0 = { -10.6378f, -1441.314f, 30.1015f };
+			Var0 = { -10.6378f, -1441.3145f, 30.1015f };
 			break;
 		
 		case joaat("p_tumbler_02_s1"):
@@ -2131,7 +2131,7 @@ Vector3 func_57()//Position - 0x1DCA
 		case joaat("p_tumbler_cs2_s_trev"):
 			if (bLocal_35)
 			{
-				Var0 = { -1154.343f, -1522.6f, 9.6327f };
+				Var0 = { -1154.343f, -1522.5997f, 9.6327f };
 			}
 			else
 			{
@@ -2140,15 +2140,15 @@ Vector3 func_57()//Position - 0x1DCA
 			break;
 		
 		case joaat("prop_rolled_sock_02"):
-			Var0 = { 1972.142f, 3813.243f, 32.4271f };
+			Var0 = { 1972.1417f, 3813.243f, 32.4271f };
 			break;
 		
 		case joaat("prop_mr_raspberry_01"):
-			Var0 = { -1145.91f, -1514.944f, 9.6327f };
+			Var0 = { -1145.91f, -1514.9445f, 9.6327f };
 			break;
 		
 		case joaat("prop_radio_01"):
-			Var0 = { 1976.94f, 3821.242f, 33.3266f };
+			Var0 = { 1976.94f, 3821.2417f, 33.3266f };
 			break;
 		
 		case joaat("p_w_grass_gls_s"):

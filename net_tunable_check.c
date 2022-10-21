@@ -10442,7 +10442,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 		
 		case 1069:
 			*uParam1 = 0f;
-			uParam1->f_1 = 2E+07f;
+			uParam1->f_1 = 20000000f;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 20000000;
 			uParam1->f_5 = joaat("HEIST_ULTIMATE_CHALLENGE");
@@ -13642,7 +13642,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 		
 		case 1496:
 			*uParam1 = 2500000f;
-			uParam1->f_1 = 1.25E+07f;
+			uParam1->f_1 = 12500000f;
 			uParam1->f_2 = 2500000;
 			uParam1->f_3 = 12500000;
 			uParam1->f_5 = joaat("LUXE1_WEBSITE_BUCKINGHAM_LUXOR_DELUXE");
@@ -19662,7 +19662,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 		
 		case 2155:
 			*uParam1 = 100000f;
-			uParam1->f_1 = 3E+07f;
+			uParam1->f_1 = 30000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 30000000;
 			uParam1->f_5 = joaat("APARTMENT_PURCHASE_MODEL_THE_ORION_FIRST_PURCHASE");
@@ -19680,7 +19680,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 		
 		case 2157:
 			*uParam1 = 100000f;
-			uParam1->f_1 = 3.5E+07f;
+			uParam1->f_1 = 35000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 35000000;
 			uParam1->f_5 = joaat("APARTMENT_PURCHASE_MODEL_THE_PISCES_FIRST_PURCHASE");
@@ -19698,7 +19698,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 		
 		case 2159:
 			*uParam1 = 100000f;
-			uParam1->f_1 = 4E+07f;
+			uParam1->f_1 = 40000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 40000000;
 			uParam1->f_5 = joaat("APARTMENT_PURCHASE_MODEL_THE_AQUARIUS_FIRST_PURCHASE");
@@ -19707,7 +19707,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 		
 		case 2160:
 			*uParam1 = 100000f;
-			uParam1->f_1 = 1E+07f;
+			uParam1->f_1 = 10000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 10000000;
 			uParam1->f_5 = joaat("APARTMENT_MOD_UPGRADE_MODEL_THE_AQUARIUS_MOD");
@@ -20843,7 +20843,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 		
 		case 2291:
 			*uParam1 = 100000f;
-			uParam1->f_1 = 1E+07f;
+			uParam1->f_1 = 10000000f;
 			uParam1->f_2 = 100000;
 			uParam1->f_3 = 10000000;
 			uParam1->f_5 = joaat("BIKER_WEBSITE_LCC_SANCTUS");
@@ -20852,7 +20852,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 		
 		case 2292:
 			*uParam1 = 500000f;
-			uParam1->f_1 = 1E+07f;
+			uParam1->f_1 = 10000000f;
 			uParam1->f_2 = 500000;
 			uParam1->f_3 = 10000000;
 			uParam1->f_5 = joaat("BIKER_WEBSITE_NAGASAKI_SHOTARO");

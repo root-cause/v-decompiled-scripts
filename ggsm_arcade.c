@@ -10330,7 +10330,7 @@ int func_218(int* iParam0, int iParam1)//Position - 0xB3EA
 			func_216(iParam0, 2);
 			func_214(iParam0, 1652f, 346f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 1482.503f);
+			func_211(iParam0, 1482.5034f);
 			func_220(iParam0, 46);
 			func_206(iParam0, 1);
 			return 1;
@@ -10348,7 +10348,7 @@ int func_218(int* iParam0, int iParam1)//Position - 0xB3EA
 			func_216(iParam0, 2);
 			func_214(iParam0, 1646f, 775f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 1849.472f);
+			func_211(iParam0, 1849.4717f);
 			func_220(iParam0, 54);
 			func_206(iParam0, 1);
 			return 1;
@@ -10357,7 +10357,7 @@ int func_218(int* iParam0, int iParam1)//Position - 0xB3EA
 			func_216(iParam0, 21);
 			func_214(iParam0, 1825f, 509f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 2228.138f);
+			func_211(iParam0, 2228.1382f);
 			func_210(iParam0, 43);
 			func_209(iParam0, 2);
 			func_208(iParam0, 1);
@@ -10370,7 +10370,7 @@ int func_218(int* iParam0, int iParam1)//Position - 0xB3EA
 			func_216(iParam0, 2);
 			func_214(iParam0, 1709f, 315f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 2591.842f);
+			func_211(iParam0, 2591.8416f);
 			func_220(iParam0, 42);
 			func_206(iParam0, 1);
 			return 1;
@@ -10379,7 +10379,7 @@ int func_218(int* iParam0, int iParam1)//Position - 0xB3EA
 			func_216(iParam0, 2);
 			func_214(iParam0, 1659f, 619f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 2745.795f);
+			func_211(iParam0, 2745.7954f);
 			func_220(iParam0, 48);
 			func_206(iParam0, 1);
 			return 1;
@@ -10410,7 +10410,7 @@ int func_218(int* iParam0, int iParam1)//Position - 0xB3EA
 			func_216(iParam0, 2);
 			func_214(iParam0, 1653f, 268f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 3365.108f);
+			func_211(iParam0, 3365.1082f);
 			func_220(iParam0, 55);
 			func_206(iParam0, 1);
 			return 1;
@@ -10441,7 +10441,7 @@ int func_218(int* iParam0, int iParam1)//Position - 0xB3EA
 			func_216(iParam0, 2);
 			func_214(iParam0, 1674f, 711f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 4413.146f);
+			func_211(iParam0, 4413.1465f);
 			func_220(iParam0, 48);
 			func_206(iParam0, 1);
 			return 1;
@@ -10450,7 +10450,7 @@ int func_218(int* iParam0, int iParam1)//Position - 0xB3EA
 			func_216(iParam0, 2);
 			func_214(iParam0, 1653f, 715f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 4575.034f);
+			func_211(iParam0, 4575.0337f);
 			func_220(iParam0, 52);
 			func_206(iParam0, 1);
 			return 1;
@@ -10604,7 +10604,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_216(iParam0, 2);
 			func_214(iParam0, 1699f, 626f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 2250.013f);
+			func_211(iParam0, 2250.0134f);
 			func_220(iParam0, 50);
 			func_206(iParam0, 2);
 			return 1;
@@ -10652,7 +10652,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_216(iParam0, 4);
 			func_214(iParam0, 1695f, 473f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 3196.943f);
+			func_211(iParam0, 3196.9429f);
 			func_210(iParam0, 8);
 			func_209(iParam0, 1);
 			func_208(iParam0, 9);
@@ -10665,7 +10665,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_216(iParam0, 1);
 			func_214(iParam0, 1456f, -14f);
 			func_212(iParam0, -0.5186f, 0.855f);
-			func_211(iParam0, 3596.943f);
+			func_211(iParam0, 3596.9429f);
 			func_210(iParam0, 9);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
@@ -10678,7 +10678,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_216(iParam0, 1);
 			func_214(iParam0, 1699f, 547f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 3833.193f);
+			func_211(iParam0, 3833.1934f);
 			func_210(iParam0, 3);
 			func_209(iParam0, 1);
 			func_208(iParam0, 0);
@@ -10691,7 +10691,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_216(iParam0, 8);
 			func_214(iParam0, 1699f, 364f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 3880.943f);
+			func_211(iParam0, 3880.9429f);
 			func_210(iParam0, 17);
 			func_209(iParam0, 1);
 			func_208(iParam0, 7);
@@ -10704,7 +10704,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_216(iParam0, 1);
 			func_214(iParam0, 1699f, 547f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 4573.193f);
+			func_211(iParam0, 4573.1934f);
 			func_210(iParam0, 17);
 			func_209(iParam0, 1);
 			func_208(iParam0, 10);
@@ -10717,7 +10717,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_216(iParam0, 2);
 			func_214(iParam0, 1699f, 371f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 4828.193f);
+			func_211(iParam0, 4828.1934f);
 			func_220(iParam0, 52);
 			func_206(iParam0, 1);
 			return 1;
@@ -10791,7 +10791,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_216(iParam0, 2);
 			func_214(iParam0, 1669f, 531f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 6691.539f);
+			func_211(iParam0, 6691.5386f);
 			func_220(iParam0, 47);
 			func_206(iParam0, 2);
 			return 1;
@@ -10835,7 +10835,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_216(iParam0, 1);
 			func_214(iParam0, 215f, 324f);
 			func_212(iParam0, 1f, 0f);
-			func_211(iParam0, 7500.119f);
+			func_211(iParam0, 7500.1187f);
 			func_210(iParam0, 14);
 			func_209(iParam0, 8);
 			func_208(iParam0, 5);
@@ -10848,7 +10848,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_216(iParam0, 1);
 			func_214(iParam0, 215f, 773f);
 			func_212(iParam0, 1f, 0f);
-			func_211(iParam0, 7505.119f);
+			func_211(iParam0, 7505.1187f);
 			func_210(iParam0, 14);
 			func_209(iParam0, 8);
 			func_208(iParam0, 5);
@@ -10939,7 +10939,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_216(iParam0, 1);
 			func_214(iParam0, 1392f, -249f);
 			func_212(iParam0, 0f, 1f);
-			func_211(iParam0, 10218.83f);
+			func_211(iParam0, 10218.831f);
 			func_210(iParam0, 17);
 			func_209(iParam0, 18);
 			func_208(iParam0, 8);
@@ -10952,7 +10952,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_216(iParam0, 2);
 			func_214(iParam0, 1663f, 430f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 10407.23f);
+			func_211(iParam0, 10407.229f);
 			func_220(iParam0, 48);
 			func_206(iParam0, 4);
 			return 1;
@@ -10961,7 +10961,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_216(iParam0, 1);
 			func_214(iParam0, 1702f, 525f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 10600.23f);
+			func_211(iParam0, 10600.229f);
 			func_210(iParam0, 17);
 			func_209(iParam0, 18);
 			func_208(iParam0, 8);
@@ -10974,7 +10974,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_216(iParam0, 1);
 			func_214(iParam0, 1392f, 1279f);
 			func_212(iParam0, 0f, -1f);
-			func_211(iParam0, 10921.89f);
+			func_211(iParam0, 10921.887f);
 			func_210(iParam0, 17);
 			func_209(iParam0, 18);
 			func_208(iParam0, 8);
@@ -10987,7 +10987,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_216(iParam0, 2);
 			func_214(iParam0, 1659f, 418f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 11518.35f);
+			func_211(iParam0, 11518.351f);
 			func_220(iParam0, 51);
 			func_206(iParam0, 1);
 			return 1;
@@ -11022,7 +11022,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_216(iParam0, 1);
 			func_214(iParam0, 1694f, 146f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 12931.33f);
+			func_211(iParam0, 12931.327f);
 			func_210(iParam0, 15);
 			func_209(iParam0, 10);
 			func_208(iParam0, 5);
@@ -11035,7 +11035,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_216(iParam0, 1);
 			func_214(iParam0, 1717f, 779f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 14018.26f);
+			func_211(iParam0, 14018.262f);
 			func_210(iParam0, 3);
 			func_209(iParam0, 8);
 			func_208(iParam0, 7);
@@ -11048,7 +11048,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_216(iParam0, 1);
 			func_214(iParam0, 1694f, 450f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 14246.33f);
+			func_211(iParam0, 14246.327f);
 			func_210(iParam0, 8);
 			func_209(iParam0, 23);
 			func_208(iParam0, 7);
@@ -11061,7 +11061,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_216(iParam0, 2);
 			func_214(iParam0, 1694f, 600f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 14405.33f);
+			func_211(iParam0, 14405.327f);
 			func_220(iParam0, 55);
 			func_206(iParam0, 2);
 			return 1;
@@ -11070,7 +11070,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_216(iParam0, 2);
 			func_214(iParam0, 1694f, 364f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 14626.33f);
+			func_211(iParam0, 14626.327f);
 			func_220(iParam0, 48);
 			func_206(iParam0, 2);
 			return 1;
@@ -11079,7 +11079,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_216(iParam0, 18);
 			func_214(iParam0, 1825f, 509f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 15170.11f);
+			func_211(iParam0, 15170.108f);
 			func_210(iParam0, 30);
 			func_209(iParam0, 2);
 			func_208(iParam0, 1);
@@ -11149,7 +11149,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_216(iParam0, 1);
 			func_214(iParam0, 235f, 423f);
 			func_212(iParam0, 1f, 0f);
-			func_211(iParam0, 1194.284f);
+			func_211(iParam0, 1194.2844f);
 			func_210(iParam0, 13);
 			func_209(iParam0, 8);
 			func_208(iParam0, 1);
@@ -11162,7 +11162,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_216(iParam0, 2);
 			func_214(iParam0, 1684f, 412f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 1643.27f);
+			func_211(iParam0, 1643.2697f);
 			func_220(iParam0, 55);
 			func_206(iParam0, 1);
 			return 1;
@@ -11223,7 +11223,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_216(iParam0, 1);
 			func_214(iParam0, 239f, 370f);
 			func_212(iParam0, 1f, 0f);
-			func_211(iParam0, 3125.263f);
+			func_211(iParam0, 3125.2627f);
 			func_210(iParam0, 14);
 			func_209(iParam0, 12);
 			func_208(iParam0, 1);
@@ -11340,7 +11340,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_216(iParam0, 11);
 			func_214(iParam0, 1688f, 410f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 5826.387f);
+			func_211(iParam0, 5826.3867f);
 			func_210(iParam0, 4);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
@@ -11353,7 +11353,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_216(iParam0, 2);
 			func_214(iParam0, 1688f, 496f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 6091.912f);
+			func_211(iParam0, 6091.9116f);
 			func_220(iParam0, 47);
 			func_206(iParam0, 3);
 			return 1;
@@ -11423,7 +11423,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_216(iParam0, 2);
 			func_214(iParam0, 1653f, 827f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 8059.564f);
+			func_211(iParam0, 8059.5645f);
 			func_220(iParam0, 48);
 			func_206(iParam0, 2);
 			return 1;
@@ -11506,7 +11506,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_216(iParam0, 1);
 			func_214(iParam0, 1690f, 324f);
 			func_212(iParam0, -0.9878f, 0.1559f);
-			func_211(iParam0, 10266.68f);
+			func_211(iParam0, 10266.676f);
 			func_210(iParam0, 8);
 			func_209(iParam0, 1);
 			func_208(iParam0, 9);
@@ -11532,7 +11532,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_216(iParam0, 1);
 			func_214(iParam0, 1393f, 1138f);
 			func_212(iParam0, -0.4484f, -0.8939f);
-			func_211(iParam0, 10966.53f);
+			func_211(iParam0, 10966.525f);
 			func_210(iParam0, 4);
 			func_209(iParam0, 1);
 			func_208(iParam0, 7);
@@ -11558,7 +11558,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_216(iParam0, 1);
 			func_214(iParam0, 1687f, 588f);
 			func_212(iParam0, -0.9944f, -0.1054f);
-			func_211(iParam0, 11698.53f);
+			func_211(iParam0, 11698.525f);
 			func_210(iParam0, 3);
 			func_209(iParam0, 2);
 			func_208(iParam0, 5);
@@ -11615,7 +11615,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_216(iParam0, 1);
 			func_214(iParam0, 1681f, 382f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 13437.44f);
+			func_211(iParam0, 13437.437f);
 			func_210(iParam0, 6);
 			func_209(iParam0, 23);
 			func_208(iParam0, 1);
@@ -11628,7 +11628,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_216(iParam0, 1);
 			func_214(iParam0, 1690f, 693f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 13915.47f);
+			func_211(iParam0, 13915.475f);
 			func_210(iParam0, 6);
 			func_209(iParam0, 23);
 			func_208(iParam0, 1);
@@ -11641,7 +11641,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_216(iParam0, 11);
 			func_214(iParam0, 1690f, 367f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 14496.21f);
+			func_211(iParam0, 14496.208f);
 			func_210(iParam0, 4);
 			func_209(iParam0, 1);
 			func_208(iParam0, 3);
@@ -11663,7 +11663,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_216(iParam0, 1);
 			func_214(iParam0, 1858f, 260f);
 			func_212(iParam0, -0.9331f, 0.3597f);
-			func_211(iParam0, 15079.07f);
+			func_211(iParam0, 15079.066f);
 			func_210(iParam0, 3);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
@@ -11676,7 +11676,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_216(iParam0, 1);
 			func_214(iParam0, 1709f, 833f);
 			func_212(iParam0, -0.9358f, -0.3527f);
-			func_211(iParam0, 15506.81f);
+			func_211(iParam0, 15506.812f);
 			func_210(iParam0, 3);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
@@ -11702,7 +11702,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_216(iParam0, 11);
 			func_214(iParam0, 1668f, 371f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 16858.63f);
+			func_211(iParam0, 16858.635f);
 			func_210(iParam0, 10);
 			func_209(iParam0, 23);
 			func_208(iParam0, 5);
@@ -11728,7 +11728,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_216(iParam0, 2);
 			func_214(iParam0, 1686f, 743f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 17144.47f);
+			func_211(iParam0, 17144.475f);
 			func_220(iParam0, 46);
 			func_206(iParam0, 4);
 			return 1;
@@ -11776,7 +11776,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_216(iParam0, 2);
 			func_214(iParam0, 1661f, 382f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 19692.4f);
+			func_211(iParam0, 19692.396f);
 			func_220(iParam0, 48);
 			func_206(iParam0, 1);
 			return 1;
@@ -11894,7 +11894,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_216(iParam0, 2);
 			func_214(iParam0, 1668f, 751f);
 			func_212(iParam0, -1f, 0.0027f);
-			func_211(iParam0, 3464.704f);
+			func_211(iParam0, 3464.7039f);
 			func_220(iParam0, 42);
 			func_206(iParam0, 1);
 			return 1;
@@ -12086,7 +12086,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_216(iParam0, 1);
 			func_214(iParam0, 1920f, 66f);
 			func_212(iParam0, -0.9319f, 0.3628f);
-			func_211(iParam0, 10283.68f);
+			func_211(iParam0, 10283.681f);
 			func_210(iParam0, 4);
 			func_209(iParam0, 8);
 			func_208(iParam0, 5);
@@ -12099,7 +12099,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_216(iParam0, 2);
 			func_214(iParam0, 1666f, 447f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 10379.21f);
+			func_211(iParam0, 10379.211f);
 			func_220(iParam0, 52);
 			func_206(iParam0, 5);
 			return 1;
@@ -12108,7 +12108,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_216(iParam0, 1);
 			func_214(iParam0, 1920f, 843f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 10828.68f);
+			func_211(iParam0, 10828.681f);
 			func_210(iParam0, 17);
 			func_209(iParam0, 1);
 			func_208(iParam0, 10);
@@ -12121,7 +12121,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_216(iParam0, 10);
 			func_214(iParam0, 715f, -406f);
 			func_212(iParam0, 0f, 1f);
-			func_211(iParam0, 11340.36f);
+			func_211(iParam0, 11340.356f);
 			func_210(iParam0, 4);
 			func_209(iParam0, 18);
 			func_208(iParam0, 7);
@@ -12134,7 +12134,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_216(iParam0, 2);
 			func_214(iParam0, 1668f, 773f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 11345.36f);
+			func_211(iParam0, 11345.356f);
 			func_220(iParam0, 49);
 			func_206(iParam0, 3);
 			return 1;
@@ -12143,7 +12143,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_216(iParam0, 11);
 			func_214(iParam0, 1703f, 228f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 11858.68f);
+			func_211(iParam0, 11858.681f);
 			func_210(iParam0, 6);
 			func_209(iParam0, 23);
 			func_208(iParam0, 0);
@@ -12156,7 +12156,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_216(iParam0, 1);
 			func_214(iParam0, 1703f, 231f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 12373.68f);
+			func_211(iParam0, 12373.681f);
 			func_210(iParam0, 17);
 			func_209(iParam0, 1);
 			func_208(iParam0, 8);
@@ -12169,7 +12169,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_216(iParam0, 1);
 			func_214(iParam0, 244f, 817f);
 			func_212(iParam0, 1f, 0f);
-			func_211(iParam0, 12723.68f);
+			func_211(iParam0, 12723.681f);
 			func_210(iParam0, 14);
 			func_209(iParam0, 9);
 			func_208(iParam0, 5);
@@ -12182,7 +12182,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_216(iParam0, 1);
 			func_214(iParam0, 1701f, 178f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 13168.68f);
+			func_211(iParam0, 13168.681f);
 			func_210(iParam0, 15);
 			func_209(iParam0, 1);
 			func_208(iParam0, 9);
@@ -12195,7 +12195,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_216(iParam0, 10);
 			func_214(iParam0, 948f, -309f);
 			func_212(iParam0, 0f, 1f);
-			func_211(iParam0, 13370.03f);
+			func_211(iParam0, 13370.027f);
 			func_210(iParam0, 17);
 			func_209(iParam0, 18);
 			func_208(iParam0, 7);
@@ -12208,7 +12208,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_216(iParam0, 11);
 			func_214(iParam0, 1701f, 290f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 13991.17f);
+			func_211(iParam0, 13991.169f);
 			func_210(iParam0, 10);
 			func_209(iParam0, 1);
 			func_208(iParam0, 9);
@@ -12221,7 +12221,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_216(iParam0, 1);
 			func_214(iParam0, 1701f, 444f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 14141.17f);
+			func_211(iParam0, 14141.169f);
 			func_210(iParam0, 13);
 			func_209(iParam0, 8);
 			func_208(iParam0, 9);
@@ -12234,7 +12234,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_216(iParam0, 1);
 			func_214(iParam0, 1709f, 733f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 14368.68f);
+			func_211(iParam0, 14368.681f);
 			func_210(iParam0, 5);
 			func_209(iParam0, 2);
 			func_208(iParam0, 5);
@@ -12247,7 +12247,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_216(iParam0, 1);
 			func_214(iParam0, 1361f, -456f);
 			func_212(iParam0, 0f, 1f);
-			func_211(iParam0, 14568.68f);
+			func_211(iParam0, 14568.681f);
 			func_210(iParam0, 15);
 			func_209(iParam0, 8);
 			func_208(iParam0, 9);
@@ -12260,7 +12260,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_216(iParam0, 2);
 			func_214(iParam0, 1691f, 686f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 14573.68f);
+			func_211(iParam0, 14573.681f);
 			func_220(iParam0, 55);
 			func_206(iParam0, 2);
 			return 1;
@@ -12269,7 +12269,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_216(iParam0, 1);
 			func_214(iParam0, 1709f, 312f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 14684.96f);
+			func_211(iParam0, 14684.965f);
 			func_210(iParam0, 5);
 			func_209(iParam0, 2);
 			func_208(iParam0, 5);
@@ -12282,7 +12282,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_216(iParam0, 2);
 			func_214(iParam0, 1652f, 284f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 15521.85f);
+			func_211(iParam0, 15521.853f);
 			func_220(iParam0, 53);
 			func_206(iParam0, 2);
 			return 1;
@@ -12291,7 +12291,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_216(iParam0, 21);
 			func_214(iParam0, 1907f, 533f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 15705.73f);
+			func_211(iParam0, 15705.726f);
 			func_210(iParam0, 43);
 			func_209(iParam0, 2);
 			func_208(iParam0, 1);
@@ -12339,7 +12339,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 2);
 			func_214(iParam0, 1665f, 540f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 1102.714f);
+			func_211(iParam0, 1102.7141f);
 			func_220(iParam0, 45);
 			func_206(iParam0, 8);
 			return 1;
@@ -12348,7 +12348,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 8);
 			func_214(iParam0, 1920f, 501f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 1378.564f);
+			func_211(iParam0, 1378.5645f);
 			func_210(iParam0, 14);
 			func_209(iParam0, 1);
 			func_208(iParam0, 1);
@@ -12361,7 +12361,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 1);
 			func_214(iParam0, 1920f, 300f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 1714.899f);
+			func_211(iParam0, 1714.8989f);
 			func_210(iParam0, 3);
 			func_209(iParam0, 1);
 			func_208(iParam0, 0);
@@ -12374,7 +12374,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 1);
 			func_214(iParam0, 1691f, 735f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 2138.048f);
+			func_211(iParam0, 2138.0479f);
 			func_210(iParam0, 3);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
@@ -12387,7 +12387,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 1);
 			func_214(iParam0, 237f, 236f);
 			func_212(iParam0, 1f, 0f);
-			func_211(iParam0, 2534.495f);
+			func_211(iParam0, 2534.4946f);
 			func_210(iParam0, 6);
 			func_209(iParam0, 8);
 			func_208(iParam0, 0);
@@ -12400,7 +12400,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 5);
 			func_214(iParam0, 1683f, 1088f);
 			func_212(iParam0, -0.5505f, -0.8349f);
-			func_211(iParam0, 2986.495f);
+			func_211(iParam0, 2986.4946f);
 			func_210(iParam0, 4);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
@@ -12413,7 +12413,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 2);
 			func_214(iParam0, 1690f, 351f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 3329.495f);
+			func_211(iParam0, 3329.4946f);
 			func_220(iParam0, 48);
 			func_206(iParam0, 5);
 			return 1;
@@ -12422,7 +12422,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 1);
 			func_214(iParam0, 1675f, 539f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 3570.495f);
+			func_211(iParam0, 3570.4946f);
 			func_210(iParam0, 17);
 			func_209(iParam0, 1);
 			func_208(iParam0, 1);
@@ -12435,7 +12435,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 5);
 			func_214(iParam0, 1661f, 7f);
 			func_212(iParam0, -0.8482f, 0.5297f);
-			func_211(iParam0, 4055.495f);
+			func_211(iParam0, 4055.4946f);
 			func_210(iParam0, 7);
 			func_209(iParam0, 1);
 			func_208(iParam0, 3);
@@ -12448,7 +12448,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 1);
 			func_214(iParam0, 1729f, 803f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 4362.495f);
+			func_211(iParam0, 4362.4946f);
 			func_210(iParam0, 13);
 			func_209(iParam0, 8);
 			func_208(iParam0, 0);
@@ -12461,7 +12461,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 1);
 			func_214(iParam0, 1669f, 234f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 4590.495f);
+			func_211(iParam0, 4590.4946f);
 			func_210(iParam0, 13);
 			func_209(iParam0, 8);
 			func_208(iParam0, 0);
@@ -12474,7 +12474,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 1);
 			func_214(iParam0, 1667f, 357f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 4910.495f);
+			func_211(iParam0, 4910.4946f);
 			func_210(iParam0, 5);
 			func_209(iParam0, 18);
 			func_208(iParam0, 8);
@@ -12487,7 +12487,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 1);
 			func_214(iParam0, 1667f, 711f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 4914.495f);
+			func_211(iParam0, 4914.4946f);
 			func_210(iParam0, 5);
 			func_209(iParam0, 18);
 			func_208(iParam0, 8);
@@ -12500,7 +12500,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 2);
 			func_214(iParam0, 1753f, 442f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 5304.495f);
+			func_211(iParam0, 5304.4946f);
 			func_220(iParam0, 52);
 			func_206(iParam0, 1);
 			return 1;
@@ -12509,7 +12509,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 4);
 			func_214(iParam0, 1687f, 666f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 5362.495f);
+			func_211(iParam0, 5362.4946f);
 			func_210(iParam0, 4);
 			func_209(iParam0, 2);
 			func_208(iParam0, 5);
@@ -12522,7 +12522,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 1);
 			func_214(iParam0, 1693f, 182f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 5562.495f);
+			func_211(iParam0, 5562.4946f);
 			func_210(iParam0, 17);
 			func_209(iParam0, 1);
 			func_208(iParam0, 7);
@@ -12548,7 +12548,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 1);
 			func_214(iParam0, 1920f, 555f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 5900.991f);
+			func_211(iParam0, 5900.9907f);
 			func_210(iParam0, 17);
 			func_209(iParam0, 18);
 			func_208(iParam0, 10);
@@ -12587,7 +12587,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 12);
 			func_214(iParam0, 1686f, 537f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 6464.662f);
+			func_211(iParam0, 6464.6616f);
 			func_210(iParam0, 17);
 			func_209(iParam0, 25);
 			func_208(iParam0, 0);
@@ -12613,7 +12613,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 1);
 			func_214(iParam0, 1674f, 9f);
 			func_212(iParam0, -0.801f, 0.5986f);
-			func_211(iParam0, 7555.648f);
+			func_211(iParam0, 7555.6484f);
 			func_210(iParam0, 17);
 			func_209(iParam0, 1);
 			func_208(iParam0, 8);
@@ -12626,7 +12626,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 8);
 			func_214(iParam0, 1671f, 343f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 8154.415f);
+			func_211(iParam0, 8154.4146f);
 			func_210(iParam0, 10);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
@@ -12713,7 +12713,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 8);
 			func_214(iParam0, 1688f, 678f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 10083.63f);
+			func_211(iParam0, 10083.633f);
 			func_210(iParam0, 6);
 			func_209(iParam0, 23);
 			func_208(iParam0, 0);
@@ -12726,7 +12726,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 2);
 			func_214(iParam0, 1655f, 710f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 10366.21f);
+			func_211(iParam0, 10366.208f);
 			func_220(iParam0, 49);
 			func_206(iParam0, 8);
 			return 1;
@@ -12735,7 +12735,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 8);
 			func_214(iParam0, 1688f, 288f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 10983.63f);
+			func_211(iParam0, 10983.633f);
 			func_210(iParam0, 14);
 			func_209(iParam0, 8);
 			func_208(iParam0, 0);
@@ -12748,7 +12748,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 8);
 			func_214(iParam0, 1680f, 484f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 11211.63f);
+			func_211(iParam0, 11211.633f);
 			func_210(iParam0, 15);
 			func_209(iParam0, 8);
 			func_208(iParam0, 0);
@@ -12761,7 +12761,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 1);
 			func_214(iParam0, 1691f, 522f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 11682.02f);
+			func_211(iParam0, 11682.024f);
 			func_210(iParam0, 17);
 			func_209(iParam0, 2);
 			func_208(iParam0, 11);
@@ -12774,7 +12774,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 1);
 			func_214(iParam0, 1270f, 16f);
 			func_212(iParam0, -0.6612f, 0.7502f);
-			func_211(iParam0, 12042.3f);
+			func_211(iParam0, 12042.297f);
 			func_210(iParam0, 4);
 			func_209(iParam0, 1);
 			func_208(iParam0, 7);
@@ -12787,7 +12787,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 2);
 			func_214(iParam0, 1661f, 362f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 12430.32f);
+			func_211(iParam0, 12430.316f);
 			func_220(iParam0, 48);
 			func_206(iParam0, 2);
 			return 1;
@@ -12796,7 +12796,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 1);
 			func_214(iParam0, 1708f, 665f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 13067.3f);
+			func_211(iParam0, 13067.297f);
 			func_210(iParam0, 3);
 			func_209(iParam0, 2);
 			func_208(iParam0, 0);
@@ -12809,7 +12809,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 2);
 			func_214(iParam0, 1673f, 731f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 13091.04f);
+			func_211(iParam0, 13091.045f);
 			func_220(iParam0, 50);
 			func_206(iParam0, 1);
 			return 1;
@@ -12818,7 +12818,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_216(iParam0, 22);
 			func_214(iParam0, 1800f, 526f);
 			func_212(iParam0, -1f, 0f);
-			func_211(iParam0, 14058.29f);
+			func_211(iParam0, 14058.295f);
 			func_210(iParam0, 45);
 			func_209(iParam0, 2);
 			func_208(iParam0, 22);
@@ -23043,7 +23043,7 @@ void func_539(var uParam0, struct<2> Param1)//Position - 0x1E945
 	Var0 = { func_290(Var1, Param1) };
 	uParam0->f_32[0] = func_535(Var1, Param1);
 	uParam0->f_32[1] = MISC::GET_HEADING_FROM_VECTOR_2D(uParam0->f_36, uParam0->f_36.f_1);
-	uParam0->f_32[2] = (func_517(uParam0) / ((2f * 3.141593f) * uParam0->f_32[0]));
+	uParam0->f_32[2] = (func_517(uParam0) / ((2f * 3.1415927f) * uParam0->f_32[0]));
 	switch (uParam0->f_30)
 	{
 		case 9:
@@ -100982,7 +100982,7 @@ float func_1042(float fParam0, float fParam1, float fParam2)//Position - 0x7D6DA
 {
 	float fVar0;
 	
-	fVar0 = ((1f - SYSTEM::COS(func_1043((fParam2 * 3.141593f)))) * 0.5f);
+	fVar0 = ((1f - SYSTEM::COS(func_1043((fParam2 * 3.1415927f)))) * 0.5f);
 	return ((fParam0 * (1f - fVar0)) + (fParam1 * fVar0));
 }
 
@@ -101624,7 +101624,7 @@ struct<2> func_1067(int* iParam0, int iParam1)//Position - 0x7E46D
 			switch (iParam1)
 			{
 				case 0:
-					func_1068(&Var0, 0.2135922f, 0.3446602f);
+					func_1068(&Var0, 0.21359223f, 0.3446602f);
 					break;
 				
 				case 1:
@@ -101637,7 +101637,7 @@ struct<2> func_1067(int* iParam0, int iParam1)//Position - 0x7E46D
 			switch (iParam1)
 			{
 				case 0:
-					func_1068(&Var0, 0.2135922f, 0.3446602f);
+					func_1068(&Var0, 0.21359223f, 0.3446602f);
 					break;
 				
 				case 1:
@@ -101645,7 +101645,7 @@ struct<2> func_1067(int* iParam0, int iParam1)//Position - 0x7E46D
 					break;
 				
 				case 2:
-					func_1068(&Var0, 0.7961165f, 0.9271845f);
+					func_1068(&Var0, 0.79611653f, 0.92718446f);
 					break;
 			}
 			break;
@@ -101654,11 +101654,11 @@ struct<2> func_1067(int* iParam0, int iParam1)//Position - 0x7E46D
 			switch (iParam1)
 			{
 				case 0:
-					func_1068(&Var0, 0.1654135f, 0.2669173f);
+					func_1068(&Var0, 0.16541353f, 0.2669173f);
 					break;
 				
 				case 1:
-					func_1068(&Var0, 0.3909774f, 0.4924812f);
+					func_1068(&Var0, 0.39097744f, 0.4924812f);
 					break;
 				
 				case 2:
@@ -101666,7 +101666,7 @@ struct<2> func_1067(int* iParam0, int iParam1)//Position - 0x7E46D
 					break;
 				
 				case 3:
-					func_1068(&Var0, 0.8421053f, 0.943609f);
+					func_1068(&Var0, 0.84210527f, 0.943609f);
 					break;
 			}
 			break;
@@ -101675,11 +101675,11 @@ struct<2> func_1067(int* iParam0, int iParam1)//Position - 0x7E46D
 			switch (iParam1)
 			{
 				case 0:
-					func_1068(&Var0, 0.1349693f, 0.2177914f);
+					func_1068(&Var0, 0.13496932f, 0.21779141f);
 					break;
 				
 				case 1:
-					func_1068(&Var0, 0.3190184f, 0.4018405f);
+					func_1068(&Var0, 0.3190184f, 0.40184048f);
 					break;
 				
 				case 2:
@@ -101687,11 +101687,11 @@ struct<2> func_1067(int* iParam0, int iParam1)//Position - 0x7E46D
 					break;
 				
 				case 3:
-					func_1068(&Var0, 0.6871166f, 0.7699386f);
+					func_1068(&Var0, 0.68711656f, 0.76993865f);
 					break;
 				
 				case 4:
-					func_1068(&Var0, 0.8711656f, 0.9539877f);
+					func_1068(&Var0, 0.87116563f, 0.9539877f);
 					break;
 			}
 			break;
@@ -101700,15 +101700,15 @@ struct<2> func_1067(int* iParam0, int iParam1)//Position - 0x7E46D
 			switch (iParam1)
 			{
 				case 0:
-					func_1068(&Var0, 0.1139896f, 0.1839378f);
+					func_1068(&Var0, 0.11398964f, 0.18393782f);
 					break;
 				
 				case 1:
-					func_1068(&Var0, 0.26943f, 0.3393782f);
+					func_1068(&Var0, 0.26943004f, 0.33937824f);
 					break;
 				
 				case 2:
-					func_1068(&Var0, 0.4248705f, 0.4948187f);
+					func_1068(&Var0, 0.42487046f, 0.49481866f);
 					break;
 				
 				case 3:
@@ -101716,7 +101716,7 @@ struct<2> func_1067(int* iParam0, int iParam1)//Position - 0x7E46D
 					break;
 				
 				case 4:
-					func_1068(&Var0, 0.7357513f, 0.8056995f);
+					func_1068(&Var0, 0.7357513f, 0.80569947f);
 					break;
 				
 				case 5:

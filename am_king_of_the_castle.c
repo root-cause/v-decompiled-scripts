@@ -3425,361 +3425,361 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 			switch (iParam1)
 			{
 				case 0:
-					*uParam2 = { -1221.708f, -1849.335f, 1.251f };
+					*uParam2 = { -1221.7085f, -1849.3352f, 1.251f };
 					*uParam3 = 337.5771f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 1:
-					*uParam2 = { -1237.67f, -1835.705f, 1.2517f };
+					*uParam2 = { -1237.6702f, -1835.705f, 1.2517f };
 					*uParam3 = 323.4358f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 2:
-					*uParam2 = { -1249.548f, -1817.355f, 1.2506f };
+					*uParam2 = { -1249.548f, -1817.3547f, 1.2506f };
 					*uParam3 = 297.8504f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 3:
-					*uParam2 = { -1248.685f, -1803.257f, 1.3833f };
+					*uParam2 = { -1248.6849f, -1803.2574f, 1.3833f };
 					*uParam3 = 286.9426f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 4:
-					*uParam2 = { -1248.991f, -1791.148f, 1.6577f };
+					*uParam2 = { -1248.9908f, -1791.1484f, 1.6577f };
 					*uParam3 = 279.8152f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 5:
-					*uParam2 = { -1255.678f, -1781.741f, 1.5292f };
+					*uParam2 = { -1255.6776f, -1781.7412f, 1.5292f };
 					*uParam3 = 271.3008f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 6:
-					*uParam2 = { -1245.86f, -1762.165f, 1.7061f };
+					*uParam2 = { -1245.8599f, -1762.1647f, 1.7061f };
 					*uParam3 = 232.2266f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 7:
-					*uParam2 = { -1245.333f, -1747.114f, 2.0783f };
+					*uParam2 = { -1245.3335f, -1747.1135f, 2.0783f };
 					*uParam3 = 246.9348f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 8:
-					*uParam2 = { -1231.577f, -1747.278f, 2.2692f };
+					*uParam2 = { -1231.5773f, -1747.2778f, 2.2692f };
 					*uParam3 = 208.6838f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 9:
-					*uParam2 = { -1220.947f, -1735.378f, 3.3682f };
+					*uParam2 = { -1220.9473f, -1735.3784f, 3.3682f };
 					*uParam3 = 201.3756f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 10:
-					*uParam2 = { -1210.075f, -1736.36f, 3.2672f };
+					*uParam2 = { -1210.0747f, -1736.3596f, 3.2672f };
 					*uParam3 = 188.154f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 11:
-					*uParam2 = { -1198.247f, -1731.74f, 3.3204f };
+					*uParam2 = { -1198.2474f, -1731.74f, 3.3204f };
 					*uParam3 = 194.4361f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 12:
-					*uParam2 = { -1181.951f, -1730.004f, 3.3951f };
+					*uParam2 = { -1181.9507f, -1730.0043f, 3.3951f };
 					*uParam3 = 177.6483f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 13:
-					*uParam2 = { -1170.59f, -1719.653f, 3.3414f };
+					*uParam2 = { -1170.5897f, -1719.6531f, 3.3414f };
 					*uParam3 = 159.2419f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 14:
-					*uParam2 = { -1159.548f, -1712.506f, 3.327f };
+					*uParam2 = { -1159.5476f, -1712.5056f, 3.327f };
 					*uParam3 = 173.1471f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 15:
-					*uParam2 = { -1164.51f, -1729.84f, 3.2972f };
+					*uParam2 = { -1164.5105f, -1729.8396f, 3.2972f };
 					*uParam3 = 164.5387f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 16:
-					*uParam2 = { -1153.682f, -1723.684f, 3.2673f };
+					*uParam2 = { -1153.6821f, -1723.6842f, 3.2673f };
 					*uParam3 = 159.7204f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 17:
-					*uParam2 = { -1144.7f, -1734.572f, 3.2823f };
+					*uParam2 = { -1144.6997f, -1734.5724f, 3.2823f };
 					*uParam3 = 132.856f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 18:
-					*uParam2 = { -1128.272f, -1755.871f, 3.0265f };
+					*uParam2 = { -1128.2719f, -1755.8715f, 3.0265f };
 					*uParam3 = 111.5717f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 19:
-					*uParam2 = { -1140.422f, -1768.454f, 3.1609f };
+					*uParam2 = { -1140.4221f, -1768.4541f, 3.1609f };
 					*uParam3 = 108.3239f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 20:
-					*uParam2 = { -1236.169f, -1851.284f, 1.2074f };
+					*uParam2 = { -1236.1691f, -1851.2838f, 1.2074f };
 					*uParam3 = 330.7894f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 21:
-					*uParam2 = { -1250.026f, -1849.988f, 0.8113f };
+					*uParam2 = { -1250.0258f, -1849.9877f, 0.8113f };
 					*uParam3 = 315.2169f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 22:
-					*uParam2 = { -1249.307f, -1832.01f, 1.2365f };
+					*uParam2 = { -1249.307f, -1832.0099f, 1.2365f };
 					*uParam3 = 308.724f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 23:
-					*uParam2 = { -1262.08f, -1826.342f, 0.88f };
+					*uParam2 = { -1262.0798f, -1826.3419f, 0.88f };
 					*uParam3 = 291.1317f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 24:
-					*uParam2 = { -1262.728f, -1810.021f, 1.2095f };
+					*uParam2 = { -1262.7281f, -1810.0209f, 1.2095f };
 					*uParam3 = 279.2619f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 25:
-					*uParam2 = { -1260.259f, -1797.316f, 1.24f };
+					*uParam2 = { -1260.259f, -1797.3158f, 1.24f };
 					*uParam3 = 266.2758f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 26:
-					*uParam2 = { -1274.153f, -1773.825f, 1.229f };
+					*uParam2 = { -1274.1533f, -1773.825f, 1.229f };
 					*uParam3 = 253.8689f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 27:
-					*uParam2 = { -1260.69f, -1766.211f, 1.6755f };
+					*uParam2 = { -1260.6898f, -1766.2112f, 1.6755f };
 					*uParam3 = 244.6821f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 28:
-					*uParam2 = { -1266.035f, -1751.414f, 1.7303f };
+					*uParam2 = { -1266.0349f, -1751.4143f, 1.7303f };
 					*uParam3 = 225.9904f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 29:
-					*uParam2 = { -1208.952f, -1720.76f, 3.4325f };
+					*uParam2 = { -1208.9519f, -1720.7599f, 3.4325f };
 					*uParam3 = 190.2951f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 30:
-					*uParam2 = { -1195.125f, -1711.339f, 3.4745f };
+					*uParam2 = { -1195.1249f, -1711.3389f, 3.4745f };
 					*uParam3 = 177.7994f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 31:
-					*uParam2 = { -1186.983f, -1699.157f, 3.4862f };
+					*uParam2 = { -1186.9827f, -1699.1566f, 3.4862f };
 					*uParam3 = 185.7234f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 32:
-					*uParam2 = { -1174.999f, -1703.776f, 3.4646f };
+					*uParam2 = { -1174.9994f, -1703.7756f, 3.4646f };
 					*uParam3 = 172.7709f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 33:
-					*uParam2 = { -1163.133f, -1699.905f, 3.4278f };
+					*uParam2 = { -1163.1329f, -1699.9053f, 3.4278f };
 					*uParam3 = 169.2118f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 34:
-					*uParam2 = { -1150.336f, -1701.652f, 3.3947f };
+					*uParam2 = { -1150.3359f, -1701.652f, 3.3947f };
 					*uParam3 = 148.2826f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 35:
-					*uParam2 = { -1144.078f, -1687.13f, 3.4853f };
+					*uParam2 = { -1144.0776f, -1687.1299f, 3.4853f };
 					*uParam3 = 149.4927f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 36:
-					*uParam2 = { -1138.136f, -1707.854f, 3.387f };
+					*uParam2 = { -1138.1356f, -1707.8545f, 3.387f };
 					*uParam3 = 133.8241f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 37:
-					*uParam2 = { -1140.055f, -1722.341f, 3.3376f };
+					*uParam2 = { -1140.0554f, -1722.3411f, 3.3376f };
 					*uParam3 = 127.5326f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 38:
-					*uParam2 = { -1116.763f, -1746.22f, 3.1299f };
+					*uParam2 = { -1116.7631f, -1746.2201f, 3.1299f };
 					*uParam3 = 107.5649f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 39:
-					*uParam2 = { -1108.207f, -1735.964f, 3.2643f };
+					*uParam2 = { -1108.2073f, -1735.9645f, 3.2643f };
 					*uParam3 = 123.7412f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 40:
-					*uParam2 = { -1227.086f, -1873.856f, 4.935f };
+					*uParam2 = { -1227.0859f, -1873.856f, 4.935f };
 					*uParam3 = 337.0957f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 41:
-					*uParam2 = { -1215.905f, -1861.876f, 4.9443f };
+					*uParam2 = { -1215.9049f, -1861.8759f, 4.9443f };
 					*uParam3 = 346.5332f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 42:
-					*uParam2 = { -1206.479f, -1854.022f, 5.0039f };
+					*uParam2 = { -1206.479f, -1854.0223f, 5.0039f };
 					*uParam3 = 346.756f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 43:
-					*uParam2 = { -1234.57f, -1863.302f, 0.4019f };
+					*uParam2 = { -1234.5697f, -1863.3016f, 0.4019f };
 					*uParam3 = 334.4932f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 44:
-					*uParam2 = { -1261.542f, -1840.843f, 0.429f };
+					*uParam2 = { -1261.5416f, -1840.8429f, 0.429f };
 					*uParam3 = 308.3732f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 45:
-					*uParam2 = { -1271.821f, -1799.404f, 0.9933f };
+					*uParam2 = { -1271.8208f, -1799.4036f, 0.9933f };
 					*uParam3 = 276.274f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 46:
-					*uParam2 = { -1284.195f, -1789.106f, 0.6971f };
+					*uParam2 = { -1284.1946f, -1789.1056f, 0.6971f };
 					*uParam3 = 266.1992f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 47:
-					*uParam2 = { -1257.971f, -1736.858f, 2.0784f };
+					*uParam2 = { -1257.9714f, -1736.8583f, 2.0784f };
 					*uParam3 = 227.487f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 48:
-					*uParam2 = { -1247.267f, -1725.901f, 3.2245f };
+					*uParam2 = { -1247.2671f, -1725.901f, 3.2245f };
 					*uParam3 = 214.7514f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 49:
-					*uParam2 = { -1234.988f, -1722.898f, 3.5186f };
+					*uParam2 = { -1234.9883f, -1722.8982f, 3.5186f };
 					*uParam3 = 220.7502f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 50:
-					*uParam2 = { -1235.874f, -1703.238f, 3.0997f };
+					*uParam2 = { -1235.8738f, -1703.2379f, 3.0997f };
 					*uParam3 = 214.0405f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 51:
-					*uParam2 = { -1231.588f, -1682.849f, 2.571f };
+					*uParam2 = { -1231.5876f, -1682.8486f, 2.571f };
 					*uParam3 = 203.4435f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 52:
-					*uParam2 = { -1215.568f, -1695.777f, 3.1209f };
+					*uParam2 = { -1215.568f, -1695.7775f, 3.1209f };
 					*uParam3 = 196.5891f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 53:
-					*uParam2 = { -1132.415f, -1669.435f, 3.5755f };
+					*uParam2 = { -1132.4147f, -1669.4354f, 3.5755f };
 					*uParam3 = 148.2112f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 54:
-					*uParam2 = { -1159.309f, -1677.777f, 3.4694f };
+					*uParam2 = { -1159.3087f, -1677.7773f, 3.4694f };
 					*uParam3 = 175.6314f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 55:
-					*uParam2 = { -1129.18f, -1690.502f, 3.4678f };
+					*uParam2 = { -1129.1797f, -1690.5024f, 3.4678f };
 					*uParam3 = 143.3497f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 56:
-					*uParam2 = { -1119.669f, -1702.988f, 3.4241f };
+					*uParam2 = { -1119.6694f, -1702.9875f, 3.4241f };
 					*uParam3 = 129.3894f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 57:
-					*uParam2 = { -1120.063f, -1717.326f, 3.3807f };
+					*uParam2 = { -1120.0632f, -1717.3258f, 3.3807f };
 					*uParam3 = 123.5869f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 58:
-					*uParam2 = { -1111.901f, -1758.692f, 4.7663f };
+					*uParam2 = { -1111.9006f, -1758.6924f, 4.7663f };
 					*uParam3 = 93.7592f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 59:
-					*uParam2 = { -1122.059f, -1769.543f, 4.9921f };
+					*uParam2 = { -1122.0592f, -1769.5427f, 4.9921f };
 					*uParam3 = 93.2178f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -3790,31 +3790,31 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 			switch (iParam1)
 			{
 				case 0:
-					*uParam2 = { 1692.861f, -80.4741f, 174.6247f };
+					*uParam2 = { 1692.8611f, -80.4741f, 174.6247f };
 					*uParam3 = 22.7116f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 1:
-					*uParam2 = { 1699.049f, -73.278f, 175.3116f };
+					*uParam2 = { 1699.0492f, -73.278f, 175.3116f };
 					*uParam3 = 36.6067f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 2:
-					*uParam2 = { 1686.15f, -72.261f, 173.9488f };
+					*uParam2 = { 1686.1504f, -72.261f, 173.9488f };
 					*uParam3 = 33.5969f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 3:
-					*uParam2 = { 1673.573f, -76.8662f, 172.6441f };
+					*uParam2 = { 1673.5732f, -76.8662f, 172.6441f };
 					*uParam3 = 358.3647f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 4:
-					*uParam2 = { 1668.303f, -68.8711f, 172.6008f };
+					*uParam2 = { 1668.3027f, -68.8711f, 172.6008f };
 					*uParam3 = 344.7672f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
@@ -3826,79 +3826,79 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 6:
-					*uParam2 = { 1653.943f, -82.7018f, 170.2733f };
+					*uParam2 = { 1653.9427f, -82.7018f, 170.2733f };
 					*uParam3 = 316.5097f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 7:
-					*uParam2 = { 1642.184f, 16.9022f, 172.8744f };
+					*uParam2 = { 1642.1841f, 16.9022f, 172.8744f };
 					*uParam3 = 213.6659f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 8:
-					*uParam2 = { 1647.117f, 26.0881f, 172.469f };
+					*uParam2 = { 1647.1166f, 26.0881f, 172.469f };
 					*uParam3 = 200.4823f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 9:
-					*uParam2 = { 1643.251f, 34.2645f, 171.8502f };
+					*uParam2 = { 1643.2511f, 34.2645f, 171.8502f };
 					*uParam3 = 198.3856f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 10:
-					*uParam2 = { 1652.155f, 38.4683f, 171.5731f };
+					*uParam2 = { 1652.1549f, 38.4683f, 171.5731f };
 					*uParam3 = 167.6548f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 11:
-					*uParam2 = { 1647.521f, 46.6361f, 171.515f };
+					*uParam2 = { 1647.5205f, 46.6361f, 171.515f };
 					*uParam3 = 173.6852f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 12:
-					*uParam2 = { 1658.341f, 46.5354f, 171.4155f };
+					*uParam2 = { 1658.3408f, 46.5354f, 171.4155f };
 					*uParam3 = 142.775f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 13:
-					*uParam2 = { 1654.557f, 54.9274f, 171.5186f };
+					*uParam2 = { 1654.5568f, 54.9274f, 171.5186f };
 					*uParam3 = 158.0565f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 14:
-					*uParam2 = { 1679.687f, -62.2895f, 172.8752f };
+					*uParam2 = { 1679.6868f, -62.2895f, 172.8752f };
 					*uParam3 = 19.1425f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 15:
-					*uParam2 = { 1648.26f, -92.0332f, 169.0467f };
+					*uParam2 = { 1648.2603f, -92.0332f, 169.0467f };
 					*uParam3 = 320.4252f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 16:
-					*uParam2 = { 1641.12f, -90.8545f, 167.3707f };
+					*uParam2 = { 1641.1202f, -90.8545f, 167.3707f };
 					*uParam3 = 340.133f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 17:
-					*uParam2 = { 1632.839f, -88.4347f, 166.232f };
+					*uParam2 = { 1632.8395f, -88.4347f, 166.232f };
 					*uParam3 = 275.8517f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 18:
-					*uParam2 = { 1624.526f, -82.0814f, 165.1201f };
+					*uParam2 = { 1624.5255f, -82.0814f, 165.1201f };
 					*uParam3 = 268.6114f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
@@ -3910,31 +3910,31 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 20:
-					*uParam2 = { 1709.47f, -89.1149f, 176.8704f };
+					*uParam2 = { 1709.4705f, -89.1149f, 176.8704f };
 					*uParam3 = 45.0986f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 21:
-					*uParam2 = { 1719.762f, -89.4824f, 177.2371f };
+					*uParam2 = { 1719.7617f, -89.4824f, 177.2371f };
 					*uParam3 = 40.521f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 22:
-					*uParam2 = { 1715.411f, -97.7661f, 177.0435f };
+					*uParam2 = { 1715.4106f, -97.7661f, 177.0435f };
 					*uParam3 = 39.9521f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 23:
-					*uParam2 = { 1725.27f, -101.2808f, 177.3414f };
+					*uParam2 = { 1725.2697f, -101.2808f, 177.3414f };
 					*uParam3 = 28.2699f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 24:
-					*uParam2 = { 1664.762f, 51.6959f, 171.2758f };
+					*uParam2 = { 1664.7621f, 51.6959f, 171.2758f };
 					*uParam3 = 125.1599f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
@@ -3946,7 +3946,7 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 26:
-					*uParam2 = { 1671.615f, 58.2652f, 171.0533f };
+					*uParam2 = { 1671.6151f, 58.2652f, 171.0533f };
 					*uParam3 = 130.5652f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
@@ -3958,79 +3958,79 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 28:
-					*uParam2 = { 1680.824f, 64.6627f, 170.8684f };
+					*uParam2 = { 1680.8239f, 64.6627f, 170.8684f };
 					*uParam3 = 171.7255f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 29:
-					*uParam2 = { 1686.476f, 72.1055f, 170.6706f };
+					*uParam2 = { 1686.4758f, 72.1055f, 170.6706f };
 					*uParam3 = 118.2492f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 30:
-					*uParam2 = { 1724.498f, 78.3834f, 169.7617f };
+					*uParam2 = { 1724.4978f, 78.3834f, 169.7617f };
 					*uParam3 = 122.1907f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 31:
-					*uParam2 = { 1716.555f, 77.9f, 170.125f };
+					*uParam2 = { 1716.5553f, 77.9f, 170.125f };
 					*uParam3 = 133.2787f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 32:
-					*uParam2 = { 1718.658f, 69.3794f, 169.7158f };
+					*uParam2 = { 1718.6584f, 69.3794f, 169.7158f };
 					*uParam3 = 123.6501f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 33:
-					*uParam2 = { 1708.223f, 67.7488f, 170.122f };
+					*uParam2 = { 1708.2229f, 67.7488f, 170.122f };
 					*uParam3 = 125.7215f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 34:
-					*uParam2 = { 1696.666f, 67.5787f, 170.4112f };
+					*uParam2 = { 1696.6658f, 67.5787f, 170.4112f };
 					*uParam3 = 130.5078f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 35:
-					*uParam2 = { 1688.924f, 64.4787f, 170.5247f };
+					*uParam2 = { 1688.9244f, 64.4787f, 170.5247f };
 					*uParam3 = 116.7526f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 36:
-					*uParam2 = { 1654.409f, 85.3155f, 178.6964f };
+					*uParam2 = { 1654.4088f, 85.3155f, 178.6964f };
 					*uParam3 = 185.1295f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 37:
-					*uParam2 = { 1642.521f, 61.9855f, 183.7891f };
+					*uParam2 = { 1642.5211f, 61.9855f, 183.7891f };
 					*uParam3 = 187.6025f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 38:
-					*uParam2 = { 1663.522f, 37.8715f, 170.7838f };
+					*uParam2 = { 1663.5216f, 37.8715f, 170.7838f };
 					*uParam3 = 181.9699f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 39:
-					*uParam2 = { 1663.431f, 25.7403f, 167.747f };
+					*uParam2 = { 1663.4307f, 25.7403f, 167.747f };
 					*uParam3 = 165.7094f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 40:
-					*uParam2 = { 1660.156f, 12.794f, 165.1707f };
+					*uParam2 = { 1660.1564f, 12.794f, 165.1707f };
 					*uParam3 = 184.4829f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -4042,109 +4042,109 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 42:
-					*uParam2 = { 1650.805f, -63.341f, 163.7801f };
+					*uParam2 = { 1650.8048f, -63.341f, 163.7801f };
 					*uParam3 = 325.3763f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 43:
-					*uParam2 = { 1619.019f, -87.1216f, 164.7846f };
+					*uParam2 = { 1619.0186f, -87.1216f, 164.7846f };
 					*uParam3 = 285.7851f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 44:
-					*uParam2 = { 1616.216f, -76.6892f, 164.2788f };
+					*uParam2 = { 1616.2164f, -76.6892f, 164.2788f };
 					*uParam3 = 277.6688f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 45:
-					*uParam2 = { 1611.567f, -84.1719f, 164.6911f };
+					*uParam2 = { 1611.5674f, -84.1719f, 164.6911f };
 					*uParam3 = 279.2012f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 46:
-					*uParam2 = { 1606.564f, -73.1815f, 163.3484f };
+					*uParam2 = { 1606.5641f, -73.1815f, 163.3484f };
 					*uParam3 = 256.1666f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 47:
-					*uParam2 = { 1595.997f, -78.4415f, 162.1879f };
+					*uParam2 = { 1595.9971f, -78.4415f, 162.1879f };
 					*uParam3 = 273.5168f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 48:
-					*uParam2 = { 1596.441f, -69.8807f, 162.1016f };
+					*uParam2 = { 1596.4407f, -69.8807f, 162.1016f };
 					*uParam3 = 260.1767f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 49:
-					*uParam2 = { 1587.161f, -67.6343f, 161.2196f };
+					*uParam2 = { 1587.1611f, -67.6343f, 161.2196f };
 					*uParam3 = 253.1009f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 50:
-					*uParam2 = { 1582.353f, -76.1702f, 160.4171f };
+					*uParam2 = { 1582.3531f, -76.1702f, 160.4171f };
 					*uParam3 = 265.3223f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 51:
-					*uParam2 = { 1725.676f, -110.6558f, 177.8831f };
+					*uParam2 = { 1725.6759f, -110.6558f, 177.8831f };
 					*uParam3 = 34.6784f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 52:
-					*uParam2 = { 1736.203f, -108.6194f, 179.2085f };
+					*uParam2 = { 1736.2031f, -108.6194f, 179.2085f };
 					*uParam3 = 50.2519f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 53:
-					*uParam2 = { 1746.135f, -106.5357f, 180.7151f };
+					*uParam2 = { 1746.1355f, -106.5357f, 180.7151f };
 					*uParam3 = 65.9975f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 54:
-					*uParam2 = { 1749.594f, -96.7965f, 182.065f };
+					*uParam2 = { 1749.5942f, -96.7965f, 182.065f };
 					*uParam3 = 79.3328f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 55:
-					*uParam2 = { 1758.513f, -98.7928f, 182.982f };
+					*uParam2 = { 1758.5133f, -98.7928f, 182.982f };
 					*uParam3 = 82.5892f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 56:
-					*uParam2 = { 1760.473f, -88.7761f, 184.3481f };
+					*uParam2 = { 1760.4727f, -88.7761f, 184.3481f };
 					*uParam3 = 83.4158f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 57:
-					*uParam2 = { 1770.153f, -89.9473f, 186.0895f };
+					*uParam2 = { 1770.1532f, -89.9473f, 186.0895f };
 					*uParam3 = 69.9826f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 58:
-					*uParam2 = { 1772.731f, -80.3556f, 187.6041f };
+					*uParam2 = { 1772.7311f, -80.3556f, 187.6041f };
 					*uParam3 = 87.3442f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 59:
-					*uParam2 = { 1782.038f, -81.4923f, 188.8666f };
+					*uParam2 = { 1782.0383f, -81.4923f, 188.8666f };
 					*uParam3 = 92.9392f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -4161,19 +4161,19 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 1:
-					*uParam2 = { -348.5437f, 6102.846f, 30.5442f };
+					*uParam2 = { -348.5437f, 6102.8457f, 30.5442f };
 					*uParam3 = 115.8979f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 2:
-					*uParam2 = { -354.9039f, 6112.223f, 30.5402f };
+					*uParam2 = { -354.9039f, 6112.2227f, 30.5402f };
 					*uParam3 = 155.6832f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 3:
-					*uParam2 = { -341.2615f, 6111.447f, 30.542f };
+					*uParam2 = { -341.2615f, 6111.4473f, 30.542f };
 					*uParam3 = 114.7182f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
@@ -4209,19 +4209,19 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 9:
-					*uParam2 = { -383.5045f, 6120.464f, 30.5795f };
+					*uParam2 = { -383.5045f, 6120.4644f, 30.5795f };
 					*uParam3 = 140.9251f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 10:
-					*uParam2 = { -391.13f, 6120.804f, 30.4824f };
+					*uParam2 = { -391.13f, 6120.8037f, 30.4824f };
 					*uParam3 = 201.1372f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 11:
-					*uParam2 = { -402.7893f, 6117.366f, 30.403f };
+					*uParam2 = { -402.7893f, 6117.3657f, 30.403f };
 					*uParam3 = 226.6899f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
@@ -4233,7 +4233,7 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 13:
-					*uParam2 = { -394.3771f, 6111.254f, 30.4438f };
+					*uParam2 = { -394.3771f, 6111.2544f, 30.4438f };
 					*uParam3 = 239.3517f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
@@ -4245,13 +4245,13 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 15:
-					*uParam2 = { -393.7008f, 6063.039f, 30.6001f };
+					*uParam2 = { -393.7008f, 6063.0386f, 30.6001f };
 					*uParam3 = 307.3006f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 16:
-					*uParam2 = { -390.5935f, 6052.42f, 30.6001f };
+					*uParam2 = { -390.5935f, 6052.4204f, 30.6001f };
 					*uParam3 = 318.0318f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
@@ -4263,7 +4263,7 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 18:
-					*uParam2 = { -360.3093f, 6063.834f, 30.6001f };
+					*uParam2 = { -360.3093f, 6063.8345f, 30.6001f };
 					*uParam3 = 37.8362f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
@@ -4281,19 +4281,19 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 21:
-					*uParam2 = { -329.9387f, 6066.402f, 30.3113f };
+					*uParam2 = { -329.9387f, 6066.4023f, 30.3113f };
 					*uParam3 = 44.5343f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 22:
-					*uParam2 = { -335.7858f, 6122.277f, 31.2548f };
+					*uParam2 = { -335.7858f, 6122.2773f, 31.2548f };
 					*uParam3 = 129.6423f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 23:
-					*uParam2 = { -342.0471f, 6128.171f, 31.2548f };
+					*uParam2 = { -342.0471f, 6128.1714f, 31.2548f };
 					*uParam3 = 142.1917f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
@@ -4305,13 +4305,13 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 25:
-					*uParam2 = { -356.2828f, 6125.203f, 30.5402f };
+					*uParam2 = { -356.2828f, 6125.2026f, 30.5402f };
 					*uParam3 = 199.7626f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 26:
-					*uParam2 = { -359.0895f, 6139.214f, 30.5635f };
+					*uParam2 = { -359.0895f, 6139.2144f, 30.5635f };
 					*uParam3 = 124.4663f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
@@ -4323,13 +4323,13 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 28:
-					*uParam2 = { -375.9839f, 6141.022f, 30.4406f };
+					*uParam2 = { -375.9839f, 6141.0225f, 30.4406f };
 					*uParam3 = 161.3973f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 29:
-					*uParam2 = { -369.7337f, 6134.166f, 30.5525f };
+					*uParam2 = { -369.7337f, 6134.1655f, 30.5525f };
 					*uParam3 = 136.8736f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
@@ -4341,7 +4341,7 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 31:
-					*uParam2 = { -350.0499f, 6083.418f, 30.3773f };
+					*uParam2 = { -350.0499f, 6083.4185f, 30.3773f };
 					*uParam3 = 81.9925f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -4359,7 +4359,7 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 34:
-					*uParam2 = { -305.5597f, 6086.671f, 30.3145f };
+					*uParam2 = { -305.5597f, 6086.6714f, 30.3145f };
 					*uParam3 = 105.1401f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -4371,25 +4371,25 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 36:
-					*uParam2 = { -321.8067f, 6105.211f, 30.5847f };
+					*uParam2 = { -321.8067f, 6105.2114f, 30.5847f };
 					*uParam3 = 77.1148f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 37:
-					*uParam2 = { -333.3944f, 6102.061f, 30.5452f };
+					*uParam2 = { -333.3944f, 6102.0605f, 30.5452f };
 					*uParam3 = 94.9811f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 38:
-					*uParam2 = { -328.1533f, 6111.544f, 30.5992f };
+					*uParam2 = { -328.1533f, 6111.5444f, 30.5992f };
 					*uParam3 = 112.3565f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 39:
-					*uParam2 = { -346.6402f, 6170.479f, 30.5104f };
+					*uParam2 = { -346.6402f, 6170.4795f, 30.5104f };
 					*uParam3 = 153.9383f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -4407,13 +4407,13 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 42:
-					*uParam2 = { -362.3921f, 6158.998f, 30.4267f };
+					*uParam2 = { -362.3921f, 6158.9976f, 30.4267f };
 					*uParam3 = 164.6814f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 43:
-					*uParam2 = { -299.2778f, 6094.682f, 30.3967f };
+					*uParam2 = { -299.2778f, 6094.6816f, 30.3967f };
 					*uParam3 = 97.7633f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -4425,13 +4425,13 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 45:
-					*uParam2 = { -419.8507f, 6128.894f, 30.3768f };
+					*uParam2 = { -419.8507f, 6128.8936f, 30.3768f };
 					*uParam3 = 226.1505f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 46:
-					*uParam2 = { -403.4776f, 6109.125f, 30.432f };
+					*uParam2 = { -403.4776f, 6109.1255f, 30.432f };
 					*uParam3 = 231.4631f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -4443,19 +4443,19 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 48:
-					*uParam2 = { -423.8823f, 6087.721f, 30.3067f };
+					*uParam2 = { -423.8823f, 6087.7207f, 30.3067f };
 					*uParam3 = 249.7169f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 49:
-					*uParam2 = { -409.3334f, 6087.301f, 30.6001f };
+					*uParam2 = { -409.3334f, 6087.3013f, 30.6001f };
 					*uParam3 = 255.2337f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 50:
-					*uParam2 = { -415.4413f, 6074.564f, 30.6001f };
+					*uParam2 = { -415.4413f, 6074.5645f, 30.6001f };
 					*uParam3 = 295.8184f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -4473,7 +4473,7 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 53:
-					*uParam2 = { -410.8875f, 6060.549f, 30.6001f };
+					*uParam2 = { -410.8875f, 6060.5493f, 30.6001f };
 					*uParam3 = 233.6391f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -4485,19 +4485,19 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 55:
-					*uParam2 = { -410.8336f, 6049.957f, 30.7181f };
+					*uParam2 = { -410.8336f, 6049.9565f, 30.7181f };
 					*uParam3 = 282.7038f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 56:
-					*uParam2 = { -388.0199f, 6039.768f, 30.5993f };
+					*uParam2 = { -388.0199f, 6039.7676f, 30.5993f };
 					*uParam3 = 17.0043f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 57:
-					*uParam2 = { -395.2367f, 6033.086f, 30.6906f };
+					*uParam2 = { -395.2367f, 6033.0864f, 30.6906f };
 					*uParam3 = 344.4481f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -4509,7 +4509,7 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 59:
-					*uParam2 = { -380.7711f, 6033.284f, 30.5989f };
+					*uParam2 = { -380.7711f, 6033.2837f, 30.5989f };
 					*uParam3 = 40.8827f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -4520,7 +4520,7 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 			switch (iParam1)
 			{
 				case 0:
-					*uParam2 = { -692.3021f, 5591.033f, 31.803f };
+					*uParam2 = { -692.3021f, 5591.0327f, 31.803f };
 					*uParam3 = 74.8653f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
@@ -4532,7 +4532,7 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 2:
-					*uParam2 = { -697.7473f, 5566.13f, 37.8698f };
+					*uParam2 = { -697.7473f, 5566.1304f, 37.8698f };
 					*uParam3 = 50.5049f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
@@ -4562,7 +4562,7 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 7:
-					*uParam2 = { -780.6183f, 5563.971f, 32.6778f };
+					*uParam2 = { -780.6183f, 5563.9707f, 32.6778f };
 					*uParam3 = 329.6704f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
@@ -4586,7 +4586,7 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 11:
-					*uParam2 = { -768.7381f, 5595.103f, 32.6827f };
+					*uParam2 = { -768.7381f, 5595.1025f, 32.6827f };
 					*uParam3 = 230.1011f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
@@ -4610,25 +4610,25 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 15:
-					*uParam2 = { -730.2549f, 5635.994f, 27.8518f };
+					*uParam2 = { -730.2549f, 5635.9937f, 27.8518f };
 					*uParam3 = 162.9716f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 16:
-					*uParam2 = { -723.6004f, 5622.383f, 28.385f };
+					*uParam2 = { -723.6004f, 5622.3833f, 28.385f };
 					*uParam3 = 172.2795f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 17:
-					*uParam2 = { -718.595f, 5631.016f, 27.7666f };
+					*uParam2 = { -718.595f, 5631.0156f, 27.7666f };
 					*uParam3 = 172.2795f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 18:
-					*uParam2 = { -708.1818f, 5621.512f, 29.6452f };
+					*uParam2 = { -708.1818f, 5621.5117f, 29.6452f };
 					*uParam3 = 126.8752f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
@@ -4640,7 +4640,7 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 20:
-					*uParam2 = { -708.3126f, 5550.206f, 36.7429f };
+					*uParam2 = { -708.3126f, 5550.2056f, 36.7429f };
 					*uParam3 = 29.6831f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
@@ -4664,13 +4664,13 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 24:
-					*uParam2 = { -763.8516f, 5533.312f, 32.6785f };
+					*uParam2 = { -763.8516f, 5533.3115f, 32.6785f };
 					*uParam3 = 1.7896f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 25:
-					*uParam2 = { -775.123f, 5542.04f, 32.6934f };
+					*uParam2 = { -775.123f, 5542.0396f, 32.6934f };
 					*uParam3 = 349.4598f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
@@ -4688,7 +4688,7 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 28:
-					*uParam2 = { -781.6904f, 5555.604f, 32.6802f };
+					*uParam2 = { -781.6904f, 5555.6045f, 32.6802f };
 					*uParam3 = 351.5664f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
@@ -4718,25 +4718,25 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 33:
-					*uParam2 = { -731.1522f, 5650.561f, 27.2619f };
+					*uParam2 = { -731.1522f, 5650.5605f, 27.2619f };
 					*uParam3 = 172.6602f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 34:
-					*uParam2 = { -721.4506f, 5664.842f, 26.6086f };
+					*uParam2 = { -721.4506f, 5664.8423f, 26.6086f };
 					*uParam3 = 175.8839f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 35:
-					*uParam2 = { -719.6653f, 5647.082f, 28.1182f };
+					*uParam2 = { -719.6653f, 5647.0815f, 28.1182f };
 					*uParam3 = 166.6596f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 36:
-					*uParam2 = { -708.6494f, 5641.488f, 29.7045f };
+					*uParam2 = { -708.6494f, 5641.4883f, 29.7045f };
 					*uParam3 = 139.2498f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
@@ -4760,7 +4760,7 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 40:
-					*uParam2 = { -719.377f, 5680.363f, 25.3398f };
+					*uParam2 = { -719.377f, 5680.3633f, 25.3398f };
 					*uParam3 = 160.6696f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -4772,19 +4772,19 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 42:
-					*uParam2 = { -680.2346f, 5676.271f, 30.6741f };
+					*uParam2 = { -680.2346f, 5676.2715f, 30.6741f };
 					*uParam3 = 86.9398f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 43:
-					*uParam2 = { -676.3746f, 5655.031f, 32.0498f };
+					*uParam2 = { -676.3746f, 5655.0312f, 32.0498f };
 					*uParam3 = 139.4649f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 44:
-					*uParam2 = { -680.2036f, 5638.799f, 32.6927f };
+					*uParam2 = { -680.2036f, 5638.7993f, 32.6927f };
 					*uParam3 = 134.8275f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -4796,19 +4796,19 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 46:
-					*uParam2 = { -670.8715f, 5583.509f, 38.7761f };
+					*uParam2 = { -670.8715f, 5583.5093f, 38.7761f };
 					*uParam3 = 85.3828f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 47:
-					*uParam2 = { -743.9585f, 5544.044f, 32.6886f };
+					*uParam2 = { -743.9585f, 5544.0444f, 32.6886f };
 					*uParam3 = 10.6683f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 48:
-					*uParam2 = { -786.1422f, 5543.069f, 32.7461f };
+					*uParam2 = { -786.1422f, 5543.0693f, 32.7461f };
 					*uParam3 = 320.9388f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -4826,7 +4826,7 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 51:
-					*uParam2 = { -804.6185f, 5577.981f, 30.1522f };
+					*uParam2 = { -804.6185f, 5577.9814f, 30.1522f };
 					*uParam3 = 312.7694f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -4838,13 +4838,13 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 53:
-					*uParam2 = { -796.4553f, 5614.668f, 26.6406f };
+					*uParam2 = { -796.4553f, 5614.6685f, 26.6406f };
 					*uParam3 = 245.4986f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 54:
-					*uParam2 = { -790.2338f, 5632.483f, 25.0732f };
+					*uParam2 = { -790.2338f, 5632.4834f, 25.0732f };
 					*uParam3 = 224.0737f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -4885,25 +4885,25 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 			switch (iParam1)
 			{
 				case 0:
-					*uParam2 = { 2504.708f, 3832.864f, 44.2233f };
+					*uParam2 = { 2504.7078f, 3832.864f, 44.2233f };
 					*uParam3 = 183.6139f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 1:
-					*uParam2 = { 2470.234f, 3832.214f, 39.2978f };
+					*uParam2 = { 2470.2336f, 3832.2144f, 39.2978f };
 					*uParam3 = 221.0469f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 2:
-					*uParam2 = { 2469.984f, 3815.587f, 39.1223f };
+					*uParam2 = { 2469.9836f, 3815.5874f, 39.1223f };
 					*uParam3 = 236.1043f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 3:
-					*uParam2 = { 2472.682f, 3802.595f, 39.5029f };
+					*uParam2 = { 2472.682f, 3802.5955f, 39.5029f };
 					*uParam3 = 252.6169f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
@@ -4915,169 +4915,169 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 5:
-					*uParam2 = { 2429.278f, 3803.292f, 38.8134f };
+					*uParam2 = { 2429.2783f, 3803.2915f, 38.8134f };
 					*uParam3 = 251.2017f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 6:
-					*uParam2 = { 2461.768f, 3786.931f, 40.1218f };
+					*uParam2 = { 2461.7683f, 3786.9314f, 40.1218f };
 					*uParam3 = 273.0054f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 7:
-					*uParam2 = { 2446.433f, 3784.864f, 39.6849f };
+					*uParam2 = { 2446.433f, 3784.8638f, 39.6849f };
 					*uParam3 = 253.3649f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 8:
-					*uParam2 = { 2431.84f, 3775.977f, 39.5771f };
+					*uParam2 = { 2431.8403f, 3775.977f, 39.5771f };
 					*uParam3 = 262.8813f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 9:
-					*uParam2 = { 2426.948f, 3759.106f, 40.5694f };
+					*uParam2 = { 2426.948f, 3759.1062f, 40.5694f };
 					*uParam3 = 286.9683f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 10:
-					*uParam2 = { 2413.091f, 3747.124f, 40.6396f };
+					*uParam2 = { 2413.0908f, 3747.1243f, 40.6396f };
 					*uParam3 = 291.6124f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 11:
-					*uParam2 = { 2435.193f, 3749.984f, 41.1655f };
+					*uParam2 = { 2435.1926f, 3749.9844f, 41.1655f };
 					*uParam3 = 292.603f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 12:
-					*uParam2 = { 2447.66f, 3752.583f, 41.4906f };
+					*uParam2 = { 2447.6604f, 3752.5833f, 41.4906f };
 					*uParam3 = 297.6301f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 13:
-					*uParam2 = { 2458.258f, 3758.142f, 41.1153f };
+					*uParam2 = { 2458.2578f, 3758.1418f, 41.1153f };
 					*uParam3 = 303.2986f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 14:
-					*uParam2 = { 2467.802f, 3750.602f, 41.4918f };
+					*uParam2 = { 2467.8015f, 3750.6018f, 41.4918f };
 					*uParam3 = 303.2986f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 15:
-					*uParam2 = { 2473.253f, 3734.285f, 41.4643f };
+					*uParam2 = { 2473.2534f, 3734.2852f, 41.4643f };
 					*uParam3 = 319.8912f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 16:
-					*uParam2 = { 2474.793f, 3718.189f, 43.5229f };
+					*uParam2 = { 2474.7927f, 3718.1887f, 43.5229f };
 					*uParam3 = 353.5786f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 17:
-					*uParam2 = { 2494.569f, 3724.297f, 42.2386f };
+					*uParam2 = { 2494.5686f, 3724.297f, 42.2386f };
 					*uParam3 = 354.6885f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 18:
-					*uParam2 = { 2336.604f, 3786.805f, 35.4554f };
+					*uParam2 = { 2336.6045f, 3786.8047f, 35.4554f };
 					*uParam3 = 271.7747f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 19:
-					*uParam2 = { 2449.885f, 3769.517f, 40.3259f };
+					*uParam2 = { 2449.8853f, 3769.5168f, 40.3259f };
 					*uParam3 = 284.606f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 20:
-					*uParam2 = { 2486.191f, 3708.932f, 42.8584f };
+					*uParam2 = { 2486.1914f, 3708.932f, 42.8584f };
 					*uParam3 = 338.9825f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 21:
-					*uParam2 = { 2441.525f, 3726.493f, 49.833f };
+					*uParam2 = { 2441.525f, 3726.4927f, 49.833f };
 					*uParam3 = 305.777f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 22:
-					*uParam2 = { 2435.716f, 3718.48f, 50.9846f };
+					*uParam2 = { 2435.716f, 3718.4797f, 50.9846f };
 					*uParam3 = 316.2304f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 23:
-					*uParam2 = { 2414.73f, 3734.144f, 41.656f };
+					*uParam2 = { 2414.7297f, 3734.1436f, 41.656f };
 					*uParam3 = 304.645f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 24:
-					*uParam2 = { 2397.829f, 3753.812f, 38.2667f };
+					*uParam2 = { 2397.8293f, 3753.812f, 38.2667f };
 					*uParam3 = 277.5322f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 25:
-					*uParam2 = { 2413.961f, 3768.889f, 38.9386f };
+					*uParam2 = { 2413.9607f, 3768.8892f, 38.9386f };
 					*uParam3 = 262.8003f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 26:
-					*uParam2 = { 2418.116f, 3784.66f, 38.7937f };
+					*uParam2 = { 2418.1165f, 3784.6604f, 38.7937f };
 					*uParam3 = 271.0046f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 27:
-					*uParam2 = { 2402.416f, 3792.671f, 38.1692f };
+					*uParam2 = { 2402.4158f, 3792.6714f, 38.1692f };
 					*uParam3 = 252.6272f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 28:
-					*uParam2 = { 2392.174f, 3800.214f, 37.3174f };
+					*uParam2 = { 2392.1743f, 3800.214f, 37.3174f };
 					*uParam3 = 233.5119f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 29:
-					*uParam2 = { 2379.034f, 3800.104f, 36.6627f };
+					*uParam2 = { 2379.0337f, 3800.1042f, 36.6627f };
 					*uParam3 = 253.7779f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 30:
-					*uParam2 = { 2421.42f, 3819.218f, 36.6498f };
+					*uParam2 = { 2421.4197f, 3819.2175f, 36.6498f };
 					*uParam3 = 240.598f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 31:
-					*uParam2 = { 2433.665f, 3833.4f, 36.8711f };
+					*uParam2 = { 2433.6646f, 3833.3997f, 36.8711f };
 					*uParam3 = 235.1875f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 32:
-					*uParam2 = { 2446.784f, 3840.43f, 36.9341f };
+					*uParam2 = { 2446.7837f, 3840.4302f, 36.9341f };
 					*uParam3 = 232.4636f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
@@ -5089,49 +5089,49 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 34:
-					*uParam2 = { 2477.133f, 3855.754f, 37.2602f };
+					*uParam2 = { 2477.1333f, 3855.7542f, 37.2602f };
 					*uParam3 = 202.825f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 35:
-					*uParam2 = { 2450.037f, 3811.51f, 39.475f };
+					*uParam2 = { 2450.0374f, 3811.5098f, 39.475f };
 					*uParam3 = 250.1392f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 36:
-					*uParam2 = { 2485.065f, 3829.442f, 39.1108f };
+					*uParam2 = { 2485.0647f, 3829.4417f, 39.1108f };
 					*uParam3 = 211.7988f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 37:
-					*uParam2 = { 2484.83f, 3814.141f, 39.3918f };
+					*uParam2 = { 2484.8298f, 3814.1406f, 39.3918f };
 					*uParam3 = 229.5693f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 38:
-					*uParam2 = { 2566.085f, 3806.854f, 64.6304f };
+					*uParam2 = { 2566.0852f, 3806.8542f, 64.6304f };
 					*uParam3 = 105.4003f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 39:
-					*uParam2 = { 2585.664f, 3806.854f, 71.7304f };
+					*uParam2 = { 2585.6636f, 3806.8542f, 71.7304f };
 					*uParam3 = 110.9439f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 40:
-					*uParam2 = { 2620.499f, 3798.988f, 78.4414f };
+					*uParam2 = { 2620.4988f, 3798.988f, 78.4414f };
 					*uParam3 = 80.1436f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 41:
-					*uParam2 = { 2612.831f, 3816.725f, 77.148f };
+					*uParam2 = { 2612.8306f, 3816.725f, 77.148f };
 					*uParam3 = 105.885f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -5143,91 +5143,91 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 43:
-					*uParam2 = { 2439.931f, 3869.727f, 36.8359f };
+					*uParam2 = { 2439.9307f, 3869.7268f, 36.8359f };
 					*uParam3 = 194.6768f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 44:
-					*uParam2 = { 2415.056f, 3867.74f, 36.4367f };
+					*uParam2 = { 2415.056f, 3867.7405f, 36.4367f };
 					*uParam3 = 227.8888f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 45:
-					*uParam2 = { 2405.057f, 3840.129f, 37.6172f };
+					*uParam2 = { 2405.0571f, 3840.129f, 37.6172f };
 					*uParam3 = 237.4134f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 46:
-					*uParam2 = { 2402.643f, 3831.987f, 37.3666f };
+					*uParam2 = { 2402.6426f, 3831.9866f, 37.3666f };
 					*uParam3 = 243.847f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 47:
-					*uParam2 = { 2393.434f, 3820.804f, 37.399f };
+					*uParam2 = { 2393.434f, 3820.8044f, 37.399f };
 					*uParam3 = 274.6625f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 48:
-					*uParam2 = { 2379.645f, 3814.471f, 37.141f };
+					*uParam2 = { 2379.6448f, 3814.471f, 37.141f };
 					*uParam3 = 261.4475f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 49:
-					*uParam2 = { 2362.336f, 3795.185f, 36.6862f };
+					*uParam2 = { 2362.3362f, 3795.185f, 36.6862f };
 					*uParam3 = 270.3616f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 50:
-					*uParam2 = { 2347.031f, 3771.605f, 36.6862f };
+					*uParam2 = { 2347.0305f, 3771.605f, 36.6862f };
 					*uParam3 = 270.3616f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 51:
-					*uParam2 = { 2390.352f, 3771.605f, 37.0186f };
+					*uParam2 = { 2390.3516f, 3771.605f, 37.0186f };
 					*uParam3 = 277.3893f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 52:
-					*uParam2 = { 2376.869f, 3747.89f, 43.6471f };
+					*uParam2 = { 2376.8694f, 3747.89f, 43.6471f };
 					*uParam3 = 283.6571f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 53:
-					*uParam2 = { 2397.29f, 3720.224f, 45.2658f };
+					*uParam2 = { 2397.2896f, 3720.2244f, 45.2658f };
 					*uParam3 = 309.3541f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 54:
-					*uParam2 = { 2389.842f, 3708.438f, 48.8025f };
+					*uParam2 = { 2389.842f, 3708.4375f, 48.8025f };
 					*uParam3 = 328.7773f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 55:
-					*uParam2 = { 2414.263f, 3688.072f, 55.1156f };
+					*uParam2 = { 2414.2627f, 3688.0715f, 55.1156f };
 					*uParam3 = 318.0387f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 56:
-					*uParam2 = { 2425.977f, 3703.052f, 52.2051f };
+					*uParam2 = { 2425.977f, 3703.0522f, 52.2051f };
 					*uParam3 = 321.8817f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 57:
-					*uParam2 = { 2457.983f, 3723.803f, 47.774f };
+					*uParam2 = { 2457.9834f, 3723.8035f, 47.774f };
 					*uParam3 = 320.001f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -5239,7 +5239,7 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 59:
-					*uParam2 = { 2500.671f, 3701.153f, 40.9656f };
+					*uParam2 = { 2500.6707f, 3701.1533f, 40.9656f };
 					*uParam3 = 343.9347f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -5250,85 +5250,85 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 			switch (iParam1)
 			{
 				case 0:
-					*uParam2 = { -393.9336f, 1106.463f, 324.963f };
+					*uParam2 = { -393.9336f, 1106.4625f, 324.963f };
 					*uParam3 = 3.7402f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 1:
-					*uParam2 = { -410.0362f, 1109.404f, 324.9667f };
+					*uParam2 = { -410.0362f, 1109.4043f, 324.9667f };
 					*uParam3 = 333.049f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 2:
-					*uParam2 = { -428.784f, 1115.099f, 325.868f };
+					*uParam2 = { -428.784f, 1115.0994f, 325.868f };
 					*uParam3 = 300.9811f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 3:
-					*uParam2 = { -447.0386f, 1119.385f, 324.9694f };
+					*uParam2 = { -447.0386f, 1119.3855f, 324.9694f };
 					*uParam3 = 291.3791f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 4:
-					*uParam2 = { -442.3369f, 1130.731f, 324.9604f };
+					*uParam2 = { -442.3369f, 1130.7311f, 324.9604f };
 					*uParam3 = 277.1605f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 5:
-					*uParam2 = { -440.9719f, 1142.607f, 324.9557f };
+					*uParam2 = { -440.9719f, 1142.6072f, 324.9557f };
 					*uParam3 = 250.3044f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 6:
-					*uParam2 = { -446.4467f, 1154.628f, 325.0045f };
+					*uParam2 = { -446.4467f, 1154.6282f, 325.0045f };
 					*uParam3 = 248.4445f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 7:
-					*uParam2 = { -434.5363f, 1160.321f, 324.9632f };
+					*uParam2 = { -434.5363f, 1160.3206f, 324.9632f };
 					*uParam3 = 230.0039f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 8:
-					*uParam2 = { -424.4414f, 1172.293f, 325.0043f };
+					*uParam2 = { -424.4414f, 1172.2935f, 325.0043f };
 					*uParam3 = 219.6946f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 9:
-					*uParam2 = { -421.9871f, 1161.774f, 325.0063f };
+					*uParam2 = { -421.9871f, 1161.7736f, 325.0063f };
 					*uParam3 = 219.721f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 10:
-					*uParam2 = { -427.4456f, 1148.051f, 325.0044f };
+					*uParam2 = { -427.4456f, 1148.0509f, 325.0044f };
 					*uParam3 = 230.6394f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 11:
-					*uParam2 = { -428.7997f, 1136.869f, 325.0044f };
+					*uParam2 = { -428.7997f, 1136.8693f, 325.0044f };
 					*uParam3 = 260.5906f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 12:
-					*uParam2 = { -431.5406f, 1126.397f, 325.0403f };
+					*uParam2 = { -431.5406f, 1126.3973f, 325.0403f };
 					*uParam3 = 280.8301f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 13:
-					*uParam2 = { -416.0247f, 1120.771f, 324.9593f };
+					*uParam2 = { -416.0247f, 1120.7711f, 324.9593f };
 					*uParam3 = 308.4634f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
@@ -5340,73 +5340,73 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 15:
-					*uParam2 = { -418.7003f, 1142.939f, 324.962f };
+					*uParam2 = { -418.7003f, 1142.9387f, 324.962f };
 					*uParam3 = 234.7959f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 16:
-					*uParam2 = { -408.7494f, 1158.555f, 325.0084f };
+					*uParam2 = { -408.7494f, 1158.5554f, 325.0084f };
 					*uParam3 = 202.298f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 17:
-					*uParam2 = { -411.2803f, 1169.951f, 324.9431f };
+					*uParam2 = { -411.2803f, 1169.9507f, 324.9431f };
 					*uParam3 = 205.6539f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 18:
-					*uParam2 = { -398.8847f, 1164.101f, 325.0133f };
+					*uParam2 = { -398.8847f, 1164.1007f, 325.0133f };
 					*uParam3 = 184.3107f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 19:
-					*uParam2 = { -388.1964f, 1173.05f, 324.8147f };
+					*uParam2 = { -388.1964f, 1173.0496f, 324.8147f };
 					*uParam3 = 166.4872f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 20:
-					*uParam2 = { -368.8524f, 1165.414f, 324.8589f };
+					*uParam2 = { -368.8524f, 1165.4137f, 324.8589f };
 					*uParam3 = 143.9187f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 21:
-					*uParam2 = { -378.9884f, 1168.124f, 324.9442f };
+					*uParam2 = { -378.9884f, 1168.1243f, 324.9442f };
 					*uParam3 = 138.8804f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 22:
-					*uParam2 = { -386.2831f, 1186.969f, 324.8583f };
+					*uParam2 = { -386.2831f, 1186.9691f, 324.8583f };
 					*uParam3 = 168.679f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 23:
-					*uParam2 = { -424.0227f, 1207.077f, 324.8583f };
+					*uParam2 = { -424.0227f, 1207.0771f, 324.8583f };
 					*uParam3 = 192.8885f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 24:
-					*uParam2 = { -425.9954f, 1196.52f, 324.8583f };
+					*uParam2 = { -425.9954f, 1196.5197f, 324.8583f };
 					*uParam3 = 182.6931f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 25:
-					*uParam2 = { -400.9391f, 1177.741f, 324.7394f };
+					*uParam2 = { -400.9391f, 1177.7406f, 324.7394f };
 					*uParam3 = 183.8522f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 26:
-					*uParam2 = { -414.3408f, 1178.525f, 324.7417f };
+					*uParam2 = { -414.3408f, 1178.5253f, 324.7417f };
 					*uParam3 = 190.7249f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
@@ -5418,73 +5418,73 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 28:
-					*uParam2 = { -438.3099f, 1184.969f, 324.9972f };
+					*uParam2 = { -438.3099f, 1184.9691f, 324.9972f };
 					*uParam3 = 216.3494f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 29:
-					*uParam2 = { -440.8298f, 1174.33f, 324.9674f };
+					*uParam2 = { -440.8298f, 1174.3301f, 324.9674f };
 					*uParam3 = 236.8431f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 30:
-					*uParam2 = { -450.9589f, 1165.905f, 324.9547f };
+					*uParam2 = { -450.9589f, 1165.9045f, 324.9547f };
 					*uParam3 = 238.6017f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 31:
-					*uParam2 = { -459.008f, 1156.905f, 324.9622f };
+					*uParam2 = { -459.008f, 1156.9045f, 324.9622f };
 					*uParam3 = 235.1455f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 32:
-					*uParam2 = { -466.6086f, 1151.548f, 324.9625f };
+					*uParam2 = { -466.6086f, 1151.5485f, 324.9625f };
 					*uParam3 = 262.671f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 33:
-					*uParam2 = { -463.0775f, 1140.172f, 325.0044f };
+					*uParam2 = { -463.0775f, 1140.1715f, 325.0044f };
 					*uParam3 = 255.8193f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 34:
-					*uParam2 = { -453.6404f, 1141.622f, 325.0044f };
+					*uParam2 = { -453.6404f, 1141.6218f, 325.0044f };
 					*uParam3 = 270.7759f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 35:
-					*uParam2 = { -468.3044f, 1126.492f, 324.9643f };
+					*uParam2 = { -468.3044f, 1126.4921f, 324.9643f };
 					*uParam3 = 263.469f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 36:
-					*uParam2 = { -457.6102f, 1126.904f, 324.9546f };
+					*uParam2 = { -457.6102f, 1126.9038f, 324.9546f };
 					*uParam3 = 262.384f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 37:
-					*uParam2 = { -385.6385f, 1102.252f, 324.7293f };
+					*uParam2 = { -385.6385f, 1102.2517f, 324.7293f };
 					*uParam3 = 25.2881f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 38:
-					*uParam2 = { -383.8219f, 1093.566f, 324.3149f };
+					*uParam2 = { -383.8219f, 1093.5663f, 324.3149f };
 					*uParam3 = 2.7963f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 39:
-					*uParam2 = { -390.1671f, 1092.119f, 325.2136f };
+					*uParam2 = { -390.1671f, 1092.1189f, 325.2136f };
 					*uParam3 = 20.6423f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
@@ -5496,109 +5496,109 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 41:
-					*uParam2 = { -390.9579f, 1075.828f, 323.3234f };
+					*uParam2 = { -390.9579f, 1075.8285f, 323.3234f };
 					*uParam3 = 339.4828f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 42:
-					*uParam2 = { -386.3601f, 1084.166f, 323.7919f };
+					*uParam2 = { -386.3601f, 1084.1661f, 323.7919f };
 					*uParam3 = 354.7784f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 43:
-					*uParam2 = { -343.6368f, 1155.187f, 324.7273f };
+					*uParam2 = { -343.6368f, 1155.1866f, 324.7273f };
 					*uParam3 = 115.9307f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 44:
-					*uParam2 = { -350.9581f, 1163.98f, 324.5156f };
+					*uParam2 = { -350.9581f, 1163.9796f, 324.5156f };
 					*uParam3 = 116.0754f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 45:
-					*uParam2 = { -359.8979f, 1158.566f, 324.6362f };
+					*uParam2 = { -359.8979f, 1158.5658f, 324.6362f };
 					*uParam3 = 120.9973f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 46:
-					*uParam2 = { -399.4072f, 1196.483f, 324.7383f };
+					*uParam2 = { -399.4072f, 1196.4825f, 324.7383f };
 					*uParam3 = 182.8968f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 47:
-					*uParam2 = { -400.8836f, 1210.983f, 325.0406f };
+					*uParam2 = { -400.8836f, 1210.9829f, 325.0406f };
 					*uParam3 = 195.0742f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 48:
-					*uParam2 = { -381.3676f, 1203.004f, 324.8555f };
+					*uParam2 = { -381.3676f, 1203.0039f, 324.8555f };
 					*uParam3 = 162.6808f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 49:
-					*uParam2 = { -377.298f, 1218.699f, 324.8556f };
+					*uParam2 = { -377.298f, 1218.6995f, 324.8556f };
 					*uParam3 = 161.6516f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 50:
-					*uParam2 = { -416.3955f, 1238.681f, 324.8614f };
+					*uParam2 = { -416.3955f, 1238.6814f, 324.8614f };
 					*uParam3 = 196.7896f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 51:
-					*uParam2 = { -420.2233f, 1223.627f, 324.8551f };
+					*uParam2 = { -420.2233f, 1223.6271f, 324.8551f };
 					*uParam3 = 195.917f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 52:
-					*uParam2 = { -449.2621f, 1187.425f, 324.988f };
+					*uParam2 = { -449.2621f, 1187.4248f, 324.988f };
 					*uParam3 = 245.0986f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 53:
-					*uParam2 = { -462.3227f, 1187.615f, 324.7824f };
+					*uParam2 = { -462.3227f, 1187.6145f, 324.7824f };
 					*uParam3 = 250.3676f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 54:
-					*uParam2 = { -472.915f, 1142.98f, 324.9524f };
+					*uParam2 = { -472.915f, 1142.9796f, 324.9524f };
 					*uParam3 = 260.1427f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 55:
-					*uParam2 = { -476.2405f, 1120.76f, 324.9513f };
+					*uParam2 = { -476.2405f, 1120.7596f, 324.9513f };
 					*uParam3 = 281.8387f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 56:
-					*uParam2 = { -480.6375f, 1107.113f, 324.9517f };
+					*uParam2 = { -480.6375f, 1107.1132f, 324.9517f };
 					*uParam3 = 330.5185f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 57:
-					*uParam2 = { -467.9135f, 1119.13f, 324.975f };
+					*uParam2 = { -467.9135f, 1119.1298f, 324.975f };
 					*uParam3 = 291.4161f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 58:
-					*uParam2 = { -472.083f, 1186.256f, 324.4922f };
+					*uParam2 = { -472.083f, 1186.2556f, 324.4922f };
 					*uParam3 = 248.7844f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -5621,25 +5621,25 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 1:
-					*uParam2 = { 462.9742f, -1315.816f, 28.3365f };
+					*uParam2 = { 462.9742f, -1315.8162f, 28.3365f };
 					*uParam3 = 211.6687f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 2:
-					*uParam2 = { 491.3282f, -1343.662f, 28.3462f };
+					*uParam2 = { 491.3282f, -1343.6619f, 28.3462f };
 					*uParam3 = 29.1021f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 3:
-					*uParam2 = { 488.5634f, -1353.807f, 28.365f };
+					*uParam2 = { 488.5634f, -1353.8071f, 28.365f };
 					*uParam3 = 350.4963f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 4:
-					*uParam2 = { 489.778f, -1362.178f, 28.3936f };
+					*uParam2 = { 489.778f, -1362.1779f, 28.3936f };
 					*uParam3 = 333.8013f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
@@ -5651,85 +5651,85 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 6:
-					*uParam2 = { 491.692f, -1377.681f, 28.4808f };
+					*uParam2 = { 491.692f, -1377.6813f, 28.4808f };
 					*uParam3 = 6.2341f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 7:
-					*uParam2 = { 508.4521f, -1332.725f, 28.8217f };
+					*uParam2 = { 508.4521f, -1332.7253f, 28.8217f };
 					*uParam3 = 81.6066f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 8:
-					*uParam2 = { 482.3437f, -1302.914f, 28.3646f };
+					*uParam2 = { 482.3437f, -1302.9136f, 28.3646f };
 					*uParam3 = 185.9192f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 9:
-					*uParam2 = { 489.6881f, -1306.12f, 28.375f };
+					*uParam2 = { 489.6881f, -1306.1202f, 28.375f };
 					*uParam3 = 181.4375f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 10:
-					*uParam2 = { 486.8906f, -1314.552f, 28.3349f };
+					*uParam2 = { 486.8906f, -1314.5516f, 28.3349f };
 					*uParam3 = 201.3654f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 11:
-					*uParam2 = { 510.3459f, -1328.159f, 28.4041f };
+					*uParam2 = { 510.3459f, -1328.1589f, 28.4041f };
 					*uParam3 = 38.9104f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 12:
-					*uParam2 = { 503.6635f, -1316.644f, 28.254f };
+					*uParam2 = { 503.6635f, -1316.6436f, 28.254f };
 					*uParam3 = 78.5885f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 13:
-					*uParam2 = { 498.5652f, -1306.801f, 28.375f };
+					*uParam2 = { 498.5652f, -1306.8005f, 28.375f };
 					*uParam3 = 181.4375f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 14:
-					*uParam2 = { 494.3388f, -1296.788f, 27.8975f };
+					*uParam2 = { 494.3388f, -1296.7885f, 27.8975f };
 					*uParam3 = 181.588f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 15:
-					*uParam2 = { 445.3724f, -1312.777f, 33.034f };
+					*uParam2 = { 445.3724f, -1312.7767f, 33.034f };
 					*uParam3 = 231.2194f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 16:
-					*uParam2 = { 494.6642f, -1289.089f, 28.3994f };
+					*uParam2 = { 494.6642f, -1289.0895f, 28.3994f };
 					*uParam3 = 190.9093f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 17:
-					*uParam2 = { 512.1788f, -1296.798f, 29.0244f };
+					*uParam2 = { 512.1788f, -1296.7981f, 29.0244f };
 					*uParam3 = 127.6323f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 18:
-					*uParam2 = { 516.3178f, -1306.591f, 29.0325f };
+					*uParam2 = { 516.3178f, -1306.5907f, 29.0325f };
 					*uParam3 = 105.4519f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 19:
-					*uParam2 = { 522.4741f, -1315.716f, 28.6153f };
+					*uParam2 = { 522.4741f, -1315.7163f, 28.6153f };
 					*uParam3 = 86.1907f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
@@ -5741,157 +5741,157 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 21:
-					*uParam2 = { 512.5676f, -1266.132f, 29.2571f };
+					*uParam2 = { 512.5676f, -1266.1318f, 29.2571f };
 					*uParam3 = 138.7522f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 22:
-					*uParam2 = { 503.5058f, -1408.527f, 28.4094f };
+					*uParam2 = { 503.5058f, -1408.5267f, 28.4094f };
 					*uParam3 = 38.8401f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 23:
-					*uParam2 = { 494.4435f, -1405.518f, 28.4094f };
+					*uParam2 = { 494.4435f, -1405.5176f, 28.4094f };
 					*uParam3 = 10.3526f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 24:
-					*uParam2 = { 480.3399f, -1404.552f, 28.3783f };
+					*uParam2 = { 480.3399f, -1404.5524f, 28.3783f };
 					*uParam3 = 327.4608f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 25:
-					*uParam2 = { 486.9532f, -1397.729f, 28.4044f };
+					*uParam2 = { 486.9532f, -1397.7285f, 28.4044f };
 					*uParam3 = 9.2252f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 26:
-					*uParam2 = { 478.9936f, -1390.911f, 28.4649f };
+					*uParam2 = { 478.9936f, -1390.9114f, 28.4649f };
 					*uParam3 = 301.6067f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 27:
-					*uParam2 = { 491.3508f, -1387.024f, 28.4781f };
+					*uParam2 = { 491.3508f, -1387.0237f, 28.4781f };
 					*uParam3 = 349.894f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 28:
-					*uParam2 = { 423.8583f, -1342.402f, 34.9472f };
+					*uParam2 = { 423.8583f, -1342.4025f, 34.9472f };
 					*uParam3 = 261.565f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 29:
-					*uParam2 = { 436.9487f, -1354.909f, 32.8767f };
+					*uParam2 = { 436.9487f, -1354.9086f, 32.8767f };
 					*uParam3 = 281.1848f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 30:
-					*uParam2 = { 418.0431f, -1351.691f, 30.4924f };
+					*uParam2 = { 418.0431f, -1351.6908f, 30.4924f };
 					*uParam3 = 242.0479f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 31:
-					*uParam2 = { 420.5738f, -1360.155f, 31.3616f };
+					*uParam2 = { 420.5738f, -1360.1549f, 31.3616f };
 					*uParam3 = 258.2115f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 32:
-					*uParam2 = { 427.6197f, -1367.648f, 32.4927f };
+					*uParam2 = { 427.6197f, -1367.6482f, 32.4927f };
 					*uParam3 = 295.2934f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 33:
-					*uParam2 = { 464.2118f, -1407.325f, 28.4406f };
+					*uParam2 = { 464.2118f, -1407.3252f, 28.4406f };
 					*uParam3 = 264.6266f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 34:
-					*uParam2 = { 473.348f, -1411.325f, 28.4462f };
+					*uParam2 = { 473.348f, -1411.3252f, 28.4462f };
 					*uParam3 = 282.62f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 35:
-					*uParam2 = { 482.7524f, -1415.458f, 28.2625f };
+					*uParam2 = { 482.7524f, -1415.4581f, 28.2625f };
 					*uParam3 = 321.8356f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 36:
-					*uParam2 = { 495.2037f, -1418.058f, 28.2691f };
+					*uParam2 = { 495.2037f, -1418.0582f, 28.2691f };
 					*uParam3 = 7.1158f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 37:
-					*uParam2 = { 503.2256f, -1399.498f, 29.6255f };
+					*uParam2 = { 503.2256f, -1399.4984f, 29.6255f };
 					*uParam3 = 163.0629f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 38:
-					*uParam2 = { 504.0861f, -1418.874f, 28.399f };
+					*uParam2 = { 504.0861f, -1418.8737f, 28.399f };
 					*uParam3 = 19.1681f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 39:
-					*uParam2 = { 515.1004f, -1418.266f, 28.4334f };
+					*uParam2 = { 515.1004f, -1418.2662f, 28.4334f };
 					*uParam3 = 70.436f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 40:
-					*uParam2 = { 526.7444f, -1417.327f, 28.3217f };
+					*uParam2 = { 526.7444f, -1417.3265f, 28.3217f };
 					*uParam3 = 77.2632f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 41:
-					*uParam2 = { 537.8759f, -1339.477f, 28.7478f };
+					*uParam2 = { 537.8759f, -1339.4774f, 28.7478f };
 					*uParam3 = 32.234f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 42:
-					*uParam2 = { 523.1588f, -1342.832f, 28.402f };
+					*uParam2 = { 523.1588f, -1342.8318f, 28.402f };
 					*uParam3 = 44.3382f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 43:
-					*uParam2 = { 516.2181f, -1333.808f, 28.4019f };
+					*uParam2 = { 516.2181f, -1333.8085f, 28.4019f };
 					*uParam3 = 42.2223f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 44:
-					*uParam2 = { 545.4319f, -1321.294f, 28.8519f };
+					*uParam2 = { 545.4319f, -1321.2938f, 28.8519f };
 					*uParam3 = 82.4327f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 45:
-					*uParam2 = { 543.2325f, -1310.26f, 29.2949f };
+					*uParam2 = { 543.2325f, -1310.2601f, 29.2949f };
 					*uParam3 = 90.2737f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 46:
-					*uParam2 = { 519.066f, -1293.935f, 27.1144f };
+					*uParam2 = { 519.066f, -1293.9352f, 27.1144f };
 					*uParam3 = 165.5317f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -5903,13 +5903,13 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 48:
-					*uParam2 = { 523.58f, -1272.328f, 30.0824f };
+					*uParam2 = { 523.58f, -1272.3276f, 30.0824f };
 					*uParam3 = 138.49f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 49:
-					*uParam2 = { 524.081f, -1260.682f, 29.5842f };
+					*uParam2 = { 524.081f, -1260.6821f, 29.5842f };
 					*uParam3 = 132.1786f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -5921,55 +5921,55 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 51:
-					*uParam2 = { 516.2507f, -1253.02f, 29.6427f };
+					*uParam2 = { 516.2507f, -1253.0201f, 29.6427f };
 					*uParam3 = 162.9373f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 52:
-					*uParam2 = { 513.244f, -1278.351f, 29.7743f };
+					*uParam2 = { 513.244f, -1278.3508f, 29.7743f };
 					*uParam3 = 150.8734f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 53:
-					*uParam2 = { 493.7339f, -1268.213f, 28.392f };
+					*uParam2 = { 493.7339f, -1268.2126f, 28.392f };
 					*uParam3 = 179.546f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 54:
-					*uParam2 = { 494.1401f, -1281.491f, 28.394f };
+					*uParam2 = { 494.1401f, -1281.4906f, 28.394f };
 					*uParam3 = 175.0507f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 55:
-					*uParam2 = { 555.4178f, -1356.743f, 28.7709f };
+					*uParam2 = { 555.4178f, -1356.7433f, 28.7709f };
 					*uParam3 = 50.8085f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 56:
-					*uParam2 = { 475.9386f, -1304.794f, 32.0473f };
+					*uParam2 = { 475.9386f, -1304.7938f, 32.0473f };
 					*uParam3 = 112.0399f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 57:
-					*uParam2 = { 465.516f, -1301.604f, 32.0473f };
+					*uParam2 = { 465.516f, -1301.6041f, 32.0473f };
 					*uParam3 = 189.1235f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 58:
-					*uParam2 = { 440.8456f, -1321.148f, 30.3086f };
+					*uParam2 = { 440.8456f, -1321.1478f, 30.3086f };
 					*uParam3 = 235.1875f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 59:
-					*uParam2 = { 421.228f, -1316.188f, 30.3078f };
+					*uParam2 = { 421.228f, -1316.1882f, 30.3078f };
 					*uParam3 = 236.0292f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -5980,49 +5980,49 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 			switch (iParam1)
 			{
 				case 0:
-					*uParam2 = { -1432.451f, 236.9887f, 59.1671f };
+					*uParam2 = { -1432.4506f, 236.9887f, 59.1671f };
 					*uParam3 = 127.6804f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 1:
-					*uParam2 = { -1434.54f, 243.4075f, 59.3382f };
+					*uParam2 = { -1434.5403f, 243.4075f, 59.3382f };
 					*uParam3 = 176.5221f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 2:
-					*uParam2 = { -1425.965f, 233.6748f, 58.9327f };
+					*uParam2 = { -1425.9647f, 233.6748f, 58.9327f };
 					*uParam3 = 67.1914f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 3:
-					*uParam2 = { -1431.833f, 176.7196f, 55.6359f };
+					*uParam2 = { -1431.8331f, 176.7196f, 55.6359f };
 					*uParam3 = 115.4533f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 4:
-					*uParam2 = { -1436.571f, 168.3388f, 54.8029f };
+					*uParam2 = { -1436.5707f, 168.3388f, 54.8029f };
 					*uParam3 = 42.4646f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 5:
-					*uParam2 = { -1441.14f, 162.3594f, 54.1846f };
+					*uParam2 = { -1441.1395f, 162.3594f, 54.1846f };
 					*uParam3 = 5.2323f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 6:
-					*uParam2 = { -1526.297f, 160.2353f, 53.2037f };
+					*uParam2 = { -1526.2965f, 160.2353f, 53.2037f };
 					*uParam3 = 277.6807f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 7:
-					*uParam2 = { -1518.497f, 145.7663f, 54.7527f };
+					*uParam2 = { -1518.4971f, 145.7663f, 54.7527f };
 					*uParam3 = 310.257f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
@@ -6034,31 +6034,31 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 9:
-					*uParam2 = { -1495.287f, 118.9496f, 54.7569f };
+					*uParam2 = { -1495.2866f, 118.9496f, 54.7569f };
 					*uParam3 = 328.5237f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 10:
-					*uParam2 = { -1482.5f, 114.8686f, 54.589f };
+					*uParam2 = { -1482.5004f, 114.8686f, 54.589f };
 					*uParam3 = 341.3174f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 11:
-					*uParam2 = { -1465.16f, 114.8327f, 52.2589f };
+					*uParam2 = { -1465.1595f, 114.8327f, 52.2589f };
 					*uParam3 = 357.6763f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 12:
-					*uParam2 = { -1451.507f, 64.7578f, 51.4041f };
+					*uParam2 = { -1451.5073f, 64.7578f, 51.4041f };
 					*uParam3 = 91.7588f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 13:
-					*uParam2 = { -1461.18f, 63.8165f, 51.8802f };
+					*uParam2 = { -1461.1804f, 63.8165f, 51.8802f };
 					*uParam3 = 26.7651f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
@@ -6070,7 +6070,7 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 15:
-					*uParam2 = { -1470.511f, 65.7823f, 52.315f };
+					*uParam2 = { -1470.5115f, 65.7823f, 52.315f };
 					*uParam3 = 20.0152f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
@@ -6082,19 +6082,19 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 17:
-					*uParam2 = { -1598.528f, 149.7495f, 58.6949f };
+					*uParam2 = { -1598.5277f, 149.7495f, 58.6949f };
 					*uParam3 = 277.3246f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 18:
-					*uParam2 = { -1583.425f, 155.9397f, 57.9714f };
+					*uParam2 = { -1583.4247f, 155.9397f, 57.9714f };
 					*uParam3 = 236.3493f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
 				
 				case 19:
-					*uParam2 = { -1561.721f, 153.229f, 56.9434f };
+					*uParam2 = { -1561.7214f, 153.229f, 56.9434f };
 					*uParam3 = 282.9456f;
 					*uParam4 = func_101(bParam0, 0);
 					break;
@@ -6106,25 +6106,25 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 21:
-					*uParam2 = { -1624.61f, 118.2495f, 60.9528f };
+					*uParam2 = { -1624.6096f, 118.2495f, 60.9528f };
 					*uParam3 = 286.5444f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 22:
-					*uParam2 = { -1635.546f, 98.7833f, 61.5816f };
+					*uParam2 = { -1635.5459f, 98.7833f, 61.5816f };
 					*uParam3 = 307.8016f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 23:
-					*uParam2 = { -1615.593f, 74.5104f, 60.5005f };
+					*uParam2 = { -1615.5929f, 74.5104f, 60.5005f };
 					*uParam3 = 358.8846f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 24:
-					*uParam2 = { -1623.266f, 72.784f, 60.7418f };
+					*uParam2 = { -1623.2659f, 72.784f, 60.7418f };
 					*uParam3 = 303.1707f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
@@ -6136,127 +6136,127 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 26:
-					*uParam2 = { -1485.756f, 49.183f, 53.0408f };
+					*uParam2 = { -1485.7559f, 49.183f, 53.0408f };
 					*uParam3 = 329.1895f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 27:
-					*uParam2 = { -1464.841f, 52.066f, 52.0575f };
+					*uParam2 = { -1464.8406f, 52.066f, 52.0575f };
 					*uParam3 = 26.7727f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 28:
-					*uParam2 = { -1450.809f, 49.7653f, 51.6797f };
+					*uParam2 = { -1450.8086f, 49.7653f, 51.6797f };
 					*uParam3 = 42.6481f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 29:
-					*uParam2 = { -1462.326f, 88.4265f, 53.8826f };
+					*uParam2 = { -1462.3258f, 88.4265f, 53.8826f };
 					*uParam3 = 353.3917f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 30:
-					*uParam2 = { -1491.87f, 95.0945f, 54.1122f };
+					*uParam2 = { -1491.8698f, 95.0945f, 54.1122f };
 					*uParam3 = 314.473f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 31:
-					*uParam2 = { -1476.808f, 108.3742f, 53.8967f };
+					*uParam2 = { -1476.8082f, 108.3742f, 53.8967f };
 					*uParam3 = 348.5514f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 32:
-					*uParam2 = { -1443.964f, 153.6641f, 53.4228f };
+					*uParam2 = { -1443.9645f, 153.6641f, 53.4228f };
 					*uParam3 = 5.4015f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 33:
-					*uParam2 = { -1422.558f, 161.544f, 55.0401f };
+					*uParam2 = { -1422.5583f, 161.544f, 55.0401f };
 					*uParam3 = 41.9873f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 34:
-					*uParam2 = { -1425.595f, 187.9517f, 56.689f };
+					*uParam2 = { -1425.5946f, 187.9517f, 56.689f };
 					*uParam3 = 129.5252f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 35:
-					*uParam2 = { -1411.395f, 239.4108f, 58.8958f };
+					*uParam2 = { -1411.3945f, 239.4108f, 58.8958f };
 					*uParam3 = 94.2972f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 36:
-					*uParam2 = { -1415.572f, 249.2832f, 59.1409f };
+					*uParam2 = { -1415.5724f, 249.2832f, 59.1409f };
 					*uParam3 = 122.1957f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 37:
-					*uParam2 = { -1459.738f, 238.6189f, 58.7949f };
+					*uParam2 = { -1459.7379f, 238.6189f, 58.7949f };
 					*uParam3 = 180.7222f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 38:
-					*uParam2 = { -1573.812f, 161.2271f, 57.4846f };
+					*uParam2 = { -1573.8116f, 161.2271f, 57.4846f };
 					*uParam3 = 134.8161f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 39:
-					*uParam2 = { -1589.462f, 172.0972f, 57.9565f };
+					*uParam2 = { -1589.4623f, 172.0972f, 57.9565f };
 					*uParam3 = 211.4448f;
 					*uParam4 = func_101(bParam0, 1);
 					break;
 				
 				case 40:
-					*uParam2 = { -1599.631f, 177.347f, 58.4655f };
+					*uParam2 = { -1599.6311f, 177.347f, 58.4655f };
 					*uParam3 = 218.6622f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 41:
-					*uParam2 = { -1605.247f, 166.7319f, 58.6104f };
+					*uParam2 = { -1605.2471f, 166.7319f, 58.6104f };
 					*uParam3 = 240.273f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 42:
-					*uParam2 = { -1610.489f, 133.2583f, 59.7152f };
+					*uParam2 = { -1610.4893f, 133.2583f, 59.7152f };
 					*uParam3 = 286.0001f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 43:
-					*uParam2 = { -1609.133f, 118.5496f, 59.985f };
+					*uParam2 = { -1609.1329f, 118.5496f, 59.985f };
 					*uParam3 = 309.8568f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 44:
-					*uParam2 = { -1600.147f, 104.7807f, 60.079f };
+					*uParam2 = { -1600.1472f, 104.7807f, 60.079f };
 					*uParam3 = 345.0445f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 45:
-					*uParam2 = { -1595.336f, 88.6422f, 59.9101f };
+					*uParam2 = { -1595.3364f, 88.6422f, 59.9101f };
 					*uParam3 = 325.4662f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 46:
-					*uParam2 = { -1571.039f, 95.7035f, 57.4104f };
+					*uParam2 = { -1571.0393f, 95.7035f, 57.4104f };
 					*uParam3 = 320.9921f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -6268,73 +6268,73 @@ void func_100(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4)/
 					break;
 				
 				case 48:
-					*uParam2 = { -1581.063f, 69.4907f, 59.9072f };
+					*uParam2 = { -1581.0634f, 69.4907f, 59.9072f };
 					*uParam3 = 302.81f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 49:
-					*uParam2 = { -1502.428f, 75.9977f, 54.5965f };
+					*uParam2 = { -1502.4277f, 75.9977f, 54.5965f };
 					*uParam3 = 333.9787f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 50:
-					*uParam2 = { -1533.281f, 81.1755f, 55.8724f };
+					*uParam2 = { -1533.2805f, 81.1755f, 55.8724f };
 					*uParam3 = 288.1328f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 51:
-					*uParam2 = { -1533.984f, 102.1409f, 55.8727f };
+					*uParam2 = { -1533.9839f, 102.1409f, 55.8727f };
 					*uParam3 = 232.9465f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 52:
-					*uParam2 = { -1598.389f, 49.5038f, 59.7089f };
+					*uParam2 = { -1598.3889f, 49.5038f, 59.7089f };
 					*uParam3 = 24.7707f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 53:
-					*uParam2 = { -1613.303f, 45.0376f, 60.9909f };
+					*uParam2 = { -1613.3031f, 45.0376f, 60.9909f };
 					*uParam3 = 352.9884f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 54:
-					*uParam2 = { -1632.785f, 50.5315f, 61.543f };
+					*uParam2 = { -1632.7849f, 50.5315f, 61.543f };
 					*uParam3 = 325.0906f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 55:
-					*uParam2 = { -1636.258f, 69.9035f, 61.7993f };
+					*uParam2 = { -1636.2584f, 69.9035f, 61.7993f };
 					*uParam3 = 291.5305f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 56:
-					*uParam2 = { -1429.691f, 143.2913f, 53.2468f };
+					*uParam2 = { -1429.6908f, 143.2913f, 53.2468f };
 					*uParam3 = 17.521f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 57:
-					*uParam2 = { -1408.523f, 152.6476f, 54.6591f };
+					*uParam2 = { -1408.5233f, 152.6476f, 54.6591f };
 					*uParam3 = 54.2465f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 58:
-					*uParam2 = { -1403.501f, 245.4762f, 59.2192f };
+					*uParam2 = { -1403.5007f, 245.4762f, 59.2192f };
 					*uParam3 = 112.9726f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
 				
 				case 59:
-					*uParam2 = { -1417.563f, 260.8751f, 59.5187f };
+					*uParam2 = { -1417.5635f, 260.8751f, 59.5187f };
 					*uParam3 = 146.682f;
 					*uParam4 = func_101(bParam0, 2);
 					break;
@@ -18141,16 +18141,16 @@ Vector3 func_543(int iParam0)//Position - 0x15553
 	switch (func_525(iParam0))
 	{
 		case 0:
-			return -1195.435f, -1788.217f, 14.6269f;
+			return -1195.4352f, -1788.217f, 14.6269f;
 		
 		case 2:
-			return -379.8141f, 6087.215f, 43.2552f;
+			return -379.8141f, 6087.2153f, 43.2552f;
 		
 		case 4:
-			return 2516.59f, 3784.677f, 52.0053f;
+			return 2516.59f, 3784.6768f, 52.0053f;
 		
 		case 1:
-			return 1667.193f, -27.4697f, 183.774f;
+			return 1667.1927f, -27.4697f, 183.774f;
 		
 		case 3:
 			return -746.2f, 5594.6f, 41.7f;
@@ -18182,25 +18182,25 @@ Vector3 func_545(int iParam0, int iParam1)//Position - 0x15644
 			switch (func_525(iParam0))
 			{
 				case 0:
-					return -1178.575f, -1795.219f, 22.42828f;
+					return -1178.5751f, -1795.2189f, 22.428284f;
 				
 				case 2:
-					return -377.4193f, 6083.058f, 46.63536f;
+					return -377.41928f, 6083.058f, 46.63536f;
 				
 				case 4:
-					return 2518.118f, 3772.498f, 58.13546f;
+					return 2518.1184f, 3772.4978f, 58.135464f;
 				
 				case 1:
-					return 1673.975f, -24.62664f, 199.2563f;
+					return 1673.9747f, -24.626637f, 199.25632f;
 				
 				case 3:
-					return -756.4877f, 5594.868f, 44.17008f;
+					return -756.4877f, 5594.868f, 44.170082f;
 				
 				case 5:
-					return -391.5381f, 1125.141f, 325.0288f;
+					return -391.53812f, 1125.1415f, 325.02884f;
 				
 				case 6:
-					return 470.2388f, -1335.768f, 38.44154f;
+					return 470.23883f, -1335.7678f, 38.441536f;
 				
 				case 7:
 					return 0f, 0f, 0f;
@@ -18213,7 +18213,7 @@ Vector3 func_545(int iParam0, int iParam1)//Position - 0x15644
 			switch (func_525(iParam0))
 			{
 				case 0:
-					return -1180.375f, -1777.348f, 22.48125f;
+					return -1180.3752f, -1777.3478f, 22.481255f;
 				
 				case 2:
 					return 0f, 0f, 0f;
@@ -18222,7 +18222,7 @@ Vector3 func_545(int iParam0, int iParam1)//Position - 0x15644
 					return 0f, 0f, 0f;
 				
 				case 1:
-					return 1676.203f, -25.81484f, 200.1802f;
+					return 1676.2025f, -25.81484f, 200.18019f;
 				
 				case 3:
 					return 0f, 0f, 0f;
@@ -18244,7 +18244,7 @@ Vector3 func_545(int iParam0, int iParam1)//Position - 0x15644
 			switch (func_525(iParam0))
 			{
 				case 0:
-					return -1194.205f, -1806.82f, 22.48f;
+					return -1194.2051f, -1806.8198f, 22.48f;
 				
 				case 2:
 					return 0f, 0f, 0f;
@@ -18287,25 +18287,25 @@ Vector3 func_547(int iParam0, int iParam1)//Position - 0x15843
 			switch (func_525(iParam0))
 			{
 				case 0:
-					return -1212.381f, -1780.108f, 7.481341f;
+					return -1212.3806f, -1780.1083f, 7.481341f;
 				
 				case 2:
-					return -381.2328f, 6089.681f, 34.37778f;
+					return -381.23276f, 6089.6807f, 34.37778f;
 				
 				case 4:
-					return 2516.82f, 3795.646f, 49.82948f;
+					return 2516.8198f, 3795.6455f, 49.829475f;
 				
 				case 1:
-					return 1660.532f, -27.94882f, 181.587f;
+					return 1660.5317f, -27.948818f, 181.58702f;
 				
 				case 3:
-					return -736.0183f, 5595.02f, 40.53122f;
+					return -736.0183f, 5595.02f, 40.531216f;
 				
 				case 5:
-					return -386.508f, 1144.122f, 321.5792f;
+					return -386.50803f, 1144.1223f, 321.5792f;
 				
 				case 6:
-					return 479.0627f, -1343.186f, 34.14154f;
+					return 479.0627f, -1343.1857f, 34.141537f;
 				
 				case 7:
 					return 0f, 0f, 0f;
@@ -18318,7 +18318,7 @@ Vector3 func_547(int iParam0, int iParam1)//Position - 0x15843
 			switch (func_525(iParam0))
 			{
 				case 0:
-					return -1209.83f, -1798.181f, 7.481341f;
+					return -1209.8297f, -1798.1812f, 7.481341f;
 				
 				case 2:
 					return 0f, 0f, 0f;
@@ -18327,7 +18327,7 @@ Vector3 func_547(int iParam0, int iParam1)//Position - 0x15843
 					return 0f, 0f, 0f;
 				
 				case 1:
-					return 1669.613f, -27.26755f, 182.2874f;
+					return 1669.6134f, -27.267546f, 182.28743f;
 				
 				case 3:
 					return 0f, 0f, 0f;
@@ -18349,7 +18349,7 @@ Vector3 func_547(int iParam0, int iParam1)//Position - 0x15843
 			switch (func_525(iParam0))
 			{
 				case 0:
-					return -1197.333f, -1769.584f, 7.474364f;
+					return -1197.3328f, -1769.5844f, 7.474364f;
 				
 				case 2:
 					return 0f, 0f, 0f;

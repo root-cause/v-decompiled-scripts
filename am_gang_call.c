@@ -6177,7 +6177,7 @@ float func_150(struct<3> Param0, var uParam1, var uParam2)//Position - 0x76A5
 	int iVar3;
 	
 	iVar3 = -1;
-	fVar2 = 1E+07f;
+	fVar2 = 10000000f;
 	iVar0 = 0;
 	while (iVar0 < *uParam1)
 	{
@@ -6254,7 +6254,7 @@ float func_151(struct<3> Param0, struct<3> Param1, bool bParam2, bool bParam3, b
 		fVar0 = func_135(SYSTEM::VDIST(Param0, Param1), 0f, 0f, 200f, 1f, 0.1f);
 		fVar1 = (fVar1 * (fVar0 * 0.95f));
 	}
-	*uParam6 = 1E+07f;
+	*uParam6 = 10000000f;
 	fVar4 = func_140(Param0, 1, 0, 0, 1, 0);
 	fVar0 = func_135(fVar4, 0f, func_159(), func_157(), 0f, 0.3f);
 	fVar1 = (fVar1 * (fVar0 * 0.95f));
@@ -6390,7 +6390,7 @@ float func_155(struct<3> Param0)//Position - 0x7B58
 	int iVar5;
 	
 	iVar5 = PED::GET_PED_NEARBY_PEDS(PLAYER::PLAYER_PED_ID(), &uVar4, 2);
-	fVar0 = 1E+07f;
+	fVar0 = 10000000f;
 	iVar2 = 0;
 	while (iVar2 < iVar5)
 	{
@@ -9297,7 +9297,7 @@ int func_231(struct<3> Param0, float fParam1, float fParam2)//Position - 0xB9A8
 	int iVar3;
 	
 	iVar0 = -1;
-	fVar1 = 1E+08f;
+	fVar1 = 100000000f;
 	iVar3 = 0;
 	while (iVar3 < Global_2667225.f_1754)
 	{
@@ -17488,7 +17488,7 @@ void func_494(int iParam0)//Position - 0x1487E
 												}
 												else if (VEHICLE::IS_THIS_MODEL_A_PLANE(iVar8))
 												{
-													TASK::TASK_PLANE_MISSION(iVar0, iVar7, 0, PLAYER::PLAYER_PED_ID(), 0f, 0f, 0f, 8, 25f, 0f, -1f, 1.121039E-43f, 1.121039E-43f, true);
+													TASK::TASK_PLANE_MISSION(iVar0, iVar7, 0, PLAYER::PLAYER_PED_ID(), 0f, 0f, 0f, 8, 25f, 0f, -1f, 1.12E-43f, 1.12E-43f, true);
 												}
 												else if (ENTITY::GET_ENTITY_MODEL(iVar7) == joaat("taxi"))
 												{

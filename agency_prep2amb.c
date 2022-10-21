@@ -3883,7 +3883,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 			break;
 		
 		case 1:
-			*uParam0 = { 1970.943f, 3801.684f, 31.1396f };
+			*uParam0 = { 1970.9434f, 3801.6838f, 31.1396f };
 			uParam0->f_3 = 301.3964f;
 			uParam0->f_4 = func_55(0, 1);
 			uParam0->f_12 = 0;
@@ -3893,7 +3893,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 			break;
 		
 		case 2:
-			*uParam0 = { -22.6297f, -1439.137f, 29.6549f };
+			*uParam0 = { -22.6297f, -1439.1368f, 29.6549f };
 			uParam0->f_3 = 180.0808f;
 			uParam0->f_4 = func_55(1, 1);
 			uParam0->f_12 = 1;
@@ -3903,7 +3903,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 			break;
 		
 		case 3:
-			*uParam0 = { -22.5229f, -1434.699f, 29.6552f };
+			*uParam0 = { -22.5229f, -1434.6986f, 29.6552f };
 			uParam0->f_3 = 141.6114f;
 			uParam0->f_4 = func_55(1, 2);
 			uParam0->f_12 = 1;
@@ -3933,7 +3933,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 			break;
 		
 		case 6:
-			*uParam0 = { 1981.416f, 3808.131f, 31.1384f };
+			*uParam0 = { 1981.4163f, 3808.1313f, 31.1384f };
 			uParam0->f_3 = 117.2557f;
 			uParam0->f_4 = func_55(2, 1);
 			uParam0->f_12 = 2;
@@ -3943,7 +3943,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 			break;
 		
 		case 7:
-			*uParam0 = { -1158.488f, -1529.367f, 3.8995f };
+			*uParam0 = { -1158.4875f, -1529.3673f, 3.8995f };
 			uParam0->f_3 = 35.7505f;
 			uParam0->f_4 = func_55(2, 1);
 			uParam0->f_12 = 2;
@@ -3953,7 +3953,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 			break;
 		
 		case 8:
-			*uParam0 = { 148.2868f, -1270.569f, 28.2252f };
+			*uParam0 = { 148.2868f, -1270.5695f, 28.2252f };
 			uParam0->f_3 = 208.4685f;
 			uParam0->f_4 = func_55(2, 1);
 			uParam0->f_12 = 2;
@@ -3963,7 +3963,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 			break;
 		
 		case 9:
-			*uParam0 = { 1459.509f, -1380.45f, 78.3259f };
+			*uParam0 = { 1459.5085f, -1380.45f, 78.3259f };
 			uParam0->f_3 = 99.6211f;
 			uParam0->f_4 = joaat("scorcher");
 			MISC::SET_BIT(&(uParam0->f_9), 6);
@@ -3971,7 +3971,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 			break;
 		
 		case 10:
-			*uParam0 = { -1518.947f, -1387.865f, -0.5134f };
+			*uParam0 = { -1518.947f, -1387.8655f, -0.5134f };
 			uParam0->f_3 = 98.3867f;
 			uParam0->f_4 = joaat("seashark");
 			iVar0 = 1;
@@ -3979,7 +3979,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 			break;
 		
 		case 11:
-			*uParam0 = { 353.0926f, 3577.593f, 32.351f };
+			*uParam0 = { 353.0926f, 3577.5925f, 32.351f };
 			uParam0->f_3 = 16.6205f;
 			uParam0->f_4 = joaat("duster");
 			iVar0 = 1;
@@ -3988,7 +3988,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 		
 		case 12:
 			uParam0->f_14 = 0;
-			*uParam0 = { -1652.004f, -3142.348f, 12.9921f };
+			*uParam0 = { -1652.0043f, -3142.3484f, 12.9921f };
 			uParam0->f_3 = 329.1082f;
 			uParam0->f_12 = 0;
 			uParam0->f_13 = 359;
@@ -4004,7 +4004,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 		
 		case 13:
 			uParam0->f_14 = 1;
-			*uParam0 = { -1271.649f, -3380.685f, 12.9451f };
+			*uParam0 = { -1271.6487f, -3380.6853f, 12.9451f };
 			uParam0->f_3 = 329.5137f;
 			uParam0->f_12 = 1;
 			uParam0->f_13 = 359;
@@ -4020,7 +4020,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 		
 		case 14:
 			uParam0->f_14 = 2;
-			*uParam0 = { 1735.586f, 3294.531f, 40.1651f };
+			*uParam0 = { 1735.5863f, 3294.5305f, 40.1651f };
 			uParam0->f_3 = 194.9525f;
 			uParam0->f_12 = 2;
 			uParam0->f_13 = 359;
@@ -4087,11 +4087,11 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 		
 		case 18:
 			uParam0->f_14 = 6;
-			*uParam0 = { -745.857f, -1433.904f, 4.0005f };
+			*uParam0 = { -745.857f, -1433.9036f, 4.0005f };
 			uParam0->f_12 = 0;
 			uParam0->f_13 = 360;
-			uParam0->f_15 = { -756.2952f, -1441.609f, 2.9184f };
-			uParam0->f_18 = { -738.0606f, -1423.068f, 8.2835f };
+			uParam0->f_15 = { -756.2952f, -1441.6093f, 2.9184f };
+			uParam0->f_18 = { -738.0606f, -1423.0676f, 8.2835f };
 			MISC::SET_BIT(&(uParam0->f_9), 0);
 			MISC::SET_BIT(&(uParam0->f_9), 21);
 			MISC::SET_BIT(&(uParam0->f_9), 14);
@@ -4104,10 +4104,10 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 		
 		case 19:
 			uParam0->f_14 = 7;
-			*uParam0 = { -761.8486f, -1453.829f, 4.0005f };
+			*uParam0 = { -761.8486f, -1453.8293f, 4.0005f };
 			uParam0->f_12 = 1;
 			uParam0->f_13 = 360;
-			uParam0->f_15 = { -772.8158f, -1459.957f, 3.2894f };
+			uParam0->f_15 = { -772.8158f, -1459.9572f, 3.2894f };
 			uParam0->f_18 = { -754.3353f, -1440.836f, 8.3334f };
 			MISC::SET_BIT(&(uParam0->f_9), 0);
 			MISC::SET_BIT(&(uParam0->f_9), 21);
@@ -4137,7 +4137,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 		
 		case 21:
 			uParam0->f_14 = 9;
-			*uParam0 = { 192.7897f, -1020.539f, -99.98f };
+			*uParam0 = { 192.7897f, -1020.5385f, -99.98f };
 			uParam0->f_3 = 180f;
 			uParam0->f_4 = 0;
 			uParam0->f_12 = 0;
@@ -4156,7 +4156,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 		
 		case 22:
 			uParam0->f_14 = 10;
-			*uParam0 = { 192.7897f, -1020.539f, -99.98f };
+			*uParam0 = { 192.7897f, -1020.5385f, -99.98f };
 			uParam0->f_3 = 180f;
 			uParam0->f_4 = 0;
 			uParam0->f_12 = 1;
@@ -4175,7 +4175,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 		
 		case 23:
 			uParam0->f_14 = 11;
-			*uParam0 = { 192.7897f, -1020.539f, -99.98f };
+			*uParam0 = { 192.7897f, -1020.5385f, -99.98f };
 			uParam0->f_3 = 180f;
 			uParam0->f_4 = 0;
 			uParam0->f_12 = 2;
@@ -4197,7 +4197,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 		case 28:
 			iVar1 = (iParam1 - 26);
 			uParam0->f_14 = (12 + iVar1);
-			*uParam0 = { 196.2794f, -1020.479f, -99.98f };
+			*uParam0 = { 196.2794f, -1020.4791f, -99.98f };
 			uParam0->f_3 = 180f;
 			uParam0->f_4 = 0;
 			uParam0->f_12 = (0 + iVar1);
@@ -4233,7 +4233,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 		case 34:
 			iVar1 = (iParam1 - 32);
 			uParam0->f_14 = (18 + iVar1);
-			*uParam0 = { 203.6006f, -1019.776f, -99.98f };
+			*uParam0 = { 203.6006f, -1019.7762f, -99.98f };
 			uParam0->f_3 = 180f;
 			uParam0->f_4 = 0;
 			uParam0->f_12 = (0 + iVar1);
@@ -4279,7 +4279,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 			break;
 		
 		case 36:
-			*uParam0 = { -55.7984f, -1096.586f, 25.4223f };
+			*uParam0 = { -55.7984f, -1096.5856f, 25.4223f };
 			uParam0->f_3 = 308.0596f;
 			uParam0->f_4 = joaat("bjxl");
 			uParam0->f_10 = 126;
@@ -4302,7 +4302,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 			break;
 		
 		case 38:
-			*uParam0 = { 1744.308f, 3270.673f, 40.2076f };
+			*uParam0 = { 1744.3083f, 3270.673f, 40.2076f };
 			uParam0->f_3 = 125f;
 			uParam0->f_4 = joaat("cargobob3");
 			MISC::SET_BIT(&(uParam0->f_9), 23);
@@ -4311,7 +4311,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 			break;
 		
 		case 39:
-			*uParam0 = { 1751.44f, 3322.643f, 42.1855f };
+			*uParam0 = { 1751.4397f, 3322.643f, 42.1855f };
 			uParam0->f_3 = 268.134f;
 			uParam0->f_4 = joaat("submersible");
 			MISC::SET_BIT(&(uParam0->f_9), 23);
@@ -4319,7 +4319,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 			break;
 		
 		case 41:
-			*uParam0 = { 1377.104f, -2076.2f, 52f };
+			*uParam0 = { 1377.1045f, -2076.2f, 52f };
 			uParam0->f_3 = 37.5f;
 			uParam0->f_4 = joaat("towtruck");
 			MISC::SET_BIT(&(uParam0->f_9), 8);
@@ -4327,7 +4327,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 			break;
 		
 		case 40:
-			*uParam0 = { 1380.42f, -2072.77f, 51.7607f };
+			*uParam0 = { 1380.42f, -2072.7695f, 51.7607f };
 			uParam0->f_3 = 37.5f;
 			uParam0->f_4 = joaat("trash");
 			MISC::SET_BIT(&(uParam0->f_9), 8);
@@ -4335,7 +4335,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 			break;
 		
 		case 42:
-			*uParam0 = { 1359.389f, 3618.441f, 33.8907f };
+			*uParam0 = { 1359.3892f, 3618.4407f, 33.8907f };
 			uParam0->f_3 = 108.2337f;
 			uParam0->f_4 = joaat("barracks");
 			MISC::SET_BIT(&(uParam0->f_9), 8);
@@ -4343,7 +4343,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 			break;
 		
 		case 43:
-			*uParam0 = { 693.1154f, -1018.155f, 21.6387f };
+			*uParam0 = { 693.1154f, -1018.1551f, 21.6387f };
 			uParam0->f_3 = 177.6454f;
 			uParam0->f_4 = joaat("firetruk");
 			MISC::SET_BIT(&(uParam0->f_9), 23);
@@ -4380,29 +4380,29 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 			break;
 		
 		case 48:
-			*uParam0 = { -1321.519f, 261.3993f, 61.5709f };
+			*uParam0 = { -1321.5186f, 261.3993f, 61.5709f };
 			uParam0->f_3 = 350.7697f;
 			uParam0->f_4 = joaat("double");
 			iVar0 = 1;
 			break;
 		
 		case 49:
-			*uParam0 = { -1267.999f, 451.6463f, 93.7071f };
+			*uParam0 = { -1267.9991f, 451.6463f, 93.7071f };
 			uParam0->f_3 = 48.9311f;
 			uParam0->f_4 = joaat("double");
 			iVar0 = 1;
 			break;
 		
 		case 50:
-			*uParam0 = { -1062.076f, -226.7637f, 37.157f };
+			*uParam0 = { -1062.0762f, -226.7637f, 37.157f };
 			uParam0->f_3 = 234.2767f;
 			uParam0->f_4 = joaat("double");
 			iVar0 = 1;
 			break;
 		
 		case 51:
-			*uParam0 = { 68.16914f, -1558.958f, 29.46904f };
-			uParam0->f_3 = 49.90575f;
+			*uParam0 = { 68.16914f, -1558.9581f, 29.469042f };
+			uParam0->f_3 = 49.905754f;
 			uParam0->f_4 = joaat("rumpo2");
 			uParam0->f_12 = 2;
 			MISC::SET_BIT(&(uParam0->f_9), 26);
@@ -4410,7 +4410,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 			break;
 		
 		case 52:
-			*uParam0 = { 589.4399f, 2736.708f, 42.03316f };
+			*uParam0 = { 589.4399f, 2736.7078f, 42.033165f };
 			uParam0->f_3 = -175.7105f;
 			uParam0->f_4 = joaat("rumpo2");
 			uParam0->f_12 = 2;
@@ -4419,7 +4419,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 			break;
 		
 		case 53:
-			*uParam0 = { -488.774f, -344.5721f, 34.36356f };
+			*uParam0 = { -488.77396f, -344.57205f, 34.363564f };
 			uParam0->f_3 = 82.4042f;
 			uParam0->f_4 = joaat("rumpo2");
 			uParam0->f_12 = 2;
@@ -4428,8 +4428,8 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 			break;
 		
 		case 54:
-			*uParam0 = { 288.8808f, -585.4728f, 43.15428f };
-			uParam0->f_3 = -20.80707f;
+			*uParam0 = { 288.88083f, -585.47284f, 43.15428f };
+			uParam0->f_3 = -20.807068f;
 			uParam0->f_4 = joaat("rumpo2");
 			uParam0->f_12 = 2;
 			MISC::SET_BIT(&(uParam0->f_9), 26);
@@ -4437,8 +4437,8 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 			break;
 		
 		case 55:
-			*uParam0 = { 304.8294f, -1383.674f, 31.67744f };
-			uParam0->f_3 = -41.11603f;
+			*uParam0 = { 304.82938f, -1383.6742f, 31.677443f };
+			uParam0->f_3 = -41.116028f;
 			uParam0->f_4 = joaat("rumpo2");
 			uParam0->f_12 = 2;
 			MISC::SET_BIT(&(uParam0->f_9), 26);
@@ -4446,7 +4446,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 			break;
 		
 		case 56:
-			*uParam0 = { 1126.194f, -1481.486f, 34.7016f };
+			*uParam0 = { 1126.1943f, -1481.486f, 34.701603f };
 			uParam0->f_3 = -91.43369f;
 			uParam0->f_4 = joaat("rumpo2");
 			uParam0->f_12 = 2;
@@ -4477,7 +4477,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 			break;
 		
 		case 59:
-			*uParam0 = { 2116.571f, 4763.279f, 40.1596f };
+			*uParam0 = { 2116.571f, 4763.2793f, 40.1596f };
 			uParam0->f_3 = 198.723f;
 			uParam0->f_4 = joaat("bfinjection");
 			iVar0 = 1;
@@ -4545,7 +4545,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 			break;
 		
 		case 64:
-			*uParam0 = { 1257.729f, -2564.474f, 41.717f };
+			*uParam0 = { 1257.7295f, -2564.474f, 41.717f };
 			uParam0->f_3 = 284.5561f;
 			uParam0->f_4 = joaat("dukes2");
 			MISC::SET_BIT(&(uParam0->f_9), 6);
@@ -4571,7 +4571,7 @@ int func_54(var uParam0, int iParam1)//Position - 0x4CE5
 			break;
 		
 		case 67:
-			*uParam0 = { 1333.875f, 4262.226f, 30.78f };
+			*uParam0 = { 1333.8752f, 4262.2256f, 30.78f };
 			uParam0->f_3 = 262.5293f;
 			uParam0->f_4 = joaat("dodo");
 			MISC::SET_BIT(&(uParam0->f_9), 30);
@@ -9824,7 +9824,7 @@ int func_192(struct<3> Param0, bool bParam1)//Position - 0xB75A
 	float fVar2;
 	int iVar3;
 	
-	fVar2 = 1E+07f;
+	fVar2 = 10000000f;
 	iVar3 = 5;
 	iVar0 = 0;
 	while (iVar0 <= (5 - 1))
@@ -10718,7 +10718,7 @@ int func_202(struct<3> Param0)//Position - 0xC7F2
 	{
 		return 1;
 	}
-	if ((SYSTEM::VDIST2(Param0, -89.377f, 92.6583f, 71.2349f) <= 400f || SYSTEM::VDIST2(Param0, -62.0307f, -1839.859f, 25.6787f) <= 400f) || SYSTEM::VDIST2(Param0, -234.7648f, -1150.311f, 21.9224f) <= 400f)
+	if ((SYSTEM::VDIST2(Param0, -89.377f, 92.6583f, 71.2349f) <= 400f || SYSTEM::VDIST2(Param0, -62.0307f, -1839.8585f, 25.6787f) <= 400f) || SYSTEM::VDIST2(Param0, -234.7648f, -1150.3105f, 21.9224f) <= 400f)
 	{
 		func_71(21);
 		return 1;
@@ -10799,7 +10799,7 @@ var func_206(int iParam0)//Position - 0xC9BA
 
 int func_207()//Position - 0xC9CF
 {
-	if (SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 1276.123f, -1723.665f, 53.6551f) <= 52900f)
+	if (SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 1276.1234f, -1723.6653f, 53.6551f) <= 52900f)
 	{
 		if (func_13())
 		{
@@ -12567,93 +12567,93 @@ void func_263()//Position - 0xE98D
 	sLocal_69[10] = "MTGORDO" /* GXT: Mount Gordo */;
 	sLocal_69[11] = "SANCHIA" /* GXT: San Chianski Mountain Range */;
 	sLocal_69[12] = "TATAMO" /* GXT: Tataviam Mountains */;
-	Local_68[0 /*261*/][0 /*8*/] = { func_264("DELBE" /* GXT: Del Perro Beach */, -1615.257f, -952.5944f, 20.01716f, -2160.706f, -423f, -1.28679f, 327.8f) };
-	Local_68[0 /*261*/][1 /*8*/] = { func_264("DELBE" /* GXT: Del Perro Beach */, -1521.716f, -914.5676f, 20.17247f, -1855.715f, -1325.784f, -44.79295f, 254.8f) };
-	Local_68[0 /*261*/][2 /*8*/] = { func_264("BEACH" /* GXT: Vespucci Beach */, -1162.37f, -1815.008f, 15.33822f, -1553.207f, -1098.685f, 0.46467f, 253.91f) };
-	Local_68[0 /*261*/][3 /*8*/] = { func_264("BEACH" /* GXT: Vespucci Beach */, -1464.219f, -1136.783f, 0.32167f, -2241.566f, -358.8849f, 20.32481f, 282.21f) };
-	Local_68[0 /*261*/][4 /*8*/] = { func_264("PBOX" /* GXT: Pillbox Hill */, 156.4109f, -1042.641f, 22.31273f, 238.6382f, -821.1217f, 35.10069f, 176.96f) };
-	Local_68[0 /*261*/][5 /*8*/] = { func_264("CHIL" /* GXT: Vinewood Hills */, 883.1121f, 534.7283f, 115.725f, 559.7425f, 644.602f, 150.5971f, 301.08f) };
-	Local_68[0 /*261*/][6 /*8*/] = { func_264("EAST_V" /* GXT: East Vinewood */, 941.4531f, -329.4256f, 60.77003f, 727.7651f, -200.9519f, 75.59085f, 88.89f) };
-	Local_68[0 /*261*/][7 /*8*/] = { func_264("EAST_V" /* GXT: East Vinewood */, 689.1177f, -273.1406f, 60.21559f, 834.7326f, -352.1655f, 50.92442f, 81.23f) };
-	Local_68[0 /*261*/][8 /*8*/] = { func_264("MIRR" /* GXT: Mirror Park */, 1048.499f, -357.0332f, 60.92149f, 1401.581f, -783.8975f, 75.7477f, 325.93f) };
-	Local_68[0 /*261*/][9 /*8*/] = { func_264("MIRR" /* GXT: Mirror Park */, 892.2836f, -461.5752f, 70.86029f, 1161.301f, -829.8299f, 45.90131f, 184.12f) };
-	Local_68[0 /*261*/][10 /*8*/] = { func_264("VCANA" /* GXT: Vespucci Canals */, -1161.361f, -1143.716f, -5.71593f, -864.9714f, -981.1257f, 21.09691f, 328.65f) };
-	Local_68[0 /*261*/][11 /*8*/] = { func_264("BAYTRE" /* GXT: Baytree Canyon */, 251.4011f, 1068.347f, 280.6663f, 189.6012f, 1272.352f, 143.8035f, 160.32f) };
-	Local_68[0 /*261*/][13 /*8*/] = { func_264("OBSERV" /* GXT: Galileo Observatory */, -450.9835f, 1048.408f, 252.945f, -389.564f, 1244.504f, 370.2469f, 199.93f) };
+	Local_68[0 /*261*/][0 /*8*/] = { func_264("DELBE" /* GXT: Del Perro Beach */, -1615.2574f, -952.59436f, 20.01716f, -2160.7058f, -423f, -1.28679f, 327.8f) };
+	Local_68[0 /*261*/][1 /*8*/] = { func_264("DELBE" /* GXT: Del Perro Beach */, -1521.7163f, -914.56757f, 20.17247f, -1855.7148f, -1325.784f, -44.79295f, 254.8f) };
+	Local_68[0 /*261*/][2 /*8*/] = { func_264("BEACH" /* GXT: Vespucci Beach */, -1162.3699f, -1815.0084f, 15.33822f, -1553.2072f, -1098.6849f, 0.46467f, 253.91f) };
+	Local_68[0 /*261*/][3 /*8*/] = { func_264("BEACH" /* GXT: Vespucci Beach */, -1464.2185f, -1136.7828f, 0.32167f, -2241.5664f, -358.88486f, 20.32481f, 282.21f) };
+	Local_68[0 /*261*/][4 /*8*/] = { func_264("PBOX" /* GXT: Pillbox Hill */, 156.41087f, -1042.6412f, 22.31273f, 238.63815f, -821.1217f, 35.10069f, 176.96f) };
+	Local_68[0 /*261*/][5 /*8*/] = { func_264("CHIL" /* GXT: Vinewood Hills */, 883.1121f, 534.72833f, 115.72503f, 559.7425f, 644.602f, 150.59714f, 301.08f) };
+	Local_68[0 /*261*/][6 /*8*/] = { func_264("EAST_V" /* GXT: East Vinewood */, 941.45306f, -329.4256f, 60.77003f, 727.76514f, -200.95193f, 75.59085f, 88.89f) };
+	Local_68[0 /*261*/][7 /*8*/] = { func_264("EAST_V" /* GXT: East Vinewood */, 689.1177f, -273.14056f, 60.21559f, 834.7326f, -352.1655f, 50.92442f, 81.23f) };
+	Local_68[0 /*261*/][8 /*8*/] = { func_264("MIRR" /* GXT: Mirror Park */, 1048.4985f, -357.0332f, 60.92149f, 1401.5808f, -783.8975f, 75.7477f, 325.93f) };
+	Local_68[0 /*261*/][9 /*8*/] = { func_264("MIRR" /* GXT: Mirror Park */, 892.28357f, -461.57523f, 70.86029f, 1161.3007f, -829.8299f, 45.90131f, 184.12f) };
+	Local_68[0 /*261*/][10 /*8*/] = { func_264("VCANA" /* GXT: Vespucci Canals */, -1161.3606f, -1143.7163f, -5.71593f, -864.9714f, -981.12573f, 21.09691f, 328.65f) };
+	Local_68[0 /*261*/][11 /*8*/] = { func_264("BAYTRE" /* GXT: Baytree Canyon */, 251.40108f, 1068.3472f, 280.6663f, 189.60123f, 1272.3522f, 143.80351f, 160.32f) };
+	Local_68[0 /*261*/][13 /*8*/] = { func_264("OBSERV" /* GXT: Galileo Observatory */, -450.98346f, 1048.4084f, 252.94498f, -389.56403f, 1244.5039f, 370.24692f, 199.93f) };
 	Local_68[0 /*261*/][14 /*8*/] = { func_264("AIRP" /* GXT: Los Santos International Airport */, 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
 	Local_68[0 /*261*/][15 /*8*/] = { func_264("TERMINA" /* GXT: Terminal */, 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
 	Local_68[0 /*261*/][16 /*8*/] = { func_264("STAD" /* GXT: Maze Bank Arena */, 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
 	Local_68[0 /*261*/][17 /*8*/] = { func_264("MOVIE" /* GXT: Richards Majestic */, 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
 	Local_68[0 /*261*/][18 /*8*/] = { func_264("GOLF" /* GXT: GWC and Golfing Society */, 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
 	Local_68[0 /*261*/][19 /*8*/] = { func_264("HORS" /* GXT: Vinewood Racetrack */, 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
-	Local_68[0 /*261*/][20 /*8*/] = { func_264("PBOX" /* GXT: Pillbox Hill */, -28.39781f, -1071.245f, 50.21438f, -49.8352f, -1131.277f, 20.02555f, 55.12f) };
-	Local_68[0 /*261*/][21 /*8*/] = { func_264("LOSSF" /* GXT: Los Santos Freeway */, 843.1962f, 25.93548f, 65.16061f, 1138.687f, 363.0587f, 105.4128f, 61.11f) };
-	Local_68[0 /*261*/][22 /*8*/] = { func_264("ROCKF" /* GXT: Rockford Hills */, -992.5638f, -199.7673f, 30.74956f, -687.9904f, -43.23445f, 80.93306f, 80.53f) };
+	Local_68[0 /*261*/][20 /*8*/] = { func_264("PBOX" /* GXT: Pillbox Hill */, -28.39781f, -1071.2449f, 50.21438f, -49.8352f, -1131.2766f, 20.02555f, 55.12f) };
+	Local_68[0 /*261*/][21 /*8*/] = { func_264("LOSSF" /* GXT: Los Santos Freeway */, 843.19617f, 25.93548f, 65.16061f, 1138.6865f, 363.05872f, 105.41279f, 61.11f) };
+	Local_68[0 /*261*/][22 /*8*/] = { func_264("ROCKF" /* GXT: Rockford Hills */, -992.56384f, -199.7673f, 30.74956f, -687.9904f, -43.23445f, 80.93306f, 80.53f) };
 	Local_68[0 /*261*/][23 /*8*/] = { func_264("ROCKF" /* GXT: Rockford Hills */, -251.8548f, -446.2141f, 29.5887f, -362.685f, -434.7425f, 90.931f, 50f) };
 	Local_68[0 /*261*/][24 /*8*/] = { func_264("ALTA" /* GXT: Alta */, 180.2637f, -404.9771f, 40.1713f, 289.9432f, -445.1485f, 124.3793f, 100f) };
 	Local_68[0 /*261*/][25 /*8*/] = { func_264("ALTA" /* GXT: Alta */, 343.8481f, -323.1273f, 80.7749f, 427.08f, -361.0469f, 45.3411f, 85f) };
-	Local_68[0 /*261*/][26 /*8*/] = { func_264("RANCHO" /* GXT: Rancho */, 414.5057f, -2092.1f, 19.8533f, 350.8093f, -2158.395f, 12.3916f, 55f) };
-	Local_68[0 /*261*/][27 /*8*/] = { func_264("RANCHO" /* GXT: Rancho */, 283.7474f, -2103.918f, 12.9242f, 391.8871f, -1983.204f, 33.0042f, 100f) };
+	Local_68[0 /*261*/][26 /*8*/] = { func_264("RANCHO" /* GXT: Rancho */, 414.5057f, -2092.0999f, 19.8533f, 350.8093f, -2158.395f, 12.3916f, 55f) };
+	Local_68[0 /*261*/][27 /*8*/] = { func_264("RANCHO" /* GXT: Rancho */, 283.7474f, -2103.9177f, 12.9242f, 391.8871f, -1983.2037f, 33.0042f, 100f) };
 	Local_68[0 /*261*/][28 /*8*/] = { func_264("PBOX" /* GXT: Pillbox Hill */, 85.038f, -670.3274f, 42.8642f, 227.8234f, -722.2458f, 274f, 175f) };
 	Local_68[0 /*261*/][29 /*8*/] = { func_264("PBOX" /* GXT: Pillbox Hill */, -107.2516f, -906.36f, 28.2051f, -49.9007f, -752.925f, 330f, 125f) };
 	Local_68[0 /*261*/][30 /*8*/] = { func_264("TEXTI" /* GXT: Textile City */, 456.8563f, -683.8335f, 32.2903f, 457.5504f, -819.4669f, 25.9553f, 14.4f) };
 	Local_68[0 /*261*/][31 /*8*/] = { func_264("ROCKF" /* GXT: Rockford Hills */, -699.7205f, -227.3646f, 67.818f, -645.1068f, -332.5107f, 30.9132f, 127.1f) };
 	Local_68[0 /*261*/].f_260 = 0;
 	Local_68[0 /*261*/].f_257 = 32;
-	Local_68[2 /*261*/][0 /*8*/] = { func_264("PBOX" /* GXT: Pillbox Hill */, -25.50944f, -932.3846f, 20.41711f, 119.9406f, -523.4398f, 33.07988f, 363.4f) };
-	Local_68[2 /*261*/][1 /*8*/] = { func_264("DOWNT" /* GXT: Downtown */, -25.50944f, -932.3846f, 20.41711f, 119.9406f, -523.4398f, 33.07988f, 363.4f) };
-	Local_68[2 /*261*/][2 /*8*/] = { func_264("COSI" /* GXT: Countryside */, 1426.934f, 1225.115f, 90.76305f, 1429.982f, 1006.831f, 120.6643f, 259.89f) };
-	Local_68[2 /*261*/][3 /*8*/] = { func_264("COSI" /* GXT: Countryside */, 3503.56f, 3546.403f, 20.18748f, 3513.955f, 3875.795f, 72.94806f, 393.78f) };
-	Local_68[2 /*261*/][4 /*8*/] = { func_264("SKID" /* GXT: Mission Row */, 403.5404f, -864.4694f, 20.33799f, 396.3441f, -1127.325f, 35.49262f, 325.93f) };
+	Local_68[2 /*261*/][0 /*8*/] = { func_264("PBOX" /* GXT: Pillbox Hill */, -25.50944f, -932.38464f, 20.41711f, 119.94056f, -523.43976f, 33.07988f, 363.4f) };
+	Local_68[2 /*261*/][1 /*8*/] = { func_264("DOWNT" /* GXT: Downtown */, -25.50944f, -932.38464f, 20.41711f, 119.94056f, -523.43976f, 33.07988f, 363.4f) };
+	Local_68[2 /*261*/][2 /*8*/] = { func_264("COSI" /* GXT: Countryside */, 1426.9344f, 1225.1151f, 90.76305f, 1429.9823f, 1006.8307f, 120.66425f, 259.89f) };
+	Local_68[2 /*261*/][3 /*8*/] = { func_264("COSI" /* GXT: Countryside */, 3503.5603f, 3546.4026f, 20.18748f, 3513.9546f, 3875.7952f, 72.94806f, 393.78f) };
+	Local_68[2 /*261*/][4 /*8*/] = { func_264("SKID" /* GXT: Mission Row */, 403.54044f, -864.46936f, 20.33799f, 396.34406f, -1127.3247f, 35.49262f, 325.93f) };
 	Local_68[2 /*261*/][5 /*8*/] = { func_264("JAIL" /* GXT: Bolingbroke Penitentiary */, 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
 	Local_68[2 /*261*/][6 /*8*/] = { func_264("ARMYB" /* GXT: Fort Zancudo */, 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
 	Local_68[2 /*261*/].f_260 = 2;
 	Local_68[2 /*261*/].f_257 = 7;
-	Local_68[1 /*261*/][0 /*8*/] = { func_264("PALETO" /* GXT: Paleto Bay */, -422.8618f, 6068.399f, 20.34662f, -282.7452f, 6206.324f, 50.46586f, 196.61f) };
-	Local_68[1 /*261*/][1 /*8*/] = { func_264("ROCKF" /* GXT: Rockford Hills */, -755.2506f, 147.4266f, 75.41048f, -1079.033f, 169.3806f, 50.46801f, 179.12f) };
-	Local_68[1 /*261*/][2 /*8*/] = { func_264("ROCKF" /* GXT: Rockford Hills */, -752.3674f, 90.76733f, 65.5171f, -938.798f, -15.91457f, 35.48347f, 205.78f) };
+	Local_68[1 /*261*/][0 /*8*/] = { func_264("PALETO" /* GXT: Paleto Bay */, -422.86185f, 6068.399f, 20.34662f, -282.74524f, 6206.324f, 50.46586f, 196.61f) };
+	Local_68[1 /*261*/][1 /*8*/] = { func_264("ROCKF" /* GXT: Rockford Hills */, -755.2506f, 147.4266f, 75.41048f, -1079.0332f, 169.38055f, 50.46801f, 179.12f) };
+	Local_68[1 /*261*/][2 /*8*/] = { func_264("ROCKF" /* GXT: Rockford Hills */, -752.36743f, 90.76733f, 65.5171f, -938.79803f, -15.91457f, 35.48347f, 205.78f) };
 	Local_68[1 /*261*/][3 /*8*/] = { func_264("ROCKF" /* GXT: Rockford Hills */, -890.4999f, 431.1449f, 90.29848f, -875.3576f, 232.3266f, 60.20724f, 263.82f) };
-	Local_68[1 /*261*/][4 /*8*/] = { func_264("ROCKF" /* GXT: Rockford Hills */, -752.3674f, 90.76733f, 65.5171f, -938.798f, -15.91457f, 35.48347f, 205.78f) };
-	Local_68[1 /*261*/][5 /*8*/] = { func_264("ROCKF" /* GXT: Rockford Hills */, -1198.183f, 638.6367f, 115.1066f, -444.509f, 750.9377f, 198.2971f, 473.88f) };
-	Local_68[1 /*261*/][6 /*8*/] = { func_264("ROCKF" /* GXT: Rockford Hills */, -844.4075f, 400.9413f, 80.433f, -109.5311f, 420.5014f, 120.2088f, 256.03f) };
-	Local_68[1 /*261*/][7 /*8*/] = { func_264("ROCKF" /* GXT: Rockford Hills */, -518.6213f, 648.8265f, 130.9352f, -64.0709f, 582.4504f, 215.3084f, 162.72f) };
-	Local_68[1 /*261*/][8 /*8*/] = { func_264("RICHM" /* GXT: Richman */, -934.9802f, 349.6101f, 85.77298f, -1432.451f, 269.9804f, 50.7303f, 185.03f) };
-	Local_68[1 /*261*/][9 /*8*/] = { func_264("RICHM" /* GXT: Richman */, -1633.813f, -69.53224f, 65.10236f, -1446.823f, 69.71544f, 48.23926f, 214.92f) };
-	Local_68[1 /*261*/][10 /*8*/] = { func_264("RICHM" /* GXT: Richman */, -1732.258f, 444.1353f, 130.1258f, -2065.69f, 412.2121f, 98.09863f, 175.17f) };
-	Local_68[1 /*261*/][11 /*8*/] = { func_264("RICHM" /* GXT: Richman */, -1618.036f, 50.95197f, 70.95364f, -1396.514f, 221.1004f, 50.84464f, 161.61f) };
-	Local_68[1 /*261*/][12 /*8*/] = { func_264("RICHM" /* GXT: Richman */, -1801.285f, 106.8786f, 72.12892f, -1541.74f, 263.3738f, 50.44112f, 155.88f) };
-	Local_68[1 /*261*/][13 /*8*/] = { func_264("PELUFF", -2208.563f, 146.4101f, 150.9325f, -2350.122f, 486.6066f, 200.5952f, 299.18f) };
-	Local_68[1 /*261*/][14 /*8*/] = { func_264("PELUFF", -1852.326f, 134.4172f, 70.06226f, -1994.387f, 299.6283f, 100.9652f, 182.04f) };
-	Local_68[1 /*261*/][15 /*8*/] = { func_264("CHIL" /* GXT: Vinewood Hills */, -1982.67f, 505.9648f, 100.9364f, -1918.843f, 713.6382f, 150.7395f, 168.9f) };
-	Local_68[1 /*261*/][16 /*8*/] = { func_264("CHIL" /* GXT: Vinewood Hills */, -1455.751f, 887.3351f, 191.9757f, -1663.207f, 767.3684f, 160.8108f, 239.65f) };
-	Local_68[1 /*261*/][17 /*8*/] = { func_264("CHIL" /* GXT: Vinewood Hills */, -1570.222f, 508.2056f, 140.3884f, -808.9532f, 526.4333f, 90.18556f, 238.43f) };
-	Local_68[1 /*261*/][18 /*8*/] = { func_264("CHIL" /* GXT: Vinewood Hills */, 242.6204f, 583.5905f, 159.4043f, 268.0424f, 827.4494f, 201.6953f, 105.09f) };
-	Local_68[1 /*261*/][19 /*8*/] = { func_264("CHIL" /* GXT: Vinewood Hills */, -21.10285f, 706.8648f, 150.7263f, -210.4382f, 1056.276f, 280.3182f, 290.15f) };
-	Local_68[1 /*261*/][20 /*8*/] = { func_264("RGLEN" /* GXT: Richman Glen */, -1837.538f, 774.2984f, 120.5629f, -1765.842f, 831.0044f, 160.3584f, 68.09f) };
-	Local_68[1 /*261*/][21 /*8*/] = { func_264("DIVINE", -372.0849f, 372.7183f, 100.6043f, 390.2198f, 532.5167f, 180.538f, 305.88f) };
+	Local_68[1 /*261*/][4 /*8*/] = { func_264("ROCKF" /* GXT: Rockford Hills */, -752.36743f, 90.76733f, 65.5171f, -938.79803f, -15.91457f, 35.48347f, 205.78f) };
+	Local_68[1 /*261*/][5 /*8*/] = { func_264("ROCKF" /* GXT: Rockford Hills */, -1198.1826f, 638.63666f, 115.10664f, -444.509f, 750.9377f, 198.29713f, 473.88f) };
+	Local_68[1 /*261*/][6 /*8*/] = { func_264("ROCKF" /* GXT: Rockford Hills */, -844.40753f, 400.9413f, 80.433f, -109.53111f, 420.5014f, 120.2088f, 256.03f) };
+	Local_68[1 /*261*/][7 /*8*/] = { func_264("ROCKF" /* GXT: Rockford Hills */, -518.62134f, 648.82654f, 130.93524f, -64.0709f, 582.45044f, 215.30841f, 162.72f) };
+	Local_68[1 /*261*/][8 /*8*/] = { func_264("RICHM" /* GXT: Richman */, -934.98016f, 349.61014f, 85.77298f, -1432.4509f, 269.98038f, 50.7303f, 185.03f) };
+	Local_68[1 /*261*/][9 /*8*/] = { func_264("RICHM" /* GXT: Richman */, -1633.8134f, -69.53224f, 65.10236f, -1446.8229f, 69.71544f, 48.23926f, 214.92f) };
+	Local_68[1 /*261*/][10 /*8*/] = { func_264("RICHM" /* GXT: Richman */, -1732.258f, 444.13525f, 130.12581f, -2065.6904f, 412.21207f, 98.09863f, 175.17f) };
+	Local_68[1 /*261*/][11 /*8*/] = { func_264("RICHM" /* GXT: Richman */, -1618.0363f, 50.95197f, 70.95364f, -1396.5143f, 221.1004f, 50.84464f, 161.61f) };
+	Local_68[1 /*261*/][12 /*8*/] = { func_264("RICHM" /* GXT: Richman */, -1801.285f, 106.8786f, 72.12892f, -1541.7401f, 263.37378f, 50.44112f, 155.88f) };
+	Local_68[1 /*261*/][13 /*8*/] = { func_264("PELUFF", -2208.5627f, 146.41006f, 150.93246f, -2350.1223f, 486.60657f, 200.5952f, 299.18f) };
+	Local_68[1 /*261*/][14 /*8*/] = { func_264("PELUFF", -1852.3263f, 134.41718f, 70.06226f, -1994.3872f, 299.62833f, 100.96516f, 182.04f) };
+	Local_68[1 /*261*/][15 /*8*/] = { func_264("CHIL" /* GXT: Vinewood Hills */, -1982.6697f, 505.9648f, 100.93644f, -1918.8427f, 713.6382f, 150.73953f, 168.9f) };
+	Local_68[1 /*261*/][16 /*8*/] = { func_264("CHIL" /* GXT: Vinewood Hills */, -1455.7506f, 887.3351f, 191.97572f, -1663.2073f, 767.3684f, 160.81076f, 239.65f) };
+	Local_68[1 /*261*/][17 /*8*/] = { func_264("CHIL" /* GXT: Vinewood Hills */, -1570.2218f, 508.20563f, 140.38838f, -808.95325f, 526.43335f, 90.18556f, 238.43f) };
+	Local_68[1 /*261*/][18 /*8*/] = { func_264("CHIL" /* GXT: Vinewood Hills */, 242.62039f, 583.59045f, 159.40428f, 268.04242f, 827.4494f, 201.69531f, 105.09f) };
+	Local_68[1 /*261*/][19 /*8*/] = { func_264("CHIL" /* GXT: Vinewood Hills */, -21.10285f, 706.8648f, 150.72626f, -210.43822f, 1056.2755f, 280.31824f, 290.15f) };
+	Local_68[1 /*261*/][20 /*8*/] = { func_264("RGLEN" /* GXT: Richman Glen */, -1837.5383f, 774.2984f, 120.56287f, -1765.8419f, 831.0044f, 160.35838f, 68.09f) };
+	Local_68[1 /*261*/][21 /*8*/] = { func_264("DIVINE", -372.0849f, 372.71826f, 100.60433f, 390.2198f, 532.5167f, 180.53801f, 305.88f) };
 	Local_68[1 /*261*/].f_260 = 1;
 	Local_68[1 /*261*/].f_257 = 22;
 	Local_68[3 /*261*/][0 /*8*/] = { func_264("MTCHIL" /* GXT: Mount Chiliad */, 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
 	Local_68[3 /*261*/][1 /*8*/] = { func_264("MTGORDO" /* GXT: Mount Gordo */, 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
 	Local_68[3 /*261*/][2 /*8*/] = { func_264("SANCHIA" /* GXT: San Chianski Mountain Range */, 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
 	Local_68[3 /*261*/][3 /*8*/] = { func_264("TATAMO" /* GXT: Tataviam Mountains */, 0f, 0f, 0f, 0f, 0f, 0f, 0f) };
-	Local_68[3 /*261*/][4 /*8*/] = { func_264("ELYSIAN" /* GXT: Elysian Island */, 531.2397f, -3019.267f, 50f, 530.1656f, -3393.623f, -22.4165f, 210f) };
+	Local_68[3 /*261*/][4 /*8*/] = { func_264("ELYSIAN" /* GXT: Elysian Island */, 531.2397f, -3019.2666f, 50f, 530.1656f, -3393.6226f, -22.4165f, 210f) };
 	Local_68[3 /*261*/][5 /*8*/] = { func_264("ELYSIAN" /* GXT: Elysian Island */, 569.1023f, -2913.018f, 15.891f, 420.8226f, -2912.775f, -15.0372f, 25f) };
-	Local_68[3 /*261*/][6 /*8*/] = { func_264("ELYSIAN" /* GXT: Elysian Island */, 495.1012f, -2833.175f, 5.164f, 460.1983f, -2813.528f, 0.4269f, 12f) };
-	Local_68[3 /*261*/][7 /*8*/] = { func_264("ELYSIAN" /* GXT: Elysian Island */, 675.2973f, -2747.45f, 4.952f, 689.2358f, -2747.396f, 10.9001f, 4.3f) };
-	Local_68[3 /*261*/][8 /*8*/] = { func_264("CYPRE" /* GXT: Cypress Flats */, 533.437f, -2693.279f, 17.4952f, 588.6345f, -2693.462f, 5.3007f, 15f) };
-	Local_68[3 /*261*/][9 /*8*/] = { func_264("CYPRE" /* GXT: Cypress Flats */, 534.9656f, -2699.136f, 4.9004f, 560.1779f, -2662.192f, 9.0007f, 15f) };
-	Local_68[3 /*261*/][10 /*8*/] = { func_264("CYPRE" /* GXT: Cypress Flats */, 583.903f, -2689.207f, 16.9771f, 549.8469f, -2665.318f, 3.9007f, 17.3f) };
-	Local_68[3 /*261*/][11 /*8*/] = { func_264("CYPRE" /* GXT: Cypress Flats */, 683.428f, -2635.134f, 9.3367f, 694.4725f, -2679.66f, 4.7815f, 10f) };
-	Local_68[3 /*261*/][12 /*8*/] = { func_264("CYPRE" /* GXT: Cypress Flats */, 695.2171f, -2694.769f, 5.9815f, 695.5035f, -2679.168f, 4.8365f, 10f) };
-	Local_68[3 /*261*/][13 /*8*/] = { func_264("CYPRE" /* GXT: Cypress Flats */, 731.7991f, -2659.58f, 4.7713f, 732.5307f, -2678.4f, 10.5065f, 25f) };
-	Local_68[3 /*261*/][14 /*8*/] = { func_264("ELYSIAN" /* GXT: Elysian Island */, 86.1885f, -2430.696f, -0.1888f, 119.1515f, -2453.121f, 2.8614f, 13f) };
-	Local_68[3 /*261*/][15 /*8*/] = { func_264("ELYSIAN" /* GXT: Elysian Island */, 260.3166f, -2426.777f, 21.2819f, 313.7871f, -2433.656f, 6.5609f, 20.5f) };
-	Local_68[3 /*261*/][16 /*8*/] = { func_264("ELYSIAN" /* GXT: Elysian Island */, 260.3166f, -2426.777f, 21.2819f, 313.7871f, -2433.656f, 6.5609f, 20.5f) };
-	Local_68[3 /*261*/][17 /*8*/] = { func_264("ELYSIAN" /* GXT: Elysian Island */, 283.1514f, -2456.777f, 19.4609f, 290.2325f, -2403.611f, 4.2465f, 20.5f) };
-	Local_68[3 /*261*/][18 /*8*/] = { func_264("ELYSIAN" /* GXT: Elysian Island */, 266.0341f, -2446.724f, 19.4623f, 308.3783f, -2414.544f, 4.5423f, 20.5f) };
-	Local_68[3 /*261*/][19 /*8*/] = { func_264("ELYSIAN" /* GXT: Elysian Island */, 303.5269f, -2451.446f, 19.4091f, 270.9798f, -2409.452f, 4.4609f, 20.5f) };
-	Local_68[3 /*261*/][20 /*8*/] = { func_264("RANCHO" /* GXT: Rancho */, 515.026f, -1653.54f, 37.2615f, 582.571f, -1577.825f, 26.3365f, 100f) };
+	Local_68[3 /*261*/][6 /*8*/] = { func_264("ELYSIAN" /* GXT: Elysian Island */, 495.1012f, -2833.1753f, 5.164f, 460.1983f, -2813.5283f, 0.4269f, 12f) };
+	Local_68[3 /*261*/][7 /*8*/] = { func_264("ELYSIAN" /* GXT: Elysian Island */, 675.2973f, -2747.4504f, 4.952f, 689.2358f, -2747.3955f, 10.9001f, 4.3f) };
+	Local_68[3 /*261*/][8 /*8*/] = { func_264("CYPRE" /* GXT: Cypress Flats */, 533.437f, -2693.2793f, 17.4952f, 588.6345f, -2693.4624f, 5.3007f, 15f) };
+	Local_68[3 /*261*/][9 /*8*/] = { func_264("CYPRE" /* GXT: Cypress Flats */, 534.9656f, -2699.1365f, 4.9004f, 560.1779f, -2662.1921f, 9.0007f, 15f) };
+	Local_68[3 /*261*/][10 /*8*/] = { func_264("CYPRE" /* GXT: Cypress Flats */, 583.903f, -2689.2068f, 16.9771f, 549.8469f, -2665.3176f, 3.9007f, 17.3f) };
+	Local_68[3 /*261*/][11 /*8*/] = { func_264("CYPRE" /* GXT: Cypress Flats */, 683.428f, -2635.1343f, 9.3367f, 694.4725f, -2679.6597f, 4.7815f, 10f) };
+	Local_68[3 /*261*/][12 /*8*/] = { func_264("CYPRE" /* GXT: Cypress Flats */, 695.2171f, -2694.7688f, 5.9815f, 695.5035f, -2679.1677f, 4.8365f, 10f) };
+	Local_68[3 /*261*/][13 /*8*/] = { func_264("CYPRE" /* GXT: Cypress Flats */, 731.7991f, -2659.5796f, 4.7713f, 732.5307f, -2678.4001f, 10.5065f, 25f) };
+	Local_68[3 /*261*/][14 /*8*/] = { func_264("ELYSIAN" /* GXT: Elysian Island */, 86.1885f, -2430.6963f, -0.1888f, 119.1515f, -2453.121f, 2.8614f, 13f) };
+	Local_68[3 /*261*/][15 /*8*/] = { func_264("ELYSIAN" /* GXT: Elysian Island */, 260.3166f, -2426.7773f, 21.2819f, 313.7871f, -2433.6558f, 6.5609f, 20.5f) };
+	Local_68[3 /*261*/][16 /*8*/] = { func_264("ELYSIAN" /* GXT: Elysian Island */, 260.3166f, -2426.7773f, 21.2819f, 313.7871f, -2433.6558f, 6.5609f, 20.5f) };
+	Local_68[3 /*261*/][17 /*8*/] = { func_264("ELYSIAN" /* GXT: Elysian Island */, 283.1514f, -2456.7773f, 19.4609f, 290.2325f, -2403.6113f, 4.2465f, 20.5f) };
+	Local_68[3 /*261*/][18 /*8*/] = { func_264("ELYSIAN" /* GXT: Elysian Island */, 266.0341f, -2446.724f, 19.4623f, 308.3783f, -2414.5442f, 4.5423f, 20.5f) };
+	Local_68[3 /*261*/][19 /*8*/] = { func_264("ELYSIAN" /* GXT: Elysian Island */, 303.5269f, -2451.4456f, 19.4091f, 270.9798f, -2409.4517f, 4.4609f, 20.5f) };
+	Local_68[3 /*261*/][20 /*8*/] = { func_264("RANCHO" /* GXT: Rancho */, 515.026f, -1653.5404f, 37.2615f, 582.571f, -1577.8248f, 26.3365f, 100f) };
 	Local_68[3 /*261*/][21 /*8*/] = { func_264("BURTON" /* GXT: Burton */, -150.7403f, -419.0541f, 28.6163f, -52.8669f, -453.5552f, 39.4051f, 100f) };
 	Local_68[3 /*261*/][22 /*8*/] = { func_264("SanAnd" /* GXT: San Andreas */, 50.2035f, -470.7132f, 36.9003f, 102.0394f, -322.0089f, 115f, 130f) };
 	Local_68[3 /*261*/][23 /*8*/] = { func_264("ALTA" /* GXT: Alta */, 499.1769f, -241.2495f, 47.3462f, 393.5317f, -205.7358f, 79.3132f, 120f) };
@@ -12663,7 +12663,7 @@ void func_263()//Position - 0xE98D
 	Local_68[3 /*261*/][27 /*8*/] = { func_264("DTVINE" /* GXT: Downtown Vinewood */, 192.813f, -14.9451f, 85.3158f, 149.2689f, 0.6803f, 67.0343f, 40f) };
 	Local_68[3 /*261*/][28 /*8*/] = { func_264("WVINE" /* GXT: West Vinewood */, 16.1659f, 61.8685f, 70.8467f, -17.1751f, 74.3771f, 76.88f, 4.5f) };
 	Local_68[3 /*261*/][29 /*8*/] = { func_264("WVINE" /* GXT: West Vinewood */, -86.5425f, 84.8701f, 80.2147f, -50.4826f, 67.7335f, 70.297f, 20f) };
-	Local_68[3 /*261*/][30 /*8*/] = { func_264("ELGORL" /* GXT: El Gordo Lighthouse */, 3449.839f, 5173.981f, 0.0662f, 3412.309f, 5166.89f, 14.8342f, 33.7f) };
+	Local_68[3 /*261*/][30 /*8*/] = { func_264("ELGORL" /* GXT: El Gordo Lighthouse */, 3449.839f, 5173.9814f, 0.0662f, 3412.309f, 5166.8896f, 14.8342f, 33.7f) };
 	Local_68[3 /*261*/].f_260 = 3;
 	Local_68[3 /*261*/].f_257 = 31;
 	if (func_252(PLAYER::PLAYER_PED_ID()))

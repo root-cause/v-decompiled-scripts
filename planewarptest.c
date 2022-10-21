@@ -46,15 +46,15 @@ void __EntryFunction__()//Position - 0x0
 	{
 		SYSTEM::WAIT(0);
 	}
-	Local_19[0 /*3*/] = { 1169.976f, 3592.572f, 32.6481f };
-	Local_19[1 /*3*/] = { 1215.738f, 3586.608f, 33.5131f };
+	Local_19[0 /*3*/] = { 1169.9758f, 3592.5715f, 32.6481f };
+	Local_19[1 /*3*/] = { 1215.738f, 3586.6077f, 33.5131f };
 	fLocal_20[0] = 277.7043f;
 	fLocal_20[1] = 77.1113f;
 	if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
 	{
-		ENTITY::SET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), 1220.202f, 3596.281f, 33.259f, true, false, false, true);
+		ENTITY::SET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), 1220.2024f, 3596.2805f, 33.259f, true, false, false, true);
 	}
-	STREAMING::LOAD_SCENE(1220.202f, 3596.281f, 33.259f);
+	STREAMING::LOAD_SCENE(1220.2024f, 3596.2805f, 33.259f);
 	iLocal_18 = VEHICLE::CREATE_VEHICLE(joaat("cuban800"), Local_19[0 /*3*/], fLocal_20[0], true, true, false);
 	VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(iLocal_18, 5f);
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("cuban800"));

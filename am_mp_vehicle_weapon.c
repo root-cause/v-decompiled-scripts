@@ -3791,7 +3791,7 @@ int func_113()//Position - 0x4421
 		{
 			if ((MISC::GET_FRAME_COUNT() % 30) == 0)
 			{
-				if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(func_114(), -136.1614f, 4617.176f, 124.5134f, -490.3058f, 4924.749f, 159.0677f, 19.5f, false, true, 0))
+				if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(func_114(), -136.16142f, 4617.176f, 124.513405f, -490.30576f, 4924.749f, 159.06767f, 19.5f, false, true, 0))
 				{
 					return 1;
 				}
@@ -5153,7 +5153,7 @@ int func_172()//Position - 0x5DFD
 	{
 		if (func_48(func_114()))
 		{
-			if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(func_114(), -136.1614f, 4617.176f, 124.5134f, -490.3058f, 4924.749f, 159.0677f, 19.5f, false, true, 0))
+			if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(func_114(), -136.16142f, 4617.176f, 124.513405f, -490.30576f, 4924.749f, 159.06767f, 19.5f, false, true, 0))
 			{
 				return 1;
 			}

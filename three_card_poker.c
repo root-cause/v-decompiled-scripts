@@ -4720,7 +4720,7 @@ Vector3 func_76(int iParam0)//Position - 0x9166
 		switch (iParam0)
 		{
 			case 0:
-				return 1143.338f, 264.2453f, -52.8409f;
+				return 1143.3379f, 264.2453f, -52.8409f;
 			
 			case 1:
 				return 1146.329f, 261.2543f, -52.8409f;
@@ -12424,7 +12424,7 @@ float func_218(float fParam0, float fParam1, float fParam2, int iParam3)//Positi
 		
 		case 3:
 		case 8:
-			fParam2 = ((-SYSTEM::COS(func_219((3.141593f * fParam2))) / 2f) + 0.5f);
+			fParam2 = ((-SYSTEM::COS(func_219((3.1415927f * fParam2))) / 2f) + 0.5f);
 			break;
 		
 		case 4:
@@ -15788,11 +15788,11 @@ void func_297(bool bParam0, bool bParam1)//Position - 0x1A8A4
 	fVar2 = GRAPHICS::GET_ASPECT_RATIO(false);
 	if (bParam0)
 	{
-		Global_23149 = (0.225f * (1.777778f / fVar2));
+		Global_23149 = (0.225f * (1.7777778f / fVar2));
 	}
 	else if (fVar2 < 1.77777f)
 	{
-		Global_23149 = (0.225f * (1.777778f / fVar2));
+		Global_23149 = (0.225f * (1.7777778f / fVar2));
 	}
 	else
 	{
@@ -16960,52 +16960,52 @@ Vector3 func_359(int iParam0)//Position - 0x1C03F
 		switch (iParam0)
 		{
 			case 0:
-				return 1142.798f, 263.5501f, -51.7869f;
+				return 1142.7981f, 263.5501f, -51.7869f;
 			
 			case 1:
 				return 1142.82f, 264.2595f, -51.8004f;
 			
 			case 2:
-				return 1143.339f, 264.7519f, -51.8289f;
+				return 1143.3395f, 264.7519f, -51.8289f;
 			
 			case 3:
-				return 1144.052f, 264.7396f, -51.7913f;
+				return 1144.0516f, 264.7396f, -51.7913f;
 			
 			case 4:
-				return 1146.849f, 261.9344f, -51.8167f;
+				return 1146.8492f, 261.9344f, -51.8167f;
 			
 			case 5:
-				return 1146.865f, 261.2238f, -51.8003f;
+				return 1146.8649f, 261.2238f, -51.8003f;
 			
 			case 6:
-				return 1146.325f, 260.7546f, -51.812f;
+				return 1146.3254f, 260.7546f, -51.812f;
 			
 			case 7:
-				return 1145.63f, 260.7765f, -51.7979f;
+				return 1145.6301f, 260.7765f, -51.7979f;
 			
 			case 8:
-				return 1134.411f, 266.1568f, -50.9898f;
+				return 1134.4108f, 266.1568f, -50.9898f;
 			
 			case 9:
-				return 1133.708f, 266.1863f, -50.9883f;
+				return 1133.7075f, 266.1863f, -50.9883f;
 			
 			case 10:
-				return 1133.242f, 266.7186f, -50.9969f;
+				return 1133.2422f, 266.7186f, -50.9969f;
 			
 			case 11:
 				return 1133.261f, 267.4263f, -50.9812f;
 			
 			case 12:
-				return 1149.42f, 251.1891f, -50.9655f;
+				return 1149.4203f, 251.1891f, -50.9655f;
 			
 			case 13:
-				return 1148.727f, 251.1957f, -50.9855f;
+				return 1148.7267f, 251.1957f, -50.9855f;
 			
 			case 14:
-				return 1148.236f, 251.7239f, -51.0083f;
+				return 1148.2361f, 251.7239f, -51.0083f;
 			
 			case 15:
-				return 1148.262f, 252.4149f, -51.0019f;
+				return 1148.2625f, 252.4149f, -51.0019f;
 			}
 		
 		default:

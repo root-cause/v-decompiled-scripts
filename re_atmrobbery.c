@@ -1008,7 +1008,7 @@ void func_2()//Position - 0xE88
 					{
 						if (bLocal_80)
 						{
-							if (MISC::GET_DISTANCE_BETWEEN_COORDS(Local_53, -712.9f, -819.32f, 22.73f, true) < 5f && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -709.9229f, -824.0863f, 22.0751f, -715.2137f, -824.2247f, 25.01217f, 3.25f, false, true, 0))
+							if (MISC::GET_DISTANCE_BETWEEN_COORDS(Local_53, -712.9f, -819.32f, 22.73f, true) < 5f && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -709.9229f, -824.0863f, 22.075096f, -715.21375f, -824.2247f, 25.01217f, 3.25f, false, true, 0))
 							{
 								Local_78 = { -710.1279f, -821.3084f, 22.6169f };
 								Local_79 = { 0f, 0f, 266.962f };
@@ -1030,7 +1030,7 @@ void func_2()//Position - 0xE88
 								}
 								if (MISC::GET_DISTANCE_BETWEEN_COORDS(Local_53, -203.72f, -861.8f, 29.27f, true) < 5f)
 								{
-									if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -202.4218f, -864.449f, 27.88059f, -211.4486f, -861.5274f, 31.75401f, 9.5f, false, true, 0))
+									if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -202.42177f, -864.449f, 27.880587f, -211.44864f, -861.5274f, 31.754005f, 9.5f, false, true, 0))
 									{
 										if (Local_79.f_2 > 315f && Local_79.f_2 < 360f)
 										{
@@ -1043,24 +1043,24 @@ void func_2()//Position - 0xE88
 										Local_78 = { -205.81f, -865.2f, 28.5f };
 									}
 								}
-								else if (MISC::GET_DISTANCE_BETWEEN_COORDS(Local_53, -821.33f, -1082.43f, 10.14f, true) < 5f && OBJECT::IS_POINT_IN_ANGLED_AREA(Local_78, -826.1744f, -1083.943f, 9.137519f, -811.6559f, -1075.567f, 13.88779f, 6f, false, true))
+								else if (MISC::GET_DISTANCE_BETWEEN_COORDS(Local_53, -821.33f, -1082.43f, 10.14f, true) < 5f && OBJECT::IS_POINT_IN_ANGLED_AREA(Local_78, -826.17444f, -1083.9429f, 9.137519f, -811.65594f, -1075.567f, 13.887788f, 6f, false, true))
 								{
-									Local_78 = { -814.0593f, -1082.483f, 10.0671f };
+									Local_78 = { -814.0593f, -1082.4833f, 10.0671f };
 									Local_79.f_2 = 275.5752f;
 								}
-								else if (MISC::GET_DISTANCE_BETWEEN_COORDS(Local_53, -387.12f, 6045.79f, 30.5f, true) < 5f && OBJECT::IS_POINT_IN_ANGLED_AREA(Local_78, -377.5788f, 6033.821f, 29.29119f, -373.0138f, 6029.14f, 33.75382f, 4.75f, false, true))
+								else if (MISC::GET_DISTANCE_BETWEEN_COORDS(Local_53, -387.12f, 6045.79f, 30.5f, true) < 5f && OBJECT::IS_POINT_IN_ANGLED_AREA(Local_78, -377.57883f, 6033.821f, 29.291185f, -373.0138f, 6029.1396f, 33.753822f, 4.75f, false, true))
 								{
 									Local_78 = { -375.0627f, 6030.533f, 30.5313f };
 									Local_79.f_2 = 222.9049f;
 								}
-								else if (MISC::GET_DISTANCE_BETWEEN_COORDS(Local_53, -387.12f, 6045.79f, 30.5f, true) < 5f && OBJECT::IS_POINT_IN_ANGLED_AREA(Local_78, -381.4607f, 6031.481f, 29.24971f, -376.6766f, 6026.68f, 33.76656f, 3f, false, true))
+								else if (MISC::GET_DISTANCE_BETWEEN_COORDS(Local_53, -387.12f, 6045.79f, 30.5f, true) < 5f && OBJECT::IS_POINT_IN_ANGLED_AREA(Local_78, -381.46072f, 6031.4814f, 29.249712f, -376.67657f, 6026.68f, 33.766556f, 3f, false, true))
 								{
-									Local_78 = { -379.7835f, 6029.472f, 30.5014f };
+									Local_78 = { -379.7835f, 6029.4717f, 30.5014f };
 									Local_79.f_2 = 213.2611f;
 								}
 								else if (MISC::GET_DISTANCE_BETWEEN_COORDS(Local_53, 89.39f, 2f, 67.34f, true) < 5f)
 								{
-									if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 73.30347f, 4.781172f, 66.79439f, 107.6572f, -8.330787f, 69.16833f, 9.75f, false, true, 0))
+									if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 73.303474f, 4.781172f, 66.79439f, 107.65722f, -8.330787f, 69.16833f, 9.75f, false, true, 0))
 									{
 										if (Local_79.f_2 > 128f && Local_79.f_2 < 195f)
 										{
@@ -1077,7 +1077,7 @@ void func_2()//Position - 0xE88
 								}
 								else if (MISC::GET_DISTANCE_BETWEEN_COORDS(Local_53, 174.53f, 6637.64f, 30.57f, true) < 5f)
 								{
-									if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 176.3895f, 6635.983f, 29.87799f, 181.7585f, 6641.302f, 33.556f, 7.75f, false, true, 0))
+									if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 176.38945f, 6635.9834f, 29.87799f, 181.75851f, 6641.302f, 33.556004f, 7.75f, false, true, 0))
 									{
 										if (Local_79.f_2 > 244.444f && Local_79.f_2 < 326.2103f)
 										{
@@ -1087,7 +1087,7 @@ void func_2()//Position - 0xE88
 								}
 								else if (MISC::GET_DISTANCE_BETWEEN_COORDS(Local_53, -3044.11f, 594.34f, 6.73f, true) < 5f)
 								{
-									if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -3042.549f, 597.1118f, 6.612578f, -3046.965f, 595.6973f, 9.065809f, 5f, false, true, 0))
+									if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -3042.5486f, 597.11176f, 6.612578f, -3046.9646f, 595.69727f, 9.065809f, 5f, false, true, 0))
 									{
 										Local_78 = { -3045.4f, 598.65f, 6.51f };
 									}
@@ -1114,7 +1114,7 @@ void func_2()//Position - 0xE88
 							}
 							if (func_67(Local_53, -526.58f, -1222.79f, 17.46f, 10f, 0))
 							{
-								if (OBJECT::IS_POINT_IN_ANGLED_AREA(Local_78, -538.4412f, -1214.903f, 16.79794f, -520.3268f, -1223.249f, 20.556f, 6.5f, false, true))
+								if (OBJECT::IS_POINT_IN_ANGLED_AREA(Local_78, -538.4412f, -1214.9027f, 16.797941f, -520.32684f, -1223.2487f, 20.555996f, 6.5f, false, true))
 								{
 									if (Local_79.f_2 < 35f || Local_79.f_2 > 275f)
 									{
@@ -1143,9 +1143,9 @@ void func_2()//Position - 0xE88
 						}
 						else if (bLocal_65 == 4)
 						{
-							if (SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), 183.6065f, 6636.653f, 30.6299f) < SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), 172.2291f, 6631.007f, 30.7398f))
+							if (SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), 183.6065f, 6636.6533f, 30.6299f) < SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), 172.2291f, 6631.007f, 30.7398f))
 							{
-								Local_78 = { 183.6065f, 6636.653f, 30.6299f };
+								Local_78 = { 183.6065f, 6636.6533f, 30.6299f };
 								Local_79 = { 0f, 0f, 265f };
 							}
 							else
@@ -1183,9 +1183,9 @@ void func_2()//Position - 0xE88
 								MISC::GET_MODEL_DIMENSIONS(ENTITY::GET_ENTITY_MODEL(iVar0), &Local_136, &Local_137);
 								if (ENTITY::IS_ENTITY_AT_COORD(iVar0, Local_78, (Local_137.f_1 + 1f), (Local_137.f_1 + 1f), 3f, false, true, 0) || ENTITY::IS_ENTITY_AT_COORD(iVar0, PED::GET_ANIM_INITIAL_OFFSET_POSITION(cLocal_142, sLocal_144, Local_78, Local_79, 0f, 2), (Local_137.f_1 + 1f), (Local_137.f_1 + 1f), 3f, false, true, 0))
 								{
-									if (func_67(Local_53, -526.58f, -1222.79f, 17.46f, 10f, 0) && (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -529.7477f, -1218.399f, 16.78482f, -538.9778f, -1213.756f, 20.53685f, 7.5f, false, true, 0) || ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -529.7477f, -1218.399f, 16.78482f, -520.9798f, -1222.305f, 20.55204f, 7.5f, false, true, 0)))
+									if (func_67(Local_53, -526.58f, -1222.79f, 17.46f, 10f, 0) && (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -529.74774f, -1218.3987f, 16.78482f, -538.97784f, -1213.7561f, 20.536852f, 7.5f, false, true, 0) || ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -529.74774f, -1218.3987f, 16.78482f, -520.9798f, -1222.3054f, 20.552042f, 7.5f, false, true, 0)))
 									{
-										if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -529.7477f, -1218.399f, 16.78482f, -538.9778f, -1213.756f, 20.53685f, 7.5f, false, true, 0))
+										if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -529.74774f, -1218.3987f, 16.78482f, -538.97784f, -1213.7561f, 20.536852f, 7.5f, false, true, 0))
 										{
 											Var6 = { 2.9f, 12f, 8f };
 											Local_75 = { -543.34f, -1216.8f, 17.96f };
@@ -1195,7 +1195,7 @@ void func_2()//Position - 0xE88
 										else
 										{
 											Var6 = { 2.9f, 12f, 8f };
-											Local_75 = { -522.4418f, -1214.57f, 17.1848f };
+											Local_75 = { -522.4418f, -1214.5704f, 17.1848f };
 											fLocal_77 = 246.7714f;
 											bVar8 = true;
 										}
@@ -1229,7 +1229,7 @@ void func_2()//Position - 0xE88
 											}
 										}
 									}
-									else if (MISC::GET_DISTANCE_BETWEEN_COORDS(Local_53, -203.72f, -861.8f, 29.27f, true) < 5f && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -197.7616f, -865.9772f, 27.31116f, -191.161f, -849.0546f, 32.89275f, 10.25f, false, true, 0))
+									else if (MISC::GET_DISTANCE_BETWEEN_COORDS(Local_53, -203.72f, -861.8f, 29.27f, true) < 5f && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -197.76158f, -865.97723f, 27.311165f, -191.161f, -849.0546f, 32.892746f, 10.25f, false, true, 0))
 									{
 										Var6 = { 2.9f, 12f, 8f };
 										Local_75 = { -187f, -855.51f, 29.02f };
@@ -1264,7 +1264,7 @@ void func_2()//Position - 0xE88
 											}
 										}
 									}
-									else if (MISC::GET_DISTANCE_BETWEEN_COORDS(Local_53, -387.12f, 6045.79f, 30.5f, true) < 5f && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -390.4536f, 6044.05f, 29.99868f, -380.4771f, 6032.985f, 33.24879f, 6f, false, true, 0))
+									else if (MISC::GET_DISTANCE_BETWEEN_COORDS(Local_53, -387.12f, 6045.79f, 30.5f, true) < 5f && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -390.45358f, 6044.0503f, 29.998678f, -380.4771f, 6032.985f, 33.248787f, 6f, false, true, 0))
 									{
 										Var6 = { 2.9f, 12f, 8f };
 										Local_75 = { -395.84f, 6051.16f, 31.19f };
@@ -1299,7 +1299,7 @@ void func_2()//Position - 0xE88
 											}
 										}
 									}
-									else if (MISC::GET_DISTANCE_BETWEEN_COORDS(Local_53, -2956.78f, 488.19f, 14.47f, true) < 5f && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -2955.234f, 492.4626f, 13.80307f, -2967.116f, 493.0511f, 17.05663f, 9.75f, false, true, 0))
+									else if (MISC::GET_DISTANCE_BETWEEN_COORDS(Local_53, -2956.78f, 488.19f, 14.47f, true) < 5f && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -2955.2336f, 492.46262f, 13.803072f, -2967.1165f, 493.05115f, 17.056633f, 9.75f, false, true, 0))
 									{
 										Var6 = { 2.9f, 12f, 8f };
 										Local_75 = { -2972.31f, 490.07f, 15.03f };
@@ -1334,7 +1334,7 @@ void func_2()//Position - 0xE88
 											}
 										}
 									}
-									else if ((MISC::GET_DISTANCE_BETWEEN_COORDS(Local_53, 174.53f, 6637.64f, 30.57f, true) < 5f && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 178.246f, 6638.824f, 30.5274f, 173.4713f, 6634.083f, 33.6823f, 6f, false, true, 0)) && ENTITY::IS_ENTITY_IN_ANGLED_AREA(iVar0, 180.1225f, 6640.33f, 30.78129f, 171.623f, 6631.794f, 33.69934f, 8f, false, true, 0))
+									else if ((MISC::GET_DISTANCE_BETWEEN_COORDS(Local_53, 174.53f, 6637.64f, 30.57f, true) < 5f && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 178.24597f, 6638.8237f, 30.527403f, 173.4713f, 6634.0835f, 33.6823f, 6f, false, true, 0)) && ENTITY::IS_ENTITY_IN_ANGLED_AREA(iVar0, 180.12245f, 6640.3296f, 30.78129f, 171.62299f, 6631.794f, 33.69934f, 8f, false, true, 0))
 									{
 										Var6 = { 2.9f, 12f, 8f };
 										Local_75 = { 184.05f, 6628.75f, 31.27f };
@@ -3417,7 +3417,7 @@ Vector3 func_64(struct<3> Param0, struct<3> Param1)//Position - 0x48BB
 	}
 	MISC::GET_MODEL_DIMENSIONS(ENTITY::GET_ENTITY_MODEL(iVar0), &Var3, &Var4);
 	PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE(Param0, 3, &Var2, 1, 3f, 0f);
-	if (SYSTEM::VDIST(Param0, -3039.655f, 602.4346f, 6.5719f) <= 25f)
+	if (SYSTEM::VDIST(Param0, -3039.6548f, 602.4346f, 6.5719f) <= 25f)
 	{
 		Var1 = { -3045.49f, 604.46f, 7.02f };
 		iVar5 = 8;
@@ -4487,112 +4487,112 @@ int func_98()//Position - 0x5B45
 	switch (iLocal_72)
 	{
 		case 1:
-			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -190.8152f, -801.3224f, 25.45401f, -214.8212f, -866.6472f, 35.0318f, 40f, false, true, 0))
+			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -190.81525f, -801.3224f, 25.454014f, -214.8212f, -866.64716f, 35.0318f, 40f, false, true, 0))
 			{
 				return 1;
 			}
 			break;
 		
 		case 2:
-			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 270.5801f, -1290.954f, 24.16572f, 270.499f, -1238.311f, 34.52738f, 58.25f, false, true, 0))
+			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 270.58014f, -1290.9543f, 24.165716f, 270.499f, -1238.3113f, 34.52738f, 58.25f, false, true, 0))
 			{
 				return 1;
 			}
 			break;
 		
 		case 3:
-			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -3038.987f, 606.4774f, 2.589385f, -3057.039f, 599.7103f, 12.70948f, 19.25f, false, true, 0))
+			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -3038.9868f, 606.4774f, 2.589385f, -3057.0386f, 599.7103f, 12.709482f, 19.25f, false, true, 0))
 			{
 				return 1;
 			}
 			break;
 		
 		case 4:
-			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 170.8581f, 6619.894f, 30.31941f, 183.9522f, 6632.882f, 34.06088f, 22.25f, false, true, 0))
+			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 170.85811f, 6619.894f, 30.31941f, 183.95216f, 6632.882f, 34.060883f, 22.25f, false, true, 0))
 			{
 				return 1;
 			}
 			break;
 		
 		case 6:
-			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -9.663248f, -938.2167f, 24.29024f, 48.12534f, -959.4428f, 34.60982f, 7.5f, false, true, 0))
+			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -9.663248f, -938.21674f, 24.290241f, 48.12534f, -959.4428f, 34.609818f, 7.5f, false, true, 0))
 			{
 				return 1;
 			}
 			break;
 		
 		case 8:
-			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 283.0487f, -923.3091f, 24.13956f, 301.367f, -871.6924f, 34.4707f, 6.75f, false, true, 0))
+			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 283.0487f, -923.3091f, 24.139559f, 301.367f, -871.6924f, 34.4707f, 6.75f, false, true, 0))
 			{
 				return 1;
 			}
 			break;
 		
 		case 11:
-			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 1053.799f, -772.7601f, 53.31232f, 1112.018f, -772.2864f, 60.16156f, 14.75f, false, true, 0))
+			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 1053.7991f, -772.76013f, 53.312317f, 1112.018f, -772.2864f, 60.161556f, 14.75f, false, true, 0))
 			{
 				return 1;
 			}
 			break;
 		
 		case 16:
-			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -2097.21f, -292.7766f, 8.141721f, -2101.908f, -345.41f, 18.23235f, 54.25f, false, true, 0))
+			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -2097.2097f, -292.7766f, 8.141721f, -2101.9082f, -345.40997f, 18.232346f, 54.25f, false, true, 0))
 			{
 				return 1;
 			}
 			break;
 		
 		case 17:
-			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -799.6841f, -1117.781f, 5.659806f, -820.5555f, -1080.585f, 16.38764f, 29.5f, false, true, 0))
+			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -799.68414f, -1117.7812f, 5.659806f, -820.5555f, -1080.5848f, 16.38764f, 29.5f, false, true, 0))
 			{
 				return 1;
 			}
 			break;
 		
 		case 18:
-			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -731.1746f, -820.053f, 18.06713f, -670.6583f, -821.2724f, 29.66125f, 8f, false, true, 0))
+			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -731.17456f, -820.053f, 18.067131f, -670.6583f, -821.2724f, 29.66125f, 8f, false, true, 0))
 			{
 				return 1;
 			}
 			break;
 		
 		case 19:
-			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -379.9555f, 6033.261f, 29.74875f, -394.2914f, 6047.678f, 33.9986f, 7f, false, true, 0) && !ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -393.6422f, 6056.547f, 29.75011f, -402.4834f, 6047.817f, 33.99312f, 17.5f, false, true, 0))
+			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -379.95554f, 6033.261f, 29.748749f, -394.29138f, 6047.678f, 33.998596f, 7f, false, true, 0) && !ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -393.64215f, 6056.547f, 29.750107f, -402.48337f, 6047.8174f, 33.993122f, 17.5f, false, true, 0))
 			{
 				return 1;
 			}
 			break;
 		
 		case 22:
-			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -294.338f, -833.5905f, 26.65178f, -330.661f, -827.2508f, 38.64983f, 16.5f, false, true, 0) && !ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -294.1309f, -836.8602f, 26.72095f, -284.6938f, -814.233f, 37.38612f, 11f, false, true, 0))
+			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -294.33798f, -833.5905f, 26.651785f, -330.661f, -827.2508f, 38.649826f, 16.5f, false, true, 0) && !ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -294.1309f, -836.8602f, 26.72095f, -284.6938f, -814.23303f, 37.38612f, 11f, false, true, 0))
 			{
 				return 1;
 			}
 			break;
 		
 		case 23:
-			if ((!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -253.9362f, -689.096f, 28.56934f, -278.4698f, -682.0773f, 38.52502f, 9.5f, false, true, 0) && !ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -253.3138f, -687.6628f, 28.5611f, -247.2367f, -703.1184f, 38.8144f, 9.5f, false, true, 0)) && !ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -255.6709f, -726.2742f, 28.5187f, -247.2367f, -703.1184f, 38.8144f, 9.5f, false, true, 0))
+			if ((!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -253.93619f, -689.096f, 28.569336f, -278.4698f, -682.0773f, 38.52502f, 9.5f, false, true, 0) && !ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -253.3138f, -687.66284f, 28.561104f, -247.23668f, -703.1184f, 38.814396f, 9.5f, false, true, 0)) && !ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -255.67087f, -726.27423f, 28.518696f, -247.23668f, -703.1184f, 38.814396f, 9.5f, false, true, 0))
 			{
 				return 1;
 			}
 			break;
 		
 		case 25:
-			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 114.2641f, -9.324284f, 62.78819f, 75.47891f, 4.897117f, 73.96004f, 7f, false, true, 0))
+			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 114.26407f, -9.324284f, 62.788185f, 75.47891f, 4.897117f, 73.96004f, 7f, false, true, 0))
 			{
 				return 1;
 			}
 			break;
 		
 		case 30:
-			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -544.5211f, -1200.006f, 12.87966f, -509.3911f, -1216.772f, 23.72543f, 41f, false, true, 0))
+			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -544.52106f, -1200.0063f, 12.879658f, -509.39105f, -1216.7723f, 23.725426f, 41f, false, true, 0))
 			{
 				return 1;
 			}
 			break;
 		
 		case 31:
-			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -2945.132f, 491.4792f, 13.2899f, -2971.825f, 492.9101f, 18.0671f, 10f, false, true, 0))
+			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -2945.1323f, 491.4792f, 13.289896f, -2971.825f, 492.91013f, 18.067097f, 10f, false, true, 0))
 			{
 				return 1;
 			}
@@ -7783,8 +7783,8 @@ int func_195()//Position - 0x98E9
 			fLocal_76 = 196f;
 			Local_75 = { -187.5415f, -858.1728f, 28.1863f };
 			fLocal_77 = 160.391f;
-			Local_136 = { -259.0351f, -865.7119f, 28f };
-			Local_137 = { -130.3981f, -908.8096f, 40f };
+			Local_136 = { -259.0351f, -865.71185f, 28f };
+			Local_137 = { -130.39812f, -908.80963f, 40f };
 			TASK::ASSISTED_MOVEMENT_REQUEST_ROUTE("ATM_1");
 			STREAMING::REQUEST_MODEL(iLocal_106);
 			while (!STREAMING::HAS_MODEL_LOADED(iLocal_106))
@@ -7803,8 +7803,8 @@ int func_195()//Position - 0x98E9
 			fLocal_76 = 55.24f;
 			Local_75 = { -2973.03f, 496.38f, 14.96f };
 			fLocal_77 = 3.18f;
-			Local_136 = { -259.0351f, -865.7119f, 28f };
-			Local_137 = { -130.3981f, -908.8096f, 40f };
+			Local_136 = { -259.0351f, -865.71185f, 28f };
+			Local_137 = { -130.39812f, -908.80963f, 40f };
 			STREAMING::REQUEST_MODEL(iLocal_106);
 			while (!STREAMING::HAS_MODEL_LOADED(iLocal_106))
 			{
@@ -7822,10 +7822,10 @@ int func_195()//Position - 0x98E9
 		func_219();
 		Local_74 = { 283.31f, -1249.51f, 28.95f };
 		fLocal_76 = 78.25f;
-		Local_75 = { 288.9906f, -1248.443f, 28.2847f };
+		Local_75 = { 288.9906f, -1248.4432f, 28.2847f };
 		fLocal_77 = 75.9756f;
-		Local_136 = { 266.3643f, -1313.829f, 28.59103f };
-		Local_137 = { 265.1489f, -1215.932f, 36.20192f };
+		Local_136 = { 266.36426f, -1313.8293f, 28.591026f };
+		Local_137 = { 265.14893f, -1215.9318f, 36.20192f };
 		STREAMING::REQUEST_MODEL(iLocal_106);
 		while (!STREAMING::HAS_MODEL_LOADED(iLocal_106))
 		{
@@ -7840,22 +7840,22 @@ int func_195()//Position - 0x98E9
 	else if (bLocal_65 == 3)
 	{
 		func_219();
-		Local_75 = { -1587.15f, -539.9152f, 34.3644f };
+		Local_75 = { -1587.1504f, -539.9152f, 34.3644f };
 		fLocal_77 = 327f;
-		Local_136 = { -1596.203f, -474.8844f, 32f };
-		Local_137 = { -1595.572f, -565.8368f, 48f };
+		Local_136 = { -1596.2025f, -474.88443f, 32f };
+		Local_137 = { -1595.5721f, -565.8368f, 48f };
 	}
 	else if (bLocal_65 == 4)
 	{
 		func_219();
-		Local_74 = { 181.2355f, 6632.627f, 30.5732f };
+		Local_74 = { 181.2355f, 6632.6274f, 30.5732f };
 		fLocal_76 = 182f;
-		Local_75 = { 200.0727f, 6630.587f, 30.517f };
+		Local_75 = { 200.0727f, 6630.5874f, 30.517f };
 		fLocal_77 = 165f;
-		Local_136 = { 178.1817f, 6660.375f, 31f };
-		Local_137 = { 179.1249f, 6530.043f, 38f };
+		Local_136 = { 178.18172f, 6660.375f, 31f };
+		Local_137 = { 179.12494f, 6530.043f, 38f };
 		MISC::SET_STUNT_JUMPS_CAN_TRIGGER(false);
-		VEHICLE::SET_ALL_VEHICLE_GENERATORS_ACTIVE_IN_AREA(179.5463f, 6625.689f, 30.2739f, 184.245f, 6635.661f, 31.5188f, false, true);
+		VEHICLE::SET_ALL_VEHICLE_GENERATORS_ACTIVE_IN_AREA(179.5463f, 6625.689f, 30.2739f, 184.245f, 6635.6606f, 31.5188f, false, true);
 		STREAMING::REQUEST_MODEL(iLocal_106);
 		while (!STREAMING::HAS_MODEL_LOADED(iLocal_106))
 		{
@@ -10111,7 +10111,7 @@ int func_234(struct<3> Param0, int iParam1, bool bParam2, bool bParam3, bool bPa
 		}
 		if (INTERIOR::IS_VALID_INTERIOR(INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID())))
 		{
-			if ((INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(377.153f, -717.567f, 10.0536f) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(320.9934f, 265.2515f, 82.1221f)) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(-1425.564f, -244.3f, 15.8053f))
+			if ((INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(377.153f, -717.567f, 10.0536f) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(320.9934f, 265.2515f, 82.1221f)) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(-1425.5645f, -244.3f, 15.8053f))
 			{
 				return 0;
 			}
@@ -10128,7 +10128,7 @@ int func_234(struct<3> Param0, int iParam1, bool bParam2, bool bParam3, bool bPa
 		{
 			if (iParam1 != 30)
 			{
-				if (SYSTEM::VDIST2(Var1, -61.2745f, -1100.468f, 25.3752f) < 176400f)
+				if (SYSTEM::VDIST2(Var1, -61.2745f, -1100.4675f, 25.3752f) < 176400f)
 				{
 					return 0;
 				}
@@ -11009,7 +11009,7 @@ void func_276()//Position - 0xE690
 	}
 	if (bLocal_65 == 4)
 	{
-		VEHICLE::SET_ALL_VEHICLE_GENERATORS_ACTIVE_IN_AREA(179.5463f, 6625.689f, 30.2739f, 184.245f, 6635.661f, 31.5188f, true, true);
+		VEHICLE::SET_ALL_VEHICLE_GENERATORS_ACTIVE_IN_AREA(179.5463f, 6625.689f, 30.2739f, 184.245f, 6635.6606f, 31.5188f, true, true);
 	}
 	func_178(&uLocal_152, 0, 0);
 	if (func_222())

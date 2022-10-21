@@ -454,24 +454,24 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_256 = joaat("bison");
 	iLocal_263 = 1;
 	iLocal_264 = 1000;
-	Local_283 = { 1358.822f, -1547.396f, 53.7793f };
-	Local_284 = { 1358.822f, -1547.396f, 53.7793f };
-	Local_285 = { -694.2758f, -1119.447f, 13.525f };
-	Local_286 = { -683.1272f, -1102.185f, 13.5257f };
-	Local_287 = { 410.2629f, -1399.16f, 28.4017f };
-	Local_288 = { 371.3834f, -1482.955f, 28.3418f };
-	Local_289 = { 404.8026f, -1416.294f, 28.435f };
-	Local_290 = { 406.612f, -1419.937f, 29.00375f };
-	Local_291 = { -682.5392f, -1109.082f, 13.6729f };
+	Local_283 = { 1358.8215f, -1547.3961f, 53.7793f };
+	Local_284 = { 1358.8215f, -1547.3961f, 53.7793f };
+	Local_285 = { -694.2758f, -1119.4468f, 13.525f };
+	Local_286 = { -683.1272f, -1102.1846f, 13.5257f };
+	Local_287 = { 410.2629f, -1399.1598f, 28.4017f };
+	Local_288 = { 371.3834f, -1482.9553f, 28.3418f };
+	Local_289 = { 404.8026f, -1416.2942f, 28.435f };
+	Local_290 = { 406.612f, -1419.9369f, 29.003754f };
+	Local_291 = { -682.5392f, -1109.0822f, 13.6729f };
 	Local_292 = { -688.6727f, -1117.512f, 13.52498f };
-	Local_293 = { -667.136f, -1046.06f, 15.9174f };
-	Local_294 = { -703.1228f, -1142.432f, 9.8127f };
+	Local_293 = { -667.136f, -1046.0604f, 15.9174f };
+	Local_294 = { -703.1228f, -1142.4324f, 9.8127f };
 	Local_298 = { -701.2533f, -1080.285f, 12.2884f };
-	Local_299 = { -687.8794f, -1108.073f, 13.5257f };
+	Local_299 = { -687.8794f, -1108.0731f, 13.5257f };
 	Local_300 = { -703.0013f, -1084.073f, 12.1105f };
 	fLocal_303 = 25.0227f;
 	fLocal_304 = 226.3085f;
-	fLocal_305 = -128.2329f;
+	fLocal_305 = -128.23294f;
 	fLocal_306 = 238.4969f;
 	fLocal_307 = 212.7682f;
 	StringCopy(&cLocal_309, "taxi_oj_fc_2", 16);
@@ -479,8 +479,8 @@ void __EntryFunction__()//Position - 0x0
 	StringCopy(&cLocal_321, "amb@world_human_hang_out_street@male_c@exit", 64);
 	StringCopy(&cLocal_330, "amb@world_human_hang_out_street@female_hold_arm@idle_a", 64);
 	StringCopy(&cLocal_339, "amb@world_human_hang_out_street@female_hold_arm@exit", 64);
-	Local_348 = { -727.111f, -1046.357f, 11.43926f };
-	Local_349 = { -642.6097f, -1085.538f, 28.42921f };
+	Local_348 = { -727.111f, -1046.3568f, 11.439257f };
+	Local_349 = { -642.60974f, -1085.5381f, 28.429213f };
 	fLocal_350 = 76.75f;
 	iLocal_396 = 786468;
 	iLocal_397 = 1;
@@ -747,9 +747,9 @@ void func_9()//Position - 0x4BE
 				{
 					func_254(&Local_238, 9, 1, 0, 0);
 					func_253(&Local_238);
-					Local_238.f_17 = { 485.2039f, -1418.064f, 28.2112f };
+					Local_238.f_17 = { 485.2039f, -1418.0643f, 28.2112f };
 					func_252();
-					func_251(392.8545f, -1379.577f, 29.2837f, 0, 50f);
+					func_251(392.8545f, -1379.5774f, 29.2837f, 0, 50f);
 					func_313(&Local_238, 17);
 				}
 				if (VEHICLE::IS_VEHICLE_DRIVEABLE(Local_238.f_4, false))
@@ -892,12 +892,12 @@ void func_9()//Position - 0x4BE
 				{
 					if (PED::IS_PED_IN_VEHICLE(Local_238.f_2, Local_238.f_4, false))
 					{
-						if (ENTITY::IS_ENTITY_AT_COORD(Local_238.f_4, -684.526f, -1105.76f, 13.52571f, 1f, 1f, 2f, !Local_238.f_140, true, 0))
+						if (ENTITY::IS_ENTITY_AT_COORD(Local_238.f_4, -684.526f, -1105.7596f, 13.52571f, 1f, 1f, 2f, !Local_238.f_140, true, 0))
 						{
 						}
-						if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_238.f_4, -685.0081f, -1101.297f, 13.527f, -678.677f, -1110.64f, 15.5871f, 2.25f, false, true, 0) || ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_238.f_4, -704.1705f, -1115.226f, 13.525f, -700.2585f, -1121.292f, 15.4336f, 2.25f, false, true, 0))
+						if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_238.f_4, -685.0081f, -1101.2966f, 13.527f, -678.677f, -1110.6399f, 15.5871f, 2.25f, false, true, 0) || ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_238.f_4, -704.1705f, -1115.2262f, 13.525f, -700.2585f, -1121.2924f, 15.4336f, 2.25f, false, true, 0))
 						{
-							if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_238.f_4, -685.0081f, -1101.297f, 13.527f, -678.677f, -1110.64f, 15.5871f, 2.25f, false, true, 0))
+							if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_238.f_4, -685.0081f, -1101.2966f, 13.527f, -678.677f, -1110.6399f, 15.5871f, 2.25f, false, true, 0))
 							{
 								iLocal_231 = 0;
 							}
@@ -4177,7 +4177,7 @@ int func_134()//Position - 0x4977
 					{
 						TASK::CLEAR_PED_TASKS_IMMEDIATELY(Local_251.f_2);
 						ENTITY::SET_ENTITY_COORDS(Local_251.f_2, -691.1571f, -1117.732f, 13.52498f, true, false, false, true);
-						ENTITY::SET_ENTITY_HEADING(Local_251.f_2, -49.27436f);
+						ENTITY::SET_ENTITY_HEADING(Local_251.f_2, -49.274364f);
 					}
 				}
 				CAM::DESTROY_CAM(Local_238.f_0, false);
@@ -4254,7 +4254,7 @@ Vector3 func_139(int iParam0)//Position - 0x4E22
 	switch (iParam0)
 	{
 		case 0:
-			Var0 = { -686.0368f, -1073.22f, 16.1762f };
+			Var0 = { -686.0368f, -1073.2203f, 16.1762f };
 			break;
 	}
 	return Var0;
@@ -6415,7 +6415,7 @@ void func_213()//Position - 0x78AE
 		{
 			if (PED::IS_PED_IN_VEHICLE(Local_251.f_2, Local_251.f_3, false))
 			{
-				ENTITY::SET_ENTITY_COORDS(Local_251.f_3, 406.612f, -1419.937f, 29.00375f, true, false, false, true);
+				ENTITY::SET_ENTITY_COORDS(Local_251.f_3, 406.612f, -1419.9369f, 29.003754f, true, false, false, true);
 				PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_251.f_2, Local_251.f_30);
 				PED::SET_PED_COMBAT_ATTRIBUTES(Local_251.f_2, 1, true);
 				PED::SET_PED_COMBAT_ATTRIBUTES(Local_251.f_2, 6, false);
@@ -6528,7 +6528,7 @@ Vector3 func_217(int iParam0)//Position - 0x7B61
 			break;
 		
 		case 1:
-			Var0 = { 429.6911f, -1385.415f, 29.7266f };
+			Var0 = { 429.6911f, -1385.4146f, 29.7266f };
 			break;
 		
 		case 2:
@@ -6536,7 +6536,7 @@ Vector3 func_217(int iParam0)//Position - 0x7B61
 			break;
 		
 		case 3:
-			Var0 = { 426.754f, -1386.51f, 29.6201f };
+			Var0 = { 426.754f, -1386.5096f, 29.6201f };
 			break;
 		
 		case 4:
@@ -6544,7 +6544,7 @@ Vector3 func_217(int iParam0)//Position - 0x7B61
 			break;
 		
 		case 5:
-			Var0 = { 450.0146f, -1414.523f, 34.4507f };
+			Var0 = { 450.0146f, -1414.5232f, 34.4507f };
 			break;
 		
 		case 6:
@@ -7214,9 +7214,9 @@ int func_246(var uParam0, struct<3> Param1, float fParam2)//Position - 0x8913
 	uParam0->f_3 = VEHICLE::CREATE_VEHICLE(uParam0->f_1, uParam0->f_17, uParam0->f_10, true, true, false);
 	VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(uParam0->f_1, true);
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(uParam0->f_1);
-	iLocal_235[0] = VEHICLE::CREATE_VEHICLE(iLocal_255, 404.9912f, -1423.974f, 28.4638f, 227.5235f, true, true, false);
-	iLocal_235[1] = VEHICLE::CREATE_VEHICLE(iLocal_255, 402.2958f, -1427.018f, 28.4632f, 226.6982f, true, true, false);
-	iLocal_235[2] = VEHICLE::CREATE_VEHICLE(iLocal_256, 398.415f, -1428.167f, 28.4504f, 226.4081f, true, true, false);
+	iLocal_235[0] = VEHICLE::CREATE_VEHICLE(iLocal_255, 404.9912f, -1423.9735f, 28.4638f, 227.5235f, true, true, false);
+	iLocal_235[1] = VEHICLE::CREATE_VEHICLE(iLocal_255, 402.2958f, -1427.0176f, 28.4632f, 226.6982f, true, true, false);
+	iLocal_235[2] = VEHICLE::CREATE_VEHICLE(iLocal_256, 398.415f, -1428.1665f, 28.4504f, 226.4081f, true, true, false);
 	VEHICLE::SET_VEHICLE_DOORS_LOCKED(iLocal_235[0], 2);
 	VEHICLE::SET_VEHICLE_DOORS_LOCKED(iLocal_235[1], 2);
 	VEHICLE::SET_VEHICLE_DOORS_LOCKED(iLocal_235[2], 2);
@@ -11361,7 +11361,7 @@ void func_364(var uParam0)//Position - 0xE4E1
 			else if (uParam0->f_411 == 0)
 			{
 				TASK::TASK_CLIMB_LADDER(0, true);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 813.9421f, 1172.681f, 329.7988f, 1f, -1, 0.25f, 0, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 813.9421f, 1172.6809f, 329.7988f, 1f, -1, 0.25f, 0, 40000f);
 				TASK::TASK_ACHIEVE_HEADING(0, 151.7794f, 0);
 				TASK::TASK_START_SCENARIO_IN_PLACE(0, "WORLD_HUMAN_SMOKING_POT", 0, false);
 			}
@@ -15975,7 +15975,7 @@ void func_444()//Position - 0x147CA
 	func_447(&Local_238, 8);
 	Local_238.f_410 = 0;
 	func_446(&Local_238, 3, 6);
-	Local_238.f_23 = { 1412.324f, -1518.315f, 58.4644f };
+	Local_238.f_23 = { 1412.3242f, -1518.3154f, 58.4644f };
 	Local_238.f_33 = 114.1f;
 	Local_238.f_26 = { Local_286 };
 	Local_238.f_34 = 95.93f;
@@ -16293,7 +16293,7 @@ void func_458()//Position - 0x14DF9
 	PED::REMOVE_RELATIONSHIP_GROUP(iLocal_260);
 	PED::REMOVE_RELATIONSHIP_GROUP(iLocal_259);
 	TASK::REMOVE_WAYPOINT_RECORDING(&cLocal_309);
-	func_251(385.1685f, -1372.719f, 29.8554f, 1, 50f);
+	func_251(385.1685f, -1372.7186f, 29.8554f, 1, 50f);
 	func_461();
 	func_460();
 	func_459();

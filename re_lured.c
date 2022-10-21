@@ -2213,7 +2213,7 @@ int func_56()//Position - 0x2003
 			return 1;
 		}
 	}
-	if (ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), 894.1762f, -1048.294f, 41.828f, 15f, 21.5625f, 10f, false, true, 0))
+	if (ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), 894.1762f, -1048.2943f, 41.828f, 15f, 21.5625f, 10f, false, true, 0))
 	{
 		func_54();
 		SYSTEM::WAIT(0);
@@ -3417,7 +3417,7 @@ void func_91()//Position - 0x38FB
 {
 	if (!PED::IS_PED_INJURED(iLocal_56))
 	{
-		if (ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), 873.9561f, -1050.806f, 33.0066f, 4.75f, 1.9f, 1f, false, true, 0))
+		if (ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), 873.9561f, -1050.8057f, 33.0066f, 4.75f, 1.9f, 1f, false, true, 0))
 		{
 			if (!WEAPON::IS_PED_ARMED(PLAYER::PLAYER_PED_ID(), 6))
 			{
@@ -4346,12 +4346,12 @@ void func_118(var uParam0, int iParam1, int iParam2, char* sParam3, int iParam4,
 
 void func_119()//Position - 0x4B77
 {
-	Local_48 = { 879.8144f, -1047.433f, 32.0067f };
+	Local_48 = { 879.8144f, -1047.4327f, 32.0067f };
 	fLocal_53 = 237.0934f;
-	Local_50 = { 862.9633f, -1049.857f, 28.5362f };
+	Local_50 = { 862.9633f, -1049.8569f, 28.5362f };
 	Local_49 = { 15f, 15f, 15f };
 	Local_51 = { 881.1367f, -1050.706f, 32.0067f };
-	Local_52 = { 876.7977f, -1052.52f, 32.0067f };
+	Local_52 = { 876.7977f, -1052.5198f, 32.0067f };
 }
 
 int func_120()//Position - 0x4BE5
@@ -5507,7 +5507,7 @@ int func_137(struct<3> Param0, int iParam1, bool bParam2, bool bParam3, bool bPa
 		}
 		if (INTERIOR::IS_VALID_INTERIOR(INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID())))
 		{
-			if ((INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(377.153f, -717.567f, 10.0536f) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(320.9934f, 265.2515f, 82.1221f)) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(-1425.564f, -244.3f, 15.8053f))
+			if ((INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(377.153f, -717.567f, 10.0536f) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(320.9934f, 265.2515f, 82.1221f)) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(-1425.5645f, -244.3f, 15.8053f))
 			{
 				return 0;
 			}
@@ -5524,7 +5524,7 @@ int func_137(struct<3> Param0, int iParam1, bool bParam2, bool bParam3, bool bPa
 		{
 			if (iParam1 != 30)
 			{
-				if (SYSTEM::VDIST2(Var1, -61.2745f, -1100.468f, 25.3752f) < 176400f)
+				if (SYSTEM::VDIST2(Var1, -61.2745f, -1100.4675f, 25.3752f) < 176400f)
 				{
 					return 0;
 				}

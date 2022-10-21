@@ -166,7 +166,7 @@ void __EntryFunction__()//Position - 0x0
 					{
 						iLocal_91 = PED::CREATE_PED(26, iLocal_88, Local_89, fLocal_90, true, true);
 						PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_91, true);
-						iLocal_92 = OBJECT::CREATE_OBJECT(joaat("prop_tapeplayer_01"), 704.7615f, 4179.574f, 39.7093f, true, true, false);
+						iLocal_92 = OBJECT::CREATE_OBJECT(joaat("prop_tapeplayer_01"), 704.7615f, 4179.5737f, 39.7093f, true, true, false);
 						ENTITY::SET_ENTITY_HEADING(iLocal_92, (233.8288f + 180f));
 						PED::SET_PED_PROP_INDEX(iLocal_91, 0, 0, 0, false);
 						iLocal_95 = 1;
@@ -239,11 +239,11 @@ void __EntryFunction__()//Position - 0x0
 				{
 					if (iLocal_93 == 1)
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_91, 723.1315f, 4171.957f, 39.7091f, 2f, -1, 1f, 1024, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_91, 723.1315f, 4171.9565f, 39.7091f, 2f, -1, 1f, 1024, 40000f);
 					}
 					else
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_91, 723.1315f, 4171.957f, 39.7091f, 1f, -1, 1f, 1024, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_91, 723.1315f, 4171.9565f, 39.7091f, 1f, -1, 1f, 1024, 40000f);
 					}
 					PED::SET_PED_KEEP_TASK(iLocal_91, true);
 					iLocal_95 = 6;

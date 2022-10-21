@@ -619,7 +619,7 @@ void func_9()//Position - 0x324
 				break;
 			
 			case 5:
-				if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_230.f_4, -484.9218f, -370.1231f, 33.40805f, -517.9089f, -362.7899f, 37.31326f, 28.75f, false, true, 0) && !ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_230.f_4, -472.0588f, -321.036f, 33.35326f, -485.479f, -285.4217f, 37.49232f, 28.75f, false, true, 0))
+				if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_230.f_4, -484.92175f, -370.1231f, 33.408054f, -517.90894f, -362.78995f, 37.31326f, 28.75f, false, true, 0) && !ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_230.f_4, -472.05884f, -321.03604f, 33.353264f, -485.47897f, -285.4217f, 37.492317f, 28.75f, false, true, 0))
 				{
 					if (func_237(&Local_230, 0, 30f))
 					{
@@ -5169,7 +5169,7 @@ void func_164(var uParam0)//Position - 0x57F0
 			else if (uParam0->f_411 == 0)
 			{
 				TASK::TASK_CLIMB_LADDER(0, true);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 813.9421f, 1172.681f, 329.7988f, 1f, -1, 0.25f, 0, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 813.9421f, 1172.6809f, 329.7988f, 1f, -1, 0.25f, 0, 40000f);
 				TASK::TASK_ACHIEVE_HEADING(0, 151.7794f, 0);
 				TASK::TASK_START_SCENARIO_IN_PLACE(0, "WORLD_HUMAN_SMOKING_POT", 0, false);
 			}
@@ -14512,7 +14512,7 @@ void func_414(int iParam0)//Position - 0x11E3E
 	Local_230.f_26 = { 856.3766f, 1288.918f, 357.7924f };
 	Local_230.f_34 = 162.3f;
 	Local_230.f_6 = 1f;
-	Local_230.f_29 = { 810.3334f, 1172.413f, 321.8036f };
+	Local_230.f_29 = { 810.3334f, 1172.4128f, 321.8036f };
 }
 
 void func_415(var uParam0, int iParam1, int iParam2)//Position - 0x11EBC

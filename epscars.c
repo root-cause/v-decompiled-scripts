@@ -259,7 +259,7 @@ void __EntryFunction__()//Position - 0x0
 	fLocal_34 = 140f;
 	fLocal_35 = 180f;
 	iLocal_38 = 3;
-	Local_40 = { -690.938f, 512.2703f, 109.3639f };
+	Local_40 = { -690.93805f, 512.2703f, 109.36385f };
 	iLocal_52 = -1;
 	iLocal_60 = 60000;
 	iLocal_231 = 99;
@@ -279,13 +279,13 @@ void __EntryFunction__()//Position - 0x0
 		func_96();
 	}
 	func_91(6);
-	func_90(&Local_41, joaat("prop_ch2_09c_garage_door"), -689.81f, 510.34f, 109.98f, Local_40, -688.4919f, 507.2549f, 108.9186f, -691.8835f, 516.2689f, 113.4316f, 9.25f, -687.4553f, 507.5179f, 109.3635f, -690.9484f, 506.2783f, 109.3631f);
+	func_90(&Local_41, joaat("prop_ch2_09c_garage_door"), -689.81f, 510.34f, 109.98f, Local_40, -688.4919f, 507.25494f, 108.918564f, -691.8835f, 516.26886f, 113.43157f, 9.25f, -687.45526f, 507.51794f, 109.36351f, -690.94836f, 506.2783f, 109.36312f);
 	func_89(&Local_41, 2);
 	Local_41.f_4 = 3;
 	MISC::CLEAR_AREA_OF_VEHICLES(Local_40, 5f, false, false, false, false, false, false, 0);
-	func_88(&Local_61, -691.9059f, 515.8249f, 108.6139f, -684.0605f, 493.0171f, 110.8504f, 8.25f);
+	func_88(&Local_61, -691.9059f, 515.8249f, 108.61385f, -684.06055f, 493.01712f, 110.850395f, 8.25f);
 	PATHFIND::SET_ROADS_IN_ANGLED_AREA(Local_61[0 /*3*/], Local_61[1 /*3*/], 8.25f, false, false, true);
-	PATHFIND::SET_ROADS_IN_ANGLED_AREA(-683.4503f, 492.9922f, 108.8737f, -688.8357f, 506.9997f, 112.1928f, 11.25f, false, false, true);
+	PATHFIND::SET_ROADS_IN_ANGLED_AREA(-683.4503f, 492.99225f, 108.873665f, -688.8357f, 506.99966f, 112.19278f, 11.25f, false, false, true);
 	func_87(-688.5f, 503.7f, 110.2f, 30f, &Var0, &Var1);
 	iLocal_64 = PED::ADD_SCENARIO_BLOCKING_AREA(Var0, Var1, false, true, true, true);
 	if (func_95(90) == 1)
@@ -2957,7 +2957,7 @@ void func_71()//Position - 0x3349
 	if (!func_81(PLAYER::PLAYER_PED_ID()))
 	{
 	}
-	PATHFIND::SET_ROADS_IN_ANGLED_AREA(-683.4503f, 492.9922f, 108.8737f, -688.8357f, 506.9997f, 112.1928f, 11.25f, false, false, true);
+	PATHFIND::SET_ROADS_IN_ANGLED_AREA(-683.4503f, 492.99225f, 108.873665f, -688.8357f, 506.99966f, 112.19278f, 11.25f, false, false, true);
 	func_87(-688.5f, 503.7f, 110.2f, 30f, &Var0, &Var1);
 	iLocal_64 = PED::ADD_SCENARIO_BLOCKING_AREA(Var0, Var1, false, true, true, true);
 	iLocal_51 = Global_113386.f_10049.f_103;
@@ -2987,7 +2987,7 @@ void func_72()//Position - 0x33ED
 	func_74();
 	func_73(&Local_41);
 	PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_64, false);
-	PATHFIND::SET_ROADS_BACK_TO_ORIGINAL_IN_ANGLED_AREA(-683.4503f, 492.9922f, 108.8737f, -688.8357f, 506.9997f, 112.1928f, 11.25f, 1);
+	PATHFIND::SET_ROADS_BACK_TO_ORIGINAL_IN_ANGLED_AREA(-683.4503f, 492.99225f, 108.873665f, -688.8357f, 506.99966f, 112.19278f, 11.25f, 1);
 	PATHFIND::SET_ROADS_BACK_TO_ORIGINAL_IN_ANGLED_AREA(Local_61[0 /*3*/], Local_61[1 /*3*/], 8.25f, 1);
 }
 
@@ -3289,7 +3289,7 @@ void func_96()//Position - 0x39AA
 		func_98(90, 1);
 		func_97(6);
 	}
-	PATHFIND::SET_ROADS_BACK_TO_ORIGINAL_IN_ANGLED_AREA(-683.4503f, 492.9922f, 108.8737f, -688.8357f, 506.9997f, 112.1928f, 11.25f, 1);
+	PATHFIND::SET_ROADS_BACK_TO_ORIGINAL_IN_ANGLED_AREA(-683.4503f, 492.99225f, 108.873665f, -688.8357f, 506.99966f, 112.19278f, 11.25f, 1);
 	PATHFIND::SET_ROADS_BACK_TO_ORIGINAL_IN_ANGLED_AREA(Local_61[0 /*3*/], Local_61[1 /*3*/], 8.25f, 1);
 	PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_64, false);
 	if (iLocal_230 != 0)

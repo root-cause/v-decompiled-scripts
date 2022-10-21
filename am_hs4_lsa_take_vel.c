@@ -47171,7 +47171,7 @@ void func_286(var uParam0)//Position - 0x33132
 	NETWORK::NETWORK_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(32, false, -1);
 	func_289(&uLocal_93, joaat("velum2"), "Plane");
 	func_54(&uLocal_93, 1);
-	func_287(&uLocal_93, -1581.69f, -3023.005f, 15.8275f, 0.739f, 0.0046f, -100.8783f, "HS4_LSA_TAKE_VEL", 0, 1, uParam0->f_4, 0);
+	func_287(&uLocal_93, -1581.6901f, -3023.0054f, 15.8275f, 0.739f, 0.0046f, -100.8783f, "HS4_LSA_TAKE_VEL", 0, 1, uParam0->f_4, 0);
 }
 
 void func_287(var uParam0, struct<3> Param1, struct<3> Param2, char* sParam3, int iParam4, int iParam5, var uParam6, int iParam7)//Position - 0x33186

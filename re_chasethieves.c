@@ -35423,8 +35423,8 @@ int func_321()//Position - 0x25927
 	
 	if (bLocal_153 == 1)
 	{
-		Var0 = { 18.22177f, -141.8601f, 65.03339f };
-		Var1 = { 212.9326f, -210.4915f, 46.54869f };
+		Var0 = { 18.221767f, -141.86014f, 65.03339f };
+		Var1 = { 212.93256f, -210.49147f, 46.54869f };
 		fVar2 = 167.5f;
 		if ((((ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), Var0, Var1, fVar2, false, true, 0) || ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), Local_154, 20f, 20f, 20f, false, true, 0)) || MISC::IS_BULLET_IN_ANGLED_AREA(Var0, Var1, fVar2, true)) || MISC::IS_PROJECTILE_TYPE_IN_ANGLED_AREA(Var0, Var1, fVar2, joaat("WEAPON_RPG"), false)) || PED::IS_PED_INJURED(iLocal_78))
 		{
@@ -35433,8 +35433,8 @@ int func_321()//Position - 0x25927
 	}
 	else if (bLocal_153 == 2)
 	{
-		Var0 = { 445.474f, -851.1226f, 26.59859f };
-		Var1 = { 211.7756f, -850.9274f, 39.31448f };
+		Var0 = { 445.47403f, -851.12256f, 26.59859f };
+		Var1 = { 211.7756f, -850.92737f, 39.314484f };
 		fVar2 = 100f;
 		if ((((ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), Var0, Var1, fVar2, false, true, 0) || ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), Local_155, 20f, 20f, 20f, false, true, 0)) || MISC::IS_BULLET_IN_ANGLED_AREA(Var0, Var1, fVar2, true)) || MISC::IS_PROJECTILE_TYPE_IN_ANGLED_AREA(Var0, Var1, fVar2, joaat("WEAPON_RPG"), false)) || PED::IS_PED_INJURED(iLocal_78))
 		{
@@ -35443,8 +35443,8 @@ int func_321()//Position - 0x25927
 	}
 	else if (bLocal_153 == 3)
 	{
-		Var0 = { 1665.565f, 4932.071f, 51.11494f };
-		Var1 = { 1695.932f, 4731.498f, 34.67516f };
+		Var0 = { 1665.5652f, 4932.071f, 51.114944f };
+		Var1 = { 1695.9321f, 4731.4976f, 34.67516f };
 		fVar2 = 96.75f;
 		if ((((ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), Var0, Var1, fVar2, false, true, 0) || ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), Local_131, 20f, 20f, 20f, false, true, 0)) || MISC::IS_BULLET_IN_ANGLED_AREA(Var0, Var1, fVar2, true)) || MISC::IS_PROJECTILE_TYPE_IN_ANGLED_AREA(Var0, Var1, fVar2, joaat("WEAPON_RPG"), false)) || PED::IS_PED_INJURED(iLocal_78))
 		{
@@ -35453,8 +35453,8 @@ int func_321()//Position - 0x25927
 	}
 	else if (bLocal_153 == 4)
 	{
-		Var0 = { 1322.306f, 2690.29f, 46.55696f };
-		Var1 = { 1092.25f, 2690.501f, 31.29549f };
+		Var0 = { 1322.3059f, 2690.29f, 46.556957f };
+		Var1 = { 1092.2505f, 2690.5012f, 31.29549f };
 		fVar2 = 197.25f;
 		if ((((ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), Var0, Var1, fVar2, false, true, 0) || ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), Local_131, 20f, 20f, 20f, false, true, 0)) || MISC::IS_BULLET_IN_ANGLED_AREA(Var0, Var1, fVar2, true)) || MISC::IS_PROJECTILE_TYPE_IN_ANGLED_AREA(Var0, Var1, fVar2, joaat("WEAPON_RPG"), false)) || PED::IS_PED_INJURED(iLocal_78))
 		{
@@ -37035,12 +37035,12 @@ void func_351()//Position - 0x28394
 		fLocal_82 = 194.6499f;
 		Local_84 = { 1660.545f, 4864.651f, 40.154f };
 		fLocal_85 = 194.6499f;
-		Local_87 = { 1665.747f, 4824.582f, 40.896f };
+		Local_87 = { 1665.7468f, 4824.582f, 40.896f };
 		fLocal_88 = 203.4643f;
 		Local_173 = { 1661.568f, 4827.771f, 41.0597f };
 		Local_174 = { 0f, 0f, 30f };
-		Local_131 = { 1663.009f, 4827.769f, 41.1046f };
-		Local_134 = { 1653.974f, 4826.029f, 41.0037f };
+		Local_131 = { 1663.0087f, 4827.769f, 41.1046f };
+		Local_134 = { 1653.9741f, 4826.0293f, 41.0037f };
 		fLocal_135 = 277.9738f;
 		iLocal_164 = joaat("G_M_Y_Lost_02");
 		iLocal_165 = joaat("S_M_Y_BusBoy_01");
@@ -37057,14 +37057,14 @@ void func_351()//Position - 0x28394
 	else if (bLocal_153 == 4)
 	{
 		fLocal_82 = 84.7987f;
-		Local_84 = { 1218.718f, 2715.338f, 37.0041f };
+		Local_84 = { 1218.718f, 2715.3376f, 37.0041f };
 		fLocal_85 = 148.661f;
-		Local_87 = { 1207.095f, 2694.214f, 36.7963f };
+		Local_87 = { 1207.0947f, 2694.214f, 36.7963f };
 		fLocal_88 = 226.0923f;
-		Local_131 = { 1213.264f, 2690.394f, 36.5998f };
-		Local_134 = { 1207.287f, 2706.879f, 37.0047f };
+		Local_131 = { 1213.2637f, 2690.3936f, 36.5998f };
+		Local_134 = { 1207.2872f, 2706.8787f, 37.0047f };
 		fLocal_135 = 179.416f;
-		Local_173 = { 1201.656f, 2696.762f, 36.9226f };
+		Local_173 = { 1201.656f, 2696.7625f, 36.9226f };
 		Local_174 = { 0f, 0f, 42.7858f };
 		iLocal_164 = joaat("G_M_Y_Lost_02");
 		iLocal_165 = joaat("S_M_Y_BusBoy_01");
@@ -37427,7 +37427,7 @@ int func_359(struct<3> Param0, int iParam1, bool bParam2, bool bParam3, bool bPa
 		}
 		if (INTERIOR::IS_VALID_INTERIOR(INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID())))
 		{
-			if ((INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(377.153f, -717.567f, 10.0536f) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(320.9934f, 265.2515f, 82.1221f)) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(-1425.564f, -244.3f, 15.8053f))
+			if ((INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(377.153f, -717.567f, 10.0536f) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(320.9934f, 265.2515f, 82.1221f)) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(-1425.5645f, -244.3f, 15.8053f))
 			{
 				return 0;
 			}
@@ -37444,7 +37444,7 @@ int func_359(struct<3> Param0, int iParam1, bool bParam2, bool bParam3, bool bPa
 		{
 			if (iParam1 != 30)
 			{
-				if (SYSTEM::VDIST2(Var1, -61.2745f, -1100.468f, 25.3752f) < 176400f)
+				if (SYSTEM::VDIST2(Var1, -61.2745f, -1100.4675f, 25.3752f) < 176400f)
 				{
 					return 0;
 				}

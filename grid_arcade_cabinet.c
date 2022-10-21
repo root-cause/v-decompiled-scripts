@@ -3185,7 +3185,7 @@ void func_102()//Position - 0x3742
 	int iVar3;
 	
 	func_124();
-	func_123("MPArcadeCabinetGridHUD", "lbd", 0.5f, 0.5f, 0.6604167f, 0.9481481f, 0f, Local_135.f_107.f_17);
+	func_123("MPArcadeCabinetGridHUD", "lbd", 0.5f, 0.5f, 0.66041666f, 0.94814813f, 0f, Local_135.f_107.f_17);
 	HUD::SET_TEXT_SCALE(1f, 1f);
 	HUD::SET_TEXT_COLOUR(0, 0, 0, 255);
 	HUD::SET_TEXT_CENTRE(true);
@@ -3226,7 +3226,7 @@ void func_102()//Position - 0x3742
 		HUD::SET_TEXT_SCALE(1f, 1f);
 		HUD::SET_TEXT_COLOUR(0, 0, 0, iVar3);
 		HUD::SET_TEXT_RIGHT_JUSTIFY(true);
-		HUD::SET_TEXT_WRAP(func_122(0f), func_122((0.4135417f + 0.001041667f)));
+		HUD::SET_TEXT_WRAP(func_122(0f), func_122((0.41354167f + 0.001041667f)));
 		HUD::SET_TEXT_FONT(7);
 		HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("STRING");
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(func_117(uVar0[0]));
@@ -3234,7 +3234,7 @@ void func_102()//Position - 0x3742
 		HUD::SET_TEXT_SCALE(1f, 1f);
 		HUD::SET_TEXT_COLOUR(Local_135.f_107[uVar0[3] /*4*/], Local_135.f_107[uVar0[3] /*4*/].f_1, Local_135.f_107[uVar0[3] /*4*/].f_2, iVar3);
 		HUD::SET_TEXT_RIGHT_JUSTIFY(true);
-		HUD::SET_TEXT_WRAP(func_122(0f), func_122(0.4135417f));
+		HUD::SET_TEXT_WRAP(func_122(0f), func_122(0.41354167f));
 		HUD::SET_TEXT_FONT(7);
 		HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("STRING");
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(func_117(uVar0[0]));
@@ -3242,7 +3242,7 @@ void func_102()//Position - 0x3742
 		HUD::SET_TEXT_SCALE(1f, 1f);
 		HUD::SET_TEXT_COLOUR(0, 0, 0, iVar3);
 		HUD::SET_TEXT_RIGHT_JUSTIFY(true);
-		HUD::SET_TEXT_WRAP(func_122(0f), func_122((0.4411458f + 0.001041667f)));
+		HUD::SET_TEXT_WRAP(func_122(0f), func_122((0.44114584f + 0.001041667f)));
 		HUD::SET_TEXT_FONT(7);
 		HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("STRING");
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(func_117(uVar0[1]));
@@ -3250,7 +3250,7 @@ void func_102()//Position - 0x3742
 		HUD::SET_TEXT_SCALE(1f, 1f);
 		HUD::SET_TEXT_COLOUR(Local_135.f_107[uVar0[3] /*4*/], Local_135.f_107[uVar0[3] /*4*/].f_1, Local_135.f_107[uVar0[3] /*4*/].f_2, iVar3);
 		HUD::SET_TEXT_RIGHT_JUSTIFY(true);
-		HUD::SET_TEXT_WRAP(func_122(0f), func_122(0.4411458f));
+		HUD::SET_TEXT_WRAP(func_122(0f), func_122(0.44114584f));
 		HUD::SET_TEXT_FONT(7);
 		HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("STRING");
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(func_117(uVar0[1]));
@@ -4146,13 +4146,13 @@ struct<2> func_138(int iParam0)//Position - 0x4E7A
 	switch (iParam0)
 	{
 		case 0:
-			return func_108(0.2552083f, 0.4564815f);
+			return func_108(0.25520834f, 0.4564815f);
 		
 		case 1:
-			return func_108(0.4182292f, 0.4564815f);
+			return func_108(0.41822916f, 0.4564815f);
 		
 		case 2:
-			return func_108(0.5817708f, 0.4564815f);
+			return func_108(0.58177084f, 0.4564815f);
 		
 		case 3:
 			return func_108(0.7447917f, 0.4564815f);
@@ -4183,7 +4183,7 @@ void func_139(int iParam0, bool bParam1)//Position - 0x4EF3
 			Var2.f_3 = SYSTEM::ROUND(MISC::TAN((SYSTEM::TO_FLOAT(MISC::GET_GAME_TIMER()) * 0.25f))) * 255;
 		}
 		Var3 = { func_143(iParam0) };
-		func_123("MPArcadeCabinetGridHUD", "gang_lobby_player_highlight", Var3.f_0, Var3.f_1, 0.1625f, 0.05185185f, 0f, Var2);
+		func_123("MPArcadeCabinetGridHUD", "gang_lobby_player_highlight", Var3.f_0, Var3.f_1, 0.1625f, 0.051851854f, 0f, Var2);
 	}
 	if (Local_135.f_149[iParam0] != -1)
 	{
@@ -4269,7 +4269,7 @@ float func_140(float fParam0, float fParam1, float fParam2, int iParam3)//Positi
 		
 		case 3:
 		case 8:
-			fParam2 = ((-SYSTEM::COS(func_141((3.141593f * fParam2))) / 2f) + 0.5f);
+			fParam2 = ((-SYSTEM::COS(func_141((3.1415927f * fParam2))) / 2f) + 0.5f);
 			break;
 		
 		case 4:
@@ -4333,16 +4333,16 @@ struct<2> func_143(int iParam0)//Position - 0x532B
 	switch (iParam0)
 	{
 		case 0:
-			return func_108(0.2552083f, 0.1435185f);
+			return func_108(0.25520834f, 0.14351852f);
 		
 		case 1:
-			return func_108(0.4182292f, 0.1435185f);
+			return func_108(0.41822916f, 0.14351852f);
 		
 		case 2:
-			return func_108(0.5817708f, 0.1435185f);
+			return func_108(0.58177084f, 0.14351852f);
 		
 		case 3:
-			return func_108(0.7447917f, 0.1435185f);
+			return func_108(0.7447917f, 0.14351852f);
 		
 		default:
 	}
@@ -4950,11 +4950,11 @@ void func_175()//Position - 0x5DD2
 		func_177(iVar0, Local_135.f_149[iVar0]);
 		iVar0++;
 	}
-	fVar1 = ((SYSTEM::TO_FLOAT((Local_136.f_138 - 1)) / 2f) * -0.01354133f);
+	fVar1 = ((SYSTEM::TO_FLOAT((Local_136.f_138 - 1)) / 2f) * -0.013541334f);
 	iVar0 = 0;
 	while (iVar0 <= (Local_136.f_138 - 1))
 	{
-		func_123("MPArcadeCabinetGridHUD", "hud_rounds", ((fVar1 + 0.5f) + (0.01354133f * IntToFloat(iVar0))), (((0.069444f + -0.00162963f) + (0.02407426f / 2f)) + 0.00462963f), 0.01354133f, 0.02407426f, 0f, func_176(iVar0));
+		func_123("MPArcadeCabinetGridHUD", "hud_rounds", ((fVar1 + 0.5f) + (0.013541333f * IntToFloat(iVar0))), (((0.069444f + -0.00162963f) + (0.024074258f / 2f)) + 0.00462963f), 0.013541333f, 0.024074258f, 0f, func_176(iVar0));
 		iVar0++;
 	}
 	iVar2 = 0;
@@ -5063,11 +5063,11 @@ void func_177(int iParam0, int iParam1)//Position - 0x6036
 		{
 			if (iVar0 >= Local_173[iParam1 /*9*/].f_2 && Local_135.f_140 == 7)
 			{
-				func_123("MPArcadeCabinetGridHUD", "hud_health", (((fVar1 + 0.035417f) + (0.00625f * IntToFloat(iVar0))) + (0.00625f / 2f)), ((0.069444f + 0.01203733f) + (0.059259f / 2f)), 0.00625f, 0.059259f, 0f, Local_135.f_107.f_29);
+				func_123("MPArcadeCabinetGridHUD", "hud_health", (((fVar1 + 0.035417f) + (0.00625f * IntToFloat(iVar0))) + (0.00625f / 2f)), ((0.069444f + 0.012037333f) + (0.059259f / 2f)), 0.00625f, 0.059259f, 0f, Local_135.f_107.f_29);
 			}
 			else
 			{
-				func_123("MPArcadeCabinetGridHUD", "hud_health", (((fVar1 + 0.035417f) + (0.00625f * IntToFloat(iVar0))) + (0.00625f / 2f)), ((0.069444f + 0.01203733f) + (0.059259f / 2f)), 0.00625f, 0.059259f, 0f, func_178(Local_135.f_107[iParam0 /*4*/], (SYSTEM::TO_FLOAT(iVar0) / 7f)));
+				func_123("MPArcadeCabinetGridHUD", "hud_health", (((fVar1 + 0.035417f) + (0.00625f * IntToFloat(iVar0))) + (0.00625f / 2f)), ((0.069444f + 0.012037333f) + (0.059259f / 2f)), 0.00625f, 0.059259f, 0f, func_178(Local_135.f_107[iParam0 /*4*/], (SYSTEM::TO_FLOAT(iVar0) / 7f)));
 			}
 			iVar0++;
 		}
@@ -5170,14 +5170,14 @@ void func_180()//Position - 0x6415
 	{
 		Var5 = { Local_135.f_107.f_17 };
 		Var5.f_3 = iVar3;
-		func_123("MPArcadeCabinetGridHUD", "text_bkgd_blur", Var2.f_0, Var2.f_1, 0.3125f, 0.1481481f, 0f, Var5);
+		func_123("MPArcadeCabinetGridHUD", "text_bkgd_blur", Var2.f_0, Var2.f_1, 0.3125f, 0.14814815f, 0f, Var5);
 	}
-	func_123("MPArcadeCabinetGridHUD", "text_winner", Var2.f_0, Var2.f_1, 0.3125f, 0.1481481f, 0f, Local_135.f_107.f_17);
+	func_123("MPArcadeCabinetGridHUD", "text_winner", Var2.f_0, Var2.f_1, 0.3125f, 0.14814815f, 0f, Local_135.f_107.f_17);
 	if (bVar1)
 	{
 		StringCopy(&Var6, "MPArcadeCabinetGridPlayer", 64);
 		StringConCat(&Var6, Local_135.f_422[Local_173[Local_136.f_130 /*9*/].f_6], 64);
-		func_123(&Var6, &cVar4, Var2.f_0, (Var2.f_1 + 0.07407407f), 0.3125f, 0.1481481f, 0f, Local_135.f_107[Local_173[Local_136.f_130 /*9*/].f_6 /*4*/]);
+		func_123(&Var6, &cVar4, Var2.f_0, (Var2.f_1 + 0.074074075f), 0.3125f, 0.14814815f, 0f, Local_135.f_107[Local_173[Local_136.f_130 /*9*/].f_6 /*4*/]);
 	}
 }
 
@@ -5224,7 +5224,7 @@ void func_182()//Position - 0x662A
 					if (func_81(&(Local_136.f_85[iVar2 /*11*/][1 /*5*/]), iVar3))
 					{
 						Var5 = { func_185(func_186(func_187(iVar3), func_187(iVar4)), 2f) };
-						func_123("MPArcadeCabinetGrid", "player_trail", Var5.f_0, Var5.f_1, 0.05208333f, 0.02962963f, 0f, Local_135.f_107[iVar2 /*4*/]);
+						func_123("MPArcadeCabinetGrid", "player_trail", Var5.f_0, Var5.f_1, 0.052083332f, 0.02962963f, 0f, Local_135.f_107[iVar2 /*4*/]);
 					}
 					else
 					{
@@ -5241,7 +5241,7 @@ void func_182()//Position - 0x662A
 					if (func_81(&(Local_136.f_85[iVar2 /*11*/][0 /*5*/]), iVar3))
 					{
 						Var7 = { func_185(func_186(func_187(iVar3), func_187(iVar6)), 2f) };
-						func_123("MPArcadeCabinetGrid", "player_trail", Var7.f_0, Var7.f_1, 0.05208333f, 0.02962963f, 90f, Local_135.f_107[iVar2 /*4*/]);
+						func_123("MPArcadeCabinetGrid", "player_trail", Var7.f_0, Var7.f_1, 0.052083332f, 0.02962963f, 90f, Local_135.f_107[iVar2 /*4*/]);
 					}
 					else
 					{
@@ -5296,7 +5296,7 @@ void func_182()//Position - 0x662A
 					else
 					{
 						Var16 = { func_185(func_186(func_187(Local_174[iVar13 /*16*/].f_1), func_187(Local_174[iVar13 /*16*/])), 2f) };
-						func_123("MPArcadeCabinetGrid", "player_trail", Var16.f_0, Var16.f_1, 0.05208333f, 0.02962963f, 0f, Var12);
+						func_123("MPArcadeCabinetGrid", "player_trail", Var16.f_0, Var16.f_1, 0.052083332f, 0.02962963f, 0f, Var12);
 						Jump @804; //curOff = 660
 						if (iVar11 != iVar9)
 						{
@@ -5314,7 +5314,7 @@ void func_182()//Position - 0x662A
 							else
 							{
 								Var17 = { func_185(func_186(func_187(Local_174[iVar13 /*16*/].f_1), func_187(Local_174[iVar13 /*16*/])), 2f) };
-								func_123("MPArcadeCabinetGrid", "player_trail", Var17.f_0, Var17.f_1, 0.05208333f, 0.02962963f, 90f, Var12);
+								func_123("MPArcadeCabinetGrid", "player_trail", Var17.f_0, Var17.f_1, 0.052083332f, 0.02962963f, 90f, Var12);
 							}
 						}
 					}
@@ -5357,7 +5357,7 @@ struct<2> func_187(int iParam0)//Position - 0x69D9
 	struct<2> Var2;
 	
 	func_184(iParam0, &iVar0, &iVar1);
-	Var2.f_0 = (0.1380207f + (0.0520835f * IntToFloat(iVar0 + 1)));
+	Var2.f_0 = (0.13802066f + (0.0520835f * IntToFloat(iVar0 + 1)));
 	Var2.f_1 = (0.06851837f + (0.0925925f * IntToFloat(iVar1 + 1)));
 	return Var2;
 }
@@ -5487,7 +5487,7 @@ struct<2> func_191(int iParam0, int iParam1)//Position - 0x6DA7
 {
 	struct<2> Var0;
 	
-	Var0.f_0 = (0.1380207f + (0.1041665f * IntToFloat(iParam0 + 1)));
+	Var0.f_0 = (0.13802066f + (0.1041665f * IntToFloat(iParam0 + 1)));
 	Var0.f_1 = (0.06851837f + (0.1851855f * IntToFloat(iParam1 + 1)));
 	return Var0;
 }
@@ -5519,7 +5519,7 @@ void func_193()//Position - 0x6DFF
 	}
 	func_181(Local_135.f_107[Local_173[Local_136.f_131[(Local_136.f_137 - 1)] /*9*/].f_6 /*4*/], 102);
 	Var0 = { func_108(0.5f, (0.5f + -0.016f)) };
-	func_123("MPArcadeCabinetGridHUD", "text_round_winner", 0.5f, (0.5f + -0.016f), 0.3125f, 0.2407407f, 0f, Local_135.f_107.f_17);
+	func_123("MPArcadeCabinetGridHUD", "text_round_winner", 0.5f, (0.5f + -0.016f), 0.3125f, 0.24074075f, 0f, Local_135.f_107.f_17);
 	StringCopy(&cVar1, "text_gang_", 64);
 	StringConCat(&cVar1, Local_135.f_422[Local_173[Local_136.f_131[(Local_136.f_137 - 1)] /*9*/].f_6], 64);
 	StringConCat(&cVar1, "_", 64);
@@ -5538,7 +5538,7 @@ void func_193()//Position - 0x6DFF
 	}
 	StringCopy(&Var2, "MPArcadeCabinetGridPlayer", 64);
 	StringConCat(&Var2, Local_135.f_422[Local_173[Local_136.f_131[(Local_136.f_137 - 1)] /*9*/].f_6], 64);
-	func_123(&Var2, &cVar1, Var0.f_0, ((Var0.f_1 + 0.07407407f) + ((0.2407407f - 0.1481481f) / 2f)), 0.3125f, 0.1481481f, 0f, Local_135.f_107[Local_173[Local_136.f_131[(Local_136.f_137 - 1)] /*9*/].f_6 /*4*/]);
+	func_123(&Var2, &cVar1, Var0.f_0, ((Var0.f_1 + 0.074074075f) + ((0.24074075f - 0.14814815f) / 2f)), 0.3125f, 0.14814815f, 0f, Local_135.f_107[Local_173[Local_136.f_131[(Local_136.f_137 - 1)] /*9*/].f_6 /*4*/]);
 }
 
 void func_194()//Position - 0x6F75
@@ -5686,8 +5686,8 @@ void func_197()//Position - 0x7202
 		return;
 	}
 	Var0 = { func_108(0.5f, (0.5f + -0.005f)) };
-	func_123("MPArcadeCabinetGridHUD", "TEXT_SUDDEN", Var0.f_0, Var0.f_1, 0.2666667f, 0.1481481f, 0f, Local_135.f_107.f_17);
-	func_123("MPArcadeCabinetGridHUD", "TEXT_DEATH", Var0.f_0, (Var0.f_1 + 0.07407407f), 0.2666667f, 0.1148148f, 0f, Local_135.f_107.f_17);
+	func_123("MPArcadeCabinetGridHUD", "TEXT_SUDDEN", Var0.f_0, Var0.f_1, 0.26666668f, 0.14814815f, 0f, Local_135.f_107.f_17);
+	func_123("MPArcadeCabinetGridHUD", "TEXT_DEATH", Var0.f_0, (Var0.f_1 + 0.074074075f), 0.26666668f, 0.11481482f, 0f, Local_135.f_107.f_17);
 }
 
 void func_198()//Position - 0x729F
@@ -5714,7 +5714,7 @@ void func_198()//Position - 0x729F
 		}
 		fVar1 = (SYSTEM::TO_FLOAT(iVar0) / (SYSTEM::TO_FLOAT(-1500) / 3.5f));
 		func_181(Local_135.f_107.f_25, SYSTEM::ROUND(func_140(153f, 0f, fVar1, 1)));
-		func_123("MPArcadeCabinetGridHUD", "text_fight", 0.5f, (0.5f + -0.005f), 0.2666667f, 0.1481481f, 0f, Local_135.f_107.f_17);
+		func_123("MPArcadeCabinetGridHUD", "text_fight", 0.5f, (0.5f + -0.005f), 0.26666668f, 0.14814815f, 0f, Local_135.f_107.f_17);
 		return;
 	}
 	func_181(Local_135.f_107.f_25, 153);
@@ -5725,7 +5725,7 @@ void func_198()//Position - 0x729F
 			func_133("Frontend_3_2_1");
 			MISC::SET_BIT(&(Local_135.f_429), 3);
 		}
-		func_123("MPArcadeCabinetGridHUD", "text_1", 0.5f, (0.5f + -0.005f), 0.06666667f, 0.1481481f, 0f, Local_135.f_107.f_17);
+		func_123("MPArcadeCabinetGridHUD", "text_1", 0.5f, (0.5f + -0.005f), 0.06666667f, 0.14814815f, 0f, Local_135.f_107.f_17);
 		return;
 	}
 	if (iVar0 <= 2000)
@@ -5735,7 +5735,7 @@ void func_198()//Position - 0x729F
 			func_133("Frontend_3_2_1");
 			MISC::SET_BIT(&(Local_135.f_429), 2);
 		}
-		func_123("MPArcadeCabinetGridHUD", "text_2", 0.5f, (0.5f + -0.005f), 0.06666667f, 0.1481481f, 0f, Local_135.f_107.f_17);
+		func_123("MPArcadeCabinetGridHUD", "text_2", 0.5f, (0.5f + -0.005f), 0.06666667f, 0.14814815f, 0f, Local_135.f_107.f_17);
 		return;
 	}
 	if (iVar0 <= 3000)
@@ -5745,7 +5745,7 @@ void func_198()//Position - 0x729F
 			func_133("Frontend_3_2_1");
 			MISC::SET_BIT(&(Local_135.f_429), 1);
 		}
-		func_123("MPArcadeCabinetGridHUD", "text_3", 0.5f, (0.5f + -0.005f), 0.06666667f, 0.1481481f, 0f, Local_135.f_107.f_17);
+		func_123("MPArcadeCabinetGridHUD", "text_3", 0.5f, (0.5f + -0.005f), 0.06666667f, 0.14814815f, 0f, Local_135.f_107.f_17);
 		return;
 	}
 	if (iVar0 <= 4500)
@@ -5757,7 +5757,7 @@ void func_198()//Position - 0x729F
 		}
 		StringCopy(&Var2, "text_round_", 64);
 		StringIntConCat(&Var2, Local_136.f_137 + 1, 64);
-		func_123("MPArcadeCabinetGridHUD", &Var2, 0.5f, (0.5f + -0.005f), 0.3125f, 0.1481481f, 0f, Local_135.f_107.f_17);
+		func_123("MPArcadeCabinetGridHUD", &Var2, 0.5f, (0.5f + -0.005f), 0.3125f, 0.14814815f, 0f, Local_135.f_107.f_17);
 		return;
 	}
 }
@@ -5787,22 +5787,22 @@ void func_199()//Position - 0x74CC
 	{
 		return;
 	}
-	fVar3 = (0.237037f / 2f);
+	fVar3 = (0.23703703f / 2f);
 	iVar2 = 0;
 	while (iVar2 <= 3)
 	{
-		func_123("MPArcadeCabinetGrid", "damage_v", 0.176f, fVar3, 0.03333333f, 0.237037f, 180f, Local_135.f_107.f_29);
-		func_123("MPArcadeCabinetGrid", "damage_v", (1f - 0.173f), fVar3, 0.03333333f, 0.237037f, 0f, Local_135.f_107.f_29);
-		fVar3 = (fVar3 + 0.237037f);
+		func_123("MPArcadeCabinetGrid", "damage_v", 0.176f, fVar3, 0.03333333f, 0.23703703f, 180f, Local_135.f_107.f_29);
+		func_123("MPArcadeCabinetGrid", "damage_v", (1f - 0.173f), fVar3, 0.03333333f, 0.23703703f, 0f, Local_135.f_107.f_29);
+		fVar3 = (fVar3 + 0.23703703f);
 		iVar2++;
 	}
-	fVar4 = (0.1333333f / 2f);
+	fVar4 = (0.13333334f / 2f);
 	iVar2 = 0;
 	while (iVar2 <= 6)
 	{
-		func_123("MPArcadeCabinetGrid", "damage_h", fVar4, 0.154f, 0.1333333f, 0.05925926f, 0f, Local_135.f_107.f_29);
-		func_123("MPArcadeCabinetGrid", "damage_h", fVar4, (1f - 0.09f), 0.1333333f, 0.05925926f, 180f, Local_135.f_107.f_29);
-		fVar4 = (fVar4 + 0.1333333f);
+		func_123("MPArcadeCabinetGrid", "damage_h", fVar4, 0.154f, 0.13333334f, 0.05925926f, 0f, Local_135.f_107.f_29);
+		func_123("MPArcadeCabinetGrid", "damage_h", fVar4, (1f - 0.09f), 0.13333334f, 0.05925926f, 180f, Local_135.f_107.f_29);
+		fVar4 = (fVar4 + 0.13333334f);
 		iVar2++;
 	}
 }
@@ -5837,7 +5837,7 @@ void func_200()//Position - 0x7618
 				func_133("Frontend_Text_Appear_Generic");
 			}
 			func_181(Local_135.f_107.f_25, 153);
-			func_123("MPArcadeCabinetGridHUD", "text_ready", 0.5f, (0.5f + -0.005f), 0.3125f, 0.1481481f, 0f, Local_135.f_107.f_17);
+			func_123("MPArcadeCabinetGridHUD", "text_ready", 0.5f, (0.5f + -0.005f), 0.3125f, 0.14814815f, 0f, Local_135.f_107.f_17);
 		}
 	}
 	else
@@ -5863,14 +5863,14 @@ void func_200()//Position - 0x7618
 			MISC::SET_BIT(&(Local_135.f_429), 8);
 			func_133("Frontend_GO");
 		}
-		func_123("MPArcadeCabinetGridHUD", "text_fight", 0.5f, (0.5f + -0.005f), 0.2666667f, 0.1481481f, 0f, Local_135.f_107.f_17);
+		func_123("MPArcadeCabinetGridHUD", "text_fight", 0.5f, (0.5f + -0.005f), 0.26666668f, 0.14814815f, 0f, Local_135.f_107.f_17);
 	}
 }
 
 void func_201()//Position - 0x779A
 {
 	func_181(Local_135.f_107.f_29, 102);
-	func_123("MPArcadeCabinetGridHUD", "text_wasted", 0.5f, (0.5f + -0.005f), 0.3125f, 0.1481481f, 0f, Local_135.f_107.f_29);
+	func_123("MPArcadeCabinetGridHUD", "text_wasted", 0.5f, (0.5f + -0.005f), 0.3125f, 0.14814815f, 0f, Local_135.f_107.f_29);
 }
 
 void func_202()//Position - 0x77DE
@@ -5941,10 +5941,10 @@ struct<2> func_205(int iParam0)//Position - 0x78E3
 			return func_108(0.03333333f, 0.05925926f);
 		
 		case 1:
-			return func_108(0.1145833f, 0.2037037f);
+			return func_108(0.114583336f, 0.2037037f);
 		
 		case 2:
-			return func_108(0.1145833f, 0.2037037f);
+			return func_108(0.114583336f, 0.2037037f);
 		
 		default:
 	}
@@ -6077,22 +6077,22 @@ void func_210(int iParam0)//Position - 0x7C23
 	if (Local_136.f_148[iParam0 /*4*/].f_2 == 1)
 	{
 		Var2 = { func_187(func_71(iVar0, 0)) };
-		func_123("MPArcadeCabinetGridHUD", "vehicle_alert", Var2.f_0, (Var2.f_1 + -0.011f), 0.02083333f, 0.01851852f, 180f, func_212(Local_136.f_148[iParam0 /*4*/].f_3));
+		func_123("MPArcadeCabinetGridHUD", "vehicle_alert", Var2.f_0, (Var2.f_1 + -0.011f), 0.020833332f, 0.018518519f, 180f, func_212(Local_136.f_148[iParam0 /*4*/].f_3));
 	}
 	else if (Local_136.f_148[iParam0 /*4*/].f_2 == 0)
 	{
 		Var2 = { func_187(func_71(iVar0, 8)) };
-		func_123("MPArcadeCabinetGridHUD", "vehicle_alert", Var2.f_0, (Var2.f_1 + 0.023f), 0.02083333f, 0.01851852f, 0f, func_212(Local_136.f_148[iParam0 /*4*/].f_3));
+		func_123("MPArcadeCabinetGridHUD", "vehicle_alert", Var2.f_0, (Var2.f_1 + 0.023f), 0.020833332f, 0.018518519f, 0f, func_212(Local_136.f_148[iParam0 /*4*/].f_3));
 	}
 	else if (Local_136.f_148[iParam0 /*4*/].f_2 == 3)
 	{
 		Var2 = { func_187(func_71(0, iVar1)) };
-		func_123("MPArcadeCabinetGridHUD", "vehicle_alert", (Var2.f_0 + func_211(iVar1, 1)), Var2.f_1, 0.02083333f, 0.01851852f, 90f, func_212(Local_136.f_148[iParam0 /*4*/].f_3));
+		func_123("MPArcadeCabinetGridHUD", "vehicle_alert", (Var2.f_0 + func_211(iVar1, 1)), Var2.f_1, 0.020833332f, 0.018518519f, 90f, func_212(Local_136.f_148[iParam0 /*4*/].f_3));
 	}
 	else if (Local_136.f_148[iParam0 /*4*/].f_2 == 2)
 	{
 		Var2 = { func_187(func_71(12, iVar1)) };
-		func_123("MPArcadeCabinetGridHUD", "vehicle_alert", (Var2.f_0 + func_211(iVar1, 0)), Var2.f_1, 0.02083333f, 0.01851852f, -90f, func_212(Local_136.f_148[iParam0 /*4*/].f_3));
+		func_123("MPArcadeCabinetGridHUD", "vehicle_alert", (Var2.f_0 + func_211(iVar1, 0)), Var2.f_1, 0.020833332f, 0.018518519f, -90f, func_212(Local_136.f_148[iParam0 /*4*/].f_3));
 	}
 }
 
@@ -6288,7 +6288,7 @@ void func_215(int iParam0)//Position - 0x7F96
 		StringCopy(&Var8, "muzzle_flare_", 64);
 		StringIntConCat(&Var8, Local_135.f_204[iParam0 /*19*/].f_5 + 1, 64);
 		Var9 = { func_216(iParam0, fVar4) };
-		func_123("MPArcadeCabinetGrid", &Var8, Var9.f_0, Var9.f_1, 0.01666667f, 0.02962963f, fVar4, Var2);
+		func_123("MPArcadeCabinetGrid", &Var8, Var9.f_0, Var9.f_1, 0.016666668f, 0.02962963f, fVar4, Var2);
 		Local_135.f_204[iParam0 /*19*/].f_5 = (Local_135.f_204[iParam0 /*19*/].f_5 + Local_135.f_412);
 		if (Local_135.f_204[iParam0 /*19*/].f_5 >= 3)
 		{
@@ -6481,7 +6481,7 @@ void func_222()//Position - 0x863D
 					}
 					else
 					{
-						func_123("MPArcadeCabinetGrid", "bullet" /* GXT: Bullet */, Local_135.f_204[iVar0 /*19*/].f_10[iVar1 /*4*/], Local_135.f_204[iVar0 /*19*/].f_10[iVar1 /*4*/].f_1, 0.004166667f, 0.01111111f, fVar2, Local_135.f_107.f_17);
+						func_123("MPArcadeCabinetGrid", "bullet" /* GXT: Bullet */, Local_135.f_204[iVar0 /*19*/].f_10[iVar1 /*4*/], Local_135.f_204[iVar0 /*19*/].f_10[iVar1 /*4*/].f_1, 0.004166667f, 0.011111111f, fVar2, Local_135.f_107.f_17);
 					}
 				}
 				iVar1++;
@@ -6919,10 +6919,10 @@ float func_238()//Position - 0x8FFE
 	switch (Local_135.f_438)
 	{
 		case 0:
-			return -0.1111111f;
+			return -0.11111111f;
 		
 		case 1:
-			return -0.1111111f;
+			return -0.11111111f;
 		
 		case 2:
 			return -0.1388889f;
@@ -7035,13 +7035,13 @@ void func_242(int iParam0, int* iParam1)//Position - 0x9137
 				case 0:
 					fVar7 = -(IntToFloat(Local_135.f_59[Local_175[iParam0 /*37*/].f_9.f_5[iVar5 /*5*/].f_4 /*5*/].f_2) * 0.185185f);
 					Var8.f_1 = (Var8.f_1 + fVar7);
-					Var4 = { func_108(0f, 0.01481481f) };
+					Var4 = { func_108(0f, 0.014814815f) };
 					break;
 				
 				case 1:
 					fVar7 = (IntToFloat(Local_135.f_59[Local_175[iParam0 /*37*/].f_9.f_5[iVar5 /*5*/].f_4 /*5*/].f_2) * 0.185185f);
 					Var8.f_1 = (Var8.f_1 + fVar7);
-					Var4 = { func_108(0f, -0.01481481f) };
+					Var4 = { func_108(0f, -0.014814815f) };
 					break;
 				
 				case 2:
@@ -7395,8 +7395,8 @@ void func_255(var uParam0, var uParam1)//Position - 0x9C9A
 	}
 	if (func_258(uParam0->f_1, (uParam1->f_1 - 0.0001f), (uParam1->f_1 + 0.0001f)))
 	{
-		uParam0->f_1 = (uParam0->f_1 + 0.01481481f);
-		uParam1->f_1 = (uParam1->f_1 - 0.01481481f);
+		uParam0->f_1 = (uParam0->f_1 + 0.014814815f);
+		uParam1->f_1 = (uParam1->f_1 - 0.014814815f);
 	}
 }
 
@@ -7539,13 +7539,13 @@ void func_262(int iParam0, int* iParam1)//Position - 0x9EA4
 				case 0:
 					fVar7 = -(IntToFloat(Local_135.f_59[Local_174[iParam0 /*16*/].f_5[iVar5 /*5*/].f_4 /*5*/].f_2) * 0.185185f);
 					Var8.f_1 = (Var8.f_1 + fVar7);
-					Var4 = { func_108(0f, 0.01481481f) };
+					Var4 = { func_108(0f, 0.014814815f) };
 					break;
 				
 				case 1:
 					fVar7 = (IntToFloat(Local_135.f_59[Local_174[iParam0 /*16*/].f_5[iVar5 /*5*/].f_4 /*5*/].f_2) * 0.185185f);
 					Var8.f_1 = (Var8.f_1 + fVar7);
-					Var4 = { func_108(0f, -0.01481481f) };
+					Var4 = { func_108(0f, -0.014814815f) };
 					break;
 				
 				case 2:

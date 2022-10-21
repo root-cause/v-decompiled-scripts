@@ -4407,7 +4407,7 @@ bool func_61(int iParam0)//Position - 0x4AF3
 {
 	bool bVar0;
 	
-	bVar0 = ENTITY::IS_ENTITY_AT_COORD(iParam0, 130.1504f, -1291.626f, 28.2714f, 0.01f, 0.01f, 0.01f, false, true, 0);
+	bVar0 = ENTITY::IS_ENTITY_AT_COORD(iParam0, 130.1504f, -1291.6261f, 28.2714f, 0.01f, 0.01f, 0.01f, false, true, 0);
 	return bVar0;
 }
 
@@ -5162,11 +5162,11 @@ bool func_97(int iParam0)//Position - 0x5761
 
 int func_98(struct<3> Param0)//Position - 0x576F
 {
-	if ((Param0.f_0 == 129.6975f && Param0.f_1 == -1290.842f) && Param0.f_2 == 28.27142f)
+	if ((Param0.f_0 == 129.69753f && Param0.f_1 == -1290.8418f) && Param0.f_2 == 28.271421f)
 	{
 		return 1;
 	}
-	if ((Param0.f_0 == 130.5791f && Param0.f_1 == -1292.369f) && Param0.f_2 == 28.27142f)
+	if ((Param0.f_0 == 130.57912f && Param0.f_1 == -1292.3688f) && Param0.f_2 == 28.271421f)
 	{
 		return 1;
 	}

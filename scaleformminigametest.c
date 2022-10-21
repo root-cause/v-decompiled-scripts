@@ -96,7 +96,7 @@ void __EntryFunction__()//Position - 0x0
 			iLocal_19 = CAM::CREATE_CAM("DEFAULT_SCRIPTED_CAMERA", true);
 			if (CAM::DOES_CAM_EXIST(iLocal_19))
 			{
-				CAM::SET_CAM_PARAMS(iLocal_19, -160.6632f, -1072.144f, -1615.471f, -89.4999f, -0.2863f, 58.1189f, 45f, 0, 1, 1, 2);
+				CAM::SET_CAM_PARAMS(iLocal_19, -160.6632f, -1072.1438f, -1615.471f, -89.4999f, -0.2863f, 58.1189f, 45f, 0, 1, 1, 2);
 				CAM::SET_CAM_NEAR_CLIP(iLocal_19, 0.01f);
 				CAM::SET_CAM_FAR_CLIP(iLocal_19, 0.02f);
 				CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);

@@ -832,7 +832,7 @@ Vector3 func_24(int iParam0)//Position - 0x983
 					return 2501.049f, 2639.483f, 42.5508f;
 				
 				case 4:
-					return 2658.239f, 1542.729f, 23.4847f;
+					return 2658.2385f, 1542.7285f, 23.4847f;
 				
 				case 5:
 					return 1415.427f, 1819.726f, 102.3258f;

@@ -2098,7 +2098,7 @@ int func_14(int iParam0)//Position - 0x31ED
 	float fVar0;
 	float fVar1;
 	
-	fVar0 = (SYSTEM::TO_FLOAT(iParam0) * 0.03333334f);
+	fVar0 = (SYSTEM::TO_FLOAT(iParam0) * 0.033333335f);
 	fVar1 = (fVar0 / MISC::GET_FRAME_TIME());
 	return SYSTEM::ROUND(fVar1);
 }
@@ -3184,7 +3184,7 @@ Vector3 func_89(var uParam0, struct<3> Param1, var uParam2, var uParam3, var uPa
 	iVar1 = 0;
 	while (iVar1 < 180)
 	{
-		func_279(uParam0, &Param1, &uParam2, &uParam5, &uParam8, &iParam9, &uParam10, &iVar0, 0, 0.03333334f, 0, 0.1f, 0);
+		func_279(uParam0, &Param1, &uParam2, &uParam5, &uParam8, &iParam9, &uParam10, &iVar0, 0, 0.033333335f, 0, 0.1f, 0);
 		if (iVar0 > 0)
 		{
 			return Param1;
@@ -5067,8 +5067,8 @@ int func_150(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 				iVar17++;
 				if ((uParam3[iVar18 /*12*/])->f_1 >= 0f)
 				{
-					fVar19 = ((((uParam3[iVar18 /*12*/])->f_1 - (*uParam3)[iVar18 /*12*/]) * IntToFloat((uParam3[iVar18 /*12*/])->f_3)) * 0.03333334f);
-					fVar20 = ((fVar19 - uParam1->f_247.f_33) / 0.03333334f);
+					fVar19 = ((((uParam3[iVar18 /*12*/])->f_1 - (*uParam3)[iVar18 /*12*/]) * IntToFloat((uParam3[iVar18 /*12*/])->f_3)) * 0.033333335f);
+					fVar20 = ((fVar19 - uParam1->f_247.f_33) / 0.033333335f);
 					iVar21 = SYSTEM::FLOOR(fVar20);
 					fVar22 = (fVar20 - SYSTEM::TO_FLOAT(iVar21));
 					iVar3 = (iVar14 + iVar21) - 2;
@@ -5373,7 +5373,7 @@ void func_169(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 	uParam1->f_247.f_33 = (uParam1->f_247.f_33 - MISC::GET_FRAME_TIME());
 	while (uParam1->f_247.f_33 <= 0f)
 	{
-		uParam1->f_247.f_33 = (uParam1->f_247.f_33 + 0.03333334f);
+		uParam1->f_247.f_33 = (uParam1->f_247.f_33 + 0.033333335f);
 		iVar0 = 0;
 		while (iVar0 <= 22)
 		{
@@ -5382,7 +5382,7 @@ void func_169(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 		}
 		*uParam2 = { uParam1->f_1583[iVar0 /*3*/] };
 		func_173(uParam0, uParam3, uParam4, uParam5, uParam6, iParam7);
-		iVar1 = func_279(&(uParam1->f_189), uParam2, uParam3, &(uParam1->f_1658), uParam4, uParam5, uParam6, iParam7, 0, 0.03333334f, 0, 0.1f, 0);
+		iVar1 = func_279(&(uParam1->f_189), uParam2, uParam3, &(uParam1->f_1658), uParam4, uParam5, uParam6, iParam7, 0, 0.033333335f, 0, 0.1f, 0);
 		if (iVar1 == 1)
 		{
 			if (func_228(&(uParam0->f_4), 32) && func_167(uParam0) == 0f)
@@ -5443,7 +5443,7 @@ void func_174(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 	iVar0 = 0;
 	while (iVar0 < 24)
 	{
-		iVar1 = func_279(&(uParam1->f_189), uParam2, uParam3, &(uParam1->f_1658), uParam4, uParam5, uParam6, iParam7, 0, 0.03333334f, 0, 0.1f, 0);
+		iVar1 = func_279(&(uParam1->f_189), uParam2, uParam3, &(uParam1->f_1658), uParam4, uParam5, uParam6, iParam7, 0, 0.033333335f, 0, 0.1f, 0);
 		if (iVar1 == 1)
 		{
 			if (func_228(&(uParam0->f_4), 32) && func_167(uParam0) == 0f)
@@ -5466,7 +5466,7 @@ void func_174(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 	if (!func_104(uParam0, 32768))
 	{
 		func_58(uParam0, 32768);
-		uParam1->f_247.f_33 = 0.03333334f;
+		uParam1->f_247.f_33 = 0.033333335f;
 	}
 }
 
@@ -7550,7 +7550,7 @@ int func_279(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 	Var0 = { 0f, 0f, 1f };
 	fVar1 = func_327(fParam9 == -1f, MISC::GET_FRAME_TIME(), fParam9);
 	iVar2 = 0;
-	fVar3 = (fVar1 / 0.03333334f);
+	fVar3 = (fVar1 / 0.033333335f);
 	Var0 = { Var0 * Vector(fVar3, fVar3, fVar3) };
 	if (bParam10)
 	{
@@ -8998,7 +8998,7 @@ void func_321(var uParam0, var uParam1, int iParam2)//Position - 0xE69A
 	}
 	else if (uParam1->f_1656 == 17 && uParam1->f_1657 != 1)
 	{
-		uParam0->f_55 = { -1225.454f, 344.8268f, 78.9859f };
+		uParam0->f_55 = { -1225.4536f, 344.8268f, 78.9859f };
 		uParam0->f_3[0 /*3*/] = { -1223.264f, 351.306f, 78.9867f };
 		uParam0->f_3[1 /*3*/] = { -1231.37f, 348.946f, 78.9867f };
 		uParam0->f_3[2 /*3*/] = { -1224.658f, 325.996f, 78.9867f };
@@ -9008,7 +9008,7 @@ void func_321(var uParam0, var uParam1, int iParam2)//Position - 0xE69A
 	}
 	else if (uParam1->f_1656 == 15 && uParam1->f_1657 != 1)
 	{
-		uParam0->f_55 = { -1623.454f, 257.1566f, 58.5552f };
+		uParam0->f_55 = { -1623.4541f, 257.1566f, 58.5552f };
 		uParam0->f_3[0 /*3*/] = { -1627.471f, 275.479f, 58.5552f };
 		uParam0->f_3[1 /*3*/] = { -1634.971f, 271.977f, 58.5552f };
 		uParam0->f_3[2 /*3*/] = { -1624.893f, 250.367f, 58.5552f };
@@ -9018,7 +9018,7 @@ void func_321(var uParam0, var uParam1, int iParam2)//Position - 0xE69A
 	}
 	else if (uParam1->f_1656 == 18 && uParam1->f_1657 != 1)
 	{
-		uParam0->f_55 = { -939.6168f, -1255.732f, 6.9773f };
+		uParam0->f_55 = { -939.6168f, -1255.7323f, 6.9773f };
 		uParam0->f_3[1 /*3*/] = { -945.684f, -1253.143f, 6.9773f };
 		uParam0->f_3[2 /*3*/] = { -933.813f, -1273.726f, 6.9773f };
 		uParam0->f_3[3 /*3*/] = { -926.823f, -1269.7f, 6.9773f };
@@ -9028,7 +9028,7 @@ void func_321(var uParam0, var uParam1, int iParam2)//Position - 0xE69A
 	}
 	else if (uParam1->f_1656 == 20 && uParam1->f_1657 != 1)
 	{
-		uParam0->f_55 = { -1371.275f, -107.9437f, 49.7046f };
+		uParam0->f_55 = { -1371.2748f, -107.9437f, 49.7046f };
 		uParam0->f_3[0 /*3*/] = { -1374.66f, -114.005f, 49.7046f };
 		uParam0->f_3[1 /*3*/] = { -1366.627f, -113.082f, 49.7046f };
 		uParam0->f_3[2 /*3*/] = { -1369.309f, -89.432f, 49.7046f };
@@ -9038,7 +9038,7 @@ void func_321(var uParam0, var uParam1, int iParam2)//Position - 0xE69A
 	}
 	else if (uParam1->f_1656 == 14 && uParam1->f_1657 != 1)
 	{
-		uParam0->f_55 = { -2869.991f, 9.2297f, 10.6083f };
+		uParam0->f_55 = { -2869.9915f, 9.2297f, 10.6083f };
 		uParam0->f_3[0 /*3*/] = { -2875.503f, 5.33f, 10.6083f };
 		uParam0->f_3[1 /*3*/] = { -2867.721f, 3.09f, 10.6083f };
 		uParam0->f_3[2 /*3*/] = { -2861.163f, 25.966f, 10.6083f };
@@ -9302,7 +9302,7 @@ var func_326(var uParam0)//Position - 0xFFE4
 	struct<3> Var2;
 	bool bVar3;
 	
-	fVar0 = 1E+08f;
+	fVar0 = 100000000f;
 	bVar3 = ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false);
 	if (func_224(PLAYER::PLAYER_ID(), 0))
 	{
@@ -9342,31 +9342,31 @@ var func_326(var uParam0)//Position - 0xFFE4
 			fVar0 = fVar1;
 			*uParam0 = 23;
 		}
-		fVar1 = SYSTEM::VDIST2(Var2, -1225.454f, 344.8268f, 78.9859f);
+		fVar1 = SYSTEM::VDIST2(Var2, -1225.4536f, 344.8268f, 78.9859f);
 		if (fVar1 < fVar0)
 		{
 			fVar0 = fVar1;
 			*uParam0 = 17;
 		}
-		fVar1 = SYSTEM::VDIST2(Var2, -1623.454f, 257.1566f, 58.5552f);
+		fVar1 = SYSTEM::VDIST2(Var2, -1623.4541f, 257.1566f, 58.5552f);
 		if (fVar1 < fVar0)
 		{
 			fVar0 = fVar1;
 			*uParam0 = 15;
 		}
-		fVar1 = SYSTEM::VDIST2(Var2, -939.6168f, -1255.732f, 6.9773f);
+		fVar1 = SYSTEM::VDIST2(Var2, -939.6168f, -1255.7323f, 6.9773f);
 		if (fVar1 < fVar0)
 		{
 			fVar0 = fVar1;
 			*uParam0 = 18;
 		}
-		fVar1 = SYSTEM::VDIST2(Var2, -1371.275f, -107.9437f, 49.7046f);
+		fVar1 = SYSTEM::VDIST2(Var2, -1371.2748f, -107.9437f, 49.7046f);
 		if (fVar1 < fVar0)
 		{
 			fVar0 = fVar1;
 			*uParam0 = 20;
 		}
-		fVar1 = SYSTEM::VDIST2(Var2, -2869.991f, 9.2297f, 10.6083f);
+		fVar1 = SYSTEM::VDIST2(Var2, -2869.9915f, 9.2297f, 10.6083f);
 		if (fVar1 < fVar0)
 		{
 			fVar0 = fVar1;
@@ -9580,7 +9580,7 @@ int func_333(int iParam0, var uParam1, float fParam2)//Position - 0x1062D
 			break;
 		
 		case 8:
-			*uParam1 = { -90.0089f, -1324.195f, 28.3203f };
+			*uParam1 = { -90.0089f, -1324.1947f, 28.3203f };
 			*fParam2 = 194.1887f;
 			return 1;
 			break;
@@ -9600,13 +9600,13 @@ int func_333(int iParam0, var uParam1, float fParam2)//Position - 0x1062D
 			break;
 		
 		case 14:
-			*uParam1 = { 1432.34f, -1887.383f, 70.5768f };
+			*uParam1 = { 1432.3402f, -1887.3832f, 70.5768f };
 			*fParam2 = 350.0509f;
 			return 1;
 			break;
 		
 		case 15:
-			*uParam1 = { 1666.204f, 1967.25f, 143.3213f };
+			*uParam1 = { 1666.204f, 1967.2504f, 143.3213f };
 			*fParam2 = 0.7896f;
 			return 1;
 			break;
@@ -9618,13 +9618,13 @@ int func_333(int iParam0, var uParam1, float fParam2)//Position - 0x1062D
 			break;
 		
 		case 16:
-			*uParam1 = { 135.055f, -1759.64f, 27.8957f };
+			*uParam1 = { 135.055f, -1759.6396f, 27.8957f };
 			*fParam2 = -129f;
 			return 1;
 			break;
 		
 		case 17:
-			*uParam1 = { 687.6992f, -1744.03f, 28.3624f };
+			*uParam1 = { 687.6992f, -1744.0299f, 28.3624f };
 			*fParam2 = 267.1409f;
 			return 1;
 			break;
@@ -9642,7 +9642,7 @@ int func_333(int iParam0, var uParam1, float fParam2)//Position - 0x1062D
 			break;
 		
 		case 20:
-			*uParam1 = { 1555.958f, 953.6136f, 77.2063f };
+			*uParam1 = { 1555.9575f, 953.6136f, 77.2063f };
 			*fParam2 = 152.8118f;
 			return 1;
 			break;
@@ -9684,7 +9684,7 @@ int func_333(int iParam0, var uParam1, float fParam2)//Position - 0x1062D
 			break;
 		
 		case 25:
-			*uParam1 = { 72.2278f, -1464.68f, 28.2915f };
+			*uParam1 = { 72.2278f, -1464.6798f, 28.2915f };
 			*fParam2 = 156.8827f;
 			return 1;
 			break;
@@ -9696,7 +9696,7 @@ int func_333(int iParam0, var uParam1, float fParam2)//Position - 0x1062D
 			break;
 		
 		case 26:
-			*uParam1 = { 257.9167f, -1120.786f, 28.3684f };
+			*uParam1 = { 257.9167f, -1120.7855f, 28.3684f };
 			*fParam2 = 97.2736f;
 			return 1;
 			break;
@@ -9768,19 +9768,19 @@ int func_333(int iParam0, var uParam1, float fParam2)//Position - 0x1062D
 			break;
 		
 		case 59:
-			*uParam1 = { -1771.802f, 794.4316f, 138.4211f };
+			*uParam1 = { -1771.8015f, 794.4316f, 138.4211f };
 			*fParam2 = 128.9946f;
 			return 1;
 			break;
 		
 		case 60:
-			*uParam1 = { 1495.595f, -1848.821f, 70.2075f };
+			*uParam1 = { 1495.5953f, -1848.8207f, 70.2075f };
 			*fParam2 = 32.2721f;
 			return 1;
 			break;
 		
 		case 38:
-			*uParam1 = { 2897.554f, 4032.241f, 50.1419f };
+			*uParam1 = { 2897.5544f, 4032.241f, 50.1419f };
 			*fParam2 = 192.8091f;
 			return 1;
 			break;
@@ -9804,13 +9804,13 @@ int func_333(int iParam0, var uParam1, float fParam2)//Position - 0x1062D
 			break;
 		
 		case 42:
-			*uParam1 = { Vector(4.0205f, -2975.341f, 798.4536f) + Vector(1f, 0f, 0f) };
+			*uParam1 = { Vector(4.0205f, -2975.3408f, 798.4536f) + Vector(1f, 0f, 0f) };
 			*fParam2 = 90f;
 			return 1;
 			break;
 		
 		case 43:
-			*uParam1 = { 709.0244f, -2916.479f, 5.0589f };
+			*uParam1 = { 709.0244f, -2916.4788f, 5.0589f };
 			*fParam2 = 355.326f;
 			return 1;
 			break;
@@ -9822,7 +9822,7 @@ int func_333(int iParam0, var uParam1, float fParam2)//Position - 0x1062D
 			break;
 		
 		case 45:
-			*uParam1 = { 595.2742f, -2819.183f, 5.0559f };
+			*uParam1 = { 595.2742f, -2819.1826f, 5.0559f };
 			*fParam2 = 46.8853f;
 			return 1;
 			break;
@@ -9840,7 +9840,7 @@ int func_333(int iParam0, var uParam1, float fParam2)//Position - 0x1062D
 			break;
 		
 		case 49:
-			*uParam1 = { 3321.537f, 4975.455f, 25.9097f };
+			*uParam1 = { 3321.5369f, 4975.4546f, 25.9097f };
 			*fParam2 = 221.228f;
 			return 1;
 			break;
@@ -9870,7 +9870,7 @@ int func_333(int iParam0, var uParam1, float fParam2)//Position - 0x1062D
 			break;
 		
 		case 66:
-			*uParam1 = { 262.5499f, -2540.15f, 4.8433f };
+			*uParam1 = { 262.5499f, -2540.1504f, 4.8433f };
 			*fParam2 = -64.1366f;
 			return 1;
 			break;
@@ -9894,7 +9894,7 @@ int func_333(int iParam0, var uParam1, float fParam2)//Position - 0x1062D
 			break;
 		
 		case 57:
-			*uParam1 = { 37.5988f, -1351.52f, 28.2954f };
+			*uParam1 = { 37.5988f, -1351.5203f, 28.2954f };
 			*fParam2 = 90.0339f;
 			return 1;
 			break;
@@ -9930,7 +9930,7 @@ int func_333(int iParam0, var uParam1, float fParam2)//Position - 0x1062D
 			break;
 		
 		case 64:
-			*uParam1 = { 2091.258f, 4714.852f, 40.1936f };
+			*uParam1 = { 2091.2583f, 4714.852f, 40.1936f };
 			*fParam2 = 136.0867f;
 			return 1;
 			break;

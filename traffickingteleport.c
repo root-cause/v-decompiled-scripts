@@ -77,7 +77,7 @@ void __EntryFunction__()//Position - 0x0
 	iVar0 = PLAYER::GET_PLAYER_PED(PLAYER::GET_PLAYER_INDEX());
 	if (!ENTITY::IS_ENTITY_DEAD(iVar0, false))
 	{
-		ENTITY::SET_ENTITY_COORDS(iVar0, 2119.159f, 4813.522f, 40.2223f, true, false, false, true);
+		ENTITY::SET_ENTITY_COORDS(iVar0, 2119.1587f, 4813.5225f, 40.2223f, true, false, false, true);
 		ENTITY::SET_ENTITY_HEADING(iVar0, 225.2837f);
 	}
 	func_1(19, 0);

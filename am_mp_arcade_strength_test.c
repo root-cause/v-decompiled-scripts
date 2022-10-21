@@ -347,7 +347,7 @@ float func_7(float fParam0, float fParam1, float fParam2, int iParam3)//Position
 		
 		case 3:
 		case 8:
-			fParam2 = ((-SYSTEM::COS(func_8((3.141593f * fParam2))) / 2f) + 0.5f);
+			fParam2 = ((-SYSTEM::COS(func_8((3.1415927f * fParam2))) / 2f) + 0.5f);
 			break;
 		
 		case 4:
@@ -6674,7 +6674,7 @@ void func_247(var uParam0)//Position - 0x7907
 
 float func_248(float fParam0)//Position - 0x792A
 {
-	fParam0 = (fParam0 * (1.777778f / GRAPHICS::GET_ASPECT_RATIO(false)));
+	fParam0 = (fParam0 * (1.7777777f / GRAPHICS::GET_ASPECT_RATIO(false)));
 	return fParam0;
 }
 
@@ -80352,7 +80352,7 @@ float func_610(float fParam0, float fParam1, float fParam2)//Position - 0x6032D
 {
 	float fVar0;
 	
-	fVar0 = ((1f - SYSTEM::COS(func_8((fParam2 * 3.141593f)))) * 0.5f);
+	fVar0 = ((1f - SYSTEM::COS(func_8((fParam2 * 3.1415927f)))) * 0.5f);
 	return ((fParam0 * (1f - fVar0)) + (fParam1 * fVar0));
 }
 
@@ -80989,7 +80989,7 @@ struct<2> func_634(int* iParam0, int iParam1)//Position - 0x610AC
 			switch (iParam1)
 			{
 				case 0:
-					func_635(&Var0, 0.2135922f, 0.3446602f);
+					func_635(&Var0, 0.21359223f, 0.3446602f);
 					break;
 				
 				case 1:
@@ -81002,7 +81002,7 @@ struct<2> func_634(int* iParam0, int iParam1)//Position - 0x610AC
 			switch (iParam1)
 			{
 				case 0:
-					func_635(&Var0, 0.2135922f, 0.3446602f);
+					func_635(&Var0, 0.21359223f, 0.3446602f);
 					break;
 				
 				case 1:
@@ -81010,7 +81010,7 @@ struct<2> func_634(int* iParam0, int iParam1)//Position - 0x610AC
 					break;
 				
 				case 2:
-					func_635(&Var0, 0.7961165f, 0.9271845f);
+					func_635(&Var0, 0.79611653f, 0.92718446f);
 					break;
 			}
 			break;
@@ -81019,11 +81019,11 @@ struct<2> func_634(int* iParam0, int iParam1)//Position - 0x610AC
 			switch (iParam1)
 			{
 				case 0:
-					func_635(&Var0, 0.1654135f, 0.2669173f);
+					func_635(&Var0, 0.16541353f, 0.2669173f);
 					break;
 				
 				case 1:
-					func_635(&Var0, 0.3909774f, 0.4924812f);
+					func_635(&Var0, 0.39097744f, 0.4924812f);
 					break;
 				
 				case 2:
@@ -81031,7 +81031,7 @@ struct<2> func_634(int* iParam0, int iParam1)//Position - 0x610AC
 					break;
 				
 				case 3:
-					func_635(&Var0, 0.8421053f, 0.943609f);
+					func_635(&Var0, 0.84210527f, 0.943609f);
 					break;
 			}
 			break;
@@ -81040,11 +81040,11 @@ struct<2> func_634(int* iParam0, int iParam1)//Position - 0x610AC
 			switch (iParam1)
 			{
 				case 0:
-					func_635(&Var0, 0.1349693f, 0.2177914f);
+					func_635(&Var0, 0.13496932f, 0.21779141f);
 					break;
 				
 				case 1:
-					func_635(&Var0, 0.3190184f, 0.4018405f);
+					func_635(&Var0, 0.3190184f, 0.40184048f);
 					break;
 				
 				case 2:
@@ -81052,11 +81052,11 @@ struct<2> func_634(int* iParam0, int iParam1)//Position - 0x610AC
 					break;
 				
 				case 3:
-					func_635(&Var0, 0.6871166f, 0.7699386f);
+					func_635(&Var0, 0.68711656f, 0.76993865f);
 					break;
 				
 				case 4:
-					func_635(&Var0, 0.8711656f, 0.9539877f);
+					func_635(&Var0, 0.87116563f, 0.9539877f);
 					break;
 			}
 			break;
@@ -81065,15 +81065,15 @@ struct<2> func_634(int* iParam0, int iParam1)//Position - 0x610AC
 			switch (iParam1)
 			{
 				case 0:
-					func_635(&Var0, 0.1139896f, 0.1839378f);
+					func_635(&Var0, 0.11398964f, 0.18393782f);
 					break;
 				
 				case 1:
-					func_635(&Var0, 0.26943f, 0.3393782f);
+					func_635(&Var0, 0.26943004f, 0.33937824f);
 					break;
 				
 				case 2:
-					func_635(&Var0, 0.4248705f, 0.4948187f);
+					func_635(&Var0, 0.42487046f, 0.49481866f);
 					break;
 				
 				case 3:
@@ -81081,7 +81081,7 @@ struct<2> func_634(int* iParam0, int iParam1)//Position - 0x610AC
 					break;
 				
 				case 4:
-					func_635(&Var0, 0.7357513f, 0.8056995f);
+					func_635(&Var0, 0.7357513f, 0.80569947f);
 					break;
 				
 				case 5:

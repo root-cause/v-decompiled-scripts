@@ -979,8 +979,8 @@ void func_42(int iParam0, var uParam1)//Position - 0xE04
 		case 0:
 			*uParam1 = 302514014;
 			uParam1->f_1 = { -1588.27f, 2794.21f, 16.85f };
-			uParam1->f_4[0 /*3*/] = { -1585.349f, 2796.765f, 15.33345f };
-			uParam1->f_4[1 /*3*/] = { -1573.874f, 2783.339f, 20.00324f };
+			uParam1->f_4[0 /*3*/] = { -1585.3486f, 2796.7646f, 15.333453f };
+			uParam1->f_4[1 /*3*/] = { -1573.8737f, 2783.339f, 20.003242f };
 			uParam1->f_11 = 6.75f;
 			uParam1->f_12 = 0.55f;
 			break;
@@ -988,26 +988,26 @@ void func_42(int iParam0, var uParam1)//Position - 0xE04
 		case 1:
 			*uParam1 = 374122670;
 			uParam1->f_1 = { -1589.58f, 2793.67f, 16.86f };
-			uParam1->f_4[0 /*3*/] = { -1592.552f, 2791.04f, 15.32601f };
-			uParam1->f_4[1 /*3*/] = { -1604.54f, 2805.558f, 20.1746f };
+			uParam1->f_4[0 /*3*/] = { -1592.5518f, 2791.0398f, 15.326007f };
+			uParam1->f_4[1 /*3*/] = { -1604.54f, 2805.5576f, 20.174604f };
 			uParam1->f_11 = 6.75f;
 			uParam1->f_12 = 0.55f;
 			break;
 		
 		case 2:
 			*uParam1 = -1450927686;
-			uParam1->f_1 = { -2307.327f, 3390.483f, 29.978f };
-			uParam1->f_4[0 /*3*/] = { -2309.542f, 3387.24f, 29.72211f };
-			uParam1->f_4[1 /*3*/] = { -2322.485f, 3397.324f, 35.67742f };
+			uParam1->f_1 = { -2307.327f, 3390.4834f, 29.978f };
+			uParam1->f_4[0 /*3*/] = { -2309.542f, 3387.2397f, 29.722107f };
+			uParam1->f_4[1 /*3*/] = { -2322.4854f, 3397.3242f, 35.677418f };
 			uParam1->f_11 = 7f;
 			uParam1->f_12 = 0.55f;
 			break;
 		
 		case 3:
 			*uParam1 = -1927270846;
-			uParam1->f_1 = { -2299.742f, 3385.038f, 30.0525f };
-			uParam1->f_4[0 /*3*/] = { -2297.572f, 3388.048f, 29.79443f };
-			uParam1->f_4[1 /*3*/] = { -2284.746f, 3377.59f, 36.37001f };
+			uParam1->f_1 = { -2299.742f, 3385.0378f, 30.0525f };
+			uParam1->f_4[0 /*3*/] = { -2297.572f, 3388.0483f, 29.79443f };
+			uParam1->f_4[1 /*3*/] = { -2284.746f, 3377.5898f, 36.37001f };
 			uParam1->f_11 = 6.75f;
 			uParam1->f_12 = 0.55f;
 			break;
@@ -1238,7 +1238,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 		case 178:
 			Var0.f_0 = 969004395;
 			Var0.f_2 = joaat("prop_gate_airport_01");
-			Var0.f_3 = { -1151.204f, -2723.102f, 12.946f };
+			Var0.f_3 = { -1151.2043f, -2723.1023f, 12.946f };
 			if (iParam1 == 98)
 			{
 				Var0.f_6 = 1;
@@ -1258,7 +1258,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 		case 118:
 			Var0.f_0 = 1036961952;
 			Var0.f_2 = joaat("prop_gate_airport_01");
-			Var0.f_3 = { -977.5174f, -2837.264f, 12.9549f };
+			Var0.f_3 = { -977.5174f, -2837.2644f, 12.9549f };
 			if (iParam1 == 98)
 			{
 				Var0.f_6 = 1;
@@ -1278,7 +1278,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 		case 119:
 			Var0.f_0 = 1864280899;
 			Var0.f_2 = joaat("prop_gate_airport_01");
-			Var0.f_3 = { -990.2963f, -2829.887f, 12.9499f };
+			Var0.f_3 = { -990.2963f, -2829.8872f, 12.9499f };
 			if (iParam1 == 98)
 			{
 				Var0.f_6 = 1;
@@ -1298,7 +1298,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 		case 120:
 			Var0.f_0 = -355737150;
 			Var0.f_2 = joaat("prop_facgate_01");
-			Var0.f_3 = { -1213.4f, -2079.3f, 12.907f };
+			Var0.f_3 = { -1213.4f, -2079.3003f, 12.907f };
 			if (iParam1 == 98)
 			{
 				Var0.f_6 = 1;
@@ -1329,7 +1329,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -1300449249;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_fnclink_02gate6_l");
-			Var0.f_3 = { -974.5734f, -2774.381f, 14.4099f };
+			Var0.f_3 = { -974.5734f, -2774.3809f, 14.4099f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 0;
 			Var0.f_11 = 1;
@@ -1339,7 +1339,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -1529668404;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_fnclink_02gate6_r");
-			Var0.f_3 = { -971.1018f, -2776.385f, 14.409f };
+			Var0.f_3 = { -971.1018f, -2776.3855f, 14.409f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 0;
 			Var0.f_11 = 1;
@@ -1349,7 +1349,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 1577455399;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_fnclink_02gate6_l");
-			Var0.f_3 = { -970.9188f, -2776.491f, 14.409f };
+			Var0.f_3 = { -970.9188f, -2776.4907f, 14.409f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 0;
 			Var0.f_11 = 1;
@@ -1359,7 +1359,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 2142655111;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_fnclink_02gate6_r");
-			Var0.f_3 = { -935.2114f, -2767.397f, 14.3882f };
+			Var0.f_3 = { -935.2114f, -2767.3967f, 14.3882f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 0;
 			Var0.f_11 = 1;
@@ -1369,7 +1369,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 996723181;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_fnclink_02gate6_l");
-			Var0.f_3 = { -933.1581f, -2763.955f, 14.3882f };
+			Var0.f_3 = { -933.1581f, -2763.9546f, 14.3882f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 0;
 			Var0.f_11 = 1;
@@ -1379,7 +1379,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 1830923614;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_fnclink_02gate6_r");
-			Var0.f_3 = { -933.0535f, -2763.779f, 14.3882f };
+			Var0.f_3 = { -933.0535f, -2763.7793f, 14.3882f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 0;
 			Var0.f_11 = 1;
@@ -1389,7 +1389,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -125385686;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_fnclink_02gate6_l");
-			Var0.f_3 = { -931.0002f, -2760.337f, 14.3882f };
+			Var0.f_3 = { -931.0002f, -2760.3372f, 14.3882f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 0;
 			Var0.f_11 = 1;
@@ -1399,7 +1399,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 745417724;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_fnclink_02gate6_r");
-			Var0.f_3 = { -773.2438f, -2842.677f, 14.2715f };
+			Var0.f_3 = { -773.2438f, -2842.6775f, 14.2715f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 0;
 			Var0.f_11 = 0;
@@ -1429,7 +1429,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -811770997;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_fnclink_02gate6_l");
-			Var0.f_3 = { -766.1354f, -2846.781f, 14.2715f };
+			Var0.f_3 = { -766.1354f, -2846.7815f, 14.2715f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 0;
 			Var0.f_11 = 0;
@@ -1439,7 +1439,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 29310942;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_fnclink_09gate1");
-			Var0.f_3 = { -828.9456f, -2964.304f, 14.2758f };
+			Var0.f_3 = { -828.9456f, -2964.3037f, 14.2758f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 0;
 			Var0.f_11 = 1;
@@ -1459,7 +1459,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 460387137;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_fnclink_09gate1");
-			Var0.f_3 = { -833.4395f, -3186.709f, 14.267f };
+			Var0.f_3 = { -833.4395f, -3186.7095f, 14.267f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 0;
 			Var0.f_11 = 1;
@@ -1469,7 +1469,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 106875165;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_fnclink_09gate1");
-			Var0.f_3 = { -830.0544f, -3391.163f, 14.1972f };
+			Var0.f_3 = { -830.0544f, -3391.1628f, 14.1972f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 0;
 			Var0.f_11 = 1;
@@ -1479,7 +1479,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 923052648;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_fnclink_09gate1");
-			Var0.f_3 = { -913.0834f, -3534.97f, 14.1924f };
+			Var0.f_3 = { -913.0834f, -3534.9697f, 14.1924f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 0;
 			Var0.f_11 = 1;
@@ -1499,7 +1499,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -1938172615;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_fnclink_09gate1");
-			Var0.f_3 = { -1017.692f, -3563.217f, 14.2767f };
+			Var0.f_3 = { -1017.6921f, -3563.2173f, 14.2767f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 0;
 			Var0.f_11 = 1;
@@ -1509,7 +1509,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -810513079;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_fnclink_09gate1");
-			Var0.f_3 = { -1146.831f, -3546.638f, 14.2595f };
+			Var0.f_3 = { -1146.8314f, -3546.6382f, 14.2595f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 0;
 			Var0.f_11 = 1;
@@ -1519,7 +1519,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 69924413;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_fnclink_09gate1");
-			Var0.f_3 = { -1260.897f, -3480.764f, 14.1721f };
+			Var0.f_3 = { -1260.8966f, -3480.764f, 14.1721f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 0;
 			Var0.f_11 = 1;
@@ -1529,7 +1529,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -152773711;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_fnclink_09gate1");
-			Var0.f_3 = { -1351.133f, -3404.162f, 14.1721f };
+			Var0.f_3 = { -1351.1328f, -3404.1616f, 14.1721f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 0;
 			Var0.f_11 = 1;
@@ -1539,7 +1539,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 681951026;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_fnclink_09gate1");
-			Var0.f_3 = { -1409.507f, -3370.461f, 14.2068f };
+			Var0.f_3 = { -1409.5073f, -3370.4614f, 14.2068f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 0;
 			Var0.f_11 = 1;
@@ -1549,7 +1549,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 877254262;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_fnclink_09gate1");
-			Var0.f_3 = { -1831.804f, -3224.966f, 14.3119f };
+			Var0.f_3 = { -1831.804f, -3224.9663f, 14.3119f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 0;
 			Var0.f_11 = 1;
@@ -1559,7 +1559,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 1712929328;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_fnclink_09gate1");
-			Var0.f_3 = { -1942.289f, -3161.19f, 14.2981f };
+			Var0.f_3 = { -1942.2893f, -3161.1904f, 14.2981f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 0;
 			Var0.f_11 = 1;
@@ -1569,7 +1569,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 1482661565;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_fnclink_09gate1");
-			Var0.f_3 = { -1927.563f, -3076.269f, 14.4569f };
+			Var0.f_3 = { -1927.5635f, -3076.269f, 14.4569f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 0;
 			Var0.f_11 = 1;
@@ -1579,7 +1579,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 1782694529;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_fnclink_09gate1");
-			Var0.f_3 = { -1951.696f, -3003.846f, 14.4418f };
+			Var0.f_3 = { -1951.6956f, -3003.8457f, 14.4418f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 0;
 			Var0.f_11 = 1;
@@ -1599,7 +1599,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -1953037013;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_fnclink_09gate1");
-			Var0.f_3 = { -1802.692f, -2745.761f, 14.448f };
+			Var0.f_3 = { -1802.6915f, -2745.7615f, 14.448f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 0;
 			Var0.f_11 = 1;
@@ -1608,7 +1608,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 		case 150:
 			Var0.f_0 = -795813070;
 			Var0.f_2 = joaat("prop_facgate_01");
-			Var0.f_3 = { -1099.531f, -2020.803f, 12.1745f };
+			Var0.f_3 = { -1099.5308f, -2020.8026f, 12.1745f };
 			if (iParam1 == 98)
 			{
 				Var0.f_6 = 1;
@@ -1628,7 +1628,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 		case 151:
 			Var0.f_0 = -580979506;
 			Var0.f_2 = joaat("prop_facgate_01");
-			Var0.f_3 = { -994.4996f, -2341.648f, 12.9448f };
+			Var0.f_3 = { -994.4996f, -2341.6482f, 12.9448f };
 			if (iParam1 == 98)
 			{
 				Var0.f_6 = 1;
@@ -1648,7 +1648,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 		case 152:
 			Var0.f_0 = -1426452475;
 			Var0.f_2 = joaat("prop_facgate_01");
-			Var0.f_3 = { -984.0709f, -2348.4f, 12.9448f };
+			Var0.f_3 = { -984.0709f, -2348.4001f, 12.9448f };
 			if (iParam1 == 98)
 			{
 				Var0.f_6 = 1;
@@ -1668,7 +1668,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 		case 153:
 			Var0.f_0 = -1178784373;
 			Var0.f_2 = joaat("prop_gate_airport_01");
-			Var0.f_3 = { -1008.071f, -2406.751f, 12.977f };
+			Var0.f_3 = { -1008.0708f, -2406.751f, 12.977f };
 			if (iParam1 == 98)
 			{
 				Var0.f_6 = 1;
@@ -1688,7 +1688,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 		case 154:
 			Var0.f_0 = 94815597;
 			Var0.f_2 = joaat("prop_gate_airport_01");
-			Var0.f_3 = { -1015.485f, -2419.583f, 12.9586f };
+			Var0.f_3 = { -1015.4854f, -2419.5828f, 12.9586f };
 			if (iParam1 == 98)
 			{
 				Var0.f_6 = 1;
@@ -2099,7 +2099,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 422781221;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("v_ilev_fh_frntdoor");
-			Var0.f_3 = { 0.2169f, -1823.303f, 29.6391f };
+			Var0.f_3 = { 0.2169f, -1823.3031f, 29.6391f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 1;
@@ -2129,7 +2129,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 1931749328;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_cs4_05_tdoor");
-			Var0.f_3 = { 31.918f, 3666.854f, 40.8586f };
+			Var0.f_3 = { 31.918f, 3666.8535f, 40.8586f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 1;
@@ -2139,7 +2139,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 1624933181;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_magenta_door");
-			Var0.f_3 = { 29.102f, 3661.489f, 40.8547f };
+			Var0.f_3 = { 29.102f, 3661.4893f, 40.8547f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 1;
@@ -2209,7 +2209,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -2110173063;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("lr_prop_boathousedoor_l");
-			Var0.f_3 = { 1527.745f, 3778.131f, 34.7106f };
+			Var0.f_3 = { 1527.7452f, 3778.1309f, 34.7106f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 0;
@@ -2219,7 +2219,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -1032072975;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("lr_prop_boathousedoor_r");
-			Var0.f_3 = { 1530.762f, 3780.244f, 34.7104f };
+			Var0.f_3 = { 1530.7625f, 3780.244f, 34.7104f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 0;
@@ -3017,7 +3017,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 1066535586;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("v_ilev_housedoor1");
-			Var0.f_3 = { 347.8678f, -1003.316f, -99.0952f };
+			Var0.f_3 = { 347.8678f, -1003.3159f, -99.0952f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 0;
 			Var0.f_11 = 1;
@@ -3027,7 +3027,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -153506146;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("v_ilev_mm_door");
-			Var0.f_3 = { 257.2896f, -1001.255f, -98.8587f };
+			Var0.f_3 = { 257.2896f, -1001.2546f, -98.8587f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 0;
 			Var0.f_11 = 1;
@@ -3147,7 +3147,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -2017851706;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_gate_cult_01_l");
-			Var0.f_3 = { -1041.268f, 4906.097f, 209.2002f };
+			Var0.f_3 = { -1041.2676f, 4906.0967f, 209.2002f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 4;
 			Var0.f_12 = -1f;
@@ -3158,7 +3158,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -90706816;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_gate_cult_01_r");
-			Var0.f_3 = { -1044.749f, 4914.972f, 209.1932f };
+			Var0.f_3 = { -1044.749f, 4914.9717f, 209.1932f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 4;
 			Var0.f_12 = 1f;
@@ -3169,7 +3169,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -1701678154;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("v_ilev_trevtraildr");
-			Var0.f_3 = { 1972.769f, 3815.366f, 33.6633f };
+			Var0.f_3 = { 1972.7689f, 3815.366f, 33.6633f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 1;
@@ -3179,7 +3179,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -2129438429;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("v_ilev_fa_frontdoor");
-			Var0.f_3 = { -14.8689f, -1441.182f, 31.192f };
+			Var0.f_3 = { -14.8689f, -1441.1821f, 31.192f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 0;
@@ -3269,7 +3269,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 459292593;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("v_ilev_ss_door04");
-			Var0.f_3 = { 1395.613f, 3609.327f, 35.1308f };
+			Var0.f_3 = { 1395.6134f, 3609.327f, 35.1308f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 1;
@@ -3279,7 +3279,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 699522132;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("v_ilev_ss_doorext");
-			Var0.f_3 = { 1388.499f, 3614.828f, 39.0919f };
+			Var0.f_3 = { 1388.4987f, 3614.8276f, 39.0919f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 1;
@@ -3289,7 +3289,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 919402122;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("v_ilev_ss_doorext");
-			Var0.f_3 = { 1399.7f, 3607.763f, 39.0919f };
+			Var0.f_3 = { 1399.6996f, 3607.763f, 39.0919f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 1;
@@ -3349,7 +3349,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -2020886833;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("v_ilev_csr_door_l");
-			Var0.f_3 = { -59.893f, -1092.952f, 26.8836f };
+			Var0.f_3 = { -59.893f, -1092.9518f, 26.8836f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 1;
@@ -3359,7 +3359,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 424893020;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("v_ilev_csr_door_r");
-			Var0.f_3 = { -60.5458f, -1094.749f, 26.8887f };
+			Var0.f_3 = { -60.5458f, -1094.7489f, 26.8887f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 1;
@@ -3369,7 +3369,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -234058813;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("v_ilev_csr_door_l");
-			Var0.f_3 = { -38.464f, -1108.446f, 26.7198f };
+			Var0.f_3 = { -38.464f, -1108.4462f, 26.7198f };
 			Var0.f_7 = 1;
 			if (!Global_262145.f_32663)
 			{
@@ -3386,7 +3386,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -513447307;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("v_ilev_csr_door_r");
-			Var0.f_3 = { -36.6615f, -1109.102f, 26.7198f };
+			Var0.f_3 = { -36.6615f, -1109.1016f, 26.7198f };
 			Var0.f_7 = 1;
 			if (!Global_262145.f_32663)
 			{
@@ -3403,7 +3403,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 777975393;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("v_ilev_rc_door3_l");
-			Var0.f_3 = { -608.7289f, -1610.315f, 27.1589f };
+			Var0.f_3 = { -608.7289f, -1610.3153f, 27.1589f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 1;
@@ -3413,7 +3413,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 2134513686;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("v_ilev_rc_door3_r");
-			Var0.f_3 = { -611.32f, -1610.089f, 27.1589f };
+			Var0.f_3 = { -611.32f, -1610.0886f, 27.1589f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 1;
@@ -3443,7 +3443,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -611431917;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("v_ilev_shrf2door");
-			Var0.f_3 = { -442.66f, 6015.222f, 31.8663f };
+			Var0.f_3 = { -442.66f, 6015.2217f, 31.8663f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			break;
@@ -3461,7 +3461,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 1879085215;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("v_ilev_shrfdoor");
-			Var0.f_3 = { 1855.685f, 3683.93f, 34.5928f };
+			Var0.f_3 = { 1855.6848f, 3683.9302f, 34.5928f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			break;
@@ -3470,7 +3470,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -100586674;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_gar_door_01");
-			Var0.f_3 = { -1067.002f, -1665.609f, 4.7898f };
+			Var0.f_3 = { -1067.0024f, -1665.6091f, 4.7898f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 1;
@@ -3480,7 +3480,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -384071293;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_gar_door_02");
-			Var0.f_3 = { -1064.763f, -1668.762f, 4.8084f };
+			Var0.f_3 = { -1064.7632f, -1668.7623f, 4.8084f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 1;
@@ -3490,7 +3490,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 1317819491;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_gar_door_03_ld");
-			Var0.f_3 = { -1074.648f, -1676.131f, 4.684f };
+			Var0.f_3 = { -1074.6482f, -1676.1313f, 4.684f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 1;
@@ -3510,7 +3510,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 96518847;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("v_ilev_fb_doorshortl");
-			Var0.f_3 = { -1045.12f, -232.004f, 39.4379f };
+			Var0.f_3 = { -1045.1199f, -232.004f, 39.4379f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 0;
@@ -3520,7 +3520,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 1355864282;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("v_ilev_fb_doorshortr");
-			Var0.f_3 = { -1046.516f, -229.3581f, 39.4379f };
+			Var0.f_3 = { -1046.5161f, -229.3581f, 39.4379f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 0;
@@ -3530,7 +3530,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 1350395200;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("v_ilev_fb_door01");
-			Var0.f_3 = { -1083.62f, -260.4167f, 38.1867f };
+			Var0.f_3 = { -1083.6201f, -260.4167f, 38.1867f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 0;
@@ -3540,7 +3540,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -351200663;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("v_ilev_fb_door02");
-			Var0.f_3 = { -1080.974f, -259.0204f, 38.1867f };
+			Var0.f_3 = { -1080.9744f, -259.0204f, 38.1867f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 0;
@@ -3600,7 +3600,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 9031593;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_ron_door_01");
-			Var0.f_3 = { 1065.237f, -2006.079f, 32.2329f };
+			Var0.f_3 = { 1065.2372f, -2006.0791f, 32.2329f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 1;
@@ -3610,7 +3610,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -1114322496;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_ron_door_01");
-			Var0.f_3 = { 1083.547f, -1975.435f, 31.622f };
+			Var0.f_3 = { 1083.5472f, -1975.4354f, 31.622f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 1;
@@ -3620,7 +3620,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -1353175737;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_ron_door_01");
-			Var0.f_3 = { 1085.307f, -2018.561f, 41.6289f };
+			Var0.f_3 = { 1085.307f, -2018.5614f, 41.6289f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 1;
@@ -3640,7 +3640,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -85603376;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_abat_slide");
-			Var0.f_3 = { 962.9084f, -2105.814f, 34.6432f };
+			Var0.f_3 = { 962.9084f, -2105.8137f, 34.6432f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 1;
@@ -3690,7 +3690,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 638173652;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_ch1_07_door_01l");
-			Var0.f_3 = { -2255.194f, 322.2593f, 184.9264f };
+			Var0.f_3 = { -2255.1938f, 322.2593f, 184.9264f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 1;
@@ -3700,7 +3700,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -657938605;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_ch1_07_door_01r");
-			Var0.f_3 = { -2254.056f, 319.7009f, 184.9264f };
+			Var0.f_3 = { -2254.0557f, 319.7009f, 184.9264f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 1;
@@ -3730,7 +3730,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 1741567220;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_facgate_08");
-			Var0.f_3 = { 413.3649f, -1620.033f, 28.3416f };
+			Var0.f_3 = { 413.3649f, -1620.0333f, 28.3416f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 0;
@@ -3740,7 +3740,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -2117572376;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_facgate_08");
-			Var0.f_3 = { 418.2896f, -1651.396f, 28.2951f };
+			Var0.f_3 = { 418.2896f, -1651.3962f, 28.2951f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 0;
@@ -3750,7 +3750,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = 1308623196;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_facgate_07b");
-			Var0.f_3 = { 397.8846f, -1607.384f, 28.3301f };
+			Var0.f_3 = { 397.8846f, -1607.3838f, 28.3301f };
 			Var0.f_7 = 1;
 			Var0.f_8 = 1;
 			Var0.f_11 = 0;
@@ -3852,7 +3852,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_0 = -1927270846;
 			Var0.f_1 = 99;
 			Var0.f_2 = joaat("prop_sec_barrier_ld_01a");
-			Var0.f_3 = { -2299.539f, 3384.949f, 31.0658f };
+			Var0.f_3 = { -2299.539f, 3384.9495f, 31.0658f };
 			Var0.f_6 = 1;
 			break;
 		
@@ -4099,54 +4099,54 @@ void func_58(int iParam0, var uParam1)//Position - 0x5C5A
 		case 0:
 			(*uParam1)[0] = 1036961952;
 			(*uParam1)[1] = 1864280899;
-			uParam1->f_3 = { -984.0406f, -2833.845f, 18.29796f };
-			uParam1->f_6 = { -990.1995f, -2844.138f, 10.96479f };
+			uParam1->f_3 = { -984.04065f, -2833.845f, 18.297964f };
+			uParam1->f_6 = { -990.19946f, -2844.1384f, 10.964787f };
 			uParam1->f_9 = 15.25f;
-			uParam1->f_10 = { -983.7082f, -2833.199f, 12.83979f };
-			uParam1->f_13 = { -977.913f, -2823.237f, 19.231f };
+			uParam1->f_10 = { -983.7082f, -2833.1995f, 12.839787f };
+			uParam1->f_13 = { -977.91296f, -2823.2373f, 19.230995f };
 			uParam1->f_16 = 15.25f;
 			break;
 		
 		case 1:
 			(*uParam1)[0] = 738966015;
 			(*uParam1)[1] = 969004395;
-			uParam1->f_3 = { -1144.962f, -2726.898f, 18.29805f };
-			uParam1->f_6 = { -1151.852f, -2739.109f, 10.9529f };
+			uParam1->f_3 = { -1144.9615f, -2726.898f, 18.298054f };
+			uParam1->f_6 = { -1151.8516f, -2739.109f, 10.952897f };
 			uParam1->f_9 = 15.25f;
-			uParam1->f_10 = { -1144.678f, -2726.473f, 12.86838f };
-			uParam1->f_13 = { -1138.071f, -2714.978f, 18.42801f };
+			uParam1->f_10 = { -1144.6776f, -2726.4731f, 12.868383f };
+			uParam1->f_13 = { -1138.0713f, -2714.9778f, 18.428009f };
 			uParam1->f_16 = 15.25f;
 			break;
 		
 		case 2:
 			(*uParam1)[0] = 1741567220;
-			uParam1->f_3 = { 415.2436f, -1621.926f, 28.04277f };
-			uParam1->f_6 = { 410.3537f, -1628.049f, 34.04278f };
+			uParam1->f_3 = { 415.24356f, -1621.9258f, 28.042774f };
+			uParam1->f_6 = { 410.35373f, -1628.0494f, 34.042778f };
 			uParam1->f_9 = 6.5f;
 			break;
 		
 		case 3:
 			(*uParam1)[0] = -2117572376;
-			uParam1->f_3 = { 416.417f, -1653.291f, 28.04278f };
-			uParam1->f_6 = { 410.6726f, -1648.682f, 34.04278f };
+			uParam1->f_3 = { 416.417f, -1653.291f, 28.042776f };
+			uParam1->f_6 = { 410.67258f, -1648.6815f, 34.042778f };
 			uParam1->f_9 = 6.5f;
 			break;
 		
 		case 4:
 			(*uParam1)[0] = 1308623196;
-			uParam1->f_3 = { 400.634f, -1609.808f, 28.04278f };
-			uParam1->f_6 = { 394.4907f, -1617.194f, 34.04278f };
+			uParam1->f_3 = { 400.634f, -1609.8081f, 28.042776f };
+			uParam1->f_6 = { 394.49072f, -1617.1943f, 34.042778f };
 			uParam1->f_9 = 8.25f;
 			break;
 		
 		case 5:
 			(*uParam1)[0] = -1178784373;
 			(*uParam1)[1] = 94815597;
-			uParam1->f_3 = { -1012.159f, -2412.959f, 12.69468f };
-			uParam1->f_6 = { -1026.246f, -2405.063f, 18.75721f };
+			uParam1->f_3 = { -1012.15894f, -2412.9595f, 12.694675f };
+			uParam1->f_6 = { -1026.2458f, -2405.0635f, 18.757206f };
 			uParam1->f_9 = 15.375f;
-			uParam1->f_10 = { -1012.159f, -2412.959f, 12.69468f };
-			uParam1->f_13 = { -999.976f, -2419.571f, 18.75715f };
+			uParam1->f_10 = { -1012.15894f, -2412.9595f, 12.694675f };
+			uParam1->f_13 = { -999.97595f, -2419.571f, 18.75715f };
 			uParam1->f_16 = 15.375f;
 			break;
 	}

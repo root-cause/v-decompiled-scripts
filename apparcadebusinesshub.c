@@ -8101,7 +8101,7 @@ int func_336(int iParam0, char* sParam1)//Position - 0x8430
 		case joaat(","):
 		case joaat("-"):
 		case joaat("."):
-		case 616155491:
+		case joaat(":"):
 		case joaat(";"):
 		case joaat("<"):
 		case joaat("="):
@@ -8246,7 +8246,7 @@ int func_336(int iParam0, char* sParam1)//Position - 0x8430
 		case joaat(","):
 		case joaat("-"):
 		case joaat("."):
-		case 616155491:
+		case joaat(":"):
 		case joaat(";"):
 		case joaat("<"):
 		case joaat("="):

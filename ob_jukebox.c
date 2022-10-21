@@ -318,11 +318,11 @@ Vector3 func_3(int iParam0)//Position - 0x362
 {
 	if (func_4(iParam0) == 97)
 	{
-		return 1001.093f, -3171.051f, -35.0421f;
+		return 1001.0933f, -3171.0508f, -35.0421f;
 	}
 	else if (func_4(iParam0) == 91)
 	{
-		return 1122.505f, -3152.994f, -38.0211f;
+		return 1122.5051f, -3152.9944f, -38.0211f;
 	}
 	return 0f, 0f, 0f;
 }
@@ -4731,11 +4731,11 @@ void func_97(bool bParam0, bool bParam1)//Position - 0x61ED
 	fVar2 = GRAPHICS::GET_ASPECT_RATIO(false);
 	if (bParam0)
 	{
-		Global_23149 = (0.225f * (1.777778f / fVar2));
+		Global_23149 = (0.225f * (1.7777778f / fVar2));
 	}
 	else if (fVar2 < 1.77777f)
 	{
-		Global_23149 = (0.225f * (1.777778f / fVar2));
+		Global_23149 = (0.225f * (1.7777778f / fVar2));
 	}
 	else
 	{

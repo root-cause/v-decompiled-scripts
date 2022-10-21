@@ -1038,7 +1038,7 @@ int func_24(int iParam0, int iParam1)//Position - 0x105D
 
 int func_25()//Position - 0x1134
 {
-	if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -1612.283f, -3021.792f, -76.18069f, -1612.22f, -3005.203f, -74.20517f, 12.75f, false, true, 0))
+	if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -1612.2834f, -3021.7915f, -76.18069f, -1612.2198f, -3005.2026f, -74.20517f, 12.75f, false, true, 0))
 	{
 		return 1;
 	}
@@ -2154,7 +2154,7 @@ bool func_80()//Position - 0x2385
 
 int func_81()//Position - 0x2394
 {
-	if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -1607.052f, -3011.89f, -80.00597f, -1574.768f, -3011.67f, -77.99634f, 9.5f, false, true, 0))
+	if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -1607.0521f, -3011.8904f, -80.00597f, -1574.7677f, -3011.67f, -77.99634f, 9.5f, false, true, 0))
 	{
 		return 1;
 	}

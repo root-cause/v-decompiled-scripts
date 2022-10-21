@@ -81570,7 +81570,7 @@ void func_432()//Position - 0x62997
 	NETWORK::NETWORK_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(32, false, -1);
 	NETWORK::NETWORK_OVERRIDE_CLOCK_TIME(func_436(), 0, 0);
 	func_435(&Local_93, joaat("nimbus"), "Plane_1");
-	func_433(&Local_93, 3891.104f, -3886.872f, 398.5099f, -20.9678f, -0.0151f, -149.5116f, "HS4_NIMB_LSA_ISD", 1, 1, 31744, 0);
+	func_433(&Local_93, 3891.1038f, -3886.8718f, 398.5099f, -20.9678f, -0.0151f, -149.5116f, "HS4_NIMB_LSA_ISD", 1, 1, 31744, 0);
 }
 
 void func_433(var uParam0, struct<3> Param1, struct<3> Param2, char* sParam3, int iParam4, int iParam5, int iParam6, int iParam7)//Position - 0x629EE

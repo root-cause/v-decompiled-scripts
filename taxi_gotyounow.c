@@ -461,15 +461,15 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_258 = -1;
 	iLocal_263 = -1;
 	bLocal_264 = true;
-	Local_273 = { -1612.235f, 189.1934f, 58.9435f };
+	Local_273 = { -1612.2349f, 189.1934f, 58.9435f };
 	Local_274 = { -1612.457f, 184.5166f, 58.7712f };
-	Local_275 = { 32.60266f, -1243.837f, 28.45076f };
-	Local_276 = { 33.2419f, -1234.385f, 28.2953f };
+	Local_275 = { 32.60266f, -1243.8374f, 28.45076f };
+	Local_276 = { 33.2419f, -1234.3851f, 28.2953f };
 	Local_277 = { -628.1456f, -760.3765f, 25.106f };
 	Local_278 = { -584.7739f, -779.0701f, 24.0178f };
-	Local_279 = { 47.56787f, -1234.685f, 28.29707f };
-	Local_280 = { -21.32591f, -1235.549f, 32.47597f };
-	Local_281 = { 37.51834f, -1239.021f, 28.40267f };
+	Local_279 = { 47.56787f, -1234.6847f, 28.29707f };
+	Local_280 = { -21.325907f, -1235.5492f, 32.475967f };
+	Local_281 = { 37.51834f, -1239.0206f, 28.40267f };
 	fLocal_282 = 33.75f;
 	StringCopy(&cLocal_288, "amb@world_human_hang_out_street@male_a@enter", 64);
 	StringCopy(&cLocal_297, "amb@world_human_hang_out_street@male_a@base", 64);
@@ -5068,7 +5068,7 @@ int func_175()//Position - 0x5A94
 				func_195(0, 0, 1);
 				WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"), true);
 				func_194(&Local_231, 0f, 0f, 0f, 0f, 0f, 0f, 1112014848);
-				Var0 = { 30.8062f, -1242.612f, 29.1026f };
+				Var0 = { 30.8062f, -1242.6118f, 29.1026f };
 				Var1 = { 7.5623f, -0.0714f, 149.3929f };
 				CAM::SET_CAM_COORD(Local_231.f_0, Var0);
 				CAM::SET_CAM_ROT(Local_231.f_0, Var1, 2);
@@ -6501,7 +6501,7 @@ void func_230()//Position - 0x7773
 		case -1:
 			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_255))
 			{
-				iLocal_255 = VEHICLE::CREATE_VEHICLE(func_149(0), 27.1498f, -1246.523f, 28.4013f, 297.629f, true, true, false);
+				iLocal_255 = VEHICLE::CREATE_VEHICLE(func_149(0), 27.1498f, -1246.5232f, 28.4013f, 297.629f, true, true, false);
 				iLocal_258++;
 			}
 			break;
@@ -10156,7 +10156,7 @@ void func_344(var uParam0)//Position - 0xC662
 			else if (uParam0->f_411 == 0)
 			{
 				TASK::TASK_CLIMB_LADDER(0, true);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 813.9421f, 1172.681f, 329.7988f, 1f, -1, 0.25f, 0, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 813.9421f, 1172.6809f, 329.7988f, 1f, -1, 0.25f, 0, 40000f);
 				TASK::TASK_ACHIEVE_HEADING(0, 151.7794f, 0);
 				TASK::TASK_START_SCENARIO_IN_PLACE(0, "WORLD_HUMAN_SMOKING_POT", 0, false);
 			}
@@ -14786,9 +14786,9 @@ void func_423()//Position - 0x12A01
 {
 	int iVar0;
 	
-	Local_231.f_23 = { -1583.59f, 169.2662f, 57.6205f };
+	Local_231.f_23 = { -1583.5905f, 169.2662f, 57.6205f };
 	Local_231.f_33 = 116f;
-	Local_231.f_26 = { 49.0898f, -1178.923f, 28.2091f };
+	Local_231.f_26 = { 49.0898f, -1178.9226f, 28.2091f };
 	Local_231.f_34 = 185.975f;
 	func_425(&Local_231, 6);
 	Local_231.f_410 = 0;

@@ -7255,32 +7255,32 @@ void func_190()//Position - 0x8D96
 	Var4.f_10 = { -688.5469f, 490.5489f, 108.784f };
 	Var4.f_13 = 105f;
 	Var4.f_0 = "BUSTO_P8";
-	Var5.f_1 = { -1037.97f, 468.9468f, 76.7167f };
+	Var5.f_1 = { -1037.9698f, 468.9468f, 76.7167f };
 	Var5.f_4 = { -1065.762f, 469.4401f, 80.3204f };
 	Var5.f_7 = 9000;
 	Var5.f_8 = (8f + 2f);
 	Var5.f_10 = { -973.6752f, 499.3758f, 78.8246f };
 	Var5.f_13 = 47f;
 	Var5.f_0 = "BUSTO_P9";
-	Var6.f_1 = { -1231.581f, 239.014f, 64.8339f };
-	Var6.f_4 = { -1309.778f, 261.4181f, 65.87f };
+	Var6.f_1 = { -1231.5812f, 239.014f, 64.8339f };
+	Var6.f_4 = { -1309.7784f, 261.4181f, 65.87f };
 	Var6.f_7 = 9000;
 	Var6.f_8 = (8f + 4f);
-	Var6.f_10 = { -1168.448f, 257.0845f, 66.3477f };
+	Var6.f_10 = { -1168.4482f, 257.0845f, 66.3477f };
 	Var6.f_13 = 105f;
 	Var6.f_0 = "BUSTO_P10";
-	Var7.f_1 = { -1406.729f, -160.0764f, 46.5244f };
+	Var7.f_1 = { -1406.7286f, -160.0764f, 46.5244f };
 	Var7.f_4 = { -1421.479f, -193.5715f, 50f };
 	Var7.f_7 = 9000;
 	Var7.f_8 = (8f + 4f);
-	Var7.f_10 = { -1398.391f, -114.7998f, 50.028f };
+	Var7.f_10 = { -1398.3905f, -114.7998f, 50.028f };
 	Var7.f_13 = 178f;
 	Var7.f_0 = "BUSTO_P11";
-	Var8.f_1 = { -1316.205f, -487.0228f, 32.3407f };
-	Var8.f_4 = { -1271.75f, -500.2502f, 44.4638f };
+	Var8.f_1 = { -1316.2052f, -487.0228f, 32.3407f };
+	Var8.f_4 = { -1271.7498f, -500.2502f, 44.4638f };
 	Var8.f_7 = 9000;
 	Var8.f_8 = (15f + 4f);
-	Var8.f_10 = { -1356.912f, -437.5389f, 34.0665f };
+	Var8.f_10 = { -1356.9116f, -437.5389f, 34.0665f };
 	Var8.f_13 = 215f;
 	Var8.f_0 = "BUSTO_P3";
 	Var9.f_1 = { -723.1427f, -239.0515f, 36.0196f };
@@ -7507,7 +7507,7 @@ int func_195(struct<3> Param0, int iParam1, bool bParam2, bool bParam3, bool bPa
 		}
 		if (INTERIOR::IS_VALID_INTERIOR(INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID())))
 		{
-			if ((INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(377.153f, -717.567f, 10.0536f) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(320.9934f, 265.2515f, 82.1221f)) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(-1425.564f, -244.3f, 15.8053f))
+			if ((INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(377.153f, -717.567f, 10.0536f) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(320.9934f, 265.2515f, 82.1221f)) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(-1425.5645f, -244.3f, 15.8053f))
 			{
 				return 0;
 			}
@@ -7524,7 +7524,7 @@ int func_195(struct<3> Param0, int iParam1, bool bParam2, bool bParam3, bool bPa
 		{
 			if (iParam1 != 30)
 			{
-				if (SYSTEM::VDIST2(Var1, -61.2745f, -1100.468f, 25.3752f) < 176400f)
+				if (SYSTEM::VDIST2(Var1, -61.2745f, -1100.4675f, 25.3752f) < 176400f)
 				{
 					return 0;
 				}

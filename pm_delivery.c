@@ -4302,7 +4302,7 @@ void func_107()//Position - 0x513F
 	}
 	if (func_111() == 10)
 	{
-		Local_65 = { -1161.213f, -1567.068f, 3.4234f };
+		Local_65 = { -1161.2133f, -1567.0677f, 3.4234f };
 		iLocal_82 = joaat("pony2");
 		if (iLocal_36 == 0)
 		{
@@ -4324,14 +4324,14 @@ void func_107()//Position - 0x513F
 		}
 		else if (iLocal_36 == 3)
 		{
-			Local_66 = { -3121.261f, 1152.92f, 19.4047f };
+			Local_66 = { -3121.2615f, 1152.92f, 19.4047f };
 			fLocal_68 = 176.4887f;
 			iLocal_83 = joaat("police4");
 			iLocal_81 = joaat("S_M_Y_Cop_01");
 		}
 		else if (iLocal_36 == 4)
 		{
-			Local_66 = { 1543.145f, 2184.371f, 77.8114f };
+			Local_66 = { 1543.1453f, 2184.3706f, 77.8114f };
 			fLocal_68 = 45.3499f;
 			iLocal_83 = joaat("police4");
 			iLocal_81 = joaat("S_M_Y_Cop_01");
@@ -4343,13 +4343,13 @@ void func_107()//Position - 0x513F
 	}
 	else if (func_111() == 14)
 	{
-		Local_65 = { -2169.828f, 4277.365f, 47.9568f };
+		Local_65 = { -2169.8284f, 4277.365f, 47.9568f };
 		fVar0 = MISC::GET_DISTANCE_BETWEEN_COORDS(Local_64, Local_65, true);
 		iLocal_77 = SYSTEM::ROUND((((fVar0 / 16.5f) + 40f) / 2f));
 	}
 	else if (func_111() == 13)
 	{
-		Local_65 = { -323.356f, 6264.431f, 30.4463f };
+		Local_65 = { -323.356f, 6264.4307f, 30.4463f };
 		fVar0 = MISC::GET_DISTANCE_BETWEEN_COORDS(Local_64, Local_65, true);
 		iLocal_77 = SYSTEM::ROUND((((fVar0 / 16.5f) + 40f) / 2f));
 	}
@@ -4453,7 +4453,7 @@ Vector3 func_109(int iParam0, int iParam1)//Position - 0x549D
 			switch (iParam1)
 			{
 				case 0:
-					return -128.1876f, 1934.495f, 194.9075f;
+					return -128.18756f, 1934.4951f, 194.90749f;
 					break;
 				
 				case 1:
@@ -4461,23 +4461,23 @@ Vector3 func_109(int iParam0, int iParam1)//Position - 0x549D
 					break;
 				
 				case 2:
-					return 1390.089f, -605.923f, 73.3378f;
+					return 1390.0889f, -605.923f, 73.3378f;
 					break;
 				
 				case 3:
-					return -3170.048f, 1098.809f, 19.7817f;
+					return -3170.0483f, 1098.809f, 19.7817f;
 					break;
 				
 				case 4:
-					return 1581.22f, 2194.629f, 78.1062f;
+					return 1581.2198f, 2194.629f, 78.1062f;
 					break;
 				
 				case 5:
-					return 1475.833f, -113.5801f, 141.794f;
+					return 1475.8333f, -113.5801f, 141.794f;
 					break;
 				
 				case 6:
-					return 1603.071f, -1793.915f, 89.0179f;
+					return 1603.0708f, -1793.9147f, 89.0179f;
 					break;
 			}
 			break;
@@ -4493,27 +4493,27 @@ Vector3 func_109(int iParam0, int iParam1)//Position - 0x549D
 					break;
 				
 				case 8:
-					return -1916.122f, 2060.313f, 139.7363f;
+					return -1916.1224f, 2060.3132f, 139.7363f;
 					break;
 				
 				case 9:
-					return 824.8992f, -1064.192f, 26.9851f;
+					return 824.8992f, -1064.1921f, 26.9851f;
 					break;
 				
 				case 10:
-					return -669.6013f, -1198.664f, 9.6125f;
+					return -669.6013f, -1198.6638f, 9.6125f;
 					break;
 				
 				case 11:
-					return -1465.579f, -390.7494f, 37.5168f;
+					return -1465.5795f, -390.7494f, 37.5168f;
 					break;
 				
 				case 12:
-					return 797.7521f, -1793.008f, 28.3164f;
+					return 797.7521f, -1793.0078f, 28.3164f;
 					break;
 				
 				case 13:
-					return 806.319f, -2017.451f, 28.2215f;
+					return 806.319f, -2017.4514f, 28.2215f;
 					break;
 			}
 			break;
@@ -4526,11 +4526,11 @@ Vector3 func_110(int iParam0)//Position - 0x565E
 	switch (iParam0)
 	{
 		case 2:
-			return 2147.317f, 4795.208f, 40.08961f;
+			return 2147.3167f, 4795.2075f, 40.08961f;
 			break;
 		
 		case 9:
-			return 1524.329f, -2108.269f, 75.7248f;
+			return 1524.3289f, -2108.269f, 75.7248f;
 			break;
 		
 		case 10:
@@ -4538,51 +4538,51 @@ Vector3 func_110(int iParam0)//Position - 0x565E
 			break;
 		
 		case 1:
-			return 898.3718f, -177.0764f, 72.68348f;
+			return 898.3718f, -177.07635f, 72.68348f;
 			break;
 		
 		case 4:
-			return 1191.302f, 2672.064f, 36.73154f;
+			return 1191.3021f, 2672.064f, 36.73154f;
 			break;
 		
 		case 3:
-			return -1584.333f, 5193.487f, 2.95912f;
+			return -1584.333f, 5193.4873f, 2.95912f;
 			break;
 		
 		case 0:
-			return 408.3429f, -1623.836f, 28.29278f;
+			return 408.34286f, -1623.8357f, 28.29278f;
 			break;
 		
 		case 8:
-			return -1339.489f, -21.19435f, 50.34566f;
+			return -1339.4886f, -21.19435f, 50.34566f;
 			break;
 		
 		case 5:
-			return 336.207f, 172.4251f, 102.2055f;
+			return 336.20697f, 172.42506f, 102.20552f;
 			break;
 		
 		case 6:
-			return 394.5495f, -703.3795f, 28.27281f;
+			return 394.54953f, -703.37946f, 28.27281f;
 			break;
 		
 		case 7:
-			return -1413.184f, -206.0555f, 46.29474f;
+			return -1413.1844f, -206.05553f, 46.29474f;
 			break;
 		
 		case 11:
-			return -560.3809f, 274.5476f, 82.02014f;
+			return -560.38086f, 274.54758f, 82.02014f;
 			break;
 		
 		case 12:
-			return 221.0845f, 340.7849f, 104.5883f;
+			return 221.08446f, 340.78488f, 104.58835f;
 			break;
 		
 		case 13:
-			return -296.7154f, 6259.732f, 30.49339f;
+			return -296.71542f, 6259.7324f, 30.49339f;
 			break;
 		
 		case 14:
-			return -2201.402f, 4291f, 47.32429f;
+			return -2201.4016f, 4291f, 47.32429f;
 			break;
 	}
 	return 10f, 10f, 10f;

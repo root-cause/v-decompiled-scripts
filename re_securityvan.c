@@ -398,15 +398,15 @@ void __EntryFunction__()//Position - 0x0
 	{
 		bLocal_45 = 6;
 	}
-	else if (SYSTEM::VDIST(Local_67, 3018.384f, 3634.017f, 70.4076f) < 5f)
+	else if (SYSTEM::VDIST(Local_67, 3018.3843f, 3634.0168f, 70.4076f) < 5f)
 	{
 		bLocal_45 = 7;
 	}
-	else if (SYSTEM::VDIST(Local_67, -2815.661f, 2208.171f, 27.8382f) < 5f)
+	else if (SYSTEM::VDIST(Local_67, -2815.6614f, 2208.1707f, 27.8382f) < 5f)
 	{
 		bLocal_45 = 8;
 	}
-	else if (SYSTEM::VDIST(Local_67, 856.7742f, -2067.845f, 29.0704f) < 5f)
+	else if (SYSTEM::VDIST(Local_67, 856.7742f, -2067.8452f, 29.0704f) < 5f)
 	{
 		bLocal_45 = 9;
 	}
@@ -6689,7 +6689,7 @@ void func_148()//Position - 0x83CB
 						else if (bLocal_45 == 4)
 						{
 							TASK::OPEN_SEQUENCE_TASK(&iVar1);
-							TASK::TASK_VEHICLE_DRIVE_TO_COORD(0, iLocal_50, -551.2968f, -1119.418f, 20.4011f, 10f, 0, joaat("stockade"), 786603, 2f, 4f);
+							TASK::TASK_VEHICLE_DRIVE_TO_COORD(0, iLocal_50, -551.2968f, -1119.4176f, 20.4011f, 10f, 0, joaat("stockade"), 786603, 2f, 4f);
 							TASK::TASK_VEHICLE_DRIVE_WANDER(0, iLocal_50, 10f, 786603);
 							TASK::CLOSE_SEQUENCE_TASK(iVar1);
 							TASK::TASK_PERFORM_SEQUENCE(iLocal_49[0], iVar1);
@@ -6699,7 +6699,7 @@ void func_148()//Position - 0x83CB
 						else if (bLocal_45 == 7)
 						{
 							TASK::OPEN_SEQUENCE_TASK(&iVar2);
-							TASK::TASK_VEHICLE_DRIVE_TO_COORD(0, iLocal_50, 2786.752f, 4358.032f, 48.6794f, 10f, 0, joaat("stockade"), 786603, 2f, 4f);
+							TASK::TASK_VEHICLE_DRIVE_TO_COORD(0, iLocal_50, 2786.7524f, 4358.032f, 48.6794f, 10f, 0, joaat("stockade"), 786603, 2f, 4f);
 							TASK::TASK_VEHICLE_DRIVE_WANDER(0, iLocal_50, 10f, 786603);
 							TASK::CLOSE_SEQUENCE_TASK(iVar2);
 							TASK::TASK_PERFORM_SEQUENCE(iLocal_49[0], iVar2);
@@ -8693,14 +8693,14 @@ void func_187()//Position - 0xBDA2
 	switch (bLocal_45)
 	{
 		case 1:
-			Local_70 = { -315.889f, -1550.554f, 7.233013f };
-			Local_71 = { -315.2352f, -1366.581f, 45.29617f };
+			Local_70 = { -315.889f, -1550.5544f, 7.233013f };
+			Local_71 = { -315.23523f, -1366.5808f, 45.29617f };
 			fLocal_72 = 180f;
 			Local_63 = { -331.8429f, -1461.042f, 30.153f };
 			fLocal_64 = -64.3539f;
-			Local_61[0 /*3*/] = { -335.564f, -1462.237f, 29.5452f };
+			Local_61[0 /*3*/] = { -335.564f, -1462.2369f, 29.5452f };
 			fLocal_62[0] = 158.3857f;
-			Local_61[1 /*3*/] = { -342.7024f, -1475.043f, 29.6004f };
+			Local_61[1 /*3*/] = { -342.7024f, -1475.0432f, 29.6004f };
 			fLocal_62[1] = 290.3041f;
 			iLocal_44 = 1;
 			break;
@@ -8709,8 +8709,8 @@ void func_187()//Position - 0xBDA2
 			Local_70 = { -538.2149f, -868.7426f, 17.96054f };
 			Local_71 = { -663.8162f, -867.9987f, 53.66249f };
 			fLocal_72 = 121.5f;
-			Local_63 = { -588.5128f, -866.9584f, 25.32786f };
-			fLocal_64 = -89.02679f;
+			Local_63 = { -588.51276f, -866.9584f, 25.32786f };
+			fLocal_64 = -89.026794f;
 			Local_61[0 /*3*/] = { -589.4673f, -865.4055f, 24.7622f };
 			fLocal_62[0] = 12.5464f;
 			Local_61[1 /*3*/] = { -578.4414f, -874.5964f, 24.9183f };
@@ -8719,33 +8719,33 @@ void func_187()//Position - 0xBDA2
 			break;
 		
 		case 3:
-			Local_70 = { -468.6309f, 6101.907f, 14.8912f };
-			Local_71 = { -359.9734f, 5994.152f, 50.36843f };
+			Local_70 = { -468.6309f, 6101.9067f, 14.891197f };
+			Local_71 = { -359.97336f, 5994.152f, 50.368435f };
 			fLocal_72 = 152.25f;
 			Local_63 = { -395.6852f, 6056.967f, 30.5001f };
 			fLocal_64 = 188.9862f;
-			Local_61[0 /*3*/] = { -398.4612f, 6051.296f, 30.5003f };
+			Local_61[0 /*3*/] = { -398.4612f, 6051.2964f, 30.5003f };
 			fLocal_62[0] = 251.7138f;
-			Local_61[1 /*3*/] = { -378.408f, 6035.689f, 30.498f };
+			Local_61[1 /*3*/] = { -378.408f, 6035.6895f, 30.498f };
 			fLocal_62[1] = 154.0836f;
 			iLocal_44 = 2;
 			break;
 		
 		case 4:
-			Local_70 = { -631.3408f, -1105.581f, 7.220509f };
-			Local_71 = { -462.1721f, -1103.597f, 62.53583f };
+			Local_70 = { -631.34076f, -1105.5807f, 7.220509f };
+			Local_71 = { -462.17215f, -1103.5974f, 62.535828f };
 			fLocal_72 = 177.25f;
-			Local_63 = { -595.7766f, -1094.089f, 21.1785f };
+			Local_63 = { -595.7766f, -1094.0891f, 21.1785f };
 			fLocal_64 = 263.4662f;
-			Local_61[0 /*3*/] = { -600.8182f, -1103.778f, 21.3292f };
+			Local_61[0 /*3*/] = { -600.8182f, -1103.7783f, 21.3292f };
 			fLocal_62[0] = 338.8304f;
-			Local_61[1 /*3*/] = { -595.3461f, -1096.054f, 21.1785f };
+			Local_61[1 /*3*/] = { -595.3461f, -1096.0538f, 21.1785f };
 			fLocal_62[1] = 151.297f;
 			iLocal_44 = 1;
 			break;
 		
 		case 5:
-			Local_63 = { -1042.768f, -1049.296f, 1.0825f };
+			Local_63 = { -1042.7682f, -1049.2957f, 1.0825f };
 			fLocal_64 = 26.9919f;
 			iLocal_44 = 3;
 			break;
@@ -8757,19 +8757,19 @@ void func_187()//Position - 0xBDA2
 			break;
 		
 		case 7:
-			Local_63 = { 3018.384f, 3634.017f, 70.4076f };
+			Local_63 = { 3018.3843f, 3634.0168f, 70.4076f };
 			fLocal_64 = 335.9052f;
 			iLocal_44 = 3;
 			break;
 		
 		case 8:
-			Local_63 = { -2815.661f, 2208.171f, 27.8382f };
+			Local_63 = { -2815.6614f, 2208.1707f, 27.8382f };
 			fLocal_64 = 119.1519f;
 			iLocal_44 = 3;
 			break;
 		
 		case 9:
-			Local_63 = { 856.7742f, -2067.845f, 29.0704f };
+			Local_63 = { 856.7742f, -2067.8452f, 29.0704f };
 			fLocal_64 = 83.1204f;
 			iLocal_44 = 3;
 			break;
@@ -8951,7 +8951,7 @@ int func_191(struct<3> Param0, int iParam1, bool bParam2, bool bParam3, bool bPa
 		}
 		if (INTERIOR::IS_VALID_INTERIOR(INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID())))
 		{
-			if ((INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(377.153f, -717.567f, 10.0536f) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(320.9934f, 265.2515f, 82.1221f)) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(-1425.564f, -244.3f, 15.8053f))
+			if ((INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(377.153f, -717.567f, 10.0536f) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(320.9934f, 265.2515f, 82.1221f)) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(-1425.5645f, -244.3f, 15.8053f))
 			{
 				return 0;
 			}
@@ -8968,7 +8968,7 @@ int func_191(struct<3> Param0, int iParam1, bool bParam2, bool bParam3, bool bPa
 		{
 			if (iParam1 != 30)
 			{
-				if (SYSTEM::VDIST2(Var1, -61.2745f, -1100.468f, 25.3752f) < 176400f)
+				if (SYSTEM::VDIST2(Var1, -61.2745f, -1100.4675f, 25.3752f) < 176400f)
 				{
 					return 0;
 				}

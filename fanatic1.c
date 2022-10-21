@@ -427,7 +427,7 @@ void __EntryFunction__()//Position - 0x0
 	Local_333 = { -1818.96f, -751.5f, 7.99f };
 	iLocal_338 = -1;
 	iLocal_339 = -1;
-	Local_345 = { -1957.213f, -555.2614f, 11.08383f };
+	Local_345 = { -1957.213f, -555.2614f, 11.083831f };
 	fLocal_346 = -87.35699f;
 	sLocal_348 = "Fanatic1MaryAnn";
 	Local_356 = { -2005.65f, -508.08f, 10.76f };
@@ -468,7 +468,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			ENTITY::SET_ENTITY_PROOFS(iLocal_244, false, false, false, false, false, false, false, false);
 		}
-		func_442(-1878.234f, -439.6985f, 45.0299f, 241.0468f, 1, 0);
+		func_442(-1878.2344f, -439.6985f, 45.0299f, 241.0468f, 1, 0);
 		func_440();
 		if (!func_455(0))
 		{
@@ -685,7 +685,7 @@ void func_4(bool bParam0)//Position - 0x556
 {
 	if (bLocal_65 != bParam0)
 	{
-		PATHFIND::SET_ROADS_IN_ANGLED_AREA(-1708.314f, -574.0266f, 36.87338f, -2044.766f, -370.9167f, 9.152167f, 27.25f, false, bParam0, true);
+		PATHFIND::SET_ROADS_IN_ANGLED_AREA(-1708.314f, -574.0266f, 36.873383f, -2044.7664f, -370.91672f, 9.152167f, 27.25f, false, bParam0, true);
 		bLocal_65 = bParam0;
 	}
 }
@@ -1548,7 +1548,7 @@ void func_43()//Position - 0x12B4
 			if (bLocal_68)
 			{
 				MISC::CLEAR_AREA_OF_PEDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 30f, 0);
-				func_307(-2010.693f, -504.882f, 9.529695f, -1995.947f, -517.2494f, 13.76466f, 10f, -2008.54f, -494.1f, 11.04f, 48.19f, func_315(), 1, 1, 1, 0, 0);
+				func_307(-2010.693f, -504.88205f, 9.529695f, -1995.9468f, -517.2494f, 13.764661f, 10f, -2008.54f, -494.1f, 11.04f, 48.19f, func_315(), 1, 1, 1, 0, 0);
 				func_303(Local_356, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1);
 				func_302();
 				if (func_301(PLAYER::PLAYER_PED_ID(), iLocal_244) > 32f)
@@ -1705,7 +1705,7 @@ void func_43()//Position - 0x12B4
 								{
 									CAM::DETACH_CAM(iLocal_312);
 									CAM::STOP_CAM_POINTING(iLocal_312);
-									CAM::SET_CAM_PARAMS(iLocal_312, -2008.226f, -508.2978f, 12.2798f, -9.0657f, 0f, -70.473f, 50f, 0, 1, 1, 2);
+									CAM::SET_CAM_PARAMS(iLocal_312, -2008.2262f, -508.2978f, 12.2798f, -9.0657f, 0f, -70.473f, 50f, 0, 1, 1, 2);
 									iLocal_309 = 1;
 								}
 								break;
@@ -34314,8 +34314,8 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[2 /*8*/]), "des_stilthouse_rebuild", 32);
 			uParam0->f_33 = 0;
 			*uParam0 = { -1020.5f, 663.41f, 154.75f };
-			uParam0->f_58 = { -1018.913f, 603.2904f, 105.6611f };
-			uParam0->f_61 = { -1038.913f, 639.2904f, 135.6611f };
+			uParam0->f_58 = { -1018.91345f, 603.2904f, 105.66109f };
+			uParam0->f_61 = { -1038.9135f, 639.2904f, 135.66109f };
 			uParam0->f_64[0] = 1;
 			uParam0->f_64[1] = 0;
 			break;
@@ -34378,7 +34378,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			uParam0->f_3 = 1;
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "cargoship", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "sunkcargoship", 32);
-			uParam0->f_68 = { -162.8918f, -2365.769f, 0f };
+			uParam0->f_68 = { -162.89182f, -2365.7693f, 0f };
 			uParam0->f_71 = { 190.75f, 31.25f, 21f };
 			uParam0->f_74 = 0f;
 			uParam0->f_75[0] = 0;
@@ -34444,7 +34444,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "Jetsteal_ipl_grp2", 32);
 			StringCopy(&(uParam0->f_8[2 /*8*/]), "REMOVE_ALL_STATES", 32);
 			uParam0->f_33 = 1;
-			*uParam0 = { 787.3967f, -1808.858f, 29.8532f };
+			*uParam0 = { 787.3967f, -1808.8584f, 29.8532f };
 			uParam0->f_58 = { 814f, -1750f, 20f };
 			uParam0->f_61 = { 790f, -1899f, 35f };
 			uParam0->f_64[0] = 1;
@@ -34554,9 +34554,9 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 		case 37:
 			uParam0->f_3 = 1;
 			*uParam0 = { 50.2f, 3743.9f, 40.9f };
-			uParam0->f_79 = { 16.9757f, 3614.307f, 30.0677f };
+			uParam0->f_79 = { 16.9757f, 3614.3074f, 30.0677f };
 			uParam0->f_82 = { 145.2451f, 3748.912f, 49.6958f };
-			uParam0->f_85 = { 16.9757f, 3614.307f, 30.0677f };
+			uParam0->f_85 = { 16.9757f, 3614.3074f, 30.0677f };
 			uParam0->f_88 = { 145.2451f, 3748.912f, 49.6958f };
 			uParam0->f_91[0] = 0;
 			uParam0->f_91[1] = 1;
@@ -34661,9 +34661,9 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "des_farmhs_endimap", 32);
 			StringCopy(&(uParam0->f_8[2 /*8*/]), "REMOVE_ALL_STATES", 32);
 			uParam0->f_33 = 1;
-			*uParam0 = { 2450.595f, 4959.929f, 44.2575f };
-			uParam0->f_79 = { 2383.756f, 4929.988f, 39.52461f };
-			uParam0->f_82 = { 2505.756f, 5023.988f, 67.52461f };
+			*uParam0 = { 2450.5955f, 4959.929f, 44.2575f };
+			uParam0->f_79 = { 2383.7556f, 4929.9883f, 39.52461f };
+			uParam0->f_82 = { 2505.7556f, 5023.9883f, 67.52461f };
 			break;
 		
 		case 55:
@@ -34671,7 +34671,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "des_farmhs_start_occl", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "des_farmhs_end_occl", 32);
 			StringCopy(&(uParam0->f_8[2 /*8*/]), "", 32);
-			*uParam0 = { 2450.595f, 4959.929f, 44.2575f };
+			*uParam0 = { 2450.5955f, 4959.929f, 44.2575f };
 			break;
 		
 		case 51:
@@ -34713,28 +34713,28 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			uParam0->f_3 = 1;
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "tankerexp_grp0", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "tankerexp_grp3", 32);
-			*uParam0 = { 1676.415f, -1626.37f, 111.4848f };
+			*uParam0 = { 1676.4154f, -1626.3705f, 111.4848f };
 			break;
 		
 		case 57:
 			uParam0->f_3 = 1;
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "tankerexp_grp1", 32);
-			*uParam0 = { 1676.415f, -1626.37f, 111.4848f };
+			*uParam0 = { 1676.4154f, -1626.3705f, 111.4848f };
 			break;
 		
 		case 58:
 			uParam0->f_3 = 1;
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "tankerexp_grp2", 32);
-			*uParam0 = { 1676.415f, -1626.37f, 111.4848f };
+			*uParam0 = { 1676.4154f, -1626.3705f, 111.4848f };
 			break;
 		
 		case 59:
 			uParam0->f_3 = 1;
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "DES_tankerexp", 32);
-			*uParam0 = { 1676.415f, -1626.37f, 111.4848f };
+			*uParam0 = { 1676.4154f, -1626.3705f, 111.4848f };
 			break;
 		
 		case 60:
@@ -34747,7 +34747,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			uParam0->f_3 = 1;
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "CanyonRvrShallow", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "CanyonRvrDeep", 32);
-			*uParam0 = { -1600.619f, 4443.457f, 0.725f };
+			*uParam0 = { -1600.6194f, 4443.4565f, 0.725f };
 			break;
 		
 		case 62:
@@ -34761,14 +34761,14 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			uParam0->f_3 = 1;
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "ch1_02_closed", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "ch1_02_open", 32);
-			*uParam0 = { -3086.428f, 339.2523f, 6.3717f };
+			*uParam0 = { -3086.4285f, 339.2523f, 6.3717f };
 			break;
 		
 		case 64:
 			uParam0->f_3 = 1;
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "ferris_finale_Anim", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "", 32);
-			*uParam0 = { -1675.178f, -1143.605f, 12.0175f };
+			*uParam0 = { -1675.1783f, -1143.6046f, 12.0175f };
 			break;
 		
 		case 65:
@@ -34923,7 +34923,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[2 /*8*/]), "", 32);
 			uParam0->f_33 = 1;
-			*uParam0 = { 480.9554f, -1321.21f, 28.2037f };
+			*uParam0 = { 480.9554f, -1321.2096f, 28.2037f };
 			uParam0->f_85 = { 508.3f, -1299.3f, 39.4f };
 			uParam0->f_88 = { 459.9f, -1363.2f, 21.4f };
 			uParam0->f_91[0] = 0;
@@ -34958,28 +34958,28 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			uParam0->f_3 = 1;
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "AP1_04_TriAf01", 32);
-			*uParam0 = { -1277.629f, -2030.913f, 1.2823f };
+			*uParam0 = { -1277.6292f, -2030.913f, 1.2823f };
 			break;
 		
 		case 114:
 			uParam0->f_3 = 1;
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "CS2_06_TriAf02", 32);
-			*uParam0 = { 2384.969f, 4277.583f, 30.379f };
+			*uParam0 = { 2384.9692f, 4277.5825f, 30.379f };
 			break;
 		
 		case 115:
 			uParam0->f_3 = 1;
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "CS4_04_TriAf03", 32);
-			*uParam0 = { 1577.881f, 3836.107f, 30.7717f };
+			*uParam0 = { 1577.8813f, 3836.1074f, 30.7717f };
 			break;
 		
 		case 87:
 			uParam0->f_3 = 1;
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "DT1_21_prop_lift_on", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "", 32);
-			*uParam0 = { -180.5771f, -1016.928f, 28.2893f };
+			*uParam0 = { -180.5771f, -1016.9276f, 28.2893f };
 			break;
 		
 		case 88:
@@ -34988,8 +34988,8 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "post_hiest_unload", 32);
 			StringCopy(&(uParam0->f_8[2 /*8*/]), "bh1_16_refurb", 32);
 			*uParam0 = { -630.4205f, -236.7843f, 37.057f };
-			uParam0->f_79 = { (-623.6868f - 11f), (-231.935f - 11f), (40.30703f - 3.25f) };
-			uParam0->f_82 = { (-623.6868f + 11f), (-231.935f + 11f), (40.30703f + 3.25f) };
+			uParam0->f_79 = { (-623.6868f - 11f), (-231.93504f - 11f), (40.307034f - 3.25f) };
+			uParam0->f_82 = { (-623.6868f + 11f), (-231.93504f + 11f), (40.307034f + 3.25f) };
 			break;
 		
 		case 89:
@@ -35010,14 +35010,14 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			uParam0->f_3 = 1;
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "cs5_4_trains", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "", 32);
-			*uParam0 = { 2773.61f, 2835.327f, 35.1903f };
+			*uParam0 = { 2773.6099f, 2835.3274f, 35.1903f };
 			break;
 		
 		case 94:
 			uParam0->f_3 = 1;
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "airfield", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "", 32);
-			*uParam0 = { 1743.682f, 3286.251f, 40.0875f };
+			*uParam0 = { 1743.6821f, 3286.2512f, 40.0875f };
 			break;
 		
 		case 95:
@@ -35059,14 +35059,14 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			uParam0->f_3 = 1;
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "ld_rail_01_track", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "", 32);
-			*uParam0 = { 2626.374f, 2949.869f, 39.1409f };
+			*uParam0 = { 2626.3743f, 2949.869f, 39.1409f };
 			break;
 		
 		case 93:
 			uParam0->f_3 = 1;
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "ld_rail_02_track", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "", 32);
-			*uParam0 = { 2626.374f, 2949.869f, 39.1409f };
+			*uParam0 = { 2626.3743f, 2949.869f, 39.1409f };
 			break;
 		
 		case 118:
@@ -35218,7 +35218,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "V_26_Trevor_Helmet1", 32);
 			StringCopy(&(uParam0->f_42), "V_Trailer", 32);
-			*uParam0 = { 1973.805f, 3818.555f, 32.4363f };
+			*uParam0 = { 1973.8053f, 3818.5547f, 32.4363f };
 			break;
 		
 		case 127:
@@ -35226,7 +35226,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "V_26_Trevor_Helmet3", 32);
 			StringCopy(&(uParam0->f_42), "V_TrailerTRASH", 32);
-			*uParam0 = { 1973.805f, 3818.555f, 32.4363f };
+			*uParam0 = { 1973.8053f, 3818.5547f, 32.4363f };
 			break;
 		
 		case 128:
@@ -35234,7 +35234,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "V_26_Trevor_Helmet2", 32);
 			StringCopy(&(uParam0->f_42), "V_TrailerTidy", 32);
-			*uParam0 = { 1973.805f, 3818.555f, 32.4363f };
+			*uParam0 = { 1973.8053f, 3818.5547f, 32.4363f };
 			break;
 		
 		case 129:
@@ -35242,7 +35242,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "V_24_Trevor_Briefcase1", 32);
 			StringCopy(&(uParam0->f_42), "V_Trailer", 32);
-			*uParam0 = { 1973.805f, 3818.555f, 32.4363f };
+			*uParam0 = { 1973.8053f, 3818.5547f, 32.4363f };
 			break;
 		
 		case 130:
@@ -35250,7 +35250,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "V_24_Trevor_Briefcase3", 32);
 			StringCopy(&(uParam0->f_42), "V_TrailerTRASH", 32);
-			*uParam0 = { 1973.805f, 3818.555f, 32.4363f };
+			*uParam0 = { 1973.8053f, 3818.5547f, 32.4363f };
 			break;
 		
 		case 131:
@@ -35258,7 +35258,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "V_24_Trevor_Briefcase2", 32);
 			StringCopy(&(uParam0->f_42), "V_TrailerTidy", 32);
-			*uParam0 = { 1973.805f, 3818.555f, 32.4363f };
+			*uParam0 = { 1973.8053f, 3818.5547f, 32.4363f };
 			break;
 		
 		case 132:
@@ -35266,7 +35266,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "V_26_Michael_Stay1", 32);
 			StringCopy(&(uParam0->f_42), "V_Trailer", 32);
-			*uParam0 = { 1973.805f, 3818.555f, 32.4363f };
+			*uParam0 = { 1973.8053f, 3818.5547f, 32.4363f };
 			break;
 		
 		case 133:
@@ -35274,7 +35274,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "V_26_Michael_Stay3", 32);
 			StringCopy(&(uParam0->f_42), "V_TrailerTRASH", 32);
-			*uParam0 = { 1973.805f, 3818.555f, 32.4363f };
+			*uParam0 = { 1973.8053f, 3818.5547f, 32.4363f };
 			break;
 		
 		case 134:
@@ -35282,7 +35282,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "V_26_Michael_Stay2", 32);
 			StringCopy(&(uParam0->f_42), "V_TrailerTidy", 32);
-			*uParam0 = { 1973.805f, 3818.555f, 32.4363f };
+			*uParam0 = { 1973.8053f, 3818.5547f, 32.4363f };
 			break;
 		
 		case 179:
@@ -35290,7 +35290,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "shutter_open", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "shutter_closed", 32);
 			StringCopy(&(uParam0->f_42), "v_carshowroom", 32);
-			*uParam0 = { -30.8793f, -1088.336f, 25.4221f };
+			*uParam0 = { -30.8793f, -1088.3356f, 25.4221f };
 			uParam0->f_68 = { -29.3f, -1086.35f, 25.57f };
 			uParam0->f_71 = { 5.5f, 3f, 2f };
 			uParam0->f_74 = -10f;
@@ -35394,7 +35394,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "swap_clean_apt", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "layer_mess_A", 32);
 			StringCopy(&(uParam0->f_42), "v_trevors", 32);
-			*uParam0 = { -1157.129f, -1523.028f, 9.6327f };
+			*uParam0 = { -1157.1294f, -1523.0276f, 9.6327f };
 			break;
 		
 		case 136:
@@ -35403,7 +35403,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "layer_mess_B", 32);
 			StringCopy(&(uParam0->f_8[2 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_42), "v_trevors", 32);
-			*uParam0 = { -1157.129f, -1523.028f, 9.6327f };
+			*uParam0 = { -1157.1294f, -1523.0276f, 9.6327f };
 			break;
 		
 		case 137:
@@ -35412,7 +35412,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "layer_mess_C", 32);
 			StringCopy(&(uParam0->f_8[2 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_42), "v_trevors", 32);
-			*uParam0 = { -1157.129f, -1523.028f, 9.6327f };
+			*uParam0 = { -1157.1294f, -1523.0276f, 9.6327f };
 			break;
 		
 		case 138:
@@ -35421,7 +35421,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "layer_sextoys_a", 32);
 			StringCopy(&(uParam0->f_8[2 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_42), "v_trevors", 32);
-			*uParam0 = { -1157.129f, -1523.028f, 9.6327f };
+			*uParam0 = { -1157.1294f, -1523.0276f, 9.6327f };
 			break;
 		
 		case 139:
@@ -35429,7 +35429,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "layer_wade_shit", 32);
 			StringCopy(&(uParam0->f_42), "v_trevors", 32);
-			*uParam0 = { -1157.129f, -1523.028f, 9.6327f };
+			*uParam0 = { -1157.1294f, -1523.0276f, 9.6327f };
 			break;
 		
 		case 140:
@@ -35437,7 +35437,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "swap_wade_sofa_A", 32);
 			StringCopy(&(uParam0->f_42), "v_trevors", 32);
-			*uParam0 = { -1157.129f, -1523.028f, 9.6327f };
+			*uParam0 = { -1157.1294f, -1523.0276f, 9.6327f };
 			break;
 		
 		case 141:
@@ -35445,7 +35445,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "layer_debra_pic", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_42), "v_trevors", 32);
-			*uParam0 = { -1157.129f, -1523.028f, 9.6327f };
+			*uParam0 = { -1157.1294f, -1523.0276f, 9.6327f };
 			break;
 		
 		case 142:
@@ -35453,7 +35453,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "layer_torture", 32);
 			StringCopy(&(uParam0->f_42), "v_trevors", 32);
-			*uParam0 = { -1157.129f, -1523.028f, 9.6327f };
+			*uParam0 = { -1157.1294f, -1523.0276f, 9.6327f };
 			break;
 		
 		case 143:
@@ -35461,7 +35461,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "swap_sofa_A", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "swap_sofa_B", 32);
 			StringCopy(&(uParam0->f_42), "v_trevors", 32);
-			*uParam0 = { -1157.129f, -1523.028f, 9.6327f };
+			*uParam0 = { -1157.1294f, -1523.0276f, 9.6327f };
 			break;
 		
 		case 144:
@@ -35469,7 +35469,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "layer_whiskey", 32);
 			StringCopy(&(uParam0->f_42), "v_trevors", 32);
-			*uParam0 = { -1157.129f, -1523.028f, 9.6327f };
+			*uParam0 = { -1157.1294f, -1523.0276f, 9.6327f };
 			break;
 		
 		case 145:
@@ -35478,7 +35478,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "swap_mrJam_B", 32);
 			StringCopy(&(uParam0->f_8[2 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_42), "v_trevors", 32);
-			*uParam0 = { -1157.129f, -1523.028f, 9.6327f };
+			*uParam0 = { -1157.1294f, -1523.0276f, 9.6327f };
 			break;
 		
 		case 146:
@@ -35486,7 +35486,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "swap_mrJam_C", 32);
 			StringCopy(&(uParam0->f_42), "v_trevors", 32);
-			*uParam0 = { -1157.129f, -1523.028f, 9.6327f };
+			*uParam0 = { -1157.1294f, -1523.0276f, 9.6327f };
 			break;
 		
 		case 147:
@@ -35494,7 +35494,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "vb_30_emissive", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "vb_30_murder", 32);
 			uParam0->f_33 = 0;
-			*uParam0 = { -1150.039f, -1521.761f, 9.6331f };
+			*uParam0 = { -1150.0391f, -1521.761f, 9.6331f };
 			break;
 		
 		case 148:
@@ -35502,7 +35502,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "vb_30_crimetape", 32);
 			uParam0->f_33 = 0;
-			*uParam0 = { -1150.039f, -1521.761f, 9.6331f };
+			*uParam0 = { -1150.0391f, -1521.761f, 9.6331f };
 			break;
 		
 		case 149:
@@ -35510,7 +35510,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "sheriff_cap", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "", 32);
 			uParam0->f_33 = 0;
-			*uParam0 = { 1856.029f, 3682.998f, 33.2675f };
+			*uParam0 = { 1856.0288f, 3682.9983f, 33.2675f };
 			break;
 		
 		case 150:
@@ -35526,7 +35526,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "ufo", 32);
 			uParam0->f_33 = 0;
-			*uParam0 = { 487.31f, 5588.386f, 793.0532f };
+			*uParam0 = { 487.31f, 5588.3857f, 793.0532f };
 			break;
 		
 		case 152:
@@ -35534,7 +35534,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "ufo_eye", 32);
 			uParam0->f_33 = 0;
-			*uParam0 = { 487.31f, 5588.386f, 793.0532f };
+			*uParam0 = { 487.31f, 5588.3857f, 793.0532f };
 			break;
 		
 		case 153:
@@ -35542,7 +35542,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "V_57_FranklinStuff", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "V_57_Franklin_LEFT", 32);
 			StringCopy(&(uParam0->f_42), "v_franklins", 32);
-			*uParam0 = { -13.9623f, -1440.614f, 30.1015f };
+			*uParam0 = { -13.9623f, -1440.6136f, 30.1015f };
 			break;
 		
 		case 154:
@@ -35550,7 +35550,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "V_57_GangBandana", 32);
 			StringCopy(&(uParam0->f_42), "v_franklins", 32);
-			*uParam0 = { -13.9623f, -1440.614f, 30.1015f };
+			*uParam0 = { -13.9623f, -1440.6136f, 30.1015f };
 			break;
 		
 		case 155:
@@ -35558,7 +35558,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "V_57_Safari", 32);
 			StringCopy(&(uParam0->f_42), "v_franklins", 32);
-			*uParam0 = { -13.9623f, -1440.614f, 30.1015f };
+			*uParam0 = { -13.9623f, -1440.6136f, 30.1015f };
 			break;
 		
 		case 172:
@@ -35566,7 +35566,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "V_19_Trevor_Mess", 32);
 			StringCopy(&(uParam0->f_42), "v_strip3", 32);
-			*uParam0 = { 96.4811f, -1291.294f, 28.2688f };
+			*uParam0 = { 96.4811f, -1291.2944f, 28.2688f };
 			break;
 		
 		case 182:
@@ -35575,11 +35575,11 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[2 /*8*/]), "", 32);
 			uParam0->f_33 = 0;
-			*uParam0 = { 139.5795f, -3092.962f, 8.64631f };
-			uParam0->f_79 = { Vector(8.64631f, -3092.962f, 139.5795f) - Vector(4.1875f, 24f, 33.3125f) };
-			uParam0->f_82 = { Vector(8.64631f, -3092.962f, 139.5795f) + Vector(4.1875f, 24f, 33.3125f) };
-			uParam0->f_85 = { Vector(8.64631f, -3092.962f, 139.5795f) - Vector(4.1875f, 24f, 33.3125f) };
-			uParam0->f_88 = { Vector(8.64631f, -3092.962f, 139.5795f) + Vector(4.1875f, 24f, 33.3125f) };
+			*uParam0 = { 139.57953f, -3092.9624f, 8.64631f };
+			uParam0->f_79 = { Vector(8.64631f, -3092.9624f, 139.57953f) - Vector(4.1875f, 24f, 33.3125f) };
+			uParam0->f_82 = { Vector(8.64631f, -3092.9624f, 139.57953f) + Vector(4.1875f, 24f, 33.3125f) };
+			uParam0->f_85 = { Vector(8.64631f, -3092.9624f, 139.57953f) - Vector(4.1875f, 24f, 33.3125f) };
+			uParam0->f_88 = { Vector(8.64631f, -3092.9624f, 139.57953f) + Vector(4.1875f, 24f, 33.3125f) };
 			uParam0->f_91[0] = 0;
 			uParam0->f_91[1] = 1;
 			uParam0->f_91[2] = 1;
@@ -35591,9 +35591,9 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[2 /*8*/]), "", 32);
 			uParam0->f_33 = 0;
-			*uParam0 = { 203.7784f, -3131.767f, 7.041344f };
-			uParam0->f_79 = { Vector(7.041344f, -3131.767f, 203.7784f) - Vector(2.5625f, 2.75f, 4.875f) };
-			uParam0->f_82 = { Vector(7.041344f, -3131.767f, 203.7784f) + Vector(2.5625f, 2.75f, 4.875f) };
+			*uParam0 = { 203.77838f, -3131.767f, 7.041344f };
+			uParam0->f_79 = { Vector(7.041344f, -3131.767f, 203.77838f) - Vector(2.5625f, 2.75f, 4.875f) };
+			uParam0->f_82 = { Vector(7.041344f, -3131.767f, 203.77838f) + Vector(2.5625f, 2.75f, 4.875f) };
 			break;
 		
 		case 184:
@@ -35602,9 +35602,9 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[2 /*8*/]), "", 32);
 			uParam0->f_33 = 0;
-			*uParam0 = { 144.7706f, -2982.659f, 7.952507f };
-			uParam0->f_79 = { Vector(7.952507f, -2982.659f, 144.7706f) - Vector(3.125f, 3.4375f, 5.3125f) };
-			uParam0->f_82 = { Vector(7.952507f, -2982.659f, 144.7706f) + Vector(3.125f, 3.4375f, 5.3125f) };
+			*uParam0 = { 144.77055f, -2982.6594f, 7.952507f };
+			uParam0->f_79 = { Vector(7.952507f, -2982.6594f, 144.77055f) - Vector(3.125f, 3.4375f, 5.3125f) };
+			uParam0->f_82 = { Vector(7.952507f, -2982.6594f, 144.77055f) + Vector(3.125f, 3.4375f, 5.3125f) };
 			break;
 		
 		case 185:
@@ -35613,9 +35613,9 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[2 /*8*/]), "", 32);
 			uParam0->f_33 = 1;
-			*uParam0 = { -1154.965f, -1520.983f, 9.132731f };
-			uParam0->f_79 = { -1154.965f, -1520.983f, 9.132731f };
-			uParam0->f_82 = { -1158.965f, -1524.983f, 11.63273f };
+			*uParam0 = { -1154.9647f, -1520.9827f, 9.132731f };
+			uParam0->f_79 = { -1154.9647f, -1520.9827f, 9.132731f };
+			uParam0->f_82 = { -1158.9647f, -1524.9827f, 11.632731f };
 			break;
 		
 		case 187:
@@ -35624,9 +35624,9 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[2 /*8*/]), "", 32);
 			uParam0->f_33 = 1;
-			*uParam0 = { -1052.204f, 371.9537f, 67.914f };
-			uParam0->f_79 = { -1052.204f, 371.9537f, 67.914f };
-			uParam0->f_82 = { -1048.064f, 368.0221f, 70.9128f };
+			*uParam0 = { -1052.2039f, 371.9537f, 67.914f };
+			uParam0->f_79 = { -1052.2039f, 371.9537f, 67.914f };
+			uParam0->f_82 = { -1048.0645f, 368.0221f, 70.9128f };
 			break;
 		
 		case 186:
@@ -35635,8 +35635,8 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[2 /*8*/]), "", 32);
 			uParam0->f_33 = 1;
-			*uParam0 = { 1954.984f, 3792.991f, 30.3086f };
-			uParam0->f_79 = { 1954.984f, 3792.991f, 30.3086f };
+			*uParam0 = { 1954.9836f, 3792.991f, 30.3086f };
+			uParam0->f_79 = { 1954.9836f, 3792.991f, 30.3086f };
 			uParam0->f_82 = { 1983.45f, 3830.78f, 36.2726f };
 			break;
 		
@@ -35646,9 +35646,9 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[2 /*8*/]), "", 32);
 			uParam0->f_33 = 1;
-			*uParam0 = { -1122.202f, 48.5724f, 51.4652f };
-			uParam0->f_79 = { -1122.202f, 48.5724f, 51.4652f };
-			uParam0->f_82 = { -1076.233f, 92.1041f, 60.0617f };
+			*uParam0 = { -1122.2018f, 48.5724f, 51.4652f };
+			uParam0->f_79 = { -1122.2018f, 48.5724f, 51.4652f };
+			uParam0->f_82 = { -1076.2333f, 92.1041f, 60.0617f };
 			break;
 		
 		case 81:
@@ -35657,7 +35657,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "KorizTempWalls", 32);
 			StringCopy(&(uParam0->f_8[2 /*8*/]), "", 32);
 			uParam0->f_33 = 0;
-			*uParam0 = { -2199.138f, 223.4648f, 181.1118f };
+			*uParam0 = { -2199.1377f, 223.4648f, 181.1118f };
 			break;
 		
 		case 82:
@@ -35666,7 +35666,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "mic3_chopper_debris", 32);
 			StringCopy(&(uParam0->f_8[2 /*8*/]), "", 32);
 			uParam0->f_33 = 0;
-			*uParam0 = { -2242.785f, 263.4779f, 173.6154f };
+			*uParam0 = { -2242.7847f, 263.4779f, 173.6154f };
 			break;
 		
 		case 83:
@@ -35689,7 +35689,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			uParam0->f_3 = 1;
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "golfflags", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "", 32);
-			*uParam0 = { -1096.505f, 4.5754f, 49.8103f };
+			*uParam0 = { -1096.5055f, 4.5754f, 49.8103f };
 			break;
 		
 		case 86:
@@ -35717,7 +35717,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 		
 		case 191:
 			uParam0->f_3 = 1;
-			*uParam0 = { -1096.381f, -836.17f, 36.6755f };
+			*uParam0 = { -1096.3812f, -836.17f, 36.6755f };
 			uParam0->f_85 = { *uParam0 - Vector(25f, 25f, 15f) };
 			uParam0->f_88 = { *uParam0 + Vector(25f, 25f, 15f) };
 			uParam0->f_91[0] = 1;
@@ -35735,7 +35735,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 		
 		case 193:
 			uParam0->f_3 = 1;
-			*uParam0 = { 363.0175f, -1598.079f, 35.9502f };
+			*uParam0 = { 363.0175f, -1598.0793f, 35.9502f };
 			uParam0->f_85 = { *uParam0 - Vector(25f, 25f, 15f) };
 			uParam0->f_88 = { *uParam0 + Vector(25f, 25f, 15f) };
 			uParam0->f_91[0] = 1;
@@ -35747,7 +35747,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "CS3_07_MPGates", 32);
 			StringCopy(&(uParam0->f_8[2 /*8*/]), "", 32);
-			*uParam0 = { -1601.424f, 2808.213f, 16.2598f };
+			*uParam0 = { -1601.4241f, 2808.2126f, 16.2598f };
 			break;
 		
 		case 97:
@@ -35769,7 +35769,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "PAPER1_RCM_ALT", 32);
 			StringCopy(&(uParam0->f_8[2 /*8*/]), "PAPER1_RCM", 32);
-			*uParam0 = { -1459.127f, 486.1281f, 115.2016f };
+			*uParam0 = { -1459.1273f, 486.1281f, 115.2016f };
 			break;
 		
 		case 100:
@@ -35783,7 +35783,7 @@ int func_251(var uParam0, int iParam1)//Position - 0x254AC
 			uParam0->f_3 = 1;
 			StringCopy(&(uParam0->f_8[0 /*8*/]), "facelobbyfake", 32);
 			StringCopy(&(uParam0->f_8[1 /*8*/]), "facelobby", 32);
-			*uParam0 = { -1081.347f, -263.1502f, 38.7152f };
+			*uParam0 = { -1081.3467f, -263.1502f, 38.7152f };
 			break;
 		
 		case 195:
@@ -38762,7 +38762,7 @@ void func_337()//Position - 0x2CF19
 {
 	if (iLocal_66 == 0)
 	{
-		if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -1827.53f, -538.1213f, 21.83124f, -1805.926f, -555.6239f, 31.77323f, 2f, false, true, 0))
+		if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -1827.5304f, -538.1213f, 21.83124f, -1805.926f, -555.6239f, 31.773228f, 2f, false, true, 0))
 		{
 			if (iLocal_243 == 0)
 			{
@@ -39195,8 +39195,8 @@ void func_348()//Position - 0x2D7E1
 	{
 		case 0:
 			func_39("Setup START_RUNNING");
-			VEHICLE::REMOVE_VEHICLES_FROM_GENERATORS_IN_AREA(-1835.53f, -518.7238f, 25.11678f, -1822.431f, -513.8933f, 30.38676f, 0);
-			VEHICLE::SET_ALL_VEHICLE_GENERATORS_ACTIVE_IN_AREA(-1835.53f, -518.7238f, 25.11678f, -1822.431f, -513.8933f, 30.38676f, false, true);
+			VEHICLE::REMOVE_VEHICLES_FROM_GENERATORS_IN_AREA(-1835.5298f, -518.7238f, 25.116776f, -1822.431f, -513.8933f, 30.386765f, 0);
+			VEHICLE::SET_ALL_VEHICLE_GENERATORS_ACTIVE_IN_AREA(-1835.5298f, -518.7238f, 25.116776f, -1822.431f, -513.8933f, 30.386765f, false, true);
 			if (!AUDIO::IS_AUDIO_SCENE_ACTIVE("FANATIC_MIX_SCENE"))
 			{
 				AUDIO::START_AUDIO_SCENE("FANATIC_MIX_SCENE");
@@ -39298,9 +39298,9 @@ void func_348()//Position - 0x2D7E1
 				{
 					if (PLAYER::IS_PLAYER_CLIMBING(PLAYER::PLAYER_ID()))
 					{
-						if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -1799.071f, -468.6591f, 40.07401f, -1820.119f, -492.4139f, 41.74369f, 18.25f, false, true, 0))
+						if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -1799.0708f, -468.65915f, 40.074013f, -1820.1185f, -492.41388f, 41.74369f, 18.25f, false, true, 0))
 						{
-							if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -1798.076f, -468.2297f, 39.02536f, -1816.664f, -484.317f, 43.64211f, 12.5f, false, true, 0))
+							if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -1798.0756f, -468.2297f, 39.02536f, -1816.6643f, -484.31702f, 43.642105f, 12.5f, false, true, 0))
 							{
 								if (func_40())
 								{
@@ -39330,7 +39330,7 @@ void func_348()//Position - 0x2D7E1
 			}
 			if (Local_295.f_2 == 0)
 			{
-				if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -1772.762f, -532.9971f, 35.58929f, -1797.246f, -492.1292f, 39.2704f, 26f, false, true, 0) || func_349(PLAYER::PLAYER_PED_ID(), -1812.91f, -468.5253f, 41.32029f, 1) < 10f)
+				if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -1772.7617f, -532.99713f, 35.589294f, -1797.2458f, -492.1292f, 39.270397f, 26f, false, true, 0) || func_349(PLAYER::PLAYER_PED_ID(), -1812.9103f, -468.52533f, 41.32029f, 1) < 10f)
 				{
 					if (func_40())
 					{
@@ -39495,7 +39495,7 @@ void func_352()//Position - 0x2DE16
 					CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(PLAYER::PLAYER_PED_ID(), "Michael", 0, 0, 0);
 					func_39("Registered Michael");
 				}
-				iLocal_340 = PED::ADD_SCENARIO_BLOCKING_AREA(-1926.654f, -387.8897f, 46.7354f, -1897.322f, -374.5802f, 51.0241f, false, true, true, true);
+				iLocal_340 = PED::ADD_SCENARIO_BLOCKING_AREA(-1926.6536f, -387.8897f, 46.7354f, -1897.3219f, -374.5802f, 51.0241f, false, true, true, true);
 				func_356();
 				PLAYER::RESET_PLAYER_STAMINA(PLAYER::PLAYER_ID());
 				CAM::STOP_GAMEPLAY_HINT(false);
@@ -39503,11 +39503,11 @@ void func_352()//Position - 0x2DE16
 				CUTSCENE::START_CUTSCENE(0);
 				SYSTEM::WAIT(0);
 				func_304(500, 0);
-				func_307(-1873.526f, -441.6211f, 44.69363f, -1882.03f, -436.9917f, 47.48379f, 7f, -1875.09f, -431.08f, 45.21f, 236.42f, func_315(), 1, 1, 1, 0, 0);
-				func_307(-1875.815f, -443.1191f, 49.13515f, -1808.561f, -491.7887f, 36.58029f, 11f, -1875.09f, -431.08f, 45.21f, 236.42f, func_315(), 1, 1, 1, 0, 0);
+				func_307(-1873.5255f, -441.62106f, 44.693626f, -1882.03f, -436.99173f, 47.48379f, 7f, -1875.09f, -431.08f, 45.21f, 236.42f, func_315(), 1, 1, 1, 0, 0);
+				func_307(-1875.8148f, -443.1191f, 49.13515f, -1808.5607f, -491.7887f, 36.58029f, 11f, -1875.09f, -431.08f, 45.21f, 236.42f, func_315(), 1, 1, 1, 0, 0);
 				func_303(-1877.23f, -440.46f, 45.07f, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
 				func_440();
-				MISC::CLEAR_ANGLED_AREA_OF_VEHICLES(-1799.513f, -467.6459f, 43.13879f, -1789.603f, -476.6616f, 36.83729f, 7.5f, false, false, false, false, false, 0, 0);
+				MISC::CLEAR_ANGLED_AREA_OF_VEHICLES(-1799.5134f, -467.64594f, 43.13879f, -1789.6028f, -476.66156f, 36.837288f, 7.5f, false, false, false, false, false, 0, 0);
 				bLocal_61 = false;
 				func_39("Going into cutscene main loop now");
 				iLocal_55 = 1;
@@ -39890,7 +39890,7 @@ void func_363()//Position - 0x2E642
 								ENTITY::FREEZE_ENTITY_POSITION(iLocal_244, false);
 								func_351(&uLocal_78, 3, iLocal_244, "MARYANN", 0, 1);
 								func_351(&uLocal_78, 0, PLAYER::PLAYER_PED_ID(), "MICHAEL", 0, 1);
-								TASK::TASK_PLAY_ANIM_ADVANCED(iLocal_244, "rcmfanatic1", "ef_1_rcm_mary_ann_leadin", -1878.223f, -440.5181f, 46.03983f, 0f, 0f, 159.97f, 8f, -8f, -1, 262154, 0f, 2, 0);
+								TASK::TASK_PLAY_ANIM_ADVANCED(iLocal_244, "rcmfanatic1", "ef_1_rcm_mary_ann_leadin", -1878.223f, -440.51813f, 46.03983f, 0f, 0f, 159.97f, 8f, -8f, -1, 262154, 0f, 2, 0);
 								func_39("Done Mary Ann leadin anim");
 								iLocal_55 = 1;
 							}
@@ -40108,7 +40108,7 @@ void func_368()//Position - 0x2EA20
 		func_372();
 		if ((iLocal_56 != 8 && iLocal_56 != 1) && iLocal_56 != 9)
 		{
-			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(iLocal_244, -1809.173f, -549.0106f, 14.03168f, -1841.729f, -529.4575f, 33.6412f, 21.75f, false, true, 0))
+			if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(iLocal_244, -1809.1729f, -549.01056f, 14.031675f, -1841.7286f, -529.4575f, 33.641205f, 21.75f, false, true, 0))
 			{
 				if (iLocal_255 == 0)
 				{
@@ -40291,7 +40291,7 @@ void func_373()//Position - 0x2EEB0
 		case 0:
 			if (func_443(iLocal_244))
 			{
-				if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(iLocal_244, -1809.173f, -549.0106f, 14.03168f, -1841.729f, -529.4575f, 33.6412f, 21.75f, false, true, 0))
+				if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(iLocal_244, -1809.1729f, -549.01056f, 14.031675f, -1841.7286f, -529.4575f, 33.641205f, 21.75f, false, true, 0))
 				{
 					if (fLocal_253 >= 2.5f)
 					{
@@ -42392,7 +42392,7 @@ void func_424(int iParam0)//Position - 0x3171A
 			iLocal_365 = 1;
 			if (!func_431())
 			{
-				ENTITY::SET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), -1878.234f, -439.6985f, 45.0299f, true, false, false, true);
+				ENTITY::SET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), -1878.2344f, -439.6985f, 45.0299f, true, false, false, true);
 				ENTITY::SET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID(), 241.0468f);
 			}
 			MISC::CLEAR_AREA_OF_PEDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 7f, 0);
@@ -42418,10 +42418,10 @@ void func_424(int iParam0)//Position - 0x3171A
 			ENTITY::SET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), -1731.05f, -549.78f, 36.4f, true, false, false, true);
 			ENTITY::SET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID(), 104.26f);
 			TASK::CLEAR_PED_TASKS(iLocal_244);
-			ENTITY::SET_ENTITY_COORDS(iLocal_244, -1732.88f, -551.7632f, 36.5f, true, false, false, true);
+			ENTITY::SET_ENTITY_COORDS(iLocal_244, -1732.8805f, -551.76324f, 36.5f, true, false, false, true);
 			ENTITY::SET_ENTITY_HEADING(iLocal_244, 115.26f);
 			func_4(0);
-			MISC::CLEAR_AREA_OF_VEHICLES(-1806.495f, -525.8696f, 29.92591f, 100f, false, false, false, false, false, false, 0);
+			MISC::CLEAR_AREA_OF_VEHICLES(-1806.4955f, -525.8696f, 29.92591f, 100f, false, false, false, false, false, false, 0);
 			func_434();
 			func_433();
 			func_432();
@@ -42875,10 +42875,10 @@ void func_433()//Position - 0x32554
 	{
 		SYSTEM::WAIT(0);
 	}
-	MISC::CLEAR_AREA_OF_VEHICLES(1829.384f, -516.19f, 27.85739f, 7f, false, false, false, false, false, false, 0);
+	MISC::CLEAR_AREA_OF_VEHICLES(1829.3843f, -516.19f, 27.85739f, 7f, false, false, false, false, false, false, 0);
 	if (!func_7(Local_322.f_2))
 	{
-		Local_322.f_5 = { -1833.33f, -513.3883f, 28.21071f };
+		Local_322.f_5 = { -1833.33f, -513.3883f, 28.210709f };
 		Local_322.f_11 = 286.343f;
 		Local_322.f_8 = { -1721.02f, -559.7f, 37.46f };
 		Local_322.f_12 = 18f;
@@ -43036,12 +43036,12 @@ void func_440()//Position - 0x32A13
 	HUD::CLEAR_PRINTS();
 	func_39("IN INIT");
 	sLocal_348 = "Fanatic1MaryAnn";
-	MISC::CLEAR_ANGLED_AREA_OF_VEHICLES(-1877.022f, -439.5663f, 47.06139f, -1809.615f, -493.494f, 39.58508f, 12.75f, true, false, false, false, false, 0, 0);
-	MISC::CLEAR_ANGLED_AREA_OF_VEHICLES(-1816.865f, -492.4081f, 42.83916f, -1792.158f, -470.2095f, 38.51269f, 12.75f, true, false, false, false, false, 0, 0);
-	MISC::CLEAR_ANGLED_AREA_OF_VEHICLES(-1792.194f, -470.2319f, 42.51471f, -1726.926f, -552.8375f, 35.24149f, 12.75f, true, false, false, false, false, 0, 0);
-	MISC::CLEAR_ANGLED_AREA_OF_VEHICLES(-1728.024f, -561.8721f, 39.49737f, -1835.285f, -514.9333f, 26.33557f, 19.75f, true, false, false, false, false, 0, 0);
-	MISC::CLEAR_ANGLED_AREA_OF_VEHICLES(-1822.226f, -535.3092f, 31.95555f, -1890.278f, -616.2764f, 9.657555f, 39.75f, true, false, false, false, false, 0, 0);
-	MISC::CLEAR_ANGLED_AREA_OF_VEHICLES(-1867.243f, -622.763f, 13.38351f, -2013.267f, -497.9799f, 9.736394f, 23.75f, true, false, false, false, false, 0, 0);
+	MISC::CLEAR_ANGLED_AREA_OF_VEHICLES(-1877.0222f, -439.5663f, 47.061394f, -1809.6149f, -493.49396f, 39.58508f, 12.75f, true, false, false, false, false, 0, 0);
+	MISC::CLEAR_ANGLED_AREA_OF_VEHICLES(-1816.8652f, -492.40805f, 42.83916f, -1792.1584f, -470.2095f, 38.512688f, 12.75f, true, false, false, false, false, 0, 0);
+	MISC::CLEAR_ANGLED_AREA_OF_VEHICLES(-1792.1937f, -470.23193f, 42.51471f, -1726.9264f, -552.83746f, 35.24149f, 12.75f, true, false, false, false, false, 0, 0);
+	MISC::CLEAR_ANGLED_AREA_OF_VEHICLES(-1728.0237f, -561.8721f, 39.49737f, -1835.2845f, -514.9333f, 26.335573f, 19.75f, true, false, false, false, false, 0, 0);
+	MISC::CLEAR_ANGLED_AREA_OF_VEHICLES(-1822.2256f, -535.3092f, 31.955553f, -1890.2783f, -616.27637f, 9.657555f, 39.75f, true, false, false, false, false, 0, 0);
+	MISC::CLEAR_ANGLED_AREA_OF_VEHICLES(-1867.2428f, -622.763f, 13.383512f, -2013.267f, -497.97995f, 9.736394f, 23.75f, true, false, false, false, false, 0, 0);
 	PED::REMOVE_RELATIONSHIP_GROUP(iLocal_76);
 	PED::ADD_RELATIONSHIP_GROUP("FRIENDLIES", &iLocal_76);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_76, joaat("PLAYER"));
@@ -43058,8 +43058,8 @@ void func_440()//Position - 0x32A13
 	func_433();
 	func_4(0);
 	iLocal_341 = PED::ADD_SCENARIO_BLOCKING_AREA(-1979.062f, -534.325f, 10.4558f, -1973.332f, -528.2116f, 13.7014f, false, true, true, true);
-	iLocal_342 = PED::ADD_SCENARIO_BLOCKING_AREA(-1914.78f, -591.1177f, 9.8302f, -1910.329f, -586.7218f, 12.0195f, false, true, true, true);
-	iLocal_343 = PED::ADD_SCENARIO_BLOCKING_AREA(-1991.067f, -523.592f, 10.4269f, -1989.145f, -521.6824f, 11.3735f, false, true, true, true);
+	iLocal_342 = PED::ADD_SCENARIO_BLOCKING_AREA(-1914.7804f, -591.1177f, 9.8302f, -1910.3289f, -586.7218f, 12.0195f, false, true, true, true);
+	iLocal_343 = PED::ADD_SCENARIO_BLOCKING_AREA(-1991.0669f, -523.592f, 10.4269f, -1989.1447f, -521.6824f, 11.3735f, false, true, true, true);
 	Local_314.f_0 = 1;
 	Local_314.f_1 = "rcmfanatic1out_of_breath";
 	Local_314.f_2 = "p_zero_tired_enter";
@@ -43088,8 +43088,8 @@ void func_440()//Position - 0x32A13
 	Local_320.f_18 = -1000f;
 	Local_320.f_20 = 49;
 	Local_320.f_16 = MISC::GET_HASH_KEY("UpperbodyFeathered_NoLefttArm_filter");
-	Local_354 = { -1730.284f, -551.7269f, 36.3939f };
-	Local_355 = { -1870.67f, -616.2423f, 10.8184f };
+	Local_354 = { -1730.2838f, -551.7269f, 36.3939f };
+	Local_355 = { -1870.6702f, -616.2423f, 10.8184f };
 	TASK::WAYPOINT_RECORDING_GET_NUM_POINTS(sLocal_348, &iLocal_350);
 	Local_363[0 /*3*/] = { -1868.36f, -447.84f, 45.2f };
 	Local_363[1 /*3*/] = { -1835.81f, -468.73f, 43.45f };
@@ -43293,7 +43293,7 @@ int func_447(var uParam0)//Position - 0x3319B
 				iVar1++;
 			}
 			func_454(&(uParam0->f_48), "rcmfanatic1", "ef_1_rcm_mary_ann_streching_base", 0);
-			uParam0->f_48.f_5 = { -1878.223f, -440.5181f, 46.03983f };
+			uParam0->f_48.f_5 = { -1878.223f, -440.51813f, 46.03983f };
 			uParam0->f_48.f_8 = { 0f, 0f, 159.97f };
 			iLocal_52 = 1;
 			break;

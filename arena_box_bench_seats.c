@@ -1355,28 +1355,28 @@ Vector3 func_51(int iParam0)//Position - 0x1502
 			return 2800.331f, -3922.829f, 181.4558f;
 		
 		case 1:
-			return 2799.301f, -3922.829f, 181.4558f;
+			return 2799.3013f, -3922.829f, 181.4558f;
 		
 		case 2:
-			return 2798.268f, -3922.829f, 181.4558f;
+			return 2798.2683f, -3922.829f, 181.4558f;
 		
 		case 3:
-			return 2797.243f, -3922.829f, 181.4558f;
+			return 2797.2427f, -3922.829f, 181.4558f;
 		
 		case 4:
-			return 2796.213f, -3922.829f, 181.4558f;
+			return 2796.2126f, -3922.829f, 181.4558f;
 		
 		case 5:
-			return 2795.178f, -3922.829f, 181.4558f;
+			return 2795.1782f, -3922.829f, 181.4558f;
 		
 		case 6:
-			return 2794.153f, -3922.829f, 181.4558f;
+			return 2794.1526f, -3922.829f, 181.4558f;
 		
 		case 7:
-			return 2793.123f, -3922.829f, 181.4558f;
+			return 2793.1226f, -3922.829f, 181.4558f;
 		
 		case 8:
-			return 2792.087f, -3922.829f, 181.4558f;
+			return 2792.0867f, -3922.829f, 181.4558f;
 		
 		case 9:
 			return 2791.061f, -3922.829f, 181.4558f;
@@ -1515,7 +1515,7 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 					if (!Global_1931426 && ((uParam0->f_281.f_2 < 10 && iParam1->f_2[uParam0->f_281.f_2] != -1) && iParam1->f_2[uParam0->f_281.f_2] != PLAYER::PLAYER_ID()))
 					{
 						iVar3 = PLAYER::GET_PLAYER_PED(iParam1->f_2[uParam0->f_281.f_2]);
-						if (ENTITY::DOES_ENTITY_EXIST(iVar3) && !ENTITY::IS_ENTITY_IN_ANGLED_AREA(iVar3, 2797.988f, -3954.898f, 181.0005f, 2797.949f, -3930.85f, 187.4114f, 30f, false, true, 0))
+						if (ENTITY::DOES_ENTITY_EXIST(iVar3) && !ENTITY::IS_ENTITY_IN_ANGLED_AREA(iVar3, 2797.9878f, -3954.8984f, 181.00049f, 2797.9492f, -3930.8503f, 187.4114f, 30f, false, true, 0))
 						{
 							if (uParam0->f_281.f_6 == -1)
 							{
@@ -4187,7 +4187,7 @@ bool func_158()//Position - 0x55F6
 
 int func_159()//Position - 0x5605
 {
-	if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 2797.988f, -3943.898f, 181.0005f, 2797.949f, -3919.85f, 187.4114f, 30f, false, true, 0))
+	if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 2797.9878f, -3943.8984f, 181.00049f, 2797.9492f, -3919.8503f, 187.4114f, 30f, false, true, 0))
 	{
 		return 1;
 	}
@@ -4294,102 +4294,102 @@ void func_166(int iParam0, var uParam1, var uParam2)//Position - 0x588C
 		switch (iParam0)
 		{
 			case 0:
-				*uParam1 = { 2799.885f, -3923.084f, 181.5353f };
+				*uParam1 = { 2799.8845f, -3923.084f, 181.5353f };
 				*uParam2 = 0f;
 				break;
 			
 			case 1:
-				*uParam1 = { 2798.857f, -3923.084f, 181.5353f };
+				*uParam1 = { 2798.8574f, -3923.084f, 181.5353f };
 				*uParam2 = 0f;
 				break;
 			
 			case 2:
-				*uParam1 = { 2797.821f, -3923.084f, 181.5353f };
+				*uParam1 = { 2797.8206f, -3923.084f, 181.5353f };
 				*uParam2 = 0f;
 				break;
 			
 			case 3:
-				*uParam1 = { 2796.794f, -3923.084f, 181.5353f };
+				*uParam1 = { 2796.7944f, -3923.084f, 181.5353f };
 				*uParam2 = 0f;
 				break;
 			
 			case 4:
-				*uParam1 = { 2795.764f, -3923.084f, 181.5353f };
+				*uParam1 = { 2795.7644f, -3923.084f, 181.5353f };
 				*uParam2 = 0f;
 				break;
 			
 			case 5:
-				*uParam1 = { 2794.729f, -3923.084f, 181.5353f };
+				*uParam1 = { 2794.7285f, -3923.084f, 181.5353f };
 				*uParam2 = 0f;
 				break;
 			
 			case 6:
-				*uParam1 = { 2793.706f, -3923.084f, 181.5353f };
+				*uParam1 = { 2793.7056f, -3923.084f, 181.5353f };
 				*uParam2 = 0f;
 				break;
 			
 			case 7:
-				*uParam1 = { 2792.677f, -3923.084f, 181.5353f };
+				*uParam1 = { 2792.6775f, -3923.084f, 181.5353f };
 				*uParam2 = 0f;
 				break;
 			
 			case 8:
-				*uParam1 = { 2791.638f, -3923.084f, 181.5353f };
+				*uParam1 = { 2791.6384f, -3923.084f, 181.5353f };
 				*uParam2 = 0f;
 				break;
 			
 			case 9:
-				*uParam1 = { 2790.611f, -3923.084f, 181.5353f };
+				*uParam1 = { 2790.6106f, -3923.084f, 181.5353f };
 				*uParam2 = 0f;
 				break;
 			
 			case 10:
-				*uParam1 = { 2799.913f, -3924.579f, 182.4198f };
+				*uParam1 = { 2799.913f, -3924.5786f, 182.4198f };
 				*uParam2 = 0f;
 				break;
 			
 			case 11:
-				*uParam1 = { 2798.89f, -3924.579f, 182.4198f };
+				*uParam1 = { 2798.89f, -3924.5786f, 182.4198f };
 				*uParam2 = 0f;
 				break;
 			
 			case 12:
-				*uParam1 = { 2797.817f, -3924.579f, 182.4198f };
+				*uParam1 = { 2797.817f, -3924.5786f, 182.4198f };
 				*uParam2 = 0f;
 				break;
 			
 			case 13:
-				*uParam1 = { 2796.821f, -3924.579f, 182.4198f };
+				*uParam1 = { 2796.821f, -3924.5786f, 182.4198f };
 				*uParam2 = 0f;
 				break;
 			
 			case 14:
-				*uParam1 = { 2795.784f, -3924.579f, 182.4198f };
+				*uParam1 = { 2795.784f, -3924.5786f, 182.4198f };
 				*uParam2 = 0f;
 				break;
 			
 			case 15:
-				*uParam1 = { 2794.75f, -3924.579f, 182.4198f };
+				*uParam1 = { 2794.75f, -3924.5786f, 182.4198f };
 				*uParam2 = 0f;
 				break;
 			
 			case 16:
-				*uParam1 = { 2793.711f, -3924.579f, 182.4198f };
+				*uParam1 = { 2793.711f, -3924.5786f, 182.4198f };
 				*uParam2 = 0f;
 				break;
 			
 			case 17:
-				*uParam1 = { 2792.696f, -3924.579f, 182.4198f };
+				*uParam1 = { 2792.696f, -3924.5786f, 182.4198f };
 				*uParam2 = 0f;
 				break;
 			
 			case 18:
-				*uParam1 = { 2791.635f, -3924.579f, 182.4198f };
+				*uParam1 = { 2791.635f, -3924.5786f, 182.4198f };
 				*uParam2 = 0f;
 				break;
 			
 			case 19:
-				*uParam1 = { 2790.644f, -3924.579f, 182.4198f };
+				*uParam1 = { 2790.644f, -3924.5786f, 182.4198f };
 				*uParam2 = 0f;
 				break;
 		}
@@ -4449,52 +4449,52 @@ void func_166(int iParam0, var uParam1, var uParam2)//Position - 0x588C
 				break;
 			
 			case 10:
-				*uParam1 = { 2799.913f, -3924.579f, 182.4198f };
+				*uParam1 = { 2799.913f, -3924.5786f, 182.4198f };
 				*uParam2 = 0f;
 				break;
 			
 			case 11:
-				*uParam1 = { 2798.89f, -3924.579f, 182.4198f };
+				*uParam1 = { 2798.89f, -3924.5786f, 182.4198f };
 				*uParam2 = 0f;
 				break;
 			
 			case 12:
-				*uParam1 = { 2797.817f, -3924.579f, 182.4198f };
+				*uParam1 = { 2797.817f, -3924.5786f, 182.4198f };
 				*uParam2 = 0f;
 				break;
 			
 			case 13:
-				*uParam1 = { 2796.821f, -3924.579f, 182.4198f };
+				*uParam1 = { 2796.821f, -3924.5786f, 182.4198f };
 				*uParam2 = 0f;
 				break;
 			
 			case 14:
-				*uParam1 = { 2795.784f, -3924.579f, 182.4198f };
+				*uParam1 = { 2795.784f, -3924.5786f, 182.4198f };
 				*uParam2 = 0f;
 				break;
 			
 			case 15:
-				*uParam1 = { 2794.75f, -3924.579f, 182.4198f };
+				*uParam1 = { 2794.75f, -3924.5786f, 182.4198f };
 				*uParam2 = 0f;
 				break;
 			
 			case 16:
-				*uParam1 = { 2793.711f, -3924.579f, 182.4198f };
+				*uParam1 = { 2793.711f, -3924.5786f, 182.4198f };
 				*uParam2 = 0f;
 				break;
 			
 			case 17:
-				*uParam1 = { 2792.696f, -3924.579f, 182.4198f };
+				*uParam1 = { 2792.696f, -3924.5786f, 182.4198f };
 				*uParam2 = 0f;
 				break;
 			
 			case 18:
-				*uParam1 = { 2791.635f, -3924.579f, 182.4198f };
+				*uParam1 = { 2791.635f, -3924.5786f, 182.4198f };
 				*uParam2 = 0f;
 				break;
 			
 			case 19:
-				*uParam1 = { 2790.644f, -3924.579f, 182.4198f };
+				*uParam1 = { 2790.644f, -3924.5786f, 182.4198f };
 				*uParam2 = 0f;
 				break;
 			}

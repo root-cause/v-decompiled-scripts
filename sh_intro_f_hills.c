@@ -148,20 +148,20 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_44 = 0;
 	iLocal_50 = -1;
 	func_171(&uLocal_54);
-	func_170(&uLocal_54, 18.04353f, 554.7925f, 176.2352f);
-	func_170(&uLocal_54, 20.19232f, 549.8135f, 175.031f);
-	func_170(&uLocal_54, 28.21084f, 545.1664f, 175.2236f);
-	func_170(&uLocal_54, 29.46619f, 542.4091f, 175.2239f);
-	func_170(&uLocal_54, 28.43769f, 540.626f, 175.2245f);
-	func_170(&uLocal_54, 30.00231f, 537.1512f, 175.5443f);
-	func_170(&uLocal_54, 25.26361f, 534.6514f, 171.228f);
-	func_170(&uLocal_54, 31.4003f, 521.6f, 169.6277f);
-	func_170(&uLocal_54, -5.66947f, 504.5068f, 169.6277f);
-	func_170(&uLocal_54, -10.3168f, 506.9231f, 169.6277f);
-	func_170(&uLocal_54, -11.23373f, 508.8496f, 169.6277f);
+	func_170(&uLocal_54, 18.04353f, 554.79254f, 176.23518f);
+	func_170(&uLocal_54, 20.19232f, 549.81354f, 175.03096f);
+	func_170(&uLocal_54, 28.21084f, 545.16644f, 175.22356f);
+	func_170(&uLocal_54, 29.46619f, 542.40906f, 175.22392f);
+	func_170(&uLocal_54, 28.43769f, 540.62604f, 175.22446f);
+	func_170(&uLocal_54, 30.00231f, 537.1512f, 175.54428f);
+	func_170(&uLocal_54, 25.26361f, 534.6514f, 171.22798f);
+	func_170(&uLocal_54, 31.4003f, 521.60004f, 169.62772f);
+	func_170(&uLocal_54, -5.66947f, 504.50677f, 169.6277f);
+	func_170(&uLocal_54, -10.3168f, 506.92307f, 169.6277f);
+	func_170(&uLocal_54, -11.23373f, 508.84964f, 169.6277f);
 	func_170(&uLocal_54, -17.29933f, 512.3869f, 174.628f);
-	func_170(&uLocal_54, -25.41821f, 529.342f, 170.8688f);
-	func_170(&uLocal_54, -12.27683f, 534.626f, 171.2278f);
+	func_170(&uLocal_54, -25.41821f, 529.34204f, 170.86879f);
+	func_170(&uLocal_54, -12.27683f, 534.62604f, 171.22781f);
 	func_169(&uLocal_54);
 	while (true)
 	{
@@ -189,7 +189,7 @@ void __EntryFunction__()//Position - 0x0
 				if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 				{
 					Var0 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
-					Var1 = { -2.62564f, 528.3256f, 178.392f };
+					Var1 = { -2.62564f, 528.3256f, 178.39198f };
 					if (func_167(Var0, Var1, 65f))
 					{
 						if (Var0.f_2 > 168f && Var0.f_2 < 181f)
@@ -305,8 +305,8 @@ void func_2()//Position - 0x3A0
 							PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), false, 0);
 						}
 						PLAYER::CLEAR_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID());
-						MISC::CLEAR_AREA_OF_COPS(-2.62564f, 528.3256f, 178.392f, 150f, 0);
-						MISC::CLEAR_AREA_OF_PROJECTILES(-2.62564f, 528.3256f, 178.392f, 100f, 0);
+						MISC::CLEAR_AREA_OF_COPS(-2.62564f, 528.3256f, 178.39198f, 150f, 0);
+						MISC::CLEAR_AREA_OF_PROJECTILES(-2.62564f, 528.3256f, 178.39198f, 100f, 0);
 						if (!CAM::DOES_CAM_EXIST(iLocal_49))
 						{
 							iLocal_49 = CAM::CREATE_CAM("DEFAULT_SCRIPTED_CAMERA", true);

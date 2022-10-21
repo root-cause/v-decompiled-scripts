@@ -1457,7 +1457,7 @@ void func_40()//Position - 0x14A2
 	if (ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()) && !ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
 	{
 		Var1 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
-		if (SYSTEM::VDIST(-1702.695f, 4666.941f, 22.7091f, Var1) < 8f)
+		if (SYSTEM::VDIST(-1702.6951f, 4666.9414f, 22.7091f, Var1) < 8f)
 		{
 			bVar0 = true;
 		}
@@ -2095,11 +2095,11 @@ void func_79()//Position - 0x25A1
 			MISC::CLEAR_AREA_OF_VEHICLES(-1702.46f, 4666.36f, 22.1255f, 10f, false, false, false, false, false, false, 0);
 			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_83))
 			{
-				iLocal_83 = VEHICLE::CREATE_VEHICLE(joaat("blazer"), -1707.434f, 4666.563f, 22.1095f, 323.2491f, true, true, false);
+				iLocal_83 = VEHICLE::CREATE_VEHICLE(joaat("blazer"), -1707.4337f, 4666.5625f, 22.1095f, 323.2491f, true, true, false);
 			}
 			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_84))
 			{
-				iLocal_84 = VEHICLE::CREATE_VEHICLE(joaat("journey"), -1702.695f, 4666.941f, 22.7091f, 80.03f, true, true, false);
+				iLocal_84 = VEHICLE::CREATE_VEHICLE(joaat("journey"), -1702.6951f, 4666.9414f, 22.7091f, 80.03f, true, true, false);
 				VEHICLE::SET_VEHICLE_HAS_STRONG_AXLES(iLocal_84, true);
 			}
 			iLocal_87 = 1;

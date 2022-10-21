@@ -76312,32 +76312,32 @@ Vector3 func_433(int iParam0, int iParam1)//Position - 0x5B2D3
 			switch (iParam1)
 			{
 				case 0:
-					return -210.4709f, -1306.318f, 30.336f;
+					return -210.4709f, -1306.3175f, 30.336f;
 				
 				case 1:
-					return -1598.327f, -1040.538f, 12.0183f;
+					return -1598.3271f, -1040.5378f, 12.0183f;
 				
 				case 2:
 					return -21.2711f, -1732.453f, 28.304f;
 				
 				case 3:
-					return 1992.482f, 3058.078f, 46.0576f;
+					return 1992.482f, 3058.0784f, 46.0576f;
 				
 				case 4:
-					return 960.3523f, -1745.844f, 30.2208f;
+					return 960.3523f, -1745.8442f, 30.2208f;
 				
 				case 5:
 					return 775.7347f, -1367.343f, 25.5669f;
 				
 				case 6:
-					return -321.3307f, -1495.598f, 29.6536f;
+					return -321.3307f, -1495.5978f, 29.6536f;
 				
 				case 7:
-					return -210.4709f, -1306.318f, 30.336f;
+					return -210.4709f, -1306.3175f, 30.336f;
 				
 				default:
 			}
-			return -210.4709f, -1306.318f, 30.336f;
+			return -210.4709f, -1306.3175f, 30.336f;
 		
 		default:
 	}

@@ -3075,34 +3075,34 @@ void func_88(var uParam0)//Position - 0x3492
 	switch (func_92())
 	{
 		case 5:
-			*uParam0 = { 178.0117f, 202.3507f, 102.9037f };
-			uParam0->f_3 = { 514.5839f, 78.78811f, 111.1864f };
+			*uParam0 = { 178.01172f, 202.3507f, 102.90367f };
+			uParam0->f_3 = { 514.58386f, 78.78811f, 111.18641f };
 			uParam0->f_6 = 131.0625f;
 			break;
 		
 		case 6:
-			*uParam0 = { 418.5796f, -636.2899f, 25.43758f };
-			uParam0->f_3 = { 400.2468f, -826.1611f, 44.10468f };
+			*uParam0 = { 418.57962f, -636.2899f, 25.437576f };
+			uParam0->f_3 = { 400.24683f, -826.16113f, 44.10468f };
 			uParam0->f_6 = 95.375f;
 			break;
 		
 		case 7:
-			*uParam0 = { -1368.458f, -238.4543f, 40.36241f };
-			uParam0->f_3 = { -1475.669f, -127.621f, 65.65466f };
+			*uParam0 = { -1368.4578f, -238.45432f, 40.36241f };
+			uParam0->f_3 = { -1475.6691f, -127.62102f, 65.65466f };
 			uParam0->f_6 = 158.25f;
 			break;
 		
 		case 11:
 			if (func_89(func_92(), Var0))
 			{
-				*uParam0 = { -602.3785f, 258.2744f, 79.0293f };
-				uParam0->f_3 = { -469.064f, 244.8735f, 97.88577f };
+				*uParam0 = { -602.37854f, 258.27438f, 79.029305f };
+				uParam0->f_3 = { -469.06403f, 244.8735f, 97.885765f };
 				uParam0->f_6 = 70.125f;
 			}
 			else
 			{
 				*uParam0 = { -621.5889f, 262.0915f, 78.67405f };
-				uParam0->f_3 = { -494.7666f, 248.2196f, 97.88564f };
+				uParam0->f_3 = { -494.76657f, 248.21959f, 97.885635f };
 				uParam0->f_6 = 70.125f;
 			}
 			break;
@@ -3110,14 +3110,14 @@ void func_88(var uParam0)//Position - 0x3492
 		case 12:
 			if (func_89(func_92(), Var0))
 			{
-				*uParam0 = { 137.2073f, 392.7482f, 110.9443f };
-				uParam0->f_3 = { 297.2104f, 336.0269f, 120.3525f };
+				*uParam0 = { 137.2073f, 392.7482f, 110.94427f };
+				uParam0->f_3 = { 297.21042f, 336.02692f, 120.35248f };
 				uParam0->f_6 = 95.375f;
 			}
 			else
 			{
-				*uParam0 = { 191.3225f, 364.9949f, 104.5153f };
-				uParam0->f_3 = { 320.3688f, 325.2877f, 120.2689f };
+				*uParam0 = { 191.32254f, 364.9949f, 104.51527f };
+				uParam0->f_3 = { 320.3688f, 325.28772f, 120.26892f };
 				uParam0->f_6 = 70.125f;
 			}
 			break;
@@ -3125,21 +3125,21 @@ void func_88(var uParam0)//Position - 0x3492
 		case 13:
 			if (func_89(func_92(), Var0))
 			{
-				*uParam0 = { -221.6586f, 6310.131f, 28.40555f };
-				uParam0->f_3 = { -319.8287f, 6211.665f, 46.19521f };
+				*uParam0 = { -221.65858f, 6310.1313f, 28.405548f };
+				uParam0->f_3 = { -319.82867f, 6211.6646f, 46.195206f };
 				uParam0->f_6 = 95.375f;
 			}
 			else
 			{
-				*uParam0 = { -260.2809f, 6273.981f, 28.42822f };
-				uParam0->f_3 = { -371.5657f, 6164.586f, 46.1894f };
+				*uParam0 = { -260.2809f, 6273.9814f, 28.428225f };
+				uParam0->f_3 = { -371.56567f, 6164.586f, 46.189396f };
 				uParam0->f_6 = 95.375f;
 			}
 			break;
 		
 		case 14:
-			*uParam0 = { -2313.765f, 4159.022f, 29.59011f };
-			uParam0->f_3 = { -2140.887f, 4437.057f, 72.619f };
+			*uParam0 = { -2313.7651f, 4159.022f, 29.590107f };
+			uParam0->f_3 = { -2140.8867f, 4437.0566f, 72.618996f };
 			uParam0->f_6 = 113.5f;
 			break;
 	}
@@ -3172,7 +3172,7 @@ int func_89(int iParam0, struct<3> Param1)//Position - 0x37F2
 			break;
 		
 		case 7:
-			if (func_90(func_91(Param1 - Vector(0f, -215.2002f, -1423.254f)), func_91(Vector(0f, -215.1443f, -1420.71f) - Vector(0f, -215.2002f, -1423.254f))) < 0f)
+			if (func_90(func_91(Param1 - Vector(0f, -215.2002f, -1423.2535f)), func_91(Vector(0f, -215.1443f, -1420.7098f) - Vector(0f, -215.2002f, -1423.2535f))) < 0f)
 			{
 				return 1;
 			}
@@ -3205,7 +3205,7 @@ int func_89(int iParam0, struct<3> Param1)//Position - 0x37F2
 			break;
 		
 		case 13:
-			if (func_90(func_91(Param1 - Vector(0f, 6256.5f, -299.9329f)), func_91(Vector(0f, 6255.179f, -301.1977f) - Vector(0f, 6256.5f, -299.9329f))) < 0f)
+			if (func_90(func_91(Param1 - Vector(0f, 6256.4995f, -299.9329f)), func_91(Vector(0f, 6255.1787f, -301.1977f) - Vector(0f, 6256.4995f, -299.9329f))) < 0f)
 			{
 				return 1;
 			}
@@ -3216,7 +3216,7 @@ int func_89(int iParam0, struct<3> Param1)//Position - 0x37F2
 			break;
 		
 		case 14:
-			if (func_90(func_91(Param1 - Vector(0f, 4287.951f, -2200.204f)), func_91(Vector(0f, 4289.739f, -2199.26f) - Vector(0f, 4287.951f, -2200.204f))) < 0f)
+			if (func_90(func_91(Param1 - Vector(0f, 4287.951f, -2200.2039f)), func_91(Vector(0f, 4289.739f, -2199.2598f) - Vector(0f, 4287.951f, -2200.2039f))) < 0f)
 			{
 				return 1;
 			}

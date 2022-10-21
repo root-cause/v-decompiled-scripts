@@ -1038,7 +1038,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_42 = 49;
 	iLocal_43 = 64;
 	iLocal_48 = joaat("p_amb_phone_01");
-	Local_971 = { 693.1158f, -1012.418f, 21.72802f };
+	Local_971 = { 693.11584f, -1012.41815f, 21.72802f };
 	Local_984 = { 692.8695f, -998.7867f, 22.3201f };
 	Local_985 = { 693.3784f, -1025.671f, 21.506f };
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(3))
@@ -1640,7 +1640,7 @@ void func_14(char* sParam0)//Position - 0xC8B
 	}
 	else if (func_17())
 	{
-		func_15(229.1676f, -1614.979f, 28.2892f, 142.5156f);
+		func_15(229.1676f, -1614.9794f, 28.2892f, 142.5156f);
 	}
 	func_107();
 }
@@ -1669,7 +1669,7 @@ int func_17()//Position - 0xDF5
 	{
 		if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 		{
-			if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 226.6765f, -1668.942f, 25.46082f, 185.6446f, -1635.836f, 39.29184f, 57.75f, false, true, 0))
+			if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 226.67654f, -1668.9421f, 25.460825f, 185.64464f, -1635.8359f, 39.29184f, 57.75f, false, true, 0))
 			{
 				return 1;
 			}
@@ -1837,7 +1837,7 @@ int func_25(int iParam0, var uParam1, float fParam2)//Position - 0x11C8
 			break;
 		
 		case 8:
-			*uParam1 = { -90.0089f, -1324.195f, 28.3203f };
+			*uParam1 = { -90.0089f, -1324.1947f, 28.3203f };
 			*fParam2 = 194.1887f;
 			return 1;
 			break;
@@ -1857,13 +1857,13 @@ int func_25(int iParam0, var uParam1, float fParam2)//Position - 0x11C8
 			break;
 		
 		case 14:
-			*uParam1 = { 1432.34f, -1887.383f, 70.5768f };
+			*uParam1 = { 1432.3402f, -1887.3832f, 70.5768f };
 			*fParam2 = 350.0509f;
 			return 1;
 			break;
 		
 		case 15:
-			*uParam1 = { 1666.204f, 1967.25f, 143.3213f };
+			*uParam1 = { 1666.204f, 1967.2504f, 143.3213f };
 			*fParam2 = 0.7896f;
 			return 1;
 			break;
@@ -1875,13 +1875,13 @@ int func_25(int iParam0, var uParam1, float fParam2)//Position - 0x11C8
 			break;
 		
 		case 16:
-			*uParam1 = { 135.055f, -1759.64f, 27.8957f };
+			*uParam1 = { 135.055f, -1759.6396f, 27.8957f };
 			*fParam2 = -129f;
 			return 1;
 			break;
 		
 		case 17:
-			*uParam1 = { 687.6992f, -1744.03f, 28.3624f };
+			*uParam1 = { 687.6992f, -1744.0299f, 28.3624f };
 			*fParam2 = 267.1409f;
 			return 1;
 			break;
@@ -1899,7 +1899,7 @@ int func_25(int iParam0, var uParam1, float fParam2)//Position - 0x11C8
 			break;
 		
 		case 20:
-			*uParam1 = { 1555.958f, 953.6136f, 77.2063f };
+			*uParam1 = { 1555.9575f, 953.6136f, 77.2063f };
 			*fParam2 = 152.8118f;
 			return 1;
 			break;
@@ -1941,7 +1941,7 @@ int func_25(int iParam0, var uParam1, float fParam2)//Position - 0x11C8
 			break;
 		
 		case 25:
-			*uParam1 = { 72.2278f, -1464.68f, 28.2915f };
+			*uParam1 = { 72.2278f, -1464.6798f, 28.2915f };
 			*fParam2 = 156.8827f;
 			return 1;
 			break;
@@ -1953,7 +1953,7 @@ int func_25(int iParam0, var uParam1, float fParam2)//Position - 0x11C8
 			break;
 		
 		case 26:
-			*uParam1 = { 257.9167f, -1120.786f, 28.3684f };
+			*uParam1 = { 257.9167f, -1120.7855f, 28.3684f };
 			*fParam2 = 97.2736f;
 			return 1;
 			break;
@@ -2025,19 +2025,19 @@ int func_25(int iParam0, var uParam1, float fParam2)//Position - 0x11C8
 			break;
 		
 		case 59:
-			*uParam1 = { -1771.802f, 794.4316f, 138.4211f };
+			*uParam1 = { -1771.8015f, 794.4316f, 138.4211f };
 			*fParam2 = 128.9946f;
 			return 1;
 			break;
 		
 		case 60:
-			*uParam1 = { 1495.595f, -1848.821f, 70.2075f };
+			*uParam1 = { 1495.5953f, -1848.8207f, 70.2075f };
 			*fParam2 = 32.2721f;
 			return 1;
 			break;
 		
 		case 38:
-			*uParam1 = { 2897.554f, 4032.241f, 50.1419f };
+			*uParam1 = { 2897.5544f, 4032.241f, 50.1419f };
 			*fParam2 = 192.8091f;
 			return 1;
 			break;
@@ -2061,13 +2061,13 @@ int func_25(int iParam0, var uParam1, float fParam2)//Position - 0x11C8
 			break;
 		
 		case 42:
-			*uParam1 = { Vector(4.0205f, -2975.341f, 798.4536f) + Vector(1f, 0f, 0f) };
+			*uParam1 = { Vector(4.0205f, -2975.3408f, 798.4536f) + Vector(1f, 0f, 0f) };
 			*fParam2 = 90f;
 			return 1;
 			break;
 		
 		case 43:
-			*uParam1 = { 709.0244f, -2916.479f, 5.0589f };
+			*uParam1 = { 709.0244f, -2916.4788f, 5.0589f };
 			*fParam2 = 355.326f;
 			return 1;
 			break;
@@ -2079,7 +2079,7 @@ int func_25(int iParam0, var uParam1, float fParam2)//Position - 0x11C8
 			break;
 		
 		case 45:
-			*uParam1 = { 595.2742f, -2819.183f, 5.0559f };
+			*uParam1 = { 595.2742f, -2819.1826f, 5.0559f };
 			*fParam2 = 46.8853f;
 			return 1;
 			break;
@@ -2097,7 +2097,7 @@ int func_25(int iParam0, var uParam1, float fParam2)//Position - 0x11C8
 			break;
 		
 		case 49:
-			*uParam1 = { 3321.537f, 4975.455f, 25.9097f };
+			*uParam1 = { 3321.5369f, 4975.4546f, 25.9097f };
 			*fParam2 = 221.228f;
 			return 1;
 			break;
@@ -2127,7 +2127,7 @@ int func_25(int iParam0, var uParam1, float fParam2)//Position - 0x11C8
 			break;
 		
 		case 66:
-			*uParam1 = { 262.5499f, -2540.15f, 4.8433f };
+			*uParam1 = { 262.5499f, -2540.1504f, 4.8433f };
 			*fParam2 = -64.1366f;
 			return 1;
 			break;
@@ -2151,7 +2151,7 @@ int func_25(int iParam0, var uParam1, float fParam2)//Position - 0x11C8
 			break;
 		
 		case 57:
-			*uParam1 = { 37.5988f, -1351.52f, 28.2954f };
+			*uParam1 = { 37.5988f, -1351.5203f, 28.2954f };
 			*fParam2 = 90.0339f;
 			return 1;
 			break;
@@ -2187,7 +2187,7 @@ int func_25(int iParam0, var uParam1, float fParam2)//Position - 0x11C8
 			break;
 		
 		case 64:
-			*uParam1 = { 2091.258f, 4714.852f, 40.1936f };
+			*uParam1 = { 2091.2583f, 4714.852f, 40.1936f };
 			*fParam2 = 136.0867f;
 			return 1;
 			break;
@@ -2660,7 +2660,7 @@ void func_45()//Position - 0x2140
 								break;
 							
 							case 3:
-								if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(iVar0, 697.6884f, -1013.364f, 27.4968f, 688.3482f, -1013.179f, 22.32968f, 29.25f, false, true, 0))
+								if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(iVar0, 697.6884f, -1013.3638f, 27.496796f, 688.3482f, -1013.17914f, 22.329676f, 29.25f, false, true, 0))
 								{
 									if (SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(iVar0, true), Local_984) < SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(iVar0, true), Local_985))
 									{
@@ -4430,12 +4430,12 @@ void func_99()//Position - 0x4112
 		{
 			SYSTEM::WAIT(0);
 		}
-		Var0 = { 202.0504f, -1655.773f, 28.8031f };
+		Var0 = { 202.0504f, -1655.7734f, 28.8031f };
 		iLocal_1005 = PED::ADD_SCENARIO_BLOCKING_AREA(Var0 - Vector(10f, 30f, 30f), Var0 + Vector(10f, 30f, 30f), false, true, true, true);
 		MISC::CLEAR_AREA(Var0, 20f, true, false, false, false);
 		iLocal_802[0] = PED::CREATE_PED(21, joaat("S_M_Y_Fireman_01"), 215.7186f, -1644.622f, 28.7719f, 357.5736f, true, true);
-		iLocal_802[1] = PED::CREATE_PED(21, joaat("S_M_Y_Fireman_01"), 214.4446f, -1643.72f, 28.7776f, 279.1055f, true, true);
-		iLocal_802[2] = PED::CREATE_PED(21, joaat("S_M_Y_Fireman_01"), 217.0826f, -1644.117f, 28.7155f, 72.8262f, true, true);
+		iLocal_802[1] = PED::CREATE_PED(21, joaat("S_M_Y_Fireman_01"), 214.4446f, -1643.7203f, 28.7776f, 279.1055f, true, true);
+		iLocal_802[2] = PED::CREATE_PED(21, joaat("S_M_Y_Fireman_01"), 217.0826f, -1644.1172f, 28.7155f, 72.8262f, true, true);
 		iVar1 = 0;
 		while (iVar1 <= (iLocal_802 - 1))
 		{
@@ -4452,7 +4452,7 @@ void func_99()//Position - 0x4112
 		iLocal_969 = -1;
 		if (func_106())
 		{
-			func_105(354.3055f, -1722.206f, 28.259f, 109.6154f, 1, 0);
+			func_105(354.3055f, -1722.2062f, 28.259f, 109.6154f, 1, 0);
 			func_102(0, -1, 1);
 		}
 	}
@@ -4683,7 +4683,7 @@ void func_111()//Position - 0x4771
 {
 	if (iLocal_976 == 1)
 	{
-		func_15(354.3055f, -1722.206f, 28.259f, 109.6154f);
+		func_15(354.3055f, -1722.2062f, 28.259f, 109.6154f);
 	}
 }
 

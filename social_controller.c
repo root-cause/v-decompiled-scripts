@@ -3552,11 +3552,11 @@ Vector3 func_86(int iParam0)//Position - 0x3A09
 		return 0f, 0f, 0f;
 	}
 	Var0 = { func_85(iParam0, "start") };
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var0, -2233.327f, 2436.134f, -14.65155f, -2229.56f, 2399.576f, 11.99761f, 24f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var0, -2233.327f, 2436.1338f, -14.65155f, -2229.5598f, 2399.5764f, 11.997612f, 24f, false, true))
 	{
 		Var0 = { -2303.54f, 2428.09f, 2.02f };
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var0, 603.6218f, 5573.046f, 694.484f, 594.2379f, 5542.792f, 727.479f, 33.5f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var0, 603.6218f, 5573.0464f, 694.484f, 594.23785f, 5542.7915f, 727.479f, 33.5f, false, true))
 	{
 		Var0 = { 502.6f, 5537.06f, 777.05f };
 	}
@@ -11344,11 +11344,11 @@ int func_246(var uParam0)//Position - 0xC66A
 	}
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		iVar0 = VEHICLE::CREATE_VEHICLE(*uParam0, (660.3092f + IntToFloat(PLAYER::PLAYER_ID() * 10)), 4977.608f, 1222.024f, 0f, false, false, false);
+		iVar0 = VEHICLE::CREATE_VEHICLE(*uParam0, (660.3092f + IntToFloat(PLAYER::PLAYER_ID() * 10)), 4977.6084f, 1222.0242f, 0f, false, false, false);
 	}
 	else
 	{
-		iVar0 = VEHICLE::CREATE_VEHICLE(*uParam0, 660.3092f, 4977.608f, 1222.024f, 0f, false, false, false);
+		iVar0 = VEHICLE::CREATE_VEHICLE(*uParam0, 660.3092f, 4977.6084f, 1222.0242f, 0f, false, false, false);
 	}
 	if (VEHICLE::GET_NUM_MOD_KITS(iVar0) > 0)
 	{

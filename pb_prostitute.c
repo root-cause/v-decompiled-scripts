@@ -2589,11 +2589,11 @@ Vector3 func_61(int iParam0)//Position - 0x1E5F
 	switch (iParam0)
 	{
 		case 0:
-			Var0 = { -1449.075f, -634.0139f, 29.094f };
+			Var0 = { -1449.0748f, -634.0139f, 29.094f };
 			break;
 		
 		case 1:
-			Var0 = { -1266.291f, -1361.175f, 3.222f };
+			Var0 = { -1266.2913f, -1361.1747f, 3.222f };
 			break;
 		
 		case 2:
@@ -2601,7 +2601,7 @@ Vector3 func_61(int iParam0)//Position - 0x1E5F
 			break;
 		
 		case 3:
-			Var0 = { -1310.978f, -235.9881f, 41.1789f };
+			Var0 = { -1310.9777f, -235.9881f, 41.1789f };
 			break;
 		
 		case 4:
@@ -2609,15 +2609,15 @@ Vector3 func_61(int iParam0)//Position - 0x1E5F
 			break;
 		
 		case 5:
-			Var0 = { -192.1116f, -1332.385f, 30.3304f };
+			Var0 = { -192.1116f, -1332.3854f, 30.3304f };
 			break;
 		
 		case 6:
-			Var0 = { 196.6188f, -1850.396f, 26.2005f };
+			Var0 = { 196.6188f, -1850.3964f, 26.2005f };
 			break;
 		
 		case 7:
-			Var0 = { 322.9744f, -1000.23f, 28.2401f };
+			Var0 = { 322.9744f, -1000.2299f, 28.2401f };
 			break;
 		
 		case 8:
@@ -2625,11 +2625,11 @@ Vector3 func_61(int iParam0)//Position - 0x1E5F
 			break;
 		
 		case 9:
-			Var0 = { -1800.76f, -404.1213f, 43.8109f };
+			Var0 = { -1800.7599f, -404.1213f, 43.8109f };
 			break;
 		
 		case 10:
-			Var0 = { 1421.334f, -1618.83f, 58.3324f };
+			Var0 = { 1421.3337f, -1618.8297f, 58.3324f };
 			break;
 		
 		case 11:
@@ -2641,23 +2641,23 @@ Vector3 func_61(int iParam0)//Position - 0x1E5F
 			break;
 		
 		case 13:
-			Var0 = { 1591.921f, 6516.841f, 16.3155f };
+			Var0 = { 1591.9209f, 6516.8413f, 16.3155f };
 			break;
 		
 		case 14:
-			Var0 = { 1278.73f, 3624.059f, 32.0408f };
+			Var0 = { 1278.7299f, 3624.059f, 32.0408f };
 			break;
 		
 		case 15:
-			Var0 = { 2464.667f, 5526.815f, 44.2143f };
+			Var0 = { 2464.6675f, 5526.8154f, 44.2143f };
 			break;
 		
 		case 16:
-			Var0 = { 2052.58f, 4637.477f, 39.642f };
+			Var0 = { 2052.5796f, 4637.4766f, 39.642f };
 			break;
 		
 		case 17:
-			Var0 = { 1435.608f, 4483.951f, 49.2513f };
+			Var0 = { 1435.6084f, 4483.9507f, 49.2513f };
 			break;
 		
 		case 18:
@@ -2665,7 +2665,7 @@ Vector3 func_61(int iParam0)//Position - 0x1E5F
 			break;
 		
 		case 19:
-			Var0 = { 16.9496f, 3632.35f, 39.2848f };
+			Var0 = { 16.9496f, 3632.3499f, 39.2848f };
 			break;
 		
 		case 20:
@@ -2677,35 +2677,35 @@ Vector3 func_61(int iParam0)//Position - 0x1E5F
 			break;
 		
 		case 22:
-			Var0 = { -1663.641f, 2477.778f, 30.9941f };
+			Var0 = { -1663.6412f, 2477.778f, 30.9941f };
 			break;
 		
 		case 23:
-			Var0 = { -2505.643f, 3677.825f, 12.1719f };
+			Var0 = { -2505.643f, 3677.8252f, 12.1719f };
 			break;
 		
 		case 24:
-			Var0 = { -2179.209f, 4264.236f, 47.9904f };
+			Var0 = { -2179.2092f, 4264.236f, 47.9904f };
 			break;
 		
 		case 25:
-			Var0 = { -758.9616f, 5612.78f, 29.4536f };
+			Var0 = { -758.9616f, 5612.7803f, 29.4536f };
 			break;
 		
 		case 26:
-			Var0 = { -276.8032f, 6327.188f, 31.4262f };
+			Var0 = { -276.8032f, 6327.1885f, 31.4262f };
 			break;
 		
 		case 27:
-			Var0 = { 1483.839f, 6366.199f, 22.6875f };
+			Var0 = { 1483.8394f, 6366.199f, 22.6875f };
 			break;
 		
 		case 28:
-			Var0 = { 949.013f, 3551.753f, 32.9687f };
+			Var0 = { 949.013f, 3551.7532f, 32.9687f };
 			break;
 		
 		case 29:
-			Var0 = { 180.9372f, 3051.781f, 42.1131f };
+			Var0 = { 180.9372f, 3051.7812f, 42.1131f };
 			break;
 		
 		case 30:
@@ -7766,11 +7766,11 @@ Vector3 func_222()//Position - 0x8516
 			break;
 		
 		case 1:
-			return -14.6005f, -1444.624f, 29.6472f;
+			return -14.6005f, -1444.6244f, 29.6472f;
 			break;
 		
 		case 2:
-			return 1979.961f, 3816.018f, 31.3641f;
+			return 1979.9609f, 3816.0178f, 31.3641f;
 			break;
 	}
 	return 0f, 0f, 0f;
@@ -14269,11 +14269,11 @@ void func_361(bool bParam0, bool bParam1)//Position - 0x1109D
 	fVar2 = GRAPHICS::GET_ASPECT_RATIO(false);
 	if (bParam0)
 	{
-		Global_23149 = (0.225f * (1.777778f / fVar2));
+		Global_23149 = (0.225f * (1.7777778f / fVar2));
 	}
 	else if (fVar2 < 1.77777f)
 	{
-		Global_23149 = (0.225f * (1.777778f / fVar2));
+		Global_23149 = (0.225f * (1.7777778f / fVar2));
 	}
 	else
 	{
@@ -14843,19 +14843,19 @@ void func_383(var uParam0, var uParam1)//Position - 0x11FE4
 			break;
 		
 		case 1:
-			*uParam0 = { -20.162f, -1443.916f, 31.9468f };
+			*uParam0 = { -20.162f, -1443.9158f, 31.9468f };
 			uParam0->f_3 = { -12.0736f, 0f, -130.562f };
 			uParam0->f_6 = 50f;
-			*uParam1 = { -15.925f, -1446.92f, 31.9534f };
+			*uParam1 = { -15.925f, -1446.9202f, 31.9534f };
 			uParam1->f_3 = { -10.3101f, 0f, 34.3879f };
 			uParam1->f_6 = 50f;
 			break;
 		
 		case 2:
-			*uParam0 = { 1972.248f, 3804.805f, 36.7174f };
+			*uParam0 = { 1972.2477f, 3804.8054f, 36.7174f };
 			uParam0->f_3 = { -19.6476f, 0f, -45.6158f };
 			uParam0->f_6 = 50f;
-			*uParam1 = { 1970.194f, 3807.541f, 35.5247f };
+			*uParam1 = { 1970.1941f, 3807.5408f, 35.5247f };
 			uParam1->f_3 = { -15.8717f, 0f, 41.6556f };
 			uParam1->f_6 = 50f;
 			break;
@@ -15213,7 +15213,7 @@ int func_397()//Position - 0x12772
 
 int func_398(struct<3> Param0)//Position - 0x127B1
 {
-	if (((((((((SYSTEM::VDIST(Param0, 491.76f, -515.73f, 29.51f) <= 12f || SYSTEM::VDIST(Param0, -1453.385f, -594.2627f, 29.7966f) <= 12f) || SYSTEM::VDIST(Param0, -633.6086f, -332.3337f, 33.81f) <= 25f) || SYSTEM::VDIST(Param0, -1493.191f, -693.9906f, 26.0665f) <= 25f) || SYSTEM::VDIST(Param0, -1512.938f, -675.6082f, 27.4202f) <= 25f) || SYSTEM::VDIST(Param0, -1388.642f, -1342.266f, 3.1626f) <= 25f) || SYSTEM::VDIST(Param0, 50.2024f, -1392.306f, 28.4166f) <= 12f) || SYSTEM::VDIST(Param0, 25.9811f, -1392.289f, 28.3356f) <= 12f) || SYSTEM::VDIST(Param0, 10.0435f, -1391.596f, 28.3074f) <= 12f) || SYSTEM::VDIST(Param0, -1196.6f, -519.6772f, 31.9742f) <= 12f)
+	if (((((((((SYSTEM::VDIST(Param0, 491.76f, -515.73f, 29.51f) <= 12f || SYSTEM::VDIST(Param0, -1453.3849f, -594.2627f, 29.7966f) <= 12f) || SYSTEM::VDIST(Param0, -633.6086f, -332.3337f, 33.81f) <= 25f) || SYSTEM::VDIST(Param0, -1493.1909f, -693.9906f, 26.0665f) <= 25f) || SYSTEM::VDIST(Param0, -1512.938f, -675.6082f, 27.4202f) <= 25f) || SYSTEM::VDIST(Param0, -1388.642f, -1342.2657f, 3.1626f) <= 25f) || SYSTEM::VDIST(Param0, 50.2024f, -1392.3063f, 28.4166f) <= 12f) || SYSTEM::VDIST(Param0, 25.9811f, -1392.2893f, 28.3356f) <= 12f) || SYSTEM::VDIST(Param0, 10.0435f, -1391.5956f, 28.3074f) <= 12f) || SYSTEM::VDIST(Param0, -1196.6f, -519.6772f, 31.9742f) <= 12f)
 	{
 		return 1;
 	}
@@ -15222,7 +15222,7 @@ int func_398(struct<3> Param0)//Position - 0x127B1
 
 int func_399(struct<3> Param0)//Position - 0x12919
 {
-	if ((((((SYSTEM::VDIST(Param0, -1582.782f, 5168.163f, 18.5615f) <= 15f || SYSTEM::VDIST(Param0, -1445.73f, -640.8375f, 28.7804f) <= 15f) || SYSTEM::VDIST(Param0, -348.7544f, 292.5813f, 83.9843f) <= 15f) || SYSTEM::VDIST(Param0, -273f, 317.8898f, 92.2549f) <= 15f) || SYSTEM::VDIST(Param0, -1627.935f, -1083.443f, 3.2819f) <= 40f) || SYSTEM::VDIST(Param0, -1661.098f, -1057.73f, 2.5729f) <= 40f) || SYSTEM::VDIST(Param0, -1518.358f, -553.8981f, 32.1463f) <= 15f)
+	if ((((((SYSTEM::VDIST(Param0, -1582.7823f, 5168.163f, 18.5615f) <= 15f || SYSTEM::VDIST(Param0, -1445.7297f, -640.8375f, 28.7804f) <= 15f) || SYSTEM::VDIST(Param0, -348.7544f, 292.5813f, 83.9843f) <= 15f) || SYSTEM::VDIST(Param0, -273f, 317.8898f, 92.2549f) <= 15f) || SYSTEM::VDIST(Param0, -1627.9353f, -1083.4431f, 3.2819f) <= 40f) || SYSTEM::VDIST(Param0, -1661.0979f, -1057.7303f, 2.5729f) <= 40f) || SYSTEM::VDIST(Param0, -1518.3582f, -553.8981f, 32.1463f) <= 15f)
 	{
 		func_482(&iLocal_49, 2097152);
 		return 1;

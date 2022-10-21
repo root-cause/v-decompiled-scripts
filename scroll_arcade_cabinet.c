@@ -2320,7 +2320,7 @@ void func_82()//Position - 0x2149
 			HUD::SET_TEXT_COLOUR(0, 0, 0, iVar3);
 		}
 		HUD::SET_TEXT_RIGHT_JUSTIFY(true);
-		HUD::SET_TEXT_WRAP(func_99(0f), func_99((0.4135417f + 0.001041667f)));
+		HUD::SET_TEXT_WRAP(func_99(0f), func_99((0.41354167f + 0.001041667f)));
 		HUD::SET_TEXT_FONT(7);
 		HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("STRING");
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(func_71(uVar0[0]));
@@ -2335,7 +2335,7 @@ void func_82()//Position - 0x2149
 			HUD::SET_TEXT_COLOUR(255, 255, 255, iVar3);
 		}
 		HUD::SET_TEXT_RIGHT_JUSTIFY(true);
-		HUD::SET_TEXT_WRAP(func_99(0f), func_99(0.4135417f));
+		HUD::SET_TEXT_WRAP(func_99(0f), func_99(0.41354167f));
 		HUD::SET_TEXT_FONT(7);
 		HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("STRING");
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(func_71(uVar0[0]));
@@ -2350,7 +2350,7 @@ void func_82()//Position - 0x2149
 			HUD::SET_TEXT_COLOUR(0, 0, 0, iVar3);
 		}
 		HUD::SET_TEXT_RIGHT_JUSTIFY(true);
-		HUD::SET_TEXT_WRAP(func_99(0f), func_99((0.4411458f + 0.001041667f)));
+		HUD::SET_TEXT_WRAP(func_99(0f), func_99((0.44114584f + 0.001041667f)));
 		HUD::SET_TEXT_FONT(7);
 		HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("STRING");
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(func_71(uVar0[1]));
@@ -2365,7 +2365,7 @@ void func_82()//Position - 0x2149
 			HUD::SET_TEXT_COLOUR(255, 255, 255, iVar3);
 		}
 		HUD::SET_TEXT_RIGHT_JUSTIFY(true);
-		HUD::SET_TEXT_WRAP(func_99(0f), func_99(0.4411458f));
+		HUD::SET_TEXT_WRAP(func_99(0f), func_99(0.44114584f));
 		HUD::SET_TEXT_FONT(7);
 		HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT("STRING");
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(func_71(uVar0[1]));
@@ -2945,7 +2945,7 @@ void func_108(int iParam0)//Position - 0x3297
 			Local_135.f_0 = 100f;
 			Local_135.f_1 = 600247221;
 			Local_135.f_2 = (1f + 0f);
-			Local_135.f_3 = ((0.798148f - 0.06944444f) + 0.02314815f);
+			Local_135.f_3 = ((0.798148f - 0.06944444f) + 0.023148147f);
 			Local_135.f_723 = "MPInvPersStage0";
 			Local_135.f_724 = "background";
 			Local_135.f_725 = 3;
@@ -2966,7 +2966,7 @@ void func_108(int iParam0)//Position - 0x3297
 			Local_135.f_744 = "foreground";
 			Local_135.f_745 = 6;
 			Local_135.f_746 = { func_89(0.191667f, 0.211111f) };
-			Local_135.f_748 = ((0.89444f - 0.06944444f) + 0.02314815f);
+			Local_135.f_748 = ((0.89444f - 0.06944444f) + 0.023148147f);
 			func_111(&(Local_135.f_749), 220, 169, 80, 255);
 			break;
 		
@@ -2974,7 +2974,7 @@ void func_108(int iParam0)//Position - 0x3297
 			Local_135.f_0 = 150f;
 			Local_135.f_1 = 1179731900;
 			Local_135.f_2 = (1f + 0.08f);
-			Local_135.f_3 = ((0.794444f - 0.06944444f) + 0.02314815f);
+			Local_135.f_3 = ((0.794444f - 0.06944444f) + 0.023148147f);
 			Local_135.f_723 = "MPInvPersStage2";
 			Local_135.f_724 = "background";
 			Local_135.f_725 = 3;
@@ -2991,11 +2991,11 @@ void func_108(int iParam0)//Position - 0x3297
 			Local_135.f_739 = "midground_1";
 			Local_135.f_740 = 4;
 			Local_135.f_741 = { func_89(0.333333f, 0.52963f) };
-			Local_135.f_743 = ((0.735185f - 0.06944444f) + 0.02314815f);
+			Local_135.f_743 = ((0.735185f - 0.06944444f) + 0.023148147f);
 			Local_135.f_744 = "foreground";
 			Local_135.f_745 = 6;
 			Local_135.f_746 = { func_89(0.216667f, 0.214815f) };
-			Local_135.f_748 = ((0.892593f - 0.06944444f) + 0.02314815f);
+			Local_135.f_748 = ((0.892593f - 0.06944444f) + 0.023148147f);
 			func_111(&(Local_135.f_749), 192, 135, 135, 255);
 			break;
 		
@@ -3003,7 +3003,7 @@ void func_108(int iParam0)//Position - 0x3297
 			Local_135.f_0 = 250f;
 			Local_135.f_1 = -42177296;
 			Local_135.f_2 = (1f + 0.2f);
-			Local_135.f_3 = ((0.798148f - 0.06944444f) + 0.02314815f);
+			Local_135.f_3 = ((0.798148f - 0.06944444f) + 0.023148147f);
 			Local_135.f_723 = "MPInvPersStage1";
 			Local_135.f_724 = "background";
 			Local_135.f_725 = 3;
@@ -3020,11 +3020,11 @@ void func_108(int iParam0)//Position - 0x3297
 			Local_135.f_739 = "midground_1";
 			Local_135.f_740 = 4;
 			Local_135.f_741 = { func_89(0.229167f, 0.396296f) };
-			Local_135.f_743 = ((0.801852f - 0.06944444f) + 0.02314815f);
+			Local_135.f_743 = ((0.801852f - 0.06944444f) + 0.023148147f);
 			Local_135.f_744 = "foreground";
 			Local_135.f_745 = 5;
-			Local_135.f_746 = { func_89(0.3104167f, 0.2111111f) };
-			Local_135.f_748 = ((0.8944445f - 0.06944444f) + 0.02314815f);
+			Local_135.f_746 = { func_89(0.31041667f, 0.21111111f) };
+			Local_135.f_748 = ((0.89444447f - 0.06944444f) + 0.023148147f);
 			func_111(&(Local_135.f_749), 207, 160, 154, 255);
 			break;
 		
@@ -3032,7 +3032,7 @@ void func_108(int iParam0)//Position - 0x3297
 			Local_135.f_0 = 350f;
 			Local_135.f_1 = 714966858;
 			Local_135.f_2 = (1f + 0.4f);
-			Local_135.f_3 = ((0.794444f - 0.06944444f) + 0.02314815f);
+			Local_135.f_3 = ((0.794444f - 0.06944444f) + 0.023148147f);
 			Local_135.f_723 = "MPInvPersStage3";
 			Local_135.f_724 = "background";
 			Local_135.f_725 = 3;
@@ -3053,7 +3053,7 @@ void func_108(int iParam0)//Position - 0x3297
 			Local_135.f_744 = "foreground";
 			Local_135.f_745 = 6;
 			Local_135.f_746 = { func_89(0.172917f, 0.214815f) };
-			Local_135.f_748 = ((0.89444f - 0.06944444f) + 0.02314815f);
+			Local_135.f_748 = ((0.89444f - 0.06944444f) + 0.023148147f);
 			func_111(&(Local_135.f_749), 96, 122, 142, 255);
 			break;
 		
@@ -3061,28 +3061,28 @@ void func_108(int iParam0)//Position - 0x3297
 			Local_135.f_0 = -1f;
 			Local_135.f_1 = -678704902;
 			Local_135.f_2 = (1f + 0.6f);
-			Local_135.f_3 = ((0.807037f - 0.06944444f) + 0.02314815f);
+			Local_135.f_3 = ((0.807037f - 0.06944444f) + 0.023148147f);
 			Local_135.f_723 = "MPInvPersStage4";
 			Local_135.f_724 = "background";
 			Local_135.f_725 = 3;
-			Local_135.f_726 = { func_89(0.6583334f, 0.4740741f) };
+			Local_135.f_726 = { func_89(0.65833336f, 0.47407407f) };
 			Local_135.f_728 = 0.25f;
 			Local_135.f_729 = "midground_3";
 			Local_135.f_730 = 3;
-			Local_135.f_731 = { func_89(0.6583334f, 0.237037f) };
+			Local_135.f_731 = { func_89(0.65833336f, 0.23703703f) };
 			Local_135.f_733 = ((0.4712963f - 0.075f) + 0.018f);
 			Local_135.f_734 = "midground_2";
 			Local_135.f_735 = 3;
-			Local_135.f_736 = { func_89(0.6583334f, 0.4740741f) };
-			Local_135.f_738 = (0.3898148f + 0.036f);
+			Local_135.f_736 = { func_89(0.65833336f, 0.47407407f) };
+			Local_135.f_738 = (0.38981482f + 0.036f);
 			Local_135.f_739 = "midground_1";
 			Local_135.f_740 = 3;
-			Local_135.f_741 = { func_89(0.6583334f, 0.4481482f) };
+			Local_135.f_741 = { func_89(0.65833336f, 0.44814816f) };
 			Local_135.f_743 = (0.7092593f + 0.052f);
 			Local_135.f_744 = "foreground";
 			Local_135.f_745 = 7;
-			Local_135.f_746 = { func_89(0.16875f, (0.2222222f - 0.01111111f)) };
-			Local_135.f_748 = ((0.8333324f - (0.01111111f / 2f)) + 0.02314815f);
+			Local_135.f_746 = { func_89(0.16875f, (0.22222222f - 0.011111111f)) };
+			Local_135.f_748 = ((0.8333324f - (0.011111111f / 2f)) + 0.023148147f);
 			func_111(&(Local_135.f_749), 0, 0, 0, 255);
 			break;
 	}
@@ -4605,7 +4605,7 @@ int func_122()//Position - 0x7398
 		{
 			if (bVar1)
 			{
-				func_124((SYSTEM::ROUND((0.164583f * 151.899f)) * Local_135.f_2728), 4, func_89(-1f, -1f));
+				func_124((SYSTEM::ROUND((0.164583f * 151.89905f)) * Local_135.f_2728), 4, func_89(-1f, -1f));
 				func_51("Frontend_Score_Tick_Large");
 				Local_135.f_2728 = 0;
 				Local_135.f_2725 = func_45();
@@ -4613,7 +4613,7 @@ int func_122()//Position - 0x7398
 			}
 			Local_135.f_2728 = (Local_135.f_2728 - 1);
 			func_123("Frontend_Score_Tick_Loop_Small", &(Local_135.f_2729));
-			func_124(SYSTEM::ROUND((0.164583f * 151.899f)), 3, func_89(-1f, -1f));
+			func_124(SYSTEM::ROUND((0.164583f * 151.89905f)), 3, func_89(-1f, -1f));
 		}
 		return 0;
 	}
@@ -4961,20 +4961,20 @@ void func_143()//Position - 0x7C1A
 	bool bVar2;
 	float fVar3;
 	
-	Var0 = { func_89(1f, 0.01851852f) };
+	Var0 = { func_89(1f, 0.018518519f) };
 	iVar1 = func_134(3);
 	bVar2 = false;
 	if (Local_135.f_2878 < iVar1)
 	{
-		Var0.f_1 = (Var0.f_1 + (((0.1157407f - 0.01851852f) / IntToFloat(iVar1)) * IntToFloat(Local_135.f_2878)));
+		Var0.f_1 = (Var0.f_1 + (((0.11574074f - 0.018518519f) / IntToFloat(iVar1)) * IntToFloat(Local_135.f_2878)));
 	}
 	else if (Local_135.f_2878 < iVar1 + 60)
 	{
-		Var0.f_1 = 0.1157407f;
+		Var0.f_1 = 0.11574074f;
 	}
 	else if (Local_135.f_2878 < iVar1 + 60 + 10)
 	{
-		Var0.f_1 = (0.1157407f + (((0.3472222f - 0.1157407f) / 10f) * IntToFloat(((Local_135.f_2878 - iVar1) - 60))));
+		Var0.f_1 = (0.11574074f + (((0.3472222f - 0.11574074f) / 10f) * IntToFloat(((Local_135.f_2878 - iVar1) - 60))));
 	}
 	else
 	{
@@ -4988,18 +4988,18 @@ void func_143()//Position - 0x7C1A
 		return;
 	}
 	fVar3 = 0.4675926f;
-	func_84("MpInvPersHud", "title_armour", (0.4947917f - (0.09583333f / 2f)), fVar3, 0.09583333f, 0.02962963f, 0f, Local_135.f_1765.f_28);
+	func_84("MpInvPersHud", "title_armour", (0.49479166f - (0.09583333f / 2f)), fVar3, 0.09583333f, 0.02962963f, 0f, Local_135.f_1765.f_28);
 	func_144(Local_135.f_2727, fVar3, 0, 99);
-	fVar3 = (fVar3 + 0.03703704f);
-	func_84("MpInvPersHud", "title_lives", (0.4947917f - (0.09583333f / 2f)), fVar3, 0.09583333f, 0.02962963f, 0f, Local_135.f_1765.f_28);
+	fVar3 = (fVar3 + 0.037037037f);
+	func_84("MpInvPersHud", "title_lives", (0.49479166f - (0.09583333f / 2f)), fVar3, 0.09583333f, 0.02962963f, 0f, Local_135.f_1765.f_28);
 	func_144(Local_135.f_2726, fVar3, 0, 99);
-	fVar3 = (fVar3 + 0.03703704f);
-	func_84("MpInvPersHud", "title_distance", (0.4947917f - (0.09583333f / 2f)), fVar3, 0.09583333f, 0.02962963f, 0f, Local_135.f_1765.f_28);
+	fVar3 = (fVar3 + 0.037037037f);
+	func_84("MpInvPersHud", "title_distance", (0.49479166f - (0.09583333f / 2f)), fVar3, 0.09583333f, 0.02962963f, 0f, Local_135.f_1765.f_28);
 	func_144(Local_135.f_2728 * 1000, fVar3, 0, 99);
-	fVar3 = (fVar3 + (0.03703704f / 2f));
+	fVar3 = (fVar3 + (0.037037037f / 2f));
 	func_92(func_89((0.5f + 0.022f), (fVar3 + 0.0095f)), func_89(0.175f, 0.005555556f), Local_135.f_1765.f_28);
-	fVar3 = (fVar3 + 0.03703704f);
-	func_84("MpInvPersHud", "title_total", (0.4947917f - (0.09583333f / 2f)), fVar3, 0.09583333f, 0.02962963f, 0f, Local_135.f_1765.f_28);
+	fVar3 = (fVar3 + 0.037037037f);
+	func_84("MpInvPersHud", "title_total", (0.49479166f - (0.09583333f / 2f)), fVar3, 0.09583333f, 0.02962963f, 0f, Local_135.f_1765.f_28);
 	func_144(Local_135.f_2725, fVar3, 1, 99);
 }
 
@@ -5020,8 +5020,8 @@ void func_145(int iParam0, struct<2> Param1, struct<4> Param2, bool bParam3, boo
 	float fVar7;
 	
 	iVar2 = iParam0;
-	Var4 = { func_89(func_146(bParam5, 0.005208333f, 0.01041667f), func_146(bParam5, 0.01481481f, 0.02962963f)) };
-	Var5 = { func_89(func_146(bParam5, 0.004166667f, 0.008333333f), func_146(bParam5, 0.01481481f, 0.02962963f)) };
+	Var4 = { func_89(func_146(bParam5, 0.005208333f, 0.010416667f), func_146(bParam5, 0.014814815f, 0.02962963f)) };
+	Var5 = { func_89(func_146(bParam5, 0.004166667f, 0.008333333f), func_146(bParam5, 0.014814815f, 0.02962963f)) };
 	bVar6 = iParam6 == 99;
 	if (bVar6)
 	{
@@ -5325,7 +5325,7 @@ float func_158(float fParam0, float fParam1, float fParam2, int iParam3)//Positi
 		
 		case 3:
 		case 8:
-			fParam2 = ((-SYSTEM::COS(func_159((3.141593f * fParam2))) / 2f) + 0.5f);
+			fParam2 = ((-SYSTEM::COS(func_159((3.1415927f * fParam2))) / 2f) + 0.5f);
 			break;
 		
 		case 4:
@@ -6646,7 +6646,7 @@ float func_218()//Position - 0xAE6C
 	switch (func_194())
 	{
 		case 8:
-			return 0.09635416f;
+			return 0.096354164f;
 		
 		case 9:
 			return 0.0390625f;
@@ -6655,7 +6655,7 @@ float func_218()//Position - 0xAE6C
 			return 0.0765625f;
 		
 		case 11:
-			return 0.05833333f;
+			return 0.058333334f;
 		
 		case 12:
 			return 0.053125f;
@@ -6673,16 +6673,16 @@ float func_219()//Position - 0xAEC4
 			return 0.109375f;
 		
 		case 9:
-			return 0.03645833f;
+			return 0.036458332f;
 		
 		case 10:
 			return 0.06822917f;
 		
 		case 11:
-			return 0.03072917f;
+			return 0.030729167f;
 		
 		case 12:
-			return 0.04322917f;
+			return 0.043229166f;
 		
 		default:
 	}
@@ -10200,7 +10200,7 @@ int func_315()//Position - 0x11956
 void func_316()//Position - 0x1197A
 {
 	func_168(&(Local_135.f_1765.f_4));
-	func_84(func_320(), func_319(), 0.5f, 0.5f, 0.6875f, 0.9481481f, 0f, Local_135.f_1765);
+	func_84(func_320(), func_319(), 0.5f, 0.5f, 0.6875f, 0.94814813f, 0f, Local_135.f_1765);
 	func_317();
 	func_85();
 	func_83();
@@ -11209,13 +11209,13 @@ void func_345()//Position - 0x12C7A
 	Local_135.f_753[33 /*28*/].f_25 = 0;
 	Local_135.f_753[33 /*28*/].f_1 = 0.15f;
 	Local_135.f_753[33 /*28*/].f_2 = -0.07f;
-	Local_135.f_753[33 /*28*/].f_22 = { func_89(0.10625f, 0.1444445f) };
+	Local_135.f_753[33 /*28*/].f_22 = { func_89(0.10625f, 0.14444445f) };
 	Local_135.f_753[33 /*28*/].f_17 = 12;
 	Local_135.f_753[33 /*28*/].f_16 = 1000;
-	Local_135.f_753[33 /*28*/].f_5[0 /*2*/] = { func_89(-0.053125f, 0.07222223f) };
-	Local_135.f_753[33 /*28*/].f_5[1 /*2*/] = { func_89(0f, -0.07222223f) };
-	Local_135.f_753[33 /*28*/].f_5[2 /*2*/] = { func_89(0.03802083f, -0.07222223f) };
-	Local_135.f_753[33 /*28*/].f_5[3 /*2*/] = { func_89(0.053125f, 0.07222223f) };
+	Local_135.f_753[33 /*28*/].f_5[0 /*2*/] = { func_89(-0.053125f, 0.072222225f) };
+	Local_135.f_753[33 /*28*/].f_5[1 /*2*/] = { func_89(0f, -0.072222225f) };
+	Local_135.f_753[33 /*28*/].f_5[2 /*2*/] = { func_89(0.038020834f, -0.072222225f) };
+	Local_135.f_753[33 /*28*/].f_5[3 /*2*/] = { func_89(0.053125f, 0.072222225f) };
 	Local_135.f_753[33 /*28*/].f_18 = 1;
 	func_346(33, 0, 0, 0, 0, 0);
 	Local_135.f_753[33 /*28*/].f_20 = func_10();
@@ -11239,7 +11239,7 @@ void func_345()//Position - 0x12C7A
 	Local_135.f_753[8 /*28*/].f_24 = "pitfall";
 	Local_135.f_753[8 /*28*/].f_25 = 0;
 	Local_135.f_753[8 /*28*/].f_1 = 0.15f;
-	Local_135.f_753[8 /*28*/].f_2 = ((0.89444f - 0.06944444f) + 0.02314815f);
+	Local_135.f_753[8 /*28*/].f_2 = ((0.89444f - 0.06944444f) + 0.023148147f);
 	Local_135.f_753[8 /*28*/].f_22 = { func_89(0.422917f, 0.211111f) };
 	Local_135.f_753[8 /*28*/].f_17 = 1;
 	Local_135.f_753[8 /*28*/].f_5[0 /*2*/] = { func_89(-0.015f, -0.075f) };
@@ -11254,7 +11254,7 @@ void func_345()//Position - 0x12C7A
 	Local_135.f_753[9 /*28*/].f_24 = "pitfall";
 	Local_135.f_753[9 /*28*/].f_25 = 0;
 	Local_135.f_753[9 /*28*/].f_1 = 0.15f;
-	Local_135.f_753[9 /*28*/].f_2 = ((0.892592f - 0.06944444f) + 0.02314815f);
+	Local_135.f_753[9 /*28*/].f_2 = ((0.892592f - 0.06944444f) + 0.023148147f);
 	Local_135.f_753[9 /*28*/].f_22 = { func_89(0.308333f, 0.214815f) };
 	Local_135.f_753[9 /*28*/].f_17 = 1;
 	Local_135.f_753[9 /*28*/].f_5[0 /*2*/] = { func_89(-0.015f, -0.075f) };
@@ -11269,7 +11269,7 @@ void func_345()//Position - 0x12C7A
 	Local_135.f_753[10 /*28*/].f_24 = "pitfall";
 	Local_135.f_753[10 /*28*/].f_25 = 0;
 	Local_135.f_753[10 /*28*/].f_1 = 0.15f;
-	Local_135.f_753[10 /*28*/].f_2 = ((0.89444f - 0.06944444f) + 0.02314815f);
+	Local_135.f_753[10 /*28*/].f_2 = ((0.89444f - 0.06944444f) + 0.023148147f);
 	Local_135.f_753[10 /*28*/].f_22 = { func_89(0.308333f, 0.211111f) };
 	Local_135.f_753[10 /*28*/].f_17 = 1;
 	Local_135.f_753[10 /*28*/].f_5[0 /*2*/] = { func_89(-0.015f, -0.075f) };
@@ -11284,7 +11284,7 @@ void func_345()//Position - 0x12C7A
 	Local_135.f_753[11 /*28*/].f_24 = "pitfall";
 	Local_135.f_753[11 /*28*/].f_25 = 0;
 	Local_135.f_753[11 /*28*/].f_1 = 0.15f;
-	Local_135.f_753[11 /*28*/].f_2 = ((0.892592f - 0.06944444f) + 0.02314815f);
+	Local_135.f_753[11 /*28*/].f_2 = ((0.892592f - 0.06944444f) + 0.023148147f);
 	Local_135.f_753[11 /*28*/].f_22 = { func_89(0.30625f, 0.214815f) };
 	Local_135.f_753[11 /*28*/].f_17 = 1;
 	Local_135.f_753[11 /*28*/].f_5[0 /*2*/] = { func_89(-0.015f, -0.075f) };
@@ -11299,8 +11299,8 @@ void func_345()//Position - 0x12C7A
 	Local_135.f_753[12 /*28*/].f_24 = "pitfall";
 	Local_135.f_753[12 /*28*/].f_25 = 0;
 	Local_135.f_753[12 /*28*/].f_1 = 0.15f;
-	Local_135.f_753[12 /*28*/].f_2 = ((0.8333324f - (0.01111111f / 2f)) + 0.02314815f);
-	Local_135.f_753[12 /*28*/].f_22 = { func_89(0.30625f, (0.2222222f - 0.01111111f)) };
+	Local_135.f_753[12 /*28*/].f_2 = ((0.8333324f - (0.011111111f / 2f)) + 0.023148147f);
+	Local_135.f_753[12 /*28*/].f_22 = { func_89(0.30625f, (0.22222222f - 0.011111111f)) };
 	Local_135.f_753[12 /*28*/].f_17 = 1;
 	Local_135.f_753[12 /*28*/].f_5[0 /*2*/] = { func_89(-0.015f, -0.075f) };
 	Local_135.f_753[12 /*28*/].f_5[1 /*2*/] = { func_89(-0.015f, -0.14f) };
@@ -11314,7 +11314,7 @@ void func_345()//Position - 0x12C7A
 	Local_135.f_753[13 /*28*/].f_24 = "ledge";
 	Local_135.f_753[13 /*28*/].f_25 = 0;
 	Local_135.f_753[13 /*28*/].f_1 = 0.15f;
-	Local_135.f_753[13 /*28*/].f_2 = ((0.8129629f - 0.06944444f) + 0.02314815f);
+	Local_135.f_753[13 /*28*/].f_2 = ((0.81296295f - 0.06944444f) + 0.023148147f);
 	Local_135.f_753[13 /*28*/].f_22 = { func_89(0.422917f, 0.374074f) };
 	Local_135.f_753[13 /*28*/].f_17 = 1;
 	Local_135.f_753[13 /*28*/].f_18 = 9;
@@ -11325,7 +11325,7 @@ void func_345()//Position - 0x12C7A
 	Local_135.f_753[14 /*28*/].f_24 = "ledge";
 	Local_135.f_753[14 /*28*/].f_25 = 0;
 	Local_135.f_753[14 /*28*/].f_1 = 0.15f;
-	Local_135.f_753[14 /*28*/].f_2 = ((0.8129629f - 0.06944444f) + 0.02314815f);
+	Local_135.f_753[14 /*28*/].f_2 = ((0.81296295f - 0.06944444f) + 0.023148147f);
 	Local_135.f_753[14 /*28*/].f_22 = { func_89(0.308333f, 0.374074f) };
 	Local_135.f_753[14 /*28*/].f_17 = 1;
 	Local_135.f_753[14 /*28*/].f_18 = 9;
@@ -11336,7 +11336,7 @@ void func_345()//Position - 0x12C7A
 	Local_135.f_753[15 /*28*/].f_24 = "ledge";
 	Local_135.f_753[15 /*28*/].f_25 = 0;
 	Local_135.f_753[15 /*28*/].f_1 = 0.15f;
-	Local_135.f_753[15 /*28*/].f_2 = ((0.8129629f - 0.06944444f) + 0.02314815f);
+	Local_135.f_753[15 /*28*/].f_2 = ((0.81296295f - 0.06944444f) + 0.023148147f);
 	Local_135.f_753[15 /*28*/].f_22 = { func_89(0.308333f, 0.374074f) };
 	Local_135.f_753[15 /*28*/].f_17 = 1;
 	Local_135.f_753[15 /*28*/].f_18 = 9;
@@ -11347,7 +11347,7 @@ void func_345()//Position - 0x12C7A
 	Local_135.f_753[16 /*28*/].f_24 = "ledge";
 	Local_135.f_753[16 /*28*/].f_25 = 0;
 	Local_135.f_753[16 /*28*/].f_1 = 0.15f;
-	Local_135.f_753[16 /*28*/].f_2 = ((0.8129629f - 0.06944444f) + 0.02314815f);
+	Local_135.f_753[16 /*28*/].f_2 = ((0.81296295f - 0.06944444f) + 0.023148147f);
 	Local_135.f_753[16 /*28*/].f_22 = { func_89(0.30625f, 0.374074f) };
 	Local_135.f_753[16 /*28*/].f_17 = 1;
 	Local_135.f_753[16 /*28*/].f_18 = 9;
@@ -11358,8 +11358,8 @@ void func_345()//Position - 0x12C7A
 	Local_135.f_753[17 /*28*/].f_24 = "ledge";
 	Local_135.f_753[17 /*28*/].f_25 = 0;
 	Local_135.f_753[17 /*28*/].f_1 = 0.15f;
-	Local_135.f_753[17 /*28*/].f_2 = ((0.7574074f - (0.01111111f / 2f)) + 0.02314815f);
-	Local_135.f_753[17 /*28*/].f_22 = { func_89(0.30625f, (0.3740741f - 0.01111111f)) };
+	Local_135.f_753[17 /*28*/].f_2 = ((0.7574074f - (0.011111111f / 2f)) + 0.023148147f);
+	Local_135.f_753[17 /*28*/].f_22 = { func_89(0.30625f, (0.37407407f - 0.011111111f)) };
 	Local_135.f_753[17 /*28*/].f_17 = 1;
 	Local_135.f_753[17 /*28*/].f_18 = 9;
 	func_346(17, 0, 0, 0, 0, 1);

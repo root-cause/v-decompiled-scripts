@@ -518,7 +518,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_41 = 49;
 	iLocal_42 = 64;
 	fLocal_62 = ((0.05f + 0.275f) - 0.01f);
-	Local_112 = { 1140.746f, 258.6841f, -52.4408f };
+	Local_112 = { 1140.7462f, 258.6841f, -52.4408f };
 	iLocal_117 = -1;
 	iLocal_203 = -1;
 	iLocal_224 = -1;
@@ -6689,11 +6689,11 @@ void func_166(bool bParam0, bool bParam1)//Position - 0x6E27
 	fVar2 = GRAPHICS::GET_ASPECT_RATIO(false);
 	if (bParam0)
 	{
-		Global_23149 = (0.225f * (1.777778f / fVar2));
+		Global_23149 = (0.225f * (1.7777778f / fVar2));
 	}
 	else if (fVar2 < 1.77777f)
 	{
-		Global_23149 = (0.225f * (1.777778f / fVar2));
+		Global_23149 = (0.225f * (1.7777778f / fVar2));
 	}
 	else
 	{
@@ -8025,7 +8025,7 @@ void func_220(int iParam0, var uParam1, float fParam2)//Position - 0x8C59
 	switch (iParam0)
 	{
 		case 0:
-			*uParam1 = { 1100.483f, 230.4082f, -50.8409f };
+			*uParam1 = { 1100.4828f, 230.4082f, -50.8409f };
 			*fParam2 = 45f;
 			break;
 		
@@ -8040,47 +8040,47 @@ void func_220(int iParam0, var uParam1, float fParam2)//Position - 0x8C59
 			break;
 		
 		case 3:
-			*uParam1 = { 1101.323f, 232.4321f, -50.8409f };
+			*uParam1 = { 1101.3228f, 232.4321f, -50.8409f };
 			*fParam2 = 90f;
 			break;
 		
 		case 4:
-			*uParam1 = { 1101.229f, 233.1719f, -50.8409f };
+			*uParam1 = { 1101.2295f, 233.1719f, -50.8409f };
 			*fParam2 = 105f;
 			break;
 		
 		case 5:
-			*uParam1 = { 1108.938f, 239.4797f, -50.8409f };
+			*uParam1 = { 1108.9385f, 239.4797f, -50.8409f };
 			*fParam2 = -45f;
 			break;
 		
 		case 6:
-			*uParam1 = { 1109.536f, 239.0278f, -50.8409f };
+			*uParam1 = { 1109.5358f, 239.0278f, -50.8409f };
 			*fParam2 = -30f;
 			break;
 		
 		case 7:
-			*uParam1 = { 1110.229f, 238.7428f, -50.8409f };
+			*uParam1 = { 1110.2292f, 238.7428f, -50.8409f };
 			*fParam2 = -15f;
 			break;
 		
 		case 8:
-			*uParam1 = { 1110.974f, 238.642f, -50.8409f };
+			*uParam1 = { 1110.9741f, 238.642f, -50.8409f };
 			*fParam2 = 0f;
 			break;
 		
 		case 9:
-			*uParam1 = { 1111.716f, 238.7384f, -50.8409f };
+			*uParam1 = { 1111.7162f, 238.7384f, -50.8409f };
 			*fParam2 = 15f;
 			break;
 		
 		case 10:
-			*uParam1 = { 1112.407f, 239.0216f, -50.8409f };
+			*uParam1 = { 1112.4067f, 239.0216f, -50.8409f };
 			*fParam2 = 30f;
 			break;
 		
 		case 11:
-			*uParam1 = { 1112.999f, 239.4742f, -50.8409f };
+			*uParam1 = { 1112.9991f, 239.4742f, -50.8409f };
 			*fParam2 = 45f;
 			break;
 		
@@ -8090,12 +8090,12 @@ void func_220(int iParam0, var uParam1, float fParam2)//Position - 0x8C59
 			break;
 		
 		case 13:
-			*uParam1 = { 1120.753f, 232.4272f, -50.8409f };
+			*uParam1 = { 1120.7528f, 232.4272f, -50.8409f };
 			*fParam2 = -90f;
 			break;
 		
 		case 14:
-			*uParam1 = { 1120.853f, 231.6886f, -50.8409f };
+			*uParam1 = { 1120.8533f, 231.6886f, -50.8409f };
 			*fParam2 = -75f;
 			break;
 		
@@ -8105,47 +8105,47 @@ void func_220(int iParam0, var uParam1, float fParam2)//Position - 0x8C59
 			break;
 		
 		case 16:
-			*uParam1 = { 1121.592f, 230.4106f, -50.8409f };
+			*uParam1 = { 1121.5918f, 230.4106f, -50.8409f };
 			*fParam2 = -45f;
 			break;
 		
 		case 17:
-			*uParam1 = { 1104.572f, 229.4451f, -50.8409f };
+			*uParam1 = { 1104.5724f, 229.4451f, -50.8409f };
 			*fParam2 = -36f;
 			break;
 		
 		case 18:
-			*uParam1 = { 1104.302f, 230.3183f, -50.8409f };
+			*uParam1 = { 1104.3022f, 230.3183f, -50.8409f };
 			*fParam2 = -108f;
 			break;
 		
 		case 19:
-			*uParam1 = { 1105.049f, 230.845f, -50.8409f };
+			*uParam1 = { 1105.0492f, 230.845f, -50.8409f };
 			*fParam2 = 180f;
 			break;
 		
 		case 20:
-			*uParam1 = { 1105.781f, 230.2973f, -50.8409f };
+			*uParam1 = { 1105.7809f, 230.2973f, -50.8409f };
 			*fParam2 = 108f;
 			break;
 		
 		case 21:
-			*uParam1 = { 1105.486f, 229.4322f, -50.8409f };
+			*uParam1 = { 1105.4862f, 229.4322f, -50.8409f };
 			*fParam2 = 36f;
 			break;
 		
 		case 22:
-			*uParam1 = { 1108.005f, 233.9177f, -50.8409f };
+			*uParam1 = { 1108.0054f, 233.9177f, -50.8409f };
 			*fParam2 = -36f;
 			break;
 		
 		case 23:
-			*uParam1 = { 1107.735f, 234.7909f, -50.8409f };
+			*uParam1 = { 1107.7354f, 234.7909f, -50.8409f };
 			*fParam2 = -108f;
 			break;
 		
 		case 24:
-			*uParam1 = { 1108.482f, 235.3176f, -50.8409f };
+			*uParam1 = { 1108.4823f, 235.3176f, -50.8409f };
 			*fParam2 = 180f;
 			break;
 		
@@ -8155,47 +8155,47 @@ void func_220(int iParam0, var uParam1, float fParam2)//Position - 0x8C59
 			break;
 		
 		case 26:
-			*uParam1 = { 1108.919f, 233.9048f, -50.8409f };
+			*uParam1 = { 1108.9193f, 233.9048f, -50.8409f };
 			*fParam2 = 36f;
 			break;
 		
 		case 27:
-			*uParam1 = { 1113.64f, 233.6755f, -50.8409f };
+			*uParam1 = { 1113.6398f, 233.6755f, -50.8409f };
 			*fParam2 = -36f;
 			break;
 		
 		case 28:
-			*uParam1 = { 1113.37f, 234.5486f, -50.8409f };
+			*uParam1 = { 1113.3696f, 234.5486f, -50.8409f };
 			*fParam2 = -108f;
 			break;
 		
 		case 29:
-			*uParam1 = { 1114.117f, 235.0753f, -50.8409f };
+			*uParam1 = { 1114.1166f, 235.0753f, -50.8409f };
 			*fParam2 = 180f;
 			break;
 		
 		case 30:
-			*uParam1 = { 1114.848f, 234.5277f, -50.8409f };
+			*uParam1 = { 1114.8484f, 234.5277f, -50.8409f };
 			*fParam2 = 108f;
 			break;
 		
 		case 31:
-			*uParam1 = { 1114.554f, 233.6625f, -50.8409f };
+			*uParam1 = { 1114.5536f, 233.6625f, -50.8409f };
 			*fParam2 = 36f;
 			break;
 		
 		case 32:
-			*uParam1 = { 1116.662f, 228.8896f, -50.8409f };
+			*uParam1 = { 1116.6624f, 228.8896f, -50.8409f };
 			*fParam2 = -36f;
 			break;
 		
 		case 33:
-			*uParam1 = { 1116.392f, 229.7628f, -50.8409f };
+			*uParam1 = { 1116.3922f, 229.7628f, -50.8409f };
 			*fParam2 = -108f;
 			break;
 		
 		case 34:
-			*uParam1 = { 1117.139f, 230.2895f, -50.8409f };
+			*uParam1 = { 1117.1392f, 230.2895f, -50.8409f };
 			*fParam2 = 180f;
 			break;
 		
@@ -8205,7 +8205,7 @@ void func_220(int iParam0, var uParam1, float fParam2)//Position - 0x8C59
 			break;
 		
 		case 36:
-			*uParam1 = { 1117.576f, 228.8767f, -50.8409f };
+			*uParam1 = { 1117.5762f, 228.8767f, -50.8409f };
 			*fParam2 = 36f;
 			break;
 		
@@ -8215,42 +8215,42 @@ void func_220(int iParam0, var uParam1, float fParam2)//Position - 0x8C59
 			break;
 		
 		case 38:
-			*uParam1 = { 1130.376f, 250.3577f, -52.0409f };
+			*uParam1 = { 1130.3765f, 250.3577f, -52.0409f };
 			*fParam2 = 165f;
 			break;
 		
 		case 39:
-			*uParam1 = { 1131.062f, 250.0776f, -52.0409f };
+			*uParam1 = { 1131.0624f, 250.0776f, -52.0409f };
 			*fParam2 = 150f;
 			break;
 		
 		case 40:
-			*uParam1 = { 1131.655f, 249.6264f, -52.0409f };
+			*uParam1 = { 1131.6548f, 249.6264f, -52.0409f };
 			*fParam2 = 135f;
 			break;
 		
 		case 41:
-			*uParam1 = { 1132.109f, 249.0355f, -52.0409f };
+			*uParam1 = { 1132.1093f, 249.0355f, -52.0409f };
 			*fParam2 = 120f;
 			break;
 		
 		case 42:
-			*uParam1 = { 1132.396f, 248.3382f, -52.0409f };
+			*uParam1 = { 1132.3961f, 248.3382f, -52.0409f };
 			*fParam2 = 105f;
 			break;
 		
 		case 43:
-			*uParam1 = { 1132.492f, 247.5984f, -52.0409f };
+			*uParam1 = { 1132.4922f, 247.5984f, -52.0409f };
 			*fParam2 = 90f;
 			break;
 		
 		case 44:
-			*uParam1 = { 1133.952f, 256.1037f, -52.0409f };
+			*uParam1 = { 1133.9524f, 256.1037f, -52.0409f };
 			*fParam2 = -45f;
 			break;
 		
 		case 45:
-			*uParam1 = { 1133.827f, 256.9098f, -52.0409f };
+			*uParam1 = { 1133.8274f, 256.9098f, -52.0409f };
 			*fParam2 = -117f;
 			break;
 		
@@ -8260,7 +8260,7 @@ void func_220(int iParam0, var uParam1, float fParam2)//Position - 0x8C59
 			break;
 		
 		case 47:
-			*uParam1 = { 1135.132f, 256.699f, -52.0409f };
+			*uParam1 = { 1135.1316f, 256.699f, -52.0409f };
 			*fParam2 = 99f;
 			break;
 		
@@ -8270,27 +8270,27 @@ void func_220(int iParam0, var uParam1, float fParam2)//Position - 0x8C59
 			break;
 		
 		case 49:
-			*uParam1 = { 1138.195f, 251.8611f, -52.0409f };
+			*uParam1 = { 1138.1951f, 251.8611f, -52.0409f };
 			*fParam2 = -45f;
 			break;
 		
 		case 50:
-			*uParam1 = { 1138.07f, 252.6677f, -52.0409f };
+			*uParam1 = { 1138.0703f, 252.6677f, -52.0409f };
 			*fParam2 = -117f;
 			break;
 		
 		case 51:
-			*uParam1 = { 1138.799f, 253.0363f, -52.0409f };
+			*uParam1 = { 1138.7986f, 253.0363f, -52.0409f };
 			*fParam2 = 171f;
 			break;
 		
 		case 52:
-			*uParam1 = { 1139.372f, 252.4563f, -52.0409f };
+			*uParam1 = { 1139.3722f, 252.4563f, -52.0409f };
 			*fParam2 = 99f;
 			break;
 		
 		case 53:
-			*uParam1 = { 1139f, 251.7306f, -52.0409f };
+			*uParam1 = { 1138.9995f, 251.7306f, -52.0409f };
 			*fParam2 = 27f;
 			break;
 	}

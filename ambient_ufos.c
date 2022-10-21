@@ -122,7 +122,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_45 = 65;
 	iLocal_46 = 49;
 	iLocal_47 = 64;
-	Local_64 = { -1124.392f, -514.7001f, 33.21493f };
+	Local_64 = { -1124.3922f, -514.70013f, 33.21493f };
 	fLocal_65 = 200f;
 	Local_66 = { 2490f, 3777f, 2402.879f };
 	Local_67 = { -2052f, 3237f, 1450.078f };

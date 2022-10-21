@@ -110928,73 +110928,73 @@ void func_832(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 	uParam0->f_112 = *uParam4;
 	if (uParam0->f_112 == 0)
 	{
-		uParam0->f_109 = { 6.8179f, -1098.209f, 29.9469f };
+		uParam0->f_109 = { 6.8179f, -1098.2095f, 29.9469f };
 		uParam0->f_87[0 /*3*/] = { 12.617f, -1092.35f, 31.58f };
-		uParam0->f_87[1 /*3*/] = { 16.475f, -1081.513f, 31.58f };
-		uParam0->f_87[3 /*3*/] = { 20.1332f, -1081.788f, 31.58f };
+		uParam0->f_87[1 /*3*/] = { 16.475f, -1081.5134f, 31.58f };
+		uParam0->f_87[3 /*3*/] = { 20.1332f, -1081.7876f, 31.58f };
 		uParam0->f_87[2 /*3*/] = { 17.325f, -1094.09f, 31.58f };
 		uParam0->f_87[4 /*3*/] = { 16.995f, -1080.04f, 31.58f };
 		uParam0->f_87[5 /*3*/] = { 19.475f, -1073.203f, 31.58f };
 		uParam0->f_87[6 /*3*/] = { 21.945f, -1081.93f, 31.58f };
-		uParam0->f_113 = { 13.4784f, -1097.475f, 28.8347f };
+		uParam0->f_113 = { 13.4784f, -1097.4746f, 28.8347f };
 		uParam0->f_116 = 345.171f;
-		uParam0->f_117 = { 11.1371f, -1097.824f, 23.8347f };
+		uParam0->f_117 = { 11.1371f, -1097.8242f, 23.8347f };
 		uParam0->f_120 = { 14.8423f, -1099.452f, 33.8348f };
-		uParam0->f_126 = { 7.6658f, -1097.226f, 28.797f };
+		uParam0->f_126 = { 7.6658f, -1097.2264f, 28.797f };
 		uParam0->f_129 = 166.8465f;
 		uParam0->f_130 = { 7.445f, -1100.097f, 28.797f };
-		uParam0->f_136 = { 8.7466f, -1103.685f, 30.1295f };
+		uParam0->f_136 = { 8.7466f, -1103.6846f, 30.1295f };
 		uParam0->f_139 = { -0.8304f, 0f, 19.3158f };
-		uParam0->f_142 = { 8.6633f, -1103.447f, 30.1259f };
+		uParam0->f_142 = { 8.6633f, -1103.4474f, 30.1259f };
 		uParam0->f_145 = { -0.8304f, 0f, 19.3158f };
-		uParam0->f_148 = { 6.4526f, -1098.576f, 30.4486f };
+		uParam0->f_148 = { 6.4526f, -1098.5763f, 30.4486f };
 		uParam0->f_151 = { -7.9441f, 0f, -150.3985f };
-		uParam0->f_154 = { 14.6062f, -1096.601f, 30.3995f };
+		uParam0->f_154 = { 14.6062f, -1096.6014f, 30.3995f };
 		uParam0->f_157 = { -6.4007f, 0f, 128.1684f };
-		uParam0->f_123 = { 12.65248f, -1100.083f, 29.74706f };
-		uParam0->f_133 = { 7.7033f, -1097.86f, 28.797f };
+		uParam0->f_123 = { 12.65248f, -1100.0831f, 29.74706f };
+		uParam0->f_133 = { 7.7033f, -1097.8596f, 28.797f };
 		uParam5->f_16 = { 6.818f, -1098.21f, 29.946f };
 		uParam5->f_19 = { 0f, 0f, 160f };
-		uParam5->f_22 = { 14.499f, -1093.435f, 31.32f };
+		uParam5->f_22 = { 14.499f, -1093.4354f, 31.32f };
 		uParam5->f_25 = { 13.9958f, -1097.882f, 30.3701f };
 		uParam5->f_28 = { -6.0067f, 0f, -19.5923f };
-		uParam5->f_31 = { 13.4248f, -1099.619f, 30.4893f };
+		uParam5->f_31 = { 13.4248f, -1099.6191f, 30.4893f };
 		uParam5->f_34 = { -6.1681f, 0f, -12.1775f };
 		uParam0->f_160 = 160f;
 	}
 	else
 	{
-		uParam0->f_109 = { 827.5342f, -2160.493f, 29.7688f };
-		uParam0->f_87[0 /*3*/] = { 824.1354f, -2167.815f, 31.4334f };
+		uParam0->f_109 = { 827.5342f, -2160.4927f, 29.7688f };
+		uParam0->f_87[0 /*3*/] = { 824.1354f, -2167.8152f, 31.4334f };
 		uParam0->f_87[1 /*3*/] = { 824.0692f, -2179.004f, 31.3222f };
-		uParam0->f_87[3 /*3*/] = { 820.6007f, -2180.356f, 31.3625f };
-		uParam0->f_87[2 /*3*/] = { 819.0558f, -2167.521f, 31.4334f };
-		uParam0->f_87[4 /*3*/] = { 823.9216f, -2180.932f, 31.2504f };
-		uParam0->f_87[5 /*3*/] = { 823.936f, -2188.249f, 31.1813f };
-		uParam0->f_87[6 /*3*/] = { 818.8218f, -2180.862f, 31.3736f };
-		uParam0->f_113 = { 821.5508f, -2163.707f, 28.6567f };
+		uParam0->f_87[3 /*3*/] = { 820.6007f, -2180.3564f, 31.3625f };
+		uParam0->f_87[2 /*3*/] = { 819.0558f, -2167.5212f, 31.4334f };
+		uParam0->f_87[4 /*3*/] = { 823.9216f, -2180.9316f, 31.2504f };
+		uParam0->f_87[5 /*3*/] = { 823.936f, -2188.2485f, 31.1813f };
+		uParam0->f_87[6 /*3*/] = { 818.8218f, -2180.8616f, 31.3736f };
+		uParam0->f_113 = { 821.5508f, -2163.7073f, 28.6567f };
 		uParam0->f_116 = 184.3922f;
-		uParam0->f_117 = { 823.5616f, -2162.239f, 24.4409f };
-		uParam0->f_120 = { 819.3583f, -2163.497f, 34.5824f };
-		uParam0->f_126 = { 826.8076f, -2162.185f, 28.619f };
+		uParam0->f_117 = { 823.5616f, -2162.2393f, 24.4409f };
+		uParam0->f_120 = { 819.3583f, -2163.4966f, 34.5824f };
+		uParam0->f_126 = { 826.8076f, -2162.1846f, 28.619f };
 		uParam0->f_129 = 346.2118f;
 		uParam0->f_130 = { 824.832f, -2158.36f, 28.619f };
 		uParam0->f_136 = { 823.9988f, -2156.333f, 29.8591f };
 		uParam0->f_139 = { -1.9082f, 0f, -142.342f };
-		uParam0->f_142 = { 824.2747f, -2156.69f, 29.8441f };
+		uParam0->f_142 = { 824.2747f, -2156.6902f, 29.8441f };
 		uParam0->f_145 = { -1.9082f, 0f, -142.342f };
 		uParam0->f_148 = { 827.7817f, -2160.126f, 30.2877f };
 		uParam0->f_151 = { -8.0026f, 0f, 55.1241f };
 		uParam0->f_154 = { 820.79f, -2164.832f, 30.1899f };
 		uParam0->f_157 = { -2.2613f, 0f, -30.6783f };
-		uParam0->f_123 = { 821.557f, -2160.855f, 30.3338f };
-		uParam0->f_133 = { 826.6258f, -2161.705f, 28.619f };
-		uParam5->f_16 = { 827.5342f, -2160.493f, 29.7688f };
+		uParam0->f_123 = { 821.557f, -2160.8552f, 30.3338f };
+		uParam0->f_133 = { 826.6258f, -2161.7048f, 28.619f };
+		uParam5->f_16 = { 827.5342f, -2160.4927f, 29.7688f };
 		uParam5->f_19 = { 0f, 0f, 0f };
 		uParam5->f_22 = { 821.9563f, -2167.086f, 31f };
-		uParam5->f_25 = { 820.9255f, -2163.025f, 30.1917f };
+		uParam5->f_25 = { 820.9255f, -2163.0254f, 30.1917f };
 		uParam5->f_28 = { -4.2298f, 0f, -179.571f };
-		uParam5->f_31 = { 820.8491f, -2161.166f, 30.3292f };
+		uParam5->f_31 = { 820.8491f, -2161.1663f, 30.3292f };
 		uParam5->f_34 = { -4.2298f, 0f, -173.1768f };
 		uParam0->f_160 = 359f;
 	}
@@ -111607,7 +111607,7 @@ int func_842(var uParam0, var uParam1)//Position - 0x8BA79
 		{
 			if (uParam0->f_38 == 0)
 			{
-				bVar0 = ((((MISC::IS_BULLET_IN_ANGLED_AREA(6.488925f, -1097.953f, 32.7731f, 7.870516f, -1094.14f, 28.79702f, 0.75f, true) || MISC::IS_BULLET_IN_ANGLED_AREA(18.3308f, -1102.255f, 32.78695f, 19.69246f, -1098.622f, 28.79702f, 0.5f, true)) || MISC::IS_BULLET_IN_ANGLED_AREA(6.47323f, -1097.686f, 32.78207f, 18.60892f, -1102.112f, 28.79702f, 0.5f, true)) || MISC::IS_BULLET_IN_ANGLED_AREA(7.100925f, -1095.961f, 32.77991f, 19.1766f, -1100.58f, 32.11956f, 4.25f, true)) || MISC::IS_BULLET_IN_ANGLED_AREA(6.86985f, -1096.625f, 28.79702f, 18.98512f, -1101.054f, 29.09252f, 2.75f, true));
+				bVar0 = ((((MISC::IS_BULLET_IN_ANGLED_AREA(6.488925f, -1097.9529f, 32.773098f, 7.870516f, -1094.14f, 28.797018f, 0.75f, true) || MISC::IS_BULLET_IN_ANGLED_AREA(18.3308f, -1102.2555f, 32.78695f, 19.692461f, -1098.622f, 28.797018f, 0.5f, true)) || MISC::IS_BULLET_IN_ANGLED_AREA(6.47323f, -1097.6857f, 32.78207f, 18.608915f, -1102.1117f, 28.797018f, 0.5f, true)) || MISC::IS_BULLET_IN_ANGLED_AREA(7.100925f, -1095.961f, 32.779907f, 19.1766f, -1100.5796f, 32.11956f, 4.25f, true)) || MISC::IS_BULLET_IN_ANGLED_AREA(6.86985f, -1096.6254f, 28.797018f, 18.985115f, -1101.0542f, 29.092524f, 2.75f, true));
 			}
 			else
 			{
@@ -113579,7 +113579,7 @@ int func_890(int iParam0, var uParam1, float fParam2)//Position - 0x8DBFA
 			break;
 		
 		case 8:
-			*uParam1 = { -90.0089f, -1324.195f, 28.3203f };
+			*uParam1 = { -90.0089f, -1324.1947f, 28.3203f };
 			*fParam2 = 194.1887f;
 			return 1;
 			break;
@@ -113599,13 +113599,13 @@ int func_890(int iParam0, var uParam1, float fParam2)//Position - 0x8DBFA
 			break;
 		
 		case 14:
-			*uParam1 = { 1432.34f, -1887.383f, 70.5768f };
+			*uParam1 = { 1432.3402f, -1887.3832f, 70.5768f };
 			*fParam2 = 350.0509f;
 			return 1;
 			break;
 		
 		case 15:
-			*uParam1 = { 1666.204f, 1967.25f, 143.3213f };
+			*uParam1 = { 1666.204f, 1967.2504f, 143.3213f };
 			*fParam2 = 0.7896f;
 			return 1;
 			break;
@@ -113617,13 +113617,13 @@ int func_890(int iParam0, var uParam1, float fParam2)//Position - 0x8DBFA
 			break;
 		
 		case 16:
-			*uParam1 = { 135.055f, -1759.64f, 27.8957f };
+			*uParam1 = { 135.055f, -1759.6396f, 27.8957f };
 			*fParam2 = -129f;
 			return 1;
 			break;
 		
 		case 17:
-			*uParam1 = { 687.6992f, -1744.03f, 28.3624f };
+			*uParam1 = { 687.6992f, -1744.0299f, 28.3624f };
 			*fParam2 = 267.1409f;
 			return 1;
 			break;
@@ -113641,7 +113641,7 @@ int func_890(int iParam0, var uParam1, float fParam2)//Position - 0x8DBFA
 			break;
 		
 		case 20:
-			*uParam1 = { 1555.958f, 953.6136f, 77.2063f };
+			*uParam1 = { 1555.9575f, 953.6136f, 77.2063f };
 			*fParam2 = 152.8118f;
 			return 1;
 			break;
@@ -113683,7 +113683,7 @@ int func_890(int iParam0, var uParam1, float fParam2)//Position - 0x8DBFA
 			break;
 		
 		case 25:
-			*uParam1 = { 72.2278f, -1464.68f, 28.2915f };
+			*uParam1 = { 72.2278f, -1464.6798f, 28.2915f };
 			*fParam2 = 156.8827f;
 			return 1;
 			break;
@@ -113695,7 +113695,7 @@ int func_890(int iParam0, var uParam1, float fParam2)//Position - 0x8DBFA
 			break;
 		
 		case 26:
-			*uParam1 = { 257.9167f, -1120.786f, 28.3684f };
+			*uParam1 = { 257.9167f, -1120.7855f, 28.3684f };
 			*fParam2 = 97.2736f;
 			return 1;
 			break;
@@ -113767,19 +113767,19 @@ int func_890(int iParam0, var uParam1, float fParam2)//Position - 0x8DBFA
 			break;
 		
 		case 59:
-			*uParam1 = { -1771.802f, 794.4316f, 138.4211f };
+			*uParam1 = { -1771.8015f, 794.4316f, 138.4211f };
 			*fParam2 = 128.9946f;
 			return 1;
 			break;
 		
 		case 60:
-			*uParam1 = { 1495.595f, -1848.821f, 70.2075f };
+			*uParam1 = { 1495.5953f, -1848.8207f, 70.2075f };
 			*fParam2 = 32.2721f;
 			return 1;
 			break;
 		
 		case 38:
-			*uParam1 = { 2897.554f, 4032.241f, 50.1419f };
+			*uParam1 = { 2897.5544f, 4032.241f, 50.1419f };
 			*fParam2 = 192.8091f;
 			return 1;
 			break;
@@ -113803,13 +113803,13 @@ int func_890(int iParam0, var uParam1, float fParam2)//Position - 0x8DBFA
 			break;
 		
 		case 42:
-			*uParam1 = { Vector(4.0205f, -2975.341f, 798.4536f) + Vector(1f, 0f, 0f) };
+			*uParam1 = { Vector(4.0205f, -2975.3408f, 798.4536f) + Vector(1f, 0f, 0f) };
 			*fParam2 = 90f;
 			return 1;
 			break;
 		
 		case 43:
-			*uParam1 = { 709.0244f, -2916.479f, 5.0589f };
+			*uParam1 = { 709.0244f, -2916.4788f, 5.0589f };
 			*fParam2 = 355.326f;
 			return 1;
 			break;
@@ -113821,7 +113821,7 @@ int func_890(int iParam0, var uParam1, float fParam2)//Position - 0x8DBFA
 			break;
 		
 		case 45:
-			*uParam1 = { 595.2742f, -2819.183f, 5.0559f };
+			*uParam1 = { 595.2742f, -2819.1826f, 5.0559f };
 			*fParam2 = 46.8853f;
 			return 1;
 			break;
@@ -113839,7 +113839,7 @@ int func_890(int iParam0, var uParam1, float fParam2)//Position - 0x8DBFA
 			break;
 		
 		case 49:
-			*uParam1 = { 3321.537f, 4975.455f, 25.9097f };
+			*uParam1 = { 3321.5369f, 4975.4546f, 25.9097f };
 			*fParam2 = 221.228f;
 			return 1;
 			break;
@@ -113869,7 +113869,7 @@ int func_890(int iParam0, var uParam1, float fParam2)//Position - 0x8DBFA
 			break;
 		
 		case 66:
-			*uParam1 = { 262.5499f, -2540.15f, 4.8433f };
+			*uParam1 = { 262.5499f, -2540.1504f, 4.8433f };
 			*fParam2 = -64.1366f;
 			return 1;
 			break;
@@ -113893,7 +113893,7 @@ int func_890(int iParam0, var uParam1, float fParam2)//Position - 0x8DBFA
 			break;
 		
 		case 57:
-			*uParam1 = { 37.5988f, -1351.52f, 28.2954f };
+			*uParam1 = { 37.5988f, -1351.5203f, 28.2954f };
 			*fParam2 = 90.0339f;
 			return 1;
 			break;
@@ -113929,7 +113929,7 @@ int func_890(int iParam0, var uParam1, float fParam2)//Position - 0x8DBFA
 			break;
 		
 		case 64:
-			*uParam1 = { 2091.258f, 4714.852f, 40.1936f };
+			*uParam1 = { 2091.2583f, 4714.852f, 40.1936f };
 			*fParam2 = 136.0867f;
 			return 1;
 			break;
@@ -114037,12 +114037,12 @@ void func_895(var uParam0, var uParam1)//Position - 0x8E60C
 	}
 	if (uParam0->f_38 == 0)
 	{
-		Var0 = { 15.4041f, -1125.915f, 27.7096f };
+		Var0 = { 15.4041f, -1125.9149f, 27.7096f };
 		fVar1 = 90.5811f;
 	}
 	else if (uParam0->f_38 == 1)
 	{
-		Var0 = { func_899(bVar2, 810.0622f, -2137.992f, 28.298f, 782.8192f, -2120.501f, 28.3352f) };
+		Var0 = { func_899(bVar2, 810.0622f, -2137.9922f, 28.298f, 782.8192f, -2120.5012f, 28.3352f) };
 		fVar1 = func_595(bVar2, 0.0589f, 355.0583f);
 	}
 	if (func_896(uParam1, Var0, 1, fVar1))

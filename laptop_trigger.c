@@ -5022,11 +5022,11 @@ int func_210()//Position - 0x5A29
 		}
 		if (func_186(PLAYER::PLAYER_ID()) == 271)
 		{
-			if (ENTITY::IS_ENTITY_IN_AREA(PLAYER::PLAYER_PED_ID(), -1470.88f, -528.8513f, 75.0839f, -1472.63f, -526.5934f, 73.3136f, false, true, 0))
+			if (ENTITY::IS_ENTITY_IN_AREA(PLAYER::PLAYER_PED_ID(), -1470.8796f, -528.8513f, 75.0839f, -1472.6295f, -526.5934f, 73.3136f, false, true, 0))
 			{
 				return 1;
 			}
-			else if (ENTITY::IS_ENTITY_IN_AREA(PLAYER::PLAYER_PED_ID(), 1008.467f, -3167.947f, -37.5246f, 1006.903f, -3171.152f, -39.6192f, false, true, 0))
+			else if (ENTITY::IS_ENTITY_IN_AREA(PLAYER::PLAYER_PED_ID(), 1008.4672f, -3167.9465f, -37.5246f, 1006.9028f, -3171.1516f, -39.6192f, false, true, 0))
 			{
 				return 1;
 			}
@@ -5042,7 +5042,7 @@ bool func_211()//Position - 0x5B15
 
 int func_212()//Position - 0x5B25
 {
-	if (func_214(PLAYER::PLAYER_ID()) == 150 && func_213(PLAYER::PLAYER_PED_ID(), 3084.511f, -4686.664f, 26.2522f, 50f, 1))
+	if (func_214(PLAYER::PLAYER_ID()) == 150 && func_213(PLAYER::PLAYER_PED_ID(), 3084.5112f, -4686.664f, 26.2522f, 50f, 1))
 	{
 		return 1;
 	}

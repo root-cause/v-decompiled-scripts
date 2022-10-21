@@ -2938,55 +2938,55 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	
 	if (func_95(Param0, 1900f, -6600f, 100f, 6900f, -3600f, 140f))
 	{
-		*uParam1 = { 1261.58f, -3332.685f, 5.4191f };
+		*uParam1 = { 1261.5804f, -3332.6846f, 5.4191f };
 		*uParam2 = 163.87f;
 		return 1;
 	}
 	else if (func_95(Param0, -3800f, 5400f, -100f, -1900f, 8500f, 100f))
 	{
-		*uParam1 = { -1577.16f, 5166.51f, 19.1864f };
+		*uParam1 = { -1577.1599f, 5166.5103f, 19.1864f };
 		*uParam2 = 0f;
 		return 1;
 	}
-	else if (func_95(Param0, -874.9833f, 125.7645f, -100f, -768.6254f, 193.0297f, 100f))
+	else if (func_95(Param0, -874.9833f, 125.7645f, -100f, -768.62537f, 193.02971f, 100f))
 	{
 		*uParam1 = { -856.6151f, 163.7361f, 65.093f };
 		*uParam2 = 355.3355f;
 		return 1;
 	}
-	else if (func_95(Param0, -39.2005f, -1473.55f, -100f, 10.6133f, -1430.099f, 100f))
+	else if (func_95(Param0, -39.2005f, -1473.5498f, -100f, 10.6133f, -1430.0988f, 100f))
 	{
-		*uParam1 = { -15.5181f, -1456.4f, 29.4244f };
+		*uParam1 = { -15.5181f, -1456.3999f, 29.4244f };
 		*uParam2 = 94.6893f;
 		return 1;
 	}
-	else if (func_95(Param0, 1964.742f, 3792.59f, -100f, 1992.636f, 3840.253f, 100f))
+	else if (func_95(Param0, 1964.7421f, 3792.59f, -100f, 1992.6361f, 3840.2532f, 100f))
 	{
-		*uParam1 = { 1996.372f, 3818.831f, 31.1612f };
+		*uParam1 = { 1996.3718f, 3818.8308f, 31.1612f };
 		*uParam2 = 170.0221f;
 		return 1;
 	}
-	else if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -68.2187f, -1086.951f, -100f, -10.54518f, -1106.895f, 100f, 43.5f, false, true))
+	else if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -68.218704f, -1086.951f, -100f, -10.545177f, -1106.8953f, 100f, 43.5f, false, true))
 	{
 		*uParam1 = { -63.5854f, -1074.732f, 26.0995f };
 		*uParam2 = 324.1257f;
 		return 1;
 	}
-	else if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 398.7899f, -1651.417f, -100f, 423.8372f, -1619.432f, 100f, 45f, false, true))
+	else if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 398.78986f, -1651.4174f, -100f, 423.83725f, -1619.4325f, 100f, 45f, false, true))
 	{
-		*uParam1 = { 416.871f, -1613.081f, 28.1401f };
+		*uParam1 = { 416.871f, -1613.0814f, 28.1401f };
 		*uParam2 = 227.9333f;
 		return 1;
 	}
-	else if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -988.8535f, -2553.177f, -100f, -1041.486f, -2644.97f, 100f, 49.75f, false, true) && !NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
+	else if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -988.8535f, -2553.1775f, -100f, -1041.4865f, -2644.97f, 100f, 49.75f, false, true) && !NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		*uParam1 = { -1039.542f, -2574.467f, 12.7566f };
+		*uParam1 = { -1039.5425f, -2574.467f, 12.7566f };
 		*uParam2 = 162.2744f;
 		return 1;
 	}
-	else if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -906.902f, -2600.461f, -100f, -959.7651f, -2692.057f, 100f, 49.75f, false, true) && !NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
+	else if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -906.90204f, -2600.4607f, -100f, -959.76514f, -2692.0571f, 100f, 49.75f, false, true) && !NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		*uParam1 = { -911.1597f, -2676.132f, 12.7567f };
+		*uParam1 = { -911.1597f, -2676.1316f, 12.7567f };
 		*uParam2 = 338.9414f;
 		return 1;
 	}
@@ -2995,9 +2995,9 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 28f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -209.3372f, -2011.099f, 26.62037f, -257.2225f, -2076.963f, 36.62037f, 30f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -209.33719f, -2011.0995f, 26.620369f, -257.22247f, -2076.9631f, 36.620373f, 30f, false, true))
 	{
-		*uParam1 = { -211.8546f, -2030.771f, 26.6204f };
+		*uParam1 = { -211.8546f, -2030.7715f, 26.6204f };
 		*uParam2 = 154.4302f;
 		return 1;
 	}
@@ -3006,7 +3006,7 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 159f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -804.05f, 4216.412f, 204.4872f, -509.0679f, 4135.19f, 123.2502f, 250f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -804.05005f, 4216.4116f, 204.4872f, -509.06787f, 4135.1904f, 123.25017f, 250f, false, true))
 	{
 		*uParam1 = { -623.3622f, 3996f, 120.7669f };
 		*uParam2 = 37.8784f;
@@ -3017,9 +3017,9 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 180f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -2203.167f, 183.3549f, 167.4022f, -2311.587f, 434.3828f, 195.4669f, 138.5f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -2203.1675f, 183.35495f, 167.40219f, -2311.5874f, 434.3828f, 195.46692f, 138.5f, false, true))
 	{
-		*uParam1 = { -2294.945f, 376.2506f, 173.4669f };
+		*uParam1 = { -2294.9446f, 376.2506f, 173.4669f };
 		*uParam2 = 296.6963f;
 		return 1;
 	}
@@ -3028,22 +3028,22 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 10f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -2041.478f, -553.2159f, -0.089962f, -1787.08f, -768.0886f, 37.99918f, 220f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -2041.478f, -553.21594f, -0.089962f, -1787.0801f, -768.08856f, 37.999176f, 220f, false, true))
 	{
-		*uParam1 = { -1897.077f, -557.3334f, 10.7279f };
+		*uParam1 = { -1897.0765f, -557.3334f, 10.7279f };
 		*uParam2 = 228.7709f;
-		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -1882.883f, -541.7442f, 4.675224f, -1929.626f, -598.6026f, 40.4298f, 35f, false, true))
+		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -1882.8832f, -541.7442f, 4.675224f, -1929.6265f, -598.6026f, 40.4298f, 35f, false, true))
 		{
 			return 1;
 		}
 		else
 		{
-			Var2[0 /*3*/] = { -1962.468f, -503.4229f, 10.8349f };
-			Var2[1 /*3*/] = { -1924.472f, -534.7357f, 10.8181f };
+			Var2[0 /*3*/] = { -1962.4679f, -503.4229f, 10.8349f };
+			Var2[1 /*3*/] = { -1924.4722f, -534.7357f, 10.8181f };
 			Var2[2 /*3*/] = { -1896.324f, -557.768f, 10.7256f };
-			Var2[3 /*3*/] = { -1850.661f, -595.8367f, 10.4649f };
-			Var2[4 /*3*/] = { -1809f, -632.1207f, 10.0016f };
-			Var2[5 /*3*/] = { -1745.043f, -694.4053f, 9.1245f };
+			Var2[3 /*3*/] = { -1850.6611f, -595.8367f, 10.4649f };
+			Var2[4 /*3*/] = { -1808.9995f, -632.1207f, 10.0016f };
+			Var2[5 /*3*/] = { -1745.0428f, -694.4053f, 9.1245f };
 			iVar3 = -1;
 			fVar4 = 99999f;
 			iVar6 = 0;
@@ -3090,9 +3090,9 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 330f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -446.12f, 1057.452f, 318.6169f, -405.8336f, 1194.486f, 337.0966f, 106.25f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -446.12f, 1057.4515f, 318.61685f, -405.83362f, 1194.4865f, 337.09656f, 106.25f, false, true))
 	{
-		*uParam1 = { -411.3629f, 1174.587f, 324.6421f };
+		*uParam1 = { -411.3629f, 1174.5865f, 324.6421f };
 		*uParam2 = 255.2881f;
 		return 1;
 	}
@@ -3101,48 +3101,48 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 20f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -1362.091f, -29.26777f, -100f, -1377.953f, 152.2389f, 100f, 50f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -1362.0906f, -29.26777f, -100f, -1377.9531f, 152.23888f, 100f, 50f, false, true))
 	{
 		iVar0 = (iParam3 % 8);
 		switch (iVar0)
 		{
 			case 1:
-				*uParam1 = { -1380.101f, 95.1566f, 53.5054f };
+				*uParam1 = { -1380.1006f, 95.1566f, 53.5054f };
 				*uParam2 = 4.555f;
 				break;
 			
 			case 2:
-				*uParam1 = { -1379.139f, 84.2472f, 53.0592f };
+				*uParam1 = { -1379.1394f, 84.2472f, 53.0592f };
 				*uParam2 = 6.9278f;
 				break;
 			
 			case 3:
-				*uParam1 = { -1378.427f, 74.5077f, 52.6622f };
+				*uParam1 = { -1378.4266f, 74.5077f, 52.6622f };
 				*uParam2 = 2.6813f;
 				break;
 			
 			case 4:
-				*uParam1 = { -1384.177f, 73.9207f, 52.7438f };
+				*uParam1 = { -1384.1774f, 73.9207f, 52.7438f };
 				*uParam2 = 5.542f;
 				break;
 			
 			case 5:
-				*uParam1 = { -1381.118f, 35.7838f, 52.659f };
+				*uParam1 = { -1381.1179f, 35.7838f, 52.659f };
 				*uParam2 = 7.6687f;
 				break;
 			
 			case 6:
-				*uParam1 = { -1383.741f, 64.1491f, 52.6647f };
+				*uParam1 = { -1383.7413f, 64.1491f, 52.6647f };
 				*uParam2 = 2.5572f;
 				break;
 			
 			case 7:
-				*uParam1 = { -1382.616f, 49.6876f, 52.6585f };
+				*uParam1 = { -1382.6162f, 49.6876f, 52.6585f };
 				*uParam2 = 3.0185f;
 				break;
 			
 			default:
-				*uParam1 = { -1383.299f, 54.4598f, 52.6562f };
+				*uParam1 = { -1383.2987f, 54.4598f, 52.6562f };
 				*uParam2 = 6.2155f;
 				break;
 		}
@@ -3150,18 +3150,18 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	}
 	else if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 48.31006f, -1120.669f, 28.0305f, -12.12345f, -1112.084f, 36.08567f, 60f, false, true))
+		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 48.31006f, -1120.6694f, 28.030502f, -12.123452f, -1112.0841f, 36.08567f, 60f, false, true))
 		{
 			iVar0 = (iParam3 % 8);
 			switch (iVar0)
 			{
 				case 1:
-					*uParam1 = { 50.9889f, -1092.525f, 28.2152f };
+					*uParam1 = { 50.9889f, -1092.5254f, 28.2152f };
 					*uParam2 = 150.8833f;
 					break;
 				
 				case 2:
-					*uParam1 = { 46.7725f, -1099.751f, 28.1639f };
+					*uParam1 = { 46.7725f, -1099.7506f, 28.1639f };
 					*uParam2 = 149.4322f;
 					break;
 				
@@ -3171,174 +3171,174 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 					break;
 				
 				case 4:
-					*uParam1 = { 38.1922f, -1113.394f, 28.1507f };
+					*uParam1 = { 38.1922f, -1113.3936f, 28.1507f };
 					*uParam2 = 146.3778f;
 					break;
 				
 				case 5:
-					*uParam1 = { 13.0436f, -1124.767f, 27.7359f };
+					*uParam1 = { 13.0436f, -1124.7668f, 27.7359f };
 					*uParam2 = 91.163f;
 					break;
 				
 				case 6:
-					*uParam1 = { 1.4336f, -1125.042f, 27.1705f };
+					*uParam1 = { 1.4336f, -1125.0425f, 27.1705f };
 					*uParam2 = 91.0578f;
 					break;
 				
 				case 7:
-					*uParam1 = { -11.1811f, -1125.811f, 26.3688f };
+					*uParam1 = { -11.1811f, -1125.8105f, 26.3688f };
 					*uParam2 = 91.866f;
 					break;
 				
 				default:
-					*uParam1 = { 21.9431f, -1124.573f, 27.9417f };
+					*uParam1 = { 21.9431f, -1124.5731f, 27.9417f };
 					*uParam2 = 91.6961f;
 					break;
 			}
 			return 1;
 		}
-		else if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1061.018f, -2540.235f, 18.66932f, -1023.332f, -2562.115f, 31.57616f, 250f, false, true))
+		else if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1061.0181f, -2540.235f, 18.669323f, -1023.33246f, -2562.1145f, 31.576157f, 250f, false, true))
 		{
 			iVar0 = (iParam3 % 8);
 			switch (iVar0)
 			{
 				case 1:
-					*uParam1 = { -1023.982f, -2489.882f, 19.0755f };
+					*uParam1 = { -1023.9825f, -2489.8818f, 19.0755f };
 					*uParam2 = 148.7004f;
 					break;
 				
 				case 2:
-					*uParam1 = { -1029.968f, -2500.438f, 19.0803f };
+					*uParam1 = { -1029.9678f, -2500.4377f, 19.0803f };
 					*uParam2 = 148.7144f;
 					break;
 				
 				case 3:
-					*uParam1 = { -1070.546f, -2570.859f, 19.0836f };
+					*uParam1 = { -1070.5457f, -2570.8594f, 19.0836f };
 					*uParam2 = 150.0955f;
 					break;
 				
 				case 4:
-					*uParam1 = { -1056.065f, -2545.662f, 19.0809f };
+					*uParam1 = { -1056.0647f, -2545.6619f, 19.0809f };
 					*uParam2 = 149.5649f;
 					break;
 				
 				case 5:
-					*uParam1 = { -1050.578f, -2536.219f, 19.0824f };
+					*uParam1 = { -1050.578f, -2536.2185f, 19.0824f };
 					*uParam2 = 150.7363f;
 					break;
 				
 				case 6:
-					*uParam1 = { -1036.032f, -2510.902f, 19.0794f };
+					*uParam1 = { -1036.0316f, -2510.902f, 19.0794f };
 					*uParam2 = 147.2113f;
 					break;
 				
 				case 7:
-					*uParam1 = { -1044.487f, -2525.534f, 19.079f };
+					*uParam1 = { -1044.4872f, -2525.5342f, 19.079f };
 					*uParam2 = 150.7597f;
 					break;
 				
 				default:
-					*uParam1 = { -1064.5f, -2560.653f, 19.0905f };
+					*uParam1 = { -1064.5002f, -2560.6528f, 19.0905f };
 					*uParam2 = 150.7081f;
 					break;
 			}
 			return 1;
 		}
-		else if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1061.059f, -2540.254f, 10.94467f, -1023.297f, -2562.052f, 18.51685f, 250f, false, true))
+		else if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1061.0587f, -2540.2537f, 10.944668f, -1023.2968f, -2562.0525f, 18.516848f, 250f, false, true))
 		{
 			iVar0 = (iParam3 % 8);
 			switch (iVar0)
 			{
 				case 1:
-					*uParam1 = { -1044.741f, -2528.786f, 12.7568f };
+					*uParam1 = { -1044.7413f, -2528.786f, 12.7568f };
 					*uParam2 = 150.9439f;
 					break;
 				
 				case 2:
-					*uParam1 = { -1050.763f, -2539.498f, 12.7566f };
+					*uParam1 = { -1050.7631f, -2539.4978f, 12.7566f };
 					*uParam2 = 150.851f;
 					break;
 				
 				case 3:
-					*uParam1 = { -1054.952f, -2546.86f, 12.7566f };
+					*uParam1 = { -1054.9523f, -2546.8596f, 12.7566f };
 					*uParam2 = 149.9285f;
 					break;
 				
 				case 4:
-					*uParam1 = { -1060.397f, -2556.898f, 12.6066f };
+					*uParam1 = { -1060.3972f, -2556.898f, 12.6066f };
 					*uParam2 = 150.8244f;
 					break;
 				
 				case 5:
-					*uParam1 = { -1020.744f, -2490.084f, 12.6396f };
+					*uParam1 = { -1020.7437f, -2490.0842f, 12.6396f };
 					*uParam2 = 148.6134f;
 					break;
 				
 				case 6:
-					*uParam1 = { -1076.904f, -2589.179f, 12.6858f };
+					*uParam1 = { -1076.9043f, -2589.1794f, 12.6858f };
 					*uParam2 = 149.0112f;
 					break;
 				
 				case 7:
-					*uParam1 = { -1026.387f, -2501.952f, 12.6923f };
+					*uParam1 = { -1026.3866f, -2501.9521f, 12.6923f };
 					*uParam2 = 149.7553f;
 					break;
 				
 				default:
-					*uParam1 = { -1070.506f, -2578.389f, 12.6932f };
+					*uParam1 = { -1070.5065f, -2578.3892f, 12.6932f };
 					*uParam2 = 148.5232f;
 					break;
 			}
 			return 1;
 		}
-		else if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1043.364f, -2747.29f, 16.96057f, -991.5368f, -2657.682f, 69.12349f, 200f, false, true))
+		else if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1043.3641f, -2747.29f, 16.960567f, -991.5368f, -2657.6816f, 69.12349f, 200f, false, true))
 		{
 			iVar0 = (iParam3 % 8);
 			switch (iVar0)
 			{
 				case 1:
-					*uParam1 = { -1067.846f, -2708.94f, 19.0588f };
+					*uParam1 = { -1067.8463f, -2708.9397f, 19.0588f };
 					*uParam2 = 230.9025f;
 					break;
 				
 				case 2:
-					*uParam1 = { -1058.224f, -2716.217f, 19.06f };
+					*uParam1 = { -1058.2238f, -2716.2166f, 19.06f };
 					*uParam2 = 237.1285f;
 					break;
 				
 				case 3:
-					*uParam1 = { -1004.567f, -2744.797f, 19.0811f };
+					*uParam1 = { -1004.5667f, -2744.797f, 19.0811f };
 					*uParam2 = 255.6885f;
 					break;
 				
 				case 4:
-					*uParam1 = { -1049.509f, -2721.58f, 19.0546f };
+					*uParam1 = { -1049.5092f, -2721.58f, 19.0546f };
 					*uParam2 = 242.3581f;
 					break;
 				
 				case 5:
-					*uParam1 = { -1017.154f, -2740.117f, 19.0525f };
+					*uParam1 = { -1017.1544f, -2740.1174f, 19.0525f };
 					*uParam2 = 243.5798f;
 					break;
 				
 				case 6:
-					*uParam1 = { -1042.087f, -2726.077f, 19.0452f };
+					*uParam1 = { -1042.0872f, -2726.0767f, 19.0452f };
 					*uParam2 = 240.2381f;
 					break;
 				
 				case 7:
-					*uParam1 = { -1027.353f, -2734.462f, 19.0509f };
+					*uParam1 = { -1027.353f, -2734.4617f, 19.0509f };
 					*uParam2 = 239.8703f;
 					break;
 				
 				default:
-					*uParam1 = { -1033.74f, -2730.746f, 19.0521f };
+					*uParam1 = { -1033.7404f, -2730.7458f, 19.0521f };
 					*uParam2 = 239.9237f;
 					break;
 			}
 			return 1;
 		}
-		else if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1047.646f, -2754.947f, 2.941969f, -991.7314f, -2653.153f, 16.89228f, 200f, false, true))
+		else if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1047.6465f, -2754.947f, 2.941969f, -991.73145f, -2653.1533f, 16.892282f, 200f, false, true))
 		{
 			iVar0 = (iParam3 % 8);
 			switch (iVar0)
@@ -3354,32 +3354,32 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 					break;
 				
 				case 3:
-					*uParam1 = { -987.6072f, -2747.273f, 12.6069f };
+					*uParam1 = { -987.6072f, -2747.2734f, 12.6069f };
 					*uParam2 = 257.2886f;
 					break;
 				
 				case 4:
-					*uParam1 = { -1006.815f, -2739.345f, 12.6334f };
+					*uParam1 = { -1006.8151f, -2739.345f, 12.6334f };
 					*uParam2 = 242.1315f;
 					break;
 				
 				case 5:
-					*uParam1 = { -1051.83f, -2713.553f, 12.6333f };
+					*uParam1 = { -1051.8304f, -2713.5527f, 12.6333f };
 					*uParam2 = 239.9312f;
 					break;
 				
 				case 6:
-					*uParam1 = { -1041.004f, -2719.647f, 12.6402f };
+					*uParam1 = { -1041.0035f, -2719.6467f, 12.6402f };
 					*uParam2 = 240.1081f;
 					break;
 				
 				case 7:
-					*uParam1 = { -1023.832f, -2729.465f, 12.6445f };
+					*uParam1 = { -1023.8323f, -2729.4646f, 12.6445f };
 					*uParam2 = 239.6737f;
 					break;
 				
 				default:
-					*uParam1 = { -1012.848f, -2735.172f, 12.6656f };
+					*uParam1 = { -1012.8478f, -2735.1724f, 12.6656f };
 					*uParam2 = 237.6545f;
 					break;
 			}
@@ -3391,7 +3391,7 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 20f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 845.7216f, -990.7473f, 37.4696f, 846.3397f, -1066.88f, 16.96623f, 90f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 845.7216f, -990.7473f, 37.469604f, 846.3397f, -1066.8805f, 16.966232f, 90f, false, true))
 	{
 		iVar0 = (iParam3 % 8);
 		switch (iVar0)
@@ -3422,17 +3422,17 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 				break;
 			
 			case 6:
-				*uParam1 = { 844.6506f, -1010.09f, 26.9894f };
+				*uParam1 = { 844.6506f, -1010.0903f, 26.9894f };
 				*uParam2 = 270.076f;
 				break;
 			
 			case 7:
-				*uParam1 = { 852.2498f, -1010.132f, 27.8091f };
+				*uParam1 = { 852.2498f, -1010.1324f, 27.8091f };
 				*uParam2 = 269.722f;
 				break;
 			
 			default:
-				*uParam1 = { 861.4028f, -1010.025f, 28.808f };
+				*uParam1 = { 861.4028f, -1010.0249f, 28.808f };
 				*uParam2 = 270.7686f;
 				break;
 		}
@@ -3443,19 +3443,19 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 20f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 767.3736f, -1077.429f, -10.78654f, 682.8284f, -1080.686f, 79.67303f, 60f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 767.3736f, -1077.4288f, -10.786545f, 682.82837f, -1080.6858f, 79.673035f, 60f, false, true))
 	{
 		iVar0 = (iParam3 % 8);
 		switch (iVar0)
 		{
 			case 1:
-				*uParam1 = { 703.2726f, -1067.7f, 21.4765f };
+				*uParam1 = { 703.2726f, -1067.6997f, 21.4765f };
 				*uParam2 = 181.3629f;
 				break;
 			
 			case 2:
-				*uParam1 = { 715.2089f, -1070.399f, 21.2708f };
-				*uParam2 = 175.4362f;
+				*uParam1 = { 715.2089f, -1070.3993f, 21.2708f };
+				*uParam2 = 175.43623f;
 				break;
 			
 			case 3:
@@ -3469,22 +3469,22 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 				break;
 			
 			case 5:
-				*uParam1 = { 703.807f, -1057.866f, 21.4152f };
+				*uParam1 = { 703.807f, -1057.8665f, 21.4152f };
 				*uParam2 = 170.1609f;
 				break;
 			
 			case 6:
-				*uParam1 = { 708.1994f, -1048.194f, 21.216f };
+				*uParam1 = { 708.1994f, -1048.1937f, 21.216f };
 				*uParam2 = 134.2729f;
 				break;
 			
 			case 7:
-				*uParam1 = { 711.1124f, -1069.423f, 21.3129f };
+				*uParam1 = { 711.1124f, -1069.4229f, 21.3129f };
 				*uParam2 = 177.9198f;
 				break;
 			
 			default:
-				*uParam1 = { 703.545f, -1078.718f, 21.3987f };
+				*uParam1 = { 703.545f, -1078.7177f, 21.3987f };
 				*uParam2 = 180.5686f;
 				break;
 		}
@@ -3499,7 +3499,7 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		if (func_91(Var1, 3, 0, 0))
 		{
-			*uParam1 = { -1520.121f, 2731.511f, 16.6437f };
+			*uParam1 = { -1520.1213f, 2731.511f, 16.6437f };
 			*uParam2 = 48.1572f;
 			return 1;
 		}
@@ -3509,7 +3509,7 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 77.2f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 1535.987f, -2041.497f, 68.21275f, 1529.357f, -2204.463f, 96.11195f, 105f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 1535.9866f, -2041.497f, 68.21275f, 1529.3566f, -2204.4634f, 96.111946f, 105f, false, true))
 	{
 		*uParam1 = { 1540.75f, -2051.49f, 76.85f };
 		*uParam2 = 255.41f;
@@ -3520,33 +3520,33 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 51.1739f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 1185.81f, -1768.367f, 28.31145f, 1369.068f, -1701.452f, 66.25389f, 70f, true, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 1185.8104f, -1768.3672f, 28.311447f, 1369.068f, -1701.4515f, 66.25389f, 70f, true, true))
 	{
-		if (func_90(Var1, 1283.326f, -1731.522f, 51.78555f, 17f))
+		if (func_90(Var1, 1283.3257f, -1731.5222f, 51.78555f, 17f))
 		{
-			*uParam1 = { 1283.326f, -1731.522f, 51.78555f };
+			*uParam1 = { 1283.3257f, -1731.5222f, 51.78555f };
 			*uParam2 = 275.4274f;
 			return 1;
 		}
-		if (func_90(Var1, 1334.386f, -1709.762f, 55.70131f, 41f))
+		if (func_90(Var1, 1334.3861f, -1709.7625f, 55.70131f, 41f))
 		{
-			*uParam1 = { 1334.386f, -1709.762f, 55.70131f };
+			*uParam1 = { 1334.3861f, -1709.7625f, 55.70131f };
 			*uParam2 = 275.4411f;
 			return 1;
 		}
-		if (func_90(Var1, 1246.166f, -1750.625f, 45.35691f, 28f))
+		if (func_90(Var1, 1246.1661f, -1750.6246f, 45.35691f, 28f))
 		{
-			*uParam1 = { 1246.166f, -1750.625f, 45.35691f };
+			*uParam1 = { 1246.1661f, -1750.6246f, 45.35691f };
 			*uParam2 = 301.2981f;
 			return 1;
 		}
-		if (func_90(Var1, 1196.272f, -1753.051f, 37.63976f, 32f))
+		if (func_90(Var1, 1196.2716f, -1753.0505f, 37.63976f, 32f))
 		{
-			*uParam1 = { 1196.272f, -1753.051f, 37.63976f };
+			*uParam1 = { 1196.2716f, -1753.0505f, 37.63976f };
 			*uParam2 = 209.4354f;
 			return 1;
 		}
-		*uParam1 = { 1283.326f, -1731.522f, 51.78555f };
+		*uParam1 = { 1283.3257f, -1731.5222f, 51.78555f };
 		*uParam2 = 275.4274f;
 		return 1;
 	}
@@ -3555,11 +3555,11 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 25f;
 	}
-	if (func_90(Var1, -1693.302f, -1109.13f, 17.89778f, 240f))
+	if (func_90(Var1, -1693.3018f, -1109.1305f, 17.89778f, 240f))
 	{
-		if ((OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -1538.981f, -941.1323f, 10.56623f, -1715.57f, -1139.766f, 52.20361f, 110f, false, true) || OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -1739.989f, -1115.973f, 10.08726f, -1800.515f, -1187.18f, 52.0172f, 25f, false, true)) || OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -1801.766f, -1180.252f, 4.017236f, -1857.718f, -1244.628f, 38.49653f, 85f, false, true))
+		if ((OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -1538.9806f, -941.1323f, 10.566226f, -1715.5703f, -1139.7659f, 52.203613f, 110f, false, true) || OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -1739.989f, -1115.973f, 10.087262f, -1800.5149f, -1187.1798f, 52.0172f, 25f, false, true)) || OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -1801.7664f, -1180.2517f, 4.017236f, -1857.7177f, -1244.6284f, 38.49653f, 85f, false, true))
 		{
-			*uParam1 = { -1624.445f, -976.9755f, 12.0175f };
+			*uParam1 = { -1624.4452f, -976.9755f, 12.0175f };
 			*uParam2 = 141.167f;
 			return 1;
 		}
@@ -3569,7 +3569,7 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 10f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -1140.89f, -1573.135f, -6.566939f, -1067.084f, -1675.976f, 23.53153f, 52f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -1140.8896f, -1573.1349f, -6.566939f, -1067.0844f, -1675.9756f, 23.531528f, 52f, false, true))
 	{
 		*uParam1 = { -1095.63f, -1577.24f, 3.82f };
 		*uParam2 = 216.12f;
@@ -3580,23 +3580,23 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 114f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 1324.172f, 1110.748f, 99.65493f, 1523.097f, 1110.473f, 132.8859f, 170f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 1324.1715f, 1110.7479f, 99.65493f, 1523.0968f, 1110.4734f, 132.88586f, 170f, false, true))
 	{
 		iVar0 = 3;
 		switch (MISC::GET_RANDOM_INT_IN_RANGE(0, iVar0))
 		{
 			case 0:
-				*uParam1 = { 1369.246f, 1147.653f, 112.7592f };
+				*uParam1 = { 1369.246f, 1147.6527f, 112.7592f };
 				*uParam2 = 182.0998f;
 				break;
 			
 			case 1:
-				*uParam1 = { 1360.848f, 1139.121f, 112.7592f };
+				*uParam1 = { 1360.8483f, 1139.121f, 112.7592f };
 				*uParam2 = 83.3356f;
 				break;
 			
 			case 2:
-				*uParam1 = { 1364.751f, 1154.367f, 112.7592f };
+				*uParam1 = { 1364.7513f, 1154.3668f, 112.7592f };
 				*uParam2 = 223.2795f;
 				break;
 		}
@@ -3607,9 +3607,9 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 40f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 1737.39f, 3287.795f, 35.13897f, 1724.345f, 3337.854f, 57.20038f, 40f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 1737.3901f, 3287.7954f, 35.13897f, 1724.3452f, 3337.854f, 57.200382f, 40f, false, true))
 	{
-		*uParam1 = { 1782.19f, 3300.076f, 40.4593f };
+		*uParam1 = { 1782.1903f, 3300.076f, 40.4593f };
 		*uParam2 = 142.426f;
 		return 1;
 	}
@@ -3618,9 +3618,9 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 7f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -695.7981f, -1379.678f, 24.48124f, -777.3731f, -1491.13f, -3.594945f, 72f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -695.7981f, -1379.6785f, 24.481243f, -777.3731f, -1491.13f, -3.594945f, 72f, false, true))
 	{
-		*uParam1 = { -658.2056f, -1388.789f, 9.499f };
+		*uParam1 = { -658.2056f, -1388.7886f, 9.499f };
 		*uParam2 = 174.6945f;
 		return 1;
 	}
@@ -3629,7 +3629,7 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 325f;
 	}
-	if (SYSTEM::VDIST2(Var1, -75.59782f, -818.6082f, 325.1745f) < (58f * 58f))
+	if (SYSTEM::VDIST2(Var1, -75.59782f, -818.60815f, 325.1745f) < (58f * 58f))
 	{
 		*uParam1 = { -142.367f, -895.0251f, 28.191f };
 		*uParam2 = 71.6555f;
@@ -3646,7 +3646,7 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 		{
 			if (func_91(Var1, 7, 0, 0))
 			{
-				*uParam1 = { -1012.31f, -465.1634f, 36.1141f };
+				*uParam1 = { -1012.3105f, -465.1634f, 36.1141f };
 				*uParam2 = 112.1485f;
 				return 1;
 			}
@@ -3667,22 +3667,22 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 				switch (MISC::GET_RANDOM_INT_IN_RANGE(0, iVar0))
 				{
 					case 0:
-						*uParam1 = { -979.95f, -2746.109f, 12.7091f };
+						*uParam1 = { -979.95f, -2746.1086f, 12.7091f };
 						*uParam2 = 91.4929f;
 						break;
 					
 					case 1:
-						*uParam1 = { -1025.193f, -2728.218f, 12.6647f };
+						*uParam1 = { -1025.1935f, -2728.2175f, 12.6647f };
 						*uParam2 = 239.0041f;
 						break;
 					
 					case 2:
-						*uParam1 = { -1051.315f, -2713.069f, 12.6676f };
+						*uParam1 = { -1051.315f, -2713.0686f, 12.6676f };
 						*uParam2 = 236.4666f;
 						break;
 					
 					case 3:
-						*uParam1 = { -1095.742f, -2637.871f, 12.6461f };
+						*uParam1 = { -1095.7417f, -2637.8713f, 12.6461f };
 						*uParam2 = 188.9897f;
 						break;
 				}
@@ -3693,42 +3693,42 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 				switch (iVar0)
 				{
 					case 1:
-						*uParam1 = { -1023.982f, -2489.882f, 19.0755f };
+						*uParam1 = { -1023.9825f, -2489.8818f, 19.0755f };
 						*uParam2 = 148.7004f;
 						break;
 					
 					case 2:
-						*uParam1 = { -1029.968f, -2500.438f, 19.0803f };
+						*uParam1 = { -1029.9678f, -2500.4377f, 19.0803f };
 						*uParam2 = 148.7144f;
 						break;
 					
 					case 3:
-						*uParam1 = { -1070.546f, -2570.859f, 19.0836f };
+						*uParam1 = { -1070.5457f, -2570.8594f, 19.0836f };
 						*uParam2 = 150.0955f;
 						break;
 					
 					case 4:
-						*uParam1 = { -1056.065f, -2545.662f, 19.0809f };
+						*uParam1 = { -1056.0647f, -2545.6619f, 19.0809f };
 						*uParam2 = 149.5649f;
 						break;
 					
 					case 5:
-						*uParam1 = { -1050.578f, -2536.219f, 19.0824f };
+						*uParam1 = { -1050.578f, -2536.2185f, 19.0824f };
 						*uParam2 = 150.7363f;
 						break;
 					
 					case 6:
-						*uParam1 = { -1036.032f, -2510.902f, 19.0794f };
+						*uParam1 = { -1036.0316f, -2510.902f, 19.0794f };
 						*uParam2 = 147.2113f;
 						break;
 					
 					case 7:
-						*uParam1 = { -1044.487f, -2525.534f, 19.079f };
+						*uParam1 = { -1044.4872f, -2525.5342f, 19.079f };
 						*uParam2 = 150.7597f;
 						break;
 					
 					default:
-						*uParam1 = { -1064.5f, -2560.653f, 19.0905f };
+						*uParam1 = { -1064.5002f, -2560.6528f, 19.0905f };
 						*uParam2 = 150.7081f;
 						break;
 					}
@@ -3736,10 +3736,10 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 			return 1;
 		}
 	}
-	Var7 = { -509.5746f, 4938.918f, 146.3271f };
+	Var7 = { -509.5746f, 4938.9185f, 146.3271f };
 	fVar8 = 232.0109f;
 	fVar9 = func_80(Param0, Var7);
-	Var10 = { 2450.604f, 5129.224f, 45.9722f };
+	Var10 = { 2450.6035f, 5129.2236f, 45.9722f };
 	fVar11 = 241.1957f;
 	fVar12 = func_80(Param0, Var10);
 	Var1 = { Param0 };
@@ -3748,7 +3748,7 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 400f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -148.8777f, 4862.204f, 305.6442f, 454.6274f, 5573.104f, 804.097f, 250f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -148.87766f, 4862.2036f, 305.6442f, 454.62744f, 5573.104f, 804.097f, 250f, false, true))
 	{
 		bVar13 = true;
 	}
@@ -3756,7 +3756,7 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 200f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -482.8931f, 4990.255f, 155.1601f, 7.830751f, 5009.371f, 430.7604f, 250f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -482.89307f, 4990.2554f, 155.16011f, 7.830751f, 5009.3706f, 430.76038f, 250f, false, true))
 	{
 		bVar13 = true;
 	}
@@ -3776,7 +3776,7 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 700f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 441.3999f, 5579.99f, 802.5138f, 965.7776f, 5675.921f, 601.2646f, 250f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 441.3999f, 5579.99f, 802.5138f, 965.7776f, 5675.921f, 601.26465f, 250f, false, true))
 	{
 		bVar13 = true;
 	}
@@ -3784,7 +3784,7 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 300f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 954.1139f, 5641.051f, 646.5054f, 2140.375f, 5377.753f, 149.1221f, 250f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 954.1139f, 5641.051f, 646.50543f, 2140.375f, 5377.7534f, 149.12209f, 250f, false, true))
 	{
 		bVar13 = true;
 	}
@@ -3792,7 +3792,7 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 100f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 2117.348f, 5377.259f, 173.3297f, 2439.934f, 5297.445f, 62.68662f, 100f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 2117.3477f, 5377.2593f, 173.32973f, 2439.9338f, 5297.445f, 62.686623f, 100f, false, true))
 	{
 		bVar13 = true;
 	}
@@ -3800,7 +3800,7 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 65f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 2393.347f, 5321.58f, 107.0624f, 2523.946f, 5124.746f, 41.68384f, 70f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 2393.3474f, 5321.5796f, 107.06242f, 2523.9456f, 5124.7456f, 41.68384f, 70f, false, true))
 	{
 		bVar13 = true;
 	}
@@ -3821,7 +3821,7 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	}
 	if (func_38(Var1, -99.68751f, -2448.891f, 5.01731f, 230f))
 	{
-		if ((((OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 85.05448f, -2511.884f, -2.996267f, -57.59977f, -2412.716f, 15.00095f, 75f, false, true) || OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 7.516524f, -2546.741f, 1.331557f, -177.3268f, -2417.047f, 19.16044f, 80f, false, true)) || OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -260.0354f, -2419.978f, 1.399635f, -27.26375f, -2423.848f, 25.00064f, 80f, false, true)) || OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -187.4256f, -2516.086f, -6.849975f, -186.7518f, -2438.149f, 25.0016f, 40f, false, true)) || OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -73.60813f, -2538.564f, -6.989857f, -183.2556f, -2465.145f, 25.0203f, 70f, false, true))
+		if ((((OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 85.05448f, -2511.8838f, -2.996267f, -57.599766f, -2412.7163f, 15.000947f, 75f, false, true) || OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 7.516524f, -2546.741f, 1.331557f, -177.32684f, -2417.0466f, 19.160444f, 80f, false, true)) || OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -260.03537f, -2419.9783f, 1.399635f, -27.26375f, -2423.8484f, 25.00064f, 80f, false, true)) || OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -187.4256f, -2516.0857f, -6.849975f, -186.7518f, -2438.1487f, 25.001602f, 40f, false, true)) || OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, -73.60813f, -2538.5637f, -6.989857f, -183.25558f, -2465.145f, 25.020298f, 70f, false, true))
 		{
 			iVar0 = 2;
 			if (MISC::GET_RANDOM_INT_IN_RANGE(0, iVar0) == 0)
@@ -3831,7 +3831,7 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 			}
 			else
 			{
-				*uParam1 = { -189.6824f, -2531.649f, 5.0031f };
+				*uParam1 = { -189.6824f, -2531.6492f, 5.0031f };
 				*uParam2 = 0.0408f;
 			}
 			return 1;
@@ -3841,7 +3841,7 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 28.4f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 412.279f, 6481.868f, 25.80821f, 468.9353f, 6442.752f, 45.60727f, 24f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 412.27902f, 6481.8677f, 25.808207f, 468.9353f, 6442.7524f, 45.607273f, 24f, false, true))
 	{
 		*uParam1 = { 445.231f, 6476.948f, 28.4862f };
 		*uParam2 = 219.4788f;
@@ -3851,9 +3851,9 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 28.2065f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 476.5394f, -1301.548f, 44.82458f, 499.5822f, -1339.025f, 26.31703f, 35f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 476.5394f, -1301.548f, 44.824577f, 499.58224f, -1339.0245f, 26.31703f, 35f, false, true))
 	{
-		*uParam1 = { 498.185f, -1288.535f, 28.1923f };
+		*uParam1 = { 498.185f, -1288.5354f, 28.1923f };
 		*uParam2 = 181.3208f;
 		return 1;
 	}
@@ -3861,9 +3861,9 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 28.2065f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 496.9816f, -1412.255f, 43.29391f, 497.269f, -1339.364f, 26.31648f, 40f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 496.98163f, -1412.2551f, 43.293907f, 497.269f, -1339.3639f, 26.316479f, 40f, false, true))
 	{
-		*uParam1 = { 504.1738f, -1421.251f, 28.2065f };
+		*uParam1 = { 504.1738f, -1421.2511f, 28.2065f };
 		*uParam2 = 83.2905f;
 		return 1;
 	}
@@ -3871,7 +3871,7 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 73f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 951.1704f, -147.0047f, 71.54326f, 1005.245f, -98.44745f, 95.62679f, 70f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 951.1704f, -147.00467f, 71.54326f, 1005.24493f, -98.44745f, 95.626785f, 70f, false, true))
 	{
 		*uParam1 = { 961.3104f, -150.1964f, 73.4016f };
 		*uParam2 = 58.9938f;
@@ -3881,15 +3881,15 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 52f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 1137.022f, 89.06853f, 74.89022f, 1267.821f, 292.0106f, 102.9904f, 195f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 1137.0221f, 89.068535f, 74.89022f, 1267.8208f, 292.01062f, 102.99044f, 195f, false, true))
 	{
-		*uParam1 = { 1118.751f, 262.0209f, 79.8555f };
+		*uParam1 = { 1118.7509f, 262.0209f, 79.8555f };
 		*uParam2 = 52.3086f;
 		return 1;
 	}
-	else if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 1137.022f, 89.06853f, 71.89022f, 1010.046f, -91.56699f, 103.4568f, 180f, false, true))
+	else if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 1137.0221f, 89.068535f, 71.89022f, 1010.04596f, -91.566986f, 103.45676f, 180f, false, true))
 	{
-		*uParam1 = { 1134.053f, 53.1835f, 79.7553f };
+		*uParam1 = { 1134.0535f, 53.1835f, 79.7553f };
 		*uParam2 = 145.5134f;
 		return 1;
 	}
@@ -3897,7 +3897,7 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 	{
 		Var1.f_2 = 30.6f;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 191.8731f, -723.553f, 40.23576f, 79.58656f, -687.6684f, 29.54734f, 85f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Var1, 191.87312f, -723.55304f, 40.235764f, 79.586555f, -687.6684f, 29.547338f, 85f, false, true))
 	{
 		iVar0 = 2;
 		if (MISC::GET_RANDOM_INT_IN_RANGE(0, iVar0) == 0)
@@ -3928,7 +3928,7 @@ int func_79(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position -
 		*uParam2 = 160f;
 		return 1;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 496.2593f, -3116.586f, 13.6414f, 471.4366f, -3116.258f, 5.7109f, 10f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 496.2593f, -3116.586f, 13.6414f, 471.4366f, -3116.2583f, 5.7109f, 10f, false, true))
 	{
 		*uParam1 = { 484.0132f, -3033.162f, 5.0717f };
 		*uParam2 = 140.7302f;
@@ -4092,103 +4092,103 @@ int func_91(struct<3> Param0, int iParam1, int iParam2, bool bParam3)//Position 
 	switch (iParam1)
 	{
 		case 1:
-			Var0[0 /*3*/] = { -1332.211f, 100.4608f, 40.38437f };
-			Var1[0 /*3*/] = { -1094.238f, 148.4274f, 73f };
+			Var0[0 /*3*/] = { -1332.2113f, 100.46083f, 40.384373f };
+			Var1[0 /*3*/] = { -1094.2382f, 148.42744f, 73f };
 			fVar2[0] = 171.25f;
-			Var0[1 /*3*/] = { -999.7344f, -110.2231f, 25.25706f };
-			Var1[1 /*3*/] = { -1149.494f, 109.2558f, 73f };
+			Var0[1 /*3*/] = { -999.7344f, -110.22309f, 25.257057f };
+			Var1[1 /*3*/] = { -1149.4938f, 109.25583f, 73f };
 			fVar2[1] = 132f;
-			Var0[2 /*3*/] = { -1035.113f, -84.95885f, 28.2746f };
-			Var1[2 /*3*/] = { -1261.103f, 50.08148f, 73f };
+			Var0[2 /*3*/] = { -1035.1129f, -84.958855f, 28.274601f };
+			Var1[2 /*3*/] = { -1261.1031f, 50.081482f, 73f };
 			fVar2[2] = 132f;
 			iVar3 = 3;
 			break;
 		
 		case 2:
-			Var0[0 /*3*/] = { -804.3439f, -3346.5f, 10f };
-			Var1[0 /*3*/] = { -1816.954f, -2768.893f, IntToFloat((250 + iParam2)) };
+			Var0[0 /*3*/] = { -804.3439f, -3346.5005f, 10f };
+			Var1[0 /*3*/] = { -1816.9539f, -2768.8933f, IntToFloat((250 + iParam2)) };
 			fVar2[0] = 247f;
-			Var0[1 /*3*/] = { -1911.488f, -2934.197f, 10f };
-			Var1[1 /*3*/] = { -968.6236f, -3477.748f, IntToFloat((250 + iParam2)) };
+			Var0[1 /*3*/] = { -1911.4879f, -2934.197f, 10f };
+			Var1[1 /*3*/] = { -968.6236f, -3477.7476f, IntToFloat((250 + iParam2)) };
 			fVar2[1] = 149f;
-			Var0[2 /*3*/] = { -844.9433f, -2802.785f, 10f };
-			Var1[2 /*3*/] = { -1011.081f, -3086.904f, IntToFloat((250 + iParam2)) };
+			Var0[2 /*3*/] = { -844.9433f, -2802.7852f, 10f };
+			Var1[2 /*3*/] = { -1011.08105f, -3086.9038f, IntToFloat((250 + iParam2)) };
 			fVar2[2] = 185.5f;
-			Var0[3 /*3*/] = { -1021.086f, -2952.277f, 10f };
-			Var1[3 /*3*/] = { -1599.008f, -2616.271f, IntToFloat((250 + iParam2)) };
+			Var0[3 /*3*/] = { -1021.0861f, -2952.277f, 10f };
+			Var1[3 /*3*/] = { -1599.0082f, -2616.2705f, IntToFloat((250 + iParam2)) };
 			fVar2[3] = 250f;
-			Var0[4 /*3*/] = { -1027.136f, -2436.457f, 10f };
-			Var1[4 /*3*/] = { -1392.61f, -2226.763f, IntToFloat((250 + iParam2)) };
+			Var0[4 /*3*/] = { -1027.1364f, -2436.457f, 10f };
+			Var1[4 /*3*/] = { -1392.6105f, -2226.7634f, IntToFloat((250 + iParam2)) };
 			fVar2[4] = 193.5f;
-			Var0[5 /*3*/] = { -1497.549f, -2408.712f, 10f };
-			Var1[5 /*3*/] = { -1136.917f, -2617.955f, IntToFloat((250 + iParam2)) };
+			Var0[5 /*3*/] = { -1497.5493f, -2408.7122f, 10f };
+			Var1[5 /*3*/] = { -1136.9174f, -2617.9546f, IntToFloat((250 + iParam2)) };
 			fVar2[5] = 234.5f;
-			Var0[6 /*3*/] = { -982.7924f, -2831.709f, 12.93313f };
-			Var1[6 /*3*/] = { -966.4677f, -2803.458f, 16.68313f };
+			Var0[6 /*3*/] = { -982.79236f, -2831.7087f, 12.93313f };
+			Var1[6 /*3*/] = { -966.46765f, -2803.458f, 16.68313f };
 			fVar2[6] = 16f;
-			Var0[7 /*3*/] = { -1110.083f, -3496.806f, 12f };
-			Var1[7 /*3*/] = { -1955.298f, -3010.431f, IntToFloat((250 + iParam2)) };
+			Var0[7 /*3*/] = { -1110.0831f, -3496.8057f, 12f };
+			Var1[7 /*3*/] = { -1955.2982f, -3010.4314f, IntToFloat((250 + iParam2)) };
 			fVar2[7] = 80f;
-			Var0[8 /*3*/] = { -1886.899f, -3193.024f, 12f };
-			Var1[8 /*3*/] = { -1836.143f, -3105.268f, IntToFloat((250 + iParam2)) };
+			Var0[8 /*3*/] = { -1886.8994f, -3193.0237f, 12f };
+			Var1[8 /*3*/] = { -1836.143f, -3105.2683f, IntToFloat((250 + iParam2)) };
 			fVar2[8] = 142f;
-			Var0[9 /*3*/] = { -1134.337f, -3535.648f, 12f };
-			Var1[9 /*3*/] = { -1259.649f, -3463.486f, IntToFloat((250 + iParam2)) };
+			Var0[9 /*3*/] = { -1134.3367f, -3535.6482f, 12f };
+			Var1[9 /*3*/] = { -1259.6486f, -3463.4863f, IntToFloat((250 + iParam2)) };
 			fVar2[9] = 30.75f;
-			Var0[10 /*3*/] = { -969.1279f, -3463.899f, 12f };
-			Var1[10 /*3*/] = { -896.3734f, -3505.715f, IntToFloat((250 + iParam2)) };
+			Var0[10 /*3*/] = { -969.12787f, -3463.8994f, 12f };
+			Var1[10 /*3*/] = { -896.3734f, -3505.7148f, IntToFloat((250 + iParam2)) };
 			fVar2[10] = 150f;
-			Var0[11 /*3*/] = { -1369.491f, -2173.579f, 10f };
-			Var1[11 /*3*/] = { -1685.626f, -2720.364f, IntToFloat((250 + iParam2)) };
+			Var0[11 /*3*/] = { -1369.4913f, -2173.5789f, 10f };
+			Var1[11 /*3*/] = { -1685.6256f, -2720.3635f, IntToFloat((250 + iParam2)) };
 			fVar2[11] = 29.25f;
-			Var0[12 /*3*/] = { -1010.926f, -3550.943f, 10f };
-			Var1[12 /*3*/] = { -1110.198f, -3493.617f, IntToFloat((250 + iParam2)) };
+			Var0[12 /*3*/] = { -1010.9256f, -3550.9434f, 10f };
+			Var1[12 /*3*/] = { -1110.1978f, -3493.6172f, IntToFloat((250 + iParam2)) };
 			fVar2[12] = 43f;
 			iVar3 = 13;
 			break;
 		
 		case 3:
-			Var0[0 /*3*/] = { -1773.944f, 3287.334f, 30f };
-			Var1[0 /*3*/] = { -2029.776f, 2845.083f, IntToFloat((250 + iParam2)) };
+			Var0[0 /*3*/] = { -1773.944f, 3287.3342f, 30f };
+			Var1[0 /*3*/] = { -2029.7765f, 2845.0833f, IntToFloat((250 + iParam2)) };
 			fVar2[0] = 255f;
-			Var0[1 /*3*/] = { -2725.889f, 3291.099f, 30f };
-			Var1[1 /*3*/] = { -2009.182f, 2879.835f, IntToFloat((250 + iParam2)) };
+			Var0[1 /*3*/] = { -2725.8894f, 3291.0986f, 30f };
+			Var1[1 /*3*/] = { -2009.1815f, 2879.8352f, IntToFloat((250 + iParam2)) };
 			fVar2[1] = 180f;
-			Var0[2 /*3*/] = { -2442.026f, 3326.699f, 30f };
-			Var1[2 /*3*/] = { -2033.928f, 3089.049f, IntToFloat((250 + iParam2)) };
+			Var0[2 /*3*/] = { -2442.0261f, 3326.6987f, 30f };
+			Var1[2 /*3*/] = { -2033.9279f, 3089.0488f, IntToFloat((250 + iParam2)) };
 			fVar2[2] = 205f;
-			Var0[3 /*3*/] = { -1917.165f, 3374.209f, 30f };
-			Var1[3 /*3*/] = { -2016.791f, 3195.058f, IntToFloat((250 + iParam2)) };
+			Var0[3 /*3*/] = { -1917.1654f, 3374.209f, 30f };
+			Var1[3 /*3*/] = { -2016.7909f, 3195.058f, IntToFloat((250 + iParam2)) };
 			fVar2[3] = 86.25f;
-			Var0[4 /*3*/] = { -2192.753f, 3373.278f, 30f };
-			Var1[4 /*3*/] = { -2191.544f, 3150.417f, IntToFloat((250 + iParam2)) };
+			Var0[4 /*3*/] = { -2192.753f, 3373.2778f, 30f };
+			Var1[4 /*3*/] = { -2191.5444f, 3150.4165f, IntToFloat((250 + iParam2)) };
 			fVar2[4] = 150.5f;
-			Var0[5 /*3*/] = { -2077.663f, 3344.514f, 30f };
-			Var1[5 /*3*/] = { -2191.544f, 3150.417f, IntToFloat((250 + iParam2)) };
+			Var0[5 /*3*/] = { -2077.6633f, 3344.5142f, 30f };
+			Var1[5 /*3*/] = { -2191.5444f, 3150.4165f, IntToFloat((250 + iParam2)) };
 			fVar2[5] = 140.5f;
-			Var0[6 /*3*/] = { -2861.755f, 3352.661f, 30f };
-			Var1[6 /*3*/] = { -2715.871f, 3269.916f, IntToFloat((250 + iParam2)) };
+			Var0[6 /*3*/] = { -2861.7554f, 3352.6606f, 30f };
+			Var1[6 /*3*/] = { -2715.8708f, 3269.9155f, IntToFloat((250 + iParam2)) };
 			fVar2[6] = 90f;
-			Var0[7 /*3*/] = { -2005.574f, 3364.533f, 30f };
-			Var1[7 /*3*/] = { -1977.569f, 3330.888f, IntToFloat((250 + iParam2)) };
+			Var0[7 /*3*/] = { -2005.5745f, 3364.5327f, 30f };
+			Var1[7 /*3*/] = { -1977.5688f, 3330.8882f, IntToFloat((250 + iParam2)) };
 			fVar2[7] = 100f;
-			Var0[8 /*3*/] = { -1682.235f, 3004.285f, 30f };
-			Var1[8 /*3*/] = { -1942.747f, 2947.441f, IntToFloat((250 + iParam2)) };
+			Var0[8 /*3*/] = { -1682.235f, 3004.2852f, 30f };
+			Var1[8 /*3*/] = { -1942.747f, 2947.4412f, IntToFloat((250 + iParam2)) };
 			fVar2[8] = 248.75f;
-			Var0[9 /*3*/] = { -2393.295f, 2936.406f, 31.6801f };
-			Var1[9 /*3*/] = { -2453.037f, 3006.863f, 52.31003f };
+			Var0[9 /*3*/] = { -2393.2954f, 2936.406f, 31.680103f };
+			Var1[9 /*3*/] = { -2453.0366f, 3006.863f, 52.310028f };
 			fVar2[9] = 128f;
-			Var0[10 /*3*/] = { -2347.185f, 3023.83f, 31.56573f };
-			Var1[10 /*3*/] = { -2517.33f, 2989.063f, 49.95644f };
+			Var0[10 /*3*/] = { -2347.1848f, 3023.8298f, 31.56573f };
+			Var1[10 /*3*/] = { -2517.3298f, 2989.0635f, 49.956444f };
 			fVar2[10] = 140f;
-			Var0[11 /*3*/] = { -2259.922f, 3358.04f, 29.99972f };
-			Var1[11 /*3*/] = { -2299.772f, 3385.79f, 38.06014f };
+			Var0[11 /*3*/] = { -2259.9219f, 3358.0398f, 29.999718f };
+			Var1[11 /*3*/] = { -2299.772f, 3385.79f, 38.060143f };
 			fVar2[11] = 16f;
-			Var0[12 /*3*/] = { -2476.309f, 3363.914f, 31.67933f };
-			Var1[12 /*3*/] = { -2431.981f, 3287.669f, 39.97826f };
+			Var0[12 /*3*/] = { -2476.3093f, 3363.914f, 31.679329f };
+			Var1[12 /*3*/] = { -2431.9807f, 3287.6694f, 39.978264f };
 			fVar2[12] = 214.25f;
-			Var0[13 /*3*/] = { -2103.081f, 2797.783f, 29.37864f };
-			Var1[13 /*3*/] = { -2096.821f, 2874.423f, 57.80989f };
+			Var0[13 /*3*/] = { -2103.0813f, 2797.7834f, 29.37864f };
+			Var1[13 /*3*/] = { -2096.8213f, 2874.4233f, 57.80989f };
 			fVar2[13] = 65.75f;
 			if (bParam3)
 			{
@@ -4207,99 +4207,99 @@ int func_91(struct<3> Param0, int iParam1, int iParam2, bool bParam3)//Position 
 			break;
 		
 		case 4:
-			Var0[0 /*3*/] = { 1541.607f, 2527.555f, 40f };
-			Var1[0 /*3*/] = { 1815.575f, 2535.06f, IntToFloat((150 + iParam2)) };
+			Var0[0 /*3*/] = { 1541.6072f, 2527.555f, 40f };
+			Var1[0 /*3*/] = { 1815.5753f, 2535.0596f, IntToFloat((150 + iParam2)) };
 			fVar2[0] = 114f;
-			Var0[1 /*3*/] = { 1788.879f, 2445.727f, 40f };
-			Var1[1 /*3*/] = { 1716.96f, 2502.957f, IntToFloat((150 + iParam2)) };
+			Var0[1 /*3*/] = { 1788.8787f, 2445.7273f, 40f };
+			Var1[1 /*3*/] = { 1716.9603f, 2502.957f, IntToFloat((150 + iParam2)) };
 			fVar2[1] = 88.5f;
-			Var0[2 /*3*/] = { 1601.157f, 2436.244f, 40f };
-			Var1[2 /*3*/] = { 1650.078f, 2515.923f, IntToFloat((150 + iParam2)) };
+			Var0[2 /*3*/] = { 1601.1575f, 2436.2441f, 40f };
+			Var1[2 /*3*/] = { 1650.0776f, 2515.9226f, IntToFloat((150 + iParam2)) };
 			fVar2[2] = 133.25f;
-			Var0[3 /*3*/] = { 1706.331f, 2407.597f, 40f };
-			Var1[3 /*3*/] = { 1698.555f, 2460.208f, IntToFloat((150 + iParam2)) };
+			Var0[3 /*3*/] = { 1706.3307f, 2407.5972f, 40f };
+			Var1[3 /*3*/] = { 1698.5546f, 2460.2078f, IntToFloat((150 + iParam2)) };
 			fVar2[3] = 104.5f;
-			Var0[4 /*3*/] = { 1712.452f, 2756.218f, 40f };
-			Var1[4 /*3*/] = { 1718.848f, 2589.162f, IntToFloat((150 + iParam2)) };
+			Var0[4 /*3*/] = { 1712.4517f, 2756.2175f, 40f };
+			Var1[4 /*3*/] = { 1718.8477f, 2589.1616f, IntToFloat((150 + iParam2)) };
 			fVar2[4] = 121.75f;
-			Var0[5 /*3*/] = { 1830.228f, 2661.24f, 40f };
-			Var1[5 /*3*/] = { 1774.812f, 2679.419f, IntToFloat((150 + iParam2)) };
+			Var0[5 /*3*/] = { 1830.2278f, 2661.2402f, 40f };
+			Var1[5 /*3*/] = { 1774.8124f, 2679.4187f, IntToFloat((150 + iParam2)) };
 			fVar2[5] = 84.5f;
-			Var0[6 /*3*/] = { 1559.05f, 2632.22f, 40f };
-			Var1[6 /*3*/] = { 1657.208f, 2595.484f, IntToFloat((150 + iParam2)) };
+			Var0[6 /*3*/] = { 1559.0503f, 2632.2205f, 40f };
+			Var1[6 /*3*/] = { 1657.2083f, 2595.4844f, IntToFloat((150 + iParam2)) };
 			fVar2[6] = 103.75f;
-			Var0[7 /*3*/] = { 1612.021f, 2716.869f, 40f };
-			Var1[7 /*3*/] = { 1657.165f, 2669.721f, IntToFloat((150 + iParam2)) };
+			Var0[7 /*3*/] = { 1612.0209f, 2716.869f, 40f };
+			Var1[7 /*3*/] = { 1657.1647f, 2669.721f, IntToFloat((150 + iParam2)) };
 			fVar2[7] = 104.25f;
-			Var0[8 /*3*/] = { 1809.872f, 2729.827f, 40f };
-			Var1[8 /*3*/] = { 1789.855f, 2705.037f, IntToFloat((150 + iParam2)) };
+			Var0[8 /*3*/] = { 1809.8721f, 2729.827f, 40f };
+			Var1[8 /*3*/] = { 1789.8551f, 2705.0369f, IntToFloat((150 + iParam2)) };
 			fVar2[8] = 91f;
-			Var0[9 /*3*/] = { 1818.789f, 2605.948f, 40f };
-			Var1[9 /*3*/] = { 1783.114f, 2606.783f, IntToFloat((150 + iParam2)) };
+			Var0[9 /*3*/] = { 1818.7888f, 2605.9478f, 40f };
+			Var1[9 /*3*/] = { 1783.1143f, 2606.7832f, IntToFloat((150 + iParam2)) };
 			fVar2[9] = 51.25f;
 			iVar3 = 10;
 			break;
 		
 		case 5:
-			Var0[0 /*3*/] = { 3411.002f, 3663.185f, 20f };
-			Var1[0 /*3*/] = { 3615.583f, 3626.194f, IntToFloat((40 + iParam2)) };
+			Var0[0 /*3*/] = { 3411.002f, 3663.1846f, 20f };
+			Var1[0 /*3*/] = { 3615.583f, 3626.1936f, IntToFloat((40 + iParam2)) };
 			fVar2[0] = 45.75f;
 			Var0[1 /*3*/] = { 3426.66f, 3733.078f, 20f };
-			Var1[1 /*3*/] = { 3643.801f, 3694.362f, IntToFloat((40 + iParam2)) };
+			Var1[1 /*3*/] = { 3643.8008f, 3694.3618f, IntToFloat((40 + iParam2)) };
 			fVar2[1] = 99f;
-			Var0[2 /*3*/] = { 3446.036f, 3795.688f, 20f };
-			Var1[2 /*3*/] = { 3650.914f, 3766.152f, IntToFloat((40 + iParam2)) };
+			Var0[2 /*3*/] = { 3446.0364f, 3795.6882f, 20f };
+			Var1[2 /*3*/] = { 3650.9143f, 3766.1516f, IntToFloat((40 + iParam2)) };
 			fVar2[2] = 81.5f;
 			iVar3 = 3;
 			break;
 		
 		case 6:
-			Var0[0 /*3*/] = { 526.053f, -3391.497f, -10f };
-			Var1[0 /*3*/] = { 523.2289f, -3118.678f, IntToFloat((10 + iParam2)) };
+			Var0[0 /*3*/] = { 526.05304f, -3391.4968f, -10f };
+			Var1[0 /*3*/] = { 523.22894f, -3118.678f, IntToFloat((10 + iParam2)) };
 			fVar2[0] = 120f;
-			Var0[1 /*3*/] = { 459.4397f, -3199.99f, 4.819676f };
-			Var1[1 /*3*/] = { 593.8928f, -3199.998f, 30.06926f };
+			Var0[1 /*3*/] = { 459.4397f, -3199.9895f, 4.819676f };
+			Var1[1 /*3*/] = { 593.89276f, -3199.998f, 30.069256f };
 			fVar2[1] = 170f;
-			Var0[2 /*3*/] = { 552.8467f, -3111.054f, 4.819394f };
-			Var1[2 /*3*/] = { 585.3137f, -3111.844f, 17.56923f };
+			Var0[2 /*3*/] = { 552.8467f, -3111.0537f, 4.819394f };
+			Var1[2 /*3*/] = { 585.3137f, -3111.8442f, 17.569231f };
 			fVar2[2] = 12.5f;
-			Var0[3 /*3*/] = { 598.4666f, -3140.147f, 4.819257f };
-			Var1[3 /*3*/] = { 597.4973f, -3117.063f, 17.31926f };
+			Var0[3 /*3*/] = { 598.46655f, -3140.1475f, 4.819257f };
+			Var1[3 /*3*/] = { 597.4973f, -3117.0627f, 17.319258f };
 			fVar2[3] = 9.75f;
 			iVar3 = 4;
 			break;
 		
 		case 7:
-			Var0[0 /*3*/] = { -1108.55f, -570.8798f, 20f };
-			Var1[0 /*3*/] = { -1187.811f, -477.5037f, IntToFloat((50 + iParam2)) };
+			Var0[0 /*3*/] = { -1108.5497f, -570.87976f, 20f };
+			Var1[0 /*3*/] = { -1187.8108f, -477.50366f, IntToFloat((50 + iParam2)) };
 			fVar2[0] = 162f;
-			Var0[1 /*3*/] = { -1201.378f, -485.9673f, 20f };
-			Var1[1 /*3*/] = { -1215.796f, -464.8281f, IntToFloat((50 + iParam2)) };
+			Var0[1 /*3*/] = { -1201.3776f, -485.96732f, 20f };
+			Var1[1 /*3*/] = { -1215.7959f, -464.82806f, IntToFloat((50 + iParam2)) };
 			fVar2[1] = 124f;
-			Var0[2 /*3*/] = { -985.6311f, -525.4233f, 20f };
-			Var1[2 /*3*/] = { -1013.393f, -475.2057f, IntToFloat((50 + iParam2)) };
+			Var0[2 /*3*/] = { -985.6311f, -525.42334f, 20f };
+			Var1[2 /*3*/] = { -1013.3932f, -475.20575f, IntToFloat((50 + iParam2)) };
 			fVar2[2] = 55f;
-			Var0[3 /*3*/] = { -1055.849f, -477.8226f, 20f };
-			Var1[3 /*3*/] = { -1073.333f, -498.717f, IntToFloat((50 + iParam2)) };
+			Var0[3 /*3*/] = { -1055.8492f, -477.8226f, 20f };
+			Var1[3 /*3*/] = { -1073.3325f, -498.717f, IntToFloat((50 + iParam2)) };
 			fVar2[3] = 142f;
 			iVar3 = 4;
 			break;
 		
 		case 8:
-			Var0[0 /*3*/] = { 461.5684f, -984.572f, 29.43951f };
-			Var1[0 /*3*/] = { 471.17f, -984.4292f, 40.14212f };
+			Var0[0 /*3*/] = { 461.5684f, -984.57196f, 29.439508f };
+			Var1[0 /*3*/] = { 471.17004f, -984.4292f, 40.14212f };
 			fVar2[0] = 7.75f;
-			Var0[1 /*3*/] = { 457.3404f, -984.756f, 34.43951f };
-			Var1[1 /*3*/] = { 457.2084f, -993.7189f, 29.38958f };
+			Var0[1 /*3*/] = { 457.3404f, -984.75604f, 34.439507f };
+			Var1[1 /*3*/] = { 457.20837f, -993.71893f, 29.389584f };
 			fVar2[1] = 14.75f;
-			Var0[2 /*3*/] = { 477.6227f, -986.6f, 40.00819f };
-			Var1[2 /*3*/] = { 424.8687f, -986.3279f, 48.71241f };
+			Var0[2 /*3*/] = { 477.62268f, -986.60004f, 40.00819f };
+			Var1[2 /*3*/] = { 424.8687f, -986.3279f, 48.712406f };
 			fVar2[2] = 31.5f;
-			Var0[3 /*3*/] = { 474.3889f, -974.4613f, 39.55761f };
-			Var1[3 /*3*/] = { 474.0358f, -1021.972f, 49.10033f };
+			Var0[3 /*3*/] = { 474.38895f, -974.4613f, 39.557606f };
+			Var1[3 /*3*/] = { 474.0358f, -1021.9721f, 49.10033f };
 			fVar2[3] = 30.5f;
-			Var0[4 /*3*/] = { 442.1768f, -974.1888f, 29.68951f };
-			Var1[4 /*3*/] = { 442.1855f, -979.8635f, 33.43951f };
+			Var0[4 /*3*/] = { 442.17685f, -974.1888f, 29.689508f };
+			Var1[4 /*3*/] = { 442.18552f, -979.8635f, 33.439507f };
 			fVar2[4] = 6.75f;
 			iVar3 = 5;
 			break;
@@ -4365,7 +4365,7 @@ Vector3 func_94(int iParam0)//Position - 0x63D1
 	switch (iParam0)
 	{
 		case 1:
-			return -1155.877f, 48.3426f, 52.4985f;
+			return -1155.8766f, 48.3426f, 52.4985f;
 			break;
 		
 		case 2:
@@ -4377,19 +4377,19 @@ Vector3 func_94(int iParam0)//Position - 0x63D1
 			break;
 		
 		case 4:
-			return 1701.666f, 2586.261f, 51.4925f;
+			return 1701.6664f, 2586.2612f, 51.4925f;
 			break;
 		
 		case 5:
-			return 3525.058f, 3711.323f, 35.6423f;
+			return 3525.0576f, 3711.3232f, 35.6423f;
 			break;
 		
 		case 6:
-			return 548.1421f, -3157.961f, 5.0696f;
+			return 548.1421f, -3157.9612f, 5.0696f;
 			break;
 		
 		case 7:
-			return -1142.411f, -526.4487f, 31.6878f;
+			return -1142.4111f, -526.4487f, 31.6878f;
 			break;
 		
 		case 8:
@@ -4711,45 +4711,45 @@ int func_102(struct<3> Param0, struct<3> Param1, float fParam2, float fParam3)//
 
 int func_103(struct<3> Param0, bool bParam1)//Position - 0x6AA6
 {
-	if (func_38(Param0, -1144.497f, 43.01712f, 51.94447f, 325f))
+	if (func_38(Param0, -1144.4973f, 43.01712f, 51.94447f, 325f))
 	{
 		if (func_91(Param0, 1, 0, 0))
 		{
 			return 1;
 		}
-		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1319.769f, 29.52616f, 49.56616f, -1336.527f, 121.0351f, 75.61888f, 18f, false, true))
+		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1319.7686f, 29.526155f, 49.56616f, -1336.5266f, 121.03514f, 75.61888f, 18f, false, true))
 		{
 			return 1;
 		}
-		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1360.02f, 110.1307f, 52.63413f, -1365.276f, 172.0624f, 72.01312f, 52f, false, true))
+		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1360.0197f, 110.13066f, 52.634132f, -1365.276f, 172.06244f, 72.01312f, 52f, false, true))
 		{
 			return 1;
 		}
-		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1363.007f, 170.533f, 50.00813f, -1296.903f, 178.8133f, 73.37104f, 35f, false, true))
+		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1363.0066f, 170.53304f, 50.00813f, -1296.9033f, 178.81332f, 73.37104f, 35f, false, true))
 		{
 			return 1;
 		}
-		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1197.521f, 199.8643f, 57.04471f, -1298.04f, 176.1384f, 73.33252f, 34f, false, true))
+		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1197.5212f, 199.86429f, 57.04471f, -1298.0396f, 176.13841f, 73.33252f, 34f, false, true))
 		{
 			return 1;
 		}
-		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1103.745f, 221.1367f, 55.34814f, -1208.394f, 191.0909f, 79.13708f, 45f, false, true))
+		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1103.7449f, 221.13667f, 55.34814f, -1208.3938f, 191.09093f, 79.137085f, 45f, false, true))
 		{
 			return 1;
 		}
-		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -989.0328f, -89.39376f, 32.48801f, -1086.211f, -115.7076f, 50.65051f, 70f, false, true))
+		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -989.03284f, -89.39376f, 32.48801f, -1086.2109f, -115.70765f, 50.650505f, 70f, false, true))
 		{
 			return 1;
 		}
-		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -958.5481f, -111.5455f, 30.76432f, -1132.685f, 190.7841f, 73.90366f, 70f, false, true))
+		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -958.5481f, -111.54555f, 30.764324f, -1132.6853f, 190.78412f, 73.903656f, 70f, false, true))
 		{
 			return 1;
 		}
-		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1077.028f, -139.7337f, 38.73388f, -1299.556f, -15.16894f, 63.4371f, 20f, false, true))
+		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1077.0282f, -139.7337f, 38.733883f, -1299.5559f, -15.168939f, 63.437103f, 20f, false, true))
 		{
 			return 1;
 		}
-		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1319.769f, 29.52616f, 47.56616f, -1287.619f, -24.88864f, 67.5273f, 20f, false, true))
+		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1319.7686f, 29.526155f, 47.56616f, -1287.6193f, -24.88864f, 67.5273f, 20f, false, true))
 		{
 			return 1;
 		}
@@ -4806,40 +4806,40 @@ int func_103(struct<3> Param0, bool bParam1)//Position - 0x6AA6
 			return 1;
 		}
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 2591.626f, -268.894f, 111.8859f, 2591.331f, -614.4355f, 55.36921f, 70f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 2591.6265f, -268.89395f, 111.88586f, 2591.331f, -614.43555f, 55.369205f, 70f, false, true))
 	{
 		return 1;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1112.586f, -2674.767f, 12.56804f, -1215.468f, -2854.589f, 19.44588f, 41.25f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1112.5862f, -2674.7668f, 12.568037f, -1215.4681f, -2854.5886f, 19.445877f, 41.25f, false, true))
 	{
 		return 1;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -804.05f, 4216.412f, 204.4872f, -509.0679f, 4135.19f, 123.2502f, 250f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -804.05005f, 4216.4116f, 204.4872f, -509.06787f, 4135.1904f, 123.25017f, 250f, false, true))
 	{
 		return 1;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -148.8777f, 4862.204f, 305.6442f, 454.6274f, 5573.104f, 804.097f, 250f, false, true) || OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -482.8931f, 4990.255f, 155.1601f, 7.830751f, 5009.371f, 430.7604f, 250f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -148.87766f, 4862.2036f, 305.6442f, 454.62744f, 5573.104f, 804.097f, 250f, false, true) || OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -482.89307f, 4990.2554f, 155.16011f, 7.830751f, 5009.3706f, 430.76038f, 250f, false, true))
 	{
 		return 1;
 	}
-	if (((OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 441.3999f, 5579.99f, 802.5138f, 965.7776f, 5675.921f, 601.2646f, 250f, false, true) || OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 954.1139f, 5641.051f, 646.5054f, 2140.375f, 5377.753f, 149.1221f, 250f, false, true)) || OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 2117.348f, 5377.259f, 173.3297f, 2439.934f, 5297.445f, 62.68662f, 100f, false, true)) || OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 2393.347f, 5321.58f, 107.0624f, 2523.946f, 5124.746f, 41.68384f, 70f, false, true))
+	if (((OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 441.3999f, 5579.99f, 802.5138f, 965.7776f, 5675.921f, 601.26465f, 250f, false, true) || OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 954.1139f, 5641.051f, 646.50543f, 2140.375f, 5377.7534f, 149.12209f, 250f, false, true)) || OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 2117.3477f, 5377.2593f, 173.32973f, 2439.9338f, 5297.445f, 62.686623f, 100f, false, true)) || OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 2393.3474f, 5321.5796f, 107.06242f, 2523.9456f, 5124.7456f, 41.68384f, 70f, false, true))
 	{
 		return 1;
 	}
 	if (func_38(Param0, -99.68751f, -2448.891f, 5.01731f, 230f))
 	{
-		if ((((OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 85.05448f, -2511.884f, -2.996267f, -57.59977f, -2412.716f, 15.00095f, 75f, false, true) || OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 7.516524f, -2546.741f, 1.331557f, -177.3268f, -2417.047f, 19.16044f, 80f, false, true)) || OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -260.0354f, -2419.978f, 1.399635f, -27.26375f, -2423.848f, 25.00064f, 80f, false, true)) || OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -187.4256f, -2516.086f, -6.849975f, -186.7518f, -2438.149f, 25.0016f, 40f, false, true)) || OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -73.60813f, -2538.564f, -6.989857f, -183.2556f, -2465.145f, 25.0203f, 70f, false, true))
+		if ((((OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 85.05448f, -2511.8838f, -2.996267f, -57.599766f, -2412.7163f, 15.000947f, 75f, false, true) || OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 7.516524f, -2546.741f, 1.331557f, -177.32684f, -2417.0466f, 19.160444f, 80f, false, true)) || OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -260.03537f, -2419.9783f, 1.399635f, -27.26375f, -2423.8484f, 25.00064f, 80f, false, true)) || OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -187.4256f, -2516.0857f, -6.849975f, -186.7518f, -2438.1487f, 25.001602f, 40f, false, true)) || OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -73.60813f, -2538.5637f, -6.989857f, -183.25558f, -2465.145f, 25.020298f, 70f, false, true))
 		{
 			return 1;
 		}
 	}
 	if (!bParam1)
 	{
-		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1171.709f, -1524.66f, 23.37969f, -1139.721f, -1573.589f, -1.585432f, 55f, false, true))
+		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1171.7086f, -1524.6598f, 23.379686f, -1139.7214f, -1573.589f, -1.585432f, 55f, false, true))
 		{
 			return 1;
 		}
-		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 476.5394f, -1301.548f, 44.82458f, 499.5822f, -1339.025f, 26.31703f, 35f, false, true) || OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 496.9816f, -1412.255f, 43.29391f, 497.269f, -1339.364f, 26.31648f, 40f, false, true))
+		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 476.5394f, -1301.548f, 44.824577f, 499.58224f, -1339.0245f, 26.31703f, 35f, false, true) || OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 496.98163f, -1412.2551f, 43.293907f, 497.269f, -1339.3639f, 26.316479f, 40f, false, true))
 		{
 			return 1;
 		}
@@ -4935,32 +4935,32 @@ int func_105(struct<3> Param0, int iParam1, var uParam2, var uParam3)//Position 
 		{
 			if (iVar2 == 0)
 			{
-				Var0 = { -1587.096f, -928.5875f, 14.3046f };
+				Var0 = { -1587.0962f, -928.5875f, 14.3046f };
 				fVar1 = 139.9023f;
 			}
 			else if (iVar2 == 1)
 			{
-				Var0 = { -1532.458f, -863.667f, 21.6188f };
+				Var0 = { -1532.4579f, -863.667f, 21.6188f };
 				fVar1 = 139.9028f;
 			}
 			else if (iVar2 == 2)
 			{
-				Var0 = { -1472.888f, -733.0396f, 24.0746f };
+				Var0 = { -1472.8877f, -733.0396f, 24.0746f };
 				fVar1 = 236.3756f;
 			}
 			else if (iVar2 == 3)
 			{
-				Var0 = { -1397.303f, -781.1235f, 19.3347f };
+				Var0 = { -1397.3027f, -781.1235f, 19.3347f };
 				fVar1 = 48.1876f;
 			}
 			else if (iVar2 == 4)
 			{
-				Var0 = { -1605.409f, -1012.578f, 12.0175f };
+				Var0 = { -1605.4087f, -1012.5778f, 12.0175f };
 				fVar1 = 51.1191f;
 			}
 			else if (iVar2 == 5)
 			{
-				Var0 = { -1572.457f, -1007.106f, 12.0184f };
+				Var0 = { -1572.4573f, -1007.1061f, 12.0184f };
 				fVar1 = 141.2024f;
 			}
 			if (func_102(Param0, Var0, 1133903872, 1101004800))
@@ -4981,22 +4981,22 @@ int func_105(struct<3> Param0, int iParam1, var uParam2, var uParam3)//Position 
 		{
 			if (iVar2 == 0)
 			{
-				Var0 = { -1126.552f, -1530.591f, 3.294f };
+				Var0 = { -1126.5519f, -1530.5911f, 3.294f };
 				fVar1 = 214.5477f;
 			}
 			else if (iVar2 == 1)
 			{
-				Var0 = { -1043.019f, -1644.172f, 3.4894f };
+				Var0 = { -1043.0194f, -1644.1719f, 3.4894f };
 				fVar1 = 35.3163f;
 			}
 			else if (iVar2 == 2)
 			{
-				Var0 = { -1039.345f, -1532.581f, 4.1467f };
+				Var0 = { -1039.3455f, -1532.5812f, 4.1467f };
 				fVar1 = 32.1734f;
 			}
 			else if (iVar2 == 3)
 			{
-				Var0 = { -1067.577f, -1501.944f, 4.0327f };
+				Var0 = { -1067.5765f, -1501.944f, 4.0327f };
 				fVar1 = 216.1659f;
 			}
 			if (func_102(Param0, Var0, 1133903872, 1101004800))
@@ -5017,7 +5017,7 @@ int func_105(struct<3> Param0, int iParam1, var uParam2, var uParam3)//Position 
 		{
 			if (iVar2 == 0)
 			{
-				Var0 = { -1247.291f, 2549.53f, 16.4214f };
+				Var0 = { -1247.2906f, 2549.53f, 16.4214f };
 				fVar1 = 137.1185f;
 			}
 			else if (iVar2 == 1)
@@ -5027,12 +5027,12 @@ int func_105(struct<3> Param0, int iParam1, var uParam2, var uParam3)//Position 
 			}
 			else if (iVar2 == 2)
 			{
-				Var0 = { -1095.382f, 2686.487f, 18.5919f };
+				Var0 = { -1095.3818f, 2686.4868f, 18.5919f };
 				fVar1 = 130.0954f;
 			}
 			else if (iVar2 == 3)
 			{
-				Var0 = { -1373.514f, 2429.944f, 26.7492f };
+				Var0 = { -1373.5143f, 2429.944f, 26.7492f };
 				fVar1 = 298.9626f;
 			}
 			if (func_102(Param0, Var0, 1133903872, 1101004800))
@@ -5053,27 +5053,27 @@ int func_105(struct<3> Param0, int iParam1, var uParam2, var uParam3)//Position 
 		{
 			if (iVar2 == 0)
 			{
-				Var0 = { 1299.198f, 1164.342f, 105.3728f };
+				Var0 = { 1299.198f, 1164.3418f, 105.3728f };
 				fVar1 = 3.1765f;
 			}
 			else if (iVar2 == 1)
 			{
-				Var0 = { 1304.831f, 1084.598f, 104.6453f };
+				Var0 = { 1304.8314f, 1084.5979f, 104.6453f };
 				fVar1 = 8.2195f;
 			}
 			else if (iVar2 == 2)
 			{
-				Var0 = { 1290.873f, 1237.684f, 107.4217f };
+				Var0 = { 1290.8727f, 1237.6844f, 107.4217f };
 				fVar1 = 186.5802f;
 			}
 			else if (iVar2 == 3)
 			{
-				Var0 = { 1310.975f, 1001.138f, 104.9354f };
+				Var0 = { 1310.9749f, 1001.1377f, 104.9354f };
 				fVar1 = 359.3654f;
 			}
 			else if (iVar2 == 4)
 			{
-				Var0 = { 1284.936f, 1355.748f, 103.4301f };
+				Var0 = { 1284.9357f, 1355.7482f, 103.4301f };
 				fVar1 = 182.4582f;
 			}
 			if (func_102(Param0, Var0, 1133903872, 1101004800))
@@ -5094,27 +5094,27 @@ int func_105(struct<3> Param0, int iParam1, var uParam2, var uParam3)//Position 
 		{
 			if (iVar2 == 0)
 			{
-				Var0 = { -1208.617f, -1410.733f, 3.1853f };
+				Var0 = { -1208.6174f, -1410.7325f, 3.1853f };
 				fVar1 = 215.8772f;
 			}
 			else if (iVar2 == 1)
 			{
-				Var0 = { -1172.9f, -1412.38f, 3.6078f };
+				Var0 = { -1172.9f, -1412.3802f, 3.6078f };
 				fVar1 = 126.9322f;
 			}
 			else if (iVar2 == 2)
 			{
-				Var0 = { -1112.842f, -1437.895f, 4.031f };
+				Var0 = { -1112.8418f, -1437.8954f, 4.031f };
 				fVar1 = 211.4814f;
 			}
 			else if (iVar2 == 3)
 			{
-				Var0 = { -1079.885f, -1472.878f, 4.0784f };
+				Var0 = { -1079.8854f, -1472.8779f, 4.0784f };
 				fVar1 = 32.9476f;
 			}
 			else if (iVar2 == 4)
 			{
-				Var0 = { -1086.768f, -1540.707f, 3.5549f };
+				Var0 = { -1086.7677f, -1540.7067f, 3.5549f };
 				fVar1 = 128.3527f;
 			}
 			if (func_102(Param0, Var0, 1133903872, 1101004800))
@@ -5131,26 +5131,26 @@ int func_105(struct<3> Param0, int iParam1, var uParam2, var uParam3)//Position 
 
 int func_106(struct<3> Param0)//Position - 0x7738
 {
-	if (func_95(Param0, -874.9833f, 125.7645f, -100f, -768.6254f, 193.0297f, 100f))
+	if (func_95(Param0, -874.9833f, 125.7645f, -100f, -768.62537f, 193.02971f, 100f))
 	{
 		return 0;
 	}
-	if (func_90(Param0, -1693.302f, -1109.13f, 17.89778f, 240f))
+	if (func_90(Param0, -1693.3018f, -1109.1305f, 17.89778f, 240f))
 	{
-		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1538.981f, -941.1323f, 10.56623f, -1715.57f, -1139.766f, 52.20361f, 110f, false, true))
+		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1538.9806f, -941.1323f, 10.566226f, -1715.5703f, -1139.7659f, 52.203613f, 110f, false, true))
 		{
 			return 1;
 		}
-		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1739.989f, -1115.973f, 10.08726f, -1800.515f, -1187.18f, 52.0172f, 25f, false, true))
+		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1739.989f, -1115.973f, 10.087262f, -1800.5149f, -1187.1798f, 52.0172f, 25f, false, true))
 		{
 			return 1;
 		}
-		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1801.766f, -1180.252f, 4.017236f, -1857.718f, -1244.628f, 38.49653f, 85f, false, true))
+		if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1801.7664f, -1180.2517f, 4.017236f, -1857.7177f, -1244.6284f, 38.49653f, 85f, false, true))
 		{
 			return 1;
 		}
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1140.89f, -1573.135f, -6.566939f, -1067.084f, -1675.976f, 23.53153f, 52f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1140.8896f, -1573.1349f, -6.566939f, -1067.0844f, -1675.9756f, 23.531528f, 52f, false, true))
 	{
 		return 2;
 	}
@@ -5161,11 +5161,11 @@ int func_106(struct<3> Param0)//Position - 0x7738
 			return 3;
 		}
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 1324.172f, 1110.748f, 99.65493f, 1523.097f, 1110.473f, 132.8859f, 170f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, 1324.1715f, 1110.7479f, 99.65493f, 1523.0968f, 1110.4734f, 132.88586f, 170f, false, true))
 	{
 		return 4;
 	}
-	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1171.709f, -1524.66f, 23.37969f, -1139.721f, -1573.589f, -1.585432f, 55f, false, true))
+	if (OBJECT::IS_POINT_IN_ANGLED_AREA(Param0, -1171.7086f, -1524.6598f, 23.379686f, -1139.7214f, -1573.589f, -1.585432f, 55f, false, true))
 	{
 		return 5;
 	}

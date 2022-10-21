@@ -403,7 +403,7 @@ void __EntryFunction__()//Position - 0x0
 	Local_302 = { 0f, 0f, 0f };
 	iLocal_305 = 1;
 	sLocal_331 = "safe@franklin@ig_13";
-	Local_333 = { -11.3259f, -1441.471f, 30.5788f };
+	Local_333 = { -11.3259f, -1441.4713f, 30.5788f };
 	Local_334 = { -0.025f, 0.13f, 0f };
 	Local_335 = { -0.025f, 0.12f, 0f };
 	Local_336 = { 0f, 90f, 0f };
@@ -440,7 +440,7 @@ void __EntryFunction__()//Position - 0x0
 		func_112();
 	}
 	Local_332 = { ScriptParam_349.f_1[0 /*3*/] };
-	Local_332 = { -11.3888f, -1441.325f, 30.1f };
+	Local_332 = { -11.3888f, -1441.3252f, 30.1f };
 	iLocal_55 = joaat("p_cs_joint_01");
 	while (true)
 	{
@@ -2753,7 +2753,7 @@ Vector3 func_54()//Position - 0x2FBC
 			break;
 		
 		case joaat("p_cs_joint_01"):
-			Var0 = { -10.6378f, -1441.314f, 30.1015f };
+			Var0 = { -10.6378f, -1441.3145f, 30.1015f };
 			break;
 		
 		case joaat("p_tumbler_02_s1"):
@@ -2761,7 +2761,7 @@ Vector3 func_54()//Position - 0x2FBC
 		case joaat("p_tumbler_cs2_s_trev"):
 			if (bLocal_50)
 			{
-				Var0 = { -1154.343f, -1522.6f, 9.6327f };
+				Var0 = { -1154.343f, -1522.5997f, 9.6327f };
 			}
 			else
 			{
@@ -2770,15 +2770,15 @@ Vector3 func_54()//Position - 0x2FBC
 			break;
 		
 		case joaat("prop_rolled_sock_02"):
-			Var0 = { 1972.142f, 3813.243f, 32.4271f };
+			Var0 = { 1972.1417f, 3813.243f, 32.4271f };
 			break;
 		
 		case joaat("prop_mr_raspberry_01"):
-			Var0 = { -1145.91f, -1514.944f, 9.6327f };
+			Var0 = { -1145.91f, -1514.9445f, 9.6327f };
 			break;
 		
 		case joaat("prop_radio_01"):
-			Var0 = { 1976.94f, 3821.242f, 33.3266f };
+			Var0 = { 1976.94f, 3821.2417f, 33.3266f };
 			break;
 		
 		case joaat("p_w_grass_gls_s"):
@@ -3318,7 +3318,7 @@ Vector3 func_72()//Position - 0x3A8B
 			}
 			else
 			{
-				Var0 = { 0f, 0f, -179.9088f };
+				Var0 = { 0f, 0f, -179.90875f };
 			}
 			break;
 		
@@ -3418,7 +3418,7 @@ Vector3 func_73()//Position - 0x3BA0
 			break;
 		
 		case joaat("prop_mr_raspberry_01"):
-			Var0 = { -1146.284f, -1514.13f, 10.8468f };
+			Var0 = { -1146.284f, -1514.1305f, 10.8468f };
 			break;
 		
 		case joaat("prop_radio_01"):

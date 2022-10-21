@@ -3305,7 +3305,7 @@ Vector3 func_85(int iParam0)//Position - 0x3786
 			break;
 		
 		case 3:
-			Var0 = { -1443.094f, -544.7684f, 33.7424f };
+			Var0 = { -1443.0938f, -544.7684f, 33.7424f };
 			break;
 		
 		case 4:
@@ -3349,7 +3349,7 @@ Vector3 func_85(int iParam0)//Position - 0x3786
 			break;
 		
 		case 14:
-			Var0 = { -973.3757f, -1429.425f, 6.6791f };
+			Var0 = { -973.3757f, -1429.4247f, 6.6791f };
 			break;
 		
 		case 15:
@@ -3377,7 +3377,7 @@ Vector3 func_85(int iParam0)//Position - 0x3786
 			break;
 		
 		case 21:
-			Var0 = { -1534.025f, -324.5247f, 46.5237f };
+			Var0 = { -1534.0247f, -324.5247f, 46.5237f };
 			break;
 		
 		case 22:
@@ -3385,11 +3385,11 @@ Vector3 func_85(int iParam0)//Position - 0x3786
 			break;
 		
 		case 23:
-			Var0 = { -1608.851f, -429.184f, 39.439f };
+			Var0 = { -1608.8514f, -429.184f, 39.439f };
 			break;
 		
 		case 24:
-			Var0 = { 964.3583f, -1034.199f, 39.8303f };
+			Var0 = { 964.3583f, -1034.1991f, 39.8303f };
 			break;
 		
 		case 25:
@@ -3405,7 +3405,7 @@ Vector3 func_85(int iParam0)//Position - 0x3786
 			break;
 		
 		case 28:
-			Var0 = { 844.7289f, -1164.1f, 24.2681f };
+			Var0 = { 844.7289f, -1164.0997f, 24.2681f };
 			break;
 		
 		case 29:
@@ -3413,19 +3413,19 @@ Vector3 func_85(int iParam0)//Position - 0x3786
 			break;
 		
 		case 30:
-			Var0 = { 572.0462f, -1570.736f, 27.4904f };
+			Var0 = { 572.0462f, -1570.7357f, 27.4904f };
 			break;
 		
 		case 31:
-			Var0 = { 722.2852f, -1190.617f, 23.282f };
+			Var0 = { 722.2852f, -1190.6168f, 23.282f };
 			break;
 		
 		case 32:
-			Var0 = { 497.6212f, -1494.084f, 28.2893f };
+			Var0 = { 497.6212f, -1494.0845f, 28.2893f };
 			break;
 		
 		case 33:
-			Var0 = { 480.3127f, -1549.937f, 28.2828f };
+			Var0 = { 480.3127f, -1549.9368f, 28.2828f };
 			break;
 		
 		case 34:
@@ -3437,43 +3437,43 @@ Vector3 func_85(int iParam0)//Position - 0x3786
 			break;
 		
 		case 36:
-			Var0 = { 2554.165f, 4668.059f, 33.0233f };
+			Var0 = { 2554.1653f, 4668.059f, 33.0233f };
 			break;
 		
 		case 37:
-			Var0 = { 2461.22f, 1589.255f, 32.0443f };
+			Var0 = { 2461.2202f, 1589.2552f, 32.0443f };
 			break;
 		
 		case 38:
-			Var0 = { -2203.335f, 4244.427f, 47.3305f };
+			Var0 = { -2203.335f, 4244.4272f, 47.3305f };
 			break;
 		
 		case 39:
-			Var0 = { 218.0665f, 2601.817f, 44.7668f };
+			Var0 = { 218.0665f, 2601.8171f, 44.7668f };
 			break;
 		
 		case 40:
-			Var0 = { 186.1719f, 2786.343f, 45.0144f };
+			Var0 = { 186.1719f, 2786.3425f, 45.0144f };
 			break;
 		
 		case 41:
-			Var0 = { 642.0746f, 2791.729f, 40.9795f };
+			Var0 = { 642.0746f, 2791.7295f, 40.9795f };
 			break;
 		
 		case 42:
-			Var0 = { -1130.938f, 2701.133f, 17.8004f };
+			Var0 = { -1130.9376f, 2701.1333f, 17.8004f };
 			break;
 		
 		case 43:
-			Var0 = { -10.944f, -1646.76f, 28.3125f };
+			Var0 = { -10.944f, -1646.7601f, 28.3125f };
 			break;
 		
 		case 44:
-			Var0 = { 1024.263f, -2398.404f, 29.1261f };
+			Var0 = { 1024.2628f, -2398.4036f, 29.1261f };
 			break;
 		
 		case 45:
-			Var0 = { 870.8577f, -2232.323f, 29.5508f };
+			Var0 = { 870.8577f, -2232.3228f, 29.5508f };
 			break;
 		
 		case 46:
@@ -3481,15 +3481,15 @@ Vector3 func_85(int iParam0)//Position - 0x3786
 			break;
 		
 		case 47:
-			Var0 = { -1088.616f, -2235.098f, 12.2182f };
+			Var0 = { -1088.6158f, -2235.0977f, 12.2182f };
 			break;
 		
 		case 48:
-			Var0 = { -342.5126f, -1468.675f, 29.6107f };
+			Var0 = { -342.5126f, -1468.6746f, 29.6107f };
 			break;
 		
 		case 49:
-			Var0 = { -1241.54f, -259.8841f, 37.9445f };
+			Var0 = { -1241.5399f, -259.8841f, 37.9445f };
 			break;
 		
 		case 50:
@@ -3497,11 +3497,11 @@ Vector3 func_85(int iParam0)//Position - 0x3786
 			break;
 		
 		case 51:
-			Var0 = { -1405.411f, 526.8572f, 122.8361f };
+			Var0 = { -1405.4109f, 526.8572f, 122.8361f };
 			break;
 		
 		case 52:
-			Var0 = { 1341.552f, -1578.037f, 53.4443f };
+			Var0 = { 1341.5518f, -1578.0366f, 53.4443f };
 			break;
 		
 		case 53:
@@ -3517,11 +3517,11 @@ Vector3 func_85(int iParam0)//Position - 0x3786
 			break;
 		
 		case 56:
-			Var0 = { 1899.673f, 3773.178f, 31.8829f };
+			Var0 = { 1899.6729f, 3773.1785f, 31.8829f };
 			break;
 		
 		case 57:
-			Var0 = { 1662.121f, 4776.317f, 41.0075f };
+			Var0 = { 1662.1211f, 4776.317f, 41.0075f };
 			break;
 		
 		case 58:
@@ -3557,7 +3557,7 @@ Vector3 func_85(int iParam0)//Position - 0x3786
 			break;
 		
 		case 66:
-			Var0 = { -1292.456f, 440.9454f, 93.7572f };
+			Var0 = { -1292.4557f, 440.9454f, 93.7572f };
 			break;
 		
 		case 67:
@@ -3565,11 +3565,11 @@ Vector3 func_85(int iParam0)//Position - 0x3786
 			break;
 		
 		case 68:
-			Var0 = { -1581.501f, -558.2578f, 33.9528f };
+			Var0 = { -1581.5015f, -558.2578f, 33.9528f };
 			break;
 		
 		case 69:
-			Var0 = { -1379.546f, -499.1783f, 32.1574f };
+			Var0 = { -1379.5457f, -499.1783f, 32.1574f };
 			break;
 		
 		case 70:
@@ -3581,31 +3581,31 @@ Vector3 func_85(int iParam0)//Position - 0x3786
 			break;
 		
 		case 72:
-			Var0 = { 254.1892f, -1809.183f, 26.1805f };
+			Var0 = { 254.1892f, -1809.1831f, 26.1805f };
 			break;
 		
 		case 73:
-			Var0 = { -1472.278f, -920.0677f, 8.9683f };
+			Var0 = { -1472.2778f, -920.0677f, 8.9683f };
 			break;
 		
 		case 74:
-			Var0 = { 38.9478f, -1026.629f, 28.6354f };
+			Var0 = { 38.9478f, -1026.6288f, 28.6354f };
 			break;
 		
 		case 75:
-			Var0 = { 46.903f, 2789.825f, 57.1124f };
+			Var0 = { 46.903f, 2789.8247f, 57.1124f };
 			break;
 		
 		case 76:
-			Var0 = { -342.3246f, 6065.316f, 30.4895f };
+			Var0 = { -342.3246f, 6065.3164f, 30.4895f };
 			break;
 		
 		case 77:
-			Var0 = { 1737.878f, 3709.088f, 33.1348f };
+			Var0 = { 1737.8784f, 3709.0876f, 33.1348f };
 			break;
 		
 		case 78:
-			Var0 = { 939.7161f, -1459.204f, 30.467f };
+			Var0 = { 939.7161f, -1459.2039f, 30.467f };
 			break;
 		
 		case 79:
@@ -3617,11 +3617,11 @@ Vector3 func_85(int iParam0)//Position - 0x3786
 			break;
 		
 		case 81:
-			Var0 = { 2472.22f, 4110.493f, 36.9629f };
+			Var0 = { 2472.2197f, 4110.4927f, 36.9629f };
 			break;
 		
 		case 82:
-			Var0 = { -39.3286f, 6420.603f, 30.7017f };
+			Var0 = { -39.3286f, 6420.6025f, 30.7017f };
 			break;
 		
 		case 83:
@@ -10990,7 +10990,7 @@ Vector3 func_333(int iParam0)//Position - 0xBF16
 	switch (iParam0)
 	{
 		case joaat("MP_GAR_SIMEON"):
-			return 1204.429f, -3110.847f, 4.3988f;
+			return 1204.4286f, -3110.847f, 4.3988f;
 			break;
 		
 		case joaat("MP_GAR_PNS_2"):
@@ -10998,7 +10998,7 @@ Vector3 func_333(int iParam0)//Position - 0xBF16
 			break;
 		
 		case joaat("MP_GAR_PNS_3"):
-			return -1164.887f, -2011.105f, 12.25371f;
+			return -1164.8867f, -2011.1052f, 12.253714f;
 			break;
 		
 		case joaat("MP_GAR_PNS_4"):
@@ -11025,17 +11025,17 @@ void func_334(var uParam0, int iParam1)//Position - 0xBFCA
 			*uParam0 = 99;
 			uParam0->f_1 = joaat("MP_GAR_SIMEON");
 			uParam0->f_2 = 0;
-			uParam0->f_3 = { 1204.429f, -3110.847f, 4.3988f };
+			uParam0->f_3 = { 1204.4286f, -3110.847f, 4.3988f };
 			uParam0->f_6 = -247372382;
 			uParam0->f_7 = 0;
 			uParam0->f_8 = "MP_GAR_SIMEON";
-			uParam0->f_9.f_1 = { 1210.884f, -3122.402f, 5.2118f };
+			uParam0->f_9.f_1 = { 1210.884f, -3122.4019f, 5.2118f };
 			uParam0->f_9.f_4 = { 4.0534f, 0f, 32.6363f };
 			uParam0->f_9.f_7 = 32.498f;
-			uParam0->f_9.f_8 = { 1210.884f, -3122.402f, 5.2118f };
+			uParam0->f_9.f_8 = { 1210.884f, -3122.4019f, 5.2118f };
 			uParam0->f_9.f_11 = { 4.0534f, 0f, 32.6363f };
 			uParam0->f_9.f_14 = 32.498f;
-			uParam0->f_27 = { 1204.157f, -3122.599f, 3.795331f };
+			uParam0->f_27 = { 1204.1573f, -3122.599f, 3.795331f };
 			uParam0->f_27.f_3 = { 1204.24f, -3099.772f, 8.400777f };
 			uParam0->f_27.f_6 = 7f;
 			return;
@@ -11049,14 +11049,14 @@ void func_334(var uParam0, int iParam1)//Position - 0xBFCA
 			uParam0->f_3 = { 725.1831f, -1089.349f, 21.1692f };
 			uParam0->f_7 = 0;
 			uParam0->f_8 = "MP_GAR_PNS_2";
-			uParam0->f_9.f_1 = { 734.3793f, -1078.791f, 23.4305f };
+			uParam0->f_9.f_1 = { 734.3793f, -1078.7905f, 23.4305f };
 			uParam0->f_9.f_4 = { -16.432f, 0f, -19.7978f };
 			uParam0->f_9.f_7 = 60.0199f;
-			uParam0->f_9.f_8 = { 734.3027f, -1079.004f, 23.4973f };
+			uParam0->f_9.f_8 = { 734.3027f, -1079.0035f, 23.4973f };
 			uParam0->f_9.f_11 = { -16.432f, 0f, -19.7978f };
 			uParam0->f_9.f_14 = 60.0199f;
-			uParam0->f_27 = { 738.8857f, -1088.516f, 20.55957f };
-			uParam0->f_27.f_3 = { 718.613f, -1088.78f, 24.83263f };
+			uParam0->f_27 = { 738.88574f, -1088.5156f, 20.559574f };
+			uParam0->f_27.f_3 = { 718.61304f, -1088.7799f, 24.83263f };
 			uParam0->f_27.f_6 = 7f;
 			return;
 			break;
@@ -11066,17 +11066,17 @@ void func_334(var uParam0, int iParam1)//Position - 0xBFCA
 			*uParam0 = 99;
 			uParam0->f_1 = joaat("MP_GAR_PNS_3");
 			uParam0->f_2 = 2;
-			uParam0->f_3 = { -1164.887f, -2011.105f, 12.25371f };
+			uParam0->f_3 = { -1164.8867f, -2011.1052f, 12.253714f };
 			uParam0->f_7 = 0;
 			uParam0->f_8 = "MP_GAR_NEUT_PNS_3";
-			uParam0->f_9.f_1 = { -1161.774f, -2010.27f, 14.2468f };
+			uParam0->f_9.f_1 = { -1161.7738f, -2010.2699f, 14.2468f };
 			uParam0->f_9.f_4 = { -17.3415f, 0f, 113.6889f };
 			uParam0->f_9.f_7 = 64.5334f;
-			uParam0->f_9.f_8 = { -1161.639f, -2010.211f, 14.2928f };
+			uParam0->f_9.f_8 = { -1161.6388f, -2010.2107f, 14.2928f };
 			uParam0->f_9.f_11 = { -17.3415f, 0f, 113.6889f };
 			uParam0->f_9.f_14 = 64.5334f;
-			uParam0->f_27 = { -1169.723f, -2015.923f, 11.50441f };
-			uParam0->f_27.f_3 = { -1160.558f, -2007.005f, 15.68027f };
+			uParam0->f_27 = { -1169.7228f, -2015.9226f, 11.504413f };
+			uParam0->f_27.f_3 = { -1160.5583f, -2007.0046f, 15.680271f };
 			uParam0->f_27.f_6 = 5.5f;
 			return;
 			break;
@@ -11095,8 +11095,8 @@ void func_334(var uParam0, int iParam1)//Position - 0xBFCA
 			uParam0->f_9.f_8 = { -332.3621f, -140.8507f, 40.3956f };
 			uParam0->f_9.f_11 = { -20.6629f, 0f, -134.7887f };
 			uParam0->f_9.f_14 = 60.0241f;
-			uParam0->f_27 = { -323.7998f, -146.2539f, 37.81492f };
-			uParam0->f_27.f_3 = { -334.3432f, -141.7261f, 40.75964f };
+			uParam0->f_27 = { -323.79984f, -146.2539f, 37.81492f };
+			uParam0->f_27.f_3 = { -334.34323f, -141.7261f, 40.759644f };
 			uParam0->f_27.f_6 = 5.5f;
 			return;
 			break;
@@ -11109,14 +11109,14 @@ void func_334(var uParam0, int iParam1)//Position - 0xBFCA
 			uParam0->f_3 = { 106.28f, 6620.01f, 32.12f };
 			uParam0->f_7 = 0;
 			uParam0->f_8 = "MP_GAR_PNS_5";
-			uParam0->f_9.f_1 = { 106.688f, 6617.322f, 32.5026f };
+			uParam0->f_9.f_1 = { 106.688f, 6617.3223f, 32.5026f };
 			uParam0->f_9.f_4 = { -10.7437f, 0f, 21.7154f };
 			uParam0->f_9.f_7 = 67.562f;
-			uParam0->f_9.f_8 = { 106.7971f, 6617.048f, 32.5586f };
+			uParam0->f_9.f_8 = { 106.7971f, 6617.0483f, 32.5586f };
 			uParam0->f_9.f_11 = { -10.7437f, 0f, 21.7154f };
 			uParam0->f_9.f_14 = 67.562f;
-			uParam0->f_27 = { 100.9759f, 6625.046f, 30.60301f };
-			uParam0->f_27.f_3 = { 111.2522f, 6615.657f, 33.62929f };
+			uParam0->f_27 = { 100.97591f, 6625.0464f, 30.603012f };
+			uParam0->f_27.f_3 = { 111.252235f, 6615.6567f, 33.629288f };
 			uParam0->f_27.f_6 = 5.5f;
 			return;
 			break;
@@ -11131,11 +11131,11 @@ void func_334(var uParam0, int iParam1)//Position - 0xBFCA
 			uParam0->f_9.f_1 = { 1184.206f, 2644.004f, 38.7458f };
 			uParam0->f_9.f_4 = { -15.4014f, 0f, 161.4493f };
 			uParam0->f_9.f_7 = 67.3374f;
-			uParam0->f_9.f_8 = { 1184.345f, 2644.418f, 38.866f };
+			uParam0->f_9.f_8 = { 1184.3448f, 2644.4177f, 38.866f };
 			uParam0->f_9.f_11 = { -15.4014f, 0f, 161.4493f };
 			uParam0->f_9.f_14 = 67.3374f;
-			uParam0->f_27 = { 1182.835f, 2634.775f, 36.55006f };
-			uParam0->f_27.f_3 = { 1182.578f, 2647.955f, 39.58602f };
+			uParam0->f_27 = { 1182.8348f, 2634.7754f, 36.550064f };
+			uParam0->f_27.f_3 = { 1182.5776f, 2647.9546f, 39.586018f };
 			uParam0->f_27.f_6 = 5.5f;
 			return;
 			break;

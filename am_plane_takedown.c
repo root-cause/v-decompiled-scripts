@@ -894,7 +894,7 @@ void func_27()//Position - 0xE2E
 			{
 				if (!BitTest(Local_83.f_1, 0))
 				{
-					TASK::TASK_PLANE_MISSION(NETWORK::NET_TO_PED(Local_83.f_3), NETWORK::NET_TO_VEH(Local_83.f_2), 0, 0, Local_83.f_9[Local_83.f_22 /*3*/] + Vector(120f, 0f, 0f), 4, 20f, 50f, -1f, 1.261169E-43f, 8.407791E-44f, true);
+					TASK::TASK_PLANE_MISSION(NETWORK::NET_TO_PED(Local_83.f_3), NETWORK::NET_TO_VEH(Local_83.f_2), 0, 0, Local_83.f_9[Local_83.f_22 /*3*/] + Vector(120f, 0f, 0f), 4, 20f, 50f, -1f, 1.26E-43f, 8.4E-44f, true);
 				}
 				else
 				{
@@ -923,7 +923,7 @@ void func_27()//Position - 0xE2E
 				Var0.f_2 = 100f;
 				if (!BitTest(Local_83.f_1, 0))
 				{
-					TASK::TASK_PLANE_MISSION(NETWORK::NET_TO_PED(Local_83.f_3), NETWORK::NET_TO_VEH(Local_83.f_2), 0, 0, Var0, 4, 20f, -1f, -1f, 1.401298E-43f, 1.401298E-43f, true);
+					TASK::TASK_PLANE_MISSION(NETWORK::NET_TO_PED(Local_83.f_3), NETWORK::NET_TO_VEH(Local_83.f_2), 0, 0, Var0, 4, 20f, -1f, -1f, 1.4E-43f, 1.4E-43f, true);
 				}
 				else
 				{
@@ -5433,47 +5433,47 @@ Vector3 func_214()//Position - 0x605E
 	switch (MISC::GET_RANDOM_INT_IN_RANGE(0, 13))
 	{
 		case 0:
-			return 1915.902f, 563.9669f, 174.4925f;
+			return 1915.9016f, 563.9669f, 174.4925f;
 		
 		case 1:
-			return 1402.858f, -2148.418f, 57.9675f;
+			return 1402.8578f, -2148.4177f, 57.9675f;
 		
 		case 2:
-			return 1104.815f, -3142.335f, 4.901f;
+			return 1104.8152f, -3142.3347f, 4.901f;
 		
 		case 3:
-			return 545.7347f, -3025.327f, 5.0591f;
+			return 545.7347f, -3025.3271f, 5.0591f;
 		
 		case 4:
-			return 1376.037f, -740.2166f, 66.2331f;
+			return 1376.0369f, -740.2166f, 66.2331f;
 		
 		case 5:
 			return 1147.162f, 126.3452f, 80.8693f;
 		
 		case 6:
-			return -1731.085f, -989.8386f, 4.4152f;
+			return -1731.0846f, -989.8386f, 4.4152f;
 		
 		case 7:
-			return 728.2132f, -1532.48f, 18.7348f;
+			return 728.2132f, -1532.4799f, 18.7348f;
 		
 		case 8:
-			return 1140.923f, -1285.639f, 33.6091f;
+			return 1140.923f, -1285.6388f, 33.6091f;
 		
 		case 9:
 			return 2811.453f, -668.671f, 1.581f;
 		
 		case 10:
-			return -1706.013f, -183.4387f, 56.3712f;
+			return -1706.0131f, -183.4387f, 56.3712f;
 		
 		case 11:
 			return -134.0402f, -869.4509f, 43.2175f;
 		
 		case 12:
-			return 1098.246f, -544.2941f, 56.4061f;
+			return 1098.2463f, -544.2941f, 56.4061f;
 		
 		default:
 	}
-	return 1098.246f, -544.2941f, 56.4061f;
+	return 1098.2463f, -544.2941f, 56.4061f;
 }
 
 Vector3 func_215()//Position - 0x61B9
@@ -5481,47 +5481,47 @@ Vector3 func_215()//Position - 0x61B9
 	switch (MISC::GET_RANDOM_INT_IN_RANGE(0, 13))
 	{
 		case 0:
-			return 2312.707f, 1531.258f, 59.8792f;
+			return 2312.7073f, 1531.2584f, 59.8792f;
 		
 		case 1:
-			return 1069.58f, 2366.363f, 43.0396f;
+			return 1069.5798f, 2366.3628f, 43.0396f;
 		
 		case 2:
-			return -1979.781f, 2584.161f, 2.2587f;
+			return -1979.7805f, 2584.161f, 2.2587f;
 		
 		case 3:
-			return 1458.393f, 1113.066f, 113.334f;
+			return 1458.3934f, 1113.0664f, 113.334f;
 		
 		case 4:
-			return 817.5361f, 1316.57f, 362.0491f;
+			return 817.5361f, 1316.5696f, 362.0491f;
 		
 		case 5:
-			return 1671.232f, 3041.176f, 53.0351f;
+			return 1671.2318f, 3041.1763f, 53.0351f;
 		
 		case 6:
-			return -3163.364f, 756.8276f, 2.1183f;
+			return -3163.3643f, 756.8276f, 2.1183f;
 		
 		case 7:
 			return -799.6782f, 885.0139f, 202.1319f;
 		
 		case 8:
-			return -401.2717f, 1211.677f, 324.9297f;
+			return -401.2717f, 1211.6768f, 324.9297f;
 		
 		case 9:
-			return 2909.154f, 770.3181f, 21.1684f;
+			return 2909.1543f, 770.3181f, 21.1684f;
 		
 		case 10:
-			return 2778.909f, 2853.266f, 34.7828f;
+			return 2778.9092f, 2853.2659f, 34.7828f;
 		
 		case 11:
-			return 585.3987f, 2893.778f, 38.5297f;
+			return 585.3987f, 2893.7783f, 38.5297f;
 		
 		case 12:
-			return -498.3305f, 3006.906f, 27.4341f;
+			return -498.3305f, 3006.9062f, 27.4341f;
 		
 		default:
 	}
-	return -498.3305f, 3006.906f, 27.4341f;
+	return -498.3305f, 3006.9062f, 27.4341f;
 }
 
 Vector3 func_216()//Position - 0x6314
@@ -5529,19 +5529,19 @@ Vector3 func_216()//Position - 0x6314
 	switch (MISC::GET_RANDOM_INT_IN_RANGE(0, 13))
 	{
 		case 0:
-			return 1015.599f, 4350.668f, 41.484f;
+			return 1015.5989f, 4350.6685f, 41.484f;
 		
 		case 1:
 			return -1731.06f, 4959.484f, 3.8134f;
 		
 		case 2:
-			return -2436.25f, 4181.913f, 7.7719f;
+			return -2436.2498f, 4181.913f, 7.7719f;
 		
 		case 3:
-			return 2463.142f, 3769.651f, 40.328f;
+			return 2463.142f, 3769.6511f, 40.328f;
 		
 		case 4:
-			return 1888.61f, 4626.815f, 37.4665f;
+			return 1888.6101f, 4626.815f, 37.4665f;
 		
 		case 5:
 			return -388.8584f, 4353.478f, 54.3806f;

@@ -902,7 +902,7 @@ Vector3 func_10(bool bParam0)//Position - 0x972
 			break;
 		
 		case 1:
-			Var0 = { 15.4693f, -1354.067f, 28.315f };
+			Var0 = { 15.4693f, -1354.0665f, 28.315f };
 			break;
 		
 		case 2:
@@ -918,7 +918,7 @@ Vector3 func_10(bool bParam0)//Position - 0x972
 			break;
 		
 		case 5:
-			Var0 = { -1502.037f, -380.4863f, 39.8563f };
+			Var0 = { -1502.0375f, -380.4863f, 39.8563f };
 			break;
 		
 		case 6:
@@ -926,19 +926,19 @@ Vector3 func_10(bool bParam0)//Position - 0x972
 			break;
 		
 		case 7:
-			Var0 = { 1162.664f, -338.0286f, 67.4397f };
+			Var0 = { 1162.6638f, -338.0286f, 67.4397f };
 			break;
 		
 		case 8:
-			Var0 = { 2567.102f, 384.5044f, 107.4621f };
+			Var0 = { 2567.1023f, 384.5044f, 107.4621f };
 			break;
 		
 		case 9:
-			Var0 = { -2970.054f, 401.0349f, 14.0942f };
+			Var0 = { -2970.0542f, 401.0349f, 14.0942f };
 			break;
 		
 		case 10:
-			Var0 = { -3042.513f, 599.3762f, 6.5342f };
+			Var0 = { -3042.5134f, 599.3762f, 6.5342f };
 			break;
 		
 		case 11:
@@ -946,11 +946,11 @@ Vector3 func_10(bool bParam0)//Position - 0x972
 			break;
 		
 		case 12:
-			Var0 = { -1814.226f, 778.6277f, 136.175f };
+			Var0 = { -1814.2256f, 778.6277f, 136.175f };
 			break;
 		
 		case 13:
-			Var0 = { 531.4801f, 2675.505f, 41.4485f };
+			Var0 = { 531.4801f, 2675.5051f, 41.4485f };
 			break;
 		
 		case 14:
@@ -958,11 +958,11 @@ Vector3 func_10(bool bParam0)//Position - 0x972
 			break;
 		
 		case 15:
-			Var0 = { 1382.555f, 3598.162f, 33.8769f };
+			Var0 = { 1382.5553f, 3598.1619f, 33.8769f };
 			break;
 		
 		case 16:
-			Var0 = { 1959.975f, 3731.025f, 31.3247f };
+			Var0 = { 1959.9749f, 3731.0251f, 31.3247f };
 			break;
 		
 		case 17:
@@ -970,11 +970,11 @@ Vector3 func_10(bool bParam0)//Position - 0x972
 			break;
 		
 		case 18:
-			Var0 = { 1687.99f, 4918.174f, 41.0781f };
+			Var0 = { 1687.9902f, 4918.174f, 41.0781f };
 			break;
 		
 		case 19:
-			Var0 = { 1687.99f, 4918.174f, 41.0781f };
+			Var0 = { 1687.9902f, 4918.174f, 41.0781f };
 			break;
 	}
 	return Var0;
@@ -4243,15 +4243,15 @@ Vector3 func_95(int iParam0)//Position - 0x42A7
 	switch (iParam0)
 	{
 		case 0:
-			Var0 = { -53.124f, -1756.405f, 28.421f };
+			Var0 = { -53.124f, -1756.4054f, 28.421f };
 			break;
 		
 		case 1:
-			Var0 = { Vector(28.5036f, -1348.813f, 27.0641f) + Vector(0f, -0.4f, 2f) };
+			Var0 = { Vector(28.5036f, -1348.8127f, 27.0641f) + Vector(0f, -0.4f, 2f) };
 			break;
 		
 		case 2:
-			Var0 = { -1226.464f, -902.5864f, 11.2783f };
+			Var0 = { -1226.4644f, -902.5864f, 11.2783f };
 			break;
 		
 		case 3:
@@ -4259,11 +4259,11 @@ Vector3 func_95(int iParam0)//Position - 0x42A7
 			break;
 		
 		case 4:
-			Var0 = { 1141.36f, -980.8802f, 45.4155f };
+			Var0 = { 1141.3596f, -980.8802f, 45.4155f };
 			break;
 		
 		case 5:
-			Var0 = { -1491.057f, -383.5728f, 39.1706f };
+			Var0 = { -1491.0565f, -383.5728f, 39.1706f };
 			break;
 		
 		case 6:
@@ -4271,7 +4271,7 @@ Vector3 func_95(int iParam0)//Position - 0x42A7
 			break;
 		
 		case 7:
-			Var0 = { 1159.542f, -326.6986f, 67.923f };
+			Var0 = { 1159.5421f, -326.6986f, 67.923f };
 			break;
 		
 		case 8:
@@ -4279,47 +4279,47 @@ Vector3 func_95(int iParam0)//Position - 0x42A7
 			break;
 		
 		case 9:
-			Var0 = { -2973.262f, 390.8184f, 14.0433f };
+			Var0 = { -2973.2617f, 390.8184f, 14.0433f };
 			break;
 		
 		case 10:
-			Var0 = { -3038.908f, 589.5187f, 6.9048f };
+			Var0 = { -3038.9082f, 589.5187f, 6.9048f };
 			break;
 		
 		case 11:
-			Var0 = { -3240.317f, 1004.433f, 11.8307f };
+			Var0 = { -3240.317f, 1004.4334f, 11.8307f };
 			break;
 		
 		case 12:
-			Var0 = { -1822.287f, 788.006f, 137.1859f };
+			Var0 = { -1822.2866f, 788.006f, 137.1859f };
 			break;
 		
 		case 13:
-			Var0 = { 544.2802f, 2672.811f, 41.1566f };
+			Var0 = { 544.2802f, 2672.8113f, 41.1566f };
 			break;
 		
 		case 14:
-			Var0 = { Vector(37.1573f, 2703.114f, 1195.432f) + Vector(0f, 0.39f, -29.04f) };
+			Var0 = { Vector(37.1573f, 2703.1143f, 1195.432f) + Vector(0f, 0.39f, -29.04f) };
 			break;
 		
 		case 15:
-			Var0 = { 1394.169f, 3599.86f, 34.0121f };
+			Var0 = { 1394.1692f, 3599.86f, 34.0121f };
 			break;
 		
 		case 16:
-			Var0 = { 1965.054f, 3740.555f, 31.3448f };
+			Var0 = { 1965.0542f, 3740.5552f, 31.3448f };
 			break;
 		
 		case 17:
-			Var0 = { 2682.003f, 3282.543f, 54.2411f };
+			Var0 = { 2682.0034f, 3282.5432f, 54.2411f };
 			break;
 		
 		case 18:
-			Var0 = { 1698.808f, 4929.198f, 41.0783f };
+			Var0 = { 1698.8085f, 4929.1978f, 41.0783f };
 			break;
 		
 		case 19:
-			Var0 = { 1731.21f, 6411.403f, 34.0372f };
+			Var0 = { 1731.2098f, 6411.4033f, 34.0372f };
 			break;
 	}
 	return Var0;

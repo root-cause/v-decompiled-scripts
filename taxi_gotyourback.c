@@ -440,14 +440,14 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_285 = 112;
 	Local_309 = { 11.8607f, -1123.48f, 27.6801f };
 	Local_310 = { 11.8607f, -1123.48f, 27.6801f };
-	Local_311 = { 144.3291f, -3352.773f, 3.6651f };
-	Local_312 = { 311.9527f, -3305.613f, 10.6651f };
+	Local_311 = { 144.3291f, -3352.7734f, 3.6651f };
+	Local_312 = { 311.9527f, -3305.6133f, 10.6651f };
 	Local_313 = { 206.636f, -3322.673f, 4.6339f };
 	Local_314 = { 0f, 0f, 24f };
 	Local_315 = { 208.786f, -3319.823f, 4.6339f };
 	Local_316 = { 0f, 0f, 47f };
-	Local_317 = { 199.5188f, -3326.201f, 4.78716f };
-	Local_318 = { 232.9944f, -3327.825f, 4.79877f };
+	Local_317 = { 199.51877f, -3326.2012f, 4.78716f };
+	Local_318 = { 232.99445f, -3327.825f, 4.79877f };
 	sLocal_319 = "oddjobs@taxi@argument";
 	StringCopy(&cLocal_320, "txm12_deal1_7", 24);
 	StringCopy(&cLocal_324, "txm12_deal1_7", 24);
@@ -638,7 +638,7 @@ void func_9()//Position - 0x3D9
 		func_373(&Local_230, &uLocal_289, 0);
 		if (Local_230.f_410 > 5 && !BitTest(uLocal_290, 0))
 		{
-			Local_230.f_17 = { 189.7825f, -3325.684f, 4.6697f };
+			Local_230.f_17 = { 189.7825f, -3325.6838f, 4.6697f };
 			MISC::SET_BIT(&uLocal_290, 0);
 		}
 		if (Local_230.f_410 > 2)
@@ -888,9 +888,9 @@ void func_9()//Position - 0x3D9
 							TASK::CLEAR_SEQUENCE_TASK(&iLocal_270);
 							TASK::OPEN_SEQUENCE_TASK(&iLocal_270);
 							TASK::TASK_SMART_FLEE_COORD(0, Local_230.f_17, 500f, 30000, false, false);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 261.0916f, -3089.062f, 4.79249f, 2f, -1, 0.25f, 0, 40000f);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 304.6327f, -2965.922f, 5.00012f, 2f, -1, 0.25f, 0, 40000f);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 309.8907f, -2870.473f, 5.15704f, 2f, -1, 0.25f, 0, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 261.09155f, -3089.0615f, 4.79249f, 2f, -1, 0.25f, 0, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 304.63266f, -2965.9224f, 5.00012f, 2f, -1, 0.25f, 0, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 309.89066f, -2870.473f, 5.15704f, 2f, -1, 0.25f, 0, 40000f);
 							TASK::TASK_WANDER_STANDARD(0, 40000f, 0);
 							TASK::CLOSE_SEQUENCE_TASK(iLocal_270);
 							TASK::TASK_PERFORM_SEQUENCE(Local_230.f_3, iLocal_270);
@@ -904,7 +904,7 @@ void func_9()//Position - 0x3D9
 				break;
 			
 			case 30:
-				if (func_10(PLAYER::PLAYER_PED_ID(), 213.4579f, -3329.471f, 4.7971f, 1) > 40f)
+				if (func_10(PLAYER::PLAYER_PED_ID(), 213.4579f, -3329.4707f, 4.7971f, 1) > 40f)
 				{
 					func_433();
 				}
@@ -3667,7 +3667,7 @@ int func_124()//Position - 0x40EA
 {
 	int iVar0;
 	
-	if (iLocal_269 < 4 && ((((((((((PED::IS_PED_INJURED(Local_247.f_3[0]) || PED::IS_PED_INJURED(Local_247.f_3[1])) || PED::IS_PED_INJURED(Local_247.f_3[2])) || (!ENTITY::IS_ENTITY_DEAD(Local_247.f_3[0], false) && ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ANY_VEHICLE(Local_247.f_3[0]))) || (!ENTITY::IS_ENTITY_DEAD(Local_247.f_3[1], false) && ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ANY_VEHICLE(Local_247.f_3[1]))) || (!ENTITY::IS_ENTITY_DEAD(Local_247.f_3[2], false) && ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ANY_VEHICLE(Local_247.f_3[2]))) || (!ENTITY::IS_ENTITY_DEAD(Local_247.f_3[0], false) && WEAPON::HAS_ENTITY_BEEN_DAMAGED_BY_WEAPON(Local_247.f_3[0], 0, 2))) || (!ENTITY::IS_ENTITY_DEAD(Local_247.f_3[1], false) && WEAPON::HAS_ENTITY_BEEN_DAMAGED_BY_WEAPON(Local_247.f_3[1], 0, 2))) || (!ENTITY::IS_ENTITY_DEAD(Local_247.f_3[2], false) && WEAPON::HAS_ENTITY_BEEN_DAMAGED_BY_WEAPON(Local_247.f_3[2], 0, 2))) || func_170(PLAYER::PLAYER_PED_ID(), Local_247.f_3[1], 1) < 6f) || (ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), 204.0783f, -3331.305f, 6.040432f, 7.5f, 7.5f, 1.25f, false, true, 0) && ((((((!ENTITY::IS_ENTITY_DEAD(Local_247.f_3[0], false) && PLAYER::IS_PLAYER_FREE_AIMING_AT_ENTITY(PLAYER::PLAYER_ID(), Local_247.f_3[0])) || (!ENTITY::IS_ENTITY_DEAD(Local_247.f_3[1], false) && PLAYER::IS_PLAYER_FREE_AIMING_AT_ENTITY(PLAYER::PLAYER_ID(), Local_247.f_3[1]))) || (!ENTITY::IS_ENTITY_DEAD(Local_247.f_3[2], false) && PLAYER::IS_PLAYER_FREE_AIMING_AT_ENTITY(PLAYER::PLAYER_ID(), Local_247.f_3[2]))) || (!ENTITY::IS_ENTITY_DEAD(Local_247.f_3[0], false) && PLAYER::IS_PLAYER_TARGETTING_ENTITY(PLAYER::PLAYER_ID(), Local_247.f_3[0]))) || (!ENTITY::IS_ENTITY_DEAD(Local_247.f_3[1], false) && PLAYER::IS_PLAYER_TARGETTING_ENTITY(PLAYER::PLAYER_ID(), Local_247.f_3[1]))) || (!ENTITY::IS_ENTITY_DEAD(Local_247.f_3[2], false) && PLAYER::IS_PLAYER_TARGETTING_ENTITY(PLAYER::PLAYER_ID(), Local_247.f_3[2]))))))
+	if (iLocal_269 < 4 && ((((((((((PED::IS_PED_INJURED(Local_247.f_3[0]) || PED::IS_PED_INJURED(Local_247.f_3[1])) || PED::IS_PED_INJURED(Local_247.f_3[2])) || (!ENTITY::IS_ENTITY_DEAD(Local_247.f_3[0], false) && ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ANY_VEHICLE(Local_247.f_3[0]))) || (!ENTITY::IS_ENTITY_DEAD(Local_247.f_3[1], false) && ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ANY_VEHICLE(Local_247.f_3[1]))) || (!ENTITY::IS_ENTITY_DEAD(Local_247.f_3[2], false) && ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ANY_VEHICLE(Local_247.f_3[2]))) || (!ENTITY::IS_ENTITY_DEAD(Local_247.f_3[0], false) && WEAPON::HAS_ENTITY_BEEN_DAMAGED_BY_WEAPON(Local_247.f_3[0], 0, 2))) || (!ENTITY::IS_ENTITY_DEAD(Local_247.f_3[1], false) && WEAPON::HAS_ENTITY_BEEN_DAMAGED_BY_WEAPON(Local_247.f_3[1], 0, 2))) || (!ENTITY::IS_ENTITY_DEAD(Local_247.f_3[2], false) && WEAPON::HAS_ENTITY_BEEN_DAMAGED_BY_WEAPON(Local_247.f_3[2], 0, 2))) || func_170(PLAYER::PLAYER_PED_ID(), Local_247.f_3[1], 1) < 6f) || (ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), 204.07832f, -3331.3054f, 6.040432f, 7.5f, 7.5f, 1.25f, false, true, 0) && ((((((!ENTITY::IS_ENTITY_DEAD(Local_247.f_3[0], false) && PLAYER::IS_PLAYER_FREE_AIMING_AT_ENTITY(PLAYER::PLAYER_ID(), Local_247.f_3[0])) || (!ENTITY::IS_ENTITY_DEAD(Local_247.f_3[1], false) && PLAYER::IS_PLAYER_FREE_AIMING_AT_ENTITY(PLAYER::PLAYER_ID(), Local_247.f_3[1]))) || (!ENTITY::IS_ENTITY_DEAD(Local_247.f_3[2], false) && PLAYER::IS_PLAYER_FREE_AIMING_AT_ENTITY(PLAYER::PLAYER_ID(), Local_247.f_3[2]))) || (!ENTITY::IS_ENTITY_DEAD(Local_247.f_3[0], false) && PLAYER::IS_PLAYER_TARGETTING_ENTITY(PLAYER::PLAYER_ID(), Local_247.f_3[0]))) || (!ENTITY::IS_ENTITY_DEAD(Local_247.f_3[1], false) && PLAYER::IS_PLAYER_TARGETTING_ENTITY(PLAYER::PLAYER_ID(), Local_247.f_3[1]))) || (!ENTITY::IS_ENTITY_DEAD(Local_247.f_3[2], false) && PLAYER::IS_PLAYER_TARGETTING_ENTITY(PLAYER::PLAYER_ID(), Local_247.f_3[2]))))))
 	{
 		Local_230.f_114 = 1;
 		iLocal_269 = 4;
@@ -3855,8 +3855,8 @@ int func_124()//Position - 0x40EA
 						{
 							if (((!PED::IS_PED_INJURED(Local_247.f_3[3]) && !PED::IS_PED_INJURED(iLocal_274[0])) && !PED::IS_PED_INJURED(iLocal_274[1])) && !PED::IS_PED_INJURED(Local_230.f_3))
 							{
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_274[0], 299.3585f, -3204.905f, 4.7214f, 3f, 20000, 0.25f, 0, 40000f);
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_274[1], 299.3585f, -3204.905f, 4.7214f, 3f, 20000, 0.25f, 0, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_274[0], 299.3585f, -3204.9048f, 4.7214f, 3f, 20000, 0.25f, 0, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_274[1], 299.3585f, -3204.9048f, 4.7214f, 3f, 20000, 0.25f, 0, 40000f);
 								PED::FORCE_PED_MOTION_STATE(iLocal_274[0], joaat("MotionState_Sprint"), false, 0, false);
 								PED::FORCE_PED_MOTION_STATE(iLocal_274[1], joaat("MotionState_Sprint"), false, 0, false);
 								TASK::TASK_AIM_GUN_AT_ENTITY(Local_247.f_3[3], Local_230.f_3, -1, true);
@@ -4306,7 +4306,7 @@ void func_135()//Position - 0x57A5
 			PED::SET_PED_CAN_EVASIVE_DIVE(Local_230.f_3, true);
 			PED::SET_PED_ACCURACY(Local_230.f_3, 80);
 			PED::SET_PED_COMBAT_RANGE(Local_230.f_3, 2);
-			PED::SET_PED_ANGLED_DEFENSIVE_AREA(Local_230.f_3, 203.7838f, -3326.701f, 4.7901f, 204.288f, -3334.846f, 6.883f, 5.5f, false, false);
+			PED::SET_PED_ANGLED_DEFENSIVE_AREA(Local_230.f_3, 203.7838f, -3326.7012f, 4.7901f, 204.288f, -3334.8457f, 6.883f, 5.5f, false, false);
 			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_262, Local_230.f_413);
 			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, Local_230.f_413, iLocal_262);
 			TASK::CLEAR_SEQUENCE_TASK(&iLocal_270);
@@ -4377,7 +4377,7 @@ Vector3 func_138(int iParam0)//Position - 0x5BBB
 	switch (iParam0)
 	{
 		case 1:
-			return 290.2584f, -3236.66f, 4.8352f;
+			return 290.2584f, -3236.6604f, 4.8352f;
 			break;
 		
 		case 2:
@@ -6005,8 +6005,8 @@ void func_209()//Position - 0x7870
 
 void func_210()//Position - 0x7908
 {
-	iLocal_271[0] = OBJECT::CREATE_OBJECT(iLocal_266, 204.8445f, -3333.998f, 4.795367f, true, true, false);
-	ENTITY::SET_ENTITY_COORDS(iLocal_271[0], 204.8445f, -3333.998f, 4.795367f, true, false, false, true);
+	iLocal_271[0] = OBJECT::CREATE_OBJECT(iLocal_266, 204.84451f, -3333.9983f, 4.795367f, true, true, false);
+	ENTITY::SET_ENTITY_COORDS(iLocal_271[0], 204.84451f, -3333.9983f, 4.795367f, true, false, false, true);
 	ENTITY::SET_ENTITY_ROTATION(iLocal_271[0], -0.036243f, -0.00124f, 91.56063f, 2, true);
 	iLocal_271[1] = OBJECT::CREATE_OBJECT(iLocal_266, 212.67f, -3328.77f, 4.79f, true, true, false);
 	ENTITY::SET_ENTITY_COORDS(iLocal_271[1], 212.67f, -3328.77f, 4.79f, true, false, false, true);
@@ -6014,13 +6014,13 @@ void func_210()//Position - 0x7908
 	iLocal_271[2] = OBJECT::CREATE_OBJECT(iLocal_266, 204.8248f, -3328.631f, 4.7915f, true, true, false);
 	ENTITY::SET_ENTITY_COORDS(iLocal_271[2], 204.8248f, -3328.631f, 4.7915f, true, false, false, true);
 	ENTITY::SET_ENTITY_ROTATION(iLocal_271[2], -0.0027f, -0.0374f, 0.1414f, 2, true);
-	iLocal_273 = OBJECT::CREATE_OBJECT(iLocal_267, 214.2505f, -3314.673f, 4.7883f, true, true, false);
-	ENTITY::SET_ENTITY_COORDS(iLocal_273, 214.2505f, -3314.673f, 4.7883f, true, false, false, true);
+	iLocal_273 = OBJECT::CREATE_OBJECT(iLocal_267, 214.2505f, -3314.6729f, 4.7883f, true, true, false);
+	ENTITY::SET_ENTITY_COORDS(iLocal_273, 214.2505f, -3314.6729f, 4.7883f, true, false, false, true);
 	ENTITY::SET_ENTITY_ROTATION(iLocal_273, 0f, 0f, -17.399f, 2, true);
 	if (STREAMING::HAS_MODEL_LOADED(iLocal_268))
 	{
-		iLocal_272 = OBJECT::CREATE_OBJECT(iLocal_268, 220.7266f, -3320.001f, 5.2749f, true, true, false);
-		ENTITY::SET_ENTITY_COORDS(iLocal_272, 220.7266f, -3320.001f, 5.2749f, true, false, false, true);
+		iLocal_272 = OBJECT::CREATE_OBJECT(iLocal_268, 220.7266f, -3320.0015f, 5.2749f, true, true, false);
+		ENTITY::SET_ENTITY_COORDS(iLocal_272, 220.7266f, -3320.0015f, 5.2749f, true, false, false, true);
 		ENTITY::SET_ENTITY_ROTATION(iLocal_272, 0f, 0f, 0f, 2, true);
 	}
 }
@@ -6267,19 +6267,19 @@ Vector3 func_220(int iParam0)//Position - 0x8372
 			break;
 		
 		case 2:
-			return 202.0773f, -3320.393f, 4.7657f;
+			return 202.0773f, -3320.3933f, 4.7657f;
 			break;
 		
 		case 3:
-			return 216.1051f, -3318.837f, 4.7918f;
+			return 216.1051f, -3318.8367f, 4.7918f;
 			break;
 		
 		case 4:
-			return 221.6868f, -3324.747f, 5.3063f;
+			return 221.6868f, -3324.7466f, 5.3063f;
 			break;
 		
 		case 5:
-			return 200.1736f, -3320.666f, 4.7361f;
+			return 200.1736f, -3320.6655f, 4.7361f;
 			break;
 	}
 	return 0f, 0f, 0f;
@@ -9880,7 +9880,7 @@ void func_334(var uParam0)//Position - 0xD166
 			else if (uParam0->f_411 == 0)
 			{
 				TASK::TASK_CLIMB_LADDER(0, true);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 813.9421f, 1172.681f, 329.7988f, 1f, -1, 0.25f, 0, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 813.9421f, 1172.6809f, 329.7988f, 1f, -1, 0.25f, 0, 40000f);
 				TASK::TASK_ACHIEVE_HEADING(0, 151.7794f, 0);
 				TASK::TASK_START_SCENARIO_IN_PLACE(0, "WORLD_HUMAN_SMOKING_POT", 0, false);
 			}
@@ -14439,7 +14439,7 @@ void func_409()//Position - 0x132A4
 					if ((MISC::GET_GAME_TIMER() - iLocal_398) > 5000)
 					{
 						iLocal_398 = MISC::GET_GAME_TIMER();
-						Var0 = { 202.0472f, -3314.83f, 5.9369f };
+						Var0 = { 202.0472f, -3314.8298f, 5.9369f };
 						Var1 = { -1.9358f, -0.0169f, 169.6817f };
 						fVar2 = 20.9113f;
 						func_410(Var0, Var1, fVar2);
@@ -14463,7 +14463,7 @@ void func_409()//Position - 0x132A4
 					if (MISC::ARE_STRINGS_EQUAL("txm12_deal1_5", &Var3))
 					{
 						iLocal_398 = MISC::GET_GAME_TIMER();
-						Var0 = { 202.0472f, -3314.83f, 5.9369f };
+						Var0 = { 202.0472f, -3314.8298f, 5.9369f };
 						Var1 = { -1.9358f, -0.0169f, 169.6817f };
 						fVar2 = 20.9113f;
 						func_410(Var0, Var1, fVar2);
@@ -14682,7 +14682,7 @@ int func_416(var uParam0)//Position - 0x1391C
 
 void func_417()//Position - 0x1393D
 {
-	Local_230.f_23 = { 107.3107f, -1124.865f, 28.198f };
+	Local_230.f_23 = { 107.3107f, -1124.8654f, 28.198f };
 	Local_230.f_33 = 88.9745f;
 	Local_230.f_26 = { 195.7672f, -2981.732f, 4.8916f };
 	Local_230.f_34 = 173.6662f;
@@ -14697,7 +14697,7 @@ void func_417()//Position - 0x1393D
 void func_418()//Position - 0x139B2
 {
 	func_419();
-	Local_247 = { 187.5257f, -3320.163f, 4.6276f };
+	Local_247 = { 187.5257f, -3320.1628f, 4.6276f };
 }
 
 void func_419()//Position - 0x139D2

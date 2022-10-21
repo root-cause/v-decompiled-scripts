@@ -77565,7 +77565,7 @@ float func_429(float fParam0, float fParam1, float fParam2)//Position - 0x5BD76
 {
 	float fVar0;
 	
-	fVar0 = ((1f - SYSTEM::COS(func_430((fParam2 * 3.141593f)))) * 0.5f);
+	fVar0 = ((1f - SYSTEM::COS(func_430((fParam2 * 3.1415927f)))) * 0.5f);
 	return ((fParam0 * (1f - fVar0)) + (fParam1 * fVar0));
 }
 
@@ -78212,7 +78212,7 @@ struct<2> func_455(int* iParam0, int iParam1)//Position - 0x5CB1B
 			switch (iParam1)
 			{
 				case 0:
-					func_456(&Var0, 0.2135922f, 0.3446602f);
+					func_456(&Var0, 0.21359223f, 0.3446602f);
 					break;
 				
 				case 1:
@@ -78225,7 +78225,7 @@ struct<2> func_455(int* iParam0, int iParam1)//Position - 0x5CB1B
 			switch (iParam1)
 			{
 				case 0:
-					func_456(&Var0, 0.2135922f, 0.3446602f);
+					func_456(&Var0, 0.21359223f, 0.3446602f);
 					break;
 				
 				case 1:
@@ -78233,7 +78233,7 @@ struct<2> func_455(int* iParam0, int iParam1)//Position - 0x5CB1B
 					break;
 				
 				case 2:
-					func_456(&Var0, 0.7961165f, 0.9271845f);
+					func_456(&Var0, 0.79611653f, 0.92718446f);
 					break;
 			}
 			break;
@@ -78242,11 +78242,11 @@ struct<2> func_455(int* iParam0, int iParam1)//Position - 0x5CB1B
 			switch (iParam1)
 			{
 				case 0:
-					func_456(&Var0, 0.1654135f, 0.2669173f);
+					func_456(&Var0, 0.16541353f, 0.2669173f);
 					break;
 				
 				case 1:
-					func_456(&Var0, 0.3909774f, 0.4924812f);
+					func_456(&Var0, 0.39097744f, 0.4924812f);
 					break;
 				
 				case 2:
@@ -78254,7 +78254,7 @@ struct<2> func_455(int* iParam0, int iParam1)//Position - 0x5CB1B
 					break;
 				
 				case 3:
-					func_456(&Var0, 0.8421053f, 0.943609f);
+					func_456(&Var0, 0.84210527f, 0.943609f);
 					break;
 			}
 			break;
@@ -78263,11 +78263,11 @@ struct<2> func_455(int* iParam0, int iParam1)//Position - 0x5CB1B
 			switch (iParam1)
 			{
 				case 0:
-					func_456(&Var0, 0.1349693f, 0.2177914f);
+					func_456(&Var0, 0.13496932f, 0.21779141f);
 					break;
 				
 				case 1:
-					func_456(&Var0, 0.3190184f, 0.4018405f);
+					func_456(&Var0, 0.3190184f, 0.40184048f);
 					break;
 				
 				case 2:
@@ -78275,11 +78275,11 @@ struct<2> func_455(int* iParam0, int iParam1)//Position - 0x5CB1B
 					break;
 				
 				case 3:
-					func_456(&Var0, 0.6871166f, 0.7699386f);
+					func_456(&Var0, 0.68711656f, 0.76993865f);
 					break;
 				
 				case 4:
-					func_456(&Var0, 0.8711656f, 0.9539877f);
+					func_456(&Var0, 0.87116563f, 0.9539877f);
 					break;
 			}
 			break;
@@ -78288,15 +78288,15 @@ struct<2> func_455(int* iParam0, int iParam1)//Position - 0x5CB1B
 			switch (iParam1)
 			{
 				case 0:
-					func_456(&Var0, 0.1139896f, 0.1839378f);
+					func_456(&Var0, 0.11398964f, 0.18393782f);
 					break;
 				
 				case 1:
-					func_456(&Var0, 0.26943f, 0.3393782f);
+					func_456(&Var0, 0.26943004f, 0.33937824f);
 					break;
 				
 				case 2:
-					func_456(&Var0, 0.4248705f, 0.4948187f);
+					func_456(&Var0, 0.42487046f, 0.49481866f);
 					break;
 				
 				case 3:
@@ -78304,7 +78304,7 @@ struct<2> func_455(int* iParam0, int iParam1)//Position - 0x5CB1B
 					break;
 				
 				case 4:
-					func_456(&Var0, 0.7357513f, 0.8056995f);
+					func_456(&Var0, 0.7357513f, 0.80569947f);
 					break;
 				
 				case 5:
@@ -86623,17 +86623,17 @@ void func_656(int iParam0)//Position - 0x66898
 	switch (iParam0)
 	{
 		case 0:
-			func_658(func_1040(891.5327f, 1105.739f), 49, 2, 0, 0);
+			func_658(func_1040(891.5327f, 1105.7385f), 49, 2, 0, 0);
 			func_658(func_1040(563.5327f, 417.7386f), 17, 0, 0, 0);
-			func_658(func_1040(1263.533f, 417.7386f), 17, 0, 0, 1);
+			func_658(func_1040(1263.5327f, 417.7386f), 17, 0, 0, 1);
 			func_658(func_1040(1483f, 810f), 15, 1, 0, 0);
-			func_658(func_1040(1915.738f, 430.6459f), 6, 0, 1, 0);
+			func_658(func_1040(1915.7375f, 430.6459f), 6, 0, 1, 0);
 			func_658(func_1040(1929f, 442f), 4, 0, 1, 0);
-			func_658(func_1040(2500.533f, 1105.739f), 49, 2, 0, 0);
+			func_658(func_1040(2500.5327f, 1105.7386f), 49, 2, 0, 0);
 			func_658(func_1040(2467f, 498f), 3, 0, 0, 1);
 			func_658(func_1040(3372f, 802f), 7, 1, 0, 1);
 			func_658(func_1040(3392f, 830f), 4, 1, 0, 1);
-			func_658(func_1040(3655.738f, 420f), 6, 0, 1, 0);
+			func_658(func_1040(3655.7375f, 420f), 6, 0, 1, 0);
 			func_658(func_1040(3685f, 442f), 4, 0, 1, 0);
 			func_658(func_1040(4100f, 660f), 3, 1, 0, 1);
 			func_658(func_1040(4624f, 348f), 16, 0, 1, 0);
@@ -86691,11 +86691,11 @@ void func_656(int iParam0)//Position - 0x66898
 			func_658(func_1040(2432.429f, 300f), 36, 0, 1, 0);
 			func_658(func_1040(2732f, 333.849f), 37, 0, 1, 0);
 			func_658(func_1040(3292.25f, 89.9648f), 45, 0, 1, 0);
-			func_658(func_1040(1256.44f, 80f), 44, 0, 1, 0);
+			func_658(func_1040(1256.4404f, 80f), 44, 0, 1, 0);
 			func_658(func_1040(715f, 187.75f), 40, 0, 1, 0);
 			func_658(func_1040(111.2329f, 179.1774f), 39, 0, 1, 0);
 			func_658(func_1040(1415f, 183.75f), 38, 0, 1, 0);
-			func_658(func_1040(1711.233f, 177.1774f), 39, 0, 1, 0);
+			func_658(func_1040(1711.2329f, 177.1774f), 39, 0, 1, 0);
 			func_658(func_1040(2115f, 185.75f), 38, 0, 1, 0);
 			func_658(func_1040(2815f, 182.75f), 40, 0, 1, 0);
 			func_658(func_1040(3636f, 1100f), 43, 2, 0, 0);
@@ -86707,19 +86707,19 @@ void func_656(int iParam0)//Position - 0x66898
 		
 		case 3:
 			func_658(func_1040(872f, 900f), 32, 2, 0, 0);
-			func_658(func_1040(1212.503f, 351.4268f), 26, 0, 0, 0);
+			func_658(func_1040(1212.5034f, 351.4268f), 26, 0, 0, 0);
 			func_658(func_1040(772f, 688f), 31, 1, 0, 1);
 			func_658(func_1040(1442f, 268f), 34, 0, 1, 0);
-			func_658(func_1040(2115.575f, 796f), 30, 1, 0, 0);
-			func_658(func_1040(1877.271f, 803.335f), 7, 1, 0, 0);
-			func_658(func_1040(2070.588f, 338.6382f), 27, 0, 0, 0);
-			func_658(func_1040(2355.25f, 1000.615f), 6, 2, 0, 0);
-			func_658(func_1040(2916.013f, 364.8707f), 28, 0, 0, 0);
-			func_658(func_1040(3588.881f, 327.3298f), 27, 0, 1, 0);
-			func_658(func_1040(3761.82f, 483.5f), 50, 0, 0, 0);
+			func_658(func_1040(2115.5752f, 796f), 30, 1, 0, 0);
+			func_658(func_1040(1877.2715f, 803.335f), 7, 1, 0, 0);
+			func_658(func_1040(2070.5881f, 338.6382f), 27, 0, 0, 0);
+			func_658(func_1040(2355.25f, 1000.6147f), 6, 2, 0, 0);
+			func_658(func_1040(2916.0127f, 364.8707f), 28, 0, 0, 0);
+			func_658(func_1040(3588.8809f, 327.3298f), 27, 0, 1, 0);
+			func_658(func_1040(3761.8198f, 483.5f), 50, 0, 0, 0);
 			func_658(func_1040(5140f, 540f), 29, 1, 0, 1);
 			func_658(func_1040(4580f, 246.2417f), 28, 0, 1, 1);
-			func_658(func_1040(6376.988f, 1000.747f), 7, 2, 0, 1);
+			func_658(func_1040(6376.988f, 1000.7474f), 7, 2, 0, 1);
 			func_658(func_1040(3592.5f, 760f), 13, 1, 0, 0);
 			func_658(func_1040(5403.75f, 704f), 7, 1, 0, 1);
 			func_658(func_1040(5423.75f, 732f), 4, 1, 0, 1);
@@ -100451,7 +100451,7 @@ void func_992()//Position - 0x7A214
 			break;
 		
 		case 3:
-			func_939(1084f, 724f, 644f, 1, 1, 3, 1081.575f, 0, 1, 0, 0);
+			func_939(1084f, 724f, 644f, 1, 1, 3, 1081.5751f, 0, 1, 0, 0);
 			func_939(100f, 368f, 1122f, 0, 1, 3, 1539.65f, 0, 0, 0, 0);
 			func_939(1850f, 710f, 1320f, 1, 0, 3, (1.66f * 927.5f), 0, 0, 0, 0);
 			func_939(100f, 950f, 560f, 2, 1, 12, (2.5f * 927.5f), 0, 0, 0, 0);

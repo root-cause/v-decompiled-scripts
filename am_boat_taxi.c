@@ -2704,15 +2704,15 @@ void func_34()//Position - 0x20AE
 
 int func_35()//Position - 0x210B
 {
-	if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 2631.833f, 4526.624f, -10f, -380.1435f, 3906.702f, 78.484f, 1200f, false, true, 0))
+	if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 2631.8325f, 4526.624f, -10f, -380.1435f, 3906.7017f, 78.484f, 1200f, false, true, 0))
 	{
 		return 1;
 	}
-	if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 1731.902f, -123.8468f, 137.2596f, 2079.203f, 798.3421f, 249.3267f, 600f, false, true, 0))
+	if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 1731.902f, -123.846825f, 137.25964f, 2079.203f, 798.3421f, 249.3267f, 600f, false, true, 0))
 	{
 		return 1;
 	}
-	if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 252.5025f, 855.094f, 148.1213f, -393.3539f, 695.785f, 272.1867f, 500f, false, true, 0))
+	if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 252.50253f, 855.094f, 148.12129f, -393.35385f, 695.785f, 272.18668f, 500f, false, true, 0))
 	{
 		return 1;
 	}
@@ -2740,19 +2740,19 @@ Vector3 func_37(int iParam0)//Position - 0x21F6
 	switch (iParam0)
 	{
 		case 0:
-			return 709.8127f, 6699.78f, 0f;
+			return 709.8127f, 6699.7803f, 0f;
 		
 		case 1:
-			return 1551.805f, 6686.052f, 0f;
+			return 1551.805f, 6686.0522f, 0f;
 		
 		case 2:
 			return 3260.507f, 5309.454f, 0f;
 		
 		case 3:
-			return 3788.334f, 3812.693f, 0f;
+			return 3788.334f, 3812.6934f, 0f;
 		
 		case 4:
-			return 2945.665f, 1773.192f, 0f;
+			return 2945.665f, 1773.1919f, 0f;
 		
 		case 5:
 			return 2866.816f, -658.5848f, 0f;
@@ -2788,13 +2788,13 @@ Vector3 func_37(int iParam0)//Position - 0x21F6
 			return -3133.45f, 604.7179f, 0f;
 		
 		case 16:
-			return -3286.57f, 1285.372f, 0f;
+			return -3286.57f, 1285.3721f, 0f;
 		
 		case 17:
-			return -3205.53f, 3285.199f, 0f;
+			return -3205.53f, 3285.1995f, 0f;
 		
 		case 18:
-			return -2520.42f, 4240.671f, 0f;
+			return -2520.42f, 4240.6714f, 0f;
 		
 		case 19:
 			return -909.632f, 5830.909f, 0f;
@@ -3548,7 +3548,7 @@ Vector3 func_65(int iParam0)//Position - 0x3112
 			return Var2;
 			break;
 	}
-	return -1392.428f, -1661.61f, 0f;
+	return -1392.4283f, -1661.61f, 0f;
 }
 
 float func_66(int iParam0)//Position - 0x330B

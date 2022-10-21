@@ -4206,7 +4206,7 @@ int func_81()//Position - 0x5017
 		{
 			return 1;
 		}
-		if (INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(130.2632f, -1295.035f, 28.2695f))
+		if (INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(130.2632f, -1295.0345f, 28.2695f))
 		{
 			return 1;
 		}
@@ -4373,16 +4373,16 @@ Vector3 func_84(int iParam0, int iParam1)//Position - 0x5420
 		case 1:
 			if (iParam1 == 1)
 			{
-				return 606.8925f, -3250.188f, 5.06951f;
+				return 606.8925f, -3250.1875f, 5.06951f;
 			}
 			else
 			{
-				return 634.5865f, -3232.79f, -16.5774f;
+				return 634.5865f, -3232.7903f, -16.5774f;
 			}
 			break;
 		
 		case 2:
-			return 1590.6f, -2810.174f, 3.4494f;
+			return 1590.5997f, -2810.174f, 3.4494f;
 			break;
 		
 		case 3:
@@ -4392,29 +4392,29 @@ Vector3 func_84(int iParam0, int iParam1)//Position - 0x5420
 			}
 			else
 			{
-				return 338.4039f, -2762.106f, 42.6543f;
+				return 338.4039f, -2762.1057f, 42.6543f;
 			}
 			break;
 		
 		case 4:
 			if (iParam1 == 1)
 			{
-				return 1134.422f, -2607.024f, 14.77071f;
+				return 1134.4216f, -2607.0237f, 14.77071f;
 			}
 			else
 			{
-				return 1133.688f, -2605.073f, 14.9729f;
+				return 1133.6882f, -2605.0728f, 14.9729f;
 			}
 			break;
 		
 		case 5:
 			if (iParam1 == 1)
 			{
-				return 368.9316f, -2118.533f, 15.40341f;
+				return 368.93164f, -2118.5327f, 15.40341f;
 			}
 			else
 			{
-				return 369.945f, -2116.756f, 16.1688f;
+				return 369.945f, -2116.7556f, 16.1688f;
 			}
 			break;
 		
@@ -4425,7 +4425,7 @@ Vector3 func_84(int iParam0, int iParam1)//Position - 0x5420
 			}
 			else
 			{
-				return 1742.024f, -1618.777f, 111.8313f;
+				return 1742.0242f, -1618.7767f, 111.8313f;
 			}
 			break;
 		
@@ -4434,35 +4434,35 @@ Vector3 func_84(int iParam0, int iParam1)//Position - 0x5420
 			break;
 		
 		case 8:
-			return 17.5926f, -1213.207f, 28.3678f;
+			return 17.5926f, -1213.2073f, 28.3678f;
 			break;
 		
 		case 9:
 			if (iParam1 == 1)
 			{
-				return -910.0172f, -1147.44f, 1.06785f;
+				return -910.01715f, -1147.44f, 1.06785f;
 			}
 			else
 			{
-				return -900.3597f, -1165.551f, 31.8047f;
+				return -900.3597f, -1165.5511f, 31.8047f;
 			}
 			break;
 		
 		case 10:
 			if (iParam1 == 1)
 			{
-				return 1237.728f, -1099.15f, 37.52579f;
+				return 1237.7278f, -1099.1497f, 37.52579f;
 			}
 			else
 			{
-				return 1231.973f, -1102.308f, 34.4289f;
+				return 1231.9734f, -1102.3076f, 34.4289f;
 			}
 			break;
 		
 		case 11:
 			if (iParam1 == 1)
 			{
-				return 87.69075f, 810.3736f, 210.1258f;
+				return 87.69075f, 810.3736f, 210.12582f;
 			}
 			else
 			{
@@ -4473,18 +4473,18 @@ Vector3 func_84(int iParam0, int iParam1)//Position - 0x5420
 		case 12:
 			if (iParam1 == 1)
 			{
-				return -1900.951f, 1389.582f, 218.1509f;
+				return -1900.9506f, 1389.5819f, 218.1509f;
 			}
 			else
 			{
-				return -1907.515f, 1388.69f, 217.9728f;
+				return -1907.5149f, 1388.69f, 217.9728f;
 			}
 			break;
 		
 		case 13:
 			if (iParam1 == 1)
 			{
-				return 467.369f, -730.7552f, 26.36373f;
+				return 467.36896f, -730.75525f, 26.36373f;
 			}
 			else
 			{
@@ -4510,11 +4510,11 @@ Vector3 func_84(int iParam0, int iParam1)//Position - 0x5420
 		case 16:
 			if (iParam1 == 1)
 			{
-				return -1183.152f, -518.5386f, 38.53018f;
+				return -1183.1521f, -518.5386f, 38.53018f;
 			}
 			else
 			{
-				return -1182.538f, -525.5859f, 39.9114f;
+				return -1182.5385f, -525.5859f, 39.9114f;
 			}
 			break;
 		
@@ -4529,18 +4529,18 @@ Vector3 func_84(int iParam0, int iParam1)//Position - 0x5420
 		case 19:
 			if (iParam1 == 1)
 			{
-				return -1169.397f, -56.76701f, 44.45705f;
+				return -1169.3975f, -56.76701f, 44.45705f;
 			}
 			else
 			{
-				return -1175.488f, -65.4649f, 44.6563f;
+				return -1175.4877f, -65.4649f, 44.6563f;
 			}
 			break;
 		
 		case 20:
 			if (iParam1 == 1)
 			{
-				return 1679.056f, 39.44059f, 160.7736f;
+				return 1679.0564f, 39.44059f, 160.77364f;
 			}
 			else
 			{
@@ -4562,7 +4562,7 @@ Vector3 func_84(int iParam0, int iParam1)//Position - 0x5420
 		case 22:
 			if (iParam1 == 1)
 			{
-				return 24.21706f, 637.1212f, 206.3897f;
+				return 24.21706f, 637.1212f, 206.38968f;
 			}
 			else
 			{
@@ -4577,11 +4577,11 @@ Vector3 func_84(int iParam0, int iParam1)//Position - 0x5420
 		case 24:
 			if (iParam1 == 1)
 			{
-				return -1531.895f, 870.3203f, 180.6775f;
+				return -1531.895f, 870.3203f, 180.67746f;
 			}
 			else
 			{
-				return -1529.722f, 871.4257f, 180.6421f;
+				return -1529.7219f, 871.4257f, 180.6421f;
 			}
 			break;
 		
@@ -4590,17 +4590,17 @@ Vector3 func_84(int iParam0, int iParam1)//Position - 0x5420
 			break;
 		
 		case 26:
-			return -2809.354f, 1449.643f, 99.928f;
+			return -2809.3538f, 1449.643f, 99.928f;
 			break;
 		
 		case 27:
 			if (iParam1 == 1)
 			{
-				return 3144.045f, 2184.413f, -5.2961f;
+				return 3144.0452f, 2184.4133f, -5.2961f;
 			}
 			else
 			{
-				return 3144.045f, 2184.413f, -5.2961f;
+				return 3144.0452f, 2184.4133f, -5.2961f;
 			}
 			break;
 		
@@ -4624,7 +4624,7 @@ Vector3 func_84(int iParam0, int iParam1)//Position - 0x5420
 			break;
 		
 		case 31:
-			return 1367.413f, 2180.632f, 96.6914f;
+			return 1367.4128f, 2180.6316f, 96.6914f;
 			break;
 		
 		case 32:
@@ -4634,12 +4634,12 @@ Vector3 func_84(int iParam0, int iParam1)//Position - 0x5420
 			}
 			else
 			{
-				return 172.1426f, 2220.131f, 89.7842f;
+				return 172.1426f, 2220.1313f, 89.7842f;
 			}
 			break;
 		
 		case 33:
-			return 889.3209f, 2870.052f, 55.2834f;
+			return 889.3209f, 2870.0522f, 55.2834f;
 			break;
 		
 		case 34:
@@ -4654,25 +4654,25 @@ Vector3 func_84(int iParam0, int iParam1)//Position - 0x5420
 			break;
 		
 		case 35:
-			return -390.384f, 2963.26f, 18.2713f;
+			return -390.384f, 2963.2605f, 18.2713f;
 			break;
 		
 		case 36:
-			return 71.6642f, 3279.368f, 30.3918f;
+			return 71.6642f, 3279.3682f, 30.3918f;
 			break;
 		
 		case 37:
-			return 1924.186f, 3471.256f, 50.3238f;
+			return 1924.1864f, 3471.2563f, 50.3238f;
 			break;
 		
 		case 38:
-			return -583.1569f, 3580.375f, 266.2471f;
+			return -583.1569f, 3580.3752f, 266.2471f;
 			break;
 		
 		case 39:
 			if (iParam1 == 1)
 			{
-				return 2514.302f, 3789.519f, 52.077f;
+				return 2514.3015f, 3789.5193f, 52.077f;
 			}
 			else
 			{
@@ -4683,22 +4683,22 @@ Vector3 func_84(int iParam0, int iParam1)//Position - 0x5420
 		case 40:
 			if (iParam1 == 1)
 			{
-				return 1517.613f, 3803.926f, 30.95605f;
+				return 1517.6129f, 3803.926f, 30.95605f;
 			}
 			else
 			{
-				return 1486.047f, 3857.217f, 22.2905f;
+				return 1486.0475f, 3857.2168f, 22.2905f;
 			}
 			break;
 		
 		case 41:
 			if (iParam1 == 1)
 			{
-				return -530.2739f, 4474.358f, 59.45993f;
+				return -530.27386f, 4474.3584f, 59.45993f;
 			}
 			else
 			{
-				return -528.8246f, 4440.644f, 31.7384f;
+				return -528.8246f, 4440.6436f, 31.7384f;
 			}
 			break;
 		
@@ -4709,7 +4709,7 @@ Vector3 func_84(int iParam0, int iParam1)//Position - 0x5420
 			}
 			else
 			{
-				return 3820.813f, 4441.683f, 1.8007f;
+				return 3820.8132f, 4441.683f, 1.8007f;
 			}
 			break;
 		
@@ -4720,20 +4720,20 @@ Vector3 func_84(int iParam0, int iParam1)//Position - 0x5420
 			}
 			else
 			{
-				return -1943.055f, 4585.194f, 46.6362f;
+				return -1943.0546f, 4585.1943f, 46.6362f;
 			}
 			break;
 		
 		case 44:
-			return 2437.545f, 4779.959f, 33.5101f;
+			return 2437.5452f, 4779.9595f, 33.5101f;
 			break;
 		
 		case 45:
-			return -1441.495f, 5414.888f, 23.3f;
+			return -1441.4948f, 5414.888f, 23.3f;
 			break;
 		
 		case 46:
-			return 2196.251f, 5599.034f, 52.7129f;
+			return 2196.2507f, 5599.034f, 52.7129f;
 			break;
 		
 		case 47:
@@ -4743,14 +4743,14 @@ Vector3 func_84(int iParam0, int iParam1)//Position - 0x5420
 			}
 			else
 			{
-				return -503.2193f, 5665.61f, 48.8487f;
+				return -503.2193f, 5665.6104f, 48.8487f;
 			}
 			break;
 		
 		case 48:
 			if (iParam1 == 1)
 			{
-				return -378.4192f, 6080.782f, 30.44296f;
+				return -378.41922f, 6080.782f, 30.44296f;
 			}
 			else
 			{
@@ -4759,7 +4759,7 @@ Vector3 func_84(int iParam0, int iParam1)//Position - 0x5420
 			break;
 		
 		case 49:
-			return 440.9546f, 6459.642f, 27.7432f;
+			return 440.9546f, 6459.6416f, 27.7432f;
 			break;
 	}
 	return 0f, 0f, 0f;
@@ -4798,38 +4798,38 @@ Vector3 func_87(int iParam0, int iParam1)//Position - 0x5CC3
 		case 0:
 			if (iParam1 == 1)
 			{
-				return 1034.274f, -3026.275f, 4.90197f;
+				return 1034.2743f, -3026.2754f, 4.90197f;
 			}
 			else
 			{
-				return 1026.705f, -3026.052f, 13.3323f;
+				return 1026.7053f, -3026.0515f, 13.3323f;
 			}
 			break;
 		
 		case 1:
 			if (iParam1 == 1)
 			{
-				return -1040.979f, -2743.509f, 12.94983f;
+				return -1040.9789f, -2743.5093f, 12.94983f;
 			}
 			else
 			{
-				return -1048.604f, -2734.218f, 12.8895f;
+				return -1048.6035f, -2734.218f, 12.8895f;
 			}
 			break;
 		
 		case 2:
 			if (iParam1 == 1)
 			{
-				return -93.9012f, -2711.314f, 5.01752f;
+				return -93.9012f, -2711.3145f, 5.01752f;
 			}
 			else
 			{
-				return -81.1199f, -2726.511f, 7.74f;
+				return -81.1199f, -2726.5112f, 7.74f;
 			}
 			break;
 		
 		case 3:
-			return -917.6909f, -2527.384f, 22.3218f;
+			return -917.6909f, -2527.3843f, 22.3218f;
 			break;
 		
 		case 4:
@@ -4846,22 +4846,22 @@ Vector3 func_87(int iParam0, int iParam1)//Position - 0x5CC3
 		case 5:
 			if (iParam1 == 1)
 			{
-				return 1509.742f, -2126.038f, 75.21973f;
+				return 1509.7421f, -2126.0376f, 75.21973f;
 			}
 			else
 			{
-				return 1509.099f, -2120.551f, 75.61f;
+				return 1509.0994f, -2120.551f, 75.61f;
 			}
 			break;
 		
 		case 6:
-			return 76.0032f, -1970.475f, 20.1302f;
+			return 76.0032f, -1970.4752f, 20.1302f;
 			break;
 		
 		case 7:
 			if (iParam1 == 1)
 			{
-				return -1.82327f, -1732.614f, 28.29367f;
+				return -1.82327f, -1732.6144f, 28.29367f;
 			}
 			else
 			{
@@ -4872,28 +4872,28 @@ Vector3 func_87(int iParam0, int iParam1)//Position - 0x5CC3
 		case 8:
 			if (iParam1 == 1)
 			{
-				return -1377.766f, -1409.837f, 4.63205f;
+				return -1377.7656f, -1409.837f, 4.63205f;
 			}
 			else
 			{
-				return -1380.491f, -1404.374f, 1.7273f;
+				return -1380.4912f, -1404.3735f, 1.7273f;
 			}
 			break;
 		
 		case 9:
-			return 2864.808f, -1372.84f, 1.3151f;
+			return 2864.8079f, -1372.8402f, 1.3151f;
 			break;
 		
 		case 10:
-			return -1035.812f, -1273.077f, 0.8919f;
+			return -1035.8115f, -1273.0769f, 0.8919f;
 			break;
 		
 		case 11:
-			return -1821.136f, -1201.36f, 18.1698f;
+			return -1821.1364f, -1201.3599f, 18.1698f;
 			break;
 		
 		case 12:
-			return 643.0116f, -1035.65f, 35.8891f;
+			return 643.0116f, -1035.6504f, 35.8891f;
 			break;
 		
 		case 13:
@@ -4903,11 +4903,11 @@ Vector3 func_87(int iParam0, int iParam1)//Position - 0x5CC3
 		case 14:
 			if (iParam1 == 1)
 			{
-				return -1243.104f, -507.8057f, 30.10775f;
+				return -1243.1036f, -507.8057f, 30.10775f;
 			}
 			else
 			{
-				return -1238.766f, -506.7138f, 37.6019f;
+				return -1238.7655f, -506.7138f, 37.6019f;
 			}
 			break;
 		
@@ -4923,11 +4923,11 @@ Vector3 func_87(int iParam0, int iParam1)//Position - 0x5CC3
 			break;
 		
 		case 16:
-			return 1095.953f, -210.4642f, 54.9477f;
+			return 1095.9534f, -210.4642f, 54.9477f;
 			break;
 		
 		case 17:
-			return -1724.522f, -196f, 57.2387f;
+			return -1724.5217f, -196f, 57.2387f;
 			break;
 		
 		case 18:
@@ -4937,7 +4937,7 @@ Vector3 func_87(int iParam0, int iParam1)//Position - 0x5CC3
 		case 19:
 			if (iParam1 == 1)
 			{
-				return -3020.475f, 36.55431f, 9.11777f;
+				return -3020.4749f, 36.55431f, 9.11777f;
 			}
 			else
 			{
@@ -4948,7 +4948,7 @@ Vector3 func_87(int iParam0, int iParam1)//Position - 0x5CC3
 		case 20:
 			if (iParam1 == 1)
 			{
-				return -347.5277f, 53.37161f, 52.97814f;
+				return -347.52768f, 53.37161f, 52.97814f;
 			}
 			else
 			{
@@ -4957,11 +4957,11 @@ Vector3 func_87(int iParam0, int iParam1)//Position - 0x5CC3
 			break;
 		
 		case 21:
-			return 1052.248f, 167.611f, 87.7406f;
+			return 1052.2484f, 167.611f, 87.7406f;
 			break;
 		
 		case 22:
-			return -2303.798f, 217.4301f, 166.6017f;
+			return -2303.7976f, 217.4301f, 166.6017f;
 			break;
 		
 		case 23:
@@ -4971,16 +4971,16 @@ Vector3 func_87(int iParam0, int iParam1)//Position - 0x5CC3
 		case 24:
 			if (iParam1 == 1)
 			{
-				return 688.1073f, 1204.671f, 323.3438f;
+				return 688.1073f, 1204.6713f, 323.3438f;
 			}
 			else
 			{
-				return 682.4505f, 1204.928f, 344.3322f;
+				return 682.4505f, 1204.9277f, 344.3322f;
 			}
 			break;
 		
 		case 25:
-			return -1548.763f, 1380.173f, 125.3728f;
+			return -1548.7627f, 1380.1727f, 125.3728f;
 			break;
 		
 		case 26:
@@ -4990,7 +4990,7 @@ Vector3 func_87(int iParam0, int iParam1)//Position - 0x5CC3
 			}
 			else
 			{
-				return -432.0034f, 1597.129f, 356.613f;
+				return -432.0034f, 1597.1292f, 356.613f;
 			}
 			break;
 		
@@ -5005,11 +5005,11 @@ Vector3 func_87(int iParam0, int iParam1)//Position - 0x5CC3
 		case 29:
 			if (iParam1 == 1)
 			{
-				return 3069.213f, 2160.988f, 1.1327f;
+				return 3069.213f, 2160.9883f, 1.1327f;
 			}
 			else
 			{
-				return 3063.583f, 2212.63f, 2.5863f;
+				return 3063.5828f, 2212.63f, 2.5863f;
 			}
 			break;
 		
@@ -5024,18 +5024,18 @@ Vector3 func_87(int iParam0, int iParam1)//Position - 0x5CC3
 			}
 			else
 			{
-				return 929.6946f, 2444.115f, 48.43f;
+				return 929.6946f, 2444.1155f, 48.43f;
 			}
 			break;
 		
 		case 32:
 			if (iParam1 == 1)
 			{
-				return -2380.212f, 2655.176f, 0.832f;
+				return -2380.2124f, 2655.1758f, 0.832f;
 			}
 			else
 			{
-				return -2379.948f, 2656.953f, 1.4906f;
+				return -2379.9482f, 2656.9534f, 1.4906f;
 			}
 			break;
 		
@@ -5044,13 +5044,13 @@ Vector3 func_87(int iParam0, int iParam1)//Position - 0x5CC3
 			break;
 		
 		case 34:
-			return -289.0195f, 2848.853f, 53.331f;
+			return -289.0195f, 2848.8533f, 53.331f;
 			break;
 		
 		case 35:
 			if (iParam1 == 1)
 			{
-				return 288.8409f, 2871.912f, 42.6422f;
+				return 288.84085f, 2871.9116f, 42.6422f;
 			}
 			else
 			{
@@ -5061,7 +5061,7 @@ Vector3 func_87(int iParam0, int iParam1)//Position - 0x5CC3
 		case 36:
 			if (iParam1 == 1)
 			{
-				return 1297.378f, 2988.71f, 40.11787f;
+				return 1297.378f, 2988.7102f, 40.11787f;
 			}
 			else
 			{
@@ -5080,7 +5080,7 @@ Vector3 func_87(int iParam0, int iParam1)//Position - 0x5CC3
 		case 39:
 			if (iParam1 == 1)
 			{
-				return -3.51812f, 4332.451f, 31.21602f;
+				return -3.51812f, 4332.4507f, 31.21602f;
 			}
 			else
 			{
@@ -5089,13 +5089,13 @@ Vector3 func_87(int iParam0, int iParam1)//Position - 0x5CC3
 			break;
 		
 		case 40:
-			return 1336.737f, 4307.2f, 37.1325f;
+			return 1336.7367f, 4307.1997f, 37.1325f;
 			break;
 		
 		case 41:
 			if (iParam1 == 1)
 			{
-				return -1007.103f, 4836.936f, 268.5488f;
+				return -1007.10284f, 4836.936f, 268.5488f;
 			}
 			else
 			{
@@ -5110,11 +5110,11 @@ Vector3 func_87(int iParam0, int iParam1)//Position - 0x5CC3
 		case 43:
 			if (iParam1 == 1)
 			{
-				return 3366.099f, 5182.461f, 0.68317f;
+				return 3366.0986f, 5182.4614f, 0.68317f;
 			}
 			else
 			{
-				return 3436.453f, 5176.911f, 6.386f;
+				return 3436.4526f, 5176.911f, 6.386f;
 			}
 			break;
 		
@@ -5130,36 +5130,36 @@ Vector3 func_87(int iParam0, int iParam1)//Position - 0x5CC3
 			break;
 		
 		case 45:
-			return 444.6518f, 5571.781f, 780.1888f;
+			return 444.6518f, 5571.7812f, 780.1888f;
 			break;
 		
 		case 46:
-			return -402.9948f, 6319.279f, 31.2256f;
+			return -402.9948f, 6319.2793f, 31.2256f;
 			break;
 		
 		case 47:
-			return 1439.599f, 6335.208f, 22.9485f;
+			return 1439.5989f, 6335.2075f, 22.9485f;
 			break;
 		
 		case 48:
 			if (iParam1 == 1)
 			{
-				return 1466.109f, 6552.266f, 12.95773f;
+				return 1466.109f, 6552.2656f, 12.95773f;
 			}
 			else
 			{
-				return 1469.632f, 6552.174f, 13.6854f;
+				return 1469.6321f, 6552.1743f, 13.6854f;
 			}
 			break;
 		
 		case 49:
 			if (iParam1 == 1)
 			{
-				return 66.19278f, 6668.888f, 30.80633f;
+				return 66.19278f, 6668.8877f, 30.80633f;
 			}
 			else
 			{
-				return 66.7136f, 6663.198f, 30.7821f;
+				return 66.7136f, 6663.1978f, 30.7821f;
 			}
 			break;
 	}
@@ -5199,7 +5199,7 @@ Vector3 func_90(int iParam0, bool bParam1)//Position - 0x6506
 	switch (iParam0)
 	{
 		case 0:
-			return 473.1829f, -2643.184f, 4.7209f;
+			return 473.1829f, -2643.1838f, 4.7209f;
 			break;
 		
 		case 1:
@@ -5216,18 +5216,18 @@ Vector3 func_90(int iParam0, bool bParam1)//Position - 0x6506
 		case 2:
 			if (bParam1 == 1)
 			{
-				return 1173.839f, -1499.781f, 33.84875f;
+				return 1173.8392f, -1499.7808f, 33.84875f;
 			}
 			else
 			{
-				return 1173.566f, -1495.763f, 34.1121f;
+				return 1173.5656f, -1495.7628f, 34.1121f;
 			}
 			break;
 		
 		case 3:
 			if (bParam1 == 1)
 			{
-				return -461.7139f, -1699.202f, 17.85122f;
+				return -461.71393f, -1699.2019f, 17.85122f;
 			}
 			else
 			{
@@ -5236,7 +5236,7 @@ Vector3 func_90(int iParam0, bool bParam1)//Position - 0x6506
 			break;
 		
 		case 4:
-			return -1384.628f, -521.0416f, 30.084f;
+			return -1384.6276f, -521.0416f, 30.084f;
 			break;
 		
 		case 5:
@@ -5258,26 +5258,26 @@ Vector3 func_90(int iParam0, bool bParam1)//Position - 0x6506
 			}
 			else
 			{
-				return -478.7744f, -1051.079f, 40.93f;
+				return -478.7744f, -1051.0792f, 40.93f;
 			}
 			break;
 		
 		case 9:
-			return -1268.071f, -1917.408f, 4.8583f;
+			return -1268.0712f, -1917.4076f, 4.8583f;
 			break;
 		
 		case 10:
-			return -1221.908f, -2771.762f, 13.0545f;
+			return -1221.908f, -2771.7622f, 13.0545f;
 			break;
 		
 		case 11:
-			return -3088.668f, 652.9629f, 0.989f;
+			return -3088.6682f, 652.9629f, 0.989f;
 			break;
 		
 		case 12:
 			if (bParam1 == 1)
 			{
-				return -629.3048f, 2036.067f, 157.3307f;
+				return -629.3048f, 2036.0667f, 157.3307f;
 			}
 			else
 			{
@@ -5288,11 +5288,11 @@ Vector3 func_90(int iParam0, bool bParam1)//Position - 0x6506
 		case 13:
 			if (bParam1 == 1)
 			{
-				return -2071.903f, 3411.504f, 30.36414f;
+				return -2071.9026f, 3411.5042f, 30.36414f;
 			}
 			else
 			{
-				return -2048.483f, 3406.162f, 31.1504f;
+				return -2048.4832f, 3406.1624f, 31.1504f;
 			}
 			break;
 		
@@ -5318,7 +5318,7 @@ Vector3 func_90(int iParam0, bool bParam1)//Position - 0x6506
 		case 17:
 			if (bParam1 == 1)
 			{
-				return 1663.9f, -25.91945f, 172.7747f;
+				return 1663.9004f, -25.91945f, 172.77475f;
 			}
 			else
 			{
@@ -5329,11 +5329,11 @@ Vector3 func_90(int iParam0, bool bParam1)//Position - 0x6506
 		case 18:
 			if (bParam1 == 1)
 			{
-				return 2614.451f, 1695.127f, 26.59907f;
+				return 2614.4507f, 1695.1271f, 26.59907f;
 			}
 			else
 			{
-				return 2617.729f, 1693.417f, 30.8743f;
+				return 2617.729f, 1693.4167f, 30.8743f;
 			}
 			break;
 		
@@ -5344,51 +5344,51 @@ Vector3 func_90(int iParam0, bool bParam1)//Position - 0x6506
 			}
 			else
 			{
-				return -187.0338f, 1555.677f, 321.2431f;
+				return -187.0338f, 1555.6766f, 321.2431f;
 			}
 			break;
 		
 		case 20:
 			if (bParam1 == 1)
 			{
-				return 859.5025f, 2426.04f, 53.18517f;
+				return 859.5025f, 2426.0396f, 53.18517f;
 			}
 			else
 			{
-				return 868.7573f, 2423.536f, 60.8942f;
+				return 868.7573f, 2423.5361f, 60.8942f;
 			}
 			break;
 		
 		case 21:
 			if (bParam1 == 1)
 			{
-				return -1822.075f, 805.7814f, 137.7265f;
+				return -1822.0751f, 805.7814f, 137.7265f;
 			}
 			else
 			{
-				return -1822.967f, 803.8147f, 138.2005f;
+				return -1822.9667f, 803.8147f, 138.2005f;
 			}
 			break;
 		
 		case 22:
 			if (bParam1 == 1)
 			{
-				return -1852.922f, 2054.42f, 139.9841f;
+				return -1852.9221f, 2054.4197f, 139.98405f;
 			}
 			else
 			{
-				return -1851.628f, 2053.836f, 139.9841f;
+				return -1851.6283f, 2053.836f, 139.9841f;
 			}
 			break;
 		
 		case 23:
 			if (bParam1 == 1)
 			{
-				return -1075.515f, 4898.497f, 213.2767f;
+				return -1075.5149f, 4898.4966f, 213.27675f;
 			}
 			else
 			{
-				return -1070.651f, 4898.934f, 213.2752f;
+				return -1070.6506f, 4898.9336f, 213.2752f;
 			}
 			break;
 		
@@ -5417,7 +5417,7 @@ Vector3 func_90(int iParam0, bool bParam1)//Position - 0x6506
 		case 26:
 			if (bParam1 == 1)
 			{
-				return 1840.569f, 3693.77f, 33.2668f;
+				return 1840.5687f, 3693.7703f, 33.2668f;
 			}
 			else
 			{
@@ -5441,7 +5441,7 @@ Vector3 func_90(int iParam0, bool bParam1)//Position - 0x6506
 			break;
 		
 		case 29:
-			return -1119.498f, -847.3371f, 18.6886f;
+			return -1119.4977f, -847.3371f, 18.6886f;
 			break;
 		
 		case 30:
@@ -5464,26 +5464,26 @@ Vector3 func_90(int iParam0, bool bParam1)//Position - 0x6506
 			break;
 		
 		case 33:
-			return -2003.115f, 544.7549f, 114.5077f;
+			return -2003.1145f, 544.7549f, 114.5077f;
 			break;
 		
 		case 34:
 			if (bParam1 == 1)
 			{
-				return -397.5786f, 1127.353f, 321.7291f;
+				return -397.57858f, 1127.3531f, 321.72913f;
 			}
 			else
 			{
-				return -386.8739f, 1142.42f, 321.5892f;
+				return -386.8739f, 1142.4197f, 321.5892f;
 			}
 			break;
 		
 		case 35:
-			return -1521.811f, 1560.201f, 106.9392f;
+			return -1521.8113f, 1560.201f, 106.9392f;
 			break;
 		
 		case 36:
-			return 1391.945f, 3616.655f, 37.9259f;
+			return 1391.9453f, 3616.6548f, 37.9259f;
 			break;
 		
 		case 37:
@@ -5504,7 +5504,7 @@ Vector3 func_90(int iParam0, bool bParam1)//Position - 0x6506
 			}
 			else
 			{
-				return 70.3786f, 3755.605f, 38.7487f;
+				return 70.3786f, 3755.6055f, 38.7487f;
 			}
 			break;
 		
@@ -5541,11 +5541,11 @@ Vector3 func_90(int iParam0, bool bParam1)//Position - 0x6506
 		case 43:
 			if (bParam1)
 			{
-				return 1333.057f, 4381.278f, 43.3703f;
+				return 1333.0566f, 4381.278f, 43.3703f;
 			}
 			else
 			{
-				return 1331.355f, 4392.887f, 44.012f;
+				return 1331.3549f, 4392.887f, 44.012f;
 			}
 			break;
 		
@@ -5556,7 +5556,7 @@ Vector3 func_90(int iParam0, bool bParam1)//Position - 0x6506
 			}
 			else
 			{
-				return -1149.392f, 4938.771f, 221.3682f;
+				return -1149.3918f, 4938.771f, 221.3682f;
 			}
 			break;
 	}
@@ -5587,11 +5587,11 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 		case 1:
 			if (bParam1 == 1)
 			{
-				return -1048.569f, 4917.414f, 208.4216f;
+				return -1048.5695f, 4917.414f, 208.4216f;
 			}
 			else
 			{
-				return -1046.277f, 4918.739f, 211.5379f;
+				return -1046.2772f, 4918.7393f, 211.5379f;
 			}
 			break;
 		
@@ -5602,7 +5602,7 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 		case 3:
 			if (bParam1 == 1)
 			{
-				return -247.6219f, 6331.341f, 31.42602f;
+				return -247.62189f, 6331.341f, 31.42602f;
 			}
 			else
 			{
@@ -5624,7 +5624,7 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 		case 5:
 			if (bParam1 == 1)
 			{
-				return -2924.697f, 46.50282f, 10.60369f;
+				return -2924.6968f, 46.50282f, 10.60369f;
 			}
 			else
 			{
@@ -5639,7 +5639,7 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 		case 7:
 			if (bParam1 == 1)
 			{
-				return 124.0092f, -673.0096f, 41.02729f;
+				return 124.00925f, -673.00964f, 41.02729f;
 			}
 			else
 			{
@@ -5650,29 +5650,29 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 		case 8:
 			if (bParam1 == 1)
 			{
-				return 1195.737f, -1481.694f, 33.8595f;
+				return 1195.7374f, -1481.6945f, 33.8595f;
 			}
 			else
 			{
-				return 1194.709f, -1482.472f, 33.9594f;
+				return 1194.7092f, -1482.4723f, 33.9594f;
 			}
 			break;
 		
 		case 9:
 			if (bParam1 == 1)
 			{
-				return -35.88743f, 1945.738f, 189.1868f;
+				return -35.88743f, 1945.7378f, 189.18681f;
 			}
 			else
 			{
-				return -35.5254f, 1947.289f, 189.186f;
+				return -35.5254f, 1947.2894f, 189.186f;
 			}
 			break;
 		
 		case 10:
 			if (bParam1)
 			{
-				return 753.4579f, 4174.996f, 39.8011f;
+				return 753.4579f, 4174.9956f, 39.8011f;
 			}
 			else
 			{
@@ -5683,7 +5683,7 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 		case 11:
 			if (bParam1 == 1)
 			{
-				return 1791.256f, 4592.383f, 36.68283f;
+				return 1791.2565f, 4592.3833f, 36.68283f;
 			}
 			else
 			{
@@ -5692,7 +5692,7 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 			break;
 		
 		case 12:
-			return 341.311f, 2618.918f, 43.5124f;
+			return 341.311f, 2618.9182f, 43.5124f;
 			break;
 		
 		case 13:
@@ -5713,7 +5713,7 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 		case 15:
 			if (bParam1 == 1)
 			{
-				return 1659.438f, 5.4271f, 165.1176f;
+				return 1659.4376f, 5.4271f, 165.1176f;
 			}
 			else
 			{
@@ -5728,12 +5728,12 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 			}
 			else
 			{
-				return 1647.399f, 4865.839f, 41f;
+				return 1647.3992f, 4865.8394f, 41f;
 			}
 			break;
 		
 		case 17:
-			return -1144.589f, -2004.452f, 12.3803f;
+			return -1144.5892f, -2004.4523f, 12.3803f;
 			break;
 		
 		case 18:
@@ -5750,11 +5750,11 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 		case 19:
 			if (bParam1 == 1)
 			{
-				return -1576.046f, -587.8257f, 33.97909f;
+				return -1576.0459f, -587.82574f, 33.97909f;
 			}
 			else
 			{
-				return -1576.817f, -586.3887f, 34.8528f;
+				return -1576.8167f, -586.3887f, 34.8528f;
 			}
 			break;
 		
@@ -5772,22 +5772,22 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 		case 21:
 			if (bParam1 == 1)
 			{
-				return 1134.201f, -665.9413f, 56.08261f;
+				return 1134.2009f, -665.94135f, 56.08261f;
 			}
 			else
 			{
-				return 1135.401f, -663.7875f, 56.088f;
+				return 1135.4014f, -663.7875f, 56.088f;
 			}
 			break;
 		
 		case 22:
 			if (bParam1 == 1)
 			{
-				return -2196.198f, 248.9123f, 173.612f;
+				return -2196.1975f, 248.9123f, 173.612f;
 			}
 			else
 			{
-				return -2195.029f, 250.4256f, 173.6017f;
+				return -2195.0288f, 250.4256f, 173.6017f;
 			}
 			break;
 		
@@ -5798,22 +5798,22 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 		case 24:
 			if (bParam1 == 1)
 			{
-				return 1724.429f, 3299.023f, 40.2235f;
+				return 1724.4291f, 3299.0234f, 40.2235f;
 			}
 			else
 			{
-				return 1721.96f, 3300.464f, 40.3835f;
+				return 1721.9596f, 3300.4644f, 40.3835f;
 			}
 			break;
 		
 		case 25:
 			if (bParam1 == 1)
 			{
-				return 2617.321f, 3659.452f, 100.3867f;
+				return 2617.3206f, 3659.452f, 100.38673f;
 			}
 			else
 			{
-				return 2612.712f, 3662.564f, 101.1074f;
+				return 2612.7124f, 3662.5642f, 101.1074f;
 			}
 			break;
 		
@@ -5824,18 +5824,18 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 		case 27:
 			if (bParam1 == 1)
 			{
-				return 2432.607f, 4994.333f, 45.25828f;
+				return 2432.6072f, 4994.3335f, 45.25828f;
 			}
 			else
 			{
-				return 2430.906f, 4995.561f, 45.2685f;
+				return 2430.9065f, 4995.561f, 45.2685f;
 			}
 			break;
 		
 		case 28:
 			if (bParam1 == 1)
 			{
-				return 3722.456f, 4521.837f, 20.39456f;
+				return 3722.4556f, 4521.837f, 20.39456f;
 			}
 			else
 			{
@@ -5891,18 +5891,18 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 		case 35:
 			if (bParam1 == 1)
 			{
-				return -3166.978f, 1102.622f, 19.80827f;
+				return -3166.9783f, 1102.6224f, 19.80827f;
 			}
 			else
 			{
-				return -3165.613f, 1102.24f, 19.8928f;
+				return -3165.6125f, 1102.2405f, 19.8928f;
 			}
 			break;
 		
 		case 36:
 			if (bParam1 == 1)
 			{
-				return 1842.882f, 3670.457f, 32.68f;
+				return 1842.8818f, 3670.4568f, 32.68f;
 			}
 			else
 			{
@@ -5913,7 +5913,7 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 		case 37:
 			if (bParam1 == 1)
 			{
-				return 1828.794f, 2605.504f, 44.61582f;
+				return 1828.7944f, 2605.504f, 44.61582f;
 			}
 			else
 			{
@@ -5935,7 +5935,7 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 		case 39:
 			if (bParam1 == 1)
 			{
-				return 1439.012f, 6336.812f, 22.96477f;
+				return 1439.0122f, 6336.812f, 22.96477f;
 			}
 			else
 			{
@@ -5946,7 +5946,7 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 		case 40:
 			if (bParam1 == 1)
 			{
-				return -782.5126f, -1352.245f, 8.0001f;
+				return -782.5126f, -1352.2454f, 8.0001f;
 			}
 			else
 			{
@@ -5957,7 +5957,7 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 		case 41:
 			if (bParam1 == 1)
 			{
-				return 962.8806f, -1826.419f, 30.07195f;
+				return 962.88055f, -1826.4192f, 30.07195f;
 			}
 			else
 			{
@@ -5968,7 +5968,7 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 		case 42:
 			if (bParam1 == 1)
 			{
-				return -1246.155f, -1531.647f, 3.2962f;
+				return -1246.155f, -1531.6471f, 3.2962f;
 			}
 			else
 			{
@@ -5979,7 +5979,7 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 		case 43:
 			if (bParam1 == 1)
 			{
-				return -765.5466f, 698.8101f, 143.3693f;
+				return -765.5466f, 698.8101f, 143.36932f;
 			}
 			else
 			{
@@ -5990,7 +5990,7 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 		case 44:
 			if (bParam1 == 1)
 			{
-				return -512.1094f, 28.86313f, 43.6153f;
+				return -512.10944f, 28.86313f, 43.6153f;
 			}
 			else
 			{
@@ -6001,7 +6001,7 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 		case 45:
 			if (bParam1 == 1)
 			{
-				return 781.3839f, 1292.073f, 359.2997f;
+				return 781.38385f, 1292.073f, 359.29965f;
 			}
 			else
 			{
@@ -6025,13 +6025,13 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 			break;
 		
 		case 48:
-			return 153.6156f, -3073.998f, 4.8962f;
+			return 153.6156f, -3073.9983f, 4.8962f;
 			break;
 		
 		case 49:
 			if (bParam1)
 			{
-				return -306.2449f, -1180.538f, 22.711f;
+				return -306.2449f, -1180.5382f, 22.711f;
 			}
 			else
 			{
@@ -6040,13 +6040,13 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 			break;
 		
 		case 50:
-			return -2006.987f, -556.4998f, 11.8813f;
+			return -2006.9866f, -556.4998f, 11.8813f;
 			break;
 		
 		case 51:
 			if (bParam1 == 1)
 			{
-				return -590.2079f, -289.8196f, 40.68631f;
+				return -590.20795f, -289.8196f, 40.68631f;
 			}
 			else
 			{
@@ -6055,11 +6055,11 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 			break;
 		
 		case 52:
-			return -1795.826f, -855.7111f, 8.2048f;
+			return -1795.8262f, -855.7111f, 8.2048f;
 			break;
 		
 		case 53:
-			return -1557.108f, -1155.246f, 2.9158f;
+			return -1557.108f, -1155.2465f, 2.9158f;
 			break;
 		
 		case 54:
@@ -6069,7 +6069,7 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 			}
 			else
 			{
-				return -1467.483f, -1387.507f, 3.1432f;
+				return -1467.4833f, -1387.5068f, 3.1432f;
 			}
 			break;
 		
@@ -6080,7 +6080,7 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 		case 56:
 			if (bParam1 == 1)
 			{
-				return -1311.413f, 640.1154f, 136.9244f;
+				return -1311.4127f, 640.11536f, 136.92444f;
 			}
 			else
 			{
@@ -6089,7 +6089,7 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 			break;
 		
 		case 57:
-			return 2493.686f, 4963.541f, 43.7358f;
+			return 2493.6855f, 4963.541f, 43.7358f;
 			break;
 		
 		case 58:
@@ -6099,7 +6099,7 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 			}
 			else
 			{
-				return 1392.609f, 3605.799f, 34.9939f;
+				return 1392.6086f, 3605.7986f, 34.9939f;
 			}
 			break;
 		
@@ -6121,7 +6121,7 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 			}
 			else
 			{
-				return -551.5837f, 5349.404f, 75.253f;
+				return -551.5837f, 5349.4043f, 75.253f;
 			}
 			break;
 		
@@ -6132,7 +6132,7 @@ Vector3 func_92(int iParam0, bool bParam1)//Position - 0x6CBD
 			}
 			else
 			{
-				return 0.1911f, -1825.905f, 24.3295f;
+				return 0.1911f, -1825.9047f, 24.3295f;
 			}
 			break;
 		
@@ -6312,53 +6312,53 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 			break;
 		
 		case 1:
-			return -1595.742f, 2799.371f, 16.0205f;
+			return -1595.7422f, 2799.3706f, 16.0205f;
 			break;
 		
 		case 2:
 			if (bParam1 == 1)
 			{
-				return -197.1486f, 1482.685f, 288.253f;
+				return -197.14859f, 1482.6846f, 288.253f;
 			}
 			else
 			{
-				return -200.0114f, 1481.697f, 289.4303f;
+				return -200.0114f, 1481.6971f, 289.4303f;
 			}
 			break;
 		
 		case 3:
-			return 256.77f, 2841.047f, 42.6599f;
+			return 256.77f, 2841.0466f, 42.6599f;
 			break;
 		
 		case 4:
-			return -1360.223f, 4435.751f, 27.7754f;
+			return -1360.2231f, 4435.7515f, 27.7754f;
 			break;
 		
 		case 5:
-			return 64.63f, 7051.253f, 15.8272f;
+			return 64.63f, 7051.2534f, 15.8272f;
 			break;
 		
 		case 6:
-			return -456.2838f, 1593.799f, 358.0119f;
+			return -456.2838f, 1593.7988f, 358.0119f;
 			break;
 		
 		case 7:
 			if (bParam1 == 1)
 			{
-				return -3114.617f, 749.8445f, 11.59352f;
+				return -3114.617f, 749.84454f, 11.59352f;
 			}
 			else
 			{
-				return -3111.614f, 749.2816f, 12.6285f;
+				return -3111.6143f, 749.2816f, 12.6285f;
 			}
 			break;
 		
 		case 8:
-			return 713.6797f, 4095.969f, 33.765f;
+			return 713.6797f, 4095.9688f, 33.765f;
 			break;
 		
 		case 9:
-			return 255.2671f, 2586.281f, 43.9619f;
+			return 255.2671f, 2586.2815f, 43.9619f;
 			break;
 		
 		case 10:
@@ -6366,7 +6366,7 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 			break;
 		
 		case 11:
-			return 3111.531f, 2214.848f, -8.6457f;
+			return 3111.531f, 2214.8481f, -8.6457f;
 			break;
 		
 		case 12:
@@ -6385,7 +6385,7 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 			break;
 		
 		case 14:
-			return 1691.152f, 2640.859f, 54.0693f;
+			return 1691.1517f, 2640.859f, 54.0693f;
 			break;
 		
 		case 15:
@@ -6397,11 +6397,11 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 			break;
 		
 		case 17:
-			return 963.5308f, -1824.04f, 30.0708f;
+			return 963.5308f, -1824.0399f, 30.0708f;
 			break;
 		
 		case 18:
-			return -295.4187f, 6188.786f, 30.48932f;
+			return -295.41867f, 6188.7856f, 30.48932f;
 			break;
 		
 		case 19:
@@ -6411,11 +6411,11 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 		case 20:
 			if (bParam1 == 1)
 			{
-				return 157.5759f, 3133.994f, 42.45733f;
+				return 157.57587f, 3133.9941f, 42.45733f;
 			}
 			else
 			{
-				return 161.2925f, 3131.854f, 42.5892f;
+				return 161.2925f, 3131.8538f, 42.5892f;
 			}
 			break;
 		
@@ -6430,7 +6430,7 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 		case 23:
 			if (bParam1 == 1)
 			{
-				return -495.8039f, -1750.207f, 17.42509f;
+				return -495.80392f, -1750.2067f, 17.42509f;
 			}
 			else
 			{
@@ -6441,18 +6441,18 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 		case 24:
 			if (bParam1 == 1)
 			{
-				return -1764.695f, -265.5809f, 47.6187f;
+				return -1764.695f, -265.58093f, 47.6187f;
 			}
 			else
 			{
-				return -1763.359f, -263.2062f, 47.1481f;
+				return -1763.3588f, -263.2062f, 47.1481f;
 			}
 			break;
 		
 		case 25:
 			if (bParam1 == 1)
 			{
-				return 548.0715f, -1642.451f, 27.2033f;
+				return 548.0715f, -1642.4506f, 27.2033f;
 			}
 			else
 			{
@@ -6467,11 +6467,11 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 		case 27:
 			if (bParam1 == 1)
 			{
-				return 701.0009f, -1179.702f, 23.28737f;
+				return 701.0009f, -1179.7015f, 23.28737f;
 			}
 			else
 			{
-				return 699.2748f, -1181.671f, 33.2608f;
+				return 699.2748f, -1181.6705f, 33.2608f;
 			}
 			break;
 		
@@ -6493,12 +6493,12 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 			}
 			else
 			{
-				return 2513.535f, -442.8484f, 113.0888f;
+				return 2513.5347f, -442.8484f, 113.0888f;
 			}
 			break;
 		
 		case 30:
-			return -553.1764f, -2239.877f, 121.3704f;
+			return -553.1764f, -2239.8767f, 121.3704f;
 			break;
 		
 		case 31:
@@ -6517,7 +6517,7 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 			break;
 		
 		case 33:
-			return 312.6026f, 6606.896f, 27.8835f;
+			return 312.6026f, 6606.8965f, 27.8835f;
 			break;
 		
 		case 34:
@@ -6547,7 +6547,7 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 			break;
 		
 		case 37:
-			return 57.8219f, -1932.121f, 20.4939f;
+			return 57.8219f, -1932.1208f, 20.4939f;
 			break;
 		
 		case 38:
@@ -6557,11 +6557,11 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 		case 39:
 			if (bParam1 == 1)
 			{
-				return 2673.662f, 2793.702f, 31.8124f;
+				return 2673.6624f, 2793.7021f, 31.8124f;
 			}
 			else
 			{
-				return 2676.045f, 2793.249f, 39.5934f;
+				return 2676.0454f, 2793.2493f, 39.5934f;
 			}
 			break;
 		
@@ -6572,11 +6572,11 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 		case 41:
 			if (bParam1 == 1)
 			{
-				return -1641.139f, -1032.815f, 4.63165f;
+				return -1641.139f, -1032.8152f, 4.63165f;
 			}
 			else
 			{
-				return -1640.546f, -1034.129f, 4.6074f;
+				return -1640.5464f, -1034.1287f, 4.6074f;
 			}
 			break;
 		
@@ -6592,13 +6592,13 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 			break;
 		
 		case 43:
-			return -1276.986f, -2451.886f, 72.0481f;
+			return -1276.9862f, -2451.8862f, 72.0481f;
 			break;
 		
 		case 44:
 			if (bParam1 == 1)
 			{
-				return -403.5827f, 1056.212f, 322.8414f;
+				return -403.58267f, 1056.2117f, 322.84143f;
 			}
 			else
 			{
@@ -6607,7 +6607,7 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 			break;
 		
 		case 45:
-			return 2728.987f, 1576.382f, 65.5818f;
+			return 2728.9866f, 1576.3821f, 65.5818f;
 			break;
 		
 		case 46:
@@ -6622,7 +6622,7 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 			break;
 		
 		case 47:
-			return 2092.225f, 2492.302f, 89.4046f;
+			return 2092.2253f, 2492.3015f, 89.4046f;
 			break;
 		
 		case 48:
@@ -6632,7 +6632,7 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 		case 49:
 			if (bParam1 == 1)
 			{
-				return -405.5299f, 323.4063f, 107.7227f;
+				return -405.5299f, 323.40634f, 107.72269f;
 			}
 			else
 			{
@@ -6645,22 +6645,22 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 			break;
 		
 		case 51:
-			return -1042.645f, 879.7763f, 160.2144f;
+			return -1042.6445f, 879.7763f, 160.2144f;
 			break;
 		
 		case 52:
 			if (bParam1 == 1)
 			{
-				return -1081.229f, 678.9454f, 141.8056f;
+				return -1081.2289f, 678.94543f, 141.80563f;
 			}
 			else
 			{
-				return -1078.35f, 682.2944f, 144.904f;
+				return -1078.3499f, 682.2944f, 144.904f;
 			}
 			break;
 		
 		case 53:
-			return -402.0679f, 1355.062f, 329.8384f;
+			return -402.0679f, 1355.0619f, 329.8384f;
 			break;
 		
 		case 54:
@@ -6698,7 +6698,7 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 			break;
 		
 		case 59:
-			return -1755.011f, 184.3929f, 63.3711f;
+			return -1755.0115f, 184.3929f, 63.3711f;
 			break;
 		
 		case 60:
@@ -6708,12 +6708,12 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 			}
 			else
 			{
-				return 786.0139f, 2164.951f, 52.0981f;
+				return 786.0139f, 2164.9507f, 52.0981f;
 			}
 			break;
 		
 		case 61:
-			return 1707.228f, 4920.156f, 41.0637f;
+			return 1707.2278f, 4920.156f, 41.0637f;
 			break;
 		
 		case 62:
@@ -6746,12 +6746,12 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 			}
 			else
 			{
-				return -665.4316f, -2002.04f, 7.5968f;
+				return -665.4316f, -2002.0398f, 7.5968f;
 			}
 			break;
 		
 		case 67:
-			return 1442.905f, -1479.759f, 62.2245f;
+			return 1442.9049f, -1479.7588f, 62.2245f;
 			break;
 		
 		case 68:
@@ -6776,7 +6776,7 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 		case 71:
 			if (bParam1 == 1)
 			{
-				return 92.14449f, 6360.182f, 30.37612f;
+				return 92.14449f, 6360.1816f, 30.37612f;
 			}
 			else
 			{
@@ -6785,7 +6785,7 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 			break;
 		
 		case 72:
-			return -2231.514f, 3477.792f, 29.3291f;
+			return -2231.5142f, 3477.7915f, 29.3291f;
 			break;
 		
 		case 73:
@@ -6821,7 +6821,7 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 			}
 			else
 			{
-				return -1165.883f, -2051.026f, 13.2268f;
+				return -1165.8832f, -2051.0264f, 13.2268f;
 			}
 			break;
 		
@@ -6862,7 +6862,7 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 			}
 			else
 			{
-				return 1535.829f, 3798.217f, 33.4563f;
+				return 1535.8291f, 3798.2166f, 33.4563f;
 			}
 			break;
 		
@@ -6879,7 +6879,7 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 			break;
 		
 		case 85:
-			return 818.9215f, -3188.167f, 4.9007f;
+			return 818.9215f, -3188.1667f, 4.9007f;
 			break;
 		
 		case 86:
@@ -6926,12 +6926,12 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 			}
 			else
 			{
-				return 2746.554f, 3463.525f, 54.7144f;
+				return 2746.5537f, 3463.5254f, 54.7144f;
 			}
 			break;
 		
 		case 91:
-			return 1898.896f, 4921.975f, 47.8088f;
+			return 1898.8965f, 4921.9746f, 47.8088f;
 			break;
 		
 		case 92:
@@ -6941,7 +6941,7 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 			}
 			else
 			{
-				return -315.9772f, 6307.385f, 31.4906f;
+				return -315.9772f, 6307.3853f, 31.4906f;
 			}
 			break;
 		
@@ -6950,7 +6950,7 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 			break;
 		
 		case 94:
-			return -281.1712f, 2528.012f, 73.6376f;
+			return -281.1712f, 2528.0125f, 73.6376f;
 			break;
 		
 		case 95:
@@ -6960,7 +6960,7 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 			}
 			else
 			{
-				return 68.453f, 3758.967f, 38.7395f;
+				return 68.453f, 3758.9668f, 38.7395f;
 			}
 			break;
 		
@@ -6975,7 +6975,7 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 			}
 			else
 			{
-				return -1145.283f, 4940.286f, 221.3038f;
+				return -1145.2826f, 4940.2856f, 221.3038f;
 			}
 			break;
 		
@@ -6986,11 +6986,11 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 		case 99:
 			if (bParam1)
 			{
-				return 1353.152f, 4377.223f, 43.3416f;
+				return 1353.1516f, 4377.2227f, 43.3416f;
 			}
 			else
 			{
-				return 1357.209f, 4388.445f, 43.872f;
+				return 1357.2092f, 4388.445f, 43.872f;
 			}
 			break;
 		
@@ -6999,7 +6999,7 @@ Vector3 func_95(int iParam0, bool bParam1)//Position - 0x7AF4
 			break;
 		
 		case 101:
-			return 2492.69f, 4963.014f, 43.6478f;
+			return 2492.6902f, 4963.014f, 43.6478f;
 			break;
 	}
 	return 0f, 0f, 0f;
@@ -8448,23 +8448,23 @@ void func_154()//Position - 0xAA74
 		Local_329.f_4 = 6;
 		Local_329 = { 18.1531f, 535.2469f, 169.6324f };
 		Local_329.f_3 = 204.8112f;
-		Local_329.f_5 = { 19.52771f, 537.436f, 170.143f };
-		Local_329.f_8 = 151.3064f;
-		Local_347 = { 19.45963f, 535.7817f, 169.6277f };
+		Local_329.f_5 = { 19.527712f, 537.43604f, 170.14302f };
+		Local_329.f_8 = 151.30635f;
+		Local_347 = { 19.45963f, 535.78174f, 169.6277f };
 		Local_358[0 /*3*/] = { 17.36033f, 528.8973f, 169.6277f };
-		Local_358[1 /*3*/] = { 19.46877f, 529.1785f, 169.6277f };
-		Local_358[2 /*3*/] = { 20.82979f, 531.5168f, 169.6277f };
+		Local_358[1 /*3*/] = { 19.46877f, 529.17847f, 169.6277f };
+		Local_358[2 /*3*/] = { 20.82979f, 531.51685f, 169.6277f };
 		Local_358[3 /*3*/] = { 22.83555f, 532.3281f, 169.6277f };
 		Local_358[4 /*3*/] = { 20.79285f, 535.001f, 169.6277f };
-		Local_358[5 /*3*/] = { 18.05178f, 535.6321f, 169.6277f };
-		Local_358[6 /*3*/] = { 18.92047f, 534.0938f, 169.6277f };
+		Local_358[5 /*3*/] = { 18.05178f, 535.63214f, 169.6277f };
+		Local_358[6 /*3*/] = { 18.92047f, 534.09375f, 169.6277f };
 		Local_358[7 /*3*/] = { 17.51333f, 533.4775f, 169.6277f };
 		func_161(&uLocal_96);
 		func_160(&uLocal_96, 12.41124f, 535.5469f, 169.6277f);
 		func_160(&uLocal_96, 19.04497f, 538.5729f, 169.6277f);
 		func_160(&uLocal_96, 25.00015f, 534.4414f, 169.6277f);
-		func_160(&uLocal_96, 28.0998f, 527.7639f, 169.4277f);
-		func_160(&uLocal_96, 17.75896f, 523.3129f, 169.2277f);
+		func_160(&uLocal_96, 28.0998f, 527.76385f, 169.42769f);
+		func_160(&uLocal_96, 17.75896f, 523.3129f, 169.22769f);
 		func_159(&uLocal_96);
 	}
 	else
@@ -8474,20 +8474,20 @@ void func_154()//Position - 0xAA74
 		Local_329.f_3 = 157.9037f;
 		Local_329.f_5 = { -9.73f, -1421.55f, 30.1f };
 		Local_329.f_8 = 148.26f;
-		Local_347 = { -10.6379f, -1424.561f, 29.67365f };
-		Local_358[0 /*3*/] = { -10.03643f, -1423.529f, 29.67602f };
-		Local_358[1 /*3*/] = { -10.78779f, -1425.306f, 29.70937f };
+		Local_347 = { -10.6379f, -1424.5605f, 29.67365f };
+		Local_358[0 /*3*/] = { -10.03643f, -1423.5287f, 29.67602f };
+		Local_358[1 /*3*/] = { -10.78779f, -1425.3057f, 29.70937f };
 		Local_358[2 /*3*/] = { -12.7048f, -1424.748f, 29.72222f };
-		Local_358[3 /*3*/] = { -12.47465f, -1422.485f, 29.74699f };
-		Local_358[4 /*3*/] = { -14.26666f, -1424.855f, 29.71964f };
-		Local_358[5 /*3*/] = { -14.55816f, -1423.048f, 29.78372f };
-		Local_358[6 /*3*/] = { -16.13293f, -1424.489f, 29.76139f };
+		Local_358[3 /*3*/] = { -12.47465f, -1422.4846f, 29.74699f };
+		Local_358[4 /*3*/] = { -14.26666f, -1424.8552f, 29.71964f };
+		Local_358[5 /*3*/] = { -14.55816f, -1423.0481f, 29.78372f };
+		Local_358[6 /*3*/] = { -16.13293f, -1424.4891f, 29.76139f };
 		Local_358[7 /*3*/] = { -16.25662f, -1423.325f, 29.81294f };
 		func_161(&uLocal_96);
-		func_160(&uLocal_96, -7.26821f, -1427.065f, 29.67468f);
-		func_160(&uLocal_96, -7.39631f, -1418.851f, 29.5858f);
-		func_160(&uLocal_96, -14.27201f, -1421.59f, 29.76819f);
-		func_160(&uLocal_96, -22.85347f, -1423.173f, 29.74042f);
+		func_160(&uLocal_96, -7.26821f, -1427.0648f, 29.67468f);
+		func_160(&uLocal_96, -7.39631f, -1418.8508f, 29.5858f);
+		func_160(&uLocal_96, -14.27201f, -1421.5902f, 29.76819f);
+		func_160(&uLocal_96, -22.85347f, -1423.1727f, 29.74042f);
 		func_160(&uLocal_96, -22.77974f, -1427.168f, 29.65953f);
 		func_159(&uLocal_96);
 	}
@@ -8541,8 +8541,8 @@ void func_154()//Position - 0xAA74
 	iLocal_83 = PATHFIND::ADD_NAVMESH_BLOCKING_OBJECT(24f, 528f, 168f, 5f, 5f, 4f, func_155(113f), false, 7);
 	Local_84[0 /*3*/] = { 444.1685f, 5569.016f, 780.1895f };
 	Local_84[1 /*3*/] = { 443.8968f, 5574.931f, 780.1895f };
-	Local_84[2 /*3*/] = { -739.1624f, 5596.784f, 40.6594f };
-	Local_84[3 /*3*/] = { -738.8002f, 5593.269f, 40.6594f };
+	Local_84[2 /*3*/] = { -739.1624f, 5596.7837f, 40.6594f };
+	Local_84[3 /*3*/] = { -738.8002f, 5593.2686f, 40.6594f };
 	fLocal_85[0] = 270f;
 	fLocal_85[1] = 270f;
 	fLocal_85[2] = 95f;
@@ -8568,7 +8568,7 @@ void func_154()//Position - 0xAA74
 
 float func_155(float fParam0)//Position - 0xAF7A
 {
-	return (fParam0 * 0.01745329f);
+	return (fParam0 * 0.017453292f);
 }
 
 void func_156()//Position - 0xAF8A

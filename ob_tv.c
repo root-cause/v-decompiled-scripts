@@ -1848,10 +1848,10 @@ void func_59()//Position - 0x1F88
 	func_61();
 	if (ENTITY::GET_ENTITY_MODEL(iLocal_35) == joaat("prop_tv_03"))
 	{
-		if (SYSTEM::VDIST(Local_31, -9.541955f, -1440.917f, 31.34692f) < 3f)
+		if (SYSTEM::VDIST(Local_31, -9.541955f, -1440.9166f, 31.346916f) < 3f)
 		{
 			iLocal_41 = 0;
-			Local_63 = { -9.8135f, -1440.913f, 31.3654f };
+			Local_63 = { -9.8135f, -1440.9128f, 31.3654f };
 			Local_64 = { 0f, 0f, -134.3211f };
 			Local_68 = { -9.3078f, -1440.931f, 30.1015f };
 			StringCopy(&cLocal_44, "SE_FRANKLIN_AUNT_HOUSE_RADIO_01", 64);
@@ -1860,12 +1860,12 @@ void func_59()//Position - 0x1F88
 	}
 	else if (ENTITY::GET_ENTITY_MODEL(iLocal_35) == joaat("prop_trev_tv_01"))
 	{
-		if (SYSTEM::VDIST(Local_31, 1978.425f, 3819.657f, 34.26763f) < 3f)
+		if (SYSTEM::VDIST(Local_31, 1978.425f, 3819.6572f, 34.26763f) < 3f)
 		{
 			iLocal_41 = 2;
-			Local_63 = { 1978.23f, 3819.65f, 34.2724f };
+			Local_63 = { 1978.2303f, 3819.6504f, 34.2724f };
 			Local_64 = { 0f, 0f, -105.15f };
-			Local_68 = { 1978.33f, 3819.717f, 32.4501f };
+			Local_68 = { 1978.3303f, 3819.717f, 32.4501f };
 			func_60();
 			StringCopy(&cLocal_44, "SE_TREVOR_TRAILER_RADIO_01", 64);
 			StringCopy(&cLocal_53, "TV_TREVORS_TRAILER", 64);
@@ -1885,19 +1885,19 @@ void func_59()//Position - 0x1F88
 	}
 	else if (ENTITY::GET_ENTITY_MODEL(iLocal_35) == joaat("prop_tv_flat_02"))
 	{
-		if (SYSTEM::VDIST(Local_31, -1160.695f, -1520.745f, 10.49168f) < 3f)
+		if (SYSTEM::VDIST(Local_31, -1160.6947f, -1520.7448f, 10.49168f) < 3f)
 		{
 			iLocal_41 = 3;
-			Local_63 = { -1160.502f, -1520.76f, 10.7393f };
+			Local_63 = { -1160.5024f, -1520.7598f, 10.7393f };
 			Local_64 = { 0f, 0f, 60.061f };
-			Local_68 = { -1160.143f, -1520.495f, 9.6555f };
+			Local_68 = { -1160.143f, -1520.4946f, 9.6555f };
 			StringCopy(&cLocal_44, "TREVOR_APARTMENT_RADIO", 64);
 			StringCopy(&cLocal_53, "TV_FLOYDS_APARTMENT", 64);
 		}
 	}
 	else if (ENTITY::GET_ENTITY_MODEL(iLocal_35) == joaat("v_ilev_mm_screen2") || ENTITY::GET_ENTITY_MODEL(iLocal_35) == joaat("v_ilev_mm_scre_off"))
 	{
-		if (SYSTEM::VDIST(Local_31, -802.2527f, 173.0374f, 74.35708f) < 3f)
+		if (SYSTEM::VDIST(Local_31, -802.25275f, 173.03743f, 74.35708f) < 3f)
 		{
 			iLocal_41 = 4;
 			Local_63 = { -802.8972f, 172.537f, 74.5801f };

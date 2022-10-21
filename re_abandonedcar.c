@@ -316,7 +316,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_46 = HUD::GET_STANDARD_BLIP_ENUM_ID();
 	iLocal_47 = HUD::GET_WAYPOINT_BLIP_ENUM_ID();
 	Local_261 = { 1435.77f, 2983.11f, 40.77f };
-	Local_262 = { 2162.552f, 2122.646f, 124.7956f };
+	Local_262 = { 2162.5518f, 2122.646f, 124.7956f };
 	Local_54 = { ScriptParam_264.f_1[0 /*3*/] };
 	func_321();
 	if (CLOCK::GET_CLOCK_HOURS() > 7 && CLOCK::GET_CLOCK_HOURS() < 19)
@@ -652,7 +652,7 @@ void func_4()//Position - 0x4E0
 					SYSTEM::WAIT(0);
 				}
 				VEHICLE::DELETE_ALL_TRAINS();
-				iLocal_237 = VEHICLE::CREATE_MISSION_TRAIN(0, 1063.595f, 3227.571f, 39.3899f, true, 0, 0);
+				iLocal_237 = VEHICLE::CREATE_MISSION_TRAIN(0, 1063.5955f, 3227.5706f, 39.3899f, true, 0, 0);
 				iVar0 = PED::CREATE_PED_INSIDE_VEHICLE(iLocal_237, 26, iLocal_240, -1, true, true);
 				iVar0 = iVar0;
 				if (!iLocal_248)
@@ -32382,7 +32382,7 @@ void func_223()//Position - 0x22690
 	{
 		iLocal_240 = joaat("A_M_M_Hillbilly_01");
 		iLocal_241 = joaat("surfer");
-		Local_59 = { 1430.073f, 2976.399f, 39.7694f };
+		Local_59 = { 1430.0726f, 2976.3992f, 39.7694f };
 		fLocal_60 = 131.558f;
 		Local_62 = { 18f, 18f, 10f };
 		iLocal_255 = 170;
@@ -32394,8 +32394,8 @@ void func_223()//Position - 0x22690
 	{
 		iLocal_240 = joaat("A_M_Y_ACult_01");
 		iLocal_241 = joaat("journey");
-		Local_55 = { 2162.552f, 2122.646f, 124.7956f };
-		Local_59 = { 2162.552f, 2122.646f, 124.7956f };
+		Local_55 = { 2162.5518f, 2122.646f, 124.7956f };
+		Local_59 = { 2162.5518f, 2122.646f, 124.7956f };
 		fLocal_60 = 218.6214f;
 		Local_62 = { 20f, 20f, 20f };
 		iLocal_255 = 70;
@@ -37418,7 +37418,7 @@ int func_295(struct<3> Param0, int iParam1, bool bParam2, bool bParam3, bool bPa
 		}
 		if (INTERIOR::IS_VALID_INTERIOR(INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID())))
 		{
-			if ((INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(377.153f, -717.567f, 10.0536f) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(320.9934f, 265.2515f, 82.1221f)) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(-1425.564f, -244.3f, 15.8053f))
+			if ((INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(377.153f, -717.567f, 10.0536f) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(320.9934f, 265.2515f, 82.1221f)) || INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(-1425.5645f, -244.3f, 15.8053f))
 			{
 				return 0;
 			}
@@ -37435,7 +37435,7 @@ int func_295(struct<3> Param0, int iParam1, bool bParam2, bool bParam3, bool bPa
 		{
 			if (iParam1 != 30)
 			{
-				if (SYSTEM::VDIST2(Var1, -61.2745f, -1100.468f, 25.3752f) < 176400f)
+				if (SYSTEM::VDIST2(Var1, -61.2745f, -1100.4675f, 25.3752f) < 176400f)
 				{
 					return 0;
 				}

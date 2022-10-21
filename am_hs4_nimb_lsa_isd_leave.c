@@ -47247,7 +47247,7 @@ void func_289()//Position - 0x33132
 	NETWORK::NETWORK_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(32, false, -1);
 	func_297(&uLocal_93, joaat("nimbus"), "Plane_1");
 	func_54(&uLocal_93, 1);
-	func_295(&uLocal_93, -1640.596f, -3127.113f, 14.5828f, -2.3352f, 0.0001f, 145.7214f, "HS4_NIMB_LSA_ISD", 0, 1, 1023, 0);
+	func_295(&uLocal_93, -1640.5961f, -3127.1133f, 14.5828f, -2.3352f, 0.0001f, 145.7214f, "HS4_NIMB_LSA_ISD", 0, 1, 1023, 0);
 	GRAPHICS::SET_TIMECYCLE_MODIFIER("H4_Hanger_for_CU");
 	GRAPHICS::SET_TIMECYCLE_MODIFIER_STRENGTH(1f);
 	if (func_58(PLAYER::PLAYER_PED_ID()))

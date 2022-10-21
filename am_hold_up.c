@@ -5284,122 +5284,122 @@ void func_162(int iParam0, var uParam1, var uParam2, float fParam3)//Position - 
 {
 	if (iParam0 == 0)
 	{
-		*uParam1 = { 1390.033f, 3605.529f, 33.98091f };
-		*uParam2 = { 1394.412f, 3607.156f, 36.38288f };
+		*uParam1 = { 1390.0328f, 3605.529f, 33.98091f };
+		*uParam2 = { 1394.4117f, 3607.156f, 36.382877f };
 		*fParam3 = 1.25f;
 	}
 	else if (iParam0 == 1)
 	{
-		*uParam1 = { -3041.675f, 583.5931f, 6.908931f };
-		*uParam2 = { -3037.284f, 585.0375f, 9.521532f };
+		*uParam1 = { -3041.675f, 583.59314f, 6.908931f };
+		*uParam2 = { -3037.2837f, 585.03754f, 9.521532f };
 		*fParam3 = 1.25f;
 	}
 	else if (iParam0 == 2)
 	{
-		*uParam1 = { -3245.184f, 1000.124f, 11.83071f };
-		*uParam2 = { -3240.504f, 999.7783f, 14.46645f };
+		*uParam1 = { -3245.184f, 1000.1239f, 11.830711f };
+		*uParam2 = { -3240.5044f, 999.77826f, 14.466454f };
 		*fParam3 = 1.25f;
 	}
 	else if (iParam0 == 3)
 	{
-		*uParam1 = { 549.5332f, 2668.464f, 41.15651f };
-		*uParam2 = { 548.9114f, 2673.108f, 43.7766f };
+		*uParam1 = { 549.5332f, 2668.4644f, 41.156513f };
+		*uParam2 = { 548.9114f, 2673.1077f, 43.776596f };
 		*fParam3 = 1.25f;
 	}
 	else if (iParam0 == 4)
 	{
-		*uParam1 = { 2554.316f, 380.8569f, 107.623f };
-		*uParam2 = { 2558.98f, 380.6908f, 110.2684f };
+		*uParam1 = { 2554.3164f, 380.8569f, 107.622986f };
+		*uParam2 = { 2558.9802f, 380.69083f, 110.26842f };
 		*fParam3 = 1.25f;
 	}
 	else if (iParam0 == 5)
 	{
-		*uParam1 = { 2675.476f, 3280.807f, 54.24115f };
-		*uParam2 = { 2679.577f, 3278.526f, 56.8955f };
+		*uParam1 = { 2675.476f, 3280.8074f, 54.24115f };
+		*uParam2 = { 2679.5774f, 3278.5256f, 56.895496f };
 		*fParam3 = 1.25f;
 	}
 	else if (iParam0 == 6)
 	{
-		*uParam1 = { 1729.145f, 6417.834f, 34.03724f };
-		*uParam2 = { 1727.07f, 6413.635f, 36.66442f };
+		*uParam1 = { 1729.1453f, 6417.8345f, 34.037243f };
+		*uParam2 = { 1727.0696f, 6413.635f, 36.664417f };
 		*fParam3 = 1.25f;
 	}
 	else if (iParam0 == 7)
 	{
-		*uParam1 = { 1958.61f, 3742.512f, 31.34376f };
-		*uParam2 = { 1960.958f, 3738.465f, 33.98634f };
+		*uParam1 = { 1958.6097f, 3742.5125f, 31.343761f };
+		*uParam2 = { 1960.9578f, 3738.465f, 33.98634f };
 		*fParam3 = 1.25f;
 	}
 	else if (iParam0 == 8)
 	{
-		*uParam1 = { 24.51093f, -1344.449f, 28.49703f };
-		*uParam2 = { 24.52224f, -1349.084f, 31.14272f };
+		*uParam1 = { 24.510925f, -1344.449f, 28.497032f };
+		*uParam2 = { 24.52224f, -1349.0839f, 31.142721f };
 		*fParam3 = 1.25f;
 	}
 	else if (iParam0 == 9)
 	{
-		*uParam1 = { 373.296f, 329.2379f, 102.5664f };
-		*uParam2 = { 372.1347f, 324.6985f, 105.214f };
+		*uParam1 = { 373.29602f, 329.23785f, 102.566414f };
+		*uParam2 = { 372.13467f, 324.69855f, 105.21404f };
 		*fParam3 = 1.25f;
 	}
 	else if (iParam0 == 10)
 	{
-		*uParam1 = { 1168.183f, 2711.203f, 37.06316f };
-		*uParam2 = { 1163.144f, 2711.246f, 40.16688f };
+		*uParam1 = { 1168.1833f, 2711.2026f, 37.063164f };
+		*uParam2 = { 1163.1436f, 2711.2463f, 40.166878f };
 		*fParam3 = 2.5f;
 	}
 	else if (iParam0 == 11)
 	{
-		*uParam1 = { -2966.142f, 388.6418f, 14.04331f };
-		*uParam2 = { -2965.812f, 393.6473f, 17.17248f };
+		*uParam1 = { -2966.1418f, 388.64178f, 14.043308f };
+		*uParam2 = { -2965.8118f, 393.64728f, 17.172482f };
 		*fParam3 = 2.5f;
 	}
 	else if (iParam0 == 12)
 	{
-		*uParam1 = { -1223.599f, -909.8984f, 11.32635f };
-		*uParam2 = { -1219.443f, -907.0756f, 14.45929f };
+		*uParam1 = { -1223.5989f, -909.89844f, 11.326351f };
+		*uParam2 = { -1219.443f, -907.07556f, 14.459287f };
 		*fParam3 = 2.5f;
 	}
 	else if (iParam0 == 13)
 	{
-		*uParam1 = { 1133.524f, -980.3087f, 45.41582f };
-		*uParam2 = { 1134.22f, -985.284f, 48.53235f };
+		*uParam1 = { 1133.5243f, -980.30865f, 45.415825f };
+		*uParam2 = { 1134.2202f, -985.284f, 48.532352f };
 		*fParam3 = 2.5f;
 	}
 	else if (iParam0 == 14)
 	{
-		*uParam1 = { -1484.413f, -379.3236f, 39.16341f };
-		*uParam2 = { -1487.954f, -375.7666f, 42.28885f };
+		*uParam1 = { -1484.4132f, -379.32364f, 39.16341f };
+		*uParam2 = { -1487.9541f, -375.76657f, 42.28885f };
 		*fParam3 = 2.5f;
 	}
 	else if (iParam0 == 15)
 	{
-		*uParam1 = { 1699.447f, 4921.57f, 41.06366f };
-		*uParam2 = { 1695.64f, 4924.245f, 44.22165f };
+		*uParam1 = { 1699.4468f, 4921.5703f, 41.063656f };
+		*uParam2 = { 1695.6401f, 4924.2446f, 44.22165f };
 		*fParam3 = 2.25f;
 	}
 	else if (iParam0 == 16)
 	{
 		*uParam1 = { -705.7869f, -911.6997f, 18.2156f };
-		*uParam2 = { -705.7026f, -916.374f, 21.33545f };
+		*uParam2 = { -705.70264f, -916.37396f, 21.335445f };
 		*fParam3 = 2.25f;
 	}
 	else if (iParam0 == 17)
 	{
-		*uParam1 = { -45.26995f, -1756.669f, 28.42101f };
-		*uParam2 = { -48.26036f, -1760.285f, 31.56342f };
+		*uParam1 = { -45.269947f, -1756.6688f, 28.421005f };
+		*uParam2 = { -48.260365f, -1760.2849f, 31.563421f };
 		*fParam3 = 2.25f;
 	}
 	else if (iParam0 == 18)
 	{
-		*uParam1 = { 1164.697f, -320.7587f, 68.2051f };
-		*uParam2 = { 1165.463f, -325.0899f, 71.37893f };
+		*uParam1 = { 1164.6973f, -320.7587f, 68.2051f };
+		*uParam2 = { 1165.463f, -325.08994f, 71.37893f };
 		*fParam3 = 2.25f;
 	}
 	else if (iParam0 == 19)
 	{
-		*uParam1 = { -1821.205f, 795.8699f, 137.0893f };
-		*uParam2 = { -1818.041f, 792.3982f, 140.1836f };
+		*uParam1 = { -1821.2046f, 795.8699f, 137.08931f };
+		*uParam2 = { -1818.0406f, 792.3982f, 140.18362f };
 		*fParam3 = 2.25f;
 	}
 }
@@ -15790,11 +15790,11 @@ void func_384(bool bParam0, bool bParam1)//Position - 0x14F57
 	fVar2 = GRAPHICS::GET_ASPECT_RATIO(false);
 	if (bParam0)
 	{
-		Global_23149 = (0.225f * (1.777778f / fVar2));
+		Global_23149 = (0.225f * (1.7777778f / fVar2));
 	}
 	else if (fVar2 < 1.77777f)
 	{
-		Global_23149 = (0.225f * (1.777778f / fVar2));
+		Global_23149 = (0.225f * (1.7777778f / fVar2));
 	}
 	else
 	{
@@ -15819,7 +15819,7 @@ int func_386(int iParam0, var uParam1, var uParam2, var uParam3)//Position - 0x1
 	switch (iParam0)
 	{
 		case 0:
-			*uParam1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(-706.6382f, -913.6887f, 19.21f, -89.999f, 2.40015f, -7.75244f, 1.0825f) };
+			*uParam1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(-706.6382f, -913.68866f, 19.21f, -89.999f, 2.40015f, -7.75244f, 1.0825f) };
 			*uParam2 = -4.2069f;
 			uParam2->f_1 = -0.027f;
 			uParam2->f_2 = (-89.999f + 22.8175f);
@@ -15843,7 +15843,7 @@ int func_386(int iParam0, var uParam1, var uParam2, var uParam3)//Position - 0x1
 			break;
 		
 		case 3:
-			*uParam1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(1698.307f, 4923.371f, 42.06f, 145f, 2.40015f, -7.75244f, 1.0825f) };
+			*uParam1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(1698.3065f, 4923.3706f, 42.06f, 145f, 2.40015f, -7.75244f, 1.0825f) };
 			*uParam2 = -4.2069f;
 			uParam2->f_1 = -0.027f;
 			uParam2->f_2 = (145f + 22.8175f);
@@ -15851,7 +15851,7 @@ int func_386(int iParam0, var uParam1, var uParam2, var uParam3)//Position - 0x1
 			break;
 		
 		case 4:
-			*uParam1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(-1820.465f, 793.8166f, 138.09f, -47.53f, 2.40015f, -7.75244f, 1.0825f) };
+			*uParam1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(-1820.4653f, 793.8166f, 138.09f, -47.53f, 2.40015f, -7.75244f, 1.0825f) };
 			*uParam2 = -4.2069f;
 			uParam2->f_1 = -0.027f;
 			uParam2->f_2 = (-47.53f + 22.8175f);
@@ -15859,7 +15859,7 @@ int func_386(int iParam0, var uParam1, var uParam2, var uParam3)//Position - 0x1
 			break;
 		
 		case 5:
-			Var0 = { 1165.958f, 2710.201f, 38.14286f };
+			Var0 = { 1165.9581f, 2710.201f, 38.14286f };
 			fVar1 = -1.15f;
 			*uParam1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var0, fVar1, 3.80296f, -5.391f, 1.213f) };
 			*uParam2 = -9.3866f;
@@ -15869,7 +15869,7 @@ int func_386(int iParam0, var uParam1, var uParam2, var uParam3)//Position - 0x1
 			break;
 		
 		case 6:
-			Var0 = { -2967.027f, 390.9038f, 15.02f };
+			Var0 = { -2967.0269f, 390.9038f, 15.02f };
 			fVar1 = -94.76f;
 			*uParam1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var0, fVar1, 3.80296f, -5.391f, 1.213f) };
 			*uParam2 = -9.3866f;
@@ -15879,7 +15879,7 @@ int func_386(int iParam0, var uParam1, var uParam2, var uParam3)//Position - 0x1
 			break;
 		
 		case 7:
-			Var0 = { -1222.331f, -907.8234f, 12.31f };
+			Var0 = { -1222.3306f, -907.82336f, 12.31f };
 			fVar1 = -147.297f;
 			*uParam1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var0, fVar1, 3.80296f, -5.391f, 1.213f) };
 			*uParam2 = -9.3866f;
@@ -15889,7 +15889,7 @@ int func_386(int iParam0, var uParam1, var uParam2, var uParam3)//Position - 0x1
 			break;
 		
 		case 8:
-			Var0 = { 1134.811f, -982.3615f, 46.4f };
+			Var0 = { 1134.8114f, -982.36145f, 46.4f };
 			fVar1 = 96.68562f;
 			*uParam1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var0, fVar1, 3.80296f, -5.391f, 1.213f) };
 			*uParam2 = -9.3866f;
@@ -15899,7 +15899,7 @@ int func_386(int iParam0, var uParam1, var uParam2, var uParam3)//Position - 0x1
 			break;
 		
 		case 9:
-			Var0 = { -1486.673f, -378.4638f, 40.15f };
+			Var0 = { -1486.6729f, -378.4638f, 40.15f };
 			fVar1 = -46.229f;
 			*uParam1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var0, fVar1, 3.80296f, -5.391f, 1.213f) };
 			*uParam2 = -9.3866f;
@@ -15909,7 +15909,7 @@ int func_386(int iParam0, var uParam1, var uParam2, var uParam3)//Position - 0x1
 			break;
 		
 		case 10:
-			Var0 = { -3244.573f, 1000.658f, 12.83f };
+			Var0 = { -3244.5735f, 1000.6578f, 12.83f };
 			fVar1 = 175.074f;
 			*uParam1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var0, fVar1, 2.97963f, -3.39452f, 0.934498f) };
 			*uParam2 = -8.483f;
@@ -15919,7 +15919,7 @@ int func_386(int iParam0, var uParam1, var uParam2, var uParam3)//Position - 0x1
 			break;
 		
 		case 11:
-			Var0 = { -3041.357f, 584.2665f, 7.9f };
+			Var0 = { -3041.3567f, 584.26654f, 7.9f };
 			fVar1 = -162.241f;
 			*uParam1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var0, fVar1, 2.97963f, -3.39452f, 0.934498f) };
 			*uParam2 = -8.483f;
@@ -15929,7 +15929,7 @@ int func_386(int iParam0, var uParam1, var uParam2, var uParam3)//Position - 0x1
 			break;
 		
 		case 12:
-			Var0 = { 548.9015f, 2668.941f, 42.15f };
+			Var0 = { 548.9015f, 2668.9414f, 42.15f };
 			fVar1 = -82.5f;
 			*uParam1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var0, fVar1, 2.97963f, -3.39452f, 0.934498f) };
 			*uParam2 = -8.483f;
@@ -15939,7 +15939,7 @@ int func_386(int iParam0, var uParam1, var uParam2, var uParam3)//Position - 0x1
 			break;
 		
 		case 13:
-			Var0 = { 2554.875f, 381.3857f, 108.62f };
+			Var0 = { 2554.875f, 381.38574f, 108.62f };
 			fVar1 = 177.716f;
 			*uParam1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var0, fVar1, 2.97963f, -3.39452f, 0.934498f) };
 			*uParam2 = -8.483f;
@@ -15949,7 +15949,7 @@ int func_386(int iParam0, var uParam1, var uParam2, var uParam3)//Position - 0x1
 			break;
 		
 		case 14:
-			Var0 = { 2676.212f, 3280.969f, 55.24f };
+			Var0 = { 2676.2124f, 3280.9695f, 55.24f };
 			fVar1 = 150.87f;
 			*uParam1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var0, fVar1, 2.97963f, -3.39452f, 0.934498f) };
 			*uParam2 = -8.483f;
@@ -15959,7 +15959,7 @@ int func_386(int iParam0, var uParam1, var uParam2, var uParam3)//Position - 0x1
 			break;
 		
 		case 15:
-			Var0 = { 1729.329f, 6417.123f, 35.03f };
+			Var0 = { 1729.3295f, 6417.123f, 35.03f };
 			fVar1 = 63.641f;
 			*uParam1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var0, fVar1, 2.97963f, -3.39452f, 0.934498f) };
 			*uParam2 = -8.483f;
@@ -15969,7 +15969,7 @@ int func_386(int iParam0, var uParam1, var uParam2, var uParam3)//Position - 0x1
 			break;
 		
 		case 16:
-			Var0 = { 1959.323f, 3742.29f, 32.34f };
+			Var0 = { 1959.323f, 3742.2896f, 32.34f };
 			fVar1 = 120f;
 			*uParam1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var0, fVar1, 2.97963f, -3.39452f, 0.934498f) };
 			*uParam2 = -8.483f;
@@ -15979,7 +15979,7 @@ int func_386(int iParam0, var uParam1, var uParam2, var uParam3)//Position - 0x1
 			break;
 		
 		case 17:
-			Var0 = { 24.94562f, -1344.954f, 29.49f };
+			Var0 = { 24.94562f, -1344.9545f, 29.49f };
 			fVar1 = 90f;
 			*uParam1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var0, fVar1, 2.97963f, -3.39452f, 0.934498f) };
 			*uParam2 = -8.483f;
@@ -15999,7 +15999,7 @@ int func_386(int iParam0, var uParam1, var uParam2, var uParam3)//Position - 0x1
 			break;
 		
 		case -2:
-			*uParam1 = { 1390.653f, 3598.966f, 35.6115f };
+			*uParam1 = { 1390.6526f, 3598.9656f, 35.6115f };
 			*uParam2 = { -3.6091f, 0.022f, -8.6461f };
 			*uParam3 = 35f;
 			break;
@@ -16231,9 +16231,9 @@ int func_399(int iParam0, var uParam1, float fParam2, var uParam3, var uParam4, 
 			break;
 		
 		case -2:
-			*uParam3 = { 1390.955f, 3604.379f, 33.98091f };
-			*uParam4 = { 1394.475f, 3605.664f, 35.98091f };
-			*uParam5 = { 1392.551f, 3605.449f, 35.30949f };
+			*uParam3 = { 1390.9547f, 3604.3794f, 33.98091f };
+			*uParam4 = { 1394.4752f, 3605.6636f, 35.98091f };
+			*uParam5 = { 1392.5505f, 3605.449f, 35.30949f };
 			*uParam6 = 0.75f;
 			break;
 	}
@@ -16459,7 +16459,7 @@ int func_410()//Position - 0x1657E
 				Local_95 = { 1393.1f, 3605.89f, (35.2f - 0.2f) };
 				Local_96 = { 0f, 0f, 21.89f };
 				iLocal_90 = func_52(0);
-				Local_92 = { 1394.852f, 3609.509f, 33.9809f };
+				Local_92 = { 1394.852f, 3609.5088f, 33.9809f };
 				fLocal_93 = 116.5329f;
 				iLocal_114 = 1;
 				if (func_412(6, 18))
@@ -16494,7 +16494,7 @@ int func_410()//Position - 0x1657E
 				Local_96 = { 0f, 0f, -160f };
 				Local_95 = { -3041.38f, 584.35f, (8.11f - 0.2f) };
 				iLocal_90 = func_52(0);
-				Local_92 = { -3047.512f, 588.9807f, 6.9089f };
+				Local_92 = { -3047.5117f, 588.9807f, 6.9089f };
 				fLocal_93 = 178.8753f;
 				iLocal_114 = 1;
 				if (func_412(6, 18))
@@ -16529,7 +16529,7 @@ int func_410()//Position - 0x1657E
 				Local_95 = { -3244.56f, 1000.74f, (13.03f - 0.2f) };
 				Local_96 = { 0f, 0f, 175.52f };
 				iLocal_90 = func_52(0);
-				Local_92 = { -3249.114f, 1006.558f, 11.8307f };
+				Local_92 = { -3249.1143f, 1006.5576f, 11.8307f };
 				fLocal_93 = 191.594f;
 				iLocal_114 = 1;
 				if (func_412(6, 18))
@@ -16564,7 +16564,7 @@ int func_410()//Position - 0x1657E
 				Local_96 = { 0f, 0f, -82.38f };
 				Local_95 = { 548.82f, 2668.93f, (42.36f - 0.2f) };
 				iLocal_90 = func_52(0);
-				Local_92 = { 543.0796f, 2663.967f, 41.1565f };
+				Local_92 = { 543.0796f, 2663.9673f, 41.1565f };
 				fLocal_93 = 228.4295f;
 				iLocal_114 = 1;
 				if (func_412(6, 18))
@@ -16634,7 +16634,7 @@ int func_410()//Position - 0x1657E
 				Local_96 = { 0f, 0f, 155f };
 				Local_95 = { 2676.26f, 3281.04f, (55.44f - 0.2f) };
 				iLocal_90 = func_52(0);
-				Local_92 = { 2671.351f, 3283.136f, 54.2411f };
+				Local_92 = { 2671.3508f, 3283.136f, 54.2411f };
 				fLocal_93 = 296.5427f;
 				iLocal_114 = 1;
 				if (func_412(6, 18))
@@ -16704,7 +16704,7 @@ int func_410()//Position - 0x1657E
 				Local_96 = { 0f, 0f, 117f };
 				Local_95 = { 1959.4f, 3742.33f, (32.54f - 0.2f) };
 				iLocal_90 = func_52(0);
-				Local_92 = { 1958.92f, 3746.267f, 31.3438f };
+				Local_92 = { 1958.9199f, 3746.2673f, 31.3438f };
 				fLocal_93 = 73.6245f;
 				iLocal_114 = 1;
 				if (func_412(6, 18))
@@ -16739,7 +16739,7 @@ int func_410()//Position - 0x1657E
 				Local_96 = { 0f, 0f, 92f };
 				Local_95 = { 25.03f, -1344.96f, (29.69f - 0.2f) };
 				iLocal_90 = func_52(0);
-				Local_92 = { 30.5721f, -1339.782f, 28.4939f };
+				Local_92 = { 30.5721f, -1339.7816f, 28.4939f };
 				fLocal_93 = 110.7699f;
 				iLocal_114 = 1;
 				if (func_412(6, 18))
@@ -16809,7 +16809,7 @@ int func_410()//Position - 0x1657E
 				Local_96 = { 0f, 0f, 0f };
 				Local_95 = { 1165.96f, 2710.2f, (38.25f - 0.105f) };
 				iLocal_90 = func_52(0);
-				Local_92 = { 1168.971f, 2719.118f, 36.0632f };
+				Local_92 = { 1168.9711f, 2719.118f, 36.0632f };
 				fLocal_93 = 136.5945f;
 				iLocal_114 = 3;
 				if (func_412(10, 22))
@@ -16879,7 +16879,7 @@ int func_410()//Position - 0x1657E
 				Local_96 = { 0f, 0f, -145f };
 				Local_95 = { -1222.33f, -907.82f, (12.52f - 0.2f) };
 				iLocal_90 = func_52(0);
-				Local_92 = { -1218.283f, -915.7103f, 10.3264f };
+				Local_92 = { -1218.2826f, -915.7103f, 10.3264f };
 				fLocal_93 = 43.8031f;
 				iLocal_114 = 3;
 				if (func_412(10, 22))
@@ -16914,7 +16914,7 @@ int func_410()//Position - 0x1657E
 				Local_96 = { 0f, 0f, 103f };
 				Local_95 = { 1134.81f, -982.36f, (46.6f - 0.2f) };
 				iLocal_90 = func_52(0);
-				Local_92 = { 1130.155f, -979.2816f, 45.4158f };
+				Local_92 = { 1130.1548f, -979.2816f, 45.4158f };
 				fLocal_93 = 269.2587f;
 				iLocal_114 = 3;
 				if (func_412(10, 22))
@@ -16949,7 +16949,7 @@ int func_410()//Position - 0x1657E
 				Local_96 = { 0f, 0f, -41f };
 				Local_95 = { -1486.67f, -378.46f, (40.35f - 0.2f) };
 				iLocal_90 = func_52(0);
-				Local_92 = { -1479.163f, -375.0302f, 38.1633f };
+				Local_92 = { -1479.1631f, -375.0302f, 38.1633f };
 				fLocal_93 = 36.5415f;
 				iLocal_114 = 3;
 				if (func_412(10, 22))
@@ -16984,7 +16984,7 @@ int func_410()//Position - 0x1657E
 				Local_96 = { 0f, 0f, 145f };
 				Local_95 = { (1698.33f - 0.04f), 4923.33f, (42.12f - 0.06f) };
 				iLocal_90 = func_52(0);
-				Local_92 = { 1707.303f, 4918.31f, 41.0636f };
+				Local_92 = { 1707.3031f, 4918.31f, 41.0636f };
 				fLocal_93 = 24.9178f;
 				iLocal_114 = 2;
 				if (func_412(8, 20))
@@ -17054,7 +17054,7 @@ int func_410()//Position - 0x1657E
 				Local_96 = { 0f, 0f, -125f };
 				Local_95 = { -47.23f, -1757.64f, (29.48f - 0.06f) };
 				iLocal_90 = func_52(0);
-				Local_92 = { -40.42f, -1751.423f, 28.421f };
+				Local_92 = { -40.42f, -1751.4232f, 28.421f };
 				fLocal_93 = 145.6553f;
 				iLocal_114 = 2;
 				if (func_412(8, 20))
@@ -17089,7 +17089,7 @@ int func_410()//Position - 0x1657E
 				Local_96 = { 0f, 0f, -74f };
 				Local_95 = { 1164.16f, -322.9f, (69.26f - 0.06f) };
 				iLocal_90 = func_52(0);
-				Local_92 = { 1159.682f, -314.254f, 68.2051f };
+				Local_92 = { 1159.6815f, -314.254f, 68.2051f };
 				fLocal_93 = 232.6337f;
 				iLocal_114 = 2;
 				if (func_412(8, 20))
@@ -17124,7 +17124,7 @@ int func_410()//Position - 0x1657E
 				Local_95 = { -1820.5f, 793.78f, (138.32f - 0.22f) };
 				Local_96 = { 0f, 0f, -47.3f };
 				iLocal_90 = func_52(0);
-				Local_92 = { -1828.907f, 799.6096f, 137.1776f };
+				Local_92 = { -1828.9071f, 799.6096f, 137.1776f };
 				fLocal_93 = 247.1234f;
 				iLocal_114 = 2;
 				if (func_412(8, 20))
@@ -17323,122 +17323,122 @@ void func_414(int iParam0, var uParam1, var uParam2, var uParam3)//Position - 0x
 {
 	if (iParam0 == 0)
 	{
-		*uParam1 = { 1393.091f, 3607.383f, 33.9809f };
-		*uParam2 = { 1391.178f, 3612.516f, (38.3614f - 0.2f) };
+		*uParam1 = { 1393.0907f, 3607.3828f, 33.980896f };
+		*uParam2 = { 1391.1785f, 3612.5159f, (38.3614f - 0.2f) };
 		*uParam3 = 12.5f;
 	}
 	else if (iParam0 == 1)
 	{
-		*uParam1 = { -3045.013f, 585.9666f, (10.35421f - 0.2f) };
-		*uParam2 = { -3048.714f, 584.7961f, 6.948262f };
+		*uParam1 = { -3045.0134f, 585.96655f, (10.354213f - 0.2f) };
+		*uParam2 = { -3048.7139f, 584.79614f, 6.948262f };
 		*uParam3 = 8.25f;
 	}
 	else if (iParam0 == 2)
 	{
-		*uParam1 = { -3247.313f, 1003.657f, (15.27433f - 0.2f) };
-		*uParam2 = { -3251.157f, 1003.984f, 11.83501f };
+		*uParam1 = { -3247.3125f, 1003.6574f, (15.274335f - 0.2f) };
+		*uParam2 = { -3251.1567f, 1003.9843f, 11.835008f };
 		*uParam3 = 8.25f;
 	}
 	else if (iParam0 == 3)
 	{
-		*uParam1 = { 546.5474f, 2665.642f, (44.60108f - 0.2f) };
-		*uParam2 = { 547.054f, 2661.794f, 41.15667f };
+		*uParam1 = { 546.54736f, 2665.6416f, (44.601078f - 0.2f) };
+		*uParam2 = { 547.05396f, 2661.794f, 41.15667f };
 		*uParam3 = 8.25f;
 	}
 	else if (iParam0 == 4)
 	{
-		*uParam1 = { 2552f, 384.2527f, (111.0656f - 0.2f) };
-		*uParam2 = { 2548.145f, 384.4133f, 107.6241f };
+		*uParam1 = { 2552.0005f, 384.25275f, (111.065636f - 0.2f) };
+		*uParam2 = { 2548.1453f, 384.41327f, 107.62407f };
 		*uParam3 = 8.25f;
 	}
 	else if (iParam0 == 5)
 	{
-		*uParam1 = { 2674.946f, 3284.833f, (57.68088f - 0.2f) };
-		*uParam2 = { 2671.569f, 3286.699f, 54.24464f };
+		*uParam1 = { 2674.9463f, 3284.8328f, (57.680878f - 0.2f) };
+		*uParam2 = { 2671.569f, 3286.6987f, 54.244644f };
 		*uParam3 = 8.25f;
 	}
 	else if (iParam0 == 6)
 	{
-		*uParam1 = { 1733.119f, 6418.579f, (37.48002f - 0.2f) };
-		*uParam2 = { 1734.839f, 6422.032f, 34.03751f };
+		*uParam1 = { 1733.1194f, 6418.5786f, (37.48002f - 0.2f) };
+		*uParam2 = { 1734.8386f, 6422.032f, 34.037506f };
 		*uParam3 = 8.25f;
 	}
 	else if (iParam0 == 7)
 	{
-		*uParam1 = { 1960.224f, 3746.258f, (34.7878f - 0.2f) };
-		*uParam2 = { 1958.295f, 3749.599f, 31.34522f };
+		*uParam1 = { 1960.2238f, 3746.258f, (34.7878f - 0.2f) };
+		*uParam2 = { 1958.2946f, 3749.5994f, 31.345217f };
 		*uParam3 = 8.25f;
 	}
 	else if (iParam0 == 8)
 	{
-		*uParam1 = { 27.71382f, -1341.968f, (31.93314f - 0.2f) };
-		*uParam2 = { 27.71049f, -1338.109f, 28.49479f };
+		*uParam1 = { 27.713818f, -1341.9679f, (31.933138f - 0.2f) };
+		*uParam2 = { 27.710491f, -1338.1095f, 28.494787f };
 		*uParam3 = 8.25f;
 	}
 	else if (iParam0 == 9)
 	{
-		*uParam1 = { 377.0183f, 330.808f, (106.0112f - 0.2f) };
-		*uParam2 = { 377.9499f, 334.5523f, 102.567f };
+		*uParam1 = { 377.01828f, 330.808f, (106.01123f - 0.2f) };
+		*uParam2 = { 377.94992f, 334.55228f, 102.56696f };
 		*uParam3 = 8.25f;
 	}
 	else if (iParam0 == 10)
 	{
-		*uParam1 = { 1167.015f, 2711.601f, (40.66147f - 0.2f) };
-		*uParam2 = { 1167.082f, 2720.243f, 36.06501f };
+		*uParam1 = { 1167.0151f, 2711.6013f, (40.661472f - 0.2f) };
+		*uParam2 = { 1167.0822f, 2720.243f, 36.06501f };
 		*uParam3 = 8.25f;
 	}
 	else if (iParam0 == 11)
 	{
-		*uParam1 = { -2965.705f, 389.6696f, (17.64162f - 0.2f) };
-		*uParam2 = { -2957.095f, 389.139f, 13.04323f };
+		*uParam1 = { -2965.7046f, 389.66962f, (17.641619f - 0.2f) };
+		*uParam2 = { -2957.095f, 389.13898f, 13.043233f };
 		*uParam3 = 8.75f;
 	}
 	else if (iParam0 == 12)
 	{
-		*uParam1 = { -1222.402f, -909.5575f, (14.92466f - 0.2f) };
-		*uParam2 = { -1217.682f, -916.7974f, 10.33735f };
+		*uParam1 = { -1222.4021f, -909.5575f, (14.924662f - 0.2f) };
+		*uParam2 = { -1217.6823f, -916.79736f, 10.337352f };
 		*uParam3 = 8.75f;
 	}
 	else if (iParam0 == 13)
 	{
-		*uParam1 = { 1133.284f, -981.473f, (49.01414f - 0.2f) };
+		*uParam1 = { 1133.2837f, -981.47296f, (49.014137f - 0.2f) };
 		*uParam2 = { 1124.708f, -982.6027f, 44.42008f };
 		*uParam3 = 8.75f;
 	}
 	else if (iParam0 == 14)
 	{
-		*uParam1 = { -1484.883f, -378.2694f, (42.76172f - 0.2f) };
-		*uParam2 = { -1478.771f, -372.1664f, 38.16948f };
+		*uParam1 = { -1484.8833f, -378.26944f, (42.76172f - 0.2f) };
+		*uParam2 = { -1478.7708f, -372.16638f, 38.169476f };
 		*uParam3 = 8.75f;
 	}
 	else if (iParam0 == 15)
 	{
-		*uParam1 = { 1704.556f, 4921.806f, (44.02687f - 0.2f) };
-		*uParam2 = { 1708.285f, 4919.196f, 41.06359f };
+		*uParam1 = { 1704.5562f, 4921.8057f, (44.026867f - 0.2f) };
+		*uParam2 = { 1708.2848f, 4919.1963f, 41.06359f };
 		*uParam3 = 4f;
 	}
 	else if (iParam0 == 16)
 	{
-		*uParam1 = { -709.019f, -907.7159f, (21.17918f - 0.2f) };
-		*uParam2 = { -709.0177f, -903.1516f, 18.21618f };
+		*uParam1 = { -709.019f, -907.71594f, (21.179176f - 0.2f) };
+		*uParam2 = { -709.0177f, -903.15155f, 18.216183f };
 		*uParam3 = 4f;
 	}
 	else if (iParam0 == 17)
 	{
-		*uParam1 = { -45.16617f, -1751.578f, (31.37973f - 0.2f) };
-		*uParam2 = { -42.22961f, -1748.09f, 28.42099f };
+		*uParam1 = { -45.16617f, -1751.578f, (31.379726f - 0.2f) };
+		*uParam2 = { -42.22961f, -1748.0898f, 28.420994f };
 		*uParam3 = 4f;
 	}
 	else if (iParam0 == 18)
 	{
-		*uParam1 = { 1160.825f, -317.4214f, (71.16085f - 0.2f) };
-		*uParam2 = { 1160.033f, -312.932f, 68.20509f };
+		*uParam1 = { 1160.825f, -317.42145f, (71.16085f - 0.2f) };
+		*uParam2 = { 1160.0327f, -312.93204f, 68.205086f };
 		*uParam3 = 4f;
 	}
 	else if (iParam0 == 19)
 	{
-		*uParam1 = { -1826.218f, 796.6393f, (140.1334f - 0.2f) };
-		*uParam2 = { -1829.301f, 799.9996f, 137.18f };
+		*uParam1 = { -1826.2177f, 796.6393f, (140.13344f - 0.2f) };
+		*uParam2 = { -1829.3009f, 799.99963f, 137.18004f };
 		*uParam3 = 4f;
 	}
 }
@@ -17447,122 +17447,122 @@ void func_415(int iParam0, var uParam1, var uParam2, var uParam3)//Position - 0x
 {
 	if (iParam0 == 0)
 	{
-		*uParam1 = { 1395.548f, 3600.575f, 33.98914f };
-		*uParam2 = { 1392.08f, 3609.983f, (37.33543f - 0.2f) };
+		*uParam1 = { 1395.5479f, 3600.5752f, 33.98914f };
+		*uParam2 = { 1392.0798f, 3609.9834f, (37.335434f - 0.2f) };
 		*uParam3 = 12.25f;
 	}
 	if (iParam0 == 1)
 	{
 		*uParam1 = { -3038.657f, 589.5176f, 6.904751f };
-		*uParam2 = { -3045.476f, 587.4066f, (11.31222f - 0.2f) };
+		*uParam2 = { -3045.4758f, 587.4066f, (11.312223f - 0.2f) };
 		*uParam3 = 11f;
 	}
 	if (iParam0 == 2)
 	{
-		*uParam1 = { -3240.032f, 1004.482f, 11.8307f };
-		*uParam2 = { -3247.188f, 1005.107f, (16.25224f - 0.2f) };
+		*uParam1 = { -3240.0322f, 1004.48175f, 11.830701f };
+		*uParam2 = { -3247.1875f, 1005.10693f, (16.252235f - 0.2f) };
 		*uParam3 = 11f;
 	}
 	if (iParam0 == 3)
 	{
-		*uParam1 = { 544.2278f, 2672.5f, 41.1565f };
+		*uParam1 = { 544.22784f, 2672.5005f, 41.1565f };
 		*uParam2 = { 545.201f, 2665.442f, (45.69155f - 0.2f) };
 		*uParam3 = 11f;
 	}
 	if (iParam0 == 4)
 	{
-		*uParam1 = { 2559.176f, 385.3936f, 107.623f };
-		*uParam2 = { 2552.054f, 385.6057f, (112.1638f - 0.2f) };
+		*uParam1 = { 2559.1763f, 385.39355f, 107.62297f };
+		*uParam2 = { 2552.0544f, 385.60565f, (112.16383f - 0.2f) };
 		*uParam3 = 11f;
 	}
 	if (iParam0 == 5)
 	{
-		*uParam1 = { 2681.864f, 3282.603f, 54.24114f };
-		*uParam2 = { 2675.586f, 3285.981f, (58.79021f - 0.2f) };
+		*uParam1 = { 2681.864f, 3282.6025f, 54.24114f };
+		*uParam2 = { 2675.5862f, 3285.981f, (58.79021f - 0.2f) };
 		*uParam3 = 11f;
 	}
 	if (iParam0 == 6)
 	{
-		*uParam1 = { 1731.237f, 6411.557f, 34.03723f };
-		*uParam2 = { 1734.383f, 6417.952f, (38.58461f - 0.2f) };
+		*uParam1 = { 1731.2367f, 6411.5566f, 34.03723f };
+		*uParam2 = { 1734.3833f, 6417.952f, (38.584606f - 0.2f) };
 		*uParam3 = 11f;
 	}
 	if (iParam0 == 7)
 	{
-		*uParam1 = { 1964.999f, 3740.795f, 31.34375f };
-		*uParam2 = { 1961.384f, 3746.928f, (35.89571f - 0.2f) };
+		*uParam1 = { 1964.9989f, 3740.7947f, 31.34375f };
+		*uParam2 = { 1961.384f, 3746.928f, (35.895706f - 0.2f) };
 		*uParam3 = 11f;
 	}
 	if (iParam0 == 8)
 	{
-		*uParam1 = { Vector(28.49392f, -1348.507f, 27.03358f) + Vector(0f, -0.4f, 2f) };
-		*uParam2 = { Vector(33.03834f, -1341.382f, 27.05614f) - Vector(0.2f, 0.2f, 0.2f) + Vector(0f, -0.4f, 2f) };
+		*uParam1 = { Vector(28.493917f, -1348.5073f, 27.033585f) + Vector(0f, -0.4f, 2f) };
+		*uParam2 = { Vector(33.03834f, -1341.3823f, 27.056143f) - Vector(0.2f, 0.2f, 0.2f) + Vector(0f, -0.4f, 2f) };
 		*uParam3 = 11f;
 	}
 	if (iParam0 == 9)
 	{
-		*uParam1 = { 376.6309f, 323.5533f, 102.5664f };
-		*uParam2 = { 378.3253f, 330.4793f, (107.1095f - 0.2f) };
+		*uParam1 = { 376.63092f, 323.55328f, 102.56641f };
+		*uParam2 = { 378.32535f, 330.47934f, (107.10951f - 0.2f) };
 		*uParam3 = 11f;
 	}
 	if (iParam0 == 10)
 	{
-		*uParam1 = { 1166.497f, 2703.756f, 37.06307f };
-		*uParam2 = { 1166.525f, 2711.974f, (41.66307f - 0.2f) };
+		*uParam1 = { 1166.4972f, 2703.756f, 37.063072f };
+		*uParam2 = { 1166.5249f, 2711.974f, (41.66307f - 0.2f) };
 		*uParam3 = 7.75f;
 	}
 	if (iParam0 == 11)
 	{
-		*uParam1 = { -2973.512f, 390.7873f, 14.04322f };
-		*uParam2 = { -2965.288f, 390.2452f, (18.54322f - 0.2f) };
+		*uParam1 = { -2973.5117f, 390.78732f, 14.043219f };
+		*uParam2 = { -2965.2883f, 390.2452f, (18.543219f - 0.2f) };
 		*uParam3 = 7.75f;
 	}
 	if (iParam0 == 12)
 	{
-		*uParam1 = { -1226.417f, -902.6738f, 11.33496f };
-		*uParam2 = { -1221.765f, -909.5887f, (15.82626f - 0.2f) };
+		*uParam1 = { -1226.4175f, -902.67377f, 11.334959f };
+		*uParam2 = { -1221.7646f, -909.58875f, (15.826262f - 0.2f) };
 		*uParam3 = 7.75f;
 	}
 	if (iParam0 == 13)
 	{
-		*uParam1 = { 1141.35f, -980.9322f, 45.41594f };
-		*uParam2 = { 1132.976f, -982.0952f, (49.91574f - 0.2f) };
+		*uParam1 = { 1141.3501f, -980.9322f, 45.415943f };
+		*uParam2 = { 1132.9756f, -982.0952f, (49.915737f - 0.2f) };
 		*uParam3 = 7.75f;
 	}
 	if (iParam0 == 14)
 	{
-		*uParam1 = { -1490.949f, -383.4771f, 39.16332f };
-		*uParam2 = { -1485.006f, -377.6167f, (43.66332f - 0.2f) };
+		*uParam1 = { -1490.9487f, -383.4771f, 39.16332f };
+		*uParam2 = { -1485.0065f, -377.61673f, (43.66332f - 0.2f) };
 		*uParam3 = 7.75f;
 	}
 	if (iParam0 == 15)
 	{
-		*uParam1 = { 1698.98f, 4929.093f, 41.06357f };
-		*uParam2 = { 1705.233f, 4924.578f, (45.60386f - 0.2f) };
+		*uParam1 = { 1698.9796f, 4929.0933f, 41.063572f };
+		*uParam2 = { 1705.2332f, 4924.578f, (45.60386f - 0.2f) };
 		*uParam3 = 14f;
 	}
 	if (iParam0 == 16)
 	{
-		*uParam1 = { -711.77f, -916.4685f, 18.21557f };
-		*uParam2 = { -711.7368f, -908.7517f, (22.76488f - 0.2f) };
+		*uParam1 = { -711.76996f, -916.4685f, 18.215569f };
+		*uParam2 = { -711.73676f, -908.7517f, (22.764883f - 0.2f) };
 		*uParam3 = 14f;
 	}
 	if (iParam0 == 17)
 	{
-		*uParam1 = { -52.90452f, -1756.474f, 28.42097f };
-		*uParam2 = { -47.92523f, -1750.614f, (32.94246f - 0.2f) };
+		*uParam1 = { -52.90452f, -1756.4739f, 28.42097f };
+		*uParam2 = { -47.925232f, -1750.6141f, (32.94246f - 0.2f) };
 		*uParam3 = 14f;
 	}
 	if (iParam0 == 18)
 	{
-		*uParam1 = { 1159.633f, -326.5087f, 68.20507f };
-		*uParam2 = { 1158.335f, -318.9123f, (72.74828f - 0.2f) };
+		*uParam1 = { 1159.633f, -326.50867f, 68.20507f };
+		*uParam2 = { 1158.3352f, -318.91226f, (72.74828f - 0.2f) };
 		*uParam3 = 14f;
 	}
 	if (iParam0 == 19)
 	{
-		*uParam1 = { -1822.373f, 788.2851f, 137.1876f };
-		*uParam2 = { -1827.484f, 794.0739f, (141.6933f - 0.2f) };
+		*uParam1 = { -1822.3729f, 788.2851f, 137.18762f };
+		*uParam2 = { -1827.4835f, 794.07385f, (141.69327f - 0.2f) };
 		*uParam3 = 14f;
 	}
 }
@@ -17635,103 +17635,103 @@ void func_417(int iParam0, var uParam1, var uParam2)//Position - 0x18666
 	switch (iParam0)
 	{
 		case 0:
-			*uParam1 = { 1394.169f, 3599.86f, 34.0121f };
-			*uParam2 = { 1395.548f, 3600.575f, 33.98914f };
+			*uParam1 = { 1394.1692f, 3599.86f, 34.0121f };
+			*uParam2 = { 1395.5479f, 3600.5752f, 33.98914f };
 			break;
 		
 		case 1:
-			*uParam1 = { -3038.908f, 589.5187f, 6.9048f };
+			*uParam1 = { -3038.9082f, 589.5187f, 6.9048f };
 			*uParam2 = { -3038.657f, 589.5176f, 6.904751f };
 			break;
 		
 		case 2:
-			*uParam1 = { -3240.317f, 1004.433f, 11.8307f };
-			*uParam2 = { -3240.032f, 1004.482f, 11.8307f };
+			*uParam1 = { -3240.317f, 1004.4334f, 11.8307f };
+			*uParam2 = { -3240.0322f, 1004.48175f, 11.830701f };
 			break;
 		
 		case 3:
-			*uParam1 = { 544.2802f, 2672.811f, 41.1566f };
-			*uParam2 = { 544.2278f, 2672.5f, 41.1565f };
+			*uParam1 = { 544.2802f, 2672.8113f, 41.1566f };
+			*uParam2 = { 544.22784f, 2672.5005f, 41.1565f };
 			break;
 		
 		case 4:
 			*uParam1 = { 2559.247f, 385.5266f, 107.623f };
-			*uParam2 = { 2559.176f, 385.3936f, 107.623f };
+			*uParam2 = { 2559.1763f, 385.39355f, 107.62297f };
 			break;
 		
 		case 5:
-			*uParam1 = { 2682.003f, 3282.543f, 54.2411f };
-			*uParam2 = { 2681.864f, 3282.603f, 54.24114f };
+			*uParam1 = { 2682.0034f, 3282.5432f, 54.2411f };
+			*uParam2 = { 2681.864f, 3282.6025f, 54.24114f };
 			break;
 		
 		case 6:
-			*uParam1 = { 1731.21f, 6411.403f, 34.0372f };
-			*uParam2 = { 1731.237f, 6411.557f, 34.03723f };
+			*uParam1 = { 1731.2098f, 6411.4033f, 34.0372f };
+			*uParam2 = { 1731.2367f, 6411.5566f, 34.03723f };
 			break;
 		
 		case 7:
-			*uParam1 = { 1965.054f, 3740.555f, 31.3448f };
-			*uParam2 = { 1964.999f, 3740.795f, 31.34375f };
+			*uParam1 = { 1965.0542f, 3740.5552f, 31.3448f };
+			*uParam2 = { 1964.9989f, 3740.7947f, 31.34375f };
 			break;
 		
 		case 8:
-			*uParam1 = { Vector(28.5036f, -1348.813f, 27.0641f) + Vector(0f, -0.4f, 2f) };
-			*uParam2 = { Vector(28.49392f, -1348.507f, 27.03358f) + Vector(0f, -0.4f, 2f) };
+			*uParam1 = { Vector(28.5036f, -1348.8127f, 27.0641f) + Vector(0f, -0.4f, 2f) };
+			*uParam2 = { Vector(28.493917f, -1348.5073f, 27.033585f) + Vector(0f, -0.4f, 2f) };
 			break;
 		
 		case 9:
 			*uParam1 = { 376.6533f, 323.6471f, 102.5664f };
-			*uParam2 = { 376.6309f, 323.5533f, 102.5664f };
+			*uParam2 = { 376.63092f, 323.55328f, 102.56641f };
 			break;
 		
 		case 10:
-			*uParam1 = { Vector(37.1573f, 2703.114f, 1195.432f) + Vector(0f, 0.39f, -29.04f) };
-			*uParam2 = { 1166.497f, 2703.756f, 37.06307f };
+			*uParam1 = { Vector(37.1573f, 2703.1143f, 1195.432f) + Vector(0f, 0.39f, -29.04f) };
+			*uParam2 = { 1166.4972f, 2703.756f, 37.063072f };
 			break;
 		
 		case 11:
-			*uParam1 = { -2973.262f, 390.8184f, 14.0433f };
-			*uParam2 = { -2973.512f, 390.7873f, 14.04322f };
+			*uParam1 = { -2973.2617f, 390.8184f, 14.0433f };
+			*uParam2 = { -2973.5117f, 390.78732f, 14.043219f };
 			break;
 		
 		case 12:
-			*uParam1 = { -1226.464f, -902.5864f, 11.2783f };
-			*uParam2 = { -1226.417f, -902.6738f, 11.33496f };
+			*uParam1 = { -1226.4644f, -902.5864f, 11.2783f };
+			*uParam2 = { -1226.4175f, -902.67377f, 11.334959f };
 			break;
 		
 		case 13:
-			*uParam1 = { 1141.36f, -980.8802f, 45.4155f };
-			*uParam2 = { 1141.35f, -980.9322f, 45.41594f };
+			*uParam1 = { 1141.3596f, -980.8802f, 45.4155f };
+			*uParam2 = { 1141.3501f, -980.9322f, 45.415943f };
 			break;
 		
 		case 14:
-			*uParam1 = { -1491.057f, -383.5728f, 39.1706f };
-			*uParam2 = { -1490.949f, -383.4771f, 39.16332f };
+			*uParam1 = { -1491.0565f, -383.5728f, 39.1706f };
+			*uParam2 = { -1490.9487f, -383.4771f, 39.16332f };
 			break;
 		
 		case 15:
-			*uParam1 = { 1698.808f, 4929.198f, 41.0783f };
-			*uParam2 = { 1698.98f, 4929.093f, 41.06357f };
+			*uParam1 = { 1698.8085f, 4929.1978f, 41.0783f };
+			*uParam2 = { 1698.9796f, 4929.0933f, 41.063572f };
 			break;
 		
 		case 16:
 			*uParam1 = { -711.721f, -916.6965f, 18.2145f };
-			*uParam2 = { -711.77f, -916.4685f, 18.21557f };
+			*uParam2 = { -711.76996f, -916.4685f, 18.215569f };
 			break;
 		
 		case 17:
-			*uParam1 = { -53.124f, -1756.405f, 28.421f };
-			*uParam2 = { -52.90452f, -1756.474f, 28.42097f };
+			*uParam1 = { -53.124f, -1756.4054f, 28.421f };
+			*uParam2 = { -52.90452f, -1756.4739f, 28.42097f };
 			break;
 		
 		case 18:
-			*uParam1 = { 1159.542f, -326.6986f, 67.923f };
-			*uParam2 = { 1159.633f, -326.5087f, 68.20507f };
+			*uParam1 = { 1159.5421f, -326.6986f, 67.923f };
+			*uParam2 = { 1159.633f, -326.50867f, 68.20507f };
 			break;
 		
 		case 19:
-			*uParam1 = { -1822.287f, 788.006f, 137.1859f };
-			*uParam2 = { -1822.373f, 788.2851f, 137.1876f };
+			*uParam1 = { -1822.2866f, 788.006f, 137.1859f };
+			*uParam2 = { -1822.3729f, 788.2851f, 137.18762f };
 			break;
 	}
 }

@@ -785,8 +785,8 @@ int func_14(var uParam0, var uParam1)//Position - 0x8D9
 		case 0:
 			if (BitTest(Local_83.f_4, iLocal_100))
 			{
-				Var0 = { -1232.842f, -1095.003f, 2.2331f };
-				Var1 = { -1226.248f, -1089.819f, 10.1513f };
+				Var0 = { -1232.8418f, -1095.0028f, 2.2331f };
+				Var1 = { -1226.248f, -1089.8192f, 10.1513f };
 				Var2 = { func_24(0, 0) };
 				fVar3 = 19.7853f;
 			}
@@ -805,8 +805,8 @@ int func_14(var uParam0, var uParam1)//Position - 0x8D9
 		case 2:
 			if (BitTest(Local_83.f_4, iLocal_100))
 			{
-				Var0 = { 794.4784f, -2034.339f, 25.2469f };
-				Var1 = { 798.8026f, -2026.004f, 33.2793f };
+				Var0 = { 794.4784f, -2034.3386f, 25.2469f };
+				Var1 = { 798.8026f, -2026.0035f, 33.2793f };
 				Var2 = { func_24(0, 2) };
 				fVar3 = 355.9428f;
 			}
@@ -815,8 +815,8 @@ int func_14(var uParam0, var uParam1)//Position - 0x8D9
 		case 3:
 			if (BitTest(Local_83.f_4, iLocal_100))
 			{
-				Var0 = { -1623.919f, 1249.831f, 135.2495f };
-				Var1 = { -1621.554f, 1257.98f, 145.2376f };
+				Var0 = { -1623.9193f, 1249.831f, 135.2495f };
+				Var1 = { -1621.5536f, 1257.98f, 145.2376f };
 				Var2 = { func_24(0, 3) };
 				fVar3 = 353.7463f;
 			}
@@ -825,8 +825,8 @@ int func_14(var uParam0, var uParam1)//Position - 0x8D9
 		case 4:
 			if (BitTest(Local_83.f_4, iLocal_100))
 			{
-				Var0 = { 1118.077f, 1875.035f, 60.3776f };
-				Var1 = { 1127.638f, 1883.083f, 70.1053f };
+				Var0 = { 1118.077f, 1875.0347f, 60.3776f };
+				Var1 = { 1127.6384f, 1883.0828f, 70.1053f };
 				Var2 = { func_24(0, 4) };
 				fVar3 = 201.3967f;
 			}
@@ -1067,7 +1067,7 @@ Vector3 func_24(int iParam0, int iParam1)//Position - 0xE4E
 		case 0:
 			if (iParam1 == 0)
 			{
-				Var0 = { -1228.99f, -1092.231f, 7.0465f };
+				Var0 = { -1228.9904f, -1092.2307f, 7.0465f };
 			}
 			else if (iParam1 == 1)
 			{
@@ -1075,15 +1075,15 @@ Vector3 func_24(int iParam0, int iParam1)//Position - 0xE4E
 			}
 			else if (iParam1 == 2)
 			{
-				Var0 = { 796.6768f, -2029.602f, 28.1346f };
+				Var0 = { 796.6768f, -2029.6017f, 28.1346f };
 			}
 			else if (iParam1 == 3)
 			{
-				Var0 = { -1622.881f, 1253.516f, 139.6713f };
+				Var0 = { -1622.8806f, 1253.5157f, 139.6713f };
 			}
 			else if (iParam1 == 4)
 			{
-				Var0 = { 1123.27f, 1878.917f, 65.7957f };
+				Var0 = { 1123.2698f, 1878.9169f, 65.7957f };
 			}
 			break;
 	}
