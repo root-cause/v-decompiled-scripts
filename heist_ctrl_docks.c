@@ -40983,7 +40983,7 @@ int func_340(int iParam0)//Position - 0x31562
 	}
 	else if (iParam0 > 63)
 	{
-		return 1762874299;
+		return joaat("p_para_bag_tr_s_01a");
 	}
 	else if (iParam0 > 61)
 	{
