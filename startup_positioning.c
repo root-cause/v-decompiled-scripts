@@ -7964,7 +7964,7 @@ int func_116(var uParam0, int iParam1, int iParam2, var uParam3)//Position - 0xB
 	
 	if (!uParam0->f_62.f_19)
 	{
-		PAD::DISABLE_CONTROL_ACTION(0, 75, true);
+		PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 75 /*INPUT_VEH_EXIT*/, true);
 	}
 	iVar0 = MISC::GET_GAME_TIMER();
 	if (iVar0 >= (Global_43603 - 1000))

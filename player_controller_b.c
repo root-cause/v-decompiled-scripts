@@ -448,7 +448,7 @@ void func_1()//Position - 0x100
 					if (iLocal_66)
 					{
 						iVar14 = 1;
-						PAD::DISABLE_CONTROL_ACTION(2, 199, true);
+						PAD::DISABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 199 /*INPUT_FRONTEND_PAUSE*/, true);
 						HUD::DISABLE_FRONTEND_THIS_FRAME();
 					}
 					if (iLocal_67)
@@ -524,7 +524,7 @@ void func_1()//Position - 0x100
 						{
 							iLocal_67 = 0;
 							func_593(0);
-							PAD::DISABLE_CONTROL_ACTION(2, 199, true);
+							PAD::DISABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 199 /*INPUT_FRONTEND_PAUSE*/, true);
 							HUD::DISABLE_FRONTEND_THIS_FRAME();
 							PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0);
 						}
@@ -6861,7 +6861,7 @@ int func_90(var uParam0, int iParam1, int iParam2, var uParam3)//Position - 0x93
 	
 	if (!uParam0->f_62.f_19)
 	{
-		PAD::DISABLE_CONTROL_ACTION(0, 75, true);
+		PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 75 /*INPUT_VEH_EXIT*/, true);
 	}
 	iVar0 = MISC::GET_GAME_TIMER();
 	if (iVar0 >= (Global_43603 - 1000))
@@ -125354,7 +125354,7 @@ void func_707()//Position - 0x9B5D5
 			Global_97919.f_46 = 0;
 			Global_97919.f_44 = 1;
 		}
-		PAD::DISABLE_CONTROL_ACTION(2, 199, true);
+		PAD::DISABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 199 /*INPUT_FRONTEND_PAUSE*/, true);
 		HUD::DISABLE_FRONTEND_THIS_FRAME();
 		PLAYER::SET_PLAYER_WANTED_LEVEL_NO_DROP(PLAYER::PLAYER_ID(), 0, false);
 		Global_97830 = 1;

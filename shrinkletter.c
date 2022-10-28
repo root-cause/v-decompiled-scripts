@@ -342,7 +342,7 @@ void __EntryFunction__()//Position - 0x0
 				GRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(1);
 				GRAPHICS::DRAW_SCALEFORM_MOVIE_FULLSCREEN(iLocal_53, 255, 255, 255, 255, 0);
 				func_1(&iLocal_72, 1128792064, 1, 0, 1, 1065353216);
-				if (PAD::IS_CONTROL_PRESSED(2, 201))
+				if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 				{
 					iLocal_52 = 3;
 				}
@@ -398,7 +398,7 @@ void func_1(int* iParam0, float fParam1, int iParam2, bool bParam3, bool bParam4
 	}
 	HUD::HIDE_LOADING_ON_FADE_THIS_FRAME();
 	GRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(iParam2);
-	if (!func_6(iParam0->f_1, 256) || (func_6(iParam0->f_1, 8192) && PAD::HAVE_CONTROLS_CHANGED(2)))
+	if (!func_6(iParam0->f_1, 256) || (func_6(iParam0->f_1, 8192) && PAD::HAVE_CONTROLS_CHANGED(2 /*FRONTEND_CONTROL*/)))
 	{
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*iParam0, "SET_CLEAR_SPACE");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fParam1);
@@ -425,11 +425,11 @@ void func_1(int* iParam0, float fParam1, int iParam2, bool bParam3, bool bParam4
 					break;
 				
 				case 1:
-					bVar4 = PAD::IS_USING_KEYBOARD_AND_MOUSE(2);
+					bVar4 = PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/);
 					break;
 				
 				case 2:
-					bVar4 = !PAD::IS_USING_KEYBOARD_AND_MOUSE(2);
+					bVar4 = !PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/);
 					break;
 				
 				default:
@@ -1435,7 +1435,7 @@ void func_42(char* sParam0)//Position - 0x1746
 
 void func_43()//Position - 0x1758
 {
-	PAD::DISABLE_CONTROL_ACTION(2, 199, true);
+	PAD::DISABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 199 /*INPUT_FRONTEND_PAUSE*/, true);
 	HUD::HIDE_HUD_COMPONENT_THIS_FRAME(7);
 	HUD::HIDE_HUD_COMPONENT_THIS_FRAME(7);
 	HUD::HIDE_HUD_COMPONENT_THIS_FRAME(6);

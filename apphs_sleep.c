@@ -361,7 +361,7 @@ int func_11(int iParam0, int iParam1, int iParam2)//Position - 0x4CF
 	{
 		if (MISC::IS_PC_VERSION())
 		{
-			if (MISC::UPDATE_ONSCREEN_KEYBOARD() == 0 || (NETWORK::NETWORK_TEXT_CHAT_IS_TYPING() && PAD::IS_USING_KEYBOARD_AND_MOUSE(2)))
+			if (MISC::UPDATE_ONSCREEN_KEYBOARD() == 0 || (NETWORK::NETWORK_TEXT_CHAT_IS_TYPING() && PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/)))
 			{
 				return 0;
 			}
@@ -596,7 +596,7 @@ void func_21()//Position - 0x9F5
 			iLocal_29 = 0;
 		}
 	}
-	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
 		if (func_11(2, 181, 0))
 		{

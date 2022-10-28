@@ -1916,7 +1916,7 @@ void func_13()//Position - 0x666
 									func_168("AMRC_ENTER" /* GXT: Press ~INPUT_CONTEXT~ to ride the Leviathan. The cost is $~1~. */, Global_262145.f_8252, -1);
 								}
 								Global_2815059.f_5193 = 1;
-								if (PAD::IS_CONTROL_JUST_PRESSED(0, 51))
+								if (PAD::IS_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 51 /*INPUT_CONTEXT*/))
 								{
 									if (func_167(1) >= Global_262145.f_8252 || MONEY::NETWORK_CAN_SPEND_MONEY(Global_262145.f_8252, false, false, true, -1, 0))
 									{
@@ -2039,7 +2039,7 @@ void func_13()//Position - 0x666
 							MISC::SET_BIT(&(Local_1464[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2), 9);
 							iLocal_723 = 1;
 						}
-						PAD::DISABLE_CONTROL_ACTION(2, 203, true);
+						PAD::DISABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 203 /*INPUT_FRONTEND_X*/, true);
 					}
 				}
 				if (!BitTest(Local_1464[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2, 3))
@@ -3235,7 +3235,7 @@ void func_57()//Position - 0x201E
 {
 	if (!HUD::IS_PAUSE_MENU_ACTIVE())
 	{
-		if ((((PAD::IS_CONTROL_JUST_PRESSED(2, 203) && !ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), sLocal_1431, "hands_up_enter_player_one", 3)) && !ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), sLocal_1431, "hands_up_enter_player_two", 3)) && !ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), sLocal_1431, "hands_up_exit_player_one", 3)) && !ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), sLocal_1431, "hands_up_exit_player_two", 3))
+		if ((((PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 203 /*INPUT_FRONTEND_X*/) && !ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), sLocal_1431, "hands_up_enter_player_one", 3)) && !ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), sLocal_1431, "hands_up_enter_player_two", 3)) && !ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), sLocal_1431, "hands_up_exit_player_one", 3)) && !ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), sLocal_1431, "hands_up_exit_player_two", 3))
 		{
 			if (BitTest(Local_1464[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2, 1))
 			{
@@ -5292,28 +5292,28 @@ void func_123()//Position - 0x48AA
 					{
 						if (BitTest(Local_1464[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2, 1))
 						{
-							func_133(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 203, true), "AMRC_HANDSLOWER" /* GXT: Lower Hands */, &uLocal_725, 0);
+							func_133(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, 203 /*INPUT_FRONTEND_X*/, true), "AMRC_HANDSLOWER" /* GXT: Lower Hands */, &uLocal_725, 0);
 						}
 						else
 						{
-							func_133(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 203, true), "AMRC_HANDSRAISE" /* GXT: Raise Hands */, &uLocal_725, 0);
+							func_133(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, 203 /*INPUT_FRONTEND_X*/, true), "AMRC_HANDSRAISE" /* GXT: Raise Hands */, &uLocal_725, 0);
 						}
 					}
-					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 					{
-						func_133(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 80, true), "AMRC_CINEMATIC" /* GXT: Cinematic Camera */, &uLocal_725, 0);
+						func_133(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, 80 /*INPUT_VEH_CIN_CAM*/, true), "AMRC_CINEMATIC" /* GXT: Cinematic Camera */, &uLocal_725, 0);
 					}
 					else
 					{
-						func_133(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 202, true), "AMRC_CINEMATIC" /* GXT: Cinematic Camera */, &uLocal_725, 0);
+						func_133(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/, true), "AMRC_CINEMATIC" /* GXT: Cinematic Camera */, &uLocal_725, 0);
 					}
-					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 					{
-						func_133(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 0, true), "AMRC_CHANGEVIEW" /* GXT: Change View */, &uLocal_725, 0);
+						func_133(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true), "AMRC_CHANGEVIEW" /* GXT: Change View */, &uLocal_725, 0);
 					}
 					else
 					{
-						func_133(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "AMRC_CHANGEVIEW" /* GXT: Change View */, &uLocal_725, 0);
+						func_133(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, 217 /*INPUT_FRONTEND_SELECT*/, true), "AMRC_CHANGEVIEW" /* GXT: Change View */, &uLocal_725, 0);
 					}
 					iLocal_723 = 0;
 				}
@@ -5347,7 +5347,7 @@ void func_124(int iParam0, var uParam1, var uParam2, int iParam3)//Position - 0x
 	int iVar4;
 	int iVar5;
 	
-	if (iParam3 == 1 || PAD::HAVE_CONTROLS_CHANGED(2))
+	if (iParam3 == 1 || PAD::HAVE_CONTROLS_CHANGED(2 /*FRONTEND_CONTROL*/))
 	{
 		*uParam2 = 0;
 		if (GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(*iParam0))
@@ -5986,7 +5986,7 @@ void func_150(int iParam0, int iParam1, int iParam2)//Position - 0x5841
 	{
 		return;
 	}
-	if (PAD::IS_CONTROL_PRESSED(2, 199) || PAD::IS_DISABLED_CONTROL_PRESSED(2, 199))
+	if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 199 /*INPUT_FRONTEND_PAUSE*/) || PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 199 /*INPUT_FRONTEND_PAUSE*/))
 	{
 		return;
 	}
@@ -6971,7 +6971,7 @@ void func_184()//Position - 0x69B2
 				NETWORK::NETWORK_ALLOW_REMOTE_ATTACHMENT_MODIFICATION(PLAYER::PLAYER_PED_ID(), true);
 				func_185(func_48(0), (Local_1427.f_0 / 2), Var0, 0f, 0f, 180f);
 				func_17(1);
-				PAD::ENABLE_CONTROL_ACTION(2, 203, true);
+				PAD::ENABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 203 /*INPUT_FRONTEND_X*/, true);
 				Local_1427.f_4 = { Local_1462.f_12[Local_1427.f_0 /*10*/].f_6 };
 				MISC::SET_BIT(&(Local_1464[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2), 0);
 				MISC::CLEAR_BIT(&(Local_1464[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2), 6);

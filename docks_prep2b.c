@@ -16706,7 +16706,7 @@ void func_272()//Position - 0x17612
 					{
 						if (func_273(PLAYER::PLAYER_PED_ID(), iLocal_34) == -1)
 						{
-							PAD::DISABLE_CONTROL_ACTION(0, 114, true);
+							PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 114 /*INPUT_VEH_FLY_ATTACK*/, true);
 						}
 					}
 				}

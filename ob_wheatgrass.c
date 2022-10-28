@@ -506,7 +506,7 @@ void func_1()//Position - 0x313
 			{
 				if (((func_63(Local_342, Var0) && ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()) >= (func_62() - 90f)) && ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()) <= (func_62() + 90f)) && func_61())
 				{
-					if (!PLAYER::IS_PLAYER_TARGETTING_ANYTHING(PLAYER::PLAYER_ID()) && PAD::IS_CONTROL_PRESSED(2, 51))
+					if (!PLAYER::IS_PLAYER_TARGETTING_ANYTHING(PLAYER::PLAYER_ID()) && PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 51 /*INPUT_CONTEXT*/))
 					{
 						if (PED::GET_PED_STEALTH_MOVEMENT(PLAYER::PLAYER_PED_ID()))
 						{
@@ -515,7 +515,7 @@ void func_1()//Position - 0x313
 						func_59();
 						PED::SET_PED_CLOTH_PIN_FRAMES(PLAYER::PLAYER_PED_ID(), 180);
 						func_55();
-						PAD::DISABLE_CONTROL_ACTION(0, 0, true);
+						PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
 						func_54();
 						func_52();
 						AUDIO::STOP_CURRENT_PLAYING_AMBIENT_SPEECH(PLAYER::PLAYER_PED_ID());
@@ -549,7 +549,7 @@ void func_1()//Position - 0x313
 		case 2:
 			func_55();
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
-			PAD::DISABLE_CONTROL_ACTION(0, 0, true);
+			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
 			iLocal_327 = PED::CREATE_SYNCHRONIZED_SCENE(func_42(), func_41(), 2);
 			TASK::TASK_SYNCHRONIZED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_327, sLocal_330, func_40(0), 1000f, -4f, 0, 0, 1000f, 0);
 			ENTITY::PLAY_SYNCHRONIZED_ENTITY_ANIM(func_39(), iLocal_327, func_38(0), sLocal_330, 1000f, -4f, 0, 1000f);
@@ -580,7 +580,7 @@ void func_1()//Position - 0x313
 		case 3:
 			func_55();
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
-			PAD::DISABLE_CONTROL_ACTION(0, 0, true);
+			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
 			if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_327))
 			{
 				if (func_37(iLocal_325))
@@ -631,7 +631,7 @@ void func_1()//Position - 0x313
 		case 4:
 			func_55();
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
-			PAD::DISABLE_CONTROL_ACTION(0, 0, true);
+			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
 			if (!PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_327))
 			{
 				if (func_37(iLocal_325))
@@ -645,7 +645,7 @@ void func_1()//Position - 0x313
 		case 7:
 			func_55();
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
-			PAD::DISABLE_CONTROL_ACTION(0, 0, true);
+			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
 			if (STATS::STAT_GET_INT(joaat("NUM_SH_WHEATGRASS"), &iLocal_328, -1))
 			{
 				STATS::STAT_SET_INT(joaat("NUM_SH_WHEATGRASS"), iLocal_328 + 1, true);
@@ -1661,21 +1661,21 @@ void func_33()//Position - 0x1697
 
 void func_34(var uParam0, var uParam1, var uParam2, var uParam3, bool bParam4)//Position - 0x16E2
 {
-	*uParam0 = SYSTEM::FLOOR((PAD::GET_CONTROL_NORMAL(2, 218) * 127f));
-	*uParam1 = SYSTEM::FLOOR((PAD::GET_CONTROL_NORMAL(2, 219) * 127f));
-	*uParam2 = SYSTEM::FLOOR((PAD::GET_CONTROL_NORMAL(2, 220) * 127f));
-	*uParam3 = SYSTEM::FLOOR((PAD::GET_CONTROL_NORMAL(2, 221) * 127f));
+	*uParam0 = SYSTEM::FLOOR((PAD::GET_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 218 /*INPUT_SCRIPT_LEFT_AXIS_X*/) * 127f));
+	*uParam1 = SYSTEM::FLOOR((PAD::GET_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 219 /*INPUT_SCRIPT_LEFT_AXIS_Y*/) * 127f));
+	*uParam2 = SYSTEM::FLOOR((PAD::GET_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 220 /*INPUT_SCRIPT_RIGHT_AXIS_X*/) * 127f));
+	*uParam3 = SYSTEM::FLOOR((PAD::GET_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 221 /*INPUT_SCRIPT_RIGHT_AXIS_Y*/) * 127f));
 	if (bParam4)
 	{
 		if (IntToFloat(*uParam0) == 0f && IntToFloat(*uParam1) == 0f)
 		{
-			*uParam0 = SYSTEM::FLOOR((PAD::GET_DISABLED_CONTROL_NORMAL(2, 218) * 127f));
-			*uParam1 = SYSTEM::FLOOR((PAD::GET_DISABLED_CONTROL_NORMAL(2, 219) * 127f));
+			*uParam0 = SYSTEM::FLOOR((PAD::GET_DISABLED_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 218 /*INPUT_SCRIPT_LEFT_AXIS_X*/) * 127f));
+			*uParam1 = SYSTEM::FLOOR((PAD::GET_DISABLED_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 219 /*INPUT_SCRIPT_LEFT_AXIS_Y*/) * 127f));
 		}
 		if (IntToFloat(*uParam2) == 0f && IntToFloat(*uParam3) == 0f)
 		{
-			*uParam2 = SYSTEM::FLOOR((PAD::GET_DISABLED_CONTROL_NORMAL(2, 220) * 127f));
-			*uParam3 = SYSTEM::FLOOR((PAD::GET_DISABLED_CONTROL_NORMAL(2, 221) * 127f));
+			*uParam2 = SYSTEM::FLOOR((PAD::GET_DISABLED_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 220 /*INPUT_SCRIPT_RIGHT_AXIS_X*/) * 127f));
+			*uParam3 = SYSTEM::FLOOR((PAD::GET_DISABLED_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 221 /*INPUT_SCRIPT_RIGHT_AXIS_Y*/) * 127f));
 		}
 	}
 }
@@ -1702,10 +1702,10 @@ void func_35(int iParam0, struct<3> Param1)//Position - 0x17B7
 	{
 		Var0 = { CAM::GET_CAM_ROT(iParam0, 2) };
 		Var1 = { Param1 };
-		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 		{
-			fVar3 = PAD::GET_CONTROL_NORMAL(2, 240);
-			fVar4 = PAD::GET_CONTROL_NORMAL(2, 239);
+			fVar3 = PAD::GET_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 240 /*INPUT_CURSOR_Y*/);
+			fVar4 = PAD::GET_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 239 /*INPUT_CURSOR_X*/);
 			fVar5 = ((fVar3 - 0.5f) * (-6.5f * 2f));
 			fVar6 = ((fVar4 - 0.5f) * (-12.5f * 2f));
 			Var1.f_0 = (Var1.f_0 + fVar5);
@@ -2984,7 +2984,7 @@ void func_69()//Position - 0x30D3
 			{
 				if ((func_63(Local_342, Var0) && func_378(4)) && !BitTest(Global_1835485, 20))
 				{
-					if (PAD::IS_CONTROL_PRESSED(2, 51))
+					if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 51 /*INPUT_CONTEXT*/))
 					{
 						if (PED::GET_PED_STEALTH_MOVEMENT(PLAYER::PLAYER_PED_ID()))
 						{
@@ -2992,7 +2992,7 @@ void func_69()//Position - 0x30D3
 						}
 						Global_1835486 = 4;
 						func_55();
-						PAD::DISABLE_CONTROL_ACTION(0, 0, true);
+						PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
 						AUDIO::STOP_CURRENT_PLAYING_AMBIENT_SPEECH(PLAYER::PLAYER_PED_ID());
 						HUD::CLEAR_HELP(true);
 						MISC::CLEAR_AREA_OF_PROJECTILES(Local_342, 3f, 0);
@@ -3019,7 +3019,7 @@ void func_69()//Position - 0x30D3
 			func_55();
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 			func_364(1);
-			PAD::DISABLE_CONTROL_ACTION(0, 0, true);
+			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
 			if (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) == 7)
 			{
 				func_360();
@@ -3035,7 +3035,7 @@ void func_69()//Position - 0x30D3
 			func_55();
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 			func_364(1);
-			PAD::DISABLE_CONTROL_ACTION(0, 0, true);
+			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
 			if (PED::GET_SYNCHRONIZED_SCENE_PHASE(iLocal_327) > 0.99f)
 			{
 				iLocal_322 = 7;
@@ -3046,7 +3046,7 @@ void func_69()//Position - 0x30D3
 			func_55();
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 			func_364(1);
-			PAD::DISABLE_CONTROL_ACTION(0, 0, true);
+			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
 			if (PED::GET_SYNCHRONIZED_SCENE_PHASE(iLocal_327) > 0.99f)
 			{
 				iLocal_322 = 7;
@@ -3057,7 +3057,7 @@ void func_69()//Position - 0x30D3
 			func_55();
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 			func_364(1);
-			PAD::DISABLE_CONTROL_ACTION(0, 0, true);
+			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
 			TASK::CLEAR_PED_TASKS(PLAYER::PLAYER_PED_ID());
 			func_70();
 			func_367(PLAYER::PLAYER_ID(), 1, 0, 0);

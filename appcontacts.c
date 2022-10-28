@@ -2526,17 +2526,17 @@ void func_41()//Position - 0x28DE
 	float fVar0;
 	
 	MISC::SET_GAME_PAUSED(true);
-	PAD::SET_INPUT_EXCLUSIVE(2, 201);
-	PAD::SET_INPUT_EXCLUSIVE(2, 202);
+	PAD::SET_INPUT_EXCLUSIVE(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/);
+	PAD::SET_INPUT_EXCLUSIVE(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/);
 	fVar0 = 0f;
-	while ((!PAD::IS_CONTROL_JUST_PRESSED(2, 201) && !PAD::IS_CONTROL_JUST_PRESSED(2, 202)) || fVar0 < 1f)
+	while ((!PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/)) || fVar0 < 1f)
 	{
 		HUD::SET_WARNING_MESSAGE_WITH_HEADER("VEUI_HDR_ALERT" /* GXT: ALERT */, "VE_DIR_MODE_SURE" /* GXT: Are you sure you want to launch Director Mode? */, 18, 0, false, -1, 0, 0, true, 0);
 		SYSTEM::WAIT(0);
 		fVar0 = (fVar0 + MISC::GET_FRAME_TIME());
 	}
 	MISC::SET_GAME_PAUSED(false);
-	if (PAD::IS_CONTROL_JUST_PRESSED(2, 201))
+	if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 	{
 		CAM::DO_SCREEN_FADE_OUT(0);
 		Global_112331 = 1;
@@ -2549,9 +2549,9 @@ void func_42(int iParam0)//Position - 0x295D
 	char* sVar1;
 	
 	MISC::SET_GAME_PAUSED(true);
-	PAD::SET_INPUT_EXCLUSIVE(2, 201);
+	PAD::SET_INPUT_EXCLUSIVE(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/);
 	fVar0 = 0f;
-	while (!PAD::IS_CONTROL_JUST_PRESSED(2, 201) || fVar0 < 1f)
+	while (!PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/) || fVar0 < 1f)
 	{
 		sVar1 = func_43(iParam0, 119);
 		HUD::SET_WARNING_MESSAGE("FBR_GENERIC" /* GXT: ~a~ is not available whilst ~a~. */, 16384, 0, false, -1, "FBR_DIR_MODE" /* GXT: Director Mode */, sVar1, true, 0);
@@ -8172,7 +8172,7 @@ void func_136()//Position - 0xAEED
 	
 	if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 	{
-		PAD::DISABLE_CONTROL_ACTION(0, 22, true);
+		PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 22 /*INPUT_JUMP*/, true);
 	}
 	if (func_163(2, Global_20235, 0))
 	{
@@ -8830,9 +8830,9 @@ void func_147()//Position - 0xBD37
 			Global_20245 = 0;
 		}
 	}
-	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
-		if (PAD::IS_CONTROL_JUST_PRESSED(2, 180))
+		if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 180 /*INPUT_CELLPHONE_SCROLL_FORWARD*/))
 		{
 			switch (Global_20246)
 			{
@@ -8901,7 +8901,7 @@ void func_147()//Position - 0xBD37
 					break;
 				}
 		}
-		if (PAD::IS_CONTROL_JUST_PRESSED(2, 181))
+		if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 181 /*INPUT_CELLPHONE_SCROLL_BACKWARD*/))
 		{
 			switch (Global_20246)
 			{
@@ -9316,7 +9316,7 @@ int func_163(int iParam0, int iParam1, int iParam2)//Position - 0xC535
 	{
 		if (MISC::IS_PC_VERSION())
 		{
-			if (MISC::UPDATE_ONSCREEN_KEYBOARD() == 0 || (NETWORK::NETWORK_TEXT_CHAT_IS_TYPING() && PAD::IS_USING_KEYBOARD_AND_MOUSE(2)))
+			if (MISC::UPDATE_ONSCREEN_KEYBOARD() == 0 || (NETWORK::NETWORK_TEXT_CHAT_IS_TYPING() && PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/)))
 			{
 				return 0;
 			}
@@ -9769,7 +9769,7 @@ void func_174(var uParam0)//Position - 0xCD71
 		{
 			bVar4 = false;
 		}
-		if (PAD::IS_USING_REMOTE_PLAY(0))
+		if (PAD::IS_USING_REMOTE_PLAY(0 /*PLAYER_CONTROL*/))
 		{
 			bVar4 = false;
 		}
@@ -10214,7 +10214,7 @@ void func_186()//Position - 0xD5C8
 			iLocal_99 = 0;
 		}
 	}
-	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
 		if (func_163(2, 181, 0))
 		{
@@ -10395,12 +10395,12 @@ void func_190()//Position - 0xD818
 					HUD::SET_WARNING_MESSAGE_WITH_HEADER("HUD_CONNPROB" /* GXT: alert */, "HUD_DISCON" /* GXT: The connection to Social Club has been lost. */, iVar5, 0, false, -1, 0, 0, true, 0);
 					if (Local_293.f_2982)
 					{
-						if (func_163(2, Global_20235, 0) || PAD::IS_CONTROL_PRESSED(2, 201))
+						if (func_163(2, Global_20235, 0) || PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 						{
 							Global_20266.f_1 = 3;
 						}
 					}
-					else if (func_163(2, Global_20235, 0) || PAD::IS_CONTROL_PRESSED(2, 201))
+					else if (func_163(2, Global_20235, 0) || PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 					{
 					}
 					else

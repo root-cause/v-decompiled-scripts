@@ -145,7 +145,7 @@ void func_1()//Position - 0xCE
 					}
 					func_39(&(Local_49[iLocal_41 /*11*/].f_1));
 					Local_49[iLocal_41 /*11*/].f_10 = 0;
-					PAD::SET_CONTROL_SHAKE(0, 200, 250);
+					PAD::SET_CONTROL_SHAKE(0 /*PLAYER_CONTROL*/, 200, 250);
 					iVar0 = (805 + iLocal_41);
 					func_38(iVar0, 1, -1);
 					STATS::STAT_INCREMENT(joaat("NUM_HIDDEN_PACKAGES_2"), 1f);

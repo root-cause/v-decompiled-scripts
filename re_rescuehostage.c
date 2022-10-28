@@ -190,7 +190,7 @@ void __EntryFunction__()//Position - 0x0
 				case 1:
 					if (iLocal_60 == 0)
 					{
-						iLocal_60 = EVENT::ADD_SHOCKING_EVENT_AT_POSITION(101, -104.982f, 6408.7373f, 30.4905f, 180000f);
+						iLocal_60 = EVENT::ADD_SHOCKING_EVENT_AT_POSITION(101 /*EVENT_SHOCKING_MUGGING*/, -104.982f, 6408.7373f, 30.4905f, 180000f);
 					}
 					func_110();
 					if (!PED::IS_PED_INJURED(iLocal_49))

@@ -114,7 +114,7 @@ void func_1(int iParam0)//Position - 0x13F
 {
 	if (Global_20245 == 0)
 	{
-		if (PAD::IS_CONTROL_PRESSED(2, 189) || PAD::IS_CONTROL_PRESSED(2, 190))
+		if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 189 /*INPUT_FRONTEND_LEFT*/) || PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 190 /*INPUT_FRONTEND_RIGHT*/))
 		{
 			Global_20245 = 1;
 			SYSTEM::SETTIMERA(0);
@@ -126,17 +126,17 @@ void func_1(int iParam0)//Position - 0x13F
 	}
 	if (Global_20245 == 0)
 	{
-		if (PAD::IS_CONTROL_JUST_PRESSED(2, 189))
+		if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 189 /*INPUT_FRONTEND_LEFT*/))
 		{
 			bLocal_23 = true;
 			fLocal_25 = 1f;
 		}
-		if (PAD::IS_CONTROL_PRESSED(2, 189))
+		if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 189 /*INPUT_FRONTEND_LEFT*/))
 		{
 			bLocal_23 = true;
 			fLocal_25 = 1f;
 		}
-		if (!PAD::IS_CONTROL_PRESSED(2, 189))
+		if (!PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 189 /*INPUT_FRONTEND_LEFT*/))
 		{
 			bLocal_23 = false;
 			fLocal_25 = 0f;
@@ -149,17 +149,17 @@ void func_1(int iParam0)//Position - 0x13F
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fLocal_25);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		}
-		if (PAD::IS_CONTROL_JUST_PRESSED(2, 190))
+		if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 190 /*INPUT_FRONTEND_RIGHT*/))
 		{
 			bLocal_26 = true;
 			fLocal_28 = 1f;
 		}
-		if (PAD::IS_CONTROL_PRESSED(2, 190))
+		if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 190 /*INPUT_FRONTEND_RIGHT*/))
 		{
 			bLocal_26 = true;
 			fLocal_28 = 1f;
 		}
-		if (!PAD::IS_CONTROL_PRESSED(2, 190))
+		if (!PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 190 /*INPUT_FRONTEND_RIGHT*/))
 		{
 			bLocal_26 = false;
 			fLocal_28 = 0f;
@@ -172,17 +172,17 @@ void func_1(int iParam0)//Position - 0x13F
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fLocal_28);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		}
-		if (PAD::IS_CONTROL_JUST_PRESSED(2, 188))
+		if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 188 /*INPUT_FRONTEND_UP*/))
 		{
 			bLocal_29 = true;
 			fLocal_31 = 1f;
 		}
-		if (PAD::IS_CONTROL_PRESSED(2, 188))
+		if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 188 /*INPUT_FRONTEND_UP*/))
 		{
 			bLocal_29 = true;
 			fLocal_31 = 1f;
 		}
-		if (!PAD::IS_CONTROL_PRESSED(2, 188))
+		if (!PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 188 /*INPUT_FRONTEND_UP*/))
 		{
 			bLocal_29 = false;
 			fLocal_31 = 0f;
@@ -195,17 +195,17 @@ void func_1(int iParam0)//Position - 0x13F
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fLocal_31);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		}
-		if (PAD::IS_CONTROL_JUST_PRESSED(2, 187))
+		if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 187 /*INPUT_FRONTEND_DOWN*/))
 		{
 			bLocal_32 = true;
 			fLocal_34 = 1f;
 		}
-		if (PAD::IS_CONTROL_PRESSED(2, 187))
+		if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 187 /*INPUT_FRONTEND_DOWN*/))
 		{
 			bLocal_32 = true;
 			fLocal_34 = 1f;
 		}
-		if (!PAD::IS_CONTROL_PRESSED(2, 187))
+		if (!PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 187 /*INPUT_FRONTEND_DOWN*/))
 		{
 			bLocal_32 = false;
 			fLocal_34 = 0f;
@@ -218,17 +218,17 @@ void func_1(int iParam0)//Position - 0x13F
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fLocal_34);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		}
-		if (PAD::IS_CONTROL_JUST_PRESSED(2, 202))
+		if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/))
 		{
 			bLocal_35 = true;
 			fLocal_37 = 1f;
 		}
-		if (PAD::IS_CONTROL_PRESSED(2, 202))
+		if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/))
 		{
 			bLocal_35 = true;
 			fLocal_37 = 1f;
 		}
-		if (!PAD::IS_CONTROL_PRESSED(2, 202))
+		if (!PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/))
 		{
 			bLocal_35 = false;
 			fLocal_37 = 0f;
@@ -241,17 +241,17 @@ void func_1(int iParam0)//Position - 0x13F
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fLocal_37);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		}
-		if (PAD::IS_CONTROL_JUST_PRESSED(2, 204))
+		if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 204 /*INPUT_FRONTEND_Y*/))
 		{
 			bLocal_38 = true;
 			fLocal_40 = 1f;
 		}
-		if (PAD::IS_CONTROL_PRESSED(2, 204))
+		if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 204 /*INPUT_FRONTEND_Y*/))
 		{
 			bLocal_38 = true;
 			fLocal_40 = 1f;
 		}
-		if (!PAD::IS_CONTROL_PRESSED(2, 204))
+		if (!PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 204 /*INPUT_FRONTEND_Y*/))
 		{
 			bLocal_38 = false;
 			fLocal_40 = 0f;
@@ -264,17 +264,17 @@ void func_1(int iParam0)//Position - 0x13F
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fLocal_40);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		}
-		if (PAD::IS_CONTROL_JUST_PRESSED(2, 201))
+		if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 		{
 			bLocal_41 = true;
 			fLocal_43 = 1f;
 		}
-		if (PAD::IS_CONTROL_PRESSED(2, 201))
+		if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 		{
 			bLocal_41 = true;
 			fLocal_43 = 1f;
 		}
-		if (!PAD::IS_CONTROL_PRESSED(2, 201))
+		if (!PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 		{
 			bLocal_41 = false;
 			fLocal_43 = 0f;
@@ -287,17 +287,17 @@ void func_1(int iParam0)//Position - 0x13F
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fLocal_43);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		}
-		if (PAD::IS_CONTROL_JUST_PRESSED(2, 203))
+		if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 203 /*INPUT_FRONTEND_X*/))
 		{
 			bLocal_44 = true;
 			fLocal_46 = 1f;
 		}
-		if (PAD::IS_CONTROL_PRESSED(2, 203))
+		if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 203 /*INPUT_FRONTEND_X*/))
 		{
 			bLocal_44 = true;
 			fLocal_46 = 1f;
 		}
-		if (!PAD::IS_CONTROL_PRESSED(2, 203))
+		if (!PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 203 /*INPUT_FRONTEND_X*/))
 		{
 			bLocal_44 = false;
 			fLocal_46 = 0f;

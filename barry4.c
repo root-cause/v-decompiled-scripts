@@ -354,7 +354,7 @@ void func_1()//Position - 0x121
 			}
 			else
 			{
-				PAD::DISABLE_CONTROL_ACTION(0, 177, true);
+				PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 177 /*INPUT_CELLPHONE_CANCEL*/, true);
 			}
 			break;
 		

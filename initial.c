@@ -84,7 +84,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_49 = 202;
 	iLocal_50 = 25;
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
-	PAD::DISABLE_CONTROL_ACTION(2, 199, true);
+	PAD::DISABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 199 /*INPUT_FRONTEND_PAUSE*/, true);
 	func_219();
 	func_84();
 	func_77();
@@ -111,7 +111,7 @@ void __EntryFunction__()//Position - 0x0
 	func_6();
 	func_2();
 	func_1();
-	PAD::ENABLE_CONTROL_ACTION(2, 199, true);
+	PAD::ENABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 199 /*INPUT_FRONTEND_PAUSE*/, true);
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 

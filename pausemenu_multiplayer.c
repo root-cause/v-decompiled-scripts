@@ -1071,7 +1071,7 @@ void __EntryFunction__()//Position - 0x0
 							}
 							if (!func_1395())
 							{
-								if (PAD::IS_CONTROL_JUST_RELEASED(2, 201))
+								if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 								{
 									if (!PLAYER::IS_SYSTEM_UI_BEING_DISPLAYED())
 									{
@@ -1227,7 +1227,7 @@ void __EntryFunction__()//Position - 0x0
 								{
 									func_1396(&iLocal_847);
 								}
-								if (PAD::IS_CONTROL_JUST_RELEASED(2, 202))
+								if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/))
 								{
 									if (!BitTest(uLocal_811, 1))
 									{
@@ -1249,7 +1249,7 @@ void __EntryFunction__()//Position - 0x0
 								}
 								if (!BitTest(uLocal_811, 0))
 								{
-									if (PAD::IS_CONTROL_JUST_RELEASED(2, 201))
+									if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 									{
 										if (func_1395())
 										{
@@ -3048,7 +3048,7 @@ void func_45()//Position - 0x255B
 		HUD::SET_WARNING_MESSAGE_WITH_HEADER("CWS_WARNING" /* GXT: Alert */, &cVar1, iVar2, 0, false, -1, 0, 0, true, 0);
 		if (HUD::IS_WARNING_MESSAGE_READY_FOR_CONTROL())
 		{
-			if (PAD::IS_CONTROL_JUST_RELEASED(2, 201) && func_277(iVar2, 2))
+			if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/) && func_277(iVar2, 2))
 			{
 				if (!BitTest(uLocal_811, 0))
 				{
@@ -3063,7 +3063,7 @@ void func_45()//Position - 0x255B
 				{
 					MISC::CLEAR_BIT(&uLocal_811, 0);
 				}
-				if (PAD::IS_CONTROL_JUST_RELEASED(2, 202) && func_277(iVar2, 16))
+				if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/) && func_277(iVar2, 16))
 				{
 					if (!BitTest(uLocal_811, 1))
 					{
@@ -9378,11 +9378,11 @@ void func_329()//Position - 0x9CBB
 			break;
 		
 		case 3:
-			if (PAD::IS_CONTROL_JUST_RELEASED(2, 201))
+			if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 			{
 				iLocal_229 = 4;
 			}
-			else if (PAD::IS_CONTROL_JUST_RELEASED(2, 202))
+			else if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/))
 			{
 				iLocal_229 = 0;
 				HUD::FORCE_CLOSE_REPORTUGC_MENU();
@@ -9417,7 +9417,7 @@ void func_330()//Position - 0x9D55
 				{
 					bLocal_843 = true;
 					HUD::SET_WARNING_MESSAGE_WITH_HEADER("PCARD_SYNC_ERROR_TITLE" /* GXT: Alert */, "PM_CH_NM_AL" /* GXT: Please choose a valid title for your Challenge. */, 2, 0, false, -1, 0, 0, true, 0);
-					if (PAD::IS_CONTROL_JUST_RELEASED(2, 201) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
+					if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 					{
 						iLocal_829 = 0;
 						bLocal_843 = false;
@@ -9534,7 +9534,7 @@ int func_332(var uParam0, int* iParam1, var uParam2)//Position - 0xA05F
 				
 				case 1:
 					sVar1 = MISC::GET_ONSCREEN_KEYBOARD_RESULT();
-					if (PAD::IS_CONTROL_JUST_RELEASED(2, 202) || MISC::IS_STRING_NULL_OR_EMPTY(sVar1))
+					if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/) || MISC::IS_STRING_NULL_OR_EMPTY(sVar1))
 					{
 						*uParam2 = 0;
 						*uParam0 = 2;
@@ -11327,7 +11327,7 @@ void func_335()//Position - 0xA26D
 				break;
 			}
 	}
-	if (PAD::IS_CONTROL_JUST_RELEASED(2, 201) && !func_336())
+	if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/) && !func_336())
 	{
 		if (func_1600() != 0 && !func_278())
 		{
@@ -11398,7 +11398,7 @@ int func_336()//Position - 0xC24A
 	}
 	if (BitTest(iLocal_872, 2))
 	{
-		if ((!PAD::IS_CONTROL_PRESSED(2, 202) && !PAD::IS_CONTROL_JUST_PRESSED(2, 202)) && !PAD::IS_CONTROL_JUST_RELEASED(2, 202))
+		if ((!PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/)) && !PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/))
 		{
 			MISC::CLEAR_BIT(&iLocal_872, 2);
 			return 0;
@@ -14287,7 +14287,7 @@ void func_422()//Position - 0xF622
 	if (((!LOADINGSCREEN::LOBBY_AUTO_MULTIPLAYER_FREEMODE() && !NETWORK::GET_IS_LAUNCH_FROM_LIVE_AREA()) && !NETWORK::GET_IS_LIVE_AREA_LAUNCH_WITH_CONTENT()) && !func_280())
 	{
 		HUD::SET_WARNING_MESSAGE_WITH_HEADER("PCARD_SYNC_ERROR_TITLE" /* GXT: Alert */, "PCARD_SYNC_ERROR" /* GXT: The Rockstar game services are unavailable right now. Please try again later. */, 2, 0, false, -1, 0, 0, true, 0);
-		if (PAD::IS_CONTROL_JUST_RELEASED(2, 201) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
+		if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 		{
 			if (!BitTest(uLocal_811, 0))
 			{
@@ -14337,7 +14337,7 @@ void func_424(int iParam0, bool bParam1)//Position - 0xF6E8
 void func_425()//Position - 0xF713
 {
 	func_488();
-	if (PAD::IS_CONTROL_JUST_RELEASED(2, 201))
+	if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 	{
 		if (!BitTest(uLocal_811, 0))
 		{
@@ -14413,7 +14413,7 @@ void func_425()//Position - 0xF713
 		{
 			MISC::CLEAR_BIT(&uLocal_811, 0);
 		}
-		if (PAD::IS_CONTROL_JUST_RELEASED(2, 202) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
+		if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 		{
 			if (!BitTest(uLocal_811, 1))
 			{
@@ -17014,7 +17014,7 @@ int func_497(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, ch
 			if (iParam9 != 1)
 			{
 				HUD::SET_WARNING_MESSAGE_WITH_HEADER("FMMC_ENDPUB" /* GXT: Publish Mission */, " ", 18, 0, false, -1, 0, 0, true, 0);
-				if (PAD::IS_CONTROL_JUST_RELEASED(2, 202))
+				if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/))
 				{
 					func_577(uParam0, 1);
 					*uParam3 = 0;
@@ -17023,7 +17023,7 @@ int func_497(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, ch
 						return 1;
 					}
 				}
-				if (PAD::IS_CONTROL_JUST_RELEASED(2, 201))
+				if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 				{
 					func_577(uParam0, 1);
 					*uParam3 = 1;
@@ -17126,7 +17126,7 @@ int func_497(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, ch
 			{
 				HUD::SET_WARNING_MESSAGE_WITH_HEADER_AND_SUBSTRING_FLAGS("FMMC_ENDPUBS" /* GXT: Saved */, "FMMC_ENDPUBS1" /* GXT: ~a~ '~a~' has been saved. */, 2, "", false, -1, 2, sVar23, &Var24, true, 0);
 			}
-			if (PAD::IS_CONTROL_JUST_RELEASED(2, 201))
+			if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 			{
 				return 1;
 			}
@@ -17299,7 +17299,7 @@ int func_499(bool bParam0)//Position - 0x12C85
 	{
 		HUD::SET_WARNING_MESSAGE_WITH_HEADER_AND_SUBSTRING_FLAGS("FMMC_ENDPUBF" /* GXT: Alert */, "FMMC_ENDPUBF4" /* GXT: ~a~, "~a~", failed to save. The Rockstar cloud servers are unavailable right now. Please try again later. */, 2, "", false, -1, 2, sVar0, &(Global_4718592.f_116531), true, 0);
 	}
-	if (PAD::IS_CONTROL_JUST_RELEASED(2, 201))
+	if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 	{
 		AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 		return 1;
@@ -24973,7 +24973,7 @@ void func_580()//Position - 0x1F110
 	{
 		case 0:
 			HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_DELETE" /* GXT: Delete */, "PM_DELBOOKY" /* GXT: Your Bookmark will be deleted. */, 36, 0, false, -1, 0, 0, true, 0);
-			if (PAD::IS_CONTROL_JUST_RELEASED(2, 201))
+			if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 			{
 				if (!BitTest(uLocal_811, 0))
 				{
@@ -25035,7 +25035,7 @@ void func_580()//Position - 0x1F110
 			{
 				MISC::CLEAR_BIT(&uLocal_811, 0);
 			}
-			if (PAD::IS_CONTROL_JUST_RELEASED(2, 202) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
+			if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 			{
 				if (!BitTest(uLocal_811, 1))
 				{
@@ -25104,7 +25104,7 @@ void func_580()//Position - 0x1F110
 		
 		case 2:
 			HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_DELETE" /* GXT: Delete */, "PM_DELBOOKYY" /* GXT: Your Bookmark was deleted. */, 2, 0, false, -1, 0, 0, true, 0);
-			if (PAD::IS_CONTROL_JUST_RELEASED(2, 201) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
+			if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 			{
 				if (!BitTest(uLocal_811, 0))
 				{
@@ -25343,7 +25343,7 @@ void func_586()//Position - 0x1F92A
 	{
 		case 0:
 			HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_DELETE" /* GXT: Delete */, "PM_DELETEY" /* GXT: Your Playlist will be deleted. */, 36, 0, false, -1, 0, 0, true, 0);
-			if (PAD::IS_CONTROL_JUST_RELEASED(2, 201))
+			if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 			{
 				if (!BitTest(uLocal_811, 0))
 				{
@@ -25359,7 +25359,7 @@ void func_586()//Position - 0x1F92A
 			{
 				MISC::CLEAR_BIT(&uLocal_811, 0);
 			}
-			if (PAD::IS_CONTROL_JUST_RELEASED(2, 202) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
+			if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 			{
 				if (!BitTest(uLocal_811, 1))
 				{
@@ -25385,7 +25385,7 @@ void func_586()//Position - 0x1F92A
 		
 		case 2:
 			HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_DELETE" /* GXT: Delete */, "PM_DELETEYY" /* GXT: Your Playlist was deleted. */, 2, 0, false, -1, 0, 0, true, 0);
-			if (PAD::IS_CONTROL_JUST_RELEASED(2, 201) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
+			if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 			{
 				if (!BitTest(uLocal_811, 0))
 				{
@@ -25441,7 +25441,7 @@ void func_588()//Position - 0x1FB46
 	{
 		case 0:
 			HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_DELETE" /* GXT: Delete */, "PM_DELETEY" /* GXT: Your Playlist will be deleted. */, 36, 0, false, -1, 0, 0, true, 0);
-			if (PAD::IS_CONTROL_JUST_RELEASED(2, 201))
+			if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 			{
 				if (!BitTest(uLocal_811, 0))
 				{
@@ -25458,7 +25458,7 @@ void func_588()//Position - 0x1FB46
 			{
 				MISC::CLEAR_BIT(&uLocal_811, 0);
 			}
-			if (PAD::IS_CONTROL_JUST_RELEASED(2, 202) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
+			if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 			{
 				if (!BitTest(uLocal_811, 1))
 				{
@@ -25485,7 +25485,7 @@ void func_588()//Position - 0x1FB46
 		
 		case 2:
 			HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_DELETE" /* GXT: Delete */, "PM_DELETEYY" /* GXT: Your Playlist was deleted. */, 2, 0, false, -1, 0, 0, true, 0);
-			if (PAD::IS_CONTROL_JUST_RELEASED(2, 201) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
+			if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 			{
 				if (!BitTest(uLocal_811, 0))
 				{
@@ -25573,7 +25573,7 @@ int func_589(bool bParam0, var* uParam1, int iParam2)//Position - 0x1FD66
 		
 		case 16:
 			HUD::SET_WARNING_MESSAGE_WITH_HEADER("FMMC_ENDPUBF" /* GXT: Alert */, "FMMC_ENDDELF2" /* GXT: Failed to delete. The Rockstar cloud servers are unavailable right now. Please try again later. */, 2, 0, false, -1, 0, 0, true, 0);
-			if (PAD::IS_CONTROL_JUST_RELEASED(2, 201))
+			if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 			{
 				func_583(bParam0, 1, 1);
 				NETWORK::UGC_CLEAR_MODIFY_RESULT();
@@ -25632,7 +25632,7 @@ void func_591()//Position - 0x1FE6B
 				{
 					bLocal_843 = true;
 					HUD::SET_WARNING_MESSAGE_WITH_HEADER("PCARD_SYNC_ERROR_TITLE" /* GXT: Alert */, "PM_PL_NM_AL" /* GXT: Please choose a valid title for your Playlist. */, 2, 0, false, -1, 0, 0, true, 0);
-					if (PAD::IS_CONTROL_JUST_RELEASED(2, 201) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
+					if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 					{
 						if (!BitTest(uLocal_811, 0))
 						{
@@ -25645,7 +25645,7 @@ void func_591()//Position - 0x1FE6B
 				{
 					bLocal_843 = true;
 					HUD::SET_WARNING_MESSAGE_WITH_HEADER("PCARD_SYNC_ERROR_TITLE" /* GXT: Alert */, "PM_PL_NM_FL" /* GXT: Unable to save your Playlist. Please try again later. */, 2, 0, false, -1, 0, 0, true, 0);
-					if (PAD::IS_CONTROL_JUST_RELEASED(2, 201) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
+					if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 					{
 						if (!BitTest(uLocal_811, 0))
 						{
@@ -25692,7 +25692,7 @@ void func_591()//Position - 0x1FE6B
 			{
 				HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT" /* GXT: Alert */, "PM_SAVED1N" /* GXT: Failed to save your Playlist. The Rockstar game services are unavailable right now. Please try again later. */, 2, 0, false, -1, 0, 0, true, 0);
 			}
-			if (PAD::IS_CONTROL_JUST_RELEASED(2, 201) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
+			if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 			{
 				if (!BitTest(uLocal_811, 0))
 				{
@@ -25851,7 +25851,7 @@ int func_594(var uParam0, int* iParam1, var uParam2)//Position - 0x2038F
 				case 1:
 					*uParam2 = 2;
 					sVar1 = MISC::GET_ONSCREEN_KEYBOARD_RESULT();
-					if (PAD::IS_CONTROL_JUST_RELEASED(2, 202) || MISC::IS_STRING_NULL_OR_EMPTY(sVar1))
+					if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/) || MISC::IS_STRING_NULL_OR_EMPTY(sVar1))
 					{
 						*uParam2 = 0;
 						*uParam0 = 2;
@@ -25971,7 +25971,7 @@ void func_595()//Position - 0x205DE
 	{
 		return;
 	}
-	if (PAD::IS_CONTROL_PRESSED(2, 187) || func_606(187, &(Global_1648034.f_1060), 0))
+	if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 187 /*INPUT_FRONTEND_DOWN*/) || func_606(187, &(Global_1648034.f_1060), 0))
 	{
 		if (func_41(&uLocal_795, iLocal_797, 0))
 		{
@@ -26016,7 +26016,7 @@ void func_595()//Position - 0x205DE
 			}
 		}
 	}
-	else if (PAD::IS_CONTROL_PRESSED(2, 188) || func_606(188, &(Global_1648034.f_1060), 0))
+	else if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 188 /*INPUT_FRONTEND_UP*/) || func_606(188, &(Global_1648034.f_1060), 0))
 	{
 		if (func_41(&uLocal_795, iLocal_797, 0))
 		{
@@ -26058,7 +26058,7 @@ void func_595()//Position - 0x205DE
 			func_2(&uLocal_795);
 		}
 	}
-	else if (PAD::IS_CONTROL_JUST_RELEASED(2, 201))
+	else if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 	{
 		if (!BitTest(uLocal_811, 0))
 		{
@@ -26092,7 +26092,7 @@ void func_595()//Position - 0x205DE
 			MISC::CLEAR_BIT(&uLocal_811, 0);
 		}
 	}
-	else if (PAD::IS_CONTROL_JUST_RELEASED(2, 203))
+	else if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 203 /*INPUT_FRONTEND_X*/))
 	{
 		if (!BitTest(uLocal_811, 5))
 		{
@@ -26160,7 +26160,7 @@ void func_595()//Position - 0x205DE
 			MISC::CLEAR_BIT(&uLocal_811, 5);
 		}
 	}
-	if (PAD::IS_CONTROL_JUST_RELEASED(2, 202) || Global_1050140.f_67 == 0)
+	if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/) || Global_1050140.f_67 == 0)
 	{
 		AUDIO::PLAY_SOUND_FRONTEND(-1, "BACK", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 		MISC::CLEAR_BIT(&uLocal_729, 3);
@@ -26626,9 +26626,9 @@ int func_606(int iParam0, var uParam1, int iParam2)//Position - 0x2139B
 	int iVar1;
 	int iVar2;
 	
-	iVar0 = (PAD::GET_CONTROL_VALUE(2, 195) - 127);
-	iVar1 = (PAD::GET_CONTROL_VALUE(2, 196) - 127);
-	iVar2 = (PAD::GET_CONTROL_VALUE(2, 197) - 127);
+	iVar0 = (PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 195 /*INPUT_FRONTEND_AXIS_X*/) - 127);
+	iVar1 = (PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 196 /*INPUT_FRONTEND_AXIS_Y*/) - 127);
+	iVar2 = (PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 197 /*INPUT_FRONTEND_RIGHT_AXIS_X*/) - 127);
 	switch (iParam0)
 	{
 		case 189:
@@ -28631,10 +28631,10 @@ void func_649()//Position - 0x239DD
 			HUD::RELEASE_CONTROL_OF_FRONTEND();
 			if (!Global_1957714)
 			{
-				PAD::DISABLE_CONTROL_ACTION(2, 205, true);
-				PAD::DISABLE_CONTROL_ACTION(2, 206, true);
-				PAD::DISABLE_CONTROL_ACTION(2, 207, true);
-				PAD::DISABLE_CONTROL_ACTION(2, 208, true);
+				PAD::DISABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 205 /*INPUT_FRONTEND_LB*/, true);
+				PAD::DISABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 206 /*INPUT_FRONTEND_RB*/, true);
+				PAD::DISABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 207 /*INPUT_FRONTEND_LT*/, true);
+				PAD::DISABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 208 /*INPUT_FRONTEND_RT*/, true);
 			}
 		}
 		else if (iLocal_873)
@@ -28657,7 +28657,7 @@ void func_649()//Position - 0x239DD
 			MISC::CLEAR_BIT(&iLocal_872, 1);
 		}
 	}
-	if (((PAD::IS_CONTROL_JUST_RELEASED(2, 190) && !NETWORK::IS_COMMERCE_STORE_OPEN()) && !func_336()) && !func_1383())
+	if (((PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 190 /*INPUT_FRONTEND_RIGHT*/) && !NETWORK::IS_COMMERCE_STORE_OPEN()) && !func_336()) && !func_1383())
 	{
 		if (!BitTest(uLocal_811, 7))
 		{
@@ -28729,7 +28729,7 @@ void func_649()//Position - 0x239DD
 	{
 		MISC::CLEAR_BIT(&uLocal_811, 7);
 	}
-	if (((PAD::IS_CONTROL_JUST_RELEASED(2, 189) && !NETWORK::IS_COMMERCE_STORE_OPEN()) && !func_336()) && !func_1383())
+	if (((PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 189 /*INPUT_FRONTEND_LEFT*/) && !NETWORK::IS_COMMERCE_STORE_OPEN()) && !func_336()) && !func_1383())
 	{
 		if (!BitTest(uLocal_811, 6))
 		{
@@ -28803,7 +28803,7 @@ void func_649()//Position - 0x239DD
 	}
 	if (!Global_262145.f_4764 || uVar0)
 	{
-		if (((PAD::IS_CONTROL_JUST_RELEASED(2, 210) && !NETWORK::IS_COMMERCE_STORE_OPEN()) && !func_336()) && !func_1383())
+		if (((PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 210 /*INPUT_FRONTEND_RS*/) && !NETWORK::IS_COMMERCE_STORE_OPEN()) && !func_336()) && !func_1383())
 		{
 			if (!BitTest(uLocal_811, 9))
 			{
@@ -28880,7 +28880,7 @@ void func_649()//Position - 0x239DD
 			MISC::CLEAR_BIT(&uLocal_811, 9);
 		}
 	}
-	if (((PAD::IS_CONTROL_JUST_RELEASED(2, 209) && !NETWORK::IS_COMMERCE_STORE_OPEN()) && !func_336()) && !func_1383())
+	if (((PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 209 /*INPUT_FRONTEND_LS*/) && !NETWORK::IS_COMMERCE_STORE_OPEN()) && !func_336()) && !func_1383())
 	{
 		if (!BitTest(uLocal_811, 8))
 		{
@@ -29032,7 +29032,7 @@ void func_649()//Position - 0x239DD
 	bVar4 = true;
 	if (!HUD::IS_WARNING_MESSAGE_ACTIVE())
 	{
-		if (((PAD::IS_CONTROL_JUST_RELEASED(2, 203) && !NETWORK::IS_COMMERCE_STORE_OPEN()) && !func_336()) && !func_1383())
+		if (((PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 203 /*INPUT_FRONTEND_X*/) && !NETWORK::IS_COMMERCE_STORE_OPEN()) && !func_336()) && !func_1383())
 		{
 			if (!BitTest(uLocal_811, 2))
 			{
@@ -29225,7 +29225,7 @@ void func_649()//Position - 0x239DD
 	bVar4 = true;
 	if (!HUD::IS_WARNING_MESSAGE_ACTIVE())
 	{
-		if (((PAD::IS_CONTROL_JUST_RELEASED(2, 204) && !NETWORK::IS_COMMERCE_STORE_OPEN()) && !func_336()) && !func_1383())
+		if (((PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 204 /*INPUT_FRONTEND_Y*/) && !NETWORK::IS_COMMERCE_STORE_OPEN()) && !func_336()) && !func_1383())
 		{
 			if (!BitTest(uLocal_811, 4))
 			{
@@ -29352,7 +29352,7 @@ void func_649()//Position - 0x239DD
 	bVar4 = true;
 	if (((!HUD::IS_WARNING_MESSAGE_ACTIVE() && !NETWORK::IS_COMMERCE_STORE_OPEN()) && !func_336()) && !func_1383())
 	{
-		if (iLocal_848 != 3 && (PAD::IS_CONTROL_JUST_RELEASED(2, 202) || PAD::IS_CONTROL_JUST_RELEASED(2, 238)))
+		if (iLocal_848 != 3 && (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/) || PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 238 /*INPUT_CURSOR_CANCEL*/)))
 		{
 			if (iLocal_788[0] == 4)
 			{
@@ -32393,7 +32393,7 @@ int func_681(int iParam0, var uParam1)//Position - 0x28F81
 				{
 					HUD::SET_WARNING_MESSAGE_WITH_HEADER("PCARD_SYNC_ERROR_TITLE" /* GXT: Alert */, sVar5, 8, 0, false, -1, 0, 0, true, 0);
 					bVar2 = false;
-					if (PAD::IS_CONTROL_JUST_RELEASED(2, 202) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
+					if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 					{
 						iLocal_787 = (iLocal_787 - 1);
 						func_1426(0);
@@ -32506,7 +32506,7 @@ int func_681(int iParam0, var uParam1)//Position - 0x28F81
 				HUD::SET_WARNING_MESSAGE_WITH_HEADER("PCARD_SYNC_ERROR_TITLE" /* GXT: Alert */, sVar6, 16, 0, false, -1, 0, 0, true, 0);
 			}
 			bVar2 = false;
-			if (PAD::IS_CONTROL_JUST_RELEASED(2, 202) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
+			if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 			{
 				func_1611(-1, 0);
 				iLocal_787 = (iLocal_787 - 1);
@@ -72172,7 +72172,7 @@ int func_1078(int iParam0, var uParam1)//Position - 0x76EC1
 				{
 					HUD::SET_WARNING_MESSAGE_WITH_HEADER("PCARD_SYNC_ERROR_TITLE" /* GXT: Alert */, sVar5, 8, 0, false, -1, 0, 0, true, 0);
 					bVar2 = false;
-					if (PAD::IS_CONTROL_JUST_RELEASED(2, 202) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
+					if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 					{
 						HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("SupressSelectPM"));
 						HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
@@ -72301,7 +72301,7 @@ int func_1078(int iParam0, var uParam1)//Position - 0x76EC1
 				HUD::SET_WARNING_MESSAGE_WITH_HEADER("PCARD_SYNC_ERROR_TITLE" /* GXT: Alert */, sVar6, 16, 0, false, -1, 0, 0, true, 0);
 			}
 			bVar2 = false;
-			if (PAD::IS_CONTROL_JUST_RELEASED(2, 202) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
+			if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 			{
 				if (iLocal_844 == 6 || iLocal_844 == 7)
 				{
@@ -81226,7 +81226,7 @@ void func_1331()//Position - 0x83225
 						func_1360(&uVar2);
 					}
 				}
-				if (PAD::IS_CONTROL_JUST_RELEASED(2, 201))
+				if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 				{
 					if (func_1161())
 					{
@@ -81344,7 +81344,7 @@ int func_1333(var uParam0, int iParam1, var uParam2, bool bParam3, int iParam4, 
 	}
 	if (bParam3)
 	{
-		if (((PAD::IS_CONTROL_PRESSED(2, 190) || PAD::GET_CONTROL_NORMAL(2, 218) > 0.3f) || (iParam4 && PAD::IS_CONTROL_JUST_RELEASED(2, 201))) || iParam7 == 1)
+		if (((PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 190 /*INPUT_FRONTEND_RIGHT*/) || PAD::GET_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 218 /*INPUT_SCRIPT_LEFT_AXIS_X*/) > 0.3f) || (iParam4 && PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))) || iParam7 == 1)
 		{
 			*uParam2 = 1;
 			*iParam1 = 1;
@@ -81359,7 +81359,7 @@ int func_1333(var uParam0, int iParam1, var uParam2, bool bParam3, int iParam4, 
 				iVar0 = 1;
 			}
 		}
-		if ((PAD::IS_CONTROL_PRESSED(2, 189) || PAD::GET_CONTROL_NORMAL(2, 218) < -0.3f) || iParam7 == -1)
+		if ((PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 189 /*INPUT_FRONTEND_LEFT*/) || PAD::GET_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 218 /*INPUT_SCRIPT_LEFT_AXIS_X*/) < -0.3f) || iParam7 == -1)
 		{
 			*uParam2 = 1;
 			*iParam1 = -1;
@@ -81376,7 +81376,7 @@ int func_1333(var uParam0, int iParam1, var uParam2, bool bParam3, int iParam4, 
 	}
 	else
 	{
-		if ((PAD::IS_CONTROL_PRESSED(2, 188) || PAD::GET_CONTROL_NORMAL(2, 219) < -0.3f) || (iParam4 && PAD::IS_CONTROL_JUST_RELEASED(2, 201)))
+		if ((PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 188 /*INPUT_FRONTEND_UP*/) || PAD::GET_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 219 /*INPUT_SCRIPT_LEFT_AXIS_Y*/) < -0.3f) || (iParam4 && PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/)))
 		{
 			*uParam2 = 1;
 			*iParam1 = 1;
@@ -81390,7 +81390,7 @@ int func_1333(var uParam0, int iParam1, var uParam2, bool bParam3, int iParam4, 
 				iVar0 = 1;
 			}
 		}
-		if (PAD::IS_CONTROL_PRESSED(2, 187) || PAD::GET_CONTROL_NORMAL(2, 219) > 0.3f)
+		if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 187 /*INPUT_FRONTEND_DOWN*/) || PAD::GET_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 219 /*INPUT_SCRIPT_LEFT_AXIS_Y*/) > 0.3f)
 		{
 			*uParam2 = 1;
 			*iParam1 = -1;
@@ -81597,7 +81597,7 @@ void func_1347(int iParam0, int iParam1, int iParam2)//Position - 0x839AF
 	{
 		return;
 	}
-	if (PAD::IS_CONTROL_PRESSED(2, 199) || PAD::IS_DISABLED_CONTROL_PRESSED(2, 199))
+	if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 199 /*INPUT_FRONTEND_PAUSE*/) || PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 199 /*INPUT_FRONTEND_PAUSE*/))
 	{
 		return;
 	}
@@ -82162,7 +82162,7 @@ int func_1363(var uParam0, int iParam1, var uParam2, bool bParam3, int iParam4, 
 	GRAPHICS::SET_SCRIPT_GFX_DRAW_BEHIND_PAUSEMENU(true);
 	if (bParam3)
 	{
-		if (((PAD::IS_DISABLED_CONTROL_PRESSED(2, 190) || PAD::GET_CONTROL_NORMAL(2, 218) > 0.3f) || func_1367(iParam7, 1, iParam8)) || (iParam4 && PAD::IS_CONTROL_JUST_RELEASED(2, 201)))
+		if (((PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 190 /*INPUT_FRONTEND_RIGHT*/) || PAD::GET_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 218 /*INPUT_SCRIPT_LEFT_AXIS_X*/) > 0.3f) || func_1367(iParam7, 1, iParam8)) || (iParam4 && PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/)))
 		{
 			*uParam2 = 1;
 			if (MISC::ABSI(NETWORK::GET_TIME_DIFFERENCE(*uParam0, NETWORK::GET_NETWORK_TIME())) > iVar1)
@@ -82176,7 +82176,7 @@ int func_1363(var uParam0, int iParam1, var uParam2, bool bParam3, int iParam4, 
 				*iParam1 = 1;
 			}
 		}
-		if ((PAD::IS_DISABLED_CONTROL_PRESSED(2, 189) || func_1367(iParam7, -1, iParam8)) || PAD::GET_CONTROL_NORMAL(2, 218) < -0.3f)
+		if ((PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 189 /*INPUT_FRONTEND_LEFT*/) || func_1367(iParam7, -1, iParam8)) || PAD::GET_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 218 /*INPUT_SCRIPT_LEFT_AXIS_X*/) < -0.3f)
 		{
 			*uParam2 = 1;
 			if (MISC::ABSI(NETWORK::GET_TIME_DIFFERENCE(*uParam0, NETWORK::GET_NETWORK_TIME())) > iVar1)
@@ -82190,7 +82190,7 @@ int func_1363(var uParam0, int iParam1, var uParam2, bool bParam3, int iParam4, 
 				*iParam1 = -1;
 			}
 		}
-		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2) && func_1366())
+		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/) && func_1366())
 		{
 			if (MISC::ABSI(NETWORK::GET_TIME_DIFFERENCE(*uParam0, NETWORK::GET_NETWORK_TIME())) > iVar1)
 			{
@@ -82217,10 +82217,10 @@ int func_1363(var uParam0, int iParam1, var uParam2, bool bParam3, int iParam4, 
 	}
 	else
 	{
-		if (((PAD::IS_DISABLED_CONTROL_PRESSED(2, 188) || PAD::GET_CONTROL_NORMAL(2, 219) < -0.3f) || PAD::IS_DISABLED_CONTROL_PRESSED(2, 241)) || (iParam4 && PAD::IS_CONTROL_JUST_RELEASED(2, 201)))
+		if (((PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 188 /*INPUT_FRONTEND_UP*/) || PAD::GET_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 219 /*INPUT_SCRIPT_LEFT_AXIS_Y*/) < -0.3f) || PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 241 /*INPUT_CURSOR_SCROLL_UP*/)) || (iParam4 && PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/)))
 		{
 			*uParam2 = 1;
-			if (PAD::IS_DISABLED_CONTROL_PRESSED(2, 241))
+			if (PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 241 /*INPUT_CURSOR_SCROLL_UP*/))
 			{
 				iVar1 = 100;
 			}
@@ -82235,10 +82235,10 @@ int func_1363(var uParam0, int iParam1, var uParam2, bool bParam3, int iParam4, 
 				*iParam1 = 1;
 			}
 		}
-		if ((PAD::IS_DISABLED_CONTROL_PRESSED(2, 187) || PAD::GET_CONTROL_NORMAL(2, 219) > 0.3f) || PAD::IS_DISABLED_CONTROL_PRESSED(2, 242))
+		if ((PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 187 /*INPUT_FRONTEND_DOWN*/) || PAD::GET_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 219 /*INPUT_SCRIPT_LEFT_AXIS_Y*/) > 0.3f) || PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 242 /*INPUT_CURSOR_SCROLL_DOWN*/))
 		{
 			*uParam2 = 1;
-			if (PAD::IS_DISABLED_CONTROL_PRESSED(2, 242))
+			if (PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 242 /*INPUT_CURSOR_SCROLL_DOWN*/))
 			{
 				iVar1 = 100;
 			}
@@ -82304,7 +82304,7 @@ int func_1364(int iParam0, int iParam1, int iParam2)//Position - 0x847F5
 		return 1;
 	}
 	PAD::SET_USE_ADJUSTED_MOUSE_COORDS(true);
-	fVar4 = PAD::GET_CONTROL_NORMAL(2, 239);
+	fVar4 = PAD::GET_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 239 /*INPUT_CURSOR_X*/);
 	if (fVar4 >= fVar1 && fVar4 <= fVar2)
 	{
 		if (iParam1 == 1)
@@ -82343,22 +82343,22 @@ float func_1365(float fParam0)//Position - 0x84904
 
 int func_1366()//Position - 0x8491E
 {
-	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
-		return PAD::IS_DISABLED_CONTROL_PRESSED(2, 237);
+		return PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 237 /*INPUT_CURSOR_ACCEPT*/);
 	}
 	return 0;
 }
 
 int func_1367(int iParam0, int iParam1, int iParam2)//Position - 0x84939
 {
-	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
 		if (HUD::IS_WARNING_MESSAGE_ACTIVE() || NETWORK::NETWORK_TEXT_CHAT_IS_TYPING())
 		{
 			return 0;
 		}
-		if (PAD::IS_DISABLED_CONTROL_JUST_RELEASED(2, 237))
+		if (PAD::IS_DISABLED_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 237 /*INPUT_CURSOR_ACCEPT*/))
 		{
 			if (func_1364(iParam0, iParam1, iParam2))
 			{
@@ -84204,7 +84204,7 @@ void func_1402()//Position - 0x8720B
 								{
 									bVar4 = false;
 									HUD::SET_WARNING_MESSAGE_WITH_HEADER("PCARD_SYNC_ERROR_TITLE" /* GXT: Alert */, "PM_PL_LIMIT" /* GXT: You have created the maximum number of Playlists. */, 16, 0, false, -1, 0, 0, true, 0);
-									if (PAD::IS_CONTROL_JUST_RELEASED(2, 202) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
+									if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 									{
 										iLocal_787 = (iLocal_787 - 1);
 										func_1426(0);
@@ -84352,7 +84352,7 @@ void func_1403()//Position - 0x87ADA
 								{
 									bVar4 = false;
 									HUD::SET_WARNING_MESSAGE_WITH_HEADER("PCARD_SYNC_ERROR_TITLE" /* GXT: Alert */, "PM_NO_MJ_AL" /* GXT: You have no Jobs available. */, 16, 0, false, -1, 0, 0, true, 0);
-									if (PAD::IS_CONTROL_JUST_RELEASED(2, 202) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
+									if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 									{
 										iLocal_787 = (iLocal_787 - 1);
 										func_1426(0);
@@ -84373,7 +84373,7 @@ void func_1403()//Position - 0x87ADA
 								{
 									bVar4 = false;
 									HUD::SET_WARNING_MESSAGE_WITH_HEADER("PCARD_SYNC_ERROR_TITLE" /* GXT: Alert */, "PM_NO_BM_AL" /* GXT: No Bookmarked Jobs are available. */, 16, 0, false, -1, 0, 0, true, 0);
-									if (PAD::IS_CONTROL_JUST_RELEASED(2, 202) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
+									if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 									{
 										iLocal_787 = (iLocal_787 - 1);
 										func_1426(0);
@@ -84394,7 +84394,7 @@ void func_1403()//Position - 0x87ADA
 								{
 									bVar4 = false;
 									HUD::SET_WARNING_MESSAGE_WITH_HEADER("PCARD_SYNC_ERROR_TITLE" /* GXT: Alert */, "PM_NO_RP_AL" /* GXT: No Recently Played Jobs are available. */, 16, 0, false, -1, 0, 0, true, 0);
-									if (PAD::IS_CONTROL_JUST_RELEASED(2, 202) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
+									if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 									{
 										iLocal_787 = (iLocal_787 - 1);
 										func_1426(0);
@@ -84698,7 +84698,7 @@ int func_1404(int iParam0, bool bParam1, int iParam2)//Position - 0x881B5
 					HUD::SET_WARNING_MESSAGE_WITH_HEADER("PCARD_SYNC_ERROR_TITLE" /* GXT: Alert */, func_682(Local_247.f_41), 2, 0, false, -1, 0, 0, true, 0);
 				}
 				bVar5 = false;
-				if (PAD::IS_CONTROL_JUST_RELEASED(2, 202) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
+				if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 				{
 					iLocal_787 = (iLocal_787 - 1);
 					func_1426(0);
@@ -85835,7 +85835,7 @@ void func_1435()//Position - 0x89FD4
 			sVar0 = "UGC_FL_UNEX" /* GXT: The Rockstar game services are unavailable right now. Please try again later. */;
 		}
 		HUD::SET_WARNING_MESSAGE_WITH_HEADER("PCARD_SYNC_ERROR_TITLE" /* GXT: Alert */, sVar0, 2, 0, false, -1, 0, 0, true, 0);
-		if (PAD::IS_CONTROL_JUST_RELEASED(2, 201) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
+		if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 		{
 			if (iLocal_865 == 3 && iLocal_859)
 			{

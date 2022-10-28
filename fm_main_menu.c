@@ -391,7 +391,7 @@ void __EntryFunction__()//Position - 0x0
 				break;
 			
 			case 3:
-				if (PAD::IS_CONTROL_JUST_PRESSED(2, 217))
+				if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 217 /*INPUT_FRONTEND_SELECT*/))
 				{
 					iLocal_227 = 1;
 				}

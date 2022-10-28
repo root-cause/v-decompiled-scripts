@@ -3202,7 +3202,7 @@ void func_94(var uParam0, var uParam1, int iParam2)//Position - 0x3B3D
 	{
 		func_101(*uParam0, iParam2, 1);
 	}
-	PAD::SET_CONTROL_SHAKE(0, 200, 250);
+	PAD::SET_CONTROL_SHAKE(0 /*PLAYER_CONTROL*/, 200, 250);
 	STATS::STAT_INCREMENT(uParam0->f_6, 1f);
 	if (bLocal_41)
 	{

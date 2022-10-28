@@ -594,7 +594,7 @@ void func_14(var uParam0)//Position - 0x4B4
 			{
 				HUD::CLEAR_HELP(true);
 			}
-			if ((!func_297(PLAYER::PLAYER_ID()) && PAD::IS_CONTROL_JUST_PRESSED(2, 222)) || func_23())
+			if ((!func_297(PLAYER::PLAYER_ID()) && PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 222 /*INPUT_SCRIPT_RUP*/)) || func_23())
 			{
 				func_258();
 				iLocal_70 = 0;

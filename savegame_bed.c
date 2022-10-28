@@ -481,7 +481,7 @@ void func_9()//Position - 0x5F0
 	{
 		func_11(0);
 		func_10();
-		PAD::DISABLE_CONTROL_ACTION(2, 199, true);
+		PAD::DISABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 199 /*INPUT_FRONTEND_PAUSE*/, true);
 	}
 }
 
@@ -92225,7 +92225,7 @@ void func_423()//Position - 0x6B8FB
 					{
 						func_428(&iLocal_100, 3, &Local_76, 0, 0, 0, 0);
 					}
-					PAD::SET_INPUT_EXCLUSIVE(0, 51);
+					PAD::SET_INPUT_EXCLUSIVE(0 /*PLAYER_CONTROL*/, 51 /*INPUT_CONTEXT*/);
 					if (func_427(iLocal_100, 1))
 					{
 						bVar0 = false;
@@ -92648,8 +92648,8 @@ int func_437(var uParam0, int iParam1)//Position - 0x6C392
 	int iVar0;
 	int iVar1;
 	
-	iVar0 = (PAD::GET_CONTROL_VALUE(2, 195) - 128);
-	iVar1 = (PAD::GET_CONTROL_VALUE(2, 196) - 128);
+	iVar0 = (PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 195 /*INPUT_FRONTEND_AXIS_X*/) - 128);
+	iVar1 = (PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 196 /*INPUT_FRONTEND_AXIS_Y*/) - 128);
 	if (((iVar0 < iParam1 && iVar0 > -iParam1) && iVar1 < iParam1) && iVar1 > -iParam1)
 	{
 		*uParam0++;

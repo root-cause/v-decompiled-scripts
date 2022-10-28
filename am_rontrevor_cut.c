@@ -3732,7 +3732,7 @@ int func_84()//Position - 0x3AE7
 	{
 		return 0;
 	}
-	if (PAD::IS_CONTROL_JUST_PRESSED(0, 18) || PAD::IS_CONTROL_JUST_PRESSED(2, 18))
+	if (PAD::IS_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 18 /*INPUT_SKIP_CUTSCENE*/) || PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 18 /*INPUT_SKIP_CUTSCENE*/))
 	{
 		return 1;
 	}
@@ -6944,7 +6944,7 @@ void func_196(bool bParam0)//Position - 0x79C4
 				{
 					if ((func_199() || func_198()) || func_197())
 					{
-						if (PAD::IS_CONTROL_PRESSED(0, 351))
+						if (PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 351 /*INPUT_VEH_ROCKET_BOOST*/))
 						{
 							Global_2667225.f_45.f_318 = NETWORK::GET_NETWORK_TIME_ACCURATE();
 							func_161(1000, 0, 1);

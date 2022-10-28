@@ -204,7 +204,7 @@ int func_3(int iParam0, int iParam1, int iParam2)//Position - 0x29B
 	{
 		if (MISC::IS_PC_VERSION())
 		{
-			if (MISC::UPDATE_ONSCREEN_KEYBOARD() == 0 || (NETWORK::NETWORK_TEXT_CHAT_IS_TYPING() && PAD::IS_USING_KEYBOARD_AND_MOUSE(2)))
+			if (MISC::UPDATE_ONSCREEN_KEYBOARD() == 0 || (NETWORK::NETWORK_TEXT_CHAT_IS_TYPING() && PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/)))
 			{
 				return 0;
 			}
@@ -242,7 +242,7 @@ void func_6()//Position - 0x342
 	{
 		if (Global_20244 == 0)
 		{
-			if (PAD::IS_CONTROL_JUST_PRESSED(2, Global_20237))
+			if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, Global_20237))
 			{
 				func_2();
 				Global_20244 = 1;
@@ -283,7 +283,7 @@ void func_6()//Position - 0x342
 	}
 	else if (Global_20244 == 0)
 	{
-		if (PAD::IS_CONTROL_PRESSED(2, Global_20238))
+		if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, Global_20238))
 		{
 			if (iLocal_25 == 1)
 			{
@@ -1815,7 +1815,7 @@ void func_33()//Position - 0x1E07
 		{
 			if (Global_78319)
 			{
-				PAD::SET_INPUT_EXCLUSIVE(0, Global_20238);
+				PAD::SET_INPUT_EXCLUSIVE(0 /*PLAYER_CONTROL*/, Global_20238);
 				if (func_3(2, Global_20238, 0))
 				{
 					Global_20244 = 1;
@@ -2041,7 +2041,7 @@ void func_38()//Position - 0x2B5F
 	}
 	if (iLocal_26 == 0)
 	{
-		if (func_3(2, Global_20242, 0) || PAD::IS_CONTROL_JUST_PRESSED(2, 181))
+		if (func_3(2, Global_20242, 0) || PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 181 /*INPUT_CELLPHONE_SCROLL_BACKWARD*/))
 		{
 			if (iLocal_21 > 0)
 			{
@@ -2051,7 +2051,7 @@ void func_38()//Position - 0x2B5F
 			iLocal_26 = 1;
 			SYSTEM::SETTIMERA(0);
 		}
-		if (func_3(2, Global_20243, 0) || PAD::IS_CONTROL_JUST_PRESSED(2, 180))
+		if (func_3(2, Global_20243, 0) || PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 180 /*INPUT_CELLPHONE_SCROLL_FORWARD*/))
 		{
 			iLocal_21++;
 			if (iLocal_21 == iLocal_20)

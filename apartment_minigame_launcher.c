@@ -1257,13 +1257,13 @@ void func_26(int* iParam0)//Position - 0x1548
 	}
 	if (BitTest(*iParam0, 5))
 	{
-		PAD::DISABLE_CONTROL_ACTION(0, 30, true);
-		PAD::DISABLE_CONTROL_ACTION(0, 31, true);
+		PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 30 /*INPUT_MOVE_LR*/, true);
+		PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 31 /*INPUT_MOVE_UD*/, true);
 	}
 	else
 	{
-		PAD::ENABLE_CONTROL_ACTION(0, 30, true);
-		PAD::ENABLE_CONTROL_ACTION(0, 31, true);
+		PAD::ENABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 30 /*INPUT_MOVE_LR*/, true);
+		PAD::ENABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 31 /*INPUT_MOVE_UD*/, true);
 	}
 	if (BitTest(*iParam0, 7))
 	{
@@ -1968,7 +1968,7 @@ void func_47(struct<21> Param0, bool bParam1)//Position - 0x207F
 					else
 					{
 						func_105(func_104(Param0, 0), 0);
-						if (PAD::IS_CONTROL_JUST_PRESSED(2, 51))
+						if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 51 /*INPUT_CONTEXT*/))
 						{
 							func_103(PLAYER::GET_PLAYER_INDEX(), Param0.f_0, 1);
 							func_44(&(Local_218[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/]), 1, 1);
@@ -2008,9 +2008,9 @@ void func_47(struct<21> Param0, bool bParam1)//Position - 0x207F
 			
 			case 1:
 				bVar3 = false;
-				PAD::DISABLE_CONTROL_ACTION(0, 37, true);
-				PAD::DISABLE_CONTROL_ACTION(0, 12, true);
-				PAD::DISABLE_CONTROL_ACTION(0, 13, true);
+				PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 37 /*INPUT_SELECT_WEAPON*/, true);
+				PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 12 /*INPUT_WEAPON_WHEEL_UD*/, true);
+				PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 13 /*INPUT_WEAPON_WHEEL_LR*/, true);
 				if (Local_146.f_1 == 1)
 				{
 					Local_146.f_1 = 0;
@@ -2050,9 +2050,9 @@ void func_47(struct<21> Param0, bool bParam1)//Position - 0x207F
 				break;
 			
 			case 2:
-				PAD::DISABLE_CONTROL_ACTION(0, 37, true);
-				PAD::DISABLE_CONTROL_ACTION(0, 12, true);
-				PAD::DISABLE_CONTROL_ACTION(0, 13, true);
+				PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 37 /*INPUT_SELECT_WEAPON*/, true);
+				PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 12 /*INPUT_WEAPON_WHEEL_UD*/, true);
+				PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 13 /*INPUT_WEAPON_WHEEL_LR*/, true);
 				fVar5 = MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), Local_158[0 /*13*/], true);
 				fVar6 = MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), Local_158[1 /*13*/], true);
 				if (fVar5 < fVar6)
@@ -2072,9 +2072,9 @@ void func_47(struct<21> Param0, bool bParam1)//Position - 0x207F
 				break;
 			
 			case 6:
-				PAD::DISABLE_CONTROL_ACTION(0, 37, true);
-				PAD::DISABLE_CONTROL_ACTION(0, 12, true);
-				PAD::DISABLE_CONTROL_ACTION(0, 13, true);
+				PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 37 /*INPUT_SELECT_WEAPON*/, true);
+				PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 12 /*INPUT_WEAPON_WHEEL_UD*/, true);
+				PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 13 /*INPUT_WEAPON_WHEEL_LR*/, true);
 				if (func_174(&iLocal_207))
 				{
 					func_153(&iLocal_207);
@@ -2108,7 +2108,7 @@ void func_47(struct<21> Param0, bool bParam1)//Position - 0x207F
 						func_44(&(Local_218[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/]), 3, 1);
 					}
 				}
-				if ((PAD::IS_CONTROL_JUST_PRESSED(2, func_100(0)) || BitTest(Local_156.f_3, Param0.f_0)) && !bLocal_94)
+				if ((PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, func_100(0)) || BitTest(Local_156.f_3, Param0.f_0)) && !bLocal_94)
 				{
 					func_41(&Local_146, 8);
 				}
@@ -2121,7 +2121,7 @@ void func_47(struct<21> Param0, bool bParam1)//Position - 0x207F
 				{
 					if (func_19(&(Local_218[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/]), 0))
 					{
-						if ((PAD::IS_CONTROL_JUST_PRESSED(2, 201) && BitTest(Local_156.f_2, Param0.f_0)) && !bLocal_94)
+						if ((PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/) && BitTest(Local_156.f_2, Param0.f_0)) && !bLocal_94)
 						{
 							func_41(&Local_146, 7);
 						}
@@ -2182,9 +2182,9 @@ void func_47(struct<21> Param0, bool bParam1)//Position - 0x207F
 				break;
 			
 			case 7:
-				PAD::DISABLE_CONTROL_ACTION(0, 37, true);
-				PAD::DISABLE_CONTROL_ACTION(0, 12, true);
-				PAD::DISABLE_CONTROL_ACTION(0, 13, true);
+				PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 37 /*INPUT_SELECT_WEAPON*/, true);
+				PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 12 /*INPUT_WEAPON_WHEEL_UD*/, true);
+				PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 13 /*INPUT_WEAPON_WHEEL_LR*/, true);
 				func_48(PLAYER::GET_PLAYER_INDEX(), Param0.f_0);
 				func_44(&(Local_218[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/]), 8, 1);
 				func_17(&iLocal_137, 1, 1);
@@ -4182,18 +4182,18 @@ void func_60(int* iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, 
 	}
 	if (Global_23150.f_5160 != 0)
 	{
-		if (PAD::HAVE_CONTROLS_CHANGED(2))
+		if (PAD::HAVE_CONTROLS_CHANGED(2 /*FRONTEND_CONTROL*/))
 		{
 			iVar1 = 0;
 			while (iVar1 < Global_23150.f_5160)
 			{
 				if (Global_23150.f_5417[iVar1] != 363)
 				{
-					StringCopy(&(Global_23150.f_5162[iVar1 /*16*/]), PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, Global_23150.f_5417[iVar1], true), 64);
+					StringCopy(&(Global_23150.f_5162[iVar1 /*16*/]), PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, Global_23150.f_5417[iVar1], true), 64);
 				}
 				else if (Global_23150.f_5430[iVar1] != 32)
 				{
-					StringCopy(&(Global_23150.f_5162[iVar1 /*16*/]), PAD::GET_CONTROL_GROUP_INSTRUCTIONAL_BUTTONS_STRING(2, Global_23150.f_5430[iVar1], true), 64);
+					StringCopy(&(Global_23150.f_5162[iVar1 /*16*/]), PAD::GET_CONTROL_GROUP_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, Global_23150.f_5430[iVar1], true), 64);
 				}
 				iVar1++;
 			}
@@ -5274,7 +5274,7 @@ void func_90(struct<21> Param0)//Position - 0x7322
 	{
 		func_94(201, func_104(Param0, 2), -1, 0);
 	}
-	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
 		iVar1 = 225;
 	}
@@ -5373,7 +5373,7 @@ void func_94(int iParam0, char* sParam1, int iParam2, bool bParam3)//Position - 
 {
 	char* sVar0;
 	
-	sVar0 = PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, iParam0, true);
+	sVar0 = PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, iParam0, true);
 	if (Global_23150.f_5160 >= 12)
 	{
 		StringCopy(&Global_4539885, sVar0, 64);
@@ -5460,11 +5460,11 @@ void func_98()//Position - 0x77C0
 		AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 		iLocal_95 = 1;
 	}
-	if (PAD::IS_CONTROL_JUST_PRESSED(2, 201))
+	if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 	{
 		AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 	}
-	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
 		iVar0 = 225;
 	}
@@ -5472,17 +5472,17 @@ void func_98()//Position - 0x77C0
 	{
 		iVar0 = 202;
 	}
-	if (PAD::IS_CONTROL_JUST_PRESSED(2, iVar0))
+	if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, iVar0))
 	{
 		AUDIO::PLAY_SOUND_FRONTEND(-1, "CANCEL", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 	}
-	if (PAD::IS_CONTROL_JUST_PRESSED(2, 174))
+	if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 174 /*INPUT_CELLPHONE_LEFT*/))
 	{
 		AUDIO::PLAY_SOUND_FRONTEND(-1, "NAV_LEFT_RIGHT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 		func_99(&iLocal_138, 5, 0, 1);
 		iLocal_92 = 1;
 	}
-	if (PAD::IS_CONTROL_JUST_PRESSED(2, 175))
+	if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 175 /*INPUT_CELLPHONE_RIGHT*/))
 	{
 		AUDIO::PLAY_SOUND_FRONTEND(-1, "NAV_LEFT_RIGHT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 		func_99(&iLocal_138, 5, 1, 1);
@@ -5545,7 +5545,7 @@ int func_100(int iParam0)//Position - 0x7910
 	switch (iParam0)
 	{
 		case 0:
-			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 			{
 				return 225;
 			}
@@ -5599,7 +5599,7 @@ void func_103(int iParam0, var uParam1, bool bParam2)//Position - 0x799B
 
 var func_104(struct<13> Param0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, int iParam9)//Position - 0x79DF
 {
-	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
 		switch (iParam9)
 		{

@@ -3415,7 +3415,7 @@ void func_102(bool bParam0)//Position - 0x409F
 				{
 					if ((func_105() || func_104()) || func_103())
 					{
-						if (PAD::IS_CONTROL_PRESSED(0, 351))
+						if (PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 351 /*INPUT_VEH_ROCKET_BOOST*/))
 						{
 							Global_2667225.f_45.f_318 = NETWORK::GET_NETWORK_TIME_ACCURATE();
 							func_65(1000, 0, 1);

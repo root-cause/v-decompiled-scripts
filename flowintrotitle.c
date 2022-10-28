@@ -134,7 +134,7 @@ void func_6(char* sParam0, float fParam1, float fParam2, float fParam3, float fP
 void func_7()//Position - 0x24B
 {
 	HUD::HIDE_LOADING_ON_FADE_THIS_FRAME();
-	PAD::DISABLE_CONTROL_ACTION(2, 199, true);
+	PAD::DISABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 199 /*INPUT_FRONTEND_PAUSE*/, true);
 	GRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(7);
 	func_8();
 }

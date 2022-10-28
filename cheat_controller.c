@@ -631,7 +631,7 @@ void func_25()//Position - 0xA4E
 {
 	if (PED::IS_PED_ON_FOOT(PLAYER::PLAYER_PED_ID()))
 	{
-		if (PAD::IS_CONTROL_PRESSED(2, 25))
+		if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 25 /*INPUT_AIM*/))
 		{
 			if (func_26(PLAYER::PLAYER_PED_ID()) != joaat("WEAPON_UNARMED") && func_26(PLAYER::PLAYER_PED_ID()) != joaat("OBJECT"))
 			{
@@ -742,17 +742,17 @@ void func_32()//Position - 0xBFA
 			break;
 		
 		case 5:
-			PAD::DISABLE_CONTROL_ACTION(2, 37, true);
-			PAD::DISABLE_CONTROL_ACTION(2, 19, true);
-			if ((((((((!PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()) || func_28()) || func_34()) || func_33(1)) || PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2, 37)) || PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2, 19)) || func_27(23)) || func_27(21)) || func_27(16))
+			PAD::DISABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 37 /*INPUT_SELECT_WEAPON*/, true);
+			PAD::DISABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 19 /*INPUT_CHARACTER_WHEEL*/, true);
+			if ((((((((!PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()) || func_28()) || func_34()) || func_33(1)) || PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 37 /*INPUT_SELECT_WEAPON*/)) || PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 19 /*INPUT_CHARACTER_WHEEL*/)) || func_27(23)) || func_27(21)) || func_27(16))
 			{
 				iLocal_63 = 9;
 			}
 			break;
 		
 		case 9:
-			PAD::DISABLE_CONTROL_ACTION(2, 37, true);
-			PAD::DISABLE_CONTROL_ACTION(2, 19, true);
+			PAD::DISABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 37 /*INPUT_SELECT_WEAPON*/, true);
+			PAD::DISABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 19 /*INPUT_CHARACTER_WHEEL*/, true);
 			func_24("CHEAT_SLOW_MO" /* GXT: Slow Motion. */);
 			func_31(16, 0);
 			iLocal_76 = 0;
@@ -855,8 +855,8 @@ void func_36()//Position - 0xD99
 		case 4:
 			if (func_38(1000, iLocal_72))
 			{
-				PAD::DISABLE_CONTROL_ACTION(0, 144, true);
-				PAD::DISABLE_CONTROL_ACTION(0, 149, true);
+				PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 144 /*INPUT_PARACHUTE_DEPLOY*/, true);
+				PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 149 /*INPUT_PARACHUTE_PITCH_UD*/, true);
 				if (func_8() == 0)
 				{
 					PED::SET_PED_COMPONENT_VARIATION(PLAYER::PLAYER_PED_ID(), 9, 0, 0, 0);
@@ -879,7 +879,7 @@ void func_36()//Position - 0xD99
 				iLocal_64 = 9;
 				break;
 			}
-			PAD::DISABLE_CONTROL_ACTION(0, 144, true);
+			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 144 /*INPUT_PARACHUTE_DEPLOY*/, true);
 			HUD::HIDE_HUD_COMPONENT_THIS_FRAME(2);
 			if (PED::IS_PED_IN_PARACHUTE_FREE_FALL(PLAYER::PLAYER_PED_ID()))
 			{
@@ -2568,7 +2568,7 @@ void func_88()//Position - 0x2C67
 {
 	if ((func_111() || iLocal_84 != 0) || func_15(14))
 	{
-		PAD::DISABLE_CONTROL_ACTION(2, 243, true);
+		PAD::DISABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 243 /*INPUT_ENTER_CHEAT_CODE*/, true);
 	}
 	func_110();
 	if (PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))

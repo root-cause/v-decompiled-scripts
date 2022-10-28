@@ -83,7 +83,7 @@ void __EntryFunction__()//Position - 0x0
 				{
 					if (VEHICLE::IS_VEHICLE_MODEL(iLocal_28, joaat("handler")))
 					{
-						PAD::SET_INPUT_EXCLUSIVE(0, 51);
+						PAD::SET_INPUT_EXCLUSIVE(0 /*PLAYER_CONTROL*/, 51 /*INPUT_CONTEXT*/);
 						if (!VEHICLE::IS_ANY_ENTITY_ATTACHED_TO_HANDLER_FRAME(iLocal_28))
 						{
 							if (iLocal_32 == 0)
@@ -98,7 +98,7 @@ void __EntryFunction__()//Position - 0x0
 									{
 										if (VEHICLE::IS_HANDLER_FRAME_LINED_UP_WITH_CONTAINER(iLocal_28, iLocal_29))
 										{
-											if (PAD::IS_CONTROL_JUST_PRESSED(0, 51))
+											if (PAD::IS_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 51 /*INPUT_CONTEXT*/))
 											{
 												VEHICLE::ATTACH_CONTAINER_TO_HANDLER_FRAME_WHEN_LINED_UP(iLocal_28, iLocal_29);
 												iLocal_31 = 1;
@@ -117,7 +117,7 @@ void __EntryFunction__()//Position - 0x0
 								iLocal_31 = 0;
 								iLocal_32 = 0;
 							}
-							if (PAD::IS_CONTROL_JUST_PRESSED(0, 51))
+							if (PAD::IS_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 51 /*INPUT_CONTEXT*/))
 							{
 							}
 						}

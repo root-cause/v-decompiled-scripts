@@ -1096,7 +1096,7 @@ void __EntryFunction__()//Position - 0x0
 				func_374();
 				func_292(0);
 				HUD::HIDE_HUD_COMPONENT_THIS_FRAME(19);
-				PAD::DISABLE_CONTROL_ACTION(0, 37, true);
+				PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 37 /*INPUT_SELECT_WEAPON*/, true);
 				func_370();
 				if (!iLocal_569 && func_291(iVar3))
 				{
@@ -75659,7 +75659,7 @@ void func_385(int iParam0, int iParam1, int iParam2)//Position - 0x5A153
 	{
 		return;
 	}
-	if (PAD::IS_CONTROL_PRESSED(2, 199) || PAD::IS_DISABLED_CONTROL_PRESSED(2, 199))
+	if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 199 /*INPUT_FRONTEND_PAUSE*/) || PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 199 /*INPUT_FRONTEND_PAUSE*/))
 	{
 		return;
 	}

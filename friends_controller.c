@@ -1409,11 +1409,11 @@ void func_31(var uParam0, var uParam1)//Position - 0x105A
 				{
 					func_91(uParam0, 20);
 				}
-				else if (func_55(uParam0->f_53, 0) && PAD::IS_CONTROL_PRESSED(0, 52))
+				else if (func_55(uParam0->f_53, 0) && PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 52 /*INPUT_CONTEXT_SECONDARY*/))
 				{
 					func_91(uParam0, 18);
 				}
-				PAD::SET_INPUT_EXCLUSIVE(0, 52);
+				PAD::SET_INPUT_EXCLUSIVE(0 /*PLAYER_CONTROL*/, 52 /*INPUT_CONTEXT_SECONDARY*/);
 			}
 			else
 			{

@@ -1672,7 +1672,7 @@ int func_49(int iParam0)//Position - 0x1AA0
 	iVar0 = iParam0;
 	iVar1 = func_52(iVar0);
 	bVar2 = func_51(iVar0);
-	if ((PAD::IS_CONTROL_JUST_RELEASED(2, iParam0) || PAD::IS_DISABLED_CONTROL_JUST_RELEASED(2, iParam0)) || func_50(iParam0, &(Global_1648034.f_1060), 1))
+	if ((PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, iParam0) || PAD::IS_DISABLED_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, iParam0)) || func_50(iParam0, &(Global_1648034.f_1060), 1))
 	{
 		if (!BitTest(Global_1648034.f_1049[iVar1], bVar2))
 		{
@@ -1693,9 +1693,9 @@ int func_50(int iParam0, var uParam1, int iParam2)//Position - 0x1B34
 	int iVar1;
 	int iVar2;
 	
-	iVar0 = (PAD::GET_CONTROL_VALUE(2, 195) - 127);
-	iVar1 = (PAD::GET_CONTROL_VALUE(2, 196) - 127);
-	iVar2 = (PAD::GET_CONTROL_VALUE(2, 197) - 127);
+	iVar0 = (PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 195 /*INPUT_FRONTEND_AXIS_X*/) - 127);
+	iVar1 = (PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 196 /*INPUT_FRONTEND_AXIS_Y*/) - 127);
+	iVar2 = (PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 197 /*INPUT_FRONTEND_RIGHT_AXIS_X*/) - 127);
 	switch (iParam0)
 	{
 		case 189:
@@ -1781,9 +1781,9 @@ void func_53()//Position - 0x1CB1
 {
 	int iVar0;
 	
-	if (!PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (!PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
-		iVar0 = PAD::GET_CONTROL_VALUE(2, 221);
+		iVar0 = PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 221 /*INPUT_SCRIPT_RIGHT_AXIS_Y*/);
 		if (iVar0 > 180)
 		{
 			if (func_55(&uLocal_135, iLocal_137, 0))

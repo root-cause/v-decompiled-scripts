@@ -28516,7 +28516,7 @@ void func_92()//Position - 0x22494
 		{
 			func_150();
 		}
-		if (PAD::IS_CONTROL_JUST_PRESSED(2, 201))
+		if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 		{
 			iLocal_194 = 0;
 		}
@@ -36416,7 +36416,7 @@ int func_181(int iParam0, int iParam1)//Position - 0x2D688
 {
 	int iVar0;
 	
-	if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(0, 36))
+	if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 36 /*INPUT_DUCK*/))
 	{
 		MISC::SET_BIT(&(Global_113386.f_10016.f_25), 22);
 	}

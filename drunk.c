@@ -745,8 +745,8 @@ void func_12(char* sParam0, var uParam1, char* sParam2)//Position - 0x797
 			iVar18 = 0;
 			if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY(sVar13)))
 			{
-				iVar19 = (PAD::GET_CONTROL_VALUE(2, 195) - 128);
-				iVar20 = (PAD::GET_CONTROL_VALUE(2, 196) - 128);
+				iVar19 = (PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 195 /*INPUT_FRONTEND_AXIS_X*/) - 128);
+				iVar20 = (PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 196 /*INPUT_FRONTEND_AXIS_Y*/) - 128);
 				if (((iVar19 < 64 && iVar19 > -64) && iVar20 < 64) && iVar20 > -64)
 				{
 				}
@@ -3559,7 +3559,7 @@ void func_121()//Position - 0x3C1D
 	
 	if (Local_43.f_1 == PLAYER::PLAYER_PED_ID())
 	{
-		PAD::DISABLE_CONTROL_ACTION(0, 36, true);
+		PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 36 /*INPUT_DUCK*/, true);
 		if (PED::GET_PED_STEALTH_MOVEMENT(Local_43.f_1))
 		{
 			if (Global_44024[iLocal_54 /*5*/].f_2 == 0 || Global_44024[iLocal_54 /*5*/].f_2 == 2)

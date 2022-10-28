@@ -5391,8 +5391,8 @@ void func_100(char* sParam0, var uParam1, char* sParam2)//Position - 0x6FC7
 			iVar18 = 0;
 			if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY(sVar13)))
 			{
-				iVar19 = (PAD::GET_CONTROL_VALUE(2, 195) - 128);
-				iVar20 = (PAD::GET_CONTROL_VALUE(2, 196) - 128);
+				iVar19 = (PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 195 /*INPUT_FRONTEND_AXIS_X*/) - 128);
+				iVar20 = (PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 196 /*INPUT_FRONTEND_AXIS_Y*/) - 128);
 				if (((iVar19 < 64 && iVar19 > -64) && iVar20 < 64) && iVar20 > -64)
 				{
 				}

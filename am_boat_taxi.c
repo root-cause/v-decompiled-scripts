@@ -3859,7 +3859,7 @@ void func_75()//Position - 0x3808
 					{
 						if ((ENTITY::IS_ENTITY_AT_ENTITY(PLAYER::PLAYER_PED_ID(), NETWORK::NET_TO_VEH(Local_63.f_2), 10f, 10f, 3f, false, true, 0) && !PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false)) && !func_86(NETWORK::NET_TO_VEH(Local_63.f_2), 0))
 						{
-							func_85(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 23, true), "BTX_ENTER" /* GXT: Enter */, &uLocal_72, 0);
+							func_85(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, 23 /*INPUT_ENTER*/, true), "BTX_ENTER" /* GXT: Enter */, &uLocal_72, 0);
 						}
 					}
 				}
@@ -3891,7 +3891,7 @@ void func_76(int iParam0, var uParam1, var uParam2, int iParam3)//Position - 0x3
 	int iVar4;
 	int iVar5;
 	
-	if (iParam3 == 1 || PAD::HAVE_CONTROLS_CHANGED(2))
+	if (iParam3 == 1 || PAD::HAVE_CONTROLS_CHANGED(2 /*FRONTEND_CONTROL*/))
 	{
 		*uParam2 = 0;
 		if (GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(*iParam0))

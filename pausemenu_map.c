@@ -457,7 +457,7 @@ void func_3()//Position - 0x341
 				iVar0 = func_238(iLocal_180);
 				if (iVar0 != -1 && func_4(iVar0))
 				{
-					if (PAD::IS_CONTROL_JUST_PRESSED(2, 203))
+					if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 203 /*INPUT_FRONTEND_X*/))
 					{
 						HUD::TAKE_CONTROL_OF_FRONTEND();
 						AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
@@ -2155,7 +2155,7 @@ void func_50()//Position - 0x1E12
 				if (HUD::IS_MISSION_CREATOR_BLIP(iLocal_180))
 				{
 					HUD::TAKE_CONTROL_OF_FRONTEND();
-					if (PAD::IS_CONTROL_JUST_PRESSED(2, 203))
+					if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 203 /*INPUT_FRONTEND_X*/))
 					{
 						if (bLocal_223)
 						{
@@ -2267,7 +2267,7 @@ void func_50()//Position - 0x1E12
 			StringCopy(&cVar0, "PM_INF_QMF", 16);
 			StringIntConCat(&cVar0, iLocal_246, 16);
 			HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_INF_QMFT" /* GXT: Alert */, &cVar0, 16, 0, false, -1, 0, 0, true, 0);
-			if (PAD::IS_CONTROL_JUST_RELEASED(2, 202) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
+			if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 			{
 				iLocal_229 = 0;
 			}
@@ -2278,7 +2278,7 @@ void func_50()//Position - 0x1E12
 	{
 		HUD::TAKE_CONTROL_OF_FRONTEND();
 		HUD::SET_WARNING_MESSAGE_WITH_HEADER("PM_QUIT_K1" /* GXT: Confirm */, "PM_QUIT_WARN7" /* GXT: Are you sure you want to start this Job? */, 18, 0, false, -1, 0, 0, true, 0);
-		if (PAD::IS_CONTROL_JUST_RELEASED(2, 201) || iLocal_230)
+		if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/) || iLocal_230)
 		{
 			if (!iLocal_230)
 			{
@@ -2324,7 +2324,7 @@ void func_50()//Position - 0x1E12
 				iLocal_228 = 0;
 			}
 		}
-		else if (PAD::IS_CONTROL_JUST_RELEASED(2, 202) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
+		else if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/) || NETWORK::NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE())
 		{
 			iLocal_228 = 0;
 			iLocal_230 = 0;

@@ -503,7 +503,7 @@ void __EntryFunction__()//Position - 0x0
 		}
 		if (fVar12 < 15f)
 		{
-			PAD::DISABLE_CONTROL_ACTION(0, 46, true);
+			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 46 /*INPUT_TALK*/, true);
 		}
 		if (bLocal_330)
 		{
@@ -1009,7 +1009,7 @@ void __EntryFunction__()//Position - 0x0
 			{
 				func_6(&iLocal_224, 4, sLocal_226, 0, 0, 0, 0);
 			}
-			PAD::SET_INPUT_EXCLUSIVE(0, 51);
+			PAD::SET_INPUT_EXCLUSIVE(0 /*PLAYER_CONTROL*/, 51 /*INPUT_CONTEXT*/);
 			if (func_4(iLocal_224, 1))
 			{
 				func_50(&sVar1);

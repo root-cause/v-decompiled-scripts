@@ -427,7 +427,7 @@ void __EntryFunction__()//Position - 0x0
 							iLocal_110 = 0;
 						}
 					}
-					else if ((((iLocal_109 != -1 && PAD::IS_CONTROL_JUST_PRESSED(2, 52)) && !TASK::IS_PED_RUNNING(PLAYER::PLAYER_PED_ID())) && func_178()) && func_175())
+					else if ((((iLocal_109 != -1 && PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 52 /*INPUT_CONTEXT_SECONDARY*/)) && !TASK::IS_PED_RUNNING(PLAYER::PLAYER_PED_ID())) && func_178()) && func_175())
 					{
 						if (iLocal_109 != -1)
 						{

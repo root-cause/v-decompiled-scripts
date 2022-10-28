@@ -690,7 +690,7 @@ void func_4()//Position - 0x4E0
 					if (ENTITY::GET_ENTITY_ANIM_CURRENT_TIME(PLAYER::PLAYER_PED_ID(), "random@train_tracks", "on_back_c") > 0.95f)
 					{
 						func_160(0);
-						if (func_36(64) || PAD::IS_CONTROL_PRESSED(0, 22))
+						if (func_36(64) || PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 22 /*INPUT_JUMP*/))
 						{
 							TASK::CLEAR_PED_TASKS(PLAYER::PLAYER_PED_ID());
 						}
@@ -1888,8 +1888,8 @@ int func_36(int iParam0)//Position - 0x1DC8
 	int iVar0;
 	int iVar1;
 	
-	iVar0 = (PAD::GET_CONTROL_VALUE(2, 195) - 128);
-	iVar1 = (PAD::GET_CONTROL_VALUE(2, 196) - 128);
+	iVar0 = (PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 195 /*INPUT_FRONTEND_AXIS_X*/) - 128);
+	iVar1 = (PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 196 /*INPUT_FRONTEND_AXIS_Y*/) - 128);
 	if (((iVar0 < iParam0 && iVar0 > -iParam0) && iVar1 < iParam0) && iVar1 > -iParam0)
 	{
 	}

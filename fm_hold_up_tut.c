@@ -4388,7 +4388,7 @@ void func_96(var uParam0)//Position - 0x4505
 								func_150("FHU_HELP5" /* GXT: ~s~Threaten the store clerk with a weapon to steal from the cash register. */, -1);
 								uParam0->f_2++;
 							}
-							else if (!BitTest(uLocal_165, 7) || PAD::IS_DISABLED_CONTROL_PRESSED(0, 37))
+							else if (!BitTest(uLocal_165, 7) || PAD::IS_DISABLED_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 37 /*INPUT_SELECT_WEAPON*/))
 							{
 								func_150("FM_PASS_DBL" /* GXT: Disable Passive Mode before robbing the Store. */, -1);
 								MISC::SET_BIT(&uLocal_165, 7);

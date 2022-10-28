@@ -1188,7 +1188,7 @@ void func_2()//Position - 0x206B
 				{
 					if ((((func_458(iLocal_368) && (BitTest(Global_1835485, 21) || BitTest(Global_1835485, 24))) && !func_450(PLAYER::PLAYER_ID())) && iVar1 == 1) || (((func_499(Global_2779522.f_26) && !func_450(PLAYER::PLAYER_ID())) && iVar1 == 1) && iLocal_375 == 1))
 					{
-						if (PAD::IS_CONTROL_JUST_PRESSED(2, 51))
+						if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 51 /*INPUT_CONTEXT*/))
 						{
 							func_443();
 							func_471();
@@ -1566,7 +1566,7 @@ void func_2()//Position - 0x206B
 			if (!func_450(PLAYER::PLAYER_ID()))
 			{
 				func_359();
-				if (PAD::IS_CONTROL_JUST_PRESSED(2, 222))
+				if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 222 /*INPUT_SCRIPT_RUP*/))
 				{
 					if (func_452(sLocal_407))
 					{

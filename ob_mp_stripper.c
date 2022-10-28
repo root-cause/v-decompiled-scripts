@@ -555,7 +555,7 @@ void func_1()//Position - 0x384
 			{
 				if (((func_57(Local_374, Var0) && !func_56()) && ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()) > (fLocal_375 - 45f)) && ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()) < (fLocal_375 + 45f))
 				{
-					if ((!PLAYER::IS_PLAYER_FREE_AIMING(PLAYER::PLAYER_ID()) && !PLAYER::IS_PLAYER_TARGETTING_ANYTHING(PLAYER::PLAYER_ID())) && PAD::IS_CONTROL_JUST_PRESSED(2, 51))
+					if ((!PLAYER::IS_PLAYER_FREE_AIMING(PLAYER::PLAYER_ID()) && !PLAYER::IS_PLAYER_TARGETTING_ANYTHING(PLAYER::PLAYER_ID())) && PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 51 /*INPUT_CONTEXT*/))
 					{
 						func_52();
 						Global_1835486 = 13;
@@ -711,7 +711,7 @@ void func_1()//Position - 0x384
 			func_20(1);
 			if (!func_12(PLAYER::PLAYER_ID()))
 			{
-				if (PAD::IS_CONTROL_JUST_PRESSED(2, 223))
+				if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 223 /*INPUT_SCRIPT_RDOWN*/))
 				{
 					if (func_55("SA_STRIP_MENU" /* GXT: Press ~INPUT_SCRIPT_RRIGHT~ for another dance.~n~Press ~INPUT_SCRIPT_RUP~ to quit.~n~ */))
 					{
@@ -719,7 +719,7 @@ void func_1()//Position - 0x384
 					}
 					iLocal_308 = 8;
 				}
-				if (PAD::IS_CONTROL_JUST_PRESSED(2, 222))
+				if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 222 /*INPUT_SCRIPT_RUP*/))
 				{
 					if (func_55("SA_STRIP_MENU" /* GXT: Press ~INPUT_SCRIPT_RRIGHT~ for another dance.~n~Press ~INPUT_SCRIPT_RUP~ to quit.~n~ */))
 					{

@@ -31732,7 +31732,7 @@ void func_521(bool bParam0)//Position - 0x29813
 			func_525();
 			CAM::DISABLE_CINEMATIC_VEHICLE_IDLE_MODE_THIS_UPDATE();
 		}
-		PAD::DISABLE_CONTROL_ACTION(0, 25, true);
+		PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 25 /*INPUT_AIM*/, true);
 	}
 	func_523();
 	bVar0 = false;
@@ -54208,7 +54208,7 @@ void func_1012(bool bParam0)//Position - 0x4257C
 				{
 					if ((func_1015() || func_1014()) || func_1013())
 					{
-						if (PAD::IS_CONTROL_PRESSED(0, 351))
+						if (PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 351 /*INPUT_VEH_ROCKET_BOOST*/))
 						{
 							Global_2667225.f_45.f_318 = NETWORK::GET_NETWORK_TIME_ACCURATE();
 							func_984(1000, 0, 1);
@@ -154677,7 +154677,7 @@ void func_1717(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4
 	iVar1 = Global_1853348[iVar0 /*834*/];
 	func_1979();
 	func_1975();
-	PAD::CLEAR_CONTROL_SHAKE_SUPPRESSED_ID(0);
+	PAD::CLEAR_CONTROL_SHAKE_SUPPRESSED_ID(0 /*PLAYER_CONTROL*/);
 	func_1974();
 	Global_1057165 = 0;
 	Global_1835453 = 0;

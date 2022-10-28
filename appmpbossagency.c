@@ -227,20 +227,20 @@ void func_5()//Position - 0x1F7
 	Global_1888478.f_6 = 1;
 	if (iLocal_104)
 	{
-		if (PAD::IS_CONTROL_JUST_RELEASED(2, Global_20235))
+		if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, Global_20235))
 		{
 			iLocal_104 = 0;
 		}
 		return;
 	}
-	if (PAD::IS_CONTROL_JUST_RELEASED(2, 201))
+	if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 	{
 		iLocal_83 = 1;
 		iVar0 = func_29(iLocal_102, 0);
 		func_6(iVar0);
 		return;
 	}
-	if (PAD::IS_CONTROL_JUST_RELEASED(2, 202))
+	if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/))
 	{
 		iLocal_83 = 1;
 		return;
@@ -926,7 +926,7 @@ int func_34(int* iParam0)//Position - 0xE80
 	{
 		return 0;
 	}
-	if (!PAD::IS_CONTROL_JUST_PRESSED(2, Global_20235))
+	if (!PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, Global_20235))
 	{
 		return 0;
 	}
@@ -990,7 +990,7 @@ int func_38(int* iParam0)//Position - 0xF44
 	{
 		return 0;
 	}
-	if (!PAD::IS_CONTROL_JUST_PRESSED(2, Global_20238))
+	if (!PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, Global_20238))
 	{
 		return 0;
 	}
@@ -1013,7 +1013,7 @@ int func_39(int* iParam0)//Position - 0xF88
 	{
 		return 0;
 	}
-	if (!PAD::IS_CONTROL_JUST_PRESSED(2, Global_20236))
+	if (!PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, Global_20236))
 	{
 		return 0;
 	}
@@ -1040,12 +1040,12 @@ void func_41(int* iParam0)//Position - 0xFEE
 	{
 		return;
 	}
-	if (PAD::IS_CONTROL_JUST_PRESSED(2, Global_20242) || PAD::IS_CONTROL_JUST_PRESSED(2, 181))
+	if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, Global_20242) || PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 181 /*INPUT_CELLPHONE_SCROLL_BACKWARD*/))
 	{
 		func_44();
 		iParam0->f_1 = MISC::GET_GAME_TIMER() + 50;
 	}
-	if (PAD::IS_CONTROL_JUST_PRESSED(2, Global_20243) || PAD::IS_CONTROL_JUST_PRESSED(2, 180))
+	if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, Global_20243) || PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 180 /*INPUT_CELLPHONE_SCROLL_FORWARD*/))
 	{
 		func_42();
 		iParam0->f_1 = MISC::GET_GAME_TIMER() + 50;
@@ -1933,8 +1933,8 @@ void func_83()//Position - 0x1EB2
 
 void func_84()//Position - 0x1ED8
 {
-	PAD::SET_INPUT_EXCLUSIVE(0, 176);
-	PAD::SET_INPUT_EXCLUSIVE(0, 177);
+	PAD::SET_INPUT_EXCLUSIVE(0 /*PLAYER_CONTROL*/, 176 /*INPUT_CELLPHONE_SELECT*/);
+	PAD::SET_INPUT_EXCLUSIVE(0 /*PLAYER_CONTROL*/, 177 /*INPUT_CELLPHONE_CANCEL*/);
 }
 
 void func_85(bool bParam0)//Position - 0x1EEE

@@ -1807,18 +1807,18 @@ void func_29(var uParam0, var uParam1, var uParam2)//Position - 0x1194
 					{
 						func_363();
 					}
-					PAD::DISABLE_CONTROL_ACTION(0, 91, true);
-					PAD::DISABLE_CONTROL_ACTION(0, 79, true);
-					PAD::DISABLE_CONTROL_ACTION(0, 99, true);
-					PAD::DISABLE_CONTROL_ACTION(0, 100, true);
-					PAD::DISABLE_CONTROL_ACTION(0, 75, true);
-					PAD::DISABLE_CONTROL_ACTION(0, 80, true);
+					PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 91 /*INPUT_VEH_PASSENGER_AIM*/, true);
+					PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 79 /*INPUT_VEH_LOOK_BEHIND*/, true);
+					PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 99 /*INPUT_VEH_SELECT_NEXT_WEAPON*/, true);
+					PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 100 /*INPUT_VEH_SELECT_PREV_WEAPON*/, true);
+					PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 75 /*INPUT_VEH_EXIT*/, true);
+					PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 80 /*INPUT_VEH_CIN_CAM*/, true);
 				}
-				PAD::DISABLE_CONTROL_ACTION(0, 69, true);
-				PAD::DISABLE_CONTROL_ACTION(0, 70, true);
-				PAD::DISABLE_CONTROL_ACTION(0, 105, true);
-				PAD::DISABLE_CONTROL_ACTION(0, 65, true);
-				PAD::DISABLE_CONTROL_ACTION(0, 47, true);
+				PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 69 /*INPUT_VEH_ATTACK*/, true);
+				PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 70 /*INPUT_VEH_ATTACK2*/, true);
+				PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 105 /*INPUT_VEH_DROP_PROJECTILE*/, true);
+				PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 65 /*INPUT_VEH_SPECIAL*/, true);
+				PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 47 /*INPUT_DETONATE*/, true);
 				func_362();
 			}
 		}
@@ -1829,7 +1829,7 @@ void func_29(var uParam0, var uParam1, var uParam2)//Position - 0x1194
 		}
 		if (((((((*uParam2 == 5 || *uParam2 == 17) || *uParam2 == 18) || *uParam2 == 19) || *uParam2 == 12) || *uParam2 == 13) || *uParam2 == 14) || *uParam2 == 15)
 		{
-			PAD::DISABLE_CONTROL_ACTION(0, 75, true);
+			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 75 /*INPUT_VEH_EXIT*/, true);
 		}
 		if (((((((((*uParam2 == 4 || *uParam2 == 18) || *uParam2 == 17) || *uParam2 == 19) || *uParam2 == 14) || *uParam2 == 13) || *uParam2 == 15) || *uParam2 == 5) || *uParam2 == 21) || *uParam2 == 22)
 		{
@@ -2050,7 +2050,7 @@ void func_29(var uParam0, var uParam1, var uParam2)//Position - 0x1194
 						}
 						if (func_302(51, uParam2))
 						{
-							PAD::DISABLE_CONTROL_ACTION(0, 75, true);
+							PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 75 /*INPUT_VEH_EXIT*/, true);
 							func_363();
 							func_300(uParam0, uParam2, uParam1);
 							WEAPON::SET_PED_CURRENT_WEAPON_VISIBLE(PLAYER::PLAYER_PED_ID(), false, false, true, false);
@@ -2067,7 +2067,7 @@ void func_29(var uParam0, var uParam1, var uParam2)//Position - 0x1194
 						{
 							if (func_302(52, uParam2))
 							{
-								PAD::DISABLE_CONTROL_ACTION(0, 75, true);
+								PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 75 /*INPUT_VEH_EXIT*/, true);
 								func_363();
 								func_300(uParam0, uParam2, uParam1);
 								WEAPON::SET_PED_CURRENT_WEAPON_VISIBLE(PLAYER::PLAYER_PED_ID(), false, false, true, false);
@@ -2126,7 +2126,7 @@ void func_29(var uParam0, var uParam1, var uParam2)//Position - 0x1194
 						{
 							if (func_302(52, uParam2))
 							{
-								PAD::DISABLE_CONTROL_ACTION(0, 75, true);
+								PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 75 /*INPUT_VEH_EXIT*/, true);
 								func_363();
 								WEAPON::SET_PED_CURRENT_WEAPON_VISIBLE(PLAYER::PLAYER_PED_ID(), false, false, true, false);
 								func_72(PLAYER::PLAYER_PED_ID());
@@ -73393,7 +73393,7 @@ int func_301(var uParam0, char* sParam1)//Position - 0x5772E
 
 int func_302(int iParam0, var uParam1)//Position - 0x5775D
 {
-	if (((((PAD::IS_CONTROL_JUST_PRESSED(0, iParam0) && PED::IS_PED_SITTING_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID())) && (CAM::IS_CINEMATIC_FIRST_PERSON_VEHICLE_INTERIOR_CAM_RENDERING() || CAM::IS_BONNET_CINEMATIC_CAM_RENDERING())) && func_304(uParam1)) && !HUD::IS_PAUSE_MENU_ACTIVE()) && !func_303())
+	if (((((PAD::IS_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, iParam0) && PED::IS_PED_SITTING_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID())) && (CAM::IS_CINEMATIC_FIRST_PERSON_VEHICLE_INTERIOR_CAM_RENDERING() || CAM::IS_BONNET_CINEMATIC_CAM_RENDERING())) && func_304(uParam1)) && !HUD::IS_PAUSE_MENU_ACTIVE()) && !func_303())
 	{
 		return 1;
 	}

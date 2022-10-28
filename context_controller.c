@@ -243,7 +243,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			case 0:
 				iVar2 = func_15();
-				if (PAD::IS_CONTROL_RELEASED(2, 51))
+				if (PAD::IS_CONTROL_RELEASED(2 /*FRONTEND_CONTROL*/, 51 /*INPUT_CONTEXT*/))
 				{
 					iVar6 = 1;
 				}
@@ -251,7 +251,7 @@ void __EntryFunction__()//Position - 0x0
 				{
 					if (iVar2 > -1 && iVar6)
 					{
-						if (PAD::IS_CONTROL_JUST_PRESSED(2, 51))
+						if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 51 /*INPUT_CONTEXT*/))
 						{
 							Global_43792[iVar2 /*32*/].f_4 = 1;
 							Global_43792[iVar2 /*32*/].f_29 = 0;
@@ -273,15 +273,15 @@ void __EntryFunction__()//Position - 0x0
 						{
 							if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::GET_PLAYER_PED(PLAYER::GET_PLAYER_INDEX()), false))
 							{
-								if (PAD::IS_CONTROL_ENABLED(0, 101))
+								if (PAD::IS_CONTROL_ENABLED(0 /*PLAYER_CONTROL*/, 101 /*INPUT_VEH_ROOF*/))
 								{
 									bVar5 = true;
-									PAD::DISABLE_CONTROL_ACTION(0, 101, true);
+									PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 101 /*INPUT_VEH_ROOF*/, true);
 								}
-								if (PAD::IS_CONTROL_ENABLED(0, 74))
+								if (PAD::IS_CONTROL_ENABLED(0 /*PLAYER_CONTROL*/, 74 /*INPUT_VEH_HEADLIGHT*/))
 								{
 									bVar4 = true;
-									PAD::DISABLE_CONTROL_ACTION(0, 74, true);
+									PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 74 /*INPUT_VEH_HEADLIGHT*/, true);
 								}
 							}
 						}
@@ -290,12 +290,12 @@ void __EntryFunction__()//Position - 0x0
 					{
 						if (bVar5)
 						{
-							PAD::ENABLE_CONTROL_ACTION(0, 101, true);
+							PAD::ENABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 101 /*INPUT_VEH_ROOF*/, true);
 							bVar5 = false;
 						}
 						if (bVar4)
 						{
-							PAD::ENABLE_CONTROL_ACTION(0, 74, true);
+							PAD::ENABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 74 /*INPUT_VEH_HEADLIGHT*/, true);
 							bVar4 = false;
 						}
 					}
@@ -335,7 +335,7 @@ void __EntryFunction__()//Position - 0x0
 				{
 					func_25();
 				}
-				if (PAD::IS_CONTROL_JUST_PRESSED(2, 51))
+				if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 51 /*INPUT_CONTEXT*/))
 				{
 					if (iVar2 > -1)
 					{
@@ -371,8 +371,8 @@ void __EntryFunction__()//Position - 0x0
 		}
 		if (iVar2 > -1)
 		{
-			PAD::DISABLE_CONTROL_ACTION(0, 46, true);
-			PAD::DISABLE_CONTROL_ACTION(0, 54, true);
+			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 46 /*INPUT_TALK*/, true);
+			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 54 /*INPUT_WEAPON_SPECIAL_TWO*/, true);
 		}
 		if (iVar0 != iVar1)
 		{

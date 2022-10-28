@@ -808,7 +808,7 @@ int func_6(int iParam0, int iParam1, var uParam2, char* sParam3, var uParam4, in
 			bVar5 = true;
 			break;
 	}
-	if (!PAD::IS_CONTROL_JUST_PRESSED(0, 46) && !PAD::IS_DISABLED_CONTROL_JUST_PRESSED(0, 46))
+	if (!PAD::IS_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 46 /*INPUT_TALK*/) && !PAD::IS_DISABLED_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 46 /*INPUT_TALK*/))
 	{
 		return 0;
 	}

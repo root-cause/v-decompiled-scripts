@@ -458,10 +458,10 @@ void func_2()//Position - 0x252
 	StringConCat(&cVar0, " ", 64);
 	StringIntConCat(&cVar0, iLocal_52, 64);
 	GRAPHICS::DRAW_DEBUG_TEXT_2D(&cVar0, 0.02f, 0.5f, 0f, 0, 0, 255, 255);
-	PAD::DISABLE_CONTROL_ACTION(0, 68, true);
-	PAD::DISABLE_CONTROL_ACTION(0, 99, true);
-	PAD::DISABLE_CONTROL_ACTION(0, 1, true);
-	PAD::DISABLE_CONTROL_ACTION(0, 2, true);
+	PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 68 /*INPUT_VEH_AIM*/, true);
+	PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 99 /*INPUT_VEH_SELECT_NEXT_WEAPON*/, true);
+	PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 1 /*INPUT_LOOK_LR*/, true);
+	PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 2 /*INPUT_LOOK_UD*/, true);
 	if (!PED::IS_PED_INJURED(iLocal_58) && !PED::IS_PED_INJURED(iLocal_57))
 	{
 		if (iLocal_268)
@@ -1095,7 +1095,7 @@ void func_27(bool bParam0)//Position - 0xCEE
 {
 	if (!bParam0)
 	{
-		if (PAD::IS_CONTROL_JUST_PRESSED(2, 225))
+		if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 225 /*INPUT_SCRIPT_RRIGHT*/))
 		{
 			if (iLocal_76)
 			{
@@ -1206,7 +1206,7 @@ void func_30()//Position - 0xECA
 	Var7 = { 0.2f, 0.9f, -0.15f };
 	if (CAM::DOES_CAM_EXIST(iLocal_81))
 	{
-		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 		{
 			fVar6 = 8f;
 		}
@@ -1215,16 +1215,16 @@ void func_30()//Position - 0xECA
 			fVar6 = 4f;
 		}
 		func_32();
-		iVar8 = SYSTEM::FLOOR((PAD::GET_CONTROL_UNBOUND_NORMAL(2, 218) * 127f));
-		iVar9 = SYSTEM::FLOOR((PAD::GET_CONTROL_UNBOUND_NORMAL(2, 219) * 127f));
-		iVar10 = SYSTEM::FLOOR((PAD::GET_CONTROL_UNBOUND_NORMAL(2, 220) * 127f));
-		iVar11 = SYSTEM::FLOOR((PAD::GET_CONTROL_UNBOUND_NORMAL(2, 221) * 127f));
+		iVar8 = SYSTEM::FLOOR((PAD::GET_CONTROL_UNBOUND_NORMAL(2 /*FRONTEND_CONTROL*/, 218 /*INPUT_SCRIPT_LEFT_AXIS_X*/) * 127f));
+		iVar9 = SYSTEM::FLOOR((PAD::GET_CONTROL_UNBOUND_NORMAL(2 /*FRONTEND_CONTROL*/, 219 /*INPUT_SCRIPT_LEFT_AXIS_Y*/) * 127f));
+		iVar10 = SYSTEM::FLOOR((PAD::GET_CONTROL_UNBOUND_NORMAL(2 /*FRONTEND_CONTROL*/, 220 /*INPUT_SCRIPT_RIGHT_AXIS_X*/) * 127f));
+		iVar11 = SYSTEM::FLOOR((PAD::GET_CONTROL_UNBOUND_NORMAL(2 /*FRONTEND_CONTROL*/, 221 /*INPUT_SCRIPT_RIGHT_AXIS_Y*/) * 127f));
 		if (!PAD::IS_LOOK_INVERTED())
 		{
 			iVar9 = (iVar9 * -1);
 			iVar11 = (iVar11 * -1);
 		}
-		if ((iVar11 > 28 || iVar11 < -28) || PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+		if ((iVar11 > 28 || iVar11 < -28) || PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 		{
 			fVar0 = SYSTEM::TO_FLOAT(iVar11);
 			fVar0 = (fVar0 * fVar0);
@@ -1244,7 +1244,7 @@ void func_30()//Position - 0xECA
 				fLocal_95 = fVar3;
 			}
 		}
-		if ((iVar10 > 28 || iVar10 < -28) || PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+		if ((iVar10 > 28 || iVar10 < -28) || PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 		{
 			fVar0 = SYSTEM::TO_FLOAT(iVar10);
 			fVar0 = (fVar0 * fVar0);
@@ -1264,7 +1264,7 @@ void func_30()//Position - 0xECA
 				fLocal_94 = fVar5;
 			}
 		}
-		if ((iVar9 > 28 || iVar9 < -28) || PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+		if ((iVar9 > 28 || iVar9 < -28) || PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 		{
 			fVar0 = SYSTEM::TO_FLOAT(iVar9);
 			fVar0 = (fVar0 * fVar0);
@@ -1284,7 +1284,7 @@ void func_30()//Position - 0xECA
 				fLocal_95 = fVar3;
 			}
 		}
-		if ((iVar8 > 28 || iVar8 < -28) || PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+		if ((iVar8 > 28 || iVar8 < -28) || PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 		{
 			fVar0 = SYSTEM::TO_FLOAT(iVar8);
 			fVar0 = (fVar0 * fVar0);
@@ -1373,7 +1373,7 @@ void func_33()//Position - 0x12EC
 	}
 	if (iVar0 < 14)
 	{
-		if (PAD::IS_CONTROL_JUST_PRESSED(2, 223) || iLocal_73 == 1)
+		if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 223 /*INPUT_SCRIPT_RDOWN*/) || iLocal_73 == 1)
 		{
 			if (CAM::IS_SCREEN_FADED_IN())
 			{
@@ -3190,7 +3190,7 @@ int func_83()//Position - 0x34C4
 	{
 		return 0;
 	}
-	if (PAD::IS_CONTROL_JUST_PRESSED(0, 18) || PAD::IS_CONTROL_JUST_PRESSED(2, 18))
+	if (PAD::IS_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 18 /*INPUT_SKIP_CUTSCENE*/) || PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 18 /*INPUT_SKIP_CUTSCENE*/))
 	{
 		return 1;
 	}
@@ -3392,7 +3392,7 @@ int func_87(int iParam0)//Position - 0x38CF
 
 int func_88()//Position - 0x38F5
 {
-	if (PAD::IS_CONTROL_JUST_PRESSED(2, 222) && !iLocal_269)
+	if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 222 /*INPUT_SCRIPT_RUP*/) && !iLocal_269)
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(iLocal_63))
 		{
@@ -4692,7 +4692,7 @@ void func_126()//Position - 0x5151
 						iLocal_266 = 1;
 					}
 					HUD::DISPLAY_HELP_TEXT_THIS_FRAME("Enter_bus", false);
-					if (PAD::IS_CONTROL_PRESSED(2, 23))
+					if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 23 /*INPUT_ENTER*/))
 					{
 						TASK::TASK_ENTER_VEHICLE(PLAYER::PLAYER_PED_ID(), iLocal_63, -1, 2, 1f, 8, 0);
 					}

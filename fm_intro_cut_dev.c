@@ -2513,7 +2513,7 @@ int func_1(int* iParam0, int* iParam1)//Position - 0xD8
 		}
 		if (Global_2815059.f_1918)
 		{
-			PAD::ENABLE_CONTROL_ACTION(2, 187, true);
+			PAD::ENABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 187 /*INPUT_FRONTEND_DOWN*/, true);
 		}
 	}
 	return 0;

@@ -4552,14 +4552,14 @@ void func_143()//Position - 0x560C
 						func_168(&Var0);
 					}
 				}
-				else if (PAD::IS_CONTROL_JUST_PRESSED(2, 51) && !func_163())
+				else if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 51 /*INPUT_CONTEXT*/) && !func_163())
 				{
 					func_159();
 					MISC::SET_BIT(&(Global_1962546.f_1247), 1);
 					AUDIO::PLAY_SOUND_FROM_COORD(-1, "Use", func_158(), func_157(), false, 0, false);
 					func_156();
 				}
-				else if (PAD::IS_CONTROL_JUST_PRESSED(2, 52) && !BitTest(Global_1836144, 1))
+				else if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 52 /*INPUT_CONTEXT_SECONDARY*/) && !BitTest(Global_1836144, 1))
 				{
 					if (func_145())
 					{
@@ -5115,7 +5115,7 @@ int func_183()//Position - 0x5FC7
 {
 	bool bVar0;
 	
-	bVar0 = ((PAD::IS_CONTROL_PRESSED(2, 199) || PAD::IS_CONTROL_JUST_PRESSED(2, 199)) || PAD::IS_CONTROL_JUST_RELEASED(2, 199));
+	bVar0 = ((PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 199 /*INPUT_FRONTEND_PAUSE*/) || PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 199 /*INPUT_FRONTEND_PAUSE*/)) || PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 199 /*INPUT_FRONTEND_PAUSE*/));
 	if (bVar0)
 	{
 		iLocal_181 = 1;
@@ -5761,7 +5761,7 @@ void func_215()//Position - 0x6AA1
 	HUD::HIDE_HUD_COMPONENT_THIS_FRAME(18);
 	HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 	func_216(0);
-	PAD::DISABLE_CONTROL_ACTION(0, 199, true);
+	PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 199 /*INPUT_FRONTEND_PAUSE*/, true);
 	CAM::INVALIDATE_IDLE_CAM();
 	NETWORK::SET_PLAYER_INVISIBLE_LOCALLY(PLAYER::PLAYER_ID(), false);
 	HUD::HIDE_SCRIPTED_HUD_COMPONENT_THIS_FRAME(19);
@@ -5939,16 +5939,16 @@ void func_224(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 	int iVar7;
 	int iVar8;
 	
-	PAD::ALLOW_ALTERNATIVE_SCRIPT_CONTROLS_LAYOUT(2);
+	PAD::ALLOW_ALTERNATIVE_SCRIPT_CONTROLS_LAYOUT(2 /*FRONTEND_CONTROL*/);
 	func_227(&(iVar0[0]), &(iVar0[1]), &(iVar0[2]), &(iVar0[3]), 0, 0);
 	if (PAD::IS_LOOK_INVERTED())
 	{
 		iVar0[3] = (iVar0[3] * -1);
 	}
-	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
-		fVar1 = PAD::GET_CONTROL_UNBOUND_NORMAL(2, 239);
-		fVar2 = PAD::GET_CONTROL_UNBOUND_NORMAL(2, 240);
+		fVar1 = PAD::GET_CONTROL_UNBOUND_NORMAL(2 /*FRONTEND_CONTROL*/, 239 /*INPUT_CURSOR_X*/);
+		fVar2 = PAD::GET_CONTROL_UNBOUND_NORMAL(2 /*FRONTEND_CONTROL*/, 240 /*INPUT_CURSOR_Y*/);
 		fVar3 = (fVar1 - uParam0->f_29);
 		fVar4 = (fVar2 - uParam0->f_30);
 		uParam0->f_29 = fVar1;
@@ -5960,8 +5960,8 @@ void func_224(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 		}
 		else
 		{
-			iVar0[2] = SYSTEM::ROUND(((PAD::GET_CONTROL_UNBOUND_NORMAL(2, 290) * fParam5) * 127f));
-			iVar0[3] = SYSTEM::ROUND(((PAD::GET_CONTROL_UNBOUND_NORMAL(2, 291) * fParam5) * 127f));
+			iVar0[2] = SYSTEM::ROUND(((PAD::GET_CONTROL_UNBOUND_NORMAL(2 /*FRONTEND_CONTROL*/, 290 /*INPUT_SCALED_LOOK_LR*/) * fParam5) * 127f));
+			iVar0[3] = SYSTEM::ROUND(((PAD::GET_CONTROL_UNBOUND_NORMAL(2 /*FRONTEND_CONTROL*/, 291 /*INPUT_SCALED_LOOK_UD*/) * fParam5) * 127f));
 		}
 		iVar0[2] = func_226((iVar0[2] + uParam0->f_24), -127, 127);
 		iVar0[3] = func_226((iVar0[3] + uParam0->f_25), -127, 127);
@@ -5972,7 +5972,7 @@ void func_224(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 		{
 			uParam0->f_24 = 0;
 			uParam0->f_25 = 0;
-			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 			{
 				iVar0[2] = 0;
 				iVar0[3] = 0;
@@ -6001,7 +6001,7 @@ void func_224(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 	}
 	fVar5 = (30f * SYSTEM::TIMESTEP());
 	Var6 = { uParam0->f_8 + uParam0->f_11 };
-	if ((PAD::IS_USING_KEYBOARD_AND_MOUSE(2) && bParam2) && !uParam0->f_28)
+	if ((PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/) && bParam2) && !uParam0->f_28)
 	{
 		uParam0->f_14 = Var6.f_0;
 		uParam0->f_14.f_1 = Var6.f_1;
@@ -6019,7 +6019,7 @@ void func_224(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 		uParam0->f_14.f_1 = func_225(uParam0->f_14.f_1, SYSTEM::TO_FLOAT(-uParam0->f_22), SYSTEM::TO_FLOAT(uParam0->f_22));
 		uParam0->f_14.f_2 = func_225(uParam0->f_14.f_2, SYSTEM::TO_FLOAT(-uParam0->f_20), SYSTEM::TO_FLOAT(uParam0->f_20));
 	}
-	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(0) && bParam1)
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(0 /*PLAYER_CONTROL*/) && bParam1)
 	{
 		if (uParam0->f_28)
 		{
@@ -6032,7 +6032,7 @@ void func_224(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 	}
 	if (bParam1)
 	{
-		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(0))
+		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(0 /*PLAYER_CONTROL*/))
 		{
 			iVar7 = 40;
 			iVar8 = 41;
@@ -6041,13 +6041,13 @@ void func_224(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 				iVar7 = 241;
 				iVar8 = 242;
 			}
-			if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(0, iVar7))
+			if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, iVar7))
 			{
 				uParam0->f_17 = (uParam0->f_17 - 5f);
 				uParam0->f_27 = MISC::GET_GAME_TIMER() + 4000;
 				uParam0->f_28 = 0;
 			}
-			else if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(0, iVar8))
+			else if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, iVar8))
 			{
 				uParam0->f_17 = (uParam0->f_17 + 5f);
 				uParam0->f_27 = MISC::GET_GAME_TIMER() + 4000;
@@ -6064,8 +6064,8 @@ void func_224(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 		}
 		else if (bParam8)
 		{
-			iVar0[1] = PAD::GET_CONTROL_VALUE(2, 207);
-			iVar0[3] = PAD::GET_CONTROL_VALUE(2, 208);
+			iVar0[1] = PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 207 /*INPUT_FRONTEND_LT*/);
+			iVar0[3] = PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 208 /*INPUT_FRONTEND_RT*/);
 			if (bParam3)
 			{
 				if (SYSTEM::TO_FLOAT(iVar0[3]) > 127f)
@@ -6133,30 +6133,30 @@ int func_226(int iParam0, int iParam1, int iParam2)//Position - 0x736D
 
 void func_227(var uParam0, var uParam1, var uParam2, var uParam3, bool bParam4, bool bParam5)//Position - 0x7392
 {
-	*uParam0 = SYSTEM::FLOOR((PAD::GET_CONTROL_UNBOUND_NORMAL(2, 218) * 127f));
-	*uParam1 = SYSTEM::FLOOR((PAD::GET_CONTROL_UNBOUND_NORMAL(2, 219) * 127f));
-	*uParam2 = SYSTEM::FLOOR((PAD::GET_CONTROL_UNBOUND_NORMAL(2, 220) * 127f));
-	*uParam3 = SYSTEM::FLOOR((PAD::GET_CONTROL_UNBOUND_NORMAL(2, 221) * 127f));
+	*uParam0 = SYSTEM::FLOOR((PAD::GET_CONTROL_UNBOUND_NORMAL(2 /*FRONTEND_CONTROL*/, 218 /*INPUT_SCRIPT_LEFT_AXIS_X*/) * 127f));
+	*uParam1 = SYSTEM::FLOOR((PAD::GET_CONTROL_UNBOUND_NORMAL(2 /*FRONTEND_CONTROL*/, 219 /*INPUT_SCRIPT_LEFT_AXIS_Y*/) * 127f));
+	*uParam2 = SYSTEM::FLOOR((PAD::GET_CONTROL_UNBOUND_NORMAL(2 /*FRONTEND_CONTROL*/, 220 /*INPUT_SCRIPT_RIGHT_AXIS_X*/) * 127f));
+	*uParam3 = SYSTEM::FLOOR((PAD::GET_CONTROL_UNBOUND_NORMAL(2 /*FRONTEND_CONTROL*/, 221 /*INPUT_SCRIPT_RIGHT_AXIS_Y*/) * 127f));
 	if (bParam4)
 	{
-		if (!PAD::IS_CONTROL_ENABLED(2, 218))
+		if (!PAD::IS_CONTROL_ENABLED(2 /*FRONTEND_CONTROL*/, 218 /*INPUT_SCRIPT_LEFT_AXIS_X*/))
 		{
-			*uParam0 = SYSTEM::FLOOR((PAD::GET_DISABLED_CONTROL_UNBOUND_NORMAL(2, 218) * 127f));
+			*uParam0 = SYSTEM::FLOOR((PAD::GET_DISABLED_CONTROL_UNBOUND_NORMAL(2 /*FRONTEND_CONTROL*/, 218 /*INPUT_SCRIPT_LEFT_AXIS_X*/) * 127f));
 		}
-		if (!PAD::IS_CONTROL_ENABLED(2, 219))
+		if (!PAD::IS_CONTROL_ENABLED(2 /*FRONTEND_CONTROL*/, 219 /*INPUT_SCRIPT_LEFT_AXIS_Y*/))
 		{
-			*uParam1 = SYSTEM::FLOOR((PAD::GET_DISABLED_CONTROL_UNBOUND_NORMAL(2, 219) * 127f));
+			*uParam1 = SYSTEM::FLOOR((PAD::GET_DISABLED_CONTROL_UNBOUND_NORMAL(2 /*FRONTEND_CONTROL*/, 219 /*INPUT_SCRIPT_LEFT_AXIS_Y*/) * 127f));
 		}
-		if (!PAD::IS_CONTROL_ENABLED(2, 220))
+		if (!PAD::IS_CONTROL_ENABLED(2 /*FRONTEND_CONTROL*/, 220 /*INPUT_SCRIPT_RIGHT_AXIS_X*/))
 		{
-			*uParam2 = SYSTEM::FLOOR((PAD::GET_DISABLED_CONTROL_UNBOUND_NORMAL(2, 220) * 127f));
+			*uParam2 = SYSTEM::FLOOR((PAD::GET_DISABLED_CONTROL_UNBOUND_NORMAL(2 /*FRONTEND_CONTROL*/, 220 /*INPUT_SCRIPT_RIGHT_AXIS_X*/) * 127f));
 		}
-		if (!PAD::IS_CONTROL_ENABLED(2, 221))
+		if (!PAD::IS_CONTROL_ENABLED(2 /*FRONTEND_CONTROL*/, 221 /*INPUT_SCRIPT_RIGHT_AXIS_Y*/))
 		{
-			*uParam3 = SYSTEM::FLOOR((PAD::GET_DISABLED_CONTROL_UNBOUND_NORMAL(2, 221) * 127f));
+			*uParam3 = SYSTEM::FLOOR((PAD::GET_DISABLED_CONTROL_UNBOUND_NORMAL(2 /*FRONTEND_CONTROL*/, 221 /*INPUT_SCRIPT_RIGHT_AXIS_Y*/) * 127f));
 		}
 	}
-	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
 		if (bParam5)
 		{
@@ -9724,51 +9724,51 @@ int func_298(int* iParam0)//Position - 0xB899
 	{
 		return -1;
 	}
-	if (PAD::IS_CONTROL_JUST_PRESSED(2, 188) || func_299(iParam0, 0, 0))
+	if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 188 /*INPUT_FRONTEND_UP*/) || func_299(iParam0, 0, 0))
 	{
 		return 0;
 	}
-	else if (PAD::IS_CONTROL_JUST_PRESSED(2, 187) || func_299(iParam0, 0, 1))
+	else if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 187 /*INPUT_FRONTEND_DOWN*/) || func_299(iParam0, 0, 1))
 	{
 		return 1;
 	}
-	else if (PAD::IS_CONTROL_JUST_PRESSED(2, 189) || func_299(iParam0, 0, 2))
+	else if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 189 /*INPUT_FRONTEND_LEFT*/) || func_299(iParam0, 0, 2))
 	{
 		return 2;
 	}
-	else if (PAD::IS_CONTROL_JUST_PRESSED(2, 190) || func_299(iParam0, 0, 3))
+	else if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 190 /*INPUT_FRONTEND_RIGHT*/) || func_299(iParam0, 0, 3))
 	{
 		return 3;
 	}
-	else if (PAD::IS_CONTROL_JUST_PRESSED(2, 205))
+	else if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 205 /*INPUT_FRONTEND_LB*/))
 	{
 		return 9;
 	}
-	else if (PAD::IS_CONTROL_JUST_PRESSED(2, 206))
+	else if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 206 /*INPUT_FRONTEND_RB*/))
 	{
 		return 10;
 	}
-	else if (PAD::IS_CONTROL_JUST_RELEASED(2, 203))
+	else if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 203 /*INPUT_FRONTEND_X*/))
 	{
 		return 4;
 	}
-	else if (PAD::IS_CONTROL_JUST_RELEASED(2, 204))
+	else if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 204 /*INPUT_FRONTEND_Y*/))
 	{
 		return 5;
 	}
-	else if (PAD::IS_CONTROL_JUST_RELEASED(2, 204))
+	else if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 204 /*INPUT_FRONTEND_Y*/))
 	{
 		return 6;
 	}
-	else if (PAD::IS_CONTROL_JUST_RELEASED(2, 202))
+	else if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/))
 	{
 		return 8;
 	}
-	else if (PAD::IS_CONTROL_JUST_RELEASED(2, 201))
+	else if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 	{
 		return 7;
 	}
-	else if (PAD::IS_CONTROL_JUST_RELEASED(2, 217))
+	else if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 217 /*INPUT_FRONTEND_SELECT*/))
 	{
 		return 11;
 	}
@@ -9785,8 +9785,8 @@ int func_299(int* iParam0, int iParam1, bool bParam2)//Position - 0xB9BD
 	switch (iParam1)
 	{
 		case 0:
-			iVar1 = SYSTEM::FLOOR((PAD::GET_CONTROL_NORMAL(2, 218) * 127f));
-			iVar2 = SYSTEM::FLOOR((PAD::GET_CONTROL_NORMAL(2, 219) * 127f));
+			iVar1 = SYSTEM::FLOOR((PAD::GET_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 218 /*INPUT_SCRIPT_LEFT_AXIS_X*/) * 127f));
+			iVar2 = SYSTEM::FLOOR((PAD::GET_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 219 /*INPUT_SCRIPT_LEFT_AXIS_Y*/) * 127f));
 			switch (bParam2)
 			{
 				case 0:
@@ -9852,8 +9852,8 @@ int func_299(int* iParam0, int iParam1, bool bParam2)//Position - 0xB9BD
 			break;
 		
 		case 1:
-			iVar1 = SYSTEM::FLOOR((PAD::GET_CONTROL_NORMAL(2, 220) * 127f));
-			iVar2 = SYSTEM::FLOOR((PAD::GET_CONTROL_NORMAL(2, 221) * 127f));
+			iVar1 = SYSTEM::FLOOR((PAD::GET_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 220 /*INPUT_SCRIPT_RIGHT_AXIS_X*/) * 127f));
+			iVar2 = SYSTEM::FLOOR((PAD::GET_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 221 /*INPUT_SCRIPT_RIGHT_AXIS_Y*/) * 127f));
 			switch (bParam2)
 			{
 				case 0:
@@ -10021,17 +10021,17 @@ int func_301(int iParam0, bool bParam1, int iParam2, int iParam3, bool bParam4)/
 			break;
 	}
 	HUD::SET_WARNING_MESSAGE_WITH_HEADER(&cVar0, &cVar1, iVar7, &cVar4, bVar5, bVar6, &cVar2, &cVar3, true, 0);
-	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
 		HUD::SET_MOUSE_CURSOR_STYLE(1);
 	}
-	if (PAD::IS_DISABLED_CONTROL_JUST_RELEASED(2, 202) || PAD::IS_CONTROL_JUST_RELEASED(2, 202))
+	if (PAD::IS_DISABLED_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/) || PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/))
 	{
 		AUDIO::PLAY_SOUND_FROM_COORD(-1, "Back", func_158(), func_157(), false, 0, false);
 		*bParam1 = 0;
 		return 1;
 	}
-	if (PAD::IS_DISABLED_CONTROL_JUST_RELEASED(2, 201) || PAD::IS_CONTROL_JUST_RELEASED(2, 201))
+	if (PAD::IS_DISABLED_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/) || PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 	{
 		if (iParam0 != 0)
 		{
@@ -10652,17 +10652,17 @@ void func_319(var uParam0)//Position - 0xC6C5
 						}
 						else if (MISC::IS_XBOX360_VERSION() || func_104())
 						{
-							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "HEIST_IB_XBL" /* GXT: View gamer card */, uParam0, 0);
+							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, 217 /*INPUT_FRONTEND_SELECT*/, true), "HEIST_IB_XBL" /* GXT: View gamer card */, uParam0, 0);
 						}
 						else
 						{
-							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "HEIST_IB_PSNXBL", uParam0, 0);
+							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, 217 /*INPUT_FRONTEND_SELECT*/, true), "HEIST_IB_PSNXBL", uParam0, 0);
 						}
 					}
 					func_322(2, 204, "HP_OVERVIEW" /* GXT: Overview */, uParam0, 1, 363);
 					func_322(2, 206, "HP_SURVEIL" /* GXT: Surveillance */, uParam0, 1, 363);
 					func_322(2, 205, "HP_MAP" /* GXT: Map */, uParam0, 1, 363);
-					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 					{
 						func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 					}
@@ -10681,7 +10681,7 @@ void func_319(var uParam0)//Position - 0xC6C5
 					}
 					func_322(2, 201, "HEIST_IB_SAVE" /* GXT: Confirm */, uParam0, 1, 363);
 					func_322(2, 202, "HEIST_IB_UNSAVE" /* GXT: Cancel */, uParam0, 1, 363);
-					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 					{
 						func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 					}
@@ -10730,11 +10730,11 @@ void func_319(var uParam0)//Position - 0xC6C5
 						}
 						else if (MISC::IS_XBOX360_VERSION() || func_104())
 						{
-							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "HEIST_IB_XBL" /* GXT: View gamer card */, uParam0, 0);
+							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, 217 /*INPUT_FRONTEND_SELECT*/, true), "HEIST_IB_XBL" /* GXT: View gamer card */, uParam0, 0);
 						}
 						else
 						{
-							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "HEIST_IB_PSNXBL", uParam0, 0);
+							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, 217 /*INPUT_FRONTEND_SELECT*/, true), "HEIST_IB_PSNXBL", uParam0, 0);
 						}
 					}
 					switch (uParam0->f_725.f_32)
@@ -10751,7 +10751,7 @@ void func_319(var uParam0)//Position - 0xC6C5
 							func_322(2, 204, "HP_SURVEIL" /* GXT: Surveillance */, uParam0, 1, 363);
 							break;
 					}
-					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 					{
 						func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 					}
@@ -10770,7 +10770,7 @@ void func_319(var uParam0)//Position - 0xC6C5
 					}
 					func_322(2, 201, "HEIST_IB_SAVE" /* GXT: Confirm */, uParam0, 1, 363);
 					func_322(2, 202, "HEIST_IB_UNSAVE" /* GXT: Cancel */, uParam0, 1, 363);
-					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 					{
 						func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 					}
@@ -10819,17 +10819,17 @@ void func_319(var uParam0)//Position - 0xC6C5
 						}
 						else if (MISC::IS_XBOX360_VERSION() || func_104())
 						{
-							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "HEIST_IB_XBL" /* GXT: View gamer card */, uParam0, 0);
+							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, 217 /*INPUT_FRONTEND_SELECT*/, true), "HEIST_IB_XBL" /* GXT: View gamer card */, uParam0, 0);
 						}
 						else
 						{
-							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "HEIST_IB_PSNXBL", uParam0, 0);
+							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, 217 /*INPUT_FRONTEND_SELECT*/, true), "HEIST_IB_PSNXBL", uParam0, 0);
 						}
 					}
 					func_322(2, 204, "HP_OVERVIEW" /* GXT: Overview */, uParam0, 1, 363);
 					func_322(2, 206, "HP_MEMBERS" /* GXT: Members */, uParam0, 1, 363);
 					func_322(2, 205, "HP_SURVEIL" /* GXT: Surveillance */, uParam0, 1, 363);
-					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 					{
 						func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 					}
@@ -10848,7 +10848,7 @@ void func_319(var uParam0)//Position - 0xC6C5
 					}
 					func_322(2, 201, "HEIST_IB_SAVE" /* GXT: Confirm */, uParam0, 1, 363);
 					func_322(2, 202, "HEIST_IB_UNSAVE" /* GXT: Cancel */, uParam0, 1, 363);
-					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 					{
 						func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 					}
@@ -10897,17 +10897,17 @@ void func_319(var uParam0)//Position - 0xC6C5
 						}
 						else if (MISC::IS_XBOX360_VERSION() || func_104())
 						{
-							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "HEIST_IB_XBL" /* GXT: View gamer card */, uParam0, 0);
+							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, 217 /*INPUT_FRONTEND_SELECT*/, true), "HEIST_IB_XBL" /* GXT: View gamer card */, uParam0, 0);
 						}
 						else
 						{
-							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2, 217, true), "HEIST_IB_PSNXBL", uParam0, 0);
+							func_321(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, 217 /*INPUT_FRONTEND_SELECT*/, true), "HEIST_IB_PSNXBL", uParam0, 0);
 						}
 					}
 					func_322(2, 204, "HP_OVERVIEW" /* GXT: Overview */, uParam0, 1, 363);
 					func_322(2, 206, "HP_MAP" /* GXT: Map */, uParam0, 1, 363);
 					func_322(2, 205, "HP_MEMBERS" /* GXT: Members */, uParam0, 1, 363);
-					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 					{
 						func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 					}
@@ -10926,7 +10926,7 @@ void func_319(var uParam0)//Position - 0xC6C5
 					}
 					func_322(2, 201, "HEIST_IB_SAVE" /* GXT: Confirm */, uParam0, 1, 363);
 					func_322(2, 202, "HEIST_IB_UNSAVE" /* GXT: Cancel */, uParam0, 1, 363);
-					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 					{
 						func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 					}
@@ -11073,7 +11073,7 @@ void func_327(var uParam0, var uParam1, var uParam2, int iParam3)//Position - 0x
 	int iVar4;
 	int iVar5;
 	
-	if (iParam3 == 1 || PAD::HAVE_CONTROLS_CHANGED(2))
+	if (iParam3 == 1 || PAD::HAVE_CONTROLS_CHANGED(2 /*FRONTEND_CONTROL*/))
 	{
 		*uParam2 = 0;
 		if (GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(*uParam0))
@@ -11896,9 +11896,9 @@ int func_345(var uParam0, bool bParam1, bool bParam2)//Position - 0xE75E
 
 void func_346()//Position - 0xE7A5
 {
-	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
-		PAD::SET_INPUT_EXCLUSIVE(2, 202);
+		PAD::SET_INPUT_EXCLUSIVE(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/);
 	}
 }
 
@@ -13317,7 +13317,7 @@ void func_416()//Position - 0x100C7
 						func_168(&Var0);
 					}
 				}
-				else if (PAD::IS_CONTROL_JUST_PRESSED(2, 51))
+				else if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 51 /*INPUT_CONTEXT*/))
 				{
 					func_159();
 					func_414(&Global_1959720, 1);
@@ -13326,7 +13326,7 @@ void func_416()//Position - 0x100C7
 					Global_1959720.f_812.f_2003 = 0;
 					func_418();
 				}
-				else if (PAD::IS_CONTROL_JUST_PRESSED(2, 52) && !BitTest(Global_1836144, 1))
+				else if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 52 /*INPUT_CONTEXT_SECONDARY*/) && !BitTest(Global_1836144, 1))
 				{
 					if (func_145())
 					{
@@ -24610,7 +24610,7 @@ void func_658(var uParam0)//Position - 0x1A9AE
 	{
 		return;
 	}
-	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
 		if (uParam0->f_794.f_6 == 0)
 		{
@@ -24653,7 +24653,7 @@ void func_658(var uParam0)//Position - 0x1A9AE
 			func_322(2, 204, "HP_OVERVIEW" /* GXT: Overview */, uParam0, 1, 363);
 			func_322(2, 206, "HP_SURVEIL" /* GXT: Surveillance */, uParam0, 1, 363);
 			func_322(2, 205, "HP_MAP" /* GXT: Map */, uParam0, 1, 363);
-			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 			{
 				func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 			}
@@ -24689,7 +24689,7 @@ void func_658(var uParam0)//Position - 0x1A9AE
 					func_322(2, 204, "HP_SURVEIL" /* GXT: Surveillance */, uParam0, 1, 363);
 					break;
 			}
-			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 			{
 				func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 			}
@@ -24714,7 +24714,7 @@ void func_658(var uParam0)//Position - 0x1A9AE
 			func_322(2, 204, "HP_OVERVIEW" /* GXT: Overview */, uParam0, 1, 363);
 			func_322(2, 206, "HP_MISSION" /* GXT: Missions */, uParam0, 1, 363);
 			func_322(2, 205, "HP_SURVEIL" /* GXT: Surveillance */, uParam0, 1, 363);
-			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 			{
 				func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 			}
@@ -24739,7 +24739,7 @@ void func_658(var uParam0)//Position - 0x1A9AE
 			func_322(2, 204, "HP_OVERVIEW" /* GXT: Overview */, uParam0, 1, 363);
 			func_322(2, 206, "HP_MAP" /* GXT: Map */, uParam0, 1, 363);
 			func_322(2, 205, "HP_MISSION" /* GXT: Missions */, uParam0, 1, 363);
-			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 			{
 				func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 			}
@@ -25692,7 +25692,7 @@ void func_707()//Position - 0x1C27F
 							func_168(&Var0);
 						}
 					}
-					else if (PAD::IS_CONTROL_JUST_PRESSED(2, 51))
+					else if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 51 /*INPUT_CONTEXT*/))
 					{
 						func_159();
 						func_711(&Global_1958748, 1);
@@ -25701,7 +25701,7 @@ void func_707()//Position - 0x1C27F
 						Global_1958748.f_812.f_150 = 0;
 						func_710();
 					}
-					else if (PAD::IS_CONTROL_JUST_PRESSED(2, 52) && !BitTest(Global_1836144, 1))
+					else if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 52 /*INPUT_CONTEXT_SECONDARY*/) && !BitTest(Global_1836144, 1))
 					{
 						if (func_145())
 						{
@@ -25724,7 +25724,7 @@ void func_707()//Position - 0x1C27F
 							func_168(&Var1);
 						}
 					}
-					else if (PAD::IS_CONTROL_JUST_PRESSED(2, 51))
+					else if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 51 /*INPUT_CONTEXT*/))
 					{
 						func_159();
 						func_711(&Global_1958748, 1);
@@ -26879,7 +26879,7 @@ void func_747(var uParam0)//Position - 0x1DA2A
 			func_322(2, 204, "HP_OVERVIEW" /* GXT: Overview */, uParam0, 1, 363);
 			func_322(2, 206, "HP_SURVEIL" /* GXT: Surveillance */, uParam0, 1, 363);
 			func_322(2, 205, "HP_MAP" /* GXT: Map */, uParam0, 1, 363);
-			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 			{
 				func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 			}
@@ -26914,7 +26914,7 @@ void func_747(var uParam0)//Position - 0x1DA2A
 					func_322(2, 204, "HP_SURVEIL" /* GXT: Surveillance */, uParam0, 1, 363);
 					break;
 			}
-			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 			{
 				func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 			}
@@ -26938,7 +26938,7 @@ void func_747(var uParam0)//Position - 0x1DA2A
 			func_322(2, 204, "HP_OVERVIEW" /* GXT: Overview */, uParam0, 1, 363);
 			func_322(2, 206, "HP_HEIST" /* GXT: Heists */, uParam0, 1, 363);
 			func_322(2, 205, "HP_SURVEIL" /* GXT: Surveillance */, uParam0, 1, 363);
-			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 			{
 				func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 			}
@@ -26962,7 +26962,7 @@ void func_747(var uParam0)//Position - 0x1DA2A
 			func_322(2, 204, "HP_OVERVIEW" /* GXT: Overview */, uParam0, 1, 363);
 			func_322(2, 206, "HP_MAP" /* GXT: Map */, uParam0, 1, 363);
 			func_322(2, 205, "HP_HEIST" /* GXT: Heists */, uParam0, 1, 363);
-			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+			if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 			{
 				func_322(2, 39, "HEIST_IB_ZOOM" /* GXT: Zoom */, uParam0, 1, 363);
 			}

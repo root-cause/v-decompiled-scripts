@@ -14295,8 +14295,8 @@ void func_24(var uParam0)//Position - 0x72FC
 				{
 					if (PLAYER::PLAYER_ID() == NETWORK::NETWORK_GET_PLAYER_INDEX(PLAYER::INT_TO_PARTICIPANTINDEX(iVar3)))
 					{
-						fVar4 = PAD::GET_CONTROL_NORMAL(0, 30);
-						fVar5 = PAD::GET_CONTROL_NORMAL(0, 31);
+						fVar4 = PAD::GET_CONTROL_NORMAL(0 /*PLAYER_CONTROL*/, 30 /*INPUT_MOVE_LR*/);
+						fVar5 = PAD::GET_CONTROL_NORMAL(0 /*PLAYER_CONTROL*/, 31 /*INPUT_MOVE_UD*/);
 						if (MISC::ABSF(fVar4) > 0.5f || MISC::ABSF(fVar5) > 0.5f)
 						{
 							if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))

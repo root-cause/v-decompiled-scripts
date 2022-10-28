@@ -841,7 +841,7 @@ void func_17()//Position - 0x945
 		}
 		else
 		{
-			if (!bLocal_297 && PAD::IS_DISABLED_CONTROL_JUST_PRESSED(0, 75))
+			if (!bLocal_297 && PAD::IS_DISABLED_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 75 /*INPUT_VEH_EXIT*/))
 			{
 				bLocal_297 = true;
 			}
@@ -870,7 +870,7 @@ void func_17()//Position - 0x945
 					{
 						iLocal_294 = 7;
 					}
-					else if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(0, 71))
+					else if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 71 /*INPUT_VEH_ACCELERATE*/))
 					{
 						iLocal_294 = 2;
 					}
@@ -928,8 +928,8 @@ void func_17()//Position - 0x945
 
 void func_18()//Position - 0xB99
 {
-	PAD::DISABLE_CONTROL_ACTION(0, 59, true);
-	PAD::DISABLE_CONTROL_ACTION(0, 69, true);
+	PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 59 /*INPUT_VEH_MOVE_LR*/, true);
+	PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 69 /*INPUT_VEH_ATTACK*/, true);
 }
 
 void func_19()//Position - 0xBB1
@@ -953,7 +953,7 @@ void func_19()//Position - 0xBB1
 				{
 					func_12(7);
 				}
-				if ((!func_15() && iLocal_304) && !PAD::IS_CONTROL_PRESSED(0, 74))
+				if ((!func_15() && iLocal_304) && !PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 74 /*INPUT_VEH_HEADLIGHT*/))
 				{
 					iLocal_301 = 0;
 				}
@@ -45150,7 +45150,7 @@ void func_372()//Position - 0x3581E
 			break;
 		
 		case 1:
-			if (((!bLocal_297 && iLocal_294 != 0) && (iLocal_295 > 0 && iLocal_295 < 4)) && PAD::IS_DISABLED_CONTROL_JUST_PRESSED(0, 75))
+			if (((!bLocal_297 && iLocal_294 != 0) && (iLocal_295 > 0 && iLocal_295 < 4)) && PAD::IS_DISABLED_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 75 /*INPUT_VEH_EXIT*/))
 			{
 				bLocal_297 = true;
 			}

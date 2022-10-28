@@ -546,7 +546,7 @@ int func_29(int* iParam0)//Position - 0x66C
 	{
 		return 0;
 	}
-	if (!PAD::IS_CONTROL_JUST_PRESSED(2, Global_20235))
+	if (!PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, Global_20235))
 	{
 		return 0;
 	}

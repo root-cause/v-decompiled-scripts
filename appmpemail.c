@@ -211,7 +211,7 @@ int func_3(int iParam0, int iParam1, int iParam2)//Position - 0x2FD
 	{
 		if (MISC::IS_PC_VERSION())
 		{
-			if (MISC::UPDATE_ONSCREEN_KEYBOARD() == 0 || (NETWORK::NETWORK_TEXT_CHAT_IS_TYPING() && PAD::IS_USING_KEYBOARD_AND_MOUSE(2)))
+			if (MISC::UPDATE_ONSCREEN_KEYBOARD() == 0 || (NETWORK::NETWORK_TEXT_CHAT_IS_TYPING() && PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/)))
 			{
 				return 0;
 			}
@@ -247,7 +247,7 @@ void func_5()//Position - 0x398
 			iLocal_27 = 0;
 		}
 	}
-	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
 		if (func_3(2, 181, 0))
 		{
@@ -354,7 +354,7 @@ void func_12()//Position - 0x51C
 	{
 		if (Global_20244 == 0)
 		{
-			if (PAD::IS_CONTROL_PRESSED(2, Global_20237))
+			if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, Global_20237))
 			{
 				func_2();
 				Global_20244 = 1;
@@ -395,7 +395,7 @@ void func_12()//Position - 0x51C
 	}
 	else if (Global_20244 == 0)
 	{
-		if (PAD::IS_CONTROL_PRESSED(2, Global_20238))
+		if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, Global_20238))
 		{
 			if (iLocal_26 == 1)
 			{
@@ -2162,7 +2162,7 @@ void func_44()//Position - 0x2C8C
 			iLocal_27 = 0;
 		}
 	}
-	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
 		if (func_3(2, 181, 0))
 		{

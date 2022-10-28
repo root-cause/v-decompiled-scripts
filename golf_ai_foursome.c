@@ -2632,7 +2632,7 @@ void func_105(var uParam0, var uParam1, var uParam2)//Position - 0x36AE
 	}
 	if (func_110(uParam2))
 	{
-		PAD::SET_CONTROL_SHAKE(0, 50, func_108(0, func_109(256, (MISC::ABSI(SYSTEM::ROUND(uParam2->f_1.f_6)) + MISC::ABSI(SYSTEM::ROUND(uParam2->f_1.f_5))) + 30)));
+		PAD::SET_CONTROL_SHAKE(0 /*PLAYER_CONTROL*/, 50, func_108(0, func_109(256, (MISC::ABSI(SYSTEM::ROUND(uParam2->f_1.f_6)) + MISC::ABSI(SYSTEM::ROUND(uParam2->f_1.f_5))) + 30)));
 	}
 	if (!func_275(uParam2, 2))
 	{
@@ -2685,7 +2685,7 @@ void func_105(var uParam0, var uParam1, var uParam2)//Position - 0x36AE
 				func_263(uParam2, 6);
 				if (func_110(uParam2))
 				{
-					PAD::SET_CONTROL_SHAKE(0, 10, 10);
+					PAD::SET_CONTROL_SHAKE(0 /*PLAYER_CONTROL*/, 10, 10);
 				}
 			}
 			func_74(uParam2, 4);
@@ -3271,7 +3271,7 @@ int func_126(var uParam0, var uParam1, var uParam2)//Position - 0x4372
 	{
 		if (!func_172(uParam1, uParam2))
 		{
-			PAD::SET_CONTROL_SHAKE(0, 100, 256);
+			PAD::SET_CONTROL_SHAKE(0 /*PLAYER_CONTROL*/, 100, 256);
 		}
 	}
 	return 1;
@@ -7999,7 +7999,7 @@ int func_291(int iParam0)//Position - 0xA4C5
 							{
 								if ((ENTITY::IS_ENTITY_A_VEHICLE(iVar1) && ENTITY::GET_VEHICLE_INDEX_FROM_ENTITY_INDEX(iVar1) == iParam0) || (ENTITY::IS_ENTITY_A_PED(iVar1) && ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar1) == VEHICLE::GET_PED_IN_VEHICLE_SEAT(iParam0, -1, false)))
 								{
-									if ((PED::IS_PED_ON_FOOT(PLAYER::PLAYER_PED_ID()) && PAD::IS_CONTROL_PRESSED(0, 24)) || (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false) && PAD::IS_CONTROL_PRESSED(0, 69)))
+									if ((PED::IS_PED_ON_FOOT(PLAYER::PLAYER_PED_ID()) && PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 24 /*INPUT_ATTACK*/)) || (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false) && PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 69 /*INPUT_VEH_ATTACK*/)))
 									{
 										return 1;
 									}

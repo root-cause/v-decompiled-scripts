@@ -16994,13 +16994,13 @@ void func_336()//Position - 0x19A57
 	if (!func_317(NETWORK::PARTICIPANT_ID(), 2))
 	{
 		func_506();
-		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(0))
+		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(0 /*PLAYER_CONTROL*/))
 		{
-			PAD::DISABLE_CONTROL_ACTION(0, 210, true);
+			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 210 /*INPUT_FRONTEND_RS*/, true);
 		}
 		else
 		{
-			PAD::DISABLE_CONTROL_ACTION(0, 51, true);
+			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 51 /*INPUT_CONTEXT*/, true);
 		}
 		if (func_337())
 		{
@@ -51417,7 +51417,7 @@ void func_506()//Position - 0x3C323
 
 void func_507()//Position - 0x3C336
 {
-	PAD::DISABLE_CONTROL_ACTION(0, 75, true);
+	PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 75 /*INPUT_VEH_EXIT*/, true);
 }
 
 int func_508()//Position - 0x3C346
@@ -53766,9 +53766,9 @@ void func_574()//Position - 0x4061E
 	{
 		return;
 	}
-	PAD::DISABLE_CONTROL_ACTION(0, 80, true);
-	PAD::DISABLE_CONTROL_ACTION(0, 73, true);
-	if (PAD::IS_CONTROL_JUST_PRESSED(0, 177))
+	PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 80 /*INPUT_VEH_CIN_CAM*/, true);
+	PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 73 /*INPUT_VEH_DUCK*/, true);
+	if (PAD::IS_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 177 /*INPUT_CELLPHONE_CANCEL*/))
 	{
 		if (func_317(NETWORK::PARTICIPANT_ID(), 0))
 		{
@@ -53780,7 +53780,7 @@ void func_574()//Position - 0x4061E
 		}
 		func_575();
 	}
-	if (PAD::IS_CONTROL_JUST_PRESSED(0, 176))
+	if (PAD::IS_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 176 /*INPUT_CELLPHONE_SELECT*/))
 	{
 		if (!func_530(NETWORK::PARTICIPANT_ID(), 3))
 		{
@@ -53900,7 +53900,7 @@ void func_579(int iParam0, var uParam1, var uParam2, int iParam3)//Position - 0x
 	int iVar4;
 	int iVar5;
 	
-	if (iParam3 == 1 || PAD::HAVE_CONTROLS_CHANGED(2))
+	if (iParam3 == 1 || PAD::HAVE_CONTROLS_CHANGED(2 /*FRONTEND_CONTROL*/))
 	{
 		*uParam2 = 0;
 		if (GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(*iParam0))

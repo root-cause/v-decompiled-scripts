@@ -12131,9 +12131,9 @@ void func_282()//Position - 0xF5BF
 		HUD::HIDE_HELP_TEXT_THIS_FRAME();
 	}
 	func_283(0);
-	PAD::STOP_CONTROL_SHAKE(0);
+	PAD::STOP_CONTROL_SHAKE(0 /*PLAYER_CONTROL*/);
 	func_283(0);
-	PAD::DISABLE_CONTROL_ACTION(2, 199, true);
+	PAD::DISABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 199 /*INPUT_FRONTEND_PAUSE*/, true);
 }
 
 void func_283(int iParam0)//Position - 0xF63A
@@ -21307,8 +21307,8 @@ void func_552()//Position - 0x1AA63
 {
 	if (func_553())
 	{
-		PAD::DISABLE_CONTROL_ACTION(0, 49, true);
-		PAD::DISABLE_CONTROL_ACTION(0, 36, true);
+		PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 49 /*INPUT_ARREST*/, true);
+		PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 36 /*INPUT_DUCK*/, true);
 		if (func_340(PLAYER::PLAYER_ID(), 1, 1))
 		{
 			PLAYER::RESET_PLAYER_STAMINA(PLAYER::PLAYER_ID());
@@ -21327,7 +21327,7 @@ void func_552()//Position - 0x1AA63
 			else
 			{
 				func_14(&(Global_2667225.f_2828), 0, 0);
-				Global_2667225.f_2830 = EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(88, PLAYER::PLAYER_PED_ID(), 0f);
+				Global_2667225.f_2830 = EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(88 /*EVENT_SHOCKING_EXPLOSION*/, PLAYER::PLAYER_PED_ID(), 0f);
 			}
 		}
 	}
@@ -110110,7 +110110,7 @@ int func_914(int iParam0)//Position - 0x8199A
 
 int func_915(int iParam0)//Position - 0x819C0
 {
-	if (PAD::IS_CONTROL_JUST_RELEASED(2, iParam0) || PAD::IS_DISABLED_CONTROL_JUST_RELEASED(2, iParam0))
+	if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, iParam0) || PAD::IS_DISABLED_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, iParam0))
 	{
 		return 1;
 	}
@@ -110126,7 +110126,7 @@ int func_916(int iParam0)//Position - 0x819E4
 	iVar0 = iParam0;
 	iVar1 = func_669(iVar0);
 	bVar2 = func_666(iVar0);
-	if ((PAD::IS_CONTROL_JUST_RELEASED(2, iParam0) || PAD::IS_DISABLED_CONTROL_JUST_RELEASED(2, iParam0)) || func_917(iParam0, &(Global_1648034.f_1060), 1))
+	if ((PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, iParam0) || PAD::IS_DISABLED_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, iParam0)) || func_917(iParam0, &(Global_1648034.f_1060), 1))
 	{
 		if (!BitTest(Global_1648034.f_1049[iVar1], bVar2))
 		{
@@ -110147,9 +110147,9 @@ int func_917(int iParam0, var uParam1, int iParam2)//Position - 0x81A78
 	int iVar1;
 	int iVar2;
 	
-	iVar0 = (PAD::GET_CONTROL_VALUE(2, 195) - 127);
-	iVar1 = (PAD::GET_CONTROL_VALUE(2, 196) - 127);
-	iVar2 = (PAD::GET_CONTROL_VALUE(2, 197) - 127);
+	iVar0 = (PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 195 /*INPUT_FRONTEND_AXIS_X*/) - 127);
+	iVar1 = (PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 196 /*INPUT_FRONTEND_AXIS_Y*/) - 127);
+	iVar2 = (PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 197 /*INPUT_FRONTEND_RIGHT_AXIS_X*/) - 127);
 	switch (iParam0)
 	{
 		case 189:

@@ -3756,7 +3756,7 @@ void func_125()//Position - 0x45BA
 	
 	MISC::SET_BIT(&(Local_135.f_417), 0);
 	StringCopy(&Var0, "SC_H_LBD_3", 16);
-	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
 		StringConCat(&Var0, "PC", 16);
 	}
@@ -3833,14 +3833,14 @@ void func_129()//Position - 0x4644
 	iVar2 = 226;
 	iVar3 = 191;
 	iVar4 = 194;
-	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
 		iVar3 = 237;
 		iVar4 = 238;
 		iVar1 = 188;
 		iVar2 = 187;
 	}
-	if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2, iVar3))
+	if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, iVar3))
 	{
 		Local_135.f_432++;
 		if (Local_135.f_432 == 3)
@@ -3865,7 +3865,7 @@ void func_129()//Position - 0x4644
 	{
 		return;
 	}
-	if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2, iVar4))
+	if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, iVar4))
 	{
 		if (Local_135.f_432 > 0)
 		{
@@ -3874,11 +3874,11 @@ void func_129()//Position - 0x4644
 		return;
 	}
 	iVar6 = 0;
-	if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2, iVar1))
+	if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, iVar1))
 	{
 		iVar6 = 1;
 	}
-	else if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2, iVar2))
+	else if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, iVar2))
 	{
 		iVar6 = -1;
 	}
@@ -4000,7 +4000,7 @@ void func_136()//Position - 0x499E
 	{
 		StringCopy(&Var0, "SC_H_LBD_0", 16);
 	}
-	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
 		StringConCat(&Var0, "PC", 16);
 	}
@@ -4887,7 +4887,7 @@ void func_171()//Position - 0x5CD5
 	StringCopy(&Var0, Local_135.f_419, 16);
 	if (Local_135.f_420 == -1)
 	{
-		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2) && !Local_135.f_421)
+		if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/) && !Local_135.f_421)
 		{
 			StringConCat(&Var0, "_PC", 16);
 		}
@@ -7170,7 +7170,7 @@ void func_243(struct<2> Param0)//Position - 0x968D
 	Local_135.f_159[Local_135.f_308 /*3*/].f_1 = { Param0 };
 	if (func_244(Param0, Local_135.f_204[Local_135.f_178 /*19*/]) < SYSTEM::POW((0.185185f * 2f), 2f))
 	{
-		PAD::SET_CONTROL_SHAKE(0, 1000, 100);
+		PAD::SET_CONTROL_SHAKE(0 /*PLAYER_CONTROL*/, 1000, 100);
 	}
 	func_221("Rocket_Explode", Param0, 1);
 	Local_135.f_308++;
@@ -7189,7 +7189,7 @@ void func_245(int iParam0, int iParam1, int iParam2)//Position - 0x972B
 {
 	Local_135.f_204[iParam2 /*19*/].f_10[iParam0 /*4*/] = { Local_135.f_204[iParam1 /*19*/] };
 	func_246(iParam1, -Local_135.f_59[Local_175[iParam2 /*37*/].f_9.f_5[iParam0 /*5*/].f_4 /*5*/].f_4, 0);
-	PAD::SET_CONTROL_SHAKE(0, 250, 200);
+	PAD::SET_CONTROL_SHAKE(0 /*PLAYER_CONTROL*/, 250, 200);
 	Local_175[iParam1 /*37*/].f_3 = NETWORK::GET_NETWORK_TIME();
 	if (Local_175[iParam1 /*37*/] != 2)
 	{
@@ -7266,7 +7266,7 @@ void func_249(int iParam0, int iParam1, int iParam2)//Position - 0x98A6
 	if (iParam1 == Local_135.f_178)
 	{
 		func_250(-Local_135.f_59[Local_175[iParam2 /*37*/].f_9.f_5[iParam0 /*5*/].f_4 /*5*/].f_4, 0);
-		PAD::SET_CONTROL_SHAKE(0, 250, 200);
+		PAD::SET_CONTROL_SHAKE(0 /*PLAYER_CONTROL*/, 250, 200);
 		Local_173[Local_135.f_178 /*9*/].f_3 = NETWORK::GET_NETWORK_TIME();
 		if (Local_173[Local_135.f_178 /*9*/] != 2)
 		{
@@ -7675,7 +7675,7 @@ void func_263(int iParam0, int iParam1, int iParam2)//Position - 0xA3EB
 {
 	Local_135.f_204[iParam2 /*19*/].f_10[iParam0 /*4*/] = { Local_135.f_204[iParam1 /*19*/] };
 	func_246(iParam1, -Local_135.f_59[Local_174[iParam2 /*16*/].f_5[iParam0 /*5*/].f_4 /*5*/].f_4, 0);
-	PAD::SET_CONTROL_SHAKE(0, 250, 200);
+	PAD::SET_CONTROL_SHAKE(0 /*PLAYER_CONTROL*/, 250, 200);
 	Local_175[iParam1 /*37*/].f_3 = NETWORK::GET_NETWORK_TIME();
 	if (Local_175[iParam1 /*37*/] != 2)
 	{
@@ -7694,7 +7694,7 @@ void func_264(int iParam0, int iParam1, int iParam2)//Position - 0xA481
 	if (iParam1 == Local_135.f_178)
 	{
 		func_250(-Local_135.f_59[Local_174[iParam2 /*16*/].f_5[iParam0 /*5*/].f_4 /*5*/].f_4, 0);
-		PAD::SET_CONTROL_SHAKE(0, 250, 200);
+		PAD::SET_CONTROL_SHAKE(0 /*PLAYER_CONTROL*/, 250, 200);
 		Local_173[Local_135.f_178 /*9*/].f_3 = NETWORK::GET_NETWORK_TIME();
 		if (Local_173[Local_135.f_178 /*9*/] != 2)
 		{
@@ -7986,7 +7986,7 @@ void func_268(int iParam0)//Position - 0xAC9B
 	if (iParam0 == Local_135.f_178)
 	{
 		func_250(-8, 1);
-		PAD::SET_CONTROL_SHAKE(0, 1000, 200);
+		PAD::SET_CONTROL_SHAKE(0 /*PLAYER_CONTROL*/, 1000, 200);
 		Local_173[Local_135.f_178 /*9*/].f_3 = NETWORK::GET_NETWORK_TIME();
 		func_163(10);
 	}
@@ -8487,7 +8487,7 @@ void func_282(int iParam0)//Position - 0xB477
 				{
 					MISC::SET_BIT(&(Local_135.f_309), bVar10);
 					func_283(bVar10);
-					PAD::SET_CONTROL_SHAKE(0, 100, 50);
+					PAD::SET_CONTROL_SHAKE(0 /*PLAYER_CONTROL*/, 100, 50);
 					func_275(bVar10);
 					func_163(11);
 				}
@@ -8670,7 +8670,7 @@ void func_286(int iParam0)//Position - 0xBA04
 		{
 			Local_135.f_307 = 0;
 		}
-		PAD::SET_CONTROL_SHAKE(0, 50, 100);
+		PAD::SET_CONTROL_SHAKE(0 /*PLAYER_CONTROL*/, 50, 100);
 	}
 }
 
@@ -9661,7 +9661,7 @@ void func_310()//Position - 0xD02A
 		{
 			Local_135.f_307 = 0;
 		}
-		PAD::SET_CONTROL_SHAKE(0, 50, 100);
+		PAD::SET_CONTROL_SHAKE(0 /*PLAYER_CONTROL*/, 50, 100);
 	}
 }
 
@@ -9737,11 +9737,11 @@ int func_312()//Position - 0xD2AC
 		return -1;
 	}
 	iVar0 = 229;
-	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
 		iVar0 = 203;
 	}
-	if (PAD::IS_DISABLED_CONTROL_PRESSED(2, iVar0))
+	if (PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, iVar0))
 	{
 		return 8;
 	}
@@ -9855,7 +9855,7 @@ int func_316()//Position - 0xD43C
 	iVar1 = 363;
 	iVar2 = 363;
 	iVar3 = 363;
-	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
 		iVar0 = 188;
 		iVar1 = 187;
@@ -9863,24 +9863,24 @@ int func_316()//Position - 0xD43C
 		iVar3 = 190;
 	}
 	fVar4 = 0f;
-	if (!PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (!PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
-		fVar4 = PAD::GET_DISABLED_CONTROL_NORMAL(2, 221);
+		fVar4 = PAD::GET_DISABLED_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 221 /*INPUT_SCRIPT_RIGHT_AXIS_Y*/);
 	}
-	if (fVar4 < -0.65f || (iVar0 != 363 && PAD::IS_DISABLED_CONTROL_PRESSED(2, iVar0)))
+	if (fVar4 < -0.65f || (iVar0 != 363 && PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, iVar0)))
 	{
 		return 4;
 	}
-	if (fVar4 > 0.65f || (iVar1 != 363 && PAD::IS_DISABLED_CONTROL_PRESSED(2, iVar1)))
+	if (fVar4 > 0.65f || (iVar1 != 363 && PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, iVar1)))
 	{
 		return 5;
 	}
-	fVar5 = PAD::GET_DISABLED_CONTROL_NORMAL(2, 220);
-	if (fVar5 < -0.65f || (iVar2 != 363 && PAD::IS_DISABLED_CONTROL_PRESSED(2, iVar2)))
+	fVar5 = PAD::GET_DISABLED_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 220 /*INPUT_SCRIPT_RIGHT_AXIS_X*/);
+	if (fVar5 < -0.65f || (iVar2 != 363 && PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, iVar2)))
 	{
 		return 6;
 	}
-	if (fVar5 > 0.65f || (iVar3 != 363 && PAD::IS_DISABLED_CONTROL_PRESSED(2, iVar3)))
+	if (fVar5 > 0.65f || (iVar3 != 363 && PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, iVar3)))
 	{
 		return 7;
 	}
@@ -10024,28 +10024,28 @@ int func_318()//Position - 0xD80D
 	iVar1 = 363;
 	iVar2 = 363;
 	iVar3 = 363;
-	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
 		iVar0 = 363;
 		iVar1 = 363;
 		iVar2 = 363;
 		iVar3 = 363;
 	}
-	fVar4 = PAD::GET_DISABLED_CONTROL_NORMAL(2, 219);
-	if (fVar4 < -0.65f || (iVar0 != 363 && PAD::IS_DISABLED_CONTROL_PRESSED(2, iVar0)))
+	fVar4 = PAD::GET_DISABLED_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 219 /*INPUT_SCRIPT_LEFT_AXIS_Y*/);
+	if (fVar4 < -0.65f || (iVar0 != 363 && PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, iVar0)))
 	{
 		return 0;
 	}
-	if (fVar4 > 0.65f || (iVar1 != 363 && PAD::IS_DISABLED_CONTROL_PRESSED(2, iVar1)))
+	if (fVar4 > 0.65f || (iVar1 != 363 && PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, iVar1)))
 	{
 		return 1;
 	}
-	fVar5 = PAD::GET_DISABLED_CONTROL_NORMAL(2, 218);
-	if (fVar5 < -0.65f || (iVar2 != 363 && PAD::IS_DISABLED_CONTROL_PRESSED(2, iVar2)))
+	fVar5 = PAD::GET_DISABLED_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 218 /*INPUT_SCRIPT_LEFT_AXIS_X*/);
+	if (fVar5 < -0.65f || (iVar2 != 363 && PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, iVar2)))
 	{
 		return 2;
 	}
-	if (fVar5 > 0.65f || (iVar3 != 363 && PAD::IS_DISABLED_CONTROL_PRESSED(2, iVar3)))
+	if (fVar5 > 0.65f || (iVar3 != 363 && PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, iVar3)))
 	{
 		return 3;
 	}
@@ -10307,7 +10307,7 @@ void func_328()//Position - 0xDF45
 	iVar0 = 199;
 	iVar1 = 225;
 	iVar2 = 193;
-	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
 		iVar0 = 201;
 		iVar1 = 214;
@@ -10316,7 +10316,7 @@ void func_328()//Position - 0xDF45
 	{
 		if (Local_173[Local_135.f_178 /*9*/] != 1)
 		{
-			if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2, iVar0))
+			if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, iVar0))
 			{
 				func_16();
 				func_163(1);
@@ -10326,7 +10326,7 @@ void func_328()//Position - 0xDF45
 			}
 			if (Local_135.f_452)
 			{
-				if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2, iVar2))
+				if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, iVar2))
 				{
 					iVar3 = 0;
 					while (iVar3 <= 3)
@@ -10347,7 +10347,7 @@ void func_328()//Position - 0xDF45
 		}
 		if (Local_173[Local_135.f_178 /*9*/] == 1)
 		{
-			if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2, iVar1))
+			if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, iVar1))
 			{
 				func_16();
 				func_236(0);
@@ -10404,7 +10404,7 @@ void func_330()//Position - 0xE0A6
 			StringConCat(&Var0, "_PS4", 24);
 		}
 	}
-	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
 		StringConCat(&Var0, "_PC", 24);
 	}
@@ -11179,13 +11179,13 @@ void func_356()//Position - 0xF3E5
 void func_357(bool bParam0)//Position - 0xF5FC
 {
 	func_370();
-	PAD::ALLOW_ALTERNATIVE_SCRIPT_CONTROLS_LAYOUT(0);
-	PAD::ALLOW_ALTERNATIVE_SCRIPT_CONTROLS_LAYOUT(2);
+	PAD::ALLOW_ALTERNATIVE_SCRIPT_CONTROLS_LAYOUT(0 /*PLAYER_CONTROL*/);
+	PAD::ALLOW_ALTERNATIVE_SCRIPT_CONTROLS_LAYOUT(2 /*FRONTEND_CONTROL*/);
 	if (MISC::IS_PC_VERSION())
 	{
-		PAD::DISABLE_CONTROL_ACTION(2, 200, true);
+		PAD::DISABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 200 /*INPUT_FRONTEND_PAUSE_ALTERNATE*/, true);
 	}
-	PAD::DISABLE_CONTROL_ACTION(2, 199, true);
+	PAD::DISABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 199 /*INPUT_FRONTEND_PAUSE*/, true);
 	GRAPHICS::SET_SCRIPT_GFX_DRAW_BEHIND_PAUSEMENU(false);
 	func_369(1);
 	func_368(4, -1);
@@ -11723,11 +11723,11 @@ int func_383()//Position - 0xFE99
 		return 0;
 	}
 	iVar0 = 202;
-	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2))
+	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
 		iVar0 = 214;
 	}
-	if (PAD::IS_CONTROL_PRESSED(2, iVar0) || PAD::IS_DISABLED_CONTROL_PRESSED(2, iVar0))
+	if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, iVar0) || PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, iVar0))
 	{
 		func_384((1000 - MISC::ABSI((NETWORK::GET_NETWORK_TIME() - Local_135.f_431))), 1000, "DEG_GAME_QUIT" /* GXT: Fill bar to quit the game. */, 1, -1, 2, -1082130432, -1082130432, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, -1, 0, -1, -1082130432, -1082130432, 0, 1, 0, 0, 1, -1, 0, -1, 1);
 	}
@@ -11735,7 +11735,7 @@ int func_383()//Position - 0xFE99
 	{
 		func_384(0, 1000, "DEG_GAME_QUIT" /* GXT: Fill bar to quit the game. */, 1, -1, 2, -1082130432, -1082130432, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, -1, 0, -1, -1082130432, -1082130432, 0, 1, 0, 0, 1, -1, 0, -1, 1);
 	}
-	if (PAD::IS_DISABLED_CONTROL_PRESSED(2, iVar0))
+	if (PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, iVar0))
 	{
 		if (Local_135.f_431 == -2147483647)
 		{

@@ -2815,7 +2815,7 @@ int func_75()//Position - 0x2823
 	{
 		return 0;
 	}
-	if (PAD::IS_CONTROL_JUST_PRESSED(0, 18) || PAD::IS_CONTROL_JUST_PRESSED(2, 18))
+	if (PAD::IS_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 18 /*INPUT_SKIP_CUTSCENE*/) || PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 18 /*INPUT_SKIP_CUTSCENE*/))
 	{
 		return 1;
 	}
@@ -32698,7 +32698,7 @@ void func_235()//Position - 0x2244E
 						VEHICLE::SMASH_VEHICLE_WINDOW(Local_442.f_0, 2);
 						VEHICLE::SMASH_VEHICLE_WINDOW(Local_442.f_0, 0);
 						iLocal_632 = 1;
-						EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(81, Local_446.f_0, -1f);
+						EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(81 /*EVENT_SHOCKING_CAR_PILE_UP*/, Local_446.f_0, -1f);
 						if (func_222(Local_449))
 						{
 							TASK::TASK_VEHICLE_DRIVE_TO_COORD(Local_449.f_1, Local_449.f_0, -567.85f, -288.8f, 34.08f, 12f, 0, iLocal_437, 24, 5f, 5f);
@@ -33732,7 +33732,7 @@ void func_254()//Position - 0x24524
 		
 		case 1:
 			func_256();
-			PAD::DISABLE_CONTROL_ACTION(0, 44, true);
+			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 44 /*INPUT_COVER*/, true);
 			if (iLocal_637 == 1)
 			{
 				iLocal_674 = 1;

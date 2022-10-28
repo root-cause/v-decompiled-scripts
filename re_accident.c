@@ -879,7 +879,7 @@ void func_17()//Position - 0x9CF
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
 		if (iVar1 == joaat("WEAPON_PETROLCAN"))
 		{
-			if (PAD::IS_CONTROL_PRESSED(0, 24) && PED::IS_PED_SHOOTING(PLAYER::PLAYER_PED_ID()))
+			if (PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 24 /*INPUT_ATTACK*/) && PED::IS_PED_SHOOTING(PLAYER::PLAYER_PED_ID()))
 			{
 				if (iLocal_54 == 0)
 				{
@@ -1136,11 +1136,11 @@ void func_22()//Position - 0xDC8
 					ENTITY::SET_ENTITY_LOAD_COLLISION_FLAG(iLocal_79, true, 1);
 					ENTITY::FREEZE_ENTITY_POSITION(iLocal_79, true);
 					EVENT::SET_DECISION_MAKER(iLocal_78, joaat("empty"));
-					EVENT::CLEAR_DECISION_MAKER_EVENT_RESPONSE(joaat("empty"), 24);
-					EVENT::CLEAR_DECISION_MAKER_EVENT_RESPONSE(joaat("empty"), 47);
-					EVENT::CLEAR_DECISION_MAKER_EVENT_RESPONSE(joaat("empty"), 62);
-					EVENT::CLEAR_DECISION_MAKER_EVENT_RESPONSE(joaat("empty"), 138);
-					EVENT::CLEAR_DECISION_MAKER_EVENT_RESPONSE(joaat("empty"), 56);
+					EVENT::CLEAR_DECISION_MAKER_EVENT_RESPONSE(joaat("empty"), 24 /*EVENT_FIRE_NEARBY*/);
+					EVENT::CLEAR_DECISION_MAKER_EVENT_RESPONSE(joaat("empty"), 47 /*EVENT_ON_FIRE*/);
+					EVENT::CLEAR_DECISION_MAKER_EVENT_RESPONSE(joaat("empty"), 62 /*EVENT_POTENTIAL_WALK_INTO_FIRE*/);
+					EVENT::CLEAR_DECISION_MAKER_EVENT_RESPONSE(joaat("empty"), 138 /*EVENT_VEHICLE_ON_FIRE*/);
+					EVENT::CLEAR_DECISION_MAKER_EVENT_RESPONSE(joaat("empty"), 56 /*EVENT_PED_TO_FLEE*/);
 					iLocal_89 = OBJECT::CREATE_OBJECT(joaat("prop_generator_01a"), Local_274.f_0, (Local_274.f_1 + 0.5f), (Local_274.f_2 - 0.25f), true, true, false);
 					ENTITY::SET_ENTITY_HEADING(iLocal_89, 75f);
 					ENTITY::SET_ENTITY_PROOFS(iLocal_89, false, true, true, false, false, false, false, false);
@@ -4310,7 +4310,7 @@ int func_101()//Position - 0x4F04
 	{
 		return 0;
 	}
-	if (PAD::IS_CONTROL_JUST_PRESSED(0, 18) || PAD::IS_CONTROL_JUST_PRESSED(2, 18))
+	if (PAD::IS_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 18 /*INPUT_SKIP_CUTSCENE*/) || PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 18 /*INPUT_SKIP_CUTSCENE*/))
 	{
 		return 1;
 	}

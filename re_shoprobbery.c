@@ -538,7 +538,7 @@ void __EntryFunction__()//Position - 0x0
 									{
 										func_161(1);
 										SYSTEM::SETTIMERA(0);
-										EVENT::ADD_SHOCKING_EVENT_AT_POSITION(90, Local_123, 15000f);
+										EVENT::ADD_SHOCKING_EVENT_AT_POSITION(90 /*EVENT_SHOCKING_GUN_FIGHT*/, Local_123, 15000f);
 										iLocal_44 = 1;
 									}
 								}
@@ -6967,8 +6967,8 @@ int func_115(int iParam0)//Position - 0x8F71
 	int iVar0;
 	int iVar1;
 	
-	iVar0 = (PAD::GET_CONTROL_VALUE(2, 195) - 128);
-	iVar1 = (PAD::GET_CONTROL_VALUE(2, 196) - 128);
+	iVar0 = (PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 195 /*INPUT_FRONTEND_AXIS_X*/) - 128);
+	iVar1 = (PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 196 /*INPUT_FRONTEND_AXIS_Y*/) - 128);
 	if (((iVar0 < iParam0 && iVar0 > -iParam0) && iVar1 < iParam0) && iVar1 > -iParam0)
 	{
 	}
@@ -8922,7 +8922,7 @@ int func_172()//Position - 0xB62B
 {
 	if (ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), -823.1281f, -187.9591f, 36.6189f, 4f, 4f, 4f, false, true, 0) || ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), -1201.0172f, -777.5527f, 16.3398f, 4f, 4f, 4f, false, true, 0))
 	{
-		PAD::DISABLE_CONTROL_ACTION(0, 22, true);
+		PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 22 /*INPUT_JUMP*/, true);
 		PED::SET_PED_MAX_MOVE_BLEND_RATIO(PLAYER::PLAYER_PED_ID(), 1f);
 		PED::SET_PED_USING_ACTION_MODE(PLAYER::PLAYER_PED_ID(), false, 1, 0);
 		return 1;
