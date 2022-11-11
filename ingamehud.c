@@ -14743,7 +14743,7 @@ int func_334(float fParam0, int iParam1, int iParam2, int iParam3, int iParam4)/
 	}
 	if (GRAPHICS::GET_SCREEN_COORD_FROM_WORLD_COORD(Var14, &uVar0, &uVar1))
 	{
-		GRAPHICS::SET_DRAW_ORIGIN(Var14, 0);
+		GRAPHICS::SET_DRAW_ORIGIN(Var14, false);
 		iVar2 = 0;
 		while (iVar2 <= 5)
 		{

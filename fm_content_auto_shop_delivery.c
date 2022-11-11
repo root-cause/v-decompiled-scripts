@@ -2332,7 +2332,7 @@ void func_92(int iParam0, int iParam1)//Position - 0x221A
 	PED::SET_PED_DIES_WHEN_INJURED(iParam1, true);
 	if (func_97(iParam0))
 	{
-		AUDIO::STOP_PED_SPEAKING_SYNCED(iParam1, 1);
+		AUDIO::STOP_PED_SPEAKING_SYNCED(iParam1, true);
 	}
 	func_93(iParam0, iParam1);
 }

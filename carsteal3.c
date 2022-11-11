@@ -92136,7 +92136,7 @@ void func_435(int iParam0, var uParam1, char* sParam2)//Position - 0x6B4C2
 								func_378(1);
 								PLAYER::SPECIAL_ABILITY_DEACTIVATE(PLAYER::PLAYER_ID(), 0);
 								PLAYER::ENABLE_SPECIAL_ABILITY(PLAYER::PLAYER_ID(), false, 0);
-								CAM::CREATE_CINEMATIC_SHOT(-1096069633, 2000, 0, uParam1->f_6[uParam1->f_36 /*8*/].f_1);
+								CAM::CREATE_CINEMATIC_SHOT(-1096069633, 2000, false, uParam1->f_6[uParam1->f_36 /*8*/].f_1);
 								if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam2))
 								{
 									AUDIO::START_AUDIO_SCENE(sParam2);

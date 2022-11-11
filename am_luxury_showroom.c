@@ -31437,15 +31437,15 @@ char* func_284(var uParam0)//Position - 0x22DC3
 			break;
 		
 		case 38:
-			sVar0 = "HORN_XM15_1";
+			sVar0 = "HORN_XM15_1" /* GXT: Festive Loop 1 */;
 			break;
 		
 		case 39:
-			sVar0 = "HORN_XM15_2";
+			sVar0 = "HORN_XM15_2" /* GXT: Festive Loop 2 */;
 			break;
 		
 		case 40:
-			sVar0 = "HORN_XM15_3";
+			sVar0 = "HORN_XM15_3" /* GXT: Festive Loop 3 */;
 			break;
 		
 		case 46:

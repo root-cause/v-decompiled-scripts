@@ -1964,7 +1964,7 @@ void func_72(int iParam0, bool bParam1, int iParam2)//Position - 0x239C
 	}
 	GRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(1);
 	Var2 = { ENTITY::GET_ENTITY_COORDS(iParam0, true) };
-	GRAPHICS::SET_DRAW_ORIGIN(Var2, 0);
+	GRAPHICS::SET_DRAW_ORIGIN(Var2, false);
 	fVar0 = func_74(iParam0, Local_65.f_0, 0.5f);
 	fVar0 = func_49(fVar0, 0.015f, fVar0);
 	fVar1 = (fVar0 * GRAPHICS::GET_ASPECT_RATIO(false));

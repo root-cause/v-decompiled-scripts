@@ -3043,7 +3043,7 @@ void func_118(int iParam0, int iParam1)//Position - 0x2918
 	PED::SET_PED_DIES_WHEN_INJURED(iParam1, true);
 	if (func_123(iParam0))
 	{
-		AUDIO::STOP_PED_SPEAKING_SYNCED(iParam1, 1);
+		AUDIO::STOP_PED_SPEAKING_SYNCED(iParam1, true);
 	}
 	func_119(iParam0, iParam1);
 }
@@ -3271,7 +3271,7 @@ void func_129(int iParam0, int iParam1)//Position - 0x2D19
 		}
 		if (!func_132(Local_195.f_77.f_1[iParam0 /*21*/].f_13, 0))
 		{
-			AUDIO::STOP_PED_SPEAKING_SYNCED(iParam1, 1);
+			AUDIO::STOP_PED_SPEAKING_SYNCED(iParam1, true);
 		}
 	}
 	if (Local_195.f_77.f_1[iParam0 /*21*/].f_12 != -1)

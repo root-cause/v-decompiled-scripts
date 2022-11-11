@@ -85894,11 +85894,11 @@ char* func_598(int iParam0, bool bParam1, int iParam2, bool bParam3)//Position -
 		case 176:
 			if (bParam1)
 			{
-				return "CSHOP_TITLE217";
+				return "CSHOP_TITLE217" /* GXT: OUTFITS: SANTA COSTUMES */;
 			}
 			else
 			{
-				return "CSHOP_ITEM217";
+				return "CSHOP_ITEM217" /* GXT: Outfits: Santa Costumes */;
 			}
 			break;
 		

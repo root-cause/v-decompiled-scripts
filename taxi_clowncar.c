@@ -992,7 +992,7 @@ void func_13(var uParam0, bool bParam1)//Position - 0xAE5
 	{
 		PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), true, 0);
 	}
-	STATS::PLAYSTATS_ODDJOB_DONE(SYSTEM::ROUND((func_14(&iLocal_82) * 1000f)), 12, 0);
+	STATS::PLAYSTATS_ODDJOB_DONE(SYSTEM::ROUND((func_14(&iLocal_82) * 1000f)), 12, false);
 }
 
 float func_14(var uParam0)//Position - 0xC39

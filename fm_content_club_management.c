@@ -3664,7 +3664,7 @@ void func_119(int iParam0, int iParam1)//Position - 0x28E9
 	PED::SET_PED_DIES_WHEN_INJURED(iParam1, true);
 	if (func_124(iParam0))
 	{
-		AUDIO::STOP_PED_SPEAKING_SYNCED(iParam1, 1);
+		AUDIO::STOP_PED_SPEAKING_SYNCED(iParam1, true);
 	}
 	func_120(iParam0, iParam1);
 }
@@ -164989,14 +164989,14 @@ int func_2736(int iParam0)//Position - 0xD1888
 	return 0;
 }
 
-void func_2737(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)//Position - 0xD18AF
+void func_2737(int iParam0, float fParam1, float fParam2, float fParam3, float fParam4, float fParam5, float fParam6, int iParam7)//Position - 0xD18AF
 {
 	if (!func_1288(38))
 	{
 		HUD::CLEAR_FAKE_CONE_ARRAY();
 		func_158(38);
 	}
-	HUD::SETUP_FAKE_CONE_DATA(iParam0, iParam1, iParam2, iParam3, iParam4, iParam5, iParam6, iParam7, 11);
+	HUD::SETUP_FAKE_CONE_DATA(iParam0, fParam1, fParam2, fParam3, fParam4, fParam5, fParam6, iParam7, 11);
 	HUD::SET_BLIP_SHOW_CONE(iParam0, true, 11);
 }
 
@@ -165005,7 +165005,7 @@ float func_2738(float fParam0)//Position - 0xD18EA
 	return (fParam0 * 0.017453292f);
 }
 
-int func_2739(int iParam0)//Position - 0xD18FA
+float func_2739(int iParam0)//Position - 0xD18FA
 {
 	if (Local_237.f_671.f_6 != 0)
 	{

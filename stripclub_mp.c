@@ -109029,7 +109029,7 @@ void func_834(var uParam0, bool bParam1)//Position - 0x7F1E5
 	}
 	if (func_188(&iLocal_383))
 	{
-		STATS::PLAYSTATS_ODDJOB_DONE(SYSTEM::ROUND((func_185(&iLocal_383) * 1000f)), 9, 0);
+		STATS::PLAYSTATS_ODDJOB_DONE(SYSTEM::ROUND((func_185(&iLocal_383) * 1000f)), 9, false);
 		func_209(&iLocal_383);
 	}
 	func_1046(7, 0);

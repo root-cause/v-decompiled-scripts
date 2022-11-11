@@ -1317,7 +1317,7 @@ void func_15(int iParam0)//Position - 0xA41
 	fVar1 = func_16(iParam0, &Var0);
 	GRAPHICS::SET_SCRIPT_GFX_ALIGN(73, 73);
 	GRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(1);
-	GRAPHICS::SET_DRAW_ORIGIN(Var0, 0);
+	GRAPHICS::SET_DRAW_ORIGIN(Var0, false);
 	fVar1 = (fVar1 * 0.03f);
 	GRAPHICS::DRAW_SPRITE("helicopterhud", "hud_corner", (-fVar1 * 0.5f), -fVar1, 0.013f, 0.013f, 0f, Local_473.f_0, Local_473.f_1, Local_473.f_2, 200, true, 0);
 	GRAPHICS::DRAW_SPRITE("helicopterhud", "hud_corner", (fVar1 * 0.5f), -fVar1, 0.013f, 0.013f, 90f, Local_473.f_0, Local_473.f_1, Local_473.f_2, 200, true, 0);

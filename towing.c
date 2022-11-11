@@ -3256,7 +3256,7 @@ int func_55()//Position - 0x286D
 			fLocal_865 = func_4(&iLocal_882);
 			fLocal_865 = (fLocal_865 * 1000f);
 			iVar1 = SYSTEM::ROUND(fLocal_865);
-			STATS::PLAYSTATS_ODDJOB_DONE(iVar1, 14, 0);
+			STATS::PLAYSTATS_ODDJOB_DONE(iVar1, 14, false);
 			if (iLocal_170 != 2)
 			{
 			}

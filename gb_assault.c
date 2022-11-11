@@ -28129,22 +28129,22 @@ char* func_732(int iParam0)//Position - 0x1C9B1
 	switch (iParam0)
 	{
 		case joaat("DLC_MP_XMAS3_F_JBIB_1_0"):
-			return "CLO_X3F_U_1_0";
+			return "CLO_X3F_U_1_0" /* GXT: Red Check Pajamas */;
 		
 		case joaat("DLC_MP_XMAS3_M_JBIB_1_0"):
-			return "CLO_X3M_U_1_0";
+			return "CLO_X3M_U_1_0" /* GXT: Red Check Pajamas */;
 		
 		case joaat("DLC_MP_XMAS3_F_JBIB_1_1"):
-			return "CLO_X3F_U_1_1";
+			return "CLO_X3F_U_1_1" /* GXT: Green Check Pajamas */;
 		
 		case joaat("DLC_MP_XMAS3_M_JBIB_1_1"):
-			return "CLO_X3M_U_1_1";
+			return "CLO_X3M_U_1_1" /* GXT: Green Check Pajamas */;
 		
 		case joaat("DLC_MP_XMAS3_F_JBIB_1_2"):
-			return "CLO_X3F_U_1_2";
+			return "CLO_X3F_U_1_2" /* GXT: Black Check Pajamas */;
 		
 		case joaat("DLC_MP_XMAS3_M_JBIB_1_2"):
-			return "CLO_X3M_U_1_2";
+			return "CLO_X3M_U_1_2" /* GXT: Black Check Pajamas */;
 		
 		default:
 	}
@@ -28178,7 +28178,7 @@ char* func_732(int iParam0)//Position - 0x1C9B1
 			return "CLO_X3M_B_10_0" /* GXT: Abominable Snowman */;
 		
 		case joaat("DLC_MP_XMAS3_F_BERD_10_0"):
-			return "CLO_X3F_B_10_0";
+			return "CLO_X3F_B_10_0" /* GXT: Abominable Snowman */;
 		
 		case joaat("DLC_MP_XMAS2_M_BERD_1_0"):
 			return "CLO_X2M_B_1_0" /* GXT: Stocking */;

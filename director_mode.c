@@ -120690,11 +120690,11 @@ int func_790(int iParam0, int iParam1)//Position - 0x95954
 
 float func_791(int iParam0, int iParam1)//Position - 0x95980
 {
-	int iVar0;
+	float fVar0;
 	var uVar1;
 	
-	iVar0 = Global_2866176[iParam0 /*3*/][func_323(iParam1)];
-	if (HUD::GET_CHARACTER_MENU_PED_FLOAT_STAT(iVar0, &uVar1, 0))
+	fVar0 = Global_2866176[iParam0 /*3*/][func_323(iParam1)];
+	if (HUD::GET_CHARACTER_MENU_PED_FLOAT_STAT(fVar0, &uVar1, false))
 	{
 		return uVar1;
 	}
@@ -120864,7 +120864,7 @@ int func_796(int iParam0, int iParam1)//Position - 0x95A18
 		iVar1 = STATS::GET_PACKED_NG_INT_STAT_KEY((iParam0 - 32475), false, true, iParam1, "_FIXERPSTAT_INT");
 		iVar2 = ((iParam0 - 32475) - STATS::PACKED_STAT_GET_INT_STAT_INDEX((iParam0 - 32475)) * 8) * 8;
 	}
-	if (!HUD::GET_CHARACTER_MENU_PED_MASKED_INT_STAT(iVar1, &iVar0, iVar2, 8, 0))
+	if (!HUD::GET_CHARACTER_MENU_PED_MASKED_INT_STAT(iVar1, &iVar0, iVar2, 8, false))
 	{
 		iVar0 = 0;
 	}

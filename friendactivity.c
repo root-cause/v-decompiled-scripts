@@ -318,11 +318,11 @@ int func_4(bool bParam0)//Position - 0x26C
 			}
 			if (Local_49.f_56.f_1 != 145)
 			{
-				STATS::PLAYSTATS_FRIEND_ACTIVITY(func_68(Local_49.f_56.f_1), 0);
+				STATS::PLAYSTATS_FRIEND_ACTIVITY(func_68(Local_49.f_56.f_1), false);
 			}
 			if (Local_49.f_109.f_1 != 145)
 			{
-				STATS::PLAYSTATS_FRIEND_ACTIVITY(func_68(Local_49.f_109.f_1), 0);
+				STATS::PLAYSTATS_FRIEND_ACTIVITY(func_68(Local_49.f_109.f_1), false);
 			}
 			func_5(&(Local_49.f_3), 0, 1);
 			func_5(&(Local_49.f_56), 0, 1);
@@ -122178,11 +122178,11 @@ void func_1046(int iParam0)//Position - 0x97202
 	iVar0 = func_127();
 	if (Local_49.f_629 != 145)
 	{
-		STATS::PLAYSTATS_FRIEND_ACTIVITY(Local_49.f_629, 1);
+		STATS::PLAYSTATS_FRIEND_ACTIVITY(Local_49.f_629, true);
 	}
 	if (Local_49.f_630 != 145 && Local_49.f_630 != Local_49.f_629)
 	{
-		STATS::PLAYSTATS_FRIEND_ACTIVITY(Local_49.f_630, 1);
+		STATS::PLAYSTATS_FRIEND_ACTIVITY(Local_49.f_630, true);
 	}
 	switch (iParam0)
 	{

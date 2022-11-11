@@ -31632,7 +31632,7 @@ void func_874(var uParam0)//Position - 0x22F1C
 					break;
 				
 				case 1:
-					GRAPHICS::SET_SCALEFORM_MOVIE_TO_USE_LARGE_RT(uParam0->f_1497.f_709, 1);
+					GRAPHICS::SET_SCALEFORM_MOVIE_TO_USE_LARGE_RT(uParam0->f_1497.f_709, true);
 					break;
 				
 				case 2:
@@ -35994,7 +35994,7 @@ void func_1030(var uParam0)//Position - 0x286D8
 					break;
 				
 				case 1:
-					GRAPHICS::SET_SCALEFORM_MOVIE_TO_USE_LARGE_RT(uParam0->f_744.f_709, 1);
+					GRAPHICS::SET_SCALEFORM_MOVIE_TO_USE_LARGE_RT(uParam0->f_744.f_709, true);
 					break;
 				
 				case 2:
@@ -39987,7 +39987,7 @@ void func_1162(var uParam0)//Position - 0x2CCD3
 					break;
 				
 				case 1:
-					GRAPHICS::SET_SCALEFORM_MOVIE_TO_USE_LARGE_RT(uParam0->f_709, 1);
+					GRAPHICS::SET_SCALEFORM_MOVIE_TO_USE_LARGE_RT(uParam0->f_709, true);
 					break;
 				
 				case 2:

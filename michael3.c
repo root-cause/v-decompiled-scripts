@@ -106795,7 +106795,7 @@ void func_647()//Position - 0x7F2B2
 					{
 						if (func_30(Local_298[50 /*25*/]))
 						{
-							TASK::WAYPOINT_PLAYBACK_START_SHOOTING_AT_PED(iLocal_1416, Local_298[50 /*25*/], false, 0);
+							TASK::WAYPOINT_PLAYBACK_START_SHOOTING_AT_PED(iLocal_1416, Local_298[50 /*25*/], false, false);
 						}
 						iLocal_52 = 3;
 					}
@@ -106971,7 +106971,7 @@ void func_653(int iParam0, int* iParam1, bool bParam2)//Position - 0x7F750
 					{
 						if (func_30(Local_298[iVar0 /*25*/]))
 						{
-							TASK::WAYPOINT_PLAYBACK_START_SHOOTING_AT_PED(*iParam0, Local_298[iVar0 /*25*/], false, 0);
+							TASK::WAYPOINT_PLAYBACK_START_SHOOTING_AT_PED(*iParam0, Local_298[iVar0 /*25*/], false, false);
 							func_649(iParam1);
 						}
 						iVar0 = (iVar0 + -1);
@@ -106984,7 +106984,7 @@ void func_653(int iParam0, int* iParam1, bool bParam2)//Position - 0x7F750
 					{
 						if (func_30(Local_298[iVar0 /*25*/]))
 						{
-							TASK::WAYPOINT_PLAYBACK_START_SHOOTING_AT_PED(*iParam0, Local_298[iVar0 /*25*/], false, 0);
+							TASK::WAYPOINT_PLAYBACK_START_SHOOTING_AT_PED(*iParam0, Local_298[iVar0 /*25*/], false, false);
 							func_649(iParam1);
 						}
 						iVar0++;
@@ -107377,7 +107377,7 @@ void func_662()//Position - 0x7FFD7
 				{
 					if (TASK::GET_PED_WAYPOINT_PROGRESS(iLocal_1415) >= 29)
 					{
-						TASK::WAYPOINT_PLAYBACK_START_SHOOTING_AT_PED(iLocal_1415, Local_298[46 /*25*/], false, 0);
+						TASK::WAYPOINT_PLAYBACK_START_SHOOTING_AT_PED(iLocal_1415, Local_298[46 /*25*/], false, false);
 						iLocal_51 = 3;
 					}
 				}

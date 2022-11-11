@@ -2439,7 +2439,7 @@ void func_97(int iParam0, int iParam1)//Position - 0x23CD
 	PED::SET_PED_DIES_WHEN_INJURED(iParam1, true);
 	if (func_102(iParam0))
 	{
-		AUDIO::STOP_PED_SPEAKING_SYNCED(iParam1, 1);
+		AUDIO::STOP_PED_SPEAKING_SYNCED(iParam1, true);
 	}
 	func_98(iParam0, iParam1);
 }
@@ -24780,7 +24780,7 @@ void func_586(var uParam0, int iParam1, var uParam2)//Position - 0x24FB5
 	PED::SET_PED_COMPONENT_VARIATION(iParam1, 10, 0, 0, 0);
 	PED::SET_PED_COMPONENT_VARIATION(iParam1, 11, 0, 1, 0);
 	PED::SET_PED_PROP_INDEX(iParam1, 1, 1, 0, false);
-	AUDIO::STOP_PED_SPEAKING_SYNCED(iParam1, 1);
+	AUDIO::STOP_PED_SPEAKING_SYNCED(iParam1, true);
 }
 
 int func_587(var uParam0)//Position - 0x25073

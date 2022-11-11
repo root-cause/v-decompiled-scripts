@@ -23288,7 +23288,7 @@ int func_394(var uParam0, var uParam1, var* uParam2, var* uParam3)//Position - 0
 	return 0;
 }
 
-void func_395(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//Position - 0x1D30D
+void func_395(bool bParam0, int iParam1, int iParam2, int iParam3, int iParam4)//Position - 0x1D30D
 {
 	struct<8> Var0[3];
 	struct<6> Var1[3];
@@ -23303,7 +23303,7 @@ void func_395(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//
 		StringCopy(&(Var0[1 /*8*/]), "Location", 32);
 		StringCopy(&(Var0[2 /*8*/]), "Type", 32);
 		StringCopy(&(Var1[0 /*6*/]), "SP", 24);
-		switch (iParam0)
+		switch (bParam0)
 		{
 			case 0:
 				StringCopy(&(Var1[1 /*6*/]), "MGCR_1" /* GXT: South Los Santos */, 24);
@@ -23534,7 +23534,7 @@ void func_398()//Position - 0x1D78B
 	}
 }
 
-int func_399(int iParam0, var uParam1, int iParam2)//Position - 0x1D7B4
+int func_399(int iParam0, var uParam1, bool bParam2)//Position - 0x1D7B4
 {
 	if (!ENTITY::DOES_ENTITY_EXIST(*iParam0))
 	{
@@ -23545,7 +23545,7 @@ int func_399(int iParam0, var uParam1, int iParam2)//Position - 0x1D7B4
 		case 0:
 			if (!CAM::DOES_CAM_EXIST(uParam1->f_5[0]))
 			{
-				func_400(uParam1, iParam2);
+				func_400(uParam1, bParam2);
 				uParam1->f_5[0] = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), uParam1->f_138[0 /*3*/], uParam1->f_163[0 /*3*/], uParam1->f_188, false, 2);
 				uParam1->f_5[1] = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), uParam1->f_138[1 /*3*/], uParam1->f_163[1 /*3*/], uParam1->f_188, false, 2);
 			}
@@ -24069,14 +24069,14 @@ void func_409(var uParam0, bool bParam1)//Position - 0x1ED31
 	}
 }
 
-void func_410(int iParam0)//Position - 0x1ED57
+void func_410(bool bParam0)//Position - 0x1ED57
 {
 	int iVar0;
 	int iVar1;
 	
 	if ((PLAYER::IS_PLAYER_ONLINE() && NETWORK::NETWORK_HAVE_ONLINE_PRIVILEGES()) && iLocal_513)
 	{
-		switch (iParam0)
+		switch (bParam0)
 		{
 			case 0:
 				iVar0 = 0;

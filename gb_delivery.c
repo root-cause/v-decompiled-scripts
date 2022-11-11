@@ -176965,7 +176965,7 @@ void func_1896(int iParam0)//Position - 0xF2E42
 {
 	struct<3> Var0;
 	int iVar1;
-	int iVar2;
+	float fVar2;
 	struct<3> Var3;
 	
 	if (iParam0 == 92)
@@ -176984,9 +176984,9 @@ void func_1896(int iParam0)//Position - 0xF2E42
 	ENTITY::CREATE_MODEL_HIDE(Var0, 15f, func_1885(iParam0), true);
 	Var0 = { func_1901(iParam0) };
 	iVar1 = func_1900(iParam0);
-	iVar2 = func_1899(iParam0);
+	fVar2 = func_1899(iParam0);
 	GRAPHICS::GRASSBATCH_DISABLE_FLATTENING();
-	GRAPHICS::GRASSBATCH_ENABLE_FLATTENING_EXT_IN_SPHERE(Var0, iVar1, 0f, 0f, 0f, iVar2);
+	GRAPHICS::GRASSBATCH_ENABLE_FLATTENING_EXT_IN_SPHERE(Var0, iVar1, 0f, 0f, 0f, fVar2);
 	Var3 = { func_1894(iParam0) };
 	Var0 = { Var3 };
 	GRAPHICS::CASCADE_SHADOWS_SET_CASCADE_BOUNDS(0, true, Var0.f_0, Var0.f_1, Var0.f_2, 20f, false, 0f);

@@ -10155,7 +10155,7 @@ void func_349(var uParam0)//Position - 0xB70D
 					break;
 				
 				case 0:
-					GRAPHICS::SET_SCALEFORM_MOVIE_TO_USE_LARGE_RT(uParam0->f_711, 1);
+					GRAPHICS::SET_SCALEFORM_MOVIE_TO_USE_LARGE_RT(uParam0->f_711, true);
 					break;
 			}
 			GRAPHICS::DRAW_SCALEFORM_MOVIE(uParam0->f_711, func_377(), func_376(), func_375(), func_374(), 255, 255, 255, 255, 0);

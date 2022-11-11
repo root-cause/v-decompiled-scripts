@@ -2497,7 +2497,7 @@ void func_99(int iParam0, int iParam1)//Position - 0x248C
 	PED::SET_PED_DIES_WHEN_INJURED(iParam1, true);
 	if (func_104(iParam0))
 	{
-		AUDIO::STOP_PED_SPEAKING_SYNCED(iParam1, 1);
+		AUDIO::STOP_PED_SPEAKING_SYNCED(iParam1, true);
 	}
 	func_100(iParam0, iParam1);
 }
@@ -23860,7 +23860,7 @@ void func_563(var uParam0, int iParam1, var uParam2)//Position - 0x23880
 	PED::SET_PED_CONFIG_FLAG(iParam1, 430, true);
 	PED::SET_PED_CONFIG_FLAG(iParam1, 42, true);
 	AUDIO::DISABLE_PED_PAIN_AUDIO(iParam1, true);
-	AUDIO::STOP_PED_SPEAKING_SYNCED(iParam1, 1);
+	AUDIO::STOP_PED_SPEAKING_SYNCED(iParam1, true);
 	PED::SET_PED_CAN_BE_TARGETTED(iParam1, false);
 	PED::SET_DRIVER_AGGRESSIVENESS(iParam1, 1f);
 	PED::SET_DRIVER_RACING_MODIFIER(iParam1, 1f);

@@ -96969,7 +96969,7 @@ int func_510(int iParam0)//Position - 0x71712
 				ENTITY::SET_ENTITY_PROOFS(PLAYER::PLAYER_PED_ID(), false, false, false, true, false, false, false, false);
 				if (MISC::IS_PC_VERSION())
 				{
-					GRAPHICS::FORCE_EXPOSURE_READBACK(1);
+					GRAPHICS::FORCE_EXPOSURE_READBACK(true);
 				}
 				GRAPHICS::CLEAR_TIMECYCLE_MODIFIER();
 				GRAPHICS::ANIMPOSTFX_STOP("DMT_flight_intro");
@@ -97131,7 +97131,7 @@ int func_510(int iParam0)//Position - 0x71712
 				iLocal_529 = 0;
 				if (MISC::IS_PC_VERSION())
 				{
-					GRAPHICS::FORCE_EXPOSURE_READBACK(0);
+					GRAPHICS::FORCE_EXPOSURE_READBACK(false);
 				}
 				STATS::STAT_ENABLE_STATS_TRACKING();
 				return 1;

@@ -2172,7 +2172,7 @@ void func_63(int iParam0, bool bParam1, bool bParam2)//Position - 0x23ED
 							func_64(bParam2, 0);
 						}
 					}
-					GRAPHICS::SET_DRAW_ORIGIN(ENTITY::GET_ENTITY_COORDS(iParam0, true), 0);
+					GRAPHICS::SET_DRAW_ORIGIN(ENTITY::GET_ENTITY_COORDS(iParam0, true), false);
 					if (!BitTest(Local_128.f_48, bParam2 + 6))
 					{
 						HUD::GET_HUD_COLOUR(15, &iVar3, &iVar4, &iVar5, &iVar6);

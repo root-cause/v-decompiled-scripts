@@ -7996,7 +7996,7 @@ int func_100(var uParam0, var uParam1, float fParam2, var uParam3, var uParam4, 
 			fVar2 = func_50(&(uParam0->f_209));
 			fVar2 = (fVar2 * 1000f);
 			iVar0 = SYSTEM::ROUND(fVar2);
-			STATS::PLAYSTATS_ODDJOB_DONE(iVar0, 15, 0);
+			STATS::PLAYSTATS_ODDJOB_DONE(iVar0, 15, false);
 			func_165(&uLocal_3302, 9, "DTRFAIR_UI03", "", SYSTEM::ROUND(fVar2), 0, 0, 0);
 			func_164(&(uParam0->f_209));
 			func_165(&uLocal_3302, 3, "DTRFAIR_UI06", "", SYSTEM::CEIL(fVar1), 0, 0, 0);

@@ -3558,7 +3558,7 @@ void func_56(var uParam0, var uParam1)//Position - 0x1F40
 	PED::SET_PED_CAN_RAGDOLL_FROM_PLAYER_IMPACT(*uParam0, false);
 	PED::SET_PED_CAN_RAGDOLL(*uParam0, false);
 	PED::SET_PED_CONFIG_FLAG(*uParam0, 208, true);
-	AUDIO::STOP_PED_SPEAKING_SYNCED(*uParam0, 1);
+	AUDIO::STOP_PED_SPEAKING_SYNCED(*uParam0, true);
 	TASK::CLEAR_PED_TASKS(*uParam0);
 }
 

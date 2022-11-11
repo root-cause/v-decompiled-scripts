@@ -1072,7 +1072,7 @@ void func_1(var uParam0, bool bParam1)//Position - 0x698
 	}
 	if (func_54(&iLocal_387))
 	{
-		STATS::PLAYSTATS_ODDJOB_DONE(SYSTEM::ROUND((func_51(&iLocal_387) * 1000f)), 9, 0);
+		STATS::PLAYSTATS_ODDJOB_DONE(SYSTEM::ROUND((func_51(&iLocal_387) * 1000f)), 9, false);
 		func_50(&iLocal_387);
 	}
 	func_49(7, 0);

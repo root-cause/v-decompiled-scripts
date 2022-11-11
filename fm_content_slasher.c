@@ -2501,7 +2501,7 @@ void func_99(int iParam0, int iParam1)//Position - 0x248B
 	PED::SET_PED_DIES_WHEN_INJURED(iParam1, true);
 	if (func_104(iParam0))
 	{
-		AUDIO::STOP_PED_SPEAKING_SYNCED(iParam1, 1);
+		AUDIO::STOP_PED_SPEAKING_SYNCED(iParam1, true);
 	}
 	func_100(iParam0, iParam1);
 }
@@ -23905,7 +23905,7 @@ void func_587(int iParam0, int iParam1, var uParam2)//Position - 0x23AB0
 		return;
 	}
 	AUDIO::DISABLE_PED_PAIN_AUDIO(iParam1, true);
-	AUDIO::STOP_PED_SPEAKING_SYNCED(iParam1, 1);
+	AUDIO::STOP_PED_SPEAKING_SYNCED(iParam1, true);
 	PED::SET_PED_SUFFERS_CRITICAL_HITS(iParam1, false);
 	PED::SET_PED_CAN_RAGDOLL(iParam1, false);
 	PED::SET_DISABLE_HIGH_FALL_DEATH(iParam1, true);
