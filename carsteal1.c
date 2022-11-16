@@ -104225,7 +104225,7 @@ void func_586(var uParam0, int iParam1, struct<3> Param2, int iParam3)//Position
 	CAM::SET_CINEMATIC_BUTTON_ACTIVE(false);
 	iVar1 = uParam0->f_9;
 	iVar2 = uParam0->f_10;
-	if (iParam3 == 1726668277)
+	if (iParam3 == joaat("VEHICLE_HIGH_ZOOM_HINT_HELPER"))
 	{
 		if (iVar1 < 1500)
 		{
@@ -104596,7 +104596,7 @@ void func_596(var uParam0)//Position - 0x7B4B8
 	{
 		CAM::DESTROY_CAM(uParam0->f_1, false);
 	}
-	uParam0->f_1 = CAM::CREATE_CAMERA(1665938388, false);
+	uParam0->f_1 = CAM::CREATE_CAMERA(joaat("CUSTOM_TIMED_SPLINE_CAMERA"), false);
 	if (CAM::DOES_CAM_EXIST(uParam0->f_1))
 	{
 		iVar1 = 0;
@@ -113729,7 +113729,7 @@ void func_693()//Position - 0x8F60F
 				{
 					if (!CAM::IS_GAMEPLAY_HINT_ACTIVE())
 					{
-						CAM::SET_GAMEPLAY_COORD_HINT(ENTITY::GET_ENTITY_COORDS(iLocal_233, true), -1, 1500, 2000, 1511508800);
+						CAM::SET_GAMEPLAY_COORD_HINT(ENTITY::GET_ENTITY_COORDS(iLocal_233, true), -1, 1500, 2000, joaat("NO_FOV_HINT_HELPER"));
 					}
 				}
 				else if (CAM::IS_GAMEPLAY_HINT_ACTIVE())

@@ -107326,7 +107326,7 @@ void func_645()//Position - 0x85762
 					}
 					TASK::CLEAR_PED_TASKS(iLocal_160);
 					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_160, PED::GET_ANIM_INITIAL_OFFSET_POSITION(sLocal_120, "press_button_player2", Local_156 - Vector(0f, 0.41f, 0f) + Vector(0f, -0.06f, -0.18f), Local_157, 0f, 2), 1f, 20000, 0.25f, 516, func_462(PED::GET_ANIM_INITIAL_OFFSET_ROTATION(sLocal_120, "press_button_player2", Local_156 - Vector(0f, 0.41f, 0f) + Vector(0f, -0.06f, -0.18f), Local_157, 0f, 2)));
-					CAM::SET_GAMEPLAY_COORD_HINT(5320.464f, -5186.7456f, 84.1165f, 2000, 2000, 2000, 1511508800);
+					CAM::SET_GAMEPLAY_COORD_HINT(5320.464f, -5186.7456f, 84.1165f, 2000, 2000, 2000, joaat("NO_FOV_HINT_HELPER"));
 					func_463();
 				}
 				break;
@@ -107898,7 +107898,7 @@ void func_647()//Position - 0x861E3
 					{
 						if (PED::GET_SYNCHRONIZED_SCENE_PHASE(iLocal_151) > 0.037f)
 						{
-							CAM::SET_GAMEPLAY_ENTITY_HINT(iLocal_202, Local_67, true, 5000, 2500, 2500, 1511508800);
+							CAM::SET_GAMEPLAY_ENTITY_HINT(iLocal_202, Local_67, true, 5000, 2500, 2500, joaat("NO_FOV_HINT_HELPER"));
 							if (!iLocal_54)
 							{
 								RECORDING::REPLAY_START_EVENT(3);

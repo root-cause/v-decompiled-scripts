@@ -3141,11 +3141,11 @@ int func_29(int iParam0)//Position - 0x2FE8
 								func_31("MONEY_EARN_REFUND" /* GXT: Cash refunded */);
 								break;
 							
-							case -1392064501:
+							case joaat("MONEY_EARN_FROM_JOB_BONUS"):
 								func_31("MONEY_EARN_JOB_BONUS" /* GXT: Cash earned as a Job Bonus */);
 								break;
 							
-							case -1378221995:
+							case joaat("MONEY_EARN_FROM_HEIST_JOB"):
 								func_31("MONEY_EARN_HEIST_JOB" /* GXT: Cash earned on Heist */);
 								break;
 						}

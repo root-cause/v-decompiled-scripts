@@ -118851,7 +118851,7 @@ void func_817()//Position - 0x92579
 					}
 					else
 					{
-						func_818(&uLocal_1489, Local_235, "", 1213015174, 0, 0, 1);
+						func_818(&uLocal_1489, Local_235, "", joaat("AGENCY_HEIST_3B_SKY_DIVING_HINT_HELPER"), 0, 0, 1);
 					}
 				}
 				break;
@@ -119390,7 +119390,7 @@ void func_832(var uParam0, struct<3> Param1, int iParam2)//Position - 0x93F03
 	CAM::SET_CINEMATIC_BUTTON_ACTIVE(false);
 	iVar0 = uParam0->f_9;
 	iVar1 = uParam0->f_10;
-	if (iParam2 == 1726668277)
+	if (iParam2 == joaat("VEHICLE_HIGH_ZOOM_HINT_HELPER"))
 	{
 		if (iVar0 < 1500)
 		{
@@ -133464,7 +133464,7 @@ void func_1000()//Position - 0xAA0D2
 				{
 					CAM::DESTROY_CAM(iLocal_442[9], false);
 				}
-				iLocal_442[9] = CAM::CREATE_CAMERA(-119532588, false);
+				iLocal_442[9] = CAM::CREATE_CAMERA(joaat("SMOOTHED_SPLINE_CAMERA"), false);
 				CAM::ADD_CAM_SPLINE_NODE_USING_CAMERA(iLocal_442[9], iLocal_442[7], 0, 3);
 				CAM::ADD_CAM_SPLINE_NODE_USING_CAMERA(iLocal_442[9], iLocal_442[8], 1000, 3);
 				CAM::SET_CAM_SPLINE_DURATION(iLocal_442[9], 5000);

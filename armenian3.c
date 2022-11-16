@@ -37070,7 +37070,7 @@ void func_283()//Position - 0x295F8
 		}
 		else
 		{
-			func_285(&uLocal_223, -55.2f, -1095.8f, 27.3f, "ARM3HLP_WINDOW", 1726668277, 1, 1, 1);
+			func_285(&uLocal_223, -55.2f, -1095.8f, 27.3f, "ARM3HLP_WINDOW", joaat("VEHICLE_HIGH_ZOOM_HINT_HELPER"), 1, 1, 1);
 			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
 			bVar3 = false;
 			if (iLocal_100)
@@ -37758,7 +37758,7 @@ void func_300(var uParam0, struct<3> Param1, int iParam2)//Position - 0x2AC53
 	CAM::SET_CINEMATIC_BUTTON_ACTIVE(false);
 	iVar0 = uParam0->f_9;
 	iVar1 = uParam0->f_10;
-	if (iParam2 == 1726668277)
+	if (iParam2 == joaat("VEHICLE_HIGH_ZOOM_HINT_HELPER"))
 	{
 		if (iVar0 < 1500)
 		{
@@ -39884,7 +39884,7 @@ void func_338()//Position - 0x2D7F3
 							WEAPON::GIVE_WEAPON_TO_PED(uLocal_248[0], iLocal_195, 120, true, true);
 							WEAPON::SET_CURRENT_PED_WEAPON(uLocal_248[0], iLocal_195, true);
 							func_806(0);
-							CAM::SET_GAMEPLAY_ENTITY_HINT(iLocal_140, -0.1f, 1f, 1.1f, true, 2000, 6000, 2000, -244429742);
+							CAM::SET_GAMEPLAY_ENTITY_HINT(iLocal_140, -0.1f, 1f, 1.1f, true, 2000, 6000, 2000, joaat("ARM3_VEHICLE_HINT_HELPER"));
 							if (!iLocal_66)
 							{
 								iLocal_65 = CAM::GET_FOLLOW_VEHICLE_CAM_ZOOM_LEVEL();
@@ -39940,7 +39940,7 @@ void func_338()//Position - 0x2D7F3
 			{
 				func_806(0);
 			}
-			CAM::SET_GAMEPLAY_ENTITY_HINT(iLocal_140, -0.1f, 1f, 1.1f, true, 2000, 6000, 2000, -244429742);
+			CAM::SET_GAMEPLAY_ENTITY_HINT(iLocal_140, -0.1f, 1f, 1.1f, true, 2000, 6000, 2000, joaat("ARM3_VEHICLE_HINT_HELPER"));
 			if (!iLocal_66)
 			{
 				iLocal_65 = CAM::GET_FOLLOW_VEHICLE_CAM_ZOOM_LEVEL();

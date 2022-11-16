@@ -110492,7 +110492,7 @@ void func_716(var uParam0)//Position - 0x81B74
 	{
 		CAM::DESTROY_CAM(uParam0->f_1, false);
 	}
-	uParam0->f_1 = CAM::CREATE_CAMERA(1665938388, false);
+	uParam0->f_1 = CAM::CREATE_CAMERA(joaat("CUSTOM_TIMED_SPLINE_CAMERA"), false);
 	if (CAM::DOES_CAM_EXIST(uParam0->f_1))
 	{
 		iVar1 = 0;

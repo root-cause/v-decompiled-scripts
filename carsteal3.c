@@ -92004,7 +92004,7 @@ void func_429(struct<37> Param0, var uParam1, int iParam2, int iParam3, var uPar
 	{
 		if (Param0.f_35 == 1)
 		{
-			if (CAM::IS_CINEMATIC_SHOT_ACTIVE(-1096069633))
+			if (CAM::IS_CINEMATIC_SHOT_ACTIVE(joaat("CAMERA_MAN_SHOT")))
 			{
 				if (ENTITY::DOES_ENTITY_EXIST(Param0.f_6[Param0.f_36 /*8*/].f_1))
 				{
@@ -92019,7 +92019,7 @@ void func_429(struct<37> Param0, var uParam1, int iParam2, int iParam3, var uPar
 			}
 		}
 	}
-	else if (!CAM::IS_CINEMATIC_SHOT_ACTIVE(-1096069633))
+	else if (!CAM::IS_CINEMATIC_SHOT_ACTIVE(joaat("CAMERA_MAN_SHOT")))
 	{
 		if (*uParam5 == 0)
 		{
@@ -92123,7 +92123,7 @@ void func_435(int iParam0, var uParam1, char* sParam2)//Position - 0x6B4C2
 			{
 				if (uParam1->f_6[uParam1->f_36 /*8*/].f_3 != 0)
 				{
-					if (uParam1->f_33 == 0 && !CAM::IS_CINEMATIC_SHOT_ACTIVE(-1096069633))
+					if (uParam1->f_33 == 0 && !CAM::IS_CINEMATIC_SHOT_ACTIVE(joaat("CAMERA_MAN_SHOT")))
 					{
 						if (PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), iParam0, false) && !MISC::IS_STUNT_JUMP_IN_PROGRESS())
 						{
@@ -92136,7 +92136,7 @@ void func_435(int iParam0, var uParam1, char* sParam2)//Position - 0x6B4C2
 								func_378(1);
 								PLAYER::SPECIAL_ABILITY_DEACTIVATE(PLAYER::PLAYER_ID(), 0);
 								PLAYER::ENABLE_SPECIAL_ABILITY(PLAYER::PLAYER_ID(), false, 0);
-								CAM::CREATE_CINEMATIC_SHOT(-1096069633, 2000, false, uParam1->f_6[uParam1->f_36 /*8*/].f_1);
+								CAM::CREATE_CINEMATIC_SHOT(joaat("CAMERA_MAN_SHOT"), 2000, false, uParam1->f_6[uParam1->f_36 /*8*/].f_1);
 								if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam2))
 								{
 									AUDIO::START_AUDIO_SCENE(sParam2);
@@ -92151,7 +92151,7 @@ void func_435(int iParam0, var uParam1, char* sParam2)//Position - 0x6B4C2
 					}
 					else if ((MISC::GET_GAME_TIMER() - uParam1->f_6[uParam1->f_36 /*8*/].f_3) > 1500 || !VEHICLE::IS_VEHICLE_DRIVEABLE(uParam1->f_6[uParam1->f_36 /*8*/].f_1, false))
 					{
-						CAM::STOP_CINEMATIC_SHOT(-1096069633);
+						CAM::STOP_CINEMATIC_SHOT(joaat("CAMERA_MAN_SHOT"));
 						STREAMING::REMOVE_PTFX_ASSET();
 						HUD::DISPLAY_HUD(true);
 						HUD::DISPLAY_RADAR(true);
@@ -92424,7 +92424,7 @@ void func_444(int iParam0, var uParam1)//Position - 0x6BD1F
 		{
 			if (PED::IS_PED_SITTING_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), iParam0))
 			{
-				if (!CAM::IS_CINEMATIC_SHOT_ACTIVE(-1096069633) && !MISC::IS_STUNT_JUMP_IN_PROGRESS())
+				if (!CAM::IS_CINEMATIC_SHOT_ACTIVE(joaat("CAMERA_MAN_SHOT")) && !MISC::IS_STUNT_JUMP_IN_PROGRESS())
 				{
 					STREAMING::REQUEST_PTFX_ASSET();
 					AUDIO::REQUEST_AMBIENT_AUDIO_BANK("CAR_THEFT_MOVIE_LOT", false, -1);
@@ -94235,7 +94235,7 @@ void func_481(int iParam0, int iParam1, var uParam2, var uParam3, var uParam4, v
 		{
 			if (func_432(iParam0, iParam1))
 			{
-				if (!CAM::IS_CINEMATIC_SHOT_ACTIVE(-1096069633))
+				if (!CAM::IS_CINEMATIC_SHOT_ACTIVE(joaat("CAMERA_MAN_SHOT")))
 				{
 					if (*uParam3 == 0)
 					{
@@ -94335,7 +94335,7 @@ void func_484(int iParam0, int iParam1, int iParam2, var uParam3, var uParam4, v
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(iParam0, false))
 		{
-			if (!func_487() && !CAM::IS_CINEMATIC_SHOT_ACTIVE(-1096069633))
+			if (!func_487() && !CAM::IS_CINEMATIC_SHOT_ACTIVE(joaat("CAMERA_MAN_SHOT")))
 			{
 				switch (*uParam3)
 				{
@@ -98380,7 +98380,7 @@ int func_543(int iParam0)//Position - 0x73751
 	{
 		CAM::DISABLE_CINEMATIC_BONNET_CAMERA_THIS_UPDATE();
 	}
-	if (CAM::IS_CINEMATIC_SHOT_ACTIVE(-1096069633))
+	if (CAM::IS_CINEMATIC_SHOT_ACTIVE(joaat("CAMERA_MAN_SHOT")))
 	{
 		if (iLocal_403 == 0)
 		{
@@ -98436,7 +98436,7 @@ int func_543(int iParam0)//Position - 0x73751
 								}
 							}
 						}
-						if (func_665(PLAYER::PLAYER_PED_ID(), Local_106.f_0, 0) && !CAM::IS_CINEMATIC_SHOT_ACTIVE(-1096069633))
+						if (func_665(PLAYER::PLAYER_PED_ID(), Local_106.f_0, 0) && !CAM::IS_CINEMATIC_SHOT_ACTIVE(joaat("CAMERA_MAN_SHOT")))
 						{
 							if (func_456("CST4_ENDCALL"))
 							{
@@ -98530,7 +98530,7 @@ int func_543(int iParam0)//Position - 0x73751
 			}
 			if (func_665(PLAYER::PLAYER_PED_ID(), Local_106.f_0, 0) && !func_487())
 			{
-				if (!CAM::IS_CINEMATIC_SHOT_ACTIVE(-1096069633))
+				if (!CAM::IS_CINEMATIC_SHOT_ACTIVE(joaat("CAMERA_MAN_SHOT")))
 				{
 					if (iLocal_363 == 1)
 					{

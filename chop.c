@@ -7724,7 +7724,7 @@ void func_129()//Position - 0x96FF
 			}
 			else
 			{
-				CAM::SET_GAMEPLAY_ENTITY_HINT(iLocal_69, 0f, 0f, 0f, true, -1, 1000, 1000, 193150208);
+				CAM::SET_GAMEPLAY_ENTITY_HINT(iLocal_69, 0f, 0f, 0f, true, -1, 1000, 1000, joaat("CHOP_HINT_HELPER"));
 				iLocal_386 = 0;
 			}
 			PAD::SET_INPUT_EXCLUSIVE(func_136(), func_135(0));

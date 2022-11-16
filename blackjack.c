@@ -5487,7 +5487,7 @@ void func_86()//Position - 0x981A
 			break;
 		
 		case 8:
-			CAM::SET_TABLE_GAMES_CAMERA_THIS_UPDATE(-2124244681);
+			CAM::SET_TABLE_GAMES_CAMERA_THIS_UPDATE(joaat("CASINO_BLACKJACK_CAMERA"));
 			Local_119.f_258 = NETWORK::NETWORK_GET_LOCAL_SCENE_FROM_NETWORK_ID(Local_119.f_255);
 			if (func_214())
 			{
@@ -5550,7 +5550,7 @@ void func_86()//Position - 0x981A
 			{
 				AUDIO::START_AUDIO_SCENE("DLC_VW_Casino_Table_Games");
 			}
-			CAM::SET_TABLE_GAMES_CAMERA_THIS_UPDATE(-2124244681);
+			CAM::SET_TABLE_GAMES_CAMERA_THIS_UPDATE(joaat("CASINO_BLACKJACK_CAMERA"));
 			func_90();
 			break;
 		

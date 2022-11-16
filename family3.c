@@ -26531,7 +26531,7 @@ int func_393(int iParam0)//Position - 0x24AA1
 			{
 				if (PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_274.f_0, true))
 				{
-					CAM::SET_GAMEPLAY_COORD_HINT(Local_207, -1, 8000, 2000, -1123838900);
+					CAM::SET_GAMEPLAY_COORD_HINT(Local_207, -1, 8000, 2000, joaat("FAMILY3_HOUSE_VEHICLE_HINT_HELPER"));
 				}
 				if (PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_274.f_0, false))
 				{
@@ -28416,7 +28416,7 @@ int func_412(int iParam0)//Position - 0x27090
 					{
 						func_101(1);
 						SYSTEM::SETTIMERA(0);
-						CAM::SET_GAMEPLAY_COORD_HINT(Local_206, -1, 9500, 2000, -87780624);
+						CAM::SET_GAMEPLAY_COORD_HINT(Local_206, -1, 9500, 2000, joaat("FAMILY3_COACH_ON_BALCONY_VEHICLE_HINT_HELPER"));
 						TASK::TASK_VEHICLE_MISSION_COORS_TARGET(PLAYER::PLAYER_PED_ID(), Local_274.f_0, -991.6547f, 645.38214f, 140.64255f, 4, 6f, 8, 1f, 2f, false);
 					}
 					AUDIO::TRIGGER_MUSIC_EVENT("FAM3_BALCONY");
@@ -29090,7 +29090,7 @@ void func_424(var uParam0, int iParam1, struct<3> Param2, int iParam3)//Position
 	CAM::SET_CINEMATIC_BUTTON_ACTIVE(false);
 	iVar1 = uParam0->f_9;
 	iVar2 = uParam0->f_10;
-	if (iParam3 == 1726668277)
+	if (iParam3 == joaat("VEHICLE_HIGH_ZOOM_HINT_HELPER"))
 	{
 		if (iVar1 < 1500)
 		{

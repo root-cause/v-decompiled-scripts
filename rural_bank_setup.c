@@ -22230,7 +22230,7 @@ void func_373(bool bParam0, int iParam1, struct<3> Param2, int iParam3)//Positio
 	CAM::SET_CINEMATIC_BUTTON_ACTIVE(false);
 	iVar1 = bParam0->f_9;
 	iVar2 = bParam0->f_10;
-	if (iParam3 == 1726668277)
+	if (iParam3 == joaat("VEHICLE_HIGH_ZOOM_HINT_HELPER"))
 	{
 		if (iVar1 < 1500)
 		{
@@ -23170,7 +23170,7 @@ void func_395()//Position - 0x1FCE7
 	}
 	else
 	{
-		func_400(&Local_82, Local_115, 0, 1726668277, 1, 0, 1);
+		func_400(&Local_82, Local_115, 0, joaat("VEHICLE_HIGH_ZOOM_HINT_HELPER"), 1, 0, 1);
 	}
 	if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_63, false) && ENTITY::DOES_ENTITY_EXIST(Local_250.f_0))
 	{
@@ -23727,7 +23727,7 @@ void func_401(var uParam0, struct<3> Param1, int iParam2)//Position - 0x20BB2
 	CAM::SET_CINEMATIC_BUTTON_ACTIVE(false);
 	iVar0 = uParam0->f_9;
 	iVar1 = uParam0->f_10;
-	if (iParam2 == 1726668277)
+	if (iParam2 == joaat("VEHICLE_HIGH_ZOOM_HINT_HELPER"))
 	{
 		if (iVar0 < 1500)
 		{
@@ -23825,7 +23825,7 @@ void func_403()//Position - 0x20D52
 						TASK::TASK_LOOK_AT_ENTITY(iLocal_51, Local_250.f_0, 5000, 2052, 4);
 						TASK::TASK_LOOK_AT_ENTITY(uLocal_186[2], Local_250.f_0, 7000, 2052, 4);
 					}
-					func_357(&Local_82, Local_250.f_0, 0, 1726668277, 0, 1, 1);
+					func_357(&Local_82, Local_250.f_0, 0, joaat("VEHICLE_HIGH_ZOOM_HINT_HELPER"), 0, 1, 1);
 					HUD::CLEAR_PRINTS();
 					iLocal_142 = 1;
 					func_338(500);
@@ -23861,7 +23861,7 @@ void func_403()//Position - 0x20D52
 				}
 				iLocal_142 = 0;
 			}
-			func_357(&Local_82, Local_250.f_0, 0, 1726668277, 0, 1, 1);
+			func_357(&Local_82, Local_250.f_0, 0, joaat("VEHICLE_HIGH_ZOOM_HINT_HELPER"), 0, 1, 1);
 			if (ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), "missheistpaletoscore1rbhs_mcs_2", "rbhs_mcs_2_leadin_action_michael", 3) && ENTITY::GET_ENTITY_ANIM_CURRENT_TIME(PLAYER::PLAYER_PED_ID(), "missheistpaletoscore1rbhs_mcs_2", "rbhs_mcs_2_leadin_action_michael") > 0.19f)
 			{
 				if (func_6(&Local_233, cLocal_168, "RBS1_BNKBOX", 8, 0, 0, 0))
@@ -23872,7 +23872,7 @@ void func_403()//Position - 0x20D52
 			break;
 		
 		case 3:
-			func_357(&Local_82, Local_250.f_0, 0, 1726668277, 0, 1, 1);
+			func_357(&Local_82, Local_250.f_0, 0, joaat("VEHICLE_HIGH_ZOOM_HINT_HELPER"), 0, 1, 1);
 			if ((ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), "missheistpaletoscore1rbhs_mcs_2", "rbhs_mcs_2_leadin_action_michael", 3) && ENTITY::GET_ENTITY_ANIM_CURRENT_TIME(PLAYER::PLAYER_PED_ID(), "missheistpaletoscore1rbhs_mcs_2", "rbhs_mcs_2_leadin_action_michael") > 0.99f) && VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_63, false))
 			{
 				TASK::CLEAR_PED_TASKS(PLAYER::PLAYER_PED_ID());
@@ -24061,7 +24061,7 @@ void func_404()//Position - 0x210D5
 					if (PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 80 /*INPUT_VEH_CIN_CAM*/) || CAM::IS_GAMEPLAY_HINT_ACTIVE())
 					{
 						CAM::SET_FOLLOW_VEHICLE_CAM_VIEW_MODE(1);
-						func_407(&Local_82, Local_113 + Vector(1.5f, 0f, 0f), "", 1726668277, 1, 0, 1);
+						func_407(&Local_82, Local_113 + Vector(1.5f, 0f, 0f), "", joaat("VEHICLE_HIGH_ZOOM_HINT_HELPER"), 1, 0, 1);
 						HUD::CLEAR_HELP(true);
 						if (CAM::IS_GAMEPLAY_HINT_ACTIVE())
 						{

@@ -49214,7 +49214,7 @@ void func_417(var uParam0)//Position - 0x3A0D2
 	{
 		CAM::DESTROY_CAM(uParam0->f_1, false);
 	}
-	uParam0->f_1 = CAM::CREATE_CAMERA(1665938388, false);
+	uParam0->f_1 = CAM::CREATE_CAMERA(joaat("CUSTOM_TIMED_SPLINE_CAMERA"), false);
 	if (CAM::DOES_CAM_EXIST(uParam0->f_1))
 	{
 		iVar1 = 0;
@@ -117268,7 +117268,7 @@ void func_714()//Position - 0x942F5
 								}
 								if (CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(0) == 4)
 								{
-									CAM::SET_GAMEPLAY_ENTITY_HINT(iLocal_3013, Local_367, true, 2000, 500, 2000, 1511508800);
+									CAM::SET_GAMEPLAY_ENTITY_HINT(iLocal_3013, Local_367, true, 2000, 500, 2000, joaat("NO_FOV_HINT_HELPER"));
 								}
 							}
 							iLocal_3011 = 1;

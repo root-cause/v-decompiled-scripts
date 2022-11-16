@@ -109922,7 +109922,7 @@ void func_563(var uParam0)//Position - 0x76035
 	{
 		CAM::DESTROY_CAM(uParam0->f_1, false);
 	}
-	uParam0->f_1 = CAM::CREATE_CAMERA(1665938388, false);
+	uParam0->f_1 = CAM::CREATE_CAMERA(joaat("CUSTOM_TIMED_SPLINE_CAMERA"), false);
 	if (CAM::DOES_CAM_EXIST(uParam0->f_1))
 	{
 		iVar1 = 0;
@@ -144206,7 +144206,7 @@ void func_1021()//Position - 0xA9F2C
 		fVar0 = CAM::GET_CAM_FOV(iLocal_152);
 		func_6(&iLocal_152);
 		func_508();
-		iLocal_152 = CAM::CREATE_CAMERA(1665938388, false);
+		iLocal_152 = CAM::CREATE_CAMERA(joaat("CUSTOM_TIMED_SPLINE_CAMERA"), false);
 		Local_90[0] = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), CAM::GET_FINAL_RENDERED_CAM_COORD(), CAM::GET_FINAL_RENDERED_CAM_ROT(2), CAM::GET_FINAL_RENDERED_CAM_FOV(), true, 2);
 		CAM::ADD_CAM_SPLINE_NODE_USING_CAMERA(iLocal_152, Local_90[0], 0, 2);
 		CAM::SET_CAM_MOTION_BLUR_STRENGTH(Local_90[0], 0.5f);
@@ -145588,7 +145588,7 @@ void func_1055(var uParam0, struct<3> Param1, int iParam2)//Position - 0xABC85
 	CAM::SET_CINEMATIC_BUTTON_ACTIVE(false);
 	iVar0 = uParam0->f_9;
 	iVar1 = uParam0->f_10;
-	if (iParam2 == 1726668277)
+	if (iParam2 == joaat("VEHICLE_HIGH_ZOOM_HINT_HELPER"))
 	{
 		if (iVar0 < 1500)
 		{
