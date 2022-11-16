@@ -1688,7 +1688,7 @@ bool func_28(int iParam0, int iParam1, var uParam2)//Position - 0xEAB
 						(*iParam1)[iVar0] = 0;
 					}
 					iVar1 = func_46((*iParam0)[iVar0]);
-					if (func_42(joaat("NET_SHOP_TTYPE_BASKET"), joaat("CATEGORY_WAREHOUSE_VEHICLE_INDEX"), iVar1, -716644653, (*iParam1)[iVar0], 0, 0, 4, 0, 3))
+					if (func_42(joaat("NET_SHOP_TTYPE_BASKET"), joaat("CATEGORY_WAREHOUSE_VEHICLE_INDEX"), iVar1, joaat("NET_SHOP_ACTION_UPDATE_WAREHOUSE_VEHICLE"), (*iParam1)[iVar0], 0, 0, 4, 0, 3))
 					{
 						*uParam2 = 1;
 					}

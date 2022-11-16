@@ -15689,9 +15689,9 @@ bool func_332(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)/
 			{
 				iVar0 = func_330(iParam0, bParam4);
 				iVar1 = func_333(iParam0);
-				if (func_327(joaat("NET_SHOP_TTYPE_BASKET"), joaat("CATEGORY_CONTRABAND_QNTY"), iVar1, -886368739, iParam2, 0, 1, 4, 0, 3))
+				if (func_327(joaat("NET_SHOP_TTYPE_BASKET"), joaat("CATEGORY_CONTRABAND_QNTY"), iVar1, joaat("NET_SHOP_ACTION_UPDATE_BUSINESS_GOODS"), iParam2, 0, 1, 4, 0, 3))
 				{
-					if (func_327(joaat("NET_SHOP_TTYPE_BASKET"), joaat("CATEGORY_CONTRABAND_QNTY"), iVar0, -886368739, iParam1, 0, 1, 4, 0, 3))
+					if (func_327(joaat("NET_SHOP_TTYPE_BASKET"), joaat("CATEGORY_CONTRABAND_QNTY"), iVar0, joaat("NET_SHOP_ACTION_UPDATE_BUSINESS_GOODS"), iParam1, 0, 1, 4, 0, 3))
 					{
 						*iParam3 = 1;
 					}

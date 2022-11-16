@@ -28486,21 +28486,21 @@ int func_789(int iParam0, bool bParam1)//Position - 0x1FC66
 				return Global_262145.f_9127;
 			
 			case 26:
-				if (NETWORK::NETWORK_ACCESS_TUNABLE_INT_HASH(joaat("MP_Global"), 419800513, &iVar0))
+				if (NETWORK::NETWORK_ACCESS_TUNABLE_INT_HASH(joaat("MP_Global"), joaat("GANGOPS_THE_IAA_JOB_CASH_REWARD"), &iVar0))
 				{
 					return iVar0;
 				}
 				return Global_262145.f_9132;
 			
 			case 27:
-				if (NETWORK::NETWORK_ACCESS_TUNABLE_INT_HASH(joaat("MP_Global"), -829097151, &iVar0))
+				if (NETWORK::NETWORK_ACCESS_TUNABLE_INT_HASH(joaat("MP_Global"), joaat("GANGOPS_THE_SUBMARINE_JOB_CASH_REWARD"), &iVar0))
 				{
 					return iVar0;
 				}
 				return Global_262145.f_9133;
 			
 			case 28:
-				if (NETWORK::NETWORK_ACCESS_TUNABLE_INT_HASH(joaat("MP_Global"), 287993374, &iVar0))
+				if (NETWORK::NETWORK_ACCESS_TUNABLE_INT_HASH(joaat("MP_Global"), joaat("GANGOPS_THE_MISSILE_SILO_JOB_CASH_REWARD"), &iVar0))
 				{
 					return iVar0;
 				}

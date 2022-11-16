@@ -8746,10 +8746,10 @@ bool func_124(var uParam0, int iParam1, int iParam2)//Position - 0x110FA
 			}
 			iVar3 = joaat("CASINO_CHIPS_v0");
 			iVar4 = func_106(iParam1);
-			iVar5 = -22148635;
+			iVar5 = joaat("NET_SHOP_ACTION_SELL_CASINO_CHIPS");
 			if (func_146(iParam1))
 			{
-				iVar5 = -126744038;
+				iVar5 = joaat("NET_SHOP_ACTION_BUY_CASINO_CHIPS");
 			}
 			if (func_138(joaat("NET_SHOP_TTYPE_BASKET"), joaat("CATEGORY_CASINO_CHIPS"), iVar3, iVar5, iParam2, iVar1, 0, 4, 0, 3))
 			{

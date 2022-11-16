@@ -3006,7 +3006,7 @@ bool func_139(var uParam0, int iParam1, int iParam2)//Position - 0x2F70
 		{
 			return 0;
 		}
-		if (func_147(joaat("NET_SHOP_TTYPE_BASKET"), joaat("CATEGORY_DATA_STORAGE"), iParam1, 1668906031, iParam2, 0, iParam2, 1, 0, 3))
+		if (func_147(joaat("NET_SHOP_TTYPE_BASKET"), joaat("CATEGORY_DATA_STORAGE"), iParam1, joaat("NET_SHOP_ACTION_UPDATE_STORAGE_DATA"), iParam2, 0, iParam2, 1, 0, 3))
 		{
 			if (func_142())
 			{
@@ -53649,10 +53649,10 @@ bool func_738(var uParam0, int iParam1, int iParam2)//Position - 0x3BEA3
 			}
 			iVar3 = joaat("CASINO_CHIPS_v0");
 			iVar4 = func_721(iParam1);
-			iVar5 = -22148635;
+			iVar5 = joaat("NET_SHOP_ACTION_SELL_CASINO_CHIPS");
 			if (func_741(iParam1))
 			{
-				iVar5 = -126744038;
+				iVar5 = joaat("NET_SHOP_ACTION_BUY_CASINO_CHIPS");
 			}
 			if (func_147(joaat("NET_SHOP_TTYPE_BASKET"), joaat("CATEGORY_CASINO_CHIPS"), iVar3, iVar5, iParam2, iVar1, 0, 4, 0, 3))
 			{

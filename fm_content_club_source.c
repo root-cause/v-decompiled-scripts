@@ -135781,7 +135781,7 @@ bool func_1998(var uParam0, int iParam1, int iParam2, var uParam3)//Position - 0
 			else
 			{
 				iVar0 = func_2007(iParam1);
-				if (func_2004(joaat("NET_SHOP_TTYPE_BASKET"), joaat("CATEGORY_CONTRABAND_QNTY"), iVar0, -886368739, iParam2, 0, 1, 4, 0, 3))
+				if (func_2004(joaat("NET_SHOP_TTYPE_BASKET"), joaat("CATEGORY_CONTRABAND_QNTY"), iVar0, joaat("NET_SHOP_ACTION_UPDATE_BUSINESS_GOODS"), iParam2, 0, 1, 4, 0, 3))
 				{
 					*uParam0 = 1;
 				}

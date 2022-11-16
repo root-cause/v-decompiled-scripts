@@ -50658,11 +50658,11 @@ void func_894(int iParam0, int iParam1, int iParam2)//Position - 0x38454
 			MONEY::NETWORK_BUY_ITEM(iParam1, Global_2703735.f_3674, 10, -1, false, "PEGASUS", 0, 0, 0, true);
 			break;
 		
-		case -1555026615:
+		case joaat("SERVICE_SPEND_YACHT_HELI"):
 			MONEY::NETWORK_SPENT_HELI_PICKUP(iParam1, false, true, 0);
 			break;
 		
-		case 522351365:
+		case joaat("SERVICE_SPEND_YACHT_BOAT"):
 			MONEY::NETWORK_SPENT_BOAT_PICKUP(iParam1, false, true, 0);
 			break;
 		
