@@ -28919,7 +28919,7 @@ void func_649()//Position - 0x239DD
 						{
 							func_1610(1);
 							func_1380(1, 1);
-							if (!Global_262145.f_48 /* Tunable: WINDOWS_GROUP_MODIFIER */ || !bLocal_874)
+							if (!Global_262145.f_48 || !bLocal_874)
 							{
 								if (iLocal_819 + 1 == 6)
 								{
@@ -28981,7 +28981,7 @@ void func_649()//Position - 0x239DD
 						{
 							func_1610(0);
 							func_1380(0, 1);
-							if (!Global_262145.f_48 /* Tunable: WINDOWS_GROUP_MODIFIER */ || !bLocal_874)
+							if (!Global_262145.f_48 || !bLocal_874)
 							{
 								if (iLocal_819 + 1 == 6)
 								{
@@ -76307,7 +76307,7 @@ void func_1196()//Position - 0x7BBFB
 			}
 			else if (iLocal_819 == 5)
 			{
-				if (Global_262145.f_48 /* Tunable: WINDOWS_GROUP_MODIFIER */ && bLocal_874)
+				if (Global_262145.f_48 && bLocal_874)
 				{
 					func_603(1, "PM_RC_STUNT" /* GXT: Stunt Races */, "");
 				}
@@ -76550,7 +76550,7 @@ void func_1199()//Position - 0x7C213
 		}
 		else if (iLocal_819 == 4)
 		{
-			if (Global_262145.f_48 /* Tunable: WINDOWS_GROUP_MODIFIER */ && uVar0)
+			if (Global_262145.f_48 && uVar0)
 			{
 				HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("CycleToStuntRaces"));
 			}
@@ -84930,7 +84930,7 @@ int func_1407(int iParam0, int iParam1)//Position - 0x886A0
 			}
 			else if (iLocal_819 == 5)
 			{
-				if (Global_262145.f_48 /* Tunable: WINDOWS_GROUP_MODIFIER */)
+				if (Global_262145.f_48)
 				{
 					func_603(0, "PM_RC_STUNT" /* GXT: Stunt Races */, "");
 				}
