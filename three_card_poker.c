@@ -6039,7 +6039,7 @@ void func_95()//Position - 0xB371
 		}
 		if ((Local_152.f_797 > 1 || Local_151[PLAYER::PLAYER_ID() /*9*/].f_3 != 0) || Local_151[PLAYER::PLAYER_ID() /*9*/].f_5 != 0)
 		{
-			if (Global_262145.f_26815)
+			if (Global_262145.f_26815 /* Tunable: ENABLE_THREE_CARD_POKER_HEAVY */)
 			{
 				STATS::PLAYSTATS_CASINO_THREE_CARD_POKER(&Local_161);
 			}
@@ -6073,7 +6073,7 @@ void func_95()//Position - 0xB371
 		{
 			Local_161.f_9 = Local_109.f_30[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2];
 		}
-		if (Global_262145.f_26815)
+		if (Global_262145.f_26815 /* Tunable: ENABLE_THREE_CARD_POKER_HEAVY */)
 		{
 			STATS::PLAYSTATS_CASINO_THREE_CARD_POKER(&Local_161);
 		}
@@ -6251,7 +6251,7 @@ void func_95()//Position - 0xB371
 				Local_161.f_17 = func_207(&uLocal_157, 0, 0);
 				Local_161.f_18 = func_408();
 				Local_161.f_19 = func_209();
-				if (Global_262145.f_26815)
+				if (Global_262145.f_26815 /* Tunable: ENABLE_THREE_CARD_POKER_HEAVY */)
 				{
 					STATS::PLAYSTATS_CASINO_THREE_CARD_POKER(&Local_161);
 				}
@@ -6283,7 +6283,7 @@ void func_95()//Position - 0xB371
 				{
 					Local_161.f_9 = Local_109.f_30[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2];
 				}
-				if (Global_262145.f_26815)
+				if (Global_262145.f_26815 /* Tunable: ENABLE_THREE_CARD_POKER_HEAVY */)
 				{
 					STATS::PLAYSTATS_CASINO_THREE_CARD_POKER(&Local_161);
 				}
@@ -6348,7 +6348,7 @@ void func_95()//Position - 0xB371
 				{
 					Local_161.f_9 = Local_109.f_30[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2];
 				}
-				if (Global_262145.f_26815)
+				if (Global_262145.f_26815 /* Tunable: ENABLE_THREE_CARD_POKER_HEAVY */)
 				{
 					STATS::PLAYSTATS_CASINO_THREE_CARD_POKER(&Local_161);
 				}
@@ -6374,7 +6374,7 @@ void func_95()//Position - 0xB371
 				{
 					Local_161.f_9 = Local_109.f_30[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2];
 				}
-				if (Global_262145.f_26815)
+				if (Global_262145.f_26815 /* Tunable: ENABLE_THREE_CARD_POKER_HEAVY */)
 				{
 					STATS::PLAYSTATS_CASINO_THREE_CARD_POKER(&Local_161);
 				}
@@ -6956,7 +6956,7 @@ void func_95()//Position - 0xB371
 									{
 										Local_161.f_9 = Local_109.f_30[Local_151[PLAYER::PLAYER_ID() /*9*/].f_2];
 									}
-									if (Global_262145.f_26815)
+									if (Global_262145.f_26815 /* Tunable: ENABLE_THREE_CARD_POKER_HEAVY */)
 									{
 										STATS::PLAYSTATS_CASINO_THREE_CARD_POKER(&Local_161);
 									}
@@ -7464,7 +7464,7 @@ void func_95()//Position - 0xB371
 					}
 					if (!func_354() || func_350())
 					{
-						if (Global_262145.f_26815 && !bVar25)
+						if (Global_262145.f_26815 /* Tunable: ENABLE_THREE_CARD_POKER_HEAVY */ && !bVar25)
 						{
 							STATS::PLAYSTATS_CASINO_THREE_CARD_POKER(&Local_161);
 						}
@@ -7502,7 +7502,7 @@ void func_95()//Position - 0xB371
 								Local_162.f_2 = joaat("time cutoff");
 								break;
 						}
-						if (Global_262145.f_26815 && !bVar25)
+						if (Global_262145.f_26815 /* Tunable: ENABLE_THREE_CARD_POKER_HEAVY */ && !bVar25)
 						{
 							STATS::PLAYSTATS_CASINO_THREE_CARD_POKER(&Local_161);
 						}
@@ -7518,7 +7518,7 @@ void func_95()//Position - 0xB371
 						}
 						return;
 					}
-					if (Global_262145.f_26815 && !bVar25)
+					if (Global_262145.f_26815 /* Tunable: ENABLE_THREE_CARD_POKER_HEAVY */ && !bVar25)
 					{
 						STATS::PLAYSTATS_CASINO_THREE_CARD_POKER(&Local_161);
 					}
@@ -9013,7 +9013,7 @@ void func_133(struct<67> Param0, var uParam1, var uParam2, var uParam3, var uPar
 	Var0.f_2 = { Param0.f_66 };
 	Var0.f_2.f_33 = iParam19;
 	iVar1 = func_135(Var0.f_1);
-	if ((Global_262145.f_24104 && !Global_262145.f_24105) && !Global_262145.f_24106)
+	if ((Global_262145.f_24104 /* Tunable: BLOCK_NS_TRANS */ && !Global_262145.f_24105 /* Tunable: SC_RUN_TRANS */) && !Global_262145.f_24106 /* Tunable: BG_RUN_TRANS */)
 	{
 		return;
 	}
@@ -12557,7 +12557,7 @@ int func_225(int iParam0)//Position - 0x15E45
 				{
 					iLocal_168 = 0;
 					iLocal_169 = 0;
-					if (Global_262145.f_26815)
+					if (Global_262145.f_26815 /* Tunable: ENABLE_THREE_CARD_POKER_HEAVY */)
 					{
 						STATS::PLAYSTATS_CASINO_THREE_CARD_POKER(&Local_161);
 					}
@@ -12576,7 +12576,7 @@ int func_225(int iParam0)//Position - 0x15E45
 		{
 			iLocal_168 = 0;
 			iLocal_169 = 0;
-			if (Global_262145.f_26815)
+			if (Global_262145.f_26815 /* Tunable: ENABLE_THREE_CARD_POKER_HEAVY */)
 			{
 				STATS::PLAYSTATS_CASINO_THREE_CARD_POKER(&Local_161);
 			}
@@ -17420,7 +17420,7 @@ void func_379(bool bParam0)//Position - 0x1C8E4
 	Local_162.f_5 = func_207(&uLocal_159, 0, 0);
 	if (Local_152.f_798 > 2)
 	{
-		if (Global_262145.f_26821)
+		if (Global_262145.f_26821 /* Tunable: ENABLE_THREE_CARD_POKER_LIGHT */)
 		{
 			STATS::PLAYSTATS_CASINO_THREE_CARD_POKER_LIGHT(&Local_162);
 		}
@@ -19641,7 +19641,7 @@ void func_422()//Position - 0x1F78F
 {
 	if (Local_152.f_798 > 2)
 	{
-		if (Global_262145.f_26815)
+		if (Global_262145.f_26815 /* Tunable: ENABLE_THREE_CARD_POKER_HEAVY */)
 		{
 			STATS::PLAYSTATS_CASINO_THREE_CARD_POKER(&Local_161);
 		}

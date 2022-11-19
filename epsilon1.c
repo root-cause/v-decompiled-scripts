@@ -39671,7 +39671,7 @@ bool func_345(int iParam0)//Position - 0x2C584
 		case joaat("WEAPON_HATCHET"):
 			if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 			{
-				if (!func_346() && !Global_262145.f_20269)
+				if (!func_346() && !Global_262145.f_20269 /* Tunable: ENABLE_RETURNING_CONTENT_WEAPON */)
 				{
 					return 0;
 				}

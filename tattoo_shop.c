@@ -3459,7 +3459,7 @@ void func_21(bool bParam0)//Position - 0x4407
 		func_167();
 		if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
-			if (Global_262145.f_2460)
+			if (Global_262145.f_2460 /* Tunable: IS_SALE_ON_IN_TATTOO_SHOP */)
 			{
 				GRAPHICS::SET_STREAMED_TEXTURE_DICT_AS_NO_LONGER_NEEDED("MPShops");
 			}
@@ -3751,7 +3751,7 @@ void func_30()//Position - 0x4A0D
 	if (!Global_1660993)
 	{
 		func_31(1);
-		Global_1660992 = NETWORK::GET_TIME_OFFSET(NETWORK::GET_NETWORK_TIME(), Global_262145.f_2420);
+		Global_1660992 = NETWORK::GET_TIME_OFFSET(NETWORK::GET_NETWORK_TIME(), Global_262145.f_2420 /* Tunable: PLAYER_HEADSHOP_UPLOAD_TUNABLE */);
 	}
 }
 
@@ -4274,271 +4274,271 @@ bool func_36(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4)/
 			switch (iParam1)
 			{
 				case 0:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_008", "multiplayer_overlays", "000", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(20000) * Global_262145.f_2916)), 0);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_008", "multiplayer_overlays", "000", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(20000) * Global_262145.f_2916 /* Tunable: TATTOO_MP_FM_HEAD_BANGER_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 1:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_009", "multiplayer_overlays", "001", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1400) * Global_262145.f_2917)), 2);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_009", "multiplayer_overlays", "001", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1400) * Global_262145.f_2917 /* Tunable: TATTOO_MP_FM_SLAYER_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 2:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_010", "multiplayer_overlays", "002", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(9750) * Global_262145.f_2918)), 3);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_010", "multiplayer_overlays", "002", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(9750) * Global_262145.f_2918 /* Tunable: TATTOO_MP_FM_GANGHIDEOUT_CLEAR_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 3:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_011", "multiplayer_overlays", "003", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2150) * Global_262145.f_2919)), 0);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_011", "multiplayer_overlays", "003", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2150) * Global_262145.f_2919 /* Tunable: TATTOO_MP_FM_ARMOURED_VAN_TAKEDOWN_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 4:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_012", "multiplayer_overlays", "004", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2920)), 0);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_012", "multiplayer_overlays", "004", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2920 /* Tunable: TATTOO_MP_FM_HUSTLER_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 54:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_013", "multiplayer_overlays", "005", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(12400) * Global_262145.f_2921)), 1);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_013", "multiplayer_overlays", "005", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(12400) * Global_262145.f_2921 /* Tunable: TATTOO_MP_FM_WIN_EVER_MODE_ONCE_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 5:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_014", "multiplayer_overlays", "006", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(3500) * Global_262145.f_2922)), 0);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_014", "multiplayer_overlays", "006", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(3500) * Global_262145.f_2922 /* Tunable: TATTOO_MP_FM_BOUNTY_KILLER_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 6:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_015", "multiplayer_overlays", "007", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(4950) * Global_262145.f_2923)), 2);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_015", "multiplayer_overlays", "007", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(4950) * Global_262145.f_2923 /* Tunable: TATTOO_MP_FM_HOLD_WORLD_RECORD_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 55:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_016", "multiplayer_overlays", "008", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1350) * Global_262145.f_2924)), 1);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_016", "multiplayer_overlays", "008", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1350) * Global_262145.f_2924 /* Tunable: TATTOO_MP_FM_FULL_MODDED_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 7:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_017", "multiplayer_overlays", "009", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1450) * Global_262145.f_2925)), 0);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_017", "multiplayer_overlays", "009", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1450) * Global_262145.f_2925 /* Tunable: TATTOO_MP_FM_REVENGE_KILL_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 8:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_018", "multiplayer_overlays", "010", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2700) * Global_262145.f_2926)), 7);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_018", "multiplayer_overlays", "010", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2700) * Global_262145.f_2926 /* Tunable: TATTOO_MP_FM_KILL_3_RACERS_EXPENDITURE_TUNABLE */)), 7);
 					break;
 				
 				case 9:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_019", "multiplayer_overlays", "011", "rank", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1200) * Global_262145.f_2927)), 0);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_019", "multiplayer_overlays", "011", "rank", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1200) * Global_262145.f_2927 /* Tunable: TATTOO_MP_FM_REACH_RANK_1_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 10:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_020", "multiplayer_overlays", "012", "rank", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1500) * Global_262145.f_2928)), 0);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_020", "multiplayer_overlays", "012", "rank", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1500) * Global_262145.f_2928 /* Tunable: TATTOO_MP_FM_REACH_RANK_2_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 11:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_021", "multiplayer_overlays", "013", "rank", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2650) * Global_262145.f_2929)), 0);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_021", "multiplayer_overlays", "013", "rank", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2650) * Global_262145.f_2929 /* Tunable: TATTOO_MP_FM_REACH_RANK_3_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 56:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_022", "multiplayer_overlays", "014", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1900) * Global_262145.f_2930)), 1);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_022", "multiplayer_overlays", "014", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1900) * Global_262145.f_2930 /* Tunable: TATTOO_MP_FM_FMKILLCHEATER_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 12:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_023", "multiplayer_overlays", "015", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(4950) * Global_262145.f_2931)), 2);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_023", "multiplayer_overlays", "015", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(4950) * Global_262145.f_2931 /* Tunable: TATTOO_MP_FM_RACES_WON_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 57:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_024", "multiplayer_overlays", "016", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2400) * Global_262145.f_2932)), 1);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_024", "multiplayer_overlays", "016", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2400) * Global_262145.f_2932 /* Tunable: TATTOO_MP_FM_HOLD_UP_SHOPS_1_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 58:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_025", "multiplayer_overlays", "017", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5100) * Global_262145.f_2933)), 1);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_025", "multiplayer_overlays", "017", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5100) * Global_262145.f_2933 /* Tunable: TATTOO_MP_FM_HOLD_UP_SHOPS_2_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 59:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_026", "multiplayer_overlays", "018", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7400) * Global_262145.f_2934)), 1);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_026", "multiplayer_overlays", "018", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7400) * Global_262145.f_2934 /* Tunable: TATTOO_MP_FM_HOLD_UP_SHOPS_3_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 60:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_027", "multiplayer_overlays", "019", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2935)), 1);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_027", "multiplayer_overlays", "019", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2935 /* Tunable: TATTOO_MP_FM_HOLD_UP_SHOPS_4_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 17:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_201", "multiplayer_overlays", "005", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2400) * Global_262145.f_2940)), 2);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_201", "multiplayer_overlays", "005", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2400) * Global_262145.f_2940 /* Tunable: TATTOO_MP_FM_01_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 18:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_202", "multiplayer_overlays", "006", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5100) * Global_262145.f_2941)), 2);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_202", "multiplayer_overlays", "006", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5100) * Global_262145.f_2941 /* Tunable: TATTOO_MP_FM_02_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 19:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_203", "multiplayer_overlays", "015", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(3600) * Global_262145.f_2942)), 2);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_203", "multiplayer_overlays", "015", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(3600) * Global_262145.f_2942 /* Tunable: TATTOO_MP_FM_03_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 20:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_204", "multiplayer_overlays", "000", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2943)), 3);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_204", "multiplayer_overlays", "000", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2943 /* Tunable: TATTOO_MP_FM_04_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 21:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_205", "multiplayer_overlays", "001", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(12500) * Global_262145.f_2944)), 3);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_205", "multiplayer_overlays", "001", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(12500) * Global_262145.f_2944 /* Tunable: TATTOO_MP_FM_05_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 22:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_206", "multiplayer_overlays", "003", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2945)), 3);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_206", "multiplayer_overlays", "003", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2945 /* Tunable: TATTOO_MP_FM_06_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 23:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_207", "multiplayer_overlays", "014", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2946)), 3);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_207", "multiplayer_overlays", "014", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2946 /* Tunable: TATTOO_MP_FM_07_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 24:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_208", "multiplayer_overlays", "018", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7500) * Global_262145.f_2947)), 3);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_208", "multiplayer_overlays", "018", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7500) * Global_262145.f_2947 /* Tunable: TATTOO_MP_FM_08_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 25:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_209", "multiplayer_overlays", "002", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(3750) * Global_262145.f_2948)), 2);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_209", "multiplayer_overlays", "002", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(3750) * Global_262145.f_2948 /* Tunable: TATTOO_MP_FM_09_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 26:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_210", "multiplayer_overlays", "007", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(3750) * Global_262145.f_2949)), 3);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_210", "multiplayer_overlays", "007", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(3750) * Global_262145.f_2949 /* Tunable: TATTOO_MP_FM_10_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 27:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_211", "multiplayer_overlays", "008", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(4800) * Global_262145.f_2950)), 3);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_211", "multiplayer_overlays", "008", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(4800) * Global_262145.f_2950 /* Tunable: TATTOO_MP_FM_11_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 28:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_212", "multiplayer_overlays", "017", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(3500) * Global_262145.f_2951)), 3);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_212", "multiplayer_overlays", "017", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(3500) * Global_262145.f_2951 /* Tunable: TATTOO_MP_FM_12_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 61:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_213", "multiplayer_overlays", "009", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(12350) * Global_262145.f_2952)), 1);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_213", "multiplayer_overlays", "009", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(12350) * Global_262145.f_2952 /* Tunable: TATTOO_MP_FM_13_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 62:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_214", "multiplayer_overlays", "011", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1900) * Global_262145.f_2953)), 1);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_214", "multiplayer_overlays", "011", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1900) * Global_262145.f_2953 /* Tunable: TATTOO_MP_FM_14_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 63:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_215", "multiplayer_overlays", "013", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(4500) * Global_262145.f_2954)), 1);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_215", "multiplayer_overlays", "013", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(4500) * Global_262145.f_2954 /* Tunable: TATTOO_MP_FM_15_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 64:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_216", "multiplayer_overlays", "016", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(12250) * Global_262145.f_2955)), 1);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_216", "multiplayer_overlays", "016", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(12250) * Global_262145.f_2955 /* Tunable: TATTOO_MP_FM_16_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 65:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_217", "multiplayer_overlays", "019", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(12300) * Global_262145.f_2956)), 1);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_217", "multiplayer_overlays", "019", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(12300) * Global_262145.f_2956 /* Tunable: TATTOO_MP_FM_17_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 29:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_218", "multiplayer_overlays", "010", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2500) * Global_262145.f_2957)), 0);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_218", "multiplayer_overlays", "010", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2500) * Global_262145.f_2957 /* Tunable: TATTOO_MP_FM_18_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 30:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_219", "multiplayer_overlays", "004", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2958)), 0);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_219", "multiplayer_overlays", "004", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2958 /* Tunable: TATTOO_MP_FM_19_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 31:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_220", "multiplayer_overlays", "012", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2959)), 0);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_220", "multiplayer_overlays", "012", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2959 /* Tunable: TATTOO_MP_FM_20_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 66:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_221", "multiplayer_overlays", "020", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7500) * Global_262145.f_2960)), 1);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_221", "multiplayer_overlays", "020", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7500) * Global_262145.f_2960 /* Tunable: TATTOO_MP_FM_21_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 32:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_222", "multiplayer_overlays", "021", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2961)), 2);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_222", "multiplayer_overlays", "021", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2961 /* Tunable: TATTOO_MP_FM_22_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 33:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_223", "multiplayer_overlays", "022", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7300) * Global_262145.f_2962)), 3);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_223", "multiplayer_overlays", "022", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7300) * Global_262145.f_2962 /* Tunable: TATTOO_MP_FM_23_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 34:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_224", "multiplayer_overlays", "023", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7250) * Global_262145.f_2963)), 2);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_224", "multiplayer_overlays", "023", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7250) * Global_262145.f_2963 /* Tunable: TATTOO_MP_FM_24_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 35:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_225", "multiplayer_overlays", "024", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(11900) * Global_262145.f_2964)), 0);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_225", "multiplayer_overlays", "024", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(11900) * Global_262145.f_2964 /* Tunable: TATTOO_MP_FM_25_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 36:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_226", "multiplayer_overlays", "025", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2750) * Global_262145.f_2965)), 0);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_226", "multiplayer_overlays", "025", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2750) * Global_262145.f_2965 /* Tunable: TATTOO_MP_FM_26_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 37:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_227", "multiplayer_overlays", "026", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1750) * Global_262145.f_2966)), 0);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_227", "multiplayer_overlays", "026", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1750) * Global_262145.f_2966 /* Tunable: TATTOO_MP_FM_27_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 38:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_228", "multiplayer_overlays", "027", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7300) * Global_262145.f_2967)), 3);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_228", "multiplayer_overlays", "027", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7300) * Global_262145.f_2967 /* Tunable: TATTOO_MP_FM_28_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 39:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_229", "multiplayer_overlays", "028", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(3250) * Global_262145.f_2968)), 2);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_229", "multiplayer_overlays", "028", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(3250) * Global_262145.f_2968 /* Tunable: TATTOO_MP_FM_29_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 40:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_230", "multiplayer_overlays", "029", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1000) * Global_262145.f_2969)), 0);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_230", "multiplayer_overlays", "029", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1000) * Global_262145.f_2969 /* Tunable: TATTOO_MP_FM_30_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 67:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_231", "multiplayer_overlays", "030", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2970)), 1);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_231", "multiplayer_overlays", "030", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2970 /* Tunable: TATTOO_MP_FM_31_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 41:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_232", "multiplayer_overlays", "031", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7500) * Global_262145.f_2971)), 2);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_232", "multiplayer_overlays", "031", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7500) * Global_262145.f_2971 /* Tunable: TATTOO_MP_FM_32_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 68:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_233", "multiplayer_overlays", "032", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5100) * Global_262145.f_2972)), 1);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_233", "multiplayer_overlays", "032", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5100) * Global_262145.f_2972 /* Tunable: TATTOO_MP_FM_33_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 42:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_234", "multiplayer_overlays", "033", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5050) * Global_262145.f_2973)), 0);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_234", "multiplayer_overlays", "033", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5050) * Global_262145.f_2973 /* Tunable: TATTOO_MP_FM_34_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 43:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_235", "multiplayer_overlays", "034", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2450) * Global_262145.f_2974)), 2);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_235", "multiplayer_overlays", "034", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2450) * Global_262145.f_2974 /* Tunable: TATTOO_MP_FM_35_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 44:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_236", "multiplayer_overlays", "035", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(4950) * Global_262145.f_2975)), 0);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_236", "multiplayer_overlays", "035", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(4950) * Global_262145.f_2975 /* Tunable: TATTOO_MP_FM_36_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 45:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_237", "multiplayer_overlays", "036", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5100) * Global_262145.f_2976)), 0);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_237", "multiplayer_overlays", "036", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5100) * Global_262145.f_2976 /* Tunable: TATTOO_MP_FM_37_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 46:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_238", "multiplayer_overlays", "037", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(12250) * Global_262145.f_2977)), 0);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_238", "multiplayer_overlays", "037", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(12250) * Global_262145.f_2977 /* Tunable: TATTOO_MP_FM_38_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 47:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_239", "multiplayer_overlays", "038", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1150) * Global_262145.f_2978)), 3);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_239", "multiplayer_overlays", "038", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1150) * Global_262145.f_2978 /* Tunable: TATTOO_MP_FM_39_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 48:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_240", "multiplayer_overlays", "039", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7500) * Global_262145.f_2979)), 3);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_240", "multiplayer_overlays", "039", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7500) * Global_262145.f_2979 /* Tunable: TATTOO_MP_FM_40_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 49:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_241", "multiplayer_overlays", "040", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7600) * Global_262145.f_2980)), 3);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_241", "multiplayer_overlays", "040", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7600) * Global_262145.f_2980 /* Tunable: TATTOO_MP_FM_41_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 50:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_242", "multiplayer_overlays", "041", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2600) * Global_262145.f_2981)), 2);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_242", "multiplayer_overlays", "041", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2600) * Global_262145.f_2981 /* Tunable: TATTOO_MP_FM_42_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 51:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_243", "multiplayer_overlays", "042", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2500) * Global_262145.f_2982)), 3);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_243", "multiplayer_overlays", "042", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2500) * Global_262145.f_2982 /* Tunable: TATTOO_MP_FM_43_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 52:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_244", "multiplayer_overlays", "043", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7450) * Global_262145.f_2983)), 3);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_244", "multiplayer_overlays", "043", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7450) * Global_262145.f_2983 /* Tunable: TATTOO_MP_FM_44_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 53:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_245", "multiplayer_overlays", "044", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7500) * Global_262145.f_2984)), 0);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_245", "multiplayer_overlays", "044", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7500) * Global_262145.f_2984 /* Tunable: TATTOO_MP_FM_45_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 69:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_246", "multiplayer_overlays", "045", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2985)), 1);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_246", "multiplayer_overlays", "045", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2985 /* Tunable: TATTOO_MP_FM_46_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 70:
-					func_43(sParam0, iParam1, iParam3, "TAT_FM_247", "multiplayer_overlays", "047", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2500) * Global_262145.f_2986)), 2);
+					func_43(sParam0, iParam1, iParam3, "TAT_FM_247", "multiplayer_overlays", "047", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2500) * Global_262145.f_2986 /* Tunable: TATTOO_MP_FM_47_EXPENDITURE_TUNABLE */)), 2);
 					break;
 			}
 			if (iVar0 == joaat("MP_M_Freemode_01"))
@@ -4618,15 +4618,15 @@ bool func_36(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4)/
 						break;
 					
 					case 87:
-						func_43(sParam0, iParam1, iParam3, "NO_LABEL", "multiplayer_overlays", "FM_Tshirt_Award_000", "torsoDecal", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2987)), 0);
+						func_43(sParam0, iParam1, iParam3, "NO_LABEL", "multiplayer_overlays", "FM_Tshirt_Award_000", "torsoDecal", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2987 /* Tunable: TSHIRT_TRANS_MP_FM_REDSKULL_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					
 					case 88:
-						func_43(sParam0, iParam1, iParam3, "NO_LABEL", "multiplayer_overlays", "FM_Tshirt_Award_001", "torsoDecal", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2988)), 0);
+						func_43(sParam0, iParam1, iParam3, "NO_LABEL", "multiplayer_overlays", "FM_Tshirt_Award_001", "torsoDecal", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2988 /* Tunable: TSHIRT_TRANS_MP_FM_LSBELLE_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					
 					case 89:
-						func_43(sParam0, iParam1, iParam3, "NO_LABEL", "multiplayer_overlays", "FM_Tshirt_Award_002", "torsoDecal", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2989)), 0);
+						func_43(sParam0, iParam1, iParam3, "NO_LABEL", "multiplayer_overlays", "FM_Tshirt_Award_002", "torsoDecal", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2989 /* Tunable: TSHIRT_TRANS_MP_FM_ROCKSTAR_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					
 					case 93:
@@ -4734,27 +4734,27 @@ bool func_36(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4)/
 						break;
 					
 					case 13:
-						func_43(sParam0, iParam1, iParam3, "TAT_FM_100" /* GXT: Crew Emblem Small */, "multiplayer_overlays", "000_A", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2936)), 0);
+						func_43(sParam0, iParam1, iParam3, "TAT_FM_100" /* GXT: Crew Emblem Small */, "multiplayer_overlays", "000_A", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2936 /* Tunable: TATTOO_MP_FM_CREW_A_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					
 					case 14:
-						func_43(sParam0, iParam1, iParam3, "TAT_FM_101" /* GXT: Crew Emblem Large */, "multiplayer_overlays", "000_B", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2937)), 0);
+						func_43(sParam0, iParam1, iParam3, "TAT_FM_101" /* GXT: Crew Emblem Large */, "multiplayer_overlays", "000_B", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2937 /* Tunable: TATTOO_MP_FM_CREW_B_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					
 					case 15:
-						func_43(sParam0, iParam1, iParam3, "TAT_FMM_CLB" /* GXT: Crew Emblem Back */, "multiplayer_overlays", "000_C", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2938)), 2);
+						func_43(sParam0, iParam1, iParam3, "TAT_FMM_CLB" /* GXT: Crew Emblem Back */, "multiplayer_overlays", "000_C", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2938 /* Tunable: TATTOO_MP_FM_CREW_C_EXPENDITURE_TUNABLE */)), 2);
 						break;
 					
 					case 16:
-						func_43(sParam0, iParam1, iParam3, "TAT_FM_100" /* GXT: Crew Emblem Small */, "multiplayer_overlays", "000_D", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2939)), 0);
+						func_43(sParam0, iParam1, iParam3, "TAT_FM_100" /* GXT: Crew Emblem Small */, "multiplayer_overlays", "000_D", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2939 /* Tunable: TATTOO_MP_FM_CREW_D_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					
 					case 71:
-						func_43(sParam0, iParam1, iParam3, "TAT_FM_101" /* GXT: Crew Emblem Large */, "multiplayer_overlays", "000_E", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2939)), 0);
+						func_43(sParam0, iParam1, iParam3, "TAT_FM_101" /* GXT: Crew Emblem Large */, "multiplayer_overlays", "000_E", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2939 /* Tunable: TATTOO_MP_FM_CREW_D_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					
 					case 72:
-						func_43(sParam0, iParam1, iParam3, "TAT_FMM_CLB" /* GXT: Crew Emblem Back */, "multiplayer_overlays", "000_F", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2939)), 0);
+						func_43(sParam0, iParam1, iParam3, "TAT_FMM_CLB" /* GXT: Crew Emblem Back */, "multiplayer_overlays", "000_F", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2939 /* Tunable: TATTOO_MP_FM_CREW_D_EXPENDITURE_TUNABLE */)), 0);
 						break;
 				}
 			}
@@ -4819,15 +4819,15 @@ bool func_36(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4)/
 						break;
 					
 					case 87:
-						func_43(sParam0, iParam1, iParam3, "NO_LABEL", "multiplayer_overlays", "FM_Tshirt_Award_F_000", "torsoDecal", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2987)), 0);
+						func_43(sParam0, iParam1, iParam3, "NO_LABEL", "multiplayer_overlays", "FM_Tshirt_Award_F_000", "torsoDecal", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2987 /* Tunable: TSHIRT_TRANS_MP_FM_REDSKULL_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					
 					case 88:
-						func_43(sParam0, iParam1, iParam3, "NO_LABEL", "multiplayer_overlays", "FM_Tshirt_Award_F_001", "torsoDecal", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2988)), 0);
+						func_43(sParam0, iParam1, iParam3, "NO_LABEL", "multiplayer_overlays", "FM_Tshirt_Award_F_001", "torsoDecal", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2988 /* Tunable: TSHIRT_TRANS_MP_FM_LSBELLE_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					
 					case 89:
-						func_43(sParam0, iParam1, iParam3, "NO_LABEL", "multiplayer_overlays", "FM_Tshirt_Award_F_002", "torsoDecal", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2989)), 0);
+						func_43(sParam0, iParam1, iParam3, "NO_LABEL", "multiplayer_overlays", "FM_Tshirt_Award_F_002", "torsoDecal", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2989 /* Tunable: TSHIRT_TRANS_MP_FM_ROCKSTAR_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					
 					case 93:
@@ -4955,19 +4955,19 @@ bool func_36(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4)/
 						break;
 					
 					case 13:
-						func_43(sParam0, iParam1, iParam3, "TAT_FM_100" /* GXT: Crew Emblem Small */, "multiplayer_overlays", "000_A", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2936)), 0);
+						func_43(sParam0, iParam1, iParam3, "TAT_FM_100" /* GXT: Crew Emblem Small */, "multiplayer_overlays", "000_A", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2936 /* Tunable: TATTOO_MP_FM_CREW_A_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					
 					case 14:
-						func_43(sParam0, iParam1, iParam3, "TAT_FM_100" /* GXT: Crew Emblem Small */, "multiplayer_overlays", "000_B", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2937)), 0);
+						func_43(sParam0, iParam1, iParam3, "TAT_FM_100" /* GXT: Crew Emblem Small */, "multiplayer_overlays", "000_B", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2937 /* Tunable: TATTOO_MP_FM_CREW_B_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					
 					case 15:
-						func_43(sParam0, iParam1, iParam3, "TAT_FM_101" /* GXT: Crew Emblem Large */, "multiplayer_overlays", "000_C", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2938)), 2);
+						func_43(sParam0, iParam1, iParam3, "TAT_FM_101" /* GXT: Crew Emblem Large */, "multiplayer_overlays", "000_C", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2938 /* Tunable: TATTOO_MP_FM_CREW_C_EXPENDITURE_TUNABLE */)), 2);
 						break;
 					
 					case 16:
-						func_43(sParam0, iParam1, iParam3, "TAT_FM_101" /* GXT: Crew Emblem Large */, "multiplayer_overlays", "000_D", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2939)), 0);
+						func_43(sParam0, iParam1, iParam3, "TAT_FM_101" /* GXT: Crew Emblem Large */, "multiplayer_overlays", "000_D", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2939 /* Tunable: TATTOO_MP_FM_CREW_D_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					}
 			}
@@ -19837,9 +19837,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 1:
 			iVar3 = 1;
 			iVar4 = 0;
-			if (Global_262145.f_4150 != -1)
+			if (Global_262145.f_4150 /* Tunable: EXPENSE_MODIFIER_GOLD_DECO_EARRINGS */ != -1)
 			{
-				iVar1 = Global_262145.f_4150;
+				iVar1 = Global_262145.f_4150 /* Tunable: EXPENSE_MODIFIER_GOLD_DECO_EARRINGS */;
 			}
 			else
 			{
@@ -19850,9 +19850,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 2:
 			iVar3 = 1;
 			iVar4 = 1;
-			if (Global_262145.f_4151 != -1)
+			if (Global_262145.f_4151 /* Tunable: EXPENSE_MODIFIER_SILVER_DECO_EARRINGS */ != -1)
 			{
-				iVar1 = Global_262145.f_4151;
+				iVar1 = Global_262145.f_4151 /* Tunable: EXPENSE_MODIFIER_SILVER_DECO_EARRINGS */;
 			}
 			else
 			{
@@ -19863,9 +19863,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 3:
 			iVar3 = 1;
 			iVar4 = 2;
-			if (Global_262145.f_4152 != -1)
+			if (Global_262145.f_4152 /* Tunable: EXPENSE_MODIFIER_PEARL_DECO_EARRINGS */ != -1)
 			{
-				iVar1 = Global_262145.f_4152;
+				iVar1 = Global_262145.f_4152 /* Tunable: EXPENSE_MODIFIER_PEARL_DECO_EARRINGS */;
 			}
 			else
 			{
@@ -19876,9 +19876,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 4:
 			iVar3 = 1;
 			iVar4 = 3;
-			if (Global_262145.f_4153 != -1)
+			if (Global_262145.f_4153 /* Tunable: EXPENSE_MODIFIER_COPPER_DECO_EARRINGS */ != -1)
 			{
-				iVar1 = Global_262145.f_4153;
+				iVar1 = Global_262145.f_4153 /* Tunable: EXPENSE_MODIFIER_COPPER_DECO_EARRINGS */;
 			}
 			else
 			{
@@ -19889,9 +19889,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 5:
 			iVar3 = 1;
 			iVar4 = 4;
-			if (Global_262145.f_4154 != -1)
+			if (Global_262145.f_4154 /* Tunable: EXPENSE_MODIFIER_TWO_TONE_DECO_EARRINGS */ != -1)
 			{
-				iVar1 = Global_262145.f_4154;
+				iVar1 = Global_262145.f_4154 /* Tunable: EXPENSE_MODIFIER_TWO_TONE_DECO_EARRINGS */;
 			}
 			else
 			{
@@ -19902,9 +19902,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 6:
 			iVar3 = 1;
 			iVar4 = 5;
-			if (Global_262145.f_4155 != -1)
+			if (Global_262145.f_4155 /* Tunable: EXPENSE_MODIFIER_SAPPHIRE_DECO_EARRINGS */ != -1)
 			{
-				iVar1 = Global_262145.f_4155;
+				iVar1 = Global_262145.f_4155 /* Tunable: EXPENSE_MODIFIER_SAPPHIRE_DECO_EARRINGS */;
 			}
 			else
 			{
@@ -19915,9 +19915,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 7:
 			iVar3 = 2;
 			iVar4 = 0;
-			if (Global_262145.f_4156 != -1)
+			if (Global_262145.f_4156 /* Tunable: EXPENSE_MODIFIER_GOLD_HOOP_EARRINGS */ != -1)
 			{
-				iVar1 = Global_262145.f_4156;
+				iVar1 = Global_262145.f_4156 /* Tunable: EXPENSE_MODIFIER_GOLD_HOOP_EARRINGS */;
 			}
 			else
 			{
@@ -19928,9 +19928,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 8:
 			iVar3 = 2;
 			iVar4 = 1;
-			if (Global_262145.f_4157 != -1)
+			if (Global_262145.f_4157 /* Tunable: EXPENSE_MODIFIER_SILVER_HOOP_EARRINGS */ != -1)
 			{
-				iVar1 = Global_262145.f_4157;
+				iVar1 = Global_262145.f_4157 /* Tunable: EXPENSE_MODIFIER_SILVER_HOOP_EARRINGS */;
 			}
 			else
 			{
@@ -19941,9 +19941,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 9:
 			iVar3 = 2;
 			iVar4 = 2;
-			if (Global_262145.f_4158 != -1)
+			if (Global_262145.f_4158 /* Tunable: EXPENSE_MODIFIER_PINK_HOOP_EARRINGS */ != -1)
 			{
-				iVar1 = Global_262145.f_4158;
+				iVar1 = Global_262145.f_4158 /* Tunable: EXPENSE_MODIFIER_PINK_HOOP_EARRINGS */;
 			}
 			else
 			{
@@ -19954,9 +19954,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 10:
 			iVar3 = 2;
 			iVar4 = 3;
-			if (Global_262145.f_4159 != -1)
+			if (Global_262145.f_4159 /* Tunable: EXPENSE_MODIFIER_COPPER_HOOP_EARRINGS */ != -1)
 			{
-				iVar1 = Global_262145.f_4159;
+				iVar1 = Global_262145.f_4159 /* Tunable: EXPENSE_MODIFIER_COPPER_HOOP_EARRINGS */;
 			}
 			else
 			{
@@ -19967,9 +19967,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 11:
 			iVar3 = 2;
 			iVar4 = 4;
-			if (Global_262145.f_4160 != -1)
+			if (Global_262145.f_4160 /* Tunable: EXPENSE_MODIFIER_PURPLE_HOOP_EARRINGS */ != -1)
 			{
-				iVar1 = Global_262145.f_4160;
+				iVar1 = Global_262145.f_4160 /* Tunable: EXPENSE_MODIFIER_PURPLE_HOOP_EARRINGS */;
 			}
 			else
 			{
@@ -19980,9 +19980,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 12:
 			iVar3 = 2;
 			iVar4 = 5;
-			if (Global_262145.f_4161 != -1)
+			if (Global_262145.f_4161 /* Tunable: EXPENSE_MODIFIER_WHITE_HOOP_EARRINGS */ != -1)
 			{
-				iVar1 = Global_262145.f_4161;
+				iVar1 = Global_262145.f_4161 /* Tunable: EXPENSE_MODIFIER_WHITE_HOOP_EARRINGS */;
 			}
 			else
 			{
@@ -19993,9 +19993,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 13:
 			iVar3 = 3;
 			iVar4 = 0;
-			if (Global_262145.f_4162 != -1)
+			if (Global_262145.f_4162 /* Tunable: EXPENSE_MODIFIER_HARSH_SOULS_SWEATBAND */ != -1)
 			{
-				iVar1 = Global_262145.f_4162;
+				iVar1 = Global_262145.f_4162 /* Tunable: EXPENSE_MODIFIER_HARSH_SOULS_SWEATBAND */;
 			}
 			else
 			{
@@ -20006,9 +20006,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 14:
 			iVar3 = 3;
 			iVar4 = 1;
-			if (Global_262145.f_4163 != -1)
+			if (Global_262145.f_4163 /* Tunable: EXPENSE_MODIFIER_PROLAPS_SWEATBAND */ != -1)
 			{
-				iVar1 = Global_262145.f_4163;
+				iVar1 = Global_262145.f_4163 /* Tunable: EXPENSE_MODIFIER_PROLAPS_SWEATBAND */;
 			}
 			else
 			{
@@ -20019,9 +20019,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 15:
 			iVar3 = 3;
 			iVar4 = 2;
-			if (Global_262145.f_4164 != -1)
+			if (Global_262145.f_4164 /* Tunable: EXPENSE_MODIFIER_LC_SWEATBAND */ != -1)
 			{
-				iVar1 = Global_262145.f_4164;
+				iVar1 = Global_262145.f_4164 /* Tunable: EXPENSE_MODIFIER_LC_SWEATBAND */;
 			}
 			else
 			{
@@ -20032,9 +20032,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 16:
 			iVar3 = 3;
 			iVar4 = 3;
-			if (Global_262145.f_4165 != -1)
+			if (Global_262145.f_4165 /* Tunable: EXPENSE_MODIFIER_AQUA_STRIPED_SWEATBAND */ != -1)
 			{
-				iVar1 = Global_262145.f_4165;
+				iVar1 = Global_262145.f_4165 /* Tunable: EXPENSE_MODIFIER_AQUA_STRIPED_SWEATBAND */;
 			}
 			else
 			{
@@ -20045,9 +20045,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 17:
 			iVar3 = 3;
 			iVar4 = 4;
-			if (Global_262145.f_4166 != -1)
+			if (Global_262145.f_4166 /* Tunable: EXPENSE_MODIFIER_PINK_CHECK_SWEATBAND */ != -1)
 			{
-				iVar1 = Global_262145.f_4166;
+				iVar1 = Global_262145.f_4166 /* Tunable: EXPENSE_MODIFIER_PINK_CHECK_SWEATBAND */;
 			}
 			else
 			{
@@ -20058,9 +20058,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 18:
 			iVar3 = 3;
 			iVar4 = 5;
-			if (Global_262145.f_4167 != -1)
+			if (Global_262145.f_4167 /* Tunable: EXPENSE_MODIFIER_SQUEEZERS_SWEATBAND */ != -1)
 			{
-				iVar1 = Global_262145.f_4167;
+				iVar1 = Global_262145.f_4167 /* Tunable: EXPENSE_MODIFIER_SQUEEZERS_SWEATBAND */;
 			}
 			else
 			{
@@ -20085,9 +20085,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 21:
 			iVar3 = 4;
 			iVar4 = 2;
-			if (Global_262145.f_4168 != -1)
+			if (Global_262145.f_4168 /* Tunable: EXPENSE_MODIFIER_SILVER_BANGLES */ != -1)
 			{
-				iVar1 = Global_262145.f_4168;
+				iVar1 = Global_262145.f_4168 /* Tunable: EXPENSE_MODIFIER_SILVER_BANGLES */;
 			}
 			else
 			{
@@ -20098,9 +20098,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 22:
 			iVar3 = 4;
 			iVar4 = 3;
-			if (Global_262145.f_4169 != -1)
+			if (Global_262145.f_4169 /* Tunable: EXPENSE_MODIFIER_GOLD_BANGLES */ != -1)
 			{
-				iVar1 = Global_262145.f_4169;
+				iVar1 = Global_262145.f_4169 /* Tunable: EXPENSE_MODIFIER_GOLD_BANGLES */;
 			}
 			else
 			{
@@ -20153,9 +20153,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 29:
 			iVar3 = 5;
 			iVar4 = 4;
-			if (Global_262145.f_4170 != -1)
+			if (Global_262145.f_4170 /* Tunable: EXPENSE_MODIFIER_WHITE_LEATHER_STRAPS */ != -1)
 			{
-				iVar1 = Global_262145.f_4170;
+				iVar1 = Global_262145.f_4170 /* Tunable: EXPENSE_MODIFIER_WHITE_LEATHER_STRAPS */;
 			}
 			else
 			{
@@ -20166,9 +20166,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 30:
 			iVar3 = 5;
 			iVar4 = 5;
-			if (Global_262145.f_4171 != -1)
+			if (Global_262145.f_4171 /* Tunable: EXPENSE_MODIFIER_RAINBOW_LEATHER_STRAPS */ != -1)
 			{
-				iVar1 = Global_262145.f_4171;
+				iVar1 = Global_262145.f_4171 /* Tunable: EXPENSE_MODIFIER_RAINBOW_LEATHER_STRAPS */;
 			}
 			else
 			{
@@ -20179,9 +20179,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 31:
 			iVar3 = 6;
 			iVar4 = 0;
-			if (Global_262145.f_4172 != -1)
+			if (Global_262145.f_4172 /* Tunable: EXPENSE_MODIFIER_ONYX_PENDANT */ != -1)
 			{
-				iVar1 = Global_262145.f_4172;
+				iVar1 = Global_262145.f_4172 /* Tunable: EXPENSE_MODIFIER_ONYX_PENDANT */;
 			}
 			else
 			{
@@ -20192,9 +20192,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 32:
 			iVar3 = 6;
 			iVar4 = 1;
-			if (Global_262145.f_4173 != -1)
+			if (Global_262145.f_4173 /* Tunable: EXPENSE_MODIFIER_PEARL_PENDANT */ != -1)
 			{
-				iVar1 = Global_262145.f_4173;
+				iVar1 = Global_262145.f_4173 /* Tunable: EXPENSE_MODIFIER_PEARL_PENDANT */;
 			}
 			else
 			{
@@ -20205,9 +20205,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 33:
 			iVar3 = 6;
 			iVar4 = 2;
-			if (Global_262145.f_4174 != -1)
+			if (Global_262145.f_4174 /* Tunable: EXPENSE_MODIFIER_JADE_PENDANT */ != -1)
 			{
-				iVar1 = Global_262145.f_4174;
+				iVar1 = Global_262145.f_4174 /* Tunable: EXPENSE_MODIFIER_JADE_PENDANT */;
 			}
 			else
 			{
@@ -20218,9 +20218,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 34:
 			iVar3 = 6;
 			iVar4 = 3;
-			if (Global_262145.f_4175 != -1)
+			if (Global_262145.f_4175 /* Tunable: EXPENSE_MODIFIER_CARNELIAN_PENDANT */ != -1)
 			{
-				iVar1 = Global_262145.f_4175;
+				iVar1 = Global_262145.f_4175 /* Tunable: EXPENSE_MODIFIER_CARNELIAN_PENDANT */;
 			}
 			else
 			{
@@ -20231,9 +20231,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 35:
 			iVar3 = 6;
 			iVar4 = 4;
-			if (Global_262145.f_4176 != -1)
+			if (Global_262145.f_4176 /* Tunable: EXPENSE_MODIFIER_AQUAMARINE_PENDANT */ != -1)
 			{
-				iVar1 = Global_262145.f_4176;
+				iVar1 = Global_262145.f_4176 /* Tunable: EXPENSE_MODIFIER_AQUAMARINE_PENDANT */;
 			}
 			else
 			{
@@ -20244,9 +20244,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 36:
 			iVar3 = 6;
 			iVar4 = 5;
-			if (Global_262145.f_4177 != -1)
+			if (Global_262145.f_4177 /* Tunable: EXPENSE_MODIFIER_AMETHYST_PENDANT */ != -1)
 			{
-				iVar1 = Global_262145.f_4177;
+				iVar1 = Global_262145.f_4177 /* Tunable: EXPENSE_MODIFIER_AMETHYST_PENDANT */;
 			}
 			else
 			{
@@ -20257,9 +20257,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 37:
 			iVar3 = 7;
 			iVar4 = 0;
-			if (Global_262145.f_4178 != -1)
+			if (Global_262145.f_4178 /* Tunable: EXPENSE_MODIFIER_GOLD_NECKLACE */ != -1)
 			{
-				iVar1 = Global_262145.f_4178;
+				iVar1 = Global_262145.f_4178 /* Tunable: EXPENSE_MODIFIER_GOLD_NECKLACE */;
 			}
 			else
 			{
@@ -20270,9 +20270,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 38:
 			iVar3 = 7;
 			iVar4 = 1;
-			if (Global_262145.f_4179 != -1)
+			if (Global_262145.f_4179 /* Tunable: EXPENSE_MODIFIER_SILVER_NECKLACE */ != -1)
 			{
-				iVar1 = Global_262145.f_4179;
+				iVar1 = Global_262145.f_4179 /* Tunable: EXPENSE_MODIFIER_SILVER_NECKLACE */;
 			}
 			else
 			{
@@ -20353,9 +20353,9 @@ void func_109(int iParam0, int iParam1)//Position - 0x186AD
 		case 49:
 			iVar3 = 9;
 			iVar4 = 0;
-			if (Global_262145.f_4180 != -1)
+			if (Global_262145.f_4180 /* Tunable: EXPENSE_MODIFIER_SCARF */ != -1)
 			{
-				iVar1 = Global_262145.f_4180;
+				iVar1 = Global_262145.f_4180 /* Tunable: EXPENSE_MODIFIER_SCARF */;
 			}
 			else
 			{
@@ -25343,7 +25343,7 @@ void func_115(int iParam0, int iParam1)//Position - 0x1C262
 		if (func_116(89, -1))
 		{
 			StringCopy(&Var2, "REW_RS" /* GXT: Rockstar V Neck */, 16);
-			iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(1250) * Global_262145.f_2989));
+			iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(1250) * Global_262145.f_2989 /* Tunable: TSHIRT_TRANS_MP_FM_ROCKSTAR_EXPENDITURE_TUNABLE */));
 		}
 		else
 		{
@@ -25353,14 +25353,14 @@ void func_115(int iParam0, int iParam1)//Position - 0x1C262
 	else if (iParam0 == 7 || iParam0 == 23)
 	{
 		StringCopy(&Var2, "REW_LSB" /* GXT: Los Santos Belle V Neck */, 16);
-		iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(450) * Global_262145.f_2988));
+		iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(450) * Global_262145.f_2988 /* Tunable: TSHIRT_TRANS_MP_FM_LSBELLE_EXPENDITURE_TUNABLE */));
 	}
 	else if (iParam0 == 9 || iParam0 == 25)
 	{
 		if (func_116(87, -1))
 		{
 			StringCopy(&Var2, "REW_REDSK" /* GXT: Red Skull V Neck */, 16);
-			iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(500) * Global_262145.f_2987));
+			iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(500) * Global_262145.f_2987 /* Tunable: TSHIRT_TRANS_MP_FM_REDSKULL_EXPENDITURE_TUNABLE */));
 		}
 		else
 		{
@@ -27339,7 +27339,7 @@ void func_119(int iParam0, int iParam1)//Position - 0x1D98B
 		if (func_116(89, -1))
 		{
 			StringCopy(&Var2, "REW_RS" /* GXT: Rockstar V Neck */, 16);
-			iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(1250) * Global_262145.f_2989) * Global_295754.f_24));
+			iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(1250) * Global_262145.f_2989 /* Tunable: TSHIRT_TRANS_MP_FM_ROCKSTAR_EXPENDITURE_TUNABLE */) * Global_295754.f_24));
 		}
 		else
 		{
@@ -27349,14 +27349,14 @@ void func_119(int iParam0, int iParam1)//Position - 0x1D98B
 	else if (iParam0 == 7)
 	{
 		StringCopy(&Var2, "REW_LSB" /* GXT: Los Santos Belle V Neck */, 16);
-		iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(450) * Global_262145.f_2988) * Global_295754.f_24));
+		iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(450) * Global_262145.f_2988 /* Tunable: TSHIRT_TRANS_MP_FM_LSBELLE_EXPENDITURE_TUNABLE */) * Global_295754.f_24));
 	}
 	else if (iParam0 == 9)
 	{
 		if (func_116(87, -1))
 		{
 			StringCopy(&Var2, "REW_REDSK" /* GXT: Red Skull V Neck */, 16);
-			iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(500) * Global_262145.f_2987) * Global_295754.f_24));
+			iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(500) * Global_262145.f_2987 /* Tunable: TSHIRT_TRANS_MP_FM_REDSKULL_EXPENDITURE_TUNABLE */) * Global_295754.f_24));
 		}
 		else
 		{
@@ -32010,9 +32010,9 @@ void func_128(int iParam0, int iParam1)//Position - 0x23583
 		case 41:
 			iVar3 = 10;
 			iVar4 = 0;
-			if (Global_262145.f_4181 != -1)
+			if (Global_262145.f_4181 /* Tunable: EXPENSE_MODIFIER_WHITE_TIE */ != -1)
 			{
-				iVar1 = Global_262145.f_4181;
+				iVar1 = Global_262145.f_4181 /* Tunable: EXPENSE_MODIFIER_WHITE_TIE */;
 			}
 			else
 			{
@@ -32023,9 +32023,9 @@ void func_128(int iParam0, int iParam1)//Position - 0x23583
 		case 42:
 			iVar3 = 10;
 			iVar4 = 1;
-			if (Global_262145.f_4182 != -1)
+			if (Global_262145.f_4182 /* Tunable: EXPENSE_MODIFIER_GRAY_TIE */ != -1)
 			{
-				iVar1 = Global_262145.f_4182;
+				iVar1 = Global_262145.f_4182 /* Tunable: EXPENSE_MODIFIER_GRAY_TIE */;
 			}
 			else
 			{
@@ -32036,9 +32036,9 @@ void func_128(int iParam0, int iParam1)//Position - 0x23583
 		case 43:
 			iVar3 = 10;
 			iVar4 = 2;
-			if (Global_262145.f_4183 != -1)
+			if (Global_262145.f_4183 /* Tunable: EXPENSE_MODIFIER_BLACK_TIE */ != -1)
 			{
-				iVar1 = Global_262145.f_4183;
+				iVar1 = Global_262145.f_4183 /* Tunable: EXPENSE_MODIFIER_BLACK_TIE */;
 			}
 			else
 			{
@@ -32154,9 +32154,9 @@ void func_128(int iParam0, int iParam1)//Position - 0x23583
 		case 59:
 			iVar3 = 11;
 			iVar4 = 2;
-			if (Global_262145.f_4187 != -1)
+			if (Global_262145.f_4187 /* Tunable: EXPENSE_MODIFIER_BLACK_BOWTIE */ != -1)
 			{
-				iVar1 = Global_262145.f_4187;
+				iVar1 = Global_262145.f_4187 /* Tunable: EXPENSE_MODIFIER_BLACK_BOWTIE */;
 			}
 			else
 			{
@@ -32258,9 +32258,9 @@ void func_128(int iParam0, int iParam1)//Position - 0x23583
 		case 73:
 			iVar3 = 12;
 			iVar4 = 0;
-			if (Global_262145.f_4184 != -1)
+			if (Global_262145.f_4184 /* Tunable: EXPENSE_MODIFIER_WHITE_SKINNY_TIE */ != -1)
 			{
-				iVar1 = Global_262145.f_4184;
+				iVar1 = Global_262145.f_4184 /* Tunable: EXPENSE_MODIFIER_WHITE_SKINNY_TIE */;
 			}
 			else
 			{
@@ -32271,9 +32271,9 @@ void func_128(int iParam0, int iParam1)//Position - 0x23583
 		case 74:
 			iVar3 = 12;
 			iVar4 = 1;
-			if (Global_262145.f_4185 != -1)
+			if (Global_262145.f_4185 /* Tunable: EXPENSE_MODIFIER_GRAY_SKINNY_TIE */ != -1)
 			{
-				iVar1 = Global_262145.f_4185;
+				iVar1 = Global_262145.f_4185 /* Tunable: EXPENSE_MODIFIER_GRAY_SKINNY_TIE */;
 			}
 			else
 			{
@@ -32284,9 +32284,9 @@ void func_128(int iParam0, int iParam1)//Position - 0x23583
 		case 75:
 			iVar3 = 12;
 			iVar4 = 2;
-			if (Global_262145.f_4186 != -1)
+			if (Global_262145.f_4186 /* Tunable: EXPENSE_MODIFIER_BLACK_SKINNY_TIE */ != -1)
 			{
-				iVar1 = Global_262145.f_4186;
+				iVar1 = Global_262145.f_4186 /* Tunable: EXPENSE_MODIFIER_BLACK_SKINNY_TIE */;
 			}
 			else
 			{
@@ -36760,9 +36760,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_3_0" /* GXT: Black Vest */, 16);
 			iVar3 = 3;
 			iVar4 = 0;
-			if (Global_262145.f_4190 != -1)
+			if (Global_262145.f_4190 /* Tunable: DISCOUNT_MALE_SPECIAL_BLACK_VEST */ != -1)
 			{
-				iVar1 = Global_262145.f_4190;
+				iVar1 = Global_262145.f_4190 /* Tunable: DISCOUNT_MALE_SPECIAL_BLACK_VEST */;
 			}
 			else
 			{
@@ -36774,9 +36774,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_3_1" /* GXT: Gray Vest */, 16);
 			iVar3 = 3;
 			iVar4 = 1;
-			if (Global_262145.f_4198 != -1)
+			if (Global_262145.f_4198 /* Tunable: DISCOUNT_MALE_SPECIAL_GRAY_VEST */ != -1)
 			{
-				iVar1 = Global_262145.f_4198;
+				iVar1 = Global_262145.f_4198 /* Tunable: DISCOUNT_MALE_SPECIAL_GRAY_VEST */;
 			}
 			else
 			{
@@ -36788,9 +36788,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_3_2" /* GXT: Blue Vest */, 16);
 			iVar3 = 3;
 			iVar4 = 2;
-			if (Global_262145.f_4193 != -1)
+			if (Global_262145.f_4193 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_VEST */ != -1)
 			{
-				iVar1 = Global_262145.f_4193;
+				iVar1 = Global_262145.f_4193 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_VEST */;
 			}
 			else
 			{
@@ -36895,9 +36895,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_3_0" /* GXT: Black Vest */, 16);
 			iVar3 = 4;
 			iVar4 = 0;
-			if (Global_262145.f_4190 != -1)
+			if (Global_262145.f_4190 /* Tunable: DISCOUNT_MALE_SPECIAL_BLACK_VEST */ != -1)
 			{
-				iVar1 = Global_262145.f_4190;
+				iVar1 = Global_262145.f_4190 /* Tunable: DISCOUNT_MALE_SPECIAL_BLACK_VEST */;
 			}
 			else
 			{
@@ -36909,9 +36909,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_3_1" /* GXT: Gray Vest */, 16);
 			iVar3 = 4;
 			iVar4 = 1;
-			if (Global_262145.f_4198 != -1)
+			if (Global_262145.f_4198 /* Tunable: DISCOUNT_MALE_SPECIAL_GRAY_VEST */ != -1)
 			{
-				iVar1 = Global_262145.f_4198;
+				iVar1 = Global_262145.f_4198 /* Tunable: DISCOUNT_MALE_SPECIAL_GRAY_VEST */;
 			}
 			else
 			{
@@ -36923,9 +36923,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_3_2" /* GXT: Blue Vest */, 16);
 			iVar3 = 4;
 			iVar4 = 2;
-			if (Global_262145.f_4193 != -1)
+			if (Global_262145.f_4193 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_VEST */ != -1)
 			{
-				iVar1 = Global_262145.f_4193;
+				iVar1 = Global_262145.f_4193 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_VEST */;
 			}
 			else
 			{
@@ -37146,9 +37146,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_0" /* GXT: White Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 0;
-			if (Global_262145.f_4211 != -1)
+			if (Global_262145.f_4211 /* Tunable: DISCOUNT_MALE_SPECIAL_WHITE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4211;
+				iVar1 = Global_262145.f_4211 /* Tunable: DISCOUNT_MALE_SPECIAL_WHITE_SHIRT */;
 			}
 			else
 			{
@@ -37160,9 +37160,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_1" /* GXT: Silver Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 1;
-			if (Global_262145.f_4209 != -1)
+			if (Global_262145.f_4209 /* Tunable: DISCOUNT_MALE_SPECIAL_SILVER_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4209;
+				iVar1 = Global_262145.f_4209 /* Tunable: DISCOUNT_MALE_SPECIAL_SILVER_SHIRT */;
 			}
 			else
 			{
@@ -37174,9 +37174,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_2" /* GXT: Charcoal Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 2;
-			if (Global_262145.f_4189 != -1)
+			if (Global_262145.f_4189 /* Tunable: DISCOUNT_MALE_SPECIAL_BLACK_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4189;
+				iVar1 = Global_262145.f_4189 /* Tunable: DISCOUNT_MALE_SPECIAL_BLACK_SHIRT */;
 			}
 			else
 			{
@@ -37188,9 +37188,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_3" /* GXT: Pale Blue Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 3;
-			if (Global_262145.f_4203 != -1)
+			if (Global_262145.f_4203 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_BLUE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4203;
+				iVar1 = Global_262145.f_4203 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_BLUE_SHIRT */;
 			}
 			else
 			{
@@ -37202,9 +37202,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_4" /* GXT: Barely Blue Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 4;
-			if (Global_262145.f_4188 != -1)
+			if (Global_262145.f_4188 /* Tunable: DISCOUNT_MALE_SPECIAL_BARELY_BLUE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4188;
+				iVar1 = Global_262145.f_4188 /* Tunable: DISCOUNT_MALE_SPECIAL_BARELY_BLUE_SHIRT */;
 			}
 			else
 			{
@@ -37216,9 +37216,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_5" /* GXT: Pink Check Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 5;
-			if (Global_262145.f_4205 != -1)
+			if (Global_262145.f_4205 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_CHECK_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4205;
+				iVar1 = Global_262145.f_4205 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_CHECK_SHIRT */;
 			}
 			else
 			{
@@ -37230,9 +37230,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_6" /* GXT: Salmon Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 6;
-			if (Global_262145.f_4208 != -1)
+			if (Global_262145.f_4208 /* Tunable: DISCOUNT_MALE_SPECIAL_SALMON_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4208;
+				iVar1 = Global_262145.f_4208 /* Tunable: DISCOUNT_MALE_SPECIAL_SALMON_SHIRT */;
 			}
 			else
 			{
@@ -37244,9 +37244,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_7" /* GXT: Pale Olive Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 7;
-			if (Global_262145.f_4204 != -1)
+			if (Global_262145.f_4204 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_OLIVE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4204;
+				iVar1 = Global_262145.f_4204 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_OLIVE_SHIRT */;
 			}
 			else
 			{
@@ -37258,9 +37258,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_8" /* GXT: Fuchsia Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 8;
-			if (Global_262145.f_4197 != -1)
+			if (Global_262145.f_4197 /* Tunable: DISCOUNT_MALE_SPECIAL_FUCHSIA_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4197;
+				iVar1 = Global_262145.f_4197 /* Tunable: DISCOUNT_MALE_SPECIAL_FUCHSIA_SHIRT */;
 			}
 			else
 			{
@@ -37272,9 +37272,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_9" /* GXT: Off-White Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 9;
-			if (Global_262145.f_4202 != -1)
+			if (Global_262145.f_4202 /* Tunable: DISCOUNT_MALE_SPECIAL_OFF_WHITE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4202;
+				iVar1 = Global_262145.f_4202 /* Tunable: DISCOUNT_MALE_SPECIAL_OFF_WHITE_SHIRT */;
 			}
 			else
 			{
@@ -37286,9 +37286,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_10" /* GXT: Mint Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 10;
-			if (Global_262145.f_4200 != -1)
+			if (Global_262145.f_4200 /* Tunable: DISCOUNT_MALE_SPECIAL_MINT_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4200;
+				iVar1 = Global_262145.f_4200 /* Tunable: DISCOUNT_MALE_SPECIAL_MINT_SHIRT */;
 			}
 			else
 			{
@@ -37300,9 +37300,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_11" /* GXT: Tan Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 11;
-			if (Global_262145.f_4210 != -1)
+			if (Global_262145.f_4210 /* Tunable: DISCOUNT_MALE_SPECIAL_TAN_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4210;
+				iVar1 = Global_262145.f_4210 /* Tunable: DISCOUNT_MALE_SPECIAL_TAN_SHIRT */;
 			}
 			else
 			{
@@ -37314,9 +37314,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_12" /* GXT: Dark Salmon Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 12;
-			if (Global_262145.f_4196 != -1)
+			if (Global_262145.f_4196 /* Tunable: DISCOUNT_MALE_SPECIAL_DARK_SALMON_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4196;
+				iVar1 = Global_262145.f_4196 /* Tunable: DISCOUNT_MALE_SPECIAL_DARK_SALMON_SHIRT */;
 			}
 			else
 			{
@@ -37328,9 +37328,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_13" /* GXT: Blue Check Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 13;
-			if (Global_262145.f_4191 != -1)
+			if (Global_262145.f_4191 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_CHECK_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4191;
+				iVar1 = Global_262145.f_4191 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_CHECK_SHIRT */;
 			}
 			else
 			{
@@ -37342,9 +37342,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_14" /* GXT: Pink Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 14;
-			if (Global_262145.f_4206 != -1)
+			if (Global_262145.f_4206 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4206;
+				iVar1 = Global_262145.f_4206 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_SHIRT */;
 			}
 			else
 			{
@@ -37356,9 +37356,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_15" /* GXT: Lemon Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 15;
-			if (Global_262145.f_4199 != -1)
+			if (Global_262145.f_4199 /* Tunable: DISCOUNT_MALE_SPECIAL_LEMON_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4199;
+				iVar1 = Global_262145.f_4199 /* Tunable: DISCOUNT_MALE_SPECIAL_LEMON_SHIRT */;
 			}
 			else
 			{
@@ -37370,9 +37370,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_0" /* GXT: White Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 0;
-			if (Global_262145.f_4211 != -1)
+			if (Global_262145.f_4211 /* Tunable: DISCOUNT_MALE_SPECIAL_WHITE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4211;
+				iVar1 = Global_262145.f_4211 /* Tunable: DISCOUNT_MALE_SPECIAL_WHITE_SHIRT */;
 			}
 			else
 			{
@@ -37384,9 +37384,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_1" /* GXT: Silver Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 1;
-			if (Global_262145.f_4209 != -1)
+			if (Global_262145.f_4209 /* Tunable: DISCOUNT_MALE_SPECIAL_SILVER_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4209;
+				iVar1 = Global_262145.f_4209 /* Tunable: DISCOUNT_MALE_SPECIAL_SILVER_SHIRT */;
 			}
 			else
 			{
@@ -37398,9 +37398,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_2" /* GXT: Charcoal Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 2;
-			if (Global_262145.f_4189 != -1)
+			if (Global_262145.f_4189 /* Tunable: DISCOUNT_MALE_SPECIAL_BLACK_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4189;
+				iVar1 = Global_262145.f_4189 /* Tunable: DISCOUNT_MALE_SPECIAL_BLACK_SHIRT */;
 			}
 			else
 			{
@@ -37412,9 +37412,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_3" /* GXT: Pale Blue Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 3;
-			if (Global_262145.f_4203 != -1)
+			if (Global_262145.f_4203 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_BLUE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4203;
+				iVar1 = Global_262145.f_4203 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_BLUE_SHIRT */;
 			}
 			else
 			{
@@ -37426,9 +37426,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_4" /* GXT: Barely Blue Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 4;
-			if (Global_262145.f_4188 != -1)
+			if (Global_262145.f_4188 /* Tunable: DISCOUNT_MALE_SPECIAL_BARELY_BLUE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4188;
+				iVar1 = Global_262145.f_4188 /* Tunable: DISCOUNT_MALE_SPECIAL_BARELY_BLUE_SHIRT */;
 			}
 			else
 			{
@@ -37440,9 +37440,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_5" /* GXT: Pink Check Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 5;
-			if (Global_262145.f_4205 != -1)
+			if (Global_262145.f_4205 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_CHECK_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4205;
+				iVar1 = Global_262145.f_4205 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_CHECK_SHIRT */;
 			}
 			else
 			{
@@ -37454,9 +37454,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_6" /* GXT: Salmon Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 6;
-			if (Global_262145.f_4208 != -1)
+			if (Global_262145.f_4208 /* Tunable: DISCOUNT_MALE_SPECIAL_SALMON_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4208;
+				iVar1 = Global_262145.f_4208 /* Tunable: DISCOUNT_MALE_SPECIAL_SALMON_SHIRT */;
 			}
 			else
 			{
@@ -37468,9 +37468,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_7" /* GXT: Pale Olive Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 7;
-			if (Global_262145.f_4204 != -1)
+			if (Global_262145.f_4204 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_OLIVE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4204;
+				iVar1 = Global_262145.f_4204 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_OLIVE_SHIRT */;
 			}
 			else
 			{
@@ -37482,9 +37482,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_8" /* GXT: Fuchsia Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 8;
-			if (Global_262145.f_4197 != -1)
+			if (Global_262145.f_4197 /* Tunable: DISCOUNT_MALE_SPECIAL_FUCHSIA_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4197;
+				iVar1 = Global_262145.f_4197 /* Tunable: DISCOUNT_MALE_SPECIAL_FUCHSIA_SHIRT */;
 			}
 			else
 			{
@@ -37496,9 +37496,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_9" /* GXT: Off-White Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 9;
-			if (Global_262145.f_4202 != -1)
+			if (Global_262145.f_4202 /* Tunable: DISCOUNT_MALE_SPECIAL_OFF_WHITE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4202;
+				iVar1 = Global_262145.f_4202 /* Tunable: DISCOUNT_MALE_SPECIAL_OFF_WHITE_SHIRT */;
 			}
 			else
 			{
@@ -37510,9 +37510,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_10" /* GXT: Mint Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 10;
-			if (Global_262145.f_4200 != -1)
+			if (Global_262145.f_4200 /* Tunable: DISCOUNT_MALE_SPECIAL_MINT_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4200;
+				iVar1 = Global_262145.f_4200 /* Tunable: DISCOUNT_MALE_SPECIAL_MINT_SHIRT */;
 			}
 			else
 			{
@@ -37524,9 +37524,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_11" /* GXT: Tan Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 11;
-			if (Global_262145.f_4210 != -1)
+			if (Global_262145.f_4210 /* Tunable: DISCOUNT_MALE_SPECIAL_TAN_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4210;
+				iVar1 = Global_262145.f_4210 /* Tunable: DISCOUNT_MALE_SPECIAL_TAN_SHIRT */;
 			}
 			else
 			{
@@ -37538,9 +37538,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_12" /* GXT: Dark Salmon Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 12;
-			if (Global_262145.f_4196 != -1)
+			if (Global_262145.f_4196 /* Tunable: DISCOUNT_MALE_SPECIAL_DARK_SALMON_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4196;
+				iVar1 = Global_262145.f_4196 /* Tunable: DISCOUNT_MALE_SPECIAL_DARK_SALMON_SHIRT */;
 			}
 			else
 			{
@@ -37552,9 +37552,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_13" /* GXT: Blue Check Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 13;
-			if (Global_262145.f_4191 != -1)
+			if (Global_262145.f_4191 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_CHECK_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4191;
+				iVar1 = Global_262145.f_4191 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_CHECK_SHIRT */;
 			}
 			else
 			{
@@ -37566,9 +37566,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_14" /* GXT: Pink Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 14;
-			if (Global_262145.f_4206 != -1)
+			if (Global_262145.f_4206 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4206;
+				iVar1 = Global_262145.f_4206 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_SHIRT */;
 			}
 			else
 			{
@@ -37580,9 +37580,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_6_15" /* GXT: Lemon Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 15;
-			if (Global_262145.f_4199 != -1)
+			if (Global_262145.f_4199 /* Tunable: DISCOUNT_MALE_SPECIAL_LEMON_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4199;
+				iVar1 = Global_262145.f_4199 /* Tunable: DISCOUNT_MALE_SPECIAL_LEMON_SHIRT */;
 			}
 			else
 			{
@@ -37822,9 +37822,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_0" /* GXT: White Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 0;
-			if (Global_262145.f_4211 != -1)
+			if (Global_262145.f_4211 /* Tunable: DISCOUNT_MALE_SPECIAL_WHITE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4211;
+				iVar1 = Global_262145.f_4211 /* Tunable: DISCOUNT_MALE_SPECIAL_WHITE_SHIRT */;
 			}
 			else
 			{
@@ -37836,9 +37836,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_1" /* GXT: Silver Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 1;
-			if (Global_262145.f_4209 != -1)
+			if (Global_262145.f_4209 /* Tunable: DISCOUNT_MALE_SPECIAL_SILVER_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4209;
+				iVar1 = Global_262145.f_4209 /* Tunable: DISCOUNT_MALE_SPECIAL_SILVER_SHIRT */;
 			}
 			else
 			{
@@ -37850,9 +37850,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_2" /* GXT: Charcoal Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 2;
-			if (Global_262145.f_4195 != -1)
+			if (Global_262145.f_4195 /* Tunable: DISCOUNT_MALE_SPECIAL_CHARCOAL_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4195;
+				iVar1 = Global_262145.f_4195 /* Tunable: DISCOUNT_MALE_SPECIAL_CHARCOAL_SHIRT */;
 			}
 			else
 			{
@@ -37864,9 +37864,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_3" /* GXT: Pale Blue Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 3;
-			if (Global_262145.f_4203 != -1)
+			if (Global_262145.f_4203 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_BLUE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4203;
+				iVar1 = Global_262145.f_4203 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_BLUE_SHIRT */;
 			}
 			else
 			{
@@ -37878,9 +37878,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_4" /* GXT: Barely Blue Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 4;
-			if (Global_262145.f_4188 != -1)
+			if (Global_262145.f_4188 /* Tunable: DISCOUNT_MALE_SPECIAL_BARELY_BLUE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4188;
+				iVar1 = Global_262145.f_4188 /* Tunable: DISCOUNT_MALE_SPECIAL_BARELY_BLUE_SHIRT */;
 			}
 			else
 			{
@@ -37892,9 +37892,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_5" /* GXT: Pink Check Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 5;
-			if (Global_262145.f_4205 != -1)
+			if (Global_262145.f_4205 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_CHECK_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4205;
+				iVar1 = Global_262145.f_4205 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_CHECK_SHIRT */;
 			}
 			else
 			{
@@ -37906,9 +37906,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_6" /* GXT: Blue Woven Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 6;
-			if (Global_262145.f_4194 != -1)
+			if (Global_262145.f_4194 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_WOVEN_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4194;
+				iVar1 = Global_262145.f_4194 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_WOVEN_SHIRT */;
 			}
 			else
 			{
@@ -37920,9 +37920,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_7" /* GXT: Salmon Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 7;
-			if (Global_262145.f_4208 != -1)
+			if (Global_262145.f_4208 /* Tunable: DISCOUNT_MALE_SPECIAL_SALMON_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4208;
+				iVar1 = Global_262145.f_4208 /* Tunable: DISCOUNT_MALE_SPECIAL_SALMON_SHIRT */;
 			}
 			else
 			{
@@ -37934,9 +37934,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_8" /* GXT: Pale Olive Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 8;
-			if (Global_262145.f_4204 != -1)
+			if (Global_262145.f_4204 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_OLIVE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4204;
+				iVar1 = Global_262145.f_4204 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_OLIVE_SHIRT */;
 			}
 			else
 			{
@@ -37948,9 +37948,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_9" /* GXT: Fuchsia Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 9;
-			if (Global_262145.f_4197 != -1)
+			if (Global_262145.f_4197 /* Tunable: DISCOUNT_MALE_SPECIAL_FUCHSIA_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4197;
+				iVar1 = Global_262145.f_4197 /* Tunable: DISCOUNT_MALE_SPECIAL_FUCHSIA_SHIRT */;
 			}
 			else
 			{
@@ -37962,9 +37962,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_10" /* GXT: Off-White Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 10;
-			if (Global_262145.f_4202 != -1)
+			if (Global_262145.f_4202 /* Tunable: DISCOUNT_MALE_SPECIAL_OFF_WHITE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4202;
+				iVar1 = Global_262145.f_4202 /* Tunable: DISCOUNT_MALE_SPECIAL_OFF_WHITE_SHIRT */;
 			}
 			else
 			{
@@ -37976,9 +37976,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_11" /* GXT: Mint Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 11;
-			if (Global_262145.f_4200 != -1)
+			if (Global_262145.f_4200 /* Tunable: DISCOUNT_MALE_SPECIAL_MINT_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4200;
+				iVar1 = Global_262145.f_4200 /* Tunable: DISCOUNT_MALE_SPECIAL_MINT_SHIRT */;
 			}
 			else
 			{
@@ -37990,9 +37990,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_12" /* GXT: Blue Striped Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 12;
-			if (Global_262145.f_4192 != -1)
+			if (Global_262145.f_4192 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_STRIPED_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4192;
+				iVar1 = Global_262145.f_4192 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_STRIPED_SHIRT */;
 			}
 			else
 			{
@@ -38004,9 +38004,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_13" /* GXT: Pink Striped Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 13;
-			if (Global_262145.f_4207 != -1)
+			if (Global_262145.f_4207 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_STRIPED_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4207;
+				iVar1 = Global_262145.f_4207 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_STRIPED_SHIRT */;
 			}
 			else
 			{
@@ -38018,9 +38018,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_14" /* GXT: Tan Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 14;
-			if (Global_262145.f_4210 != -1)
+			if (Global_262145.f_4210 /* Tunable: DISCOUNT_MALE_SPECIAL_TAN_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4210;
+				iVar1 = Global_262145.f_4210 /* Tunable: DISCOUNT_MALE_SPECIAL_TAN_SHIRT */;
 			}
 			else
 			{
@@ -38032,9 +38032,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_15" /* GXT: Ocean Stripe Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 15;
-			if (Global_262145.f_4201 != -1)
+			if (Global_262145.f_4201 /* Tunable: DISCOUNT_MALE_SPECIAL_OCEAN_STRIPE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4201;
+				iVar1 = Global_262145.f_4201 /* Tunable: DISCOUNT_MALE_SPECIAL_OCEAN_STRIPE_SHIRT */;
 			}
 			else
 			{
@@ -38046,9 +38046,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_0" /* GXT: White Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 0;
-			if (Global_262145.f_4211 != -1)
+			if (Global_262145.f_4211 /* Tunable: DISCOUNT_MALE_SPECIAL_WHITE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4211;
+				iVar1 = Global_262145.f_4211 /* Tunable: DISCOUNT_MALE_SPECIAL_WHITE_SHIRT */;
 			}
 			else
 			{
@@ -38060,9 +38060,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_1" /* GXT: Silver Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 1;
-			if (Global_262145.f_4209 != -1)
+			if (Global_262145.f_4209 /* Tunable: DISCOUNT_MALE_SPECIAL_SILVER_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4209;
+				iVar1 = Global_262145.f_4209 /* Tunable: DISCOUNT_MALE_SPECIAL_SILVER_SHIRT */;
 			}
 			else
 			{
@@ -38074,9 +38074,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_2" /* GXT: Charcoal Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 2;
-			if (Global_262145.f_4195 != -1)
+			if (Global_262145.f_4195 /* Tunable: DISCOUNT_MALE_SPECIAL_CHARCOAL_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4195;
+				iVar1 = Global_262145.f_4195 /* Tunable: DISCOUNT_MALE_SPECIAL_CHARCOAL_SHIRT */;
 			}
 			else
 			{
@@ -38088,9 +38088,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_3" /* GXT: Pale Blue Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 3;
-			if (Global_262145.f_4203 != -1)
+			if (Global_262145.f_4203 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_BLUE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4203;
+				iVar1 = Global_262145.f_4203 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_BLUE_SHIRT */;
 			}
 			else
 			{
@@ -38102,9 +38102,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_4" /* GXT: Barely Blue Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 4;
-			if (Global_262145.f_4188 != -1)
+			if (Global_262145.f_4188 /* Tunable: DISCOUNT_MALE_SPECIAL_BARELY_BLUE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4188;
+				iVar1 = Global_262145.f_4188 /* Tunable: DISCOUNT_MALE_SPECIAL_BARELY_BLUE_SHIRT */;
 			}
 			else
 			{
@@ -38116,9 +38116,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_5" /* GXT: Pink Check Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 5;
-			if (Global_262145.f_4205 != -1)
+			if (Global_262145.f_4205 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_CHECK_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4205;
+				iVar1 = Global_262145.f_4205 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_CHECK_SHIRT */;
 			}
 			else
 			{
@@ -38130,9 +38130,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_6" /* GXT: Blue Woven Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 6;
-			if (Global_262145.f_4194 != -1)
+			if (Global_262145.f_4194 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_WOVEN_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4194;
+				iVar1 = Global_262145.f_4194 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_WOVEN_SHIRT */;
 			}
 			else
 			{
@@ -38144,9 +38144,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_7" /* GXT: Salmon Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 7;
-			if (Global_262145.f_4208 != -1)
+			if (Global_262145.f_4208 /* Tunable: DISCOUNT_MALE_SPECIAL_SALMON_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4208;
+				iVar1 = Global_262145.f_4208 /* Tunable: DISCOUNT_MALE_SPECIAL_SALMON_SHIRT */;
 			}
 			else
 			{
@@ -38158,9 +38158,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_8" /* GXT: Pale Olive Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 8;
-			if (Global_262145.f_4204 != -1)
+			if (Global_262145.f_4204 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_OLIVE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4204;
+				iVar1 = Global_262145.f_4204 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_OLIVE_SHIRT */;
 			}
 			else
 			{
@@ -38172,9 +38172,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_9" /* GXT: Fuchsia Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 9;
-			if (Global_262145.f_4197 != -1)
+			if (Global_262145.f_4197 /* Tunable: DISCOUNT_MALE_SPECIAL_FUCHSIA_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4197;
+				iVar1 = Global_262145.f_4197 /* Tunable: DISCOUNT_MALE_SPECIAL_FUCHSIA_SHIRT */;
 			}
 			else
 			{
@@ -38186,9 +38186,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_10" /* GXT: Off-White Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 10;
-			if (Global_262145.f_4202 != -1)
+			if (Global_262145.f_4202 /* Tunable: DISCOUNT_MALE_SPECIAL_OFF_WHITE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4202;
+				iVar1 = Global_262145.f_4202 /* Tunable: DISCOUNT_MALE_SPECIAL_OFF_WHITE_SHIRT */;
 			}
 			else
 			{
@@ -38200,9 +38200,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_11" /* GXT: Mint Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 11;
-			if (Global_262145.f_4200 != -1)
+			if (Global_262145.f_4200 /* Tunable: DISCOUNT_MALE_SPECIAL_MINT_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4200;
+				iVar1 = Global_262145.f_4200 /* Tunable: DISCOUNT_MALE_SPECIAL_MINT_SHIRT */;
 			}
 			else
 			{
@@ -38214,9 +38214,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_12" /* GXT: Blue Striped Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 12;
-			if (Global_262145.f_4192 != -1)
+			if (Global_262145.f_4192 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_STRIPED_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4192;
+				iVar1 = Global_262145.f_4192 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_STRIPED_SHIRT */;
 			}
 			else
 			{
@@ -38228,9 +38228,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_13" /* GXT: Pink Striped Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 13;
-			if (Global_262145.f_4207 != -1)
+			if (Global_262145.f_4207 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_STRIPED_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4207;
+				iVar1 = Global_262145.f_4207 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_STRIPED_SHIRT */;
 			}
 			else
 			{
@@ -38242,9 +38242,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_14" /* GXT: Tan Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 14;
-			if (Global_262145.f_4210 != -1)
+			if (Global_262145.f_4210 /* Tunable: DISCOUNT_MALE_SPECIAL_TAN_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4210;
+				iVar1 = Global_262145.f_4210 /* Tunable: DISCOUNT_MALE_SPECIAL_TAN_SHIRT */;
 			}
 			else
 			{
@@ -38256,9 +38256,9 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 			StringCopy(&Var2, "SP_FMM_10_15" /* GXT: Ocean Stripe Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 15;
-			if (Global_262145.f_4201 != -1)
+			if (Global_262145.f_4201 /* Tunable: DISCOUNT_MALE_SPECIAL_OCEAN_STRIPE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4201;
+				iVar1 = Global_262145.f_4201 /* Tunable: DISCOUNT_MALE_SPECIAL_OCEAN_STRIPE_SHIRT */;
 			}
 			else
 			{
@@ -38630,7 +38630,7 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 		if (func_116(89, -1))
 		{
 			StringCopy(&Var2, "REW_RS" /* GXT: Rockstar V Neck */, 16);
-			iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(1250) * Global_262145.f_2989));
+			iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(1250) * Global_262145.f_2989 /* Tunable: TSHIRT_TRANS_MP_FM_ROCKSTAR_EXPENDITURE_TUNABLE */));
 		}
 		else
 		{
@@ -38640,14 +38640,14 @@ void func_134(int iParam0, int iParam1)//Position - 0x27216
 	else if (iParam0 == 17 || iParam0 == 225)
 	{
 		StringCopy(&Var2, "REW_LSB" /* GXT: Los Santos Belle V Neck */, 16);
-		iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(450) * Global_262145.f_2988));
+		iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(450) * Global_262145.f_2988 /* Tunable: TSHIRT_TRANS_MP_FM_LSBELLE_EXPENDITURE_TUNABLE */));
 	}
 	else if (iParam0 == 28 || iParam0 == 236)
 	{
 		if (func_116(87, -1))
 		{
 			StringCopy(&Var2, "REW_REDSK" /* GXT: Red Skull V Neck */, 16);
-			iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(500) * Global_262145.f_2987));
+			iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(500) * Global_262145.f_2987 /* Tunable: TSHIRT_TRANS_MP_FM_REDSKULL_EXPENDITURE_TUNABLE */));
 		}
 		else
 		{
@@ -40273,7 +40273,7 @@ void func_135(int iParam0, int iParam1)//Position - 0x29709
 		if (func_116(89, -1))
 		{
 			StringCopy(&Var2, "REW_RS" /* GXT: Rockstar V Neck */, 16);
-			iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(1250) * Global_262145.f_2989) * Global_295754.f_16));
+			iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(1250) * Global_262145.f_2989 /* Tunable: TSHIRT_TRANS_MP_FM_ROCKSTAR_EXPENDITURE_TUNABLE */) * Global_295754.f_16));
 		}
 		else
 		{
@@ -40283,14 +40283,14 @@ void func_135(int iParam0, int iParam1)//Position - 0x29709
 	else if (iParam0 == 17)
 	{
 		StringCopy(&Var2, "REW_LSB" /* GXT: Los Santos Belle V Neck */, 16);
-		iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(450) * Global_262145.f_2988) * Global_295754.f_16));
+		iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(450) * Global_262145.f_2988 /* Tunable: TSHIRT_TRANS_MP_FM_LSBELLE_EXPENDITURE_TUNABLE */) * Global_295754.f_16));
 	}
 	else if (iParam0 == 28)
 	{
 		if (func_116(87, -1))
 		{
 			StringCopy(&Var2, "REW_REDSK" /* GXT: Red Skull V Neck */, 16);
-			iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(500) * Global_262145.f_2987) * Global_295754.f_16));
+			iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(500) * Global_262145.f_2987 /* Tunable: TSHIRT_TRANS_MP_FM_REDSKULL_EXPENDITURE_TUNABLE */) * Global_295754.f_16));
 		}
 		else
 		{
@@ -50028,7 +50028,7 @@ void func_280(int iParam0)//Position - 0x355F1
 	}
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (Global_262145.f_2460)
+		if (Global_262145.f_2460 /* Tunable: IS_SALE_ON_IN_TATTOO_SHOP */)
 		{
 			if (GRAPHICS::HAS_STREAMED_TEXTURE_DICT_LOADED("MPShops"))
 			{
@@ -53750,7 +53750,7 @@ int func_334(int iParam0, char* sParam1, int iParam2, int iParam3)//Position - 0
 	{
 		return 0;
 	}
-	if (Global_262145.f_15353)
+	if (Global_262145.f_15353 /* Tunable: SHOULD_ITEM_BE_DISCOUNTED_ALL_TATTOOS */)
 	{
 		return 1;
 	}
@@ -53763,28 +53763,28 @@ int func_334(int iParam0, char* sParam1, int iParam2, int iParam3)//Position - 0
 				break;
 			
 			case 0:
-				if (Global_262145.f_15354)
+				if (Global_262145.f_15354 /* Tunable: SHOULD_ITEM_BE_DISCOUNTED_TORSO_BACK */)
 				{
 					return 1;
 				}
 				break;
 			
 			case 1:
-				if (Global_262145.f_15355)
+				if (Global_262145.f_15355 /* Tunable: SHOULD_ITEM_BE_DISCOUNTED_TORSO_BACK_FULL */)
 				{
 					return 1;
 				}
 				break;
 			
 			case 2:
-				if (Global_262145.f_15356)
+				if (Global_262145.f_15356 /* Tunable: SHOULD_ITEM_BE_DISCOUNTED_TORSO_CHEST */)
 				{
 					return 1;
 				}
 				break;
 			
 			case 3:
-				if (Global_262145.f_15357)
+				if (Global_262145.f_15357 /* Tunable: SHOULD_ITEM_BE_DISCOUNTED_TORSO_STOMACH */)
 				{
 					return 1;
 				}
@@ -53799,35 +53799,35 @@ int func_334(int iParam0, char* sParam1, int iParam2, int iParam3)//Position - 0
 		switch (iParam2)
 		{
 			case 1:
-				if (Global_262145.f_15358)
+				if (Global_262145.f_15358 /* Tunable: SHOULD_ITEM_BE_DISCOUNTED_HEAD */)
 				{
 					return 1;
 				}
 				break;
 			
 			case 2:
-				if (Global_262145.f_15359)
+				if (Global_262145.f_15359 /* Tunable: SHOULD_ITEM_BE_DISCOUNTED_LEFT_ARM */)
 				{
 					return 1;
 				}
 				break;
 			
 			case 3:
-				if (Global_262145.f_15360)
+				if (Global_262145.f_15360 /* Tunable: SHOULD_ITEM_BE_DISCOUNTED_RIGHT_ARM */)
 				{
 					return 1;
 				}
 				break;
 			
 			case 4:
-				if (Global_262145.f_15361)
+				if (Global_262145.f_15361 /* Tunable: SHOULD_ITEM_BE_DISCOUNTED_LEFT_LEG */)
 				{
 					return 1;
 				}
 				break;
 			
 			case 5:
-				if (Global_262145.f_15362)
+				if (Global_262145.f_15362 /* Tunable: SHOULD_ITEM_BE_DISCOUNTED_RIGHT_LEG */)
 				{
 					return 1;
 				}
@@ -55943,7 +55943,7 @@ int func_361()//Position - 0x3DFB3
 	{
 		if (func_362())
 		{
-			iVar0 = (iVar0 + Global_262145.f_132);
+			iVar0 = (iVar0 + Global_262145.f_132 /* Tunable: SHOP_GOODBOY_DISCOUNT_PERCENT */);
 		}
 	}
 	return iVar0;
@@ -55966,7 +55966,7 @@ int func_362()//Position - 0x3DFD9
 			iVar0 = func_364();
 			iVar1 = func_363();
 			fVar2 = ((SYSTEM::TO_FLOAT(iVar1) / SYSTEM::TO_FLOAT(iVar0)) * 100f);
-			if (fVar2 > IntToFloat(Global_262145.f_131) && iVar0 >= 8)
+			if (fVar2 > IntToFloat(Global_262145.f_131 /* Tunable: SHOP_DISCOUNT_PERCENT */) && iVar0 >= 8)
 			{
 				return 1;
 			}
@@ -60281,7 +60281,7 @@ int func_396(int iParam0, int iParam1, int iParam2)//Position - 0x3F7DF
 			{
 				case joaat("MP_exec_prizes_015_M"):
 				case joaat("MP_exec_prizes_015_F"):
-					if (func_623(7551, -1) || func_16(3792, -1, 0) >= Global_262145.f_16823)
+					if (func_623(7551, -1) || func_16(3792, -1, 0) >= Global_262145.f_16823 /* Tunable: DCTL_WIN_COUNT_REWARD */)
 					{
 						return 0;
 					}
@@ -60811,7 +60811,7 @@ int func_396(int iParam0, int iParam1, int iParam2)//Position - 0x3F7DF
 					return !func_623(3593, -1);
 					break;
 			}
-			if (!Global_262145.f_8258 && !func_404(iParam2, iParam1, 0))
+			if (!Global_262145.f_8258 /* Tunable: TOGGLE_ACTIVATE_INDEPENDENCE_PACK */ && !func_404(iParam2, iParam1, 0))
 			{
 				return 1;
 			}
@@ -60938,7 +60938,7 @@ int func_396(int iParam0, int iParam1, int iParam2)//Position - 0x3F7DF
 			break;
 		
 		case joaat("mpValentines_overlays"):
-			if ((!Global_262145.f_7058 && !func_116(iParam2, -1)) && !Global_262145.f_12031)
+			if ((!Global_262145.f_7058 /* Tunable: TURN_ON_VALENTINES_EVENT */ && !func_116(iParam2, -1)) && !Global_262145.f_12031 /* Tunable: TURN_ON_VALENTINE_CLOTHING */)
 			{
 				return 1;
 			}
@@ -65812,7 +65812,7 @@ int func_422()//Position - 0x4874D
 			func_560(&(Var0.f_7), Var0);
 			if ((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && func_352(Local_70.f_498, -1)) && !func_343(Var0))
 			{
-				Var0.f_7 = Global_262145.f_8261;
+				Var0.f_7 = Global_262145.f_8261 /* Tunable: PURCHASED_TATTOO_APPLICATION_FEE */;
 				bVar2 = true;
 				bVar3 = true;
 			}
@@ -67682,7 +67682,7 @@ void func_465(struct<67> Param0, var uParam1, var uParam2, var uParam3, var uPar
 	Var0.f_2 = { Param0.f_66 };
 	Var0.f_2.f_33 = iParam19;
 	iVar1 = func_467(Var0.f_1);
-	if ((Global_262145.f_24104 && !Global_262145.f_24105) && !Global_262145.f_24106)
+	if ((Global_262145.f_24104 /* Tunable: BLOCK_NS_TRANS */ && !Global_262145.f_24105 /* Tunable: SC_RUN_TRANS */) && !Global_262145.f_24106 /* Tunable: BG_RUN_TRANS */)
 	{
 		return;
 	}
@@ -69335,25 +69335,25 @@ int func_498(int iParam0)//Position - 0x4CA73
 	int iVar0;
 	
 	iVar0 = -1;
-	if (iParam0 == Global_262145.f_31615)
+	if (iParam0 == Global_262145.f_31615 /* Tunable: TUNER_CARCLUB_LEVEL_BRACKET_5 */)
 	{
-		iVar0 = Global_262145.f_31610;
+		iVar0 = Global_262145.f_31610 /* Tunable: TUNER_CARCLUB_REWARDS_CASH_BRACKET_5 */;
 	}
-	else if (iParam0 >= Global_262145.f_31613 + 1 && iParam0 <= Global_262145.f_31614)
+	else if (iParam0 >= Global_262145.f_31613 /* Tunable: TUNER_CARCLUB_LEVEL_BRACKET_3 */ + 1 && iParam0 <= Global_262145.f_31614 /* Tunable: TUNER_CARCLUB_LEVEL_BRACKET_4 */)
 	{
-		iVar0 = Global_262145.f_31609;
+		iVar0 = Global_262145.f_31609 /* Tunable: TUNER_CARCLUB_REWARDS_CASH_BRACKET_4 */;
 	}
-	else if (iParam0 >= Global_262145.f_31612 + 1 && iParam0 <= Global_262145.f_31613)
+	else if (iParam0 >= Global_262145.f_31612 /* Tunable: TUNER_CARCLUB_LEVEL_BRACKET_2 */ + 1 && iParam0 <= Global_262145.f_31613 /* Tunable: TUNER_CARCLUB_LEVEL_BRACKET_3 */)
 	{
-		iVar0 = Global_262145.f_31608;
+		iVar0 = Global_262145.f_31608 /* Tunable: TUNER_CARCLUB_REWARDS_CASH_BRACKET_3 */;
 	}
-	else if (iParam0 >= Global_262145.f_31611 + 1 && iParam0 <= Global_262145.f_31612)
+	else if (iParam0 >= Global_262145.f_31611 /* Tunable: TUNER_CARCLUB_LEVEL_BRACKET_1 */ + 1 && iParam0 <= Global_262145.f_31612 /* Tunable: TUNER_CARCLUB_LEVEL_BRACKET_2 */)
 	{
-		iVar0 = Global_262145.f_31607;
+		iVar0 = Global_262145.f_31607 /* Tunable: TUNER_CARCLUB_REWARDS_CASH_BRACKET_2 */;
 	}
-	else if (iParam0 >= 2 && iParam0 <= Global_262145.f_31611)
+	else if (iParam0 >= 2 && iParam0 <= Global_262145.f_31611 /* Tunable: TUNER_CARCLUB_LEVEL_BRACKET_1 */)
 	{
-		iVar0 = Global_262145.f_31606;
+		iVar0 = Global_262145.f_31606 /* Tunable: TUNER_CARCLUB_REWARDS_CASH_BRACKET_1 */;
 	}
 	return iVar0;
 }
@@ -69546,1134 +69546,1134 @@ int func_502(int iParam0)//Position - 0x4CE01
 	iVar1 = NETWORK::GET_CLOUD_TIME_AS_INT();
 	if (iParam0 == joaat("btype3"))
 	{
-		if ((!Global_262145.f_7058 && !Global_262145.f_13394) && iVar1 < Global_262145.f_13395)
+		if ((!Global_262145.f_7058 /* Tunable: TURN_ON_VALENTINES_EVENT */ && !Global_262145.f_13394 /* Tunable: TURN_ON_VALENTINE_2016_VEHICLE */) && iVar1 < Global_262145.f_13395 /* Tunable: TURN_ON_VALENTINE_2016_VEHICLE_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	if (iParam0 == joaat("faction3"))
 	{
-		if (!Global_262145.f_14734 && iVar1 < Global_262145.f_14746)
+		if (!Global_262145.f_14734 /* Tunable: ENABLE_LOWRIDER2_FACTION */ && iVar1 < Global_262145.f_14746 /* Tunable: ENABLE_LOWRIDER2_FACTION_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("virgo3") || iParam0 == joaat("virgo2"))
 	{
-		if (!Global_262145.f_14730 && iVar1 < Global_262145.f_14742)
+		if (!Global_262145.f_14730 /* Tunable: ENABLE_LOWRIDER2_VIRGO3 */ && iVar1 < Global_262145.f_14742 /* Tunable: ENABLE_LOWRIDER2_VIRGO3_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("sabregt2"))
 	{
-		if (!Global_262145.f_14731 && iVar1 < Global_262145.f_14743)
+		if (!Global_262145.f_14731 /* Tunable: ENABLE_LOWRIDER2_SABREGT */ && iVar1 < Global_262145.f_14743 /* Tunable: ENABLE_LOWRIDER2_SABREGT_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tornado5"))
 	{
-		if (!Global_262145.f_14732 && iVar1 < Global_262145.f_14744)
+		if (!Global_262145.f_14732 /* Tunable: ENABLE_LOWRIDER2_TORNADO5 */ && iVar1 < Global_262145.f_14744 /* Tunable: ENABLE_LOWRIDER2_TORNADO5_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("minivan2"))
 	{
-		if (!Global_262145.f_14733 && iVar1 < Global_262145.f_14745)
+		if (!Global_262145.f_14733 /* Tunable: ENABLE_LOWRIDER2_MINIVAN */ && iVar1 < Global_262145.f_14745 /* Tunable: ENABLE_LOWRIDER2_MINIVAN_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("slamvan3"))
 	{
-		if (!Global_262145.f_14735 && iVar1 < Global_262145.f_14747)
+		if (!Global_262145.f_14735 /* Tunable: ENABLE_LOWRIDER2_SLAMVAN */ && iVar1 < Global_262145.f_14747 /* Tunable: ENABLE_LOWRIDER2_SLAMVAN_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	if (iParam0 == joaat("prototipo"))
 	{
-		if (!Global_262145.f_14736 && iVar1 < Global_262145.f_14739)
+		if (!Global_262145.f_14736 /* Tunable: ENABLEEXEC1_GROTTI_PROTO */ && iVar1 < Global_262145.f_14739 /* Tunable: ENABLEEXEC1_GROTTI_PROTO_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("seven70"))
 	{
-		if (!Global_262145.f_14737 && iVar1 < Global_262145.f_14740)
+		if (!Global_262145.f_14737 /* Tunable: ENABLEEXEC1_DEWBAUCHEE */ && iVar1 < Global_262145.f_14740 /* Tunable: ENABLEEXEC1_DEWBAUCHEE_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("pfister811"))
 	{
-		if (!Global_262145.f_14738 && iVar1 < Global_262145.f_14741)
+		if (!Global_262145.f_14738 /* Tunable: ENABLEEXEC1_PFISTER */ && iVar1 < Global_262145.f_14741 /* Tunable: ENABLEEXEC1_PFISTER_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	if (iParam0 == joaat("bf400"))
 	{
-		if (!Global_262145.f_17368 && iVar1 < Global_262145.f_17333)
+		if (!Global_262145.f_17368 /* Tunable: ENABLESTUNT_BF400 */ && iVar1 < Global_262145.f_17333 /* Tunable: ENABLESTUNT_BF400_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("brioso"))
 	{
-		if (!Global_262145.f_17363 && iVar1 < Global_262145.f_17328)
+		if (!Global_262145.f_17363 /* Tunable: ENABLESTUNT_BRIOSO_RA */ && iVar1 < Global_262145.f_17328 /* Tunable: ENABLESTUNT_BRIOSO_RA_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("cliffhanger"))
 	{
-		if (!Global_262145.f_17367 && iVar1 < Global_262145.f_17332)
+		if (!Global_262145.f_17367 /* Tunable: ENABLESTUNT_CLIFFHANGER */ && iVar1 < Global_262145.f_17332 /* Tunable: ENABLESTUNT_CLIFFHANGER_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("contender"))
 	{
-		if (!Global_262145.f_17366 && iVar1 < Global_262145.f_17331)
+		if (!Global_262145.f_17366 /* Tunable: ENABLESTUNT_CONTENDER */ && iVar1 < Global_262145.f_17331 /* Tunable: ENABLESTUNT_CONTENDER_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("le7b"))
 	{
-		if (!Global_262145.f_17360 && iVar1 < Global_262145.f_17325)
+		if (!Global_262145.f_17360 /* Tunable: ENABLESTUNT_LE7B */ && iVar1 < Global_262145.f_17325 /* Tunable: ENABLESTUNT_LE7B_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("omnis"))
 	{
-		if (!Global_262145.f_17361 && iVar1 < Global_262145.f_17326)
+		if (!Global_262145.f_17361 /* Tunable: ENABLESTUNT_OMNIS */ && iVar1 < Global_262145.f_17326 /* Tunable: ENABLESTUNT_OMNIS_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("trophytruck"))
 	{
-		if (!Global_262145.f_17364 && iVar1 < Global_262145.f_17329)
+		if (!Global_262145.f_17364 /* Tunable: ENABLESTUNT_TROPHY_TRUCK */ && iVar1 < Global_262145.f_17329 /* Tunable: ENABLESTUNT_TROPHY_TRUCK_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("trophytruck2"))
 	{
-		if (!Global_262145.f_17365 && iVar1 < Global_262145.f_17330)
+		if (!Global_262145.f_17365 /* Tunable: ENABLESTUNT_TROPHY_CAR */ && iVar1 < Global_262145.f_17330 /* Tunable: ENABLESTUNT_TROPHY_CAR_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tropos"))
 	{
-		if (!Global_262145.f_17362 && iVar1 < Global_262145.f_17327)
+		if (!Global_262145.f_17362 /* Tunable: ENABLESTUNT_TROPOS_RALLYE */ && iVar1 < Global_262145.f_17327 /* Tunable: ENABLESTUNT_TROPOS_RALLYE_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("gargoyle"))
 	{
-		if (!Global_262145.f_17370 && iVar1 < Global_262145.f_17335)
+		if (!Global_262145.f_17370 /* Tunable: ENABLESTUNT_GARGOYLE */ && iVar1 < Global_262145.f_17335 /* Tunable: ENABLESTUNT_GARGOYLE_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("rallytruck"))
 	{
-		if (!Global_262145.f_17371 && iVar1 < Global_262145.f_17336)
+		if (!Global_262145.f_17371 /* Tunable: ENABLESTUNT_RALLY_TRUCK */ && iVar1 < Global_262145.f_17336 /* Tunable: ENABLESTUNT_RALLY_TRUCK_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tampa2"))
 	{
-		if (!Global_262145.f_17359 && iVar1 < Global_262145.f_17324)
+		if (!Global_262145.f_17359 /* Tunable: ENABLESTUNT_DRIFT_TAMPA */ && iVar1 < Global_262145.f_17324 /* Tunable: ENABLESTUNT_DRIFT_TAMPA_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tyrus"))
 	{
-		if (!Global_262145.f_17358 && iVar1 < Global_262145.f_17323)
+		if (!Global_262145.f_17358 /* Tunable: ENABLESTUNT_TYRUS */ && iVar1 < Global_262145.f_17323 /* Tunable: ENABLESTUNT_TYRUS_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("sheava"))
 	{
-		if (!Global_262145.f_17357 && iVar1 < Global_262145.f_17322)
+		if (!Global_262145.f_17357 /* Tunable: ENABLESTUNT_ET1 */ && iVar1 < Global_262145.f_17322 /* Tunable: ENABLESTUNT_ET1_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("lynx"))
 	{
-		if (!Global_262145.f_17369 && iVar1 < Global_262145.f_17334)
+		if (!Global_262145.f_17369 /* Tunable: ENABLESTUNT_LYNX */ && iVar1 < Global_262145.f_17334 /* Tunable: ENABLESTUNT_LYNX_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("stalion2"))
 	{
-		if (!Global_262145.f_17372 && iVar1 < Global_262145.f_17337)
+		if (!Global_262145.f_17372 /* Tunable: ENABLESTUNT_STALLION */ && iVar1 < Global_262145.f_17337 /* Tunable: ENABLESTUNT_STALLION_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("gauntlet2"))
 	{
-		if (!Global_262145.f_17373 && iVar1 < Global_262145.f_17338)
+		if (!Global_262145.f_17373 /* Tunable: ENABLESTUNT_GAUNTLET */ && iVar1 < Global_262145.f_17338 /* Tunable: ENABLESTUNT_GAUNTLET_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("dominator2"))
 	{
-		if (!Global_262145.f_17374 && iVar1 < Global_262145.f_17339)
+		if (!Global_262145.f_17374 /* Tunable: ENABLESTUNT_DOMINATOR */ && iVar1 < Global_262145.f_17339 /* Tunable: ENABLESTUNT_DOMINATOR_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("buffalo3"))
 	{
-		if (!Global_262145.f_17375 && iVar1 < Global_262145.f_17340)
+		if (!Global_262145.f_17375 /* Tunable: ENABLESTUNT_BUFFALO */ && iVar1 < Global_262145.f_17340 /* Tunable: ENABLESTUNT_BUFFALO_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	if (iParam0 == joaat("defiler"))
 	{
-		if (!Global_262145.f_17522 && iVar1 < Global_262145.f_17544)
+		if (!Global_262145.f_17522 /* Tunable: ENABLE_BIKER_DEFILER */ && iVar1 < Global_262145.f_17544 /* Tunable: ENABLE_BIKER_DEFILER_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("nightblade"))
 	{
-		if (!Global_262145.f_17523 && iVar1 < Global_262145.f_17545)
+		if (!Global_262145.f_17523 /* Tunable: ENABLE_BIKER_NIGHTBLADE */ && iVar1 < Global_262145.f_17545 /* Tunable: ENABLE_BIKER_NIGHTBLADE_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("zombiea"))
 	{
-		if (!Global_262145.f_17524 && iVar1 < Global_262145.f_17546)
+		if (!Global_262145.f_17524 /* Tunable: ENABLE_BIKER_ZOMBIEA */ && iVar1 < Global_262145.f_17546 /* Tunable: ENABLE_BIKER_ZOMBIEA_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("esskey"))
 	{
-		if (!Global_262145.f_17525 && iVar1 < Global_262145.f_17547)
+		if (!Global_262145.f_17525 /* Tunable: ENABLE_BIKER_ESSKEY */ && iVar1 < Global_262145.f_17547 /* Tunable: ENABLE_BIKER_ESSKEY_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("avarus"))
 	{
-		if (!Global_262145.f_17526 && iVar1 < Global_262145.f_17548)
+		if (!Global_262145.f_17526 /* Tunable: ENABLE_BIKER_AVARUS */ && iVar1 < Global_262145.f_17548 /* Tunable: ENABLE_BIKER_AVARUS_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("zombieb"))
 	{
-		if (!Global_262145.f_17527 && iVar1 < Global_262145.f_17549)
+		if (!Global_262145.f_17527 /* Tunable: ENABLE_BIKER_ZOMBIEB */ && iVar1 < Global_262145.f_17549 /* Tunable: ENABLE_BIKER_ZOMBIEB_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("hakuchou2"))
 	{
-		if (!Global_262145.f_17529 && iVar1 < Global_262145.f_17550)
+		if (!Global_262145.f_17529 /* Tunable: ENABLE_BIKER_HAKUCHOU2 */ && iVar1 < Global_262145.f_17550 /* Tunable: ENABLE_BIKER_HAKUCHOU2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("vortex"))
 	{
-		if (!Global_262145.f_17530 && iVar1 < Global_262145.f_17551)
+		if (!Global_262145.f_17530 /* Tunable: ENABLE_BIKER_VORTEX */ && iVar1 < Global_262145.f_17551 /* Tunable: ENABLE_BIKER_VORTEX_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("shotaro"))
 	{
-		if (!Global_262145.f_17531 && iVar1 < Global_262145.f_17552)
+		if (!Global_262145.f_17531 /* Tunable: ENABLE_BIKER_SHOTARO */ && iVar1 < Global_262145.f_17552 /* Tunable: ENABLE_BIKER_SHOTARO_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("chimera"))
 	{
-		if (!Global_262145.f_17532 && iVar1 < Global_262145.f_17553)
+		if (!Global_262145.f_17532 /* Tunable: ENABLE_BIKER_CHIMERA */ && iVar1 < Global_262145.f_17553 /* Tunable: ENABLE_BIKER_CHIMERA_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("raptor"))
 	{
-		if (!Global_262145.f_17533 && iVar1 < Global_262145.f_17554)
+		if (!Global_262145.f_17533 /* Tunable: ENABLE_BIKER_RAPTOR */ && iVar1 < Global_262145.f_17554 /* Tunable: ENABLE_BIKER_RAPTOR_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("daemon2"))
 	{
-		if (!Global_262145.f_17534 && iVar1 < Global_262145.f_17555)
+		if (!Global_262145.f_17534 /* Tunable: ENABLE_BIKER_WESTERNDAEMON */ && iVar1 < Global_262145.f_17555 /* Tunable: ENABLE_BIKER_WESTERNDAEMON_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("blazer4"))
 	{
-		if (!Global_262145.f_17535 && iVar1 < Global_262145.f_17556)
+		if (!Global_262145.f_17535 /* Tunable: ENABLE_BIKER_BLAZER4 */ && iVar1 < Global_262145.f_17556 /* Tunable: ENABLE_BIKER_BLAZER4_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tornado6"))
 	{
-		if (!Global_262145.f_17541 && iVar1 < Global_262145.f_17563)
+		if (!Global_262145.f_17541 /* Tunable: ENABLE_BIKER_TORNADO6 */ && iVar1 < Global_262145.f_17563 /* Tunable: ENABLE_BIKER_TORNADO6_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("youga2"))
 	{
-		if (!Global_262145.f_17538 && iVar1 < Global_262145.f_17559)
+		if (!Global_262145.f_17538 /* Tunable: ENABLE_BIKER_YOUGA2 */ && iVar1 < Global_262145.f_17559 /* Tunable: ENABLE_BIKER_YOUGA2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("wolfsbane"))
 	{
-		if (!Global_262145.f_17539 && iVar1 < Global_262145.f_17560)
+		if (!Global_262145.f_17539 /* Tunable: ENABLE_BIKER_WOLFSBANE */ && iVar1 < Global_262145.f_17560 /* Tunable: ENABLE_BIKER_WOLFSBANE_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("faggio3"))
 	{
-		if (!Global_262145.f_17540 && iVar1 < Global_262145.f_17561)
+		if (!Global_262145.f_17540 /* Tunable: ENABLE_BIKER_FAGGIO3 */ && iVar1 < Global_262145.f_17561 /* Tunable: ENABLE_BIKER_FAGGIO3_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("faggio"))
 	{
-		if (!Global_262145.f_17528 && iVar1 < Global_262145.f_17562)
+		if (!Global_262145.f_17528 /* Tunable: ENABLE_BIKER_FAGGIO */ && iVar1 < Global_262145.f_17562 /* Tunable: ENABLE_BIKER_FAGGIO_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("bagger"))
 	{
-		if (!Global_262145.f_17542 && iVar1 < Global_262145.f_17564)
+		if (!Global_262145.f_17542 /* Tunable: ENABLE_BIKER_BAGGER */ && iVar1 < Global_262145.f_17564 /* Tunable: ENABLE_BIKER_BAGGER_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("sanctus"))
 	{
-		if (!Global_262145.f_17536 && iVar1 < Global_262145.f_17557)
+		if (!Global_262145.f_17536 /* Tunable: ENABLE_BIKER_SANCTUS */ && iVar1 < Global_262145.f_17557 /* Tunable: ENABLE_BIKER_SANCTUS_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("manchez"))
 	{
-		if (!Global_262145.f_17537 && iVar1 < Global_262145.f_17558)
+		if (!Global_262145.f_17537 /* Tunable: ENABLE_BIKER_MANCHEZ */ && iVar1 < Global_262145.f_17558 /* Tunable: ENABLE_BIKER_MANCHEZ_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("ratbike"))
 	{
-		if (!Global_262145.f_17543 && iVar1 < Global_262145.f_17565)
+		if (!Global_262145.f_17543 /* Tunable: ENABLE_BIKER_RATBIKE */ && iVar1 < Global_262145.f_17565 /* Tunable: ENABLE_BIKER_RATBIKE_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	if (iParam0 == joaat("voltic2"))
 	{
-		if (!Global_262145.f_19176 && iVar1 < Global_262145.f_19273)
+		if (!Global_262145.f_19176 /* Tunable: ENABLE_IE_VOLTIC2 */ && iVar1 < Global_262145.f_19273 /* Tunable: ENABLE_IE_VOLTIC2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("ruiner2"))
 	{
-		if (!Global_262145.f_19177 && iVar1 < Global_262145.f_19274)
+		if (!Global_262145.f_19177 /* Tunable: ENABLE_IE_RUINER2 */ && iVar1 < Global_262145.f_19274 /* Tunable: ENABLE_IE_RUINER2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("dune4"))
 	{
-		if (!Global_262145.f_19178 && iVar1 < Global_262145.f_19275)
+		if (!Global_262145.f_19178 /* Tunable: ENABLE_IE_DUNE4 */ && iVar1 < Global_262145.f_19275 /* Tunable: ENABLE_IE_DUNE4_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("dune5"))
 	{
-		if (!Global_262145.f_19179 && iVar1 < Global_262145.f_19276)
+		if (!Global_262145.f_19179 /* Tunable: ENABLE_IE_DUNE5 */ && iVar1 < Global_262145.f_19276 /* Tunable: ENABLE_IE_DUNE5_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("phantom2"))
 	{
-		if (!Global_262145.f_19180 && iVar1 < Global_262145.f_19277)
+		if (!Global_262145.f_19180 /* Tunable: ENABLE_IE_PHANTOM2 */ && iVar1 < Global_262145.f_19277 /* Tunable: ENABLE_IE_PHANTOM2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("technical2"))
 	{
-		if (!Global_262145.f_19181 && iVar1 < Global_262145.f_19278)
+		if (!Global_262145.f_19181 /* Tunable: ENABLE_IE_TECHNICAL2 */ && iVar1 < Global_262145.f_19278 /* Tunable: ENABLE_IE_TECHNICAL2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("boxville5"))
 	{
-		if (!Global_262145.f_19182 && iVar1 < Global_262145.f_19279)
+		if (!Global_262145.f_19182 /* Tunable: ENABLE_IE_BOXVILLE5 */ && iVar1 < Global_262145.f_19279 /* Tunable: ENABLE_IE_BOXVILLE5_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("wastelander"))
 	{
-		if (!Global_262145.f_19183 && iVar1 < Global_262145.f_19280)
+		if (!Global_262145.f_19183 /* Tunable: ENABLE_IE_WASTELANDER */ && iVar1 < Global_262145.f_19280 /* Tunable: ENABLE_IE_WASTELANDER_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("blazer5"))
 	{
-		if (!Global_262145.f_19184 && iVar1 < Global_262145.f_19281)
+		if (!Global_262145.f_19184 /* Tunable: ENABLE_IE_BLAZER5 */ && iVar1 < Global_262145.f_19281 /* Tunable: ENABLE_IE_BLAZER5_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("comet2"))
 	{
-		if (!Global_262145.f_19185 && iVar1 < Global_262145.f_19282)
+		if (!Global_262145.f_19185 /* Tunable: ENABLE_IE_COMET2 */ && iVar1 < Global_262145.f_19282 /* Tunable: ENABLE_IE_COMET2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("comet3"))
 	{
-		if (!Global_262145.f_19186 && iVar1 < Global_262145.f_19283)
+		if (!Global_262145.f_19186 /* Tunable: ENABLE_IE_COMET3 */ && iVar1 < Global_262145.f_19283 /* Tunable: ENABLE_IE_COMET3_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("diablous"))
 	{
-		if (!Global_262145.f_19187 && iVar1 < Global_262145.f_19284)
+		if (!Global_262145.f_19187 /* Tunable: ENABLE_IE_DIABLOUS */ && iVar1 < Global_262145.f_19284 /* Tunable: ENABLE_IE_DIABLOUS_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("diablous2"))
 	{
-		if (!Global_262145.f_19188 && iVar1 < Global_262145.f_19285)
+		if (!Global_262145.f_19188 /* Tunable: ENABLE_IE_DIABLOUS2 */ && iVar1 < Global_262145.f_19285 /* Tunable: ENABLE_IE_DIABLOUS2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("elegy"))
 	{
-		if (!Global_262145.f_19189 && iVar1 < Global_262145.f_19286)
+		if (!Global_262145.f_19189 /* Tunable: ENABLE_IE_ELEGY */ && iVar1 < Global_262145.f_19286 /* Tunable: ENABLE_IE_ELEGY_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("elegy2"))
 	{
-		if (!Global_262145.f_19190 && iVar1 < Global_262145.f_19287)
+		if (!Global_262145.f_19190 /* Tunable: ENABLE_IE_ELEGY2 */ && iVar1 < Global_262145.f_19287 /* Tunable: ENABLE_IE_ELEGY2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("fcr"))
 	{
-		if (!Global_262145.f_19191 && iVar1 < Global_262145.f_19288)
+		if (!Global_262145.f_19191 /* Tunable: ENABLE_IE_FCR */ && iVar1 < Global_262145.f_19288 /* Tunable: ENABLE_IE_FCR_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("fcr2"))
 	{
-		if (!Global_262145.f_19192 && iVar1 < Global_262145.f_19289)
+		if (!Global_262145.f_19192 /* Tunable: ENABLE_IE_FCR2 */ && iVar1 < Global_262145.f_19289 /* Tunable: ENABLE_IE_FCR2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("italigtb"))
 	{
-		if (!Global_262145.f_19193 && iVar1 < Global_262145.f_19290)
+		if (!Global_262145.f_19193 /* Tunable: ENABLE_IE_ITALIGTB */ && iVar1 < Global_262145.f_19290 /* Tunable: ENABLE_IE_ITALIGTB_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("italigtb2"))
 	{
-		if (!Global_262145.f_19194 && iVar1 < Global_262145.f_19291)
+		if (!Global_262145.f_19194 /* Tunable: ENABLE_IE_ITALIGTB2 */ && iVar1 < Global_262145.f_19291 /* Tunable: ENABLE_IE_ITALIGTB2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("nero"))
 	{
-		if (!Global_262145.f_19195 && iVar1 < Global_262145.f_19292)
+		if (!Global_262145.f_19195 /* Tunable: ENABLE_IE_NERO */ && iVar1 < Global_262145.f_19292 /* Tunable: ENABLE_IE_NERO_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("nero2"))
 	{
-		if (!Global_262145.f_19196 && iVar1 < Global_262145.f_19293)
+		if (!Global_262145.f_19196 /* Tunable: ENABLE_IE_NERO2 */ && iVar1 < Global_262145.f_19293 /* Tunable: ENABLE_IE_NERO2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("penetrator"))
 	{
-		if (!Global_262145.f_19197 && iVar1 < Global_262145.f_19294)
+		if (!Global_262145.f_19197 /* Tunable: ENABLE_IE_PENETRATOR */ && iVar1 < Global_262145.f_19294 /* Tunable: ENABLE_IE_PENETRATOR_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("specter"))
 	{
-		if (!Global_262145.f_19198 && iVar1 < Global_262145.f_19295)
+		if (!Global_262145.f_19198 /* Tunable: ENABLE_IE_SPECTER */ && iVar1 < Global_262145.f_19295 /* Tunable: ENABLE_IE_SPECTER_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("specter2"))
 	{
-		if (!Global_262145.f_19199 && iVar1 < Global_262145.f_19296)
+		if (!Global_262145.f_19199 /* Tunable: ENABLE_IE_SPECTER2 */ && iVar1 < Global_262145.f_19296 /* Tunable: ENABLE_IE_SPECTER2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tempesta"))
 	{
-		if (!Global_262145.f_19200 && iVar1 < Global_262145.f_19297)
+		if (!Global_262145.f_19200 /* Tunable: ENABLE_IE_TEMPESTA */ && iVar1 < Global_262145.f_19297 /* Tunable: ENABLE_IE_TEMPESTA_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	if (iParam0 == joaat("gp1"))
 	{
-		if (!Global_262145.f_20257 && iVar1 < Global_262145.f_20253)
+		if (!Global_262145.f_20257 /* Tunable: ENABLEGP1 */ && iVar1 < Global_262145.f_20253 /* Tunable: LAUNCHPOSIXGP1 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("infernus2"))
 	{
-		if (!Global_262145.f_20258 && iVar1 < Global_262145.f_20254)
+		if (!Global_262145.f_20258 /* Tunable: ENABLEINFERNUS2 */ && iVar1 < Global_262145.f_20254 /* Tunable: LAUNCHPOSIXINFERNUS2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("ruston"))
 	{
-		if (!Global_262145.f_20259 && iVar1 < Global_262145.f_20255)
+		if (!Global_262145.f_20259 /* Tunable: ENABLERUSTON */ && iVar1 < Global_262145.f_20255 /* Tunable: LAUNCHPOSIXRUSTON */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("turismo2"))
 	{
-		if (!Global_262145.f_20260 && iVar1 < Global_262145.f_20256)
+		if (!Global_262145.f_20260 /* Tunable: ENABLETURISMO2 */ && iVar1 < Global_262145.f_20256 /* Tunable: LAUNCHPOSIXTURISMO2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	if (iParam0 == joaat("xa21"))
 	{
-		if (!Global_262145.f_21138 && iVar1 < Global_262145.f_21146)
+		if (!Global_262145.f_21138 /* Tunable: ENABLE_XA21 */ && iVar1 < Global_262145.f_21146 /* Tunable: LAUNCHPOSIX_XA21 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("cheetah2"))
 	{
-		if (!Global_262145.f_21139 && iVar1 < Global_262145.f_21147)
+		if (!Global_262145.f_21139 /* Tunable: ENABLE_CHEETAH2 */ && iVar1 < Global_262145.f_21147 /* Tunable: LAUNCHPOSIX_CHEETAH2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("torero"))
 	{
-		if (!Global_262145.f_21140 && iVar1 < Global_262145.f_21148)
+		if (!Global_262145.f_21140 /* Tunable: ENABLE_TORERO */ && iVar1 < Global_262145.f_21148 /* Tunable: LAUNCHPOSIX_TORERO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("vagner"))
 	{
-		if (!Global_262145.f_21141 && iVar1 < Global_262145.f_21149)
+		if (!Global_262145.f_21141 /* Tunable: ENABLE_VAGNER */ && iVar1 < Global_262145.f_21149 /* Tunable: LAUNCHPOSIX_VAGNER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("ardent"))
 	{
-		if (!Global_262145.f_21142 && iVar1 < Global_262145.f_21150)
+		if (!Global_262145.f_21142 /* Tunable: ENABLE_ARDENT */ && iVar1 < Global_262145.f_21150 /* Tunable: LAUNCHPOSIX_ARDENT */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("nightshark"))
 	{
-		if (!Global_262145.f_21143 && iVar1 < Global_262145.f_21151)
+		if (!Global_262145.f_21143 /* Tunable: ENABLE_NIGHTSHARK */ && iVar1 < Global_262145.f_21151 /* Tunable: LAUNCHPOSIX_NIGHTSHARK */)
 		{
 			iVar0 = 0;
 		}
 	}
 	if (iParam0 == joaat("microlight"))
 	{
-		if (!Global_262145.f_21921 && iVar1 < Global_262145.f_21941)
+		if (!Global_262145.f_21921 /* Tunable: ENABLE_ULTRALIGHT */ && iVar1 < Global_262145.f_21941 /* Tunable: LAUNCHPOSIX_ULTRALIGHT */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("mogul"))
 	{
-		if (!Global_262145.f_21933 && iVar1 < Global_262145.f_21953)
+		if (!Global_262145.f_21933 /* Tunable: ENABLE_MOGUL */ && iVar1 < Global_262145.f_21953 /* Tunable: LAUNCHPOSIX_MOGUL */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("rogue"))
 	{
-		if (!Global_262145.f_21924 && iVar1 < Global_262145.f_21944)
+		if (!Global_262145.f_21924 /* Tunable: ENABLE_ROGUE */ && iVar1 < Global_262145.f_21944 /* Tunable: LAUNCHPOSIX_ROGUE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("starling"))
 	{
-		if (!Global_262145.f_21934 && iVar1 < Global_262145.f_21954)
+		if (!Global_262145.f_21934 /* Tunable: ENABLE_STARLING */ && iVar1 < Global_262145.f_21954 /* Tunable: LAUNCHPOSIX_STARLING */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("seabreeze"))
 	{
-		if (!Global_262145.f_21922 && iVar1 < Global_262145.f_21942)
+		if (!Global_262145.f_21922 /* Tunable: ENABLE_SEABREEZE */ && iVar1 < Global_262145.f_21942 /* Tunable: LAUNCHPOSIX_SEABREEZE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tula"))
 	{
-		if (!Global_262145.f_21938 && iVar1 < Global_262145.f_21958)
+		if (!Global_262145.f_21938 /* Tunable: ENABLE_TULA */ && iVar1 < Global_262145.f_21958 /* Tunable: LAUNCHPOSIX_TULA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("pyro"))
 	{
-		if (!Global_262145.f_21936 && iVar1 < Global_262145.f_21956)
+		if (!Global_262145.f_21936 /* Tunable: ENABLE_PYRO */ && iVar1 < Global_262145.f_21956 /* Tunable: LAUNCHPOSIX_PYRO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("molotok"))
 	{
-		if (!Global_262145.f_21937 && iVar1 < Global_262145.f_21957)
+		if (!Global_262145.f_21937 /* Tunable: ENABLE_MOLOTOK */ && iVar1 < Global_262145.f_21957 /* Tunable: LAUNCHPOSIX_MOLOTOK */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("nokota"))
 	{
-		if (!Global_262145.f_21932 && iVar1 < Global_262145.f_21952)
+		if (!Global_262145.f_21932 /* Tunable: ENABLE_NOKOTA */ && iVar1 < Global_262145.f_21952 /* Tunable: LAUNCHPOSIX_NOKOTA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("bombushka"))
 	{
-		if (!Global_262145.f_21939 && iVar1 < Global_262145.f_21959)
+		if (!Global_262145.f_21939 /* Tunable: ENABLE_BOMBUSHKA */ && iVar1 < Global_262145.f_21959 /* Tunable: LAUNCHPOSIX_BOMBUSHKA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("hunter"))
 	{
-		if (!Global_262145.f_21935 && iVar1 < Global_262145.f_21955)
+		if (!Global_262145.f_21935 /* Tunable: ENABLE_HUNTER */ && iVar1 < Global_262145.f_21955 /* Tunable: LAUNCHPOSIX_HUNTER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("havok"))
 	{
-		if (!Global_262145.f_21931 && iVar1 < Global_262145.f_21951)
+		if (!Global_262145.f_21931 /* Tunable: ENABLE_HAVOK */ && iVar1 < Global_262145.f_21951 /* Tunable: LAUNCHPOSIX_HAVOK */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("howard"))
 	{
-		if (!Global_262145.f_21923 && iVar1 < Global_262145.f_21943)
+		if (!Global_262145.f_21923 /* Tunable: ENABLE_HOWARD */ && iVar1 < Global_262145.f_21943 /* Tunable: LAUNCHPOSIX_HOWARD */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("alphaz1"))
 	{
-		if (!Global_262145.f_21925 && iVar1 < Global_262145.f_21945)
+		if (!Global_262145.f_21925 /* Tunable: ENABLE_ALPHAZ1 */ && iVar1 < Global_262145.f_21945 /* Tunable: LAUNCHPOSIX_ALPHAZ1 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("cyclone"))
 	{
-		if (!Global_262145.f_21926 && iVar1 < Global_262145.f_21946)
+		if (!Global_262145.f_21926 /* Tunable: ENABLE_CYCLONE */ && iVar1 < Global_262145.f_21946 /* Tunable: LAUNCHPOSIX_CYCLONE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("visione"))
 	{
-		if (!Global_262145.f_21927 && iVar1 < Global_262145.f_21947)
+		if (!Global_262145.f_21927 /* Tunable: ENABLE_VISIONE */ && iVar1 < Global_262145.f_21947 /* Tunable: LAUNCHPOSIX_VISIONE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("vigilante"))
 	{
-		if (!Global_262145.f_21928 && iVar1 < Global_262145.f_21948)
+		if (!Global_262145.f_21928 /* Tunable: ENABLE_VIGILANTE */ && iVar1 < Global_262145.f_21948 /* Tunable: LAUNCHPOSIX_VIGILANTE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("retinue"))
 	{
-		if (!Global_262145.f_21929 && iVar1 < Global_262145.f_21949)
+		if (!Global_262145.f_21929 /* Tunable: ENABLE_RETINUE */ && iVar1 < Global_262145.f_21949 /* Tunable: LAUNCHPOSIX_RETINUE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("rapidgt3"))
 	{
-		if (!Global_262145.f_21930 && iVar1 < Global_262145.f_21950)
+		if (!Global_262145.f_21930 /* Tunable: ENABLE_RAPIDGT3 */ && iVar1 < Global_262145.f_21950 /* Tunable: LAUNCHPOSIX_RAPIDGT3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	if (iParam0 == joaat("deluxo"))
 	{
-		if (!Global_262145.f_22889 && iVar1 < Global_262145.f_22917)
+		if (!Global_262145.f_22889 /* Tunable: ENABLE_DELUXO */ && iVar1 < Global_262145.f_22917 /* Tunable: LAUNCHPOSIX_DELUXO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("stromberg"))
 	{
-		if (!Global_262145.f_22890 && iVar1 < Global_262145.f_22918)
+		if (!Global_262145.f_22890 /* Tunable: ENABLE_STROMBERG */ && iVar1 < Global_262145.f_22918 /* Tunable: LAUNCHPOSIX_STROMBERG */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("riot2"))
 	{
-		if (!Global_262145.f_22891 && iVar1 < Global_262145.f_22919)
+		if (!Global_262145.f_22891 /* Tunable: ENABLE_RIOT2 */ && iVar1 < Global_262145.f_22919 /* Tunable: LAUNCHPOSIX_RIOT2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("chernobog"))
 	{
-		if (!Global_262145.f_22892 && iVar1 < Global_262145.f_22920)
+		if (!Global_262145.f_22892 /* Tunable: ENABLE_CHERNOBOG */ && iVar1 < Global_262145.f_22920 /* Tunable: LAUNCHPOSIX_CHERNOBOG */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("khanjali"))
 	{
-		if (!Global_262145.f_22893 && iVar1 < Global_262145.f_22921)
+		if (!Global_262145.f_22893 /* Tunable: ENABLE_KHANJALI */ && iVar1 < Global_262145.f_22921 /* Tunable: LAUNCHPOSIX_KHANJALI */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("akula"))
 	{
-		if (!Global_262145.f_22894 && iVar1 < Global_262145.f_22922)
+		if (!Global_262145.f_22894 /* Tunable: ENABLE_AKULA */ && iVar1 < Global_262145.f_22922 /* Tunable: LAUNCHPOSIX_AKULA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("thruster"))
 	{
-		if (!Global_262145.f_22895 && iVar1 < Global_262145.f_22923)
+		if (!Global_262145.f_22895 /* Tunable: ENABLE_THRUSTER */ && iVar1 < Global_262145.f_22923 /* Tunable: LAUNCHPOSIX_THRUSTER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("barrage"))
 	{
-		if (!Global_262145.f_22896 && iVar1 < Global_262145.f_22924)
+		if (!Global_262145.f_22896 /* Tunable: ENABLE_BARRAGE */ && iVar1 < Global_262145.f_22924 /* Tunable: LAUNCHPOSIX_BARRAGE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("volatol"))
 	{
-		if (!Global_262145.f_22897 && iVar1 < Global_262145.f_22925)
+		if (!Global_262145.f_22897 /* Tunable: ENABLE_VOLATOL */ && iVar1 < Global_262145.f_22925 /* Tunable: LAUNCHPOSIX_VOLATOL */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("comet4"))
 	{
-		if (!Global_262145.f_22898 && iVar1 < Global_262145.f_22926)
+		if (!Global_262145.f_22898 /* Tunable: ENABLE_COMET4 */ && iVar1 < Global_262145.f_22926 /* Tunable: LAUNCHPOSIX_COMET4 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("neon"))
 	{
-		if (!Global_262145.f_22899 && iVar1 < Global_262145.f_22927)
+		if (!Global_262145.f_22899 /* Tunable: ENABLE_NEON */ && iVar1 < Global_262145.f_22927 /* Tunable: LAUNCHPOSIX_NEON */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("streiter"))
 	{
-		if (!Global_262145.f_22900 && iVar1 < Global_262145.f_22928)
+		if (!Global_262145.f_22900 /* Tunable: ENABLE_STREITER */ && iVar1 < Global_262145.f_22928 /* Tunable: LAUNCHPOSIX_STREITER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("sentinel3"))
 	{
-		if (!Global_262145.f_22901 && iVar1 < Global_262145.f_22929)
+		if (!Global_262145.f_22901 /* Tunable: ENABLE_SENTINEL3 */ && iVar1 < Global_262145.f_22929 /* Tunable: LAUNCHPOSIX_SENTINEL3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("yosemite"))
 	{
-		if (!Global_262145.f_22902 && iVar1 < Global_262145.f_22930)
+		if (!Global_262145.f_22902 /* Tunable: ENABLE_YOSEMITE */ && iVar1 < Global_262145.f_22930 /* Tunable: LAUNCHPOSIX_YOSEMITE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("sc1"))
 	{
-		if (!Global_262145.f_22903 && iVar1 < Global_262145.f_22931)
+		if (!Global_262145.f_22903 /* Tunable: ENABLE_SC1 */ && iVar1 < Global_262145.f_22931 /* Tunable: LAUNCHPOSIX_SC1 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("autarch"))
 	{
-		if (!Global_262145.f_22904 && iVar1 < Global_262145.f_22932)
+		if (!Global_262145.f_22904 /* Tunable: ENABLE_AUTARCH */ && iVar1 < Global_262145.f_22932 /* Tunable: LAUNCHPOSIX_AUTARCH */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("gt500"))
 	{
-		if (!Global_262145.f_22905 && iVar1 < Global_262145.f_22933)
+		if (!Global_262145.f_22905 /* Tunable: ENABLE_GT500 */ && iVar1 < Global_262145.f_22933 /* Tunable: LAUNCHPOSIX_GT500 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("hustler"))
 	{
-		if (!Global_262145.f_22906 && iVar1 < Global_262145.f_22934)
+		if (!Global_262145.f_22906 /* Tunable: ENABLE_HUSTLER */ && iVar1 < Global_262145.f_22934 /* Tunable: LAUNCHPOSIX_HUSTLER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("revolter"))
 	{
-		if (!Global_262145.f_22907 && iVar1 < Global_262145.f_22935)
+		if (!Global_262145.f_22907 /* Tunable: ENABLE_REVOLTER */ && iVar1 < Global_262145.f_22935 /* Tunable: LAUNCHPOSIX_REVOLTER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("pariah"))
 	{
-		if (!Global_262145.f_22908 && iVar1 < Global_262145.f_22936)
+		if (!Global_262145.f_22908 /* Tunable: ENABLE_PARIAH */ && iVar1 < Global_262145.f_22936 /* Tunable: LAUNCHPOSIX_PARIAH */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("raiden"))
 	{
-		if (!Global_262145.f_22909 && iVar1 < Global_262145.f_22937)
+		if (!Global_262145.f_22909 /* Tunable: ENABLE_RAIDEN */ && iVar1 < Global_262145.f_22937 /* Tunable: LAUNCHPOSIX_RAIDEN */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("savestra"))
 	{
-		if (!Global_262145.f_22910 && iVar1 < Global_262145.f_22938)
+		if (!Global_262145.f_22910 /* Tunable: ENABLE_SAVESTRA */ && iVar1 < Global_262145.f_22938 /* Tunable: LAUNCHPOSIX_SAVESTRA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("riata"))
 	{
-		if (!Global_262145.f_22911 && iVar1 < Global_262145.f_22939)
+		if (!Global_262145.f_22911 /* Tunable: ENABLE_RIATA */ && iVar1 < Global_262145.f_22939 /* Tunable: LAUNCHPOSIX_RIATA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("hermes"))
 	{
-		if (!Global_262145.f_22912 && iVar1 < Global_262145.f_22940)
+		if (!Global_262145.f_22912 /* Tunable: ENABLE_HERMES */ && iVar1 < Global_262145.f_22940 /* Tunable: LAUNCHPOSIX_HERMES */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("comet5"))
 	{
-		if (!Global_262145.f_22913 && iVar1 < Global_262145.f_22941)
+		if (!Global_262145.f_22913 /* Tunable: ENABLE_COMET5 */ && iVar1 < Global_262145.f_22941 /* Tunable: LAUNCHPOSIX_COMET5 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("z190"))
 	{
-		if (!Global_262145.f_22914 && iVar1 < Global_262145.f_22942)
+		if (!Global_262145.f_22914 /* Tunable: ENABLE_Z190 */ && iVar1 < Global_262145.f_22942 /* Tunable: LAUNCHPOSIX_Z190 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("viseris"))
 	{
-		if (!Global_262145.f_22915 && iVar1 < Global_262145.f_22943)
+		if (!Global_262145.f_22915 /* Tunable: ENABLE_VISERIS */ && iVar1 < Global_262145.f_22943 /* Tunable: LAUNCHPOSIX_VISERIS */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("kamacho"))
 	{
-		if (!Global_262145.f_22916 && iVar1 < Global_262145.f_22944)
+		if (!Global_262145.f_22916 /* Tunable: ENABLE_KAMACHO */ && iVar1 < Global_262145.f_22944 /* Tunable: LAUNCHPOSIX_KAMACHO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	if (iParam0 == joaat("gb200"))
 	{
-		if (!Global_262145.f_24109 && iVar1 < Global_262145.f_24125)
+		if (!Global_262145.f_24109 /* Tunable: ENABLE_GB200 */ && iVar1 < Global_262145.f_24125 /* Tunable: LAUNCHPOSIX_GB200 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("fagaloa"))
 	{
-		if (!Global_262145.f_24110 && iVar1 < Global_262145.f_24126)
+		if (!Global_262145.f_24110 /* Tunable: ENABLE_FAGALOA */ && iVar1 < Global_262145.f_24126 /* Tunable: LAUNCHPOSIX_FAGALOA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("ellie"))
 	{
-		if (!Global_262145.f_24114 && iVar1 < Global_262145.f_24130)
+		if (!Global_262145.f_24114 /* Tunable: ENABLE_ELLIE */ && iVar1 < Global_262145.f_24130 /* Tunable: LAUNCHPOSIX_ELLIE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("issi3"))
 	{
-		if (!Global_262145.f_24117 && iVar1 < Global_262145.f_24133)
+		if (!Global_262145.f_24117 /* Tunable: ENABLE_ISSI3 */ && iVar1 < Global_262145.f_24133 /* Tunable: LAUNCHPOSIX_ISSI3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("michelli"))
 	{
-		if (!Global_262145.f_24122 && iVar1 < Global_262145.f_24138)
+		if (!Global_262145.f_24122 /* Tunable: ENABLE_MICHELLI */ && iVar1 < Global_262145.f_24138 /* Tunable: LAUNCHPOSIX_MICHELLI */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("flashgt"))
 	{
-		if (!Global_262145.f_24116 && iVar1 < Global_262145.f_24132)
+		if (!Global_262145.f_24116 /* Tunable: ENABLE_FLASHGT */ && iVar1 < Global_262145.f_24132 /* Tunable: LAUNCHPOSIX_FLASHGT */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("hotring"))
 	{
-		if (!Global_262145.f_24108 && iVar1 < Global_262145.f_24124)
+		if (!Global_262145.f_24108 /* Tunable: ENABLE_HOTRING */ && iVar1 < Global_262145.f_24124 /* Tunable: LAUNCHPOSIX_HOTRING */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tezeract"))
 	{
-		if (!Global_262145.f_24115 && iVar1 < Global_262145.f_24131)
+		if (!Global_262145.f_24115 /* Tunable: ENABLE_TEZERACT */ && iVar1 < Global_262145.f_24131 /* Tunable: LAUNCHPOSIX_TEZERACT */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tyrant"))
 	{
-		if (!Global_262145.f_24121 && iVar1 < Global_262145.f_24137)
+		if (!Global_262145.f_24121 /* Tunable: ENABLE_TYRANT */ && iVar1 < Global_262145.f_24137 /* Tunable: LAUNCHPOSIX_TYRANT */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("dominator3"))
 	{
-		if (!Global_262145.f_24120 && iVar1 < Global_262145.f_24136)
+		if (!Global_262145.f_24120 /* Tunable: ENABLE_DOMINATOR3 */ && iVar1 < Global_262145.f_24136 /* Tunable: LAUNCHPOSIX_DOMINATOR3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("taipan"))
 	{
-		if (!Global_262145.f_24111 && iVar1 < Global_262145.f_24127)
+		if (!Global_262145.f_24111 /* Tunable: ENABLE_TAIPAN */ && iVar1 < Global_262145.f_24127 /* Tunable: LAUNCHPOSIX_TAIPAN */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("entity2"))
 	{
-		if (!Global_262145.f_24113 && iVar1 < Global_262145.f_24129)
+		if (!Global_262145.f_24113 /* Tunable: ENABLE_ENTITY2 */ && iVar1 < Global_262145.f_24129 /* Tunable: LAUNCHPOSIX_ENTITY2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("jester3"))
 	{
-		if (!Global_262145.f_24123 && iVar1 < Global_262145.f_24139)
+		if (!Global_262145.f_24123 /* Tunable: ENABLE_JESTER3 */ && iVar1 < Global_262145.f_24139 /* Tunable: LAUNCHPOSIX_JESTER3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("cheburek"))
 	{
-		if (!Global_262145.f_24119 && iVar1 < Global_262145.f_24135)
+		if (!Global_262145.f_24119 /* Tunable: ENABLE_CHEBUREK */ && iVar1 < Global_262145.f_24135 /* Tunable: LAUNCHPOSIX_CHEBUREK */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("caracara"))
 	{
-		if (!Global_262145.f_24112 && iVar1 < Global_262145.f_24128)
+		if (!Global_262145.f_24112 /* Tunable: ENABLE_CARACARA */ && iVar1 < Global_262145.f_24128 /* Tunable: LAUNCHPOSIX_CARACARA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("seasparrow"))
 	{
-		if (!Global_262145.f_24118 && iVar1 < Global_262145.f_24134)
+		if (!Global_262145.f_24118 /* Tunable: ENABLE_SEASPARROW */ && iVar1 < Global_262145.f_24134 /* Tunable: LAUNCHPOSIX_SEASPARROW */)
 		{
 			iVar0 = 0;
 		}
 	}
 	if (iParam0 == joaat("terbyte"))
 	{
-		if (!Global_262145.f_24199 && iVar1 < Global_262145.f_24186)
+		if (!Global_262145.f_24199 /* Tunable: ENABLE_TERBYTE */ && iVar1 < Global_262145.f_24186 /* Tunable: LAUNCHPOSIX_TERBYTE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("pbus2"))
 	{
-		if (!Global_262145.f_24200 && iVar1 < Global_262145.f_24187)
+		if (!Global_262145.f_24200 /* Tunable: ENABLE_PBUS2 */ && iVar1 < Global_262145.f_24187 /* Tunable: LAUNCHPOSIX_PBUS2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("mule4"))
 	{
-		if (!Global_262145.f_24205 && iVar1 < Global_262145.f_24192)
+		if (!Global_262145.f_24205 /* Tunable: ENABLE_MULE4 */ && iVar1 < Global_262145.f_24192 /* Tunable: LAUNCHPOSIX_MULE4 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("pounder2"))
 	{
-		if (!Global_262145.f_24204 && iVar1 < Global_262145.f_24191)
+		if (!Global_262145.f_24204 /* Tunable: ENABLE_POUNDER2 */ && iVar1 < Global_262145.f_24191 /* Tunable: LAUNCHPOSIX_POUNDER2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("swinger"))
 	{
-		if (!Global_262145.f_24202 && iVar1 < Global_262145.f_24189)
+		if (!Global_262145.f_24202 /* Tunable: ENABLE_SWINGER */ && iVar1 < Global_262145.f_24189 /* Tunable: LAUNCHPOSIX_SWINGER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("menacer"))
 	{
-		if (!Global_262145.f_24208 && iVar1 < Global_262145.f_24195)
+		if (!Global_262145.f_24208 /* Tunable: ENABLE_MENACER */ && iVar1 < Global_262145.f_24195 /* Tunable: LAUNCHPOSIX_MENACER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("scramjet"))
 	{
-		if (!Global_262145.f_24210 && iVar1 < Global_262145.f_24197)
+		if (!Global_262145.f_24210 /* Tunable: ENABLE_SCRAMJET */ && iVar1 < Global_262145.f_24197 /* Tunable: LAUNCHPOSIX_SCRAMJET */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("strikeforce"))
 	{
-		if (!Global_262145.f_24211 && iVar1 < Global_262145.f_24198)
+		if (!Global_262145.f_24211 /* Tunable: ENABLE_STRIKEFORCE */ && iVar1 < Global_262145.f_24198 /* Tunable: LAUNCHPOSIX_STRIKEFORCE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("oppressor2"))
 	{
-		if (!Global_262145.f_24209 && iVar1 < Global_262145.f_24196)
+		if (!Global_262145.f_24209 /* Tunable: ENABLE_OPPRESSOR2 */ && iVar1 < Global_262145.f_24196 /* Tunable: LAUNCHPOSIX_OPPRESSOR2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("patriot2"))
 	{
-		if (!Global_262145.f_24201 && iVar1 < Global_262145.f_24188)
+		if (!Global_262145.f_24201 /* Tunable: ENABLE_PATRIOT2 */ && iVar1 < Global_262145.f_24188 /* Tunable: LAUNCHPOSIX_PATRIOT2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("stafford"))
 	{
-		if (!Global_262145.f_24203 && iVar1 < Global_262145.f_24190)
+		if (!Global_262145.f_24203 /* Tunable: ENABLE_STAFFORD */ && iVar1 < Global_262145.f_24190 /* Tunable: LAUNCHPOSIX_STAFFORD */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("freecrawler"))
 	{
-		if (!Global_262145.f_24207 && iVar1 < Global_262145.f_24194)
+		if (!Global_262145.f_24207 /* Tunable: ENABLE_FREECRAWLER */ && iVar1 < Global_262145.f_24194 /* Tunable: LAUNCHPOSIX_FREECRAWLER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("blimp3"))
 	{
-		if (!Global_262145.f_24206 && iVar1 < Global_262145.f_24193)
+		if (!Global_262145.f_24206 /* Tunable: ENABLE_BLIMP3 */ && iVar1 < Global_262145.f_24193 /* Tunable: LAUNCHPOSIX_BLIMP3 */)
 		{
 			iVar0 = 0;
 		}
@@ -70731,560 +70731,560 @@ int func_502(int iParam0)//Position - 0x4CE01
 	}
 	else if (iParam0 == joaat("deveste"))
 	{
-		if (!Global_262145.f_26756 && iVar1 < Global_262145.f_26758)
+		if (!Global_262145.f_26756 /* Tunable: ENABLE_VEHICLE_DEVESTE */ && iVar1 < Global_262145.f_26758 /* Tunable: LAUNCHPOSIX_DEVESTE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("toros"))
 	{
-		if (!Global_262145.f_25769 && iVar1 < Global_262145.f_25762)
+		if (!Global_262145.f_25769 /* Tunable: ENABLE_VEHICLE_TOROS */ && iVar1 < Global_262145.f_25762 /* Tunable: LAUNCHPOSIX_TOROS */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("clique"))
 	{
-		if (!Global_262145.f_25770 && iVar1 < Global_262145.f_25763)
+		if (!Global_262145.f_25770 /* Tunable: ENABLE_VEHICLE_CLIQUE */ && iVar1 < Global_262145.f_25763 /* Tunable: LAUNCHPOSIX_CLIQUE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("italigto"))
 	{
-		if (!Global_262145.f_25771 && iVar1 < Global_262145.f_25764)
+		if (!Global_262145.f_25771 /* Tunable: ENABLE_VEHICLE_ITALIGTO */ && iVar1 < Global_262145.f_25764 /* Tunable: LAUNCHPOSIX_ITALIGTO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("deviant"))
 	{
-		if (!Global_262145.f_25772 && iVar1 < Global_262145.f_25765)
+		if (!Global_262145.f_25772 /* Tunable: ENABLE_VEHICLE_DEVIANT */ && iVar1 < Global_262145.f_25765 /* Tunable: LAUNCHPOSIX_DEVIANT */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("vamos"))
 	{
-		if (!Global_262145.f_26757 && iVar1 < Global_262145.f_26759)
+		if (!Global_262145.f_26757 /* Tunable: ENABLE_VEHICLE_VAMOS */ && iVar1 < Global_262145.f_26759 /* Tunable: LAUNCHPOSIX_VAMOS */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tulip"))
 	{
-		if (!Global_262145.f_25773 && iVar1 < Global_262145.f_25766)
+		if (!Global_262145.f_25773 /* Tunable: ENABLE_VEHICLE_TULIP */ && iVar1 < Global_262145.f_25766 /* Tunable: LAUNCHPOSIX_TULIP */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("schlagen"))
 	{
-		if (!Global_262145.f_25774 && iVar1 < Global_262145.f_25767)
+		if (!Global_262145.f_25774 /* Tunable: ENABLE_VEHICLE_SCHLAGEN */ && iVar1 < Global_262145.f_25767 /* Tunable: LAUNCHPOSIX_SCHLAGEN */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("rcbandito"))
 	{
-		if (!Global_262145.f_25775 && iVar1 < Global_262145.f_25768)
+		if (!Global_262145.f_25775 /* Tunable: ENABLE_VEHICLE_BANDITO */ && iVar1 < Global_262145.f_25768 /* Tunable: LAUNCHPOSIX_BANDITO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("thrax"))
 	{
-		if (!Global_262145.f_25780 && iVar1 < Global_262145.f_25801)
+		if (!Global_262145.f_25780 /* Tunable: ENABLE_VEHICLE_THRAX */ && iVar1 < Global_262145.f_25801 /* Tunable: LAUNCHPOSIX_THRAX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("drafter"))
 	{
-		if (!Global_262145.f_25781 && iVar1 < Global_262145.f_25802)
+		if (!Global_262145.f_25781 /* Tunable: ENABLE_VEHICLE_DRAFTER */ && iVar1 < Global_262145.f_25802 /* Tunable: LAUNCHPOSIX_DRAFTER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("locust"))
 	{
-		if (!Global_262145.f_25782 && iVar1 < Global_262145.f_25803)
+		if (!Global_262145.f_25782 /* Tunable: ENABLE_VEHICLE_LOCUST */ && iVar1 < Global_262145.f_25803 /* Tunable: LAUNCHPOSIX_LOCUST */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("novak"))
 	{
-		if (!Global_262145.f_25783 && iVar1 < Global_262145.f_25804)
+		if (!Global_262145.f_25783 /* Tunable: ENABLE_VEHICLE_NOVAK */ && iVar1 < Global_262145.f_25804 /* Tunable: LAUNCHPOSIX_NOVAK */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("zorrusso"))
 	{
-		if (!Global_262145.f_25784 && iVar1 < Global_262145.f_25805)
+		if (!Global_262145.f_25784 /* Tunable: ENABLE_VEHICLE_ZORRUSSO */ && iVar1 < Global_262145.f_25805 /* Tunable: LAUNCHPOSIX_ZORRUSSO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("gauntlet3"))
 	{
-		if (!Global_262145.f_25785 && iVar1 < Global_262145.f_25806)
+		if (!Global_262145.f_25785 /* Tunable: ENABLE_VEHICLE_GAUNTLET3 */ && iVar1 < Global_262145.f_25806 /* Tunable: LAUNCHPOSIX_GAUNTLET3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("issi7"))
 	{
-		if (!Global_262145.f_25786 && iVar1 < Global_262145.f_25807)
+		if (!Global_262145.f_25786 /* Tunable: ENABLE_VEHICLE_ISSI7 */ && iVar1 < Global_262145.f_25807 /* Tunable: LAUNCHPOSIX_ISSI7 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("zion3"))
 	{
-		if (!Global_262145.f_25787 && iVar1 < Global_262145.f_25808)
+		if (!Global_262145.f_25787 /* Tunable: ENABLE_VEHICLE_ZION3 */ && iVar1 < Global_262145.f_25808 /* Tunable: LAUNCHPOSIX_ZION3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("nebula"))
 	{
-		if (!Global_262145.f_25788 && iVar1 < Global_262145.f_25809)
+		if (!Global_262145.f_25788 /* Tunable: ENABLE_VEHICLE_NEBULA */ && iVar1 < Global_262145.f_25809 /* Tunable: LAUNCHPOSIX_NEBULA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("hellion"))
 	{
-		if (!Global_262145.f_25789 && iVar1 < Global_262145.f_25810)
+		if (!Global_262145.f_25789 /* Tunable: ENABLE_VEHICLE_HELLION */ && iVar1 < Global_262145.f_25810 /* Tunable: LAUNCHPOSIX_HELLION */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("dynasty"))
 	{
-		if (!Global_262145.f_25790 && iVar1 < Global_262145.f_25811)
+		if (!Global_262145.f_25790 /* Tunable: ENABLE_VEHICLE_DYNASTY */ && iVar1 < Global_262145.f_25811 /* Tunable: LAUNCHPOSIX_DYNASTY */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("rrocket"))
 	{
-		if (!Global_262145.f_25791 && iVar1 < Global_262145.f_25812)
+		if (!Global_262145.f_25791 /* Tunable: ENABLE_VEHICLE_RROCKET */ && iVar1 < Global_262145.f_25812 /* Tunable: LAUNCHPOSIX_RROCKET */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("peyote2"))
 	{
-		if (!Global_262145.f_25792 && iVar1 < Global_262145.f_25813)
+		if (!Global_262145.f_25792 /* Tunable: ENABLE_VEHICLE_PEYOTE2 */ && iVar1 < Global_262145.f_25813 /* Tunable: LAUNCHPOSIX_PEYOTE2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("gauntlet4"))
 	{
-		if (!Global_262145.f_25793 && iVar1 < Global_262145.f_25814)
+		if (!Global_262145.f_25793 /* Tunable: ENABLE_VEHICLE_GAUNTLET4 */ && iVar1 < Global_262145.f_25814 /* Tunable: LAUNCHPOSIX_GAUNTLET4 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("caracara2"))
 	{
-		if (!Global_262145.f_25794 && iVar1 < Global_262145.f_25815)
+		if (!Global_262145.f_25794 /* Tunable: ENABLE_VEHICLE_CARACARA2 */ && iVar1 < Global_262145.f_25815 /* Tunable: LAUNCHPOSIX_CARACARA2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("jugular"))
 	{
-		if (!Global_262145.f_25795 && iVar1 < Global_262145.f_25816)
+		if (!Global_262145.f_25795 /* Tunable: ENABLE_VEHICLE_JUGULAR */ && iVar1 < Global_262145.f_25816 /* Tunable: LAUNCHPOSIX_JUGULAR */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("s80"))
 	{
-		if (!Global_262145.f_25796 && iVar1 < Global_262145.f_25817)
+		if (!Global_262145.f_25796 /* Tunable: ENABLE_VEHICLE_S80 */ && iVar1 < Global_262145.f_25817 /* Tunable: LAUNCHPOSIX_S80 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("krieger"))
 	{
-		if (!Global_262145.f_25797 && iVar1 < Global_262145.f_25818)
+		if (!Global_262145.f_25797 /* Tunable: ENABLE_VEHICLE_KRIEGER */ && iVar1 < Global_262145.f_25818 /* Tunable: LAUNCHPOSIX_KRIEGER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("emerus"))
 	{
-		if (!Global_262145.f_25798 && iVar1 < Global_262145.f_25819)
+		if (!Global_262145.f_25798 /* Tunable: ENABLE_VEHICLE_EMERUS */ && iVar1 < Global_262145.f_25819 /* Tunable: LAUNCHPOSIX_EMERUS */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("neo"))
 	{
-		if (!Global_262145.f_25799 && iVar1 < Global_262145.f_25820)
+		if (!Global_262145.f_25799 /* Tunable: ENABLE_VEHICLE_NEO */ && iVar1 < Global_262145.f_25820 /* Tunable: LAUNCHPOSIX_NEO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("paragon"))
 	{
-		if (!Global_262145.f_25800 && iVar1 < Global_262145.f_25821)
+		if (!Global_262145.f_25800 /* Tunable: ENABLE_VEHICLE_PARAGON */ && iVar1 < Global_262145.f_25821 /* Tunable: LAUNCHPOSIX_PARAGON */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("asbo"))
 	{
-		if (!Global_262145.f_28601 && iVar1 < Global_262145.f_28622)
+		if (!Global_262145.f_28601 /* Tunable: ENABLE_VEHICLE_ASBO */ && iVar1 < Global_262145.f_28622 /* Tunable: LAUNCHPOSIX_ASBO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("kanjo"))
 	{
-		if (!Global_262145.f_28602 && iVar1 < Global_262145.f_28623)
+		if (!Global_262145.f_28602 /* Tunable: ENABLE_VEHICLE_KANJO */ && iVar1 < Global_262145.f_28623 /* Tunable: LAUNCHPOSIX_KANJO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("everon"))
 	{
-		if (!Global_262145.f_28603 && iVar1 < Global_262145.f_28624)
+		if (!Global_262145.f_28603 /* Tunable: ENABLE_VEHICLE_EVERON */ && iVar1 < Global_262145.f_28624 /* Tunable: LAUNCHPOSIX_EVERON */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("retinue2"))
 	{
-		if (!Global_262145.f_28604 && iVar1 < Global_262145.f_28625)
+		if (!Global_262145.f_28604 /* Tunable: ENABLE_VEHICLE_RETINUE2 */ && iVar1 < Global_262145.f_28625 /* Tunable: LAUNCHPOSIX_RETINUE2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("yosemite2"))
 	{
-		if (!Global_262145.f_28605 && iVar1 < Global_262145.f_28626)
+		if (!Global_262145.f_28605 /* Tunable: ENABLE_VEHICLE_YOSEMITE2 */ && iVar1 < Global_262145.f_28626 /* Tunable: LAUNCHPOSIX_YOSEMITE2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("sugoi"))
 	{
-		if (!Global_262145.f_28606 && iVar1 < Global_262145.f_28627)
+		if (!Global_262145.f_28606 /* Tunable: ENABLE_VEHICLE_SUGOI */ && iVar1 < Global_262145.f_28627 /* Tunable: LAUNCHPOSIX_SUGOI */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("sultan2"))
 	{
-		if (!Global_262145.f_28607 && iVar1 < Global_262145.f_28628)
+		if (!Global_262145.f_28607 /* Tunable: ENABLE_VEHICLE_SULTAN2 */ && iVar1 < Global_262145.f_28628 /* Tunable: LAUNCHPOSIX_SULTAN2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("outlaw"))
 	{
-		if (!Global_262145.f_28608 && iVar1 < Global_262145.f_28629)
+		if (!Global_262145.f_28608 /* Tunable: ENABLE_VEHICLE_OUTLAW */ && iVar1 < Global_262145.f_28629 /* Tunable: LAUNCHPOSIX_OUTLAW */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("vagrant"))
 	{
-		if (!Global_262145.f_28609 && iVar1 < Global_262145.f_28630)
+		if (!Global_262145.f_28609 /* Tunable: ENABLE_VEHICLE_VAGRANT */ && iVar1 < Global_262145.f_28630 /* Tunable: LAUNCHPOSIX_VAGRANT */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("komoda"))
 	{
-		if (!Global_262145.f_28610 && iVar1 < Global_262145.f_28631)
+		if (!Global_262145.f_28610 /* Tunable: ENABLE_VEHICLE_KOMODA */ && iVar1 < Global_262145.f_28631 /* Tunable: LAUNCHPOSIX_KOMODA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("stryder"))
 	{
-		if (!Global_262145.f_28611 && iVar1 < Global_262145.f_28632)
+		if (!Global_262145.f_28611 /* Tunable: ENABLE_VEHICLE_STRYDER */ && iVar1 < Global_262145.f_28632 /* Tunable: LAUNCHPOSIX_STRYDER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("furia"))
 	{
-		if (!Global_262145.f_28612 && iVar1 < Global_262145.f_28633)
+		if (!Global_262145.f_28612 /* Tunable: ENABLE_VEHICLE_FURIA */ && iVar1 < Global_262145.f_28633 /* Tunable: LAUNCHPOSIX_FURIA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("zhaba"))
 	{
-		if (!Global_262145.f_28613 && iVar1 < Global_262145.f_28634)
+		if (!Global_262145.f_28613 /* Tunable: ENABLE_VEHICLE_ZHABA */ && iVar1 < Global_262145.f_28634 /* Tunable: LAUNCHPOSIX_ZHABA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("jb7002"))
 	{
-		if (!Global_262145.f_28614 && iVar1 < Global_262145.f_28635)
+		if (!Global_262145.f_28614 /* Tunable: ENABLE_VEHICLE_JB7002 */ && iVar1 < Global_262145.f_28635 /* Tunable: LAUNCHPOSIX_JB7002 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("firetruk"))
 	{
-		if (!Global_262145.f_28615 && iVar1 < Global_262145.f_28636)
+		if (!Global_262145.f_28615 /* Tunable: ENABLE_VEHICLE_FIRETRUCK */ && iVar1 < Global_262145.f_28636 /* Tunable: LAUNCHPOSIX_FIRETRUCK */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("burrito2"))
 	{
-		if (!Global_262145.f_28616 && iVar1 < Global_262145.f_28637)
+		if (!Global_262145.f_28616 /* Tunable: ENABLE_VEHICLE_BURRITO2 */ && iVar1 < Global_262145.f_28637 /* Tunable: LAUNCHPOSIX_BURRITO2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("boxville"))
 	{
-		if (!Global_262145.f_28617 && iVar1 < Global_262145.f_28638)
+		if (!Global_262145.f_28617 /* Tunable: ENABLE_VEHICLE_BOXVILLE */ && iVar1 < Global_262145.f_28638 /* Tunable: LAUNCHPOSIX_BOXVILLE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("stockade"))
 	{
-		if (!Global_262145.f_28618 && iVar1 < Global_262145.f_28639)
+		if (!Global_262145.f_28618 /* Tunable: ENABLE_VEHICLE_STOCKADE */ && iVar1 < Global_262145.f_28639 /* Tunable: LAUNCHPOSIX_STOCKADE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("minitank"))
 	{
-		if (!Global_262145.f_28619 && iVar1 < Global_262145.f_28640)
+		if (!Global_262145.f_28619 /* Tunable: ENABLE_VEHICLE_MINITANK */ && iVar1 < Global_262145.f_28640 /* Tunable: LAUNCHPOSIX_MINITANK */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("lguard"))
 	{
-		if (!Global_262145.f_28620 && iVar1 < Global_262145.f_28641)
+		if (!Global_262145.f_28620 /* Tunable: ENABLE_VEHICLE_LGUARD */ && iVar1 < Global_262145.f_28641 /* Tunable: LAUNCHPOSIX_LGUARD */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("blazer2"))
 	{
-		if (!Global_262145.f_28621 && iVar1 < Global_262145.f_28642)
+		if (!Global_262145.f_28621 /* Tunable: ENABLE_VEHICLE_BLAZER2 */ && iVar1 < Global_262145.f_28642 /* Tunable: LAUNCHPOSIX_BLAZER2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("formula"))
 	{
-		if ((!Global_262145.f_28644 && iVar1 < Global_262145.f_28645) && !Global_262145.f_28599)
+		if ((!Global_262145.f_28644 /* Tunable: ENABLE_VEHICLE_FORMULA */ && iVar1 < Global_262145.f_28645 /* Tunable: LAUNCHPOSIX_FORMULA */) && !Global_262145.f_28599 /* Tunable: ENABLE_VEHICLE_FORMULA_PODIUM */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("formula2"))
 	{
-		if ((!Global_262145.f_28647 && iVar1 < Global_262145.f_28648) && !Global_262145.f_28600)
+		if ((!Global_262145.f_28647 /* Tunable: ENABLE_VEHICLE_FORMULA2 */ && iVar1 < Global_262145.f_28648 /* Tunable: LAUNCHPOSIX_FORMULA2 */) && !Global_262145.f_28600 /* Tunable: ENABLE_VEHICLE_FORMULA2_PODIUM */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("imorgon"))
 	{
-		if (!Global_262145.f_28652 && iVar1 < Global_262145.f_28655)
+		if (!Global_262145.f_28652 /* Tunable: ENABLE_VEHICLE_IMORGEN */ && iVar1 < Global_262145.f_28655 /* Tunable: LAUNCHPOSIX_IMORGEN */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("rebla"))
 	{
-		if (!Global_262145.f_28653 && iVar1 < Global_262145.f_28656)
+		if (!Global_262145.f_28653 /* Tunable: ENABLE_VEHICLE_REBLA */ && iVar1 < Global_262145.f_28656 /* Tunable: LAUNCHPOSIX_REBLA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("vstr"))
 	{
-		if (!Global_262145.f_28654 && iVar1 < Global_262145.f_28657)
+		if (!Global_262145.f_28654 /* Tunable: ENABLE_VEHICLE_VSTR */ && iVar1 < Global_262145.f_28657 /* Tunable: LAUNCHPOSIX_VSTR */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("gauntlet5"))
 	{
-		if (!Global_262145.f_29670 && iVar1 < Global_262145.f_29335)
+		if (!Global_262145.f_29670 /* Tunable: ENABLE_VEH_GAUNTLET5 */ && iVar1 < Global_262145.f_29335 /* Tunable: LAUNCHPOSIX_GAUNTLET5 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("club"))
 	{
-		if (!Global_262145.f_29321 && iVar1 < Global_262145.f_29342)
+		if (!Global_262145.f_29321 /* Tunable: ENABLE_VEH_CLUB */ && iVar1 < Global_262145.f_29342 /* Tunable: LAUNCHPOSIX_CLUB */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("dukes3"))
 	{
-		if (!Global_262145.f_29322 && iVar1 < Global_262145.f_29328)
+		if (!Global_262145.f_29322 /* Tunable: ENABLE_VEH_DUKES3 */ && iVar1 < Global_262145.f_29328 /* Tunable: LAUNCHPOSIX_DUKES3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("yosemite3"))
 	{
-		if (!Global_262145.f_29668 && iVar1 < Global_262145.f_29336)
+		if (!Global_262145.f_29668 /* Tunable: ENABLE_VEH_YOSEMITE3 */ && iVar1 < Global_262145.f_29336 /* Tunable: LAUNCHPOSIX_YOSEMITE3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("peyote3"))
 	{
-		if (!Global_262145.f_29669 && iVar1 < Global_262145.f_29337)
+		if (!Global_262145.f_29669 /* Tunable: ENABLE_VEH_PEYOTE3 */ && iVar1 < Global_262145.f_29337 /* Tunable: LAUNCHPOSIX_PEYOTE3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("glendale2"))
 	{
-		if (!Global_262145.f_29315 && iVar1 < Global_262145.f_29334)
+		if (!Global_262145.f_29315 /* Tunable: ENABLE_VEH_GLENDALE2 */ && iVar1 < Global_262145.f_29334 /* Tunable: LAUNCHPOSIX_GLENDALE2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("penumbra2"))
 	{
-		if (!Global_262145.f_29316 && iVar1 < Global_262145.f_29343)
+		if (!Global_262145.f_29316 /* Tunable: ENABLE_VEH_PENUMBRA2 */ && iVar1 < Global_262145.f_29343 /* Tunable: LAUNCHPOSIX_PENUMBRA2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("landstalker2"))
 	{
-		if (!Global_262145.f_29317 && iVar1 < Global_262145.f_29333)
+		if (!Global_262145.f_29317 /* Tunable: ENABLE_VEH_LANDSTALKER2 */ && iVar1 < Global_262145.f_29333 /* Tunable: LAUNCHPOSIX_LANDSTALKER2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("seminole2"))
 	{
-		if (!Global_262145.f_29318 && iVar1 < Global_262145.f_29331)
+		if (!Global_262145.f_29318 /* Tunable: ENABLE_VEH_SEMINOLE2 */ && iVar1 < Global_262145.f_29331 /* Tunable: LAUNCHPOSIX_SEMINOLE2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tigon"))
 	{
-		if (!Global_262145.f_29664 && iVar1 < Global_262145.f_29338)
+		if (!Global_262145.f_29664 /* Tunable: ENABLE_VEH_TIGON */ && iVar1 < Global_262145.f_29338 /* Tunable: LAUNCHPOSIX_TIGON */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("openwheel1"))
 	{
-		if (!Global_262145.f_29665 && iVar1 < Global_262145.f_29339)
+		if (!Global_262145.f_29665 /* Tunable: ENABLE_VEH_OPENWHEEL1 */ && iVar1 < Global_262145.f_29339 /* Tunable: LAUNCHPOSIX_OPENWHEEL1 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("openwheel2"))
 	{
-		if (!Global_262145.f_29666 && iVar1 < Global_262145.f_29340)
+		if (!Global_262145.f_29666 /* Tunable: ENABLE_VEH_OPENWHEEL2 */ && iVar1 < Global_262145.f_29340 /* Tunable: LAUNCHPOSIX_OPENWHEEL2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("coquette4"))
 	{
-		if (!Global_262145.f_29667 && iVar1 < Global_262145.f_29341)
+		if (!Global_262145.f_29667 /* Tunable: ENABLE_VEH_COQUETTE4 */ && iVar1 < Global_262145.f_29341 /* Tunable: LAUNCHPOSIX_COQUETTE4 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("manana2"))
 	{
-		if (!Global_262145.f_29319 && iVar1 < Global_262145.f_29330)
+		if (!Global_262145.f_29319 /* Tunable: ENABLE_VEH_MANANA2 */ && iVar1 < Global_262145.f_29330 /* Tunable: LAUNCHPOSIX_MANANA2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("youga3"))
 	{
-		if (!Global_262145.f_29320 && iVar1 < Global_262145.f_29332)
+		if (!Global_262145.f_29320 /* Tunable: ENABLE_VEH_YOUGA3 */ && iVar1 < Global_262145.f_29332 /* Tunable: LAUNCHPOSIX_YOUGA3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("toreador"))
 	{
-		if (!Global_262145.f_30129 && iVar1 < Global_262145.f_30112)
+		if (!Global_262145.f_30129 /* Tunable: ENABLE_VEHICLE_TOREADOR */ && iVar1 < Global_262145.f_30112 /* Tunable: LAUNCHPOSIX_TOREADOR */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("annihilator2"))
 	{
-		if (!Global_262145.f_30130 && iVar1 < Global_262145.f_30113)
+		if (!Global_262145.f_30130 /* Tunable: ENABLE_VEHICLE_ANNIHILATOR2 */ && iVar1 < Global_262145.f_30113 /* Tunable: LAUNCHPOSIX_ANNIHILATOR2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("alkonost"))
 	{
-		if (!Global_262145.f_30131 && iVar1 < Global_262145.f_30114)
+		if (!Global_262145.f_30131 /* Tunable: ENABLE_VEHICLE_ALKONOST */ && iVar1 < Global_262145.f_30114 /* Tunable: LAUNCHPOSIX_ALKONOST */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("patrolboat"))
 	{
-		if (!Global_262145.f_30132 && iVar1 < Global_262145.f_30115)
+		if (!Global_262145.f_30132 /* Tunable: ENABLE_VEHICLE_PATROLBOAT */ && iVar1 < Global_262145.f_30115 /* Tunable: LAUNCHPOSIX_PATROLBOAT */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("longfin"))
 	{
-		if (!Global_262145.f_30133 && iVar1 < Global_262145.f_30116)
+		if (!Global_262145.f_30133 /* Tunable: ENABLE_VEHICLE_LONGFIN */ && iVar1 < Global_262145.f_30116 /* Tunable: LAUNCHPOSIX_LONGFIN */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("winky"))
 	{
-		if (!Global_262145.f_30134 && iVar1 < Global_262145.f_30117)
+		if (!Global_262145.f_30134 /* Tunable: ENABLE_VEHICLE_WINKY */ && iVar1 < Global_262145.f_30117 /* Tunable: LAUNCHPOSIX_WINKY */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("veto"))
 	{
-		if (!Global_262145.f_30135 && iVar1 < Global_262145.f_30118)
+		if (!Global_262145.f_30135 /* Tunable: ENABLE_VEHICLE_VETO */ && iVar1 < Global_262145.f_30118 /* Tunable: LAUNCHPOSIX_VETO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("veto2"))
 	{
-		if (!Global_262145.f_30136 && iVar1 < Global_262145.f_30119)
+		if (!Global_262145.f_30136 /* Tunable: ENABLE_VEHICLE_VETO2 */ && iVar1 < Global_262145.f_30119 /* Tunable: LAUNCHPOSIX_VETO2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("italirsx"))
 	{
-		if (!Global_262145.f_30137 && iVar1 < Global_262145.f_30120)
+		if (!Global_262145.f_30137 /* Tunable: ENABLE_VEHICLE_ITALIRSX */ && iVar1 < Global_262145.f_30120 /* Tunable: LAUNCHPOSIX_ITALIRSX */)
 		{
 			iVar0 = 0;
 		}
@@ -71294,35 +71294,35 @@ int func_502(int iParam0)//Position - 0x4CE01
 		if (Global_262145.f_30146)
 		{
 		}
-		else if (!Global_262145.f_30138 && iVar1 < Global_262145.f_30121)
+		else if (!Global_262145.f_30138 /* Tunable: ENABLE_VEHICLE_WEEVIL */ && iVar1 < Global_262145.f_30121 /* Tunable: LAUNCHPOSIX_WEEVIL */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("manchez2"))
 	{
-		if (!Global_262145.f_30139 && iVar1 < Global_262145.f_30122)
+		if (!Global_262145.f_30139 /* Tunable: ENABLE_VEHICLE_MANCHEZ2 */ && iVar1 < Global_262145.f_30122 /* Tunable: LAUNCHPOSIX_MANCHEZ2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("slamtruck"))
 	{
-		if (!Global_262145.f_30140 && iVar1 < Global_262145.f_30123)
+		if (!Global_262145.f_30140 /* Tunable: ENABLE_VEHICLE_SLAMTRUCK */ && iVar1 < Global_262145.f_30123 /* Tunable: LAUNCHPOSIX_SLAMTRUCK */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("vetir"))
 	{
-		if (!Global_262145.f_30141 && iVar1 < Global_262145.f_30124)
+		if (!Global_262145.f_30141 /* Tunable: ENABLE_VEHICLE_VETIR */ && iVar1 < Global_262145.f_30124 /* Tunable: LAUNCHPOSIX_VETIR */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("squaddie"))
 	{
-		if (!Global_262145.f_30142 && iVar1 < Global_262145.f_30125)
+		if (!Global_262145.f_30142 /* Tunable: ENABLE_VEHICLE_SQUADDIE */ && iVar1 < Global_262145.f_30125 /* Tunable: LAUNCHPOSIX_SQUADDIE */)
 		{
 			iVar0 = 0;
 		}
@@ -71332,238 +71332,238 @@ int func_502(int iParam0)//Position - 0x4CE01
 		if (Global_262145.f_30147)
 		{
 		}
-		else if (!Global_262145.f_30143 && iVar1 < Global_262145.f_30126)
+		else if (!Global_262145.f_30143 /* Tunable: ENABLE_VEHICLE_BRIOSO2 */ && iVar1 < Global_262145.f_30126 /* Tunable: LAUNCHPOSIX_BRIOSO2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("dinghy5"))
 	{
-		if (!Global_262145.f_30144 && iVar1 < Global_262145.f_30127)
+		if (!Global_262145.f_30144 /* Tunable: ENABLE_VEHICLE_DINGY5 */ && iVar1 < Global_262145.f_30127 /* Tunable: LAUNCHPOSIX_DINGY5 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("verus"))
 	{
-		if (!Global_262145.f_30145 && iVar1 < Global_262145.f_30128)
+		if (!Global_262145.f_30145 /* Tunable: ENABLE_VEHICLE_VERUS */ && iVar1 < Global_262145.f_30128 /* Tunable: LAUNCHPOSIX_VERUS */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tailgater2"))
 	{
-		if (!Global_262145.f_30997 && iVar1 < Global_262145.f_30980)
+		if (!Global_262145.f_30997 /* Tunable: ENABLE_VEHICLE_TAILGATER2 */ && iVar1 < Global_262145.f_30980 /* Tunable: LAUNCHPOSIX_TAILGATER2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("euros"))
 	{
-		if (!Global_262145.f_30998 && iVar1 < Global_262145.f_30981)
+		if (!Global_262145.f_30998 /* Tunable: ENABLE_VEHICLE_EUROS */ && iVar1 < Global_262145.f_30981 /* Tunable: LAUNCHPOSIX_EUROS */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("sultan3"))
 	{
-		if (!Global_262145.f_30999 && iVar1 < Global_262145.f_30982)
+		if (!Global_262145.f_30999 /* Tunable: ENABLE_VEHICLE_SULTAN3 */ && iVar1 < Global_262145.f_30982 /* Tunable: LAUNCHPOSIX_SULTAN3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("rt3000"))
 	{
-		if (!Global_262145.f_31000 && iVar1 < Global_262145.f_30983)
+		if (!Global_262145.f_31000 /* Tunable: ENABLE_VEHICLE_RT3000 */ && iVar1 < Global_262145.f_30983 /* Tunable: LAUNCHPOSIX_RT3000 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("vectre"))
 	{
-		if (!Global_262145.f_31001 && iVar1 < Global_262145.f_30984)
+		if (!Global_262145.f_31001 /* Tunable: ENABLE_VEHICLE_VECTRE */ && iVar1 < Global_262145.f_30984 /* Tunable: LAUNCHPOSIX_VECTRE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("zr350"))
 	{
-		if (!Global_262145.f_31002 && iVar1 < Global_262145.f_30985)
+		if (!Global_262145.f_31002 /* Tunable: ENABLE_VEHICLE_ZR350 */ && iVar1 < Global_262145.f_30985 /* Tunable: LAUNCHPOSIX_ZR350 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("warrener2"))
 	{
-		if (!Global_262145.f_31003 && iVar1 < Global_262145.f_30986)
+		if (!Global_262145.f_31003 /* Tunable: ENABLE_VEHICLE_WARRENER2 */ && iVar1 < Global_262145.f_30986 /* Tunable: LAUNCHPOSIX_WARRENER2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("calico"))
 	{
-		if (!Global_262145.f_31004 && iVar1 < Global_262145.f_30987)
+		if (!Global_262145.f_31004 /* Tunable: ENABLE_VEHICLE_CALICO */ && iVar1 < Global_262145.f_30987 /* Tunable: LAUNCHPOSIX_CALICO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("remus"))
 	{
-		if (!Global_262145.f_31005 && iVar1 < Global_262145.f_30988)
+		if (!Global_262145.f_31005 /* Tunable: ENABLE_VEHICLE_REMUS */ && iVar1 < Global_262145.f_30988 /* Tunable: LAUNCHPOSIX_REMUS */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("cypher"))
 	{
-		if (!Global_262145.f_31006 && iVar1 < Global_262145.f_30989)
+		if (!Global_262145.f_31006 /* Tunable: ENABLE_VEHICLE_CYPHER */ && iVar1 < Global_262145.f_30989 /* Tunable: LAUNCHPOSIX_CYPHER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("dominator7"))
 	{
-		if (!Global_262145.f_31007 && iVar1 < Global_262145.f_30990)
+		if (!Global_262145.f_31007 /* Tunable: ENABLE_VEHICLE_DOMINATOR7 */ && iVar1 < Global_262145.f_30990 /* Tunable: LAUNCHPOSIX_DOMINATOR7 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("jester4"))
 	{
-		if (!Global_262145.f_31008 && iVar1 < Global_262145.f_30991)
+		if (!Global_262145.f_31008 /* Tunable: ENABLE_VEHICLE_JESTER4 */ && iVar1 < Global_262145.f_30991 /* Tunable: LAUNCHPOSIX_JESTER4 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("futo2"))
 	{
-		if (!Global_262145.f_31009 && iVar1 < Global_262145.f_30992)
+		if (!Global_262145.f_31009 /* Tunable: ENABLE_VEHICLE_FUTO2 */ && iVar1 < Global_262145.f_30992 /* Tunable: LAUNCHPOSIX_FUTO2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("dominator8"))
 	{
-		if (!Global_262145.f_31010 && iVar1 < Global_262145.f_30993)
+		if (!Global_262145.f_31010 /* Tunable: ENABLE_VEHICLE_DOMINATOR8 */ && iVar1 < Global_262145.f_30993 /* Tunable: LAUNCHPOSIX_DOMINATOR8 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("previon"))
 	{
-		if (!Global_262145.f_31011 && iVar1 < Global_262145.f_30994)
+		if (!Global_262145.f_31011 /* Tunable: ENABLE_VEHICLE_PREVION */ && iVar1 < Global_262145.f_30994 /* Tunable: LAUNCHPOSIX_PREVION */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("growler"))
 	{
-		if (!Global_262145.f_31012 && iVar1 < Global_262145.f_30995)
+		if (!Global_262145.f_31012 /* Tunable: ENABLE_VEHICLE_GROWLER */ && iVar1 < Global_262145.f_30995 /* Tunable: LAUNCHPOSIX_GROWLER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("comet6"))
 	{
-		if (!Global_262145.f_31013 && iVar1 < Global_262145.f_30996)
+		if (!Global_262145.f_31013 /* Tunable: ENABLE_VEHICLE_COMET6 */ && iVar1 < Global_262145.f_30996 /* Tunable: LAUNCHPOSIX_COMET6 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("champion"))
 	{
-		if (!Global_262145.f_31872 && iVar1 < Global_262145.f_31857)
+		if (!Global_262145.f_31872 /* Tunable: ENABLE_VEHICLE_CHAMPION */ && iVar1 < Global_262145.f_31857 /* Tunable: LAUNCHPOSIX_CHAMPION */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("buffalo4"))
 	{
-		if (!Global_262145.f_31873 && iVar1 < Global_262145.f_31858)
+		if (!Global_262145.f_31873 /* Tunable: ENABLE_VEHICLE_BUFFALO4 */ && iVar1 < Global_262145.f_31858 /* Tunable: LAUNCHPOSIX_BUFFALO4 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("deity"))
 	{
-		if (!Global_262145.f_31874 && iVar1 < Global_262145.f_31859)
+		if (!Global_262145.f_31874 /* Tunable: ENABLE_VEHICLE_DEITY */ && iVar1 < Global_262145.f_31859 /* Tunable: LAUNCHPOSIX_DEITY */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("jubilee"))
 	{
-		if (!Global_262145.f_31875 && iVar1 < Global_262145.f_31860)
+		if (!Global_262145.f_31875 /* Tunable: ENABLE_VEHICLE_JUBILEE */ && iVar1 < Global_262145.f_31860 /* Tunable: LAUNCHPOSIX_JUBILEE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("ignus"))
 	{
-		if (!Global_262145.f_31876 && iVar1 < Global_262145.f_31861)
+		if (!Global_262145.f_31876 /* Tunable: ENABLE_VEHICLE_IGNUS */ && iVar1 < Global_262145.f_31861 /* Tunable: LAUNCHPOSIX_IGNUS */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("cinquemila"))
 	{
-		if (!Global_262145.f_31877 && iVar1 < Global_262145.f_31862)
+		if (!Global_262145.f_31877 /* Tunable: ENABLE_VEHICLE_CINQUEMILA */ && iVar1 < Global_262145.f_31862 /* Tunable: LAUNCHPOSIX_CINQUEMILA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("astron"))
 	{
-		if (!Global_262145.f_31878 && iVar1 < Global_262145.f_31863)
+		if (!Global_262145.f_31878 /* Tunable: ENABLE_VEHICLE_ASTRON */ && iVar1 < Global_262145.f_31863 /* Tunable: LAUNCHPOSIX_ASTRON */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("comet7"))
 	{
-		if (!Global_262145.f_31879 && iVar1 < Global_262145.f_31864)
+		if (!Global_262145.f_31879 /* Tunable: ENABLE_VEHICLE_COMET7 */ && iVar1 < Global_262145.f_31864 /* Tunable: LAUNCHPOSIX_COMET7 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("zeno"))
 	{
-		if (!Global_262145.f_31880 && iVar1 < Global_262145.f_31865)
+		if (!Global_262145.f_31880 /* Tunable: ENABLE_VEHICLE_ZENO */ && iVar1 < Global_262145.f_31865 /* Tunable: LAUNCHPOSIX_ZENO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("reever"))
 	{
-		if (!Global_262145.f_31881 && iVar1 < Global_262145.f_31866)
+		if (!Global_262145.f_31881 /* Tunable: ENABLE_VEHICLE_REEVER */ && iVar1 < Global_262145.f_31866 /* Tunable: LAUNCHPOSIX_REEVER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("iwagen"))
 	{
-		if (!Global_262145.f_31882 && iVar1 < Global_262145.f_31867)
+		if (!Global_262145.f_31882 /* Tunable: ENABLE_VEHICLE_IWAGEN */ && iVar1 < Global_262145.f_31867 /* Tunable: LAUNCHPOSIX_IWAGEN */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("granger2"))
 	{
-		if (!Global_262145.f_31883 && iVar1 < Global_262145.f_31868)
+		if (!Global_262145.f_31883 /* Tunable: ENABLE_VEHICLE_GRANGER2 */ && iVar1 < Global_262145.f_31868 /* Tunable: LAUNCHPOSIX_GRANGER2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("patriot3"))
 	{
-		if (!Global_262145.f_31884 && iVar1 < Global_262145.f_31869)
+		if (!Global_262145.f_31884 /* Tunable: ENABLE_VEHICLE_PATRIOT3 */ && iVar1 < Global_262145.f_31869 /* Tunable: LAUNCHPOSIX_PATRIOT3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("shinobi"))
 	{
-		if (!Global_262145.f_31885 && iVar1 < Global_262145.f_31870)
+		if (!Global_262145.f_31885 /* Tunable: ENABLE_VEHICLE_SHINOBI */ && iVar1 < Global_262145.f_31870 /* Tunable: LAUNCHPOSIX_FAST_MOTORBIKE */)
 		{
 			iVar0 = 0;
 		}
@@ -71573,133 +71573,133 @@ int func_502(int iParam0)//Position - 0x4CE01
 		if (Global_262145.f_31950)
 		{
 		}
-		else if (!Global_262145.f_31886 && iVar1 < Global_262145.f_31871)
+		else if (!Global_262145.f_31886 /* Tunable: ENABLE_VEHICLE_BALLER7 */ && iVar1 < Global_262145.f_31871 /* Tunable: LAUNCHPOSIX_BALLER7 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("brioso3"))
 	{
-		if (!Global_262145.f_33037 && iVar1 < Global_262145.f_33018)
+		if (!Global_262145.f_33037 /* Tunable: ENABLE_VEHICLE_BRIOSO3 */ && iVar1 < Global_262145.f_33018 /* Tunable: LAUNCHPOSIX_BRIOSO3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("corsita"))
 	{
-		if (!Global_262145.f_33031 && iVar1 < Global_262145.f_33012)
+		if (!Global_262145.f_33031 /* Tunable: ENABLE_VEHICLE_CORSITA */ && iVar1 < Global_262145.f_33012 /* Tunable: LAUNCHPOSIX_CORSITA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("draugur"))
 	{
-		if (!Global_262145.f_33035 && iVar1 < Global_262145.f_33016)
+		if (!Global_262145.f_33035 /* Tunable: ENABLE_VEHICLE_DRAUGUR */ && iVar1 < Global_262145.f_33016 /* Tunable: LAUNCHPOSIX_DRAUGUR */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("greenwood"))
 	{
-		if (!Global_262145.f_33029 && iVar1 < Global_262145.f_33010)
+		if (!Global_262145.f_33029 /* Tunable: ENABLE_VEHICLE_GREENWOOD */ && iVar1 < Global_262145.f_33010 /* Tunable: LAUNCHPOSIX_GREENWOOD */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("kanjosj"))
 	{
-		if (!Global_262145.f_33040 && iVar1 < Global_262145.f_33021)
+		if (!Global_262145.f_33040 /* Tunable: ENABLE_VEHICLE_KANJOSJ */ && iVar1 < Global_262145.f_33021 /* Tunable: LAUNCHPOSIX_KANJOSJ */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("lm87"))
 	{
-		if (!Global_262145.f_33032 && iVar1 < Global_262145.f_33013)
+		if (!Global_262145.f_33032 /* Tunable: ENABLE_VEHICLE_LM87 */ && iVar1 < Global_262145.f_33013 /* Tunable: LAUNCHPOSIX_LM87 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("postlude"))
 	{
-		if (!Global_262145.f_33041 && iVar1 < Global_262145.f_33022)
+		if (!Global_262145.f_33041 /* Tunable: ENABLE_VEHICLE_POSTLUDE */ && iVar1 < Global_262145.f_33022 /* Tunable: LAUNCHPOSIX_POSTLUDE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("rhinehart"))
 	{
-		if (!Global_262145.f_33043 && iVar1 < Global_262145.f_33024)
+		if (!Global_262145.f_33043 /* Tunable: ENABLE_VEHICLE_RHINEHART */ && iVar1 < Global_262145.f_33024 /* Tunable: LAUNCHPOSIX_RHINEHART */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("sm722"))
 	{
-		if (!Global_262145.f_33034 && iVar1 < Global_262145.f_33015)
+		if (!Global_262145.f_33034 /* Tunable: ENABLE_VEHICLE_SM722 */ && iVar1 < Global_262145.f_33015 /* Tunable: LAUNCHPOSIX_SM722 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tenf"))
 	{
-		if (!Global_262145.f_33042 && iVar1 < Global_262145.f_33023)
+		if (!Global_262145.f_33042 /* Tunable: ENABLE_VEHICLE_TENF */ && iVar1 < Global_262145.f_33023 /* Tunable: LAUNCHPOSIX_TENF */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tenf2"))
 	{
-		if (!Global_262145.f_33045 && iVar1 < Global_262145.f_33026)
+		if (!Global_262145.f_33045 /* Tunable: ENABLE_VEHICLE_TENF2 */ && iVar1 < Global_262145.f_33026 /* Tunable: LAUNCHPOSIX_TENF2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("torero2"))
 	{
-		if (!Global_262145.f_33030 && iVar1 < Global_262145.f_33011)
+		if (!Global_262145.f_33030 /* Tunable: ENABLE_VEHICLE_TORERO2 */ && iVar1 < Global_262145.f_33011 /* Tunable: LAUNCHPOSIX_TORERO2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("vigero2"))
 	{
-		if (!Global_262145.f_33038 && iVar1 < Global_262145.f_33019)
+		if (!Global_262145.f_33038 /* Tunable: ENABLE_VEHICLE_VIGERO2 */ && iVar1 < Global_262145.f_33019 /* Tunable: LAUNCHPOSIX_VIGERO2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("weevil2"))
 	{
-		if (!Global_262145.f_33044 && iVar1 < Global_262145.f_33025)
+		if (!Global_262145.f_33044 /* Tunable: ENABLE_VEHICLE_WEEVIL2 */ && iVar1 < Global_262145.f_33025 /* Tunable: LAUNCHPOSIX_WEEVIL2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("ruiner4"))
 	{
-		if (!Global_262145.f_33036 && iVar1 < Global_262145.f_33017)
+		if (!Global_262145.f_33036 /* Tunable: ENABLE_VEHICLE_RUINER4 */ && iVar1 < Global_262145.f_33017 /* Tunable: LAUNCHPOSIX_RUINER4 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("sentinel4"))
 	{
-		if (!Global_262145.f_33046 && iVar1 < Global_262145.f_33027)
+		if (!Global_262145.f_33046 /* Tunable: ENABLE_VEHICLE_SENTINEL4 */ && iVar1 < Global_262145.f_33027 /* Tunable: LAUNCHPOSIX_MODEL_SENTINEL4 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("conada"))
 	{
-		if (!Global_262145.f_33033 && iVar1 < Global_262145.f_33014)
+		if (!Global_262145.f_33033 /* Tunable: ENABLE_VEHICLE_CONADA */ && iVar1 < Global_262145.f_33014 /* Tunable: LAUNCHPOSIX_CONADA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("omnisegt"))
 	{
-		if (!Global_262145.f_33028 && iVar1 < Global_262145.f_33009)
+		if (!Global_262145.f_33028 /* Tunable: ENABLE_VEHICLE_OMNISEGT */ && iVar1 < Global_262145.f_33009 /* Tunable: LAUNCHPOSIX_OMNISEGT */)
 		{
 			iVar0 = 0;
 		}
@@ -78117,79 +78117,79 @@ int func_541(int iParam0, int iParam1, int iParam2)//Position - 0x5710A
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31517) * Global_262145.f_31616));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31517 /* Tunable: TUNER_SPRINT_FIRST_TIME_BONUS_XP */) * Global_262145.f_31616 /* Tunable: TUNER_SPRINT_FIRST_TIME_BONUS_XP_MULTIPLIER */));
 			break;
 		
 		case 1:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31528) * Global_262145.f_31617));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31528 /* Tunable: TUNER_STREET_FIRST_TIME_BONUS_XP */) * Global_262145.f_31617 /* Tunable: TUNER_STREET_FIRST_TIME_BONUS_XP_MULTIPLIER */));
 			break;
 		
 		case 2:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31530) * Global_262145.f_31618));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31530 /* Tunable: TUNER_PURSUIT_FIRST_TIME_BONUS_XP */) * Global_262145.f_31618 /* Tunable: TUNER_PURSUIT_FIRST_TIME_BONUS_XP_MULTIPLIER */));
 			break;
 		
 		case 3:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31549) * Global_262145.f_31619));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31549 /* Tunable: TUNER_MOD_FIRST_TIME_BONUS_XP */) * Global_262145.f_31619 /* Tunable: TUNER_MOD_FIRST_TIME_BONUS_XP_MULTIPLIER */));
 			break;
 		
 		case 4:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31551) * Global_262145.f_31620));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31551 /* Tunable: TUNER_SANDBOX_FIRST_TIME_BONUS_XP */) * Global_262145.f_31620 /* Tunable: TUNER_SANDBOX_TEST_FIRST_TIME_BONUS_XP_MULTIPLIER */));
 			break;
 		
 		case 5:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31547) * Global_262145.f_31621));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31547 /* Tunable: TUNER_TIMETRIAL_FIRST_TIME_BONUS_XP */) * Global_262145.f_31621 /* Tunable: TUNER_TIMETRIAL_FIRST_TIME_BONUS_XP_MULTIPLIER */));
 			break;
 		
 		case 6:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31532) * Global_262145.f_31622));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31532 /* Tunable: TUNER_CHECKPOINT_FIRST_TIME_BONUS_XP */) * Global_262145.f_31622 /* Tunable: TUNER_CHECKPOINT_FIRST_TIME_BONUS_XP_MULTIPLIER */));
 			break;
 		
 		case 7:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31543) * Global_262145.f_31623));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31543 /* Tunable: TUNER_HEADTOHEAD_FIRST_TIME_BONUS_XP */) * Global_262145.f_31623 /* Tunable: TUNER_HEADTOHEAD_FIRST_TIME_BONUS_XP_MULTIPLIER */));
 			break;
 		
 		case 8:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31556) * Global_262145.f_31624));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31556 /* Tunable: TUNER_CARCLUB_FIRST_TIME_DAILY_XP */) * Global_262145.f_31624 /* Tunable: TUNER_CARCLUB_FIRST_TIME_DAILY_XP_MULTIPLIER */));
 			break;
 		
 		case 9:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31555) * Global_262145.f_31625));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31555 /* Tunable: TUNER_CARCLUB_PV_FIRST_TIME_DAILY_XP */) * Global_262145.f_31625 /* Tunable: TUNER_CARCLUB_PV_FIRST_TIME_DAILY_XP_MULTIPLIER */));
 			break;
 		
 		case 10:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31518) * Global_262145.f_31626));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31518 /* Tunable: TUNER_SPRINT_FIRST_TIME_DAILY_XP */) * Global_262145.f_31626 /* Tunable: TUNER_SPRINT_FIRST_TIME_DAILY_XP_MULTIPLIER */));
 			break;
 		
 		case 11:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31529) * Global_262145.f_31627));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31529 /* Tunable: TUNER_STREET_FIRST_TIME_DAILY_XP */) * Global_262145.f_31627 /* Tunable: TUNER_STREET_FIRST_TIME_DAILY_XP_MULTIPLIER */));
 			break;
 		
 		case 12:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31531) * Global_262145.f_31628));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31531 /* Tunable: TUNER_PURSUIT_FIRST_TIME_DAILY_XP */) * Global_262145.f_31628 /* Tunable: TUNER_PURSUIT_FIRST_TIME_DAILY_XP_MULTIPLIER */));
 			break;
 		
 		case 13:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31550) * Global_262145.f_31629));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31550 /* Tunable: TUNER_MOD_FIRST_TIME_DAILY_XP */) * Global_262145.f_31629 /* Tunable: TUNER_MOD_FIRST_TIME_DAILY_XP_MULTIPLIER */));
 			break;
 		
 		case 14:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31553) * Global_262145.f_31630));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31553 /* Tunable: TUNER_SANDBOX_TEST_FIRST_TIME_DAILY_XP */) * Global_262145.f_31630 /* Tunable: TUNER_SANDBOX_TEST_FIRST_TIME_DAILY_XP_MULTIPLIERER */));
 			break;
 		
 		case 15:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31552) * Global_262145.f_31631));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31552 /* Tunable: TUNER_SANDBOX_PV_FIRST_TIME_DAILY_XP */) * Global_262145.f_31631 /* Tunable: TUNER_SANDBOX_PV_FIRST_TIME_DAILY_XP_MULTIPLIER */));
 			break;
 		
 		case 16:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31548) * Global_262145.f_31632));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31548 /* Tunable: TUNER_TIMETRIAL_FIRST_TIME_DAILY_XP */) * Global_262145.f_31632 /* Tunable: TUNER_TIMETRIAL_FIRST_TIME_DAILY_XP_MULTIPLIER */));
 			break;
 		
 		case 17:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31533) * Global_262145.f_31633));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31533 /* Tunable: TUNER_CHECKPOINT_FIRST_TIME_DAILY_XP */) * Global_262145.f_31633 /* Tunable: TUNER_CHECKPOINT_FIRST_TIME_DAILY_XP_MULTIPLIER */));
 			break;
 		
 		case 18:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31544) * Global_262145.f_31634));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31544 /* Tunable: TUNER_HEADTOHEAD_FIRST_TIME_DAILY_XP */) * Global_262145.f_31634 /* Tunable: TUNER_HEADTOHEAD_FIRST_TIME_DAILY_XP_MULTIPLIER */));
 			break;
 		
 		case 19:
@@ -78198,48 +78198,48 @@ int func_541(int iParam0, int iParam1, int iParam2)//Position - 0x5710A
 				case 1:
 					if (iParam2 == 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31519) * Global_262145.f_31635));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31519 /* Tunable: TUNER_SPRINT_1ST_PLACE_XP */) * Global_262145.f_31635 /* Tunable: TUNER_SPRINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 == 3)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31523) * Global_262145.f_31635));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31523 /* Tunable: TUNER_SPRINT_3P_1ST_PLACE_XP */) * Global_262145.f_31635 /* Tunable: TUNER_SPRINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 == 2)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31526) * Global_262145.f_31635));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31526 /* Tunable: TUNER_SPRINT_2P_1ST_PLACE_XP */) * Global_262145.f_31635 /* Tunable: TUNER_SPRINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 2:
 					if (iParam2 == 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31520) * Global_262145.f_31635));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31520 /* Tunable: TUNER_SPRINT_2ND_PLACE_XP */) * Global_262145.f_31635 /* Tunable: TUNER_SPRINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 == 3)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31524) * Global_262145.f_31635));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31524 /* Tunable: TUNER_SPRINT_3P_2ND_PLACE_XP */) * Global_262145.f_31635 /* Tunable: TUNER_SPRINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 == 2)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31527) * Global_262145.f_31635));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31527 /* Tunable: TUNER_SPRINT_2P_2ND_PLACE_XP */) * Global_262145.f_31635 /* Tunable: TUNER_SPRINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 3:
 					if (iParam2 == 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31521) * Global_262145.f_31635));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31521 /* Tunable: TUNER_SPRINT_3RD_PLACE_XP */) * Global_262145.f_31635 /* Tunable: TUNER_SPRINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 == 3)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31525) * Global_262145.f_31635));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31525 /* Tunable: TUNER_SPRINT_3P_3RD_PLACE_XP */) * Global_262145.f_31635 /* Tunable: TUNER_SPRINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 4:
 					if (iParam2 == 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31522) * Global_262145.f_31635));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31522 /* Tunable: TUNER_SPRINT_4TH_PLACE_XP */) * Global_262145.f_31635 /* Tunable: TUNER_SPRINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 			}
@@ -78251,80 +78251,80 @@ int func_541(int iParam0, int iParam1, int iParam2)//Position - 0x5710A
 				case 1:
 					if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31562) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31562 /* Tunable: TUNER_STREET_1ST_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 3 && iParam2 <= 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31570) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31570 /* Tunable: TUNER_STREET_3P_1ST_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 1 && iParam2 <= 2)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31574) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31574 /* Tunable: TUNER_STREET_2P_1ST_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 2:
 					if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31563) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31563 /* Tunable: TUNER_STREET_2ND_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 3 && iParam2 <= 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31571) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31571 /* Tunable: TUNER_STREET_3P_2ND_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 1 && iParam2 <= 2)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31575) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31575 /* Tunable: TUNER_STREET_2P_2ND_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 3:
 					if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31564) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31564 /* Tunable: TUNER_STREET_3RD_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 3 && iParam2 <= 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31572) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31572 /* Tunable: TUNER_STREET_3P_3RD_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 4:
 					if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31565) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31565 /* Tunable: TUNER_STREET_4TH_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 3 && iParam2 <= 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31573) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31573 /* Tunable: TUNER_STREET_3P_4TH_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 5:
 					if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31566) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31566 /* Tunable: TUNER_STREET_5TH_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 6:
 					if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31567) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31567 /* Tunable: TUNER_STREET_6TH_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 7:
 					if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31568) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31568 /* Tunable: TUNER_STREET_7TH_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 8:
 					if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31569) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31569 /* Tunable: TUNER_STREET_8TH_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 			}
@@ -78336,168 +78336,168 @@ int func_541(int iParam0, int iParam1, int iParam2)//Position - 0x5710A
 				case 1:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31576) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31576 /* Tunable: TUNER_PURSUIT_1ST_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31592) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31592 /* Tunable: TUNER_PURSUIT_5P_1ST_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 3 && iParam2 <= 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31600) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31600 /* Tunable: TUNER_PURSUIT_3P_1ST_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 1 && iParam2 <= 2)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31604) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31604 /* Tunable: TUNER_PURSUIT_2P_1ST_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 2:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31577) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31577 /* Tunable: TUNER_PURSUIT_2ND_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31593) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31593 /* Tunable: TUNER_PURSUIT_5P_2ND_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 3 && iParam2 <= 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31601) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31601 /* Tunable: TUNER_PURSUIT_3P_2ND_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 1 && iParam2 <= 2)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31605) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31605 /* Tunable: TUNER_PURSUIT_2P_2ND_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 3:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31578) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31578 /* Tunable: TUNER_PURSUIT_3RD_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31594) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31594 /* Tunable: TUNER_PURSUIT_5P_3RD_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 3 && iParam2 <= 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31602) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31602 /* Tunable: TUNER_PURSUIT_3P_3RD_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 4:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31579) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31579 /* Tunable: TUNER_PURSUIT_4TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31595) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31595 /* Tunable: TUNER_PURSUIT_5P_4TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 3 && iParam2 <= 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31603) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31603 /* Tunable: TUNER_PURSUIT_3P_4TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 5:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31580) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31580 /* Tunable: TUNER_PURSUIT_5TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31596) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31596 /* Tunable: TUNER_PURSUIT_5P_5TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 6:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31581) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31581 /* Tunable: TUNER_PURSUIT_6TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31597) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31597 /* Tunable: TUNER_PURSUIT_5P_6TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 7:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31582) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31582 /* Tunable: TUNER_PURSUIT_7TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31598) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31598 /* Tunable: TUNER_PURSUIT_5P_7TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 8:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31583) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31583 /* Tunable: TUNER_PURSUIT_8TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31599) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31599 /* Tunable: TUNER_PURSUIT_5P_8TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 9:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31584) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31584 /* Tunable: TUNER_PURSUIT_9TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 10:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31585) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31585 /* Tunable: TUNER_PURSUIT_10TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 11:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31586) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31586 /* Tunable: TUNER_PURSUIT_11TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 12:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31587) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31587 /* Tunable: TUNER_PURSUIT_12TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 13:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31588) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31588 /* Tunable: TUNER_PURSUIT_13TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 14:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31589) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31589 /* Tunable: TUNER_PURSUIT_14TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 15:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31590) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31590 /* Tunable: TUNER_PURSUIT_15TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 16:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31591) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31591 /* Tunable: TUNER_PURSUIT_16TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 			}
@@ -78509,48 +78509,48 @@ int func_541(int iParam0, int iParam1, int iParam2)//Position - 0x5710A
 				case 1:
 					if (iParam2 == 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31534) * Global_262145.f_31638));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31534 /* Tunable: TUNER_CHECKPOINT_1ST_PLACE_XP */) * Global_262145.f_31638 /* Tunable: TUNER_CHECKPOINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 == 3)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31538) * Global_262145.f_31638));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31538 /* Tunable: TUNER_CHECKPOINT_3P_1ST_PLACE_XP */) * Global_262145.f_31638 /* Tunable: TUNER_CHECKPOINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 == 2)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31541) * Global_262145.f_31638));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31541 /* Tunable: TUNER_CHECKPOINT_2P_1ST_PLACE_XP */) * Global_262145.f_31638 /* Tunable: TUNER_CHECKPOINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 2:
 					if (iParam2 == 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31535) * Global_262145.f_31638));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31535 /* Tunable: TUNER_CHECKPOINT_2ND_PLACE_XP */) * Global_262145.f_31638 /* Tunable: TUNER_CHECKPOINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 == 3)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31539) * Global_262145.f_31638));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31539 /* Tunable: TUNER_CHECKPOINT_3P_2ND_PLACE_XP */) * Global_262145.f_31638 /* Tunable: TUNER_CHECKPOINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 == 2)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31542) * Global_262145.f_31638));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31542 /* Tunable: TUNER_CHECKPOINT_2P_2ND_PLACE_XP */) * Global_262145.f_31638 /* Tunable: TUNER_CHECKPOINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 3:
 					if (iParam2 == 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31536) * Global_262145.f_31638));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31536 /* Tunable: TUNER_CHECKPOINT_3RD_PLACE_XP */) * Global_262145.f_31638 /* Tunable: TUNER_CHECKPOINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 == 3)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31540) * Global_262145.f_31638));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31540 /* Tunable: TUNER_CHECKPOINT_3P_3RD_PLACE_XP */) * Global_262145.f_31638 /* Tunable: TUNER_CHECKPOINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 4:
 					if (iParam2 == 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31537) * Global_262145.f_31638));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31537 /* Tunable: TUNER_CHECKPOINT_4TH_PLACE_XP */) * Global_262145.f_31638 /* Tunable: TUNER_CHECKPOINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 			}
@@ -78560,45 +78560,45 @@ int func_541(int iParam0, int iParam1, int iParam2)//Position - 0x5710A
 			switch (iParam1)
 			{
 				case 1:
-					iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31545) * Global_262145.f_31639));
+					iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31545 /* Tunable: TUNER_HEADTOHEAD_1ST_PLACE_XP */) * Global_262145.f_31639 /* Tunable: TUNER_HEADTOHEAD_RACE_PLACE_XP_MULTIPLIER */));
 					break;
 				
 				case 2:
-					iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31546) * Global_262145.f_31639));
+					iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31546 /* Tunable: TUNER_HEADTOHEAD_2ND_PLACE_XP */) * Global_262145.f_31639 /* Tunable: TUNER_HEADTOHEAD_RACE_PLACE_XP_MULTIPLIER */));
 					break;
 			}
 			break;
 		
 		case 24:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31558) * Global_262145.f_31640));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31558 /* Tunable: TUNER_CARCLUB_VISITS_7_STREAK_XP */) * Global_262145.f_31640 /* Tunable: TUNER_CARCLUB_VISITS_STREAK_XP_MULTIPLIER */));
 			break;
 		
 		case 25:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31559) * Global_262145.f_31640));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31559 /* Tunable: TUNER_CARCLUB_VISITS_14_STREAK_XP */) * Global_262145.f_31640 /* Tunable: TUNER_CARCLUB_VISITS_STREAK_XP_MULTIPLIER */));
 			break;
 		
 		case 26:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31560) * Global_262145.f_31640));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31560 /* Tunable: TUNER_CARCLUB_VISITS_30_STREAK_XP */) * Global_262145.f_31640 /* Tunable: TUNER_CARCLUB_VISITS_STREAK_XP_MULTIPLIER */));
 			break;
 		
 		case 27:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31557) * Global_262145.f_31641));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31557 /* Tunable: TUNER_CARCLUB_TIME_XP */) * Global_262145.f_31641 /* Tunable: TUNER_CARCLUB_TIME_XP_MULTIPLIER */));
 			break;
 		
 		case 28:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31554) * Global_262145.f_31642));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31554 /* Tunable: TUNER_SANDBOX_TIME_XP */) * Global_262145.f_31642 /* Tunable: TUNER_SANDBOX_TIME_XP_MULTIPLIER */));
 			break;
 		
 		case 29:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31652) * Global_262145.f_31654));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31652 /* Tunable: TUNER_CARCLUB_TIME_XP_MERCH */) * Global_262145.f_31654 /* Tunable: TUNER_CARCLUB_TIME_XP_MERCH_MULTIPLIER */));
 			break;
 		
 		case 30:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31653) * Global_262145.f_31655));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31653 /* Tunable: TUNER_SANDBOX_TIME_XP_MERCH */) * Global_262145.f_31655 /* Tunable: TUNER_SANDBOX_TIME_XP_MERCH_MULTIPLIER */));
 			break;
 		
 		case 31:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31561) * Global_262145.f_31643));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31561 /* Tunable: TUNER_MERCH_PURCHASE_XP */) * Global_262145.f_31643 /* Tunable: TUNER_MERCH_PURCHASE_XP_MULTIPLIER */));
 			break;
 		
 		case 32:
@@ -79525,723 +79525,723 @@ void func_560(var uParam0, struct<4> Param1)//Position - 0x5913C
 		switch (iVar0)
 		{
 			case joaat("TAT_BB_000"):
-				*uParam0 = Global_262145.f_7555;
+				*uParam0 = Global_262145.f_7555 /* Tunable: DLC_FEMALE_TATTOOS_LOS_SANTOS_WREATH */;
 				break;
 			
 			case joaat("TAT_BB_001"):
-				*uParam0 = Global_262145.f_7556;
+				*uParam0 = Global_262145.f_7556 /* Tunable: DLC_FEMALE_TATTOOS_HIBISCUS_FLOWER_DUO */;
 				break;
 			
 			case joaat("TAT_BB_002"):
-				*uParam0 = Global_262145.f_7557;
+				*uParam0 = Global_262145.f_7557 /* Tunable: DLC_FEMALE_TATTOOS_TRIBAL_FLOWER */;
 				break;
 			
 			case joaat("TAT_BB_003"):
-				*uParam0 = Global_262145.f_7558;
+				*uParam0 = Global_262145.f_7558 /* Tunable: DLC_FEMALE_TATTOOS_ROCK_SOLID */;
 				break;
 			
 			case joaat("TAT_BB_004"):
-				*uParam0 = Global_262145.f_7559;
+				*uParam0 = Global_262145.f_7559 /* Tunable: DLC_FEMALE_TATTOOS_CATFISH */;
 				break;
 			
 			case joaat("TAT_BB_005"):
-				*uParam0 = Global_262145.f_7560;
+				*uParam0 = Global_262145.f_7560 /* Tunable: DLC_FEMALE_TATTOOS_SHRIMP */;
 				break;
 			
 			case joaat("TAT_BB_006"):
-				*uParam0 = Global_262145.f_7561;
+				*uParam0 = Global_262145.f_7561 /* Tunable: DLC_FEMALE_TATTOOS_LOVE_DAGGER */;
 				break;
 			
 			case joaat("TAT_BB_007"):
-				*uParam0 = Global_262145.f_7562;
+				*uParam0 = Global_262145.f_7562 /* Tunable: DLC_FEMALE_TATTOOS_SCHOOL_OF_FISH */;
 				break;
 			
 			case joaat("TAT_BB_008"):
-				*uParam0 = Global_262145.f_7563;
+				*uParam0 = Global_262145.f_7563 /* Tunable: DLC_FEMALE_TATTOOS_TRIBAL_BUTTERFLY */;
 				break;
 			
 			case joaat("TAT_BB_009"):
-				*uParam0 = Global_262145.f_7564;
+				*uParam0 = Global_262145.f_7564 /* Tunable: DLC_FEMALE_TATTOOS_HIBISCUS_FLOWER */;
 				break;
 			
 			case joaat("TAT_BB_010"):
-				*uParam0 = Global_262145.f_7565;
+				*uParam0 = Global_262145.f_7565 /* Tunable: DLC_FEMALE_TATTOOS_DOLPHIN */;
 				break;
 			
 			case joaat("TAT_BB_011"):
-				*uParam0 = Global_262145.f_7566;
+				*uParam0 = Global_262145.f_7566 /* Tunable: DLC_FEMALE_TATTOOS_SEA_HORSES */;
 				break;
 			
 			case joaat("TAT_BB_012"):
-				*uParam0 = Global_262145.f_7567;
+				*uParam0 = Global_262145.f_7567 /* Tunable: DLC_FEMALE_TATTOOS_ANCHOR */;
 				break;
 			
 			case joaat("TAT_BB_013"):
-				*uParam0 = Global_262145.f_7567;
+				*uParam0 = Global_262145.f_7567 /* Tunable: DLC_FEMALE_TATTOOS_ANCHOR */;
 				break;
 			
 			case joaat("TAT_BB_014"):
-				*uParam0 = Global_262145.f_7568;
+				*uParam0 = Global_262145.f_7568 /* Tunable: DLC_FEMALE_TATTOOS_SWALLOW */;
 				break;
 			
 			case joaat("TAT_BB_015"):
-				*uParam0 = Global_262145.f_7569;
+				*uParam0 = Global_262145.f_7569 /* Tunable: DLC_FEMALE_TATTOOS_TRIBAL_FISH */;
 				break;
 			
 			case joaat("TAT_BB_016"):
-				*uParam0 = Global_262145.f_7570;
+				*uParam0 = Global_262145.f_7570 /* Tunable: DLC_FEMALE_TATTOOS_PARROT */;
 				break;
 			
 			case joaat("TAT_BUS_F_002"):
-				*uParam0 = Global_262145.f_7571;
+				*uParam0 = Global_262145.f_7571 /* Tunable: DLC_FEMALE_TATTOOS_HIGH_ROLLER */;
 				break;
 			
 			case joaat("TAT_BUS_F_000"):
-				*uParam0 = Global_262145.f_7572;
+				*uParam0 = Global_262145.f_7572 /* Tunable: DLC_FEMALE_TATTOOS_RESPECT */;
 				break;
 			
 			case joaat("TAT_BUS_F_006"):
-				*uParam0 = Global_262145.f_7573;
+				*uParam0 = Global_262145.f_7573 /* Tunable: DLC_FEMALE_TATTOOS_SINGLE */;
 				break;
 			
 			case joaat("TAT_BUS_F_007"):
-				*uParam0 = Global_262145.f_7574;
+				*uParam0 = Global_262145.f_7574 /* Tunable: DLC_FEMALE_TATTOOS_VALDEGRACE_LOGO */;
 				break;
 			
 			case joaat("TAT_BUS_F_008"):
-				*uParam0 = Global_262145.f_7575;
+				*uParam0 = Global_262145.f_7575 /* Tunable: DLC_FEMALE_TATTOOS_MONEY_ROSE */;
 				break;
 			
 			case joaat("TAT_BUS_F_010"):
-				*uParam0 = Global_262145.f_7576;
+				*uParam0 = Global_262145.f_7576 /* Tunable: DLC_FEMALE_TATTOOS_DIAMOND_CROWN */;
 				break;
 			
 			case joaat("TAT_BUS_F_009"):
-				*uParam0 = Global_262145.f_7577;
+				*uParam0 = Global_262145.f_7577 /* Tunable: DLC_FEMALE_TATTOOS_DOLLAR_SIGN */;
 				break;
 			
 			case joaat("TAT_BUS_F_011"):
-				*uParam0 = Global_262145.f_7578;
+				*uParam0 = Global_262145.f_7578 /* Tunable: DLC_FEMALE_TATTOOS_DIAMOND_JACK */;
 				break;
 			
 			case joaat("TAT_BUS_F_003"):
-				*uParam0 = Global_262145.f_7579;
+				*uParam0 = Global_262145.f_7579 /* Tunable: DLC_FEMALE_TATTOOS_MAKIN_MONEY */;
 				break;
 			
 			case joaat("TAT_BUS_F_001"):
-				*uParam0 = Global_262145.f_7580;
+				*uParam0 = Global_262145.f_7580 /* Tunable: DLC_FEMALE_TATTOOS_GOLD_DIGGER */;
 				break;
 			
 			case joaat("TAT_BUS_F_005"):
-				*uParam0 = Global_262145.f_7581;
+				*uParam0 = Global_262145.f_7581 /* Tunable: DLC_FEMALE_TATTOOS_GREED_IS_GOOD */;
 				break;
 			
 			case joaat("TAT_BUS_F_004"):
-				*uParam0 = Global_262145.f_7582;
+				*uParam0 = Global_262145.f_7582 /* Tunable: DLC_FEMALE_TATTOOS_LOVE_MONEY */;
 				break;
 			
 			case joaat("TAT_BUS_F_012"):
-				*uParam0 = Global_262145.f_7583;
+				*uParam0 = Global_262145.f_7583 /* Tunable: DLC_FEMALE_TATTOOS_SANTO_CAPRA_LOGO */;
 				break;
 			
 			case joaat("TAT_BUS_F_013"):
-				*uParam0 = Global_262145.f_7584;
+				*uParam0 = Global_262145.f_7584 /* Tunable: DLC_FEMALE_TATTOOS_MONEY_BAG */;
 				break;
 			
 			case joaat("TAT_BUS_F_014"):
-				*uParam0 = Global_262145.f_7585;
+				*uParam0 = Global_262145.f_7585 /* Tunable: DLC_FEMALE_TATTOOS_CREW_EMBLEM_CHEST */;
 				break;
 			
 			case joaat("TAT_BUS_F_015"):
-				*uParam0 = Global_262145.f_7586;
+				*uParam0 = Global_262145.f_7586 /* Tunable: DLC_FEMALE_TATTOOS_CREW_EMBLEM_ARM */;
 				break;
 			
 			case joaat("TAT_BB_017"):
-				*uParam0 = Global_262145.f_7587;
+				*uParam0 = Global_262145.f_7587 /* Tunable: DLC_MALE_TATTOO_MERMAID_LS */;
 				break;
 			
 			case joaat("TAT_BB_018"):
-				*uParam0 = Global_262145.f_7588;
+				*uParam0 = Global_262145.f_7588 /* Tunable: DLC_MALE_TATTOO_SHIP_ARMS */;
 				break;
 			
 			case joaat("TAT_BB_019"):
-				*uParam0 = Global_262145.f_7589;
+				*uParam0 = Global_262145.f_7589 /* Tunable: DLC_MALE_TATTOO_TRIBAL_HAMMERHEAD */;
 				break;
 			
 			case joaat("TAT_BB_020"):
-				*uParam0 = Global_262145.f_7590;
+				*uParam0 = Global_262145.f_7590 /* Tunable: DLC_MALE_TATTOO_TRIBAL_SHARK */;
 				break;
 			
 			case joaat("TAT_BB_021"):
-				*uParam0 = Global_262145.f_7591;
+				*uParam0 = Global_262145.f_7591 /* Tunable: DLC_MALE_TATTOO_PIRATE_SKULL */;
 				break;
 			
 			case joaat("TAT_BB_022"):
-				*uParam0 = Global_262145.f_7592;
+				*uParam0 = Global_262145.f_7592 /* Tunable: DLC_MALE_TATTOO_SURF_LS */;
 				break;
 			
 			case joaat("TAT_BB_023"):
-				*uParam0 = Global_262145.f_7593;
+				*uParam0 = Global_262145.f_7593 /* Tunable: DLC_MALE_TATTOO_SWORDFISH */;
 				break;
 			
 			case joaat("TAT_BB_024"):
-				*uParam0 = Global_262145.f_7594;
+				*uParam0 = Global_262145.f_7594 /* Tunable: DLC_MALE_TATTOO_TIKI_TOWER */;
 				break;
 			
 			case joaat("TAT_BB_025"):
-				*uParam0 = Global_262145.f_7595;
+				*uParam0 = Global_262145.f_7595 /* Tunable: DLC_MALE_TATTOO_TRIBAL_TIKI_TOWER */;
 				break;
 			
 			case joaat("TAT_BB_026"):
-				*uParam0 = Global_262145.f_7596;
+				*uParam0 = Global_262145.f_7596 /* Tunable: DLC_MALE_TATTOO_TRIBAL_SUN */;
 				break;
 			
 			case joaat("TAT_BB_027"):
-				*uParam0 = Global_262145.f_7597;
+				*uParam0 = Global_262145.f_7597 /* Tunable: DLC_MALE_TATTOO_TRIBAL_STAR */;
 				break;
 			
 			case joaat("TAT_BB_028"):
-				*uParam0 = Global_262145.f_7598;
+				*uParam0 = Global_262145.f_7598 /* Tunable: DLC_MALE_TATTOO_LITTLE_FISH */;
 				break;
 			
 			case joaat("TAT_BB_029"):
-				*uParam0 = Global_262145.f_7599;
+				*uParam0 = Global_262145.f_7599 /* Tunable: DLC_MALE_TATTOO_SURFS_UP */;
 				break;
 			
 			case joaat("TAT_BB_030"):
-				*uParam0 = Global_262145.f_7600;
+				*uParam0 = Global_262145.f_7600 /* Tunable: DLC_MALE_TATTOO_VESPUCCI_BEAUTY */;
 				break;
 			
 			case joaat("TAT_BB_031"):
-				*uParam0 = Global_262145.f_7601;
+				*uParam0 = Global_262145.f_7601 /* Tunable: DLC_MALE_TATTOO_SHARK */;
 				break;
 			
 			case joaat("TAT_BB_032"):
-				*uParam0 = Global_262145.f_7602;
+				*uParam0 = Global_262145.f_7602 /* Tunable: DLC_MALE_TATTOO_WHEEL */;
 				break;
 			
 			case joaat("TAT_BUS_005"):
-				*uParam0 = Global_262145.f_7603;
+				*uParam0 = Global_262145.f_7603 /* Tunable: DLC_MALE_TATTOO_CASH_KING */;
 				break;
 			
 			case joaat("TAT_BUS_003"):
-				*uParam0 = Global_262145.f_7604;
+				*uParam0 = Global_262145.f_7604 /* Tunable: DLC_MALE_TATTOO_100_BILL */;
 				break;
 			
 			case joaat("TAT_BUS_011"):
-				*uParam0 = Global_262145.f_7605;
+				*uParam0 = Global_262145.f_7605 /* Tunable: DLC_MALE_TATTOO_HUSTLER */;
 				break;
 			
 			case joaat("TAT_BUS_000"):
-				*uParam0 = Global_262145.f_7606;
+				*uParam0 = Global_262145.f_7606 /* Tunable: DLC_MALE_TATTOO_MAKIN_PAPER */;
 				break;
 			
 			case joaat("TAT_BUS_006"):
-				*uParam0 = Global_262145.f_7607;
+				*uParam0 = Global_262145.f_7607 /* Tunable: DLC_MALE_TATTOO_BOLD_DOLLAR_SIGN */;
 				break;
 			
 			case joaat("TAT_BUS_007"):
-				*uParam0 = Global_262145.f_7608;
+				*uParam0 = Global_262145.f_7608 /* Tunable: DLC_MALE_TATTOO_SCRIPT_DOLLAR_SIGN */;
 				break;
 			
 			case joaat("TAT_BUS_008"):
-				*uParam0 = Global_262145.f_7609;
+				*uParam0 = Global_262145.f_7609 /* Tunable: DLC_MALE_TATTOO_100 */;
 				break;
 			
 			case joaat("TAT_BUS_009"):
-				*uParam0 = Global_262145.f_7610;
+				*uParam0 = Global_262145.f_7610 /* Tunable: DLC_MALE_TATTOO_DOLLAR_SKULL */;
 				break;
 			
 			case joaat("TAT_BUS_001"):
-				*uParam0 = Global_262145.f_7611;
+				*uParam0 = Global_262145.f_7611 /* Tunable: DLC_MALE_TATTOO_RICH */;
 				break;
 			
 			case joaat("TAT_BUS_002"):
-				*uParam0 = Global_262145.f_7612;
+				*uParam0 = Global_262145.f_7612 /* Tunable: DLC_MALE_TATTOO_DOLLAR_SIGNS */;
 				break;
 			
 			case joaat("TAT_BUS_004"):
-				*uParam0 = Global_262145.f_7613;
+				*uParam0 = Global_262145.f_7613 /* Tunable: DLC_MALE_TATTOO_ALLSEEING_EYE */;
 				break;
 			
 			case joaat("TAT_BUS_010"):
-				*uParam0 = Global_262145.f_7614;
+				*uParam0 = Global_262145.f_7614 /* Tunable: DLC_MALE_TATTOO_GREEN */;
 				break;
 			
 			case joaat("TAT_BUS_012"):
-				*uParam0 = Global_262145.f_7615;
+				*uParam0 = Global_262145.f_7615 /* Tunable: DLC_MALE_TATTOO_CREW_EMBLEM_CHEST */;
 				break;
 			
 			case joaat("TAT_BUS_013"):
-				*uParam0 = Global_262145.f_7616;
+				*uParam0 = Global_262145.f_7616 /* Tunable: DLC_MALE_TATTOO_CREW_EMBLEM_ARM */;
 				break;
 			
 			case joaat("TAT_X2_000"):
-				*uParam0 = Global_262145.f_9418;
+				*uParam0 = Global_262145.f_9418 /* Tunable: TATTOOS_XMAS14_SKULL_RIDER */;
 				break;
 			
 			case joaat("TAT_X2_001"):
-				*uParam0 = Global_262145.f_9419;
+				*uParam0 = Global_262145.f_9419 /* Tunable: TATTOOS_XMAS14_SPIDER_OUTLINE */;
 				break;
 			
 			case joaat("TAT_X2_002"):
-				*uParam0 = Global_262145.f_9420;
+				*uParam0 = Global_262145.f_9420 /* Tunable: TATTOOS_XMAS14_SPIDER_COLOR */;
 				break;
 			
 			case joaat("TAT_X2_003"):
-				*uParam0 = Global_262145.f_9421;
+				*uParam0 = Global_262145.f_9421 /* Tunable: TATTOOS_XMAS14_SNAKE_OUTLINE */;
 				break;
 			
 			case joaat("TAT_X2_004"):
-				*uParam0 = Global_262145.f_9422;
+				*uParam0 = Global_262145.f_9422 /* Tunable: TATTOOS_XMAS14_SNAKE_SHADED */;
 				break;
 			
 			case joaat("TAT_X2_005"):
-				*uParam0 = Global_262145.f_9423;
+				*uParam0 = Global_262145.f_9423 /* Tunable: TATTOOS_XMAS14_CARP_OUTLINE */;
 				break;
 			
 			case joaat("TAT_X2_006"):
-				*uParam0 = Global_262145.f_9424;
+				*uParam0 = Global_262145.f_9424 /* Tunable: TATTOOS_XMAS14_CARP_SHADED */;
 				break;
 			
 			case joaat("TAT_X2_007"):
-				*uParam0 = Global_262145.f_9425;
+				*uParam0 = Global_262145.f_9425 /* Tunable: TATTOOS_XMAS14_LOS_MUERTOS */;
 				break;
 			
 			case joaat("TAT_X2_008"):
-				*uParam0 = Global_262145.f_9426;
+				*uParam0 = Global_262145.f_9426 /* Tunable: TATTOOS_XMAS14_DEATH_BEFORE_DISHONOR */;
 				break;
 			
 			case joaat("TAT_X2_009"):
-				*uParam0 = Global_262145.f_9427;
+				*uParam0 = Global_262145.f_9427 /* Tunable: TATTOOS_XMAS14_TIME_TO_DIE */;
 				break;
 			
 			case joaat("TAT_X2_010"):
-				*uParam0 = Global_262145.f_9428;
+				*uParam0 = Global_262145.f_9428 /* Tunable: TATTOOS_XMAS14_ELECTRIC_SNAKE */;
 				break;
 			
 			case joaat("TAT_X2_011"):
-				*uParam0 = Global_262145.f_9429;
+				*uParam0 = Global_262145.f_9429 /* Tunable: TATTOOS_XMAS14_ROARING_TIGER */;
 				break;
 			
 			case joaat("TAT_X2_012"):
-				*uParam0 = Global_262145.f_9430;
+				*uParam0 = Global_262145.f_9430 /* Tunable: TATTOOS_XMAS14_8_BALL_SKULL */;
 				break;
 			
 			case joaat("TAT_X2_013"):
-				*uParam0 = Global_262145.f_9431;
+				*uParam0 = Global_262145.f_9431 /* Tunable: TATTOOS_XMAS14_LIZARD */;
 				break;
 			
 			case joaat("TAT_X2_014"):
-				*uParam0 = Global_262145.f_9432;
+				*uParam0 = Global_262145.f_9432 /* Tunable: TATTOOS_XMAS14_FLORAL_DAGGER */;
 				break;
 			
 			case joaat("TAT_X2_015"):
-				*uParam0 = Global_262145.f_9433;
+				*uParam0 = Global_262145.f_9433 /* Tunable: TATTOOS_XMAS14_JAPANESE_WARRIOR */;
 				break;
 			
 			case joaat("TAT_X2_016"):
-				*uParam0 = Global_262145.f_9434;
+				*uParam0 = Global_262145.f_9434 /* Tunable: TATTOOS_XMAS14_LOOSE_LIPS_OUTLINE */;
 				break;
 			
 			case joaat("TAT_X2_017"):
-				*uParam0 = Global_262145.f_9435;
+				*uParam0 = Global_262145.f_9435 /* Tunable: TATTOOS_XMAS14_LOOSE_LIPS_COLOR */;
 				break;
 			
 			case joaat("TAT_X2_018"):
-				*uParam0 = Global_262145.f_9436;
+				*uParam0 = Global_262145.f_9436 /* Tunable: TATTOOS_XMAS14_ROYAL_DAGGER_OUTLINE */;
 				break;
 			
 			case joaat("TAT_X2_019"):
-				*uParam0 = Global_262145.f_9437;
+				*uParam0 = Global_262145.f_9437 /* Tunable: TATTOOS_XMAS14_ROYAL_DAGGER_COLOR */;
 				break;
 			
 			case joaat("TAT_X2_020"):
-				*uParam0 = Global_262145.f_9438;
+				*uParam0 = Global_262145.f_9438 /* Tunable: TATTOOS_XMAS14_TIMES_UP_OUTLINE */;
 				break;
 			
 			case joaat("TAT_X2_021"):
-				*uParam0 = Global_262145.f_9439;
+				*uParam0 = Global_262145.f_9439 /* Tunable: TATTOOS_XMAS14_TIMES_UP_COLOR */;
 				break;
 			
 			case joaat("TAT_X2_022"):
-				*uParam0 = Global_262145.f_9440;
+				*uParam0 = Global_262145.f_9440 /* Tunable: TATTOOS_XMAS14_YOURE_NEXT_OUTLINE */;
 				break;
 			
 			case joaat("TAT_X2_023"):
-				*uParam0 = Global_262145.f_9441;
+				*uParam0 = Global_262145.f_9441 /* Tunable: TATTOOS_XMAS14_YOURE_NEXT_COLOR */;
 				break;
 			
 			case joaat("TAT_X2_024"):
-				*uParam0 = Global_262145.f_9442;
+				*uParam0 = Global_262145.f_9442 /* Tunable: TATTOOS_XMAS14_SNAKE_HEAD_OUTLINE */;
 				break;
 			
 			case joaat("TAT_X2_025"):
-				*uParam0 = Global_262145.f_9443;
+				*uParam0 = Global_262145.f_9443 /* Tunable: TATTOOS_XMAS14_SNAKE_HEAD_COLOR */;
 				break;
 			
 			case joaat("TAT_X2_026"):
-				*uParam0 = Global_262145.f_9444;
+				*uParam0 = Global_262145.f_9444 /* Tunable: TATTOOS_XMAS14_FUCK_LUCK_OUTLINE */;
 				break;
 			
 			case joaat("TAT_X2_027"):
-				*uParam0 = Global_262145.f_9445;
+				*uParam0 = Global_262145.f_9445 /* Tunable: TATTOOS_XMAS14_FUCK_LUCK_COLOR */;
 				break;
 			
 			case joaat("TAT_X2_028"):
-				*uParam0 = Global_262145.f_9446;
+				*uParam0 = Global_262145.f_9446 /* Tunable: TATTOOS_XMAS14_EXECUTIONER */;
 				break;
 			
 			case joaat("TAT_X2_029"):
-				*uParam0 = Global_262145.f_9447;
+				*uParam0 = Global_262145.f_9447 /* Tunable: TATTOOS_XMAS14_BEAUTIFUL_DEATH */;
 				break;
 		}
 		switch (iVar0)
 		{
 			case joaat("TAT_ST_000"):
-				*uParam0 = Global_262145.f_17266;
+				*uParam0 = Global_262145.f_17266 /* Tunable: STUNT_STUNT_SKULL */;
 				break;
 			
 			case joaat("TAT_ST_001"):
-				*uParam0 = Global_262145.f_17267;
+				*uParam0 = Global_262145.f_17267 /* Tunable: STUNT_8_EYED_SKULL */;
 				break;
 			
 			case joaat("TAT_ST_002"):
-				*uParam0 = Global_262145.f_17268;
+				*uParam0 = Global_262145.f_17268 /* Tunable: STUNT_BIG_CAT */;
 				break;
 			
 			case joaat("TAT_ST_003"):
-				*uParam0 = Global_262145.f_17269;
+				*uParam0 = Global_262145.f_17269 /* Tunable: STUNT_POISON_WRENCH */;
 				break;
 			
 			case joaat("TAT_ST_004"):
-				*uParam0 = Global_262145.f_17270;
+				*uParam0 = Global_262145.f_17270 /* Tunable: STUNT_SCORPION_ */;
 				break;
 			
 			case joaat("TAT_ST_005"):
-				*uParam0 = Global_262145.f_17271;
+				*uParam0 = Global_262145.f_17271 /* Tunable: STUNT_DEMON_SPARK_PLUG */;
 				break;
 			
 			case joaat("TAT_ST_006"):
-				*uParam0 = Global_262145.f_17272;
+				*uParam0 = Global_262145.f_17272 /* Tunable: STUNT_TOXIC_SPIDER */;
 				break;
 			
 			case joaat("TAT_ST_007"):
-				*uParam0 = Global_262145.f_17273;
+				*uParam0 = Global_262145.f_17273 /* Tunable: STUNTDAGGER_DEVIL */;
 				break;
 			
 			case joaat("TAT_ST_008"):
-				*uParam0 = Global_262145.f_17274;
+				*uParam0 = Global_262145.f_17274 /* Tunable: STUNT_MOONLIGHT_RIDE */;
 				break;
 			
 			case joaat("TAT_ST_009"):
-				*uParam0 = Global_262145.f_17275;
+				*uParam0 = Global_262145.f_17275 /* Tunable: STUNT_ARACHNID_OF_DEATH */;
 				break;
 			
 			case joaat("TAT_ST_010"):
-				*uParam0 = Global_262145.f_17276;
+				*uParam0 = Global_262145.f_17276 /* Tunable: STUNT_GRAVE_VULTURE */;
 				break;
 			
 			case joaat("TAT_ST_011"):
-				*uParam0 = Global_262145.f_17277;
+				*uParam0 = Global_262145.f_17277 /* Tunable: STUNT_WHEELS_OF_DEATH */;
 				break;
 			
 			case joaat("TAT_ST_012"):
-				*uParam0 = Global_262145.f_17278;
+				*uParam0 = Global_262145.f_17278 /* Tunable: STUNT_PUNK_BIKER_ */;
 				break;
 			
 			case joaat("TAT_ST_013"):
-				*uParam0 = Global_262145.f_17279;
+				*uParam0 = Global_262145.f_17279 /* Tunable: STUNT_DIRT_TRACK_HERO */;
 				break;
 			
 			case joaat("TAT_ST_014"):
-				*uParam0 = Global_262145.f_17280;
+				*uParam0 = Global_262145.f_17280 /* Tunable: STUNT_BAT_CAT_OF_SPADES */;
 				break;
 			
 			case joaat("TAT_ST_015"):
-				*uParam0 = Global_262145.f_17281;
+				*uParam0 = Global_262145.f_17281 /* Tunable: STUNT_PRAYING_GLOVES */;
 				break;
 			
 			case joaat("TAT_ST_016"):
-				*uParam0 = Global_262145.f_17282;
+				*uParam0 = Global_262145.f_17282 /* Tunable: STUNT_COFFIN_RACER */;
 				break;
 			
 			case joaat("TAT_ST_017"):
-				*uParam0 = Global_262145.f_17283;
+				*uParam0 = Global_262145.f_17283 /* Tunable: STUNT_BAT_WHEEL */;
 				break;
 			
 			case joaat("TAT_ST_018"):
-				*uParam0 = Global_262145.f_17284;
+				*uParam0 = Global_262145.f_17284 /* Tunable: STUNT_VINTAGE_BULLY */;
 				break;
 			
 			case joaat("TAT_ST_019"):
-				*uParam0 = Global_262145.f_17285;
+				*uParam0 = Global_262145.f_17285 /* Tunable: STUNT_ENGINE_HEART */;
 				break;
 			
 			case joaat("TAT_ST_020"):
-				*uParam0 = Global_262145.f_17286;
+				*uParam0 = Global_262145.f_17286 /* Tunable: STUNT_PISTON_ANGEL */;
 				break;
 			
 			case joaat("TAT_ST_021"):
-				*uParam0 = Global_262145.f_17287;
+				*uParam0 = Global_262145.f_17287 /* Tunable: STUNT_GOLDEN_COBRA */;
 				break;
 			
 			case joaat("TAT_ST_022"):
-				*uParam0 = Global_262145.f_17288;
+				*uParam0 = Global_262145.f_17288 /* Tunable: STUNT_PISTON_HEAD */;
 				break;
 			
 			case joaat("TAT_ST_023"):
-				*uParam0 = Global_262145.f_17289;
+				*uParam0 = Global_262145.f_17289 /* Tunable: STUNT_TANKED_ */;
 				break;
 			
 			case joaat("TAT_ST_024"):
-				*uParam0 = Global_262145.f_17290;
+				*uParam0 = Global_262145.f_17290 /* Tunable: STUNT_ROAD_KILL */;
 				break;
 			
 			case joaat("TAT_ST_025"):
-				*uParam0 = Global_262145.f_17291;
+				*uParam0 = Global_262145.f_17291 /* Tunable: STUNT_SPEED_FREAK */;
 				break;
 			
 			case joaat("TAT_ST_026"):
-				*uParam0 = Global_262145.f_17292;
+				*uParam0 = Global_262145.f_17292 /* Tunable: STUNT_WINGED_WHEEL */;
 				break;
 			
 			case joaat("TAT_ST_027"):
-				*uParam0 = Global_262145.f_17293;
+				*uParam0 = Global_262145.f_17293 /* Tunable: STUNT_PUNK_ROAD_HOG */;
 				break;
 			
 			case joaat("TAT_ST_028"):
-				*uParam0 = Global_262145.f_17294;
+				*uParam0 = Global_262145.f_17294 /* Tunable: STUNT_QUAD_GOBLIN */;
 				break;
 			
 			case joaat("TAT_ST_029"):
-				*uParam0 = Global_262145.f_17295;
+				*uParam0 = Global_262145.f_17295 /* Tunable: STUNT_MAJESTIC_FINISH */;
 				break;
 			
 			case joaat("TAT_ST_030"):
-				*uParam0 = Global_262145.f_17296;
+				*uParam0 = Global_262145.f_17296 /* Tunable: STUNT_MANS_RUIN_ */;
 				break;
 			
 			case joaat("TAT_ST_031"):
-				*uParam0 = Global_262145.f_17297;
+				*uParam0 = Global_262145.f_17297 /* Tunable: STUNT_STUNT_JESUS */;
 				break;
 			
 			case joaat("TAT_ST_032"):
-				*uParam0 = Global_262145.f_17298;
+				*uParam0 = Global_262145.f_17298 /* Tunable: STUNT_WHEELIE_MOUSE */;
 				break;
 			
 			case joaat("TAT_ST_033"):
-				*uParam0 = Global_262145.f_17299;
+				*uParam0 = Global_262145.f_17299 /* Tunable: STUNT_SUGAR_SKULL_TRUCKER */;
 				break;
 			
 			case joaat("TAT_ST_034"):
-				*uParam0 = Global_262145.f_17300;
+				*uParam0 = Global_262145.f_17300 /* Tunable: STUNT_FEATHER_ROAD_KILL */;
 				break;
 			
 			case joaat("TAT_ST_035"):
-				*uParam0 = Global_262145.f_17301;
+				*uParam0 = Global_262145.f_17301 /* Tunable: STUNT_STUNTMANS_END */;
 				break;
 			
 			case joaat("TAT_ST_036"):
-				*uParam0 = Global_262145.f_17302;
+				*uParam0 = Global_262145.f_17302 /* Tunable: STUNT_BIKER_STALLION */;
 				break;
 			
 			case joaat("TAT_ST_037"):
-				*uParam0 = Global_262145.f_17303;
+				*uParam0 = Global_262145.f_17303 /* Tunable: STUNT_BIG_GRILLS */;
 				break;
 			
 			case joaat("TAT_ST_038"):
-				*uParam0 = Global_262145.f_17304;
+				*uParam0 = Global_262145.f_17304 /* Tunable: STUNT_ONE_DOWN_FIVE_UP */;
 				break;
 			
 			case joaat("TAT_ST_039"):
-				*uParam0 = Global_262145.f_17305;
+				*uParam0 = Global_262145.f_17305 /* Tunable: STUNT_KABOOM */;
 				break;
 			
 			case joaat("TAT_ST_040"):
-				*uParam0 = Global_262145.f_17306;
+				*uParam0 = Global_262145.f_17306 /* Tunable: STUNT_MONKEY_CHOPPER */;
 				break;
 			
 			case joaat("TAT_ST_041"):
-				*uParam0 = Global_262145.f_17307;
+				*uParam0 = Global_262145.f_17307 /* Tunable: STUNT_BRAPP */;
 				break;
 			
 			case joaat("TAT_ST_042"):
-				*uParam0 = Global_262145.f_17308;
+				*uParam0 = Global_262145.f_17308 /* Tunable: STUNT_FLAMING_QUAD */;
 				break;
 			
 			case joaat("TAT_ST_043"):
-				*uParam0 = Global_262145.f_17309;
+				*uParam0 = Global_262145.f_17309 /* Tunable: STUNT_ENGINE_ARM */;
 				break;
 			
 			case joaat("TAT_ST_044"):
-				*uParam0 = Global_262145.f_17310;
+				*uParam0 = Global_262145.f_17310 /* Tunable: STUNT_RAM_SKULL */;
 				break;
 			
 			case joaat("TAT_ST_045"):
-				*uParam0 = Global_262145.f_17311;
+				*uParam0 = Global_262145.f_17311 /* Tunable: STUNT_SEVERED_HAND */;
 				break;
 			
 			case joaat("TAT_ST_046"):
-				*uParam0 = Global_262145.f_17312;
+				*uParam0 = Global_262145.f_17312 /* Tunable: STUNT_FULL_THROTLE */;
 				break;
 			
 			case joaat("TAT_ST_047"):
-				*uParam0 = Global_262145.f_17313;
+				*uParam0 = Global_262145.f_17313 /* Tunable: STUNT_BRAKE_KNIFE */;
 				break;
 			
 			case joaat("TAT_ST_048"):
-				*uParam0 = Global_262145.f_17314;
+				*uParam0 = Global_262145.f_17314 /* Tunable: STUNT_RACING_DOLL */;
 				break;
 			
 			case joaat("TAT_ST_049"):
-				*uParam0 = Global_262145.f_17315;
+				*uParam0 = Global_262145.f_17315 /* Tunable: STUNT_SEDUCTIVE_MECHANIC */;
 				break;
 		}
 		switch (iVar0)
 		{
 			case joaat("TAT_BI_000"):
-				*uParam0 = Global_262145.f_17927;
+				*uParam0 = Global_262145.f_17927 /* Tunable: BIKER_BOTH_GENDERS_DEMON_RIDER */;
 				break;
 			
 			case joaat("TAT_BI_001"):
-				*uParam0 = Global_262145.f_17928;
+				*uParam0 = Global_262145.f_17928 /* Tunable: BIKER_BOTH_GENDERS_BOTH_BARRELS */;
 				break;
 			
 			case joaat("TAT_BI_002"):
-				*uParam0 = Global_262145.f_17929;
+				*uParam0 = Global_262145.f_17929 /* Tunable: BIKER_BOTH_GENDERS_ROSE_TRIBUTE */;
 				break;
 			
 			case joaat("TAT_BI_003"):
-				*uParam0 = Global_262145.f_17930;
+				*uParam0 = Global_262145.f_17930 /* Tunable: BIKER_BOTH_GENDERS_WEB_RIDER */;
 				break;
 			
 			case joaat("TAT_BI_004"):
-				*uParam0 = Global_262145.f_17931;
+				*uParam0 = Global_262145.f_17931 /* Tunable: BIKER_BOTH_GENDERS_DRAGONS_FURY */;
 				break;
 			
 			case joaat("TAT_BI_005"):
-				*uParam0 = Global_262145.f_17932;
+				*uParam0 = Global_262145.f_17932 /* Tunable: BIKER_BOTH_GENDERS_MADE_IN_AMERICA */;
 				break;
 			
 			case joaat("TAT_BI_006"):
-				*uParam0 = Global_262145.f_17933;
+				*uParam0 = Global_262145.f_17933 /* Tunable: BIKER_BOTH_GENDERS_CHOPPER_FREEDOM */;
 				break;
 			
 			case joaat("TAT_BI_007"):
-				*uParam0 = Global_262145.f_17934;
+				*uParam0 = Global_262145.f_17934 /* Tunable: BIKER_BOTH_GENDERS_SWOOPING_EAGLE */;
 				break;
 			
 			case joaat("TAT_BI_008"):
-				*uParam0 = Global_262145.f_17935;
+				*uParam0 = Global_262145.f_17935 /* Tunable: BIKER_BOTH_GENDERS_FREEDOM_WHEELS */;
 				break;
 			
 			case joaat("TAT_BI_009"):
-				*uParam0 = Global_262145.f_17936;
+				*uParam0 = Global_262145.f_17936 /* Tunable: BIKER_BOTH_GENDERS_MORBID_ARACHNID */;
 				break;
 			
 			case joaat("TAT_BI_010"):
-				*uParam0 = Global_262145.f_17937;
+				*uParam0 = Global_262145.f_17937 /* Tunable: BIKER_BOTH_GENDERS_SKULL_OF_TAURUS */;
 				break;
 			
 			case joaat("TAT_BI_011"):
-				*uParam0 = Global_262145.f_17938;
+				*uParam0 = Global_262145.f_17938 /* Tunable: BIKER_BOTH_GENDERS_RIP_MY_BROTHERS */;
 				break;
 			
 			case joaat("TAT_BI_012"):
-				*uParam0 = Global_262145.f_17939;
+				*uParam0 = Global_262145.f_17939 /* Tunable: BIKER_BOTH_GENDERS_URBAN_STUNTER */;
 				break;
 			
 			case joaat("TAT_BI_013"):
-				*uParam0 = Global_262145.f_17940;
+				*uParam0 = Global_262145.f_17940 /* Tunable: BIKER_BOTH_GENDERS_DEMON_CROSSBONES */;
 				break;
 			
 			case joaat("TAT_BI_014"):
-				*uParam0 = Global_262145.f_17941;
+				*uParam0 = Global_262145.f_17941 /* Tunable: BIKER_BOTH_GENDERS_LADY_MORTALITY */;
 				break;
 			
 			case joaat("TAT_BI_015"):
-				*uParam0 = Global_262145.f_17942;
+				*uParam0 = Global_262145.f_17942 /* Tunable: BIKER_BOTH_GENDERS_RIDE_OR_DIE */;
 				break;
 			
 			case joaat("TAT_BI_016"):
-				*uParam0 = Global_262145.f_17943;
+				*uParam0 = Global_262145.f_17943 /* Tunable: BIKER_BOTH_GENDERS_MACABRE_TREE */;
 				break;
 			
 			case joaat("TAT_BI_017"):
-				*uParam0 = Global_262145.f_17944;
+				*uParam0 = Global_262145.f_17944 /* Tunable: BIKER_BOTH_GENDERS_CLAWED_BEAST */;
 				break;
 			
 			case joaat("TAT_BI_018"):
-				*uParam0 = Global_262145.f_17945;
+				*uParam0 = Global_262145.f_17945 /* Tunable: BIKER_BOTH_GENDERS_SKELETAL_CHOPPER */;
 				break;
 			
 			case joaat("TAT_BI_019"):
-				*uParam0 = Global_262145.f_17946;
+				*uParam0 = Global_262145.f_17946 /* Tunable: BIKER_BOTH_GENDERS_GRUESOME_TALONS */;
 				break;
 			
 			case joaat("TAT_BI_020"):
-				*uParam0 = Global_262145.f_17947;
+				*uParam0 = Global_262145.f_17947 /* Tunable: BIKER_BOTH_GENDERS_CRANIAL_ROSE */;
 				break;
 			
 			case joaat("TAT_BI_021"):
-				*uParam0 = Global_262145.f_17948;
+				*uParam0 = Global_262145.f_17948 /* Tunable: BIKER_BOTH_GENDERS_FLAMING_REAPER */;
 				break;
 			
 			case joaat("TAT_BI_022"):
-				*uParam0 = Global_262145.f_17949;
+				*uParam0 = Global_262145.f_17949 /* Tunable: BIKER_BOTH_GENDERS_WESTERN_INSIGNIA */;
 				break;
 			
 			case joaat("TAT_BI_023"):
-				*uParam0 = Global_262145.f_17950;
+				*uParam0 = Global_262145.f_17950 /* Tunable: BIKER_BOTH_GENDERS_WESTERN_MC */;
 				break;
 			
 			case joaat("TAT_BI_024"):
-				*uParam0 = Global_262145.f_17951;
+				*uParam0 = Global_262145.f_17951 /* Tunable: BIKER_BOTH_GENDERS_LIVE_TO_RIDE */;
 				break;
 			
 			case joaat("TAT_BI_025"):
-				*uParam0 = Global_262145.f_19008;
+				*uParam0 = Global_262145.f_19008 /* Tunable: TATTOO_GOOD_LUCK */;
 				break;
 			
 			case joaat("TAT_BI_026"):
-				*uParam0 = Global_262145.f_19009;
+				*uParam0 = Global_262145.f_19009 /* Tunable: TATTOO_AMERICAN_DREAM */;
 				break;
 			
 			case joaat("TAT_BI_027"):
-				*uParam0 = Global_262145.f_19010;
+				*uParam0 = Global_262145.f_19010 /* Tunable: TATTOO_BAD_LUCK */;
 				break;
 			
 			case joaat("TAT_BI_028"):
-				*uParam0 = Global_262145.f_19011;
+				*uParam0 = Global_262145.f_19011 /* Tunable: TATTOO_DUSK_RIDER */;
 				break;
 			
 			case joaat("TAT_BI_029"):
-				*uParam0 = Global_262145.f_19012;
+				*uParam0 = Global_262145.f_19012 /* Tunable: TATTOO_BONE_WRENCH */;
 				break;
 			
 			case joaat("TAT_BI_030"):
-				*uParam0 = Global_262145.f_19013;
+				*uParam0 = Global_262145.f_19013 /* Tunable: TATTOO_BROTHERS_FOR_LIFE */;
 				break;
 			
 			case joaat("TAT_BI_031"):
-				*uParam0 = Global_262145.f_19014;
+				*uParam0 = Global_262145.f_19014 /* Tunable: TATTOO_GEAR_HEAD */;
 				break;
 			
 			case joaat("TAT_BI_032"):
-				*uParam0 = Global_262145.f_19015;
+				*uParam0 = Global_262145.f_19015 /* Tunable: TATTOO_WESTERN_EAGLE */;
 				break;
 			
 			case joaat("TAT_BI_033"):
-				*uParam0 = Global_262145.f_19016;
+				*uParam0 = Global_262145.f_19016 /* Tunable: TATTOO_EAGLE_EMBLEM */;
 				break;
 			
 			case joaat("TAT_BI_034"):
-				*uParam0 = Global_262145.f_19017;
+				*uParam0 = Global_262145.f_19017 /* Tunable: TATTOO_BROTHERHOOD_OF_BIKES */;
 				break;
 			
 			case joaat("TAT_BI_035"):
-				*uParam0 = Global_262145.f_19018;
+				*uParam0 = Global_262145.f_19018 /* Tunable: TATTOO_CHAIN_FIST */;
 				break;
 			
 			case joaat("TAT_BI_036"):
@@ -80249,425 +80249,425 @@ void func_560(var uParam0, struct<4> Param1)//Position - 0x5913C
 				break;
 			
 			case joaat("TAT_BI_037"):
-				*uParam0 = Global_262145.f_19020;
+				*uParam0 = Global_262145.f_19020 /* Tunable: TATTOO_SCORCHED_SOUL */;
 				break;
 			
 			case joaat("TAT_BI_038"):
-				*uParam0 = Global_262145.f_19021;
+				*uParam0 = Global_262145.f_19021 /* Tunable: TATTOO_FTW */;
 				break;
 			
 			case joaat("TAT_BI_039"):
-				*uParam0 = Global_262145.f_19022;
+				*uParam0 = Global_262145.f_19022 /* Tunable: TATTOO_GAS_GUZZLER */;
 				break;
 			
 			case joaat("TAT_BI_040"):
-				*uParam0 = Global_262145.f_19023;
+				*uParam0 = Global_262145.f_19023 /* Tunable: TATTOO_AMERICAN_MADE */;
 				break;
 			
 			case joaat("TAT_BI_041"):
-				*uParam0 = Global_262145.f_19024;
+				*uParam0 = Global_262145.f_19024 /* Tunable: TATTOO_NO_REGRETS */;
 				break;
 			
 			case joaat("TAT_BI_042"):
-				*uParam0 = Global_262145.f_19025;
+				*uParam0 = Global_262145.f_19025 /* Tunable: TATTOO_GRIM_RIDER */;
 				break;
 			
 			case joaat("TAT_BI_043"):
-				*uParam0 = Global_262145.f_19026;
+				*uParam0 = Global_262145.f_19026 /* Tunable: TATTOO_RIDE_FOREVER */;
 				break;
 			
 			case joaat("TAT_BI_044"):
-				*uParam0 = Global_262145.f_19027;
+				*uParam0 = Global_262145.f_19027 /* Tunable: TATTOO_RIDE_FREE */;
 				break;
 			
 			case joaat("TAT_BI_045"):
-				*uParam0 = Global_262145.f_19028;
+				*uParam0 = Global_262145.f_19028 /* Tunable: TATTOO_RIDE_HARD_DIE_FAST */;
 				break;
 			
 			case joaat("TAT_BI_046"):
-				*uParam0 = Global_262145.f_19029;
+				*uParam0 = Global_262145.f_19029 /* Tunable: TATTOO_SKULL_CHAIN */;
 				break;
 			
 			case joaat("TAT_BI_047"):
-				*uParam0 = Global_262145.f_19030;
+				*uParam0 = Global_262145.f_19030 /* Tunable: TATTOO_SNAKE_BIKE */;
 				break;
 			
 			case joaat("TAT_BI_048"):
-				*uParam0 = Global_262145.f_19031;
+				*uParam0 = Global_262145.f_19031 /* Tunable: TATTOO_STFU */;
 				break;
 			
 			case joaat("TAT_BI_049"):
-				*uParam0 = Global_262145.f_19032;
+				*uParam0 = Global_262145.f_19032 /* Tunable: TATTOO_THESE_COLORS_DONT_RUN */;
 				break;
 			
 			case joaat("TAT_BI_050"):
-				*uParam0 = Global_262145.f_19033;
+				*uParam0 = Global_262145.f_19033 /* Tunable: TATTOO_UNFORGIVEN */;
 				break;
 			
 			case joaat("TAT_BI_051"):
-				*uParam0 = Global_262145.f_19041;
+				*uParam0 = Global_262145.f_19041 /* Tunable: WESTERN_STYLIZED */;
 				break;
 			
 			case joaat("TAT_BI_052"):
-				*uParam0 = Global_262145.f_19038;
+				*uParam0 = Global_262145.f_19038 /* Tunable: TATTOO_BIKER_MOUNT */;
 				break;
 			
 			case joaat("TAT_BI_053"):
-				*uParam0 = Global_262145.f_19039;
+				*uParam0 = Global_262145.f_19039 /* Tunable: TATTOO_MUFFLER_HELMET */;
 				break;
 			
 			case joaat("TAT_BI_054"):
-				*uParam0 = Global_262145.f_19037;
+				*uParam0 = Global_262145.f_19037 /* Tunable: TATTOO_MUM */;
 				break;
 			
 			case joaat("TAT_BI_055"):
-				*uParam0 = Global_262145.f_19036;
+				*uParam0 = Global_262145.f_19036 /* Tunable: TATTOO_POISON_SCORPION */;
 				break;
 			
 			case joaat("TAT_BI_056"):
-				*uParam0 = Global_262145.f_19034;
+				*uParam0 = Global_262145.f_19034 /* Tunable: TATTOO_BONE_CRUISER */;
 				break;
 			
 			case joaat("TAT_BI_057"):
-				*uParam0 = Global_262145.f_19035;
+				*uParam0 = Global_262145.f_19035 /* Tunable: TATTOO_LAUGHING_SKULL */;
 				break;
 			
 			case joaat("TAT_BI_058"):
-				*uParam0 = Global_262145.f_19040;
+				*uParam0 = Global_262145.f_19040 /* Tunable: TATTOO_REAPER_VULTURE */;
 				break;
 			
 			case joaat("TAT_BI_059"):
-				*uParam0 = Global_262145.f_19149;
+				*uParam0 = Global_262145.f_19149 /* Tunable: TATTOO_FAGGIO */;
 				break;
 			
 			case joaat("TAT_BI_060"):
-				*uParam0 = Global_262145.f_19150;
+				*uParam0 = Global_262145.f_19150 /* Tunable: TATTOO_WE_ARE_THE_MODS */;
 				break;
 		}
 		switch (iVar0)
 		{
 			case joaat("TAT_IE_000"):
-				*uParam0 = Global_262145.f_19750;
+				*uParam0 = Global_262145.f_19750 /* Tunable: IMPEXP_BOTH_GENDERS_BLOCK_BACK */;
 				break;
 			
 			case joaat("TAT_IE_001"):
-				*uParam0 = Global_262145.f_19751;
+				*uParam0 = Global_262145.f_19751 /* Tunable: IMPEXP_BOTH_GENDERS_POWER_PLANT */;
 				break;
 			
 			case joaat("TAT_IE_002"):
-				*uParam0 = Global_262145.f_19752;
+				*uParam0 = Global_262145.f_19752 /* Tunable: IMPEXP_BOTH_GENDERS_TUNED_TO_DEATH */;
 				break;
 			
 			case joaat("TAT_IE_003"):
-				*uParam0 = Global_262145.f_19753;
+				*uParam0 = Global_262145.f_19753 /* Tunable: IMPEXP_BOTH_GENDERS_MECHANICAL_SLEEVE */;
 				break;
 			
 			case joaat("TAT_IE_004"):
-				*uParam0 = Global_262145.f_19754;
+				*uParam0 = Global_262145.f_19754 /* Tunable: IMPEXP_BOTH_GENDERS_PISTON_SLEEVE */;
 				break;
 			
 			case joaat("TAT_IE_005"):
-				*uParam0 = Global_262145.f_19755;
+				*uParam0 = Global_262145.f_19755 /* Tunable: IMPEXP_BOTH_GENDERS_DIALLED_IN */;
 				break;
 			
 			case joaat("TAT_IE_006"):
-				*uParam0 = Global_262145.f_19756;
+				*uParam0 = Global_262145.f_19756 /* Tunable: IMPEXP_BOTH_GENDERS_ENGULFED_BLOCK */;
 				break;
 			
 			case joaat("TAT_IE_007"):
-				*uParam0 = Global_262145.f_19757;
+				*uParam0 = Global_262145.f_19757 /* Tunable: IMPEXP_BOTH_GENDERS_DRIVE_FOREVER */;
 				break;
 			
 			case joaat("TAT_IE_008"):
-				*uParam0 = Global_262145.f_19758;
+				*uParam0 = Global_262145.f_19758 /* Tunable: IMPEXP_BOTH_GENDERS_SCARLETT */;
 				break;
 			
 			case joaat("TAT_IE_009"):
-				*uParam0 = Global_262145.f_19759;
+				*uParam0 = Global_262145.f_19759 /* Tunable: IMPEXP_BOTH_GENDERS_SERPENTS_OF_DESTRUCTION */;
 				break;
 			
 			case joaat("TAT_IE_010"):
-				*uParam0 = Global_262145.f_19760;
+				*uParam0 = Global_262145.f_19760 /* Tunable: IMPEXP_BOTH_GENDERS_TAKE_THE_WHEEL */;
 				break;
 			
 			case joaat("TAT_IE_011"):
-				*uParam0 = Global_262145.f_19761;
+				*uParam0 = Global_262145.f_19761 /* Tunable: IMPEXP_BOTH_GENDERS_TALK_SHIT_GET_HIT */;
 				break;
 			
 			case joaat("TAT_GR_000"):
-				*uParam0 = Global_262145.f_20334;
+				*uParam0 = Global_262145.f_20334 /* Tunable: GR_BOTH_GENDERS_BULLET_PROOF */;
 				break;
 			
 			case joaat("TAT_GR_001"):
-				*uParam0 = Global_262145.f_20335;
+				*uParam0 = Global_262145.f_20335 /* Tunable: GR_BOTH_GENDERS_CROSSED_WEAPONS */;
 				break;
 			
 			case joaat("TAT_GR_002"):
-				*uParam0 = Global_262145.f_20336;
+				*uParam0 = Global_262145.f_20336 /* Tunable: GR_BOTH_GENDERS_GRENADE */;
 				break;
 			
 			case joaat("TAT_GR_003"):
-				*uParam0 = Global_262145.f_20337;
+				*uParam0 = Global_262145.f_20337 /* Tunable: GR_BOTH_GENDERS_LOCK_AND_LOAD */;
 				break;
 			
 			case joaat("TAT_GR_004"):
-				*uParam0 = Global_262145.f_20338;
+				*uParam0 = Global_262145.f_20338 /* Tunable: GR_BOTH_GENDERS_SIDEARM */;
 				break;
 			
 			case joaat("TAT_GR_005"):
-				*uParam0 = Global_262145.f_20339;
+				*uParam0 = Global_262145.f_20339 /* Tunable: GR_BOTH_GENDERS_PATRIOT_SKULL */;
 				break;
 			
 			case joaat("TAT_GR_006"):
-				*uParam0 = Global_262145.f_20340;
+				*uParam0 = Global_262145.f_20340 /* Tunable: GR_BOTH_GENDERS_COMBAT_SKULL */;
 				break;
 			
 			case joaat("TAT_GR_007"):
-				*uParam0 = Global_262145.f_20341;
+				*uParam0 = Global_262145.f_20341 /* Tunable: GR_BOTH_GENDERS_STYLIZED_TIGER */;
 				break;
 			
 			case joaat("TAT_GR_008"):
-				*uParam0 = Global_262145.f_21204;
+				*uParam0 = Global_262145.f_21204 /* Tunable: GR_BOTH_GENDERS_BANDOLIER */;
 				break;
 			
 			case joaat("TAT_GR_009"):
-				*uParam0 = Global_262145.f_21205;
+				*uParam0 = Global_262145.f_21205 /* Tunable: GR_BOTH_GENDERS_BUTTERFLY_KNIFE */;
 				break;
 			
 			case joaat("TAT_GR_010"):
-				*uParam0 = Global_262145.f_21206;
+				*uParam0 = Global_262145.f_21206 /* Tunable: GR_BOTH_GENDERS_CASH_MONEY */;
 				break;
 			
 			case joaat("TAT_GR_011"):
-				*uParam0 = Global_262145.f_21207;
+				*uParam0 = Global_262145.f_21207 /* Tunable: GR_BOTH_GENDERS_DEATH_SKULL */;
 				break;
 			
 			case joaat("TAT_GR_012"):
-				*uParam0 = Global_262145.f_21208;
+				*uParam0 = Global_262145.f_21208 /* Tunable: GR_BOTH_GENDERS_DOLLAR_DAGGERS */;
 				break;
 			
 			case joaat("TAT_GR_013"):
-				*uParam0 = Global_262145.f_21209;
+				*uParam0 = Global_262145.f_21209 /* Tunable: GR_BOTH_GENDERS_WOLF_INSIGNIA */;
 				break;
 			
 			case joaat("TAT_GR_014"):
-				*uParam0 = Global_262145.f_21210;
+				*uParam0 = Global_262145.f_21210 /* Tunable: GR_BOTH_GENDERS_BACKSTABBER */;
 				break;
 			
 			case joaat("TAT_GR_015"):
-				*uParam0 = Global_262145.f_21211;
+				*uParam0 = Global_262145.f_21211 /* Tunable: GR_BOTH_GENDERS_SPIKED_SKULL */;
 				break;
 			
 			case joaat("TAT_GR_016"):
-				*uParam0 = Global_262145.f_21212;
+				*uParam0 = Global_262145.f_21212 /* Tunable: GR_BOTH_GENDERS_BLOOD_MONEY */;
 				break;
 			
 			case joaat("TAT_GR_017"):
-				*uParam0 = Global_262145.f_21213;
+				*uParam0 = Global_262145.f_21213 /* Tunable: GR_BOTH_GENDERS_DOG_TAGS */;
 				break;
 			
 			case joaat("TAT_GR_018"):
-				*uParam0 = Global_262145.f_21214;
+				*uParam0 = Global_262145.f_21214 /* Tunable: GR_BOTH_GENDERS_DUAL_WIELD_SKULL */;
 				break;
 			
 			case joaat("TAT_GR_019"):
-				*uParam0 = Global_262145.f_21215;
+				*uParam0 = Global_262145.f_21215 /* Tunable: GR_BOTH_GENDERS_PISTOL_WINGS */;
 				break;
 			
 			case joaat("TAT_GR_020"):
-				*uParam0 = Global_262145.f_21216;
+				*uParam0 = Global_262145.f_21216 /* Tunable: GR_BOTH_GENDERS_CROWNED_WEAPONS */;
 				break;
 			
 			case joaat("TAT_GR_021"):
-				*uParam0 = Global_262145.f_21217;
+				*uParam0 = Global_262145.f_21217 /* Tunable: GR_BOTH_GENDERS_HAVE_A_NICE_DAY */;
 				break;
 			
 			case joaat("TAT_GR_022"):
-				*uParam0 = Global_262145.f_21218;
+				*uParam0 = Global_262145.f_21218 /* Tunable: GR_BOTH_GENDERS_EXPLOSIVE_HEART */;
 				break;
 			
 			case joaat("TAT_GR_023"):
-				*uParam0 = Global_262145.f_21219;
+				*uParam0 = Global_262145.f_21219 /* Tunable: GR_BOTH_GENDERS_ROSE_REVOLVER */;
 				break;
 			
 			case joaat("TAT_GR_024"):
-				*uParam0 = Global_262145.f_21220;
+				*uParam0 = Global_262145.f_21220 /* Tunable: GR_BOTH_GENDERS_COMBAT_REAPER */;
 				break;
 			
 			case joaat("TAT_GR_025"):
-				*uParam0 = Global_262145.f_21221;
+				*uParam0 = Global_262145.f_21221 /* Tunable: GR_BOTH_GENDERS_PRAYING_SKULL */;
 				break;
 			
 			case joaat("TAT_GR_026"):
-				*uParam0 = Global_262145.f_21222;
+				*uParam0 = Global_262145.f_21222 /* Tunable: GR_BOTH_GENDERS_RESTLESS_SKULL */;
 				break;
 			
 			case joaat("TAT_GR_027"):
-				*uParam0 = Global_262145.f_21223;
+				*uParam0 = Global_262145.f_21223 /* Tunable: GR_BOTH_GENDERS_SERPENT_REVOLVER */;
 				break;
 			
 			case joaat("TAT_GR_028"):
-				*uParam0 = Global_262145.f_21224;
+				*uParam0 = Global_262145.f_21224 /* Tunable: GR_BOTH_GENDERS_MICRO_SMG_CHAIN */;
 				break;
 			
 			case joaat("TAT_GR_029"):
-				*uParam0 = Global_262145.f_21225;
+				*uParam0 = Global_262145.f_21225 /* Tunable: GR_BOTH_GENDERS_WIN_SOME_LOSE_SOME */;
 				break;
 			
 			case joaat("TAT_GR_030"):
-				*uParam0 = Global_262145.f_21226;
+				*uParam0 = Global_262145.f_21226 /* Tunable: GR_BOTH_GENDERS_PISTOL_ACE */;
 				break;
 			
 			case joaat("TAT_AR_000"):
-				*uParam0 = Global_262145.f_22539;
+				*uParam0 = Global_262145.f_22539 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_TURBULENCE */;
 				break;
 			
 			case joaat("TAT_AR_001"):
-				*uParam0 = Global_262145.f_22540;
+				*uParam0 = Global_262145.f_22540 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_PILOT_SKULL */;
 				break;
 			
 			case joaat("TAT_AR_002"):
-				*uParam0 = Global_262145.f_22541;
+				*uParam0 = Global_262145.f_22541 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_WINGED_BOMBSHELL */;
 				break;
 			
 			case joaat("TAT_AR_003"):
-				*uParam0 = Global_262145.f_22542;
+				*uParam0 = Global_262145.f_22542 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_TOXIC_TRAILS */;
 				break;
 			
 			case joaat("TAT_AR_004"):
-				*uParam0 = Global_262145.f_22543;
+				*uParam0 = Global_262145.f_22543 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_BALLOON_PIONEER */;
 				break;
 			
 			case joaat("TAT_AR_005"):
-				*uParam0 = Global_262145.f_22544;
+				*uParam0 = Global_262145.f_22544 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_PARACHUTE_BELLE */;
 				break;
 			
 			case joaat("TAT_AR_006"):
-				*uParam0 = Global_262145.f_22545;
+				*uParam0 = Global_262145.f_22545 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_BOMBS_AWAY */;
 				break;
 			
 			case joaat("TAT_AR_007"):
-				*uParam0 = Global_262145.f_22546;
+				*uParam0 = Global_262145.f_22546 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_EAGLE_EYES */;
 				break;
 			
 			case joaat("TAT_SM_000"):
-				*uParam0 = Global_262145.f_22547;
+				*uParam0 = Global_262145.f_22547 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_BLESS_THE_DEAD */;
 				break;
 			
 			case joaat("TAT_SM_001"):
-				*uParam0 = Global_262145.f_22548;
+				*uParam0 = Global_262145.f_22548 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_CRACKSHOT */;
 				break;
 			
 			case joaat("TAT_SM_002"):
-				*uParam0 = Global_262145.f_22549;
+				*uParam0 = Global_262145.f_22549 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_DEAD_LIES */;
 				break;
 			
 			case joaat("TAT_SM_003"):
-				*uParam0 = Global_262145.f_22550;
+				*uParam0 = Global_262145.f_22550 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_GIVE_NOTHING_BACK */;
 				break;
 			
 			case joaat("TAT_SM_004"):
-				*uParam0 = Global_262145.f_22551;
+				*uParam0 = Global_262145.f_22551 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_HONOR */;
 				break;
 			
 			case joaat("TAT_SM_005"):
-				*uParam0 = Global_262145.f_22552;
+				*uParam0 = Global_262145.f_22552 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_MUTINY */;
 				break;
 			
 			case joaat("TAT_SM_006"):
-				*uParam0 = Global_262145.f_22553;
+				*uParam0 = Global_262145.f_22553 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_NEVER_SURRENDER */;
 				break;
 			
 			case joaat("TAT_SM_007"):
-				*uParam0 = Global_262145.f_22554;
+				*uParam0 = Global_262145.f_22554 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_NO_HONOR */;
 				break;
 			
 			case joaat("TAT_SM_008"):
-				*uParam0 = Global_262145.f_22555;
+				*uParam0 = Global_262145.f_22555 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_HORRORS_OF_THE_DEEP */;
 				break;
 			
 			case joaat("TAT_SM_009"):
-				*uParam0 = Global_262145.f_22556;
+				*uParam0 = Global_262145.f_22556 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_TALL_SHIP_CONFLICT */;
 				break;
 			
 			case joaat("TAT_SM_010"):
-				*uParam0 = Global_262145.f_22557;
+				*uParam0 = Global_262145.f_22557 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_SEE_YOU_IN_HELL */;
 				break;
 			
 			case joaat("TAT_SM_011"):
-				*uParam0 = Global_262145.f_22558;
+				*uParam0 = Global_262145.f_22558 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_SINNER */;
 				break;
 			
 			case joaat("TAT_SM_012"):
-				*uParam0 = Global_262145.f_22559;
+				*uParam0 = Global_262145.f_22559 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_THIEF */;
 				break;
 			
 			case joaat("TAT_SM_013"):
-				*uParam0 = Global_262145.f_22560;
+				*uParam0 = Global_262145.f_22560 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_TORN_WINGS */;
 				break;
 			
 			case joaat("TAT_SM_014"):
-				*uParam0 = Global_262145.f_22561;
+				*uParam0 = Global_262145.f_22561 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_MERMAIDS_CURSE */;
 				break;
 			
 			case joaat("TAT_SM_015"):
-				*uParam0 = Global_262145.f_22562;
+				*uParam0 = Global_262145.f_22562 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_JOLLY_ROGER */;
 				break;
 			
 			case joaat("TAT_SM_016"):
-				*uParam0 = Global_262145.f_22563;
+				*uParam0 = Global_262145.f_22563 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_SKULL_COMPASS */;
 				break;
 			
 			case joaat("TAT_SM_017"):
-				*uParam0 = Global_262145.f_22564;
+				*uParam0 = Global_262145.f_22564 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_FRAMED_TALL_SHIP */;
 				break;
 			
 			case joaat("TAT_SM_018"):
-				*uParam0 = Global_262145.f_22565;
+				*uParam0 = Global_262145.f_22565 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_FINDERS_KEEPERS */;
 				break;
 			
 			case joaat("TAT_SM_019"):
-				*uParam0 = Global_262145.f_22566;
+				*uParam0 = Global_262145.f_22566 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_LOST_AT_SEA */;
 				break;
 			
 			case joaat("TAT_SM_020"):
-				*uParam0 = Global_262145.f_22567;
+				*uParam0 = Global_262145.f_22567 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_HOMEWARD_BOUND */;
 				break;
 			
 			case joaat("TAT_SM_021"):
-				*uParam0 = Global_262145.f_22568;
+				*uParam0 = Global_262145.f_22568 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_DEAD_TALES */;
 				break;
 			
 			case joaat("TAT_SM_022"):
-				*uParam0 = Global_262145.f_22569;
+				*uParam0 = Global_262145.f_22569 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_X_MARKS_THE_SPOT */;
 				break;
 			
 			case joaat("TAT_SM_023"):
-				*uParam0 = Global_262145.f_22570;
+				*uParam0 = Global_262145.f_22570 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_STYLIZED_KRAKEN */;
 				break;
 			
 			case joaat("TAT_SM_024"):
-				*uParam0 = Global_262145.f_22571;
+				*uParam0 = Global_262145.f_22571 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_PIRATE_CAPTAIN */;
 				break;
 			
 			case joaat("TAT_SM_025"):
-				*uParam0 = Global_262145.f_22572;
+				*uParam0 = Global_262145.f_22572 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_CLAIMED_BY_THE_BEAST */;
 				break;
 			
 			case joaat("TAT_H27_000"):
-				*uParam0 = Global_262145.f_23854;
+				*uParam0 = Global_262145.f_23854 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_THOR_AND_GOBLIN */;
 				break;
 			
 			case joaat("TAT_H27_001"):
-				*uParam0 = Global_262145.f_23855;
+				*uParam0 = Global_262145.f_23855 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_VIKING_WARRIOR */;
 				break;
 			
 			case joaat("TAT_H27_002"):
-				*uParam0 = Global_262145.f_23856;
+				*uParam0 = Global_262145.f_23856 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_KABUTO */;
 				break;
 			
 			case joaat("TAT_H27_003"):
-				*uParam0 = Global_262145.f_23857;
+				*uParam0 = Global_262145.f_23857 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_NATIVE_WARRIOR */;
 				break;
 			
 			case joaat("TAT_H27_004"):
@@ -80675,922 +80675,922 @@ void func_560(var uParam0, struct<4> Param1)//Position - 0x5913C
 				break;
 			
 			case joaat("TAT_H27_005"):
-				*uParam0 = Global_262145.f_23859;
+				*uParam0 = Global_262145.f_23859 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_GHOST_DRAGON */;
 				break;
 			
 			case joaat("TAT_H27_006"):
-				*uParam0 = Global_262145.f_23860;
+				*uParam0 = Global_262145.f_23860 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_MEDUSA */;
 				break;
 			
 			case joaat("TAT_H27_007"):
-				*uParam0 = Global_262145.f_23861;
+				*uParam0 = Global_262145.f_23861 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_SPARTAN_COMBAT */;
 				break;
 			
 			case joaat("TAT_H27_008"):
-				*uParam0 = Global_262145.f_23862;
+				*uParam0 = Global_262145.f_23862 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_SPARTAN_WARRIOR */;
 				break;
 			
 			case joaat("TAT_H27_009"):
-				*uParam0 = Global_262145.f_23863;
+				*uParam0 = Global_262145.f_23863 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_NORSE_RUNE */;
 				break;
 			
 			case joaat("TAT_H27_010"):
-				*uParam0 = Global_262145.f_23864;
+				*uParam0 = Global_262145.f_23864 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_SPARTAN_SHIELD */;
 				break;
 			
 			case joaat("TAT_H27_011"):
-				*uParam0 = Global_262145.f_23865;
+				*uParam0 = Global_262145.f_23865 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_WEATHERED_SKULL */;
 				break;
 			
 			case joaat("TAT_H27_012"):
-				*uParam0 = Global_262145.f_23866;
+				*uParam0 = Global_262145.f_23866 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_TIGER_HEADDRESS */;
 				break;
 			
 			case joaat("TAT_H27_013"):
-				*uParam0 = Global_262145.f_23867;
+				*uParam0 = Global_262145.f_23867 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_KATANA */;
 				break;
 			
 			case joaat("TAT_H27_014"):
-				*uParam0 = Global_262145.f_23868;
+				*uParam0 = Global_262145.f_23868 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_CELTIC_BAND */;
 				break;
 			
 			case joaat("TAT_H27_015"):
-				*uParam0 = Global_262145.f_23869;
+				*uParam0 = Global_262145.f_23869 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_SAMURAI_COMBAT */;
 				break;
 			
 			case joaat("TAT_H27_016"):
-				*uParam0 = Global_262145.f_23870;
+				*uParam0 = Global_262145.f_23870 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_ODIN_AND_RAVEN */;
 				break;
 			
 			case joaat("TAT_H27_017"):
-				*uParam0 = Global_262145.f_23871;
+				*uParam0 = Global_262145.f_23871 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_FEATHER_SLEEVE */;
 				break;
 			
 			case joaat("TAT_H27_018"):
-				*uParam0 = Global_262145.f_23872;
+				*uParam0 = Global_262145.f_23872 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_MUSCLE_TEAR */;
 				break;
 			
 			case joaat("TAT_H27_019"):
-				*uParam0 = Global_262145.f_23873;
+				*uParam0 = Global_262145.f_23873 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_STRIKE_FORCE */;
 				break;
 			
 			case joaat("TAT_H27_020"):
-				*uParam0 = Global_262145.f_23874;
+				*uParam0 = Global_262145.f_23874 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_MEDUSAS_GAZE */;
 				break;
 			
 			case joaat("TAT_H27_021"):
-				*uParam0 = Global_262145.f_23875;
+				*uParam0 = Global_262145.f_23875 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_SPARTAN_AND_LION */;
 				break;
 			
 			case joaat("TAT_H27_022"):
-				*uParam0 = Global_262145.f_23876;
+				*uParam0 = Global_262145.f_23876 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_SPARTAN_AND_HORSE */;
 				break;
 			
 			case joaat("TAT_H27_023"):
-				*uParam0 = Global_262145.f_23877;
+				*uParam0 = Global_262145.f_23877 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_SAMURAI_TALLSHIP */;
 				break;
 			
 			case joaat("TAT_H27_024"):
-				*uParam0 = Global_262145.f_23878;
+				*uParam0 = Global_262145.f_23878 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_DRAGON_SLAYER */;
 				break;
 			
 			case joaat("TAT_H27_025"):
-				*uParam0 = Global_262145.f_23879;
+				*uParam0 = Global_262145.f_23879 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_WINGED_SERPENT */;
 				break;
 			
 			case joaat("TAT_H27_026"):
-				*uParam0 = Global_262145.f_23880;
+				*uParam0 = Global_262145.f_23880 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_SPARTAN_SKULL */;
 				break;
 			
 			case joaat("TAT_H27_027"):
-				*uParam0 = Global_262145.f_23881;
+				*uParam0 = Global_262145.f_23881 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_MOLON_LABE */;
 				break;
 			
 			case joaat("TAT_H27_028"):
-				*uParam0 = Global_262145.f_23882;
+				*uParam0 = Global_262145.f_23882 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_SPARTAN_MURAL */;
 				break;
 			
 			case joaat("TAT_H27_029"):
-				*uParam0 = Global_262145.f_23883;
+				*uParam0 = Global_262145.f_23883 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_CERBERUS */;
 				break;
 			
 			case joaat("TAT_VW_000"):
-				*uParam0 = Global_262145.f_27847;
+				*uParam0 = Global_262145.f_27847 /* Tunable: VC_TATTOO_IN_THE_POCKET */;
 				break;
 			
 			case joaat("TAT_VW_001"):
-				*uParam0 = Global_262145.f_27848;
+				*uParam0 = Global_262145.f_27848 /* Tunable: VC_TATTOO_JACKPOT */;
 				break;
 			
 			case joaat("TAT_VW_002"):
-				*uParam0 = Global_262145.f_27849;
+				*uParam0 = Global_262145.f_27849 /* Tunable: VC_TATTOO_SUITS */;
 				break;
 			
 			case joaat("TAT_VW_003"):
-				*uParam0 = Global_262145.f_27850;
+				*uParam0 = Global_262145.f_27850 /* Tunable: VC_TATTOO_ROYAL_FLUSH */;
 				break;
 			
 			case joaat("TAT_VW_004"):
-				*uParam0 = Global_262145.f_27851;
+				*uParam0 = Global_262145.f_27851 /* Tunable: VC_TATTOO_LADY_LUCK */;
 				break;
 			
 			case joaat("TAT_VW_005"):
-				*uParam0 = Global_262145.f_27852;
+				*uParam0 = Global_262145.f_27852 /* Tunable: VC_TATTOO_GET_LUCKY */;
 				break;
 			
 			case joaat("TAT_VW_006"):
-				*uParam0 = Global_262145.f_27853;
+				*uParam0 = Global_262145.f_27853 /* Tunable: VC_TATTOO_WHEEL_OF_SUITS */;
 				break;
 			
 			case joaat("TAT_VW_007"):
-				*uParam0 = Global_262145.f_27854;
+				*uParam0 = Global_262145.f_27854 /* Tunable: VC_TATTOO_777 */;
 				break;
 			
 			case joaat("TAT_VW_008"):
-				*uParam0 = Global_262145.f_27855;
+				*uParam0 = Global_262145.f_27855 /* Tunable: VC_TATTOO_SNAKE_EYES */;
 				break;
 			
 			case joaat("TAT_VW_009"):
-				*uParam0 = Global_262145.f_27856;
+				*uParam0 = Global_262145.f_27856 /* Tunable: VC_TATTOO_TILL_DEATH_DO_US_PART */;
 				break;
 			
 			case joaat("TAT_VW_010"):
-				*uParam0 = Global_262145.f_27857;
+				*uParam0 = Global_262145.f_27857 /* Tunable: VC_TATTOO_PHOTO_FINISH */;
 				break;
 			
 			case joaat("TAT_VW_011"):
-				*uParam0 = Global_262145.f_27858;
+				*uParam0 = Global_262145.f_27858 /* Tunable: VC_TATTOO_LIFES_A_GAMBLE */;
 				break;
 			
 			case joaat("TAT_VW_012"):
-				*uParam0 = Global_262145.f_27859;
+				*uParam0 = Global_262145.f_27859 /* Tunable: VC_TATTOO_SKULL_OF_SUITS */;
 				break;
 			
 			case joaat("TAT_VW_013"):
-				*uParam0 = Global_262145.f_27860;
+				*uParam0 = Global_262145.f_27860 /* Tunable: VC_TATTOO_ONEARMED_BANDIT */;
 				break;
 			
 			case joaat("TAT_VW_014"):
-				*uParam0 = Global_262145.f_27861;
+				*uParam0 = Global_262145.f_27861 /* Tunable: VC_TATTOO_GAMBLERS_RUIN */;
 				break;
 			
 			case joaat("TAT_VW_015"):
-				*uParam0 = Global_262145.f_27862;
+				*uParam0 = Global_262145.f_27862 /* Tunable: VC_TATTOO_THE_JOLLY_JOKER */;
 				break;
 			
 			case joaat("TAT_VW_016"):
-				*uParam0 = Global_262145.f_27863;
+				*uParam0 = Global_262145.f_27863 /* Tunable: VC_TATTOO_ROSE_ACES */;
 				break;
 			
 			case joaat("TAT_VW_017"):
-				*uParam0 = Global_262145.f_27864;
+				*uParam0 = Global_262145.f_27864 /* Tunable: VC_TATTOO_ROLL_THE_DICE */;
 				break;
 			
 			case joaat("TAT_VW_018"):
-				*uParam0 = Global_262145.f_27865;
+				*uParam0 = Global_262145.f_27865 /* Tunable: VC_TATTOO_THE_GAMBLERS_LIFE */;
 				break;
 			
 			case joaat("TAT_VW_019"):
-				*uParam0 = Global_262145.f_27866;
+				*uParam0 = Global_262145.f_27866 /* Tunable: VC_TATTOO_CANT_WIN_THEM_ALL */;
 				break;
 			
 			case joaat("TAT_VW_020"):
-				*uParam0 = Global_262145.f_27867;
+				*uParam0 = Global_262145.f_27867 /* Tunable: VC_TATTOO_CASH_IS_KING */;
 				break;
 			
 			case joaat("TAT_VW_021"):
-				*uParam0 = Global_262145.f_27868;
+				*uParam0 = Global_262145.f_27868 /* Tunable: VC_TATTOO_SHOW_YOUR_HAND */;
 				break;
 			
 			case joaat("TAT_VW_022"):
-				*uParam0 = Global_262145.f_27869;
+				*uParam0 = Global_262145.f_27869 /* Tunable: VC_TATTOO_BLOOD_MONEY */;
 				break;
 			
 			case joaat("TAT_VW_023"):
-				*uParam0 = Global_262145.f_27870;
+				*uParam0 = Global_262145.f_27870 /* Tunable: VC_TATTOO_LUCKY_7S */;
 				break;
 			
 			case joaat("TAT_VW_024"):
-				*uParam0 = Global_262145.f_27871;
+				*uParam0 = Global_262145.f_27871 /* Tunable: VC_TATTOO_CASH_MOUTH */;
 				break;
 			
 			case joaat("TAT_VW_025"):
-				*uParam0 = Global_262145.f_27872;
+				*uParam0 = Global_262145.f_27872 /* Tunable: VC_TATTOO_QUEEN_OF_ROSES */;
 				break;
 			
 			case joaat("TAT_VW_026"):
-				*uParam0 = Global_262145.f_27873;
+				*uParam0 = Global_262145.f_27873 /* Tunable: VC_TATTOO_BANKNOTE_ROSE */;
 				break;
 			
 			case joaat("TAT_VW_027"):
-				*uParam0 = Global_262145.f_27874;
+				*uParam0 = Global_262145.f_27874 /* Tunable: VC_TATTOO_8BALL_ROSE */;
 				break;
 			
 			case joaat("TAT_VW_028"):
-				*uParam0 = Global_262145.f_27875;
+				*uParam0 = Global_262145.f_27875 /* Tunable: VC_TATTOO_SKULL_ACES */;
 				break;
 			
 			case joaat("TAT_VW_029"):
-				*uParam0 = Global_262145.f_27876;
+				*uParam0 = Global_262145.f_27876 /* Tunable: VC_TATTOO_THE_TABLE */;
 				break;
 			
 			case joaat("TAT_VW_030"):
-				*uParam0 = Global_262145.f_27877;
+				*uParam0 = Global_262145.f_27877 /* Tunable: VC_TATTOO_THE_ROYALS */;
 				break;
 			
 			case joaat("TAT_VW_031"):
-				*uParam0 = Global_262145.f_27878;
+				*uParam0 = Global_262145.f_27878 /* Tunable: VC_TATTOO_GAMBLING_ROYALTY */;
 				break;
 			
 			case joaat("TAT_VW_032"):
-				*uParam0 = Global_262145.f_27879;
+				*uParam0 = Global_262145.f_27879 /* Tunable: VC_TATTOO_PLAY_YOUR_ACE */;
 				break;
 		}
 		switch (iVar0)
 		{
 			case joaat("TAT_H3_000"):
-				*uParam0 = Global_262145.f_28902;
+				*uParam0 = Global_262145.f_28902 /* Tunable: CH_TATTOO_FIVE_STARS */;
 				break;
 			
 			case joaat("TAT_H3_001"):
-				*uParam0 = Global_262145.f_28903;
+				*uParam0 = Global_262145.f_28903 /* Tunable: CH_TATTOO_ACE_OF_SPADES */;
 				break;
 			
 			case joaat("TAT_H3_002"):
-				*uParam0 = Global_262145.f_28904;
+				*uParam0 = Global_262145.f_28904 /* Tunable: CH_TATTOO_ANIMAL */;
 				break;
 			
 			case joaat("TAT_H3_003"):
-				*uParam0 = Global_262145.f_28905;
+				*uParam0 = Global_262145.f_28905 /* Tunable: CH_TATTOO_ASSAULT_RIFLE */;
 				break;
 			
 			case joaat("TAT_H3_004"):
-				*uParam0 = Global_262145.f_28906;
+				*uParam0 = Global_262145.f_28906 /* Tunable: CH_TATTOO_BAND_AID */;
 				break;
 			
 			case joaat("TAT_H3_005"):
-				*uParam0 = Global_262145.f_28907;
+				*uParam0 = Global_262145.f_28907 /* Tunable: CH_TATTOO_SPADES */;
 				break;
 			
 			case joaat("TAT_H3_006"):
-				*uParam0 = Global_262145.f_28908;
+				*uParam0 = Global_262145.f_28908 /* Tunable: CH_TATTOO_CROWNED */;
 				break;
 			
 			case joaat("TAT_H3_007"):
-				*uParam0 = Global_262145.f_28909;
+				*uParam0 = Global_262145.f_28909 /* Tunable: CH_TATTOO_TWO_HORNS */;
 				break;
 			
 			case joaat("TAT_H3_008"):
-				*uParam0 = Global_262145.f_28910;
+				*uParam0 = Global_262145.f_28910 /* Tunable: CH_TATTOO_ICE_CREAM */;
 				break;
 			
 			case joaat("TAT_H3_009"):
-				*uParam0 = Global_262145.f_28911;
+				*uParam0 = Global_262145.f_28911 /* Tunable: CH_TATTOO_KNIFED */;
 				break;
 			
 			case joaat("TAT_H3_010"):
-				*uParam0 = Global_262145.f_28912;
+				*uParam0 = Global_262145.f_28912 /* Tunable: CH_TATTOO_GREEN_LEAF */;
 				break;
 			
 			case joaat("TAT_H3_011"):
-				*uParam0 = Global_262145.f_28913;
+				*uParam0 = Global_262145.f_28913 /* Tunable: CH_TATTOO_LIPSTICK_KISS */;
 				break;
 			
 			case joaat("TAT_H3_012"):
-				*uParam0 = Global_262145.f_28914;
+				*uParam0 = Global_262145.f_28914 /* Tunable: CH_TATTOO_RAZOR_POP */;
 				break;
 			
 			case joaat("TAT_H3_013"):
-				*uParam0 = Global_262145.f_28915;
+				*uParam0 = Global_262145.f_28915 /* Tunable: CH_TATTOO_LS_STAR */;
 				break;
 			
 			case joaat("TAT_H3_014"):
-				*uParam0 = Global_262145.f_28916;
+				*uParam0 = Global_262145.f_28916 /* Tunable: CH_TATTOO_LS_WINGS */;
 				break;
 			
 			case joaat("TAT_H3_015"):
-				*uParam0 = Global_262145.f_28917;
+				*uParam0 = Global_262145.f_28917 /* Tunable: CH_TATTOO_ON_OFF */;
 				break;
 			
 			case joaat("TAT_H3_016"):
-				*uParam0 = Global_262145.f_28918;
+				*uParam0 = Global_262145.f_28918 /* Tunable: CH_TATTOO_SLEEPY */;
 				break;
 			
 			case joaat("TAT_H3_017"):
-				*uParam0 = Global_262145.f_28919;
+				*uParam0 = Global_262145.f_28919 /* Tunable: CH_TATTOO_SPACE_MONKEY */;
 				break;
 			
 			case joaat("TAT_H3_018"):
-				*uParam0 = Global_262145.f_28920;
+				*uParam0 = Global_262145.f_28920 /* Tunable: CH_TATTOO_STITCHES */;
 				break;
 			
 			case joaat("TAT_H3_019"):
-				*uParam0 = Global_262145.f_28921;
+				*uParam0 = Global_262145.f_28921 /* Tunable: CH_TATTOO_TEDDY_BEAR */;
 				break;
 			
 			case joaat("TAT_H3_020"):
-				*uParam0 = Global_262145.f_28922;
+				*uParam0 = Global_262145.f_28922 /* Tunable: CH_TATTOO_UFO */;
 				break;
 			
 			case joaat("TAT_H3_021"):
-				*uParam0 = Global_262145.f_28923;
+				*uParam0 = Global_262145.f_28923 /* Tunable: CH_TATTOO_WANTED */;
 				break;
 			
 			case joaat("TAT_H3_022"):
-				*uParam0 = Global_262145.f_28924;
+				*uParam0 = Global_262145.f_28924 /* Tunable: CH_TATTOO_THOGS_SWORD */;
 				break;
 			
 			case joaat("TAT_H3_023"):
-				*uParam0 = Global_262145.f_28925;
+				*uParam0 = Global_262145.f_28925 /* Tunable: CH_TATTOO_BIGFOOT */;
 				break;
 			
 			case joaat("TAT_H3_024"):
-				*uParam0 = Global_262145.f_28926;
+				*uParam0 = Global_262145.f_28926 /* Tunable: CH_TATTOO_MOUNT_CHILIAD */;
 				break;
 			
 			case joaat("TAT_H3_025"):
-				*uParam0 = Global_262145.f_28927;
+				*uParam0 = Global_262145.f_28927 /* Tunable: CH_TATTOO_DAVIS */;
 				break;
 			
 			case joaat("TAT_H3_026"):
-				*uParam0 = Global_262145.f_28928;
+				*uParam0 = Global_262145.f_28928 /* Tunable: CH_TATTOO_DIGNITY */;
 				break;
 			
 			case joaat("TAT_H3_027"):
-				*uParam0 = Global_262145.f_28929;
+				*uParam0 = Global_262145.f_28929 /* Tunable: CH_TATTOO_EPSILON */;
 				break;
 			
 			case joaat("TAT_H3_028"):
-				*uParam0 = Global_262145.f_28930;
+				*uParam0 = Global_262145.f_28930 /* Tunable: CH_TATTOO_BANANAS_GONE_BAD */;
 				break;
 			
 			case joaat("TAT_H3_029"):
-				*uParam0 = Global_262145.f_28931;
+				*uParam0 = Global_262145.f_28931 /* Tunable: CH_TATTOO_FATAL_INCURSION */;
 				break;
 			
 			case joaat("TAT_H3_030"):
-				*uParam0 = Global_262145.f_28932;
+				*uParam0 = Global_262145.f_28932 /* Tunable: CH_TATTOO_HOWITZER */;
 				break;
 			
 			case joaat("TAT_H3_031"):
-				*uParam0 = Global_262145.f_28933;
+				*uParam0 = Global_262145.f_28933 /* Tunable: CH_TATTOO_KIFFLOM */;
 				break;
 			
 			case joaat("TAT_H3_032"):
-				*uParam0 = Global_262145.f_28934;
+				*uParam0 = Global_262145.f_28934 /* Tunable: CH_TATTOO_LOVE_FIST */;
 				break;
 			
 			case joaat("TAT_H3_033"):
-				*uParam0 = Global_262145.f_28935;
+				*uParam0 = Global_262145.f_28935 /* Tunable: CH_TATTOO_LS_CITY */;
 				break;
 			
 			case joaat("TAT_H3_034"):
-				*uParam0 = Global_262145.f_28936;
+				*uParam0 = Global_262145.f_28936 /* Tunable: CH_TATTOO_LS_MONOGRAM */;
 				break;
 			
 			case joaat("TAT_H3_035"):
-				*uParam0 = Global_262145.f_28937;
+				*uParam0 = Global_262145.f_28937 /* Tunable: CH_TATTOO_LS_PANIC */;
 				break;
 			
 			case joaat("TAT_H3_036"):
-				*uParam0 = Global_262145.f_28938;
+				*uParam0 = Global_262145.f_28938 /* Tunable: CH_TATTOO_LS_SHIELD */;
 				break;
 			
 			case joaat("TAT_H3_037"):
-				*uParam0 = Global_262145.f_28939;
+				*uParam0 = Global_262145.f_28939 /* Tunable: CH_TATTOO_LADYBUG */;
 				break;
 			
 			case joaat("TAT_H3_038"):
-				*uParam0 = Global_262145.f_28940;
+				*uParam0 = Global_262145.f_28940 /* Tunable: CH_TATTOO_ROBOT_BUBBLEGUM */;
 				break;
 			
 			case joaat("TAT_H3_039"):
-				*uParam0 = Global_262145.f_28941;
+				*uParam0 = Global_262145.f_28941 /* Tunable: CH_TATTOO_SPACE_RANGERS */;
 				break;
 			
 			case joaat("TAT_H3_040"):
-				*uParam0 = Global_262145.f_28942;
+				*uParam0 = Global_262145.f_28942 /* Tunable: CH_TATTOO_TIGER_HEART */;
 				break;
 			
 			case joaat("TAT_H3_041"):
-				*uParam0 = Global_262145.f_28943;
+				*uParam0 = Global_262145.f_28943 /* Tunable: CH_TATTOO_MIGHTY_THOG */;
 				break;
 			
 			case joaat("TAT_H3_042"):
-				*uParam0 = Global_262145.f_28944;
+				*uParam0 = Global_262145.f_28944 /* Tunable: CH_TATTOO_HEARTS */;
 				break;
 			
 			case joaat("TAT_H3_043"):
-				*uParam0 = Global_262145.f_28945;
+				*uParam0 = Global_262145.f_28945 /* Tunable: CH_TATTOO_CLUBS */;
 				break;
 			
 			case joaat("TAT_H3_044"):
-				*uParam0 = Global_262145.f_28946;
+				*uParam0 = Global_262145.f_28946 /* Tunable: CH_TATTOO_DIAMONDS */;
 				break;
 		}
 		switch (iVar0)
 		{
 			case joaat("TAT_H4_000"):
-				*uParam0 = Global_262145.f_30748;
+				*uParam0 = Global_262145.f_30748 /* Tunable: IH_TATTOO_HEADPHONE_SPLAT */;
 				break;
 			
 			case joaat("TAT_H4_001"):
-				*uParam0 = Global_262145.f_30749;
+				*uParam0 = Global_262145.f_30749 /* Tunable: IH_TATTOO_TROPICAL_DUDE */;
 				break;
 			
 			case joaat("TAT_H4_002"):
-				*uParam0 = Global_262145.f_30750;
+				*uParam0 = Global_262145.f_30750 /* Tunable: IH_TATTOO_JELLYFISH_SHADES */;
 				break;
 			
 			case joaat("TAT_H4_003"):
-				*uParam0 = Global_262145.f_30751;
+				*uParam0 = Global_262145.f_30751 /* Tunable: IH_TATTOO_LIGHTHOUSE */;
 				break;
 			
 			case joaat("TAT_H4_004"):
-				*uParam0 = Global_262145.f_30752;
+				*uParam0 = Global_262145.f_30752 /* Tunable: IH_TATTOO_SKELETON_BREEZE */;
 				break;
 			
 			case joaat("TAT_H4_005"):
-				*uParam0 = Global_262145.f_30753;
+				*uParam0 = Global_262145.f_30753 /* Tunable: IH_TATTOO_LSUR */;
 				break;
 			
 			case joaat("TAT_H4_006"):
-				*uParam0 = Global_262145.f_30754;
+				*uParam0 = Global_262145.f_30754 /* Tunable: IH_TATTOO_MUSIC_LOCKER */;
 				break;
 			
 			case joaat("TAT_H4_007"):
-				*uParam0 = Global_262145.f_30755;
+				*uParam0 = Global_262145.f_30755 /* Tunable: IH_TATTOO_SKELETON_DJ */;
 				break;
 			
 			case joaat("TAT_H4_008"):
-				*uParam0 = Global_262145.f_30756;
+				*uParam0 = Global_262145.f_30756 /* Tunable: IH_TATTOO_SMILEY_GLITCH */;
 				break;
 			
 			case joaat("TAT_H4_009"):
-				*uParam0 = Global_262145.f_30757;
+				*uParam0 = Global_262145.f_30757 /* Tunable: IH_TATTOO_SCRATCH_PANTHER */;
 				break;
 			
 			case joaat("TAT_H4_010"):
-				*uParam0 = Global_262145.f_30758;
+				*uParam0 = Global_262145.f_30758 /* Tunable: IH_TATTOO_TROPICAL_SERPENT */;
 				break;
 			
 			case joaat("TAT_H4_011"):
-				*uParam0 = Global_262145.f_30759;
+				*uParam0 = Global_262145.f_30759 /* Tunable: IH_TATTOO_SOULWAX */;
 				break;
 			
 			case joaat("TAT_H4_012"):
-				*uParam0 = Global_262145.f_30760;
+				*uParam0 = Global_262145.f_30760 /* Tunable: IH_TATTOO_STILL_SLIPPIN */;
 				break;
 			
 			case joaat("TAT_H4_013"):
-				*uParam0 = Global_262145.f_30761;
+				*uParam0 = Global_262145.f_30761 /* Tunable: IH_TATTOO_WILD_DANCERS */;
 				break;
 			
 			case joaat("TAT_H4_014"):
-				*uParam0 = Global_262145.f_30762;
+				*uParam0 = Global_262145.f_30762 /* Tunable: IH_TATTOO_PARADISE_NAP */;
 				break;
 			
 			case joaat("TAT_H4_015"):
-				*uParam0 = Global_262145.f_30763;
+				*uParam0 = Global_262145.f_30763 /* Tunable: IH_TATTOO_PARADISE_UKULELE */;
 				break;
 			
 			case joaat("TAT_H4_016"):
-				*uParam0 = Global_262145.f_30764;
+				*uParam0 = Global_262145.f_30764 /* Tunable: IH_TATTOO_ROSE_PANTHER */;
 				break;
 			
 			case joaat("TAT_H4_017"):
-				*uParam0 = Global_262145.f_30765;
+				*uParam0 = Global_262145.f_30765 /* Tunable: IH_TATTOO_TROPICAL_SORCERER */;
 				break;
 			
 			case joaat("TAT_H4_018"):
-				*uParam0 = Global_262145.f_30766;
+				*uParam0 = Global_262145.f_30766 /* Tunable: IH_TATTOO_RECORD_HEAD */;
 				break;
 			
 			case joaat("TAT_H4_019"):
-				*uParam0 = Global_262145.f_30767;
+				*uParam0 = Global_262145.f_30767 /* Tunable: IH_TATTOO_RECORD_SHOT */;
 				break;
 			
 			case joaat("TAT_H4_020"):
-				*uParam0 = Global_262145.f_30768;
+				*uParam0 = Global_262145.f_30768 /* Tunable: IH_TATTOO_SPEAKER_TOWER */;
 				break;
 			
 			case joaat("TAT_H4_021"):
-				*uParam0 = Global_262145.f_30769;
+				*uParam0 = Global_262145.f_30769 /* Tunable: IH_TATTOO_SKULL_SURFER */;
 				break;
 			
 			case joaat("TAT_H4_022"):
-				*uParam0 = Global_262145.f_30770;
+				*uParam0 = Global_262145.f_30770 /* Tunable: IH_TATTOO_PARADISE_SIRENS */;
 				break;
 			
 			case joaat("TAT_H4_023"):
-				*uParam0 = Global_262145.f_30771;
+				*uParam0 = Global_262145.f_30771 /* Tunable: IH_TATTOO_TECHNO_GLITCH */;
 				break;
 			
 			case joaat("TAT_H4_024"):
-				*uParam0 = Global_262145.f_30772;
+				*uParam0 = Global_262145.f_30772 /* Tunable: IH_TATTOO_PINEAPPLE_SKULL */;
 				break;
 			
 			case joaat("TAT_H4_025"):
-				*uParam0 = Global_262145.f_30773;
+				*uParam0 = Global_262145.f_30773 /* Tunable: IH_TATTOO_GLOW_PRINCESS */;
 				break;
 			
 			case joaat("TAT_H4_026"):
-				*uParam0 = Global_262145.f_30774;
+				*uParam0 = Global_262145.f_30774 /* Tunable: IH_TATTOO_SHARK_WATER */;
 				break;
 			
 			case joaat("TAT_H4_027"):
-				*uParam0 = Global_262145.f_30775;
+				*uParam0 = Global_262145.f_30775 /* Tunable: IH_TATTOO_SKULLPHONES */;
 				break;
 			
 			case joaat("TAT_H4_028"):
-				*uParam0 = Global_262145.f_30776;
+				*uParam0 = Global_262145.f_30776 /* Tunable: IH_TATTOO_SKULL_WATERS */;
 				break;
 			
 			case joaat("TAT_H4_029"):
-				*uParam0 = Global_262145.f_30777;
+				*uParam0 = Global_262145.f_30777 /* Tunable: IH_TATTOO_SOUNDWAVES */;
 				break;
 			
 			case joaat("TAT_H4_030"):
-				*uParam0 = Global_262145.f_30778;
+				*uParam0 = Global_262145.f_30778 /* Tunable: IH_TATTOO_RADIO_TAPE */;
 				break;
 			
 			case joaat("TAT_H4_031"):
-				*uParam0 = Global_262145.f_30779;
+				*uParam0 = Global_262145.f_30779 /* Tunable: IH_TATTOO_OCTOPUS_SHADES */;
 				break;
 			
 			case joaat("TAT_H4_032"):
-				*uParam0 = Global_262145.f_30780;
+				*uParam0 = Global_262145.f_30780 /* Tunable: IH_TATTOO_KULT_991_FM */;
 				break;
 		}
 		switch (iVar0)
 		{
 			case joaat("TAT_FX_000"):
-				*uParam0 = Global_262145.f_31998;
+				*uParam0 = Global_262145.f_31998 /* Tunable: FIXER_TATTOO_HOOD_SKELETON */;
 				break;
 			
 			case joaat("TAT_FX_001"):
-				*uParam0 = Global_262145.f_31999;
+				*uParam0 = Global_262145.f_31999 /* Tunable: FIXER_TATTOO_BRIGHT_DIAMOND */;
 				break;
 			
 			case joaat("TAT_FX_002"):
-				*uParam0 = Global_262145.f_32000;
+				*uParam0 = Global_262145.f_32000 /* Tunable: FIXER_TATTOO_HUSTLE */;
 				break;
 			
 			case joaat("TAT_FX_003"):
-				*uParam0 = Global_262145.f_32001;
+				*uParam0 = Global_262145.f_32001 /* Tunable: FIXER_TATTOO_BANDANA_KNIFE */;
 				break;
 			
 			case joaat("TAT_FX_004"):
-				*uParam0 = Global_262145.f_32002;
+				*uParam0 = Global_262145.f_32002 /* Tunable: FIXER_TATTOO_HOOD_HEART */;
 				break;
 			
 			case joaat("TAT_FX_005"):
-				*uParam0 = Global_262145.f_32003;
+				*uParam0 = Global_262145.f_32003 /* Tunable: FIXER_TATTOO_PEACOCK */;
 				break;
 			
 			case joaat("TAT_FX_006"):
-				*uParam0 = Global_262145.f_32004;
+				*uParam0 = Global_262145.f_32004 /* Tunable: FIXER_TATTOO_SKELETON_SHOT */;
 				break;
 			
 			case joaat("TAT_FX_007"):
-				*uParam0 = Global_262145.f_32005;
+				*uParam0 = Global_262145.f_32005 /* Tunable: FIXER_TATTOO_BALLAS_4_LIFE */;
 				break;
 			
 			case joaat("TAT_FX_008"):
-				*uParam0 = Global_262145.f_32006;
+				*uParam0 = Global_262145.f_32006 /* Tunable: FIXER_TATTOO_LOS_SANTOS_TAG */;
 				break;
 			
 			case joaat("TAT_FX_009"):
-				*uParam0 = Global_262145.f_32007;
+				*uParam0 = Global_262145.f_32007 /* Tunable: FIXER_TATTOO_ASCENSION */;
 				break;
 			
 			case joaat("TAT_FX_010"):
-				*uParam0 = Global_262145.f_32008;
+				*uParam0 = Global_262145.f_32008 /* Tunable: FIXER_TATTOO_MUSIC_IS_THE_REMEDY */;
 				break;
 			
 			case joaat("TAT_FX_011"):
-				*uParam0 = Global_262145.f_32009;
+				*uParam0 = Global_262145.f_32009 /* Tunable: FIXER_TATTOO_SERPENT_MIC */;
 				break;
 			
 			case joaat("TAT_FX_012"):
-				*uParam0 = Global_262145.f_32010;
+				*uParam0 = Global_262145.f_32010 /* Tunable: FIXER_TATTOO_ZOMBIE_RHYMES */;
 				break;
 			
 			case joaat("TAT_FX_013"):
-				*uParam0 = Global_262145.f_32011;
+				*uParam0 = Global_262145.f_32011 /* Tunable: FIXER_TATTOO_BLESSED_BOOMBOX */;
 				break;
 			
 			case joaat("TAT_FX_014"):
-				*uParam0 = Global_262145.f_32012;
+				*uParam0 = Global_262145.f_32012 /* Tunable: FIXER_TATTOO_CHAMBERLAIN_HILLS */;
 				break;
 			
 			case joaat("TAT_FX_015"):
-				*uParam0 = Global_262145.f_32013;
+				*uParam0 = Global_262145.f_32013 /* Tunable: FIXER_TATTOO_SMOKING_BARRELS */;
 				break;
 			
 			case joaat("TAT_FX_016"):
-				*uParam0 = Global_262145.f_32014;
+				*uParam0 = Global_262145.f_32014 /* Tunable: FIXER_TATTOO_ALL_FROM_THE_SAME_TREE */;
 				break;
 			
 			case joaat("TAT_FX_017"):
-				*uParam0 = Global_262145.f_32015;
+				*uParam0 = Global_262145.f_32015 /* Tunable: FIXER_TATTOO_KING_OF_THE_JUNGLE */;
 				break;
 			
 			case joaat("TAT_FX_018"):
-				*uParam0 = Global_262145.f_32016;
+				*uParam0 = Global_262145.f_32016 /* Tunable: FIXER_TATTOO_NIGHT_OWL */;
 				break;
 			
 			case joaat("TAT_FX_019"):
-				*uParam0 = Global_262145.f_32017;
+				*uParam0 = Global_262145.f_32017 /* Tunable: FIXER_TATTOO_WEED_KNUCKLES */;
 				break;
 			
 			case joaat("TAT_FX_020"):
-				*uParam0 = Global_262145.f_32018;
+				*uParam0 = Global_262145.f_32018 /* Tunable: FIXER_TATTOO_DOG_FIST */;
 				break;
 			
 			case joaat("TAT_FX_021"):
-				*uParam0 = Global_262145.f_32019;
+				*uParam0 = Global_262145.f_32019 /* Tunable: FIXER_TATTOO_GRAFFITI_SKULL */;
 				break;
 			
 			case joaat("TAT_FX_022"):
-				*uParam0 = Global_262145.f_32020;
+				*uParam0 = Global_262145.f_32020 /* Tunable: FIXER_TATTOO_LS_SMOKING_CARTRIDGES */;
 				break;
 			
 			case joaat("TAT_FX_023"):
-				*uParam0 = Global_262145.f_32021;
+				*uParam0 = Global_262145.f_32021 /* Tunable: FIXER_TATTOO_TRUST */;
 				break;
 			
 			case joaat("TAT_FX_024"):
-				*uParam0 = Global_262145.f_32022;
+				*uParam0 = Global_262145.f_32022 /* Tunable: FIXER_TATTOO_BEATBOX_SILHOUETTE */;
 				break;
 			
 			case joaat("TAT_FX_025"):
-				*uParam0 = Global_262145.f_32023;
+				*uParam0 = Global_262145.f_32023 /* Tunable: FIXER_TATTOO_DAVIS_FLAMES */;
 				break;
 			
 			case joaat("TAT_FX_026"):
-				*uParam0 = Global_262145.f_32024;
+				*uParam0 = Global_262145.f_32024 /* Tunable: FIXER_TATTOO_DOLLAR_GUNS_CROSSED */;
 				break;
 			
 			case joaat("TAT_FX_027"):
-				*uParam0 = Global_262145.f_32025;
+				*uParam0 = Global_262145.f_32025 /* Tunable: FIXER_TATTOO_BLACK_WIDOW */;
 				break;
 		}
 		switch (iVar0)
 		{
 			case joaat("TAT_SB_000"):
-				*uParam0 = Global_262145.f_33047;
+				*uParam0 = Global_262145.f_33047 /* Tunable: SU22_TATTOO_LIVE_FAST_MONO */;
 				break;
 			
 			case joaat("TAT_SB_001"):
-				*uParam0 = Global_262145.f_33048;
+				*uParam0 = Global_262145.f_33048 /* Tunable: SU22_TATTOO_LIVE_FAST_COLOR */;
 				break;
 			
 			case joaat("TAT_SB_002"):
-				*uParam0 = Global_262145.f_33049;
+				*uParam0 = Global_262145.f_33049 /* Tunable: SU22_TATTOO_COBRA_BIKER */;
 				break;
 			
 			case joaat("TAT_SB_003"):
-				*uParam0 = Global_262145.f_33050;
+				*uParam0 = Global_262145.f_33050 /* Tunable: SU22_TATTOO_BULLET_MOUTH */;
 				break;
 			
 			case joaat("TAT_SB_004"):
-				*uParam0 = Global_262145.f_33051;
+				*uParam0 = Global_262145.f_33051 /* Tunable: SU22_TATTOO_SMOKING_BARREL */;
 				break;
 			
 			case joaat("TAT_SB_005"):
-				*uParam0 = Global_262145.f_33052;
+				*uParam0 = Global_262145.f_33052 /* Tunable: SU22_TATTOO_CONCEALED */;
 				break;
 			
 			case joaat("TAT_SB_006"):
-				*uParam0 = Global_262145.f_33053;
+				*uParam0 = Global_262145.f_33053 /* Tunable: SU22_TATTOO_PAINTED_MICRO_SMG */;
 				break;
 			
 			case joaat("TAT_SB_007"):
-				*uParam0 = Global_262145.f_33054;
+				*uParam0 = Global_262145.f_33054 /* Tunable: SU22_TATTOO_WEAPON_KING */;
 				break;
 			
 			case joaat("TAT_SB_008"):
-				*uParam0 = Global_262145.f_33055;
+				*uParam0 = Global_262145.f_33055 /* Tunable: SU22_TATTOO_BIGNESS_CHIMP */;
 				break;
 			
 			case joaat("TAT_SB_009"):
-				*uParam0 = Global_262145.f_33056;
+				*uParam0 = Global_262145.f_33056 /* Tunable: SU22_TATTOO_UPNATOMIZER_DESIGN */;
 				break;
 			
 			case joaat("TAT_SB_010"):
-				*uParam0 = Global_262145.f_33057;
+				*uParam0 = Global_262145.f_33057 /* Tunable: SU22_TATTOO_ROCKET_LAUNCHER_GIRL */;
 				break;
 			
 			case joaat("TAT_SB_011"):
-				*uParam0 = Global_262145.f_33058;
+				*uParam0 = Global_262145.f_33058 /* Tunable: SU22_TATTOO_MINIGUN_GUY */;
 				break;
 			
 			case joaat("TAT_SB_012"):
-				*uParam0 = Global_262145.f_33059;
+				*uParam0 = Global_262145.f_33059 /* Tunable: SU22_TATTOO_SNAKE_REVOLVER */;
 				break;
 			
 			case joaat("TAT_SB_013"):
-				*uParam0 = Global_262145.f_33060;
+				*uParam0 = Global_262145.f_33060 /* Tunable: SU22_TATTOO_WEAPON_SLEEVE */;
 				break;
 			
 			case joaat("TAT_SB_014"):
-				*uParam0 = Global_262145.f_33061;
+				*uParam0 = Global_262145.f_33061 /* Tunable: SU22_TATTOO_MINIMAL_SMG */;
 				break;
 			
 			case joaat("TAT_SB_015"):
-				*uParam0 = Global_262145.f_33062;
+				*uParam0 = Global_262145.f_33062 /* Tunable: SU22_TATTOO_MINIMAL_ADVANCED_RIFLE */;
 				break;
 			
 			case joaat("TAT_SB_016"):
-				*uParam0 = Global_262145.f_33063;
+				*uParam0 = Global_262145.f_33063 /* Tunable: SU22_TATTOO_MINIMAL_SNIPER_RIFLE */;
 				break;
 			
 			case joaat("TAT_SB_017"):
-				*uParam0 = Global_262145.f_33064;
+				*uParam0 = Global_262145.f_33064 /* Tunable: SU22_TATTOO_SKULL_GRENADE */;
 				break;
 			
 			case joaat("TAT_SB_018"):
-				*uParam0 = Global_262145.f_33065;
+				*uParam0 = Global_262145.f_33065 /* Tunable: SU22_TATTOO_BRANCHED_SKULL */;
 				break;
 			
 			case joaat("TAT_SB_019"):
-				*uParam0 = Global_262145.f_33066;
+				*uParam0 = Global_262145.f_33066 /* Tunable: SU22_TATTOO_SCYTHED_CORPSE */;
 				break;
 			
 			case joaat("TAT_SB_020"):
-				*uParam0 = Global_262145.f_33067;
+				*uParam0 = Global_262145.f_33067 /* Tunable: SU22_TATTOO_SCYTHED_CORPSE_REAPER */;
 				break;
 			
 			case joaat("TAT_SB_021"):
-				*uParam0 = Global_262145.f_33068;
+				*uParam0 = Global_262145.f_33068 /* Tunable: SU22_TATTOO_THIRD_EYE */;
 				break;
 			
 			case joaat("TAT_SB_022"):
-				*uParam0 = Global_262145.f_33069;
+				*uParam0 = Global_262145.f_33069 /* Tunable: SU22_TATTOO_PIERCED_THIRD_EYE */;
 				break;
 			
 			case joaat("TAT_SB_023"):
-				*uParam0 = Global_262145.f_33070;
+				*uParam0 = Global_262145.f_33070 /* Tunable: SU22_TATTOO_LIP_DRIP */;
 				break;
 			
 			case joaat("TAT_SB_024"):
-				*uParam0 = Global_262145.f_33071;
+				*uParam0 = Global_262145.f_33071 /* Tunable: SU22_TATTOO_SKIN_MASK */;
 				break;
 			
 			case joaat("TAT_SB_025"):
-				*uParam0 = Global_262145.f_33072;
+				*uParam0 = Global_262145.f_33072 /* Tunable: SU22_TATTOO_WEBBED_SCYTHE */;
 				break;
 			
 			case joaat("TAT_SB_026"):
-				*uParam0 = Global_262145.f_33073;
+				*uParam0 = Global_262145.f_33073 /* Tunable: SU22_TATTOO_ONI_DEMON */;
 				break;
 			
 			case joaat("TAT_SB_027"):
-				*uParam0 = Global_262145.f_33074;
+				*uParam0 = Global_262145.f_33074 /* Tunable: SU22_TATTOO_BAT_WINGS */;
 				break;
 			
 			case joaat("TAT_SB_028"):
-				*uParam0 = Global_262145.f_33075;
+				*uParam0 = Global_262145.f_33075 /* Tunable: SU22_TATTOO_LASER_EYES_SKULL */;
 				break;
 			
 			case joaat("TAT_SB_029"):
-				*uParam0 = Global_262145.f_33076;
+				*uParam0 = Global_262145.f_33076 /* Tunable: SU22_TATTOO_CLASSIC_VAMPIRE */;
 				break;
 			
 			case joaat("TAT_SB_030"):
-				*uParam0 = Global_262145.f_33077;
+				*uParam0 = Global_262145.f_33077 /* Tunable: SU22_TATTOO_CENTIPEDE */;
 				break;
 			
 			case joaat("TAT_SB_031"):
-				*uParam0 = Global_262145.f_33078;
+				*uParam0 = Global_262145.f_33078 /* Tunable: SU22_TATTOO_FLESHY_EYE */;
 				break;
 			
 			case joaat("TAT_SB_032"):
-				*uParam0 = Global_262145.f_33079;
+				*uParam0 = Global_262145.f_33079 /* Tunable: SU22_TATTOO_MANYEYED_GOAT */;
 				break;
 			
 			case joaat("TAT_SB_033"):
-				*uParam0 = Global_262145.f_33080;
+				*uParam0 = Global_262145.f_33080 /* Tunable: SU22_TATTOO_THREEEYED_DEMON */;
 				break;
 			
 			case joaat("TAT_SB_034"):
-				*uParam0 = Global_262145.f_33081;
+				*uParam0 = Global_262145.f_33081 /* Tunable: SU22_TATTOO_SMOULDERING_REAPER */;
 				break;
 			
 			case joaat("TAT_SB_035"):
-				*uParam0 = Global_262145.f_33082;
+				*uParam0 = Global_262145.f_33082 /* Tunable: SU22_TATTOO_SNIFF_SNIFF */;
 				break;
 			
 			case joaat("TAT_SB_036"):
-				*uParam0 = Global_262145.f_33083;
+				*uParam0 = Global_262145.f_33083 /* Tunable: SU22_TATTOO_CHARM_PATTERN */;
 				break;
 			
 			case joaat("TAT_SB_037"):
-				*uParam0 = Global_262145.f_33084;
+				*uParam0 = Global_262145.f_33084 /* Tunable: SU22_TATTOO_WITCH_SKULL */;
 				break;
 			
 			case joaat("TAT_SB_038"):
-				*uParam0 = Global_262145.f_33085;
+				*uParam0 = Global_262145.f_33085 /* Tunable: SU22_TATTOO_PUMPKIN_BUG */;
 				break;
 			
 			case joaat("TAT_SB_039"):
-				*uParam0 = Global_262145.f_33086;
+				*uParam0 = Global_262145.f_33086 /* Tunable: SU22_TATTOO_SINNER */;
 				break;
 			
 			case joaat("TAT_SB_040"):
-				*uParam0 = Global_262145.f_33087;
+				*uParam0 = Global_262145.f_33087 /* Tunable: SU22_TATTOO_CARVED_PUMPKIN */;
 				break;
 			
 			case joaat("TAT_SB_041"):
-				*uParam0 = Global_262145.f_33088;
+				*uParam0 = Global_262145.f_33088 /* Tunable: SU22_TATTOO_BRANCHED_WEREWOLF */;
 				break;
 			
 			case joaat("TAT_SB_042"):
-				*uParam0 = Global_262145.f_33089;
+				*uParam0 = Global_262145.f_33089 /* Tunable: SU22_TATTOO_WINGED_SKULL */;
 				break;
 			
 			case joaat("TAT_SB_043"):
-				*uParam0 = Global_262145.f_33090;
+				*uParam0 = Global_262145.f_33090 /* Tunable: SU22_TATTOO_CURSED_SAKI */;
 				break;
 			
 			case joaat("TAT_SB_044"):
-				*uParam0 = Global_262145.f_33091;
+				*uParam0 = Global_262145.f_33091 /* Tunable: SU22_TATTOO_SMOULDERING_BAT_SKULL */;
 				break;
 			
 			case joaat("TAT_SB_045"):
-				*uParam0 = Global_262145.f_33092;
+				*uParam0 = Global_262145.f_33092 /* Tunable: SU22_TATTOO_ARMORED_ARM */;
 				break;
 			
 			case joaat("TAT_SB_046"):
-				*uParam0 = Global_262145.f_33093;
+				*uParam0 = Global_262145.f_33093 /* Tunable: SU22_TATTOO_DEMON_SMILE */;
 				break;
 			
 			case joaat("TAT_SB_047"):
-				*uParam0 = Global_262145.f_33094;
+				*uParam0 = Global_262145.f_33094 /* Tunable: SU22_TATTOO_ANGEL_DEVIL */;
 				break;
 			
 			case joaat("TAT_SB_048"):
-				*uParam0 = Global_262145.f_33095;
+				*uParam0 = Global_262145.f_33095 /* Tunable: SU22_TATTOO_DEATH_IS_CERTAIN */;
 				break;
 			
 			case joaat("TAT_SB_049"):
-				*uParam0 = Global_262145.f_33096;
+				*uParam0 = Global_262145.f_33096 /* Tunable: SU22_TATTOO_DEMON_DRUMMER */;
 				break;
 			
 			case joaat("TAT_SB_050"):
-				*uParam0 = Global_262145.f_33097;
+				*uParam0 = Global_262145.f_33097 /* Tunable: SU22_TATTOO_GOLD_GUN */;
 				break;
 			
 			case joaat("TAT_SB_051"):
-				*uParam0 = Global_262145.f_33098;
+				*uParam0 = Global_262145.f_33098 /* Tunable: SU22_TATTOO_BLUE_SERPENT */;
 				break;
 			
 			case joaat("TAT_SB_052"):
-				*uParam0 = Global_262145.f_33099;
+				*uParam0 = Global_262145.f_33099 /* Tunable: SU22_TATTOO_NIGHT_DEMON */;
 				break;
 			
 			case joaat("TAT_SB_053"):
-				*uParam0 = Global_262145.f_33100;
+				*uParam0 = Global_262145.f_33100 /* Tunable: SU22_TATTOO_MOBSTER_SKULL */;
 				break;
 			
 			case joaat("TAT_SB_054"):
-				*uParam0 = Global_262145.f_33101;
+				*uParam0 = Global_262145.f_33101 /* Tunable: SU22_TATTOO_WOUNDED_HEAD */;
 				break;
 			
 			case joaat("TAT_SB_055"):
-				*uParam0 = Global_262145.f_33102;
+				*uParam0 = Global_262145.f_33102 /* Tunable: SU22_TATTOO_STABBED_SKULL */;
 				break;
 			
 			case joaat("TAT_SB_056"):
-				*uParam0 = Global_262145.f_33103;
+				*uParam0 = Global_262145.f_33103 /* Tunable: SU22_TATTOO_TIGER_BLADE */;
 				break;
 			
 			case joaat("TAT_SB_057"):
-				*uParam0 = Global_262145.f_33104;
+				*uParam0 = Global_262145.f_33104 /* Tunable: SU22_TATTOO_GRAY_DEMON */;
 				break;
 			
 			case joaat("TAT_SB_058"):
-				*uParam0 = Global_262145.f_33105;
+				*uParam0 = Global_262145.f_33105 /* Tunable: SU22_TATTOO_SHRIEKING_DRAGON */;
 				break;
 			
 			case joaat("TAT_SB_059"):
-				*uParam0 = Global_262145.f_33106;
+				*uParam0 = Global_262145.f_33106 /* Tunable: SU22_TATTOO_SWORDS_CITY */;
 				break;
 			
 			case joaat("TAT_SB_060"):
-				*uParam0 = Global_262145.f_33107;
+				*uParam0 = Global_262145.f_33107 /* Tunable: SU22_TATTOO_BLAINE_COUNTY */;
 				break;
 			
 			case joaat("TAT_SB_061"):
-				*uParam0 = Global_262145.f_33108;
+				*uParam0 = Global_262145.f_33108 /* Tunable: SU22_TATTOO_ANGRY_POSSUM */;
 				break;
 			
 			case joaat("TAT_SB_062"):
-				*uParam0 = Global_262145.f_33109;
+				*uParam0 = Global_262145.f_33109 /* Tunable: SU22_TATTOO_FLORAL_DEMON */;
 				break;
 		}
-		*uParam0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam0) * Global_262145.f_76));
+		*uParam0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam0) * Global_262145.f_76 /* Tunable: TATTOO_SHOP_MULTIPLIER */));
 	}
 	iVar1 = func_361();
 	*uParam0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam0) * (1f - (SYSTEM::TO_FLOAT(iVar1) / 100f))));
@@ -81650,255 +81650,255 @@ int func_561(int iParam0, struct<4> Param1)//Position - 0x5B8F7
 		switch (iVar2)
 		{
 			case joaat("TAT_BB_000"):
-				iParam0 = Global_262145.f_7555;
+				iParam0 = Global_262145.f_7555 /* Tunable: DLC_FEMALE_TATTOOS_LOS_SANTOS_WREATH */;
 				break;
 			
 			case joaat("TAT_BB_001"):
-				iParam0 = Global_262145.f_7556;
+				iParam0 = Global_262145.f_7556 /* Tunable: DLC_FEMALE_TATTOOS_HIBISCUS_FLOWER_DUO */;
 				break;
 			
 			case joaat("TAT_BB_002"):
-				iParam0 = Global_262145.f_7557;
+				iParam0 = Global_262145.f_7557 /* Tunable: DLC_FEMALE_TATTOOS_TRIBAL_FLOWER */;
 				break;
 			
 			case joaat("TAT_BB_003"):
-				iParam0 = Global_262145.f_7558;
+				iParam0 = Global_262145.f_7558 /* Tunable: DLC_FEMALE_TATTOOS_ROCK_SOLID */;
 				break;
 			
 			case joaat("TAT_BB_004"):
-				iParam0 = Global_262145.f_7559;
+				iParam0 = Global_262145.f_7559 /* Tunable: DLC_FEMALE_TATTOOS_CATFISH */;
 				break;
 			
 			case joaat("TAT_BB_005"):
-				iParam0 = Global_262145.f_7560;
+				iParam0 = Global_262145.f_7560 /* Tunable: DLC_FEMALE_TATTOOS_SHRIMP */;
 				break;
 			
 			case joaat("TAT_BB_006"):
-				iParam0 = Global_262145.f_7561;
+				iParam0 = Global_262145.f_7561 /* Tunable: DLC_FEMALE_TATTOOS_LOVE_DAGGER */;
 				break;
 			
 			case joaat("TAT_BB_007"):
-				iParam0 = Global_262145.f_7562;
+				iParam0 = Global_262145.f_7562 /* Tunable: DLC_FEMALE_TATTOOS_SCHOOL_OF_FISH */;
 				break;
 			
 			case joaat("TAT_BB_008"):
-				iParam0 = Global_262145.f_7563;
+				iParam0 = Global_262145.f_7563 /* Tunable: DLC_FEMALE_TATTOOS_TRIBAL_BUTTERFLY */;
 				break;
 			
 			case joaat("TAT_BB_009"):
-				iParam0 = Global_262145.f_7564;
+				iParam0 = Global_262145.f_7564 /* Tunable: DLC_FEMALE_TATTOOS_HIBISCUS_FLOWER */;
 				break;
 			
 			case joaat("TAT_BB_010"):
-				iParam0 = Global_262145.f_7565;
+				iParam0 = Global_262145.f_7565 /* Tunable: DLC_FEMALE_TATTOOS_DOLPHIN */;
 				break;
 			
 			case joaat("TAT_BB_011"):
-				iParam0 = Global_262145.f_7566;
+				iParam0 = Global_262145.f_7566 /* Tunable: DLC_FEMALE_TATTOOS_SEA_HORSES */;
 				break;
 			
 			case joaat("TAT_BB_012"):
-				iParam0 = Global_262145.f_7567;
+				iParam0 = Global_262145.f_7567 /* Tunable: DLC_FEMALE_TATTOOS_ANCHOR */;
 				break;
 			
 			case joaat("TAT_BB_013"):
-				iParam0 = Global_262145.f_7567;
+				iParam0 = Global_262145.f_7567 /* Tunable: DLC_FEMALE_TATTOOS_ANCHOR */;
 				break;
 			
 			case joaat("TAT_BB_014"):
-				iParam0 = Global_262145.f_7568;
+				iParam0 = Global_262145.f_7568 /* Tunable: DLC_FEMALE_TATTOOS_SWALLOW */;
 				break;
 			
 			case joaat("TAT_BB_015"):
-				iParam0 = Global_262145.f_7569;
+				iParam0 = Global_262145.f_7569 /* Tunable: DLC_FEMALE_TATTOOS_TRIBAL_FISH */;
 				break;
 			
 			case joaat("TAT_BB_016"):
-				iParam0 = Global_262145.f_7570;
+				iParam0 = Global_262145.f_7570 /* Tunable: DLC_FEMALE_TATTOOS_PARROT */;
 				break;
 			
 			case joaat("TAT_BUS_F_002"):
-				iParam0 = Global_262145.f_7571;
+				iParam0 = Global_262145.f_7571 /* Tunable: DLC_FEMALE_TATTOOS_HIGH_ROLLER */;
 				break;
 			
 			case joaat("TAT_BUS_F_000"):
-				iParam0 = Global_262145.f_7572;
+				iParam0 = Global_262145.f_7572 /* Tunable: DLC_FEMALE_TATTOOS_RESPECT */;
 				break;
 			
 			case joaat("TAT_BUS_F_006"):
-				iParam0 = Global_262145.f_7573;
+				iParam0 = Global_262145.f_7573 /* Tunable: DLC_FEMALE_TATTOOS_SINGLE */;
 				break;
 			
 			case joaat("TAT_BUS_F_007"):
-				iParam0 = Global_262145.f_7574;
+				iParam0 = Global_262145.f_7574 /* Tunable: DLC_FEMALE_TATTOOS_VALDEGRACE_LOGO */;
 				break;
 			
 			case joaat("TAT_BUS_F_008"):
-				iParam0 = Global_262145.f_7575;
+				iParam0 = Global_262145.f_7575 /* Tunable: DLC_FEMALE_TATTOOS_MONEY_ROSE */;
 				break;
 			
 			case joaat("TAT_BUS_F_010"):
-				iParam0 = Global_262145.f_7576;
+				iParam0 = Global_262145.f_7576 /* Tunable: DLC_FEMALE_TATTOOS_DIAMOND_CROWN */;
 				break;
 			
 			case joaat("TAT_BUS_F_009"):
-				iParam0 = Global_262145.f_7577;
+				iParam0 = Global_262145.f_7577 /* Tunable: DLC_FEMALE_TATTOOS_DOLLAR_SIGN */;
 				break;
 			
 			case joaat("TAT_BUS_F_011"):
-				iParam0 = Global_262145.f_7578;
+				iParam0 = Global_262145.f_7578 /* Tunable: DLC_FEMALE_TATTOOS_DIAMOND_JACK */;
 				break;
 			
 			case joaat("TAT_BUS_F_003"):
-				iParam0 = Global_262145.f_7579;
+				iParam0 = Global_262145.f_7579 /* Tunable: DLC_FEMALE_TATTOOS_MAKIN_MONEY */;
 				break;
 			
 			case joaat("TAT_BUS_F_001"):
-				iParam0 = Global_262145.f_7580;
+				iParam0 = Global_262145.f_7580 /* Tunable: DLC_FEMALE_TATTOOS_GOLD_DIGGER */;
 				break;
 			
 			case joaat("TAT_BUS_F_005"):
-				iParam0 = Global_262145.f_7581;
+				iParam0 = Global_262145.f_7581 /* Tunable: DLC_FEMALE_TATTOOS_GREED_IS_GOOD */;
 				break;
 			
 			case joaat("TAT_BUS_F_004"):
-				iParam0 = Global_262145.f_7582;
+				iParam0 = Global_262145.f_7582 /* Tunable: DLC_FEMALE_TATTOOS_LOVE_MONEY */;
 				break;
 			
 			case joaat("TAT_BUS_F_012"):
-				iParam0 = Global_262145.f_7583;
+				iParam0 = Global_262145.f_7583 /* Tunable: DLC_FEMALE_TATTOOS_SANTO_CAPRA_LOGO */;
 				break;
 			
 			case joaat("TAT_BUS_F_013"):
-				iParam0 = Global_262145.f_7584;
+				iParam0 = Global_262145.f_7584 /* Tunable: DLC_FEMALE_TATTOOS_MONEY_BAG */;
 				break;
 			
 			case joaat("TAT_BUS_F_014"):
-				iParam0 = Global_262145.f_7585;
+				iParam0 = Global_262145.f_7585 /* Tunable: DLC_FEMALE_TATTOOS_CREW_EMBLEM_CHEST */;
 				break;
 			
 			case joaat("TAT_BUS_F_015"):
-				iParam0 = Global_262145.f_7586;
+				iParam0 = Global_262145.f_7586 /* Tunable: DLC_FEMALE_TATTOOS_CREW_EMBLEM_ARM */;
 				break;
 			
 			case joaat("TAT_BB_017"):
-				iParam0 = Global_262145.f_7587;
+				iParam0 = Global_262145.f_7587 /* Tunable: DLC_MALE_TATTOO_MERMAID_LS */;
 				break;
 			
 			case joaat("TAT_BB_018"):
-				iParam0 = Global_262145.f_7588;
+				iParam0 = Global_262145.f_7588 /* Tunable: DLC_MALE_TATTOO_SHIP_ARMS */;
 				break;
 			
 			case joaat("TAT_BB_019"):
-				iParam0 = Global_262145.f_7589;
+				iParam0 = Global_262145.f_7589 /* Tunable: DLC_MALE_TATTOO_TRIBAL_HAMMERHEAD */;
 				break;
 			
 			case joaat("TAT_BB_020"):
-				iParam0 = Global_262145.f_7590;
+				iParam0 = Global_262145.f_7590 /* Tunable: DLC_MALE_TATTOO_TRIBAL_SHARK */;
 				break;
 			
 			case joaat("TAT_BB_021"):
-				iParam0 = Global_262145.f_7591;
+				iParam0 = Global_262145.f_7591 /* Tunable: DLC_MALE_TATTOO_PIRATE_SKULL */;
 				break;
 			
 			case joaat("TAT_BB_022"):
-				iParam0 = Global_262145.f_7592;
+				iParam0 = Global_262145.f_7592 /* Tunable: DLC_MALE_TATTOO_SURF_LS */;
 				break;
 			
 			case joaat("TAT_BB_023"):
-				iParam0 = Global_262145.f_7593;
+				iParam0 = Global_262145.f_7593 /* Tunable: DLC_MALE_TATTOO_SWORDFISH */;
 				break;
 			
 			case joaat("TAT_BB_024"):
-				iParam0 = Global_262145.f_7594;
+				iParam0 = Global_262145.f_7594 /* Tunable: DLC_MALE_TATTOO_TIKI_TOWER */;
 				break;
 			
 			case joaat("TAT_BB_025"):
-				iParam0 = Global_262145.f_7595;
+				iParam0 = Global_262145.f_7595 /* Tunable: DLC_MALE_TATTOO_TRIBAL_TIKI_TOWER */;
 				break;
 			
 			case joaat("TAT_BB_026"):
-				iParam0 = Global_262145.f_7596;
+				iParam0 = Global_262145.f_7596 /* Tunable: DLC_MALE_TATTOO_TRIBAL_SUN */;
 				break;
 			
 			case joaat("TAT_BB_027"):
-				iParam0 = Global_262145.f_7597;
+				iParam0 = Global_262145.f_7597 /* Tunable: DLC_MALE_TATTOO_TRIBAL_STAR */;
 				break;
 			
 			case joaat("TAT_BB_028"):
-				iParam0 = Global_262145.f_7598;
+				iParam0 = Global_262145.f_7598 /* Tunable: DLC_MALE_TATTOO_LITTLE_FISH */;
 				break;
 			
 			case joaat("TAT_BB_029"):
-				iParam0 = Global_262145.f_7599;
+				iParam0 = Global_262145.f_7599 /* Tunable: DLC_MALE_TATTOO_SURFS_UP */;
 				break;
 			
 			case joaat("TAT_BB_030"):
-				iParam0 = Global_262145.f_7600;
+				iParam0 = Global_262145.f_7600 /* Tunable: DLC_MALE_TATTOO_VESPUCCI_BEAUTY */;
 				break;
 			
 			case joaat("TAT_BB_031"):
-				iParam0 = Global_262145.f_7601;
+				iParam0 = Global_262145.f_7601 /* Tunable: DLC_MALE_TATTOO_SHARK */;
 				break;
 			
 			case joaat("TAT_BB_032"):
-				iParam0 = Global_262145.f_7602;
+				iParam0 = Global_262145.f_7602 /* Tunable: DLC_MALE_TATTOO_WHEEL */;
 				break;
 			
 			case joaat("TAT_BUS_005"):
-				iParam0 = Global_262145.f_7603;
+				iParam0 = Global_262145.f_7603 /* Tunable: DLC_MALE_TATTOO_CASH_KING */;
 				break;
 			
 			case joaat("TAT_BUS_003"):
-				iParam0 = Global_262145.f_7604;
+				iParam0 = Global_262145.f_7604 /* Tunable: DLC_MALE_TATTOO_100_BILL */;
 				break;
 			
 			case joaat("TAT_BUS_011"):
-				iParam0 = Global_262145.f_7605;
+				iParam0 = Global_262145.f_7605 /* Tunable: DLC_MALE_TATTOO_HUSTLER */;
 				break;
 			
 			case joaat("TAT_BUS_000"):
-				iParam0 = Global_262145.f_7606;
+				iParam0 = Global_262145.f_7606 /* Tunable: DLC_MALE_TATTOO_MAKIN_PAPER */;
 				break;
 			
 			case joaat("TAT_BUS_006"):
-				iParam0 = Global_262145.f_7607;
+				iParam0 = Global_262145.f_7607 /* Tunable: DLC_MALE_TATTOO_BOLD_DOLLAR_SIGN */;
 				break;
 			
 			case joaat("TAT_BUS_007"):
-				iParam0 = Global_262145.f_7608;
+				iParam0 = Global_262145.f_7608 /* Tunable: DLC_MALE_TATTOO_SCRIPT_DOLLAR_SIGN */;
 				break;
 			
 			case joaat("TAT_BUS_008"):
-				iParam0 = Global_262145.f_7609;
+				iParam0 = Global_262145.f_7609 /* Tunable: DLC_MALE_TATTOO_100 */;
 				break;
 			
 			case joaat("TAT_BUS_009"):
-				iParam0 = Global_262145.f_7610;
+				iParam0 = Global_262145.f_7610 /* Tunable: DLC_MALE_TATTOO_DOLLAR_SKULL */;
 				break;
 			
 			case joaat("TAT_BUS_001"):
-				iParam0 = Global_262145.f_7611;
+				iParam0 = Global_262145.f_7611 /* Tunable: DLC_MALE_TATTOO_RICH */;
 				break;
 			
 			case joaat("TAT_BUS_002"):
-				iParam0 = Global_262145.f_7612;
+				iParam0 = Global_262145.f_7612 /* Tunable: DLC_MALE_TATTOO_DOLLAR_SIGNS */;
 				break;
 			
 			case joaat("TAT_BUS_004"):
-				iParam0 = Global_262145.f_7613;
+				iParam0 = Global_262145.f_7613 /* Tunable: DLC_MALE_TATTOO_ALLSEEING_EYE */;
 				break;
 			
 			case joaat("TAT_BUS_010"):
-				iParam0 = Global_262145.f_7614;
+				iParam0 = Global_262145.f_7614 /* Tunable: DLC_MALE_TATTOO_GREEN */;
 				break;
 			
 			case joaat("TAT_BUS_012"):
-				iParam0 = Global_262145.f_7615;
+				iParam0 = Global_262145.f_7615 /* Tunable: DLC_MALE_TATTOO_CREW_EMBLEM_CHEST */;
 				break;
 			
 			case joaat("TAT_BUS_013"):
-				iParam0 = Global_262145.f_7616;
+				iParam0 = Global_262145.f_7616 /* Tunable: DLC_MALE_TATTOO_CREW_EMBLEM_ARM */;
 				break;
 			
 			case joaat("TAT_HP_000"):
@@ -82098,2086 +82098,2086 @@ int func_561(int iParam0, struct<4> Param1)//Position - 0x5B8F7
 				break;
 			
 			case joaat("TAT_LX_000"):
-				iParam0 = Global_262145.f_11045;
+				iParam0 = Global_262145.f_11045 /* Tunable: LUXE1_BOTH_GENDERS_SERPENT_OF_DEATH */;
 				break;
 			
 			case joaat("TAT_LX_001"):
-				iParam0 = Global_262145.f_11046;
+				iParam0 = Global_262145.f_11046 /* Tunable: LUXE1_BOTH_GENDERS_ELABORATE_LOS_MUERTOS */;
 				break;
 			
 			case joaat("TAT_LX_003"):
-				iParam0 = Global_262145.f_11047;
+				iParam0 = Global_262145.f_11047 /* Tunable: LUXE1_BOTH_GENDERS_ABSTRACT_SKULL */;
 				break;
 			
 			case joaat("TAT_LX_004"):
-				iParam0 = Global_262145.f_11048;
+				iParam0 = Global_262145.f_11048 /* Tunable: LUXE1_BOTH_GENDERS_FLORAL_RAVEN */;
 				break;
 			
 			case joaat("TAT_LX_006"):
-				iParam0 = Global_262145.f_11049;
+				iParam0 = Global_262145.f_11049 /* Tunable: LUXE1_BOTH_GENDERS_ADORNED_WOLF */;
 				break;
 			
 			case joaat("TAT_LX_007"):
-				iParam0 = Global_262145.f_11050;
+				iParam0 = Global_262145.f_11050 /* Tunable: LUXE1_BOTH_GENDERS_EYE_OF_THE_GRIFFIN */;
 				break;
 			
 			case joaat("TAT_LX_008"):
-				iParam0 = Global_262145.f_11051;
+				iParam0 = Global_262145.f_11051 /* Tunable: LUXE1_BOTH_GENDERS_FLYING_EYE */;
 				break;
 			
 			case joaat("TAT_LX_009"):
-				iParam0 = Global_262145.f_11052;
+				iParam0 = Global_262145.f_11052 /* Tunable: LUXE1_BOTH_GENDERS_FLORAL_SYMMETRY */;
 				break;
 			
 			case joaat("TAT_LX_013"):
-				iParam0 = Global_262145.f_11053;
+				iParam0 = Global_262145.f_11053 /* Tunable: LUXE1_BOTH_GENDERS_MERMAID_HARPIST */;
 				break;
 			
 			case joaat("TAT_LX_014"):
-				iParam0 = Global_262145.f_11054;
+				iParam0 = Global_262145.f_11054 /* Tunable: LUXE1_BOTH_GENDERS_ANCIENT_QUEEN */;
 				break;
 			
 			case joaat("TAT_LX_015"):
-				iParam0 = Global_262145.f_11055;
+				iParam0 = Global_262145.f_11055 /* Tunable: LUXE1_BOTH_GENDERS_SMOKING_SISTERS */;
 				break;
 			
 			case joaat("TAT_LX_019"):
-				iParam0 = Global_262145.f_11056;
+				iParam0 = Global_262145.f_11056 /* Tunable: LUXE1_BOTH_GENDERS_GEISHA_BLOOM */;
 				break;
 			
 			case joaat("TAT_LX_020"):
-				iParam0 = Global_262145.f_11057;
+				iParam0 = Global_262145.f_11057 /* Tunable: LUXE1_BOTH_GENDERS_ARCHANGEL_AND_MARY */;
 				break;
 			
 			case joaat("TAT_LX_021"):
-				iParam0 = Global_262145.f_11058;
+				iParam0 = Global_262145.f_11058 /* Tunable: LUXE1_BOTH_GENDERS_GABRIEL_ */;
 				break;
 			
 			case joaat("TAT_LX_024"):
-				iParam0 = Global_262145.f_11059;
+				iParam0 = Global_262145.f_11059 /* Tunable: LUXE1_BOTH_GENDERS_FEATHER_MURAL */;
 				break;
 			
 			case joaat("TAT_L2_002"):
-				iParam0 = Global_262145.f_11374;
+				iParam0 = Global_262145.f_11374 /* Tunable: LUXE2_THE_HOWLER */;
 				break;
 			
 			case joaat("TAT_L2_005"):
-				iParam0 = Global_262145.f_11375;
+				iParam0 = Global_262145.f_11375 /* Tunable: LUXE2_FATAL_DAGGER */;
 				break;
 			
 			case joaat("TAT_L2_010"):
-				iParam0 = Global_262145.f_11376;
+				iParam0 = Global_262145.f_11376 /* Tunable: LUXE2_INTROMETRIC */;
 				break;
 			
 			case joaat("TAT_L2_011"):
-				iParam0 = Global_262145.f_11377;
+				iParam0 = Global_262145.f_11377 /* Tunable: LUXE2_CROSS_OF_ROSES */;
 				break;
 			
 			case joaat("TAT_L2_012"):
-				iParam0 = Global_262145.f_11378;
+				iParam0 = Global_262145.f_11378 /* Tunable: LUXE2_GEOMETRIC_GALAXY */;
 				break;
 			
 			case joaat("TAT_L2_016"):
-				iParam0 = Global_262145.f_11379;
+				iParam0 = Global_262145.f_11379 /* Tunable: LUXE2_EGYPTIAN_MURAL */;
 				break;
 			
 			case joaat("TAT_L2_017"):
-				iParam0 = Global_262145.f_11380;
+				iParam0 = Global_262145.f_11380 /* Tunable: LUXE2_HEAVENLY_DEITY */;
 				break;
 			
 			case joaat("TAT_L2_018"):
-				iParam0 = Global_262145.f_11381;
+				iParam0 = Global_262145.f_11381 /* Tunable: LUXE2_DIVINE_GODDESS */;
 				break;
 			
 			case joaat("TAT_L2_022"):
-				iParam0 = Global_262145.f_11382;
+				iParam0 = Global_262145.f_11382 /* Tunable: LUXE2_CLOAKED_ANGEL */;
 				break;
 			
 			case joaat("TAT_L2_023"):
-				iParam0 = Global_262145.f_11383;
+				iParam0 = Global_262145.f_11383 /* Tunable: LUXE2_STARMETRIC */;
 				break;
 			
 			case joaat("TAT_L2_025"):
-				iParam0 = Global_262145.f_11384;
+				iParam0 = Global_262145.f_11384 /* Tunable: LUXE2_REAPER_SWAY */;
 				break;
 			
 			case joaat("TAT_L2_026"):
-				iParam0 = Global_262145.f_11385;
+				iParam0 = Global_262145.f_11385 /* Tunable: LUXE2_FLORAL_PRINT */;
 				break;
 			
 			case joaat("TAT_L2_027"):
-				iParam0 = Global_262145.f_11386;
+				iParam0 = Global_262145.f_11386 /* Tunable: LUXE2_COBRA_DAWN */;
 				break;
 			
 			case joaat("TAT_L2_028"):
-				iParam0 = Global_262145.f_11387;
+				iParam0 = Global_262145.f_11387 /* Tunable: LUXE2_PYTHON_SKULL */;
 				break;
 			
 			case joaat("TAT_L2_029"):
-				iParam0 = Global_262145.f_11388;
+				iParam0 = Global_262145.f_11388 /* Tunable: LUXE2_GEOMETRIC_DESIGN */;
 				break;
 			
 			case joaat("TAT_L2_030"):
-				iParam0 = Global_262145.f_11388;
+				iParam0 = Global_262145.f_11388 /* Tunable: LUXE2_GEOMETRIC_DESIGN */;
 				break;
 			
 			case joaat("TAT_L2_031"):
-				iParam0 = Global_262145.f_11388;
+				iParam0 = Global_262145.f_11388 /* Tunable: LUXE2_GEOMETRIC_DESIGN */;
 				break;
 			
 			case joaat("TAT_X2_000"):
-				iParam0 = Global_262145.f_9418;
+				iParam0 = Global_262145.f_9418 /* Tunable: TATTOOS_XMAS14_SKULL_RIDER */;
 				break;
 			
 			case joaat("TAT_X2_001"):
-				iParam0 = Global_262145.f_9419;
+				iParam0 = Global_262145.f_9419 /* Tunable: TATTOOS_XMAS14_SPIDER_OUTLINE */;
 				break;
 			
 			case joaat("TAT_X2_002"):
-				iParam0 = Global_262145.f_9420;
+				iParam0 = Global_262145.f_9420 /* Tunable: TATTOOS_XMAS14_SPIDER_COLOR */;
 				break;
 			
 			case joaat("TAT_X2_003"):
-				iParam0 = Global_262145.f_9421;
+				iParam0 = Global_262145.f_9421 /* Tunable: TATTOOS_XMAS14_SNAKE_OUTLINE */;
 				break;
 			
 			case joaat("TAT_X2_004"):
-				iParam0 = Global_262145.f_9422;
+				iParam0 = Global_262145.f_9422 /* Tunable: TATTOOS_XMAS14_SNAKE_SHADED */;
 				break;
 			
 			case joaat("TAT_X2_005"):
-				iParam0 = Global_262145.f_9423;
+				iParam0 = Global_262145.f_9423 /* Tunable: TATTOOS_XMAS14_CARP_OUTLINE */;
 				break;
 			
 			case joaat("TAT_X2_006"):
-				iParam0 = Global_262145.f_9424;
+				iParam0 = Global_262145.f_9424 /* Tunable: TATTOOS_XMAS14_CARP_SHADED */;
 				break;
 			
 			case joaat("TAT_X2_007"):
-				iParam0 = Global_262145.f_9425;
+				iParam0 = Global_262145.f_9425 /* Tunable: TATTOOS_XMAS14_LOS_MUERTOS */;
 				break;
 			
 			case joaat("TAT_X2_008"):
-				iParam0 = Global_262145.f_9426;
+				iParam0 = Global_262145.f_9426 /* Tunable: TATTOOS_XMAS14_DEATH_BEFORE_DISHONOR */;
 				break;
 			
 			case joaat("TAT_X2_009"):
-				iParam0 = Global_262145.f_9427;
+				iParam0 = Global_262145.f_9427 /* Tunable: TATTOOS_XMAS14_TIME_TO_DIE */;
 				break;
 			
 			case joaat("TAT_X2_010"):
-				iParam0 = Global_262145.f_9428;
+				iParam0 = Global_262145.f_9428 /* Tunable: TATTOOS_XMAS14_ELECTRIC_SNAKE */;
 				break;
 			
 			case joaat("TAT_X2_011"):
-				iParam0 = Global_262145.f_9429;
+				iParam0 = Global_262145.f_9429 /* Tunable: TATTOOS_XMAS14_ROARING_TIGER */;
 				break;
 			
 			case joaat("TAT_X2_012"):
-				iParam0 = Global_262145.f_9430;
+				iParam0 = Global_262145.f_9430 /* Tunable: TATTOOS_XMAS14_8_BALL_SKULL */;
 				break;
 			
 			case joaat("TAT_X2_013"):
-				iParam0 = Global_262145.f_9431;
+				iParam0 = Global_262145.f_9431 /* Tunable: TATTOOS_XMAS14_LIZARD */;
 				break;
 			
 			case joaat("TAT_X2_014"):
-				iParam0 = Global_262145.f_9432;
+				iParam0 = Global_262145.f_9432 /* Tunable: TATTOOS_XMAS14_FLORAL_DAGGER */;
 				break;
 			
 			case joaat("TAT_X2_015"):
-				iParam0 = Global_262145.f_9433;
+				iParam0 = Global_262145.f_9433 /* Tunable: TATTOOS_XMAS14_JAPANESE_WARRIOR */;
 				break;
 			
 			case joaat("TAT_X2_016"):
-				iParam0 = Global_262145.f_9434;
+				iParam0 = Global_262145.f_9434 /* Tunable: TATTOOS_XMAS14_LOOSE_LIPS_OUTLINE */;
 				break;
 			
 			case joaat("TAT_X2_017"):
-				iParam0 = Global_262145.f_9435;
+				iParam0 = Global_262145.f_9435 /* Tunable: TATTOOS_XMAS14_LOOSE_LIPS_COLOR */;
 				break;
 			
 			case joaat("TAT_X2_018"):
-				iParam0 = Global_262145.f_9436;
+				iParam0 = Global_262145.f_9436 /* Tunable: TATTOOS_XMAS14_ROYAL_DAGGER_OUTLINE */;
 				break;
 			
 			case joaat("TAT_X2_019"):
-				iParam0 = Global_262145.f_9437;
+				iParam0 = Global_262145.f_9437 /* Tunable: TATTOOS_XMAS14_ROYAL_DAGGER_COLOR */;
 				break;
 			
 			case joaat("TAT_X2_020"):
-				iParam0 = Global_262145.f_9438;
+				iParam0 = Global_262145.f_9438 /* Tunable: TATTOOS_XMAS14_TIMES_UP_OUTLINE */;
 				break;
 			
 			case joaat("TAT_X2_021"):
-				iParam0 = Global_262145.f_9439;
+				iParam0 = Global_262145.f_9439 /* Tunable: TATTOOS_XMAS14_TIMES_UP_COLOR */;
 				break;
 			
 			case joaat("TAT_X2_022"):
-				iParam0 = Global_262145.f_9440;
+				iParam0 = Global_262145.f_9440 /* Tunable: TATTOOS_XMAS14_YOURE_NEXT_OUTLINE */;
 				break;
 			
 			case joaat("TAT_X2_023"):
-				iParam0 = Global_262145.f_9441;
+				iParam0 = Global_262145.f_9441 /* Tunable: TATTOOS_XMAS14_YOURE_NEXT_COLOR */;
 				break;
 			
 			case joaat("TAT_X2_024"):
-				iParam0 = Global_262145.f_9442;
+				iParam0 = Global_262145.f_9442 /* Tunable: TATTOOS_XMAS14_SNAKE_HEAD_OUTLINE */;
 				break;
 			
 			case joaat("TAT_X2_025"):
-				iParam0 = Global_262145.f_9443;
+				iParam0 = Global_262145.f_9443 /* Tunable: TATTOOS_XMAS14_SNAKE_HEAD_COLOR */;
 				break;
 			
 			case joaat("TAT_X2_026"):
-				iParam0 = Global_262145.f_9444;
+				iParam0 = Global_262145.f_9444 /* Tunable: TATTOOS_XMAS14_FUCK_LUCK_OUTLINE */;
 				break;
 			
 			case joaat("TAT_X2_027"):
-				iParam0 = Global_262145.f_9445;
+				iParam0 = Global_262145.f_9445 /* Tunable: TATTOOS_XMAS14_FUCK_LUCK_COLOR */;
 				break;
 			
 			case joaat("TAT_X2_028"):
-				iParam0 = Global_262145.f_9446;
+				iParam0 = Global_262145.f_9446 /* Tunable: TATTOOS_XMAS14_EXECUTIONER */;
 				break;
 			
 			case joaat("TAT_X2_029"):
-				iParam0 = Global_262145.f_9447;
+				iParam0 = Global_262145.f_9447 /* Tunable: TATTOOS_XMAS14_BEAUTIFUL_DEATH */;
 				break;
 		}
 		switch (iVar2)
 		{
 			case joaat("TAT_S1_001"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12441) * Global_262145.f_12470));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12441 /* Tunable: BOTH_GENDERS_KING_FIGHT */) * Global_262145.f_12470 /* Tunable: LOWRIDER_MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S1_002"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12442) * Global_262145.f_12470));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12442 /* Tunable: BOTH_GENDERS_HOLY_MARY */) * Global_262145.f_12470 /* Tunable: LOWRIDER_MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S1_004"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12443) * Global_262145.f_12470));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12443 /* Tunable: BOTH_GENDERS_GUN_MIC */) * Global_262145.f_12470 /* Tunable: LOWRIDER_MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S1_005"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12444) * Global_262145.f_12470));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12444 /* Tunable: BOTH_GENDERS_NO_EVIL */) * Global_262145.f_12470 /* Tunable: LOWRIDER_MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S1_007"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12445) * Global_262145.f_12470));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12445 /* Tunable: BOTH_GENDERS_LS_SERPENT */) * Global_262145.f_12470 /* Tunable: LOWRIDER_MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S1_009"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12446) * Global_262145.f_12470));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12446 /* Tunable: BOTH_GENDERS_AMAZON */) * Global_262145.f_12470 /* Tunable: LOWRIDER_MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S1_010"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12447) * Global_262145.f_12470));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12447 /* Tunable: BOTH_GENDERS_BAD_ANGEL */) * Global_262145.f_12470 /* Tunable: LOWRIDER_MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S1_013"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12448) * Global_262145.f_12470));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12448 /* Tunable: BOTH_GENDERS_LOVE_GAMBLE */) * Global_262145.f_12470 /* Tunable: LOWRIDER_MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S1_014"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12449) * Global_262145.f_12470));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12449 /* Tunable: BOTH_GENDERS_LOVE_IS_BLIND */) * Global_262145.f_12470 /* Tunable: LOWRIDER_MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S1_015"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12450) * Global_262145.f_12470));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12450 /* Tunable: BOTH_GENDERS_SEDUCTRESS */) * Global_262145.f_12470 /* Tunable: LOWRIDER_MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S1_017"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12451) * Global_262145.f_12470));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12451 /* Tunable: BOTH_GENDERS_INK_ME */) * Global_262145.f_12470 /* Tunable: LOWRIDER_MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S1_020"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12452) * Global_262145.f_12470));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12452 /* Tunable: BOTH_GENDERS_PRESIDENTS */) * Global_262145.f_12470 /* Tunable: LOWRIDER_MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S1_021"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12453) * Global_262145.f_12470));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12453 /* Tunable: BOTH_GENDERS_SAD_ANGEL */) * Global_262145.f_12470 /* Tunable: LOWRIDER_MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S1_023"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12454) * Global_262145.f_12470));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12454 /* Tunable: BOTH_GENDERS_DANCE_OF_HEARTS */) * Global_262145.f_12470 /* Tunable: LOWRIDER_MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S1_026"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12455) * Global_262145.f_12470));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12455 /* Tunable: BOTH_GENDERS_ROYAL_TAKEOVER */) * Global_262145.f_12470 /* Tunable: LOWRIDER_MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S1_027"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12456) * Global_262145.f_12470));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12456 /* Tunable: BOTH_GENDERS_LOS_SANTOS_LIFE */) * Global_262145.f_12470 /* Tunable: LOWRIDER_MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S1_033"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12457) * Global_262145.f_12470));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12457 /* Tunable: BOTH_GENDERS_CITY_SORROW */) * Global_262145.f_12470 /* Tunable: LOWRIDER_MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 		}
 		switch (iVar2)
 		{
 			case joaat("TAT_S2_000"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15073) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15073 /* Tunable: TATTOO_SA_ASSAULT */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S2_003"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15074) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15074 /* Tunable: TATTOO_LADY_VAMP */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S2_006"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15075) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15075 /* Tunable: TATTOO_LOVE_HUSTLE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S2_008"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15076) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15076 /* Tunable: TATTOO_LOVE_THE_GAME */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S2_011"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15077) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15077 /* Tunable: TATTOO_LADY_LIBERTY */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S2_012"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15078) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15078 /* Tunable: TATTOO_ROYAL_KISS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S2_016"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15079) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15079 /* Tunable: TATTOO_TWO_FACE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S2_018"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15080) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15080 /* Tunable: TATTOO_SKELETON_PARTY */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S2_019"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15081) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15081 /* Tunable: TATTOO_DEATH_BEHIND */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S2_022"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15082) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15082 /* Tunable: TATTOO_MY_CRAZY_LIFE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S2_028"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15083) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15083 /* Tunable: TATTOO_LOVING_LOS_MUERTOS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S2_029"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15084) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15084 /* Tunable: TATTOO_DEATH_US_DO_PART */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S2_030"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15085) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15085 /* Tunable: TATTOO_SAN_ANDREAS_PRAYER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S2_031"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15086) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15086 /* Tunable: TATTOO_DEAD_PRETTY */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S2_032"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15087) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15087 /* Tunable: TATTOO_REIGN_OVER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_S2_035"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15088) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_15088 /* Tunable: TATTOO_BLACK_TEARS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 		}
 		switch (iVar2)
 		{
 			case joaat("TAT_ST_000"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17266) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17266 /* Tunable: STUNT_STUNT_SKULL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_001"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17267) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17267 /* Tunable: STUNT_8_EYED_SKULL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_002"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17268) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17268 /* Tunable: STUNT_BIG_CAT */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_003"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17269) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17269 /* Tunable: STUNT_POISON_WRENCH */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_004"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17270) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17270 /* Tunable: STUNT_SCORPION_ */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_005"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17271) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17271 /* Tunable: STUNT_DEMON_SPARK_PLUG */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_006"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17272) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17272 /* Tunable: STUNT_TOXIC_SPIDER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_007"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17273) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17273 /* Tunable: STUNTDAGGER_DEVIL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_008"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17274) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17274 /* Tunable: STUNT_MOONLIGHT_RIDE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_009"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17275) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17275 /* Tunable: STUNT_ARACHNID_OF_DEATH */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_010"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17276) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17276 /* Tunable: STUNT_GRAVE_VULTURE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_011"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17277) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17277 /* Tunable: STUNT_WHEELS_OF_DEATH */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_012"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17278) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17278 /* Tunable: STUNT_PUNK_BIKER_ */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_013"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17279) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17279 /* Tunable: STUNT_DIRT_TRACK_HERO */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_014"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17280) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17280 /* Tunable: STUNT_BAT_CAT_OF_SPADES */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_015"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17281) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17281 /* Tunable: STUNT_PRAYING_GLOVES */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_016"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17282) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17282 /* Tunable: STUNT_COFFIN_RACER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_017"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17283) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17283 /* Tunable: STUNT_BAT_WHEEL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_018"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17284) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17284 /* Tunable: STUNT_VINTAGE_BULLY */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_019"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17285) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17285 /* Tunable: STUNT_ENGINE_HEART */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_020"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17286) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17286 /* Tunable: STUNT_PISTON_ANGEL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_021"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17287) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17287 /* Tunable: STUNT_GOLDEN_COBRA */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_022"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17288) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17288 /* Tunable: STUNT_PISTON_HEAD */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_023"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17289) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17289 /* Tunable: STUNT_TANKED_ */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_024"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17290) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17290 /* Tunable: STUNT_ROAD_KILL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_025"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17291) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17291 /* Tunable: STUNT_SPEED_FREAK */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_026"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17292) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17292 /* Tunable: STUNT_WINGED_WHEEL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_027"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17293) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17293 /* Tunable: STUNT_PUNK_ROAD_HOG */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_028"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17294) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17294 /* Tunable: STUNT_QUAD_GOBLIN */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_029"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17295) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17295 /* Tunable: STUNT_MAJESTIC_FINISH */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_030"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17296) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17296 /* Tunable: STUNT_MANS_RUIN_ */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_031"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17297) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17297 /* Tunable: STUNT_STUNT_JESUS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_032"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17298) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17298 /* Tunable: STUNT_WHEELIE_MOUSE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_033"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17299) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17299 /* Tunable: STUNT_SUGAR_SKULL_TRUCKER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_034"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17300) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17300 /* Tunable: STUNT_FEATHER_ROAD_KILL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_035"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17301) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17301 /* Tunable: STUNT_STUNTMANS_END */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_036"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17302) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17302 /* Tunable: STUNT_BIKER_STALLION */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_037"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17303) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17303 /* Tunable: STUNT_BIG_GRILLS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_038"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17304) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17304 /* Tunable: STUNT_ONE_DOWN_FIVE_UP */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_039"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17305) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17305 /* Tunable: STUNT_KABOOM */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_040"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17306) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17306 /* Tunable: STUNT_MONKEY_CHOPPER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_041"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17307) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17307 /* Tunable: STUNT_BRAPP */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_042"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17308) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17308 /* Tunable: STUNT_FLAMING_QUAD */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_043"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17309) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17309 /* Tunable: STUNT_ENGINE_ARM */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_044"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17310) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17310 /* Tunable: STUNT_RAM_SKULL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_045"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17311) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17311 /* Tunable: STUNT_SEVERED_HAND */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_046"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17312) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17312 /* Tunable: STUNT_FULL_THROTLE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_047"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17313) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17313 /* Tunable: STUNT_BRAKE_KNIFE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_048"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17314) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17314 /* Tunable: STUNT_RACING_DOLL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_ST_049"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17315) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17315 /* Tunable: STUNT_SEDUCTIVE_MECHANIC */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 		}
 		switch (iVar2)
 		{
 			case joaat("TAT_BI_000"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17927) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17927 /* Tunable: BIKER_BOTH_GENDERS_DEMON_RIDER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_001"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17928) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17928 /* Tunable: BIKER_BOTH_GENDERS_BOTH_BARRELS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_002"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17929) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17929 /* Tunable: BIKER_BOTH_GENDERS_ROSE_TRIBUTE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_003"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17930) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17930 /* Tunable: BIKER_BOTH_GENDERS_WEB_RIDER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_004"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17931) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17931 /* Tunable: BIKER_BOTH_GENDERS_DRAGONS_FURY */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_005"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17932) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17932 /* Tunable: BIKER_BOTH_GENDERS_MADE_IN_AMERICA */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_006"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17933) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17933 /* Tunable: BIKER_BOTH_GENDERS_CHOPPER_FREEDOM */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_007"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17934) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17934 /* Tunable: BIKER_BOTH_GENDERS_SWOOPING_EAGLE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_008"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17935) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17935 /* Tunable: BIKER_BOTH_GENDERS_FREEDOM_WHEELS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_009"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17936) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17936 /* Tunable: BIKER_BOTH_GENDERS_MORBID_ARACHNID */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_010"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17937) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17937 /* Tunable: BIKER_BOTH_GENDERS_SKULL_OF_TAURUS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_011"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17938) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17938 /* Tunable: BIKER_BOTH_GENDERS_RIP_MY_BROTHERS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_012"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17939) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17939 /* Tunable: BIKER_BOTH_GENDERS_URBAN_STUNTER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_013"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17940) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17940 /* Tunable: BIKER_BOTH_GENDERS_DEMON_CROSSBONES */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_014"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17941) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17941 /* Tunable: BIKER_BOTH_GENDERS_LADY_MORTALITY */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_015"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17942) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17942 /* Tunable: BIKER_BOTH_GENDERS_RIDE_OR_DIE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_016"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17943) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17943 /* Tunable: BIKER_BOTH_GENDERS_MACABRE_TREE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_017"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17944) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17944 /* Tunable: BIKER_BOTH_GENDERS_CLAWED_BEAST */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_018"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17945) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17945 /* Tunable: BIKER_BOTH_GENDERS_SKELETAL_CHOPPER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_019"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17946) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17946 /* Tunable: BIKER_BOTH_GENDERS_GRUESOME_TALONS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_020"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17947) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17947 /* Tunable: BIKER_BOTH_GENDERS_CRANIAL_ROSE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_021"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17948) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17948 /* Tunable: BIKER_BOTH_GENDERS_FLAMING_REAPER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_022"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17949) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17949 /* Tunable: BIKER_BOTH_GENDERS_WESTERN_INSIGNIA */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_023"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17950) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17950 /* Tunable: BIKER_BOTH_GENDERS_WESTERN_MC */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_024"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17951) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_17951 /* Tunable: BIKER_BOTH_GENDERS_LIVE_TO_RIDE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_025"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19008) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19008 /* Tunable: TATTOO_GOOD_LUCK */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_026"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19009) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19009 /* Tunable: TATTOO_AMERICAN_DREAM */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_027"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19010) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19010 /* Tunable: TATTOO_BAD_LUCK */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_028"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19011) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19011 /* Tunable: TATTOO_DUSK_RIDER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_029"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19012) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19012 /* Tunable: TATTOO_BONE_WRENCH */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_030"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19013) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19013 /* Tunable: TATTOO_BROTHERS_FOR_LIFE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_031"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19014) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19014 /* Tunable: TATTOO_GEAR_HEAD */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_032"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19015) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19015 /* Tunable: TATTOO_WESTERN_EAGLE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_033"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19016) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19016 /* Tunable: TATTOO_EAGLE_EMBLEM */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_034"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19017) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19017 /* Tunable: TATTOO_BROTHERHOOD_OF_BIKES */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_035"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19018) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19018 /* Tunable: TATTOO_CHAIN_FIST */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_036"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19019) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19019) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_037"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19020) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19020 /* Tunable: TATTOO_SCORCHED_SOUL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_038"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19021) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19021 /* Tunable: TATTOO_FTW */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_039"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19022) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19022 /* Tunable: TATTOO_GAS_GUZZLER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_040"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19023) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19023 /* Tunable: TATTOO_AMERICAN_MADE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_041"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19024) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19024 /* Tunable: TATTOO_NO_REGRETS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_042"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19025) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19025 /* Tunable: TATTOO_GRIM_RIDER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_043"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19026) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19026 /* Tunable: TATTOO_RIDE_FOREVER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_044"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19027) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19027 /* Tunable: TATTOO_RIDE_FREE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_045"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19028) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19028 /* Tunable: TATTOO_RIDE_HARD_DIE_FAST */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_046"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19029) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19029 /* Tunable: TATTOO_SKULL_CHAIN */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_047"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19030) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19030 /* Tunable: TATTOO_SNAKE_BIKE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_048"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19031) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19031 /* Tunable: TATTOO_STFU */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_049"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19032) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19032 /* Tunable: TATTOO_THESE_COLORS_DONT_RUN */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_050"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19033) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19033 /* Tunable: TATTOO_UNFORGIVEN */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_051"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19041) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19041 /* Tunable: WESTERN_STYLIZED */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_052"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19038) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19038 /* Tunable: TATTOO_BIKER_MOUNT */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_053"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19039) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19039 /* Tunable: TATTOO_MUFFLER_HELMET */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_054"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19037) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19037 /* Tunable: TATTOO_MUM */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_055"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19036) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19036 /* Tunable: TATTOO_POISON_SCORPION */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_056"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19034) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19034 /* Tunable: TATTOO_BONE_CRUISER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_057"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19035) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19035 /* Tunable: TATTOO_LAUGHING_SKULL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_058"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19040) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19040 /* Tunable: TATTOO_REAPER_VULTURE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_059"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19149) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19149 /* Tunable: TATTOO_FAGGIO */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_060"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19150) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19150 /* Tunable: TATTOO_WE_ARE_THE_MODS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 		}
 		switch (iVar2)
 		{
 			case joaat("TAT_IE_000"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19750) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19750 /* Tunable: IMPEXP_BOTH_GENDERS_BLOCK_BACK */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_IE_001"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19751) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19751 /* Tunable: IMPEXP_BOTH_GENDERS_POWER_PLANT */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_IE_002"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19752) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19752 /* Tunable: IMPEXP_BOTH_GENDERS_TUNED_TO_DEATH */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_IE_003"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19753) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19753 /* Tunable: IMPEXP_BOTH_GENDERS_MECHANICAL_SLEEVE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_IE_004"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19754) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19754 /* Tunable: IMPEXP_BOTH_GENDERS_PISTON_SLEEVE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_IE_005"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19755) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19755 /* Tunable: IMPEXP_BOTH_GENDERS_DIALLED_IN */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_IE_006"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19756) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19756 /* Tunable: IMPEXP_BOTH_GENDERS_ENGULFED_BLOCK */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_IE_007"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19757) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19757 /* Tunable: IMPEXP_BOTH_GENDERS_DRIVE_FOREVER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_IE_008"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19758) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19758 /* Tunable: IMPEXP_BOTH_GENDERS_SCARLETT */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_IE_009"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19759) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19759 /* Tunable: IMPEXP_BOTH_GENDERS_SERPENTS_OF_DESTRUCTION */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_IE_010"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19760) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19760 /* Tunable: IMPEXP_BOTH_GENDERS_TAKE_THE_WHEEL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_IE_011"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19761) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_19761 /* Tunable: IMPEXP_BOTH_GENDERS_TALK_SHIT_GET_HIT */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_000"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_20334) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_20334 /* Tunable: GR_BOTH_GENDERS_BULLET_PROOF */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_001"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_20335) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_20335 /* Tunable: GR_BOTH_GENDERS_CROSSED_WEAPONS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_002"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_20336) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_20336 /* Tunable: GR_BOTH_GENDERS_GRENADE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_003"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_20337) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_20337 /* Tunable: GR_BOTH_GENDERS_LOCK_AND_LOAD */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_004"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_20338) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_20338 /* Tunable: GR_BOTH_GENDERS_SIDEARM */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_005"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_20339) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_20339 /* Tunable: GR_BOTH_GENDERS_PATRIOT_SKULL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_006"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_20340) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_20340 /* Tunable: GR_BOTH_GENDERS_COMBAT_SKULL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_007"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_20341) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_20341 /* Tunable: GR_BOTH_GENDERS_STYLIZED_TIGER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_008"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21204) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21204 /* Tunable: GR_BOTH_GENDERS_BANDOLIER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_009"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21205) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21205 /* Tunable: GR_BOTH_GENDERS_BUTTERFLY_KNIFE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_010"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21206) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21206 /* Tunable: GR_BOTH_GENDERS_CASH_MONEY */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_011"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21207) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21207 /* Tunable: GR_BOTH_GENDERS_DEATH_SKULL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_012"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21208) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21208 /* Tunable: GR_BOTH_GENDERS_DOLLAR_DAGGERS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_013"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21209) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21209 /* Tunable: GR_BOTH_GENDERS_WOLF_INSIGNIA */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_014"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21210) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21210 /* Tunable: GR_BOTH_GENDERS_BACKSTABBER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_015"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21211) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21211 /* Tunable: GR_BOTH_GENDERS_SPIKED_SKULL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_016"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21212) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21212 /* Tunable: GR_BOTH_GENDERS_BLOOD_MONEY */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_017"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21213) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21213 /* Tunable: GR_BOTH_GENDERS_DOG_TAGS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_018"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21214) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21214 /* Tunable: GR_BOTH_GENDERS_DUAL_WIELD_SKULL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_019"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21215) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21215 /* Tunable: GR_BOTH_GENDERS_PISTOL_WINGS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_020"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21216) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21216 /* Tunable: GR_BOTH_GENDERS_CROWNED_WEAPONS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_021"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21217) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21217 /* Tunable: GR_BOTH_GENDERS_HAVE_A_NICE_DAY */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_022"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21218) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21218 /* Tunable: GR_BOTH_GENDERS_EXPLOSIVE_HEART */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_023"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21219) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21219 /* Tunable: GR_BOTH_GENDERS_ROSE_REVOLVER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_024"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21220) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21220 /* Tunable: GR_BOTH_GENDERS_COMBAT_REAPER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_025"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21221) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21221 /* Tunable: GR_BOTH_GENDERS_PRAYING_SKULL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_026"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21222) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21222 /* Tunable: GR_BOTH_GENDERS_RESTLESS_SKULL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_027"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21223) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21223 /* Tunable: GR_BOTH_GENDERS_SERPENT_REVOLVER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_028"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21224) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21224 /* Tunable: GR_BOTH_GENDERS_MICRO_SMG_CHAIN */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_029"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21225) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21225 /* Tunable: GR_BOTH_GENDERS_WIN_SOME_LOSE_SOME */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_GR_030"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21226) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_21226 /* Tunable: GR_BOTH_GENDERS_PISTOL_ACE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_AR_000"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22539) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22539 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_TURBULENCE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_AR_001"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22540) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22540 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_PILOT_SKULL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_AR_002"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22541) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22541 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_WINGED_BOMBSHELL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_AR_003"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22542) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22542 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_TOXIC_TRAILS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_AR_004"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22543) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22543 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_BALLOON_PIONEER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_AR_005"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22544) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22544 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_PARACHUTE_BELLE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_AR_006"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22545) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22545 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_BOMBS_AWAY */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_AR_007"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22546) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22546 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_EAGLE_EYES */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_000"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22547) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22547 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_BLESS_THE_DEAD */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_001"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22548) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22548 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_CRACKSHOT */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_002"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22549) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22549 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_DEAD_LIES */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_003"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22550) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22550 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_GIVE_NOTHING_BACK */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_004"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22551) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22551 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_HONOR */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_005"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22552) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22552 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_MUTINY */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_006"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22553) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22553 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_NEVER_SURRENDER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_007"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22554) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22554 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_NO_HONOR */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_008"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22555) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22555 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_HORRORS_OF_THE_DEEP */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_009"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22556) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22556 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_TALL_SHIP_CONFLICT */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_010"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22557) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22557 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_SEE_YOU_IN_HELL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_011"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22558) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22558 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_SINNER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_012"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22559) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22559 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_THIEF */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_013"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22560) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22560 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_TORN_WINGS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_014"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22561) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22561 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_MERMAIDS_CURSE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_015"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22562) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22562 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_JOLLY_ROGER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_016"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22563) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22563 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_SKULL_COMPASS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_017"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22564) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22564 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_FRAMED_TALL_SHIP */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_018"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22565) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22565 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_FINDERS_KEEPERS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_019"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22566) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22566 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_LOST_AT_SEA */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_020"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22567) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22567 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_HOMEWARD_BOUND */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_021"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22568) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22568 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_DEAD_TALES */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_022"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22569) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22569 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_X_MARKS_THE_SPOT */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_023"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22570) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22570 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_STYLIZED_KRAKEN */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_024"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22571) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22571 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_PIRATE_CAPTAIN */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SM_025"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22572) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_22572 /* Tunable: SMUGGLER_TATTOOS_MALE_AND_FEMALE_CLAIMED_BY_THE_BEAST */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_000"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23854) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23854 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_THOR_AND_GOBLIN */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_001"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23855) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23855 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_VIKING_WARRIOR */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_002"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23856) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23856 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_KABUTO */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_003"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23857) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23857 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_NATIVE_WARRIOR */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_004"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23858) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23858) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_005"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23859) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23859 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_GHOST_DRAGON */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_006"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23860) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23860 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_MEDUSA */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_007"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23861) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23861 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_SPARTAN_COMBAT */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_008"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23862) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23862 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_SPARTAN_WARRIOR */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_009"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23863) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23863 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_NORSE_RUNE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_010"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23864) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23864 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_SPARTAN_SHIELD */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_011"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23865) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23865 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_WEATHERED_SKULL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_012"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23866) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23866 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_TIGER_HEADDRESS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_013"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23867) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23867 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_KATANA */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_014"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23868) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23868 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_CELTIC_BAND */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_015"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23869) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23869 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_SAMURAI_COMBAT */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_016"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23870) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23870 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_ODIN_AND_RAVEN */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_017"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23871) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23871 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_FEATHER_SLEEVE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_018"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23872) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23872 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_MUSCLE_TEAR */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_019"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23873) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23873 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_STRIKE_FORCE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_020"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23874) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23874 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_MEDUSAS_GAZE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_021"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23875) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23875 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_SPARTAN_AND_LION */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_022"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23876) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23876 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_SPARTAN_AND_HORSE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_023"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23877) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23877 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_SAMURAI_TALLSHIP */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_024"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23878) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23878 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_DRAGON_SLAYER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_025"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23879) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23879 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_WINGED_SERPENT */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_026"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23880) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23880 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_SPARTAN_SKULL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_027"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23881) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23881 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_MOLON_LABE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_028"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23882) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23882 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_SPARTAN_MURAL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H27_029"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23883) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_23883 /* Tunable: H2_MALE_AND_FEMALE_TATTOOS_CERBERUS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 		}
 		switch (iVar2)
 		{
 			case joaat("TAT_VW_000"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27847) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27847 /* Tunable: VC_TATTOO_IN_THE_POCKET */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_001"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27848) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27848 /* Tunable: VC_TATTOO_JACKPOT */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_002"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27849) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27849 /* Tunable: VC_TATTOO_SUITS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_003"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27850) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27850 /* Tunable: VC_TATTOO_ROYAL_FLUSH */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_004"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27851) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27851 /* Tunable: VC_TATTOO_LADY_LUCK */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_005"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27852) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27852 /* Tunable: VC_TATTOO_GET_LUCKY */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_006"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27853) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27853 /* Tunable: VC_TATTOO_WHEEL_OF_SUITS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_007"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27854) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27854 /* Tunable: VC_TATTOO_777 */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_008"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27855) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27855 /* Tunable: VC_TATTOO_SNAKE_EYES */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_009"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27856) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27856 /* Tunable: VC_TATTOO_TILL_DEATH_DO_US_PART */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_010"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27857) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27857 /* Tunable: VC_TATTOO_PHOTO_FINISH */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_011"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27858) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27858 /* Tunable: VC_TATTOO_LIFES_A_GAMBLE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_012"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27859) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27859 /* Tunable: VC_TATTOO_SKULL_OF_SUITS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_013"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27860) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27860 /* Tunable: VC_TATTOO_ONEARMED_BANDIT */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_014"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27861) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27861 /* Tunable: VC_TATTOO_GAMBLERS_RUIN */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_015"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27862) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27862 /* Tunable: VC_TATTOO_THE_JOLLY_JOKER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_016"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27863) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27863 /* Tunable: VC_TATTOO_ROSE_ACES */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_017"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27864) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27864 /* Tunable: VC_TATTOO_ROLL_THE_DICE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_018"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27865) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27865 /* Tunable: VC_TATTOO_THE_GAMBLERS_LIFE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_019"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27866) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27866 /* Tunable: VC_TATTOO_CANT_WIN_THEM_ALL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_020"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27867) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27867 /* Tunable: VC_TATTOO_CASH_IS_KING */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_021"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27868) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27868 /* Tunable: VC_TATTOO_SHOW_YOUR_HAND */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_022"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27869) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27869 /* Tunable: VC_TATTOO_BLOOD_MONEY */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_023"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27870) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27870 /* Tunable: VC_TATTOO_LUCKY_7S */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_024"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27871) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27871 /* Tunable: VC_TATTOO_CASH_MOUTH */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_025"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27872) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27872 /* Tunable: VC_TATTOO_QUEEN_OF_ROSES */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_026"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27873) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27873 /* Tunable: VC_TATTOO_BANKNOTE_ROSE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_027"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27874) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27874 /* Tunable: VC_TATTOO_8BALL_ROSE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_028"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27875) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27875 /* Tunable: VC_TATTOO_SKULL_ACES */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_029"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27876) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27876 /* Tunable: VC_TATTOO_THE_TABLE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_030"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27877) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27877 /* Tunable: VC_TATTOO_THE_ROYALS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_031"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27878) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27878 /* Tunable: VC_TATTOO_GAMBLING_ROYALTY */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_VW_032"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27879) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_27879 /* Tunable: VC_TATTOO_PLAY_YOUR_ACE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 		}
 		switch (iVar2)
 		{
 			case joaat("TAT_H3_000"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28902) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28902 /* Tunable: CH_TATTOO_FIVE_STARS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_001"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28903) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28903 /* Tunable: CH_TATTOO_ACE_OF_SPADES */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_002"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28904) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28904 /* Tunable: CH_TATTOO_ANIMAL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_003"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28905) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28905 /* Tunable: CH_TATTOO_ASSAULT_RIFLE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_004"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28906) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28906 /* Tunable: CH_TATTOO_BAND_AID */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_005"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28907) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28907 /* Tunable: CH_TATTOO_SPADES */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_006"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28908) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28908 /* Tunable: CH_TATTOO_CROWNED */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_007"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28909) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28909 /* Tunable: CH_TATTOO_TWO_HORNS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_008"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28910) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28910 /* Tunable: CH_TATTOO_ICE_CREAM */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_009"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28911) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28911 /* Tunable: CH_TATTOO_KNIFED */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_010"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28912) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28912 /* Tunable: CH_TATTOO_GREEN_LEAF */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_011"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28913) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28913 /* Tunable: CH_TATTOO_LIPSTICK_KISS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_012"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28914) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28914 /* Tunable: CH_TATTOO_RAZOR_POP */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_013"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28915) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28915 /* Tunable: CH_TATTOO_LS_STAR */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_014"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28916) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28916 /* Tunable: CH_TATTOO_LS_WINGS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_015"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28917) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28917 /* Tunable: CH_TATTOO_ON_OFF */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_016"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28918) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28918 /* Tunable: CH_TATTOO_SLEEPY */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_017"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28919) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28919 /* Tunable: CH_TATTOO_SPACE_MONKEY */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_018"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28920) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28920 /* Tunable: CH_TATTOO_STITCHES */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_019"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28921) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28921 /* Tunable: CH_TATTOO_TEDDY_BEAR */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_020"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28922) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28922 /* Tunable: CH_TATTOO_UFO */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_021"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28923) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28923 /* Tunable: CH_TATTOO_WANTED */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_022"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28924) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28924 /* Tunable: CH_TATTOO_THOGS_SWORD */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_023"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28925) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28925 /* Tunable: CH_TATTOO_BIGFOOT */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_024"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28926) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28926 /* Tunable: CH_TATTOO_MOUNT_CHILIAD */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_025"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28927) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28927 /* Tunable: CH_TATTOO_DAVIS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_026"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28928) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28928 /* Tunable: CH_TATTOO_DIGNITY */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_027"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28929) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28929 /* Tunable: CH_TATTOO_EPSILON */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_028"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28930) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28930 /* Tunable: CH_TATTOO_BANANAS_GONE_BAD */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_029"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28931) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28931 /* Tunable: CH_TATTOO_FATAL_INCURSION */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_030"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28932) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28932 /* Tunable: CH_TATTOO_HOWITZER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_031"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28933) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28933 /* Tunable: CH_TATTOO_KIFFLOM */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_032"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28934) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28934 /* Tunable: CH_TATTOO_LOVE_FIST */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_033"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28935) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28935 /* Tunable: CH_TATTOO_LS_CITY */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_034"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28936) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28936 /* Tunable: CH_TATTOO_LS_MONOGRAM */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_035"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28937) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28937 /* Tunable: CH_TATTOO_LS_PANIC */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_036"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28938) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28938 /* Tunable: CH_TATTOO_LS_SHIELD */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_037"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28939) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28939 /* Tunable: CH_TATTOO_LADYBUG */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_038"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28940) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28940 /* Tunable: CH_TATTOO_ROBOT_BUBBLEGUM */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_039"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28941) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28941 /* Tunable: CH_TATTOO_SPACE_RANGERS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_040"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28942) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28942 /* Tunable: CH_TATTOO_TIGER_HEART */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_041"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28943) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28943 /* Tunable: CH_TATTOO_MIGHTY_THOG */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_042"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28944) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28944 /* Tunable: CH_TATTOO_HEARTS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_043"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28945) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28945 /* Tunable: CH_TATTOO_CLUBS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H3_044"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28946) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28946 /* Tunable: CH_TATTOO_DIAMONDS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 		}
 		switch (iVar2)
 		{
 			case joaat("TAT_H4_000"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30748) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30748 /* Tunable: IH_TATTOO_HEADPHONE_SPLAT */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_001"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30749) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30749 /* Tunable: IH_TATTOO_TROPICAL_DUDE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_002"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30750) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30750 /* Tunable: IH_TATTOO_JELLYFISH_SHADES */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_003"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30751) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30751 /* Tunable: IH_TATTOO_LIGHTHOUSE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_004"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30752) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30752 /* Tunable: IH_TATTOO_SKELETON_BREEZE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_005"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30753) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30753 /* Tunable: IH_TATTOO_LSUR */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_006"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30754) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30754 /* Tunable: IH_TATTOO_MUSIC_LOCKER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_007"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30755) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30755 /* Tunable: IH_TATTOO_SKELETON_DJ */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_008"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30756) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30756 /* Tunable: IH_TATTOO_SMILEY_GLITCH */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_009"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30757) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30757 /* Tunable: IH_TATTOO_SCRATCH_PANTHER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_010"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30758) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30758 /* Tunable: IH_TATTOO_TROPICAL_SERPENT */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_011"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30759) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30759 /* Tunable: IH_TATTOO_SOULWAX */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_012"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30760) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30760 /* Tunable: IH_TATTOO_STILL_SLIPPIN */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_013"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30761) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30761 /* Tunable: IH_TATTOO_WILD_DANCERS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_014"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30762) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30762 /* Tunable: IH_TATTOO_PARADISE_NAP */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_015"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30763) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30763 /* Tunable: IH_TATTOO_PARADISE_UKULELE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_016"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30764) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30764 /* Tunable: IH_TATTOO_ROSE_PANTHER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_017"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30765) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30765 /* Tunable: IH_TATTOO_TROPICAL_SORCERER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_018"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30766) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30766 /* Tunable: IH_TATTOO_RECORD_HEAD */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_019"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30767) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30767 /* Tunable: IH_TATTOO_RECORD_SHOT */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_020"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30768) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30768 /* Tunable: IH_TATTOO_SPEAKER_TOWER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_021"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30769) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30769 /* Tunable: IH_TATTOO_SKULL_SURFER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_022"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30770) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30770 /* Tunable: IH_TATTOO_PARADISE_SIRENS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_023"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30771) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30771 /* Tunable: IH_TATTOO_TECHNO_GLITCH */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_024"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30772) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30772 /* Tunable: IH_TATTOO_PINEAPPLE_SKULL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_025"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30773) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30773 /* Tunable: IH_TATTOO_GLOW_PRINCESS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_026"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30774) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30774 /* Tunable: IH_TATTOO_SHARK_WATER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_027"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30775) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30775 /* Tunable: IH_TATTOO_SKULLPHONES */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_028"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30776) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30776 /* Tunable: IH_TATTOO_SKULL_WATERS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_029"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30777) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30777 /* Tunable: IH_TATTOO_SOUNDWAVES */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_030"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30778) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30778 /* Tunable: IH_TATTOO_RADIO_TAPE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_031"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30779) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30779 /* Tunable: IH_TATTOO_OCTOPUS_SHADES */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_H4_032"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30780) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_30780 /* Tunable: IH_TATTOO_KULT_991_FM */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 		}
 		switch (iVar2)
 		{
 			case joaat("TAT_FX_000"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_31998) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_31998 /* Tunable: FIXER_TATTOO_HOOD_SKELETON */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_001"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_31999) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_31999 /* Tunable: FIXER_TATTOO_BRIGHT_DIAMOND */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_002"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32000) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32000 /* Tunable: FIXER_TATTOO_HUSTLE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_003"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32001) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32001 /* Tunable: FIXER_TATTOO_BANDANA_KNIFE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_004"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32002) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32002 /* Tunable: FIXER_TATTOO_HOOD_HEART */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_005"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32003) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32003 /* Tunable: FIXER_TATTOO_PEACOCK */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_006"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32004) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32004 /* Tunable: FIXER_TATTOO_SKELETON_SHOT */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_007"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32005) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32005 /* Tunable: FIXER_TATTOO_BALLAS_4_LIFE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_008"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32006) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32006 /* Tunable: FIXER_TATTOO_LOS_SANTOS_TAG */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_009"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32007) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32007 /* Tunable: FIXER_TATTOO_ASCENSION */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_010"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32008) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32008 /* Tunable: FIXER_TATTOO_MUSIC_IS_THE_REMEDY */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_011"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32009) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32009 /* Tunable: FIXER_TATTOO_SERPENT_MIC */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_012"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32010) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32010 /* Tunable: FIXER_TATTOO_ZOMBIE_RHYMES */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_013"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32011) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32011 /* Tunable: FIXER_TATTOO_BLESSED_BOOMBOX */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_014"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32012) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32012 /* Tunable: FIXER_TATTOO_CHAMBERLAIN_HILLS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_015"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32013) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32013 /* Tunable: FIXER_TATTOO_SMOKING_BARRELS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_016"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32014) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32014 /* Tunable: FIXER_TATTOO_ALL_FROM_THE_SAME_TREE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_017"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32015) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32015 /* Tunable: FIXER_TATTOO_KING_OF_THE_JUNGLE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_018"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32016) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32016 /* Tunable: FIXER_TATTOO_NIGHT_OWL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_019"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32017) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32017 /* Tunable: FIXER_TATTOO_WEED_KNUCKLES */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_020"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32018) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32018 /* Tunable: FIXER_TATTOO_DOG_FIST */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_021"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32019) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32019 /* Tunable: FIXER_TATTOO_GRAFFITI_SKULL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_022"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32020) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32020 /* Tunable: FIXER_TATTOO_LS_SMOKING_CARTRIDGES */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_023"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32021) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32021 /* Tunable: FIXER_TATTOO_TRUST */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_024"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32022) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32022 /* Tunable: FIXER_TATTOO_BEATBOX_SILHOUETTE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_025"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32023) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32023 /* Tunable: FIXER_TATTOO_DAVIS_FLAMES */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_026"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32024) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32024 /* Tunable: FIXER_TATTOO_DOLLAR_GUNS_CROSSED */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_FX_027"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32025) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_32025 /* Tunable: FIXER_TATTOO_BLACK_WIDOW */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 		}
 		switch (iVar2)
 		{
 			case joaat("TAT_SB_000"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33047) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33047 /* Tunable: SU22_TATTOO_LIVE_FAST_MONO */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_001"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33048) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33048 /* Tunable: SU22_TATTOO_LIVE_FAST_COLOR */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_002"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33049) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33049 /* Tunable: SU22_TATTOO_COBRA_BIKER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_003"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33050) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33050 /* Tunable: SU22_TATTOO_BULLET_MOUTH */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_004"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33051) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33051 /* Tunable: SU22_TATTOO_SMOKING_BARREL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_005"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33052) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33052 /* Tunable: SU22_TATTOO_CONCEALED */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_006"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33053) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33053 /* Tunable: SU22_TATTOO_PAINTED_MICRO_SMG */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_007"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33054) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33054 /* Tunable: SU22_TATTOO_WEAPON_KING */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_008"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33055) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33055 /* Tunable: SU22_TATTOO_BIGNESS_CHIMP */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_009"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33056) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33056 /* Tunable: SU22_TATTOO_UPNATOMIZER_DESIGN */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_010"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33057) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33057 /* Tunable: SU22_TATTOO_ROCKET_LAUNCHER_GIRL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_011"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33058) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33058 /* Tunable: SU22_TATTOO_MINIGUN_GUY */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_012"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33059) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33059 /* Tunable: SU22_TATTOO_SNAKE_REVOLVER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_013"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33060) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33060 /* Tunable: SU22_TATTOO_WEAPON_SLEEVE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_014"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33061) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33061 /* Tunable: SU22_TATTOO_MINIMAL_SMG */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_015"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33062) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33062 /* Tunable: SU22_TATTOO_MINIMAL_ADVANCED_RIFLE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_016"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33063) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33063 /* Tunable: SU22_TATTOO_MINIMAL_SNIPER_RIFLE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_017"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33064) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33064 /* Tunable: SU22_TATTOO_SKULL_GRENADE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_018"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33065) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33065 /* Tunable: SU22_TATTOO_BRANCHED_SKULL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_019"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33066) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33066 /* Tunable: SU22_TATTOO_SCYTHED_CORPSE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_020"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33067) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33067 /* Tunable: SU22_TATTOO_SCYTHED_CORPSE_REAPER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_021"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33068) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33068 /* Tunable: SU22_TATTOO_THIRD_EYE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_022"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33069) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33069 /* Tunable: SU22_TATTOO_PIERCED_THIRD_EYE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_023"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33070) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33070 /* Tunable: SU22_TATTOO_LIP_DRIP */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_024"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33071) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33071 /* Tunable: SU22_TATTOO_SKIN_MASK */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_025"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33072) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33072 /* Tunable: SU22_TATTOO_WEBBED_SCYTHE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_026"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33073) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33073 /* Tunable: SU22_TATTOO_ONI_DEMON */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_027"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33074) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33074 /* Tunable: SU22_TATTOO_BAT_WINGS */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_028"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33075) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33075 /* Tunable: SU22_TATTOO_LASER_EYES_SKULL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_029"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33076) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33076 /* Tunable: SU22_TATTOO_CLASSIC_VAMPIRE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_030"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33077) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33077 /* Tunable: SU22_TATTOO_CENTIPEDE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_031"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33078) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33078 /* Tunable: SU22_TATTOO_FLESHY_EYE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_032"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33079) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33079 /* Tunable: SU22_TATTOO_MANYEYED_GOAT */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_033"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33080) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33080 /* Tunable: SU22_TATTOO_THREEEYED_DEMON */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_034"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33081) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33081 /* Tunable: SU22_TATTOO_SMOULDERING_REAPER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_035"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33082) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33082 /* Tunable: SU22_TATTOO_SNIFF_SNIFF */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_036"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33083) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33083 /* Tunable: SU22_TATTOO_CHARM_PATTERN */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_037"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33084) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33084 /* Tunable: SU22_TATTOO_WITCH_SKULL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_038"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33085) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33085 /* Tunable: SU22_TATTOO_PUMPKIN_BUG */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_039"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33086) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33086 /* Tunable: SU22_TATTOO_SINNER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_040"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33087) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33087 /* Tunable: SU22_TATTOO_CARVED_PUMPKIN */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_041"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33088) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33088 /* Tunable: SU22_TATTOO_BRANCHED_WEREWOLF */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_042"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33089) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33089 /* Tunable: SU22_TATTOO_WINGED_SKULL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_043"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33090) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33090 /* Tunable: SU22_TATTOO_CURSED_SAKI */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_044"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33091) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33091 /* Tunable: SU22_TATTOO_SMOULDERING_BAT_SKULL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_045"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33092) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33092 /* Tunable: SU22_TATTOO_ARMORED_ARM */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_046"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33093) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33093 /* Tunable: SU22_TATTOO_DEMON_SMILE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_047"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33094) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33094 /* Tunable: SU22_TATTOO_ANGEL_DEVIL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_048"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33095) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33095 /* Tunable: SU22_TATTOO_DEATH_IS_CERTAIN */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_049"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33096) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33096 /* Tunable: SU22_TATTOO_DEMON_DRUMMER */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_050"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33097) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33097 /* Tunable: SU22_TATTOO_GOLD_GUN */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_051"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33098) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33098 /* Tunable: SU22_TATTOO_BLUE_SERPENT */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_052"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33099) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33099 /* Tunable: SU22_TATTOO_NIGHT_DEMON */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_053"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33100) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33100 /* Tunable: SU22_TATTOO_MOBSTER_SKULL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_054"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33101) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33101 /* Tunable: SU22_TATTOO_WOUNDED_HEAD */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_055"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33102) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33102 /* Tunable: SU22_TATTOO_STABBED_SKULL */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_056"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33103) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33103 /* Tunable: SU22_TATTOO_TIGER_BLADE */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_057"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33104) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33104 /* Tunable: SU22_TATTOO_GRAY_DEMON */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_058"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33105) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33105 /* Tunable: SU22_TATTOO_SHRIEKING_DRAGON */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_059"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33106) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33106 /* Tunable: SU22_TATTOO_SWORDS_CITY */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_060"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33107) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33107 /* Tunable: SU22_TATTOO_BLAINE_COUNTY */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_061"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33108) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33108 /* Tunable: SU22_TATTOO_ANGRY_POSSUM */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_SB_062"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33109) * Global_262145.f_15024));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_33109 /* Tunable: SU22_TATTOO_FLORAL_DEMON */) * Global_262145.f_15024 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 		}
-		return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iParam0) * Global_262145.f_76));
+		return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iParam0) * Global_262145.f_76 /* Tunable: TATTOO_SHOP_MULTIPLIER */));
 	}
 	return iParam0;
 }
@@ -85672,7 +85672,7 @@ void func_592(int iParam0)//Position - 0x61AB7
 			else if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && func_352(Var4.f_11, -1))
 			{
 				func_308(iVar1, "ITEM_COST" /* GXT: $~1~ */, 1, 1, 0, 0, 0);
-				func_594(Global_262145.f_8261, 0);
+				func_594(Global_262145.f_8261 /* Tunable: PURCHASED_TATTOO_APPLICATION_FEE */, 0);
 			}
 			else if (iVar2 > 0)
 			{
@@ -85744,7 +85744,7 @@ void func_592(int iParam0)//Position - 0x61AB7
 					else if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && func_352(Var4.f_11, -1))
 					{
 						func_308(iVar1, "ITEM_COST" /* GXT: $~1~ */, 1, 1, 0, 0, 0);
-						func_594(Global_262145.f_8261, 0);
+						func_594(Global_262145.f_8261 /* Tunable: PURCHASED_TATTOO_APPLICATION_FEE */, 0);
 					}
 					else if (iVar2 > 0)
 					{
@@ -126444,7 +126444,7 @@ int func_805(int iParam0, bool bParam1, bool bParam2, int iParam3)//Position - 0
 		}
 		if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
-			if (iParam0 == 46 && ((Global_262145.f_21612 && func_835(PLAYER::PLAYER_ID())) || (Global_262145.f_21611 && func_834(PLAYER::PLAYER_ID()))))
+			if (iParam0 == 46 && ((Global_262145.f_21612 && func_835(PLAYER::PLAYER_ID())) || (Global_262145.f_21611 /* Tunable: GR_DISABLE_WEAPON_WORKSHOP */ && func_834(PLAYER::PLAYER_ID()))))
 			{
 				return 0;
 			}
@@ -131764,7 +131764,7 @@ void func_946()//Position - 0x9CCAA
 			}
 			if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 			{
-				if (Global_262145.f_2460)
+				if (Global_262145.f_2460 /* Tunable: IS_SALE_ON_IN_TATTOO_SHOP */)
 				{
 					GRAPHICS::REQUEST_STREAMED_TEXTURE_DICT("MPShops", false);
 				}

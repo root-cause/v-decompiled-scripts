@@ -2800,7 +2800,7 @@ void func_86(var uParam0)//Position - 0x26A0
 			iVar1 = func_124(3792, -1, 0);
 			iVar1++;
 			func_123(3792, iVar1, -1, 1, 0);
-			if (iVar1 >= Global_262145.f_16823)
+			if (iVar1 >= Global_262145.f_16823 /* Tunable: DCTL_WIN_COUNT_REWARD */)
 			{
 				func_122(7551, 1, -1);
 				if (ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()) == joaat("MP_M_Freemode_01"))

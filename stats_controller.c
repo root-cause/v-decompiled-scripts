@@ -2329,11 +2329,11 @@ var func_65(float fParam0)//Position - 0x26A6
 {
 	if (func_46())
 	{
-		if (func_66() < Global_262145.f_13167)
+		if (func_66() < Global_262145.f_13167 /* Tunable: GB_BOSS_STAT_BOOST_MAX_RANK */)
 		{
-			if (*fParam0 + (IntToFloat(func_66()) * Global_262145.f_13166)) <= IntToFloat(Global_262145.f_13176)
+			if (*fParam0 + (IntToFloat(func_66()) * Global_262145.f_13166 /* Tunable: GB_BOSS_STAT_BOOST_PERCENTAGE */)) <= IntToFloat(Global_262145.f_13176 /* Tunable: GB_BOSS_BOOST_MAX_FINAL_STAT */)
 			{
-				*fParam0 = (*fParam0 + (IntToFloat(func_66()) * Global_262145.f_13166));
+				*fParam0 = (*fParam0 + (IntToFloat(func_66()) * Global_262145.f_13166 /* Tunable: GB_BOSS_STAT_BOOST_PERCENTAGE */));
 			}
 		}
 		return *fParam0;

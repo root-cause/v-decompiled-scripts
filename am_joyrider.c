@@ -427,7 +427,7 @@ int func_9()//Position - 0x3C4
 				PED::SET_PED_GET_OUT_UPSIDE_DOWN_VEHICLE(NETWORK::NET_TO_PED(Local_61.f_3), true);
 				PED::SET_PED_CONFIG_FLAG(NETWORK::NET_TO_PED(Local_61.f_3), 29, true);
 				PED::SET_PED_CAN_BE_KNOCKED_OFF_VEHICLE(NETWORK::NET_TO_PED(Local_61.f_3), 3);
-				ENTITY::SET_ENTITY_HEALTH(NETWORK::NET_TO_PED(Local_61.f_3), SYSTEM::ROUND((200f * Global_262145.f_164)), 0);
+				ENTITY::SET_ENTITY_HEALTH(NETWORK::NET_TO_PED(Local_61.f_3), SYSTEM::ROUND((200f * Global_262145.f_164 /* Tunable: AI_HEALTH */)), 0);
 				AUDIO::SET_VEHICLE_RADIO_LOUD(NETWORK::NET_TO_VEH(Local_61.f_2), true);
 				VEHICLE::SET_DISABLE_PRETEND_OCCUPANTS(NETWORK::NET_TO_VEH(Local_61.f_2), true);
 				func_41();
@@ -1197,7 +1197,7 @@ int func_45(int iParam0)//Position - 0x14C5
 			break;
 		
 		case 4:
-			if (Global_262145.f_7119)
+			if (Global_262145.f_7119 /* Tunable: DISABLE_EVENT_CRATE_DROP */)
 			{
 				return 0;
 			}
@@ -1212,7 +1212,7 @@ int func_45(int iParam0)//Position - 0x14C5
 			break;
 		
 		case 5:
-			if (Global_262145.f_7120)
+			if (Global_262145.f_7120 /* Tunable: DISABLE_EVENT_ARMOURED_TRUCK */)
 			{
 				return 0;
 			}
@@ -1227,7 +1227,7 @@ int func_45(int iParam0)//Position - 0x14C5
 			break;
 		
 		case 6:
-			if (Global_262145.f_7121)
+			if (Global_262145.f_7121 /* Tunable: DISABLE_EVENT_HIGH_PRIORITY_VEHICLE */)
 			{
 				return 0;
 			}
@@ -1240,7 +1240,7 @@ int func_45(int iParam0)//Position - 0x14C5
 			break;
 		
 		case 9:
-			if (Global_262145.f_7122)
+			if (Global_262145.f_7122 /* Tunable: DISABLE_EVENT_JOYRIDER */)
 			{
 				return 0;
 			}

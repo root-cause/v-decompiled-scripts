@@ -658,7 +658,7 @@ int func_22(int iParam0, int iParam1)//Position - 0x964
 		if (!ENTITY::DOES_ENTITY_EXIST(Local_114.f_2[iParam0 /*27*/].f_10[iParam1 /*5*/].f_4))
 		{
 			Var0 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Local_114.f_2[iParam0 /*27*/].f_2, Local_114.f_2[iParam0 /*27*/].f_5, 0f, (0.25f - (IntToFloat(iParam1) * 0.25f)), 0.1f) };
-			Local_114.f_2[iParam0 /*27*/].f_10[iParam1 /*5*/] = { func_23(joaat("PICKUP_GANG_ATTACK_MONEY"), Var0, iVar1, Global_262145.f_4455, 0, 1, 1) };
+			Local_114.f_2[iParam0 /*27*/].f_10[iParam1 /*5*/] = { func_23(joaat("PICKUP_GANG_ATTACK_MONEY"), Var0, iVar1, Global_262145.f_4455 /* Tunable: CASH_MODIFIER_CRATE_DROP_GANG_ATTACK */, 0, 1, 1) };
 		}
 		return 1;
 	}

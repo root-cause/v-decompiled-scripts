@@ -7882,7 +7882,7 @@ int func_179(int iParam0, bool bParam1)//Position - 0x6F40
 
 int func_180()//Position - 0x7123
 {
-	return Global_262145.f_9074;
+	return Global_262145.f_9074 /* Tunable: ROOT_ID_HASH_THE_PACIFIC_STANDARD_JOB */;
 }
 
 int func_181(int iParam0, int iParam1)//Position - 0x7132

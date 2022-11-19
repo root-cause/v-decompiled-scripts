@@ -2776,7 +2776,7 @@ void func_54(struct<67> Param0, var uParam1, var uParam2, var uParam3, var uPara
 	Var0.f_2 = { Param0.f_66 };
 	Var0.f_2.f_33 = iParam19;
 	iVar1 = func_56(Var0.f_1);
-	if ((Global_262145.f_24104 && !Global_262145.f_24105) && !Global_262145.f_24106)
+	if ((Global_262145.f_24104 /* Tunable: BLOCK_NS_TRANS */ && !Global_262145.f_24105 /* Tunable: SC_RUN_TRANS */) && !Global_262145.f_24106 /* Tunable: BG_RUN_TRANS */)
 	{
 		return;
 	}
@@ -17897,7 +17897,7 @@ void func_428(bool bParam0)//Position - 0x17E30
 		func_446(1);
 		func_445(1);
 	}
-	if ((((bParam0 && !func_444()) && !func_698()) && !Global_262145.f_4751) && !func_443())
+	if ((((bParam0 && !func_444()) && !func_698()) && !Global_262145.f_4751 /* Tunable: TURN_SNOW_ON_OFF */) && !func_443())
 	{
 		MISC::CLEAR_OVERRIDE_WEATHER();
 	}
@@ -19824,77 +19824,77 @@ int func_543(int iParam0)//Position - 0x1A29D
 	switch (iParam0)
 	{
 		case 131:
-			if (Global_262145.f_11861)
+			if (Global_262145.f_11861 /* Tunable: DISABLE_BAD_SPORT_HOT_TARGET */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 132:
-			if (Global_262145.f_11863)
+			if (Global_262145.f_11863 /* Tunable: DISABLE_BAD_SPORT_CHECKPOINT */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 133:
-			if (Global_262145.f_11860)
+			if (Global_262145.f_11860 /* Tunable: DISABLE_BAD_SPORT_CHALLENGE */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 136:
-			if (Global_262145.f_11864)
+			if (Global_262145.f_11864 /* Tunable: DISABLE_BAD_SPORT_PENNED_IN */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 138:
-			if (Global_262145.f_11865)
+			if (Global_262145.f_11865 /* Tunable: DISABLE_BAD_SPORT_PASS_THE_PARCEL */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 139:
-			if (Global_262145.f_11866)
+			if (Global_262145.f_11866 /* Tunable: DISABLE_BAD_SPORT_HOT_PROPERTY */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 129:
-			if (Global_262145.f_11862)
+			if (Global_262145.f_11862 /* Tunable: DISABLE_BAD_SPORT_KILL_LIST */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 140:
-			if (Global_262145.f_11867)
+			if (Global_262145.f_11867 /* Tunable: DISABLE_BAD_SPORT_DEAD_DROP */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 141:
-			if (Global_262145.f_11868)
+			if (Global_262145.f_11868 /* Tunable: DISABLE_BAD_SPORT_KING_OF_THE_CASTLE */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 144:
-			if (Global_262145.f_11869)
+			if (Global_262145.f_11869 /* Tunable: DISABLE_BAD_SPORT_CRIMINAL_DAMAGES */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 146:
-			if (Global_262145.f_11870)
+			if (Global_262145.f_11870 /* Tunable: DISABLE_BAD_SPORT_HUNT_THE_BEAST */)
 			{
 				return 1;
 			}
@@ -23012,7 +23012,7 @@ void func_768(bool bParam0, bool bParam1)//Position - 0x1D920
 		return;
 	}
 	uVar0 = func_769(0);
-	if (Global_262145.f_63 == 1 && func_771(135, 0, 0))
+	if (Global_262145.f_63 /* Tunable: DISABLE_SUPER_MOD_RANK_CHECK */ == 1 && func_771(135, 0, 0))
 	{
 		bParam0 = true;
 	}
@@ -23113,7 +23113,7 @@ int func_771(int iParam0, bool bParam1, bool bParam2)//Position - 0x1DAB2
 	int iVar0;
 	int iVar1;
 	
-	if (Global_262145.f_8145 == 1)
+	if (Global_262145.f_8145 /* Tunable: SET_ALL_PHONE_SERVICES_AVAILABLE */ == 1)
 	{
 		if (iParam0 == 67)
 		{
@@ -23141,7 +23141,7 @@ int func_771(int iParam0, bool bParam1, bool bParam2)//Position - 0x1DAB2
 	}
 	if (iParam0 == 31)
 	{
-		if (Global_262145.f_4746 == 1)
+		if (Global_262145.f_4746 /* Tunable: RANK_RESTRICTION_CRATE_DROP */ == 1)
 		{
 			return 1;
 		}

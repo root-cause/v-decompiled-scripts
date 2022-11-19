@@ -376,7 +376,7 @@ int func_2()//Position - 0x4FD
 			bLocal_123 = false;
 			return 1;
 		}
-		if (Global_262145.f_21919)
+		if (Global_262145.f_21919 /* Tunable: ACCESS_ARMY_BASE_IN_STOLEN_VEHICLE */)
 		{
 			if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 			{

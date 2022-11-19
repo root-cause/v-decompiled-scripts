@@ -6384,8 +6384,8 @@ void func_136(var uParam0)//Position - 0x88F3
 
 void func_137(int* iParam0)//Position - 0x88FB
 {
-	func_138(iParam0, 0, Global_262145.f_18242);
-	func_138(iParam0, 1, Global_262145.f_18243);
+	func_138(iParam0, 0, Global_262145.f_18242 /* Tunable: BIKER_CLUBHOUSE_DISABLE_DARTS */);
+	func_138(iParam0, 1, Global_262145.f_18243 /* Tunable: BIKER_CLUBHOUSE_DISABLE_ARM_WRESTLING */);
 	if (NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 	{
 		func_138(iParam0, 0, 1);

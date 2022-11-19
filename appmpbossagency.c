@@ -1248,7 +1248,7 @@ void func_49()//Position - 0x12A4
 	}
 	if (Global_1888478.f_7[iVar3 /*8*/] == 0)
 	{
-		if (Global_262145.f_15474)
+		if (Global_262145.f_15474 /* Tunable: EXEC_VIP2_DISABLE_INVITE_INFO */)
 		{
 			bVar7 = func_75(iVar4);
 			iVar8 = 0;

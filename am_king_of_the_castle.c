@@ -865,7 +865,7 @@ void func_1()//Position - 0x2B0
 		case 1:
 			if (BitTest(Local_91.f_213, 2))
 			{
-				iVar2 = Global_262145.f_11660;
+				iVar2 = Global_262145.f_11660 /* Tunable: KING_OF_THE_CASTLE_EVENT_TIME_LIMIT */;
 				if (func_18(&(Local_91.f_1.f_1)))
 				{
 					if (func_9(&(Local_91.f_1.f_1), 0, 0) >= iVar2)
@@ -876,7 +876,7 @@ void func_1()//Position - 0x2B0
 			}
 			else
 			{
-				iVar2 = Global_262145.f_11661;
+				iVar2 = Global_262145.f_11661 /* Tunable: KING_OF_THE_CASTLE_EVENT_EXPIRY_TIME */;
 				if (func_18(&(Local_91.f_1.f_3)))
 				{
 					if (func_9(&(Local_91.f_1.f_3), 0, 0) >= iVar2)
@@ -943,12 +943,12 @@ void func_2(int iParam0)//Position - 0x3B4
 						{
 							func_11(&(Local_91.f_6[iParam0 /*204*/].f_70), 0, 1);
 						}
-						else if ((func_5(&(Local_91.f_6[iParam0 /*204*/].f_70), 1000, 0) && func_9(&(Local_91.f_1.f_1), 0, 0) <= Global_262145.f_11660) && func_680() != 2)
+						else if ((func_5(&(Local_91.f_6[iParam0 /*204*/].f_70), 1000, 0) && func_9(&(Local_91.f_1.f_1), 0, 0) <= Global_262145.f_11660 /* Tunable: KING_OF_THE_CASTLE_EVENT_TIME_LIMIT */) && func_680() != 2)
 						{
 							iVar7 = func_9(&(Local_91.f_6[iParam0 /*204*/].f_70), 0, 1);
 							fVar3 = SYSTEM::TO_FLOAT(iVar7);
-							fVar3 = (fVar3 / IntToFloat(Global_262145.f_11664 * 1000));
-							fVar4 = (SYSTEM::TO_FLOAT(Global_262145.f_11663) * fVar3);
+							fVar3 = (fVar3 / IntToFloat(Global_262145.f_11664 /* Tunable: KING_OF_THE_CASTLE_SECONDS_AS_KING_TO_EARN_POINTS */ * 1000));
+							fVar4 = (SYSTEM::TO_FLOAT(Global_262145.f_11663 /* Tunable: KING_OF_THE_CASTLE_POINTS_PER_X_SECONDS_AS_KING */) * fVar3);
 							fVar2 = (fVar2 + fVar4);
 							func_4(iParam0, bVar0, fVar2);
 							bVar5 = true;
@@ -1194,7 +1194,7 @@ void func_20()//Position - 0x7D1
 	{
 		func_367(iVar0);
 	}
-	func_351(141, func_366(0), &uLocal_659, SYSTEM::TO_FLOAT(Global_262145.f_11969), 1148846080, iLocal_658);
+	func_351(141, func_366(0), &uLocal_659, SYSTEM::TO_FLOAT(Global_262145.f_11969 /* Tunable: FREEMODE_EVENT_UI_ENTRY_DISTANCE */), 1148846080, iLocal_658);
 	if (func_308(0, 1))
 	{
 		func_307();
@@ -3105,8 +3105,8 @@ int func_79(float fParam0)//Position - 0x2CD1
 	int iVar0;
 	
 	iVar0 = SYSTEM::FLOOR(fParam0);
-	iVar0 = (iVar0 / Global_262145.f_11663);
-	iVar0 = (iVar0 * Global_262145.f_11663);
+	iVar0 = (iVar0 / Global_262145.f_11663 /* Tunable: KING_OF_THE_CASTLE_POINTS_PER_X_SECONDS_AS_KING */);
+	iVar0 = (iVar0 * Global_262145.f_11663 /* Tunable: KING_OF_THE_CASTLE_POINTS_PER_X_SECONDS_AS_KING */);
 	return iVar0;
 }
 
@@ -6351,13 +6351,13 @@ float func_101(int iParam0, int iParam1)//Position - 0x8AD3
 			switch (iParam1)
 			{
 				case 0:
-					return Global_262145.f_11881;
+					return Global_262145.f_11881 /* Tunable: KINGOFCASTLE_BEACHTOWERACLASSSPAWNPOINTWEIGHTING */;
 				
 				case 1:
-					return Global_262145.f_11882;
+					return Global_262145.f_11882 /* Tunable: KINGOFCASTLE_BEACHTOWERBCLASSSPAWNPOINTWEIGHTING */;
 				
 				case 2:
-					return Global_262145.f_11883;
+					return Global_262145.f_11883 /* Tunable: KINGOFCASTLE_BEACHTOWERCCLASSSPAWNPOINTWEIGHTING */;
 				
 				default:
 			}
@@ -6367,13 +6367,13 @@ float func_101(int iParam0, int iParam1)//Position - 0x8AD3
 			switch (iParam1)
 			{
 				case 0:
-					return Global_262145.f_11884;
+					return Global_262145.f_11884 /* Tunable: KINGOFCASTLE_LANDACTDAMACLASSSPAWNPOINTWEIGHTING */;
 				
 				case 1:
-					return Global_262145.f_11885;
+					return Global_262145.f_11885 /* Tunable: KINGOFCASTLE_LANDACTDAMBCLASSSPAWNPOINTWEIGHTING */;
 				
 				case 2:
-					return Global_262145.f_11886;
+					return Global_262145.f_11886 /* Tunable: KINGOFCASTLE_LANDACTDAMCCLASSSPAWNPOINTWEIGHTING */;
 				
 				default:
 			}
@@ -6383,13 +6383,13 @@ float func_101(int iParam0, int iParam1)//Position - 0x8AD3
 			switch (iParam1)
 			{
 				case 0:
-					return Global_262145.f_11887;
+					return Global_262145.f_11887 /* Tunable: KINGOFCASTLE_FIRESTATIONACLASSSPAWNPOINTWEIGHTING */;
 				
 				case 1:
-					return Global_262145.f_11888;
+					return Global_262145.f_11888 /* Tunable: KINGOFCASTLE_FIRESTATIONBCLASSSPAWNPOINTWEIGHTING */;
 				
 				case 2:
-					return Global_262145.f_11889;
+					return Global_262145.f_11889 /* Tunable: KINGOFCASTLE_FIRESTATIONCCLASSSPAWNPOINTWEIGHTING */;
 				
 				default:
 			}
@@ -6399,13 +6399,13 @@ float func_101(int iParam0, int iParam1)//Position - 0x8AD3
 			switch (iParam1)
 			{
 				case 0:
-					return Global_262145.f_11890;
+					return Global_262145.f_11890 /* Tunable: KINGOFCASTLE_CABLECARACLASSSPAWNPOINTWEIGHTING */;
 				
 				case 1:
-					return Global_262145.f_11891;
+					return Global_262145.f_11891 /* Tunable: KINGOFCASTLE_CABLECARBCLASSSPAWNPOINTWEIGHTING */;
 				
 				case 2:
-					return Global_262145.f_11892;
+					return Global_262145.f_11892 /* Tunable: KINGOFCASTLE_CABLECARCCLASSSPAWNPOINTWEIGHTING */;
 				
 				default:
 			}
@@ -6415,13 +6415,13 @@ float func_101(int iParam0, int iParam1)//Position - 0x8AD3
 			switch (iParam1)
 			{
 				case 0:
-					return Global_262145.f_11893;
+					return Global_262145.f_11893 /* Tunable: KINGOFCASTLE_HIPPYHILLACLASSSPAWNPOINTWEIGHTING */;
 				
 				case 1:
-					return Global_262145.f_11894;
+					return Global_262145.f_11894 /* Tunable: KINGOFCASTLE_HIPPYHILLBCLASSSPAWNPOINTWEIGHTING */;
 				
 				case 2:
-					return Global_262145.f_11895;
+					return Global_262145.f_11895 /* Tunable: KINGOFCASTLE_HIPPYHILLCCLASSSPAWNPOINTWEIGHTING */;
 				
 				default:
 			}
@@ -6431,13 +6431,13 @@ float func_101(int iParam0, int iParam1)//Position - 0x8AD3
 			switch (iParam1)
 			{
 				case 0:
-					return Global_262145.f_11896;
+					return Global_262145.f_11896 /* Tunable: KINGOFCASTLE_OBSERVATORYACLASSSPAWNPOINTWEIGHTING */;
 				
 				case 1:
-					return Global_262145.f_11897;
+					return Global_262145.f_11897 /* Tunable: KINGOFCASTLE_OBSERVATORYBCLASSSPAWNPOINTWEIGHTING */;
 				
 				case 2:
-					return Global_262145.f_11898;
+					return Global_262145.f_11898 /* Tunable: KINGOFCASTLE_OBSERVATORYCCLASSSPAWNPOINTWEIGHTING */;
 				
 				default:
 			}
@@ -6447,13 +6447,13 @@ float func_101(int iParam0, int iParam1)//Position - 0x8AD3
 			switch (iParam1)
 			{
 				case 0:
-					return Global_262145.f_11899;
+					return Global_262145.f_11899 /* Tunable: KINGOFCASTLE_SCRAPYARDACLASSSPAWNPOINTWEIGHTING */;
 				
 				case 1:
-					return Global_262145.f_11900;
+					return Global_262145.f_11900 /* Tunable: KINGOFCASTLE_SCRAPYARDBCLASSSPAWNPOINTWEIGHTING */;
 				
 				case 2:
-					return Global_262145.f_11901;
+					return Global_262145.f_11901 /* Tunable: KINGOFCASTLE_SCRAPYARDCCLASSSPAWNPOINTWEIGHTING */;
 				
 				default:
 			}
@@ -6463,13 +6463,13 @@ float func_101(int iParam0, int iParam1)//Position - 0x8AD3
 			switch (iParam1)
 			{
 				case 0:
-					return Global_262145.f_11902;
+					return Global_262145.f_11902 /* Tunable: KINGOFCASTLE_GROTTOACLASSSPAWNPOINTWEIGHTING */;
 				
 				case 1:
-					return Global_262145.f_11903;
+					return Global_262145.f_11903 /* Tunable: KINGOFCASTLE_GROTTOBCLASSSPAWNPOINTWEIGHTING */;
 				
 				case 2:
-					return Global_262145.f_11904;
+					return Global_262145.f_11904 /* Tunable: KINGOFCASTLE_GROTTOCCLASSSPAWNPOINTWEIGHTING */;
 				
 				default:
 			}
@@ -6741,7 +6741,7 @@ void func_119(int iParam0)//Position - 0x91E3
 	{
 		return;
 	}
-	iVar3 = (Global_262145.f_11660 + 1000 - func_9(&(Local_91.f_1.f_1), 0, 0));
+	iVar3 = (Global_262145.f_11660 /* Tunable: KING_OF_THE_CASTLE_EVENT_TIME_LIMIT */ + 1000 - func_9(&(Local_91.f_1.f_1), 0, 0));
 	if (iVar3 < 0)
 	{
 		iVar3 = 0;
@@ -7012,7 +7012,7 @@ int func_126(bool bParam0)//Position - 0x995D
 		}
 		if (func_18(&(Global_1836844.f_13)))
 		{
-			if (!func_5(&(Global_1836844.f_13), Global_262145.f_14, 0))
+			if (!func_5(&(Global_1836844.f_13), Global_262145.f_14 /* Tunable: FM_EVENT_PASSIVE_COOL_DOWN */, 0))
 			{
 				return 1;
 			}
@@ -9680,7 +9680,7 @@ void func_242(int iParam0)//Position - 0xC889
 {
 	int iVar0;
 	
-	if (Global_262145.f_9035)
+	if (Global_262145.f_9035 /* Tunable: DISABLE_DAILY_OBJECTIVES */)
 	{
 		return;
 	}
@@ -11333,77 +11333,77 @@ int func_305(int iParam0)//Position - 0xE5F4
 	switch (iParam0)
 	{
 		case 131:
-			if (Global_262145.f_11861)
+			if (Global_262145.f_11861 /* Tunable: DISABLE_BAD_SPORT_HOT_TARGET */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 132:
-			if (Global_262145.f_11863)
+			if (Global_262145.f_11863 /* Tunable: DISABLE_BAD_SPORT_CHECKPOINT */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 133:
-			if (Global_262145.f_11860)
+			if (Global_262145.f_11860 /* Tunable: DISABLE_BAD_SPORT_CHALLENGE */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 136:
-			if (Global_262145.f_11864)
+			if (Global_262145.f_11864 /* Tunable: DISABLE_BAD_SPORT_PENNED_IN */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 138:
-			if (Global_262145.f_11865)
+			if (Global_262145.f_11865 /* Tunable: DISABLE_BAD_SPORT_PASS_THE_PARCEL */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 139:
-			if (Global_262145.f_11866)
+			if (Global_262145.f_11866 /* Tunable: DISABLE_BAD_SPORT_HOT_PROPERTY */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 129:
-			if (Global_262145.f_11862)
+			if (Global_262145.f_11862 /* Tunable: DISABLE_BAD_SPORT_KILL_LIST */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 140:
-			if (Global_262145.f_11867)
+			if (Global_262145.f_11867 /* Tunable: DISABLE_BAD_SPORT_DEAD_DROP */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 141:
-			if (Global_262145.f_11868)
+			if (Global_262145.f_11868 /* Tunable: DISABLE_BAD_SPORT_KING_OF_THE_CASTLE */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 144:
-			if (Global_262145.f_11869)
+			if (Global_262145.f_11869 /* Tunable: DISABLE_BAD_SPORT_CRIMINAL_DAMAGES */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 146:
-			if (Global_262145.f_11870)
+			if (Global_262145.f_11870 /* Tunable: DISABLE_BAD_SPORT_HUNT_THE_BEAST */)
 			{
 				return 1;
 			}
@@ -12683,7 +12683,7 @@ void func_351(int iParam0, struct<3> Param1, var uParam2, float fParam3, float f
 		if (!BitTest(Global_1836844.f_1, 3) && func_768(PLAYER::PLAYER_ID(), 1, 1))
 		{
 			func_361();
-			PLAYER::SET_WANTED_LEVEL_MULTIPLIER(Global_262145.f_11873);
+			PLAYER::SET_WANTED_LEVEL_MULTIPLIER(Global_262145.f_11873 /* Tunable: HUNT_THE_BEAST_EXTENDED_WANTED_REDUCTION_MULTIPLER */);
 			MISC::CLEAR_BIT(&(Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_1), 3);
 			MISC::SET_BIT(&(Global_1836844.f_1), 3);
 		}
@@ -18630,14 +18630,14 @@ void func_551()//Position - 0x15A68
 					{
 						if (!BitTest(uLocal_648, bVar1))
 						{
-							if (func_234(iVar8) <= IntToFloat(Global_262145.f_11969))
+							if (func_234(iVar8) <= IntToFloat(Global_262145.f_11969 /* Tunable: FREEMODE_EVENT_UI_ENTRY_DISTANCE */))
 							{
 								if (!BitTest(Local_95[bVar0 /*5*/].f_4, 12))
 								{
 									MISC::SET_BIT(&(Local_95[bVar0 /*5*/].f_4), 12);
 								}
 							}
-							else if (func_234(iVar8) >= IntToFloat(Global_262145.f_11970))
+							else if (func_234(iVar8) >= IntToFloat(Global_262145.f_11970 /* Tunable: FREEMODE_EVENT_UI_EXIT_DISTANCE */))
 							{
 								if (BitTest(Local_95[bVar0 /*5*/].f_4, 12))
 								{
@@ -18646,14 +18646,14 @@ void func_551()//Position - 0x15A68
 							}
 							if (!func_261(1, 0))
 							{
-								if (func_234(iVar8) <= IntToFloat(Global_262145.f_11969))
+								if (func_234(iVar8) <= IntToFloat(Global_262145.f_11969 /* Tunable: FREEMODE_EVENT_UI_ENTRY_DISTANCE */))
 								{
 									if (!BitTest(Local_95[bVar0 /*5*/].f_4, 3))
 									{
 										MISC::SET_BIT(&(Local_95[bVar0 /*5*/].f_4), 3);
 									}
 								}
-								else if (func_234(iVar8) >= IntToFloat(Global_262145.f_11970))
+								else if (func_234(iVar8) >= IntToFloat(Global_262145.f_11970 /* Tunable: FREEMODE_EVENT_UI_EXIT_DISTANCE */))
 								{
 									if (BitTest(Local_95[bVar0 /*5*/].f_4, 3))
 									{
@@ -19283,7 +19283,7 @@ void func_584(int iParam0)//Position - 0x16900
 														if (NETWORK::NETWORK_IS_HOST_OF_THIS_SCRIPT())
 														{
 															fVar13 = func_139(iVar9, iVar6);
-															fVar13 = (fVar13 + IntToFloat(Global_262145.f_11665));
+															fVar13 = (fVar13 + IntToFloat(Global_262145.f_11665 /* Tunable: KING_OF_THE_CASTLE_POINTS_PER_PLAYER_KILL_AS_KING */));
 															func_571(iVar9, iVar6, fVar13);
 														}
 													}
@@ -19394,12 +19394,12 @@ int func_585(int iParam0)//Position - 0x16C40
 
 int func_586()//Position - 0x16C58
 {
-	return Global_262145.f_11470;
+	return Global_262145.f_11470 /* Tunable: KING_OF_THE_CASTLE_RP_REWARD_KILLED_KING */;
 }
 
 int func_587()//Position - 0x16C67
 {
-	return Global_262145.f_11472;
+	return Global_262145.f_11472 /* Tunable: KING_OF_THE_CASTLE_RP_REWARD_KILLED_KING_CAP */;
 }
 
 int func_588(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7, char* sParam8, bool bParam9, int iParam10)//Position - 0x16C76
@@ -19614,7 +19614,7 @@ int func_600(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, 
 		}
 		iVar1 = SYSTEM::ROUND((IntToFloat(iParam3) * (IntToFloat(iParam4) + fVar0)));
 		iVar1 = func_622(iVar1);
-		fVar3 = (SYSTEM::TO_FLOAT(iVar1) * Global_262145.f_1);
+		fVar3 = (SYSTEM::TO_FLOAT(iVar1) * Global_262145.f_1 /* Tunable: XP_MULTIPLIER */);
 		iVar1 = SYSTEM::ROUND(fVar3);
 		if (bParam10)
 		{
@@ -19819,7 +19819,7 @@ void func_607(int iParam0, int iParam1, int iParam2)//Position - 0x173AC
 		{
 			iParam0 = 1787576850;
 		}
-		if (Global_262145.f_10069 == 0 && iParam1 != joaat("XPCATEGORY_KEYS_DEBUG"))
+		if (Global_262145.f_10069 /* Tunable: TURN_OFF_RP_REDUCED_BLOCKER */ == 0 && iParam1 != joaat("XPCATEGORY_KEYS_DEBUG"))
 		{
 			if (iParam2 == 0)
 			{
@@ -19834,7 +19834,7 @@ void func_607(int iParam0, int iParam1, int iParam2)//Position - 0x173AC
 				}
 			}
 		}
-		if (Global_262145.f_10068 == 0)
+		if (Global_262145.f_10068 /* Tunable: TURN_OFF_RP_RESET_TELEMETRY */ == 0)
 		{
 			if (iParam0 == 0)
 			{
@@ -19845,7 +19845,7 @@ void func_607(int iParam0, int iParam1, int iParam2)//Position - 0x173AC
 				}
 			}
 		}
-		if (Global_262145.f_10068 == 0)
+		if (Global_262145.f_10068 /* Tunable: TURN_OFF_RP_RESET_TELEMETRY */ == 0)
 		{
 			if (iParam0 < 0)
 			{
@@ -20056,7 +20056,7 @@ void func_615(int iParam0)//Position - 0x1770C
 	}
 	if (bVar3)
 	{
-		iVar6 = SYSTEM::ROUND((func_616(*iParam0, 100) * (10f * Global_262145.f_4227)));
+		iVar6 = SYSTEM::ROUND((func_616(*iParam0, 100) * (10f * Global_262145.f_4227 /* Tunable: XP_TUNABLE_ALL_RP_WHILE_PLAYING_IN_A_CREW */)));
 	}
 	if (iVar2 > 4)
 	{
@@ -20064,7 +20064,7 @@ void func_615(int iParam0)//Position - 0x1770C
 	}
 	if (iVar2 >= 2)
 	{
-		iVar7 = SYSTEM::ROUND((func_616(*iParam0, 100) * (20f * Global_262145.f_4220)));
+		iVar7 = SYSTEM::ROUND((func_616(*iParam0, 100) * (20f * Global_262145.f_4220 /* Tunable: XP_TUNABLE_PERFORMING_JOBS_WITH_OTHER_PLAYERS */)));
 	}
 	*iParam0 = (*iParam0 + iVar6);
 	*iParam0 = (*iParam0 + iVar7);
@@ -20163,7 +20163,7 @@ void func_618(bool bParam0, int iParam1)//Position - 0x17885
 	}
 	if (bVar2)
 	{
-		iVar5 = SYSTEM::ROUND((func_616(*iParam1, 100) * (10f * Global_262145.f_4227)));
+		iVar5 = SYSTEM::ROUND((func_616(*iParam1, 100) * (10f * Global_262145.f_4227 /* Tunable: XP_TUNABLE_ALL_RP_WHILE_PLAYING_IN_A_CREW */)));
 	}
 	if (iVar1 > 4)
 	{
@@ -20171,7 +20171,7 @@ void func_618(bool bParam0, int iParam1)//Position - 0x17885
 	}
 	if (iVar1 >= 1)
 	{
-		iVar6 = SYSTEM::ROUND((func_616(*iParam1, 100) * (20f * Global_262145.f_4220)));
+		iVar6 = SYSTEM::ROUND((func_616(*iParam1, 100) * (20f * Global_262145.f_4220 /* Tunable: XP_TUNABLE_PERFORMING_JOBS_WITH_OTHER_PLAYERS */)));
 	}
 	*iParam1 = (*iParam1 + iVar5);
 	*iParam1 = (*iParam1 + iVar6);
@@ -20246,13 +20246,13 @@ int func_625()//Position - 0x17A98
 	
 	if (func_629(PLAYER::PLAYER_ID()) || func_628(PLAYER::PLAYER_ID()))
 	{
-		if (Global_262145.f_10101 > 16000)
+		if (Global_262145.f_10101 /* Tunable: JOB_HEIST_RP_CAP */ > 16000)
 		{
 			iVar0 = 16000;
 		}
 		else
 		{
-			iVar0 = Global_262145.f_10101;
+			iVar0 = Global_262145.f_10101 /* Tunable: JOB_HEIST_RP_CAP */;
 		}
 	}
 	else if (func_446() || func_626(PLAYER::PLAYER_ID()))
@@ -20266,13 +20266,13 @@ int func_625()//Position - 0x17A98
 			iVar0 = Global_262145.f_23310;
 		}
 	}
-	else if (Global_262145.f_7094 > 20000)
+	else if (Global_262145.f_7094 /* Tunable: JOB_RP_CAP */ > 20000)
 	{
 		iVar0 = 20000;
 	}
 	else
 	{
-		iVar0 = Global_262145.f_7094;
+		iVar0 = Global_262145.f_7094 /* Tunable: JOB_RP_CAP */;
 	}
 	return iVar0;
 }
@@ -20306,12 +20306,12 @@ bool func_629(int iParam0)//Position - 0x17B71
 
 int func_630()//Position - 0x17B86
 {
-	return Global_262145.f_11471;
+	return Global_262145.f_11471 /* Tunable: KING_OF_THE_CASTLE_RP_REWARD_KILL_AS_KING */;
 }
 
 int func_631()//Position - 0x17B95
 {
-	return Global_262145.f_11473;
+	return Global_262145.f_11473 /* Tunable: KING_OF_THE_CASTLE_RP_REWARD_KILL_AS_KING_CAP */;
 }
 
 void func_632(int iParam0, var uParam1)//Position - 0x17BA4
@@ -20380,7 +20380,7 @@ void func_635(int iParam0, int iParam1)//Position - 0x17BDD
 								MONEY::NETWORK_EARN_FROM_AMBIENT_JOB(iVar0, "AM_KING_OF_THE_HILL", &uVar4);
 							}
 							Local_92.f_6 = (Local_92.f_6 + iVar0);
-							if (!Global_262145.f_11876)
+							if (!Global_262145.f_11876 /* Tunable: KING_OF_THE_CASTLE_DISABLE_SHARE_CASH */)
 							{
 								if (Local_92.f_6 > 0)
 								{
@@ -20422,9 +20422,9 @@ void func_636(int iParam0, int iParam1)//Position - 0x17D28
 			if (!MISC::IS_PC_VERSION() || Global_262145.f_24025 == 1)
 			{
 				Global_2815059.f_283 = iParam0;
-				if (iParam1 > Global_262145.f_7043)
+				if (iParam1 > Global_262145.f_7043 /* Tunable: CAP_MAX_AMOUNT_CASH_TO_SHARE */)
 				{
-					iParam1 = Global_262145.f_7043;
+					iParam1 = Global_262145.f_7043 /* Tunable: CAP_MAX_AMOUNT_CASH_TO_SHARE */;
 				}
 				Global_2815059.f_284 = iParam1;
 				Global_2815059.f_285 = 0;
@@ -21051,7 +21051,7 @@ void func_646(struct<67> Param0, var uParam1, var uParam2, var uParam3, var uPar
 	Var0.f_2 = { Param0.f_66 };
 	Var0.f_2.f_33 = iParam19;
 	iVar1 = func_585(Var0.f_1);
-	if ((Global_262145.f_24104 && !Global_262145.f_24105) && !Global_262145.f_24106)
+	if ((Global_262145.f_24104 /* Tunable: BLOCK_NS_TRANS */ && !Global_262145.f_24105 /* Tunable: SC_RUN_TRANS */) && !Global_262145.f_24106 /* Tunable: BG_RUN_TRANS */)
 	{
 		return;
 	}
@@ -21207,12 +21207,12 @@ int func_656(bool bParam0)//Position - 0x18FBA
 	{
 		return SYSTEM::ROUND((0.05f * 100f));
 	}
-	return Global_262145.f_12862;
+	return Global_262145.f_12862 /* Tunable: GB_PERCENTAGE_OF_GOONS_CASH_TO_AGENCY */;
 }
 
 int func_657()//Position - 0x18FE0
 {
-	return Global_262145.f_12861;
+	return Global_262145.f_12861 /* Tunable: GB_PERCENTAGE_OF_GOONS_CASH_TO_BOSS */;
 }
 
 int func_658()//Position - 0x18FEF
@@ -21252,9 +21252,9 @@ void func_662(float fParam0, var uParam1, var uParam2, var uParam3)//Position - 
 	int iVar2;
 	
 	iVar0 = ((func_9(&uLocal_99, 0, 0) / 60) / 1000);
-	if (iVar0 > Global_262145.f_11907)
+	if (iVar0 > Global_262145.f_11907 /* Tunable: PARTICIPATION_T_CAP */)
 	{
-		iVar0 = Global_262145.f_11907;
+		iVar0 = Global_262145.f_11907 /* Tunable: PARTICIPATION_T_CAP */;
 	}
 	else if (iVar0 < 1)
 	{
@@ -21264,7 +21264,7 @@ void func_662(float fParam0, var uParam1, var uParam2, var uParam3)//Position - 
 	*uParam2 = (func_674() * iVar0);
 	if (fParam0 > 0f)
 	{
-		iVar1 = ((Global_262145.f_11660 / 60) / 1000);
+		iVar1 = ((Global_262145.f_11660 /* Tunable: KING_OF_THE_CASTLE_EVENT_TIME_LIMIT */ / 60) / 1000);
 		if (iVar1 > func_673())
 		{
 			iVar1 = func_673();
@@ -21274,19 +21274,19 @@ void func_662(float fParam0, var uParam1, var uParam2, var uParam3)//Position - 
 		{
 			iVar2 = func_672();
 		}
-		*uParam1 = SYSTEM::ROUND((IntToFloat(func_665(func_671(), func_670(), iVar1, fParam0, func_669(), func_668(), func_667(), iVar2)) * Global_262145.f_11934));
-		*uParam2 = (*uParam2 + SYSTEM::ROUND((IntToFloat(func_665(func_664(), func_663(), iVar1, fParam0, func_669(), func_668(), func_667(), iVar2)) * Global_262145.f_11935)));
+		*uParam1 = SYSTEM::ROUND((IntToFloat(func_665(func_671(), func_670(), iVar1, fParam0, func_669(), func_668(), func_667(), iVar2)) * Global_262145.f_11934 /* Tunable: KING_OF_THE_CASTLE_EVENT_MULTIPLIER_CASH */));
+		*uParam2 = (*uParam2 + SYSTEM::ROUND((IntToFloat(func_665(func_664(), func_663(), iVar1, fParam0, func_669(), func_668(), func_667(), iVar2)) * Global_262145.f_11935 /* Tunable: KING_OF_THE_CASTLE_EVENT_MULTIPLIER_RP */)));
 	}
 }
 
 int func_663()//Position - 0x1913C
 {
-	return Global_262145.f_11467;
+	return Global_262145.f_11467 /* Tunable: KING_OF_THE_CASTLE_RP_REWARD_SCALE */;
 }
 
 int func_664()//Position - 0x1914B
 {
-	return Global_262145.f_11469;
+	return Global_262145.f_11469 /* Tunable: KING_OF_THE_CASTLE_RP_REWARD_BASE */;
 }
 
 int func_665(int iParam0, int iParam1, int iParam2, float fParam3, float fParam4, float fParam5, float fParam6, int iParam7)//Position - 0x1915A
@@ -21321,47 +21321,47 @@ int func_666(int iParam0, int iParam1, int iParam2)//Position - 0x1918B
 
 float func_667()//Position - 0x191D3
 {
-	return Global_262145.f_11476;
+	return Global_262145.f_11476 /* Tunable: KING_OF_THE_CASTLE_REWARD_PLAYER_DIVIDER */;
 }
 
 float func_668()//Position - 0x191E2
 {
-	return Global_262145.f_11475;
+	return Global_262145.f_11475 /* Tunable: KING_OF_THE_CASTLE_REWARD_PLAYER_WEIGHTING */;
 }
 
 float func_669()//Position - 0x191F1
 {
-	return Global_262145.f_11474;
+	return Global_262145.f_11474 /* Tunable: KING_OF_THE_CASTLE_REWARD_TIME_WEIGHTING */;
 }
 
 int func_670()//Position - 0x19200
 {
-	return Global_262145.f_11466;
+	return Global_262145.f_11466 /* Tunable: KING_OF_THE_CASTLE_CASH_REWARD_SCALE */;
 }
 
 int func_671()//Position - 0x1920F
 {
-	return Global_262145.f_11468;
+	return Global_262145.f_11468 /* Tunable: KING_OF_THE_CASTLE_CASH_REWARD_BASE */;
 }
 
 int func_672()//Position - 0x1921E
 {
-	return Global_262145.f_11819;
+	return Global_262145.f_11819 /* Tunable: KING_OF_THE_CASTLE_P_CAP */;
 }
 
 int func_673()//Position - 0x1922D
 {
-	return Global_262145.f_11818;
+	return Global_262145.f_11818 /* Tunable: KING_OF_THE_CASTLE_T_CAP */;
 }
 
 int func_674()//Position - 0x1923C
 {
-	return Global_262145.f_11465;
+	return Global_262145.f_11465 /* Tunable: KING_OF_THE_CASTLE_EOM_DEFAULT_RP_REWARD */;
 }
 
 int func_675()//Position - 0x1924B
 {
-	return Global_262145.f_11464;
+	return Global_262145.f_11464 /* Tunable: KING_OF_THE_CASTLE_EOM_DEFAULT_CASH_REWARD */;
 }
 
 float func_676(int iParam0)//Position - 0x1925A
@@ -21369,13 +21369,13 @@ float func_676(int iParam0)//Position - 0x1925A
 	switch (iParam0)
 	{
 		case 0:
-			return Global_262145.f_11477;
+			return Global_262145.f_11477 /* Tunable: KING_OF_THE_CASTLE_MODIFIER_IN_PLACE_1 */;
 		
 		case 1:
-			return Global_262145.f_11478;
+			return Global_262145.f_11478 /* Tunable: KING_OF_THE_CASTLE_MODIFIER_IN_PLACE_2 */;
 		
 		case 2:
-			return Global_262145.f_11479;
+			return Global_262145.f_11479 /* Tunable: KING_OF_THE_CASTLE_MODIFIER_IN_PLACE_3 */;
 		
 		default:
 	}
@@ -22084,12 +22084,12 @@ int func_710()//Position - 0x1A0CC
 	if (func_18(&(Local_91.f_1.f_1)))
 	{
 		iVar0 = func_711(&iVar2, &(Local_91.f_1.f_1));
-		iVar1 = Global_262145.f_11660;
+		iVar1 = Global_262145.f_11660 /* Tunable: KING_OF_THE_CASTLE_EVENT_TIME_LIMIT */;
 	}
 	else if (func_18(&(Local_91.f_1.f_3)))
 	{
 		iVar0 = func_711(&iVar2, &(Local_91.f_1.f_3));
-		iVar1 = Global_262145.f_11661;
+		iVar1 = Global_262145.f_11661 /* Tunable: KING_OF_THE_CASTLE_EVENT_EXPIRY_TIME */;
 	}
 	else
 	{
@@ -22130,7 +22130,7 @@ int func_713(int iParam0)//Position - 0x1A174
 			break;
 		
 		case 4:
-			if (Global_262145.f_7119)
+			if (Global_262145.f_7119 /* Tunable: DISABLE_EVENT_CRATE_DROP */)
 			{
 				return 0;
 			}
@@ -22145,7 +22145,7 @@ int func_713(int iParam0)//Position - 0x1A174
 			break;
 		
 		case 5:
-			if (Global_262145.f_7120)
+			if (Global_262145.f_7120 /* Tunable: DISABLE_EVENT_ARMOURED_TRUCK */)
 			{
 				return 0;
 			}
@@ -22160,7 +22160,7 @@ int func_713(int iParam0)//Position - 0x1A174
 			break;
 		
 		case 6:
-			if (Global_262145.f_7121)
+			if (Global_262145.f_7121 /* Tunable: DISABLE_EVENT_HIGH_PRIORITY_VEHICLE */)
 			{
 				return 0;
 			}
@@ -22173,7 +22173,7 @@ int func_713(int iParam0)//Position - 0x1A174
 			break;
 		
 		case 9:
-			if (Global_262145.f_7122)
+			if (Global_262145.f_7122 /* Tunable: DISABLE_EVENT_JOYRIDER */)
 			{
 				return 0;
 			}
@@ -22417,7 +22417,7 @@ void func_720()//Position - 0x1A5AE
 	Local_92.f_4 = Local_91.f_216;
 	Local_92.f_3 = iLocal_98;
 	Local_92.f_10 = (NETWORK::GET_CLOUD_TIME_AS_INT() - Local_92.f_9);
-	if (!Global_262145.f_11876)
+	if (!Global_262145.f_11876 /* Tunable: KING_OF_THE_CASTLE_DISABLE_SHARE_CASH */)
 	{
 		if (Local_92.f_6 > 0)
 		{
@@ -22812,7 +22812,7 @@ bool func_733(int iParam0)//Position - 0x1AE00
 
 int func_734()//Position - 0x1AE0D
 {
-	if (Global_4718592.f_116524 == Global_262145.f_10062)
+	if (Global_4718592.f_116524 == Global_262145.f_10062 /* Tunable: TRANSFORM_INFERNO */)
 	{
 		return 1;
 	}
@@ -23869,7 +23869,7 @@ int func_758(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x1
 	iVar0 = 0;
 	while (iVar0 < 21)
 	{
-		if (iVar0 < Global_262145.f_8576)
+		if (iVar0 < Global_262145.f_8576 /* Tunable: NUMBER_OF_SCRIPTS_IN_LAUNCH_HISTORY_LIST */)
 		{
 			if (Global_2779753.f_136[iVar0 /*2*/] == iVar1 && Global_2779753.f_136[iVar0 /*2*/].f_1 == func_756(iParam0, iParam1, iParam2, iParam3))
 			{
@@ -23934,56 +23934,56 @@ int func_760(int iParam0)//Position - 0x1BD90
 	switch (iParam0)
 	{
 		case 0:
-			if (Global_262145.f_11666)
+			if (Global_262145.f_11666 /* Tunable: KING_OF_THE_CASTLE_DISABLE_VARIANT_1 */)
 			{
 				return 0;
 			}
 			break;
 		
 		case 4:
-			if (Global_262145.f_11667)
+			if (Global_262145.f_11667 /* Tunable: KING_OF_THE_CASTLE_DISABLE_VARIANT_2 */)
 			{
 				return 0;
 			}
 			break;
 		
 		case 2:
-			if (Global_262145.f_11668)
+			if (Global_262145.f_11668 /* Tunable: KING_OF_THE_CASTLE_DISABLE_VARIANT_3 */)
 			{
 				return 0;
 			}
 			break;
 		
 		case 1:
-			if (Global_262145.f_11669)
+			if (Global_262145.f_11669 /* Tunable: KING_OF_THE_CASTLE_DISABLE_VARIANT_4 */)
 			{
 				return 0;
 			}
 			break;
 		
 		case 3:
-			if (Global_262145.f_11670)
+			if (Global_262145.f_11670 /* Tunable: KING_OF_THE_CASTLE_DISABLE_VARIANT_5 */)
 			{
 				return 0;
 			}
 			break;
 		
 		case 5:
-			if (Global_262145.f_11671)
+			if (Global_262145.f_11671 /* Tunable: KING_OF_THE_CASTLE_DISABLE_VARIANT_6 */)
 			{
 				return 0;
 			}
 			break;
 		
 		case 6:
-			if (Global_262145.f_11672)
+			if (Global_262145.f_11672 /* Tunable: KING_OF_THE_CASTLE_DISABLE_VARIANT_7 */)
 			{
 				return 0;
 			}
 			break;
 		
 		case 7:
-			if (Global_262145.f_11673)
+			if (Global_262145.f_11673 /* Tunable: KING_OF_THE_CASTLE_DISABLE_VARIANT_8 */)
 			{
 				return 0;
 			}

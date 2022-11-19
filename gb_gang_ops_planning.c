@@ -10416,66 +10416,66 @@ int func_315()//Position - 0xC365
 			switch (iVar0)
 			{
 				case 0:
-					return Global_262145.f_23377;
+					return Global_262145.f_23377 /* Tunable: H2_PREP_SKIP_COST_IAA_JOB_FIRST_PREP_SKIP */;
 				
 				case 1:
-					return Global_262145.f_23378;
+					return Global_262145.f_23378 /* Tunable: H2_PREP_SKIP_COST_IAA_JOB_SECOND_PREP_SKIP */;
 				
 				case 2:
-					return Global_262145.f_23379;
+					return Global_262145.f_23379 /* Tunable: H2_PREP_SKIP_COST_IAA_JOB_THIRD_PREP_SKIP */;
 				
 				default:
 			}
-			return Global_262145.f_23379;
+			return Global_262145.f_23379 /* Tunable: H2_PREP_SKIP_COST_IAA_JOB_THIRD_PREP_SKIP */;
 			break;
 		
 		case 1:
 			switch (iVar0)
 			{
 				case 0:
-					return Global_262145.f_23380;
+					return Global_262145.f_23380 /* Tunable: H2_PREP_SKIP_COST_SUB_JOB_FIRST_PREP_SKIP */;
 				
 				case 1:
-					return Global_262145.f_23381;
+					return Global_262145.f_23381 /* Tunable: H2_PREP_SKIP_COST_SUB_JOB_SECOND_PREP_SKIP */;
 				
 				case 2:
-					return Global_262145.f_23382;
+					return Global_262145.f_23382 /* Tunable: H2_PREP_SKIP_COST_SUB_JOB_THIRD_PREP_SKIP */;
 				
 				case 3:
-					return Global_262145.f_23383;
+					return Global_262145.f_23383 /* Tunable: H2_PREP_SKIP_COST_SUB_JOB_FOURTH_PREP_SKIP */;
 				
 				case 4:
-					return Global_262145.f_23384;
+					return Global_262145.f_23384 /* Tunable: H2_PREP_SKIP_COST_SUB_JOB_FIFTH_PREP_SKIP */;
 				
 				default:
 			}
-			return Global_262145.f_23384;
+			return Global_262145.f_23384 /* Tunable: H2_PREP_SKIP_COST_SUB_JOB_FIFTH_PREP_SKIP */;
 			break;
 		
 		case 2:
 			switch (iVar0)
 			{
 				case 0:
-					return Global_262145.f_23385;
+					return Global_262145.f_23385 /* Tunable: H2_PREP_SKIP_COST_SILO_OPERATION_FIRST_PREP_SKIP */;
 				
 				case 1:
-					return Global_262145.f_23386;
+					return Global_262145.f_23386 /* Tunable: H2_PREP_SKIP_COST_SILO_OPERATION_SECOND_PREP_SKIP */;
 				
 				case 2:
-					return Global_262145.f_23387;
+					return Global_262145.f_23387 /* Tunable: H2_PREP_SKIP_COST_SILO_OPERATION_THIRD_PREP_SKIP */;
 				
 				case 3:
-					return Global_262145.f_23388;
+					return Global_262145.f_23388 /* Tunable: H2_PREP_SKIP_COST_SILO_OPERATION_FOURTH_PREP_SKIP */;
 				
 				case 4:
-					return Global_262145.f_23389;
+					return Global_262145.f_23389 /* Tunable: H2_PREP_SKIP_COST_SILO_OPERATION_FIFTH_PREP_SKIP */;
 				
 				case 5:
-					return Global_262145.f_23390;
+					return Global_262145.f_23390 /* Tunable: H2_PREP_SKIP_COST_SILO_OPERATION_SIXTH_PREP_SKIP */;
 				
 				default:
 			}
-			return Global_262145.f_23390;
+			return Global_262145.f_23390 /* Tunable: H2_PREP_SKIP_COST_SILO_OPERATION_SIXTH_PREP_SKIP */;
 			break;
 	}
 	return -1;
@@ -11729,7 +11729,7 @@ void func_343(var uParam0)//Position - 0xE323
 		iVar0 = uParam0->f_812.f_41;
 		if (iVar0 != -1)
 		{
-			uParam0->f_812.f_425 = (Global_262145.f_23326 - func_345(&(Global_1888862[iVar0 /*120*/].f_38.f_36), 0, 0));
+			uParam0->f_812.f_425 = (Global_262145.f_23326 /* Tunable: H2_FINALE_FORCE_LAUNCH_TIME */ - func_345(&(Global_1888862[iVar0 /*120*/].f_38.f_36), 0, 0));
 			if (uParam0->f_812.f_425 > 0)
 			{
 				if (uParam0->f_812.f_425 < (uParam0->f_812.f_426 - 1000))
@@ -13961,7 +13961,7 @@ int func_438(int iParam0, int iParam1)//Position - 0x10D33
 			}
 			else
 			{
-				if ((func_445(iParam1) && func_439()) && Global_262145.f_23138)
+				if ((func_445(iParam1) && func_439()) && Global_262145.f_23138 /* Tunable: H2_PREP_GENERAL_ONLY_ALLOW_PREP_MISSIONS_IN_PUBLIC_SESSIONS */)
 				{
 					return 1;
 				}
@@ -14701,52 +14701,52 @@ int func_463(int iParam0)//Position - 0x118CA
 	switch (iParam0)
 	{
 		case 180:
-			return Global_262145.f_18680;
+			return Global_262145.f_18680 /* Tunable: BIKER_GUNRUNNING_MIN_PLAYERS */;
 		
 		case 183:
-			return Global_262145.f_18688;
+			return Global_262145.f_18688 /* Tunable: BIKER_POW_MIN_PLAYERS */;
 		
 		case 185:
-			return Global_262145.f_18697;
+			return Global_262145.f_18697 /* Tunable: BIKER_GUNS_FOR_HIRE_MIN_PLAYERS */;
 		
 		case 182:
-			return Global_262145.f_18708;
+			return Global_262145.f_18708 /* Tunable: BIKER_BY_THE_POUND_MIN_PLAYERS */;
 		
 		case 186:
-			return Global_262145.f_18717;
+			return Global_262145.f_18717 /* Tunable: BIKER_WEAPON_OF_CHOICE_MIN_PLAYERS */;
 		
 		case 195:
-			return Global_262145.f_18735;
+			return Global_262145.f_18735 /* Tunable: BIKER_NINE_TENTHS_MIN_PLAYERS */;
 		
 		case 198:
-			return Global_262145.f_18745;
+			return Global_262145.f_18745 /* Tunable: BIKER_CRACKED_MIN_PLAYERS */;
 		
 		case 197:
-			return Global_262145.f_18757;
+			return Global_262145.f_18757 /* Tunable: BIKER_JAILBREAK_MIN_PLAYERS */;
 		
 		case 207:
-			return Global_262145.f_18765;
+			return Global_262145.f_18765 /* Tunable: BIKER_FRAGILE_GOODS_MIN_PLAYERS */;
 		
 		case 209:
-			return Global_262145.f_18778;
+			return Global_262145.f_18778 /* Tunable: BIKER_OUTRIDER_MIN_PLAYERS */;
 		
 		case 208:
-			return Global_262145.f_18786;
+			return Global_262145.f_18786 /* Tunable: BIKER_TORCHED_MIN_PLAYERS */;
 		
 		case 201:
-			return Global_262145.f_18819;
+			return Global_262145.f_18819 /* Tunable: BIKER_STAND_YOUR_GROUND_MIN_PLAYERS */;
 		
 		case 211:
-			return Global_262145.f_18887;
+			return Global_262145.f_18887 /* Tunable: BIKER_ON_THE_RUN_MIN_PLAYERS */;
 		
 		case 193:
-			return Global_262145.f_18910;
+			return Global_262145.f_18910 /* Tunable: BIKER_HIT_AND_RIDE_MIN_PLAYERS */;
 		
 		case 205:
-			return Global_262145.f_18928;
+			return Global_262145.f_18928 /* Tunable: BIKER_MISCHIEF_MIN_PLAYERS */;
 		
 		case 189:
-			return Global_262145.f_18893;
+			return Global_262145.f_18893 /* Tunable: BIKER_RACE_MIN_PLAYERS */;
 		
 		case 216:
 			return 2;
@@ -14761,7 +14761,7 @@ int func_463(int iParam0)//Position - 0x118CA
 
 bool func_464()//Position - 0x119EE
 {
-	return Global_262145.f_15734;
+	return Global_262145.f_15734 /* Tunable: EXEC_CONTRABAND_DISABLE */;
 }
 
 int func_465(int iParam0)//Position - 0x119FD
@@ -15080,61 +15080,61 @@ int func_484(int iParam0)//Position - 0x11E9D
 	switch (iParam0)
 	{
 		case 162:
-			return Global_262145.f_13038;
+			return Global_262145.f_13038 /* Tunable: GB_POINTTOPOINT_INSTANCES_PERMITTED */;
 		
 		case 155:
-			return Global_262145.f_13063;
+			return Global_262145.f_13063 /* Tunable: GB_PROTECTIONRACKET_INSTANCES_PERMITTED */;
 		
 		case 153:
-			return Global_262145.f_13027;
+			return Global_262145.f_13027 /* Tunable: GB_MOSTWANTED_INSTANCES_PERMITTED */;
 		
 		case 163:
-			return Global_262145.f_13003;
+			return Global_262145.f_13003 /* Tunable: GB_CARJACKING_INSTANCES_PERMITTED */;
 		
 		case 160:
-			return Global_262145.f_13016;
+			return Global_262145.f_13016 /* Tunable: GB_FINDERS_KEEPERS_INSTANCES_PERMITTED */;
 		
 		case 154:
-			return Global_262145.f_13073;
+			return Global_262145.f_13073 /* Tunable: GB_SMASHANDGRAB_INSTANCES_PERMITTED */;
 		
 		case 169:
 			return 1;
 		
 		case 171:
-			return Global_262145.f_15561;
+			return Global_262145.f_15561 /* Tunable: EXEC_CASHING_INSTANCES_PERMITTED */;
 		
 		case 172:
-			return Global_262145.f_15580;
+			return Global_262145.f_15580 /* Tunable: EXEC_SALVAGE_INSTANCES_PERMITTED */;
 		
 		case 148:
-			return Global_262145.f_18794;
+			return Global_262145.f_18794 /* Tunable: BIKER_DEATHMATCH_MAX_INSTANCES */;
 		
 		case 179:
-			return Global_262145.f_18802;
+			return Global_262145.f_18802 /* Tunable: BIKER_JOUST_MAX_INSTANCES */;
 		
 		case 201:
-			return Global_262145.f_18816;
+			return Global_262145.f_18816 /* Tunable: BIKER_STAND_YOUR_GROUND_MAX_INSTANCES */;
 		
 		case 200:
-			return Global_262145.f_18856;
+			return Global_262145.f_18856 /* Tunable: BIKER_CAGED_IN_MAX_INSTANCES */;
 		
 		case 211:
-			return Global_262145.f_18885;
+			return Global_262145.f_18885 /* Tunable: BIKER_ON_THE_RUN_MAX_INSTANCES */;
 		
 		case 194:
-			return Global_262145.f_18897;
+			return Global_262145.f_18897 /* Tunable: BIKER_RIPPIN_MAX_INSTANCES */;
 		
 		case 193:
-			return Global_262145.f_18908;
+			return Global_262145.f_18908 /* Tunable: BIKER_HIT_AND_RIDE_MAX_INSTANCES */;
 		
 		case 210:
-			return Global_262145.f_18920;
+			return Global_262145.f_18920 /* Tunable: BIKER_WHEELIE_MAX_INSTANCES */;
 		
 		case 205:
-			return Global_262145.f_18926;
+			return Global_262145.f_18926 /* Tunable: BIKER_MISCHIEF_MAX_INSTANCES */;
 		
 		case 199:
-			return Global_262145.f_18939;
+			return Global_262145.f_18939 /* Tunable: BIKER_SEARCH_AND_DESTROY_MAX_INSTANCES */;
 		
 		case 249:
 			return 1;
@@ -16494,20 +16494,20 @@ int func_514(int iParam0, int iParam1)//Position - 0x1326D
 		}
 		if (func_518(iParam0))
 		{
-			if (iVar0 > Global_262145.f_18431)
+			if (iVar0 > Global_262145.f_18431 /* Tunable: BIKER_RESUPPLY_MAX_VEHICLES */)
 			{
-				iVar0 = Global_262145.f_18431;
+				iVar0 = Global_262145.f_18431 /* Tunable: BIKER_RESUPPLY_MAX_VEHICLES */;
 			}
 		}
 		else
 		{
-			if (iVar0 < Global_262145.f_18430)
+			if (iVar0 < Global_262145.f_18430 /* Tunable: BIKER_RESUPPLY_MIN_PACKAGES */)
 			{
-				iVar0 = Global_262145.f_18430;
+				iVar0 = Global_262145.f_18430 /* Tunable: BIKER_RESUPPLY_MIN_PACKAGES */;
 			}
-			if (iVar0 > Global_262145.f_18429)
+			if (iVar0 > Global_262145.f_18429 /* Tunable: BIKER_RESUPPLY_MAX_PACKAGES */)
 			{
-				iVar0 = Global_262145.f_18429;
+				iVar0 = Global_262145.f_18429 /* Tunable: BIKER_RESUPPLY_MAX_PACKAGES */;
 			}
 		}
 	}
@@ -16519,10 +16519,10 @@ int func_515(int iParam0)//Position - 0x13306
 	switch (iParam0)
 	{
 		case 5:
-			return Global_262145.f_18468;
+			return Global_262145.f_18468 /* Tunable: BIKER_RESUPPLY_MEET_CONTACT_MIN_PACKAGES */;
 		
 		case 10:
-			return Global_262145.f_18493;
+			return Global_262145.f_18493 /* Tunable: BIKER_RESUPPLY_BANK_MIN_PACKAGES */;
 		
 		default:
 	}
@@ -16533,7 +16533,7 @@ int func_516(int iParam0, int iParam1)//Position - 0x13336
 {
 	if (func_518(iParam0))
 	{
-		if (iParam1 >= Global_262145.f_18432)
+		if (iParam1 >= Global_262145.f_18432 /* Tunable: BIKER_RESUPPLY_SECOND_VEHICLE_THRESHOLD */)
 		{
 			return 2;
 		}
@@ -16542,10 +16542,10 @@ int func_516(int iParam0, int iParam1)//Position - 0x13336
 	switch (iParam0)
 	{
 		case 5:
-			return Global_262145.f_18469;
+			return Global_262145.f_18469 /* Tunable: BIKER_RESUPPLY_MEET_CONTACT_MAX_PACKAGES */;
 		
 		case 10:
-			return Global_262145.f_18494;
+			return Global_262145.f_18494 /* Tunable: BIKER_RESUPPLY_BANK_MAX_PACKAGES */;
 		
 		default:
 	}
@@ -23729,7 +23729,7 @@ void func_636(int iParam0)//Position - 0x19777
 {
 	int iVar0;
 	
-	if (Global_262145.f_9035)
+	if (Global_262145.f_9035 /* Tunable: DISABLE_DAILY_OBJECTIVES */)
 	{
 		return;
 	}
@@ -24523,7 +24523,7 @@ void func_652(struct<67> Param0, var uParam1, var uParam2, var uParam3, var uPar
 	Var0.f_2 = { Param0.f_66 };
 	Var0.f_2.f_33 = iParam19;
 	iVar1 = func_654(Var0.f_1);
-	if ((Global_262145.f_24104 && !Global_262145.f_24105) && !Global_262145.f_24106)
+	if ((Global_262145.f_24104 /* Tunable: BLOCK_NS_TRANS */ && !Global_262145.f_24105 /* Tunable: SC_RUN_TRANS */) && !Global_262145.f_24106 /* Tunable: BG_RUN_TRANS */)
 	{
 		return;
 	}
@@ -26421,51 +26421,51 @@ int func_737(int iParam0, int iParam1)//Position - 0x1D10B
 			switch (iParam1)
 			{
 				case 2:
-					return Global_262145.f_23393;
+					return Global_262145.f_23393 /* Tunable: H2_REPLAY_COOLDOWN_2_PLAYER_IAA */;
 				
 				case 3:
-					return Global_262145.f_23396;
+					return Global_262145.f_23396 /* Tunable: H2_REPLAY_COOLDOWN_3_PLAYER_IAA */;
 				
 				case 4:
-					return Global_262145.f_23399;
+					return Global_262145.f_23399 /* Tunable: H2_REPLAY_COOLDOWN_4_PLAYER_IAA */;
 				
 				default:
 			}
-			return Global_262145.f_23391;
+			return Global_262145.f_23391 /* Tunable: H2_IAA_REPLAY_COOLDOWN_TIME */;
 			break;
 		
 		case 1:
 			switch (iParam1)
 			{
 				case 2:
-					return Global_262145.f_23394;
+					return Global_262145.f_23394 /* Tunable: H2_REPLAY_COOLDOWN_2_PLAYER_SUB */;
 				
 				case 3:
-					return Global_262145.f_23397;
+					return Global_262145.f_23397 /* Tunable: H2_REPLAY_COOLDOWN_3_PLAYER_SUB */;
 				
 				case 4:
-					return Global_262145.f_23400;
+					return Global_262145.f_23400 /* Tunable: H2_REPLAY_COOLDOWN_4_PLAYER_SUB */;
 				
 				default:
 			}
-			return Global_262145.f_23392;
+			return Global_262145.f_23392 /* Tunable: H2_SUB_REPLAY_COOLDOWN_TIME */;
 			break;
 		
 		case 2:
 			switch (iParam1)
 			{
 				case 2:
-					return Global_262145.f_23395;
+					return Global_262145.f_23395 /* Tunable: H2_REPLAY_COOLDOWN_2_PLAYER_SILO */;
 				
 				case 3:
-					return Global_262145.f_23398;
+					return Global_262145.f_23398 /* Tunable: H2_REPLAY_COOLDOWN_3_PLAYER_SILO */;
 				
 				case 4:
-					return Global_262145.f_23401;
+					return Global_262145.f_23401 /* Tunable: H2_REPLAY_COOLDOWN_4_PLAYER_SILO */;
 				
 				default:
 			}
-			return Global_262145.f_23402;
+			return Global_262145.f_23402 /* Tunable: H2_SILO_REPLAY_COOLDOWN_TIME */;
 			break;
 	}
 	return 3600;
@@ -28330,13 +28330,13 @@ int func_787(int iParam0)//Position - 0x1F9EE
 	switch (iParam0)
 	{
 		case 0:
-			return Global_262145.f_23374;
+			return Global_262145.f_23374 /* Tunable: H2_COST_IAA_JOB */;
 		
 		case 1:
-			return Global_262145.f_23375;
+			return Global_262145.f_23375 /* Tunable: H2_COST_SUB_JOB */;
 		
 		case 2:
-			return Global_262145.f_23376;
+			return Global_262145.f_23376 /* Tunable: H2_COST_SILO_OPERATION */;
 		
 		default:
 	}
@@ -28369,18 +28369,18 @@ void func_788()//Position - 0x1FA2E
 				break;
 			
 			case 1:
-				fVar3 = Global_262145.f_9201;
+				fVar3 = Global_262145.f_9201 /* Tunable: GANGOPS_DIFFICULTY_NORMAL */;
 				break;
 			
 			case 2:
-				fVar3 = Global_262145.f_9202;
+				fVar3 = Global_262145.f_9202 /* Tunable: GANGOPS_DIFFICULTY_HARD */;
 				break;
 		}
 		Global_1962546.f_812.f_43 = SYSTEM::ROUND((IntToFloat(Global_1962546.f_812.f_43) * fVar3));
 	}
-	if (Global_1962546.f_812.f_43 > Global_262145.f_23317)
+	if (Global_1962546.f_812.f_43 > Global_262145.f_23317 /* Tunable: H2_PLANNING_SANITY_CEILING */)
 	{
-		Global_1962546.f_812.f_43 = Global_262145.f_23317;
+		Global_1962546.f_812.f_43 = Global_262145.f_23317 /* Tunable: H2_PLANNING_SANITY_CEILING */;
 	}
 	iVar4 = func_275(Global_1962546.f_812.f_77);
 	switch (iVar4)
@@ -28455,56 +28455,56 @@ int func_789(int iParam0, bool bParam1)//Position - 0x1FC66
 				{
 					return iVar0;
 				}
-				return Global_262145.f_9131;
+				return Global_262145.f_9131 /* Tunable: HEIST_PACIFIC_STANDARD_JOB_CASH_REWARD */;
 			
 			case 22:
 				if (NETWORK::NETWORK_ACCESS_TUNABLE_INT_HASH(joaat("MP_Global"), joaat("HEIST_PRISON_BREAK_CASH_REWARD"), &iVar0))
 				{
 					return iVar0;
 				}
-				return Global_262145.f_9128;
+				return Global_262145.f_9128 /* Tunable: HEIST_PRISON_BREAK_CASH_REWARD */;
 			
 			case 23:
 				if (NETWORK::NETWORK_ACCESS_TUNABLE_INT_HASH(joaat("MP_Global"), joaat("HEIST_HUMANE_LABS_RAID_CASH_REWARD"), &iVar0))
 				{
 					return iVar0;
 				}
-				return Global_262145.f_9129;
+				return Global_262145.f_9129 /* Tunable: HEIST_HUMANE_LABS_RAID_CASH_REWARD */;
 			
 			case 24:
 				if (NETWORK::NETWORK_ACCESS_TUNABLE_INT_HASH(joaat("MP_Global"), joaat("HEIST_SERIES_A_FUNDING_CASH_REWARD"), &iVar0))
 				{
 					return iVar0;
 				}
-				return Global_262145.f_9130;
+				return Global_262145.f_9130 /* Tunable: HEIST_SERIES_A_FUNDING_CASH_REWARD */;
 			
 			case 25:
 				if (NETWORK::NETWORK_ACCESS_TUNABLE_INT_HASH(joaat("MP_Global"), joaat("HEIST_FLEECA_JOB_CASH_REWARD"), &iVar0))
 				{
 					return iVar0;
 				}
-				return Global_262145.f_9127;
+				return Global_262145.f_9127 /* Tunable: HEIST_FLEECA_JOB_CASH_REWARD */;
 			
 			case 26:
 				if (NETWORK::NETWORK_ACCESS_TUNABLE_INT_HASH(joaat("MP_Global"), joaat("GANGOPS_THE_IAA_JOB_CASH_REWARD"), &iVar0))
 				{
 					return iVar0;
 				}
-				return Global_262145.f_9132;
+				return Global_262145.f_9132 /* Tunable: GANGOPS_THE_IAA_JOB_CASH_REWARD */;
 			
 			case 27:
 				if (NETWORK::NETWORK_ACCESS_TUNABLE_INT_HASH(joaat("MP_Global"), joaat("GANGOPS_THE_SUBMARINE_JOB_CASH_REWARD"), &iVar0))
 				{
 					return iVar0;
 				}
-				return Global_262145.f_9133;
+				return Global_262145.f_9133 /* Tunable: GANGOPS_THE_SUBMARINE_JOB_CASH_REWARD */;
 			
 			case 28:
 				if (NETWORK::NETWORK_ACCESS_TUNABLE_INT_HASH(joaat("MP_Global"), joaat("GANGOPS_THE_MISSILE_SILO_JOB_CASH_REWARD"), &iVar0))
 				{
 					return iVar0;
 				}
-				return Global_262145.f_9134;
+				return Global_262145.f_9134 /* Tunable: GANGOPS_THE_MISSILE_SILO_JOB_CASH_REWARD */;
 			}
 		
 		default:
@@ -28596,47 +28596,47 @@ int func_789(int iParam0, bool bParam1)//Position - 0x1FC66
 			break;
 		
 		case 21:
-			iVar0 = Global_262145.f_9131;
+			iVar0 = Global_262145.f_9131 /* Tunable: HEIST_PACIFIC_STANDARD_JOB_CASH_REWARD */;
 			break;
 		
 		case 22:
-			iVar0 = Global_262145.f_9128;
+			iVar0 = Global_262145.f_9128 /* Tunable: HEIST_PRISON_BREAK_CASH_REWARD */;
 			break;
 		
 		case 23:
-			iVar0 = Global_262145.f_9129;
+			iVar0 = Global_262145.f_9129 /* Tunable: HEIST_HUMANE_LABS_RAID_CASH_REWARD */;
 			break;
 		
 		case 24:
-			iVar0 = Global_262145.f_9130;
+			iVar0 = Global_262145.f_9130 /* Tunable: HEIST_SERIES_A_FUNDING_CASH_REWARD */;
 			break;
 		
 		case 25:
-			iVar0 = Global_262145.f_9127;
+			iVar0 = Global_262145.f_9127 /* Tunable: HEIST_FLEECA_JOB_CASH_REWARD */;
 			break;
 		
 		case 26:
-			iVar0 = Global_262145.f_9132;
+			iVar0 = Global_262145.f_9132 /* Tunable: GANGOPS_THE_IAA_JOB_CASH_REWARD */;
 			break;
 		
 		case 27:
-			iVar0 = Global_262145.f_9133;
+			iVar0 = Global_262145.f_9133 /* Tunable: GANGOPS_THE_SUBMARINE_JOB_CASH_REWARD */;
 			break;
 		
 		case 28:
-			iVar0 = Global_262145.f_9134;
+			iVar0 = Global_262145.f_9134 /* Tunable: GANGOPS_THE_MISSILE_SILO_JOB_CASH_REWARD */;
 			break;
 		
 		case 29:
-			iVar0 = Global_262145.f_9135;
+			iVar0 = Global_262145.f_9135 /* Tunable: GANGOPS_PREP_THE_IAA_JOB_CASH_REWARD */;
 			break;
 		
 		case 30:
-			iVar0 = Global_262145.f_9136;
+			iVar0 = Global_262145.f_9136 /* Tunable: GANGOPS_PREP_THE_SUBMARINE_JOB_CASH_REWARD */;
 			break;
 		
 		case 31:
-			iVar0 = Global_262145.f_9137;
+			iVar0 = Global_262145.f_9137 /* Tunable: GANGOPS_PREP_THE_MISSILE_SILO_JOB_CASH_REWARD */;
 			break;
 		
 		case 32:

@@ -6882,7 +6882,7 @@ int func_92(int iParam0, int iParam1)//Position - 0x8EF2
 			break;
 		
 		case joaat("sabregt2"):
-			if (!Global_262145.f_14731)
+			if (!Global_262145.f_14731 /* Tunable: ENABLE_LOWRIDER2_SABREGT */)
 			{
 				return 0;
 			}
@@ -6893,7 +6893,7 @@ int func_92(int iParam0, int iParam1)//Position - 0x8EF2
 			break;
 		
 		case joaat("tornado5"):
-			if (!Global_262145.f_14732)
+			if (!Global_262145.f_14732 /* Tunable: ENABLE_LOWRIDER2_TORNADO5 */)
 			{
 				return 0;
 			}
@@ -6904,7 +6904,7 @@ int func_92(int iParam0, int iParam1)//Position - 0x8EF2
 			break;
 		
 		case joaat("virgo2"):
-			if (!Global_262145.f_14730)
+			if (!Global_262145.f_14730 /* Tunable: ENABLE_LOWRIDER2_VIRGO3 */)
 			{
 				return 0;
 			}
@@ -6915,7 +6915,7 @@ int func_92(int iParam0, int iParam1)//Position - 0x8EF2
 			break;
 		
 		case joaat("minivan2"):
-			if (!Global_262145.f_14733)
+			if (!Global_262145.f_14733 /* Tunable: ENABLE_LOWRIDER2_MINIVAN */)
 			{
 				return 0;
 			}
@@ -6926,7 +6926,7 @@ int func_92(int iParam0, int iParam1)//Position - 0x8EF2
 			break;
 		
 		case joaat("slamvan3"):
-			if (!Global_262145.f_14735)
+			if (!Global_262145.f_14735 /* Tunable: ENABLE_LOWRIDER2_SLAMVAN */)
 			{
 				return 0;
 			}
@@ -6937,7 +6937,7 @@ int func_92(int iParam0, int iParam1)//Position - 0x8EF2
 			break;
 		
 		case joaat("faction3"):
-			if (!Global_262145.f_14734)
+			if (!Global_262145.f_14734 /* Tunable: ENABLE_LOWRIDER2_FACTION */)
 			{
 				return 0;
 			}
@@ -6957,7 +6957,7 @@ int func_92(int iParam0, int iParam1)//Position - 0x8EF2
 			break;
 		
 		case joaat("comet3"):
-			if (Global_262145.f_19186)
+			if (Global_262145.f_19186 /* Tunable: ENABLE_IE_COMET3 */)
 			{
 				if (iParam1 & 1 != 0)
 				{
@@ -6969,7 +6969,7 @@ int func_92(int iParam0, int iParam1)//Position - 0x8EF2
 			break;
 		
 		case joaat("diablous2"):
-			if (Global_262145.f_19188)
+			if (Global_262145.f_19188 /* Tunable: ENABLE_IE_DIABLOUS2 */)
 			{
 				if (iParam1 & 1 != 0)
 				{
@@ -6981,7 +6981,7 @@ int func_92(int iParam0, int iParam1)//Position - 0x8EF2
 			break;
 		
 		case joaat("fcr2"):
-			if (Global_262145.f_19192)
+			if (Global_262145.f_19192 /* Tunable: ENABLE_IE_FCR2 */)
 			{
 				if (iParam1 & 1 != 0)
 				{
@@ -6993,7 +6993,7 @@ int func_92(int iParam0, int iParam1)//Position - 0x8EF2
 			break;
 		
 		case joaat("elegy"):
-			if (Global_262145.f_19189)
+			if (Global_262145.f_19189 /* Tunable: ENABLE_IE_ELEGY */)
 			{
 				if (iParam1 & 1 != 0)
 				{
@@ -7005,7 +7005,7 @@ int func_92(int iParam0, int iParam1)//Position - 0x8EF2
 			break;
 		
 		case joaat("nero2"):
-			if (Global_262145.f_19196)
+			if (Global_262145.f_19196 /* Tunable: ENABLE_IE_NERO2 */)
 			{
 				if (iParam1 & 1 != 0)
 				{
@@ -7017,7 +7017,7 @@ int func_92(int iParam0, int iParam1)//Position - 0x8EF2
 			break;
 		
 		case joaat("italigtb2"):
-			if (Global_262145.f_19194)
+			if (Global_262145.f_19194 /* Tunable: ENABLE_IE_ITALIGTB2 */)
 			{
 				if (iParam1 & 1 != 0)
 				{
@@ -7029,7 +7029,7 @@ int func_92(int iParam0, int iParam1)//Position - 0x8EF2
 			break;
 		
 		case joaat("specter2"):
-			if (Global_262145.f_19199)
+			if (Global_262145.f_19199 /* Tunable: ENABLE_IE_SPECTER2 */)
 			{
 				if (iParam1 & 1 != 0)
 				{
@@ -7041,7 +7041,7 @@ int func_92(int iParam0, int iParam1)//Position - 0x8EF2
 			break;
 		
 		case joaat("technical3"):
-			if (Global_262145.f_21144)
+			if (Global_262145.f_21144 /* Tunable: ENABLE_TECHNICAL_MODSHOP */)
 			{
 				if (iParam1 & 1 != 0)
 				{
@@ -7053,7 +7053,7 @@ int func_92(int iParam0, int iParam1)//Position - 0x8EF2
 			break;
 		
 		case joaat("insurgent3"):
-			if (Global_262145.f_21145)
+			if (Global_262145.f_21145 /* Tunable: ENABLE_INSURGENT_MODSHOP */)
 			{
 				if (iParam1 & 1 != 0)
 				{
@@ -7518,7 +7518,7 @@ struct<103> func_105()//Position - 0x95E9
 
 void func_106(int iParam0)//Position - 0x98FF
 {
-	if (!Global_262145.f_4711)
+	if (!Global_262145.f_4711 /* Tunable: DISABLE_RAMMING_SOOP_AND_RAMP */)
 	{
 		VEHICLE::SET_ALLOW_RAMMING_SOOP_OR_RAMP(iParam0, 0);
 	}

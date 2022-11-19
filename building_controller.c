@@ -692,7 +692,7 @@ void func_4()//Position - 0x485
 		}
 		if (!Global_1836157)
 		{
-			if (!Global_262145.f_32662)
+			if (!Global_262145.f_32662 /* Tunable: DISABLE_LUXURY_SHOWROOM */)
 			{
 				if (STREAMING::IS_IPL_ACTIVE("hei_showroom_closed"))
 				{
@@ -793,7 +793,7 @@ void func_4()//Position - 0x485
 				}
 			}
 		}
-		if (Global_262145.f_31796)
+		if (Global_262145.f_31796 /* Tunable: FIXER_ENABLE_SF_BILLBOARDS */)
 		{
 			func_12();
 		}

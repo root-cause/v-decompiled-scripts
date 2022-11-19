@@ -322,7 +322,7 @@ void func_7()//Position - 0x291
 			{
 				if (func_6(&(Local_77.f_1.f_15)))
 				{
-					if (func_4(&(Local_77.f_1.f_15), Global_262145.f_11082, 0))
+					if (func_4(&(Local_77.f_1.f_15), Global_262145.f_11082 /* Tunable: ISLANDBACKUPHELILIFESPANMS */, 0))
 					{
 						func_60(3);
 					}
@@ -715,7 +715,7 @@ int func_27()//Position - 0x8F8
 					ENTITY::SET_ENTITY_DYNAMIC(iVar1, true);
 					func_35(iVar1, 4);
 					Global_2703735.f_3690 = iVar1;
-					ENTITY::SET_ENTITY_HEALTH(iVar1, Global_262145.f_11083, 0);
+					ENTITY::SET_ENTITY_HEALTH(iVar1, Global_262145.f_11083 /* Tunable: ISLANDBACKUPHELIHEALTH */, 0);
 					if (func_34(&(Local_77.f_1.f_3[0 /*2*/]), Local_77.f_1, 4, iVar0, -1, 1, 1, 1))
 					{
 						iVar2 = NETWORK::NET_TO_PED(Local_77.f_1.f_3[0 /*2*/]);
@@ -2129,9 +2129,9 @@ void func_83()//Position - 0x22ED
 	{
 		Var1 = { func_58(PLAYER::PLAYER_ID()) };
 		fLocal_68 = PATHFIND::GET_APPROX_HEIGHT_FOR_POINT(Var1.f_0, Var1.f_1);
-		if (fLocal_68 < Global_262145.f_11084)
+		if (fLocal_68 < Global_262145.f_11084 /* Tunable: ISLANDBACKUPHELIMINHEIGHT */)
 		{
-			fLocal_68 = Global_262145.f_11084;
+			fLocal_68 = Global_262145.f_11084 /* Tunable: ISLANDBACKUPHELIMINHEIGHT */;
 		}
 		func_70(&uLocal_69);
 	}

@@ -10435,7 +10435,7 @@ void func_190()//Position - 0xD818
 									func_288(0);
 									if (Global_78319)
 									{
-										iVar9 = Global_262145.f_171;
+										iVar9 = Global_262145.f_171 /* Tunable: PHONE_FRIEND_CHARGE */;
 										if (!MONEY::NETWORK_CAN_SPEND_MONEY2(iVar9, false, true, false, &iVar8, -1, 0))
 										{
 											iVar9 = (iVar9 - iVar8);
@@ -14123,7 +14123,7 @@ void func_284(struct<67> Param0, var uParam1, var uParam2, var uParam3, var uPar
 	Var0.f_2 = { Param0.f_66 };
 	Var0.f_2.f_33 = iParam19;
 	iVar1 = func_286(Var0.f_1);
-	if ((Global_262145.f_24104 && !Global_262145.f_24105) && !Global_262145.f_24106)
+	if ((Global_262145.f_24104 /* Tunable: BLOCK_NS_TRANS */ && !Global_262145.f_24105 /* Tunable: SC_RUN_TRANS */) && !Global_262145.f_24106 /* Tunable: BG_RUN_TRANS */)
 	{
 		return;
 	}

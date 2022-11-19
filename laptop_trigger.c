@@ -3964,7 +3964,7 @@ int func_164(int iParam0)//Position - 0x4560
 
 int func_165()//Position - 0x45B5
 {
-	return Global_262145.f_15465;
+	return Global_262145.f_15465 /* Tunable: EXEC_VIP2_KICK_GRIEFER_FROM_ORG_TIME */;
 }
 
 int func_166(int iParam0)//Position - 0x45C4
@@ -3982,7 +3982,7 @@ int func_166(int iParam0)//Position - 0x45C4
 
 int func_167()//Position - 0x45E2
 {
-	return Global_262145.f_12838;
+	return Global_262145.f_12838 /* Tunable: GB_NUMBER_OF_BOSSES_IN_SESSION */;
 }
 
 int func_168()//Position - 0x45F1

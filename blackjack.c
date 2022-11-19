@@ -5695,7 +5695,7 @@ void func_90()//Position - 0xA9A3
 			Local_124.f_25 = joaat("QUIT");
 			if (Local_119.f_0 > 1 || Local_118[PLAYER::PLAYER_ID() /*8*/].f_1 != 0)
 			{
-				if (Global_262145.f_26814)
+				if (Global_262145.f_26814 /* Tunable: ENABLE_BLACKJACK_HEAVY */)
 				{
 					STATS::PLAYSTATS_CASINO_BLACKJACK(&Local_124);
 				}
@@ -5725,7 +5725,7 @@ void func_90()//Position - 0xA9A3
 		Local_124.f_19 = func_192();
 		Local_124.f_17 = func_190(&uLocal_120, 0, 0);
 		Local_124.f_7 = func_401();
-		if (Global_262145.f_26814)
+		if (Global_262145.f_26814 /* Tunable: ENABLE_BLACKJACK_HEAVY */)
 		{
 			STATS::PLAYSTATS_CASINO_BLACKJACK(&Local_124);
 		}
@@ -5927,7 +5927,7 @@ void func_90()//Position - 0xA9A3
 				Local_124.f_7 = func_401();
 				Local_125.f_2 = joaat("no membership");
 				Local_124.f_4 = joaat("no membership");
-				if (Global_262145.f_26814)
+				if (Global_262145.f_26814 /* Tunable: ENABLE_BLACKJACK_HEAVY */)
 				{
 					STATS::PLAYSTATS_CASINO_BLACKJACK(&Local_124);
 				}
@@ -5959,7 +5959,7 @@ void func_90()//Position - 0xA9A3
 				Local_124.f_7 = func_401();
 				Local_125.f_2 = joaat("low chips");
 				Local_124.f_4 = joaat("low chips");
-				if (Global_262145.f_26814)
+				if (Global_262145.f_26814 /* Tunable: ENABLE_BLACKJACK_HEAVY */)
 				{
 					STATS::PLAYSTATS_CASINO_BLACKJACK(&Local_124);
 				}
@@ -6024,7 +6024,7 @@ void func_90()//Position - 0xA9A3
 				Local_124.f_19 = func_192();
 				Local_124.f_17 = func_190(&uLocal_120, 0, 0);
 				Local_124.f_7 = func_401();
-				if (Global_262145.f_26814)
+				if (Global_262145.f_26814 /* Tunable: ENABLE_BLACKJACK_HEAVY */)
 				{
 					STATS::PLAYSTATS_CASINO_BLACKJACK(&Local_124);
 				}
@@ -6050,7 +6050,7 @@ void func_90()//Position - 0xA9A3
 				Local_124.f_19 = func_192();
 				Local_124.f_17 = func_190(&uLocal_120, 0, 0);
 				Local_124.f_7 = func_401();
-				if (Global_262145.f_26814)
+				if (Global_262145.f_26814 /* Tunable: ENABLE_BLACKJACK_HEAVY */)
 				{
 					STATS::PLAYSTATS_CASINO_BLACKJACK(&Local_124);
 				}
@@ -6862,7 +6862,7 @@ void func_90()//Position - 0xA9A3
 					{
 						func_375(1);
 						HUD::CLEAR_HELP(true);
-						if (Global_262145.f_26814 && !bVar25)
+						if (Global_262145.f_26814 /* Tunable: ENABLE_BLACKJACK_HEAVY */ && !bVar25)
 						{
 							STATS::PLAYSTATS_CASINO_BLACKJACK(&Local_124);
 						}
@@ -6906,7 +6906,7 @@ void func_90()//Position - 0xA9A3
 						Local_124.f_19 = func_192();
 						Local_124.f_17 = func_190(&uLocal_120, 0, 0);
 						Local_124.f_7 = func_401();
-						if (Global_262145.f_26814 && !bVar25)
+						if (Global_262145.f_26814 /* Tunable: ENABLE_BLACKJACK_HEAVY */ && !bVar25)
 						{
 							STATS::PLAYSTATS_CASINO_BLACKJACK(&Local_124);
 						}
@@ -6922,7 +6922,7 @@ void func_90()//Position - 0xA9A3
 						}
 						return;
 					}
-					if (Global_262145.f_26814 && !bVar25)
+					if (Global_262145.f_26814 /* Tunable: ENABLE_BLACKJACK_HEAVY */ && !bVar25)
 					{
 						STATS::PLAYSTATS_CASINO_BLACKJACK(&Local_124);
 					}
@@ -8564,7 +8564,7 @@ void func_137(struct<67> Param0, var uParam1, var uParam2, var uParam3, var uPar
 	Var0.f_2 = { Param0.f_66 };
 	Var0.f_2.f_33 = iParam19;
 	iVar1 = func_139(Var0.f_1);
-	if ((Global_262145.f_24104 && !Global_262145.f_24105) && !Global_262145.f_24106)
+	if ((Global_262145.f_24104 /* Tunable: BLOCK_NS_TRANS */ && !Global_262145.f_24105 /* Tunable: SC_RUN_TRANS */) && !Global_262145.f_24106 /* Tunable: BG_RUN_TRANS */)
 	{
 		return;
 	}
@@ -11557,7 +11557,7 @@ int func_209(int iParam0)//Position - 0x13E3D
 					Local_124.f_19 = func_192();
 					Local_124.f_17 = func_190(&uLocal_120, 0, 0);
 					Local_124.f_7 = func_401();
-					if (Global_262145.f_26814)
+					if (Global_262145.f_26814 /* Tunable: ENABLE_BLACKJACK_HEAVY */)
 					{
 						STATS::PLAYSTATS_CASINO_BLACKJACK(&Local_124);
 					}
@@ -11593,7 +11593,7 @@ int func_209(int iParam0)//Position - 0x13E3D
 					Local_124.f_19 = func_192();
 					Local_124.f_17 = func_190(&uLocal_120, 0, 0);
 					Local_124.f_7 = func_401();
-					if (Global_262145.f_26814)
+					if (Global_262145.f_26814 /* Tunable: ENABLE_BLACKJACK_HEAVY */)
 					{
 						STATS::PLAYSTATS_CASINO_BLACKJACK(&Local_124);
 					}
@@ -11621,7 +11621,7 @@ int func_209(int iParam0)//Position - 0x13E3D
 			Local_124.f_19 = func_192();
 			Local_124.f_17 = func_190(&uLocal_120, 0, 0);
 			Local_124.f_7 = func_401();
-			if (Global_262145.f_26814)
+			if (Global_262145.f_26814 /* Tunable: ENABLE_BLACKJACK_HEAVY */)
 			{
 				STATS::PLAYSTATS_CASINO_BLACKJACK(&Local_124);
 			}
@@ -17209,7 +17209,7 @@ void func_375(bool bParam0)//Position - 0x1BA26
 	Local_125.f_5 = func_190(&uLocal_122, 0, 0);
 	if (Local_119.f_1 > 2)
 	{
-		if (Global_262145.f_26820)
+		if (Global_262145.f_26820 /* Tunable: ENABLE_BLACKJACK_LIGHT */)
 		{
 			STATS::PLAYSTATS_CASINO_BLACKJACK_LIGHT(&Local_125);
 		}
@@ -21279,7 +21279,7 @@ void func_429()//Position - 0x21B9A
 		Local_124.f_19 = func_192();
 		Local_124.f_17 = func_190(&uLocal_120, 0, 0);
 		Local_124.f_7 = func_401();
-		if (Global_262145.f_26814)
+		if (Global_262145.f_26814 /* Tunable: ENABLE_BLACKJACK_HEAVY */)
 		{
 			STATS::PLAYSTATS_CASINO_BLACKJACK(&Local_124);
 		}

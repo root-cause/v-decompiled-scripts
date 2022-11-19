@@ -13399,7 +13399,7 @@ int func_485()//Position - 0xF559
 	{
 		if (func_499())
 		{
-			func_487(joaat("SERVICE_SPEND_ISLAND_HEIST_REPLAY"), Global_262145.f_29918, &uVar0, 0, 1, 0);
+			func_487(joaat("SERVICE_SPEND_ISLAND_HEIST_REPLAY"), Global_262145.f_29918 /* Tunable: H4_REPLAY_COST */, &uVar0, 0, 1, 0);
 		}
 		else
 		{
@@ -13414,8 +13414,8 @@ int func_485()//Position - 0xF559
 			Var1.f_8 = -1;
 			Var1.f_9 = -1;
 			func_486(&Var1);
-			Var1.f_7 = Global_262145.f_29918;
-			MONEY::NETWORK_SPEND_ISLAND_HEIST(Global_262145.f_29918, 0, 1, &Var1);
+			Var1.f_7 = Global_262145.f_29918 /* Tunable: H4_REPLAY_COST */;
+			MONEY::NETWORK_SPEND_ISLAND_HEIST(Global_262145.f_29918 /* Tunable: H4_REPLAY_COST */, 0, 1, &Var1);
 		}
 		return 1;
 	}
@@ -14054,7 +14054,7 @@ void func_496(struct<67> Param0, var uParam1, var uParam2, var uParam3, var uPar
 	Var0.f_2 = { Param0.f_66 };
 	Var0.f_2.f_33 = iParam19;
 	iVar1 = func_498(Var0.f_1);
-	if ((Global_262145.f_24104 && !Global_262145.f_24105) && !Global_262145.f_24106)
+	if ((Global_262145.f_24104 /* Tunable: BLOCK_NS_TRANS */ && !Global_262145.f_24105 /* Tunable: SC_RUN_TRANS */) && !Global_262145.f_24106 /* Tunable: BG_RUN_TRANS */)
 	{
 		return;
 	}
@@ -14133,7 +14133,7 @@ char* func_504()//Position - 0x10486
 
 var func_505()//Position - 0x10492
 {
-	return Global_262145.f_29918;
+	return Global_262145.f_29918 /* Tunable: H4_REPLAY_COST */;
 }
 
 void func_506()//Position - 0x104A1
@@ -14583,17 +14583,17 @@ void func_518()//Position - 0x10D54
 	}
 	if (func_519())
 	{
-		uVar0[0] = Global_262145.f_29904;
-		uVar0[1] = Global_262145.f_29905;
-		uVar0[2] = Global_262145.f_29906;
-		uVar0[3] = Global_262145.f_29907;
+		uVar0[0] = Global_262145.f_29904 /* Tunable: H4_TARGET_WEIGHTING_TEQUILA_BOOST */;
+		uVar0[1] = Global_262145.f_29905 /* Tunable: H4_TARGET_WEIGHTING_PEARL_NECKLACE_BOOST */;
+		uVar0[2] = Global_262145.f_29906 /* Tunable: H4_TARGET_WEIGHTING_BEARER_BONDS_BOOST */;
+		uVar0[3] = Global_262145.f_29907 /* Tunable: H4_TARGET_WEIGHTING_PINK_DIAMOND_BOOST */;
 	}
 	else
 	{
-		uVar0[0] = Global_262145.f_29899;
-		uVar0[1] = Global_262145.f_29900;
-		uVar0[2] = Global_262145.f_29901;
-		uVar0[3] = Global_262145.f_29902;
+		uVar0[0] = Global_262145.f_29899 /* Tunable: H4_TARGET_WEIGHTING_TEQUILA */;
+		uVar0[1] = Global_262145.f_29900 /* Tunable: H4_TARGET_WEIGHTING_PEARL_NECKLACE */;
+		uVar0[2] = Global_262145.f_29901 /* Tunable: H4_TARGET_WEIGHTING_BEARER_BONDS */;
+		uVar0[3] = Global_262145.f_29902 /* Tunable: H4_TARGET_WEIGHTING_PINK_DIAMOND */;
 	}
 	iVar4 = 0;
 	while (iVar4 < 4)
@@ -14617,7 +14617,7 @@ void func_518()//Position - 0x10D54
 
 int func_519()//Position - 0x10E67
 {
-	if (Global_262145.f_29909 == -1)
+	if (Global_262145.f_29909 /* Tunable: H4_TARGET_WEIGHTING_POSIX_TIME */ == -1)
 	{
 		return 0;
 	}
@@ -17671,7 +17671,7 @@ void func_599(var uParam0)//Position - 0x146B0
 		case 59:
 			if (func_499())
 			{
-				func_487(joaat("SERVICE_SPEND_ISLAND_HEIST_SUPPRESSORS"), Global_262145.f_29917, &uVar1, 0, 1, 0);
+				func_487(joaat("SERVICE_SPEND_ISLAND_HEIST_SUPPRESSORS"), Global_262145.f_29917 /* Tunable: H4_SUPPRESSORS_COST */, &uVar1, 0, 1, 0);
 			}
 			else
 			{
@@ -17686,8 +17686,8 @@ void func_599(var uParam0)//Position - 0x146B0
 				Var4.f_8 = -1;
 				Var4.f_9 = -1;
 				func_486(&Var4);
-				Var4.f_6 = Global_262145.f_29917;
-				MONEY::NETWORK_SPEND_ISLAND_HEIST(Global_262145.f_29917, 0, 1, &Var4);
+				Var4.f_6 = Global_262145.f_29917 /* Tunable: H4_SUPPRESSORS_COST */;
+				MONEY::NETWORK_SPEND_ISLAND_HEIST(Global_262145.f_29917 /* Tunable: H4_SUPPRESSORS_COST */, 0, 1, &Var4);
 			}
 			func_601(1);
 			func_600(uParam0->f_711, 59, 1);
@@ -17863,22 +17863,22 @@ int func_608(int iParam0)//Position - 0x14B41
 	switch (iParam0)
 	{
 		case 99:
-			return Global_262145.f_29911;
+			return Global_262145.f_29911 /* Tunable: H4_SUPPORTCREW_AIRSTRIKE_COST */;
 		
 		case 100:
-			return Global_262145.f_29912;
+			return Global_262145.f_29912 /* Tunable: H4_SUPPORTCREW_HEAVY_WEAPON_COST */;
 		
 		case 101:
-			return Global_262145.f_29913;
+			return Global_262145.f_29913 /* Tunable: H4_SUPPORTCREW_SNIPER_COST */;
 		
 		case 102:
-			return Global_262145.f_29914;
+			return Global_262145.f_29914 /* Tunable: H4_SUPPORTCREW_AIR_SUPPORT_COST */;
 		
 		case 103:
-			return Global_262145.f_29915;
+			return Global_262145.f_29915 /* Tunable: H4_SUPPORTCREW_DRONE_COST */;
 		
 		case 104:
-			return Global_262145.f_29916;
+			return Global_262145.f_29916 /* Tunable: H4_SUPPORTCREW_WEAPON_STASH_COST */;
 		
 		default:
 	}
@@ -18087,7 +18087,7 @@ void func_621(var uParam0)//Position - 0x14EE5
 	{
 		return;
 	}
-	if (!MONEY::NETWORK_CAN_SPEND_MONEY(Global_262145.f_29917, false, true, false, -1, 0))
+	if (!MONEY::NETWORK_CAN_SPEND_MONEY(Global_262145.f_29917 /* Tunable: H4_SUPPRESSORS_COST */, false, true, false, -1, 0))
 	{
 		return;
 	}
@@ -18691,52 +18691,52 @@ int func_650(int iParam0)//Position - 0x15937
 	switch (iParam0)
 	{
 		case 180:
-			return Global_262145.f_18680;
+			return Global_262145.f_18680 /* Tunable: BIKER_GUNRUNNING_MIN_PLAYERS */;
 		
 		case 183:
-			return Global_262145.f_18688;
+			return Global_262145.f_18688 /* Tunable: BIKER_POW_MIN_PLAYERS */;
 		
 		case 185:
-			return Global_262145.f_18697;
+			return Global_262145.f_18697 /* Tunable: BIKER_GUNS_FOR_HIRE_MIN_PLAYERS */;
 		
 		case 182:
-			return Global_262145.f_18708;
+			return Global_262145.f_18708 /* Tunable: BIKER_BY_THE_POUND_MIN_PLAYERS */;
 		
 		case 186:
-			return Global_262145.f_18717;
+			return Global_262145.f_18717 /* Tunable: BIKER_WEAPON_OF_CHOICE_MIN_PLAYERS */;
 		
 		case 195:
-			return Global_262145.f_18735;
+			return Global_262145.f_18735 /* Tunable: BIKER_NINE_TENTHS_MIN_PLAYERS */;
 		
 		case 198:
-			return Global_262145.f_18745;
+			return Global_262145.f_18745 /* Tunable: BIKER_CRACKED_MIN_PLAYERS */;
 		
 		case 197:
-			return Global_262145.f_18757;
+			return Global_262145.f_18757 /* Tunable: BIKER_JAILBREAK_MIN_PLAYERS */;
 		
 		case 207:
-			return Global_262145.f_18765;
+			return Global_262145.f_18765 /* Tunable: BIKER_FRAGILE_GOODS_MIN_PLAYERS */;
 		
 		case 209:
-			return Global_262145.f_18778;
+			return Global_262145.f_18778 /* Tunable: BIKER_OUTRIDER_MIN_PLAYERS */;
 		
 		case 208:
-			return Global_262145.f_18786;
+			return Global_262145.f_18786 /* Tunable: BIKER_TORCHED_MIN_PLAYERS */;
 		
 		case 201:
-			return Global_262145.f_18819;
+			return Global_262145.f_18819 /* Tunable: BIKER_STAND_YOUR_GROUND_MIN_PLAYERS */;
 		
 		case 211:
-			return Global_262145.f_18887;
+			return Global_262145.f_18887 /* Tunable: BIKER_ON_THE_RUN_MIN_PLAYERS */;
 		
 		case 193:
-			return Global_262145.f_18910;
+			return Global_262145.f_18910 /* Tunable: BIKER_HIT_AND_RIDE_MIN_PLAYERS */;
 		
 		case 205:
-			return Global_262145.f_18928;
+			return Global_262145.f_18928 /* Tunable: BIKER_MISCHIEF_MIN_PLAYERS */;
 		
 		case 189:
-			return Global_262145.f_18893;
+			return Global_262145.f_18893 /* Tunable: BIKER_RACE_MIN_PLAYERS */;
 		
 		case 216:
 			return 2;
@@ -18774,7 +18774,7 @@ bool func_653()//Position - 0x15A8C
 
 bool func_654()//Position - 0x15A9B
 {
-	return Global_262145.f_15734;
+	return Global_262145.f_15734 /* Tunable: EXEC_CONTRABAND_DISABLE */;
 }
 
 int func_655(int iParam0)//Position - 0x15AAA
@@ -19093,61 +19093,61 @@ int func_674(int iParam0)//Position - 0x15F4A
 	switch (iParam0)
 	{
 		case 162:
-			return Global_262145.f_13038;
+			return Global_262145.f_13038 /* Tunable: GB_POINTTOPOINT_INSTANCES_PERMITTED */;
 		
 		case 155:
-			return Global_262145.f_13063;
+			return Global_262145.f_13063 /* Tunable: GB_PROTECTIONRACKET_INSTANCES_PERMITTED */;
 		
 		case 153:
-			return Global_262145.f_13027;
+			return Global_262145.f_13027 /* Tunable: GB_MOSTWANTED_INSTANCES_PERMITTED */;
 		
 		case 163:
-			return Global_262145.f_13003;
+			return Global_262145.f_13003 /* Tunable: GB_CARJACKING_INSTANCES_PERMITTED */;
 		
 		case 160:
-			return Global_262145.f_13016;
+			return Global_262145.f_13016 /* Tunable: GB_FINDERS_KEEPERS_INSTANCES_PERMITTED */;
 		
 		case 154:
-			return Global_262145.f_13073;
+			return Global_262145.f_13073 /* Tunable: GB_SMASHANDGRAB_INSTANCES_PERMITTED */;
 		
 		case 169:
 			return 1;
 		
 		case 171:
-			return Global_262145.f_15561;
+			return Global_262145.f_15561 /* Tunable: EXEC_CASHING_INSTANCES_PERMITTED */;
 		
 		case 172:
-			return Global_262145.f_15580;
+			return Global_262145.f_15580 /* Tunable: EXEC_SALVAGE_INSTANCES_PERMITTED */;
 		
 		case 148:
-			return Global_262145.f_18794;
+			return Global_262145.f_18794 /* Tunable: BIKER_DEATHMATCH_MAX_INSTANCES */;
 		
 		case 179:
-			return Global_262145.f_18802;
+			return Global_262145.f_18802 /* Tunable: BIKER_JOUST_MAX_INSTANCES */;
 		
 		case 201:
-			return Global_262145.f_18816;
+			return Global_262145.f_18816 /* Tunable: BIKER_STAND_YOUR_GROUND_MAX_INSTANCES */;
 		
 		case 200:
-			return Global_262145.f_18856;
+			return Global_262145.f_18856 /* Tunable: BIKER_CAGED_IN_MAX_INSTANCES */;
 		
 		case 211:
-			return Global_262145.f_18885;
+			return Global_262145.f_18885 /* Tunable: BIKER_ON_THE_RUN_MAX_INSTANCES */;
 		
 		case 194:
-			return Global_262145.f_18897;
+			return Global_262145.f_18897 /* Tunable: BIKER_RIPPIN_MAX_INSTANCES */;
 		
 		case 193:
-			return Global_262145.f_18908;
+			return Global_262145.f_18908 /* Tunable: BIKER_HIT_AND_RIDE_MAX_INSTANCES */;
 		
 		case 210:
-			return Global_262145.f_18920;
+			return Global_262145.f_18920 /* Tunable: BIKER_WHEELIE_MAX_INSTANCES */;
 		
 		case 205:
-			return Global_262145.f_18926;
+			return Global_262145.f_18926 /* Tunable: BIKER_MISCHIEF_MAX_INSTANCES */;
 		
 		case 199:
-			return Global_262145.f_18939;
+			return Global_262145.f_18939 /* Tunable: BIKER_SEARCH_AND_DESTROY_MAX_INSTANCES */;
 		
 		case 249:
 			return 1;
@@ -20502,20 +20502,20 @@ int func_703(int iParam0, int iParam1)//Position - 0x1730B
 		}
 		if (func_707(iParam0))
 		{
-			if (iVar0 > Global_262145.f_18431)
+			if (iVar0 > Global_262145.f_18431 /* Tunable: BIKER_RESUPPLY_MAX_VEHICLES */)
 			{
-				iVar0 = Global_262145.f_18431;
+				iVar0 = Global_262145.f_18431 /* Tunable: BIKER_RESUPPLY_MAX_VEHICLES */;
 			}
 		}
 		else
 		{
-			if (iVar0 < Global_262145.f_18430)
+			if (iVar0 < Global_262145.f_18430 /* Tunable: BIKER_RESUPPLY_MIN_PACKAGES */)
 			{
-				iVar0 = Global_262145.f_18430;
+				iVar0 = Global_262145.f_18430 /* Tunable: BIKER_RESUPPLY_MIN_PACKAGES */;
 			}
-			if (iVar0 > Global_262145.f_18429)
+			if (iVar0 > Global_262145.f_18429 /* Tunable: BIKER_RESUPPLY_MAX_PACKAGES */)
 			{
-				iVar0 = Global_262145.f_18429;
+				iVar0 = Global_262145.f_18429 /* Tunable: BIKER_RESUPPLY_MAX_PACKAGES */;
 			}
 		}
 	}
@@ -20527,10 +20527,10 @@ int func_704(int iParam0)//Position - 0x173A4
 	switch (iParam0)
 	{
 		case 5:
-			return Global_262145.f_18468;
+			return Global_262145.f_18468 /* Tunable: BIKER_RESUPPLY_MEET_CONTACT_MIN_PACKAGES */;
 		
 		case 10:
-			return Global_262145.f_18493;
+			return Global_262145.f_18493 /* Tunable: BIKER_RESUPPLY_BANK_MIN_PACKAGES */;
 		
 		default:
 	}
@@ -20541,7 +20541,7 @@ int func_705(int iParam0, int iParam1)//Position - 0x173D4
 {
 	if (func_707(iParam0))
 	{
-		if (iParam1 >= Global_262145.f_18432)
+		if (iParam1 >= Global_262145.f_18432 /* Tunable: BIKER_RESUPPLY_SECOND_VEHICLE_THRESHOLD */)
 		{
 			return 2;
 		}
@@ -20550,10 +20550,10 @@ int func_705(int iParam0, int iParam1)//Position - 0x173D4
 	switch (iParam0)
 	{
 		case 5:
-			return Global_262145.f_18469;
+			return Global_262145.f_18469 /* Tunable: BIKER_RESUPPLY_MEET_CONTACT_MAX_PACKAGES */;
 		
 		case 10:
-			return Global_262145.f_18494;
+			return Global_262145.f_18494 /* Tunable: BIKER_RESUPPLY_BANK_MAX_PACKAGES */;
 		
 		default:
 	}
@@ -29165,22 +29165,22 @@ int func_891(int iParam0)//Position - 0x1F051
 	switch (iParam0)
 	{
 		case 0:
-			return Global_262145.f_29970;
+			return Global_262145.f_29970 /* Tunable: IH_PRIMARY_TARGET_VALUE_TEQUILA */;
 		
 		case 1:
-			return Global_262145.f_29971;
+			return Global_262145.f_29971 /* Tunable: IH_PRIMARY_TARGET_VALUE_PEARL_NECKLACE */;
 		
 		case 2:
-			return Global_262145.f_29972;
+			return Global_262145.f_29972 /* Tunable: IH_PRIMARY_TARGET_VALUE_BEARER_BONDS */;
 		
 		case 3:
-			return Global_262145.f_29973;
+			return Global_262145.f_29973 /* Tunable: IH_PRIMARY_TARGET_VALUE_PINK_DIAMOND */;
 		
 		case 4:
-			return Global_262145.f_29974;
+			return Global_262145.f_29974 /* Tunable: IH_PRIMARY_TARGET_VALUE_MADRAZO_FILES */;
 		
 		case 5:
-			return Global_262145.f_29975;
+			return Global_262145.f_29975 /* Tunable: IH_PRIMARY_TARGET_VALUE_SAPPHIRE_PANTHER_STATUE */;
 		
 		default:
 	}

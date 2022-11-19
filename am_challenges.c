@@ -2077,133 +2077,133 @@ int func_17(bool bParam0, bool bParam1)//Position - 0x7DB
 	switch (Local_150.f_3)
 	{
 		case 0:
-			if (fVar0 >= Global_262145.f_11411)
+			if (fVar0 >= Global_262145.f_11411 /* Tunable: CHALLENGE_LONGEST_JUMP */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 2:
-			if (fVar0 >= Global_262145.f_11412)
+			if (fVar0 >= Global_262145.f_11412 /* Tunable: CHALLENGE_HIGHEST_SPEED */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 3:
-			if (fVar0 >= Global_262145.f_11413)
+			if (fVar0 >= Global_262145.f_11413 /* Tunable: CHALLENGE_LONGEST_STOPPIE */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 5:
-			if (fVar0 >= Global_262145.f_11414)
+			if (fVar0 >= Global_262145.f_11414 /* Tunable: CHALLENGE_LONGEST_NO_CRASH */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 4:
-			if (fVar0 >= Global_262145.f_11415)
+			if (fVar0 >= Global_262145.f_11415 /* Tunable: CHALLENGE_LONGEST_WHEELIE */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 1:
-			if (fVar0 >= Global_262145.f_11416)
+			if (fVar0 >= Global_262145.f_11416 /* Tunable: CHALLENGE_LONGEST_SKYDIVE */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 6:
-			if (fVar0 <= Global_262145.f_11417 && fVar0 != 0f)
+			if (fVar0 <= Global_262145.f_11417 /* Tunable: CHALLENGE_LOWEST_PARACHUTE */ && fVar0 != 0f)
 			{
 				return 1;
 			}
 			break;
 		
 		case 9:
-			if (fVar0 >= Global_262145.f_11418)
+			if (fVar0 >= Global_262145.f_11418 /* Tunable: CHALLENGE_REVERSE_DRIVING */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 10:
-			if (fVar0 >= Global_262145.f_11419)
+			if (fVar0 >= Global_262145.f_11419 /* Tunable: CHALLENGE_LONGEST_FALL */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 18:
-			if (fVar0 >= Global_262145.f_11420)
+			if (fVar0 >= Global_262145.f_11420 /* Tunable: CHALLENGE_PVP_LONGEST_SNIPE */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 13:
-			if (fVar0 >= Global_262145.f_11421)
+			if (fVar0 >= Global_262145.f_11421 /* Tunable: CHALLENGE_LONGEST_BAIL */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 7:
-			if (fVar0 >= IntToFloat(Global_262145.f_11422))
+			if (fVar0 >= IntToFloat(Global_262145.f_11422 /* Tunable: CHALLENGE_MOST_VEHICLES_STOLEN */))
 			{
 				return 1;
 			}
 			break;
 		
 		case 8:
-			if (fVar0 >= IntToFloat(Global_262145.f_11423))
+			if (fVar0 >= IntToFloat(Global_262145.f_11423 /* Tunable: CHALLENGE_MOST_NEAR_MISSES */))
 			{
 				return 1;
 			}
 			break;
 		
 		case 11:
-			if (fVar0 >= Global_262145.f_11535)
+			if (fVar0 >= Global_262145.f_11535 /* Tunable: CHALLENGE_FURTHEST_DISTANCE_LOW_FLYING */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 12:
-			if (fVar0 >= Global_262145.f_11536)
+			if (fVar0 >= Global_262145.f_11536 /* Tunable: CHALLENGE_FURTHEST_DISTANCE_LOW_FLYING_INVERTED */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 14:
-			if (fVar0 >= IntToFloat(Global_262145.f_11426))
+			if (fVar0 >= IntToFloat(Global_262145.f_11426 /* Tunable: CHALLENGE_MOST_BRIDGES */))
 			{
 				return 1;
 			}
 			break;
 		
 		case 15:
-			if (fVar0 >= IntToFloat(Global_262145.f_11428))
+			if (fVar0 >= IntToFloat(Global_262145.f_11428 /* Tunable: CHALLENGE_PVP_HEADSHOTS */))
 			{
 				return 1;
 			}
 			break;
 		
 		case 16:
-			if (fVar0 >= IntToFloat(Global_262145.f_11429))
+			if (fVar0 >= IntToFloat(Global_262145.f_11429 /* Tunable: CHALLENGE_PVP_DRIVEBY */))
 			{
 				return 1;
 			}
 			break;
 		
 		case 17:
-			if (fVar0 >= IntToFloat(Global_262145.f_11430))
+			if (fVar0 >= IntToFloat(Global_262145.f_11430 /* Tunable: CHALLENGE_PVP_MELEE */))
 			{
 				return 1;
 			}
@@ -2413,61 +2413,61 @@ int func_28(bool bParam0)//Position - 0xDC7
 	switch (Local_150.f_3)
 	{
 		case 0:
-			return Global_262145.f_10723;
+			return Global_262145.f_10723 /* Tunable: CHALLENGETIME_LONGEST_JUMP */;
 		
 		case 8:
-			return Global_262145.f_10725;
+			return Global_262145.f_10725 /* Tunable: CHALLENGETIME_MOST_NEAR_MISSES */;
 		
 		case 3:
-			return Global_262145.f_10726;
+			return Global_262145.f_10726 /* Tunable: CHALLENGETIME_LONGEST_STOPPIE */;
 		
 		case 1:
-			return Global_262145.f_11521;
+			return Global_262145.f_11521 /* Tunable: CHALLENGE_TIME_LIMIT_LONGEST_FREEFALL */;
 		
 		case 6:
-			return Global_262145.f_11522;
+			return Global_262145.f_11522 /* Tunable: CHALLENGE_TIME_LIMIT_LOWEST_PARACHUTE_DEPLOY */;
 		
 		case 10:
-			return Global_262145.f_11524;
+			return Global_262145.f_11524 /* Tunable: CHALLENGE_TIME_LIMIT_LONGEST_FALL_WITHOUT_DYING */;
 		
 		case 11:
-			return Global_262145.f_11526;
+			return Global_262145.f_11526 /* Tunable: CHALLENGE_TIME_LIMIT_LONGEST_TIME_LOW_FLYING_UNDER_20M */;
 		
 		case 12:
-			return Global_262145.f_11527;
+			return Global_262145.f_11527 /* Tunable: CHALLENGE_TIME_LIMIT_LONGEST_TIME_LOW_FLYING_INVERTED_UNDER_100M */;
 		
 		case 15:
-			return Global_262145.f_11531;
+			return Global_262145.f_11531 /* Tunable: CHALLENGE_TIME_LIMIT_PVP_HIGHEST_NO_OF_PLAYER_HEADSHOTS */;
 		
 		case 16:
-			return Global_262145.f_11532;
+			return Global_262145.f_11532 /* Tunable: CHALLENGE_TIME_LIMIT_PVP_HIGHEST_NO_OF_PLAYER_DRIVE_BY_KILLS */;
 		
 		case 17:
-			return Global_262145.f_11533;
+			return Global_262145.f_11533 /* Tunable: CHALLENGE_TIME_LIMIT_PVP_HIGHEST_NO_OF_PLAYER_MELEE_KILLS */;
 		
 		case 18:
-			return Global_262145.f_11534;
+			return Global_262145.f_11534 /* Tunable: CHALLENGE_TIME_LIMIT_PVP_SNIPER_PLAYER_KILLS */;
 		
 		case 13:
-			return Global_262145.f_11525;
+			return Global_262145.f_11525 /* Tunable: CHALLENGE_TIME_LIMIT_LONGEST_VEHICLE_BAIL_WITHOUT_DYING */;
 		
 		case 14:
-			return Global_262145.f_11528;
+			return Global_262145.f_11528 /* Tunable: CHALLENGE_TIME_LIMIT_BRIDGES_FLOWN_UNDER */;
 		
 		case 2:
-			return Global_262145.f_10728;
+			return Global_262145.f_10728 /* Tunable: CHALLENGETIME_HIGHEST_SPEED */;
 		
 		case 7:
-			return Global_262145.f_11523;
+			return Global_262145.f_11523 /* Tunable: CHALLENGE_TIME_LIMIT_HIGHEST_VEHICLES_STOLEN */;
 		
 		case 9:
-			return Global_262145.f_11529;
+			return Global_262145.f_11529 /* Tunable: CHALLENGE_TIME_LIMIT_REVERSE_DRIVING_WITHOUT_CRASHING */;
 		
 		case 5:
-			return Global_262145.f_10729;
+			return Global_262145.f_10729 /* Tunable: CHALLENGETIME_LONGEST_NO_CRASH */;
 		
 		case 4:
-			return Global_262145.f_10727;
+			return Global_262145.f_10727 /* Tunable: CHALLENGETIME_LONGEST_WHEELIE */;
 		
 		default:
 	}
@@ -2476,7 +2476,7 @@ int func_28(bool bParam0)//Position - 0xDC7
 
 int func_29()//Position - 0xF22
 {
-	return Global_262145.f_11491;
+	return Global_262145.f_11491 /* Tunable: CHALLENGE_EVENT_START_COUNTDOWN_TIME */;
 }
 
 void func_30(int iParam0)//Position - 0xF31
@@ -5485,25 +5485,25 @@ int func_129()//Position - 0x407F
 	int iVar2;
 	float fVar3;
 	
-	iVar0[0] = Global_262145.f_11820;
-	iVar0[1] = Global_262145.f_11493;
-	iVar0[2] = Global_262145.f_11824;
-	iVar0[3] = Global_262145.f_11822;
-	iVar0[4] = Global_262145.f_11823;
-	iVar0[5] = Global_262145.f_11825;
-	iVar0[6] = Global_262145.f_11494;
-	iVar0[7] = Global_262145.f_11495;
-	iVar0[8] = Global_262145.f_11821;
-	iVar0[9] = Global_262145.f_11501;
-	iVar0[10] = Global_262145.f_11496;
-	iVar0[11] = Global_262145.f_11498;
-	iVar0[12] = Global_262145.f_11499;
-	iVar0[13] = Global_262145.f_11497;
-	iVar0[14] = Global_262145.f_11500;
-	iVar0[15] = Global_262145.f_11503;
-	iVar0[16] = Global_262145.f_11504;
-	iVar0[17] = Global_262145.f_11505;
-	iVar0[18] = Global_262145.f_11506;
+	iVar0[0] = Global_262145.f_11820 /* Tunable: CHALLENGE_AMBIENT_WEIGHTING_LONGEST_JUMP */;
+	iVar0[1] = Global_262145.f_11493 /* Tunable: CHALLENGE_AMBIENT_WEIGHTING_LONGEST_FREEFALL */;
+	iVar0[2] = Global_262145.f_11824 /* Tunable: CHALLENGE_AMBIENT_WEIGHTING_HIGHEST_SPEED */;
+	iVar0[3] = Global_262145.f_11822 /* Tunable: CHALLENGE_AMBIENT_WEIGHTING_LONGEST_STOPPIE */;
+	iVar0[4] = Global_262145.f_11823 /* Tunable: CHALLENGE_AMBIENT_WEIGHTING_LONGEST_WHEELIE */;
+	iVar0[5] = Global_262145.f_11825 /* Tunable: CHALLENGE_AMBIENT_WEIGHTING_LONGEST_NO_CRASH */;
+	iVar0[6] = Global_262145.f_11494 /* Tunable: CHALLENGE_AMBIENT_WEIGHTING_LOWEST_PARACHUTE_DEPLOY */;
+	iVar0[7] = Global_262145.f_11495 /* Tunable: CHALLENGE_AMBIENT_WEIGHTING_HIGHEST_VEHICLES_STOLEN */;
+	iVar0[8] = Global_262145.f_11821 /* Tunable: CHALLENGE_AMBIENT_WEIGHTING_MOST_NEAR_MISSES */;
+	iVar0[9] = Global_262145.f_11501 /* Tunable: CHALLENGE_AMBIENT_WEIGHTING_REVERSE_DRIVING_WITHOUT_CRASHING */;
+	iVar0[10] = Global_262145.f_11496 /* Tunable: CHALLENGE_AMBIENT_WEIGHTING_LONGEST_FALL_WITHOUT_DYING */;
+	iVar0[11] = Global_262145.f_11498 /* Tunable: CHALLENGE_AMBIENT_WEIGHTING_LONGEST_TIME_LOW_FLYING_UNDER_20M */;
+	iVar0[12] = Global_262145.f_11499 /* Tunable: CHALLENGE_AMBIENT_WEIGHTING_LONGEST_TIME_LOW_FLYING_INVERTED_UNDER_100M */;
+	iVar0[13] = Global_262145.f_11497 /* Tunable: CHALLENGE_AMBIENT_WEIGHTING_LONGEST_VEHICLE_BAIL_WITHOUT_DYING */;
+	iVar0[14] = Global_262145.f_11500 /* Tunable: CHALLENGE_AMBIENT_WEIGHTING_BRIDGES_FLOWN_UNDER */;
+	iVar0[15] = Global_262145.f_11503 /* Tunable: CHALLENGE_AMBIENT_WEIGHTING_PVP_HIGHEST_NO_OF_PLAYER_HEADSHOTS */;
+	iVar0[16] = Global_262145.f_11504 /* Tunable: CHALLENGE_AMBIENT_WEIGHTING_PVP_HIGHEST_NO_OF_PLAYER_DRIVE_BY_KILLS */;
+	iVar0[17] = Global_262145.f_11505 /* Tunable: CHALLENGE_AMBIENT_WEIGHTING_PVP_HIGHEST_NO_OF_PLAYER_MELEE_KILLS */;
+	iVar0[18] = Global_262145.f_11506 /* Tunable: CHALLENGE_AMBIENT_WEIGHTING_PVP_SNIPER_PLAYER_KILLS */;
 	fVar1 = 0f;
 	iVar2 = 0;
 	while (iVar2 < iVar0)
@@ -5551,7 +5551,7 @@ int func_130(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x4
 	iVar0 = 0;
 	while (iVar0 < 21)
 	{
-		if (iVar0 < Global_262145.f_8576)
+		if (iVar0 < Global_262145.f_8576 /* Tunable: NUMBER_OF_SCRIPTS_IN_LAUNCH_HISTORY_LIST */)
 		{
 			if (Global_2779753.f_136[iVar0 /*2*/] == iVar1 && Global_2779753.f_136[iVar0 /*2*/].f_1 == func_127(iParam0, iParam1, iParam2, iParam3))
 			{
@@ -5616,61 +5616,61 @@ int func_132(int iParam0)//Position - 0x4320
 	switch (iParam0)
 	{
 		case 0:
-			return Global_262145.f_10716;
+			return Global_262145.f_10716 /* Tunable: DISABLE_LONGEST_JUMP */;
 		
 		case 1:
-			return Global_262145.f_11507;
+			return Global_262145.f_11507 /* Tunable: CHALLENGE_DISABLE_LONGEST_FREEFALL */;
 		
 		case 6:
-			return Global_262145.f_11508;
+			return Global_262145.f_11508 /* Tunable: CHALLENGE_DISABLE_LOWEST_PARACHUTE_DEPLOY */;
 		
 		case 7:
-			return Global_262145.f_11509;
+			return Global_262145.f_11509 /* Tunable: CHALLENGE_DISABLE_HIGHEST_VEHICLES_STOLEN */;
 		
 		case 8:
-			return Global_262145.f_10717;
+			return Global_262145.f_10717 /* Tunable: DISABLE_MOST_NEAR_MISSES */;
 		
 		case 3:
-			return Global_262145.f_10718;
+			return Global_262145.f_10718 /* Tunable: DISABLE_LONGEST_STOPPIE */;
 		
 		case 4:
-			return Global_262145.f_10719;
+			return Global_262145.f_10719 /* Tunable: DISABLE_LONGEST_WHEELIE */;
 		
 		case 2:
-			return Global_262145.f_10720;
+			return Global_262145.f_10720 /* Tunable: DISABLE_HIGHEST_SPEED */;
 		
 		case 5:
-			return Global_262145.f_10722;
+			return Global_262145.f_10722 /* Tunable: DISABLE_LONGEST_NO_CRASH */;
 		
 		case 9:
-			return Global_262145.f_11515;
+			return Global_262145.f_11515 /* Tunable: CHALLENGE_DISABLE_REVERSE_DRIVING_WITHOUT_CRASHING */;
 		
 		case 10:
-			return Global_262145.f_11510;
+			return Global_262145.f_11510 /* Tunable: CHALLENGE_DISABLE_LONGEST_FALL_WITHOUT_DYING */;
 		
 		case 11:
-			return Global_262145.f_11512;
+			return Global_262145.f_11512 /* Tunable: CHALLENGE_DISABLE_LONGEST_TIME_LOW_FLYING_UNDER_20M */;
 		
 		case 12:
-			return Global_262145.f_11513;
+			return Global_262145.f_11513 /* Tunable: CHALLENGE_DISABLE_LONGEST_TIME_LOW_FLYING_INVERTED_UNDER_100M */;
 		
 		case 15:
-			return Global_262145.f_11517;
+			return Global_262145.f_11517 /* Tunable: CHALLENGE_DISABLE_PVP_HIGHEST_NO_OF_PLAYER_HEADSHOTS */;
 		
 		case 16:
-			return Global_262145.f_11518;
+			return Global_262145.f_11518 /* Tunable: CHALLENGE_DISABLE_PVP_HIGHEST_NO_OF_PLAYER_DRIVE_BY_KILLS */;
 		
 		case 17:
-			return Global_262145.f_11519;
+			return Global_262145.f_11519 /* Tunable: CHALLENGE_DISABLE_PVP_HIGHEST_NO_OF_PLAYER_MELEE_KILLS */;
 		
 		case 18:
-			return Global_262145.f_11520;
+			return Global_262145.f_11520 /* Tunable: CHALLENGE_DISABLE_PVP_SNIPER_PLAYER_KILLS */;
 		
 		case 13:
-			return Global_262145.f_11511;
+			return Global_262145.f_11511 /* Tunable: CHALLENGE_DISABLE_LONGEST_VEHICLE_BAIL_WITHOUT_DYING */;
 		
 		case 14:
-			return Global_262145.f_11514;
+			return Global_262145.f_11514 /* Tunable: CHALLENGE_DISABLE_BRIDGES_FLOWN_UNDER */;
 		
 		default:
 	}
@@ -6751,7 +6751,7 @@ int func_168(int iParam0)//Position - 0x5A71
 		}
 		if (func_47(&(Global_1836844.f_13)))
 		{
-			if (!func_1(&(Global_1836844.f_13), Global_262145.f_14, 0))
+			if (!func_1(&(Global_1836844.f_13), Global_262145.f_14 /* Tunable: FM_EVENT_PASSIVE_COOL_DOWN */, 0))
 			{
 				return 1;
 			}
@@ -6861,7 +6861,7 @@ void func_177()//Position - 0x5C34
 		if (iVar0 > 0)
 		{
 			Local_1517.f_6 = (Local_1517.f_6 + iVar0);
-			if (!Global_262145.f_11972)
+			if (!Global_262145.f_11972 /* Tunable: CHALLENGE_DISABLE_SHARE_CASH */)
 			{
 				func_245(10, Local_1517.f_6);
 			}
@@ -7097,7 +7097,7 @@ int func_190(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, 
 		}
 		iVar1 = SYSTEM::ROUND((IntToFloat(iParam3) * (IntToFloat(iParam4) + fVar0)));
 		iVar1 = func_219(iVar1);
-		fVar3 = (SYSTEM::TO_FLOAT(iVar1) * Global_262145.f_1);
+		fVar3 = (SYSTEM::TO_FLOAT(iVar1) * Global_262145.f_1 /* Tunable: XP_MULTIPLIER */);
 		iVar1 = SYSTEM::ROUND(fVar3);
 		if (bParam10)
 		{
@@ -7410,7 +7410,7 @@ void func_200(int iParam0, int iParam1, int iParam2)//Position - 0x65C0
 		{
 			iParam0 = 1787576850;
 		}
-		if (Global_262145.f_10069 == 0 && iParam1 != joaat("XPCATEGORY_KEYS_DEBUG"))
+		if (Global_262145.f_10069 /* Tunable: TURN_OFF_RP_REDUCED_BLOCKER */ == 0 && iParam1 != joaat("XPCATEGORY_KEYS_DEBUG"))
 		{
 			if (iParam2 == 0)
 			{
@@ -7425,7 +7425,7 @@ void func_200(int iParam0, int iParam1, int iParam2)//Position - 0x65C0
 				}
 			}
 		}
-		if (Global_262145.f_10068 == 0)
+		if (Global_262145.f_10068 /* Tunable: TURN_OFF_RP_RESET_TELEMETRY */ == 0)
 		{
 			if (iParam0 == 0)
 			{
@@ -7436,7 +7436,7 @@ void func_200(int iParam0, int iParam1, int iParam2)//Position - 0x65C0
 				}
 			}
 		}
-		if (Global_262145.f_10068 == 0)
+		if (Global_262145.f_10068 /* Tunable: TURN_OFF_RP_RESET_TELEMETRY */ == 0)
 		{
 			if (iParam0 < 0)
 			{
@@ -8310,7 +8310,7 @@ void func_214(int iParam0)//Position - 0x77E8
 	}
 	if (bVar3)
 	{
-		iVar6 = SYSTEM::ROUND((func_215(*iParam0, 100) * (10f * Global_262145.f_4227)));
+		iVar6 = SYSTEM::ROUND((func_215(*iParam0, 100) * (10f * Global_262145.f_4227 /* Tunable: XP_TUNABLE_ALL_RP_WHILE_PLAYING_IN_A_CREW */)));
 	}
 	if (iVar2 > 4)
 	{
@@ -8318,7 +8318,7 @@ void func_214(int iParam0)//Position - 0x77E8
 	}
 	if (iVar2 >= 2)
 	{
-		iVar7 = SYSTEM::ROUND((func_215(*iParam0, 100) * (20f * Global_262145.f_4220)));
+		iVar7 = SYSTEM::ROUND((func_215(*iParam0, 100) * (20f * Global_262145.f_4220 /* Tunable: XP_TUNABLE_PERFORMING_JOBS_WITH_OTHER_PLAYERS */)));
 	}
 	*iParam0 = (*iParam0 + iVar6);
 	*iParam0 = (*iParam0 + iVar7);
@@ -8395,7 +8395,7 @@ void func_216(bool bParam0, int iParam1)//Position - 0x78F4
 	}
 	if (bVar2)
 	{
-		iVar5 = SYSTEM::ROUND((func_215(*iParam1, 100) * (10f * Global_262145.f_4227)));
+		iVar5 = SYSTEM::ROUND((func_215(*iParam1, 100) * (10f * Global_262145.f_4227 /* Tunable: XP_TUNABLE_ALL_RP_WHILE_PLAYING_IN_A_CREW */)));
 	}
 	if (iVar1 > 4)
 	{
@@ -8403,7 +8403,7 @@ void func_216(bool bParam0, int iParam1)//Position - 0x78F4
 	}
 	if (iVar1 >= 1)
 	{
-		iVar6 = SYSTEM::ROUND((func_215(*iParam1, 100) * (20f * Global_262145.f_4220)));
+		iVar6 = SYSTEM::ROUND((func_215(*iParam1, 100) * (20f * Global_262145.f_4220 /* Tunable: XP_TUNABLE_PERFORMING_JOBS_WITH_OTHER_PLAYERS */)));
 	}
 	*iParam1 = (*iParam1 + iVar5);
 	*iParam1 = (*iParam1 + iVar6);
@@ -8486,13 +8486,13 @@ int func_223()//Position - 0x7B2D
 	
 	if (func_230(PLAYER::PLAYER_ID()) || func_229(PLAYER::PLAYER_ID()))
 	{
-		if (Global_262145.f_10101 > 16000)
+		if (Global_262145.f_10101 /* Tunable: JOB_HEIST_RP_CAP */ > 16000)
 		{
 			iVar0 = 16000;
 		}
 		else
 		{
-			iVar0 = Global_262145.f_10101;
+			iVar0 = Global_262145.f_10101 /* Tunable: JOB_HEIST_RP_CAP */;
 		}
 	}
 	else if (func_227() || func_224(PLAYER::PLAYER_ID()))
@@ -8506,13 +8506,13 @@ int func_223()//Position - 0x7B2D
 			iVar0 = Global_262145.f_23310;
 		}
 	}
-	else if (Global_262145.f_7094 > 20000)
+	else if (Global_262145.f_7094 /* Tunable: JOB_RP_CAP */ > 20000)
 	{
 		iVar0 = 20000;
 	}
 	else
 	{
-		iVar0 = Global_262145.f_7094;
+		iVar0 = Global_262145.f_7094 /* Tunable: JOB_RP_CAP */;
 	}
 	return iVar0;
 }
@@ -9205,7 +9205,7 @@ void func_241(struct<67> Param0, var uParam1, var uParam2, var uParam3, var uPar
 	Var0.f_2 = { Param0.f_66 };
 	Var0.f_2.f_33 = iParam19;
 	iVar1 = func_243(Var0.f_1);
-	if ((Global_262145.f_24104 && !Global_262145.f_24105) && !Global_262145.f_24106)
+	if ((Global_262145.f_24104 /* Tunable: BLOCK_NS_TRANS */ && !Global_262145.f_24105 /* Tunable: SC_RUN_TRANS */) && !Global_262145.f_24106 /* Tunable: BG_RUN_TRANS */)
 	{
 		return;
 	}
@@ -9250,9 +9250,9 @@ void func_245(int iParam0, int iParam1)//Position - 0x8DB7
 			if (!MISC::IS_PC_VERSION() || Global_262145.f_24025 == 1)
 			{
 				Global_2815059.f_283 = iParam0;
-				if (iParam1 > Global_262145.f_7043)
+				if (iParam1 > Global_262145.f_7043 /* Tunable: CAP_MAX_AMOUNT_CASH_TO_SHARE */)
 				{
-					iParam1 = Global_262145.f_7043;
+					iParam1 = Global_262145.f_7043 /* Tunable: CAP_MAX_AMOUNT_CASH_TO_SHARE */;
 				}
 				Global_2815059.f_284 = iParam1;
 				Global_2815059.f_285 = 0;
@@ -9272,9 +9272,9 @@ void func_246(var uParam0, var uParam1)//Position - 0x8E29
 	if (func_17(NETWORK::PARTICIPANT_ID_TO_INT(), 1))
 	{
 		iVar1 = SYSTEM::FLOOR(((SYSTEM::TO_FLOAT((Local_150.f_1 - iLocal_119)) / 60f) / 1000f));
-		if (iVar1 > Global_262145.f_11907)
+		if (iVar1 > Global_262145.f_11907 /* Tunable: PARTICIPATION_T_CAP */)
 		{
-			iVar1 = Global_262145.f_11907;
+			iVar1 = Global_262145.f_11907 /* Tunable: PARTICIPATION_T_CAP */;
 		}
 		else if (iVar1 < 1)
 		{
@@ -9295,8 +9295,8 @@ void func_246(var uParam0, var uParam1)//Position - 0x8E29
 			{
 				iVar4 = func_280();
 			}
-			*uParam0 = (*uParam0 + SYSTEM::ROUND((IntToFloat(func_273(func_279(), func_278(), iVar3, fVar2, func_277(), func_276(), func_275(), iVar4)) * Global_262145.f_11920)));
-			*uParam1 = (*uParam1 + SYSTEM::ROUND((IntToFloat(func_273(func_272(), func_271(), iVar3, fVar2, func_277(), func_276(), func_275(), iVar4)) * Global_262145.f_11921)));
+			*uParam0 = (*uParam0 + SYSTEM::ROUND((IntToFloat(func_273(func_279(), func_278(), iVar3, fVar2, func_277(), func_276(), func_275(), iVar4)) * Global_262145.f_11920 /* Tunable: CHALLENGE_EVENT_MULTIPLIER_CASH */)));
+			*uParam1 = (*uParam1 + SYSTEM::ROUND((IntToFloat(func_273(func_272(), func_271(), iVar3, fVar2, func_277(), func_276(), func_275(), iVar4)) * Global_262145.f_11921 /* Tunable: CHALLENGE_EVENT_MULTIPLIER_RP */)));
 		}
 		else
 		{
@@ -9523,12 +9523,12 @@ int func_260(bool bParam0)//Position - 0x9367
 	{
 		return SYSTEM::ROUND((0.05f * 100f));
 	}
-	return Global_262145.f_12862;
+	return Global_262145.f_12862 /* Tunable: GB_PERCENTAGE_OF_GOONS_CASH_TO_AGENCY */;
 }
 
 int func_261()//Position - 0x938D
 {
-	return Global_262145.f_12861;
+	return Global_262145.f_12861 /* Tunable: GB_PERCENTAGE_OF_GOONS_CASH_TO_BOSS */;
 }
 
 bool func_262()//Position - 0x939C
@@ -9647,12 +9647,12 @@ int func_270(int iParam0)//Position - 0x94D3
 
 int func_271()//Position - 0x9580
 {
-	return Global_262145.f_11407;
+	return Global_262145.f_11407 /* Tunable: CHALLENGE_RP_REWARD_SCALE */;
 }
 
 int func_272()//Position - 0x958F
 {
-	return Global_262145.f_11405;
+	return Global_262145.f_11405 /* Tunable: CHALLENGE_RP_REWARD_BASE */;
 }
 
 int func_273(int iParam0, int iParam1, int iParam2, float fParam3, float fParam4, float fParam5, float fParam6, int iParam7)//Position - 0x959E
@@ -9687,64 +9687,64 @@ int func_274(int iParam0, int iParam1, int iParam2)//Position - 0x95CF
 
 float func_275()//Position - 0x9617
 {
-	return Global_262145.f_11410;
+	return Global_262145.f_11410 /* Tunable: CHALLENGE_REWARD_PLAYER_DIVIDER */;
 }
 
 float func_276()//Position - 0x9626
 {
-	return Global_262145.f_11409;
+	return Global_262145.f_11409 /* Tunable: CHALLENGE_REWARD_PLAYER_WEIGHTING */;
 }
 
 float func_277()//Position - 0x9635
 {
-	return Global_262145.f_11408;
+	return Global_262145.f_11408 /* Tunable: CHALLENGE_REWARD_TIME_WEIGHTING */;
 }
 
 int func_278()//Position - 0x9644
 {
-	return Global_262145.f_11406;
+	return Global_262145.f_11406 /* Tunable: CHALLENGE_CASH_REWARD_SCALE */;
 }
 
 int func_279()//Position - 0x9653
 {
-	return Global_262145.f_11404;
+	return Global_262145.f_11404 /* Tunable: CHALLENGE_CASH_REWARD_BASE */;
 }
 
 int func_280()//Position - 0x9662
 {
-	return Global_262145.f_11812;
+	return Global_262145.f_11812 /* Tunable: CHALLENGE_P_CAP */;
 }
 
 int func_281()//Position - 0x9671
 {
-	return Global_262145.f_11811;
+	return Global_262145.f_11811 /* Tunable: CHALLENGE_T_CAP */;
 }
 
 var func_282()//Position - 0x9680
 {
 	if (func_20(0))
 	{
-		return Global_262145.f_11431;
+		return Global_262145.f_11431 /* Tunable: CHALLENGE_POSITION_MODIFIER_IN_PLACE_0 */;
 	}
 	if (func_20(1))
 	{
-		return Global_262145.f_11432;
+		return Global_262145.f_11432 /* Tunable: CHALLENGE_POSITION_MODIFIER_IN_PLACE_1 */;
 	}
 	if (func_20(2))
 	{
-		return Global_262145.f_11433;
+		return Global_262145.f_11433 /* Tunable: CHALLENGE_POSITION_MODIFIER_IN_PLACE_2 */;
 	}
-	return Global_262145.f_11434;
+	return Global_262145.f_11434 /* Tunable: CHALLENGE_POSITION_MODIFIER_IN_PLACE_3 */;
 }
 
 int func_283()//Position - 0x96CE
 {
-	return Global_262145.f_11403;
+	return Global_262145.f_11403 /* Tunable: CHALLENGE_EOM_DEFAULT_RP_REWARD */;
 }
 
 int func_284()//Position - 0x96DD
 {
-	return Global_262145.f_11402;
+	return Global_262145.f_11402 /* Tunable: CHALLENGE_EOM_DEFAULT_CASH_REWARD */;
 }
 
 void func_285()//Position - 0x96EC
@@ -11985,7 +11985,7 @@ void func_349(int iParam0)//Position - 0xC5E5
 {
 	int iVar0;
 	
-	if (Global_262145.f_9035)
+	if (Global_262145.f_9035 /* Tunable: DISABLE_DAILY_OBJECTIVES */)
 	{
 		return;
 	}
@@ -24834,7 +24834,7 @@ void func_744()//Position - 0x1BB3D
 	Local_1517.f_4 = Local_150.f_66;
 	Local_1517.f_3 = Local_150.f_51;
 	Local_1517.f_10 = (NETWORK::GET_CLOUD_TIME_AS_INT() - Local_1517.f_9);
-	if (!Global_262145.f_11972)
+	if (!Global_262145.f_11972 /* Tunable: CHALLENGE_DISABLE_SHARE_CASH */)
 	{
 		if (Local_1517.f_6 > 0)
 		{
@@ -25011,7 +25011,7 @@ bool func_747(int iParam0)//Position - 0x1BFA5
 
 int func_748()//Position - 0x1BFB2
 {
-	if (Global_4718592.f_116524 == Global_262145.f_10062)
+	if (Global_4718592.f_116524 == Global_262145.f_10062 /* Tunable: TRANSFORM_INFERNO */)
 	{
 		return 1;
 	}

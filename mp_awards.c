@@ -898,7 +898,7 @@ void func_15(var uParam0)//Position - 0xE9A
 			switch (uParam0->f_6)
 			{
 				case 0:
-					if (!Global_262145.f_9035)
+					if (!Global_262145.f_9035 /* Tunable: DISABLE_DAILY_OBJECTIVES */)
 					{
 						iLocal_110 = 25;
 						iLocal_111 = 3;
@@ -909,7 +909,7 @@ void func_15(var uParam0)//Position - 0xE9A
 						iLocal_111 = 7;
 					}
 					iVar3 = 0;
-					if (!Global_262145.f_29728)
+					if (!Global_262145.f_29728 /* Tunable: COLLECTABLES_TREASURE_CHESTS */)
 					{
 						iVar3++;
 					}
@@ -926,7 +926,7 @@ void func_15(var uParam0)//Position - 0xE9A
 						iVar3++;
 					}
 					iLocal_111 = (iLocal_111 - iVar3);
-					if (!Global_262145.f_30976)
+					if (!Global_262145.f_30976 /* Tunable: TUNER_CABINET_CAMHEDZ_ENABLE */)
 					{
 						iLocal_111 = (iLocal_111 - 5);
 					}
@@ -1041,7 +1041,7 @@ void func_15(var uParam0)//Position - 0xE9A
 					iLocal_110 = 2;
 					iLocal_111 = 2;
 					iVar3 = 0;
-					if (!Global_262145.f_29728)
+					if (!Global_262145.f_29728 /* Tunable: COLLECTABLES_TREASURE_CHESTS */)
 					{
 						iVar3++;
 					}
@@ -1070,7 +1070,7 @@ void func_15(var uParam0)//Position - 0xE9A
 				case 14:
 					iLocal_110 = 1;
 					iLocal_111 = 12;
-					if (!Global_262145.f_30976)
+					if (!Global_262145.f_30976 /* Tunable: TUNER_CABINET_CAMHEDZ_ENABLE */)
 					{
 						iLocal_111 = (iLocal_111 - 5);
 					}
@@ -1298,7 +1298,7 @@ void func_15(var uParam0)//Position - 0xE9A
 						case 12:
 							if (!Global_1646672.f_1[0])
 							{
-								if (Global_262145.f_29264)
+								if (Global_262145.f_29264 /* Tunable: SUM_CABINET_QUB3D_ENABLE */)
 								{
 									func_101(89, 8, iVar4, &Global_1646672);
 									func_101(90, 8, iVar4, &Global_1646672);
@@ -1546,7 +1546,7 @@ void func_15(var uParam0)//Position - 0xE9A
 								}
 								func_101(122, 8, iVar4, &Global_1646672);
 								func_114(115, 8, iVar4, &Global_1646672);
-								if (Global_262145.f_30976)
+								if (Global_262145.f_30976 /* Tunable: TUNER_CABINET_CAMHEDZ_ENABLE */)
 								{
 									func_114(116, 8, iVar4, &Global_1646672);
 									func_101(123, 8, iVar4, &Global_1646672);
@@ -1680,7 +1680,7 @@ void func_15(var uParam0)//Position - 0xE9A
 								{
 									func_101(110, 8, iVar4, &Global_1646672);
 								}
-								if (Global_262145.f_29728)
+								if (Global_262145.f_29728 /* Tunable: COLLECTABLES_TREASURE_CHESTS */)
 								{
 									func_114(100, 8, iVar4, &Global_1646672);
 								}
@@ -1913,7 +1913,7 @@ void func_15(var uParam0)//Position - 0xE9A
 								func_85(17, 8, iVar4, &Global_1646672);
 								func_85(18, 8, iVar4, &Global_1646672);
 								func_85(19, 8, iVar4, &Global_1646672);
-								if (!Global_262145.f_9035)
+								if (!Global_262145.f_9035 /* Tunable: DISABLE_DAILY_OBJECTIVES */)
 								{
 									func_114(67, 8, iVar4, &Global_1646672);
 									func_101(25, 8, iVar4, &Global_1646672);
@@ -2146,7 +2146,7 @@ void func_15(var uParam0)//Position - 0xE9A
 						case 0:
 							if (!Global_1646672.f_1[0])
 							{
-								if (Global_262145.f_29264)
+								if (Global_262145.f_29264 /* Tunable: SUM_CABINET_QUB3D_ENABLE */)
 								{
 									func_101(89, 8, iVar4, &Global_1646672);
 									func_101(90, 8, iVar4, &Global_1646672);
@@ -2211,7 +2211,7 @@ void func_15(var uParam0)//Position - 0xE9A
 									func_101(110, 8, iVar4, &Global_1646672);
 									func_114(102, 8, iVar4, &Global_1646672);
 								}
-								if (Global_262145.f_29728)
+								if (Global_262145.f_29728 /* Tunable: COLLECTABLES_TREASURE_CHESTS */)
 								{
 									func_114(100, 8, iVar4, &Global_1646672);
 								}
@@ -2262,7 +2262,7 @@ void func_15(var uParam0)//Position - 0xE9A
 									func_101(121, 8, iVar4, &Global_1646672);
 								}
 								func_114(115, 8, iVar4, &Global_1646672);
-								if (Global_262145.f_30976)
+								if (Global_262145.f_30976 /* Tunable: TUNER_CABINET_CAMHEDZ_ENABLE */)
 								{
 									func_114(116, 8, iVar4, &Global_1646672);
 									func_101(123, 8, iVar4, &Global_1646672);
@@ -2332,7 +2332,7 @@ void func_15(var uParam0)//Position - 0xE9A
 			func_25(9, "PM_ARENA" /* GXT: Arena War */, &Global_1647601);
 			func_25(10, "AWDGBC_VC" /* GXT: The Diamond Casino & Resort */, &Global_1647601);
 			func_25(11, "FMMC_CH_DN" /* GXT: The Diamond Casino Heist */, &Global_1647601);
-			if (Global_262145.f_29264)
+			if (Global_262145.f_29264 /* Tunable: SUM_CABINET_QUB3D_ENABLE */)
 			{
 				func_25(12, "SUM20AWARDPAGE" /* GXT: Los Santos Summer Special */, &Global_1647601);
 			}

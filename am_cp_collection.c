@@ -1678,7 +1678,7 @@ void func_3()//Position - 0x238
 			break;
 		
 		case 1:
-			if (func_1(&(Local_130.f_667), Global_262145.f_11586, 0) || BitTest(Local_130.f_2, 2))
+			if (func_1(&(Local_130.f_667), Global_262145.f_11586 /* Tunable: CHECKPOINT_EVENT_START_COUNTDOWN_TIME */, 0) || BitTest(Local_130.f_2, 2))
 			{
 				func_23(2);
 			}
@@ -1691,7 +1691,7 @@ void func_3()//Position - 0x238
 			break;
 		
 		case 3:
-			if ((func_22() || func_1(&(Local_130.f_661), Global_262145.f_11585, 0)) || BitTest(Local_130.f_2, 2))
+			if ((func_22() || func_1(&(Local_130.f_661), Global_262145.f_11585 /* Tunable: CHECKPOINT_EVENT_TIME_LIMIT */, 0)) || BitTest(Local_130.f_2, 2))
 			{
 				if (!BitTest(Local_130.f_2, 1) && func_21())
 				{
@@ -8030,16 +8030,16 @@ int func_124(int iParam0)//Position - 0x9611
 	switch (iParam0)
 	{
 		case 0:
-			return (Global_262145.f_11597 || Global_262145.f_11589);
+			return (Global_262145.f_11597 /* Tunable: CHECKPOINT_DISABLE_SE_QUARTER_LAND_VARIATION */ || Global_262145.f_11589 /* Tunable: CHECKPOINT_DISABLE_ALL_LAND_VARIATIONS */);
 		
 		case 1:
-			return (Global_262145.f_11596 || Global_262145.f_11589);
+			return (Global_262145.f_11596 /* Tunable: CHECKPOINT_DISABLE_SW_QUARTER_LAND_VARIATION */ || Global_262145.f_11589 /* Tunable: CHECKPOINT_DISABLE_ALL_LAND_VARIATIONS */);
 		
 		case 2:
-			return (Global_262145.f_11594 || Global_262145.f_11589);
+			return (Global_262145.f_11594 /* Tunable: CHECKPOINT_DISABLE_NW_QUARTER_LAND_VARIATION */ || Global_262145.f_11589 /* Tunable: CHECKPOINT_DISABLE_ALL_LAND_VARIATIONS */);
 		
 		case 3:
-			return (Global_262145.f_11595 || Global_262145.f_11589);
+			return (Global_262145.f_11595 /* Tunable: CHECKPOINT_DISABLE_NE_QUARTER_LAND_VARIATION */ || Global_262145.f_11589 /* Tunable: CHECKPOINT_DISABLE_ALL_LAND_VARIATIONS */);
 		
 		default:
 	}
@@ -8051,16 +8051,16 @@ int func_125(int iParam0)//Position - 0x9695
 	switch (iParam0)
 	{
 		case 0:
-			return (Global_262145.f_11593 || Global_262145.f_11588);
+			return (Global_262145.f_11593 /* Tunable: CHECKPOINT_DISABLE_SE_QUARTER_AIR_VARIATION */ || Global_262145.f_11588 /* Tunable: CHECKPOINT_DISABLE_ALL_AIR_VARIATIONS */);
 		
 		case 1:
-			return (Global_262145.f_11592 || Global_262145.f_11588);
+			return (Global_262145.f_11592 /* Tunable: CHECKPOINT_DISABLE_SW_QUARTER_AIR_VARIATION */ || Global_262145.f_11588 /* Tunable: CHECKPOINT_DISABLE_ALL_AIR_VARIATIONS */);
 		
 		case 2:
-			return (Global_262145.f_11590 || Global_262145.f_11588);
+			return (Global_262145.f_11590 /* Tunable: CHECKPOINT_DISABLE_NW_QUARTER_AIR_VARIATION */ || Global_262145.f_11588 /* Tunable: CHECKPOINT_DISABLE_ALL_AIR_VARIATIONS */);
 		
 		case 3:
-			return (Global_262145.f_11591 || Global_262145.f_11588);
+			return (Global_262145.f_11591 /* Tunable: CHECKPOINT_DISABLE_NE_QUARTER_AIR_VARIATION */ || Global_262145.f_11588 /* Tunable: CHECKPOINT_DISABLE_ALL_AIR_VARIATIONS */);
 		
 		default:
 	}
@@ -8216,19 +8216,19 @@ var func_130()//Position - 0x994E
 		}
 		iVar0++;
 	}
-	if (iVar1 >= Global_262145.f_11602)
+	if (iVar1 >= Global_262145.f_11602 /* Tunable: CHECKPOINT_CHECKPOINT_PLAYER_THRESHOLD_3 */)
 	{
-		return Global_262145.f_11488;
+		return Global_262145.f_11488 /* Tunable: CP_COLLECTION_MAX_ACTIVE_CHECKPOINTS_3 */;
 	}
-	if (iVar1 >= Global_262145.f_11601)
+	if (iVar1 >= Global_262145.f_11601 /* Tunable: CHECKPOINT_CHECKPOINT_PLAYER_THRESHOLD_2 */)
 	{
-		return Global_262145.f_11487;
+		return Global_262145.f_11487 /* Tunable: CP_COLLECTION_MAX_ACTIVE_CHECKPOINTS_2 */;
 	}
-	if (iVar1 >= Global_262145.f_11600)
+	if (iVar1 >= Global_262145.f_11600 /* Tunable: CHECKPOINT_CHECKPOINT_PLAYER_THRESHOLD_1 */)
 	{
-		return Global_262145.f_10661;
+		return Global_262145.f_10661 /* Tunable: CP_COLLECTION_MAX_ACTIVE_CHECKPOINTS */;
 	}
-	return Global_262145.f_10661;
+	return Global_262145.f_10661 /* Tunable: CP_COLLECTION_MAX_ACTIVE_CHECKPOINTS */;
 }
 
 void func_131()//Position - 0x99D4
@@ -8591,8 +8591,8 @@ void func_143()//Position - 0xA02E
 					}
 					func_492(2);
 					func_490(0);
-					func_488((Global_262145.f_11586 - func_489(&(Local_130.f_667), 0, 0)));
-					func_485(func_487((Global_262145.f_11586 - func_489(&(Local_130.f_667), 0, 0)), 0), func_486(-1));
+					func_488((Global_262145.f_11586 /* Tunable: CHECKPOINT_EVENT_START_COUNTDOWN_TIME */ - func_489(&(Local_130.f_667), 0, 0)));
+					func_485(func_487((Global_262145.f_11586 /* Tunable: CHECKPOINT_EVENT_START_COUNTDOWN_TIME */ - func_489(&(Local_130.f_667), 0, 0)), 0), func_486(-1));
 					func_466();
 					break;
 				
@@ -9768,7 +9768,7 @@ void func_182()//Position - 0xB6C2
 						}
 						else
 						{
-							if (BitTest(Local_130.f_2, 0) && Local_1497[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_4 >= Global_262145.f_11746)
+							if (BitTest(Local_130.f_2, 0) && Local_1497[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_4 >= Global_262145.f_11746 /* Tunable: CHECKPOINT_PARTICIPATION_THRESHOLD_MIN_CHECKPOINTS_COLLECTED */)
 							{
 								sVar0 = "CPC_LOSEBONUS" /* GXT: <C>~a~</C>~s~ won Checkpoints with a score of ~1~. You received a bonus for helping collect all the checkpoints. */;
 							}
@@ -10065,12 +10065,12 @@ void func_199()//Position - 0xBCF0
 			MISC::SET_BIT(&(Local_1497[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2), 1);
 			return;
 		}
-		if (Local_1497[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_4 >= Global_262145.f_11746)
+		if (Local_1497[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_4 >= Global_262145.f_11746 /* Tunable: CHECKPOINT_PARTICIPATION_THRESHOLD_MIN_CHECKPOINTS_COLLECTED */)
 		{
 			iVar3 = SYSTEM::FLOOR(((SYSTEM::TO_FLOAT((Local_130.f_1 - iLocal_93)) / 60f) / 1000f));
-			if (iVar3 > Global_262145.f_11907)
+			if (iVar3 > Global_262145.f_11907 /* Tunable: PARTICIPATION_T_CAP */)
 			{
-				iVar3 = Global_262145.f_11907;
+				iVar3 = Global_262145.f_11907 /* Tunable: PARTICIPATION_T_CAP */;
 			}
 			else if (iVar3 < 1)
 			{
@@ -10085,21 +10085,21 @@ void func_199()//Position - 0xBCF0
 		}
 		if (!BitTest(Local_130.f_2, 2))
 		{
-			if (Local_1497[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_4 >= Global_262145.f_11746)
+			if (Local_1497[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_4 >= Global_262145.f_11746 /* Tunable: CHECKPOINT_PARTICIPATION_THRESHOLD_MIN_CHECKPOINTS_COLLECTED */)
 			{
 				if (BitTest(Local_130.f_2, 0))
 				{
-					iVar0 = (iVar0 + SYSTEM::ROUND((IntToFloat(func_288()) * Global_262145.f_11918)));
+					iVar0 = (iVar0 + SYSTEM::ROUND((IntToFloat(func_288()) * Global_262145.f_11918 /* Tunable: CHECKPOINTS_EVENT_MULTIPLIER_CASH */)));
 				}
 			}
 			if (func_321(0))
 			{
 				Local_1496.f_5 = 1;
-				iVar1 = (iVar1 + SYSTEM::ROUND((IntToFloat(func_287()) * Global_262145.f_11919)));
+				iVar1 = (iVar1 + SYSTEM::ROUND((IntToFloat(func_287()) * Global_262145.f_11919 /* Tunable: CHECKPOINTS_EVENT_MULTIPLIER_RP */)));
 			}
 			if ((Local_130.f_674[0] != NETWORK::PARTICIPANT_ID_TO_INT() && Local_130.f_674[1] != NETWORK::PARTICIPANT_ID_TO_INT()) && Local_130.f_674[2] != NETWORK::PARTICIPANT_ID_TO_INT())
 			{
-				if (Local_1497[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_4 >= Global_262145.f_11746)
+				if (Local_1497[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_4 >= Global_262145.f_11746 /* Tunable: CHECKPOINT_PARTICIPATION_THRESHOLD_MIN_CHECKPOINTS_COLLECTED */)
 				{
 					func_289(1);
 				}
@@ -10119,7 +10119,7 @@ void func_199()//Position - 0xBCF0
 			}
 		}
 		Local_1496.f_6 = iVar0;
-		if (!Global_262145.f_11971)
+		if (!Global_262145.f_11971 /* Tunable: CHECKPOINTS_DISABLE_SHARE_CASH */)
 		{
 			if (Local_1496.f_6 > 0)
 			{
@@ -10346,7 +10346,7 @@ int func_212(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, 
 		}
 		iVar1 = SYSTEM::ROUND((IntToFloat(iParam3) * (IntToFloat(iParam4) + fVar0)));
 		iVar1 = func_241(iVar1);
-		fVar3 = (SYSTEM::TO_FLOAT(iVar1) * Global_262145.f_1);
+		fVar3 = (SYSTEM::TO_FLOAT(iVar1) * Global_262145.f_1 /* Tunable: XP_MULTIPLIER */);
 		iVar1 = SYSTEM::ROUND(fVar3);
 		if (bParam10)
 		{
@@ -10659,7 +10659,7 @@ void func_222(int iParam0, int iParam1, int iParam2)//Position - 0xC7A5
 		{
 			iParam0 = 1787576850;
 		}
-		if (Global_262145.f_10069 == 0 && iParam1 != joaat("XPCATEGORY_KEYS_DEBUG"))
+		if (Global_262145.f_10069 /* Tunable: TURN_OFF_RP_REDUCED_BLOCKER */ == 0 && iParam1 != joaat("XPCATEGORY_KEYS_DEBUG"))
 		{
 			if (iParam2 == 0)
 			{
@@ -10674,7 +10674,7 @@ void func_222(int iParam0, int iParam1, int iParam2)//Position - 0xC7A5
 				}
 			}
 		}
-		if (Global_262145.f_10068 == 0)
+		if (Global_262145.f_10068 /* Tunable: TURN_OFF_RP_RESET_TELEMETRY */ == 0)
 		{
 			if (iParam0 == 0)
 			{
@@ -10685,7 +10685,7 @@ void func_222(int iParam0, int iParam1, int iParam2)//Position - 0xC7A5
 				}
 			}
 		}
-		if (Global_262145.f_10068 == 0)
+		if (Global_262145.f_10068 /* Tunable: TURN_OFF_RP_RESET_TELEMETRY */ == 0)
 		{
 			if (iParam0 < 0)
 			{
@@ -11559,7 +11559,7 @@ void func_236(int iParam0)//Position - 0xD9CD
 	}
 	if (bVar3)
 	{
-		iVar6 = SYSTEM::ROUND((func_237(*iParam0, 100) * (10f * Global_262145.f_4227)));
+		iVar6 = SYSTEM::ROUND((func_237(*iParam0, 100) * (10f * Global_262145.f_4227 /* Tunable: XP_TUNABLE_ALL_RP_WHILE_PLAYING_IN_A_CREW */)));
 	}
 	if (iVar2 > 4)
 	{
@@ -11567,7 +11567,7 @@ void func_236(int iParam0)//Position - 0xD9CD
 	}
 	if (iVar2 >= 2)
 	{
-		iVar7 = SYSTEM::ROUND((func_237(*iParam0, 100) * (20f * Global_262145.f_4220)));
+		iVar7 = SYSTEM::ROUND((func_237(*iParam0, 100) * (20f * Global_262145.f_4220 /* Tunable: XP_TUNABLE_PERFORMING_JOBS_WITH_OTHER_PLAYERS */)));
 	}
 	*iParam0 = (*iParam0 + iVar6);
 	*iParam0 = (*iParam0 + iVar7);
@@ -11644,7 +11644,7 @@ void func_238(bool bParam0, int iParam1)//Position - 0xDAD9
 	}
 	if (bVar2)
 	{
-		iVar5 = SYSTEM::ROUND((func_237(*iParam1, 100) * (10f * Global_262145.f_4227)));
+		iVar5 = SYSTEM::ROUND((func_237(*iParam1, 100) * (10f * Global_262145.f_4227 /* Tunable: XP_TUNABLE_ALL_RP_WHILE_PLAYING_IN_A_CREW */)));
 	}
 	if (iVar1 > 4)
 	{
@@ -11652,7 +11652,7 @@ void func_238(bool bParam0, int iParam1)//Position - 0xDAD9
 	}
 	if (iVar1 >= 1)
 	{
-		iVar6 = SYSTEM::ROUND((func_237(*iParam1, 100) * (20f * Global_262145.f_4220)));
+		iVar6 = SYSTEM::ROUND((func_237(*iParam1, 100) * (20f * Global_262145.f_4220 /* Tunable: XP_TUNABLE_PERFORMING_JOBS_WITH_OTHER_PLAYERS */)));
 	}
 	*iParam1 = (*iParam1 + iVar5);
 	*iParam1 = (*iParam1 + iVar6);
@@ -11735,13 +11735,13 @@ int func_245()//Position - 0xDD12
 	
 	if (func_252(PLAYER::PLAYER_ID()) || func_251(PLAYER::PLAYER_ID()))
 	{
-		if (Global_262145.f_10101 > 16000)
+		if (Global_262145.f_10101 /* Tunable: JOB_HEIST_RP_CAP */ > 16000)
 		{
 			iVar0 = 16000;
 		}
 		else
 		{
-			iVar0 = Global_262145.f_10101;
+			iVar0 = Global_262145.f_10101 /* Tunable: JOB_HEIST_RP_CAP */;
 		}
 	}
 	else if (func_249() || func_246(PLAYER::PLAYER_ID()))
@@ -11755,13 +11755,13 @@ int func_245()//Position - 0xDD12
 			iVar0 = Global_262145.f_23310;
 		}
 	}
-	else if (Global_262145.f_7094 > 20000)
+	else if (Global_262145.f_7094 /* Tunable: JOB_RP_CAP */ > 20000)
 	{
 		iVar0 = 20000;
 	}
 	else
 	{
-		iVar0 = Global_262145.f_7094;
+		iVar0 = Global_262145.f_7094 /* Tunable: JOB_RP_CAP */;
 	}
 	return iVar0;
 }
@@ -11845,9 +11845,9 @@ void func_254(int iParam0, int iParam1)//Position - 0xDE8E
 			if (!MISC::IS_PC_VERSION() || Global_262145.f_24025 == 1)
 			{
 				Global_2815059.f_283 = iParam0;
-				if (iParam1 > Global_262145.f_7043)
+				if (iParam1 > Global_262145.f_7043 /* Tunable: CAP_MAX_AMOUNT_CASH_TO_SHARE */)
 				{
-					iParam1 = Global_262145.f_7043;
+					iParam1 = Global_262145.f_7043 /* Tunable: CAP_MAX_AMOUNT_CASH_TO_SHARE */;
 				}
 				Global_2815059.f_284 = iParam1;
 				Global_2815059.f_285 = 0;
@@ -12474,7 +12474,7 @@ void func_264(struct<67> Param0, var uParam1, var uParam2, var uParam3, var uPar
 	Var0.f_2 = { Param0.f_66 };
 	Var0.f_2.f_33 = iParam19;
 	iVar1 = func_266(Var0.f_1);
-	if ((Global_262145.f_24104 && !Global_262145.f_24105) && !Global_262145.f_24106)
+	if ((Global_262145.f_24104 /* Tunable: BLOCK_NS_TRANS */ && !Global_262145.f_24105 /* Tunable: SC_RUN_TRANS */) && !Global_262145.f_24106 /* Tunable: BG_RUN_TRANS */)
 	{
 		return;
 	}
@@ -12722,12 +12722,12 @@ int func_281(bool bParam0)//Position - 0xF0E4
 	{
 		return SYSTEM::ROUND((0.05f * 100f));
 	}
-	return Global_262145.f_12862;
+	return Global_262145.f_12862 /* Tunable: GB_PERCENTAGE_OF_GOONS_CASH_TO_AGENCY */;
 }
 
 int func_282()//Position - 0xF10A
 {
-	return Global_262145.f_12861;
+	return Global_262145.f_12861 /* Tunable: GB_PERCENTAGE_OF_GOONS_CASH_TO_BOSS */;
 }
 
 bool func_283()//Position - 0xF119
@@ -12752,12 +12752,12 @@ bool func_286()//Position - 0xF152
 
 int func_287()//Position - 0xF162
 {
-	return Global_262145.f_11729;
+	return Global_262145.f_11729 /* Tunable: CHECKPOINT_BONUS_RP */;
 }
 
 int func_288()//Position - 0xF171
 {
-	return Global_262145.f_11728;
+	return Global_262145.f_11728 /* Tunable: CHECKPOINT_BONUS_CASH */;
 }
 
 void func_289(bool bParam0)//Position - 0xF180
@@ -12813,12 +12813,12 @@ int func_290(int iParam0)//Position - 0xF1B2
 
 int func_291()//Position - 0xF25F
 {
-	return Global_262145.f_11748;
+	return Global_262145.f_11748 /* Tunable: CHECKPOINT_MINIMUM_PARTICIPATION_RP */;
 }
 
 int func_292()//Position - 0xF26E
 {
-	return Global_262145.f_11747;
+	return Global_262145.f_11747 /* Tunable: CHECKPOINT_MINIMUM_PARTICIPATION_CASH */;
 }
 
 void func_293()//Position - 0xF27D
@@ -12903,7 +12903,7 @@ void func_294()//Position - 0xF294
 		iVar3 = func_487(0, Local_130.f_708);
 		iVar4 = Local_130.f_709;
 		iVar5 = func_487(0, Local_1497[iVar8 /*5*/].f_4);
-		iVar6 = func_487(0, (Global_262145.f_11585 - func_489(&(Local_130.f_661), 0, 0)));
+		iVar6 = func_487(0, (Global_262145.f_11585 /* Tunable: CHECKPOINT_EVENT_TIME_LIMIT */ - func_489(&(Local_130.f_661), 0, 0)));
 		func_308(iVar6);
 		if (iVar6 > 30000)
 		{
@@ -13735,8 +13735,8 @@ void func_328(struct<4> Param0, var uParam1, int iParam2)//Position - 0x1061E
 		}
 		iVar0 = func_353(SYSTEM::CEIL((IntToFloat(Local_1497[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_4) / func_354())));
 		iVar1 = func_351(SYSTEM::CEIL((IntToFloat(Local_1497[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_4) / func_352())));
-		iVar0 = SYSTEM::ROUND((IntToFloat(iVar0) * Global_262145.f_11918));
-		iVar1 = SYSTEM::ROUND((IntToFloat(iVar1) * Global_262145.f_11919));
+		iVar0 = SYSTEM::ROUND((IntToFloat(iVar0) * Global_262145.f_11918 /* Tunable: CHECKPOINTS_EVENT_MULTIPLIER_CASH */));
+		iVar1 = SYSTEM::ROUND((IntToFloat(iVar1) * Global_262145.f_11919 /* Tunable: CHECKPOINTS_EVENT_MULTIPLIER_RP */));
 		if (func_34())
 		{
 			iVar0 = SYSTEM::ROUND((IntToFloat(iVar0) * func_350()));
@@ -13835,7 +13835,7 @@ void func_333(int iParam0)//Position - 0x108FC
 {
 	int iVar0;
 	
-	if (Global_262145.f_9035)
+	if (Global_262145.f_9035 /* Tunable: DISABLE_DAILY_OBJECTIVES */)
 	{
 		return;
 	}
@@ -14089,12 +14089,12 @@ int func_348(int iParam0)//Position - 0x10C81
 
 float func_349()//Position - 0x10CED
 {
-	return Global_262145.f_11731;
+	return Global_262145.f_11731 /* Tunable: CHECKPOINT_AIR_CHECKPOINT_MULTIPLIER_RP */;
 }
 
 float func_350()//Position - 0x10CFC
 {
-	return Global_262145.f_11730;
+	return Global_262145.f_11730 /* Tunable: CHECKPOINT_AIR_CHECKPOINT_MULTIPLIER_CASH */;
 }
 
 var func_351(int iParam0)//Position - 0x10D0B
@@ -14102,25 +14102,25 @@ var func_351(int iParam0)//Position - 0x10D0B
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_11742;
+			return Global_262145.f_11742 /* Tunable: CHECKPOINT_SET_1_RP_VALUE */;
 		
 		case 2:
-			return Global_262145.f_11743;
+			return Global_262145.f_11743 /* Tunable: CHECKPOINT_SET_2_RP_VALUE */;
 		
 		case 3:
-			return Global_262145.f_11744;
+			return Global_262145.f_11744 /* Tunable: CHECKPOINT_SET_3_RP_VALUE */;
 		
 		case 4:
-			return Global_262145.f_11745;
+			return Global_262145.f_11745 /* Tunable: CHECKPOINT_SET_4_RP_VALUE */;
 		
 		default:
 	}
-	return Global_262145.f_11745;
+	return Global_262145.f_11745 /* Tunable: CHECKPOINT_SET_4_RP_VALUE */;
 }
 
 float func_352()//Position - 0x10D61
 {
-	return Global_262145.f_11490;
+	return Global_262145.f_11490 /* Tunable: CP_COLLECTION_RP_REWARD_CHECKPOINT_SPACER */;
 }
 
 var func_353(int iParam0)//Position - 0x10D70
@@ -14128,43 +14128,43 @@ var func_353(int iParam0)//Position - 0x10D70
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_11732;
+			return Global_262145.f_11732 /* Tunable: CHECKPOINT_SET_1CASH_VALUE */;
 		
 		case 2:
-			return Global_262145.f_11733;
+			return Global_262145.f_11733 /* Tunable: CHECKPOINT_SET_2_CASH_VALUE */;
 		
 		case 3:
-			return Global_262145.f_11734;
+			return Global_262145.f_11734 /* Tunable: CHECKPOINT_SET_3_CASH_VALUE */;
 		
 		case 4:
-			return Global_262145.f_11735;
+			return Global_262145.f_11735 /* Tunable: CHECKPOINT_SET_4_CASH_VALUE */;
 		
 		case 5:
-			return Global_262145.f_11736;
+			return Global_262145.f_11736 /* Tunable: CHECKPOINT_SET_5_CASH_VALUE */;
 		
 		case 6:
-			return Global_262145.f_11737;
+			return Global_262145.f_11737 /* Tunable: CHECKPOINT_SET_6_CASH_VALUE */;
 		
 		case 7:
-			return Global_262145.f_11738;
+			return Global_262145.f_11738 /* Tunable: CHECKPOINT_SET_7_CASH_VALUE */;
 		
 		case 8:
-			return Global_262145.f_11739;
+			return Global_262145.f_11739 /* Tunable: CHECKPOINT_SET_8_CASH_VALUE */;
 		
 		case 9:
 		case 10:
 		case 11:
 		case 12:
-			return Global_262145.f_11740;
+			return Global_262145.f_11740 /* Tunable: CHECKPOINT_SET_9_CASH_VALUE */;
 		
 		default:
 	}
-	return Global_262145.f_11741;
+	return Global_262145.f_11741 /* Tunable: CHECKPOINT_SET_10_CASH_VALUE */;
 }
 
 float func_354()//Position - 0x10E28
 {
-	return Global_262145.f_11489;
+	return Global_262145.f_11489 /* Tunable: CP_COLLECTION_CASH_REWARD_CHECKPOINT_SPACER */;
 }
 
 void func_355(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position - 0x10E37
@@ -18018,7 +18018,7 @@ int func_528(int iParam0)//Position - 0x15274
 		}
 		if (func_38(&(Global_1836844.f_13)))
 		{
-			if (!func_1(&(Global_1836844.f_13), Global_262145.f_14, 0))
+			if (!func_1(&(Global_1836844.f_13), Global_262145.f_14 /* Tunable: FM_EVENT_PASSIVE_COOL_DOWN */, 0))
 			{
 				return 1;
 			}
@@ -22215,7 +22215,7 @@ void func_696()//Position - 0x1984F
 	{
 		uVar2 = Local_130.f_712 + 4;
 	}
-	if (!Global_262145.f_11971)
+	if (!Global_262145.f_11971 /* Tunable: CHECKPOINTS_DISABLE_SHARE_CASH */)
 	{
 		if (Local_1496.f_6 > 0)
 		{
@@ -22514,7 +22514,7 @@ bool func_702(int iParam0)//Position - 0x19FB1
 
 int func_703()//Position - 0x19FBE
 {
-	if (Global_4718592.f_116524 == Global_262145.f_10062)
+	if (Global_4718592.f_116524 == Global_262145.f_10062 /* Tunable: TRANSFORM_INFERNO */)
 	{
 		return 1;
 	}

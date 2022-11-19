@@ -3371,7 +3371,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_2 = joaat("v_ilev_csr_door_l");
 			Var0.f_3 = { -38.464f, -1108.4462f, 26.7198f };
 			Var0.f_7 = 1;
-			if (!Global_262145.f_32663)
+			if (!Global_262145.f_32663 /* Tunable: DISABLE_SIMEON_SHOWROOM */)
 			{
 				Var0.f_8 = 0;
 			}
@@ -3388,7 +3388,7 @@ struct<15> func_48(int iParam0, int iParam1)//Position - 0x109E
 			Var0.f_2 = joaat("v_ilev_csr_door_r");
 			Var0.f_3 = { -36.6615f, -1109.1016f, 26.7198f };
 			Var0.f_7 = 1;
-			if (!Global_262145.f_32663)
+			if (!Global_262145.f_32663 /* Tunable: DISABLE_SIMEON_SHOWROOM */)
 			{
 				Var0.f_8 = 0;
 			}

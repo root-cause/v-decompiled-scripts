@@ -2374,7 +2374,7 @@ void func_75(int iParam0)//Position - 0x29FC
 			break;
 		
 		case 1:
-			iVar0 = Global_262145.f_18199;
+			iVar0 = Global_262145.f_18199 /* Tunable: BIKER_MC_POINTS_WIN_MINIGAME */;
 			break;
 		
 		case 2:
@@ -2382,11 +2382,11 @@ void func_75(int iParam0)//Position - 0x29FC
 			break;
 		
 		case 3:
-			iVar0 = Global_262145.f_18202;
+			iVar0 = Global_262145.f_18202 /* Tunable: BIKER_MC_POINTS_DESTROY_PRODUCT */;
 			break;
 		
 		case 4:
-			iVar0 = Global_262145.f_18198;
+			iVar0 = Global_262145.f_18198 /* Tunable: BIKER_MC_POINTS_ROB_SHOP */;
 			break;
 		
 		case 6:
@@ -2394,7 +2394,7 @@ void func_75(int iParam0)//Position - 0x29FC
 			break;
 		
 		case 7:
-			iVar0 = Global_262145.f_18213;
+			iVar0 = Global_262145.f_18213 /* Tunable: BIKER_MC_POINTS_DESTROY_MEMBERS_PV */;
 			break;
 		
 		case 8:
@@ -2406,7 +2406,7 @@ void func_75(int iParam0)//Position - 0x29FC
 			break;
 		
 		case 22:
-			iVar0 = Global_262145.f_18218;
+			iVar0 = Global_262145.f_18218 /* Tunable: BIKER_MC_POINTS_DRIVE_CAR */;
 			break;
 		
 		case 23:

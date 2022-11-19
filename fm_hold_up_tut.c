@@ -3030,7 +3030,7 @@ void func_55(bool bParam0, bool bParam1)//Position - 0x2F88
 		return;
 	}
 	uVar0 = func_59(0);
-	if (Global_262145.f_63 == 1 && func_61(135, 0, 0))
+	if (Global_262145.f_63 /* Tunable: DISABLE_SUPER_MOD_RANK_CHECK */ == 1 && func_61(135, 0, 0))
 	{
 		bParam0 = true;
 	}
@@ -3166,7 +3166,7 @@ int func_61(int iParam0, bool bParam1, bool bParam2)//Position - 0x319D
 	int iVar0;
 	int iVar1;
 	
-	if (Global_262145.f_8145 == 1)
+	if (Global_262145.f_8145 /* Tunable: SET_ALL_PHONE_SERVICES_AVAILABLE */ == 1)
 	{
 		if (iParam0 == 67)
 		{
@@ -3194,7 +3194,7 @@ int func_61(int iParam0, bool bParam1, bool bParam2)//Position - 0x319D
 	}
 	if (iParam0 == 31)
 	{
-		if (Global_262145.f_4746 == 1)
+		if (Global_262145.f_4746 /* Tunable: RANK_RESTRICTION_CRATE_DROP */ == 1)
 		{
 			return 1;
 		}

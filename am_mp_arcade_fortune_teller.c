@@ -3119,7 +3119,7 @@ int func_92()//Position - 0x2F1E
 	{
 		iVar0 = 41;
 	}
-	else if (!Global_262145.f_27121)
+	else if (!Global_262145.f_27121 /* Tunable: VC_PEYOTE_ENABLE */)
 	{
 		iVar0 = 48;
 	}

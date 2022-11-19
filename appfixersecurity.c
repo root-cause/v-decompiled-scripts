@@ -796,9 +796,9 @@ var func_38(bool bParam0)//Position - 0xA37
 {
 	if (bParam0)
 	{
-		return Global_262145.f_31734;
+		return Global_262145.f_31734 /* Tunable: FIXER_FINALE_GOON_CASH_REWARD */;
 	}
-	return Global_262145.f_31735;
+	return Global_262145.f_31735 /* Tunable: FIXER_FINALE_LEADER_CASH_REWARD */;
 }
 
 void func_39(int iParam0, int iParam1, int iParam2)//Position - 0xA55
@@ -9807,7 +9807,7 @@ void func_361()//Position - 0xB061
 			bVar0 = true;
 			iLocal_137 = 18500;
 			iLocal_138 = 2;
-			if (Global_262145.f_31796)
+			if (Global_262145.f_31796 /* Tunable: FIXER_ENABLE_SF_BILLBOARDS */)
 			{
 				MISC::SET_BIT(&uLocal_129, 13);
 			}

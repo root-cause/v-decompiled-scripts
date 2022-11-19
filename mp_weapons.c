@@ -10895,7 +10895,7 @@ void func_96(var uParam0, var uParam1)//Position - 0x9BFC
 	{
 		func_107(joaat("WEAPON_MARKSMANRIFLE"), uParam0, *uParam1, 0);
 	}
-	if (func_104() || Global_262145.f_20269)
+	if (func_104() || Global_262145.f_20269 /* Tunable: ENABLE_RETURNING_CONTENT_WEAPON */)
 	{
 		if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_HATCHET")) && iLocal_66[22] == uParam1->f_5)
 		{
@@ -10930,7 +10930,7 @@ void func_96(var uParam0, var uParam1)//Position - 0x9BFC
 	{
 		func_107(joaat("WEAPON_MACHINEPISTOL"), uParam0, *uParam1, 0);
 	}
-	if ((Global_262145.f_12049 && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_FLASHLIGHT"))) && iLocal_66[25] == uParam1->f_5)
+	if ((Global_262145.f_12049 /* Tunable: TURN_ON_HALLOWEEN_WEAPONS */ && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_FLASHLIGHT"))) && iLocal_66[25] == uParam1->f_5)
 	{
 		func_107(joaat("WEAPON_FLASHLIGHT"), uParam0, *uParam1, 0);
 	}
@@ -11028,7 +11028,7 @@ void func_96(var uParam0, var uParam1)//Position - 0x9BFC
 	}
 	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_DOUBLEACTION")) && iLocal_66[49] == uParam1->f_5)
 	{
-		if (Global_262145.f_23472 && (func_103() || Global_1963965))
+		if (Global_262145.f_23472 /* Tunable: ENABLE_TREASURE_HUNT */ && (func_103() || Global_1963965))
 		{
 			func_107(joaat("WEAPON_DOUBLEACTION"), uParam0, *uParam1, 0);
 		}
@@ -11040,15 +11040,15 @@ void func_96(var uParam0, var uParam1)//Position - 0x9BFC
 			func_107(joaat("WEAPON_STONE_HATCHET"), uParam0, *uParam1, 0);
 		}
 	}
-	if ((WEAPON::IS_WEAPON_VALID(joaat("WEAPON_RAYCARBINE")) && iLocal_66[51] == uParam1->f_5) && Global_262145.f_26748)
+	if ((WEAPON::IS_WEAPON_VALID(joaat("WEAPON_RAYCARBINE")) && iLocal_66[51] == uParam1->f_5) && Global_262145.f_26748 /* Tunable: ENABLE_AW_HELLBRINGER */)
 	{
 		func_107(joaat("WEAPON_RAYCARBINE"), uParam0, *uParam1, 0);
 	}
-	if ((WEAPON::IS_WEAPON_VALID(joaat("WEAPON_RAYMINIGUN")) && iLocal_66[52] == uParam1->f_5) && Global_262145.f_26747)
+	if ((WEAPON::IS_WEAPON_VALID(joaat("WEAPON_RAYMINIGUN")) && iLocal_66[52] == uParam1->f_5) && Global_262145.f_26747 /* Tunable: ENABLE_AW_WIDOWMAKER */)
 	{
 		func_107(joaat("WEAPON_RAYMINIGUN"), uParam0, *uParam1, 0);
 	}
-	if ((WEAPON::IS_WEAPON_VALID(joaat("WEAPON_RAYPISTOL")) && (((func_17(25007, -1) || func_17(25002, -1)) || func_88(joaat("WEAPON_RAYPISTOL"), -1, 0)) || Global_262145.f_25756)) && iLocal_66[53] == uParam1->f_5)
+	if ((WEAPON::IS_WEAPON_VALID(joaat("WEAPON_RAYPISTOL")) && (((func_17(25007, -1) || func_17(25002, -1)) || func_88(joaat("WEAPON_RAYPISTOL"), -1, 0)) || Global_262145.f_25756 /* Tunable: ENABLE_AW_RAYGUN */)) && iLocal_66[53] == uParam1->f_5)
 	{
 		func_107(joaat("WEAPON_RAYPISTOL"), uParam0, *uParam1, 0);
 	}
@@ -11058,7 +11058,7 @@ void func_96(var uParam0, var uParam1)//Position - 0x9BFC
 	}
 	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_NAVYREVOLVER")) && iLocal_66[55] == uParam1->f_5)
 	{
-		if (Global_262145.f_28372 && (func_100() || Global_1963971))
+		if (Global_262145.f_28372 /* Tunable: ENABLE_SERIAL_KILLER */ && (func_100() || Global_1963971))
 		{
 			func_107(joaat("WEAPON_NAVYREVOLVER"), uParam0, *uParam1, 0);
 		}
@@ -11095,7 +11095,7 @@ void func_96(var uParam0, var uParam1)//Position - 0x9BFC
 	}
 	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_TACTICALRIFLE")) && iLocal_66[62] == uParam1->f_5)
 	{
-		if (((Global_262145.f_32775 || func_88(joaat("WEAPON_TACTICALRIFLE"), -1, 0)) || func_37(func_91(joaat("WEAPON_TACTICALRIFLE")), -1)) || func_97(joaat("WEAPON_TACTICALRIFLE")))
+		if (((Global_262145.f_32775 /* Tunable: UNLOCK_SERVICE_CARBINE_FOR_PURCHASE */ || func_88(joaat("WEAPON_TACTICALRIFLE"), -1, 0)) || func_37(func_91(joaat("WEAPON_TACTICALRIFLE")), -1)) || func_97(joaat("WEAPON_TACTICALRIFLE")))
 		{
 			func_107(joaat("WEAPON_TACTICALRIFLE"), uParam0, *uParam1, 0);
 		}
@@ -13994,7 +13994,7 @@ void func_149()//Position - 0xE1E1
 	{
 		iLocal_66[16] = -1;
 	}
-	if (func_104() || Global_262145.f_20269)
+	if (func_104() || Global_262145.f_20269 /* Tunable: ENABLE_RETURNING_CONTENT_WEAPON */)
 	{
 		if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_HATCHET")))
 		{
@@ -14078,7 +14078,7 @@ void func_149()//Position - 0xE1E1
 	{
 		iLocal_66[24] = -1;
 	}
-	if (Global_262145.f_12049 && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_FLASHLIGHT")))
+	if (Global_262145.f_12049 /* Tunable: TURN_ON_HALLOWEEN_WEAPONS */ && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_FLASHLIGHT")))
 	{
 		iLocal_66[25] = ((iLocal_65 / 9) + iLocal_64);
 		iLocal_65++;
@@ -14294,7 +14294,7 @@ void func_149()//Position - 0xE1E1
 	{
 		iLocal_66[48] = -1;
 	}
-	if ((Global_262145.f_23472 && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_DOUBLEACTION"))) && (func_103() || Global_1963965))
+	if ((Global_262145.f_23472 /* Tunable: ENABLE_TREASURE_HUNT */ && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_DOUBLEACTION"))) && (func_103() || Global_1963965))
 	{
 		iLocal_66[49] = ((iLocal_65 / 9) + iLocal_64);
 		iLocal_65++;
@@ -14312,7 +14312,7 @@ void func_149()//Position - 0xE1E1
 	{
 		iLocal_66[50] = -1;
 	}
-	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_RAYCARBINE")) && Global_262145.f_26748)
+	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_RAYCARBINE")) && Global_262145.f_26748 /* Tunable: ENABLE_AW_HELLBRINGER */)
 	{
 		iLocal_66[51] = ((iLocal_65 / 9) + iLocal_64);
 		iLocal_65++;
@@ -14321,7 +14321,7 @@ void func_149()//Position - 0xE1E1
 	{
 		iLocal_66[51] = -1;
 	}
-	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_RAYMINIGUN")) && Global_262145.f_26747)
+	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_RAYMINIGUN")) && Global_262145.f_26747 /* Tunable: ENABLE_AW_WIDOWMAKER */)
 	{
 		iLocal_66[52] = ((iLocal_65 / 9) + iLocal_64);
 		iLocal_65++;
@@ -14330,7 +14330,7 @@ void func_149()//Position - 0xE1E1
 	{
 		iLocal_66[52] = -1;
 	}
-	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_RAYPISTOL")) && (((func_17(25007, -1) || func_17(25002, -1)) || func_88(joaat("WEAPON_RAYPISTOL"), -1, 0)) || Global_262145.f_25756))
+	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_RAYPISTOL")) && (((func_17(25007, -1) || func_17(25002, -1)) || func_88(joaat("WEAPON_RAYPISTOL"), -1, 0)) || Global_262145.f_25756 /* Tunable: ENABLE_AW_RAYGUN */))
 	{
 		iLocal_66[53] = ((iLocal_65 / 9) + iLocal_64);
 		iLocal_65++;
@@ -14348,7 +14348,7 @@ void func_149()//Position - 0xE1E1
 	{
 		iLocal_66[54] = -1;
 	}
-	if ((Global_262145.f_28372 && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_NAVYREVOLVER"))) && (func_100() || Global_1963971))
+	if ((Global_262145.f_28372 /* Tunable: ENABLE_SERIAL_KILLER */ && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_NAVYREVOLVER"))) && (func_100() || Global_1963971))
 	{
 		iLocal_66[55] = ((iLocal_65 / 9) + iLocal_64);
 		iLocal_65++;
@@ -14384,7 +14384,7 @@ void func_149()//Position - 0xE1E1
 	{
 		iLocal_66[58] = -1;
 	}
-	if ((Global_262145.f_28372 && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_NAVYREVOLVER"))) && (func_100() || Global_1963971))
+	if ((Global_262145.f_28372 /* Tunable: ENABLE_SERIAL_KILLER */ && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_NAVYREVOLVER"))) && (func_100() || Global_1963971))
 	{
 		iLocal_66[55] = ((iLocal_65 / 9) + iLocal_64);
 		iLocal_65++;
@@ -14420,7 +14420,7 @@ void func_149()//Position - 0xE1E1
 	{
 		iLocal_66[61] = -1;
 	}
-	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_TACTICALRIFLE")) && (((Global_262145.f_32775 || func_88(joaat("WEAPON_TACTICALRIFLE"), -1, 0)) || func_37(func_91(joaat("WEAPON_TACTICALRIFLE")), -1)) || func_97(joaat("WEAPON_TACTICALRIFLE"))))
+	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_TACTICALRIFLE")) && (((Global_262145.f_32775 /* Tunable: UNLOCK_SERVICE_CARBINE_FOR_PURCHASE */ || func_88(joaat("WEAPON_TACTICALRIFLE"), -1, 0)) || func_37(func_91(joaat("WEAPON_TACTICALRIFLE")), -1)) || func_97(joaat("WEAPON_TACTICALRIFLE"))))
 	{
 		iLocal_66[62] = ((iLocal_65 / 9) + iLocal_64);
 		iLocal_65++;

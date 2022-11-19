@@ -3532,7 +3532,7 @@ void func_42(int iParam0)//Position - 0x1866
 {
 	int iVar0;
 	
-	if (Global_262145.f_9035)
+	if (Global_262145.f_9035 /* Tunable: DISABLE_DAILY_OBJECTIVES */)
 	{
 		return;
 	}

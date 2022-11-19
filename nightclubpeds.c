@@ -46612,7 +46612,7 @@ Vector3 func_439()//Position - 0x2D417
 			switch (Global_1578968)
 			{
 				case 0:
-					if (Global_262145.f_9395)
+					if (Global_262145.f_9395 /* Tunable: DISABLE_CHRISTMAS_TREE_APARTMENT */)
 					{
 						return -1607.889f, -3014.886f, -75.225f;
 					}

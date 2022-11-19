@@ -5728,7 +5728,7 @@ void func_162(struct<10> Param0, var uParam1, var uParam2, var uParam3, var uPar
 					uParam21->f_8 = 15;
 					uParam21->f_9 = 3;
 					uParam21->f_11 = 3;
-					if (!Global_262145.f_9395)
+					if (!Global_262145.f_9395 /* Tunable: DISABLE_CHRISTMAS_TREE_APARTMENT */)
 					{
 						uParam21->f_17 = 1;
 					}
@@ -5743,7 +5743,7 @@ void func_162(struct<10> Param0, var uParam1, var uParam2, var uParam3, var uPar
 					uParam21->f_8 = 15;
 					uParam21->f_9 = 3;
 					uParam21->f_11 = 2;
-					if (!Global_262145.f_9395)
+					if (!Global_262145.f_9395 /* Tunable: DISABLE_CHRISTMAS_TREE_APARTMENT */)
 					{
 						uParam21->f_17 = 1;
 					}

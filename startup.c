@@ -12737,243 +12737,243 @@ int func_67(int iParam0)//Position - 0x2239B
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_3959;
+			return Global_262145.f_3959 /* Tunable: PROPERTY_HIGH_APT_1_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 2:
-			return Global_262145.f_3960;
+			return Global_262145.f_3960 /* Tunable: PROPERTY_HIGH_APT_2_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 3:
-			return Global_262145.f_3961;
+			return Global_262145.f_3961 /* Tunable: PROPERTY_HIGH_APT_3_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 4:
-			return Global_262145.f_3962;
+			return Global_262145.f_3962 /* Tunable: PROPERTY_HIGH_APT_4_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 5:
-			return Global_262145.f_3963;
+			return Global_262145.f_3963 /* Tunable: PROPERTY_HIGH_APT_5_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 6:
-			return Global_262145.f_3964;
+			return Global_262145.f_3964 /* Tunable: PROPERTY_HIGH_APT_6_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 7:
-			return Global_262145.f_3965;
+			return Global_262145.f_3965 /* Tunable: PROPERTY_HIGH_APT_7_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 34:
-			return Global_262145.f_3966;
+			return Global_262145.f_3966 /* Tunable: PROPERTY_HIGH_APT_8_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 35:
-			return Global_262145.f_3967;
+			return Global_262145.f_3967 /* Tunable: PROPERTY_HIGH_APT_9_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 36:
-			return Global_262145.f_3968;
+			return Global_262145.f_3968 /* Tunable: PROPERTY_HIGH_APT_10_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 37:
-			return Global_262145.f_3969;
+			return Global_262145.f_3969 /* Tunable: PROPERTY_HIGH_APT_11_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 38:
-			return Global_262145.f_3970;
+			return Global_262145.f_3970 /* Tunable: PROPERTY_HIGH_APT_12_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 39:
-			return Global_262145.f_3971;
+			return Global_262145.f_3971 /* Tunable: PROPERTY_HIGH_APT_13_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 40:
-			return Global_262145.f_3972;
+			return Global_262145.f_3972 /* Tunable: PROPERTY_HIGH_APT_14_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 41:
-			return Global_262145.f_3973;
+			return Global_262145.f_3973 /* Tunable: PROPERTY_HIGH_APT_15_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 42:
-			return Global_262145.f_3974;
+			return Global_262145.f_3974 /* Tunable: PROPERTY_HIGH_APT_16_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 43:
-			return Global_262145.f_3975;
+			return Global_262145.f_3975 /* Tunable: PROPERTY_HIGH_APT_17_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 8:
-			return Global_262145.f_3976;
+			return Global_262145.f_3976 /* Tunable: PROPERTY_MEDIUM_APT_1_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 9:
-			return Global_262145.f_3977;
+			return Global_262145.f_3977 /* Tunable: PROPERTY_MEDIUM_APT_2_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 10:
-			return Global_262145.f_3978;
+			return Global_262145.f_3978 /* Tunable: PROPERTY_MEDIUM_APT_3_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 11:
-			return Global_262145.f_3979;
+			return Global_262145.f_3979 /* Tunable: PROPERTY_MEDIUM_APT_4_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 12:
-			return Global_262145.f_3980;
+			return Global_262145.f_3980 /* Tunable: PROPERTY_MEDIUM_APT_5_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 13:
-			return Global_262145.f_3981;
+			return Global_262145.f_3981 /* Tunable: PROPERTY_MEDIUM_APT_6_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 14:
-			return Global_262145.f_3982;
+			return Global_262145.f_3982 /* Tunable: PROPERTY_MEDIUM_APT_7_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 15:
-			return Global_262145.f_3983;
+			return Global_262145.f_3983 /* Tunable: PROPERTY_MEDIUM_APT_8_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 16:
-			return Global_262145.f_3984;
+			return Global_262145.f_3984 /* Tunable: PROPERTY_MEDIUM_APT_9_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 17:
-			return Global_262145.f_3985;
+			return Global_262145.f_3985 /* Tunable: PROPERTY_LOW_APT_1_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 18:
-			return Global_262145.f_3986;
+			return Global_262145.f_3986 /* Tunable: PROPERTY_LOW_APT_2_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 19:
-			return Global_262145.f_3987;
+			return Global_262145.f_3987 /* Tunable: PROPERTY_LOW_APT_3_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 20:
-			return Global_262145.f_3988;
+			return Global_262145.f_3988 /* Tunable: PROPERTY_LOW_APT_4_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 21:
-			return Global_262145.f_3989;
+			return Global_262145.f_3989 /* Tunable: PROPERTY_LOW_APT_5_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 22:
-			return Global_262145.f_3990;
+			return Global_262145.f_3990 /* Tunable: PROPERTY_LOW_APT_6_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 23:
-			return Global_262145.f_3991;
+			return Global_262145.f_3991 /* Tunable: PROPERTY_LOW_APT_7_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 24:
-			return Global_262145.f_3992;
+			return Global_262145.f_3992 /* Tunable: PROPERTY_GARAGE_EAST_LOS_SANTOS_1_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 25:
-			return Global_262145.f_3993;
+			return Global_262145.f_3993 /* Tunable: PROPERTY_GARAGE_EAST_LOS_SANTOS_2_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 26:
-			return Global_262145.f_3994;
+			return Global_262145.f_3994 /* Tunable: PROPERTY_GARAGE_EAST_LOS_SANTOS_3_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 27:
-			return Global_262145.f_3995;
+			return Global_262145.f_3995 /* Tunable: PROPERTY_GARAGE_EAST_LOS_SANTOS_4_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 28:
-			return Global_262145.f_3996;
+			return Global_262145.f_3996 /* Tunable: PROPERTY_GARAGE_EAST_LOS_SANTOS_5_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 29:
-			return Global_262145.f_3997;
+			return Global_262145.f_3997 /* Tunable: PROPERTY_GARAGE_EAST_LOS_SANTOS_6_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 30:
-			return Global_262145.f_3998;
+			return Global_262145.f_3998 /* Tunable: PROPERTY_GARAGE_EAST_LOS_SANTOS_7_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 31:
-			return Global_262145.f_3999;
+			return Global_262145.f_3999 /* Tunable: PROPERTY_GARAGE_EAST_LOS_SANTOS_8_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 32:
-			return Global_262145.f_4000;
+			return Global_262145.f_4000 /* Tunable: PROPERTY_GARAGE_SOUTH_LOS_SANTOS_1_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 33:
-			return Global_262145.f_4001;
+			return Global_262145.f_4001 /* Tunable: PROPERTY_GARAGE_SOUTH_LOS_SANTOS_2_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 44:
-			return Global_262145.f_4002;
+			return Global_262145.f_4002 /* Tunable: PROPERTY_GARAGE_NEW_1_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 45:
-			return Global_262145.f_4003;
+			return Global_262145.f_4003 /* Tunable: PROPERTY_GARAGE_NEW_2_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 46:
-			return Global_262145.f_4004;
+			return Global_262145.f_4004 /* Tunable: PROPERTY_GARAGE_NEW_3_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 47:
-			return Global_262145.f_4005;
+			return Global_262145.f_4005 /* Tunable: PROPERTY_GARAGE_NEW_5_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 48:
-			return Global_262145.f_4006;
+			return Global_262145.f_4006 /* Tunable: PROPERTY_GARAGE_NEW_6_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 49:
-			return Global_262145.f_4007;
+			return Global_262145.f_4007 /* Tunable: PROPERTY_GARAGE_NEW_7_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 50:
-			return Global_262145.f_4008;
+			return Global_262145.f_4008 /* Tunable: PROPERTY_GARAGE_NEW_8_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 51:
-			return Global_262145.f_4009;
+			return Global_262145.f_4009 /* Tunable: PROPERTY_GARAGE_NEW_9_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 52:
-			return Global_262145.f_4010;
+			return Global_262145.f_4010 /* Tunable: PROPERTY_GARAGE_NEW_14_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 53:
-			return Global_262145.f_4011;
+			return Global_262145.f_4011 /* Tunable: PROPERTY_GARAGE_NEW_16_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 54:
-			return Global_262145.f_4012;
+			return Global_262145.f_4012 /* Tunable: PROPERTY_GARAGE_NEW_17_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 55:
-			return Global_262145.f_4013;
+			return Global_262145.f_4013 /* Tunable: PROPERTY_GARAGE_NEW_18_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 56:
-			return Global_262145.f_4014;
+			return Global_262145.f_4014 /* Tunable: PROPERTY_GARAGE_NEW_19_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 57:
-			return Global_262145.f_4015;
+			return Global_262145.f_4015 /* Tunable: PROPERTY_GARAGE_NEW_20_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 58:
-			return Global_262145.f_4016;
+			return Global_262145.f_4016 /* Tunable: PROPERTY_GARAGE_NEW_21_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 59:
-			return Global_262145.f_4017;
+			return Global_262145.f_4017 /* Tunable: PROPERTY_GARAGE_NEW_22_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 60:
-			return Global_262145.f_4018;
+			return Global_262145.f_4018 /* Tunable: PROPERTY_GARAGE_NEW_23_EXPENDITURE_MODIFIER */;
 			break;
 		
 		case 61:
@@ -12997,86 +12997,86 @@ int func_67(int iParam0)//Position - 0x2239B
 			break;
 		
 		case 66:
-			return Global_262145.f_8289;
+			return Global_262145.f_8289 /* Tunable: PROPERTY_3_ACE_JONES_DR */;
 			break;
 		
 		case 67:
-			return Global_262145.f_8290;
+			return Global_262145.f_8290 /* Tunable: PROPERTY_12_SUSTANCIA_RD */;
 			break;
 		
 		case 68:
-			return Global_262145.f_8291;
+			return Global_262145.f_8291 /* Tunable: PROPERTY_4584_PROCOPIO_DR */;
 			break;
 		
 		case 69:
-			return Global_262145.f_8292;
+			return Global_262145.f_8292 /* Tunable: PROPERTY_4401_PROCOPIO_DR */;
 			break;
 		
 		case 70:
-			return Global_262145.f_8293;
+			return Global_262145.f_8293 /* Tunable: PROPERTY_0232_PALETO_BLVD */;
 			break;
 		
 		case 71:
-			return Global_262145.f_8294;
+			return Global_262145.f_8294 /* Tunable: PROPERTY_140_ZANCUDO_AVE */;
 			break;
 		
 		case 72:
-			return Global_262145.f_8295;
+			return Global_262145.f_8295 /* Tunable: PROPERTY_1893_GRAPESEED_AVE */;
 			break;
 		
 		case 73:
-			return Global_262145.f_13312;
+			return Global_262145.f_13312 /* Tunable: APARTMENT_CAR_MODSSTILT_3655_WILD_OATS_DRIVE */;
 		
 		case 74:
-			return Global_262145.f_13313;
+			return Global_262145.f_13313 /* Tunable: APARTMENT_CAR_MODSSTILT_2044_NORTH_CONKER_AVENUE */;
 		
 		case 75:
-			return Global_262145.f_13314;
+			return Global_262145.f_13314 /* Tunable: APARTMENT_CAR_MODSSTILT_2868_HILLCREST_AVENUE */;
 		
 		case 76:
-			return Global_262145.f_13315;
+			return Global_262145.f_13315 /* Tunable: APARTMENT_CAR_MODSSTILT_2862_HILLCREST_AVENUE */;
 		
 		case 77:
-			return Global_262145.f_13316;
+			return Global_262145.f_13316 /* Tunable: APARTMENT_CAR_MODSSTILT_3677_WHISPYMOUND_DRIVE */;
 		
 		case 78:
-			return Global_262145.f_13317;
+			return Global_262145.f_13317 /* Tunable: APARTMENT_CAR_MODSSTILT_2117_MILTON_ROAD */;
 		
 		case 79:
-			return Global_262145.f_13318;
+			return Global_262145.f_13318 /* Tunable: APARTMENT_CAR_MODSSTILT_2866_HILLCREST_AVENUE */;
 		
 		case 80:
-			return Global_262145.f_13319;
+			return Global_262145.f_13319 /* Tunable: APARTMENT_CAR_MODSSTILT_2874_HILLCREST_AVENUE */;
 		
 		case 81:
-			return Global_262145.f_13320;
+			return Global_262145.f_13320 /* Tunable: APARTMENT_CAR_MODSSTILT_2113_MAD_WAYNE_THUNDER_DRIVE */;
 		
 		case 82:
-			return Global_262145.f_13321;
+			return Global_262145.f_13321 /* Tunable: APARTMENT_CAR_MODSSTILT_2045_NORTH_CONKER_AVENUE */;
 		
 		case 83:
-			return Global_262145.f_13309;
+			return Global_262145.f_13309 /* Tunable: APARTMENT_CAR_MODSECLIPSE_TOWERS_PENTHOUSE_SUITE_1 */;
 		
 		case 84:
-			return Global_262145.f_13310;
+			return Global_262145.f_13310 /* Tunable: APARTMENT_CAR_MODSECLIPSE_TOWERS_PENTHOUSE_SUITE_2 */;
 		
 		case 85:
-			return Global_262145.f_13311;
+			return Global_262145.f_13311 /* Tunable: APARTMENT_CAR_MODSECLIPSE_TOWERS_PENTHOUSE_SUITE_3 */;
 		
 		case 86:
 			return 27000000;
 		
 		case 87:
-			return Global_262145.f_15947;
+			return Global_262145.f_15947 /* Tunable: EXEC1_OFFICE1_LOMBANK */;
 		
 		case 88:
-			return Global_262145.f_15948;
+			return Global_262145.f_15948 /* Tunable: EXEC1_OFFICE2_MAZE1 */;
 		
 		case 89:
-			return Global_262145.f_15949;
+			return Global_262145.f_15949 /* Tunable: EXEC1_OFFICE3_ARCADIUS */;
 		
 		case 90:
-			return Global_262145.f_15950;
+			return Global_262145.f_15950 /* Tunable: EXEC1_OFFICE4_MAZE2 */;
 		
 		case 91:
 			return Global_262145.f_18035;
@@ -13115,40 +13115,40 @@ int func_67(int iParam0)//Position - 0x2239B
 			return Global_262145.f_18036;
 		
 		case 103:
-			return Global_262145.f_19700;
+			return Global_262145.f_19700 /* Tunable: IMPEXP_GARAGE_LEVEL1 */;
 		
 		case 104:
-			return Global_262145.f_19593;
+			return Global_262145.f_19593 /* Tunable: IMPEXP_GARAGE_LEVEL2_COST */;
 		
 		case 105:
-			return Global_262145.f_19594;
+			return Global_262145.f_19594 /* Tunable: IMPEXP_GARAGE_LEVEL3_COST */;
 		
 		case 106:
-			return Global_262145.f_19700;
+			return Global_262145.f_19700 /* Tunable: IMPEXP_GARAGE_LEVEL1 */;
 		
 		case 107:
-			return Global_262145.f_19593;
+			return Global_262145.f_19593 /* Tunable: IMPEXP_GARAGE_LEVEL2_COST */;
 		
 		case 108:
-			return Global_262145.f_19594;
+			return Global_262145.f_19594 /* Tunable: IMPEXP_GARAGE_LEVEL3_COST */;
 		
 		case 109:
-			return Global_262145.f_19700;
+			return Global_262145.f_19700 /* Tunable: IMPEXP_GARAGE_LEVEL1 */;
 		
 		case 110:
-			return Global_262145.f_19593;
+			return Global_262145.f_19593 /* Tunable: IMPEXP_GARAGE_LEVEL2_COST */;
 		
 		case 111:
-			return Global_262145.f_19594;
+			return Global_262145.f_19594 /* Tunable: IMPEXP_GARAGE_LEVEL3_COST */;
 		
 		case 112:
-			return Global_262145.f_19700;
+			return Global_262145.f_19700 /* Tunable: IMPEXP_GARAGE_LEVEL1 */;
 		
 		case 113:
-			return Global_262145.f_19593;
+			return Global_262145.f_19593 /* Tunable: IMPEXP_GARAGE_LEVEL2_COST */;
 		
 		case 114:
-			return Global_262145.f_19594;
+			return Global_262145.f_19594 /* Tunable: IMPEXP_GARAGE_LEVEL3_COST */;
 		
 		case 115:
 			return 3000000;

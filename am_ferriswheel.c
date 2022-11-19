@@ -3891,7 +3891,7 @@ void func_31()//Position - 0x4E78
 							{
 								if (ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), -1661.9504f, -1127.0112f, 12.6973f, 1f, 1f, 2f, false, true, 0))
 								{
-									func_136("AMFW_ENTER" /* GXT: Press ~INPUT_CONTEXT~ to ride the Ferris Whale. The cost is $~1~. */, Global_262145.f_8253, -1);
+									func_136("AMFW_ENTER" /* GXT: Press ~INPUT_CONTEXT~ to ride the Ferris Whale. The cost is $~1~. */, Global_262145.f_8253 /* Tunable: FERRISWHEELCOST */, -1);
 									MISC::SET_BIT(&uLocal_369, 0);
 									if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 51 /*INPUT_CONTEXT*/))
 									{
@@ -3998,7 +3998,7 @@ void func_31()//Position - 0x4E78
 									}
 									else
 									{
-										func_136("AMFW_GET_IN_P" /* GXT: Press ~INPUT_ENTER~ to get in the gondola. The cost is $~1~. */, Global_262145.f_8253, -1);
+										func_136("AMFW_GET_IN_P" /* GXT: Press ~INPUT_ENTER~ to get in the gondola. The cost is $~1~. */, Global_262145.f_8253 /* Tunable: FERRISWHEELCOST */, -1);
 									}
 									if (PAD::IS_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 23 /*INPUT_ENTER*/))
 									{
@@ -5224,7 +5224,7 @@ void func_81(int iParam0)//Position - 0x6AEC
 {
 	int iVar0;
 	
-	if (Global_262145.f_9035)
+	if (Global_262145.f_9035 /* Tunable: DISABLE_DAILY_OBJECTIVES */)
 	{
 		return;
 	}
@@ -6260,16 +6260,16 @@ void func_117()//Position - 0x82A1
 {
 	int iVar0;
 	
-	if (func_135(1) >= Global_262145.f_8253 || MONEY::NETWORK_CAN_SPEND_MONEY(Global_262145.f_8253, false, false, true, -1, 0))
+	if (func_135(1) >= Global_262145.f_8253 /* Tunable: FERRISWHEELCOST */ || MONEY::NETWORK_CAN_SPEND_MONEY(Global_262145.f_8253 /* Tunable: FERRISWHEELCOST */, false, false, true, -1, 0))
 	{
 		if (func_134())
 		{
-			func_122(joaat("SERVICE_SPEND_FAIRGROUND"), Global_262145.f_8253, &iVar0, 0, 1, 0);
+			func_122(joaat("SERVICE_SPEND_FAIRGROUND"), Global_262145.f_8253 /* Tunable: FERRISWHEELCOST */, &iVar0, 0, 1, 0);
 			Global_4534105[iVar0 /*85*/].f_1 = 2;
 		}
 		else
 		{
-			MONEY::NETWORK_BUY_FAIRGROUND_RIDE(Global_262145.f_8253, 2, false, true, 0);
+			MONEY::NETWORK_BUY_FAIRGROUND_RIDE(Global_262145.f_8253 /* Tunable: FERRISWHEELCOST */, 2, false, true, 0);
 		}
 		MISC::SET_BIT(&(Local_1086[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2), 8);
 	}
@@ -6974,7 +6974,7 @@ void func_131(struct<67> Param0, var uParam1, var uParam2, var uParam3, var uPar
 	Var0.f_2 = { Param0.f_66 };
 	Var0.f_2.f_33 = iParam19;
 	iVar1 = func_133(Var0.f_1);
-	if ((Global_262145.f_24104 && !Global_262145.f_24105) && !Global_262145.f_24106)
+	if ((Global_262145.f_24104 /* Tunable: BLOCK_NS_TRANS */ && !Global_262145.f_24105 /* Tunable: SC_RUN_TRANS */) && !Global_262145.f_24106 /* Tunable: BG_RUN_TRANS */)
 	{
 		return;
 	}

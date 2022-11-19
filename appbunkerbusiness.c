@@ -725,64 +725,64 @@ int func_14(int iParam0)//Position - 0x62C
 	switch (iParam0)
 	{
 		case 2:
-			return Global_262145.f_18956;
+			return Global_262145.f_18956 /* Tunable: BIKER_WEED_CAPACITY */;
 		
 		case 1:
-			return Global_262145.f_18964;
+			return Global_262145.f_18964 /* Tunable: BIKER_METH_CAPACITY */;
 		
 		case 3:
-			return Global_262145.f_18972;
+			return Global_262145.f_18972 /* Tunable: BIKER_COCAINE_CAPACITY */;
 		
 		case 5:
-			return Global_262145.f_18980;
+			return Global_262145.f_18980 /* Tunable: BIKER_FAKEIDS_CAPACITY */;
 		
 		case 4:
-			return Global_262145.f_18988;
+			return Global_262145.f_18988 /* Tunable: BIKER_COUNTERCASH_CAPACITY */;
 		
 		case 7:
-			return Global_262145.f_18956;
+			return Global_262145.f_18956 /* Tunable: BIKER_WEED_CAPACITY */;
 		
 		case 6:
-			return Global_262145.f_18964;
+			return Global_262145.f_18964 /* Tunable: BIKER_METH_CAPACITY */;
 		
 		case 8:
-			return Global_262145.f_18972;
+			return Global_262145.f_18972 /* Tunable: BIKER_COCAINE_CAPACITY */;
 		
 		case 10:
-			return Global_262145.f_18980;
+			return Global_262145.f_18980 /* Tunable: BIKER_FAKEIDS_CAPACITY */;
 		
 		case 9:
-			return Global_262145.f_18988;
+			return Global_262145.f_18988 /* Tunable: BIKER_COUNTERCASH_CAPACITY */;
 		
 		case 12:
-			return Global_262145.f_18956;
+			return Global_262145.f_18956 /* Tunable: BIKER_WEED_CAPACITY */;
 		
 		case 11:
-			return Global_262145.f_18964;
+			return Global_262145.f_18964 /* Tunable: BIKER_METH_CAPACITY */;
 		
 		case 13:
-			return Global_262145.f_18972;
+			return Global_262145.f_18972 /* Tunable: BIKER_COCAINE_CAPACITY */;
 		
 		case 15:
-			return Global_262145.f_18980;
+			return Global_262145.f_18980 /* Tunable: BIKER_FAKEIDS_CAPACITY */;
 		
 		case 14:
-			return Global_262145.f_18988;
+			return Global_262145.f_18988 /* Tunable: BIKER_COUNTERCASH_CAPACITY */;
 		
 		case 17:
-			return Global_262145.f_18956;
+			return Global_262145.f_18956 /* Tunable: BIKER_WEED_CAPACITY */;
 		
 		case 16:
-			return Global_262145.f_18964;
+			return Global_262145.f_18964 /* Tunable: BIKER_METH_CAPACITY */;
 		
 		case 18:
-			return Global_262145.f_18972;
+			return Global_262145.f_18972 /* Tunable: BIKER_COCAINE_CAPACITY */;
 		
 		case 20:
-			return Global_262145.f_18980;
+			return Global_262145.f_18980 /* Tunable: BIKER_FAKEIDS_CAPACITY */;
 		
 		case 19:
-			return Global_262145.f_18988;
+			return Global_262145.f_18988 /* Tunable: BIKER_COUNTERCASH_CAPACITY */;
 		
 		case 21:
 		case 22:
@@ -931,13 +931,13 @@ int func_23(int iParam0)//Position - 0x9AE
 	{
 		case 9:
 		case 10:
-			return !Global_262145.f_21145;
+			return !Global_262145.f_21145 /* Tunable: ENABLE_INSURGENT_MODSHOP */;
 		
 		case 11:
 		case 12:
 		case 13:
 		case 14:
-			return !Global_262145.f_21144;
+			return !Global_262145.f_21144 /* Tunable: ENABLE_TECHNICAL_MODSHOP */;
 		
 		default:
 	}
@@ -1140,7 +1140,7 @@ int func_28(int iParam0)//Position - 0xC56
 		case 29:
 		case 30:
 		case 31:
-			return Global_262145.f_21591;
+			return Global_262145.f_21591 /* Tunable: GR_RESEARCH_CAPACITY */;
 		
 		default:
 	}
@@ -1558,161 +1558,161 @@ int func_40(int iParam0)//Position - 0x103F
 
 int func_41(int iParam0)//Position - 0x12B5
 {
-	if (Global_262145.f_21901)
+	if (Global_262145.f_21901 /* Tunable: GR_RESEARCH_UNLOCK_ALL */)
 	{
 		return 1;
 	}
 	switch (iParam0)
 	{
 		case 0:
-			return Global_262145.f_21850;
+			return Global_262145.f_21850 /* Tunable: GR_RESEARCH_UNLOCK_APC_SAM_BATTERY */;
 		
 		case 1:
-			return Global_262145.f_21851;
+			return Global_262145.f_21851 /* Tunable: GR_RESEARCH_UNLOCK_BALLISTIC_EQUIPMENT */;
 		
 		case 2:
-			return Global_262145.f_21852;
+			return Global_262145.f_21852 /* Tunable: GR_RESEARCH_UNLOCK_HALF_TRACK_20MM_QUAD_CANNONS */;
 		
 		case 3:
-			return Global_262145.f_21853;
+			return Global_262145.f_21853 /* Tunable: GR_RESEARCH_UNLOCK_WEAPONIZED_TAMPA_DUAL_REMOTE_MINIGUN */;
 		
 		case 4:
-			return Global_262145.f_21854;
+			return Global_262145.f_21854 /* Tunable: GR_RESEARCH_UNLOCK_WEAPONIZED_TAMPA_REAR_FIRING_MORTAR */;
 		
 		case 5:
-			return Global_262145.f_21855;
+			return Global_262145.f_21855 /* Tunable: GR_RESEARCH_UNLOCK_WEAPONIZED_TAMPA_FRONT_MISSILE_LAUNCHERS */;
 		
 		case 6:
-			return Global_262145.f_21856;
+			return Global_262145.f_21856 /* Tunable: GR_RESEARCH_UNLOCK_WEAPONIZED_TAMPA_HEAVY_CHASSIS_ARMOR */;
 		
 		case 7:
-			return Global_262145.f_21857;
+			return Global_262145.f_21857 /* Tunable: GR_RESEARCH_UNLOCK_DUNE_FAV_40MM_GRENADE_LAUNCHER */;
 		
 		case 8:
-			return Global_262145.f_21858;
+			return Global_262145.f_21858 /* Tunable: GR_RESEARCH_UNLOCK_DUNE_FAV_762MM_MINIGUN */;
 		
 		case 9:
-			return Global_262145.f_21859;
+			return Global_262145.f_21859 /* Tunable: GR_RESEARCH_UNLOCK_INSURGENT_PICK_UP_CUSTOM_50_CAL_MINIGUN */;
 		
 		case 10:
-			return Global_262145.f_21860;
+			return Global_262145.f_21860 /* Tunable: GR_RESEARCH_UNLOCK_INSURGENT_PICK_UP_CUSTOM_HEAVY_ARMOR_PLATING */;
 		
 		case 11:
-			return Global_262145.f_21861;
+			return Global_262145.f_21861 /* Tunable: GR_RESEARCH_UNLOCK_TECHNICAL_CUSTOM_762MM_MINIGUN */;
 		
 		case 12:
-			return Global_262145.f_21862;
+			return Global_262145.f_21862 /* Tunable: GR_RESEARCH_UNLOCK_TECHNICAL_CUSTOM_RAM_BAR */;
 		
 		case 13:
-			return Global_262145.f_21863;
+			return Global_262145.f_21863 /* Tunable: GR_RESEARCH_UNLOCK_TECHNICAL_CUSTOM_BRUTE_BAR */;
 		
 		case 14:
-			return Global_262145.f_21864;
+			return Global_262145.f_21864 /* Tunable: GR_RESEARCH_UNLOCK_TECHNICAL_CUSTOM_HEAVY_CHASSIS_ARMOR */;
 		
 		case 15:
-			return Global_262145.f_21865;
+			return Global_262145.f_21865 /* Tunable: GR_RESEARCH_UNLOCK_OPPRESSOR_ROCKETS */;
 		
 		case 16:
-			return Global_262145.f_21866;
+			return Global_262145.f_21866 /* Tunable: GR_RESEARCH_UNLOCK_FRACTAL_LIVERY_SET */;
 		
 		case 17:
-			return Global_262145.f_21867;
+			return Global_262145.f_21867 /* Tunable: GR_RESEARCH_UNLOCK_DIGITAL_LIVERY_SET */;
 		
 		case 18:
-			return Global_262145.f_21868;
+			return Global_262145.f_21868 /* Tunable: GR_RESEARCH_UNLOCK_GEOMETRIC_LIVERY_SET */;
 		
 		case 19:
-			return Global_262145.f_21869;
+			return Global_262145.f_21869 /* Tunable: GR_RESEARCH_UNLOCK_NATURE_RESERVE_LIVERY */;
 		
 		case 20:
-			return Global_262145.f_21870;
+			return Global_262145.f_21870 /* Tunable: GR_RESEARCH_UNLOCK_NAVAL_BATTLE_LIVERY */;
 		
 		case 21:
-			return Global_262145.f_21871;
+			return Global_262145.f_21871 /* Tunable: GR_RESEARCH_UNLOCK_ANTI_AIRCRAFT_TRAILER_DUAL_20MM_FLAK_CANNON */;
 		
 		case 22:
-			return Global_262145.f_21872;
+			return Global_262145.f_21872 /* Tunable: GR_RESEARCH_UNLOCK_ANTI_AIRCRAFT_TRAILER_HOMING_MISSILE_BATTERY */;
 		
 		case 23:
-			return Global_262145.f_21873;
+			return Global_262145.f_21873 /* Tunable: GR_RESEARCH_UNLOCK_MOBILE_OPERATIONS_CENTER_REAR_TURRETS */;
 		
 		case 24:
-			return Global_262145.f_21874;
+			return Global_262145.f_21874 /* Tunable: GR_RESEARCH_UNLOCK_INCENDIARY_ROUNDS */;
 		
 		case 25:
-			return Global_262145.f_21875;
+			return Global_262145.f_21875 /* Tunable: GR_RESEARCH_UNLOCK_HOLLOW_POINT_ROUNDS */;
 		
 		case 26:
-			return Global_262145.f_21876;
+			return Global_262145.f_21876 /* Tunable: GR_RESEARCH_UNLOCK_ARMOR_PIERCING_ROUNDS */;
 		
 		case 27:
-			return Global_262145.f_21877;
+			return Global_262145.f_21877 /* Tunable: GR_RESEARCH_UNLOCK_FULL_METAL_JACKET_ROUNDS */;
 		
 		case 28:
-			return Global_262145.f_21878;
+			return Global_262145.f_21878 /* Tunable: GR_RESEARCH_UNLOCK_EXPLOSIVE_ROUNDS */;
 		
 		case 29:
-			return Global_262145.f_21879;
+			return Global_262145.f_21879 /* Tunable: GR_RESEARCH_UNLOCK_PISTOL_MK_II_RAIL_MOUNT */;
 		
 		case 30:
-			return Global_262145.f_21880;
+			return Global_262145.f_21880 /* Tunable: GR_RESEARCH_UNLOCK_PISTOL_MK_II_COMPENSATOR */;
 		
 		case 31:
-			return Global_262145.f_21881;
+			return Global_262145.f_21881 /* Tunable: GR_RESEARCH_UNLOCK_SMG_MK_II_HOLOGRAPHIC_SIGHT */;
 		
 		case 32:
-			return Global_262145.f_21882;
+			return Global_262145.f_21882 /* Tunable: GR_RESEARCH_UNLOCK_SMG_MK_II_HEAVY_BARREL */;
 		
 		case 33:
-			return Global_262145.f_21883;
+			return Global_262145.f_21883 /* Tunable: GR_RESEARCH_UNLOCK_HEAVY_SNIPER_MK_II_NIGHT_VISION_SCOPE */;
 		
 		case 34:
-			return Global_262145.f_21884;
+			return Global_262145.f_21884 /* Tunable: GR_RESEARCH_UNLOCK_HEAVY_SNIPER_MK_II_THERMAL_SCOPE */;
 		
 		case 35:
-			return Global_262145.f_21885;
+			return Global_262145.f_21885 /* Tunable: GR_RESEARCH_UNLOCK_HEAVY_SNIPER_MK_II_HEAVY_BARREL */;
 		
 		case 36:
-			return Global_262145.f_21886;
+			return Global_262145.f_21886 /* Tunable: GR_RESEARCH_UNLOCK_COMBAT_MG_MK_II_HOLOGRAPHIC_SIGHT */;
 		
 		case 37:
-			return Global_262145.f_21887;
+			return Global_262145.f_21887 /* Tunable: GR_RESEARCH_UNLOCK_COMBAT_MG_MK_II_HEAVY_BARREL */;
 		
 		case 38:
-			return Global_262145.f_21888;
+			return Global_262145.f_21888 /* Tunable: GR_RESEARCH_UNLOCK_ASSAULT_RIFLE_MK_II_HOLOGRAPHIC_SIGHT */;
 		
 		case 39:
-			return Global_262145.f_21889;
+			return Global_262145.f_21889 /* Tunable: GR_RESEARCH_UNLOCK_ASSAULT_RIFLE_MK_II_HEAVY_BARREL */;
 		
 		case 40:
-			return Global_262145.f_21890;
+			return Global_262145.f_21890 /* Tunable: GR_RESEARCH_UNLOCK_CARBINE_RIFLE_MK_II_HOLOGRAPHIC_SIGHT */;
 		
 		case 41:
-			return Global_262145.f_21891;
+			return Global_262145.f_21891 /* Tunable: GR_RESEARCH_UNLOCK_CARBINE_RIFLE_MK_II_HEAVY_BARREL */;
 		
 		case 42:
-			return Global_262145.f_21892;
+			return Global_262145.f_21892 /* Tunable: GR_RESEARCH_UNLOCK_PROXIMITY_MINES */;
 		
 		case 43:
-			return Global_262145.f_21893;
+			return Global_262145.f_21893 /* Tunable: GR_RESEARCH_UNLOCK_TIGER_STRIPE */;
 		
 		case 44:
-			return Global_262145.f_21894;
+			return Global_262145.f_21894 /* Tunable: GR_RESEARCH_UNLOCK_SKULL */;
 		
 		case 45:
-			return Global_262145.f_21895;
+			return Global_262145.f_21895 /* Tunable: GR_RESEARCH_UNLOCK_SESSANTA_NOVE */;
 		
 		case 46:
-			return Global_262145.f_21896;
+			return Global_262145.f_21896 /* Tunable: GR_RESEARCH_UNLOCK_PERSEUS */;
 		
 		case 47:
-			return Global_262145.f_21897;
+			return Global_262145.f_21897 /* Tunable: GR_RESEARCH_UNLOCK_LEOPARD_PRINT */;
 		
 		case 48:
-			return Global_262145.f_21898;
+			return Global_262145.f_21898 /* Tunable: GR_RESEARCH_UNLOCK_ZEBRA_STRIPE */;
 		
 		case 49:
-			return Global_262145.f_21899;
+			return Global_262145.f_21899 /* Tunable: GR_RESEARCH_UNLOCK_GEOMETRY */;
 		
 		case 50:
 			return Global_262145.f_21900;
@@ -1807,13 +1807,13 @@ int func_46(int iParam0, int iParam1)//Position - 0x1789
 			switch (iParam0)
 			{
 				case 0:
-					return Global_262145.f_18117;
+					return Global_262145.f_18117 /* Tunable: BIKER_FORGERY_BUSINESS_EQUIPMENT_UPGRADE */;
 				
 				case 2:
-					return Global_262145.f_18118;
+					return Global_262145.f_18118 /* Tunable: BIKER_FORGERY_BUSINESS_SECURITY_UPGRADE */;
 				
 				case 1:
-					return Global_262145.f_18119;
+					return Global_262145.f_18119 /* Tunable: BIKER_FORGERY_BUSINESS_STAFF_UPGRADE */;
 				
 				default:
 			}
@@ -1823,13 +1823,13 @@ int func_46(int iParam0, int iParam1)//Position - 0x1789
 			switch (iParam0)
 			{
 				case 0:
-					return Global_262145.f_18120;
+					return Global_262145.f_18120 /* Tunable: BIKER_COUNTERFEITBUSINESS_EQUIPMENT_UPGRADE */;
 				
 				case 2:
-					return Global_262145.f_18121;
+					return Global_262145.f_18121 /* Tunable: BIKER_COUNTERFEITBUSINESS_SECURITY_UPGRADE */;
 				
 				case 1:
-					return Global_262145.f_18122;
+					return Global_262145.f_18122 /* Tunable: BIKER_COUNTERFEITBUSINESS_STAFF_UPGRADE */;
 				
 				default:
 			}
@@ -1839,13 +1839,13 @@ int func_46(int iParam0, int iParam1)//Position - 0x1789
 			switch (iParam0)
 			{
 				case 0:
-					return Global_262145.f_18123;
+					return Global_262145.f_18123 /* Tunable: BIKER_COCAINE_BUSINESS_EQUIPMENT_UPGRADE */;
 				
 				case 2:
-					return Global_262145.f_18124;
+					return Global_262145.f_18124 /* Tunable: BIKER_COCAINE_BUSINESS_SECURITY_UPGRADE */;
 				
 				case 1:
-					return Global_262145.f_18125;
+					return Global_262145.f_18125 /* Tunable: BIKER_COCAINE_BUSINESS_STAFF_UPGRADE */;
 				
 				default:
 			}
@@ -1855,13 +1855,13 @@ int func_46(int iParam0, int iParam1)//Position - 0x1789
 			switch (iParam0)
 			{
 				case 0:
-					return Global_262145.f_18126;
+					return Global_262145.f_18126 /* Tunable: BIKER_METH_BUSINESS_EQUIPMENT_UPGRADE */;
 				
 				case 2:
-					return Global_262145.f_18127;
+					return Global_262145.f_18127 /* Tunable: BIKER_METH_BUSINESS_SECURITY_UPGRADE */;
 				
 				case 1:
-					return Global_262145.f_18128;
+					return Global_262145.f_18128 /* Tunable: BIKER_METH_BUSINESS_STAFF_UPGRADE */;
 				
 				default:
 			}
@@ -1871,13 +1871,13 @@ int func_46(int iParam0, int iParam1)//Position - 0x1789
 			switch (iParam0)
 			{
 				case 0:
-					return Global_262145.f_18129;
+					return Global_262145.f_18129 /* Tunable: BIKER_WEED_BUSINESS_EQUIPMENT_UPGRADE */;
 				
 				case 2:
-					return Global_262145.f_18130;
+					return Global_262145.f_18130 /* Tunable: BIKER_WEED_BUSINESS_SECURITY_UPGRADE */;
 				
 				case 1:
-					return Global_262145.f_18131;
+					return Global_262145.f_18131 /* Tunable: BIKER_WEED_BUSINESS_STAFF_UPGRADE */;
 				
 				default:
 			}
@@ -1918,56 +1918,56 @@ int func_46(int iParam0, int iParam1)//Position - 0x1789
 			switch (iParam0)
 			{
 				case 0:
-					return Global_262145.f_21479;
+					return Global_262145.f_21479 /* Tunable: GR_BUNKER_GUNRUNNING_BUSINESS_UPGRADES_EQUIPMENT_UPGRADE */;
 				
 				case 2:
-					return Global_262145.f_21480;
+					return Global_262145.f_21480 /* Tunable: GR_BUNKER_GUNRUNNING_BUSINESS_UPGRADES_SECURITY_UPGRADE */;
 				
 				case 1:
-					return Global_262145.f_21481;
+					return Global_262145.f_21481 /* Tunable: GR_BUNKER_GUNRUNNING_BUSINESS_UPGRADES_STAFF_UPGRADE */;
 				
 				case 3:
-					return Global_262145.f_21469;
+					return Global_262145.f_21469 /* Tunable: GR_BUNKER_STYLE_1 */;
 				
 				case 4:
-					return Global_262145.f_21470;
+					return Global_262145.f_21470 /* Tunable: GR_BUNKER_STYLE_2 */;
 				
 				case 5:
-					return Global_262145.f_21471;
+					return Global_262145.f_21471 /* Tunable: GR_BUNKER_STYLE_3 */;
 				
 				case 6:
-					return Global_262145.f_21472;
+					return Global_262145.f_21472 /* Tunable: GR_BUNKER_ADD_ONS_PERSONAL_QUARTERS */;
 				
 				case 7:
 					if (func_48(1, iParam1, iVar1) == 0)
 					{
-						return Global_262145.f_21473;
+						return Global_262145.f_21473 /* Tunable: GR_BUNKER_ADD_ONS_FIRING_RANGE */;
 					}
 					else
 					{
-						return (0 + Global_262145.f_21474);
+						return (0 + Global_262145.f_21474 /* Tunable: GR_BUNKER_ADD_ONS_FIRING_RANGE_BLACK_TARGETS */);
 					}
 					break;
 				
 				case 8:
 					if (func_48(2, iParam1, iVar1) == 0)
 					{
-						return (Global_262145.f_21473 + Global_262145.f_21475);
+						return (Global_262145.f_21473 /* Tunable: GR_BUNKER_ADD_ONS_FIRING_RANGE */ + Global_262145.f_21475 /* Tunable: GR_BUNKER_ADD_ONS_FIRING_RANGE_WHITE_TARGETS */);
 					}
 					else
 					{
-						return (0 + Global_262145.f_21475);
+						return (0 + Global_262145.f_21475 /* Tunable: GR_BUNKER_ADD_ONS_FIRING_RANGE_WHITE_TARGETS */);
 					}
 					break;
 				
 				case 9:
-					return Global_262145.f_21476;
+					return Global_262145.f_21476 /* Tunable: GR_BUNKER_ADD_ONS_GUN_LOCKER */;
 				
 				case 10:
-					return Global_262145.f_21477;
+					return Global_262145.f_21477 /* Tunable: GR_BUNKER_ADD_ONS_TRANSPORTATION_CADDY */;
 				
 				case 11:
-					return Global_262145.f_21478;
+					return Global_262145.f_21478 /* Tunable: GR_BUNKER_ADD_ONS_TRANSPORTATION_UPDATED_CADDY */;
 			}
 			break;
 	}
@@ -2127,13 +2127,13 @@ int func_52(int iParam0, int iParam1)//Position - 0x1D5E
 			switch (iParam0)
 			{
 				case 0:
-					return Global_262145.f_18284;
+					return Global_262145.f_18284 /* Tunable: BIKER_DISABLE_DOCUMENTS_EQUIPMENT_UPGRADE */;
 				
 				case 2:
-					return Global_262145.f_18283;
+					return Global_262145.f_18283 /* Tunable: BIKER_DISABLE_DOCUMENTS_SECURITY_UPGRADE */;
 				
 				case 1:
-					return Global_262145.f_18282;
+					return Global_262145.f_18282 /* Tunable: BIKER_DISABLE_DOCUMENTS_STAFF_UPGRADE */;
 				
 				default:
 			}
@@ -2143,13 +2143,13 @@ int func_52(int iParam0, int iParam1)//Position - 0x1D5E
 			switch (iParam0)
 			{
 				case 0:
-					return Global_262145.f_18287;
+					return Global_262145.f_18287 /* Tunable: BIKER_DISABLE_COUNTERFEIT_CASH_EQUIPMENT_UPGRADE */;
 				
 				case 2:
-					return Global_262145.f_18286;
+					return Global_262145.f_18286 /* Tunable: BIKER_DISABLE_COUNTERFEIT_CASH_SECURITY_UPGRADE */;
 				
 				case 1:
-					return Global_262145.f_18285;
+					return Global_262145.f_18285 /* Tunable: BIKER_DISABLE_COUNTERFEIT_CASH_STAFF_UPGRADE */;
 				
 				default:
 			}
@@ -2159,13 +2159,13 @@ int func_52(int iParam0, int iParam1)//Position - 0x1D5E
 			switch (iParam0)
 			{
 				case 0:
-					return Global_262145.f_18291;
+					return Global_262145.f_18291 /* Tunable: BIKER_DISABLE_CRACK_STAFF_UPGRADE */;
 				
 				case 2:
-					return Global_262145.f_18292;
+					return Global_262145.f_18292 /* Tunable: BIKER_DISABLE_CRACK_SECURITY_UPGRADE */;
 				
 				case 1:
-					return Global_262145.f_18291;
+					return Global_262145.f_18291 /* Tunable: BIKER_DISABLE_CRACK_STAFF_UPGRADE */;
 				
 				default:
 			}
@@ -2175,13 +2175,13 @@ int func_52(int iParam0, int iParam1)//Position - 0x1D5E
 			switch (iParam0)
 			{
 				case 0:
-					return Global_262145.f_18290;
+					return Global_262145.f_18290 /* Tunable: BIKER_DISABLE_METH_EQUIPMENT_UPGRADE */;
 				
 				case 2:
-					return Global_262145.f_18289;
+					return Global_262145.f_18289 /* Tunable: BIKER_DISABLE_METH_SECURITY_UPGRADE */;
 				
 				case 1:
-					return Global_262145.f_18288;
+					return Global_262145.f_18288 /* Tunable: BIKER_DISABLE_METH_STAFF_UPGRADE */;
 				
 				default:
 			}
@@ -2191,13 +2191,13 @@ int func_52(int iParam0, int iParam1)//Position - 0x1D5E
 			switch (iParam0)
 			{
 				case 0:
-					return Global_262145.f_18281;
+					return Global_262145.f_18281 /* Tunable: BIKER_DISABLE_WEED_EQUIPMENT_UPGRADE */;
 				
 				case 2:
-					return Global_262145.f_18280;
+					return Global_262145.f_18280 /* Tunable: BIKER_DISABLE_WEED_SECURITY_UPGRADE */;
 				
 				case 1:
-					return Global_262145.f_18279;
+					return Global_262145.f_18279 /* Tunable: BIKER_DISABLE_WEED_STAFF_UPGRADE */;
 				
 				default:
 			}
@@ -2251,7 +2251,7 @@ int func_52(int iParam0, int iParam1)//Position - 0x1D5E
 
 void func_53()//Position - 0x1F3E
 {
-	if (Global_1640666[5] >= Global_262145.f_18433)
+	if (Global_1640666[5] >= Global_262145.f_18433 /* Tunable: BIKER_RESUPPLY_LAUNCH_SUPPLIES_THRESHOLD */)
 	{
 		func_255("OR_MIS_NA_B" /* GXT: No supplies are required at this time. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
@@ -2607,52 +2607,52 @@ int func_69(int iParam0)//Position - 0x24FA
 	switch (iParam0)
 	{
 		case 180:
-			return Global_262145.f_18680;
+			return Global_262145.f_18680 /* Tunable: BIKER_GUNRUNNING_MIN_PLAYERS */;
 		
 		case 183:
-			return Global_262145.f_18688;
+			return Global_262145.f_18688 /* Tunable: BIKER_POW_MIN_PLAYERS */;
 		
 		case 185:
-			return Global_262145.f_18697;
+			return Global_262145.f_18697 /* Tunable: BIKER_GUNS_FOR_HIRE_MIN_PLAYERS */;
 		
 		case 182:
-			return Global_262145.f_18708;
+			return Global_262145.f_18708 /* Tunable: BIKER_BY_THE_POUND_MIN_PLAYERS */;
 		
 		case 186:
-			return Global_262145.f_18717;
+			return Global_262145.f_18717 /* Tunable: BIKER_WEAPON_OF_CHOICE_MIN_PLAYERS */;
 		
 		case 195:
-			return Global_262145.f_18735;
+			return Global_262145.f_18735 /* Tunable: BIKER_NINE_TENTHS_MIN_PLAYERS */;
 		
 		case 198:
-			return Global_262145.f_18745;
+			return Global_262145.f_18745 /* Tunable: BIKER_CRACKED_MIN_PLAYERS */;
 		
 		case 197:
-			return Global_262145.f_18757;
+			return Global_262145.f_18757 /* Tunable: BIKER_JAILBREAK_MIN_PLAYERS */;
 		
 		case 207:
-			return Global_262145.f_18765;
+			return Global_262145.f_18765 /* Tunable: BIKER_FRAGILE_GOODS_MIN_PLAYERS */;
 		
 		case 209:
-			return Global_262145.f_18778;
+			return Global_262145.f_18778 /* Tunable: BIKER_OUTRIDER_MIN_PLAYERS */;
 		
 		case 208:
-			return Global_262145.f_18786;
+			return Global_262145.f_18786 /* Tunable: BIKER_TORCHED_MIN_PLAYERS */;
 		
 		case 201:
-			return Global_262145.f_18819;
+			return Global_262145.f_18819 /* Tunable: BIKER_STAND_YOUR_GROUND_MIN_PLAYERS */;
 		
 		case 211:
-			return Global_262145.f_18887;
+			return Global_262145.f_18887 /* Tunable: BIKER_ON_THE_RUN_MIN_PLAYERS */;
 		
 		case 193:
-			return Global_262145.f_18910;
+			return Global_262145.f_18910 /* Tunable: BIKER_HIT_AND_RIDE_MIN_PLAYERS */;
 		
 		case 205:
-			return Global_262145.f_18928;
+			return Global_262145.f_18928 /* Tunable: BIKER_MISCHIEF_MIN_PLAYERS */;
 		
 		case 189:
-			return Global_262145.f_18893;
+			return Global_262145.f_18893 /* Tunable: BIKER_RACE_MIN_PLAYERS */;
 		
 		case 216:
 			return 2;
@@ -2690,7 +2690,7 @@ bool func_72()//Position - 0x264F
 
 bool func_73()//Position - 0x265E
 {
-	return Global_262145.f_15734;
+	return Global_262145.f_15734 /* Tunable: EXEC_CONTRABAND_DISABLE */;
 }
 
 int func_74(int iParam0)//Position - 0x266D
@@ -3408,61 +3408,61 @@ int func_98(int iParam0)//Position - 0x327F
 	switch (iParam0)
 	{
 		case 162:
-			return Global_262145.f_13038;
+			return Global_262145.f_13038 /* Tunable: GB_POINTTOPOINT_INSTANCES_PERMITTED */;
 		
 		case 155:
-			return Global_262145.f_13063;
+			return Global_262145.f_13063 /* Tunable: GB_PROTECTIONRACKET_INSTANCES_PERMITTED */;
 		
 		case 153:
-			return Global_262145.f_13027;
+			return Global_262145.f_13027 /* Tunable: GB_MOSTWANTED_INSTANCES_PERMITTED */;
 		
 		case 163:
-			return Global_262145.f_13003;
+			return Global_262145.f_13003 /* Tunable: GB_CARJACKING_INSTANCES_PERMITTED */;
 		
 		case 160:
-			return Global_262145.f_13016;
+			return Global_262145.f_13016 /* Tunable: GB_FINDERS_KEEPERS_INSTANCES_PERMITTED */;
 		
 		case 154:
-			return Global_262145.f_13073;
+			return Global_262145.f_13073 /* Tunable: GB_SMASHANDGRAB_INSTANCES_PERMITTED */;
 		
 		case 169:
 			return 1;
 		
 		case 171:
-			return Global_262145.f_15561;
+			return Global_262145.f_15561 /* Tunable: EXEC_CASHING_INSTANCES_PERMITTED */;
 		
 		case 172:
-			return Global_262145.f_15580;
+			return Global_262145.f_15580 /* Tunable: EXEC_SALVAGE_INSTANCES_PERMITTED */;
 		
 		case 148:
-			return Global_262145.f_18794;
+			return Global_262145.f_18794 /* Tunable: BIKER_DEATHMATCH_MAX_INSTANCES */;
 		
 		case 179:
-			return Global_262145.f_18802;
+			return Global_262145.f_18802 /* Tunable: BIKER_JOUST_MAX_INSTANCES */;
 		
 		case 201:
-			return Global_262145.f_18816;
+			return Global_262145.f_18816 /* Tunable: BIKER_STAND_YOUR_GROUND_MAX_INSTANCES */;
 		
 		case 200:
-			return Global_262145.f_18856;
+			return Global_262145.f_18856 /* Tunable: BIKER_CAGED_IN_MAX_INSTANCES */;
 		
 		case 211:
-			return Global_262145.f_18885;
+			return Global_262145.f_18885 /* Tunable: BIKER_ON_THE_RUN_MAX_INSTANCES */;
 		
 		case 194:
-			return Global_262145.f_18897;
+			return Global_262145.f_18897 /* Tunable: BIKER_RIPPIN_MAX_INSTANCES */;
 		
 		case 193:
-			return Global_262145.f_18908;
+			return Global_262145.f_18908 /* Tunable: BIKER_HIT_AND_RIDE_MAX_INSTANCES */;
 		
 		case 210:
-			return Global_262145.f_18920;
+			return Global_262145.f_18920 /* Tunable: BIKER_WHEELIE_MAX_INSTANCES */;
 		
 		case 205:
-			return Global_262145.f_18926;
+			return Global_262145.f_18926 /* Tunable: BIKER_MISCHIEF_MAX_INSTANCES */;
 		
 		case 199:
-			return Global_262145.f_18939;
+			return Global_262145.f_18939 /* Tunable: BIKER_SEARCH_AND_DESTROY_MAX_INSTANCES */;
 		
 		case 249:
 			return 1;
@@ -4829,20 +4829,20 @@ int func_128(int iParam0, int iParam1)//Position - 0x46EF
 		}
 		if (func_134(iParam0))
 		{
-			if (iVar0 > Global_262145.f_18431)
+			if (iVar0 > Global_262145.f_18431 /* Tunable: BIKER_RESUPPLY_MAX_VEHICLES */)
 			{
-				iVar0 = Global_262145.f_18431;
+				iVar0 = Global_262145.f_18431 /* Tunable: BIKER_RESUPPLY_MAX_VEHICLES */;
 			}
 		}
 		else
 		{
-			if (iVar0 < Global_262145.f_18430)
+			if (iVar0 < Global_262145.f_18430 /* Tunable: BIKER_RESUPPLY_MIN_PACKAGES */)
 			{
-				iVar0 = Global_262145.f_18430;
+				iVar0 = Global_262145.f_18430 /* Tunable: BIKER_RESUPPLY_MIN_PACKAGES */;
 			}
-			if (iVar0 > Global_262145.f_18429)
+			if (iVar0 > Global_262145.f_18429 /* Tunable: BIKER_RESUPPLY_MAX_PACKAGES */)
 			{
-				iVar0 = Global_262145.f_18429;
+				iVar0 = Global_262145.f_18429 /* Tunable: BIKER_RESUPPLY_MAX_PACKAGES */;
 			}
 		}
 	}
@@ -4854,10 +4854,10 @@ int func_129(int iParam0)//Position - 0x4788
 	switch (iParam0)
 	{
 		case 5:
-			return Global_262145.f_18468;
+			return Global_262145.f_18468 /* Tunable: BIKER_RESUPPLY_MEET_CONTACT_MIN_PACKAGES */;
 		
 		case 10:
-			return Global_262145.f_18493;
+			return Global_262145.f_18493 /* Tunable: BIKER_RESUPPLY_BANK_MIN_PACKAGES */;
 		
 		default:
 	}
@@ -4868,7 +4868,7 @@ int func_130(int iParam0, int iParam1)//Position - 0x47B8
 {
 	if (func_134(iParam0))
 	{
-		if (iParam1 >= Global_262145.f_18432)
+		if (iParam1 >= Global_262145.f_18432 /* Tunable: BIKER_RESUPPLY_SECOND_VEHICLE_THRESHOLD */)
 		{
 			return 2;
 		}
@@ -4877,10 +4877,10 @@ int func_130(int iParam0, int iParam1)//Position - 0x47B8
 	switch (iParam0)
 	{
 		case 5:
-			return Global_262145.f_18469;
+			return Global_262145.f_18469 /* Tunable: BIKER_RESUPPLY_MEET_CONTACT_MAX_PACKAGES */;
 		
 		case 10:
-			return Global_262145.f_18494;
+			return Global_262145.f_18494 /* Tunable: BIKER_RESUPPLY_BANK_MAX_PACKAGES */;
 		
 		default:
 	}
@@ -11683,7 +11683,7 @@ void func_237()//Position - 0xA40B
 	
 	iVar0 = Global_1640666[5];
 	iVar1 = func_238(0, iVar0, 1);
-	if (Global_262145.f_21598)
+	if (Global_262145.f_21598 /* Tunable: GR_DISABLE_PURCHASE_SUPPLIES */)
 	{
 		func_255("OR_BS_PAY_NA" /* GXT: No suppliers are available at this time. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
@@ -11691,7 +11691,7 @@ void func_237()//Position - 0xA40B
 	{
 		func_255("OR_RESUP_RES" /* GXT: You need to restart weapons manufacturing or research before you can acquire more supplies. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
-	else if (Global_1640666[5] >= Global_262145.f_18433)
+	else if (Global_1640666[5] >= Global_262145.f_18433 /* Tunable: BIKER_RESUPPLY_LAUNCH_SUPPLIES_THRESHOLD */)
 	{
 		func_255("OR_MIS_NA_B" /* GXT: No supplies are required at this time. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, 0, 0);
 	}
@@ -11729,11 +11729,11 @@ int func_238(bool bParam0, int iParam1, bool bParam2)//Position - 0xA4E6
 	}
 	else if (bParam0)
 	{
-		iVar0 = Global_262145.f_18147;
+		iVar0 = Global_262145.f_18147 /* Tunable: BIKER_BUSINESS_PAID_RESUPPLY_BASE */;
 	}
 	else
 	{
-		iVar0 = Global_262145.f_18998;
+		iVar0 = Global_262145.f_18998 /* Tunable: BIKER_PURCHASE_SUPPLIES_COST_PER_SEGMENT */;
 	}
 	fVar2 = (SYSTEM::TO_FLOAT((100 - iParam1)) / 20f);
 	iVar1 = SYSTEM::CEIL(fVar2);
@@ -12431,154 +12431,154 @@ float func_265(int iParam0)//Position - 0xB2A1
 	switch (iParam0)
 	{
 		case 0:
-			return Global_262145.f_21799;
+			return Global_262145.f_21799 /* Tunable: GR_RESEARCH_WEIGHT_APC_SAM_BATTERY */;
 		
 		case 1:
-			return Global_262145.f_21800;
+			return Global_262145.f_21800 /* Tunable: GR_RESEARCH_WEIGHT_BALLISTIC_EQUIPMENT */;
 		
 		case 2:
-			return Global_262145.f_21801;
+			return Global_262145.f_21801 /* Tunable: GR_RESEARCH_WEIGHT_HALF_TRACK_20MM_QUAD_CANNONS */;
 		
 		case 3:
-			return Global_262145.f_21802;
+			return Global_262145.f_21802 /* Tunable: GR_RESEARCH_WEIGHT_WEAPONIZED_TAMPA_DUAL_REMOTE_MINIGUN */;
 		
 		case 4:
-			return Global_262145.f_21803;
+			return Global_262145.f_21803 /* Tunable: GR_RESEARCH_WEIGHT_WEAPONIZED_TAMPA_REAR_FIRING_MORTAR */;
 		
 		case 5:
-			return Global_262145.f_21804;
+			return Global_262145.f_21804 /* Tunable: GR_RESEARCH_WEIGHT_WEAPONIZED_TAMPA_FRONT_MISSILE_LAUNCHERS */;
 		
 		case 6:
-			return Global_262145.f_21805;
+			return Global_262145.f_21805 /* Tunable: GR_RESEARCH_WEIGHT_WEAPONIZED_TAMPA_HEAVY_CHASSIS_ARMOR */;
 		
 		case 7:
-			return Global_262145.f_21806;
+			return Global_262145.f_21806 /* Tunable: GR_RESEARCH_WEIGHT_DUNE_FAV_40MM_GRENADE_LAUNCHER */;
 		
 		case 8:
-			return Global_262145.f_21807;
+			return Global_262145.f_21807 /* Tunable: GR_RESEARCH_WEIGHT_DUNE_FAV_762MM_MINIGUN */;
 		
 		case 9:
-			return Global_262145.f_21808;
+			return Global_262145.f_21808 /* Tunable: GR_RESEARCH_WEIGHT_INSURGENT_PICK_UP_CUSTOM_50_CAL_MINIGUN */;
 		
 		case 10:
-			return Global_262145.f_21809;
+			return Global_262145.f_21809 /* Tunable: GR_RESEARCH_WEIGHT_INSURGENT_PICK_UP_CUSTOM_HEAVY_ARMOR_PLATING */;
 		
 		case 11:
-			return Global_262145.f_21810;
+			return Global_262145.f_21810 /* Tunable: GR_RESEARCH_WEIGHT_TECHNICAL_CUSTOM_762MM_MINIGUN */;
 		
 		case 12:
-			return Global_262145.f_21811;
+			return Global_262145.f_21811 /* Tunable: GR_RESEARCH_WEIGHT_TECHNICAL_CUSTOM_RAM_BAR */;
 		
 		case 13:
-			return Global_262145.f_21812;
+			return Global_262145.f_21812 /* Tunable: GR_RESEARCH_WEIGHT_TECHNICAL_CUSTOM_BRUTE_BAR */;
 		
 		case 14:
-			return Global_262145.f_21813;
+			return Global_262145.f_21813 /* Tunable: GR_RESEARCH_WEIGHT_TECHNICAL_CUSTOM_HEAVY_CHASSIS_ARMOR */;
 		
 		case 15:
-			return Global_262145.f_21814;
+			return Global_262145.f_21814 /* Tunable: GR_RESEARCH_WEIGHT_OPPRESSOR_ROCKETS */;
 		
 		case 16:
-			return Global_262145.f_21815;
+			return Global_262145.f_21815 /* Tunable: GR_RESEARCH_WEIGHT_FRACTAL_LIVERY_SET */;
 		
 		case 17:
-			return Global_262145.f_21816;
+			return Global_262145.f_21816 /* Tunable: GR_RESEARCH_WEIGHT_DIGITAL_LIVERY_SET */;
 		
 		case 18:
-			return Global_262145.f_21817;
+			return Global_262145.f_21817 /* Tunable: GR_RESEARCH_WEIGHT_GEOMETRIC_LIVERY_SET */;
 		
 		case 19:
-			return Global_262145.f_21818;
+			return Global_262145.f_21818 /* Tunable: GR_RESEARCH_WEIGHT_NATURE_RESERVE_LIVERY */;
 		
 		case 20:
-			return Global_262145.f_21819;
+			return Global_262145.f_21819 /* Tunable: GR_RESEARCH_WEIGHT_NAVAL_BATTLE_LIVERY */;
 		
 		case 21:
-			return Global_262145.f_21820;
+			return Global_262145.f_21820 /* Tunable: GR_RESEARCH_WEIGHT_ANTI_AIRCRAFT_TRAILER_DUAL_20MM_FLAK_CANNON */;
 		
 		case 22:
-			return Global_262145.f_21821;
+			return Global_262145.f_21821 /* Tunable: GR_RESEARCH_WEIGHT_ANTI_AIRCRAFT_TRAILER_HOMING_MISSILE_BATTERY */;
 		
 		case 23:
-			return Global_262145.f_21822;
+			return Global_262145.f_21822 /* Tunable: GR_RESEARCH_WEIGHT_MOBILE_OPERATIONS_CENTER_REAR_TURRETS */;
 		
 		case 24:
-			return Global_262145.f_21823;
+			return Global_262145.f_21823 /* Tunable: GR_RESEARCH_WEIGHT_INCENDIARY_ROUNDS */;
 		
 		case 25:
-			return Global_262145.f_21824;
+			return Global_262145.f_21824 /* Tunable: GR_RESEARCH_WEIGHT_HOLLOW_POINT_ROUNDS */;
 		
 		case 26:
-			return Global_262145.f_21825;
+			return Global_262145.f_21825 /* Tunable: GR_RESEARCH_WEIGHT_ARMOR_PIERCING_ROUNDS */;
 		
 		case 27:
-			return Global_262145.f_21826;
+			return Global_262145.f_21826 /* Tunable: GR_RESEARCH_WEIGHT_FULL_METAL_JACKET_ROUNDS */;
 		
 		case 28:
-			return Global_262145.f_21827;
+			return Global_262145.f_21827 /* Tunable: GR_RESEARCH_WEIGHT_EXPLOSIVE_ROUNDS */;
 		
 		case 29:
-			return Global_262145.f_21828;
+			return Global_262145.f_21828 /* Tunable: GR_RESEARCH_WEIGHT_PISTOL_MK_II_RAIL_MOUNT */;
 		
 		case 30:
-			return Global_262145.f_21829;
+			return Global_262145.f_21829 /* Tunable: GR_RESEARCH_WEIGHT_PISTOL_MK_II_COMPENSATOR */;
 		
 		case 31:
-			return Global_262145.f_21830;
+			return Global_262145.f_21830 /* Tunable: GR_RESEARCH_WEIGHT_SMG_MK_II_HOLOGRAPHIC_SIGHT */;
 		
 		case 32:
-			return Global_262145.f_21831;
+			return Global_262145.f_21831 /* Tunable: GR_RESEARCH_WEIGHT_SMG_MK_II_HEAVY_BARREL */;
 		
 		case 33:
-			return Global_262145.f_21832;
+			return Global_262145.f_21832 /* Tunable: GR_RESEARCH_WEIGHT_HEAVY_SNIPER_MK_II_NIGHT_VISION_SCOPE */;
 		
 		case 34:
-			return Global_262145.f_21833;
+			return Global_262145.f_21833 /* Tunable: GR_RESEARCH_WEIGHT_HEAVY_SNIPER_MK_II_THERMAL_SCOPE */;
 		
 		case 35:
-			return Global_262145.f_21834;
+			return Global_262145.f_21834 /* Tunable: GR_RESEARCH_WEIGHT_HEAVY_SNIPER_MK_II_HEAVY_BARREL */;
 		
 		case 36:
-			return Global_262145.f_21835;
+			return Global_262145.f_21835 /* Tunable: GR_RESEARCH_WEIGHT_COMBAT_MG_MK_II_HOLOGRAPHIC_SIGHT */;
 		
 		case 37:
-			return Global_262145.f_21836;
+			return Global_262145.f_21836 /* Tunable: GR_RESEARCH_WEIGHT_COMBAT_MG_MK_II_HEAVY_BARREL */;
 		
 		case 38:
-			return Global_262145.f_21837;
+			return Global_262145.f_21837 /* Tunable: GR_RESEARCH_WEIGHT_ASSAULT_RIFLE_MK_II_HOLOGRAPHIC_SIGHT */;
 		
 		case 39:
-			return Global_262145.f_21838;
+			return Global_262145.f_21838 /* Tunable: GR_RESEARCH_WEIGHT_ASSAULT_RIFLE_MK_II_HEAVY_BARREL */;
 		
 		case 40:
-			return Global_262145.f_21839;
+			return Global_262145.f_21839 /* Tunable: GR_RESEARCH_WEIGHT_CARBINE_RIFLE_MK_II_HOLOGRAPHIC_SIGHT */;
 		
 		case 41:
-			return Global_262145.f_21840;
+			return Global_262145.f_21840 /* Tunable: GR_RESEARCH_WEIGHT_CARBINE_RIFLE_MK_II_HEAVY_BARREL */;
 		
 		case 42:
-			return Global_262145.f_21841;
+			return Global_262145.f_21841 /* Tunable: GR_RESEARCH_WEIGHT_PROXIMITY_MINES */;
 		
 		case 43:
-			return Global_262145.f_21842;
+			return Global_262145.f_21842 /* Tunable: GR_RESEARCH_WEIGHT_TIGER_STRIPE */;
 		
 		case 44:
-			return Global_262145.f_21843;
+			return Global_262145.f_21843 /* Tunable: GR_RESEARCH_WEIGHT_SKULL */;
 		
 		case 45:
-			return Global_262145.f_21844;
+			return Global_262145.f_21844 /* Tunable: GR_RESEARCH_WEIGHT_SESSANTA_NOVE */;
 		
 		case 46:
-			return Global_262145.f_21845;
+			return Global_262145.f_21845 /* Tunable: GR_RESEARCH_WEIGHT_PERSEUS */;
 		
 		case 47:
-			return Global_262145.f_21846;
+			return Global_262145.f_21846 /* Tunable: GR_RESEARCH_WEIGHT_LEOPARD_PRINT */;
 		
 		case 48:
-			return Global_262145.f_21847;
+			return Global_262145.f_21847 /* Tunable: GR_RESEARCH_WEIGHT_ZEBRA_STRIPE */;
 		
 		case 49:
-			return Global_262145.f_21848;
+			return Global_262145.f_21848 /* Tunable: GR_RESEARCH_WEIGHT_GEOMETRY */;
 		
 		case 50:
 			return Global_262145.f_21849;
@@ -13678,7 +13678,7 @@ int func_292(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position - 
 	switch (iVar1)
 	{
 		case 1:
-			iVar0 = Global_262145.f_17446;
+			iVar0 = Global_262145.f_17446 /* Tunable: BIKER_WEED_PRODUCTION_TIME */;
 			if (func_51(PLAYER::PLAYER_ID(), iParam0, 0))
 			{
 				iVar0 = (iVar0 - Global_262145.f_17455);
@@ -13694,7 +13694,7 @@ int func_292(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position - 
 			break;
 		
 		case 3:
-			iVar0 = Global_262145.f_17447;
+			iVar0 = Global_262145.f_17447 /* Tunable: BIKER_METH_PRODUCTION_TIME */;
 			if (func_51(PLAYER::PLAYER_ID(), iParam0, 0))
 			{
 				iVar0 = (iVar0 - Global_262145.f_17454);
@@ -13710,7 +13710,7 @@ int func_292(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position - 
 			break;
 		
 		case 4:
-			iVar0 = Global_262145.f_17448;
+			iVar0 = Global_262145.f_17448 /* Tunable: BIKER_CRACK_PRODUCTION_TIME */;
 			if (func_51(PLAYER::PLAYER_ID(), iParam0, 0))
 			{
 				iVar0 = (iVar0 - Global_262145.f_17453);
@@ -13726,7 +13726,7 @@ int func_292(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position - 
 			break;
 		
 		case 0:
-			iVar0 = Global_262145.f_17449;
+			iVar0 = Global_262145.f_17449 /* Tunable: BIKER_FAKEIDS_PRODUCTION_TIME */;
 			if (func_51(PLAYER::PLAYER_ID(), iParam0, 0))
 			{
 				iVar0 = (iVar0 - Global_262145.f_17451);
@@ -13742,7 +13742,7 @@ int func_292(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position - 
 			break;
 		
 		case 2:
-			iVar0 = Global_262145.f_17450;
+			iVar0 = Global_262145.f_17450 /* Tunable: BIKER_COUNTERCASH_PRODUCTION_TIME */;
 			if (func_51(PLAYER::PLAYER_ID(), iParam0, 0))
 			{
 				iVar0 = (iVar0 - Global_262145.f_17452);
@@ -13760,7 +13760,7 @@ int func_292(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position - 
 		case 5:
 			if (bParam2)
 			{
-				iVar0 = Global_262145.f_21592;
+				iVar0 = Global_262145.f_21592 /* Tunable: GR_RESEARCH_PRODUCTION_TIME */;
 			}
 			else
 			{
@@ -14573,7 +14573,7 @@ void func_310(struct<67> Param0, var uParam1, var uParam2, var uParam3, var uPar
 	Var0.f_2 = { Param0.f_66 };
 	Var0.f_2.f_33 = iParam19;
 	iVar1 = func_312(Var0.f_1);
-	if ((Global_262145.f_24104 && !Global_262145.f_24105) && !Global_262145.f_24106)
+	if ((Global_262145.f_24104 /* Tunable: BLOCK_NS_TRANS */ && !Global_262145.f_24105 /* Tunable: SC_RUN_TRANS */) && !Global_262145.f_24106 /* Tunable: BG_RUN_TRANS */)
 	{
 		return;
 	}
@@ -14847,7 +14847,7 @@ int func_315(int iParam0)//Position - 0xDCCD
 			break;
 		
 		case 11:
-			if (!func_253() || Global_1640666[5] >= Global_262145.f_18433)
+			if (!func_253() || Global_1640666[5] >= Global_262145.f_18433 /* Tunable: BIKER_RESUPPLY_LAUNCH_SUPPLIES_THRESHOLD */)
 			{
 				return 1;
 			}
@@ -18416,66 +18416,66 @@ int func_441(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0x
 		switch (iVar1)
 		{
 			case 1:
-				iVar0 = Global_262145.f_17475;
+				iVar0 = Global_262145.f_17475 /* Tunable: BIKER_WEED_PRODUCT_VALUE */;
 				if (func_51(iParam0, iParam1, 0))
 				{
-					iVar0 = (iVar0 + Global_262145.f_17480);
+					iVar0 = (iVar0 + Global_262145.f_17480 /* Tunable: BIKER_WEED_PRODUCT_VALUE_EQUIPMENT_UPGRADE */);
 				}
 				if (func_51(iParam0, iParam1, 1))
 				{
-					iVar0 = (iVar0 + Global_262145.f_17485);
+					iVar0 = (iVar0 + Global_262145.f_17485 /* Tunable: BIKER_WEED_PRODUCT_VALUE_STAFF_UPGRADE */);
 				}
 				iVar0 = (iVar0 * iParam2);
 				break;
 			
 			case 3:
-				iVar0 = Global_262145.f_17474;
+				iVar0 = Global_262145.f_17474 /* Tunable: BIKER_METH_PRODUCT_VALUE */;
 				if (func_51(iParam0, iParam1, 0))
 				{
-					iVar0 = (iVar0 + Global_262145.f_17479);
+					iVar0 = (iVar0 + Global_262145.f_17479 /* Tunable: BIKER_METH_PRODUCT_VALUE_EQUIPMENT_UPGRADE */);
 				}
 				if (func_51(iParam0, iParam1, 1))
 				{
-					iVar0 = (iVar0 + Global_262145.f_17484);
+					iVar0 = (iVar0 + Global_262145.f_17484 /* Tunable: BIKER_METH_PRODUCT_VALUE_STAFF_UPGRADE */);
 				}
 				iVar0 = (iVar0 * iParam2);
 				break;
 			
 			case 4:
-				iVar0 = Global_262145.f_17473;
+				iVar0 = Global_262145.f_17473 /* Tunable: BIKER_CRACK_PRODUCT_VALUE */;
 				if (func_51(iParam0, iParam1, 0))
 				{
-					iVar0 = (iVar0 + Global_262145.f_17478);
+					iVar0 = (iVar0 + Global_262145.f_17478 /* Tunable: BIKER_CRACK_PRODUCT_VALUE_EQUIPMENT_UPGRADE */);
 				}
 				if (func_51(iParam0, iParam1, 1))
 				{
-					iVar0 = (iVar0 + Global_262145.f_17483);
+					iVar0 = (iVar0 + Global_262145.f_17483 /* Tunable: BIKER_CRACK_PRODUCT_VALUE_STAFF_UPGRADE */);
 				}
 				iVar0 = (iVar0 * iParam2);
 				break;
 			
 			case 0:
-				iVar0 = Global_262145.f_17471;
+				iVar0 = Global_262145.f_17471 /* Tunable: BIKER_FAKEIDS_PRODUCT_VALUE */;
 				if (func_51(iParam0, iParam1, 0))
 				{
-					iVar0 = (iVar0 + Global_262145.f_17476);
+					iVar0 = (iVar0 + Global_262145.f_17476 /* Tunable: BIKER_FAKEIDS_PRODUCT_VALUE_EQUIPMENT_UPGRADE */);
 				}
 				if (func_51(iParam0, iParam1, 1))
 				{
-					iVar0 = (iVar0 + Global_262145.f_17481);
+					iVar0 = (iVar0 + Global_262145.f_17481 /* Tunable: BIKER_FAKEIDS_PRODUCT_VALUE_STAFF_UPGRADE */);
 				}
 				iVar0 = (iVar0 * iParam2);
 				break;
 			
 			case 2:
-				iVar0 = Global_262145.f_17472;
+				iVar0 = Global_262145.f_17472 /* Tunable: BIKER_COUNTERCASH_PRODUCT_VALUE */;
 				if (func_51(iParam0, iParam1, 0))
 				{
-					iVar0 = (iVar0 + Global_262145.f_17477);
+					iVar0 = (iVar0 + Global_262145.f_17477 /* Tunable: BIKER_COUNTERCASH_PRODUCT_VALUE_EQUIPMENT_UPGRADE */);
 				}
 				if (func_51(iParam0, iParam1, 1))
 				{
-					iVar0 = (iVar0 + Global_262145.f_17482);
+					iVar0 = (iVar0 + Global_262145.f_17482 /* Tunable: BIKER_COUNTERCASH_PRODUCT_VALUE_STAFF_UPGRADE */);
 				}
 				iVar0 = (iVar0 * iParam2);
 				break;
@@ -18580,9 +18580,9 @@ void func_443()//Position - 0x11C4E
 	iVar0 = func_46(0, iLocal_121);
 	iVar1 = func_46(1, iLocal_121);
 	iVar2 = func_46(2, iLocal_121);
-	iVar3 = Global_262145.f_21482;
-	iVar4 = Global_262145.f_21483;
-	iVar5 = Global_262145.f_21484;
+	iVar3 = Global_262145.f_21482 /* Tunable: GR_BUNKER_GUNRUNNING_BUSINESS_UPGRADES_EQUIPMENT_UPGRADE_BASE */;
+	iVar4 = Global_262145.f_21483 /* Tunable: GR_BUNKER_GUNRUNNING_BUSINESS_UPGRADES_SECURITY_UPGRADE_BASE */;
+	iVar5 = Global_262145.f_21484 /* Tunable: GR_BUNKER_GUNRUNNING_BUSINESS_UPGRADES_STAFF_UPGRADE_BASE */;
 	if (func_51(PLAYER::PLAYER_ID(), iLocal_121, 0))
 	{
 		iVar0 = -1;

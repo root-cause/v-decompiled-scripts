@@ -4730,7 +4730,7 @@ void func_139()//Position - 0x5708
 	if (!Global_1660993)
 	{
 		func_140(1);
-		Global_1660992 = NETWORK::GET_TIME_OFFSET(NETWORK::GET_NETWORK_TIME(), Global_262145.f_2420);
+		Global_1660992 = NETWORK::GET_TIME_OFFSET(NETWORK::GET_NETWORK_TIME(), Global_262145.f_2420 /* Tunable: PLAYER_HEADSHOP_UPLOAD_TUNABLE */);
 	}
 }
 
@@ -5858,7 +5858,7 @@ int func_174()//Position - 0x7040
 {
 	int iVar0;
 	
-	iVar0 = Global_262145.f_159 * 1000;
+	iVar0 = Global_262145.f_159 /* Tunable: CONTACT_MISSION_INITIAL_DELAY_SECS */ * 1000;
 	if (iVar0 == 0)
 	{
 		iVar0 = 180000;
@@ -5886,7 +5886,7 @@ int func_176(int iParam0, int iParam1)//Position - 0x7089
 	{
 		iVar0 = func_31();
 	}
-	if (iParam0 == 7 && !Global_262145.f_17499)
+	if (iParam0 == 7 && !Global_262145.f_17499 /* Tunable: ENABLE_BIKER_PROPERTY */)
 	{
 		return 0;
 	}
@@ -5945,7 +5945,7 @@ int func_178(int iParam0)//Position - 0x718F
 
 bool func_179(int iParam0)//Position - 0x71B5
 {
-	if (!Global_262145.f_24199)
+	if (!Global_262145.f_24199 /* Tunable: ENABLE_TERBYTE */)
 	{
 		return 0;
 	}
@@ -6186,27 +6186,27 @@ int func_186(int iParam0)//Position - 0x74EC
 
 var func_187()//Position - 0x753D
 {
-	return Global_262145.f_9074;
+	return Global_262145.f_9074 /* Tunable: ROOT_ID_HASH_THE_PACIFIC_STANDARD_JOB */;
 }
 
 var func_188()//Position - 0x754C
 {
-	return Global_262145.f_9068;
+	return Global_262145.f_9068 /* Tunable: ROOT_ID_HASH_SERIES_A_FUNDING */;
 }
 
 var func_189()//Position - 0x755B
 {
-	return Global_262145.f_9062;
+	return Global_262145.f_9062 /* Tunable: ROOT_ID_HASH_THE_HUMANE_LABS_RAID */;
 }
 
 var func_190()//Position - 0x756A
 {
-	return Global_262145.f_9055;
+	return Global_262145.f_9055 /* Tunable: ROOT_ID_HASH_THE_PRISON_BREAK */;
 }
 
 var func_191()//Position - 0x7579
 {
-	return Global_262145.f_9050;
+	return Global_262145.f_9050 /* Tunable: ROOT_ID_HASH_THE_FLECCA_JOB */;
 }
 
 int func_192()//Position - 0x7588
@@ -6296,7 +6296,7 @@ int func_195(bool bParam0)//Position - 0x7657
 	{
 		if (func_185(iVar1, 1) <= 0)
 		{
-			iVar2 = Global_262145.f_4724;
+			iVar2 = Global_262145.f_4724 /* Tunable: TUTORIAL_NEXT_TEXT_DELAY_H */;
 			if (bParam0)
 			{
 			}
@@ -6311,7 +6311,7 @@ int func_195(bool bParam0)//Position - 0x7657
 				}
 				else
 				{
-					iVar2 = (Global_262145.f_4724 / 2);
+					iVar2 = (Global_262145.f_4724 /* Tunable: TUTORIAL_NEXT_TEXT_DELAY_H */ / 2);
 					if (bParam0)
 					{
 					}
@@ -6331,13 +6331,13 @@ int func_195(bool bParam0)//Position - 0x7657
 	{
 		if (func_185(iVar1, 1) > 0)
 		{
-			iVar2 = Global_262145.f_4726;
+			iVar2 = Global_262145.f_4726 /* Tunable: PLAYED_NEXT_TEXT_DELAY_H */;
 			if (bParam0)
 			{
 			}
 			return iVar2;
 		}
-		iVar2 = Global_262145.f_4725;
+		iVar2 = Global_262145.f_4725 /* Tunable: NEXT_TEXT_DELAY_H */;
 		if (bParam0)
 		{
 		}
@@ -6352,7 +6352,7 @@ int func_195(bool bParam0)//Position - 0x7657
 			}
 			else
 			{
-				iVar2 = (Global_262145.f_4725 / 2);
+				iVar2 = (Global_262145.f_4725 /* Tunable: NEXT_TEXT_DELAY_H */ / 2);
 				if (bParam0)
 				{
 				}
@@ -6367,7 +6367,7 @@ int func_195(bool bParam0)//Position - 0x7657
 		}
 		return iVar2;
 	}
-	iVar2 = Global_262145.f_4725;
+	iVar2 = Global_262145.f_4725 /* Tunable: NEXT_TEXT_DELAY_H */;
 	if (bParam0)
 	{
 	}
@@ -6376,17 +6376,17 @@ int func_195(bool bParam0)//Position - 0x7657
 
 bool func_196(int iParam0)//Position - 0x77BE
 {
-	return iParam0 == Global_262145.f_9074;
+	return iParam0 == Global_262145.f_9074 /* Tunable: ROOT_ID_HASH_THE_PACIFIC_STANDARD_JOB */;
 }
 
 bool func_197(int iParam0)//Position - 0x77D0
 {
-	return iParam0 == Global_262145.f_9068;
+	return iParam0 == Global_262145.f_9068 /* Tunable: ROOT_ID_HASH_SERIES_A_FUNDING */;
 }
 
 bool func_198(int iParam0)//Position - 0x77E2
 {
-	return iParam0 == Global_262145.f_9062;
+	return iParam0 == Global_262145.f_9062 /* Tunable: ROOT_ID_HASH_THE_HUMANE_LABS_RAID */;
 }
 
 void func_199()//Position - 0x77F4
@@ -6410,12 +6410,12 @@ void func_199()//Position - 0x77F4
 
 bool func_200(int iParam0)//Position - 0x783A
 {
-	return iParam0 == Global_262145.f_9055;
+	return iParam0 == Global_262145.f_9055 /* Tunable: ROOT_ID_HASH_THE_PRISON_BREAK */;
 }
 
 bool func_201(int iParam0)//Position - 0x784C
 {
-	return iParam0 == Global_262145.f_9050;
+	return iParam0 == Global_262145.f_9050 /* Tunable: ROOT_ID_HASH_THE_FLECCA_JOB */;
 }
 
 void func_202()//Position - 0x785E
@@ -6444,11 +6444,11 @@ void func_203()//Position - 0x78A9
 
 void func_204()//Position - 0x78BF
 {
-	func_205(Global_262145.f_9050, 1, 0, 1);
-	func_205(Global_262145.f_9055, 1, 0, 1);
-	func_205(Global_262145.f_9062, 1, 0, 1);
-	func_205(Global_262145.f_9068, 1, 0, 1);
-	func_205(Global_262145.f_9074, 1, 0, 1);
+	func_205(Global_262145.f_9050 /* Tunable: ROOT_ID_HASH_THE_FLECCA_JOB */, 1, 0, 1);
+	func_205(Global_262145.f_9055 /* Tunable: ROOT_ID_HASH_THE_PRISON_BREAK */, 1, 0, 1);
+	func_205(Global_262145.f_9062 /* Tunable: ROOT_ID_HASH_THE_HUMANE_LABS_RAID */, 1, 0, 1);
+	func_205(Global_262145.f_9068 /* Tunable: ROOT_ID_HASH_SERIES_A_FUNDING */, 1, 0, 1);
+	func_205(Global_262145.f_9074 /* Tunable: ROOT_ID_HASH_THE_PACIFIC_STANDARD_JOB */, 1, 0, 1);
 }
 
 void func_205(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position - 0x790D

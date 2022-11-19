@@ -1900,7 +1900,7 @@ void func_45()//Position - 0x171D
 			MISC::CLEAR_BIT(&uLocal_218, 2);
 		}
 	}
-	if (Global_262145.f_26822)
+	if (Global_262145.f_26822 /* Tunable: ENABLE_SLOT_MACHINE_LIGHT */)
 	{
 		if (!func_329(&Local_240))
 		{
@@ -2445,7 +2445,7 @@ void func_58()//Position - 0x2686
 {
 	struct<22> Var0;
 	
-	if (Global_262145.f_26822)
+	if (Global_262145.f_26822 /* Tunable: ENABLE_SLOT_MACHINE_LIGHT */)
 	{
 		if (Local_204[iLocal_257 /*21*/] > 0)
 		{
@@ -2457,7 +2457,7 @@ void func_58()//Position - 0x2686
 		}
 		Local_240.f_2 = (Local_240.f_2 + (Local_204[iLocal_257 /*21*/] - (iLocal_260 * Local_204[iLocal_257 /*21*/].f_16)));
 	}
-	if (Global_262145.f_26816)
+	if (Global_262145.f_26816 /* Tunable: ENABLE_SLOT_MACHINE_HEAVY */)
 	{
 		Var0.f_0 = -1867894674;
 		Var0.f_1 = joaat("standard");
@@ -2690,7 +2690,7 @@ int func_70(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, b
 		}
 		iVar1 = SYSTEM::ROUND((IntToFloat(iParam3) * (IntToFloat(iParam4) + fVar0)));
 		iVar1 = func_101(iVar1);
-		fVar3 = (SYSTEM::TO_FLOAT(iVar1) * Global_262145.f_1);
+		fVar3 = (SYSTEM::TO_FLOAT(iVar1) * Global_262145.f_1 /* Tunable: XP_MULTIPLIER */);
 		iVar1 = SYSTEM::ROUND(fVar3);
 		if (bParam10)
 		{
@@ -2987,7 +2987,7 @@ void func_79(int iParam0, int iParam1, int iParam2)//Position - 0x2F46
 		{
 			iParam0 = 1787576850;
 		}
-		if (Global_262145.f_10069 == 0 && iParam1 != joaat("XPCATEGORY_KEYS_DEBUG"))
+		if (Global_262145.f_10069 /* Tunable: TURN_OFF_RP_REDUCED_BLOCKER */ == 0 && iParam1 != joaat("XPCATEGORY_KEYS_DEBUG"))
 		{
 			if (iParam2 == 0)
 			{
@@ -3002,7 +3002,7 @@ void func_79(int iParam0, int iParam1, int iParam2)//Position - 0x2F46
 				}
 			}
 		}
-		if (Global_262145.f_10068 == 0)
+		if (Global_262145.f_10068 /* Tunable: TURN_OFF_RP_RESET_TELEMETRY */ == 0)
 		{
 			if (iParam0 == 0)
 			{
@@ -3013,7 +3013,7 @@ void func_79(int iParam0, int iParam1, int iParam2)//Position - 0x2F46
 				}
 			}
 		}
-		if (Global_262145.f_10068 == 0)
+		if (Global_262145.f_10068 /* Tunable: TURN_OFF_RP_RESET_TELEMETRY */ == 0)
 		{
 			if (iParam0 < 0)
 			{
@@ -3887,7 +3887,7 @@ void func_93(int iParam0)//Position - 0x42F9
 	}
 	if (bVar3)
 	{
-		iVar6 = SYSTEM::ROUND((func_94(*iParam0, 100) * (10f * Global_262145.f_4227)));
+		iVar6 = SYSTEM::ROUND((func_94(*iParam0, 100) * (10f * Global_262145.f_4227 /* Tunable: XP_TUNABLE_ALL_RP_WHILE_PLAYING_IN_A_CREW */)));
 	}
 	if (iVar2 > 4)
 	{
@@ -3895,7 +3895,7 @@ void func_93(int iParam0)//Position - 0x42F9
 	}
 	if (iVar2 >= 2)
 	{
-		iVar7 = SYSTEM::ROUND((func_94(*iParam0, 100) * (20f * Global_262145.f_4220)));
+		iVar7 = SYSTEM::ROUND((func_94(*iParam0, 100) * (20f * Global_262145.f_4220 /* Tunable: XP_TUNABLE_PERFORMING_JOBS_WITH_OTHER_PLAYERS */)));
 	}
 	*iParam0 = (*iParam0 + iVar6);
 	*iParam0 = (*iParam0 + iVar7);
@@ -4089,7 +4089,7 @@ void func_97(bool bParam0, int iParam1)//Position - 0x461D
 	}
 	if (bVar2)
 	{
-		iVar5 = SYSTEM::ROUND((func_94(*iParam1, 100) * (10f * Global_262145.f_4227)));
+		iVar5 = SYSTEM::ROUND((func_94(*iParam1, 100) * (10f * Global_262145.f_4227 /* Tunable: XP_TUNABLE_ALL_RP_WHILE_PLAYING_IN_A_CREW */)));
 	}
 	if (iVar1 > 4)
 	{
@@ -4097,7 +4097,7 @@ void func_97(bool bParam0, int iParam1)//Position - 0x461D
 	}
 	if (iVar1 >= 1)
 	{
-		iVar6 = SYSTEM::ROUND((func_94(*iParam1, 100) * (20f * Global_262145.f_4220)));
+		iVar6 = SYSTEM::ROUND((func_94(*iParam1, 100) * (20f * Global_262145.f_4220 /* Tunable: XP_TUNABLE_PERFORMING_JOBS_WITH_OTHER_PLAYERS */)));
 	}
 	*iParam1 = (*iParam1 + iVar5);
 	*iParam1 = (*iParam1 + iVar6);
@@ -4185,13 +4185,13 @@ int func_105()//Position - 0x4868
 	
 	if (func_114(PLAYER::PLAYER_ID()) || func_113(PLAYER::PLAYER_ID()))
 	{
-		if (Global_262145.f_10101 > 16000)
+		if (Global_262145.f_10101 /* Tunable: JOB_HEIST_RP_CAP */ > 16000)
 		{
 			iVar0 = 16000;
 		}
 		else
 		{
-			iVar0 = Global_262145.f_10101;
+			iVar0 = Global_262145.f_10101 /* Tunable: JOB_HEIST_RP_CAP */;
 		}
 	}
 	else if (func_110() || func_106(PLAYER::PLAYER_ID()))
@@ -4205,13 +4205,13 @@ int func_105()//Position - 0x4868
 			iVar0 = Global_262145.f_23310;
 		}
 	}
-	else if (Global_262145.f_7094 > 20000)
+	else if (Global_262145.f_7094 /* Tunable: JOB_RP_CAP */ > 20000)
 	{
 		iVar0 = 20000;
 	}
 	else
 	{
-		iVar0 = Global_262145.f_7094;
+		iVar0 = Global_262145.f_7094 /* Tunable: JOB_RP_CAP */;
 	}
 	return iVar0;
 }
@@ -5599,7 +5599,7 @@ void func_146(struct<67> Param0, var uParam1, var uParam2, var uParam3, var uPar
 	Var0.f_2 = { Param0.f_66 };
 	Var0.f_2.f_33 = iParam19;
 	iVar1 = func_148(Var0.f_1);
-	if ((Global_262145.f_24104 && !Global_262145.f_24105) && !Global_262145.f_24106)
+	if ((Global_262145.f_24104 /* Tunable: BLOCK_NS_TRANS */ && !Global_262145.f_24105 /* Tunable: SC_RUN_TRANS */) && !Global_262145.f_24106 /* Tunable: BG_RUN_TRANS */)
 	{
 		return;
 	}
@@ -7918,7 +7918,7 @@ void func_218(bool bParam0)//Position - 0x8A5A
 {
 	struct<17> Var0;
 	
-	if (Global_262145.f_26822)
+	if (Global_262145.f_26822 /* Tunable: ENABLE_SLOT_MACHINE_LIGHT */)
 	{
 		Var0.f_0 = joaat("standard");
 		Var0.f_1 = iLocal_257;

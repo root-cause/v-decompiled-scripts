@@ -367,7 +367,7 @@ void func_1()//Position - 0x18E
 			}
 			else
 			{
-				Global_2779753.f_181 = (Global_262145.f_8577 / 2);
+				Global_2779753.f_181 = (Global_262145.f_8577 /* Tunable: TIME_EVENT_FREQUENCY_AMBIENT_LAUNCHER */ / 2);
 				func_318(0);
 			}
 			break;
@@ -453,7 +453,7 @@ void func_1()//Position - 0x18E
 			break;
 		
 		case 8:
-			Global_2779753.f_181 = Global_262145.f_8577;
+			Global_2779753.f_181 = Global_262145.f_8577 /* Tunable: TIME_EVENT_FREQUENCY_AMBIENT_LAUNCHER */;
 			Global_2779753.f_8[Global_2779753.f_3 /*5*/].f_4 = 1;
 			if (func_300(1))
 			{
@@ -501,18 +501,18 @@ void func_4(int iParam0)//Position - 0x473
 	
 	if (iParam0 != 9 && !func_5(iParam0))
 	{
-		if (Global_262145.f_8575 > 0 && Global_262145.f_8575 <= 21)
+		if (Global_262145.f_8575 /* Tunable: NUMBER_OF_SCRIPTS_IN_HISTORY_LIST */ > 0 && Global_262145.f_8575 /* Tunable: NUMBER_OF_SCRIPTS_IN_HISTORY_LIST */ <= 21)
 		{
-			if (!Global_2779753.f_114[(Global_262145.f_8575 - 1)] == -1)
+			if (!Global_2779753.f_114[(Global_262145.f_8575 /* Tunable: NUMBER_OF_SCRIPTS_IN_HISTORY_LIST */ - 1)] == -1)
 			{
 				iVar0 = 0;
-				while (iVar0 < (Global_262145.f_8575 - 1))
+				while (iVar0 < (Global_262145.f_8575 /* Tunable: NUMBER_OF_SCRIPTS_IN_HISTORY_LIST */ - 1))
 				{
 					Global_2779753.f_114[iVar0] = Global_2779753.f_114[iVar0 + 1];
 					iVar0++;
 				}
 			}
-			Global_2779753.f_114[(Global_262145.f_8575 - 1)] = iParam0;
+			Global_2779753.f_114[(Global_262145.f_8575 /* Tunable: NUMBER_OF_SCRIPTS_IN_HISTORY_LIST */ - 1)] = iParam0;
 		}
 	}
 	iVar0 = 18;
@@ -1255,7 +1255,7 @@ int func_14()//Position - 0x10FA
 			func_319(&(Global_2779753.f_177));
 			func_17(3);
 		}
-		else if (func_15(&(Global_2779753.f_177), (Global_262145.f_45 * 120000), 0))
+		else if (func_15(&(Global_2779753.f_177), (Global_262145.f_45 /* Tunable: CRATE_DROP_SPECIAL_FREQUENCY */ * 120000), 0))
 		{
 			func_2(3);
 			func_318(6);
@@ -13960,9 +13960,9 @@ bool func_300(int iParam0)//Position - 0xF897
 void func_301()//Position - 0xF8A8
 {
 	func_302(func_13(NETWORK::NETWORK_GET_HOST_OF_SCRIPT(func_22(), -1, 0)), 0);
-	if (MISC::GET_RANDOM_INT_IN_RANGE(0, 100) < Global_262145.f_137)
+	if (MISC::GET_RANDOM_INT_IN_RANGE(0, 100) < Global_262145.f_137 /* Tunable: CRATE_DROP_SPECIAL_CRATE_DROP_PERCENTAGE */)
 	{
-		if (NETWORK::NETWORK_GET_NUM_PARTICIPANTS() >= Global_262145.f_138)
+		if (NETWORK::NETWORK_GET_NUM_PARTICIPANTS() >= Global_262145.f_138 /* Tunable: CRATE_DROP_SPECIAL_CRATE_MIN_PLAYERS */)
 		{
 			func_302(func_13(NETWORK::NETWORK_GET_HOST_OF_SCRIPT(func_22(), -1, 0)), 1);
 			func_17(4);
@@ -14036,7 +14036,7 @@ int func_304(int iParam0)//Position - 0xF9E5
 			return 1;
 		
 		case 1:
-			return Global_262145.f_4747;
+			return Global_262145.f_4747 /* Tunable: PLAYER_RESTRICTION_CRATE_DROP */;
 		
 		case 2:
 			return 1;
@@ -14057,37 +14057,37 @@ int func_304(int iParam0)//Position - 0xF9E5
 			return 1;
 		
 		case 8:
-			return Global_262145.f_11587;
+			return Global_262145.f_11587 /* Tunable: CHECKPOINT_MINIMUM_PARTICIPANTS_LAUNCH */;
 		
 		case 9:
-			return Global_262145.f_11492;
+			return Global_262145.f_11492 /* Tunable: CHALLENGE_MINIMUM_PARTICIPANTS_LAUNCH */;
 		
 		case 10:
-			return Global_262145.f_11539;
+			return Global_262145.f_11539 /* Tunable: HOT_TARGET_MINIMUM_PARTICIPANTS_LAUNCH */;
 		
 		case 11:
-			return Global_262145.f_11560;
+			return Global_262145.f_11560 /* Tunable: KILL_LIST_MINIMUM_PARTICIPANTS_LAUNCH */;
 		
 		case 12:
-			return Global_262145.f_11610;
+			return Global_262145.f_11610 /* Tunable: PENNED_IN_MINIMUM_PARTICIPANTS_LAUNCH */;
 		
 		case 13:
-			return Global_262145.f_11628;
+			return Global_262145.f_11628 /* Tunable: PASS_THE_PARCEL_MINIMUM_PARTICIPANTS_LAUNCH */;
 		
 		case 14:
-			return Global_262145.f_11643;
+			return Global_262145.f_11643 /* Tunable: HOT_PROPERTY_MINIMUM_PARTICIPANTS_LAUNCH */;
 		
 		case 15:
-			return Global_262145.f_11654;
+			return Global_262145.f_11654 /* Tunable: DEAD_DROP_MINIMUM_PARTICIPANTS_LAUNCH */;
 		
 		case 16:
-			return Global_262145.f_11662;
+			return Global_262145.f_11662 /* Tunable: KING_OF_THE_CASTLE_MINIMUM_PARTICIPANTS_LAUNCH */;
 		
 		case 17:
-			return Global_262145.f_11676;
+			return Global_262145.f_11676 /* Tunable: CRIMINAL_DAMAGE_MINIMUM_PARTICIPANTS_LAUNCH */;
 		
 		case 18:
-			return Global_262145.f_11685;
+			return Global_262145.f_11685 /* Tunable: HUNT_THE_BEAST_MINIMUM_PARTICIPANTS_LAUNCH */;
 		
 		case 19:
 			return Global_262145.f_24547;
@@ -14149,61 +14149,61 @@ float func_308(int iParam0)//Position - 0xFBBC
 	switch (iParam0)
 	{
 		case 0:
-			return Global_262145.f_8617;
+			return Global_262145.f_8617 /* Tunable: JOYRIDERBASEWEIGHTING */;
 		
 		case 1:
-			return Global_262145.f_8614;
+			return Global_262145.f_8614 /* Tunable: CRATEDROPBASEWEIGHTING */;
 		
 		case 2:
-			return Global_262145.f_8615;
+			return Global_262145.f_8615 /* Tunable: SECURITYVANBASEWEIGHTING */;
 		
 		case 3:
-			return Global_262145.f_8616;
+			return Global_262145.f_8616 /* Tunable: IMPORTEXPORTBASEWEIGHTING */;
 		
 		case 4:
-			return Global_262145.f_8618;
+			return Global_262145.f_8618 /* Tunable: LESTERKILLTARGETBASEWEIGHTING */;
 		
 		case 5:
-			return Global_262145.f_8619;
+			return Global_262145.f_8619 /* Tunable: PLANETAKEDOWNBASEWEIGHTING */;
 		
 		case 6:
-			return Global_262145.f_8620;
+			return Global_262145.f_8620 /* Tunable: DISTRACTPOLICEBASEWEIGHTING */;
 		
 		case 7:
-			return Global_262145.f_9037;
+			return Global_262145.f_9037 /* Tunable: DESTROYVEHICLEBASEWEIGHTING */;
 		
 		case 8:
-			return Global_262145.f_10648;
+			return Global_262145.f_10648 /* Tunable: CHECKPOINTCOLLECTIONBASEWEIGHTING */;
 		
 		case 9:
-			return Global_262145.f_10650;
+			return Global_262145.f_10650 /* Tunable: CHALLENGESBASEWEIGHTING */;
 		
 		case 10:
-			return Global_262145.f_10646;
+			return Global_262145.f_10646 /* Tunable: HOTTARGETBASEWEIGHTING */;
 		
 		case 11:
-			return Global_262145.f_10653;
+			return Global_262145.f_10653 /* Tunable: URBANWARFAREBASEWEIGHTING */;
 		
 		case 12:
-			return Global_262145.f_11095;
+			return Global_262145.f_11095 /* Tunable: PENNEDIN_BASEWEIGHTING */;
 		
 		case 13:
-			return Global_262145.f_11097;
+			return Global_262145.f_11097 /* Tunable: PASSTHEPARCEL_BASEWEIGHTING */;
 		
 		case 14:
-			return Global_262145.f_11098;
+			return Global_262145.f_11098 /* Tunable: HOTPROPERTY_BASEWEIGHTING */;
 		
 		case 15:
-			return Global_262145.f_11099;
+			return Global_262145.f_11099 /* Tunable: DEADDROP_BASEWEIGHTING */;
 		
 		case 16:
-			return Global_262145.f_11100;
+			return Global_262145.f_11100 /* Tunable: KINGOFTHECASTLE_BASEWEIGHTING */;
 		
 		case 17:
-			return Global_262145.f_11104;
+			return Global_262145.f_11104 /* Tunable: CRIMINAL_DAMAGE_BASEWEIGHTING */;
 		
 		case 18:
-			return Global_262145.f_11686;
+			return Global_262145.f_11686 /* Tunable: HUNT_THE_BEAST_AMBIENT_WEIGHTING_HUNT_THE_BEAST */;
 		
 		case 19:
 			return Global_262145.f_24546;
@@ -14255,61 +14255,61 @@ int func_311(int iParam0)//Position - 0xFD90
 	switch (iParam0)
 	{
 		case 0:
-			return Global_262145.f_7122;
+			return Global_262145.f_7122 /* Tunable: DISABLE_EVENT_JOYRIDER */;
 		
 		case 1:
-			return Global_262145.f_7119;
+			return Global_262145.f_7119 /* Tunable: DISABLE_EVENT_CRATE_DROP */;
 		
 		case 2:
-			return Global_262145.f_7120;
+			return Global_262145.f_7120 /* Tunable: DISABLE_EVENT_ARMOURED_TRUCK */;
 		
 		case 3:
-			return Global_262145.f_7121;
+			return Global_262145.f_7121 /* Tunable: DISABLE_EVENT_HIGH_PRIORITY_VEHICLE */;
 		
 		case 4:
-			return Global_262145.f_8704;
+			return Global_262145.f_8704 /* Tunable: DISABLE_EVENT_KILL_TARGET */;
 		
 		case 5:
-			return Global_262145.f_8559;
+			return Global_262145.f_8559 /* Tunable: DISABLE_EVENT_PLANE_TAKEDOWN */;
 		
 		case 6:
-			return Global_262145.f_8564;
+			return Global_262145.f_8564 /* Tunable: DISABLE_EVENT_DISTRACT_COPS */;
 		
 		case 7:
-			return Global_262145.f_8569;
+			return Global_262145.f_8569 /* Tunable: DISABLEDESTROYVEHICLE */;
 		
 		case 8:
-			return Global_262145.f_10649;
+			return Global_262145.f_10649 /* Tunable: DISABLE_EVENT_CHECKPOINTCOLLECTION */;
 		
 		case 9:
-			return Global_262145.f_10651;
+			return Global_262145.f_10651 /* Tunable: DISABLE_EVENT_CHALLENGES */;
 		
 		case 10:
-			return Global_262145.f_10647;
+			return Global_262145.f_10647 /* Tunable: DISABLE_EVENT_HOTTARGET */;
 		
 		case 11:
-			return (Global_262145.f_11833 && Global_262145.f_11832);
+			return (Global_262145.f_11833 /* Tunable: KILL_LIST_DISABLE */ && Global_262145.f_11832 /* Tunable: COMPETITIVE_KILL_LIST_DISABLE */);
 		
 		case 12:
-			return Global_262145.f_11089;
+			return Global_262145.f_11089 /* Tunable: DISABLE_EVENT_PENNEDIN */;
 		
 		case 13:
-			return Global_262145.f_11091;
+			return Global_262145.f_11091 /* Tunable: DISABLE_EVENT_PASSTHEPARCEL */;
 		
 		case 14:
-			return Global_262145.f_11092;
+			return Global_262145.f_11092 /* Tunable: DISABLE_EVENT_HOTPROPERTY */;
 		
 		case 15:
-			return Global_262145.f_11093;
+			return Global_262145.f_11093 /* Tunable: DISABLE_EVENT_DEADDROP */;
 		
 		case 16:
-			return Global_262145.f_11094;
+			return Global_262145.f_11094 /* Tunable: DISABLE_EVENT_KINGOFTHECASTLE */;
 		
 		case 17:
-			return Global_262145.f_11103;
+			return Global_262145.f_11103 /* Tunable: DISABLE_EVENT_CRIMINAL_DAMAGE */;
 		
 		case 18:
-			return Global_262145.f_11687;
+			return Global_262145.f_11687 /* Tunable: HUNT_THE_BEAST_DISABLE__HUNT_THE_BEAST */;
 		
 		case 19:
 			return 0;
@@ -14554,12 +14554,12 @@ int func_316(int iParam0)//Position - 0x101E4
 	{
 		return 0;
 	}
-	if (Global_262145.f_8575 > 0 && Global_262145.f_8575 <= 21)
+	if (Global_262145.f_8575 /* Tunable: NUMBER_OF_SCRIPTS_IN_HISTORY_LIST */ > 0 && Global_262145.f_8575 /* Tunable: NUMBER_OF_SCRIPTS_IN_HISTORY_LIST */ <= 21)
 	{
-		if (!Global_2779753.f_114[(Global_262145.f_8575 - 1)] == -1)
+		if (!Global_2779753.f_114[(Global_262145.f_8575 /* Tunable: NUMBER_OF_SCRIPTS_IN_HISTORY_LIST */ - 1)] == -1)
 		{
 			iVar0 = 0;
-			while (iVar0 < Global_262145.f_8575)
+			while (iVar0 < Global_262145.f_8575 /* Tunable: NUMBER_OF_SCRIPTS_IN_HISTORY_LIST */)
 			{
 				if (Global_2779753.f_114[iVar0] == iParam0)
 				{
@@ -14614,7 +14614,7 @@ int func_323()//Position - 0x102CE
 	int iVar0;
 	int iVar1;
 	
-	Global_2779753.f_181 = Global_262145.f_8577;
+	Global_2779753.f_181 = Global_262145.f_8577 /* Tunable: TIME_EVENT_FREQUENCY_AMBIENT_LAUNCHER */;
 	iVar0 = 0;
 	while (iVar0 < 21)
 	{
@@ -14623,10 +14623,10 @@ int func_323()//Position - 0x102CE
 		Global_2779753.f_8[iVar0 /*5*/].f_2 = 1f;
 		iVar0++;
 	}
-	if (Global_262145.f_8575 > 0 && Global_262145.f_8575 <= 21)
+	if (Global_262145.f_8575 /* Tunable: NUMBER_OF_SCRIPTS_IN_HISTORY_LIST */ > 0 && Global_262145.f_8575 /* Tunable: NUMBER_OF_SCRIPTS_IN_HISTORY_LIST */ <= 21)
 	{
 		iVar1 = 0;
-		while (iVar1 < Global_262145.f_8575)
+		while (iVar1 < Global_262145.f_8575 /* Tunable: NUMBER_OF_SCRIPTS_IN_HISTORY_LIST */)
 		{
 			Global_2779753.f_114[iVar1] = -1;
 			iVar1++;
@@ -15685,15 +15685,15 @@ void func_332()//Position - 0x113E0
 	{
 		if (!BitTest(Global_2815059.f_206.f_1, 1))
 		{
-			if (((Global_262145.f_45 * 120000) - func_350(&(Global_2779753.f_177), 0, 0)) < 360000)
+			if (((Global_262145.f_45 /* Tunable: CRATE_DROP_SPECIAL_FREQUENCY */ * 120000) - func_350(&(Global_2779753.f_177), 0, 0)) < 360000)
 			{
 				if (!BitTest(Global_2815059.f_206.f_1, 1))
 				{
 					if (func_339(31, 0, 0) && !func_338())
 					{
-						if (Global_262145.f_45 < 3)
+						if (Global_262145.f_45 /* Tunable: CRATE_DROP_SPECIAL_FREQUENCY */ < 3)
 						{
-							func_333("ACD_TSCH" /* GXT: ~y~Special Crate Drop in ~1~ hours. */, Global_262145.f_45, 0);
+							func_333("ACD_TSCH" /* GXT: ~y~Special Crate Drop in ~1~ hours. */, Global_262145.f_45 /* Tunable: CRATE_DROP_SPECIAL_FREQUENCY */, 0);
 						}
 						else
 						{
@@ -15703,7 +15703,7 @@ void func_332()//Position - 0x113E0
 					MISC::SET_BIT(&(Global_2815059.f_206.f_1), 1);
 				}
 			}
-			else if (((Global_262145.f_45 * 120000) - func_350(&(Global_2779753.f_177), 0, 0)) < 600000)
+			else if (((Global_262145.f_45 /* Tunable: CRATE_DROP_SPECIAL_FREQUENCY */ * 120000) - func_350(&(Global_2779753.f_177), 0, 0)) < 600000)
 			{
 				if (!BitTest(Global_2815059.f_206.f_1, 2))
 				{
@@ -15714,7 +15714,7 @@ void func_332()//Position - 0x113E0
 					MISC::SET_BIT(&(Global_2815059.f_206.f_1), 2);
 				}
 			}
-			else if (((Global_262145.f_45 * 120000) - func_350(&(Global_2779753.f_177), 0, 0)) < 1200000)
+			else if (((Global_262145.f_45 /* Tunable: CRATE_DROP_SPECIAL_FREQUENCY */ * 120000) - func_350(&(Global_2779753.f_177), 0, 0)) < 1200000)
 			{
 				if (!BitTest(Global_2815059.f_206.f_1, 3))
 				{
@@ -15824,7 +15824,7 @@ int func_339(int iParam0, bool bParam1, bool bParam2)//Position - 0x11747
 	int iVar0;
 	int iVar1;
 	
-	if (Global_262145.f_8145 == 1)
+	if (Global_262145.f_8145 /* Tunable: SET_ALL_PHONE_SERVICES_AVAILABLE */ == 1)
 	{
 		if (iParam0 == 67)
 		{
@@ -15852,7 +15852,7 @@ int func_339(int iParam0, bool bParam1, bool bParam2)//Position - 0x11747
 	}
 	if (iParam0 == 31)
 	{
-		if (Global_262145.f_4746 == 1)
+		if (Global_262145.f_4746 /* Tunable: RANK_RESTRICTION_CRATE_DROP */ == 1)
 		{
 			return 1;
 		}
@@ -16197,7 +16197,7 @@ int func_355()//Position - 0x11D26
 	{
 		return 0;
 	}
-	if (Global_2666788.f_2 == Global_262145.f_9050 || Global_2666788.f_2 == Global_262145.f_9074)
+	if (Global_2666788.f_2 == Global_262145.f_9050 /* Tunable: ROOT_ID_HASH_THE_FLECCA_JOB */ || Global_2666788.f_2 == Global_262145.f_9074 /* Tunable: ROOT_ID_HASH_THE_PACIFIC_STANDARD_JOB */)
 	{
 		return 1;
 	}
@@ -16347,7 +16347,7 @@ int func_362(int iParam0)//Position - 0x11FC7
 			break;
 		
 		case 4:
-			if (Global_262145.f_7119)
+			if (Global_262145.f_7119 /* Tunable: DISABLE_EVENT_CRATE_DROP */)
 			{
 				return 0;
 			}
@@ -16362,7 +16362,7 @@ int func_362(int iParam0)//Position - 0x11FC7
 			break;
 		
 		case 5:
-			if (Global_262145.f_7120)
+			if (Global_262145.f_7120 /* Tunable: DISABLE_EVENT_ARMOURED_TRUCK */)
 			{
 				return 0;
 			}
@@ -16377,7 +16377,7 @@ int func_362(int iParam0)//Position - 0x11FC7
 			break;
 		
 		case 6:
-			if (Global_262145.f_7121)
+			if (Global_262145.f_7121 /* Tunable: DISABLE_EVENT_HIGH_PRIORITY_VEHICLE */)
 			{
 				return 0;
 			}
@@ -16390,7 +16390,7 @@ int func_362(int iParam0)//Position - 0x11FC7
 			break;
 		
 		case 9:
-			if (Global_262145.f_7122)
+			if (Global_262145.f_7122 /* Tunable: DISABLE_EVENT_JOYRIDER */)
 			{
 				return 0;
 			}

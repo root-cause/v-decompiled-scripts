@@ -4695,7 +4695,7 @@ void func_22(var uParam0)//Position - 0x450F
 					{
 						HUD::SET_MULTIPLAYER_WALLET_CASH();
 						HUD::SET_MULTIPLAYER_BANK_CASH();
-						if (Global_262145.f_2463)
+						if (Global_262145.f_2463 /* Tunable: IS_SALE_ON_IN_HAIR_SHOP */)
 						{
 							if (GRAPHICS::HAS_STREAMED_TEXTURE_DICT_LOADED("MPShops"))
 							{
@@ -20330,7 +20330,7 @@ int func_186(int iParam0, int iParam1, int iParam2)//Position - 0x1A50D
 			{
 				case joaat("MP_exec_prizes_015_M"):
 				case joaat("MP_exec_prizes_015_F"):
-					if (func_202(7551, -1) || func_17(3792, -1, 0) >= Global_262145.f_16823)
+					if (func_202(7551, -1) || func_17(3792, -1, 0) >= Global_262145.f_16823 /* Tunable: DCTL_WIN_COUNT_REWARD */)
 					{
 						return 0;
 					}
@@ -20860,7 +20860,7 @@ int func_186(int iParam0, int iParam1, int iParam2)//Position - 0x1A50D
 					return !func_202(3593, -1);
 					break;
 			}
-			if (!Global_262145.f_8258 && !func_198(iParam2, iParam1, 0))
+			if (!Global_262145.f_8258 /* Tunable: TOGGLE_ACTIVATE_INDEPENDENCE_PACK */ && !func_198(iParam2, iParam1, 0))
 			{
 				return 1;
 			}
@@ -20987,7 +20987,7 @@ int func_186(int iParam0, int iParam1, int iParam2)//Position - 0x1A50D
 			break;
 		
 		case joaat("mpValentines_overlays"):
-			if ((!Global_262145.f_7058 && !func_189(iParam2, -1)) && !Global_262145.f_12031)
+			if ((!Global_262145.f_7058 /* Tunable: TURN_ON_VALENTINES_EVENT */ && !func_189(iParam2, -1)) && !Global_262145.f_12031 /* Tunable: TURN_ON_VALENTINE_CLOTHING */)
 			{
 				return 1;
 			}
@@ -27716,271 +27716,271 @@ bool func_206(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 			switch (iParam1)
 			{
 				case 0:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_008", "multiplayer_overlays", "000", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(20000) * Global_262145.f_2916)), 0);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_008", "multiplayer_overlays", "000", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(20000) * Global_262145.f_2916 /* Tunable: TATTOO_MP_FM_HEAD_BANGER_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 1:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_009", "multiplayer_overlays", "001", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1400) * Global_262145.f_2917)), 2);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_009", "multiplayer_overlays", "001", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1400) * Global_262145.f_2917 /* Tunable: TATTOO_MP_FM_SLAYER_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 2:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_010", "multiplayer_overlays", "002", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(9750) * Global_262145.f_2918)), 3);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_010", "multiplayer_overlays", "002", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(9750) * Global_262145.f_2918 /* Tunable: TATTOO_MP_FM_GANGHIDEOUT_CLEAR_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 3:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_011", "multiplayer_overlays", "003", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2150) * Global_262145.f_2919)), 0);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_011", "multiplayer_overlays", "003", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2150) * Global_262145.f_2919 /* Tunable: TATTOO_MP_FM_ARMOURED_VAN_TAKEDOWN_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 4:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_012", "multiplayer_overlays", "004", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2920)), 0);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_012", "multiplayer_overlays", "004", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2920 /* Tunable: TATTOO_MP_FM_HUSTLER_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 54:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_013", "multiplayer_overlays", "005", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(12400) * Global_262145.f_2921)), 1);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_013", "multiplayer_overlays", "005", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(12400) * Global_262145.f_2921 /* Tunable: TATTOO_MP_FM_WIN_EVER_MODE_ONCE_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 5:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_014", "multiplayer_overlays", "006", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(3500) * Global_262145.f_2922)), 0);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_014", "multiplayer_overlays", "006", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(3500) * Global_262145.f_2922 /* Tunable: TATTOO_MP_FM_BOUNTY_KILLER_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 6:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_015", "multiplayer_overlays", "007", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(4950) * Global_262145.f_2923)), 2);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_015", "multiplayer_overlays", "007", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(4950) * Global_262145.f_2923 /* Tunable: TATTOO_MP_FM_HOLD_WORLD_RECORD_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 55:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_016", "multiplayer_overlays", "008", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1350) * Global_262145.f_2924)), 1);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_016", "multiplayer_overlays", "008", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1350) * Global_262145.f_2924 /* Tunable: TATTOO_MP_FM_FULL_MODDED_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 7:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_017", "multiplayer_overlays", "009", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1450) * Global_262145.f_2925)), 0);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_017", "multiplayer_overlays", "009", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1450) * Global_262145.f_2925 /* Tunable: TATTOO_MP_FM_REVENGE_KILL_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 8:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_018", "multiplayer_overlays", "010", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2700) * Global_262145.f_2926)), 7);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_018", "multiplayer_overlays", "010", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2700) * Global_262145.f_2926 /* Tunable: TATTOO_MP_FM_KILL_3_RACERS_EXPENDITURE_TUNABLE */)), 7);
 					break;
 				
 				case 9:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_019", "multiplayer_overlays", "011", "rank", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1200) * Global_262145.f_2927)), 0);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_019", "multiplayer_overlays", "011", "rank", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1200) * Global_262145.f_2927 /* Tunable: TATTOO_MP_FM_REACH_RANK_1_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 10:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_020", "multiplayer_overlays", "012", "rank", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1500) * Global_262145.f_2928)), 0);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_020", "multiplayer_overlays", "012", "rank", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1500) * Global_262145.f_2928 /* Tunable: TATTOO_MP_FM_REACH_RANK_2_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 11:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_021", "multiplayer_overlays", "013", "rank", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2650) * Global_262145.f_2929)), 0);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_021", "multiplayer_overlays", "013", "rank", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2650) * Global_262145.f_2929 /* Tunable: TATTOO_MP_FM_REACH_RANK_3_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 56:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_022", "multiplayer_overlays", "014", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1900) * Global_262145.f_2930)), 1);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_022", "multiplayer_overlays", "014", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1900) * Global_262145.f_2930 /* Tunable: TATTOO_MP_FM_FMKILLCHEATER_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 12:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_023", "multiplayer_overlays", "015", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(4950) * Global_262145.f_2931)), 2);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_023", "multiplayer_overlays", "015", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(4950) * Global_262145.f_2931 /* Tunable: TATTOO_MP_FM_RACES_WON_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 57:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_024", "multiplayer_overlays", "016", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2400) * Global_262145.f_2932)), 1);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_024", "multiplayer_overlays", "016", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2400) * Global_262145.f_2932 /* Tunable: TATTOO_MP_FM_HOLD_UP_SHOPS_1_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 58:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_025", "multiplayer_overlays", "017", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5100) * Global_262145.f_2933)), 1);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_025", "multiplayer_overlays", "017", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5100) * Global_262145.f_2933 /* Tunable: TATTOO_MP_FM_HOLD_UP_SHOPS_2_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 59:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_026", "multiplayer_overlays", "018", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7400) * Global_262145.f_2934)), 1);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_026", "multiplayer_overlays", "018", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7400) * Global_262145.f_2934 /* Tunable: TATTOO_MP_FM_HOLD_UP_SHOPS_3_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 60:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_027", "multiplayer_overlays", "019", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2935)), 1);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_027", "multiplayer_overlays", "019", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2935 /* Tunable: TATTOO_MP_FM_HOLD_UP_SHOPS_4_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 17:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_201", "multiplayer_overlays", "005", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2400) * Global_262145.f_2940)), 2);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_201", "multiplayer_overlays", "005", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2400) * Global_262145.f_2940 /* Tunable: TATTOO_MP_FM_01_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 18:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_202", "multiplayer_overlays", "006", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5100) * Global_262145.f_2941)), 2);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_202", "multiplayer_overlays", "006", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5100) * Global_262145.f_2941 /* Tunable: TATTOO_MP_FM_02_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 19:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_203", "multiplayer_overlays", "015", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(3600) * Global_262145.f_2942)), 2);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_203", "multiplayer_overlays", "015", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(3600) * Global_262145.f_2942 /* Tunable: TATTOO_MP_FM_03_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 20:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_204", "multiplayer_overlays", "000", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2943)), 3);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_204", "multiplayer_overlays", "000", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2943 /* Tunable: TATTOO_MP_FM_04_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 21:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_205", "multiplayer_overlays", "001", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(12500) * Global_262145.f_2944)), 3);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_205", "multiplayer_overlays", "001", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(12500) * Global_262145.f_2944 /* Tunable: TATTOO_MP_FM_05_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 22:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_206", "multiplayer_overlays", "003", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2945)), 3);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_206", "multiplayer_overlays", "003", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2945 /* Tunable: TATTOO_MP_FM_06_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 23:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_207", "multiplayer_overlays", "014", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2946)), 3);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_207", "multiplayer_overlays", "014", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2946 /* Tunable: TATTOO_MP_FM_07_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 24:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_208", "multiplayer_overlays", "018", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7500) * Global_262145.f_2947)), 3);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_208", "multiplayer_overlays", "018", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7500) * Global_262145.f_2947 /* Tunable: TATTOO_MP_FM_08_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 25:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_209", "multiplayer_overlays", "002", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(3750) * Global_262145.f_2948)), 2);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_209", "multiplayer_overlays", "002", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(3750) * Global_262145.f_2948 /* Tunable: TATTOO_MP_FM_09_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 26:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_210", "multiplayer_overlays", "007", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(3750) * Global_262145.f_2949)), 3);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_210", "multiplayer_overlays", "007", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(3750) * Global_262145.f_2949 /* Tunable: TATTOO_MP_FM_10_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 27:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_211", "multiplayer_overlays", "008", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(4800) * Global_262145.f_2950)), 3);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_211", "multiplayer_overlays", "008", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(4800) * Global_262145.f_2950 /* Tunable: TATTOO_MP_FM_11_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 28:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_212", "multiplayer_overlays", "017", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(3500) * Global_262145.f_2951)), 3);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_212", "multiplayer_overlays", "017", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(3500) * Global_262145.f_2951 /* Tunable: TATTOO_MP_FM_12_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 61:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_213", "multiplayer_overlays", "009", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(12350) * Global_262145.f_2952)), 1);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_213", "multiplayer_overlays", "009", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(12350) * Global_262145.f_2952 /* Tunable: TATTOO_MP_FM_13_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 62:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_214", "multiplayer_overlays", "011", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1900) * Global_262145.f_2953)), 1);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_214", "multiplayer_overlays", "011", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1900) * Global_262145.f_2953 /* Tunable: TATTOO_MP_FM_14_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 63:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_215", "multiplayer_overlays", "013", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(4500) * Global_262145.f_2954)), 1);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_215", "multiplayer_overlays", "013", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(4500) * Global_262145.f_2954 /* Tunable: TATTOO_MP_FM_15_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 64:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_216", "multiplayer_overlays", "016", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(12250) * Global_262145.f_2955)), 1);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_216", "multiplayer_overlays", "016", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(12250) * Global_262145.f_2955 /* Tunable: TATTOO_MP_FM_16_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 65:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_217", "multiplayer_overlays", "019", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(12300) * Global_262145.f_2956)), 1);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_217", "multiplayer_overlays", "019", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(12300) * Global_262145.f_2956 /* Tunable: TATTOO_MP_FM_17_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 29:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_218", "multiplayer_overlays", "010", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2500) * Global_262145.f_2957)), 0);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_218", "multiplayer_overlays", "010", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2500) * Global_262145.f_2957 /* Tunable: TATTOO_MP_FM_18_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 30:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_219", "multiplayer_overlays", "004", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2958)), 0);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_219", "multiplayer_overlays", "004", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2958 /* Tunable: TATTOO_MP_FM_19_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 31:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_220", "multiplayer_overlays", "012", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2959)), 0);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_220", "multiplayer_overlays", "012", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2959 /* Tunable: TATTOO_MP_FM_20_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 66:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_221", "multiplayer_overlays", "020", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7500) * Global_262145.f_2960)), 1);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_221", "multiplayer_overlays", "020", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7500) * Global_262145.f_2960 /* Tunable: TATTOO_MP_FM_21_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 32:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_222", "multiplayer_overlays", "021", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2961)), 2);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_222", "multiplayer_overlays", "021", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2961 /* Tunable: TATTOO_MP_FM_22_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 33:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_223", "multiplayer_overlays", "022", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7300) * Global_262145.f_2962)), 3);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_223", "multiplayer_overlays", "022", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7300) * Global_262145.f_2962 /* Tunable: TATTOO_MP_FM_23_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 34:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_224", "multiplayer_overlays", "023", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7250) * Global_262145.f_2963)), 2);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_224", "multiplayer_overlays", "023", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7250) * Global_262145.f_2963 /* Tunable: TATTOO_MP_FM_24_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 35:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_225", "multiplayer_overlays", "024", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(11900) * Global_262145.f_2964)), 0);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_225", "multiplayer_overlays", "024", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(11900) * Global_262145.f_2964 /* Tunable: TATTOO_MP_FM_25_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 36:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_226", "multiplayer_overlays", "025", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2750) * Global_262145.f_2965)), 0);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_226", "multiplayer_overlays", "025", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2750) * Global_262145.f_2965 /* Tunable: TATTOO_MP_FM_26_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 37:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_227", "multiplayer_overlays", "026", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1750) * Global_262145.f_2966)), 0);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_227", "multiplayer_overlays", "026", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1750) * Global_262145.f_2966 /* Tunable: TATTOO_MP_FM_27_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 38:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_228", "multiplayer_overlays", "027", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7300) * Global_262145.f_2967)), 3);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_228", "multiplayer_overlays", "027", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7300) * Global_262145.f_2967 /* Tunable: TATTOO_MP_FM_28_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 39:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_229", "multiplayer_overlays", "028", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(3250) * Global_262145.f_2968)), 2);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_229", "multiplayer_overlays", "028", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(3250) * Global_262145.f_2968 /* Tunable: TATTOO_MP_FM_29_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 40:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_230", "multiplayer_overlays", "029", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1000) * Global_262145.f_2969)), 0);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_230", "multiplayer_overlays", "029", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1000) * Global_262145.f_2969 /* Tunable: TATTOO_MP_FM_30_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 67:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_231", "multiplayer_overlays", "030", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2970)), 1);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_231", "multiplayer_overlays", "030", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2970 /* Tunable: TATTOO_MP_FM_31_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 41:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_232", "multiplayer_overlays", "031", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7500) * Global_262145.f_2971)), 2);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_232", "multiplayer_overlays", "031", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7500) * Global_262145.f_2971 /* Tunable: TATTOO_MP_FM_32_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 68:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_233", "multiplayer_overlays", "032", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5100) * Global_262145.f_2972)), 1);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_233", "multiplayer_overlays", "032", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5100) * Global_262145.f_2972 /* Tunable: TATTOO_MP_FM_33_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 42:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_234", "multiplayer_overlays", "033", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5050) * Global_262145.f_2973)), 0);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_234", "multiplayer_overlays", "033", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5050) * Global_262145.f_2973 /* Tunable: TATTOO_MP_FM_34_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 43:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_235", "multiplayer_overlays", "034", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2450) * Global_262145.f_2974)), 2);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_235", "multiplayer_overlays", "034", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2450) * Global_262145.f_2974 /* Tunable: TATTOO_MP_FM_35_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 44:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_236", "multiplayer_overlays", "035", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(4950) * Global_262145.f_2975)), 0);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_236", "multiplayer_overlays", "035", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(4950) * Global_262145.f_2975 /* Tunable: TATTOO_MP_FM_36_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 45:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_237", "multiplayer_overlays", "036", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5100) * Global_262145.f_2976)), 0);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_237", "multiplayer_overlays", "036", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5100) * Global_262145.f_2976 /* Tunable: TATTOO_MP_FM_37_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 46:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_238", "multiplayer_overlays", "037", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(12250) * Global_262145.f_2977)), 0);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_238", "multiplayer_overlays", "037", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(12250) * Global_262145.f_2977 /* Tunable: TATTOO_MP_FM_38_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 47:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_239", "multiplayer_overlays", "038", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1150) * Global_262145.f_2978)), 3);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_239", "multiplayer_overlays", "038", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1150) * Global_262145.f_2978 /* Tunable: TATTOO_MP_FM_39_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 48:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_240", "multiplayer_overlays", "039", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7500) * Global_262145.f_2979)), 3);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_240", "multiplayer_overlays", "039", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7500) * Global_262145.f_2979 /* Tunable: TATTOO_MP_FM_40_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 49:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_241", "multiplayer_overlays", "040", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7600) * Global_262145.f_2980)), 3);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_241", "multiplayer_overlays", "040", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7600) * Global_262145.f_2980 /* Tunable: TATTOO_MP_FM_41_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 50:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_242", "multiplayer_overlays", "041", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2600) * Global_262145.f_2981)), 2);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_242", "multiplayer_overlays", "041", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2600) * Global_262145.f_2981 /* Tunable: TATTOO_MP_FM_42_EXPENDITURE_TUNABLE */)), 2);
 					break;
 				
 				case 51:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_243", "multiplayer_overlays", "042", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2500) * Global_262145.f_2982)), 3);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_243", "multiplayer_overlays", "042", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2500) * Global_262145.f_2982 /* Tunable: TATTOO_MP_FM_43_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 52:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_244", "multiplayer_overlays", "043", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7450) * Global_262145.f_2983)), 3);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_244", "multiplayer_overlays", "043", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7450) * Global_262145.f_2983 /* Tunable: TATTOO_MP_FM_44_EXPENDITURE_TUNABLE */)), 3);
 					break;
 				
 				case 53:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_245", "multiplayer_overlays", "044", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7500) * Global_262145.f_2984)), 0);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_245", "multiplayer_overlays", "044", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(7500) * Global_262145.f_2984 /* Tunable: TATTOO_MP_FM_45_EXPENDITURE_TUNABLE */)), 0);
 					break;
 				
 				case 69:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_246", "multiplayer_overlays", "045", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2985)), 1);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_246", "multiplayer_overlays", "045", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2985 /* Tunable: TATTOO_MP_FM_46_EXPENDITURE_TUNABLE */)), 1);
 					break;
 				
 				case 70:
-					func_212(sParam0, iParam1, iParam3, "TAT_FM_247", "multiplayer_overlays", "047", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2500) * Global_262145.f_2986)), 2);
+					func_212(sParam0, iParam1, iParam3, "TAT_FM_247", "multiplayer_overlays", "047", "", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2500) * Global_262145.f_2986 /* Tunable: TATTOO_MP_FM_47_EXPENDITURE_TUNABLE */)), 2);
 					break;
 			}
 			if (iVar0 == joaat("MP_M_Freemode_01"))
@@ -28060,15 +28060,15 @@ bool func_206(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 						break;
 					
 					case 87:
-						func_212(sParam0, iParam1, iParam3, "NO_LABEL", "multiplayer_overlays", "FM_Tshirt_Award_000", "torsoDecal", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2987)), 0);
+						func_212(sParam0, iParam1, iParam3, "NO_LABEL", "multiplayer_overlays", "FM_Tshirt_Award_000", "torsoDecal", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2987 /* Tunable: TSHIRT_TRANS_MP_FM_REDSKULL_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					
 					case 88:
-						func_212(sParam0, iParam1, iParam3, "NO_LABEL", "multiplayer_overlays", "FM_Tshirt_Award_001", "torsoDecal", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2988)), 0);
+						func_212(sParam0, iParam1, iParam3, "NO_LABEL", "multiplayer_overlays", "FM_Tshirt_Award_001", "torsoDecal", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2988 /* Tunable: TSHIRT_TRANS_MP_FM_LSBELLE_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					
 					case 89:
-						func_212(sParam0, iParam1, iParam3, "NO_LABEL", "multiplayer_overlays", "FM_Tshirt_Award_002", "torsoDecal", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2989)), 0);
+						func_212(sParam0, iParam1, iParam3, "NO_LABEL", "multiplayer_overlays", "FM_Tshirt_Award_002", "torsoDecal", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2989 /* Tunable: TSHIRT_TRANS_MP_FM_ROCKSTAR_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					
 					case 93:
@@ -28176,27 +28176,27 @@ bool func_206(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 						break;
 					
 					case 13:
-						func_212(sParam0, iParam1, iParam3, "TAT_FM_100" /* GXT: Crew Emblem Small */, "multiplayer_overlays", "000_A", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2936)), 0);
+						func_212(sParam0, iParam1, iParam3, "TAT_FM_100" /* GXT: Crew Emblem Small */, "multiplayer_overlays", "000_A", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2936 /* Tunable: TATTOO_MP_FM_CREW_A_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					
 					case 14:
-						func_212(sParam0, iParam1, iParam3, "TAT_FM_101" /* GXT: Crew Emblem Large */, "multiplayer_overlays", "000_B", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2937)), 0);
+						func_212(sParam0, iParam1, iParam3, "TAT_FM_101" /* GXT: Crew Emblem Large */, "multiplayer_overlays", "000_B", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2937 /* Tunable: TATTOO_MP_FM_CREW_B_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					
 					case 15:
-						func_212(sParam0, iParam1, iParam3, "TAT_FMM_CLB" /* GXT: Crew Emblem Back */, "multiplayer_overlays", "000_C", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2938)), 2);
+						func_212(sParam0, iParam1, iParam3, "TAT_FMM_CLB" /* GXT: Crew Emblem Back */, "multiplayer_overlays", "000_C", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2938 /* Tunable: TATTOO_MP_FM_CREW_C_EXPENDITURE_TUNABLE */)), 2);
 						break;
 					
 					case 16:
-						func_212(sParam0, iParam1, iParam3, "TAT_FM_100" /* GXT: Crew Emblem Small */, "multiplayer_overlays", "000_D", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2939)), 0);
+						func_212(sParam0, iParam1, iParam3, "TAT_FM_100" /* GXT: Crew Emblem Small */, "multiplayer_overlays", "000_D", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2939 /* Tunable: TATTOO_MP_FM_CREW_D_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					
 					case 71:
-						func_212(sParam0, iParam1, iParam3, "TAT_FM_101" /* GXT: Crew Emblem Large */, "multiplayer_overlays", "000_E", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2939)), 0);
+						func_212(sParam0, iParam1, iParam3, "TAT_FM_101" /* GXT: Crew Emblem Large */, "multiplayer_overlays", "000_E", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2939 /* Tunable: TATTOO_MP_FM_CREW_D_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					
 					case 72:
-						func_212(sParam0, iParam1, iParam3, "TAT_FMM_CLB" /* GXT: Crew Emblem Back */, "multiplayer_overlays", "000_F", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2939)), 0);
+						func_212(sParam0, iParam1, iParam3, "TAT_FMM_CLB" /* GXT: Crew Emblem Back */, "multiplayer_overlays", "000_F", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2939 /* Tunable: TATTOO_MP_FM_CREW_D_EXPENDITURE_TUNABLE */)), 0);
 						break;
 				}
 			}
@@ -28261,15 +28261,15 @@ bool func_206(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 						break;
 					
 					case 87:
-						func_212(sParam0, iParam1, iParam3, "NO_LABEL", "multiplayer_overlays", "FM_Tshirt_Award_F_000", "torsoDecal", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2987)), 0);
+						func_212(sParam0, iParam1, iParam3, "NO_LABEL", "multiplayer_overlays", "FM_Tshirt_Award_F_000", "torsoDecal", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2987 /* Tunable: TSHIRT_TRANS_MP_FM_REDSKULL_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					
 					case 88:
-						func_212(sParam0, iParam1, iParam3, "NO_LABEL", "multiplayer_overlays", "FM_Tshirt_Award_F_001", "torsoDecal", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2988)), 0);
+						func_212(sParam0, iParam1, iParam3, "NO_LABEL", "multiplayer_overlays", "FM_Tshirt_Award_F_001", "torsoDecal", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2988 /* Tunable: TSHIRT_TRANS_MP_FM_LSBELLE_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					
 					case 89:
-						func_212(sParam0, iParam1, iParam3, "NO_LABEL", "multiplayer_overlays", "FM_Tshirt_Award_F_002", "torsoDecal", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2989)), 0);
+						func_212(sParam0, iParam1, iParam3, "NO_LABEL", "multiplayer_overlays", "FM_Tshirt_Award_F_002", "torsoDecal", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2989 /* Tunable: TSHIRT_TRANS_MP_FM_ROCKSTAR_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					
 					case 93:
@@ -28397,19 +28397,19 @@ bool func_206(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 						break;
 					
 					case 13:
-						func_212(sParam0, iParam1, iParam3, "TAT_FM_100" /* GXT: Crew Emblem Small */, "multiplayer_overlays", "000_A", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2936)), 0);
+						func_212(sParam0, iParam1, iParam3, "TAT_FM_100" /* GXT: Crew Emblem Small */, "multiplayer_overlays", "000_A", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2936 /* Tunable: TATTOO_MP_FM_CREW_A_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					
 					case 14:
-						func_212(sParam0, iParam1, iParam3, "TAT_FM_100" /* GXT: Crew Emblem Small */, "multiplayer_overlays", "000_B", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2937)), 0);
+						func_212(sParam0, iParam1, iParam3, "TAT_FM_100" /* GXT: Crew Emblem Small */, "multiplayer_overlays", "000_B", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2937 /* Tunable: TATTOO_MP_FM_CREW_B_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					
 					case 15:
-						func_212(sParam0, iParam1, iParam3, "TAT_FM_101" /* GXT: Crew Emblem Large */, "multiplayer_overlays", "000_C", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2938)), 2);
+						func_212(sParam0, iParam1, iParam3, "TAT_FM_101" /* GXT: Crew Emblem Large */, "multiplayer_overlays", "000_C", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2938 /* Tunable: TATTOO_MP_FM_CREW_C_EXPENDITURE_TUNABLE */)), 2);
 						break;
 					
 					case 16:
-						func_212(sParam0, iParam1, iParam3, "TAT_FM_101" /* GXT: Crew Emblem Large */, "multiplayer_overlays", "000_D", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2939)), 0);
+						func_212(sParam0, iParam1, iParam3, "TAT_FM_101" /* GXT: Crew Emblem Large */, "multiplayer_overlays", "000_D", "crewLogo", iParam2, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2939 /* Tunable: TATTOO_MP_FM_CREW_D_EXPENDITURE_TUNABLE */)), 0);
 						break;
 					}
 			}
@@ -53524,7 +53524,7 @@ int func_378(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x4
 				switch (iParam2)
 				{
 					case 22:
-						if (func_391() && (Global_262145.f_8258 || func_202(3606, -1)))
+						if (func_391() && (Global_262145.f_8258 /* Tunable: TOGGLE_ACTIVATE_INDEPENDENCE_PACK */ || func_202(3606, -1)))
 						{
 							return 1;
 						}
@@ -53603,7 +53603,7 @@ int func_378(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x4
 			case 11:
 				if (iParam2 == 13)
 				{
-					if (func_391() && (Global_262145.f_8258 || func_202(3607, -1)))
+					if (func_391() && (Global_262145.f_8258 /* Tunable: TOGGLE_ACTIVATE_INDEPENDENCE_PACK */ || func_202(3607, -1)))
 					{
 						return 1;
 					}
@@ -53613,7 +53613,7 @@ int func_378(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x4
 				{
 					if (func_384())
 					{
-						if (Global_262145.f_12040)
+						if (Global_262145.f_12040 /* Tunable: TURN_ON_HALLOWEEN_FACEPAINT */)
 						{
 							return 1;
 						}
@@ -53748,7 +53748,7 @@ int func_378(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x4
 				{
 					if (func_380())
 					{
-						if (Global_262145.f_12041)
+						if (Global_262145.f_12041 /* Tunable: TURN_ON_GANGOPS_FACEPAINT */)
 						{
 							return 1;
 						}
@@ -53777,7 +53777,7 @@ int func_378(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x4
 				switch (iParam2)
 				{
 					case 20:
-						if (func_379() && ((Global_262145.f_7058 || Global_262145.f_12030) || func_202(4246, -1)))
+						if (func_379() && ((Global_262145.f_7058 /* Tunable: TURN_ON_VALENTINES_EVENT */ || Global_262145.f_12030 /* Tunable: TURN_ON_VALENTINE_HAIR */) || func_202(4246, -1)))
 						{
 							return 1;
 						}
@@ -53785,7 +53785,7 @@ int func_378(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x4
 						break;
 					
 					case 23:
-						if (func_391() && (Global_262145.f_8258 || func_202(3606, -1)))
+						if (func_391() && (Global_262145.f_8258 /* Tunable: TOGGLE_ACTIVATE_INDEPENDENCE_PACK */ || func_202(3606, -1)))
 						{
 							return 1;
 						}
@@ -53865,7 +53865,7 @@ int func_378(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x4
 			case 11:
 				if (iParam2 == 13)
 				{
-					if (func_391() && (Global_262145.f_8258 || func_202(3607, -1)))
+					if (func_391() && (Global_262145.f_8258 /* Tunable: TOGGLE_ACTIVATE_INDEPENDENCE_PACK */ || func_202(3607, -1)))
 					{
 						return 1;
 					}
@@ -53875,7 +53875,7 @@ int func_378(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x4
 				{
 					if (func_384())
 					{
-						if (Global_262145.f_12040)
+						if (Global_262145.f_12040 /* Tunable: TURN_ON_HALLOWEEN_FACEPAINT */)
 						{
 							return 1;
 						}
@@ -54010,7 +54010,7 @@ int func_378(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x4
 				{
 					if (func_380())
 					{
-						if (Global_262145.f_12041)
+						if (Global_262145.f_12041 /* Tunable: TURN_ON_GANGOPS_FACEPAINT */)
 						{
 							return 1;
 						}
@@ -54291,7 +54291,7 @@ int func_398(int iParam0)//Position - 0x49362
 
 int func_399()//Position - 0x4936B
 {
-	if (func_391() && (Global_262145.f_8258 || func_202(3607, -1)))
+	if (func_391() && (Global_262145.f_8258 /* Tunable: TOGGLE_ACTIVATE_INDEPENDENCE_PACK */ || func_202(3607, -1)))
 	{
 		return 1;
 	}
@@ -60597,7 +60597,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 				
 				case joaat("DLC_MP_TUNER_M_OUTFIT_MORPH_0"):
 				case joaat("DLC_MP_TUNER_F_OUTFIT_MORPH_0"):
-					if (((!func_411(iParam1, 1, 1, 1, -1) && !func_202(31789, -1)) && !Global_262145.f_32772) && !Global_262145.f_32773)
+					if (((!func_411(iParam1, 1, 1, 1, -1) && !func_202(31789, -1)) && !Global_262145.f_32772 /* Tunable: UNLOCK_SPRUNK_AND_ECOLA_BODYSUITS_FOR_PURCHASE */) && !Global_262145.f_32773 /* Tunable: UNLOCK_ECOLA_ITEMS_FOR_PURCHASE */)
 					{
 						return 1;
 					}
@@ -60609,7 +60609,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 				
 				case joaat("DLC_MP_TUNER_M_OUTFIT_MORPH_1"):
 				case joaat("DLC_MP_TUNER_F_OUTFIT_MORPH_1"):
-					if (((!func_411(iParam1, 1, 1, 1, -1) && !func_202(31790, -1)) && !Global_262145.f_32772) && !Global_262145.f_32774)
+					if (((!func_411(iParam1, 1, 1, 1, -1) && !func_202(31790, -1)) && !Global_262145.f_32772 /* Tunable: UNLOCK_SPRUNK_AND_ECOLA_BODYSUITS_FOR_PURCHASE */) && !Global_262145.f_32774 /* Tunable: UNLOCK_SPRUNK_ITEMS_FOR_PURCHASE */)
 					{
 						return 1;
 					}
@@ -60646,7 +60646,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 				case joaat("DLC_MP_TUNER_M_JBIB_13_1"):
 				case joaat("DLC_MP_TUNER_M_JBIB_14_1"):
 				case joaat("DLC_MP_TUNER_F_JBIB_13_1"):
-					if ((!func_411(iParam1, 1, 1, 1, -1) && !func_202(31785, -1)) && !Global_262145.f_32773)
+					if ((!func_411(iParam1, 1, 1, 1, -1) && !func_202(31785, -1)) && !Global_262145.f_32773 /* Tunable: UNLOCK_ECOLA_ITEMS_FOR_PURCHASE */)
 					{
 						return 1;
 					}
@@ -60659,7 +60659,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 				case joaat("DLC_MP_TUNER_M_JBIB_13_0"):
 				case joaat("DLC_MP_TUNER_M_JBIB_14_0"):
 				case joaat("DLC_MP_TUNER_F_JBIB_13_0"):
-					if ((!func_411(iParam1, 1, 1, 1, -1) && !func_202(31786, -1)) && !Global_262145.f_32774)
+					if ((!func_411(iParam1, 1, 1, 1, -1) && !func_202(31786, -1)) && !Global_262145.f_32774 /* Tunable: UNLOCK_SPRUNK_ITEMS_FOR_PURCHASE */)
 					{
 						return 1;
 					}
@@ -60724,7 +60724,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 				case joaat("DLC_MP_TUNER_M_PHEAD_2_0"):
 				case joaat("DLC_MP_TUNER_F_PHEAD_1_0"):
 				case joaat("DLC_MP_TUNER_F_PHEAD_2_0"):
-					if ((!func_411(iParam1, 1, 1, 1, -1) && !func_202(31766, -1)) && !Global_262145.f_32774)
+					if ((!func_411(iParam1, 1, 1, 1, -1) && !func_202(31766, -1)) && !Global_262145.f_32774 /* Tunable: UNLOCK_SPRUNK_ITEMS_FOR_PURCHASE */)
 					{
 						return 1;
 					}
@@ -60738,7 +60738,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 				case joaat("DLC_MP_TUNER_M_PHEAD_2_1"):
 				case joaat("DLC_MP_TUNER_F_PHEAD_1_1"):
 				case joaat("DLC_MP_TUNER_F_PHEAD_2_1"):
-					if ((!func_411(iParam1, 1, 1, 1, -1) && !func_202(31767, -1)) && !Global_262145.f_32773)
+					if ((!func_411(iParam1, 1, 1, 1, -1) && !func_202(31767, -1)) && !Global_262145.f_32773 /* Tunable: UNLOCK_ECOLA_ITEMS_FOR_PURCHASE */)
 					{
 						return 1;
 					}
@@ -63553,7 +63553,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 				case joaat("DLC_MP_ARENA_M_LEGS_4_19"):
 				case joaat("DLC_MP_ARENA_M_FEET_6_19"):
 				case joaat("DLC_MP_ARENA_M_JBIB_2_19"):
-					if (Global_262145.f_25908)
+					if (Global_262145.f_25908 /* Tunable: CHRISTMAS2018_CLOTHING */)
 					{
 						return 0;
 					}
@@ -63688,7 +63688,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 				case joaat("DLC_MP_X17_F_LEGS_1_11"):
 				case joaat("DLC_MP_X17_F_FEET_1_11"):
 				case joaat("DLC_MP_X17_F_JBIB_5_11"):
-					if (Global_262145.f_23084)
+					if (Global_262145.f_23084 /* Tunable: CHRISTMAS2017_CLOTHING */)
 					{
 						return 0;
 					}
@@ -64235,7 +64235,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 				case joaat("DLC_MP_IE_M_LEGS_7_0"):
 				case joaat("DLC_MP_IE_M_FEET_1_0"):
 				case joaat("DLC_MP_IE_M_JBIB_15_0"):
-					if (!Global_262145.f_19302 && !func_411(joaat("DLC_MP_IE_M_OUTFIT_0"), 1, 1, 1, -1))
+					if (!Global_262145.f_19302 /* Tunable: ENABLE_2016_OUTFITS */ && !func_411(joaat("DLC_MP_IE_M_OUTFIT_0"), 1, 1, 1, -1))
 					{
 						return 1;
 					}
@@ -64250,7 +64250,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 				case joaat("DLC_MP_IE_M_LEGS_7_1"):
 				case joaat("DLC_MP_IE_M_FEET_1_1"):
 				case joaat("DLC_MP_IE_M_JBIB_15_1"):
-					if (!Global_262145.f_19302 && !func_411(joaat("DLC_MP_IE_M_OUTFIT_1"), 1, 1, 1, -1))
+					if (!Global_262145.f_19302 /* Tunable: ENABLE_2016_OUTFITS */ && !func_411(joaat("DLC_MP_IE_M_OUTFIT_1"), 1, 1, 1, -1))
 					{
 						return 1;
 					}
@@ -64265,7 +64265,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 				case joaat("DLC_MP_IE_M_LEGS_7_2"):
 				case joaat("DLC_MP_IE_M_FEET_1_2"):
 				case joaat("DLC_MP_IE_M_JBIB_15_2"):
-					if (!Global_262145.f_19302 && !func_411(joaat("DLC_MP_IE_M_OUTFIT_2"), 1, 1, 1, -1))
+					if (!Global_262145.f_19302 /* Tunable: ENABLE_2016_OUTFITS */ && !func_411(joaat("DLC_MP_IE_M_OUTFIT_2"), 1, 1, 1, -1))
 					{
 						return 1;
 					}
@@ -64280,7 +64280,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 				case joaat("DLC_MP_IE_F_LEGS_7_0"):
 				case joaat("DLC_MP_IE_F_FEET_1_0"):
 				case joaat("DLC_MP_IE_F_JBIB_15_0"):
-					if (!Global_262145.f_19302 && !func_411(joaat("DLC_MP_IE_F_OUTFIT_0"), 1, 1, 1, -1))
+					if (!Global_262145.f_19302 /* Tunable: ENABLE_2016_OUTFITS */ && !func_411(joaat("DLC_MP_IE_F_OUTFIT_0"), 1, 1, 1, -1))
 					{
 						return 1;
 					}
@@ -64295,7 +64295,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 				case joaat("DLC_MP_IE_F_LEGS_7_1"):
 				case joaat("DLC_MP_IE_F_FEET_1_1"):
 				case joaat("DLC_MP_IE_F_JBIB_15_1"):
-					if (!Global_262145.f_19302 && !func_411(joaat("DLC_MP_IE_F_OUTFIT_1"), 1, 1, 1, -1))
+					if (!Global_262145.f_19302 /* Tunable: ENABLE_2016_OUTFITS */ && !func_411(joaat("DLC_MP_IE_F_OUTFIT_1"), 1, 1, 1, -1))
 					{
 						return 1;
 					}
@@ -64310,7 +64310,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 				case joaat("DLC_MP_IE_F_LEGS_7_2"):
 				case joaat("DLC_MP_IE_F_FEET_1_2"):
 				case joaat("DLC_MP_IE_F_JBIB_15_2"):
-					if (!Global_262145.f_19302 && !func_411(joaat("DLC_MP_IE_F_OUTFIT_2"), 1, 1, 1, -1))
+					if (!Global_262145.f_19302 /* Tunable: ENABLE_2016_OUTFITS */ && !func_411(joaat("DLC_MP_IE_F_OUTFIT_2"), 1, 1, 1, -1))
 					{
 						return 1;
 					}
@@ -64508,7 +64508,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 				case joaat("DLC_MP_STUNT_F_OUTFIT_E_0"):
 				case joaat("DLC_MP_STUNT_F_PHEAD_11_0"):
 				case joaat("DLC_MP_STUNT_F_PHEAD_12_0"):
-					if ((!func_411(iParam1, 1, 1, 1, -1) && !func_202(7595, -1)) && !Global_262145.f_16832)
+					if ((!func_411(iParam1, 1, 1, 1, -1) && !func_202(7595, -1)) && !Global_262145.f_16832 /* Tunable: AVAILABLE_PURCHASE_JUMPSUIT_WHITE */)
 					{
 						return 1;
 					}
@@ -64528,7 +64528,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 					{
 						return 0;
 					}
-					if ((!func_411(iParam1, 1, 1, 1, -1) && !func_202(7596, -1)) && !Global_262145.f_16833)
+					if ((!func_411(iParam1, 1, 1, 1, -1) && !func_202(7596, -1)) && !Global_262145.f_16833 /* Tunable: AVAILABLE_PURCHASE_JUMPSUIT_BLUE */)
 					{
 						return 1;
 					}
@@ -64544,7 +64544,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 				case joaat("DLC_MP_STUNT_F_OUTFIT_E_2"):
 				case joaat("DLC_MP_STUNT_F_PHEAD_11_2"):
 				case joaat("DLC_MP_STUNT_F_PHEAD_12_2"):
-					if ((!func_411(iParam1, 1, 1, 1, -1) && !func_202(7597, -1)) && !Global_262145.f_16834)
+					if ((!func_411(iParam1, 1, 1, 1, -1) && !func_202(7597, -1)) && !Global_262145.f_16834 /* Tunable: AVAILABLE_PURCHASE_JUMPSUIT_RED */)
 					{
 						return 1;
 					}
@@ -64560,7 +64560,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 				case joaat("DLC_MP_STUNT_F_OUTFIT_E_3"):
 				case joaat("DLC_MP_STUNT_F_PHEAD_11_3"):
 				case joaat("DLC_MP_STUNT_F_PHEAD_12_3"):
-					if ((!func_411(iParam1, 1, 1, 1, -1) && !func_202(7599, -1)) && !Global_262145.f_16836)
+					if ((!func_411(iParam1, 1, 1, 1, -1) && !func_202(7599, -1)) && !Global_262145.f_16836 /* Tunable: AVAILABLE_PURCHASE_JUMPSUIT_BLACK */)
 					{
 						return 1;
 					}
@@ -64576,7 +64576,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 				case joaat("DLC_MP_STUNT_F_OUTFIT_E_4"):
 				case joaat("DLC_MP_STUNT_F_PHEAD_11_4"):
 				case joaat("DLC_MP_STUNT_F_PHEAD_12_4"):
-					if ((!func_411(iParam1, 1, 1, 1, -1) && !func_202(7600, -1)) && !Global_262145.f_16837)
+					if ((!func_411(iParam1, 1, 1, 1, -1) && !func_202(7600, -1)) && !Global_262145.f_16837 /* Tunable: AVAILABLE_PURCHASE_JUMPSUIT_PINK */)
 					{
 						return 1;
 					}
@@ -64592,7 +64592,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 				case joaat("DLC_MP_STUNT_F_OUTFIT_E_5"):
 				case joaat("DLC_MP_STUNT_F_PHEAD_13_0"):
 				case joaat("DLC_MP_STUNT_F_PHEAD_14_0"):
-					if ((!func_411(iParam1, 1, 1, 1, -1) && !func_202(7598, -1)) && !Global_262145.f_16835)
+					if ((!func_411(iParam1, 1, 1, 1, -1) && !func_202(7598, -1)) && !Global_262145.f_16835 /* Tunable: AVAILABLE_PURCHASE_JUMPSUIT_GOLD */)
 					{
 						return 1;
 					}
@@ -64608,7 +64608,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 				case joaat("DLC_MP_STUNT_F_OUTFIT_E_6"):
 				case joaat("DLC_MP_STUNT_F_PHEAD_13_1"):
 				case joaat("DLC_MP_STUNT_F_PHEAD_14_1"):
-					if ((!func_411(iParam1, 1, 1, 1, -1) && !func_202(7601, -1)) && !Global_262145.f_16838)
+					if ((!func_411(iParam1, 1, 1, 1, -1) && !func_202(7601, -1)) && !Global_262145.f_16838 /* Tunable: AVAILABLE_PURCHASE_JUMPSUIT_SILVER */)
 					{
 						return 1;
 					}
@@ -65146,7 +65146,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 				case joaat("DLC_MP_XMAS3_F_LEGS_0_0"):
 				case joaat("DLC_MP_XMAS3_F_LEGS_0_1"):
 				case joaat("DLC_MP_XMAS3_F_LEGS_0_2"):
-					if (Global_262145.f_12709)
+					if (Global_262145.f_12709 /* Tunable: XMAS2015_COSTUME */)
 					{
 						return 0;
 					}
@@ -65222,7 +65222,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 				case joaat("DLC_MP_XMAS3_F_JBIB_1_13"):
 				case joaat("DLC_MP_XMAS3_F_JBIB_1_14"):
 				case joaat("DLC_MP_XMAS3_F_JBIB_1_15"):
-					if (Global_262145.f_12710)
+					if (Global_262145.f_12710 /* Tunable: XMAS2015_PYJAMAS */)
 					{
 						return 0;
 					}
@@ -65266,7 +65266,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 			}
 			if (iParam0 == joaat("CU_XMAS4_CLOTHES"))
 			{
-				if (!Global_262145.f_19301)
+				if (!Global_262145.f_19301 /* Tunable: CHRISTMAS2016_CLOTHING */)
 				{
 					return 1;
 				}
@@ -65275,7 +65275,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 					return 0;
 				}
 			}
-			else if (Global_262145.f_9396)
+			else if (Global_262145.f_9396 /* Tunable: DISABLE_CHRISTMAS_CLOTHING */)
 			{
 				return 1;
 			}
@@ -65331,7 +65331,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 			}
 			if (iParam0 == joaat("CU_XMAS4_MASKS"))
 			{
-				if (!Global_262145.f_19300)
+				if (!Global_262145.f_19300 /* Tunable: XMAS2016_MASKS */)
 				{
 					return 1;
 				}
@@ -65342,7 +65342,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 			}
 			else if (iParam0 != joaat("CU_XMAS3_MASKS"))
 			{
-				if (Global_262145.f_9397)
+				if (Global_262145.f_9397 /* Tunable: DISABLE_CHRISTMAS_MASKS */)
 				{
 					return 1;
 				}
@@ -65351,7 +65351,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 					return 0;
 				}
 			}
-			else if (!Global_262145.f_12708)
+			else if (!Global_262145.f_12708 /* Tunable: XMAS2015_MASKS */)
 			{
 				return 1;
 			}
@@ -65395,7 +65395,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 				case joaat("DLC_MP_VAL_F_BERD1_1"):
 				case joaat("DLC_MP_VAL_F_BERD1_2"):
 				case joaat("DLC_MP_VAL_F_BERD2_0"):
-					if (!func_411(iParam1, 1, 1, 1, -1) && !Global_262145.f_12029)
+					if (!func_411(iParam1, 1, 1, 1, -1) && !Global_262145.f_12029 /* Tunable: TURN_ON_VALENTINE_MASKS */)
 					{
 						return 1;
 					}
@@ -65405,14 +65405,14 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 					}
 					break;
 			}
-			if (((!Global_262145.f_7058 && !func_411(iParam1, 1, 1, 1, -1)) && !FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(iParam1, joaat("MULTI_DECAL"), iParam2)) && !Global_262145.f_12031)
+			if (((!Global_262145.f_7058 /* Tunable: TURN_ON_VALENTINES_EVENT */ && !func_411(iParam1, 1, 1, 1, -1)) && !FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(iParam1, joaat("MULTI_DECAL"), iParam2)) && !Global_262145.f_12031 /* Tunable: TURN_ON_VALENTINE_CLOTHING */)
 			{
 				return 1;
 			}
 			break;
 		
 		case joaat("CU_VAL2_CLOTHES"):
-			if ((!Global_262145.f_13393 && !func_411(iParam1, 1, 1, 1, -1)) && !FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(iParam1, joaat("MULTI_DECAL"), iParam2))
+			if ((!Global_262145.f_13393 /* Tunable: TURN_ON_VALENTINE_2016_CLOTHING */ && !func_411(iParam1, 1, 1, 1, -1)) && !FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(iParam1, joaat("MULTI_DECAL"), iParam2))
 			{
 				return 1;
 			}
@@ -65517,7 +65517,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 				case joaat("DLC_MP_IND_M_HAIR0_2"):
 				case joaat("DLC_MP_IND_M_HAIR0_3"):
 				case joaat("DLC_MP_IND_M_HAIR0_4"):
-					if (((!Global_262145.f_8258 && !func_411(iParam1, 1, 1, 1, -1)) && !FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(iParam1, joaat("MULTI_DECAL"), iParam2)) && !func_202(3606, -1))
+					if (((!Global_262145.f_8258 /* Tunable: TOGGLE_ACTIVATE_INDEPENDENCE_PACK */ && !func_411(iParam1, 1, 1, 1, -1)) && !FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(iParam1, joaat("MULTI_DECAL"), iParam2)) && !func_202(3606, -1))
 					{
 						return 1;
 					}
@@ -65551,7 +65551,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 				case joaat("DLC_MP_IND_M_BERD_4_1"):
 				case joaat("DLC_MP_IND_M_BERD_5_0"):
 				case joaat("DLC_MP_IND_M_BERD_5_1"):
-					if (!Global_262145.f_12055 && !func_411(iParam1, 1, 1, 1, -1))
+					if (!Global_262145.f_12055 /* Tunable: TURN_ON_INDEPENDENCE_MASKS */ && !func_411(iParam1, 1, 1, 1, -1))
 					{
 						return 1;
 					}
@@ -65561,7 +65561,7 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 					}
 					break;
 			}
-			if ((!Global_262145.f_8258 && !func_411(iParam1, 1, 1, 1, -1)) && !FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(iParam1, joaat("MULTI_DECAL"), iParam2))
+			if ((!Global_262145.f_8258 /* Tunable: TOGGLE_ACTIVATE_INDEPENDENCE_PACK */ && !func_411(iParam1, 1, 1, 1, -1)) && !FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(iParam1, joaat("MULTI_DECAL"), iParam2))
 			{
 				return 1;
 			}
@@ -65594,14 +65594,14 @@ int func_414(int iParam0, int iParam1, int iParam2)//Position - 0x4BBBD
 			break;
 		
 		case joaat("CU_HAL_CLOTHES"):
-			if ((!Global_262145.f_12048 && !func_411(iParam1, 1, 1, 1, -1)) && !FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(iParam1, joaat("MULTI_DECAL"), iParam2))
+			if ((!Global_262145.f_12048 /* Tunable: TURN_ON_HALLOWEEN_CLOTHING */ && !func_411(iParam1, 1, 1, 1, -1)) && !FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(iParam1, joaat("MULTI_DECAL"), iParam2))
 			{
 				return 1;
 			}
 			break;
 		
 		case joaat("CU_HAL_MASKS"):
-			if (!Global_262145.f_12039 && !func_411(iParam1, 1, 1, 1, -1))
+			if (!Global_262145.f_12039 /* Tunable: TURN_ON_HALLOWEEN_MASKS */ && !func_411(iParam1, 1, 1, 1, -1))
 			{
 				return 1;
 			}
@@ -65822,1292 +65822,1292 @@ int func_420(int iParam0)//Position - 0x53DBB
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_27889;
+			return Global_262145.f_27889 /* Tunable: VW_AW_WV_1A */;
 		
 		case 2:
-			return Global_262145.f_27890;
+			return Global_262145.f_27890 /* Tunable: VW_AW_WV_2A */;
 		
 		case 3:
-			return Global_262145.f_27891;
+			return Global_262145.f_27891 /* Tunable: VW_AW_WV_3A */;
 		
 		case 4:
-			return Global_262145.f_27892;
+			return Global_262145.f_27892 /* Tunable: VW_AW_WV_1B */;
 		
 		case 5:
-			return Global_262145.f_27893;
+			return Global_262145.f_27893 /* Tunable: VW_AW_WV_2B */;
 		
 		case 6:
-			return Global_262145.f_27894;
+			return Global_262145.f_27894 /* Tunable: VW_AW_WV_3B */;
 		
 		case 7:
-			return Global_262145.f_27895;
+			return Global_262145.f_27895 /* Tunable: VW_AW_WV_1C */;
 		
 		case 8:
-			return Global_262145.f_27896;
+			return Global_262145.f_27896 /* Tunable: VW_AW_WV_2C */;
 		
 		case 9:
-			return Global_262145.f_27897;
+			return Global_262145.f_27897 /* Tunable: VW_AW_WV_3C */;
 		
 		case 10:
-			return Global_262145.f_27898;
+			return Global_262145.f_27898 /* Tunable: VW_AW_WV_1D */;
 		
 		case 11:
-			return Global_262145.f_27899;
+			return Global_262145.f_27899 /* Tunable: VW_AW_WV_2D */;
 		
 		case 12:
-			return Global_262145.f_27900;
+			return Global_262145.f_27900 /* Tunable: VW_AW_WV_3D */;
 		
 		case 13:
-			return Global_262145.f_27901;
+			return Global_262145.f_27901 /* Tunable: VW_AW_WV_4 */;
 		
 		case 14:
-			return Global_262145.f_27902;
+			return Global_262145.f_27902 /* Tunable: VW_AW_WV_5 */;
 		
 		case 15:
-			return Global_262145.f_27903;
+			return Global_262145.f_27903 /* Tunable: VW_AW_WV_6 */;
 		
 		case 16:
-			return Global_262145.f_27904;
+			return Global_262145.f_27904 /* Tunable: VW_AW_WV_7 */;
 		
 		case 17:
-			return Global_262145.f_27905;
+			return Global_262145.f_27905 /* Tunable: VW_AW_WV_8 */;
 		
 		case 18:
-			return Global_262145.f_27906;
+			return Global_262145.f_27906 /* Tunable: VW_AW_WV_9 */;
 		
 		case 19:
-			return Global_262145.f_27907;
+			return Global_262145.f_27907 /* Tunable: VW_AW_WV_10A */;
 		
 		case 20:
-			return Global_262145.f_27908;
+			return Global_262145.f_27908 /* Tunable: VW_AW_WV_10B */;
 		
 		case 21:
-			return Global_262145.f_27909;
+			return Global_262145.f_27909 /* Tunable: VW_AW_WV_10C */;
 		
 		case 22:
-			return Global_262145.f_27910;
+			return Global_262145.f_27910 /* Tunable: VW_AW_WV_10D */;
 		
 		case 23:
-			return Global_262145.f_27911;
+			return Global_262145.f_27911 /* Tunable: VW_AW_WV_10E */;
 		
 		case 24:
-			return Global_262145.f_27912;
+			return Global_262145.f_27912 /* Tunable: VW_AW_WV_10F */;
 		
 		case 25:
-			return Global_262145.f_27913;
+			return Global_262145.f_27913 /* Tunable: VW_AW_WH_1 */;
 		
 		case 26:
-			return Global_262145.f_27914;
+			return Global_262145.f_27914 /* Tunable: VW_AW_WH_2 */;
 		
 		case 27:
-			return Global_262145.f_27915;
+			return Global_262145.f_27915 /* Tunable: VW_AW_WH_3 */;
 		
 		case 28:
-			return Global_262145.f_27916;
+			return Global_262145.f_27916 /* Tunable: VW_AW_WH_4 */;
 		
 		case 29:
-			return Global_262145.f_27917;
+			return Global_262145.f_27917 /* Tunable: VW_AW_MF_1A */;
 		
 		case 30:
-			return Global_262145.f_27918;
+			return Global_262145.f_27918 /* Tunable: VW_AW_MF_1B */;
 		
 		case 31:
-			return Global_262145.f_27919;
+			return Global_262145.f_27919 /* Tunable: VW_AW_MF_1C */;
 		
 		case 32:
-			return Global_262145.f_27920;
+			return Global_262145.f_27920 /* Tunable: VW_AW_MF_1D */;
 		
 		case 33:
-			return Global_262145.f_27921;
+			return Global_262145.f_27921 /* Tunable: VW_AW_MF_1E */;
 		
 		case 34:
-			return Global_262145.f_27922;
+			return Global_262145.f_27922 /* Tunable: VW_AW_MF_1F */;
 		
 		case 35:
-			return Global_262145.f_27923;
+			return Global_262145.f_27923 /* Tunable: VW_AW_MF_1G */;
 		
 		case 36:
-			return Global_262145.f_27924;
+			return Global_262145.f_27924 /* Tunable: VW_AW_MF_1H */;
 		
 		case 37:
-			return Global_262145.f_27925;
+			return Global_262145.f_27925 /* Tunable: VW_AW_WV_11A */;
 		
 		case 38:
-			return Global_262145.f_27926;
+			return Global_262145.f_27926 /* Tunable: VW_AW_WV_11B */;
 		
 		case 39:
-			return Global_262145.f_27927;
+			return Global_262145.f_27927 /* Tunable: VW_AW_WV_11C */;
 		
 		case 40:
-			return Global_262145.f_27928;
+			return Global_262145.f_27928 /* Tunable: VW_AW_WV_11D */;
 		
 		case 41:
-			return Global_262145.f_27929;
+			return Global_262145.f_27929 /* Tunable: VW_AW_WV_11E */;
 		
 		case 42:
-			return Global_262145.f_27930;
+			return Global_262145.f_27930 /* Tunable: VW_AW_WV_11F */;
 		
 		case 43:
-			return Global_262145.f_27931;
+			return Global_262145.f_27931 /* Tunable: VW_AW_SS_1 */;
 		
 		case 44:
-			return Global_262145.f_27932;
+			return Global_262145.f_27932 /* Tunable: VW_AW_SS_2 */;
 		
 		case 45:
-			return Global_262145.f_27933;
+			return Global_262145.f_27933 /* Tunable: VW_AW_WV_12 */;
 		
 		case 46:
-			return Global_262145.f_27934;
+			return Global_262145.f_27934 /* Tunable: VW_AW_WV_13 */;
 		
 		case 47:
-			return Global_262145.f_27935;
+			return Global_262145.f_27935 /* Tunable: VW_AW_WV_14 */;
 		
 		case 48:
-			return Global_262145.f_27936;
+			return Global_262145.f_27936 /* Tunable: VW_AW_WV_15 */;
 		
 		case 49:
-			return Global_262145.f_27937;
+			return Global_262145.f_27937 /* Tunable: VW_AW_WV_16 */;
 		
 		case 50:
-			return Global_262145.f_27938;
+			return Global_262145.f_27938 /* Tunable: VW_AW_WV_17 */;
 		
 		case 51:
-			return Global_262145.f_27939;
+			return Global_262145.f_27939 /* Tunable: VW_AW_WV_18A */;
 		
 		case 52:
-			return Global_262145.f_27940;
+			return Global_262145.f_27940 /* Tunable: VW_AW_WV_18B */;
 		
 		case 53:
-			return Global_262145.f_27941;
+			return Global_262145.f_27941 /* Tunable: VW_AW_WV_19A */;
 		
 		case 54:
-			return Global_262145.f_27942;
+			return Global_262145.f_27942 /* Tunable: VW_AW_WV_19B */;
 		
 		case 55:
-			return Global_262145.f_27943;
+			return Global_262145.f_27943 /* Tunable: VW_AW_WV_19C */;
 		
 		case 56:
-			return Global_262145.f_27944;
+			return Global_262145.f_27944 /* Tunable: VW_AW_WV_19D */;
 		
 		case 57:
-			return Global_262145.f_27945;
+			return Global_262145.f_27945 /* Tunable: VW_AW_LS_1A */;
 		
 		case 58:
-			return Global_262145.f_27946;
+			return Global_262145.f_27946 /* Tunable: VW_AW_LS_1B */;
 		
 		case 59:
-			return Global_262145.f_27947;
+			return Global_262145.f_27947 /* Tunable: VW_AW_LS_1C */;
 		
 		case 60:
-			return Global_262145.f_27948;
+			return Global_262145.f_27948 /* Tunable: VW_AW_LS_1D */;
 		
 		case 61:
-			return Global_262145.f_27949;
+			return Global_262145.f_27949 /* Tunable: VW_AW_LS_2A */;
 		
 		case 62:
-			return Global_262145.f_27950;
+			return Global_262145.f_27950 /* Tunable: VW_AW_LS_2B */;
 		
 		case 63:
-			return Global_262145.f_27951;
+			return Global_262145.f_27951 /* Tunable: VW_AW_LS_2C */;
 		
 		case 64:
-			return Global_262145.f_27952;
+			return Global_262145.f_27952 /* Tunable: VW_AW_LS_2D */;
 		
 		case 65:
-			return Global_262145.f_27953;
+			return Global_262145.f_27953 /* Tunable: VW_AW_2S_1 */;
 		
 		case 66:
-			return Global_262145.f_27954;
+			return Global_262145.f_27954 /* Tunable: VW_AW_2S_2 */;
 		
 		case 67:
-			return Global_262145.f_27955;
+			return Global_262145.f_27955 /* Tunable: VW_AW_SS_3A */;
 		
 		case 68:
-			return Global_262145.f_27956;
+			return Global_262145.f_27956 /* Tunable: VW_AW_SS_3B */;
 		
 		case 69:
-			return Global_262145.f_27957;
+			return Global_262145.f_27957 /* Tunable: VW_AW_SS_3C */;
 		
 		case 70:
-			return Global_262145.f_27958;
+			return Global_262145.f_27958 /* Tunable: VW_AW_SS_3D */;
 		
 		case 71:
-			return Global_262145.f_27959;
+			return Global_262145.f_27959 /* Tunable: VW_AW_WV_20 */;
 		
 		case 72:
-			return Global_262145.f_27960;
+			return Global_262145.f_27960 /* Tunable: VW_AW_WV_21 */;
 		
 		case 73:
-			return Global_262145.f_27961;
+			return Global_262145.f_27961 /* Tunable: VW_AW_LS_3A */;
 		
 		case 74:
-			return Global_262145.f_27962;
+			return Global_262145.f_27962 /* Tunable: VW_AW_LS_3B */;
 		
 		case 75:
-			return Global_262145.f_27963;
+			return Global_262145.f_27963 /* Tunable: VW_AW_LS_3C */;
 		
 		case 76:
-			return Global_262145.f_27964;
+			return Global_262145.f_27964 /* Tunable: VW_AW_LS_3D */;
 		
 		case 77:
-			return Global_262145.f_27965;
+			return Global_262145.f_27965 /* Tunable: VW_AW_LS_3E */;
 		
 		case 78:
-			return Global_262145.f_27966;
+			return Global_262145.f_27966 /* Tunable: VW_AW_MT_1A */;
 		
 		case 79:
-			return Global_262145.f_27967;
+			return Global_262145.f_27967 /* Tunable: VW_AW_MT_1B */;
 		
 		case 80:
-			return Global_262145.f_27968;
+			return Global_262145.f_27968 /* Tunable: VW_AW_MT_1C */;
 		
 		case 81:
-			return Global_262145.f_27969;
+			return Global_262145.f_27969 /* Tunable: VW_AW_MT_1D */;
 		
 		case 82:
-			return Global_262145.f_27970;
+			return Global_262145.f_27970 /* Tunable: VW_AW_MT_1E */;
 		
 		case 83:
-			return Global_262145.f_27971;
+			return Global_262145.f_27971 /* Tunable: VW_AW_WH_5 */;
 		
 		case 84:
-			return Global_262145.f_27972;
+			return Global_262145.f_27972 /* Tunable: VW_AW_MF_2 */;
 		
 		case 85:
-			return Global_262145.f_27973;
+			return Global_262145.f_27973 /* Tunable: VW_AW_WV_22 */;
 		
 		case 86:
-			return Global_262145.f_27974;
+			return Global_262145.f_27974 /* Tunable: VW_AW_LS_4 */;
 		
 		case 87:
-			return Global_262145.f_27975;
+			return Global_262145.f_27975 /* Tunable: VW_AW_WH_6 */;
 		
 		case 88:
-			return Global_262145.f_27976;
+			return Global_262145.f_27976 /* Tunable: VW_AW_WH_7 */;
 		
 		case 89:
-			return Global_262145.f_27977;
+			return Global_262145.f_27977 /* Tunable: VW_AW_WH_8 */;
 		
 		case 90:
-			return Global_262145.f_27978;
+			return Global_262145.f_27978 /* Tunable: VW_AW_WV_23 */;
 		
 		case 91:
-			return Global_262145.f_27979;
+			return Global_262145.f_27979 /* Tunable: VW_AW_WV_24 */;
 		
 		case 92:
-			return Global_262145.f_27980;
+			return Global_262145.f_27980 /* Tunable: VW_AW_WV_25 */;
 		
 		case 93:
-			return Global_262145.f_27981;
+			return Global_262145.f_27981 /* Tunable: VW_AW_2S_3 */;
 		
 		case 94:
-			return Global_262145.f_27982;
+			return Global_262145.f_27982 /* Tunable: VW_AW_SS_4 */;
 		
 		case 95:
-			return Global_262145.f_27983;
+			return Global_262145.f_27983 /* Tunable: VW_AW_SS_5 */;
 		
 		case 96:
-			return Global_262145.f_27984;
+			return Global_262145.f_27984 /* Tunable: VW_AW_WV_26 */;
 		
 		case 97:
-			return Global_262145.f_27985;
+			return Global_262145.f_27985 /* Tunable: VW_AW_WH_9 */;
 		
 		case 98:
-			return Global_262145.f_27986;
+			return Global_262145.f_27986 /* Tunable: VW_AW_WH_10A */;
 		
 		case 99:
-			return Global_262145.f_27987;
+			return Global_262145.f_27987 /* Tunable: VW_AW_WH_10B */;
 		
 		case 100:
-			return Global_262145.f_27988;
+			return Global_262145.f_27988 /* Tunable: VW_AW_WH_10C */;
 		
 		case 101:
-			return Global_262145.f_27989;
+			return Global_262145.f_27989 /* Tunable: VW_AW_WH_10D */;
 		
 		default:
 	}
 	switch (iParam0)
 	{
 		case 102:
-			return Global_262145.f_27990;
+			return Global_262145.f_27990 /* Tunable: VW_AW_MF_3A */;
 		
 		case 103:
-			return Global_262145.f_27991;
+			return Global_262145.f_27991 /* Tunable: VW_AW_MF_3B */;
 		
 		case 104:
-			return Global_262145.f_27992;
+			return Global_262145.f_27992 /* Tunable: VW_AW_MF_3C */;
 		
 		case 105:
-			return Global_262145.f_27993;
+			return Global_262145.f_27993 /* Tunable: VW_AW_SS_6 */;
 		
 		case 106:
-			return Global_262145.f_27994;
+			return Global_262145.f_27994 /* Tunable: VW_AW_WV_27 */;
 		
 		case 107:
-			return Global_262145.f_27995;
+			return Global_262145.f_27995 /* Tunable: VW_AW_WH_11 */;
 		
 		case 108:
-			return Global_262145.f_27996;
+			return Global_262145.f_27996 /* Tunable: VW_AW_WH_12 */;
 		
 		case 109:
-			return Global_262145.f_27997;
+			return Global_262145.f_27997 /* Tunable: VW_AW_WH_13 */;
 		
 		case 110:
-			return Global_262145.f_27998;
+			return Global_262145.f_27998 /* Tunable: VW_AW_LS_5 */;
 		
 		case 111:
-			return Global_262145.f_27999;
+			return Global_262145.f_27999 /* Tunable: VW_AW_WV_28 */;
 		
 		case 112:
-			return Global_262145.f_28000;
+			return Global_262145.f_28000 /* Tunable: VW_AW_WV_29 */;
 		
 		case 113:
-			return Global_262145.f_28001;
+			return Global_262145.f_28001 /* Tunable: VW_AW_WV_30 */;
 		
 		case 114:
-			return Global_262145.f_28002;
+			return Global_262145.f_28002 /* Tunable: VW_AW_WH_14 */;
 		
 		case 115:
-			return Global_262145.f_28003;
+			return Global_262145.f_28003 /* Tunable: VW_AW_WV_31 */;
 		
 		case 116:
-			return Global_262145.f_28004;
+			return Global_262145.f_28004 /* Tunable: VW_AW_WV_32 */;
 		
 		case 117:
-			return Global_262145.f_28005;
+			return Global_262145.f_28005 /* Tunable: VW_AW_WV_33 */;
 		
 		case 118:
-			return Global_262145.f_28006;
+			return Global_262145.f_28006 /* Tunable: VW_AW_WH_15 */;
 		
 		case 119:
-			return Global_262145.f_28007;
+			return Global_262145.f_28007 /* Tunable: VW_AW_WH_16 */;
 		
 		case 120:
-			return Global_262145.f_28008;
+			return Global_262145.f_28008 /* Tunable: VW_AW_WH_17 */;
 		
 		case 121:
-			return Global_262145.f_28009;
+			return Global_262145.f_28009 /* Tunable: VW_AW_WH_18 */;
 		
 		case 122:
-			return Global_262145.f_28010;
+			return Global_262145.f_28010 /* Tunable: VW_AW_WV_34 */;
 		
 		case 123:
-			return Global_262145.f_28011;
+			return Global_262145.f_28011 /* Tunable: VW_AW_WV_35 */;
 		
 		case 124:
-			return Global_262145.f_28012;
+			return Global_262145.f_28012 /* Tunable: VW_AW_WV_36 */;
 		
 		case 125:
-			return Global_262145.f_28013;
+			return Global_262145.f_28013 /* Tunable: VW_AW_WV_37 */;
 		
 		case 126:
-			return Global_262145.f_28014;
+			return Global_262145.f_28014 /* Tunable: VW_AW_WV_38 */;
 		
 		case 127:
-			return Global_262145.f_28015;
+			return Global_262145.f_28015 /* Tunable: VW_AW_WH_19 */;
 		
 		case 128:
-			return Global_262145.f_28016;
+			return Global_262145.f_28016 /* Tunable: VW_AW_WH_20 */;
 		
 		case 129:
-			return Global_262145.f_28017;
+			return Global_262145.f_28017 /* Tunable: VW_AW_MT_2A */;
 		
 		case 130:
-			return Global_262145.f_28018;
+			return Global_262145.f_28018 /* Tunable: VW_AW_MT_2B */;
 		
 		case 131:
-			return Global_262145.f_28019;
+			return Global_262145.f_28019 /* Tunable: VW_AW_MT_2C */;
 		
 		case 132:
-			return Global_262145.f_28020;
+			return Global_262145.f_28020 /* Tunable: VW_AW_WH_21 */;
 		
 		case 133:
-			return Global_262145.f_28021;
+			return Global_262145.f_28021 /* Tunable: VW_AW_WH_22 */;
 		
 		case 134:
-			return Global_262145.f_28022;
+			return Global_262145.f_28022 /* Tunable: VW_AW_WV_39 */;
 		
 		case 135:
-			return Global_262145.f_28023;
+			return Global_262145.f_28023 /* Tunable: VW_AW_WH_23 */;
 		
 		case 136:
-			return Global_262145.f_28024;
+			return Global_262145.f_28024 /* Tunable: VW_AW_LS_6A */;
 		
 		case 137:
-			return Global_262145.f_28025;
+			return Global_262145.f_28025 /* Tunable: VW_AW_LS_6B */;
 		
 		case 138:
-			return Global_262145.f_28026;
+			return Global_262145.f_28026 /* Tunable: VW_AW_LS_6C */;
 		
 		case 139:
-			return Global_262145.f_28027;
+			return Global_262145.f_28027 /* Tunable: VW_AW_LS_6D */;
 		
 		case 140:
-			return Global_262145.f_28028;
+			return Global_262145.f_28028 /* Tunable: VW_AW_LS_6E */;
 		
 		case 141:
-			return Global_262145.f_28029;
+			return Global_262145.f_28029 /* Tunable: VW_AW_LS_6F */;
 		
 		case 142:
-			return Global_262145.f_28030;
+			return Global_262145.f_28030 /* Tunable: VW_AW_LS_6G */;
 		
 		case 143:
-			return Global_262145.f_28031;
+			return Global_262145.f_28031 /* Tunable: VW_AW_LS_6H */;
 		
 		case 144:
-			return Global_262145.f_28032;
+			return Global_262145.f_28032 /* Tunable: VW_AW_WH_24 */;
 		
 		case 145:
-			return Global_262145.f_28033;
+			return Global_262145.f_28033 /* Tunable: VW_AW_WH_25 */;
 		
 		case 146:
-			return Global_262145.f_28034;
+			return Global_262145.f_28034 /* Tunable: VW_AW_LS_7A */;
 		
 		case 147:
-			return Global_262145.f_28035;
+			return Global_262145.f_28035 /* Tunable: VW_AW_LS_7B */;
 		
 		case 148:
-			return Global_262145.f_28036;
+			return Global_262145.f_28036 /* Tunable: VW_AW_LS_7C */;
 		
 		case 149:
-			return Global_262145.f_28037;
+			return Global_262145.f_28037 /* Tunable: VW_AW_LS_7D */;
 		
 		case 150:
-			return Global_262145.f_28038;
+			return Global_262145.f_28038 /* Tunable: VW_AW_LS_8 */;
 		
 		case 151:
-			return Global_262145.f_28039;
+			return Global_262145.f_28039 /* Tunable: VW_AW_WH_26A */;
 		
 		case 152:
-			return Global_262145.f_28040;
+			return Global_262145.f_28040 /* Tunable: VW_AW_WH_26B */;
 		
 		case 153:
-			return Global_262145.f_28041;
+			return Global_262145.f_28041 /* Tunable: VW_AW_WH_26C */;
 		
 		case 154:
-			return Global_262145.f_28042;
+			return Global_262145.f_28042 /* Tunable: VW_AW_WH_27 */;
 		
 		case 155:
-			return Global_262145.f_28043;
+			return Global_262145.f_28043 /* Tunable: VW_AW_WV_40A */;
 		
 		case 156:
-			return Global_262145.f_28044;
+			return Global_262145.f_28044 /* Tunable: VW_AW_WV_40B */;
 		
 		case 157:
-			return Global_262145.f_28045;
+			return Global_262145.f_28045 /* Tunable: VW_AW_WV_40C */;
 		
 		case 158:
-			return Global_262145.f_28046;
+			return Global_262145.f_28046 /* Tunable: VW_AW_WV_40D */;
 		
 		case 159:
-			return Global_262145.f_28047;
+			return Global_262145.f_28047 /* Tunable: VW_AW_WV_41 */;
 		
 		case 160:
-			return Global_262145.f_28048;
+			return Global_262145.f_28048 /* Tunable: VW_AW_WH_28 */;
 		
 		case 161:
-			return Global_262145.f_28049;
+			return Global_262145.f_28049 /* Tunable: VW_AW_WH_29 */;
 		
 		case 162:
-			return Global_262145.f_28050;
+			return Global_262145.f_28050 /* Tunable: VW_AW_WV_42 */;
 		
 		case 163:
-			return Global_262145.f_28051;
+			return Global_262145.f_28051 /* Tunable: VW_AW_WH_30 */;
 		
 		case 164:
-			return Global_262145.f_28052;
+			return Global_262145.f_28052 /* Tunable: VW_AW_WV_43 */;
 		
 		case 165:
-			return Global_262145.f_28053;
+			return Global_262145.f_28053 /* Tunable: VW_AW_MT_3A */;
 		
 		case 166:
-			return Global_262145.f_28054;
+			return Global_262145.f_28054 /* Tunable: VW_AW_MT_3B */;
 		
 		case 167:
-			return Global_262145.f_28055;
+			return Global_262145.f_28055 /* Tunable: VW_AW_MT_3C */;
 		
 		case 168:
-			return Global_262145.f_28056;
+			return Global_262145.f_28056 /* Tunable: VW_AW_WH_31 */;
 		
 		case 169:
-			return Global_262145.f_28057;
+			return Global_262145.f_28057 /* Tunable: VW_AW_WV_44 */;
 		
 		case 170:
-			return Global_262145.f_28058;
+			return Global_262145.f_28058 /* Tunable: VW_AW_WV_45 */;
 		
 		case 171:
-			return Global_262145.f_28059;
+			return Global_262145.f_28059 /* Tunable: VW_AW_WH_32A */;
 		
 		case 172:
-			return Global_262145.f_28060;
+			return Global_262145.f_28060 /* Tunable: VW_AW_WH_32B */;
 		
 		case 173:
-			return Global_262145.f_28061;
+			return Global_262145.f_28061 /* Tunable: VW_AW_WV_46A */;
 		
 		case 174:
-			return Global_262145.f_28062;
+			return Global_262145.f_28062 /* Tunable: VW_AW_WV_46B */;
 		
 		case 175:
-			return Global_262145.f_28063;
+			return Global_262145.f_28063 /* Tunable: VW_AW_WV_46C */;
 		
 		case 176:
-			return Global_262145.f_28064;
+			return Global_262145.f_28064 /* Tunable: VW_AW_WV_46D */;
 		
 		case 177:
-			return Global_262145.f_28065;
+			return Global_262145.f_28065 /* Tunable: VW_AW_WH_33 */;
 		
 		case 178:
-			return Global_262145.f_28066;
+			return Global_262145.f_28066 /* Tunable: VW_AW_WH_34 */;
 		
 		case 179:
-			return Global_262145.f_28067;
+			return Global_262145.f_28067 /* Tunable: VW_AW_WH_35 */;
 		
 		case 180:
-			return Global_262145.f_28068;
+			return Global_262145.f_28068 /* Tunable: VW_AW_WH_36 */;
 		
 		case 181:
-			return Global_262145.f_28069;
+			return Global_262145.f_28069 /* Tunable: VW_AW_WV_47 */;
 		
 		case 182:
-			return Global_262145.f_28070;
+			return Global_262145.f_28070 /* Tunable: VW_AW_WV_48 */;
 		
 		case 183:
-			return Global_262145.f_28071;
+			return Global_262145.f_28071 /* Tunable: VW_AW_WH_37A */;
 		
 		case 184:
-			return Global_262145.f_28072;
+			return Global_262145.f_28072 /* Tunable: VW_AW_WH_37B */;
 		
 		case 185:
-			return Global_262145.f_28073;
+			return Global_262145.f_28073 /* Tunable: VW_AW_WH_37C */;
 		
 		case 186:
-			return Global_262145.f_28074;
+			return Global_262145.f_28074 /* Tunable: VW_AW_WH_38A */;
 		
 		case 187:
-			return Global_262145.f_28075;
+			return Global_262145.f_28075 /* Tunable: VW_AW_WH_38B */;
 		
 		case 188:
-			return Global_262145.f_28076;
+			return Global_262145.f_28076 /* Tunable: VW_AW_WH_38C */;
 		
 		case 189:
-			return Global_262145.f_28077;
+			return Global_262145.f_28077 /* Tunable: VW_AW_SS_7 */;
 		
 		case 190:
-			return Global_262145.f_28078;
+			return Global_262145.f_28078 /* Tunable: VW_AW_LS_9 */;
 		
 		case 191:
-			return Global_262145.f_28079;
+			return Global_262145.f_28079 /* Tunable: VW_AW_SS_8A */;
 		
 		case 192:
-			return Global_262145.f_28080;
+			return Global_262145.f_28080 /* Tunable: VW_AW_SS_8B */;
 		
 		case 193:
-			return Global_262145.f_28081;
+			return Global_262145.f_28081 /* Tunable: VW_AW_SS_8C */;
 		
 		case 194:
-			return Global_262145.f_28082;
+			return Global_262145.f_28082 /* Tunable: VW_AW_SS_8D */;
 		
 		case 195:
-			return Global_262145.f_28083;
+			return Global_262145.f_28083 /* Tunable: VW_AW_WV_49 */;
 		
 		case 196:
-			return Global_262145.f_28084;
+			return Global_262145.f_28084 /* Tunable: VW_AW_WH_39 */;
 		
 		case 197:
-			return Global_262145.f_28085;
+			return Global_262145.f_28085 /* Tunable: VW_AW_WV_50 */;
 		
 		case 198:
-			return Global_262145.f_28086;
+			return Global_262145.f_28086 /* Tunable: VW_AW_WV_51 */;
 		
 		case 199:
-			return Global_262145.f_28087;
+			return Global_262145.f_28087 /* Tunable: VW_AW_WV_52 */;
 		
 		case 200:
-			return Global_262145.f_28088;
+			return Global_262145.f_28088 /* Tunable: VW_AW_WV_53 */;
 		
 		case 201:
-			return Global_262145.f_28089;
+			return Global_262145.f_28089 /* Tunable: VW_AW_WV_54 */;
 		
 		case 202:
-			return Global_262145.f_28090;
+			return Global_262145.f_28090 /* Tunable: VW_AW_WV_55 */;
 		
 		default:
 	}
 	switch (iParam0)
 	{
 		case 203:
-			return Global_262145.f_28091;
+			return Global_262145.f_28091 /* Tunable: VW_AW_WV_56 */;
 		
 		case 204:
-			return Global_262145.f_28092;
+			return Global_262145.f_28092 /* Tunable: VW_AW_WV_57 */;
 		
 		case 205:
-			return Global_262145.f_28093;
+			return Global_262145.f_28093 /* Tunable: VW_AW_WV_58 */;
 		
 		case 206:
-			return Global_262145.f_28094;
+			return Global_262145.f_28094 /* Tunable: VW_AW_WH_40A */;
 		
 		case 207:
-			return Global_262145.f_28095;
+			return Global_262145.f_28095 /* Tunable: VW_AW_WH_40B */;
 		
 		case 208:
-			return Global_262145.f_28096;
+			return Global_262145.f_28096 /* Tunable: VW_AW_WH_41 */;
 		
 		case 209:
-			return Global_262145.f_28097;
+			return Global_262145.f_28097 /* Tunable: VW_AW_WH_42 */;
 		
 		case 210:
-			return Global_262145.f_28098;
+			return Global_262145.f_28098 /* Tunable: VW_AW_WH_43 */;
 		
 		case 211:
-			return Global_262145.f_28099;
+			return Global_262145.f_28099 /* Tunable: VW_AW_WH_44 */;
 		
 		case 212:
-			return Global_262145.f_28100;
+			return Global_262145.f_28100 /* Tunable: VW_AW_WH_45 */;
 		
 		case 213:
-			return Global_262145.f_28101;
+			return Global_262145.f_28101 /* Tunable: VW_AW_SS_9 */;
 		
 		case 214:
-			return Global_262145.f_28102;
+			return Global_262145.f_28102 /* Tunable: VW_AW_MF_4A */;
 		
 		case 215:
-			return Global_262145.f_28103;
+			return Global_262145.f_28103 /* Tunable: VW_AW_MF_4B */;
 		
 		case 216:
-			return Global_262145.f_28104;
+			return Global_262145.f_28104 /* Tunable: VW_AW_MF_4C */;
 		
 		case 217:
-			return Global_262145.f_28105;
+			return Global_262145.f_28105 /* Tunable: VW_AW_MF_4D */;
 		
 		case 218:
-			return Global_262145.f_28106;
+			return Global_262145.f_28106 /* Tunable: VW_AW_MF_4E */;
 		
 		case 219:
-			return Global_262145.f_28107;
+			return Global_262145.f_28107 /* Tunable: VW_AW_MF_4F */;
 		
 		case 220:
-			return Global_262145.f_28108;
+			return Global_262145.f_28108 /* Tunable: VW_AW_MF_4G */;
 		
 		case 221:
-			return Global_262145.f_28109;
+			return Global_262145.f_28109 /* Tunable: VW_AW_MF_4H */;
 		
 		case 222:
-			return Global_262145.f_28110;
+			return Global_262145.f_28110 /* Tunable: VW_AW_WH_46 */;
 		
 		case 223:
-			return Global_262145.f_28111;
+			return Global_262145.f_28111 /* Tunable: VW_AW_WH_47 */;
 		
 		case 224:
-			return Global_262145.f_28112;
+			return Global_262145.f_28112 /* Tunable: VW_AW_WH_48 */;
 		
 		case 225:
-			return Global_262145.f_28113;
+			return Global_262145.f_28113 /* Tunable: VW_AW_WH_49 */;
 		
 		case 226:
-			return Global_262145.f_28114;
+			return Global_262145.f_28114 /* Tunable: VW_AW_WH_50 */;
 		
 		case 227:
-			return Global_262145.f_28115;
+			return Global_262145.f_28115 /* Tunable: VW_AW_WV_59 */;
 		
 		case 228:
-			return Global_262145.f_28116;
+			return Global_262145.f_28116 /* Tunable: VW_AW_SS_10A */;
 		
 		case 229:
-			return Global_262145.f_28117;
+			return Global_262145.f_28117 /* Tunable: VW_AW_SS_10B */;
 		
 		case 230:
-			return Global_262145.f_28118;
+			return Global_262145.f_28118 /* Tunable: VW_AW_SS_10C */;
 		
 		case 231:
-			return Global_262145.f_28119;
+			return Global_262145.f_28119 /* Tunable: VW_AW_SS_10D */;
 		
 		case 232:
-			return Global_262145.f_28120;
+			return Global_262145.f_28120 /* Tunable: VW_AW_WV_60A */;
 		
 		case 233:
-			return Global_262145.f_28121;
+			return Global_262145.f_28121 /* Tunable: VW_AW_WV_60B */;
 		
 		case 234:
-			return Global_262145.f_28122;
+			return Global_262145.f_28122 /* Tunable: VW_AW_WV_60C */;
 		
 		case 235:
-			return Global_262145.f_28123;
+			return Global_262145.f_28123 /* Tunable: VW_AW_WV_61 */;
 		
 		case 236:
-			return Global_262145.f_28124;
+			return Global_262145.f_28124 /* Tunable: VW_AW_WH_51 */;
 		
 		case 237:
-			return Global_262145.f_28125;
+			return Global_262145.f_28125 /* Tunable: VW_AW_WH_52 */;
 		
 		case 238:
-			return Global_262145.f_28126;
+			return Global_262145.f_28126 /* Tunable: VW_AW_SS_11 */;
 		
 		case 239:
-			return Global_262145.f_28127;
+			return Global_262145.f_28127 /* Tunable: VW_AW_SS_12 */;
 		
 		case 240:
-			return Global_262145.f_28128;
+			return Global_262145.f_28128 /* Tunable: VW_AW_WH_53 */;
 		
 		case 241:
-			return Global_262145.f_28129;
+			return Global_262145.f_28129 /* Tunable: VW_AW_WH_54 */;
 		
 		case 242:
-			return Global_262145.f_28130;
+			return Global_262145.f_28130 /* Tunable: VW_AW_WH_55 */;
 		
 		case 243:
-			return Global_262145.f_28131;
+			return Global_262145.f_28131 /* Tunable: VW_AW_WV_62 */;
 		
 		case 244:
-			return Global_262145.f_28132;
+			return Global_262145.f_28132 /* Tunable: VW_AW_WH_56 */;
 		
 		case 245:
-			return Global_262145.f_28133;
+			return Global_262145.f_28133 /* Tunable: VW_AW_WV_63 */;
 		
 		case 246:
-			return Global_262145.f_28134;
+			return Global_262145.f_28134 /* Tunable: VW_AW_WV_64 */;
 		
 		case 247:
-			return Global_262145.f_28135;
+			return Global_262145.f_28135 /* Tunable: VW_AW_WH_57 */;
 		
 		case 248:
-			return Global_262145.f_28136;
+			return Global_262145.f_28136 /* Tunable: VW_AW_2S_4A */;
 		
 		case 249:
-			return Global_262145.f_28137;
+			return Global_262145.f_28137 /* Tunable: VW_AW_2S_4B */;
 		
 		case 250:
-			return Global_262145.f_28138;
+			return Global_262145.f_28138 /* Tunable: VW_AW_2S_4C */;
 		
 		case 251:
-			return Global_262145.f_28139;
+			return Global_262145.f_28139 /* Tunable: VW_AW_2S_4D */;
 		
 		case 252:
-			return Global_262145.f_28140;
+			return Global_262145.f_28140 /* Tunable: VW_AW_MF_5A */;
 		
 		case 253:
-			return Global_262145.f_28141;
+			return Global_262145.f_28141 /* Tunable: VW_AW_MF_6A */;
 		
 		case 254:
-			return Global_262145.f_28142;
+			return Global_262145.f_28142 /* Tunable: VW_AW_MF_5B */;
 		
 		case 255:
-			return Global_262145.f_28143;
+			return Global_262145.f_28143 /* Tunable: VW_AW_MF_6B */;
 		
 		case 256:
-			return Global_262145.f_28144;
+			return Global_262145.f_28144 /* Tunable: VW_AW_MF_5C */;
 		
 		case 257:
-			return Global_262145.f_28145;
+			return Global_262145.f_28145 /* Tunable: VW_AW_MF_6C */;
 		
 		case 258:
-			return Global_262145.f_28146;
+			return Global_262145.f_28146 /* Tunable: VW_AW_LS_10A */;
 		
 		case 259:
-			return Global_262145.f_28147;
+			return Global_262145.f_28147 /* Tunable: VW_AW_LS_10B */;
 		
 		case 260:
-			return Global_262145.f_28148;
+			return Global_262145.f_28148 /* Tunable: VW_AW_LS_10C */;
 		
 		case 261:
-			return Global_262145.f_28149;
+			return Global_262145.f_28149 /* Tunable: VW_AW_LS_10D */;
 		
 		case 262:
-			return Global_262145.f_28150;
+			return Global_262145.f_28150 /* Tunable: VW_AW_SS_13A */;
 		
 		case 263:
-			return Global_262145.f_28151;
+			return Global_262145.f_28151 /* Tunable: VW_AW_SS_13B */;
 		
 		case 264:
-			return Global_262145.f_28152;
+			return Global_262145.f_28152 /* Tunable: VW_AW_SS_13C */;
 		
 		case 265:
-			return Global_262145.f_28153;
+			return Global_262145.f_28153 /* Tunable: VW_AW_SS_14A */;
 		
 		case 266:
-			return Global_262145.f_28154;
+			return Global_262145.f_28154 /* Tunable: VW_AW_SS_14B */;
 		
 		case 267:
-			return Global_262145.f_28155;
+			return Global_262145.f_28155 /* Tunable: VW_AW_SS_14C */;
 		
 		case 268:
-			return Global_262145.f_28156;
+			return Global_262145.f_28156 /* Tunable: VW_AW_SS_18 */;
 		
 		case 269:
-			return Global_262145.f_28157;
+			return Global_262145.f_28157 /* Tunable: VW_AW_SS_23 */;
 		
 		case 270:
-			return Global_262145.f_28158;
+			return Global_262145.f_28158 /* Tunable: VW_AW_SS_27 */;
 		
 		case 271:
-			return Global_262145.f_28159;
+			return Global_262145.f_28159 /* Tunable: VW_AW_SS_28 */;
 		
 		case 272:
-			return Global_262145.f_28160;
+			return Global_262145.f_28160 /* Tunable: VW_AW_SS_29 */;
 		
 		case 273:
-			return Global_262145.f_28161;
+			return Global_262145.f_28161 /* Tunable: VW_AW_SS_30 */;
 		
 		case 274:
-			return Global_262145.f_28162;
+			return Global_262145.f_28162 /* Tunable: VW_AW_SS_31 */;
 		
 		case 275:
-			return Global_262145.f_28163;
+			return Global_262145.f_28163 /* Tunable: VW_AW_SS_32 */;
 		
 		case 276:
-			return Global_262145.f_28164;
+			return Global_262145.f_28164 /* Tunable: VW_AW_SS_33 */;
 		
 		case 277:
-			return Global_262145.f_28165;
+			return Global_262145.f_28165 /* Tunable: VW_AW_SS_34 */;
 		
 		case 278:
-			return Global_262145.f_28166;
+			return Global_262145.f_28166 /* Tunable: VW_AW_SS_35 */;
 		
 		case 279:
-			return Global_262145.f_28167;
+			return Global_262145.f_28167 /* Tunable: VW_AW_SS_36 */;
 		
 		case 280:
-			return Global_262145.f_28168;
+			return Global_262145.f_28168 /* Tunable: VW_AW_MT_4 */;
 		
 		case 281:
-			return Global_262145.f_28169;
+			return Global_262145.f_28169 /* Tunable: VW_AW_MT_5 */;
 		
 		case 282:
-			return Global_262145.f_28170;
+			return Global_262145.f_28170 /* Tunable: VW_AW_SS_37 */;
 		
 		case 283:
-			return Global_262145.f_28171;
+			return Global_262145.f_28171 /* Tunable: VW_AW_SS_38 */;
 		
 		case 284:
-			return Global_262145.f_28172;
+			return Global_262145.f_28172 /* Tunable: VW_AW_2S_5 */;
 		
 		case 285:
-			return Global_262145.f_28173;
+			return Global_262145.f_28173 /* Tunable: VW_AW_MF_7 */;
 		
 		case 286:
-			return Global_262145.f_28174;
+			return Global_262145.f_28174 /* Tunable: VW_AW_MT_6 */;
 		
 		case 287:
-			return Global_262145.f_28175;
+			return Global_262145.f_28175 /* Tunable: VW_AW_MT_7A */;
 		
 		case 288:
-			return Global_262145.f_28176;
+			return Global_262145.f_28176 /* Tunable: VW_AW_MT_7B */;
 		
 		case 289:
-			return Global_262145.f_28177;
+			return Global_262145.f_28177 /* Tunable: VW_AW_MT_7C */;
 		
 		case 290:
-			return Global_262145.f_28178;
+			return Global_262145.f_28178 /* Tunable: VW_AW_LS_11 */;
 		
 		case 291:
-			return Global_262145.f_28179;
+			return Global_262145.f_28179 /* Tunable: VW_AW_LS_12 */;
 		
 		case 292:
-			return Global_262145.f_28180;
+			return Global_262145.f_28180 /* Tunable: VW_AW_WV_65 */;
 		
 		case 293:
-			return Global_262145.f_28181;
+			return Global_262145.f_28181 /* Tunable: VW_AW_WV_66 */;
 		
 		case 294:
-			return Global_262145.f_28182;
+			return Global_262145.f_28182 /* Tunable: VW_AW_WV_67 */;
 		
 		case 295:
-			return Global_262145.f_28183;
+			return Global_262145.f_28183 /* Tunable: VW_AW_WV_68 */;
 		
 		case 296:
-			return Global_262145.f_28184;
+			return Global_262145.f_28184 /* Tunable: VW_AW_WV_69 */;
 		
 		case 297:
-			return Global_262145.f_28185;
+			return Global_262145.f_28185 /* Tunable: VW_AW_WV_70 */;
 		
 		case 298:
-			return Global_262145.f_28186;
+			return Global_262145.f_28186 /* Tunable: VW_AW_WV_71 */;
 		
 		case 299:
-			return Global_262145.f_28187;
+			return Global_262145.f_28187 /* Tunable: VW_AW_WV_72 */;
 		
 		case 300:
-			return Global_262145.f_28188;
+			return Global_262145.f_28188 /* Tunable: VW_AW_SS_39A */;
 		
 		case 301:
-			return Global_262145.f_28189;
+			return Global_262145.f_28189 /* Tunable: VW_AW_SS_39B */;
 		
 		case 302:
-			return Global_262145.f_28190;
+			return Global_262145.f_28190 /* Tunable: VW_AW_SS_39C */;
 		
 		case 303:
-			return Global_262145.f_28191;
+			return Global_262145.f_28191 /* Tunable: VW_AW_SS_39D */;
 		
 		default:
 	}
 	switch (iParam0)
 	{
 		case 304:
-			return Global_262145.f_28192;
+			return Global_262145.f_28192 /* Tunable: VW_AW_SS_39E */;
 		
 		case 305:
-			return Global_262145.f_28193;
+			return Global_262145.f_28193 /* Tunable: VW_AW_SS_39F */;
 		
 		case 306:
-			return Global_262145.f_28194;
+			return Global_262145.f_28194 /* Tunable: VW_AW_SS_40 */;
 		
 		case 307:
-			return Global_262145.f_28195;
+			return Global_262145.f_28195 /* Tunable: VW_AW_WV_73 */;
 		
 		case 308:
-			return Global_262145.f_28196;
+			return Global_262145.f_28196 /* Tunable: VW_AW_WV_74 */;
 		
 		case 309:
-			return Global_262145.f_28197;
+			return Global_262145.f_28197 /* Tunable: VW_AW_WV_75 */;
 		
 		case 310:
-			return Global_262145.f_28198;
+			return Global_262145.f_28198 /* Tunable: VW_AW_SS_41 */;
 		
 		case 311:
-			return Global_262145.f_28199;
+			return Global_262145.f_28199 /* Tunable: VW_AW_SS_42A */;
 		
 		case 312:
-			return Global_262145.f_28200;
+			return Global_262145.f_28200 /* Tunable: VW_AW_SS_42B */;
 		
 		case 313:
-			return Global_262145.f_28201;
+			return Global_262145.f_28201 /* Tunable: VW_AW_WV_76 */;
 		
 		case 314:
-			return Global_262145.f_28202;
+			return Global_262145.f_28202 /* Tunable: VW_AW_2S_6 */;
 		
 		case 315:
-			return Global_262145.f_28203;
+			return Global_262145.f_28203 /* Tunable: VW_AW_2S_7 */;
 		
 		case 316:
-			return Global_262145.f_28204;
+			return Global_262145.f_28204 /* Tunable: VW_AW_2S_8 */;
 		
 		case 317:
-			return Global_262145.f_28205;
+			return Global_262145.f_28205 /* Tunable: VW_AW_MT_8A */;
 		
 		case 318:
-			return Global_262145.f_28206;
+			return Global_262145.f_28206 /* Tunable: VW_AW_MT_8B */;
 		
 		case 319:
-			return Global_262145.f_28207;
+			return Global_262145.f_28207 /* Tunable: VW_AW_MT_8C */;
 		
 		case 320:
-			return Global_262145.f_28208;
+			return Global_262145.f_28208 /* Tunable: VW_AW_MT_8D */;
 		
 		case 321:
-			return Global_262145.f_28209;
+			return Global_262145.f_28209 /* Tunable: VW_AW_MT_9A */;
 		
 		case 322:
-			return Global_262145.f_28210;
+			return Global_262145.f_28210 /* Tunable: VW_AW_MT_9B */;
 		
 		case 323:
-			return Global_262145.f_28211;
+			return Global_262145.f_28211 /* Tunable: VW_AW_MT_9C */;
 		
 		case 324:
-			return Global_262145.f_28212;
+			return Global_262145.f_28212 /* Tunable: VW_AW_MT_9D */;
 		
 		case 325:
-			return Global_262145.f_28213;
+			return Global_262145.f_28213 /* Tunable: VW_AW_MT_10A */;
 		
 		case 326:
-			return Global_262145.f_28214;
+			return Global_262145.f_28214 /* Tunable: VW_AW_MT_10B */;
 		
 		case 327:
-			return Global_262145.f_28215;
+			return Global_262145.f_28215 /* Tunable: VW_AW_MT_10C */;
 		
 		case 328:
-			return Global_262145.f_28216;
+			return Global_262145.f_28216 /* Tunable: VW_AW_MT_10D */;
 		
 		case 329:
-			return Global_262145.f_28217;
+			return Global_262145.f_28217 /* Tunable: VW_AW_MT_11 */;
 		
 		case 330:
-			return Global_262145.f_28218;
+			return Global_262145.f_28218 /* Tunable: VW_AW_MT_12A */;
 		
 		case 331:
-			return Global_262145.f_28219;
+			return Global_262145.f_28219 /* Tunable: VW_AW_MT_12B */;
 		
 		case 332:
-			return Global_262145.f_28220;
+			return Global_262145.f_28220 /* Tunable: VW_AW_MT_12C */;
 		
 		case 333:
-			return Global_262145.f_28221;
+			return Global_262145.f_28221 /* Tunable: VW_AW_LS_14A */;
 		
 		case 334:
-			return Global_262145.f_28222;
+			return Global_262145.f_28222 /* Tunable: VW_AW_LS_14B */;
 		
 		case 335:
-			return Global_262145.f_28223;
+			return Global_262145.f_28223 /* Tunable: VW_AW_LS_14C */;
 		
 		case 336:
-			return Global_262145.f_28224;
+			return Global_262145.f_28224 /* Tunable: VW_AW_LS_14D */;
 		
 		case 337:
-			return Global_262145.f_28225;
+			return Global_262145.f_28225 /* Tunable: VW_AW_LS_14E */;
 		
 		case 338:
-			return Global_262145.f_28226;
+			return Global_262145.f_28226 /* Tunable: VW_AW_LS_14F */;
 		
 		case 339:
-			return Global_262145.f_28227;
+			return Global_262145.f_28227 /* Tunable: VW_AW_LS_14G */;
 		
 		case 340:
-			return Global_262145.f_28228;
+			return Global_262145.f_28228 /* Tunable: VW_AW_LS_14H */;
 		
 		case 341:
-			return Global_262145.f_28229;
+			return Global_262145.f_28229 /* Tunable: VW_AW_SS_43A */;
 		
 		case 342:
-			return Global_262145.f_28230;
+			return Global_262145.f_28230 /* Tunable: VW_AW_SS_43B */;
 		
 		case 343:
-			return Global_262145.f_28231;
+			return Global_262145.f_28231 /* Tunable: VW_AW_SS_43C */;
 		
 		case 344:
-			return Global_262145.f_28232;
+			return Global_262145.f_28232 /* Tunable: VW_AW_MT_14A */;
 		
 		case 345:
-			return Global_262145.f_28233;
+			return Global_262145.f_28233 /* Tunable: VW_AW_MT_14B */;
 		
 		case 346:
-			return Global_262145.f_28234;
+			return Global_262145.f_28234 /* Tunable: VW_AW_MT_14C */;
 		
 		case 347:
-			return Global_262145.f_28235;
+			return Global_262145.f_28235 /* Tunable: VW_AW_MT_14D */;
 		
 		case 348:
-			return Global_262145.f_28236;
+			return Global_262145.f_28236 /* Tunable: VW_AW_MT_15A */;
 		
 		case 349:
-			return Global_262145.f_28237;
+			return Global_262145.f_28237 /* Tunable: VW_AW_MT_15B */;
 		
 		case 350:
-			return Global_262145.f_28238;
+			return Global_262145.f_28238 /* Tunable: VW_AW_MT_15C */;
 		
 		case 351:
-			return Global_262145.f_28239;
+			return Global_262145.f_28239 /* Tunable: VW_AW_MT_15D */;
 		
 		case 352:
-			return Global_262145.f_28240;
+			return Global_262145.f_28240 /* Tunable: VW_AW_MT_16A */;
 		
 		case 353:
-			return Global_262145.f_28241;
+			return Global_262145.f_28241 /* Tunable: VW_AW_MT_16B */;
 		
 		case 354:
-			return Global_262145.f_28242;
+			return Global_262145.f_28242 /* Tunable: VW_AW_MT_16C */;
 		
 		case 355:
-			return Global_262145.f_28243;
+			return Global_262145.f_28243 /* Tunable: VW_AW_MT_16D */;
 		
 		case 356:
-			return Global_262145.f_28244;
+			return Global_262145.f_28244 /* Tunable: VW_AW_MT_17A */;
 		
 		case 357:
-			return Global_262145.f_28245;
+			return Global_262145.f_28245 /* Tunable: VW_AW_MT_17B */;
 		
 		case 358:
-			return Global_262145.f_28246;
+			return Global_262145.f_28246 /* Tunable: VW_AW_MT_17C */;
 		
 		case 359:
-			return Global_262145.f_28247;
+			return Global_262145.f_28247 /* Tunable: VW_AW_MT_17D */;
 		
 		case 360:
-			return Global_262145.f_28248;
+			return Global_262145.f_28248 /* Tunable: VW_AW_MT_18A */;
 		
 		case 361:
-			return Global_262145.f_28249;
+			return Global_262145.f_28249 /* Tunable: VW_AW_MT_18B */;
 		
 		case 362:
-			return Global_262145.f_28250;
+			return Global_262145.f_28250 /* Tunable: VW_AW_MT_18C */;
 		
 		case 363:
-			return Global_262145.f_28251;
+			return Global_262145.f_28251 /* Tunable: VW_AW_MT_18D */;
 		
 		case 364:
-			return Global_262145.f_28252;
+			return Global_262145.f_28252 /* Tunable: VW_AW_MT_19A */;
 		
 		case 365:
-			return Global_262145.f_28253;
+			return Global_262145.f_28253 /* Tunable: VW_AW_MT_19B */;
 		
 		case 366:
-			return Global_262145.f_28254;
+			return Global_262145.f_28254 /* Tunable: VW_AW_MT_19C */;
 		
 		case 367:
-			return Global_262145.f_28255;
+			return Global_262145.f_28255 /* Tunable: VW_AW_MT_19D */;
 		
 		case 368:
-			return Global_262145.f_28256;
+			return Global_262145.f_28256 /* Tunable: VW_AW_LS_15 */;
 		
 		case 369:
-			return Global_262145.f_28257;
+			return Global_262145.f_28257 /* Tunable: VW_AW_LS_16 */;
 		
 		case 370:
-			return Global_262145.f_28258;
+			return Global_262145.f_28258 /* Tunable: VW_AW_LS_17 */;
 		
 		case 371:
-			return Global_262145.f_28259;
+			return Global_262145.f_28259 /* Tunable: VW_AW_LS_18 */;
 		
 		case 372:
-			return Global_262145.f_28260;
+			return Global_262145.f_28260 /* Tunable: VW_AW_LS_19 */;
 		
 		case 373:
-			return Global_262145.f_28261;
+			return Global_262145.f_28261 /* Tunable: VW_AW_LS_20 */;
 		
 		case 374:
-			return Global_262145.f_28262;
+			return Global_262145.f_28262 /* Tunable: VW_AW_LS_21 */;
 		
 		case 375:
-			return Global_262145.f_28263;
+			return Global_262145.f_28263 /* Tunable: VW_AW_LS_22 */;
 		
 		case 376:
-			return Global_262145.f_28264;
+			return Global_262145.f_28264 /* Tunable: VW_AW_LS_23 */;
 		
 		case 377:
-			return Global_262145.f_28265;
+			return Global_262145.f_28265 /* Tunable: VW_AW_LS_24 */;
 		
 		case 378:
-			return Global_262145.f_28266;
+			return Global_262145.f_28266 /* Tunable: VW_AW_LS_25 */;
 		
 		case 379:
-			return Global_262145.f_28267;
+			return Global_262145.f_28267 /* Tunable: VW_AW_LS_26 */;
 		
 		case 380:
-			return Global_262145.f_28268;
+			return Global_262145.f_28268 /* Tunable: VW_AW_MT_20 */;
 		
 		case 381:
-			return Global_262145.f_28269;
+			return Global_262145.f_28269 /* Tunable: VW_AW_MT_21 */;
 		
 		case 382:
-			return Global_262145.f_28270;
+			return Global_262145.f_28270 /* Tunable: VW_AW_MT_22 */;
 		
 		case 383:
-			return Global_262145.f_28271;
+			return Global_262145.f_28271 /* Tunable: VW_AW_MT_23 */;
 		
 		case 384:
-			return Global_262145.f_28272;
+			return Global_262145.f_28272 /* Tunable: VW_AW_MT_24 */;
 		
 		case 385:
-			return Global_262145.f_28273;
+			return Global_262145.f_28273 /* Tunable: VW_AW_MT_25A */;
 		
 		case 386:
-			return Global_262145.f_28274;
+			return Global_262145.f_28274 /* Tunable: VW_AW_MT_25B */;
 		
 		case 387:
-			return Global_262145.f_28275;
+			return Global_262145.f_28275 /* Tunable: VW_AW_MT_25C */;
 		
 		case 388:
-			return Global_262145.f_28276;
+			return Global_262145.f_28276 /* Tunable: VW_AW_MT_25D */;
 		
 		case 389:
-			return Global_262145.f_28277;
+			return Global_262145.f_28277 /* Tunable: VW_AW_MT_26A */;
 		
 		case 390:
-			return Global_262145.f_28278;
+			return Global_262145.f_28278 /* Tunable: VW_AW_MT_26B */;
 		
 		case 391:
-			return Global_262145.f_28279;
+			return Global_262145.f_28279 /* Tunable: VW_AW_MT_26C */;
 		
 		case 392:
-			return Global_262145.f_28280;
+			return Global_262145.f_28280 /* Tunable: VW_AW_MT_26D */;
 		
 		case 393:
-			return Global_262145.f_28281;
+			return Global_262145.f_28281 /* Tunable: VW_AW_MT_27A */;
 		
 		case 394:
-			return Global_262145.f_28282;
+			return Global_262145.f_28282 /* Tunable: VW_AW_MT_27B */;
 		
 		case 395:
-			return Global_262145.f_28283;
+			return Global_262145.f_28283 /* Tunable: VW_AW_MT_27C */;
 		
 		case 396:
-			return Global_262145.f_28284;
+			return Global_262145.f_28284 /* Tunable: VW_AW_MT_27D */;
 		
 		case 397:
-			return Global_262145.f_28285;
+			return Global_262145.f_28285 /* Tunable: VW_AW_MT_28A */;
 		
 		case 398:
-			return Global_262145.f_28286;
+			return Global_262145.f_28286 /* Tunable: VW_AW_MT_28B */;
 		
 		case 399:
-			return Global_262145.f_28287;
+			return Global_262145.f_28287 /* Tunable: VW_AW_MT_28C */;
 		
 		case 400:
-			return Global_262145.f_28288;
+			return Global_262145.f_28288 /* Tunable: VW_AW_MT_28D */;
 		
 		case 401:
-			return Global_262145.f_28289;
+			return Global_262145.f_28289 /* Tunable: VW_AW_MT_29 */;
 		
 		case 402:
-			return Global_262145.f_28290;
+			return Global_262145.f_28290 /* Tunable: VW_AW_MT_30 */;
 		
 		case 403:
-			return Global_262145.f_28291;
+			return Global_262145.f_28291 /* Tunable: VW_AW_MT_31 */;
 		
 		case 404:
-			return Global_262145.f_28292;
+			return Global_262145.f_28292 /* Tunable: VW_AW_MT_32 */;
 		
 		default:
 	}
 	switch (iParam0)
 	{
 		case 405:
-			return Global_262145.f_28293;
+			return Global_262145.f_28293 /* Tunable: VW_AW_MT_33 */;
 		
 		case 406:
-			return Global_262145.f_28294;
+			return Global_262145.f_28294 /* Tunable: VW_AW_MT_34 */;
 		
 		case 407:
-			return Global_262145.f_28295;
+			return Global_262145.f_28295 /* Tunable: VW_AW_MT_35 */;
 		
 		case 408:
-			return Global_262145.f_28296;
+			return Global_262145.f_28296 /* Tunable: VW_AW_MT_36 */;
 		
 		case 409:
-			return Global_262145.f_28297;
+			return Global_262145.f_28297 /* Tunable: VW_AW_MT_37 */;
 		
 		case 410:
-			return Global_262145.f_28298;
+			return Global_262145.f_28298 /* Tunable: VW_AW_MT_38 */;
 		
 		case 411:
-			return Global_262145.f_28299;
+			return Global_262145.f_28299 /* Tunable: VW_AW_MT_39 */;
 		
 		case 412:
-			return Global_262145.f_28300;
+			return Global_262145.f_28300 /* Tunable: VW_AW_MT_40 */;
 		
 		case 413:
-			return Global_262145.f_28374;
+			return Global_262145.f_28374 /* Tunable: CH_PROP_TREE_01A */;
 		
 		case 414:
-			return Global_262145.f_28375;
+			return Global_262145.f_28375 /* Tunable: CH_PROP_TREE_02A */;
 		
 		case 415:
-			return Global_262145.f_28376;
+			return Global_262145.f_28376 /* Tunable: CH_PROP_TREE_03A */;
 		
 		case 416:
-			return Global_262145.f_28377;
+			return Global_262145.f_28377 /* Tunable: VW_AW_WV_77 */;
 		
 		case 417:
-			return Global_262145.f_28378;
+			return Global_262145.f_28378 /* Tunable: VW_AW_WV_78 */;
 		
 		case 418:
-			return Global_262145.f_28379;
+			return Global_262145.f_28379 /* Tunable: VW_AW_WV_79 */;
 		
 		case 419:
-			return Global_262145.f_28380;
+			return Global_262145.f_28380 /* Tunable: VW_AW_WV_80 */;
 		
 		case 420:
-			return Global_262145.f_28381;
+			return Global_262145.f_28381 /* Tunable: VW_AW_WV_81 */;
 		
 		case 421:
-			return Global_262145.f_28382;
+			return Global_262145.f_28382 /* Tunable: VW_AW_WV_82 */;
 		
 		case 422:
-			return Global_262145.f_28383;
+			return Global_262145.f_28383 /* Tunable: VW_AW_WV_83 */;
 		
 		case 423:
-			return Global_262145.f_28384;
+			return Global_262145.f_28384 /* Tunable: VW_AW_WV_84 */;
 		
 		case 424:
-			return Global_262145.f_28385;
+			return Global_262145.f_28385 /* Tunable: VW_AW_WV_85 */;
 		
 		case 425:
 			return Global_262145.f_28386;
@@ -69006,75 +69006,75 @@ int func_436(char* sParam0, int iParam1, int iParam2)//Position - 0x57636
 	switch (iParam1)
 	{
 		case 6:
-			if (Global_262145.f_15292)
+			if (Global_262145.f_15292 /* Tunable: SHOULD_ITEM_BE_DISCOUNTED_HME_NGMP_HAIR */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 7:
-			if (Global_262145.f_15293)
+			if (Global_262145.f_15293 /* Tunable: SHOULD_ITEM_BE_DISCOUNTED_HME_NGMP_BEARD */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 8:
-			if (Global_262145.f_15294)
+			if (Global_262145.f_15294 /* Tunable: SHOULD_ITEM_BE_DISCOUNTED_HME_NGMP_EYEBROWS */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 9:
-			if (Global_262145.f_15295)
+			if (Global_262145.f_15295 /* Tunable: SHOULD_ITEM_BE_DISCOUNTED_HME_NGMP_CHEST */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 10:
-			if (Global_262145.f_15296)
+			if (Global_262145.f_15296 /* Tunable: SHOULD_ITEM_BE_DISCOUNTED_HME_NGMP_CONTACTS */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 11:
-			if (Global_262145.f_15297)
+			if (Global_262145.f_15297 /* Tunable: SHOULD_ITEM_BE_DISCOUNTED_HME_NGMP_FACEPAINT */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 13:
-			if (Global_262145.f_15298)
+			if (Global_262145.f_15298 /* Tunable: SHOULD_ITEM_BE_DISCOUNTED_HME_NGMP_MAKEUP */)
 			{
 				return 1;
 			}
-			if (Global_262145.f_15299)
+			if (Global_262145.f_15299 /* Tunable: SHOULD_ITEM_BE_DISCOUNTED_HME_NGMP_MAKEUP_BLUSHER */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 14:
-			if (Global_262145.f_15298)
+			if (Global_262145.f_15298 /* Tunable: SHOULD_ITEM_BE_DISCOUNTED_HME_NGMP_MAKEUP */)
 			{
 				return 1;
 			}
-			if (Global_262145.f_15300)
+			if (Global_262145.f_15300 /* Tunable: SHOULD_ITEM_BE_DISCOUNTED_HME_NGMP_MAKEUP_EYE */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 15:
-			if (Global_262145.f_15298)
+			if (Global_262145.f_15298 /* Tunable: SHOULD_ITEM_BE_DISCOUNTED_HME_NGMP_MAKEUP */)
 			{
 				return 1;
 			}
-			if (Global_262145.f_15301)
+			if (Global_262145.f_15301 /* Tunable: SHOULD_ITEM_BE_DISCOUNTED_HME_NGMP_MAKEUP_LIPSTICK */)
 			{
 				return 1;
 			}
@@ -70308,7 +70308,7 @@ void func_449(struct<67> Param0, var uParam1, var uParam2, var uParam3, var uPar
 	Var0.f_2 = { Param0.f_66 };
 	Var0.f_2.f_33 = iParam19;
 	iVar1 = func_451(Var0.f_1);
-	if ((Global_262145.f_24104 && !Global_262145.f_24105) && !Global_262145.f_24106)
+	if ((Global_262145.f_24104 /* Tunable: BLOCK_NS_TRANS */ && !Global_262145.f_24105 /* Tunable: SC_RUN_TRANS */) && !Global_262145.f_24106 /* Tunable: BG_RUN_TRANS */)
 	{
 		return;
 	}
@@ -74138,147 +74138,147 @@ int func_526(var uParam0, int iParam1, char* sParam2, bool bParam3)//Position - 
 		{
 			case 0:
 				iVar0 = 500;
-				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2653));
+				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2653 /* Tunable: BEARD_UNLOCKS_CLEANSHAVEN_EXPENDITURE_TUNABLE */));
 				break;
 			
 			case 1:
 				iVar0 = 150;
-				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2654));
+				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2654 /* Tunable: BEARD_UNLOCKS_LIGHTSTUBBLE_EXPENDITURE_TUNABLE */));
 				break;
 			
 			case 2:
 				iVar0 = 430;
-				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2655));
+				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2655 /* Tunable: BEARD_UNLOCKS_BALBO_EXPENDITURE_TUNABLE */));
 				break;
 			
 			case 3:
 				iVar0 = 325;
-				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2656));
+				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2656 /* Tunable: BEARD_UNLOCKS_CIRCLEBEARD_EXPENDITURE_TUNABLE */));
 				break;
 			
 			case 4:
 				iVar0 = 465;
-				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2657));
+				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2657 /* Tunable: BEARD_UNLOCKS_GOATEE_EXPENDITURE_TUNABLE */));
 				break;
 			
 			case 5:
 				iVar0 = 500;
-				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2658));
+				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2658 /* Tunable: BEARD_UNLOCKS_CHIN_EXPENDITURE_TUNABLE */));
 				break;
 			
 			case 6:
 				iVar0 = 350;
-				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2659));
+				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2659 /* Tunable: BEARD_UNLOCKS_SOULPATCH_EXPENDITURE_TUNABLE */));
 				break;
 			
 			case 7:
 				iVar0 = 600;
-				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2660));
+				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2660 /* Tunable: BEARD_UNLOCKS_PENCILCHINSTRAP_EXPENDITURE_TUNABLE */));
 				break;
 			
 			case 8:
 				iVar0 = 220;
-				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2661));
+				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2661 /* Tunable: BEARD_UNLOCKS_LIGHTBEARD_EXPENDITURE_TUNABLE */));
 				break;
 			
 			case 9:
 				iVar0 = 1425;
-				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2662));
+				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2662 /* Tunable: BEARD_UNLOCKS_MUSKETEER_EXPENDITURE_TUNABLE */));
 				break;
 			
 			case 10:
 				iVar0 = 1700;
-				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2663));
+				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2663 /* Tunable: BEARD_UNLOCKS_MOUSTACHE_EXPENDITURE_TUNABLE */));
 				break;
 			
 			case 11:
 				iVar0 = 290;
-				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2664));
+				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2664 /* Tunable: BEARD_UNLOCKS_HEAVYBEARD_EXPENDITURE_TUNABLE */));
 				break;
 			
 			case 12:
 				iVar0 = 185;
-				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2665));
+				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2665 /* Tunable: BEARD_UNLOCKS_STUBBLE_EXPENDITURE_TUNABLE */));
 				break;
 			
 			case 13:
 				iVar0 = 255;
-				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2666));
+				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2666 /* Tunable: BEARD_UNLOCKS_CIRCLEBEARD2_EXPENDITURE_TUNABLE */));
 				break;
 			
 			case 14:
 				iVar0 = 1150;
-				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2667));
+				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2667 /* Tunable: BEARD_UNLOCKS_HORSESHOEANDSIDEBURNS_EXPENDITURE_TUNABLE */));
 				break;
 			
 			case 15:
 				iVar0 = 1975;
-				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2668));
+				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2668 /* Tunable: BEARD_UNLOCKS_PENCILMOUSTACHEANDMUTTONCHOPS_EXPENDITURE_TUNABLE */));
 				break;
 			
 			case 16:
 				iVar0 = 875;
-				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2669));
+				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2669 /* Tunable: BEARD_UNLOCKS_PENCILMOUSTACHEANDCHINSTRAP_EXPENDITURE_TUNABLE */));
 				break;
 			
 			case 17:
 				iVar0 = 2000;
-				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2670));
+				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2670 /* Tunable: BEARD_UNLOCKS_BALBOANDDESIGNSIDEBURNS_EXPENDITURE_TUNABLE */));
 				break;
 			
 			case 18:
 				iVar0 = 725;
-				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2671));
+				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2671 /* Tunable: BEARD_UNLOCKS_MUTTONCHOPS_EXPENDITURE_TUNABLE */));
 				break;
 			
 			case 19:
 				iVar0 = 395;
-				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2672));
+				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2672 /* Tunable: BEARD_UNLOCKS_FULLBEARD_EXPENDITURE_TUNABLE */));
 				break;
 			
 			case 20:
 				iVar0 = 395;
-				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2672));
+				iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2672 /* Tunable: BEARD_UNLOCKS_FULLBEARD_EXPENDITURE_TUNABLE */));
 				break;
 			
 			case 27:
-				iVar0 = Global_262145.f_4336;
+				iVar0 = Global_262145.f_4336 /* Tunable: DLC_MALE_BEARDS_CURLY */;
 				break;
 			
 			case 28:
-				iVar0 = Global_262145.f_4337;
+				iVar0 = Global_262145.f_4337 /* Tunable: DLC_MALE_BEARDS_CURLY_DEEP_STRANGER */;
 				break;
 			
 			case 29:
-				iVar0 = Global_262145.f_4338;
+				iVar0 = Global_262145.f_4338 /* Tunable: DLC_MALE_BEARDS_HANDLEBAR */;
 				break;
 			
 			case 30:
-				iVar0 = Global_262145.f_4339;
+				iVar0 = Global_262145.f_4339 /* Tunable: DLC_MALE_BEARDS_FAUSTIC */;
 				break;
 			
 			case 31:
-				iVar0 = Global_262145.f_4340;
+				iVar0 = Global_262145.f_4340 /* Tunable: DLC_MALE_BEARDS_OTTO_PATCH */;
 				break;
 			
 			case 32:
-				iVar0 = Global_262145.f_4341;
+				iVar0 = Global_262145.f_4341 /* Tunable: DLC_MALE_BEARDS_OTTO_FULL_STRANGER */;
 				break;
 			
 			case 33:
-				iVar0 = Global_262145.f_4342;
+				iVar0 = Global_262145.f_4342 /* Tunable: DLC_MALE_BEARDS_LIGHT_FRANZ */;
 				break;
 			
 			case 36:
-				iVar0 = Global_262145.f_4343;
+				iVar0 = Global_262145.f_4343 /* Tunable: DLC_MALE_BEARDS_LINCOLN_CURTAIN */;
 				break;
 			
 			case 34:
-				iVar0 = Global_262145.f_4344;
+				iVar0 = Global_262145.f_4344 /* Tunable: DLC_MALE_BEARDS_HAMPSTEAD */;
 				break;
 			
 			case 35:
-				iVar0 = Global_262145.f_4345;
+				iVar0 = Global_262145.f_4345 /* Tunable: DLC_MALE_BEARDS_AMBROSE */;
 				break;
 			}
 	}
@@ -74302,7 +74302,7 @@ void func_527(var uParam0, int iParam1)//Position - 0x5EE9B
 	{
 		if (func_530())
 		{
-			iVar0 = (iVar0 + Global_262145.f_132);
+			iVar0 = (iVar0 + Global_262145.f_132 /* Tunable: SHOP_GOODBOY_DISCOUNT_PERCENT */);
 		}
 	}
 	if (func_529(*uParam0, func_135()))
@@ -74362,7 +74362,7 @@ int func_530()//Position - 0x5EF6C
 			iVar0 = func_532();
 			iVar1 = func_531();
 			fVar2 = ((SYSTEM::TO_FLOAT(iVar1) / SYSTEM::TO_FLOAT(iVar0)) * 100f);
-			if (fVar2 > IntToFloat(Global_262145.f_131) && iVar0 >= 8)
+			if (fVar2 > IntToFloat(Global_262145.f_131 /* Tunable: SHOP_DISCOUNT_PERCENT */) && iVar0 >= 8)
 			{
 				return 1;
 			}
@@ -75638,163 +75638,163 @@ int func_567(var uParam0, var uParam1, int iParam2, int iParam3, bool bParam4)//
 		switch (MISC::GET_HASH_KEY(&(uParam1->f_8)))
 		{
 			case joaat("CLO_BBF_H_05"):
-				iVar0 = Global_262145.f_7482;
+				iVar0 = Global_262145.f_7482 /* Tunable: DLC_FEMALE_HAIR_MESSY_BUN_CHESTNUT */;
 				break;
 			
 			case joaat("CLO_BBF_H_06"):
-				iVar0 = Global_262145.f_7483;
+				iVar0 = Global_262145.f_7483 /* Tunable: DLC_FEMALE_HAIR_MESSY_BUN_BLONDE */;
 				break;
 			
 			case joaat("CLO_BBF_H_07"):
-				iVar0 = Global_262145.f_7484;
+				iVar0 = Global_262145.f_7484 /* Tunable: DLC_FEMALE_HAIR_MESSY_BUN_AUBURN */;
 				break;
 			
 			case joaat("CLO_BBF_H_08"):
-				iVar0 = Global_262145.f_7485;
+				iVar0 = Global_262145.f_7485 /* Tunable: DLC_FEMALE_HAIR_MESSY_BUN_BLACK */;
 				break;
 			
 			case joaat("CLO_BBF_H_09"):
-				iVar0 = Global_262145.f_7486;
+				iVar0 = Global_262145.f_7486 /* Tunable: DLC_FEMALE_HAIR_MESSY_BUN_BROWN */;
 				break;
 			
 			case joaat("CLO_BBF_H_00"):
-				iVar0 = Global_262145.f_7487;
+				iVar0 = Global_262145.f_7487 /* Tunable: DLC_FEMALE_HAIR_PIN_UP_GIRL_CHESTNUT */;
 				break;
 			
 			case joaat("CLO_BBF_H_01"):
-				iVar0 = Global_262145.f_7488;
+				iVar0 = Global_262145.f_7488 /* Tunable: DLC_FEMALE_HAIR_PIN_UP_GIRL_BLONDE */;
 				break;
 			
 			case joaat("CLO_BBF_H_02"):
-				iVar0 = Global_262145.f_7489;
+				iVar0 = Global_262145.f_7489 /* Tunable: DLC_FEMALE_HAIR_PIN_UP_GIRL_AUBURN */;
 				break;
 			
 			case joaat("CLO_BBF_H_03"):
-				iVar0 = Global_262145.f_7490;
+				iVar0 = Global_262145.f_7490 /* Tunable: DLC_FEMALE_HAIR_PIN_UP_GIRL_BLACK */;
 				break;
 			
 			case joaat("CLO_BBF_H_04"):
-				iVar0 = Global_262145.f_7491;
+				iVar0 = Global_262145.f_7491 /* Tunable: DLC_FEMALE_HAIR_PIN_UP_GIRL_BROWN */;
 				break;
 			
 			case joaat("CLO_BUS_F_H_1_0"):
-				iVar0 = Global_262145.f_7492;
+				iVar0 = Global_262145.f_7492 /* Tunable: DLC_FEMALE_HAIR_TWISTED_BOB_CHESTNUT */;
 				break;
 			
 			case joaat("CLO_BUS_F_H_1_1"):
-				iVar0 = Global_262145.f_7493;
+				iVar0 = Global_262145.f_7493 /* Tunable: DLC_FEMALE_HAIR_TWISTED_BOB_BLACK */;
 				break;
 			
 			case joaat("CLO_BUS_F_H_1_2"):
-				iVar0 = Global_262145.f_7494;
+				iVar0 = Global_262145.f_7494 /* Tunable: DLC_FEMALE_HAIR_TWISTED_BOB_AUBURN */;
 				break;
 			
 			case joaat("CLO_BUS_F_H_1_3"):
-				iVar0 = Global_262145.f_7495;
+				iVar0 = Global_262145.f_7495 /* Tunable: DLC_FEMALE_HAIR_TWISTED_BOB_BROWN */;
 				break;
 			
 			case joaat("CLO_BUS_F_H_1_4"):
-				iVar0 = Global_262145.f_7496;
+				iVar0 = Global_262145.f_7496 /* Tunable: DLC_FEMALE_HAIR_TWISTED_BOB_BLONDE */;
 				break;
 			
 			case joaat("CLO_BUS_F_H_0_3"):
-				iVar0 = Global_262145.f_7497;
+				iVar0 = Global_262145.f_7497 /* Tunable: DLC_FEMALE_HAIR_TIGHT_BUN_CHESTNUT */;
 				break;
 			
 			case joaat("CLO_BUS_F_H_0_4"):
-				iVar0 = Global_262145.f_7498;
+				iVar0 = Global_262145.f_7498 /* Tunable: DLC_FEMALE_HAIR_TIGHT_BUN_BLONDE */;
 				break;
 			
 			case joaat("CLO_BUS_F_H_0_2"):
-				iVar0 = Global_262145.f_7499;
+				iVar0 = Global_262145.f_7499 /* Tunable: DLC_FEMALE_HAIR_TIGHT_BUN_AUBURN */;
 				break;
 			
 			case joaat("CLO_BUS_F_H_0_0"):
-				iVar0 = Global_262145.f_7500;
+				iVar0 = Global_262145.f_7500 /* Tunable: DLC_FEMALE_HAIR_TIGHT_BUN_BLACK */;
 				break;
 			
 			case joaat("CLO_BUS_F_H_0_1"):
-				iVar0 = Global_262145.f_7501;
+				iVar0 = Global_262145.f_7501 /* Tunable: DLC_FEMALE_HAIR_TIGHT_BUN_BROWN */;
 				break;
 			
 			case joaat("CLO_BBM_H_05"):
-				iVar0 = Global_262145.f_7502;
+				iVar0 = Global_262145.f_7502 /* Tunable: DLC_MALE_HAIR_SURFER_DUDE_DARK_BROWN */;
 				break;
 			
 			case joaat("CLO_BBM_H_06"):
-				iVar0 = Global_262145.f_7503;
+				iVar0 = Global_262145.f_7503 /* Tunable: DLC_MALE_HAIR_SURFER_DUDE_LIGHT_BROWN */;
 				break;
 			
 			case joaat("CLO_BBM_H_07"):
-				iVar0 = Global_262145.f_7504;
+				iVar0 = Global_262145.f_7504 /* Tunable: DLC_MALE_HAIR_SURFER_DUDE_AUBURN */;
 				break;
 			
 			case joaat("CLO_BBM_H_08"):
-				iVar0 = Global_262145.f_7505;
+				iVar0 = Global_262145.f_7505 /* Tunable: DLC_MALE_HAIR_SURFER_DUDE_BLONDE */;
 				break;
 			
 			case joaat("CLO_BBM_H_09"):
-				iVar0 = Global_262145.f_7506;
+				iVar0 = Global_262145.f_7506 /* Tunable: DLC_MALE_HAIR_SURFER_DUDE_BLACK */;
 				break;
 			
 			case joaat("CLO_BBM_H_00"):
-				iVar0 = Global_262145.f_7507;
+				iVar0 = Global_262145.f_7507 /* Tunable: DLC_MALE_HAIR_SHAGGY_CURLS_DARK_BROWN */;
 				break;
 			
 			case joaat("CLO_BBM_H_01"):
-				iVar0 = Global_262145.f_7508;
+				iVar0 = Global_262145.f_7508 /* Tunable: DLC_MALE_HAIR_SHAGGY_CURLS_LIGHT_BROWN */;
 				break;
 			
 			case joaat("CLO_BBM_H_02"):
-				iVar0 = Global_262145.f_7509;
+				iVar0 = Global_262145.f_7509 /* Tunable: DLC_MALE_HAIR_SHAGGY_CURLS_AUBURN */;
 				break;
 			
 			case joaat("CLO_BBM_H_03"):
-				iVar0 = Global_262145.f_7510;
+				iVar0 = Global_262145.f_7510 /* Tunable: DLC_MALE_HAIR_SHAGGY_CURLS_BLONDE */;
 				break;
 			
 			case joaat("CLO_BBM_H_04"):
-				iVar0 = Global_262145.f_7511;
+				iVar0 = Global_262145.f_7511 /* Tunable: DLC_MALE_HAIR_SHAGGY_CURLS_BLACK */;
 				break;
 			
 			case joaat("CLO_BUS_H_1_0"):
-				iVar0 = Global_262145.f_7512;
+				iVar0 = Global_262145.f_7512 /* Tunable: DLC_MALE_HAIR_HIGH_SLICKED_SIDES_DARK_BROWN */;
 				break;
 			
 			case joaat("CLO_BUS_H_1_1"):
-				iVar0 = Global_262145.f_7513;
+				iVar0 = Global_262145.f_7513 /* Tunable: DLC_MALE_HAIR_HIGH_SLICKED_SIDES_LIGHT_BROWN */;
 				break;
 			
 			case joaat("CLO_BUS_H_1_2"):
-				iVar0 = Global_262145.f_7514;
+				iVar0 = Global_262145.f_7514 /* Tunable: DLC_MALE_HAIR_HIGH_SLICKED_SIDES_AUBURN */;
 				break;
 			
 			case joaat("CLO_BUS_H_1_3"):
-				iVar0 = Global_262145.f_7515;
+				iVar0 = Global_262145.f_7515 /* Tunable: DLC_MALE_HAIR_HIGH_SLICKED_SIDES_BLONDE */;
 				break;
 			
 			case joaat("CLO_BUS_H_1_4"):
-				iVar0 = Global_262145.f_7516;
+				iVar0 = Global_262145.f_7516 /* Tunable: DLC_MALE_HAIR_HIGH_SLICKED_SIDES_BLACK */;
 				break;
 			
 			case joaat("CLO_BUS_H_0_0"):
-				iVar0 = Global_262145.f_7517;
+				iVar0 = Global_262145.f_7517 /* Tunable: DLC_MALE_HAIR_SHORT_SIDE_PART_DARK_BROWN */;
 				break;
 			
 			case joaat("CLO_BUS_H_0_1"):
-				iVar0 = Global_262145.f_7518;
+				iVar0 = Global_262145.f_7518 /* Tunable: DLC_MALE_HAIR_SHORT_SIDE_PART_LIGHT_BROWN */;
 				break;
 			
 			case joaat("CLO_BUS_H_0_2"):
-				iVar0 = Global_262145.f_7519;
+				iVar0 = Global_262145.f_7519 /* Tunable: DLC_MALE_HAIR_SHORT_SIDE_PART_AUBURN */;
 				break;
 			
 			case joaat("CLO_BUS_H_0_3"):
-				iVar0 = Global_262145.f_7520;
+				iVar0 = Global_262145.f_7520 /* Tunable: DLC_MALE_HAIR_SHORT_SIDE_PART_BLONDE */;
 				break;
 			
 			case joaat("CLO_BUS_H_0_4"):
-				iVar0 = Global_262145.f_7521;
+				iVar0 = Global_262145.f_7521 /* Tunable: DLC_MALE_HAIR_SHORT_SIDE_PART_BLACK */;
 				break;
 			
 			case joaat("CLO_HP_F_HR_0_0"):
@@ -75877,17 +75877,17 @@ int func_567(var uParam0, var uParam1, int iParam2, int iParam3, bool bParam4)//
 				iVar0 = Global_262145.f_8082[19];
 				break;
 		}
-		iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_75));
+		iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_75 /* Tunable: HAIRDO_SHOP_MULTIPLIER */));
 		if (BitTest(uParam1->f_6, 6))
 		{
 			switch (Global_2883589)
 			{
 				case joaat("CU_VAL_CLOTHES"):
-					iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_7057));
+					iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_7057 /* Tunable: VALENTINES_MODIFIER_HAIRCUTS_MULTIPLIER */));
 					break;
 				
 				case joaat("CU_INDI_CLOTHES"):
-					iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_8275));
+					iVar0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_8275 /* Tunable: HAIR_MAKEUP_INDEPENDENCEDAY_GROUP */));
 					break;
 				}
 		}
@@ -86084,9 +86084,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 1:
 			iVar3 = 1;
 			iVar4 = 0;
-			if (Global_262145.f_4150 != -1)
+			if (Global_262145.f_4150 /* Tunable: EXPENSE_MODIFIER_GOLD_DECO_EARRINGS */ != -1)
 			{
-				iVar1 = Global_262145.f_4150;
+				iVar1 = Global_262145.f_4150 /* Tunable: EXPENSE_MODIFIER_GOLD_DECO_EARRINGS */;
 			}
 			else
 			{
@@ -86097,9 +86097,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 2:
 			iVar3 = 1;
 			iVar4 = 1;
-			if (Global_262145.f_4151 != -1)
+			if (Global_262145.f_4151 /* Tunable: EXPENSE_MODIFIER_SILVER_DECO_EARRINGS */ != -1)
 			{
-				iVar1 = Global_262145.f_4151;
+				iVar1 = Global_262145.f_4151 /* Tunable: EXPENSE_MODIFIER_SILVER_DECO_EARRINGS */;
 			}
 			else
 			{
@@ -86110,9 +86110,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 3:
 			iVar3 = 1;
 			iVar4 = 2;
-			if (Global_262145.f_4152 != -1)
+			if (Global_262145.f_4152 /* Tunable: EXPENSE_MODIFIER_PEARL_DECO_EARRINGS */ != -1)
 			{
-				iVar1 = Global_262145.f_4152;
+				iVar1 = Global_262145.f_4152 /* Tunable: EXPENSE_MODIFIER_PEARL_DECO_EARRINGS */;
 			}
 			else
 			{
@@ -86123,9 +86123,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 4:
 			iVar3 = 1;
 			iVar4 = 3;
-			if (Global_262145.f_4153 != -1)
+			if (Global_262145.f_4153 /* Tunable: EXPENSE_MODIFIER_COPPER_DECO_EARRINGS */ != -1)
 			{
-				iVar1 = Global_262145.f_4153;
+				iVar1 = Global_262145.f_4153 /* Tunable: EXPENSE_MODIFIER_COPPER_DECO_EARRINGS */;
 			}
 			else
 			{
@@ -86136,9 +86136,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 5:
 			iVar3 = 1;
 			iVar4 = 4;
-			if (Global_262145.f_4154 != -1)
+			if (Global_262145.f_4154 /* Tunable: EXPENSE_MODIFIER_TWO_TONE_DECO_EARRINGS */ != -1)
 			{
-				iVar1 = Global_262145.f_4154;
+				iVar1 = Global_262145.f_4154 /* Tunable: EXPENSE_MODIFIER_TWO_TONE_DECO_EARRINGS */;
 			}
 			else
 			{
@@ -86149,9 +86149,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 6:
 			iVar3 = 1;
 			iVar4 = 5;
-			if (Global_262145.f_4155 != -1)
+			if (Global_262145.f_4155 /* Tunable: EXPENSE_MODIFIER_SAPPHIRE_DECO_EARRINGS */ != -1)
 			{
-				iVar1 = Global_262145.f_4155;
+				iVar1 = Global_262145.f_4155 /* Tunable: EXPENSE_MODIFIER_SAPPHIRE_DECO_EARRINGS */;
 			}
 			else
 			{
@@ -86162,9 +86162,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 7:
 			iVar3 = 2;
 			iVar4 = 0;
-			if (Global_262145.f_4156 != -1)
+			if (Global_262145.f_4156 /* Tunable: EXPENSE_MODIFIER_GOLD_HOOP_EARRINGS */ != -1)
 			{
-				iVar1 = Global_262145.f_4156;
+				iVar1 = Global_262145.f_4156 /* Tunable: EXPENSE_MODIFIER_GOLD_HOOP_EARRINGS */;
 			}
 			else
 			{
@@ -86175,9 +86175,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 8:
 			iVar3 = 2;
 			iVar4 = 1;
-			if (Global_262145.f_4157 != -1)
+			if (Global_262145.f_4157 /* Tunable: EXPENSE_MODIFIER_SILVER_HOOP_EARRINGS */ != -1)
 			{
-				iVar1 = Global_262145.f_4157;
+				iVar1 = Global_262145.f_4157 /* Tunable: EXPENSE_MODIFIER_SILVER_HOOP_EARRINGS */;
 			}
 			else
 			{
@@ -86188,9 +86188,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 9:
 			iVar3 = 2;
 			iVar4 = 2;
-			if (Global_262145.f_4158 != -1)
+			if (Global_262145.f_4158 /* Tunable: EXPENSE_MODIFIER_PINK_HOOP_EARRINGS */ != -1)
 			{
-				iVar1 = Global_262145.f_4158;
+				iVar1 = Global_262145.f_4158 /* Tunable: EXPENSE_MODIFIER_PINK_HOOP_EARRINGS */;
 			}
 			else
 			{
@@ -86201,9 +86201,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 10:
 			iVar3 = 2;
 			iVar4 = 3;
-			if (Global_262145.f_4159 != -1)
+			if (Global_262145.f_4159 /* Tunable: EXPENSE_MODIFIER_COPPER_HOOP_EARRINGS */ != -1)
 			{
-				iVar1 = Global_262145.f_4159;
+				iVar1 = Global_262145.f_4159 /* Tunable: EXPENSE_MODIFIER_COPPER_HOOP_EARRINGS */;
 			}
 			else
 			{
@@ -86214,9 +86214,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 11:
 			iVar3 = 2;
 			iVar4 = 4;
-			if (Global_262145.f_4160 != -1)
+			if (Global_262145.f_4160 /* Tunable: EXPENSE_MODIFIER_PURPLE_HOOP_EARRINGS */ != -1)
 			{
-				iVar1 = Global_262145.f_4160;
+				iVar1 = Global_262145.f_4160 /* Tunable: EXPENSE_MODIFIER_PURPLE_HOOP_EARRINGS */;
 			}
 			else
 			{
@@ -86227,9 +86227,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 12:
 			iVar3 = 2;
 			iVar4 = 5;
-			if (Global_262145.f_4161 != -1)
+			if (Global_262145.f_4161 /* Tunable: EXPENSE_MODIFIER_WHITE_HOOP_EARRINGS */ != -1)
 			{
-				iVar1 = Global_262145.f_4161;
+				iVar1 = Global_262145.f_4161 /* Tunable: EXPENSE_MODIFIER_WHITE_HOOP_EARRINGS */;
 			}
 			else
 			{
@@ -86240,9 +86240,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 13:
 			iVar3 = 3;
 			iVar4 = 0;
-			if (Global_262145.f_4162 != -1)
+			if (Global_262145.f_4162 /* Tunable: EXPENSE_MODIFIER_HARSH_SOULS_SWEATBAND */ != -1)
 			{
-				iVar1 = Global_262145.f_4162;
+				iVar1 = Global_262145.f_4162 /* Tunable: EXPENSE_MODIFIER_HARSH_SOULS_SWEATBAND */;
 			}
 			else
 			{
@@ -86253,9 +86253,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 14:
 			iVar3 = 3;
 			iVar4 = 1;
-			if (Global_262145.f_4163 != -1)
+			if (Global_262145.f_4163 /* Tunable: EXPENSE_MODIFIER_PROLAPS_SWEATBAND */ != -1)
 			{
-				iVar1 = Global_262145.f_4163;
+				iVar1 = Global_262145.f_4163 /* Tunable: EXPENSE_MODIFIER_PROLAPS_SWEATBAND */;
 			}
 			else
 			{
@@ -86266,9 +86266,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 15:
 			iVar3 = 3;
 			iVar4 = 2;
-			if (Global_262145.f_4164 != -1)
+			if (Global_262145.f_4164 /* Tunable: EXPENSE_MODIFIER_LC_SWEATBAND */ != -1)
 			{
-				iVar1 = Global_262145.f_4164;
+				iVar1 = Global_262145.f_4164 /* Tunable: EXPENSE_MODIFIER_LC_SWEATBAND */;
 			}
 			else
 			{
@@ -86279,9 +86279,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 16:
 			iVar3 = 3;
 			iVar4 = 3;
-			if (Global_262145.f_4165 != -1)
+			if (Global_262145.f_4165 /* Tunable: EXPENSE_MODIFIER_AQUA_STRIPED_SWEATBAND */ != -1)
 			{
-				iVar1 = Global_262145.f_4165;
+				iVar1 = Global_262145.f_4165 /* Tunable: EXPENSE_MODIFIER_AQUA_STRIPED_SWEATBAND */;
 			}
 			else
 			{
@@ -86292,9 +86292,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 17:
 			iVar3 = 3;
 			iVar4 = 4;
-			if (Global_262145.f_4166 != -1)
+			if (Global_262145.f_4166 /* Tunable: EXPENSE_MODIFIER_PINK_CHECK_SWEATBAND */ != -1)
 			{
-				iVar1 = Global_262145.f_4166;
+				iVar1 = Global_262145.f_4166 /* Tunable: EXPENSE_MODIFIER_PINK_CHECK_SWEATBAND */;
 			}
 			else
 			{
@@ -86305,9 +86305,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 18:
 			iVar3 = 3;
 			iVar4 = 5;
-			if (Global_262145.f_4167 != -1)
+			if (Global_262145.f_4167 /* Tunable: EXPENSE_MODIFIER_SQUEEZERS_SWEATBAND */ != -1)
 			{
-				iVar1 = Global_262145.f_4167;
+				iVar1 = Global_262145.f_4167 /* Tunable: EXPENSE_MODIFIER_SQUEEZERS_SWEATBAND */;
 			}
 			else
 			{
@@ -86332,9 +86332,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 21:
 			iVar3 = 4;
 			iVar4 = 2;
-			if (Global_262145.f_4168 != -1)
+			if (Global_262145.f_4168 /* Tunable: EXPENSE_MODIFIER_SILVER_BANGLES */ != -1)
 			{
-				iVar1 = Global_262145.f_4168;
+				iVar1 = Global_262145.f_4168 /* Tunable: EXPENSE_MODIFIER_SILVER_BANGLES */;
 			}
 			else
 			{
@@ -86345,9 +86345,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 22:
 			iVar3 = 4;
 			iVar4 = 3;
-			if (Global_262145.f_4169 != -1)
+			if (Global_262145.f_4169 /* Tunable: EXPENSE_MODIFIER_GOLD_BANGLES */ != -1)
 			{
-				iVar1 = Global_262145.f_4169;
+				iVar1 = Global_262145.f_4169 /* Tunable: EXPENSE_MODIFIER_GOLD_BANGLES */;
 			}
 			else
 			{
@@ -86400,9 +86400,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 29:
 			iVar3 = 5;
 			iVar4 = 4;
-			if (Global_262145.f_4170 != -1)
+			if (Global_262145.f_4170 /* Tunable: EXPENSE_MODIFIER_WHITE_LEATHER_STRAPS */ != -1)
 			{
-				iVar1 = Global_262145.f_4170;
+				iVar1 = Global_262145.f_4170 /* Tunable: EXPENSE_MODIFIER_WHITE_LEATHER_STRAPS */;
 			}
 			else
 			{
@@ -86413,9 +86413,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 30:
 			iVar3 = 5;
 			iVar4 = 5;
-			if (Global_262145.f_4171 != -1)
+			if (Global_262145.f_4171 /* Tunable: EXPENSE_MODIFIER_RAINBOW_LEATHER_STRAPS */ != -1)
 			{
-				iVar1 = Global_262145.f_4171;
+				iVar1 = Global_262145.f_4171 /* Tunable: EXPENSE_MODIFIER_RAINBOW_LEATHER_STRAPS */;
 			}
 			else
 			{
@@ -86426,9 +86426,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 31:
 			iVar3 = 6;
 			iVar4 = 0;
-			if (Global_262145.f_4172 != -1)
+			if (Global_262145.f_4172 /* Tunable: EXPENSE_MODIFIER_ONYX_PENDANT */ != -1)
 			{
-				iVar1 = Global_262145.f_4172;
+				iVar1 = Global_262145.f_4172 /* Tunable: EXPENSE_MODIFIER_ONYX_PENDANT */;
 			}
 			else
 			{
@@ -86439,9 +86439,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 32:
 			iVar3 = 6;
 			iVar4 = 1;
-			if (Global_262145.f_4173 != -1)
+			if (Global_262145.f_4173 /* Tunable: EXPENSE_MODIFIER_PEARL_PENDANT */ != -1)
 			{
-				iVar1 = Global_262145.f_4173;
+				iVar1 = Global_262145.f_4173 /* Tunable: EXPENSE_MODIFIER_PEARL_PENDANT */;
 			}
 			else
 			{
@@ -86452,9 +86452,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 33:
 			iVar3 = 6;
 			iVar4 = 2;
-			if (Global_262145.f_4174 != -1)
+			if (Global_262145.f_4174 /* Tunable: EXPENSE_MODIFIER_JADE_PENDANT */ != -1)
 			{
-				iVar1 = Global_262145.f_4174;
+				iVar1 = Global_262145.f_4174 /* Tunable: EXPENSE_MODIFIER_JADE_PENDANT */;
 			}
 			else
 			{
@@ -86465,9 +86465,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 34:
 			iVar3 = 6;
 			iVar4 = 3;
-			if (Global_262145.f_4175 != -1)
+			if (Global_262145.f_4175 /* Tunable: EXPENSE_MODIFIER_CARNELIAN_PENDANT */ != -1)
 			{
-				iVar1 = Global_262145.f_4175;
+				iVar1 = Global_262145.f_4175 /* Tunable: EXPENSE_MODIFIER_CARNELIAN_PENDANT */;
 			}
 			else
 			{
@@ -86478,9 +86478,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 35:
 			iVar3 = 6;
 			iVar4 = 4;
-			if (Global_262145.f_4176 != -1)
+			if (Global_262145.f_4176 /* Tunable: EXPENSE_MODIFIER_AQUAMARINE_PENDANT */ != -1)
 			{
-				iVar1 = Global_262145.f_4176;
+				iVar1 = Global_262145.f_4176 /* Tunable: EXPENSE_MODIFIER_AQUAMARINE_PENDANT */;
 			}
 			else
 			{
@@ -86491,9 +86491,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 36:
 			iVar3 = 6;
 			iVar4 = 5;
-			if (Global_262145.f_4177 != -1)
+			if (Global_262145.f_4177 /* Tunable: EXPENSE_MODIFIER_AMETHYST_PENDANT */ != -1)
 			{
-				iVar1 = Global_262145.f_4177;
+				iVar1 = Global_262145.f_4177 /* Tunable: EXPENSE_MODIFIER_AMETHYST_PENDANT */;
 			}
 			else
 			{
@@ -86504,9 +86504,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 37:
 			iVar3 = 7;
 			iVar4 = 0;
-			if (Global_262145.f_4178 != -1)
+			if (Global_262145.f_4178 /* Tunable: EXPENSE_MODIFIER_GOLD_NECKLACE */ != -1)
 			{
-				iVar1 = Global_262145.f_4178;
+				iVar1 = Global_262145.f_4178 /* Tunable: EXPENSE_MODIFIER_GOLD_NECKLACE */;
 			}
 			else
 			{
@@ -86517,9 +86517,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 38:
 			iVar3 = 7;
 			iVar4 = 1;
-			if (Global_262145.f_4179 != -1)
+			if (Global_262145.f_4179 /* Tunable: EXPENSE_MODIFIER_SILVER_NECKLACE */ != -1)
 			{
-				iVar1 = Global_262145.f_4179;
+				iVar1 = Global_262145.f_4179 /* Tunable: EXPENSE_MODIFIER_SILVER_NECKLACE */;
 			}
 			else
 			{
@@ -86600,9 +86600,9 @@ void func_612(int iParam0, int iParam1)//Position - 0x6A270
 		case 49:
 			iVar3 = 9;
 			iVar4 = 0;
-			if (Global_262145.f_4180 != -1)
+			if (Global_262145.f_4180 /* Tunable: EXPENSE_MODIFIER_SCARF */ != -1)
 			{
-				iVar1 = Global_262145.f_4180;
+				iVar1 = Global_262145.f_4180 /* Tunable: EXPENSE_MODIFIER_SCARF */;
 			}
 			else
 			{
@@ -91590,7 +91590,7 @@ void func_618(int iParam0, int iParam1)//Position - 0x6DD92
 		if (func_189(89, -1))
 		{
 			StringCopy(&Var2, "REW_RS" /* GXT: Rockstar V Neck */, 16);
-			iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(1250) * Global_262145.f_2989));
+			iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(1250) * Global_262145.f_2989 /* Tunable: TSHIRT_TRANS_MP_FM_ROCKSTAR_EXPENDITURE_TUNABLE */));
 		}
 		else
 		{
@@ -91600,14 +91600,14 @@ void func_618(int iParam0, int iParam1)//Position - 0x6DD92
 	else if (iParam0 == 7 || iParam0 == 23)
 	{
 		StringCopy(&Var2, "REW_LSB" /* GXT: Los Santos Belle V Neck */, 16);
-		iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(450) * Global_262145.f_2988));
+		iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(450) * Global_262145.f_2988 /* Tunable: TSHIRT_TRANS_MP_FM_LSBELLE_EXPENDITURE_TUNABLE */));
 	}
 	else if (iParam0 == 9 || iParam0 == 25)
 	{
 		if (func_189(87, -1))
 		{
 			StringCopy(&Var2, "REW_REDSK" /* GXT: Red Skull V Neck */, 16);
-			iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(500) * Global_262145.f_2987));
+			iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(500) * Global_262145.f_2987 /* Tunable: TSHIRT_TRANS_MP_FM_REDSKULL_EXPENDITURE_TUNABLE */));
 		}
 		else
 		{
@@ -93349,7 +93349,7 @@ void func_619(int iParam0, int iParam1)//Position - 0x6F134
 		if (func_189(89, -1))
 		{
 			StringCopy(&Var2, "REW_RS" /* GXT: Rockstar V Neck */, 16);
-			iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(1250) * Global_262145.f_2989) * Global_295754.f_24));
+			iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(1250) * Global_262145.f_2989 /* Tunable: TSHIRT_TRANS_MP_FM_ROCKSTAR_EXPENDITURE_TUNABLE */) * Global_295754.f_24));
 		}
 		else
 		{
@@ -93359,14 +93359,14 @@ void func_619(int iParam0, int iParam1)//Position - 0x6F134
 	else if (iParam0 == 7)
 	{
 		StringCopy(&Var2, "REW_LSB" /* GXT: Los Santos Belle V Neck */, 16);
-		iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(450) * Global_262145.f_2988) * Global_295754.f_24));
+		iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(450) * Global_262145.f_2988 /* Tunable: TSHIRT_TRANS_MP_FM_LSBELLE_EXPENDITURE_TUNABLE */) * Global_295754.f_24));
 	}
 	else if (iParam0 == 9)
 	{
 		if (func_189(87, -1))
 		{
 			StringCopy(&Var2, "REW_REDSK" /* GXT: Red Skull V Neck */, 16);
-			iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(500) * Global_262145.f_2987) * Global_295754.f_24));
+			iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(500) * Global_262145.f_2987 /* Tunable: TSHIRT_TRANS_MP_FM_REDSKULL_EXPENDITURE_TUNABLE */) * Global_295754.f_24));
 		}
 		else
 		{
@@ -98020,9 +98020,9 @@ void func_628(int iParam0, int iParam1)//Position - 0x74CF8
 		case 41:
 			iVar3 = 10;
 			iVar4 = 0;
-			if (Global_262145.f_4181 != -1)
+			if (Global_262145.f_4181 /* Tunable: EXPENSE_MODIFIER_WHITE_TIE */ != -1)
 			{
-				iVar1 = Global_262145.f_4181;
+				iVar1 = Global_262145.f_4181 /* Tunable: EXPENSE_MODIFIER_WHITE_TIE */;
 			}
 			else
 			{
@@ -98033,9 +98033,9 @@ void func_628(int iParam0, int iParam1)//Position - 0x74CF8
 		case 42:
 			iVar3 = 10;
 			iVar4 = 1;
-			if (Global_262145.f_4182 != -1)
+			if (Global_262145.f_4182 /* Tunable: EXPENSE_MODIFIER_GRAY_TIE */ != -1)
 			{
-				iVar1 = Global_262145.f_4182;
+				iVar1 = Global_262145.f_4182 /* Tunable: EXPENSE_MODIFIER_GRAY_TIE */;
 			}
 			else
 			{
@@ -98046,9 +98046,9 @@ void func_628(int iParam0, int iParam1)//Position - 0x74CF8
 		case 43:
 			iVar3 = 10;
 			iVar4 = 2;
-			if (Global_262145.f_4183 != -1)
+			if (Global_262145.f_4183 /* Tunable: EXPENSE_MODIFIER_BLACK_TIE */ != -1)
 			{
-				iVar1 = Global_262145.f_4183;
+				iVar1 = Global_262145.f_4183 /* Tunable: EXPENSE_MODIFIER_BLACK_TIE */;
 			}
 			else
 			{
@@ -98164,9 +98164,9 @@ void func_628(int iParam0, int iParam1)//Position - 0x74CF8
 		case 59:
 			iVar3 = 11;
 			iVar4 = 2;
-			if (Global_262145.f_4187 != -1)
+			if (Global_262145.f_4187 /* Tunable: EXPENSE_MODIFIER_BLACK_BOWTIE */ != -1)
 			{
-				iVar1 = Global_262145.f_4187;
+				iVar1 = Global_262145.f_4187 /* Tunable: EXPENSE_MODIFIER_BLACK_BOWTIE */;
 			}
 			else
 			{
@@ -98268,9 +98268,9 @@ void func_628(int iParam0, int iParam1)//Position - 0x74CF8
 		case 73:
 			iVar3 = 12;
 			iVar4 = 0;
-			if (Global_262145.f_4184 != -1)
+			if (Global_262145.f_4184 /* Tunable: EXPENSE_MODIFIER_WHITE_SKINNY_TIE */ != -1)
 			{
-				iVar1 = Global_262145.f_4184;
+				iVar1 = Global_262145.f_4184 /* Tunable: EXPENSE_MODIFIER_WHITE_SKINNY_TIE */;
 			}
 			else
 			{
@@ -98281,9 +98281,9 @@ void func_628(int iParam0, int iParam1)//Position - 0x74CF8
 		case 74:
 			iVar3 = 12;
 			iVar4 = 1;
-			if (Global_262145.f_4185 != -1)
+			if (Global_262145.f_4185 /* Tunable: EXPENSE_MODIFIER_GRAY_SKINNY_TIE */ != -1)
 			{
-				iVar1 = Global_262145.f_4185;
+				iVar1 = Global_262145.f_4185 /* Tunable: EXPENSE_MODIFIER_GRAY_SKINNY_TIE */;
 			}
 			else
 			{
@@ -98294,9 +98294,9 @@ void func_628(int iParam0, int iParam1)//Position - 0x74CF8
 		case 75:
 			iVar3 = 12;
 			iVar4 = 2;
-			if (Global_262145.f_4186 != -1)
+			if (Global_262145.f_4186 /* Tunable: EXPENSE_MODIFIER_BLACK_SKINNY_TIE */ != -1)
 			{
-				iVar1 = Global_262145.f_4186;
+				iVar1 = Global_262145.f_4186 /* Tunable: EXPENSE_MODIFIER_BLACK_SKINNY_TIE */;
 			}
 			else
 			{
@@ -102770,9 +102770,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_3_0" /* GXT: Black Vest */, 16);
 			iVar3 = 3;
 			iVar4 = 0;
-			if (Global_262145.f_4190 != -1)
+			if (Global_262145.f_4190 /* Tunable: DISCOUNT_MALE_SPECIAL_BLACK_VEST */ != -1)
 			{
-				iVar1 = Global_262145.f_4190;
+				iVar1 = Global_262145.f_4190 /* Tunable: DISCOUNT_MALE_SPECIAL_BLACK_VEST */;
 			}
 			else
 			{
@@ -102784,9 +102784,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_3_1" /* GXT: Gray Vest */, 16);
 			iVar3 = 3;
 			iVar4 = 1;
-			if (Global_262145.f_4198 != -1)
+			if (Global_262145.f_4198 /* Tunable: DISCOUNT_MALE_SPECIAL_GRAY_VEST */ != -1)
 			{
-				iVar1 = Global_262145.f_4198;
+				iVar1 = Global_262145.f_4198 /* Tunable: DISCOUNT_MALE_SPECIAL_GRAY_VEST */;
 			}
 			else
 			{
@@ -102798,9 +102798,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_3_2" /* GXT: Blue Vest */, 16);
 			iVar3 = 3;
 			iVar4 = 2;
-			if (Global_262145.f_4193 != -1)
+			if (Global_262145.f_4193 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_VEST */ != -1)
 			{
-				iVar1 = Global_262145.f_4193;
+				iVar1 = Global_262145.f_4193 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_VEST */;
 			}
 			else
 			{
@@ -102905,9 +102905,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_3_0" /* GXT: Black Vest */, 16);
 			iVar3 = 4;
 			iVar4 = 0;
-			if (Global_262145.f_4190 != -1)
+			if (Global_262145.f_4190 /* Tunable: DISCOUNT_MALE_SPECIAL_BLACK_VEST */ != -1)
 			{
-				iVar1 = Global_262145.f_4190;
+				iVar1 = Global_262145.f_4190 /* Tunable: DISCOUNT_MALE_SPECIAL_BLACK_VEST */;
 			}
 			else
 			{
@@ -102919,9 +102919,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_3_1" /* GXT: Gray Vest */, 16);
 			iVar3 = 4;
 			iVar4 = 1;
-			if (Global_262145.f_4198 != -1)
+			if (Global_262145.f_4198 /* Tunable: DISCOUNT_MALE_SPECIAL_GRAY_VEST */ != -1)
 			{
-				iVar1 = Global_262145.f_4198;
+				iVar1 = Global_262145.f_4198 /* Tunable: DISCOUNT_MALE_SPECIAL_GRAY_VEST */;
 			}
 			else
 			{
@@ -102933,9 +102933,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_3_2" /* GXT: Blue Vest */, 16);
 			iVar3 = 4;
 			iVar4 = 2;
-			if (Global_262145.f_4193 != -1)
+			if (Global_262145.f_4193 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_VEST */ != -1)
 			{
-				iVar1 = Global_262145.f_4193;
+				iVar1 = Global_262145.f_4193 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_VEST */;
 			}
 			else
 			{
@@ -103156,9 +103156,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_0" /* GXT: White Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 0;
-			if (Global_262145.f_4211 != -1)
+			if (Global_262145.f_4211 /* Tunable: DISCOUNT_MALE_SPECIAL_WHITE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4211;
+				iVar1 = Global_262145.f_4211 /* Tunable: DISCOUNT_MALE_SPECIAL_WHITE_SHIRT */;
 			}
 			else
 			{
@@ -103170,9 +103170,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_1" /* GXT: Silver Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 1;
-			if (Global_262145.f_4209 != -1)
+			if (Global_262145.f_4209 /* Tunable: DISCOUNT_MALE_SPECIAL_SILVER_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4209;
+				iVar1 = Global_262145.f_4209 /* Tunable: DISCOUNT_MALE_SPECIAL_SILVER_SHIRT */;
 			}
 			else
 			{
@@ -103184,9 +103184,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_2" /* GXT: Charcoal Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 2;
-			if (Global_262145.f_4189 != -1)
+			if (Global_262145.f_4189 /* Tunable: DISCOUNT_MALE_SPECIAL_BLACK_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4189;
+				iVar1 = Global_262145.f_4189 /* Tunable: DISCOUNT_MALE_SPECIAL_BLACK_SHIRT */;
 			}
 			else
 			{
@@ -103198,9 +103198,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_3" /* GXT: Pale Blue Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 3;
-			if (Global_262145.f_4203 != -1)
+			if (Global_262145.f_4203 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_BLUE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4203;
+				iVar1 = Global_262145.f_4203 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_BLUE_SHIRT */;
 			}
 			else
 			{
@@ -103212,9 +103212,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_4" /* GXT: Barely Blue Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 4;
-			if (Global_262145.f_4188 != -1)
+			if (Global_262145.f_4188 /* Tunable: DISCOUNT_MALE_SPECIAL_BARELY_BLUE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4188;
+				iVar1 = Global_262145.f_4188 /* Tunable: DISCOUNT_MALE_SPECIAL_BARELY_BLUE_SHIRT */;
 			}
 			else
 			{
@@ -103226,9 +103226,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_5" /* GXT: Pink Check Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 5;
-			if (Global_262145.f_4205 != -1)
+			if (Global_262145.f_4205 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_CHECK_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4205;
+				iVar1 = Global_262145.f_4205 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_CHECK_SHIRT */;
 			}
 			else
 			{
@@ -103240,9 +103240,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_6" /* GXT: Salmon Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 6;
-			if (Global_262145.f_4208 != -1)
+			if (Global_262145.f_4208 /* Tunable: DISCOUNT_MALE_SPECIAL_SALMON_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4208;
+				iVar1 = Global_262145.f_4208 /* Tunable: DISCOUNT_MALE_SPECIAL_SALMON_SHIRT */;
 			}
 			else
 			{
@@ -103254,9 +103254,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_7" /* GXT: Pale Olive Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 7;
-			if (Global_262145.f_4204 != -1)
+			if (Global_262145.f_4204 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_OLIVE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4204;
+				iVar1 = Global_262145.f_4204 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_OLIVE_SHIRT */;
 			}
 			else
 			{
@@ -103268,9 +103268,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_8" /* GXT: Fuchsia Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 8;
-			if (Global_262145.f_4197 != -1)
+			if (Global_262145.f_4197 /* Tunable: DISCOUNT_MALE_SPECIAL_FUCHSIA_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4197;
+				iVar1 = Global_262145.f_4197 /* Tunable: DISCOUNT_MALE_SPECIAL_FUCHSIA_SHIRT */;
 			}
 			else
 			{
@@ -103282,9 +103282,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_9" /* GXT: Off-White Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 9;
-			if (Global_262145.f_4202 != -1)
+			if (Global_262145.f_4202 /* Tunable: DISCOUNT_MALE_SPECIAL_OFF_WHITE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4202;
+				iVar1 = Global_262145.f_4202 /* Tunable: DISCOUNT_MALE_SPECIAL_OFF_WHITE_SHIRT */;
 			}
 			else
 			{
@@ -103296,9 +103296,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_10" /* GXT: Mint Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 10;
-			if (Global_262145.f_4200 != -1)
+			if (Global_262145.f_4200 /* Tunable: DISCOUNT_MALE_SPECIAL_MINT_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4200;
+				iVar1 = Global_262145.f_4200 /* Tunable: DISCOUNT_MALE_SPECIAL_MINT_SHIRT */;
 			}
 			else
 			{
@@ -103310,9 +103310,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_11" /* GXT: Tan Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 11;
-			if (Global_262145.f_4210 != -1)
+			if (Global_262145.f_4210 /* Tunable: DISCOUNT_MALE_SPECIAL_TAN_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4210;
+				iVar1 = Global_262145.f_4210 /* Tunable: DISCOUNT_MALE_SPECIAL_TAN_SHIRT */;
 			}
 			else
 			{
@@ -103324,9 +103324,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_12" /* GXT: Dark Salmon Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 12;
-			if (Global_262145.f_4196 != -1)
+			if (Global_262145.f_4196 /* Tunable: DISCOUNT_MALE_SPECIAL_DARK_SALMON_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4196;
+				iVar1 = Global_262145.f_4196 /* Tunable: DISCOUNT_MALE_SPECIAL_DARK_SALMON_SHIRT */;
 			}
 			else
 			{
@@ -103338,9 +103338,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_13" /* GXT: Blue Check Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 13;
-			if (Global_262145.f_4191 != -1)
+			if (Global_262145.f_4191 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_CHECK_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4191;
+				iVar1 = Global_262145.f_4191 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_CHECK_SHIRT */;
 			}
 			else
 			{
@@ -103352,9 +103352,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_14" /* GXT: Pink Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 14;
-			if (Global_262145.f_4206 != -1)
+			if (Global_262145.f_4206 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4206;
+				iVar1 = Global_262145.f_4206 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_SHIRT */;
 			}
 			else
 			{
@@ -103366,9 +103366,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_15" /* GXT: Lemon Shirt */, 16);
 			iVar3 = 6;
 			iVar4 = 15;
-			if (Global_262145.f_4199 != -1)
+			if (Global_262145.f_4199 /* Tunable: DISCOUNT_MALE_SPECIAL_LEMON_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4199;
+				iVar1 = Global_262145.f_4199 /* Tunable: DISCOUNT_MALE_SPECIAL_LEMON_SHIRT */;
 			}
 			else
 			{
@@ -103380,9 +103380,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_0" /* GXT: White Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 0;
-			if (Global_262145.f_4211 != -1)
+			if (Global_262145.f_4211 /* Tunable: DISCOUNT_MALE_SPECIAL_WHITE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4211;
+				iVar1 = Global_262145.f_4211 /* Tunable: DISCOUNT_MALE_SPECIAL_WHITE_SHIRT */;
 			}
 			else
 			{
@@ -103394,9 +103394,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_1" /* GXT: Silver Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 1;
-			if (Global_262145.f_4209 != -1)
+			if (Global_262145.f_4209 /* Tunable: DISCOUNT_MALE_SPECIAL_SILVER_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4209;
+				iVar1 = Global_262145.f_4209 /* Tunable: DISCOUNT_MALE_SPECIAL_SILVER_SHIRT */;
 			}
 			else
 			{
@@ -103408,9 +103408,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_2" /* GXT: Charcoal Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 2;
-			if (Global_262145.f_4189 != -1)
+			if (Global_262145.f_4189 /* Tunable: DISCOUNT_MALE_SPECIAL_BLACK_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4189;
+				iVar1 = Global_262145.f_4189 /* Tunable: DISCOUNT_MALE_SPECIAL_BLACK_SHIRT */;
 			}
 			else
 			{
@@ -103422,9 +103422,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_3" /* GXT: Pale Blue Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 3;
-			if (Global_262145.f_4203 != -1)
+			if (Global_262145.f_4203 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_BLUE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4203;
+				iVar1 = Global_262145.f_4203 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_BLUE_SHIRT */;
 			}
 			else
 			{
@@ -103436,9 +103436,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_4" /* GXT: Barely Blue Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 4;
-			if (Global_262145.f_4188 != -1)
+			if (Global_262145.f_4188 /* Tunable: DISCOUNT_MALE_SPECIAL_BARELY_BLUE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4188;
+				iVar1 = Global_262145.f_4188 /* Tunable: DISCOUNT_MALE_SPECIAL_BARELY_BLUE_SHIRT */;
 			}
 			else
 			{
@@ -103450,9 +103450,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_5" /* GXT: Pink Check Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 5;
-			if (Global_262145.f_4205 != -1)
+			if (Global_262145.f_4205 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_CHECK_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4205;
+				iVar1 = Global_262145.f_4205 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_CHECK_SHIRT */;
 			}
 			else
 			{
@@ -103464,9 +103464,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_6" /* GXT: Salmon Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 6;
-			if (Global_262145.f_4208 != -1)
+			if (Global_262145.f_4208 /* Tunable: DISCOUNT_MALE_SPECIAL_SALMON_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4208;
+				iVar1 = Global_262145.f_4208 /* Tunable: DISCOUNT_MALE_SPECIAL_SALMON_SHIRT */;
 			}
 			else
 			{
@@ -103478,9 +103478,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_7" /* GXT: Pale Olive Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 7;
-			if (Global_262145.f_4204 != -1)
+			if (Global_262145.f_4204 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_OLIVE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4204;
+				iVar1 = Global_262145.f_4204 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_OLIVE_SHIRT */;
 			}
 			else
 			{
@@ -103492,9 +103492,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_8" /* GXT: Fuchsia Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 8;
-			if (Global_262145.f_4197 != -1)
+			if (Global_262145.f_4197 /* Tunable: DISCOUNT_MALE_SPECIAL_FUCHSIA_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4197;
+				iVar1 = Global_262145.f_4197 /* Tunable: DISCOUNT_MALE_SPECIAL_FUCHSIA_SHIRT */;
 			}
 			else
 			{
@@ -103506,9 +103506,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_9" /* GXT: Off-White Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 9;
-			if (Global_262145.f_4202 != -1)
+			if (Global_262145.f_4202 /* Tunable: DISCOUNT_MALE_SPECIAL_OFF_WHITE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4202;
+				iVar1 = Global_262145.f_4202 /* Tunable: DISCOUNT_MALE_SPECIAL_OFF_WHITE_SHIRT */;
 			}
 			else
 			{
@@ -103520,9 +103520,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_10" /* GXT: Mint Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 10;
-			if (Global_262145.f_4200 != -1)
+			if (Global_262145.f_4200 /* Tunable: DISCOUNT_MALE_SPECIAL_MINT_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4200;
+				iVar1 = Global_262145.f_4200 /* Tunable: DISCOUNT_MALE_SPECIAL_MINT_SHIRT */;
 			}
 			else
 			{
@@ -103534,9 +103534,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_11" /* GXT: Tan Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 11;
-			if (Global_262145.f_4210 != -1)
+			if (Global_262145.f_4210 /* Tunable: DISCOUNT_MALE_SPECIAL_TAN_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4210;
+				iVar1 = Global_262145.f_4210 /* Tunable: DISCOUNT_MALE_SPECIAL_TAN_SHIRT */;
 			}
 			else
 			{
@@ -103548,9 +103548,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_12" /* GXT: Dark Salmon Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 12;
-			if (Global_262145.f_4196 != -1)
+			if (Global_262145.f_4196 /* Tunable: DISCOUNT_MALE_SPECIAL_DARK_SALMON_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4196;
+				iVar1 = Global_262145.f_4196 /* Tunable: DISCOUNT_MALE_SPECIAL_DARK_SALMON_SHIRT */;
 			}
 			else
 			{
@@ -103562,9 +103562,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_13" /* GXT: Blue Check Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 13;
-			if (Global_262145.f_4191 != -1)
+			if (Global_262145.f_4191 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_CHECK_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4191;
+				iVar1 = Global_262145.f_4191 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_CHECK_SHIRT */;
 			}
 			else
 			{
@@ -103576,9 +103576,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_14" /* GXT: Pink Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 14;
-			if (Global_262145.f_4206 != -1)
+			if (Global_262145.f_4206 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4206;
+				iVar1 = Global_262145.f_4206 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_SHIRT */;
 			}
 			else
 			{
@@ -103590,9 +103590,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_6_15" /* GXT: Lemon Shirt */, 16);
 			iVar3 = 7;
 			iVar4 = 15;
-			if (Global_262145.f_4199 != -1)
+			if (Global_262145.f_4199 /* Tunable: DISCOUNT_MALE_SPECIAL_LEMON_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4199;
+				iVar1 = Global_262145.f_4199 /* Tunable: DISCOUNT_MALE_SPECIAL_LEMON_SHIRT */;
 			}
 			else
 			{
@@ -103832,9 +103832,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_0" /* GXT: White Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 0;
-			if (Global_262145.f_4211 != -1)
+			if (Global_262145.f_4211 /* Tunable: DISCOUNT_MALE_SPECIAL_WHITE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4211;
+				iVar1 = Global_262145.f_4211 /* Tunable: DISCOUNT_MALE_SPECIAL_WHITE_SHIRT */;
 			}
 			else
 			{
@@ -103846,9 +103846,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_1" /* GXT: Silver Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 1;
-			if (Global_262145.f_4209 != -1)
+			if (Global_262145.f_4209 /* Tunable: DISCOUNT_MALE_SPECIAL_SILVER_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4209;
+				iVar1 = Global_262145.f_4209 /* Tunable: DISCOUNT_MALE_SPECIAL_SILVER_SHIRT */;
 			}
 			else
 			{
@@ -103860,9 +103860,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_2" /* GXT: Charcoal Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 2;
-			if (Global_262145.f_4195 != -1)
+			if (Global_262145.f_4195 /* Tunable: DISCOUNT_MALE_SPECIAL_CHARCOAL_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4195;
+				iVar1 = Global_262145.f_4195 /* Tunable: DISCOUNT_MALE_SPECIAL_CHARCOAL_SHIRT */;
 			}
 			else
 			{
@@ -103874,9 +103874,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_3" /* GXT: Pale Blue Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 3;
-			if (Global_262145.f_4203 != -1)
+			if (Global_262145.f_4203 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_BLUE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4203;
+				iVar1 = Global_262145.f_4203 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_BLUE_SHIRT */;
 			}
 			else
 			{
@@ -103888,9 +103888,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_4" /* GXT: Barely Blue Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 4;
-			if (Global_262145.f_4188 != -1)
+			if (Global_262145.f_4188 /* Tunable: DISCOUNT_MALE_SPECIAL_BARELY_BLUE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4188;
+				iVar1 = Global_262145.f_4188 /* Tunable: DISCOUNT_MALE_SPECIAL_BARELY_BLUE_SHIRT */;
 			}
 			else
 			{
@@ -103902,9 +103902,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_5" /* GXT: Pink Check Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 5;
-			if (Global_262145.f_4205 != -1)
+			if (Global_262145.f_4205 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_CHECK_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4205;
+				iVar1 = Global_262145.f_4205 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_CHECK_SHIRT */;
 			}
 			else
 			{
@@ -103916,9 +103916,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_6" /* GXT: Blue Woven Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 6;
-			if (Global_262145.f_4194 != -1)
+			if (Global_262145.f_4194 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_WOVEN_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4194;
+				iVar1 = Global_262145.f_4194 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_WOVEN_SHIRT */;
 			}
 			else
 			{
@@ -103930,9 +103930,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_7" /* GXT: Salmon Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 7;
-			if (Global_262145.f_4208 != -1)
+			if (Global_262145.f_4208 /* Tunable: DISCOUNT_MALE_SPECIAL_SALMON_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4208;
+				iVar1 = Global_262145.f_4208 /* Tunable: DISCOUNT_MALE_SPECIAL_SALMON_SHIRT */;
 			}
 			else
 			{
@@ -103944,9 +103944,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_8" /* GXT: Pale Olive Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 8;
-			if (Global_262145.f_4204 != -1)
+			if (Global_262145.f_4204 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_OLIVE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4204;
+				iVar1 = Global_262145.f_4204 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_OLIVE_SHIRT */;
 			}
 			else
 			{
@@ -103958,9 +103958,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_9" /* GXT: Fuchsia Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 9;
-			if (Global_262145.f_4197 != -1)
+			if (Global_262145.f_4197 /* Tunable: DISCOUNT_MALE_SPECIAL_FUCHSIA_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4197;
+				iVar1 = Global_262145.f_4197 /* Tunable: DISCOUNT_MALE_SPECIAL_FUCHSIA_SHIRT */;
 			}
 			else
 			{
@@ -103972,9 +103972,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_10" /* GXT: Off-White Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 10;
-			if (Global_262145.f_4202 != -1)
+			if (Global_262145.f_4202 /* Tunable: DISCOUNT_MALE_SPECIAL_OFF_WHITE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4202;
+				iVar1 = Global_262145.f_4202 /* Tunable: DISCOUNT_MALE_SPECIAL_OFF_WHITE_SHIRT */;
 			}
 			else
 			{
@@ -103986,9 +103986,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_11" /* GXT: Mint Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 11;
-			if (Global_262145.f_4200 != -1)
+			if (Global_262145.f_4200 /* Tunable: DISCOUNT_MALE_SPECIAL_MINT_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4200;
+				iVar1 = Global_262145.f_4200 /* Tunable: DISCOUNT_MALE_SPECIAL_MINT_SHIRT */;
 			}
 			else
 			{
@@ -104000,9 +104000,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_12" /* GXT: Blue Striped Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 12;
-			if (Global_262145.f_4192 != -1)
+			if (Global_262145.f_4192 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_STRIPED_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4192;
+				iVar1 = Global_262145.f_4192 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_STRIPED_SHIRT */;
 			}
 			else
 			{
@@ -104014,9 +104014,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_13" /* GXT: Pink Striped Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 13;
-			if (Global_262145.f_4207 != -1)
+			if (Global_262145.f_4207 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_STRIPED_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4207;
+				iVar1 = Global_262145.f_4207 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_STRIPED_SHIRT */;
 			}
 			else
 			{
@@ -104028,9 +104028,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_14" /* GXT: Tan Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 14;
-			if (Global_262145.f_4210 != -1)
+			if (Global_262145.f_4210 /* Tunable: DISCOUNT_MALE_SPECIAL_TAN_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4210;
+				iVar1 = Global_262145.f_4210 /* Tunable: DISCOUNT_MALE_SPECIAL_TAN_SHIRT */;
 			}
 			else
 			{
@@ -104042,9 +104042,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_15" /* GXT: Ocean Stripe Shirt */, 16);
 			iVar3 = 10;
 			iVar4 = 15;
-			if (Global_262145.f_4201 != -1)
+			if (Global_262145.f_4201 /* Tunable: DISCOUNT_MALE_SPECIAL_OCEAN_STRIPE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4201;
+				iVar1 = Global_262145.f_4201 /* Tunable: DISCOUNT_MALE_SPECIAL_OCEAN_STRIPE_SHIRT */;
 			}
 			else
 			{
@@ -104056,9 +104056,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_0" /* GXT: White Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 0;
-			if (Global_262145.f_4211 != -1)
+			if (Global_262145.f_4211 /* Tunable: DISCOUNT_MALE_SPECIAL_WHITE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4211;
+				iVar1 = Global_262145.f_4211 /* Tunable: DISCOUNT_MALE_SPECIAL_WHITE_SHIRT */;
 			}
 			else
 			{
@@ -104070,9 +104070,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_1" /* GXT: Silver Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 1;
-			if (Global_262145.f_4209 != -1)
+			if (Global_262145.f_4209 /* Tunable: DISCOUNT_MALE_SPECIAL_SILVER_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4209;
+				iVar1 = Global_262145.f_4209 /* Tunable: DISCOUNT_MALE_SPECIAL_SILVER_SHIRT */;
 			}
 			else
 			{
@@ -104084,9 +104084,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_2" /* GXT: Charcoal Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 2;
-			if (Global_262145.f_4195 != -1)
+			if (Global_262145.f_4195 /* Tunable: DISCOUNT_MALE_SPECIAL_CHARCOAL_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4195;
+				iVar1 = Global_262145.f_4195 /* Tunable: DISCOUNT_MALE_SPECIAL_CHARCOAL_SHIRT */;
 			}
 			else
 			{
@@ -104098,9 +104098,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_3" /* GXT: Pale Blue Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 3;
-			if (Global_262145.f_4203 != -1)
+			if (Global_262145.f_4203 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_BLUE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4203;
+				iVar1 = Global_262145.f_4203 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_BLUE_SHIRT */;
 			}
 			else
 			{
@@ -104112,9 +104112,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_4" /* GXT: Barely Blue Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 4;
-			if (Global_262145.f_4188 != -1)
+			if (Global_262145.f_4188 /* Tunable: DISCOUNT_MALE_SPECIAL_BARELY_BLUE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4188;
+				iVar1 = Global_262145.f_4188 /* Tunable: DISCOUNT_MALE_SPECIAL_BARELY_BLUE_SHIRT */;
 			}
 			else
 			{
@@ -104126,9 +104126,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_5" /* GXT: Pink Check Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 5;
-			if (Global_262145.f_4205 != -1)
+			if (Global_262145.f_4205 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_CHECK_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4205;
+				iVar1 = Global_262145.f_4205 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_CHECK_SHIRT */;
 			}
 			else
 			{
@@ -104140,9 +104140,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_6" /* GXT: Blue Woven Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 6;
-			if (Global_262145.f_4194 != -1)
+			if (Global_262145.f_4194 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_WOVEN_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4194;
+				iVar1 = Global_262145.f_4194 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_WOVEN_SHIRT */;
 			}
 			else
 			{
@@ -104154,9 +104154,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_7" /* GXT: Salmon Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 7;
-			if (Global_262145.f_4208 != -1)
+			if (Global_262145.f_4208 /* Tunable: DISCOUNT_MALE_SPECIAL_SALMON_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4208;
+				iVar1 = Global_262145.f_4208 /* Tunable: DISCOUNT_MALE_SPECIAL_SALMON_SHIRT */;
 			}
 			else
 			{
@@ -104168,9 +104168,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_8" /* GXT: Pale Olive Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 8;
-			if (Global_262145.f_4204 != -1)
+			if (Global_262145.f_4204 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_OLIVE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4204;
+				iVar1 = Global_262145.f_4204 /* Tunable: DISCOUNT_MALE_SPECIAL_PALE_OLIVE_SHIRT */;
 			}
 			else
 			{
@@ -104182,9 +104182,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_9" /* GXT: Fuchsia Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 9;
-			if (Global_262145.f_4197 != -1)
+			if (Global_262145.f_4197 /* Tunable: DISCOUNT_MALE_SPECIAL_FUCHSIA_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4197;
+				iVar1 = Global_262145.f_4197 /* Tunable: DISCOUNT_MALE_SPECIAL_FUCHSIA_SHIRT */;
 			}
 			else
 			{
@@ -104196,9 +104196,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_10" /* GXT: Off-White Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 10;
-			if (Global_262145.f_4202 != -1)
+			if (Global_262145.f_4202 /* Tunable: DISCOUNT_MALE_SPECIAL_OFF_WHITE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4202;
+				iVar1 = Global_262145.f_4202 /* Tunable: DISCOUNT_MALE_SPECIAL_OFF_WHITE_SHIRT */;
 			}
 			else
 			{
@@ -104210,9 +104210,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_11" /* GXT: Mint Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 11;
-			if (Global_262145.f_4200 != -1)
+			if (Global_262145.f_4200 /* Tunable: DISCOUNT_MALE_SPECIAL_MINT_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4200;
+				iVar1 = Global_262145.f_4200 /* Tunable: DISCOUNT_MALE_SPECIAL_MINT_SHIRT */;
 			}
 			else
 			{
@@ -104224,9 +104224,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_12" /* GXT: Blue Striped Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 12;
-			if (Global_262145.f_4192 != -1)
+			if (Global_262145.f_4192 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_STRIPED_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4192;
+				iVar1 = Global_262145.f_4192 /* Tunable: DISCOUNT_MALE_SPECIAL_BLUE_STRIPED_SHIRT */;
 			}
 			else
 			{
@@ -104238,9 +104238,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_13" /* GXT: Pink Striped Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 13;
-			if (Global_262145.f_4207 != -1)
+			if (Global_262145.f_4207 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_STRIPED_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4207;
+				iVar1 = Global_262145.f_4207 /* Tunable: DISCOUNT_MALE_SPECIAL_PINK_STRIPED_SHIRT */;
 			}
 			else
 			{
@@ -104252,9 +104252,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_14" /* GXT: Tan Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 14;
-			if (Global_262145.f_4210 != -1)
+			if (Global_262145.f_4210 /* Tunable: DISCOUNT_MALE_SPECIAL_TAN_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4210;
+				iVar1 = Global_262145.f_4210 /* Tunable: DISCOUNT_MALE_SPECIAL_TAN_SHIRT */;
 			}
 			else
 			{
@@ -104266,9 +104266,9 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 			StringCopy(&Var2, "SP_FMM_10_15" /* GXT: Ocean Stripe Shirt */, 16);
 			iVar3 = 11;
 			iVar4 = 15;
-			if (Global_262145.f_4201 != -1)
+			if (Global_262145.f_4201 /* Tunable: DISCOUNT_MALE_SPECIAL_OCEAN_STRIPE_SHIRT */ != -1)
 			{
-				iVar1 = Global_262145.f_4201;
+				iVar1 = Global_262145.f_4201 /* Tunable: DISCOUNT_MALE_SPECIAL_OCEAN_STRIPE_SHIRT */;
 			}
 			else
 			{
@@ -104640,7 +104640,7 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 		if (func_189(89, -1))
 		{
 			StringCopy(&Var2, "REW_RS" /* GXT: Rockstar V Neck */, 16);
-			iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(1250) * Global_262145.f_2989));
+			iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(1250) * Global_262145.f_2989 /* Tunable: TSHIRT_TRANS_MP_FM_ROCKSTAR_EXPENDITURE_TUNABLE */));
 		}
 		else
 		{
@@ -104650,14 +104650,14 @@ void func_634(int iParam0, int iParam1)//Position - 0x7898C
 	else if (iParam0 == 17 || iParam0 == 225)
 	{
 		StringCopy(&Var2, "REW_LSB" /* GXT: Los Santos Belle V Neck */, 16);
-		iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(450) * Global_262145.f_2988));
+		iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(450) * Global_262145.f_2988 /* Tunable: TSHIRT_TRANS_MP_FM_LSBELLE_EXPENDITURE_TUNABLE */));
 	}
 	else if (iParam0 == 28 || iParam0 == 236)
 	{
 		if (func_189(87, -1))
 		{
 			StringCopy(&Var2, "REW_REDSK" /* GXT: Red Skull V Neck */, 16);
-			iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(500) * Global_262145.f_2987));
+			iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(500) * Global_262145.f_2987 /* Tunable: TSHIRT_TRANS_MP_FM_REDSKULL_EXPENDITURE_TUNABLE */));
 		}
 		else
 		{
@@ -106283,7 +106283,7 @@ void func_635(int iParam0, int iParam1)//Position - 0x7AE7D
 		if (func_189(89, -1))
 		{
 			StringCopy(&Var2, "REW_RS" /* GXT: Rockstar V Neck */, 16);
-			iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(1250) * Global_262145.f_2989) * Global_295754.f_16));
+			iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(1250) * Global_262145.f_2989 /* Tunable: TSHIRT_TRANS_MP_FM_ROCKSTAR_EXPENDITURE_TUNABLE */) * Global_295754.f_16));
 		}
 		else
 		{
@@ -106293,14 +106293,14 @@ void func_635(int iParam0, int iParam1)//Position - 0x7AE7D
 	else if (iParam0 == 17)
 	{
 		StringCopy(&Var2, "REW_LSB" /* GXT: Los Santos Belle V Neck */, 16);
-		iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(450) * Global_262145.f_2988) * Global_295754.f_16));
+		iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(450) * Global_262145.f_2988 /* Tunable: TSHIRT_TRANS_MP_FM_LSBELLE_EXPENDITURE_TUNABLE */) * Global_295754.f_16));
 	}
 	else if (iParam0 == 28)
 	{
 		if (func_189(87, -1))
 		{
 			StringCopy(&Var2, "REW_REDSK" /* GXT: Red Skull V Neck */, 16);
-			iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(500) * Global_262145.f_2987) * Global_295754.f_16));
+			iVar1 = SYSTEM::ROUND(((SYSTEM::TO_FLOAT(500) * Global_262145.f_2987 /* Tunable: TSHIRT_TRANS_MP_FM_REDSKULL_EXPENDITURE_TUNABLE */) * Global_295754.f_16));
 		}
 		else
 		{
@@ -107219,19 +107219,19 @@ bool func_639(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//
 						break;
 					
 					case 16:
-						func_644(iParam3, Global_262145.f_7511, "CC_M_HS_16" /* GXT: Shaggy Curls */, func_271(func_118(iParam0, joaat("DLC_MP_BEACH_M_HAIR00"), 2, 3)), 1931240822);
+						func_644(iParam3, Global_262145.f_7511 /* Tunable: DLC_MALE_HAIR_SHAGGY_CURLS_BLACK */, "CC_M_HS_16" /* GXT: Shaggy Curls */, func_271(func_118(iParam0, joaat("DLC_MP_BEACH_M_HAIR00"), 2, 3)), 1931240822);
 						break;
 					
 					case 17:
-						func_644(iParam3, Global_262145.f_7506, "CC_M_HS_17" /* GXT: Surfer Dude */, func_271(func_118(iParam0, joaat("DLC_MP_BEACH_M_HAIR05"), 2, 3)), -2125331999);
+						func_644(iParam3, Global_262145.f_7506 /* Tunable: DLC_MALE_HAIR_SURFER_DUDE_BLACK */, "CC_M_HS_17" /* GXT: Surfer Dude */, func_271(func_118(iParam0, joaat("DLC_MP_BEACH_M_HAIR05"), 2, 3)), -2125331999);
 						break;
 					
 					case 18:
-						func_644(iParam3, Global_262145.f_7521, "CC_M_HS_18" /* GXT: Short Side Part */, func_271(func_118(iParam0, joaat("DLC_MP_BUSI_M_HAIR0_0"), 2, 3)), -2146762937);
+						func_644(iParam3, Global_262145.f_7521 /* Tunable: DLC_MALE_HAIR_SHORT_SIDE_PART_BLACK */, "CC_M_HS_18" /* GXT: Short Side Part */, func_271(func_118(iParam0, joaat("DLC_MP_BUSI_M_HAIR0_0"), 2, 3)), -2146762937);
 						break;
 					
 					case 19:
-						func_644(iParam3, Global_262145.f_7516, "CC_M_HS_19" /* GXT: High Slicked Sides */, func_271(func_118(iParam0, joaat("DLC_MP_BUSI_M_HAIR1_0"), 2, 3)), -1919575460);
+						func_644(iParam3, Global_262145.f_7516 /* Tunable: DLC_MALE_HAIR_HIGH_SLICKED_SIDES_BLACK */, "CC_M_HS_19" /* GXT: High Slicked Sides */, func_271(func_118(iParam0, joaat("DLC_MP_BUSI_M_HAIR1_0"), 2, 3)), -1919575460);
 						break;
 					
 					case 20:
@@ -107243,87 +107243,87 @@ bool func_639(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//
 						break;
 					
 					case 22:
-						func_644(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(4960) * Global_262145.f_8275)), "CC_M_HS_22" /* GXT: Mullet */, func_271(func_118(iParam0, joaat("DLC_MP_IND_M_HAIR0_0"), 2, 3)), 1271240597);
+						func_644(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(4960) * Global_262145.f_8275 /* Tunable: HAIR_MAKEUP_INDEPENDENCEDAY_GROUP */)), "CC_M_HS_22" /* GXT: Mullet */, func_271(func_118(iParam0, joaat("DLC_MP_IND_M_HAIR0_0"), 2, 3)), 1271240597);
 						break;
 					
 					case 23:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_12433) * Global_262145.f_12469)), "CLO_S1M_H_0_0" /* GXT: Classic Cornrows */, func_271(func_118(iParam0, joaat("DLC_MP_LOW_M_HAIR0_0"), 2, 3)), 964358912);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_12433 /* Tunable: MALE_HAIR_CLASSIC_CORNROWS */) * Global_262145.f_12469 /* Tunable: LOWRIDER_MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_S1M_H_0_0" /* GXT: Classic Cornrows */, func_271(func_118(iParam0, joaat("DLC_MP_LOW_M_HAIR0_0"), 2, 3)), 964358912);
 						break;
 					
 					case 24:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_12434) * Global_262145.f_12469)), "CLO_S1M_H_1_0" /* GXT: Palm Cornrows */, func_271(func_118(iParam0, joaat("DLC_MP_LOW_M_HAIR1_0"), 2, 3)), -1735315153);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_12434 /* Tunable: MALE_HAIR_PALM_CORNROWS */) * Global_262145.f_12469 /* Tunable: LOWRIDER_MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_S1M_H_1_0" /* GXT: Palm Cornrows */, func_271(func_118(iParam0, joaat("DLC_MP_LOW_M_HAIR1_0"), 2, 3)), -1735315153);
 						break;
 					
 					case 25:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_12435) * Global_262145.f_12469)), "CLO_S1M_H_2_0" /* GXT: Lightning Cornrows */, func_271(func_118(iParam0, joaat("DLC_MP_LOW_M_HAIR2_0"), 2, 3)), -2034102895);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_12435 /* Tunable: MALE_HAIR_LIGHTNING_CORNROWS */) * Global_262145.f_12469 /* Tunable: LOWRIDER_MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_S1M_H_2_0" /* GXT: Lightning Cornrows */, func_271(func_118(iParam0, joaat("DLC_MP_LOW_M_HAIR2_0"), 2, 3)), -2034102895);
 						break;
 					
 					case 26:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_12436) * Global_262145.f_12469)), "CLO_S1M_H_3_0" /* GXT: Whipped Cornrows */, func_271(func_118(iParam0, joaat("DLC_MP_LOW_M_HAIR3_0"), 2, 3)), 1999400550);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_12436 /* Tunable: MALE_HAIR_WHIPPED_CORNROWS */) * Global_262145.f_12469 /* Tunable: LOWRIDER_MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_S1M_H_3_0" /* GXT: Whipped Cornrows */, func_271(func_118(iParam0, joaat("DLC_MP_LOW_M_HAIR3_0"), 2, 3)), 1999400550);
 						break;
 					
 					case 27:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_15067) * Global_262145.f_15023)), "CLO_S2M_H_0_0" /* GXT: Zig Zag Cornrows */, func_271(func_118(iParam0, joaat("DLC_MP_LOW2_M_HAIR0_0"), 2, 3)), 1702284027);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_15067 /* Tunable: MALE_HAIR_ZIG_ZAG_CORNROWS */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_S2M_H_0_0" /* GXT: Zig Zag Cornrows */, func_271(func_118(iParam0, joaat("DLC_MP_LOW2_M_HAIR0_0"), 2, 3)), 1702284027);
 						break;
 					
 					case 28:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_15068) * Global_262145.f_15023)), "CLO_S2M_H_1_0" /* GXT: Snail Cornrows */, func_271(func_118(iParam0, joaat("DLC_MP_LOW2_M_HAIR1_0"), 2, 3)), -514538827);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_15068 /* Tunable: MALE_HAIR_SNAIL_CORNROWS */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_S2M_H_1_0" /* GXT: Snail Cornrows */, func_271(func_118(iParam0, joaat("DLC_MP_LOW2_M_HAIR1_0"), 2, 3)), -514538827);
 						break;
 					
 					case 29:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_15069) * Global_262145.f_15023)), "CLO_S2M_H_2_0" /* GXT: Hightop */, func_271(func_118(iParam0, joaat("DLC_MP_LOW2_M_HAIR2_0"), 2, 3)), -807559225);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_15069 /* Tunable: MALE_HAIR_HIGHTOP */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_S2M_H_2_0" /* GXT: Hightop */, func_271(func_118(iParam0, joaat("DLC_MP_LOW2_M_HAIR2_0"), 2, 3)), -807559225);
 						break;
 					
 					case 30:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_17962) * Global_262145.f_15023)), "CLO_BIM_H_0_0" /* GXT: Loose Swept Back */, func_271(func_118(iParam0, joaat("DLC_MP_BIKER_M_HAIR_0_0"), 2, 3)), -278296374);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_17962 /* Tunable: BIKER_HAIR_LOOSE_SWEPT_BACK */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_BIM_H_0_0" /* GXT: Loose Swept Back */, func_271(func_118(iParam0, joaat("DLC_MP_BIKER_M_HAIR_0_0"), 2, 3)), -278296374);
 						break;
 					
 					case 31:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_17963) * Global_262145.f_15023)), "CLO_BIM_H_1_0" /* GXT: Undercut Swept Back */, func_271(func_118(iParam0, joaat("DLC_MP_BIKER_M_HAIR_1_0"), 2, 3)), 1628302349);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_17963 /* Tunable: BIKER_HAIR_UNDERCUT_SWEPT_BACK */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_BIM_H_1_0" /* GXT: Undercut Swept Back */, func_271(func_118(iParam0, joaat("DLC_MP_BIKER_M_HAIR_1_0"), 2, 3)), 1628302349);
 						break;
 					
 					case 32:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_17964) * Global_262145.f_15023)), "CLO_BIM_H_2_0" /* GXT: Undercut Swept Side */, func_271(func_118(iParam0, joaat("DLC_MP_BIKER_M_HAIR_2_0"), 2, 3)), 1422447491);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_17964 /* Tunable: BIKER_HAIR_UNDERCUT_SWEPT_SIDE */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_BIM_H_2_0" /* GXT: Undercut Swept Side */, func_271(func_118(iParam0, joaat("DLC_MP_BIKER_M_HAIR_2_0"), 2, 3)), 1422447491);
 						break;
 					
 					case 33:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_17965) * Global_262145.f_15023)), "CLO_BIM_H_3_0" /* GXT: Spiked Mohawk */, func_271(func_118(iParam0, joaat("DLC_MP_BIKER_M_HAIR_3_0"), 2, 3)), 1174910465);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_17965 /* Tunable: BIKER_HAIR_SPIKED_MOHAWK */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_BIM_H_3_0" /* GXT: Spiked Mohawk */, func_271(func_118(iParam0, joaat("DLC_MP_BIKER_M_HAIR_3_0"), 2, 3)), 1174910465);
 						break;
 					
 					case 34:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_19146) * Global_262145.f_15023)), "CLO_BIM_H_4_0" /* GXT: Mod */, func_271(func_118(iParam0, joaat("DLC_MP_BIKER_M_HAIR_4_0"), 2, 3)), 907351580);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_19146 /* Tunable: HAIR_MOD */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_BIM_H_4_0" /* GXT: Mod */, func_271(func_118(iParam0, joaat("DLC_MP_BIKER_M_HAIR_4_0"), 2, 3)), 907351580);
 						break;
 					
 					case 35:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_19147) * Global_262145.f_15023)), "CLO_BIM_H_5_0" /* GXT: Layered Mod */, func_271(func_118(iParam0, joaat("DLC_MP_BIKER_M_HAIR_5_0"), 2, 3)), -1471350134);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_19147 /* Tunable: HAIR_LAYERED_MOD */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_BIM_H_5_0" /* GXT: Layered Mod */, func_271(func_118(iParam0, joaat("DLC_MP_BIKER_M_HAIR_5_0"), 2, 3)), -1471350134);
 						break;
 					
 					case 36:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_20342) * Global_262145.f_15023)), "CLO_GRM_H_0_0" /* GXT: Flattop */, func_118(iParam0, joaat("DLC_MP_GR_M_HAIR_35_0"), 2, 3), -1700569289);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_20342 /* Tunable: GR_MALE_HAIR_FLATTOP */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_GRM_H_0_0" /* GXT: Flattop */, func_118(iParam0, joaat("DLC_MP_GR_M_HAIR_35_0"), 2, 3), -1700569289);
 						break;
 					
 					case 37:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_20343) * Global_262145.f_15023)), "CLO_GRM_H_1_0" /* GXT: Military Buzzcut */, func_118(iParam0, joaat("DLC_MP_GR_M_HAIR_36_0"), 2, 3), 1799422067);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_20343 /* Tunable: GR_MALE_HAIR_MILITARY_BUZZCUT */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_GRM_H_1_0" /* GXT: Military Buzzcut */, func_118(iParam0, joaat("DLC_MP_GR_M_HAIR_36_0"), 2, 3), 1799422067);
 						break;
 					
 					case 38:
-						func_644(iParam3, SYSTEM::ROUND((0f * Global_262145.f_15023)), "CLO_VWM_H_0_0" /* GXT: Impotent Rage */, func_118(iParam0, joaat("DLC_MP_VWD_M_HAIR_0_0"), 2, 3), -617521066);
+						func_644(iParam3, SYSTEM::ROUND((0f * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_VWM_H_0_0" /* GXT: Impotent Rage */, func_118(iParam0, joaat("DLC_MP_VWD_M_HAIR_0_0"), 2, 3), -617521066);
 						break;
 					
 					case 39:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_31198) * Global_262145.f_15023)), "CLO_TRM_H_0_0" /* GXT: Afro Faded */, func_118(iParam0, joaat("DLC_MP_TUNER_M_HAIR_0_0"), 2, 3), -848116519);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_31198 /* Tunable: TUNER_HAIR_AFRO_FADED */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_TRM_H_0_0" /* GXT: Afro Faded */, func_118(iParam0, joaat("DLC_MP_TUNER_M_HAIR_0_0"), 2, 3), -848116519);
 						break;
 					
 					case 40:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_32040) * Global_262145.f_15023)), "CLO_FXM_H_0_0" /* GXT: Top Knot */, func_118(iParam0, joaat("DLC_MP_FIXER_M_HAIR_0_0"), 2, 3), -1011699139);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_32040) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_FXM_H_0_0" /* GXT: Top Knot */, func_118(iParam0, joaat("DLC_MP_FIXER_M_HAIR_0_0"), 2, 3), -1011699139);
 						break;
 					
 					case 41:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_33110) * Global_262145.f_15023)), "CLO_SBM_H_0_0" /* GXT: Two Block */, func_118(iParam0, joaat("DLC_MP_SUM2_M_HAIR_0_0"), 2, 3), 367580840);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_33110) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_SBM_H_0_0" /* GXT: Two Block */, func_118(iParam0, joaat("DLC_MP_SUM2_M_HAIR_0_0"), 2, 3), 367580840);
 						break;
 					
 					case 42:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_33111) * Global_262145.f_15023)), "CLO_SBM_H_1_0" /* GXT: Shaggy Mullet */, func_118(iParam0, joaat("DLC_MP_SUM2_M_HAIR_1_0"), 2, 3), 675150674);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_33111) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_SBM_H_1_0" /* GXT: Shaggy Mullet */, func_118(iParam0, joaat("DLC_MP_SUM2_M_HAIR_1_0"), 2, 3), 675150674);
 						break;
 					
 					case 43:
@@ -107336,123 +107336,123 @@ bool func_639(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//
 				switch (iParam2)
 				{
 					case 0:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(500) * Global_262145.f_2653)), "HAIR_BEARD0", 1, -1, 1f, 61, -43115055);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(500) * Global_262145.f_2653 /* Tunable: BEARD_UNLOCKS_CLEANSHAVEN_EXPENDITURE_TUNABLE */)), "HAIR_BEARD0", 1, -1, 1f, 61, -43115055);
 						break;
 					
 					case 1:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(150) * Global_262145.f_2654)), "HAIR_BEARD1", 1, 0, 1f, 62, -1731373935);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(150) * Global_262145.f_2654 /* Tunable: BEARD_UNLOCKS_LIGHTSTUBBLE_EXPENDITURE_TUNABLE */)), "HAIR_BEARD1", 1, 0, 1f, 62, -1731373935);
 						break;
 					
 					case 2:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(430) * Global_262145.f_2655)), "HAIR_BEARD2", 1, 1, 1f, 63, -1422100113);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(430) * Global_262145.f_2655 /* Tunable: BEARD_UNLOCKS_BALBO_EXPENDITURE_TUNABLE */)), "HAIR_BEARD2", 1, 1, 1f, 63, -1422100113);
 						break;
 					
 					case 3:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(325) * Global_262145.f_2656)), "HAIR_BEARD3", 1, 2, 1f, 64, -463508556);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(325) * Global_262145.f_2656 /* Tunable: BEARD_UNLOCKS_CIRCLEBEARD_EXPENDITURE_TUNABLE */)), "HAIR_BEARD3", 1, 2, 1f, 64, -463508556);
 						break;
 					
 					case 4:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(465) * Global_262145.f_2657)), "HAIR_BEARD4", 1, 3, 1f, 65, -963301344);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(465) * Global_262145.f_2657 /* Tunable: BEARD_UNLOCKS_GOATEE_EXPENDITURE_TUNABLE */)), "HAIR_BEARD4", 1, 3, 1f, 65, -963301344);
 						break;
 					
 					case 5:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(500) * Global_262145.f_2658)), "HAIR_BEARD5", 1, 4, 1f, 66, 2063210751);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(500) * Global_262145.f_2658 /* Tunable: BEARD_UNLOCKS_CHIN_EXPENDITURE_TUNABLE */)), "HAIR_BEARD5", 1, 4, 1f, 66, 2063210751);
 						break;
 					
 					case 6:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(350) * Global_262145.f_2659)), "HAIR_BEARD6", 1, 5, 1f, 67, -2003094463);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(350) * Global_262145.f_2659 /* Tunable: BEARD_UNLOCKS_SOULPATCH_EXPENDITURE_TUNABLE */)), "HAIR_BEARD6", 1, 5, 1f, 67, -2003094463);
 						break;
 					
 					case 7:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(600) * Global_262145.f_2660)), "HAIR_BEARD7", 1, 6, 1f, 68, -1888632346);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(600) * Global_262145.f_2660 /* Tunable: BEARD_UNLOCKS_PENCILCHINSTRAP_EXPENDITURE_TUNABLE */)), "HAIR_BEARD7", 1, 6, 1f, 68, -1888632346);
 						break;
 					
 					case 8:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(220) * Global_262145.f_2661)), "HAIR_BEARD8", 1, 7, 1f, 69, -1384776202);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(220) * Global_262145.f_2661 /* Tunable: BEARD_UNLOCKS_LIGHTBEARD_EXPENDITURE_TUNABLE */)), "HAIR_BEARD8", 1, 7, 1f, 69, -1384776202);
 						break;
 					
 					case 9:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1425) * Global_262145.f_2662)), "HAIR_BEARD9", 1, 8, 1f, 70, 1107568404);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1425) * Global_262145.f_2662 /* Tunable: BEARD_UNLOCKS_MUSKETEER_EXPENDITURE_TUNABLE */)), "HAIR_BEARD9", 1, 8, 1f, 70, 1107568404);
 						break;
 					
 					case 10:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1700) * Global_262145.f_2663)), "HAIR_BEARD10", 1, 9, 1f, 71, -412069578);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1700) * Global_262145.f_2663 /* Tunable: BEARD_UNLOCKS_MOUSTACHE_EXPENDITURE_TUNABLE */)), "HAIR_BEARD10", 1, 9, 1f, 71, -412069578);
 						break;
 					
 					case 11:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(290) * Global_262145.f_2664)), "HAIR_BEARD11", 1, 10, 1f, 72, 1236833733);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(290) * Global_262145.f_2664 /* Tunable: BEARD_UNLOCKS_HEAVYBEARD_EXPENDITURE_TUNABLE */)), "HAIR_BEARD11", 1, 10, 1f, 72, 1236833733);
 						break;
 					
 					case 12:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(185) * Global_262145.f_2665)), "HAIR_BEARD12", 1, 11, 1f, 73, 2004250944);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(185) * Global_262145.f_2665 /* Tunable: BEARD_UNLOCKS_STUBBLE_EXPENDITURE_TUNABLE */)), "HAIR_BEARD12", 1, 11, 1f, 73, 2004250944);
 						break;
 					
 					case 13:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(255) * Global_262145.f_2666)), "HAIR_BEARD13", 1, 12, 1f, 74, 544883529);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(255) * Global_262145.f_2666 /* Tunable: BEARD_UNLOCKS_CIRCLEBEARD2_EXPENDITURE_TUNABLE */)), "HAIR_BEARD13", 1, 12, 1f, 74, 544883529);
 						break;
 					
 					case 14:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1150) * Global_262145.f_2667)), "HAIR_BEARD14", 1, 13, 1f, 75, 1446293181);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1150) * Global_262145.f_2667 /* Tunable: BEARD_UNLOCKS_HORSESHOEANDSIDEBURNS_EXPENDITURE_TUNABLE */)), "HAIR_BEARD14", 1, 13, 1f, 75, 1446293181);
 						break;
 					
 					case 15:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1975) * Global_262145.f_2668)), "HAIR_BEARD15", 1, 14, 1f, 76, -1964074960);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1975) * Global_262145.f_2668 /* Tunable: BEARD_UNLOCKS_PENCILMOUSTACHEANDMUTTONCHOPS_EXPENDITURE_TUNABLE */)), "HAIR_BEARD15", 1, 14, 1f, 76, -1964074960);
 						break;
 					
 					case 16:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(875) * Global_262145.f_2669)), "HAIR_BEARD16", 1, 15, 1f, 77, -1565538382);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(875) * Global_262145.f_2669 /* Tunable: BEARD_UNLOCKS_PENCILMOUSTACHEANDCHINSTRAP_EXPENDITURE_TUNABLE */)), "HAIR_BEARD16", 1, 15, 1f, 77, -1565538382);
 						break;
 					
 					case 17:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2000) * Global_262145.f_2670)), "HAIR_BEARD17", 1, 16, 1f, 78, 1752814407);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2000) * Global_262145.f_2670 /* Tunable: BEARD_UNLOCKS_BALBOANDDESIGNSIDEBURNS_EXPENDITURE_TUNABLE */)), "HAIR_BEARD17", 1, 16, 1f, 78, 1752814407);
 						break;
 					
 					case 18:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(725) * Global_262145.f_2671)), "HAIR_BEARD18", 1, 17, 1f, 79, -1662501853);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(725) * Global_262145.f_2671 /* Tunable: BEARD_UNLOCKS_MUTTONCHOPS_EXPENDITURE_TUNABLE */)), "HAIR_BEARD18", 1, 17, 1f, 79, -1662501853);
 						break;
 					
 					case 19:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(395) * Global_262145.f_2672)), "HAIR_BEARD19", 1, 18, 1f, 80, -1216122527);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(395) * Global_262145.f_2672 /* Tunable: BEARD_UNLOCKS_FULLBEARD_EXPENDITURE_TUNABLE */)), "HAIR_BEARD19", 1, 18, 1f, 80, -1216122527);
 						break;
 					
 					case 20:
-						func_643(iParam3, Global_262145.f_4336, "BRD_HP_0" /* GXT: Curly */, 1, 19, 1f, 81, 1668958248);
+						func_643(iParam3, Global_262145.f_4336 /* Tunable: DLC_MALE_BEARDS_CURLY */, "BRD_HP_0" /* GXT: Curly */, 1, 19, 1f, 81, 1668958248);
 						break;
 					
 					case 21:
-						func_643(iParam3, Global_262145.f_4337, "BRD_HP_1" /* GXT: Curly & Deep Stranger */, 1, 20, 1f, 82, 813687348);
+						func_643(iParam3, Global_262145.f_4337 /* Tunable: DLC_MALE_BEARDS_CURLY_DEEP_STRANGER */, "BRD_HP_1" /* GXT: Curly & Deep Stranger */, 1, 20, 1f, 82, 813687348);
 						break;
 					
 					case 22:
-						func_643(iParam3, Global_262145.f_4338, "BRD_HP_2" /* GXT: Handlebar */, 1, 21, 1f, 83, 1121027799);
+						func_643(iParam3, Global_262145.f_4338 /* Tunable: DLC_MALE_BEARDS_HANDLEBAR */, "BRD_HP_2" /* GXT: Handlebar */, 1, 21, 1f, 83, 1121027799);
 						break;
 					
 					case 23:
-						func_643(iParam3, Global_262145.f_4339, "BRD_HP_3" /* GXT: Faustic */, 1, 22, 1f, 84, -1437018652);
+						func_643(iParam3, Global_262145.f_4339 /* Tunable: DLC_MALE_BEARDS_FAUSTIC */, "BRD_HP_3" /* GXT: Faustic */, 1, 22, 1f, 84, -1437018652);
 						break;
 					
 					case 24:
-						func_643(iParam3, Global_262145.f_4340, "BRD_HP_4" /* GXT: Otto & Patch */, 1, 23, 1f, 85, -1133250022);
+						func_643(iParam3, Global_262145.f_4340 /* Tunable: DLC_MALE_BEARDS_OTTO_PATCH */, "BRD_HP_4" /* GXT: Otto & Patch */, 1, 23, 1f, 85, -1133250022);
 						break;
 					
 					case 25:
-						func_643(iParam3, Global_262145.f_4341, "BRD_HP_5" /* GXT: Otto & Full Stranger */, 1, 24, 1f, 86, 1974922401);
+						func_643(iParam3, Global_262145.f_4341 /* Tunable: DLC_MALE_BEARDS_OTTO_FULL_STRANGER */, "BRD_HP_5" /* GXT: Otto & Full Stranger */, 1, 24, 1f, 86, 1974922401);
 						break;
 					
 					case 26:
-						func_643(iParam3, Global_262145.f_4342, "BRD_HP_6" /* GXT: Light Franz */, 1, 25, 1f, 87, -1751830435);
+						func_643(iParam3, Global_262145.f_4342 /* Tunable: DLC_MALE_BEARDS_LIGHT_FRANZ */, "BRD_HP_6" /* GXT: Light Franz */, 1, 25, 1f, 87, -1751830435);
 						break;
 					
 					case 27:
-						func_643(iParam3, Global_262145.f_4344, "BRD_HP_7" /* GXT: The Hampstead */, 1, 26, 1f, 89, -737105609);
+						func_643(iParam3, Global_262145.f_4344 /* Tunable: DLC_MALE_BEARDS_HAMPSTEAD */, "BRD_HP_7" /* GXT: The Hampstead */, 1, 26, 1f, 89, -737105609);
 						break;
 					
 					case 28:
-						func_643(iParam3, Global_262145.f_4345, "BRD_HP_8" /* GXT: The Ambrose */, 1, 27, 1f, 90, -1044282215);
+						func_643(iParam3, Global_262145.f_4345 /* Tunable: DLC_MALE_BEARDS_AMBROSE */, "BRD_HP_8" /* GXT: The Ambrose */, 1, 27, 1f, 90, -1044282215);
 						break;
 					
 					case 29:
-						func_643(iParam3, Global_262145.f_4343, "BRD_HP_9" /* GXT: Lincoln Curtain */, 1, 28, 1f, 88, 128880754);
+						func_643(iParam3, Global_262145.f_4343 /* Tunable: DLC_MALE_BEARDS_LINCOLN_CURTAIN */, "BRD_HP_9" /* GXT: Lincoln Curtain */, 1, 28, 1f, 88, 128880754);
 						break;
 					
 					case 30:
@@ -107465,143 +107465,143 @@ bool func_639(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//
 				switch (iParam2)
 				{
 					case 0:
-						func_643(iParam3, Global_262145.f_9229, "NONE" /* GXT: None */, 2, -1, 1f, -1, -1214833480);
+						func_643(iParam3, Global_262145.f_9229 /* Tunable: EYEBROWS_NONE */, "NONE" /* GXT: None */, 2, -1, 1f, -1, -1214833480);
 						break;
 					
 					case 1:
-						func_643(iParam3, Global_262145.f_9230, "CC_EYEBRW_0" /* GXT: Balanced */, 2, 0, 1f, -1, -853522486);
+						func_643(iParam3, Global_262145.f_9230 /* Tunable: EYEBROWS_BALANCED */, "CC_EYEBRW_0" /* GXT: Balanced */, 2, 0, 1f, -1, -853522486);
 						break;
 					
 					case 2:
-						func_643(iParam3, Global_262145.f_9231, "CC_EYEBRW_1" /* GXT: Fashion */, 2, 1, 1f, -1, -1811655273);
+						func_643(iParam3, Global_262145.f_9231 /* Tunable: EYEBROWS_FASHION */, "CC_EYEBRW_1" /* GXT: Fashion */, 2, 1, 1f, -1, -1811655273);
 						break;
 					
 					case 3:
-						func_643(iParam3, Global_262145.f_9232, "CC_EYEBRW_2" /* GXT: Cleopatra */, 2, 2, 1f, -1, -1040961166);
+						func_643(iParam3, Global_262145.f_9232 /* Tunable: EYEBROWS_CLEOPATRA */, "CC_EYEBRW_2" /* GXT: Cleopatra */, 2, 2, 1f, -1, -1040961166);
 						break;
 					
 					case 4:
-						func_643(iParam3, Global_262145.f_9233, "CC_EYEBRW_3" /* GXT: Quizzical */, 2, 3, 1f, -1, 1888456366);
+						func_643(iParam3, Global_262145.f_9233 /* Tunable: EYEBROWS_QUIZZICAL */, "CC_EYEBRW_3" /* GXT: Quizzical */, 2, 3, 1f, -1, 1888456366);
 						break;
 					
 					case 5:
-						func_643(iParam3, Global_262145.f_9234, "CC_EYEBRW_4" /* GXT: Femme */, 2, 4, 1f, -1, -1639552485);
+						func_643(iParam3, Global_262145.f_9234 /* Tunable: EYEBROWS_FEMME */, "CC_EYEBRW_4" /* GXT: Femme */, 2, 4, 1f, -1, -1639552485);
 						break;
 					
 					case 6:
-						func_643(iParam3, Global_262145.f_9235, "CC_EYEBRW_5" /* GXT: Seductive */, 2, 5, 1f, -1, 1348226632);
+						func_643(iParam3, Global_262145.f_9235 /* Tunable: EYEBROWS_SEDUCTIVE */, "CC_EYEBRW_5" /* GXT: Seductive */, 2, 5, 1f, -1, 1348226632);
 						break;
 					
 					case 7:
-						func_643(iParam3, Global_262145.f_9236, "CC_EYEBRW_6" /* GXT: Pinched */, 2, 6, 1f, -1, 2125933309);
+						func_643(iParam3, Global_262145.f_9236 /* Tunable: EYEBROWS_PINCHED */, "CC_EYEBRW_6" /* GXT: Pinched */, 2, 6, 1f, -1, 2125933309);
 						break;
 					
 					case 8:
-						func_643(iParam3, Global_262145.f_9237, "CC_EYEBRW_7" /* GXT: Chola */, 2, 7, 1f, -1, 754026355);
+						func_643(iParam3, Global_262145.f_9237 /* Tunable: EYEBROWS_CHOLA */, "CC_EYEBRW_7" /* GXT: Chola */, 2, 7, 1f, -1, 754026355);
 						break;
 					
 					case 9:
-						func_643(iParam3, Global_262145.f_9238, "CC_EYEBRW_8" /* GXT: Triomphe */, 2, 8, 1f, -1, 1526948758);
+						func_643(iParam3, Global_262145.f_9238 /* Tunable: EYEBROWS_TRIOMPHE */, "CC_EYEBRW_8" /* GXT: Triomphe */, 2, 8, 1f, -1, 1526948758);
 						break;
 					
 					case 10:
-						func_643(iParam3, Global_262145.f_9239, "CC_EYEBRW_9" /* GXT: Carefree */, 2, 9, 1f, -1, -902969915);
+						func_643(iParam3, Global_262145.f_9239 /* Tunable: EYEBROWS_CAREFREE */, "CC_EYEBRW_9" /* GXT: Carefree */, 2, 9, 1f, -1, -902969915);
 						break;
 					
 					case 11:
-						func_643(iParam3, Global_262145.f_9240, "CC_EYEBRW_10" /* GXT: Curvaceous */, 2, 10, 1f, -1, -69457631);
+						func_643(iParam3, Global_262145.f_9240 /* Tunable: EYEBROWS_CURVACEOUS */, "CC_EYEBRW_10" /* GXT: Curvaceous */, 2, 10, 1f, -1, -69457631);
 						break;
 					
 					case 12:
-						func_643(iParam3, Global_262145.f_9241, "CC_EYEBRW_11" /* GXT: Rodent */, 2, 11, 1f, -1, -312701918);
+						func_643(iParam3, Global_262145.f_9241 /* Tunable: EYEBROWS_RODENT */, "CC_EYEBRW_11" /* GXT: Rodent */, 2, 11, 1f, -1, -312701918);
 						break;
 					
 					case 13:
-						func_643(iParam3, Global_262145.f_9242, "CC_EYEBRW_12" /* GXT: Double Tram */, 2, 12, 1f, -1, 824579000);
+						func_643(iParam3, Global_262145.f_9242 /* Tunable: EYEBROWS_DOUBLE_TRAM */, "CC_EYEBRW_12" /* GXT: Double Tram */, 2, 12, 1f, -1, 824579000);
 						break;
 					
 					case 14:
-						func_643(iParam3, Global_262145.f_9243, "CC_EYEBRW_13" /* GXT: Thin */, 2, 13, 1f, -1, 585856831);
+						func_643(iParam3, Global_262145.f_9243 /* Tunable: EYEBROWS_THIN */, "CC_EYEBRW_13" /* GXT: Thin */, 2, 13, 1f, -1, 585856831);
 						break;
 					
 					case 15:
-						func_643(iParam3, Global_262145.f_9244, "CC_EYEBRW_14" /* GXT: Penciled */, 2, 14, 1f, -1, 1226458016);
+						func_643(iParam3, Global_262145.f_9244 /* Tunable: EYEBROWS_PENCILED */, "CC_EYEBRW_14" /* GXT: Penciled */, 2, 14, 1f, -1, 1226458016);
 						break;
 					
 					case 16:
-						func_643(iParam3, Global_262145.f_9245, "CC_EYEBRW_15" /* GXT: Mother Plucker */, 2, 15, 1f, -1, 987998003);
+						func_643(iParam3, Global_262145.f_9245 /* Tunable: EYEBROWS_MOTHER_PLUCKER */, "CC_EYEBRW_15" /* GXT: Mother Plucker */, 2, 15, 1f, -1, 987998003);
 						break;
 					
 					case 17:
-						func_643(iParam3, Global_262145.f_9246, "CC_EYEBRW_16" /* GXT: Straight and Narrow */, 2, 16, 1f, -1, 1819413071);
+						func_643(iParam3, Global_262145.f_9246 /* Tunable: EYEBROWS_STRAIGHT_AND_NARROW */, "CC_EYEBRW_16" /* GXT: Straight and Narrow */, 2, 16, 1f, -1, 1819413071);
 						break;
 					
 					case 18:
-						func_643(iParam3, Global_262145.f_9247, "CC_EYEBRW_17" /* GXT: Natural */, 2, 17, 1f, -1, 1583246888);
+						func_643(iParam3, Global_262145.f_9247 /* Tunable: EYEBROWS_NATURAL */, "CC_EYEBRW_17" /* GXT: Natural */, 2, 17, 1f, -1, 1583246888);
 						break;
 					
 					case 19:
-						func_643(iParam3, Global_262145.f_9248, "CC_EYEBRW_18" /* GXT: Fuzzy */, 2, 18, 1f, -1, -1577847470);
+						func_643(iParam3, Global_262145.f_9248 /* Tunable: EYEBROWS_FUZZY */, "CC_EYEBRW_18" /* GXT: Fuzzy */, 2, 18, 1f, -1, -1577847470);
 						break;
 					
 					case 20:
-						func_643(iParam3, Global_262145.f_9249, "CC_EYEBRW_19" /* GXT: Unkempt */, 2, 19, 1f, -1, -2026650806);
+						func_643(iParam3, Global_262145.f_9249 /* Tunable: EYEBROWS_UNKEMPT */, "CC_EYEBRW_19" /* GXT: Unkempt */, 2, 19, 1f, -1, -2026650806);
 						break;
 					
 					case 21:
-						func_643(iParam3, Global_262145.f_9250, "CC_EYEBRW_20" /* GXT: Caterpillar */, 2, 20, 1f, -1, -1429665160);
+						func_643(iParam3, Global_262145.f_9250 /* Tunable: EYEBROWS_CATERPILLAR */, "CC_EYEBRW_20" /* GXT: Caterpillar */, 2, 20, 1f, -1, -1429665160);
 						break;
 					
 					case 22:
-						func_643(iParam3, Global_262145.f_9251, "CC_EYEBRW_21" /* GXT: Regular */, 2, 21, 1f, -1, -1185994876);
+						func_643(iParam3, Global_262145.f_9251 /* Tunable: EYEBROWS_REGULAR */, "CC_EYEBRW_21" /* GXT: Regular */, 2, 21, 1f, -1, -1185994876);
 						break;
 					
 					case 23:
-						func_643(iParam3, Global_262145.f_9252, "CC_EYEBRW_22" /* GXT: Mediterranean */, 2, 22, 1f, -1, -2142554759);
+						func_643(iParam3, Global_262145.f_9252 /* Tunable: EYEBROWS_MEDITERRANEAN */, "CC_EYEBRW_22" /* GXT: Mediterranean */, 2, 22, 1f, -1, -2142554759);
 						break;
 					
 					case 24:
-						func_643(iParam3, Global_262145.f_9253, "CC_EYEBRW_23" /* GXT: Groomed */, 2, 23, 1f, -1, -589631845);
+						func_643(iParam3, Global_262145.f_9253 /* Tunable: EYEBROWS_GROOMED */, "CC_EYEBRW_23" /* GXT: Groomed */, 2, 23, 1f, -1, -589631845);
 						break;
 					
 					case 25:
-						func_643(iParam3, Global_262145.f_9254, "CC_EYEBRW_24" /* GXT: Bushels */, 2, 24, 1f, -1, -1637322333);
+						func_643(iParam3, Global_262145.f_9254 /* Tunable: EYEBROWS_BUSHELS */, "CC_EYEBRW_24" /* GXT: Bushels */, 2, 24, 1f, -1, -1637322333);
 						break;
 					
 					case 26:
-						func_643(iParam3, Global_262145.f_9255, "CC_EYEBRW_25" /* GXT: Feathered */, 2, 25, 1f, -1, -1876568802);
+						func_643(iParam3, Global_262145.f_9255 /* Tunable: EYEBROWS_FEATHERED */, "CC_EYEBRW_25" /* GXT: Feathered */, 2, 25, 1f, -1, -1876568802);
 						break;
 					
 					case 27:
-						func_643(iParam3, Global_262145.f_9256, "CC_EYEBRW_26" /* GXT: Prickly */, 2, 26, 1f, -1, -851292326);
+						func_643(iParam3, Global_262145.f_9256 /* Tunable: EYEBROWS_PRICKLY */, "CC_EYEBRW_26" /* GXT: Prickly */, 2, 26, 1f, -1, -851292326);
 						break;
 					
 					case 28:
-						func_643(iParam3, Global_262145.f_9257, "CC_EYEBRW_27" /* GXT: Monobrow */, 2, 27, 1f, -1, 1859818120);
+						func_643(iParam3, Global_262145.f_9257 /* Tunable: EYEBROWS_MONOBROW */, "CC_EYEBRW_27" /* GXT: Monobrow */, 2, 27, 1f, -1, 1859818120);
 						break;
 					
 					case 29:
-						func_643(iParam3, Global_262145.f_9258, "CC_EYEBRW_28" /* GXT: Winged */, 2, 28, 1f, -1, -1515880415);
+						func_643(iParam3, Global_262145.f_9258 /* Tunable: EYEBROWS_WINGED */, "CC_EYEBRW_28" /* GXT: Winged */, 2, 28, 1f, -1, -1515880415);
 						break;
 					
 					case 30:
-						func_643(iParam3, Global_262145.f_9259, "CC_EYEBRW_29" /* GXT: Triple Tram */, 2, 29, 1f, -1, -432930795);
+						func_643(iParam3, Global_262145.f_9259 /* Tunable: EYEBROWS_TRIPLE_TRAM */, "CC_EYEBRW_29" /* GXT: Triple Tram */, 2, 29, 1f, -1, -432930795);
 						break;
 					
 					case 31:
-						func_643(iParam3, Global_262145.f_9260, "CC_EYEBRW_30" /* GXT: Arched Tram */, 2, 30, 1f, -1, 796201630);
+						func_643(iParam3, Global_262145.f_9260 /* Tunable: EYEBROWS_ARCHED_TRAM */, "CC_EYEBRW_30" /* GXT: Arched Tram */, 2, 30, 1f, -1, 796201630);
 						break;
 					
 					case 32:
-						func_643(iParam3, Global_262145.f_9261, "CC_EYEBRW_31" /* GXT: Cutouts */, 2, 31, 1f, -1, 1170095920);
+						func_643(iParam3, Global_262145.f_9261 /* Tunable: EYEBROWS_CUTOUTS */, "CC_EYEBRW_31" /* GXT: Cutouts */, 2, 31, 1f, -1, 1170095920);
 						break;
 					
 					case 33:
-						func_643(iParam3, Global_262145.f_9262, "CC_EYEBRW_32" /* GXT: Fade Away */, 2, 32, 1f, -1, 1259981287);
+						func_643(iParam3, Global_262145.f_9262 /* Tunable: EYEBROWS_FADE_AWAY */, "CC_EYEBRW_32" /* GXT: Fade Away */, 2, 32, 1f, -1, 1259981287);
 						break;
 					
 					case 34:
-						func_643(iParam3, Global_262145.f_9263, "CC_EYEBRW_33" /* GXT: Solo Tram */, 2, 33, 1f, -1, 1632499279);
+						func_643(iParam3, Global_262145.f_9263 /* Tunable: EYEBROWS_SOLO_TRAM */, "CC_EYEBRW_33" /* GXT: Solo Tram */, 2, 33, 1f, -1, 1632499279);
 						break;
 					
 					case 35:
@@ -107614,71 +107614,71 @@ bool func_639(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//
 				switch (iParam2)
 				{
 					case 0:
-						func_643(iParam3, Global_262145.f_9323, "CC_BODY_1_0" /* GXT: Shaved */, 10, -1, 1f, -1, -1208917743);
+						func_643(iParam3, Global_262145.f_9323 /* Tunable: CHEST_HAIR_CHEST_HAIR_SHAVED */, "CC_BODY_1_0" /* GXT: Shaved */, 10, -1, 1f, -1, -1208917743);
 						break;
 					
 					case 1:
-						func_643(iParam3, Global_262145.f_9324, "CC_BODY_1_1" /* GXT: Natural */, 10, 0, 1f, -1, -1245356871);
+						func_643(iParam3, Global_262145.f_9324 /* Tunable: CHEST_HAIR_CHEST_HAIR_NATURAL */, "CC_BODY_1_1" /* GXT: Natural */, 10, 0, 1f, -1, -1245356871);
 						break;
 					
 					case 2:
-						func_643(iParam3, Global_262145.f_9325, "CC_BODY_1_2" /* GXT: The Strip */, 10, 1, 1f, -1, -567923298);
+						func_643(iParam3, Global_262145.f_9325 /* Tunable: CHEST_HAIR_CHEST_HAIR_THE_STRIP */, "CC_BODY_1_2" /* GXT: The Strip */, 10, 1, 1f, -1, -567923298);
 						break;
 					
 					case 3:
-						func_643(iParam3, Global_262145.f_9326, "CC_BODY_1_3" /* GXT: The Tree */, 10, 2, 1f, -1, -932249040);
+						func_643(iParam3, Global_262145.f_9326 /* Tunable: CHEST_HAIR_CHEST_HAIR_THE_TREE */, "CC_BODY_1_3" /* GXT: The Tree */, 10, 2, 1f, -1, -932249040);
 						break;
 					
 					case 4:
-						func_643(iParam3, Global_262145.f_9327, "CC_BODY_1_4" /* GXT: Hairy */, 10, 3, 1f, -1, -221587773);
+						func_643(iParam3, Global_262145.f_9327 /* Tunable: CHEST_HAIR_CHEST_HAIR_HAIRY */, "CC_BODY_1_4" /* GXT: Hairy */, 10, 3, 1f, -1, -221587773);
 						break;
 					
 					case 5:
-						func_643(iParam3, Global_262145.f_9328, "CC_BODY_1_5" /* GXT: Grisly */, 10, 4, 1f, -1, -845116305);
+						func_643(iParam3, Global_262145.f_9328 /* Tunable: CHEST_HAIR_CHEST_HAIR_GRISLY */, "CC_BODY_1_5" /* GXT: Grisly */, 10, 4, 1f, -1, -845116305);
 						break;
 					
 					case 6:
-						func_643(iParam3, Global_262145.f_9329, "CC_BODY_1_6" /* GXT: Ape */, 10, 5, 1f, -1, 381918900);
+						func_643(iParam3, Global_262145.f_9329 /* Tunable: CHEST_HAIR_CHEST_HAIR_APE */, "CC_BODY_1_6" /* GXT: Ape */, 10, 5, 1f, -1, 381918900);
 						break;
 					
 					case 7:
-						func_643(iParam3, Global_262145.f_9330, "CC_BODY_1_7" /* GXT: Groomed Ape */, 10, 6, 1f, -1, 83032851);
+						func_643(iParam3, Global_262145.f_9330 /* Tunable: CHEST_HAIR_CHEST_HAIR_GROOMED_APE */, "CC_BODY_1_7" /* GXT: Groomed Ape */, 10, 6, 1f, -1, 83032851);
 						break;
 					
 					case 8:
-						func_643(iParam3, Global_262145.f_9331, "CC_BODY_1_8" /* GXT: Bikini */, 10, 7, 1f, -1, 705709389);
+						func_643(iParam3, Global_262145.f_9331 /* Tunable: CHEST_HAIR_CHEST_HAIR_BIKINI */, "CC_BODY_1_8" /* GXT: Bikini */, 10, 7, 1f, -1, 705709389);
 						break;
 					
 					case 9:
-						func_643(iParam3, Global_262145.f_9332, "CC_BODY_1_9" /* GXT: Lightning Bolt */, 10, 8, 1f, -1, 410559006);
+						func_643(iParam3, Global_262145.f_9332 /* Tunable: CHEST_HAIR_CHEST_HAIR_LIGHTNING_BOLT */, "CC_BODY_1_9" /* GXT: Lightning Bolt */, 10, 8, 1f, -1, 410559006);
 						break;
 					
 					case 10:
-						func_643(iParam3, Global_262145.f_9333, "CC_BODY_1_10" /* GXT: Reverse Lightning */, 10, 9, 1f, -1, -850926612);
+						func_643(iParam3, Global_262145.f_9333 /* Tunable: CHEST_HAIR_CHEST_HAIR_REVERSE_LIGHTNING */, "CC_BODY_1_10" /* GXT: Reverse Lightning */, 10, 9, 1f, -1, -850926612);
 						break;
 					
 					case 11:
-						func_643(iParam3, Global_262145.f_9334, "CC_BODY_1_11" /* GXT: Love Heart */, 10, 10, 1f, -1, -1093056753);
+						func_643(iParam3, Global_262145.f_9334 /* Tunable: CHEST_HAIR_CHEST_HAIR_LOVE_HEART */, "CC_BODY_1_11" /* GXT: Love Heart */, 10, 10, 1f, -1, -1093056753);
 						break;
 					
 					case 12:
-						func_643(iParam3, Global_262145.f_9335, "CC_BODY_1_12" /* GXT: Chestache */, 10, 11, 1f, -1, 1258643301);
+						func_643(iParam3, Global_262145.f_9335 /* Tunable: CHEST_HAIR_CHEST_HAIR_CHESTACHE */, "CC_BODY_1_12" /* GXT: Chestache */, 10, 11, 1f, -1, 1258643301);
 						break;
 					
 					case 13:
-						func_643(iParam3, Global_262145.f_9336, "CC_BODY_1_13" /* GXT: Happy Face */, 10, 12, 1f, -1, 865874067);
+						func_643(iParam3, Global_262145.f_9336 /* Tunable: CHEST_HAIR_CHEST_HAIR_HAPPY_FACE */, "CC_BODY_1_13" /* GXT: Happy Face */, 10, 12, 1f, -1, 865874067);
 						break;
 					
 					case 14:
-						func_643(iParam3, Global_262145.f_9337, "CC_BODY_1_14" /* GXT: Skull */, 10, 13, 1f, -1, 627151902);
+						func_643(iParam3, Global_262145.f_9337 /* Tunable: CHEST_HAIR_CHEST_HAIR_SKULL */, "CC_BODY_1_14" /* GXT: Skull */, 10, 13, 1f, -1, 627151902);
 						break;
 					
 					case 15:
-						func_643(iParam3, Global_262145.f_9338, "CC_BODY_1_15" /* GXT: Snail Trail */, 10, 14, 1f, -1, -2142352902);
+						func_643(iParam3, Global_262145.f_9338 /* Tunable: CHEST_HAIR_CHEST_HAIR_SNAIL_TRAIL */, "CC_BODY_1_15" /* GXT: Snail Trail */, 10, 14, 1f, -1, -2142352902);
 						break;
 					
 					case 16:
-						func_643(iParam3, Global_262145.f_9339, "CC_BODY_1_16" /* GXT: Slug and Nips */, 10, 15, 1f, -1, -407070503);
+						func_643(iParam3, Global_262145.f_9339 /* Tunable: CHEST_HAIR_CHEST_HAIR_SLUG_AND_NIPS */, "CC_BODY_1_16" /* GXT: Slug and Nips */, 10, 15, 1f, -1, -407070503);
 						break;
 					
 					case 17:
@@ -107695,131 +107695,131 @@ bool func_639(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//
 				switch (iParam2)
 				{
 					case 0:
-						func_643(iParam3, Global_262145.f_9264, "FACE_E_C_0" /* GXT: Green */, 7, 0, 1f, -1, 827528886);
+						func_643(iParam3, Global_262145.f_9264 /* Tunable: CONTACTS_GREEN */, "FACE_E_C_0" /* GXT: Green */, 7, 0, 1f, -1, 827528886);
 						break;
 					
 					case 1:
-						func_643(iParam3, Global_262145.f_9265, "FACE_E_C_1" /* GXT: Emerald */, 7, 1, 1f, -1, -781461791);
+						func_643(iParam3, Global_262145.f_9265 /* Tunable: CONTACTS_EMERALD */, "FACE_E_C_1" /* GXT: Emerald */, 7, 1, 1f, -1, -781461791);
 						break;
 					
 					case 2:
-						func_643(iParam3, Global_262145.f_9266, "FACE_E_C_2" /* GXT: Light Blue */, 7, 2, 1f, -1, -474875027);
+						func_643(iParam3, Global_262145.f_9266 /* Tunable: CONTACTS_LIGHT_BLUE */, "FACE_E_C_2" /* GXT: Light Blue */, 7, 2, 1f, -1, -474875027);
 						break;
 					
 					case 3:
-						func_643(iParam3, Global_262145.f_9267, "FACE_E_C_3" /* GXT: Ocean Blue */, 7, 3, 1f, -1, -1242030086);
+						func_643(iParam3, Global_262145.f_9267 /* Tunable: CONTACTS_OCEAN_BLUE */, "FACE_E_C_3" /* GXT: Ocean Blue */, 7, 3, 1f, -1, -1242030086);
 						break;
 					
 					case 4:
-						func_643(iParam3, Global_262145.f_9268, "FACE_E_C_4" /* GXT: Light Brown */, 7, 4, 1f, -1, 137348200);
+						func_643(iParam3, Global_262145.f_9268 /* Tunable: CONTACTS_LIGHT_BROWN */, "FACE_E_C_4" /* GXT: Light Brown */, 7, 4, 1f, -1, 137348200);
 						break;
 					
 					case 5:
-						func_643(iParam3, Global_262145.f_9269, "FACE_E_C_5" /* GXT: Dark Brown */, 7, 5, 1f, -1, -2121779449);
+						func_643(iParam3, Global_262145.f_9269 /* Tunable: CONTACTS_DARK_BROWN */, "FACE_E_C_5" /* GXT: Dark Brown */, 7, 5, 1f, -1, -2121779449);
 						break;
 					
 					case 6:
-						func_643(iParam3, Global_262145.f_9270, "FACE_E_C_6" /* GXT: Hazel */, 7, 6, 1f, -1, 1876005786);
+						func_643(iParam3, Global_262145.f_9270 /* Tunable: CONTACTS_HAZEL */, "FACE_E_C_6" /* GXT: Hazel */, 7, 6, 1f, -1, 1876005786);
 						break;
 					
 					case 7:
-						func_643(iParam3, Global_262145.f_9271, "FACE_E_C_7" /* GXT: Dark Gray */, 7, 7, 1f, -1, -1641844675);
+						func_643(iParam3, Global_262145.f_9271 /* Tunable: CONTACTS_DARK_GREY */, "FACE_E_C_7" /* GXT: Dark Gray */, 7, 7, 1f, -1, -1641844675);
 						break;
 					
 					case 8:
-						func_643(iParam3, Global_262145.f_9272, "FACE_E_C_8" /* GXT: Light Gray */, 7, 8, 1f, -1, -1939452733);
+						func_643(iParam3, Global_262145.f_9272 /* Tunable: CONTACTS_LIGHT_GREY */, "FACE_E_C_8" /* GXT: Light Gray */, 7, 8, 1f, -1, -1939452733);
 						break;
 					
 					case 9:
-						func_643(iParam3, Global_262145.f_9273, "FACE_E_C_9" /* GXT: Pink */, 7, 9, 1f, -1, 1595175476);
+						func_643(iParam3, Global_262145.f_9273 /* Tunable: CONTACTS_PINK */, "FACE_E_C_9" /* GXT: Pink */, 7, 9, 1f, -1, 1595175476);
 						break;
 					
 					case 10:
-						func_643(iParam3, Global_262145.f_9274, "FACE_E_C_10" /* GXT: Yellow */, 7, 10, 1f, -1, 1888141884);
+						func_643(iParam3, Global_262145.f_9274 /* Tunable: CONTACTS_YELLOW */, "FACE_E_C_10" /* GXT: Yellow */, 7, 10, 1f, -1, 1888141884);
 						break;
 					
 					case 11:
-						func_643(iParam3, Global_262145.f_9275, "FACE_E_C_11" /* GXT: Purple */, 7, 11, 1f, -1, 859096981);
+						func_643(iParam3, Global_262145.f_9275 /* Tunable: CONTACTS_PURPLE */, "FACE_E_C_11" /* GXT: Purple */, 7, 11, 1f, -1, 859096981);
 						break;
 					
 					case 12:
-						func_643(iParam3, Global_262145.f_9276, "FACE_E_C_12" /* GXT: Blackout */, 7, 12, 1f, -1, 551756530);
+						func_643(iParam3, Global_262145.f_9276 /* Tunable: CONTACTS_BLACKOUT */, "FACE_E_C_12" /* GXT: Blackout */, 7, 12, 1f, -1, 551756530);
 						break;
 					
 					case 13:
-						func_643(iParam3, Global_262145.f_9277, "FACE_E_C_13" /* GXT: Shades of Gray */, 7, 13, 1f, -1, 1439272126);
+						func_643(iParam3, Global_262145.f_9277 /* Tunable: CONTACTS_SHADES_OF_GRAY */, "FACE_E_C_13" /* GXT: Shades of Gray */, 7, 13, 1f, -1, 1439272126);
 						break;
 					
 					case 14:
-						func_643(iParam3, Global_262145.f_9278, "FACE_E_C_14" /* GXT: Tequila Sunrise */, 7, 14, 1f, -1, 1158474565);
+						func_643(iParam3, Global_262145.f_9278 /* Tunable: CONTACTS_TEQUILA_SUNRISE */, "FACE_E_C_14" /* GXT: Tequila Sunrise */, 7, 14, 1f, -1, 1158474565);
 						break;
 					
 					case 15:
-						func_643(iParam3, Global_262145.f_9279, "FACE_E_C_15" /* GXT: Atomic */, 7, 15, 1f, -1, -109358053);
+						func_643(iParam3, Global_262145.f_9279 /* Tunable: CONTACTS_ATOMIC */, "FACE_E_C_15" /* GXT: Atomic */, 7, 15, 1f, -1, -109358053);
 						break;
 					
 					case 16:
-						func_643(iParam3, Global_262145.f_9280, "FACE_E_C_16" /* GXT: Warp */, 7, 16, 1f, -1, -406605652);
+						func_643(iParam3, Global_262145.f_9280 /* Tunable: CONTACTS_WARP */, "FACE_E_C_16" /* GXT: Warp */, 7, 16, 1f, -1, -406605652);
 						break;
 					
 					case 17:
-						func_643(iParam3, Global_262145.f_9281, "FACE_E_C_17" /* GXT: ECola */, 7, 17, 1f, -1, 509746672);
+						func_643(iParam3, Global_262145.f_9281 /* Tunable: CONTACTS_ECOLA */, "FACE_E_C_17" /* GXT: ECola */, 7, 17, 1f, -1, 509746672);
 						break;
 					
 					case 18:
-						func_643(iParam3, Global_262145.f_9282, "FACE_E_C_18" /* GXT: Space Ranger */, 7, 18, 1f, -1, 244809299);
+						func_643(iParam3, Global_262145.f_9282 /* Tunable: CONTACTS_SPACE_RANGER */, "FACE_E_C_18" /* GXT: Space Ranger */, 7, 18, 1f, -1, 244809299);
 						break;
 					
 					case 19:
-						func_643(iParam3, Global_262145.f_9283, "FACE_E_C_19" /* GXT: Ying Yang */, 7, 19, 1f, -1, -651750537);
+						func_643(iParam3, Global_262145.f_9283 /* Tunable: CONTACTS_YING_YANG */, "FACE_E_C_19" /* GXT: Ying Yang */, 7, 19, 1f, -1, -651750537);
 						break;
 					
 					case 20:
-						func_643(iParam3, Global_262145.f_9284, "FACE_E_C_20" /* GXT: Bullseye */, 7, 20, 1f, -1, 1816410231);
+						func_643(iParam3, Global_262145.f_9284 /* Tunable: CONTACTS_BULLSEYE */, "FACE_E_C_20" /* GXT: Bullseye */, 7, 20, 1f, -1, 1816410231);
 						break;
 					
 					case 21:
-						func_643(iParam3, Global_262145.f_9285, "FACE_E_C_21" /* GXT: Lizard */, 7, 21, 1f, -1, -2059015562);
+						func_643(iParam3, Global_262145.f_9285 /* Tunable: CONTACTS_LIZARD */, "FACE_E_C_21" /* GXT: Lizard */, 7, 21, 1f, -1, -2059015562);
 						break;
 					
 					case 22:
-						func_643(iParam3, Global_262145.f_9286, "FACE_E_C_22" /* GXT: Dragon */, 7, 22, 1f, -1, 1945094090);
+						func_643(iParam3, Global_262145.f_9286 /* Tunable: CONTACTS_DRAGON */, "FACE_E_C_22" /* GXT: Dragon */, 7, 22, 1f, -1, 1945094090);
 						break;
 					
 					case 23:
-						func_643(iParam3, Global_262145.f_9287, "FACE_E_C_23" /* GXT: Extra Terrestrial */, 7, 23, 1f, -1, -1458261485);
+						func_643(iParam3, Global_262145.f_9287 /* Tunable: CONTACTS_EXTRA_TERRESTRIAL */, "FACE_E_C_23" /* GXT: Extra Terrestrial */, 7, 23, 1f, -1, -1458261485);
 						break;
 					
 					case 24:
-						func_643(iParam3, Global_262145.f_9288, "FACE_E_C_24" /* GXT: Goat */, 7, 24, 1f, -1, -1755738467);
+						func_643(iParam3, Global_262145.f_9288 /* Tunable: CONTACTS_GOAT */, "FACE_E_C_24" /* GXT: Goat */, 7, 24, 1f, -1, -1755738467);
 						break;
 					
 					case 25:
-						func_643(iParam3, Global_262145.f_9289, "FACE_E_C_25" /* GXT: Smiley */, 7, 25, 1f, -1, -846234872);
+						func_643(iParam3, Global_262145.f_9289 /* Tunable: CONTACTS_SMILEY */, "FACE_E_C_25" /* GXT: Smiley */, 7, 25, 1f, -1, -846234872);
 						break;
 					
 					case 26:
-						func_643(iParam3, Global_262145.f_9290, "FACE_E_C_26" /* GXT: Possessed */, 7, 26, 1f, -1, -1144170620);
+						func_643(iParam3, Global_262145.f_9290 /* Tunable: CONTACTS_POSSESSED */, "FACE_E_C_26" /* GXT: Possessed */, 7, 26, 1f, -1, -1144170620);
 						break;
 					
 					case 27:
-						func_643(iParam3, Global_262145.f_9291, "FACE_E_C_27" /* GXT: Demon */, 7, 27, 1f, -1, -251641367);
+						func_643(iParam3, Global_262145.f_9291 /* Tunable: CONTACTS_DEMON */, "FACE_E_C_27" /* GXT: Demon */, 7, 27, 1f, -1, -251641367);
 						break;
 					
 					case 28:
-						func_643(iParam3, Global_262145.f_9292, "FACE_E_C_28" /* GXT: Infected */, 7, 28, 1f, -1, -566158229);
+						func_643(iParam3, Global_262145.f_9292 /* Tunable: CONTACTS_INFECTED */, "FACE_E_C_28" /* GXT: Infected */, 7, 28, 1f, -1, -566158229);
 						break;
 					
 					case 29:
-						func_643(iParam3, Global_262145.f_9293, "FACE_E_C_29" /* GXT: Alien */, 7, 29, 1f, -1, -859506285);
+						func_643(iParam3, Global_262145.f_9293 /* Tunable: CONTACTS_ALIEN */, "FACE_E_C_29" /* GXT: Alien */, 7, 29, 1f, -1, -859506285);
 						break;
 					
 					case 30:
-						func_643(iParam3, Global_262145.f_9294, "FACE_E_C_30" /* GXT: Undead */, 7, 30, 1f, -1, 1823490339);
+						func_643(iParam3, Global_262145.f_9294 /* Tunable: CONTACTS_UNDEAD */, "FACE_E_C_30" /* GXT: Undead */, 7, 30, 1f, -1, 1823490339);
 						break;
 					
 					case 31:
-						func_643(iParam3, Global_262145.f_9295, "FACE_E_C_31" /* GXT: Zombie */, 7, 31, 1f, -1, -2074414980);
+						func_643(iParam3, Global_262145.f_9295 /* Tunable: CONTACTS_ZOMBIE */, "FACE_E_C_31" /* GXT: Zombie */, 7, 31, 1f, -1, -2074414980);
 						break;
 					
 					case 32:
@@ -107832,375 +107832,375 @@ bool func_639(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//
 				switch (iParam2)
 				{
 					case 0:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2619)), "NONE" /* GXT: None */, 4, -1, 1f, 28, 748741188);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2619 /* Tunable: MAKEUP_UNLOCKS_BASIC_EXPENDITURE_TUNABLE */)), "NONE" /* GXT: None */, 4, -1, 1f, 28, 748741188);
 						break;
 					
 					case 1:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(500) * Global_262145.f_2636)), "CC_MKUP_16" /* GXT: Kiss My Axe */, 4, 16, 1f, 45, 664000554);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(500) * Global_262145.f_2636 /* Tunable: MAKEUP_UNLOCKS_KISSMYAXE_EXPENDITURE_TUNABLE */)), "CC_MKUP_16" /* GXT: Kiss My Axe */, 4, 16, 1f, 45, 664000554);
 						break;
 					
 					case 2:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1000) * Global_262145.f_2637)), "CC_MKUP_17" /* GXT: Panda Pussy */, 4, 17, 1f, 46, 374125980);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1000) * Global_262145.f_2637 /* Tunable: MAKEUP_UNLOCKS_PANDAPUSSY_EXPENDITURE_TUNABLE */)), "CC_MKUP_17" /* GXT: Panda Pussy */, 4, 17, 1f, 46, 374125980);
 						break;
 					
 					case 3:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(750) * Global_262145.f_2638)), "CC_MKUP_18" /* GXT: The Bat */, 4, 18, 1f, 47, 1933864846);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(750) * Global_262145.f_2638 /* Tunable: MAKEUP_UNLOCKS_THEBAT_EXPENDITURE_TUNABLE */)), "CC_MKUP_18" /* GXT: The Bat */, 4, 18, 1f, 47, 1933864846);
 						break;
 					
 					case 4:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5750) * Global_262145.f_2639)), "CC_MKUP_19" /* GXT: Skull in Scarlet */, 4, 19, 1f, 48, 1620822589);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5750) * Global_262145.f_2639 /* Tunable: MAKEUP_UNLOCKS_SKULLINSCARLET_EXPENDITURE_TUNABLE */)), "CC_MKUP_19" /* GXT: Skull in Scarlet */, 4, 19, 1f, 48, 1620822589);
 						break;
 					
 					case 5:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2640)), "CC_MKUP_20" /* GXT: Serpentine */, 4, 20, 1f, 49, 1304536201);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2640 /* Tunable: MAKEUP_UNLOCKS_SERPENTINE_EXPENDITURE_TUNABLE */)), "CC_MKUP_20" /* GXT: Serpentine */, 4, 20, 1f, 49, 1304536201);
 						break;
 					
 					case 6:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(6000) * Global_262145.f_2641)), "CC_MKUP_21" /* GXT: The Veldt */, 4, 21, 1f, 50, 1024459558);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(6000) * Global_262145.f_2641 /* Tunable: MAKEUP_UNLOCKS_THEVELDT_EXPENDITURE_TUNABLE */)), "CC_MKUP_21" /* GXT: The Veldt */, 4, 21, 1f, 50, 1024459558);
 						break;
 					
 					case 7:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2646)), "CC_MKUP_26" /* GXT: Tribal Lines */, 4, 26, 1f, 55, -1167196704);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2646 /* Tunable: MAKEUP_UNLOCKS_TRIBALLINES_EXPENDITURE_TUNABLE */)), "CC_MKUP_26" /* GXT: Tribal Lines */, 4, 26, 1f, 55, -1167196704);
 						break;
 					
 					case 8:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5500) * Global_262145.f_2647)), "CC_MKUP_27" /* GXT: Tribal Swirls */, 4, 27, 1f, 56, -1484564469);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5500) * Global_262145.f_2647 /* Tunable: MAKEUP_UNLOCKS_TRIBALSWIRLS_EXPENDITURE_TUNABLE */)), "CC_MKUP_27" /* GXT: Tribal Swirls */, 4, 27, 1f, 56, -1484564469);
 						break;
 					
 					case 9:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1250) * Global_262145.f_2648)), "CC_MKUP_28" /* GXT: Tribal Orange */, 4, 28, 1f, 57, -1728267522);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1250) * Global_262145.f_2648 /* Tunable: MAKEUP_UNLOCKS_TRIBALORANGE_EXPENDITURE_TUNABLE */)), "CC_MKUP_28" /* GXT: Tribal Orange */, 4, 28, 1f, 57, -1728267522);
 						break;
 					
 					case 10:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2000) * Global_262145.f_2649)), "CC_MKUP_29" /* GXT: Tribal Red */, 4, 29, 1f, 58, -2059818253);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2000) * Global_262145.f_2649 /* Tunable: MAKEUP_UNLOCKS_TRIBALRED_EXPENDITURE_TUNABLE */)), "CC_MKUP_29" /* GXT: Tribal Red */, 4, 29, 1f, 58, -2059818253);
 						break;
 					
 					case 11:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(15000) * Global_262145.f_2650)), "CC_MKUP_30" /* GXT: Trapped in a Box */, 4, 30, 1f, 59, 1995902574);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(15000) * Global_262145.f_2650 /* Tunable: MAKEUP_UNLOCKS_TRAPPEDINABOX_EXPENDITURE_TUNABLE */)), "CC_MKUP_30" /* GXT: Trapped in a Box */, 4, 30, 1f, 59, 1995902574);
 						break;
 					
 					case 12:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(20000) * Global_262145.f_2651)), "CC_MKUP_31" /* GXT: Clowning */, 4, 31, 1f, 60, 1639965688);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(20000) * Global_262145.f_2651 /* Tunable: MAKEUP_UNLOCKS_CLOWNING_EXPENDITURE_TUNABLE */)), "CC_MKUP_31" /* GXT: Clowning */, 4, 31, 1f, 60, 1639965688);
 						break;
 					
 					case 13:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(25000) * Global_262145.f_8275)), "CC_MKUP_33" /* GXT: Stars n Stripes */, 4, 33, 1f, 92, 1397114629);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(25000) * Global_262145.f_8275 /* Tunable: HAIR_MAKEUP_INDEPENDENCEDAY_GROUP */)), "CC_MKUP_33" /* GXT: Stars n Stripes */, 4, 33, 1f, 92, 1397114629);
 						break;
 					
 					case 14:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12510) * Global_262145.f_12555)), "CC_MKUP_42" /* GXT: Shadow Demon */, 4, 42, 1f, 93, 1034427337);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12510 /* Tunable: HALLOWEEN_2015_SHADOW_DEMON */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_42" /* GXT: Shadow Demon */, 4, 42, 1f, 93, 1034427337);
 						break;
 					
 					case 15:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12511) * Global_262145.f_12555)), "CC_MKUP_43" /* GXT: Fleshy Demon */, 4, 43, 1f, 94, 773946556);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12511 /* Tunable: HALLOWEEN_2015_FLESHY_DEMON */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_43" /* GXT: Fleshy Demon */, 4, 43, 1f, 94, 773946556);
 						break;
 					
 					case 16:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12512) * Global_262145.f_12555)), "CC_MKUP_44" /* GXT: Flayed Demon */, 4, 44, 1f, 95, 332646433);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12512 /* Tunable: HALLOWEEN_2015_FLAYED_DEMON */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_44" /* GXT: Flayed Demon */, 4, 44, 1f, 95, 332646433);
 						break;
 					
 					case 17:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12513) * Global_262145.f_12555)), "CC_MKUP_45" /* GXT: Sorrow Demon */, 4, 45, 1f, 96, 101002372);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12513 /* Tunable: HALLOWEEN_2015_SORROW_DEMON */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_45" /* GXT: Sorrow Demon */, 4, 45, 1f, 96, 101002372);
 						break;
 					
 					case 18:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12514) * Global_262145.f_12555)), "CC_MKUP_46" /* GXT: Smiler Demon */, 4, 46, 1f, 97, -259915394);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12514 /* Tunable: HALLOWEEN_2015_SMILER_DEMON */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_46" /* GXT: Smiler Demon */, 4, 46, 1f, 97, -259915394);
 						break;
 					
 					case 19:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12515) * Global_262145.f_12555)), "CC_MKUP_47" /* GXT: Cracked Demon */, 4, 47, 1f, 98, -491231765);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12515 /* Tunable: HALLOWEEN_2015_CRACKED_DEMON */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_47" /* GXT: Cracked Demon */, 4, 47, 1f, 98, -491231765);
 						break;
 					
 					case 20:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12516) * Global_262145.f_12555)), "CC_MKUP_48" /* GXT: Danger Skull */, 4, 48, 1f, 99, 1624727807);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12516 /* Tunable: HALLOWEEN_2015_DANGER_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_48" /* GXT: Danger Skull */, 4, 48, 1f, 99, 1624727807);
 						break;
 					
 					case 21:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12517) * Global_262145.f_12555)), "CC_MKUP_49" /* GXT: Wicked Skull */, 4, 49, 1f, 100, 1920336964);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12517 /* Tunable: HALLOWEEN_2015_WICKED_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_49" /* GXT: Wicked Skull */, 4, 49, 1f, 100, 1920336964);
 						break;
 					
 					case 22:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12518) * Global_262145.f_12555)), "CC_MKUP_50" /* GXT: Menace Skull */, 4, 50, 1f, 101, -1998999285);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12518 /* Tunable: HALLOWEEN_2015_MENACE_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_50" /* GXT: Menace Skull */, 4, 50, 1f, 101, -1998999285);
 						break;
 					
 					case 23:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12519) * Global_262145.f_12555)), "CC_MKUP_51" /* GXT: Bone Jaw Skull */, 4, 51, 1f, 102, -1691200068);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12519 /* Tunable: HALLOWEEN_2015_BONE_JAW_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_51" /* GXT: Bone Jaw Skull */, 4, 51, 1f, 102, -1691200068);
 						break;
 					
 					case 24:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12520) * Global_262145.f_12555)), "CC_MKUP_52" /* GXT: Flesh Jaw Skull */, 4, 52, 1f, 103, -1249146258);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12520 /* Tunable: HALLOWEEN_2015_FLESH_JAW_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_52" /* GXT: Flesh Jaw Skull */, 4, 52, 1f, 103, -1249146258);
 						break;
 					
 					case 25:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12521) * Global_262145.f_12555)), "CC_MKUP_53" /* GXT: Spirit Skull */, 4, 53, 1f, 104, -942723339);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12521 /* Tunable: HALLOWEEN_2015_SPIRIT_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_53" /* GXT: Spirit Skull */, 4, 53, 1f, 104, -942723339);
 						break;
 					
 					case 26:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12522) * Global_262145.f_12555)), "CC_MKUP_54" /* GXT: Ghoul Skull */, 4, 54, 1f, 105, -693318480);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12522 /* Tunable: HALLOWEEN_2015_GHOUL_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_54" /* GXT: Ghoul Skull */, 4, 54, 1f, 105, -693318480);
 						break;
 					
 					case 27:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12523) * Global_262145.f_12555)), "CC_MKUP_55" /* GXT: Phantom Skull */, 4, 55, 1f, 106, -465836082);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12523 /* Tunable: HALLOWEEN_2015_PHANTOM_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_55" /* GXT: Phantom Skull */, 4, 55, 1f, 106, -465836082);
 						break;
 					
 					case 28:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12524) * Global_262145.f_12555)), "CC_MKUP_56" /* GXT: Gnasher Skull */, 4, 56, 1f, 107, -214792773);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12524 /* Tunable: HALLOWEEN_2015_GNASHER_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_56" /* GXT: Gnasher Skull */, 4, 56, 1f, 107, -214792773);
 						break;
 					
 					case 29:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12525) * Global_262145.f_12555)), "CC_MKUP_57" /* GXT: Exposed Skull */, 4, 57, 1f, 108, 209893467);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12525 /* Tunable: HALLOWEEN_2015_EXPOSED_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_57" /* GXT: Exposed Skull */, 4, 57, 1f, 108, 209893467);
 						break;
 					
 					case 30:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12526) * Global_262145.f_12555)), "CC_MKUP_58" /* GXT: Ghostly Skull */, 4, 58, 1f, 109, -163640692);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12526 /* Tunable: HALLOWEEN_2015_GHOSTLY_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_58" /* GXT: Ghostly Skull */, 4, 58, 1f, 109, -163640692);
 						break;
 					
 					case 31:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12527) * Global_262145.f_12555)), "CC_MKUP_59" /* GXT: Fury Skull */, 4, 59, 1f, 110, 2012777989);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12527 /* Tunable: HALLOWEEN_2015_FURY_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_59" /* GXT: Fury Skull */, 4, 59, 1f, 110, 2012777989);
 						break;
 					
 					case 32:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12528) * Global_262145.f_12555)), "CC_MKUP_60" /* GXT: Demi Skull */, 4, 60, 1f, 111, 1782084221);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12528 /* Tunable: HALLOWEEN_2015_DEMI_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_60" /* GXT: Demi Skull */, 4, 60, 1f, 111, 1782084221);
 						break;
 					
 					case 33:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12529) * Global_262145.f_12555)), "CC_MKUP_61" /* GXT: Inbred Skull */, 4, 61, 1f, 112, 1532613824);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12529 /* Tunable: HALLOWEEN_2015_INBRED_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_61" /* GXT: Inbred Skull */, 4, 61, 1f, 112, 1532613824);
 						break;
 					
 					case 34:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12530) * Global_262145.f_12555)), "CC_MKUP_62" /* GXT: Spooky Skull */, 4, 62, 1f, 113, 1318894406);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12530 /* Tunable: HALLOWEEN_2015_SPOOKY_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_62" /* GXT: Spooky Skull */, 4, 62, 1f, 113, 1318894406);
 						break;
 					
 					case 35:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12531) * Global_262145.f_12555)), "CC_MKUP_63" /* GXT: Slashed Skull */, 4, 63, 1f, 114, -818529153);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12531 /* Tunable: HALLOWEEN_2015_SLASHED_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_63" /* GXT: Slashed Skull */, 4, 63, 1f, 114, -818529153);
 						break;
 					
 					case 36:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12532) * Global_262145.f_12555)), "CC_MKUP_64" /* GXT: Web Sugar Skull */, 4, 64, 1f, 115, -1578376725);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12532 /* Tunable: HALLOWEEN_2015_WEB_SUGAR_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_64" /* GXT: Web Sugar Skull */, 4, 64, 1f, 115, -1578376725);
 						break;
 					
 					case 37:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12533) * Global_262145.f_12555)), "CC_MKUP_65" /* GXT: Señor Sugar Skull */, 4, 65, 1f, 116, -1832828010);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12533 /* Tunable: HALLOWEEN_2015_SENOR_SUGAR_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_65" /* GXT: Señor Sugar Skull */, 4, 65, 1f, 116, -1832828010);
 						break;
 					
 					case 38:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12534) * Global_262145.f_12555)), "CC_MKUP_66" /* GXT: Swirl Sugar Skull */, 4, 66, 1f, 117, -2072074479);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12534 /* Tunable: HALLOWEEN_2015_SWIRL_SUGAR_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_66" /* GXT: Swirl Sugar Skull */, 4, 66, 1f, 117, -2072074479);
 						break;
 					
 					case 39:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12535) * Global_262145.f_12555)), "CC_MKUP_67" /* GXT: Floral Sugar Skull */, 4, 67, 1f, 118, 107719401);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12535 /* Tunable: HALLOWEEN_2015_FLORAL_SUGAR_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_67" /* GXT: Floral Sugar Skull */, 4, 67, 1f, 118, 107719401);
 						break;
 					
 					case 40:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12536) * Global_262145.f_12555)), "CC_MKUP_68" /* GXT: Mono Sugar Skull */, 4, 68, 1f, 119, 1090494188);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12536 /* Tunable: HALLOWEEN_2015_MONO_SUGAR_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_68" /* GXT: Mono Sugar Skull */, 4, 68, 1f, 119, 1090494188);
 						break;
 					
 					case 41:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12537) * Global_262145.f_12555)), "CC_MKUP_69" /* GXT: Femme Sugar Skull */, 4, 69, 1f, 120, -1065738777);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12537 /* Tunable: HALLOWEEN_2015_FEMME_SUGAR_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_69" /* GXT: Femme Sugar Skull */, 4, 69, 1f, 120, -1065738777);
 						break;
 					
 					case 42:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12538) * Global_262145.f_12555)), "CC_MKUP_70" /* GXT: Demi Sugar Skull */, 4, 70, 1f, 121, -841762662);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12538 /* Tunable: HALLOWEEN_2015_DEMI_SUGAR_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_70" /* GXT: Demi Sugar Skull */, 4, 70, 1f, 121, -841762662);
 						break;
 					
 					case 43:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12539) * Global_262145.f_12555)), "CC_MKUP_71" /* GXT: Scarred Sugar Skull */, 4, 71, 1f, 122, -1694870808);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12539 /* Tunable: HALLOWEEN_2015_SCARRED_SUGAR_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_71" /* GXT: Scarred Sugar Skull */, 4, 71, 1f, 122, -1694870808);
 						break;
 					
 					case 44:
-						func_643(iParam3, Global_262145.f_23884, "CC_BLUSH_7" /* GXT: Waves Left */, 5, 7, 1f, 123, -297200608);
+						func_643(iParam3, Global_262145.f_23884 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_WAVES_LEFT */, "CC_BLUSH_7" /* GXT: Waves Left */, 5, 7, 1f, 123, -297200608);
 						break;
 					
 					case 45:
-						func_643(iParam3, Global_262145.f_23885, "CC_BLUSH_8" /* GXT: Waves Right */, 5, 8, 1f, 124, 1917066264);
+						func_643(iParam3, Global_262145.f_23885 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_WAVES_RIGHT */, "CC_BLUSH_8" /* GXT: Waves Right */, 5, 8, 1f, 124, 1917066264);
 						break;
 					
 					case 46:
-						func_643(iParam3, Global_262145.f_23886, "CC_BLUSH_9" /* GXT: Totemic */, 5, 9, 1f, 125, -2114733193);
+						func_643(iParam3, Global_262145.f_23886 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_TOTEMIC */, "CC_BLUSH_9" /* GXT: Totemic */, 5, 9, 1f, 125, -2114733193);
 						break;
 					
 					case 47:
-						func_643(iParam3, Global_262145.f_23887, "CC_BLUSH_10" /* GXT: Streaks Left */, 5, 10, 1f, 126, 1601646962);
+						func_643(iParam3, Global_262145.f_23887 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_STREAKS_LEFT */, "CC_BLUSH_10" /* GXT: Streaks Left */, 5, 10, 1f, 126, 1601646962);
 						break;
 					
 					case 48:
-						func_643(iParam3, Global_262145.f_23888, "CC_BLUSH_11" /* GXT: Streaks Right */, 5, 11, 1f, 127, 1361941727);
+						func_643(iParam3, Global_262145.f_23888 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_STREAKS_RIGHT */, "CC_BLUSH_11" /* GXT: Streaks Right */, 5, 11, 1f, 127, 1361941727);
 						break;
 					
 					case 49:
-						func_643(iParam3, Global_262145.f_23889, "CC_BLUSH_12" /* GXT: Breakup Left */, 5, 12, 1f, 128, 1796589743);
+						func_643(iParam3, Global_262145.f_23889 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_BREAKUP_LEFT */, "CC_BLUSH_12" /* GXT: Breakup Left */, 5, 12, 1f, 128, 1796589743);
 						break;
 					
 					case 50:
-						func_643(iParam3, Global_262145.f_23890, "CC_BLUSH_13" /* GXT: Breakup Right */, 5, 13, 1f, 129, -1668568166);
+						func_643(iParam3, Global_262145.f_23890 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_BREAKUP_RIGHT */, "CC_BLUSH_13" /* GXT: Breakup Right */, 5, 13, 1f, 129, -1668568166);
 						break;
 					
 					case 51:
-						func_643(iParam3, Global_262145.f_23891, "CC_BLUSH_14" /* GXT: Blotch Left */, 5, 14, 1f, 130, -1908470015);
+						func_643(iParam3, Global_262145.f_23891 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_BLOTCH_LEFT */, "CC_BLUSH_14" /* GXT: Blotch Left */, 5, 14, 1f, 130, -1908470015);
 						break;
 					
 					case 52:
-						func_643(iParam3, Global_262145.f_23892, "CC_BLUSH_15" /* GXT: Blotch Right */, 5, 15, 1f, 131, -1204722971);
+						func_643(iParam3, Global_262145.f_23892 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_BLOTCH_RIGHT */, "CC_BLUSH_15" /* GXT: Blotch Right */, 5, 15, 1f, 131, -1204722971);
 						break;
 					
 					case 53:
-						func_643(iParam3, Global_262145.f_23893, "CC_BLUSH_16" /* GXT: Stripes */, 5, 16, 1f, 132, -1444166054);
+						func_643(iParam3, Global_262145.f_23893 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_STRIPES */, "CC_BLUSH_16" /* GXT: Stripes */, 5, 16, 1f, 132, -1444166054);
 						break;
 					
 					case 54:
-						func_643(iParam3, Global_262145.f_23894, "CC_BLUSH_17" /* GXT: The Elder */, 5, 17, 1f, 133, -1083477643);
+						func_643(iParam3, Global_262145.f_23894 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_THE_ELDER */, "CC_BLUSH_17" /* GXT: The Elder */, 5, 17, 1f, 133, -1083477643);
 						break;
 					
 					case 55:
-						func_643(iParam3, Global_262145.f_23895, "CC_BLUSH_18" /* GXT: Vertical Stripe */, 5, 18, 1f, 134, -1319381674);
+						func_643(iParam3, Global_262145.f_23895 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_VERTICAL_STRIPE */, "CC_BLUSH_18" /* GXT: Vertical Stripe */, 5, 18, 1f, 134, -1319381674);
 						break;
 					
 					case 56:
-						func_643(iParam3, Global_262145.f_23896, "CC_BLUSH_19" /* GXT: Clan */, 5, 19, 1f, 135, -866579660);
+						func_643(iParam3, Global_262145.f_23896 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_CLAN */, "CC_BLUSH_19" /* GXT: Clan */, 5, 19, 1f, 135, -866579660);
 						break;
 					
 					case 57:
-						func_643(iParam3, Global_262145.f_23897, "CC_BLUSH_20" /* GXT: Splats Right */, 5, 20, 1f, 136, -151756966);
+						func_643(iParam3, Global_262145.f_23897 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_SPLATS_RIGHT */, "CC_BLUSH_20" /* GXT: Splats Right */, 5, 20, 1f, 136, -151756966);
 						break;
 					
 					case 58:
-						func_643(iParam3, Global_262145.f_23898, "CC_BLUSH_21" /* GXT: Splats Left */, 5, 21, 1f, 137, 423011294);
+						func_643(iParam3, Global_262145.f_23898 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_SPLATS_LEFT */, "CC_BLUSH_21" /* GXT: Splats Left */, 5, 21, 1f, 137, 423011294);
 						break;
 					
 					case 59:
-						func_643(iParam3, Global_262145.f_23899, "CC_BLUSH_22" /* GXT: The Phoenix */, 5, 22, 1f, 138, 159450227);
+						func_643(iParam3, Global_262145.f_23899 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_THE_PHOENIX */, "CC_BLUSH_22" /* GXT: The Phoenix */, 5, 22, 1f, 138, 159450227);
 						break;
 					
 					case 60:
-						func_643(iParam3, Global_262145.f_23900, "CC_BLUSH_23" /* GXT: Ancestral */, 5, 23, 1f, 139, 1002989825);
+						func_643(iParam3, Global_262145.f_23900 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_ANCESTRAL */, "CC_BLUSH_23" /* GXT: Ancestral */, 5, 23, 1f, 139, 1002989825);
 						break;
 					
 					case 61:
-						func_643(iParam3, Global_262145.f_23901, "CC_BLUSH_24" /* GXT: Coverage */, 5, 24, 1f, 140, 773705132);
+						func_643(iParam3, Global_262145.f_23901 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_COVERAGE */, "CC_BLUSH_24" /* GXT: Coverage */, 5, 24, 1f, 140, 773705132);
 						break;
 					
 					case 62:
-						func_643(iParam3, Global_262145.f_23902, "CC_BLUSH_25" /* GXT: Symmetry */, 5, 25, 1f, 141, 1020488435);
+						func_643(iParam3, Global_262145.f_23902 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_SYMMETRY */, "CC_BLUSH_25" /* GXT: Symmetry */, 5, 25, 1f, 141, 1020488435);
 						break;
 					
 					case 63:
-						func_643(iParam3, Global_262145.f_23903, "CC_BLUSH_26" /* GXT: Fingerprints */, 5, 26, 1f, 142, 778620446);
+						func_643(iParam3, Global_262145.f_23903 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_FINGERPRINTS */, "CC_BLUSH_26" /* GXT: Fingerprints */, 5, 26, 1f, 142, 778620446);
 						break;
 					
 					case 64:
-						func_643(iParam3, Global_262145.f_23904, "CC_BLUSH_27" /* GXT: Blotch Lower */, 5, 27, 1f, 143, 1962433344);
+						func_643(iParam3, Global_262145.f_23904 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_BLOTCH_LOWER */, "CC_BLUSH_27" /* GXT: Blotch Lower */, 5, 27, 1f, 143, 1962433344);
 						break;
 					
 					case 65:
-						func_643(iParam3, Global_262145.f_23905, "CC_BLUSH_28" /* GXT: The Spirit */, 5, 28, 1f, 144, 1733476341);
+						func_643(iParam3, Global_262145.f_23905 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_THE_SPIRIT */, "CC_BLUSH_28" /* GXT: The Spirit */, 5, 28, 1f, 144, 1733476341);
 						break;
 					
 					case 66:
-						func_643(iParam3, Global_262145.f_23906, "CC_BLUSH_29" /* GXT: Cheek Stripes */, 5, 29, 1f, 145, -2020802455);
+						func_643(iParam3, Global_262145.f_23906 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_CHEEK_STRIPES */, "CC_BLUSH_29" /* GXT: Cheek Stripes */, 5, 29, 1f, 145, -2020802455);
 						break;
 					
 					case 67:
-						func_643(iParam3, Global_262145.f_23907, "CC_BLUSH_30" /* GXT: The Demon */, 5, 30, 1f, 146, 770231294);
+						func_643(iParam3, Global_262145.f_23907 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_THE_DEMON */, "CC_BLUSH_30" /* GXT: The Demon */, 5, 30, 1f, 146, 770231294);
 						break;
 					
 					case 68:
-						func_643(iParam3, Global_262145.f_23908, "CC_BLUSH_31" /* GXT: Mandible */, 5, 31, 1f, 147, 1612460136);
+						func_643(iParam3, Global_262145.f_23908 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_MANDIBLE */, "CC_BLUSH_31" /* GXT: Mandible */, 5, 31, 1f, 147, 1612460136);
 						break;
 					
 					case 69:
-						func_643(iParam3, Global_262145.f_23909, "CC_BLUSH_32" /* GXT: Frontal */, 5, 32, 1f, 148, 1309412424);
+						func_643(iParam3, Global_262145.f_23909 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_FRONTAL */, "CC_BLUSH_32" /* GXT: Frontal */, 5, 32, 1f, 148, 1309412424);
 						break;
 					
 					case 70:
-						func_643(iParam3, Global_262145.f_30739, "CC_MKUP_72" /* GXT: Striped Camo */, 4, 72, 1f, 149, -1438584459);
+						func_643(iParam3, Global_262145.f_30739 /* Tunable: IH_FACEPAINT_STRIPED_CAMO */, "CC_MKUP_72" /* GXT: Striped Camo */, 4, 72, 1f, 149, -1438584459);
 						break;
 					
 					case 71:
-						func_643(iParam3, Global_262145.f_30740, "CC_MKUP_73" /* GXT: Woodland Camo */, 4, 73, 1f, 150, -1184165951);
+						func_643(iParam3, Global_262145.f_30740 /* Tunable: IH_FACEPAINT_WOODLAND_CAMO */, "CC_MKUP_73" /* GXT: Woodland Camo */, 4, 73, 1f, 150, -1184165951);
 						break;
 					
 					case 72:
-						func_643(iParam3, Global_262145.f_30741, "CC_MKUP_74" /* GXT: Hunter Camo */, 4, 74, 1f, 151, -951538820);
+						func_643(iParam3, Global_262145.f_30741 /* Tunable: IH_FACEPAINT_HUNTER_CAMO */, "CC_MKUP_74" /* GXT: Hunter Camo */, 4, 74, 1f, 151, -951538820);
 						break;
 					
 					case 73:
-						func_643(iParam3, Global_262145.f_30742, "CC_MKUP_75" /* GXT: Half Camo */, 4, 75, 1f, 152, -1796389178);
+						func_643(iParam3, Global_262145.f_30742 /* Tunable: IH_FACEPAINT_HALF_CAMO */, "CC_MKUP_75" /* GXT: Half Camo */, 4, 75, 1f, 152, -1796389178);
 						break;
 					
 					case 74:
-						func_643(iParam3, Global_262145.f_30743, "CC_MKUP_76" /* GXT: Blotchy Camo */, 4, 76, 1f, 153, -1564482965);
+						func_643(iParam3, Global_262145.f_30743 /* Tunable: IH_FACEPAINT_BLOTCHY_CAMO */, "CC_MKUP_76" /* GXT: Blotchy Camo */, 4, 76, 1f, 153, -1564482965);
 						break;
 					
 					case 75:
-						func_643(iParam3, Global_262145.f_30744, "CC_MKUP_77" /* GXT: Starfish Camo */, 4, 77, 1f, 154, 571695376);
+						func_643(iParam3, Global_262145.f_30744 /* Tunable: IH_FACEPAINT_STARFISH_CAMO */, "CC_MKUP_77" /* GXT: Starfish Camo */, 4, 77, 1f, 154, 571695376);
 						break;
 					
 					case 76:
-						func_643(iParam3, Global_262145.f_30745, "CC_MKUP_78" /* GXT: Ghost Camo */, 4, 78, 1f, 155, -1350988574);
+						func_643(iParam3, Global_262145.f_30745 /* Tunable: IH_FACEPAINT_GHOST_CAMO */, "CC_MKUP_78" /* GXT: Ghost Camo */, 4, 78, 1f, 155, -1350988574);
 						break;
 					
 					case 77:
-						func_643(iParam3, Global_262145.f_30746, "CC_MKUP_79" /* GXT: Blended Camo */, 4, 79, 1f, 156, -527667449);
+						func_643(iParam3, Global_262145.f_30746 /* Tunable: IH_FACEPAINT_BLENDED_CAMO */, "CC_MKUP_79" /* GXT: Blended Camo */, 4, 79, 1f, 156, -527667449);
 						break;
 					
 					case 78:
-						func_643(iParam3, Global_262145.f_30747, "CC_MKUP_80" /* GXT: Jungle Camo */, 4, 80, 1f, 157, 990258165);
+						func_643(iParam3, Global_262145.f_30747 /* Tunable: IH_FACEPAINT_JUNGLE_CAMO */, "CC_MKUP_80" /* GXT: Jungle Camo */, 4, 80, 1f, 157, 990258165);
 						break;
 					
 					case 79:
-						func_643(iParam3, Global_262145.f_32026, "CC_MKUP_81" /* GXT: Red Cheek Lines */, 4, 81, 1f, 158, 741836376);
+						func_643(iParam3, Global_262145.f_32026 /* Tunable: FIXER_FACEPAINT_RED_CHEEK_LINES */, "CC_MKUP_81" /* GXT: Red Cheek Lines */, 4, 81, 1f, 158, 741836376);
 						break;
 					
 					case 80:
-						func_643(iParam3, Global_262145.f_32027, "CC_MKUP_82" /* GXT: Green Cheek Lines */, 4, 82, 1f, 159, -173729484);
+						func_643(iParam3, Global_262145.f_32027 /* Tunable: FIXER_FACEPAINT_GREEN_CHEEK_LINES */, "CC_MKUP_82" /* GXT: Green Cheek Lines */, 4, 82, 1f, 159, -173729484);
 						break;
 					
 					case 81:
-						func_643(iParam3, Global_262145.f_32028, "CC_MKUP_83" /* GXT: Cool Eye Flicks */, 4, 83, 1f, 160, 668204433);
+						func_643(iParam3, Global_262145.f_32028 /* Tunable: FIXER_FACEPAINT_COOL_EYE_FLICKS */, "CC_MKUP_83" /* GXT: Cool Eye Flicks */, 4, 83, 1f, 160, 668204433);
 						break;
 					
 					case 82:
-						func_643(iParam3, Global_262145.f_32029, "CC_MKUP_84" /* GXT: Hot Eye Flicks */, 4, 84, 1f, 161, -2128891869);
+						func_643(iParam3, Global_262145.f_32029 /* Tunable: FIXER_FACEPAINT_HOT_EYE_FLICKS */, "CC_MKUP_84" /* GXT: Hot Eye Flicks */, 4, 84, 1f, 161, -2128891869);
 						break;
 					
 					case 83:
-						func_643(iParam3, Global_262145.f_32030, "CC_MKUP_85" /* GXT: Blue Eye Plaid */, 4, 85, 1f, 162, 1936790734);
+						func_643(iParam3, Global_262145.f_32030 /* Tunable: FIXER_FACEPAINT_BLUE_EYE_PLAID */, "CC_MKUP_85" /* GXT: Blue Eye Plaid */, 4, 85, 1f, 162, 1936790734);
 						break;
 					
 					case 84:
-						func_643(iParam3, Global_262145.f_32031, "CC_MKUP_86" /* GXT: Green Eye Plaid */, 4, 86, 1f, 163, 1555523415);
+						func_643(iParam3, Global_262145.f_32031 /* Tunable: FIXER_FACEPAINT_GREEN_EYE_PLAID */, "CC_MKUP_86" /* GXT: Green Eye Plaid */, 4, 86, 1f, 163, 1555523415);
 						break;
 					
 					case 85:
-						func_643(iParam3, Global_262145.f_32032, "CC_MKUP_87" /* GXT: Orange Sun */, 4, 87, 1f, 164, 1310804523);
+						func_643(iParam3, Global_262145.f_32032 /* Tunable: FIXER_FACEPAINT_ORANGE_SUN */, "CC_MKUP_87" /* GXT: Orange Sun */, 4, 87, 1f, 164, 1310804523);
 						break;
 					
 					case 86:
-						func_643(iParam3, Global_262145.f_32033, "CC_MKUP_88" /* GXT: Red Sun */, 4, 88, 1f, 165, 205374789);
+						func_643(iParam3, Global_262145.f_32033 /* Tunable: FIXER_FACEPAINT_RED_SUN */, "CC_MKUP_88" /* GXT: Red Sun */, 4, 88, 1f, 165, 205374789);
 						break;
 					
 					case 87:
-						func_643(iParam3, Global_262145.f_32034, "CC_MKUP_89" /* GXT: White Lines & Dots */, 4, 89, 1f, 166, -1187045551);
+						func_643(iParam3, Global_262145.f_32034 /* Tunable: FIXER_FACEPAINT_WHITE_LINES_DOTS */, "CC_MKUP_89" /* GXT: White Lines & Dots */, 4, 89, 1f, 166, -1187045551);
 						break;
 					
 					case 88:
-						func_643(iParam3, Global_262145.f_32035, "CC_MKUP_90" /* GXT: Cool Lines & Dots */, 4, 90, 1f, 167, -948126772);
+						func_643(iParam3, Global_262145.f_32035 /* Tunable: FIXER_FACEPAINT_COOL_LINES_DOTS */, "CC_MKUP_90" /* GXT: Cool Lines & Dots */, 4, 90, 1f, 167, -948126772);
 						break;
 					
 					case 89:
-						func_643(iParam3, Global_262145.f_32036, "CC_MKUP_91" /* GXT: Blue Eyemask */, 4, 91, 1f, 168, -1800186310);
+						func_643(iParam3, Global_262145.f_32036 /* Tunable: FIXER_FACEPAINT_PURPLE_EYEMASK */, "CC_MKUP_91" /* GXT: Blue Eyemask */, 4, 91, 1f, 168, -1800186310);
 						break;
 					
 					case 90:
-						func_643(iParam3, Global_262145.f_32037, "CC_MKUP_92" /* GXT: Pink Eyemask */, 4, 92, 1f, 169, -1562774905);
+						func_643(iParam3, Global_262145.f_32037 /* Tunable: FIXER_FACEPAINT_PINK_EYEMASK */, "CC_MKUP_92" /* GXT: Pink Eyemask */, 4, 92, 1f, 169, -1562774905);
 						break;
 					
 					case 91:
-						func_643(iParam3, Global_262145.f_32038, "CC_MKUP_93" /* GXT: Yellow Tribal */, 4, 93, 1f, 170, -266826481);
+						func_643(iParam3, Global_262145.f_32038 /* Tunable: FIXER_FACEPAINT_YELLOW_TRIBAL */, "CC_MKUP_93" /* GXT: Yellow Tribal */, 4, 93, 1f, 170, -266826481);
 						break;
 					
 					case 92:
-						func_643(iParam3, Global_262145.f_32039, "CC_MKUP_94" /* GXT: Green Tribal */, 4, 94, 1f, 171, -35510110);
+						func_643(iParam3, Global_262145.f_32039 /* Tunable: FIXER_FACEPAINT_GREEN_TRIBAL */, "CC_MKUP_94" /* GXT: Green Tribal */, 4, 94, 1f, 171, -35510110);
 						break;
 					
 					case 93:
@@ -108213,107 +108213,107 @@ bool func_639(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//
 				switch (iParam2)
 				{
 					case 0:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2619)), "NONE" /* GXT: None */, 4, -1, 1f, 28, -1985437042);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2619 /* Tunable: MAKEUP_UNLOCKS_BASIC_EXPENDITURE_TUNABLE */)), "NONE" /* GXT: None */, 4, -1, 1f, 28, -1985437042);
 						break;
 					
 					case 1:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(225) * Global_262145.f_2620)), "CC_MKUP_0" /* GXT: Smoky Black */, 4, 0, 1f, 29, 2060125395);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(225) * Global_262145.f_2620 /* Tunable: MAKEUP_UNLOCKS_NUDE_EXPENDITURE_TUNABLE */)), "CC_MKUP_0" /* GXT: Smoky Black */, 4, 0, 1f, 29, 2060125395);
 						break;
 					
 					case 2:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(250) * Global_262145.f_2621)), "CC_MKUP_1" /* GXT: Bronze */, 4, 1, 1f, 30, 1845619521);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(250) * Global_262145.f_2621 /* Tunable: MAKEUP_UNLOCKS_SMOKY_EXPENDITURE_TUNABLE */)), "CC_MKUP_1" /* GXT: Bronze */, 4, 1, 1f, 30, 1845619521);
 						break;
 					
 					case 3:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(175) * Global_262145.f_2622)), "CC_MKUP_2" /* GXT: Soft Gray */, 4, 2, 1f, 31, 1352314995);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(175) * Global_262145.f_2622 /* Tunable: MAKEUP_UNLOCKS_GOTHIC_EXPENDITURE_TUNABLE */)), "CC_MKUP_2" /* GXT: Soft Gray */, 4, 2, 1f, 31, 1352314995);
 						break;
 					
 					case 4:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(610) * Global_262145.f_2623)), "CC_MKUP_3" /* GXT: Retro Glam */, 4, 3, 1f, 32, 1121916156);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(610) * Global_262145.f_2623 /* Tunable: MAKEUP_UNLOCKS_ROCKER_EXPENDITURE_TUNABLE */)), "CC_MKUP_3" /* GXT: Retro Glam */, 4, 3, 1f, 32, 1121916156);
 						break;
 					
 					case 5:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(150) * Global_262145.f_2624)), "CC_MKUP_4" /* GXT: Natural Look */, 4, 4, 1f, 33, 890173784);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(150) * Global_262145.f_2624 /* Tunable: MAKEUP_UNLOCKS_PARTYGIRL_EXPENDITURE_TUNABLE */)), "CC_MKUP_4" /* GXT: Natural Look */, 4, 4, 1f, 33, 890173784);
 						break;
 					
 					case 6:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(200) * Global_262145.f_2625)), "CC_MKUP_5" /* GXT: Cat Eyes */, 4, 5, 1f, 34, 646995035);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(200) * Global_262145.f_2625 /* Tunable: MAKEUP_UNLOCKS_ARTSY_EXPENDITURE_TUNABLE */)), "CC_MKUP_5" /* GXT: Cat Eyes */, 4, 5, 1f, 34, 646995035);
 						break;
 					
 					case 7:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(870) * Global_262145.f_2626)), "CC_MKUP_6" /* GXT: Chola */, 4, 6, 1f, 35, 885782742);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(870) * Global_262145.f_2626 /* Tunable: MAKEUP_UNLOCKS_TRAILERPARKPRINCESS_EXPENDITURE_TUNABLE */)), "CC_MKUP_6" /* GXT: Chola */, 4, 6, 1f, 35, 885782742);
 						break;
 					
 					case 8:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(275) * Global_262145.f_2627)), "CC_MKUP_7" /* GXT: Vamp */, 4, 7, 1f, 36, 645225513);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(275) * Global_262145.f_2627 /* Tunable: MAKEUP_UNLOCKS_SOCCERMOM_EXPENDITURE_TUNABLE */)), "CC_MKUP_7" /* GXT: Vamp */, 4, 7, 1f, 36, 645225513);
 						break;
 					
 					case 9:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(480) * Global_262145.f_2628)), "CC_MKUP_8" /* GXT: Vinewood Glamour */, 4, 8, 1f, 37, 173548527);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(480) * Global_262145.f_2628 /* Tunable: MAKEUP_UNLOCKS_FEMMEFATALE_EXPENDITURE_TUNABLE */)), "CC_MKUP_8" /* GXT: Vinewood Glamour */, 4, 8, 1f, 37, 173548527);
 						break;
 					
 					case 10:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2000) * Global_262145.f_2629)), "CC_MKUP_9" /* GXT: Bubblegum */, 4, 9, 1f, 38, -421803070);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2000) * Global_262145.f_2629 /* Tunable: MAKEUP_UNLOCKS_SERIOUSLYCERISE_EXPENDITURE_TUNABLE */)), "CC_MKUP_9" /* GXT: Bubblegum */, 4, 9, 1f, 38, -421803070);
 						break;
 					
 					case 11:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(740) * Global_262145.f_2630)), "CC_MKUP_10" /* GXT: Aqua Dream */, 4, 10, 1f, 39, 1299978497);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(740) * Global_262145.f_2630 /* Tunable: MAKEUP_UNLOCKS_DISCOTEQUEWRECK_EXPENDITURE_TUNABLE */)), "CC_MKUP_10" /* GXT: Aqua Dream */, 4, 10, 1f, 39, 1299978497);
 						break;
 					
 					case 12:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(935) * Global_262145.f_2631)), "CC_MKUP_11" /* GXT: Pin Up */, 4, 11, 1f, 40, 1529427035);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(935) * Global_262145.f_2631 /* Tunable: MAKEUP_UNLOCKS_BEAUTYSPOT_EXPENDITURE_TUNABLE */)), "CC_MKUP_11" /* GXT: Pin Up */, 4, 11, 1f, 40, 1529427035);
 						break;
 					
 					case 13:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(675) * Global_262145.f_2632)), "CC_MKUP_12" /* GXT: Purple Passion */, 4, 12, 1f, 41, 342566624);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(675) * Global_262145.f_2632 /* Tunable: MAKEUP_UNLOCKS_TONEDDOWN_EXPENDITURE_TUNABLE */)), "CC_MKUP_12" /* GXT: Purple Passion */, 4, 12, 1f, 41, 342566624);
 						break;
 					
 					case 14:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1000) * Global_262145.f_2633)), "CC_MKUP_13" /* GXT: Smoky Cat Eye */, 4, 13, 1f, 42, 575062679);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1000) * Global_262145.f_2633 /* Tunable: MAKEUP_UNLOCKS_CYANSWIPED_EXPENDITURE_TUNABLE */)), "CC_MKUP_13" /* GXT: Smoky Cat Eye */, 4, 13, 1f, 42, 575062679);
 						break;
 					
 					case 15:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(805) * Global_262145.f_2634)), "CC_MKUP_14" /* GXT: Smoldering Ruby */, 4, 14, 1f, 43, -2035840169);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(805) * Global_262145.f_2634 /* Tunable: MAKEUP_UNLOCKS_MORNINGAFTER_EXPENDITURE_TUNABLE */)), "CC_MKUP_14" /* GXT: Smoldering Ruby */, 4, 14, 1f, 43, -2035840169);
 						break;
 					
 					case 16:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(545) * Global_262145.f_2635)), "CC_MKUP_15" /* GXT: Pop Princess */, 4, 15, 1f, 44, -1807833467);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(545) * Global_262145.f_2635 /* Tunable: MAKEUP_UNLOCKS_COVERGIRL_EXPENDITURE_TUNABLE */)), "CC_MKUP_15" /* GXT: Pop Princess */, 4, 15, 1f, 44, -1807833467);
 						break;
 					
 					case 17:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(300) * Global_262145.f_2652)), "CC_MKUP_32" /* GXT: Guyliner */, 4, 32, 1f, 91, 1762447394);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(300) * Global_262145.f_2652 /* Tunable: MAKEUP_UNLOCKS_GUYLINER_EXPENDITURE_TUNABLE */)), "CC_MKUP_32" /* GXT: Guyliner */, 4, 32, 1f, 91, 1762447394);
 						break;
 					
 					case 18:
-						func_643(iParam3, Global_262145.f_9296, "CC_MKUP_34" /* GXT: Blood Tears */, 4, 34, 1f, -1, 2001923246);
+						func_643(iParam3, Global_262145.f_9296 /* Tunable: MAKEUP_MAKEUP_BLOOD_TEARS */, "CC_MKUP_34" /* GXT: Blood Tears */, 4, 34, 1f, -1, 2001923246);
 						break;
 					
 					case 19:
-						func_643(iParam3, Global_262145.f_9297, "CC_MKUP_35" /* GXT: Heavy Metal */, 4, 35, 1f, -1, 178590600);
+						func_643(iParam3, Global_262145.f_9297 /* Tunable: MAKEUP_MAKEUP_HEAVY_METAL */, "CC_MKUP_35" /* GXT: Heavy Metal */, 4, 35, 1f, -1, 178590600);
 						break;
 					
 					case 20:
-						func_643(iParam3, Global_262145.f_9298, "CC_MKUP_36" /* GXT: Sorrow */, 4, 36, 1f, -1, 1262851572);
+						func_643(iParam3, Global_262145.f_9298 /* Tunable: MAKEUP_MAKEUP_SORROW */, "CC_MKUP_36" /* GXT: Sorrow */, 4, 36, 1f, -1, 1262851572);
 						break;
 					
 					case 21:
-						func_643(iParam3, Global_262145.f_9299, "CC_MKUP_37" /* GXT: Prince of Darkness */, 4, 37, 1f, -1, 537411450);
+						func_643(iParam3, Global_262145.f_9299 /* Tunable: MAKEUP_MAKEUP_PRINCE_OF_DARKNESS */, "CC_MKUP_37" /* GXT: Prince of Darkness */, 4, 37, 1f, -1, 537411450);
 						break;
 					
 					case 22:
-						func_643(iParam3, Global_262145.f_9300, "CC_MKUP_38" /* GXT: Rocker */, 4, 38, 1f, -1, 785046783);
+						func_643(iParam3, Global_262145.f_9300 /* Tunable: MAKEUP_MAKEUP_ROCKER */, "CC_MKUP_38" /* GXT: Rocker */, 4, 38, 1f, -1, 785046783);
 						break;
 					
 					case 23:
-						func_643(iParam3, Global_262145.f_9301, "CC_MKUP_39" /* GXT: Goth */, 4, 39, 1f, -1, -2080536733);
+						func_643(iParam3, Global_262145.f_9301 /* Tunable: MAKEUP_MAKEUP_GOTH */, "CC_MKUP_39" /* GXT: Goth */, 4, 39, 1f, -1, -2080536733);
 						break;
 					
 					case 24:
-						func_643(iParam3, Global_262145.f_9302, "CC_MKUP_40" /* GXT: Punk */, 4, 40, 1f, -1, -1640317987);
+						func_643(iParam3, Global_262145.f_9302 /* Tunable: MAKEUP_MAKEUP_PUNK */, "CC_MKUP_40" /* GXT: Punk */, 4, 40, 1f, -1, -1640317987);
 						break;
 					
 					case 25:
-						func_643(iParam3, Global_262145.f_9303, "CC_MKUP_41" /* GXT: Devastated */, 4, 41, 1f, -1, 1737477768);
+						func_643(iParam3, Global_262145.f_9303 /* Tunable: MAKEUP_MAKEUP_DEVASTATED */, "CC_MKUP_41" /* GXT: Devastated */, 4, 41, 1f, -1, 1737477768);
 						break;
 					
 					case 26:
@@ -108326,47 +108326,47 @@ bool func_639(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//
 				switch (iParam2)
 				{
 					case 0:
-						func_643(iParam3, Global_262145.f_9312, "NONE" /* GXT: None */, 8, -1, 1f, -1, 162597385);
+						func_643(iParam3, Global_262145.f_9312 /* Tunable: MAKEUP_LIPS_NONE */, "NONE" /* GXT: None */, 8, -1, 1f, -1, 162597385);
 						break;
 					
 					case 1:
-						func_643(iParam3, Global_262145.f_9313, "CC_LIPSTICK_0" /* GXT: Color Matte */, 8, 0, 1f, -1, 223154493);
+						func_643(iParam3, Global_262145.f_9313 /* Tunable: MAKEUP_LIPS_COLOR_GLOSS */, "CC_LIPSTICK_0" /* GXT: Color Matte */, 8, 0, 1f, -1, 223154493);
 						break;
 					
 					case 2:
-						func_643(iParam3, Global_262145.f_9314, "CC_LIPSTICK_1" /* GXT: Color Gloss */, 8, 1, 1f, -1, 2140763608);
+						func_643(iParam3, Global_262145.f_9314 /* Tunable: MAKEUP_LIPS_COLOR_MATT */, "CC_LIPSTICK_1" /* GXT: Color Gloss */, 8, 1, 1f, -1, 2140763608);
 						break;
 					
 					case 3:
-						func_643(iParam3, Global_262145.f_9315, "CC_LIPSTICK_2" /* GXT: Lined Matte */, 8, 2, 1f, -1, 1886967703);
+						func_643(iParam3, Global_262145.f_9315 /* Tunable: MAKEUP_LIPS_LINED_GLOSS */, "CC_LIPSTICK_2" /* GXT: Lined Matte */, 8, 2, 1f, -1, 1886967703);
 						break;
 					
 					case 4:
-						func_643(iParam3, Global_262145.f_9316, "CC_LIPSTICK_3" /* GXT: Lined Gloss */, 8, 3, 1f, -1, 1237289509);
+						func_643(iParam3, Global_262145.f_9316 /* Tunable: MAKEUP_LIPS_LINED_MATT */, "CC_LIPSTICK_3" /* GXT: Lined Gloss */, 8, 3, 1f, -1, 1237289509);
 						break;
 					
 					case 5:
-						func_643(iParam3, Global_262145.f_9317, "CC_LIPSTICK_4" /* GXT: Heavy Lined Matte */, 8, 4, 1f, -1, -1236704457);
+						func_643(iParam3, Global_262145.f_9317 /* Tunable: MAKEUP_LIPS_HEAVY_LINED_GLOSS */, "CC_LIPSTICK_4" /* GXT: Heavy Lined Matte */, 8, 4, 1f, -1, -1236704457);
 						break;
 					
 					case 6:
-						func_643(iParam3, Global_262145.f_9318, "CC_LIPSTICK_5" /* GXT: Heavy Lined Gloss */, 8, 5, 1f, -1, -1467824214);
+						func_643(iParam3, Global_262145.f_9318 /* Tunable: MAKEUP_LIPS_HEAVY_LINED_MATT */, "CC_LIPSTICK_5" /* GXT: Heavy Lined Gloss */, 8, 5, 1f, -1, -1467824214);
 						break;
 					
 					case 7:
-						func_643(iParam3, Global_262145.f_9319, "CC_LIPSTICK_6" /* GXT: Lined Nude Matte */, 8, 6, 1f, -1, -1595623314);
+						func_643(iParam3, Global_262145.f_9319 /* Tunable: MAKEUP_LIPS_LINED_NUDE_GLOSS */, "CC_LIPSTICK_6" /* GXT: Lined Nude Matte */, 8, 6, 1f, -1, -1595623314);
 						break;
 					
 					case 8:
-						func_643(iParam3, Global_262145.f_9320, "CC_LIPSTICK_7" /* GXT: Lined Nude Gloss */, 8, 7, 1f, -1, -1829299053);
+						func_643(iParam3, Global_262145.f_9320 /* Tunable: MAKEUP_LIPS_LINED_NUDE_MATT */, "CC_LIPSTICK_7" /* GXT: Lined Nude Gloss */, 8, 7, 1f, -1, -1829299053);
 						break;
 					
 					case 9:
-						func_643(iParam3, Global_262145.f_9321, "CC_LIPSTICK_8" /* GXT: Smudged */, 8, 8, 1f, -1, -1581270496);
+						func_643(iParam3, Global_262145.f_9321 /* Tunable: MAKEUP_LIPS_SMUDGED */, "CC_LIPSTICK_8" /* GXT: Smudged */, 8, 8, 1f, -1, -1581270496);
 						break;
 					
 					case 10:
-						func_643(iParam3, Global_262145.f_9322, "CC_LIPSTICK_9" /* GXT: Geisha */, 8, 9, 1f, -1, -736238561);
+						func_643(iParam3, Global_262145.f_9322 /* Tunable: MAKEUP_LIPS_GEISHA */, "CC_LIPSTICK_9" /* GXT: Geisha */, 8, 9, 1f, -1, -736238561);
 						break;
 					
 					case 11:
@@ -108448,23 +108448,23 @@ bool func_639(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//
 						break;
 					
 					case 16:
-						func_644(iParam3, Global_262145.f_7485, "CC_F_HS_17" /* GXT: Messy Bun */, func_269(func_118(iParam0, joaat("DLC_MP_BEACH_F_HAIR05"), 2, 4)), -1005003578);
+						func_644(iParam3, Global_262145.f_7485 /* Tunable: DLC_FEMALE_HAIR_MESSY_BUN_BLACK */, "CC_F_HS_17" /* GXT: Messy Bun */, func_269(func_118(iParam0, joaat("DLC_MP_BEACH_F_HAIR05"), 2, 4)), -1005003578);
 						break;
 					
 					case 17:
-						func_644(iParam3, Global_262145.f_7490, "CC_F_HS_16" /* GXT: Pin Up Girl */, func_269(func_118(iParam0, joaat("DLC_MP_BEACH_F_HAIR00"), 2, 4)), -734266100);
+						func_644(iParam3, Global_262145.f_7490 /* Tunable: DLC_FEMALE_HAIR_PIN_UP_GIRL_BLACK */, "CC_F_HS_16" /* GXT: Pin Up Girl */, func_269(func_118(iParam0, joaat("DLC_MP_BEACH_F_HAIR00"), 2, 4)), -734266100);
 						break;
 					
 					case 18:
-						func_644(iParam3, Global_262145.f_7500, "CC_F_HS_18" /* GXT: Tight Bun */, func_269(func_118(iParam0, joaat("DLC_MP_BUSI_F_HAIR0_0"), 2, 4)), 1360852708);
+						func_644(iParam3, Global_262145.f_7500 /* Tunable: DLC_FEMALE_HAIR_TIGHT_BUN_BLACK */, "CC_F_HS_18" /* GXT: Tight Bun */, func_269(func_118(iParam0, joaat("DLC_MP_BUSI_F_HAIR0_0"), 2, 4)), 1360852708);
 						break;
 					
 					case 19:
-						func_644(iParam3, Global_262145.f_7493, "CC_F_HS_19" /* GXT: Twisted Bob */, func_269(func_118(iParam0, joaat("DLC_MP_BUSI_F_HAIR1_0"), 2, 4)), 729066388);
+						func_644(iParam3, Global_262145.f_7493 /* Tunable: DLC_FEMALE_HAIR_TWISTED_BOB_BLACK */, "CC_F_HS_19" /* GXT: Twisted Bob */, func_269(func_118(iParam0, joaat("DLC_MP_BUSI_F_HAIR1_0"), 2, 4)), 729066388);
 						break;
 					
 					case 20:
-						func_644(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(980) * Global_262145.f_7057)), "CC_F_HS_23" /* GXT: Flapper Bob */, func_269(func_118(iParam0, joaat("DLC_MP_VAL_F_HAIR0_0"), 2, 4)), 914374215);
+						func_644(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(980) * Global_262145.f_7057 /* Tunable: VALENTINES_MODIFIER_HAIRCUTS_MULTIPLIER */)), "CC_F_HS_23" /* GXT: Flapper Bob */, func_269(func_118(iParam0, joaat("DLC_MP_VAL_F_HAIR0_0"), 2, 4)), 914374215);
 						break;
 					
 					case 21:
@@ -108476,91 +108476,91 @@ bool func_639(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//
 						break;
 					
 					case 23:
-						func_644(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(4965) * Global_262145.f_8275)), "CC_F_HS_22" /* GXT: Mullet */, func_269(func_118(iParam0, joaat("DLC_MP_IND_F_HAIR0_0"), 2, 4)), -1827014795);
+						func_644(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(4965) * Global_262145.f_8275 /* Tunable: HAIR_MAKEUP_INDEPENDENCEDAY_GROUP */)), "CC_F_HS_22" /* GXT: Mullet */, func_269(func_118(iParam0, joaat("DLC_MP_IND_F_HAIR0_0"), 2, 4)), -1827014795);
 						break;
 					
 					case 24:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_12437) * Global_262145.f_12469)), "CLO_S1F_H_0_0" /* GXT: Pinched Cornrows */, func_269(func_118(iParam0, joaat("DLC_MP_LOW_F_HAIR0_0"), 2, 4)), 1839705233);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_12437 /* Tunable: FEMALE_HAIR_PINCHED_CORNROWS */) * Global_262145.f_12469 /* Tunable: LOWRIDER_MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_S1F_H_0_0" /* GXT: Pinched Cornrows */, func_269(func_118(iParam0, joaat("DLC_MP_LOW_F_HAIR0_0"), 2, 4)), 1839705233);
 						break;
 					
 					case 25:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_12438) * Global_262145.f_12469)), "CLO_S1F_H_1_0" /* GXT: Leaf Cornrows */, func_269(func_118(iParam0, joaat("DLC_MP_LOW_F_HAIR1_0"), 2, 4)), 1466269709);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_12438 /* Tunable: FEMALE_HAIR_LEAF_CORNROWS */) * Global_262145.f_12469 /* Tunable: LOWRIDER_MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_S1F_H_1_0" /* GXT: Leaf Cornrows */, func_269(func_118(iParam0, joaat("DLC_MP_LOW_F_HAIR1_0"), 2, 4)), 1466269709);
 						break;
 					
 					case 26:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_12439) * Global_262145.f_12469)), "CLO_S1F_H_2_0" /* GXT: Zig Zag Cornrows */, func_269(func_118(iParam0, joaat("DLC_MP_LOW_F_HAIR2_0"), 2, 4)), -469722811);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_12439 /* Tunable: FEMALE_HAIR_ZIG_ZAG_CORNROWS */) * Global_262145.f_12469 /* Tunable: LOWRIDER_MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_S1F_H_2_0" /* GXT: Zig Zag Cornrows */, func_269(func_118(iParam0, joaat("DLC_MP_LOW_F_HAIR2_0"), 2, 4)), -469722811);
 						break;
 					
 					case 27:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_12440) * Global_262145.f_12469)), "CLO_S1F_H_3_0" /* GXT: Pigtail Bangs */, func_269(func_118(iParam0, joaat("DLC_MP_LOW_F_HAIR3_0"), 2, 4)), -692060480);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_12440 /* Tunable: FEMALE_HAIR_PIGTAIL_BANGS */) * Global_262145.f_12469 /* Tunable: LOWRIDER_MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_S1F_H_3_0" /* GXT: Pigtail Bangs */, func_269(func_118(iParam0, joaat("DLC_MP_LOW_F_HAIR3_0"), 2, 4)), -692060480);
 						break;
 					
 					case 28:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_15070) * Global_262145.f_15023)), "CLO_S2F_H_0_0" /* GXT: Wave Braids */, func_269(func_118(iParam0, joaat("DLC_MP_LOW2_F_HAIR0_0"), 2, 4)), -1056910526);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_15070 /* Tunable: FEMALE_HAIR_WAVE_BRAIDS */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_S2F_H_0_0" /* GXT: Wave Braids */, func_269(func_118(iParam0, joaat("DLC_MP_LOW2_F_HAIR0_0"), 2, 4)), -1056910526);
 						break;
 					
 					case 29:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_15071) * Global_262145.f_15023)), "CLO_S2F_H_1_0" /* GXT: Coil Braids */, func_269(func_118(iParam0, joaat("DLC_MP_LOW2_F_HAIR1_0"), 2, 4)), -1286391833);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_15071 /* Tunable: FEMALE_HAIR_COIL_BRAIDS */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_S2F_H_1_0" /* GXT: Coil Braids */, func_269(func_118(iParam0, joaat("DLC_MP_LOW2_F_HAIR1_0"), 2, 4)), -1286391833);
 						break;
 					
 					case 30:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_15072) * Global_262145.f_15023)), "CLO_S2F_H_2_0" /* GXT: Rolled Quiff */, func_269(func_118(iParam0, joaat("DLC_MP_LOW2_F_HAIR2_0"), 2, 4)), 1010978731);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_15072 /* Tunable: FEMALE_HAIR_ROLLED_QUIFF */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_S2F_H_2_0" /* GXT: Rolled Quiff */, func_269(func_118(iParam0, joaat("DLC_MP_LOW2_F_HAIR2_0"), 2, 4)), 1010978731);
 						break;
 					
 					case 31:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_17962) * Global_262145.f_15023)), "CLO_BIF_H_0_0" /* GXT: Loose Swept Back */, func_269(func_118(iParam0, joaat("DLC_MP_BIKER_F_HAIR_0_0"), 2, 4)), 492573151);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_17962 /* Tunable: BIKER_HAIR_LOOSE_SWEPT_BACK */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_BIF_H_0_0" /* GXT: Loose Swept Back */, func_269(func_118(iParam0, joaat("DLC_MP_BIKER_F_HAIR_0_0"), 2, 4)), 492573151);
 						break;
 					
 					case 32:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_17963) * Global_262145.f_15023)), "CLO_BIF_H_1_0" /* GXT: Undercut Swept Back */, func_269(func_118(iParam0, joaat("DLC_MP_BIKER_F_HAIR_1_0"), 2, 4)), -1903922134);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_17963 /* Tunable: BIKER_HAIR_UNDERCUT_SWEPT_BACK */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_BIF_H_1_0" /* GXT: Undercut Swept Back */, func_269(func_118(iParam0, joaat("DLC_MP_BIKER_F_HAIR_1_0"), 2, 4)), -1903922134);
 						break;
 					
 					case 33:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_17964) * Global_262145.f_15023)), "CLO_BIF_H_2_0" /* GXT: Undercut Swept Side */, func_269(func_118(iParam0, joaat("DLC_MP_BIKER_F_HAIR_2_0"), 2, 4)), 2146031349);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_17964 /* Tunable: BIKER_HAIR_UNDERCUT_SWEPT_SIDE */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_BIF_H_2_0" /* GXT: Undercut Swept Side */, func_269(func_118(iParam0, joaat("DLC_MP_BIKER_F_HAIR_2_0"), 2, 4)), 2146031349);
 						break;
 					
 					case 34:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_17965) * Global_262145.f_15023)), "CLO_BIF_H_3_0" /* GXT: Spiked Mohawk */, func_269(func_118(iParam0, joaat("DLC_MP_BIKER_F_HAIR_3_0"), 2, 4)), 1931984241);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_17965 /* Tunable: BIKER_HAIR_SPIKED_MOHAWK */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_BIF_H_3_0" /* GXT: Spiked Mohawk */, func_269(func_118(iParam0, joaat("DLC_MP_BIKER_F_HAIR_3_0"), 2, 4)), 1931984241);
 						break;
 					
 					case 35:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_17966) * Global_262145.f_15023)), "CLO_BIF_H_4_0" /* GXT: Bandana and Braid */, func_269(func_118(iParam0, joaat("DLC_MP_BIKER_F_HAIR_4_0"), 2, 4)), 1432846833);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_17966 /* Tunable: BIKER_FEMALE_HAIR_BANDANA_AND_BRAID */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_BIF_H_4_0" /* GXT: Bandana and Braid */, func_269(func_118(iParam0, joaat("DLC_MP_BIKER_F_HAIR_4_0"), 2, 4)), 1432846833);
 						break;
 					
 					case 36:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_19147) * Global_262145.f_15023)), "CLO_BIF_H_5_0" /* GXT: Layered Mod */, func_269(func_118(iParam0, joaat("DLC_MP_BIKER_F_HAIR_6_0"), 2, 4)), -953555596);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_19147 /* Tunable: HAIR_LAYERED_MOD */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_BIF_H_5_0" /* GXT: Layered Mod */, func_269(func_118(iParam0, joaat("DLC_MP_BIKER_F_HAIR_6_0"), 2, 4)), -953555596);
 						break;
 					
 					case 37:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_19148) * Global_262145.f_15023)), "CLO_BIF_H_6_0" /* GXT: Skinbyrd */, func_269(func_118(iParam0, joaat("DLC_MP_BIKER_F_HAIR_5_0"), 2, 4)), -1233304549);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_19148 /* Tunable: HAIR_SKINBYRD */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_BIF_H_6_0" /* GXT: Skinbyrd */, func_269(func_118(iParam0, joaat("DLC_MP_BIKER_F_HAIR_5_0"), 2, 4)), -1233304549);
 						break;
 					
 					case 38:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_20344) * Global_262145.f_15023)), "CLO_GRF_H_0_0" /* GXT: Neat Bun */, func_118(iParam0, joaat("DLC_MP_GR_F_HAIR_37_0"), 2, 4), -1452856849);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_20344 /* Tunable: GR_FEMALE_HAIR_NEAT_BUN */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_GRF_H_0_0" /* GXT: Neat Bun */, func_118(iParam0, joaat("DLC_MP_GR_F_HAIR_37_0"), 2, 4), -1452856849);
 						break;
 					
 					case 39:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_20345) * Global_262145.f_15023)), "CLO_GRF_H_1_0" /* GXT: Short Bob */, func_118(iParam0, joaat("DLC_MP_GR_F_HAIR_38_0"), 2, 4), -1678668028);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_20345 /* Tunable: GR_FEMALE_HAIR_SHORT_BOB */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_GRF_H_1_0" /* GXT: Short Bob */, func_118(iParam0, joaat("DLC_MP_GR_F_HAIR_38_0"), 2, 4), -1678668028);
 						break;
 					
 					case 40:
-						func_644(iParam3, SYSTEM::ROUND((0f * Global_262145.f_15023)), "CLO_VWF_H_0_0" /* GXT: Impotent Rage */, func_118(iParam0, joaat("DLC_MP_VWD_F_HAIR_0_0"), 2, 4), -1537104552);
+						func_644(iParam3, SYSTEM::ROUND((0f * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_VWF_H_0_0" /* GXT: Impotent Rage */, func_118(iParam0, joaat("DLC_MP_VWD_F_HAIR_0_0"), 2, 4), -1537104552);
 						break;
 					
 					case 41:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_31199) * Global_262145.f_15023)), "CLO_TRF_H_0_0" /* GXT: Afro */, func_118(iParam0, joaat("DLC_MP_TUNER_F_HAIR_0_0"), 2, 4), 2129418862);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_31199 /* Tunable: TUNER_HAIR_AFRO_FULL */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_TRF_H_0_0" /* GXT: Afro */, func_118(iParam0, joaat("DLC_MP_TUNER_F_HAIR_0_0"), 2, 4), 2129418862);
 						break;
 					
 					case 42:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_32041) * Global_262145.f_15023)), "CLO_FXF_H_0_0" /* GXT: Pixie Wavy */, func_118(iParam0, joaat("DLC_MP_FIXER_F_HAIR_0_0"), 2, 4), -1901069835);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_32041 /* Tunable: FIXER_HAIRSTYLE_PIXIE_WAVY */) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_FXF_H_0_0" /* GXT: Pixie Wavy */, func_118(iParam0, joaat("DLC_MP_FIXER_F_HAIR_0_0"), 2, 4), -1901069835);
 						break;
 					
 					case 43:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_33112) * Global_262145.f_15023)), "CLO_SBF_H_0_0" /* GXT: Short Tucked Bob */, func_118(iParam0, joaat("DLC_MP_SUM2_F_HAIR_0_0"), 2, 4), 1534956433);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_33112) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_SBF_H_0_0" /* GXT: Short Tucked Bob */, func_118(iParam0, joaat("DLC_MP_SUM2_F_HAIR_0_0"), 2, 4), 1534956433);
 						break;
 					
 					case 44:
-						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_33113) * Global_262145.f_15023)), "CLO_SBF_H_1_0" /* GXT: Shaggy Mullet */, func_118(iParam0, joaat("DLC_MP_SUM2_F_HAIR_1_0"), 2, 4), 1831614190);
+						func_644(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_33113) * Global_262145.f_15023 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_SBF_H_1_0" /* GXT: Shaggy Mullet */, func_118(iParam0, joaat("DLC_MP_SUM2_F_HAIR_1_0"), 2, 4), 1831614190);
 						break;
 					
 					case 45:
@@ -108573,143 +108573,143 @@ bool func_639(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//
 				switch (iParam2)
 				{
 					case 0:
-						func_643(iParam3, Global_262145.f_9229, "NONE" /* GXT: None */, 2, -1, 1f, -1, -876282585);
+						func_643(iParam3, Global_262145.f_9229 /* Tunable: EYEBROWS_NONE */, "NONE" /* GXT: None */, 2, -1, 1f, -1, -876282585);
 						break;
 					
 					case 1:
-						func_643(iParam3, Global_262145.f_9230, "CC_EYEBRW_0" /* GXT: Balanced */, 2, 0, 1f, -1, -1180870440);
+						func_643(iParam3, Global_262145.f_9230 /* Tunable: EYEBROWS_BALANCED */, "CC_EYEBRW_0" /* GXT: Balanced */, 2, 0, 1f, -1, -1180870440);
 						break;
 					
 					case 2:
-						func_643(iParam3, Global_262145.f_9231, "CC_EYEBRW_1" /* GXT: Fashion */, 2, 1, 1f, -1, -1502662020);
+						func_643(iParam3, Global_262145.f_9231 /* Tunable: EYEBROWS_FASHION */, "CC_EYEBRW_1" /* GXT: Fashion */, 2, 1, 1f, -1, -1502662020);
 						break;
 					
 					case 3:
-						func_643(iParam3, Global_262145.f_9232, "CC_EYEBRW_2" /* GXT: Cleopatra */, 2, 2, 1f, -1, -1785163569);
+						func_643(iParam3, Global_262145.f_9232 /* Tunable: EYEBROWS_CLEOPATRA */, "CC_EYEBRW_2" /* GXT: Cleopatra */, 2, 2, 1f, -1, -1785163569);
 						break;
 					
 					case 4:
-						func_643(iParam3, Global_262145.f_9233, "CC_EYEBRW_3" /* GXT: Quizzical */, 2, 3, 1f, -1, 80113449);
+						func_643(iParam3, Global_262145.f_9233 /* Tunable: EYEBROWS_QUIZZICAL */, "CC_EYEBRW_3" /* GXT: Quizzical */, 2, 3, 1f, -1, 80113449);
 						break;
 					
 					case 5:
-						func_643(iParam3, Global_262145.f_9234, "CC_EYEBRW_4" /* GXT: Femme */, 2, 4, 1f, -1, -216740922);
+						func_643(iParam3, Global_262145.f_9234 /* Tunable: EYEBROWS_FEMME */, "CC_EYEBRW_4" /* GXT: Femme */, 2, 4, 1f, -1, -216740922);
 						break;
 					
 					case 6:
-						func_643(iParam3, Global_262145.f_9235, "CC_EYEBRW_5" /* GXT: Seductive */, 2, 5, 1f, -1, -533027310);
+						func_643(iParam3, Global_262145.f_9235 /* Tunable: EYEBROWS_SEDUCTIVE */, "CC_EYEBRW_5" /* GXT: Seductive */, 2, 5, 1f, -1, -533027310);
 						break;
 					
 					case 7:
-						func_643(iParam3, Global_262145.f_9236, "CC_EYEBRW_6" /* GXT: Pinched */, 2, 6, 1f, -1, -829553991);
+						func_643(iParam3, Global_262145.f_9236 /* Tunable: EYEBROWS_PINCHED */, "CC_EYEBRW_6" /* GXT: Pinched */, 2, 6, 1f, -1, -829553991);
 						break;
 					
 					case 8:
-						func_643(iParam3, Global_262145.f_9237, "CC_EYEBRW_7" /* GXT: Chola */, 2, 7, 1f, -1, -531257788);
+						func_643(iParam3, Global_262145.f_9237 /* Tunable: EYEBROWS_CHOLA */, "CC_EYEBRW_7" /* GXT: Chola */, 2, 7, 1f, -1, -531257788);
 						break;
 					
 					case 9:
-						func_643(iParam3, Global_262145.f_9238, "CC_EYEBRW_8" /* GXT: Triomphe */, 2, 8, 1f, -1, -827784469);
+						func_643(iParam3, Global_262145.f_9238 /* Tunable: EYEBROWS_TRIOMPHE */, "CC_EYEBRW_8" /* GXT: Triomphe */, 2, 8, 1f, -1, -827784469);
 						break;
 					
 					case 10:
-						func_643(iParam3, Global_262145.f_9239, "CC_EYEBRW_9" /* GXT: Carefree */, 2, 9, 1f, -1, 744660972);
+						func_643(iParam3, Global_262145.f_9239 /* Tunable: EYEBROWS_CAREFREE */, "CC_EYEBRW_9" /* GXT: Carefree */, 2, 9, 1f, -1, 744660972);
 						break;
 					
 					case 11:
-						func_643(iParam3, Global_262145.f_9240, "CC_EYEBRW_10" /* GXT: Curvaceous */, 2, 10, 1f, -1, 899625573);
+						func_643(iParam3, Global_262145.f_9240 /* Tunable: EYEBROWS_CURVACEOUS */, "CC_EYEBRW_10" /* GXT: Curvaceous */, 2, 10, 1f, -1, 899625573);
 						break;
 					
 					case 12:
-						func_643(iParam3, Global_262145.f_9241, "CC_EYEBRW_11" /* GXT: Rodent */, 2, 11, 1f, -1, 266299110);
+						func_643(iParam3, Global_262145.f_9241 /* Tunable: EYEBROWS_RODENT */, "CC_EYEBRW_11" /* GXT: Rodent */, 2, 11, 1f, -1, 266299110);
 						break;
 					
 					case 13:
-						func_643(iParam3, Global_262145.f_9242, "CC_EYEBRW_12" /* GXT: Double Tram */, 2, 12, 1f, -1, -1641282671);
+						func_643(iParam3, Global_262145.f_9242 /* Tunable: EYEBROWS_DOUBLE_TRAM */, "CC_EYEBRW_12" /* GXT: Double Tram */, 2, 12, 1f, -1, -1641282671);
 						break;
 					
 					case 14:
-						func_643(iParam3, Global_262145.f_9243, "CC_EYEBRW_13" /* GXT: Thin */, 2, 13, 1f, -1, -195383331);
+						func_643(iParam3, Global_262145.f_9243 /* Tunable: EYEBROWS_THIN */, "CC_EYEBRW_13" /* GXT: Thin */, 2, 13, 1f, -1, -195383331);
 						break;
 					
 					case 15:
-						func_643(iParam3, Global_262145.f_9244, "CC_EYEBRW_14" /* GXT: Penciled */, 2, 14, 1f, -1, 33245982);
+						func_643(iParam3, Global_262145.f_9244 /* Tunable: EYEBROWS_PENCILED */, "CC_EYEBRW_14" /* GXT: Penciled */, 2, 14, 1f, -1, 33245982);
 						break;
 					
 					case 16:
-						func_643(iParam3, Global_262145.f_9245, "CC_EYEBRW_15" /* GXT: Mother Plucker */, 2, 15, 1f, -1, -686033552);
+						func_643(iParam3, Global_262145.f_9245 /* Tunable: EYEBROWS_MOTHER_PLUCKER */, "CC_EYEBRW_15" /* GXT: Mother Plucker */, 2, 15, 1f, -1, -686033552);
 						break;
 					
 					case 17:
-						func_643(iParam3, Global_262145.f_9246, "CC_EYEBRW_16" /* GXT: Straight and Narrow */, 2, 16, 1f, -1, 1700172263);
+						func_643(iParam3, Global_262145.f_9246 /* Tunable: EYEBROWS_STRAIGHT_AND_NARROW */, "CC_EYEBRW_16" /* GXT: Straight and Narrow */, 2, 16, 1f, -1, 1700172263);
 						break;
 					
 					case 18:
-						func_643(iParam3, Global_262145.f_9247, "CC_EYEBRW_17" /* GXT: Natural */, 2, 17, 1f, -1, -1163314037);
+						func_643(iParam3, Global_262145.f_9247 /* Tunable: EYEBROWS_NATURAL */, "CC_EYEBRW_17" /* GXT: Natural */, 2, 17, 1f, -1, -1163314037);
 						break;
 					
 					case 19:
-						func_643(iParam3, Global_262145.f_9248, "CC_EYEBRW_18" /* GXT: Fuzzy */, 2, 18, 1f, -1, -939239615);
+						func_643(iParam3, Global_262145.f_9248 /* Tunable: EYEBROWS_FUZZY */, "CC_EYEBRW_18" /* GXT: Fuzzy */, 2, 18, 1f, -1, -939239615);
 						break;
 					
 					case 20:
-						func_643(iParam3, Global_262145.f_9249, "CC_EYEBRW_19" /* GXT: Unkempt */, 2, 19, 1f, -1, -1579861681);
+						func_643(iParam3, Global_262145.f_9249 /* Tunable: EYEBROWS_UNKEMPT */, "CC_EYEBRW_19" /* GXT: Unkempt */, 2, 19, 1f, -1, -1579861681);
 						break;
 					
 					case 21:
-						func_643(iParam3, Global_262145.f_9250, "CC_EYEBRW_20" /* GXT: Caterpillar */, 2, 20, 1f, -1, -1237032403);
+						func_643(iParam3, Global_262145.f_9250 /* Tunable: EYEBROWS_CATERPILLAR */, "CC_EYEBRW_20" /* GXT: Caterpillar */, 2, 20, 1f, -1, -1237032403);
 						break;
 					
 					case 22:
-						func_643(iParam3, Global_262145.f_9251, "CC_EYEBRW_21" /* GXT: Regular */, 2, 21, 1f, -1, 1942740285);
+						func_643(iParam3, Global_262145.f_9251 /* Tunable: EYEBROWS_REGULAR */, "CC_EYEBRW_21" /* GXT: Regular */, 2, 21, 1f, -1, 1942740285);
 						break;
 					
 					case 23:
-						func_643(iParam3, Global_262145.f_9252, "CC_EYEBRW_22" /* GXT: Mediterranean */, 2, 22, 1f, -1, 558544952);
+						func_643(iParam3, Global_262145.f_9252 /* Tunable: EYEBROWS_MEDITERRANEAN */, "CC_EYEBRW_22" /* GXT: Mediterranean */, 2, 22, 1f, -1, 558544952);
 						break;
 					
 					case 24:
-						func_643(iParam3, Global_262145.f_9253, "CC_EYEBRW_23" /* GXT: Groomed */, 2, 23, 1f, -1, 1335891174);
+						func_643(iParam3, Global_262145.f_9253 /* Tunable: EYEBROWS_GROOMED */, "CC_EYEBRW_23" /* GXT: Groomed */, 2, 23, 1f, -1, 1335891174);
 						break;
 					
 					case 25:
-						func_643(iParam3, Global_262145.f_9254, "CC_EYEBRW_24" /* GXT: Bushels */, 2, 24, 1f, -1, 2129064819);
+						func_643(iParam3, Global_262145.f_9254 /* Tunable: EYEBROWS_BUSHELS */, "CC_EYEBRW_24" /* GXT: Bushels */, 2, 24, 1f, -1, 2129064819);
 						break;
 					
 					case 26:
-						func_643(iParam3, Global_262145.f_9255, "CC_EYEBRW_25" /* GXT: Feathered */, 2, 25, 1f, -1, -699850186);
+						func_643(iParam3, Global_262145.f_9255 /* Tunable: EYEBROWS_FEATHERED */, "CC_EYEBRW_25" /* GXT: Feathered */, 2, 25, 1f, -1, -699850186);
 						break;
 					
 					case 27:
-						func_643(iParam3, Global_262145.f_9256, "CC_EYEBRW_26" /* GXT: Prickly */, 2, 26, 1f, -1, -864874870);
+						func_643(iParam3, Global_262145.f_9256 /* Tunable: EYEBROWS_PRICKLY */, "CC_EYEBRW_26" /* GXT: Prickly */, 2, 26, 1f, -1, -864874870);
 						break;
 					
 					case 28:
-						func_643(iParam3, Global_262145.f_9257, "CC_EYEBRW_27" /* GXT: Monobrow */, 2, 27, 1f, -1, 333978995);
+						func_643(iParam3, Global_262145.f_9257 /* Tunable: EYEBROWS_MONOBROW */, "CC_EYEBRW_27" /* GXT: Monobrow */, 2, 27, 1f, -1, 333978995);
 						break;
 					
 					case 29:
-						func_643(iParam3, Global_262145.f_9258, "CC_EYEBRW_28" /* GXT: Winged */, 2, 28, 1f, -1, 1109522918);
+						func_643(iParam3, Global_262145.f_9258 /* Tunable: EYEBROWS_WINGED */, "CC_EYEBRW_28" /* GXT: Winged */, 2, 28, 1f, -1, 1109522918);
 						break;
 					
 					case 30:
-						func_643(iParam3, Global_262145.f_9259, "CC_EYEBRW_29" /* GXT: Triple Tram */, 2, 29, 1f, -1, -635535959);
+						func_643(iParam3, Global_262145.f_9259 /* Tunable: EYEBROWS_TRIPLE_TRAM */, "CC_EYEBRW_29" /* GXT: Triple Tram */, 2, 29, 1f, -1, -635535959);
 						break;
 					
 					case 31:
-						func_643(iParam3, Global_262145.f_9260, "CC_EYEBRW_30" /* GXT: Arched Tram */, 2, 30, 1f, -1, -966961625);
+						func_643(iParam3, Global_262145.f_9260 /* Tunable: EYEBROWS_ARCHED_TRAM */, "CC_EYEBRW_30" /* GXT: Arched Tram */, 2, 30, 1f, -1, -966961625);
 						break;
 					
 					case 32:
-						func_643(iParam3, Global_262145.f_9261, "CC_EYEBRW_31" /* GXT: Cutouts */, 2, 31, 1f, -1, -595983772);
+						func_643(iParam3, Global_262145.f_9261 /* Tunable: EYEBROWS_CUTOUTS */, "CC_EYEBRW_31" /* GXT: Cutouts */, 2, 31, 1f, -1, -595983772);
 						break;
 					
 					case 33:
-						func_643(iParam3, Global_262145.f_9262, "CC_EYEBRW_32" /* GXT: Fade Away */, 2, 32, 1f, -1, 1319397047);
+						func_643(iParam3, Global_262145.f_9262 /* Tunable: EYEBROWS_FADE_AWAY */, "CC_EYEBRW_32" /* GXT: Fade Away */, 2, 32, 1f, -1, 1319397047);
 						break;
 					
 					case 34:
-						func_643(iParam3, Global_262145.f_9263, "CC_EYEBRW_33" /* GXT: Solo Tram */, 2, 33, 1f, -1, 15059771);
+						func_643(iParam3, Global_262145.f_9263 /* Tunable: EYEBROWS_SOLO_TRAM */, "CC_EYEBRW_33" /* GXT: Solo Tram */, 2, 33, 1f, -1, 15059771);
 						break;
 					
 					case 35:
@@ -108722,131 +108722,131 @@ bool func_639(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//
 				switch (iParam2)
 				{
 					case 0:
-						func_643(iParam3, Global_262145.f_9264, "FACE_E_C_0" /* GXT: Green */, 7, 0, 1f, -1, -679880450);
+						func_643(iParam3, Global_262145.f_9264 /* Tunable: CONTACTS_GREEN */, "FACE_E_C_0" /* GXT: Green */, 7, 0, 1f, -1, -679880450);
 						break;
 					
 					case 1:
-						func_643(iParam3, Global_262145.f_9265, "FACE_E_C_1" /* GXT: Emerald */, 7, 1, 1f, -1, -1968193685);
+						func_643(iParam3, Global_262145.f_9265 /* Tunable: CONTACTS_EMERALD */, "FACE_E_C_1" /* GXT: Emerald */, 7, 1, 1f, -1, -1968193685);
 						break;
 					
 					case 2:
-						func_643(iParam3, Global_262145.f_9266, "FACE_E_C_2" /* GXT: Light Blue */, 7, 2, 1f, -1, 1656811402);
+						func_643(iParam3, Global_262145.f_9266 /* Tunable: CONTACTS_LIGHT_BLUE */, "FACE_E_C_2" /* GXT: Light Blue */, 7, 2, 1f, -1, 1656811402);
 						break;
 					
 					case 3:
-						func_643(iParam3, Global_262145.f_9267, "FACE_E_C_3" /* GXT: Ocean Blue */, 7, 3, 1f, -1, 1409143300);
+						func_643(iParam3, Global_262145.f_9267 /* Tunable: CONTACTS_OCEAN_BLUE */, "FACE_E_C_3" /* GXT: Ocean Blue */, 7, 3, 1f, -1, 1409143300);
 						break;
 					
 					case 4:
-						func_643(iParam3, Global_262145.f_9268, "FACE_E_C_4" /* GXT: Light Brown */, 7, 4, 1f, -1, 1047930613);
+						func_643(iParam3, Global_262145.f_9268 /* Tunable: CONTACTS_LIGHT_BROWN */, "FACE_E_C_4" /* GXT: Light Brown */, 7, 4, 1f, -1, 1047930613);
 						break;
 					
 					case 5:
-						func_643(iParam3, Global_262145.f_9269, "FACE_E_C_5" /* GXT: Dark Brown */, 7, 5, 1f, -1, 834145657);
+						func_643(iParam3, Global_262145.f_9269 /* Tunable: CONTACTS_DARK_BROWN */, "FACE_E_C_5" /* GXT: Dark Brown */, 7, 5, 1f, -1, 834145657);
 						break;
 					
 					case 6:
-						func_643(iParam3, Global_262145.f_9270, "FACE_E_C_6" /* GXT: Hazel */, 7, 6, 1f, -1, 1301103915);
+						func_643(iParam3, Global_262145.f_9270 /* Tunable: CONTACTS_HAZEL */, "FACE_E_C_6" /* GXT: Hazel */, 7, 6, 1f, -1, 1301103915);
 						break;
 					
 					case 7:
-						func_643(iParam3, Global_262145.f_9271, "FACE_E_C_7" /* GXT: Dark Gray */, 7, 7, 1f, -1, 5679807);
+						func_643(iParam3, Global_262145.f_9271 /* Tunable: CONTACTS_DARK_GREY */, "FACE_E_C_7" /* GXT: Dark Gray */, 7, 7, 1f, -1, 5679807);
 						break;
 					
 					case 8:
-						func_643(iParam3, Global_262145.f_9272, "FACE_E_C_8" /* GXT: Light Gray */, 7, 8, 1f, -1, 1241824794);
+						func_643(iParam3, Global_262145.f_9272 /* Tunable: CONTACTS_LIGHT_GREY */, "FACE_E_C_8" /* GXT: Light Gray */, 7, 8, 1f, -1, 1241824794);
 						break;
 					
 					case 9:
-						func_643(iParam3, Global_262145.f_9273, "FACE_E_C_9" /* GXT: Pink */, 7, 9, 1f, -1, 1558963176);
+						func_643(iParam3, Global_262145.f_9273 /* Tunable: CONTACTS_PINK */, "FACE_E_C_9" /* GXT: Pink */, 7, 9, 1f, -1, 1558963176);
 						break;
 					
 					case 10:
-						func_643(iParam3, Global_262145.f_9274, "FACE_E_C_10" /* GXT: Yellow */, 7, 10, 1f, -1, 1466156191);
+						func_643(iParam3, Global_262145.f_9274 /* Tunable: CONTACTS_YELLOW */, "FACE_E_C_10" /* GXT: Yellow */, 7, 10, 1f, -1, 1466156191);
 						break;
 					
 					case 11:
-						func_643(iParam3, Global_262145.f_9275, "FACE_E_C_11" /* GXT: Purple */, 7, 11, 1f, -1, 1713299989);
+						func_643(iParam3, Global_262145.f_9275 /* Tunable: CONTACTS_PURPLE */, "FACE_E_C_11" /* GXT: Purple */, 7, 11, 1f, -1, 1713299989);
 						break;
 					
 					case 12:
-						func_643(iParam3, Global_262145.f_9276, "FACE_E_C_12" /* GXT: Blackout */, 7, 12, 1f, -1, 1415036551);
+						func_643(iParam3, Global_262145.f_9276 /* Tunable: CONTACTS_BLACKOUT */, "FACE_E_C_12" /* GXT: Blackout */, 7, 12, 1f, -1, 1415036551);
 						break;
 					
 					case 13:
-						func_643(iParam3, Global_262145.f_9277, "FACE_E_C_13" /* GXT: Shades of Gray */, 7, 13, 1f, -1, 1153834856);
+						func_643(iParam3, Global_262145.f_9277 /* Tunable: CONTACTS_SHADES_OF_GRAY */, "FACE_E_C_13" /* GXT: Shades of Gray */, 7, 13, 1f, -1, 1153834856);
 						break;
 					
 					case 14:
-						func_643(iParam3, Global_262145.f_9278, "FACE_E_C_14" /* GXT: Tequila Sunrise */, 7, 14, 1f, -1, 1360836629);
+						func_643(iParam3, Global_262145.f_9278 /* Tunable: CONTACTS_TEQUILA_SUNRISE */, "FACE_E_C_14" /* GXT: Tequila Sunrise */, 7, 14, 1f, -1, 1360836629);
 						break;
 					
 					case 15:
-						func_643(iParam3, Global_262145.f_9279, "FACE_E_C_15" /* GXT: Atomic */, 7, 15, 1f, -1, -1622780825);
+						func_643(iParam3, Global_262145.f_9279 /* Tunable: CONTACTS_ATOMIC */, "FACE_E_C_15" /* GXT: Atomic */, 7, 15, 1f, -1, -1622780825);
 						break;
 					
 					case 16:
-						func_643(iParam3, Global_262145.f_9280, "FACE_E_C_16" /* GXT: Warp */, 7, 16, 1f, -1, -1374686726);
+						func_643(iParam3, Global_262145.f_9280 /* Tunable: CONTACTS_WARP */, "FACE_E_C_16" /* GXT: Warp */, 7, 16, 1f, -1, -1374686726);
 						break;
 					
 					case 17:
-						func_643(iParam3, Global_262145.f_9281, "FACE_E_C_17" /* GXT: ECola */, 7, 17, 1f, -1, 2040629534);
+						func_643(iParam3, Global_262145.f_9281 /* Tunable: CONTACTS_ECOLA */, "FACE_E_C_17" /* GXT: ECola */, 7, 17, 1f, -1, 2040629534);
 						break;
 					
 					case 18:
-						func_643(iParam3, Global_262145.f_9282, "FACE_E_C_18" /* GXT: Space Ranger */, 7, 18, 1f, -1, -1973146973);
+						func_643(iParam3, Global_262145.f_9282 /* Tunable: CONTACTS_SPACE_RANGER */, "FACE_E_C_18" /* GXT: Space Ranger */, 7, 18, 1f, -1, -1973146973);
 						break;
 					
 					case 19:
-						func_643(iParam3, Global_262145.f_9283, "FACE_E_C_19" /* GXT: Ying Yang */, 7, 19, 1f, -1, -657864855);
+						func_643(iParam3, Global_262145.f_9283 /* Tunable: CONTACTS_YING_YANG */, "FACE_E_C_19" /* GXT: Ying Yang */, 7, 19, 1f, -1, -657864855);
 						break;
 					
 					case 20:
-						func_643(iParam3, Global_262145.f_9284, "FACE_E_C_20" /* GXT: Bullseye */, 7, 20, 1f, -1, 1377860065);
+						func_643(iParam3, Global_262145.f_9284 /* Tunable: CONTACTS_BULLSEYE */, "FACE_E_C_20" /* GXT: Bullseye */, 7, 20, 1f, -1, 1377860065);
 						break;
 					
 					case 21:
-						func_643(iParam3, Global_262145.f_9285, "FACE_E_C_21" /* GXT: Lizard */, 7, 21, 1f, -1, 113042203);
+						func_643(iParam3, Global_262145.f_9285 /* Tunable: CONTACTS_LIZARD */, "FACE_E_C_21" /* GXT: Lizard */, 7, 21, 1f, -1, 113042203);
 						break;
 					
 					case 22:
-						func_643(iParam3, Global_262145.f_9286, "FACE_E_C_22" /* GXT: Dragon */, 7, 22, 1f, -1, -712703828);
+						func_643(iParam3, Global_262145.f_9286 /* Tunable: CONTACTS_DRAGON */, "FACE_E_C_22" /* GXT: Dragon */, 7, 22, 1f, -1, -712703828);
 						break;
 					
 					case 23:
-						func_643(iParam3, Global_262145.f_9287, "FACE_E_C_23" /* GXT: Extra Terrestrial */, 7, 23, 1f, -1, 200109448);
+						func_643(iParam3, Global_262145.f_9287 /* Tunable: CONTACTS_EXTRA_TERRESTRIAL */, "FACE_E_C_23" /* GXT: Extra Terrestrial */, 7, 23, 1f, -1, 200109448);
 						break;
 					
 					case 24:
-						func_643(iParam3, Global_262145.f_9288, "FACE_E_C_24" /* GXT: Goat */, 7, 24, 1f, -1, -705035870);
+						func_643(iParam3, Global_262145.f_9288 /* Tunable: CONTACTS_GOAT */, "FACE_E_C_24" /* GXT: Goat */, 7, 24, 1f, -1, -705035870);
 						break;
 					
 					case 25:
-						func_643(iParam3, Global_262145.f_9289, "FACE_E_C_25" /* GXT: Smiley */, 7, 25, 1f, -1, -1340787251);
+						func_643(iParam3, Global_262145.f_9289 /* Tunable: CONTACTS_SMILEY */, "FACE_E_C_25" /* GXT: Smiley */, 7, 25, 1f, -1, -1340787251);
 						break;
 					
 					case 26:
-						func_643(iParam3, Global_262145.f_9290, "FACE_E_C_26" /* GXT: Possessed */, 7, 26, 1f, -1, -107624231);
+						func_643(iParam3, Global_262145.f_9290 /* Tunable: CONTACTS_POSSESSED */, "FACE_E_C_26" /* GXT: Possessed */, 7, 26, 1f, -1, -107624231);
 						break;
 					
 					case 27:
-						func_643(iParam3, Global_262145.f_9291, "FACE_E_C_27" /* GXT: Demon */, 7, 27, 1f, -1, -784730090);
+						func_643(iParam3, Global_262145.f_9291 /* Tunable: CONTACTS_DEMON */, "FACE_E_C_27" /* GXT: Demon */, 7, 27, 1f, -1, -784730090);
 						break;
 					
 					case 28:
-						func_643(iParam3, Global_262145.f_9292, "FACE_E_C_28" /* GXT: Infected */, 7, 28, 1f, -1, -1628925068);
+						func_643(iParam3, Global_262145.f_9292 /* Tunable: CONTACTS_INFECTED */, "FACE_E_C_28" /* GXT: Infected */, 7, 28, 1f, -1, -1628925068);
 						break;
 					
 					case 29:
-						func_643(iParam3, Global_262145.f_9293, "FACE_E_C_29" /* GXT: Alien */, 7, 29, 1f, -1, 1496156159);
+						func_643(iParam3, Global_262145.f_9293 /* Tunable: CONTACTS_ALIEN */, "FACE_E_C_29" /* GXT: Alien */, 7, 29, 1f, -1, 1496156159);
 						break;
 					
 					case 30:
-						func_643(iParam3, Global_262145.f_9294, "FACE_E_C_30" /* GXT: Undead */, 7, 30, 1f, -1, -1247690782);
+						func_643(iParam3, Global_262145.f_9294 /* Tunable: CONTACTS_UNDEAD */, "FACE_E_C_30" /* GXT: Undead */, 7, 30, 1f, -1, -1247690782);
 						break;
 					
 					case 31:
-						func_643(iParam3, Global_262145.f_9295, "FACE_E_C_31" /* GXT: Zombie */, 7, 31, 1f, -1, -1569777283);
+						func_643(iParam3, Global_262145.f_9295 /* Tunable: CONTACTS_ZOMBIE */, "FACE_E_C_31" /* GXT: Zombie */, 7, 31, 1f, -1, -1569777283);
 						break;
 					
 					case 32:
@@ -108859,375 +108859,375 @@ bool func_639(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//
 				switch (iParam2)
 				{
 					case 0:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2619)), "NONE" /* GXT: None */, 4, -1, 1f, 28, 1939083358);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2619 /* Tunable: MAKEUP_UNLOCKS_BASIC_EXPENDITURE_TUNABLE */)), "NONE" /* GXT: None */, 4, -1, 1f, 28, 1939083358);
 						break;
 					
 					case 1:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(500) * Global_262145.f_2636)), "CC_MKUP_16" /* GXT: Kiss My Axe */, 4, 16, 1f, 45, -2050050861);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(500) * Global_262145.f_2636 /* Tunable: MAKEUP_UNLOCKS_KISSMYAXE_EXPENDITURE_TUNABLE */)), "CC_MKUP_16" /* GXT: Kiss My Axe */, 4, 16, 1f, 45, -2050050861);
 						break;
 					
 					case 2:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1000) * Global_262145.f_2637)), "CC_MKUP_17" /* GXT: Panda Pussy */, 4, 17, 1f, 46, -1086019650);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1000) * Global_262145.f_2637 /* Tunable: MAKEUP_UNLOCKS_PANDAPUSSY_EXPENDITURE_TUNABLE */)), "CC_MKUP_17" /* GXT: Panda Pussy */, 4, 17, 1f, 46, -1086019650);
 						break;
 					
 					case 3:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(750) * Global_262145.f_2638)), "CC_MKUP_18" /* GXT: The Bat */, 4, 18, 1f, 47, -796734918);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(750) * Global_262145.f_2638 /* Tunable: MAKEUP_UNLOCKS_THEBAT_EXPENDITURE_TUNABLE */)), "CC_MKUP_18" /* GXT: The Bat */, 4, 18, 1f, 47, -796734918);
 						break;
 					
 					case 4:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5750) * Global_262145.f_2639)), "CC_MKUP_19" /* GXT: Skull in Scarlet */, 4, 19, 1f, 48, -2051001154);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5750) * Global_262145.f_2639 /* Tunable: MAKEUP_UNLOCKS_SKULLINSCARLET_EXPENDITURE_TUNABLE */)), "CC_MKUP_19" /* GXT: Skull in Scarlet */, 4, 19, 1f, 48, -2051001154);
 						break;
 					
 					case 5:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2640)), "CC_MKUP_20" /* GXT: Serpentine */, 4, 20, 1f, 49, -1753327558);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(10000) * Global_262145.f_2640 /* Tunable: MAKEUP_UNLOCKS_SERPENTINE_EXPENDITURE_TUNABLE */)), "CC_MKUP_20" /* GXT: Serpentine */, 4, 20, 1f, 49, -1753327558);
 						break;
 					
 					case 6:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(6000) * Global_262145.f_2641)), "CC_MKUP_21" /* GXT: The Veldt */, 4, 21, 1f, 50, -778482577);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(6000) * Global_262145.f_2641 /* Tunable: MAKEUP_UNLOCKS_THEVELDT_EXPENDITURE_TUNABLE */)), "CC_MKUP_21" /* GXT: The Veldt */, 4, 21, 1f, 50, -778482577);
 						break;
 					
 					case 7:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2646)), "CC_MKUP_26" /* GXT: Tribal Lines */, 4, 26, 1f, 55, -487919854);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5000) * Global_262145.f_2646 /* Tunable: MAKEUP_UNLOCKS_TRIBALLINES_EXPENDITURE_TUNABLE */)), "CC_MKUP_26" /* GXT: Tribal Lines */, 4, 26, 1f, 55, -487919854);
 						break;
 					
 					case 8:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5500) * Global_262145.f_2647)), "CC_MKUP_27" /* GXT: Tribal Swirls */, 4, 27, 1f, 56, 1063167984);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(5500) * Global_262145.f_2647 /* Tunable: MAKEUP_UNLOCKS_TRIBALSWIRLS_EXPENDITURE_TUNABLE */)), "CC_MKUP_27" /* GXT: Tribal Swirls */, 4, 27, 1f, 56, 1063167984);
 						break;
 					
 					case 9:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1250) * Global_262145.f_2648)), "CC_MKUP_28" /* GXT: Tribal Orange */, 4, 28, 1f, 57, 1352190564);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1250) * Global_262145.f_2648 /* Tunable: MAKEUP_UNLOCKS_TRIBALORANGE_EXPENDITURE_TUNABLE */)), "CC_MKUP_28" /* GXT: Tribal Orange */, 4, 28, 1f, 57, 1352190564);
 						break;
 					
 					case 10:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2000) * Global_262145.f_2649)), "CC_MKUP_29" /* GXT: Tribal Red */, 4, 29, 1f, 58, 1918883225);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2000) * Global_262145.f_2649 /* Tunable: MAKEUP_UNLOCKS_TRIBALRED_EXPENDITURE_TUNABLE */)), "CC_MKUP_29" /* GXT: Tribal Red */, 4, 29, 1f, 58, 1918883225);
 						break;
 					
 					case 11:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(15000) * Global_262145.f_2650)), "CC_MKUP_30" /* GXT: Trapped in a Box */, 4, 30, 1f, 59, 2140499972);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(15000) * Global_262145.f_2650 /* Tunable: MAKEUP_UNLOCKS_TRAPPEDINABOX_EXPENDITURE_TUNABLE */)), "CC_MKUP_30" /* GXT: Trapped in a Box */, 4, 30, 1f, 59, 2140499972);
 						break;
 					
 					case 12:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(20000) * Global_262145.f_2651)), "CC_MKUP_31" /* GXT: Clowning */, 4, 31, 1f, 60, -1622298764);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(20000) * Global_262145.f_2651 /* Tunable: MAKEUP_UNLOCKS_CLOWNING_EXPENDITURE_TUNABLE */)), "CC_MKUP_31" /* GXT: Clowning */, 4, 31, 1f, 60, -1622298764);
 						break;
 					
 					case 13:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(25000) * Global_262145.f_8275)), "CC_MKUP_33" /* GXT: Stars n Stripes */, 4, 33, 1f, 92, -1384887359);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(25000) * Global_262145.f_8275 /* Tunable: HAIR_MAKEUP_INDEPENDENCEDAY_GROUP */)), "CC_MKUP_33" /* GXT: Stars n Stripes */, 4, 33, 1f, 92, -1384887359);
 						break;
 					
 					case 14:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12510) * Global_262145.f_12555)), "CC_MKUP_42" /* GXT: Shadow Demon */, 4, 42, 1f, 93, 689718031);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12510 /* Tunable: HALLOWEEN_2015_SHADOW_DEMON */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_42" /* GXT: Shadow Demon */, 4, 42, 1f, 93, 689718031);
 						break;
 					
 					case 15:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12511) * Global_262145.f_12555)), "CC_MKUP_43" /* GXT: Fleshy Demon */, 4, 43, 1f, 94, 1188920977);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12511 /* Tunable: HALLOWEEN_2015_FLESHY_DEMON */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_43" /* GXT: Fleshy Demon */, 4, 43, 1f, 94, 1188920977);
 						break;
 					
 					case 16:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12512) * Global_262145.f_12555)), "CC_MKUP_44" /* GXT: Flayed Demon */, 4, 44, 1f, 95, 1425414854);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12512 /* Tunable: HALLOWEEN_2015_FLAYED_DEMON */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_44" /* GXT: Flayed Demon */, 4, 44, 1f, 95, 1425414854);
 						break;
 					
 					case 17:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12513) * Global_262145.f_12555)), "CC_MKUP_45" /* GXT: Sorrow Demon */, 4, 45, 1f, 96, 1680914747);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12513 /* Tunable: HALLOWEEN_2015_SORROW_DEMON */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_45" /* GXT: Sorrow Demon */, 4, 45, 1f, 96, 1680914747);
 						break;
 					
 					case 18:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12514) * Global_262145.f_12555)), "CC_MKUP_46" /* GXT: Smiler Demon */, 4, 46, 1f, 97, -1397044638);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12514 /* Tunable: HALLOWEEN_2015_SMILER_DEMON */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_46" /* GXT: Smiler Demon */, 4, 46, 1f, 97, -1397044638);
 						break;
 					
 					case 19:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12515) * Global_262145.f_12555)), "CC_MKUP_47" /* GXT: Cracked Demon */, 4, 47, 1f, 98, -1202658930);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12515 /* Tunable: HALLOWEEN_2015_CRACKED_DEMON */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_47" /* GXT: Cracked Demon */, 4, 47, 1f, 98, -1202658930);
 						break;
 					
 					case 20:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12516) * Global_262145.f_12555)), "CC_MKUP_48" /* GXT: Danger Skull */, 4, 48, 1f, 99, -2077294849);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12516 /* Tunable: HALLOWEEN_2015_DANGER_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_48" /* GXT: Danger Skull */, 4, 48, 1f, 99, -2077294849);
 						break;
 					
 					case 21:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12517) * Global_262145.f_12555)), "CC_MKUP_49" /* GXT: Wicked Skull */, 4, 49, 1f, 100, 1871566269);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12517 /* Tunable: HALLOWEEN_2015_WICKED_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_49" /* GXT: Wicked Skull */, 4, 49, 1f, 100, 1871566269);
 						break;
 					
 					case 22:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12518) * Global_262145.f_12555)), "CC_MKUP_50" /* GXT: Menace Skull */, 4, 50, 1f, 101, -638735717);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12518 /* Tunable: HALLOWEEN_2015_MENACE_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_50" /* GXT: Menace Skull */, 4, 50, 1f, 101, -638735717);
 						break;
 					
 					case 23:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12519) * Global_262145.f_12555)), "CC_MKUP_51" /* GXT: Bone Jaw Skull */, 4, 51, 1f, 102, -885912284);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12519 /* Tunable: HALLOWEEN_2015_BONE_JAW_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_51" /* GXT: Bone Jaw Skull */, 4, 51, 1f, 102, -885912284);
 						break;
 					
 					case 24:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12520) * Global_262145.f_12555)), "CC_MKUP_52" /* GXT: Flesh Jaw Skull */, 4, 52, 1f, 103, 911795056);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12520 /* Tunable: HALLOWEEN_2015_FLESH_JAW_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_52" /* GXT: Flesh Jaw Skull */, 4, 52, 1f, 103, 911795056);
 						break;
 					
 					case 25:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12521) * Global_262145.f_12555)), "CC_MKUP_53" /* GXT: Spirit Skull */, 4, 53, 1f, 104, 680937451);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12521 /* Tunable: HALLOWEEN_2015_SPIRIT_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_53" /* GXT: Spirit Skull */, 4, 53, 1f, 104, 680937451);
 						break;
 					
 					case 26:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12522) * Global_262145.f_12555)), "CC_MKUP_54" /* GXT: Ghoul Skull */, 4, 54, 1f, 105, -1507671294);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12522 /* Tunable: HALLOWEEN_2015_GHOUL_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_54" /* GXT: Ghoul Skull */, 4, 54, 1f, 105, -1507671294);
 						break;
 					
 					case 27:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12523) * Global_262145.f_12555)), "CC_MKUP_55" /* GXT: Phantom Skull */, 4, 55, 1f, 106, -1734596619);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12523 /* Tunable: HALLOWEEN_2015_PHANTOM_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_55" /* GXT: Phantom Skull */, 4, 55, 1f, 106, -1734596619);
 						break;
 					
 					case 28:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12524) * Global_262145.f_12555)), "CC_MKUP_56" /* GXT: Gnasher Skull */, 4, 56, 1f, 107, -1832969157);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12524 /* Tunable: HALLOWEEN_2015_GNASHER_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_56" /* GXT: Gnasher Skull */, 4, 56, 1f, 107, -1832969157);
 						break;
 					
 					case 29:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12525) * Global_262145.f_12555)), "CC_MKUP_57" /* GXT: Exposed Skull */, 4, 57, 1f, 108, -53415839);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12525 /* Tunable: HALLOWEEN_2015_EXPOSED_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_57" /* GXT: Exposed Skull */, 4, 57, 1f, 108, -53415839);
 						break;
 					
 					case 30:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12526) * Global_262145.f_12555)), "CC_MKUP_58" /* GXT: Ghostly Skull */, 4, 58, 1f, 109, 646954998);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12526 /* Tunable: HALLOWEEN_2015_GHOSTLY_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_58" /* GXT: Ghostly Skull */, 4, 58, 1f, 109, 646954998);
 						break;
 					
 					case 31:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12527) * Global_262145.f_12555)), "CC_MKUP_59" /* GXT: Fury Skull */, 4, 59, 1f, 110, -404995440);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12527 /* Tunable: HALLOWEEN_2015_FURY_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_59" /* GXT: Fury Skull */, 4, 59, 1f, 110, -404995440);
 						break;
 					
 					case 32:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12528) * Global_262145.f_12555)), "CC_MKUP_60" /* GXT: Demi Skull */, 4, 60, 1f, 111, -92411949);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12528 /* Tunable: HALLOWEEN_2015_DEMI_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_60" /* GXT: Demi Skull */, 4, 60, 1f, 111, -92411949);
 						break;
 					
 					case 33:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12529) * Global_262145.f_12555)), "CC_MKUP_61" /* GXT: Inbred Skull */, 4, 61, 1f, 112, -894465993);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12529 /* Tunable: HALLOWEEN_2015_INBRED_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_61" /* GXT: Inbred Skull */, 4, 61, 1f, 112, -894465993);
 						break;
 					
 					case 34:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12530) * Global_262145.f_12555)), "CC_MKUP_62" /* GXT: Spooky Skull */, 4, 62, 1f, 113, 1287195724);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12530 /* Tunable: HALLOWEEN_2015_SPOOKY_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_62" /* GXT: Spooky Skull */, 4, 62, 1f, 113, 1287195724);
 						break;
 					
 					case 35:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12531) * Global_262145.f_12555)), "CC_MKUP_63" /* GXT: Slashed Skull */, 4, 63, 1f, 114, 790876446);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12531 /* Tunable: HALLOWEEN_2015_SLASHED_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_63" /* GXT: Slashed Skull */, 4, 63, 1f, 114, 790876446);
 						break;
 					
 					case 36:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12532) * Global_262145.f_12555)), "CC_MKUP_64" /* GXT: Web Sugar Skull */, 4, 64, 1f, 115, 1070035557);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12532 /* Tunable: HALLOWEEN_2015_WEB_SUGAR_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_64" /* GXT: Web Sugar Skull */, 4, 64, 1f, 115, 1070035557);
 						break;
 					
 					case 37:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12533) * Global_262145.f_12555)), "CC_MKUP_65" /* GXT: Señor Sugar Skull */, 4, 65, 1f, 116, 301242048);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12533 /* Tunable: HALLOWEEN_2015_SENOR_SUGAR_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_65" /* GXT: Señor Sugar Skull */, 4, 65, 1f, 116, 301242048);
 						break;
 					
 					case 38:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12534) * Global_262145.f_12555)), "CC_MKUP_66" /* GXT: Swirl Sugar Skull */, 4, 66, 1f, 117, 1741013601);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12534 /* Tunable: HALLOWEEN_2015_SWIRL_SUGAR_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_66" /* GXT: Swirl Sugar Skull */, 4, 66, 1f, 117, 1741013601);
 						break;
 					
 					case 39:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12535) * Global_262145.f_12555)), "CC_MKUP_67" /* GXT: Floral Sugar Skull */, 4, 67, 1f, 118, 2044421772);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12535 /* Tunable: HALLOWEEN_2015_FLORAL_SUGAR_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_67" /* GXT: Floral Sugar Skull */, 4, 67, 1f, 118, 2044421772);
 						break;
 					
 					case 40:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12536) * Global_262145.f_12555)), "CC_MKUP_68" /* GXT: Mono Sugar Skull */, 4, 68, 1f, 119, -1643561644);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12536 /* Tunable: HALLOWEEN_2015_MONO_SUGAR_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_68" /* GXT: Mono Sugar Skull */, 4, 68, 1f, 119, -1643561644);
 						break;
 					
 					case 41:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12537) * Global_262145.f_12555)), "CC_MKUP_69" /* GXT: Femme Sugar Skull */, 4, 69, 1f, 120, -2018242390);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12537 /* Tunable: HALLOWEEN_2015_FEMME_SUGAR_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_69" /* GXT: Femme Sugar Skull */, 4, 69, 1f, 120, -2018242390);
 						break;
 					
 					case 42:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12538) * Global_262145.f_12555)), "CC_MKUP_70" /* GXT: Demi Sugar Skull */, 4, 70, 1f, 121, 561169449);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12538 /* Tunable: HALLOWEEN_2015_DEMI_SUGAR_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_70" /* GXT: Demi Sugar Skull */, 4, 70, 1f, 121, 561169449);
 						break;
 					
 					case 43:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12539) * Global_262145.f_12555)), "CC_MKUP_71" /* GXT: Scarred Sugar Skull */, 4, 71, 1f, 122, 444970575);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_12539 /* Tunable: HALLOWEEN_2015_SCARRED_SUGAR_SKULL */) * Global_262145.f_12555 /* Tunable: HALLOWEEN_2015_HALLOWEEN_2015_ALL_FACE_PAINT */)), "CC_MKUP_71" /* GXT: Scarred Sugar Skull */, 4, 71, 1f, 122, 444970575);
 						break;
 					
 					case 44:
-						func_643(iParam3, Global_262145.f_23884, "CC_BLUSH_7" /* GXT: Waves Left */, 5, 7, 1f, 123, 832559610);
+						func_643(iParam3, Global_262145.f_23884 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_WAVES_LEFT */, "CC_BLUSH_7" /* GXT: Waves Left */, 5, 7, 1f, 123, 832559610);
 						break;
 					
 					case 45:
-						func_643(iParam3, Global_262145.f_23885, "CC_BLUSH_8" /* GXT: Waves Right */, 5, 8, 1f, 124, 592919913);
+						func_643(iParam3, Global_262145.f_23885 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_WAVES_RIGHT */, "CC_BLUSH_8" /* GXT: Waves Right */, 5, 8, 1f, 124, 592919913);
 						break;
 					
 					case 46:
-						func_643(iParam3, Global_262145.f_23886, "CC_BLUSH_9" /* GXT: Totemic */, 5, 9, 1f, 125, 2030987546);
+						func_643(iParam3, Global_262145.f_23886 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_TOTEMIC */, "CC_BLUSH_9" /* GXT: Totemic */, 5, 9, 1f, 125, 2030987546);
 						break;
 					
 					case 47:
-						func_643(iParam3, Global_262145.f_23887, "CC_BLUSH_10" /* GXT: Streaks Left */, 5, 10, 1f, 126, -1750454803);
+						func_643(iParam3, Global_262145.f_23887 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_STREAKS_LEFT */, "CC_BLUSH_10" /* GXT: Streaks Left */, 5, 10, 1f, 126, -1750454803);
 						break;
 					
 					case 48:
-						func_643(iParam3, Global_262145.f_23888, "CC_BLUSH_11" /* GXT: Streaks Right */, 5, 11, 1f, 127, -2133000109);
+						func_643(iParam3, Global_262145.f_23888 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_STREAKS_RIGHT */, "CC_BLUSH_11" /* GXT: Streaks Right */, 5, 11, 1f, 127, -2133000109);
 						break;
 					
 					case 49:
-						func_643(iParam3, Global_262145.f_23889, "CC_BLUSH_12" /* GXT: Breakup Left */, 5, 12, 1f, 128, 238099193);
+						func_643(iParam3, Global_262145.f_23889 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_BREAKUP_LEFT */, "CC_BLUSH_12" /* GXT: Breakup Left */, 5, 12, 1f, 128, 238099193);
 						break;
 					
 					case 50:
-						func_643(iParam3, Global_262145.f_23890, "CC_BLUSH_13" /* GXT: Breakup Right */, 5, 13, 1f, 129, -1737118);
+						func_643(iParam3, Global_262145.f_23890 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_BREAKUP_RIGHT */, "CC_BLUSH_13" /* GXT: Breakup Right */, 5, 13, 1f, 129, -1737118);
 						break;
 					
 					case 51:
-						func_643(iParam3, Global_262145.f_23891, "CC_BLUSH_14" /* GXT: Blotch Left */, 5, 14, 1f, 130, -359443522);
+						func_643(iParam3, Global_262145.f_23891 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_BLOTCH_LEFT */, "CC_BLUSH_14" /* GXT: Blotch Left */, 5, 14, 1f, 130, -359443522);
 						break;
 					
 					case 52:
-						func_643(iParam3, Global_262145.f_23892, "CC_BLUSH_15" /* GXT: Blotch Right */, 5, 15, 1f, 131, -598689991);
+						func_643(iParam3, Global_262145.f_23892 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_BLOTCH_RIGHT */, "CC_BLUSH_15" /* GXT: Blotch Right */, 5, 15, 1f, 131, -598689991);
 						break;
 					
 					case 53:
-						func_643(iParam3, Global_262145.f_23893, "CC_BLUSH_16" /* GXT: Stripes */, 5, 16, 1f, 132, 618809439);
+						func_643(iParam3, Global_262145.f_23893 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_STRIPES */, "CC_BLUSH_16" /* GXT: Stripes */, 5, 16, 1f, 132, 618809439);
 						break;
 					
 					case 54:
-						func_643(iParam3, Global_262145.f_23894, "CC_BLUSH_17" /* GXT: The Elder */, 5, 17, 1f, 133, 388017372);
+						func_643(iParam3, Global_262145.f_23894 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_THE_ELDER */, "CC_BLUSH_17" /* GXT: The Elder */, 5, 17, 1f, 133, 388017372);
 						break;
 					
 					case 55:
-						func_643(iParam3, Global_262145.f_23895, "CC_BLUSH_18" /* GXT: Vertical Stripe */, 5, 18, 1f, 134, 66225792);
+						func_643(iParam3, Global_262145.f_23895 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_VERTICAL_STRIPE */, "CC_BLUSH_18" /* GXT: Vertical Stripe */, 5, 18, 1f, 134, 66225792);
 						break;
 					
 					case 56:
-						func_643(iParam3, Global_262145.f_23896, "CC_BLUSH_19" /* GXT: Clan */, 5, 19, 1f, 135, -214047465);
+						func_643(iParam3, Global_262145.f_23896 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_CLAN */, "CC_BLUSH_19" /* GXT: Clan */, 5, 19, 1f, 135, -214047465);
 						break;
 					
 					case 57:
-						func_643(iParam3, Global_262145.f_23897, "CC_BLUSH_20" /* GXT: Splats Right */, 5, 20, 1f, 136, -1287625671);
+						func_643(iParam3, Global_262145.f_23897 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_SPLATS_RIGHT */, "CC_BLUSH_20" /* GXT: Splats Right */, 5, 20, 1f, 136, -1287625671);
 						break;
 					
 					case 58:
-						func_643(iParam3, Global_262145.f_23898, "CC_BLUSH_21" /* GXT: Splats Left */, 5, 21, 1f, 137, -1643038245);
+						func_643(iParam3, Global_262145.f_23898 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_SPLATS_LEFT */, "CC_BLUSH_21" /* GXT: Splats Left */, 5, 21, 1f, 137, -1643038245);
 						break;
 					
 					case 59:
-						func_643(iParam3, Global_262145.f_23899, "CC_BLUSH_22" /* GXT: The Phoenix */, 5, 22, 1f, 138, 424882269);
+						func_643(iParam3, Global_262145.f_23899 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_THE_PHOENIX */, "CC_BLUSH_22" /* GXT: The Phoenix */, 5, 22, 1f, 138, 424882269);
 						break;
 					
 					case 60:
-						func_643(iParam3, Global_262145.f_23900, "CC_BLUSH_23" /* GXT: Ancestral */, 5, 23, 1f, 139, -343911240);
+						func_643(iParam3, Global_262145.f_23900 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_ANCESTRAL */, "CC_BLUSH_23" /* GXT: Ancestral */, 5, 23, 1f, 139, -343911240);
 						break;
 					
 					case 61:
-						func_643(iParam3, Global_262145.f_23901, "CC_BLUSH_24" /* GXT: Coverage */, 5, 24, 1f, 140, -53479593);
+						func_643(iParam3, Global_262145.f_23901 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_COVERAGE */, "CC_BLUSH_24" /* GXT: Coverage */, 5, 24, 1f, 140, -53479593);
 						break;
 					
 					case 62:
-						func_643(iParam3, Global_262145.f_23902, "CC_BLUSH_25" /* GXT: Symmetry */, 5, 25, 1f, 141, -956003391);
+						func_643(iParam3, Global_262145.f_23902 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_SYMMETRY */, "CC_BLUSH_25" /* GXT: Symmetry */, 5, 25, 1f, 141, -956003391);
 						break;
 					
 					case 63:
-						func_643(iParam3, Global_262145.f_23903, "CC_BLUSH_26" /* GXT: Fingerprints */, 5, 26, 1f, 142, 1651163783);
+						func_643(iParam3, Global_262145.f_23903 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_FINGERPRINTS */, "CC_BLUSH_26" /* GXT: Fingerprints */, 5, 26, 1f, 142, 1651163783);
 						break;
 					
 					case 64:
-						func_643(iParam3, Global_262145.f_23904, "CC_BLUSH_27" /* GXT: Blotch Lower */, 5, 27, 1f, 143, 1959028538);
+						func_643(iParam3, Global_262145.f_23904 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_BLOTCH_LOWER */, "CC_BLUSH_27" /* GXT: Blotch Lower */, 5, 27, 1f, 143, 1959028538);
 						break;
 					
 					case 65:
-						func_643(iParam3, Global_262145.f_23905, "CC_BLUSH_28" /* GXT: The Spirit */, 5, 28, 1f, 144, 1576286618);
+						func_643(iParam3, Global_262145.f_23905 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_THE_SPIRIT */, "CC_BLUSH_28" /* GXT: The Spirit */, 5, 28, 1f, 144, 1576286618);
 						break;
 					
 					case 66:
-						func_643(iParam3, Global_262145.f_23906, "CC_BLUSH_29" /* GXT: Cheek Stripes */, 5, 29, 1f, 145, 809918015);
+						func_643(iParam3, Global_262145.f_23906 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_CHEEK_STRIPES */, "CC_BLUSH_29" /* GXT: Cheek Stripes */, 5, 29, 1f, 145, 809918015);
 						break;
 					
 					case 67:
-						func_643(iParam3, Global_262145.f_23907, "CC_BLUSH_30" /* GXT: The Demon */, 5, 30, 1f, 146, -699848470);
+						func_643(iParam3, Global_262145.f_23907 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_THE_DEMON */, "CC_BLUSH_30" /* GXT: The Demon */, 5, 30, 1f, 146, -699848470);
 						break;
 					
 					case 68:
-						func_643(iParam3, Global_262145.f_23908, "CC_BLUSH_31" /* GXT: Mandible */, 5, 31, 1f, 147, -938963863);
+						func_643(iParam3, Global_262145.f_23908 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_MANDIBLE */, "CC_BLUSH_31" /* GXT: Mandible */, 5, 31, 1f, 147, -938963863);
 						break;
 					
 					case 69:
-						func_643(iParam3, Global_262145.f_23909, "CC_BLUSH_32" /* GXT: Frontal */, 5, 32, 1f, 148, -1396746805);
+						func_643(iParam3, Global_262145.f_23909 /* Tunable: H2_MALE_AND_FEMALE_FACEPAINT_FRONTAL */, "CC_BLUSH_32" /* GXT: Frontal */, 5, 32, 1f, 148, -1396746805);
 						break;
 					
 					case 70:
-						func_643(iParam3, Global_262145.f_30739, "CC_MKUP_72" /* GXT: Striped Camo */, 4, 72, 1f, 149, 1290804003);
+						func_643(iParam3, Global_262145.f_30739 /* Tunable: IH_FACEPAINT_STRIPED_CAMO */, "CC_MKUP_72" /* GXT: Striped Camo */, 4, 72, 1f, 149, 1290804003);
 						break;
 					
 					case 71:
-						func_643(iParam3, Global_262145.f_30740, "CC_MKUP_73" /* GXT: Woodland Camo */, 4, 73, 1f, 150, 1059618708);
+						func_643(iParam3, Global_262145.f_30740 /* Tunable: IH_FACEPAINT_WOODLAND_CAMO */, "CC_MKUP_73" /* GXT: Woodland Camo */, 4, 73, 1f, 150, 1059618708);
 						break;
 					
 					case 72:
-						func_643(iParam3, Global_262145.f_30741, "CC_MKUP_74" /* GXT: Hunter Camo */, 4, 74, 1f, 151, 234888640);
+						func_643(iParam3, Global_262145.f_30741 /* Tunable: IH_FACEPAINT_HUNTER_CAMO */, "CC_MKUP_74" /* GXT: Hunter Camo */, 4, 74, 1f, 151, 234888640);
 						break;
 					
 					case 73:
-						func_643(iParam3, Global_262145.f_30742, "CC_MKUP_75" /* GXT: Half Camo */, 4, 75, 1f, 152, -89557357);
+						func_643(iParam3, Global_262145.f_30742 /* Tunable: IH_FACEPAINT_HALF_CAMO */, "CC_MKUP_75" /* GXT: Half Camo */, 4, 75, 1f, 152, -89557357);
 						break;
 					
 					case 74:
-						func_643(iParam3, Global_262145.f_30743, "CC_MKUP_76" /* GXT: Blotchy Camo */, 4, 76, 1f, 153, 697291999);
+						func_643(iParam3, Global_262145.f_30743 /* Tunable: IH_FACEPAINT_BLOTCHY_CAMO */, "CC_MKUP_76" /* GXT: Blotchy Camo */, 4, 76, 1f, 153, 697291999);
 						break;
 					
 					case 75:
-						func_643(iParam3, Global_262145.f_30744, "CC_MKUP_77" /* GXT: Starfish Camo */, 4, 77, 1f, 154, 389820472);
+						func_643(iParam3, Global_262145.f_30744 /* Tunable: IH_FACEPAINT_STARFISH_CAMO */, "CC_MKUP_77" /* GXT: Starfish Camo */, 4, 77, 1f, 154, 389820472);
 						break;
 					
 					case 76:
-						func_643(iParam3, Global_262145.f_30745, "CC_MKUP_78" /* GXT: Ghost Camo */, 4, 78, 1f, 155, 1917084907);
+						func_643(iParam3, Global_262145.f_30745 /* Tunable: IH_FACEPAINT_GHOST_CAMO */, "CC_MKUP_78" /* GXT: Ghost Camo */, 4, 78, 1f, 155, 1917084907);
 						break;
 					
 					case 77:
-						func_643(iParam3, Global_262145.f_30746, "CC_MKUP_79" /* GXT: Blended Camo */, 4, 79, 1f, 156, 1551055177);
+						func_643(iParam3, Global_262145.f_30746 /* Tunable: IH_FACEPAINT_BLENDED_CAMO */, "CC_MKUP_79" /* GXT: Blended Camo */, 4, 79, 1f, 156, 1551055177);
 						break;
 					
 					case 78:
-						func_643(iParam3, Global_262145.f_30747, "CC_MKUP_80" /* GXT: Jungle Camo */, 4, 80, 1f, 157, -1765855776);
+						func_643(iParam3, Global_262145.f_30747 /* Tunable: IH_FACEPAINT_JUNGLE_CAMO */, "CC_MKUP_80" /* GXT: Jungle Camo */, 4, 80, 1f, 157, -1765855776);
 						break;
 					
 					case 79:
-						func_643(iParam3, Global_262145.f_32026, "CC_MKUP_81" /* GXT: Red Cheek Lines */, 4, 81, 1f, 158, -2095774068);
+						func_643(iParam3, Global_262145.f_32026 /* Tunable: FIXER_FACEPAINT_RED_CHEEK_LINES */, "CC_MKUP_81" /* GXT: Red Cheek Lines */, 4, 81, 1f, 158, -2095774068);
 						break;
 					
 					case 80:
-						func_643(iParam3, Global_262145.f_32027, "CC_MKUP_82" /* GXT: Green Cheek Lines */, 4, 82, 1f, 159, 628050754);
+						func_643(iParam3, Global_262145.f_32027 /* Tunable: FIXER_FACEPAINT_GREEN_CHEEK_LINES */, "CC_MKUP_82" /* GXT: Green Cheek Lines */, 4, 82, 1f, 159, 628050754);
 						break;
 					
 					case 81:
-						func_643(iParam3, Global_262145.f_32028, "CC_MKUP_83" /* GXT: Cool Eye Flicks */, 4, 83, 1f, 160, 389656279);
+						func_643(iParam3, Global_262145.f_32028 /* Tunable: FIXER_FACEPAINT_COOL_EYE_FLICKS */, "CC_MKUP_83" /* GXT: Cool Eye Flicks */, 4, 83, 1f, 160, 389656279);
 						break;
 					
 					case 82:
-						func_643(iParam3, Global_262145.f_32029, "CC_MKUP_84" /* GXT: Hot Eye Flicks */, 4, 84, 1f, 161, 1209274507);
+						func_643(iParam3, Global_262145.f_32029 /* Tunable: FIXER_FACEPAINT_HOT_EYE_FLICKS */, "CC_MKUP_84" /* GXT: Hot Eye Flicks */, 4, 84, 1f, 161, 1209274507);
 						break;
 					
 					case 83:
-						func_643(iParam3, Global_262145.f_32030, "CC_MKUP_85" /* GXT: Blue Eye Plaid */, 4, 85, 1f, 162, 971338798);
+						func_643(iParam3, Global_262145.f_32030 /* Tunable: FIXER_FACEPAINT_BLUE_EYE_PLAID */, "CC_MKUP_85" /* GXT: Blue Eye Plaid */, 4, 85, 1f, 162, 971338798);
 						break;
 					
 					case 84:
-						func_643(iParam3, Global_262145.f_32031, "CC_MKUP_86" /* GXT: Green Eye Plaid */, 4, 86, 1f, 163, -1219727614);
+						func_643(iParam3, Global_262145.f_32031 /* Tunable: FIXER_FACEPAINT_GREEN_EYE_PLAID */, "CC_MKUP_86" /* GXT: Green Eye Plaid */, 4, 86, 1f, 163, -1219727614);
 						break;
 					
 					case 85:
-						func_643(iParam3, Global_262145.f_32032, "CC_MKUP_87" /* GXT: Orange Sun */, 4, 87, 1f, 164, -980481145);
+						func_643(iParam3, Global_262145.f_32032 /* Tunable: FIXER_FACEPAINT_ORANGE_SUN */, "CC_MKUP_87" /* GXT: Orange Sun */, 4, 87, 1f, 164, -980481145);
 						break;
 					
 					case 86:
-						func_643(iParam3, Global_262145.f_32033, "CC_MKUP_88" /* GXT: Red Sun */, 4, 88, 1f, 165, 1677446030);
+						func_643(iParam3, Global_262145.f_32033 /* Tunable: FIXER_FACEPAINT_RED_SUN */, "CC_MKUP_88" /* GXT: Red Sun */, 4, 88, 1f, 165, 1677446030);
 						break;
 					
 					case 87:
-						func_643(iParam3, Global_262145.f_32034, "CC_MKUP_89" /* GXT: White Lines & Dots */, 4, 89, 1f, 166, -1779191939);
+						func_643(iParam3, Global_262145.f_32034 /* Tunable: FIXER_FACEPAINT_WHITE_LINES_DOTS */, "CC_MKUP_89" /* GXT: White Lines & Dots */, 4, 89, 1f, 166, -1779191939);
 						break;
 					
 					case 88:
-						func_643(iParam3, Global_262145.f_32035, "CC_MKUP_90" /* GXT: Cool Lines & Dots */, 4, 90, 1f, 167, 260481701);
+						func_643(iParam3, Global_262145.f_32035 /* Tunable: FIXER_FACEPAINT_COOL_LINES_DOTS */, "CC_MKUP_90" /* GXT: Cool Lines & Dots */, 4, 90, 1f, 167, 260481701);
 						break;
 					
 					case 89:
-						func_643(iParam3, Global_262145.f_32036, "CC_MKUP_91" /* GXT: Blue Eyemask */, 4, 91, 1f, 168, 21562922);
+						func_643(iParam3, Global_262145.f_32036 /* Tunable: FIXER_FACEPAINT_PURPLE_EYEMASK */, "CC_MKUP_91" /* GXT: Blue Eyemask */, 4, 91, 1f, 168, 21562922);
 						break;
 					
 					case 90:
-						func_643(iParam3, Global_262145.f_32037, "CC_MKUP_92" /* GXT: Pink Eyemask */, 4, 92, 1f, 169, 812901503);
+						func_643(iParam3, Global_262145.f_32037 /* Tunable: FIXER_FACEPAINT_PINK_EYEMASK */, "CC_MKUP_92" /* GXT: Pink Eyemask */, 4, 92, 1f, 169, 812901503);
 						break;
 					
 					case 91:
-						func_643(iParam3, Global_262145.f_32038, "CC_MKUP_93" /* GXT: Yellow Tribal */, 4, 93, 1f, 170, 1527134627);
+						func_643(iParam3, Global_262145.f_32038 /* Tunable: FIXER_FACEPAINT_YELLOW_TRIBAL */, "CC_MKUP_93" /* GXT: Yellow Tribal */, 4, 93, 1f, 170, 1527134627);
 						break;
 					
 					case 92:
-						func_643(iParam3, Global_262145.f_32039, "CC_MKUP_94" /* GXT: Green Tribal */, 4, 94, 1f, 171, -32047166);
+						func_643(iParam3, Global_262145.f_32039 /* Tunable: FIXER_FACEPAINT_GREEN_TRIBAL */, "CC_MKUP_94" /* GXT: Green Tribal */, 4, 94, 1f, 171, -32047166);
 						break;
 					
 					case 93:
@@ -109240,107 +109240,107 @@ bool func_639(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//
 				switch (iParam2)
 				{
 					case 0:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2619)), "NONE" /* GXT: None */, 4, -1, 1f, 28, -1451684059);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(100) * Global_262145.f_2619 /* Tunable: MAKEUP_UNLOCKS_BASIC_EXPENDITURE_TUNABLE */)), "NONE" /* GXT: None */, 4, -1, 1f, 28, -1451684059);
 						break;
 					
 					case 1:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(225) * Global_262145.f_2620)), "CC_MKUP_0" /* GXT: Smoky Black */, 4, 0, 1f, 29, -675288142);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(225) * Global_262145.f_2620 /* Tunable: MAKEUP_UNLOCKS_NUDE_EXPENDITURE_TUNABLE */)), "CC_MKUP_0" /* GXT: Smoky Black */, 4, 0, 1f, 29, -675288142);
 						break;
 					
 					case 2:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(250) * Global_262145.f_2621)), "CC_MKUP_1" /* GXT: Bronze */, 4, 1, 1f, 30, -984234274);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(250) * Global_262145.f_2621 /* Tunable: MAKEUP_UNLOCKS_SMOKY_EXPENDITURE_TUNABLE */)), "CC_MKUP_1" /* GXT: Bronze */, 4, 1, 1f, 30, -984234274);
 						break;
 					
 					case 3:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(175) * Global_262145.f_2622)), "CC_MKUP_2" /* GXT: Soft Gray */, 4, 2, 1f, 31, -258728614);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(175) * Global_262145.f_2622 /* Tunable: MAKEUP_UNLOCKS_GOTHIC_EXPENDITURE_TUNABLE */)), "CC_MKUP_2" /* GXT: Soft Gray */, 4, 2, 1f, 31, -258728614);
 						break;
 					
 					case 4:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(610) * Global_262145.f_2623)), "CC_MKUP_3" /* GXT: Retro Glam */, 4, 3, 1f, 32, 516356543);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(610) * Global_262145.f_2623 /* Tunable: MAKEUP_UNLOCKS_ROCKER_EXPENDITURE_TUNABLE */)), "CC_MKUP_3" /* GXT: Retro Glam */, 4, 3, 1f, 32, 516356543);
 						break;
 					
 					case 5:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(150) * Global_262145.f_2624)), "CC_MKUP_4" /* GXT: Natural Look */, 4, 4, 1f, 33, 200791073);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(150) * Global_262145.f_2624 /* Tunable: MAKEUP_UNLOCKS_PARTYGIRL_EXPENDITURE_TUNABLE */)), "CC_MKUP_4" /* GXT: Natural Look */, 4, 4, 1f, 33, 200791073);
 						break;
 					
 					case 6:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(200) * Global_262145.f_2625)), "CC_MKUP_5" /* GXT: Cat Eyes */, 4, 5, 1f, 34, 976334996);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(200) * Global_262145.f_2625 /* Tunable: MAKEUP_UNLOCKS_ARTSY_EXPENDITURE_TUNABLE */)), "CC_MKUP_5" /* GXT: Cat Eyes */, 4, 5, 1f, 34, 976334996);
 						break;
 					
 					case 7:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(870) * Global_262145.f_2626)), "CC_MKUP_6" /* GXT: Chola */, 4, 6, 1f, 35, 743642327);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(870) * Global_262145.f_2626 /* Tunable: MAKEUP_UNLOCKS_TRAILERPARKPRINCESS_EXPENDITURE_TUNABLE */)), "CC_MKUP_6" /* GXT: Chola */, 4, 6, 1f, 35, 743642327);
 						break;
 					
 					case 8:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(275) * Global_262145.f_2627)), "CC_MKUP_7" /* GXT: Vamp */, 4, 7, 1f, 36, 1511583842);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(275) * Global_262145.f_2627 /* Tunable: MAKEUP_UNLOCKS_SOCCERMOM_EXPENDITURE_TUNABLE */)), "CC_MKUP_7" /* GXT: Vamp */, 4, 7, 1f, 36, 1511583842);
 						break;
 					
 					case 9:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(480) * Global_262145.f_2628)), "CC_MKUP_8" /* GXT: Vinewood Glamour */, 4, 8, 1f, 37, 1238290382);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(480) * Global_262145.f_2628 /* Tunable: MAKEUP_UNLOCKS_FEMMEFATALE_EXPENDITURE_TUNABLE */)), "CC_MKUP_8" /* GXT: Vinewood Glamour */, 4, 8, 1f, 37, 1238290382);
 						break;
 					
 					case 10:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2000) * Global_262145.f_2629)), "CC_MKUP_9" /* GXT: Bubblegum */, 4, 9, 1f, 38, -587327163);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(2000) * Global_262145.f_2629 /* Tunable: MAKEUP_UNLOCKS_SERIOUSLYCERISE_EXPENDITURE_TUNABLE */)), "CC_MKUP_9" /* GXT: Bubblegum */, 4, 9, 1f, 38, -587327163);
 						break;
 					
 					case 11:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(740) * Global_262145.f_2630)), "CC_MKUP_10" /* GXT: Aqua Dream */, 4, 10, 1f, 39, -1009457421);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(740) * Global_262145.f_2630 /* Tunable: MAKEUP_UNLOCKS_DISCOTEQUEWRECK_EXPENDITURE_TUNABLE */)), "CC_MKUP_10" /* GXT: Aqua Dream */, 4, 10, 1f, 39, -1009457421);
 						break;
 					
 					case 12:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(935) * Global_262145.f_2631)), "CC_MKUP_11" /* GXT: Pin Up */, 4, 11, 1f, 40, 1852062739);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(935) * Global_262145.f_2631 /* Tunable: MAKEUP_UNLOCKS_BEAUTYSPOT_EXPENDITURE_TUNABLE */)), "CC_MKUP_11" /* GXT: Pin Up */, 4, 11, 1f, 40, 1852062739);
 						break;
 					
 					case 13:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(675) * Global_262145.f_2632)), "CC_MKUP_12" /* GXT: Purple Passion */, 4, 12, 1f, 41, 1561958782);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(675) * Global_262145.f_2632 /* Tunable: MAKEUP_UNLOCKS_TONEDDOWN_EXPENDITURE_TUNABLE */)), "CC_MKUP_12" /* GXT: Purple Passion */, 4, 12, 1f, 41, 1561958782);
 						break;
 					
 					case 14:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1000) * Global_262145.f_2633)), "CC_MKUP_13" /* GXT: Smoky Cat Eye */, 4, 13, 1f, 42, -1779135693);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(1000) * Global_262145.f_2633 /* Tunable: MAKEUP_UNLOCKS_CYANSWIPED_EXPENDITURE_TUNABLE */)), "CC_MKUP_13" /* GXT: Smoky Cat Eye */, 4, 13, 1f, 42, -1779135693);
 						break;
 					
 					case 15:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(805) * Global_262145.f_2634)), "CC_MKUP_14" /* GXT: Smoldering Ruby */, 4, 14, 1f, 43, 2022396001);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(805) * Global_262145.f_2634 /* Tunable: MAKEUP_UNLOCKS_MORNINGAFTER_EXPENDITURE_TUNABLE */)), "CC_MKUP_14" /* GXT: Smoldering Ruby */, 4, 14, 1f, 43, 2022396001);
 						break;
 					
 					case 16:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(545) * Global_262145.f_2635)), "CC_MKUP_15" /* GXT: Pop Princess */, 4, 15, 1f, 44, -1277868344);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(545) * Global_262145.f_2635 /* Tunable: MAKEUP_UNLOCKS_COVERGIRL_EXPENDITURE_TUNABLE */)), "CC_MKUP_15" /* GXT: Pop Princess */, 4, 15, 1f, 44, -1277868344);
 						break;
 					
 					case 17:
-						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(300) * Global_262145.f_2652)), "CC_MKUP_32" /* GXT: Guyliner */, 4, 32, 1f, 91, -1046224283);
+						func_643(iParam3, SYSTEM::ROUND((SYSTEM::TO_FLOAT(300) * Global_262145.f_2652 /* Tunable: MAKEUP_UNLOCKS_GUYLINER_EXPENDITURE_TUNABLE */)), "CC_MKUP_32" /* GXT: Guyliner */, 4, 32, 1f, 91, -1046224283);
 						break;
 					
 					case 18:
-						func_643(iParam3, Global_262145.f_9296, "CC_MKUP_34" /* GXT: Blood Tears */, 4, 34, 1f, -1, -1992232544);
+						func_643(iParam3, Global_262145.f_9296 /* Tunable: MAKEUP_MAKEUP_BLOOD_TEARS */, "CC_MKUP_34" /* GXT: Blood Tears */, 4, 34, 1f, -1, -1992232544);
 						break;
 					
 					case 19:
-						func_643(iParam3, Global_262145.f_9297, "CC_MKUP_35" /* GXT: Heavy Metal */, 4, 35, 1f, -1, -1511904542);
+						func_643(iParam3, Global_262145.f_9297 /* Tunable: MAKEUP_MAKEUP_HEAVY_METAL */, "CC_MKUP_35" /* GXT: Heavy Metal */, 4, 35, 1f, -1, -1511904542);
 						break;
 					
 					case 20:
-						func_643(iParam3, Global_262145.f_9298, "CC_MKUP_36" /* GXT: Sorrow */, 4, 36, 1f, -1, 338954980);
+						func_643(iParam3, Global_262145.f_9298 /* Tunable: MAKEUP_MAKEUP_SORROW */, "CC_MKUP_36" /* GXT: Sorrow */, 4, 36, 1f, -1, 338954980);
 						break;
 					
 					case 21:
-						func_643(iParam3, Global_262145.f_9299, "CC_MKUP_37" /* GXT: Prince of Darkness */, 4, 37, 1f, -1, 644853595);
+						func_643(iParam3, Global_262145.f_9299 /* Tunable: MAKEUP_MAKEUP_PRINCE_OF_DARKNESS */, "CC_MKUP_37" /* GXT: Prince of Darkness */, 4, 37, 1f, -1, 644853595);
 						break;
 					
 					case 22:
-						func_643(iParam3, Global_262145.f_9300, "CC_MKUP_38" /* GXT: Rocker */, 4, 38, 1f, -1, 928043293);
+						func_643(iParam3, Global_262145.f_9300 /* Tunable: MAKEUP_MAKEUP_ROCKER */, "CC_MKUP_38" /* GXT: Rocker */, 4, 38, 1f, -1, 928043293);
 						break;
 					
 					case 23:
-						func_643(iParam3, Global_262145.f_9301, "CC_MKUP_39" /* GXT: Goth */, 4, 39, 1f, -1, 1233483142);
+						func_643(iParam3, Global_262145.f_9301 /* Tunable: MAKEUP_MAKEUP_GOTH */, "CC_MKUP_39" /* GXT: Goth */, 4, 39, 1f, -1, 1233483142);
 						break;
 					
 					case 24:
-						func_643(iParam3, Global_262145.f_9302, "CC_MKUP_40" /* GXT: Punk */, 4, 40, 1f, -1, 455547074);
+						func_643(iParam3, Global_262145.f_9302 /* Tunable: MAKEUP_MAKEUP_PUNK */, "CC_MKUP_40" /* GXT: Punk */, 4, 40, 1f, -1, 455547074);
 						break;
 					
 					case 25:
-						func_643(iParam3, Global_262145.f_9303, "CC_MKUP_41" /* GXT: Devastated */, 4, 41, 1f, -1, 753187901);
+						func_643(iParam3, Global_262145.f_9303 /* Tunable: MAKEUP_MAKEUP_DEVASTATED */, "CC_MKUP_41" /* GXT: Devastated */, 4, 41, 1f, -1, 753187901);
 						break;
 					
 					case 26:
@@ -109353,35 +109353,35 @@ bool func_639(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//
 				switch (iParam2)
 				{
 					case 0:
-						func_643(iParam3, Global_262145.f_9304, "NONE" /* GXT: None */, 5, -1, 1f, -1, -1381379572);
+						func_643(iParam3, Global_262145.f_9304 /* Tunable: MAKEUP_BLUSHER_NONE */, "NONE" /* GXT: None */, 5, -1, 1f, -1, -1381379572);
 						break;
 					
 					case 1:
-						func_643(iParam3, Global_262145.f_9305, "CC_BLUSH_0" /* GXT: Full */, 5, 0, 1f, -1, -978746865);
+						func_643(iParam3, Global_262145.f_9305 /* Tunable: MAKEUP_BLUSHER_FULL */, "CC_BLUSH_0" /* GXT: Full */, 5, 0, 1f, -1, -978746865);
 						break;
 					
 					case 2:
-						func_643(iParam3, Global_262145.f_9306, "CC_BLUSH_1" /* GXT: Angled */, 5, 1, 1f, -1, 946792344);
+						func_643(iParam3, Global_262145.f_9306 /* Tunable: MAKEUP_BLUSHER_ANGLED */, "CC_BLUSH_1" /* GXT: Angled */, 5, 1, 1f, -1, 946792344);
 						break;
 					
 					case 3:
-						func_643(iParam3, Global_262145.f_9307, "CC_BLUSH_2" /* GXT: Round */, 5, 2, 1f, -1, -366195948);
+						func_643(iParam3, Global_262145.f_9307 /* Tunable: MAKEUP_BLUSHER_ROUND */, "CC_BLUSH_2" /* GXT: Round */, 5, 2, 1f, -1, -366195948);
 						break;
 					
 					case 4:
-						func_643(iParam3, Global_262145.f_9308, "CC_BLUSH_3" /* GXT: Horizontal */, 5, 3, 1f, -1, -722394978);
+						func_643(iParam3, Global_262145.f_9308 /* Tunable: MAKEUP_BLUSHER_HORIZONTAL */, "CC_BLUSH_3" /* GXT: Horizontal */, 5, 3, 1f, -1, -722394978);
 						break;
 					
 					case 5:
-						func_643(iParam3, Global_262145.f_9309, "CC_BLUSH_4" /* GXT: High */, 5, 4, 1f, -1, 216207489);
+						func_643(iParam3, Global_262145.f_9309 /* Tunable: MAKEUP_BLUSHER_HIGH */, "CC_BLUSH_4" /* GXT: High */, 5, 4, 1f, -1, 216207489);
 						break;
 					
 					case 6:
-						func_643(iParam3, Global_262145.f_9310, "CC_BLUSH_5" /* GXT: Sweetheart */, 5, 5, 1f, -1, 2124706822);
+						func_643(iParam3, Global_262145.f_9310 /* Tunable: MAKEUP_BLUSHER_SWEETHEART */, "CC_BLUSH_5" /* GXT: Sweetheart */, 5, 5, 1f, -1, 2124706822);
 						break;
 					
 					case 7:
-						func_643(iParam3, Global_262145.f_9311, "CC_BLUSH_6" /* GXT: Eighties */, 5, 6, 1f, -1, 832559610);
+						func_643(iParam3, Global_262145.f_9311 /* Tunable: MAKEUP_BLUSHER_EIGHTIES */, "CC_BLUSH_6" /* GXT: Eighties */, 5, 6, 1f, -1, 832559610);
 						break;
 					
 					case 8:
@@ -109394,47 +109394,47 @@ bool func_639(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//
 				switch (iParam2)
 				{
 					case 0:
-						func_643(iParam3, Global_262145.f_9312, "NONE" /* GXT: None */, 8, -1, 1f, -1, -791212145);
+						func_643(iParam3, Global_262145.f_9312 /* Tunable: MAKEUP_LIPS_NONE */, "NONE" /* GXT: None */, 8, -1, 1f, -1, -791212145);
 						break;
 					
 					case 1:
-						func_643(iParam3, Global_262145.f_9313, "CC_LIPSTICK_0" /* GXT: Color Matte */, 8, 0, 1f, -1, 1426003941);
+						func_643(iParam3, Global_262145.f_9313 /* Tunable: MAKEUP_LIPS_COLOR_GLOSS */, "CC_LIPSTICK_0" /* GXT: Color Matte */, 8, 0, 1f, -1, 1426003941);
 						break;
 					
 					case 2:
-						func_643(iParam3, Global_262145.f_9314, "CC_LIPSTICK_1" /* GXT: Color Gloss */, 8, 1, 1f, -1, -2062125037);
+						func_643(iParam3, Global_262145.f_9314 /* Tunable: MAKEUP_LIPS_COLOR_MATT */, "CC_LIPSTICK_1" /* GXT: Color Gloss */, 8, 1, 1f, -1, -2062125037);
 						break;
 					
 					case 3:
-						func_643(iParam3, Global_262145.f_9315, "CC_LIPSTICK_2" /* GXT: Lined Matte */, 8, 2, 1f, -1, 2002508958);
+						func_643(iParam3, Global_262145.f_9315 /* Tunable: MAKEUP_LIPS_LINED_GLOSS */, "CC_LIPSTICK_2" /* GXT: Lined Matte */, 8, 2, 1f, -1, 2002508958);
 						break;
 					
 					case 4:
-						func_643(iParam3, Global_262145.f_9316, "CC_LIPSTICK_3" /* GXT: Lined Gloss */, 8, 3, 1f, -1, -1983118982);
+						func_643(iParam3, Global_262145.f_9316 /* Tunable: MAKEUP_LIPS_LINED_MATT */, "CC_LIPSTICK_3" /* GXT: Lined Gloss */, 8, 3, 1f, -1, -1983118982);
 						break;
 					
 					case 5:
-						func_643(iParam3, Global_262145.f_9317, "CC_LIPSTICK_4" /* GXT: Heavy Lined Matte */, 8, 4, 1f, -1, 825938009);
+						func_643(iParam3, Global_262145.f_9317 /* Tunable: MAKEUP_LIPS_HEAVY_LINED_GLOSS */, "CC_LIPSTICK_4" /* GXT: Heavy Lined Matte */, 8, 4, 1f, -1, 825938009);
 						break;
 					
 					case 6:
-						func_643(iParam3, Global_262145.f_9318, "CC_LIPSTICK_5" /* GXT: Heavy Lined Gloss */, 8, 5, 1f, -1, 1670231294);
+						func_643(iParam3, Global_262145.f_9318 /* Tunable: MAKEUP_LIPS_HEAVY_LINED_MATT */, "CC_LIPSTICK_5" /* GXT: Heavy Lined Gloss */, 8, 5, 1f, -1, 1670231294);
 						break;
 					
 					case 7:
-						func_643(iParam3, Global_262145.f_9319, "CC_LIPSTICK_6" /* GXT: Lined Nude Matte */, 8, 6, 1f, -1, 1439144306);
+						func_643(iParam3, Global_262145.f_9319 /* Tunable: MAKEUP_LIPS_LINED_NUDE_GLOSS */, "CC_LIPSTICK_6" /* GXT: Lined Nude Matte */, 8, 6, 1f, -1, 1439144306);
 						break;
 					
 					case 8:
-						func_643(iParam3, Global_262145.f_9320, "CC_LIPSTICK_7" /* GXT: Lined Nude Gloss */, 8, 7, 1f, -1, -2008613264);
+						func_643(iParam3, Global_262145.f_9320 /* Tunable: MAKEUP_LIPS_LINED_NUDE_MATT */, "CC_LIPSTICK_7" /* GXT: Lined Nude Gloss */, 8, 7, 1f, -1, -2008613264);
 						break;
 					
 					case 9:
-						func_643(iParam3, Global_262145.f_9321, "CC_LIPSTICK_8" /* GXT: Smudged */, 8, 8, 1f, -1, 137657929);
+						func_643(iParam3, Global_262145.f_9321 /* Tunable: MAKEUP_LIPS_SMUDGED */, "CC_LIPSTICK_8" /* GXT: Smudged */, 8, 8, 1f, -1, 137657929);
 						break;
 					
 					case 10:
-						func_643(iParam3, Global_262145.f_9322, "CC_LIPSTICK_9" /* GXT: Geisha */, 8, 9, 1f, -1, 850282205);
+						func_643(iParam3, Global_262145.f_9322 /* Tunable: MAKEUP_LIPS_GEISHA */, "CC_LIPSTICK_9" /* GXT: Geisha */, 8, 9, 1f, -1, 850282205);
 						break;
 					
 					case 11:
@@ -111556,25 +111556,25 @@ int func_689(int iParam0)//Position - 0x860BF
 	int iVar0;
 	
 	iVar0 = -1;
-	if (iParam0 == Global_262145.f_31615)
+	if (iParam0 == Global_262145.f_31615 /* Tunable: TUNER_CARCLUB_LEVEL_BRACKET_5 */)
 	{
-		iVar0 = Global_262145.f_31610;
+		iVar0 = Global_262145.f_31610 /* Tunable: TUNER_CARCLUB_REWARDS_CASH_BRACKET_5 */;
 	}
-	else if (iParam0 >= Global_262145.f_31613 + 1 && iParam0 <= Global_262145.f_31614)
+	else if (iParam0 >= Global_262145.f_31613 /* Tunable: TUNER_CARCLUB_LEVEL_BRACKET_3 */ + 1 && iParam0 <= Global_262145.f_31614 /* Tunable: TUNER_CARCLUB_LEVEL_BRACKET_4 */)
 	{
-		iVar0 = Global_262145.f_31609;
+		iVar0 = Global_262145.f_31609 /* Tunable: TUNER_CARCLUB_REWARDS_CASH_BRACKET_4 */;
 	}
-	else if (iParam0 >= Global_262145.f_31612 + 1 && iParam0 <= Global_262145.f_31613)
+	else if (iParam0 >= Global_262145.f_31612 /* Tunable: TUNER_CARCLUB_LEVEL_BRACKET_2 */ + 1 && iParam0 <= Global_262145.f_31613 /* Tunable: TUNER_CARCLUB_LEVEL_BRACKET_3 */)
 	{
-		iVar0 = Global_262145.f_31608;
+		iVar0 = Global_262145.f_31608 /* Tunable: TUNER_CARCLUB_REWARDS_CASH_BRACKET_3 */;
 	}
-	else if (iParam0 >= Global_262145.f_31611 + 1 && iParam0 <= Global_262145.f_31612)
+	else if (iParam0 >= Global_262145.f_31611 /* Tunable: TUNER_CARCLUB_LEVEL_BRACKET_1 */ + 1 && iParam0 <= Global_262145.f_31612 /* Tunable: TUNER_CARCLUB_LEVEL_BRACKET_2 */)
 	{
-		iVar0 = Global_262145.f_31607;
+		iVar0 = Global_262145.f_31607 /* Tunable: TUNER_CARCLUB_REWARDS_CASH_BRACKET_2 */;
 	}
-	else if (iParam0 >= 2 && iParam0 <= Global_262145.f_31611)
+	else if (iParam0 >= 2 && iParam0 <= Global_262145.f_31611 /* Tunable: TUNER_CARCLUB_LEVEL_BRACKET_1 */)
 	{
-		iVar0 = Global_262145.f_31606;
+		iVar0 = Global_262145.f_31606 /* Tunable: TUNER_CARCLUB_REWARDS_CASH_BRACKET_1 */;
 	}
 	return iVar0;
 }
@@ -111767,1134 +111767,1134 @@ int func_693(int iParam0)//Position - 0x8644F
 	iVar1 = NETWORK::GET_CLOUD_TIME_AS_INT();
 	if (iParam0 == joaat("btype3"))
 	{
-		if ((!Global_262145.f_7058 && !Global_262145.f_13394) && iVar1 < Global_262145.f_13395)
+		if ((!Global_262145.f_7058 /* Tunable: TURN_ON_VALENTINES_EVENT */ && !Global_262145.f_13394 /* Tunable: TURN_ON_VALENTINE_2016_VEHICLE */) && iVar1 < Global_262145.f_13395 /* Tunable: TURN_ON_VALENTINE_2016_VEHICLE_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	if (iParam0 == joaat("faction3"))
 	{
-		if (!Global_262145.f_14734 && iVar1 < Global_262145.f_14746)
+		if (!Global_262145.f_14734 /* Tunable: ENABLE_LOWRIDER2_FACTION */ && iVar1 < Global_262145.f_14746 /* Tunable: ENABLE_LOWRIDER2_FACTION_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("virgo3") || iParam0 == joaat("virgo2"))
 	{
-		if (!Global_262145.f_14730 && iVar1 < Global_262145.f_14742)
+		if (!Global_262145.f_14730 /* Tunable: ENABLE_LOWRIDER2_VIRGO3 */ && iVar1 < Global_262145.f_14742 /* Tunable: ENABLE_LOWRIDER2_VIRGO3_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("sabregt2"))
 	{
-		if (!Global_262145.f_14731 && iVar1 < Global_262145.f_14743)
+		if (!Global_262145.f_14731 /* Tunable: ENABLE_LOWRIDER2_SABREGT */ && iVar1 < Global_262145.f_14743 /* Tunable: ENABLE_LOWRIDER2_SABREGT_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tornado5"))
 	{
-		if (!Global_262145.f_14732 && iVar1 < Global_262145.f_14744)
+		if (!Global_262145.f_14732 /* Tunable: ENABLE_LOWRIDER2_TORNADO5 */ && iVar1 < Global_262145.f_14744 /* Tunable: ENABLE_LOWRIDER2_TORNADO5_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("minivan2"))
 	{
-		if (!Global_262145.f_14733 && iVar1 < Global_262145.f_14745)
+		if (!Global_262145.f_14733 /* Tunable: ENABLE_LOWRIDER2_MINIVAN */ && iVar1 < Global_262145.f_14745 /* Tunable: ENABLE_LOWRIDER2_MINIVAN_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("slamvan3"))
 	{
-		if (!Global_262145.f_14735 && iVar1 < Global_262145.f_14747)
+		if (!Global_262145.f_14735 /* Tunable: ENABLE_LOWRIDER2_SLAMVAN */ && iVar1 < Global_262145.f_14747 /* Tunable: ENABLE_LOWRIDER2_SLAMVAN_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	if (iParam0 == joaat("prototipo"))
 	{
-		if (!Global_262145.f_14736 && iVar1 < Global_262145.f_14739)
+		if (!Global_262145.f_14736 /* Tunable: ENABLEEXEC1_GROTTI_PROTO */ && iVar1 < Global_262145.f_14739 /* Tunable: ENABLEEXEC1_GROTTI_PROTO_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("seven70"))
 	{
-		if (!Global_262145.f_14737 && iVar1 < Global_262145.f_14740)
+		if (!Global_262145.f_14737 /* Tunable: ENABLEEXEC1_DEWBAUCHEE */ && iVar1 < Global_262145.f_14740 /* Tunable: ENABLEEXEC1_DEWBAUCHEE_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("pfister811"))
 	{
-		if (!Global_262145.f_14738 && iVar1 < Global_262145.f_14741)
+		if (!Global_262145.f_14738 /* Tunable: ENABLEEXEC1_PFISTER */ && iVar1 < Global_262145.f_14741 /* Tunable: ENABLEEXEC1_PFISTER_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	if (iParam0 == joaat("bf400"))
 	{
-		if (!Global_262145.f_17368 && iVar1 < Global_262145.f_17333)
+		if (!Global_262145.f_17368 /* Tunable: ENABLESTUNT_BF400 */ && iVar1 < Global_262145.f_17333 /* Tunable: ENABLESTUNT_BF400_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("brioso"))
 	{
-		if (!Global_262145.f_17363 && iVar1 < Global_262145.f_17328)
+		if (!Global_262145.f_17363 /* Tunable: ENABLESTUNT_BRIOSO_RA */ && iVar1 < Global_262145.f_17328 /* Tunable: ENABLESTUNT_BRIOSO_RA_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("cliffhanger"))
 	{
-		if (!Global_262145.f_17367 && iVar1 < Global_262145.f_17332)
+		if (!Global_262145.f_17367 /* Tunable: ENABLESTUNT_CLIFFHANGER */ && iVar1 < Global_262145.f_17332 /* Tunable: ENABLESTUNT_CLIFFHANGER_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("contender"))
 	{
-		if (!Global_262145.f_17366 && iVar1 < Global_262145.f_17331)
+		if (!Global_262145.f_17366 /* Tunable: ENABLESTUNT_CONTENDER */ && iVar1 < Global_262145.f_17331 /* Tunable: ENABLESTUNT_CONTENDER_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("le7b"))
 	{
-		if (!Global_262145.f_17360 && iVar1 < Global_262145.f_17325)
+		if (!Global_262145.f_17360 /* Tunable: ENABLESTUNT_LE7B */ && iVar1 < Global_262145.f_17325 /* Tunable: ENABLESTUNT_LE7B_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("omnis"))
 	{
-		if (!Global_262145.f_17361 && iVar1 < Global_262145.f_17326)
+		if (!Global_262145.f_17361 /* Tunable: ENABLESTUNT_OMNIS */ && iVar1 < Global_262145.f_17326 /* Tunable: ENABLESTUNT_OMNIS_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("trophytruck"))
 	{
-		if (!Global_262145.f_17364 && iVar1 < Global_262145.f_17329)
+		if (!Global_262145.f_17364 /* Tunable: ENABLESTUNT_TROPHY_TRUCK */ && iVar1 < Global_262145.f_17329 /* Tunable: ENABLESTUNT_TROPHY_TRUCK_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("trophytruck2"))
 	{
-		if (!Global_262145.f_17365 && iVar1 < Global_262145.f_17330)
+		if (!Global_262145.f_17365 /* Tunable: ENABLESTUNT_TROPHY_CAR */ && iVar1 < Global_262145.f_17330 /* Tunable: ENABLESTUNT_TROPHY_CAR_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tropos"))
 	{
-		if (!Global_262145.f_17362 && iVar1 < Global_262145.f_17327)
+		if (!Global_262145.f_17362 /* Tunable: ENABLESTUNT_TROPOS_RALLYE */ && iVar1 < Global_262145.f_17327 /* Tunable: ENABLESTUNT_TROPOS_RALLYE_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("gargoyle"))
 	{
-		if (!Global_262145.f_17370 && iVar1 < Global_262145.f_17335)
+		if (!Global_262145.f_17370 /* Tunable: ENABLESTUNT_GARGOYLE */ && iVar1 < Global_262145.f_17335 /* Tunable: ENABLESTUNT_GARGOYLE_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("rallytruck"))
 	{
-		if (!Global_262145.f_17371 && iVar1 < Global_262145.f_17336)
+		if (!Global_262145.f_17371 /* Tunable: ENABLESTUNT_RALLY_TRUCK */ && iVar1 < Global_262145.f_17336 /* Tunable: ENABLESTUNT_RALLY_TRUCK_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tampa2"))
 	{
-		if (!Global_262145.f_17359 && iVar1 < Global_262145.f_17324)
+		if (!Global_262145.f_17359 /* Tunable: ENABLESTUNT_DRIFT_TAMPA */ && iVar1 < Global_262145.f_17324 /* Tunable: ENABLESTUNT_DRIFT_TAMPA_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tyrus"))
 	{
-		if (!Global_262145.f_17358 && iVar1 < Global_262145.f_17323)
+		if (!Global_262145.f_17358 /* Tunable: ENABLESTUNT_TYRUS */ && iVar1 < Global_262145.f_17323 /* Tunable: ENABLESTUNT_TYRUS_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("sheava"))
 	{
-		if (!Global_262145.f_17357 && iVar1 < Global_262145.f_17322)
+		if (!Global_262145.f_17357 /* Tunable: ENABLESTUNT_ET1 */ && iVar1 < Global_262145.f_17322 /* Tunable: ENABLESTUNT_ET1_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("lynx"))
 	{
-		if (!Global_262145.f_17369 && iVar1 < Global_262145.f_17334)
+		if (!Global_262145.f_17369 /* Tunable: ENABLESTUNT_LYNX */ && iVar1 < Global_262145.f_17334 /* Tunable: ENABLESTUNT_LYNX_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("stalion2"))
 	{
-		if (!Global_262145.f_17372 && iVar1 < Global_262145.f_17337)
+		if (!Global_262145.f_17372 /* Tunable: ENABLESTUNT_STALLION */ && iVar1 < Global_262145.f_17337 /* Tunable: ENABLESTUNT_STALLION_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("gauntlet2"))
 	{
-		if (!Global_262145.f_17373 && iVar1 < Global_262145.f_17338)
+		if (!Global_262145.f_17373 /* Tunable: ENABLESTUNT_GAUNTLET */ && iVar1 < Global_262145.f_17338 /* Tunable: ENABLESTUNT_GAUNTLET_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("dominator2"))
 	{
-		if (!Global_262145.f_17374 && iVar1 < Global_262145.f_17339)
+		if (!Global_262145.f_17374 /* Tunable: ENABLESTUNT_DOMINATOR */ && iVar1 < Global_262145.f_17339 /* Tunable: ENABLESTUNT_DOMINATOR_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("buffalo3"))
 	{
-		if (!Global_262145.f_17375 && iVar1 < Global_262145.f_17340)
+		if (!Global_262145.f_17375 /* Tunable: ENABLESTUNT_BUFFALO */ && iVar1 < Global_262145.f_17340 /* Tunable: ENABLESTUNT_BUFFALO_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	if (iParam0 == joaat("defiler"))
 	{
-		if (!Global_262145.f_17522 && iVar1 < Global_262145.f_17544)
+		if (!Global_262145.f_17522 /* Tunable: ENABLE_BIKER_DEFILER */ && iVar1 < Global_262145.f_17544 /* Tunable: ENABLE_BIKER_DEFILER_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("nightblade"))
 	{
-		if (!Global_262145.f_17523 && iVar1 < Global_262145.f_17545)
+		if (!Global_262145.f_17523 /* Tunable: ENABLE_BIKER_NIGHTBLADE */ && iVar1 < Global_262145.f_17545 /* Tunable: ENABLE_BIKER_NIGHTBLADE_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("zombiea"))
 	{
-		if (!Global_262145.f_17524 && iVar1 < Global_262145.f_17546)
+		if (!Global_262145.f_17524 /* Tunable: ENABLE_BIKER_ZOMBIEA */ && iVar1 < Global_262145.f_17546 /* Tunable: ENABLE_BIKER_ZOMBIEA_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("esskey"))
 	{
-		if (!Global_262145.f_17525 && iVar1 < Global_262145.f_17547)
+		if (!Global_262145.f_17525 /* Tunable: ENABLE_BIKER_ESSKEY */ && iVar1 < Global_262145.f_17547 /* Tunable: ENABLE_BIKER_ESSKEY_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("avarus"))
 	{
-		if (!Global_262145.f_17526 && iVar1 < Global_262145.f_17548)
+		if (!Global_262145.f_17526 /* Tunable: ENABLE_BIKER_AVARUS */ && iVar1 < Global_262145.f_17548 /* Tunable: ENABLE_BIKER_AVARUS_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("zombieb"))
 	{
-		if (!Global_262145.f_17527 && iVar1 < Global_262145.f_17549)
+		if (!Global_262145.f_17527 /* Tunable: ENABLE_BIKER_ZOMBIEB */ && iVar1 < Global_262145.f_17549 /* Tunable: ENABLE_BIKER_ZOMBIEB_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("hakuchou2"))
 	{
-		if (!Global_262145.f_17529 && iVar1 < Global_262145.f_17550)
+		if (!Global_262145.f_17529 /* Tunable: ENABLE_BIKER_HAKUCHOU2 */ && iVar1 < Global_262145.f_17550 /* Tunable: ENABLE_BIKER_HAKUCHOU2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("vortex"))
 	{
-		if (!Global_262145.f_17530 && iVar1 < Global_262145.f_17551)
+		if (!Global_262145.f_17530 /* Tunable: ENABLE_BIKER_VORTEX */ && iVar1 < Global_262145.f_17551 /* Tunable: ENABLE_BIKER_VORTEX_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("shotaro"))
 	{
-		if (!Global_262145.f_17531 && iVar1 < Global_262145.f_17552)
+		if (!Global_262145.f_17531 /* Tunable: ENABLE_BIKER_SHOTARO */ && iVar1 < Global_262145.f_17552 /* Tunable: ENABLE_BIKER_SHOTARO_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("chimera"))
 	{
-		if (!Global_262145.f_17532 && iVar1 < Global_262145.f_17553)
+		if (!Global_262145.f_17532 /* Tunable: ENABLE_BIKER_CHIMERA */ && iVar1 < Global_262145.f_17553 /* Tunable: ENABLE_BIKER_CHIMERA_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("raptor"))
 	{
-		if (!Global_262145.f_17533 && iVar1 < Global_262145.f_17554)
+		if (!Global_262145.f_17533 /* Tunable: ENABLE_BIKER_RAPTOR */ && iVar1 < Global_262145.f_17554 /* Tunable: ENABLE_BIKER_RAPTOR_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("daemon2"))
 	{
-		if (!Global_262145.f_17534 && iVar1 < Global_262145.f_17555)
+		if (!Global_262145.f_17534 /* Tunable: ENABLE_BIKER_WESTERNDAEMON */ && iVar1 < Global_262145.f_17555 /* Tunable: ENABLE_BIKER_WESTERNDAEMON_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("blazer4"))
 	{
-		if (!Global_262145.f_17535 && iVar1 < Global_262145.f_17556)
+		if (!Global_262145.f_17535 /* Tunable: ENABLE_BIKER_BLAZER4 */ && iVar1 < Global_262145.f_17556 /* Tunable: ENABLE_BIKER_BLAZER4_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tornado6"))
 	{
-		if (!Global_262145.f_17541 && iVar1 < Global_262145.f_17563)
+		if (!Global_262145.f_17541 /* Tunable: ENABLE_BIKER_TORNADO6 */ && iVar1 < Global_262145.f_17563 /* Tunable: ENABLE_BIKER_TORNADO6_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("youga2"))
 	{
-		if (!Global_262145.f_17538 && iVar1 < Global_262145.f_17559)
+		if (!Global_262145.f_17538 /* Tunable: ENABLE_BIKER_YOUGA2 */ && iVar1 < Global_262145.f_17559 /* Tunable: ENABLE_BIKER_YOUGA2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("wolfsbane"))
 	{
-		if (!Global_262145.f_17539 && iVar1 < Global_262145.f_17560)
+		if (!Global_262145.f_17539 /* Tunable: ENABLE_BIKER_WOLFSBANE */ && iVar1 < Global_262145.f_17560 /* Tunable: ENABLE_BIKER_WOLFSBANE_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("faggio3"))
 	{
-		if (!Global_262145.f_17540 && iVar1 < Global_262145.f_17561)
+		if (!Global_262145.f_17540 /* Tunable: ENABLE_BIKER_FAGGIO3 */ && iVar1 < Global_262145.f_17561 /* Tunable: ENABLE_BIKER_FAGGIO3_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("faggio"))
 	{
-		if (!Global_262145.f_17528 && iVar1 < Global_262145.f_17562)
+		if (!Global_262145.f_17528 /* Tunable: ENABLE_BIKER_FAGGIO */ && iVar1 < Global_262145.f_17562 /* Tunable: ENABLE_BIKER_FAGGIO_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("bagger"))
 	{
-		if (!Global_262145.f_17542 && iVar1 < Global_262145.f_17564)
+		if (!Global_262145.f_17542 /* Tunable: ENABLE_BIKER_BAGGER */ && iVar1 < Global_262145.f_17564 /* Tunable: ENABLE_BIKER_BAGGER_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("sanctus"))
 	{
-		if (!Global_262145.f_17536 && iVar1 < Global_262145.f_17557)
+		if (!Global_262145.f_17536 /* Tunable: ENABLE_BIKER_SANCTUS */ && iVar1 < Global_262145.f_17557 /* Tunable: ENABLE_BIKER_SANCTUS_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("manchez"))
 	{
-		if (!Global_262145.f_17537 && iVar1 < Global_262145.f_17558)
+		if (!Global_262145.f_17537 /* Tunable: ENABLE_BIKER_MANCHEZ */ && iVar1 < Global_262145.f_17558 /* Tunable: ENABLE_BIKER_MANCHEZ_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("ratbike"))
 	{
-		if (!Global_262145.f_17543 && iVar1 < Global_262145.f_17565)
+		if (!Global_262145.f_17543 /* Tunable: ENABLE_BIKER_RATBIKE */ && iVar1 < Global_262145.f_17565 /* Tunable: ENABLE_BIKER_RATBIKE_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	if (iParam0 == joaat("voltic2"))
 	{
-		if (!Global_262145.f_19176 && iVar1 < Global_262145.f_19273)
+		if (!Global_262145.f_19176 /* Tunable: ENABLE_IE_VOLTIC2 */ && iVar1 < Global_262145.f_19273 /* Tunable: ENABLE_IE_VOLTIC2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("ruiner2"))
 	{
-		if (!Global_262145.f_19177 && iVar1 < Global_262145.f_19274)
+		if (!Global_262145.f_19177 /* Tunable: ENABLE_IE_RUINER2 */ && iVar1 < Global_262145.f_19274 /* Tunable: ENABLE_IE_RUINER2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("dune4"))
 	{
-		if (!Global_262145.f_19178 && iVar1 < Global_262145.f_19275)
+		if (!Global_262145.f_19178 /* Tunable: ENABLE_IE_DUNE4 */ && iVar1 < Global_262145.f_19275 /* Tunable: ENABLE_IE_DUNE4_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("dune5"))
 	{
-		if (!Global_262145.f_19179 && iVar1 < Global_262145.f_19276)
+		if (!Global_262145.f_19179 /* Tunable: ENABLE_IE_DUNE5 */ && iVar1 < Global_262145.f_19276 /* Tunable: ENABLE_IE_DUNE5_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("phantom2"))
 	{
-		if (!Global_262145.f_19180 && iVar1 < Global_262145.f_19277)
+		if (!Global_262145.f_19180 /* Tunable: ENABLE_IE_PHANTOM2 */ && iVar1 < Global_262145.f_19277 /* Tunable: ENABLE_IE_PHANTOM2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("technical2"))
 	{
-		if (!Global_262145.f_19181 && iVar1 < Global_262145.f_19278)
+		if (!Global_262145.f_19181 /* Tunable: ENABLE_IE_TECHNICAL2 */ && iVar1 < Global_262145.f_19278 /* Tunable: ENABLE_IE_TECHNICAL2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("boxville5"))
 	{
-		if (!Global_262145.f_19182 && iVar1 < Global_262145.f_19279)
+		if (!Global_262145.f_19182 /* Tunable: ENABLE_IE_BOXVILLE5 */ && iVar1 < Global_262145.f_19279 /* Tunable: ENABLE_IE_BOXVILLE5_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("wastelander"))
 	{
-		if (!Global_262145.f_19183 && iVar1 < Global_262145.f_19280)
+		if (!Global_262145.f_19183 /* Tunable: ENABLE_IE_WASTELANDER */ && iVar1 < Global_262145.f_19280 /* Tunable: ENABLE_IE_WASTELANDER_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("blazer5"))
 	{
-		if (!Global_262145.f_19184 && iVar1 < Global_262145.f_19281)
+		if (!Global_262145.f_19184 /* Tunable: ENABLE_IE_BLAZER5 */ && iVar1 < Global_262145.f_19281 /* Tunable: ENABLE_IE_BLAZER5_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("comet2"))
 	{
-		if (!Global_262145.f_19185 && iVar1 < Global_262145.f_19282)
+		if (!Global_262145.f_19185 /* Tunable: ENABLE_IE_COMET2 */ && iVar1 < Global_262145.f_19282 /* Tunable: ENABLE_IE_COMET2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("comet3"))
 	{
-		if (!Global_262145.f_19186 && iVar1 < Global_262145.f_19283)
+		if (!Global_262145.f_19186 /* Tunable: ENABLE_IE_COMET3 */ && iVar1 < Global_262145.f_19283 /* Tunable: ENABLE_IE_COMET3_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("diablous"))
 	{
-		if (!Global_262145.f_19187 && iVar1 < Global_262145.f_19284)
+		if (!Global_262145.f_19187 /* Tunable: ENABLE_IE_DIABLOUS */ && iVar1 < Global_262145.f_19284 /* Tunable: ENABLE_IE_DIABLOUS_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("diablous2"))
 	{
-		if (!Global_262145.f_19188 && iVar1 < Global_262145.f_19285)
+		if (!Global_262145.f_19188 /* Tunable: ENABLE_IE_DIABLOUS2 */ && iVar1 < Global_262145.f_19285 /* Tunable: ENABLE_IE_DIABLOUS2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("elegy"))
 	{
-		if (!Global_262145.f_19189 && iVar1 < Global_262145.f_19286)
+		if (!Global_262145.f_19189 /* Tunable: ENABLE_IE_ELEGY */ && iVar1 < Global_262145.f_19286 /* Tunable: ENABLE_IE_ELEGY_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("elegy2"))
 	{
-		if (!Global_262145.f_19190 && iVar1 < Global_262145.f_19287)
+		if (!Global_262145.f_19190 /* Tunable: ENABLE_IE_ELEGY2 */ && iVar1 < Global_262145.f_19287 /* Tunable: ENABLE_IE_ELEGY2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("fcr"))
 	{
-		if (!Global_262145.f_19191 && iVar1 < Global_262145.f_19288)
+		if (!Global_262145.f_19191 /* Tunable: ENABLE_IE_FCR */ && iVar1 < Global_262145.f_19288 /* Tunable: ENABLE_IE_FCR_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("fcr2"))
 	{
-		if (!Global_262145.f_19192 && iVar1 < Global_262145.f_19289)
+		if (!Global_262145.f_19192 /* Tunable: ENABLE_IE_FCR2 */ && iVar1 < Global_262145.f_19289 /* Tunable: ENABLE_IE_FCR2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("italigtb"))
 	{
-		if (!Global_262145.f_19193 && iVar1 < Global_262145.f_19290)
+		if (!Global_262145.f_19193 /* Tunable: ENABLE_IE_ITALIGTB */ && iVar1 < Global_262145.f_19290 /* Tunable: ENABLE_IE_ITALIGTB_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("italigtb2"))
 	{
-		if (!Global_262145.f_19194 && iVar1 < Global_262145.f_19291)
+		if (!Global_262145.f_19194 /* Tunable: ENABLE_IE_ITALIGTB2 */ && iVar1 < Global_262145.f_19291 /* Tunable: ENABLE_IE_ITALIGTB2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("nero"))
 	{
-		if (!Global_262145.f_19195 && iVar1 < Global_262145.f_19292)
+		if (!Global_262145.f_19195 /* Tunable: ENABLE_IE_NERO */ && iVar1 < Global_262145.f_19292 /* Tunable: ENABLE_IE_NERO_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("nero2"))
 	{
-		if (!Global_262145.f_19196 && iVar1 < Global_262145.f_19293)
+		if (!Global_262145.f_19196 /* Tunable: ENABLE_IE_NERO2 */ && iVar1 < Global_262145.f_19293 /* Tunable: ENABLE_IE_NERO2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("penetrator"))
 	{
-		if (!Global_262145.f_19197 && iVar1 < Global_262145.f_19294)
+		if (!Global_262145.f_19197 /* Tunable: ENABLE_IE_PENETRATOR */ && iVar1 < Global_262145.f_19294 /* Tunable: ENABLE_IE_PENETRATOR_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("specter"))
 	{
-		if (!Global_262145.f_19198 && iVar1 < Global_262145.f_19295)
+		if (!Global_262145.f_19198 /* Tunable: ENABLE_IE_SPECTER */ && iVar1 < Global_262145.f_19295 /* Tunable: ENABLE_IE_SPECTER_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("specter2"))
 	{
-		if (!Global_262145.f_19199 && iVar1 < Global_262145.f_19296)
+		if (!Global_262145.f_19199 /* Tunable: ENABLE_IE_SPECTER2 */ && iVar1 < Global_262145.f_19296 /* Tunable: ENABLE_IE_SPECTER2_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tempesta"))
 	{
-		if (!Global_262145.f_19200 && iVar1 < Global_262145.f_19297)
+		if (!Global_262145.f_19200 /* Tunable: ENABLE_IE_TEMPESTA */ && iVar1 < Global_262145.f_19297 /* Tunable: ENABLE_IE_TEMPESTA_POSIX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	if (iParam0 == joaat("gp1"))
 	{
-		if (!Global_262145.f_20257 && iVar1 < Global_262145.f_20253)
+		if (!Global_262145.f_20257 /* Tunable: ENABLEGP1 */ && iVar1 < Global_262145.f_20253 /* Tunable: LAUNCHPOSIXGP1 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("infernus2"))
 	{
-		if (!Global_262145.f_20258 && iVar1 < Global_262145.f_20254)
+		if (!Global_262145.f_20258 /* Tunable: ENABLEINFERNUS2 */ && iVar1 < Global_262145.f_20254 /* Tunable: LAUNCHPOSIXINFERNUS2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("ruston"))
 	{
-		if (!Global_262145.f_20259 && iVar1 < Global_262145.f_20255)
+		if (!Global_262145.f_20259 /* Tunable: ENABLERUSTON */ && iVar1 < Global_262145.f_20255 /* Tunable: LAUNCHPOSIXRUSTON */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("turismo2"))
 	{
-		if (!Global_262145.f_20260 && iVar1 < Global_262145.f_20256)
+		if (!Global_262145.f_20260 /* Tunable: ENABLETURISMO2 */ && iVar1 < Global_262145.f_20256 /* Tunable: LAUNCHPOSIXTURISMO2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	if (iParam0 == joaat("xa21"))
 	{
-		if (!Global_262145.f_21138 && iVar1 < Global_262145.f_21146)
+		if (!Global_262145.f_21138 /* Tunable: ENABLE_XA21 */ && iVar1 < Global_262145.f_21146 /* Tunable: LAUNCHPOSIX_XA21 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("cheetah2"))
 	{
-		if (!Global_262145.f_21139 && iVar1 < Global_262145.f_21147)
+		if (!Global_262145.f_21139 /* Tunable: ENABLE_CHEETAH2 */ && iVar1 < Global_262145.f_21147 /* Tunable: LAUNCHPOSIX_CHEETAH2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("torero"))
 	{
-		if (!Global_262145.f_21140 && iVar1 < Global_262145.f_21148)
+		if (!Global_262145.f_21140 /* Tunable: ENABLE_TORERO */ && iVar1 < Global_262145.f_21148 /* Tunable: LAUNCHPOSIX_TORERO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("vagner"))
 	{
-		if (!Global_262145.f_21141 && iVar1 < Global_262145.f_21149)
+		if (!Global_262145.f_21141 /* Tunable: ENABLE_VAGNER */ && iVar1 < Global_262145.f_21149 /* Tunable: LAUNCHPOSIX_VAGNER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("ardent"))
 	{
-		if (!Global_262145.f_21142 && iVar1 < Global_262145.f_21150)
+		if (!Global_262145.f_21142 /* Tunable: ENABLE_ARDENT */ && iVar1 < Global_262145.f_21150 /* Tunable: LAUNCHPOSIX_ARDENT */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("nightshark"))
 	{
-		if (!Global_262145.f_21143 && iVar1 < Global_262145.f_21151)
+		if (!Global_262145.f_21143 /* Tunable: ENABLE_NIGHTSHARK */ && iVar1 < Global_262145.f_21151 /* Tunable: LAUNCHPOSIX_NIGHTSHARK */)
 		{
 			iVar0 = 0;
 		}
 	}
 	if (iParam0 == joaat("microlight"))
 	{
-		if (!Global_262145.f_21921 && iVar1 < Global_262145.f_21941)
+		if (!Global_262145.f_21921 /* Tunable: ENABLE_ULTRALIGHT */ && iVar1 < Global_262145.f_21941 /* Tunable: LAUNCHPOSIX_ULTRALIGHT */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("mogul"))
 	{
-		if (!Global_262145.f_21933 && iVar1 < Global_262145.f_21953)
+		if (!Global_262145.f_21933 /* Tunable: ENABLE_MOGUL */ && iVar1 < Global_262145.f_21953 /* Tunable: LAUNCHPOSIX_MOGUL */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("rogue"))
 	{
-		if (!Global_262145.f_21924 && iVar1 < Global_262145.f_21944)
+		if (!Global_262145.f_21924 /* Tunable: ENABLE_ROGUE */ && iVar1 < Global_262145.f_21944 /* Tunable: LAUNCHPOSIX_ROGUE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("starling"))
 	{
-		if (!Global_262145.f_21934 && iVar1 < Global_262145.f_21954)
+		if (!Global_262145.f_21934 /* Tunable: ENABLE_STARLING */ && iVar1 < Global_262145.f_21954 /* Tunable: LAUNCHPOSIX_STARLING */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("seabreeze"))
 	{
-		if (!Global_262145.f_21922 && iVar1 < Global_262145.f_21942)
+		if (!Global_262145.f_21922 /* Tunable: ENABLE_SEABREEZE */ && iVar1 < Global_262145.f_21942 /* Tunable: LAUNCHPOSIX_SEABREEZE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tula"))
 	{
-		if (!Global_262145.f_21938 && iVar1 < Global_262145.f_21958)
+		if (!Global_262145.f_21938 /* Tunable: ENABLE_TULA */ && iVar1 < Global_262145.f_21958 /* Tunable: LAUNCHPOSIX_TULA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("pyro"))
 	{
-		if (!Global_262145.f_21936 && iVar1 < Global_262145.f_21956)
+		if (!Global_262145.f_21936 /* Tunable: ENABLE_PYRO */ && iVar1 < Global_262145.f_21956 /* Tunable: LAUNCHPOSIX_PYRO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("molotok"))
 	{
-		if (!Global_262145.f_21937 && iVar1 < Global_262145.f_21957)
+		if (!Global_262145.f_21937 /* Tunable: ENABLE_MOLOTOK */ && iVar1 < Global_262145.f_21957 /* Tunable: LAUNCHPOSIX_MOLOTOK */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("nokota"))
 	{
-		if (!Global_262145.f_21932 && iVar1 < Global_262145.f_21952)
+		if (!Global_262145.f_21932 /* Tunable: ENABLE_NOKOTA */ && iVar1 < Global_262145.f_21952 /* Tunable: LAUNCHPOSIX_NOKOTA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("bombushka"))
 	{
-		if (!Global_262145.f_21939 && iVar1 < Global_262145.f_21959)
+		if (!Global_262145.f_21939 /* Tunable: ENABLE_BOMBUSHKA */ && iVar1 < Global_262145.f_21959 /* Tunable: LAUNCHPOSIX_BOMBUSHKA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("hunter"))
 	{
-		if (!Global_262145.f_21935 && iVar1 < Global_262145.f_21955)
+		if (!Global_262145.f_21935 /* Tunable: ENABLE_HUNTER */ && iVar1 < Global_262145.f_21955 /* Tunable: LAUNCHPOSIX_HUNTER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("havok"))
 	{
-		if (!Global_262145.f_21931 && iVar1 < Global_262145.f_21951)
+		if (!Global_262145.f_21931 /* Tunable: ENABLE_HAVOK */ && iVar1 < Global_262145.f_21951 /* Tunable: LAUNCHPOSIX_HAVOK */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("howard"))
 	{
-		if (!Global_262145.f_21923 && iVar1 < Global_262145.f_21943)
+		if (!Global_262145.f_21923 /* Tunable: ENABLE_HOWARD */ && iVar1 < Global_262145.f_21943 /* Tunable: LAUNCHPOSIX_HOWARD */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("alphaz1"))
 	{
-		if (!Global_262145.f_21925 && iVar1 < Global_262145.f_21945)
+		if (!Global_262145.f_21925 /* Tunable: ENABLE_ALPHAZ1 */ && iVar1 < Global_262145.f_21945 /* Tunable: LAUNCHPOSIX_ALPHAZ1 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("cyclone"))
 	{
-		if (!Global_262145.f_21926 && iVar1 < Global_262145.f_21946)
+		if (!Global_262145.f_21926 /* Tunable: ENABLE_CYCLONE */ && iVar1 < Global_262145.f_21946 /* Tunable: LAUNCHPOSIX_CYCLONE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("visione"))
 	{
-		if (!Global_262145.f_21927 && iVar1 < Global_262145.f_21947)
+		if (!Global_262145.f_21927 /* Tunable: ENABLE_VISIONE */ && iVar1 < Global_262145.f_21947 /* Tunable: LAUNCHPOSIX_VISIONE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("vigilante"))
 	{
-		if (!Global_262145.f_21928 && iVar1 < Global_262145.f_21948)
+		if (!Global_262145.f_21928 /* Tunable: ENABLE_VIGILANTE */ && iVar1 < Global_262145.f_21948 /* Tunable: LAUNCHPOSIX_VIGILANTE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("retinue"))
 	{
-		if (!Global_262145.f_21929 && iVar1 < Global_262145.f_21949)
+		if (!Global_262145.f_21929 /* Tunable: ENABLE_RETINUE */ && iVar1 < Global_262145.f_21949 /* Tunable: LAUNCHPOSIX_RETINUE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("rapidgt3"))
 	{
-		if (!Global_262145.f_21930 && iVar1 < Global_262145.f_21950)
+		if (!Global_262145.f_21930 /* Tunable: ENABLE_RAPIDGT3 */ && iVar1 < Global_262145.f_21950 /* Tunable: LAUNCHPOSIX_RAPIDGT3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	if (iParam0 == joaat("deluxo"))
 	{
-		if (!Global_262145.f_22889 && iVar1 < Global_262145.f_22917)
+		if (!Global_262145.f_22889 /* Tunable: ENABLE_DELUXO */ && iVar1 < Global_262145.f_22917 /* Tunable: LAUNCHPOSIX_DELUXO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("stromberg"))
 	{
-		if (!Global_262145.f_22890 && iVar1 < Global_262145.f_22918)
+		if (!Global_262145.f_22890 /* Tunable: ENABLE_STROMBERG */ && iVar1 < Global_262145.f_22918 /* Tunable: LAUNCHPOSIX_STROMBERG */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("riot2"))
 	{
-		if (!Global_262145.f_22891 && iVar1 < Global_262145.f_22919)
+		if (!Global_262145.f_22891 /* Tunable: ENABLE_RIOT2 */ && iVar1 < Global_262145.f_22919 /* Tunable: LAUNCHPOSIX_RIOT2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("chernobog"))
 	{
-		if (!Global_262145.f_22892 && iVar1 < Global_262145.f_22920)
+		if (!Global_262145.f_22892 /* Tunable: ENABLE_CHERNOBOG */ && iVar1 < Global_262145.f_22920 /* Tunable: LAUNCHPOSIX_CHERNOBOG */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("khanjali"))
 	{
-		if (!Global_262145.f_22893 && iVar1 < Global_262145.f_22921)
+		if (!Global_262145.f_22893 /* Tunable: ENABLE_KHANJALI */ && iVar1 < Global_262145.f_22921 /* Tunable: LAUNCHPOSIX_KHANJALI */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("akula"))
 	{
-		if (!Global_262145.f_22894 && iVar1 < Global_262145.f_22922)
+		if (!Global_262145.f_22894 /* Tunable: ENABLE_AKULA */ && iVar1 < Global_262145.f_22922 /* Tunable: LAUNCHPOSIX_AKULA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("thruster"))
 	{
-		if (!Global_262145.f_22895 && iVar1 < Global_262145.f_22923)
+		if (!Global_262145.f_22895 /* Tunable: ENABLE_THRUSTER */ && iVar1 < Global_262145.f_22923 /* Tunable: LAUNCHPOSIX_THRUSTER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("barrage"))
 	{
-		if (!Global_262145.f_22896 && iVar1 < Global_262145.f_22924)
+		if (!Global_262145.f_22896 /* Tunable: ENABLE_BARRAGE */ && iVar1 < Global_262145.f_22924 /* Tunable: LAUNCHPOSIX_BARRAGE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("volatol"))
 	{
-		if (!Global_262145.f_22897 && iVar1 < Global_262145.f_22925)
+		if (!Global_262145.f_22897 /* Tunable: ENABLE_VOLATOL */ && iVar1 < Global_262145.f_22925 /* Tunable: LAUNCHPOSIX_VOLATOL */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("comet4"))
 	{
-		if (!Global_262145.f_22898 && iVar1 < Global_262145.f_22926)
+		if (!Global_262145.f_22898 /* Tunable: ENABLE_COMET4 */ && iVar1 < Global_262145.f_22926 /* Tunable: LAUNCHPOSIX_COMET4 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("neon"))
 	{
-		if (!Global_262145.f_22899 && iVar1 < Global_262145.f_22927)
+		if (!Global_262145.f_22899 /* Tunable: ENABLE_NEON */ && iVar1 < Global_262145.f_22927 /* Tunable: LAUNCHPOSIX_NEON */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("streiter"))
 	{
-		if (!Global_262145.f_22900 && iVar1 < Global_262145.f_22928)
+		if (!Global_262145.f_22900 /* Tunable: ENABLE_STREITER */ && iVar1 < Global_262145.f_22928 /* Tunable: LAUNCHPOSIX_STREITER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("sentinel3"))
 	{
-		if (!Global_262145.f_22901 && iVar1 < Global_262145.f_22929)
+		if (!Global_262145.f_22901 /* Tunable: ENABLE_SENTINEL3 */ && iVar1 < Global_262145.f_22929 /* Tunable: LAUNCHPOSIX_SENTINEL3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("yosemite"))
 	{
-		if (!Global_262145.f_22902 && iVar1 < Global_262145.f_22930)
+		if (!Global_262145.f_22902 /* Tunable: ENABLE_YOSEMITE */ && iVar1 < Global_262145.f_22930 /* Tunable: LAUNCHPOSIX_YOSEMITE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("sc1"))
 	{
-		if (!Global_262145.f_22903 && iVar1 < Global_262145.f_22931)
+		if (!Global_262145.f_22903 /* Tunable: ENABLE_SC1 */ && iVar1 < Global_262145.f_22931 /* Tunable: LAUNCHPOSIX_SC1 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("autarch"))
 	{
-		if (!Global_262145.f_22904 && iVar1 < Global_262145.f_22932)
+		if (!Global_262145.f_22904 /* Tunable: ENABLE_AUTARCH */ && iVar1 < Global_262145.f_22932 /* Tunable: LAUNCHPOSIX_AUTARCH */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("gt500"))
 	{
-		if (!Global_262145.f_22905 && iVar1 < Global_262145.f_22933)
+		if (!Global_262145.f_22905 /* Tunable: ENABLE_GT500 */ && iVar1 < Global_262145.f_22933 /* Tunable: LAUNCHPOSIX_GT500 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("hustler"))
 	{
-		if (!Global_262145.f_22906 && iVar1 < Global_262145.f_22934)
+		if (!Global_262145.f_22906 /* Tunable: ENABLE_HUSTLER */ && iVar1 < Global_262145.f_22934 /* Tunable: LAUNCHPOSIX_HUSTLER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("revolter"))
 	{
-		if (!Global_262145.f_22907 && iVar1 < Global_262145.f_22935)
+		if (!Global_262145.f_22907 /* Tunable: ENABLE_REVOLTER */ && iVar1 < Global_262145.f_22935 /* Tunable: LAUNCHPOSIX_REVOLTER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("pariah"))
 	{
-		if (!Global_262145.f_22908 && iVar1 < Global_262145.f_22936)
+		if (!Global_262145.f_22908 /* Tunable: ENABLE_PARIAH */ && iVar1 < Global_262145.f_22936 /* Tunable: LAUNCHPOSIX_PARIAH */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("raiden"))
 	{
-		if (!Global_262145.f_22909 && iVar1 < Global_262145.f_22937)
+		if (!Global_262145.f_22909 /* Tunable: ENABLE_RAIDEN */ && iVar1 < Global_262145.f_22937 /* Tunable: LAUNCHPOSIX_RAIDEN */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("savestra"))
 	{
-		if (!Global_262145.f_22910 && iVar1 < Global_262145.f_22938)
+		if (!Global_262145.f_22910 /* Tunable: ENABLE_SAVESTRA */ && iVar1 < Global_262145.f_22938 /* Tunable: LAUNCHPOSIX_SAVESTRA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("riata"))
 	{
-		if (!Global_262145.f_22911 && iVar1 < Global_262145.f_22939)
+		if (!Global_262145.f_22911 /* Tunable: ENABLE_RIATA */ && iVar1 < Global_262145.f_22939 /* Tunable: LAUNCHPOSIX_RIATA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("hermes"))
 	{
-		if (!Global_262145.f_22912 && iVar1 < Global_262145.f_22940)
+		if (!Global_262145.f_22912 /* Tunable: ENABLE_HERMES */ && iVar1 < Global_262145.f_22940 /* Tunable: LAUNCHPOSIX_HERMES */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("comet5"))
 	{
-		if (!Global_262145.f_22913 && iVar1 < Global_262145.f_22941)
+		if (!Global_262145.f_22913 /* Tunable: ENABLE_COMET5 */ && iVar1 < Global_262145.f_22941 /* Tunable: LAUNCHPOSIX_COMET5 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("z190"))
 	{
-		if (!Global_262145.f_22914 && iVar1 < Global_262145.f_22942)
+		if (!Global_262145.f_22914 /* Tunable: ENABLE_Z190 */ && iVar1 < Global_262145.f_22942 /* Tunable: LAUNCHPOSIX_Z190 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("viseris"))
 	{
-		if (!Global_262145.f_22915 && iVar1 < Global_262145.f_22943)
+		if (!Global_262145.f_22915 /* Tunable: ENABLE_VISERIS */ && iVar1 < Global_262145.f_22943 /* Tunable: LAUNCHPOSIX_VISERIS */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("kamacho"))
 	{
-		if (!Global_262145.f_22916 && iVar1 < Global_262145.f_22944)
+		if (!Global_262145.f_22916 /* Tunable: ENABLE_KAMACHO */ && iVar1 < Global_262145.f_22944 /* Tunable: LAUNCHPOSIX_KAMACHO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	if (iParam0 == joaat("gb200"))
 	{
-		if (!Global_262145.f_24109 && iVar1 < Global_262145.f_24125)
+		if (!Global_262145.f_24109 /* Tunable: ENABLE_GB200 */ && iVar1 < Global_262145.f_24125 /* Tunable: LAUNCHPOSIX_GB200 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("fagaloa"))
 	{
-		if (!Global_262145.f_24110 && iVar1 < Global_262145.f_24126)
+		if (!Global_262145.f_24110 /* Tunable: ENABLE_FAGALOA */ && iVar1 < Global_262145.f_24126 /* Tunable: LAUNCHPOSIX_FAGALOA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("ellie"))
 	{
-		if (!Global_262145.f_24114 && iVar1 < Global_262145.f_24130)
+		if (!Global_262145.f_24114 /* Tunable: ENABLE_ELLIE */ && iVar1 < Global_262145.f_24130 /* Tunable: LAUNCHPOSIX_ELLIE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("issi3"))
 	{
-		if (!Global_262145.f_24117 && iVar1 < Global_262145.f_24133)
+		if (!Global_262145.f_24117 /* Tunable: ENABLE_ISSI3 */ && iVar1 < Global_262145.f_24133 /* Tunable: LAUNCHPOSIX_ISSI3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("michelli"))
 	{
-		if (!Global_262145.f_24122 && iVar1 < Global_262145.f_24138)
+		if (!Global_262145.f_24122 /* Tunable: ENABLE_MICHELLI */ && iVar1 < Global_262145.f_24138 /* Tunable: LAUNCHPOSIX_MICHELLI */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("flashgt"))
 	{
-		if (!Global_262145.f_24116 && iVar1 < Global_262145.f_24132)
+		if (!Global_262145.f_24116 /* Tunable: ENABLE_FLASHGT */ && iVar1 < Global_262145.f_24132 /* Tunable: LAUNCHPOSIX_FLASHGT */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("hotring"))
 	{
-		if (!Global_262145.f_24108 && iVar1 < Global_262145.f_24124)
+		if (!Global_262145.f_24108 /* Tunable: ENABLE_HOTRING */ && iVar1 < Global_262145.f_24124 /* Tunable: LAUNCHPOSIX_HOTRING */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tezeract"))
 	{
-		if (!Global_262145.f_24115 && iVar1 < Global_262145.f_24131)
+		if (!Global_262145.f_24115 /* Tunable: ENABLE_TEZERACT */ && iVar1 < Global_262145.f_24131 /* Tunable: LAUNCHPOSIX_TEZERACT */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tyrant"))
 	{
-		if (!Global_262145.f_24121 && iVar1 < Global_262145.f_24137)
+		if (!Global_262145.f_24121 /* Tunable: ENABLE_TYRANT */ && iVar1 < Global_262145.f_24137 /* Tunable: LAUNCHPOSIX_TYRANT */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("dominator3"))
 	{
-		if (!Global_262145.f_24120 && iVar1 < Global_262145.f_24136)
+		if (!Global_262145.f_24120 /* Tunable: ENABLE_DOMINATOR3 */ && iVar1 < Global_262145.f_24136 /* Tunable: LAUNCHPOSIX_DOMINATOR3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("taipan"))
 	{
-		if (!Global_262145.f_24111 && iVar1 < Global_262145.f_24127)
+		if (!Global_262145.f_24111 /* Tunable: ENABLE_TAIPAN */ && iVar1 < Global_262145.f_24127 /* Tunable: LAUNCHPOSIX_TAIPAN */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("entity2"))
 	{
-		if (!Global_262145.f_24113 && iVar1 < Global_262145.f_24129)
+		if (!Global_262145.f_24113 /* Tunable: ENABLE_ENTITY2 */ && iVar1 < Global_262145.f_24129 /* Tunable: LAUNCHPOSIX_ENTITY2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("jester3"))
 	{
-		if (!Global_262145.f_24123 && iVar1 < Global_262145.f_24139)
+		if (!Global_262145.f_24123 /* Tunable: ENABLE_JESTER3 */ && iVar1 < Global_262145.f_24139 /* Tunable: LAUNCHPOSIX_JESTER3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("cheburek"))
 	{
-		if (!Global_262145.f_24119 && iVar1 < Global_262145.f_24135)
+		if (!Global_262145.f_24119 /* Tunable: ENABLE_CHEBUREK */ && iVar1 < Global_262145.f_24135 /* Tunable: LAUNCHPOSIX_CHEBUREK */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("caracara"))
 	{
-		if (!Global_262145.f_24112 && iVar1 < Global_262145.f_24128)
+		if (!Global_262145.f_24112 /* Tunable: ENABLE_CARACARA */ && iVar1 < Global_262145.f_24128 /* Tunable: LAUNCHPOSIX_CARACARA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("seasparrow"))
 	{
-		if (!Global_262145.f_24118 && iVar1 < Global_262145.f_24134)
+		if (!Global_262145.f_24118 /* Tunable: ENABLE_SEASPARROW */ && iVar1 < Global_262145.f_24134 /* Tunable: LAUNCHPOSIX_SEASPARROW */)
 		{
 			iVar0 = 0;
 		}
 	}
 	if (iParam0 == joaat("terbyte"))
 	{
-		if (!Global_262145.f_24199 && iVar1 < Global_262145.f_24186)
+		if (!Global_262145.f_24199 /* Tunable: ENABLE_TERBYTE */ && iVar1 < Global_262145.f_24186 /* Tunable: LAUNCHPOSIX_TERBYTE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("pbus2"))
 	{
-		if (!Global_262145.f_24200 && iVar1 < Global_262145.f_24187)
+		if (!Global_262145.f_24200 /* Tunable: ENABLE_PBUS2 */ && iVar1 < Global_262145.f_24187 /* Tunable: LAUNCHPOSIX_PBUS2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("mule4"))
 	{
-		if (!Global_262145.f_24205 && iVar1 < Global_262145.f_24192)
+		if (!Global_262145.f_24205 /* Tunable: ENABLE_MULE4 */ && iVar1 < Global_262145.f_24192 /* Tunable: LAUNCHPOSIX_MULE4 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("pounder2"))
 	{
-		if (!Global_262145.f_24204 && iVar1 < Global_262145.f_24191)
+		if (!Global_262145.f_24204 /* Tunable: ENABLE_POUNDER2 */ && iVar1 < Global_262145.f_24191 /* Tunable: LAUNCHPOSIX_POUNDER2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("swinger"))
 	{
-		if (!Global_262145.f_24202 && iVar1 < Global_262145.f_24189)
+		if (!Global_262145.f_24202 /* Tunable: ENABLE_SWINGER */ && iVar1 < Global_262145.f_24189 /* Tunable: LAUNCHPOSIX_SWINGER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("menacer"))
 	{
-		if (!Global_262145.f_24208 && iVar1 < Global_262145.f_24195)
+		if (!Global_262145.f_24208 /* Tunable: ENABLE_MENACER */ && iVar1 < Global_262145.f_24195 /* Tunable: LAUNCHPOSIX_MENACER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("scramjet"))
 	{
-		if (!Global_262145.f_24210 && iVar1 < Global_262145.f_24197)
+		if (!Global_262145.f_24210 /* Tunable: ENABLE_SCRAMJET */ && iVar1 < Global_262145.f_24197 /* Tunable: LAUNCHPOSIX_SCRAMJET */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("strikeforce"))
 	{
-		if (!Global_262145.f_24211 && iVar1 < Global_262145.f_24198)
+		if (!Global_262145.f_24211 /* Tunable: ENABLE_STRIKEFORCE */ && iVar1 < Global_262145.f_24198 /* Tunable: LAUNCHPOSIX_STRIKEFORCE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("oppressor2"))
 	{
-		if (!Global_262145.f_24209 && iVar1 < Global_262145.f_24196)
+		if (!Global_262145.f_24209 /* Tunable: ENABLE_OPPRESSOR2 */ && iVar1 < Global_262145.f_24196 /* Tunable: LAUNCHPOSIX_OPPRESSOR2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("patriot2"))
 	{
-		if (!Global_262145.f_24201 && iVar1 < Global_262145.f_24188)
+		if (!Global_262145.f_24201 /* Tunable: ENABLE_PATRIOT2 */ && iVar1 < Global_262145.f_24188 /* Tunable: LAUNCHPOSIX_PATRIOT2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("stafford"))
 	{
-		if (!Global_262145.f_24203 && iVar1 < Global_262145.f_24190)
+		if (!Global_262145.f_24203 /* Tunable: ENABLE_STAFFORD */ && iVar1 < Global_262145.f_24190 /* Tunable: LAUNCHPOSIX_STAFFORD */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("freecrawler"))
 	{
-		if (!Global_262145.f_24207 && iVar1 < Global_262145.f_24194)
+		if (!Global_262145.f_24207 /* Tunable: ENABLE_FREECRAWLER */ && iVar1 < Global_262145.f_24194 /* Tunable: LAUNCHPOSIX_FREECRAWLER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("blimp3"))
 	{
-		if (!Global_262145.f_24206 && iVar1 < Global_262145.f_24193)
+		if (!Global_262145.f_24206 /* Tunable: ENABLE_BLIMP3 */ && iVar1 < Global_262145.f_24193 /* Tunable: LAUNCHPOSIX_BLIMP3 */)
 		{
 			iVar0 = 0;
 		}
@@ -112952,560 +112952,560 @@ int func_693(int iParam0)//Position - 0x8644F
 	}
 	else if (iParam0 == joaat("deveste"))
 	{
-		if (!Global_262145.f_26756 && iVar1 < Global_262145.f_26758)
+		if (!Global_262145.f_26756 /* Tunable: ENABLE_VEHICLE_DEVESTE */ && iVar1 < Global_262145.f_26758 /* Tunable: LAUNCHPOSIX_DEVESTE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("toros"))
 	{
-		if (!Global_262145.f_25769 && iVar1 < Global_262145.f_25762)
+		if (!Global_262145.f_25769 /* Tunable: ENABLE_VEHICLE_TOROS */ && iVar1 < Global_262145.f_25762 /* Tunable: LAUNCHPOSIX_TOROS */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("clique"))
 	{
-		if (!Global_262145.f_25770 && iVar1 < Global_262145.f_25763)
+		if (!Global_262145.f_25770 /* Tunable: ENABLE_VEHICLE_CLIQUE */ && iVar1 < Global_262145.f_25763 /* Tunable: LAUNCHPOSIX_CLIQUE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("italigto"))
 	{
-		if (!Global_262145.f_25771 && iVar1 < Global_262145.f_25764)
+		if (!Global_262145.f_25771 /* Tunable: ENABLE_VEHICLE_ITALIGTO */ && iVar1 < Global_262145.f_25764 /* Tunable: LAUNCHPOSIX_ITALIGTO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("deviant"))
 	{
-		if (!Global_262145.f_25772 && iVar1 < Global_262145.f_25765)
+		if (!Global_262145.f_25772 /* Tunable: ENABLE_VEHICLE_DEVIANT */ && iVar1 < Global_262145.f_25765 /* Tunable: LAUNCHPOSIX_DEVIANT */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("vamos"))
 	{
-		if (!Global_262145.f_26757 && iVar1 < Global_262145.f_26759)
+		if (!Global_262145.f_26757 /* Tunable: ENABLE_VEHICLE_VAMOS */ && iVar1 < Global_262145.f_26759 /* Tunable: LAUNCHPOSIX_VAMOS */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tulip"))
 	{
-		if (!Global_262145.f_25773 && iVar1 < Global_262145.f_25766)
+		if (!Global_262145.f_25773 /* Tunable: ENABLE_VEHICLE_TULIP */ && iVar1 < Global_262145.f_25766 /* Tunable: LAUNCHPOSIX_TULIP */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("schlagen"))
 	{
-		if (!Global_262145.f_25774 && iVar1 < Global_262145.f_25767)
+		if (!Global_262145.f_25774 /* Tunable: ENABLE_VEHICLE_SCHLAGEN */ && iVar1 < Global_262145.f_25767 /* Tunable: LAUNCHPOSIX_SCHLAGEN */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("rcbandito"))
 	{
-		if (!Global_262145.f_25775 && iVar1 < Global_262145.f_25768)
+		if (!Global_262145.f_25775 /* Tunable: ENABLE_VEHICLE_BANDITO */ && iVar1 < Global_262145.f_25768 /* Tunable: LAUNCHPOSIX_BANDITO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("thrax"))
 	{
-		if (!Global_262145.f_25780 && iVar1 < Global_262145.f_25801)
+		if (!Global_262145.f_25780 /* Tunable: ENABLE_VEHICLE_THRAX */ && iVar1 < Global_262145.f_25801 /* Tunable: LAUNCHPOSIX_THRAX */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("drafter"))
 	{
-		if (!Global_262145.f_25781 && iVar1 < Global_262145.f_25802)
+		if (!Global_262145.f_25781 /* Tunable: ENABLE_VEHICLE_DRAFTER */ && iVar1 < Global_262145.f_25802 /* Tunable: LAUNCHPOSIX_DRAFTER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("locust"))
 	{
-		if (!Global_262145.f_25782 && iVar1 < Global_262145.f_25803)
+		if (!Global_262145.f_25782 /* Tunable: ENABLE_VEHICLE_LOCUST */ && iVar1 < Global_262145.f_25803 /* Tunable: LAUNCHPOSIX_LOCUST */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("novak"))
 	{
-		if (!Global_262145.f_25783 && iVar1 < Global_262145.f_25804)
+		if (!Global_262145.f_25783 /* Tunable: ENABLE_VEHICLE_NOVAK */ && iVar1 < Global_262145.f_25804 /* Tunable: LAUNCHPOSIX_NOVAK */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("zorrusso"))
 	{
-		if (!Global_262145.f_25784 && iVar1 < Global_262145.f_25805)
+		if (!Global_262145.f_25784 /* Tunable: ENABLE_VEHICLE_ZORRUSSO */ && iVar1 < Global_262145.f_25805 /* Tunable: LAUNCHPOSIX_ZORRUSSO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("gauntlet3"))
 	{
-		if (!Global_262145.f_25785 && iVar1 < Global_262145.f_25806)
+		if (!Global_262145.f_25785 /* Tunable: ENABLE_VEHICLE_GAUNTLET3 */ && iVar1 < Global_262145.f_25806 /* Tunable: LAUNCHPOSIX_GAUNTLET3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("issi7"))
 	{
-		if (!Global_262145.f_25786 && iVar1 < Global_262145.f_25807)
+		if (!Global_262145.f_25786 /* Tunable: ENABLE_VEHICLE_ISSI7 */ && iVar1 < Global_262145.f_25807 /* Tunable: LAUNCHPOSIX_ISSI7 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("zion3"))
 	{
-		if (!Global_262145.f_25787 && iVar1 < Global_262145.f_25808)
+		if (!Global_262145.f_25787 /* Tunable: ENABLE_VEHICLE_ZION3 */ && iVar1 < Global_262145.f_25808 /* Tunable: LAUNCHPOSIX_ZION3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("nebula"))
 	{
-		if (!Global_262145.f_25788 && iVar1 < Global_262145.f_25809)
+		if (!Global_262145.f_25788 /* Tunable: ENABLE_VEHICLE_NEBULA */ && iVar1 < Global_262145.f_25809 /* Tunable: LAUNCHPOSIX_NEBULA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("hellion"))
 	{
-		if (!Global_262145.f_25789 && iVar1 < Global_262145.f_25810)
+		if (!Global_262145.f_25789 /* Tunable: ENABLE_VEHICLE_HELLION */ && iVar1 < Global_262145.f_25810 /* Tunable: LAUNCHPOSIX_HELLION */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("dynasty"))
 	{
-		if (!Global_262145.f_25790 && iVar1 < Global_262145.f_25811)
+		if (!Global_262145.f_25790 /* Tunable: ENABLE_VEHICLE_DYNASTY */ && iVar1 < Global_262145.f_25811 /* Tunable: LAUNCHPOSIX_DYNASTY */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("rrocket"))
 	{
-		if (!Global_262145.f_25791 && iVar1 < Global_262145.f_25812)
+		if (!Global_262145.f_25791 /* Tunable: ENABLE_VEHICLE_RROCKET */ && iVar1 < Global_262145.f_25812 /* Tunable: LAUNCHPOSIX_RROCKET */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("peyote2"))
 	{
-		if (!Global_262145.f_25792 && iVar1 < Global_262145.f_25813)
+		if (!Global_262145.f_25792 /* Tunable: ENABLE_VEHICLE_PEYOTE2 */ && iVar1 < Global_262145.f_25813 /* Tunable: LAUNCHPOSIX_PEYOTE2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("gauntlet4"))
 	{
-		if (!Global_262145.f_25793 && iVar1 < Global_262145.f_25814)
+		if (!Global_262145.f_25793 /* Tunable: ENABLE_VEHICLE_GAUNTLET4 */ && iVar1 < Global_262145.f_25814 /* Tunable: LAUNCHPOSIX_GAUNTLET4 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("caracara2"))
 	{
-		if (!Global_262145.f_25794 && iVar1 < Global_262145.f_25815)
+		if (!Global_262145.f_25794 /* Tunable: ENABLE_VEHICLE_CARACARA2 */ && iVar1 < Global_262145.f_25815 /* Tunable: LAUNCHPOSIX_CARACARA2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("jugular"))
 	{
-		if (!Global_262145.f_25795 && iVar1 < Global_262145.f_25816)
+		if (!Global_262145.f_25795 /* Tunable: ENABLE_VEHICLE_JUGULAR */ && iVar1 < Global_262145.f_25816 /* Tunable: LAUNCHPOSIX_JUGULAR */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("s80"))
 	{
-		if (!Global_262145.f_25796 && iVar1 < Global_262145.f_25817)
+		if (!Global_262145.f_25796 /* Tunable: ENABLE_VEHICLE_S80 */ && iVar1 < Global_262145.f_25817 /* Tunable: LAUNCHPOSIX_S80 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("krieger"))
 	{
-		if (!Global_262145.f_25797 && iVar1 < Global_262145.f_25818)
+		if (!Global_262145.f_25797 /* Tunable: ENABLE_VEHICLE_KRIEGER */ && iVar1 < Global_262145.f_25818 /* Tunable: LAUNCHPOSIX_KRIEGER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("emerus"))
 	{
-		if (!Global_262145.f_25798 && iVar1 < Global_262145.f_25819)
+		if (!Global_262145.f_25798 /* Tunable: ENABLE_VEHICLE_EMERUS */ && iVar1 < Global_262145.f_25819 /* Tunable: LAUNCHPOSIX_EMERUS */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("neo"))
 	{
-		if (!Global_262145.f_25799 && iVar1 < Global_262145.f_25820)
+		if (!Global_262145.f_25799 /* Tunable: ENABLE_VEHICLE_NEO */ && iVar1 < Global_262145.f_25820 /* Tunable: LAUNCHPOSIX_NEO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("paragon"))
 	{
-		if (!Global_262145.f_25800 && iVar1 < Global_262145.f_25821)
+		if (!Global_262145.f_25800 /* Tunable: ENABLE_VEHICLE_PARAGON */ && iVar1 < Global_262145.f_25821 /* Tunable: LAUNCHPOSIX_PARAGON */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("asbo"))
 	{
-		if (!Global_262145.f_28601 && iVar1 < Global_262145.f_28622)
+		if (!Global_262145.f_28601 /* Tunable: ENABLE_VEHICLE_ASBO */ && iVar1 < Global_262145.f_28622 /* Tunable: LAUNCHPOSIX_ASBO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("kanjo"))
 	{
-		if (!Global_262145.f_28602 && iVar1 < Global_262145.f_28623)
+		if (!Global_262145.f_28602 /* Tunable: ENABLE_VEHICLE_KANJO */ && iVar1 < Global_262145.f_28623 /* Tunable: LAUNCHPOSIX_KANJO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("everon"))
 	{
-		if (!Global_262145.f_28603 && iVar1 < Global_262145.f_28624)
+		if (!Global_262145.f_28603 /* Tunable: ENABLE_VEHICLE_EVERON */ && iVar1 < Global_262145.f_28624 /* Tunable: LAUNCHPOSIX_EVERON */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("retinue2"))
 	{
-		if (!Global_262145.f_28604 && iVar1 < Global_262145.f_28625)
+		if (!Global_262145.f_28604 /* Tunable: ENABLE_VEHICLE_RETINUE2 */ && iVar1 < Global_262145.f_28625 /* Tunable: LAUNCHPOSIX_RETINUE2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("yosemite2"))
 	{
-		if (!Global_262145.f_28605 && iVar1 < Global_262145.f_28626)
+		if (!Global_262145.f_28605 /* Tunable: ENABLE_VEHICLE_YOSEMITE2 */ && iVar1 < Global_262145.f_28626 /* Tunable: LAUNCHPOSIX_YOSEMITE2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("sugoi"))
 	{
-		if (!Global_262145.f_28606 && iVar1 < Global_262145.f_28627)
+		if (!Global_262145.f_28606 /* Tunable: ENABLE_VEHICLE_SUGOI */ && iVar1 < Global_262145.f_28627 /* Tunable: LAUNCHPOSIX_SUGOI */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("sultan2"))
 	{
-		if (!Global_262145.f_28607 && iVar1 < Global_262145.f_28628)
+		if (!Global_262145.f_28607 /* Tunable: ENABLE_VEHICLE_SULTAN2 */ && iVar1 < Global_262145.f_28628 /* Tunable: LAUNCHPOSIX_SULTAN2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("outlaw"))
 	{
-		if (!Global_262145.f_28608 && iVar1 < Global_262145.f_28629)
+		if (!Global_262145.f_28608 /* Tunable: ENABLE_VEHICLE_OUTLAW */ && iVar1 < Global_262145.f_28629 /* Tunable: LAUNCHPOSIX_OUTLAW */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("vagrant"))
 	{
-		if (!Global_262145.f_28609 && iVar1 < Global_262145.f_28630)
+		if (!Global_262145.f_28609 /* Tunable: ENABLE_VEHICLE_VAGRANT */ && iVar1 < Global_262145.f_28630 /* Tunable: LAUNCHPOSIX_VAGRANT */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("komoda"))
 	{
-		if (!Global_262145.f_28610 && iVar1 < Global_262145.f_28631)
+		if (!Global_262145.f_28610 /* Tunable: ENABLE_VEHICLE_KOMODA */ && iVar1 < Global_262145.f_28631 /* Tunable: LAUNCHPOSIX_KOMODA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("stryder"))
 	{
-		if (!Global_262145.f_28611 && iVar1 < Global_262145.f_28632)
+		if (!Global_262145.f_28611 /* Tunable: ENABLE_VEHICLE_STRYDER */ && iVar1 < Global_262145.f_28632 /* Tunable: LAUNCHPOSIX_STRYDER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("furia"))
 	{
-		if (!Global_262145.f_28612 && iVar1 < Global_262145.f_28633)
+		if (!Global_262145.f_28612 /* Tunable: ENABLE_VEHICLE_FURIA */ && iVar1 < Global_262145.f_28633 /* Tunable: LAUNCHPOSIX_FURIA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("zhaba"))
 	{
-		if (!Global_262145.f_28613 && iVar1 < Global_262145.f_28634)
+		if (!Global_262145.f_28613 /* Tunable: ENABLE_VEHICLE_ZHABA */ && iVar1 < Global_262145.f_28634 /* Tunable: LAUNCHPOSIX_ZHABA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("jb7002"))
 	{
-		if (!Global_262145.f_28614 && iVar1 < Global_262145.f_28635)
+		if (!Global_262145.f_28614 /* Tunable: ENABLE_VEHICLE_JB7002 */ && iVar1 < Global_262145.f_28635 /* Tunable: LAUNCHPOSIX_JB7002 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("firetruk"))
 	{
-		if (!Global_262145.f_28615 && iVar1 < Global_262145.f_28636)
+		if (!Global_262145.f_28615 /* Tunable: ENABLE_VEHICLE_FIRETRUCK */ && iVar1 < Global_262145.f_28636 /* Tunable: LAUNCHPOSIX_FIRETRUCK */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("burrito2"))
 	{
-		if (!Global_262145.f_28616 && iVar1 < Global_262145.f_28637)
+		if (!Global_262145.f_28616 /* Tunable: ENABLE_VEHICLE_BURRITO2 */ && iVar1 < Global_262145.f_28637 /* Tunable: LAUNCHPOSIX_BURRITO2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("boxville"))
 	{
-		if (!Global_262145.f_28617 && iVar1 < Global_262145.f_28638)
+		if (!Global_262145.f_28617 /* Tunable: ENABLE_VEHICLE_BOXVILLE */ && iVar1 < Global_262145.f_28638 /* Tunable: LAUNCHPOSIX_BOXVILLE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("stockade"))
 	{
-		if (!Global_262145.f_28618 && iVar1 < Global_262145.f_28639)
+		if (!Global_262145.f_28618 /* Tunable: ENABLE_VEHICLE_STOCKADE */ && iVar1 < Global_262145.f_28639 /* Tunable: LAUNCHPOSIX_STOCKADE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("minitank"))
 	{
-		if (!Global_262145.f_28619 && iVar1 < Global_262145.f_28640)
+		if (!Global_262145.f_28619 /* Tunable: ENABLE_VEHICLE_MINITANK */ && iVar1 < Global_262145.f_28640 /* Tunable: LAUNCHPOSIX_MINITANK */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("lguard"))
 	{
-		if (!Global_262145.f_28620 && iVar1 < Global_262145.f_28641)
+		if (!Global_262145.f_28620 /* Tunable: ENABLE_VEHICLE_LGUARD */ && iVar1 < Global_262145.f_28641 /* Tunable: LAUNCHPOSIX_LGUARD */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("blazer2"))
 	{
-		if (!Global_262145.f_28621 && iVar1 < Global_262145.f_28642)
+		if (!Global_262145.f_28621 /* Tunable: ENABLE_VEHICLE_BLAZER2 */ && iVar1 < Global_262145.f_28642 /* Tunable: LAUNCHPOSIX_BLAZER2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("formula"))
 	{
-		if ((!Global_262145.f_28644 && iVar1 < Global_262145.f_28645) && !Global_262145.f_28599)
+		if ((!Global_262145.f_28644 /* Tunable: ENABLE_VEHICLE_FORMULA */ && iVar1 < Global_262145.f_28645 /* Tunable: LAUNCHPOSIX_FORMULA */) && !Global_262145.f_28599 /* Tunable: ENABLE_VEHICLE_FORMULA_PODIUM */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("formula2"))
 	{
-		if ((!Global_262145.f_28647 && iVar1 < Global_262145.f_28648) && !Global_262145.f_28600)
+		if ((!Global_262145.f_28647 /* Tunable: ENABLE_VEHICLE_FORMULA2 */ && iVar1 < Global_262145.f_28648 /* Tunable: LAUNCHPOSIX_FORMULA2 */) && !Global_262145.f_28600 /* Tunable: ENABLE_VEHICLE_FORMULA2_PODIUM */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("imorgon"))
 	{
-		if (!Global_262145.f_28652 && iVar1 < Global_262145.f_28655)
+		if (!Global_262145.f_28652 /* Tunable: ENABLE_VEHICLE_IMORGEN */ && iVar1 < Global_262145.f_28655 /* Tunable: LAUNCHPOSIX_IMORGEN */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("rebla"))
 	{
-		if (!Global_262145.f_28653 && iVar1 < Global_262145.f_28656)
+		if (!Global_262145.f_28653 /* Tunable: ENABLE_VEHICLE_REBLA */ && iVar1 < Global_262145.f_28656 /* Tunable: LAUNCHPOSIX_REBLA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("vstr"))
 	{
-		if (!Global_262145.f_28654 && iVar1 < Global_262145.f_28657)
+		if (!Global_262145.f_28654 /* Tunable: ENABLE_VEHICLE_VSTR */ && iVar1 < Global_262145.f_28657 /* Tunable: LAUNCHPOSIX_VSTR */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("gauntlet5"))
 	{
-		if (!Global_262145.f_29670 && iVar1 < Global_262145.f_29335)
+		if (!Global_262145.f_29670 /* Tunable: ENABLE_VEH_GAUNTLET5 */ && iVar1 < Global_262145.f_29335 /* Tunable: LAUNCHPOSIX_GAUNTLET5 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("club"))
 	{
-		if (!Global_262145.f_29321 && iVar1 < Global_262145.f_29342)
+		if (!Global_262145.f_29321 /* Tunable: ENABLE_VEH_CLUB */ && iVar1 < Global_262145.f_29342 /* Tunable: LAUNCHPOSIX_CLUB */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("dukes3"))
 	{
-		if (!Global_262145.f_29322 && iVar1 < Global_262145.f_29328)
+		if (!Global_262145.f_29322 /* Tunable: ENABLE_VEH_DUKES3 */ && iVar1 < Global_262145.f_29328 /* Tunable: LAUNCHPOSIX_DUKES3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("yosemite3"))
 	{
-		if (!Global_262145.f_29668 && iVar1 < Global_262145.f_29336)
+		if (!Global_262145.f_29668 /* Tunable: ENABLE_VEH_YOSEMITE3 */ && iVar1 < Global_262145.f_29336 /* Tunable: LAUNCHPOSIX_YOSEMITE3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("peyote3"))
 	{
-		if (!Global_262145.f_29669 && iVar1 < Global_262145.f_29337)
+		if (!Global_262145.f_29669 /* Tunable: ENABLE_VEH_PEYOTE3 */ && iVar1 < Global_262145.f_29337 /* Tunable: LAUNCHPOSIX_PEYOTE3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("glendale2"))
 	{
-		if (!Global_262145.f_29315 && iVar1 < Global_262145.f_29334)
+		if (!Global_262145.f_29315 /* Tunable: ENABLE_VEH_GLENDALE2 */ && iVar1 < Global_262145.f_29334 /* Tunable: LAUNCHPOSIX_GLENDALE2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("penumbra2"))
 	{
-		if (!Global_262145.f_29316 && iVar1 < Global_262145.f_29343)
+		if (!Global_262145.f_29316 /* Tunable: ENABLE_VEH_PENUMBRA2 */ && iVar1 < Global_262145.f_29343 /* Tunable: LAUNCHPOSIX_PENUMBRA2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("landstalker2"))
 	{
-		if (!Global_262145.f_29317 && iVar1 < Global_262145.f_29333)
+		if (!Global_262145.f_29317 /* Tunable: ENABLE_VEH_LANDSTALKER2 */ && iVar1 < Global_262145.f_29333 /* Tunable: LAUNCHPOSIX_LANDSTALKER2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("seminole2"))
 	{
-		if (!Global_262145.f_29318 && iVar1 < Global_262145.f_29331)
+		if (!Global_262145.f_29318 /* Tunable: ENABLE_VEH_SEMINOLE2 */ && iVar1 < Global_262145.f_29331 /* Tunable: LAUNCHPOSIX_SEMINOLE2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tigon"))
 	{
-		if (!Global_262145.f_29664 && iVar1 < Global_262145.f_29338)
+		if (!Global_262145.f_29664 /* Tunable: ENABLE_VEH_TIGON */ && iVar1 < Global_262145.f_29338 /* Tunable: LAUNCHPOSIX_TIGON */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("openwheel1"))
 	{
-		if (!Global_262145.f_29665 && iVar1 < Global_262145.f_29339)
+		if (!Global_262145.f_29665 /* Tunable: ENABLE_VEH_OPENWHEEL1 */ && iVar1 < Global_262145.f_29339 /* Tunable: LAUNCHPOSIX_OPENWHEEL1 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("openwheel2"))
 	{
-		if (!Global_262145.f_29666 && iVar1 < Global_262145.f_29340)
+		if (!Global_262145.f_29666 /* Tunable: ENABLE_VEH_OPENWHEEL2 */ && iVar1 < Global_262145.f_29340 /* Tunable: LAUNCHPOSIX_OPENWHEEL2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("coquette4"))
 	{
-		if (!Global_262145.f_29667 && iVar1 < Global_262145.f_29341)
+		if (!Global_262145.f_29667 /* Tunable: ENABLE_VEH_COQUETTE4 */ && iVar1 < Global_262145.f_29341 /* Tunable: LAUNCHPOSIX_COQUETTE4 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("manana2"))
 	{
-		if (!Global_262145.f_29319 && iVar1 < Global_262145.f_29330)
+		if (!Global_262145.f_29319 /* Tunable: ENABLE_VEH_MANANA2 */ && iVar1 < Global_262145.f_29330 /* Tunable: LAUNCHPOSIX_MANANA2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("youga3"))
 	{
-		if (!Global_262145.f_29320 && iVar1 < Global_262145.f_29332)
+		if (!Global_262145.f_29320 /* Tunable: ENABLE_VEH_YOUGA3 */ && iVar1 < Global_262145.f_29332 /* Tunable: LAUNCHPOSIX_YOUGA3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("toreador"))
 	{
-		if (!Global_262145.f_30129 && iVar1 < Global_262145.f_30112)
+		if (!Global_262145.f_30129 /* Tunable: ENABLE_VEHICLE_TOREADOR */ && iVar1 < Global_262145.f_30112 /* Tunable: LAUNCHPOSIX_TOREADOR */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("annihilator2"))
 	{
-		if (!Global_262145.f_30130 && iVar1 < Global_262145.f_30113)
+		if (!Global_262145.f_30130 /* Tunable: ENABLE_VEHICLE_ANNIHILATOR2 */ && iVar1 < Global_262145.f_30113 /* Tunable: LAUNCHPOSIX_ANNIHILATOR2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("alkonost"))
 	{
-		if (!Global_262145.f_30131 && iVar1 < Global_262145.f_30114)
+		if (!Global_262145.f_30131 /* Tunable: ENABLE_VEHICLE_ALKONOST */ && iVar1 < Global_262145.f_30114 /* Tunable: LAUNCHPOSIX_ALKONOST */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("patrolboat"))
 	{
-		if (!Global_262145.f_30132 && iVar1 < Global_262145.f_30115)
+		if (!Global_262145.f_30132 /* Tunable: ENABLE_VEHICLE_PATROLBOAT */ && iVar1 < Global_262145.f_30115 /* Tunable: LAUNCHPOSIX_PATROLBOAT */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("longfin"))
 	{
-		if (!Global_262145.f_30133 && iVar1 < Global_262145.f_30116)
+		if (!Global_262145.f_30133 /* Tunable: ENABLE_VEHICLE_LONGFIN */ && iVar1 < Global_262145.f_30116 /* Tunable: LAUNCHPOSIX_LONGFIN */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("winky"))
 	{
-		if (!Global_262145.f_30134 && iVar1 < Global_262145.f_30117)
+		if (!Global_262145.f_30134 /* Tunable: ENABLE_VEHICLE_WINKY */ && iVar1 < Global_262145.f_30117 /* Tunable: LAUNCHPOSIX_WINKY */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("veto"))
 	{
-		if (!Global_262145.f_30135 && iVar1 < Global_262145.f_30118)
+		if (!Global_262145.f_30135 /* Tunable: ENABLE_VEHICLE_VETO */ && iVar1 < Global_262145.f_30118 /* Tunable: LAUNCHPOSIX_VETO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("veto2"))
 	{
-		if (!Global_262145.f_30136 && iVar1 < Global_262145.f_30119)
+		if (!Global_262145.f_30136 /* Tunable: ENABLE_VEHICLE_VETO2 */ && iVar1 < Global_262145.f_30119 /* Tunable: LAUNCHPOSIX_VETO2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("italirsx"))
 	{
-		if (!Global_262145.f_30137 && iVar1 < Global_262145.f_30120)
+		if (!Global_262145.f_30137 /* Tunable: ENABLE_VEHICLE_ITALIRSX */ && iVar1 < Global_262145.f_30120 /* Tunable: LAUNCHPOSIX_ITALIRSX */)
 		{
 			iVar0 = 0;
 		}
@@ -113515,35 +113515,35 @@ int func_693(int iParam0)//Position - 0x8644F
 		if (Global_262145.f_30146)
 		{
 		}
-		else if (!Global_262145.f_30138 && iVar1 < Global_262145.f_30121)
+		else if (!Global_262145.f_30138 /* Tunable: ENABLE_VEHICLE_WEEVIL */ && iVar1 < Global_262145.f_30121 /* Tunable: LAUNCHPOSIX_WEEVIL */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("manchez2"))
 	{
-		if (!Global_262145.f_30139 && iVar1 < Global_262145.f_30122)
+		if (!Global_262145.f_30139 /* Tunable: ENABLE_VEHICLE_MANCHEZ2 */ && iVar1 < Global_262145.f_30122 /* Tunable: LAUNCHPOSIX_MANCHEZ2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("slamtruck"))
 	{
-		if (!Global_262145.f_30140 && iVar1 < Global_262145.f_30123)
+		if (!Global_262145.f_30140 /* Tunable: ENABLE_VEHICLE_SLAMTRUCK */ && iVar1 < Global_262145.f_30123 /* Tunable: LAUNCHPOSIX_SLAMTRUCK */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("vetir"))
 	{
-		if (!Global_262145.f_30141 && iVar1 < Global_262145.f_30124)
+		if (!Global_262145.f_30141 /* Tunable: ENABLE_VEHICLE_VETIR */ && iVar1 < Global_262145.f_30124 /* Tunable: LAUNCHPOSIX_VETIR */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("squaddie"))
 	{
-		if (!Global_262145.f_30142 && iVar1 < Global_262145.f_30125)
+		if (!Global_262145.f_30142 /* Tunable: ENABLE_VEHICLE_SQUADDIE */ && iVar1 < Global_262145.f_30125 /* Tunable: LAUNCHPOSIX_SQUADDIE */)
 		{
 			iVar0 = 0;
 		}
@@ -113553,238 +113553,238 @@ int func_693(int iParam0)//Position - 0x8644F
 		if (Global_262145.f_30147)
 		{
 		}
-		else if (!Global_262145.f_30143 && iVar1 < Global_262145.f_30126)
+		else if (!Global_262145.f_30143 /* Tunable: ENABLE_VEHICLE_BRIOSO2 */ && iVar1 < Global_262145.f_30126 /* Tunable: LAUNCHPOSIX_BRIOSO2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("dinghy5"))
 	{
-		if (!Global_262145.f_30144 && iVar1 < Global_262145.f_30127)
+		if (!Global_262145.f_30144 /* Tunable: ENABLE_VEHICLE_DINGY5 */ && iVar1 < Global_262145.f_30127 /* Tunable: LAUNCHPOSIX_DINGY5 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("verus"))
 	{
-		if (!Global_262145.f_30145 && iVar1 < Global_262145.f_30128)
+		if (!Global_262145.f_30145 /* Tunable: ENABLE_VEHICLE_VERUS */ && iVar1 < Global_262145.f_30128 /* Tunable: LAUNCHPOSIX_VERUS */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tailgater2"))
 	{
-		if (!Global_262145.f_30997 && iVar1 < Global_262145.f_30980)
+		if (!Global_262145.f_30997 /* Tunable: ENABLE_VEHICLE_TAILGATER2 */ && iVar1 < Global_262145.f_30980 /* Tunable: LAUNCHPOSIX_TAILGATER2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("euros"))
 	{
-		if (!Global_262145.f_30998 && iVar1 < Global_262145.f_30981)
+		if (!Global_262145.f_30998 /* Tunable: ENABLE_VEHICLE_EUROS */ && iVar1 < Global_262145.f_30981 /* Tunable: LAUNCHPOSIX_EUROS */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("sultan3"))
 	{
-		if (!Global_262145.f_30999 && iVar1 < Global_262145.f_30982)
+		if (!Global_262145.f_30999 /* Tunable: ENABLE_VEHICLE_SULTAN3 */ && iVar1 < Global_262145.f_30982 /* Tunable: LAUNCHPOSIX_SULTAN3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("rt3000"))
 	{
-		if (!Global_262145.f_31000 && iVar1 < Global_262145.f_30983)
+		if (!Global_262145.f_31000 /* Tunable: ENABLE_VEHICLE_RT3000 */ && iVar1 < Global_262145.f_30983 /* Tunable: LAUNCHPOSIX_RT3000 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("vectre"))
 	{
-		if (!Global_262145.f_31001 && iVar1 < Global_262145.f_30984)
+		if (!Global_262145.f_31001 /* Tunable: ENABLE_VEHICLE_VECTRE */ && iVar1 < Global_262145.f_30984 /* Tunable: LAUNCHPOSIX_VECTRE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("zr350"))
 	{
-		if (!Global_262145.f_31002 && iVar1 < Global_262145.f_30985)
+		if (!Global_262145.f_31002 /* Tunable: ENABLE_VEHICLE_ZR350 */ && iVar1 < Global_262145.f_30985 /* Tunable: LAUNCHPOSIX_ZR350 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("warrener2"))
 	{
-		if (!Global_262145.f_31003 && iVar1 < Global_262145.f_30986)
+		if (!Global_262145.f_31003 /* Tunable: ENABLE_VEHICLE_WARRENER2 */ && iVar1 < Global_262145.f_30986 /* Tunable: LAUNCHPOSIX_WARRENER2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("calico"))
 	{
-		if (!Global_262145.f_31004 && iVar1 < Global_262145.f_30987)
+		if (!Global_262145.f_31004 /* Tunable: ENABLE_VEHICLE_CALICO */ && iVar1 < Global_262145.f_30987 /* Tunable: LAUNCHPOSIX_CALICO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("remus"))
 	{
-		if (!Global_262145.f_31005 && iVar1 < Global_262145.f_30988)
+		if (!Global_262145.f_31005 /* Tunable: ENABLE_VEHICLE_REMUS */ && iVar1 < Global_262145.f_30988 /* Tunable: LAUNCHPOSIX_REMUS */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("cypher"))
 	{
-		if (!Global_262145.f_31006 && iVar1 < Global_262145.f_30989)
+		if (!Global_262145.f_31006 /* Tunable: ENABLE_VEHICLE_CYPHER */ && iVar1 < Global_262145.f_30989 /* Tunable: LAUNCHPOSIX_CYPHER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("dominator7"))
 	{
-		if (!Global_262145.f_31007 && iVar1 < Global_262145.f_30990)
+		if (!Global_262145.f_31007 /* Tunable: ENABLE_VEHICLE_DOMINATOR7 */ && iVar1 < Global_262145.f_30990 /* Tunable: LAUNCHPOSIX_DOMINATOR7 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("jester4"))
 	{
-		if (!Global_262145.f_31008 && iVar1 < Global_262145.f_30991)
+		if (!Global_262145.f_31008 /* Tunable: ENABLE_VEHICLE_JESTER4 */ && iVar1 < Global_262145.f_30991 /* Tunable: LAUNCHPOSIX_JESTER4 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("futo2"))
 	{
-		if (!Global_262145.f_31009 && iVar1 < Global_262145.f_30992)
+		if (!Global_262145.f_31009 /* Tunable: ENABLE_VEHICLE_FUTO2 */ && iVar1 < Global_262145.f_30992 /* Tunable: LAUNCHPOSIX_FUTO2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("dominator8"))
 	{
-		if (!Global_262145.f_31010 && iVar1 < Global_262145.f_30993)
+		if (!Global_262145.f_31010 /* Tunable: ENABLE_VEHICLE_DOMINATOR8 */ && iVar1 < Global_262145.f_30993 /* Tunable: LAUNCHPOSIX_DOMINATOR8 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("previon"))
 	{
-		if (!Global_262145.f_31011 && iVar1 < Global_262145.f_30994)
+		if (!Global_262145.f_31011 /* Tunable: ENABLE_VEHICLE_PREVION */ && iVar1 < Global_262145.f_30994 /* Tunable: LAUNCHPOSIX_PREVION */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("growler"))
 	{
-		if (!Global_262145.f_31012 && iVar1 < Global_262145.f_30995)
+		if (!Global_262145.f_31012 /* Tunable: ENABLE_VEHICLE_GROWLER */ && iVar1 < Global_262145.f_30995 /* Tunable: LAUNCHPOSIX_GROWLER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("comet6"))
 	{
-		if (!Global_262145.f_31013 && iVar1 < Global_262145.f_30996)
+		if (!Global_262145.f_31013 /* Tunable: ENABLE_VEHICLE_COMET6 */ && iVar1 < Global_262145.f_30996 /* Tunable: LAUNCHPOSIX_COMET6 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("champion"))
 	{
-		if (!Global_262145.f_31872 && iVar1 < Global_262145.f_31857)
+		if (!Global_262145.f_31872 /* Tunable: ENABLE_VEHICLE_CHAMPION */ && iVar1 < Global_262145.f_31857 /* Tunable: LAUNCHPOSIX_CHAMPION */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("buffalo4"))
 	{
-		if (!Global_262145.f_31873 && iVar1 < Global_262145.f_31858)
+		if (!Global_262145.f_31873 /* Tunable: ENABLE_VEHICLE_BUFFALO4 */ && iVar1 < Global_262145.f_31858 /* Tunable: LAUNCHPOSIX_BUFFALO4 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("deity"))
 	{
-		if (!Global_262145.f_31874 && iVar1 < Global_262145.f_31859)
+		if (!Global_262145.f_31874 /* Tunable: ENABLE_VEHICLE_DEITY */ && iVar1 < Global_262145.f_31859 /* Tunable: LAUNCHPOSIX_DEITY */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("jubilee"))
 	{
-		if (!Global_262145.f_31875 && iVar1 < Global_262145.f_31860)
+		if (!Global_262145.f_31875 /* Tunable: ENABLE_VEHICLE_JUBILEE */ && iVar1 < Global_262145.f_31860 /* Tunable: LAUNCHPOSIX_JUBILEE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("ignus"))
 	{
-		if (!Global_262145.f_31876 && iVar1 < Global_262145.f_31861)
+		if (!Global_262145.f_31876 /* Tunable: ENABLE_VEHICLE_IGNUS */ && iVar1 < Global_262145.f_31861 /* Tunable: LAUNCHPOSIX_IGNUS */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("cinquemila"))
 	{
-		if (!Global_262145.f_31877 && iVar1 < Global_262145.f_31862)
+		if (!Global_262145.f_31877 /* Tunable: ENABLE_VEHICLE_CINQUEMILA */ && iVar1 < Global_262145.f_31862 /* Tunable: LAUNCHPOSIX_CINQUEMILA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("astron"))
 	{
-		if (!Global_262145.f_31878 && iVar1 < Global_262145.f_31863)
+		if (!Global_262145.f_31878 /* Tunable: ENABLE_VEHICLE_ASTRON */ && iVar1 < Global_262145.f_31863 /* Tunable: LAUNCHPOSIX_ASTRON */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("comet7"))
 	{
-		if (!Global_262145.f_31879 && iVar1 < Global_262145.f_31864)
+		if (!Global_262145.f_31879 /* Tunable: ENABLE_VEHICLE_COMET7 */ && iVar1 < Global_262145.f_31864 /* Tunable: LAUNCHPOSIX_COMET7 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("zeno"))
 	{
-		if (!Global_262145.f_31880 && iVar1 < Global_262145.f_31865)
+		if (!Global_262145.f_31880 /* Tunable: ENABLE_VEHICLE_ZENO */ && iVar1 < Global_262145.f_31865 /* Tunable: LAUNCHPOSIX_ZENO */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("reever"))
 	{
-		if (!Global_262145.f_31881 && iVar1 < Global_262145.f_31866)
+		if (!Global_262145.f_31881 /* Tunable: ENABLE_VEHICLE_REEVER */ && iVar1 < Global_262145.f_31866 /* Tunable: LAUNCHPOSIX_REEVER */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("iwagen"))
 	{
-		if (!Global_262145.f_31882 && iVar1 < Global_262145.f_31867)
+		if (!Global_262145.f_31882 /* Tunable: ENABLE_VEHICLE_IWAGEN */ && iVar1 < Global_262145.f_31867 /* Tunable: LAUNCHPOSIX_IWAGEN */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("granger2"))
 	{
-		if (!Global_262145.f_31883 && iVar1 < Global_262145.f_31868)
+		if (!Global_262145.f_31883 /* Tunable: ENABLE_VEHICLE_GRANGER2 */ && iVar1 < Global_262145.f_31868 /* Tunable: LAUNCHPOSIX_GRANGER2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("patriot3"))
 	{
-		if (!Global_262145.f_31884 && iVar1 < Global_262145.f_31869)
+		if (!Global_262145.f_31884 /* Tunable: ENABLE_VEHICLE_PATRIOT3 */ && iVar1 < Global_262145.f_31869 /* Tunable: LAUNCHPOSIX_PATRIOT3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("shinobi"))
 	{
-		if (!Global_262145.f_31885 && iVar1 < Global_262145.f_31870)
+		if (!Global_262145.f_31885 /* Tunable: ENABLE_VEHICLE_SHINOBI */ && iVar1 < Global_262145.f_31870 /* Tunable: LAUNCHPOSIX_FAST_MOTORBIKE */)
 		{
 			iVar0 = 0;
 		}
@@ -113794,133 +113794,133 @@ int func_693(int iParam0)//Position - 0x8644F
 		if (Global_262145.f_31950)
 		{
 		}
-		else if (!Global_262145.f_31886 && iVar1 < Global_262145.f_31871)
+		else if (!Global_262145.f_31886 /* Tunable: ENABLE_VEHICLE_BALLER7 */ && iVar1 < Global_262145.f_31871 /* Tunable: LAUNCHPOSIX_BALLER7 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("brioso3"))
 	{
-		if (!Global_262145.f_33037 && iVar1 < Global_262145.f_33018)
+		if (!Global_262145.f_33037 /* Tunable: ENABLE_VEHICLE_BRIOSO3 */ && iVar1 < Global_262145.f_33018 /* Tunable: LAUNCHPOSIX_BRIOSO3 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("corsita"))
 	{
-		if (!Global_262145.f_33031 && iVar1 < Global_262145.f_33012)
+		if (!Global_262145.f_33031 /* Tunable: ENABLE_VEHICLE_CORSITA */ && iVar1 < Global_262145.f_33012 /* Tunable: LAUNCHPOSIX_CORSITA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("draugur"))
 	{
-		if (!Global_262145.f_33035 && iVar1 < Global_262145.f_33016)
+		if (!Global_262145.f_33035 /* Tunable: ENABLE_VEHICLE_DRAUGUR */ && iVar1 < Global_262145.f_33016 /* Tunable: LAUNCHPOSIX_DRAUGUR */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("greenwood"))
 	{
-		if (!Global_262145.f_33029 && iVar1 < Global_262145.f_33010)
+		if (!Global_262145.f_33029 /* Tunable: ENABLE_VEHICLE_GREENWOOD */ && iVar1 < Global_262145.f_33010 /* Tunable: LAUNCHPOSIX_GREENWOOD */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("kanjosj"))
 	{
-		if (!Global_262145.f_33040 && iVar1 < Global_262145.f_33021)
+		if (!Global_262145.f_33040 /* Tunable: ENABLE_VEHICLE_KANJOSJ */ && iVar1 < Global_262145.f_33021 /* Tunable: LAUNCHPOSIX_KANJOSJ */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("lm87"))
 	{
-		if (!Global_262145.f_33032 && iVar1 < Global_262145.f_33013)
+		if (!Global_262145.f_33032 /* Tunable: ENABLE_VEHICLE_LM87 */ && iVar1 < Global_262145.f_33013 /* Tunable: LAUNCHPOSIX_LM87 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("postlude"))
 	{
-		if (!Global_262145.f_33041 && iVar1 < Global_262145.f_33022)
+		if (!Global_262145.f_33041 /* Tunable: ENABLE_VEHICLE_POSTLUDE */ && iVar1 < Global_262145.f_33022 /* Tunable: LAUNCHPOSIX_POSTLUDE */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("rhinehart"))
 	{
-		if (!Global_262145.f_33043 && iVar1 < Global_262145.f_33024)
+		if (!Global_262145.f_33043 /* Tunable: ENABLE_VEHICLE_RHINEHART */ && iVar1 < Global_262145.f_33024 /* Tunable: LAUNCHPOSIX_RHINEHART */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("sm722"))
 	{
-		if (!Global_262145.f_33034 && iVar1 < Global_262145.f_33015)
+		if (!Global_262145.f_33034 /* Tunable: ENABLE_VEHICLE_SM722 */ && iVar1 < Global_262145.f_33015 /* Tunable: LAUNCHPOSIX_SM722 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tenf"))
 	{
-		if (!Global_262145.f_33042 && iVar1 < Global_262145.f_33023)
+		if (!Global_262145.f_33042 /* Tunable: ENABLE_VEHICLE_TENF */ && iVar1 < Global_262145.f_33023 /* Tunable: LAUNCHPOSIX_TENF */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("tenf2"))
 	{
-		if (!Global_262145.f_33045 && iVar1 < Global_262145.f_33026)
+		if (!Global_262145.f_33045 /* Tunable: ENABLE_VEHICLE_TENF2 */ && iVar1 < Global_262145.f_33026 /* Tunable: LAUNCHPOSIX_TENF2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("torero2"))
 	{
-		if (!Global_262145.f_33030 && iVar1 < Global_262145.f_33011)
+		if (!Global_262145.f_33030 /* Tunable: ENABLE_VEHICLE_TORERO2 */ && iVar1 < Global_262145.f_33011 /* Tunable: LAUNCHPOSIX_TORERO2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("vigero2"))
 	{
-		if (!Global_262145.f_33038 && iVar1 < Global_262145.f_33019)
+		if (!Global_262145.f_33038 /* Tunable: ENABLE_VEHICLE_VIGERO2 */ && iVar1 < Global_262145.f_33019 /* Tunable: LAUNCHPOSIX_VIGERO2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("weevil2"))
 	{
-		if (!Global_262145.f_33044 && iVar1 < Global_262145.f_33025)
+		if (!Global_262145.f_33044 /* Tunable: ENABLE_VEHICLE_WEEVIL2 */ && iVar1 < Global_262145.f_33025 /* Tunable: LAUNCHPOSIX_WEEVIL2 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("ruiner4"))
 	{
-		if (!Global_262145.f_33036 && iVar1 < Global_262145.f_33017)
+		if (!Global_262145.f_33036 /* Tunable: ENABLE_VEHICLE_RUINER4 */ && iVar1 < Global_262145.f_33017 /* Tunable: LAUNCHPOSIX_RUINER4 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("sentinel4"))
 	{
-		if (!Global_262145.f_33046 && iVar1 < Global_262145.f_33027)
+		if (!Global_262145.f_33046 /* Tunable: ENABLE_VEHICLE_SENTINEL4 */ && iVar1 < Global_262145.f_33027 /* Tunable: LAUNCHPOSIX_MODEL_SENTINEL4 */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("conada"))
 	{
-		if (!Global_262145.f_33033 && iVar1 < Global_262145.f_33014)
+		if (!Global_262145.f_33033 /* Tunable: ENABLE_VEHICLE_CONADA */ && iVar1 < Global_262145.f_33014 /* Tunable: LAUNCHPOSIX_CONADA */)
 		{
 			iVar0 = 0;
 		}
 	}
 	else if (iParam0 == joaat("omnisegt"))
 	{
-		if (!Global_262145.f_33028 && iVar1 < Global_262145.f_33009)
+		if (!Global_262145.f_33028 /* Tunable: ENABLE_VEHICLE_OMNISEGT */ && iVar1 < Global_262145.f_33009 /* Tunable: LAUNCHPOSIX_OMNISEGT */)
 		{
 			iVar0 = 0;
 		}
@@ -120389,79 +120389,79 @@ int func_731(int iParam0, int iParam1, int iParam2)//Position - 0x90995
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31517) * Global_262145.f_31616));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31517 /* Tunable: TUNER_SPRINT_FIRST_TIME_BONUS_XP */) * Global_262145.f_31616 /* Tunable: TUNER_SPRINT_FIRST_TIME_BONUS_XP_MULTIPLIER */));
 			break;
 		
 		case 1:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31528) * Global_262145.f_31617));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31528 /* Tunable: TUNER_STREET_FIRST_TIME_BONUS_XP */) * Global_262145.f_31617 /* Tunable: TUNER_STREET_FIRST_TIME_BONUS_XP_MULTIPLIER */));
 			break;
 		
 		case 2:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31530) * Global_262145.f_31618));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31530 /* Tunable: TUNER_PURSUIT_FIRST_TIME_BONUS_XP */) * Global_262145.f_31618 /* Tunable: TUNER_PURSUIT_FIRST_TIME_BONUS_XP_MULTIPLIER */));
 			break;
 		
 		case 3:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31549) * Global_262145.f_31619));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31549 /* Tunable: TUNER_MOD_FIRST_TIME_BONUS_XP */) * Global_262145.f_31619 /* Tunable: TUNER_MOD_FIRST_TIME_BONUS_XP_MULTIPLIER */));
 			break;
 		
 		case 4:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31551) * Global_262145.f_31620));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31551 /* Tunable: TUNER_SANDBOX_FIRST_TIME_BONUS_XP */) * Global_262145.f_31620 /* Tunable: TUNER_SANDBOX_TEST_FIRST_TIME_BONUS_XP_MULTIPLIER */));
 			break;
 		
 		case 5:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31547) * Global_262145.f_31621));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31547 /* Tunable: TUNER_TIMETRIAL_FIRST_TIME_BONUS_XP */) * Global_262145.f_31621 /* Tunable: TUNER_TIMETRIAL_FIRST_TIME_BONUS_XP_MULTIPLIER */));
 			break;
 		
 		case 6:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31532) * Global_262145.f_31622));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31532 /* Tunable: TUNER_CHECKPOINT_FIRST_TIME_BONUS_XP */) * Global_262145.f_31622 /* Tunable: TUNER_CHECKPOINT_FIRST_TIME_BONUS_XP_MULTIPLIER */));
 			break;
 		
 		case 7:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31543) * Global_262145.f_31623));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31543 /* Tunable: TUNER_HEADTOHEAD_FIRST_TIME_BONUS_XP */) * Global_262145.f_31623 /* Tunable: TUNER_HEADTOHEAD_FIRST_TIME_BONUS_XP_MULTIPLIER */));
 			break;
 		
 		case 8:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31556) * Global_262145.f_31624));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31556 /* Tunable: TUNER_CARCLUB_FIRST_TIME_DAILY_XP */) * Global_262145.f_31624 /* Tunable: TUNER_CARCLUB_FIRST_TIME_DAILY_XP_MULTIPLIER */));
 			break;
 		
 		case 9:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31555) * Global_262145.f_31625));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31555 /* Tunable: TUNER_CARCLUB_PV_FIRST_TIME_DAILY_XP */) * Global_262145.f_31625 /* Tunable: TUNER_CARCLUB_PV_FIRST_TIME_DAILY_XP_MULTIPLIER */));
 			break;
 		
 		case 10:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31518) * Global_262145.f_31626));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31518 /* Tunable: TUNER_SPRINT_FIRST_TIME_DAILY_XP */) * Global_262145.f_31626 /* Tunable: TUNER_SPRINT_FIRST_TIME_DAILY_XP_MULTIPLIER */));
 			break;
 		
 		case 11:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31529) * Global_262145.f_31627));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31529 /* Tunable: TUNER_STREET_FIRST_TIME_DAILY_XP */) * Global_262145.f_31627 /* Tunable: TUNER_STREET_FIRST_TIME_DAILY_XP_MULTIPLIER */));
 			break;
 		
 		case 12:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31531) * Global_262145.f_31628));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31531 /* Tunable: TUNER_PURSUIT_FIRST_TIME_DAILY_XP */) * Global_262145.f_31628 /* Tunable: TUNER_PURSUIT_FIRST_TIME_DAILY_XP_MULTIPLIER */));
 			break;
 		
 		case 13:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31550) * Global_262145.f_31629));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31550 /* Tunable: TUNER_MOD_FIRST_TIME_DAILY_XP */) * Global_262145.f_31629 /* Tunable: TUNER_MOD_FIRST_TIME_DAILY_XP_MULTIPLIER */));
 			break;
 		
 		case 14:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31553) * Global_262145.f_31630));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31553 /* Tunable: TUNER_SANDBOX_TEST_FIRST_TIME_DAILY_XP */) * Global_262145.f_31630 /* Tunable: TUNER_SANDBOX_TEST_FIRST_TIME_DAILY_XP_MULTIPLIERER */));
 			break;
 		
 		case 15:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31552) * Global_262145.f_31631));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31552 /* Tunable: TUNER_SANDBOX_PV_FIRST_TIME_DAILY_XP */) * Global_262145.f_31631 /* Tunable: TUNER_SANDBOX_PV_FIRST_TIME_DAILY_XP_MULTIPLIER */));
 			break;
 		
 		case 16:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31548) * Global_262145.f_31632));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31548 /* Tunable: TUNER_TIMETRIAL_FIRST_TIME_DAILY_XP */) * Global_262145.f_31632 /* Tunable: TUNER_TIMETRIAL_FIRST_TIME_DAILY_XP_MULTIPLIER */));
 			break;
 		
 		case 17:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31533) * Global_262145.f_31633));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31533 /* Tunable: TUNER_CHECKPOINT_FIRST_TIME_DAILY_XP */) * Global_262145.f_31633 /* Tunable: TUNER_CHECKPOINT_FIRST_TIME_DAILY_XP_MULTIPLIER */));
 			break;
 		
 		case 18:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31544) * Global_262145.f_31634));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31544 /* Tunable: TUNER_HEADTOHEAD_FIRST_TIME_DAILY_XP */) * Global_262145.f_31634 /* Tunable: TUNER_HEADTOHEAD_FIRST_TIME_DAILY_XP_MULTIPLIER */));
 			break;
 		
 		case 19:
@@ -120470,48 +120470,48 @@ int func_731(int iParam0, int iParam1, int iParam2)//Position - 0x90995
 				case 1:
 					if (iParam2 == 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31519) * Global_262145.f_31635));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31519 /* Tunable: TUNER_SPRINT_1ST_PLACE_XP */) * Global_262145.f_31635 /* Tunable: TUNER_SPRINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 == 3)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31523) * Global_262145.f_31635));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31523 /* Tunable: TUNER_SPRINT_3P_1ST_PLACE_XP */) * Global_262145.f_31635 /* Tunable: TUNER_SPRINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 == 2)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31526) * Global_262145.f_31635));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31526 /* Tunable: TUNER_SPRINT_2P_1ST_PLACE_XP */) * Global_262145.f_31635 /* Tunable: TUNER_SPRINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 2:
 					if (iParam2 == 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31520) * Global_262145.f_31635));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31520 /* Tunable: TUNER_SPRINT_2ND_PLACE_XP */) * Global_262145.f_31635 /* Tunable: TUNER_SPRINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 == 3)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31524) * Global_262145.f_31635));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31524 /* Tunable: TUNER_SPRINT_3P_2ND_PLACE_XP */) * Global_262145.f_31635 /* Tunable: TUNER_SPRINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 == 2)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31527) * Global_262145.f_31635));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31527 /* Tunable: TUNER_SPRINT_2P_2ND_PLACE_XP */) * Global_262145.f_31635 /* Tunable: TUNER_SPRINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 3:
 					if (iParam2 == 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31521) * Global_262145.f_31635));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31521 /* Tunable: TUNER_SPRINT_3RD_PLACE_XP */) * Global_262145.f_31635 /* Tunable: TUNER_SPRINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 == 3)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31525) * Global_262145.f_31635));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31525 /* Tunable: TUNER_SPRINT_3P_3RD_PLACE_XP */) * Global_262145.f_31635 /* Tunable: TUNER_SPRINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 4:
 					if (iParam2 == 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31522) * Global_262145.f_31635));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31522 /* Tunable: TUNER_SPRINT_4TH_PLACE_XP */) * Global_262145.f_31635 /* Tunable: TUNER_SPRINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 			}
@@ -120523,80 +120523,80 @@ int func_731(int iParam0, int iParam1, int iParam2)//Position - 0x90995
 				case 1:
 					if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31562) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31562 /* Tunable: TUNER_STREET_1ST_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 3 && iParam2 <= 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31570) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31570 /* Tunable: TUNER_STREET_3P_1ST_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 1 && iParam2 <= 2)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31574) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31574 /* Tunable: TUNER_STREET_2P_1ST_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 2:
 					if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31563) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31563 /* Tunable: TUNER_STREET_2ND_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 3 && iParam2 <= 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31571) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31571 /* Tunable: TUNER_STREET_3P_2ND_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 1 && iParam2 <= 2)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31575) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31575 /* Tunable: TUNER_STREET_2P_2ND_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 3:
 					if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31564) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31564 /* Tunable: TUNER_STREET_3RD_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 3 && iParam2 <= 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31572) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31572 /* Tunable: TUNER_STREET_3P_3RD_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 4:
 					if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31565) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31565 /* Tunable: TUNER_STREET_4TH_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 3 && iParam2 <= 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31573) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31573 /* Tunable: TUNER_STREET_3P_4TH_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 5:
 					if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31566) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31566 /* Tunable: TUNER_STREET_5TH_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 6:
 					if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31567) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31567 /* Tunable: TUNER_STREET_6TH_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 7:
 					if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31568) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31568 /* Tunable: TUNER_STREET_7TH_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 8:
 					if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31569) * Global_262145.f_31636));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31569 /* Tunable: TUNER_STREET_8TH_PLACE_XP */) * Global_262145.f_31636 /* Tunable: TUNER_STREET_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 			}
@@ -120608,168 +120608,168 @@ int func_731(int iParam0, int iParam1, int iParam2)//Position - 0x90995
 				case 1:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31576) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31576 /* Tunable: TUNER_PURSUIT_1ST_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31592) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31592 /* Tunable: TUNER_PURSUIT_5P_1ST_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 3 && iParam2 <= 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31600) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31600 /* Tunable: TUNER_PURSUIT_3P_1ST_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 1 && iParam2 <= 2)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31604) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31604 /* Tunable: TUNER_PURSUIT_2P_1ST_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 2:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31577) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31577 /* Tunable: TUNER_PURSUIT_2ND_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31593) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31593 /* Tunable: TUNER_PURSUIT_5P_2ND_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 3 && iParam2 <= 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31601) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31601 /* Tunable: TUNER_PURSUIT_3P_2ND_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 1 && iParam2 <= 2)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31605) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31605 /* Tunable: TUNER_PURSUIT_2P_2ND_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 3:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31578) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31578 /* Tunable: TUNER_PURSUIT_3RD_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31594) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31594 /* Tunable: TUNER_PURSUIT_5P_3RD_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 3 && iParam2 <= 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31602) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31602 /* Tunable: TUNER_PURSUIT_3P_3RD_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 4:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31579) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31579 /* Tunable: TUNER_PURSUIT_4TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31595) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31595 /* Tunable: TUNER_PURSUIT_5P_4TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 3 && iParam2 <= 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31603) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31603 /* Tunable: TUNER_PURSUIT_3P_4TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 5:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31580) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31580 /* Tunable: TUNER_PURSUIT_5TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31596) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31596 /* Tunable: TUNER_PURSUIT_5P_5TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 6:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31581) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31581 /* Tunable: TUNER_PURSUIT_6TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31597) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31597 /* Tunable: TUNER_PURSUIT_5P_6TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 7:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31582) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31582 /* Tunable: TUNER_PURSUIT_7TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31598) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31598 /* Tunable: TUNER_PURSUIT_5P_7TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 8:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31583) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31583 /* Tunable: TUNER_PURSUIT_8TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31599) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31599 /* Tunable: TUNER_PURSUIT_5P_8TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 9:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31584) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31584 /* Tunable: TUNER_PURSUIT_9TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 10:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31585) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31585 /* Tunable: TUNER_PURSUIT_10TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 11:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31586) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31586 /* Tunable: TUNER_PURSUIT_11TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 12:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31587) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31587 /* Tunable: TUNER_PURSUIT_12TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 13:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31588) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31588 /* Tunable: TUNER_PURSUIT_13TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 14:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31589) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31589 /* Tunable: TUNER_PURSUIT_14TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 15:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31590) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31590 /* Tunable: TUNER_PURSUIT_15TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 16:
 					if (iParam2 >= 9 && iParam2 <= 16)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31591) * Global_262145.f_31637));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31591 /* Tunable: TUNER_PURSUIT_16TH_PLACE_XP */) * Global_262145.f_31637 /* Tunable: TUNER_PURSUIT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 			}
@@ -120781,48 +120781,48 @@ int func_731(int iParam0, int iParam1, int iParam2)//Position - 0x90995
 				case 1:
 					if (iParam2 == 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31534) * Global_262145.f_31638));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31534 /* Tunable: TUNER_CHECKPOINT_1ST_PLACE_XP */) * Global_262145.f_31638 /* Tunable: TUNER_CHECKPOINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 == 3)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31538) * Global_262145.f_31638));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31538 /* Tunable: TUNER_CHECKPOINT_3P_1ST_PLACE_XP */) * Global_262145.f_31638 /* Tunable: TUNER_CHECKPOINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 == 2)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31541) * Global_262145.f_31638));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31541 /* Tunable: TUNER_CHECKPOINT_2P_1ST_PLACE_XP */) * Global_262145.f_31638 /* Tunable: TUNER_CHECKPOINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 2:
 					if (iParam2 == 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31535) * Global_262145.f_31638));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31535 /* Tunable: TUNER_CHECKPOINT_2ND_PLACE_XP */) * Global_262145.f_31638 /* Tunable: TUNER_CHECKPOINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 == 3)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31539) * Global_262145.f_31638));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31539 /* Tunable: TUNER_CHECKPOINT_3P_2ND_PLACE_XP */) * Global_262145.f_31638 /* Tunable: TUNER_CHECKPOINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 == 2)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31542) * Global_262145.f_31638));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31542 /* Tunable: TUNER_CHECKPOINT_2P_2ND_PLACE_XP */) * Global_262145.f_31638 /* Tunable: TUNER_CHECKPOINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 3:
 					if (iParam2 == 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31536) * Global_262145.f_31638));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31536 /* Tunable: TUNER_CHECKPOINT_3RD_PLACE_XP */) * Global_262145.f_31638 /* Tunable: TUNER_CHECKPOINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 == 3)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31540) * Global_262145.f_31638));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31540 /* Tunable: TUNER_CHECKPOINT_3P_3RD_PLACE_XP */) * Global_262145.f_31638 /* Tunable: TUNER_CHECKPOINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 4:
 					if (iParam2 == 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31537) * Global_262145.f_31638));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31537 /* Tunable: TUNER_CHECKPOINT_4TH_PLACE_XP */) * Global_262145.f_31638 /* Tunable: TUNER_CHECKPOINT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 			}
@@ -120832,45 +120832,45 @@ int func_731(int iParam0, int iParam1, int iParam2)//Position - 0x90995
 			switch (iParam1)
 			{
 				case 1:
-					iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31545) * Global_262145.f_31639));
+					iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31545 /* Tunable: TUNER_HEADTOHEAD_1ST_PLACE_XP */) * Global_262145.f_31639 /* Tunable: TUNER_HEADTOHEAD_RACE_PLACE_XP_MULTIPLIER */));
 					break;
 				
 				case 2:
-					iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31546) * Global_262145.f_31639));
+					iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31546 /* Tunable: TUNER_HEADTOHEAD_2ND_PLACE_XP */) * Global_262145.f_31639 /* Tunable: TUNER_HEADTOHEAD_RACE_PLACE_XP_MULTIPLIER */));
 					break;
 			}
 			break;
 		
 		case 24:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31558) * Global_262145.f_31640));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31558 /* Tunable: TUNER_CARCLUB_VISITS_7_STREAK_XP */) * Global_262145.f_31640 /* Tunable: TUNER_CARCLUB_VISITS_STREAK_XP_MULTIPLIER */));
 			break;
 		
 		case 25:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31559) * Global_262145.f_31640));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31559 /* Tunable: TUNER_CARCLUB_VISITS_14_STREAK_XP */) * Global_262145.f_31640 /* Tunable: TUNER_CARCLUB_VISITS_STREAK_XP_MULTIPLIER */));
 			break;
 		
 		case 26:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31560) * Global_262145.f_31640));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31560 /* Tunable: TUNER_CARCLUB_VISITS_30_STREAK_XP */) * Global_262145.f_31640 /* Tunable: TUNER_CARCLUB_VISITS_STREAK_XP_MULTIPLIER */));
 			break;
 		
 		case 27:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31557) * Global_262145.f_31641));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31557 /* Tunable: TUNER_CARCLUB_TIME_XP */) * Global_262145.f_31641 /* Tunable: TUNER_CARCLUB_TIME_XP_MULTIPLIER */));
 			break;
 		
 		case 28:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31554) * Global_262145.f_31642));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31554 /* Tunable: TUNER_SANDBOX_TIME_XP */) * Global_262145.f_31642 /* Tunable: TUNER_SANDBOX_TIME_XP_MULTIPLIER */));
 			break;
 		
 		case 29:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31652) * Global_262145.f_31654));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31652 /* Tunable: TUNER_CARCLUB_TIME_XP_MERCH */) * Global_262145.f_31654 /* Tunable: TUNER_CARCLUB_TIME_XP_MERCH_MULTIPLIER */));
 			break;
 		
 		case 30:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31653) * Global_262145.f_31655));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31653 /* Tunable: TUNER_SANDBOX_TIME_XP_MERCH */) * Global_262145.f_31655 /* Tunable: TUNER_SANDBOX_TIME_XP_MERCH_MULTIPLIER */));
 			break;
 		
 		case 31:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31561) * Global_262145.f_31643));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_31561 /* Tunable: TUNER_MERCH_PURCHASE_XP */) * Global_262145.f_31643 /* Tunable: TUNER_MERCH_PURCHASE_XP_MULTIPLIER */));
 			break;
 		
 		case 32:
@@ -126564,7 +126564,7 @@ void func_838()//Position - 0x9917A
 	if (!Global_1660993)
 	{
 		func_839(1);
-		Global_1660992 = NETWORK::GET_TIME_OFFSET(NETWORK::GET_NETWORK_TIME(), Global_262145.f_2420);
+		Global_1660992 = NETWORK::GET_TIME_OFFSET(NETWORK::GET_NETWORK_TIME(), Global_262145.f_2420 /* Tunable: PLAYER_HEADSHOP_UPLOAD_TUNABLE */);
 	}
 }
 
@@ -127600,7 +127600,7 @@ int func_884(int iParam0, bool bParam1, bool bParam2, int iParam3)//Position - 0
 		}
 		if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
-			if (iParam0 == 46 && ((Global_262145.f_21612 && func_771(PLAYER::PLAYER_ID())) || (Global_262145.f_21611 && func_779(PLAYER::PLAYER_ID()))))
+			if (iParam0 == 46 && ((Global_262145.f_21612 && func_771(PLAYER::PLAYER_ID())) || (Global_262145.f_21611 /* Tunable: GR_DISABLE_WEAPON_WORKSHOP */ && func_779(PLAYER::PLAYER_ID()))))
 			{
 				return 0;
 			}
@@ -132757,7 +132757,7 @@ void func_1027(var uParam0)//Position - 0xA07F7
 			}
 			if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 			{
-				if (Global_262145.f_2463)
+				if (Global_262145.f_2463 /* Tunable: IS_SALE_ON_IN_HAIR_SHOP */)
 				{
 					GRAPHICS::REQUEST_STREAMED_TEXTURE_DICT("MPShops", false);
 				}
@@ -136766,7 +136766,7 @@ void func_1120(var uParam0, bool bParam1)//Position - 0xA6243
 		func_59();
 		if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
-			if (Global_262145.f_2463)
+			if (Global_262145.f_2463 /* Tunable: IS_SALE_ON_IN_HAIR_SHOP */)
 			{
 				GRAPHICS::SET_STREAMED_TEXTURE_DICT_AS_NO_LONGER_NEEDED("MPShops");
 			}
