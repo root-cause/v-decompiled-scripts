@@ -59276,7 +59276,7 @@ int func_693(int iParam0)//Position - 0x3D7E0
 		case 243:
 			if (!func_1086())
 			{
-				return Global_262145.f_27083;
+				return Global_262145.f_27083 /* Tunable: VC_WORK_RP_REWARD_PARTICIPATION */;
 			}
 			break;
 		
@@ -62892,16 +62892,16 @@ int func_761(int iParam0, bool bParam1, bool bParam2)//Position - 0x4158D
 			{
 				if (func_623(PLAYER::PLAYER_ID()))
 				{
-					return Global_262145.f_27081;
+					return Global_262145.f_27081 /* Tunable: VC_WORK_RP_REWARD_CEO */;
 				}
 				else
 				{
-					return Global_262145.f_27082;
+					return Global_262145.f_27082 /* Tunable: VC_WORK_RP_REWARD_VIP */;
 				}
 			}
 			else if (func_610())
 			{
-				return Global_262145.f_27081;
+				return Global_262145.f_27081 /* Tunable: VC_WORK_RP_REWARD_CEO */;
 			}
 			break;
 		

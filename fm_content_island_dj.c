@@ -41315,9 +41315,9 @@ int func_1252()//Position - 0x3D121
 {
 	if (func_1253(PLAYER::PLAYER_ID()))
 	{
-		return Global_262145.f_26970;
+		return Global_262145.f_26970 /* Tunable: VC_CASINO_CHIP_MAX_BUY_PENTHOUSE */;
 	}
-	return Global_262145.f_26969;
+	return Global_262145.f_26969 /* Tunable: VC_CASINO_CHIP_MAX_BUY */;
 }
 
 int func_1253(int iParam0)//Position - 0x3D145

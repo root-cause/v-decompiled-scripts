@@ -3717,7 +3717,7 @@ void func_121()//Position - 0x3C1D
 			}
 			return;
 		}
-		if (((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && Local_43.f_1 == PLAYER::PLAYER_PED_ID()) && func_129(PLAYER::PLAYER_ID())) && Global_262145.f_27022)
+		if (((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && Local_43.f_1 == PLAYER::PLAYER_PED_ID()) && func_129(PLAYER::PLAYER_ID())) && Global_262145.f_27022 /* Tunable: VC_CASINO_DISABLE_PASSOUT */)
 		{
 			if (Global_44024[iLocal_54 /*5*/].f_3 >= 10)
 			{

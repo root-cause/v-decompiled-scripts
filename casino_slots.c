@@ -5243,9 +5243,9 @@ int func_128()//Position - 0x57A4
 {
 	if (func_67(PLAYER::PLAYER_ID()))
 	{
-		return Global_262145.f_26970;
+		return Global_262145.f_26970 /* Tunable: VC_CASINO_CHIP_MAX_BUY_PENTHOUSE */;
 	}
-	return Global_262145.f_26969;
+	return Global_262145.f_26969 /* Tunable: VC_CASINO_CHIP_MAX_BUY */;
 }
 
 void func_129()//Position - 0x57C8
@@ -7638,7 +7638,7 @@ int func_198(int iParam0)//Position - 0x8494
 		StringCopy(&Var0, "CAS_MG_LOWCHIPS1" /* GXT: You don't have enough Chips to play this Slot machine. Speak to the Cashier ~BLIP_CASINO_CHIPS~ to acquire more. */, 24);
 		bVar1 = true;
 	}
-	else if ((((((((Global_262145.f_26950 || (Global_262145.f_26957 && Local_204[iParam0 /*21*/].f_17 == 1)) || (Global_262145.f_26955 && Local_204[iParam0 /*21*/].f_17 == 2)) || (Global_262145.f_26952 && Local_204[iParam0 /*21*/].f_17 == 3)) || (Global_262145.f_26953 && Local_204[iParam0 /*21*/].f_17 == 4)) || (Global_262145.f_26956 && Local_204[iParam0 /*21*/].f_17 == 5)) || (Global_262145.f_26954 && Local_204[iParam0 /*21*/].f_17 == 6)) || (Global_262145.f_26951 && Local_204[iParam0 /*21*/].f_17 == 7)) || (Global_262145.f_26958 && Local_204[iParam0 /*21*/].f_17 == 8))
+	else if ((((((((Global_262145.f_26950 /* Tunable: VC_CASINO_DISABLE_SLOTS */ || (Global_262145.f_26957 /* Tunable: VC_CASINO_DISABLE_SLOTS_ANGEL */ && Local_204[iParam0 /*21*/].f_17 == 1)) || (Global_262145.f_26955 /* Tunable: VC_CASINO_DISABLE_SLOTS_RAGE */ && Local_204[iParam0 /*21*/].f_17 == 2)) || (Global_262145.f_26952 /* Tunable: VC_CASINO_DISABLE_SLOTS_RSR */ && Local_204[iParam0 /*21*/].f_17 == 3)) || (Global_262145.f_26953 /* Tunable: VC_CASINO_DISABLE_SLOTS_FAME */ && Local_204[iParam0 /*21*/].f_17 == 4)) || (Global_262145.f_26956 /* Tunable: VC_CASINO_DISABLE_SLOTS_DEITY */ && Local_204[iParam0 /*21*/].f_17 == 5)) || (Global_262145.f_26954 /* Tunable: VC_CASINO_DISABLE_SLOTS_TWILIGHT */ && Local_204[iParam0 /*21*/].f_17 == 6)) || (Global_262145.f_26951 /* Tunable: VC_CASINO_DISABLE_SLOTS_DIAMOND */ && Local_204[iParam0 /*21*/].f_17 == 7)) || (Global_262145.f_26958 /* Tunable: VC_CASINO_DISABLE_SLOTS_EVACUATOR */ && Local_204[iParam0 /*21*/].f_17 == 8))
 	{
 		StringCopy(&Var0, "SLOTS_ENTERB" /* GXT: You can't play this Slot machine at this time. */, 24);
 		bVar1 = true;

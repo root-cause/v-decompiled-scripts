@@ -31125,23 +31125,23 @@ void func_608()//Position - 0x287C0
 		switch (Local_183.f_1)
 		{
 			case 4:
-				Local_183.f_16 = func_609(Global_262145.f_18301);
+				Local_183.f_16 = func_609(Global_262145.f_18301 /* Tunable: BIKER_COCAINE_MISSION_DIFFICULTY */);
 				break;
 			
 			case 0:
-				Local_183.f_16 = func_609(Global_262145.f_18298);
+				Local_183.f_16 = func_609(Global_262145.f_18298 /* Tunable: BIKER_DOCUMENTS_MISSION_DIFFICULTY */);
 				break;
 			
 			case 2:
-				Local_183.f_16 = func_609(Global_262145.f_18299);
+				Local_183.f_16 = func_609(Global_262145.f_18299 /* Tunable: BIKER_COUNTERFEIT_CASH_MISSION_DIFFICULTY */);
 				break;
 			
 			case 3:
-				Local_183.f_16 = func_609(Global_262145.f_18300);
+				Local_183.f_16 = func_609(Global_262145.f_18300 /* Tunable: BIKER_METH_MISSION_DIFFICULTY */);
 				break;
 			
 			case 1:
-				Local_183.f_16 = func_609(Global_262145.f_18297);
+				Local_183.f_16 = func_609(Global_262145.f_18297 /* Tunable: BIKER_WEED_MISSION_DIFFICULTY */);
 				break;
 			}
 	}
@@ -118044,7 +118044,7 @@ int func_1100(int iParam0)//Position - 0x8F19A
 		case 243:
 			if (!func_1036())
 			{
-				return Global_262145.f_27083;
+				return Global_262145.f_27083 /* Tunable: VC_WORK_RP_REWARD_PARTICIPATION */;
 			}
 			break;
 		
@@ -121435,16 +121435,16 @@ int func_1152(int iParam0, bool bParam1, bool bParam2)//Position - 0x92BD1
 			{
 				if (func_1030(PLAYER::PLAYER_ID()))
 				{
-					return Global_262145.f_27081;
+					return Global_262145.f_27081 /* Tunable: VC_WORK_RP_REWARD_CEO */;
 				}
 				else
 				{
-					return Global_262145.f_27082;
+					return Global_262145.f_27082 /* Tunable: VC_WORK_RP_REWARD_VIP */;
 				}
 			}
 			else if (func_2022())
 			{
-				return Global_262145.f_27081;
+				return Global_262145.f_27081 /* Tunable: VC_WORK_RP_REWARD_CEO */;
 			}
 			break;
 		

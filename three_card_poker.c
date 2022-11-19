@@ -5484,7 +5484,7 @@ void func_91()//Position - 0xA193
 				Local_152.f_27 = 5000;
 				Local_152.f_28 = 1000;
 			}
-			if (((((((((((((((((((((((!Global_262145.f_26944 && !(Global_262145.f_26946 && !bVar0)) && !(Global_262145.f_26945 && bVar0)) && ((func_362(joaat("rm_GamingFloor_02")) || func_362(joaat("rm_GamingFloor_03"))) || func_419(PLAYER::PLAYER_ID()))) && func_360(PLAYER::PLAYER_PED_ID(), func_361(Local_152.f_18), 1.5f, 1)) && func_355(PLAYER::PLAYER_PED_ID(), func_359(Local_152.f_18), 40f)) && Local_109.f_410[PLAYER::PLAYER_ID() /*5*/] == 0) && !BitTest(Global_1946250.f_4, 2)) && !Global_2667225.f_2681) && Global_2788829 != func_384(Local_152.f_18)) && (Global_2788829 != -1 || func_419(PLAYER::PLAYER_ID()))) && func_354()) && !func_350()) && !CAM::IS_SCREEN_FADED_OUT()) && !CAM::IS_SCREEN_FADING_OUT()) && func_347(PLAYER::PLAYER_PED_ID()) <= 9) && !Global_2667225.f_2681) && !PED::IS_PED_RAGDOLL(PLAYER::PLAYER_PED_ID())) && !func_346()) && !func_345()) && !func_343()) && !Global_2725439.f_12) && Global_1946244 != 33) && !func_342())
+			if (((((((((((((((((((((((!Global_262145.f_26944 /* Tunable: VC_CASINO_DISABLE_POKER */ && !(Global_262145.f_26946 /* Tunable: VC_CASINO_DISABLE_POKER_LOW */ && !bVar0)) && !(Global_262145.f_26945 /* Tunable: VC_CASINO_DISABLE_POKER_HIGH */ && bVar0)) && ((func_362(joaat("rm_GamingFloor_02")) || func_362(joaat("rm_GamingFloor_03"))) || func_419(PLAYER::PLAYER_ID()))) && func_360(PLAYER::PLAYER_PED_ID(), func_361(Local_152.f_18), 1.5f, 1)) && func_355(PLAYER::PLAYER_PED_ID(), func_359(Local_152.f_18), 40f)) && Local_109.f_410[PLAYER::PLAYER_ID() /*5*/] == 0) && !BitTest(Global_1946250.f_4, 2)) && !Global_2667225.f_2681) && Global_2788829 != func_384(Local_152.f_18)) && (Global_2788829 != -1 || func_419(PLAYER::PLAYER_ID()))) && func_354()) && !func_350()) && !CAM::IS_SCREEN_FADED_OUT()) && !CAM::IS_SCREEN_FADING_OUT()) && func_347(PLAYER::PLAYER_PED_ID()) <= 9) && !Global_2667225.f_2681) && !PED::IS_PED_RAGDOLL(PLAYER::PLAYER_PED_ID())) && !func_346()) && !func_345()) && !func_343()) && !Global_2725439.f_12) && Global_1946244 != 33) && !func_342())
 			{
 				func_363(2);
 			}
@@ -8657,9 +8657,9 @@ int func_115()//Position - 0x11010
 {
 	if (func_330(PLAYER::PLAYER_ID()))
 	{
-		return Global_262145.f_26970;
+		return Global_262145.f_26970 /* Tunable: VC_CASINO_CHIP_MAX_BUY_PENTHOUSE */;
 	}
-	return Global_262145.f_26969;
+	return Global_262145.f_26969 /* Tunable: VC_CASINO_CHIP_MAX_BUY */;
 }
 
 void func_116()//Position - 0x11034

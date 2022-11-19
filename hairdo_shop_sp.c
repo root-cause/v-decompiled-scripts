@@ -128889,7 +128889,7 @@ void func_942(var uParam0)//Position - 0x9B9CC
 					{
 						if (iVar15 == iVar14)
 						{
-							if (func_956(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9) && !Global_262145.f_26914)
+							if (func_956(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9) && !Global_262145.f_26914 /* Tunable: VC_PENTHOUSE_DISABLE_BARBER */)
 							{
 								uParam0->f_7 = 1;
 								uParam0->f_8 = 1;
@@ -135919,7 +135919,7 @@ int func_1105(var uParam0, int iParam1)//Position - 0xA52F8
 						{
 							if (Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9 != func_57())
 							{
-								if (func_956(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9) && !Global_262145.f_26914)
+								if (func_956(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9) && !Global_262145.f_26914 /* Tunable: VC_PENTHOUSE_DISABLE_BARBER */)
 								{
 									return 1;
 								}
@@ -136323,7 +136323,7 @@ bool func_1113(int iParam0)//Position - 0xA5A64
 					{
 						if (Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9 != func_57())
 						{
-							if (func_1114(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9) && !Global_262145.f_26914)
+							if (func_1114(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9) && !Global_262145.f_26914 /* Tunable: VC_PENTHOUSE_DISABLE_BARBER */)
 							{
 								return 1;
 							}

@@ -753,7 +753,7 @@ int func_26(bool bParam0, bool bParam1)//Position - 0x872
 		return 1;
 	}
 	bVar2 = func_48(0);
-	if (Global_262145.f_26933)
+	if (Global_262145.f_26933 /* Tunable: VC_CASINO_DISABLE_WHEEL */)
 	{
 		if (bVar2)
 		{
@@ -53540,9 +53540,9 @@ int func_728()//Position - 0x3BD7C
 {
 	if (func_166(PLAYER::PLAYER_ID()))
 	{
-		return Global_262145.f_26970;
+		return Global_262145.f_26970 /* Tunable: VC_CASINO_CHIP_MAX_BUY_PENTHOUSE */;
 	}
-	return Global_262145.f_26969;
+	return Global_262145.f_26969 /* Tunable: VC_CASINO_CHIP_MAX_BUY */;
 }
 
 void func_729()//Position - 0x3BDA0
@@ -59197,7 +59197,7 @@ int func_870(int iParam0)//Position - 0x42018
 	switch (iParam0)
 	{
 		case 0:
-			if (Global_262145.f_26934)
+			if (Global_262145.f_26934 /* Tunable: VC_CASINO_DISABLE_WHEEL_SEGMENT_1 */)
 			{
 				return 0;
 			}
@@ -59208,7 +59208,7 @@ int func_870(int iParam0)//Position - 0x42018
 			break;
 		
 		case 1:
-			if (Global_262145.f_26934)
+			if (Global_262145.f_26934 /* Tunable: VC_CASINO_DISABLE_WHEEL_SEGMENT_1 */)
 			{
 				return 0;
 			}
@@ -59219,7 +59219,7 @@ int func_870(int iParam0)//Position - 0x42018
 			break;
 		
 		case 2:
-			if (Global_262145.f_26934)
+			if (Global_262145.f_26934 /* Tunable: VC_CASINO_DISABLE_WHEEL_SEGMENT_1 */)
 			{
 				return 0;
 			}
@@ -59230,7 +59230,7 @@ int func_870(int iParam0)//Position - 0x42018
 			break;
 		
 		case 3:
-			if (Global_262145.f_26934)
+			if (Global_262145.f_26934 /* Tunable: VC_CASINO_DISABLE_WHEEL_SEGMENT_1 */)
 			{
 				return 0;
 			}
@@ -59241,7 +59241,7 @@ int func_870(int iParam0)//Position - 0x42018
 			break;
 		
 		case 4:
-			if (Global_262145.f_26935)
+			if (Global_262145.f_26935 /* Tunable: VC_CASINO_DISABLE_WHEEL_SEGMENT_2 */)
 			{
 				return 0;
 			}
@@ -59252,7 +59252,7 @@ int func_870(int iParam0)//Position - 0x42018
 			break;
 		
 		case 5:
-			if (Global_262145.f_26935)
+			if (Global_262145.f_26935 /* Tunable: VC_CASINO_DISABLE_WHEEL_SEGMENT_2 */)
 			{
 				return 0;
 			}
@@ -59263,7 +59263,7 @@ int func_870(int iParam0)//Position - 0x42018
 			break;
 		
 		case 6:
-			if (Global_262145.f_26935)
+			if (Global_262145.f_26935 /* Tunable: VC_CASINO_DISABLE_WHEEL_SEGMENT_2 */)
 			{
 				return 0;
 			}
@@ -59274,7 +59274,7 @@ int func_870(int iParam0)//Position - 0x42018
 			break;
 		
 		case 7:
-			if (Global_262145.f_26935)
+			if (Global_262145.f_26935 /* Tunable: VC_CASINO_DISABLE_WHEEL_SEGMENT_2 */)
 			{
 				return 0;
 			}
@@ -59285,7 +59285,7 @@ int func_870(int iParam0)//Position - 0x42018
 			break;
 		
 		case 8:
-			if (Global_262145.f_26935)
+			if (Global_262145.f_26935 /* Tunable: VC_CASINO_DISABLE_WHEEL_SEGMENT_2 */)
 			{
 				return 0;
 			}
@@ -59296,7 +59296,7 @@ int func_870(int iParam0)//Position - 0x42018
 			break;
 		
 		case 9:
-			if (Global_262145.f_26936)
+			if (Global_262145.f_26936 /* Tunable: VC_CASINO_DISABLE_WHEEL_SEGMENT_3 */)
 			{
 				return 0;
 			}
@@ -59307,7 +59307,7 @@ int func_870(int iParam0)//Position - 0x42018
 			break;
 		
 		case 10:
-			if (Global_262145.f_26936)
+			if (Global_262145.f_26936 /* Tunable: VC_CASINO_DISABLE_WHEEL_SEGMENT_3 */)
 			{
 				return 0;
 			}
@@ -59318,7 +59318,7 @@ int func_870(int iParam0)//Position - 0x42018
 			break;
 		
 		case 11:
-			if (Global_262145.f_26936)
+			if (Global_262145.f_26936 /* Tunable: VC_CASINO_DISABLE_WHEEL_SEGMENT_3 */)
 			{
 				return 0;
 			}
@@ -59329,7 +59329,7 @@ int func_870(int iParam0)//Position - 0x42018
 			break;
 		
 		case 12:
-			if (Global_262145.f_26936)
+			if (Global_262145.f_26936 /* Tunable: VC_CASINO_DISABLE_WHEEL_SEGMENT_3 */)
 			{
 				return 0;
 			}
@@ -59340,7 +59340,7 @@ int func_870(int iParam0)//Position - 0x42018
 			break;
 		
 		case 13:
-			if (Global_262145.f_26937)
+			if (Global_262145.f_26937 /* Tunable: VC_CASINO_DISABLE_WHEEL_SEGMENT_4 */)
 			{
 				return 0;
 			}
@@ -59351,7 +59351,7 @@ int func_870(int iParam0)//Position - 0x42018
 			break;
 		
 		case 14:
-			if (Global_262145.f_26937)
+			if (Global_262145.f_26937 /* Tunable: VC_CASINO_DISABLE_WHEEL_SEGMENT_4 */)
 			{
 				return 0;
 			}
@@ -59362,7 +59362,7 @@ int func_870(int iParam0)//Position - 0x42018
 			break;
 		
 		case 15:
-			if (Global_262145.f_26937)
+			if (Global_262145.f_26937 /* Tunable: VC_CASINO_DISABLE_WHEEL_SEGMENT_4 */)
 			{
 				return 0;
 			}
@@ -59373,7 +59373,7 @@ int func_870(int iParam0)//Position - 0x42018
 			break;
 		
 		case 16:
-			if (Global_262145.f_26937)
+			if (Global_262145.f_26937 /* Tunable: VC_CASINO_DISABLE_WHEEL_SEGMENT_4 */)
 			{
 				return 0;
 			}
@@ -59384,7 +59384,7 @@ int func_870(int iParam0)//Position - 0x42018
 			break;
 		
 		case 17:
-			if (Global_262145.f_26938)
+			if (Global_262145.f_26938 /* Tunable: VC_CASINO_DISABLE_WHEEL_SEGMENT_5 */)
 			{
 				return 0;
 			}
@@ -59395,7 +59395,7 @@ int func_870(int iParam0)//Position - 0x42018
 			break;
 		
 		case 18:
-			if (Global_262145.f_26939)
+			if (Global_262145.f_26939 /* Tunable: VC_CASINO_DISABLE_WHEEL_SEGMENT_6 */)
 			{
 				return 0;
 			}
@@ -59406,7 +59406,7 @@ int func_870(int iParam0)//Position - 0x42018
 			break;
 		
 		case 19:
-			if (Global_262145.f_26940)
+			if (Global_262145.f_26940 /* Tunable: VC_CASINO_DISABLE_WHEEL_SEGMENT_7 */)
 			{
 				return 0;
 			}

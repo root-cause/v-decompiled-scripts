@@ -2596,7 +2596,7 @@ int func_65(int iParam0)//Position - 0x234F
 	{
 		return 0;
 	}
-	return Global_262145.f_26915;
+	return Global_262145.f_26915 /* Tunable: VC_PENTHOUSE_DISABLE_HOTTUB */;
 }
 
 bool func_66(int iParam0)//Position - 0x2368
