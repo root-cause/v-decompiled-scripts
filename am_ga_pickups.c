@@ -549,7 +549,7 @@ int func_18(int iParam0)//Position - 0x69A
 
 var func_19()//Position - 0x6E4
 {
-	return Global_262145.f_30925;
+	return Global_262145.f_30925 /* Tunable: 2071833430 */;
 }
 
 int func_20()//Position - 0x6F3

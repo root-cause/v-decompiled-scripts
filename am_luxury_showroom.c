@@ -1383,7 +1383,7 @@ int func_27(int iParam0, int iParam1)//Position - 0xC78
 					return 446;
 				
 				case 128:
-					if (!Global_262145.f_25822)
+					if (!Global_262145.f_25822 /* Tunable: 1975465829 */)
 					{
 						return 447;
 					}
@@ -1394,7 +1394,7 @@ int func_27(int iParam0, int iParam1)//Position - 0xC78
 					return 448;
 				
 				case 130:
-					if (Global_262145.f_25822)
+					if (Global_262145.f_25822 /* Tunable: 1975465829 */)
 					{
 						return 447;
 					}
@@ -7145,7 +7145,7 @@ int func_31(int iParam0)//Position - 0x54DC
 	}
 	else if (iParam0 == joaat("weevil"))
 	{
-		if (Global_262145.f_30146)
+		if (Global_262145.f_30146 /* Tunable: -552682736 */)
 		{
 		}
 		else if (!Global_262145.f_30138 /* Tunable: ENABLE_VEHICLE_WEEVIL */ && iVar1 < Global_262145.f_30121 /* Tunable: LAUNCHPOSIX_WEEVIL */)
@@ -7183,7 +7183,7 @@ int func_31(int iParam0)//Position - 0x54DC
 	}
 	else if (iParam0 == joaat("brioso2"))
 	{
-		if (Global_262145.f_30147)
+		if (Global_262145.f_30147 /* Tunable: 976860524 */)
 		{
 		}
 		else if (!Global_262145.f_30143 /* Tunable: ENABLE_VEHICLE_BRIOSO2 */ && iVar1 < Global_262145.f_30126 /* Tunable: LAUNCHPOSIX_BRIOSO2 */)
@@ -7424,7 +7424,7 @@ int func_31(int iParam0)//Position - 0x54DC
 	}
 	else if (iParam0 == joaat("baller7"))
 	{
-		if (Global_262145.f_31950)
+		if (Global_262145.f_31950 /* Tunable: 991164709 */)
 		{
 		}
 		else if (!Global_262145.f_31886 /* Tunable: ENABLE_VEHICLE_BALLER7 */ && iVar1 < Global_262145.f_31871 /* Tunable: LAUNCHPOSIX_BALLER7 */)
@@ -11121,7 +11121,7 @@ void func_92(int iParam0, char* sParam1, bool bParam2, int iParam3)//Position - 
 
 int func_93()//Position - 0xCAD4
 {
-	if (!Global_262145.f_28866)
+	if (!Global_262145.f_28866 /* Tunable: 1028571554 */)
 	{
 		return 0;
 	}
@@ -38221,7 +38221,7 @@ int func_328(char* sParam0, int iParam1, int iParam2, bool bParam3)//Position - 
 			break;
 		
 		case joaat("SMOD4_WHL_5"):
-			fVar0 = SYSTEM::TO_FLOAT(Global_262145.f_29286);
+			fVar0 = SYSTEM::TO_FLOAT(Global_262145.f_29286 /* Tunable: -2082607376 */);
 			break;
 		
 		case joaat("SMOD4_WHL_6"):
@@ -41950,16 +41950,16 @@ int func_335(int iParam0, int iParam1, int iParam2)//Position - 0x2C9C2
 					return 0;
 				
 				case 2:
-					return Global_262145.f_25335;
+					return Global_262145.f_25335 /* Tunable: -2140343856 */;
 				
 				case 3:
-					return Global_262145.f_25336;
+					return Global_262145.f_25336 /* Tunable: -1167118619 */;
 				
 				case 4:
-					return Global_262145.f_25337;
+					return Global_262145.f_25337 /* Tunable: -132305813 */;
 				
 				case 5:
-					return Global_262145.f_25338;
+					return Global_262145.f_25338 /* Tunable: 1249433112 */;
 				
 				default:
 			}
@@ -41975,16 +41975,16 @@ int func_335(int iParam0, int iParam1, int iParam2)//Position - 0x2C9C2
 					return 0;
 				
 				case 2:
-					return Global_262145.f_25335;
+					return Global_262145.f_25335 /* Tunable: -2140343856 */;
 				
 				case 3:
-					return Global_262145.f_25336;
+					return Global_262145.f_25336 /* Tunable: -1167118619 */;
 				
 				case 4:
-					return Global_262145.f_25337;
+					return Global_262145.f_25337 /* Tunable: -132305813 */;
 				
 				case 5:
-					return Global_262145.f_25338;
+					return Global_262145.f_25338 /* Tunable: 1249433112 */;
 				
 				default:
 			}
@@ -42000,16 +42000,16 @@ int func_335(int iParam0, int iParam1, int iParam2)//Position - 0x2C9C2
 					return 0;
 				
 				case 2:
-					return Global_262145.f_25335;
+					return Global_262145.f_25335 /* Tunable: -2140343856 */;
 				
 				case 3:
-					return Global_262145.f_25336;
+					return Global_262145.f_25336 /* Tunable: -1167118619 */;
 				
 				case 4:
-					return Global_262145.f_25337;
+					return Global_262145.f_25337 /* Tunable: -132305813 */;
 				
 				case 5:
-					return Global_262145.f_25338;
+					return Global_262145.f_25338 /* Tunable: 1249433112 */;
 				
 				default:
 			}
@@ -42025,16 +42025,16 @@ int func_335(int iParam0, int iParam1, int iParam2)//Position - 0x2C9C2
 					return 0;
 				
 				case 2:
-					return Global_262145.f_25335;
+					return Global_262145.f_25335 /* Tunable: -2140343856 */;
 				
 				case 3:
-					return Global_262145.f_25336;
+					return Global_262145.f_25336 /* Tunable: -1167118619 */;
 				
 				case 4:
-					return Global_262145.f_25337;
+					return Global_262145.f_25337 /* Tunable: -132305813 */;
 				
 				case 5:
-					return Global_262145.f_25338;
+					return Global_262145.f_25338 /* Tunable: 1249433112 */;
 				
 				default:
 			}
@@ -42625,16 +42625,16 @@ int func_335(int iParam0, int iParam1, int iParam2)//Position - 0x2C9C2
 					return 0;
 				
 				case 2:
-					return Global_262145.f_28672;
+					return Global_262145.f_28672 /* Tunable: 1609911012 */;
 				
 				case 3:
-					return Global_262145.f_28673;
+					return Global_262145.f_28673 /* Tunable: -68365255 */;
 				
 				case 4:
-					return Global_262145.f_28674;
+					return Global_262145.f_28674 /* Tunable: 1302605276 */;
 				
 				case 5:
-					return Global_262145.f_28675;
+					return Global_262145.f_28675 /* Tunable: 1897527067 */;
 				
 				default:
 			}
@@ -42650,16 +42650,16 @@ int func_335(int iParam0, int iParam1, int iParam2)//Position - 0x2C9C2
 					return 0;
 				
 				case 2:
-					return Global_262145.f_28839;
+					return Global_262145.f_28839 /* Tunable: -115509788 */;
 				
 				case 3:
-					return Global_262145.f_28840;
+					return Global_262145.f_28840 /* Tunable: -1829268 */;
 				
 				case 4:
-					return Global_262145.f_28841;
+					return Global_262145.f_28841 /* Tunable: 1440688049 */;
 				
 				case 5:
-					return Global_262145.f_28842;
+					return Global_262145.f_28842 /* Tunable: 1927470758 */;
 				
 				default:
 			}
@@ -42675,16 +42675,16 @@ int func_335(int iParam0, int iParam1, int iParam2)//Position - 0x2C9C2
 					return 0;
 				
 				case 2:
-					return Global_262145.f_28873;
+					return Global_262145.f_28873 /* Tunable: -544066833 */;
 				
 				case 3:
-					return Global_262145.f_28874;
+					return Global_262145.f_28874 /* Tunable: -2047978964 */;
 				
 				case 4:
-					return Global_262145.f_28875;
+					return Global_262145.f_28875 /* Tunable: 1531249671 */;
 				
 				case 5:
-					return Global_262145.f_28876;
+					return Global_262145.f_28876 /* Tunable: -1453293483 */;
 				
 				default:
 			}
@@ -42700,16 +42700,16 @@ int func_335(int iParam0, int iParam1, int iParam2)//Position - 0x2C9C2
 					return 0;
 				
 				case 2:
-					return Global_262145.f_28877;
+					return Global_262145.f_28877 /* Tunable: 598612790 */;
 				
 				case 3:
-					return Global_262145.f_28878;
+					return Global_262145.f_28878 /* Tunable: 1078233149 */;
 				
 				case 4:
-					return Global_262145.f_28879;
+					return Global_262145.f_28879 /* Tunable: 1551564012 */;
 				
 				case 5:
-					return Global_262145.f_28880;
+					return Global_262145.f_28880 /* Tunable: -693952313 */;
 				
 				default:
 			}
@@ -42725,16 +42725,16 @@ int func_335(int iParam0, int iParam1, int iParam2)//Position - 0x2C9C2
 					return 0;
 				
 				case 2:
-					return Global_262145.f_28568;
+					return Global_262145.f_28568 /* Tunable: 212778777 */;
 				
 				case 3:
-					return Global_262145.f_28569;
+					return Global_262145.f_28569 /* Tunable: 1730590555 */;
 				
 				case 4:
-					return Global_262145.f_28570;
+					return Global_262145.f_28570 /* Tunable: 599275937 */;
 				
 				case 5:
-					return Global_262145.f_28571;
+					return Global_262145.f_28571 /* Tunable: 790883802 */;
 				
 				default:
 			}
@@ -42750,16 +42750,16 @@ int func_335(int iParam0, int iParam1, int iParam2)//Position - 0x2C9C2
 					return 0;
 				
 				case 2:
-					return Global_262145.f_28843;
+					return Global_262145.f_28843 /* Tunable: 1179057810 */;
 				
 				case 3:
-					return Global_262145.f_28844;
+					return Global_262145.f_28844 /* Tunable: -1060787570 */;
 				
 				case 4:
-					return Global_262145.f_28845;
+					return Global_262145.f_28845 /* Tunable: -672936783 */;
 				
 				case 5:
-					return Global_262145.f_28846;
+					return Global_262145.f_28846 /* Tunable: -193315003 */;
 				
 				default:
 			}
@@ -45431,7 +45431,7 @@ int func_351(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 		iVar0 = func_354(iParam0, iParam1, iParam2, sParam3, bParam4, iParam5);
 		if ((func_353() && !bParam4) && iVar0 > 0)
 		{
-			iVar0 = SYSTEM::CEIL((IntToFloat(iVar0) * Global_262145.f_30979));
+			iVar0 = SYSTEM::CEIL((IntToFloat(iVar0) * Global_262145.f_30979 /* Tunable: 428263877 */));
 		}
 		return iVar0;
 	}
@@ -47242,7 +47242,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 	fVar0 = 1f;
 	if (bParam4)
 	{
-		fVar0 = Global_262145.f_26642;
+		fVar0 = Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */;
 	}
 	if ((func_339(Global_1585309, Global_1585310) || func_338()) || func_337())
 	{
@@ -47626,116 +47626,116 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 0:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26684) * func_317(iParam1, 0)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26684 /* Tunable: AW_SALE_PRICE_MODS_NO_ROLL_CAGE */) * func_317(iParam1, 0)));
 						break;
 					
 					case 1:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26685) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26685 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_1 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26685) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26685 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_1 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 2:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26686) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26686 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_2 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26686) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26686 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_2 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 3:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26687) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26687 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_3 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26687) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26687 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_3 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 4:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26688) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26688 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_4 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26688) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26688 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_4 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 5:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26689) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26689 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_5 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26689) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26689 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_5 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 6:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26690) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26690 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_6 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26690) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26690 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_6 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 7:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26691) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26691 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_7 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26691) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26691 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_7 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 8:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26692) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26692 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_8 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26692) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26692 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_8 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 9:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26693) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26693 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_9 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26693) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26693 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_9 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 10:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26694) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26694 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_10 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26694) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26694 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_10 */) * func_317(iParam1, 0)));
 						}
 						break;
 				}
@@ -47799,7 +47799,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						}
 						else if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(3000) * Global_262145.f_26642) * func_393(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(3000) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_393(iParam1)));
 						}
 						else
 						{
@@ -47810,7 +47810,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					case 2:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(5000) * Global_262145.f_26642) * func_393(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(5000) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_393(iParam1)));
 						}
 						else
 						{
@@ -47821,7 +47821,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					case 3:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(8000) * Global_262145.f_26642) * func_393(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(8000) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_393(iParam1)));
 						}
 						else
 						{
@@ -47832,7 +47832,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					case 4:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(9600) * Global_262145.f_26642) * func_393(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(9600) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_393(iParam1)));
 						}
 						else
 						{
@@ -47843,7 +47843,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					case 5:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(11000) * Global_262145.f_26642) * func_393(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(11000) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_393(iParam1)));
 						}
 						else
 						{
@@ -47854,7 +47854,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					case 6:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(11600) * Global_262145.f_26642) * func_393(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(11600) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_393(iParam1)));
 						}
 						else
 						{
@@ -47865,7 +47865,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					case 7:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(12000) * Global_262145.f_26642) * func_393(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(12000) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_393(iParam1)));
 						}
 						else
 						{
@@ -48307,7 +48307,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						}
 						else if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(4600) * Global_262145.f_26642) * func_395(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(4600) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_395(iParam1)));
 						}
 						else
 						{
@@ -48318,7 +48318,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					case 2:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(7400) * Global_262145.f_26642) * func_395(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(7400) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_395(iParam1)));
 						}
 						else
 						{
@@ -48329,7 +48329,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					case 3:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(11700) * Global_262145.f_26642) * func_395(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(11700) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_395(iParam1)));
 						}
 						else
 						{
@@ -48340,7 +48340,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					case 4:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(14500) * Global_262145.f_26642) * func_395(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(14500) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_395(iParam1)));
 						}
 						else
 						{
@@ -48351,7 +48351,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					case 5:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(14700) * Global_262145.f_26642) * func_395(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(14700) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_395(iParam1)));
 						}
 						else
 						{
@@ -48362,7 +48362,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					case 6:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(14900) * Global_262145.f_26642) * func_395(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(14900) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_395(iParam1)));
 						}
 						else
 						{
@@ -48373,7 +48373,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					case 7:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(15100) * Global_262145.f_26642) * func_395(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(15100) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_395(iParam1)));
 						}
 						else
 						{
@@ -48440,7 +48440,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						}
 						else if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(4600) * Global_262145.f_26642) * func_395(1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(4600) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_395(1)));
 						}
 						else
 						{
@@ -48451,7 +48451,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					case 22:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(7400) * Global_262145.f_26642) * func_395(2)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(7400) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_395(2)));
 						}
 						else
 						{
@@ -48462,7 +48462,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					case 23:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(11700) * Global_262145.f_26642) * func_395(3)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(11700) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_395(3)));
 						}
 						else
 						{
@@ -48628,7 +48628,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 21:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24842) * func_392(1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24842 /* Tunable: 224308831 */) * func_392(1)));
 						break;
 					
 					case 22:
@@ -48669,59 +48669,59 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 1:
-						return Global_262145.f_22612;
+						return Global_262145.f_22612 /* Tunable: -488069750 */;
 						break;
 					
 					case 2:
-						return Global_262145.f_22613;
+						return Global_262145.f_22613 /* Tunable: -476186113 */;
 						break;
 					
 					case 29:
-						return Global_262145.f_22618;
+						return Global_262145.f_22618 /* Tunable: 193964753 */;
 						break;
 					
 					case 30:
-						return Global_262145.f_22618;
+						return Global_262145.f_22618 /* Tunable: 193964753 */;
 						break;
 					
 					case 31:
-						return Global_262145.f_22618;
+						return Global_262145.f_22618 /* Tunable: 193964753 */;
 						break;
 					
 					case 32:
-						return Global_262145.f_22618;
+						return Global_262145.f_22618 /* Tunable: 193964753 */;
 						break;
 					
 					case 33:
-						return Global_262145.f_22618;
+						return Global_262145.f_22618 /* Tunable: 193964753 */;
 						break;
 					
 					case 34:
-						return Global_262145.f_22618;
+						return Global_262145.f_22618 /* Tunable: 193964753 */;
 						break;
 					
 					case 35:
-						return Global_262145.f_22618;
+						return Global_262145.f_22618 /* Tunable: 193964753 */;
 						break;
 					
 					case 36:
-						return Global_262145.f_22618;
+						return Global_262145.f_22618 /* Tunable: 193964753 */;
 						break;
 					
 					case 37:
-						return Global_262145.f_22618;
+						return Global_262145.f_22618 /* Tunable: 193964753 */;
 						break;
 					
 					case 38:
-						return Global_262145.f_22618;
+						return Global_262145.f_22618 /* Tunable: 193964753 */;
 						break;
 					
 					case 39:
-						return Global_262145.f_22618;
+						return Global_262145.f_22618 /* Tunable: 193964753 */;
 						break;
 					
 					case 40:
-						return Global_262145.f_22618;
+						return Global_262145.f_22618 /* Tunable: 193964753 */;
 						break;
 				}
 			}
@@ -48730,59 +48730,59 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 1:
-						return Global_262145.f_22624;
+						return Global_262145.f_22624 /* Tunable: -35648369 */;
 						break;
 					
 					case 2:
-						return Global_262145.f_22625;
+						return Global_262145.f_22625 /* Tunable: 1890870117 */;
 						break;
 					
 					case 29:
-						return Global_262145.f_22630;
+						return Global_262145.f_22630 /* Tunable: -2127562694 */;
 						break;
 					
 					case 30:
-						return Global_262145.f_22630;
+						return Global_262145.f_22630 /* Tunable: -2127562694 */;
 						break;
 					
 					case 31:
-						return Global_262145.f_22630;
+						return Global_262145.f_22630 /* Tunable: -2127562694 */;
 						break;
 					
 					case 32:
-						return Global_262145.f_22630;
+						return Global_262145.f_22630 /* Tunable: -2127562694 */;
 						break;
 					
 					case 33:
-						return Global_262145.f_22630;
+						return Global_262145.f_22630 /* Tunable: -2127562694 */;
 						break;
 					
 					case 34:
-						return Global_262145.f_22630;
+						return Global_262145.f_22630 /* Tunable: -2127562694 */;
 						break;
 					
 					case 35:
-						return Global_262145.f_22630;
+						return Global_262145.f_22630 /* Tunable: -2127562694 */;
 						break;
 					
 					case 36:
-						return Global_262145.f_22630;
+						return Global_262145.f_22630 /* Tunable: -2127562694 */;
 						break;
 					
 					case 37:
-						return Global_262145.f_22630;
+						return Global_262145.f_22630 /* Tunable: -2127562694 */;
 						break;
 					
 					case 38:
-						return Global_262145.f_22630;
+						return Global_262145.f_22630 /* Tunable: -2127562694 */;
 						break;
 					
 					case 39:
-						return Global_262145.f_22630;
+						return Global_262145.f_22630 /* Tunable: -2127562694 */;
 						break;
 					
 					case 40:
-						return Global_262145.f_22630;
+						return Global_262145.f_22630 /* Tunable: -2127562694 */;
 						break;
 				}
 			}
@@ -49314,11 +49314,11 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 1:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21426) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21426 /* Tunable: 1642130070 */) * func_391(iParam1)));
 						break;
 					
 					case 2:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21427) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21427 /* Tunable: -1609500137 */) * func_391(iParam1)));
 						break;
 				}
 			}
@@ -49331,15 +49331,15 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 1:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21430) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21430 /* Tunable: 907331558 */) * func_391(iParam1)));
 						break;
 					
 					case 2:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21431) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21431 /* Tunable: 1370788067 */) * func_391(iParam1)));
 						break;
 					
 					case 3:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21432) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21432 /* Tunable: -282467643 */) * func_391(iParam1)));
 						break;
 				}
 			}
@@ -49352,15 +49352,15 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 1:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21438) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21438 /* Tunable: -1137973392 */) * func_391(iParam1)));
 						break;
 					
 					case 2:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21439) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21439 /* Tunable: -454785751 */) * func_391(iParam1)));
 						break;
 					
 					case 3:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21440) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21440 /* Tunable: -1076160159 */) * func_391(iParam1)));
 						break;
 				}
 			}
@@ -49373,15 +49373,15 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 1:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21445) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21445 /* Tunable: 1195033900 */) * func_391(iParam1)));
 						break;
 					
 					case 2:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21446) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21446 /* Tunable: 544233059 */) * func_391(iParam1)));
 						break;
 					
 					case 3:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21447) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21447 /* Tunable: 1048087048 */) * func_391(iParam1)));
 						break;
 				}
 			}
@@ -49394,15 +49394,15 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 1:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21450) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21450 /* Tunable: 685525542 */) * func_391(iParam1)));
 						break;
 					
 					case 2:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21451) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21451 /* Tunable: 772203689 */) * func_391(iParam1)));
 						break;
 					
 					case 3:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21452) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21452 /* Tunable: -1964913287 */) * func_391(iParam1)));
 						break;
 				}
 			}
@@ -49415,7 +49415,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 1:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24865) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24865 /* Tunable: -1980323938 */) * func_391(iParam1)));
 						break;
 					
 					case 2:
@@ -49428,11 +49428,11 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 0:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26699) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26699 /* Tunable: AW_SALE_PRICE_MODS_STOCK_ARMOR */) * func_391(iParam1)));
 						break;
 					
 					case 1:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_31795) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_31795 /* Tunable: -750413626 */) * func_391(iParam1)));
 						break;
 				}
 			}
@@ -49441,7 +49441,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 1:
-						return Global_262145.f_22611;
+						return Global_262145.f_22611 /* Tunable: -2089035711 */;
 						break;
 				}
 			}
@@ -49450,11 +49450,11 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 1:
-						return Global_262145.f_22622;
+						return Global_262145.f_22622 /* Tunable: 1373896141 */;
 						break;
 					
 					case 2:
-						return Global_262145.f_24010;
+						return Global_262145.f_24010 /* Tunable: -867063928 */;
 						break;
 				}
 			}
@@ -49463,19 +49463,19 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 0:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24835) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24835 /* Tunable: 572240409 */) * func_391(iParam1)));
 						break;
 					
 					case 1:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24836) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24836 /* Tunable: 395214874 */) * func_391(iParam1)));
 						break;
 					
 					case 2:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24837) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24837 /* Tunable: 1763537831 */) * func_391(iParam1)));
 						break;
 					
 					case 3:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24838) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24838 /* Tunable: -1250000379 */) * func_391(iParam1)));
 						break;
 					
 					case 4:
@@ -49492,72 +49492,72 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 0:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26699) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26699 /* Tunable: AW_SALE_PRICE_MODS_STOCK_ARMOR */) * func_391(iParam1)));
 						break;
 					
 					case 1:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26700) * Global_262145.f_26642) * func_391(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26700 /* Tunable: AW_SALE_PRICE_MODS_ARMOR_1 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_391(iParam1)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26700) * func_391(iParam1)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26700 /* Tunable: AW_SALE_PRICE_MODS_ARMOR_1 */) * func_391(iParam1)));
 						}
 						break;
 					
 					case 2:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26701) * Global_262145.f_26642) * func_391(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26701 /* Tunable: AW_SALE_PRICE_MODS_ARMOR_2 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_391(iParam1)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26701) * func_391(iParam1)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26701 /* Tunable: AW_SALE_PRICE_MODS_ARMOR_2 */) * func_391(iParam1)));
 						}
 						break;
 					
 					case 3:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26702) * Global_262145.f_26642) * func_391(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26702 /* Tunable: AW_SALE_PRICE_MODS_ARMOR_3 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_391(iParam1)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26702) * func_391(iParam1)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26702 /* Tunable: AW_SALE_PRICE_MODS_ARMOR_3 */) * func_391(iParam1)));
 						}
 						break;
 					
 					case 4:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26703) * Global_262145.f_26642) * func_391(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26703 /* Tunable: AW_SALE_PRICE_MODS_ARMOR_4 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_391(iParam1)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26703) * func_391(iParam1)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26703 /* Tunable: AW_SALE_PRICE_MODS_ARMOR_4 */) * func_391(iParam1)));
 						}
 						break;
 					
 					case 5:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26704) * Global_262145.f_26642) * func_391(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26704 /* Tunable: AW_SALE_PRICE_MODS_ARMOR_5 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_391(iParam1)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26704) * func_391(iParam1)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26704 /* Tunable: AW_SALE_PRICE_MODS_ARMOR_5 */) * func_391(iParam1)));
 						}
 						break;
 					
 					case 6:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26705) * Global_262145.f_26642) * func_391(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26705 /* Tunable: AW_SALE_PRICE_MODS_ARMOR_6 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_391(iParam1)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26705) * func_391(iParam1)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26705 /* Tunable: AW_SALE_PRICE_MODS_ARMOR_6 */) * func_391(iParam1)));
 						}
 						break;
 				}
@@ -49567,87 +49567,87 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 0:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26724) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26724 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_STOCK_LID */) * func_391(iParam1)));
 						break;
 					
 					case 1:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26725) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26725 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_OFFROAD */) * func_391(iParam1)));
 						break;
 					
 					case 2:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26726) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26726 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_OFFROAD_SPOILER */) * func_391(iParam1)));
 						break;
 					
 					case 3:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26727) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26727 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_OFFROAD_NETS */) * func_391(iParam1)));
 						break;
 					
 					case 4:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26728) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26728 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_OFFROAD_COMBINED */) * func_391(iParam1)));
 						break;
 					
 					case 5:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26729) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26729 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_TROPHY_TRUCK */) * func_391(iParam1)));
 						break;
 					
 					case 6:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26730) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26730 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_TROPHY_TRUCK_SPOILER */) * func_391(iParam1)));
 						break;
 					
 					case 7:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26731) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26731 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_TROPHY_TRUCK_NETS */) * func_391(iParam1)));
 						break;
 					
 					case 8:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26732) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26732 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_TROPHY_TRUCK_COMBINED */) * func_391(iParam1)));
 						break;
 					
 					case 9:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26733) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26733 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_GANG_BURRITO */) * func_391(iParam1)));
 						break;
 					
 					case 10:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26734) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26734 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_GANG_BURRITO_SPOILER */) * func_391(iParam1)));
 						break;
 					
 					case 11:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26735) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26735 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_GANG_BURRITO_BULLBAR */) * func_391(iParam1)));
 						break;
 					
 					case 12:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26736) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26736 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_GANG_BURRITO_COMBINED */) * func_391(iParam1)));
 						break;
 					
 					case 13:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26737) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26737 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_BIG_BRAT */) * func_391(iParam1)));
 						break;
 					
 					case 14:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26738) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26738 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_BIG_BRAT_CAGE */) * func_391(iParam1)));
 						break;
 					
 					case 15:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26739) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26739 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_BIG_BRAT_BULLBAR */) * func_391(iParam1)));
 						break;
 					
 					case 16:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26740) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26740 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_BIG_BRAT_COMBINED */) * func_391(iParam1)));
 						break;
 					
 					case 17:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26741) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26741 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_MIDNIGHT_PUMPING */) * func_391(iParam1)));
 						break;
 					
 					case 18:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26742) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26742 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_MIDNIGHT_PUMPING_CAGE */) * func_391(iParam1)));
 						break;
 					
 					case 19:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26743) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26743 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_MIDNIGHT_PUMPING_FLAMES */) * func_391(iParam1)));
 						break;
 					
 					case 20:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26744) * func_391(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26744 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_MIDNIGHT_PUMPING_COMBINED */) * func_391(iParam1)));
 						break;
 				}
 			}
@@ -49895,11 +49895,11 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 1:
-						return Global_262145.f_22619;
+						return Global_262145.f_22619 /* Tunable: -1436692147 */;
 						break;
 					
 					case 2:
-						return Global_262145.f_22620;
+						return Global_262145.f_22620 /* Tunable: -887352848 */;
 						break;
 				}
 			}
@@ -49912,11 +49912,11 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 1:
-						return Global_262145.f_22623;
+						return Global_262145.f_22623 /* Tunable: 351434341 */;
 						break;
 					
 					case 2:
-						return Global_262145.f_22620;
+						return Global_262145.f_22620 /* Tunable: -887352848 */;
 						break;
 				}
 			}
@@ -50161,59 +50161,59 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 1:
-						return Global_262145.f_24863;
+						return Global_262145.f_24863 /* Tunable: 1484828918 */;
 						break;
 					
 					case 2:
-						return Global_262145.f_24862;
+						return Global_262145.f_24862 /* Tunable: -1503409126 */;
 						break;
 					
 					case 29:
-						return Global_262145.f_24864;
+						return Global_262145.f_24864 /* Tunable: 1522530733 */;
 						break;
 					
 					case 30:
-						return Global_262145.f_24864;
+						return Global_262145.f_24864 /* Tunable: 1522530733 */;
 						break;
 					
 					case 31:
-						return Global_262145.f_24864;
+						return Global_262145.f_24864 /* Tunable: 1522530733 */;
 						break;
 					
 					case 32:
-						return Global_262145.f_24864;
+						return Global_262145.f_24864 /* Tunable: 1522530733 */;
 						break;
 					
 					case 33:
-						return Global_262145.f_24864;
+						return Global_262145.f_24864 /* Tunable: 1522530733 */;
 						break;
 					
 					case 34:
-						return Global_262145.f_24864;
+						return Global_262145.f_24864 /* Tunable: 1522530733 */;
 						break;
 					
 					case 35:
-						return Global_262145.f_24864;
+						return Global_262145.f_24864 /* Tunable: 1522530733 */;
 						break;
 					
 					case 36:
-						return Global_262145.f_24864;
+						return Global_262145.f_24864 /* Tunable: 1522530733 */;
 						break;
 					
 					case 37:
-						return Global_262145.f_24864;
+						return Global_262145.f_24864 /* Tunable: 1522530733 */;
 						break;
 					
 					case 38:
-						return Global_262145.f_24864;
+						return Global_262145.f_24864 /* Tunable: 1522530733 */;
 						break;
 					
 					case 39:
-						return Global_262145.f_24864;
+						return Global_262145.f_24864 /* Tunable: 1522530733 */;
 						break;
 					
 					case 40:
-						return Global_262145.f_24864;
+						return Global_262145.f_24864 /* Tunable: 1522530733 */;
 						break;
 				}
 			}
@@ -50318,59 +50318,59 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 1:
-						return Global_262145.f_24863;
+						return Global_262145.f_24863 /* Tunable: 1484828918 */;
 						break;
 					
 					case 2:
-						return Global_262145.f_24862;
+						return Global_262145.f_24862 /* Tunable: -1503409126 */;
 						break;
 					
 					case 29:
-						return Global_262145.f_24864;
+						return Global_262145.f_24864 /* Tunable: 1522530733 */;
 						break;
 					
 					case 30:
-						return Global_262145.f_24864;
+						return Global_262145.f_24864 /* Tunable: 1522530733 */;
 						break;
 					
 					case 31:
-						return Global_262145.f_24864;
+						return Global_262145.f_24864 /* Tunable: 1522530733 */;
 						break;
 					
 					case 32:
-						return Global_262145.f_24864;
+						return Global_262145.f_24864 /* Tunable: 1522530733 */;
 						break;
 					
 					case 33:
-						return Global_262145.f_24864;
+						return Global_262145.f_24864 /* Tunable: 1522530733 */;
 						break;
 					
 					case 34:
-						return Global_262145.f_24864;
+						return Global_262145.f_24864 /* Tunable: 1522530733 */;
 						break;
 					
 					case 35:
-						return Global_262145.f_24864;
+						return Global_262145.f_24864 /* Tunable: 1522530733 */;
 						break;
 					
 					case 36:
-						return Global_262145.f_24864;
+						return Global_262145.f_24864 /* Tunable: 1522530733 */;
 						break;
 					
 					case 37:
-						return Global_262145.f_24864;
+						return Global_262145.f_24864 /* Tunable: 1522530733 */;
 						break;
 					
 					case 38:
-						return Global_262145.f_24864;
+						return Global_262145.f_24864 /* Tunable: 1522530733 */;
 						break;
 					
 					case 39:
-						return Global_262145.f_24864;
+						return Global_262145.f_24864 /* Tunable: 1522530733 */;
 						break;
 					
 					case 40:
-						return Global_262145.f_24864;
+						return Global_262145.f_24864 /* Tunable: 1522530733 */;
 						break;
 				}
 			}
@@ -50642,15 +50642,15 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					break;
 				
 				case 53:
-					return Global_262145.f_26656;
+					return Global_262145.f_26656 /* Tunable: AW_SALE_PRICE_MODS_AIR_HORN_1 */;
 					break;
 				
 				case 54:
-					return Global_262145.f_26657;
+					return Global_262145.f_26657 /* Tunable: AW_SALE_PRICE_MODS_AIR_HORN_2 */;
 					break;
 				
 				case 55:
-					return Global_262145.f_26658;
+					return Global_262145.f_26658 /* Tunable: AW_SALE_PRICE_MODS_AIR_HORN_3 */;
 					break;
 			}
 			break;
@@ -50672,148 +50672,148 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					case 2:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26643) * Global_262145.f_26642) * func_382(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26643 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_WHITE */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_382(iParam1)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26643) * func_382(iParam1)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26643 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_WHITE */) * func_382(iParam1)));
 						}
 						break;
 					
 					case 3:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26644) * Global_262145.f_26642) * func_382(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26644 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_BLUE */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_382(iParam1)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26644) * func_382(iParam1)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26644 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_BLUE */) * func_382(iParam1)));
 						}
 						break;
 					
 					case 4:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26645) * Global_262145.f_26642) * func_382(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26645 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_ELECTIC_BLUE */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_382(iParam1)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26645) * func_382(iParam1)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26645 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_ELECTIC_BLUE */) * func_382(iParam1)));
 						}
 						break;
 					
 					case 5:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26646) * Global_262145.f_26642) * func_382(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26646 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_MINT_GREEN */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_382(iParam1)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26646) * func_382(iParam1)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26646 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_MINT_GREEN */) * func_382(iParam1)));
 						}
 						break;
 					
 					case 6:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26647) * Global_262145.f_26642) * func_382(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26647 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_LIME_GREEN */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_382(iParam1)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26647) * func_382(iParam1)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26647 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_LIME_GREEN */) * func_382(iParam1)));
 						}
 						break;
 					
 					case 7:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26648) * Global_262145.f_26642) * func_382(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26648 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_YELLOW */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_382(iParam1)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26648) * func_382(iParam1)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26648 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_YELLOW */) * func_382(iParam1)));
 						}
 						break;
 					
 					case 8:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26649) * Global_262145.f_26642) * func_382(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26649 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_GOLDEN_SHOWER */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_382(iParam1)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26649) * func_382(iParam1)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26649 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_GOLDEN_SHOWER */) * func_382(iParam1)));
 						}
 						break;
 					
 					case 9:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26650) * Global_262145.f_26642) * func_382(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26650 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_ORANGE */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_382(iParam1)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26650) * func_382(iParam1)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26650 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_ORANGE */) * func_382(iParam1)));
 						}
 						break;
 					
 					case 10:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26651) * Global_262145.f_26642) * func_382(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26651 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_RED */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_382(iParam1)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26651) * func_382(iParam1)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26651 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_RED */) * func_382(iParam1)));
 						}
 						break;
 					
 					case 11:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26652) * Global_262145.f_26642) * func_382(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26652 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_PONY_PINK */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_382(iParam1)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26652) * func_382(iParam1)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26652 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_PONY_PINK */) * func_382(iParam1)));
 						}
 						break;
 					
 					case 12:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26653) * Global_262145.f_26642) * func_382(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26653 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_HOT_PINK */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_382(iParam1)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26653) * func_382(iParam1)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26653 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_HOT_PINK */) * func_382(iParam1)));
 						}
 						break;
 					
 					case 13:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26654) * Global_262145.f_26642) * func_382(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26654 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_PURPLE */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_382(iParam1)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26654) * func_382(iParam1)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26654 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_PURPLE */) * func_382(iParam1)));
 						}
 						break;
 					
 					case 14:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26655) * Global_262145.f_26642) * func_382(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26655 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_BLACKLIGHT */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_382(iParam1)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26655) * func_382(iParam1)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26655 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_BLACKLIGHT */) * func_382(iParam1)));
 						}
 						break;
 					
 					default:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26655) * func_382(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26655 /* Tunable: AW_SALE_PRICE_MODS_VEHICLE_HEADLIGHTS_BLACKLIGHT */) * func_382(iParam1)));
 						break;
 				}
 			}
@@ -51016,11 +51016,11 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 1:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21456) * func_380(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21456 /* Tunable: -1303982095 */) * func_380(iParam1)));
 						break;
 					
 					case 2:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21457) * func_380(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21457 /* Tunable: -131423902 */) * func_380(iParam1)));
 						break;
 				}
 			}
@@ -51029,18 +51029,18 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 0:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26682) * func_380(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26682 /* Tunable: -1209483768 */) * func_380(iParam1)));
 						break;
 					
 					case 1:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26683) * Global_262145.f_26642) * func_380(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26683 /* Tunable: 530512648 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_380(iParam1)));
 							break;
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26683) * func_380(iParam1)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26683 /* Tunable: 530512648 */) * func_380(iParam1)));
 							break;
 						}
 						break;
@@ -51051,18 +51051,18 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 0:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26680) * func_380(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26680 /* Tunable: AW_SALE_PRICE_MODS_NO_GRENADE_LAUNCHER */) * func_380(iParam1)));
 						break;
 					
 					case 1:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26681) * Global_262145.f_26642) * func_380(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26681 /* Tunable: AW_SALE_PRICE_MODS_GRENADE_LAUNCHER_1 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_380(iParam1)));
 							break;
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26681) * func_380(iParam1)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26681 /* Tunable: AW_SALE_PRICE_MODS_GRENADE_LAUNCHER_1 */) * func_380(iParam1)));
 							break;
 						}
 						break;
@@ -51079,11 +51079,11 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 							break;
 						
 						case 1:
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24860) * func_380(iParam1)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24860 /* Tunable: -1535970684 */) * func_380(iParam1)));
 							break;
 						
 						case 2:
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24861) * func_380(iParam1)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24861 /* Tunable: 2022636016 */) * func_380(iParam1)));
 							break;
 					}
 				}
@@ -51148,7 +51148,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 2:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21455) * func_380(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_21455 /* Tunable: -2114768808 */) * func_380(iParam1)));
 						break;
 				}
 			}
@@ -51282,7 +51282,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 1:
-						return Global_262145.f_22621;
+						return Global_262145.f_22621 /* Tunable: 1239036430 */;
 						break;
 				}
 			}
@@ -51295,15 +51295,15 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 1:
-						return Global_262145.f_22608;
+						return Global_262145.f_22608 /* Tunable: -1696568434 */;
 						break;
 					
 					case 2:
-						return Global_262145.f_22609;
+						return Global_262145.f_22609 /* Tunable: 749536131 */;
 						break;
 					
 					case 3:
-						return Global_262145.f_22610;
+						return Global_262145.f_22610 /* Tunable: 134351661 */;
 						break;
 				}
 			}
@@ -51316,15 +51316,15 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 1:
-						return Global_262145.f_23948;
+						return Global_262145.f_23948 /* Tunable: -1696074593 */;
 						break;
 					
 					case 2:
-						return Global_262145.f_23949;
+						return Global_262145.f_23949 /* Tunable: -1970187278 */;
 						break;
 					
 					case 3:
-						return Global_262145.f_23950;
+						return Global_262145.f_23950 /* Tunable: -1726025463 */;
 						break;
 				}
 			}
@@ -51337,7 +51337,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 1:
-						return Global_262145.f_23954;
+						return Global_262145.f_23954 /* Tunable: 260519437 */;
 						break;
 				}
 			}
@@ -51350,15 +51350,15 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 1:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24839) * func_380(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24839 /* Tunable: 323425157 */) * func_380(iParam1)));
 						break;
 					
 					case 2:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24840) * func_380(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24840 /* Tunable: 996988714 */) * func_380(iParam1)));
 						break;
 					
 					case 3:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24841) * func_380(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24841 /* Tunable: -231316923 */) * func_380(iParam1)));
 						break;
 					
 					case 4:
@@ -51379,7 +51379,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 1:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24845) * func_380(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24845 /* Tunable: 1919138577 */) * func_380(iParam1)));
 						break;
 					
 					case 2:
@@ -51414,7 +51414,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						}
 						else if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(700) * Global_262145.f_26642) * func_380(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(700) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_380(iParam1)));
 							break;
 						}
 						else
@@ -51426,7 +51426,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					case 2:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(1150) * Global_262145.f_26642) * func_380(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(1150) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_380(iParam1)));
 						}
 						else
 						{
@@ -51437,7 +51437,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					case 3:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(1600) * Global_262145.f_26642) * func_380(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(1600) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_380(iParam1)));
 						}
 						else
 						{
@@ -51448,7 +51448,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					case 4:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(1950) * Global_262145.f_26642) * func_380(iParam1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(1950) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_380(iParam1)));
 						}
 						else
 						{
@@ -51991,11 +51991,11 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 1:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24846) * func_379(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24846 /* Tunable: 1608011866 */) * func_379(iParam1)));
 						break;
 					
 					case 2:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24847) * func_379(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24847 /* Tunable: 1771489579 */) * func_379(iParam1)));
 						break;
 					
 					case 3:
@@ -52327,15 +52327,15 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 1:
-						return Global_262145.f_23951;
+						return Global_262145.f_23951 /* Tunable: 963810230 */;
 						break;
 					
 					case 2:
-						return Global_262145.f_23952;
+						return Global_262145.f_23952 /* Tunable: 254557994 */;
 						break;
 					
 					case 3:
-						return Global_262145.f_23953;
+						return Global_262145.f_23953 /* Tunable: 469457096 */;
 						break;
 				}
 			}
@@ -52348,7 +52348,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 1:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24844) * func_379(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24844 /* Tunable: -342504567 */) * func_379(iParam1)));
 						break;
 					
 					case 2:
@@ -52471,7 +52471,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 			switch (iParam1)
 			{
 				case 0:
-					return Global_262145.f_31308;
+					return Global_262145.f_31308 /* Tunable: 615116178 */;
 					break;
 				
 				case 2:
@@ -52479,7 +52479,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					break;
 				
 				case 1:
-					return Global_262145.f_31309;
+					return Global_262145.f_31309 /* Tunable: 1749447388 */;
 					break;
 				
 				case 10:
@@ -52827,19 +52827,19 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 1:
-						return Global_262145.f_22616;
+						return Global_262145.f_22616 /* Tunable: 764454487 */;
 						break;
 					
 					case 2:
-						return Global_262145.f_22615;
+						return Global_262145.f_22615 /* Tunable: -2014001243 */;
 						break;
 					
 					case 3:
-						return Global_262145.f_22614;
+						return Global_262145.f_22614 /* Tunable: -912835065 */;
 						break;
 					
 					case 4:
-						return Global_262145.f_22617;
+						return Global_262145.f_22617 /* Tunable: 742471171 */;
 						break;
 				}
 			}
@@ -52849,19 +52849,19 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 1:
-						return Global_262145.f_22628;
+						return Global_262145.f_22628 /* Tunable: -1150010085 */;
 						break;
 					
 					case 2:
-						return Global_262145.f_22627;
+						return Global_262145.f_22627 /* Tunable: 1975667705 */;
 						break;
 					
 					case 3:
-						return Global_262145.f_22626;
+						return Global_262145.f_22626 /* Tunable: 2031286533 */;
 						break;
 					
 					case 4:
-						return Global_262145.f_22629;
+						return Global_262145.f_22629 /* Tunable: -979574552 */;
 						break;
 				}
 			}
@@ -52873,61 +52873,61 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					switch (iParam1)
 					{
 						case 0:
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26659) * func_373(0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26659 /* Tunable: AW_SALE_PRICE_MODS_NO_MINE */) * func_373(0)));
 							break;
 						
 						case 1:
 							if (bParam4)
 							{
-								return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26660) * Global_262145.f_26642) * func_373(1)));
+								return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26660 /* Tunable: AW_SALE_PRICE_MODS_MINE_1 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_373(1)));
 							}
 							else
 							{
-								return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26660) * func_373(1)));
+								return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26660 /* Tunable: AW_SALE_PRICE_MODS_MINE_1 */) * func_373(1)));
 							}
 							break;
 						
 						case 2:
 							if (bParam4)
 							{
-								return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26661) * Global_262145.f_26642) * func_373(2)));
+								return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26661 /* Tunable: AW_SALE_PRICE_MODS_MINE_2 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_373(2)));
 							}
 							else
 							{
-								return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26661) * func_373(2)));
+								return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26661 /* Tunable: AW_SALE_PRICE_MODS_MINE_2 */) * func_373(2)));
 							}
 							break;
 						
 						case 3:
 							if (bParam4)
 							{
-								return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26662) * Global_262145.f_26642) * func_373(3)));
+								return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26662 /* Tunable: AW_SALE_PRICE_MODS_MINE_3 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_373(3)));
 							}
 							else
 							{
-								return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26662) * func_373(3)));
+								return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26662 /* Tunable: AW_SALE_PRICE_MODS_MINE_3 */) * func_373(3)));
 							}
 							break;
 						
 						case 4:
 							if (bParam4)
 							{
-								return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26663) * Global_262145.f_26642) * func_373(4)));
+								return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26663 /* Tunable: AW_SALE_PRICE_MODS_MINE_4 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_373(4)));
 							}
 							else
 							{
-								return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26663) * func_373(4)));
+								return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26663 /* Tunable: AW_SALE_PRICE_MODS_MINE_4 */) * func_373(4)));
 							}
 							break;
 						
 						case 5:
 							if (bParam4)
 							{
-								return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26664) * Global_262145.f_26642) * func_373(5)));
+								return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26664 /* Tunable: AW_SALE_PRICE_MODS_MINE_5 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_373(5)));
 							}
 							else
 							{
-								return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26664) * func_373(5)));
+								return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26664 /* Tunable: AW_SALE_PRICE_MODS_MINE_5 */) * func_373(5)));
 							}
 							break;
 					}
@@ -53028,15 +53028,15 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 0:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26717) * func_373(0)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26717 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_NO_MINE */) * func_373(0)));
 						break;
 					
 					case 1:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26718) * func_373(1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26718 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_KINETIC_MINES */) * func_373(1)));
 						break;
 					
 					case 2:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26719) * func_373(2)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26719 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_EMP_MINES */) * func_373(2)));
 						break;
 				}
 			}
@@ -53409,7 +53409,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 22:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24843) * func_373(1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24843 /* Tunable: -668380586 */) * func_373(1)));
 						break;
 					
 					case 23:
@@ -53598,7 +53598,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 1:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24843) * func_373(1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_24843 /* Tunable: -668380586 */) * func_373(1)));
 						break;
 					
 					case 2:
@@ -53623,11 +53623,11 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 0:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26715) * func_372(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26715 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_NO_BOMB */) * func_372(iParam1)));
 						break;
 					
 					case 1:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26716) * func_372(iParam1)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26716 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_REMOTE_BOMB */) * func_372(iParam1)));
 						break;
 				}
 			}
@@ -53754,59 +53754,59 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 1:
-						return Global_262145.f_22612;
+						return Global_262145.f_22612 /* Tunable: -488069750 */;
 						break;
 					
 					case 2:
-						return Global_262145.f_22613;
+						return Global_262145.f_22613 /* Tunable: -476186113 */;
 						break;
 					
 					case 29:
-						return Global_262145.f_22618;
+						return Global_262145.f_22618 /* Tunable: 193964753 */;
 						break;
 					
 					case 30:
-						return Global_262145.f_22618;
+						return Global_262145.f_22618 /* Tunable: 193964753 */;
 						break;
 					
 					case 31:
-						return Global_262145.f_22618;
+						return Global_262145.f_22618 /* Tunable: 193964753 */;
 						break;
 					
 					case 32:
-						return Global_262145.f_22618;
+						return Global_262145.f_22618 /* Tunable: 193964753 */;
 						break;
 					
 					case 33:
-						return Global_262145.f_22618;
+						return Global_262145.f_22618 /* Tunable: 193964753 */;
 						break;
 					
 					case 34:
-						return Global_262145.f_22618;
+						return Global_262145.f_22618 /* Tunable: 193964753 */;
 						break;
 					
 					case 35:
-						return Global_262145.f_22618;
+						return Global_262145.f_22618 /* Tunable: 193964753 */;
 						break;
 					
 					case 36:
-						return Global_262145.f_22618;
+						return Global_262145.f_22618 /* Tunable: 193964753 */;
 						break;
 					
 					case 37:
-						return Global_262145.f_22618;
+						return Global_262145.f_22618 /* Tunable: 193964753 */;
 						break;
 					
 					case 38:
-						return Global_262145.f_22618;
+						return Global_262145.f_22618 /* Tunable: 193964753 */;
 						break;
 					
 					case 39:
-						return Global_262145.f_22618;
+						return Global_262145.f_22618 /* Tunable: 193964753 */;
 						break;
 					
 					case 40:
-						return Global_262145.f_22618;
+						return Global_262145.f_22618 /* Tunable: 193964753 */;
 						break;
 				}
 			}
@@ -53815,59 +53815,59 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 1:
-						return Global_262145.f_22624;
+						return Global_262145.f_22624 /* Tunable: -35648369 */;
 						break;
 					
 					case 2:
-						return Global_262145.f_22625;
+						return Global_262145.f_22625 /* Tunable: 1890870117 */;
 						break;
 					
 					case 29:
-						return Global_262145.f_22630;
+						return Global_262145.f_22630 /* Tunable: -2127562694 */;
 						break;
 					
 					case 30:
-						return Global_262145.f_22630;
+						return Global_262145.f_22630 /* Tunable: -2127562694 */;
 						break;
 					
 					case 31:
-						return Global_262145.f_22630;
+						return Global_262145.f_22630 /* Tunable: -2127562694 */;
 						break;
 					
 					case 32:
-						return Global_262145.f_22630;
+						return Global_262145.f_22630 /* Tunable: -2127562694 */;
 						break;
 					
 					case 33:
-						return Global_262145.f_22630;
+						return Global_262145.f_22630 /* Tunable: -2127562694 */;
 						break;
 					
 					case 34:
-						return Global_262145.f_22630;
+						return Global_262145.f_22630 /* Tunable: -2127562694 */;
 						break;
 					
 					case 35:
-						return Global_262145.f_22630;
+						return Global_262145.f_22630 /* Tunable: -2127562694 */;
 						break;
 					
 					case 36:
-						return Global_262145.f_22630;
+						return Global_262145.f_22630 /* Tunable: -2127562694 */;
 						break;
 					
 					case 37:
-						return Global_262145.f_22630;
+						return Global_262145.f_22630 /* Tunable: -2127562694 */;
 						break;
 					
 					case 38:
-						return Global_262145.f_22630;
+						return Global_262145.f_22630 /* Tunable: -2127562694 */;
 						break;
 					
 					case 39:
-						return Global_262145.f_22630;
+						return Global_262145.f_22630 /* Tunable: -2127562694 */;
 						break;
 					
 					case 40:
-						return Global_262145.f_22630;
+						return Global_262145.f_22630 /* Tunable: -2127562694 */;
 						break;
 				}
 			}
@@ -54023,7 +54023,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						}
 						else if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(4600) * Global_262145.f_26642) * func_392(1)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(4600) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_392(1)));
 						}
 						else
 						{
@@ -54034,7 +54034,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					case 2:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(7400) * Global_262145.f_26642) * func_392(2)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(7400) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_392(2)));
 						}
 						else
 						{
@@ -54045,7 +54045,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					case 3:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(11700) * Global_262145.f_26642) * func_392(3)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(11700) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_392(3)));
 						}
 						else
 						{
@@ -54056,7 +54056,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					case 4:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(14500) * Global_262145.f_26642) * func_392(4)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(14500) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_392(4)));
 						}
 						else
 						{
@@ -54067,7 +54067,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					case 5:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(14700) * Global_262145.f_26642) * func_392(5)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(14700) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_392(5)));
 						}
 						else
 						{
@@ -54078,7 +54078,7 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					case 6:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(14900) * Global_262145.f_26642) * func_392(6)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(14900) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_392(6)));
 						}
 						else
 						{
@@ -54257,83 +54257,83 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 0:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26665) * func_317(iParam1, 0)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26665 /* Tunable: AW_SALE_PRICE_MODS_NO_RAM */) * func_317(iParam1, 0)));
 						break;
 					
 					case 1:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26666) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26666 /* Tunable: AW_SALE_PRICE_MODS_RAM_1 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26666) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26666 /* Tunable: AW_SALE_PRICE_MODS_RAM_1 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 2:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26667) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26667 /* Tunable: AW_SALE_PRICE_MODS_RAM_2 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26667) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26667 /* Tunable: AW_SALE_PRICE_MODS_RAM_2 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 3:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26668) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26668 /* Tunable: AW_SALE_PRICE_MODS_RAM_3 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26668) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26668 /* Tunable: AW_SALE_PRICE_MODS_RAM_3 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 4:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26669) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26669 /* Tunable: AW_SALE_PRICE_MODS_RAM_4 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26669) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26669 /* Tunable: AW_SALE_PRICE_MODS_RAM_4 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 5:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26670) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26670 /* Tunable: AW_SALE_PRICE_MODS_RAM_5 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26670) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26670 /* Tunable: AW_SALE_PRICE_MODS_RAM_5 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 6:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26671) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26671 /* Tunable: AW_SALE_PRICE_MODS_RAM_6 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26671) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26671 /* Tunable: AW_SALE_PRICE_MODS_RAM_6 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 7:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26672) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26672 /* Tunable: AW_SALE_PRICE_MODS_RAM_7 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26672) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26672 /* Tunable: AW_SALE_PRICE_MODS_RAM_7 */) * func_317(iParam1, 0)));
 						}
 						break;
 				}
@@ -54350,13 +54350,13 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 0:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26673) * func_317(iParam1, 0)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26673 /* Tunable: AW_SALE_PRICE_MODS_NO_BLADES */) * func_317(iParam1, 0)));
 						break;
 					
 					case 1:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26674) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26674 /* Tunable: AW_SALE_PRICE_MODS_BLADES_1 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
@@ -54364,14 +54364,14 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 							{
 								return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_31997 /* Tunable: FIXER_MODS_REMOTE_CONTROL_UNIT */) * func_317(iParam1, 0)));
 							}
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26674) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26674 /* Tunable: AW_SALE_PRICE_MODS_BLADES_1 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 2:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26675) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26675 /* Tunable: AW_SALE_PRICE_MODS_BLADES_2 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
@@ -54379,18 +54379,18 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 							{
 								return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_31996 /* Tunable: FIXER_MODS_MISSILE_LOCKON_JAMMER */) * func_317(iParam1, 0)));
 							}
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26675) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26675 /* Tunable: AW_SALE_PRICE_MODS_BLADES_2 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 3:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26676) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26676 /* Tunable: AW_SALE_PRICE_MODS_BLADES_3 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26676) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26676 /* Tunable: AW_SALE_PRICE_MODS_BLADES_3 */) * func_317(iParam1, 0)));
 						}
 						break;
 				}
@@ -54407,28 +54407,28 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 0:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26677) * func_317(iParam1, 0)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26677 /* Tunable: AW_SALE_PRICE_MODS_NO_GUNS */) * func_317(iParam1, 0)));
 						break;
 					
 					case 1:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26678) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26678 /* Tunable: AW_SALE_PRICE_MODS_GUNS_1 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26678) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26678 /* Tunable: AW_SALE_PRICE_MODS_GUNS_1 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 2:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26679) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26679 /* Tunable: AW_SALE_PRICE_MODS_GUNS_2 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26679) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26679 /* Tunable: AW_SALE_PRICE_MODS_GUNS_2 */) * func_317(iParam1, 0)));
 						}
 						break;
 				}
@@ -54445,39 +54445,39 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 0:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26695) * func_317(iParam1, 0)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26695 /* Tunable: AW_SALE_PRICE_MODS_NO_SPIKES */) * func_317(iParam1, 0)));
 						break;
 					
 					case 1:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26696) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26696 /* Tunable: AW_SALE_PRICE_MODS_SPIKES_1 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26696) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26696 /* Tunable: AW_SALE_PRICE_MODS_SPIKES_1 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 2:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26697) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26697 /* Tunable: AW_SALE_PRICE_MODS_SPIKES_2 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26697) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26697 /* Tunable: AW_SALE_PRICE_MODS_SPIKES_2 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 3:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26698) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26698 /* Tunable: AW_SALE_PRICE_MODS_SPIKES_3 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26698) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26698 /* Tunable: AW_SALE_PRICE_MODS_SPIKES_3 */) * func_317(iParam1, 0)));
 						}
 						break;
 				}
@@ -54494,50 +54494,50 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 0:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26710) * func_317(iParam1, 0)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26710 /* Tunable: AW_SALE_PRICE_MODS_NO_BOOST */) * func_317(iParam1, 0)));
 						break;
 					
 					case 1:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26711) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26711 /* Tunable: AW_SALE_PRICE_MODS_BOOST_UPGRADE_20_PERCENT */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26711) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26711 /* Tunable: AW_SALE_PRICE_MODS_BOOST_UPGRADE_20_PERCENT */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 2:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26712) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26712 /* Tunable: AW_SALE_PRICE_MODS_BOOST_UPGRADE_60_PERCENT */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26712) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26712 /* Tunable: AW_SALE_PRICE_MODS_BOOST_UPGRADE_60_PERCENT */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 3:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26713) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26713 /* Tunable: AW_SALE_PRICE_MODS_BOOST_UPGRADE_100_PERCENT */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26713) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26713 /* Tunable: AW_SALE_PRICE_MODS_BOOST_UPGRADE_100_PERCENT */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 4:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26714) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26714 /* Tunable: AW_SALE_PRICE_MODS_SHUNT_BOOST */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26714) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26714 /* Tunable: AW_SALE_PRICE_MODS_SHUNT_BOOST */) * func_317(iParam1, 0)));
 						}
 						break;
 				}
@@ -54554,39 +54554,39 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 0:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26706) * func_317(iParam1, 0)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26706 /* Tunable: AW_SALE_PRICE_MODS_NO_JUMP */) * func_317(iParam1, 0)));
 						break;
 					
 					case 1:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26707) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26707 /* Tunable: AW_SALE_PRICE_MODS_JUMP_UPGRADE_20_PERCENT */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26707) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26707 /* Tunable: AW_SALE_PRICE_MODS_JUMP_UPGRADE_20_PERCENT */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 2:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26708) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26708 /* Tunable: AW_SALE_PRICE_MODS_JUMP_UPGRADE_60_PERCENT */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26708) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26708 /* Tunable: AW_SALE_PRICE_MODS_JUMP_UPGRADE_60_PERCENT */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 3:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26709) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26709 /* Tunable: AW_SALE_PRICE_MODS_JUMP_UPGRADE_100_PERCENT */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26709) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26709 /* Tunable: AW_SALE_PRICE_MODS_JUMP_UPGRADE_100_PERCENT */) * func_317(iParam1, 0)));
 						}
 						break;
 				}
@@ -54596,19 +54596,19 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 0:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26720) * func_317(iParam1, 0)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26720 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_NO_JUMP */) * func_317(iParam1, 0)));
 						break;
 					
 					case 1:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26721) * func_317(iParam1, 0)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26721 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_JUMP_UPGRADE_20_PERCENT */) * func_317(iParam1, 0)));
 						break;
 					
 					case 2:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26722) * func_317(iParam1, 0)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26722 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_JUMP_UPGRADE_60_PERCENT */) * func_317(iParam1, 0)));
 						break;
 					
 					case 3:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26723) * func_317(iParam1, 0)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26723 /* Tunable: AW_SALE_PRICE_MODS_RC_BANDITO_JUMP_UPGRADE_100_PERCENT */) * func_317(iParam1, 0)));
 						break;
 				}
 			}
@@ -54624,116 +54624,116 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 0:
-						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26684) * func_317(iParam1, 0)));
+						return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26684 /* Tunable: AW_SALE_PRICE_MODS_NO_ROLL_CAGE */) * func_317(iParam1, 0)));
 						break;
 					
 					case 1:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26685) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26685 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_1 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26685) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26685 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_1 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 2:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26686) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26686 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_2 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26686) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26686 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_2 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 3:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26687) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26687 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_3 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26687) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26687 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_3 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 4:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26688) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26688 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_4 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26688) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26688 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_4 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 5:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26689) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26689 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_5 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26689) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26689 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_5 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 6:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26690) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26690 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_6 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26690) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26690 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_6 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 7:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26691) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26691 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_7 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26691) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26691 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_7 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 8:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26692) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26692 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_8 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26692) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26692 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_8 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 9:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26693) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26693 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_9 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26693) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26693 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_9 */) * func_317(iParam1, 0)));
 						}
 						break;
 					
 					case 10:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26694) * Global_262145.f_26642) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_26694 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_10 */) * Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_317(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26694) * func_317(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26694 /* Tunable: AW_SALE_PRICE_MODS_ROLL_CAGE_10 */) * func_317(iParam1, 0)));
 						}
 						break;
 				}
@@ -55103,19 +55103,19 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 							break;
 						
 						case 1:
-							return Global_262145.f_21771;
+							return Global_262145.f_21771 /* Tunable: 1492176427 */;
 							break;
 						
 						case 2:
-							return Global_262145.f_21772;
+							return Global_262145.f_21772 /* Tunable: -1819896205 */;
 							break;
 						
 						case 3:
-							return Global_262145.f_21773;
+							return Global_262145.f_21773 /* Tunable: 1725371650 */;
 							break;
 						
 						case 4:
-							return Global_262145.f_21774;
+							return Global_262145.f_21774 /* Tunable: -1208871062 */;
 							break;
 					}
 					break;
@@ -55546,11 +55546,11 @@ int func_355(int iParam0)//Position - 0x41930
 			break;
 		
 		case joaat("technical3"):
-			return Global_262145.f_21415;
+			return Global_262145.f_21415 /* Tunable: 424298680 */;
 			break;
 		
 		case joaat("insurgent3"):
-			return Global_262145.f_21414;
+			return Global_262145.f_21414 /* Tunable: 2123626407 */;
 			break;
 		
 		case joaat("bruiser"):
@@ -57191,7 +57191,7 @@ int func_371(int iParam0, bool bParam1)//Position - 0x433B8
 	iVar1 = 1;
 	if (bParam1)
 	{
-		iVar1 = SYSTEM::FLOOR(Global_262145.f_26642);
+		iVar1 = SYSTEM::FLOOR(Global_262145.f_26642 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */);
 	}
 	switch (iVar0)
 	{
@@ -57677,71 +57677,71 @@ int func_371(int iParam0, bool bParam1)//Position - 0x433B8
 			switch (iParam0)
 			{
 				case 69:
-					return Global_262145.f_20141;
+					return Global_262145.f_20141 /* Tunable: 1445507172 */;
 					break;
 				
 				case 70:
-					return Global_262145.f_20142;
+					return Global_262145.f_20142 /* Tunable: -856146197 */;
 					break;
 				
 				case 71:
-					return Global_262145.f_20143;
+					return Global_262145.f_20143 /* Tunable: 1037397158 */;
 					break;
 				
 				case 72:
-					return Global_262145.f_20144;
+					return Global_262145.f_20144 /* Tunable: -1432880770 */;
 					break;
 				
 				case 73:
-					return Global_262145.f_20145;
+					return Global_262145.f_20145 /* Tunable: 1010197085 */;
 					break;
 				
 				case 74:
-					return Global_262145.f_20146;
+					return Global_262145.f_20146 /* Tunable: 816086112 */;
 					break;
 				
 				case 76:
-					return Global_262145.f_20148;
+					return Global_262145.f_20148 /* Tunable: -1154555129 */;
 					break;
 				
 				case 77:
-					return Global_262145.f_20149;
+					return Global_262145.f_20149 /* Tunable: -1410017933 */;
 					break;
 				
 				case 78:
-					return Global_262145.f_20150;
+					return Global_262145.f_20150 /* Tunable: 11244684 */;
 					break;
 				
 				case 79:
-					return Global_262145.f_20154;
+					return Global_262145.f_20154 /* Tunable: -1464553306 */;
 					break;
 				
 				case 80:
-					return Global_262145.f_20152;
+					return Global_262145.f_20152 /* Tunable: 1582483569 */;
 					break;
 				
 				case 81:
-					return Global_262145.f_20153;
+					return Global_262145.f_20153 /* Tunable: -239193808 */;
 					break;
 				
 				case 82:
-					return Global_262145.f_20151;
+					return Global_262145.f_20151 /* Tunable: 1823632455 */;
 					break;
 				
 				case 83:
-					return Global_262145.f_20155;
+					return Global_262145.f_20155 /* Tunable: -1821251827 */;
 					break;
 				
 				case 84:
-					return Global_262145.f_20156;
+					return Global_262145.f_20156 /* Tunable: 370354328 */;
 					break;
 				
 				case 85:
-					return Global_262145.f_20157;
+					return Global_262145.f_20157 /* Tunable: -2108112334 */;
 					break;
 				
 				case 75:
-					return Global_262145.f_20147;
+					return Global_262145.f_20147 /* Tunable: -1027037427 */;
 					break;
 			}
 			break;
@@ -57761,97 +57761,97 @@ int func_371(int iParam0, bool bParam1)//Position - 0x433B8
 			switch (iParam0)
 			{
 				case 62:
-					return Global_262145.f_20112;
+					return Global_262145.f_20112 /* Tunable: -684642722 */;
 					break;
 				
 				case 63:
-					return Global_262145.f_20113;
+					return Global_262145.f_20113 /* Tunable: 1925867620 */;
 					break;
 				
 				case 91:
 				case 64:
-					return Global_262145.f_20114;
+					return Global_262145.f_20114 /* Tunable: 339608329 */;
 					break;
 				
 				case 66:
-					return Global_262145.f_20115;
+					return Global_262145.f_20115 /* Tunable: -596774436 */;
 					break;
 				
 				case 90:
 				case 67:
-					return Global_262145.f_20116;
+					return Global_262145.f_20116 /* Tunable: 1515550924 */;
 					break;
 				
 				case 68:
-					return Global_262145.f_20117;
+					return Global_262145.f_20117 /* Tunable: -1793961142 */;
 					break;
 				
 				case 69:
-					return Global_262145.f_20118;
+					return Global_262145.f_20118 /* Tunable: 1103095492 */;
 					break;
 				
 				case 70:
-					return Global_262145.f_20119;
+					return Global_262145.f_20119 /* Tunable: 1080765076 */;
 					break;
 				
 				case 71:
-					return Global_262145.f_20120;
+					return Global_262145.f_20120 /* Tunable: -1372931791 */;
 					break;
 				
 				case 72:
-					return Global_262145.f_20121;
+					return Global_262145.f_20121 /* Tunable: -1077131506 */;
 					break;
 				
 				case 73:
-					return Global_262145.f_20122;
+					return Global_262145.f_20122 /* Tunable: -1928327745 */;
 					break;
 				
 				case 74:
-					return Global_262145.f_20123;
+					return Global_262145.f_20123 /* Tunable: 484439205 */;
 					break;
 				
 				case 76:
-					return Global_262145.f_20125;
+					return Global_262145.f_20125 /* Tunable: -48548099 */;
 					break;
 				
 				case 77:
-					return Global_262145.f_20126;
+					return Global_262145.f_20126 /* Tunable: 761797683 */;
 					break;
 				
 				case 78:
-					return Global_262145.f_20127;
+					return Global_262145.f_20127 /* Tunable: -1663585280 */;
 					break;
 				
 				case 79:
-					return Global_262145.f_20131;
+					return Global_262145.f_20131 /* Tunable: 1085204362 */;
 					break;
 				
 				case 80:
-					return Global_262145.f_20129;
+					return Global_262145.f_20129 /* Tunable: -229767553 */;
 					break;
 				
 				case 81:
-					return Global_262145.f_20130;
+					return Global_262145.f_20130 /* Tunable: -1543635993 */;
 					break;
 				
 				case 82:
-					return Global_262145.f_20128;
+					return Global_262145.f_20128 /* Tunable: -742153899 */;
 					break;
 				
 				case 83:
-					return Global_262145.f_20132;
+					return Global_262145.f_20132 /* Tunable: -1601135106 */;
 					break;
 				
 				case 84:
-					return Global_262145.f_20133;
+					return Global_262145.f_20133 /* Tunable: -480527199 */;
 					break;
 				
 				case 85:
-					return Global_262145.f_20134;
+					return Global_262145.f_20134 /* Tunable: 402681162 */;
 					break;
 				
 				case 75:
-					return Global_262145.f_20124;
+					return Global_262145.f_20124 /* Tunable: -1958729104 */;
 					break;
 			}
 			break;
@@ -57863,97 +57863,97 @@ int func_371(int iParam0, bool bParam1)//Position - 0x433B8
 			switch (iParam0)
 			{
 				case 62:
-					return Global_262145.f_20158;
+					return Global_262145.f_20158 /* Tunable: -452660830 */;
 					break;
 				
 				case 63:
-					return Global_262145.f_20159;
+					return Global_262145.f_20159 /* Tunable: -1040254992 */;
 					break;
 				
 				case 91:
 				case 64:
-					return Global_262145.f_20160;
+					return Global_262145.f_20160 /* Tunable: 987257936 */;
 					break;
 				
 				case 66:
-					return Global_262145.f_20161;
+					return Global_262145.f_20161 /* Tunable: 1002485689 */;
 					break;
 				
 				case 90:
 				case 67:
-					return Global_262145.f_20162;
+					return Global_262145.f_20162 /* Tunable: 805748362 */;
 					break;
 				
 				case 68:
-					return Global_262145.f_20163;
+					return Global_262145.f_20163 /* Tunable: 1847886015 */;
 					break;
 				
 				case 69:
-					return Global_262145.f_20164;
+					return Global_262145.f_20164 /* Tunable: 1494198675 */;
 					break;
 				
 				case 70:
-					return Global_262145.f_20165;
+					return Global_262145.f_20165 /* Tunable: 1782291700 */;
 					break;
 				
 				case 71:
-					return Global_262145.f_20166;
+					return Global_262145.f_20166 /* Tunable: -2106845075 */;
 					break;
 				
 				case 72:
-					return Global_262145.f_20167;
+					return Global_262145.f_20167 /* Tunable: -2110894619 */;
 					break;
 				
 				case 73:
-					return Global_262145.f_20168;
+					return Global_262145.f_20168 /* Tunable: 1336779007 */;
 					break;
 				
 				case 74:
-					return Global_262145.f_20169;
+					return Global_262145.f_20169 /* Tunable: -1613649786 */;
 					break;
 				
 				case 76:
-					return Global_262145.f_20171;
+					return Global_262145.f_20171 /* Tunable: 646141340 */;
 					break;
 				
 				case 77:
-					return Global_262145.f_20172;
+					return Global_262145.f_20172 /* Tunable: 1792860035 */;
 					break;
 				
 				case 78:
-					return Global_262145.f_20173;
+					return Global_262145.f_20173 /* Tunable: 1881595650 */;
 					break;
 				
 				case 79:
-					return Global_262145.f_20177;
+					return Global_262145.f_20177 /* Tunable: 1960776133 */;
 					break;
 				
 				case 80:
-					return Global_262145.f_20175;
+					return Global_262145.f_20175 /* Tunable: 461703080 */;
 					break;
 				
 				case 81:
-					return Global_262145.f_20176;
+					return Global_262145.f_20176 /* Tunable: 660959725 */;
 					break;
 				
 				case 82:
-					return Global_262145.f_20174;
+					return Global_262145.f_20174 /* Tunable: 1925483934 */;
 					break;
 				
 				case 83:
-					return Global_262145.f_20178;
+					return Global_262145.f_20178 /* Tunable: 2078440783 */;
 					break;
 				
 				case 84:
-					return Global_262145.f_20179;
+					return Global_262145.f_20179 /* Tunable: -1773111197 */;
 					break;
 				
 				case 85:
-					return Global_262145.f_20180;
+					return Global_262145.f_20180 /* Tunable: -1107164143 */;
 					break;
 				
 				case 75:
-					return Global_262145.f_20170;
+					return Global_262145.f_20170 /* Tunable: -288665391 */;
 					break;
 			}
 			break;
@@ -61063,9 +61063,9 @@ int func_400(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 			iVar1 = 500000;
 			if (bVar0)
 			{
-				if (Global_262145.f_21615 >= 0)
+				if (Global_262145.f_21615 /* Tunable: 982031447 */ >= 0)
 				{
-					iVar1 = Global_262145.f_21615;
+					iVar1 = Global_262145.f_21615 /* Tunable: 982031447 */;
 				}
 			}
 			bVar3 = true;
@@ -61106,9 +61106,9 @@ int func_400(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 			iVar1 = 16000;
 			if (bVar0)
 			{
-				if (Global_262145.f_17968 >= 0)
+				if (Global_262145.f_17968 /* Tunable: -841706086 */ >= 0)
 				{
-					iVar1 = Global_262145.f_17968;
+					iVar1 = Global_262145.f_17968 /* Tunable: -841706086 */;
 				}
 			}
 			break;
@@ -63259,9 +63259,9 @@ int func_400(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar1 = 378000;
 				if (bVar0)
 				{
-					if (Global_262145.f_19042 >= 0)
+					if (Global_262145.f_19042 /* Tunable: 198653811 */ >= 0)
 					{
-						iVar1 = Global_262145.f_19042;
+						iVar1 = Global_262145.f_19042 /* Tunable: 198653811 */;
 					}
 				}
 				break;
@@ -63270,9 +63270,9 @@ int func_400(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar1 = 195000;
 				if (bVar0)
 				{
-					if (Global_262145.f_19045 >= 0)
+					if (Global_262145.f_19045 /* Tunable: -1512397919 */ >= 0)
 					{
-						iVar1 = Global_262145.f_19045;
+						iVar1 = Global_262145.f_19045 /* Tunable: -1512397919 */;
 					}
 				}
 				break;
@@ -63306,9 +63306,9 @@ int func_400(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar1 = 55000;
 				if (bVar0)
 				{
-					if (Global_262145.f_19043 >= 0)
+					if (Global_262145.f_19043 /* Tunable: 1894265143 */ >= 0)
 					{
-						iVar1 = Global_262145.f_19043;
+						iVar1 = Global_262145.f_19043 /* Tunable: 1894265143 */;
 					}
 				}
 				break;
@@ -63317,9 +63317,9 @@ int func_400(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar1 = 47500;
 				if (bVar0)
 				{
-					if (Global_262145.f_19044 >= 0)
+					if (Global_262145.f_19044 /* Tunable: 1208881654 */ >= 0)
 					{
-						iVar1 = Global_262145.f_19044;
+						iVar1 = Global_262145.f_19044 /* Tunable: 1208881654 */;
 					}
 				}
 				break;
@@ -63753,7 +63753,7 @@ int func_400(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar2 = iVar1;
 				if (!bParam2)
 				{
-					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21407)) / 100f)));
+					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21407 /* Tunable: -1237354304 */)) / 100f)));
 				}
 				break;
 			
@@ -63769,7 +63769,7 @@ int func_400(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar2 = iVar1;
 				if (!bParam2)
 				{
-					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21407)) / 100f)));
+					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21407 /* Tunable: -1237354304 */)) / 100f)));
 				}
 				break;
 			
@@ -63785,7 +63785,7 @@ int func_400(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar2 = iVar1;
 				if (!bParam2)
 				{
-					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21407)) / 100f)));
+					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21407 /* Tunable: -1237354304 */)) / 100f)));
 				}
 				break;
 			
@@ -63801,7 +63801,7 @@ int func_400(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar2 = iVar1;
 				if (!bParam2)
 				{
-					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21407)) / 100f)));
+					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21407 /* Tunable: -1237354304 */)) / 100f)));
 				}
 				break;
 			
@@ -63817,7 +63817,7 @@ int func_400(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar2 = iVar1;
 				if (!bParam2)
 				{
-					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21407)) / 100f)));
+					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21407 /* Tunable: -1237354304 */)) / 100f)));
 				}
 				break;
 			
@@ -63825,15 +63825,15 @@ int func_400(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar1 = 1400000;
 				if (bVar0)
 				{
-					if (Global_262145.f_21413 >= 0)
+					if (Global_262145.f_21413 /* Tunable: -835343641 */ >= 0)
 					{
-						iVar1 = Global_262145.f_21413;
+						iVar1 = Global_262145.f_21413 /* Tunable: -835343641 */;
 					}
 				}
 				iVar2 = iVar1;
 				if (!bParam2)
 				{
-					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21407)) / 100f)));
+					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21407 /* Tunable: -1237354304 */)) / 100f)));
 				}
 				break;
 			
@@ -63890,9 +63890,9 @@ int func_400(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 					iVar1 = 500000;
 					if (bVar0)
 					{
-						if (Global_262145.f_22586 >= 0)
+						if (Global_262145.f_22586 /* Tunable: 821338091 */ >= 0)
 						{
-							iVar1 = Global_262145.f_22586;
+							iVar1 = Global_262145.f_22586 /* Tunable: 821338091 */;
 						}
 					}
 				}
@@ -63901,9 +63901,9 @@ int func_400(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(500000) * ((100f + SYSTEM::TO_FLOAT(33)) / 100f)));
 					if (bVar0)
 					{
-						if (Global_262145.f_22606 >= 0)
+						if (Global_262145.f_22606 /* Tunable: 1095639582 */ >= 0)
 						{
-							iVar1 = Global_262145.f_22606;
+							iVar1 = Global_262145.f_22606 /* Tunable: 1095639582 */;
 						}
 					}
 				}
@@ -64627,9 +64627,9 @@ int func_400(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 					iVar1 = 487500;
 					if (bVar0)
 					{
-						if (Global_262145.f_28505 >= 0)
+						if (Global_262145.f_28505 /* Tunable: 256069819 */ >= 0)
 						{
-							iVar1 = Global_262145.f_28505;
+							iVar1 = Global_262145.f_28505 /* Tunable: 256069819 */;
 						}
 					}
 				}
@@ -64646,9 +64646,9 @@ int func_400(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 					iVar2 = 487500;
 					if (bVar0)
 					{
-						if (Global_262145.f_28505 >= 0)
+						if (Global_262145.f_28505 /* Tunable: 256069819 */ >= 0)
 						{
-							iVar2 = Global_262145.f_28505;
+							iVar2 = Global_262145.f_28505 /* Tunable: 256069819 */;
 						}
 					}
 				}
@@ -65738,9 +65738,9 @@ int func_400(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 			
 			case joaat("issi7"):
 				iVar1 = 897000;
-				if (bVar0 && Global_262145.f_26885 >= 0)
+				if (bVar0 && Global_262145.f_26885 /* Tunable: 1101391290 */ >= 0)
 				{
-					iVar1 = Global_262145.f_26885;
+					iVar1 = Global_262145.f_26885 /* Tunable: 1101391290 */;
 				}
 				break;
 			
@@ -66502,7 +66502,7 @@ int func_400(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar1 = 1288000;
 				if (bVar0)
 				{
-					iVar1 = (Global_262145.f_19045 + func_355(iParam1));
+					iVar1 = (Global_262145.f_19045 /* Tunable: -1512397919 */ + func_355(iParam1));
 				}
 				break;
 			
@@ -67457,7 +67457,7 @@ int func_400(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				break;
 			
 			case joaat("sentinel4"):
-				iVar1 = (Global_262145.f_28505 + func_355(iParam1));
+				iVar1 = (Global_262145.f_28505 /* Tunable: 256069819 */ + func_355(iParam1));
 				break;
 		}
 		if (iParam1 == joaat("iwagen"))
@@ -71352,18 +71352,18 @@ int func_402(int iParam0, int iParam1, bool bParam2)//Position - 0x50CAA
 		case 292:
 			if (Global_262145.f_17531 /* Tunable: ENABLE_BIKER_SHOTARO */ || func_403(24))
 			{
-				if (Global_262145.f_17602 == 0)
+				if (Global_262145.f_17602 /* Tunable: 1294035586 */ == 0)
 				{
 					return func_418(iVar2, func_415(iParam1), bParam2);
 				}
-				else if (Global_262145.f_17602 == -1)
+				else if (Global_262145.f_17602 /* Tunable: 1294035586 */ == -1)
 				{
 					return -1;
 				}
 				else
 				{
 					iVar4 = func_234(3970, -1, 0);
-					if (iVar4 >= Global_262145.f_17602)
+					if (iVar4 >= Global_262145.f_17602 /* Tunable: 1294035586 */)
 					{
 						return func_418(iVar2, func_415(iParam1), bParam2);
 					}
@@ -74986,7 +74986,7 @@ int func_409(int iParam0, int iParam1)//Position - 0x55B2E
 			break;
 		
 		case joaat("blista3"):
-			if (Global_262145.f_26616)
+			if (Global_262145.f_26616 /* Tunable: 732191263 */)
 			{
 				return 0;
 			}
@@ -78182,7 +78182,7 @@ int func_453(int iParam0)//Position - 0x59BF3
 	switch (iParam0)
 	{
 		case joaat("firetruk"):
-			if (BitTest(iVar0, 0) || Global_262145.f_28576)
+			if (BitTest(iVar0, 0) || Global_262145.f_28576 /* Tunable: -1997603235 */)
 			{
 				return 1;
 			}
@@ -78193,7 +78193,7 @@ int func_453(int iParam0)//Position - 0x59BF3
 			break;
 		
 		case joaat("burrito2"):
-			if (BitTest(iVar0, 1) || Global_262145.f_28577)
+			if (BitTest(iVar0, 1) || Global_262145.f_28577 /* Tunable: 1293915021 */)
 			{
 				return 1;
 			}
@@ -78204,7 +78204,7 @@ int func_453(int iParam0)//Position - 0x59BF3
 			break;
 		
 		case joaat("boxville"):
-			if (BitTest(iVar0, 2) || Global_262145.f_28578)
+			if (BitTest(iVar0, 2) || Global_262145.f_28578 /* Tunable: -423431250 */)
 			{
 				return 1;
 			}
@@ -78215,7 +78215,7 @@ int func_453(int iParam0)//Position - 0x59BF3
 			break;
 		
 		case joaat("stockade"):
-			if (BitTest(iVar0, 3) || Global_262145.f_28579)
+			if (BitTest(iVar0, 3) || Global_262145.f_28579 /* Tunable: -1491164275 */)
 			{
 				return 1;
 			}
@@ -78226,7 +78226,7 @@ int func_453(int iParam0)//Position - 0x59BF3
 			break;
 		
 		case joaat("asbo"):
-			if (BitTest(iVar0, 4) || Global_262145.f_28580)
+			if (BitTest(iVar0, 4) || Global_262145.f_28580 /* Tunable: -170684478 */)
 			{
 				return 1;
 			}
@@ -78237,7 +78237,7 @@ int func_453(int iParam0)//Position - 0x59BF3
 			break;
 		
 		case joaat("kanjo"):
-			if (BitTest(iVar0, 5) || Global_262145.f_28581)
+			if (BitTest(iVar0, 5) || Global_262145.f_28581 /* Tunable: -1541063863 */)
 			{
 				return 1;
 			}
@@ -78248,7 +78248,7 @@ int func_453(int iParam0)//Position - 0x59BF3
 			break;
 		
 		case joaat("everon"):
-			if (BitTest(iVar0, 6) || Global_262145.f_28582)
+			if (BitTest(iVar0, 6) || Global_262145.f_28582 /* Tunable: 2075481779 */)
 			{
 				return 1;
 			}
@@ -78259,7 +78259,7 @@ int func_453(int iParam0)//Position - 0x59BF3
 			break;
 		
 		case joaat("retinue2"):
-			if (BitTest(iVar0, 7) || Global_262145.f_28583)
+			if (BitTest(iVar0, 7) || Global_262145.f_28583 /* Tunable: -1775833032 */)
 			{
 				return 1;
 			}
@@ -78270,7 +78270,7 @@ int func_453(int iParam0)//Position - 0x59BF3
 			break;
 		
 		case joaat("yosemite2"):
-			if (BitTest(iVar0, 8) || Global_262145.f_28584)
+			if (BitTest(iVar0, 8) || Global_262145.f_28584 /* Tunable: -1971661685 */)
 			{
 				return 1;
 			}
@@ -78281,7 +78281,7 @@ int func_453(int iParam0)//Position - 0x59BF3
 			break;
 		
 		case joaat("sugoi"):
-			if (BitTest(iVar0, 9) || Global_262145.f_28585)
+			if (BitTest(iVar0, 9) || Global_262145.f_28585 /* Tunable: 1161220966 */)
 			{
 				return 1;
 			}
@@ -78292,7 +78292,7 @@ int func_453(int iParam0)//Position - 0x59BF3
 			break;
 		
 		case joaat("sultan2"):
-			if (BitTest(iVar0, 10) || Global_262145.f_28586)
+			if (BitTest(iVar0, 10) || Global_262145.f_28586 /* Tunable: -1874913332 */)
 			{
 				return 1;
 			}
@@ -78303,7 +78303,7 @@ int func_453(int iParam0)//Position - 0x59BF3
 			break;
 		
 		case joaat("outlaw"):
-			if (BitTest(iVar0, 11) || Global_262145.f_28587)
+			if (BitTest(iVar0, 11) || Global_262145.f_28587 /* Tunable: -595990903 */)
 			{
 				return 1;
 			}
@@ -78314,7 +78314,7 @@ int func_453(int iParam0)//Position - 0x59BF3
 			break;
 		
 		case joaat("vagrant"):
-			if (BitTest(iVar0, 12) || Global_262145.f_28588)
+			if (BitTest(iVar0, 12) || Global_262145.f_28588 /* Tunable: 829638346 */)
 			{
 				return 1;
 			}
@@ -78325,7 +78325,7 @@ int func_453(int iParam0)//Position - 0x59BF3
 			break;
 		
 		case joaat("komoda"):
-			if (BitTest(iVar0, 13) || Global_262145.f_28589)
+			if (BitTest(iVar0, 13) || Global_262145.f_28589 /* Tunable: 1362146058 */)
 			{
 				return 1;
 			}
@@ -78336,7 +78336,7 @@ int func_453(int iParam0)//Position - 0x59BF3
 			break;
 		
 		case joaat("stryder"):
-			if (BitTest(iVar0, 14) || Global_262145.f_28590)
+			if (BitTest(iVar0, 14) || Global_262145.f_28590 /* Tunable: -758040390 */)
 			{
 				return 1;
 			}
@@ -78347,7 +78347,7 @@ int func_453(int iParam0)//Position - 0x59BF3
 			break;
 		
 		case joaat("furia"):
-			if (BitTest(iVar0, 15) || Global_262145.f_28591)
+			if (BitTest(iVar0, 15) || Global_262145.f_28591 /* Tunable: 1378787619 */)
 			{
 				return 1;
 			}
@@ -78358,7 +78358,7 @@ int func_453(int iParam0)//Position - 0x59BF3
 			break;
 		
 		case joaat("zhaba"):
-			if (BitTest(iVar0, 16) || Global_262145.f_28592)
+			if (BitTest(iVar0, 16) || Global_262145.f_28592 /* Tunable: 1041883040 */)
 			{
 				return 1;
 			}
@@ -78369,7 +78369,7 @@ int func_453(int iParam0)//Position - 0x59BF3
 			break;
 		
 		case joaat("jugular"):
-			if (BitTest(iVar0, 17) || Global_262145.f_28593)
+			if (BitTest(iVar0, 17) || Global_262145.f_28593 /* Tunable: -463901261 */)
 			{
 				return 1;
 			}
@@ -78380,7 +78380,7 @@ int func_453(int iParam0)//Position - 0x59BF3
 			break;
 		
 		case joaat("sentinel3"):
-			if (BitTest(iVar0, 18) || Global_262145.f_28594)
+			if (BitTest(iVar0, 18) || Global_262145.f_28594 /* Tunable: 1961619344 */)
 			{
 				return 1;
 			}
@@ -78391,7 +78391,7 @@ int func_453(int iParam0)//Position - 0x59BF3
 			break;
 		
 		case joaat("gauntlet3"):
-			if (BitTest(iVar0, 19) || Global_262145.f_28595)
+			if (BitTest(iVar0, 19) || Global_262145.f_28595 /* Tunable: -2141495545 */)
 			{
 				return 1;
 			}
@@ -78402,7 +78402,7 @@ int func_453(int iParam0)//Position - 0x59BF3
 			break;
 		
 		case joaat("ellie"):
-			if (BitTest(iVar0, 20) || Global_262145.f_28596)
+			if (BitTest(iVar0, 20) || Global_262145.f_28596 /* Tunable: -349041781 */)
 			{
 				return 1;
 			}
@@ -78413,7 +78413,7 @@ int func_453(int iParam0)//Position - 0x59BF3
 			break;
 		
 		case joaat("defiler"):
-			if (BitTest(iVar0, 21) || Global_262145.f_28597)
+			if (BitTest(iVar0, 21) || Global_262145.f_28597 /* Tunable: -410267195 */)
 			{
 				return 1;
 			}
@@ -78424,7 +78424,7 @@ int func_453(int iParam0)//Position - 0x59BF3
 			break;
 		
 		case joaat("manchez"):
-			if (BitTest(iVar0, 22) || Global_262145.f_28598)
+			if (BitTest(iVar0, 22) || Global_262145.f_28598 /* Tunable: -1071451023 */)
 			{
 				return 1;
 			}
@@ -80384,7 +80384,7 @@ int func_459(int iParam0)//Position - 0x5BBE3
 	switch (iParam0)
 	{
 		case joaat("mule4"):
-			if (func_234(7233, -1, 0) >= func_460(iParam0) || Global_262145.f_24711)
+			if (func_234(7233, -1, 0) >= func_460(iParam0) || Global_262145.f_24711 /* Tunable: 1416880888 */)
 			{
 				return 1;
 			}
@@ -80395,7 +80395,7 @@ int func_459(int iParam0)//Position - 0x5BBE3
 			break;
 		
 		case joaat("pounder2"):
-			if (func_234(7233, -1, 0) >= func_460(iParam0) || Global_262145.f_24712)
+			if (func_234(7233, -1, 0) >= func_460(iParam0) || Global_262145.f_24712 /* Tunable: 132690314 */)
 			{
 				return 1;
 			}
@@ -80406,7 +80406,7 @@ int func_459(int iParam0)//Position - 0x5BBE3
 			break;
 		
 		case joaat("oppressor2"):
-			if (func_229(22050, -1) >= func_460(iParam0) || Global_262145.f_24713)
+			if (func_229(22050, -1) >= func_460(iParam0) || Global_262145.f_24713 /* Tunable: 407802353 */)
 			{
 				return 1;
 			}
@@ -80417,7 +80417,7 @@ int func_459(int iParam0)//Position - 0x5BBE3
 			break;
 		
 		case joaat("pbus2"):
-			if (BitTest(Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_267.f_295.f_7, 1) || Global_262145.f_24715)
+			if (BitTest(Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_267.f_295.f_7, 1) || Global_262145.f_24715 /* Tunable: -26415325 */)
 			{
 				return 1;
 			}
@@ -80428,7 +80428,7 @@ int func_459(int iParam0)//Position - 0x5BBE3
 			break;
 		
 		case joaat("patriot2"):
-			if (func_234(7231, -1, 0) >= func_460(iParam0) || Global_262145.f_24716)
+			if (func_234(7231, -1, 0) >= func_460(iParam0) || Global_262145.f_24716 /* Tunable: 1547508956 */)
 			{
 				return 1;
 			}
@@ -80439,7 +80439,7 @@ int func_459(int iParam0)//Position - 0x5BBE3
 			break;
 		
 		case joaat("blimp3"):
-			if (func_234(7231, -1, 0) >= func_460(iParam0) || Global_262145.f_24717)
+			if (func_234(7231, -1, 0) >= func_460(iParam0) || Global_262145.f_24717 /* Tunable: -1431059775 */)
 			{
 				return 1;
 			}
@@ -80457,23 +80457,23 @@ int func_460(int iParam0)//Position - 0x5BD2F
 	switch (iParam0)
 	{
 		case joaat("mule4"):
-			return Global_262145.f_24718;
+			return Global_262145.f_24718 /* Tunable: -781384755 */;
 			break;
 		
 		case joaat("pounder2"):
-			return Global_262145.f_24719;
+			return Global_262145.f_24719 /* Tunable: 1813909003 */;
 			break;
 		
 		case joaat("oppressor2"):
-			return Global_262145.f_24720;
+			return Global_262145.f_24720 /* Tunable: 246949104 */;
 			break;
 		
 		case joaat("patriot2"):
-			return Global_262145.f_24721;
+			return Global_262145.f_24721 /* Tunable: -410593703 */;
 			break;
 		
 		case joaat("blimp3"):
-			return Global_262145.f_24722;
+			return Global_262145.f_24722 /* Tunable: -121606550 */;
 			break;
 	}
 	return 0;
@@ -89073,11 +89073,11 @@ void func_607(int iParam0, var uParam1, bool bParam2, bool bParam3, bool bParam4
 						VEHICLE::SET_VEHICLE_STRONG(iParam0, true);
 						if (uParam1->f_9[16] == 5)
 						{
-							VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, (Global_262145.f_21791 + 0.05f));
+							VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, (Global_262145.f_21791 /* Tunable: -1001087518 */ + 0.05f));
 						}
 						else
 						{
-							VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, Global_262145.f_21791);
+							VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, Global_262145.f_21791 /* Tunable: -1001087518 */);
 						}
 						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, true);
 						break;
@@ -89147,7 +89147,7 @@ void func_609(int iParam0)//Position - 0x67FA9
 {
 	struct<3> Var0;
 	
-	if (Global_262145.f_20201)
+	if (Global_262145.f_20201 /* Tunable: 1239690786 */)
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(iParam0))
 		{
@@ -96287,14 +96287,14 @@ void func_720(int iParam0, int iParam1, bool bParam2)//Position - 0x7163F
 		{
 			if (Global_2815059.f_4462 == -1)
 			{
-				Global_2815059.f_4462 = Global_262145.f_27172;
+				Global_2815059.f_4462 = Global_262145.f_27172 /* Tunable: 945146471 */;
 			}
 			func_660(&(Global_2815059.f_4460), 0, 0);
 			if (bParam2)
 			{
 				if (Global_2815059.f_4465 == -1)
 				{
-					Global_2815059.f_4465 = Global_262145.f_27173;
+					Global_2815059.f_4465 = Global_262145.f_27173 /* Tunable: -29732167 */;
 				}
 				func_660(&(Global_2815059.f_4463), 0, 0);
 			}

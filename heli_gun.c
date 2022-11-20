@@ -396,7 +396,7 @@ void func_1()//Position - 0x20B
 				{
 					if (PLAYER::GET_MAX_WANTED_LEVEL() > 0)
 					{
-						PLAYER::SET_WANTED_LEVEL_MULTIPLIER(Global_262145.f_23117);
+						PLAYER::SET_WANTED_LEVEL_MULTIPLIER(Global_262145.f_23117 /* Tunable: -646444147 */);
 						iLocal_77 = 1;
 					}
 				}
@@ -2002,21 +2002,21 @@ int func_27()//Position - 0x2411
 		switch (Global_1581356)
 		{
 			case 1:
-				if (Global_262145.f_23120)
+				if (Global_262145.f_23120 /* Tunable: 1200779746 */)
 				{
 					return 1;
 				}
 				break;
 			
 			case 2:
-				if (Global_262145.f_23121)
+				if (Global_262145.f_23121 /* Tunable: 948556753 */)
 				{
 					return 1;
 				}
 				break;
 			
 			case 3:
-				if (Global_262145.f_23122)
+				if (Global_262145.f_23122 /* Tunable: 1781774116 */)
 				{
 					return 1;
 				}

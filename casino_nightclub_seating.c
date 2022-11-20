@@ -665,7 +665,7 @@ void func_1(var uParam0)//Position - 0xB3
 					{
 						if ((MISC::GET_GAME_TIMER() - uParam0->f_11) > 150)
 						{
-							if (func_41(uParam0->f_9) && !Global_262145.f_27059)
+							if (func_41(uParam0->f_9) && !Global_262145.f_27059 /* Tunable: 1526339297 */)
 							{
 								func_45(&(uParam0->f_6), 4, "MPTV_WALKOFF" /* GXT: Press ~INPUT_CONTEXT~ to sit down, watch TV or play "Don't Cross The Line". */, 0, 0, 0, 0);
 							}

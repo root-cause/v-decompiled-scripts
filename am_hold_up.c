@@ -3842,13 +3842,13 @@ int func_93()//Position - 0x4AC0
 	}
 	else if (func_98() || func_94(PLAYER::PLAYER_ID()))
 	{
-		if (Global_262145.f_23310 > 16000)
+		if (Global_262145.f_23310 /* Tunable: H2_JOB_RP_CAP */ > 16000)
 		{
 			iVar0 = 16000;
 		}
 		else
 		{
-			iVar0 = Global_262145.f_23310;
+			iVar0 = Global_262145.f_23310 /* Tunable: H2_JOB_RP_CAP */;
 		}
 	}
 	else if (Global_262145.f_7094 /* Tunable: JOB_RP_CAP */ > 20000)
@@ -5917,7 +5917,7 @@ void func_175(int iParam0)//Position - 0x7A85
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = Global_262145.f_18209;
+			iVar0 = Global_262145.f_18209 /* Tunable: -539038925 */;
 			break;
 		
 		case 1:
@@ -5925,7 +5925,7 @@ void func_175(int iParam0)//Position - 0x7A85
 			break;
 		
 		case 2:
-			iVar0 = Global_262145.f_18210;
+			iVar0 = Global_262145.f_18210 /* Tunable: 771289284 */;
 			break;
 		
 		case 3:
@@ -5945,11 +5945,11 @@ void func_175(int iParam0)//Position - 0x7A85
 			break;
 		
 		case 8:
-			iVar0 = Global_262145.f_18214;
+			iVar0 = Global_262145.f_18214 /* Tunable: -555621765 */;
 			break;
 		
 		case 9:
-			iVar0 = Global_262145.f_18217;
+			iVar0 = Global_262145.f_18217 /* Tunable: 45776395 */;
 			break;
 		
 		case 22:
@@ -5957,15 +5957,15 @@ void func_175(int iParam0)//Position - 0x7A85
 			break;
 		
 		case 23:
-			iVar0 = Global_262145.f_18211;
+			iVar0 = Global_262145.f_18211 /* Tunable: 419613951 */;
 			break;
 		
 		case 25:
-			iVar0 = Global_262145.f_19100;
+			iVar0 = Global_262145.f_19100 /* Tunable: 1684681813 */;
 			break;
 		
 		case 26:
-			iVar0 = Global_262145.f_19099;
+			iVar0 = Global_262145.f_19099 /* Tunable: -1825390724 */;
 			break;
 	}
 	if (iVar0 != 0)
@@ -6108,9 +6108,9 @@ void func_188(int iParam0, int iParam1)//Position - 0x7DE0
 {
 	if (iParam1 > 0)
 	{
-		if (Global_262145.f_24025 == 0 || Global_262145.f_24025 == 1)
+		if (Global_262145.f_24025 /* Tunable: 277748102 */ == 0 || Global_262145.f_24025 /* Tunable: 277748102 */ == 1)
 		{
-			if (!MISC::IS_PC_VERSION() || Global_262145.f_24025 == 1)
+			if (!MISC::IS_PC_VERSION() || Global_262145.f_24025 /* Tunable: 277748102 */ == 1)
 			{
 				Global_2815059.f_283 = iParam0;
 				if (iParam1 > Global_262145.f_7043 /* Tunable: CAP_MAX_AMOUNT_CASH_TO_SHARE */)
@@ -6434,7 +6434,7 @@ void func_204(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4,
 		case joaat("SERVICE_SPEND_ARENA_JOIN_SPECTATOR"):
 		case joaat("SERVICE_SPEND_ARENA_SPECTATOR_BOX"):
 		case joaat("SERVICE_SPEND_MAKE_IT_RAIN"):
-			if (iParam1 > 0 || Global_262145.f_28363)
+			if (iParam1 > 0 || Global_262145.f_28363 /* Tunable: 1103207774 */)
 			{
 				func_205(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -6585,7 +6585,7 @@ void func_204(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4,
 		case joaat("SERVICE_SPEND_INTERACTION_MENU_ABILITY"):
 		case joaat("SERVICE_SPEND_AGENT_14_VEHICLE_REQUEST"):
 		case joaat("SERVICE_SPEND_TONY_LIMO"):
-			if (iParam1 > 0 || Global_262145.f_28363)
+			if (iParam1 > 0 || Global_262145.f_28363 /* Tunable: 1103207774 */)
 			{
 				func_205(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -8035,7 +8035,7 @@ void func_232()//Position - 0xA75C
 
 int func_233()//Position - 0xA793
 {
-	if (!Global_262145.f_28866)
+	if (!Global_262145.f_28866 /* Tunable: 1028571554 */)
 	{
 		return 0;
 	}
@@ -17805,14 +17805,14 @@ void func_423(int iParam0, int iParam1, bool bParam2)//Position - 0x18B18
 		{
 			if (Global_2815059.f_4462 == -1)
 			{
-				Global_2815059.f_4462 = Global_262145.f_27172;
+				Global_2815059.f_4462 = Global_262145.f_27172 /* Tunable: 945146471 */;
 			}
 			func_424(&(Global_2815059.f_4460), 0, 0);
 			if (bParam2)
 			{
 				if (Global_2815059.f_4465 == -1)
 				{
-					Global_2815059.f_4465 = Global_262145.f_27173;
+					Global_2815059.f_4465 = Global_262145.f_27173 /* Tunable: -29732167 */;
 				}
 				func_424(&(Global_2815059.f_4463), 0, 0);
 			}
@@ -18142,7 +18142,7 @@ int func_434(int iParam0)//Position - 0x191E7
 
 var func_435()//Position - 0x19231
 {
-	return Global_262145.f_30925;
+	return Global_262145.f_30925 /* Tunable: 2071833430 */;
 }
 
 int func_436()//Position - 0x19240

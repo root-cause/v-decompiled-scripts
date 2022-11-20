@@ -1407,7 +1407,7 @@ void func_24()//Position - 0x19AD
 
 int func_25()//Position - 0x19E4
 {
-	if (!Global_262145.f_28866)
+	if (!Global_262145.f_28866 /* Tunable: 1028571554 */)
 	{
 		return 0;
 	}
@@ -2370,7 +2370,7 @@ void func_75(int iParam0)//Position - 0x29FC
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = Global_262145.f_18209;
+			iVar0 = Global_262145.f_18209 /* Tunable: -539038925 */;
 			break;
 		
 		case 1:
@@ -2378,7 +2378,7 @@ void func_75(int iParam0)//Position - 0x29FC
 			break;
 		
 		case 2:
-			iVar0 = Global_262145.f_18210;
+			iVar0 = Global_262145.f_18210 /* Tunable: 771289284 */;
 			break;
 		
 		case 3:
@@ -2398,11 +2398,11 @@ void func_75(int iParam0)//Position - 0x29FC
 			break;
 		
 		case 8:
-			iVar0 = Global_262145.f_18214;
+			iVar0 = Global_262145.f_18214 /* Tunable: -555621765 */;
 			break;
 		
 		case 9:
-			iVar0 = Global_262145.f_18217;
+			iVar0 = Global_262145.f_18217 /* Tunable: 45776395 */;
 			break;
 		
 		case 22:
@@ -2410,15 +2410,15 @@ void func_75(int iParam0)//Position - 0x29FC
 			break;
 		
 		case 23:
-			iVar0 = Global_262145.f_18211;
+			iVar0 = Global_262145.f_18211 /* Tunable: 419613951 */;
 			break;
 		
 		case 25:
-			iVar0 = Global_262145.f_19100;
+			iVar0 = Global_262145.f_19100 /* Tunable: 1684681813 */;
 			break;
 		
 		case 26:
-			iVar0 = Global_262145.f_19099;
+			iVar0 = Global_262145.f_19099 /* Tunable: -1825390724 */;
 			break;
 	}
 	if (iVar0 != 0)
@@ -3657,7 +3657,7 @@ void func_121()//Position - 0x3C1D
 			}
 			return;
 		}
-		if (((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && Local_43.f_1 == PLAYER::PLAYER_PED_ID()) && func_136(PLAYER::PLAYER_ID())) && Global_262145.f_24379)
+		if (((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && Local_43.f_1 == PLAYER::PLAYER_PED_ID()) && func_136(PLAYER::PLAYER_ID())) && Global_262145.f_24379 /* Tunable: -748730308 */)
 		{
 			if (Global_44024[iLocal_54 /*5*/].f_3 >= 10)
 			{
@@ -3729,7 +3729,7 @@ void func_121()//Position - 0x3C1D
 			}
 			return;
 		}
-		if (((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && Local_43.f_1 == PLAYER::PLAYER_PED_ID()) && func_126(PLAYER::PLAYER_ID())) && Global_262145.f_27055)
+		if (((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && Local_43.f_1 == PLAYER::PLAYER_PED_ID()) && func_126(PLAYER::PLAYER_ID())) && Global_262145.f_27055 /* Tunable: 987287738 */)
 		{
 			if (Global_44024[iLocal_54 /*5*/].f_3 >= 10)
 			{

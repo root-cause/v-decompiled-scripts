@@ -696,7 +696,7 @@ void func_13()//Position - 0x57E
 
 int func_14()//Position - 0x5B5
 {
-	if (!Global_262145.f_28866)
+	if (!Global_262145.f_28866 /* Tunable: 1028571554 */)
 	{
 		return 0;
 	}
@@ -1367,28 +1367,28 @@ int func_56(int iParam0)//Position - 0x1021
 	switch (iParam0)
 	{
 		case 0:
-			return Global_262145.f_21656;
+			return Global_262145.f_21656 /* Tunable: -1397592988 */;
 		
 		case 1:
-			return Global_262145.f_21657;
+			return Global_262145.f_21657 /* Tunable: 1417889837 */;
 		
 		case 2:
-			return Global_262145.f_21658;
+			return Global_262145.f_21658 /* Tunable: -648585009 */;
 		
 		case 3:
-			return Global_262145.f_21659;
+			return Global_262145.f_21659 /* Tunable: -769260324 */;
 		
 		case 4:
-			return Global_262145.f_21660;
+			return Global_262145.f_21660 /* Tunable: -787597788 */;
 		
 		case 5:
-			return Global_262145.f_21661;
+			return Global_262145.f_21661 /* Tunable: 710100141 */;
 		
 		case 6:
-			return Global_262145.f_21662;
+			return Global_262145.f_21662 /* Tunable: -2117485517 */;
 		
 		case 7:
-			return Global_262145.f_21663;
+			return Global_262145.f_21663 /* Tunable: 1737983951 */;
 		
 		default:
 	}

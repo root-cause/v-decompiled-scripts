@@ -356,7 +356,7 @@ void __EntryFunction__()//Position - 0x0
 								{
 									if (func_283(iLocal_179, &Local_181, &Local_182, &cLocal_191, &cLocal_200, &iLocal_209, &iLocal_210, &iLocal_211, &iLocal_212, &iLocal_213, &iLocal_214, &iLocal_215, &iLocal_216, &bLocal_217, &iVar0, &iVar1, &iLocal_218, &bLocal_219, &Local_220, &iLocal_221, &iLocal_222, &bLocal_223, &bLocal_231, &iLocal_224, &iLocal_225, &iLocal_232, &iLocal_233))
 									{
-										if (Global_262145.f_30930 && func_281(iLocal_179) != -1)
+										if (Global_262145.f_30930 /* Tunable: 1860013361 */ && func_281(iLocal_179) != -1)
 										{
 											iVar3 = func_281(iLocal_179);
 											if (func_280(iVar3))
@@ -384,7 +384,7 @@ void __EntryFunction__()//Position - 0x0
 										{
 											func_257(1, 65, Local_181, iLocal_216, &Local_182, &cLocal_191, &cLocal_200, iLocal_215, iLocal_209, iLocal_210, iLocal_211, iLocal_212, iLocal_213, iLocal_214, bLocal_217, Local_220, &Local_226, iLocal_218, bLocal_219, iLocal_222, 0, bLocal_231, 0, iLocal_232, iLocal_233);
 										}
-										if (Global_262145.f_30927 && func_244(iLocal_179))
+										if (Global_262145.f_30927 /* Tunable: -1638160656 */ && func_244(iLocal_179))
 										{
 											iVar4 = func_238(iLocal_179);
 											if (func_237(iVar4))
@@ -444,7 +444,7 @@ void func_3()//Position - 0x341
 {
 	int iVar0;
 	
-	if (Global_262145.f_30927 == 0)
+	if (Global_262145.f_30927 /* Tunable: -1638160656 */ == 0)
 	{
 		return;
 	}
@@ -605,13 +605,13 @@ void func_6(int iParam0, char* sParam1, char* sParam2, int iParam3, char* sParam
 			}
 			else if (func_39(iParam12))
 			{
-				if (Global_262145.f_23406 >= 1f)
+				if (Global_262145.f_23406 /* Tunable: 1293613484 */ >= 1f)
 				{
-					fVar1 = Global_262145.f_23406;
+					fVar1 = Global_262145.f_23406 /* Tunable: 1293613484 */;
 				}
-				if (Global_262145.f_23407 >= 1f)
+				if (Global_262145.f_23407 /* Tunable: -1420433402 */ >= 1f)
 				{
-					fVar2 = Global_262145.f_23407;
+					fVar2 = Global_262145.f_23407 /* Tunable: -1420433402 */;
 				}
 			}
 			else
@@ -642,9 +642,9 @@ void func_6(int iParam0, char* sParam1, char* sParam2, int iParam3, char* sParam
 			}
 			if (func_7() && func_12())
 			{
-				if (Global_262145.f_6955 > 1f)
+				if (Global_262145.f_6955 /* Tunable: -278879208 */ > 1f)
 				{
-					fVar1 = Global_262145.f_6955;
+					fVar1 = Global_262145.f_6955 /* Tunable: -278879208 */;
 				}
 			}
 			if (fVar1 < 1f)
@@ -2218,7 +2218,7 @@ void func_50()//Position - 0x1E12
 								{
 									iLocal_244 = 303;
 								}
-								else if ((iLocal_244 == 0 && func_156(iLocal_232, 0)) && !Global_262145.f_10081)
+								else if ((iLocal_244 == 0 && func_156(iLocal_232, 0)) && !Global_262145.f_10081 /* Tunable: 1123838161 */)
 								{
 									iLocal_244 = func_155(iLocal_232);
 								}
@@ -2245,7 +2245,7 @@ void func_50()//Position - 0x1E12
 										iLocal_244 = 165;
 									}
 								}
-								else if ((iLocal_244 == 2 && func_154(iLocal_232)) && !Global_262145.f_10081)
+								else if ((iLocal_244 == 2 && func_154(iLocal_232)) && !Global_262145.f_10081 /* Tunable: 1123838161 */)
 								{
 									iLocal_244 = 184;
 								}
@@ -6063,7 +6063,7 @@ int func_169(var uParam0, int iParam1)//Position - 0x63BB
 			{
 				return 60;
 			}
-			if (!Global_262145.f_6958)
+			if (!Global_262145.f_6958 /* Tunable: 506270292 */)
 			{
 				return 61;
 			}
@@ -7647,15 +7647,15 @@ int func_219(int iParam0)//Position - 0x7F31
 			break;
 		
 		case 58:
-			return Global_262145.f_25776;
+			return Global_262145.f_25776 /* Tunable: 2115355697 */;
 			break;
 		
 		case 62:
-			return Global_262145.f_25777;
+			return Global_262145.f_25777 /* Tunable: -1358864430 */;
 			break;
 		
 		case 63:
-			return Global_262145.f_29247;
+			return Global_262145.f_29247 /* Tunable: -1559847104 */;
 			break;
 		
 		case 64:
@@ -7663,19 +7663,19 @@ int func_219(int iParam0)//Position - 0x7F31
 			break;
 		
 		case 71:
-			return Global_262145.f_25777;
+			return Global_262145.f_25777 /* Tunable: -1358864430 */;
 			break;
 		
 		case 72:
-			return Global_262145.f_31762;
+			return Global_262145.f_31762 /* Tunable: -1284681617 */;
 			break;
 		
 		case 73:
-			return Global_262145.f_31764;
+			return Global_262145.f_31764 /* Tunable: -1303558292 */;
 			break;
 		
 		case 74:
-			return Global_262145.f_31766;
+			return Global_262145.f_31766 /* Tunable: 569088073 */;
 			break;
 	}
 	return 0;
@@ -11301,7 +11301,7 @@ void func_295(int iParam0)//Position - 0xD121
 
 void func_296()//Position - 0xD152
 {
-	if (Global_262145.f_30927)
+	if (Global_262145.f_30927 /* Tunable: -1638160656 */)
 	{
 		if (!BitTest(Global_1976978, 0))
 		{

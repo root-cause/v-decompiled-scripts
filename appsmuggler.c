@@ -4088,7 +4088,7 @@ int func_114(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x3
 	}
 	if (func_115(iParam0))
 	{
-		if (iParam2 <= Global_262145.f_21727)
+		if (iParam2 <= Global_262145.f_21727 /* Tunable: -1542918426 */)
 		{
 			iVar0 = 1;
 			if (iParam0 == 15)
@@ -4096,7 +4096,7 @@ int func_114(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x3
 				iVar0 = 2;
 			}
 		}
-		else if (iParam2 <= Global_262145.f_21728)
+		else if (iParam2 <= Global_262145.f_21728 /* Tunable: -2015624215 */)
 		{
 			iVar0 = 2;
 			if (iParam0 == 18)
@@ -4134,7 +4134,7 @@ int func_114(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x3
 	}
 	else if (func_116(iParam0))
 	{
-		if (iParam1 < Global_262145.f_21687)
+		if (iParam1 < Global_262145.f_21687 /* Tunable: 642214211 */)
 		{
 			iVar0 = 1;
 		}
@@ -10284,7 +10284,7 @@ float func_208(int iParam0, int iParam1)//Position - 0x8E38
 	int iVar2;
 	
 	fVar0 = 0f;
-	fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_22848);
+	fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_22848 /* Tunable: 599309088 */);
 	switch (iParam0)
 	{
 		case -1:
@@ -10292,40 +10292,40 @@ float func_208(int iParam0, int iParam1)//Position - 0x8E38
 			return 0f;
 		
 		case 7:
-			fVar0 = Global_262145.f_22850;
-			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_22847);
+			fVar0 = Global_262145.f_22850 /* Tunable: 264591774 */;
+			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_22847 /* Tunable: 664286755 */);
 			break;
 		
 		case 3:
-			fVar0 = Global_262145.f_22850;
-			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_22847);
+			fVar0 = Global_262145.f_22850 /* Tunable: 264591774 */;
+			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_22847 /* Tunable: 664286755 */);
 			break;
 		
 		case 0:
-			fVar0 = Global_262145.f_22851;
+			fVar0 = Global_262145.f_22851 /* Tunable: 99009277 */;
 			break;
 		
 		case 1:
-			fVar0 = Global_262145.f_22851;
+			fVar0 = Global_262145.f_22851 /* Tunable: 99009277 */;
 			break;
 		
 		case 4:
-			fVar0 = Global_262145.f_22851;
+			fVar0 = Global_262145.f_22851 /* Tunable: 99009277 */;
 			break;
 		
 		case 6:
-			fVar0 = Global_262145.f_22852;
-			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_22849);
+			fVar0 = Global_262145.f_22852 /* Tunable: 643266636 */;
+			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_22849 /* Tunable: 486872462 */);
 			break;
 		
 		case 2:
-			fVar0 = Global_262145.f_22852;
-			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_22849);
+			fVar0 = Global_262145.f_22852 /* Tunable: 643266636 */;
+			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_22849 /* Tunable: 486872462 */);
 			break;
 		
 		case 5:
-			fVar0 = Global_262145.f_22852;
-			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_22849);
+			fVar0 = Global_262145.f_22852 /* Tunable: 643266636 */;
+			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_22849 /* Tunable: 486872462 */);
 			break;
 	}
 	iVar2 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iParam1) / fVar1));
@@ -10342,31 +10342,31 @@ int func_210(int iParam0)//Position - 0x8F61
 	switch (iParam0)
 	{
 		case 8:
-			return Global_262145.f_22838;
+			return Global_262145.f_22838 /* Tunable: -954321460 */;
 		
 		case 0:
-			return Global_262145.f_22839;
+			return Global_262145.f_22839 /* Tunable: 117429930 */;
 		
 		case 1:
-			return Global_262145.f_22840;
+			return Global_262145.f_22840 /* Tunable: 921812958 */;
 		
 		case 2:
-			return Global_262145.f_22841;
+			return Global_262145.f_22841 /* Tunable: 1940564107 */;
 		
 		case 3:
-			return Global_262145.f_22842;
+			return Global_262145.f_22842 /* Tunable: -2031678534 */;
 		
 		case 4:
-			return Global_262145.f_22843;
+			return Global_262145.f_22843 /* Tunable: -2091681714 */;
 		
 		case 5:
-			return Global_262145.f_22844;
+			return Global_262145.f_22844 /* Tunable: 975965466 */;
 		
 		case 6:
-			return Global_262145.f_22845;
+			return Global_262145.f_22845 /* Tunable: 1382988286 */;
 		
 		case 7:
-			return Global_262145.f_22846;
+			return Global_262145.f_22846 /* Tunable: 2066048851 */;
 		
 		default:
 	}
@@ -13879,7 +13879,7 @@ void func_358()//Position - 0xCC9D
 
 int func_359()//Position - 0xCCD4
 {
-	if (!Global_262145.f_28866)
+	if (!Global_262145.f_28866 /* Tunable: 1028571554 */)
 	{
 		return 0;
 	}

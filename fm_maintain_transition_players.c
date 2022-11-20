@@ -46295,7 +46295,7 @@ int func_471(var uParam0)//Position - 0x316EE
 		{
 			if (!Global_1836151)
 			{
-				if (Global_262145.f_25825)
+				if (Global_262145.f_25825 /* Tunable: -1208911595 */)
 				{
 					INTERIOR::ACTIVATE_INTERIOR_ENTITY_SET(*uParam0, "VIP_XMAS_DECS");
 				}
@@ -48075,7 +48075,7 @@ var func_552()//Position - 0x33504
 
 void func_553()//Position - 0x33513
 {
-	if (!Global_262145.f_18776)
+	if (!Global_262145.f_18776 /* Tunable: 766468427 */)
 	{
 		NETWORK::NETWORK_SESSION_SET_GAMEMODE(0);
 	}

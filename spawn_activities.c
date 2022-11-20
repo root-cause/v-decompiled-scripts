@@ -9720,7 +9720,7 @@ int func_281(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0xA
 	}
 	if (func_282(iParam0))
 	{
-		if (iParam2 <= Global_262145.f_21727)
+		if (iParam2 <= Global_262145.f_21727 /* Tunable: -1542918426 */)
 		{
 			iVar0 = 1;
 			if (iParam0 == 15)
@@ -9728,7 +9728,7 @@ int func_281(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0xA
 				iVar0 = 2;
 			}
 		}
-		else if (iParam2 <= Global_262145.f_21728)
+		else if (iParam2 <= Global_262145.f_21728 /* Tunable: -2015624215 */)
 		{
 			iVar0 = 2;
 			if (iParam0 == 18)
@@ -9766,7 +9766,7 @@ int func_281(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0xA
 	}
 	else if (func_283(iParam0))
 	{
-		if (iParam1 < Global_262145.f_21687)
+		if (iParam1 < Global_262145.f_21687 /* Tunable: 642214211 */)
 		{
 			iVar0 = 1;
 		}
@@ -23604,16 +23604,16 @@ int func_418(int iParam0, int iParam1, int iParam2)//Position - 0x17B1D
 					return 0;
 				
 				case 2:
-					return Global_262145.f_25335;
+					return Global_262145.f_25335 /* Tunable: -2140343856 */;
 				
 				case 3:
-					return Global_262145.f_25336;
+					return Global_262145.f_25336 /* Tunable: -1167118619 */;
 				
 				case 4:
-					return Global_262145.f_25337;
+					return Global_262145.f_25337 /* Tunable: -132305813 */;
 				
 				case 5:
-					return Global_262145.f_25338;
+					return Global_262145.f_25338 /* Tunable: 1249433112 */;
 				
 				default:
 			}
@@ -23629,16 +23629,16 @@ int func_418(int iParam0, int iParam1, int iParam2)//Position - 0x17B1D
 					return 0;
 				
 				case 2:
-					return Global_262145.f_25335;
+					return Global_262145.f_25335 /* Tunable: -2140343856 */;
 				
 				case 3:
-					return Global_262145.f_25336;
+					return Global_262145.f_25336 /* Tunable: -1167118619 */;
 				
 				case 4:
-					return Global_262145.f_25337;
+					return Global_262145.f_25337 /* Tunable: -132305813 */;
 				
 				case 5:
-					return Global_262145.f_25338;
+					return Global_262145.f_25338 /* Tunable: 1249433112 */;
 				
 				default:
 			}
@@ -23654,16 +23654,16 @@ int func_418(int iParam0, int iParam1, int iParam2)//Position - 0x17B1D
 					return 0;
 				
 				case 2:
-					return Global_262145.f_25335;
+					return Global_262145.f_25335 /* Tunable: -2140343856 */;
 				
 				case 3:
-					return Global_262145.f_25336;
+					return Global_262145.f_25336 /* Tunable: -1167118619 */;
 				
 				case 4:
-					return Global_262145.f_25337;
+					return Global_262145.f_25337 /* Tunable: -132305813 */;
 				
 				case 5:
-					return Global_262145.f_25338;
+					return Global_262145.f_25338 /* Tunable: 1249433112 */;
 				
 				default:
 			}
@@ -23679,16 +23679,16 @@ int func_418(int iParam0, int iParam1, int iParam2)//Position - 0x17B1D
 					return 0;
 				
 				case 2:
-					return Global_262145.f_25335;
+					return Global_262145.f_25335 /* Tunable: -2140343856 */;
 				
 				case 3:
-					return Global_262145.f_25336;
+					return Global_262145.f_25336 /* Tunable: -1167118619 */;
 				
 				case 4:
-					return Global_262145.f_25337;
+					return Global_262145.f_25337 /* Tunable: -132305813 */;
 				
 				case 5:
-					return Global_262145.f_25338;
+					return Global_262145.f_25338 /* Tunable: 1249433112 */;
 				
 				default:
 			}
@@ -24279,16 +24279,16 @@ int func_418(int iParam0, int iParam1, int iParam2)//Position - 0x17B1D
 					return 0;
 				
 				case 2:
-					return Global_262145.f_28672;
+					return Global_262145.f_28672 /* Tunable: 1609911012 */;
 				
 				case 3:
-					return Global_262145.f_28673;
+					return Global_262145.f_28673 /* Tunable: -68365255 */;
 				
 				case 4:
-					return Global_262145.f_28674;
+					return Global_262145.f_28674 /* Tunable: 1302605276 */;
 				
 				case 5:
-					return Global_262145.f_28675;
+					return Global_262145.f_28675 /* Tunable: 1897527067 */;
 				
 				default:
 			}
@@ -24304,16 +24304,16 @@ int func_418(int iParam0, int iParam1, int iParam2)//Position - 0x17B1D
 					return 0;
 				
 				case 2:
-					return Global_262145.f_28839;
+					return Global_262145.f_28839 /* Tunable: -115509788 */;
 				
 				case 3:
-					return Global_262145.f_28840;
+					return Global_262145.f_28840 /* Tunable: -1829268 */;
 				
 				case 4:
-					return Global_262145.f_28841;
+					return Global_262145.f_28841 /* Tunable: 1440688049 */;
 				
 				case 5:
-					return Global_262145.f_28842;
+					return Global_262145.f_28842 /* Tunable: 1927470758 */;
 				
 				default:
 			}
@@ -24329,16 +24329,16 @@ int func_418(int iParam0, int iParam1, int iParam2)//Position - 0x17B1D
 					return 0;
 				
 				case 2:
-					return Global_262145.f_28873;
+					return Global_262145.f_28873 /* Tunable: -544066833 */;
 				
 				case 3:
-					return Global_262145.f_28874;
+					return Global_262145.f_28874 /* Tunable: -2047978964 */;
 				
 				case 4:
-					return Global_262145.f_28875;
+					return Global_262145.f_28875 /* Tunable: 1531249671 */;
 				
 				case 5:
-					return Global_262145.f_28876;
+					return Global_262145.f_28876 /* Tunable: -1453293483 */;
 				
 				default:
 			}
@@ -24354,16 +24354,16 @@ int func_418(int iParam0, int iParam1, int iParam2)//Position - 0x17B1D
 					return 0;
 				
 				case 2:
-					return Global_262145.f_28877;
+					return Global_262145.f_28877 /* Tunable: 598612790 */;
 				
 				case 3:
-					return Global_262145.f_28878;
+					return Global_262145.f_28878 /* Tunable: 1078233149 */;
 				
 				case 4:
-					return Global_262145.f_28879;
+					return Global_262145.f_28879 /* Tunable: 1551564012 */;
 				
 				case 5:
-					return Global_262145.f_28880;
+					return Global_262145.f_28880 /* Tunable: -693952313 */;
 				
 				default:
 			}
@@ -24379,16 +24379,16 @@ int func_418(int iParam0, int iParam1, int iParam2)//Position - 0x17B1D
 					return 0;
 				
 				case 2:
-					return Global_262145.f_28568;
+					return Global_262145.f_28568 /* Tunable: 212778777 */;
 				
 				case 3:
-					return Global_262145.f_28569;
+					return Global_262145.f_28569 /* Tunable: 1730590555 */;
 				
 				case 4:
-					return Global_262145.f_28570;
+					return Global_262145.f_28570 /* Tunable: 599275937 */;
 				
 				case 5:
-					return Global_262145.f_28571;
+					return Global_262145.f_28571 /* Tunable: 790883802 */;
 				
 				default:
 			}
@@ -24404,16 +24404,16 @@ int func_418(int iParam0, int iParam1, int iParam2)//Position - 0x17B1D
 					return 0;
 				
 				case 2:
-					return Global_262145.f_28843;
+					return Global_262145.f_28843 /* Tunable: 1179057810 */;
 				
 				case 3:
-					return Global_262145.f_28844;
+					return Global_262145.f_28844 /* Tunable: -1060787570 */;
 				
 				case 4:
-					return Global_262145.f_28845;
+					return Global_262145.f_28845 /* Tunable: -672936783 */;
 				
 				case 5:
-					return Global_262145.f_28846;
+					return Global_262145.f_28846 /* Tunable: -193315003 */;
 				
 				default:
 			}
@@ -101409,37 +101409,37 @@ int func_746(int iParam0)//Position - 0x72FF7
 	switch (iParam0)
 	{
 		case joaat("apc"):
-			return Global_262145.f_21775;
+			return Global_262145.f_21775 /* Tunable: 1575762310 */;
 		
 		case joaat("ardent"):
-			return Global_262145.f_21776;
+			return Global_262145.f_21776 /* Tunable: 173237580 */;
 		
 		case joaat("nightshark"):
-			return Global_262145.f_21777;
+			return Global_262145.f_21777 /* Tunable: 865600008 */;
 		
 		case joaat("insurgent3"):
-			return Global_262145.f_21778;
+			return Global_262145.f_21778 /* Tunable: -1239057081 */;
 		
 		case joaat("technical3"):
-			return Global_262145.f_21779;
+			return Global_262145.f_21779 /* Tunable: 1841873022 */;
 		
 		case joaat("halftrack"):
-			return Global_262145.f_21780;
+			return Global_262145.f_21780 /* Tunable: 1157295393 */;
 		
 		case joaat("trailersmall2"):
-			return Global_262145.f_21781;
+			return Global_262145.f_21781 /* Tunable: 491947611 */;
 		
 		case joaat("tampa3"):
-			return Global_262145.f_21782;
+			return Global_262145.f_21782 /* Tunable: -669030359 */;
 		
 		case joaat("dune3"):
-			return Global_262145.f_21783;
+			return Global_262145.f_21783 /* Tunable: -1285542542 */;
 		
 		case joaat("oppressor"):
-			return Global_262145.f_21784;
+			return Global_262145.f_21784 /* Tunable: -1976214544 */;
 		
 		case joaat("vigilante"):
-			return Global_262145.f_22874;
+			return Global_262145.f_22874 /* Tunable: 2101062622 */;
 		
 		case joaat("thruster"):
 			return Global_262145.f_23444 /* Tunable: H2_BLOCK_THRUSTER_IN_HEISTS */;

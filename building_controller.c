@@ -526,7 +526,7 @@ void func_4()//Position - 0x485
 		}
 		if (!Global_1836153)
 		{
-			if (Global_262145.f_24746)
+			if (Global_262145.f_24746 /* Tunable: 1419194420 */)
 			{
 				if (STREAMING::IS_IPL_ACTIVE("h4_ClubPoster_KeineMusik"))
 				{
@@ -537,7 +537,7 @@ void func_4()//Position - 0x485
 			{
 				STREAMING::REQUEST_IPL("h4_ClubPoster_KeineMusik");
 			}
-			if (Global_262145.f_24745)
+			if (Global_262145.f_24745 /* Tunable: -2064797647 */)
 			{
 				if (STREAMING::IS_IPL_ACTIVE("h4_ClubPoster_MoodyMann"))
 				{
@@ -548,7 +548,7 @@ void func_4()//Position - 0x485
 			{
 				STREAMING::REQUEST_IPL("h4_ClubPoster_MoodyMann");
 			}
-			if (Global_262145.f_24747)
+			if (Global_262145.f_24747 /* Tunable: -2084724801 */)
 			{
 				if (STREAMING::IS_IPL_ACTIVE("h4_ClubPoster_PalmsTraxx"))
 				{

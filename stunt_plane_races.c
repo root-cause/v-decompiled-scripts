@@ -20677,10 +20677,10 @@ int func_503(int iParam0)//Position - 0x1A3A7
 	else if (iParam0 > iVar0)
 	{
 		fVar1 = (SYSTEM::TO_FLOAT(iParam0) - SYSTEM::TO_FLOAT(iVar0));
-		iVar2 = SYSTEM::FLOOR((fVar1 / SYSTEM::TO_FLOAT(Global_262145.f_31077)));
+		iVar2 = SYSTEM::FLOOR((fVar1 / SYSTEM::TO_FLOAT(Global_262145.f_31077 /* Tunable: 1335277880 */)));
 		return (199 + iVar2);
 	}
-	fVar3 = (SYSTEM::TO_FLOAT(Global_262145.f_31076) / 2f);
+	fVar3 = (SYSTEM::TO_FLOAT(Global_262145.f_31076 /* Tunable: -1131555628 */) / 2f);
 	fVar4 = (-(fVar3 * 3f) + fVar3);
 	fVar5 = fVar3;
 	fVar6 = ((-(fVar3 * 3f) + fVar4) + 100f);
@@ -20704,7 +20704,7 @@ int func_505(int iParam0)//Position - 0x1A491
 	float fVar1;
 	
 	fVar0 = SYSTEM::TO_FLOAT(iParam0);
-	fVar1 = (SYSTEM::TO_FLOAT(Global_262145.f_31076) / 2f);
+	fVar1 = (SYSTEM::TO_FLOAT(Global_262145.f_31076 /* Tunable: -1131555628 */) / 2f);
 	return SYSTEM::ROUND((((fVar0 * 100f) - 100f) + ((fVar0 - 3f) * ((fVar1 * (fVar0 - 3f)) + fVar1))));
 }
 

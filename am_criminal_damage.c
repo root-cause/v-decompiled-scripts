@@ -3877,22 +3877,22 @@ void func_99(char* sParam0, var uParam1, bool bParam2, int iParam3, int iParam4,
 			case joaat("CU_STUNT_CLOTHES"):
 				if (iParam5 == 11 || iParam5 == 8)
 				{
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17260));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17260 /* Tunable: 1979581212 */));
 					break;
 				}
 				if (iParam5 == 4)
 				{
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17261));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17261 /* Tunable: 1699234850 */));
 					break;
 				}
 				if (iParam5 == 7)
 				{
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17262));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17262 /* Tunable: 1188164683 */));
 					break;
 				}
 				if (iParam5 == 12)
 				{
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17265));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17265 /* Tunable: 208947051 */));
 				}
 			}
 	}
@@ -10639,7 +10639,7 @@ void func_108(int iParam0, var uParam1, int iParam2)//Position - 0xAD20
 					break;
 				
 				case joaat("CLO_TRM_O_R7"):
-					*uParam1 = Global_262145.f_31491;
+					*uParam1 = Global_262145.f_31491 /* Tunable: 2044506791 */;
 					break;
 				
 				case joaat("CLO_TRM_O_R8"):
@@ -11591,7 +11591,7 @@ void func_108(int iParam0, var uParam1, int iParam2)//Position - 0xAD20
 					break;
 				
 				case joaat("CLO_TRF_O_R7"):
-					*uParam1 = Global_262145.f_31491;
+					*uParam1 = Global_262145.f_31491 /* Tunable: 2044506791 */;
 					break;
 				
 				case joaat("CLO_TRF_O_R8"):
@@ -14068,7 +14068,7 @@ void func_109(int iParam0, var uParam1, int iParam2)//Position - 0xD01B
 			break;
 		
 		case joaat("CLO_H4M_DECL_39"):
-			*uParam1 = Global_262145.f_30476;
+			*uParam1 = Global_262145.f_30476 /* Tunable: -1243972377 */;
 			break;
 		
 		case joaat("CLO_H4M_DECL_41"):
@@ -14100,7 +14100,7 @@ void func_109(int iParam0, var uParam1, int iParam2)//Position - 0xD01B
 			break;
 		
 		case joaat("CLO_H4F_DECL_39"):
-			*uParam1 = Global_262145.f_30476;
+			*uParam1 = Global_262145.f_30476 /* Tunable: -1243972377 */;
 			break;
 		
 		case joaat("CLO_H4F_DECL_41"):
@@ -15017,15 +15017,15 @@ void func_110(int iParam0, var uParam1, int iParam2)//Position - 0xED64
 					break;
 				
 				case joaat("CLO_SUM_U_16_17"):
-					*uParam1 = Global_262145.f_29529;
+					*uParam1 = Global_262145.f_29529 /* Tunable: -2062495386 */;
 					break;
 				
 				case joaat("CLO_SUM_U_16_18"):
-					*uParam1 = Global_262145.f_29530;
+					*uParam1 = Global_262145.f_29530 /* Tunable: 619832563 */;
 					break;
 				
 				case joaat("CLO_SUM_U_16_19"):
-					*uParam1 = Global_262145.f_29531;
+					*uParam1 = Global_262145.f_29531 /* Tunable: 1050877194 */;
 					break;
 				
 				case joaat("CLO_SUM_U_17_0"):
@@ -15097,15 +15097,15 @@ void func_110(int iParam0, var uParam1, int iParam2)//Position - 0xED64
 					break;
 				
 				case joaat("CLO_SUM_U_17_17"):
-					*uParam1 = Global_262145.f_29529;
+					*uParam1 = Global_262145.f_29529 /* Tunable: -2062495386 */;
 					break;
 				
 				case joaat("CLO_SUM_U_17_18"):
-					*uParam1 = Global_262145.f_29530;
+					*uParam1 = Global_262145.f_29530 /* Tunable: 619832563 */;
 					break;
 				
 				case joaat("CLO_SUM_U_17_19"):
-					*uParam1 = Global_262145.f_29531;
+					*uParam1 = Global_262145.f_29531 /* Tunable: 1050877194 */;
 					break;
 				
 				case joaat("CLO_SUM_U_18_0"):
@@ -15308,7 +15308,7 @@ void func_110(int iParam0, var uParam1, int iParam2)//Position - 0xED64
 					break;
 				
 				case joaat("CLO_SUF_L_1_7"):
-					*uParam1 = Global_262145.f_29590;
+					*uParam1 = Global_262145.f_29590 /* Tunable: -1848618360 */;
 					break;
 				
 				case joaat("CLO_SUF_L_1_8"):
@@ -15540,7 +15540,7 @@ void func_110(int iParam0, var uParam1, int iParam2)//Position - 0xED64
 					break;
 				
 				case joaat("CLO_SUF_L_5_11"):
-					*uParam1 = Global_262145.f_29619;
+					*uParam1 = Global_262145.f_29619 /* Tunable: -1066030332 */;
 					break;
 				
 				case joaat("CLO_SUF_L_5_12"):
@@ -16008,7 +16008,7 @@ void func_110(int iParam0, var uParam1, int iParam2)//Position - 0xED64
 					break;
 				
 				case joaat("CLO_SUF_U_10_4"):
-					*uParam1 = Global_262145.f_29630;
+					*uParam1 = Global_262145.f_29630 /* Tunable: 2124740440 */;
 					break;
 				
 				case joaat("CLO_SUF_U_10_5"):
@@ -16036,7 +16036,7 @@ void func_110(int iParam0, var uParam1, int iParam2)//Position - 0xED64
 					break;
 				
 				case joaat("CLO_SUF_U_11_4"):
-					*uParam1 = Global_262145.f_29637;
+					*uParam1 = Global_262145.f_29637 /* Tunable: 1618660460 */;
 					break;
 				
 				case joaat("CLO_SUF_U_11_5"):
@@ -16064,7 +16064,7 @@ void func_110(int iParam0, var uParam1, int iParam2)//Position - 0xED64
 					break;
 				
 				case joaat("CLO_SUF_U_12_4"):
-					*uParam1 = Global_262145.f_29630;
+					*uParam1 = Global_262145.f_29630 /* Tunable: 2124740440 */;
 					break;
 				
 				case joaat("CLO_SUF_U_12_5"):
@@ -16092,7 +16092,7 @@ void func_110(int iParam0, var uParam1, int iParam2)//Position - 0xED64
 					break;
 				
 				case joaat("CLO_SUF_U_13_4"):
-					*uParam1 = Global_262145.f_29637;
+					*uParam1 = Global_262145.f_29637 /* Tunable: 1618660460 */;
 					break;
 				
 				case joaat("CLO_SUF_U_13_5"):
@@ -16448,15 +16448,15 @@ void func_110(int iParam0, var uParam1, int iParam2)//Position - 0xED64
 					break;
 				
 				case joaat("CLO_SUF_U_19_17"):
-					*uParam1 = Global_262145.f_29529;
+					*uParam1 = Global_262145.f_29529 /* Tunable: -2062495386 */;
 					break;
 				
 				case joaat("CLO_SUF_U_19_18"):
-					*uParam1 = Global_262145.f_29530;
+					*uParam1 = Global_262145.f_29530 /* Tunable: 619832563 */;
 					break;
 				
 				case joaat("CLO_SUF_U_19_19"):
-					*uParam1 = Global_262145.f_29531;
+					*uParam1 = Global_262145.f_29531 /* Tunable: 1050877194 */;
 					break;
 				
 				case joaat("CLO_SUF_U_20_0"):
@@ -16528,15 +16528,15 @@ void func_110(int iParam0, var uParam1, int iParam2)//Position - 0xED64
 					break;
 				
 				case joaat("CLO_SUF_U_20_17"):
-					*uParam1 = Global_262145.f_29529;
+					*uParam1 = Global_262145.f_29529 /* Tunable: -2062495386 */;
 					break;
 				
 				case joaat("CLO_SUF_U_20_18"):
-					*uParam1 = Global_262145.f_29530;
+					*uParam1 = Global_262145.f_29530 /* Tunable: 619832563 */;
 					break;
 				
 				case joaat("CLO_SUF_U_20_19"):
-					*uParam1 = Global_262145.f_29531;
+					*uParam1 = Global_262145.f_29531 /* Tunable: 1050877194 */;
 					break;
 				
 				case joaat("CLO_SUF_U_21_0"):
@@ -17463,67 +17463,67 @@ void func_111(int iParam0, var uParam1, int iParam2)//Position - 0x11D20
 					break;
 				
 				case joaat("CLO_H3M_PH_10_0"):
-					*uParam1 = Global_262145.f_29122;
+					*uParam1 = Global_262145.f_29122 /* Tunable: -1883837301 */;
 					break;
 				
 				case joaat("CLO_H3M_PH_10_1"):
-					*uParam1 = Global_262145.f_29123;
+					*uParam1 = Global_262145.f_29123 /* Tunable: -798694275 */;
 					break;
 				
 				case joaat("CLO_H3M_PH_10_2"):
-					*uParam1 = Global_262145.f_29124;
+					*uParam1 = Global_262145.f_29124 /* Tunable: -1155389265 */;
 					break;
 				
 				case joaat("CLO_H3M_PH_10_3"):
-					*uParam1 = Global_262145.f_29125;
+					*uParam1 = Global_262145.f_29125 /* Tunable: -451655856 */;
 					break;
 				
 				case joaat("CLO_H3M_PH_10_4"):
-					*uParam1 = Global_262145.f_29126;
+					*uParam1 = Global_262145.f_29126 /* Tunable: -5846860 */;
 					break;
 				
 				case joaat("CLO_H3M_PH_10_5"):
-					*uParam1 = Global_262145.f_29127;
+					*uParam1 = Global_262145.f_29127 /* Tunable: -873859144 */;
 					break;
 				
 				case joaat("CLO_H3M_PH_10_6"):
-					*uParam1 = Global_262145.f_29128;
+					*uParam1 = Global_262145.f_29128 /* Tunable: -449204377 */;
 					break;
 				
 				case joaat("CLO_H3M_PH_10_7"):
-					*uParam1 = Global_262145.f_29129;
+					*uParam1 = Global_262145.f_29129 /* Tunable: 726336069 */;
 					break;
 				
 				case joaat("CLO_H3M_PH_11_0"):
-					*uParam1 = Global_262145.f_29122;
+					*uParam1 = Global_262145.f_29122 /* Tunable: -1883837301 */;
 					break;
 				
 				case joaat("CLO_H3M_PH_11_1"):
-					*uParam1 = Global_262145.f_29123;
+					*uParam1 = Global_262145.f_29123 /* Tunable: -798694275 */;
 					break;
 				
 				case joaat("CLO_H3M_PH_11_2"):
-					*uParam1 = Global_262145.f_29124;
+					*uParam1 = Global_262145.f_29124 /* Tunable: -1155389265 */;
 					break;
 				
 				case joaat("CLO_H3M_PH_11_3"):
-					*uParam1 = Global_262145.f_29125;
+					*uParam1 = Global_262145.f_29125 /* Tunable: -451655856 */;
 					break;
 				
 				case joaat("CLO_H3M_PH_11_4"):
-					*uParam1 = Global_262145.f_29126;
+					*uParam1 = Global_262145.f_29126 /* Tunable: -5846860 */;
 					break;
 				
 				case joaat("CLO_H3M_PH_11_5"):
-					*uParam1 = Global_262145.f_29127;
+					*uParam1 = Global_262145.f_29127 /* Tunable: -873859144 */;
 					break;
 				
 				case joaat("CLO_H3M_PH_11_6"):
-					*uParam1 = Global_262145.f_29128;
+					*uParam1 = Global_262145.f_29128 /* Tunable: -449204377 */;
 					break;
 				
 				case joaat("CLO_H3M_PH_11_7"):
-					*uParam1 = Global_262145.f_29129;
+					*uParam1 = Global_262145.f_29129 /* Tunable: 726336069 */;
 					break;
 			}
 			break;
@@ -18856,67 +18856,67 @@ void func_111(int iParam0, var uParam1, int iParam2)//Position - 0x11D20
 					break;
 				
 				case joaat("CLO_H3F_PH_10_0"):
-					*uParam1 = Global_262145.f_29122;
+					*uParam1 = Global_262145.f_29122 /* Tunable: -1883837301 */;
 					break;
 				
 				case joaat("CLO_H3F_PH_10_1"):
-					*uParam1 = Global_262145.f_29123;
+					*uParam1 = Global_262145.f_29123 /* Tunable: -798694275 */;
 					break;
 				
 				case joaat("CLO_H3F_PH_10_2"):
-					*uParam1 = Global_262145.f_29124;
+					*uParam1 = Global_262145.f_29124 /* Tunable: -1155389265 */;
 					break;
 				
 				case joaat("CLO_H3F_PH_10_3"):
-					*uParam1 = Global_262145.f_29125;
+					*uParam1 = Global_262145.f_29125 /* Tunable: -451655856 */;
 					break;
 				
 				case joaat("CLO_H3F_PH_10_4"):
-					*uParam1 = Global_262145.f_29126;
+					*uParam1 = Global_262145.f_29126 /* Tunable: -5846860 */;
 					break;
 				
 				case joaat("CLO_H3F_PH_10_5"):
-					*uParam1 = Global_262145.f_29127;
+					*uParam1 = Global_262145.f_29127 /* Tunable: -873859144 */;
 					break;
 				
 				case joaat("CLO_H3F_PH_10_6"):
-					*uParam1 = Global_262145.f_29128;
+					*uParam1 = Global_262145.f_29128 /* Tunable: -449204377 */;
 					break;
 				
 				case joaat("CLO_H3F_PH_10_7"):
-					*uParam1 = Global_262145.f_29129;
+					*uParam1 = Global_262145.f_29129 /* Tunable: 726336069 */;
 					break;
 				
 				case joaat("CLO_H3F_PH_11_0"):
-					*uParam1 = Global_262145.f_29122;
+					*uParam1 = Global_262145.f_29122 /* Tunable: -1883837301 */;
 					break;
 				
 				case joaat("CLO_H3F_PH_11_1"):
-					*uParam1 = Global_262145.f_29123;
+					*uParam1 = Global_262145.f_29123 /* Tunable: -798694275 */;
 					break;
 				
 				case joaat("CLO_H3F_PH_11_2"):
-					*uParam1 = Global_262145.f_29124;
+					*uParam1 = Global_262145.f_29124 /* Tunable: -1155389265 */;
 					break;
 				
 				case joaat("CLO_H3F_PH_11_3"):
-					*uParam1 = Global_262145.f_29125;
+					*uParam1 = Global_262145.f_29125 /* Tunable: -451655856 */;
 					break;
 				
 				case joaat("CLO_H3F_PH_11_4"):
-					*uParam1 = Global_262145.f_29126;
+					*uParam1 = Global_262145.f_29126 /* Tunable: -5846860 */;
 					break;
 				
 				case joaat("CLO_H3F_PH_11_5"):
-					*uParam1 = Global_262145.f_29127;
+					*uParam1 = Global_262145.f_29127 /* Tunable: -873859144 */;
 					break;
 				
 				case joaat("CLO_H3F_PH_11_6"):
-					*uParam1 = Global_262145.f_29128;
+					*uParam1 = Global_262145.f_29128 /* Tunable: -449204377 */;
 					break;
 				
 				case joaat("CLO_H3F_PH_11_7"):
-					*uParam1 = Global_262145.f_29129;
+					*uParam1 = Global_262145.f_29129 /* Tunable: 726336069 */;
 					break;
 			}
 			break;
@@ -19979,7 +19979,7 @@ void func_112(int iParam0, var uParam1, int iParam2)//Position - 0x14EE4
 					break;
 				
 				case joaat("CLO_VWM_U_15_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27421) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27421 /* Tunable: 730689216 */) * 1f));
 					break;
 				
 				case joaat("CLO_VWM_U_15_4"):
@@ -20059,7 +20059,7 @@ void func_112(int iParam0, var uParam1, int iParam2)//Position - 0x14EE4
 					break;
 				
 				case joaat("CLO_VWM_U_17_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27441) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27441 /* Tunable: -281123609 */) * 1f));
 					break;
 				
 				case joaat("CLO_VWM_U_17_2"):
@@ -20091,11 +20091,11 @@ void func_112(int iParam0, var uParam1, int iParam2)//Position - 0x14EE4
 					break;
 				
 				case joaat("CLO_VWM_U_17_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27449) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27449 /* Tunable: -1157988221 */) * 1f));
 					break;
 				
 				case joaat("CLO_VWM_U_17_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27450) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27450 /* Tunable: 144233227 */) * 1f));
 					break;
 				
 				case joaat("CLO_VWM_U_17_11"):
@@ -21335,27 +21335,27 @@ void func_112(int iParam0, var uParam1, int iParam2)//Position - 0x14EE4
 					break;
 				
 				case joaat("CLO_VWM_PW_8_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27634) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27634 /* Tunable: -1626530340 */) * 1f));
 					break;
 				
 				case joaat("CLO_VWM_PW_8_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27635) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27635 /* Tunable: 305568433 */) * 1f));
 					break;
 				
 				case joaat("CLO_VWM_PW_8_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27636) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27636 /* Tunable: 1866952932 */) * 1f));
 					break;
 				
 				case joaat("CLO_VWM_PW_9_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27637) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27637 /* Tunable: 1686671523 */) * 1f));
 					break;
 				
 				case joaat("CLO_VWM_PW_9_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27638) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27638 /* Tunable: 866995344 */) * 1f));
 					break;
 				
 				case joaat("CLO_VWM_PW_9_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27639) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27639 /* Tunable: -1959480083 */) * 1f));
 					break;
 			}
 			break;
@@ -22050,7 +22050,7 @@ void func_112(int iParam0, var uParam1, int iParam2)//Position - 0x14EE4
 					break;
 				
 				case joaat("CLO_VWF_U_13_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27421) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27421 /* Tunable: 730689216 */) * 1f));
 					break;
 				
 				case joaat("CLO_VWF_U_13_4"):
@@ -22130,7 +22130,7 @@ void func_112(int iParam0, var uParam1, int iParam2)//Position - 0x14EE4
 					break;
 				
 				case joaat("CLO_VWF_U_15_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27441) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27441 /* Tunable: -281123609 */) * 1f));
 					break;
 				
 				case joaat("CLO_VWF_U_15_2"):
@@ -22162,11 +22162,11 @@ void func_112(int iParam0, var uParam1, int iParam2)//Position - 0x14EE4
 					break;
 				
 				case joaat("CLO_VWF_U_15_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27449) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27449 /* Tunable: -1157988221 */) * 1f));
 					break;
 				
 				case joaat("CLO_VWF_U_15_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27450) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27450 /* Tunable: 144233227 */) * 1f));
 					break;
 				
 				case joaat("CLO_VWF_U_15_11"):
@@ -23470,27 +23470,27 @@ void func_112(int iParam0, var uParam1, int iParam2)//Position - 0x14EE4
 					break;
 				
 				case joaat("CLO_VWF_PW_8_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27634) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27634 /* Tunable: -1626530340 */) * 1f));
 					break;
 				
 				case joaat("CLO_VWF_PW_8_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27635) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27635 /* Tunable: 305568433 */) * 1f));
 					break;
 				
 				case joaat("CLO_VWF_PW_8_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27636) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27636 /* Tunable: 1866952932 */) * 1f));
 					break;
 				
 				case joaat("CLO_VWF_PW_9_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27637) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27637 /* Tunable: 1686671523 */) * 1f));
 					break;
 				
 				case joaat("CLO_VWF_PW_9_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27638) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27638 /* Tunable: 866995344 */) * 1f));
 					break;
 				
 				case joaat("CLO_VWF_PW_9_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27639) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27639 /* Tunable: -1959480083 */) * 1f));
 					break;
 			}
 			break;
@@ -23931,75 +23931,75 @@ void func_113(int iParam0, var uParam1, int iParam2)//Position - 0x1CE93
 			switch (iParam0)
 			{
 				case joaat("CLO_AWM_U_1_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26257) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26257 /* Tunable: -409900672 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26258) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26258 /* Tunable: -588229570 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26259) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26259 /* Tunable: -1020485449 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26260) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26260 /* Tunable: -1167159493 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26261) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26261 /* Tunable: 40542002 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26262) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26262 /* Tunable: 816675767 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26263) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26263 /* Tunable: 1589434301 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26264) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26264 /* Tunable: 204845768 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26265) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26265 /* Tunable: -725630003 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26266) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26266 /* Tunable: -1321810327 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26267) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26267 /* Tunable: -664169270 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26268) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26268 /* Tunable: -353322536 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26269) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26269 /* Tunable: -174829793 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26270) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26270 /* Tunable: 108425443 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_16"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26271) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26271 /* Tunable: 286197268 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26272) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26272 /* Tunable: 600583054 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_18"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26273) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26273 /* Tunable: 1794128341 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_19"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26274) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26274 /* Tunable: 1019108722 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_3_0"):
@@ -24476,83 +24476,83 @@ void func_113(int iParam0, var uParam1, int iParam2)//Position - 0x1CE93
 					break;
 				
 				case joaat("CLO_AWM_F_7_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26237) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26237 /* Tunable: -20915801 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_7_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26238) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26238 /* Tunable: 269581384 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_7_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26239) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26239 /* Tunable: 1402012510 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_7_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26240) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26240 /* Tunable: 1683793141 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_7_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26241) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26241 /* Tunable: 932596561 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_7_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26242) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26242 /* Tunable: 1240264702 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_7_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26243) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26243 /* Tunable: -1348256915 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_7_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26244) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26244 /* Tunable: -2118688874 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_8_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26245) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26245 /* Tunable: 464265198 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_8_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26246) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26246 /* Tunable: -1988920453 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_8_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26247) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26247 /* Tunable: 1814642919 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_8_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26248) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26248 /* Tunable: 1642540131 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_8_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26249) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26249 /* Tunable: 1923075544 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_8_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26250) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26250 /* Tunable: 1611278509 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_8_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26251) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26251 /* Tunable: -953092355 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_8_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26252) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26252 /* Tunable: -1260236192 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_8_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26253) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26253 /* Tunable: -1521241277 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_8_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26254) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26254 /* Tunable: -1963435437 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_8_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26255) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26255 /* Tunable: -167366543 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_8_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26256) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26256 /* Tunable: -398224148 */) * 1f));
 					break;
 			}
 			break;
@@ -24774,67 +24774,67 @@ void func_113(int iParam0, var uParam1, int iParam2)//Position - 0x1CE93
 			switch (iParam0)
 			{
 				case joaat("CLO_AWM_B_2_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26142) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26142 /* Tunable: -234158218 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26143) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26143 /* Tunable: 1136962280 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26144) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26144 /* Tunable: 361156205 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26145) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26145 /* Tunable: 1491948857 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26146) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26146 /* Tunable: 849217691 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26147) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26147 /* Tunable: 2087328818 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26148) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26148 /* Tunable: -2009058338 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26149) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26149 /* Tunable: -1652072852 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26150) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26150 /* Tunable: -1462668032 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26151) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26151 /* Tunable: 1374439456 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26152) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26152 /* Tunable: 1742500864 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26153) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26153 /* Tunable: 659092618 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26154) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26154 /* Tunable: 420861988 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26155) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26155 /* Tunable: -875315807 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26156) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26156 /* Tunable: -563748155 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26157) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26157 /* Tunable: -830520584 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_3_0"):
@@ -25456,75 +25456,75 @@ void func_113(int iParam0, var uParam1, int iParam2)//Position - 0x1CE93
 			switch (iParam0)
 			{
 				case joaat("CLO_AWF_U_1_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26257) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26257 /* Tunable: -409900672 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26258) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26258 /* Tunable: -588229570 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26259) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26259 /* Tunable: -1020485449 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26260) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26260 /* Tunable: -1167159493 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26261) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26261 /* Tunable: 40542002 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26262) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26262 /* Tunable: 816675767 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26263) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26263 /* Tunable: 1589434301 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26264) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26264 /* Tunable: 204845768 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26265) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26265 /* Tunable: -725630003 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26266) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26266 /* Tunable: -1321810327 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26267) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26267 /* Tunable: -664169270 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26268) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26268 /* Tunable: -353322536 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26269) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26269 /* Tunable: -174829793 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26270) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26270 /* Tunable: 108425443 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_16"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26271) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26271 /* Tunable: 286197268 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26272) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26272 /* Tunable: 600583054 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_18"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26273) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26273 /* Tunable: 1794128341 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_19"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26274) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26274 /* Tunable: 1019108722 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_3_0"):
@@ -26001,83 +26001,83 @@ void func_113(int iParam0, var uParam1, int iParam2)//Position - 0x1CE93
 					break;
 				
 				case joaat("CLO_AWF_F_7_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26237) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26237 /* Tunable: -20915801 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_7_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26238) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26238 /* Tunable: 269581384 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_7_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26239) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26239 /* Tunable: 1402012510 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_7_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26240) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26240 /* Tunable: 1683793141 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_7_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26241) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26241 /* Tunable: 932596561 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_7_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26242) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26242 /* Tunable: 1240264702 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_7_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26243) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26243 /* Tunable: -1348256915 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_7_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26244) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26244 /* Tunable: -2118688874 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_8_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26245) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26245 /* Tunable: 464265198 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_8_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26246) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26246 /* Tunable: -1988920453 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_8_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26247) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26247 /* Tunable: 1814642919 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_8_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26248) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26248 /* Tunable: 1642540131 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_8_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26249) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26249 /* Tunable: 1923075544 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_8_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26250) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26250 /* Tunable: 1611278509 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_8_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26251) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26251 /* Tunable: -953092355 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_8_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26252) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26252 /* Tunable: -1260236192 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_8_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26253) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26253 /* Tunable: -1521241277 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_8_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26254) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26254 /* Tunable: -1963435437 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_8_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26255) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26255 /* Tunable: -167366543 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_8_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26256) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26256 /* Tunable: -398224148 */) * 1f));
 					break;
 			}
 			break;
@@ -26299,67 +26299,67 @@ void func_113(int iParam0, var uParam1, int iParam2)//Position - 0x1CE93
 			switch (iParam0)
 			{
 				case joaat("CLO_AWF_B_2_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26142) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26142 /* Tunable: -234158218 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26143) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26143 /* Tunable: 1136962280 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26144) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26144 /* Tunable: 361156205 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26145) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26145 /* Tunable: 1491948857 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26146) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26146 /* Tunable: 849217691 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26147) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26147 /* Tunable: 2087328818 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26148) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26148 /* Tunable: -2009058338 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26149) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26149 /* Tunable: -1652072852 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26150) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26150 /* Tunable: -1462668032 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26151) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26151 /* Tunable: 1374439456 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26152) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26152 /* Tunable: 1742500864 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26153) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26153 /* Tunable: 659092618 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26154) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26154 /* Tunable: 420861988 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26155) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26155 /* Tunable: -875315807 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26156) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26156 /* Tunable: -563748155 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26157) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26157 /* Tunable: -830520584 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_3_0"):
@@ -33679,7 +33679,7 @@ void func_121(int iParam0, var uParam1, int iParam2)//Position - 0x2C396
 					break;
 				
 				case joaat("CLO_SMM_B_3_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22404) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22404 /* Tunable: 749770636 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_3_18"):
@@ -33699,269 +33699,269 @@ void func_121(int iParam0, var uParam1, int iParam2)//Position - 0x2C396
 					break;
 				
 				case joaat("CLO_SMM_B_4_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22409) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22409 /* Tunable: -1492946770 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22410) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22410 /* Tunable: -463532632 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22411) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22411 /* Tunable: 1372436366 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22412) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22412 /* Tunable: 208486718 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22413) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22413 /* Tunable: -1506585770 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22414) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22414 /* Tunable: 1387962429 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22415) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22415 /* Tunable: 1112796330 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22416) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22416 /* Tunable: -1837423225 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22417) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22417 /* Tunable: 1906870284 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22418) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22418 /* Tunable: 2145675547 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22419) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22419 /* Tunable: -425631516 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22420) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22420 /* Tunable: -924497294 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22421) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22421 /* Tunable: 1640566609 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22422) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22422 /* Tunable: 1046871718 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22423) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22423 /* Tunable: -1512354612 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22424) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22424 /* Tunable: -1831721917 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_16"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22425) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22425 /* Tunable: 1238659817 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22426) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22426 /* Tunable: 1299154959 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_18"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22427) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22427 /* Tunable: -833678379 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_19"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22428) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22428 /* Tunable: -1495317930 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_20"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22429) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22429 /* Tunable: 1826388452 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_21"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22430) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22430 /* Tunable: -107646406 */) * 1f));
 					break;
 			}
 			switch (iParam0)
 			{
 				case joaat("CLO_SMM_B_5_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22431) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22431 /* Tunable: 1290085438 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22432) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22432 /* Tunable: 1596047290 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22433) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22433 /* Tunable: 1925296366 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22434) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22434 /* Tunable: -136553320 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22435) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22435 /* Tunable: -195414787 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22436) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22436 /* Tunable: 136076146 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22437) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22437 /* Tunable: -1199067303 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22438) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22438 /* Tunable: 2077332930 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22439) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22439 /* Tunable: 182923297 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22440) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22440 /* Tunable: -1354077030 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22441) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22441 /* Tunable: 633038981 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22442) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22442 /* Tunable: 1242552928 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22443) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22443 /* Tunable: 434807563 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22444) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22444 /* Tunable: -1624987959 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22445) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22445 /* Tunable: -70955600 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22446) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22446 /* Tunable: -768117945 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_16"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22447) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22447 /* Tunable: 1066104868 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22448) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22448 /* Tunable: 1006661327 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_18"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22449) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22449 /* Tunable: -2123264974 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_19"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22450) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22450 /* Tunable: -213889030 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_20"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22451) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22451 /* Tunable: 110806728 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_21"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22452) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22452 /* Tunable: -1833920445 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22453) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22453 /* Tunable: -184557821 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22454) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22454 /* Tunable: 2001117287 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22455) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22455 /* Tunable: 79521103 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22456) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22456 /* Tunable: -64094494 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22457) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22457 /* Tunable: -1643830001 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22458) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22458 /* Tunable: 1285708777 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22459) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22459 /* Tunable: 1234555954 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22460) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22460 /* Tunable: 689620437 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22461) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22461 /* Tunable: -2006096918 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22462) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22462 /* Tunable: -334137884 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22463) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22463 /* Tunable: -937216931 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22464) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22464 /* Tunable: -1500776364 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22465) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22465 /* Tunable: 880477018 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22466) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22466 /* Tunable: 119002485 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22467) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22467 /* Tunable: -1161485380 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22468) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22468 /* Tunable: -1426139156 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_16"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22469) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22469 /* Tunable: 626169223 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22470) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22470 /* Tunable: -843945452 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_18"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22471) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22471 /* Tunable: -46782592 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_19"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22472) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22472 /* Tunable: -2098981569 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_20"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22473) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22473 /* Tunable: -1757860601 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_21"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22474) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22474 /* Tunable: 2050641957 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_7_0"):
@@ -34101,11 +34101,11 @@ void func_121(int iParam0, var uParam1, int iParam2)//Position - 0x2C396
 					break;
 				
 				case joaat("CLO_SMM_B_8_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22509) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22509 /* Tunable: -1476576007 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_8_18"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22510) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22510 /* Tunable: 217207198 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_8_19"):
@@ -34370,7 +34370,7 @@ void func_121(int iParam0, var uParam1, int iParam2)//Position - 0x2C396
 					break;
 				
 				case joaat("CLO_SMM_PH_1_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22200) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22200 /* Tunable: -1530220146 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_PH_1_7"):
@@ -34986,11 +34986,11 @@ void func_121(int iParam0, var uParam1, int iParam2)//Position - 0x2C396
 			break;
 		
 		case joaat("CLO_SMM_DECL_14"):
-			*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22145) * 1f));
+			*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22145 /* Tunable: -1021387358 */) * 1f));
 			break;
 		
 		case joaat("CLO_SMM_DECL_15"):
-			*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22146) * 1f));
+			*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22146 /* Tunable: 559894657 */) * 1f));
 			break;
 		
 		case joaat("CLO_SMM_DECL_16"):
@@ -35859,7 +35859,7 @@ void func_121(int iParam0, var uParam1, int iParam2)//Position - 0x2C396
 					break;
 				
 				case joaat("CLO_SMF_B_3_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22404) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22404 /* Tunable: 749770636 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_3_18"):
@@ -35879,269 +35879,269 @@ void func_121(int iParam0, var uParam1, int iParam2)//Position - 0x2C396
 					break;
 				
 				case joaat("CLO_SMF_B_4_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22409) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22409 /* Tunable: -1492946770 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22410) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22410 /* Tunable: -463532632 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22411) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22411 /* Tunable: 1372436366 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22412) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22412 /* Tunable: 208486718 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22413) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22413 /* Tunable: -1506585770 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22414) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22414 /* Tunable: 1387962429 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22415) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22415 /* Tunable: 1112796330 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22416) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22416 /* Tunable: -1837423225 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22417) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22417 /* Tunable: 1906870284 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22418) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22418 /* Tunable: 2145675547 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22419) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22419 /* Tunable: -425631516 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22420) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22420 /* Tunable: -924497294 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22421) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22421 /* Tunable: 1640566609 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22422) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22422 /* Tunable: 1046871718 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22423) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22423 /* Tunable: -1512354612 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22424) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22424 /* Tunable: -1831721917 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_16"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22425) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22425 /* Tunable: 1238659817 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22426) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22426 /* Tunable: 1299154959 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_18"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22427) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22427 /* Tunable: -833678379 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_19"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22428) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22428 /* Tunable: -1495317930 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_20"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22429) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22429 /* Tunable: 1826388452 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_21"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22430) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22430 /* Tunable: -107646406 */) * 1f));
 					break;
 			}
 			switch (iParam0)
 			{
 				case joaat("CLO_SMF_B_5_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22431) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22431 /* Tunable: 1290085438 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22432) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22432 /* Tunable: 1596047290 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22433) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22433 /* Tunable: 1925296366 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22434) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22434 /* Tunable: -136553320 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22435) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22435 /* Tunable: -195414787 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22436) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22436 /* Tunable: 136076146 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22437) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22437 /* Tunable: -1199067303 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22438) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22438 /* Tunable: 2077332930 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22439) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22439 /* Tunable: 182923297 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22440) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22440 /* Tunable: -1354077030 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22441) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22441 /* Tunable: 633038981 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22442) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22442 /* Tunable: 1242552928 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22443) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22443 /* Tunable: 434807563 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22444) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22444 /* Tunable: -1624987959 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22445) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22445 /* Tunable: -70955600 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22446) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22446 /* Tunable: -768117945 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_16"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22447) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22447 /* Tunable: 1066104868 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22448) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22448 /* Tunable: 1006661327 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_18"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22449) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22449 /* Tunable: -2123264974 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_19"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22450) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22450 /* Tunable: -213889030 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_20"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22451) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22451 /* Tunable: 110806728 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_21"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22452) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22452 /* Tunable: -1833920445 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22453) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22453 /* Tunable: -184557821 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22454) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22454 /* Tunable: 2001117287 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22455) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22455 /* Tunable: 79521103 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22456) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22456 /* Tunable: -64094494 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22457) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22457 /* Tunable: -1643830001 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22458) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22458 /* Tunable: 1285708777 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22459) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22459 /* Tunable: 1234555954 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22460) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22460 /* Tunable: 689620437 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22461) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22461 /* Tunable: -2006096918 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22462) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22462 /* Tunable: -334137884 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22463) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22463 /* Tunable: -937216931 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22464) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22464 /* Tunable: -1500776364 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22465) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22465 /* Tunable: 880477018 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22466) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22466 /* Tunable: 119002485 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22467) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22467 /* Tunable: -1161485380 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22468) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22468 /* Tunable: -1426139156 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_16"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22469) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22469 /* Tunable: 626169223 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22470) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22470 /* Tunable: -843945452 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_18"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22471) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22471 /* Tunable: -46782592 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_19"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22472) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22472 /* Tunable: -2098981569 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_20"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22473) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22473 /* Tunable: -1757860601 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_21"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22474) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22474 /* Tunable: 2050641957 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_7_0"):
@@ -36281,11 +36281,11 @@ void func_121(int iParam0, var uParam1, int iParam2)//Position - 0x2C396
 					break;
 				
 				case joaat("CLO_SMF_B_8_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22509) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22509 /* Tunable: -1476576007 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_8_18"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22510) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22510 /* Tunable: 217207198 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_8_19"):
@@ -36550,7 +36550,7 @@ void func_121(int iParam0, var uParam1, int iParam2)//Position - 0x2C396
 					break;
 				
 				case joaat("CLO_SMF_PH_1_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22200) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22200 /* Tunable: -1530220146 */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_PH_1_7"):
@@ -37166,11 +37166,11 @@ void func_121(int iParam0, var uParam1, int iParam2)//Position - 0x2C396
 			break;
 		
 		case joaat("CLO_SMF_DECL_14"):
-			*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22145) * 1f));
+			*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22145 /* Tunable: -1021387358 */) * 1f));
 			break;
 		
 		case joaat("CLO_SMF_DECL_15"):
-			*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22146) * 1f));
+			*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22146 /* Tunable: 559894657 */) * 1f));
 			break;
 		
 		case joaat("CLO_SMF_DECL_16"):
@@ -37849,11 +37849,11 @@ void func_122(int iParam0, var uParam1, int iParam2)//Position - 0x34131
 					break;
 				
 				case joaat("CLO_GRM_U_11_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19118) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19118 /* Tunable: 351409294 */) * 1f));
 					break;
 				
 				case joaat("CLO_GRM_U_11_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19119) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19119 /* Tunable: 1338028187 */) * 1f));
 					break;
 				
 				case joaat("CLO_GRM_U_13_0"):
@@ -38301,7 +38301,7 @@ void func_122(int iParam0, var uParam1, int iParam2)//Position - 0x34131
 					break;
 				
 				case joaat("CLO_GRM_U_17_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20689) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20689 /* Tunable: -518770784 */) * 1f));
 					break;
 				
 				case joaat("CLO_GRM_U_17_8"):
@@ -38349,7 +38349,7 @@ void func_122(int iParam0, var uParam1, int iParam2)//Position - 0x34131
 					break;
 				
 				case joaat("CLO_GRM_U_18_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20701) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20701 /* Tunable: -1285105064 */) * 1f));
 					break;
 				
 				case joaat("CLO_GRM_U_18_8"):
@@ -41156,11 +41156,11 @@ void func_122(int iParam0, var uParam1, int iParam2)//Position - 0x34131
 					break;
 				
 				case joaat("CLO_GRF_U_17_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19119) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19119 /* Tunable: 1338028187 */) * 1f));
 					break;
 				
 				case joaat("CLO_GRF_U_17_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19118) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19118 /* Tunable: 351409294 */) * 1f));
 					break;
 				
 				case joaat("CLO_GRF_U_19_0"):
@@ -41610,7 +41610,7 @@ void func_122(int iParam0, var uParam1, int iParam2)//Position - 0x34131
 					break;
 				
 				case joaat("CLO_GRF_U_23_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20689) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20689 /* Tunable: -518770784 */) * 1f));
 					break;
 				
 				case joaat("CLO_GRF_U_23_8"):
@@ -41658,7 +41658,7 @@ void func_122(int iParam0, var uParam1, int iParam2)//Position - 0x34131
 					break;
 				
 				case joaat("CLO_GRF_U_24_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20701) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20701 /* Tunable: -1285105064 */) * 1f));
 					break;
 				
 				case joaat("CLO_GRF_U_24_8"):
@@ -43935,7 +43935,7 @@ void func_123(int iParam0, var uParam1, int iParam2)//Position - 0x3F2B6
 					break;
 				
 				case joaat("CLO_IEM_U_7_24"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20044) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20044 /* Tunable: 662019820 */) * 1f));
 					break;
 				
 				case joaat("CLO_IEM_U_7_25"):
@@ -44386,7 +44386,7 @@ void func_123(int iParam0, var uParam1, int iParam2)//Position - 0x3F2B6
 					break;
 				
 				case joaat("CLO_IEM_PH_0_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19955) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19955 /* Tunable: 1113883327 */) * 1f));
 					break;
 			}
 			break;
@@ -45114,7 +45114,7 @@ void func_123(int iParam0, var uParam1, int iParam2)//Position - 0x3F2B6
 					break;
 				
 				case joaat("CLO_IEF_U_7_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20061) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20061 /* Tunable: 1358005315 */) * 1f));
 					break;
 				
 				case joaat("CLO_IEF_U_7_16"):
@@ -45499,7 +45499,7 @@ void func_123(int iParam0, var uParam1, int iParam2)//Position - 0x3F2B6
 					break;
 				
 				case joaat("CLO_IEF_L_7_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20089) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20089 /* Tunable: -786753656 */) * 1f));
 					break;
 				
 				case joaat("CLO_IEF_L_7_1"):
@@ -45543,7 +45543,7 @@ void func_123(int iParam0, var uParam1, int iParam2)//Position - 0x3F2B6
 					break;
 				
 				case joaat("CLO_IEF_L_7_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20100) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20100 /* Tunable: 1585660410 */) * 1f));
 					break;
 				
 				case joaat("CLO_IEF_L_7_12"):
@@ -45942,7 +45942,7 @@ void func_123(int iParam0, var uParam1, int iParam2)//Position - 0x3F2B6
 					break;
 				
 				case joaat("CLO_IEF_PH_0_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19955) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19955 /* Tunable: 1113883327 */) * 1f));
 					break;
 			}
 			break;
@@ -46329,7 +46329,7 @@ void func_124(int iParam0, var uParam1, int iParam2)//Position - 0x43783
 					break;
 				
 				case joaat("CLO_BIM_U_27_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19052) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19052 /* Tunable: 856934241 */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_U_27_1"):
@@ -46337,11 +46337,11 @@ void func_124(int iParam0, var uParam1, int iParam2)//Position - 0x43783
 					break;
 				
 				case joaat("CLO_BIM_U_27_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19116) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19116 /* Tunable: 256860553 */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_U_27_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19117) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19117 /* Tunable: 1404361433 */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_U_28_0"):
@@ -46353,11 +46353,11 @@ void func_124(int iParam0, var uParam1, int iParam2)//Position - 0x43783
 					break;
 				
 				case joaat("CLO_BIM_U_28_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19118) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19118 /* Tunable: 351409294 */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_U_28_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19119) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19119 /* Tunable: 1338028187 */) * 1f));
 					break;
 			}
 			break;
@@ -46571,51 +46571,51 @@ void func_124(int iParam0, var uParam1, int iParam2)//Position - 0x43783
 			switch (iParam0)
 			{
 				case joaat("CLO_BIM_L_0_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17760) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17760 /* Tunable: -2082997146 */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_L_0_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17761) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17761 /* Tunable: -19617557 */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_L_0_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17762) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17762 /* Tunable: 1026488929 */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_L_0_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17763) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17763 /* Tunable: -950934847 */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_L_0_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17764) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17764 /* Tunable: -1057665268 */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_L_0_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17765) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17765 /* Tunable: 1732949115 */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_L_2_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17766) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17766 /* Tunable: -2064060734 */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_L_2_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17767) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17767 /* Tunable: 1345293233 */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_L_2_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17768) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17768 /* Tunable: 833357766 */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_L_2_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17769) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17769 /* Tunable: 1888850575 */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_L_2_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17770) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17770 /* Tunable: 60374226 */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_L_2_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17771) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17771 /* Tunable: -1419756402 */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_L_4_0"):
@@ -46749,43 +46749,43 @@ void func_124(int iParam0, var uParam1, int iParam2)//Position - 0x43783
 			switch (iParam0)
 			{
 				case joaat("CLO_BIM_O_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19056));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19056 /* Tunable: -671910499 */));
 					break;
 				
 				case joaat("CLO_BIM_O_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19057));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19057 /* Tunable: 962541679 */));
 					break;
 				
 				case joaat("CLO_BIM_O_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19058));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19058 /* Tunable: 1353606925 */));
 					break;
 				
 				case joaat("CLO_BIM_O_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19059));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19059 /* Tunable: 1053213502 */));
 					break;
 				
 				case joaat("CLO_BIM_O_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19060));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19060 /* Tunable: -191615270 */));
 					break;
 				
 				case joaat("CLO_BIM_O_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19061));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19061 /* Tunable: 1920510641 */));
 					break;
 				
 				case joaat("CLO_BIM_O_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19062));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19062 /* Tunable: 1706529071 */));
 					break;
 				
 				case joaat("CLO_BIM_O_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19063));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19063 /* Tunable: -1688798099 */));
 					break;
 				
 				case joaat("CLO_BIM_O_16"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19064));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19064 /* Tunable: -1987553072 */));
 					break;
 				
 				case joaat("CLO_BIM_O_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19065));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19065 /* Tunable: -1328238221 */));
 					break;
 			}
 			break;
@@ -47868,7 +47868,7 @@ void func_124(int iParam0, var uParam1, int iParam2)//Position - 0x43783
 					break;
 				
 				case joaat("CLO_BIF_U_32_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19052) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19052 /* Tunable: 856934241 */) * 1f));
 					break;
 				
 				case joaat("CLO_BIF_U_32_1"):
@@ -47876,11 +47876,11 @@ void func_124(int iParam0, var uParam1, int iParam2)//Position - 0x43783
 					break;
 				
 				case joaat("CLO_BIF_U_32_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19116) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19116 /* Tunable: 256860553 */) * 1f));
 					break;
 				
 				case joaat("CLO_BIF_U_32_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19117) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19117 /* Tunable: 1404361433 */) * 1f));
 					break;
 				
 				case joaat("CLO_BIF_U_33_0"):
@@ -47892,11 +47892,11 @@ void func_124(int iParam0, var uParam1, int iParam2)//Position - 0x43783
 					break;
 				
 				case joaat("CLO_BIF_U_33_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19118) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19118 /* Tunable: 351409294 */) * 1f));
 					break;
 				
 				case joaat("CLO_BIF_U_33_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19119) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19119 /* Tunable: 1338028187 */) * 1f));
 					break;
 			}
 			break;
@@ -48698,43 +48698,43 @@ void func_124(int iParam0, var uParam1, int iParam2)//Position - 0x43783
 			switch (iParam0)
 			{
 				case joaat("CLO_BIF_O_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19056));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19056 /* Tunable: -671910499 */));
 					break;
 				
 				case joaat("CLO_BIF_O_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19057));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19057 /* Tunable: 962541679 */));
 					break;
 				
 				case joaat("CLO_BIF_O_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19058));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19058 /* Tunable: 1353606925 */));
 					break;
 				
 				case joaat("CLO_BIF_O_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19059));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19059 /* Tunable: 1053213502 */));
 					break;
 				
 				case joaat("CLO_BIF_O_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19060));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19060 /* Tunable: -191615270 */));
 					break;
 				
 				case joaat("CLO_BIF_O_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19061));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19061 /* Tunable: 1920510641 */));
 					break;
 				
 				case joaat("CLO_BIF_O_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19062));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19062 /* Tunable: 1706529071 */));
 					break;
 				
 				case joaat("CLO_BIF_O_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19063));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19063 /* Tunable: -1688798099 */));
 					break;
 				
 				case joaat("CLO_BIF_O_16"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19064));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19064 /* Tunable: -1987553072 */));
 					break;
 				
 				case joaat("CLO_BIF_O_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19065));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19065 /* Tunable: -1328238221 */));
 					break;
 			}
 			break;
@@ -49391,389 +49391,389 @@ void func_125(int iParam0, var uParam1, int iParam2)//Position - 0x48A9B
 			switch (iParam0)
 			{
 				case joaat("CLO_STM_HT6_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16958 /* Tunable: STUNT_MALE_HELMETS_CREAM_RETRO_BUBBLE */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16958 /* Tunable: STUNT_MALE_HELMETS_CREAM_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT6_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16959 /* Tunable: STUNT_MALE_HELMETS_GRAY_RETRO_BUBBLE */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16959 /* Tunable: STUNT_MALE_HELMETS_GRAY_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT6_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16960 /* Tunable: STUNT_MALE_HELMETS_ORANGE_RETRO_BUBBLE */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16960 /* Tunable: STUNT_MALE_HELMETS_ORANGE_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT6_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16961 /* Tunable: STUNT_MALE_HELMETS_PALE_BLUE_RETRO_BUBBLE */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16961 /* Tunable: STUNT_MALE_HELMETS_PALE_BLUE_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT6_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16962 /* Tunable: STUNT_MALE_HELMETS_WHITE_RETRO_BUBBLE */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16962 /* Tunable: STUNT_MALE_HELMETS_WHITE_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT6_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16963 /* Tunable: STUNT_MALE_HELMETS_BLUE_RETRO_BUBBLE */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16963 /* Tunable: STUNT_MALE_HELMETS_BLUE_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT6_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16964 /* Tunable: STUNT_MALE_HELMETS_RED_RETRO_BUBBLE */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16964 /* Tunable: STUNT_MALE_HELMETS_RED_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT6_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16965 /* Tunable: STUNT_MALE_HELMETS_BLACK_RETRO_BUBBLE */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16965 /* Tunable: STUNT_MALE_HELMETS_BLACK_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT6_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16966 /* Tunable: STUNT_MALE_HELMETS_PINK_RETRO_BUBBLE */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16966 /* Tunable: STUNT_MALE_HELMETS_PINK_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT11_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17000 /* Tunable: STUNT_MALE_HELMETS_WHITE_JC_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17000 /* Tunable: STUNT_MALE_HELMETS_WHITE_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT11_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17001 /* Tunable: STUNT_MALE_HELMETS_BLUE_JC_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17001 /* Tunable: STUNT_MALE_HELMETS_BLUE_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT11_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17002 /* Tunable: STUNT_MALE_HELMETS_RED_JC_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17002 /* Tunable: STUNT_MALE_HELMETS_RED_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT11_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17003 /* Tunable: STUNT_MALE_HELMETS_BLACK_JC_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17003 /* Tunable: STUNT_MALE_HELMETS_BLACK_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT11_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17004 /* Tunable: STUNT_MALE_HELMETS_PINK_JC_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17004 /* Tunable: STUNT_MALE_HELMETS_PINK_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT8_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16967 /* Tunable: STUNT_MALE_HELMETS_SWIRL_MOD_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16967 /* Tunable: STUNT_MALE_HELMETS_SWIRL_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT8_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16968 /* Tunable: STUNT_MALE_HELMETS_RED_MOD_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16968 /* Tunable: STUNT_MALE_HELMETS_RED_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT8_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16969 /* Tunable: STUNT_MALE_HELMETS_BROWN_MOD_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16969 /* Tunable: STUNT_MALE_HELMETS_BROWN_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT8_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16970 /* Tunable: STUNT_MALE_HELMETS_WHITE_FLAG_MOD_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16970 /* Tunable: STUNT_MALE_HELMETS_WHITE_FLAG_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT8_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16971 /* Tunable: STUNT_MALE_HELMETS_BLUE_STARS_MOD_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16971 /* Tunable: STUNT_MALE_HELMETS_BLUE_STARS_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT8_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16972 /* Tunable: STUNT_MALE_HELMETS_BLACK_SLASH_MOD_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16972 /* Tunable: STUNT_MALE_HELMETS_BLACK_SLASH_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT8_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16973 /* Tunable: STUNT_MALE_HELMETS_WHITE_STARS_MOD_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16973 /* Tunable: STUNT_MALE_HELMETS_WHITE_STARS_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT8_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16974 /* Tunable: STUNT_MALE_HELMETS_BLUE_STRIPES_MOD_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16974 /* Tunable: STUNT_MALE_HELMETS_BLUE_STRIPES_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT8_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16975 /* Tunable: STUNT_MALE_HELMETS_RED_STRIPES_MOD_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16975 /* Tunable: STUNT_MALE_HELMETS_RED_STRIPES_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT8_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16976 /* Tunable: STUNT_MALE_HELMETS_BLUE_CHAIN_MOD_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16976 /* Tunable: STUNT_MALE_HELMETS_BLUE_CHAIN_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT8_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16977 /* Tunable: STUNT_MALE_HELMETS_BLACK_STRIPES_MOD_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16977 /* Tunable: STUNT_MALE_HELMETS_BLACK_STRIPES_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT8_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16978 /* Tunable: STUNT_MALE_HELMETS_BLACK_JAG_MOD_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16978 /* Tunable: STUNT_MALE_HELMETS_BLACK_JAG_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT13_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17005 /* Tunable: STUNT_MALE_HELMETS_GOLD_JC_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17005 /* Tunable: STUNT_MALE_HELMETS_GOLD_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT13_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17006 /* Tunable: STUNT_MALE_HELMETS_SILVER_JC_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17006 /* Tunable: STUNT_MALE_HELMETS_SILVER_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT13_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17007 /* Tunable: STUNT_MALE_HELMETS_GOLD_RETRO_BUBBLE */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17007 /* Tunable: STUNT_MALE_HELMETS_GOLD_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT13_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17008 /* Tunable: STUNT_MALE_HELMETS_SILVER_RETRO_BUBBLE */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17008 /* Tunable: STUNT_MALE_HELMETS_SILVER_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT15_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17009) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17009 /* Tunable: -931809429 */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT15_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17010 /* Tunable: STUNT_MALE_HELMETS_SLALOM_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17010 /* Tunable: STUNT_MALE_HELMETS_SLALOM_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT1510"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17011 /* Tunable: STUNT_MALE_HELMETS_SA_ASSAULT_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17011 /* Tunable: STUNT_MALE_HELMETS_SA_ASSAULT_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT1511"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17012 /* Tunable: STUNT_MALE_HELMETS_VIBE_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17012 /* Tunable: STUNT_MALE_HELMETS_VIBE_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT1512"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17013 /* Tunable: STUNT_MALE_HELMETS_BURST_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17013 /* Tunable: STUNT_MALE_HELMETS_BURST_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT1513"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17014 /* Tunable: STUNT_MALE_HELMETS_TRI_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17014 /* Tunable: STUNT_MALE_HELMETS_TRI_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT1514"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17015 /* Tunable: STUNT_MALE_HELMETS_SPRUNK_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17015 /* Tunable: STUNT_MALE_HELMETS_SPRUNK_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT1515"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17016 /* Tunable: STUNT_MALE_HELMETS_SKELETON_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17016 /* Tunable: STUNT_MALE_HELMETS_SKELETON_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT1516"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17017 /* Tunable: STUNT_MALE_HELMETS_DEATH_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17017 /* Tunable: STUNT_MALE_HELMETS_DEATH_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT1517"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17018 /* Tunable: STUNT_MALE_HELMETS_COBBLE_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17018 /* Tunable: STUNT_MALE_HELMETS_COBBLE_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT1518"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17019 /* Tunable: STUNT_MALE_HELMETS_CUBIST_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17019 /* Tunable: STUNT_MALE_HELMETS_CUBIST_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT1519"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17020 /* Tunable: STUNT_MALE_HELMETS_DIGITAL_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17020 /* Tunable: STUNT_MALE_HELMETS_DIGITAL_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT1520"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17021 /* Tunable: STUNT_MALE_HELMETS_SNAKESKIN_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17021 /* Tunable: STUNT_MALE_HELMETS_SNAKESKIN_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT1521"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17022 /* Tunable: STUNT_MALE_HELMETS_BOOST_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17022 /* Tunable: STUNT_MALE_HELMETS_BOOST_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT1522"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17023 /* Tunable: STUNT_MALE_HELMETS_TROPIC_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17023 /* Tunable: STUNT_MALE_HELMETS_TROPIC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STM_HT1523"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17024 /* Tunable: STUNT_MALE_HELMETS_ATOMIC_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17024 /* Tunable: STUNT_MALE_HELMETS_ATOMIC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("HE_FMM_18_7"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[23] * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[23] * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("HE_FMM_18_6"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[22] * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[22] * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("HE_FMM_18_5"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[21] * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[21] * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("HE_FMM_18_4"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[20] * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[20] * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("HE_FMM_18_3"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[19] * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[19] * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("HE_FMM_18_2"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[18] * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[18] * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("HE_FMM_18_1"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[17] * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[17] * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("HE_FMM_18_0"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[16] * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[16] * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 			}
 			switch (iParam0)
 			{
 				case joaat("CLO_STM_H_100"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16979 /* Tunable: STUNT_MALE_HATS_ATOMIC_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16979 /* Tunable: STUNT_MALE_HATS_ATOMIC_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_101"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16980 /* Tunable: STUNT_MALE_HATS_AUTO_EXOTIC_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16980 /* Tunable: STUNT_MALE_HATS_AUTO_EXOTIC_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_102"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16981 /* Tunable: STUNT_MALE_HATS_CHEPALLE_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16981 /* Tunable: STUNT_MALE_HATS_CHEPALLE_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_103"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16982 /* Tunable: STUNT_MALE_HATS_CUNNING_STUNTS_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16982 /* Tunable: STUNT_MALE_HATS_CUNNING_STUNTS_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_104"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16983 /* Tunable: STUNT_MALE_HATS_FLASH_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16983 /* Tunable: STUNT_MALE_HATS_FLASH_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_105"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16984 /* Tunable: STUNT_MALE_HATS_FUKARU_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16984 /* Tunable: STUNT_MALE_HATS_FUKARU_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_106"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16985 /* Tunable: STUNT_MALE_HATS_GLOBE_OIL_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16985 /* Tunable: STUNT_MALE_HATS_GLOBE_OIL_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_107"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16986 /* Tunable: STUNT_MALE_HATS_GROTTI_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16986 /* Tunable: STUNT_MALE_HATS_GROTTI_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_108"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16987 /* Tunable: STUNT_MALE_HATS_IMPONTE_RACING_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16987 /* Tunable: STUNT_MALE_HATS_IMPONTE_RACING_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_109"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16988 /* Tunable: STUNT_MALE_HATS_LAMPADATI_RACING_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16988 /* Tunable: STUNT_MALE_HATS_LAMPADATI_RACING_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_1010"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16989 /* Tunable: STUNT_MALE_HATS_LTD_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16989 /* Tunable: STUNT_MALE_HATS_LTD_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_1011"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16990 /* Tunable: STUNT_MALE_HATS_NAGASAKI_RACING_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16990 /* Tunable: STUNT_MALE_HATS_NAGASAKI_RACING_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_1012"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16991 /* Tunable: STUNT_MALE_HATS_NAGASAKI_MOTO_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16991 /* Tunable: STUNT_MALE_HATS_NAGASAKI_MOTO_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_1013"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16992 /* Tunable: STUNT_MALE_HATS_PATRIOT_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16992 /* Tunable: STUNT_MALE_HATS_PATRIOT_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_1014"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16993 /* Tunable: STUNT_MALE_HATS_REBEL_RADIO_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16993 /* Tunable: STUNT_MALE_HATS_REBEL_RADIO_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_1015"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16994 /* Tunable: STUNT_MALE_HATS_REDWOOD_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16994 /* Tunable: STUNT_MALE_HATS_REDWOOD_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_1016"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16995 /* Tunable: STUNT_MALE_HATS_SCOOTER_BROTHERS_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16995 /* Tunable: STUNT_MALE_HATS_SCOOTER_BROTHERS_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_1017"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16996 /* Tunable: STUNT_MALE_HATS_THE_MOUNT_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16996 /* Tunable: STUNT_MALE_HATS_THE_MOUNT_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_1018"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16997 /* Tunable: STUNT_MALE_HATS_TOTAL_RIDE_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16997 /* Tunable: STUNT_MALE_HATS_TOTAL_RIDE_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_1019"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16998 /* Tunable: STUNT_MALE_HATS_VAPID_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16998 /* Tunable: STUNT_MALE_HATS_VAPID_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_1020"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16999 /* Tunable: STUNT_MALE_HATS_XERO_GAS_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16999 /* Tunable: STUNT_MALE_HATS_XERO_GAS_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_9_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16979 /* Tunable: STUNT_MALE_HATS_ATOMIC_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16979 /* Tunable: STUNT_MALE_HATS_ATOMIC_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_9_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16980 /* Tunable: STUNT_MALE_HATS_AUTO_EXOTIC_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16980 /* Tunable: STUNT_MALE_HATS_AUTO_EXOTIC_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_9_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16981 /* Tunable: STUNT_MALE_HATS_CHEPALLE_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16981 /* Tunable: STUNT_MALE_HATS_CHEPALLE_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_9_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16982 /* Tunable: STUNT_MALE_HATS_CUNNING_STUNTS_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16982 /* Tunable: STUNT_MALE_HATS_CUNNING_STUNTS_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_9_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16983 /* Tunable: STUNT_MALE_HATS_FLASH_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16983 /* Tunable: STUNT_MALE_HATS_FLASH_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_9_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16984 /* Tunable: STUNT_MALE_HATS_FUKARU_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16984 /* Tunable: STUNT_MALE_HATS_FUKARU_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_9_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16985 /* Tunable: STUNT_MALE_HATS_GLOBE_OIL_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16985 /* Tunable: STUNT_MALE_HATS_GLOBE_OIL_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_9_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16986 /* Tunable: STUNT_MALE_HATS_GROTTI_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16986 /* Tunable: STUNT_MALE_HATS_GROTTI_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_9_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16987 /* Tunable: STUNT_MALE_HATS_IMPONTE_RACING_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16987 /* Tunable: STUNT_MALE_HATS_IMPONTE_RACING_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_9_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16988 /* Tunable: STUNT_MALE_HATS_LAMPADATI_RACING_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16988 /* Tunable: STUNT_MALE_HATS_LAMPADATI_RACING_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_9_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16989 /* Tunable: STUNT_MALE_HATS_LTD_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16989 /* Tunable: STUNT_MALE_HATS_LTD_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_9_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16990 /* Tunable: STUNT_MALE_HATS_NAGASAKI_RACING_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16990 /* Tunable: STUNT_MALE_HATS_NAGASAKI_RACING_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_9_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16991 /* Tunable: STUNT_MALE_HATS_NAGASAKI_MOTO_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16991 /* Tunable: STUNT_MALE_HATS_NAGASAKI_MOTO_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_9_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16992 /* Tunable: STUNT_MALE_HATS_PATRIOT_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16992 /* Tunable: STUNT_MALE_HATS_PATRIOT_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_9_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16993 /* Tunable: STUNT_MALE_HATS_REBEL_RADIO_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16993 /* Tunable: STUNT_MALE_HATS_REBEL_RADIO_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_9_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16994 /* Tunable: STUNT_MALE_HATS_REDWOOD_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16994 /* Tunable: STUNT_MALE_HATS_REDWOOD_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_9_16"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16995 /* Tunable: STUNT_MALE_HATS_SCOOTER_BROTHERS_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16995 /* Tunable: STUNT_MALE_HATS_SCOOTER_BROTHERS_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_9_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16996 /* Tunable: STUNT_MALE_HATS_THE_MOUNT_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16996 /* Tunable: STUNT_MALE_HATS_THE_MOUNT_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_9_18"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16997 /* Tunable: STUNT_MALE_HATS_TOTAL_RIDE_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16997 /* Tunable: STUNT_MALE_HATS_TOTAL_RIDE_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_9_19"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16998 /* Tunable: STUNT_MALE_HATS_VAPID_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16998 /* Tunable: STUNT_MALE_HATS_VAPID_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STM_H_9_20"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16999 /* Tunable: STUNT_MALE_HATS_XERO_GAS_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16999 /* Tunable: STUNT_MALE_HATS_XERO_GAS_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 			}
 			break;
@@ -49782,59 +49782,59 @@ void func_125(int iParam0, var uParam1, int iParam2)//Position - 0x48A9B
 			switch (iParam0)
 			{
 				case joaat("CLO_STM_O_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17204));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17204 /* Tunable: 713628014 */));
 					break;
 				
 				case joaat("CLO_STM_O_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17205));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17205 /* Tunable: 1529198378 */));
 					break;
 				
 				case joaat("CLO_STM_O_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17206));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17206 /* Tunable: 84398174 */));
 					break;
 				
 				case joaat("CLO_STM_O_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17207));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17207 /* Tunable: 1815875663 */));
 					break;
 				
 				case joaat("CLO_STM_O_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17208));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17208 /* Tunable: -325230869 */));
 					break;
 				
 				case joaat("CLO_STM_O_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17209));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17209 /* Tunable: 614364555 */));
 					break;
 				
 				case joaat("CLO_STM_O_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17210));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17210 /* Tunable: 1347204992 */));
 					break;
 				
 				case joaat("CLO_STM_O_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17211));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17211 /* Tunable: 892676748 */));
 					break;
 				
 				case joaat("CLO_STM_O_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17212));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17212 /* Tunable: 256091218 */));
 					break;
 				
 				case joaat("CLO_STM_O_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17213));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17213 /* Tunable: -235384032 */));
 					break;
 				
 				case joaat("CLO_STM_O_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17214));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17214 /* Tunable: -1063386275 */));
 					break;
 				
 				case joaat("CLO_STM_O_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17215));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17215 /* Tunable: -910791102 */));
 					break;
 				
 				case joaat("CLO_STM_O_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17216));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17216 /* Tunable: -363269964 */));
 					break;
 				
 				case joaat("CLO_STM_O_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17217));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17217 /* Tunable: 511662911 */));
 					break;
 				
 				case joaat("CLO_STM_O_14"):
@@ -50361,389 +50361,389 @@ void func_125(int iParam0, var uParam1, int iParam2)//Position - 0x48A9B
 			switch (iParam0)
 			{
 				case joaat("CLO_STF_HT6_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17137 /* Tunable: STUNT_FEMALE_HELMETS_CREAM_RETRO_BUBBLE */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17137 /* Tunable: STUNT_FEMALE_HELMETS_CREAM_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT6_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17138 /* Tunable: STUNT_FEMALE_HELMETS_GRAY_RETRO_BUBBLE */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17138 /* Tunable: STUNT_FEMALE_HELMETS_GRAY_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT6_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17139 /* Tunable: STUNT_FEMALE_HELMETS_ORANGE_RETRO_BUBBLE */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17139 /* Tunable: STUNT_FEMALE_HELMETS_ORANGE_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT6_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17140 /* Tunable: STUNT_FEMALE_HELMETS_PALE_BLUE_RETRO_BUBBLE */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17140 /* Tunable: STUNT_FEMALE_HELMETS_PALE_BLUE_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT6_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17141 /* Tunable: STUNT_FEMALE_HELMETS_WHITE_RETRO_BUBBLE */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17141 /* Tunable: STUNT_FEMALE_HELMETS_WHITE_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT6_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17142 /* Tunable: STUNT_FEMALE_HELMETS_BLUE_RETRO_BUBBLE */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17142 /* Tunable: STUNT_FEMALE_HELMETS_BLUE_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT6_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17143 /* Tunable: STUNT_FEMALE_HELMETS_RED_RETRO_BUBBLE */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17143 /* Tunable: STUNT_FEMALE_HELMETS_RED_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT6_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17144 /* Tunable: STUNT_FEMALE_HELMETS_BLACK_RETRO_BUBBLE */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17144 /* Tunable: STUNT_FEMALE_HELMETS_BLACK_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT6_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17145 /* Tunable: STUNT_FEMALE_HELMETS_PINK_RETRO_BUBBLE */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17145 /* Tunable: STUNT_FEMALE_HELMETS_PINK_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT11_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17179 /* Tunable: STUNT_FEMALE_HELMETS_WHITE_JC_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17179 /* Tunable: STUNT_FEMALE_HELMETS_WHITE_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT11_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17180 /* Tunable: STUNT_FEMALE_HELMETS_BLUE_JC_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17180 /* Tunable: STUNT_FEMALE_HELMETS_BLUE_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT11_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17181 /* Tunable: STUNT_FEMALE_HELMETS_RED_JC_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17181 /* Tunable: STUNT_FEMALE_HELMETS_RED_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT11_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17182 /* Tunable: STUNT_FEMALE_HELMETS_BLACK_JC_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17182 /* Tunable: STUNT_FEMALE_HELMETS_BLACK_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT11_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17183 /* Tunable: STUNT_FEMALE_HELMETS_PINK_JC_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17183 /* Tunable: STUNT_FEMALE_HELMETS_PINK_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT8_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17146 /* Tunable: STUNT_FEMALE_HELMETS_SWIRL_MOD_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17146 /* Tunable: STUNT_FEMALE_HELMETS_SWIRL_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT8_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17147 /* Tunable: STUNT_FEMALE_HELMETS_RED_MOD_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17147 /* Tunable: STUNT_FEMALE_HELMETS_RED_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT8_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17148 /* Tunable: STUNT_FEMALE_HELMETS_BROWN_MOD_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17148 /* Tunable: STUNT_FEMALE_HELMETS_BROWN_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT8_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17149 /* Tunable: STUNT_FEMALE_HELMETS_WHITE_FLAG_MOD_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17149 /* Tunable: STUNT_FEMALE_HELMETS_WHITE_FLAG_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT8_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17150 /* Tunable: STUNT_FEMALE_HELMETS_BLUE_STARS_MOD_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17150 /* Tunable: STUNT_FEMALE_HELMETS_BLUE_STARS_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT8_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17151 /* Tunable: STUNT_FEMALE_HELMETS_BLACK_SLASH_MOD_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17151 /* Tunable: STUNT_FEMALE_HELMETS_BLACK_SLASH_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT8_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17152 /* Tunable: STUNT_FEMALE_HELMETS_WHITE_STARS_MOD_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17152 /* Tunable: STUNT_FEMALE_HELMETS_WHITE_STARS_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT8_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17153 /* Tunable: STUNT_FEMALE_HELMETS_BLUE_STRIPES_MOD_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17153 /* Tunable: STUNT_FEMALE_HELMETS_BLUE_STRIPES_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT8_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17154 /* Tunable: STUNT_FEMALE_HELMETS_RED_STRIPES_MOD_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17154 /* Tunable: STUNT_FEMALE_HELMETS_RED_STRIPES_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT8_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17155 /* Tunable: STUNT_FEMALE_HELMETS_BLUE_CHAIN_MOD_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17155 /* Tunable: STUNT_FEMALE_HELMETS_BLUE_CHAIN_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT8_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17156 /* Tunable: STUNT_FEMALE_HELMETS_BLACK_STRIPES_MOD_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17156 /* Tunable: STUNT_FEMALE_HELMETS_BLACK_STRIPES_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT8_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17157 /* Tunable: STUNT_FEMALE_HELMETS_BLACK_JAG_MOD_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17157 /* Tunable: STUNT_FEMALE_HELMETS_BLACK_JAG_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT13_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17184 /* Tunable: STUNT_FEMALE_HELMETS_GOLD_JC_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17184 /* Tunable: STUNT_FEMALE_HELMETS_GOLD_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT13_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17185 /* Tunable: STUNT_FEMALE_HELMETS_SILVER_JC_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17185 /* Tunable: STUNT_FEMALE_HELMETS_SILVER_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT13_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17186 /* Tunable: STUNT_FEMALE_HELMETS_GOLD_RETRO_BUBBLE */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17186 /* Tunable: STUNT_FEMALE_HELMETS_GOLD_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT13_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17187 /* Tunable: STUNT_FEMALE_HELMETS_SILVER_RETRO_BUBBLE */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17187 /* Tunable: STUNT_FEMALE_HELMETS_SILVER_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT15_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17188) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17188 /* Tunable: -677052578 */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT15_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17189 /* Tunable: STUNT_FEMALE_HELMETS_SLALOM_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17189 /* Tunable: STUNT_FEMALE_HELMETS_SLALOM_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT1510"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17190 /* Tunable: STUNT_FEMALE_HELMETS_SA_ASSAULT_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17190 /* Tunable: STUNT_FEMALE_HELMETS_SA_ASSAULT_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT1511"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17191 /* Tunable: STUNT_FEMALE_HELMETS_VIBE_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17191 /* Tunable: STUNT_FEMALE_HELMETS_VIBE_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT1512"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17192 /* Tunable: STUNT_FEMALE_HELMETS_BURST_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17192 /* Tunable: STUNT_FEMALE_HELMETS_BURST_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT1513"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17193 /* Tunable: STUNT_FEMALE_HELMETS_TRI_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17193 /* Tunable: STUNT_FEMALE_HELMETS_TRI_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT1514"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17194 /* Tunable: STUNT_FEMALE_HELMETS_SPRUNK_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17194 /* Tunable: STUNT_FEMALE_HELMETS_SPRUNK_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT1515"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17195 /* Tunable: STUNT_FEMALE_HELMETS_SKELETON_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17195 /* Tunable: STUNT_FEMALE_HELMETS_SKELETON_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT1516"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17196 /* Tunable: STUNT_FEMALE_HELMETS_DEATH_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17196 /* Tunable: STUNT_FEMALE_HELMETS_DEATH_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT1517"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17197 /* Tunable: STUNT_FEMALE_HELMETS_COBBLE_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17197 /* Tunable: STUNT_FEMALE_HELMETS_COBBLE_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT1518"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17198 /* Tunable: STUNT_FEMALE_HELMETS_CUBIST_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17198 /* Tunable: STUNT_FEMALE_HELMETS_CUBIST_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT1519"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17199 /* Tunable: STUNT_FEMALE_HELMETS_DIGITAL_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17199 /* Tunable: STUNT_FEMALE_HELMETS_DIGITAL_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT1520"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17200 /* Tunable: STUNT_FEMALE_HELMETS_SNAKESKIN_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17200 /* Tunable: STUNT_FEMALE_HELMETS_SNAKESKIN_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT1521"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17201 /* Tunable: STUNT_FEMALE_HELMETS_BOOST_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17201 /* Tunable: STUNT_FEMALE_HELMETS_BOOST_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT1522"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17202 /* Tunable: STUNT_FEMALE_HELMETS_TROPIC_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17202 /* Tunable: STUNT_FEMALE_HELMETS_TROPIC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("CLO_STF_HT1523"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17203 /* Tunable: STUNT_FEMALE_HELMETS_ATOMIC_HELMET */) * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17203 /* Tunable: STUNT_FEMALE_HELMETS_ATOMIC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("HE_FMF_18_7"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[23] * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[23] * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("HE_FMF_18_6"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[22] * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[22] * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("HE_FMF_18_5"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[21] * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[21] * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("HE_FMF_18_4"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[20] * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[20] * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("HE_FMF_18_3"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[19] * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[19] * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("HE_FMF_18_2"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[18] * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[18] * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("HE_FMF_18_1"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[17] * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[17] * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 				
 				case joaat("HE_FMF_18_0"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[16] * Global_262145.f_17264));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[16] * Global_262145.f_17264 /* Tunable: -897360793 */));
 					break;
 			}
 			switch (iParam0)
 			{
 				case joaat("CLO_STF_H_100"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17158 /* Tunable: STUNT_FEMALE_HATS_ATOMIC_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17158 /* Tunable: STUNT_FEMALE_HATS_ATOMIC_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_101"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17159 /* Tunable: STUNT_FEMALE_HATS_AUTO_EXOTIC_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17159 /* Tunable: STUNT_FEMALE_HATS_AUTO_EXOTIC_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_102"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17160 /* Tunable: STUNT_FEMALE_HATS_CHEPALLE_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17160 /* Tunable: STUNT_FEMALE_HATS_CHEPALLE_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_103"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17161 /* Tunable: STUNT_FEMALE_HATS_CUNNING_STUNTS_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17161 /* Tunable: STUNT_FEMALE_HATS_CUNNING_STUNTS_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_104"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17162 /* Tunable: STUNT_FEMALE_HATS_FLASH_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17162 /* Tunable: STUNT_FEMALE_HATS_FLASH_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_105"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17163 /* Tunable: STUNT_FEMALE_HATS_FUKARU_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17163 /* Tunable: STUNT_FEMALE_HATS_FUKARU_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_106"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17164 /* Tunable: STUNT_FEMALE_HATS_GLOBE_OIL_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17164 /* Tunable: STUNT_FEMALE_HATS_GLOBE_OIL_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_107"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17165 /* Tunable: STUNT_FEMALE_HATS_GROTTI_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17165 /* Tunable: STUNT_FEMALE_HATS_GROTTI_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_108"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17166 /* Tunable: STUNT_FEMALE_HATS_IMPONTE_RACING_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17166 /* Tunable: STUNT_FEMALE_HATS_IMPONTE_RACING_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_109"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17167 /* Tunable: STUNT_FEMALE_HATS_LAMPADATI_RACING_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17167 /* Tunable: STUNT_FEMALE_HATS_LAMPADATI_RACING_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_1010"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17168 /* Tunable: STUNT_FEMALE_HATS_LTD_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17168 /* Tunable: STUNT_FEMALE_HATS_LTD_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_1011"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17169 /* Tunable: STUNT_FEMALE_HATS_NAGASAKI_RACING_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17169 /* Tunable: STUNT_FEMALE_HATS_NAGASAKI_RACING_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_1012"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17170 /* Tunable: STUNT_FEMALE_HATS_NAGASAKI_MOTO_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17170 /* Tunable: STUNT_FEMALE_HATS_NAGASAKI_MOTO_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_1013"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17171 /* Tunable: STUNT_FEMALE_HATS_PATRIOT_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17171 /* Tunable: STUNT_FEMALE_HATS_PATRIOT_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_1014"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17172 /* Tunable: STUNT_FEMALE_HATS_REBEL_RADIO_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17172 /* Tunable: STUNT_FEMALE_HATS_REBEL_RADIO_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_1015"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17173 /* Tunable: STUNT_FEMALE_HATS_REDWOOD_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17173 /* Tunable: STUNT_FEMALE_HATS_REDWOOD_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_1016"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17174 /* Tunable: STUNT_FEMALE_HATS_SCOOTER_BROTHERS_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17174 /* Tunable: STUNT_FEMALE_HATS_SCOOTER_BROTHERS_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_1017"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17175 /* Tunable: STUNT_FEMALE_HATS_THE_MOUNT_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17175 /* Tunable: STUNT_FEMALE_HATS_THE_MOUNT_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_1018"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17176 /* Tunable: STUNT_FEMALE_HATS_TOTAL_RIDE_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17176 /* Tunable: STUNT_FEMALE_HATS_TOTAL_RIDE_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_1019"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17177 /* Tunable: STUNT_FEMALE_HATS_VAPID_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17177 /* Tunable: STUNT_FEMALE_HATS_VAPID_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_1020"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17178 /* Tunable: STUNT_FEMALE_HATS_XERO_GAS_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17178 /* Tunable: STUNT_FEMALE_HATS_XERO_GAS_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_9_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17158 /* Tunable: STUNT_FEMALE_HATS_ATOMIC_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17158 /* Tunable: STUNT_FEMALE_HATS_ATOMIC_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_9_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17159 /* Tunable: STUNT_FEMALE_HATS_AUTO_EXOTIC_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17159 /* Tunable: STUNT_FEMALE_HATS_AUTO_EXOTIC_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_9_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17160 /* Tunable: STUNT_FEMALE_HATS_CHEPALLE_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17160 /* Tunable: STUNT_FEMALE_HATS_CHEPALLE_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_9_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17161 /* Tunable: STUNT_FEMALE_HATS_CUNNING_STUNTS_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17161 /* Tunable: STUNT_FEMALE_HATS_CUNNING_STUNTS_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_9_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17162 /* Tunable: STUNT_FEMALE_HATS_FLASH_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17162 /* Tunable: STUNT_FEMALE_HATS_FLASH_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_9_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17163 /* Tunable: STUNT_FEMALE_HATS_FUKARU_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17163 /* Tunable: STUNT_FEMALE_HATS_FUKARU_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_9_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17164 /* Tunable: STUNT_FEMALE_HATS_GLOBE_OIL_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17164 /* Tunable: STUNT_FEMALE_HATS_GLOBE_OIL_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_9_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17165 /* Tunable: STUNT_FEMALE_HATS_GROTTI_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17165 /* Tunable: STUNT_FEMALE_HATS_GROTTI_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_9_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17166 /* Tunable: STUNT_FEMALE_HATS_IMPONTE_RACING_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17166 /* Tunable: STUNT_FEMALE_HATS_IMPONTE_RACING_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_9_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17167 /* Tunable: STUNT_FEMALE_HATS_LAMPADATI_RACING_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17167 /* Tunable: STUNT_FEMALE_HATS_LAMPADATI_RACING_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_9_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17168 /* Tunable: STUNT_FEMALE_HATS_LTD_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17168 /* Tunable: STUNT_FEMALE_HATS_LTD_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_9_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17169 /* Tunable: STUNT_FEMALE_HATS_NAGASAKI_RACING_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17169 /* Tunable: STUNT_FEMALE_HATS_NAGASAKI_RACING_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_9_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17170 /* Tunable: STUNT_FEMALE_HATS_NAGASAKI_MOTO_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17170 /* Tunable: STUNT_FEMALE_HATS_NAGASAKI_MOTO_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_9_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17171 /* Tunable: STUNT_FEMALE_HATS_PATRIOT_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17171 /* Tunable: STUNT_FEMALE_HATS_PATRIOT_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_9_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17172 /* Tunable: STUNT_FEMALE_HATS_REBEL_RADIO_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17172 /* Tunable: STUNT_FEMALE_HATS_REBEL_RADIO_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_9_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17173 /* Tunable: STUNT_FEMALE_HATS_REDWOOD_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17173 /* Tunable: STUNT_FEMALE_HATS_REDWOOD_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_9_16"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17174 /* Tunable: STUNT_FEMALE_HATS_SCOOTER_BROTHERS_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17174 /* Tunable: STUNT_FEMALE_HATS_SCOOTER_BROTHERS_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_9_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17175 /* Tunable: STUNT_FEMALE_HATS_THE_MOUNT_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17175 /* Tunable: STUNT_FEMALE_HATS_THE_MOUNT_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_9_18"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17176 /* Tunable: STUNT_FEMALE_HATS_TOTAL_RIDE_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17176 /* Tunable: STUNT_FEMALE_HATS_TOTAL_RIDE_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_9_19"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17177 /* Tunable: STUNT_FEMALE_HATS_VAPID_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17177 /* Tunable: STUNT_FEMALE_HATS_VAPID_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 				
 				case joaat("CLO_STF_H_9_20"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17178 /* Tunable: STUNT_FEMALE_HATS_XERO_GAS_CAP */) * Global_262145.f_17263));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17178 /* Tunable: STUNT_FEMALE_HATS_XERO_GAS_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
 					break;
 			}
 			break;
@@ -50752,59 +50752,59 @@ void func_125(int iParam0, var uParam1, int iParam2)//Position - 0x48A9B
 			switch (iParam0)
 			{
 				case joaat("CLO_STF_O_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17225));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17225 /* Tunable: -1859911195 */));
 					break;
 				
 				case joaat("CLO_STF_O_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17226));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17226 /* Tunable: -1132067348 */));
 					break;
 				
 				case joaat("CLO_STF_O_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17227));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17227 /* Tunable: 1707829265 */));
 					break;
 				
 				case joaat("CLO_STF_O_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17228));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17228 /* Tunable: 388886152 */));
 					break;
 				
 				case joaat("CLO_STF_O_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17229));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17229 /* Tunable: -803346145 */));
 					break;
 				
 				case joaat("CLO_STF_O_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17230));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17230 /* Tunable: -542853555 */));
 					break;
 				
 				case joaat("CLO_STF_O_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17231));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17231 /* Tunable: 1053891624 */));
 					break;
 				
 				case joaat("CLO_STF_O_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17232));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17232 /* Tunable: 2016973475 */));
 					break;
 				
 				case joaat("CLO_STF_O_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17233));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17233 /* Tunable: 1072229861 */));
 					break;
 				
 				case joaat("CLO_STF_O_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17234));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17234 /* Tunable: -1287528099 */));
 					break;
 				
 				case joaat("CLO_STF_O_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17235));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17235 /* Tunable: -91586627 */));
 					break;
 				
 				case joaat("CLO_STF_O_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17236));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17236 /* Tunable: 346337457 */));
 					break;
 				
 				case joaat("CLO_STF_O_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17237));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17237 /* Tunable: 129059421 */));
 					break;
 				
 				case joaat("CLO_STF_O_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17238));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17238 /* Tunable: -1265408096 */));
 					break;
 				
 				case joaat("CLO_STF_O_14"):
@@ -103366,13 +103366,13 @@ int func_285()//Position - 0x85C91
 	}
 	else if (func_289() || func_286(PLAYER::PLAYER_ID()))
 	{
-		if (Global_262145.f_23310 > 16000)
+		if (Global_262145.f_23310 /* Tunable: H2_JOB_RP_CAP */ > 16000)
 		{
 			iVar0 = 16000;
 		}
 		else
 		{
-			iVar0 = Global_262145.f_23310;
+			iVar0 = Global_262145.f_23310 /* Tunable: H2_JOB_RP_CAP */;
 		}
 	}
 	else if (Global_262145.f_7094 /* Tunable: JOB_RP_CAP */ > 20000)
@@ -103557,7 +103557,7 @@ void func_294(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4,
 		case joaat("SERVICE_SPEND_ARENA_JOIN_SPECTATOR"):
 		case joaat("SERVICE_SPEND_ARENA_SPECTATOR_BOX"):
 		case joaat("SERVICE_SPEND_MAKE_IT_RAIN"):
-			if (iParam1 > 0 || Global_262145.f_28363)
+			if (iParam1 > 0 || Global_262145.f_28363 /* Tunable: 1103207774 */)
 			{
 				func_295(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -103708,7 +103708,7 @@ void func_294(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4,
 		case joaat("SERVICE_SPEND_INTERACTION_MENU_ABILITY"):
 		case joaat("SERVICE_SPEND_AGENT_14_VEHICLE_REQUEST"):
 		case joaat("SERVICE_SPEND_TONY_LIMO"):
-			if (iParam1 > 0 || Global_262145.f_28363)
+			if (iParam1 > 0 || Global_262145.f_28363 /* Tunable: 1103207774 */)
 			{
 				func_295(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -104114,9 +104114,9 @@ void func_307(int iParam0, int iParam1)//Position - 0x86BF8
 {
 	if (iParam1 > 0)
 	{
-		if (Global_262145.f_24025 == 0 || Global_262145.f_24025 == 1)
+		if (Global_262145.f_24025 /* Tunable: 277748102 */ == 0 || Global_262145.f_24025 /* Tunable: 277748102 */ == 1)
 		{
-			if (!MISC::IS_PC_VERSION() || Global_262145.f_24025 == 1)
+			if (!MISC::IS_PC_VERSION() || Global_262145.f_24025 /* Tunable: 277748102 */ == 1)
 			{
 				Global_2815059.f_283 = iParam0;
 				if (iParam1 > Global_262145.f_7043 /* Tunable: CAP_MAX_AMOUNT_CASH_TO_SHARE */)
@@ -106304,7 +106304,7 @@ int func_409(int iParam0)//Position - 0x89987
 		
 		default:
 	}
-	return Global_262145.f_24170;
+	return Global_262145.f_24170 /* Tunable: -1488550814 */;
 }
 
 void func_410()//Position - 0x89A16
@@ -106323,14 +106323,14 @@ void func_411(int iParam0, int iParam1, bool bParam2)//Position - 0x89A2F
 		{
 			if (Global_2815059.f_4462 == -1)
 			{
-				Global_2815059.f_4462 = Global_262145.f_27172;
+				Global_2815059.f_4462 = Global_262145.f_27172 /* Tunable: 945146471 */;
 			}
 			func_418(&(Global_2815059.f_4460), 0, 0);
 			if (bParam2)
 			{
 				if (Global_2815059.f_4465 == -1)
 				{
-					Global_2815059.f_4465 = Global_262145.f_27173;
+					Global_2815059.f_4465 = Global_262145.f_27173 /* Tunable: -29732167 */;
 				}
 				func_418(&(Global_2815059.f_4463), 0, 0);
 			}
@@ -106747,9 +106747,9 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 			iVar1 = 500000;
 			if (bVar0)
 			{
-				if (Global_262145.f_21615 >= 0)
+				if (Global_262145.f_21615 /* Tunable: 982031447 */ >= 0)
 				{
-					iVar1 = Global_262145.f_21615;
+					iVar1 = Global_262145.f_21615 /* Tunable: 982031447 */;
 				}
 			}
 			bVar3 = true;
@@ -106790,9 +106790,9 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 			iVar1 = 16000;
 			if (bVar0)
 			{
-				if (Global_262145.f_17968 >= 0)
+				if (Global_262145.f_17968 /* Tunable: -841706086 */ >= 0)
 				{
-					iVar1 = Global_262145.f_17968;
+					iVar1 = Global_262145.f_17968 /* Tunable: -841706086 */;
 				}
 			}
 			break;
@@ -108943,9 +108943,9 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar1 = 378000;
 				if (bVar0)
 				{
-					if (Global_262145.f_19042 >= 0)
+					if (Global_262145.f_19042 /* Tunable: 198653811 */ >= 0)
 					{
-						iVar1 = Global_262145.f_19042;
+						iVar1 = Global_262145.f_19042 /* Tunable: 198653811 */;
 					}
 				}
 				break;
@@ -108954,9 +108954,9 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar1 = 195000;
 				if (bVar0)
 				{
-					if (Global_262145.f_19045 >= 0)
+					if (Global_262145.f_19045 /* Tunable: -1512397919 */ >= 0)
 					{
-						iVar1 = Global_262145.f_19045;
+						iVar1 = Global_262145.f_19045 /* Tunable: -1512397919 */;
 					}
 				}
 				break;
@@ -108990,9 +108990,9 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar1 = 55000;
 				if (bVar0)
 				{
-					if (Global_262145.f_19043 >= 0)
+					if (Global_262145.f_19043 /* Tunable: 1894265143 */ >= 0)
 					{
-						iVar1 = Global_262145.f_19043;
+						iVar1 = Global_262145.f_19043 /* Tunable: 1894265143 */;
 					}
 				}
 				break;
@@ -109001,9 +109001,9 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar1 = 47500;
 				if (bVar0)
 				{
-					if (Global_262145.f_19044 >= 0)
+					if (Global_262145.f_19044 /* Tunable: 1208881654 */ >= 0)
 					{
-						iVar1 = Global_262145.f_19044;
+						iVar1 = Global_262145.f_19044 /* Tunable: 1208881654 */;
 					}
 				}
 				break;
@@ -109437,7 +109437,7 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar2 = iVar1;
 				if (!bParam2)
 				{
-					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21407)) / 100f)));
+					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21407 /* Tunable: -1237354304 */)) / 100f)));
 				}
 				break;
 			
@@ -109453,7 +109453,7 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar2 = iVar1;
 				if (!bParam2)
 				{
-					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21407)) / 100f)));
+					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21407 /* Tunable: -1237354304 */)) / 100f)));
 				}
 				break;
 			
@@ -109469,7 +109469,7 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar2 = iVar1;
 				if (!bParam2)
 				{
-					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21407)) / 100f)));
+					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21407 /* Tunable: -1237354304 */)) / 100f)));
 				}
 				break;
 			
@@ -109485,7 +109485,7 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar2 = iVar1;
 				if (!bParam2)
 				{
-					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21407)) / 100f)));
+					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21407 /* Tunable: -1237354304 */)) / 100f)));
 				}
 				break;
 			
@@ -109501,7 +109501,7 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar2 = iVar1;
 				if (!bParam2)
 				{
-					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21407)) / 100f)));
+					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21407 /* Tunable: -1237354304 */)) / 100f)));
 				}
 				break;
 			
@@ -109509,15 +109509,15 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar1 = 1400000;
 				if (bVar0)
 				{
-					if (Global_262145.f_21413 >= 0)
+					if (Global_262145.f_21413 /* Tunable: -835343641 */ >= 0)
 					{
-						iVar1 = Global_262145.f_21413;
+						iVar1 = Global_262145.f_21413 /* Tunable: -835343641 */;
 					}
 				}
 				iVar2 = iVar1;
 				if (!bParam2)
 				{
-					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21407)) / 100f)));
+					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21407 /* Tunable: -1237354304 */)) / 100f)));
 				}
 				break;
 			
@@ -109574,9 +109574,9 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 					iVar1 = 500000;
 					if (bVar0)
 					{
-						if (Global_262145.f_22586 >= 0)
+						if (Global_262145.f_22586 /* Tunable: 821338091 */ >= 0)
 						{
-							iVar1 = Global_262145.f_22586;
+							iVar1 = Global_262145.f_22586 /* Tunable: 821338091 */;
 						}
 					}
 				}
@@ -109585,9 +109585,9 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(500000) * ((100f + SYSTEM::TO_FLOAT(33)) / 100f)));
 					if (bVar0)
 					{
-						if (Global_262145.f_22606 >= 0)
+						if (Global_262145.f_22606 /* Tunable: 1095639582 */ >= 0)
 						{
-							iVar1 = Global_262145.f_22606;
+							iVar1 = Global_262145.f_22606 /* Tunable: 1095639582 */;
 						}
 					}
 				}
@@ -110311,9 +110311,9 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 					iVar1 = 487500;
 					if (bVar0)
 					{
-						if (Global_262145.f_28505 >= 0)
+						if (Global_262145.f_28505 /* Tunable: 256069819 */ >= 0)
 						{
-							iVar1 = Global_262145.f_28505;
+							iVar1 = Global_262145.f_28505 /* Tunable: 256069819 */;
 						}
 					}
 				}
@@ -110330,9 +110330,9 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 					iVar2 = 487500;
 					if (bVar0)
 					{
-						if (Global_262145.f_28505 >= 0)
+						if (Global_262145.f_28505 /* Tunable: 256069819 */ >= 0)
 						{
-							iVar2 = Global_262145.f_28505;
+							iVar2 = Global_262145.f_28505 /* Tunable: 256069819 */;
 						}
 					}
 				}
@@ -111422,9 +111422,9 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 			
 			case joaat("issi7"):
 				iVar1 = 897000;
-				if (bVar0 && Global_262145.f_26885 >= 0)
+				if (bVar0 && Global_262145.f_26885 /* Tunable: 1101391290 */ >= 0)
 				{
-					iVar1 = Global_262145.f_26885;
+					iVar1 = Global_262145.f_26885 /* Tunable: 1101391290 */;
 				}
 				break;
 			
@@ -112186,7 +112186,7 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar1 = 1288000;
 				if (bVar0)
 				{
-					iVar1 = (Global_262145.f_19045 + func_430(iParam1));
+					iVar1 = (Global_262145.f_19045 /* Tunable: -1512397919 */ + func_430(iParam1));
 				}
 				break;
 			
@@ -113141,7 +113141,7 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				break;
 			
 			case joaat("sentinel4"):
-				iVar1 = (Global_262145.f_28505 + func_430(iParam1));
+				iVar1 = (Global_262145.f_28505 /* Tunable: 256069819 */ + func_430(iParam1));
 				break;
 		}
 		if (iParam1 == joaat("iwagen"))
@@ -115102,11 +115102,11 @@ int func_430(int iParam0)//Position - 0x9231D
 			break;
 		
 		case joaat("technical3"):
-			return Global_262145.f_21415;
+			return Global_262145.f_21415 /* Tunable: 424298680 */;
 			break;
 		
 		case joaat("insurgent3"):
-			return Global_262145.f_21414;
+			return Global_262145.f_21414 /* Tunable: 2123626407 */;
 			break;
 		
 		case joaat("bruiser"):

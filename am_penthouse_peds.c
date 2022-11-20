@@ -4648,19 +4648,19 @@ int func_45()//Position - 0x83CA
 
 int func_46(int iParam0)//Position - 0x83DE
 {
-	if (iParam0 >= Global_262145.f_27042)
+	if (iParam0 >= Global_262145.f_27042 /* Tunable: -1160199960 */)
 	{
 		return 5;
 	}
-	else if (iParam0 >= Global_262145.f_27041)
+	else if (iParam0 >= Global_262145.f_27041 /* Tunable: -653984448 */)
 	{
 		return 4;
 	}
-	else if (iParam0 >= Global_262145.f_27040)
+	else if (iParam0 >= Global_262145.f_27040 /* Tunable: 1613204359 */)
 	{
 		return 3;
 	}
-	else if (iParam0 >= Global_262145.f_27039)
+	else if (iParam0 >= Global_262145.f_27039 /* Tunable: 1819845673 */)
 	{
 		return 2;
 	}

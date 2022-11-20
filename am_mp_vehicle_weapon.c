@@ -4804,21 +4804,21 @@ int func_151()//Position - 0x556B
 		switch (Global_1581356)
 		{
 			case 1:
-				if (Global_262145.f_23120)
+				if (Global_262145.f_23120 /* Tunable: 1200779746 */)
 				{
 					return 1;
 				}
 				break;
 			
 			case 2:
-				if (Global_262145.f_23121)
+				if (Global_262145.f_23121 /* Tunable: 948556753 */)
 				{
 					return 1;
 				}
 				break;
 			
 			case 3:
-				if (Global_262145.f_23122)
+				if (Global_262145.f_23122 /* Tunable: 1781774116 */)
 				{
 					return 1;
 				}
@@ -5093,7 +5093,7 @@ int func_172()//Position - 0x5DFD
 	
 	if (func_26(PLAYER::PLAYER_ID(), 0))
 	{
-		if (Global_262145.f_24707)
+		if (Global_262145.f_24707 /* Tunable: -236967184 */)
 		{
 			return 1;
 		}

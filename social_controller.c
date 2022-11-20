@@ -2684,7 +2684,7 @@ void func_53(var uParam0, bool bParam1)//Position - 0x2754
 							break;
 						
 						case 1894043873:
-							if ((func_51() && func_48()) && Global_262145.f_25334)
+							if ((func_51() && func_48()) && Global_262145.f_25334 /* Tunable: 1042335322 */)
 							{
 								SOCIALCLUB::SC_INBOX_MESSAGE_DO_APPLY(iVar1);
 								if (SOCIALCLUB::SC_INBOX_MESSAGE_GET_DATA_STRING(iVar1, "msg", &uVar3))
@@ -5340,13 +5340,13 @@ int func_150()//Position - 0x5A36
 	}
 	else if (func_155() || func_151(PLAYER::PLAYER_ID()))
 	{
-		if (Global_262145.f_23310 > 16000)
+		if (Global_262145.f_23310 /* Tunable: H2_JOB_RP_CAP */ > 16000)
 		{
 			iVar0 = 16000;
 		}
 		else
 		{
-			iVar0 = Global_262145.f_23310;
+			iVar0 = Global_262145.f_23310 /* Tunable: H2_JOB_RP_CAP */;
 		}
 	}
 	else if (Global_262145.f_7094 /* Tunable: JOB_RP_CAP */ > 20000)
@@ -12132,7 +12132,7 @@ void func_263(int iParam0, char* sParam1, bool bParam2, int iParam3)//Position -
 
 int func_264()//Position - 0xD46A
 {
-	if (!Global_262145.f_28866)
+	if (!Global_262145.f_28866 /* Tunable: 1028571554 */)
 	{
 		return 0;
 	}

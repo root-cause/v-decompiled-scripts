@@ -1033,7 +1033,7 @@ int func_25()//Position - 0x1134
 
 int func_26(int iParam0)//Position - 0x1172
 {
-	if (Global_262145.f_24382)
+	if (Global_262145.f_24382 /* Tunable: 352406794 */)
 	{
 		return 0;
 	}

@@ -13079,40 +13079,40 @@ int func_67(int iParam0)//Position - 0x2239B
 			return Global_262145.f_15950 /* Tunable: EXEC1_OFFICE4_MAZE2 */;
 		
 		case 91:
-			return Global_262145.f_18035;
+			return Global_262145.f_18035 /* Tunable: 819519215 */;
 		
 		case 92:
-			return Global_262145.f_18037;
+			return Global_262145.f_18037 /* Tunable: 471352940 */;
 		
 		case 93:
-			return Global_262145.f_18033;
+			return Global_262145.f_18033 /* Tunable: 2023136086 */;
 		
 		case 94:
-			return Global_262145.f_18042;
+			return Global_262145.f_18042 /* Tunable: 217858651 */;
 		
 		case 95:
-			return Global_262145.f_18039;
+			return Global_262145.f_18039 /* Tunable: -1058611921 */;
 		
 		case 96:
-			return Global_262145.f_18041;
+			return Global_262145.f_18041 /* Tunable: -1767762009 */;
 		
 		case 97:
-			return Global_262145.f_18034;
+			return Global_262145.f_18034 /* Tunable: -1390109608 */;
 		
 		case 98:
-			return Global_262145.f_18032;
+			return Global_262145.f_18032 /* Tunable: 2033735347 */;
 		
 		case 99:
-			return Global_262145.f_18031;
+			return Global_262145.f_18031 /* Tunable: -1219608517 */;
 		
 		case 100:
-			return Global_262145.f_18040;
+			return Global_262145.f_18040 /* Tunable: 1669688233 */;
 		
 		case 101:
-			return Global_262145.f_18038;
+			return Global_262145.f_18038 /* Tunable: 1241258301 */;
 		
 		case 102:
-			return Global_262145.f_18036;
+			return Global_262145.f_18036 /* Tunable: 813618473 */;
 		
 		case 103:
 			return Global_262145.f_19700 /* Tunable: IMPEXP_GARAGE_LEVEL1 */;

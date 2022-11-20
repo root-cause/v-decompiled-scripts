@@ -6727,10 +6727,10 @@ int func_110(int iParam0)//Position - 0x8AE1
 	else if (iParam0 > iVar0)
 	{
 		fVar1 = (SYSTEM::TO_FLOAT(iParam0) - SYSTEM::TO_FLOAT(iVar0));
-		iVar2 = SYSTEM::FLOOR((fVar1 / SYSTEM::TO_FLOAT(Global_262145.f_31077)));
+		iVar2 = SYSTEM::FLOOR((fVar1 / SYSTEM::TO_FLOAT(Global_262145.f_31077 /* Tunable: 1335277880 */)));
 		return (199 + iVar2);
 	}
-	fVar3 = (SYSTEM::TO_FLOAT(Global_262145.f_31076) / 2f);
+	fVar3 = (SYSTEM::TO_FLOAT(Global_262145.f_31076 /* Tunable: -1131555628 */) / 2f);
 	fVar4 = (-(fVar3 * 3f) + fVar3);
 	fVar5 = fVar3;
 	fVar6 = ((-(fVar3 * 3f) + fVar4) + 100f);
@@ -6754,7 +6754,7 @@ int func_112(int iParam0)//Position - 0x8BCB
 	float fVar1;
 	
 	fVar0 = SYSTEM::TO_FLOAT(iParam0);
-	fVar1 = (SYSTEM::TO_FLOAT(Global_262145.f_31076) / 2f);
+	fVar1 = (SYSTEM::TO_FLOAT(Global_262145.f_31076 /* Tunable: -1131555628 */) / 2f);
 	return SYSTEM::ROUND((((fVar0 * 100f) - 100f) + ((fVar0 - 3f) * ((fVar1 * (fVar0 - 3f)) + fVar1))));
 }
 
@@ -19235,7 +19235,7 @@ int func_294(int iParam0)//Position - 0x18587
 	}
 	else if (iParam0 == joaat("weevil"))
 	{
-		if (Global_262145.f_30146)
+		if (Global_262145.f_30146 /* Tunable: -552682736 */)
 		{
 		}
 		else if (!Global_262145.f_30138 /* Tunable: ENABLE_VEHICLE_WEEVIL */ && iVar1 < Global_262145.f_30121 /* Tunable: LAUNCHPOSIX_WEEVIL */)
@@ -19273,7 +19273,7 @@ int func_294(int iParam0)//Position - 0x18587
 	}
 	else if (iParam0 == joaat("brioso2"))
 	{
-		if (Global_262145.f_30147)
+		if (Global_262145.f_30147 /* Tunable: 976860524 */)
 		{
 		}
 		else if (!Global_262145.f_30143 /* Tunable: ENABLE_VEHICLE_BRIOSO2 */ && iVar1 < Global_262145.f_30126 /* Tunable: LAUNCHPOSIX_BRIOSO2 */)
@@ -19514,7 +19514,7 @@ int func_294(int iParam0)//Position - 0x18587
 	}
 	else if (iParam0 == joaat("baller7"))
 	{
-		if (Global_262145.f_31950)
+		if (Global_262145.f_31950 /* Tunable: 991164709 */)
 		{
 		}
 		else if (!Global_262145.f_31886 /* Tunable: ENABLE_VEHICLE_BALLER7 */ && iVar1 < Global_262145.f_31871 /* Tunable: LAUNCHPOSIX_BALLER7 */)
@@ -23979,7 +23979,7 @@ void func_403()//Position - 0x21189
 
 int func_404()//Position - 0x211C0
 {
-	if (!Global_262145.f_28866)
+	if (!Global_262145.f_28866 /* Tunable: 1028571554 */)
 	{
 		return 0;
 	}

@@ -3596,7 +3596,7 @@ void func_68(int iParam0, char* sParam1, bool bParam2, int iParam3)//Position - 
 
 int func_69()//Position - 0x43CF
 {
-	if (!Global_262145.f_28866)
+	if (!Global_262145.f_28866 /* Tunable: 1028571554 */)
 	{
 		return 0;
 	}

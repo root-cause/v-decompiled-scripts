@@ -4684,44 +4684,44 @@ void func_159()//Position - 0x591B
 		case 0:
 			iVar0 = func_162(8355, -1, 0) + 1;
 			func_161(8355, iVar0, -1, 1, 0);
-			if (iVar0 == Global_262145.f_27246)
+			if (iVar0 == Global_262145.f_27246 /* Tunable: 554611933 */)
 			{
 				func_152(27189, 1, -1);
 				func_153(12, "CLO_VWM_D_1_3" /* GXT: Street Crimes Hoods Tee */, "UNLOCK_NAME_SHIRT3" /* GXT: Homies Sharp T-shirt */, "FeedhitTshirt04", "MPTshirtAwards3", -1, 0, 0, 0, -1, 1);
-				func_160("SCGW_CH_0", Global_262145.f_27246, 7500, 1);
+				func_160("SCGW_CH_0", Global_262145.f_27246 /* Tunable: 554611933 */, 7500, 1);
 			}
 			break;
 		
 		case 1:
 			iVar0 = func_162(8356, -1, 0) + 1;
 			func_161(8356, iVar0, -1, 1, 0);
-			if (iVar0 == Global_262145.f_27246)
+			if (iVar0 == Global_262145.f_27246 /* Tunable: 554611933 */)
 			{
 				func_152(27190, 1, -1);
 				func_153(12, "CLO_VWM_D_1_4" /* GXT: Street Crimes Punks Tee */, "UNLOCK_NAME_SHIRT3" /* GXT: Homies Sharp T-shirt */, "FeedhitTshirt04", "MPTshirtAwards3", -1, 0, 0, 0, -1, 1);
-				func_160("SCGW_CH_1", Global_262145.f_27246, 7500, 1);
+				func_160("SCGW_CH_1", Global_262145.f_27246 /* Tunable: 554611933 */, 7500, 1);
 			}
 			break;
 		
 		case 2:
 			iVar0 = func_162(8357, -1, 0) + 1;
 			func_161(8357, iVar0, -1, 1, 0);
-			if (iVar0 == Global_262145.f_27246)
+			if (iVar0 == Global_262145.f_27246 /* Tunable: 554611933 */)
 			{
 				func_152(27191, 1, -1);
 				func_153(12, "CLO_VWM_D_1_5" /* GXT: Street Crimes Yokels Tee */, "UNLOCK_NAME_SHIRT3" /* GXT: Homies Sharp T-shirt */, "FeedhitTshirt04", "MPTshirtAwards3", -1, 0, 0, 0, -1, 1);
-				func_160("SCGW_CH_2", Global_262145.f_27246, 7500, 1);
+				func_160("SCGW_CH_2", Global_262145.f_27246 /* Tunable: 554611933 */, 7500, 1);
 			}
 			break;
 		
 		case 3:
 			iVar0 = func_162(8358, -1, 0) + 1;
 			func_161(8358, iVar0, -1, 1, 0);
-			if (iVar0 == Global_262145.f_27246)
+			if (iVar0 == Global_262145.f_27246 /* Tunable: 554611933 */)
 			{
 				func_152(27192, 1, -1);
 				func_153(12, "CLO_VWM_D_1_2" /* GXT: Street Crimes Bikers Tee */, "UNLOCK_NAME_SHIRT3" /* GXT: Homies Sharp T-shirt */, "FeedhitTshirt04", "MPTshirtAwards3", -1, 0, 0, 0, -1, 1);
-				func_160("SCGW_CH_3", Global_262145.f_27246, 7500, 1);
+				func_160("SCGW_CH_3", Global_262145.f_27246 /* Tunable: 554611933 */, 7500, 1);
 			}
 			break;
 	}

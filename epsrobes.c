@@ -1020,7 +1020,7 @@ void func_16(int iParam0, char* sParam1, bool bParam2, int iParam3)//Position - 
 
 int func_17()//Position - 0xFA0
 {
-	if (!Global_262145.f_28866)
+	if (!Global_262145.f_28866 /* Tunable: 1028571554 */)
 	{
 		return 0;
 	}

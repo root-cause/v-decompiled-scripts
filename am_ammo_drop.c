@@ -519,10 +519,10 @@ void func_13()//Position - 0x40B
 {
 	if (NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_60.f_4))
 	{
-		if (Global_262145.f_20333 > 0)
+		if (Global_262145.f_20333 /* Tunable: -156036296 */ > 0)
 		{
-			func_31(Global_262145.f_20333, 0);
-			func_14(Global_262145.f_20333, 14, 2, 1);
+			func_31(Global_262145.f_20333 /* Tunable: -156036296 */, 0);
+			func_14(Global_262145.f_20333 /* Tunable: -156036296 */, 14, 2, 1);
 		}
 	}
 }
@@ -723,7 +723,7 @@ void func_15(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4, 
 		case joaat("SERVICE_SPEND_ARENA_JOIN_SPECTATOR"):
 		case joaat("SERVICE_SPEND_ARENA_SPECTATOR_BOX"):
 		case joaat("SERVICE_SPEND_MAKE_IT_RAIN"):
-			if (iParam1 > 0 || Global_262145.f_28363)
+			if (iParam1 > 0 || Global_262145.f_28363 /* Tunable: 1103207774 */)
 			{
 				func_16(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -874,7 +874,7 @@ void func_15(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4, 
 		case joaat("SERVICE_SPEND_INTERACTION_MENU_ABILITY"):
 		case joaat("SERVICE_SPEND_AGENT_14_VEHICLE_REQUEST"):
 		case joaat("SERVICE_SPEND_TONY_LIMO"):
-			if (iParam1 > 0 || Global_262145.f_28363)
+			if (iParam1 > 0 || Global_262145.f_28363 /* Tunable: 1103207774 */)
 			{
 				func_16(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -2012,7 +2012,7 @@ void func_48()//Position - 0x2066
 
 int func_49()//Position - 0x209D
 {
-	if (!Global_262145.f_28866)
+	if (!Global_262145.f_28866 /* Tunable: 1028571554 */)
 	{
 		return 0;
 	}

@@ -8789,7 +8789,7 @@ void func_285(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4,
 		case joaat("SERVICE_SPEND_ARENA_JOIN_SPECTATOR"):
 		case joaat("SERVICE_SPEND_ARENA_SPECTATOR_BOX"):
 		case joaat("SERVICE_SPEND_MAKE_IT_RAIN"):
-			if (iParam1 > 0 || Global_262145.f_28363)
+			if (iParam1 > 0 || Global_262145.f_28363 /* Tunable: 1103207774 */)
 			{
 				func_286(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -8940,7 +8940,7 @@ void func_285(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4,
 		case joaat("SERVICE_SPEND_INTERACTION_MENU_ABILITY"):
 		case joaat("SERVICE_SPEND_AGENT_14_VEHICLE_REQUEST"):
 		case joaat("SERVICE_SPEND_TONY_LIMO"):
-			if (iParam1 > 0 || Global_262145.f_28363)
+			if (iParam1 > 0 || Global_262145.f_28363 /* Tunable: 1103207774 */)
 			{
 				func_286(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -9647,15 +9647,15 @@ int func_300(int iParam0)//Position - 0x92ED
 			break;
 		
 		case 58:
-			return Global_262145.f_25776;
+			return Global_262145.f_25776 /* Tunable: 2115355697 */;
 			break;
 		
 		case 62:
-			return Global_262145.f_25777;
+			return Global_262145.f_25777 /* Tunable: -1358864430 */;
 			break;
 		
 		case 63:
-			return Global_262145.f_29247;
+			return Global_262145.f_29247 /* Tunable: -1559847104 */;
 			break;
 		
 		case 64:
@@ -9663,19 +9663,19 @@ int func_300(int iParam0)//Position - 0x92ED
 			break;
 		
 		case 71:
-			return Global_262145.f_25777;
+			return Global_262145.f_25777 /* Tunable: -1358864430 */;
 			break;
 		
 		case 72:
-			return Global_262145.f_31762;
+			return Global_262145.f_31762 /* Tunable: -1284681617 */;
 			break;
 		
 		case 73:
-			return Global_262145.f_31764;
+			return Global_262145.f_31764 /* Tunable: -1303558292 */;
 			break;
 		
 		case 74:
-			return Global_262145.f_31766;
+			return Global_262145.f_31766 /* Tunable: 569088073 */;
 			break;
 	}
 	return 0;
@@ -10649,7 +10649,7 @@ void func_322()//Position - 0xA60D
 
 int func_323()//Position - 0xA644
 {
-	if (!Global_262145.f_28866)
+	if (!Global_262145.f_28866 /* Tunable: 1028571554 */)
 	{
 		return 0;
 	}

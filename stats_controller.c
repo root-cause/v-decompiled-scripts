@@ -1789,7 +1789,7 @@ int func_57(int iParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x1
 			}
 			if (iParam0 == 3)
 			{
-				fVar0 = (fVar0 + ((4f * Global_262145.f_24361) * IntToFloat(func_70(7237, -1, 0))));
+				fVar0 = (fVar0 + ((4f * Global_262145.f_24361 /* Tunable: -624142803 */) * IntToFloat(func_70(7237, -1, 0))));
 			}
 			if (iParam0 == 3)
 			{

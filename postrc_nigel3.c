@@ -518,7 +518,7 @@ void func_5()//Position - 0x4E4
 
 int func_6()//Position - 0x51B
 {
-	if (!Global_262145.f_28866)
+	if (!Global_262145.f_28866 /* Tunable: 1028571554 */)
 	{
 		return 0;
 	}

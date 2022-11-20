@@ -9124,7 +9124,7 @@ void func_302()//Position - 0xA31C
 
 int func_303()//Position - 0xA353
 {
-	if (!Global_262145.f_28866)
+	if (!Global_262145.f_28866 /* Tunable: 1028571554 */)
 	{
 		return 0;
 	}
@@ -13537,7 +13537,7 @@ void func_487(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4,
 		case joaat("SERVICE_SPEND_ARENA_JOIN_SPECTATOR"):
 		case joaat("SERVICE_SPEND_ARENA_SPECTATOR_BOX"):
 		case joaat("SERVICE_SPEND_MAKE_IT_RAIN"):
-			if (iParam1 > 0 || Global_262145.f_28363)
+			if (iParam1 > 0 || Global_262145.f_28363 /* Tunable: 1103207774 */)
 			{
 				func_488(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -13688,7 +13688,7 @@ void func_487(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4,
 		case joaat("SERVICE_SPEND_INTERACTION_MENU_ABILITY"):
 		case joaat("SERVICE_SPEND_AGENT_14_VEHICLE_REQUEST"):
 		case joaat("SERVICE_SPEND_TONY_LIMO"):
-			if (iParam1 > 0 || Global_262145.f_28363)
+			if (iParam1 > 0 || Global_262145.f_28363 /* Tunable: 1103207774 */)
 			{
 				func_488(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -14288,7 +14288,7 @@ void func_513()//Position - 0x106E4
 	int iVar21;
 	float fVar22;
 	
-	iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(Global_262145.f_29736, Global_262145.f_29737);
+	iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(Global_262145.f_29736 /* Tunable: 544918928 */, Global_262145.f_29737 /* Tunable: -1055680280 */);
 	iVar1 = 0;
 	while (iVar1 < iVar0)
 	{
@@ -14358,7 +14358,7 @@ void func_513()//Position - 0x106E4
 		MISC::CLEAR_BIT(&iVar9, 11);
 		MISC::CLEAR_BIT(&iVar9, 12);
 	}
-	iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(Global_262145.f_29738, Global_262145.f_29739);
+	iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(Global_262145.f_29738 /* Tunable: -577933166 */, Global_262145.f_29739 /* Tunable: 740148171 */);
 	iVar1 = 0;
 	while (iVar1 < iVar0)
 	{
@@ -14409,7 +14409,7 @@ void func_513()//Position - 0x106E4
 		}
 		iVar1++;
 	}
-	iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(Global_262145.f_29740, Global_262145.f_29741);
+	iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(Global_262145.f_29740 /* Tunable: -1215396560 */, Global_262145.f_29741 /* Tunable: 2086011134 */);
 	iVar1 = 0;
 	while (iVar1 < iVar0)
 	{
@@ -14436,11 +14436,11 @@ void func_513()//Position - 0x106E4
 		}
 		iVar1++;
 	}
-	iVar12 = MISC::GET_RANDOM_INT_IN_RANGE(Global_262145.f_29742, Global_262145.f_29743 + 1);
-	iVar13 = MISC::GET_RANDOM_INT_IN_RANGE(Global_262145.f_29744, Global_262145.f_29745 + 1);
-	iVar14 = MISC::GET_RANDOM_INT_IN_RANGE(Global_262145.f_29746, Global_262145.f_29747 + 1);
-	iVar15 = MISC::GET_RANDOM_INT_IN_RANGE(Global_262145.f_29748, Global_262145.f_29749 + 1);
-	iVar16 = MISC::GET_RANDOM_INT_IN_RANGE(Global_262145.f_29750, Global_262145.f_29751 + 1);
+	iVar12 = MISC::GET_RANDOM_INT_IN_RANGE(Global_262145.f_29742 /* Tunable: 229746245 */, Global_262145.f_29743 /* Tunable: -350111103 */ + 1);
+	iVar13 = MISC::GET_RANDOM_INT_IN_RANGE(Global_262145.f_29744 /* Tunable: 1897994891 */, Global_262145.f_29745 /* Tunable: 1269668093 */ + 1);
+	iVar14 = MISC::GET_RANDOM_INT_IN_RANGE(Global_262145.f_29746 /* Tunable: 1066525008 */, Global_262145.f_29747 /* Tunable: 1534393449 */ + 1);
+	iVar15 = MISC::GET_RANDOM_INT_IN_RANGE(Global_262145.f_29748 /* Tunable: -1226549566 */, Global_262145.f_29749 /* Tunable: -1483535037 */ + 1);
+	iVar16 = MISC::GET_RANDOM_INT_IN_RANGE(Global_262145.f_29750 /* Tunable: -878110459 */, Global_262145.f_29751 /* Tunable: -1667139927 */ + 1);
 	iVar12 = SYSTEM::CEIL((SYSTEM::TO_FLOAT(iVar12) / 100f)) * 100;
 	iVar13 = SYSTEM::CEIL((SYSTEM::TO_FLOAT(iVar13) / 100f)) * 100;
 	iVar14 = SYSTEM::CEIL((SYSTEM::TO_FLOAT(iVar14) / 100f)) * 100;
@@ -14476,22 +14476,22 @@ float func_514()//Position - 0x10BB8
 	switch (func_515(1))
 	{
 		case 0:
-			return Global_262145.f_29893;
+			return Global_262145.f_29893 /* Tunable: -1387641161 */;
 		
 		case 1:
-			return Global_262145.f_29894;
+			return Global_262145.f_29894 /* Tunable: -1977209208 */;
 		
 		case 2:
-			return Global_262145.f_29895;
+			return Global_262145.f_29895 /* Tunable: -651044344 */;
 		
 		case 3:
-			return Global_262145.f_29896;
+			return Global_262145.f_29896 /* Tunable: 593471001 */;
 		
 		case 4:
-			return Global_262145.f_29897;
+			return Global_262145.f_29897 /* Tunable: 2057499252 */;
 		
 		case 5:
-			return Global_262145.f_29898;
+			return Global_262145.f_29898 /* Tunable: -982681546 */;
 		
 		default:
 	}
@@ -14573,9 +14573,9 @@ void func_518()//Position - 0x10D54
 		func_4(9489, 4, -1, 1, 0);
 		return;
 	}
-	if (Global_262145.f_29910 != 0)
+	if (Global_262145.f_29910 /* Tunable: 637051746 */ != 0)
 	{
-		if (func_520(9360, -1) != Global_262145.f_29910)
+		if (func_520(9360, -1) != Global_262145.f_29910 /* Tunable: 637051746 */)
 		{
 			func_4(9489, 5, -1, 1, 0);
 			return;
@@ -21397,7 +21397,7 @@ int func_730(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x1
 	}
 	if (func_731(iParam0))
 	{
-		if (iParam2 <= Global_262145.f_21727)
+		if (iParam2 <= Global_262145.f_21727 /* Tunable: -1542918426 */)
 		{
 			iVar0 = 1;
 			if (iParam0 == 15)
@@ -21405,7 +21405,7 @@ int func_730(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x1
 				iVar0 = 2;
 			}
 		}
-		else if (iParam2 <= Global_262145.f_21728)
+		else if (iParam2 <= Global_262145.f_21728 /* Tunable: -2015624215 */)
 		{
 			iVar0 = 2;
 			if (iParam0 == 18)
@@ -21443,7 +21443,7 @@ int func_730(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x1
 	}
 	else if (func_732(iParam0))
 	{
-		if (iParam1 < Global_262145.f_21687)
+		if (iParam1 < Global_262145.f_21687 /* Tunable: 642214211 */)
 		{
 			iVar0 = 1;
 		}
@@ -29141,10 +29141,10 @@ float func_889(int iParam0)//Position - 0x1F00A
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_29976;
+			return Global_262145.f_29976 /* Tunable: 1808919381 */;
 		
 		case 2:
-			return Global_262145.f_29977;
+			return Global_262145.f_29977 /* Tunable: 1759346392 */;
 		
 		default:
 	}

@@ -918,25 +918,25 @@ int func_29(int iParam0)//Position - 0x916
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_24416;
+			return Global_262145.f_24416 /* Tunable: -1318722703 */;
 		
 		case 2:
-			return Global_262145.f_24417;
+			return Global_262145.f_24417 /* Tunable: -2136290534 */;
 		
 		case 3:
-			return Global_262145.f_24418;
+			return Global_262145.f_24418 /* Tunable: 1069721135 */;
 		
 		case 4:
-			return Global_262145.f_24419;
+			return Global_262145.f_24419 /* Tunable: -8586474 */;
 		
 		case 5:
-			return Global_262145.f_24420;
+			return Global_262145.f_24420 /* Tunable: -358911902 */;
 		
 		case 6:
-			return Global_262145.f_24421;
+			return Global_262145.f_24421 /* Tunable: -879486246 */;
 		
 		case 0:
-			return Global_262145.f_24422;
+			return Global_262145.f_24422 /* Tunable: -1168716160 */;
 		
 		default:
 	}
@@ -1279,7 +1279,7 @@ int func_44(int iParam0)//Position - 0xE11
 		case 29:
 		case 30:
 		case 31:
-			return Global_262145.f_21575;
+			return Global_262145.f_21575 /* Tunable: 2092556011 */;
 		
 		default:
 	}
@@ -1995,14 +1995,14 @@ int func_73(int iParam0, int iParam1)//Position - 0x1ACE
 	{
 		if (Global_1640666[iParam0] > 0 && (!func_80(iParam1) || !func_76(PLAYER::PLAYER_ID(), iParam1)))
 		{
-			if (!Global_262145.f_21597 || func_62(PLAYER::PLAYER_ID()))
+			if (!Global_262145.f_21597 /* Tunable: 1006342231 */ || func_62(PLAYER::PLAYER_ID()))
 			{
 				return 1;
 			}
 		}
 		return 0;
 	}
-	if ((Global_1640666[iParam0] > 0 && !func_80(iParam1)) && (!Global_262145.f_18996 || func_74(PLAYER::PLAYER_ID())))
+	if ((Global_1640666[iParam0] > 0 && !func_80(iParam1)) && (!Global_262145.f_18996 /* Tunable: 1192276690 */ || func_74(PLAYER::PLAYER_ID())))
 	{
 		return 1;
 	}
@@ -3214,7 +3214,7 @@ void func_116()//Position - 0x2F42
 
 int func_117()//Position - 0x2F79
 {
-	if (!Global_262145.f_28866)
+	if (!Global_262145.f_28866 /* Tunable: 1028571554 */)
 	{
 		return 0;
 	}
@@ -7228,14 +7228,14 @@ void func_298(int iParam0, int iParam1, bool bParam2)//Position - 0x765E
 		{
 			if (Global_2815059.f_4462 == -1)
 			{
-				Global_2815059.f_4462 = Global_262145.f_27172;
+				Global_2815059.f_4462 = Global_262145.f_27172 /* Tunable: 945146471 */;
 			}
 			func_305(&(Global_2815059.f_4460), 0, 0);
 			if (bParam2)
 			{
 				if (Global_2815059.f_4465 == -1)
 				{
-					Global_2815059.f_4465 = Global_262145.f_27173;
+					Global_2815059.f_4465 = Global_262145.f_27173 /* Tunable: -29732167 */;
 				}
 				func_305(&(Global_2815059.f_4463), 0, 0);
 			}

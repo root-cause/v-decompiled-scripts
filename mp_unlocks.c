@@ -1418,11 +1418,11 @@ int func_39(int iParam0)//Position - 0x153C
 				iVar0 = 0;
 				iVar0 += 19;
 				iVar0 += 8;
-				return (Global_262145.f_21902 + iVar0);
+				return (Global_262145.f_21902 /* Tunable: 1073335638 */ + iVar0);
 			}
 			else
 			{
-				return Global_262145.f_21902;
+				return Global_262145.f_21902 /* Tunable: 1073335638 */;
 			}
 			break;
 		

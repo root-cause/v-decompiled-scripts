@@ -809,7 +809,7 @@ int func_26()//Position - 0xAEC
 	{
 		return 0;
 	}
-	if ((((((((((((func_29("MPOFSEAT_PCEXIT" /* GXT: Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */) || func_29("MPOFSEAT_EXIT" /* GXT: Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || func_29("ARENA_SEAT" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to fly a Battle Drone.~n~Press ~INPUT_SCRIPT_RRIGHT~ to drive an RC Bandito.~n~Press ~INPUT_SCRIPT_RLEFT~ to use the Trap Cam.~n~Press ~INPUT_SCRIPT_RUP~ to use a Turret.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */)) || func_29("ARENA_SEAT_PC" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to fly a Battle Drone.~n~Press ~INPUT_SCRIPT_RRIGHT~ to drive an RC Bandito.~n~Press ~INPUT_SCRIPT_RLEFT~ to use the Trap Cam.~n~Press ~INPUT_SCRIPT_RUP~ to use a Turret.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */)) || func_28("ARENA_SEAT1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633, Global_262145.f_26634)) || func_28("ARENA_SEAT_PC1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633, Global_262145.f_26634)) || func_27("ARENA_SEAT2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633)) || func_27("ARENA_SEAT_PC2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633)) || func_27("ARENA_SEAT3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634)) || func_27("ARENA_SEAT_PC3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634)) || func_29("ARENA_SEAT4" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */)) || func_29("ARENA_SEAT_PC4" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */)) || func_29("ARENA_SEAT_EX" /* GXT: Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */))
+	if ((((((((((((func_29("MPOFSEAT_PCEXIT" /* GXT: Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */) || func_29("MPOFSEAT_EXIT" /* GXT: Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || func_29("ARENA_SEAT" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to fly a Battle Drone.~n~Press ~INPUT_SCRIPT_RRIGHT~ to drive an RC Bandito.~n~Press ~INPUT_SCRIPT_RLEFT~ to use the Trap Cam.~n~Press ~INPUT_SCRIPT_RUP~ to use a Turret.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */)) || func_29("ARENA_SEAT_PC" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to fly a Battle Drone.~n~Press ~INPUT_SCRIPT_RRIGHT~ to drive an RC Bandito.~n~Press ~INPUT_SCRIPT_RLEFT~ to use the Trap Cam.~n~Press ~INPUT_SCRIPT_RUP~ to use a Turret.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */)) || func_28("ARENA_SEAT1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */)) || func_28("ARENA_SEAT_PC1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */)) || func_27("ARENA_SEAT2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */)) || func_27("ARENA_SEAT_PC2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */)) || func_27("ARENA_SEAT3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */)) || func_27("ARENA_SEAT_PC3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */)) || func_29("ARENA_SEAT4" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */)) || func_29("ARENA_SEAT_PC4" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */)) || func_29("ARENA_SEAT_EX" /* GXT: Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */))
 	{
 		return 1;
 	}
@@ -1510,7 +1510,7 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 		case 2:
 			if ((func_130(PLAYER::PLAYER_PED_ID(), uParam0[uParam0->f_281.f_2 /*14*/]) && func_129(PLAYER::PLAYER_PED_ID(), (uParam0[uParam0->f_281.f_2 /*14*/])->f_8.f_3)) && !func_50())
 			{
-				if ((((((func_128(uParam0) || Global_1931426) || func_126(uParam0)) || !func_125(uParam0)) || ((uParam0->f_281.f_2 < 10 && iParam1->f_2[uParam0->f_281.f_2] != -1) && iParam1->f_2[uParam0->f_281.f_2] != PLAYER::PLAYER_ID())) || ((uParam0->f_281.f_2 <= 7 && func_56()) && func_52())) || (uParam0->f_281.f_2 < 10 && Global_262145.f_26630))
+				if ((((((func_128(uParam0) || Global_1931426) || func_126(uParam0)) || !func_125(uParam0)) || ((uParam0->f_281.f_2 < 10 && iParam1->f_2[uParam0->f_281.f_2] != -1) && iParam1->f_2[uParam0->f_281.f_2] != PLAYER::PLAYER_ID())) || ((uParam0->f_281.f_2 <= 7 && func_56()) && func_52())) || (uParam0->f_281.f_2 < 10 && Global_262145.f_26630 /* Tunable: -1263858477 */))
 				{
 					if (!Global_1931426 && ((uParam0->f_281.f_2 < 10 && iParam1->f_2[uParam0->f_281.f_2] != -1) && iParam1->f_2[uParam0->f_281.f_2] != PLAYER::PLAYER_ID()))
 					{
@@ -2120,11 +2120,11 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 			{
 				bVar2 = true;
 			}
-			if (func_27("ARENA_VIP_CASH1" /* GXT: You do not have enough money. It costs $~1~ to use Spectator Cam. */, Global_262145.f_26633))
+			if (func_27("ARENA_VIP_CASH1" /* GXT: You do not have enough money. It costs $~1~ to use Spectator Cam. */, Global_262145.f_26633 /* Tunable: -887378230 */))
 			{
 				MISC::CLEAR_BIT(&Global_2787913, 5);
 			}
-			if (func_27("ARENA_VIP_CASH2" /* GXT: You do not have enough money. It costs $~1~ to fly a Spectator Drone. */, Global_262145.f_26634))
+			if (func_27("ARENA_VIP_CASH2" /* GXT: You do not have enough money. It costs $~1~ to fly a Spectator Drone. */, Global_262145.f_26634 /* Tunable: -76677190 */))
 			{
 				MISC::CLEAR_BIT(&Global_2787913, 4);
 			}
@@ -2134,11 +2134,11 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 			}
 			if (BitTest(Global_2787913, 4) && uParam0->f_281.f_6 == -1)
 			{
-				func_84("ARENA_VIP_CASH2" /* GXT: You do not have enough money. It costs $~1~ to fly a Spectator Drone. */, Global_262145.f_26634, 2000);
+				func_84("ARENA_VIP_CASH2" /* GXT: You do not have enough money. It costs $~1~ to fly a Spectator Drone. */, Global_262145.f_26634 /* Tunable: -76677190 */, 2000);
 			}
 			if (BitTest(Global_2787913, 5) && uParam0->f_281.f_6 == -1)
 			{
-				func_84("ARENA_VIP_CASH1" /* GXT: You do not have enough money. It costs $~1~ to use Spectator Cam. */, Global_262145.f_26633, 2000);
+				func_84("ARENA_VIP_CASH1" /* GXT: You do not have enough money. It costs $~1~ to use Spectator Cam. */, Global_262145.f_26633 /* Tunable: -887378230 */, 2000);
 			}
 			if (BitTest(Global_2787913, 7) && uParam0->f_281.f_6 == -1)
 			{
@@ -2154,7 +2154,7 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 				{
 					if (func_56() && !func_52())
 					{
-						if (((((func_28("ARENA_SEAT_PC1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633, Global_262145.f_26634) || func_27("ARENA_SEAT_PC2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633)) || func_27("ARENA_SEAT_PC3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634)) || func_28("ARENA_SEAT1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633, Global_262145.f_26634)) || func_27("ARENA_SEAT2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633)) || func_27("ARENA_SEAT3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634))
+						if (((((func_28("ARENA_SEAT_PC1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */) || func_27("ARENA_SEAT_PC2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */)) || func_27("ARENA_SEAT_PC3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */)) || func_28("ARENA_SEAT1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */)) || func_27("ARENA_SEAT2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */)) || func_27("ARENA_SEAT3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */))
 						{
 							func_25(uParam0, 1);
 						}
@@ -2164,7 +2164,7 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 						func_25(uParam0, 1);
 					}
 				}
-				if ((((((!func_26() && !BitTest(Global_2787913, 4)) && !BitTest(Global_2787913, 5)) && !BitTest(Global_2787913, 7)) && !func_27("ARENA_VIP_CASH1" /* GXT: You do not have enough money. It costs $~1~ to use Spectator Cam. */, Global_262145.f_26633)) && !func_27("ARENA_VIP_CASH2" /* GXT: You do not have enough money. It costs $~1~ to fly a Spectator Drone. */, Global_262145.f_26634)) && !func_29("ARENA_VIP_ABIL" /* GXT: This option is currently unavailable. */))
+				if ((((((!func_26() && !BitTest(Global_2787913, 4)) && !BitTest(Global_2787913, 5)) && !BitTest(Global_2787913, 7)) && !func_27("ARENA_VIP_CASH1" /* GXT: You do not have enough money. It costs $~1~ to use Spectator Cam. */, Global_262145.f_26633 /* Tunable: -887378230 */)) && !func_27("ARENA_VIP_CASH2" /* GXT: You do not have enough money. It costs $~1~ to fly a Spectator Drone. */, Global_262145.f_26634 /* Tunable: -76677190 */)) && !func_29("ARENA_VIP_ABIL" /* GXT: This option is currently unavailable. */))
 				{
 					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 					{
@@ -2172,7 +2172,7 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 						{
 							if (func_56() && !func_52())
 							{
-								if ((func_28("ARENA_SEAT_PC1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633, Global_262145.f_26634) || func_27("ARENA_SEAT_PC2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633)) || func_27("ARENA_SEAT_PC3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634))
+								if ((func_28("ARENA_SEAT_PC1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */) || func_27("ARENA_SEAT_PC2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */)) || func_27("ARENA_SEAT_PC3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */))
 								{
 									func_25(uParam0, 1);
 								}
@@ -2186,15 +2186,15 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 								}
 								if (!BitTest(Global_2787913, 2) && !BitTest(Global_2787913, 3))
 								{
-									func_78("ARENA_SEAT_PC1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633, Global_262145.f_26634);
+									func_78("ARENA_SEAT_PC1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */);
 								}
 								else if (BitTest(Global_2787913, 2) && !BitTest(Global_2787913, 3))
 								{
-									func_84("ARENA_SEAT_PC2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633, -1);
+									func_84("ARENA_SEAT_PC2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, -1);
 								}
 								else if (!BitTest(Global_2787913, 2) && BitTest(Global_2787913, 3))
 								{
-									func_84("ARENA_SEAT_PC3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634, -1);
+									func_84("ARENA_SEAT_PC3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */, -1);
 								}
 								else
 								{
@@ -2211,7 +2211,7 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 					{
 						if (func_56() && !func_52())
 						{
-							if ((func_28("ARENA_SEAT1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633, Global_262145.f_26634) || func_27("ARENA_SEAT2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633)) || func_27("ARENA_SEAT3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634))
+							if ((func_28("ARENA_SEAT1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */) || func_27("ARENA_SEAT2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */)) || func_27("ARENA_SEAT3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */))
 							{
 								func_25(uParam0, 1);
 							}
@@ -2225,15 +2225,15 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 							}
 							if (!BitTest(Global_2787913, 2) && !BitTest(Global_2787913, 3))
 							{
-								func_78("ARENA_SEAT1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633, Global_262145.f_26634);
+								func_78("ARENA_SEAT1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */);
 							}
 							else if (BitTest(Global_2787913, 2) && !BitTest(Global_2787913, 3))
 							{
-								func_84("ARENA_SEAT2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633, -1);
+								func_84("ARENA_SEAT2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, -1);
 							}
 							else if (!BitTest(Global_2787913, 2) && BitTest(Global_2787913, 3))
 							{
-								func_84("ARENA_SEAT3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634, -1);
+								func_84("ARENA_SEAT3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */, -1);
 							}
 							else
 							{
@@ -2351,9 +2351,9 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 							}
 							func_100(uParam0);
 						}
-						if ((((PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 223 /*INPUT_SCRIPT_RDOWN*/) && !PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 235 /*INPUT_SCRIPT_PAD_RIGHT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 224 /*INPUT_SCRIPT_RLEFT*/)) && bVar2) && !Global_262145.f_26631)
+						if ((((PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 223 /*INPUT_SCRIPT_RDOWN*/) && !PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 235 /*INPUT_SCRIPT_PAD_RIGHT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 224 /*INPUT_SCRIPT_RLEFT*/)) && bVar2) && !Global_262145.f_26631 /* Tunable: -774498395 */)
 						{
-							if (MONEY::NETWORK_CAN_SPEND_MONEY(Global_262145.f_26633, false, false, true, -1, 0) || BitTest(Global_2787913, 3))
+							if (MONEY::NETWORK_CAN_SPEND_MONEY(Global_262145.f_26633 /* Tunable: -887378230 */, false, false, true, -1, 0) || BitTest(Global_2787913, 3))
 							{
 								func_25(uParam0, 1);
 								Global_2789737 = 1;

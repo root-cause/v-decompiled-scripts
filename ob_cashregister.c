@@ -322,7 +322,7 @@ int func_11(int iParam0)//Position - 0x528
 
 var func_12()//Position - 0x572
 {
-	return Global_262145.f_30925;
+	return Global_262145.f_30925 /* Tunable: 2071833430 */;
 }
 
 int func_13(int iParam0, int iParam1)//Position - 0x581

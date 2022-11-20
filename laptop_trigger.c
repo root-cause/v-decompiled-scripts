@@ -1545,7 +1545,7 @@ void func_35(int iParam0, char* sParam1, bool bParam2, int iParam3)//Position - 
 
 int func_36()//Position - 0x1AA8
 {
-	if (!Global_262145.f_28866)
+	if (!Global_262145.f_28866 /* Tunable: 1028571554 */)
 	{
 		return 0;
 	}
@@ -3506,14 +3506,14 @@ void func_134(int iParam0, int iParam1, bool bParam2)//Position - 0x3D9B
 		{
 			if (Global_2815059.f_4462 == -1)
 			{
-				Global_2815059.f_4462 = Global_262145.f_27172;
+				Global_2815059.f_4462 = Global_262145.f_27172 /* Tunable: 945146471 */;
 			}
 			func_21(&(Global_2815059.f_4460), 0, 0);
 			if (bParam2)
 			{
 				if (Global_2815059.f_4465 == -1)
 				{
-					Global_2815059.f_4465 = Global_262145.f_27173;
+					Global_2815059.f_4465 = Global_262145.f_27173 /* Tunable: -29732167 */;
 				}
 				func_21(&(Global_2815059.f_4463), 0, 0);
 			}
