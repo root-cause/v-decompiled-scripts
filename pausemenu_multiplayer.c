@@ -1680,13 +1680,13 @@ void func_3(int iParam0, char* sParam1, char* sParam2, int iParam3, char* sParam
 			}
 			else if (func_36(iParam12))
 			{
-				if (Global_262145.f_23406 /* Tunable: 1293613484 */ >= 1f)
+				if (Global_262145.f_23406 /* Tunable: H2_BADGE_XP_MULTIPLIER */ >= 1f)
 				{
-					fVar1 = Global_262145.f_23406 /* Tunable: 1293613484 */;
+					fVar1 = Global_262145.f_23406 /* Tunable: H2_BADGE_XP_MULTIPLIER */;
 				}
-				if (Global_262145.f_23407 /* Tunable: -1420433402 */ >= 1f)
+				if (Global_262145.f_23407 /* Tunable: H2_BADGE_CASH_MULTIPLIER */ >= 1f)
 				{
-					fVar2 = Global_262145.f_23407 /* Tunable: -1420433402 */;
+					fVar2 = Global_262145.f_23407 /* Tunable: H2_BADGE_CASH_MULTIPLIER */;
 				}
 			}
 			else

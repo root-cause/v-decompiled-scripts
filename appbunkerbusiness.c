@@ -795,7 +795,7 @@ int func_14(int iParam0)//Position - 0x62C
 		case 29:
 		case 30:
 		case 31:
-			return Global_262145.f_21575 /* Tunable: 2092556011 */;
+			return Global_262145.f_21575 /* Tunable: GR_MANU_CAPACITY */;
 		
 		default:
 	}
@@ -13764,7 +13764,7 @@ int func_292(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position - 
 			}
 			else
 			{
-				iVar0 = Global_262145.f_21576 /* Tunable: 215868155 */;
+				iVar0 = Global_262145.f_21576 /* Tunable: GR_MANU_PRODUCTION_TIME */;
 			}
 			if (func_51(PLAYER::PLAYER_ID(), iParam0, 0))
 			{
@@ -18481,14 +18481,14 @@ int func_441(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0x
 				break;
 			
 			case 5:
-				iVar0 = Global_262145.f_21581 /* Tunable: 625823880 */;
+				iVar0 = Global_262145.f_21581 /* Tunable: GR_MANU_PRODUCT_VALUE */;
 				if (func_51(iParam0, iParam1, 0))
 				{
-					iVar0 = (iVar0 + Global_262145.f_21583 /* Tunable: -1396864195 */);
+					iVar0 = (iVar0 + Global_262145.f_21583 /* Tunable: GR_MANU_PRODUCT_VALUE_EQUIPMENT_UPGRADE */);
 				}
 				if (func_51(iParam0, iParam1, 1))
 				{
-					iVar0 = (iVar0 + Global_262145.f_21582 /* Tunable: 1295681480 */);
+					iVar0 = (iVar0 + Global_262145.f_21582 /* Tunable: GR_MANU_PRODUCT_VALUE_STAFF_UPGRADE */);
 				}
 				iVar0 = (iVar0 * iParam2);
 				break;

@@ -173966,7 +173966,7 @@ int func_3346(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position -
 			}
 			else
 			{
-				iVar0 = Global_262145.f_21576 /* Tunable: 215868155 */;
+				iVar0 = Global_262145.f_21576 /* Tunable: GR_MANU_PRODUCTION_TIME */;
 			}
 			if (func_2725(PLAYER::PLAYER_ID(), iParam0, 0))
 			{

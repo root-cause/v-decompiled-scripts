@@ -3729,7 +3729,7 @@ void func_121()//Position - 0x3C1D
 			}
 			return;
 		}
-		if (((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && Local_43.f_1 == PLAYER::PLAYER_PED_ID()) && func_126(PLAYER::PLAYER_ID())) && Global_262145.f_27055 /* Tunable: 987287738 */)
+		if (((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && Local_43.f_1 == PLAYER::PLAYER_PED_ID()) && func_126(PLAYER::PLAYER_ID())) && Global_262145.f_27055 /* Tunable: VC_PENTHOUSE_DISABLE_PASSOUT */)
 		{
 			if (Global_44024[iLocal_54 /*5*/].f_3 >= 10)
 			{

@@ -40914,7 +40914,7 @@ int func_1240(int iParam0, int iParam1, var uParam2, int iParam3, int iParam4)//
 	else
 	{
 		iVar0 = func_1281();
-		iVar1 = (Global_262145.f_27174 /* Tunable: 1714268902 */ - iVar0);
+		iVar1 = (Global_262145.f_27174 /* Tunable: VC_CASINO_CHIP_MAX_HELD */ - iVar0);
 		iVar2 = 0;
 		if (iParam1 == 0)
 		{
@@ -41221,14 +41221,14 @@ void func_1244(int iParam0)//Position - 0x3CFBD
 	{
 		func_1247();
 	}
-	else if ((iVar0 - iVar1) >= Global_262145.f_27176 /* Tunable: -693730411 */)
+	else if ((iVar0 - iVar1) >= Global_262145.f_27176 /* Tunable: VC_CASINO_CHIP_MAX_WIN_LOSS_COOLDOWN */)
 	{
 		func_1246();
 		iVar2 = 0;
 	}
-	if ((iParam0 + iVar2) >= Global_262145.f_27178 /* Tunable: -134749009 */)
+	if ((iParam0 + iVar2) >= Global_262145.f_27178 /* Tunable: VC_CASINO_CHIP_MAX_WIN_DAILY */)
 	{
-		func_1245(joaat("MPPLY_CASINO_CHIPS_WON_GD"), Global_262145.f_27178 /* Tunable: -134749009 */);
+		func_1245(joaat("MPPLY_CASINO_CHIPS_WON_GD"), Global_262145.f_27178 /* Tunable: VC_CASINO_CHIP_MAX_WIN_DAILY */);
 		func_1246();
 		Global_2725354 = 1;
 	}
@@ -41295,7 +41295,7 @@ void func_1251(int iParam0)//Position - 0x3D0B3
 	{
 		func_1255();
 	}
-	else if ((iVar0 - iVar1) >= Global_262145.f_27175 /* Tunable: 1022221044 */)
+	else if ((iVar0 - iVar1) >= Global_262145.f_27175 /* Tunable: VC_CASINO_CHIP_MAX_BUY_COOLDOWN */)
 	{
 		func_1254();
 		iVar2 = 0;
@@ -42202,7 +42202,7 @@ int func_1279()//Position - 0x3E210
 	int iVar2;
 	
 	iVar0 = (func_1252() - func_1256());
-	iVar1 = (Global_262145.f_27174 /* Tunable: 1714268902 */ - func_1281());
+	iVar1 = (Global_262145.f_27174 /* Tunable: VC_CASINO_CHIP_MAX_HELD */ - func_1281());
 	iVar2 = func_1280();
 	if (iVar0 > iVar1)
 	{
@@ -185708,7 +185708,7 @@ int func_3832(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position -
 			}
 			else
 			{
-				iVar0 = Global_262145.f_21576 /* Tunable: 215868155 */;
+				iVar0 = Global_262145.f_21576 /* Tunable: GR_MANU_PRODUCTION_TIME */;
 			}
 			if (func_3185(PLAYER::PLAYER_ID(), iParam0, 0))
 			{

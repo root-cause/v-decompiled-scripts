@@ -155893,7 +155893,7 @@ int func_2385(var uParam0, int iParam1)//Position - 0xC44D0
 		
 		case 30:
 			uParam0->f_3 = 4;
-			uParam0->f_4[0] = -112041596;
+			uParam0->f_4[0] = joaat("dt1_05_build1_lod");
 			uParam0->f_4[1] = joaat("dt1_05_build1_damage_lod");
 			*uParam0 = { 136.004f, -749.287f, 153.302f };
 			break;
@@ -197815,7 +197815,7 @@ int func_4020(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position -
 			}
 			else
 			{
-				iVar0 = Global_262145.f_21576 /* Tunable: 215868155 */;
+				iVar0 = Global_262145.f_21576 /* Tunable: GR_MANU_PRODUCTION_TIME */;
 			}
 			if (func_3319(PLAYER::PLAYER_ID(), iParam0, 0))
 			{

@@ -7877,7 +7877,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 		case 857:
 			*uParam1 = 79200f;
 			uParam1->f_1 = 300000f;
-			uParam1->f_2 = joaat("ss1_03_98_lod");
+			uParam1->f_2 = 79200;
 			uParam1->f_3 = 300000;
 			uParam1->f_5 = joaat("DLC_HIPSTER_CAR_MOD_VAPID_BLADE");
 			uParam1->f_4 = 1;

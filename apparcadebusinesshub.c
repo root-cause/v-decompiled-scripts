@@ -1279,7 +1279,7 @@ int func_44(int iParam0)//Position - 0xE11
 		case 29:
 		case 30:
 		case 31:
-			return Global_262145.f_21575 /* Tunable: 2092556011 */;
+			return Global_262145.f_21575 /* Tunable: GR_MANU_CAPACITY */;
 		
 		default:
 	}

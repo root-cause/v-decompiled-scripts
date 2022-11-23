@@ -45512,7 +45512,7 @@ int func_291(int iParam0)//Position - 0x2CE12
 			return Global_262145.f_24619 /* Tunable: -2115907141 */;
 		
 		case 243:
-			return Global_262145.f_27080 /* Tunable: 1861936998 */;
+			return Global_262145.f_27080 /* Tunable: VC_WORK_REWARD_PARTICIPATION_CAP */;
 		
 		default:
 	}
@@ -47810,14 +47810,14 @@ int func_330(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0x
 				break;
 			
 			case 5:
-				iVar0 = Global_262145.f_21581 /* Tunable: 625823880 */;
+				iVar0 = Global_262145.f_21581 /* Tunable: GR_MANU_PRODUCT_VALUE */;
 				if (func_332(iParam0, iParam1, 0))
 				{
-					iVar0 = (iVar0 + Global_262145.f_21583 /* Tunable: -1396864195 */);
+					iVar0 = (iVar0 + Global_262145.f_21583 /* Tunable: GR_MANU_PRODUCT_VALUE_EQUIPMENT_UPGRADE */);
 				}
 				if (func_332(iParam0, iParam1, 1))
 				{
-					iVar0 = (iVar0 + Global_262145.f_21582 /* Tunable: 1295681480 */);
+					iVar0 = (iVar0 + Global_262145.f_21582 /* Tunable: GR_MANU_PRODUCT_VALUE_STAFF_UPGRADE */);
 				}
 				iVar0 = (iVar0 * iParam2);
 				break;
@@ -49314,16 +49314,16 @@ int func_362(int iParam0, bool bParam1, bool bParam2)//Position - 0x30E4C
 			{
 				if (func_217(PLAYER::PLAYER_ID()))
 				{
-					return Global_262145.f_21569 /* Tunable: 1702358130 */;
+					return Global_262145.f_21569 /* Tunable: GR_RESUPPLY_RP_EARNED_CEO */;
 				}
 				else
 				{
-					return Global_262145.f_21570 /* Tunable: -1228939334 */;
+					return Global_262145.f_21570 /* Tunable: GR_RESUPPLY_RP_EARNED_VIP */;
 				}
 			}
 			else if (func_203())
 			{
-				return Global_262145.f_21571 /* Tunable: -1652049478 */;
+				return Global_262145.f_21571 /* Tunable: GR_RESUPPLY_RP_EARNED_MC_LEADER */;
 			}
 			break;
 		
@@ -49332,16 +49332,16 @@ int func_362(int iParam0, bool bParam1, bool bParam2)//Position - 0x30E4C
 			{
 				if (func_217(PLAYER::PLAYER_ID()))
 				{
-					iVar0 = Global_262145.f_21547 /* Tunable: -2020851334 */;
+					iVar0 = Global_262145.f_21547 /* Tunable: GR_SELL_RP_EARNED_CEO */;
 				}
 				else
 				{
-					iVar0 = Global_262145.f_21548 /* Tunable: -693934343 */;
+					iVar0 = Global_262145.f_21548 /* Tunable: GR_SELL_RP_EARNED_VIP */;
 				}
 			}
 			else if (func_203())
 			{
-				iVar0 = Global_262145.f_21549 /* Tunable: 409706712 */;
+				iVar0 = Global_262145.f_21549 /* Tunable: GR_SELL_RP_EARNED_MC_LEADER */;
 			}
 			if ((func_224() && Global_262145.f_32970 /* Tunable: 1598011694 */) && !func_171(32357, -1))
 			{
@@ -49355,16 +49355,16 @@ int func_362(int iParam0, bool bParam1, bool bParam2)//Position - 0x30E4C
 			{
 				if (func_217(PLAYER::PLAYER_ID()))
 				{
-					return Global_262145.f_21561 /* Tunable: -817502774 */;
+					return Global_262145.f_21561 /* Tunable: GR_DEFEND_RP_EARNED_CEO */;
 				}
 				else
 				{
-					return Global_262145.f_21562 /* Tunable: 58004412 */;
+					return Global_262145.f_21562 /* Tunable: GR_DEFEND_RP_EARNED_VIP */;
 				}
 			}
 			else if (func_203())
 			{
-				return Global_262145.f_21563 /* Tunable: 520487318 */;
+				return Global_262145.f_21563 /* Tunable: GR_DEFEND_RP_EARNED_MC_LEADER */;
 			}
 			break;
 		
@@ -49391,16 +49391,16 @@ int func_362(int iParam0, bool bParam1, bool bParam2)//Position - 0x30E4C
 			{
 				if (func_217(PLAYER::PLAYER_ID()))
 				{
-					return Global_262145.f_22832 /* Tunable: 415509521 */;
+					return Global_262145.f_22832 /* Tunable: SMUG_SELL_RP_EARNED_CEO */;
 				}
 				else
 				{
-					return Global_262145.f_22833 /* Tunable: -452182900 */;
+					return Global_262145.f_22833 /* Tunable: SMUG_SELL_RP_EARNED_VIP */;
 				}
 			}
 			else if (func_203())
 			{
-				return Global_262145.f_22834 /* Tunable: -7280014 */;
+				return Global_262145.f_22834 /* Tunable: SMUG_SELL_RP_EARNED_MC_LEADER */;
 			}
 			break;
 		
@@ -58303,7 +58303,7 @@ int func_717(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position - 
 			}
 			else
 			{
-				iVar0 = Global_262145.f_21576 /* Tunable: 215868155 */;
+				iVar0 = Global_262145.f_21576 /* Tunable: GR_MANU_PRODUCTION_TIME */;
 			}
 			if (func_332(PLAYER::PLAYER_ID(), iParam0, 0))
 			{

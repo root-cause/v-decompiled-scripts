@@ -7807,7 +7807,7 @@ int func_107(int iParam0, int iParam1, var uParam2, int iParam3, int iParam4)//P
 	else
 	{
 		iVar0 = func_401();
-		iVar1 = (Global_262145.f_27174 /* Tunable: 1714268902 */ - iVar0);
+		iVar1 = (Global_262145.f_27174 /* Tunable: VC_CASINO_CHIP_MAX_HELD */ - iVar0);
 		iVar2 = 0;
 		if (iParam1 == 0)
 		{
@@ -8114,14 +8114,14 @@ void func_111(int iParam0)//Position - 0xF7EB
 	{
 		func_114();
 	}
-	else if ((iVar0 - iVar1) >= Global_262145.f_27176 /* Tunable: -693730411 */)
+	else if ((iVar0 - iVar1) >= Global_262145.f_27176 /* Tunable: VC_CASINO_CHIP_MAX_WIN_LOSS_COOLDOWN */)
 	{
 		func_113();
 		iVar2 = 0;
 	}
-	if ((iParam0 + iVar2) >= Global_262145.f_27178 /* Tunable: -134749009 */)
+	if ((iParam0 + iVar2) >= Global_262145.f_27178 /* Tunable: VC_CASINO_CHIP_MAX_WIN_DAILY */)
 	{
-		func_112(joaat("MPPLY_CASINO_CHIPS_WON_GD"), Global_262145.f_27178 /* Tunable: -134749009 */);
+		func_112(joaat("MPPLY_CASINO_CHIPS_WON_GD"), Global_262145.f_27178 /* Tunable: VC_CASINO_CHIP_MAX_WIN_DAILY */);
 		func_113();
 		Global_2725354 = 1;
 	}
@@ -8188,7 +8188,7 @@ void func_118(int iParam0)//Position - 0xF8E1
 	{
 		func_121();
 	}
-	else if ((iVar0 - iVar1) >= Global_262145.f_27175 /* Tunable: 1022221044 */)
+	else if ((iVar0 - iVar1) >= Global_262145.f_27175 /* Tunable: VC_CASINO_CHIP_MAX_BUY_COOLDOWN */)
 	{
 		func_120();
 		iVar2 = 0;
@@ -9106,7 +9106,7 @@ int func_147()//Position - 0x10A48
 	int iVar2;
 	
 	iVar0 = (func_119() - func_122());
-	iVar1 = (Global_262145.f_27174 /* Tunable: 1714268902 */ - func_401());
+	iVar1 = (Global_262145.f_27174 /* Tunable: VC_CASINO_CHIP_MAX_HELD */ - func_401());
 	iVar2 = func_148();
 	if (iVar0 > iVar1)
 	{
@@ -10594,14 +10594,14 @@ void func_189(int iParam0)//Position - 0x1250B
 	{
 		func_114();
 	}
-	else if ((iVar0 - iVar1) >= Global_262145.f_27176 /* Tunable: -693730411 */)
+	else if ((iVar0 - iVar1) >= Global_262145.f_27176 /* Tunable: VC_CASINO_CHIP_MAX_WIN_LOSS_COOLDOWN */)
 	{
 		func_113();
 		iVar2 = 0;
 	}
-	if ((iVar2 - iParam0) >= Global_262145.f_27177 /* Tunable: -1520600172 */)
+	if ((iVar2 - iParam0) >= Global_262145.f_27177 /* Tunable: VC_CASINO_CHIP_MAX_LOSS_DAILY */)
 	{
-		func_112(joaat("MPPLY_CASINO_CHIPS_WON_GD"), Global_262145.f_27177 /* Tunable: -1520600172 */);
+		func_112(joaat("MPPLY_CASINO_CHIPS_WON_GD"), Global_262145.f_27177 /* Tunable: VC_CASINO_CHIP_MAX_LOSS_DAILY */);
 		func_113();
 		Global_2725354 = 1;
 	}
@@ -16463,12 +16463,12 @@ bool func_328()//Position - 0x1ACCA
 
 int func_329()//Position - 0x1ACD8
 {
-	return (Global_262145.f_27177 /* Tunable: -1520600172 */ + func_115());
+	return (Global_262145.f_27177 /* Tunable: VC_CASINO_CHIP_MAX_LOSS_DAILY */ + func_115());
 }
 
 int func_330()//Position - 0x1ACEC
 {
-	return (Global_262145.f_27178 /* Tunable: -134749009 */ - func_115());
+	return (Global_262145.f_27178 /* Tunable: VC_CASINO_CHIP_MAX_WIN_DAILY */ - func_115());
 }
 
 bool func_331()//Position - 0x1AD00

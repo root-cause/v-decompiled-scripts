@@ -32201,7 +32201,7 @@ int func_191(var uParam0, int iParam1)//Position - 0x22BA0
 		
 		case 30:
 			uParam0->f_3 = 4;
-			uParam0->f_4[0] = -112041596;
+			uParam0->f_4[0] = joaat("dt1_05_build1_lod");
 			uParam0->f_4[1] = joaat("dt1_05_build1_damage_lod");
 			*uParam0 = { 136.004f, -749.287f, 153.302f };
 			break;

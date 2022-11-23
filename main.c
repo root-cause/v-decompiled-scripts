@@ -103774,7 +103774,7 @@ int func_617(var uParam0, int iParam1)//Position - 0x7F80B
 		
 		case 30:
 			uParam0->f_3 = 4;
-			uParam0->f_4[0] = -112041596;
+			uParam0->f_4[0] = joaat("dt1_05_build1_lod");
 			uParam0->f_4[1] = joaat("dt1_05_build1_damage_lod");
 			*uParam0 = { 136.004f, -749.287f, 153.302f };
 			break;
@@ -112578,13 +112578,13 @@ void func_831(float* fParam0, float* fParam1, float* fParam2, int iParam3, int i
 		}
 		if (bParam8)
 		{
-			if (Global_262145.f_23406 /* Tunable: 1293613484 */ >= 1f)
+			if (Global_262145.f_23406 /* Tunable: H2_BADGE_XP_MULTIPLIER */ >= 1f)
 			{
-				*fParam0 = Global_262145.f_23406 /* Tunable: 1293613484 */;
+				*fParam0 = Global_262145.f_23406 /* Tunable: H2_BADGE_XP_MULTIPLIER */;
 			}
-			if (Global_262145.f_23407 /* Tunable: -1420433402 */ >= 1f)
+			if (Global_262145.f_23407 /* Tunable: H2_BADGE_CASH_MULTIPLIER */ >= 1f)
 			{
-				*fParam1 = Global_262145.f_23407 /* Tunable: -1420433402 */;
+				*fParam1 = Global_262145.f_23407 /* Tunable: H2_BADGE_CASH_MULTIPLIER */;
 			}
 			return;
 		}

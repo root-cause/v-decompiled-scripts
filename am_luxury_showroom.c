@@ -55103,19 +55103,19 @@ int func_354(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 							break;
 						
 						case 1:
-							return Global_262145.f_21771 /* Tunable: 1492176427 */;
+							return Global_262145.f_21771 /* Tunable: GR_MOC_LIVERIES_STARS_AND_STRIPES_PRICE */;
 							break;
 						
 						case 2:
-							return Global_262145.f_21772 /* Tunable: -1819896205 */;
+							return Global_262145.f_21772 /* Tunable: GR_MOC_LIVERIES_EAGLE_CLAW_PRICE */;
 							break;
 						
 						case 3:
-							return Global_262145.f_21773 /* Tunable: 1725371650 */;
+							return Global_262145.f_21773 /* Tunable: GR_MOC_LIVERIES_EAGLE_CLAW_FLAG_PRICE */;
 							break;
 						
 						case 4:
-							return Global_262145.f_21774 /* Tunable: -1208871062 */;
+							return Global_262145.f_21774 /* Tunable: GR_MOC_LIVERIES_FIGHTING_FREEDOM_PRICE */;
 							break;
 					}
 					break;
@@ -63280,7 +63280,7 @@ int func_400(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 			case joaat("wolfsbane"):
 				if (bParam2)
 				{
-					iVar1 = joaat("a_m_y_genstreet_28_lod");
+					iVar1 = 71250;
 					if (bVar0)
 					{
 					}
@@ -63295,7 +63295,7 @@ int func_400(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 							iVar1 = Global_262145.f_17982 /* Tunable: BIKER_WEBSITE_WESTERN_WOLFSBANE */;
 						}
 					}
-					iVar2 = joaat("a_m_y_genstreet_28_lod");
+					iVar2 = 71250;
 					if (bVar0)
 					{
 					}

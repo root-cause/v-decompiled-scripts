@@ -532,7 +532,7 @@ void func_19(int iParam0)//Position - 0x869
 			break;
 		
 		case 7:
-			func_20(iParam0, 69600, joaat("ss1_03_98_lod"));
+			func_20(iParam0, 69600, 79200);
 			break;
 		
 		case 8:

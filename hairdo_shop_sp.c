@@ -67110,34 +67110,34 @@ int func_420(int iParam0)//Position - 0x53DBB
 			return Global_262145.f_28385 /* Tunable: VW_AW_WV_85 */;
 		
 		case 425:
-			return Global_262145.f_28386 /* Tunable: -372414705 */;
+			return Global_262145.f_28386 /* Tunable: CLAW_PLUSH1 */;
 		
 		case 426:
-			return Global_262145.f_28387 /* Tunable: -595112829 */;
+			return Global_262145.f_28387 /* Tunable: CLAW_PLUSH2 */;
 		
 		case 427:
-			return Global_262145.f_28388 /* Tunable: -726614826 */;
+			return Global_262145.f_28388 /* Tunable: CLAW_PLUSH3 */;
 		
 		case 428:
-			return Global_262145.f_28389 /* Tunable: -1032644517 */;
+			return Global_262145.f_28389 /* Tunable: CLAW_PLUSH4 */;
 		
 		case 429:
-			return Global_262145.f_28390 /* Tunable: -1323174471 */;
+			return Global_262145.f_28390 /* Tunable: CLAW_PLUSH5 */;
 		
 		case 430:
-			return Global_262145.f_28391 /* Tunable: -1629531852 */;
+			return Global_262145.f_28391 /* Tunable: CLAW_PLUSH6 */;
 		
 		case 431:
-			return Global_262145.f_28392 /* Tunable: 2069432868 */;
+			return Global_262145.f_28392 /* Tunable: CLAW_PLUSH7 */;
 		
 		case 432:
-			return Global_262145.f_28393 /* Tunable: -1575331930 */;
+			return Global_262145.f_28393 /* Tunable: CLAW_PLUSH8 */;
 		
 		case 433:
-			return Global_262145.f_28394 /* Tunable: 1457635642 */;
+			return Global_262145.f_28394 /* Tunable: CLAW_PLUSH9 */;
 		
 		case 434:
-			return Global_262145.f_28395 /* Tunable: -1425421693 */;
+			return Global_262145.f_28395 /* Tunable: QUB3D_POSTER */;
 		
 		case 435:
 			return Global_262145.f_30850 /* Tunable: 87141955 */;

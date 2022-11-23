@@ -15478,7 +15478,7 @@ int func_275(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 			case joaat("wolfsbane"):
 				if (bParam2)
 				{
-					iVar1 = joaat("a_m_y_genstreet_28_lod");
+					iVar1 = 71250;
 					if (bVar0)
 					{
 					}
@@ -15493,7 +15493,7 @@ int func_275(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 							iVar1 = Global_262145.f_17982 /* Tunable: BIKER_WEBSITE_WESTERN_WOLFSBANE */;
 						}
 					}
-					iVar2 = joaat("a_m_y_genstreet_28_lod");
+					iVar2 = 71250;
 					if (bVar0)
 					{
 					}

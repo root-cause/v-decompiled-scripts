@@ -46749,43 +46749,43 @@ void func_124(int iParam0, var uParam1, int iParam2)//Position - 0x43783
 			switch (iParam0)
 			{
 				case joaat("CLO_BIM_O_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19056 /* Tunable: -671910499 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19056 /* Tunable: BIKEROUTFIT1 */));
 					break;
 				
 				case joaat("CLO_BIM_O_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19057 /* Tunable: 962541679 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19057 /* Tunable: BIKEROUTFIT2 */));
 					break;
 				
 				case joaat("CLO_BIM_O_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19058 /* Tunable: 1353606925 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19058 /* Tunable: BIKEROUTFIT3 */));
 					break;
 				
 				case joaat("CLO_BIM_O_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19059 /* Tunable: 1053213502 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19059 /* Tunable: BIKEROUTFIT4 */));
 					break;
 				
 				case joaat("CLO_BIM_O_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19060 /* Tunable: -191615270 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19060 /* Tunable: BIKEROUTFIT5 */));
 					break;
 				
 				case joaat("CLO_BIM_O_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19061 /* Tunable: 1920510641 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19061 /* Tunable: BIKEROUTFIT6 */));
 					break;
 				
 				case joaat("CLO_BIM_O_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19062 /* Tunable: 1706529071 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19062 /* Tunable: BIKEROUTFIT7 */));
 					break;
 				
 				case joaat("CLO_BIM_O_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19063 /* Tunable: -1688798099 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19063 /* Tunable: BIKEROUTFIT8 */));
 					break;
 				
 				case joaat("CLO_BIM_O_16"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19064 /* Tunable: -1987553072 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19064 /* Tunable: BIKEROUTFIT9 */));
 					break;
 				
 				case joaat("CLO_BIM_O_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19065 /* Tunable: -1328238221 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19065 /* Tunable: BIKEROUTFIT10 */));
 					break;
 			}
 			break;
@@ -48698,43 +48698,43 @@ void func_124(int iParam0, var uParam1, int iParam2)//Position - 0x43783
 			switch (iParam0)
 			{
 				case joaat("CLO_BIF_O_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19056 /* Tunable: -671910499 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19056 /* Tunable: BIKEROUTFIT1 */));
 					break;
 				
 				case joaat("CLO_BIF_O_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19057 /* Tunable: 962541679 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19057 /* Tunable: BIKEROUTFIT2 */));
 					break;
 				
 				case joaat("CLO_BIF_O_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19058 /* Tunable: 1353606925 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19058 /* Tunable: BIKEROUTFIT3 */));
 					break;
 				
 				case joaat("CLO_BIF_O_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19059 /* Tunable: 1053213502 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19059 /* Tunable: BIKEROUTFIT4 */));
 					break;
 				
 				case joaat("CLO_BIF_O_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19060 /* Tunable: -191615270 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19060 /* Tunable: BIKEROUTFIT5 */));
 					break;
 				
 				case joaat("CLO_BIF_O_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19061 /* Tunable: 1920510641 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19061 /* Tunable: BIKEROUTFIT6 */));
 					break;
 				
 				case joaat("CLO_BIF_O_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19062 /* Tunable: 1706529071 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19062 /* Tunable: BIKEROUTFIT7 */));
 					break;
 				
 				case joaat("CLO_BIF_O_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19063 /* Tunable: -1688798099 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19063 /* Tunable: BIKEROUTFIT8 */));
 					break;
 				
 				case joaat("CLO_BIF_O_16"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19064 /* Tunable: -1987553072 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19064 /* Tunable: BIKEROUTFIT9 */));
 					break;
 				
 				case joaat("CLO_BIF_O_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19065 /* Tunable: -1328238221 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_19065 /* Tunable: BIKEROUTFIT10 */));
 					break;
 			}
 			break;
@@ -108964,7 +108964,7 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 			case joaat("wolfsbane"):
 				if (bParam2)
 				{
-					iVar1 = joaat("a_m_y_genstreet_28_lod");
+					iVar1 = 71250;
 					if (bVar0)
 					{
 					}
@@ -108979,7 +108979,7 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 							iVar1 = Global_262145.f_17982 /* Tunable: BIKER_WEBSITE_WESTERN_WOLFSBANE */;
 						}
 					}
-					iVar2 = joaat("a_m_y_genstreet_28_lod");
+					iVar2 = 71250;
 					if (bVar0)
 					{
 					}

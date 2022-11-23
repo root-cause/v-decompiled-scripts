@@ -16702,14 +16702,14 @@ int func_387(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0x
 				break;
 			
 			case 5:
-				iVar0 = Global_262145.f_21581 /* Tunable: 625823880 */;
+				iVar0 = Global_262145.f_21581 /* Tunable: GR_MANU_PRODUCT_VALUE */;
 				if (func_28(iParam0, iParam1, 0))
 				{
-					iVar0 = (iVar0 + Global_262145.f_21583 /* Tunable: -1396864195 */);
+					iVar0 = (iVar0 + Global_262145.f_21583 /* Tunable: GR_MANU_PRODUCT_VALUE_EQUIPMENT_UPGRADE */);
 				}
 				if (func_28(iParam0, iParam1, 1))
 				{
-					iVar0 = (iVar0 + Global_262145.f_21582 /* Tunable: 1295681480 */);
+					iVar0 = (iVar0 + Global_262145.f_21582 /* Tunable: GR_MANU_PRODUCT_VALUE_STAFF_UPGRADE */);
 				}
 				iVar0 = (iVar0 * iParam2);
 				break;
@@ -19344,7 +19344,7 @@ int func_464(int iParam0)//Position - 0x12558
 		case 29:
 		case 30:
 		case 31:
-			return Global_262145.f_21575 /* Tunable: 2092556011 */;
+			return Global_262145.f_21575 /* Tunable: GR_MANU_CAPACITY */;
 		
 		default:
 	}
