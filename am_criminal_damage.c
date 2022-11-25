@@ -3877,22 +3877,22 @@ void func_99(char* sParam0, var uParam1, bool bParam2, int iParam3, int iParam4,
 			case joaat("CU_STUNT_CLOTHES"):
 				if (iParam5 == 11 || iParam5 == 8)
 				{
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17260 /* Tunable: 1979581212 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17260 /* Tunable: STUNT_ALL_UPPERS */));
 					break;
 				}
 				if (iParam5 == 4)
 				{
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17261 /* Tunable: 1699234850 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17261 /* Tunable: STUNT_ALL_LOWERS */));
 					break;
 				}
 				if (iParam5 == 7)
 				{
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17262 /* Tunable: 1188164683 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17262 /* Tunable: STUNT_ALL_ACCESSORIES */));
 					break;
 				}
 				if (iParam5 == 12)
 				{
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17265 /* Tunable: 208947051 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17265 /* Tunable: STUNT_ALL_OUTFITS */));
 				}
 			}
 	}
@@ -4086,7 +4086,7 @@ int func_100(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x2
 						{
 							iParam3 = func_101(iParam0, iParam2, 14, 3);
 						}
-						return (FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(iParam3, joaat("HAT"), 1) || FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(func_101(iParam0, iParam2, 14, 3), -1842686353, 1));
+						return (FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(iParam3, joaat("HAT"), 1) || FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(func_101(iParam0, iParam2, 14, 3), joaat("HAT_MENU"), 1));
 					}
 					break;
 				
@@ -4097,7 +4097,7 @@ int func_100(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x2
 						{
 							iParam3 = func_101(iParam0, iParam2, 1, 3);
 						}
-						return (FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(iParam3, joaat("HAT"), 0) || FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(func_101(iParam0, iParam2, 1, 3), -1842686353, 0));
+						return (FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(iParam3, joaat("HAT"), 0) || FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(func_101(iParam0, iParam2, 1, 3), joaat("HAT_MENU"), 0));
 					}
 					break;
 			}
@@ -4121,7 +4121,7 @@ int func_100(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x2
 						{
 							iParam3 = func_101(iParam0, iParam2, 14, 4);
 						}
-						return (FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(iParam3, joaat("HAT"), 1) || FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(func_101(iParam0, iParam2, 14, 4), -1842686353, 1));
+						return (FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(iParam3, joaat("HAT"), 1) || FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(func_101(iParam0, iParam2, 14, 4), joaat("HAT_MENU"), 1));
 					}
 					break;
 				
@@ -4132,7 +4132,7 @@ int func_100(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x2
 						{
 							iParam3 = func_101(iParam0, iParam2, 1, 4);
 						}
-						return (FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(iParam3, joaat("HAT"), 0) || FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(func_101(iParam0, iParam2, 1, 4), -1842686353, 0));
+						return (FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(iParam3, joaat("HAT"), 0) || FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(func_101(iParam0, iParam2, 1, 4), joaat("HAT_MENU"), 0));
 					}
 					break;
 			}
@@ -49391,389 +49391,389 @@ void func_125(int iParam0, var uParam1, int iParam2)//Position - 0x48A9B
 			switch (iParam0)
 			{
 				case joaat("CLO_STM_HT6_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16958 /* Tunable: STUNT_MALE_HELMETS_CREAM_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16958 /* Tunable: STUNT_MALE_HELMETS_CREAM_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT6_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16959 /* Tunable: STUNT_MALE_HELMETS_GRAY_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16959 /* Tunable: STUNT_MALE_HELMETS_GRAY_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT6_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16960 /* Tunable: STUNT_MALE_HELMETS_ORANGE_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16960 /* Tunable: STUNT_MALE_HELMETS_ORANGE_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT6_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16961 /* Tunable: STUNT_MALE_HELMETS_PALE_BLUE_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16961 /* Tunable: STUNT_MALE_HELMETS_PALE_BLUE_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT6_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16962 /* Tunable: STUNT_MALE_HELMETS_WHITE_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16962 /* Tunable: STUNT_MALE_HELMETS_WHITE_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT6_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16963 /* Tunable: STUNT_MALE_HELMETS_BLUE_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16963 /* Tunable: STUNT_MALE_HELMETS_BLUE_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT6_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16964 /* Tunable: STUNT_MALE_HELMETS_RED_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16964 /* Tunable: STUNT_MALE_HELMETS_RED_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT6_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16965 /* Tunable: STUNT_MALE_HELMETS_BLACK_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16965 /* Tunable: STUNT_MALE_HELMETS_BLACK_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT6_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16966 /* Tunable: STUNT_MALE_HELMETS_PINK_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16966 /* Tunable: STUNT_MALE_HELMETS_PINK_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT11_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17000 /* Tunable: STUNT_MALE_HELMETS_WHITE_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17000 /* Tunable: STUNT_MALE_HELMETS_WHITE_JC_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT11_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17001 /* Tunable: STUNT_MALE_HELMETS_BLUE_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17001 /* Tunable: STUNT_MALE_HELMETS_BLUE_JC_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT11_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17002 /* Tunable: STUNT_MALE_HELMETS_RED_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17002 /* Tunable: STUNT_MALE_HELMETS_RED_JC_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT11_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17003 /* Tunable: STUNT_MALE_HELMETS_BLACK_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17003 /* Tunable: STUNT_MALE_HELMETS_BLACK_JC_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT11_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17004 /* Tunable: STUNT_MALE_HELMETS_PINK_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17004 /* Tunable: STUNT_MALE_HELMETS_PINK_JC_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT8_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16967 /* Tunable: STUNT_MALE_HELMETS_SWIRL_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16967 /* Tunable: STUNT_MALE_HELMETS_SWIRL_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT8_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16968 /* Tunable: STUNT_MALE_HELMETS_RED_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16968 /* Tunable: STUNT_MALE_HELMETS_RED_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT8_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16969 /* Tunable: STUNT_MALE_HELMETS_BROWN_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16969 /* Tunable: STUNT_MALE_HELMETS_BROWN_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT8_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16970 /* Tunable: STUNT_MALE_HELMETS_WHITE_FLAG_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16970 /* Tunable: STUNT_MALE_HELMETS_WHITE_FLAG_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT8_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16971 /* Tunable: STUNT_MALE_HELMETS_BLUE_STARS_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16971 /* Tunable: STUNT_MALE_HELMETS_BLUE_STARS_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT8_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16972 /* Tunable: STUNT_MALE_HELMETS_BLACK_SLASH_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16972 /* Tunable: STUNT_MALE_HELMETS_BLACK_SLASH_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT8_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16973 /* Tunable: STUNT_MALE_HELMETS_WHITE_STARS_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16973 /* Tunable: STUNT_MALE_HELMETS_WHITE_STARS_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT8_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16974 /* Tunable: STUNT_MALE_HELMETS_BLUE_STRIPES_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16974 /* Tunable: STUNT_MALE_HELMETS_BLUE_STRIPES_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT8_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16975 /* Tunable: STUNT_MALE_HELMETS_RED_STRIPES_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16975 /* Tunable: STUNT_MALE_HELMETS_RED_STRIPES_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT8_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16976 /* Tunable: STUNT_MALE_HELMETS_BLUE_CHAIN_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16976 /* Tunable: STUNT_MALE_HELMETS_BLUE_CHAIN_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT8_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16977 /* Tunable: STUNT_MALE_HELMETS_BLACK_STRIPES_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16977 /* Tunable: STUNT_MALE_HELMETS_BLACK_STRIPES_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT8_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16978 /* Tunable: STUNT_MALE_HELMETS_BLACK_JAG_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16978 /* Tunable: STUNT_MALE_HELMETS_BLACK_JAG_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT13_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17005 /* Tunable: STUNT_MALE_HELMETS_GOLD_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17005 /* Tunable: STUNT_MALE_HELMETS_GOLD_JC_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT13_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17006 /* Tunable: STUNT_MALE_HELMETS_SILVER_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17006 /* Tunable: STUNT_MALE_HELMETS_SILVER_JC_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT13_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17007 /* Tunable: STUNT_MALE_HELMETS_GOLD_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17007 /* Tunable: STUNT_MALE_HELMETS_GOLD_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT13_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17008 /* Tunable: STUNT_MALE_HELMETS_SILVER_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17008 /* Tunable: STUNT_MALE_HELMETS_SILVER_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT15_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17009 /* Tunable: -931809429 */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17009 /* Tunable: -931809429 */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT15_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17010 /* Tunable: STUNT_MALE_HELMETS_SLALOM_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17010 /* Tunable: STUNT_MALE_HELMETS_SLALOM_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT1510"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17011 /* Tunable: STUNT_MALE_HELMETS_SA_ASSAULT_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17011 /* Tunable: STUNT_MALE_HELMETS_SA_ASSAULT_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT1511"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17012 /* Tunable: STUNT_MALE_HELMETS_VIBE_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17012 /* Tunable: STUNT_MALE_HELMETS_VIBE_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT1512"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17013 /* Tunable: STUNT_MALE_HELMETS_BURST_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17013 /* Tunable: STUNT_MALE_HELMETS_BURST_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT1513"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17014 /* Tunable: STUNT_MALE_HELMETS_TRI_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17014 /* Tunable: STUNT_MALE_HELMETS_TRI_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT1514"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17015 /* Tunable: STUNT_MALE_HELMETS_SPRUNK_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17015 /* Tunable: STUNT_MALE_HELMETS_SPRUNK_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT1515"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17016 /* Tunable: STUNT_MALE_HELMETS_SKELETON_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17016 /* Tunable: STUNT_MALE_HELMETS_SKELETON_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT1516"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17017 /* Tunable: STUNT_MALE_HELMETS_DEATH_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17017 /* Tunable: STUNT_MALE_HELMETS_DEATH_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT1517"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17018 /* Tunable: STUNT_MALE_HELMETS_COBBLE_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17018 /* Tunable: STUNT_MALE_HELMETS_COBBLE_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT1518"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17019 /* Tunable: STUNT_MALE_HELMETS_CUBIST_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17019 /* Tunable: STUNT_MALE_HELMETS_CUBIST_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT1519"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17020 /* Tunable: STUNT_MALE_HELMETS_DIGITAL_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17020 /* Tunable: STUNT_MALE_HELMETS_DIGITAL_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT1520"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17021 /* Tunable: STUNT_MALE_HELMETS_SNAKESKIN_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17021 /* Tunable: STUNT_MALE_HELMETS_SNAKESKIN_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT1521"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17022 /* Tunable: STUNT_MALE_HELMETS_BOOST_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17022 /* Tunable: STUNT_MALE_HELMETS_BOOST_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT1522"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17023 /* Tunable: STUNT_MALE_HELMETS_TROPIC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17023 /* Tunable: STUNT_MALE_HELMETS_TROPIC_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT1523"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17024 /* Tunable: STUNT_MALE_HELMETS_ATOMIC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17024 /* Tunable: STUNT_MALE_HELMETS_ATOMIC_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("HE_FMM_18_7"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[23] * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[23] * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("HE_FMM_18_6"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[22] * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[22] * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("HE_FMM_18_5"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[21] * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[21] * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("HE_FMM_18_4"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[20] * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[20] * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("HE_FMM_18_3"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[19] * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[19] * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("HE_FMM_18_2"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[18] * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[18] * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("HE_FMM_18_1"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[17] * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[17] * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("HE_FMM_18_0"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[16] * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_1085[16] * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 			}
 			switch (iParam0)
 			{
 				case joaat("CLO_STM_H_100"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16979 /* Tunable: STUNT_MALE_HATS_ATOMIC_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16979 /* Tunable: STUNT_MALE_HATS_ATOMIC_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_101"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16980 /* Tunable: STUNT_MALE_HATS_AUTO_EXOTIC_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16980 /* Tunable: STUNT_MALE_HATS_AUTO_EXOTIC_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_102"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16981 /* Tunable: STUNT_MALE_HATS_CHEPALLE_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16981 /* Tunable: STUNT_MALE_HATS_CHEPALLE_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_103"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16982 /* Tunable: STUNT_MALE_HATS_CUNNING_STUNTS_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16982 /* Tunable: STUNT_MALE_HATS_CUNNING_STUNTS_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_104"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16983 /* Tunable: STUNT_MALE_HATS_FLASH_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16983 /* Tunable: STUNT_MALE_HATS_FLASH_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_105"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16984 /* Tunable: STUNT_MALE_HATS_FUKARU_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16984 /* Tunable: STUNT_MALE_HATS_FUKARU_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_106"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16985 /* Tunable: STUNT_MALE_HATS_GLOBE_OIL_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16985 /* Tunable: STUNT_MALE_HATS_GLOBE_OIL_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_107"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16986 /* Tunable: STUNT_MALE_HATS_GROTTI_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16986 /* Tunable: STUNT_MALE_HATS_GROTTI_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_108"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16987 /* Tunable: STUNT_MALE_HATS_IMPONTE_RACING_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16987 /* Tunable: STUNT_MALE_HATS_IMPONTE_RACING_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_109"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16988 /* Tunable: STUNT_MALE_HATS_LAMPADATI_RACING_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16988 /* Tunable: STUNT_MALE_HATS_LAMPADATI_RACING_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_1010"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16989 /* Tunable: STUNT_MALE_HATS_LTD_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16989 /* Tunable: STUNT_MALE_HATS_LTD_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_1011"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16990 /* Tunable: STUNT_MALE_HATS_NAGASAKI_RACING_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16990 /* Tunable: STUNT_MALE_HATS_NAGASAKI_RACING_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_1012"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16991 /* Tunable: STUNT_MALE_HATS_NAGASAKI_MOTO_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16991 /* Tunable: STUNT_MALE_HATS_NAGASAKI_MOTO_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_1013"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16992 /* Tunable: STUNT_MALE_HATS_PATRIOT_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16992 /* Tunable: STUNT_MALE_HATS_PATRIOT_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_1014"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16993 /* Tunable: STUNT_MALE_HATS_REBEL_RADIO_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16993 /* Tunable: STUNT_MALE_HATS_REBEL_RADIO_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_1015"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16994 /* Tunable: STUNT_MALE_HATS_REDWOOD_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16994 /* Tunable: STUNT_MALE_HATS_REDWOOD_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_1016"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16995 /* Tunable: STUNT_MALE_HATS_SCOOTER_BROTHERS_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16995 /* Tunable: STUNT_MALE_HATS_SCOOTER_BROTHERS_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_1017"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16996 /* Tunable: STUNT_MALE_HATS_THE_MOUNT_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16996 /* Tunable: STUNT_MALE_HATS_THE_MOUNT_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_1018"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16997 /* Tunable: STUNT_MALE_HATS_TOTAL_RIDE_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16997 /* Tunable: STUNT_MALE_HATS_TOTAL_RIDE_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_1019"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16998 /* Tunable: STUNT_MALE_HATS_VAPID_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16998 /* Tunable: STUNT_MALE_HATS_VAPID_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_1020"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16999 /* Tunable: STUNT_MALE_HATS_XERO_GAS_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16999 /* Tunable: STUNT_MALE_HATS_XERO_GAS_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_9_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16979 /* Tunable: STUNT_MALE_HATS_ATOMIC_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16979 /* Tunable: STUNT_MALE_HATS_ATOMIC_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_9_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16980 /* Tunable: STUNT_MALE_HATS_AUTO_EXOTIC_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16980 /* Tunable: STUNT_MALE_HATS_AUTO_EXOTIC_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_9_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16981 /* Tunable: STUNT_MALE_HATS_CHEPALLE_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16981 /* Tunable: STUNT_MALE_HATS_CHEPALLE_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_9_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16982 /* Tunable: STUNT_MALE_HATS_CUNNING_STUNTS_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16982 /* Tunable: STUNT_MALE_HATS_CUNNING_STUNTS_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_9_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16983 /* Tunable: STUNT_MALE_HATS_FLASH_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16983 /* Tunable: STUNT_MALE_HATS_FLASH_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_9_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16984 /* Tunable: STUNT_MALE_HATS_FUKARU_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16984 /* Tunable: STUNT_MALE_HATS_FUKARU_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_9_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16985 /* Tunable: STUNT_MALE_HATS_GLOBE_OIL_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16985 /* Tunable: STUNT_MALE_HATS_GLOBE_OIL_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_9_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16986 /* Tunable: STUNT_MALE_HATS_GROTTI_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16986 /* Tunable: STUNT_MALE_HATS_GROTTI_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_9_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16987 /* Tunable: STUNT_MALE_HATS_IMPONTE_RACING_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16987 /* Tunable: STUNT_MALE_HATS_IMPONTE_RACING_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_9_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16988 /* Tunable: STUNT_MALE_HATS_LAMPADATI_RACING_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16988 /* Tunable: STUNT_MALE_HATS_LAMPADATI_RACING_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_9_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16989 /* Tunable: STUNT_MALE_HATS_LTD_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16989 /* Tunable: STUNT_MALE_HATS_LTD_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_9_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16990 /* Tunable: STUNT_MALE_HATS_NAGASAKI_RACING_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16990 /* Tunable: STUNT_MALE_HATS_NAGASAKI_RACING_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_9_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16991 /* Tunable: STUNT_MALE_HATS_NAGASAKI_MOTO_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16991 /* Tunable: STUNT_MALE_HATS_NAGASAKI_MOTO_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_9_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16992 /* Tunable: STUNT_MALE_HATS_PATRIOT_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16992 /* Tunable: STUNT_MALE_HATS_PATRIOT_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_9_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16993 /* Tunable: STUNT_MALE_HATS_REBEL_RADIO_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16993 /* Tunable: STUNT_MALE_HATS_REBEL_RADIO_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_9_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16994 /* Tunable: STUNT_MALE_HATS_REDWOOD_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16994 /* Tunable: STUNT_MALE_HATS_REDWOOD_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_9_16"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16995 /* Tunable: STUNT_MALE_HATS_SCOOTER_BROTHERS_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16995 /* Tunable: STUNT_MALE_HATS_SCOOTER_BROTHERS_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_9_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16996 /* Tunable: STUNT_MALE_HATS_THE_MOUNT_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16996 /* Tunable: STUNT_MALE_HATS_THE_MOUNT_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_9_18"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16997 /* Tunable: STUNT_MALE_HATS_TOTAL_RIDE_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16997 /* Tunable: STUNT_MALE_HATS_TOTAL_RIDE_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_9_19"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16998 /* Tunable: STUNT_MALE_HATS_VAPID_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16998 /* Tunable: STUNT_MALE_HATS_VAPID_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STM_H_9_20"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16999 /* Tunable: STUNT_MALE_HATS_XERO_GAS_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_16999 /* Tunable: STUNT_MALE_HATS_XERO_GAS_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 			}
 			break;
@@ -49782,59 +49782,59 @@ void func_125(int iParam0, var uParam1, int iParam2)//Position - 0x48A9B
 			switch (iParam0)
 			{
 				case joaat("CLO_STM_O_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17204 /* Tunable: 713628014 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17204 /* Tunable: STUNT_MALE_OUTFITS_NAVY_RACE_FIRESUIT */));
 					break;
 				
 				case joaat("CLO_STM_O_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17205 /* Tunable: 1529198378 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17205 /* Tunable: STUNT_MALE_OUTFITS_GRAY_RACE_FIRESUIT */));
 					break;
 				
 				case joaat("CLO_STM_O_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17206 /* Tunable: 84398174 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17206 /* Tunable: STUNT_MALE_OUTFITS_RED_RACE_FIRESUIT */));
 					break;
 				
 				case joaat("CLO_STM_O_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17207 /* Tunable: 1815875663 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17207 /* Tunable: STUNT_MALE_OUTFITS_BLACK_RACE_FIRESUIT */));
 					break;
 				
 				case joaat("CLO_STM_O_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17208 /* Tunable: -325230869 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17208 /* Tunable: STUNT_MALE_OUTFITS_GREEN_RACE_FIRESUIT */));
 					break;
 				
 				case joaat("CLO_STM_O_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17209 /* Tunable: 614364555 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17209 /* Tunable: STUNT_MALE_OUTFITS_WHITE_RACE_FIRESUIT */));
 					break;
 				
 				case joaat("CLO_STM_O_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17210 /* Tunable: 1347204992 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17210 /* Tunable: STUNT_MALE_OUTFITS_GREEN_LEATHER_RACESUIT */));
 					break;
 				
 				case joaat("CLO_STM_O_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17211 /* Tunable: 892676748 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17211 /* Tunable: STUNT_MALE_OUTFITS_RED_LEATHER_RACESUIT */));
 					break;
 				
 				case joaat("CLO_STM_O_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17212 /* Tunable: 256091218 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17212 /* Tunable: STUNT_MALE_OUTFITS_ITALIAN_LEATHER_RACESUIT */));
 					break;
 				
 				case joaat("CLO_STM_O_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17213 /* Tunable: -235384032 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17213 /* Tunable: STUNT_MALE_OUTFITS_BLACK_LEATHER_RACESUIT */));
 					break;
 				
 				case joaat("CLO_STM_O_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17214 /* Tunable: -1063386275 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17214 /* Tunable: STUNT_MALE_OUTFITS_FRENCH_LEATHER_RACESUIT */));
 					break;
 				
 				case joaat("CLO_STM_O_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17215 /* Tunable: -910791102 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17215 /* Tunable: STUNT_MALE_OUTFITS_YELLOW_LEATHER_RACESUIT */));
 					break;
 				
 				case joaat("CLO_STM_O_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17216 /* Tunable: -363269964 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17216 /* Tunable: STUNT_MALE_OUTFITS_PINK_LEATHER_RACESUIT */));
 					break;
 				
 				case joaat("CLO_STM_O_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17217 /* Tunable: 511662911 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17217 /* Tunable: STUNT_MALE_OUTFITS_BLUE_LEATHER_RACESUIT */));
 					break;
 				
 				case joaat("CLO_STM_O_14"):
@@ -50361,389 +50361,389 @@ void func_125(int iParam0, var uParam1, int iParam2)//Position - 0x48A9B
 			switch (iParam0)
 			{
 				case joaat("CLO_STF_HT6_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17137 /* Tunable: STUNT_FEMALE_HELMETS_CREAM_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17137 /* Tunable: STUNT_FEMALE_HELMETS_CREAM_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT6_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17138 /* Tunable: STUNT_FEMALE_HELMETS_GRAY_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17138 /* Tunable: STUNT_FEMALE_HELMETS_GRAY_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT6_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17139 /* Tunable: STUNT_FEMALE_HELMETS_ORANGE_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17139 /* Tunable: STUNT_FEMALE_HELMETS_ORANGE_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT6_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17140 /* Tunable: STUNT_FEMALE_HELMETS_PALE_BLUE_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17140 /* Tunable: STUNT_FEMALE_HELMETS_PALE_BLUE_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT6_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17141 /* Tunable: STUNT_FEMALE_HELMETS_WHITE_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17141 /* Tunable: STUNT_FEMALE_HELMETS_WHITE_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT6_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17142 /* Tunable: STUNT_FEMALE_HELMETS_BLUE_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17142 /* Tunable: STUNT_FEMALE_HELMETS_BLUE_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT6_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17143 /* Tunable: STUNT_FEMALE_HELMETS_RED_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17143 /* Tunable: STUNT_FEMALE_HELMETS_RED_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT6_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17144 /* Tunable: STUNT_FEMALE_HELMETS_BLACK_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17144 /* Tunable: STUNT_FEMALE_HELMETS_BLACK_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT6_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17145 /* Tunable: STUNT_FEMALE_HELMETS_PINK_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17145 /* Tunable: STUNT_FEMALE_HELMETS_PINK_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT11_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17179 /* Tunable: STUNT_FEMALE_HELMETS_WHITE_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17179 /* Tunable: STUNT_FEMALE_HELMETS_WHITE_JC_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT11_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17180 /* Tunable: STUNT_FEMALE_HELMETS_BLUE_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17180 /* Tunable: STUNT_FEMALE_HELMETS_BLUE_JC_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT11_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17181 /* Tunable: STUNT_FEMALE_HELMETS_RED_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17181 /* Tunable: STUNT_FEMALE_HELMETS_RED_JC_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT11_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17182 /* Tunable: STUNT_FEMALE_HELMETS_BLACK_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17182 /* Tunable: STUNT_FEMALE_HELMETS_BLACK_JC_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT11_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17183 /* Tunable: STUNT_FEMALE_HELMETS_PINK_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17183 /* Tunable: STUNT_FEMALE_HELMETS_PINK_JC_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT8_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17146 /* Tunable: STUNT_FEMALE_HELMETS_SWIRL_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17146 /* Tunable: STUNT_FEMALE_HELMETS_SWIRL_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT8_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17147 /* Tunable: STUNT_FEMALE_HELMETS_RED_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17147 /* Tunable: STUNT_FEMALE_HELMETS_RED_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT8_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17148 /* Tunable: STUNT_FEMALE_HELMETS_BROWN_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17148 /* Tunable: STUNT_FEMALE_HELMETS_BROWN_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT8_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17149 /* Tunable: STUNT_FEMALE_HELMETS_WHITE_FLAG_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17149 /* Tunable: STUNT_FEMALE_HELMETS_WHITE_FLAG_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT8_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17150 /* Tunable: STUNT_FEMALE_HELMETS_BLUE_STARS_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17150 /* Tunable: STUNT_FEMALE_HELMETS_BLUE_STARS_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT8_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17151 /* Tunable: STUNT_FEMALE_HELMETS_BLACK_SLASH_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17151 /* Tunable: STUNT_FEMALE_HELMETS_BLACK_SLASH_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT8_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17152 /* Tunable: STUNT_FEMALE_HELMETS_WHITE_STARS_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17152 /* Tunable: STUNT_FEMALE_HELMETS_WHITE_STARS_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT8_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17153 /* Tunable: STUNT_FEMALE_HELMETS_BLUE_STRIPES_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17153 /* Tunable: STUNT_FEMALE_HELMETS_BLUE_STRIPES_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT8_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17154 /* Tunable: STUNT_FEMALE_HELMETS_RED_STRIPES_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17154 /* Tunable: STUNT_FEMALE_HELMETS_RED_STRIPES_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT8_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17155 /* Tunable: STUNT_FEMALE_HELMETS_BLUE_CHAIN_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17155 /* Tunable: STUNT_FEMALE_HELMETS_BLUE_CHAIN_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT8_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17156 /* Tunable: STUNT_FEMALE_HELMETS_BLACK_STRIPES_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17156 /* Tunable: STUNT_FEMALE_HELMETS_BLACK_STRIPES_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT8_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17157 /* Tunable: STUNT_FEMALE_HELMETS_BLACK_JAG_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17157 /* Tunable: STUNT_FEMALE_HELMETS_BLACK_JAG_MOD_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT13_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17184 /* Tunable: STUNT_FEMALE_HELMETS_GOLD_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17184 /* Tunable: STUNT_FEMALE_HELMETS_GOLD_JC_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT13_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17185 /* Tunable: STUNT_FEMALE_HELMETS_SILVER_JC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17185 /* Tunable: STUNT_FEMALE_HELMETS_SILVER_JC_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT13_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17186 /* Tunable: STUNT_FEMALE_HELMETS_GOLD_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17186 /* Tunable: STUNT_FEMALE_HELMETS_GOLD_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT13_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17187 /* Tunable: STUNT_FEMALE_HELMETS_SILVER_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17187 /* Tunable: STUNT_FEMALE_HELMETS_SILVER_RETRO_BUBBLE */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT15_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17188 /* Tunable: -677052578 */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17188 /* Tunable: -677052578 */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT15_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17189 /* Tunable: STUNT_FEMALE_HELMETS_SLALOM_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17189 /* Tunable: STUNT_FEMALE_HELMETS_SLALOM_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT1510"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17190 /* Tunable: STUNT_FEMALE_HELMETS_SA_ASSAULT_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17190 /* Tunable: STUNT_FEMALE_HELMETS_SA_ASSAULT_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT1511"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17191 /* Tunable: STUNT_FEMALE_HELMETS_VIBE_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17191 /* Tunable: STUNT_FEMALE_HELMETS_VIBE_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT1512"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17192 /* Tunable: STUNT_FEMALE_HELMETS_BURST_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17192 /* Tunable: STUNT_FEMALE_HELMETS_BURST_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT1513"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17193 /* Tunable: STUNT_FEMALE_HELMETS_TRI_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17193 /* Tunable: STUNT_FEMALE_HELMETS_TRI_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT1514"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17194 /* Tunable: STUNT_FEMALE_HELMETS_SPRUNK_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17194 /* Tunable: STUNT_FEMALE_HELMETS_SPRUNK_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT1515"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17195 /* Tunable: STUNT_FEMALE_HELMETS_SKELETON_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17195 /* Tunable: STUNT_FEMALE_HELMETS_SKELETON_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT1516"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17196 /* Tunable: STUNT_FEMALE_HELMETS_DEATH_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17196 /* Tunable: STUNT_FEMALE_HELMETS_DEATH_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT1517"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17197 /* Tunable: STUNT_FEMALE_HELMETS_COBBLE_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17197 /* Tunable: STUNT_FEMALE_HELMETS_COBBLE_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT1518"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17198 /* Tunable: STUNT_FEMALE_HELMETS_CUBIST_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17198 /* Tunable: STUNT_FEMALE_HELMETS_CUBIST_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT1519"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17199 /* Tunable: STUNT_FEMALE_HELMETS_DIGITAL_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17199 /* Tunable: STUNT_FEMALE_HELMETS_DIGITAL_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT1520"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17200 /* Tunable: STUNT_FEMALE_HELMETS_SNAKESKIN_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17200 /* Tunable: STUNT_FEMALE_HELMETS_SNAKESKIN_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT1521"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17201 /* Tunable: STUNT_FEMALE_HELMETS_BOOST_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17201 /* Tunable: STUNT_FEMALE_HELMETS_BOOST_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT1522"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17202 /* Tunable: STUNT_FEMALE_HELMETS_TROPIC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17202 /* Tunable: STUNT_FEMALE_HELMETS_TROPIC_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT1523"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17203 /* Tunable: STUNT_FEMALE_HELMETS_ATOMIC_HELMET */) * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17203 /* Tunable: STUNT_FEMALE_HELMETS_ATOMIC_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("HE_FMF_18_7"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[23] * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[23] * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("HE_FMF_18_6"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[22] * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[22] * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("HE_FMF_18_5"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[21] * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[21] * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("HE_FMF_18_4"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[20] * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[20] * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("HE_FMF_18_3"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[19] * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[19] * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("HE_FMF_18_2"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[18] * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[18] * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("HE_FMF_18_1"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[17] * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[17] * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("HE_FMF_18_0"):
-					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[16] * Global_262145.f_17264 /* Tunable: -897360793 */));
+					*uParam1 = SYSTEM::FLOOR((Global_262145.f_2174[16] * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 			}
 			switch (iParam0)
 			{
 				case joaat("CLO_STF_H_100"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17158 /* Tunable: STUNT_FEMALE_HATS_ATOMIC_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17158 /* Tunable: STUNT_FEMALE_HATS_ATOMIC_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_101"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17159 /* Tunable: STUNT_FEMALE_HATS_AUTO_EXOTIC_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17159 /* Tunable: STUNT_FEMALE_HATS_AUTO_EXOTIC_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_102"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17160 /* Tunable: STUNT_FEMALE_HATS_CHEPALLE_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17160 /* Tunable: STUNT_FEMALE_HATS_CHEPALLE_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_103"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17161 /* Tunable: STUNT_FEMALE_HATS_CUNNING_STUNTS_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17161 /* Tunable: STUNT_FEMALE_HATS_CUNNING_STUNTS_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_104"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17162 /* Tunable: STUNT_FEMALE_HATS_FLASH_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17162 /* Tunable: STUNT_FEMALE_HATS_FLASH_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_105"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17163 /* Tunable: STUNT_FEMALE_HATS_FUKARU_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17163 /* Tunable: STUNT_FEMALE_HATS_FUKARU_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_106"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17164 /* Tunable: STUNT_FEMALE_HATS_GLOBE_OIL_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17164 /* Tunable: STUNT_FEMALE_HATS_GLOBE_OIL_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_107"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17165 /* Tunable: STUNT_FEMALE_HATS_GROTTI_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17165 /* Tunable: STUNT_FEMALE_HATS_GROTTI_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_108"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17166 /* Tunable: STUNT_FEMALE_HATS_IMPONTE_RACING_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17166 /* Tunable: STUNT_FEMALE_HATS_IMPONTE_RACING_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_109"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17167 /* Tunable: STUNT_FEMALE_HATS_LAMPADATI_RACING_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17167 /* Tunable: STUNT_FEMALE_HATS_LAMPADATI_RACING_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_1010"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17168 /* Tunable: STUNT_FEMALE_HATS_LTD_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17168 /* Tunable: STUNT_FEMALE_HATS_LTD_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_1011"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17169 /* Tunable: STUNT_FEMALE_HATS_NAGASAKI_RACING_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17169 /* Tunable: STUNT_FEMALE_HATS_NAGASAKI_RACING_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_1012"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17170 /* Tunable: STUNT_FEMALE_HATS_NAGASAKI_MOTO_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17170 /* Tunable: STUNT_FEMALE_HATS_NAGASAKI_MOTO_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_1013"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17171 /* Tunable: STUNT_FEMALE_HATS_PATRIOT_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17171 /* Tunable: STUNT_FEMALE_HATS_PATRIOT_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_1014"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17172 /* Tunable: STUNT_FEMALE_HATS_REBEL_RADIO_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17172 /* Tunable: STUNT_FEMALE_HATS_REBEL_RADIO_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_1015"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17173 /* Tunable: STUNT_FEMALE_HATS_REDWOOD_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17173 /* Tunable: STUNT_FEMALE_HATS_REDWOOD_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_1016"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17174 /* Tunable: STUNT_FEMALE_HATS_SCOOTER_BROTHERS_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17174 /* Tunable: STUNT_FEMALE_HATS_SCOOTER_BROTHERS_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_1017"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17175 /* Tunable: STUNT_FEMALE_HATS_THE_MOUNT_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17175 /* Tunable: STUNT_FEMALE_HATS_THE_MOUNT_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_1018"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17176 /* Tunable: STUNT_FEMALE_HATS_TOTAL_RIDE_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17176 /* Tunable: STUNT_FEMALE_HATS_TOTAL_RIDE_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_1019"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17177 /* Tunable: STUNT_FEMALE_HATS_VAPID_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17177 /* Tunable: STUNT_FEMALE_HATS_VAPID_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_1020"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17178 /* Tunable: STUNT_FEMALE_HATS_XERO_GAS_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17178 /* Tunable: STUNT_FEMALE_HATS_XERO_GAS_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_9_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17158 /* Tunable: STUNT_FEMALE_HATS_ATOMIC_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17158 /* Tunable: STUNT_FEMALE_HATS_ATOMIC_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_9_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17159 /* Tunable: STUNT_FEMALE_HATS_AUTO_EXOTIC_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17159 /* Tunable: STUNT_FEMALE_HATS_AUTO_EXOTIC_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_9_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17160 /* Tunable: STUNT_FEMALE_HATS_CHEPALLE_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17160 /* Tunable: STUNT_FEMALE_HATS_CHEPALLE_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_9_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17161 /* Tunable: STUNT_FEMALE_HATS_CUNNING_STUNTS_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17161 /* Tunable: STUNT_FEMALE_HATS_CUNNING_STUNTS_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_9_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17162 /* Tunable: STUNT_FEMALE_HATS_FLASH_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17162 /* Tunable: STUNT_FEMALE_HATS_FLASH_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_9_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17163 /* Tunable: STUNT_FEMALE_HATS_FUKARU_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17163 /* Tunable: STUNT_FEMALE_HATS_FUKARU_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_9_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17164 /* Tunable: STUNT_FEMALE_HATS_GLOBE_OIL_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17164 /* Tunable: STUNT_FEMALE_HATS_GLOBE_OIL_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_9_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17165 /* Tunable: STUNT_FEMALE_HATS_GROTTI_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17165 /* Tunable: STUNT_FEMALE_HATS_GROTTI_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_9_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17166 /* Tunable: STUNT_FEMALE_HATS_IMPONTE_RACING_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17166 /* Tunable: STUNT_FEMALE_HATS_IMPONTE_RACING_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_9_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17167 /* Tunable: STUNT_FEMALE_HATS_LAMPADATI_RACING_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17167 /* Tunable: STUNT_FEMALE_HATS_LAMPADATI_RACING_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_9_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17168 /* Tunable: STUNT_FEMALE_HATS_LTD_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17168 /* Tunable: STUNT_FEMALE_HATS_LTD_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_9_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17169 /* Tunable: STUNT_FEMALE_HATS_NAGASAKI_RACING_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17169 /* Tunable: STUNT_FEMALE_HATS_NAGASAKI_RACING_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_9_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17170 /* Tunable: STUNT_FEMALE_HATS_NAGASAKI_MOTO_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17170 /* Tunable: STUNT_FEMALE_HATS_NAGASAKI_MOTO_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_9_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17171 /* Tunable: STUNT_FEMALE_HATS_PATRIOT_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17171 /* Tunable: STUNT_FEMALE_HATS_PATRIOT_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_9_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17172 /* Tunable: STUNT_FEMALE_HATS_REBEL_RADIO_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17172 /* Tunable: STUNT_FEMALE_HATS_REBEL_RADIO_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_9_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17173 /* Tunable: STUNT_FEMALE_HATS_REDWOOD_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17173 /* Tunable: STUNT_FEMALE_HATS_REDWOOD_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_9_16"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17174 /* Tunable: STUNT_FEMALE_HATS_SCOOTER_BROTHERS_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17174 /* Tunable: STUNT_FEMALE_HATS_SCOOTER_BROTHERS_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_9_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17175 /* Tunable: STUNT_FEMALE_HATS_THE_MOUNT_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17175 /* Tunable: STUNT_FEMALE_HATS_THE_MOUNT_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_9_18"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17176 /* Tunable: STUNT_FEMALE_HATS_TOTAL_RIDE_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17176 /* Tunable: STUNT_FEMALE_HATS_TOTAL_RIDE_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_9_19"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17177 /* Tunable: STUNT_FEMALE_HATS_VAPID_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17177 /* Tunable: STUNT_FEMALE_HATS_VAPID_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 				
 				case joaat("CLO_STF_H_9_20"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17178 /* Tunable: STUNT_FEMALE_HATS_XERO_GAS_CAP */) * Global_262145.f_17263 /* Tunable: -556950386 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17178 /* Tunable: STUNT_FEMALE_HATS_XERO_GAS_CAP */) * Global_262145.f_17263 /* Tunable: STUNT_ALL_HATS */));
 					break;
 			}
 			break;
@@ -50752,59 +50752,59 @@ void func_125(int iParam0, var uParam1, int iParam2)//Position - 0x48A9B
 			switch (iParam0)
 			{
 				case joaat("CLO_STF_O_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17225 /* Tunable: -1859911195 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17225 /* Tunable: STUNT_FEMALE_OUTFITS_NAVY_RACE_FIRESUIT */));
 					break;
 				
 				case joaat("CLO_STF_O_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17226 /* Tunable: -1132067348 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17226 /* Tunable: STUNT_FEMALE_OUTFITS_GRAY_RACE_FIRESUIT */));
 					break;
 				
 				case joaat("CLO_STF_O_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17227 /* Tunable: 1707829265 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17227 /* Tunable: STUNT_FEMALE_OUTFITS_RED_RACE_FIRESUIT */));
 					break;
 				
 				case joaat("CLO_STF_O_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17228 /* Tunable: 388886152 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17228 /* Tunable: STUNT_FEMALE_OUTFITS_BLACK_RACE_FIRESUIT */));
 					break;
 				
 				case joaat("CLO_STF_O_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17229 /* Tunable: -803346145 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17229 /* Tunable: STUNT_FEMALE_OUTFITS_GREEN_RACE_FIRESUIT */));
 					break;
 				
 				case joaat("CLO_STF_O_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17230 /* Tunable: -542853555 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17230 /* Tunable: STUNT_FEMALE_OUTFITS_WHITE_RACE_FIRESUIT */));
 					break;
 				
 				case joaat("CLO_STF_O_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17231 /* Tunable: 1053891624 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17231 /* Tunable: STUNT_FEMALE_OUTFITS_GREEN_LEATHER_RACESUIT */));
 					break;
 				
 				case joaat("CLO_STF_O_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17232 /* Tunable: 2016973475 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17232 /* Tunable: STUNT_FEMALE_OUTFITS_RED_LEATHER_RACESUIT */));
 					break;
 				
 				case joaat("CLO_STF_O_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17233 /* Tunable: 1072229861 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17233 /* Tunable: STUNT_FEMALE_OUTFITS_ITALIAN_LEATHER_RACESUIT */));
 					break;
 				
 				case joaat("CLO_STF_O_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17234 /* Tunable: -1287528099 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17234 /* Tunable: STUNT_FEMALE_OUTFITS_BLACK_LEATHER_RACESUIT */));
 					break;
 				
 				case joaat("CLO_STF_O_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17235 /* Tunable: -91586627 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17235 /* Tunable: STUNT_FEMALE_OUTFITS_FRENCH_LEATHER_RACESUIT */));
 					break;
 				
 				case joaat("CLO_STF_O_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17236 /* Tunable: 346337457 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17236 /* Tunable: STUNT_FEMALE_OUTFITS_YELLOW_LEATHER_RACESUIT */));
 					break;
 				
 				case joaat("CLO_STF_O_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17237 /* Tunable: 129059421 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17237 /* Tunable: STUNT_FEMALE_OUTFITS_PINK_LEATHER_RACESUIT */));
 					break;
 				
 				case joaat("CLO_STF_O_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17238 /* Tunable: -1265408096 */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*uParam1) * Global_262145.f_17238 /* Tunable: STUNT_FEMALE_OUTFITS_BLUE_LEATHER_RACESUIT */));
 					break;
 				
 				case joaat("CLO_STF_O_14"):

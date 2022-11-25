@@ -9896,37 +9896,37 @@ int func_190(int iParam0)//Position - 0xC45F
 	switch (iParam0)
 	{
 		case joaat("apc"):
-			return Global_262145.f_21775 /* Tunable: 1575762310 */;
+			return Global_262145.f_21775 /* Tunable: GR_BLOCK_APC_IN_HEISTS */;
 		
 		case joaat("ardent"):
-			return Global_262145.f_21776 /* Tunable: 173237580 */;
+			return Global_262145.f_21776 /* Tunable: GR_BLOCK_ARDENT_IN_HEISTS */;
 		
 		case joaat("nightshark"):
-			return Global_262145.f_21777 /* Tunable: 865600008 */;
+			return Global_262145.f_21777 /* Tunable: GR_BLOCK_NIGHTSHARK_IN_HEISTS */;
 		
 		case joaat("insurgent3"):
-			return Global_262145.f_21778 /* Tunable: -1239057081 */;
+			return Global_262145.f_21778 /* Tunable: GR_BLOCK_INSURGENT3_IN_HEISTS */;
 		
 		case joaat("technical3"):
-			return Global_262145.f_21779 /* Tunable: 1841873022 */;
+			return Global_262145.f_21779 /* Tunable: GR_BLOCK_TECHNICAL3_IN_HEISTS */;
 		
 		case joaat("halftrack"):
-			return Global_262145.f_21780 /* Tunable: 1157295393 */;
+			return Global_262145.f_21780 /* Tunable: GR_BLOCK_HALFTRACK_IN_HEISTS */;
 		
 		case joaat("trailersmall2"):
-			return Global_262145.f_21781 /* Tunable: 491947611 */;
+			return Global_262145.f_21781 /* Tunable: GR_BLOCK_TRAILERSMALL_IN_HEISTS */;
 		
 		case joaat("tampa3"):
-			return Global_262145.f_21782 /* Tunable: -669030359 */;
+			return Global_262145.f_21782 /* Tunable: GR_BLOCK_TAMPA3_IN_HEISTS */;
 		
 		case joaat("dune3"):
-			return Global_262145.f_21783 /* Tunable: -1285542542 */;
+			return Global_262145.f_21783 /* Tunable: GR_BLOCK_DUNE3_IN_HEISTS */;
 		
 		case joaat("oppressor"):
-			return Global_262145.f_21784 /* Tunable: -1976214544 */;
+			return Global_262145.f_21784 /* Tunable: GR_BLOCK_OPPRESSOR_IN_HEISTS */;
 		
 		case joaat("vigilante"):
-			return Global_262145.f_22874 /* Tunable: 2101062622 */;
+			return Global_262145.f_22874 /* Tunable: SMUG_BLOCK_VIGILANTE_IN_HEISTS */;
 		
 		case joaat("thruster"):
 			return Global_262145.f_23444 /* Tunable: H2_BLOCK_THRUSTER_IN_HEISTS */;
@@ -29864,7 +29864,7 @@ bool func_754()//Position - 0x21987
 
 int func_755()//Position - 0x21999
 {
-	if (func_119(&Global_1966143) && !func_117(&Global_1966143, Global_262145.f_27242 /* Tunable: -1431887535 */, 0))
+	if (func_119(&Global_1966143) && !func_117(&Global_1966143, Global_262145.f_27242 /* Tunable: VC_WORK_REQUEST_COOLDOWN */, 0))
 	{
 		return 1;
 	}

@@ -1383,7 +1383,7 @@ int func_27(int iParam0, int iParam1)//Position - 0xC78
 					return 446;
 				
 				case 128:
-					if (!Global_262145.f_25822 /* Tunable: 1975465829 */)
+					if (!Global_262145.f_25822 /* Tunable: XMASDAYGIFT2018_CAR */)
 					{
 						return 447;
 					}
@@ -1394,7 +1394,7 @@ int func_27(int iParam0, int iParam1)//Position - 0xC78
 					return 448;
 				
 				case 130:
-					if (Global_262145.f_25822 /* Tunable: 1975465829 */)
+					if (Global_262145.f_25822 /* Tunable: XMASDAYGIFT2018_CAR */)
 					{
 						return 447;
 					}
