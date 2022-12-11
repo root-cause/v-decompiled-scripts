@@ -16652,15 +16652,15 @@ void func_212(var uParam0)//Position - 0x138BB
 	{
 		if (uParam0->f_1 == 39 && !Global_4521801.f_974)
 		{
-			if (MONEY::NETWORK_GET_VC_WALLET_BALANCE(-1) >= Global_262145.f_25909 /* Tunable: 1286787971 */)
+			if (MONEY::NETWORK_GET_VC_WALLET_BALANCE(-1) >= Global_262145.f_25909 /* Tunable: ARENA_MAKE_IT_RAIN */)
 			{
 				if (func_226())
 				{
-					func_213(joaat("SERVICE_SPEND_MAKE_IT_RAIN"), Global_262145.f_25909 /* Tunable: 1286787971 */, &uVar0, 0, 0, 0);
+					func_213(joaat("SERVICE_SPEND_MAKE_IT_RAIN"), Global_262145.f_25909 /* Tunable: ARENA_MAKE_IT_RAIN */, &uVar0, 0, 0, 0);
 				}
 				else
 				{
-					MONEY::NETWORK_SPEND_MAKE_IT_RAIN(Global_262145.f_25909 /* Tunable: 1286787971 */, false, false);
+					MONEY::NETWORK_SPEND_MAKE_IT_RAIN(Global_262145.f_25909 /* Tunable: ARENA_MAKE_IT_RAIN */, false, false);
 				}
 			}
 		}
@@ -22141,7 +22141,7 @@ int func_367(int iParam0, int iParam1)//Position - 0x1A795
 			switch (iParam1)
 			{
 				case 39:
-					if (MONEY::NETWORK_CAN_SPEND_MONEY(Global_262145.f_25909 /* Tunable: 1286787971 */, false, false, false, -1, 0))
+					if (MONEY::NETWORK_CAN_SPEND_MONEY(Global_262145.f_25909 /* Tunable: ARENA_MAKE_IT_RAIN */, false, false, false, -1, 0))
 					{
 						return 1;
 					}

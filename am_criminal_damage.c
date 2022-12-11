@@ -10639,7 +10639,7 @@ void func_108(int iParam0, var uParam1, int iParam2)//Position - 0xAD20
 					break;
 				
 				case joaat("CLO_TRM_O_R7"):
-					*uParam1 = Global_262145.f_31491 /* Tunable: 2044506791 */;
+					*uParam1 = Global_262145.f_31491 /* Tunable: TUNER_WILSTYLE_RACING_SUIT */;
 					break;
 				
 				case joaat("CLO_TRM_O_R8"):
@@ -11591,7 +11591,7 @@ void func_108(int iParam0, var uParam1, int iParam2)//Position - 0xAD20
 					break;
 				
 				case joaat("CLO_TRF_O_R7"):
-					*uParam1 = Global_262145.f_31491 /* Tunable: 2044506791 */;
+					*uParam1 = Global_262145.f_31491 /* Tunable: TUNER_WILSTYLE_RACING_SUIT */;
 					break;
 				
 				case joaat("CLO_TRF_O_R8"):
@@ -37849,11 +37849,11 @@ void func_122(int iParam0, var uParam1, int iParam2)//Position - 0x34131
 					break;
 				
 				case joaat("CLO_GRM_U_11_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19118 /* Tunable: 351409294 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19118 /* Tunable: UPPER_URBAN_PATCHED_OPEN_PARKA */) * 1f));
 					break;
 				
 				case joaat("CLO_GRM_U_11_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19119 /* Tunable: 1338028187 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19119 /* Tunable: UPPER_FOREST_PATCHED_OPEN_PARKA */) * 1f));
 					break;
 				
 				case joaat("CLO_GRM_U_13_0"):
@@ -41156,11 +41156,11 @@ void func_122(int iParam0, var uParam1, int iParam2)//Position - 0x34131
 					break;
 				
 				case joaat("CLO_GRF_U_17_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19119 /* Tunable: 1338028187 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19119 /* Tunable: UPPER_FOREST_PATCHED_OPEN_PARKA */) * 1f));
 					break;
 				
 				case joaat("CLO_GRF_U_17_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19118 /* Tunable: 351409294 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19118 /* Tunable: UPPER_URBAN_PATCHED_OPEN_PARKA */) * 1f));
 					break;
 				
 				case joaat("CLO_GRF_U_19_0"):
@@ -46329,7 +46329,7 @@ void func_124(int iParam0, var uParam1, int iParam2)//Position - 0x43783
 					break;
 				
 				case joaat("CLO_BIM_U_27_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19052 /* Tunable: 856934241 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19052 /* Tunable: UPPERS_URBAN_CLOSED_PARKA_ */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_U_27_1"):
@@ -46337,11 +46337,11 @@ void func_124(int iParam0, var uParam1, int iParam2)//Position - 0x43783
 					break;
 				
 				case joaat("CLO_BIM_U_27_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19116 /* Tunable: 256860553 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19116 /* Tunable: UPPER_URBAN_PATCHED_CLOSED_PARKA */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_U_27_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19117 /* Tunable: 1404361433 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19117 /* Tunable: UPPER_FOREST_PATCHED_CLOSED_PARKA */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_U_28_0"):
@@ -46353,11 +46353,11 @@ void func_124(int iParam0, var uParam1, int iParam2)//Position - 0x43783
 					break;
 				
 				case joaat("CLO_BIM_U_28_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19118 /* Tunable: 351409294 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19118 /* Tunable: UPPER_URBAN_PATCHED_OPEN_PARKA */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_U_28_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19119 /* Tunable: 1338028187 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19119 /* Tunable: UPPER_FOREST_PATCHED_OPEN_PARKA */) * 1f));
 					break;
 			}
 			break;
@@ -46571,51 +46571,51 @@ void func_124(int iParam0, var uParam1, int iParam2)//Position - 0x43783
 			switch (iParam0)
 			{
 				case joaat("CLO_BIM_L_0_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17760 /* Tunable: -2082997146 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17760 /* Tunable: BIKER_MALE_LOWERS_BLACK_LEATHER_PLAIN_ */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_L_0_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17761 /* Tunable: -19617557 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17761 /* Tunable: BIKER_MALE_LOWERS_OX_BLOOD_LEATHER_PLAIN */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_L_0_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17762 /* Tunable: 1026488929 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17762 /* Tunable: BIKER_MALE_LOWERS_CHOCOLATE_LEATHER_PLAIN */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_L_0_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17763 /* Tunable: -950934847 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17763 /* Tunable: BIKER_MALE_LOWERS_WORN_BLACK_LEATHER_PLAIN */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_L_0_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17764 /* Tunable: -1057665268 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17764 /* Tunable: BIKER_MALE_LOWERS_WORN_OX_BLOOD_LEATHER_PLAIN */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_L_0_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17765 /* Tunable: 1732949115 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17765 /* Tunable: BIKER_MALE_LOWERS_WORN_CHOCOLATE_LEATHER_PLAIN */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_L_2_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17766 /* Tunable: -2064060734 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17766 /* Tunable: BIKER_MALE_LOWERS_BLACK_LEATHER_PADDED_ */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_L_2_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17767 /* Tunable: 1345293233 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17767 /* Tunable: BIKER_MALE_LOWERS_OX_BLOOD_LEATHER_PADDED */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_L_2_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17768 /* Tunable: 833357766 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17768 /* Tunable: BIKER_MALE_LOWERS_CHOCOLATE_LEATHER_PADDED */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_L_2_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17769 /* Tunable: 1888850575 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17769 /* Tunable: BIKER_MALE_LOWERS_WORN_BLACK_LEATHER_PADDED */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_L_2_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17770 /* Tunable: 60374226 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17770 /* Tunable: BIKER_MALE_LOWERS_WORN_OX_BLOOD_LEATHER_PADDED */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_L_2_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17771 /* Tunable: -1419756402 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17771 /* Tunable: BIKER_MALE_LOWERS_WORN_CHOCOLATE_LEATHER_PADDED */) * 1f));
 					break;
 				
 				case joaat("CLO_BIM_L_4_0"):
@@ -47868,7 +47868,7 @@ void func_124(int iParam0, var uParam1, int iParam2)//Position - 0x43783
 					break;
 				
 				case joaat("CLO_BIF_U_32_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19052 /* Tunable: 856934241 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19052 /* Tunable: UPPERS_URBAN_CLOSED_PARKA_ */) * 1f));
 					break;
 				
 				case joaat("CLO_BIF_U_32_1"):
@@ -47876,11 +47876,11 @@ void func_124(int iParam0, var uParam1, int iParam2)//Position - 0x43783
 					break;
 				
 				case joaat("CLO_BIF_U_32_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19116 /* Tunable: 256860553 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19116 /* Tunable: UPPER_URBAN_PATCHED_CLOSED_PARKA */) * 1f));
 					break;
 				
 				case joaat("CLO_BIF_U_32_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19117 /* Tunable: 1404361433 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19117 /* Tunable: UPPER_FOREST_PATCHED_CLOSED_PARKA */) * 1f));
 					break;
 				
 				case joaat("CLO_BIF_U_33_0"):
@@ -47892,11 +47892,11 @@ void func_124(int iParam0, var uParam1, int iParam2)//Position - 0x43783
 					break;
 				
 				case joaat("CLO_BIF_U_33_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19118 /* Tunable: 351409294 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19118 /* Tunable: UPPER_URBAN_PATCHED_OPEN_PARKA */) * 1f));
 					break;
 				
 				case joaat("CLO_BIF_U_33_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19119 /* Tunable: 1338028187 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_19119 /* Tunable: UPPER_FOREST_PATCHED_OPEN_PARKA */) * 1f));
 					break;
 			}
 			break;
@@ -49511,7 +49511,7 @@ void func_125(int iParam0, var uParam1, int iParam2)//Position - 0x48A9B
 					break;
 				
 				case joaat("CLO_STM_HT15_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17009 /* Tunable: -931809429 */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17009 /* Tunable: STUNT_MALE_HELMETS_DOWNNHILL_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STM_HT15_9"):
@@ -50481,7 +50481,7 @@ void func_125(int iParam0, var uParam1, int iParam2)//Position - 0x48A9B
 					break;
 				
 				case joaat("CLO_STF_HT15_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17188 /* Tunable: -677052578 */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_17188 /* Tunable: STUNT_FEMALE_HELMETS_DOWNNHILL_HELMET */) * Global_262145.f_17264 /* Tunable: STUNT_ALL_HELMETS */));
 					break;
 				
 				case joaat("CLO_STF_HT15_9"):
@@ -108943,9 +108943,9 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar1 = 378000;
 				if (bVar0)
 				{
-					if (Global_262145.f_19042 /* Tunable: 198653811 */ >= 0)
+					if (Global_262145.f_19042 /* Tunable: WEBSITE_DECLASSE_TORNADO_RAT_ROD */ >= 0)
 					{
-						iVar1 = Global_262145.f_19042 /* Tunable: 198653811 */;
+						iVar1 = Global_262145.f_19042 /* Tunable: WEBSITE_DECLASSE_TORNADO_RAT_ROD */;
 					}
 				}
 				break;
@@ -108954,9 +108954,9 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar1 = 195000;
 				if (bVar0)
 				{
-					if (Global_262145.f_19045 /* Tunable: -1512397919 */ >= 0)
+					if (Global_262145.f_19045 /* Tunable: WEBSITE_VAPID_YOUGA_CLASSIC */ >= 0)
 					{
-						iVar1 = Global_262145.f_19045 /* Tunable: -1512397919 */;
+						iVar1 = Global_262145.f_19045 /* Tunable: WEBSITE_VAPID_YOUGA_CLASSIC */;
 					}
 				}
 				break;
@@ -108990,9 +108990,9 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar1 = 55000;
 				if (bVar0)
 				{
-					if (Global_262145.f_19043 /* Tunable: 1894265143 */ >= 0)
+					if (Global_262145.f_19043 /* Tunable: WEBSITE_PEGASSI_FAGGIO_MOD */ >= 0)
 					{
-						iVar1 = Global_262145.f_19043 /* Tunable: 1894265143 */;
+						iVar1 = Global_262145.f_19043 /* Tunable: WEBSITE_PEGASSI_FAGGIO_MOD */;
 					}
 				}
 				break;
@@ -109001,9 +109001,9 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar1 = 47500;
 				if (bVar0)
 				{
-					if (Global_262145.f_19044 /* Tunable: 1208881654 */ >= 0)
+					if (Global_262145.f_19044 /* Tunable: WEBSITE_PEGASSI_FAGGIO_SPORT */ >= 0)
 					{
-						iVar1 = Global_262145.f_19044 /* Tunable: 1208881654 */;
+						iVar1 = Global_262145.f_19044 /* Tunable: WEBSITE_PEGASSI_FAGGIO_SPORT */;
 					}
 				}
 				break;
@@ -112186,7 +112186,7 @@ int func_427(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar1 = 1288000;
 				if (bVar0)
 				{
-					iVar1 = (Global_262145.f_19045 /* Tunable: -1512397919 */ + func_430(iParam1));
+					iVar1 = (Global_262145.f_19045 /* Tunable: WEBSITE_VAPID_YOUGA_CLASSIC */ + func_430(iParam1));
 				}
 				break;
 			

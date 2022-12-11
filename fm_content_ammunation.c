@@ -32951,7 +32951,7 @@ bool func_692()//Position - 0x30ABD
 	int iVar0;
 	
 	iVar0 = func_614(100, 0);
-	return iVar0 <= Global_262145.f_32583 /* Tunable: 961868204 */;
+	return iVar0 <= Global_262145.f_32583 /* Tunable: AMMUNATION_DELIVERY_AMBUSH_CHANCE */;
 }
 
 void func_693()//Position - 0x30AD8

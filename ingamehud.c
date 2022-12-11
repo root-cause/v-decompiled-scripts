@@ -499,7 +499,7 @@ void func_7()//Position - 0x2D5
 	{
 		if (Global_2725354)
 		{
-			if (func_12(&uLocal_302, Global_262145.f_17490 /* Tunable: 752477916 */, 0))
+			if (func_12(&uLocal_302, Global_262145.f_17490 /* Tunable: CASINO_SAVE_COOLDOWN */, 0))
 			{
 				if (NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 				{

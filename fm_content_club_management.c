@@ -189443,17 +189443,17 @@ float func_3937(var uParam0)//Position - 0xED2C1
 
 var func_3938()//Position - 0xED2CA
 {
-	return Global_262145.f_32589 /* Tunable: -71814174 */;
+	return Global_262145.f_32589 /* Tunable: CLUB_MANAGEMENT_PARTICIPATION_TIME_CAP */;
 }
 
 var func_3939()//Position - 0xED2D9
 {
-	return Global_262145.f_32588 /* Tunable: 1644545617 */;
+	return Global_262145.f_32588 /* Tunable: CLUB_MANAGEMENT_PARTICIPATION_RP */;
 }
 
 var func_3940()//Position - 0xED2E8
 {
-	return Global_262145.f_32587 /* Tunable: -666079010 */;
+	return Global_262145.f_32587 /* Tunable: CLUB_MANAGEMENT_PARTICIPATION_CASH */;
 }
 
 int func_3941()//Position - 0xED2F7
