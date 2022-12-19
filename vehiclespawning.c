@@ -187,7 +187,7 @@ void func_6(var uParam0)//Position - 0x1DB
 
 int func_7()//Position - 0x214
 {
-	if (Global_1575033 == 0)
+	if (Global_1575035 == 0)
 	{
 		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
@@ -198,7 +198,7 @@ int func_7()//Position - 0x214
 	{
 		return 1;
 	}
-	if (Global_2727795)
+	if (Global_2696915)
 	{
 		return 1;
 	}
@@ -248,7 +248,7 @@ int func_8()//Position - 0x298
 
 int func_9()//Position - 0x2CB
 {
-	switch (Global_2727899)
+	switch (Global_2697019)
 	{
 		case 0:
 			return joaat("freemode");
@@ -260,12 +260,12 @@ int func_9()//Position - 0x2CB
 
 int func_10()//Position - 0x2EF
 {
-	return Global_31959;
+	return Global_32163;
 }
 
 bool func_11()//Position - 0x2FA
 {
-	return Global_2714762.f_698;
+	return Global_2683862.f_698;
 }
 
 int func_12(int iParam0)//Position - 0x309
@@ -279,12 +279,12 @@ int func_12(int iParam0)//Position - 0x309
 
 bool func_13()//Position - 0x320
 {
-	return Global_2725403;
+	return Global_2694524;
 }
 
 bool func_14()//Position - 0x32C
 {
-	return Global_2714762.f_693;
+	return Global_2683862.f_693;
 }
 
 void func_15()//Position - 0x33B
@@ -449,6 +449,6 @@ bool func_19(bool bParam0)//Position - 0x4FB
 	if (bParam0)
 	{
 	}
-	return Global_1575033;
+	return Global_1575035;
 }
 

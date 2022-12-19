@@ -182,14 +182,14 @@ Vector3 func_1(int iParam0)//Position - 0x1FF
 	int iVar0;
 	
 	iVar0 = iParam0;
-	return Global_32338[iVar0 /*23*/][0 /*3*/];
+	return Global_32543[iVar0 /*23*/][0 /*3*/];
 }
 
 int func_2(int iParam0)//Position - 0x217
 {
 	if (iParam0 != func_3())
 	{
-		return BitTest(Global_2689235[iParam0 /*453*/].f_318.f_5, 4);
+		return BitTest(Global_2657589[iParam0 /*466*/].f_321.f_5, 4);
 	}
 	return 0;
 }
@@ -203,7 +203,7 @@ int func_4(int iParam0)//Position - 0x245
 {
 	if (iParam0 != func_3())
 	{
-		return BitTest(Global_1853348[iParam0 /*834*/].f_267.f_408.f_2, 16);
+		return BitTest(Global_1853910[iParam0 /*862*/].f_267.f_428.f_2, 16);
 	}
 	return 0;
 }
@@ -212,27 +212,27 @@ int func_5(int iParam0)//Position - 0x26E
 {
 	if (iParam0 != func_3())
 	{
-		return BitTest(Global_1853348[iParam0 /*834*/].f_267.f_348, 29);
+		return BitTest(Global_1853910[iParam0 /*862*/].f_267.f_365, 29);
 	}
 	return 0;
 }
 
 var func_6()//Position - 0x295
 {
-	return BitTest(Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_36.f_18, 0);
+	return BitTest(Global_1853910[PLAYER::PLAYER_ID() /*862*/].f_36.f_18, 0);
 }
 
 bool func_7(int iParam0)//Position - 0x2AE
 {
-	return BitTest(Global_1853348[iParam0 /*834*/].f_139, 6);
+	return BitTest(Global_1853910[iParam0 /*862*/].f_139, 6);
 }
 
 int func_8()//Position - 0x2C3
 {
 	int iVar0;
 	
-	iVar0 = Global_2703735;
-	if (BitTest(Global_1888862[iVar0 /*120*/].f_14, 0) && Global_1888862[iVar0 /*120*/].f_23 == 2)
+	iVar0 = Global_2672505;
+	if (BitTest(Global_1890444[iVar0 /*129*/].f_14, 0) && Global_1890444[iVar0 /*129*/].f_23 == 2)
 	{
 		return 1;
 	}
@@ -251,7 +251,7 @@ int func_9(int iParam0, bool bParam1, bool bParam2)//Position - 0x2F6
 	if (!bParam2)
 	{
 	}
-	if (Global_1853348[iParam0 /*834*/] == -1)
+	if (Global_1853910[iParam0 /*862*/] == -1)
 	{
 		return 0;
 	}
@@ -265,7 +265,7 @@ bool func_10(int iParam0)//Position - 0x328
 
 var func_11(int iParam0)//Position - 0x336
 {
-	return BitTest(Global_1853348[iParam0 /*834*/].f_11.f_1, 0);
+	return BitTest(Global_1853910[iParam0 /*862*/].f_11.f_1, 0);
 }
 
 bool func_12(int iParam0)//Position - 0x34D

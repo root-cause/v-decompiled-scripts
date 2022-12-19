@@ -76,7 +76,7 @@ int func_1(int iParam0)//Position - 0xB6
 	{
 		return 0;
 	}
-	return Global_113386.f_9085.f_99.f_58[iParam0];
+	return Global_113648.f_9087.f_99.f_58[iParam0];
 }
 
 int func_2(int iParam0)//Position - 0xE3
@@ -94,11 +94,11 @@ int func_2(int iParam0)//Position - 0xE3
 		iVar0 = 10;
 		bVar1 = (iParam0 - 32);
 	}
-	if (BitTest(Global_113386.f_9085.f_99.f_219[iVar0], bVar1))
+	if (BitTest(Global_113648.f_9087.f_99.f_219[iVar0], bVar1))
 	{
 		return 0;
 	}
-	MISC::SET_BIT(&(Global_113386.f_9085.f_99.f_219[iVar0]), bVar1);
+	MISC::SET_BIT(&(Global_113648.f_9087.f_99.f_219[iVar0]), bVar1);
 	return 1;
 }
 
@@ -124,9 +124,9 @@ int func_4(int iParam0)//Position - 0x14E
 		iVar0 = 10;
 		bVar1 = (iParam0 - 32);
 	}
-	if (BitTest(Global_113386.f_9085.f_99.f_219[iVar0], bVar1))
+	if (BitTest(Global_113648.f_9087.f_99.f_219[iVar0], bVar1))
 	{
-		MISC::CLEAR_BIT(&(Global_113386.f_9085.f_99.f_219[iVar0]), bVar1);
+		MISC::CLEAR_BIT(&(Global_113648.f_9087.f_99.f_219[iVar0]), bVar1);
 		return 1;
 	}
 	return 0;

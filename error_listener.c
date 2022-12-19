@@ -154,15 +154,15 @@ bool func_4(int iParam0)//Position - 0x14F
 
 bool func_5()//Position - 0x17D
 {
-	return Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_192 != 0;
+	return Global_1853910[PLAYER::PLAYER_ID() /*862*/].f_192 != 0;
 }
 
 int func_6(int iParam0)//Position - 0x194
 {
-	if (Global_32237.f_61 < 20)
+	if (Global_32442.f_61 < 20)
 	{
-		Global_32237[Global_32237.f_61 /*3*/] = { *iParam0 };
-		Global_32237.f_61++;
+		Global_32442[Global_32442.f_61 /*3*/] = { *iParam0 };
+		Global_32442.f_61++;
 		return 1;
 	}
 	return 0;
@@ -172,9 +172,9 @@ int func_7(int iParam0, var uParam1)//Position - 0x1C7
 {
 	*uParam1 = 0;
 	*uParam1 = 0;
-	while (*uParam1 < Global_32237.f_61)
+	while (*uParam1 < Global_32442.f_61)
 	{
-		if (Global_32237[*uParam1 /*3*/] == *iParam0 && Global_32237[*uParam1 /*3*/].f_2 == iParam0->f_2)
+		if (Global_32442[*uParam1 /*3*/] == *iParam0 && Global_32442[*uParam1 /*3*/].f_2 == iParam0->f_2)
 		{
 			return 1;
 		}

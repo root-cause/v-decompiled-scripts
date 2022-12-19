@@ -84,9 +84,9 @@
 	var uLocal_82 = 0;
 	var uLocal_83 = 0;
 	var uLocal_84 = 0;
-	var uLocal_85 = -1;
+	var uLocal_85 = 0;
 	var uLocal_86 = 0;
-	var uLocal_87 = 0;
+	var uLocal_87 = -1;
 	var uLocal_88 = 0;
 	var uLocal_89 = 0;
 	var uLocal_90 = 0;
@@ -98,26 +98,26 @@
 	var uLocal_96 = 0;
 	var uLocal_97 = 0;
 	var uLocal_98 = 0;
-	var uLocal_99 = -1;
+	var uLocal_99 = 0;
 	var uLocal_100 = 0;
 	var uLocal_101 = -1;
 	var uLocal_102 = 0;
-	var uLocal_103 = 0;
-	var uLocal_104 = -1;
-	var uLocal_105 = -1;
-	var uLocal_106 = 0;
-	var uLocal_107 = 0;
+	var uLocal_103 = -1;
+	var uLocal_104 = 0;
+	var uLocal_105 = 0;
+	var uLocal_106 = -1;
+	var uLocal_107 = -1;
 	var uLocal_108 = 0;
-	var uLocal_109 = 149;
+	var uLocal_109 = 0;
 	var uLocal_110 = 0;
-	var uLocal_111 = 0;
+	var uLocal_111 = 149;
 	var uLocal_112 = 0;
 	var uLocal_113 = 0;
 	var uLocal_114 = 0;
 	var uLocal_115 = 0;
-	var uLocal_116 = 1061158912;
+	var uLocal_116 = 0;
 	var uLocal_117 = 0;
-	var uLocal_118 = 0;
+	var uLocal_118 = 1061158912;
 	var uLocal_119 = 0;
 	var uLocal_120 = 0;
 	var uLocal_121 = 0;
@@ -129,9 +129,9 @@
 	var uLocal_127 = 0;
 	var uLocal_128 = 0;
 	var uLocal_129 = 0;
-	var uLocal_130 = 1061158912;
+	var uLocal_130 = 0;
 	var uLocal_131 = 0;
-	var uLocal_132 = 0;
+	var uLocal_132 = 1061158912;
 	var uLocal_133 = 0;
 	var uLocal_134 = 0;
 	var uLocal_135 = 0;
@@ -143,9 +143,9 @@
 	var uLocal_141 = 0;
 	var uLocal_142 = 0;
 	var uLocal_143 = 0;
-	var uLocal_144 = 1061158912;
+	var uLocal_144 = 0;
 	var uLocal_145 = 0;
-	var uLocal_146 = 0;
+	var uLocal_146 = 1061158912;
 	var uLocal_147 = 0;
 	var uLocal_148 = 0;
 	var uLocal_149 = 0;
@@ -157,9 +157,9 @@
 	var uLocal_155 = 0;
 	var uLocal_156 = 0;
 	var uLocal_157 = 0;
-	var uLocal_158 = 1061158912;
+	var uLocal_158 = 0;
 	var uLocal_159 = 0;
-	var uLocal_160 = 0;
+	var uLocal_160 = 1061158912;
 	var uLocal_161 = 0;
 	var uLocal_162 = 0;
 	var uLocal_163 = 0;
@@ -171,9 +171,9 @@
 	var uLocal_169 = 0;
 	var uLocal_170 = 0;
 	var uLocal_171 = 0;
-	var uLocal_172 = 1061158912;
+	var uLocal_172 = 0;
 	var uLocal_173 = 0;
-	var uLocal_174 = 0;
+	var uLocal_174 = 1061158912;
 	var uLocal_175 = 0;
 	var uLocal_176 = 0;
 	var uLocal_177 = 0;
@@ -185,9 +185,9 @@
 	var uLocal_183 = 0;
 	var uLocal_184 = 0;
 	var uLocal_185 = 0;
-	var uLocal_186 = 1061158912;
+	var uLocal_186 = 0;
 	var uLocal_187 = 0;
-	var uLocal_188 = 0;
+	var uLocal_188 = 1061158912;
 	var uLocal_189 = 0;
 	var uLocal_190 = 0;
 	var uLocal_191 = 0;
@@ -199,9 +199,9 @@
 	var uLocal_197 = 0;
 	var uLocal_198 = 0;
 	var uLocal_199 = 0;
-	var uLocal_200 = 1061158912;
+	var uLocal_200 = 0;
 	var uLocal_201 = 0;
-	var uLocal_202 = 0;
+	var uLocal_202 = 1061158912;
 	var uLocal_203 = 0;
 	var uLocal_204 = 0;
 	var uLocal_205 = 0;
@@ -213,9 +213,9 @@
 	var uLocal_211 = 0;
 	var uLocal_212 = 0;
 	var uLocal_213 = 0;
-	var uLocal_214 = 1061158912;
+	var uLocal_214 = 0;
 	var uLocal_215 = 0;
-	var uLocal_216 = 0;
+	var uLocal_216 = 1061158912;
 	var uLocal_217 = 0;
 	var uLocal_218 = 0;
 	var uLocal_219 = 0;
@@ -227,9 +227,9 @@
 	var uLocal_225 = 0;
 	var uLocal_226 = 0;
 	var uLocal_227 = 0;
-	var uLocal_228 = 1061158912;
+	var uLocal_228 = 0;
 	var uLocal_229 = 0;
-	var uLocal_230 = 0;
+	var uLocal_230 = 1061158912;
 	var uLocal_231 = 0;
 	var uLocal_232 = 0;
 	var uLocal_233 = 0;
@@ -241,9 +241,9 @@
 	var uLocal_239 = 0;
 	var uLocal_240 = 0;
 	var uLocal_241 = 0;
-	var uLocal_242 = 1061158912;
+	var uLocal_242 = 0;
 	var uLocal_243 = 0;
-	var uLocal_244 = 0;
+	var uLocal_244 = 1061158912;
 	var uLocal_245 = 0;
 	var uLocal_246 = 0;
 	var uLocal_247 = 0;
@@ -255,9 +255,9 @@
 	var uLocal_253 = 0;
 	var uLocal_254 = 0;
 	var uLocal_255 = 0;
-	var uLocal_256 = 1061158912;
+	var uLocal_256 = 0;
 	var uLocal_257 = 0;
-	var uLocal_258 = 0;
+	var uLocal_258 = 1061158912;
 	var uLocal_259 = 0;
 	var uLocal_260 = 0;
 	var uLocal_261 = 0;
@@ -269,9 +269,9 @@
 	var uLocal_267 = 0;
 	var uLocal_268 = 0;
 	var uLocal_269 = 0;
-	var uLocal_270 = 1061158912;
+	var uLocal_270 = 0;
 	var uLocal_271 = 0;
-	var uLocal_272 = 0;
+	var uLocal_272 = 1061158912;
 	var uLocal_273 = 0;
 	var uLocal_274 = 0;
 	var uLocal_275 = 0;
@@ -283,9 +283,9 @@
 	var uLocal_281 = 0;
 	var uLocal_282 = 0;
 	var uLocal_283 = 0;
-	var uLocal_284 = 1061158912;
+	var uLocal_284 = 0;
 	var uLocal_285 = 0;
-	var uLocal_286 = 0;
+	var uLocal_286 = 1061158912;
 	var uLocal_287 = 0;
 	var uLocal_288 = 0;
 	var uLocal_289 = 0;
@@ -297,9 +297,9 @@
 	var uLocal_295 = 0;
 	var uLocal_296 = 0;
 	var uLocal_297 = 0;
-	var uLocal_298 = 1061158912;
+	var uLocal_298 = 0;
 	var uLocal_299 = 0;
-	var uLocal_300 = 0;
+	var uLocal_300 = 1061158912;
 	var uLocal_301 = 0;
 	var uLocal_302 = 0;
 	var uLocal_303 = 0;
@@ -311,9 +311,9 @@
 	var uLocal_309 = 0;
 	var uLocal_310 = 0;
 	var uLocal_311 = 0;
-	var uLocal_312 = 1061158912;
+	var uLocal_312 = 0;
 	var uLocal_313 = 0;
-	var uLocal_314 = 0;
+	var uLocal_314 = 1061158912;
 	var uLocal_315 = 0;
 	var uLocal_316 = 0;
 	var uLocal_317 = 0;
@@ -325,9 +325,9 @@
 	var uLocal_323 = 0;
 	var uLocal_324 = 0;
 	var uLocal_325 = 0;
-	var uLocal_326 = 1061158912;
+	var uLocal_326 = 0;
 	var uLocal_327 = 0;
-	var uLocal_328 = 0;
+	var uLocal_328 = 1061158912;
 	var uLocal_329 = 0;
 	var uLocal_330 = 0;
 	var uLocal_331 = 0;
@@ -339,9 +339,9 @@
 	var uLocal_337 = 0;
 	var uLocal_338 = 0;
 	var uLocal_339 = 0;
-	var uLocal_340 = 1061158912;
+	var uLocal_340 = 0;
 	var uLocal_341 = 0;
-	var uLocal_342 = 0;
+	var uLocal_342 = 1061158912;
 	var uLocal_343 = 0;
 	var uLocal_344 = 0;
 	var uLocal_345 = 0;
@@ -353,9 +353,9 @@
 	var uLocal_351 = 0;
 	var uLocal_352 = 0;
 	var uLocal_353 = 0;
-	var uLocal_354 = 1061158912;
+	var uLocal_354 = 0;
 	var uLocal_355 = 0;
-	var uLocal_356 = 0;
+	var uLocal_356 = 1061158912;
 	var uLocal_357 = 0;
 	var uLocal_358 = 0;
 	var uLocal_359 = 0;
@@ -367,9 +367,9 @@
 	var uLocal_365 = 0;
 	var uLocal_366 = 0;
 	var uLocal_367 = 0;
-	var uLocal_368 = 1061158912;
+	var uLocal_368 = 0;
 	var uLocal_369 = 0;
-	var uLocal_370 = 0;
+	var uLocal_370 = 1061158912;
 	var uLocal_371 = 0;
 	var uLocal_372 = 0;
 	var uLocal_373 = 0;
@@ -381,9 +381,9 @@
 	var uLocal_379 = 0;
 	var uLocal_380 = 0;
 	var uLocal_381 = 0;
-	var uLocal_382 = 1061158912;
+	var uLocal_382 = 0;
 	var uLocal_383 = 0;
-	var uLocal_384 = 0;
+	var uLocal_384 = 1061158912;
 	var uLocal_385 = 0;
 	var uLocal_386 = 0;
 	var uLocal_387 = 0;
@@ -395,9 +395,9 @@
 	var uLocal_393 = 0;
 	var uLocal_394 = 0;
 	var uLocal_395 = 0;
-	var uLocal_396 = 1061158912;
+	var uLocal_396 = 0;
 	var uLocal_397 = 0;
-	var uLocal_398 = 0;
+	var uLocal_398 = 1061158912;
 	var uLocal_399 = 0;
 	var uLocal_400 = 0;
 	var uLocal_401 = 0;
@@ -409,9 +409,9 @@
 	var uLocal_407 = 0;
 	var uLocal_408 = 0;
 	var uLocal_409 = 0;
-	var uLocal_410 = 1061158912;
+	var uLocal_410 = 0;
 	var uLocal_411 = 0;
-	var uLocal_412 = 0;
+	var uLocal_412 = 1061158912;
 	var uLocal_413 = 0;
 	var uLocal_414 = 0;
 	var uLocal_415 = 0;
@@ -423,9 +423,9 @@
 	var uLocal_421 = 0;
 	var uLocal_422 = 0;
 	var uLocal_423 = 0;
-	var uLocal_424 = 1061158912;
+	var uLocal_424 = 0;
 	var uLocal_425 = 0;
-	var uLocal_426 = 0;
+	var uLocal_426 = 1061158912;
 	var uLocal_427 = 0;
 	var uLocal_428 = 0;
 	var uLocal_429 = 0;
@@ -437,9 +437,9 @@
 	var uLocal_435 = 0;
 	var uLocal_436 = 0;
 	var uLocal_437 = 0;
-	var uLocal_438 = 1061158912;
+	var uLocal_438 = 0;
 	var uLocal_439 = 0;
-	var uLocal_440 = 0;
+	var uLocal_440 = 1061158912;
 	var uLocal_441 = 0;
 	var uLocal_442 = 0;
 	var uLocal_443 = 0;
@@ -451,9 +451,9 @@
 	var uLocal_449 = 0;
 	var uLocal_450 = 0;
 	var uLocal_451 = 0;
-	var uLocal_452 = 1061158912;
+	var uLocal_452 = 0;
 	var uLocal_453 = 0;
-	var uLocal_454 = 0;
+	var uLocal_454 = 1061158912;
 	var uLocal_455 = 0;
 	var uLocal_456 = 0;
 	var uLocal_457 = 0;
@@ -465,9 +465,9 @@
 	var uLocal_463 = 0;
 	var uLocal_464 = 0;
 	var uLocal_465 = 0;
-	var uLocal_466 = 1061158912;
+	var uLocal_466 = 0;
 	var uLocal_467 = 0;
-	var uLocal_468 = 0;
+	var uLocal_468 = 1061158912;
 	var uLocal_469 = 0;
 	var uLocal_470 = 0;
 	var uLocal_471 = 0;
@@ -479,9 +479,9 @@
 	var uLocal_477 = 0;
 	var uLocal_478 = 0;
 	var uLocal_479 = 0;
-	var uLocal_480 = 1061158912;
+	var uLocal_480 = 0;
 	var uLocal_481 = 0;
-	var uLocal_482 = 0;
+	var uLocal_482 = 1061158912;
 	var uLocal_483 = 0;
 	var uLocal_484 = 0;
 	var uLocal_485 = 0;
@@ -493,9 +493,9 @@
 	var uLocal_491 = 0;
 	var uLocal_492 = 0;
 	var uLocal_493 = 0;
-	var uLocal_494 = 1061158912;
+	var uLocal_494 = 0;
 	var uLocal_495 = 0;
-	var uLocal_496 = 0;
+	var uLocal_496 = 1061158912;
 	var uLocal_497 = 0;
 	var uLocal_498 = 0;
 	var uLocal_499 = 0;
@@ -507,9 +507,9 @@
 	var uLocal_505 = 0;
 	var uLocal_506 = 0;
 	var uLocal_507 = 0;
-	var uLocal_508 = 1061158912;
+	var uLocal_508 = 0;
 	var uLocal_509 = 0;
-	var uLocal_510 = 0;
+	var uLocal_510 = 1061158912;
 	var uLocal_511 = 0;
 	var uLocal_512 = 0;
 	var uLocal_513 = 0;
@@ -521,9 +521,9 @@
 	var uLocal_519 = 0;
 	var uLocal_520 = 0;
 	var uLocal_521 = 0;
-	var uLocal_522 = 1061158912;
+	var uLocal_522 = 0;
 	var uLocal_523 = 0;
-	var uLocal_524 = 0;
+	var uLocal_524 = 1061158912;
 	var uLocal_525 = 0;
 	var uLocal_526 = 0;
 	var uLocal_527 = 0;
@@ -535,9 +535,9 @@
 	var uLocal_533 = 0;
 	var uLocal_534 = 0;
 	var uLocal_535 = 0;
-	var uLocal_536 = 1061158912;
+	var uLocal_536 = 0;
 	var uLocal_537 = 0;
-	var uLocal_538 = 0;
+	var uLocal_538 = 1061158912;
 	var uLocal_539 = 0;
 	var uLocal_540 = 0;
 	var uLocal_541 = 0;
@@ -549,9 +549,9 @@
 	var uLocal_547 = 0;
 	var uLocal_548 = 0;
 	var uLocal_549 = 0;
-	var uLocal_550 = 1061158912;
+	var uLocal_550 = 0;
 	var uLocal_551 = 0;
-	var uLocal_552 = 0;
+	var uLocal_552 = 1061158912;
 	var uLocal_553 = 0;
 	var uLocal_554 = 0;
 	var uLocal_555 = 0;
@@ -563,9 +563,9 @@
 	var uLocal_561 = 0;
 	var uLocal_562 = 0;
 	var uLocal_563 = 0;
-	var uLocal_564 = 1061158912;
+	var uLocal_564 = 0;
 	var uLocal_565 = 0;
-	var uLocal_566 = 0;
+	var uLocal_566 = 1061158912;
 	var uLocal_567 = 0;
 	var uLocal_568 = 0;
 	var uLocal_569 = 0;
@@ -577,9 +577,9 @@
 	var uLocal_575 = 0;
 	var uLocal_576 = 0;
 	var uLocal_577 = 0;
-	var uLocal_578 = 1061158912;
+	var uLocal_578 = 0;
 	var uLocal_579 = 0;
-	var uLocal_580 = 0;
+	var uLocal_580 = 1061158912;
 	var uLocal_581 = 0;
 	var uLocal_582 = 0;
 	var uLocal_583 = 0;
@@ -591,9 +591,9 @@
 	var uLocal_589 = 0;
 	var uLocal_590 = 0;
 	var uLocal_591 = 0;
-	var uLocal_592 = 1061158912;
+	var uLocal_592 = 0;
 	var uLocal_593 = 0;
-	var uLocal_594 = 0;
+	var uLocal_594 = 1061158912;
 	var uLocal_595 = 0;
 	var uLocal_596 = 0;
 	var uLocal_597 = 0;
@@ -605,9 +605,9 @@
 	var uLocal_603 = 0;
 	var uLocal_604 = 0;
 	var uLocal_605 = 0;
-	var uLocal_606 = 1061158912;
+	var uLocal_606 = 0;
 	var uLocal_607 = 0;
-	var uLocal_608 = 0;
+	var uLocal_608 = 1061158912;
 	var uLocal_609 = 0;
 	var uLocal_610 = 0;
 	var uLocal_611 = 0;
@@ -619,9 +619,9 @@
 	var uLocal_617 = 0;
 	var uLocal_618 = 0;
 	var uLocal_619 = 0;
-	var uLocal_620 = 1061158912;
+	var uLocal_620 = 0;
 	var uLocal_621 = 0;
-	var uLocal_622 = 0;
+	var uLocal_622 = 1061158912;
 	var uLocal_623 = 0;
 	var uLocal_624 = 0;
 	var uLocal_625 = 0;
@@ -633,9 +633,9 @@
 	var uLocal_631 = 0;
 	var uLocal_632 = 0;
 	var uLocal_633 = 0;
-	var uLocal_634 = 1061158912;
+	var uLocal_634 = 0;
 	var uLocal_635 = 0;
-	var uLocal_636 = 0;
+	var uLocal_636 = 1061158912;
 	var uLocal_637 = 0;
 	var uLocal_638 = 0;
 	var uLocal_639 = 0;
@@ -647,9 +647,9 @@
 	var uLocal_645 = 0;
 	var uLocal_646 = 0;
 	var uLocal_647 = 0;
-	var uLocal_648 = 1061158912;
+	var uLocal_648 = 0;
 	var uLocal_649 = 0;
-	var uLocal_650 = 0;
+	var uLocal_650 = 1061158912;
 	var uLocal_651 = 0;
 	var uLocal_652 = 0;
 	var uLocal_653 = 0;
@@ -661,9 +661,9 @@
 	var uLocal_659 = 0;
 	var uLocal_660 = 0;
 	var uLocal_661 = 0;
-	var uLocal_662 = 1061158912;
+	var uLocal_662 = 0;
 	var uLocal_663 = 0;
-	var uLocal_664 = 0;
+	var uLocal_664 = 1061158912;
 	var uLocal_665 = 0;
 	var uLocal_666 = 0;
 	var uLocal_667 = 0;
@@ -675,9 +675,9 @@
 	var uLocal_673 = 0;
 	var uLocal_674 = 0;
 	var uLocal_675 = 0;
-	var uLocal_676 = 1061158912;
+	var uLocal_676 = 0;
 	var uLocal_677 = 0;
-	var uLocal_678 = 0;
+	var uLocal_678 = 1061158912;
 	var uLocal_679 = 0;
 	var uLocal_680 = 0;
 	var uLocal_681 = 0;
@@ -689,9 +689,9 @@
 	var uLocal_687 = 0;
 	var uLocal_688 = 0;
 	var uLocal_689 = 0;
-	var uLocal_690 = 1061158912;
+	var uLocal_690 = 0;
 	var uLocal_691 = 0;
-	var uLocal_692 = 0;
+	var uLocal_692 = 1061158912;
 	var uLocal_693 = 0;
 	var uLocal_694 = 0;
 	var uLocal_695 = 0;
@@ -703,9 +703,9 @@
 	var uLocal_701 = 0;
 	var uLocal_702 = 0;
 	var uLocal_703 = 0;
-	var uLocal_704 = 1061158912;
+	var uLocal_704 = 0;
 	var uLocal_705 = 0;
-	var uLocal_706 = 0;
+	var uLocal_706 = 1061158912;
 	var uLocal_707 = 0;
 	var uLocal_708 = 0;
 	var uLocal_709 = 0;
@@ -717,9 +717,9 @@
 	var uLocal_715 = 0;
 	var uLocal_716 = 0;
 	var uLocal_717 = 0;
-	var uLocal_718 = 1061158912;
+	var uLocal_718 = 0;
 	var uLocal_719 = 0;
-	var uLocal_720 = 0;
+	var uLocal_720 = 1061158912;
 	var uLocal_721 = 0;
 	var uLocal_722 = 0;
 	var uLocal_723 = 0;
@@ -731,9 +731,9 @@
 	var uLocal_729 = 0;
 	var uLocal_730 = 0;
 	var uLocal_731 = 0;
-	var uLocal_732 = 1061158912;
+	var uLocal_732 = 0;
 	var uLocal_733 = 0;
-	var uLocal_734 = 0;
+	var uLocal_734 = 1061158912;
 	var uLocal_735 = 0;
 	var uLocal_736 = 0;
 	var uLocal_737 = 0;
@@ -745,9 +745,9 @@
 	var uLocal_743 = 0;
 	var uLocal_744 = 0;
 	var uLocal_745 = 0;
-	var uLocal_746 = 1061158912;
+	var uLocal_746 = 0;
 	var uLocal_747 = 0;
-	var uLocal_748 = 0;
+	var uLocal_748 = 1061158912;
 	var uLocal_749 = 0;
 	var uLocal_750 = 0;
 	var uLocal_751 = 0;
@@ -759,9 +759,9 @@
 	var uLocal_757 = 0;
 	var uLocal_758 = 0;
 	var uLocal_759 = 0;
-	var uLocal_760 = 1061158912;
+	var uLocal_760 = 0;
 	var uLocal_761 = 0;
-	var uLocal_762 = 0;
+	var uLocal_762 = 1061158912;
 	var uLocal_763 = 0;
 	var uLocal_764 = 0;
 	var uLocal_765 = 0;
@@ -773,9 +773,9 @@
 	var uLocal_771 = 0;
 	var uLocal_772 = 0;
 	var uLocal_773 = 0;
-	var uLocal_774 = 1061158912;
+	var uLocal_774 = 0;
 	var uLocal_775 = 0;
-	var uLocal_776 = 0;
+	var uLocal_776 = 1061158912;
 	var uLocal_777 = 0;
 	var uLocal_778 = 0;
 	var uLocal_779 = 0;
@@ -787,9 +787,9 @@
 	var uLocal_785 = 0;
 	var uLocal_786 = 0;
 	var uLocal_787 = 0;
-	var uLocal_788 = 1061158912;
+	var uLocal_788 = 0;
 	var uLocal_789 = 0;
-	var uLocal_790 = 0;
+	var uLocal_790 = 1061158912;
 	var uLocal_791 = 0;
 	var uLocal_792 = 0;
 	var uLocal_793 = 0;
@@ -801,9 +801,9 @@
 	var uLocal_799 = 0;
 	var uLocal_800 = 0;
 	var uLocal_801 = 0;
-	var uLocal_802 = 1061158912;
+	var uLocal_802 = 0;
 	var uLocal_803 = 0;
-	var uLocal_804 = 0;
+	var uLocal_804 = 1061158912;
 	var uLocal_805 = 0;
 	var uLocal_806 = 0;
 	var uLocal_807 = 0;
@@ -815,9 +815,9 @@
 	var uLocal_813 = 0;
 	var uLocal_814 = 0;
 	var uLocal_815 = 0;
-	var uLocal_816 = 1061158912;
+	var uLocal_816 = 0;
 	var uLocal_817 = 0;
-	var uLocal_818 = 0;
+	var uLocal_818 = 1061158912;
 	var uLocal_819 = 0;
 	var uLocal_820 = 0;
 	var uLocal_821 = 0;
@@ -829,9 +829,9 @@
 	var uLocal_827 = 0;
 	var uLocal_828 = 0;
 	var uLocal_829 = 0;
-	var uLocal_830 = 1061158912;
+	var uLocal_830 = 0;
 	var uLocal_831 = 0;
-	var uLocal_832 = 0;
+	var uLocal_832 = 1061158912;
 	var uLocal_833 = 0;
 	var uLocal_834 = 0;
 	var uLocal_835 = 0;
@@ -843,9 +843,9 @@
 	var uLocal_841 = 0;
 	var uLocal_842 = 0;
 	var uLocal_843 = 0;
-	var uLocal_844 = 1061158912;
+	var uLocal_844 = 0;
 	var uLocal_845 = 0;
-	var uLocal_846 = 0;
+	var uLocal_846 = 1061158912;
 	var uLocal_847 = 0;
 	var uLocal_848 = 0;
 	var uLocal_849 = 0;
@@ -857,9 +857,9 @@
 	var uLocal_855 = 0;
 	var uLocal_856 = 0;
 	var uLocal_857 = 0;
-	var uLocal_858 = 1061158912;
+	var uLocal_858 = 0;
 	var uLocal_859 = 0;
-	var uLocal_860 = 0;
+	var uLocal_860 = 1061158912;
 	var uLocal_861 = 0;
 	var uLocal_862 = 0;
 	var uLocal_863 = 0;
@@ -871,9 +871,9 @@
 	var uLocal_869 = 0;
 	var uLocal_870 = 0;
 	var uLocal_871 = 0;
-	var uLocal_872 = 1061158912;
+	var uLocal_872 = 0;
 	var uLocal_873 = 0;
-	var uLocal_874 = 0;
+	var uLocal_874 = 1061158912;
 	var uLocal_875 = 0;
 	var uLocal_876 = 0;
 	var uLocal_877 = 0;
@@ -885,9 +885,9 @@
 	var uLocal_883 = 0;
 	var uLocal_884 = 0;
 	var uLocal_885 = 0;
-	var uLocal_886 = 1061158912;
+	var uLocal_886 = 0;
 	var uLocal_887 = 0;
-	var uLocal_888 = 0;
+	var uLocal_888 = 1061158912;
 	var uLocal_889 = 0;
 	var uLocal_890 = 0;
 	var uLocal_891 = 0;
@@ -899,9 +899,9 @@
 	var uLocal_897 = 0;
 	var uLocal_898 = 0;
 	var uLocal_899 = 0;
-	var uLocal_900 = 1061158912;
+	var uLocal_900 = 0;
 	var uLocal_901 = 0;
-	var uLocal_902 = 0;
+	var uLocal_902 = 1061158912;
 	var uLocal_903 = 0;
 	var uLocal_904 = 0;
 	var uLocal_905 = 0;
@@ -913,9 +913,9 @@
 	var uLocal_911 = 0;
 	var uLocal_912 = 0;
 	var uLocal_913 = 0;
-	var uLocal_914 = 1061158912;
+	var uLocal_914 = 0;
 	var uLocal_915 = 0;
-	var uLocal_916 = 0;
+	var uLocal_916 = 1061158912;
 	var uLocal_917 = 0;
 	var uLocal_918 = 0;
 	var uLocal_919 = 0;
@@ -927,9 +927,9 @@
 	var uLocal_925 = 0;
 	var uLocal_926 = 0;
 	var uLocal_927 = 0;
-	var uLocal_928 = 1061158912;
+	var uLocal_928 = 0;
 	var uLocal_929 = 0;
-	var uLocal_930 = 0;
+	var uLocal_930 = 1061158912;
 	var uLocal_931 = 0;
 	var uLocal_932 = 0;
 	var uLocal_933 = 0;
@@ -941,9 +941,9 @@
 	var uLocal_939 = 0;
 	var uLocal_940 = 0;
 	var uLocal_941 = 0;
-	var uLocal_942 = 1061158912;
+	var uLocal_942 = 0;
 	var uLocal_943 = 0;
-	var uLocal_944 = 0;
+	var uLocal_944 = 1061158912;
 	var uLocal_945 = 0;
 	var uLocal_946 = 0;
 	var uLocal_947 = 0;
@@ -955,9 +955,9 @@
 	var uLocal_953 = 0;
 	var uLocal_954 = 0;
 	var uLocal_955 = 0;
-	var uLocal_956 = 1061158912;
+	var uLocal_956 = 0;
 	var uLocal_957 = 0;
-	var uLocal_958 = 0;
+	var uLocal_958 = 1061158912;
 	var uLocal_959 = 0;
 	var uLocal_960 = 0;
 	var uLocal_961 = 0;
@@ -969,9 +969,9 @@
 	var uLocal_967 = 0;
 	var uLocal_968 = 0;
 	var uLocal_969 = 0;
-	var uLocal_970 = 1061158912;
+	var uLocal_970 = 0;
 	var uLocal_971 = 0;
-	var uLocal_972 = 0;
+	var uLocal_972 = 1061158912;
 	var uLocal_973 = 0;
 	var uLocal_974 = 0;
 	var uLocal_975 = 0;
@@ -983,9 +983,9 @@
 	var uLocal_981 = 0;
 	var uLocal_982 = 0;
 	var uLocal_983 = 0;
-	var uLocal_984 = 1061158912;
+	var uLocal_984 = 0;
 	var uLocal_985 = 0;
-	var uLocal_986 = 0;
+	var uLocal_986 = 1061158912;
 	var uLocal_987 = 0;
 	var uLocal_988 = 0;
 	var uLocal_989 = 0;
@@ -997,9 +997,9 @@
 	var uLocal_995 = 0;
 	var uLocal_996 = 0;
 	var uLocal_997 = 0;
-	var uLocal_998 = 1061158912;
+	var uLocal_998 = 0;
 	var uLocal_999 = 0;
-	var uLocal_1000 = 0;
+	var uLocal_1000 = 1061158912;
 	var uLocal_1001 = 0;
 	var uLocal_1002 = 0;
 	var uLocal_1003 = 0;
@@ -1011,9 +1011,9 @@
 	var uLocal_1009 = 0;
 	var uLocal_1010 = 0;
 	var uLocal_1011 = 0;
-	var uLocal_1012 = 1061158912;
+	var uLocal_1012 = 0;
 	var uLocal_1013 = 0;
-	var uLocal_1014 = 0;
+	var uLocal_1014 = 1061158912;
 	var uLocal_1015 = 0;
 	var uLocal_1016 = 0;
 	var uLocal_1017 = 0;
@@ -1025,9 +1025,9 @@
 	var uLocal_1023 = 0;
 	var uLocal_1024 = 0;
 	var uLocal_1025 = 0;
-	var uLocal_1026 = 1061158912;
+	var uLocal_1026 = 0;
 	var uLocal_1027 = 0;
-	var uLocal_1028 = 0;
+	var uLocal_1028 = 1061158912;
 	var uLocal_1029 = 0;
 	var uLocal_1030 = 0;
 	var uLocal_1031 = 0;
@@ -1039,9 +1039,9 @@
 	var uLocal_1037 = 0;
 	var uLocal_1038 = 0;
 	var uLocal_1039 = 0;
-	var uLocal_1040 = 1061158912;
+	var uLocal_1040 = 0;
 	var uLocal_1041 = 0;
-	var uLocal_1042 = 0;
+	var uLocal_1042 = 1061158912;
 	var uLocal_1043 = 0;
 	var uLocal_1044 = 0;
 	var uLocal_1045 = 0;
@@ -1053,9 +1053,9 @@
 	var uLocal_1051 = 0;
 	var uLocal_1052 = 0;
 	var uLocal_1053 = 0;
-	var uLocal_1054 = 1061158912;
+	var uLocal_1054 = 0;
 	var uLocal_1055 = 0;
-	var uLocal_1056 = 0;
+	var uLocal_1056 = 1061158912;
 	var uLocal_1057 = 0;
 	var uLocal_1058 = 0;
 	var uLocal_1059 = 0;
@@ -1067,9 +1067,9 @@
 	var uLocal_1065 = 0;
 	var uLocal_1066 = 0;
 	var uLocal_1067 = 0;
-	var uLocal_1068 = 1061158912;
+	var uLocal_1068 = 0;
 	var uLocal_1069 = 0;
-	var uLocal_1070 = 0;
+	var uLocal_1070 = 1061158912;
 	var uLocal_1071 = 0;
 	var uLocal_1072 = 0;
 	var uLocal_1073 = 0;
@@ -1081,9 +1081,9 @@
 	var uLocal_1079 = 0;
 	var uLocal_1080 = 0;
 	var uLocal_1081 = 0;
-	var uLocal_1082 = 1061158912;
+	var uLocal_1082 = 0;
 	var uLocal_1083 = 0;
-	var uLocal_1084 = 0;
+	var uLocal_1084 = 1061158912;
 	var uLocal_1085 = 0;
 	var uLocal_1086 = 0;
 	var uLocal_1087 = 0;
@@ -1095,9 +1095,9 @@
 	var uLocal_1093 = 0;
 	var uLocal_1094 = 0;
 	var uLocal_1095 = 0;
-	var uLocal_1096 = 1061158912;
+	var uLocal_1096 = 0;
 	var uLocal_1097 = 0;
-	var uLocal_1098 = 0;
+	var uLocal_1098 = 1061158912;
 	var uLocal_1099 = 0;
 	var uLocal_1100 = 0;
 	var uLocal_1101 = 0;
@@ -1109,9 +1109,9 @@
 	var uLocal_1107 = 0;
 	var uLocal_1108 = 0;
 	var uLocal_1109 = 0;
-	var uLocal_1110 = 1061158912;
+	var uLocal_1110 = 0;
 	var uLocal_1111 = 0;
-	var uLocal_1112 = 0;
+	var uLocal_1112 = 1061158912;
 	var uLocal_1113 = 0;
 	var uLocal_1114 = 0;
 	var uLocal_1115 = 0;
@@ -1123,9 +1123,9 @@
 	var uLocal_1121 = 0;
 	var uLocal_1122 = 0;
 	var uLocal_1123 = 0;
-	var uLocal_1124 = 1061158912;
+	var uLocal_1124 = 0;
 	var uLocal_1125 = 0;
-	var uLocal_1126 = 0;
+	var uLocal_1126 = 1061158912;
 	var uLocal_1127 = 0;
 	var uLocal_1128 = 0;
 	var uLocal_1129 = 0;
@@ -1137,9 +1137,9 @@
 	var uLocal_1135 = 0;
 	var uLocal_1136 = 0;
 	var uLocal_1137 = 0;
-	var uLocal_1138 = 1061158912;
+	var uLocal_1138 = 0;
 	var uLocal_1139 = 0;
-	var uLocal_1140 = 0;
+	var uLocal_1140 = 1061158912;
 	var uLocal_1141 = 0;
 	var uLocal_1142 = 0;
 	var uLocal_1143 = 0;
@@ -1151,9 +1151,9 @@
 	var uLocal_1149 = 0;
 	var uLocal_1150 = 0;
 	var uLocal_1151 = 0;
-	var uLocal_1152 = 1061158912;
+	var uLocal_1152 = 0;
 	var uLocal_1153 = 0;
-	var uLocal_1154 = 0;
+	var uLocal_1154 = 1061158912;
 	var uLocal_1155 = 0;
 	var uLocal_1156 = 0;
 	var uLocal_1157 = 0;
@@ -1165,9 +1165,9 @@
 	var uLocal_1163 = 0;
 	var uLocal_1164 = 0;
 	var uLocal_1165 = 0;
-	var uLocal_1166 = 1061158912;
+	var uLocal_1166 = 0;
 	var uLocal_1167 = 0;
-	var uLocal_1168 = 0;
+	var uLocal_1168 = 1061158912;
 	var uLocal_1169 = 0;
 	var uLocal_1170 = 0;
 	var uLocal_1171 = 0;
@@ -1179,9 +1179,9 @@
 	var uLocal_1177 = 0;
 	var uLocal_1178 = 0;
 	var uLocal_1179 = 0;
-	var uLocal_1180 = 1061158912;
+	var uLocal_1180 = 0;
 	var uLocal_1181 = 0;
-	var uLocal_1182 = 0;
+	var uLocal_1182 = 1061158912;
 	var uLocal_1183 = 0;
 	var uLocal_1184 = 0;
 	var uLocal_1185 = 0;
@@ -1193,9 +1193,9 @@
 	var uLocal_1191 = 0;
 	var uLocal_1192 = 0;
 	var uLocal_1193 = 0;
-	var uLocal_1194 = 1061158912;
+	var uLocal_1194 = 0;
 	var uLocal_1195 = 0;
-	var uLocal_1196 = 0;
+	var uLocal_1196 = 1061158912;
 	var uLocal_1197 = 0;
 	var uLocal_1198 = 0;
 	var uLocal_1199 = 0;
@@ -1207,9 +1207,9 @@
 	var uLocal_1205 = 0;
 	var uLocal_1206 = 0;
 	var uLocal_1207 = 0;
-	var uLocal_1208 = 1061158912;
+	var uLocal_1208 = 0;
 	var uLocal_1209 = 0;
-	var uLocal_1210 = 0;
+	var uLocal_1210 = 1061158912;
 	var uLocal_1211 = 0;
 	var uLocal_1212 = 0;
 	var uLocal_1213 = 0;
@@ -1221,9 +1221,9 @@
 	var uLocal_1219 = 0;
 	var uLocal_1220 = 0;
 	var uLocal_1221 = 0;
-	var uLocal_1222 = 1061158912;
+	var uLocal_1222 = 0;
 	var uLocal_1223 = 0;
-	var uLocal_1224 = 0;
+	var uLocal_1224 = 1061158912;
 	var uLocal_1225 = 0;
 	var uLocal_1226 = 0;
 	var uLocal_1227 = 0;
@@ -1235,9 +1235,9 @@
 	var uLocal_1233 = 0;
 	var uLocal_1234 = 0;
 	var uLocal_1235 = 0;
-	var uLocal_1236 = 1061158912;
+	var uLocal_1236 = 0;
 	var uLocal_1237 = 0;
-	var uLocal_1238 = 0;
+	var uLocal_1238 = 1061158912;
 	var uLocal_1239 = 0;
 	var uLocal_1240 = 0;
 	var uLocal_1241 = 0;
@@ -1249,9 +1249,9 @@
 	var uLocal_1247 = 0;
 	var uLocal_1248 = 0;
 	var uLocal_1249 = 0;
-	var uLocal_1250 = 1061158912;
+	var uLocal_1250 = 0;
 	var uLocal_1251 = 0;
-	var uLocal_1252 = 0;
+	var uLocal_1252 = 1061158912;
 	var uLocal_1253 = 0;
 	var uLocal_1254 = 0;
 	var uLocal_1255 = 0;
@@ -1263,9 +1263,9 @@
 	var uLocal_1261 = 0;
 	var uLocal_1262 = 0;
 	var uLocal_1263 = 0;
-	var uLocal_1264 = 1061158912;
+	var uLocal_1264 = 0;
 	var uLocal_1265 = 0;
-	var uLocal_1266 = 0;
+	var uLocal_1266 = 1061158912;
 	var uLocal_1267 = 0;
 	var uLocal_1268 = 0;
 	var uLocal_1269 = 0;
@@ -1277,9 +1277,9 @@
 	var uLocal_1275 = 0;
 	var uLocal_1276 = 0;
 	var uLocal_1277 = 0;
-	var uLocal_1278 = 1061158912;
+	var uLocal_1278 = 0;
 	var uLocal_1279 = 0;
-	var uLocal_1280 = 0;
+	var uLocal_1280 = 1061158912;
 	var uLocal_1281 = 0;
 	var uLocal_1282 = 0;
 	var uLocal_1283 = 0;
@@ -1291,9 +1291,9 @@
 	var uLocal_1289 = 0;
 	var uLocal_1290 = 0;
 	var uLocal_1291 = 0;
-	var uLocal_1292 = 1061158912;
+	var uLocal_1292 = 0;
 	var uLocal_1293 = 0;
-	var uLocal_1294 = 0;
+	var uLocal_1294 = 1061158912;
 	var uLocal_1295 = 0;
 	var uLocal_1296 = 0;
 	var uLocal_1297 = 0;
@@ -1305,9 +1305,9 @@
 	var uLocal_1303 = 0;
 	var uLocal_1304 = 0;
 	var uLocal_1305 = 0;
-	var uLocal_1306 = 1061158912;
+	var uLocal_1306 = 0;
 	var uLocal_1307 = 0;
-	var uLocal_1308 = 0;
+	var uLocal_1308 = 1061158912;
 	var uLocal_1309 = 0;
 	var uLocal_1310 = 0;
 	var uLocal_1311 = 0;
@@ -1319,9 +1319,9 @@
 	var uLocal_1317 = 0;
 	var uLocal_1318 = 0;
 	var uLocal_1319 = 0;
-	var uLocal_1320 = 1061158912;
+	var uLocal_1320 = 0;
 	var uLocal_1321 = 0;
-	var uLocal_1322 = 0;
+	var uLocal_1322 = 1061158912;
 	var uLocal_1323 = 0;
 	var uLocal_1324 = 0;
 	var uLocal_1325 = 0;
@@ -1333,9 +1333,9 @@
 	var uLocal_1331 = 0;
 	var uLocal_1332 = 0;
 	var uLocal_1333 = 0;
-	var uLocal_1334 = 1061158912;
+	var uLocal_1334 = 0;
 	var uLocal_1335 = 0;
-	var uLocal_1336 = 0;
+	var uLocal_1336 = 1061158912;
 	var uLocal_1337 = 0;
 	var uLocal_1338 = 0;
 	var uLocal_1339 = 0;
@@ -1347,9 +1347,9 @@
 	var uLocal_1345 = 0;
 	var uLocal_1346 = 0;
 	var uLocal_1347 = 0;
-	var uLocal_1348 = 1061158912;
+	var uLocal_1348 = 0;
 	var uLocal_1349 = 0;
-	var uLocal_1350 = 0;
+	var uLocal_1350 = 1061158912;
 	var uLocal_1351 = 0;
 	var uLocal_1352 = 0;
 	var uLocal_1353 = 0;
@@ -1361,9 +1361,9 @@
 	var uLocal_1359 = 0;
 	var uLocal_1360 = 0;
 	var uLocal_1361 = 0;
-	var uLocal_1362 = 1061158912;
+	var uLocal_1362 = 0;
 	var uLocal_1363 = 0;
-	var uLocal_1364 = 0;
+	var uLocal_1364 = 1061158912;
 	var uLocal_1365 = 0;
 	var uLocal_1366 = 0;
 	var uLocal_1367 = 0;
@@ -1375,9 +1375,9 @@
 	var uLocal_1373 = 0;
 	var uLocal_1374 = 0;
 	var uLocal_1375 = 0;
-	var uLocal_1376 = 1061158912;
+	var uLocal_1376 = 0;
 	var uLocal_1377 = 0;
-	var uLocal_1378 = 0;
+	var uLocal_1378 = 1061158912;
 	var uLocal_1379 = 0;
 	var uLocal_1380 = 0;
 	var uLocal_1381 = 0;
@@ -1389,9 +1389,9 @@
 	var uLocal_1387 = 0;
 	var uLocal_1388 = 0;
 	var uLocal_1389 = 0;
-	var uLocal_1390 = 1061158912;
+	var uLocal_1390 = 0;
 	var uLocal_1391 = 0;
-	var uLocal_1392 = 0;
+	var uLocal_1392 = 1061158912;
 	var uLocal_1393 = 0;
 	var uLocal_1394 = 0;
 	var uLocal_1395 = 0;
@@ -1403,9 +1403,9 @@
 	var uLocal_1401 = 0;
 	var uLocal_1402 = 0;
 	var uLocal_1403 = 0;
-	var uLocal_1404 = 1061158912;
+	var uLocal_1404 = 0;
 	var uLocal_1405 = 0;
-	var uLocal_1406 = 0;
+	var uLocal_1406 = 1061158912;
 	var uLocal_1407 = 0;
 	var uLocal_1408 = 0;
 	var uLocal_1409 = 0;
@@ -1417,9 +1417,9 @@
 	var uLocal_1415 = 0;
 	var uLocal_1416 = 0;
 	var uLocal_1417 = 0;
-	var uLocal_1418 = 1061158912;
+	var uLocal_1418 = 0;
 	var uLocal_1419 = 0;
-	var uLocal_1420 = 0;
+	var uLocal_1420 = 1061158912;
 	var uLocal_1421 = 0;
 	var uLocal_1422 = 0;
 	var uLocal_1423 = 0;
@@ -1431,9 +1431,9 @@
 	var uLocal_1429 = 0;
 	var uLocal_1430 = 0;
 	var uLocal_1431 = 0;
-	var uLocal_1432 = 1061158912;
+	var uLocal_1432 = 0;
 	var uLocal_1433 = 0;
-	var uLocal_1434 = 0;
+	var uLocal_1434 = 1061158912;
 	var uLocal_1435 = 0;
 	var uLocal_1436 = 0;
 	var uLocal_1437 = 0;
@@ -1445,9 +1445,9 @@
 	var uLocal_1443 = 0;
 	var uLocal_1444 = 0;
 	var uLocal_1445 = 0;
-	var uLocal_1446 = 1061158912;
+	var uLocal_1446 = 0;
 	var uLocal_1447 = 0;
-	var uLocal_1448 = 0;
+	var uLocal_1448 = 1061158912;
 	var uLocal_1449 = 0;
 	var uLocal_1450 = 0;
 	var uLocal_1451 = 0;
@@ -1459,9 +1459,9 @@
 	var uLocal_1457 = 0;
 	var uLocal_1458 = 0;
 	var uLocal_1459 = 0;
-	var uLocal_1460 = 1061158912;
+	var uLocal_1460 = 0;
 	var uLocal_1461 = 0;
-	var uLocal_1462 = 0;
+	var uLocal_1462 = 1061158912;
 	var uLocal_1463 = 0;
 	var uLocal_1464 = 0;
 	var uLocal_1465 = 0;
@@ -1473,9 +1473,9 @@
 	var uLocal_1471 = 0;
 	var uLocal_1472 = 0;
 	var uLocal_1473 = 0;
-	var uLocal_1474 = 1061158912;
+	var uLocal_1474 = 0;
 	var uLocal_1475 = 0;
-	var uLocal_1476 = 0;
+	var uLocal_1476 = 1061158912;
 	var uLocal_1477 = 0;
 	var uLocal_1478 = 0;
 	var uLocal_1479 = 0;
@@ -1487,9 +1487,9 @@
 	var uLocal_1485 = 0;
 	var uLocal_1486 = 0;
 	var uLocal_1487 = 0;
-	var uLocal_1488 = 1061158912;
+	var uLocal_1488 = 0;
 	var uLocal_1489 = 0;
-	var uLocal_1490 = 0;
+	var uLocal_1490 = 1061158912;
 	var uLocal_1491 = 0;
 	var uLocal_1492 = 0;
 	var uLocal_1493 = 0;
@@ -1501,9 +1501,9 @@
 	var uLocal_1499 = 0;
 	var uLocal_1500 = 0;
 	var uLocal_1501 = 0;
-	var uLocal_1502 = 1061158912;
+	var uLocal_1502 = 0;
 	var uLocal_1503 = 0;
-	var uLocal_1504 = 0;
+	var uLocal_1504 = 1061158912;
 	var uLocal_1505 = 0;
 	var uLocal_1506 = 0;
 	var uLocal_1507 = 0;
@@ -1515,9 +1515,9 @@
 	var uLocal_1513 = 0;
 	var uLocal_1514 = 0;
 	var uLocal_1515 = 0;
-	var uLocal_1516 = 1061158912;
+	var uLocal_1516 = 0;
 	var uLocal_1517 = 0;
-	var uLocal_1518 = 0;
+	var uLocal_1518 = 1061158912;
 	var uLocal_1519 = 0;
 	var uLocal_1520 = 0;
 	var uLocal_1521 = 0;
@@ -1529,9 +1529,9 @@
 	var uLocal_1527 = 0;
 	var uLocal_1528 = 0;
 	var uLocal_1529 = 0;
-	var uLocal_1530 = 1061158912;
+	var uLocal_1530 = 0;
 	var uLocal_1531 = 0;
-	var uLocal_1532 = 0;
+	var uLocal_1532 = 1061158912;
 	var uLocal_1533 = 0;
 	var uLocal_1534 = 0;
 	var uLocal_1535 = 0;
@@ -1543,9 +1543,9 @@
 	var uLocal_1541 = 0;
 	var uLocal_1542 = 0;
 	var uLocal_1543 = 0;
-	var uLocal_1544 = 1061158912;
+	var uLocal_1544 = 0;
 	var uLocal_1545 = 0;
-	var uLocal_1546 = 0;
+	var uLocal_1546 = 1061158912;
 	var uLocal_1547 = 0;
 	var uLocal_1548 = 0;
 	var uLocal_1549 = 0;
@@ -1557,9 +1557,9 @@
 	var uLocal_1555 = 0;
 	var uLocal_1556 = 0;
 	var uLocal_1557 = 0;
-	var uLocal_1558 = 1061158912;
+	var uLocal_1558 = 0;
 	var uLocal_1559 = 0;
-	var uLocal_1560 = 0;
+	var uLocal_1560 = 1061158912;
 	var uLocal_1561 = 0;
 	var uLocal_1562 = 0;
 	var uLocal_1563 = 0;
@@ -1571,9 +1571,9 @@
 	var uLocal_1569 = 0;
 	var uLocal_1570 = 0;
 	var uLocal_1571 = 0;
-	var uLocal_1572 = 1061158912;
+	var uLocal_1572 = 0;
 	var uLocal_1573 = 0;
-	var uLocal_1574 = 0;
+	var uLocal_1574 = 1061158912;
 	var uLocal_1575 = 0;
 	var uLocal_1576 = 0;
 	var uLocal_1577 = 0;
@@ -1585,9 +1585,9 @@
 	var uLocal_1583 = 0;
 	var uLocal_1584 = 0;
 	var uLocal_1585 = 0;
-	var uLocal_1586 = 1061158912;
+	var uLocal_1586 = 0;
 	var uLocal_1587 = 0;
-	var uLocal_1588 = 0;
+	var uLocal_1588 = 1061158912;
 	var uLocal_1589 = 0;
 	var uLocal_1590 = 0;
 	var uLocal_1591 = 0;
@@ -1599,9 +1599,9 @@
 	var uLocal_1597 = 0;
 	var uLocal_1598 = 0;
 	var uLocal_1599 = 0;
-	var uLocal_1600 = 1061158912;
+	var uLocal_1600 = 0;
 	var uLocal_1601 = 0;
-	var uLocal_1602 = 0;
+	var uLocal_1602 = 1061158912;
 	var uLocal_1603 = 0;
 	var uLocal_1604 = 0;
 	var uLocal_1605 = 0;
@@ -1613,9 +1613,9 @@
 	var uLocal_1611 = 0;
 	var uLocal_1612 = 0;
 	var uLocal_1613 = 0;
-	var uLocal_1614 = 1061158912;
+	var uLocal_1614 = 0;
 	var uLocal_1615 = 0;
-	var uLocal_1616 = 0;
+	var uLocal_1616 = 1061158912;
 	var uLocal_1617 = 0;
 	var uLocal_1618 = 0;
 	var uLocal_1619 = 0;
@@ -1627,9 +1627,9 @@
 	var uLocal_1625 = 0;
 	var uLocal_1626 = 0;
 	var uLocal_1627 = 0;
-	var uLocal_1628 = 1061158912;
+	var uLocal_1628 = 0;
 	var uLocal_1629 = 0;
-	var uLocal_1630 = 0;
+	var uLocal_1630 = 1061158912;
 	var uLocal_1631 = 0;
 	var uLocal_1632 = 0;
 	var uLocal_1633 = 0;
@@ -1641,9 +1641,9 @@
 	var uLocal_1639 = 0;
 	var uLocal_1640 = 0;
 	var uLocal_1641 = 0;
-	var uLocal_1642 = 1061158912;
+	var uLocal_1642 = 0;
 	var uLocal_1643 = 0;
-	var uLocal_1644 = 0;
+	var uLocal_1644 = 1061158912;
 	var uLocal_1645 = 0;
 	var uLocal_1646 = 0;
 	var uLocal_1647 = 0;
@@ -1655,9 +1655,9 @@
 	var uLocal_1653 = 0;
 	var uLocal_1654 = 0;
 	var uLocal_1655 = 0;
-	var uLocal_1656 = 1061158912;
+	var uLocal_1656 = 0;
 	var uLocal_1657 = 0;
-	var uLocal_1658 = 0;
+	var uLocal_1658 = 1061158912;
 	var uLocal_1659 = 0;
 	var uLocal_1660 = 0;
 	var uLocal_1661 = 0;
@@ -1669,9 +1669,9 @@
 	var uLocal_1667 = 0;
 	var uLocal_1668 = 0;
 	var uLocal_1669 = 0;
-	var uLocal_1670 = 1061158912;
+	var uLocal_1670 = 0;
 	var uLocal_1671 = 0;
-	var uLocal_1672 = 0;
+	var uLocal_1672 = 1061158912;
 	var uLocal_1673 = 0;
 	var uLocal_1674 = 0;
 	var uLocal_1675 = 0;
@@ -1683,9 +1683,9 @@
 	var uLocal_1681 = 0;
 	var uLocal_1682 = 0;
 	var uLocal_1683 = 0;
-	var uLocal_1684 = 1061158912;
+	var uLocal_1684 = 0;
 	var uLocal_1685 = 0;
-	var uLocal_1686 = 0;
+	var uLocal_1686 = 1061158912;
 	var uLocal_1687 = 0;
 	var uLocal_1688 = 0;
 	var uLocal_1689 = 0;
@@ -1697,9 +1697,9 @@
 	var uLocal_1695 = 0;
 	var uLocal_1696 = 0;
 	var uLocal_1697 = 0;
-	var uLocal_1698 = 1061158912;
+	var uLocal_1698 = 0;
 	var uLocal_1699 = 0;
-	var uLocal_1700 = 0;
+	var uLocal_1700 = 1061158912;
 	var uLocal_1701 = 0;
 	var uLocal_1702 = 0;
 	var uLocal_1703 = 0;
@@ -1711,9 +1711,9 @@
 	var uLocal_1709 = 0;
 	var uLocal_1710 = 0;
 	var uLocal_1711 = 0;
-	var uLocal_1712 = 1061158912;
+	var uLocal_1712 = 0;
 	var uLocal_1713 = 0;
-	var uLocal_1714 = 0;
+	var uLocal_1714 = 1061158912;
 	var uLocal_1715 = 0;
 	var uLocal_1716 = 0;
 	var uLocal_1717 = 0;
@@ -1725,9 +1725,9 @@
 	var uLocal_1723 = 0;
 	var uLocal_1724 = 0;
 	var uLocal_1725 = 0;
-	var uLocal_1726 = 1061158912;
+	var uLocal_1726 = 0;
 	var uLocal_1727 = 0;
-	var uLocal_1728 = 0;
+	var uLocal_1728 = 1061158912;
 	var uLocal_1729 = 0;
 	var uLocal_1730 = 0;
 	var uLocal_1731 = 0;
@@ -1739,9 +1739,9 @@
 	var uLocal_1737 = 0;
 	var uLocal_1738 = 0;
 	var uLocal_1739 = 0;
-	var uLocal_1740 = 1061158912;
+	var uLocal_1740 = 0;
 	var uLocal_1741 = 0;
-	var uLocal_1742 = 0;
+	var uLocal_1742 = 1061158912;
 	var uLocal_1743 = 0;
 	var uLocal_1744 = 0;
 	var uLocal_1745 = 0;
@@ -1753,9 +1753,9 @@
 	var uLocal_1751 = 0;
 	var uLocal_1752 = 0;
 	var uLocal_1753 = 0;
-	var uLocal_1754 = 1061158912;
+	var uLocal_1754 = 0;
 	var uLocal_1755 = 0;
-	var uLocal_1756 = 0;
+	var uLocal_1756 = 1061158912;
 	var uLocal_1757 = 0;
 	var uLocal_1758 = 0;
 	var uLocal_1759 = 0;
@@ -1767,9 +1767,9 @@
 	var uLocal_1765 = 0;
 	var uLocal_1766 = 0;
 	var uLocal_1767 = 0;
-	var uLocal_1768 = 1061158912;
+	var uLocal_1768 = 0;
 	var uLocal_1769 = 0;
-	var uLocal_1770 = 0;
+	var uLocal_1770 = 1061158912;
 	var uLocal_1771 = 0;
 	var uLocal_1772 = 0;
 	var uLocal_1773 = 0;
@@ -1781,9 +1781,9 @@
 	var uLocal_1779 = 0;
 	var uLocal_1780 = 0;
 	var uLocal_1781 = 0;
-	var uLocal_1782 = 1061158912;
+	var uLocal_1782 = 0;
 	var uLocal_1783 = 0;
-	var uLocal_1784 = 0;
+	var uLocal_1784 = 1061158912;
 	var uLocal_1785 = 0;
 	var uLocal_1786 = 0;
 	var uLocal_1787 = 0;
@@ -1795,9 +1795,9 @@
 	var uLocal_1793 = 0;
 	var uLocal_1794 = 0;
 	var uLocal_1795 = 0;
-	var uLocal_1796 = 1061158912;
+	var uLocal_1796 = 0;
 	var uLocal_1797 = 0;
-	var uLocal_1798 = 0;
+	var uLocal_1798 = 1061158912;
 	var uLocal_1799 = 0;
 	var uLocal_1800 = 0;
 	var uLocal_1801 = 0;
@@ -1809,9 +1809,9 @@
 	var uLocal_1807 = 0;
 	var uLocal_1808 = 0;
 	var uLocal_1809 = 0;
-	var uLocal_1810 = 1061158912;
+	var uLocal_1810 = 0;
 	var uLocal_1811 = 0;
-	var uLocal_1812 = 0;
+	var uLocal_1812 = 1061158912;
 	var uLocal_1813 = 0;
 	var uLocal_1814 = 0;
 	var uLocal_1815 = 0;
@@ -1823,9 +1823,9 @@
 	var uLocal_1821 = 0;
 	var uLocal_1822 = 0;
 	var uLocal_1823 = 0;
-	var uLocal_1824 = 1061158912;
+	var uLocal_1824 = 0;
 	var uLocal_1825 = 0;
-	var uLocal_1826 = 0;
+	var uLocal_1826 = 1061158912;
 	var uLocal_1827 = 0;
 	var uLocal_1828 = 0;
 	var uLocal_1829 = 0;
@@ -1837,9 +1837,9 @@
 	var uLocal_1835 = 0;
 	var uLocal_1836 = 0;
 	var uLocal_1837 = 0;
-	var uLocal_1838 = 1061158912;
+	var uLocal_1838 = 0;
 	var uLocal_1839 = 0;
-	var uLocal_1840 = 0;
+	var uLocal_1840 = 1061158912;
 	var uLocal_1841 = 0;
 	var uLocal_1842 = 0;
 	var uLocal_1843 = 0;
@@ -1851,9 +1851,9 @@
 	var uLocal_1849 = 0;
 	var uLocal_1850 = 0;
 	var uLocal_1851 = 0;
-	var uLocal_1852 = 1061158912;
+	var uLocal_1852 = 0;
 	var uLocal_1853 = 0;
-	var uLocal_1854 = 0;
+	var uLocal_1854 = 1061158912;
 	var uLocal_1855 = 0;
 	var uLocal_1856 = 0;
 	var uLocal_1857 = 0;
@@ -1865,9 +1865,9 @@
 	var uLocal_1863 = 0;
 	var uLocal_1864 = 0;
 	var uLocal_1865 = 0;
-	var uLocal_1866 = 1061158912;
+	var uLocal_1866 = 0;
 	var uLocal_1867 = 0;
-	var uLocal_1868 = 0;
+	var uLocal_1868 = 1061158912;
 	var uLocal_1869 = 0;
 	var uLocal_1870 = 0;
 	var uLocal_1871 = 0;
@@ -1879,9 +1879,9 @@
 	var uLocal_1877 = 0;
 	var uLocal_1878 = 0;
 	var uLocal_1879 = 0;
-	var uLocal_1880 = 1061158912;
+	var uLocal_1880 = 0;
 	var uLocal_1881 = 0;
-	var uLocal_1882 = 0;
+	var uLocal_1882 = 1061158912;
 	var uLocal_1883 = 0;
 	var uLocal_1884 = 0;
 	var uLocal_1885 = 0;
@@ -1893,9 +1893,9 @@
 	var uLocal_1891 = 0;
 	var uLocal_1892 = 0;
 	var uLocal_1893 = 0;
-	var uLocal_1894 = 1061158912;
+	var uLocal_1894 = 0;
 	var uLocal_1895 = 0;
-	var uLocal_1896 = 0;
+	var uLocal_1896 = 1061158912;
 	var uLocal_1897 = 0;
 	var uLocal_1898 = 0;
 	var uLocal_1899 = 0;
@@ -1907,9 +1907,9 @@
 	var uLocal_1905 = 0;
 	var uLocal_1906 = 0;
 	var uLocal_1907 = 0;
-	var uLocal_1908 = 1061158912;
+	var uLocal_1908 = 0;
 	var uLocal_1909 = 0;
-	var uLocal_1910 = 0;
+	var uLocal_1910 = 1061158912;
 	var uLocal_1911 = 0;
 	var uLocal_1912 = 0;
 	var uLocal_1913 = 0;
@@ -1921,9 +1921,9 @@
 	var uLocal_1919 = 0;
 	var uLocal_1920 = 0;
 	var uLocal_1921 = 0;
-	var uLocal_1922 = 1061158912;
+	var uLocal_1922 = 0;
 	var uLocal_1923 = 0;
-	var uLocal_1924 = 0;
+	var uLocal_1924 = 1061158912;
 	var uLocal_1925 = 0;
 	var uLocal_1926 = 0;
 	var uLocal_1927 = 0;
@@ -1935,9 +1935,9 @@
 	var uLocal_1933 = 0;
 	var uLocal_1934 = 0;
 	var uLocal_1935 = 0;
-	var uLocal_1936 = 1061158912;
+	var uLocal_1936 = 0;
 	var uLocal_1937 = 0;
-	var uLocal_1938 = 0;
+	var uLocal_1938 = 1061158912;
 	var uLocal_1939 = 0;
 	var uLocal_1940 = 0;
 	var uLocal_1941 = 0;
@@ -1949,9 +1949,9 @@
 	var uLocal_1947 = 0;
 	var uLocal_1948 = 0;
 	var uLocal_1949 = 0;
-	var uLocal_1950 = 1061158912;
+	var uLocal_1950 = 0;
 	var uLocal_1951 = 0;
-	var uLocal_1952 = 0;
+	var uLocal_1952 = 1061158912;
 	var uLocal_1953 = 0;
 	var uLocal_1954 = 0;
 	var uLocal_1955 = 0;
@@ -1963,9 +1963,9 @@
 	var uLocal_1961 = 0;
 	var uLocal_1962 = 0;
 	var uLocal_1963 = 0;
-	var uLocal_1964 = 1061158912;
+	var uLocal_1964 = 0;
 	var uLocal_1965 = 0;
-	var uLocal_1966 = 0;
+	var uLocal_1966 = 1061158912;
 	var uLocal_1967 = 0;
 	var uLocal_1968 = 0;
 	var uLocal_1969 = 0;
@@ -1977,9 +1977,9 @@
 	var uLocal_1975 = 0;
 	var uLocal_1976 = 0;
 	var uLocal_1977 = 0;
-	var uLocal_1978 = 1061158912;
+	var uLocal_1978 = 0;
 	var uLocal_1979 = 0;
-	var uLocal_1980 = 0;
+	var uLocal_1980 = 1061158912;
 	var uLocal_1981 = 0;
 	var uLocal_1982 = 0;
 	var uLocal_1983 = 0;
@@ -1991,9 +1991,9 @@
 	var uLocal_1989 = 0;
 	var uLocal_1990 = 0;
 	var uLocal_1991 = 0;
-	var uLocal_1992 = 1061158912;
+	var uLocal_1992 = 0;
 	var uLocal_1993 = 0;
-	var uLocal_1994 = 0;
+	var uLocal_1994 = 1061158912;
 	var uLocal_1995 = 0;
 	var uLocal_1996 = 0;
 	var uLocal_1997 = 0;
@@ -2005,9 +2005,9 @@
 	var uLocal_2003 = 0;
 	var uLocal_2004 = 0;
 	var uLocal_2005 = 0;
-	var uLocal_2006 = 1061158912;
+	var uLocal_2006 = 0;
 	var uLocal_2007 = 0;
-	var uLocal_2008 = 0;
+	var uLocal_2008 = 1061158912;
 	var uLocal_2009 = 0;
 	var uLocal_2010 = 0;
 	var uLocal_2011 = 0;
@@ -2019,9 +2019,9 @@
 	var uLocal_2017 = 0;
 	var uLocal_2018 = 0;
 	var uLocal_2019 = 0;
-	var uLocal_2020 = 1061158912;
+	var uLocal_2020 = 0;
 	var uLocal_2021 = 0;
-	var uLocal_2022 = 0;
+	var uLocal_2022 = 1061158912;
 	var uLocal_2023 = 0;
 	var uLocal_2024 = 0;
 	var uLocal_2025 = 0;
@@ -2033,9 +2033,9 @@
 	var uLocal_2031 = 0;
 	var uLocal_2032 = 0;
 	var uLocal_2033 = 0;
-	var uLocal_2034 = 1061158912;
+	var uLocal_2034 = 0;
 	var uLocal_2035 = 0;
-	var uLocal_2036 = 0;
+	var uLocal_2036 = 1061158912;
 	var uLocal_2037 = 0;
 	var uLocal_2038 = 0;
 	var uLocal_2039 = 0;
@@ -2047,9 +2047,9 @@
 	var uLocal_2045 = 0;
 	var uLocal_2046 = 0;
 	var uLocal_2047 = 0;
-	var uLocal_2048 = 1061158912;
+	var uLocal_2048 = 0;
 	var uLocal_2049 = 0;
-	var uLocal_2050 = 0;
+	var uLocal_2050 = 1061158912;
 	var uLocal_2051 = 0;
 	var uLocal_2052 = 0;
 	var uLocal_2053 = 0;
@@ -2061,9 +2061,9 @@
 	var uLocal_2059 = 0;
 	var uLocal_2060 = 0;
 	var uLocal_2061 = 0;
-	var uLocal_2062 = 1061158912;
+	var uLocal_2062 = 0;
 	var uLocal_2063 = 0;
-	var uLocal_2064 = 0;
+	var uLocal_2064 = 1061158912;
 	var uLocal_2065 = 0;
 	var uLocal_2066 = 0;
 	var uLocal_2067 = 0;
@@ -2075,9 +2075,9 @@
 	var uLocal_2073 = 0;
 	var uLocal_2074 = 0;
 	var uLocal_2075 = 0;
-	var uLocal_2076 = 1061158912;
+	var uLocal_2076 = 0;
 	var uLocal_2077 = 0;
-	var uLocal_2078 = 0;
+	var uLocal_2078 = 1061158912;
 	var uLocal_2079 = 0;
 	var uLocal_2080 = 0;
 	var uLocal_2081 = 0;
@@ -2089,9 +2089,9 @@
 	var uLocal_2087 = 0;
 	var uLocal_2088 = 0;
 	var uLocal_2089 = 0;
-	var uLocal_2090 = 1061158912;
+	var uLocal_2090 = 0;
 	var uLocal_2091 = 0;
-	var uLocal_2092 = 0;
+	var uLocal_2092 = 1061158912;
 	var uLocal_2093 = 0;
 	var uLocal_2094 = 0;
 	var uLocal_2095 = 0;
@@ -2103,9 +2103,9 @@
 	var uLocal_2101 = 0;
 	var uLocal_2102 = 0;
 	var uLocal_2103 = 0;
-	var uLocal_2104 = 1061158912;
+	var uLocal_2104 = 0;
 	var uLocal_2105 = 0;
-	var uLocal_2106 = 0;
+	var uLocal_2106 = 1061158912;
 	var uLocal_2107 = 0;
 	var uLocal_2108 = 0;
 	var uLocal_2109 = 0;
@@ -2117,9 +2117,9 @@
 	var uLocal_2115 = 0;
 	var uLocal_2116 = 0;
 	var uLocal_2117 = 0;
-	var uLocal_2118 = 1061158912;
+	var uLocal_2118 = 0;
 	var uLocal_2119 = 0;
-	var uLocal_2120 = 0;
+	var uLocal_2120 = 1061158912;
 	var uLocal_2121 = 0;
 	var uLocal_2122 = 0;
 	var uLocal_2123 = 0;
@@ -2131,9 +2131,9 @@
 	var uLocal_2129 = 0;
 	var uLocal_2130 = 0;
 	var uLocal_2131 = 0;
-	var uLocal_2132 = 1061158912;
+	var uLocal_2132 = 0;
 	var uLocal_2133 = 0;
-	var uLocal_2134 = 0;
+	var uLocal_2134 = 1061158912;
 	var uLocal_2135 = 0;
 	var uLocal_2136 = 0;
 	var uLocal_2137 = 0;
@@ -2145,9 +2145,9 @@
 	var uLocal_2143 = 0;
 	var uLocal_2144 = 0;
 	var uLocal_2145 = 0;
-	var uLocal_2146 = 1061158912;
+	var uLocal_2146 = 0;
 	var uLocal_2147 = 0;
-	var uLocal_2148 = 0;
+	var uLocal_2148 = 1061158912;
 	var uLocal_2149 = 0;
 	var uLocal_2150 = 0;
 	var uLocal_2151 = 0;
@@ -2159,9 +2159,9 @@
 	var uLocal_2157 = 0;
 	var uLocal_2158 = 0;
 	var uLocal_2159 = 0;
-	var uLocal_2160 = 1061158912;
+	var uLocal_2160 = 0;
 	var uLocal_2161 = 0;
-	var uLocal_2162 = 0;
+	var uLocal_2162 = 1061158912;
 	var uLocal_2163 = 0;
 	var uLocal_2164 = 0;
 	var uLocal_2165 = 0;
@@ -2173,9 +2173,9 @@
 	var uLocal_2171 = 0;
 	var uLocal_2172 = 0;
 	var uLocal_2173 = 0;
-	var uLocal_2174 = 1061158912;
+	var uLocal_2174 = 0;
 	var uLocal_2175 = 0;
-	var uLocal_2176 = 0;
+	var uLocal_2176 = 1061158912;
 	var uLocal_2177 = 0;
 	var uLocal_2178 = 0;
 	var uLocal_2179 = 0;
@@ -2187,14 +2187,16 @@
 	var uLocal_2185 = 0;
 	var uLocal_2186 = 0;
 	var uLocal_2187 = 0;
-	var uLocal_2188 = 1061158912;
+	var uLocal_2188 = 0;
 	var uLocal_2189 = 0;
-	var uLocal_2190 = 0;
+	var uLocal_2190 = 1061158912;
 	var uLocal_2191 = 0;
 	var uLocal_2192 = 0;
 	var uLocal_2193 = 0;
 	var uLocal_2194 = 0;
 	var uLocal_2195 = 0;
+	var uLocal_2196 = 0;
+	var uLocal_2197 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -2239,8 +2241,8 @@ void __EntryFunction__()//Position - 0x0
 		{
 			func_76();
 		}
-		func_8(&uLocal_93);
-		func_1(&uLocal_93);
+		func_8(&uLocal_95);
+		func_1(&uLocal_95);
 	}
 }
 
@@ -2272,8 +2274,8 @@ void func_2(var uParam0, int iParam1)//Position - 0x135
 
 void func_3(int iParam0)//Position - 0x143
 {
-	Global_2725432 = iParam0;
-	Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_827 = iParam0;
+	Global_2694553 = iParam0;
+	Global_1853910[PLAYER::PLAYER_ID() /*862*/].f_855 = iParam0;
 }
 
 void func_4(var uParam0, int iParam1)//Position - 0x161
@@ -2311,9 +2313,9 @@ void func_6(var uParam0)//Position - 0x1CE
 	}
 	if (iVar0 > -1 && iVar0 < 6)
 	{
-		if (Global_43792[iVar0 /*32*/])
+		if (Global_44000[iVar0 /*32*/])
 		{
-			Global_43792[iVar0 /*32*/].f_7 = 1;
+			Global_44000[iVar0 /*32*/].f_7 = 1;
 			*uParam0 = -1;
 			return;
 		}
@@ -2333,7 +2335,7 @@ int func_7(int iParam0)//Position - 0x225
 	iVar0 = 0;
 	while (iVar0 < 6)
 	{
-		if (Global_43792[iVar0 /*32*/].f_1 == iParam0)
+		if (Global_44000[iVar0 /*32*/].f_1 == iParam0)
 		{
 			return iVar0;
 		}
@@ -2367,7 +2369,7 @@ void func_8(var uParam0)//Position - 0x260
 			break;
 		
 		case 1:
-			Global_1946234 = 0;
+			Global_1950092 = 0;
 			if (func_59(uParam0))
 			{
 				uParam0->f_11 = MISC::GET_GAME_TIMER();
@@ -2378,7 +2380,7 @@ void func_8(var uParam0)//Position - 0x260
 		case 2:
 			if (func_58(PLAYER::PLAYER_PED_ID(), &(uParam0->f_16[uParam0->f_9 /*14*/])) && func_57(PLAYER::PLAYER_PED_ID(), uParam0->f_16[uParam0->f_9 /*14*/].f_3, uParam0->f_16[uParam0->f_9 /*14*/].f_13))
 			{
-				if (((((((((((func_56(uParam0) || func_52(uParam0)) || func_51(uParam0)) || !func_50(uParam0)) || func_48(PLAYER::PLAYER_ID())) || PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true)) || PED::IS_PED_IN_COMBAT(PLAYER::PLAYER_PED_ID(), 0)) || PED::IS_PED_IN_MELEE_COMBAT(PLAYER::PLAYER_PED_ID())) || PED::IS_PED_PERFORMING_MELEE_ACTION(PLAYER::PLAYER_PED_ID())) || PED::IS_PED_RAGDOLL(PLAYER::PLAYER_PED_ID())) || PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID())) || BitTest(Global_1946250.f_4, 2))
+				if (((((((((((func_56(uParam0) || func_52(uParam0)) || func_51(uParam0)) || !func_50(uParam0)) || func_48(PLAYER::PLAYER_ID())) || PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true)) || PED::IS_PED_IN_COMBAT(PLAYER::PLAYER_PED_ID(), 0)) || PED::IS_PED_IN_MELEE_COMBAT(PLAYER::PLAYER_PED_ID())) || PED::IS_PED_PERFORMING_MELEE_ACTION(PLAYER::PLAYER_PED_ID())) || PED::IS_PED_RAGDOLL(PLAYER::PLAYER_PED_ID())) || PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID())) || BitTest(Global_1950108.f_4, 2))
 				{
 					if (func_52(uParam0))
 					{
@@ -2396,7 +2398,7 @@ void func_8(var uParam0)//Position - 0x260
 				}
 				else
 				{
-					Global_1946234 = 1;
+					Global_1950092 = 1;
 					if (uParam0->f_6 == -1)
 					{
 						if ((MISC::GET_GAME_TIMER() - uParam0->f_11) > 150)
@@ -2713,7 +2715,7 @@ void func_15(var uParam0)//Position - 0xA43
 		fVar1 = SYSTEM::VMAG(Var0);
 		if ((uParam0->f_13 == 6 && !ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY("BLOCK_INTERRUPT"))) && !func_23(&(uParam0->f_7), 12))
 		{
-			if ((fVar1 >= 0.35f && !Global_2789734) && !Global_2789737)
+			if ((fVar1 >= 0.35f && !Global_2766478) && !Global_2766481)
 			{
 				func_20(uParam0);
 			}
@@ -2726,7 +2728,7 @@ void func_15(var uParam0)//Position - 0xA43
 		{
 			func_4(uParam0, 1);
 		}
-		else if (Global_2789734 || Global_2789737)
+		else if (Global_2766478 || Global_2766481)
 		{
 			func_4(uParam0, 1);
 		}
@@ -2805,7 +2807,7 @@ int func_16(bool bParam0)//Position - 0xC5A
 			}
 		}
 	}
-	if (Global_23011.f_130)
+	if (Global_23131.f_130)
 	{
 		return 0;
 	}
@@ -2850,7 +2852,7 @@ int func_17(int iParam0)//Position - 0xD45
 
 int func_18()//Position - 0xDA2
 {
-	if (Global_2703735.f_833.f_5 == -1)
+	if (Global_2672505.f_946.f_5 == -1)
 	{
 		return 0;
 	}
@@ -2894,7 +2896,7 @@ void func_21(var uParam0)//Position - 0xE81
 
 var func_22()//Position - 0xEEB
 {
-	return BitTest(Global_1946250.f_3, 25);
+	return BitTest(Global_1950108.f_3, 25);
 }
 
 bool func_23(var uParam0, int iParam1)//Position - 0xEFC
@@ -2974,7 +2976,7 @@ void func_26(var uParam0)//Position - 0xFA0
 
 void func_27()//Position - 0x103E
 {
-	Global_23011.f_6 = 1;
+	Global_23131.f_6 = 1;
 }
 
 void func_28(bool bParam0)//Position - 0x104C
@@ -2983,23 +2985,23 @@ void func_28(bool bParam0)//Position - 0x104C
 	{
 		if (func_29())
 		{
-			Global_2714762.f_41 = 1;
+			Global_2683862.f_41 = 1;
 		}
 	}
 	else
 	{
-		Global_2714762.f_41 = 0;
+		Global_2683862.f_41 = 0;
 	}
 }
 
 bool func_29()//Position - 0x1071
 {
-	return BitTest(Global_2714762.f_2, 11);
+	return BitTest(Global_2683862.f_2, 11);
 }
 
 void func_30()//Position - 0x1082
 {
-	MISC::SET_BIT(&Global_8137, 4);
+	MISC::SET_BIT(&Global_8254, 4);
 }
 
 void func_31(int iParam0)//Position - 0x1092
@@ -3008,13 +3010,13 @@ void func_31(int iParam0)//Position - 0x1092
 	{
 		return;
 	}
-	if (!Global_20266.f_1 == 1)
+	if (!Global_20383.f_1 == 1)
 	{
 		if (func_36(0))
 		{
 			func_32(iParam0);
 		}
-		MISC::SET_BIT(&Global_8137, 2);
+		MISC::SET_BIT(&Global_8254, 2);
 	}
 }
 
@@ -3024,7 +3026,7 @@ void func_32(int iParam0)//Position - 0x10C5
 	{
 		return;
 	}
-	if (Global_20464)
+	if (Global_20584)
 	{
 		if (func_35())
 		{
@@ -3035,32 +3037,32 @@ void func_32(int iParam0)//Position - 0x10C5
 			func_34(0, 0);
 		}
 	}
-	if (Global_20266.f_1 == 10 || Global_20266.f_1 == 9)
+	if (Global_20383.f_1 == 10 || Global_20383.f_1 == 9)
 	{
-		MISC::SET_BIT(&Global_8137, 16);
+		MISC::SET_BIT(&Global_8254, 16);
 	}
 	if (AUDIO::IS_MOBILE_PHONE_CALL_ONGOING())
 	{
 		AUDIO::STOP_SCRIPTED_CONVERSATION(false);
 	}
-	Global_21605 = 5;
+	Global_21725 = 5;
 	if (iParam0 == 1)
 	{
-		MISC::SET_BIT(&Global_8136, 30);
+		MISC::SET_BIT(&Global_8253, 30);
 	}
 	else
 	{
-		MISC::CLEAR_BIT(&Global_8136, 30);
+		MISC::CLEAR_BIT(&Global_8253, 30);
 	}
 	if (!func_33())
 	{
-		Global_20266.f_1 = 3;
+		Global_20383.f_1 = 3;
 	}
 }
 
 int func_33()//Position - 0x114F
 {
-	if (Global_20266.f_1 == 1 || Global_20266.f_1 == 0)
+	if (Global_20383.f_1 == 1 || Global_20383.f_1 == 0)
 	{
 		return 1;
 	}
@@ -3073,42 +3075,42 @@ void func_34(bool bParam0, bool bParam1)//Position - 0x1176
 	{
 		if (func_36(0))
 		{
-			Global_20464 = 1;
+			Global_20584 = 1;
 			if (bParam1)
 			{
-				MOBILE::GET_MOBILE_PHONE_POSITION(&Global_20203);
+				MOBILE::GET_MOBILE_PHONE_POSITION(&Global_20320);
 			}
-			Global_20194 = { Global_20212[Global_20211 /*3*/] };
-			MOBILE::SET_MOBILE_PHONE_POSITION(Global_20194);
+			Global_20311 = { Global_20329[Global_20328 /*3*/] };
+			MOBILE::SET_MOBILE_PHONE_POSITION(Global_20311);
 		}
 	}
-	else if (Global_20464 == 1)
+	else if (Global_20584 == 1)
 	{
-		Global_20464 = 0;
-		Global_20194 = { Global_20219[Global_20211 /*3*/] };
+		Global_20584 = 0;
+		Global_20311 = { Global_20336[Global_20328 /*3*/] };
 		if (bParam1)
 		{
-			MOBILE::SET_MOBILE_PHONE_POSITION(Global_20203);
+			MOBILE::SET_MOBILE_PHONE_POSITION(Global_20320);
 		}
 		else
 		{
-			MOBILE::SET_MOBILE_PHONE_POSITION(Global_20194);
+			MOBILE::SET_MOBILE_PHONE_POSITION(Global_20311);
 		}
 	}
 }
 
 bool func_35()//Position - 0x11EA
 {
-	return BitTest(Global_1958711, 5);
+	return BitTest(Global_1962996, 5);
 }
 
 int func_36(int iParam0)//Position - 0x11F8
 {
 	if (iParam0 == 1)
 	{
-		if (Global_20266.f_1 > 3)
+		if (Global_20383.f_1 > 3)
 		{
-			if (BitTest(Global_8136, 14))
+			if (BitTest(Global_8253, 14))
 			{
 				return 1;
 			}
@@ -3126,7 +3128,7 @@ int func_36(int iParam0)//Position - 0x11F8
 	{
 		return 1;
 	}
-	if (Global_20266.f_1 > 3)
+	if (Global_20383.f_1 > 3)
 	{
 		return 1;
 	}
@@ -3135,7 +3137,7 @@ int func_36(int iParam0)//Position - 0x11F8
 
 bool func_37()//Position - 0x124F
 {
-	return BitTest(Global_1958711, 19);
+	return BitTest(Global_1962996, 19);
 }
 
 Vector3 func_38(var uParam0)//Position - 0x125E
@@ -3532,14 +3534,14 @@ void func_42(int iParam0)//Position - 0x1866
 {
 	int iVar0;
 	
-	if (Global_262145.f_9035 /* Tunable: DISABLE_DAILY_OBJECTIVES */)
+	if (Global_262145.f_9036 /* Tunable: DISABLE_DAILY_OBJECTIVES */)
 	{
 		return;
 	}
 	iVar0 = 0;
 	while (iVar0 < 3)
 	{
-		if (Global_2359296[func_43() /*5567*/].f_681.f_4241[iVar0 /*3*/] == iParam0)
+		if (Global_2359296[func_43() /*5568*/].f_681.f_4242[iVar0 /*3*/] == iParam0)
 		{
 			if (Global_1574742.f_1[iVar0] == -1)
 			{
@@ -3653,32 +3655,32 @@ void func_47(var uParam0, int iParam1, char* sParam2, int iParam3, char* sParam4
 	iVar0 = 0;
 	while (iVar0 < 6)
 	{
-		if (!Global_43792[iVar0 /*32*/])
+		if (!Global_44000[iVar0 /*32*/])
 		{
-			Global_43792[iVar0 /*32*/] = 1;
-			Global_43792[iVar0 /*32*/].f_1 = Global_43993;
-			Global_43993++;
-			Global_43792[iVar0 /*32*/].f_4 = 0;
-			Global_43792[iVar0 /*32*/].f_29 = 0;
-			Global_43792[iVar0 /*32*/].f_5 = 0;
-			Global_43792[iVar0 /*32*/].f_2 = iParam1;
-			StringCopy(&(Global_43792[iVar0 /*32*/].f_8), sParam2, 16);
-			Global_43792[iVar0 /*32*/].f_6 = iParam3;
-			Global_43792[iVar0 /*32*/].f_31 = SCRIPT::GET_ID_OF_THIS_THREAD();
-			Global_43792[iVar0 /*32*/].f_7 = 0;
-			Global_43792[iVar0 /*32*/].f_3 = iParam5;
+			Global_44000[iVar0 /*32*/] = 1;
+			Global_44000[iVar0 /*32*/].f_1 = Global_44201;
+			Global_44201++;
+			Global_44000[iVar0 /*32*/].f_4 = 0;
+			Global_44000[iVar0 /*32*/].f_29 = 0;
+			Global_44000[iVar0 /*32*/].f_5 = 0;
+			Global_44000[iVar0 /*32*/].f_2 = iParam1;
+			StringCopy(&(Global_44000[iVar0 /*32*/].f_8), sParam2, 16);
+			Global_44000[iVar0 /*32*/].f_6 = iParam3;
+			Global_44000[iVar0 /*32*/].f_31 = SCRIPT::GET_ID_OF_THIS_THREAD();
+			Global_44000[iVar0 /*32*/].f_7 = 0;
+			Global_44000[iVar0 /*32*/].f_3 = iParam5;
 			if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam4))
 			{
-				Global_43792[iVar0 /*32*/].f_12 = 1;
-				StringCopy(&(Global_43792[iVar0 /*32*/].f_13), sParam4, 64);
-				Global_43792[iVar0 /*32*/].f_30 = iParam6;
+				Global_44000[iVar0 /*32*/].f_12 = 1;
+				StringCopy(&(Global_44000[iVar0 /*32*/].f_13), sParam4, 64);
+				Global_44000[iVar0 /*32*/].f_30 = iParam6;
 			}
 			else
 			{
-				Global_43792[iVar0 /*32*/].f_12 = 0;
-				Global_43792[iVar0 /*32*/].f_30 = 0;
+				Global_44000[iVar0 /*32*/].f_12 = 0;
+				Global_44000[iVar0 /*32*/].f_30 = 0;
 			}
-			*uParam0 = Global_43792[iVar0 /*32*/].f_1;
+			*uParam0 = Global_44000[iVar0 /*32*/].f_1;
 			return;
 		}
 		iVar0++;
@@ -3692,7 +3694,7 @@ bool func_48(int iParam0)//Position - 0x1B13
 
 int func_49(int iParam0)//Position - 0x1B27
 {
-	return Global_1892703[iParam0 /*599*/].f_579;
+	return Global_1894573[iParam0 /*608*/].f_585;
 }
 
 bool func_50(var uParam0)//Position - 0x1B3B
@@ -3750,7 +3752,7 @@ int func_53(int iParam0)//Position - 0x1C56
 {
 	if (iParam0 != func_54())
 	{
-		return Global_1853348[iParam0 /*834*/].f_827;
+		return Global_1853910[iParam0 /*862*/].f_855;
 	}
 	return -1;
 }
@@ -3778,11 +3780,11 @@ int func_55(int iParam0, bool bParam1, bool bParam2)//Position - 0x1C80
 			}
 			if (bParam2)
 			{
-				if (iVar0 == Global_2703735.f_3)
+				if (iVar0 == Global_2672505.f_3)
 				{
-					return Global_2703735.f_2;
+					return Global_2672505.f_2;
 				}
-				else if (Global_2689235[iVar0 /*453*/] != 4)
+				else if (Global_2657589[iVar0 /*466*/] != 4)
 				{
 					return 0;
 				}
@@ -3895,7 +3897,7 @@ void func_64(int* iParam0, int iParam1, bool bParam2)//Position - 0x1EAA
 
 bool func_65()//Position - 0x1ECE
 {
-	return Global_75485;
+	return Global_75693;
 }
 
 int func_66()//Position - 0x1EDA
@@ -3917,7 +3919,7 @@ int func_66()//Position - 0x1EDA
 
 int func_67()//Position - 0x1F09
 {
-	if (Global_1575033 == 0)
+	if (Global_1575035 == 0)
 	{
 		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
@@ -3928,7 +3930,7 @@ int func_67()//Position - 0x1F09
 	{
 		return 1;
 	}
-	if (Global_2727795)
+	if (Global_2696915)
 	{
 		return 1;
 	}
@@ -3978,7 +3980,7 @@ int func_68()//Position - 0x1F8D
 
 int func_69()//Position - 0x1FC0
 {
-	switch (Global_2727899)
+	switch (Global_2697019)
 	{
 		case 0:
 			return joaat("freemode");
@@ -3990,12 +3992,12 @@ int func_69()//Position - 0x1FC0
 
 int func_70()//Position - 0x1FE4
 {
-	return Global_31959;
+	return Global_32163;
 }
 
 bool func_71()//Position - 0x1FEF
 {
-	return Global_2714762.f_698;
+	return Global_2683862.f_698;
 }
 
 int func_72(int iParam0)//Position - 0x1FFE
@@ -4009,23 +4011,23 @@ int func_72(int iParam0)//Position - 0x1FFE
 
 bool func_73()//Position - 0x2015
 {
-	return Global_2725403;
+	return Global_2694524;
 }
 
 bool func_74()//Position - 0x2021
 {
-	return Global_2714762.f_693;
+	return Global_2683862.f_693;
 }
 
 bool func_75(int iParam0)//Position - 0x2030
 {
-	return func_23(&(Global_2689235[iParam0 /*453*/].f_434), 0);
+	return func_23(&(Global_2657589[iParam0 /*466*/].f_445), 0);
 }
 
 void func_76()//Position - 0x2049
 {
-	Global_1946234 = 0;
-	func_78(&uLocal_93);
+	Global_1950092 = 0;
+	func_78(&uLocal_95);
 	func_77();
 }
 
@@ -4068,27 +4070,27 @@ void func_79()//Position - 0x20AB
 
 void func_80()//Position - 0x20D9
 {
-	func_81(0, &uLocal_93, 0, 1);
-	func_81(1, &uLocal_93, 1, 1);
-	func_81(2, &uLocal_93, 2, 1);
-	func_81(3, &uLocal_93, 3, 1);
-	func_81(4, &uLocal_93, 4, 1);
-	func_81(5, &uLocal_93, 5, 1);
-	func_81(6, &uLocal_93, 6, 1);
-	func_81(7, &uLocal_93, 7, 1);
-	func_81(8, &uLocal_93, 8, 1);
-	func_81(9, &uLocal_93, 9, 1);
-	func_81(10, &uLocal_93, 10, 1);
-	func_81(11, &uLocal_93, 11, 1);
-	func_81(12, &uLocal_93, 12, 1);
-	func_81(13, &uLocal_93, 13, 1);
-	func_81(14, &uLocal_93, 14, 1);
-	func_81(15, &uLocal_93, 15, 1);
-	func_81(16, &uLocal_93, 16, 1);
-	func_81(17, &uLocal_93, 17, 1);
-	func_81(18, &uLocal_93, 18, 1);
-	func_81(19, &uLocal_93, 19, 1);
-	func_81(20, &uLocal_93, 20, 1);
+	func_81(0, &uLocal_95, 0, 1);
+	func_81(1, &uLocal_95, 1, 1);
+	func_81(2, &uLocal_95, 2, 1);
+	func_81(3, &uLocal_95, 3, 1);
+	func_81(4, &uLocal_95, 4, 1);
+	func_81(5, &uLocal_95, 5, 1);
+	func_81(6, &uLocal_95, 6, 1);
+	func_81(7, &uLocal_95, 7, 1);
+	func_81(8, &uLocal_95, 8, 1);
+	func_81(9, &uLocal_95, 9, 1);
+	func_81(10, &uLocal_95, 10, 1);
+	func_81(11, &uLocal_95, 11, 1);
+	func_81(12, &uLocal_95, 12, 1);
+	func_81(13, &uLocal_95, 13, 1);
+	func_81(14, &uLocal_95, 14, 1);
+	func_81(15, &uLocal_95, 15, 1);
+	func_81(16, &uLocal_95, 16, 1);
+	func_81(17, &uLocal_95, 17, 1);
+	func_81(18, &uLocal_95, 18, 1);
+	func_81(19, &uLocal_95, 19, 1);
+	func_81(20, &uLocal_95, 20, 1);
 }
 
 void func_81(int iParam0, var uParam1, int iParam2, int iParam3)//Position - 0x21B8
@@ -4342,6 +4344,6 @@ bool func_86(bool bParam0)//Position - 0x26B0
 	if (bParam0)
 	{
 	}
-	return Global_1575033;
+	return Global_1575035;
 }
 

@@ -450,10 +450,10 @@ void func_9(int* iParam0)//Position - 0x82A
 
 void func_10(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0x89C
 {
-	func_11((iParam0[iParam1 /*122*/])->f_2[iParam2 /*20*/], &((iParam0[iParam1 /*122*/])->f_2[iParam2 /*20*/].f_1), -1, 0, !bParam3, 0, 300f, 0, -1, -1, 1, 0);
+	func_11((iParam0[iParam1 /*122*/])->f_2[iParam2 /*20*/], &((iParam0[iParam1 /*122*/])->f_2[iParam2 /*20*/].f_1), -1, 0, !bParam3, 0, 300f, 0, -1, -1, 1, 0, 0);
 }
 
-int func_11(int iParam0, var uParam1, int iParam2, int iParam3, bool bParam4, bool bParam5, float fParam6, char* sParam7, int iParam8, int iParam9, bool bParam10, int iParam11)//Position - 0x8D3
+int func_11(int iParam0, var uParam1, int iParam2, int iParam3, bool bParam4, bool bParam5, float fParam6, char* sParam7, int iParam8, int iParam9, bool bParam10, int iParam11, int iParam12)//Position - 0x8D4
 {
 	bool bVar0;
 	
@@ -500,7 +500,7 @@ int func_11(int iParam0, var uParam1, int iParam2, int iParam3, bool bParam4, bo
 		HUD::SET_PED_AI_BLIP_FORCED_ON(iParam0, bParam4);
 		HUD::SET_PED_AI_BLIP_HAS_CONE(iParam0, bParam5);
 		*uParam1 = HUD::GET_AI_PED_PED_BLIP_INDEX(iParam0);
-		if (!iParam9 == -1)
+		if (!iParam9 == -1 || iParam12)
 		{
 			if (HUD::DOES_BLIP_EXIST(*uParam1))
 			{
@@ -578,7 +578,7 @@ int func_11(int iParam0, var uParam1, int iParam2, int iParam3, bool bParam4, bo
 	return 0;
 }
 
-void func_12(int iParam0, int iParam1)//Position - 0xABB
+void func_12(int iParam0, int iParam1)//Position - 0xAC4
 {
 	int iVar0;
 	
@@ -590,7 +590,7 @@ void func_12(int iParam0, int iParam1)//Position - 0xABB
 	}
 }
 
-int func_13(int iParam0, int iParam1)//Position - 0xAEB
+int func_13(int iParam0, int iParam1)//Position - 0xAF4
 {
 	int iVar0;
 	
@@ -613,7 +613,7 @@ int func_13(int iParam0, int iParam1)//Position - 0xAEB
 	return 0;
 }
 
-void func_14(int iParam0, struct<61> Param1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11, var uParam12, var uParam13, var uParam14, var uParam15, var uParam16, var uParam17, var uParam18, var uParam19, var uParam20, var uParam21, var uParam22, var uParam23, var uParam24, var uParam25, var uParam26, var uParam27, var uParam28, var uParam29, var uParam30, var uParam31, int iParam32)//Position - 0xBA7
+void func_14(int iParam0, struct<61> Param1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11, var uParam12, var uParam13, var uParam14, var uParam15, var uParam16, var uParam17, var uParam18, var uParam19, var uParam20, var uParam21, var uParam22, var uParam23, var uParam24, var uParam25, var uParam26, var uParam27, var uParam28, var uParam29, var uParam30, var uParam31, int iParam32)//Position - 0xBB0
 {
 	int iVar0;
 	
@@ -633,7 +633,7 @@ void func_14(int iParam0, struct<61> Param1, var uParam2, var uParam3, var uPara
 	}
 }
 
-int func_15(int iParam0, int iParam1, int iParam2)//Position - 0xBF8
+int func_15(int iParam0, int iParam1, int iParam2)//Position - 0xC01
 {
 	int iVar0;
 	int iVar1;
@@ -664,7 +664,7 @@ int func_15(int iParam0, int iParam1, int iParam2)//Position - 0xBF8
 	return iVar0;
 }
 
-int func_16(int iParam0, int iParam1)//Position - 0xD11
+int func_16(int iParam0, int iParam1)//Position - 0xD1A
 {
 	int iVar0;
 	
@@ -686,7 +686,7 @@ int func_16(int iParam0, int iParam1)//Position - 0xD11
 	return 0;
 }
 
-int func_17(int iParam0, int iParam1, int iParam2)//Position - 0xDAA
+int func_17(int iParam0, int iParam1, int iParam2)//Position - 0xDB3
 {
 	int iVar0;
 	
@@ -695,7 +695,7 @@ int func_17(int iParam0, int iParam1, int iParam2)//Position - 0xDAA
 	return iVar0;
 }
 
-int func_18(var uParam0, var uParam1)//Position - 0xDF0
+int func_18(var uParam0, var uParam1)//Position - 0xDF9
 {
 	int iVar0;
 	struct<3> Var1;
@@ -711,7 +711,7 @@ int func_18(var uParam0, var uParam1)//Position - 0xDF0
 	return 0;
 }
 
-int func_19(struct<3> Param0, float fParam1, float fParam2, float fParam3, float fParam4, int iParam5, float fParam6, int iParam7, float fParam8)//Position - 0xE52
+int func_19(struct<3> Param0, float fParam1, float fParam2, float fParam3, float fParam4, int iParam5, float fParam6, int iParam7, float fParam8)//Position - 0xE5B
 {
 	if (func_20(Param0))
 	{
@@ -768,7 +768,7 @@ int func_19(struct<3> Param0, float fParam1, float fParam2, float fParam3, float
 	return 1;
 }
 
-int func_20(struct<3> Param0)//Position - 0xF42
+int func_20(struct<3> Param0)//Position - 0xF4B
 {
 	if ((Param0.f_0 == 0f && Param0.f_1 == 0f) && Param0.f_2 == 0f)
 	{
@@ -777,7 +777,7 @@ int func_20(struct<3> Param0)//Position - 0xF42
 	return 0;
 }
 
-void func_21(int iParam0)//Position - 0xF6C
+void func_21(int iParam0)//Position - 0xF75
 {
 	int iVar0;
 	int iVar1;
@@ -830,7 +830,7 @@ void func_21(int iParam0)//Position - 0xF6C
 	}
 }
 
-void func_22()//Position - 0x1094
+void func_22()//Position - 0x109D
 {
 	if (Local_36.f_89 == 0)
 	{
@@ -860,7 +860,7 @@ void func_22()//Position - 0x1094
 	}
 }
 
-void func_23()//Position - 0x10F4
+void func_23()//Position - 0x10FD
 {
 	int iVar0;
 	int iVar1;
@@ -884,14 +884,14 @@ void func_23()//Position - 0x10F4
 	}
 }
 
-void func_24(char* sParam0, int iParam1, int iParam2)//Position - 0x1143
+void func_24(char* sParam0, int iParam1, int iParam2)//Position - 0x114C
 {
 	iParam2 = iParam2;
 	HUD::BEGIN_TEXT_COMMAND_PRINT(sParam0);
 	HUD::END_TEXT_COMMAND_PRINT(iParam1, false);
 }
 
-int func_25(var uParam0)//Position - 0x115C
+int func_25(var uParam0)//Position - 0x1165
 {
 	int iVar0;
 	
@@ -925,7 +925,7 @@ int func_25(var uParam0)//Position - 0x115C
 	return 0;
 }
 
-int func_26(var uParam0)//Position - 0x1248
+int func_26(var uParam0)//Position - 0x1251
 {
 	int iVar0;
 	
@@ -957,7 +957,7 @@ int func_26(var uParam0)//Position - 0x1248
 	return 0;
 }
 
-void func_27()//Position - 0x12FC
+void func_27()//Position - 0x1305
 {
 	switch (Local_36.f_51)
 	{
@@ -992,7 +992,7 @@ void func_27()//Position - 0x12FC
 	}
 }
 
-int func_28(struct<61> Param0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11, var uParam12, var uParam13, var uParam14, var uParam15, var uParam16, var uParam17, var uParam18, var uParam19, var uParam20, var uParam21, var uParam22, var uParam23, var uParam24, var uParam25, var uParam26, var uParam27, var uParam28, var uParam29, var uParam30)//Position - 0x13BC
+int func_28(struct<61> Param0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11, var uParam12, var uParam13, var uParam14, var uParam15, var uParam16, var uParam17, var uParam18, var uParam19, var uParam20, var uParam21, var uParam22, var uParam23, var uParam24, var uParam25, var uParam26, var uParam27, var uParam28, var uParam29, var uParam30)//Position - 0x13C5
 {
 	if (((((((((((Param0.f_53[0] == 0 || STREAMING::HAS_MODEL_LOADED(Param0.f_53[0])) && (Param0.f_53[1] == 0 || STREAMING::HAS_MODEL_LOADED(Param0.f_53[1]))) && (Param0.f_53[2] == 0 || STREAMING::HAS_MODEL_LOADED(Param0.f_53[2]))) && (Param0.f_57[0] == 0 || STREAMING::HAS_MODEL_LOADED(Param0.f_57[0]))) && (Param0.f_57[1] == 0 || STREAMING::HAS_MODEL_LOADED(Param0.f_57[1]))) && (Param0.f_57[0] == 0 || VEHICLE::HAS_VEHICLE_ASSET_LOADED(Param0.f_57[0]))) && (Param0.f_57[1] == 0 || VEHICLE::HAS_VEHICLE_ASSET_LOADED(Param0.f_57[1]))) && (Param0.f_60[0] == 0 || WEAPON::HAS_WEAPON_ASSET_LOADED(Param0.f_60[0]))) && (Param0.f_60[1] == 0 || WEAPON::HAS_WEAPON_ASSET_LOADED(Param0.f_60[1]))) && (Param0.f_60[2] == 0 || WEAPON::HAS_WEAPON_ASSET_LOADED(Param0.f_60[2]))) && HUD::HAS_ADDITIONAL_TEXT_LOADED(0))
 	{
@@ -1001,7 +1001,7 @@ int func_28(struct<61> Param0, var uParam1, var uParam2, var uParam3, var uParam
 	return 0;
 }
 
-void func_29(struct<61> Param0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11, var uParam12, var uParam13, var uParam14, var uParam15, var uParam16, var uParam17, var uParam18, var uParam19, var uParam20, var uParam21, var uParam22, var uParam23, var uParam24, var uParam25, var uParam26, var uParam27, var uParam28, var uParam29, var uParam30)//Position - 0x1507
+void func_29(struct<61> Param0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11, var uParam12, var uParam13, var uParam14, var uParam15, var uParam16, var uParam17, var uParam18, var uParam19, var uParam20, var uParam21, var uParam22, var uParam23, var uParam24, var uParam25, var uParam26, var uParam27, var uParam28, var uParam29, var uParam30)//Position - 0x1510
 {
 	int iVar0;
 	
@@ -1036,7 +1036,7 @@ void func_29(struct<61> Param0, var uParam1, var uParam2, var uParam3, var uPara
 	HUD::REQUEST_ADDITIONAL_TEXT("PMD", 0);
 }
 
-void func_30(var uParam0)//Position - 0x15A5
+void func_30(var uParam0)//Position - 0x15AE
 {
 	if (!func_20(uParam0->f_76) && !func_20(uParam0->f_79))
 	{
@@ -1048,7 +1048,7 @@ void func_30(var uParam0)//Position - 0x15A5
 	}
 }
 
-void func_31(var uParam0, int iParam1)//Position - 0x1649
+void func_31(var uParam0, int iParam1)//Position - 0x1652
 {
 	switch (iParam1)
 	{
@@ -1156,7 +1156,7 @@ void func_31(var uParam0, int iParam1)//Position - 0x1649
 	func_32(uParam0);
 }
 
-void func_32(var uParam0)//Position - 0x1BD9
+void func_32(var uParam0)//Position - 0x1BE2
 {
 	int iVar0;
 	
@@ -1173,7 +1173,7 @@ void func_32(var uParam0)//Position - 0x1BD9
 	}
 }
 
-void func_33(var uParam0)//Position - 0x1C30
+void func_33(var uParam0)//Position - 0x1C39
 {
 	switch (uParam0->f_3)
 	{
@@ -1202,12 +1202,12 @@ void func_33(var uParam0)//Position - 0x1C30
 	}
 }
 
-int func_34()//Position - 0x1CB1
+int func_34()//Position - 0x1CBA
 {
-	return func_35(Global_112096.f_20, Global_112096.f_29);
+	return func_35(Global_112358.f_20, Global_112358.f_29);
 }
 
-int func_35(int iParam0, int iParam1)//Position - 0x1CC9
+int func_35(int iParam0, int iParam1)//Position - 0x1CD2
 {
 	switch (iParam0)
 	{
@@ -1227,12 +1227,12 @@ int func_35(int iParam0, int iParam1)//Position - 0x1CC9
 	return 0;
 }
 
-int func_36()//Position - 0x1D03
+int func_36()//Position - 0x1D0C
 {
-	return Global_112096.f_20;
+	return Global_112358.f_20;
 }
 
-void func_37(var uParam0)//Position - 0x1D11
+void func_37(var uParam0)//Position - 0x1D1A
 {
 	func_40(*uParam0);
 	func_39(&Local_53);
@@ -1244,7 +1244,7 @@ void func_37(var uParam0)//Position - 0x1D11
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 
-void func_38(var uParam0)//Position - 0x1D43
+void func_38(var uParam0)//Position - 0x1D4C
 {
 	int iVar0;
 	int iVar1;
@@ -1265,7 +1265,7 @@ void func_38(var uParam0)//Position - 0x1D43
 	}
 }
 
-void func_39(var uParam0)//Position - 0x1D92
+void func_39(var uParam0)//Position - 0x1D9B
 {
 	int iVar0;
 	int iVar1;
@@ -1283,7 +1283,7 @@ void func_39(var uParam0)//Position - 0x1D92
 	}
 }
 
-void func_40(struct<61> Param0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11, var uParam12, var uParam13, var uParam14, var uParam15, var uParam16, var uParam17, var uParam18, var uParam19, var uParam20, var uParam21, var uParam22, var uParam23, var uParam24, var uParam25, var uParam26, var uParam27, var uParam28, var uParam29, var uParam30)//Position - 0x1DC8
+void func_40(struct<61> Param0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11, var uParam12, var uParam13, var uParam14, var uParam15, var uParam16, var uParam17, var uParam18, var uParam19, var uParam20, var uParam21, var uParam22, var uParam23, var uParam24, var uParam25, var uParam26, var uParam27, var uParam28, var uParam29, var uParam30)//Position - 0x1DD1
 {
 	int iVar0;
 	
@@ -1316,8 +1316,8 @@ void func_40(struct<61> Param0, var uParam1, var uParam2, var uParam3, var uPara
 	}
 }
 
-void func_41(int iParam0)//Position - 0x1E4E
+void func_41(int iParam0)//Position - 0x1E57
 {
-	Global_112096.f_22 = iParam0;
+	Global_112358.f_22 = iParam0;
 }
 

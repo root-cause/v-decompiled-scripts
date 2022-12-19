@@ -87,9 +87,9 @@
 	var uLocal_85 = 0;
 	var uLocal_86 = 0;
 	var uLocal_87 = 0;
-	var uLocal_88 = -1;
+	var uLocal_88 = 0;
 	var uLocal_89 = 0;
-	var uLocal_90 = 0;
+	var uLocal_90 = -1;
 	var uLocal_91 = 0;
 	var uLocal_92 = 0;
 	var uLocal_93 = 0;
@@ -111,6 +111,8 @@
 	var uLocal_109 = 0;
 	var uLocal_110 = 0;
 	var uLocal_111 = 0;
+	var uLocal_112 = 0;
+	var uLocal_113 = 0;
 	var uScriptParam_0 = 0;
 #endregion
 
@@ -141,6 +143,6 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_41 = 49;
 	iLocal_42 = 64;
 	fLocal_65 = ((0.05f + 0.275f) - 0.01f);
-	uScriptParam_112 = uScriptParam_112;
+	uScriptParam_114 = uScriptParam_114;
 }
 
