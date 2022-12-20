@@ -10207,7 +10207,7 @@ int func_191(int iParam0)//Position - 0xCA96
 			return Global_262145.f_23432 /* Tunable: BLOCK_HYDRA_IN_HEISTS */;
 		
 		case joaat("toreador"):
-			return Global_262145.f_25764 /* Tunable: -466431095 */;
+			return Global_262145.f_25764 /* Tunable: BLOCK_TOREADOR_IN_HEISTS */;
 	}
 	if (iParam0 == joaat("viseris"))
 	{

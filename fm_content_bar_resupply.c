@@ -22859,13 +22859,13 @@ void func_479(bool bParam0)//Position - 0x22080
 	{
 		if (bParam0)
 		{
-			PATHFIND::_0xC2AB6BFE34E92F8B(1);
+			PATHFIND::LOAD_ALL_PATH_NODES(true);
 			func_146(83);
 		}
 	}
 	else if (!bParam0)
 	{
-		PATHFIND::_0xC2AB6BFE34E92F8B(0);
+		PATHFIND::LOAD_ALL_PATH_NODES(false);
 		func_480(83);
 	}
 }

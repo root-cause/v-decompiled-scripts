@@ -42929,7 +42929,7 @@ void func_335(int iParam0, bool bParam1, int iParam2, int iParam3)//Position - 0
 					{
 						if ((iParam2 == 8 && (iParam0 == 45 && iParam3 == 21)) && MISC::ARE_STRINGS_EQUAL(&(Global_100733.f_1398), "CMOD_ACD_EQUIP" /* GXT: Equipment Upgrade */))
 						{
-							MONEY::_0x110EE9D486C23126(Global_100733.f_1402, 0, 1, 1013460729);
+							MONEY::_NETWORK_SPEND_UPGRADE_ACID_LAB_EQUIPMENT(Global_100733.f_1402, 0, 1, 1013460729);
 						}
 						else
 						{
@@ -172110,7 +172110,7 @@ void func_1267(var uParam0)//Position - 0xD009E
 		}
 		if (VEHICLE::IS_VEHICLE_DOOR_FULLY_OPEN(*uParam0, 2) || VEHICLE::IS_VEHICLE_DOOR_FULLY_OPEN(*uParam0, 3))
 		{
-			VEHICLE::_SET_VEHICLE_STRONG_DOORS(*uParam0, false);
+			VEHICLE::SET_VEHICLE_TAIL_LIGHTS(*uParam0, false);
 		}
 	}
 }

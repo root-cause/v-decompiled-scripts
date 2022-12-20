@@ -25681,7 +25681,7 @@ bool func_653(int iParam0, int iParam1, int iParam2, int iParam3, var uParam4, i
 							NETSHOPPING::NET_GAMESERVER_SET_TELEMETRY_NONCE_SEED(func_652(func_650()));
 							if (iParam0 == 6)
 							{
-								MONEY::_0x79B656937DF6DF5D(iParam2, func_657(PLAYER::PLAYER_ID(), 306));
+								MONEY::_NETWORK_EARN_SELL_ACID(iParam2, func_657(PLAYER::PLAYER_ID(), 306));
 							}
 							else
 							{

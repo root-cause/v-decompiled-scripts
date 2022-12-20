@@ -22915,13 +22915,13 @@ void func_472(bool bParam0)//Position - 0x21F67
 	{
 		if (bParam0)
 		{
-			PATHFIND::_0xC2AB6BFE34E92F8B(1);
+			PATHFIND::LOAD_ALL_PATH_NODES(true);
 			func_143(83);
 		}
 	}
 	else if (!bParam0)
 	{
-		PATHFIND::_0xC2AB6BFE34E92F8B(0);
+		PATHFIND::LOAD_ALL_PATH_NODES(false);
 		func_473(83);
 	}
 }
@@ -24669,7 +24669,7 @@ bool func_562(int iParam0, int iParam1, int iParam2, int iParam3, var uParam4, i
 							NETSHOPPING::NET_GAMESERVER_SET_TELEMETRY_NONCE_SEED(func_561(func_559()));
 							if (iParam0 == 6)
 							{
-								MONEY::_0x79B656937DF6DF5D(iParam2, func_566(PLAYER::PLAYER_ID(), 306));
+								MONEY::_NETWORK_EARN_SELL_ACID(iParam2, func_566(PLAYER::PLAYER_ID(), 306));
 							}
 							else
 							{
@@ -44486,7 +44486,7 @@ int func_1428()//Position - 0x3A632
 	if (func_1407(iVar3, &Var1, &uVar2))
 	{
 		Var4 = { 0f, 0f, 0f };
-		if (MISC::_0x3DA8C28346B62CED(Var1.f_2, Var1.f_5, Var1.f_8, iVar0, &Var4, 1))
+		if (MISC::GET_COORDS_OF_PROJECTILE_TYPE_IN_ANGLED_AREA(Var1.f_2, Var1.f_5, Var1.f_8, iVar0, &Var4, true))
 		{
 			Local_837[iLocal_772 /*349*/].f_268.f_1[iVar3 /*7*/].f_1 = { Var4 };
 			if (MISC::GET_PROJECTILE_OF_PROJECTILE_TYPE_WITHIN_DISTANCE(iLocal_771, iVar0, 50f, &Var5, &iVar6, false) && SYSTEM::VDIST2(Var4, Var5) < (0.1f * 0.1f))
@@ -45506,7 +45506,7 @@ void func_1494(int iParam0)//Position - 0x3B6C3
 	{
 		if (!func_316())
 		{
-			MONEY::_0x79B656937DF6DF5D(iParam0, func_657());
+			MONEY::_NETWORK_EARN_SELL_ACID(iParam0, func_657());
 		}
 	}
 	else if (func_316())
@@ -45516,7 +45516,7 @@ void func_1494(int iParam0)//Position - 0x3B6C3
 	}
 	else
 	{
-		MONEY::_0xCA3EF9B09A8D76B4(iParam0, func_657());
+		MONEY::_NETWORK_EARN_SELL_PARTICIPATION_ACID_LAB(iParam0, func_657());
 	}
 }
 

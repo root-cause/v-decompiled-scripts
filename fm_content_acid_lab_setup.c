@@ -23364,13 +23364,13 @@ void func_485(bool bParam0)//Position - 0x22977
 	{
 		if (bParam0)
 		{
-			PATHFIND::_0xC2AB6BFE34E92F8B(1);
+			PATHFIND::LOAD_ALL_PATH_NODES(true);
 			func_152(83);
 		}
 	}
 	else if (!bParam0)
 	{
-		PATHFIND::_0xC2AB6BFE34E92F8B(0);
+		PATHFIND::LOAD_ALL_PATH_NODES(false);
 		func_486(83);
 	}
 }
@@ -31000,7 +31000,7 @@ int func_785()//Position - 0x2B804
 	if (func_789(iLocal_695))
 	{
 		iVar0 = NETWORK::NETWORK_GET_NETWORK_ID_FROM_ENTITY(iLocal_695);
-		if (NETWORK::_0xDD7CEF5B3A4DA8A6(iVar0))
+		if (NETWORK::IS_NETWORK_VEHICLE_RUNNING_RESPOT_TIMER(iVar0))
 		{
 			return 1;
 		}
@@ -32043,7 +32043,7 @@ void func_860(int iParam0, int iParam1)//Position - 0x2C95B
 		fVar0 = VEHICLE::GET_VEHICLE_MODEL_ESTIMATED_MAX_SPEED(Local_202.f_277.f_1[iParam0 /*15*/].f_3);
 		fVar0 = (fVar0 * 2f);
 		VEHICLE::SET_VEHICLE_MAX_SPEED(iParam1, fVar0);
-		VEHICLE::_0x923A293361DF44E5(iParam1);
+		VEHICLE::LOWER_FORKLIFT_FORKS(iParam1);
 		ENTITY::SET_ENTITY_INVINCIBLE(iParam1, true);
 	}
 	else if (iParam0 == func_629(0))
@@ -34826,7 +34826,7 @@ void func_990(int iParam0)//Position - 0x2FAE7
 	}
 	else
 	{
-		MONEY::_0xE3942D59E8A7F70D(iParam0, func_618());
+		MONEY::_NETWORK_EARN_SETUP_PARTICIPATION_ACID_LAB(iParam0, func_618());
 	}
 }
 

@@ -11332,13 +11332,13 @@ void func_269(bool bParam0)//Position - 0xD672
 	{
 		if (bParam0)
 		{
-			PATHFIND::_0xC2AB6BFE34E92F8B(1);
+			PATHFIND::LOAD_ALL_PATH_NODES(true);
 			func_271(83);
 		}
 	}
 	else if (!bParam0)
 	{
-		PATHFIND::_0xC2AB6BFE34E92F8B(0);
+		PATHFIND::LOAD_ALL_PATH_NODES(false);
 		func_270(83);
 	}
 }
@@ -27920,7 +27920,7 @@ void func_743(int iParam0, int iParam1, var uParam2, int iParam3)//Position - 0x
 		Var1.f_0 = iParam1;
 		Var1.f_1 = uParam2;
 		Var1.f_2 = iParam3;
-		MONEY::_0x991E1588FAD9019D(iParam0, &Var1);
+		MONEY::_NETWORK_EARN_TAXI_JOB(iParam0, &Var1);
 	}
 	func_744(iParam0);
 }

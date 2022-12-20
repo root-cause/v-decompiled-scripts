@@ -7642,7 +7642,7 @@ void func_163(var uParam0, var uParam1, int iParam2)//Position - 0x9D05
 	Var0.f_2 = uParam0->f_7;
 	Var0.f_3 = Global_2793044.f_6750.f_31;
 	Var0.f_4 = uParam0->f_7 == uParam1->f_3;
-	MONEY::_0xA81017EE1324FDFE(iParam2, &Var0);
+	MONEY::_NETWORK_EARN_STREET_DEALER(iParam2, &Var0);
 }
 
 void func_164(int iParam0, int iParam1)//Position - 0x9D6A
@@ -7895,7 +7895,7 @@ bool func_171(int iParam0, int iParam1, int iParam2, int iParam3, var uParam4, i
 							NETSHOPPING::NET_GAMESERVER_SET_TELEMETRY_NONCE_SEED(func_139(func_156()));
 							if (iParam0 == 6)
 							{
-								MONEY::_0x79B656937DF6DF5D(iParam2, func_173(PLAYER::PLAYER_ID(), 306));
+								MONEY::_NETWORK_EARN_SELL_ACID(iParam2, func_173(PLAYER::PLAYER_ID(), 306));
 							}
 							else
 							{

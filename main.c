@@ -114406,13 +114406,13 @@ bool func_848()//Position - 0x8DF57
 	return Global_1853910[PLAYER::PLAYER_ID() /*862*/] == 148;
 }
 
-int func_849(struct<13> Param0)//Position - 0x8DF6D
+bool func_849(struct<13> Param0)//Position - 0x8DF6D
 {
 	if (!func_78(Param0))
 	{
 		return 1;
 	}
-	return NETWORK::_0xAD4326FCA30D62F8(&Param0);
+	return NETWORK::NETWORK_IS_PLAYER_ON_BLOCKLIST(&Param0);
 }
 
 void func_850()//Position - 0x8DF8C
